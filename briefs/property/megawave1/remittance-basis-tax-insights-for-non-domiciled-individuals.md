@@ -61,8 +61,70 @@ Target length 2,400-2,800 words. Voice: factual + reformist-context + routing-fi
 - HMRC manual cross-references: RDRM (under rewrite); RDRMNEW (rolling guidance during transition); CG manual for CGT rebasing election mechanics; IHT manual under rewrite for LTR test.
 - **Stage 1b drift watchpoint:** the 2026 Spring Finance Bill and the 2026 Autumn Budget may amend the FIG / TRF mechanics — Stage 2 must verify the latest Finance Bill status at write date and reflect any amendments. The "headline 12% / 12% / 15% TRF rate ramp" must be checked against the latest legislation.gov.uk consolidated FA 2025 Sch 10 text (any post-FA-2025 amending Act would alter this). HMRC RDRM section numbers are being renumbered through the rewrite — Stage 2 verifies current section IDs before citing.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; historical primer + decision-grade architecture map tone; reader audience: non-doms, legacy-cohort advisers, new arrivals, expat landlords); lead-gen architecture (LeadForm + aside-CTAs after the "What replaced it" section + after the "What should you do right now" section — high-intent non-dom reader); schema (FAQs in frontmatter; FAQPage JSON-LD; 10-12 FAQs); cannibalisation cross-link discipline (HEAVY cross-link with the four existing FIG / TRF / rebasing / Year-5 deep-dive pages — this page is the hub, those are the spokes); house-position anchors (HP §17.6 + §17.8 + §17.9 + §17.10 + §22.X + §15.6); quality bar (word count 2,400-2,800; FAQs 10-12; external authority links 10-12; build clean; six verifications); anti-templating (lead with "The remittance basis ended on 6 April 2025 under FA 2025 s.40 + Sch 9. This page explains what was lost, what replaced it, and routes you to the four deep-dive pages on FIG, TRF, CGT rebasing, and IHT LTR." — NOT "Non-doms used to get a special tax break" which is vague and reform-blind).]
+## Universal rules
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+### Voice
+- No em-dashes (use commas, parentheses, full stops, or middle dots).
+- Tone: historical primer plus decision-grade architecture map. Lead the reader from the cliff (6 April 2025) through the four replacement architectures (FIG, TRF, CGT rebasing, IHT LTR) and route them to the appropriate deep-dive page.
+- Reader audience: non-domiciled individuals running compliance decisions on legacy claims; advisers handling TRF designations for legacy clients; expat landlords considering UK return; new arrivals weighing FIG against arising basis from year one; trust settlors / beneficiaries with pre-FA-2025 structures.
+- Named legislation throughout. Anonymised personas only (Patel-estate, Singh, Mawell-Estate style. No real names).
+- No "non-dom status" framing as if it confers current UK tax benefits for income or CGT. That ended 6 April 2025.
+
+### Lead-gen architecture
+- `LeadForm` auto-injects at footer; do NOT duplicate in body.
+- Inline `<aside>` CTAs at two conversion moments: (a) after the "What replaced the remittance basis for new arrivals" / FIG section; (b) after the "What should a non-dom property investor do right now" closing section.
+- High-intent non-dom reader. Calibrate the asides to specialist non-dom advisory positioning, not generic landlord positioning.
+
+### Schema
+- FAQs declared in frontmatter `faqs:` array; emitted automatically as `FAQPage` JSON-LD on build.
+- 10-12 FAQs (hub primer plus complex transitional architecture warrants the upper end of the non-pillar range).
+
+### Cannibalisation cross-link discipline
+- This page is the **hub**; the four existing deep-dive pages are the **spokes**.
+- HEAVY in-body cross-links to: `/blog/non-dom-reform-april-2025-fig-regime-property-investors` (FIG operational deep-dive); `/blog/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords` (year-5+ planning); `/blog/trf-qualifying-overseas-capital-what-can-be-designated-non-doms` (TRF Sch 10 deep-dive); `/blog/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms` (rebasing narrow-eligibility).
+- Cross-link forward to C10 (`residency-and-domicile`) for the SRT cascade / LTR architecture the reader will need next.
+- Do NOT re-walk FIG / TRF / rebasing operational mechanics. Route the reader to the deep-dive pages.
+
+### House-position anchors
+- HP §17.6 (headline framing on what ended, what replaced it).
+- HP §17.8 (FIG operational depth, ITTOIA 2005 ss.845A-845J).
+- HP §17.9 (TRF Sch 10 mechanics).
+- HP §17.10 (CGT rebasing narrow eligibility).
+- HP §22.X (IHT LTR test, current numbering — RUN session verifies precise paragraph at write).
+- HP §15.6 (IHT non-resident domicile and residence test).
+- No new HP lock required.
+
+### Quality bar (six verifications at build)
+- Body word count target: 2,400-2,800.
+- FAQs: 10-12.
+- External authority links: 10-12 (legislation.gov.uk + HMRC RDR / RDRM + STEP + ICAEW).
+- Em-dashes in body: 0.
+- Tailwind classes in markdown body: 0 (semantic HTML only).
+- FAQ schema count in built HTML == frontmatter `faqs:` array length.
+- Meta title <= 62 chars; meta description <= 158 chars.
+- Internal `/blog/...` links resolve to existing markdown files (verify the four deep-dive sister pages exist on disk before linking).
+
+### Anti-templating opening
+Lead with the cliff-then-routing framing, NOT a vague "non-doms used to get a special tax break" opener. Suggested opening sentence shape (RUN session may vary the exact wording):
+
+> "The remittance basis ended on 6 April 2025 under Finance Act 2025 s.40 and Schedule 9. This page explains what was lost, what replaced it for new arrivals (the FIG regime under ITTOIA 2005 ss.845A-845J) and for the legacy cohort (the Temporary Repatriation Facility under FA 2025 Sch 10), and routes you to the four deep-dive pages on FIG, TRF, CGT rebasing, and the IHT Long-Term Resident test."
+
+## Stage 2 verification (2026-05-26)
+
+- **Statutory citations.** Stage 1 seed cited FA 2025 ss.40 / 41 / 42 + Schs 8-11; ITTOIA 2005 ss.845A-845J; IHTA 1984 ss.6A-6C + ss.267ZC-267ZF + s.48ZA; FA 2013 Sch 45; ITA 2007 Part 14 Chapter A1 (residual); TCGA 1992 s.10A. All anchored to the existing §17 / §22 / §15 cluster which was reviewed at Stage 1b HP-lock pass (no drift surfaced on this cluster). RUN session re-verifies FA 2025 Schs 9, 10, 11 against legislation.gov.uk consolidated text at write time per §16.35 per-write verification mandate.
+- **HP-lock status.** No new lock required. The §22.X (IHT LTR test) anchor and §17.6 / 17.8 / 17.9 / 17.10 sub-anchors are the operative anchors. RUN session checks current HP file for the precise §22.X paragraph number at write time (the §22 sub-numbering moved through the Stage 1b lock cycle).
+- **Competitor URL verification at write time (RUN session fetches):**
+  - HMRC RDRM root: `https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis`. Section currency must be confirmed at write — the RDRM is being rewritten across 2025-26.
+  - HMRC FIG / TRF guidance landing page on gov.uk (non-dom reform publication hub).
+  - STEP non-dom hub.
+  - ICAEW non-dom reform briefing.
+  - PwC / EY / Deloitte / KPMG non-dom reform briefings: use for drift-catch only, NOT borrow-pattern.
+- **Drift watchpoints (RUN session must surface as flags if hit):**
+  - 2026 Spring Finance Bill or 2026 Autumn Budget may amend FIG / TRF mechanics. Verify "headline 12% / 12% / 15% TRF rate ramp" against current FA 2025 Sch 10 consolidated text at write date.
+  - HMRC RDRM section numbers are being renumbered through the rewrite. Verify current section IDs before citing any RDRM page.
+  - Historic "deemed dom 15-of-20" framing is RETIRED. Must not appear anywhere in the body. The LTR test is 10 of 20.
+- **Authority link target (RUN session selects 10-12 from this list):** legislation.gov.uk FA 2025 / ITTOIA 2005 / IHTA 1984 / FA 2013 / TCGA 1992 anchors; HMRC RDRM landing + relevant manual section; HMRC FIG / TRF guidance; STEP hub; ICAEW briefing; Big Four reform briefings (one as authority anchor, others as drift-catch references).
+
+## Work log (RUN session populates)
+
+[RUN session records: slug / category / H1 / meta title decisions; competitor URLs fetched + key takeaway per URL; existing-page review (overlap + differentiation decision); citations added; internal links added; inline CTA placements; build attempts pass / fail; six verifications evidence; flags raised; 2-3 sentence summary at completion.]
