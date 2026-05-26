@@ -41,8 +41,112 @@ The "raises concerns" framing in the slug carries the original commentary regist
 - Case-law to ground: Project Blue Ltd v HMRC [2018] UKSC 30 (anti-avoidance context); Hyman v HMRC [2022] EWCA Civ 185 (mixed-use rejection — HMRC's pattern that pre-dated the MDR abolition push, evidencing the policy direction); Mudan / MHB / Brown post-Bewley line (illustrating HMRC's enforcement posture on SDLT classification claims more broadly).
 - Stage 2 manager pre-check: surface any new HP-lock needs around the policy-direction question for §1.K (sector-impact framing) — if no §1.K exists, propose one with the Nov 2023 consultation as primary source and the post-abolition 24-month track record as secondary.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); LeadForm + aside-CTA architecture; FAQs frontmatter + FAQPage JSON-LD; cannibalisation cross-link discipline; quality bar (word count 2,400-2,800 — slightly longer than A1 because the policy-debate framing needs space to do justice to the concern-clusters; FAQs 10-12; external authority links 6-8; build clean; six verifications); anti-templating discipline (lead with the concern-cluster question framing, NOT with "Multiple Dwellings Relief was a tax relief that..."; vary H2s from both the Wave 9 operational page and the A1 plain-language page in this MegaWave; explicitly reference the policy debate, not just the statutory mechanics).]
+## Closest existing pages (cannibalisation context)
+
+Read each before writing. A2 must differentiate by the policy-debate / sector-impact framing; do NOT re-walk operational mechanics or plain-language eligibility (A1 + Wave 9 own those lanes).
+
+1. `Property/web/content/blog/multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords.md` — Wave 9 operational page. A2 forward-links here for operational depth on anti-forestalling + transitional cohort + surviving alternatives.
+2. `Property/web/content/blog/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition.md` — A2 surfaces the devolved divergence point in question 9 and forward-links here for mechanics.
+3. Sister-picks in this MegaWave (forward-link when shipped): A1 `abolishment-of-multiple-dwelling-relief` (plain-language on-ramp — pair as sister-pages); A3 `a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits` (historical mechanics — for transitional-cohort context, light cross-link only).
+
+Differentiation logic: A2 = stakeholder-concern clusters + post-abolition empirical review + policy direction. Wave 9 = operational. A1 = plain-language. A2 is the **only** lane covering the sector-impact / policy-debate angle in the MDR cluster; structural overlap risk is LOW provided the body stays in that lane.
+
+## Redirect overlap
+
+Checked against `Property/web/src/middleware.ts` (511 lines) on 2026-05-26: NO existing 301/302 redirect targets share slug-token overlap with `abolition-of-multiple-dwellings-relief-mdr-raises-concerns`. No repointing required on launch (step 12 no-op). RUN session should re-verify against current middleware.ts at write time.
+
+## Authority links (SDLT bucket + policy-debate sources — pick at least 6 at write time)
+
+Primary statute (legislation.gov.uk):
+- F(No.2)A 2024 s.7: https://www.legislation.gov.uk/ukpga/2024/12/section/7
+- FA 2003 s.116(7) (6+-dwellings surviving deeming): https://www.legislation.gov.uk/ukpga/2003/14/section/116
+- FA 2003 Sch 15 (partnership SLP surviving alternative): https://www.legislation.gov.uk/ukpga/2003/14/schedule/15
+- FA 2003 s.45 (sub-sale surviving alternative): https://www.legislation.gov.uk/ukpga/2003/14/section/45
+- LTTA 2017 Sch 13 (Welsh LTT MDR survives — for the devolved divergence question): https://www.legislation.gov.uk/anaw/2017/1/schedule/13
+
+HMRC + policy primary sources:
+- HMRC Nov 2023 consultation "Multiple Dwellings Relief: a call for evidence" — **the** primary source for "why abolished": https://www.gov.uk/government/consultations/multiple-dwellings-relief-a-call-for-evidence
+- HMRC summary of responses (post-consultation, March 2024 publication): search at https://www.gov.uk/government/publications and filter by MDR / SDLT
+- SDLTM29900+ (MDR — historical context): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29900
+
+Industry-body responses (verify URLs at write — body publication archives reorganise):
+- ICAEW Tax Faculty MDR consultation response: https://www.icaew.com/technical/tax/responses-to-consultations
+- CIOT MDR submission: https://www.tax.org.uk/policy-and-technical/submissions
+- BPF (British Property Federation) policy briefings: https://bpf.org.uk/our-work/our-policies/
+
+Hansard (for the Committee Stage debate on F(No.2)A 2024 s.7):
+- https://hansard.parliament.uk/ — search "Finance (No.2) Bill 2024 Multiple Dwellings"
+
+Gov.uk procedural:
+- SDLT calculator: https://www.tax.service.gov.uk/calculate-stamp-duty-land-tax/
+
+## Competitor URLs (Stage 2 candidates — RUN verifies liveness at write time)
+
+Sector-impact / policy-debate angles concentrate in the larger firms' post-abolition reviews and industry-body briefings. Standard SDLT-commentary universe + sector trade-press.
+
+1. BDO post-abolition MDR review: https://www.bdo.co.uk/en-gb/insights/tax/property-tax/abolition-of-multiple-dwellings-relief
+2. Saffery sector-impact briefing: https://www.saffery.com/insights/articles/abolition-of-multiple-dwellings-relief/
+3. Charles Russell Speechlys policy briefing: https://www.charlesrussellspeechlys.com/en/insights/expert-insights/real-estate/2024/abolition-of-multiple-dwellings-relief/
+4. ICAEW Tax Faculty post-abolition briefing: https://www.icaew.com/insights/tax-news/2024/jun-2024/abolition-of-multiple-dwellings-relief
+5. Property Industry Eye sector commentary: https://propertyindustryeye.com/ — search MDR abolition
+6. BTR News / Letting Agent Today coverage: https://www.lettingagenttoday.co.uk/ — search MDR
+7. EG / Estates Gazette commentary (paywalled — use as orientation only): https://www.egi.co.uk/
+
+If 2+ candidates 404 or paywall, RUN session searches `site:saffery.com OR site:bdo.co.uk "multiple dwellings relief" abolition concerns` and documents substitutes in work-log.
+
+## Universal rules (verbatim per NETNEW_PROGRAM §4.8)
+
+- **Voice.** No em-dashes anywhere in user-facing copy (body, FAQs, meta title, meta description). Use commas, parentheses, full stops, middle dots, or sentence rewrites. Specific over generic. Named legislation over hand-waving. Anonymised personas only; no real client names; no specific NHS Trust / agency / tenant / firm names. **Policy-debate framing must remain anonymised at the speaker level too**: refer to "industry-body responses" / "professional-body submissions" not to named individuals from those bodies.
+- **Lead-gen architecture.** LeadForm component is auto-injected at footer by the template. Do NOT duplicate a LeadForm in the body. Inline CTAs use `<aside>` elements styled by global CSS. Place inline CTAs at conversion moments (after the empirical-impact section, after the surviving-alternatives summary).
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes in the markdown body.
+- **FAQs.** 10-12 for this page. Frontmatter `faqs:` array; build auto-emits FAQPage JSON-LD via `src/lib/schema.ts`.
+- **Cannibalisation discipline.** Read closest-existing pages above. Forward-link to Wave 9 page for operational mechanics; forward-link to A1 for plain-language eligibility framing; A2 stays in the policy-debate / sector-impact lane.
+- **House-position anchors.** Cite §1, §1.A, §1.H verbatim where the body references the locked positions. If competitor source contradicts the locked position (e.g. on the s.116(7) surviving-alternative architecture), raise HOUSE_POSITION_CONFLICT flag.
+- **Anti-templating.** Open with a concern-cluster framing ("When the abolition of Multiple Dwellings Relief was announced at Spring Budget 2024, industry bodies raised four distinct clusters of concern. Twenty-four months on, here is what the evidence shows..."). Do NOT open with "Multiple Dwellings Relief was a tax relief that...". H2 structure should mirror the four concern-clusters (bulk-acquisition viability / transitional unfairness / collateral damage / policy direction) — explicitly different from A1's question-led H2s and Wave 9's operational H2s.
+- **Quality bar (six verifications at build).** (i) 0 em-dashes in body. (ii) 0 Tailwind utility classes in body. (iii) FAQ schema count == frontmatter `faqs:` length. (iv) Meta title ≤ 62 chars. (v) Meta description ≤ 158 chars. (vi) Every internal `/blog/...` link resolves. Body word count target 2,400-2,800 (slightly longer than A1 for policy-debate scope).
+- **Per-write figure verification (§16.35).** WebFetch gov.uk at write time to verify any numeric tax figure cited.
+
+## The 19-step workflow (verbatim per NETNEW_PROGRAM §7)
+
+1. Read `docs/property/house_positions.md` once at session start; locate §1, §1.A, §1.H (MDR abolition + surviving alternatives).
+2. Claim this page in `docs/property/megawave1_page_tracker.md`: flip ⬜ todo → 🟡 in_progress with UTC timestamp. Edit main repo file via ABSOLUTE PATH from worktree.
+3. Re-read this brief: framing differentiator, closest-existing pages, redirect overlap (none), authority links, key questions.
+4. Fetch each shortlisted competitor URL via `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then `BeautifulSoup(html, "lxml")`. Discard 404s and substitute.
+5. Read closest-existing pages (Wave 9 + Welsh-LTT survival) end-to-end. A2 stays in policy-debate lane; forward-link others for operational + plain-language depth.
+6. Plan H2 outline mirroring the four concern-clusters + meta title (≤62) + meta description (≤158) + FAQs (10-12) + inline CTA placements.
+7. Verify each factual claim against legislation.gov.uk + HMRC SDLT Manual + gov.uk consultation source. Record verification URLs + dates in work-log.
+8. Fetch hero image from Pexels; place in frontmatter `heroImage`.
+9. Write the markdown file at `Property/web/content/blog/abolition-of-multiple-dwellings-relief-mdr-raises-concerns.md` with full frontmatter.
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications per Universal rules.
+12. Redirect repointing in `Property/web/src/middleware.ts` — NO redirect overlap (no-op). Re-verify against current middleware.ts.
+13. Register the new page in Supabase `monitored_pages` (bucket="megawave1-A").
+14. **Commit on session branch (`property-megawave1-a`).** Per-page commit. Message: `Megawave 1 Bucket A: ship abolition-of-multiple-dwellings-relief-mdr-raises-concerns (A2, policy-debate tier)`.
+15. Fill per-page work-log below.
+16. Mark `✅ done` in tracker. Edit main repo tracker via ABSOLUTE PATH.
+17. Append site-wide issues to `docs/property/megawave1_site_wide_flags.md` (F-1..F-49 range).
+18. Append discoveries to session discovery log (if used).
+19. Claim next page from this batch OR write batch-done marker if final.
+
+**Critical order: step 14 (commit) before step 16 (mark done).**
 
 ## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+
+**Stage 2 (this pass, 2026-05-26):**
+- Statutory citations in §Statutory anchor verified per Stage 1 seed timestamps (legislation.gov.uk URLs stamped 2026-05-26); §16.36 brief-citation gate satisfied at brief level.
+- Redirect overlap: searched `Property/web/src/middleware.ts` on 2026-05-26 — no overlap for `abolition-of-multiple-dwellings-relief-mdr-raises-concerns`.
+- Closest-existing pages confirmed present in `Property/web/content/blog/`. A1 + A3 sister-picks will be shipped within this same MegaWave 1 Bucket A by sequencing.
+- Competitor URL candidates and authority links curated for the policy-debate angle; RUN session verifies liveness with httpx at write time.
+- §1.K (sector-impact / policy-debate framing) is flagged in Stage 1 seed as a possible new HP-lock candidate. Stage 2 verdict: hold off on new HP-lock; current §1, §1.A, §1.H provide sufficient anchors. If RUN session surfaces a policy-direction claim needing locked support, raise via Q&A to manager (Q-N in `megawave1_questions_session_A.md`).
+
+**RUN session (populate at write time):**
+- Decisions (slug confirmed / overridden + rationale; category; H1; meta title; meta description; why these vs alternatives):
+- Competitor URLs fetched + key takeaway per URL:
+- Closest-existing review (overlap pattern; differentiation decision; back-link flag if existing should link to new):
+- Citations added (count + breakdown legislation.gov.uk / HMRC SDLTM / gov.uk consultation / industry-body / Hansard / case-law):
+- Internal `/blog/...` links added:
+- Inline `<aside>` CTA placements:
+- Build attempts (pass/fail per attempt; resolution if any failed):
+- Six verifications (each: pass/fail + value where applicable):
+- Flags raised (F-numbers + summary; or "none"):
+- 2-3 sentence summary:
