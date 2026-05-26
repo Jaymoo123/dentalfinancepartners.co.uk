@@ -108,3 +108,24 @@ The MW2 A8 seed (this batch) covers CT group-relief eligibility (the prior quest
 **How to apply.** Stage 2 writers on A11 (this seed) + A10 hybrid-LLP + future LLP picks thread to §11.C.X once locked. The current-events nature of the topic means periodic refresh likely required (per existing optimisation_engine cadence).
 
 ---
+
+## F-5 — HOUSE_POSITION_EXTENSION — Mixed membership partnership rules + hybrid LLP architecture (ITA 2007 ss.850C-E)
+
+**Raised by:** M2-A-B2 sub-agent (Stage 1, 2026-05-26) via the A10 `hybrid-limited-liability-partnership` seed.
+**Bucket:** A (Property partnership / LLP — hybrid-LLP / corporate-member sub-regime).
+**Touched picks:** A10 `hybrid-limited-liability-partnership` (this seed); A11 `hmrcs-new-guidelines-for-llps-raise-concerns` (this batch — salaried-member regime is sibling regime, distinct mechanics, can fire simultaneously on same LLP); A4 `corporate-tax-planning-strategies-for-uk-clients` (M2-A-B1 — pillar lever-map; hybrid LLP is one lever, mixed-membership trap must surface in lever discussion); future MW2 Bucket A LLP picks; possible cross-pick to existing `llp-property-investment-worth-considering` (general LLP intro — possible backpatch candidate).
+
+**Issue.** The mixed-membership partnership rules at ITA 2007 ss.850C, 850D, 850E (FA 2014 origin) are not currently locked in `house_positions.md`. The rules systematically dismantle the income-splitting / profit-retention attraction of hybrid-LLP structures (corporate-member-with-individual-member setups). Multiple Bucket A picks touch hybrid-LLP territory and would benefit from a unified policy lock. Suggest the proposed §11.C partnership-architecture mini-lock (under F-2) extend to include this sub-section alongside the §11.C.X salaried-member sub-section (under F-4) — the two FA 2014 regimes (salaried-member targets individuals; mixed-membership targets corporates) are best locked together as the post-FA-2014 LLP anti-avoidance framework.
+
+**Proposed lock contents (Stage 1b conductor decision).** A §11.C.Y "Mixed membership partnership rules + hybrid LLP architecture" sub-section of the §11.C partnership architecture mini-lock (per F-2):
+- §11.C.Y.1 Hybrid LLP structure baseline: LLPA 2000 imposes no restriction on member type; corporates can be members; Companies House operates no separate hybrid classification.
+- §11.C.Y.2 ITA 2007 s.850C-E mixed-membership regime architecture — three operative steps: (i) corporate member allocated profit share; (ii) "excess" test (corporate's share > arms-length commercial entitlement); (iii) "power to enjoy" test (individual member directly or indirectly able to benefit from corporate's allocated profits). All three steps required for reallocation.
+- §11.C.Y.3 Reallocation mechanism: excess profits + power to enjoy → reattributed to individual member taxed at marginal rate, with double-tax credit for corporate's CT paid.
+- §11.C.Y.4 HMRC PM236500-PM238000 operative guidance (Stage 2 verifies current at write time).
+- §11.C.Y.5 Interaction with salaried-member rules (§11.C.X) — distinct regimes; mixed-membership targets corporate member; salaried-member targets individual member; both can fire on same LLP simultaneously.
+- §11.C.Y.6 Residual legitimate hybrid-LLP uses surviving the regime: asset protection (where corporate's commercial entitlement is real); succession planning via FIC corporate member (cross-reference §21.5 + §22.6); external-investor inclusion (institutional/PE corporate member with no individual power-to-enjoy link).
+- §11.C.Y.7 Do not write: "hybrid LLPs are illegal" (lawful under LLPA 2000); "mixed-membership rules apply to all hybrid LLPs" (only where excess + power to enjoy both met); "Section 24 is solved by a hybrid LLP" (mixed-membership rules systematically dismantle the income-splitting attraction for typical founder-LtdCo setups); "mixed-membership rules and salaried-member rules are the same thing" (different regimes, different targets); "double-tax credit makes reallocation neutral" (only partially — operational outcome is generally worse than the original structure intended).
+
+**How to apply.** Stage 2 writers on A10 (this seed) + A4 pillar + future LLP picks thread to §11.C.Y once locked. The hybrid-LLP topic is heavily advisor-promoted in popular commentary and frequently misrepresented (income-splitting attraction is dominant frame; mixed-membership trap is under-surfaced). Locked HP holds the correct framing across all sub-agent / RUN sessions writing in this area.
+
+---
