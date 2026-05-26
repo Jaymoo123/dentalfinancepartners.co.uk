@@ -73,5 +73,5 @@
 | ✅ | C11 | `free-rental-valuation` | Property valuation / RICS / chargeable consideration | M1-C-B2 | | | Stage 1 seed 1b119ee; reframes lead-magnet query for tax/compliance context |
 | ✅ | C12 | `selling-house-below-market-value` | Property valuation / RICS / chargeable consideration | M1-C-B2 | | | Stage 1 seed bc8c8be; hybrid partial-sale-partial-gift framing |
 | ✅ | C13 | `lease-extension-vs-freehold-purchase` | Lease extensions and statutory tenancy | M1-C-B3 | | | Stage 1 seed (M1-C-B3); F-101 raised (HP §1.K + §1.L lease-extension / enfranchisement / variation locks proposed) |
-| ⬜ | C14 | `lease-extensions-in-the-uk-surrender-and-regrant` | Lease extensions and statutory tenancy | M1-C-B3 | | | |
+| ✅ | C14 | `lease-extensions-in-the-uk-surrender-and-regrant` | Lease extensions and statutory tenancy | M1-C-B3 | | | Stage 1 seed (M1-C-B3); inherits F-101 §1.L lease-variation doctrine lock proposal |
 | ⬜ | C15 | `lease-variation-and-lease-surrender` | Lease extensions, variation & surrender | M1-C-B3 | | | |
