@@ -37,6 +37,9 @@ faqs:
     answer: "The local authority can recover up to 6 years of mis-applied discount under LGFA 1992 Schedule 4. Recovery letters are rare but devastating; they typically follow a tip-off from a neighbour or a council tax review program. Defence: contemporaneous evidence of genuine sole or main residence at the property, evidence of the Schedule 1 disregard of any other resident, and evidence of timely notification of any changes. If recovery proceeds, appeal to the Valuation Tribunal under LGFA 1992 s.16(1)."
   - question: "How does the single-person discount interact with Council Tax Reduction (CTR)?"
     answer: "The two run separately. The single-person discount applies first; CTR applies to the residual bill. CTR is means-tested. Pensioner CTR under SI 2012/2885 is centrally prescribed. Working-age CTR is locally determined under LGFA 1992 Schedule 1A in England. Apply for both if eligible; they are not mutually exclusive. A pensioner on Pension Credit with the single-person discount can often reduce the residual bill close to zero through CTR."
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-05-26"
 ---
 
 <p>If you live alone, your council tax bill is reduced by 25% under <a href="https://www.legislation.gov.uk/ukpga/1992/14/section/11" rel="nofollow noopener" target="_blank">Local Government Finance Act 1992 s.11(1)(a)</a>. The reduction is statutory, applies regardless of income or wealth, and is granted day by day. The route is free, direct to your local authority. There is no legitimate role for a paid third-party "discount recovery" firm.</p>

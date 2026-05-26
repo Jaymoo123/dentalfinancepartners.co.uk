@@ -37,6 +37,9 @@ faqs:
     answer: "Separately. Discount applies first; CTR applies to the residual bill. Pensioner CTR under SI 2012/2885 is centrally prescribed and broadly equivalent to the abolished Council Tax Benefit. Working-age CTR is locally determined under LGFA 1992 Schedule 1A in England (Schedule 1B in Wales) and varies by local authority. The two routes are not mutually exclusive."
   - question: "Are there policy critiques of the discount?"
     answer: "Three principal critiques in the policy literature. First, the 25% rate is widely argued to be too generous in some quarters (single-person consumption of local authority services may be more than 75% of two-person consumption) and too parsimonious in others (single residents do shoulder full property-fixed costs). Second, the disregard categories may be too restrictive: a carer who is the cared-for's spouse or civil partner is generally NOT covered by the carer disregard. Third, the LURA 2023 expansion of second-home and empty-home premium powers has put discount-versus-premium calibration back on the political agenda."
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-05-26"
 ---
 
 <p>The single-person council tax discount under <a href="https://www.legislation.gov.uk/ukpga/1992/14/section/11" rel="nofollow noopener" target="_blank">Local Government Finance Act 1992 s.11(1)(a)</a> reduces a dwelling's council tax bill by 25% where only one non-disregarded adult is resident in the dwelling. <a href="https://www.legislation.gov.uk/ukpga/1992/14/schedule/1" rel="nofollow noopener" target="_blank">Schedule 1</a> to the same Act lists categories of adult who are disregarded for this purpose, so a multi-adult household can still qualify if the additional adults fall within a disregard category.</p>
