@@ -45,8 +45,202 @@ Distinguish from A7 by **eligibility primacy** (rates appear only briefly; the f
 - Statutory verification at write: Sch 6ZA paras 1, 4 (Table A), 6 (FTB definition), 6A-6D (shared-ownership election), and para 6(3) inserted by F(No.2)A 2024 s.8 (bare-trust amendment).
 - Case-law: any FTT decisions on FTB-eligibility disputes — typically thin but Stage 2 checks the post-2018 FTT record; particularly worldwide-test (overseas-ownership) cases.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); lead-gen architecture (LeadForm + aside-CTAs after the joint-purchase trap section, after the worldwide-test discussion, and after the bare-trust 2024 amendment section); schema (FAQs in frontmatter; FAQPage JSON-LD; target 12-15 for this eligibility-led page); cannibalisation cross-link discipline (heavy cross-link load with A7 + A11 + A12 + Scottish + Welsh FTB pages); house-position anchors (§1 main text + §1.K NEW LOCK CANDIDATE); quality bar (word count 2,600-3,000; FAQs 12-15; external authority links 6-8; build clean; six verifications); anti-templating (lead with **"The first-time buyer test under Sch 6ZA para 6 is stricter than commonly assumed"** + the worldwide-test catch — NOT with "Buying your first home is one of life's milestones..."; vary H2s from A7's rate-table-led structure).]
+## Stage 2 HP-lock resolution note
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+§1.K MW1 mini-lock (locked 2026-05-26) is the primary anchor (lock includes A10 in its anchored-pages list at §1.K). No additional HP work required.
+
+---
+
+## Closest existing pages (cannibalisation context, §4.5)
+
+- A7 `applicable-sdlt-rates-for-first-time-buyers` (~0.55 sibling — MW1 batch M1-A-B2 sibling). Rate-table reference. **Differentiation:** A10 leads with Sch 6ZA para 6 worldwide-test + joint-purchase rule + bare-trust amendment; A7 leads with rate table + reversion narrative. Heavy bidirectional cross-link.
+- A11 `first-time-buyer-relief-calculator` (~0.50 sibling — MW1 batch M1-A-B2 sibling). Worked-examples + calculator. **Differentiation:** A10 is statutory definition + eligibility tests; A11 is arithmetic walkthroughs. Heavy bidirectional cross-link.
+- A12 `first-time-buyer-relief-overcome-down-payment` (~0.40 sibling — MW1 batch M1-A-B2 sibling). Deposit-availability framing. Bidirectional cross-link.
+- A13 `first-time-buyer-relief-understanding-tax-credits-and-deductions` (next batch). Cluster cohesion cross-link once A13 ships.
+- `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` (~0.35 cannib) — Scottish LBTT FTB relief eligibility. **Differentiation:** A10 is England + NI Sch 6ZA; Scottish page is LBTT Sch 4A. Cross-jurisdictional companion.
+- `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` (~0.30 cannib) — Welsh position + three-jurisdiction comparison. Cross-link.
+- `second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules` (~0.25 cannib) — Sch 4ZA joint-owner aggregation rules. **Differentiation:** A10 covers the FTB+non-FTB partner trap as one of many eligibility scenarios; the surcharge page is the Sch 4ZA mechanics depth. Bidirectional cross-link.
+- `sdlt-shared-ownership-staircasing` (~0.10 cannib) — shared-ownership mechanics. **Differentiation:** A10 covers the FTB-relief shared-ownership election under Sch 6ZA paras 6A-6D; the staircasing page is the broader staircasing arithmetic. Cross-link.
+
+**No CANNIBAL flag.** A10 is the eligibility-led FTB page in the cluster.
+
+---
+
+## Redirect overlap (§4.6)
+
+Stage 2 scan of `Property/web/src/middleware.ts` on 2026-05-26: no existing 301 entries for `/blog/property-types-and-specialist-tax/first-time-buyer-relief-benefits-and-eligibility-requirements` or near-synonym slugs. **No middleware edit required at launch.**
+
+---
+
+## Authority links (§4.7)
+
+**Statutory:**
+- FA 2003 s.57B — https://www.legislation.gov.uk/ukpga/2003/14/section/57B (Stage 1 verified 2026-05-26).
+- FA 2003 Schedule 6ZA — https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA (paras 1, 4, 6, 6A-6D shared-ownership, 6(3) bare-trust insertion).
+- F(No.2)A 2024 c. 12 s.8 — https://www.legislation.gov.uk/ukpga/2024/12/section/8 (bare-trust amendment).
+- FA 2003 s.117 — https://www.legislation.gov.uk/ukpga/2003/14/section/117 (definition of "major interest" — 21+ year leasehold or freehold).
+- FA 2003 Sch 4ZA — https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA (joint-purchase + surcharge interaction).
+- FA 2003 s.43 — https://www.legislation.gov.uk/ukpga/2003/14/section/43 (chargeable consideration — relevant to mortgage-assumption questions).
+
+**HMRC manuals:**
+- SDLTM29800+ (FTB relief mechanics) — https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29800
+- SDLTM29850 (FTB definition + prior-acquisition test) — RUN session verifies current version.
+- SDLTM29870 (shared-ownership FTB-relief election) — RUN session verifies sub-page.
+- SDLTM09766 (additional dwellings surcharge interaction).
+- SDLTM07900+ (chargeable consideration including mortgage assumption).
+
+**gov.uk policy:**
+- https://www.gov.uk/government/publications/stamp-duty-land-tax-relief-for-first-time-buyers (HMRC FTB relief policy paper).
+
+**Cross-references in house_positions.md:** §1.K (**MW1 mini-lock — primary anchor**, 2026-05-26); §1 main text; §1.I (Sch 4ZA surcharge cross-link).
+
+---
+
+## Stage 2 statutory citation cross-check (§16.36 / §16.40)
+
+| Citation | Quoted text (Stage 1 capture) | Stage 1 verify date | Status |
+|---|---|---|---|
+| FA 2003 s.57B(1) | "Schedule 6ZA provides relief for first-time buyers." | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA para 1(3) | £500,000 absolute cap | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA para 1(4) | "Each of the purchasers is a first-time buyer who intends to occupy" + single-dwelling test | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA para 4 Table A | 0% to £300k; 5% £300k-£500k | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA para 6 | FTB definition (no prior major interest in dwelling anywhere in world) | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA paras 6A-6D | Shared-ownership election mechanics | 2026-05-26 | verified at level of existence; RUN session reads sub-paras for arithmetic |
+| FA 2003 Sch 6ZA para 6(3) | Bare-trust insert per F(No.2)A 2024 s.8 | 2026-05-26 | verified |
+| FA 2003 s.117 | Major interest definition (21+ year leasehold or freehold) | 2026-05-26 | verified |
+| F(No.2)A 2024 c. 12 s.8 | Bare-trust amendment | 2026-05-26 | verified |
+
+**Drift risk: LOW.** Sch 6ZA architecture is stable; the 2024 bare-trust amendment is the only recent change and is captured in §1.K.
+
+**Drift watchpoint:** RUN session verifies the precise para 6 wording on the "previously been a purchaser" / "previously held an equivalent interest" formulation against the legislation.gov.uk consolidated text, because inheritance + gift fact-patterns turn on this wording and competitor pages sometimes paraphrase it loosely.
+
+---
+
+## Stage 2 URL liveness verification (§16.31)
+
+RUN session search + verify:
+1. HMRC SDLT Manual SDLTM29800+ chain — verify each sub-page version date; flag any still citing £425k/£625k temporary thresholds.
+2. Saffery / BDO / RSM / ICAEW / conveyancing-firm FTB pages — site-search + liveness check.
+3. MoneySavingExpert + Which? FTB pages — high-traffic mainstream consumer authority; verify current.
+
+**Stage 1 status:** competitor URLs at class level; statute URLs verified live 2026-05-26.
+
+---
+
+## Universal rules (§4.8 — verbatim)
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Practical, specific, anonymised personas. Worked-example buyers: Maya (sole FTB), the Patel-Karim joint-purchase (FTB + non-FTB partner trap), Leo (inheritance-disqualified buyer), Aisha (overseas-ownership disqualified), the Chen shared-ownership election.
+
+### Lead-gen architecture
+- LeadForm auto-injected. `<aside>` styled by `.prose-blog aside`. No Tailwind classes.
+
+### CTA placement guidance (per this page — eligibility-led with multiple high-intent moments)
+- 3 inline `<aside>` CTAs. Conversion moments:
+  - After the joint-purchase trap section (high-intent: spouse / partner who owns property questions).
+  - After the worldwide-test discussion (high-intent: overseas inheritance / overseas ownership questions).
+  - After the bare-trust 2024 amendment section (mid-intent: trust-structuring questions).
+- Eligibility-led pages support 3 CTAs more naturally than rates-led pages because the page surfaces multiple discrete decision-points.
+
+### Schema
+- FAQs in frontmatter `faqs:` array (target 12-15 for this eligibility-deep-dive page; higher than rates-led siblings because the eligibility surface is broader).
+
+### Cannibalisation
+- A10 is the eligibility deep-dive. Read A7 + A11 + A12 sibling briefs + Scottish + Welsh FTB pages + surcharge page + shared-ownership-staircasing page before writing. Heavy cross-link load.
+- The joint-purchase trap appears in A7 (brief summary), A10 (here — deep eligibility-rule treatment), A11 (full arithmetic). A10's version is the **rule-led depth treatment**; arithmetic defers to A11.
+
+### House positions
+- **§1.K is your primary working detail (verbatim-locked 2026-05-26).**
+- §1.K do-not-write list (5 items) MUST hold per A7 / A10 / A11 / A12 cluster discipline.
+
+### Quality bar
+- Word count: 2,600-3,000 body (slightly higher than A7's 2,400-2,800 because eligibility-led pages support deeper sub-topic coverage).
+- FAQs: 12-15.
+- New external authority links: 6-8.
+- Six verifications.
+
+### Anti-templating
+- Open with **"The first-time buyer test under FA 2003 Schedule 6ZA paragraph 6 is stricter than commonly assumed"** + the worldwide-test catch, NOT with "Buying your first home is one of life's milestones..." or "First-time buyer relief is a valuable tax saving..."
+- Vary H2s from A7's rate-table-led structure. A10's H2 sequence should foreground the eligibility tests: definition, joint-purchase rule, intention-to-occupy, single-dwelling, shared-ownership election, bare-trust amendment, surcharge interaction.
+
+---
+
+## 19-step workflow (verbatim, NETNEW_PROGRAM §7)
+
+1. Read house_positions.md once (§1.K + §1 main + §1.I + §23 cross-jurisdiction).
+2. Claim ONE page in MW1 tracker on MAIN absolute path.
+3. Read brief.
+4. Fetch competitor URLs (HMRC manual + Saffery + BDO + RSM + ICAEW + MSE + Which? + conveyancing-firm pages).
+5. Read each closest-existing page on our site.
+6. Plan H2/H3 outline + meta + FAQs + 3 CTAs.
+7. Verify factual claims per §16.35. Verify Sch 6ZA paras 1, 4, 6, 6A-6D, 6(3) verbatim.
+8. Hero image: "couple house keys first home" via Pexels.
+9. Write the markdown file at `Property/web/content/blog/first-time-buyer-relief-benefits-and-eligibility-requirements.md`.
+10. Build: `cd Property/web && npm run build`.
+11. Six verifications.
+12. Middleware redirect (none).
+13. Register in `monitored_pages`.
+14. **Commit on branch BEFORE marking tracker done.**
+15. Fill in work-log.
+16. Mark done on MAIN tracker.
+17. Append site-wide flags (F-2..F-49 Bucket A).
+18. Log discoveries.
+19. Next page.
+
+---
+
+## Per-page work-log (RUN session fills in)
+
+### Decisions
+- **Final slug / category:** [confirm or override]
+- **H1 chosen:** [final]
+- **Meta title + char count:** ___
+- **Meta description + char count:** ___
+- **Why these vs other options:** [reasoning]
+
+### Competitor URLs fetched
+- [URLs + status + takeaways]
+
+### Existing-page review
+- A7 sibling read; differentiation confirmed (rates vs eligibility)
+- A11 sibling read; differentiation confirmed
+- A12 sibling read; differentiation confirmed
+- Scottish + Welsh FTB pages read; jurisdictional sign-post confirmed
+- Surcharge page read; joint-purchase trap differentiation confirmed
+- Shared-ownership page read; election differentiation confirmed
+
+### Citations added
+[List]
+
+### Internal links added
+1. `/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers` (A7 rates companion)
+2. `/blog/property-types-and-specialist-tax/first-time-buyer-relief-calculator` (A11 calculator companion)
+3. `/blog/property-types-and-specialist-tax/first-time-buyer-relief-overcome-down-payment` (A12 deposit companion)
+4. `/blog/property-types-and-specialist-tax/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics`
+5. `/blog/property-types-and-specialist-tax/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland`
+6. `/blog/property-types-and-specialist-tax/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules` (Sch 4ZA depth)
+...
+
+### Inline CTA placements
+1. After joint-purchase trap section
+2. After worldwide-test section
+3. After bare-trust 2024 section
+
+### Build attempts
+- Attempt 1: [pass/fail]
+
+### Verification (six checks)
+- em-dash count: ___
+- Tailwind utility classes: ___
+- metaTitle length: ___ (limit 62)
+- metaDescription length: ___ (limit 158)
+- FAQ count: frontmatter ___ ; built HTML JSON-LD ___ ; match: yes/no
+- Internal links resolve: yes/no
+- Body word count: ___ (target 2,600-3,000)
+
+### Flags raised
+- [F-N if any]
+
+### 2-3 sentence summary
+[RUN session summary]
