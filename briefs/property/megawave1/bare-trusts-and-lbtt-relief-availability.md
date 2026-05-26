@@ -45,8 +45,188 @@ Anti-templating: lead with "If you are a bare trustee, you are jointly liable bu
 - HMRC manuals to cite: none - LBTT is Revenue Scotland jurisdiction. Use Revenue Scotland LBTT10000+ manual sections (trusts) instead.
 - Case-law to ground: Scottish Tax Tribunal cases on bare-trust characterisation under LBTT; the broader Scots-law bare-trust case-line (e.g. Lord Advocate v Ferguson 1973) for substance-over-form characterisation. Stage 2 search for Scottish Tax Tribunal decisions on Sch 18.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 - voice (no em-dashes; commas, parentheses, full stops, middle dots only); lead-gen architecture (LeadForm auto-injected; aside-styled CTAs only); schema (FAQs in frontmatter; FAQPage JSON-LD auto-emitted; target 8-10 for this operational page); cannibalisation cross-link discipline (link to corporate-restructuring, FTB, ADS, and the proposed acquisition-relief page); house-position anchors (§23.4 + §23.5 + §23.6 + §23.10); quality bar (word count 2,400-2,800; FAQs 8-10; external authority links 6-8; build clean; six verifications); anti-templating discipline (lead with the look-through principle, NOT with "A bare trust is..."; vary H2s from the corporate-restructuring page - relief-by-relief rather than corporate-reorganisation-flow).]
+## Competitor URLs (Stage 2 populated 2026-05-26; URL liveness verified at fetch time per §16.31)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the look-through principle under Sch 18 para 5; (b) whose status is tested for FTB / ADS / MDR; (c) the trustee's joint-liability mechanic under para 6; (d) the lease carve-out under paras 7-9; (e) characterisation traps (bare vs settlement). Most competitor content conflates bare-trust treatment with general trust treatment under Sch 18 Part 4 (settlements) — RUN session flags this drift.
+
+- https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt10000-trusts-and-partnerships (Revenue Scotland LBTT10000 trusts manual — authoritative source)
+- https://www.brodies.com/insights/tax/lbtt-trusts-bare-trust-treatment/ (Brodies LLP bare-trust treatment)
+- https://www.burnesspaull.com/insights/lbtt-bare-trust-look-through-principle/ (Burness Paull look-through explainer)
+- https://www.shepwedd.com/knowledge/lbtt-trust-treatment/ (Shepherd and Wedderburn trust-treatment guide)
+- https://www.pinsentmasons.com/out-law/guides/lbtt-trusts-scotland (Pinsent Masons Scottish-LBTT trust guide)
+
+**Borrowable patterns:** look-through-principle diagrams; relief-by-relief table (FTB, ADS, MDR, group, partnership treatments under bare trust). Do NOT borrow any conflation of bare-trust with settlement treatment; the §16.36 drift line is precisely the para 5 look-through vs para 10 settlement-trustee-as-chargeable-person distinction.
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "bare trust LBTT", "LBTT bare trustee", "Scottish bare trust property tax", "LBTT trust relief", "bare trust First Time Buyer Scotland", "parent buying for child LBTT", "nominee LBTT Scotland".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics` (cannibal score ~0.46, the corporate-restructuring-lens deep page on group / reconstruction / acquisition relief through bare trusts; **cross-link as the corporate-reorganisation deep-dive**; B4 sits upstream as the broader relief-landscape)
+- `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` (~0.25, FTB relief deep page; **cross-link from the FTB-via-bare-trust section**)
+- `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (~0.22, ADS deep page; **cross-link from the ADS-via-bare-trust section**)
+- `scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision` (~0.12, corporate-buyer-pathway page; cross-link as cluster-adjacent)
+- M1-B sibling `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` (B5, future page; cross-link DOWN from the corporate-reorganisation-relief section)
+- M1-B sibling `lbtt-review-in-scotland` (B6, future hub; cross-link UP for cluster orientation)
+- M1-A sibling `land-and-buildings-transaction-tax-multiple-dwellings-relief` (A19) for the MDR-through-bare-trust angle.
+
+**Cannibalisation discipline:**
+- The corporate-restructuring page covers group + reconstruction + acquisition reliefs through bare trusts in depth — do NOT re-walk those in B4; refer outward.
+- B4 leads with the look-through PRINCIPLE and treats each LBTT relief by category from a trustee/beneficiary lens; the corporate page treats the same reliefs from a corporate-reorganisation lens. The two pages are deliberately complementary.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing slug matches B4's bare-trust-and-relief-landscape scope. No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-26; session selects 6-8)
+
+**Statutory (LBTT(S)A 2013):**
+- LBTT(S)A 2013 Sch 18 (trusts; Part 3 bare-trust look-through paras 5-9; Part 6 definitions paras 19-21; verified 2026-05-26): https://www.legislation.gov.uk/asp/2013/11/schedule/18
+- LBTT(S)A 2013 s.50 (introduces Sch 18): https://www.legislation.gov.uk/asp/2013/11/section/50
+- LBTT(S)A 2013 Sch 4A (FTB relief): https://www.legislation.gov.uk/asp/2013/11/schedule/4A
+- LBTT(S)A 2013 Sch 2A (ADS framework): https://www.legislation.gov.uk/asp/2013/11/schedule/2A
+- LBTT(S)A 2013 Sch 5 (MDR): https://www.legislation.gov.uk/asp/2013/11/schedule/5
+- LBTT(S)A 2013 Sch 11 (reconstruction and acquisition reliefs, NOTE per HP §16.36 line: acquisition relief is at Sch 11, NOT FA 2003 Sch 7 Part 2 which is the English SDLT parallel): https://www.legislation.gov.uk/asp/2013/11/schedule/11
+- LBTT(S)A 2013 Sch 17 (partnership relief): https://www.legislation.gov.uk/asp/2013/11/schedule/17
+
+**Revenue Scotland guidance (authoritative for LBTT, NOT HMRC SDLTM):**
+- Revenue Scotland LBTT10000+ (trusts manual): https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt10000-trusts-and-partnerships
+- Revenue Scotland LBTT residential rates page: https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property
+- Revenue Scotland LBTT ADS overview: https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads
+- Revenue Scotland LBTT3048 FTB relief: https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief
+
+**Cross-references in house_positions.md:** §23.4 main residential rates + Scottish FTB-relief; §23.5 ADS at 8% from 5 December 2024; §23.6 Scottish MDR retained + reliefs catalogue (specifically Sch 11 acquisition relief, Sch 10 group, Sch 10A sub-sale, Sch 17 partnership); §23.10 citations block; §23.11 do-not-write list.
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + revenue.scot: (a) Sch 18 para 5 verbatim ("as if made by the person or persons for whom the trustee is trustee"); (b) Sch 18 para 6 trustee joint-liability mechanic; (c) Sch 18 paras 7-9 lease carve-out; (d) Sch 18 paras 19-21 bare-trust definition + "absolutely entitled"; (e) FTB applies to beneficiary's status not trustee's; (f) ADS at 8% tested on beneficiary's worldwide dwelling-ownership; (g) Sch 11 acquisition relief / Sch 10 group / Sch 10A sub-sale / Sch 17 partnership all flow through the bare trust; (h) Sch 18 Part 4 (paras 10-14) settlement-trustee mechanics where Part 3 does not apply.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Operational tone, trustee-and-beneficiary facing (NOT corporate-tax-adviser facing — that is the corporate-restructuring page's voice).
+- Specific worked examples using parent-as-bare-trustee-for-minor-child scenarios + nominee-arrangements + unmarried-co-owner-declaration-of-trust scenarios.
+- Anonymised personas only.
+- Named statute every time a rule is asserted (LBTT(S)A 2013 Sch 18 paras 5, 6, 7-9, 19-21; Sch 4A; Sch 2A; Sch 5; Sch 11; Sch 17).
+- Use "Scotland" / "Scottish" precisely.
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 2 to 3 inline `<aside>` CTAs:
+  - After the look-through principle section (high-intent: trustee/beneficiary trying to characterise their arrangement)
+  - After the FTB / ADS interaction section (high-intent: parent buying for child realising the beneficiary-status-determines-relief mechanic)
+  - Optionally after the bare-vs-settlement characterisation trap (high-intent: trustee uncertain whether their arrangement is bare or discretionary)
+- Vary opening; lead with "If you are a bare trustee, the tax is computed as if your beneficiary bought" NOT "A bare trust is...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 10 to 12 for this operational tier. Include explicit FAQ on the bare-vs-settlement characterisation trap and the parent-for-minor-child scenario.
+
+### Cannibalisation
+- Cross-link `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics` as the corporate-reorganisation deep-dive.
+- Cross-link `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` from the FTB section.
+- Cross-link `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` from the ADS section.
+- Cross-link future B5 `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` from the acquisition-relief section.
+- Cross-link future B6 `lbtt-review-in-scotland` for cluster orientation.
+- Cross-link M1-A A19 `land-and-buildings-transaction-tax-multiple-dwellings-relief` from the MDR section.
+
+### House positions
+- §23.4 primary (main LBTT rates + FTB-relief subsection).
+- §23.5 (ADS at 8%).
+- §23.6 (MDR + reliefs catalogue with Sch 11 acquisition relief verified per §16.36 lesson).
+- §23.10 (citations).
+- §23.11 (do-not-write list).
+
+### Quality bar
+- Body word count: 2,400 to 2,800 (operational tier).
+- FAQs: 10 to 12.
+- External authority links: 6 to 8.
+- Build clean: `cd Property/web && npm run build`.
+- All six verifications.
+
+### Anti-templating
+- Differentiator is the **relief-by-relief look-through walkthrough** — lead with the principle (Sch 18 para 5), then walk each relief by category. Write to it.
+- Lead with "If you are a bare trustee, you are jointly liable but the tax is calculated as if your beneficiary bought" — NOT with "A bare trust is a type of trust where...".
+- Vary H2s from the corporate-restructuring page (which leads with group-relief mechanics); B4 leads with the principle, then walks reliefs.
+- Vary FAQ phrasing.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. §23.4 + §23.5 + §23.6 + §23.10 + §23.11.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs via httpx + BeautifulSoup. Note any drift between bare-trust and general-trust treatment.
+5. Read closest existing pages: `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics`, `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics`, `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers`.
+6. Plan H2 outline + meta + FAQs + CTA placements. Look-through-principle-first, then relief-by-relief.
+7. Verify factual claims; **per §16.35: re-verify Sch 18 paras 5-9 + 19-21 verbatim at legislation.gov.uk; verify Sch 11 acquisition relief location (NOT FA 2003 Sch 7 Part 2 per §16.36 lesson); verify revenue.scot LBTT10000+ trust-manual sections**.
+8. Fetch hero image. Query suggestion: "scottish family home" or "trust deed signature".
+9. Write markdown at `Property/web/content/blog/bare-trusts-and-lbtt-relief-availability.md` with full frontmatter.
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register in `monitored_pages`.
+14. **Commit on `property-megawave1-b` branch.** Commit message: `MegaWave 1 RUN B: bare-trusts-and-lbtt-relief-availability page (M1-B-B1)`.
+15. Fill in the work-log below.
+16. Mark ✅ done in tracker.
+17. Append site-wide flags to `megawave1_site_wide_flags.md` (F-50 to F-99).
+18. Append discoveries to `megawave1_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review
+- 
+
+### Citations added
+- 
+
+### Internal links added
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave1_site_wide_flags.md
+- 
+
+### 2-3 sentence summary
+-
