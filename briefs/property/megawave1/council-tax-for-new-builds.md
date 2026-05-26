@@ -58,5 +58,88 @@ Target length 2,200-2,600 words. Tone: technical-explainer with worked timeline 
 ## Universal rules + workflow stubs (Stage 2 fills)
 [Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; technical-explainer tone with worked timeline examples; reader audience: self-builders, developers, conveyancers, BTL landlords with new-build acquisitions); lead-gen architecture (LeadForm + aside-CTAs after the "Can I challenge?" section and after the "Empty-homes premium" section — high-intent reader often holding a completion notice or planning a build); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs target); cannibalisation cross-link discipline (light cross-link with existing business-rates-vs-council-tax page; heavy cross-link with the future council-tax cluster pages from this MegaWave); house-position anchors (NEW HP-LOCK §29 candidate); quality bar (word count 2,200-2,600; FAQs 12; external authority links 8-10; build clean; six verifications); anti-templating (lead with the **statutory mechanic** — "Council tax on a new build begins on the completion day determined under LGFA 1988 Sch 4A as applied by LGFA 1992 s.17. The substantially-completed test under para 9 — not first occupation — is the operative trigger" — NOT with "Council tax on new builds starts when you move in" which is wrong).]
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+## Stage 2 extension (M1-C-B1, locked 2026-05-26)
+
+### Stage 1b HP-lock status (drift catch from seed)
+
+Seed proposed "NEW HP-LOCK NEEDED, §29 Council tax framework." Verified at Stage 2 against `house_positions.md` 2026-05-26: §29 is occupied by the "VAT for property" Wave 8 architectural anchor cluster. The actual council-tax HP lock is **§30 "Council tax framework, LGFA 1992 + SI 1992/558 architecture, MW1 extension (locked 2026-05-26)"**, anchoring C2 + C3 + C4 + C6 + C8 + C9 explicitly at §30.7. RUN session reads §30.1 through §30.10 once at session start, anchors C2 to §30 (NOT a §29 lock, which does not exist). §30.4 (premium powers, post-LURA 2023) is the operative cross-reference for the s.11B / s.11C overlay on the completion-day starting clock; §30.10's practical writing rule applies. F-101 (council-tax §29→§30 numbering drift, raised at Stage 1) now closed by Stage 1b §30 lock.
+
+### Final competitor URLs (3-5, Stage 2 verifies live at write time per §16.31)
+
+1. https://www.gov.uk/council-tax/who-has-to-pay (gov.uk citizen-facing reference, the operational definitive source on liability + new builds)
+2. https://www.homebuilding.co.uk/advice/council-tax-on-new-builds (HomeBuilding & Renovating, self-builder specialist treatment)
+3. https://www.checkmybuild.co.uk/council-tax-on-new-builds-completion-notices/ (specialist new-build completion-notice practitioner site)
+4. https://www.lawsociety.org.uk/topics/property/property-completion-notices-council-tax (Law Society practice note)
+5. https://www.local.gov.uk/parliament/briefings-and-responses/council-tax-completion-notices (LGA local-government perspective on Sch 4A operating practice)
+
+### Final authority links (5-8 per §4.7)
+
+1. LGFA 1992 s.17 (completion-notice gateway): https://www.legislation.gov.uk/ukpga/1992/14/section/17
+2. LGFA 1988 Sch 4A (determination of completion day): https://www.legislation.gov.uk/ukpga/1988/41/schedule/4A
+3. LGFA 1992 s.3 (definition of dwelling): https://www.legislation.gov.uk/ukpga/1992/14/section/3
+4. LGFA 1992 s.11B (empty-homes premium, post-LURA 2023): https://www.legislation.gov.uk/ukpga/1992/14/section/11B
+5. LURA 2023 s.79 (1-year empty-homes-premium trigger): https://www.legislation.gov.uk/ukpga/2023/55/section/79
+6. SI 2003/3011 (Prescribed Classes of Dwellings, empty-dwelling discounts): https://www.legislation.gov.uk/uksi/2003/3011
+7. VOA Council Tax Manual (banding new builds): https://www.gov.uk/guidance/council-tax-manual
+8. gov.uk Valuation Tribunal Service (completion-notice appeals): https://valuationtribunal.gov.uk/council-tax-appeals/
+
+### Closest existing pages (cannibalisation context per §4.5)
+
+Token-similarity assessment performed at Stage 2 against current main inventory:
+
+1. `property-business-rates-council-tax-landlords` (property-types-and-specialist-tax, similarity ~0.34). Existing light-SEO page on the business-rates-vs-council-tax distinction with HMO + FHL touchpoints. No new-build completion-notice coverage; no Sch 4A LGFA 1988 mechanic. **Differentiation:** C2 is the dedicated new-build completion-notice / Sch 4A page; the existing page covers the regime-distinction question. Cross-link from C2 ("for the wider business-rates-vs-council-tax regime distinction, see [related page]") and back-flag from the existing page as an INTERNAL_LINK candidate at step 17.
+2. (C3 sibling) `government-to-end-council-tax-on-hmo-rooms` (this batch, post-deploy). Sister page on SI 2023/1175 HMO single-dwelling rule. **Differentiation:** C3 covers HMO classification; C2 covers new-build completion-notice mechanic; cross-link "conversion of office to HMO triggers a fresh completion notice under Sch 4A".
+3. (C4 sibling) `is-increasing-council-tax-damaging-the-housing-market` (this batch, post-deploy). Sister page on policy-and-mechanics. **Differentiation:** C4 covers policy analysis; C2 covers operational mechanic; cross-link for the empty-homes-premium / second-homes-premium overlay context.
+4. (C6 sibling) `reduce-your-council-tax-bill-in-the-uk` (this batch, post-deploy). Sister page on reduction routes. **Differentiation:** C6 hub; C2 specific new-build mechanic; cross-link "if your new build is empty for more than 12 months see the empty-homes-premium-versus-reduction-routes analysis in C6 + C4".
+5. (Wave 1) `bewley-uninhabitable-property-test-uk-property-tax-relief` (property-types-and-specialist-tax, similarity ~0.20). Adjacent on dwelling-vs-non-dwelling line but for SDLT-Bewley test, not council-tax substantially-completed test. **Differentiation:** different statute, different test, different downstream tax. Cross-link only where relevant (the building-regs vs Sch 4A vs Bewley distinction is a worthwhile distinction-of-tests note in C2).
+
+**No CANNIBAL flag.** C2 occupies clean topical space within the council-tax cluster.
+
+### Redirect overlap
+
+No existing 429 middleware redirect overlaps `council-tax-for-new-builds`. Verified by inspection of middleware.ts redirect map at Stage 2. No redirect action required at step 12.
+
+### Universal rules (per §4.8, verbatim)
+
+- **Voice.** No em-dashes (commas, parentheses, full stops, middle dots only). Specific. Named legislation. Anonymised personas (Patel-self-builder, Singh-developer, etc.). No real client names or specific firm / agency / tenant dispute references.
+- **Lead-gen architecture.** LeadForm auto-injected at footer by BlogPostRenderer; never duplicate in body. Inline `<aside>` CTAs at conversion moments only, after the "Can I challenge a completion notice?" section and after the "Empty-homes premium" section per Manager pre-decisions.
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes. `<aside>` styled by global CSS at `Property/web/src/app/globals.css`.
+- **FAQs.** 12 FAQs in frontmatter `faqs:` array; auto-emitted as FAQPage JSON-LD by the renderer. Vary phrasing per page.
+- **Cannibalisation discipline.** Read the closest-existing pages above before writing; differentiate by the framing differentiator; cross-link rather than overlap.
+- **Anti-templating.** Per-page framing differentiator. Vary H2 structure across the council-tax cluster (C2 / C3 / C4 / C6 must NOT read like four versions of the same page). Vary opening sentence, FAQ phrasing, worked-example personas.
+- **Quality bar.** Six verifications at step 11. Body word count 2,200-2,600.
+
+### 19-step per-page workflow (verbatim, per §7)
+
+1. Read `house_positions.md` once at session start (§30 council tax framework is the operative cluster anchor for C2).
+2. Claim ONE page in the wave tracker (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with httpx + BeautifulSoup.
+5. Read closest-existing pages on our site.
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page, anti-templating).
+7. Verify factual claims against authorities (legislation.gov.uk, gov.uk, VOA manual). **§16.35 mandate: WebFetch every numeric figure + every statutory section cite at write time before committing. Particular focus for C2: LURA 2023 s.79 commencement (1 April 2024, 12-month trigger); LURA 2023 s.80 commencement (s.11C inserted from 26 October 2023, operative LA charging typically 1 April 2025); current VTS appeal-window position.**
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none for C2).
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file (e.g., INTERNAL_LINK back-flag to the `property-business-rates-council-tax-landlords` page recommending C2 reference).
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+### Per-page work-log (RUN session populates)
+
+- **Decisions (slug, category, H1, meta title, why these vs alternatives):** [RUN session fills]
+- **Competitor URLs fetched + key takeaway per URL:** [RUN session fills]
+- **Existing-page review (overlap, differentiation decision):** [RUN session fills]
+- **Citations added:** [RUN session fills]
+- **Internal links added:** [RUN session fills]
+- **Inline CTA placements:** [RUN session fills]
+- **Build attempts (pass/fail):** [RUN session fills]
+- **Verification (each of the six checks):** [RUN session fills]
+- **Flags raised:** [RUN session fills, prefix F-100..F-149 for this bucket]
+- **2-3 sentence summary:** [RUN session fills]
