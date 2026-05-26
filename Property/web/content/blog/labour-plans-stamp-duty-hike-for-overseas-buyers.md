@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "Labour SDLT Hike for Overseas Buyers: 2% to 3% Status"
-metaDescription: "Labour's 2024 manifesto committed to lifting the non-resident SDLT surcharge from 2% to 3%. As at 26 May 2026, the surcharge remains 2% under FA 2003 Schedule 9A. Worked examples at both rates."
+metaDescription: "Labour's 2024 manifesto committed to lifting the non-resident SDLT surcharge from 2% to 3%. As at 26 May 2026"
 altText: "A union jack flag flying above a London residential skyline representing the non-resident SDLT surcharge under FA 2003 Schedule 9A and Labour's 2024 manifesto commitment to lift the rate from 2% to 3% for overseas buyers"
 image: "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "Horton Hall SDLT Case: FTT on Residential Grounds Test"
-metaDescription: "White & Kane v HMRC [2023] UKFTT 866 (TC) confirmed the fields at Horton Hall were residential grounds under FA 2003 s.116(1)(b). Mixed-use SDLT claim dismissed. The functional appendage test."
+metaDescription: "White & Kane v HMRC [2023] UKFTT 866 (TC) confirmed the fields at Horton Hall were residential grounds under FA 2003 s.116(1)(b)."
 altText: "A view of a country estate with surrounding fields and outbuildings illustrating the residential grounds test under FA 2003 s.116(1)(b) addressed in White & Kane v HMRC (the Horton Hall SDLT case)"
 image: "https://images.pexels.com/photos/1500459/pexels-photo-1500459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

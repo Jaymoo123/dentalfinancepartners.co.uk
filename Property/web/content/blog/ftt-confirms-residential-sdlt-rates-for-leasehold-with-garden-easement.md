@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "Bonsu v HMRC: SDLT Residential Rates on Garden Easement"
-metaDescription: "FTT confirmed in Bonsu v HMRC that a leasehold flat with a communal-garden easement attracts residential SDLT rates. The easement is itself residential property under FA 2003 s.116(1)(c)."
+metaDescription: "FTT confirmed in Bonsu v HMRC that a leasehold flat with a communal-garden easement attracts residential SDLT rates."
 altText: "An aerial-style view of a London communal garden surrounded by mansion-block leasehold flats, illustrating the easement architecture that the FTT examined in Bonsu v HMRC under the SDLT residential property test"
 image: "https://images.pexels.com/photos/1486577/pexels-photo-1486577.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

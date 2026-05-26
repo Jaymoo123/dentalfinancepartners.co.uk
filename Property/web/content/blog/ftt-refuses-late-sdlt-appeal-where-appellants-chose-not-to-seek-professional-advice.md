@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "FTT Refuses Late SDLT Appeal: Goonesena and Martland"
-metaDescription: "Goonesena v HMRC: FTT refused permission to bring a late SDLT appeal where the taxpayers made a conscious choice not to seek professional advice. 164-day delay. Martland framework applied."
+metaDescription: "Goonesena v HMRC: FTT refused permission to bring a late SDLT appeal where the taxpayers made a conscious choice not to seek professional advice."
 altText: "A clock face overlaid on legal paperwork representing the strict 30-day SDLT appeal window under FA 2003 Schedule 10 paragraph 35, illustrating the Goonesena late-appeal refusal"
 image: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

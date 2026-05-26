@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "First-Time Buyer SDLT Relief: Eligibility and Benefits"
-metaDescription: "Sch 6ZA first-time buyer relief eligibility: worldwide-ownership test, joint-purchaser rule, intention-to-occupy, single-dwelling test, and bare-trust 2024 amendment."
+metaDescription: "Sch 6ZA first-time buyer relief eligibility: worldwide-ownership test, joint-purchaser rule, intention-to-occupy, single-dwelling test"
 altText: "A couple meeting with an accountant to review whether they qualify for SDLT first-time buyer relief on their planned home purchase in England"
 image: "https://images.pexels.com/photos/8867432/pexels-photo-8867432.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

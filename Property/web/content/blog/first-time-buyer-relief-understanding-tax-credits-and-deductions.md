@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "FTB Relief: Tax Credit or Deduction? UK vs US Vocabulary"
-metaDescription: "UK SDLT first-time buyer relief is not a tax credit or a tax deduction in the US sense. It is a chargeable-rate reduction. Here is the UK architecture explained for readers arriving from US tax vocabulary."
+metaDescription: "UK SDLT first-time buyer relief is not a tax credit or a tax deduction in the US sense. It is a chargeable-rate reduction."
 altText: "A first-time UK home buyer reviewing the SDLT calculation on a completion statement with a conveyancer, comparing the rate-reduction relief against the US tax-credit and deduction concepts"
 image: "https://images.pexels.com/photos/8293656/pexels-photo-8293656.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

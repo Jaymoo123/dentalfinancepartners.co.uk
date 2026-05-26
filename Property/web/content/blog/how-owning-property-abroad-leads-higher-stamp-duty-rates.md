@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
 metaTitle: "Owning Property Abroad and UK SDLT: Three Statutory Routes"
-metaDescription: "Three statutory routes mean overseas property ownership raises a UK buyer's SDLT: 5% additional dwellings surcharge, 2% non-resident surcharge, and loss of first-time buyer relief. Worked examples."
+metaDescription: "Three statutory routes mean overseas property ownership raises a UK buyer's SDLT: 5% additional dwellings surcharge, 2% non-resident surcharge"
 altText: "A house key resting on a world map representing the worldwide-property test under FA 2003 Schedule 4ZA that captures any major interest in any dwelling located anywhere in the world for the UK SDLT additional dwellings surcharge"
 image: "https://images.pexels.com/photos/97550/pexels-photo-97550.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
