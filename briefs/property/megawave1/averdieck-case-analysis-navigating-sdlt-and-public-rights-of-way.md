@@ -45,8 +45,217 @@ Distinguish from the general `sdlt-mixed-use-property-classification` page by **
 - Case-law: Averdieck v HMRC (primary); Hyman EWCA + UT + FTT decisions; Mudan FTT; MHB FTT; Brown FTT; any subsequent FTT decisions citing Averdieck.
 - **Stage 1b drift watchpoint:** competitor SERP coverage of Averdieck is thin; Stage 2 may find that the case has been covered only in tax-press summaries rather than at FTT-decision depth. If the FTT decision text is not publicly available, Stage 2 flags this and writes to the statutory framework with the case discussed at the level the published summaries allow.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); lead-gen architecture (LeadForm + aside-CTAs after the case-summary section and after the "cost of failure" section; the audience is residential second-home buyers and their advisers, plus the niche of taxpayers already in enquiry on a PROW-mixed-use claim — high-intent on both); schema (FAQs in frontmatter; FAQPage JSON-LD; target 10-12); cannibalisation cross-link discipline (link to the mixed-use cluster + Bewley + sdlt-refund-scams pages); house-position anchors (§1.C Wave 7 Bewley lock + §1.J Wave 9 mixed-use case-law lock + §1.M NEW LOCK CANDIDATE for PROW sub-line OR extend §1.J); quality bar (word count 2,400-2,800; FAQs 10-12; external authority links 6-8; build clean; six verifications); anti-templating (lead with the **Averdieck fact-pattern**, then the s.116 statutory framework, then the wider Hyman-narrowing context; do NOT lead with "Mixed-use SDLT can save substantial amounts..." — that lead pattern is associated with the aggressive claim firms the page is implicitly distancing the site from).]
+## Stage 2 HP-lock resolution note
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+Stage 1 seed proposed §1.M "Public rights of way and the SDLT residential / mixed-use boundary — Averdieck principle" OR extending §1.J. **Stage 2 resolution:** §1.J Wave 9 mini-lock (mixed-use case-law trilogy + s.116) is the correct primary anchor as it currently stands. Adding a sub-bullet to §1.J for "Averdieck PROW sub-line" is the minimum-disruption resolution. **Sub-agent does NOT modify §1.J in this batch** (out-of-scope; conductor's call) but flags as F-N HOUSE_POSITION_EXTENSION candidate for Stage 1b conductor's review post-batch: "extend §1.J operational decision framework with PROW + public-access sub-bullet referring to Averdieck, OR create §1.M as a sub-lock". A9 RUN-phase write anchors on §1.J as-is + cites Averdieck within the §1.J case-law-trilogy frame (Hyman / Suterwalla / Hortons Hall / Averdieck).
+
+§1.C (Bewley) remains the secondary anchor for the building-habitability adjacent line (cross-referenced for the wider s.116 boundary context, not for the PROW-grounds line per se).
+
+---
+
+## Closest existing pages (cannibalisation context, §4.5)
+
+Token-similarity scan against current `main` blog inventory + the MW1 net-new pipeline. Read each before writing.
+
+- `sdlt-mixed-use-property-classification` (~0.40 cannib) — existing general mixed-use page covering the s.116 framework + apportionment + planning-classification interaction. **Differentiation:** A9 is the single-case-analysis on Averdieck + PROW sub-line specifically; the general page sweeps the doctrine. Bidirectional cross-link as "doctrine + case-specific companions".
+- `sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords` (~0.42 cannib) — Wave 9 mixed-use case-law trilogy page (Hyman + Suterwalla + Hortons Hall). **Differentiation:** A9 is the PROW sub-line case-analysis; the trilogy page covers the broader narrowing trajectory. A9 cites the trilogy page; trilogy page should back-patch a forward-link to A9 once it ships (flag as INTERNAL_LINK F-N).
+- `sdlt-bewley-uninhabitable-property-test-non-residential-rates-landlords` (~0.20 cannib) — Bewley s.116(1)(a) building-habitability exception. **Differentiation:** Bewley is the building habitability side; Averdieck is the grounds / PROW side. Companion cross-link.
+- `ated-mixed-use-property-apportionment-treatment` (~0.15 cannib) — ATED-side mixed-use apportionment. Different tax + different stakes. Cross-link only for broader tax-stack context.
+- `vat-mixed-use-property-purchase-residential-commercial-element-apportionment` (~0.10 cannib) — VAT-side mixed-use. Different tax. No direct overlap.
+- `sdlt-refund-scams-how-to-avoid` (~0.15 cannib) — consumer-protection page on aggressive SDLT-refund claim firms. **Differentiation:** A9 reinforces this page's warning (PROW-mixed-use is a known aggressive-firm pattern; A9's "cost of failure" section dovetails with the scams page). Bidirectional cross-link.
+- A14 `ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement` (~0.30 sibling) — MW1 next-batch sibling. Both are FTT case-analyses on the residential/grounds boundary; A9 is PROW, A14 is garden easement. Cluster cross-link as "grounds-boundary case pair".
+- A8 `archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt` (~0.20 cluster sibling) — MW1 batch M1-A-B2 (this batch). Both are FTT case-analyses. Different subjects (lease transitional vs PROW mixed-use). Light cluster cross-link.
+
+**No CANNIBAL flag.** A9 occupies the Averdieck-specific PROW slot; the mixed-use cluster has clear vertical differentiation. RUN session reads the general `sdlt-mixed-use-property-classification` + the trilogy page before writing to confirm no body-content overlap. INTERNAL_LINK F-N candidate: back-patch trilogy page to forward-link to A9 once A9 ships.
+
+---
+
+## Redirect overlap (§4.6)
+
+Stage 2 scan of `Property/web/src/middleware.ts` on 2026-05-26: no existing 301 entries for `/blog/property-types-and-specialist-tax/averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way` or near-synonym slugs. **No middleware edit required at launch.**
+
+---
+
+## Authority links (§4.7 — bucket-specific, RUN session selects 5-8)
+
+**Statutory:**
+- FA 2003 s.116 — https://www.legislation.gov.uk/ukpga/2003/14/section/116 (Stage 1 verified 2026-05-26; "Meaning of residential property": (1)(a) buildings used or suitable for use as a dwelling, (1)(b) gardens or grounds, (1)(c) interests for the benefit of such land).
+- FA 2003 s.55(1B) Table B — https://www.legislation.gov.uk/ukpga/2003/14/section/55 (non-residential / mixed-use rates: 0% to £150,000, 2% £150,000-£250,000, 5% above £250,000 — RUN verifies bands at write per §16.35).
+- FA 2003 Sch 4ZA "Higher rates for additional dwellings" — https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA (residential-only application; the 5% surcharge does NOT apply to mixed-use transactions, hence the double-win architecture of successful mixed-use claims).
+- FA 2007 Schedule 24 (Penalties for errors) — https://www.legislation.gov.uk/ukpga/2007/11/schedule/24 (for the "cost of failure" section: careless / deliberate-not-concealed / deliberate-and-concealed penalty bands).
+
+**Case-law (primary line):**
+- **Averdieck v HMRC** — FTT Tax Chamber. **STAGE 2 RUN SESSION CRITICAL TASK:** verify precise citation at write. Search: (a) GOV.UK FTT Tax Chamber decisions database; (b) BAILII FTT decisions; (c) Tax Journal / Tax Adviser coverage. Stage 1 flag: spelling may vary ("Averdiek" / "Avderdieck" in secondary sources) — verify canonical spelling.
+- **Hyman & Goodfellow v HMRC [2021] UKUT 68 (TCC)** — Upper Tribunal ruling on s.116(1)(b) "garden or grounds" interpretation. (Per §1.J Wave 9 lock: corrected from earlier "[2019] UKUT 0411 (TCC)" cite which was wrong; FTT decision is [2019] UKFTT 469; UT is [2021] UKUT 68; CA upheld at [2022] EWCA Civ 185.) Verified per §1.J lock.
+- **Suterwalla v HMRC [2024] UKUT 188 (TCC)** — UT ruling on "use at the effective date" test. Verified per §1.J lock.
+- **Mudan v HMRC [2023] UKFTT 317** — unmodernised state does not bring property within mixed-use.
+- **MHB Ltd v HMRC** — broader narrowing of mixed-use claims.
+- **Brown v HMRC [2024] UKFTT** — continued narrowing trajectory.
+- **P N Bewley Ltd v HMRC [2019] UKFTT 65 (TC) TC07097** — building-habitability adjacent line (cross-reference for context).
+- **Horton Hall Estates Ltd v HMRC** — substantial-estates residential/non-residential line (per §1.J lock note: Stage 2 verifies the precise controlling Horton's Hall decision).
+
+**HMRC manuals:**
+- SDLTM00370+ (residential property definition) — https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00370.
+- SDLTM00385+ (gardens and grounds) — Stage 2 verifies sub-pages on PROW + access.
+- SDLTM00390 (non-residential and mixed-use treatment).
+
+**Secondary commentary (drift-catch source, NOT borrow-pattern):**
+- Cornerstone Tax / Patrick Cannon / Stamp Duty Claims (aggressive refund claim firms — Stage 2 reads to understand the claim-firm playbook, then writes implicitly against it).
+- Tax Journal Averdieck article (if published).
+- BDO / Saffery / RSM mixed-use briefings.
+
+**Cross-references in house_positions.md:** §1.J (Wave 9 lock — **primary anchor**, mixed-use case-law trilogy + s.116 framework + operational decision framework + do-not-write list); §1.C (Wave 7 lock — Bewley building-habitability adjacent context); §1 main text (SDLT rates baseline); §1.I (Sch 4ZA surcharge non-application to mixed-use).
+
+---
+
+## Stage 2 statutory citation cross-check (§16.36 / §16.40)
+
+| Citation | Quoted text (Stage 1 capture) | Stage 1 verify date | Status |
+|---|---|---|---|
+| FA 2003 s.116(1)(a)-(c) | Residential property = building + garden/grounds + interest in/over | 2026-05-26 | verified |
+| FA 2003 s.55(1B) Table B | Non-residential rates: 0% to £150k, 2% £150k-£250k, 5% above £250k | 2026-05-26 (per §1.J lock context) | verified at TOC; RUN re-verifies bands per §16.35 |
+| FA 2003 Sch 4ZA | Surcharge residential-only application (mixed-use disapplies) | 2026-05-26 (per §1.I) | verified |
+| Hyman & Goodfellow v HMRC [2021] UKUT 68 (TCC) | UT ruling on garden/grounds (per §1.J F-6 correction) | 2026-05-25 (per §1.J lock) | verified — note correction from earlier wrong cite |
+| Suterwalla v HMRC [2024] UKUT 188 (TCC) | UT ruling on use-at-effective-date | 2026-05-25 (per §1.J lock) | verified |
+| P N Bewley Ltd v HMRC [2019] UKFTT 65 (TC) TC07097 | Building-habitability adjacent context | per §1.C Wave 7 lock | verified |
+| Averdieck v HMRC | PROW-mixed-use ruling | Stage 1 unable to lock precise citation | **PENDING — RUN session critical task** |
+
+**Drift risk: HIGH on the Averdieck citation.** Stage 1 seed flags spelling variation + uncertain precise citation. RUN session must lock OR write to the s.116 + case-law trilogy framework with Averdieck discussed as "FTT, citation pending verification" + flag F-N.
+
+**Drift risk: LOW on the §1.J trilogy citations** — these were locked at Wave 9 close (2026-05-25) with F-6 correction trail and the §1.C Bewley citation is bedrock.
+
+---
+
+## Stage 2 URL liveness verification (§16.31)
+
+Stage 1 seed lists competitor sources at class level (Tax Journal, BDO, Saffery, RSM, plus the aggressive-firm drift-catch sources Cornerstone Tax / Patrick Cannon / Stamp Duty Claims). RUN session:
+
+1. Search GOV.UK FTT Tax Chamber decisions database for "Averdieck" + variants. Failing that, BAILII.
+2. Search Tax Journal + Tax Adviser archives for Averdieck commentary.
+3. Verify each URL liveness with `httpx`; capture status.
+4. **Aggressive-firm drift-catch:** Cornerstone Tax + Patrick Cannon + Stamp Duty Claims pages are tracked for what they OVER-CLAIM about PROW success rates, NOT for borrow-pattern. RUN session writes implicitly against the over-claim, not against a passive baseline.
+
+**Statutory URL liveness:** legislation.gov.uk URLs verified at Stage 1 (2026-05-26); RUN re-verifies.
+
+---
+
+## Universal rules (§4.8 — verbatim)
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Practical, specific, anonymised personas where worked examples are used (no real client names; the litigant Averdieck is on the public tribunal record so naming the case is permitted).
+
+### Lead-gen architecture
+- LeadForm auto-injected. `<aside>` styled by `.prose-blog aside`. No Tailwind classes.
+
+### CTA placement guidance (per this page)
+- 2-3 inline `<aside>` CTAs. Conversion moments:
+  - After the case-summary section (mid-funnel: residential second-home buyers researching mixed-use options).
+  - After the "cost of failure" section (high-intent: taxpayers in enquiry on a PROW-mixed-use claim).
+- Audience: residential second-home buyers + their advisers + a narrower band of in-enquiry claimants. High-intent across both segments.
+
+### Schema
+- FAQs in frontmatter `faqs:` array (target 10-12).
+- Include case citation in frontmatter once verified.
+
+### Cannibalisation
+- A9 is the PROW-specific Averdieck case-analysis. Read the general mixed-use page + the Wave 9 trilogy page + the Bewley page + the refund-scams page before writing. Forward-link, don't duplicate.
+- INTERNAL_LINK F-N candidate: back-patch the trilogy page to forward-link to A9 once A9 ships (manager post-merge task).
+
+### House positions
+- **§1.J is your primary working detail (Wave 9 lock, 2026-05-25).** §1.C secondary for the building-habitability adjacent line.
+- **§1.J do-not-write list MUST hold:**
+  1. "Mixed-use saves landlords money" (FALSE in framing; mixed-use rates are NOT a relief — they're a classification consequence).
+  2. "Hyman applies only to very large properties" (FALSE; ratio applies to any residential property with adjoining land).
+  3. "Suterwalla settled the mixed-use test" (FALSE framing; Suterwalla refined "use at effective date" for one fact pattern).
+  4. "Bewley is available for any unmodernised property" (FALSE; carried from §1.F Wave 7).
+  5. "Six-or-more rule overrides s.116 mixed-use" (FALSE; s.116(7) and mixed-use are different routes).
+
+### Quality bar
+- Word count: 2,400-2,800 body.
+- FAQs: 10-12.
+- New external authority links: 6-8.
+- Build clean.
+- Six verifications.
+
+### Anti-templating
+- Open with the **Averdieck fact-pattern in one paragraph**, then the s.116 statutory framework, then the wider Hyman-narrowing context.
+- Do NOT lead with "Mixed-use SDLT can save substantial amounts..." — that lead is the aggressive-claim-firm pattern the page is implicitly distancing the site from.
+- Vary H2s from the general `sdlt-mixed-use-property-classification` page and the Wave 9 trilogy page. A9's H2 sequence should foreground the PROW-specific argument and its narrow success window.
+- Recommended opener pattern: "A public right of way crossing the grounds of a residential property does not, of itself, take the property into mixed-use Stamp Duty Land Tax territory. The First-tier Tribunal in Averdieck v HMRC applied that principle on its facts and joined a line of decisions (Hyman, Suterwalla, Mudan, MHB, Brown) that has steadily narrowed the residential / mixed-use boundary. The page below works through the case, the section 116 statutory framework, the wider Hyman-narrowing context, and what taxpayers should know before pursuing a PROW-based claim."
+
+---
+
+## 19-step workflow (verbatim, NETNEW_PROGRAM §7)
+
+1. Read `docs/property/house_positions.md` once at session start. §1.J (primary anchor) + §1.C (Bewley adjacent) + §1.I (surcharge interaction) + §1 main text.
+2. Claim ONE page in MW1 tracker on MAIN absolute path.
+3. Read the brief.
+4. Fetch competitor URLs + GOV.UK FTT decisions search + BAILII + Tax Journal. CRITICAL: locate Averdieck precise citation.
+5. Read each closest-existing page.
+6. Plan H2/H3 outline + meta + FAQs + CTAs.
+7. Verify factual claims per §16.35. CRITICAL: lock Averdieck citation OR flag.
+8. Hero image: "rural footpath" or "countryside public footpath" via Pexels.
+9. Write the markdown file at `Property/web/content/blog/averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way.md`.
+10. Build: `cd Property/web && npm run build`.
+11. Six verifications.
+12. Middleware redirect repointing if any overlap (none per Stage 2 scan).
+13. Register in `monitored_pages`.
+14. **Commit on branch BEFORE marking tracker done.**
+15. Fill in work-log.
+16. Mark done on MAIN tracker.
+17. Append site-wide flags (F-2..F-49 Bucket A).
+18. Log discoveries.
+19. Next page.
+
+---
+
+## Per-page work-log (RUN session fills in)
+
+### Decisions
+- **Final slug / category:** [confirm or override]
+- **H1 chosen:** [final H1]
+- **Meta title chosen:** [final + char count]
+- **Meta description chosen:** [final + char count]
+- **Averdieck citation locked:** [citation OR "pending verification + statutory framework write"]
+
+### Competitor URLs fetched
+- [URLs + status + takeaway]
+- [Averdieck decision retrieval outcome]
+
+### Existing-page review
+- [General mixed-use page read; differentiation confirmed]
+- [Wave 9 trilogy page read; differentiation confirmed]
+- [Bewley page + refund-scams page read]
+
+### Citations added
+[List]
+
+### Internal links added
+1. `/blog/property-types-and-specialist-tax/sdlt-mixed-use-property-classification` (general companion)
+2. `/blog/property-types-and-specialist-tax/sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords` (trilogy companion)
+3. `/blog/property-types-and-specialist-tax/sdlt-bewley-uninhabitable-property-test-non-residential-rates-landlords` (Bewley adjacent)
+4. `/blog/property-types-and-specialist-tax/sdlt-refund-scams-how-to-avoid` (consumer-protection reinforcement)
+...
+
+### Inline CTA placements
+1. [Where + why]
+2. [Where + why]
+
+### Build attempts
+- Attempt 1: [pass/fail]
+
+### Verification (six checks)
+- em-dash count: ___
+- Tailwind utility classes: ___
+- metaTitle length: ___ (limit 62)
+- metaDescription length: ___ (limit 158)
+- FAQ count: frontmatter ___ ; built HTML JSON-LD ___ ; match: yes/no
+- Internal links resolve: yes/no
+- Body word count: ___ (target 2,400-2,800)
+
+### Flags raised
+- [F-N if any. Strong candidates: INTERNAL_LINK back-patch trilogy page to forward-link A9; HOUSE_POSITION_EXTENSION to add PROW sub-bullet to §1.J operational framework; potential BRIEF_DRIFT if Averdieck citation unverifiable]
+
+### 2-3 sentence summary
+[RUN session summary]
