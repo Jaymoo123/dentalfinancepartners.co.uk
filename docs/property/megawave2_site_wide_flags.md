@@ -108,4 +108,25 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-52 — HOUSE_POSITION_EXTENSION — Landlord allowable expenses + home office CGT-trap operational floor
+
+**Raised by:** M2-B-B1 sub-agent (Stage 1, 2026-05-26).
+**Bucket:** B (slug clustered under FICs by slicer affinity, but topic is individual-landlord income-tax mechanics — slicer-affinity artifact).
+**Touched picks:** B5 `claim-home-office-deduction-landlords` (this seed). Upstream-relevant for the existing `landlord-expenses-allowable-uk-2026` pillar page (briefly covers home office at simplified-flat-rate £10/month example only, does not surface the CGT trap) and for any future expense-deep-dive page (motor expenses for landlords, training costs, professional fees, capital-vs-revenue boundary).
+
+**Issue.** `house_positions.md` covers §4 (Section 24 finance-cost restriction) and §3 (MTD for ITSA) but does NOT contain a locked position on landlord-allowable-expenses generally — neither the deduction architecture (ITTOIA 2005 s.272 import path of trading rules into property businesses) nor specific expense types (home office; motor; training; professional fees; capital-vs-revenue). The site has one shipped pillar page on allowable expenses but no HP-lock floor.
+
+The B5 home-office deep-dive surfaces a **specific cross-tax trap** (TCGA 1992 s.224(1) PPR business-use restriction triggered by claiming actual-cost apportionment with exclusive-business-use room characterisation) that is NOT covered on the existing pillar page and that is a material drift risk: a Stage 2 writer or a future expense-deep-dive writer could quietly recommend the actual-cost route to a reader who would then lose 14% of their PPR exemption on home sale, costing tens of thousands.
+
+**Proposed lock contents (Stage 1b conductor decision).** A new §31 (next free section number — confirm against current HP file) "Landlord allowable expenses operational floor (with home-office cross-tax trap)" mini-lock with:
+- §31.1 Statutory architecture: ITTOIA 2005 s.271 (property business charge); s.271E (GAAP calculation); **s.272 (Application of trading income rules: GAAP — the operative import gateway)**; s.34 (wholly-and-exclusively, imported); s.94H (simplified expenses, imported). HMRC PIM section anchors (Property Income Manual).
+- §31.2 Home-office two-route choice + CGT-trap: (a) ITTOIA s.94H simplified flat-rate (hours-based, no exclusive-use requirement, no CGT downside); (b) ITTOIA s.34 actual-cost apportionment (potentially higher deduction but exclusive-business-use characterisation triggers TCGA 1992 s.224(1) PPR restriction on disposal); decision-tree framing for which to choose by portfolio size + home-business-use intensity; documented mixed-use as the avoidance route.
+- §31.3 Cross-tax discipline: where an income-tax claim characterises a fact (e.g. "this room is used exclusively for the property business"), the same characterisation flows through to CGT, IHT, and HMRC enquiry. Writers must surface cross-tax consequences before recommending route choices.
+- §31.4 Ltd Co-landlord home-office mechanic: ITEPA 2003 ss.316A-317 (employer-provided home-working allowance £6/week / £312/year) vs formal home-office rental between director and company (CTA 2009 s.54 + ITTOIA s.272 + director's individual-side ITTOIA s.272/s.94H/s.34 + TCGA s.224(1) on director's PPR).
+- §31.5 Do-not-write: "the simplified £10/month always wins" (false — actual-cost can be higher; depends on home-business-use intensity); "actual-cost apportionment doesn't affect PPR" (false — exclusive-business-use room characterisation triggers s.224(1)); "Ltd Co director can claim home-office on the corporation tax side directly without involving the director's personal tax" (false — must route through ITEPA s.316A-317 allowance OR formal rental — both have personal-side mechanics).
+
+**How to apply.** Stage 2 writer for B5 either threads to the locked §31 (if Stage 1b approves) OR self-sources statute + HMRC PIM + TCGA s.224(1) verifications per §16.35 (no locked HP fallback). HP-side cost of declining the lock: cross-tax-trap exposure on a high-traffic landlord topic with material consumer-protection consequences (lost PPR on home sale); future expense-deep-dive writers re-source the same architecture each time.
+
+---
+
 
