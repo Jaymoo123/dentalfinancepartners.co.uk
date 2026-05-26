@@ -177,3 +177,19 @@ No existing middleware redirect tokens overlap with the slug `horton-hall-sdlt-c
 - Six verifications:
 - Flags raised:
 - 2-3 sentence summary:
+
+
+### Stage 2b case-citation closure — 2026-05-26 (F-6 closed)
+
+**Verified primary citation** (delivered by Stage 2b case-verification Agent on 2026-05-26):
+
+- **Case name:** Mark White & Carol Kane v HMRC
+- **Citation:** [2023] UKFTT 866 (TC) (TC08943)
+- **Decision date:** 29 September 2023
+- **Judge:** Tribunal Judge Anne Fairpo (sitting with Member Shaneem Akhtar)
+- **Key holding:** Property: **Horton Hall** (singular, Staffordshire). Para 19 articulates the functional test — adjoining land is "grounds" where it serves the dwelling as an appendage rather than having a self-standing function. Para 32: tribunal's conclusion that the fields were "functionally, occupied with and were appendages" to Horton Hall. Para 34: appeal dismissed; fields held to be residential property forming part of the grounds (FA 2003 s.116(1)(b) "garden or grounds" limb).
+- **Verification URL:** https://caselaw.nationalarchives.gov.uk/ukftt/tc/2023/866
+
+**Line/cluster note:** FTT-only decision; no Upper Tribunal or court appeal. Part of the wider residential-vs-non-residential SDLT case-law cluster. **Hyman v HMRC [2022] EWCA Civ 185** is the controlling Court of Appeal authority on the s.116(1)(b) test; **The How Development 1 Ltd v HMRC [2023] UKUT 84 (TCC)** and **Suterwalla v HMRC [2024] UKUT 188 (TCC)** are the controlling Upper Tribunal authorities. White & Kane is the FTT-level application. Spelling note: the property is "Horton Hall" (singular); the working-doc "Hortons Hall" was an error. The case name is **White & Kane v HMRC**, not "Horton Hall v HMRC".
+
+**RUN-session discipline:** the page H1 + opening paragraph + case-summary section MUST cite this verified case at the canonical citation form above. Per §16.35, RUN sub-agent re-verifies at write-time against the verification URL before writing the citation into the rendered page.

@@ -174,3 +174,19 @@ No existing middleware redirect tokens overlap with the slug. RUN session re-che
 - Six verifications:
 - Flags raised:
 - 2-3 sentence summary:
+
+
+### Stage 2b case-citation closure — 2026-05-26 (F-2 closed)
+
+**Verified primary citation** (delivered by Stage 2b case-verification Agent on 2026-05-26):
+
+- **Case name:** Bonsu v HMRC
+- **Citation:** [2024] UKFTT 158 (TC) (TC09084)
+- **Decision date:** 26 February 2024
+- **Judge:** Tribunal Judge Richard Chapman KC
+- **Key holding:** FTT held the right to use the communal garden was an easement subsisting for the benefit of the leasehold flat (within FA 2003 s.116(1)(c)). Acquisition of the lease and the easement constituted a single transaction with a single main subject matter (the leasehold); the easement was "in any event residential property" because s.116(1)(c) does not require the right to be exclusively for the benefit of the dwelling. Residential SDLT rates (Table A) applied; appeal dismissed.
+- **Verification URL:** https://caselaw.nationalarchives.gov.uk/ukftt/tc/2024/158
+
+**Line/cluster note:** Sexton & Anor v HMRC [2023] UKFTT 73 (TC) (19 January 2023, TC08708) is the earlier sister case on the same s.116(1)(c) point (also dismissed, also confirmed residential rates). Bonsu is the better primary citation (more recent, fuller reasoning); Sexton can be cited as the line precedent.
+
+**RUN-session discipline:** the page H1 + opening paragraph + case-summary section MUST cite this verified case at the canonical citation form above. Per §16.35, RUN sub-agent re-verifies at write-time against the verification URL before writing the citation into the rendered page.

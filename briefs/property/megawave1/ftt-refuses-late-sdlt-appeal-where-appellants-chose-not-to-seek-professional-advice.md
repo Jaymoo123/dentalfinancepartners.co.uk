@@ -176,3 +176,19 @@ No existing middleware redirect tokens overlap with the slug. RUN session re-che
 - Six verifications:
 - Flags raised:
 - 2-3 sentence summary:
+
+
+### Stage 2b case-citation closure — 2026-05-26 (F-4 closed)
+
+**Verified primary citation** (delivered by Stage 2b case-verification Agent on 2026-05-26):
+
+- **Case name:** R & E Goonesena v HMRC
+- **Citation:** [2024] UKFTT 619 (TC) (TC09240)
+- **Decision date:** 25 June 2024
+- **Judge:** Tribunal Judge Abigail McGregor
+- **Key holding:** FTT applied the three-stage Martland v HMRC [2018] UKUT 178 (TCC) test. Delay of 164 days held "serious and significant". Appellants' reason for delay was a "conscious decision" not to seek professional advice and not to appeal, based on their own (uninformed) belief their case would fail. The tribunal held they must bear the consequences of that conscious choice; late appeal refused. (Para 22 captures the conscious-decision finding; para 47 captures the Martland-framework synthesis on shortage-of-funds/professional-advice not being weighty.)
+- **Verification URL:** https://caselaw.nationalarchives.gov.uk/ukftt/tc/2024/619
+
+**Line/cluster note:** This is the on-point recent FTT decision in the line. Martland [2018] UKUT 178 (TCC) remains the controlling three-stage framework; Goonesena applies it directly to the "did not seek professional advice" reasoning pattern.
+
+**RUN-session discipline:** the page H1 + opening paragraph + case-summary section MUST cite this verified case at the canonical citation form above. Per §16.35, RUN sub-agent re-verifies at write-time against the verification URL before writing the citation into the rendered page.

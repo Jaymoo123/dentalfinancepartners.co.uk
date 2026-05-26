@@ -248,3 +248,19 @@ Stage 1 seed lists competitor sources (Tax Journal, Burness Paull, Brodies, Pins
 
 ### 2-3 sentence summary
 [RUN session summary]
+
+
+### Stage 2b case-citation closure — 2026-05-26 (F-9 closed)
+
+**Verified primary citation** (delivered by Stage 2b case-verification Agent on 2026-05-26):
+
+- **Case name:** Archer (UK) Limited v Revenue Scotland
+- **Citation:** [2025] FTSTC 10
+- **Decision date:** 10 July 2025
+- **Judge:** Not confirmed via secondary sources accessible to Stage 2b verification Agent (likely Scottish Tax Chamber sitting judge; verify at primary FTSTC database)
+- **Key holding:** FTSTC held that under Scots property law, an extension of an existing lease by Minute of Variation is NOT the creation of a new lease. The transitional provision in Article 13 of the Land and Buildings Transaction Tax (Transitional Provisions) (Scotland) Order 2014 treats a post-1-April-2015 variation as a new LBTT lease only where, under SDLT (FA 2003 Sch 17A para 9), it would have been treated as a surrender-and-regrant. The tribunal held no such SDLT treatment arose on these facts under Scots law, so no LBTT was due on the lease extension. Revenue Scotland's contrary guidance was held NOT to have the force of law.
+- **Verification URL:** Primary FTSTC database at https://www.taxtribunals.scot/decisions (WebFetch returned 403 during Agent verification; manual browser verification required). Secondary sources: https://www.rossmartin.co.uk/sme-tax-news/8606-no-lbtt-charge-for-extending-a-lease-granted-under-sdlt and https://www.pinsentmasons.com/out-law/news/businesses-reassess-lbtt-lease-payments
+
+**Line/cluster note:** Statutory references in the brief should be: **LBTT (Transitional Provisions) (Scotland) Order 2014 Art 13** (the key transitional provision, NOT in the brief's current cite list) **+ LBTT(S)A 2013 Sch 19** (general transitional architecture) **+ FA 2003 Sch 17A para 9** (the SDLT surrender-and-regrant test that Art 13 imports). Counsel for appellant: Philip Simpson KC. Judge name needs primary-source verification (FTSTC database 403'd at Agent runtime).
+
+**RUN-session discipline:** the page H1 + opening paragraph + case-summary section MUST cite this verified case at the canonical citation form above. Per §16.35, RUN sub-agent re-verifies at write-time against the verification URL before writing the citation into the rendered page.
