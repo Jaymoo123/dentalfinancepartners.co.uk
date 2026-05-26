@@ -140,8 +140,18 @@ function Detect-State {
 function Step-0-Slice {
     Write-Step "STATE 0 -> 1: Slice MegaWave $MegaWave + cannibalisation check"
     if ($DryRun) { Write-Warn "[dry-run] would: slice-megawave -MegaWave $MegaWave"; return }
+    # Reset LASTEXITCODE so inherited values from earlier external commands don't
+    # cause a false-positive failure when the called PS script doesn't set it.
+    $global:LASTEXITCODE = 0
     & "$PSScriptRoot\slice-megawave.ps1" -MegaWave $MegaWave -Site $Site
-    if ($LASTEXITCODE -ne 0) { Write-Fail "slice-megawave failed" }
+    $sliceOK = $?
+    if (-not $sliceOK -or ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne $null)) {
+        # Verify by checking expected artefacts -- the script may have succeeded
+        # even if an internal external command left LASTEXITCODE non-zero.
+        if (-not (Test-Path $picksYaml)) { Write-Fail "slice-megawave failed (picks.yaml not produced)" }
+        Write-Warn "slice-megawave returned non-zero but picks.yaml exists -- proceeding"
+    }
+    $global:LASTEXITCODE = 0
     & "$PSScriptRoot\check-cannib.ps1" -Wave $MegaWave -Site $Site -PicksYaml $picksYaml
     if ($LASTEXITCODE -ne 0) { Write-Warn "check-cannib returned non-zero (review the cannib report; not necessarily blocking)" }
     Write-OK "Sliced + cannib check done"
