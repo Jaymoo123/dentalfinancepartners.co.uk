@@ -43,12 +43,12 @@
 | ✅ | B4 | `beginners-guide-to-cis-verification-in-the-uk` | Family Investment Companies & FICs | M2-B-B1 | | | Stage 1 seed `423f788` — process-led beginner; FA 2004 s.63 + s.69 verified verbatim; F-51 HP-extension raised (CIS property-context floor; new §30 candidate including £3m deemed-contractor + carve-out + verification mechanic) |
 | ✅ | B5 | `claim-home-office-deduction-landlords` | Family Investment Companies & FICs | M2-B-B1 | | | Stage 1 seed `752520e` — decision-led deep-dive on s.94H vs s.34 + CGT trap (TCGA s.224(1) PPR business-use restriction); ITTOIA 2005 s.272 verified verbatim; F-52 HP-extension raised (landlord allowable expenses operational floor; new §31 candidate with cross-tax-trap discipline) |
 | ✅ | B6 | `companies-house-emails-directors-for-identity-verification-under-new-rules` | Family Investment Companies & FICs | M2-B-B1 | | | Stage 1 seed `feef886` — news-led + scam-vetting on-ramp; ECCTA s.64 verified verbatim (cross-ref to B2); HP §11.A anchor; forward-link to Wave 9 operational walkthrough + B2 + sibling MW2 B-pages |
-| ⬜ | B7 | `companies-house-id-verification-begins-today` | Family Investment Companies & FICs | M2-B-B2 | | | |
-| ⬜ | B8 | `companies-house-reforms` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | |
-| ⬜ | B9 | `companies-house-reforms-explained-for-business-success` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | |
-| ⬜ | B10 | `companies-house-reforms-navigating-the-new-landscape` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | |
-| ⬜ | B11 | `companies-house-tightens-id-rules-what-does-it-mean` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | |
-| ⬜ | B12 | `confirmation-statements` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | |
+| ✅ | B7 | `companies-house-id-verification-begins-today` | Family Investment Companies & FICs | M2-B-B2 | | | Stage 1 seed `51fe1a6` — calendar-event / commencement-day on-ramp for 18 November 2025; HP §11.A anchor (no new lock); ECCTA s.64 cross-ref from B2 verification; forward-links to existing Wave 9 operational walkthrough + B2 + B6 + sibling B8-B12 |
+| ✅ | B8 | `companies-house-reforms` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | Stage 1 seed `56efa8a` — umbrella taxonomy + chronology across every reform (Registrar objectives + names + registered office + email + lawful purposes + ID verification + ACSP + ss.51-52 local-register abolition + LP Part 2 + RoE); HP §11.A anchor; cross-refs §11.B F-1 candidate (A3 sibling); LP Part 2 phased rollout flagged for write-time campaign-page verification |
+| ✅ | B9 | `companies-house-reforms-explained-for-business-success` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | Stage 1 seed `09ad881` — business-value / counterparty-due-diligence framing (lender + tenant + JV-partner lens on register integrity); ECCTA s.1 Registrar's objectives as policy lens; HP §11.A + §21/§21.A anchors; failure-to-prevent-fraud large-org threshold flagged for Stage 2 verification |
+| ✅ | B10 | `companies-house-reforms-navigating-the-new-landscape` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | Stage 1 seed `1a0b51a` — practitioner / operations-roadmap framing (Step 1 inventory → Step 7 overseas-entity counterparty checks); artefact + deadline + trigger-event anchored; HP §11.A + §21/§21.A anchors; LP Part 2 + RoE counterparty checkpoints flagged for write-time verification; SI 2024/234 fees regs flagged for Stage 2 verification |
+| ✅ | B11 | `companies-house-tightens-id-rules-what-does-it-mean` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | Stage 1 seed `21de802` — policy-tightening / qualitative-shift interpretation (before-and-after framing — register moves from passive recorder to active gatekeeper); ECCTA s.1 Registrar's objectives lens; HP §11.A anchor; honest framing that the ID gate is a structural shift rather than a tightening per se |
+| ✅ | B12 | `confirmation-statements` | Companies House reforms / ECCTA / RoE | M2-B-B2 | | | Stage 1 seed `ab1e001` — definitional pillar on-ramp for the bare-query searcher (distinguished from the existing 2024-2026-changes operational deep-dive which leads with change-detail); CA 2006 ss.853A-L architecture + ECCTA 2023 amendments overlay; HP §11.A anchor; fee schedule (£50/£110 from 1 May 2024) + £5,000 civil penalty flagged for Stage 2 write-time verification |
 | ⬜ | B13 | `consequences-for-roe-non-compliance` | Companies House reforms / ECCTA / RoE | M2-B-B3 | | | |
 | ⬜ | B14 | `disadvantages-of-family-investment-companies-fics` | Family Investment Companies & FICs | M2-B-B3 | | | |
 | ⬜ | B15 | `energy-performance-certificates-epc` | Family Investment Companies & FICs | M2-B-B3 | | | |
@@ -82,3 +82,24 @@
 | ⬜ | C18 | `public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded` | Trusts and beneficial ownership | M2-C-B3 | | | |
 | ⬜ | C19 | `putting-a-rental-property-into-a-trust` | Trusts and beneficial ownership | M2-C-B4 | | | |
 | ⬜ | C20 | `residence-nil-rate-band-frozen` | IHT and estate planning | M2-C-B4 | | | |
+
+---
+
+## M2-B-B2 batch close (2026-05-26)
+
+Batch B7-B12 complete (6 picks, all ECCTA 2023 / Companies House reforms cluster — all seeds threaded through the §11.A Wave 9 mini-lock).
+
+**Picks shipped:**
+- B7 `companies-house-id-verification-begins-today` — Stage 1 seed `51fe1a6` (calendar-event / commencement-day on-ramp).
+- B8 `companies-house-reforms` — Stage 1 seed `56efa8a` (umbrella taxonomy / chronology of every reform).
+- B9 `companies-house-reforms-explained-for-business-success` — Stage 1 seed `09ad881` (business-value / counterparty-due-diligence framing).
+- B10 `companies-house-reforms-navigating-the-new-landscape` — Stage 1 seed `1a0b51a` (practitioner operations roadmap).
+- B11 `companies-house-tightens-id-rules-what-does-it-mean` — Stage 1 seed `21de802` (policy-tightening / qualitative-shift interpretation).
+- B12 `confirmation-statements` — Stage 1 seed `ab1e001` (definitional pillar on-ramp for the bare-query searcher).
+
+**HP-extension flags raised this batch:** none. All 6 picks sit squarely within the locked §11.A Wave 9 mini-lock architecture (ECCTA 2023 Part 1 statutory-section depth + commencement chain hardened + ACSP framework + multi-SPV per-natural-person rule + ECTEA 2022 RoE anchor + LRA 2002 Sch 4A HMLR disposition-block). The adjacent open lock candidate §11.B (ECCTA Part 2 Limited Partnership reforms) was raised by A3 in M2-A-B1; this batch cross-references §11.B in B8 + B10 where the umbrella + navigation pages touch LP-Part-2 territory, but does not duplicate the flag.
+
+**Cross-link cluster note for Stage 2:** the six B2-B12 ID-verification + CH-reforms cluster pages now form a 6-way cross-reference network with consistent anti-cannibalisation framing differentiators. Each forward-links to the existing Wave 9 operational walkthrough (`eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos`) and to the existing confirmation-statement deep-dive (`companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure`); none duplicates their ground.
+
+**Stage 2 write-time verification load:** ECCTA section attributions (locked at §11.A); commencement dates (locked at §11.A but campaign-page re-verify per §11.A discipline + F-12 — do NOT use `gov.uk/government/news/changes-to-uk-company-law` 404 URL); fee schedule (verify against Companies (Fees) Regulations 2024); £5,000 civil penalty (verify against Sch 1B CA 2006); LP Part 2 phased rollout state (verify against campaign page per §11.B candidate F-1).
+
