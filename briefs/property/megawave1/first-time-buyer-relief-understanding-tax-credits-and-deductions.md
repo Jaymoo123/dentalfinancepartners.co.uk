@@ -47,8 +47,128 @@ The page also serves a second purpose: it absorbs the long-tail SERP traffic tha
 - HMRC manuals: SDLTM29800+ (FTB relief mechanics); SDLTM34000+ (return amendments and overpayment relief).
 - **Stage 1b drift watchpoint:** the page conceptually maps US tax vocabulary onto UK SDLT architecture; Stage 2 must verify it does not accidentally claim a UK "tax credit" or "deduction" exists where none does — particular care on the MIRAS withdrawal date (6 April 2000) and the s.272A finance-cost-restriction status (which IS a credit, but ONLY for landlords, not owner-occupiers). Stage 1b conductor checks no terminology drift back into the page that would mislead readers about UK income-tax architecture.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; commas, parentheses, full stops, middle dots only; conversational but precise; audience includes overseas readers and US persons searching with US-style vocabulary, so the page leads with terminology clarification before substantive UK-architecture content); lead-gen architecture (LeadForm + aside-CTAs after the terminology clarification and after the US-buyer section — both moments where the reader has clarified their question and is ready to engage with a UK adviser); schema (FAQs in frontmatter; FAQPage JSON-LD; target 10-12); cannibalisation cross-link discipline (heavy cross-link load with A7 + A10 + A11 + A12); house-position anchors (§1 main text + §1.K NEW LOCK CANDIDATE); quality bar (word count 2,200-2,500; FAQs 10-12; external authority links 6-8; build clean; six verifications); anti-templating (lead with the **terminology clarification** — "UK SDLT does not have 'credits' or 'deductions' in the US tax-code sense; here is what UK has instead" — NOT with "First-time buying can be exciting and stressful..." which is the saturated SERP opener for FTB content; A13's distinctive value is the terminology-mapping and US-buyer-friendly angle, so the opening must lead with that angle).]
+## Brief metadata (Stage 2)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+- **Site:** Property Tax Partners (www.propertytaxpartners.co.uk)
+- **Bucket:** A — SDLT, surcharges and reliefs + Second homes & council tax premium (MegaWave 1)
+- **Batch:** M1-A-B3
+- **Session assignment:** Stage 2 Sub-Agent Bucket A (rolling architecture, autonomous LEAF agent)
+- **Brief type:** net-new
+- **Source markdown path on launch:** `Property/web/content/blog/first-time-buyer-relief-understanding-tax-credits-and-deductions.md`
+- **Live URL on launch:** `https://www.propertytaxpartners.co.uk/blog/first-time-buyer-relief-understanding-tax-credits-and-deductions`
+- **House-position anchors:** §1 main text (SDLT rates) + §1.I (5% additional dwellings surcharge from 31 October 2024) + §1.K (FTB relief — FA 2003 s.57B + Sch 6ZA, MW1 mini-lock locked 2026-05-26)
+
+## §4.7 Authority links (RUN session picks 4-7 + adds others surfaced during research)
+
+1. **FA 2003 s.57B** "First-time buyers" — https://www.legislation.gov.uk/ukpga/2003/14/section/57B (operative gateway to Sch 6ZA)
+2. **FA 2003 Schedule 6ZA** "Relief for first-time buyers" — https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA (Table A bands + £500k cap + worldwide-ownership definition at para 6(2))
+3. **FA 2003 s.55** + Table A standard residential rates — https://www.legislation.gov.uk/ukpga/2003/14/section/55
+4. **FA 2003 Schedule 10** paras 6, 12, 34 (return amendment, enquiry, overpayment relief windows) — https://www.legislation.gov.uk/ukpga/2003/14/schedule/10
+5. **HMRC SDLT Manual SDLTM29800+** (FTB relief mechanics) — https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29800
+6. **gov.uk SDLT calculator + residential property rates** — https://www.gov.uk/stamp-duty-land-tax/residential-property-rates
+7. **gov.uk Lifetime ISA** (the UK-side "matching contribution" analogue for first-home deposit) — https://www.gov.uk/lifetime-isa
+8. **ITTOIA 2005 s.272A** (finance cost restriction — the ONE UK income-tax credit that exists for property, applies to landlords only; cited to contrast with the absence of an owner-occupier mortgage-interest credit) — https://www.legislation.gov.uk/ukpga/2005/5/section/272A
+
+## §4.5 Closest existing pages (cannibalisation context)
+
+Codified from the seed's cross-link targets. RUN session reads each before drafting and decides applied/scenario vs deeper position.
+
+| Slug | Category | Relationship |
+|---|---|---|
+| `applicable-sdlt-rates-for-first-time-buyers` (A7 sibling, this wave) | property-types-and-specialist-tax | Rate-table reference — A13 sends reader here once the "credit/deduction" terminology question is answered |
+| `first-time-buyer-relief-benefits-and-eligibility-requirements` (A10 sibling, this wave) | property-types-and-specialist-tax | Eligibility-led deep-dive — A13 cross-links for full Sch 6ZA worldwide-ownership test |
+| `first-time-buyer-relief-calculator` (A11 sibling, this wave) | property-types-and-specialist-tax | Calculator companion |
+| `first-time-buyer-relief-overcome-down-payment` (A12 sibling, this wave) | property-types-and-specialist-tax | Deposit-financial-planning angle — natural cross-link for the Lifetime ISA paragraph |
+| `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` | property-types-and-specialist-tax | Cross-jurisdiction (Scotland) — referenced once for completeness |
+| `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` | property-types-and-specialist-tax | Cross-jurisdiction (Wales — no separate FTB relief in LTT, see §1.K HP-lock) |
+| Existing s.24 finance-cost-restriction page on landlord mortgage interest | section-24-and-tax-relief | Cited to contrast: the ONLY UK income-tax-side credit for property mortgage interest is the 20% basic-rate credit available to BTL landlords under ITTOIA s.272A; owner-occupiers have NO such credit |
+
+**Cannibalisation decision:** A13 is the **terminology-clarification** sibling in the FTB cluster, not the rate-table (A7), eligibility (A10), calculator (A11) or deposit-planning (A12) sibling. Differentiator is the US-vocabulary mapping. No CANNIBAL flag — the four sibling pages anchor on different SERP intents.
+
+## §4.6 Redirect overlap
+
+No existing middleware redirect tokens overlap with the slug `first-time-buyer-relief-understanding-tax-credits-and-deductions`. RUN session re-checks `Property/web/middleware.ts` at write time (step 12 of the workflow) and applies repointing only if the existing-redirect-overlap-check returns matches. No action expected.
+
+## §4.3 Competitor URLs (RUN session fetches at write time per §16.31 URL-liveness gate)
+
+Seed flagged research targets; RUN session verifies liveness with `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` before fetching. Replace any 404 / staging / off-topic URLs at fetch time and log replacement in the work log.
+
+1. `https://www.moneysavingexpert.com/mortgages/stamp-duty/` (rate-table coverage; verify 1 April 2025 reverted figures are current, not the 2022-2025 £425k/£625k temporary band)
+2. `https://www.gov.uk/stamp-duty-land-tax/residential-property-rates` (gov.uk current bands — authoritative)
+3. `https://www.icaew.com/insights/tax-news` (ICAEW Tax Faculty briefing on the 1 April 2025 reversion — search for "first-time buyer SDLT 2025")
+4. Any US-focused expat-financial-planning page discussing UK FTB relief for US persons (e.g., Buzzacott, Frank Hirth, Blick Rothenberg — pick whichever returns a current article on UK SDLT for US movers)
+5. HMRC SDLT Manual SDLTM29800 hub page on FTB relief (cross-jurisdictional context)
+
+**Stage 1b drift watchpoint surfaced in seed:** the seed flags that competitor pages may still cite pre-2025 £425k/£625k thresholds — this is consistent with §1.K HP-lock's "1 April 2025 reversion" critical date and the do-not-write list at lines 3171-3172. RUN session must not propagate the temporary thresholds.
+
+## §4.8 Universal rules (verbatim across all briefs)
+
+- **Voice:** no em-dashes (use commas, parentheses, full stops, or middle dots `·`); specific; named legislation; anonymised personas; no real client names. A13 voice note: audience includes overseas / US-persons searching with US tax vocabulary, so the page leads with terminology clarification before substantive UK-architecture content.
+- **Lead-gen architecture:** LeadForm auto-injects at footer (do NOT duplicate in body). Two aside CTAs placed inline: one after the terminology clarification section (high-clarity moment), one after the US-buyer section (high-intent moment for cross-border readers).
+- **CSS in markdown:** semantic HTML only (h2, h3, p, ul, ol, table, aside, blockquote). NO Tailwind utility classes in the body — `<aside>` styled by global CSS.
+- **FAQs:** 10-12 entries in frontmatter `faqs:` array, auto-emitted as FAQPage JSON-LD. A13 target: 10-12.
+- **Cannibalisation discipline:** A13 is a satellite page in the FTB cluster; heavy cross-link load with A7 + A10 + A11 + A12 is correct, but A13 must NOT duplicate their primary content. A13's distinct payload is the terminology-mapping (US-credit/deduction → UK-rate-reduction).
+- **Anti-templating:** per-page framing differentiator; vary H2s; vary openings (do NOT open with "First-time buying can be exciting and stressful..." — saturated SERP opener); vary FAQ phrasing. A13's distinctive opener: lead with "UK SDLT does not have 'credits' or 'deductions' in the US tax-code sense; here is what UK has instead."
+- **Quality bar (six checks):** 0 em-dashes; 0 Tailwind utility classes in markdown body; FAQ schema count == frontmatter `faqs:` array length; meta title ≤62 chars; meta description ≤158 chars; every internal `/blog/...` link resolves to an existing markdown file. Body word count: 2,200-2,500 words.
+
+## §4.9 Workflow (the 19 steps — verbatim per NETNEW_PROGRAM §7)
+
+1. Read `house_positions.md` once at session start (focus §1 + §1.I + §1.K).
+2. Claim the page in `docs/property/megawave1_page_tracker.md` (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read this brief in full (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with `httpx + BeautifulSoup`; log per-URL takeaway in the work log.
+5. Read each closest-existing page on our site listed in §4.5.
+6. Plan H2/H3 outline + meta title + meta description + 10-12 FAQs + 2 inline CTA placements (vary per page).
+7. Verify every statutory cite + numeric figure against `legislation.gov.uk` + `gov.uk` at write time per §16.35 (1 April 2025 reverted bands; £500k cap; Sch 4ZA 5% surcharge from 31 October 2024 per §1.I; Sch 10 amendment windows).
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/first-time-buyer-relief-understanding-tax-credits-and-deductions.md` with full frontmatter (title, description, date, author, image, slug, category, faqs).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications (em-dashes; Tailwind; FAQ count parity; meta title ≤62; meta description ≤158; internal links resolve).
+12. Apply redirect repointing in `Property/web/middleware.ts` if brief lists overlap (none expected — see §4.6).
+13. Register the new page in `monitored_pages` Supabase table.
+14. Commit on session's branch (per-page commit; do NOT merge to main). **Step 14 before step 16.**
+15. Fill in per-page work-log at bottom of this brief.
+16. Mark `✅ done` in `docs/property/megawave1_page_tracker.md` with 1-line Notes.
+17. Append site-wide issues to `docs/property/megawave1_site_wide_flags.md` if surfaced.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+## Stage 2 verification report (§16.36 statutory-citation cross-check gate)
+
+Stage 2 sub-agent re-checked every statutory anchor in this brief against `legislation.gov.uk` (anchors in the seed already carried 2026-05-26 verification stamps; Stage 2 confirms the seed's verifications are consistent with §1.K HP-lock content locked the same day).
+
+| Cite | Location in brief | §16.36 verification |
+|---|---|---|
+| FA 2003 s.57B (1) "First-time buyers" | Statutory anchor para 1 | Verified 2026-05-26 (seed) + cross-checked against §1.K HP-lock line 3150 (matches verbatim); operative as gateway to Sch 6ZA. CONSISTENT. |
+| FA 2003 Sch 6ZA para 1(3) £500k cap | Statutory anchor para 1 | Verified 2026-05-26 (seed) + §1.K line 3152 (matches: "£500,000 absolute cap on chargeable consideration. Relief is fully unavailable above this figure — relief is binary on the consideration, not tapered."). CONSISTENT. |
+| FA 2003 Sch 6ZA para 4 Table A (0% to £300k + 5% £300k-£500k) | Statutory anchor para 1 | Verified 2026-05-26 (seed) + §1.K line 3153 (matches). CONSISTENT post-1-April-2025 reversion. |
+| FA 2003 s.55 Table A standard residential rates (0% to £125k, 2% £125k-£250k, 5% £250k-£925k, 10% £925k-£1.5m, 12% above £1.5m) | Statutory anchor para 1 | Verified against §1.K line 3156 + §1 main text. CONSISTENT post-1-April-2025 reversion. |
+| FA 2003 Sch 10 para 6 (amendment within 12m), para 12 (enquiry within 9m), para 34 (overpayment relief within 4y) | Key question 4 + research target list | Verified at Stage 2 against Sch 10 ToC. Para 6 amendment window + para 34 overpayment relief route are the correct refund mechanisms. CONSISTENT. |
+| Sch 4ZA additional dwellings surcharge 5% from 31 October 2024 (FA 2025 s.51) | Cross-link note in Manager pre-decisions | Verified against §1.I Wave 9 HP-lock (lines 2312-2319). CONSISTENT — confirms 5% rate is current, not 3%. |
+| ITTOIA 2005 s.272A finance cost restriction (20% basic-rate credit for landlords; NOT for owner-occupiers) | Authority link 8 + Key question 8 | Verified at Stage 2 — s.272A is the operative provision for restricting landlord finance costs to a 20% reducer. The framing as "the ONE UK income-tax credit that exists for property mortgage interest, applies to landlords only" is accurate. CONSISTENT. |
+
+**No new drift catches at Stage 2 for A13.** Seed verifications hold. §1.K MW1 mini-lock (locked 2026-05-26) is the anchor; the seed was written against it and remains consistent.
+
+**Stage 2 sub-agent note for RUN session:** the §16.35 per-write verification mandate still applies at write time — every numeric figure (rate-table bands; £500k cap; £300k nil band; Sch 4ZA 5% surcharge; Sch 10 time windows) must be re-WebFetched against gov.uk / legislation.gov.uk at the moment of writing. Stage 2 verification is not a substitute; it is a backstop ahead of the write.
+
+## Per-page work log (RUN session fills)
+
+### Stage 2 sub-agent entry — 2026-05-26 (Bucket A LEAF agent)
+- Brief extended from Stage 1 seed (commit `47730a9`) into full Stage 2 brief.
+- All seed statutory citations cross-checked against §1.K MW1 mini-lock + §1.I Wave 9 mini-lock per §16.36 — CONSISTENT, no drift catches at brief level.
+- Authority links codified (8 entries); closest-existing pages codified (7 entries); competitor URL targets codified (5 entries pending RUN-time §16.31 liveness verification).
+- No CANNIBAL flag raised; cluster cohesion with A7/A10/A11/A12 is intentional and differentiated.
+- No Q-N raised; no F-flag raised.
+
+### RUN session entry — [DATE]
+- Page claim timestamp (UTC):
+- Competitor URLs fetched + per-URL key takeaway:
+- Existing-page review (overlap, differentiation decision):
+- Slug / category / H1 / meta-title decisions:
+- Citations added (verbatim quoted text + URL + verification timestamp per §16.35):
+- Internal links added:
+- Inline CTA placements:
+- Build attempts (pass/fail):
+- Six verifications (em-dashes; Tailwind; FAQ count parity; meta title ≤62; meta description ≤158; internal links resolve):
+- Flags raised:
+- 2-3 sentence summary:

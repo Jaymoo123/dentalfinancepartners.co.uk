@@ -48,8 +48,220 @@ Distinguish from A7 (which has the rate table but not full worked examples beyon
 - Statutory verification at write: Sch 6ZA Table A (£300k/£500k bands); FA 2003 s.55 Table A (standard residential bands post-1-April-2025); Sch 4ZA surcharge interaction.
 - Component-spec reference: `Property/web/src/components/calculators/Section24Calculator.tsx` (similar single-purpose calculator with React Hook-based state management; follow the import + state pattern).
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); lead-gen architecture (LeadForm + aside-CTAs after the cliff-edge worked example, after the joint-purchase trap, and after the shared-ownership election; the calculator audience is high-intent at the moment of calculation); schema (FAQs in frontmatter; FAQPage JSON-LD; target 10-12 — calculator pages typically have slightly fewer FAQs because the worked examples carry the answer-density); cannibalisation cross-link discipline (A7 + A10 + A12 mandatory; Scottish + Welsh + shared-ownership pages mandatory; surcharge page mandatory for the joint-purchase trap); house-position anchors (§1 main text + §1.K NEW LOCK CANDIDATE); quality bar (word count 2,400-2,800; FAQs 10-12; external authority links 6-8; build clean; six verifications); anti-templating (lead with **the £400k worked example as a numbered calculation**, NOT with "Use our calculator to see how much you could save..."; the page is the calculator + walkthrough, the lead should demonstrate the calculation method on a typical input).]
+## Stage 2 HP-lock resolution note
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here. RUN-phase decision: build `FirstTimeBuyerReliefCalculator.tsx` React component now, or ship calculation-walkthrough text only and add component in a follow-up wave. Component-spec reference: `Section24Calculator.tsx` pattern.]
+§1.K MW1 mini-lock (locked 2026-05-26) is the primary anchor. A11 explicitly listed in §1.K's anchored-pages set. No additional HP work required.
+
+---
+
+## Stage 2 calculator-component decision recommendation
+
+**Recommendation:** ship calculation-walkthrough text only in the first cut; defer `FirstTimeBuyerReliefCalculator.tsx` React component build to a follow-up release. Rationale: (a) the calculation-walkthrough content carries answer-density on its own (seven scenarios with arithmetic illustrate the rate-table mechanics better than an opaque calculator widget would); (b) the gov.uk SDLT calculator is the canonical reference and competes structurally with any in-page widget; (c) RUN session can complete the page within the 19-step workflow without component-build overhead; (d) follow-up release lifts the page to a "calculator + walkthrough" model with no rewrite of the underlying calculation logic. RUN session may override if there is a strong UX argument; log override in work-log. Component-spec reference (for future build): `Property/web/src/components/calculators/Section24Calculator.tsx` (single-purpose state-managed calculator with React hooks).
+
+---
+
+## Closest existing pages (cannibalisation context, §4.5)
+
+- A7 `applicable-sdlt-rates-for-first-time-buyers` (~0.55 sibling). Rate-table reference. **Differentiation:** A11 is the calculation walkthrough; A7 is the rate-table reference. Heavy bidirectional cross-link.
+- A10 `first-time-buyer-relief-benefits-and-eligibility-requirements` (~0.50 sibling). Eligibility deep-dive. **Differentiation:** A11 walks the arithmetic; A10 walks the eligibility tests. Heavy bidirectional cross-link.
+- A12 `first-time-buyer-relief-overcome-down-payment` (~0.42 sibling). Deposit framing. Cross-link.
+- A13 `first-time-buyer-relief-understanding-tax-credits-and-deductions` (next batch). Cluster cohesion once shipped.
+- `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` (~0.25 cannib). **Differentiation:** A11 is England + NI Sch 6ZA arithmetic; Scottish page is LBTT Sch 4A. Companion.
+- `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` (~0.20 cannib). Cross-link.
+- `sdlt-shared-ownership-staircasing` (~0.18 cannib). **Differentiation:** A11 covers the FTB-relief shared-ownership election arithmetic; the staircasing page covers the broader staircasing arithmetic. Bidirectional cross-link.
+- `second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules` (~0.20 cannib). Sch 4ZA arithmetic for the joint-purchase-trap worked example. Bidirectional cross-link.
+- Existing site calculator components for comparison: `IncorporationCostCalculator.tsx`, `MTDCheckerCalculator.tsx`, `PortfolioProfitabilityCalculator.tsx`, `Section24Calculator.tsx` (each rendered into a single dedicated page) — RUN session reviews one for pattern reference if building the component.
+
+**No CANNIBAL flag.** A11 is the FTB-arithmetic walkthrough; no overlapping arithmetic page on site.
+
+---
+
+## Redirect overlap (§4.6)
+
+Stage 2 scan: no 301 entries for the A11 slug. **No middleware edit required.**
+
+---
+
+## Authority links (§4.7)
+
+**Statutory:**
+- FA 2003 s.57B — https://www.legislation.gov.uk/ukpga/2003/14/section/57B
+- FA 2003 Schedule 6ZA paras 1, 4 (Table A), 6A-6D (shared-ownership) — https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA
+- FA 2003 s.55 + Table A (standard residential rates) — https://www.legislation.gov.uk/ukpga/2003/14/section/55
+- FA 2003 Sch 4ZA (surcharge interaction in joint-purchase trap) — https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA
+- FA 2003 s.119 — https://www.legislation.gov.uk/ukpga/2003/14/section/119 (effective date — earlier of completion or substantial performance — relevant to the 1 April 2025 reversion question).
+
+**Canonical calculator:**
+- gov.uk SDLT calculator — https://www.tax.service.gov.uk/calculate-stamp-duty-land-tax/ (cross-check every worked example against this at write per §16.35).
+
+**HMRC manuals:**
+- SDLTM29800+ (FTB relief).
+- SDLTM00500+ (residential rate table).
+- SDLTM29870 (shared-ownership election with FTB relief).
+- SDLTM09766 (surcharge interaction with FTB relief).
+
+**Calculator-component reference (if built):**
+- `Property/web/src/components/calculators/Section24Calculator.tsx` — single-purpose state-managed calculator pattern.
+- `Property/web/src/components/calculators/IncorporationCostCalculator.tsx` — multi-input calculator with conditional output.
+
+**Cross-references in house_positions.md:** §1.K (**primary anchor**); §1 main text; §1.I (Sch 4ZA surcharge); §23 (devolved cross-jurisdiction).
+
+---
+
+## Stage 2 statutory citation cross-check (§16.36 / §16.40)
+
+| Citation | Quoted text (Stage 1 capture) | Stage 1 verify date | Status |
+|---|---|---|---|
+| FA 2003 s.57B(1) | "Schedule 6ZA provides relief for first-time buyers." | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA para 1(3) | £500,000 absolute cap | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA para 4 Table A | 0% to £300k; 5% £300k-£500k | 2026-05-26 | verified |
+| FA 2003 Sch 6ZA paras 6A-6D | Shared-ownership election | 2026-05-26 | verified |
+| FA 2003 s.55 Table A | 0% to £125k / 2% / 5% / 10% / 12% post-1-April-2025 | 2026-05-26 | verified — **RUN MUST cross-check every worked-example arithmetic against gov.uk SDLT calculator at write per §16.35** |
+| FA 2003 Sch 4ZA | 5% additional dwellings surcharge | 2026-05-26 (per §1.I) | verified |
+| FA 2003 s.119 | Effective date definition | 2026-05-26 | verified |
+
+**Critical RUN-session requirement:** all seven worked-example scenarios (£250k pure-nil-band; £400k mid-band; £499,999 vs £500,001 cliff-edge pair; £450k joint-purchase trap; £250k shared-ownership initial-share; max-saving scenario; jurisdictional sanity-check) must be **arithmetically verified against the gov.uk SDLT calculator output** at write time. Per-write §16.35 mandate. Discrepancy = flag immediately + reconcile.
+
+**Drift risk: LOW** on Sch 6ZA arithmetic (stable). **MEDIUM** on the post-1-April-2025 standard residential bands (verify at write).
+
+---
+
+## Stage 2 URL liveness verification (§16.31)
+
+RUN session:
+1. gov.uk SDLT calculator — verify accessible + producing current-rates output.
+2. MSE / Halifax / Nationwide / Barclays / NatWest FTB SDLT calculator pages — site-search + liveness.
+3. MoveiQ / Reallymoving / Habito calculator pages — liveness + flag any still using £425k/£625k thresholds.
+
+**Stage 1 status:** competitor URLs at class level; statute URLs verified live 2026-05-26.
+
+---
+
+## Universal rules (§4.8 — verbatim)
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Calculator pages: numerical precision is the brand asset. Every figure verified at write. Personas anonymised (Maya for £400k buyer; Daniel-Aisha for joint-purchase trap; the Singh family shared-ownership; etc.).
+
+### Lead-gen architecture
+- LeadForm auto-injected. `<aside>` styled by `.prose-blog aside`. No Tailwind classes.
+
+### CTA placement guidance (per this page — calculator + walkthrough, high-intent moments)
+- 3 inline `<aside>` CTAs at conversion moments:
+  - After the cliff-edge worked example (£499,999 vs £500,001 pair).
+  - After the joint-purchase trap worked example.
+  - After the shared-ownership election walkthrough.
+- Calculator audience is at the moment of calculation; CTA after the calculation-walk-through demonstrates highest intent.
+
+### Schema
+- FAQs in frontmatter `faqs:` array (target 10-12 — calculator pages have slightly fewer FAQs because the worked examples carry the answer-density).
+
+### Cannibalisation
+- A11 is the arithmetic walkthrough. Read A7 + A10 + A12 sibling briefs + Scottish + Welsh + shared-ownership-staircasing + surcharge pages before writing.
+
+### House positions
+- **§1.K is your primary working detail (verbatim-locked 2026-05-26).**
+- §1.K do-not-write list (5 items) MUST hold.
+
+### Quality bar
+- Word count: 2,400-2,800 body.
+- FAQs: 10-12.
+- New external authority links: 6-8.
+- Six verifications.
+- **Calculator pages: every numerical figure cross-checked against gov.uk SDLT calculator output.**
+
+### Anti-templating
+- Open with **the £400k worked example as a numbered calculation**, demonstrating the calculation method on a typical input.
+- Do NOT lead with "Use our calculator to see how much you could save..." or "Calculating your SDLT can be confusing..." — both saturated competitor leads.
+- Vary H2s from A7 (rate-table-led) and A10 (eligibility-led). A11's H2 sequence should foreground the calculation scenarios: pure-nil-band → mid-band → cliff-edge → joint-purchase trap → shared-ownership election → max-saving → jurisdictional comparison.
+- Recommended opener pattern: "A first-time buyer purchasing a £400,000 home in England or Northern Ireland pays £5,000 in Stamp Duty Land Tax under the first-time buyers' relief: 0% on the first £300,000 and 5% on the £100,000 above that. Standard residential rates on the same purchase would cost £10,000, so the relief saves £5,000. The page below walks through that calculation and six other scenarios that show where the relief delivers, where it stops, and where the joint-purchase trap reverses the saving entirely."
+
+---
+
+## 19-step workflow (verbatim, NETNEW_PROGRAM §7)
+
+1. Read house_positions.md once (§1.K + §1 main + §1.I + §23).
+2. Claim ONE page in MW1 tracker on MAIN.
+3. Read brief.
+4. Fetch competitor URLs + gov.uk SDLT calculator + MSE / Halifax / Nationwide / Habito calculators.
+5. Read each closest-existing page.
+6. Plan H2/H3 outline + meta + FAQs + 3 CTAs + 7 worked-example scenarios.
+7. Verify factual claims per §16.35. **Cross-check every worked-example arithmetic against gov.uk SDLT calculator.**
+8. Hero image: "calculator and house keys" or "first home calculation" via Pexels.
+9. Write the markdown file at `Property/web/content/blog/first-time-buyer-relief-calculator.md`.
+10. Build: `cd Property/web && npm run build`.
+11. Six verifications.
+12. Middleware (none).
+13. Register in `monitored_pages`.
+14. **Commit on branch BEFORE marking tracker done.**
+15. Fill in work-log + log component-build decision (text-only vs build now).
+16. Mark done on MAIN tracker.
+17. Append site-wide flags (F-2..F-49 Bucket A).
+18. Log discoveries.
+19. Next page.
+
+---
+
+## Per-page work-log (RUN session fills in)
+
+### Decisions
+- **Final slug / category:** [confirm or override]
+- **H1 chosen:** [final]
+- **Meta title + char count:** ___
+- **Meta description + char count:** ___
+- **Component-build decision:** [text-only ship vs build `FirstTimeBuyerReliefCalculator.tsx` now + reasoning]
+- **Why these vs other options:** [reasoning]
+
+### Competitor URLs fetched
+- [URLs + status + takeaways]
+- gov.uk SDLT calculator cross-check result: [matches / discrepancy noted]
+
+### Existing-page review
+- A7 + A10 + A12 sibling reads; differentiation confirmed
+- Shared-ownership page read; election treatment differentiation confirmed
+- Surcharge page read; joint-purchase trap arithmetic differentiation confirmed
+
+### Worked-example arithmetic verification (CRITICAL per §16.35)
+- Scenario 1 £250k: ___ (verified against gov.uk: yes/no)
+- Scenario 2 £400k: ___ (verified: yes/no)
+- Scenario 3a £499,999 cliff: ___ (verified: yes/no)
+- Scenario 3b £500,001 cliff: ___ (verified: yes/no)
+- Scenario 4 joint-purchase trap £450k: ___ (verified: yes/no)
+- Scenario 5 shared-ownership election: ___ (verified: yes/no)
+- Scenario 6 max-saving: ___ (verified: yes/no)
+- Discrepancies surfaced: ___
+
+### Citations added
+[List]
+
+### Internal links added
+1. A7 (rates companion)
+2. A10 (eligibility companion)
+3. A12 (deposit companion)
+4. Scottish + Welsh FTB pages
+5. shared-ownership-staircasing
+6. additional-dwellings-surcharge-joint-owners
+...
+
+### Inline CTA placements
+1. After cliff-edge worked example
+2. After joint-purchase trap worked example
+3. After shared-ownership election walkthrough
+
+### Build attempts
+- Attempt 1: [pass/fail]
+
+### Verification (six checks)
+- em-dash count: ___
+- Tailwind utility classes: ___
+- metaTitle length: ___ (limit 62)
+- metaDescription length: ___ (limit 158)
+- FAQ count: frontmatter ___ ; built HTML JSON-LD ___ ; match: yes/no
+- Internal links resolve: yes/no
+- Body word count: ___ (target 2,400-2,800)
+
+### Flags raised
+- [F-N if any]
+
+### 2-3 sentence summary
+[RUN session summary]

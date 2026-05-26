@@ -1,0 +1,146 @@
+batch: M1-A-B1
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 2 (full brief extension)
+status: complete
+completed_at: 2026-05-26
+sub_agent: Stage 2 Sub-Agent Bucket A batch M1-A-B1 (LEAF agent, autonomous run per Bug #7)
+
+picks extended (6 of 6):
+  1. abolishment-of-multiple-dwelling-relief                                (A1)  commit 25e56c2
+  2. abolition-of-multiple-dwellings-relief-mdr-raises-concerns             (A2)  commit 4e906ff
+  3. a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits (A3)  commit 39e5da9
+  4. a-complete-guide-to-5-sdlt-surcharge-refund-claims                     (A4)  commit 11c7fdb
+  5. a-complete-guide-to-stamp-duty-refund                                  (A5)  commit fe9d1d0
+  6. a-complete-guide-to-stamp-duty-relief-for-probate-properties           (A6)  commit 9a3e4f6
+
+continuity note:
+  Picks 1-6 were extended by an earlier Stage 2 sub-agent run for this same batch
+  (commits 25e56c2..9a3e4f6 between 2026-05-26 morning batches and the M1-A-B4 close).
+  The earlier run did not write a batch-done marker before terminating. The conductor
+  re-launched a fresh M1-A-B1 Stage 2 sub-agent (this run) to close the batch cleanly.
+  This session verified each extended brief on disk (144/152/156/161/203/182 lines —
+  all well above the ~40-60-line seed baseline; all carry §4.3 + §4.5 + §4.6 + §4.7 +
+  §4.8 + §4.9 + §4.10 blocks per NETNEW_PROGRAM §4 anatomy) and writes this marker.
+
+  This session also briefly committed an overwrite of pick 1 (commit a8f3806) with a
+  thinner extension before noticing the prior run's more thorough version at 25e56c2.
+  The thinner overwrite was reverted via `git reset --hard 0e6925e` (local-only reset
+  on the worktree branch; the regression commit had not been pushed). Branch HEAD now
+  sits at the M1-A-B4 batch-done marker (0e6925e); this commit (M1-A-B1 batch-done)
+  is the next commit forward.
+
+F-flags raised in this batch:
+  - F-1 BRIEF_DRIFT + HOUSE_POSITION_EXTENSION on A1 (Scottish LBTT MDR position) —
+    raised by the Stage 1 sub-agent (NOT Stage 2). Already logged in
+    megawave1_site_wide_flags.md. The Stage 2 extension of A1 (commit 25e56c2) carries
+    the F-1 correction verbatim in its Key questions Q5 + Framing differentiator —
+    the brief itself no longer carries the drift; Q5 cites Scottish LBTT MDR survival
+    at LBTT(S)A 2013 Sch 5 (verified 2026-05-26).
+  - No new Stage 2 F-flags raised in this batch beyond Stage 1's F-1. The §16.36 gate
+    passed at brief level for all 6 picks; the §16.31 URL sweeps closed with the
+    standard RUN-phase httpx liveness fallback documented per brief; no §16.20-style
+    EXISTING_PAGE_STALE catches surfaced within this batch's adjacency reads.
+
+HP-lock anchoring summary:
+  A1 + A2 + A3 (MDR cluster — 3 picks)            → §1 main + §1.A (Sch 15 SLP surviving)
+                                                     + §1.H Wave 9 MDR abolition lock.
+                                                     Cross-ref to A19/A20 (sister M1-A-B4
+                                                     Scottish/Welsh + canonical hub) and
+                                                     to Wave 9 operational page.
+  A4 + A5 (SDLT refund cluster — 2 picks)         → §1 main + §1.C Wave 7 Bewley lock
+                                                     + §1.D Wave 7 divorce-spouse lock
+                                                     + §1.I Wave 9 5% surcharge refund
+                                                     architecture + §1.H Wave 9 MDR
+                                                     abolition (for transitional MDR
+                                                     refund family). No new HP-lock
+                                                     anchor proposed; existing locks
+                                                     cover the statutory surface.
+  A6 (probate SDLT reliefs)                       → §1 main + §1.D Wave 7 spouse/CP
+                                                     no-chargeable-consideration parallel
+                                                     architecture. No new HP-lock
+                                                     anchor proposed (§1.O candidate
+                                                     flagged in Stage 1 seed but Stage 2
+                                                     verdict: not needed — existing
+                                                     architecture sufficient; Sch 4ZA
+                                                     para 16 mechanics are page-level
+                                                     work product).
+
+cross-batch recommendation to conductor:
+  None new in this batch beyond what's already on the flags board. F-1 (raised by
+  Stage 1) remains open as a HOUSE_POSITION_EXTENSION candidate (devolved-property-
+  taxes lock spanning LBTT Sch 5 + LTT Sch 13); it was deferred at Stage 1b in favour
+  of §1.K (FTB), §30 (council tax), §31 (lease extension). F-10 (raised by M1-A-B4)
+  has restated the case for a devolved-taxes lock — recommend conductor evaluates
+  the F-1 + F-10 cluster at MW1 wave-close (per the M1-A-B4 batch-done marker's
+  cross-batch recommendation; this batch endorses).
+
+Q&A: none raised. Bug #7 autonomous-work pattern held end-to-end across the prior
+sub-agent run + this closing run.
+
+§16.36 brief-statutory-citation cross-check gate: PASSED for all 6 briefs.
+  A1 verified 8+ cites (F(No.2)A 2024 s.7 verbatim; FA 2003 s.116(7) + s.119 + s.44 +
+  s.45 + Sch 15 paras 10-13; LBTT(S)A 2013 Sch 5 verbatim per F-1 close; LTTA 2017
+  Sch 13 cross-jurisdictional companion).
+  A2 verified the A1 set plus the HMRC Nov 2023 MDR consultation source + the policy-
+  debate primary anchors.
+  A3 verified the pre-abolition Sch 6B historical snapshot URL pattern (the load-
+  bearing citation; RUN session re-verifies at write per the in-brief work-log entry).
+  A4 verified Sch 4ZA + Sch 10 (overpayment relief) + Sch 11A (amendment) anchors
+  with explicit drift watchpoints for Sch 10 para 34 vs para 34A operative cite.
+  A5 verified the 8-family taxonomy statutory spine (Sch 4ZA + Sch 9A + Sch 6ZA +
+  Sch 6B + Sch 4 + Sch 5 + Sch 10 + Sch 11A) with three named drift watchpoints
+  (Sch 6ZA FTB cite; Sch 9A para 11A non-resident requalification; Sch 10 para 34
+  vs 34A).
+  A6 verified Sch 3 para 3A + Sch 4 para 4 + Sch 6A + Sch 4ZA para 16 architecture
+  with two drift watchpoints (Sch 3 para 3A vs FA 2003 s.49 anchor choice — RUN
+  session matches the existing probate page; Sch 6A para allocation for PR-buyback).
+
+§16.31 URL liveness: Stage 2 listed competitor URL candidates per brief and codified
+the no-Stage-2-hits fallback pattern per the M1-A-B4 template (Bug #3 + #5 lesson:
+do NOT invent plausible firm URLs without live verification). Each brief instructs
+the RUN session to perform httpx + BeautifulSoup liveness at fetch time and to
+substitute via site-restricted searches if any candidate returns 404 / off-topic /
+redirect-to-homepage. Drift-catch discipline (claims-firm content treated as drift-
+catch source not borrow-pattern source) explicit in A4 + A5 Universal rules per the
+§1.I + Wave 9 F-4 pattern.
+
+§16.35 per-write verification mandate carried forward into each brief's RUN-session
+workflow:
+  A1: verify 5% additional dwellings surcharge rate + 31 October 2024 transition +
+  1 June 2024 MDR abolition commencement + residential band thresholds against gov.uk
+  at write before quoting any worked-example figure.
+  A2: verify the A1 set; the policy-debate framing leans on dated industry-body
+  positions — RUN session also verifies the 2024 manifesto wording + any FA 2025 / FA
+  2026 SDLT amendments before publishing 2026-current policy direction commentary.
+  A3: verify the pre-abolition Sch 6B historical snapshot URL still resolves at the
+  31 May 2024 timestamp; verify case-law citations (Fiander, Brewer, Doe annexe-
+  definition) against BAILII at write.
+  A4: verify Sch 4ZA para 3(7) 3-year window + SDLTM09807 exceptional-circumstances
+  text + Sch 10 para 34 vs 34A operative-paragraph drift catch + the 31 October 2024
+  rate transition; verify Hyman + Bewley + post-Bewley case-law line.
+  A5: verify all 8-family statutory anchors verbatim; explicit drift watchpoints on
+  Sch 6ZA, Sch 9A para 11A, Sch 10 para 34/34A — these are the three highest-risk
+  cites in the umbrella; verify HMRC Spotlight publications on SDLT claims-firm
+  pattern.
+  A6: verify Sch 4ZA para 16 triple-condition (≤50% share / ≤£40k value / 3-year
+  window) verbatim — this is the operationally most important figure in the brief;
+  verify Sch 6A PR-buyback paragraph allocation; verify Sch 3 para 3A vs FA 2003
+  s.49 anchor choice and match the existing probate page.
+
+anti-templating cross-check (Stage 2 sub-agent, 2026-05-26):
+  All 6 briefs read as distinct roles within the MDR + SDLT-refund + probate-relief
+  cluster.
+  A1 = plain-language taxpayer on-ramp (decision-tree shape, 8 question-led H2s).
+  A2 = policy-debate / sector-impact angle (4 concern-cluster H2s).
+  A3 = historical eligibility + enquiry-defence (para-by-para Sch 6B walk-through).
+  A4 = 5% surcharge refund 6-route decision tree.
+  A5 = whole-landscape 8-family SDLT-refund umbrella.
+  A6 = relief-architecture for probate (6 architectures, Sch 4ZA para 16 deep-dive).
+  Each brief carries distinct framing differentiator + H2-structure + FAQ phrasing
+  + cross-link plan. No templating drift detected within batch. Wave 9 + A19 + A20
+  + existing probate page own adjacent lanes; A1-A6 forward-link explicitly.
+
+ready for: RUN dispatch when conductor signs off Stage 2 batch (and optionally closes
+F-1 + F-10 devolved-property-taxes cluster ahead of RUN, though both flags are
+non-blocking for MW1 Bucket A RUN-phase writing per the no-block discipline noted in
+each flag entry).

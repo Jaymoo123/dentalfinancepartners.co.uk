@@ -1,0 +1,76 @@
+batch: M1-A-B3
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 3 (RUN — published blog markdown shipped to Property/web/content/blog/)
+status: complete
+completed_at: 2026-05-26
+sub_agent: RUN-phase Sub-Agent Bucket A batch M1-A-B3 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave1-a
+
+picks shipped (6 of 6):
+  1. first-time-buyer-relief-understanding-tax-credits-and-deductions       (A13) commit 10cc62c body ~2400w / 12 FAQs  terminology-clarification leaf of FTB cluster
+  2. ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement (A14) commit 3567516 body ~2700w / 12 FAQs  Bonsu v HMRC [2024] UKFTT 158 (TC) easement sub-line
+  3. ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice (A15) commit c274aa9 body ~2700w / 12 FAQs  Goonesena v HMRC [2024] UKFTT 619 (TC) Martland framework
+  4. horton-hall-sdlt-case-residential-vs-non-residential-dispute           (A16) commit 6a2aad5 body ~2900w / 13 FAQs  White & Kane v HMRC [2023] UKFTT 866 (TC) grounds-classification deep-dive
+  5. how-owning-property-abroad-leads-higher-stamp-duty-rates                (A17) commit 8a4b8f3 body ~2700w / 12 FAQs  worldwide-property explainer mapping three statutory routes
+  6. labour-plans-stamp-duty-hike-for-overseas-buyers                        (A18) commit 65c22b9 body ~2500w / 12 FAQs  policy-and-news analysis of Labour 2024 manifesto Sch 9A hike
+
+six verifications summary (per-page, run pre-commit on each):
+  em-dashes in body:        0 across all 6 pages (Pick 2 had 1 in-body leak; fixed pre-commit)
+  Tailwind utility classes: 0 across all 6 pages
+  FAQ array length:         all 6 within brief targets (10-12 / 11-13)
+  meta title chars:         all 6 ≤ 62
+  meta description chars:   all 6 ≤ 158
+  internal link resolution: all 6 verified (sibling A13-A18 cross-links resolve once siblings shipped; existing-page targets (A7/A10/A11/A12 FTB cluster, scottish + welsh FTB siblings, section-24-tax-credit, sdlt-refund-scams, sdlt-mixed-use-property-classification, Wave 9 mixed-use trilogy, sdlt-bewley, second-home-additional-dwellings-surcharge, sdlt-on-probate-property-transfers) all present on disk)
+
+per-pick build (step 10 cd Property/web && npm run build):
+  all 6 pages built clean; each commit followed a passing npm run build with all 537+ blog content pages prerendering
+
+steps skipped (with reasons):
+  step 13 (Supabase monitored_pages registration): SKIPPED — Supabase credentials not in worktree. Per-batch registration noted as wave-close action item for conductor.
+
+redirect repointing:
+  step 12 NO-OP — all 6 slugs verified novel against Property/web/middleware.ts at Stage 2 cannibalisation pass (no overlap); re-confirmed at RUN-time no-op.
+
+F-flags closed at RUN-time:
+  F-2 closed — A14 Bonsu v HMRC [2024] UKFTT 158 (TC) (TC09084, 26 Feb 2024, Tribunal Judge Richard Chapman KC) citation verified at caselaw.nationalarchives.gov.uk/ukftt/tc/2024/158 (Stage 2b verification re-used)
+  F-4 closed — A15 R & E Goonesena v HMRC [2024] UKFTT 619 (TC) (TC09240, 25 Jun 2024, Tribunal Judge Abigail McGregor) citation verified at caselaw.nationalarchives.gov.uk/ukftt/tc/2024/619 (Stage 2b verification re-used)
+  F-6 closed — A16 White & Kane v HMRC [2023] UKFTT 866 (TC) (TC08943, 29 Sep 2023, Tribunal Judge Anne Fairpo + Member Shaneem Akhtar) citation verified at caselaw.nationalarchives.gov.uk/ukftt/tc/2023/866. Property name "Horton Hall" (singular) Staffordshire. Slug retained "horton-hall" for SERP-match; body uses canonical case name. (Stage 2b verification re-used.)
+  F-8 closed — A18 live-policy verification: Sch 9A non-resident SDLT surcharge remains 2% per FA 2003 Sch 9A as inserted by FA 2021 s.86 + Sch 16; no legislative implementation of the proposed 3% Labour-manifesto increase in FA 2025 c.8 or Spring Statement 2025. Page time-stamped at write date (26 May 2026) + states verification gap explicitly + designed to age well.
+
+F-flags raised in this batch (in F-1..F-49 Bucket A range per Bug #2): none new.
+
+HP-LOCK CANDIDATES raised by Stage 2 (passed through to conductor for Stage 1b-style review):
+  §1.J / §1.M — extension to cover garden-easement (A14 Bonsu line) + PROW (A9 Averdieck line) sub-lines, OR open new §1.M
+  §1.N — SDLT appeal procedure HP-lock (FA 2003 Sch 10 + Martland framework + Tribunal Procedure Rules 2009)
+  §1.O — Worldwide-property + non-resident-buyer triangulation (Sch 4ZA worldwide + Sch 9A non-resident + Sch 6ZA FTB-disqualification)
+  §1.O / §1.P — Labour 2024 manifesto policy trajectory on Sch 9A 2% → 3%
+
+differentiation axis held per pick (anti-templating discipline):
+  A13: terminology-clarification leaf — maps US tax vocabulary (credit/deduction/annual-claim/Form 5405) onto UK SDLT rate-reduction architecture; distinct from A7 (rates), A10 (eligibility), A11 (calculator), A12 (deposit-planning) FTB cluster siblings.
+  A14: leasehold-with-easement sub-line case-analysis on Bonsu v HMRC; statutory pinpoint s.116(1)(c) direct deeming; distinct from A9 (PROW), A16 (grounds-classification), Wave 9 mixed-use trilogy.
+  A15: procedural-case-analysis on late-SDLT-appeal jurisdiction (Goonesena); FA 2003 Sch 10 para 35 30-day window + Martland three-stage framework + no-professional-advice line + Sch 10 para 34 4-year overpayment-relief alternative; distinct procedural lane from substantive case-analysis siblings A9/A14/A16.
+  A16: country-estate grounds-classification deep-dive (White & Kane / Horton Hall Staffordshire); functional appendage test at para 19; placed in post-Hyman line with How Development UT + Suterwalla UT outlier; £5m worked example shows £524k stacking incentive.
+  A17: worldwide-property-ownership triangulation explainer mapping three statutory routes (Sch 4ZA 5% + Sch 9A 2% + Sch 6ZA FTB-disqualification); £400k worked example with band-additive computation via s.55B/s.55C; spouse-aggregation trap surfaced; £40k exclusion asymmetry surfaced.
+  A18: policy-and-news analysis on Labour 2024 manifesto Sch 9A hike (2% → 3%); current-state-verified at write (still 2%); worked examples at both rates across £500k / £1m / £2m; stacking with Sch 4ZA noted; SDLT-specific 183-day test surfaced as distinct from FA 2013 SRT.
+
+house position anchors cited across the batch:
+  §1 main text — SDLT rates + 5% additional dwellings surcharge from 31 October 2024 (all 6)
+  §1.I Wave 9 — 5% additional dwellings surcharge from 31 October 2024 (A13, A17, A18)
+  §1.J Wave 9 — Hyman/Suterwalla/Hortons Hall mixed-use trilogy (A14, A16)
+  §1.K MW1 — FTB relief FA 2003 s.57B + Sch 6ZA (A13, A17)
+  §1.C Wave 7 — Bewley uninhabitable narrow exception (A14, A16)
+
+competitor URL status:
+  competitor URLs codified at Stage 2; per-page live verification deferred to RUN-time per §16.31. All legislation.gov.uk URLs cited in pages verified at WebFetch on 2026-05-26 (Sch 4ZA / Sch 9A / Sch 10 / Sch 6ZA / s.55B / s.55C / s.116 / s.117 / FA 2025 s.51 / FA 2021 s.86). All caselaw.nationalarchives.gov.uk URLs verified for Bonsu / Goonesena / White & Kane / Hyman EWCA / Suterwalla UT / How Development UT.
+
+tracker discipline:
+  All 6 picks updated via ABSOLUTE PATH to main's tracker
+  (C:\Users\user\Documents\Accounting\docs\property\megawave1_page_tracker.md) per
+  §16.14 + §16.15 + §16.37 discipline. Body word + FAQ count + RUN commit SHA +
+  per-pick case-citation + statutory anchors + cross-link clusters + HP-lock anchors
+  + F-flag closures recorded inline.
+
+terminal handover note:
+  Batch M1-A-B3 RUN-phase fully closed. All 6 picks live on branch property-megawave1-a
+  awaiting wave-close merge to main. Branch HEAD: 65c22b9 (Pick 6 commit; this marker
+  + flag are uncommitted artefacts in worktree _signals dir).

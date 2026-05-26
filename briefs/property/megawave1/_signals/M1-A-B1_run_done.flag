@@ -1,0 +1,123 @@
+batch: M1-A-B1
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 3 (RUN — published blog markdown shipped to Property/web/content/blog/)
+status: complete
+completed_at: 2026-05-26
+sub_agent: RUN-phase Sub-Agent Bucket A batch M1-A-B1 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave1-a
+
+picks shipped (6 of 6):
+  1. abolishment-of-multiple-dwelling-relief                                (A1)  commit 0a9b681  body 2537w / 12 FAQs  plain-language on-ramp tier
+  2. abolition-of-multiple-dwellings-relief-mdr-raises-concerns             (A2)  commit fa57608  body 2467w / 12 FAQs  policy-debate / sector-impact tier (4 concern-clusters)
+  3. a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits (A3)  commit a9defb9  body 2916w / 14 FAQs  historical-architecture tier (Sch 6B 31 May 2024 snapshot)
+  4. a-complete-guide-to-5-sdlt-surcharge-refund-claims                     (A4)  commit d8a9c5a  body 2877w / 14 FAQs  six-route decision-tree umbrella
+  5. a-complete-guide-to-stamp-duty-refund                                  (A5)  commit a8d58a1  body 3054w / 16 FAQs  eight-family whole-landscape umbrella
+  6. a-complete-guide-to-stamp-duty-relief-for-probate-properties           (A6)  commit e704b9d  body 2872w / 14 FAQs  reliefs-architecture companion to existing transfer-mechanics page
+
+six verifications summary (per-page, run pre-commit on each):
+  em-dashes in body:        0 across all 6 pages (Pick 6 had 3 in-body leaks; all fixed before commit)
+  Tailwind utility classes: 0 across all 6 pages
+  FAQ array length:         all 6 within brief targets (10-12 / 12-15 / 14-18 per pick brief)
+  meta title chars:         all 6 ≤ 62 (range 53 to 61)
+  meta description chars:   all 6 ≤ 158 (A1 trimmed 160→144 pre-commit; A4 trimmed 161→140 pre-commit)
+  internal link resolution: all 6 verified after full batch; sibling A1↔A2↔A3 + A4↔A5↔A6 cross-links resolve once siblings shipped; existing-page targets (Wave 9 MDR abolition, Welsh-LTT MDR survives, s.116(7), Wave 9 replacement-route, scams page, transfer-mechanics) all present on disk
+
+steps skipped (with reasons):
+  step 10 (cd Property/web && npm run build): SKIPPED — node_modules absent in worktree Property/web; build step not executable. Per-page lightweight verifications done in lieu (em-dash count, Tailwind count, FAQ array length, meta lengths, internal-link target file existence). Consistent with prior Stage 1/2 commit pattern in this worktree (no build commits in MW1 history pre-RUN).
+  step 13 (Supabase monitored_pages registration): SKIPPED — step not executable without Supabase credentials in worktree. Per-batch registration noted as wave-close action item for conductor.
+
+redirect repointing:
+  step 12 NO-OP — all 6 slugs verified novel against Property/web/src/middleware.ts at Stage 2 cannibalisation pass (no overlap); re-confirmed at RUN-time no-op.
+
+F-flags raised in this batch (in F-1..F-49 Bucket A range per §13.2 + Bug #2):
+  F-11 BRIEF_DRIFT — A4 brief conflated FA 2003 Sch 10 para 34 (overpayment-relief
+    gateway) with the 4-year time limit. Correct architecture: para 34 (gateway) +
+    para 34A (HMRC refusal grounds) + para 34B (4-year time limit). Corrected
+    throughout A4 RUN output.
+  F-12 BRIEF_DRIFT — A5 brief cited "FA 2003 Sch 9A para 11A (1-year UK-residence
+    requalification refund)" for the non-UK resident surcharge refund. Correct
+    cite verified at legislation.gov.uk: Sch 9A para 19 (verbatim: "may be
+    amended, at any time before the end of the period of 2 years beginning with
+    the day after the effective date of the transaction"). 2-year window, not
+    1-year. Corrected throughout A5 RUN output and surfaced in worked Scenario B
+    with explicit deadline computation.
+  F-13 BRIEF_DRIFT — A6 brief and widely-circulated adviser commentary state
+    Sch 4ZA para 16 inherited-interest carve-out as triple-condition (≤50% share +
+    ≤£40k value + 3-year window). Verified verbatim at legislation.gov.uk: the
+    statute has NO £40k value cap in paragraph 16. Two-condition only: (a) "P's
+    beneficial share in the interest does not exceed 50%"; (b) "P is not to be
+    treated... as having the major interest at any time during the period of three
+    years beginning with the date of the inheritance". A6 RUN output corrects
+    throughout, with an explicit "Note on the £40,000 question" paragraph
+    addressing the widely-circulated misstatement and a four-scenario worked
+    decision tree turning on the two correct conditions only.
+  F-14 EXISTING_PAGE_STALE — Existing site page sdlt-on-probate-property-transfers
+    cites "Paragraph 8 Schedule 4 FA 2003" for the deed-of-variation exemption.
+    Verified verbatim at legislation.gov.uk: the substantive DoV exemption is at
+    FA 2003 Sch 3 para 4 (the no-charge-on-relevant-transactions schedule), with
+    Sch 4 para 8A providing a parallel chargeable-consideration carve-out where
+    the Sch 3 para 4 condition is failed through containing consideration. The
+    existing page should be back-patched at FAQ #2 + the five-transfer-type table
+    row + the Deeds of Variation H2 to cite "Sch 3 para 4 (gateway) with Sch 4
+    para 8A (carve-out)". Wave-close cleanup; non-blocking for RUN continuation.
+
+differentiation axis held per pick (anti-templating discipline):
+  A1: plain-language taxpayer on-ramp; decision-tree Q&A; distinct from Wave 9
+      operational + sibling A2 policy-debate + sibling A3 historical-architecture lanes.
+      H2s organised around the four narrow practical questions.
+  A2: policy-debate / sector-impact angle (4 concern-clusters tested against
+      post-1-June-2024 empirical reality); distinct from Wave 9 operational + A1
+      plain-language + A3 historical lanes. H2s mirror the four concern-clusters.
+  A3: historical / pre-abolition Sch 6B architecture; para-by-para statutory
+      walk-through + enquiry-defence framework + transitional-cohort decision tree.
+      Page explicitly badged as historical in an opening <aside> banner; H2s
+      organised around the Sch 6B paragraph structure (para 2 / para 3 / paras
+      4-5 / para 5A / s.108).
+  A4: surcharge-family six-route diagnostic decision tree; distinct from Wave 9
+      dedicated-replacement-route mechanics page + A5 whole-landscape umbrella.
+      H2s = ONE per route + four-question diagnostic + deadline-table + claims-firm
+      risk + cross-links.
+  A5: whole-landscape eight-family umbrella; taxonomy-first orientation; cross-
+      links to A4 for Family 1 detail; covers Families 2-8 at family-level depth.
+      H2s = ONE per family + diagnostic + amendment-process mechanics + claims-
+      firm risk + worked examples + cross-links.
+  A6: relief / exemption / carve-out architecture companion to existing transfer-
+      mechanics page (sdlt-on-probate-property-transfers); Sch 4ZA para 16
+      detailed walk-through with four-scenario worked decision tree (one success
+      + two failure cases + one success); cross-statute IHT + CGT read-across
+      surfaced. H2s organised around the six relief architectures.
+
+house position anchors cited across the batch:
+  §1 main text — SDLT rates + 5% additional dwellings surcharge from 31 October 2024 (A1, A2, A4, A5, A6)
+  §1.A Wave 7 — Sch 15 SLP partnership genuine-partnership defence (A1, A2, A3)
+  §1.C Wave 7 — Bewley uninhabitable narrow post-Hyman/Mudan/MHB/Brown (A4, A5)
+  §1.D Wave 7 — Sch 3 spouse/civil-partner analogous architecture (A6)
+  §1.H Wave 9 — MDR abolition operational architecture (A1, A2, A3)
+
+competitor URL status:
+  gov.uk consultation pages 404 at WebFetch (A2 + A5): briefs Bug #3/#5 pattern documented.
+    Substituted with date-range citations (Nov 2023 to Feb 2024 consultation window referenced
+    generically without dead URL).
+  All legislation.gov.uk URLs cited in pages verified at WebFetch on 2026-05-26
+    (FA 2003 Sch 4ZA / Sch 9A / Sch 10 / Sch 11A / Sch 3 / Sch 4 / Sch 6A / Sch 6ZA /
+    Sch 6B 31-May-2024 snapshot; F(No.2)A 2024 s.7 verbatim).
+
+tracker discipline:
+  All 6 picks updated via ABSOLUTE PATH to main's tracker
+  (C:\Users\user\Documents\Accounting\docs\property\megawave1_page_tracker.md) per
+  §16.14 + §16.15 + §16.37 discipline. Body word + FAQ count + RUN commit SHA + tier
+  + drift-catch notes recorded inline. Worktree-relative-path copy NOT edited (Bug #6).
+
+flags discipline:
+  F-11 through F-14 appended to main's flags file
+  (C:\Users\user\Documents\Accounting\docs\property\megawave1_site_wide_flags.md) per
+  ABSOLUTE PATH discipline. Each flag carries: raised-by header; type classification;
+  verbatim drift-cite; verbatim correction-cite; back-patch consideration; no-block
+  discipline note. Wave-close conductor handles back-patch on F-14 (existing-page
+  citation precision update).
+
+terminal handover note:
+  Batch M1-A-B1 RUN-phase fully closed. All 6 picks live on branch property-megawave1-a
+  awaiting wave-close merge to main. Branch HEAD: this commit (batch-done marker).
+  Next batch dispatchable: any M1-A-B2 / M1-A-B3 / M1-A-B4 RUN sub-agent picking up
+  the corresponding bucket-A batch (Stage 2 briefs already extended; ready for RUN).

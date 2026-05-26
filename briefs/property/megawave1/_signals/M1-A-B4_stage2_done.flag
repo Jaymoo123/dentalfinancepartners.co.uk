@@ -1,0 +1,91 @@
+batch: M1-A-B4
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 2 (full brief extension)
+status: complete
+completed_at: 2026-05-26
+sub_agent: Stage 2 Sub-Agent Bucket A batch M1-A-B4 (LEAF agent, autonomous run per Bug #7)
+
+picks extended (2 of 2):
+  1. land-and-buildings-transaction-tax-multiple-dwellings-relief  (A19)  commit 2aaad02
+  2. multiple-dwellings-relief                                     (A20)  commit 966b2ac
+
+F-flags raised to conductor:
+  F-10  EXISTING_PAGE_STALE  Wave 9 `welsh-ltt-multiple-dwellings-relief-bulk-purchases-
+                              mechanics-survives-vs-sdlt-abolition` stale on LTTA 2017
+                              Sch 13 post-Feb-2025 (new para 7A subsidiary dwellings via
+                              SI 2025/119) + post-Feb-2026 (para 6(2) min-floor substituted
+                              to 3% by Welsh Regulations 13 Feb 2026). Both amendments
+                              verified verbatim at legislation.gov.uk 2026-05-26. Back-patch
+                              the Wave 9 page at MW1 close to surface the current
+                              architecture. A19 + A20 already surface it in their §16.36
+                              gate + FAQ entries. Detail in megawave1_site_wide_flags.md.
+
+cross-batch recommendation to conductor:
+  F-10 + the still-open F-1 HP-extension proposal (devolved-property-taxes lock spanning
+  LBTT + LTT) form a coherent cluster. The Stage 1b commits (7877f1c + ec7d20f) locked
+  §1.K + §30 + §31 only; the F-1-proposed devolved-property-taxes lock was deferred. A19
+  (Scottish-survives), A20 (canonical hub), the Wave 9 Welsh-survives page (now slated for
+  F-10 back-patch), and any future LBTT-cluster or LTT-cluster page all currently anchor
+  directly to verbatim statute rather than to a settled HP-lock. MW1 close could open a
+  §1.M (or new §32) devolved-property-taxes HP-lock spanning LBTT(S)A 2013 Sch 5 + Sch 2A
+  + LTTA 2017 Sch 13 (with 2025-2026 amendments) + Welsh LTT Sch 5 higher-rates as a
+  single anchor. Recommended over deferring to MW2 given the cumulative drift surface.
+
+HP-lock anchoring summary:
+  A19 + A20 — no dedicated HP-lock anchor (F-1 HP-extension proposal still open as
+  inter-wave queue item per Stage 1b decision). Briefs anchor directly to verbatim statute
+  via the §16.36 gate. Secondary anchors: §1 main text (SDLT cluster, counter-context),
+  §1.A (Sch 15 SLP for SDLT surviving alternatives — A20 only), §1.B (s.108 linked
+  transactions for SDLT — A20 only), §1.H (Wave 9 SDLT abolition + 3 surviving alternatives,
+  cross-border counter-anchor for both), §1.I (5% additional-dwellings surcharge,
+  cross-jurisdictional comparator with Scottish ADS 8%), §23.5 (Scottish ADS rate cite).
+
+Q&A: none raised. Bug #7 autonomous-work pattern held — no pause between picks after the
+initial acknowledgement line.
+
+§16.36 brief-statutory-citation cross-check gate: PASSED for both briefs.
+  A19's gate verified 8 cites (LBTT(S)A 2013 Sch 5 paras 1/2/6/13; LBTT(S)A 2013 Sch 2A
+  para 4(2) 8% ADS via SSI 2024/367; F(No.2)A 2024 s.7 verbatim; FA 2003 Sch 4ZA Table A
+  5%-uplift bands per FA 2025 s.51; LTTA 2017 Sch 13 cross-border note).
+  A20's gate verified 10 cites (the A19 set plus FA 2003 Sch 6B pre-abolition snapshot;
+  FA 2003 s.116(7) + Sch 15 para 10 + s.45 + s.108 surviving SDLT alternatives).
+
+  Stage 1 drift catch noted inline in both briefs: seed referenced "paras 1-7" for
+  LBTT(S)A 2013 Sch 5 where the consolidated text has paragraphs 1-30 (verified at
+  https://www.legislation.gov.uk/asp/2013/11/schedule/5 on 2026-05-26). Substantive
+  correctness of the seed's specific paragraph identifications preserved (paras 1, 2, 4,
+  5, 6, 7, 11, 12, 13 all sit within paras 1-30). Stage 2 extension supersedes; no
+  separate F-flag raised — the corrected position lives in the Stage 2 brief and the
+  RUN session writes against the full architecture.
+
+§16.31 URL liveness: Stage 2 swept 8 firm + commentary URLs across both briefs (Brodies,
+Burness Paull, Saffery, BDO, Crowe, Charles Russell Speechlys, RSM, ICAEW Tax Faculty,
+Revenue Scotland LBTT3015 sub-URL via two URL patterns). All returned 404 / 403 / off-topic
+/ index-only-no-MDR-article. Both briefs use the no-Stage-2-hits comment per the Stage 2
+template's fallback (Bug #3 + #5 lesson from Wave 8/9: do NOT invent plausible firm URLs).
+RUN-phase session-side WebSearch with explicit drift-catch filtering on (i) competitor
+pages mis-stating "Scotland never had MDR", (ii) competitor pages describing SDLT MDR as
+live, (iii) Welsh-side pages with pre-Feb-2025 or pre-Feb-2026 statutory framing.
+
+§16.35 per-write verification mandate carried forward into each brief's RUN-session
+workflow:
+  A19: verify LBTT(S)A 2013 Sch 5 paras 4 / 5 / 6 / 7 / 11 / 12 / 13 + Sch 2A para 4(2)
+  (8% ADS) + s.30 effective date + LBTT residential band table at write time before
+  quoting any per-dwelling figure in worked examples (current bands subject to
+  verification: nil to £145k; 2% to £250k; 5% to £325k; 10% to £750k; 12% above £750k).
+  Verify F(No.2)A 2024 s.7 + FA 2003 Sch 4ZA Table A.
+  A20: verify the A19 set plus FA 2003 s.116(7) + Sch 15 + s.45 + s.108. Verify Welsh
+  LTTA 2017 Sch 13 currency including post-Feb-2025 + post-Feb-2026 amendments are still
+  the operative state at write date.
+
+anti-templating cross-check (Stage 2 sub-agent, 2026-05-26):
+  Both briefs read as distinct roles. A19 leads with the devolved-tax framing (Scotland
+  + Revenue Scotland + LBTT, not HMRC). A20 leads with the diagnostic three-jurisdiction
+  question. FAQs differentiate: A19's FAQ set leans toward Scottish operational mechanics;
+  A20's FAQ set leans toward jurisdictional diagnosis + routing + the SDLT-alternatives
+  matrix. Worked examples differentiate: A19 has standalone-Scottish + cross-border-with-
+  English + linked-transactions-Sch-5-para-5; A20 has three-jurisdiction-comparator-at-4-
+  dwellings + transitional-cohort-SDLT-survives + s.116(7)-6+-dwellings-post-abolition.
+  No templating drift detected.
+
+ready for: RUN dispatch when conductor closes F-10 + signs off Stage 2 batch.
