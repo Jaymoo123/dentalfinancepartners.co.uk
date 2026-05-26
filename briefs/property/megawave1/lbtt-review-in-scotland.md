@@ -45,8 +45,198 @@ Anti-templating: lead with "Scotland's property-transfer tax has changed four ti
 - HMRC manuals to cite: none directly - LBTT is Revenue Scotland jurisdiction. Use Revenue Scotland LBTT manual sections and Scottish Fiscal Commission publications.
 - Case-law to ground: Scottish Tax Tribunal decisions on landmark LBTT issues (the Archer UK Limited v Revenue Scotland lease-extension case is already a sibling brief; the FTT v Upper Tribunal Scotland line on Sch 18 trust characterisation; ADS replacement-window cases for the 36-month timing rules). Stage 2 search for the leading 5-7 Scottish Tax Tribunal LBTT decisions to anchor the case-law arc.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 - voice (no em-dashes; commas, parentheses, full stops, middle dots only); lead-gen architecture (LeadForm auto-injected; aside-styled CTAs only); schema (FAQs in frontmatter; FAQPage JSON-LD auto-emitted; target 10-12 for this state-of-the-tax review page given the breadth); cannibalisation cross-link discipline (link to EVERY Scottish-LBTT deep page on the site); house-position anchors (§23.4 + §23.5 + §23.6 + §23.8 + §23.9 + §23.10 + §23.11); quality bar (word count 2,800-3,400 for this review-essay tier; FAQs 10-12; external authority links 8-10; build clean; six verifications); anti-templating discipline (lead with the four-ADS-uprating chronology rather than the LBTT-replaced-SDLT historical opener; vary H2s - chronologically led for historical sections, policy-question-led for forward-looking sections).]
+## Competitor URLs (Stage 2 populated 2026-05-26; URL liveness verified at fetch time per §16.31)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the four ADS upratings 3%/4%/6%/8% with dates; (b) the Scottish vs English MDR divergence post-1-June-2024; (c) cross-jurisdictional comparison numbers; (d) policy-direction commentary (where competitor essays go beyond mechanics). RUN session flags any competitor copy that uses the legacy ADS rates as current (6% / 4% / 3% / 18-month repayment window) — high-frequency drift.
+
+- https://revenue.scot/news-publications/news/scottish-budget-2025-2026-changes-land-buildings (Revenue Scotland announcement of ADS uplift to 8%, authoritative)
+- https://www.gov.scot/publications/scottish-budget-2026-2027/pages/4/ (Scottish Budget 2026/27 LBTT freeze confirmation)
+- https://www.fiscalcommission.scot/publications/ (Scottish Fiscal Commission LBTT forecast publication — RUN session locates the most recent forecast)
+- https://www.brodies.com/insights/tax/lbtt-state-of-the-tax-2026/ (Brodies LLP state-of-LBTT review)
+- https://www.burnesspaull.com/insights/lbtt-ads-uplift-and-mdr-divergence/ (Burness Paull policy commentary)
+- https://www.lindsays.co.uk/news-and-insights/blog/lbtt-after-the-2024-uplift (Lindsays editorial-tone review)
+- https://www.icas.com/professional-resources/tax/scottish-taxes/lbtt (ICAS Scottish tax resources for adviser-tone reference)
+
+**Borrowable patterns:** ADS-chronology chart layout; four-nation comparison table; policy-question structure. Do NOT borrow stale ADS rates or any "MDR abolished UK-wide" framing.
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "LBTT review", "Scottish LBTT 2026", "LBTT vs SDLT comparison", "ADS rate Scotland", "Scottish property tax 2026", "LBTT changes", "Scottish stamp duty review", "LBTT MDR Scotland".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (cannibal score ~0.40, the rate-table-focused page; **cross-link as the rates deep-dive**; B6 differs by being editorial-essay-with-policy-arc rather than rate-table-focused)
+- `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (~0.30, ADS mechanics; **cross-link as the ADS deep-dive**)
+- `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` (~0.18, FTB relief mechanics; **cross-link from the FTB section**)
+- `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics` (~0.15, bare-trust corporate-restructuring; **cross-link from the corporate angle**)
+- `scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision` (~0.12, corporate-buyer pathway; **cross-link from the corporate angle**)
+- M1-B sibling briefs (all cross-link UP to B6 as the cluster hub): `essential-guide-for-first-time-homebuyers-in-scotland` (B1), `bare-trusts-and-lbtt-relief-availability` (B4), `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` (B5), `limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence` (B7), `understanding-alternative-finance-arrangements-under-lbtt` (B10).
+- Cross-jurisdictional: `land-transaction-tax-a-complete-guide` (B3, the Welsh-LTT master hub), SDLT MDR abolition page.
+
+**Cannibalisation discipline:**
+- B6 is the **editorial-review cluster hub** — the role of B6 is to give the policy-arc orientation that no mechanics-deep page provides. Do NOT re-walk any single mechanic in depth; refer outward.
+- Use the closing "where to read more" pattern at each H2 closing to link DOWN to the relevant mechanics-deep page.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing slug matches B6's state-of-the-tax review scope. No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-26; session selects 8-10)
+
+**Statutory (LBTT(S)A 2013):**
+- LBTT(S)A 2013 contents (verified verbatim 2026-05-26): https://www.legislation.gov.uk/asp/2013/11/contents
+- LBTT(S)A 2013 s.10 (effective date): https://www.legislation.gov.uk/asp/2013/11/section/10
+- LBTT(S)A 2013 s.24 (residential rate-setting power): https://www.legislation.gov.uk/asp/2013/11/section/24
+- LBTT(S)A 2013 s.29 (return + 30-day filing window): https://www.legislation.gov.uk/asp/2013/11/section/29
+- LBTT(S)A 2013 s.59(8) (six-or-more-dwellings non-residential): https://www.legislation.gov.uk/asp/2013/11/section/59
+- LBTT(S)A 2013 Sch 2A (ADS framework): https://www.legislation.gov.uk/asp/2013/11/schedule/2A
+- LBTT(S)A 2013 Sch 4A (FTB relief): https://www.legislation.gov.uk/asp/2013/11/schedule/4A
+- LBTT(S)A 2013 Sch 5 (MDR, retained in Scotland): https://www.legislation.gov.uk/asp/2013/11/schedule/5
+- LBTT(S)A 2013 Sch 11 (reconstruction + acquisition reliefs): https://www.legislation.gov.uk/asp/2013/11/schedule/11
+
+**Commencement + ADS history:**
+- Scotland Act 2012 Part 3 (devolution of property-transfer tax): https://www.legislation.gov.uk/ukpga/2012/11/contents
+- LBTT (Amendment) (Scotland) Act 2016 (ADS introduction at 3%): https://www.legislation.gov.uk/asp/2016/11
+- Coronavirus (Scotland) (No.2) Act 2020 (ADS repayment window 18 to 36 months, made permanent)
+- Finance (No.2) Act 2024 s.7 (SDLT MDR abolition — for contrast with retained Scottish MDR): https://www.legislation.gov.uk/ukpga/2024/12/section/7
+
+**Revenue Scotland + Scottish Government:**
+- Revenue Scotland ADS announcement (8% from 5 December 2024): https://revenue.scot/news-publications/news/scottish-budget-2025-2026-changes-land-buildings
+- Revenue Scotland LBTT main page: https://revenue.scot/taxes/land-buildings-transaction-tax
+- Scottish Budget 2026/27 (LBTT freeze): https://www.gov.scot/publications/scottish-budget-2026-2027/pages/4/
+
+**Scottish Fiscal Commission:**
+- Scottish Fiscal Commission LBTT forecast publication (RUN session locates the most recent edition): https://www.fiscalcommission.scot/publications/
+
+**Cross-references in house_positions.md:** §23.4 main LBTT residential rates 2026/27 + Scottish FTB relief; §23.5 ADS at 8% from 5 December 2024 + full ADS history (3% / 4% / 6% / 8% across four upratings); §23.6 Scottish MDR retained + reliefs catalogue + non-residential bands; §23.8 cross-jurisdictional comparison table; §23.9 PTP angles; §23.10 citations; §23.11 do-not-write list (full).
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + revenue.scot + gov.scot + fiscalcommission.scot: (a) the four ADS upratings dates and rates (3% from 1 April 2016; 4% from 25 January 2019; 6% from 16 December 2022; 8% from 5 December 2024); (b) the Scottish Budget 2026/27 LBTT-rates-frozen confirmation; (c) the LBTT MDR retention (NOT abolished) under Sch 5; (d) the SDLT MDR abolition under F(No.2)A 2024 s.7 for contrast; (e) the 36-month ADS repayment window (NOT 18 months); (f) the cross-jurisdictional comparison numbers (nil bands, surcharge rates, FTB regimes); (g) the most recent Scottish Fiscal Commission LBTT forecast date.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Editorial-essay tone, balanced policy-commentary stance — signpost policy questions without advocating positions.
+- Worked examples using ADS chronology and four-nation comparison numbers.
+- Anonymised personas only.
+- Named statute every time a rule is asserted (LBTT(S)A 2013 with section/schedule; ADS history with Amendment Act citations).
+- Use "Scotland" / "Scottish" precisely; in cross-jurisdictional sections, the four-nation language (England + NI / Wales / Scotland / NI-uses-SDLT) must be precise.
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 2 to 3 inline `<aside>` CTAs:
+  - After the ADS-chronology section (high-intent: investor reckoning with 8% rate on next acquisition)
+  - After the MDR-divergence section (high-intent: portfolio investor weighing Scottish vs English acquisition)
+  - Optionally after the cross-jurisdictional-comparison section (high-intent: cross-border landlord)
+- Vary opening; lead with "Scotland's property-transfer tax has changed four times in ten years through ADS upratings alone..." NOT with "LBTT was introduced on 1 April 2015...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 12 to 14 for this review-essay tier (cluster breadth). Include explicit FAQs on ADS history, MDR divergence, four-nation contrast.
+
+### Cannibalisation
+- B6 is the cluster hub — cross-link DOWN to every Scottish-LBTT deep page:
+  - `scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide`
+  - `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers`
+  - `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics`
+  - `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics`
+  - `scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision`
+- Cross-link sibling M1-B briefs: B1 FTB-onboarding; B4 bare-trusts-and-reliefs; B5 acquisition-relief; B7 ADS-repayment-FTT; B10 alternative-finance.
+- Cross-link Welsh-LTT hub (`land-transaction-tax-a-complete-guide`, B3) and SDLT MDR abolition page.
+
+### House positions
+- §23.4 + §23.5 + §23.6 + §23.8 + §23.9 + §23.10 + §23.11 all primary anchors for the review scope.
+
+### Quality bar
+- Body word count: 2,800 to 3,400 (review-essay tier).
+- FAQs: 12 to 14.
+- External authority links: 8 to 10.
+- Build clean.
+- All six verifications.
+
+### Anti-templating
+- Differentiator is the **state-of-the-tax review-essay structure** with ADS-chronology spine and policy-question forward-looking sections. Write to it.
+- Lead with the ADS-uprating chronology (3% / 4% / 6% / 8% across 2016-2024) — NOT with "LBTT was introduced on 1 April 2015...".
+- Vary H2s: chronologically led for historical sections ("LBTT in 2015", "ADS in 2016 to 2024", "MDR retention through SDLT abolition"); policy-question-led for forward-looking sections ("Where the rates sit in 2026/27", "Where the policy direction points", "Where the cross-jurisdictional arbitrage runs", "Where the next decisions sit").
+- Vary FAQ phrasing across pages.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. §23.4 + §23.5 + §23.6 + §23.8 + §23.9 + §23.10 + §23.11 all primary.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs via httpx + BeautifulSoup. Flag any legacy ADS rates or "MDR abolished UK-wide" framing.
+5. Read closest existing pages (all six Scottish-LBTT-mechanics-deep pages + sibling M1-B briefs).
+6. Plan H2 outline + meta + FAQs + CTA placements. ADS-chronology spine then policy-questions arc.
+7. Verify factual claims; **per §16.35: re-verify the four ADS upratings dates and rates; re-verify Scottish Budget 2026/27 LBTT-rates-frozen position; re-verify Scottish MDR retention under Sch 5; re-verify SDLT MDR abolition under F(No.2)A 2024 s.7; re-verify the 36-month ADS repayment window; locate and cite the most recent Scottish Fiscal Commission LBTT forecast**.
+8. Fetch hero image. Query suggestion: "scottish parliament" or "edinburgh property market" or "scotland map property".
+9. Write markdown at `Property/web/content/blog/lbtt-review-in-scotland.md` with full frontmatter.
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register in `monitored_pages`.
+14. **Commit on `property-megawave1-b` branch.** Commit message: `MegaWave 1 RUN B: lbtt-review-in-scotland page (M1-B-B1)`.
+15. Fill in the work-log below.
+16. Mark ✅ done in tracker.
+17. Append site-wide flags to `megawave1_site_wide_flags.md` (F-50 to F-99).
+18. Append discoveries to `megawave1_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review
+- 
+
+### Citations added
+- 
+
+### Internal links added
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave1_site_wide_flags.md
+- 
+
+### 2-3 sentence summary
+-

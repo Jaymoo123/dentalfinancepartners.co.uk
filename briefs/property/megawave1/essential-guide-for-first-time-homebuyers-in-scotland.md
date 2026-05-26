@@ -43,8 +43,188 @@ This page does NOT supersede the dedicated rates-and-bands page or the FTB-mecha
 - HMRC manuals to cite: none directly - LBTT is Revenue Scotland's jurisdiction. Use Revenue Scotland LBTT3001+ manual sections instead. SDLTM is irrelevant for this page (and Stage 2 must NOT cite SDLT manuals for Scottish content - common error).
 - Case-law to ground: limited at FTB level - the Scottish Tax Tribunal has a handful of FTB-relief denial cases that are useful for the "intent to occupy" test in close-call scenarios. Stage 2 search Tribunal Decisions site for "first-time buyer" within LBTT appeals.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 - voice (no em-dashes; commas, parentheses, full stops, middle dots only); lead-gen architecture (LeadForm auto-injected; aside-styled CTAs only); schema (FAQs in frontmatter; FAQPage JSON-LD auto-emitted; target 8-10 for this onboarding-tier page); cannibalisation cross-link discipline (cross-link to mechanics page, rates page, ADS page, Welsh comparison page); house-position anchors (§23.4 + §23.5 + §23.8 + §23.10); quality bar (word count 2,400-2,800 for this onboarding tier; FAQs 8-10; external authority links 6-8; build clean; six verifications); anti-templating discipline (lead with the buyer's question "I'm buying my first home in Scotland - what tax will I pay" NOT with "Land and Buildings Transaction Tax was introduced..."; vary H2s from the mechanics page structure - timeline-led rather than test-led).]
+## Competitor URLs (Stage 2 populated 2026-05-26; URL liveness verified at fetch time per §16.31)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the £145k/£175k nil-band distinction; (b) the worldwide previous-ownership test under Sch 4A; (c) the joint-buyer-all-must-be-FTB rule; (d) the £600 maximum saving figure; (e) the 30-day Revenue Scotland return discipline; (f) the FTB-vs-ADS conflict for buyers with overseas property. Most competitor Scottish full-service-firm content treats LBTT FTB relief as "the Scottish version of England's SDLT FTB relief", which is structurally wrong (different nil-band uplift, no upper property-value ceiling, worldwide test, max saving differs); RUN session flags any competitor copy that asserts an upper property-value cap as a stale-content drift.
+
+- https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief (Revenue Scotland LBTT3048, authoritative source)
+- https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property (Revenue Scotland main residential rates page)
+- https://www.brodies.com/insights/tax/lbtt-first-time-buyer-relief-scotland/ (Brodies LLP buyer-explainer, strong working-detail content; check for £175k figure currency)
+- https://www.lindsays.co.uk/news-and-insights/blog/buying-your-first-home-in-scotland (Lindsays first-home-buyer journey explainer)
+- https://www.andersonstrathern.co.uk/our-thinking/first-time-buyer-lbtt-relief/ (Anderson Strathern relief-mechanics explainer, for contrast on tone)
+
+**Borrowable patterns:** worked-example £180k / £225k / £275k / £350k tables; joint-buyer trap framing; replacement-of-main-residence cross-link discipline. Do NOT borrow any competitor's assertion of an upper property-value cap on Scottish FTB relief (drift catch; Scottish FTB relief has no cap, unlike England's £500k withdrawal).
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "first time buyer Scotland", "LBTT first time buyer", "Scottish first home tax", "first home Scotland stamp duty", "LBTT first time buyer relief", "buying first house Scotland tax", "first home LBTT calculator".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` (cannibal score ~0.42, the relief-mechanics deep page; **cross-link as the mechanics deep-dive**; B1 sits upstream as the buyer-journey onboarding layer; differentiation = timeline-led journey rather than statutory-test-led mechanics)
+- `scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (~0.35, the rate-table page for all residential buyers; **cross-link as the rate-table reference**; differentiation = B1 is FTB-specific journey, rates page is general)
+- `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (~0.18, the ADS page; **cross-link from the foreign-property edge case** where FTB applicant owns a flat overseas and gets both denied FTB AND charged ADS)
+- `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` (~0.16, the cross-jurisdictional comparison; **cross-link from the cross-jurisdictional FAQ**)
+- `applicable-sdlt-rates-for-first-time-buyers` (M1-A pick A7, sibling FTB-rates-for-England page; cross-link as the England equivalent for comparison readers)
+
+**Cannibalisation discipline:**
+- Cross-link the mechanics page (`scottish-lbtt-first-time-buyer-relief-eligibility-mechanics`) heavily; do NOT re-walk the Sch 4A test in this brief, refer to the mechanics page for deep test treatment.
+- Cross-link the rates-and-bands page (`scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide`); do NOT reproduce the full main-residential rate table, show the FTB-modified £175k uplift instead.
+- The site has NO existing dedicated "first-time-buyer journey in Scotland" page; this brief is the canonical entry point and cross-links downward to the three mechanics pages above.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing slug matches B1's scope. No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-26; session selects 6-8)
+
+**Statutory (LBTT(S)A 2013):**
+- LBTT(S)A 2013 Sch 4A (FTB relief, full text; verified 2026-05-26 confirms £175,000 nil-band uplift verbatim): https://www.legislation.gov.uk/asp/2013/11/schedule/4A
+- LBTT(S)A 2013 s.10 (effective date, substantial-performance test, mirrors FA 2003 s.44): https://www.legislation.gov.uk/asp/2013/11/section/10
+- LBTT(S)A 2013 s.24 (residential rate-setting power): https://www.legislation.gov.uk/asp/2013/11/section/24
+- LBTT(S)A 2013 s.29 (return + 30-day filing window): https://www.legislation.gov.uk/asp/2013/11/section/29
+- LBTT(S)A 2013 Sch 2A (Additional Dwelling Supplement framework): https://www.legislation.gov.uk/asp/2013/11/schedule/2A
+- Land and Buildings Transaction Tax (First-Time Buyer Relief) (Scotland) Order 2018 (introduced Sch 4A): https://www.legislation.gov.uk/ssi/2018/222
+
+**Revenue Scotland guidance (authoritative for LBTT, NOT HMRC SDLTM):**
+- Revenue Scotland LBTT3048 (FTB relief operational guidance): https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief
+- Revenue Scotland LBTT residential rates page: https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property
+- Revenue Scotland LBTT ADS overview: https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads
+
+**Scottish Budget / commencement:**
+- Scottish Budget 2026/27 (LBTT rates frozen): https://www.gov.scot/publications/scottish-budget-2026-2027/pages/4/
+
+**Cross-references in house_positions.md:** §23.4 main residential rates 2026/27 + Scottish FTB-relief subsection (£175k nil-band uplift, £600 maximum saving, no upper ceiling, worldwide previous-ownership test); §23.5 ADS at 8% from 5 December 2024; §23.8 cross-jurisdictional comparison table; §23.10 citation block; §23.11 do-not-write list (specifically the "Welsh / Scottish non-resident surcharge" misconception and the "ADS is 6%" stale figure).
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + revenue.scot: (a) Sch 4A £175k nil-band uplift verbatim; (b) £600 maximum saving figure derivation (2% × £30k slice from £145k to £175k); (c) Scottish Budget 2026/27 LBTT-rates-frozen position; (d) ADS rate at 8% from 5 December 2024; (e) the 30-day return discipline under s.29 (NOT 14 days as in England); (f) the worldwide previous-ownership test wording, any prior major-interest acquisition anywhere disqualifies.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Onboarding tone, plain-language, journey-led, addressed to the first-time buyer (not to their adviser).
+- Specific worked examples using £150k / £180k / £225k / £275k / £350k Scottish-FTB price points (NOT the £450k / £550k English-FTB price points which are above Scotland's typical FTB market).
+- Anonymised personas only (no real client names).
+- Named statute every time a rate or rule is asserted (LBTT(S)A 2013 Sch 4A; s.29; Sch 2A).
+- Use "Scotland" / "Scottish" precisely; do NOT slip into "the UK" framing when describing LBTT (LBTT is Scottish jurisdiction only).
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 2 to 3 inline `<aside>` CTAs:
+  - After the "what rate of LBTT will I pay" worked-examples block (high-intent: buyer comparing scenarios)
+  - After the "could I be hit by ADS" overseas-property edge case (high-intent: buyer with overseas property realising the FTB-ADS double-hit risk)
+  - Optionally after the joint-buyer trap section (high-intent: buyer with a partner who owns another dwelling)
+- Vary opening; do NOT lead with "Land and Buildings Transaction Tax was introduced...". Lead with the buyer's actual question, "Buying your first home in Scotland in 2026/27", and walk forward.
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 10 to 12 for this onboarding tier. Include explicit FAQ on the cross-border-FTB-relief-loss trap (buyer who owns a flat in London is NOT a FTB in Scotland either).
+
+### Cannibalisation
+- Cross-link `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` as the mechanics deep-dive.
+- Cross-link `scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` as the rate-table reference.
+- Cross-link `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` from the foreign-property edge case.
+- Cross-link `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` from the cross-jurisdictional FAQ.
+- Cross-link `applicable-sdlt-rates-for-first-time-buyers` (M1-A A7) for the England-comparison reader.
+- Cross-link the future M1-B `lbtt-review-in-scotland` (B6) for rate-history readers.
+
+### House positions
+- §23.4 primary (main residential LBTT rates 2026/27 + Scottish FTB-relief subsection); verbatim figures.
+- §23.5 (ADS at 8% from 5 December 2024); verbatim figure.
+- §23.8 (cross-jurisdictional table); use as the comparison anchor.
+- §23.10 (citations); use the revenue.scot + legislation.gov.uk + gov.scot links above.
+- §23.11 (do-not-write list); honour all bullets (no non-resident surcharge in Scotland; no FTB upper ceiling; no flat-surcharge ADS framing).
+
+### Quality bar
+- Body word count: 2,400 to 2,800 (onboarding tier; below the pillar-page 3,500+).
+- FAQs: 10 to 12.
+- External authority links: 6 to 8.
+- Build clean: `cd Property/web && npm run build`.
+- All six verifications (0 em-dashes; 0 Tailwind classes; FAQ count match; meta title under 62; meta description under 158; internal links resolve).
+
+### Anti-templating
+- Differentiator is the **journey-led onboarding** structure (timeline through buyer milestones), different from the mechanics page's statutory-test-led structure. Write to it.
+- Lead with the four facts a Scottish FTB must know (LBTT not SDLT; £145k nil / £175k FTB-uplift; £600 max saving; 30-day return), NOT with "Land and Buildings Transaction Tax was introduced..." which is the stale competitor pattern.
+- Vary H2s from the mechanics page and rates page; milestone-led ("Before you make an offer", "Between offer and missives", "Between missives and settlement", "After settlement") rather than mechanic-led ("Eligibility", "Application", "Joint-buyer rule").
+- Vary FAQ phrasing; do NOT use "Is X tax deductible?" structure repeated across pages.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. §23.4 primary; §23.5 + §23.8 + §23.10 + §23.11 adjacent.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs via httpx + BeautifulSoup. Note any drift against §23.4 / §23.5.
+5. Read closest existing pages: `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics`, `scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide`, `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers`, `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland`, `applicable-sdlt-rates-for-first-time-buyers`. Decide differentiation (journey-led upstream layer).
+6. Plan H2 outline + meta + FAQs + CTA placements. Use milestone-led H2 structure.
+7. Verify factual claims; **per §16.35: re-verify £175k FTB nil-band uplift via Sch 4A at legislation.gov.uk; £600 max saving derivation; 8% ADS rate at revenue.scot; 30-day return window at s.29; LBTT-rates-frozen 2026/27 position at gov.scot Scottish Budget 2026/27 page**.
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`. Query suggestion: "edinburgh tenement first home" or "scottish new build keys".
+9. Write markdown at `Property/web/content/blog/essential-guide-for-first-time-homebuyers-in-scotland.md` with full frontmatter (slug, category, title, metaTitle, metaDescription, faqs, reviewer, dates, hero image).
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on `property-megawave1-b` branch (per-page commit; do NOT merge to main).** Commit message format: `MegaWave 1 RUN B: essential-guide-for-first-time-homebuyers-in-scotland page (M1-B-B1)`.
+15. Fill in the per-page work-log below.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append any site-wide issues to `megawave1_site_wide_flags.md` (F-50 to F-99 range for Bucket B).
+18. Append discoveries to `megawave1_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review
+- 
+
+### Citations added
+- 
+
+### Internal links added
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave1_site_wide_flags.md
+- 
+
+### 2-3 sentence summary
+-

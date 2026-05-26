@@ -46,8 +46,203 @@ Anti-templating: lead with "Acquisition relief reduces LBTT to a prescribed prop
 - HMRC manuals to cite: SDLTM23000+ (SDLT Sch 7 acquisition-relief manual sections) for the cross-jurisdictional comparison; Revenue Scotland LBTT3000+ for the Scottish position. SDLT manual is only useful as comparison material and must not be conflated with the Scottish rules.
 - Case-law to ground: SDLT-side authorities on "main purpose" anti-avoidance for Sch 7 Part 2 (e.g. Project Blue Ltd v HMRC [2018] UKSC 30 broader s.75A line); Scottish Tax Tribunal cases on Sch 11 if any reported. Stage 2 search Scottish Tax Tribunal for Sch 11 / acquisition-relief decisions.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 - voice (no em-dashes; commas, parentheses, full stops, middle dots only); lead-gen architecture (LeadForm auto-injected; aside-styled CTAs only); schema (FAQs in frontmatter; FAQPage JSON-LD auto-emitted; target 8-10 for this operational page); cannibalisation cross-link discipline (link to bare-trust-and-acquisition-relief deep page, corporate-buyer pathway page, sibling bare-trusts page); house-position anchors (§23.4 + §23.5 + §23.6 + §23.10); quality bar (word count 2,600-3,000 for this corporate-restructure-mechanics tier; FAQs 8-10; external authority links 6-8; build clean; six verifications); anti-templating discipline (lead with "Acquisition relief reduces LBTT to a prescribed proportion when..." NOT "Acquisition relief is a relief that..."; vary H2s from the bare-trust corporate-restructuring page - condition-by-condition walkthrough of para 7 rather than bare-trust-mechanic-flow).]
+## Stage 2 verification note (§16.36 statutory cross-check)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+**Critical citation verified at Stage 2 (2026-05-26):** LBTT(S)A 2013 Sch 11 Part 3 is the correct anchor for Scottish acquisition relief. Per the §16.36 lesson of record: "B10 brief referenced FA 2003 Sch 7 Part 2 (the English SDLT parallel) for Scottish acquisition relief when the operative Scottish base is LBTT(S)A 2013 Sch 11." Stage 1 seed correctly anchors to Sch 11 — RUN session must NOT propagate the SDLT Sch 7 Part 2 cross-reference as the Scottish anchor.
+
+**Prescribed-proportion verification flagged for RUN:** the Sch 11 para 6(3) prescribed proportion is set by Scottish Statutory Instrument. RUN session must locate the current operative SSI at write time and quote the verbatim percentage. Stage 1 seed historically aligns with the SDLT 0.5% acquisition-relief rate (FA 2003 Sch 7 para 9(2)) but does NOT lock the Scottish figure. RUN session WebFetches the latest SSI under LBTT(S)A 2013 Sch 11 para 6(3) before drafting and reports the verbatim figure; if no SSI has set the proportion (gap), RUN session escalates as Q-N.
+
+---
+
+## Competitor URLs (Stage 2 populated 2026-05-26; URL liveness verified at fetch time per §16.31)
+
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the five qualifying conditions in Sch 11 para 7; (b) the prescribed-proportion rate (which SSI sets it; current %); (c) the reduction-vs-exemption distinction between Sch 11 Part 3 and Part 2; (d) the ADS interaction (Sch 11 reduces standard LBTT, not ADS); (e) the s.59(8) six-or-more-dwellings interaction. RUN session flags any competitor copy that calls Sch 11 Part 3 an "exemption" (it is a reduction, not an exemption) or cites FA 2003 Sch 7 Part 2 as the operative Scottish authority (drift catch per §16.36 lesson).
+
+- https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs (Revenue Scotland LBTT3010 reliefs index — authoritative source)
+- https://www.brodies.com/insights/tax/lbtt-acquisition-relief-corporate-takeovers/ (Brodies LLP acquisition-relief explainer)
+- https://www.burnesspaull.com/insights/lbtt-acquisition-relief-corporate-restructure/ (Burness Paull corporate-restructure guide)
+- https://www.pinsentmasons.com/out-law/guides/lbtt-acquisition-relief (Pinsent Masons Sch 11 deep guide)
+- https://www.shepwedd.com/knowledge/lbtt-corporate-restructure-acquisition-relief/ (Shepherd and Wedderburn corporate-restructure guide)
+
+**Borrowable patterns:** five-conditions worked-example table; prescribed-proportion-vs-reconstruction-exemption contrast; SDLT-Sch-7-Part-2-vs-LBTT-Sch-11-Part-3 cross-jurisdictional comparison. Do NOT borrow any framing that treats Sch 11 Part 3 as a full exemption (drift catch).
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "LBTT acquisition relief", "Sch 11 LBTT corporate", "Scottish acquisition relief property", "LBTT corporate takeover", "Scottish stamp duty group restructure", "LBTT non-redeemable shares relief", "Scottish property tax restructure".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics` (cannibal score ~0.55, the bare-trust-AND-acquisition-relief deep page focused on the bare-trust mechanics through which acquisition relief commonly flows; **cross-link as the bare-trust-and-acquisition-relief deep-dive**; B5 sits adjacent with the Sch 11 Part 3 condition-walkthrough)
+- `scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision` (~0.20, the corporate-buyer-pathway page; **cross-link as the corporate-buyer decision tree**)
+- M1-B sibling `bare-trusts-and-lbtt-relief-availability` (B4, the relief-landscape page; cross-link UP for cluster orientation)
+- M1-B sibling `lbtt-review-in-scotland` (B6, future hub; cross-link UP)
+- M1-A sibling `land-and-buildings-transaction-tax-multiple-dwellings-relief` (A19) for the MDR-interaction angle.
+
+**Cannibalisation discipline:**
+- B5 is the **Sch 11 Part 3 condition-walkthrough deep page** — the corporate-restructuring page (existing) is the bare-trust-routed corporate-restructure mechanics page; B4 (sibling) is the broader bare-trust-and-relief-landscape page; B6 (sibling) is the cluster hub. B5 occupies a distinct slot: Sch 11 Part 3 conditions in depth, with cross-links outward to the bare-trust-routed mechanics and the broader landscape.
+- Do NOT duplicate the bare-trust look-through walkthrough — refer to B4 and the corporate-restructuring page.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing slug matches B5's Sch 11 Part 3 condition-walkthrough scope. No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-26; session selects 6-8)
+
+**Statutory (LBTT(S)A 2013):**
+- LBTT(S)A 2013 Sch 11 (reconstruction + acquisition relief, full text; verified 2026-05-26): https://www.legislation.gov.uk/asp/2013/11/schedule/11
+- LBTT(S)A 2013 Sch 11 para 7 (five qualifying conditions): https://www.legislation.gov.uk/asp/2013/11/schedule/11
+- LBTT(S)A 2013 Sch 10 (group relief, parallel relief): https://www.legislation.gov.uk/asp/2013/11/schedule/10
+- LBTT(S)A 2013 Sch 18 Part 3 (bare-trust look-through for nominee-held acquisitions): https://www.legislation.gov.uk/asp/2013/11/schedule/18
+- LBTT(S)A 2013 Sch 2A (ADS framework, NOT sheltered by Sch 11 Part 3): https://www.legislation.gov.uk/asp/2013/11/schedule/2A
+- LBTT(S)A 2013 s.59(8) (six-or-more-dwellings non-residential): https://www.legislation.gov.uk/asp/2013/11/section/59
+- Scottish Statutory Instrument setting the prescribed proportion (RUN session locates and cites the current SSI under Sch 11 para 6(3))
+
+**Cross-jurisdictional comparison (FA 2003):**
+- FA 2003 Sch 7 Part 2 (English SDLT acquisition relief, parallel structure): https://www.legislation.gov.uk/ukpga/2003/14/schedule/7
+- FA 2003 Sch 7 para 9(2) (English SDLT 0.5% acquisition-relief rate): for cross-jurisdictional contrast only — NOT the operative Scottish authority.
+
+**Revenue Scotland guidance (authoritative for LBTT, NOT HMRC SDLTM):**
+- Revenue Scotland LBTT3010+ reliefs manual: https://revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs
+- Revenue Scotland LBTT non-residential rates: https://revenue.scot/taxes/land-buildings-transaction-tax/non-residential-property
+- Revenue Scotland LBTT ADS overview: https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads
+
+**HMRC manual (cross-jurisdictional comparison only):**
+- SDLTM23000+ (Sch 7 acquisition-relief manual sections): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual
+
+**Case-law cross-reference:**
+- Project Blue Ltd v HMRC [2018] UKSC 30 — broader s.75A anti-avoidance line, illustrative for the bona-fide-commercial-reasons gate (cross-jurisdictional reference).
+
+**Cross-references in house_positions.md:** §23.4 main LBTT residential bands; §23.5 ADS at 8% from 5 December 2024; §23.6 Scottish non-residential bands + reliefs catalogue (Sch 11 Part 3 acquisition relief listed); §23.10 citations block; §23.11 do-not-write list. Note: §16.36 lesson of record explicitly identifies LBTT(S)A 2013 Sch 11 as the operative Scottish acquisition-relief base — Sch 7 Part 2 of FA 2003 is the English parallel only.
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + revenue.scot: (a) Sch 11 Part 3 (acquisition relief) verbatim; (b) Sch 11 para 7 five qualifying conditions verbatim; (c) the current Scottish Statutory Instrument setting the prescribed proportion under para 6(3) — DO NOT lock "0.5%" without an SSI cite; (d) the reduction-vs-exemption distinction between Part 3 and Part 2; (e) the ADS interaction (Sch 11 reduces standard LBTT only); (f) the s.59(8) six-or-more-dwellings interaction; (g) Sch 11 para 7(4) anti-avoidance carve-out; (h) §16.36 lesson — cite Sch 11 NOT FA 2003 Sch 7 Part 2 as the Scottish authority.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Operational corporate-tax-adviser tone — written for the practitioner running the restructure, NOT the layperson.
+- Specific worked examples using a corporate-property-business takeover at consideration £2m / £5m / £10m with mixed share-plus-cash consideration.
+- Anonymised personas only.
+- Named statute every time a condition or test is asserted (LBTT(S)A 2013 Sch 11 Part 3 paras 6, 7; Sch 10; Sch 2A; s.59(8)).
+- Use "Scotland" / "Scottish" precisely; do NOT slip into "the UK" framing.
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 2 to 3 inline `<aside>` CTAs:
+  - After the five-conditions walkthrough (high-intent: corporate adviser building the eligibility case)
+  - After the ADS-interaction section (high-intent: adviser realising acquisition relief does NOT shelter ADS on residential dwellings inside the acquired undertaking)
+  - Optionally after the bona-fide-commercial-reasons gate (high-intent: adviser considering pre-transaction Revenue Scotland clearance route)
+- Vary opening; lead with "Acquisition relief reduces LBTT to a prescribed proportion when five conditions are met" NOT "Acquisition relief is a relief that...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 10 to 12 for this operational tier. Include explicit FAQs on the reduction-vs-exemption distinction and the ADS non-shelter.
+
+### Cannibalisation
+- Cross-link `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics` as the bare-trust-mechanic deep-dive.
+- Cross-link `scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision` for the corporate-buyer pathway decision.
+- Cross-link M1-B B4 `bare-trusts-and-lbtt-relief-availability` for the relief-landscape orientation.
+- Cross-link M1-B B6 `lbtt-review-in-scotland` for cluster orientation.
+- Cross-link M1-A A19 `land-and-buildings-transaction-tax-multiple-dwellings-relief` for the MDR interaction.
+- Cross-link the SDLT acquisition-relief master page (if extant) for cross-jurisdictional comparison readers.
+
+### House positions
+- §23.4 main LBTT residential bands.
+- §23.5 (ADS at 8%) — note ADS is NOT sheltered.
+- §23.6 (non-residential bands + reliefs catalogue with Sch 11 verified).
+- §23.10 (citations).
+- §16.36 lesson — cite Sch 11 NOT FA 2003 Sch 7 Part 2 as Scottish authority.
+
+### Quality bar
+- Body word count: 2,600 to 3,000 (corporate-restructure-mechanics tier).
+- FAQs: 10 to 12.
+- External authority links: 6 to 8.
+- Build clean.
+- All six verifications.
+
+### Anti-templating
+- Differentiator is the **condition-by-condition Sch 11 para 7 walkthrough** — write to it.
+- Lead with the prescribed-proportion-reduction mechanic and the five-conditions structure, NOT with "Acquisition relief is a relief that...".
+- Vary H2s from the corporate-restructuring page (bare-trust-mechanic-led) and the corporate-buyer-pathway page (15%-vs-ADS-decision-led); B5 walks the five conditions in sequence with worked examples per condition.
+- Vary FAQ phrasing.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. §23.4 + §23.5 + §23.6 + §23.10 + §16.36 lesson.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end. **Note the Stage 2 critical citation: Sch 11 NOT FA 2003 Sch 7 Part 2 as Scottish authority.**
+4. Fetch competitor URLs via httpx + BeautifulSoup. Flag any "exemption" framing or Sch 7 Part 2 cross-reference as drift.
+5. Read closest existing pages.
+6. Plan H2 outline + meta + FAQs + CTA placements. Five-conditions-led structure.
+7. Verify factual claims; **per §16.35: WebFetch the current SSI under Sch 11 para 6(3) and quote the verbatim prescribed proportion; verify Sch 11 para 7 five conditions; verify ADS non-shelter; verify s.59(8) interaction**.
+8. Fetch hero image. Query suggestion: "edinburgh corporate building" or "scottish business handshake".
+9. Write markdown at `Property/web/content/blog/lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax.md` with full frontmatter.
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register in `monitored_pages`.
+14. **Commit on `property-megawave1-b` branch.** Commit message: `MegaWave 1 RUN B: lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax page (M1-B-B1)`.
+15. Fill in the work-log below.
+16. Mark ✅ done in tracker.
+17. Append site-wide flags to `megawave1_site_wide_flags.md` (F-50 to F-99). If the prescribed-proportion SSI is gap (no SSI located), raise as F-flag for HP §23 extension.
+18. Append discoveries to `megawave1_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review
+- 
+
+### Citations added
+- 
+
+### Internal links added
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave1_site_wide_flags.md
+- 
+
+### 2-3 sentence summary
+-
