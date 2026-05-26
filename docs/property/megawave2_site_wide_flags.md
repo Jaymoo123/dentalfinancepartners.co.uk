@@ -60,3 +60,30 @@ Flags never block. Sessions continue work after flagging.
 **How to apply.** Stage 2 writers on A7 (this seed) + future A16 / A18 / A10 hybrid-LLP / A14 / A15 LLP picks thread to §11.C once locked. If not locked by Stage 1b, each writer self-sources the same 8-10 PA/ITTOIA/TCGA/FA-2003-Sch-15 statutes + HMRC guidance independently — high drift risk across 5+ pages.
 
 ---
+
+## F-3 — HOUSE_POSITION_EXTENSION — Multi-company group operation (CT group relief + SDLT group relief + dividend conduit + change-of-ownership loss restriction)
+
+**Raised by:** M2-A-B2 sub-agent (Stage 1, 2026-05-26) via the A8 `eligible-groups-for-group-relief-under-uk-corporation-tax` seed.
+**Bucket:** A (Limited company / BTL company operation — multi-company group operation extension).
+**Touched picks:** A8 `eligible-groups-for-group-relief-under-uk-corporation-tax` (this seed); future MW2 Bucket A picks touching multi-SPV / portfolio-LtdCo territory (likely including A6 `corporation-tax-marginal-relief-uk-guide` — associated-company gating overlap with group operation though distinct legal test); existing pages covering CT group relief mechanics, SDLT group relief mechanics, group extraction mechanics, and change-of-ownership loss restrictions — currently spread across 4+ pages with no unifying HP anchor.
+
+**Issue.** §21 currently locks single-SPV operation only (§21.1 DLA mechanics, §21.2 share-class architecture, §21.3 rent-charging, §21.4 salary-vs-dividends, §21.5 FIC mechanics — all single-entity). Multi-company group operation is unlocked despite multiple existing pages covering slices of it:
+- CT group relief mechanics: existing `property-company-group-relief-corporation-tax` page.
+- SDLT group relief: existing `sdlt-group-relief-for-corporate-landlord-portfolios` + `sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth` (2 pages).
+- Group extraction via dividend conduit: existing `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics`.
+- Change-of-ownership loss restriction: not currently a dedicated page; covered piecemeal.
+
+The MW2 A8 seed (this batch) covers CT group-relief eligibility (the prior question to the mechanics page). Future MW2 picks may extend into associated-company territory (CTA 2010 s.18D-J for marginal relief gating — structurally similar but legally distinct from the 75% group test).
+
+**Proposed lock contents (Stage 1b conductor decision).** A new §21.8 "Multi-company group operation" mini-lock with:
+- §21.8.1 CT group relief 75% test (CTA 2010 s.131 + s.1154 + Sch 18 equity-holder overlay + s.156 worldwide-group); consortium relief (s.143+) limited to TRADING consortium-companies (property-investment JV LtdCos do NOT qualify; developer JVs may).
+- §21.8.2 SDLT group relief 75% test (FA 2003 Sch 7 para 1) — STRUCTURALLY SIMILAR but legally distinct from CT 75% test; 3-year intra-group claw-back at Sch 7 para 3 (covered in existing depth page).
+- §21.8.3 Dividend conduit through HoldCo: CTA 2009 Part 9A intra-group dividend exemption (s.931A+) — small-company exemption limited; large-company exemption broader; conditions for class-of-distribution exemption.
+- §21.8.4 Associated-company gating for marginal relief (CTA 2010 s.18D-J post-FA 2021) — counts all associated companies (broader than 75% group; control test under s.450+) when allocating the £50k/£250k marginal relief thresholds. **Critical interaction:** group structuring decisions optimising group relief may dilute marginal relief thresholds across associated companies.
+- §21.8.5 Change-of-ownership loss restriction (CTA 2010 Part 14 — s.673 + s.674 + s.676): operative when buying loss-making target SPVs. Pre-acquisition losses sterilised by s.673; post-acquisition losses restricted where major change in nature/conduct of trade per s.673 + s.674 + s.676.
+- §21.8.6 Property-investment-vs-trading line for group purposes: UK property businesses are typically investment (CTA 2009 Part 4). Consortium relief unavailable to investment JVs. Trading-investment line at CTA 2010 s.1124-1126 + ITTOIA 2005 s.5 + extensive case-law (cross-link to existing pages).
+- §21.8.7 Do not write: "100% ordinary share capital = automatic CT group relief" (Sch 18 overlay can disqualify); "CT and SDLT 75% tests are the same" (different regimes, different tests, different claw-back); "associated companies = 75% group" (associated-company test under s.450+ control test is broader); "consortium relief works for investment JVs" (trading-only); "intra-group dividends are always tax-free" (CTA 2009 s.931A+ class exemptions are conditional).
+
+**How to apply.** Stage 2 writers on A8 (this seed) + future associated-company / group-structure pages thread to §21.8 once locked. If not locked by Stage 1b, each writer self-sources CTA 2010 Part 5 + Sch 18 + FA 2003 Sch 7 + CTA 2009 Part 9A + CTA 2010 s.18D-J + CTA 2010 Part 14 independently — high drift risk across 4-6+ pages, especially around the CT/SDLT 75%-test distinction and the consortium-relief trading-only gate.
+
+---
