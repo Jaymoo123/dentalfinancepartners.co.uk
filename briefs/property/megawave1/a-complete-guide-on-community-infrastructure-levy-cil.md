@@ -62,5 +62,87 @@ Target length 2,400-2,800 words. Tone: technical-explainer + decision-grade advi
 ## Universal rules + workflow stubs (Stage 2 fills)
 [Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; technical-explainer + decision-grade-adviser tone; reader audience: property developers, landlords running conversions / extensions, self-builders, professional advisers); lead-gen architecture (LeadForm + aside-CTAs after the "Who pays?" section and after the "Reliefs and exemptions" section — high-intent reader often at a planning-permission grant stage with a CIL liability notice in hand); schema (FAQs in frontmatter; FAQPage JSON-LD; target 10-12 FAQs); cannibalisation cross-link discipline (no existing CIL pages — this is the cluster anchor; cross-link from any future Section 106 page back here as the framework primer); house-position anchors (NEW HP-LOCK §28 candidate); quality bar (word count 2,400-2,800; FAQs 10-12; external authority links 8-10; build clean; six verifications); anti-templating (lead with the **statutory location** — "CIL is a planning charge under the Planning Act 2008 Part 11 and the Community Infrastructure Levy Regulations 2010 (SI 2010/948), administered by the local planning authority on commencement of development. It is NOT a tax under FA 2003 (SDLT) or LGFA 1992 (council tax)" — NOT with "CIL is a tax on property development" which is statutorily wrong).]
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+## Stage 2 extension (M1-C-B1, locked 2026-05-26)
+
+### Stage 1b HP-lock status (drift catch from seed)
+
+Seed proposed "NEW HP-LOCK NEEDED, §28 CIL + s.106 planning-obligation framework." Verified against house_positions.md at 2026-05-26: §28 is occupied by the "Transactions in UK land + trading-vs-investment" Wave 8 cluster (CTA 2010 Part 8ZB / ITA 2007 Part 9A). **No CIL HP lock currently exists.** Raised as F-100 in megawave1_site_wide_flags.md (CIL HP-lock gap, anchors C1 only at this stage; deferred to conductor for §32 candidate slot allocation). RUN session anchors C1 to (a) verified statutory primary text + (b) cross-reference to existing §15 IHT cluster only where the CIL-asset interaction is relevant; do NOT cite a §28 CIL lock that does not exist.
+
+### Final competitor URLs (3-5, Stage 2 verifies live at write time per §16.31)
+
+1. https://www.gov.uk/guidance/community-infrastructure-levy (gov.uk Planning Practice Guidance, the operational definitive source)
+2. https://www.lichfields.uk/insights-blog/2023/march/community-infrastructure-levy-cil-an-introduction/ (Lichfields planning-consultancy primer, industry-leading framing)
+3. https://www.savills.co.uk/insight-and-opinion/savills-news/community-infrastructure-levy.aspx (Savills developer-side perspective on rate-cards + viability)
+4. https://www.local.gov.uk/publications/community-infrastructure-levy (LGA local-government perspective)
+5. https://www.rtpi.org.uk/research/2021/november/the-community-infrastructure-levy-the-good-the-bad-and-the-unfair/ (RTPI policy review, lessons from operating practice)
+
+### Final authority links (5-8 per §4.7)
+
+1. Planning Act 2008 Part 11 (legislation.gov.uk): https://www.legislation.gov.uk/ukpga/2008/29/part/11
+2. Community Infrastructure Levy Regulations 2010 (SI 2010/948) consolidated text: https://www.legislation.gov.uk/uksi/2010/948/contents
+3. Levelling-up and Regeneration Act 2023 Part 4 (CIL reform overlay): https://www.legislation.gov.uk/ukpga/2023/55/part/4
+4. Town and Country Planning Act 1990 s.106: https://www.legislation.gov.uk/ukpga/1990/8/section/106
+5. CIL Regulations 2010 reg 40 (chargeable amount): https://www.legislation.gov.uk/uksi/2010/948/regulation/40
+6. CIL Regulations 2010 reg 54A (self-build whole-house exemption): https://www.legislation.gov.uk/uksi/2010/948/regulation/54A
+7. gov.uk Planning Practice Guidance, CIL pages: https://www.gov.uk/guidance/community-infrastructure-levy
+8. HMRC SDLT Manual SDLTM00050 (SDLT scope, cross-reference for distinction): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00050
+
+### Closest existing pages (cannibalisation context per §4.5)
+
+Token-similarity assessment performed at Stage 2 against current main inventory:
+
+1. `property-business-rates-council-tax-landlords` (property-types-and-specialist-tax, similarity ~0.18). Different statutory regime (LGFA 1988 non-domestic rating + LGFA 1992 council tax). No CIL coverage. **Differentiation:** C1 is the first dedicated CIL page; no overlap risk. Light cross-link from C1 ("CIL is separate from business rates / council tax, which operate under LGFA 1988 + LGFA 1992 frameworks").
+2. `incorporating-developer-spv-property-development-limited-company` (incorporation-and-company-structures, similarity ~0.22). Touches developer tax architecture but on income / corporation tax, not planning levies. **Differentiation:** complementary cross-link as "CIL is a separate development-stage charge, on commencement of construction, independent of the corporation-tax mechanics of the SPV."
+3. `sdlt-on-purchase-of-property-for-development` (property-types-and-specialist-tax, similarity ~0.24). SDLT-on-acquisition vs CIL-on-commencement-of-development is the conceptually-adjacent topic. **Differentiation:** C1 places CIL as the post-acquisition development-stage charge; cross-link from C1 to the SDLT page ("SDLT applies at acquisition; CIL applies later at commencement of development, on the same site, no offset between the two").
+4. `landlord-conversion-of-property-tax-implications` (landlord-tax-essentials, similarity ~0.16). Touches conversions that may trigger CIL where new floorspace is created. **Differentiation:** C1 supplies the CIL coverage that this page lacks; cross-link from C1 explaining when a landlord conversion crosses the 100m² minor-development threshold.
+
+**No CANNIBAL flag.** C1 occupies clean topical space.
+
+### Redirect overlap
+
+No existing 429 middleware redirect overlaps the `a-complete-guide-on-community-infrastructure-levy-cil` slug. Verified by inspection of middleware.ts redirect map at Stage 2. No redirect action required at step 12.
+
+### Universal rules (per §4.8, verbatim)
+
+- **Voice.** No em-dashes (commas, parentheses, full stops, middle dots only). Specific. Named legislation. Anonymised personas (Patel-developer, Singh-self-builder, etc.). No real client names or specific firm / agency / tenant dispute references.
+- **Lead-gen architecture.** LeadForm auto-injected at footer by BlogPostRenderer; never duplicate in body. Inline `<aside>` CTAs at conversion moments only, after the "Who pays CIL?" section and after the "Reliefs and exemptions" section per Manager pre-decisions.
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes. `<aside>` styled by global CSS at `Property/web/src/app/globals.css`.
+- **FAQs.** 10-12 FAQs in frontmatter `faqs:` array; auto-emitted as FAQPage JSON-LD by the renderer. Vary phrasing per page.
+- **Cannibalisation discipline.** Read the closest-existing pages above before writing; differentiate by the framing differentiator; cross-link rather than overlap.
+- **Anti-templating.** Per-page framing differentiator (above). Vary H2 structure, opening sentences, FAQ phrasing across the wave.
+- **Quality bar.** Six verifications at step 11. Body word count 2,400-2,800.
+
+### 19-step per-page workflow (verbatim, per §7)
+
+1. Read `house_positions.md` once at session start.
+2. Claim ONE page in the wave tracker (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with httpx + BeautifulSoup.
+5. Read closest-existing pages on our site.
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page, anti-templating).
+7. Verify factual claims against authorities (HMRC manuals, legislation.gov.uk, gov.uk). **§16.35 mandate: WebFetch every numeric figure + every statutory section cite at write time before committing.**
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none for C1).
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+### Per-page work-log (RUN session populates)
+
+- **Decisions (slug, category, H1, meta title, why these vs alternatives):** [RUN session fills]
+- **Competitor URLs fetched + key takeaway per URL:** [RUN session fills]
+- **Existing-page review (overlap, differentiation decision):** [RUN session fills]
+- **Citations added:** [RUN session fills]
+- **Internal links added:** [RUN session fills]
+- **Inline CTA placements:** [RUN session fills]
+- **Build attempts (pass/fail):** [RUN session fills]
+- **Verification (each of the six checks):** [RUN session fills]
+- **Flags raised:** [RUN session fills, prefix F-100..F-149 for this bucket]
+- **2-3 sentence summary:** [RUN session fills]
