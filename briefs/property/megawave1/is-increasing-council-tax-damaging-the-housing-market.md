@@ -60,5 +60,88 @@ Target length 2,600-3,000 words. Tone: balanced policy-analysis — present mult
 ## Universal rules + workflow stubs (Stage 2 fills)
 [Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; balanced policy-analysis tone — no advocacy; multiple-perspectives presentation; reader audience: landlords, second-homeowners, buyers, professional advisers); lead-gen architecture (LeadForm + aside-CTAs after the "Landlord economics" section and after the "What should you do" section — high-intent reader often weighing portfolio / acquisition decisions); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (heavy cross-link with C1 / C2 / C3 / C6 sister-pages and with SDLT additional-dwellings pages and FHL pages); house-position anchors (NEW HP-LOCK §29 candidate); quality bar (word count 2,600-3,000; FAQs 12; external authority links 10-12; build clean; six verifications); anti-templating (lead with the **factual-framework + the specific operative-statute changes** — "Annual council tax bills in England rose by around X% in 2024-25 (verify at write). The LURA 2023 reforms added two new premium charges — the 12-month empty-homes trigger from 1 April 2024 and the second-homes premium adopted by many LAs from 1 April 2025. Whether the combined effect is materially damaging the housing market is contested..." — NOT with "Council tax is rising and this is bad for the housing market" which is advocacy-coded).]
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+## Stage 2 extension (M1-C-B1, locked 2026-05-26)
+
+### Stage 1b HP-lock status (drift catch from seed)
+
+Seed proposed "NEW HP-LOCK NEEDED, §29 Council tax framework." Verified at Stage 2 against `house_positions.md` 2026-05-26: §29 is occupied by the "VAT for property" Wave 8 architectural anchor cluster. The actual council-tax HP lock is **§30 "Council tax framework, LGFA 1992 + SI 1992/558 architecture, MW1 extension (locked 2026-05-26)"**, anchoring C2 + C3 + C4 + C6 + C8 + C9 explicitly at §30.7. §30.4 (premium powers post-LURA 2023) is the operative cross-reference for the s.11B / s.11C policy-impact analysis. §30.6 (cross-jurisdictional notes) is the operative cross-reference for the England-vs-Wales-vs-Scotland-vs-NI comparator. F-101 (council-tax §29→§30 numbering drift) now closed by Stage 1b §30 lock. RUN session anchors C4 to §30 (NOT a §29 lock).
+
+### Final competitor URLs (3-5, Stage 2 verifies live at write time per §16.31)
+
+1. https://ifs.org.uk/publications/council-tax-system (Institute for Fiscal Studies council-tax research, the policy-analysis authority)
+2. https://www.resolutionfoundation.org/publications/an-unhealthy-interest/ (Resolution Foundation council-tax + property-tax reform position papers)
+3. https://www.local.gov.uk/topics/finance-and-business-rates/council-tax (LGA local-government finance position)
+4. https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/datasets/counciltaxlevelssetbylocalauthoritiesinenglandbillionsofpounds (ONS annual council-tax statistics)
+5. https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england (MHCLG annual Council Tax Levels statistical release)
+
+### Final authority links (5-8 per §4.7)
+
+1. LGFA 1992 ss.52ZA-52ZY (referendum-cap regime, inserted by Localism Act 2011 Sch 5): https://www.legislation.gov.uk/ukpga/1992/14
+2. LGFA 1992 s.11B (empty-homes premium, post-LURA 2023): https://www.legislation.gov.uk/ukpga/1992/14/section/11B
+3. LGFA 1992 s.11C (second-homes premium, inserted by LURA 2023 s.80): https://www.legislation.gov.uk/ukpga/1992/14/section/11C
+4. LURA 2023 c.55 ss.79-80 (commencement framework): https://www.legislation.gov.uk/ukpga/2023/55
+5. Localism Act 2011 Sch 5 (referendum-cap framework): https://www.legislation.gov.uk/ukpga/2011/20/schedule/5
+6. Current Council Tax (Excessive Increase) (England) Determination (annual; verify current at write): https://www.gov.uk/government/publications
+7. MHCLG annual Council Tax Levels release: https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england
+8. VOA Council Tax Manual: https://www.gov.uk/guidance/council-tax-manual
+
+### Closest existing pages (cannibalisation context per §4.5)
+
+Token-similarity assessment performed at Stage 2 against current main inventory:
+
+1. `property-business-rates-council-tax-landlords` (property-types-and-specialist-tax, similarity ~0.30). Existing regime-distinction page; no policy-analysis content. **Differentiation:** C4 is the canonical policy-analysis page; the existing page is the regime-distinction page. Cross-link both directions.
+2. (C2 / C3 / C6 / C8 / C9 siblings, this batch + subsequent batches). Sister-pages on specific mechanics. **Differentiation:** C4 is the policy-angle hub; the specific-mechanic siblings are the operational pages; heavy cross-link from C4 to each sibling.
+3. `sdlt-additional-dwellings-surcharge-5-percent-second-property` (or current canonical 5% HRAD page, similarity ~0.18). Sister page on the FA 2025 5% surcharge package (the cross-tax disincentive context). **Differentiation:** C4's "second-home / holiday-let market impact" section cross-links to the SDLT 5% surcharge for the coordinated-disincentive-package framing.
+4. `furnished-holiday-lets-abolition-april-2025-fhl-regime-end-finance-act-2024` (or current canonical FHL-abolition page, similarity ~0.18). Sister page on FHL abolition. **Differentiation:** C4's "second-home / holiday-let market impact" section also cross-links FHL-abolition for the coordinated-package context.
+5. (any future C7 second-home / holiday-let council-tax-premium dedicated page). Sister page if planned in subsequent MW1 batches; cross-link forward.
+
+**No CANNIBAL flag.** C4 occupies clean topical space; cross-link discipline with C2 / C3 / C6 + SDLT 5% surcharge + FHL abolition pages.
+
+### Redirect overlap
+
+No existing 429 middleware redirect overlaps `is-increasing-council-tax-damaging-the-housing-market`. Verified by inspection of middleware.ts redirect map at Stage 2. No redirect action required at step 12.
+
+### Universal rules (per §4.8, verbatim)
+
+- **Voice.** No em-dashes (commas, parentheses, full stops, middle dots only). **Balanced policy-analysis tone, no advocacy.** Present multiple positions; cite evidence; let the reader form their own view. Specific. Named legislation + named research bodies (IFS, Resolution Foundation, LGA). Anonymised personas (Patel-portfolio-landlord, Singh-second-homeowner, etc.). No real client names.
+- **Lead-gen architecture.** LeadForm auto-injected at footer by BlogPostRenderer; never duplicate in body. Inline `<aside>` CTAs at conversion moments only, after the "Landlord economics" section and after the "What should you do" section per Manager pre-decisions.
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes. `<aside>` styled by global CSS at `Property/web/src/app/globals.css`.
+- **FAQs.** 12 FAQs in frontmatter `faqs:` array; auto-emitted as FAQPage JSON-LD by the renderer. Vary phrasing per page.
+- **Cannibalisation discipline.** Read the closest-existing pages above before writing; differentiate by the framing differentiator; cross-link rather than overlap.
+- **Anti-templating.** Per-page framing differentiator. Vary H2 structure across the council-tax cluster (C2 / C3 / C4 / C6 must NOT read like four versions of the same page). C4 specifically must read as policy-analysis, not regime-mechanic.
+- **Quality bar.** Six verifications at step 11. Body word count 2,600-3,000.
+
+### 19-step per-page workflow (verbatim, per §7)
+
+1. Read `house_positions.md` once at session start (§30 council tax framework is the operative cluster anchor for C4; §30.4 premium powers is the operative subsection).
+2. Claim ONE page in the wave tracker (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with httpx + BeautifulSoup.
+5. Read closest-existing pages on our site (especially the SDLT 5% surcharge + FHL-abolition pages for the coordinated-package context).
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page, anti-templating).
+7. Verify factual claims against authorities (legislation.gov.uk, gov.uk, ONS, MHCLG). **§16.35 mandate: WebFetch every numeric figure + every statutory section cite at write time before committing. Particular focus for C4: current Council Tax (Excessive Increase) (England) Determination figures (annual); MHCLG annual Band D average; LURA 2023 s.79 + s.80 commencement positions; any 2026 Spring Statement / Budget council-tax announcements.**
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none for C4).
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+### Per-page work-log (RUN session populates)
+
+- **Decisions (slug, category, H1, meta title, why these vs alternatives):** [RUN session fills]
+- **Competitor URLs fetched + key takeaway per URL:** [RUN session fills]
+- **Existing-page review (overlap, differentiation decision):** [RUN session fills]
+- **Citations added:** [RUN session fills]
+- **Internal links added:** [RUN session fills]
+- **Inline CTA placements:** [RUN session fills]
+- **Build attempts (pass/fail):** [RUN session fills]
+- **Verification (each of the six checks):** [RUN session fills]
+- **Flags raised:** [RUN session fills, prefix F-100..F-149 for this bucket]
+- **2-3 sentence summary:** [RUN session fills]
