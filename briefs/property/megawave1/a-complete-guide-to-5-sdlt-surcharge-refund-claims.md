@@ -46,8 +46,116 @@ Distinguish from the Wave 9 page by **scope** (this is a multi-route umbrella, n
 - HMRC manual sections: SDLTM09730+ (Schedule 4ZA general); SDLTM09807 (3-year window exceptional circumstances); SDLTM50300+ (amendments and overpayment relief).
 - Case-law: Hyman v HMRC [2022] EWCA Civ 185 (mixed-use); P N Bewley Ltd v HMRC [2019] UKFTT 65 + post-Bewley line (Mudan / MHB / Brown per §1.C); Fiander and Brower v HMRC [2021] (dwelling-definition jurisprudence — cross-link).
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); LeadForm + aside-CTA architecture; FAQs frontmatter + FAQPage JSON-LD; cannibalisation cross-link discipline (heavy cross-link load — at least 4 internal links to surcharge / refund / MDR pages); quality bar (word count 2,800-3,400 to do justice to six routes; FAQs 12-15; external authority links 8-10; build clean; six verifications); anti-templating discipline (lead with the diagnostic decision-tree, NOT with "The 5% surcharge is..."; vary H2s — structure around the SIX ROUTES, each with its own H2, NOT around chronological claim mechanics; explicitly differentiate from Wave 9 replacement-route page at the top).]
+## Closest existing pages (cannibalisation context)
+
+Read each before writing. A4 sits in a third lane: diagnostic-decision-tree umbrella across SIX surcharge-refund routes. Existing pages cover ONE route each (replacement) or the route mechanics; A4's job is to route the reader to the right route BEFORE they engage with mechanics.
+
+1. `Property/web/content/blog/sdlt-5-percent-surcharge-refund-claim-process.md` — Wave 9 dedicated 3-year replacement-route mechanics. A4 forward-links to this for Route 1 mechanics; do NOT re-walk the SDLTM09807 exceptional-circumstances framework.
+2. `Property/web/content/blog/sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim.md` — earlier-wave refund-routes overview, narrower than A4's scope. A4 supersedes this page's coverage at the umbrella level; consider raising a back-link flag (existing → A4) for navigation.
+3. `Property/web/content/blog/sdlt-refund-scams-how-to-avoid.md` — A4 forward-links to this from the claims-firm-risk-warning discussion in the appropriate route sections (Bewley + mixed-use routes carry the highest claims-firm exposure).
+4. Sister-picks in this MegaWave: A3 `a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits` (annexe-as-dwelling jurisprudence cross-link for Route 3); A5 `a-complete-guide-to-stamp-duty-refund` (broader umbrella — A4 is surcharge-family-only, A5 is whole-landscape; coordinate framing); A6 `a-complete-guide-to-stamp-duty-relief-for-probate-properties` (inherited-interest carve-out for Route 1 edge cases).
+
+Differentiation logic: A4 = diagnostic-decision-tree across SIX surcharge-refund routes. Existing Wave 9 page = Route 1 mechanics deep-dive. Existing earlier-wave page = narrower overview. A5 sister-pick = whole-landscape umbrella (Sch 4ZA is one of 8 families). **Coordinate A4 ↔ A5 framing**: A4 is the surcharge-family decision tree (deep); A5 is the family-of-families taxonomy (broad). A4 must NOT collapse to A5; A5 must NOT collapse to A4.
+
+## Redirect overlap
+
+Checked against `Property/web/src/middleware.ts` (511 lines) on 2026-05-26: NO existing 301/302 redirect targets share slug-token overlap with `a-complete-guide-to-5-sdlt-surcharge-refund-claims`. No repointing required (step 12 no-op). RUN session re-verifies at write.
+
+## Authority links (SDLT bucket — pick at least 8 at write time)
+
+**Primary statute (legislation.gov.uk):**
+- FA 2003 Sch 4ZA (additional dwellings surcharge architecture): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA
+- F(No.2)A 2024 (3% → 5% surcharge change, effective 31 October 2024): https://www.legislation.gov.uk/ukpga/2024/12/contents
+- FA 2003 Sch 10 (LTT amendment and overpayment relief; para 34 = 4-year overpayment-relief route): https://www.legislation.gov.uk/ukpga/2003/14/schedule/10
+- FA 2003 Sch 11A (LTT return architecture; para 6 = 12-month amendment window): https://www.legislation.gov.uk/ukpga/2003/14/schedule/11A
+- FA 2003 s.116 (residential property definition; s.116(1)(a) Bewley refund route; s.116(7) 6+-dwellings deeming): https://www.legislation.gov.uk/ukpga/2003/14/section/116
+- FA 2003 s.108 (linked transactions): https://www.legislation.gov.uk/ukpga/2003/14/section/108
+- FA 2003 s.44 (substantial performance — load-bearing for Route 6 rate-transition straddle): https://www.legislation.gov.uk/ukpga/2003/14/section/44
+- FA 2007 Sch 24 (penalty regime — load-bearing for claims-firm-risk discussion): https://www.legislation.gov.uk/ukpga/2007/11/schedule/24
+
+**HMRC SDLT Manual:**
+- SDLTM09730+ (Schedule 4ZA general): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm09730
+- SDLTM09807 (3-year window exceptional-circumstances framework): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm09807
+- SDLTM50300+ (amendments and overpayment relief procedural): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm50300
+
+**Case-law (BAILII):**
+- Hyman v HMRC [2022] EWCA Civ 185 (mixed-use post-Bewley narrowing — Route 4 evidential test): https://www.bailii.org/ew/cases/EWCA/Civ/2022/185.html
+- P N Bewley Ltd v HMRC [2019] UKFTT 65 (uninhabitable refund route — Route 2): https://www.bailii.org/uk/cases/UKFTT/TC/2019/TC06951.html
+- Mudan / MHB / Brown post-Bewley line (cite per §1.C; verify BAILII references at write)
+- Fiander and Brower v HMRC [2021] UKFTT 190 / [2023] UKUT 22 (dwelling-definition for Route 3 cross-reference): https://www.bailii.org/uk/cases/UKFTT/TC/2021/TC08020.html
+
+**Gov.uk procedural:**
+- SDLT calculator (rate-table verification at write per §16.35): https://www.tax.service.gov.uk/calculate-stamp-duty-land-tax/
+- gov.uk SDLT amendment / refund landing: https://www.gov.uk/stamp-duty-land-tax/changes-to-your-return
+- HMRC Spotlight publications on SDLT claims firms: https://www.gov.uk/government/collections/tax-avoidance-schemes-currently-in-the-spotlight
+
+## Competitor URLs (Stage 2 candidates — RUN verifies liveness at write time)
+
+Two competitor populations: (i) standard SDLT advisory firms (use as borrow-pattern); (ii) SDLT-claims-firm content (use as DRIFT-CATCH source per §1.I + Wave 9 F-4 pattern; document any claims that lack statutory anchors).
+
+1. BDO additional dwellings surcharge refund guide: https://www.bdo.co.uk/en-gb/insights/tax/property-tax/additional-dwellings-supplement
+2. Saffery surcharge-refund briefing: https://www.saffery.com/insights/articles/sdlt-additional-dwellings-surcharge-refund/
+3. RSM UK surcharge-refund note: https://www.rsmuk.com/insights/real-estate-and-construction/sdlt-surcharge-refund
+4. Crowe surcharge-refund briefing: https://www.crowe.com/uk/insights/sdlt-surcharge-refund
+5. ICAEW Tax Faculty SDLT refund briefing: https://www.icaew.com/insights/tax-news
+6. Law Society / CIOT professional-conduct on claims-firm contingent fees: https://www.lawsociety.org.uk/ + https://www.tax.org.uk/
+7. (Drift-catch source — flag in work-log): typical SDLT-claims-firm landing pages (e.g. `stampdutyrefunds.com` / `stampduty-claim.com`) — RUN session inspects ONE such page to document the "no statutory anchor" pattern, then forward-links to existing `sdlt-refund-scams-how-to-avoid.md`.
+
+## Universal rules (verbatim per NETNEW_PROGRAM §4.8)
+
+- **Voice.** No em-dashes in user-facing copy. Specific over generic. Named legislation. Anonymised personas for the worked examples (Patel-estate buying replacement main residence; Singh family with annexe-count dispute; Mawell-Estate corporate portfolio acquirer).
+- **Lead-gen architecture.** LeadForm auto-injected at footer. Inline `<aside>` CTAs at conversion moments: after the diagnostic decision tree, after the deadline table, after the claims-firm risk warning.
+- **CSS in markdown.** Semantic HTML only. No Tailwind classes in body.
+- **FAQs.** 12-15 for this page (six-route scope).
+- **Cannibalisation discipline.** Heavy cross-link load: at least 4 internal links (Wave 9 replacement-route page; earlier-wave routes overview; A3 for dwelling-definition; A5 for whole-landscape). Forward-link to `sdlt-refund-scams-how-to-avoid.md` from the claims-firm warning section.
+- **House-position anchors.** Cite §1 (rate-architecture), §1.C (Bewley narrow post-Hyman/Mudan/MHB/Brown), §1.D (Sch 3 para 3 spouse/civil-partner — Sch 4ZA aggregation cross-reference) verbatim.
+- **Anti-templating.** Open with the diagnostic decision tree (six routes laid out as yes/no questions in a `<details>` block or numbered list). Do NOT open with "The 5% additional dwellings surcharge is...". H2 structure: ONE H2 per route (six H2s) + decision-tree H2 at top + deadline-table H2 + claims-firm-risk H2 + cross-link H2. Explicitly different from the Wave 9 replacement-route page's chronological mechanics.
+- **Quality bar.** (i) 0 em-dashes. (ii) 0 Tailwind. (iii) FAQ schema == frontmatter `faqs:` length. (iv) Meta title ≤ 62. (v) Meta description ≤ 158. (vi) Internal links resolve. Body word count target 2,800-3,400 to fairly cover six routes.
+- **Per-write figure verification (§16.35).** WebFetch gov.uk SDLT calculator at write time to verify the 5% rate, 31 October 2024 transition date, and the band thresholds. Verify Sch 10 para 34 + Sch 11A para 6 paragraph numbers and 4-year / 12-month windows verbatim.
+
+## The 19-step workflow (verbatim per NETNEW_PROGRAM §7)
+
+1. Read `docs/property/house_positions.md` once at session start; locate §1, §1.C, §1.D.
+2. Claim this page in `docs/property/megawave1_page_tracker.md` via ABSOLUTE PATH.
+3. Re-read this brief: framing differentiator, closest-existing, redirect overlap (none), authority links, six routes + 11 key questions.
+4. Fetch shortlisted competitor URLs via `httpx + BeautifulSoup`. Discard 404s; flag claims-firm sources as drift-catch.
+5. Read closest-existing pages (Wave 9 replacement-route + earlier-wave overview + scams page) end-to-end. A4 stays in diagnostic-decision-tree lane.
+6. Plan H2 outline: diagnostic decision tree → ROUTE 1-6 H2s → deadline table → claims-firm risk warning → cross-links. Meta title (≤62) + meta description (≤158) + FAQs (12-15) + inline CTAs.
+7. Verify each factual claim against legislation.gov.uk (Sch 4ZA, Sch 10, Sch 11A) + HMRC SDLTM + BAILII case-law + gov.uk calculator.
+8. Fetch hero image from Pexels.
+9. Write the markdown file at `Property/web/content/blog/a-complete-guide-to-5-sdlt-surcharge-refund-claims.md`.
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications.
+12. Redirect repointing — NO overlap (no-op). Re-verify.
+13. Register in Supabase `monitored_pages` (bucket="megawave1-A").
+14. **Commit on session branch.** Message: `Megawave 1 Bucket A: ship a-complete-guide-to-5-sdlt-surcharge-refund-claims (A4, decision-tree umbrella tier)`.
+15. Fill work-log below.
+16. Mark `✅ done` in tracker via ABSOLUTE PATH.
+17. Append site-wide issues to flags file (F-1..F-49).
+18. Append discoveries.
+19. Claim next page OR write batch-done marker if final.
+
+**Critical order: step 14 (commit) before step 16 (mark done).**
 
 ## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+
+**Stage 2 (this pass, 2026-05-26):**
+- Statutory citations verified per Stage 1 seed timestamps; §16.36 brief-citation gate satisfied at brief level. **Stage 1b drift watchpoint surfaced in seed: confirm Sch 10 para 34 vs para 34A operative cite at write — historical drift between paragraph numbers has been documented in other waves.**
+- Category routing: manager pre-decision recommends `property-types-and-specialist-tax` for category-diversity (existing Wave 9 replacement-route page is in `landlord-tax-essentials`). RUN session may override and log.
+- Redirect overlap: searched `Property/web/src/middleware.ts` on 2026-05-26 — no overlap.
+- Closest-existing pages confirmed present (Wave 9 replacement-route + earlier-wave routes + scams page).
+- A4 ↔ A5 coordination noted: A4 = surcharge-family deep; A5 = whole-landscape broad. RUN sequencing: ideally A4 ships before A5 so A5 can forward-link to A4 for the surcharge-family decision-tree without duplicating.
+- §1.M (Sch 4ZA refund-route decision tree) flagged in Stage 1 seed as new HP-lock candidate. Stage 2 verdict: NOT needed — existing §1, §1.C, §1.D cover the statutory anchors; A4's decision-tree is page-level work product, not a locked position.
+
+**RUN session (populate at write time):**
+- Decisions (slug confirmed / overridden + rationale; category; H1; meta title; meta description; why these vs alternatives):
+- Sch 10 para 34 vs para 34A confirmed cite (load-bearing for overpayment-relief framing throughout):
+- Competitor URLs fetched + key takeaway per URL (FLAG drift-catch claims-firm content separately):
+- Closest-existing review (overlap pattern; differentiation decision; back-link flags raised):
+- Citations added (count + breakdown legislation.gov.uk / HMRC SDLTM / BAILII / gov.uk):
+- Internal `/blog/...` links added:
+- Inline `<aside>` CTA placements:
+- Build attempts (pass/fail per attempt; resolution if any failed):
+- Six verifications (each: pass/fail + value):
+- Flags raised (F-numbers + summary; or "none"):
+- 2-3 sentence summary:
