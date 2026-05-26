@@ -213,7 +213,8 @@ while ($true) {
     Write-Step "  Spawning wt tab"
     $launcherPath = Join-Path $signalDir "launch_${batchId}.ps1"
     if (-not $DryRun) {
-        $launcherBody = "`$prompt = Get-Content -Raw '$promptFile'`r`nclaude --dangerously-skip-permissions `$prompt`r`n"
+        $mainRoot = $cfg.paths.repoRoot
+        $launcherBody = "`$prompt = Get-Content -Raw '$promptFile'`r`nclaude --allow-dangerously-skip-permissions --dangerously-skip-permissions --add-dir '$mainRoot' `$prompt`r`n"
         [System.IO.File]::WriteAllText($launcherPath, $launcherBody, $utf8)
     }
     $innerCmd = "& '$launcherPath'"
