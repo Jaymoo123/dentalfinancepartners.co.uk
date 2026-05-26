@@ -240,7 +240,7 @@ while ($true) {
         Write-OK "  DRY-RUN: assuming complete for loop demo"
     } else {
         $expectedSlugs = ($picks.slug) -join ','
-        $result = & $detectPs -BatchId $batchId -ExpectedSlugs $expectedSlugs -SignalDir $signalDir -TrackerFile $trackerFile -TimeoutMin $BatchTimeoutMin
+        $result = & $detectPs -BatchId $batchId -ExpectedSlugs $expectedSlugs -SignalDir $signalDir -TrackerFile $trackerFile -TimeoutMin $BatchTimeoutMin -Phase $Phase
 
         if ($result.Status -eq 'complete') {
             Write-OK "  Batch $batchId complete in $($result.ElapsedSec)s ($($result.Reason))"
