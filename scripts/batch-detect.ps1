@@ -38,6 +38,15 @@
 .PARAMETER PollIntervalSec
   Poll interval. Default 30.
 
+.PARAMETER Phase
+  Pipeline phase: stage1, stage2, or run. Determines whether the
+  tracker-based safety net is active. For stage1, the safety net is
+  the recovery path for sub-agents that crash after commits + tracker
+  flip but before marker write. For stage2 + run, the tracker already
+  shows ✅ for all picks (from stage1), so the safety net would
+  trivially false-positive; in those phases we rely on the marker file
+  only and let timeout handle crash recovery via batch-reclaim.
+
 .OUTPUTS
   PSCustomObject: {Status='complete'|'incomplete', Reason, MarkerData?, ElapsedSec}
 
@@ -46,7 +55,7 @@
       -ExpectedSlugs 'slug-1,slug-2,slug-3' `
       -SignalDir 'briefs/property/megawave1/_signals' `
       -TrackerFile 'docs/property/wave1_page_tracker.md' `
-      -TimeoutMin 180
+      -TimeoutMin 180 -Phase stage1
   if ($result.Status -eq 'complete') { ... } else { ... }
 #>
 [CmdletBinding()]
@@ -56,7 +65,8 @@ param(
     [Parameter(Mandatory=$true)] [string]$SignalDir,
     [Parameter(Mandatory=$true)] [string]$TrackerFile,
     [int]$TimeoutMin = 180,
-    [int]$PollIntervalSec = 30
+    [int]$PollIntervalSec = 30,
+    [ValidateSet('stage1','stage2','run')] [string]$Phase = 'stage1'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -108,7 +118,16 @@ function Test-TrackerAllSlugsDone {
 
 while ((Get-Date) -lt $timeoutTime) {
     $markerExists = Test-Path $markerFile
-    $trackerAllDone = Test-TrackerAllSlugsDone -Tracker $TrackerFile -Slugs $expectedSlugList
+
+    # Tracker safety net is meaningful ONLY for stage1 — stage1 is where
+    # tracker rows flip ⬜ → ✅ as briefs commit. For stage2 + run, all
+    # tracker rows already show ✅ from stage1, so any safety-net check
+    # would trivially false-positive. In those phases rely on marker only.
+    $useSafetyNet = ($Phase -eq 'stage1')
+    $trackerAllDone = $false
+    if ($useSafetyNet) {
+        $trackerAllDone = Test-TrackerAllSlugsDone -Tracker $TrackerFile -Slugs $expectedSlugList
+    }
 
     if ($markerExists) {
         # Parse marker
@@ -119,22 +138,23 @@ while ((Get-Date) -lt $timeoutTime) {
             $markerData = $null
         }
 
-        if ($trackerAllDone) {
-            # Both signal + cross-check pass
+        if ($useSafetyNet -and -not $trackerAllDone) {
+            # Stage 1 only: marker present but tracker mismatch
+            Write-Warning "BATCH $BatchId SIGNAL/TRACKER MISMATCH - marker found but tracker missing one or more expected slugs. Continuing to poll; may indicate sub-agent committed partial work then signalled. Manual review may be needed if persists."
+        } else {
+            # Marker present — trust it (stage1 with tracker pass, or stage2/run marker-only)
             $elapsed = ((Get-Date) - $startTime).TotalSeconds
+            $reason = if ($useSafetyNet) { 'marker + tracker cross-check both pass' } else { "marker present ($Phase phase - marker-only signal)" }
             return [PSCustomObject]@{
                 Status     = 'complete'
-                Reason     = 'marker + tracker cross-check both pass'
+                Reason     = $reason
                 MarkerData = $markerData
                 ElapsedSec = [int]$elapsed
             }
-        } else {
-            # Marker present but tracker mismatch - log warning, keep polling
-            Write-Warning "BATCH $BatchId SIGNAL/TRACKER MISMATCH - marker found but tracker missing one or more expected slugs. Continuing to poll; may indicate sub-agent committed partial work then signalled. Manual review may be needed if persists."
         }
-    } elseif ($trackerAllDone) {
-        # Safety net: all slugs ✅ in tracker without marker file (sub-agent
-        # crashed after commits but before writing marker)
+    } elseif ($useSafetyNet -and $trackerAllDone) {
+        # Safety net (stage1 only): all slugs ✅ in tracker without marker
+        # file (sub-agent crashed after commits but before writing marker)
         $elapsed = ((Get-Date) - $startTime).TotalSeconds
         return [PSCustomObject]@{
             Status     = 'complete'
