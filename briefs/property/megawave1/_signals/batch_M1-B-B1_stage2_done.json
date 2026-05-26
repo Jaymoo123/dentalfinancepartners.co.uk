@@ -1,0 +1,42 @@
+{
+  "batch_id": "M1-B-B1",
+  "stage": 2,
+  "agent_id": "MW1-Stage2-B-B1",
+  "completed_at": "2026-05-26T00:00:00Z",
+  "commit_shas": [
+    "c429f00",
+    "3c904dc",
+    "c8c8ddb",
+    "eb20753",
+    "27dadfe",
+    "0370a8c"
+  ],
+  "slugs_done": [
+    "essential-guide-for-first-time-homebuyers-in-scotland",
+    "higher-rates-of-land-transaction-tax-a-complete-guide",
+    "land-transaction-tax-a-complete-guide",
+    "bare-trusts-and-lbtt-relief-availability",
+    "lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax",
+    "lbtt-review-in-scotland"
+  ],
+  "flags_raised": [
+    "F-52 (BRIEF_DRIFT — HP §23.8 + §23.10 s.41 -> s.44 LTTA 2017 30-day return cite)"
+  ],
+  "qna_raised": [],
+  "stage2_verifications_completed": [
+    "LTTA 2017 s.44 confirmed as 30-day return section (verified via legislation.gov.uk WebFetch; drift caught on B3 seed and closed)",
+    "LBTT(S)A 2013 Sch 11 confirmed as Scottish acquisition-relief base (NOT FA 2003 Sch 7 Part 2 per §16.36 lesson; B5 brief anchors correctly)",
+    "LBTT(S)A 2013 Sch 4A confirmed for FTB relief (B1 brief verified)",
+    "LBTT(S)A 2013 Sch 18 Part 3 confirmed for bare-trust look-through (B4 brief verified)",
+    "Sch 11 para 6(3) prescribed-proportion SSI flagged for RUN-time verification (Stage 2 cannot lock current % without SSI cite; RUN must WebFetch and quote verbatim)"
+  ],
+  "stage2_extensions_per_brief": {
+    "essential-guide-for-first-time-homebuyers-in-scotland": "Full Stage 2 extension: competitor URLs (5), closest-existing pages (5), authority links (statutory + Revenue Scotland + gov.scot), universal rules, 19-step workflow, work-log skeleton",
+    "higher-rates-of-land-transaction-tax-a-complete-guide": "Full Stage 2 extension: competitor URLs (5), closest-existing pages (5), authority links (LTTA 2017 + Tax Bands Regs 2024 + gov.wales), universal rules, 19-step workflow, work-log skeleton",
+    "land-transaction-tax-a-complete-guide": "Full Stage 2 extension + Stage 2 §16.36 drift catch closed (s.41 -> s.44); F-52 flag raised for HP §23.8 + §23.10 back-patch",
+    "bare-trusts-and-lbtt-relief-availability": "Full Stage 2 extension: competitor URLs (5), closest-existing pages (5+sibling), authority links (LBTT(S)A 2013 Sch 18 + Sch 11 verified per §16.36 lesson), universal rules, 19-step workflow, work-log skeleton",
+    "lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax": "Full Stage 2 extension + Stage 2 §16.36 statutory cross-check confirms LBTT(S)A 2013 Sch 11 NOT FA 2003 Sch 7 Part 2 as Scottish acquisition-relief base; prescribed-proportion SSI flagged for RUN-time WebFetch",
+    "lbtt-review-in-scotland": "Full Stage 2 extension: competitor URLs (7 incl. Scottish Fiscal Commission + Revenue Scotland), closest-existing pages (5+sibling-cluster), authority links (LBTT(S)A 2013 + ADS history + F(No.2)A 2024 s.7 for SDLT MDR abolition contrast), universal rules, 19-step workflow"
+  },
+  "ready_for_stage": "RUN"
+}
