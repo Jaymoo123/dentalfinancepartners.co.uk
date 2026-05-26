@@ -48,7 +48,7 @@
 | ✅ | B9 | `ltt-refunds-for-derelict-or-uninhabitable-properties` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 98e8d5e; soft cannib pair flag F-50 |
 | ✅ | B10 | `understanding-alternative-finance-arrangements-under-lbtt` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 92c77d0; surfaces §23.X alt-finance mini-lock candidate |
 | ✅ | B11 | `ltt-calculator` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed f5a2fee |
-| ✅ | B12 | `ltd-property-spreadsheet` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 4497efb; lane-mis-clustered (true topic = Incorporation), flag F-51 |
+| ⚠ | B12 | `ltd-property-spreadsheet` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | DROPPED from MW1 per F-51 conductor decision 2026-05-26 — lane-mis-clustered (true topic = Incorporation); rolled to MW2 carryover (see `docs/property/MW2_CARRYOVER.md`). Stage 1 seed 4497efb retained in git history for MW2 to reference. Excluded from Stage 2 + RUN dispatch. |
 | ✅ | B13 | `abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed 861a1c3 |
 | ✅ | B14 | `impact-of-fhl-tax-abolition-on-pension-contributions-key-insights-strategies` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed d48bc64 |
 | ✅ | B15 | `understanding-the-taxation-of-fhls-in-a-company` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed 18e5e09 |
