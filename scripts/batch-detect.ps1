@@ -79,13 +79,24 @@ function Test-TrackerAllSlugsDone {
     param([string]$Tracker, [string[]]$Slugs)
     if (-not (Test-Path $Tracker)) { return $false }
     $content = [System.IO.File]::ReadAllText($Tracker, $utf8)
-    # For each expected slug, look for a tracker row containing that slug
-    # AND the ✅ done symbol (U+2705) on the same line.
+    # For each expected slug, look for a tracker row containing the slug
+    # wrapped in backticks (canonical form `slug`) AND the ✅ done symbol
+    # on the same line.
+    #
+    # WHY backticks (and not bare substring): tracker slugs are written
+    # as `<slug>` (markdown code-span). Substring matching falsely
+    # passes when one slug is a substring of another - e.g. A20
+    # `multiple-dwellings-relief` is a substring of A19
+    # `land-and-buildings-transaction-tax-multiple-dwellings-relief`,
+    # so A19's ✅ row used to satisfy A20's check too, firing the
+    # safety net in 0s on the A20 re-dispatch (2026-05-26 incident).
     $doneSym = [string][char]0x2705
+    $bt = [string][char]0x60  # backtick
     foreach ($slug in $Slugs) {
+        $needle = "$bt$slug$bt"
         $found = $false
         foreach ($line in ($content -split "`r?`n")) {
-            if ($line -match '^\|' -and $line.Contains($slug) -and $line.Contains($doneSym)) {
+            if ($line -match '^\|' -and $line.Contains($needle) -and $line.Contains($doneSym)) {
                 $found = $true
                 break
             }
