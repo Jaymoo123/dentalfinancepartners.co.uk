@@ -73,8 +73,71 @@ Target length 2,400-2,800 words. Voice: practical analytical + statute-grounded 
 - HMRC manual cross-references: CG14530+ (CGT deemed market value + connected persons); IHTM14000+ (IHT lifetime transfers + PETs); SDLTM30200+ (SDLT connected-company rule).
 - **Stage 1b drift watchpoint:** the CGT residential rate was reduced from 28% to 24% by Spring Budget 2024 (effective 6 April 2024) under FA 2024. Stage 2 verifies the current rate at write date — any post-FA-2024 amendment must be reflected. The 5% additional-dwellings SDLT surcharge (post-Autumn 2024 increase from 3%) is the operative current rate but must be re-verified at write date.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; practical analytical + statute-grounded + four-tax-stack; reader audience: parents planning to sell to adult children, landlords planning to sell to sitting tenants, SPV-restructuring property investors, family-business succession planners, advisers running below-market transaction analysis); lead-gen architecture (LeadForm + aside-CTAs after the "SDLT s.53 connected-company trap" section + after the "Valuation evidence required" section — high-intent reader at a transaction decision-point); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (HEAVY cross-link with C11 free-rental-valuation sister + the gifting-property family-member pages (which handle pure gifts); this page explicitly handles the HYBRID partial-sale-partial-gift case); house-position anchors (HP §1 + §5 + §15 + §22.5 cross-references); quality bar (word count 2,400-2,800; FAQs 12; external authority links 10-12; build clean; six verifications); anti-templating (lead with the **four-tax-stack analytical framework** — "Selling a house at below market value is analytically a partial sale + partial gift. The actual price paid is the sale; the difference to market value is the gift. Each of CGT, IHT, SDLT, and (where applicable) PPR + spouse exemption applies separately with its own deeming rules, exemptions, and reliefs. This page walks through the four-tax-stack analysis with worked examples covering the parent-to-child, landlord-to-tenant, and connected-SPV scenarios." — NOT with "If you sell your house cheaply you might save tax" which is wrong and dangerously incomplete).]
+## Universal rules
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+### Voice
+- No em-dashes (use commas, parentheses, full stops, or middle dots).
+- Tone: practical analytical plus statute-grounded plus four-tax-stack walk-through. Each tax (CGT, IHT, SDLT, PPR / spouse) is treated separately with its own deeming rules, exemptions, and reliefs.
+- Reader audience: parents planning to sell to adult children; landlords planning to sell to sitting tenants; SPV-restructuring property investors (incorporation lane); family-business succession planners; advisers running below-market transaction analysis.
+- Trap-warning posture: the SDLT s.53 connected-company deeming is the single highest-stakes trap in this territory; the page surfaces it explicitly.
+
+### Lead-gen architecture
+- `LeadForm` auto-injects at footer; do NOT duplicate in body.
+- Inline `<aside>` CTAs at two conversion moments (high-intent reader at a transaction decision-point): (a) after the "SDLT s.53 connected-company trap" section (reader's planning assumptions just got upset); (b) after the "Valuation evidence required" section (reader needs a Red Book valuation and a tax adviser in the loop).
+- Calibrate the asides to specialist property-tax adviser positioning at transaction-planning level.
+
+### Schema
+- FAQs declared in frontmatter `faqs:` array; emitted automatically as `FAQPage` JSON-LD on build.
+- 12 FAQs (multi-tax decision primer earns the upper end of the non-pillar range; the page covers CGT s.17, s.18, s.286, s.58, s.165, s.260, ss.222-225 plus IHT ss.3A, 10, 18 plus SDLT s.53 + Sch 4 plus PPR — each yields at least one FAQ).
+
+### Cannibalisation cross-link discipline
+- HEAVY cross-link with C11 (`free-rental-valuation`, the Red Book valuation evidence sister; same M1-C-B2 batch).
+- Cross-link with the existing pure-gift pages: `cgt-gifting-property-family-members-uk`; `gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics`; `gifting-property-to-minor-children-bare-trust-mechanics-tax-traps`; `cgt-property-transfer-spouse`; `iht-lifetime-gifts-7-year-rule-property-taper`; `iht-gifts-with-reservation-of-benefit-property`; `iht-7-year-clock-property-gifting-mid-life-landlord-strategy`.
+- **Differentiation note (must appear in body):** this page handles the HYBRID partial-sale-partial-gift case; the existing pages handle pure gifts. Explicitly route the reader to the pure-gift pages when actual consideration is nil.
+- Cross-link to landlord-incorporation pages on the SDLT s.53 trap (the trap most-walked-into by incorporation planners).
+
+### House-position anchors
+- HP §1 (SDLT framework, including the FA 2003 s.53 connected-company deeming for sales to own SPV).
+- HP §5 (CGT, including TCGA 1992 s.17 deemed-market-value rule for non-arm's-length disposals and s.286 connected-persons definition).
+- HP §15 (IHT, including IHTA 1984 s.3A PETs and the s.10 non-gratuitous escape).
+- HP §22.5 (spouse / civil-partner IHT exemption — RUN session verifies the post-FA-2025 framing per §16.39 drift catch noted at Wave 6 Stage 1b: the s.18(2) limited-exemption + s.267ZA pre-FA-2025 election architecture has shifted to the long-term-residence criterion).
+- No new HP lock required.
+
+### Quality bar (six verifications at build)
+- Body word count target: 2,400-2,800.
+- FAQs: 12.
+- External authority links: 10-12 (legislation.gov.uk TCGA 1992 ss.17, 18, 58, 165, 222-225, 260, 286; IHTA 1984 ss.3A, 10, 18; FA 2003 ss.43, 53 + Sch 3 + Sch 4; HMRC CG, IHTM, SDLTM manual sections).
+- Em-dashes in body: 0.
+- Tailwind classes in markdown body: 0 (semantic HTML only).
+- FAQ schema count in built HTML == frontmatter `faqs:` array length.
+- Meta title <= 62 chars; meta description <= 158 chars.
+- Internal `/blog/...` links resolve (verify C11 plus the seven existing gift-family-member pages on disk; C11 is in this same batch so sequencing matters).
+
+### Anti-templating opening
+Lead with the **four-tax-stack analytical framework**, NOT "if you sell your house cheaply you might save tax" which is wrong and dangerously incomplete. Suggested opening sentence shape:
+
+> "Selling a house at below market value is analytically a partial sale plus partial gift. The actual price paid is the sale element; the difference to market value is the gift element. Each of CGT (TCGA 1992 s.17 deemed market value), IHT (IHTA 1984 s.3A PET on the gift element), SDLT (FA 2003 Sch 4 actual consideration, or FA 2003 s.53 deemed market value if the purchaser is a connected company), and where applicable PPR (TCGA 1992 ss.222-225) or spouse / civil-partner exemption (TCGA 1992 s.58 plus IHTA 1984 s.18) applies separately with its own deeming rules and reliefs. This page walks through the four-tax-stack analysis with worked examples covering the parent-to-child, landlord-to-tenant, and connected-SPV scenarios."
+
+## Stage 2 verification (2026-05-26)
+
+- **Statutory citations.** Stage 1 seed cited TCGA 1992 ss.17, 18, 58, 165, 222-225, 260, 286; IHTA 1984 ss.3A, 10, 18; FA 2003 ss.43, 53, Sch 3, Sch 4. Each cited section was verified verbatim against legislation.gov.uk on 2026-05-26 in the seed (URLs and timestamps recorded in the Statutory anchor section). RUN session re-verifies the connected-persons definition under TCGA 1992 s.286(8) (the uncle / aunt / niece / nephew / cousin exclusion is a frequently-misunderstood corner) at write date.
+- **HP-lock status.** No new lock required. Existing §1 + §5 + §15 + §22.5 anchors operative. RUN session checks current HP §22.5 framing per the Wave 6 §16.39 drift catch (spouse exemption shifted from domicile to long-term residence criterion under FA 2025).
+- **Competitor URL verification at write time (RUN session fetches):**
+  - HMRC CG (CGT Manual) deemed market value pages: `https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg14530` and adjacent pages.
+  - HMRC IHTM (IHT Manual) PETs and s.10 pages: `https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm04060` and adjacent.
+  - HMRC SDLTM s.53 connected-company pages: `https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm30200` and adjacent.
+  - ICAEW commentary on partial-sale-partial-gift transactions.
+  - STEP commentary on the s.10 non-gratuitous test.
+  - Big Four (PwC / EY / Deloitte / KPMG) below-market transaction briefings for drift-catch only.
+- **Drift watchpoints (RUN session must surface as flags if hit):**
+  - CGT residential rate (currently 24% from 6 April 2024 under FA 2024). Verify against current HMRC + legislation.gov.uk at write date — Spring Statement 2026 / Autumn Budget 2026 amendments possible.
+  - SDLT additional-dwellings surcharge (currently 5% from 31 October 2024). Verify at write date.
+  - CGT AEA (currently £3,000 from 6 April 2024). Verify at write date.
+  - IHT NRB (£325,000 frozen) and 7-year taper rates. Verify against current legislation at write date.
+  - HP §22.5 spouse-exemption framing post-FA-2025 (per Wave 6 §16.39). Verify current HP file state before citing.
+  - TCGA 1992 s.286(8) "relative" exclusion (uncle / aunt / niece / nephew / cousin NOT connected for CGT). Verify verbatim against current consolidated statute — this corner is frequently mis-stated.
+- **Authority link target (RUN session selects 10-12 from this list):** legislation.gov.uk TCGA 1992 ss.17, 18, 58, 165, 222-225, 260, 286 + IHTA 1984 ss.3A, 10, 18 + FA 2003 ss.43, 53 + Sch 3 + Sch 4; HMRC CG14530+ + IHTM04060+ + IHTM14000+ + SDLTM30200+; ICAEW + STEP commentary; one Lands Tribunal authority on valuation disputes.
+
+## Work log (RUN session populates)
+
+[RUN session records: slug / category / H1 / meta title decisions; competitor URLs fetched + key takeaway per URL; existing-page review (overlap + differentiation decision); citations added; internal links added; inline CTA placements; build attempts pass / fail; six verifications evidence; flags raised; 2-3 sentence summary at completion.]

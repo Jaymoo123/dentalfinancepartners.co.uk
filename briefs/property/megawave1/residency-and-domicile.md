@@ -72,8 +72,69 @@ Target length 2,800-3,200 words. Voice: primer + cascade-walkthrough + cross-lin
 - HMRC manual cross-references: RDR3 (SRT operational manual); RDRM (residence + domicile + remittance manual); CG14750+ (NRCGT manual); ITSP (income-tax international manual).
 - **Stage 1b drift watchpoint:** the SRT day-count + ties cascade has not been amended since 2013 but the LTR test architecture (FA 2025) is new and HMRC RDR / RDRM guidance is being rewritten across 2025-26. Stage 2 verifies current HMRC guidance section numbers + flags any 2026 Finance Bill or Spring 2026 Budget amendments. The historic "deemed dom 15-of-20" framing must NOT appear anywhere in the body — it is the C7 brief drift-watchpoint and applies here too.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; primer + cascade-walkthrough + cross-link-rich; reader audience: UK-property-owning expats, new arrivals, advisers, trust beneficiaries / settlors with pre-FA-2025 structures); lead-gen architecture (LeadForm + aside-CTAs after the "SRT cascade" section + after the "LTR for IHT" section + after the "What should you do" section — high-intent reader often at a residency decision-point); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (HEAVY cross-link with C7 historical-context sister + the four existing FIG / TRF / rebasing / Year-5-cliff deep-dive pages); house-position anchors (HP §17 cluster comprehensively + §22.X + §15.6); quality bar (word count 2,800-3,200; FAQs 12; external authority links 12-15; build clean; six verifications); anti-templating (lead with the **two-concept distinction** — "UK tax residence and UK domicile are two distinct legal concepts. From 6 April 2025, UK tax residence drives income tax + CGT (under the Statutory Residence Test at FA 2013 Sch 45) and substantially drives IHT (via the Long-Term Resident test at IHTA 1984 ss.6A-6C). UK domicile no longer drives income tax or CGT and only residually operates for IHT trust mechanics + private international law. This page walks through the SRT cascade, the LTR test, the split-year cases, and the property-investor angles." — NOT with "Domicile is where you have your permanent home" which is overly simplistic and reform-blind).]
+## Universal rules
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+### Voice
+- No em-dashes (use commas, parentheses, full stops, or middle dots).
+- Tone: hub primer plus statute-grounded plus cascade-walkthrough. Cross-link-rich (this is the foundational primer that routes to FIG / TRF / rebasing / Year-5-cliff deep-dives and to C7).
+- Reader audience: UK-property-owning expats considering departure or return; new arrivals to the UK weighing UK property purchase plus tax position; advisers running residency-and-domicile assessments for property clients; non-doms whose 2025-26 status is being re-determined; trust beneficiaries / settlors with UK property in pre-FA-2025 trust structures.
+- Strict reform discipline: residence drives income tax + CGT (post-FA 2025); residence (via LTR) drives IHT (post-FA 2025); domicile only residually operates for trust mechanics + private international law + certain DTAs.
+
+### Lead-gen architecture
+- `LeadForm` auto-injects at footer; do NOT duplicate in body.
+- Inline `<aside>` CTAs at three conversion moments (high-intent reader often at a residency decision-point): (a) after the SRT cascade section; (b) after the LTR-for-IHT section; (c) after the "What should you do" closing section.
+- Calibrate the asides to specialist expat / non-dom advisory positioning.
+
+### Schema
+- FAQs declared in frontmatter `faqs:` array; emitted automatically as `FAQPage` JSON-LD on build.
+- 12 FAQs (hub primer for a complex multi-statute cluster warrants the upper end of the non-pillar range).
+
+### Cannibalisation cross-link discipline
+- HEAVY cross-link with C7 (`remittance-basis-tax-insights-for-non-domiciled-individuals`, the historical-context sister — what ended).
+- HEAVY cross-link with the four existing deep-dive pages: FIG operational; FIG Year-5 cliff; TRF Sch 10; CGT rebasing FA 2025 Sch 11.
+- This page is ONE STEP UPSTREAM of all four deep-dives and C7. Position it as "the foundational page — answer 'am I UK-resident?' first, then read the deep-dives."
+- Do NOT re-walk FIG / TRF / rebasing operational mechanics. Route the reader.
+
+### House-position anchors
+- HP §17.1 (SRT); §17.2 (split-year); §17.3 (temporary non-residence); §17.4 (NRCGT); §17.5 (NRL scheme); §17.6 (domicile reform headline); §17.7 (expat compliance); §17.8 (FIG); §17.9 (TRF); §17.10 (CGT rebasing).
+- HP §22.X (IHT LTR test — RUN session verifies current paragraph number).
+- HP §15.6 (IHT non-resident residence test).
+- No new HP lock required. The page is the comprehensive primer for the existing §17 cluster.
+
+### Quality bar (six verifications at build)
+- Body word count target: 2,800-3,200.
+- FAQs: 12.
+- External authority links: 12-15 (legislation.gov.uk FA 2013 Sch 45, ITTOIA 2005 ss.845A-845J, IHTA 1984 ss.6A-6C + s.48ZA, TCGA 1992 s.10A + Sch 4ZZB, ITA 2007 Part 14, SI 1995/2902; HMRC RDR3, HMRC RDRM; STEP and ICAEW non-dom hubs; Big Four briefings for drift-catch).
+- Em-dashes in body: 0.
+- Tailwind classes in markdown body: 0 (semantic HTML only).
+- FAQ schema count in built HTML == frontmatter `faqs:` array length.
+- Meta title <= 62 chars; meta description <= 158 chars.
+- Internal `/blog/...` links resolve (verify the four deep-dive pages and C7 markdown files on disk before linking; C7 is in this same M1-C-B2 batch).
+
+### Anti-templating opening
+Lead with the **two-concept distinction**, NOT "domicile is where you have your permanent home" which is simplistic and reform-blind. Suggested opening sentence shape:
+
+> "UK tax residence and UK domicile are two distinct legal concepts. From 6 April 2025, UK tax residence drives income tax and CGT under the Statutory Residence Test at FA 2013 Schedule 45, and substantially drives IHT via the Long-Term Resident test at IHTA 1984 ss.6A-6C. UK domicile no longer drives income tax or CGT and only residually operates for IHT trust mechanics, private international law, and certain DTA contexts. This page walks through the SRT cascade, the LTR test, the split-year cases, and the property-investor angles, then routes you to the deep-dive pages on FIG, TRF, CGT rebasing, and the IHT LTR architecture."
+
+## Stage 2 verification (2026-05-26)
+
+- **Statutory citations.** Stage 1 seed cited FA 2013 Sch 45 (SRT + split-year Cases 1-8); IHTA 1984 ss.6A-6C + ss.267ZC-267ZF + s.48ZA (LTR); ITTOIA 2005 ss.845A-845J (FIG); FA 2025 s.40 + Sch 9 (remittance basis abolition); FA 2025 s.41 + Sch 10 (TRF); FA 2025 s.42 + Sch 11 (CGT rebasing); ITA 2007 Part 14 Chapter 5 ss.971-973 + SI 1995/2902 (NRL); TCGA 1992 Sch 1A + Sch 4ZZB (NRCGT); TCGA 1992 s.10A (temporary non-residence). All anchored to the locked §17 + §22 + §15 cluster. RUN session re-verifies FA 2013 Sch 45 and FA 2025 Schs 9-11 against legislation.gov.uk consolidated text at write time.
+- **HP-lock status.** No new lock required. Existing §17 / §22 / §15 anchors operative.
+- **Competitor URL verification at write time (RUN session fetches):**
+  - HMRC RDR3 SRT operational guidance (gov.uk publication).
+  - HMRC RDRM landing: `https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis`.
+  - HMRC FIG / TRF / non-dom reform guidance hub on gov.uk.
+  - STEP residence + domicile hub.
+  - ICAEW residence + domicile reform briefings.
+  - Big Four (PwC / EY / Deloitte / KPMG) residence + domicile briefings for drift-catch only.
+- **Drift watchpoints (RUN session must surface as flags if hit):**
+  - SRT day-count + ties cascade has not been amended since 2013; verify no 2026 Finance Bill amendment at write date.
+  - LTR test architecture (FA 2025) is new and HMRC RDR / RDRM guidance is being rewritten across 2025-26. Verify current HMRC guidance section numbers before citing.
+  - Historic "deemed dom 15-of-20" framing must NOT appear in the body. The LTR test is 10 of 20.
+  - "Non-dom status" framing as if it confers current UK tax benefits for income / CGT is RETIRED. Must not appear post-6-April-2025.
+  - NRL scheme uses the "usual place of abode" test, NOT the SRT directly. Do NOT conflate.
+- **Authority link target (RUN session selects 12-15 from this list):** legislation.gov.uk FA 2013 Sch 45 / ITTOIA 2005 / IHTA 1984 / TCGA 1992 / ITA 2007 / FA 2025 anchors; HMRC RDR3 + RDRM; STEP hub; ICAEW briefing; Big Four reform briefings; gov.uk non-dom-reform publication hub.
+
+## Work log (RUN session populates)
+
+[RUN session records: slug / category / H1 / meta title decisions; competitor URLs fetched + key takeaway per URL; existing-page review (overlap + differentiation decision); citations added; internal links added; inline CTA placements; build attempts pass / fail; six verifications evidence; flags raised; 2-3 sentence summary at completion.]

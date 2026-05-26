@@ -84,8 +84,69 @@ Target length 3,000-3,400 words. Voice: reference-encyclopedia + doctrine-walkth
 - LA + VOA + LGA + LITRG manuals: VOA Council Tax Manual; LGA s.11 + Sch 1 practice notes; LITRG council-tax pages.
 - **Stage 1b drift watchpoint:** the Sch 1 paragraph numbering has been amended several times since 1992 (paragraph 8A was inserted; some paragraphs have been renumbered). Stage 2 verifies the current consolidated paragraph numbering. The carer disregard (paras 9-10) was substantively amended in 2009 to widen the carer-cared-for relationship test; Stage 2 verifies current wording. The student-definition cross-references (SI 1992/558 + SI 2005/2865) have been re-numbered through the EU exit transition; Stage 2 verifies current SI references and any post-Brexit amendments to the "EEA institution" qualifying-course definition.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; reference-encyclopedia + doctrine-walkthrough + statute-citation-throughout; reader audience: advisers, LA officers, complex-disregard households, VTE appeal preparers); lead-gen architecture (LeadForm + aside-CTAs after the "Sole or main residence" section + after the "All-disregarded-residents outcome" section); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (HEAVY cross-link with C6 hub + C8 operational sister; lighter cross-link with the wider council-tax cluster); house-position anchors (proposed §30 council-tax framework lock per F-100); quality bar (word count 3,000-3,400; FAQs 12; external authority links 12-15; build clean; six verifications); anti-templating (lead with the **eleven-disregard architecture** — "The single-person council tax discount under LGFA 1992 s.11(1)(a) reduces a dwelling's council tax bill by 25% where only one non-disregarded adult is resident. Schedule 1 to the same Act lists eleven categories of adult who are disregarded for this purpose — meaning a multi-adult household can still qualify if the additional adults fall within a disregard category. This guide walks through the full statutory architecture, each disregard in operative detail, the sole-or-main-residence doctrine, and every interaction with the SI 1992/558 exemption classes." — NOT with "If you live alone you get a discount" which is the C8 / C6 lede).]
+## Universal rules
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+### Voice
+- No em-dashes (use commas, parentheses, full stops, or middle dots).
+- Tone: reference-encyclopedia plus doctrine-walkthrough plus statute-citation-throughout. The page is the technical / reference primer, NOT the applicant operational page (C8 is the operational sister).
+- Reader audience: advisers (accountants, council-tax consultants, citizens-advice case-workers, social-housing welfare officers); local authority council-tax officers; persons in complex disregard scenarios (multi-disregarded households, mixed-student-plus-working-adult, annex / dependent-relative configurations); persons preparing a Valuation Tribunal appeal.
+- Statute citations on every operative claim. Sch 1 paragraph numbers and SI 1992/558 Class letters quoted explicitly.
+- Cross-jurisdictional discipline: England + Wales + Scotland share LGFA 1992 s.11 architecture (per HP §30.6); Northern Ireland operates a separate rating system with NO council tax. Do NOT conflate.
+
+### Lead-gen architecture
+- `LeadForm` auto-injects at footer; do NOT duplicate in body.
+- Inline `<aside>` CTAs at two conversion moments: (a) after the "Sole or main residence" doctrine section (high-stakes decision point); (b) after the "All-disregarded-residents outcome" section (most-misunderstood architectural corner).
+- Calibrate the asides to specialist property-tax adviser positioning; this is the reference-grade page for advisers, not the consumer-facing applicant page.
+
+### Schema
+- FAQs declared in frontmatter `faqs:` array; emitted automatically as `FAQPage` JSON-LD on build.
+- 12 FAQs (reference / complete-guide framing warrants the upper end of the non-pillar range; the page covers eleven disregards plus the doctrinal corners).
+
+### Cannibalisation cross-link discipline
+- HEAVY cross-link with C6 (`reduce-your-council-tax-bill-in-the-uk`, the hub) and C8 (`single-person-council-tax-discount`, the operational applicant sister).
+- Light cross-link with C2 (new builds), C3 (HMO single-dwelling rule), C4 (housing market policy critique) for cluster cohesion.
+- This page is the **doctrinal reference**; do NOT duplicate C8's how-to-apply operational flow or C6's six-route hub framing. Anchor to those instead.
+- The page's lede must explicitly differentiate from C8's "if you live alone..." opener (eleven-disregard architectural framing instead).
+
+### House-position anchors
+- **HP §30** (council-tax framework, LGFA 1992 + SI 1992/558 architecture, locked 2026-05-26 at Stage 1b commit `7877f1c`, sign-off `ce56071`).
+- Sub-anchors used: HP §30.1 (statutory foundation); §30.2 (SI architecture, full Class N / U / S / W / M); §30.3 (discount mechanics); §30.4 (premium powers post-LURA 2023); §30.5 (HMO and owner-liability mechanics); §30.6 (cross-jurisdictional notes); §30.10 (practical writing rule).
+- This page is the canonical reference for the §30 lock's single-person-discount sub-cluster; future council-tax cluster pages link here for the doctrinal architecture.
+
+### Quality bar (six verifications at build)
+- Body word count target: 3,000-3,400 (reference / complete-guide framing earns the upper-of-non-pillar word count).
+- FAQs: 12.
+- External authority links: 12-15 (legislation.gov.uk LGFA 1992 Sch 1 + SI 1992/558 + Sch 4 + Sch 1A; VOA Council Tax Manual; LGA s.11 + Sch 1 practice notes; LITRG hub; Citizens Advice; Williams v Horsham DC + Bennett v Copeland BC case-law references; 3-5 Valuation Tribunal authorities on each major disregard category).
+- Em-dashes in body: 0.
+- Tailwind classes in markdown body: 0 (semantic HTML only).
+- FAQ schema count in built HTML == frontmatter `faqs:` array length.
+- Meta title <= 62 chars; meta description <= 158 chars.
+- Internal `/blog/...` links resolve (verify C6 + C8 markdown files on disk; C8 is in this same M1-C-B2 batch so sequencing matters).
+
+### Anti-templating opening
+Lead with the **eleven-disregard architecture** framing, NOT "if you live alone you get a discount" which is the C8 / C6 opener. Suggested opening sentence shape:
+
+> "The single-person council tax discount under Local Government Finance Act 1992 s.11(1)(a) reduces a dwelling's council tax bill by 25% where only one non-disregarded adult is resident. Schedule 1 to the same Act lists eleven categories of adult who are 'disregarded' for this purpose, meaning a multi-adult household can still qualify if the additional adults fall within a disregard category. This guide walks through the full statutory architecture, each disregard in operative detail, the sole-or-main-residence doctrine developed across the Williams v Horsham DC and Bennett v Copeland BC line, and every interaction with the SI 1992/558 exemption classes."
+
+## Stage 2 verification (2026-05-26)
+
+- **Statutory citations.** Stage 1 seed cited LGFA 1992 s.11 (all sub-sections), Sch 1 (paras 1-12 incl. 8A), s.16 + s.66, Sch 4; SI 1992/558 Classes N / U / S / W / M; SI 1992/554 (disability reduction adjacency); SI 1992/290 (banding proposals); LGFA 2012 Sch 1A architecture; SI 2012/2885 (pensioner CTR). All anchored to HP §30 (locked). RUN session re-verifies Sch 1 current paragraph numbering against legislation.gov.uk consolidated text at write time — the carer disregard (paras 9-10) was substantively amended in 2009, and EU-exit transitional amendments to the student-definition cross-references (SI 1992/558 + SI 2005/2865) may have re-numbered associated sub-paragraphs.
+- **HP-lock status.** §30 locked (commit `7877f1c`). F-100 closed. C9 is the canonical reference page for the §30 lock's single-person-discount sub-cluster.
+- **Competitor URL verification at write time (RUN session fetches):**
+  - gov.uk council-tax discounts hub: `https://www.gov.uk/council-tax`.
+  - gov.uk Sch 1 disregards specific guidance pages (gov.uk has separate citizen-facing pages for the carer disregard, the student disregard, the severely-mentally-impaired disregard).
+  - LGA practice notes on s.11 + Sch 1 + SI 1992/558 interactions.
+  - LITRG council-tax pages — the doctrine-grade reference outside government.
+  - VOA Council Tax Manual.
+  - Citizens Advice + Shelter + Age UK consumer references.
+- **Drift watchpoints (RUN session must surface as flags if hit):**
+  - Sch 1 paragraph numbering has been amended several times since 1992 (paragraph 8A inserted; some paragraphs re-numbered). Verify current consolidated paragraph numbering at write date.
+  - Carer disregard (paras 9-10) substantively amended in 2009 to widen the carer-cared-for relationship test. Verify current wording.
+  - Student-definition cross-references (SI 1992/558 + SI 2005/2865) re-numbered through the EU-exit transition. Verify current SI references and any post-Brexit amendments to the "EEA institution" qualifying-course definition.
+  - Williams v Horsham DC + Bennett v Copeland BC are the leading sole-or-main-residence authorities; verify current Valuation Tribunal jurisprudence has not added a more-recent decision that displaces them.
+  - Premium powers under ss.11A-11C extended by LURA 2023 — verify LA-by-LA implementation status at write date.
+- **Authority link target (RUN session selects 12-15 from this list):** legislation.gov.uk LGFA 1992 c.14 + s.11 + s.16 + Sch 1 + Sch 4 + Sch 1A; SI 1992/558; SI 1992/554; SI 2012/2885; gov.uk council-tax hub + disregard sub-pages; VOA Council Tax Manual; LGA practice notes; LITRG council-tax pages; Williams v Horsham DC [2004] EWCA Civ 39 citation; Bennett v Copeland BC citation; 3-5 representative VTE / FTT authorities on individual disregard categories.
+
+## Work log (RUN session populates)
+
+[RUN session records: slug / category / H1 / meta title decisions; competitor URLs fetched + key takeaway per URL; existing-page review (overlap + differentiation decision); citations added; internal links added; inline CTA placements; build attempts pass / fail; six verifications evidence; flags raised; 2-3 sentence summary at completion.]

@@ -69,8 +69,70 @@ Target length 2,000-2,400 words. Slightly shorter than the council-tax cluster p
 - HMRC manual cross-references: PIM1010+ (rental income); SDLTM13000+ (lease NPV); CG14750+ (CGT market value).
 - **Stage 1b drift watchpoint:** the RICS Red Book is revised periodically — current edition is RICS Valuation — Global Standards (effective 31 January 2022) + the UK National Supplement (effective 14 November 2023). Stage 2 verifies the current edition + verifies the SDLT lease-NPV discount rate (currently 3.5% — but subject to periodic revision; Stage 2 confirms at write date). The MEES exemption thresholds (£3,500 Capped Threshold) and the EPC-C-by-2030 proposed reform must NOT appear as in-force — see HP §26.3 do-not-write for the EPC-C drift.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; reframing primer + statute-grounded + practical-decision-framework; reader audience: landlords searching for "free rental valuation" who don't yet understand the Red Book / appraisal distinction); lead-gen architecture (LeadForm + aside-CTAs after the "When do I need a Red Book valuation" section + after the "Can my accountant provide a rental valuation" section — high-intent reader at a tax / compliance decision-point); schema (FAQs in frontmatter; FAQPage JSON-LD; 10 FAQs); cannibalisation cross-link discipline (cross-link to existing ATED pages; cross-link to C12 selling-house-below-market-value page (chargeable-consideration thread sister); no overlap with existing pages); house-position anchors (HP §1 + §4 + §5 + §18 cross-references); quality bar (word count 2,000-2,400; FAQs 10; external authority links 8-10; build clean; six verifications); anti-templating (lead with the **reframing** — "An estate-agent's free rental valuation is a marketing appraisal, not a tax-defensible valuation document. For tax, lender, court, tribunal, and HMRC purposes, the standard is a RICS Red Book valuation issued by a chartered surveyor. This page explains when each is appropriate and the eight tax / compliance use-cases where the Red Book valuation is the only acceptable evidence." — NOT with "Get a free rental valuation here" which the firm does not offer and which is misleading).]
+## Universal rules
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+### Voice
+- No em-dashes (use commas, parentheses, full stops, or middle dots).
+- Tone: reframing primer plus statute-grounded plus practical-decision-framework. Helpful and explainer-like. NO over-promising of valuations the firm cannot deliver.
+- Reader audience: landlords searching for "free rental valuation" who don't yet understand the Red Book / appraisal distinction; advisers explaining the valuation requirement to clients; landlords planning a connected-person transfer or a lender refinance; landlords facing a rent review on a commercial lease.
+- Reframing posture: the firm is a property-tax accountancy, NOT a letting agent. The page actively warns against the lead-magnet "free rental valuation" framing for tax / compliance use-cases.
+
+### Lead-gen architecture
+- `LeadForm` auto-injects at footer; do NOT duplicate in body.
+- Inline `<aside>` CTAs at two conversion moments (high-intent reader at a tax / compliance decision-point): (a) after the "When do I need a Red Book valuation" section (the reader has just realised they need a Red Book valuation and an accountancy view); (b) after the "Can my accountant provide a rental valuation" section (reader understands the firm's upstream / downstream role around the surveyor's product).
+- Calibrate the asides to specialist property-tax adviser positioning; the page is NOT a valuation offer.
+
+### Schema
+- FAQs declared in frontmatter `faqs:` array; emitted automatically as `FAQPage` JSON-LD on build.
+- 10 FAQs (narrower-than-most-cluster-pages primer; lower-of-range FAQ count is appropriate).
+
+### Cannibalisation cross-link discipline
+- Cross-link to the existing ATED pages (`ated-overview-companies-holding-uk-residential-property-2026-27` + `ated-rates-2026-27-bands-table-worked-examples` + `ated-valuation-date-rules-2027-revaluation`) on the ATED revaluation use-case.
+- Cross-link to C12 (`selling-house-below-market-value`) on the chargeable-consideration thread (sister page; same M1-C-B2 batch).
+- No overlap with existing pages on the Red Book / appraisal distinction. Verified clean on site-search 2026-05-26.
+
+### House-position anchors
+- HP §1 (SDLT framework, for the lease-NPV chargeable-consideration mechanic under FA 2003 Sch 17A).
+- HP §4 (Section 24 finance-cost restriction, for the income-modelling use-case).
+- HP §5 (CGT, for the connected-person market-value rule under TCGA 1992 s.17).
+- HP §18 (ATED, for the 5-yearly revaluation use-case).
+- HP §26.3 (do-not-write list for MEES, specifically EPC-C-by-2030 NOT in force).
+- No new HP lock required.
+
+### Quality bar (six verifications at build)
+- Body word count target: 2,000-2,400 (narrower primer scope).
+- FAQs: 10.
+- External authority links: 8-10 (RICS Red Book overview + Find a Surveyor; legislation.gov.uk FA 2003 Sch 17A + LBTT(S)A 2013 Sch 19 + ITTOIA 2005 + TCGA 1992 + FA 2013 + SI 2015/962; HMRC PIM + SDLTM + CG manuals; Revenue Scotland LBTT lease-NPV guidance).
+- Em-dashes in body: 0.
+- Tailwind classes in markdown body: 0 (semantic HTML only).
+- FAQ schema count in built HTML == frontmatter `faqs:` array length.
+- Meta title <= 62 chars; meta description <= 158 chars.
+- Internal `/blog/...` links resolve (verify ATED pages exist on disk; C12 is in this same batch — sequence after C12 or check markdown file before linking).
+
+### Anti-templating opening
+Lead with the **reframing**, NOT "get a free rental valuation here" which the firm does not offer and which is misleading. Suggested opening sentence shape:
+
+> "An estate-agent's 'free rental valuation' is a marketing appraisal, not a tax-defensible valuation document. For tax, lender, court, tribunal, and HMRC purposes, the standard is a RICS Red Book valuation issued by a chartered surveyor. This page explains when each is appropriate and walks through the eight tax and compliance use-cases where a Red Book valuation is the only acceptable evidence."
+
+## Stage 2 verification (2026-05-26)
+
+- **Statutory citations.** Stage 1 seed cited FA 2003 Sch 17A + Annex (SDLT lease-NPV); LBTT(S)A 2013 Sch 19 (Scottish equivalent); ITTOIA 2005 Part 3 (ss.260-364) + ss.34, 272, 272A-272B; TCGA 1992 s.17; IHTA 1984 ss.3A + 4 + 49; FA 2013 Sch 33 (ATED); SI 2015/962 (MEES); Landlord and Tenant Act 1954 Part II. RUN session re-verifies FA 2003 Sch 17A consolidated text at write date — the lease-NPV discount rate (currently 3.5%) is subject to periodic revision.
+- **HP-lock status.** No new lock required. Existing §1 + §4 + §5 + §18 + §26.3 anchors operative.
+- **Competitor URL verification at write time (RUN session fetches):**
+  - RICS Red Book overview: `https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/valuation-standards`.
+  - RICS Find a Surveyor: `https://www.ricsfirms.com/`.
+  - HMRC PIM (Property Income Manual): `https://www.gov.uk/hmrc-internal-manuals/property-income-manual`.
+  - HMRC SDLTM (Stamp Duty Land Tax Manual): `https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual`.
+  - HMRC CG (CGT Manual): `https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual`.
+  - Revenue Scotland LBTT lease-NPV guidance.
+  - 3-4 representative estate-agent free-valuation marketing pages for drift-catch only (do NOT borrow-pattern).
+- **Drift watchpoints (RUN session must surface as flags if hit):**
+  - RICS Red Book current edition: Valuation Global Standards (effective 31 January 2022) plus UK National Supplement (effective 14 November 2023). Verify whether a new edition has issued by write date.
+  - SDLT lease-NPV discount rate (currently 3.5%) — verify against current HMRC SDLTM guidance at write date.
+  - MEES regulations: the £3,500 Capped Threshold is operative; the EPC-C-by-2030 proposed reform is NOT in force (per HP §26.3 do-not-write). Must not appear as in-force.
+  - "Wholly and exclusively" test under ITTOIA 2005 s.34 may shift through HMRC guidance updates. Verify HMRC PIM section number at write date.
+- **Authority link target (RUN session selects 8-10 from this list):** RICS Red Book overview + Find a Surveyor; legislation.gov.uk FA 2003 Sch 17A + LBTT(S)A 2013 Sch 19 + ITTOIA 2005 + TCGA 1992 s.17 + FA 2013 Sch 33 + SI 2015/962; HMRC PIM + SDLTM + CG anchor pages; Revenue Scotland LBTT lease-NPV; one Lands Tribunal authority on Red Book valuation evidence.
+
+## Work log (RUN session populates)
+
+[RUN session records: slug / category / H1 / meta title decisions; competitor URLs fetched + key takeaway per URL; existing-page review (overlap + differentiation decision); citations added; internal links added; inline CTA placements; build attempts pass / fail; six verifications evidence; flags raised; 2-3 sentence summary at completion.]

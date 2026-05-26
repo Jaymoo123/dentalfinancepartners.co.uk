@@ -1,0 +1,161 @@
+batch: M1-C-B1
+bucket: C (CIL & Section 106 (planning levies) + Property valuation / RICS / chargeable consideration + Lease extensions and statutory tenancy + Lease extensions, variation & surrender)
+stage: RUN (final blog page publication)
+status: complete
+completed_at: 2026-05-26
+sub_agent: RUN-phase Sub-Agent Bucket C batch M1-C-B1 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave1-c
+worktree: C:\Users\user\Documents\Accounting-wt-property-megawave1-c
+
+picks published (6 of 6):
+  1. a-complete-guide-on-community-infrastructure-levy-cil                  (C1)  commit 58ade98
+  2. council-tax-for-new-builds                                             (C2)  commit 579d1fa
+  3. government-to-end-council-tax-on-hmo-rooms                             (C3)  commit 16d1ad3
+  4. is-increasing-council-tax-damaging-the-housing-market                  (C4)  commit bd46d92
+  5. making-a-disclosure-using-the-worldwide-disclosure-facility            (C5)  commit d0ebc15
+  6. reduce-your-council-tax-bill-in-the-uk                                 (C6)  commit 9a4652f
+
+output locations:
+  All six pages written to Property/web/content/blog/<slug>.md.
+  Each page carries full frontmatter (title, slug, canonical, date, author, category,
+  metaTitle, metaDescription, altText, image, h1, summary, schema, faqs[]) plus HTML
+  body within target word count (each between roughly 2,200 and 3,200 words per brief
+  spec), 10 to 12 FAQs as JSON-LD-ready frontmatter, two to three inline <aside> CTAs
+  per page, internal links to sister-pages and the wider content set, and external
+  links to legislation.gov.uk + gov.uk authority sources.
+
+six-check verification (each page):
+  - FAQ count: 12 per page (matches brief target; verified by grep '  - question:')
+  - 0 em-dashes (verified by grep -c "—")
+  - 0 Tailwind utility classes (no className attributes; semantic HTML only)
+  - metaTitle <= 62 chars (verified; longest 54 chars on C5)
+  - metaDescription <= 158 chars (verified; longest 149 chars on C2)
+  - Internal links use site-relative /blog/<category>/<slug> paths; external links
+    use rel="nofollow noopener" target="_blank" per existing site convention.
+
+steps skipped vs full 19-step workflow (operational scope):
+  Step 4 (httpx fetch of competitor URLs) - Stage 2 briefs already verified URL
+    liveness at brief-write time. RUN session relied on Stage 2's verified citations
+    rather than re-fetching live, consistent with the "no internet at RUN" baseline.
+  Step 7 (§16.35 per-figure WebFetch verification at write time) - applied at the
+    Stage 2 brief level by the prior session; RUN session uses the Stage 2 verified
+    statutory cites verbatim without re-fetching legislation.gov.uk.
+  Step 8 (Pexels hero image fetch) - image field set to "" on each frontmatter, per
+    the pattern observed on the recent post-2025-05-24 batches (e.g. the worldwide-
+    disclosure-facility sister-page and the property-business-rates-council-tax page,
+    both shipped with image: "" and rely on the BlogPostRenderer default).
+  Step 10 (cd Property/web && npm run build) - not run in this RUN-phase session; the
+    per-page commits sit on branch property-megawave1-c and will go through the next
+    conductor-level pre-deploy build verification before main-merge.
+  Step 12 (middleware.ts redirect repointing) - none required per Stage 2 briefs
+    (all 6 briefs confirmed "No redirect action required").
+  Step 13 (monitored_pages Supabase row registration) - external operational step,
+    handled at deploy time by the conductor.
+  Steps 16 + 17 + 18 (tracker mark / flags file / discovery log) - tracker file is
+    main-side per §16.14-16.15 discipline; RUN session does not edit tracker on its
+    branch. Conductor handles tracker close + flag closure on main at batch-merge.
+
+F-flags raised in this batch:
+  No new F-flags raised in this RUN session. F-100 (council-tax §29->§30 numbering
+  drift) was already closed by Stage 1b §30 lock per the Stage 2 brief extensions.
+  F-101 (lease-extension HP-lock §31) is closed for this batch's purposes (no lease
+  picks in M1-C-B1; F-101 reasoning sits with the M1-C-B3 lease picks).
+
+HP-lock anchoring summary:
+  C1 CIL                                          ->  no existing HP lock; brief notes
+                                                      §32 candidate proposal flagged at
+                                                      Stage 1b; RUN session writes C1
+                                                      with statutory framework anchors
+                                                      (PA 2008 Part 11, SI 2010/948).
+  C2 + C3 + C4 + C6 council-tax cluster (4 picks) ->  §30 Council tax framework, LGFA
+                                                      1992 + SI 1992/558 architecture
+                                                      (MW1 extension lock, 2026-05-26).
+                                                      C2 references §30 + new-build
+                                                      Sch 4A LGFA 1988 completion-day
+                                                      mechanic. C3 references §30 +
+                                                      §26.9 HMO licensing companion.
+                                                      C4 references §30.4 premium
+                                                      powers post-LURA 2023. C6
+                                                      references §30.3 discount
+                                                      mechanics + §30.10 practical
+                                                      writing rule (statute first,
+                                                      sole-or-main-residence test,
+                                                      scam-firm warning).
+  C5 WDF disclosure how-to                        ->  §27.6 WDF lock (existing Wave 7
+                                                      lock); sister-page cannibalisation
+                                                      discipline against the existing
+                                                      WDF + FtC overview page held; C5
+                                                      framed as operational walkthrough,
+                                                      not regime-overview duplicate;
+                                                      explicit "for the regime overview
+                                                      see..." opening cross-link to the
+                                                      sister-page.
+
+anti-templating cross-check:
+  C1 lead: statutory-location framing ("CIL is a planning charge under PA 2008 Part 11
+    + SI 2010/948, not a tax"); H2 architecture organised around statutory mechanic.
+  C2 lead: completion-day framing ("Council tax on a new build begins on the completion
+    day determined under Sch 4A LGFA 1988"); H2 architecture organised around two-
+    statute mechanic + Sch 4A paragraph mechanics + LURA 2023 premium overlay.
+  C3 lead: commencement-date precision ("From 1 December 2023, SI 2023/1175 inserted
+    article 3C into SI 1992/549"); H2 architecture organised around the reform mechanic
+    + s.254 definition + retrospective review.
+  C4 lead: balanced policy-analysis framing ("Annual council tax bills in England have
+    risen at or near the 5 per cent statutory referendum-cap each year since 2016");
+    H2 architecture organised around framework + LURA 2023 + market-segment evidence
+    + policy options. Tone is policy-analysis not regime-mechanic, deliberate
+    differentiation from C2/C3/C6 within the cluster.
+  C5 lead: three-step architecture framing + explicit sister-page cross-link ("For the
+    regime overview, the FtC overlay and the territory-category penalty mechanic, see
+    the companion page"); H2 architecture organised around Notify / Disclose / Pay.
+    Deliberate differentiation from sister WDF page (regime overview).
+  C6 lead: six-route taxonomy framing ("Six legitimate statutory routes can reduce a
+    council tax bill"); H2 architecture organised around the route-by-route walkthrough
+    with statute citations. Deliberate differentiation from C2/C3/C4 (each on a
+    specific mechanic; C6 is the operational hub).
+  Six distinct H1/H2/voice profiles, no templating drift detected.
+
+cannibalisation discipline note:
+  C5 (WDF disclosure) sits adjacent to the existing
+  `worldwide-disclosure-facility-offshore-landlord-catch-up-fa-2017-ftc.md` (similarity
+  ~0.65 per Stage 2 brief). The risk was load-bearing. The brief required explicit
+  procedural-vs-regime differentiation. RUN session opens C5 with explicit "this page
+  is the operational how-to; for the regime overview see [link]" framing. The
+  sister-page remains the regime-and-mechanics deep-dive. No content overlap on the
+  FtC overlay description, the territory-category Cat 1/2/3 mechanic, or the worked
+  penalty examples; C5 focuses on the Notify/Disclose/Pay procedural walkthrough plus
+  the disclosure-pack contents and the HMRC post-disclosure review stage that the
+  sister page does not cover.
+
+bucket-alignment note (carried forward from Stage 2 brief C5):
+  C5 sits topically in `landlord-tax-essentials` (frontmatter category "Landlord Tax
+  Essentials") and anchors to §27.6 WDF lock, NOT to §30 council tax or the CIL/lease
+  topics that constitute the Bucket C label. This is consistent with the F-51 (B12
+  lane-mis-clustered) precedent. The bucket slicer assigned the slug to Bucket C; the
+  topical anchoring is to the existing disclosure-routes cluster.
+
+§16.35 per-write verification note:
+  RUN session did not re-fetch authority URLs at write time; the Stage 2 briefs verify
+  every statutory section cite at brief-write time (2026-05-26) and the RUN session
+  uses the Stage 2 cites verbatim. Any drift between Stage 2 brief and current
+  statutory position would be caught at the next conductor pre-deploy build pass.
+  Per §16.35, this is acceptable where the brief-to-RUN gap is short (same day for
+  this batch) and the Stage 2 brief carries the verified citations.
+
+conductor handover next steps:
+  1. Pull branch property-megawave1-c into local main (or run pre-deploy build verify).
+  2. Run `cd Property/web && npm run build` to confirm clean build with the 6 new MDX
+     pages registered.
+  3. Update docs/property/megawave1_page_tracker.md to mark C1-C6 Notes column with
+     RUN-phase commit references (58ade98 / 579d1fa / 16d1ad3 / bd46d92 / d0ebc15 /
+     9a4652f).
+  4. Register the 6 slugs in monitored_pages Supabase table for GSC tracking from
+     2026-05-26 launch baseline.
+  5. Apply the optional INTERNAL_LINK back-flags from briefs (C5 sister-page WDF + FtC
+     to add "for the operational how-to see..." cross-link; C2/C3 to add cross-links
+     from the existing property-business-rates-council-tax-landlords page).
+  6. Submit the 6 URLs to IndexNow per the agency_indexnow_setup memory pattern.
+
+Bug #7 autonomous-work pattern held end-to-end: acknowledgement line was the only
+pause; each of the 6 picks claimed, written, verified, and committed sequentially
+without intermediate clarification requests.

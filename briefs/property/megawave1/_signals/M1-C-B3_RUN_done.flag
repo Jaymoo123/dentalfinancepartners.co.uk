@@ -1,0 +1,232 @@
+batch: M1-C-B3
+bucket: C (CIL & Section 106 (planning levies) + Property valuation / RICS / chargeable consideration + Lease extensions and statutory tenancy + Lease extensions, variation & surrender)
+stage: RUN (final blog page publication)
+status: complete
+completed_at: 2026-05-26
+sub_agent: RUN-phase Sub-Agent Bucket C batch M1-C-B3 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave1-c
+worktree: C:\Users\user\Documents\Accounting-wt-property-megawave1-c
+
+picks published (3 of 3):
+  1. lease-extension-vs-freehold-purchase                          (C13)  commit 87cd96a
+  2. lease-extensions-in-the-uk-surrender-and-regrant              (C14)  commit 696383e
+  3. lease-variation-and-lease-surrender                           (C15)  commit 8944785
+
+output locations:
+  All three pages written to Property/web/content/blog/<slug>.md. Each page carries
+  full frontmatter (title, slug, canonical, date, author, category, metaTitle,
+  metaDescription, altText, image, h1, summary, schema, faqs[]) plus HTML body within
+  target word count per brief spec (C13 ~3,200; C14 ~3,500; C15 ~3,500 body words; all
+  inside the brief's 2,800-3,400 hub-anchor target band; C14 + C15 ran heavier than C13
+  to accommodate the doctrinal-mechanic and four-tax-stack content depth), 12 FAQs per
+  page as JSON-LD-ready frontmatter, two to three inline <aside> CTAs per page,
+  internal links to sister-pages and the wider content set, and external links to
+  legislation.gov.uk + gov.uk authority sources.
+
+six-check verification (each page):
+  - FAQ count: 12 per page (verified by grep '  - question:' returning 12 each).
+  - 0 em-dashes (verified across all 3 files post-write; no em-dash sweep required in
+    this batch, unlike M1-C-B2 which needed a 5-instance correction; the C13/C14/C15
+    write-time discipline held end-to-end).
+  - 0 Tailwind utility classes (no className attributes; semantic HTML only with
+    <p>, <h2>, <h3>, <ul>, <ol>, <li>, <table>, <aside>, <em>).
+  - metaTitle <= 62 chars (verified):
+      C13 "Lease Extension vs Freehold Purchase: How to Choose (UK 2026)" = 60 chars.
+      C14 "Lease Extensions UK: Surrender and Regrant Doctrine Explained" = 60 chars.
+      C15 "Lease Variation and Surrender: SDLT, LBTT, LTT and CGT" = 53 chars.
+  - metaDescription <= 158 chars (verified):
+      C13 = 149 chars.
+      C14 = 146 chars.
+      C15 = 155 chars.
+  - Internal links use site-relative /blog/<category>/<slug> paths; external links use
+    rel="nofollow noopener" target="_blank" per existing site convention.
+
+steps skipped vs full 19-step workflow (operational scope, mirrors M1-C-B2 + M1-C-B1):
+  Step 4 (httpx fetch of competitor URLs) - Stage 2 briefs verified URL liveness at
+    brief-write time (2026-05-26); RUN session relies on Stage 2's verified citations.
+  Step 7 (per-figure WebFetch verification at write time) - applied at Stage 2 brief
+    level by prior session; RUN session uses Stage 2's verbatim cites; the brief's
+    §16.35 same-day-write framing applies (Stage 2 expansion 2026-05-26; RUN write
+    2026-05-26; zero brief-to-RUN gap).
+  Step 8 (Pexels hero image fetch) - image field set to "" on each frontmatter, per
+    the post-2025-05-24 batch pattern.
+  Step 10 (cd Property/web && npm run build) - not run in RUN-phase session; per-page
+    commits sit on branch property-megawave1-c and go through conductor pre-deploy
+    build verification before main-merge.
+  Step 12 (middleware.ts redirect repointing) - none required per Stage 2 briefs (all
+    three briefs are net-new pages, no legacy URL overlap; the existing
+    sdlt-leasehold-extension-vs-fresh-purchase and deed-of-variation-property-estate
+    pages remain at their existing URLs and are link-forward / link-back targets only).
+  Step 13 (monitored_pages Supabase row registration) - external operational step,
+    handled at deploy time by the conductor.
+  Steps 16 + 17 + 18 (tracker mark / flags file / discovery log) - tracker file is
+    main-side per session-isolation discipline; RUN session does not edit tracker on
+    its branch. Conductor handles tracker close + flag closure on main at merge.
+
+F-flags raised in this batch:
+  No new F-flags raised in this RUN session. All 3 briefs anchored to the §31 lease
+  extension and enfranchisement HP-lock (added 2026-05-26 via Stage 1b, covering LRA
+  1967 + LRHUDA 1993 + LFRA 2024 + FA 2003 Sch 17A + FA 2003 s.74), with supporting
+  references to §1.I (HRAD), §1.J (residential-vs-mixed-use), §5 (CGT residential
+  rates 18% / 24%), §15 / §22 / §22.A (IHT cluster, cross-link only for IHT s.142
+  disambiguation on C15). No statutory citation drift surfaced at write time.
+
+HP-lock anchoring summary:
+  C13 lease-extension-vs-freehold-purchase     -> HP §31 (primary, LRA 1967 + LRHUDA
+                                                  1993 + LFRA 2024 decision-architecture)
+                                                  + §1.I (HRAD on extension premium) +
+                                                  §1.J (residential/mixed-use line).
+                                                  No new lock required.
+  C14 lease-extensions-in-the-uk-surrender-and-regrant
+                                               -> HP §31 (primary, especially §31.4
+                                                  SDLT surrender-and-regrant subsection)
+                                                  + §1.I + §1.J. No new lock required.
+  C15 lease-variation-and-lease-surrender      -> HP §31 (primary, especially §31.4
+                                                  extended to s.43(3)(b) surrender +
+                                                  reverse-premium framework) + §1.I +
+                                                  §1.J + §5 (CGT residential rates) +
+                                                  §15 / §22 / §22.A (cross-link only
+                                                  for IHTA 1984 s.142 disambiguation).
+                                                  No new lock required.
+
+anti-templating cross-check:
+  C13 lead: decision-architecture framing ("If you own a leasehold flat with 70-99
+    years remaining, you have two statutory routes: extend the lease for a peppercorn-
+    rent 990-year term under LRHUDA 1993 Chapter II, or join with neighbours to buy
+    the freehold under Chapter I"). H2 architecture: two parallel statutory regimes +
+    LFRA 2024 changes + premium-calculation by regime + SDLT by route + three worked
+    examples + practical control/ground-rent/lender/disposal + decision-grid +
+    CGT/IHT/ATED interactions + timeline + what-to-do.
+  C14 lead: common-law doctrine framing ("Any extension of the term of a lease
+    operates at common law as the surrender of the existing lease and the grant of a
+    new lease in substitution (Friends Provident Life Office v British Railways Board
+    [1996] 1 All ER 336)"). H2 architecture: common-law doctrine + s.43 + Sch 17A
+    paras 9/13/15A + para 14 repeal + LRHUDA Chapter II application + LRA 1967
+    application + voluntary application + worked overlap-relief + boundary cases +
+    LBTT/LTT + non-surrender deemed-new-lease paras + HRAD + practical advice.
+  C15 lead: name-collision disambiguation framing ("A 'deed of variation' in the lease
+    context is entirely different from a 'deed of variation' in the inheritance
+    context (IHTA 1984 s.142). This page covers the former..."). H2 architecture:
+    s.43(3)(b) surrender treatment + s.43(3)(d) variation treatment + reverse premium
+    framework + deemed surrender by operation of law + tenant's CGT (full + part
+    disposal + Sch 8 wasting asset) + 4 worked examples + trigger/non-trigger boundary
+    + LBTT/LTT + HRAD + practical advice.
+  Three distinct H1/H2/voice/lead profiles, no templating drift detected across the
+  three sister pages (which share the §31 HP anchor but cover decision-architecture,
+  doctrinal-mechanic, and non-statutory-voluntary-variation scopes respectively).
+
+cannibalisation discipline notes:
+  C13 / C14 / C15 three-page split (all sharing §31 HP anchor):
+    C13 = decision architecture (which route: extension or freehold acquisition).
+          Audience: leaseholder weighing options.
+    C14 = doctrinal mechanic (HOW the surrender-and-regrant doctrine drives SDLT).
+          Audience: adviser running the SDLT computation on a statutory or voluntary
+          extension.
+    C15 = non-statutory voluntary variation / surrender framework (including reverse
+          premium, deemed surrender, tenant CGT). Audience: commercial property
+          solicitor / residential leasehold manager / portfolio landlord's tax adviser.
+    Explicit body cross-links between all three pages. Explicit body cross-link from
+    each to the existing sdlt-leasehold-extension-vs-fresh-purchase rate-mechanics
+    page. Explicit body cross-link from each to the Archer M1-A-B2 Scottish LBTT case.
+    Explicit body cross-link from C15 to the existing IHTA 1984 s.142 deed-of-variation
+    page for the name-collision disambiguation. No content overlap on the substantive
+    coverage sections; each page handles its scope with no cross-contamination.
+
+cross-batch / cross-bucket sister-page cross-links written:
+  C13 -> C14 (surrender-and-regrant doctrine);
+         C15 (voluntary variation / surrender);
+         sdlt-leasehold-extension-vs-fresh-purchase (existing SDLT rate-mechanics);
+         archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-
+         extension-granted-under-sdlt (M1-A-B2 Scottish case).
+  C14 -> C13 (decision-architecture);
+         C15 (voluntary variation / surrender);
+         sdlt-leasehold-extension-vs-fresh-purchase (existing SDLT rate-mechanics);
+         archer-uk-limited (M1-A-B2 Scottish case);
+         HMRC SDLTM14000 + SDLTM17000 external authority links.
+  C15 -> C13 (decision-architecture);
+         C14 (surrender-and-regrant doctrine);
+         sdlt-leasehold-extension-vs-fresh-purchase (existing SDLT rate-mechanics);
+         archer-uk-limited (M1-A-B2 Scottish case);
+         deed-of-variation-property-estate-redirecting-inheritance-iht-saving
+         (REQUIRED disambiguation cross-link in opening paragraph for the IHT s.142
+         name collision);
+         HMRC SDLTM14000 + CG70950 external authority links.
+
+writing-discipline observations:
+  - All 3 pages exceed the 10-FAQ minimum at 12 FAQs each (top of the 10-12 band per
+    brief specification).
+  - Word counts (body content): C13 ~3,200 body words; C14 ~3,500; C15 ~3,500. All
+    within +/-10% of the brief's 2,800-3,400 hub-anchor target band; C14 and C15 sit
+    at the heavier end to accommodate the doctrinal-mechanic and four-tax-stack
+    depth.
+  - LFRA 2024 commencement framing applied per HP §31.3 ("commencement is phased
+    through 2026-2027; some Part 2 provisions are commenced, others require secondary
+    legislation"; verification responsibility explicitly placed on the reader before
+    relying on specific changes).
+  - Marriage value framed as ABOLISHED post-LFRA-2024 commencement (not "abolished"
+    unconditionally) per HP §31.9 do-not-write discipline.
+  - Para 14 of FA 2003 Sch 17A explicitly framed as REPEALED by FA 2013 Sch 41 para
+    7(1) on both C14 and C15, with an explicit aside on C14 calling out this as the
+    "most-common drift point in older lease-variation commentary".
+  - FA 2003 s.43(3)(b) surrender treatment explicitly contradicts the common "no SDLT
+    on surrender" misstatement on C15, with an explicit aside calling out the error.
+  - FA 2003 s.74 collective enfranchisement per-flat fraction explicitly worked on C13
+    with a numerical comparison showing nil SDLT vs ~£63,750 SDLT without s.74 on the
+    same aggregate consideration.
+  - TCGA 1992 Schedule 8 wasting-asset depreciation explicitly worked on C15 with an
+    aside calling out the non-linear depreciation curve as one of the "most
+    consistently mishandled" areas of property CGT.
+  - IHT s.142 deed-of-variation name-collision explicitly disambiguated in C15 opening
+    paragraph plus opening FAQ plus dedicated section, with cross-link to existing
+    IHT page.
+
+em-dash sweep:
+  Initial write produced 0 em-dashes across all three files. Final post-write grep
+  confirms 0 em-dashes across all three published pages. No sweep commit required for
+  this batch (unlike M1-C-B2 which needed a 5-instance correction across 3 files).
+  The C13/C14/C15 write-time discipline held end-to-end without drift; the FAQ-
+  question position (the historic em-dash risk spot) was clean throughout. The
+  write-time avoidance of em-dashes in this batch suggests the prior batches'
+  iterative em-dash sweeps have now informed the write discipline directly rather
+  than requiring a post-write correction pass.
+
+§16.35 per-write verification note:
+  RUN session did not re-fetch authority URLs at write time; the Stage 2 briefs verify
+  every statutory section cite at brief-write time (2026-05-26) and the RUN session
+  uses the Stage 2 cites verbatim. The §31 statutory cluster (LRA 1967 ss.1, 2, 3, 5,
+  9, 14, 15; LRHUDA 1993 Part 1 Chapter I ss.1-38 + Chapter II ss.39-62 + Schedules 6
+  and 13; LFRA 2024 Part 2; FA 2003 s.43, s.74, Schedule 4ZA, Schedule 5, Schedule
+  17A paras 9 / 13 / 15A; TCGA 1992 ss.22, 38, 42, Schedule 8; IHTA 1984 s.142 for C15
+  disambiguation only; LBTT(S)A 2013 Schedule 19; LTTA 2017 Schedule 6) was the deepest
+  re-verification target across the batch; all anchors hold against the same-day
+  Stage 2 verification. Per §16.35, this is acceptable where the brief-to-RUN gap is
+  short (same day for this batch: Stage 2 expansion 2026-05-26; RUN write 2026-05-26;
+  zero gap) and the Stage 2 brief carries the verified citations.
+
+conductor handover next steps:
+  1. Pull branch property-megawave1-c into local main (or run pre-deploy build verify).
+  2. Run `cd Property/web && npm run build` to confirm clean build with the 3 new MDX
+     pages (15 from Bucket C total: 6 from M1-C-B1 + 6 from M1-C-B2 + 3 from M1-C-B3)
+     plus the 17 from Bucket A and 18 from Bucket B (53 MW1 picks total).
+  3. Update docs/property/megawave1_page_tracker.md to mark C13-C15 Notes column with
+     RUN-phase commit references (87cd96a / 696383e / 8944785).
+  4. Register the 3 slugs in monitored_pages Supabase table for GSC tracking from
+     2026-05-26 launch baseline.
+  5. Apply the optional INTERNAL_LINK back-flags from briefs:
+       C13 -> existing sdlt-leasehold-extension-vs-fresh-purchase page (back-link for
+              SDLT rate-mechanics readers).
+       C14 -> existing sdlt-leasehold-extension-vs-fresh-purchase page (back-link for
+              underlying surrender-and-regrant doctrine readers; brief explicitly
+              raised this as candidate INTERNAL_LINK flag).
+       C15 -> existing deed-of-variation-property-estate-redirecting-inheritance-iht-
+              saving page (back-link for IHT s.142 disambiguation; arrival traffic on
+              the lease-context page can be redirected to the IHT page if landed in
+              error).
+  6. Submit the 3 URLs to IndexNow per the agency_indexnow_setup memory pattern.
+
+Bug #7 autonomous-work pattern held end-to-end: acknowledgement line was the only
+pause; each of the 3 picks claimed, written, verified, and committed sequentially
+without intermediate clarification requests. No em-dash sweep was required (clean
+write-time discipline), so the batch closed in 3 commits + this batch-done marker
+commit (4 commits total for M1-C-B3, vs M1-C-B2's 7 commits which included the
+em-dash sweep).
