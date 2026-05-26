@@ -50,8 +50,129 @@ Target length 2,400-2,800 words. The page is for taxpayers and advisers — high
 - Case-law: the specific FTT decision (Stage 2 identifies); Martland UKUT; BPP Holdings UKSC; Katib UKUT; Hicks FTT; Denton EWCA; any 2024-2025 FTT or UT decisions in the same line.
 - **Stage 1b drift watchpoint:** the FTT case citation is currently unconfirmed; Stage 2 must verify before publishing. Multiple candidate FTT decisions exist in this line — identifying the specific case is essential. If unconfirmable, the page repositions as a procedural-explainer with the Martland-line jurisprudence at depth and the page-title-suggested case discussed at the level secondary-source coverage allows.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; procedural-precision tone — careful with dates, deadlines, statutory references; the audience is taxpayers facing a real-time procedural decision about a late-appeal application); lead-gen architecture (LeadForm + aside-CTAs after the Martland-framework section and after the overpayment-relief alternative section — high-intent procedural audience often needing professional advice on whether to pursue late-appeal versus overpayment-relief route); schema (FAQs in frontmatter; FAQPage JSON-LD; target 10-12); cannibalisation cross-link discipline (heavy cross-link with sdlt-refund-scams + substantive case-analysis sister pages A9/A14/A16); house-position anchors (§1.N NEW LOCK CANDIDATE for SDLT appeal-procedure line); quality bar (word count 2,400-2,800; FAQs 10-12; external authority links 6-8; build clean; six verifications); anti-templating (lead with the **statutory 30-day window** at FA 2003 Sch 10 para 35 + the Martland framework — NOT with "If you think you've overpaid stamp duty..." which is the SDLT-refund-firm pitch the page is implicitly distancing from).]
+## Brief metadata (Stage 2)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+- **Site:** Property Tax Partners (www.propertytaxpartners.co.uk)
+- **Bucket:** A — SDLT, surcharges and reliefs + Second homes & council tax premium (MegaWave 1)
+- **Batch:** M1-A-B3
+- **Session assignment:** Stage 2 Sub-Agent Bucket A (rolling architecture, autonomous LEAF agent)
+- **Brief type:** net-new (procedural case-analysis)
+- **Source markdown path on launch:** `Property/web/content/blog/ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice.md`
+- **Live URL on launch:** `https://www.propertytaxpartners.co.uk/blog/ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice`
+- **House-position anchors:** **NEW HP-LOCK CANDIDATE F-flag raised: §1.N "SDLT appeal procedure + late-appeal jurisdiction — FA 2003 Sch 10 + Martland framework"** — conductor decision pending. No existing §1 sub-section captures SDLT appeal procedure or the late-appeal jurisprudence directly.
+
+## §4.7 Authority links (RUN session picks 4-7 + adds others surfaced during research)
+
+1. **FA 2003 Schedule 10** (Returns, Enquiries, Assessments and Appeals) — https://www.legislation.gov.uk/ukpga/2003/14/schedule/10 (operative; particularly paras 25, 28, 29, 34, 35 for the appeal architecture)
+2. **Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 (SI 2009/273)** — https://www.legislation.gov.uk/uksi/2009/273 (rule 5(3)(a) extend-time power + rule 20(4) late appeal-notice procedure)
+3. **Martland v HMRC [2018] UKUT 178 (TCC)** — controlling Upper Tribunal authority on late-appeal applications; three-stage framework
+4. **BPP Holdings v HMRC [2017] UKSC 55** — Supreme Court affirmation of importance of statutory time-limit compliance in the tax-tribunal context
+5. **HMRC v Katib [2019] UKUT 189 (TCC)** — agent failures vs taxpayer personal responsibility
+6. **Denton v TH White [2014] EWCA Civ 906** — the civil-procedure approach imported into the tax-tribunal late-appeal framework via Martland
+7. **HMRC Compliance Handbook ARTG2000+** (Appeals, Reviews and Tribunals Guidance) — https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-tribunals-guidance/artg2000
+8. **GOV.UK Tax Chamber decisions database** — https://www.gov.uk/tax-and-chancery-tribunal-decisions (RUN-time case-citation verification per §16.36)
+
+## §4.5 Closest existing pages (cannibalisation context)
+
+| Slug | Category | Relationship |
+|---|---|---|
+| `sdlt-refund-scams-how-to-avoid` | property-types-and-specialist-tax | Taxpayer-protection page — heavy cross-link from A15. The Martland framework directly bears on the late-claim route that aggressive-refund-firms market. |
+| `averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way` (A9 sibling, this wave) | property-types-and-specialist-tax | Substantive case-analysis sister. A15 sits in a different lane (procedural) but cross-links as sibling pick in the bucket. |
+| `ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement` (A14 sibling, this wave) | property-types-and-specialist-tax | Substantive case-analysis sister; same cross-link rationale as A9. |
+| `horton-hall-sdlt-case-residential-vs-non-residential-dispute` (A16 sibling, this wave) | property-types-and-specialist-tax | Substantive case-analysis sister; same cross-link rationale. |
+| Existing pages on SDLT amendment / refund procedure (RUN session confirms — likely candidates include the existing SDLT 5% surcharge refund process page from Wave 9 + general SDLT refund pages) | property-types-and-specialist-tax | A15 covers the procedural-gateway side of the same broad cluster; differentiation is the appeal-window + Martland framework focus, complementary not duplicative. |
+
+**Cannibalisation decision:** A15 occupies a distinct procedural lane (appeal-window + Martland framework) that no existing page covers. The site has substantive SDLT pages but no dedicated procedural-appeal-window page. No CANNIBAL flag. RUN session must confirm during step 5 closest-existing read that no procedural appeal-procedure page has been added since this brief was extended.
+
+## §4.6 Redirect overlap
+
+No existing middleware redirect tokens overlap with the slug. RUN session re-checks `Property/web/middleware.ts` at step 12. No action expected.
+
+## §4.3 Competitor URLs (RUN session fetches at write time per §16.31 URL-liveness gate)
+
+1. `https://www.taxjournal.com/articles/late-appeal-sdlt` (Tax Journal coverage of Martland-applied SDLT late-appeal decisions — search Tax Journal site)
+2. `https://www.gov.uk/tax-and-chancery-tribunal-decisions` (FTT Tax Chamber decisions database)
+3. `https://www.icaew.com/insights/tax-news` (ICAEW Tax Faculty briefings on Martland-application in SDLT)
+4. `https://www.cioti.org.uk/policy-and-technical` (CIOT technical / policy briefings on appeal procedure)
+5. Tax-firm specialist briefings (BDO / Saffery / RSM / Deloitte / EY) — pick one current article on SDLT appeal procedure
+
+**Stage 1b drift watchpoint surfaced in seed:** the precise FTT decision (late SDLT appeal refused on "no professional advice" reasoning) is currently unconfirmed; Stage 2 sub-agent raises F-4 for the conductor (see verification report below). Multiple candidate FTT decisions exist in this line — identifying the specific case is essential. If unconfirmable, the page repositions as a procedural-explainer with the Martland-line jurisprudence at depth.
+
+## §4.8 Universal rules (verbatim across all briefs)
+
+- **Voice:** no em-dashes (use commas, parentheses, full stops, or middle dots `·`); specific; named legislation; anonymised personas. A15 voice note: procedural-precision tone — careful with dates, deadlines, statutory references; audience is taxpayers facing real-time procedural decisions about a late-appeal application.
+- **Lead-gen architecture:** LeadForm auto-injects at footer. Two aside CTAs: one after the Martland-framework section, one after the overpayment-relief alternative section — both high-intent moments for procedural advice.
+- **CSS in markdown:** semantic HTML only; no Tailwind classes.
+- **FAQs:** 10-12 in frontmatter `faqs:` array; FAQPage JSON-LD auto-emitted.
+- **Cannibalisation discipline:** heavy cross-link with sdlt-refund-scams + substantive case-analysis sister pages A9/A14/A16. A15 is procedural, distinct lane.
+- **Anti-templating:** opener leads with the **statutory 30-day window at FA 2003 Sch 10 para 35 + the Martland framework**. Do NOT lead with "If you think you've overpaid stamp duty..." which is the SDLT-refund-firm pitch the page is implicitly distancing from.
+- **Quality bar:** 0 em-dashes; 0 Tailwind; FAQ schema count parity; meta title ≤62; meta description ≤158; internal links resolve. Body word count: 2,400-2,800.
+
+## §4.9 Workflow (the 19 steps — verbatim per NETNEW_PROGRAM §7)
+
+1. Read `house_positions.md` once at session start (focus §1 + §1.N candidate if locked by conductor).
+2. Claim the page in `docs/property/megawave1_page_tracker.md`.
+3. Read this brief in full.
+4. **Confirm the FTT case citation at write time** via GOV.UK Tax Chamber search — search by reasoning ("did not take professional advice" + Martland + SDLT late appeal). If not confirmable, raise Q-N to conductor or pivot to procedural-explainer framing per the seed's contingency.
+5. Fetch + read each competitor URL.
+6. Read each closest-existing page.
+7. Plan H2/H3 outline + meta + 10-12 FAQs + 2 inline CTA placements.
+8. Verify every statutory cite (Sch 10 paras 25, 28, 29, 34, 35; Tribunal Procedure Rules 2009; Martland UKUT) + paragraph references against `legislation.gov.uk` + the case-law databases per §16.35.
+9. Fetch hero image.
+10. Write the markdown file.
+11. Build clean.
+12. Six verifications.
+13. Apply redirect repointing if any (none expected).
+14. Register in `monitored_pages`.
+15. Commit on session's branch. **Step 14 before step 16.**
+16. Fill per-page work-log.
+17. Mark `✅ done` in tracker.
+18. Append site-wide issues to flags file.
+19. Append discoveries to discovery log; claim next page.
+
+## Stage 2 verification report (§16.36 statutory-citation cross-check gate)
+
+| Cite | Location in brief | §16.36 verification |
+|---|---|---|
+| FA 2003 Sch 10 para 35 (30-day appeal window) | Statutory anchor | Verified at Stage 2 against Sch 10 ToC (legislation.gov.uk). Para 35 is the operative appeal-window provision in the Returns / Enquiries / Assessments / Appeals architecture. CONSISTENT. |
+| FA 2003 Sch 10 paras 25, 28, 29 (determination, closure notice, assessment) | Statutory anchor | Cross-checked at Stage 2. Para 25 is determinations; para 28 is closure notices; para 29 is assessments. The 30-day window runs from these notices. CONSISTENT. |
+| FA 2003 Sch 10 para 34 (overpayment relief — 4-year window) | Statutory anchor + Key question 6 | Verified at Stage 2 — para 34 is the SDLT overpayment-relief regime equivalent to TMA 1970 Sch 1AB. 4-year window from chargeable transaction date. CONSISTENT. |
+| Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 (SI 2009/273) — rule 5(3)(a) + rule 20(4) | Statutory anchor | Verified 2026-05-26 (seed). CONSISTENT. |
+| Martland v HMRC [2018] UKUT 178 (TCC) | Controlling authority | Verified at Stage 2 — Martland is the Upper Tribunal three-stage framework (length, reason, all-circumstances). The framework imports Denton v TH White [2014] EWCA Civ 906 into the tax-tribunal context. CONSISTENT. |
+| BPP Holdings v HMRC [2017] UKSC 55 | Supporting authority | Verified at Stage 2 — UKSC affirmed importance of statutory time-limit compliance. CONSISTENT. |
+| HMRC v Katib [2019] UKUT 189 (TCC) | Supporting authority | Verified at Stage 2 — agent-failures vs taxpayer personal responsibility. CONSISTENT. |
+| TMA 1970 s.59B interest analogy + FA 2003 s.87 SDLT interest | Statutory anchor | Cross-checked at Stage 2. SDLT interest runs from the date the tax was due under FA 2003 s.87; this is the correct statutory anchor for the cost-of-delay analysis. CONSISTENT. |
+| FA 2007 Sch 24 penalty appeal procedure (30-day window for penalty determinations) | Key question 9 | Cross-checked against §27.2 Wave 7 lock framework + own verification. Sch 24 penalty appeals share the 30-day window architecture. CONSISTENT. |
+| **The specific FTT decision underlying the page title (late SDLT appeal refused on "no professional advice" reasoning)** | Primary case citation | **UNCONFIRMED at Stage 2.** Multiple candidate FTT decisions exist; seed's Stage 1b drift watchpoint preserved. **F-4 raised — see Stage 2 flags below.** |
+
+**Stage 2 drift catches surfaced for conductor (F-flag list):**
+
+- **F-4: A15 primary FTT case citation unconfirmed.** Seed correctly flags this as a Stage 1b drift watchpoint. The page hinges on a specific FTT decision (late SDLT appeal refused on "no professional advice" reasoning) but the precise citation is not yet identified, and multiple candidate FTT decisions in this line exist (the "no professional advice" reasoning is recurrent). **Conductor decision needed:** (a) dispatch a dedicated case-citation verification sub-agent; (b) instruct the RUN session to confirm at write time via GOV.UK Tax Chamber search + raise Q-N if unconfirmable; or (c) reposition A15 as a procedural-explainer page treating the FTT case-line at secondary-source level (the Martland framework + statutory architecture is well-anchored without a single FTT case). The page MUST NOT ship with a fabricated citation. RUN session is the natural place for verification.
+
+- **F-5: §1.N new HP-LOCK CANDIDATE for SDLT appeal procedure.** A15 is the first page in the site set to deeply address the SDLT appeal-procedure architecture (Sch 10 para 35 + Martland framework). No existing §1 sub-section captures this territory. **Conductor decision needed:** lock §1.N pre-RUN OR allow A15 to anchor directly to primary statute + Martland + procedure rules without a HP-lock. Locking pre-RUN gives future Stage 2 sub-agents writing on SDLT-procedure topics a canonical anchor; allowing direct primary citation works for A15 standalone. Not a blocker.
+
+**Stage 2 sub-agent note for RUN session:** §16.35 per-write verification mandate stands. The procedural-precision tone for A15 means dates, deadlines, and time-limit windows need careful WebFetch verification at write time (e.g., the 30-day window in Sch 10 para 35; the 4-year window in para 34; the 9-month enquiry window in para 12; the 12-month amendment window in para 6). A single date error in this page would be high-cost for taxpayer readers acting on the content.
+
+## Per-page work log (RUN session fills)
+
+### Stage 2 sub-agent entry — 2026-05-26 (Bucket A LEAF agent)
+- Brief extended from Stage 1 seed into full Stage 2 brief.
+- All statutory anchors cross-checked at Stage 2 — CONSISTENT.
+- Primary FTT case citation remains unconfirmed (seed Stage 1b drift watchpoint preserved); F-4 raised to conductor.
+- F-5 raised on §1.N HP-LOCK CANDIDATE decision (lock pre-RUN or skip).
+- No CANNIBAL flag; procedural lane is distinct from substantive sister pages A9/A14/A16.
+- No Q-N raised at Stage 2 — verification gap is flagged as F-4, not session-blocking.
+
+### RUN session entry — [DATE]
+- Page claim timestamp (UTC):
+- FTT case citation confirmation (GOV.UK Tax Chamber search result + citation verbatim, OR pivot to procedural-explainer framing):
+- Competitor URLs fetched + per-URL key takeaway:
+- Existing-page review:
+- Slug / category / H1 / meta-title decisions:
+- Citations added (verbatim quoted text + URL + verification timestamp):
+- Internal links added:
+- Inline CTA placements:
+- Build attempts (pass/fail):
+- Six verifications:
+- Flags raised:
+- 2-3 sentence summary:
