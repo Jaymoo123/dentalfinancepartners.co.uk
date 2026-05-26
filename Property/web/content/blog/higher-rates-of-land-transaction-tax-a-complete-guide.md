@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/h
 date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Welsh LTT Higher Rates: Complete Guide (5%/8.5%/10%/12.5%/15%/17%)"
-metaDescription: "Welsh LTT higher rates are a standalone band structure, not a flat surcharge. Post 11-December-2024 bands, £40k threshold, replacement-of-main-residence window."
+metaTitle: "Welsh LTT Higher Rates: Complete Guide (5% to 17%)"
+metaDescription: "Welsh LTT higher rates are a standalone band structure, not a flat surcharge. Post 11-December-2024 bands, £40k threshold, replacement window."
 altText: "Welsh terraced housing with for-sale boards illustrating the additional-property market caught by Welsh LTT higher residential rates after the 11 December 2024 uplift"
 image: "https://images.pexels.com/photos/13577817/pexels-photo-13577817.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
