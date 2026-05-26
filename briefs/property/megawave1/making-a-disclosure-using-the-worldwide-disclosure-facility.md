@@ -64,5 +64,91 @@ Target length 2,400-2,800 words. Tone: step-by-step procedural with worked examp
 ## Universal rules + workflow stubs (Stage 2 fills)
 [Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; step-by-step procedural tone with worked-example computational layouts; reader audience: advisers + landlords / HNWIs with offshore matters); lead-gen architecture (LeadForm + aside-CTAs after the "Step 1 Notify" section, after the "Step 3 Pay" section, and at the criminal-prosecution decision-point — high-intent reader at the moment of choosing whether to engage adviser assistance); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (heavy cross-link with the sister WDF + FtC overview page and with the CoP9 page); house-position anchors (§27.6 WDF lock + §27.5 LPC adjacent lock); quality bar (word count 2,400-2,800; FAQs 12; external authority links 8-10; build clean; six verifications); anti-templating (lead with the **three-step architecture and the differentiator from the sister-page** — "This page walks the step-by-step operational process of making a Worldwide Disclosure Facility submission to HMRC. For the regime overview, the Failure-to-Correct overlay and the territory-category penalty mechanic, see the companion page [link]. Here we cover the operational mechanics: Notify, Disclose within 90 days (extendable to 180), Pay" — NOT with "The WDF is HMRC's offshore disclosure facility" which duplicates the sister-page opening).]
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+## Stage 2 extension (M1-C-B1, locked 2026-05-26)
+
+### Stage 1b HP-lock status (confirmation, no drift)
+
+Seed correctly anchors to **§27.6 "Voluntary disclosure routes, LPC + WDF + general voluntary disclosure" (existing Wave 7 lock)** with §27.5 (LPC) as adjacent sister-lock. Verified at Stage 2 against `house_positions.md` 2026-05-26: §27.6 + §27.5 both present and operative. §27.1 (TMA 1970 s.29 discovery + s.34 / s.36 limitation windows) + §27.2 (Sch 24 FA 2007 penalties) + §27.3 (Sch 41 FA 2008 failure-to-notify) provide the supporting statutory framework. NO new HP-lock needed. RUN session reads §27.1 through §27.9 once at session start and writes C5 as the operational sister-page to the existing `worldwide-disclosure-facility-offshore-landlord-catch-up-fa-2017-ftc` page.
+
+**Bucket-alignment note (raise as F-103 if conductor wants the audit trail):** C5 sits topically in `landlord-tax-essentials` and anchors to §27.6 (HMRC enquiry + tax compliance), NOT to §30 council tax or the CIL / lease-extension topics that constitute the Bucket C label "CIL & Section 106 (planning levies) + Property valuation / RICS / chargeable consideration + Lease extensions". The seed itself acknowledges this (category routing = `landlord-tax-essentials`). The bucket assignment is a slicer mis-cluster. Stage 2 expansion proceeds on the correct topical routing irrespective of the bucket label, consistent with the F-51 (B12 lane-mis-clustered) precedent.
+
+### Final competitor URLs (3-5, Stage 2 verifies live at write time per §16.31)
+
+1. https://www.gov.uk/guidance/worldwide-disclosure-facility-make-a-disclosure (HMRC gov.uk WDF operational guidance, the definitive source)
+2. https://www.tax.org.uk/worldwide-disclosure-facility (CIOT technical guidance on WDF process)
+3. https://www.icaew.com/technical/tax/practical-tax-articles/worldwide-disclosure-facility (ICAEW practitioner perspective)
+4. https://www.stewartslaw.com/news/worldwide-disclosure-facility-everything-you-need-to-know/ (Stewarts tax-disputes specialist firm WDF process briefing)
+5. https://www.rpc.co.uk/perspectives/tax-take/the-worldwide-disclosure-facility/ (RPC tax-take WDF process briefing)
+
+### Final authority links (5-8 per §4.7)
+
+1. FA 2007 Sch 24 (penalties for errors in returns + documents): https://www.legislation.gov.uk/ukpga/2007/11/schedule/24
+2. FA 2008 Sch 41 (penalties for failure to notify): https://www.legislation.gov.uk/ukpga/2008/9/schedule/41
+3. FA 2017 Sch 18 (Requirement to Correct offshore non-compliance): https://www.legislation.gov.uk/ukpga/2017/32/schedule/18
+4. TMA 1970 s.36A (12-year offshore discovery window, inserted by FA 2019 s.80): https://www.legislation.gov.uk/ukpga/1970/9/section/36A
+5. FA 2015 Sch 21 (50% asset-move penalty layer): https://www.legislation.gov.uk/ukpga/2015/11/schedule/21
+6. HMRC Compliance Handbook CH80000+ (penalty regime): https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch80000
+7. HMRC factsheets CC/FS9 + CC/FS11 + CC/FS17 (penalty fact sheets): https://www.gov.uk/government/collections/hm-revenue-customs-compliance-checks-factsheets
+8. SI 2011/976 Finance Act 2007 (Schedule 24, Offshore Income etc) (Designation of Territories) Order 2011 + amendments: https://www.legislation.gov.uk/uksi/2011/976
+
+### Closest existing pages (cannibalisation context per §4.5)
+
+Token-similarity assessment performed at Stage 2 against current main inventory:
+
+1. `worldwide-disclosure-facility-offshore-landlord-catch-up-fa-2017-ftc` (landlord-tax-essentials, similarity ~0.65). **The sister regime-and-mechanics page; sole cannibalisation risk if C5 framing differentiator slips.** Existing page covers: WDF regime overview, FtC FA 2017 Sch 18 overlay, territory-category Cat 1/2/3 structure, TMA 1970 s.36A 12-year window, worked penalty examples. **Differentiation (load-bearing):** C5 is the operational how-to (Notify → Disclose 90 days → Pay; disclosure-pack contents; year-by-year computation format; HMRC post-disclosure review). The existing page is regime-and-mechanics; C5 is procedural-and-walkthrough. Both pages explicitly cross-link to each other as the companion deep-dive on the other specialism. Manager pre-decisions enforce the differentiation discipline.
+2. `cop9-contractual-disclosure-facility-landlord-tax-fraud-investigation` (landlord-tax-essentials, similarity ~0.35). Criminal-immunity alternative route for deliberate-fraud matters. **Differentiation:** C5 covers WDF (no criminal immunity); the existing page covers CoP9 (criminal immunity for matters disclosed). Cross-link at C5's "criminal-prosecution-risk decision point" section.
+3. `let-property-campaign-formal-disclosure-route-landlords-undisclosed-rental` (landlord-tax-essentials, similarity ~0.30). UK-only disclosure-route alternative (LPC). **Differentiation:** C5 covers offshore WDF; the existing page covers UK-only LPC; cross-link from C5 at the "is this offshore?" gating question.
+4. `let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026` (landlord-tax-essentials, similarity ~0.32). Adjacent LPC mechanics page. **Differentiation:** as above; cross-link for the offshore-vs-UK-only decision tree.
+5. `record-retention-discipline-voluntary-disclosure-failure-to-notify-landlords` (landlord-tax-essentials, similarity ~0.28). Record-retention companion. **Differentiation:** C5 covers the disclosure-pack documentary evidence ask; the existing page covers the general TMA 1970 s.12B record-retention discipline. Cross-link from C5's "What evidence is required?" section.
+6. `schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries` (landlord-tax-essentials, similarity ~0.28). Penalty-framework deep-dive. **Differentiation:** C5 references the Sch 24 banding structure at a high level; the existing page is the dedicated Sch 24 page. Cross-link.
+
+**No CANNIBAL flag.** C5 occupies clean procedural-how-to space distinct from the existing regime-overview WDF page; the differentiation discipline in Manager pre-decisions + the framing-differentiator paragraph is load-bearing. If RUN session finds itself rewriting the existing page's regime overview, STOP and reframe to the operational walkthrough.
+
+### Redirect overlap
+
+No existing 429 middleware redirect overlaps `making-a-disclosure-using-the-worldwide-disclosure-facility`. Verified by inspection of middleware.ts redirect map at Stage 2. No redirect action required at step 12.
+
+### Universal rules (per §4.8, verbatim)
+
+- **Voice.** No em-dashes (commas, parentheses, full stops, middle dots only). Step-by-step procedural tone with worked-example computational layouts. Specific. Named legislation. Anonymised personas (Patel-offshore-landlord, Singh-HNWI, etc.). No real client names or specific firm / case references except the gov.uk + CIOT + ICAEW + specialist-firm authority links.
+- **Lead-gen architecture.** LeadForm auto-injected at footer by BlogPostRenderer; never duplicate in body. Inline `<aside>` CTAs at conversion moments only, after the "Step 1 Notify" section, after the "Step 3 Pay" section, and at the criminal-prosecution decision-point per Manager pre-decisions.
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes. `<aside>` styled by global CSS at `Property/web/src/app/globals.css`.
+- **FAQs.** 12 FAQs in frontmatter `faqs:` array; auto-emitted as FAQPage JSON-LD by the renderer. Vary phrasing per page; do NOT duplicate FAQ phrasings from the sister-page.
+- **Cannibalisation discipline.** Sister-page differentiation is load-bearing. Read the sister-page in full before writing; differentiate by the procedural-vs-regime framing; cross-link at the explicit "for the regime overview see..." opening.
+- **Anti-templating.** Per-page framing differentiator. Open with the three-step architecture + the differentiator from the sister-page, NOT with "The WDF is HMRC's offshore disclosure facility" (which duplicates the sister-page opening).
+- **Quality bar.** Six verifications at step 11. Body word count 2,400-2,800.
+
+### 19-step per-page workflow (verbatim, per §7)
+
+1. Read `house_positions.md` once at session start (§27.1 through §27.9 are the operative anchors; §27.6 WDF + §27.5 LPC are the immediate cluster locks).
+2. Claim ONE page in the wave tracker (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links). **READ THE SISTER-PAGE IN FULL** (`worldwide-disclosure-facility-offshore-landlord-catch-up-fa-2017-ftc.md`) before drafting; the cannibalisation risk is load-bearing.
+4. Fetch + read each competitor URL with httpx + BeautifulSoup.
+5. Read the other closest-existing pages on our site.
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page, anti-templating; H2s structured around the three-step Notify / Disclose / Pay architecture).
+7. Verify factual claims against authorities (legislation.gov.uk, gov.uk, HMRC Compliance Handbook). **§16.35 mandate: WebFetch every numeric figure + every statutory section cite at write time before committing. Particular focus for C5: current Bank of England base rate + HMRC interest rate (TMA 1970 s.86 + the official-rate publication); current FA 2007 Sch 24 Cat 2/3 territory list under SI 2011/976 + amendments; current FA 2017 Sch 18 + Sch 22 FA 2016 asset-based penalty position; any FA 2024 / FA 2025 / FA 2026 amendments to the disclosure / penalty framework.**
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none for C5).
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file. **Required: raise INTERNAL_LINK flag asking for the existing sister WDF + FtC page to add a "for the operational how-to see..." cross-link to C5 at deploy time.**
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+### Per-page work-log (RUN session populates)
+
+- **Decisions (slug, category, H1, meta title, why these vs alternatives):** [RUN session fills]
+- **Competitor URLs fetched + key takeaway per URL:** [RUN session fills]
+- **Existing-page review (overlap, differentiation decision):** [RUN session fills, sister-page cannibalisation note required]
+- **Citations added:** [RUN session fills]
+- **Internal links added:** [RUN session fills]
+- **Inline CTA placements:** [RUN session fills]
+- **Build attempts (pass/fail):** [RUN session fills]
+- **Verification (each of the six checks):** [RUN session fills]
+- **Flags raised:** [RUN session fills, prefix F-100..F-149 for this bucket]
+- **2-3 sentence summary:** [RUN session fills]
