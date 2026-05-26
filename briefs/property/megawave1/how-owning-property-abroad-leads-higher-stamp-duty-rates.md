@@ -48,8 +48,130 @@ Target length 2,400-2,800 words. The page serves both UK-resident readers (who o
 - Case-law: FTT decisions on spouse-aggregation traps under Sch 4ZA para 9 (a recurring fact pattern at FTT); FTT decisions on overseas-property valuation for the £40k exclusion (less common but exists).
 - **Stage 1b drift watchpoint:** the 5% surcharge rate took effect 31 October 2024; many competitor pages and HMRC manual references may still show 3%. Stage 2 must verify and use 5% with the explicit commencement date. The 2% non-resident surcharge took effect 1 April 2021 — also confirm. FTB-relief £300k/£500k thresholds reverted from temporary £425k/£625k on 1 April 2025 — confirm.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; precise; the audience often includes overseas-born readers and overseas advisers, so language should be clear and avoid UK-vernacular shortcuts); lead-gen architecture (LeadForm + aside-CTAs after the "three statutory routes" framing and after the spouse-aggregation trap section — high-intent audience often at decision-point on a UK purchase where the surcharge materially affects affordability); schema (FAQs in frontmatter; FAQPage JSON-LD; target 10-12); cannibalisation cross-link discipline (heavy cross-link with surcharge + non-resident surcharge + FTB-relief pages); house-position anchors (§1.I Wave 9 lock + §1.O NEW LOCK CANDIDATE); quality bar (word count 2,400-2,800; FAQs 10-12; external authority links 6-8; build clean; six verifications); anti-templating (lead with the **three statutory routes** schematic and a worked-example anchor — NOT with "If you own property abroad and are buying in the UK, your stamp duty bill may be higher..." which is the saturated SERP opener for this query).]
+## Brief metadata (Stage 2)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+- **Site:** Property Tax Partners (www.propertytaxpartners.co.uk)
+- **Bucket:** A — SDLT, surcharges and reliefs + Second homes & council tax premium (MegaWave 1)
+- **Batch:** M1-A-B3
+- **Session assignment:** Stage 2 Sub-Agent Bucket A (rolling architecture, autonomous LEAF agent)
+- **Brief type:** net-new (multi-route explainer)
+- **Source markdown path on launch:** `Property/web/content/blog/how-owning-property-abroad-leads-higher-stamp-duty-rates.md`
+- **Live URL on launch:** `https://www.propertytaxpartners.co.uk/blog/how-owning-property-abroad-leads-higher-stamp-duty-rates`
+- **House-position anchors:** §1.I Wave 9 5% additional dwellings surcharge lock + §1.K MW1 FTB relief lock + §1 main text. **NEW HP-LOCK CANDIDATE F-flag raised: §1.O "Worldwide-property ownership and UK SDLT — three statutory routes (Sch 4ZA 5% surcharge + Sch 9A 2% non-resident surcharge + Sch 6ZA FTB-relief disapplication)"** — see F-7 below.
+
+## §4.7 Authority links (RUN session picks 4-7 + adds others surfaced during research)
+
+1. **FA 2003 Schedule 4ZA** "Higher rates for additional dwellings" — https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA (paras 2, 3, 6, 7, 9, 9A, 17 — worldwide-property reach + spouse-aggregation + inherited-interests + £40k exclusion)
+2. **FA 2003 Schedule 9A** "Higher rates for non-resident transactions" — https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A (paras 1-5 — 2% non-resident surcharge, inserted by FA 2021 s.86 + Sch 16, in force 1 April 2021)
+3. **FA 2003 Schedule 6ZA** "Relief for first-time buyers" — https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA (para 6(2) FTB definition with worldwide reach — any dwelling situated anywhere in the world)
+4. **FA 2003 s.55B** (additional dwellings higher-rate computation) + **s.55C** (non-resident higher-rate computation, added by FA 2021 Sch 16) — https://www.legislation.gov.uk/ukpga/2003/14/section/55B and https://www.legislation.gov.uk/ukpga/2003/14/section/55C
+5. **FA 2025 c. 8 s.51** (5% additional dwellings surcharge rate from 31 October 2024) — https://www.legislation.gov.uk/ukpga/2025/8/section/51
+6. **HMRC SDLT Manual SDLTM09700+** (additional dwellings surcharge, particularly SDLTM09766 replacement-of-main-residence relief) — https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm09700
+7. **HMRC SDLT Manual SDLTM09850+** (non-resident surcharge) — https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm09850
+8. **HMRC SDLT Manual SDLTM29800+** (FTB relief disqualification on worldwide ownership)
+
+## §4.5 Closest existing pages (cannibalisation context)
+
+| Slug | Category | Relationship |
+|---|---|---|
+| `second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules` | property-types-and-specialist-tax | **Closest sibling.** Domestic-UK spouse-aggregation deep-dive; A17 is the worldwide-property angle. Differentiation: A17's three-statutory-routes schematic + cross-border facts. Cross-link mandatory. |
+| Existing buy-to-let SDLT guide | property-types-and-specialist-tax | BTL surcharge mechanics. A17 differentiates by owner-occupier focus + cross-border. |
+| `sdlt-non-resident-2-percent-surcharge` (existing) | property-types-and-specialist-tax | Sister page on Sch 9A 2% mechanics. A17 covers it as one of three routes, not the deep mechanic. Cross-link mandatory. |
+| `labour-plans-stamp-duty-hike-for-overseas-buyers` (A18 sibling, this wave) | property-types-and-specialist-tax | Next pick in this batch — policy / proposed-change angle for non-resident-buyer surcharge. Cross-link as sister. |
+| A7 + A10 + A11 + A12 + A13 FTB cluster (this wave) | property-types-and-specialist-tax | For the FTB-relief-disqualification angle. Cross-link as cluster. |
+| `sdlt-refund-scams-how-to-avoid` | property-types-and-specialist-tax | For taxpayers approached by claim firms suggesting the overseas-property trigger is recoverable (usually not). Cross-link as taxpayer-protection. |
+
+**Cannibalisation decision:** A17 is the **worldwide-property three-routes explainer**. Differentiated from the existing domestic spouse-aggregation page by cross-border angle + Sch 9A inclusion + Sch 6ZA FTB-disqualification inclusion. No CANNIBAL flag. RUN session must read the existing spouse-aggregation page closely to ensure A17 does not duplicate the domestic-UK joint-owner mechanics.
+
+## §4.6 Redirect overlap
+
+No existing middleware redirect tokens overlap with the slug. RUN session re-checks `Property/web/middleware.ts` at step 12. No action expected.
+
+## §4.3 Competitor URLs (RUN session fetches at write time per §16.31 URL-liveness gate)
+
+1. `https://www.saffery.com/insights` (Saffery overseas-property SDLT briefings — high-net-worth international focus)
+2. `https://www.bdo.co.uk/en-gb/insights/tax/property-tax` (BDO international-property SDLT briefings)
+3. `https://www.withersworldwide.com/en-gb/insight` (Withers private-client SDLT briefings, international)
+4. `https://www.charlesrussellspeechlys.com/en/insights/` (Charles Russell Speechlys international-private-client)
+5. `https://www.gov.uk/stamp-duty-land-tax/residential-property-rates` (gov.uk authoritative current rates)
+6. Expat-financial-planning sites (Blevins Franks, Spectrum IFA, Buzzacott, Frank Hirth) — pick one current article on UK SDLT for overseas-property-owning buyers
+
+**Stage 1b drift watchpoint surfaced in seed:** the 5% surcharge rate took effect 31 October 2024 — many competitor pages and HMRC manual references may still show 3%. Stage 2 sub-agent confirms via §1.I HP-lock that the current rate is 5% (FA 2025 s.51); RUN session must verify all rate references at write time per §16.35. FTB-relief £300k/£500k thresholds reverted from temporary £425k/£625k on 1 April 2025 — confirm at RUN time.
+
+## §4.8 Universal rules (verbatim across all briefs)
+
+- **Voice:** no em-dashes (use commas, parentheses, full stops, or middle dots `·`); specific; named legislation; anonymised personas. A17 voice note: audience often includes overseas-born readers and overseas advisers, so language must be clear and avoid UK-vernacular shortcuts. Cross-jurisdictional readers benefit from named statutes + verbatim test wording (the Sch 4ZA worldwide-ownership test; the Sch 9A 183-day residence test; the Sch 6ZA "anywhere in the world" FTB test).
+- **Lead-gen architecture:** LeadForm auto-injects at footer. Two aside CTAs: one after the "three statutory routes" framing, one after the spouse-aggregation trap section — both high-intent moments where the cross-border-buyer reader is at decision-point on a UK purchase.
+- **CSS in markdown:** semantic HTML only; no Tailwind classes.
+- **FAQs:** 10-12 in frontmatter `faqs:` array; FAQPage JSON-LD auto-emitted.
+- **Cannibalisation discipline:** heavy cross-link with surcharge + non-resident surcharge + FTB-relief pages. A17's distinct payload is the three-routes-bundled schematic.
+- **Anti-templating:** opener leads with the **three statutory routes** schematic and a worked-example anchor. Do NOT lead with "If you own property abroad and are buying in the UK, your stamp duty bill may be higher..." which is the saturated SERP opener for this query.
+- **Quality bar:** 0 em-dashes; 0 Tailwind; FAQ schema count parity; meta title ≤62; meta description ≤158; internal links resolve. Body word count: 2,400-2,800.
+
+## §4.9 Workflow (the 19 steps — verbatim per NETNEW_PROGRAM §7)
+
+1. Read `house_positions.md` once at session start (focus §1.I + §1.K + §1.O candidate if locked).
+2. Claim the page in the tracker.
+3. Read this brief in full.
+4. Fetch + read each competitor URL with `httpx + BeautifulSoup`.
+5. Read each closest-existing page; particularly read the existing spouse-aggregation deep-dive to avoid domestic-UK duplication.
+6. Plan H2/H3 outline + meta + 10-12 FAQs + 2 inline CTA placements. Structure: three-routes schematic → route 1 (Sch 4ZA worldwide) → route 2 (Sch 9A non-resident) → route 3 (Sch 6ZA FTB-disqualification) → stacking effect → spouse-aggregation trap → £40k exclusion → replacement-of-main-residence relief → inherited interests → planning-for-overseas-buyers section.
+7. Verify every statutory cite + numeric figure against `legislation.gov.uk` + `gov.uk` per §16.35 (Sch 4ZA paras 2/3/6/7/9/9A/17; Sch 9A paras 1-4; Sch 6ZA para 6; FA 2025 s.51; FA 2021 s.86 + Sch 16).
+8. Fetch hero image.
+9. Write the markdown file.
+10. Build clean.
+11. Six verifications.
+12. Apply redirect repointing if any (none expected).
+13. Register in `monitored_pages`.
+14. Commit. **Step 14 before step 16.**
+15. Fill per-page work-log.
+16. Mark `✅ done` in tracker.
+17. Append site-wide issues to flags file.
+18. Append discoveries; claim next page.
+
+## Stage 2 verification report (§16.36 statutory-citation cross-check gate)
+
+| Cite | Location in brief | §16.36 verification |
+|---|---|---|
+| FA 2003 Sch 4ZA para 2 (higher-rate threshold) | Statutory anchor | Verified 2026-05-26 (seed) against §1.I Wave 9 HP-lock + own check. CONSISTENT. |
+| FA 2003 Sch 4ZA paras 6-7 (Conditions A-D for individual purchaser, worldwide-property test) | Statutory anchor | Verified at Stage 2. CONSISTENT — the worldwide-property test sits at the operative Conditions framework. |
+| FA 2003 Sch 4ZA para 17 (£40,000 exclusion) | Key question 5 | Verified at Stage 2 — para 17 disregards a major interest in a dwelling where the value is £40,000 or less. CONSISTENT. |
+| FA 2003 Sch 4ZA para 9 (spouse / civil partner aggregation) | Key question 6 | Verified at Stage 2 — para 9(3) handles separation mechanics. CONSISTENT. |
+| FA 2003 Sch 4ZA para 9A (inherited interests three-year window) | Key question 4 | Verified at Stage 2 — narrow carve-out for inherited 50%-or-less interests for 3 years from date of inheritance. CONSISTENT. |
+| FA 2003 Sch 4ZA para 3 (replacement of main residence — 3-year window) | Key question 7 | Cross-checked against §1.I HP-lock lines 2320-2323 (the para 3(6)-(7B) refund-route corrections). CONSISTENT. |
+| FA 2003 Sch 9A paras 1-4 (non-resident definition + 2% surcharge from 1 April 2021) | Statutory anchor | Verified at Stage 2 — Sch 9A inserted by FA 2021 s.86, in force from 1 April 2021. Para 4 is the SDLT-specific 183-day residence test (NOT the SRT under FA 2013). CONSISTENT. |
+| FA 2003 Sch 6ZA para 6(2) (FTB definition — "any dwelling situated anywhere in the world") | Statutory anchor + Key question 9 | Cross-checked against §1.K MW1 mini-lock line 3161. CONSISTENT. Worldwide-property ownership disqualifies FTB-relief absolutely; the £40k exclusion does NOT extend to FTB-disqualification (key difference from Sch 4ZA). |
+| FA 2003 s.55B (additional dwellings higher-rate computation) + s.55C (non-resident higher-rate computation, added by FA 2021 Sch 16) | Rate consequence | Verified at Stage 2. CONSISTENT. The non-resident 2% is computed per s.55C as added to each band of the rates otherwise applicable (residential Table A or Sch 4ZA higher-rate). |
+| FA 2025 c. 8 s.51 (5% additional dwellings surcharge rate from 31 October 2024) | Statutory anchor | Cross-checked against §1.I Wave 9 HP-lock lines 2312-2319. CONSISTENT. Stage 1b drift watchpoint noted — competitor pages may still cite 3% rate. |
+
+**No new drift catches at brief level for A17.** All statutory anchors verified; rate-by-reference figures consistent with §1.I + §1.K HP-locks.
+
+**Stage 2 drift catches surfaced for conductor (F-flag list):**
+
+- **F-7: §1.O new HP-LOCK CANDIDATE for worldwide-property + non-resident-buyer SDLT cluster.** A17 + A18 collectively address the worldwide-property + non-resident-buyer SDLT architecture (Sch 4ZA worldwide reach + Sch 9A 2% non-resident surcharge + Sch 6ZA FTB-disqualification + 2024 Labour manifesto policy direction). No existing §1 sub-section captures this triangulated architecture; §1.I covers Sch 4ZA mechanics but not the worldwide-reach + Sch 9A + Sch 6ZA-disqualification triangulation. **Conductor decision needed:** lock §1.O (worldwide-property + non-resident-buyer triangulation) pre-RUN, OR allow A17 + A18 to anchor directly via primary statute. Locking pre-RUN gives future Stage 2 sub-agents on this cluster a canonical anchor. Not a blocker. A18 brief raises adjacent F-flag for §1.O / §1.P (Labour-manifesto policy trajectory).
+
+**Stage 2 sub-agent note for RUN session:** §16.35 per-write verification mandate stands. Critical at write time: (i) the 5% Sch 4ZA rate from 31 October 2024 (NOT 3%); (ii) the 2% Sch 9A rate from 1 April 2021 (verify still 2% — see A18 brief on Labour proposal to lift to 3%); (iii) the Sch 4ZA £40k exclusion applies to surcharge but NOT to Sch 6ZA FTB-disqualification (this asymmetry is a recurring drift source); (iv) the spouse-aggregation rule under Sch 4ZA para 9 attributes the worldwide-property ownership of either spouse to the purchasing spouse.
+
+## Per-page work log (RUN session fills)
+
+### Stage 2 sub-agent entry — 2026-05-26 (Bucket A LEAF agent)
+- Brief extended from Stage 1 seed into full Stage 2 brief.
+- All statutory anchors cross-checked against §1.I + §1.K HP-locks + Sch 4ZA + Sch 9A + Sch 6ZA primary text — CONSISTENT.
+- No primary case-citation gap (A17 is a multi-route statutory explainer, not a case-analysis).
+- F-7 raised on §1.O HP-LOCK CANDIDATE decision.
+- No CANNIBAL flag; clear differentiation from existing domestic spouse-aggregation page + Sch 9A page via worldwide-routes triangulation.
+- No Q-N raised at Stage 2.
+
+### RUN session entry — [DATE]
+- Page claim timestamp (UTC):
+- Competitor URLs fetched + per-URL key takeaway:
+- Existing-page review (particularly the domestic spouse-aggregation deep-dive — confirm no duplication):
+- Slug / category / H1 / meta-title decisions:
+- Citations added (verbatim quoted text + URL + verification timestamp):
+- Worked-example computations (£400k UK purchase with £200k overseas holiday home; non-resident variant; FTB variant with sub-£40k overseas property):
+- Internal links added:
+- Inline CTA placements:
+- Build attempts (pass/fail):
+- Six verifications:
+- Flags raised:
+- 2-3 sentence summary:
