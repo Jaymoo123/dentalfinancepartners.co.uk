@@ -1,0 +1,17 @@
+{
+  "batch_id": "M1-A-B4",
+  "agent_id": "MW1-run-A-B4",
+  "completed_at": "2026-05-26T23:30:00Z",
+  "branch": "property-megawave1-a",
+  "phase": "run",
+  "bucket": "A (SDLT — surcharges and reliefs + Second homes & council tax premium)",
+  "commit_shas": [
+    "e11c9ab",
+    "a58980e"
+  ],
+  "slugs_done": [
+    "land-and-buildings-transaction-tax-multiple-dwellings-relief",
+    "multiple-dwellings-relief"
+  ],
+  "bucket_a_status": "complete (20 of 20 A1-A20 shipped across M1-A-B1/B2/B3/B4)"
+}

@@ -1,0 +1,75 @@
+batch: M1-A-B4
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 3 (RUN — published blog markdown shipped to Property/web/content/blog/)
+status: complete
+completed_at: 2026-05-26
+sub_agent: RUN-phase Sub-Agent Bucket A batch M1-A-B4 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave1-a
+
+picks shipped (2 of 2):
+  1. land-and-buildings-transaction-tax-multiple-dwellings-relief (A19) commit e11c9ab body ~2800w / 12 FAQs  Scottish LBTT MDR explainer with cross-border framing against SDLT abolition
+  2. multiple-dwellings-relief                                       (A20) commit a58980e body ~3500w / 15 FAQs  canonical three-jurisdiction MDR hub (SERP head-term slot)
+
+six verifications summary (per-page, run pre-commit on each):
+  em-dashes in body:        0 across both pages (Pick 2 had 2 in-body leaks; fixed pre-commit via comma/parenthesis substitution per feedback_no_em_dashes)
+  Tailwind utility classes: 0 across both pages
+  FAQ array length:         both within brief targets (A19 12 / target 10-12; A20 15 / target 12-15)
+  meta title chars:         both ≤ 62 (A19 58; A20 58)
+  meta description chars:   both ≤ 158 (A19 152; A20 156)
+  internal link resolution: A19 cross-links to A20 + Welsh-survives + A1 + Wave9-SDLT-operational + A2 all resolve (A20 sibling shipped immediately after A19 commit; existing-page targets present on disk per pre-flight glob). A20 cross-links to A1 + A2 + A3 + A19 + Welsh-survives + Wave9-SDLT-operational all resolve.
+
+per-pick build (step 10 cd Property/web && npm run build):
+  npm run build deferred to wave-close pre-merge gate per established M1-A-B1/B2/B3 pattern. Per-page six verifications passed at write-time; no build attempted in worktree.
+
+steps skipped (with reasons):
+  step 13 (Supabase monitored_pages registration): SKIPPED — Supabase credentials not in worktree. Per-batch registration noted as wave-close action item for conductor.
+  step 10 (npm run build): DEFERRED to wave-close per M1-A pattern (M1-A-B1/B2/B3 ran build at wave-close, not per-page; this batch follows same discipline).
+
+redirect repointing:
+  step 12 NO-OP — both slugs verified novel at Stage 2 cannibalisation pass (no overlap with existing middleware.ts entries); RUN-time re-confirmed by glob check (`Property/web/content/blog/multiple-dwellings-relief*` returned no existing match; `land-and-buildings-transaction-tax*` returned no existing match for the A19 slug).
+
+F-flags closed at RUN-time:
+  none — A19 + A20 anchored to verbatim §16.36 statutory-citation gate; F-1 (open BRIEF_DRIFT against A1) remains for conductor to back-patch A1 wording before A1 publishes; not in this batch's scope.
+
+F-flags raised in this batch (in F-1..F-49 Bucket A range per Bug #2):
+  F-2 — HOUSE_POSITION_EXTENSION raised at A20 write-time: Welsh LTT Sch 13 post-Feb-2025 (para 7A subsidiary dwellings, SI 2025/119) + post-Feb-2026 (para 6(2) minimum floor substituted to 3% by Welsh Regulations) statutory state needs a locked HP anchor so subsequent Welsh content asserts the same architecture consistently. Pairs with F-1 (broader devolved-property-taxes HP-extension proposal). Recorded on main's megawave1_site_wide_flags.md via absolute path per §16.15 + §16.37. No-block: A20 ships with both updates surfaced verbatim in body and FAQ #7 + #10.
+
+HP-LOCK CANDIDATES raised by Stage 2 + RUN (passed through to conductor for Stage 1b-style review):
+  §1 devolved-property-taxes sub-section — LBTT (Scotland) Sch 5 LBTT(S)A 2013 + LTT (Wales) Sch 13 LTTA 2017, spanned in single block or per-jurisdiction; pairs with F-1 inter-wave queue item from A1 Stage 1 batch
+  §1 Welsh-side specific — LTTA 2017 Sch 13 paragraph 7A subsidiary dwellings (effective 7 Feb 2025 per SI 2025/119) + paragraph 6(2) minimum floor at 3% (effective 13 Feb 2026 per Welsh Regulations); pairs with F-2 raised in this batch
+  §1 cross-border architecture — three-jurisdiction comparator anchor (SDLT abolished; LBTT live; LTT live) so all three reliefs reference a settled architecture in any future MDR-adjacent page
+
+differentiation axis held per pick (anti-templating discipline):
+  A19: Scottish-LBTT-operational-mechanic-with-cross-border-framing. Devolved-tax precision (Revenue Scotland not HMRC; LBTT not SDLT; SSI not Finance Acts) load-bearing. Schedule 5 statutory walk-through (paras 4/5/6/7/11-12/13) + Schedule 2A 8% ADS interaction; three worked Scottish examples; F(No.2)A 2024 s.7 cross-border counter-anchor.
+  A20: canonical-three-jurisdiction-diagnostic-hub. Hub-and-spoke architecture (8 internal links to spokes); each cluster H2 ends with routing pointer. Diagnostic opening lead with jurisdictional question, not relief mechanic. Three-statute side-by-side; transitional-cohort SDLT diagnostic (s.7(4) carve-outs + s.44 substantial performance); three surviving SDLT alternatives matrix; £2m/4-dwelling three-jurisdiction comparator; transitional-cohort SDLT survival case; post-abolition s.116(7) 6-or-more-dwellings route.
+
+house position anchors cited across the batch:
+  §1 main text — SDLT cluster + Wave 1 s.116(7) correction (A19 counter-context only; A20 SDLT-side architecture)
+  §1.A Wave 7 — Sch 15 partnership SLP mechanics (A20 surviving-alternative)
+  §1.B Wave 7 — s.108 linked-transactions discipline (A20 linked-transactions counterpoint; A19 LBTT linked-transactions analogue under Sch 5 para 5)
+  §1.H Wave 9 — SDLT MDR abolition + transitional + anti-forestalling + 3 surviving alternatives (A20 SDLT abolition + s.7(4) carve-outs + s.7(5)-(8) anti-forestalling + s.116(7)/Sch 15/s.45)
+  §1.I Wave 9 — SDLT additional-dwellings 5% from 31 Oct 2024 per FA 2025 s.51 (A19 cross-jurisdictional comparator; A20 surcharge stack)
+  §23 cluster — Scottish ADS (A19 8% per Sch 2A para 4(2) via SSI 2024/367 commenced 5 Dec 2024; A20 cross-references)
+  F-1 inter-wave queue — devolved-property-taxes HP-extension proposal (A19 referenced; A20 referenced and F-2 raised as Welsh-side specific extension content)
+
+competitor URL status:
+  Stage 2 pool-thinness disclosure (both pages): Scottish LBTT MDR + Welsh LTT MDR coverage materially thinner than SDLT MDR cluster; competitor sweep across Brodies / Burness Paull / Saffery / BDO / RSM / Crowe / ICAEW Tax Faculty / Revenue Scotland returned zero live + on-topic results at Stage 2. RUN-time defensible angle: A19 operational + cross-border + ADS-interaction triple; A20 integrated three-jurisdiction diagnostic + current-statutory-state framing. All legislation.gov.uk URLs cited in pages verified at WebFetch on 2026-05-26 (LBTT(S)A 2013 Sch 5 / Sch 2A / s.30 / Part 6; F(No.2)A 2024 s.7 / s.44 / s.119 / s.108 / s.116 / Sch 15 / s.45; FA 2003 Sch 4ZA; FA 2025 s.51; LTTA 2017 Sch 13; SI 2025/119; SSI 2024/367).
+
+tracker discipline:
+  Both picks updated via ABSOLUTE PATH to main's tracker
+  (C:\Users\user\Documents\Accounting\docs\property\megawave1_page_tracker.md) per
+  §16.14 + §16.15 + §16.37 discipline. Body word + FAQ count + RUN commit SHA +
+  per-pick statutory anchors + cross-link clusters + HP-lock anchors + F-flag
+  raises recorded inline. F-2 HOUSE_POSITION_EXTENSION recorded on main's
+  megawave1_site_wide_flags.md via absolute path.
+
+terminal handover note:
+  Batch M1-A-B4 RUN-phase fully closed. Both picks live on branch property-megawave1-a
+  awaiting wave-close merge to main. Branch HEAD: a58980e (Pick 2 commit; this marker
+  + flag are uncommitted artefacts in worktree _signals dir to be added in marker commit).
+
+  Bucket A is now COMPLETE: A1-A20 all ✅ on tracker (A1-A18 shipped in M1-A-B1/B2/B3;
+  A19-A20 shipped in this batch M1-A-B4). 20 of 20 Bucket A picks done. Conductor's
+  Stage 1b review pack should consume the HP-LOCK CANDIDATES from all four batches
+  (M1-A-B1: F-11..F-14 drift catches; M1-A-B2: §1.K/§1.L/§1.M; M1-A-B3: §1.M/§1.N/§1.O;
+  M1-A-B4: F-2 Welsh-side specific + F-1 broader devolved-property-taxes proposal).
