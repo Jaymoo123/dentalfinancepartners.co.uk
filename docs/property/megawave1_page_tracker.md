@@ -27,7 +27,7 @@
 | ✅ | A13 | `first-time-buyer-relief-understanding-tax-credits-and-deductions` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ✅ | A14 | `ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ✅ | A15 | `ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
-| ⬜ | A16 | `horton-hall-sdlt-case-residential-vs-non-residential-dispute` | SDLT — surcharges and reliefs | M1-A-B3 | | | |
+| ✅ | A16 | `horton-hall-sdlt-case-residential-vs-non-residential-dispute` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ⬜ | A17 | `how-owning-property-abroad-leads-higher-stamp-duty-rates` | SDLT — surcharges and reliefs | M1-A-B3 | | | |
 | ⬜ | A18 | `labour-plans-stamp-duty-hike-for-overseas-buyers` | SDLT — surcharges and reliefs | M1-A-B3 | | | |
 | ⬜ | A19 | `land-and-buildings-transaction-tax-multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | |
