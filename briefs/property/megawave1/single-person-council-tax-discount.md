@@ -59,8 +59,68 @@ Target length 2,200-2,600 words. Voice: practical step-by-step + statute-grounde
 - LA + VOA manuals: LA council-tax discount + exemption pages; VOA Council Tax Manual.
 - **Stage 1b drift watchpoint:** the 21-day notification window under LGFA 1992 s.16(6) is occasionally mis-cited as 14 or 28 days in competitor copy — Stage 2 verifies the exact statutory wording at write date. The "appropriate percentage" of 25% is fixed in s.11(3) but Stage 2 must confirm no amending Act has altered the percentage between FA 2025 and the page write date.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; practical step-by-step + statute-grounded + scam-warning-aware; reader audience: single residents, widows / widowers, divorcees, separated couples, carers, advisers responding to LA overpayment-review letters); lead-gen architecture (LeadForm + aside-CTAs after the "How to apply" section + after the "Overpayment-review risk" section); schema (FAQs in frontmatter; FAQPage JSON-LD; 10-12 FAQs); cannibalisation cross-link discipline (HEAVY cross-link with C6 hub + C9 complete-guide sister; light cross-link from landlord-tax-essentials hub); house-position anchors (NEW HP-LOCK §30 proposed for council-tax cluster); quality bar (word count 2,200-2,600; FAQs 10-12; external authority links 8-10; build clean; six verifications); anti-templating (lead with "If you live alone, the council tax bill is reduced by 25% under LGFA 1992 s.11(1)(a). The reduction applies regardless of income or wealth. Apply directly to the local authority — the route is free." — NOT "You might be able to save money on your council tax" which is vague and scam-firm-coded).]
+## Universal rules
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+### Voice
+- No em-dashes (use commas, parentheses, full stops, or middle dots).
+- Tone: practical step-by-step plus statute-grounded plus scam-warning-aware. Lead with the headline 25% reduction, then walk the reader through eligibility, application route, evidence, mid-year change discipline, and the overpayment-review defence.
+- Reader audience: single residents (widows, widowers, divorcees, separated couples, retirees); carers; adult-child plus parent households with a child in continuing non-advanced education; advisers responding to local authority overpayment-review letters; landlords managing tenanted property where tenants may qualify.
+- Specific named legislation throughout (LGFA 1992 s.11(1)(a); LGFA 1992 Sch 1 paras 1-12; SI 1992/558 Classes N / U / S / W; LGFA 1992 s.16(6)).
+- Scam-warning posture: the route is free direct to the local authority. Third-party "discount recovery" firms charge 30-50% of recovered amounts for work the resident can do themselves.
+
+### Lead-gen architecture
+- `LeadForm` auto-injects at footer; do NOT duplicate in body.
+- Inline `<aside>` CTAs at two conversion moments: (a) after the "How to apply" section (warm reader at action point); (b) after the "Overpayment-review risk and defence" section (high-stakes specialist-advice moment).
+- Calibrate the asides to specialist property-tax adviser positioning, NOT generic council-tax-recovery firm positioning (the page actively warns against the latter).
+
+### Schema
+- FAQs declared in frontmatter `faqs:` array; emitted automatically as `FAQPage` JSON-LD on build.
+- 10-12 FAQs (operational page, mid-range FAQ count).
+
+### Cannibalisation cross-link discipline
+- HEAVY cross-link with C6 (`reduce-your-council-tax-bill-in-the-uk`, the hub) and C9 (`single-person-council-tax-discounts-a-complete-guide`, the reference / complete-guide sister).
+- Light cross-link with C2 (new builds), C3 (HMO rooms), C4 (housing market policy critique) for cluster cohesion.
+- Cross-link out to the landlord-tax-essentials hub on the tenant-eligibility path.
+- This page is the **operational applicant primer**; do NOT duplicate C9's full statutory architecture or the Williams v Horsham DC / Bennett v Copeland BC case-law line. Cross-link to C9 instead.
+
+### House-position anchors
+- **HP §30** (council-tax framework, LGFA 1992 + SI 1992/558 architecture, locked 2026-05-26 at Stage 1b commit `7877f1c`, sign-off `ce56071`).
+- Sub-anchors used: HP §30.1 (statutory foundation); §30.2 (SI architecture); §30.3 (discount mechanics); §30.5 (HMO and owner-liability mechanics, for HMO carve-outs); §30.6 (cross-jurisdictional notes for the England / Wales / Scotland / NI distinction); §30.10 (practical writing rule for council-tax pages).
+- F-100 (HP-lock proposal) is **closed** by the §30 lock; the seed's earlier "NEW HP-LOCK NEEDED" hedge is now resolved.
+
+### Quality bar (six verifications at build)
+- Body word count target: 2,200-2,600.
+- FAQs: 10-12.
+- External authority links: 8-10 (legislation.gov.uk LGFA 1992 + Sch 1 + SI 1992/558; gov.uk council tax discounts page; VOA Council Tax Manual; LGA / LITRG practice notes; Citizens Advice scam-warning page).
+- Em-dashes in body: 0.
+- Tailwind classes in markdown body: 0 (semantic HTML only).
+- FAQ schema count in built HTML == frontmatter `faqs:` array length.
+- Meta title <= 62 chars; meta description <= 158 chars.
+- Internal `/blog/...` links resolve to existing markdown files (verify C6 already on disk; C9 is in this same M1-C-B2 batch so the RUN-phase sequencing must place C9 ahead of C8 or check C9 markdown on disk before linking).
+
+### Anti-templating opening
+Lead with the statutory specifics, NOT "you might be able to save money on your council tax" which is vague and scam-firm-coded. Suggested opening sentence shape:
+
+> "If you live alone, your council tax bill is reduced by 25% under Local Government Finance Act 1992 s.11(1)(a). The reduction is statutory, applies regardless of income or wealth, and is granted day-by-day. The route is free direct to your local authority. This page walks through who counts as a 'resident', who is 'disregarded' under LGFA 1992 Schedule 1, how to apply, the evidence required, and how to defend a discount that the local authority later reviews."
+
+## Stage 2 verification (2026-05-26)
+
+- **Statutory citations.** Stage 1 seed cited LGFA 1992 ss.11, 16, Sch 1, Sch 4; SI 1992/558 Classes N / W / U / S; LGFA 1992 ss.11A-11C (premiums); LGFA 1992 Sch 1A (CTR). All anchored to the now-locked HP §30 cluster (§30.1 verifies LGFA 1992 c.14 at `https://www.legislation.gov.uk/ukpga/1992/14/contents` on 2026-05-26). RUN session re-verifies s.11(1)(a) text against legislation.gov.uk consolidated at write time per §16.35 mandate.
+- **HP-lock status.** §30 is locked (commit `7877f1c`, sign-off `ce56071`). F-100 closed. C8 anchors to §30 + sub-sections as listed above.
+- **Competitor URL verification at write time (RUN session fetches):**
+  - gov.uk citizen-facing: `https://www.gov.uk/council-tax` and the discounts sub-page.
+  - gov.uk apply-for-discount route: `https://www.gov.uk/apply-for-council-tax-discount`.
+  - Citizens Advice single-person discount page (with scam-warning anchor).
+  - LITRG (Low Incomes Tax Reform Group) council-tax pages, the doctrine-grade consumer reference.
+  - MoneySavingExpert single-person discount page (most-read consumer reference, use for drift-catch only).
+  - Three representative LA pages (one London borough, one Midlands city, one Northern LA) for the operational application flow.
+- **Drift watchpoints (RUN session must surface as flags if hit):**
+  - LGFA 1992 s.16(6) 21-day notification window is occasionally mis-cited as 14 or 28 days in competitor copy. Verify exact statutory wording at write date.
+  - "Appropriate percentage" of 25% is fixed by s.11(3); confirm no amending Act between FA 2025 and the write date has altered the percentage.
+  - Empty-property and second-home premium provisions under ss.11B / 11C were extended by LURA 2023. Verify current LA-by-LA implementation at write date (English LAs have variable rollout).
+  - The single-person discount is NOT means-tested. Competitor pages routinely confuse this with the means-tested Council Tax Reduction (CTR) scheme. Do NOT conflate.
+- **Authority link target (RUN session selects 8-10 from this list):** legislation.gov.uk LGFA 1992 c.14 + s.11 + s.16 + Sch 1 + Sch 4; SI 1992/558; gov.uk council-tax discount page; VOA Council Tax Manual; LGA s.11 + Sch 1 practice notes; LITRG council-tax pages; Citizens Advice; Age UK; Shelter; one Valuation Tribunal authority on sole-or-main-residence.
+
+## Work log (RUN session populates)
+
+[RUN session records: slug / category / H1 / meta title decisions; competitor URLs fetched + key takeaway per URL; existing-page review (overlap + differentiation decision); citations added; internal links added; inline CTA placements; build attempts pass / fail; six verifications evidence; flags raised; 2-3 sentence summary at completion.]
