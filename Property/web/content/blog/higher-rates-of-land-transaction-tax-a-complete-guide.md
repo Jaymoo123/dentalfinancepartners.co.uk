@@ -164,7 +164,7 @@ editorialNote: "Operational complete guide to Welsh LTT higher residential rates
 
 <h2>The 30-day Welsh Revenue Authority return</h2>
 
-<p>An LTT return is due to the Welsh Revenue Authority within 30 days of the effective date under LTTA 2017 s.41. The 30-day window applies to higher-rate transactions on the same terms as main-rate transactions. Late returns attract penalties; the higher-rate charge does not affect the filing deadline.</p>
+<p>An LTT return is due to the Welsh Revenue Authority within 30 days of the effective date under LTTA 2017 s.44 (duty to make a return). The 30-day window applies to higher-rate transactions on the same terms as main-rate transactions. Late returns attract penalties; the higher-rate charge does not affect the filing deadline.</p>
 
 <h2>Common mistakes Welsh higher-rate buyers (and their advisers) make</h2>
 
