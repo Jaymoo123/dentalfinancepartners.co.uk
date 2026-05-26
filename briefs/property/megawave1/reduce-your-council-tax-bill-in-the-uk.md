@@ -85,5 +85,89 @@ Target length 2,800-3,200 words. Tone: practical operational guide with statute 
 ## Universal rules + workflow stubs (Stage 2 fills)
 [Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; practical operational guide tone with statute citations + worked examples; reader audience: homeowners, tenants, landlords, carers, students, persons with disabilities, bereaved family members); lead-gen architecture (LeadForm + aside-CTAs after the "Disability-band reduction" section, after the "Banding challenge" section, and after the "Scam warning" section — high-intent reader often seeking practical help); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (heavy cross-link with C2 / C3 / C4 sister-pages; cross-link from the future C8 + C9 single-person-discount dedicated pages back to this hub); house-position anchors (NEW HP-LOCK §29 candidate); quality bar (word count 2,800-3,200; FAQs 12; external authority links 10-12; build clean; six verifications); anti-templating (lead with the **statutory framework + the route taxonomy** — "There are six legitimate routes to reduce a council-tax bill in the UK: (1) discounts under LGFA 1992 s.11; (2) exemptions under SI 1992/558; (3) disabled-band reduction under SI 1992/554; (4) banding challenge to the VOA under LGFA 1992 s.16; (5) Council Tax Reduction Scheme under LGFA 1992 Sch 1A + Sch 1B; (6) [where applicable] specific class-based relief (annex relief, etc.). Each route is statute-anchored and free to apply for; no third-party fee is needed" — NOT with "There are many ways to reduce your council tax" which is vague and scam-firm-coded).]
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+## Stage 2 extension (M1-C-B1, locked 2026-05-26)
+
+### Stage 1b HP-lock status (drift catch from seed)
+
+Seed proposed "NEW HP-LOCK NEEDED, §29 Council tax framework." Verified at Stage 2 against `house_positions.md` 2026-05-26: §29 is occupied by the "VAT for property" Wave 8 architectural anchor cluster. The actual council-tax HP lock is **§30 "Council tax framework, LGFA 1992 + SI 1992/558 architecture, MW1 extension (locked 2026-05-26)"**, anchoring C2 + C3 + C4 + C6 + C8 + C9 explicitly at §30.7. **§30.3 (discount mechanics, single-occupant + sole-or-main-residence + disregard interaction) is the operative cross-reference for C6's discount section. §30.10's practical writing rule (statute first, jurisdiction, s.11 sub-section, Sch 1 disregard, sole-or-main-residence test, s.16(6) notification offence, scam-firm warning) is the load-bearing voice instruction for the page.** F-101 (council-tax §29→§30 numbering drift) now closed by Stage 1b §30 lock. RUN session anchors C6 to §30 (NOT a §29 lock).
+
+### Final competitor URLs (3-5, Stage 2 verifies live at write time per §16.31)
+
+1. https://www.gov.uk/council-tax/discounts (gov.uk operational definitive source on discounts + exemptions)
+2. https://www.moneysavingexpert.com/reclaim/council-tax-bands-change/ (MoneySavingExpert council-tax-challenge guide, the most-read consumer reference)
+3. https://www.citizensadvice.org.uk/housing/council-tax/ (Citizens Advice consumer guide + scam warning)
+4. https://england.shelter.org.uk/housing_advice/council_tax (Shelter consumer guide on council tax + reductions)
+5. https://www.local.gov.uk/topics/finance-and-business-rates/council-tax-reduction-scheme (LGA practice note on the CTR Scheme architecture)
+
+### Final authority links (5-8 per §4.7)
+
+1. LGFA 1992 s.11 + Sch 1 (discounts + disregards): https://www.legislation.gov.uk/ukpga/1992/14/section/11
+2. SI 1992/558 Council Tax (Exempt Dwellings) Order 1992 (Class A-W exemptions): https://www.legislation.gov.uk/uksi/1992/558
+3. SI 1992/554 Council Tax (Reductions for Disabilities) Regulations 1992: https://www.legislation.gov.uk/uksi/1992/554
+4. LGFA 1992 s.16 (banding challenge appeal): https://www.legislation.gov.uk/ukpga/1992/14/section/16
+5. LGFA 1992 Sch 1A (Council Tax Reduction Scheme, inserted by Local Government Finance Act 2012): https://www.legislation.gov.uk/ukpga/1992/14
+6. SI 2012/2885 Council Tax Reduction Schemes (Prescribed Requirements) (England) Regulations 2012 (pensioner CTR): https://www.legislation.gov.uk/uksi/2012/2885
+7. VOA Council Tax Manual (discounts + exemptions): https://www.gov.uk/guidance/council-tax-manual
+8. gov.uk Valuation Tribunal Service (banding challenge appeals): https://valuationtribunal.gov.uk/council-tax-appeals/
+
+### Closest existing pages (cannibalisation context per §4.5)
+
+Token-similarity assessment performed at Stage 2 against current main inventory:
+
+1. `property-business-rates-council-tax-landlords` (property-types-and-specialist-tax, similarity ~0.30). Existing regime-distinction page; no reduction-routes content. **Differentiation:** C6 is the canonical operational reduction-routes hub; cross-link both directions.
+2. (C2 sibling) `council-tax-for-new-builds` (this batch). Sister-page on new-build mechanic. **Differentiation:** C6 is the reduction-routes hub; C2 is the new-build completion-notice mechanic. Cross-link from C6 at the "empty-property treatment has flipped from discount to surcharge" section.
+3. (C3 sibling) `government-to-end-council-tax-on-hmo-rooms` (this batch). Sister-page on HMO single-dwelling rule. **Differentiation:** C6 covers single-person-discount on HMO single-dwellings; C3 covers the SI 2023/1175 reform. Cross-link from C6's "single-person discount in an HMO context" treatment.
+4. (C4 sibling) `is-increasing-council-tax-damaging-the-housing-market` (this batch). Sister-page on policy analysis. **Differentiation:** C4 covers wider policy; C6 covers operational reduction routes. Cross-link.
+5. (Future C8 + C9 dedicated single-person-discount pages, if planned in subsequent batches). Sister-pages on a single reduction route. **Differentiation:** C6 is the hub covering ALL routes; C8 / C9 are the deep-dive on the single-person discount specifically. C6 cross-links forward.
+6. (CIL sibling) C1 (this batch) `a-complete-guide-on-community-infrastructure-levy-cil`. Different statutory regime; light cross-link only at the regime-distinction note.
+
+**No CANNIBAL flag.** C6 occupies clean operational-hub topical space.
+
+### Redirect overlap
+
+No existing 429 middleware redirect overlaps `reduce-your-council-tax-bill-in-the-uk`. Verified by inspection of middleware.ts redirect map at Stage 2. No redirect action required at step 12.
+
+### Universal rules (per §4.8, verbatim)
+
+- **Voice.** No em-dashes (commas, parentheses, full stops, middle dots only). Practical operational guide tone with statute citations + worked examples + LA-application step-by-step. Specific. Named legislation. Anonymised personas (Mrs Patel-widowed-pensioner, Singh-disabled-household, Mawell-student-house, etc.). No real client names. **Required: scam-firm warning per §30.10 practical writing rule.**
+- **Lead-gen architecture.** LeadForm auto-injected at footer by BlogPostRenderer; never duplicate in body. Inline `<aside>` CTAs at conversion moments only, after the "Disability-band reduction" section, after the "Banding challenge" section, and after the "Scam warning" section per Manager pre-decisions.
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes. `<aside>` styled by global CSS at `Property/web/src/app/globals.css`.
+- **FAQs.** 12 FAQs in frontmatter `faqs:` array; auto-emitted as FAQPage JSON-LD by the renderer. Vary phrasing per page.
+- **Cannibalisation discipline.** Read the closest-existing pages above before writing; differentiate by the framing differentiator; cross-link rather than overlap.
+- **Anti-templating.** Per-page framing differentiator. Vary H2 structure across the council-tax cluster (C2 / C3 / C4 / C6 must NOT read like four versions of the same page). C6 specifically must read as operational-route taxonomy, not regime-mechanic or policy-analysis.
+- **Quality bar.** Six verifications at step 11. Body word count 2,800-3,200 (broad-audience hub page warrants higher band).
+
+### 19-step per-page workflow (verbatim, per §7)
+
+1. Read `house_positions.md` once at session start (§30 council tax framework is the operative cluster anchor for C6; §30.3 discount mechanics + §30.10 practical writing rule are critical).
+2. Claim ONE page in the wave tracker (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with httpx + BeautifulSoup.
+5. Read closest-existing pages on our site (especially C2 / C3 / C4 siblings from this batch — they will be on branch by the time C6 is written if RUN sequencing places C6 last in the cluster).
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page, anti-templating; H2 structure organised by the six-route taxonomy in the framing differentiator).
+7. Verify factual claims against authorities (legislation.gov.uk, gov.uk, VOA manual). **§16.35 mandate: WebFetch every numeric figure + every statutory section cite at write time before committing. Particular focus for C6: current SI 1992/558 Class list (Class A + Class C abolitions; current operative classes); current SI 1992/554 disability-reduction text; current LGFA 1992 s.16 banding-challenge time-limit position; current pensioner-CTR SI 2012/2885 framework.**
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none for C6).
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+### Per-page work-log (RUN session populates)
+
+- **Decisions (slug, category, H1, meta title, why these vs alternatives):** [RUN session fills]
+- **Competitor URLs fetched + key takeaway per URL:** [RUN session fills]
+- **Existing-page review (overlap, differentiation decision):** [RUN session fills]
+- **Citations added:** [RUN session fills]
+- **Internal links added:** [RUN session fills]
+- **Inline CTA placements:** [RUN session fills]
+- **Build attempts (pass/fail):** [RUN session fills]
+- **Verification (each of the six checks):** [RUN session fills]
+- **Flags raised:** [RUN session fills, prefix F-100..F-149 for this bucket]
+- **2-3 sentence summary:** [RUN session fills]
