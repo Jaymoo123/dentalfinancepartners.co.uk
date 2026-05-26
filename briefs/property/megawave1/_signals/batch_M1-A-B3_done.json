@@ -1,0 +1,24 @@
+{
+  "batch_id": "M1-A-B3",
+  "agent_id": "MW1-run-A-B3",
+  "completed_at": "2026-05-26T22:30:00Z",
+  "branch": "property-megawave1-a",
+  "phase": "run",
+  "bucket": "A (SDLT — surcharges and reliefs + Second homes & council tax premium)",
+  "commit_shas": [
+    "10cc62c",
+    "3567516",
+    "c274aa9",
+    "6a2aad5",
+    "8a4b8f3",
+    "65c22b9"
+  ],
+  "slugs_done": [
+    "first-time-buyer-relief-understanding-tax-credits-and-deductions",
+    "ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement",
+    "ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice",
+    "horton-hall-sdlt-case-residential-vs-non-residential-dispute",
+    "how-owning-property-abroad-leads-higher-stamp-duty-rates",
+    "labour-plans-stamp-duty-hike-for-overseas-buyers"
+  ]
+}
