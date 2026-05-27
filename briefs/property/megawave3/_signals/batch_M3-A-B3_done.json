@@ -1,0 +1,38 @@
+{
+  "batch_id": "M3-A-B3",
+  "stage": 1,
+  "agent_id": "MW3-Stage1-A-B3-leaf",
+  "completed_at": "2026-05-27T20:30:00Z",
+  "commit_shas": [
+    "b745792",
+    "edabef6",
+    "dd026f2",
+    "56b0dfa",
+    "d8aeafe",
+    "e18a491"
+  ],
+  "slugs_done": [
+    "late-filing-and-late-payment-penalties",
+    "let-property-campaign-penalty-calculator",
+    "let-property-campaign-why-voluntary-disclosure-makes-sense",
+    "making-tax-digital-major-self-assessment-overhaul-ahead",
+    "missed-taxes-let-property-campaign-to-the-rescue",
+    "what-is-qualifying-income-for-mtd"
+  ],
+  "flags_raised": [
+    "F-3 BRIEF_DRIFT (Bucket A) — FA 2021 Sch 24 (MTD points-based late-submission regime) vs FA 2007 Sch 24 (long-standing inaccuracy regime) numerical-name collision flagged at A16 + A18 seeds; sessions writing the MTD penalty regime must NOT collapse the two Sch 24 instruments. Stage 1b cross-check and Stage 2 disambiguation discipline required. Not blocking A16 / A18 seeds — both explicitly distinguish the two instruments in-seed."
+  ],
+  "drift_catches": [
+    "§16.35 per-write statute verification — all six seeds carry verified primary anchors: SI 2021/1076 reg 20 (A18 qualifying income), Sch 41 FA 2008 paras 5/6A/13/20 (A14/A15/A17 LPC mitigation), TMA 1970 s.7/s.29/s.34/s.36/s.36A (A13/A14/A15/A17 SA + discovery), FA 2009 Sch 55/Sch 56 (A13 legacy SA penalty cascades), TMA 1970 Sch A1 + F(No.2)A 2017 Sch 14 (A16 MTD architecture). Live-verified at write time 2026-05-27 against legislation.gov.uk for FA 2009 Sch 55/Sch 56 cascades and Sch 41 FA 2008 mitigation matrix.",
+    "Multi-page LPC cluster intentional with A2 (DDS umbrella) + A3 (benefits-tally) + A12 (orientation) + A14 (calculator) + A15 (strategic-rationale) + A17 (emotional-rescue) each targeting distinct search intent within the LPC space — A12 is the orientation hub; A14 is the calculator-led numerical estimation; A15 is strategic-philosophical; A17 is emotional-rescue / panic-moment-action; A3 is tactical-benefits-tally; A2 is product-architecture umbrella. Stage 2 differentiator-check at brief gate per F-102 pattern.",
+    "Multi-page MTD cluster intentional with A6 (news) + A7 (exit) + A11 (LtdCo) + A16 (system-overhaul orientation) + A18 (qualifying-income deep-dive) + A19 (joint-owners) + A20 (penalty + exemption catalogue) — seven pages with distinct intent slices, all anchored on §19 + §19.10-§19.17 Wave 3/4 lock. Stage 2 differentiator-check required especially on A16 (system-overhaul) vs A18 (qualifying-income deep-dive) which share the orientation-tier audience; A18 enforces the gross-not-net pedagogical line as primary differentiator.",
+    "Tonal-frame discipline flagged for A17 (emotional-rescue) — page must hold calm/structural/action-oriented register; NOT alarmist, NOT breezy, NOT patronising. Stage 2 must enforce the tonal-register at the writing gate; the risk is drifting into A15 strategic-rationale frame (lose the emotional-rescue audience) or into alarmist tone (amplify panic rather than route to action).",
+    "F-1-adjacent risk recurrence on A13 + A16: legacy Sch 56 31/46/91 day-triggers crossed with new §19.7 3%/3%/10% percentages is the operational drift risk; both seeds explicitly distinguish the legacy schedule (for non-MTD landlords below threshold + VAT) from the new MTD ITSA schedule (15/30/31 day-triggers + 3%/3%/10%). Sessions writing must NOT cross-import."
+  ],
+  "notes": [
+    "Worktree commit-on-branch pattern continues (rolling-arch drift bug recurrence): all 6 commits on property-megawave3-a branch, awaiting manager merge to main per prior M3-A-B1 / M3-A-B2 pattern.",
+    "F-1 (Wave 3 MW3-A-B1) site-wide STALE sweep on CT late-filing £200/£400 figures continues open; this batch does not directly engage CT penalty figures (no A-bucket pick in this batch is CT-specific) but A11 sibling (M3-A-B2) and A5 sibling (M3-A-B1) hold the F-1 verified figures.",
+    "F-5 (Wave 7) Sch 24 vs Sch 41 12-month-qualifier disambiguation — all four LPC seeds (A14/A15/A17 + cross-link from A13) explicitly use Sch 41 para 13 framework (not Sch 24); the F-5 conflation risk runs in the other direction and is not engaged this batch.",
+    "Cross-link reciprocity: this batch creates a tight LPC cluster (A14/A15/A17) + tight MTD cluster (A16/A18) + adjacent penalty regime (A13) — sessions writing should populate cross-link recommendations during Stage 2 to ensure reciprocal links across all 6 picks plus sibling MW3-A picks (A3/A12/A2 on LPC side; A6/A7/A11/A19/A20 on MTD side)."
+  ]
+}
