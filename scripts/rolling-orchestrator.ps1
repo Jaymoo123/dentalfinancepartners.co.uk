@@ -217,16 +217,22 @@ while ($true) {
         [System.IO.File]::WriteAllText($launcherPath, $launcherBody, $utf8)
     }
     $innerCmd = "& '$launcherPath'"
+    # Drift-bug fix (2026-05-27): Stage 1 + Stage 2 brief seeds + extensions land on
+    # main per template instruction. Setting wt cwd to worktree caused sub-agents'
+    # relative-path `git add` to resolve against worktree filesystem, drifting commits
+    # to worktree branches. For stage1/stage2 use repoRoot as cwd; for RUN keep
+    # worktree (RUN-phase page output lives in worktree's Property/web/content/blog/).
+    $spawnCwd = if ($Phase -eq 'run') { $wtDir } else { $cfg.paths.repoRoot }
     if ($DryRun) {
-        Write-Warn "Would spawn: wt new-tab -d `"$wtDir`" --title `"$sessionName`""
+        Write-Warn "Would spawn: wt new-tab -d `"$spawnCwd`" --title `"$sessionName`""
         Write-Host "            inner: $innerCmd" -ForegroundColor DarkGray
     } else {
         try {
             Start-Process -FilePath wt -ArgumentList @(
-                'new-tab', '-d', $wtDir, '--title', $sessionName,
+                'new-tab', '-d', $spawnCwd, '--title', $sessionName,
                 '--', 'powershell', '-NoExit', '-Command', $innerCmd
             ) | Out-Null
-            Write-OK "  Spawned $sessionName in $wtDir"
+            Write-OK "  Spawned $sessionName in $spawnCwd"
         } catch {
             Write-Fail "wt new-tab failed: $_"
         }

@@ -146,6 +146,7 @@ $subs = @{
     'wave_subdir'                = $waveSubdir
     'worktree_path'              = $worktreePath
     'branch_name'                = $branchName
+    'repo_root'                  = $cfg.paths.repoRoot
     'briefs_dir'                 = $briefsDir
     'signal_dir'                 = $signalDir
     'tracker_path'               = $trackerPath
