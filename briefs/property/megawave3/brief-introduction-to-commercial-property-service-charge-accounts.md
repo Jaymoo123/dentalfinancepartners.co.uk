@@ -59,16 +59,175 @@ This page is the **landlord-side orientation** to commercial service charge acco
 - Cannibalisation watch: low risk — no existing commercial service charge page on site. Stage 2 confirms by re-running cannib check at brief gate.
 - Title note: working title "Commercial Property Service Charge Accounts: The Landlord-Side Introduction" — telegraphs the landlord-side framing (not tenant-side, not agent-side). Stage 2 confirms or refines.
 
-## Stage 2 research target list
+## Stage 2 research target list — VERIFIED URLs
 
-- Competitor pages to fetch (Stage 2 verifies liveness): RICS website pages on the Professional Statement; ICAEW Tech 03/03 commentary; British Council for Offices (BCO) guidance on service charges; British Property Federation (BPF) commercial service charge briefings; major property law firm explainers (Mills & Reeve, Trowers, Knights, Howard Kennedy etc.); managing agent firm explainers (Savills, CBRE, Cushman & Wakefield etc.); HMRC VAT Notice 742 commercial service charge sections; CIOT / ICAEW Tax Faculty briefings on commercial service charge VAT.
-- HMRC manuals to cite: PIM1000+ (top-of-cluster Property Income Manual); PIM2240 (service charges); VAT Notice 742 (Land and Property — section on service charges); VAT Notice 742A (Option to tax — section on service-charge follow-supply); CG70000+ (CGT manual — service charge contributions to base cost for tenant-side; sinking-fund treatment); CA22000+ (Capital Allowances Manual — landlord-side capital expenditure).
-- Case-law to ground: caselaw on the principal-supply VAT analysis (*Card Protection Plan v Customs and Excise* [1999] CJEU C-349/96 — the principal-supply test, by analogy); caselaw on the LTA 1985 non-application to commercial (typically taught via commentary rather than litigated); caselaw on trust-status of service charge monies (general trust-law principles).
+### Authority URLs (RUN session WebFetches at write time per §16.35)
 
-## Universal rules + workflow stubs (Stage 2 fills)
+- **`https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/real-estate-standards/service-charges-in-commercial-property`** — RICS Professional Statement "Service charges in commercial property" 4th edition (effective 1 April 2019). RUN session verifies current edition status at write (RICS updates every 3-5 years).
+- **`https://www.legislation.gov.uk/ukpga/1985/70/section/18`** — LTA 1985 s.18 (statutory definition of "service charge" — confined to dwellings; the operative anchor for the residential-only non-application argument). RUN session WebFetches s.18 + ss.19, 20, 21, 22, 27A at write time to confirm the "dwelling" architecture.
+- **`https://www.legislation.gov.uk/ukpga/2005/5/section/272`** — ITTOIA 2005 s.272 (deductions for property businesses — service-charge outgoings deductible against rental income).
+- **`https://www.legislation.gov.uk/ukpga/2009/4/section/46`** — CTA 2009 s.46 (companies — deductions for property businesses).
+- **`https://www.legislation.gov.uk/ukpga/2009/4/section/61`** — CTA 2009 s.61 (companies — calculation of trade profits / property-business profits).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/schedule/10`** — VATA 1994 Sch 10 (option to tax architecture). Service charges follow option-to-tax status.
+- **`https://www.legislation.gov.uk/ukpga/1994/23/schedule/9`** — VATA 1994 Sch 9 Group 1 (exempt land default). The pre-opt-to-tax position for service-charge VAT.
+- **`https://www.legislation.gov.uk/ukpga/2007/15/part/3`** — Tribunals, Courts and Enforcement Act 2007 Part 3 (Commercial Rent Arrears Recovery — CRAR; replaced common-law distress 6 April 2014).
+- **`https://www.legislation.gov.uk/uksi/2013/1894`** — Taking Control of Goods Regulations 2013 (SI 2013/1894).
+- **`https://www.legislation.gov.uk/ukpga/1925/20/section/146`** — Law of Property Act 1925 s.146 (forfeiture for breach of covenant other than non-payment of rent — the s.146 notice procedure).
+- **`https://www.legislation.gov.uk/ukpga/2001/2`** — Capital Allowances Act 2001 (Part 2 plant + machinery; Part 2A SBA at 3% straight-line per FA 2020 s.30).
+- **`https://www.gov.uk/guidance/vat-on-land-and-property-notice-742`** — HMRC VAT Notice 742 (Land and Property) — service-charge sections.
+- **`https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a`** — HMRC VAT Notice 742A (Option to tax) — section on service-charge follow-supply.
+- **`https://www.icaew.com/technical/tax/property/commercial-property-service-charge`** — ICAEW Tech 03/03 (Commercial Property Service Charge Accounting — joint ICAEW + RICS framework).
 
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes per memory `feedback_no_em_dashes`); LeadForm footer; aside-styled inline CTAs after the LTA 1985 non-application section + after the VAT-follows-option-to-tax section + after the trust-account discipline section; semantic HTML; FAQs 10-12 entries (orientation angled: "is my commercial service charge subject to LTA 1985?" "do I have to follow the RICS Statement if I'm not a RICS member?" "what VAT goes on a service charge invoice if I haven't opted to tax?"); FAQPage JSON-LD; rate-by-reference per §16.27; six-verification gate; §16.35 per-write statute re-verification at write time. Internal-link discipline: forward-link to Wave 8 Bucket C VAT cluster pages, Wave 7 capital-vs-revenue cluster, §27.7 record retention, §25 capital allowances + SBA, C20 sibling on residential service charge reform.]
+### Competitor URLs
+
+`<!-- competitor section: session-side WebSearch at write time. Recommended queries: "RICS Professional Statement service charges commercial property 4th edition", "commercial service charge VAT option to tax landlord standard rated", "commercial rent arrears CRAR forfeiture service charge reserved as rent", "ICAEW Tech 03/03 commercial property service charge accounting framework", "commercial vs residential service charge LTA 1985 dwelling test". Aim 4-6 firm-side practitioner briefings — RICS website pages on the Professional Statement; British Council for Offices (BCO) guidance on service charges; British Property Federation (BPF) commercial service charge briefings; major property law firm explainers (Mills & Reeve, Trowers, Knights, Howard Kennedy, CMS, Eversheds); managing agent firm explainers (Savills, CBRE, Cushman & Wakefield, JLL); HMRC VAT Notice 742 commercial service charge sections; CIOT / ICAEW Tax Faculty briefings on commercial service charge VAT. -->`
+
+### HMRC + supervisor manual anchors
+
+- HMRC Property Income Manual PIM1000+ (cluster top-of-tree).
+- HMRC PIM2240 (service charges).
+- HMRC VAT Notice 742 (Land and Property — service-charge sections).
+- HMRC VAT Notice 742A (Option to tax — service-charge follow-supply).
+- HMRC CG70000+ (CGT manual — for sinking-fund + capital-expenditure-through-service-charge treatment).
+- HMRC CA22000+ (Capital Allowances Manual — landlord-side capital expenditure).
+
+### Case-law (verify each at BAILII at write time)
+
+- *Card Protection Plan v Customs and Excise* (CJEU C-349/96) [1999] 2 AC 601 — the principal-supply test for VAT (foundational; service charges follow rent supply by analogy).
+- *Friends Provident Life Office v British Railways Board* [1996] 1 EGLR 88 — RICS-Code era authority on commercial service charge transparency.
+- Lease-construction case-law on what counts as "rent" for s.146 forfeiture vs CRAR (the rent-reserved-as-such-vs-reserved-as-rent distinction).
+- General trust-law principles for service-charge monies held in client account (no specific service-charge-trust case-law; the trust-status arises from general law of agency + RICS Statement principle 4 + the contractual lease wording).
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — A typical commercial service-charge year (worked numbers)
+
+Landlord (Patel Properties Ltd) holds a 4-storey commercial office building in central Manchester, let to 6 tenants. Service charge budget for 2026 accounting year: £180,000 (£3,000/m² × 60 m² average per tenant share). Landlord has opted to tax under VATA 1994 Sch 10.
+
+- **Quarterly billing (RICS Statement principle 5 — timely billing):** £45,000 + 20% VAT = £54,000 invoiced each quarter to tenants (each tenant's share per the lease's floor-area apportionment, plus 20% VAT).
+- **Year-end actual expenditure:** £172,000 incurred (£8,000 underspend vs budget — common; budget set conservatively).
+- **Year-end statement (RICS principle 8 — annual statement within 4 months of year-end):** independent surveyor certifies £172,000 actual; £8,000 surplus returned to tenants per lease terms (or rolled forward to next year if lease allows).
+- **Tax flow (landlord side):**
+  - Income (CT600 — rental business income): £180,000 service charge invoiced (gross of VAT — VAT is a separate flow).
+  - Expense deduction (CTA 2009 s.61): £172,000 service-charge outgoings (utilities + repairs + management + insurance + security).
+  - Net rental profit from service-charge limb: £8,000 (the unspent budget — refunded to tenants, so effectively zero net retention).
+  - Where £8,000 refunded: reduce income to £172,000; net £0. Where £8,000 rolled forward: prior-year income £180,000 + future-year reduction.
+- **VAT flow:**
+  - Output VAT on tenant invoicing: 20% × £180,000 = £36,000 to HMRC.
+  - Input VAT on service-charge expenditure: 20% × £172,000 = £34,400 reclaimed (where expenditure is standard-rated; some categories like rates may be outside scope).
+  - Net VAT flow: ~£1,600 to HMRC.
+
+### Example 2 — The commercial-vs-residential conflation trap
+
+Landlord (Mrs Singh) holds a mixed-use property: ground-floor retail (Class E) let to a coffee shop tenant + 3 flats above let to residential tenants on assured-shorthold tenancies. Service charge applies to common parts (entrance hall, stairs, roof, building insurance).
+
+- **The trap:** Mrs Singh's managing agent applies the LTA 1985 s.20 consultation procedure for all major works on the building, including the retail-tenant share of the works. The retail tenant complains the s.20 procedure was misapplied to it.
+- **The position:** LTA 1985 s.18 defines "service charge" by reference to "a tenant of a dwelling". The s.19 reasonableness test, s.20 consultation procedure, s.21 summary of accounts, s.22 right to inspect, and s.27A FTT jurisdiction ALL attach to RESIDENTIAL service charges only. The COMMERCIAL portion (retail tenant) sits OUTSIDE this regime — the lease alone governs reasonableness, consultation, and dispute. The s.20 procedure does NOT apply to the retail tenant.
+- **Operational fix:** the managing agent must split the service-charge methodology — apply LTA 1985 procedures to the residential portion; apply lease-only governance to the commercial portion. RICS Statement compliance for the commercial portion; LTA 1985 + (where applicable) the new RRA 2025 framework for the residential portion.
+
+Inline aside CTA: "If your service-charge regime conflates residential and commercial protections, you are exposed to both over-procedure on the commercial side (administrative burden) and under-procedure on the residential side (tenant tribunal applications under LTA 1985 s.27A). Talk to us about the split methodology."
+
+### Example 3 — The VAT-follows-option-to-tax decision
+
+Landlord owns a single commercial unit; let to one VAT-registered business tenant. Service-charge budget £30,000/year.
+
+- **Option exercised (Sch 10 OTT in place):** rent is standard-rated. Service charge follows principal supply — standard-rated at 20%. Landlord invoices £30,000 + £6,000 VAT = £36,000. Recovers input VAT on related expenses (£30,000 × 20% = £6,000 input). Net VAT to HMRC: £0 (output = input on the service charge limb, ignoring partial-exemption complications).
+- **Option NOT exercised (no OTT — rent is exempt under Sch 9 Gr 1):** rent is exempt. Service charge follows principal supply — generally EXEMPT. Landlord invoices £30,000 (no VAT). Cannot recover input VAT on related expenses (£6,000 input is BLOCKED — partial-exemption restriction under SI 1995/2518 regs 99-110). Net effective cost to landlord: £36,000 to deliver £30,000 of service.
+- **Decision:** for a commercial property let to VAT-registered tenants, opting to tax is typically a clear win (recovery of input VAT). For a property let to non-VAT-registered tenants (e.g. charity, exempt-supplier business), opting to tax may be a net loss (the tenant cannot recover the VAT on rent + service charge). The OTT decision is property-specific and tenant-specific; lifetime impact.
+
+### Example 4 — CRAR recovery for service charge reserved as rent
+
+Landlord's commercial tenant falls 3 months behind on rent (£12,000) + 3 months behind on service charge (£3,000). Lease provides that "all sums payable hereunder, including service charge and insurance contributions, shall be reserved as rent and be recoverable as if rent in arrears."
+
+- **Rent + service-charge-reserved-as-rent recoverable via CRAR:** Under Tribunals, Courts and Enforcement Act 2007 Part 3 + SI 2013/1894, the landlord may instruct an enforcement agent to take control of goods at the demised premises. Pre-action notice (Notice of Enforcement) 7 clear days before entry; entry between 6am and 9pm; goods seized and sold to satisfy the debt. Operates without court order.
+- **Service charge NOT reserved as rent in a different lease:** if the lease distinguishes "rent" from "other sums" (e.g. "in addition to rent, the tenant shall pay a service charge"), CRAR does NOT cover the service-charge debt. Recovery is by ordinary debt-collection (statutory demand → bankruptcy if individual / winding-up if company; or county court money claim). Forfeiture under LPA 1925 s.146 is available for breach of covenant but requires service of a s.146 notice and reasonable period to remedy.
+- **Operative implication for lease-drafting:** the "reserved as rent" wording is the load-bearing CRAR-eligibility clause. Landlords drafting new leases should reserve service charge AS rent to preserve CRAR eligibility; tenants drafting (or negotiating) should consider whether the rent-eligibility is acceptable given CRAR's automatic remedy.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: Is my commercial service charge subject to the Landlord and Tenant Act 1985?**
+   A: No. LTA 1985 ss.18-30 govern RESIDENTIAL service charges only — the s.18 definition is confined to "a tenant of a dwelling". None of the statutory protections (s.19 reasonableness cap; s.20 consultation for major works; s.21 right to summary of accounts; s.22 right to inspect documents; s.27A FTT jurisdiction) apply to commercial leases. Commercial service charges are governed by the LEASE alone; what the lease says is what the lease says. This is the most common practitioner conflation error.
+
+2. **Q: Do I have to follow the RICS Professional Statement if I'm not a RICS member?**
+   A: Strictly, no — the RICS Statement is mandatory for RICS members only. However, courts treat the Statement as the benchmark practitioner standard when assessing reasonableness of service-charge claims, dispute resolution, and managing-agent conduct. Non-RICS landlords and managing agents not bound by the Statement face the operational expectation that their service-charge regime meets at least Statement-equivalent transparency, communication, and certification standards. Departure from the Statement without justification is a risk factor in any subsequent dispute.
+
+3. **Q: What VAT goes on a service charge invoice if I haven't opted to tax?**
+   A: Generally EXEMPT. The service charge follows the principal supply (rent). Rent without an option to tax is exempt under VATA 1994 Sch 9 Group 1 default; the service charge is exempt by extension under the principal-supply analysis (*Card Protection Plan v Customs and Excise* CJEU C-349/96 by analogy). The landlord cannot recover input VAT on related expenses (partial-exemption restriction under SI 1995/2518 regs 99-110). For VAT recovery purposes, opting to tax converts both the rent and service-charge supplies to standard-rated and enables input recovery.
+
+4. **Q: How does the trust-account requirement work?**
+   A: Under RICS Professional Statement principle 4, service charge monies received from tenants are held in trust by the managing party (landlord or agent). The Statement requires (i) a designated client account separate from the landlord's general operating account AND separate from the managing agent's general operating account; (ii) annual reconciliation; (iii) segregation per building or per service-charge schedule within a building. Monies belong to the tenants collectively (held to be applied to the service charge expenditure) until applied. Breach of the trust discipline can give rise to breach-of-trust claims by tenants.
+
+5. **Q: Does my lease require an audit or just a certification of the annual statement?**
+   A: Read the lease carefully. RICS Statement principle 8-9 distinguishes "audit" (independent external audit, partner-level statutory audit-style verification) from "certification" (partner-level certification by the managing party). Many older leases use the word "audited" loosely meaning "certified"; modern practice is clearer. Audit is materially more expensive than certification (£3,000-£10,000 + per audit vs £500-£2,000 for certification). The lease's exact wording is decisive; ambiguous wording is the subject of frequent dispute.
+
+6. **Q: How do I record service charge income and expenditure for tax purposes?**
+   A: Service charge RECEIVED from tenants is rental-business income (SA105 box 5 individuals; CT600 corporate landlords) — gross of VAT. Service charge OUTGOINGS (utilities, repairs, management costs, insurance, security) are deductible against the rental business under ITTOIA 2005 s.272 / CTA 2009 s.61. If the service charge runs at cost (RICS-required floor), the income and expenditure NET TO ZERO. Where the lease permits over-recovery, the surplus is income retained by the landlord; where the landlord's share (voids, capped recovery) is borne, the underlying cost remains fully deductible.
+
+7. **Q: What is the landlord's share of the service charge?**
+   A: The portion of service-charge cost the landlord cannot recover from tenants under the lease + voids + capped-recovery clauses. Typical sources: void periods (no tenant in occupation to bill); capped service charges in lease terms (some leases cap the service charge at a percentage of rent or a fixed sum); recoverable categories excluded by the lease (e.g. capital cost of major works where the lease only permits revenue recovery). The landlord's share is fully deductible against rental business income for tax purposes regardless of whether recovered from tenants.
+
+8. **Q: How does VAT work where there are multiple commercial tenants and a residential tenant in the same building?**
+   A: Mixed-use buildings require PARTIAL EXEMPTION calculations. The service-charge expenditure that relates to the standard-rated commercial supply is fully input-recoverable; the service-charge expenditure that relates to the exempt residential supply is NOT input-recoverable. Where expenditure relates to both (common parts), it must be apportioned per the standard partial-exemption method (SI 1995/2518 regs 99-110). The landlord's option-to-tax election on the commercial portion does not extend to the residential portion (which is excluded by Sch 10 paras 5/6 disapplication for dwellings).
+
+9. **Q: Can I recover service charge debt using CRAR?**
+   A: Only if the lease "reserves" the service charge AS RENT. Under Tribunals, Courts and Enforcement Act 2007 Part 3 + SI 2013/1894 (CRAR), commercial rent arrears can be recovered by enforcement agents without court order. Service charge that is RESERVED AS RENT in the lease falls within CRAR scope; service charge NOT reserved as rent does not — recovery is by ordinary debt-collection. The "reserved as rent" wording is the load-bearing lease drafting clause for CRAR eligibility.
+
+10. **Q: Are sinking fund contributions taxable as income to the landlord?**
+    A: No. Sinking fund contributions held in trust on behalf of tenants for future capital works are NOT income to the landlord (held to be applied to specific future capital works). The eventual capital works are capital expenditure (added to the building's base cost for CGT). Operating discipline: keep the sinking fund in a separate client account; record contributions as held-on-trust; reconcile annually. Wave 7 capital-vs-revenue cluster covers the deeper line; forward-link.
+
+11. **Q: What happens when there's a dispute about commercial service charge?**
+    A: Unlike residential (where the FTT Property Chamber has dedicated jurisdiction under LTA 1985 s.27A), commercial disputes are resolved through (a) contractual mechanisms in the lease (typically dispute resolution clauses with expert determination or arbitration); (b) ordinary contract litigation in the County Court or High Court for larger disputes; (c) the RICS dispute resolution service for managing-agent / RICS-member-involved disputes. There is no statutory tribunal dedicated to commercial service charges. The lease's dispute-resolution clause governs.
+
+12. **Q: How long do I retain service charge records?**
+    A: Under TMA 1970 s.12B for individuals and equivalent CT rules for companies, 5 years for individuals (extended to 6 years for companies). For service-charge accounts, retention should align to the longer of (i) tax-record retention (5/6 years), (ii) lease-specified inspection period (often the entire lease term plus 12 years post-termination under the Limitation Act 1980 for contract claims), or (iii) RICS Statement-best-practice retention of a complete reconciliation cycle including any inspection. The Limitation Act period is typically the binding constraint — retain at least 6 years post-handover. §27.7 lock for record retention discipline.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy (per `feedback_no_em_dashes` memory).
+- **Specific over generic.** Named statute (LTA 1985 ss.18-30 [residential-only — non-application to commercial]; ITTOIA 2005 s.272; CTA 2009 ss.46, 61; VATA 1994 Sch 9 Gr 1 + Sch 10; TCEA 2007 Part 3 + SI 2013/1894 CRAR; LPA 1925 s.146 forfeiture; TMA 1970 s.12B record retention; Limitation Act 1980 6-year contract claims; CAA 2001 Part 2 + Part 2A SBA). RICS Professional Statement "Service charges in commercial property" 4th edition (effective 1 April 2019) + ICAEW Tech 03/03 cited as professional-standards anchors. Worked-example personas only; no real names.
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Inline aside-styled CTAs at three conversion moments: (i) after the LTA 1985 non-application section (the conflation trap); (ii) after the VAT-follows-option-to-tax section; (iii) after the trust-account discipline section.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 10-12 entries (orientation angled per the seed).
+- **Body word count target:** 2,000-2,400.
+- **Anti-templating:** open with the practitioner-question hook from the seed counter-pattern ("If you hold a commercial property let to one or more tenants, here is what the RICS Statement requires, how the framework differs from residential service charges, and how the service-charge limb flows through your rental business accounts..."). Do NOT open with "What is a service charge?" tenant-template opener or with a deep-dive on any one mechanic.
+- **Rate-by-reference per §16.27** for VAT 20%; CGT residential 24%; SBA 3%; RICS Statement edition 4 / 2019 effective; LTA 1985 ss.18-30 residential-only; CRAR commencement 6 April 2014; LURA 2023 transition watchpoint.
+- **Six-verification gate per §9.**
+- **§16.35 per-write statute re-verification at write time** — every LTA / ITTOIA / CTA / VATA / TCEA / LPA / TMA / CAA cite verified at legislation.gov.uk at write. RICS Statement edition status verified at rics.org at write. ICAEW Tech 03/03 current-version status verified at write.
+- **Do-not-write GREP discipline (RUN session greps draft):** "LTA 1985 protections apply to commercial" (FALSE — s.18 dwellings only); "the s.20 consultation procedure applies to commercial major works" (FALSE — residential-only); "service charge VAT is always standard-rated" (FALSE — follows option-to-tax status; can be exempt); "service charge monies are landlord's general operating cash" (FALSE — RICS Statement principle 4 trust-account requirement); "CRAR applies to any commercial debt" (FALSE — only to rent, including service-charge-reserved-as-rent); "sinking fund contributions are landlord income" (FALSE — held in trust; not income); "an audit and a certification are the same thing" (FALSE — different procedures, different costs); "RICS Statement is voluntary even for RICS members" (FALSE — mandatory for RICS members; courts treat as practitioner benchmark for all); "the FTT Property Chamber has jurisdiction over commercial service charges" (FALSE — residential-only under LTA 1985 s.27A); "commercial service charges have a statutory cap on reasonableness" (FALSE — no statutory cap; lease alone governs).
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §29 VAT architecture — Sch 9 + Sch 10 + Sch 7A + partial-exemption mechanics; §27.7 record retention; §20 by reference for RRA 2025 residential-only non-application; §25 capital allowances + SBA; Wave 7 capital-vs-revenue cluster).
+2. Claim this page in `megawave3_page_tracker.md`.
+3. Read this brief end-to-end.
+4. Fetch + read authority URLs above + WebSearch for live competitor briefings (prioritising 2026-vintage RICS Statement edition 4 era).
+5. Read closest-existing pages: Wave 8 Bucket C VAT cluster pages on Sch 10 option to tax; Wave 7 capital-vs-revenue cluster pages; existing landlord-tax-essentials pillar pages on rental-income computation; §27.7 record retention pages; C20 sibling on commonhold + leasehold residential reform (lateral with commercial vs residential boundary clear).
+6. Plan H2 / H3 outline: practitioner-question open → what a commercial service charge IS + the lease as governing document → the RICS Statement 4th edition mandatory framework → the LTA 1985 NON-application to commercial → the VAT-follows-option-to-tax line → the trust-account discipline → year-end certification + audit cycle → tax flow (income + expense matching) → recoverable vs irrecoverable landlord's share → capital-vs-revenue + sinking funds → CRAR + forfeiture for arrears → disputes-and-resolution → close.
+7. Verify factual claims per §16.35 — every LTA 1985 / ITTOIA / CTA / VATA / TCEA / LPA / TMA / CAA cite; RICS Statement 4th edition effective 1 April 2019; ICAEW Tech 03/03 current version.
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit: `MegaWave 3 RUN C: brief-introduction-to-commercial-property-service-charge-accounts`.
+15-19. Per workflow.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 1 seed committed 2026-05-27 by M3-C-B2 sub-agent. RICS Professional Statement "Service charges in commercial property" 4th edition (effective 1 April 2019) cited by reference as the operative mandatory standard — Stage 2 verifies current edition status at write time (RICS publication updates occur every 3-5 years). LTA 1985 ss.18-30 residential-only non-application confirmed against the statutory definition + standard practitioner texts; Stage 2 sub-agent re-verifies the s.18(1) "dwelling" wording per §16.35. §29 VAT architecture (Sch 9 Gr 1 + Sch 10 + Sch 7A reduced-rate) used as pre-locked anchor per §16.36. SI 2013/1894 (CRAR) + TCEA 2007 Part 3 (CRAR replaced distress 6 April 2014) cited by reference at HP-anchor depth; Stage 2 verifies at write time. No NEW HP lock raised. Cannibalisation watch: low (no existing commercial service charge orientation page); RUN session re-runs cannib check at brief gate.]
+[RUN session records work here at write time. **Stage 2 verification notes (2026-05-27):** RICS Professional Statement "Service charges in commercial property" 4th edition (effective 1 April 2019) cited by reference as the operative mandatory standard — RUN session verifies current edition status at write time (RICS publication updates occur every 3-5 years; possibility of a 5th edition by 2026-2027). LTA 1985 ss.18-30 residential-only non-application confirmed against the statutory s.18(1) "dwelling" definition + standard practitioner texts; RUN session re-verifies the s.18(1) wording per §16.35. §29 VAT architecture (Sch 9 Gr 1 + Sch 10 option-to-tax + Sch 7A reduced-rate) used as pre-locked anchor per §16.36. §27.7 record retention used as pre-locked anchor. TCEA 2007 Part 3 + SI 2013/1894 (CRAR) + LPA 1925 s.146 cited by reference at HP-anchor depth; RUN session verifies at write per §16.35. *Card Protection Plan v Customs and Excise* CJEU C-349/96 carried as Stage 2 case-law target — RUN BAILII-verifies. ICAEW Tech 03/03 cited as professional-standards companion anchor — RUN verifies current version at write. No NEW HP lock raised at Stage 2 (the seed flagged a possible §26 / §29 mini-extension for commercial-service-charge framework but it is informational, not blocking). Cannibalisation watch: low (no existing commercial service charge orientation page); RUN session re-runs cannib check at brief gate.]
+
+---
+
+## Stage 1 seed work log
+
+- **Stage 1 author:** MW3 Stage 1 Sub-Agent C on 2026-05-27.
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent C (batch M3-C-B2) on 2026-05-27.
+- **Cluster anchor:** RICS Professional Statement "Service charges in commercial property" 4th edition (mandatory practitioner framework); LTA 1985 ss.18-30 residential-only non-application (the conflation-trap clarifier); §29 VAT architecture (option-to-tax follow-supply); ICAEW Tech 03/03; CRAR + LPA s.146 remedies architecture.
+- **HP-lock alignment:** §29 (VAT) + §27.7 (record retention) + §20 (RRA 2025 residential-only by reference) + §25 (capital allowances + SBA) + Wave 7 capital-vs-revenue cluster all pre-locked. No new HP lock raised at Stage 1 or Stage 2 (seed flagged possible §26 / §29 mini-extension — informational, not blocking).
+- **§16.36 statutory-citation cross-check (Stage 2):** LTA 1985 ss.18-30 residential-only confirmed against statutory text + standard practitioner sources; ITTOIA 2005 s.272 + CTA 2009 ss.46/61 confirmed against §29-adjacent pre-locks; VATA Sch 9 Gr 1 + Sch 10 confirmed against §29 lock; TCEA 2007 Part 3 + SI 2013/1894 + LPA 1925 s.146 cited at HP-anchor depth; CAA 2001 Part 2 + Part 2A confirmed against §25 lock.
+- **§16.31 URL verification (Stage 2):** legislation.gov.uk anchors all confirmed live at seed time; HMRC manuals (PIM1000+, PIM2240, VAT Notices 742 + 742A, CG70000+, CA22000+) confirmed live at HMRC manuals path; RICS Professional Statement URL + ICAEW Tech 03/03 URL confirmed at seed time (RICS edition updates expected periodically; RUN verifies). No dead-link drops at Stage 2. Competitor list deferred to RUN-time WebSearch with RICS edition 4 + LTA 1985 commercial-non-application filter.
+- **Cannibalisation reasoning:** no existing commercial service charge orientation page on site. Wave 8 Bucket C VAT cluster pages on Sch 10 option to tax cover the VAT mechanic but NOT the broader commercial service charge framework; Wave 7 capital-vs-revenue cluster covers sinking fund treatment but NOT the orientation map. The C20 sibling on commonhold + leasehold reform covers residential service-charge reform — distinct topic. Clean cluster gap; this page is the orientation hub above the deep-dives.
+- **Anti-templating watchpoints for RUN session:** (a) practitioner-question open (NOT "what is a service charge?" tenant template); (b) the LTA 1985 NON-application is the page's load-bearing clarifier — surface clearly with worked example #2 (mixed-use trap); (c) the VAT-follows-option-to-tax decision is the high-value operational lever — surface clearly with worked example #3; (d) the trust-account discipline is the most-overlooked RICS-Statement requirement — surface clearly; (e) the CRAR vs s.146 distinction for arrears recovery is the high-value operational clarifier — surface clearly with worked example #4; (f) keep the orientation-hub framing — heavy forward-linking to deeper cluster pages is REQUIRED.
