@@ -394,3 +394,20 @@ The B5 home-office deep-dive surfaces a **specific cross-tax trap** (TCGA 1992 s
 **How to apply.** Stage 2 writer on C18 + future RoE / overseas-trust-property-holding pages thread to §22.X-RoE-trust-disclosure once locked. Stage 1b conductor decision: lock now with placeholder SI reference, OR defer until Stage 2 SI verification confirms exact commencement chain. **CRITICAL RUN-session caveat: SI reference must be verified against legislation.gov.uk before commencement-tense claims; use conditional framing ("the 2025 expansion regulations, once commenced, will...") if SI cannot be verified at write time.**
 
 ---
+
+
+## F-11 — BRIEF_DRIFT — Anti-phoenix TAAR cite ITA 2007 s.396B vs ITTOIA 2005 s.396B in M2-A-B3 pick 1 seed
+
+**Raised by:** M2-A-B3 Stage 2 sub-agent (2026-05-27) during §16.36 statutory-citation cross-check of `limited-companies-and-btl-properties` Stage 1 seed.
+**Bucket:** A (Limited company / BTL company operation).
+**Touched picks:** A22 `limited-companies-and-btl-properties` (this batch pick 1). Possibly upstream-relevant for any other Stage 1 seed that referenced MVL anti-phoenix TAAR.
+
+**Issue.** Stage 1 seed for `limited-companies-and-btl-properties` cited the MVL anti-phoenix TAAR as **"ITA 2007 s.396B"**. Verified against existing live site pages (`extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27` line 150; `extracting-money-from-property-limited-company`; `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236`; `balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics`; `directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap`) and against §16.40 Wave 6 catch-of-record: the correct cite is **ITTOIA 2005 s.396B** (inserted by F(No.2)A 2016 Sch 1 para 11 — the anti-phoenix targeted-anti-avoidance rule against MVL-then-restart-trade arrangements). ITA 2007 has no s.396B.
+
+**Same pattern as §16.40 Wave 6 catch:** Wave 6 Stage 2A caught the identical drift in A4 brief seed. Stage 1 Sub-Agent A's MW2 seed-drafting did not pick up the §16.40 corrected position; the drift recurred at MW2 Stage 1. The Stage 2 §16.36 statutory cross-check earned its keep at the same rate (13% brief-quality error rate per §16.36 baseline).
+
+**Fix applied in-place (this batch).** Brief corrected at Statutory anchor (Primary disposal/exit framework section), Key questions Q10, Manager pre-decisions do-not-write list, Universal rules do-not-write GREP discipline, 19-step workflow step 7. All references now cite ITTOIA 2005 s.396B with the ITA 2007 s.396B FALSE entry preserved as a do-not-write GREP target so RUN session catches any drafting drift back to the wrong cite.
+
+**EXISTING_PAGE_STALE candidates from this catch.** Existing site pages all use the correct cite (verified across 5 grep matches above); no inventory-contamination back-patch required. The drift was confined to the Stage 1 brief seed, not propagated to live pages.
+
+**How to apply.** Future Stage 1 sub-agent prompts should explicitly enumerate the §16.40 ITA-vs-ITTOIA-s.396B catch as a known-drift watchpoint, alongside the FA-2025 ss.464C/D omission (F-7) and the dividend rate (F-20). MW3+ Stage 1 dispatch prompts should include the §16.36 mandatory-cross-check instruction with this specific cite as a worked-example of what verification catches.
