@@ -17,6 +17,30 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-102 — BRIEF_DRIFT / HOUSE_POSITION_REVISIT — APR+BPR cap quantum: £1m (HP §15.4 + GOV.UK summary) vs £2.5m (FA 2026 s.124D enacted)
+
+**Raised by:** M2-C-B1 sub-agent (Stage 2, 2026-05-27).
+**Bucket:** C (IHT and estate planning + Trusts).
+**Touched picks:** C2 `agricultural-relief-for-inheritance-tax-key-benefits` (this batch), C3 `comparison-of-discretionary-trusts` (this batch, anti-fragmentation rule cites £1m), Wave 2 A4 / A10 (already shipped — both cite £1m headline; cross-bucket impact pending).
+
+**Issue.** Stage 2 verification fetched IHTA 1984 s.124D (inserted by FA 2026, in force from 6 April 2026 per gov.uk legislation page state on 2026-05-27). Subsection (2)(a) verbatim quotes the 100% relief allowance per chargeable transfer at **£2.5 million** less prior 7-year-allowance-period usage. This conflicts with:
+- HP §15.4 lock, which states the operative figure as £1 million combined.
+- GOV.UK "Summary of reforms to APR and BPR" page, which states "100% rate of relief will continue for the first £1 million of combined agricultural and business property".
+
+Possible reconciliations:
+(a) The £1 million headline policy figure was raised to £2.5 million during the Finance Bill 2025 → FA 2026 process. The GOV.UK summary page is stale (still reflecting the 30 October 2024 announcement) and HP §15.4 was locked against the announcement figure rather than the enacted figure.
+(b) The £2.5m figure in s.124D represents a different structural element (e.g., a total 7-year transferor allowance) that interacts with a separate £1m per-event cap I have not located.
+(c) There is a transitional / phase-in rule producing the £2.5m figure as an interim higher allowance in the first 12 months of the cap regime.
+
+**How to apply.**
+- RUN-phase writers on C2 + C3 (and any future APR/BPR-cap-citing pick) **MUST** do a clean WebFetch of (i) s.124D + s.124G-124K (settlement allowance mechanics), (ii) the GOV.UK summary page, and (iii) any updated HMRC IHTM24000+ guidance at write time. Brief seed text citing £1m is preserved pending HP §15.4 manager reconciliation.
+- Conductor / manager action: re-verify s.124D enacted figure against gov.uk; if confirmed at £2.5m, update HP §15.4 lock + GOV.UK summary stale-page flag + back-patch Wave 2 A4 + A10 pages.
+- Stage 2 brief for C2 cites both figures with the discrepancy explicitly noted and a write-time verification gate baked in.
+
+**Severity.** HIGH — material policy figure used as worked-example anchor in 2 already-shipped pages and 2 in-flight briefs. Stage 1b conductor sign-off was 2026-05-27 11:53; this catch landed at Stage 2 verification ~30 minutes later. §16.40 pattern (Stage 2 catches drift Stage 1b couldn't reach because the per-write WebFetch wasn't done on the s.124D specific section).
+
+---
+
 ## F-100 — HOUSE_POSITION_EXTENSION — Payroll cluster for property-business employers
 
 **Raised by:** M2-C-B1 sub-agent (Stage 1, 2026-05-26).
