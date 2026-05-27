@@ -1,0 +1,141 @@
+---
+slug: inheriting-a-house-in-the-uk
+category: landlord-tax-essentials
+intent: Beneficiary-perspective IHT/estate pillar. Audience: the person *inheriting* the house (not the executor running the estate, not the estate-planner positioning the gift) — typically an adult child or grandchild who has just been told they will inherit a UK property. The page is the **beneficiary's decision pillar** — covering what to do at probate (executor handles IHT and IHT400 / IHT421; you wait), the probate-value-sets-CGT-base-cost mechanic (s.62 TCGA 1992 uplift), the three options for the inherited property (keep and occupy / keep and let / sell), the CGT 30-day reporting trap if you sell, the PPR 9-month grace period if you move in, the deed-of-variation 2-year window to redirect the inheritance (e.g. skip a generation), the existing-mortgage-payable trap (the estate may not have liquidity to clear it), the joint-beneficiaries TIC-shares mechanic, and the intestacy rules if there was no will. Forward-links into the executor process page, the CGT-on-inherited-rental deep, the DoV deep, the IHT brief summary, and the family-home decision pillar. Search intent is "I'm inheriting a house, what do I need to do" not "how do I administer an estate".
+---
+
+# Inheriting a House in the UK: Beneficiary's Tax Guide
+
+## Statutory anchor
+
+- Primary (the CGT base-cost-at-probate-value mechanic — the most important tax fact for inheritors):
+  - **TCGA 1992 s.62(1)(a)** — "the assets of which a deceased person was competent to dispose shall for the purposes of this Act be deemed to be acquired on his death by the personal representatives or other person on whom they devolve for a consideration equal to their market value at the date of the death". Verified at https://www.legislation.gov.uk/ukpga/1992/12/section/62 on 2026-05-26. The "**CGT uplift on death**": the beneficiary inherits at probate value (market value at date of death); no CGT was charged on the deceased; any gain accrued during the deceased's ownership is wiped out for CGT purposes.
+  - **TCGA 1992 s.62(4)** — assets distributed by personal representatives to beneficiaries. The PR is deemed to dispose of the asset to the beneficiary at the PR's acquisition cost (i.e. probate value, per s.62(1)(a)); no CGT on the PR; the beneficiary acquires at probate value.
+  - **TCGA 1992 s.274** — valuation for CGT where IHT chargeable. The probate value used for IHT is normally the same value used as the CGT base cost (the "ascertained value" rule); but where IHT did not apply (estate below NRB, or fully spouse-exempt), the beneficiary must establish a market value at the date of death by other evidence (estate-agent valuation, RICS valuation, comparable sales).
+- Primary (the executor process the beneficiary does NOT run, but should understand):
+  - **IHTA 1984 s.226** — payment of IHT. Personal representatives are liable for IHT on the deceased's free estate; trustees are liable for IHT on settled property; donees liable on lifetime PETs that fail. PRs cannot distribute the estate until IHT is paid (or the IHT421 clearance certificate is issued for instalment-elected assets).
+  - **IHTA 1984 s.227** — IHT instalment option for land. Verified at https://www.legislation.gov.uk/ukpga/1984/51/section/227. PRs may elect to pay IHT on land (including inherited property) by 10 equal annual instalments. Interest accrues on the outstanding balance (HMRC official rate); instalments accelerate on sale of the property. Land inherited and continuing in the family can therefore have its IHT spread over 10 years rather than paid up-front.
+  - **Senior Courts Act 1981 ss.108-127** + **Non-Contentious Probate Rules 1987 (NCPR 1987)** — the probate / letters-of-administration framework. PR appointment is by grant of probate (will) or grant of letters of administration (intestacy or where the will appoints no executor able to act).
+  - **Land Registration Act 2002 + Land Registration Rules 2003** — transfer of legal title to the beneficiary. PR executes an Assent (form AS1) transferring legal title; HM Land Registry registers the new proprietor. No SDLT chargeable on the assent (FA 2003 Sch 3 para 3A — exempts transfers from PRs to beneficiaries pursuant to entitlement under the will or intestacy — verify exact paragraph at Stage 2; the SDLT-exempt-transfer-on-inheritance position is well-established but the precise statutory reference must be Stage-2-verified).
+- Primary (the intestacy regime — what happens if there was no will):
+  - **Administration of Estates Act 1925 ss.45-49** (as amended by the Inheritance and Trustees' Powers Act 2014 c.16). Verified at https://www.legislation.gov.uk/ukpga/Geo5/15-16/23 on 2026-05-26.
+  - **The intestacy hierarchy** (where deceased leaves spouse + issue):
+    1. Spouse / civil partner takes the personal chattels (s.46(1)(i) AEA 1925 + s.55(1)(x) definition).
+    2. Spouse takes a "statutory legacy" — currently **£322,000** (set by The Administration of Estates Act 1925 (Fixed Net Sum) Order 2023, SI 2023/758, in force from 26 July 2023; Stage 2 verifies whether any subsequent SI has uprated this).
+    3. Spouse takes half of the residue absolutely.
+    4. Issue (children) take the other half on statutory trusts.
+  - Where deceased leaves spouse but no issue: spouse takes the entire estate. Where deceased leaves no spouse: issue / parents / siblings / nieces & nephews / grandparents / aunts & uncles in hierarchy.
+  - **Beneficiary occupying the family home on intestacy:** AEA 1925 Sch 2 — the surviving spouse has the right to elect to take the matrimonial home in or towards satisfaction of their statutory legacy + share of residue (executors must consult on valuation; the spouse must pay equality money if home value exceeds spouse's entitlement).
+- Primary (the PPR / main-residence-relief route for an inherited home that the beneficiary then occupies):
+  - **TCGA 1992 s.222 + s.223 + s.225** — PPR mechanics. If the beneficiary moves into the inherited house as their main residence, they may claim PPR for the period of occupation. The pre-move-in period (the "void" between probate vesting and actual occupation) does NOT qualify for PPR — but the **last 9 months** of any period of ownership qualifies regardless of occupation (s.223(1) + s.223(2)).
+  - **TCGA 1992 s.225 — trustees disposal where beneficiary occupies dwelling.** Where the PR retains the property and the beneficiary (e.g. one of the children) occupies it as their main residence prior to assent, s.225 deems the PR's eventual disposal to qualify for PPR by reference to the beneficiary's occupation. Narrow scope but operationally useful where the inheritance is not immediately distributed.
+- Primary (the CGT 30-day reporting + payment-on-account trap for a beneficiary who sells):
+  - **Finance Act 2019 Sch 2** as amended — CGT 60-day reporting and payment-on-account regime for UK residential property disposals by UK residents. **From 27 October 2021 the original 30-day window was extended to 60 days** (Finance Act 2021 s.23). Beneficiary selling the inherited house must file a CGT-on-property-disposal return (formerly "Real Time Transaction" return; current "Capital Gains Tax on UK property" account at gov.uk) within 60 days of completion AND pay a payment-on-account of the CGT. Final reconciliation via self-assessment tax return.
+  - **Threshold for filing:** required where there is a chargeable gain (i.e. where there is CGT due). If the disposal is at probate value (no gain) or the gain is within the annual exempt amount (£3,000 for 2025/26 — Stage 2 confirms 2026/27 figure), no return required. Many beneficiaries sell at probate value and have no return obligation; sales at materially above probate value crystallise CGT and the 60-day window.
+- Primary (the deed-of-variation route):
+  - **IHTA 1984 s.142** + **TCGA 1992 s.62(6)** — DoV (see C14 anchor). Beneficiary can redirect their inheritance within 2 years of death; IHT and CGT both read back to the deceased. Most common uses for an inherited house: (a) skip a generation (parent redirects house to grandchild to save second-death IHT), (b) equalise between siblings where one inherited disproportionately, (c) redirect to charity to trigger the 36% reduced rate (Sch 1A IHTA 1984), (d) redirect to a discretionary trust to protect from beneficiary's own divorce / creditors / IHT.
+- Primary (the existing-mortgage trap):
+  - **The estate's debts (including the mortgage on the inherited property) are paid out of the estate before distribution** (AEA 1925 s.34 + Sch 1 Part 2: order of application of assets; secured creditors entitled to first call on the secured asset). If the estate is insolvent, the inherited property may need to be sold to satisfy the mortgage. If the estate is solvent but illiquid (e.g. £900k house + £50k cash + £500k mortgage), the PR may need to sell the house or the beneficiary may need to refinance / take over the mortgage personally (lender consent required).
+  - **Life insurance written in trust** outside the estate provides liquidity for the mortgage payoff; uninsured mortgages on the family home are a common cause of forced sale.
+- House position references: §15.1 (NRB, RNRB — most beneficiaries will see the estate's tax bill reduced by these); §22.2 (deed of variation s.142 mechanics — DoV operates from the beneficiary side); §22.17 (IPDI / QIIP — relevant if the inheritance is a life interest in property rather than absolute ownership); §24.1-§24.7 (joint-ownership mechanics — relevant if the house was held by deceased + surviving spouse jointly).
+
+## Framing differentiator (anti-templating, anti-cannibalisation)
+
+The site has a developed inherited-property cluster:
+- `inheriting-uk-rental-property-executors-step-by-step.md` (existing — **executor process** for rental property; executor side of the same death event).
+- `cgt-inherited-rental-property-calculation-uk.md` (existing — **CGT calculation deep** on inherited rental property; how to compute gain at later disposal).
+- `deed-of-variation-property-estate-redirecting-inheritance-iht-saving.md` (existing — **DoV mechanics deep**).
+- `inheritance-tax-rental-property-uk-guide.md` (existing — **rental-portfolio IHT comprehensive guide**).
+- `inheritance-tax-a-brief-summary.md` (MW2 C-batch-2 sibling — IHT brief-summary entry-tier).
+- `inheritance-tax-and-the-family-home.md` (MW2 C-batch-3 sibling — family-home decision pillar; positioned from the *estate-planner / homeowner* perspective).
+- `how-long-does-probate-take-in-the-uk.md` (MW2 C-batch-2 sibling — probate timeline pillar).
+
+C15 (this page) is the **beneficiary's perspective decision pillar** — the perspective-shift is the structural backbone:
+- All the existing inherited-property pages are written from the **executor / estate-planner / homeowner** perspective.
+- C15 is written from the **person receiving the property** perspective — what *I*, the inheritor, need to know.
+- The four most common beneficiary questions: (1) "what do I have to do?" (almost nothing in the short term — executor runs IHT and probate), (2) "what are my tax positions when I receive it?" (probate value sets CGT base cost; no immediate tax charge on the beneficiary on receipt), (3) "what are my options — keep & occupy, keep & let, sell?" (each has different downstream tax consequences), (4) "can I refuse / redirect it?" (deed of variation 2-year window).
+
+The structural distinction:
+- **`inheriting-uk-rental-property-executors-step-by-step`** is the executor-side step-by-step — the PR doing the work.
+- **`cgt-inherited-rental-property-calculation-uk`** is the CGT-on-future-disposal calc for inherited rental — the deep on the gain-after-uplift computation.
+- **C13 (`inheritance-tax-and-the-family-home`)** is the homeowner's decision pillar for *outgoing* family-home IHT planning.
+- **C15 (this page)** is the **beneficiary's decision pillar for *incoming* inherited property** — the receiving-side answer to the same lifecycle event.
+
+Target 2,400-2,800 words. Anti-templating signature: the page leads with "the executor runs IHT — your job is the receiving-side decisions" framing, which pre-empts the most common confusion (beneficiaries fearing they personally owe IHT). The page surfaces the **probate-value-as-base-cost** as the single most important fact most beneficiaries don't know about, leading directly into the three-option decision (keep & occupy / keep & let / sell). Pre-empts the most common amateur misconceptions:
+- "I have to pay IHT on what I inherit" — no, the estate pays before distribution.
+- "I have to declare the inheritance on my tax return" — no, the inheritance itself is not income.
+- "I have a CGT bill on receipt" — no, s.62(1)(a) uplift makes receipt a no-gain-no-loss event.
+- "I get CGT on the gain since I received it" — yes, base cost is probate value not acquisition cost; if you sell at materially above probate value, you have a chargeable gain and 60-day reporting.
+- "I can refuse the inheritance" — yes, but a simple disclaimer is different from a deed of variation; understand the difference.
+- "PPR applies retrospectively from the date of death if I move in" — partial only: PPR runs from actual occupation; the gap pre-occupation does not qualify (except for the last 9 months of ownership at sale).
+- "I'll just take over the mortgage" — possible, but lender consent required, and the lender may decline if the beneficiary's income won't service the loan; forced sale is common.
+
+The anti-templating axis vs the existing executor step-by-step page: that page is process-deep for the PR; this page is decision-deep for the beneficiary. Different reader, different verbs, different tax positions.
+
+## Key questions this page must answer
+
+1. What happens between the deceased's death and the beneficiary receiving the house — the executor process at orientation depth (probate, IHT400, IHT421 / IHT442 clearance, distribution)?
+2. Does the beneficiary pay any tax on receiving the house — no IHT (the estate pays), no income tax, no CGT (s.62(1)(a) uplift)?
+3. What is the CGT base cost of the inherited house — probate value at date of death (the "ascertained value" rule from s.274 TCGA 1992)?
+4. What are the three options for the beneficiary — keep & occupy (PPR applies from occupation; pre-occupation void does not qualify); keep & let (rental income tax + future CGT vs probate value); sell (CGT vs probate value if material gain; 60-day reporting trap)?
+5. What is the 60-day CGT-on-property-disposal reporting requirement, and when does it apply — chargeable gain above annual exempt amount triggers; sales at probate value usually do not?
+6. What is the deed of variation (s.142 IHTA 1984 + TCGA 1992 s.62(6)) — the 2-year window to redirect the inheritance with full IHT + CGT read-back; common uses (skip generation, equalise, charity, trust)?
+7. What is the difference between a deed of variation and a disclaimer — disclaimer relinquishes the inheritance entirely (passes to next person in line per will / intestacy), DoV redirects to a chosen person?
+8. What happens if there is an outstanding mortgage on the inherited property — paid from estate (AEA 1925 s.34 + Sch 1 Part 2); illiquid estates may force sale; beneficiary may take over with lender consent or refinance?
+9. What is the intestacy regime — Administration of Estates Act 1925 ss.45-49; current spouse statutory legacy £322,000 (SI 2023/758 from 26 July 2023); spouse + issue / spouse alone / no spouse hierarchies?
+10. What if the inheritance is jointly with siblings — TIC shares; survivorship implications if held as JT pre-death; partition / sale-of-court-order options if siblings disagree on whether to keep or sell?
+11. What if the property is in Scotland — Scots succession law (Succession (Scotland) Act 1964 + Succession (Scotland) Act 2016) differs materially (legal rights / prior rights for surviving spouse; one-third / one-half of moveable estate to spouse / children); Stage 2 surfaces at orientation depth with sign-post to Scottish-law solicitor.
+12. What if the beneficiary is a minor — bare-trust mechanics until 18; trustee management; settlements-legislation interaction with the deceased-not-settlor framing (s.624 ITTOIA 2005 typically does not catch genuine inheritances).
+13. Where does the reader go next — the executor step-by-step page for the PR-side process; the CGT-on-inherited-rental deep for the future-disposal computation; the DoV deep for the 2-year redirection mechanic; the family-home decision pillar for the outgoing-IHT planning (parents' side); the IHT brief-summary entry-tier for general IHT orientation; the IPDI / life-interest deep if the inheritance is a life interest rather than absolute?
+
+## Manager pre-decisions placeholder
+
+- Category routing: `landlord-tax-essentials` (the IHT cluster). Manager confirm.
+- Worked-example numbers: 2026/27 — NRB £325k, RNRB £175k, 40% headline IHT rate, CGT residential rate 24% higher / 18% basic, CGT annual exempt amount £3,000 (Stage 2 verifies 2026/27), spouse statutory legacy on intestacy £322,000 (SI 2023/758 from 26 July 2023), 60-day CGT reporting window for residential property disposals.
+- Worked-example narrative:
+  - **Pivot character:** adult son inherits the family home (probate value £550k; mother's acquisition cost £180k 1995) plus £150k cash from mother's estate; mother died with full NRB + RNRB available (£500k), so IHT due is £40k @ 40% on the £50k above thresholds — paid by executor before son receives. Son must decide between three routes:
+    - **Route A — move in (PPR):** son occupies house as main residence. No CGT on future disposal provided continuous PPR; lost any tax-cost claim on his prior main residence.
+    - **Route B — let out:** son becomes landlord; rental income on s.272 ITTOIA 2005 property income basis; future disposal CGT on gain above probate value.
+    - **Route C — sell within 1 year:** likely small gain or break-even vs probate value; usually no 60-day reporting required.
+  - Variant: estate is two adult sons inheriting equally; route forks at "agree on what to do" — partition under TOLATA 1996 if disagreement; sale-of-court-order route if entirely deadlocked.
+- Cross-link targets:
+  - `inheriting-uk-rental-property-executors-step-by-step` (existing — executor side).
+  - `cgt-inherited-rental-property-calculation-uk` (existing — CGT calc deep on future disposal).
+  - `deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (existing — DoV mechanics).
+  - `inheritance-tax-rental-property-uk-guide` (existing — rental-portfolio IHT comprehensive).
+  - `inheritance-tax-a-brief-summary` (MW2 C-batch-2 — IHT entry-tier).
+  - `inheritance-tax-and-the-family-home` (MW2 C-batch-3 sibling — outgoing family-home).
+  - `inheritance-tax-lifetime-gifts-vs-transfer-at-death` (MW2 C-batch-3 sibling — decision comparison).
+  - `how-long-does-probate-take-in-the-uk` (MW2 C-batch-2 — probate timeline).
+  - `gift-with-reservation-of-benefit` (MW2 C-batch-2 — GROB entry-tier).
+  - `cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics` (existing — PPR + spouses).
+
+## Stage 2 research target list
+
+- Competitor pages to fetch:
+  - GOV.UK "Inheriting money or property" (the canonical authority beneficiary-side).
+  - GOV.UK "Tax when you sell your home" + "Tax when you sell property" (PPR + CGT mechanics).
+  - GOV.UK "Capital Gains Tax on UK property" (60-day reporting page).
+  - GOV.UK "Sort out the estate when there's no will" (intestacy).
+  - GOV.UK "Make changes to a will after a death" (DoV / disclaimer).
+  - Money Advice Service / MoneyHelper "Inheriting a property" (consumer-grade comparison).
+  - Citizens Advice "Dealing with a deceased's estate" (beneficiary-side framing).
+- HMRC manuals to cite:
+  - **CG30560+** (CGT on death — s.62).
+  - **CG30730+** (PR disposals to beneficiaries).
+  - **CG40000+** (CGT on UK residential property disposals — 60-day reporting).
+  - **CG64200+** (PPR — main residence).
+  - **CG64485+** (PPR — last 9 months relief).
+  - **IHTM35000+** (deeds of variation).
+  - **IHTM12041+** (instalment option on land).
+- Case-law:
+  - **Stack v Dowden** [2007] UKHL 17 — beneficial-ownership presumption from legal ownership (relevant where inherited house held jointly with another).
+  - **Jones v Kernott** [2011] UKSC 53 — clarification of Stack v Dowden for cohabitees.
+
+## Universal rules + workflow stubs (Stage 2 fills)
+
+[Stage 2 populates from NETNEW_PROGRAM §4]
+
+## Work log (Stage 2 + RUN session populate)
+
+- 2026-05-27 (Stage 1 seed): seed committed under M2-C-B3 by sub-agent. TCGA 1992 s.62(1)(a)/s.62(4)/s.62(6) (CGT death uplift + DoV read-back) + s.274 (ascertained-value rule) + s.222/s.223/s.225 (PPR + last 9 months + PR-retained-property-with-beneficiary-occupying) verified at write time per §16.35; IHTA 1984 s.226 (PR liability for IHT) + s.227 (10-instalment option for land) + s.142 (DoV) verified; AEA 1925 ss.45-49 (intestacy hierarchy) + Sch 1 Part 2 (asset application order) + Sch 2 (matrimonial home election); SI 2023/758 (£322k statutory legacy from 26 July 2023) verified; FA 2019 Sch 2 (60-day CGT-on-property-disposal reporting, post-FA-2021 extension from 30 days) verified verbatim. The page is the **beneficiary's perspective decision pillar** at 2,400-2,800 words — distinct from the executor step-by-step (PR process), the CGT-inherited-rental calc deep (future-disposal mechanics), the DoV mechanics deep (post-death redirection), the family-home outgoing-IHT decision pillar (homeowner side), the rental-portfolio comprehensive guide, the IHT brief-summary entry-tier (C12), and the probate timeline pillar (C11). The **perspective-shift** (executor-side vs beneficiary-side answer to the same lifecycle event) is the structural backbone — the page leads with "the executor runs IHT, your job is the receiving-side decisions" and surfaces probate-value-as-CGT-base-cost as the single most important fact most beneficiaries don't know. Stage 2 must (a) re-verify SDLT exemption on PR-to-beneficiary assent — likely FA 2003 Sch 3 para 3A or Sch 4 para 16 (different versions cite differently; verify against current legislation.gov.uk), (b) verify the intestacy statutory legacy remains £322,000 in 2026/27 (no SI uprating since SI 2023/758 to write-time knowledge), (c) verify 60-day reporting window unchanged post-FA-2021, (d) confirm CGT annual exempt amount for 2026/27 (£3,000 from 6 April 2024 per FA 2024; check whether FA 2025/2026 changes), (e) verify TOLATA 1996 sale-of-court-order route for sibling-deadlock cases (Trusts of Land and Appointment of Trustees Act 1996 ss.14-15 — relevant case-law *Bagum v Hafiz* [2015] EWCA Civ 801). **No new F-flag raised** — page sits firmly within locked §22.2 + adjacent legislation; no novel HP-extension territory. Scottish-succession variant flagged as sign-post only at the operational depth (Scots law genuinely materially different — half / one-third moveable estate to spouse / children; legal rights and prior rights; refer to Scots-law solicitor for cases on Scottish-situs property).

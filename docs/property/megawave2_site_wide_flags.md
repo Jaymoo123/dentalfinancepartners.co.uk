@@ -248,3 +248,23 @@ The B5 home-office deep-dive surfaces a **specific cross-tax trap** (TCGA 1992 s
 **How to apply.** Stage 2 writer for B5 either threads to the locked §31 (if Stage 1b approves) OR self-sources statute + HMRC PIM + TCGA s.224(1) verifications per §16.35 (no locked HP fallback). HP-side cost of declining the lock: cross-tax-trap exposure on a high-traffic landlord topic with material consumer-protection consequences (lost PPR on home sale); future expense-deep-dive writers re-source the same architecture each time.
 
 ---
+
+## F-106 — HOUSE_POSITION_EXTENSION — RoE trust-disclosure 2025 expansion (§22.X-RoE-trust-disclosure candidate)
+
+**Raised by:** M2-C-B3 sub-agent (Stage 1, 2026-05-27) via the C18 `public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded` seed.
+**Bucket:** C (Trusts and beneficial ownership).
+**Touched picks:** C18 (this seed). Possibly upstream-relevant for any future RoE / TRS / overseas-trust property-holding compliance pages.
+
+**Issue.** The 2025 expansion regulations (made under ECCTA 2023 amending powers) broaden public access to trust information held on the Register of Overseas Entities (RoE) — previously available only to law enforcement and legitimate-interest applicants, now structured-public. This is genuinely new HP-extension territory not covered in HP §11.A (ECCTA + ECTEA primary architecture covers register existence + ID verification + commencement chain but NOT the 2025 public-disclosure-expansion layer) or §22.16 (TRS — a different register entirely, HMRC-administered + non-public). Without an HP-lock floor, C18's Stage 2 write self-sources the SI reference + commencement date + scope-of-disclosure independently, with drift risk against any future RoE-trust-disclosure-touching page.
+
+**Proposed lock contents (Stage 1b conductor decision, subject to Stage 2 SI verification).** A new §22.X-RoE-trust-disclosure mini-lock with:
+- §22.X.1 Three-layer disclosure-expansion timeline: ECTEA 2022 baseline → ECCTA 2023 amendments + 1 March 2024 commencement → 2025 expansion SI (specific SI reference + commencement date verified by Stage 2 against legislation.gov.uk — placeholder-flagged at Stage 1).
+- §22.X.2 Scope of newly-public trust information: trustee identity, trust name, trust type, beneficiary names or classes (exact list per SI — verified by Stage 2).
+- §22.X.3 Redaction architecture: personal safety grounds + vulnerable persons + residential addresses + DOB carve-outs.
+- §22.X.4 RoE-vs-TRS register-distinction discipline (Companies-House-administered RoE structured-public vs HMRC-administered TRS non-public) — critical for property audiences with overseas-entity ownership structures.
+- §22.X.5 Non-application of CJEU C-37/20 + C-601/20 (Sovim) ruling in the UK post-Brexit — Sovim narrowed AML5 access in EU member states but UK continues post-Brexit policy under ECCTA framework.
+- §22.X.6 Do-not-write: "RoE is private like TRS" (false — RoE is structured-public, TRS is not); "Sovim restricted UK RoE access" (false — UK left EU before Sovim; CJEU rulings don't bind UK post-Brexit); "2025 expansion is voluntary" (false — statutory, SI-controlled); "only trustees have to register" (false — RoE registers the overseas-entity not the trust per se).
+
+**How to apply.** Stage 2 writer on C18 + future RoE / overseas-trust-property-holding pages thread to §22.X-RoE-trust-disclosure once locked. Stage 1b conductor decision: lock now with placeholder SI reference, OR defer until Stage 2 SI verification confirms exact commencement chain. **CRITICAL RUN-session caveat: SI reference must be verified against legislation.gov.uk before commencement-tense claims; use conditional framing ("the 2025 expansion regulations, once commenced, will...") if SI cannot be verified at write time.**
+
+---
