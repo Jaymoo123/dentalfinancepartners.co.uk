@@ -1,0 +1,43 @@
+{
+  "batch_id": "M2-A-B1",
+  "stage": 2,
+  "agent_id": "MW2-Stage2-A-RUN-leaf",
+  "completed_at": "2026-05-27T15:30:00Z",
+  "commit_shas": [
+    "d37b463",
+    "0c43548",
+    "f131b71",
+    "5c59083",
+    "1bf6157",
+    "a0782ef"
+  ],
+  "slugs_done": [
+    "a-complete-guide-on-incorporating-a-company-in-uk",
+    "a-guide-for-shareholders-in-the-uk",
+    "companies-house-changes-limited-partnership-requirements",
+    "corporate-tax-planning-strategies-for-uk-clients",
+    "corporation-tax-marginal-relief-uk-guide",
+    "directors-loan-accountsdla-uk-guide"
+  ],
+  "flags_raised": [
+    "F-7 BRIEF_DRIFT (already documented in A6 brief at Stage 1b/2 boundary) — CTA 2010 ss.464C and 464D OMITTED in full by Finance Act 2025 s.81(3)(b) and (4) from 30 October 2024. Stage 1 seed cited them as live primary anti-avoidance; verified absent at legislation.gov.uk. A6 page authored citing s.464A as live residual anti-avoidance and framing ss.464C/D historically. Sibling page `directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d` (existing) still cites the omitted sections as live; flag for site-wide back-patch consideration during wave-close manager review."
+  ],
+  "drift_catches": [
+    "§16.40 (F-7 reconfirmed at RUN time) — A6 DLA brief Stage 1b/2 already caught ss.464C/D omission; RUN session held the catch and wrote A6 with s.464A framing. No new drift catches surfaced in RUN authoring of A1-A5; briefs were tight and rate-by-reference discipline held."
+  ],
+  "url_verification_summary": {
+    "authority_urls_verified_live_at_stage1": "Stage 1 + Stage 1b briefs had already done substantial WebFetch verification (CTA 2010 s.18A, s.18D, s.18E, s.18N, s.455, s.464A all verbatim-confirmed; gov.uk tax-on-dividends + rates-and-allowances confirmed; LPA 1907 + ECCTA Part 2 contents confirmed). RUN session did NOT re-attempt WebFetch verification in this environment given the noted JS-anti-bot 202 pattern; relied on Stage 1b-verified citations.",
+    "rate_by_reference_discipline": "All rate citations in A1-A6 anchored to HP-locked positions: CT rates 19/25/26.5% (§21.A/§21.4); dividend rates 10.75/35.75/39.35% (§21.4 F-20 corrected); s.455 rate 35.75% by-reference to ITA 2007 s.8(2) (§21.1 F-9 corrected); HMRC official rate 3.75% (verified 2026-05-27 stable for 2025/26 and 2026/27).",
+    "competitor_urls_attempted": 0,
+    "competitor_section_strategy": "Per Wave 8/9 + Stage 1b note, competitor URLs not attempted by RUN; if a future revision pass demands firm-side citations the RUN session should source via Google Search at write time."
+  },
+  "discoveries_logged": [
+    "D-13 LEAF-AGENT 6-PICK BATCH PROCEEDED CLEANLY — RUN session authored all 6 picks in sequence (A1 incorporation mechanics, A2 shareholders guide, A3 LP ECCTA Part 2, A4 7-lever CT planning pillar, A5 marginal relief generic pillar, A6 DLA generic pillar) without sub-agent dispatch, per dispatch prompt Bug #7 instruction. Each page committed individually on branch property-megawave2-a. No new flags raised at RUN-time (F-7 was already documented at Stage 1b).",
+    "D-14 STAGE-1 + STAGE-1B BRIEF QUALITY HELD UP UNDER RUN AUTHORING — Briefs in this batch (especially A4 pillar/orchestration and A5 generic-explainer + §21.A.2 do-not-write list, plus A6 with the F-7 omission already caught) gave the RUN session enough scaffolding to author tight pages without re-doing verification work. Anti-templating discipline maintained across the 6 picks via distinct framing (operational/mechanics vs primer vs compliance overlay vs orchestration vs generic-pillar vs both-direction generic-pillar).",
+    "D-15 ANTI-TEMPLATING CHECK PASSED — Six pages have distinct H2 architectures (A1 leads with statutory frame + IN01 documents in detail + ECCTA overlay + day-1 checklist; A2 leads with legal rights + dividend tax + alphabet shares + share gifts + IHT; A3 leads with pre-ECCTA baseline + ECCTA overlay + tax-unchanged + transitional + scenarios; A4 leads with 2026/27 frame + seven levers + scenarios + lever interactions + audit trail; A5 leads with FA 2021 frame + formula + qualification + divisor + augmented profits + examples; A6 leads with two directions + s.455 + anti-avoidance + s.453 + beneficial loan + examples + discipline). Personas cycled (Patel / Mawell / Singh / Kapoor / Lemberg) across pages to avoid template feel."
+  ],
+  "anti_templating_check": "Six pages read as a set. Each page has distinct framing per the Stage 1 differentiator anchors: A1 = Companies House operational mechanics (not decision, not tax); A2 = shareholder-side primer (rights, dividend tax, gifts) symmetric to director-side extraction pages; A3 = LP-specific compliance overlay distinct from LLP/general-partnership siblings; A4 = pillar/orchestration that organises 7 levers without duplicating child-page depth; A5 = generic UK explainer parent of property-specific child; A6 = symmetric credit + debit balance pillar with F-7 omission discipline. Boilerplate (no-em-dash, anonymised personas, internal-link cross-references) is verbatim per house style; substantive content distinct.",
+  "cross_pick_coordination_check": "A1 (incorporation mechanics) cross-links forward to A2/A4/A5/A6; A2 (shareholders) cross-links to A1 + sibling-pillar extraction pages; A3 (LP ECCTA Part 2) cross-links to existing LLP/partnership pages, not internal to A1-A6 (different topical lane); A4 (7-lever pillar) cross-links to A5/A6 + existing rates/extraction/SSE/group-relief child pages; A5 (marginal relief pillar) cross-links to existing property-companies child + A4 orchestration; A6 (DLA pillar) cross-links to existing property-specific DLA pages + A1/A2/A4. Cross-link directionality enforced: pillar -> child; primer -> specialist; lever-orchestrator -> mechanic-child. No cross-pick contradictions.",
+  "branch": "property-megawave2-a",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave2-a (worktree on branch property-megawave2-a; per rolling-arch sub-agent drift bug note in MEMORY, manager will need to git merge --no-ff this branch into main at batch close)"
+}
