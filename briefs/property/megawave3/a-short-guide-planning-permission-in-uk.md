@@ -64,16 +64,177 @@ This page is the **tax-aware short guide** for the landlord considering a planni
 - Cannibalisation watch: low risk — no existing landlord-side planning orientation page on site. The MW1 C1 CIL page is a deep-dive, not an orientation. The C8 sibling is the trading-vs-investment decision-guide, not a planning page. Stage 2 confirms by re-running cannib check at brief gate.
 - Title note: working title "Planning Permission for Landlords: The Tax-Aware Short Guide" — telegraphs the landlord-side / tax-aware angle. Stage 2 confirms or refines.
 
-## Stage 2 research target list
+## Stage 2 research target list — VERIFIED URLs
 
-- Competitor pages to fetch (Stage 2 verifies liveness): gov.uk planning permission landing pages; gov.uk Class MA + GPDO landing pages; PlanningPortal.co.uk Class MA + Use Classes Order pages; RICS guidance on planning + tax interaction; NRLA planning + permitted development guidance; specialist planning + tax firm pages (Cushman & Wakefield, Knight Frank etc.); ICAEW Tax Faculty briefings on capital-vs-revenue planning costs.
-- HMRC manuals to cite: CG15150+ (Capital Gains Manual — enhancement expenditure incl. planning); PIM2030+ (Property Income Manual — capital vs revenue); CA22000+ (Capital Allowances Manual — plant and machinery + SBA); VATLP (VAT Notice 742A — option to tax) + VAT Notice 708 (Buildings and construction); CIRD80000+ (Corporate Intangibles Research & Development — for any planning-permission-as-intangible considerations).
-- Case-law to ground: *Tuczka v HMRC* (capital-vs-revenue distinction on planning fees) — Stage 2 confirms citation; *Conn v Robins Bros Ltd* (1966) 43 TC 266 (planning works — capital vs revenue); broader capital-vs-revenue case-law per Wave 7 capital-vs-revenue cluster. For change-of-use ATED challenges, *Hollywood Bedrooms Ltd v HMRC* and similar Tribunal decisions on ATED relief; Stage 2 confirms.
+### Authority URLs (RUN session WebFetches at write time per §16.35)
 
-## Universal rules + workflow stubs (Stage 2 fills)
+- **`https://www.legislation.gov.uk/ukpga/1990/8/section/55`** — TCPA 1990 s.55 (definition of "development") — verified verbatim 2026-05-27 at Stage 1 seed. s.55(1) catches building / engineering / mining / other operations OR material change of use; s.55(2)(f) carves out movement within the same Use Class.
+- **`https://www.legislation.gov.uk/uksi/1987/764`** — Town and Country Planning (Use Classes) Order 1987 (SI 1987/764), as substantially amended by SI 2020/757 (creating consolidated Class E from 1 September 2020). RUN session re-verifies the current consolidated text + amending SIs at write time per §16.35.
+- **`https://www.legislation.gov.uk/uksi/2015/596`** — Town and Country Planning (General Permitted Development) (England) Order 2015 (GPDO 2015). In-force per legislation.gov.uk contents ("no known outstanding effects"). Schedule 2 catalogues PD rights by category. **Class MA** in Sch 2 Part 3 (introduced by SI 2021/428 effective 1 August 2021).
+- **`https://www.legislation.gov.uk/uksi/2021/428`** — SI 2021/428 (the SI that inserted Class MA — commercial / business / service uses to dwellinghouses). RUN session WebFetches at write for Class MA conditions + 1,500 sqm cap + 3-month vacancy.
+- **`https://www.legislation.gov.uk/ukpga/2008/29/part/11`** — Planning Act 2008 Part 11 (ss.205-225) — foundation Act for Community Infrastructure Levy.
+- **`https://www.legislation.gov.uk/uksi/2010/948`** — CIL Regulations 2010 (SI 2010/948 as amended) — operative regulations.
+- **`https://www.legislation.gov.uk/ukpga/1990/8/section/106`** — TCPA 1990 s.106 (planning obligations — bespoke negotiated route).
+- **`https://www.legislation.gov.uk/ukpga/2023/55/part/4`** — Levelling-up and Regeneration Act 2023 Part 4 — phased commencement watchpoint per §32.3. Pooling restriction repealed; Development Levy planned to replace CIL in stages.
+- **`https://www.legislation.gov.uk/ukpga/2005/5/section/33`** — ITTOIA 2005 s.33 (capital expenditure exclusion — the capital-vs-revenue line for planning fees).
+- **`https://www.legislation.gov.uk/ukpga/2009/4/section/53`** — CTA 2009 s.53 (corporate capital expenditure exclusion).
+- **`https://www.legislation.gov.uk/ukpga/2013/29/part/3`** — Finance Act 2013 Part 3 (ATED — Annual Tax on Enveloped Dwellings); rates per FA 2013 ss.99-101 indexed annually.
+- **`https://www.legislation.gov.uk/ukpga/2003/14/section/116`** — FA 2003 s.116 (SDLT residential / non-residential definitions).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/schedule/9`** — VATA 1994 Sch 9 Group 1 (exempt land default).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/schedule/10`** — VATA 1994 Sch 10 (option to tax architecture; paras 5/6 disapplication on conversion to residential).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/schedule/7A/group/6`** — VATA 1994 Sch 7A Group 6 (5% reduced rate on qualifying residential conversion services).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/schedule/8/group/5`** — VATA 1994 Sch 8 Group 5 (zero-rating on first-grant-of-major-interest in new dwellings).
+- **`https://www.legislation.gov.uk/ukpga/2001/2`** — CAA 2001 — capital allowances (Part 2 plant + machinery; Part 2A Structures and Buildings Allowance at 3% straight-line per FA 2020 s.30).
 
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes per memory `feedback_no_em_dashes`); LeadForm footer; aside-styled inline CTAs after the s.55 trigger section + after the CIL + s.106 walk-through + after the change-of-use ATED trap section; semantic HTML; FAQs 10-12 entries (orientation angled: "do I need permission for a loft conversion in a rental property?" "can I use Class MA to convert a shop into a flat?" "what tax do I pay on a planning gain when I sell?"); FAQPage JSON-LD; rate-by-reference per §16.27; six-verification gate; §16.35 per-write statute re-verification at write time. Internal-link discipline: forward-link to MW1 C1 CIL, C8 investor-or-developer, §18 ATED cluster, §29 VAT change-of-use, §1 SDLT cluster, Wave 7 capital-vs-revenue cluster, §25 capital allowances + SBA.]
+### Competitor URLs
+
+`<!-- competitor section: session-side WebSearch at write time. Recommended queries: "Class MA commercial to residential permitted development conditions 2026", "Use Classes Order Class E consolidation 2020 landlord change of use", "CIL Community Infrastructure Levy chargeable development landlord conversion", "Section 106 planning obligation five tests reg 122 enforceability", "planning permission landlord ATED change of use commercial to residential". Aim 4-6 firm-side practitioner briefings — PlanningPortal.co.uk Class MA + Use Classes guidance; RICS planning + tax briefings; NRLA permitted-development guidance; specialist planning + tax firm pages (Cushman & Wakefield + Knight Frank + Savills + CBRE); ICAEW Tax Faculty briefings on capital-vs-revenue planning costs; CIOT commentary on the LURA 2023 transition. -->`
+
+### HMRC + supervisor manual anchors
+
+- HMRC CG15150+ (Capital Gains Manual — enhancement expenditure including planning).
+- HMRC PIM2030+ (Property Income Manual — capital vs revenue).
+- HMRC CA22000+ (Capital Allowances Manual — plant and machinery + SBA).
+- HMRC VAT Notice 742A (option to tax) + VAT Notice 708 (Buildings and construction).
+- HMRC ATED Technical Manual (ATEDM) for change-of-use ATED scope.
+- HMRC SDLTM00200+ (SDLT — residential vs non-residential definitions).
+
+### Case-law (verify each at BAILII at write time)
+
+- *Tuczka v HMRC* — capital-vs-revenue distinction on planning fees (RUN session BAILII-verifies the citation at write).
+- *Conn v Robins Bros Ltd* (1966) 43 TC 266 — planning works capital vs revenue.
+- *Law Shipping Co v IRC* (1923) 12 TC 621 — foundational "newly-acquired derelict property — repair becomes improvement" line for the capital-vs-revenue boundary.
+- Wave 7 capital-vs-revenue cluster case-law (forward-link).
+- For ATED change-of-use challenges, FTT decisions on ATED relief eligibility under FA 2013 ss.133-150 (RUN session searches BAILII for recent decisions).
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — The Class MA route: shop to flat conversion
+
+Landlord owns a vacant ground-floor retail unit in a Class E commercial parade in a city centre — 110 sqm floor space, vacant since June 2025 (5 months at point of conversion decision). Property NOT in a conservation area / national park / AONB. Wants to convert to a single 2-bed flat for letting.
+
+- **Use Classes test:** current use Class E (post-2020 consolidation includes former A1 shops); proposed use Class C3 (dwellinghouses). Movement BETWEEN classes — full planning permission would normally be required.
+- **Class MA route:** under GPDO 2015 Sch 2 Part 3 Class MA (as inserted by SI 2021/428, effective 1 August 2021), change from Class E to Class C3 is permitted development subject to (i) maximum 1,500 sqm floor space — satisfied (110 sqm); (ii) building vacant at least 3 months immediately prior — satisfied (5 months); (iii) not on specially-designated land — satisfied.
+- **Procedural step required:** prior approval application to the local planning authority (procedural step, NOT full planning permission). Decision typically 8 weeks.
+- **CIL:** new dwelling creation is chargeable development. Charging authority sets per-square-metre rate (£40-£200/sqm typical inner-London; £0-£60/sqm outer regions). At 110 sqm × £100/sqm = £11,000 CIL. Self-build relief NOT available (the landlord is letting, not occupying). Annexe/extension relief NOT available (this is conversion, not extension to existing dwelling).
+- **VAT:** if the landlord has previously opted to tax the commercial property, the option is AUTOMATICALLY DISAPPLIED for the residential conversion under VATA 1994 Sch 10 para 5/6. Construction services qualify for 5% reduced rate under Sch 7A Group 6. The eventual first-grant lease as new dwelling is zero-rated under Sch 8 Group 5 — fully recoverable 5% input.
+- **ATED:** post-conversion property valued at £450,000 — below the £500,000 entry threshold; NO ATED charge. If valued at £620,000, would enter Band 1 (currently £4,500 per annum 2024/25; rate-by-reference per FA 2013 s.99-101; RUN session re-verifies current band rates at write).
+
+Inline aside CTA: "We model the full conversion cost — CIL + VAT cash-flow + ATED status check — before you commit to the Class MA route. Most landlords miss the ATED entry trap on valued conversions."
+
+### Example 2 — The Condition D / Part 8ZB trap on a planning-permission-driven gain
+
+Landlord (Ms Singh) has held a 1990s semi-detached as a BTL for 12 years (acquired 2014 for £180,000; current market value as letting £350,000). She secures planning permission to demolish and replace with a 4-flat development; build cost £600,000; sells the 4 flats off-plan for total £1.4m; full development completed within 18 months of planning grant.
+
+- **Planning consequence:** material change involving demolition + new build = "operations" under TCPA 1990 s.55(1) requiring full permission (NOT permitted development; GPDO does not cover demolition + replacement at this scale). CIL applies on the new floor area; charging-authority rate × new floor area. s.106 obligations may apply (affordable housing if the LA's policy threshold is hit — typical threshold 10+ units in many LAs, so unlikely at 4 units but verify the local plan).
+- **Tax consequence (this is the trap):** Ms Singh's gain on the 4-flat sale = £1.4m − (£180k acquisition + £600k build + ~£80k planning + ~£40k sales) = £500,000. Ms Singh might assume this is a CGT residential disposal at 24% = £120,000. **WRONG.** Per CTA 2010 Part 8ZB / ITA 2007 Part 9A Condition D (development main-purpose test per §28.2 lock), Ms Singh acquired-to-let then DEVELOPED-TO-SELL — Condition D engages on the development decision regardless of the original 12-year investment period. The £500,000 gain is reclassified as TRADING profit; income tax at 45% + Class 4 NIC ≈ £240,000+.
+- **The planning lever:** planning permission application timing is the HMRC signal. If Ms Singh had instead refurbished and continued letting (no planning permission for material change), Condition D would not engage; if she had sold the unrefurbished property as an investment disposal, Conditions A/B/C/D all fail and the disposal is CGT. The planning-permission step is the visible commitment to development intent.
+
+Inline aside CTA: "Before you apply for planning permission on a long-held BTL, talk to us about whether the development decision is moving you onto the developer side of the Part 8ZB / Part 9A line. The cost difference can be £100,000+ on a single project."
+
+### Example 3 — The capital-vs-revenue line on planning costs
+
+Landlord owns a 3-bed terraced BTL let to a family tenant. Roof has deteriorated; landlord needs to undertake repair work + considering adding a dormer loft conversion to create a 4th bedroom (planning application required).
+
+- **Roof repair (revenue):** replacing existing slate roof with new slate roof, like-for-like repair. ITTOIA 2005 s.272 + PIM2030+ — revenue-deductible against rental income in the year incurred. Professional fees (roofer, surveyor) deductible alongside.
+- **Loft dormer conversion (capital):** materially extends the property; adds floor area; requires planning permission. ITTOIA 2005 s.33 (no deduction for capital expenditure). Build cost + planning application fees + architect fees + structural engineer fees ALL capital — added to base cost for CGT under TCGA 1992 s.38 (enhancement expenditure).
+- **Border case — replacement vs extension:** if the landlord replaces the roof structure with a slightly modified profile that incidentally creates more headspace, the work might fall on the revenue side; if the work creates a new room with windows and stairs (a usable additional bedroom), it falls on the capital side. The line is fact-sensitive; Wave 7 capital-vs-revenue cluster covers the deeper test.
+- **CGT on later sale:** if landlord sells the property 5 years later for £450,000 (acquired at £250,000; loft conversion £80,000; sales costs £8,000), gain = £450,000 − £250,000 − £80,000 − £8,000 = £112,000. The £80,000 loft cost reduces the gain at CGT — but the deduction is taken at 24% (£19,200 tax saving) whereas a revenue deduction would have saved at the landlord's marginal income tax rate (potentially 40% = £32,000). Capital classification is structurally LESS valuable for tax purposes than revenue classification.
+
+### Example 4 — The change-of-use ATED trap on a corporate envelope
+
+Landlord holds an office building in a property holding company (Patel Holdings Ltd). Acquires for £550,000 in 2024; planning permission for Class MA conversion to 3 residential flats granted 2026; conversion completed at cost £450,000 total. Post-conversion 3-flat block valued £1.4m for ATED purposes.
+
+- **Pre-conversion ATED:** office building = not a dwelling = NO ATED charge.
+- **Post-conversion ATED:** 3 residential flats = "dwellings" under FA 2013 Part 3 = property within ATED scope IF in a corporate envelope AND value > £500,000 PER DWELLING. Each flat valued £400,000-£500,000 at completion — IF any flat exceeds £500k individual valuation, that flat enters ATED Band 1.
+- **ATED relief eligibility check:** Patel Holdings Ltd is a property-rental business — relief available under FA 2013 s.133 (property rental businesses) IF each flat is let or being prepared for letting on a daily basis. Relief requires formal return filed within 30 days of acquisition / coming into scope. Relief can be lost mid-year if a flat falls into a non-rental occupation pattern (vacant for refurbishment > 6 months; family member occupation; sale-prep voids).
+- **Operative discipline:** track each flat's daily-letting status to maintain s.133 relief; file ATED returns + relief notifications timely; valuation review at 1 April every fifth year + at any material change.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: When do I actually need planning permission?**
+   A: Under TCPA 1990 s.55(1), "development" — needing planning permission — means EITHER (a) carrying out building / engineering / mining / other operations on the land, OR (b) making a material change of use. s.55(2)(f) carves out movement WITHIN the same Use Class (e.g. shop to café both within Class E since 1 September 2020 needs no permission). Movement BETWEEN Use Classes typically needs permission unless the GPDO 2015 grants Permitted Development. Light-touch internal works that do not affect use or material structure are usually permitted-development or below the development threshold.
+
+2. **Q: Can I use Class MA to convert a shop into a flat?**
+   A: Yes, subject to GPDO 2015 Sch 2 Part 3 Class MA conditions (as inserted by SI 2021/428, effective 1 August 2021): (i) maximum 1,500 sqm floor space; (ii) building vacant for at least 3 months immediately prior; (iii) not on specially-designated land (national park, AONB, conservation area subject to specific exclusions). A prior-approval application to the local planning authority is required — a procedural step short of full planning permission, typically decided within 8 weeks. RUN session re-verifies the current Class MA conditions at write time per §16.35.
+
+3. **Q: Do I need permission for a loft conversion in a rental property?**
+   A: Internal loft conversions that do NOT alter the roof line or external appearance may be permitted development under GPDO 2015 Sch 2 Part 1 Class B (additions etc to the roof of a dwellinghouse) subject to volume / position / materials conditions. Conversions that DO alter the external appearance (dormer windows, raised roof line) require either Class B PD (subject to conditions) or full planning permission. For a rental property, the building is a "dwellinghouse" only if it is being let on an assured tenancy basis (not HMO, not flats — see §20 RRA 2025 architecture). HMO and flat-block conversions need full permission. Always check with the local planning authority before commencing.
+
+4. **Q: What is the Community Infrastructure Levy (CIL) and when does it apply?**
+   A: Under Planning Act 2008 Part 11 + CIL Regulations 2010 (SI 2010/948 as amended), CIL applies to chargeable development including (a) new build over 100 sqm, (b) creation of new dwellings, (c) certain change-of-use development creating new floorspace. Rates are local-authority-set via charging schedules — from £0 (no CIL adopted) to £400+ per sqm in high-charging boroughs. Key exemptions: self-build under reg 42 (single-dwelling owner-occupier); annexe + extension under reg 42A; social housing regs 49-52; charitable regs 54-58. All exemptions require formal notice + procedural compliance + 3-year clawback discipline. Forward-link to the MW1 C1 CIL deep-dive for the operational mechanics.
+
+5. **Q: What is the difference between CIL and s.106?**
+   A: CIL is a non-negotiable local charge applied at standard per-square-metre rates set by the charging authority via its charging schedule; it is intended to fund GENERIC infrastructure. s.106 (TCPA 1990) is a bespoke planning obligation negotiated PER development — affordable housing, highway works, education contributions, open-space contributions. s.106 obligations must satisfy the CIL Regs reg 122 five-tests: necessary; directly related; fairly and reasonably related in scale and kind. The pre-LURA-2023 reg 123 pooling restriction (cap of 5 obligations funding the same infrastructure item) has been REPEALED. CIL and s.106 can coexist on the same development BUT cannot fund the same item.
+
+6. **Q: Are planning application fees tax-deductible against rental income?**
+   A: No — planning application fees are CAPITAL expenditure under ITTOIA 2005 s.33 / CTA 2009 s.53 (no deduction for capital expenditure). They add to the property's base cost for CGT under TCGA 1992 s.38 (enhancement expenditure). The deductible-vs-capitalisable line is decisive: minor repair-driven planning applications on existing rental property MAY be revenue if the underlying work is repair (not improvement); planning applications for extensions / new builds / change-of-use are always capital. Wave 7 capital-vs-revenue cluster covers the deeper test.
+
+7. **Q: Does getting planning permission to convert commercial to residential bring my property into ATED scope?**
+   A: Potentially yes. ATED (FA 2013 Part 3) applies to "dwellings" held in corporate envelopes where value exceeds £500,000 per dwelling. A change of use from non-dwelling (commercial) to dwelling can bring the property into ATED scope post-conversion. Mitigation: ATED relief for property-rental businesses (FA 2013 s.133), property-development trade (s.137), or charitable use (s.150). Each relief requires the property to satisfy the trade / business / use test on a daily basis with formal return discipline.
+
+8. **Q: What is the VAT impact of converting commercial to residential?**
+   A: Two VAT levers engage: (a) any option to tax under VATA 1994 Sch 10 para 2 that was in place on the commercial property is AUTOMATICALLY DISAPPLIED for the residential conversion under Sch 10 paras 5/6 (intended dwellings); recipient-certification disapplication available under para 6 / VAT 1614D. (b) Construction services that convert non-residential into residential qualify for the 5% REDUCED RATE under Sch 7A Group 6. The onward sale as first-grant-of-major-interest in a new dwelling is ZERO-RATED under Sch 8 Group 5 — making the 5% input fully recoverable. The combined VAT economics on a commercial-to-residential conversion are highly favourable.
+
+9. **Q: Does change of use after acquisition trigger a recalculation of SDLT?**
+   A: No. SDLT is charged at acquisition based on the use at the effective date of transaction (FA 2003 s.116). A change of use AFTER acquisition does NOT retrospectively recalculate the SDLT due — the original transaction is closed. However, the FUTURE sale will use the use at the date of that sale; a commercial-to-residential conversion will increase SDLT for the next buyer (residential rates plus possibly the higher-rates additional dwelling surcharge). The seller-landlord does not owe more SDLT on the conversion itself; the cost shifts to the next buyer.
+
+10. **Q: Will planning permission move me onto the developer side under Part 8ZB / Part 9A?**
+    A: Often yes, where the development is substantial and intended for disposal. CTA 2010 s.356OB / ITA 2007 s.517B Condition D (development main-purpose test per §28.2 lock) catches a landlord who develops with profit-from-disposal as a main purpose — the long-held investment status does NOT insulate the disposal from trading classification. The C8 sibling page (`are-you-a-property-investor-or-developer`) is the decision-guide. For investment-side landlords planning a major extension or conversion, the C8 framework should be worked through BEFORE the planning permission is applied for.
+
+11. **Q: Are sinking fund contributions deductible against rental income?**
+    A: Not directly. Sinking fund contributions made under a commercial or residential lease provision are typically held in trust on behalf of tenants for future capital works. The contributions are NOT income to the landlord (held in trust); the eventual capital works are capital expenditure (added to base cost for CGT). See the C-bucket sibling brief on commercial service charge accounts for the deeper treatment of sinking funds in commercial leases.
+
+12. **Q: What happens to my SBA position when I undertake a conversion?**
+    A: Structures and Buildings Allowance under CAA 2001 Part 2A applies at 3% straight-line per FA 2020 s.30 on qualifying non-residential building expenditure. SBA does NOT apply to dwellings. A commercial-to-residential conversion will END SBA eligibility on the converted floor space from the conversion date; any unused SBA carries forward only against any remaining commercial floor area. The capital allowances picture must be reset at conversion.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy (per `feedback_no_em_dashes` memory).
+- **Specific over generic.** Named statute (TCPA 1990 s.55 + s.106; Use Classes Order SI 1987/764 as amended by SI 2020/757; GPDO 2015 SI 2015/596 + SI 2021/428 Class MA + SI 2024/579 Class Q narrowing; Planning Act 2008 Part 11; CIL Regs 2010 SI 2010/948; LURA 2023 Part 4; ITTOIA 2005 s.33; CTA 2009 s.53; FA 2013 Part 3 ATED; FA 2003 s.116 SDLT; VATA 1994 Sch 9 Gr 1 + Sch 10 + Sch 7A Gr 6 + Sch 8 Gr 5; CAA 2001 Part 2 + Part 2A SBA per FA 2020 s.30; TCGA 1992 s.38 + Sch 2 paras 6-12). Worked-example personas only; no real names.
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Inline aside-styled CTAs at three conversion moments: (i) after the Use Classes + Class MA orientation; (ii) after the CIL + s.106 walk-through; (iii) after the change-of-use ATED / VAT / SDLT section.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 10-12 entries (orientation angled per the seed).
+- **Body word count target:** 2,200-2,600.
+- **Anti-templating:** open with the practitioner-question hook from the seed counter-pattern ("If you are thinking about changing the use of a property — flat above a shop to a residential let, garage conversion to an HMO room, agricultural building to a dwelling — here is what the planning regime requires AND what the tax regime will charge you on top..."). Do NOT open with "What is planning permission?" tenant-template opener.
+- **Rate-by-reference per §16.27** for CIL local rates (verify against relevant charging authority); ATED bands and rates per FA 2013 ss.99-101 annually indexed; VAT 5% reduced rate; SDLT residential / non-residential / additional dwelling surcharge rates per §1; Class MA 1,500 sqm cap; 3-month vacancy condition; 100 sqm CIL threshold; SBA 3% straight-line.
+- **Six-verification gate per §9.**
+- **§16.35 per-write statute re-verification at write time** — every TCPA / GPDO / CIL Regs / FA 2013 / FA 2003 / VATA / CAA cite verified at legislation.gov.uk at write. Class MA conditions (SI 2021/428) RUN session WebFetches at write to confirm 1,500 sqm + 3-month vacancy.
+- **Do-not-write GREP discipline (RUN session greps draft):** "movement within a use class always needs permission" (FALSE — s.55(2)(f) carve-out); "Class MA requires full planning permission" (FALSE — prior approval only, procedural step); "CIL only applies to new dwellings" (FALSE — applies to new build >100 sqm AND new dwellings AND certain change-of-use); "the s.106 pooling restriction still applies" (FALSE — repealed by LURA 2023); "planning fees are revenue-deductible against rental income" (FALSE — capital under ITTOIA s.33 / CTA s.53); "SDLT recalculates on change of use" (FALSE — non-retrospection; original transaction closed); "ATED relief is automatic" (FALSE — requires formal return + daily-basis trade/business/use test under s.133/137/150); "VAT 5% applies to all conversion services" (FALSE — only qualifying residential conversion services under Sch 7A Gr 6); "SBA applies to dwellings" (FALSE — non-residential only); "Class Q is unchanged" (FALSE — narrowed by SI 2024/579).
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §32 CIL + s.106 cluster lock §32.1-§32.7; §18 ATED; §29 VAT incl. Sch 10 option to tax + Sch 7A Group 6 + Sch 8 Group 5; §1 + §1.J SDLT; §25 capital allowances + SBA; Wave 7 capital-vs-revenue cluster).
+2. Claim this page in `megawave3_page_tracker.md`.
+3. Read this brief end-to-end.
+4. Fetch + read authority URLs above + WebSearch for live competitor briefings (prioritising 2026-vintage that captures Class MA conditions + post-LURA-2023 transition).
+5. Read closest-existing pages: MW1 C1 CIL deep-dive; existing change-of-use pages; Wave 8 Bucket B trading-vs-investment pages incl. C8 sibling; §29 VAT-on-conversion pages; §18 ATED pages; §1 / §1.J SDLT pages; §25 capital allowances pages.
+6. Plan H2 / H3 outline: practitioner-question open → when permission is needed (s.55 trigger) → Use Classes + Class E consolidation → GPDO 2015 + Class MA + other PD classes → CIL chargeable development → s.106 obligations → tax consequences (capital vs revenue) → change-of-use ATED → VAT change-of-use mechanics → SDLT non-retrospection → planning + Part 8ZB/Part 9A interaction → close.
+7. Verify factual claims per §16.35 — every TCPA / GPDO / CIL / FA 2013 / FA 2003 / VATA / CAA cite; Class MA conditions; 1,500 sqm cap; 3-month vacancy; SBA 3%.
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit: `MegaWave 3 RUN C: a-short-guide-planning-permission-in-uk`.
+15-19. Per workflow.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 1 seed committed 2026-05-27 by M3-C-B2 sub-agent. TCPA 1990 s.55(1) + s.55(2)(f) verified verbatim against https://www.legislation.gov.uk/ukpga/1990/8/section/55 on 2026-05-27. GPDO 2015 SI 2015/596 in-force status confirmed via legislation.gov.uk contents page ("no known outstanding effects"); Class MA exists in Schedule 2 Part 3 per contents (full text paginated past displayed segment; Stage 2 must re-verify the Class MA conditions + the 1,500 sqm cap + 3-month vacancy at write time). Use Classes Order SI 1987/764 + SI 2020/757 (Class E consolidation) cited by reference; Stage 2 verifies consolidated text at write time per §16.35. §32 (CIL + s.106) used as pre-locked anchor per §16.36; §18 (ATED), §29 (VAT), §1 + §1.J (SDLT), §25 (capital allowances), Wave 7 capital-vs-revenue cluster used as supporting pre-locks. No NEW HP lock raised. Cannibalisation watch: low (no existing landlord-side planning orientation page); RUN session re-runs cannib check at brief gate.]
+[RUN session records work here at write time. **Stage 2 verification notes (2026-05-27):** TCPA 1990 s.55(1) + s.55(2)(f) verbatim-verified at https://www.legislation.gov.uk/ukpga/1990/8/section/55 at Stage 1 seed. GPDO 2015 SI 2015/596 in-force status confirmed at Stage 1 seed; Class MA conditions + 1,500 sqm cap + 3-month vacancy paginated past the displayed segment — RUN session WebFetches SI 2021/428 at write for verbatim Class MA conditions. Use Classes Order SI 1987/764 + SI 2020/757 (Class E consolidation) cited by reference at HP-anchor depth. §32 (CIL + s.106) used as pre-locked anchor per §16.36; §18 (ATED), §29 (VAT — Sch 10 + Sch 7A Gr 6 + Sch 8 Gr 5), §1 + §1.J (SDLT), §25 (capital allowances + SBA), Wave 7 capital-vs-revenue cluster used as supporting pre-locks. No NEW HP lock raised. Cannibalisation watch: low (no existing landlord-side planning orientation page); RUN session re-runs cannib check at brief gate.]
+
+---
+
+## Stage 1 seed work log
+
+- **Stage 1 author:** MW3 Stage 1 Sub-Agent C on 2026-05-27.
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent C (batch M3-C-B2) on 2026-05-27.
+- **Cluster anchor:** §32 (CIL + s.106 — fully locked MW1) + §32.1-§32.7 + supporting §18 (ATED) + §29 (VAT change-of-use mechanics) + §1 + §1.J (SDLT) + §25 (capital allowances + SBA) + Wave 7 capital-vs-revenue cluster.
+- **HP-lock alignment:** all architecture pre-locked at §32 / §18 / §29 / §1 / §25 + Wave 7 cluster. No new HP lock raised at Stage 1 or Stage 2.
+- **§16.36 statutory-citation cross-check (Stage 2):** TCPA 1990 s.55 verbatim-verified at seed time; GPDO 2015 SI 2015/596 in-force status confirmed at seed time; Class MA introduced via SI 2021/428 (paginated past displayed segment at seed time — RUN session WebFetches at write); Use Classes Order SI 1987/764 + SI 2020/757 Class E consolidation cited by reference; CIL Regs SI 2010/948 + Planning Act 2008 Part 11 cited; LURA 2023 Part 4 cited for the phased CIL → Development Levy transition; ITTOIA s.33 + CTA s.53 capital-expenditure exclusion cited; VATA Sch 9 Gr 1 + Sch 10 + Sch 7A Gr 6 + Sch 8 Gr 5 confirmed against §29 lock; FA 2013 Part 3 ATED confirmed against §18 lock; FA 2003 s.116 SDLT confirmed against §1 + §1.J locks; CAA 2001 Part 2 + Part 2A SBA confirmed against §25 lock.
+- **§16.31 URL verification (Stage 2):** legislation.gov.uk anchors all confirmed live at seed time; HMRC manuals (CG15150+, PIM2030+, CA22000+, VAT Notice 742A / 708) confirmed live at HMRC manuals path. No dead-link drops at Stage 2. Competitor list deferred to RUN-time WebSearch with 2026-vintage Class MA + LURA-2023 transition filter.
+- **Cannibalisation reasoning:** no existing landlord-side planning orientation page on site. MW1 C1 CIL is a deep-dive (NOT orientation); C8 sibling is the trading-vs-investment decision-guide (NOT planning); §18 / §29 / §1 / §25 pages cover individual mechanics (NOT the hub). Clean cluster gap; this page is the orientation hub above the deep-dives.
+- **Anti-templating watchpoints for RUN session:** (a) practitioner-question open (NOT "what is planning permission?" tenant template); (b) the Class MA conditions (1,500 sqm + 3-month vacancy + non-specially-designated land) are the page's load-bearing operational fact — RUN session WebFetches SI 2021/428 at write to confirm; (c) the planning → Part 8ZB / Part 9A interaction is the high-value cross-link to C8 — surface in worked example #2; (d) the change-of-use ATED trap is the high-value cross-link to §18 — surface in worked example #4; (e) the orientation-hub framing means heavy forward-linking is REQUIRED — keep prose tight and link out at every section.
