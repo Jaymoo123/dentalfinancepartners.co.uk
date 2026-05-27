@@ -80,6 +80,46 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
+**Last updated:** 2026-05-27 (late evening) — **MegaWave 3 Stage 2 CLOSED; Stage 2b + RUN pending tomorrow.** Topic family: Compliance / operations / specialist family (HP touchpoints §17, §18, §19, §20, §27, §28 + new §27.10 + §31.B + §36 + §37). Stage 1 (60 seed briefs) closed ~20:40. Stage 1b sign-off committed at `53b3eba` with 5 new HP-locks + 2 critical drift catches verified (F-1 CT Sch 18 figures + F-3 SI 2021/1076 → SI 2026/336 revocation). Stage 2 (60 brief extensions) closed ~23:46 with all 12 batch markers + 3 lane-done flags. Wallclock Stage 2: ~2h6.
+
+**`main` HEAD: `5a34d5c`** post-Stage-2 last commit. Stage 2b sign-off + RUN dispatch NOT YET done.
+
+**Pending for tomorrow's manager session:**
+1. **Stage 2b review** — read F-104 (SI title mis-citation, Bucket C) + F-105 (LURA 2023 section mis-citation, second-home council-tax premium, Bucket C) raised during Stage 2. Any earlier Stage-1b unresolved (F-1 + F-3 back-patch sweeps were scoped but only the single F-3 hit on `essential-bookkeeping-tips-for-sole-traders.md` was actioned; F-1 was clean — no pre-existing pages had stale CT figures). Decide on §27.10/§31.B/§36/§37 if additional refinement needed.
+2. **Stage 2b sign-off** — write `briefs/property/megawave3/_signals/stage2b_signed_off.flag` (file already exists for Stage 1b at `stage1b_signed_off.flag`; same convention).
+3. **RUN dispatch** — same pattern as MW2 RUN: reset queues to pending, archive Stage 2 lane-done flags + batch markers to `_stage2_done.json` / `.stage2.flag`, then `./scripts/rolling-orchestrator.ps1 -Wave 3 -Phase run -Lane {a,b,c}`. RUN uses `cwd=worktree` per drift-bug fix (sub-agents commit page files to worktree branches). Expect manager-merge per batch.
+4. **Close + deploy gate.** All MW2 (60) + MW3 (60) pages remain held for deploy per user's "batch deploys" preference; expect a 120+ page consolidated push to production at some point post-RUN-close.
+
+**MW3 issues handled today:**
+- Worktree-drift on Lane A + C at Stage 1 (each batch needed manager-merge — 4× per drifted lane).
+- Lane A tracker desync at A-B3 (sub-agent committed but didn't update tracker — manager flipped A13-A18 rows).
+- Premature tracker flip on A19+A20 by manager (my error) → orchestrator wrote false lane_A_done.flag → rolled back, relaunched orchestrator A.
+- 3× `_stage2_done.json` marker-filename drift at Stage 2 (A-B1 + A-B2 + B-B1) — renamed each time.
+- F-1 verified via legislation.gov.uk (£200/£400 + £1,000/£2,000 CT Sch 18 para 17). HP §19.20 locked.
+- F-3 verified via legislation.gov.uk (SI 2021/1076 revoked 1.4.2026 → SI 2026/336). HP §19.18 locked + §19.19 added on points-reset dual-condition. Single pre-existing page back-patched (`essential-bookkeeping-tips-for-sole-traders.md`).
+
+**HP-locks added during MW3 Stage 1b (commit `53b3eba`):**
+- §19.18 SI 2021/1076 → SI 2026/336 migration (F-3)
+- §19.19 Points-based late submission regime dual-condition reset (F-3 secondary)
+- §19.20 CT Sch 18 para 17 verified figures (F-1)
+- §27.10 Disguised remuneration loan charge + settlement framework (F-2)
+- §31.B Commonhold White Paper 2025 + forthcoming Bill — live pipeline floor (F-103)
+- §36 Professional conduct of property accountants (F-100): POCA + MLR 2017 + Fraud Act
+- §37 Share-exchange + reconstruction reliefs + transactions-in-securities anti-avoidance (F-101)
+
+**HP-extension candidates still open from Stage 2 (for Stage 2b tomorrow):**
+- F-104 (BRIEF_DRIFT: SI title mis-citation, Bucket C, Sub-Agent M3-C-B1 Stage 2)
+- F-105 (BRIEF_DRIFT: LURA 2023 section mis-citation, second-home council-tax premium, Bucket C, Sub-Agent M3-C-B1 Stage 2)
+
+**Worktrees:** `Accounting-wt-property-megawave3-{a,b,c}` alive at main HEAD or near. Lane B worktree branch is 2 commits ahead (residual stage1 drift, non-blocking; will be reset/archived at RUN dispatch).
+
+**Network state — Property net-new program at MW3 close-pre-RUN:**
+- 360 net-new pages on main from W1-W9 + MW1 + MW2 (pre-MW3).
+- MW3 will add 60 more once RUN completes → 420 net-new total on main.
+- 300 currently deployed in production (W1-W3 + W4-W9 + MW1, deployed 2026-05-26). Held for deploy: MW2 (60) + MW3 (60) = 120 pages once RUN closes.
+
+---
+
 **Last updated:** 2026-05-27 (afternoon) — **MegaWave 2 CLOSED via rolling architecture.** 60 new pages on main across 3 lanes (Bucket A 20 + Bucket B 20 + Bucket C 20). Topic family: Entity / incorporation / partnerships+LLPs / FICs / Companies House reforms + ECCTA + RoE / IHT + estate planning / trusts + beneficial ownership / joint ownership + Form 17 / payroll + bookkeeping. Build verification PASS on main: `Compiled successfully in 3.6s`; **672 routes prerendered** (was 577 at MW1-close → +60 MW2 blog pages + a handful of category route refreshes). **`main` is at `1ab5607`** post-MW2 close pre close-artifact commit.
 
 **Stage timeline:**

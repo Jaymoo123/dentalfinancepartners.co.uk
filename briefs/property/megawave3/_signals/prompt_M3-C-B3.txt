@@ -1,0 +1,83 @@
+You are Stage 2 Sub-Agent for Property Tax Partners MegaWave 3 (rolling architecture, batch M3-C-B3). **Working from main repo at `C:/Users/user/Documents/Accounting`.** Stage 2 brief extensions land on the `main` branch directly (NOT on a worktree branch). cwd is set to main; use relative paths for `git add` + `git commit` so commits go to main HEAD. Your bucket: **Bucket C - CGT — disposal & specific scenarios + Property development tax (trading vs investment) + Land Remediation Relief (LRR) + CIS / construction industry scheme + Structures & Buildings Allowance (SBA) + Tenancies and Renters**.
+
+This is a **bounded batch** of 6 picks. You are a LEAF AGENT - do NOT spawn sub-agents. Extend the existing Stage 1 seed briefs into full Stage 2 briefs ready for RUN-phase page writing, commit each, then stop cleanly with the batch-done marker.
+
+## Your batch (6 picks)
+
+1. `btl-investment-plymouth-cardiff-landlord-hotspots` - [Property accountant for cities / regions] btl-investment-plymouth-cardiff-landlord-hotspots
+2. `buy-to-let-market-sees-record-high-returns` - [Property data / forecast / market reports] buy-to-let-market-sees-record-high-returns
+3. `can-uk-landlords-still-use-llp-to-reduce-tax` - [Property accountant for cities / regions] can-uk-landlords-still-use-llp-to-reduce-tax
+4. `case-laws` - [Anti-avoidance and case law] case-laws
+5. `change-landlord-accountants` - [Property accountant for cities / regions] change-landlord-accountants
+6. `cis-deduction-by-contractors-in-the-uk` - [CIS / construction industry scheme] cis-deduction-by-contractors-in-the-uk
+
+## Work autonomously (Bug #7 fix)
+
+Acknowledgment line is your ONLY pause. After acking, immediately claim pick 1, extend its seed, commit, IMMEDIATELY claim pick 2. Do not pause between picks. Stop only when (a) all 6 extended + batch-done marker written; (b) real blocker requiring Q-N (use bracketed `## [Q-N]`); (c) unrecoverable build failure.
+
+## Q&A + flag discipline
+
+- Q-N file: `C:\Users\user\Documents\Accounting\docs\property\megawave3_questions_session_C.md` via ABSOLUTE PATH. Use `## [Q-N]` brackets (Bug #6).
+- Flags file: `C:\Users\user\Documents\Accounting\docs\property\megawave3_site_wide_flags.md` via ABSOLUTE PATH. Use F-numbers in **F-100..F-149** ONLY for this bucket (Bug #2).
+
+## Read first
+
+1. `C:\Users\user\Documents\Accounting\docs\property\NETNEW_PROGRAM.md` - §4 brief anatomy + §16.36 brief-citation gate + §16.31 URL liveness
+2. `C:\Users\user\Documents\Accounting\docs\property\house_positions.md` - your bucket's HP cluster + any Wave-specific mini-locks at: §17, §24, §26, §27, §28
+3. Your batch's Stage 1 seed briefs at `C:\Users\user\Documents\Accounting\briefs\property\megawave3/<slug>.md` for each slug listed above
+
+Acknowledge with: "Stage 2 batch M3-C-B3 picked up. Reading first seed now."
+
+## CRITICAL: URL liveness guardrail (Bug #3 fix from Wave 8 F-1)
+
+For EVERY competitor URL you propose listing in a brief's competitor section, you MUST WebFetch it FIRST and confirm:
+1. HTTP 200 status (not 404/403/500)
+2. Content is on-topic (matches the brief's subject - not just any page on the firm's site)
+3. URL is a guide/article, not a calculator/redirect/marketing-funnel page
+
+URLs that fail any of (1)-(3) are DELETED from the brief. If fewer than 2 live URLs survive for a pick, write `<!-- competitor section: session-side WebSearch at write time, no Stage 2 hits -->` and move on. Do NOT invent plausible firm URLs - Wave 8 F-1 + Wave 9 Bucket C 5/5 dead rate confirm this trap.
+
+## CRITICAL: per-write statute verification (§16.35 + §16.36)
+
+Every statutory section number, every commencement date, every numerical rate you write into the extended brief must be WebFetch-verified against legislation.gov.uk at write time. The discipline catches HP-lock drift even when conductor mini-locks have errors (Wave 9 §11.A had 4 catches by Stage 2 sub-agents on conductor work).
+
+## Stage 2 extensions per brief (edit each Stage 1 seed in-place)
+
+1. **Competitor URLs section** - 3-5 verified live URLs per brief. WebFetch each first. Include 1-line takeaway per URL ("what this competitor covers that we should also cover or counter").
+
+2. **Authority links section** - HMRC manual pages + relevant legislation.gov.uk sections. WebFetch + verify each.
+
+3. **Worked-example data** - structured numerical examples the RUN-phase sub-agent will use.
+
+4. **FAQ expansion** - Stage 1 seeds have key questions architecture; Stage 2 makes 8-12 FAQ entries with full draft answers (RUN sub-agent will polish prose but should not need to research the answers).
+
+5. **Anti-templating cross-check** - after extending all 6 briefs, read them as a set and flag any sentences that read identical across the batch (templating drift). Replace with distinct framings.
+
+6. **Differentiation framing for partial-overlap picks** - if any picks in your batch are cannib partial-overlap rows, add an explicit "How this page differs from <existing-page>" FAQ + the existing-page cross-link as canonical companion.
+
+## Commit discipline
+
+For each pick:
+1. Read existing Stage 1 seed at `C:\Users\user\Documents\Accounting\briefs\property\megawave3/<slug>.md`
+2. Verify all statutes + URLs via WebFetch
+3. Extend seed in-place with Stage 2 sections
+4. `git add briefs/property/megawave3/<slug>.md`
+5. `git commit -m "MegaWave 3 Stage 2 C: <slug> full brief (M3-C-B3)"`
+6. Stage 2 does NOT flip tracker rows - those stay ✅ from Stage 1 (RUN-phase claims same picks).
+
+## Batch-done signal (mandatory)
+
+After all 6 picks extended + committed:
+
+`C:\Users\user\Documents\Accounting\briefs\property\megawave3\_signals/batch_M3-C-B3_done.json` containing:
+```json
+{
+  "batch_id": "M3-C-B3",
+  "agent_id": "<wt session name>",
+  "completed_at": "<ISO timestamp>",
+  "commit_shas": [...],
+  "slugs_done": [...]
+}
+```
+
+Then exit cleanly.
