@@ -72,10 +72,197 @@ Open with: "If you are a UK property developer, run a large landlord group with 
 - HMRC manuals + government anchors to cite: CISR (CIS Manual) full set; PIM1000+ (Property Income Manual — for the property-business landing); BIM60000+ (property income / trading distinction — trade-side for developers); FA 2004 Part 3 + SI 2005/2045 + FA 2021 reforms on the £3m deemed-contractor threshold + FA 2009 Sch 55 + FA 2007 Sch 24 — sessions verify each statute verbatim at legislation.gov.uk at write per §16.35.
 - Case-law to ground: *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 — employment-vs-self-employment three-element test (load-bearing for the employment-status risk question). Limited other case-law dependency — CIS is operationally regulated rather than litigated. Possible cross-reference to *Perrin v HMRC* + *Martland v HMRC* (§27.2 + §27.4) where penalty appeals arise.
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — VERIFIED URLs
 
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes per memory `feedback_no_em_dashes`); LeadForm footer; aside-styled inline CTAs after the in-scope gate + after the deduction-rate ladder + after the VAT reverse-charge integration + at close; semantic HTML; FAQs 10-12 entries (operational-angled: "do I need to register for CIS if I am a residential landlord?" "what is the £3m deemed-contractor threshold based on?" "do I deduct from materials as well as labour?" "do I file CIS300 in months with no payments?" "what happens if I do not verify a subcontractor before paying?" "does CIS apply to overseas subcontractors?" "is CIS-registered status the same as self-employed for employment-status?" "how does CIS interact with the VAT reverse charge?"); FAQPage JSON-LD; rate-by-reference per §16.27; six-verification gate; §16.35 per-write statute re-verification at write time. Internal-link discipline: forward-link to §33 + §29 + MW2 B4 + existing reverse-charge site page + §35.2 + §27.2 + §27.3 + §28 + §25.12 cluster pages. NO em-dashes (memory feedback).]
+### Authority URLs (RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/2004/12/part/3`** — Finance Act 2004 Part 3 ss.57-77 (CIS architecture — §33 lock).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/59`** — FA 2004 s.59 (in-scope categorisation — s.59(1)(k) mainstream contractor + s.59(1)(l) deemed contractor + Sch 11A).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/61`** — FA 2004 s.61 (deduction base — s.61(2) labour-only / materials excluded).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/62`** — FA 2004 s.62 (deduction obligation — withholding at prescribed rates).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/63`** — FA 2004 s.63 (registration for gross payment or for payment under deduction).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/64`** — FA 2004 s.64 (gross-payment registration tests — business + turnover + compliance).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/66`** — FA 2004 s.66 (cancellation of gross-payment registration).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/69`** — FA 2004 s.69 (verification mechanic).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/70`** — FA 2004 s.70 (returns — CIS300 monthly).
+- **`https://www.legislation.gov.uk/uksi/2005/2045/contents`** — SI 2005/2045 (Income Tax (Construction Industry Scheme) Regulations 2005 — operational implementation including reg 6 verification).
+- **`https://www.legislation.gov.uk/ukpga/2021/26`** — FA 2021 (deemed-contractor £3m rolling-12-month threshold reform in force 6 April 2021; Stage 2 verifies current threshold against the operative section).
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/55`** — FA 2009 Sch 55 (late-filing penalty regime — applies to CIS300).
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/56`** — FA 2009 Sch 56 (late-payment penalty regime).
+- **`https://www.legislation.gov.uk/ukpga/2007/11/schedule/24`** — FA 2007 Sch 24 (inaccuracy penalty regime — applies to under-deduction).
+- **`https://www.legislation.gov.uk/uksi/2019/892`** — SI 2019/892 (VAT domestic reverse charge for construction services — in force from 1 March 2021; Stage 2 verifies current SI reference).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/section/55A`** — VATA 1994 s.55A (reverse charge architecture — anchor for the CIS / reverse-charge sibling regime).
+- **`https://www.gov.uk/hmrc-internal-manuals/construction-industry-scheme-reform/cisr40000`** — HMRC CISR40000+ (contractor verification + monthly returns operative guidance).
+- **`https://www.gov.uk/hmrc-internal-manuals/construction-industry-scheme-reform/cisr60000`** — HMRC CISR60000+ (gross-payment status tests + cancellation operative guidance).
+- **`https://www.gov.uk/government/collections/construction-industry-scheme-cis`** — HMRC CIS collection on gov.uk (current rates, thresholds, verification process state).
+- **`https://www.gov.uk/what-you-must-do-as-a-cis-contractor`** — HMRC contractor obligations + CIS300 monthly cycle + nil-return rule.
+- **`https://www.gov.uk/guidance/vat-reverse-charge-technical-guide`** — HMRC VAT reverse charge technical guide (the CIS / reverse-charge interaction).
+- **`https://www.bailii.org/uk/cases/QBD/1968/0001.html`** — *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 (employment-vs-self-employment three-element test; §35.2 cross-reference).
+
+### Competitor URLs
+
+`<!-- competitor section: session-side WebSearch at write time per §16.31 Wave 8/9 5/5 dead-rate pattern + §16.43 confirmation — Stage 2 did not invent firm URLs; RUN session sources fresh. Recommended queries: "CIS deduction property developer 2026", "construction industry scheme landlord deemed contractor", "CIS300 monthly nil return penalty", "CIS verification subcontractor 20 30 rate", "VAT domestic reverse charge construction property", "CIS materials labour deduction split", "Ready Mixed Concrete CIS employment status risk". Aim 4-6 specialist property-development accountancy firms (Hill & Co, Plus Accounting, Smith Cooper); ICAEW Tax Faculty + CIOT Tax Adviser CIS commentary; LandlordZONE / Property Tribes practitioner CIS threads. Note dominant competitor shape is generic construction-industry explainer; this page DIFFERENTIATES via property-business specificity. -->`
+
+### HMRC + supervisor manual anchors
+
+- HMRC CISR (CIS Manual) full set.
+- HMRC CISR40000+ (verification + monthly returns).
+- HMRC CISR60000+ (gross-payment status).
+- HMRC PIM1000+ (Property Income Manual — for the property-business landing).
+- HMRC BIM60000+ (property income / trading distinction — trade-side for developers).
+- HMRC VAT Notice 735 (domestic reverse charge for building and construction services).
+- HMRC Compliance Handbook CH on Sch 24 / Sch 55 / Sch 56 penalty operative guidance.
+
+### Case-law (verify each at BAILII at write time per §16.35)
+
+- *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 — employment-vs-self-employment three-element test (mutuality + control + integration). Load-bearing for the employment-status risk question; the CIS-registered ≠ self-employed trap. §35.2 cross-reference.
+- *Perrin v HMRC* [2018] UKUT 156 (TCC) — reasonable-excuse 4-step framework (where penalty appeals arise from CIS300 missed-submission).
+- *Martland v HMRC* [2018] UKUT 178 (TCC) — late-appeal three-stage framework.
+- Limited other case-law dependency — CIS is operationally regulated rather than litigated.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — The in-scope gate for a mainstream property developer
+
+Patel Developments Ltd is a UK property developer with three active development projects (residential conversions). Annual subcontractor spend £450,000.
+
+- **In-scope test (FA 2004 s.59):** s.59(1)(k) — mainstream contractor — applies. Patel Developments Ltd carries on a business that includes construction operations and makes payments to subcontractors in connection with those operations. NO £3m threshold needed for mainstream contractors; they are in scope from the first payment regardless of spend volume.
+- **Registration obligation:** Patel Developments Ltd must register with HMRC as a CIS contractor BEFORE the first payment to any subcontractor (FA 2004 s.61 + SI 2005/2045 framework). Failure to register before making payments creates a backdated obligation + penalty exposure.
+- **Operative cascade:** the registration, verification, deduction, monthly CIS300 return, and payment-to-HMRC obligations all apply from day one.
+
+### Example 2 — The deemed-contractor £3m rolling-12-month threshold for a large landlord group
+
+Patel Holdings Ltd is a property-investment company holding 80 BTL properties; annual asset-management spend on refurbs + capex programmes is £3.5m (averaged over rolling 12 months).
+
+- **In-scope test (FA 2004 s.59):** s.59(1)(l) + Sch 11A — deemed contractor — applies. Patel Holdings Ltd is NOT a mainstream contractor (not a construction business; not a developer); but its construction-related spend exceeds the £3m rolling-12-month threshold (per FA 2021 reforms in force 6 April 2021).
+- **Threshold mechanic:** the threshold is **AVERAGE rolling annual construction-related spend**, not a single-payment threshold. Stage 2 verifies current threshold against HMRC CISR guidance at write per §16.27. The FA 2021 movement from £1m to £3m took many smaller landlord-groups OUT of deemed-contractor status; Patel Holdings Ltd remains IN at the £3.5m spend level.
+- **Operative consequence:** Patel Holdings Ltd must register as a CIS contractor for the construction-related spend; verify subcontractors; deduct at the correct rate; file CIS300 monthly; pay deducted amounts to HMRC. The CIS obligation runs in parallel with the standard CT obligation for the corporate landlord.
+- **Out-of-scope counterpoint:** if Patel Holdings Ltd's rolling 12-month construction-related spend drops below £3m, it can de-register from CIS at the next threshold review point. The threshold movement under FA 2021 from £1m to £3m has provided breathing room for smaller portfolios.
+
+### Example 3 — The deduction-rate ladder and the labour-only deduction base
+
+Patel Developments Ltd is paying invoice #1234 from a subcontractor (P&S Electrical Ltd) for £15,000 — £10,000 labour + £5,000 materials (split shown on invoice per s.61(2) discipline).
+
+- **Verification status (HMRC verification check via CIS Online or compliant software):**
+  - **Scenario A — P&S Electrical Ltd is gross-payment registered (s.63 + s.64):** 0% deduction. Pay £15,000 in full. P&S accounts for own CT.
+  - **Scenario B — P&S Electrical Ltd is registered for payment under deduction:** 20% deduction on labour element only (s.61(2)). Labour £10,000 × 20% = £2,000 deduction. Pay P&S £15,000 - £2,000 = £13,000. Deducted £2,000 paid to HMRC by 19th of following month (22nd for electronic).
+  - **Scenario C — P&S Electrical Ltd is unverified (HMRC returned no record):** 30% deduction on labour element only. Labour £10,000 × 30% = £3,000 deduction. Pay P&S £15,000 - £3,000 = £12,000. Deducted £3,000 paid to HMRC by 19th of following month.
+- **Operational trap on materials inclusion:** if Patel Developments Ltd's accounts-payable team applies the 20% rate to the FULL £15,000 (labour + materials), the deduction overstates by 20% × £5,000 = £1,000. P&S receives £15,000 - £3,000 = £12,000 instead of £13,000; under-payment of P&S + over-payment to HMRC. The reconciliation creates a CT-side mess later. The invoice format discipline (labour/materials split) is operationally critical.
+
+Inline aside CTA: "If your property-business is a deemed contractor (construction spend over £3m rolling 12 months) and you're managing CIS for the first time, the operational floor is meaningful: registration, verification, monthly CIS300 returns including nil-months, labour-only deduction base, payment by 19th. Talk to us about getting it right from day one."
+
+### Example 4 — The VAT domestic reverse charge running in parallel with CIS
+
+Patel Developments Ltd's subcontractor P&S Electrical Ltd is VAT-registered + works on Patel's commercial development project (NOT an end-user supply).
+
+- **The CIS deduction (income-tax-side):** apply as per Example 3 — verification status + labour-only deduction base + 20% or 30% withholding as applicable.
+- **The VAT reverse charge (VAT-side, parallel regime):** SI 2019/892 + VATA 1994 s.55A. P&S Electrical Ltd's invoice for £15,000 (labour + materials) MUST be issued WITHOUT VAT — P&S notes "reverse charge applies; customer to account for VAT". Patel Developments Ltd accounts for the VAT (£3,000 at 20%) on its own VAT return: output VAT £3,000 + input VAT £3,000 (typically nets to £0 for fully taxable businesses).
+- **The two regimes together on the same payment:**
+  - Invoice value: £15,000 net of VAT.
+  - CIS deduction (Scenario B — registered for payment under deduction): 20% × £10,000 labour = £2,000 deducted.
+  - Cash to P&S: £15,000 - £2,000 = £13,000.
+  - CIS deducted amount paid to HMRC by 19th of following month: £2,000.
+  - VAT accounted under reverse charge on Patel's VAT return: £3,000 output + £3,000 input (typically netting to £0).
+- **End-user exception (where reverse charge does NOT apply):** if Patel Developments Ltd's project is for an END-USER (e.g., a private householder selling the finished property), the reverse charge does NOT apply — P&S charges normal VAT on its invoice. Sessions verify the end-user characterisation per HMRC VAT Notice 735.
+
+### Example 5 — The employment-status risk (Ready Mixed Concrete) on a long-running CIS subcontractor
+
+Patel Developments Ltd has engaged P&S Electrical Ltd (sole-trader Mr Smith) on a fixed-site development for 18 months continuously. Mr Smith works exclusively for Patel Developments Ltd during this period; uses Patel's tools; works hours and methods specified by Patel's site manager.
+
+- **CIS treatment:** Mr Smith is CIS-registered as a sole-trader subcontractor; Patel Developments Ltd deducts at 20% (registered for payment under deduction) on labour element of each invoice.
+- **Employment-status risk (Ready Mixed Concrete three-element test):**
+  - **Mutuality of obligation:** Patel Developments Ltd has continuously offered work + Mr Smith has continuously accepted = mutuality present.
+  - **Control:** Patel's site manager specifies hours, methods, sequence = control present.
+  - **Integration / consistency with employment:** exclusive engagement + Patel's tools + integration into Patel's workflow + 18 months continuous = integration consistent with employment.
+- **Risk:** HMRC may reclassify Mr Smith as an employee for the 18-month engagement. Patel Developments Ltd would face: PAYE on Mr Smith's payments (employee-side); secondary Class 1 NIC at 15% from 6 April 2026 per FA 2026 (employer-side); historical settlement of NIC + PAYE differential; potential Sch 24 inaccuracy penalty if HMRC characterises the misclassification as careless.
+- **Mitigation:** structural changes to clear the Ready Mixed Concrete test — Mr Smith brings own tools; takes work from other clients; works to own methods; is not integrated into Patel's workflow. Or formally transition Mr Smith to PAYE employment if the working pattern is genuinely employment-like.
+- **Operative point:** CIS-registered status does NOT establish self-employment for employment-status purposes. The Ready Mixed Concrete test sits independently on the working pattern; the CIS-registration is administrative not substantive.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: Do I need to register for CIS if I am a residential landlord?**
+   A: Generally NO for pure-residential individual landlords. FA 2004 s.59(2) carves out private householders; residential landlords typically operate as individuals or small companies whose construction-related spend is below the £3m rolling-12-month deemed-contractor threshold (FA 2004 s.59(1)(l) + Sch 11A per FA 2021 reforms). The CIS regime targets property DEVELOPERS (mainstream contractors per s.59(1)(k)) and large property-investment businesses with substantial capex programmes (deemed contractors per s.59(1)(l)). If you are a property-investment company with annual construction-related spend exceeding £3m on rolling 12-month average, you are in scope as a deemed contractor. Sessions must NOT write "all landlords need to register for CIS" (FALSE per §33 do-not-write).
+
+2. **Q: What is the £3m deemed-contractor threshold based on?**
+   A: AVERAGE rolling annual construction-related spend per FA 2021 reforms in force 6 April 2021. The threshold movement from £1m to £3m took many smaller landlord-groups OUT of deemed-contractor status. The threshold is calculated on rolling 12-month average construction-related spend (excluding the body's own use of construction services on its own land where applicable). Sessions verify the threshold against HMRC CISR guidance at write per §16.27.
+
+3. **Q: Do I deduct from materials as well as labour?**
+   A: NO. FA 2004 s.61(2) + SI 2005/2045 reg 6 — the deduction base is LABOUR ELEMENT ONLY. Materials portion is excluded from the deduction base. Operational discipline: the subcontractor's invoice must split labour from materials; where the invoice does not split, the safe default is to treat the whole payment as labour (over-deducts, but avoids the under-deduction penalty risk under FA 2007 Sch 24). Sessions must NOT write "deduction is on the full payment" (FALSE per §33 do-not-write).
+
+4. **Q: Do I file CIS300 in months with no payments?**
+   A: YES. FA 2004 s.70 + SI 2005/2045 — the nil-return rule. Monthly CIS300 return is required even where no payments to subcontractors were made in the month. Late-filing penalty exposure on nil-returns is one of the most common operational traps under FA 2009 Sch 55 framework. Sessions must NOT write "you don't need to file CIS returns in months with no payments" (FALSE per §33 do-not-write).
+
+5. **Q: What happens if I do not verify a subcontractor before paying?**
+   A: Two consequences: (a) you may apply the WRONG deduction rate — typically over-deducting at 30% (unverified rate) when the subcontractor should have been at 20% (registered for payment under deduction), creating a cash dispute with the subcontractor; OR under-deducting at 20% when the subcontractor should have been at 30%, creating an under-deduction penalty exposure under FA 2007 Sch 24. (b) HMRC scrutiny at compliance review: failure to verify is a process failure that signals broader CIS-system non-compliance. Operative discipline: verification BEFORE first payment; re-verify when the 2-tax-year verification window expires (typical SI 2005/2045 reg 6 framework — Stage 2 verifies current operative period at write).
+
+6. **Q: Does CIS apply to overseas subcontractors?**
+   A: Yes. FA 2004 + SI 2005/2045 — non-UK-resident subcontractors performing UK construction operations are within scope. The 30% unregistered rate applies absent gross-payment registration. CIS deduction is income-tax withholding; the gross-payment registration test for a non-resident contractor is fact-pattern specific (business test + UK business establishment test + compliance history). Sessions emphasise: overseas-resident does not exempt from CIS; the UK construction-operations performance is the in-scope trigger.
+
+7. **Q: Is CIS-registered status the same as self-employed for employment-status?**
+   A: NO. *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 — the employment-vs-self-employment three-element test (mutuality + control + integration) sits independently on the working pattern. CIS-registered status is ADMINISTRATIVE (registration with HMRC for CIS deduction purposes); employment-status is SUBSTANTIVE (the worker's actual pattern of engagement). A CIS-registered subcontractor can be reclassified as an employee if the working pattern looks like employment under Ready Mixed Concrete — at which point the contractor faces PAYE + NIC liability (typically including 15% secondary Class 1 NIC from 6 April 2026 per FA 2026) on historic payments. Sessions cross-link to §35.2 employment-status floor.
+
+8. **Q: How does CIS interact with the VAT domestic reverse charge?**
+   A: The two regimes run in parallel on the same payment but operate on different bases. CIS is income-tax withholding on subcontractor labour (FA 2004 Part 3 + SI 2005/2045). The VAT domestic reverse charge (SI 2019/892 + VATA 1994 s.55A; in force from 1 March 2021) shifts VAT accounting from the supplier to the customer for construction services between VAT-registered parties (where the recipient is NOT an end-user). Both can trigger simultaneously on the same payment: CIS deducts at 0%/20%/30% from labour element; reverse charge customer accounts for VAT at 20% (or 5% for reduced-rated). End-user exception (e.g., supply to private householder) disapplies the reverse charge; CIS still applies. Sessions cross-link to the site's existing `domestic-reverse-charge-construction-vat-landlords` page.
+
+9. **Q: When are the CIS300 monthly returns and deducted-amount payments due?**
+   A: CIS300 monthly return due by 19th of the month following the month of payment to subcontractors (or 22nd for electronic submission). Deducted amount payment to HMRC due by 19th of the month following the month of payment (or 22nd for electronic). Annual employer reporting reconciliation per the standard PAYE cycle (separate annual filing). Sessions emphasise the monthly cadence + the nil-return rule for months with no payments.
+
+10. **Q: What are the gross-payment status tests under s.64?**
+    A: Three tests, all required: (a) BUSINESS test — must be running a business including construction operations + have a UK business establishment; (b) TURNOVER test — turnover above threshold (sessions verify current threshold against HMRC CISR60000+ at write per §16.27); (c) COMPLIANCE test — clean compliance record over the prior 12 months (HMRC reviews tax-filing + payment history across all taxes, not just CIS). For subcontractors with steady throughput + good compliance, gross-payment status removes the cash-flow hit of withholding; for newer or smaller subcontractors, the compliance-history hurdle is a real gate. HMRC can CANCEL gross-payment registration under s.66 where compliance subsequently breaks down.
+
+11. **Q: What penalties apply if I get CIS wrong?**
+    A: Three penalty regimes interact: FA 2009 Sch 55 (late-filing — applies to CIS300, including nil-return missed); FA 2009 Sch 56 (late-payment — applies to deducted-amount delays); FA 2007 Sch 24 (inaccuracy — applies to under-deduction where contractor pays without verifying or applies wrong rate). The penalty-by-penalty stack can outpace the underlying tax liability quickly. Sessions cross-link to §27.2 + §27.3 for the operative penalty framework + Perrin / Martland reasonable-excuse + late-appeal routes.
+
+12. **Q: Do I need to register if my construction-related spend is just under £3m?**
+    A: As of right now, no — the FA 2021 threshold of £3m rolling-12-month average construction-related spend must be EXCEEDED for deemed-contractor status under s.59(1)(l). Sessions emphasise: monitor the rolling 12-month average; the threshold is breached on the AVERAGE not on a single high-spend month. If your portfolio is growing and your construction spend is approaching £3m, the operational pre-registration discipline (verifying first subcontractor, setting up CIS-compliant software, training accounts-payable on labour/materials split) should be in place BEFORE the threshold is crossed. Late registration creates retrospective penalty exposure.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy (per `feedback_no_em_dashes` memory).
+- **Specific over generic.** Named statute (FA 2004 Part 3 ss.57-77 — s.59 + s.61(2) + s.62 + s.63 + s.64 + s.66 + s.69 + s.70; SI 2005/2045 + reg 6; FA 2021 deemed-contractor threshold reform; FA 2009 Sch 55 + Sch 56; FA 2007 Sch 24; SI 2019/892 VAT reverse charge; VATA 1994 s.55A). Worked-example personas only; no real subcontractor names.
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Inline aside-styled CTAs at four conversion moments: (i) after the in-scope gate (mainstream vs deemed contractor); (ii) after the deduction-rate ladder; (iii) after the VAT reverse-charge integration; (iv) at close after the operational compliance checklist.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 10-12 entries (operational angled per the seed).
+- **Body word count target:** 2,400-2,800.
+- **Anti-templating:** open with the property-business audience telegraph from the seed counter-pattern ("If you are a UK property developer, run a large landlord group with a capex programme, or operate an HMO portfolio, the Construction Industry Scheme is operationally relevant to you in two distinct ways..."). Do NOT open with "What is CIS" generic construction-industry explainer.
+- **Rate-by-reference per §16.27** for CIS rates 0%/20%/30% (FA 2004 s.62 + s.61(2) + SI 2005/2045 reg 6); £3m rolling-12-month deemed-contractor threshold (FA 2021 reform); CIS300 monthly cycle 19th/22nd payment deadlines; Sch 55 + Sch 56 + Sch 24 penalty quanta (verified at write); 15% secondary Class 1 NIC from 6 April 2026 per FA 2026 (verified at write); VAT reverse charge in force from 1 March 2021 (SI 2019/892 verified at write).
+- **Six-verification gate per §9.**
+- **§16.35 per-write statute re-verification at write time** — every FA 2004 / SI 2005/2045 / FA 2021 / FA 2009 / FA 2007 / SI 2019/892 / VATA cite verified at legislation.gov.uk at write. Current SI 2005/2045 reg 6 wording + £3m threshold + CIS rates + Sch 55/56/24 penalty quanta + FA 2026 NIC rate verified at write per §16.27.
+- **Do-not-write GREP discipline (RUN session greps draft) — all five §33 do-not-write items + adjacent:** "all landlords need to register for CIS" (FALSE per §33 do-not-write — pure-residential individual landlords typically out of scope); "CIS only applies to property developers" (FALSE per §33 do-not-write — deemed-contractor threshold pulls in property-investment companies); "verification is a one-off step per subcontractor" (FALSE per §33 do-not-write — typically valid 2 tax years; re-verify when window expires); "you don't need to file CIS returns in months with no payments" (FALSE per §33 do-not-write — monthly nil-return required); "CIS deduction is on the full payment" (FALSE per §33 do-not-write — labour element only); "CIS-registered means self-employed for employment-status" (FALSE — Ready Mixed Concrete test sits independently); "the VAT reverse charge replaces CIS" (FALSE — parallel regimes on the same payment); "overseas subcontractors are exempt from CIS" (FALSE — in scope where performing UK construction operations); "gross-payment status is automatic for high-turnover subcontractors" (FALSE — three-test gate including compliance); "the £3m deemed-contractor threshold is a single-payment threshold" (FALSE — rolling-12-month average).
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §33 + §33.1-§33.5 CIS architecture full lock; §29 VAT for property cluster; §35.2 employment-vs-self-employment; §27.2 + §27.3 penalties framework; §28 trading-vs-investment; §25.12 LRR for construction on remediation land).
+2. Claim this page in `megawave3_page_tracker.md`.
+3. Read this brief end-to-end.
+4. Fetch + read authority URLs above + WebSearch for current property-business-specific CIS commentary (note dominant competitor shape is generic construction-industry explainer; the property-business specificity is the differentiator).
+5. Read closest-existing pages: MW2 B4 `beginners-guide-to-cis-verification-in-the-uk` (verification deep-dive — companion not cannibaliser); existing site `domestic-reverse-charge-construction-vat-landlords` VAT-side sibling; §33 + §29 + §35.2 + §27.2 + §27.3 + §28 + §25.12 cluster pages.
+6. Plan H2 / H3 outline: property-business audience open → in-scope gate (mainstream contractor s.59(1)(k) for developers + deemed contractor s.59(1)(l) for large landlord groups at £3m threshold) → three verification statuses + deduction-rate ladder → verification mechanic + 2-tax-year window → labour-only deduction base (s.61(2)) → CIS300 monthly returns + nil-return trap → gross-payment status three-test gate (s.64) → VAT domestic reverse charge parallel regime → penalty exposure (Sch 55 + Sch 56 + Sch 24) → employment-status risk (Ready Mixed Concrete + CIS-registered ≠ self-employed) → operational compliance checklist → close.
+7. Verify factual claims per §16.35.
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit: `MegaWave 3 RUN C: cis-deduction-by-contractors-in-the-uk`.
+15-19. Per workflow.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 1 seed committed 2026-05-27 by M3-C-B3 sub-agent. Anchors: §33 (CIS architecture — full lock at MW2 Stage 1b sign-off 2026-05-27); §33.1 (in-scope categorisation); §33.2 (verification process); §33.3 (withholding rates + labour-only deduction base); §33.4 (returns + penalties); §33.5 (VAT domestic reverse charge sibling); §29 (VAT for property — cross-reference); §35.2 (Ready Mixed Concrete employment-vs-self-employment cross-reference); §27.2 + §27.3 (penalties framework cross-reference). No new HP lock — §33 cluster fully pre-locked. Property-business specificity is the differentiator — page is written FOR UK property developers / large landlord groups / REITs / HMO operators, not for generic construction contractors. Counter-pattern to avoid: generic construction-industry explainer template + all five §33 do-not-write items ("all landlords need to register" / "CIS only applies to developers" / "verification is one-off" / "no return in nil months" / "deduction on full payment"). Companion page MW2 B4 `beginners-guide-to-cis-verification-in-the-uk` covers verification deep-dive — this page is the deduction-mechanic page. Both anchored to §33; complementary not cannibalising. Stage 2 verifies current SI 2005/2045 reg 6 wording + £3m threshold + CIS rates + Sch 55/56/24 penalty quanta + FA 2026 NIC rate at write per §16.27 + §16.35.]
+[RUN session records work here at write time. **Stage 2 verification notes (2026-05-27):** Anchors: §33 (CIS architecture — full lock at MW2 Stage 1b sign-off 2026-05-27); §33.1 (in-scope categorisation — s.59 mainstream vs deemed-contractor £3m threshold per FA 2021 reform); §33.2 (verification process — s.69 + SI 2005/2045 reg 6 + 2-tax-year window); §33.3 (withholding rates 0%/20%/30% + labour-only deduction base s.61(2)); §33.4 (returns CIS300 monthly s.70 + Sch 55 + Sch 56 + Sch 24 penalty framework + nil-return trap); §33.5 (VAT domestic reverse charge sibling SI 2019/892 + VATA s.55A in force 1 March 2021); §29 (VAT for property — cross-reference); §35.2 (Ready Mixed Concrete [1968] 2 QB 497 employment-vs-self-employment three-element test cross-reference); §27.2 + §27.3 (penalties framework cross-reference). No new HP lock — §33 cluster fully pre-locked. Property-business specificity is the differentiator — page is written FOR UK property developers (mainstream contractors) / large landlord groups + REITs + HMO operators (deemed contractors at £3m rolling-12-month threshold), not for generic construction contractors. Counter-pattern to avoid: generic construction-industry explainer template + all five §33 do-not-write items ("all landlords need to register" / "CIS only applies to developers" / "verification is one-off" / "no return in nil months" / "deduction on full payment"). Companion page MW2 B4 `beginners-guide-to-cis-verification-in-the-uk` covers verification deep-dive — this page is the deduction-mechanic page. Both anchored to §33; complementary not cannibalising. Stage 2 verifies current SI 2005/2045 reg 6 wording + £3m threshold + CIS rates + Sch 55/56/24 penalty quanta + FA 2026 NIC rate at write per §16.27 + §16.35.]
+
+---
+
+## Stage 1 seed work log
+
+- **Stage 1 author:** MW3 Stage 1 Sub-Agent C on 2026-05-27.
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent C (batch M3-C-B3) on 2026-05-27.
+- **Cluster anchor:** §33 (CIS architecture full lock at MW2 Stage 1b sign-off 2026-05-27); §33.1 (in-scope categorisation); §33.2 (verification process); §33.3 (withholding rates + labour-only deduction base); §33.4 (returns + penalties); §33.5 (VAT domestic reverse charge sibling); §29 (VAT for property — cross-reference); §35.2 (Ready Mixed Concrete employment-vs-self-employment cross-reference); §27.2 + §27.3 (penalties framework cross-reference); §28 (trading-vs-investment — for developer-vs-landlord boundary); §25.12 (LRR — for construction on remediation land).
+- **HP-lock alignment:** §33 cluster fully pre-locked at MW2 Stage 1b sign-off 2026-05-27. No new HP lock raised at Stage 1 or Stage 2.
+- **§16.36 statutory-citation cross-check (Stage 2):** FA 2004 Part 3 ss.57-77 (including s.59 + s.61(2) + s.62 + s.63 + s.64 + s.66 + s.69 + s.70) + SI 2005/2045 + FA 2021 deemed-contractor threshold reform (£1m → £3m) + FA 2009 Sch 55 + Sch 56 + FA 2007 Sch 24 + SI 2019/892 + VATA 1994 s.55A all confirmed against §33 cluster full lock + §27.2/27.3 + §29 + §35.2. *Ready Mixed Concrete* [1968] 2 QB 497 confirmed against §35.2 lock.
+- **§16.31 URL verification (Stage 2):** legislation.gov.uk anchors all confirmed live at seed time; HMRC CISR (CISR40000+, CISR60000+) confirmed live; HMRC gov.uk CIS collection + contractor obligations + VAT Notice 735 confirmed live; BAILII Ready Mixed Concrete URL confirmed at seed time. Competitor list deferred to RUN-time WebSearch with property-business-specific filter (to differentiate against generic construction-industry shape).
+- **Cannibalisation reasoning:** MW2 B4 `beginners-guide-to-cis-verification-in-the-uk` is the primary sibling (verification deep-dive — COMPLEMENTARY not cannibalising; this page is the deduction-mechanic page). Existing site `domestic-reverse-charge-construction-vat-landlords` is the VAT-side sibling (forward-link target). No existing site CIS deduction-mechanic page at seed time. Property-business specificity is the differentiator from generic construction-industry pages elsewhere on the web. RUN session re-runs cannib check at brief gate.
+- **Anti-templating watchpoints for RUN session:** (a) property-business audience open (NOT generic "what is CIS"); (b) the in-scope gate (mainstream s.59(1)(k) vs deemed s.59(1)(l) at £3m rolling-12-month threshold) is the page's load-bearing entry-point — surface clearly with Example 1 + Example 2; (c) labour-only deduction base (s.61(2)) is the most common operational trap — surface clearly with Example 3; (d) nil-return rule for CIS300 is the most common operational trap on the returns side — surface clearly; (e) VAT reverse charge running in parallel on the same payment is the integration point with §29 — surface clearly with Example 4 + forward-link to existing reverse-charge site page; (f) Ready Mixed Concrete employment-status risk is the most common practitioner blind-spot — surface clearly with Example 5; (g) all five §33 do-not-write items are BANNED framings — RUN session grep enforces.
