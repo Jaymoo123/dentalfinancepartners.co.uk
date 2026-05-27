@@ -1,17 +1,15 @@
 {
   "batch_id": "M2-A-B3",
-  "agent_id": "MW2-stage1-A-B3",
-  "completed_at": "2026-05-27T00:00:00Z",
-  "branch": "property-megawave2-a",
-  "phase": "stage1",
-  "bucket": "A (Limited company / BTL company operation + Incorporation mechanics + Property partnership / LLP)",
+  "stage": 2,
+  "agent_id": "MW2-Stage2-A",
+  "completed_at": "2026-05-27T18:30:00Z",
   "commit_shas": [
-    "b4bd1e2",
-    "8f0d757",
-    "3d0ec55",
-    "a4025cb",
-    "c76d412",
-    "d513321"
+    "4b7b93f",
+    "a531341",
+    "eab8482",
+    "29e2b8e",
+    "1ffe009",
+    "56979f3"
   ],
   "slugs_done": [
     "limited-companies-and-btl-properties",
@@ -22,16 +20,29 @@
     "sole-trader-vs-partnership"
   ],
   "flags_raised": [
-    "F-6 — HOUSE_POSITION_EXTENSION — LLP accounts + SORP + designated member framework (SI 2008/1911 + LLP SORP + FRS 102 Section 22 substance test) — raised via llp-accounts seed"
+    "F-11 BRIEF_DRIFT — Anti-phoenix TAAR cite ITA 2007 s.396B vs ITTOIA 2005 s.396B in `limited-companies-and-btl-properties` Stage 1 seed. Verified against legislation.gov.uk + 5 existing site pages (`extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27` line 150 + 4 others). Correct cite: ITTOIA 2005 s.396B (inserted by F(No.2)A 2016 Sch 1 para 11). ITA 2007 has no s.396B. Same pattern as §16.40 Wave 6 catch on A4 seed. Drift confined to Stage 1 brief seed (not propagated to live pages). Brief corrected in-place across Statutory anchor / Key questions / do-not-write list / Workflow step 7."
   ],
-  "cannibalisation_notes": [
-    "limited-companies-and-btl-properties — HIGH CANNIBAL RISK with A20 entity pillar + existing buy-to-let-limited-company-complete-guide-uk; differentiator carved (operational handbook + accounts-treatment + lifecycle/exit decision tree); Stage 1b reviewer should validate the carve-out OR consider REDIRECT to A20/BTL-complete-guide as fallback."
+  "drift_catches": [
+    "§16.40 (F-11) — Stage 1 seed for `limited-companies-and-btl-properties` cited 'ITA 2007 s.396B' for MVL anti-phoenix TAAR. Same drift pattern as Wave 6 catch (A4 seed identical mis-cite); recurred at MW2 Stage 1 because Stage 1 Sub-Agent A's seed-drafting did not pick up the §16.40 corrected position. Stage 2 §16.36 statutory cross-check earned its keep at expected ~13% brief-quality error rate. EXISTING_PAGE_STALE check: all 5 existing site pages with anti-phoenix TAAR references use correct ITTOIA 2005 s.396B cite — no inventory-contamination back-patch required.",
+    "§16.40 (housekeeping, no flag) — Stage 1 seed for `llp-and-taxation-benefits` carried Stage-1-era F-9 / F-10 HMRC PM mis-anchors (PM276000 + PM236500 — both incorrect per Wave 6 / M2-A-B2 corrections). Brief extension incorporated post-correction anchors (PM250000+ for salaried-member; PM210000 → PM213000+ for mixed-membership) directly into authority URL list + do-not-write GREP discipline. No new F-flag because F-9 / F-10 already raised in batch M2-A-B2."
   ],
-  "hp_lock_consumption": [
-    "F-2 (M2-A-B2) §11.C partnership architecture lock — consumed by partnership-partnership-agreement-roles-types-benefits + sole-trader-vs-partnership + llp-and-taxation-benefits + llp-accounts seeds",
-    "F-4 (M2-A-B2) §11.C.X salaried-member sub-section — consumed by llp-and-taxation-benefits + partnership-partnership-agreement-roles-types-benefits + llp-accounts seeds",
-    "F-5 (M2-A-B2) §11.C.Y mixed-membership sub-section — consumed by llp-and-taxation-benefits + partnership-partnership-agreement-roles-types-benefits + llp-accounts seeds",
-    "F-3 (M2-A-B2) §21.8 multi-company group operation lock — touched by limited-companies-and-btl-properties + register-for-uk-corporation-tax seeds",
-    "F-1 (M2-A-B1) §11.B ECCTA Part 2 LP reforms lock — touched by partnership-partnership-agreement-roles-types-benefits + sole-trader-vs-partnership seeds"
-  ]
+  "url_verification_summary": {
+    "authority_urls_verified_live_pattern": "Standard legislation.gov.uk + gov.uk HMRC manual + ECCTA campaign-page URL patterns. PA 1890 / LLPA 2000 / LPA 1907 / CTA 2009 / CTA 2010 / TCGA 1992 / ITTOIA 2005 / ITA 2007 / TMA 1970 / FA 2003 / FA 2008 / FA 1998 / CA 2006 / IA 1986 / FA 2013 / FA 2026 anchors all stable per prior batch verification + §11.C cluster lock evidence.",
+    "legislation_govuk_FA_inserted_sections_quirk": "ITA 2007 ss.850C-E + ss.863A-G + ITTOIA 2005 s.396B all FA-inserted sections; per M2-A-B2 batch verification (D-12 D-13 commentary), legislation.gov.uk routing on FA-inserted sections sometimes returns 404 at standard /section/ path; RUN session uses Westlaw / BAILII / Practical Law backup routes.",
+    "competitor_urls_attempted": 0,
+    "competitor_urls_verified_live": 0,
+    "competitor_section_strategy": "session-side WebSearch at write time per Wave 8 F-1 + Wave 9 Bucket C 5/5 dead-rate pattern + M2-A-B2 consistent practice — RUN session sources via Google Search; Stage 2 did not attempt firm-domain URLs.",
+    "hmrc_pm_url_verification": "Authority URL list uses the M2-A-B2-corrected HMRC PM anchors (PM250000+ salaried-member; PM210000 → PM213000+ mixed-membership; PM131000+ LLP-specific; PM100000+ Partnership Manual root; PM132000+ + TSEM4000+ for settlements applied to partnership). BIM72005+ partnership identification; BIM72015 jointly-owned property; PIM1030 jointly-owned property; SDLTM33000+ SDLT partnership; CTM00000+ CT Manual root; CTM61500+ loans to participators. All anchors confirmed via §11.C cluster lock evidence + prior batch verification."
+  },
+  "discoveries_logged": [
+    "D-13 §16.40 PATTERN CONFIRMED FIFTH INSTANCE — F-11 (ITTOIA 2005 s.396B vs ITA 2007 s.396B, M2-A-B3 pick 1) makes five consecutive Stage 2 statutory-cite drift catches: F-7 (s.464C/D omission, M2-A-B1) + F-8 (s.131 vs s.152, M2-A-B2) + F-9 (PM276000 vs PM250000+, M2-A-B2) + F-10 (PM236500 vs PM210000+/PM213000+, M2-A-B2) + F-11 (ITA s.396B vs ITTOIA s.396B, M2-A-B3). Three of the five are act-attribution mis-cites (s.131 vs s.152 wrong section in correct act; ITA vs ITTOIA wrong act for inserted section); two are HMRC PM range mis-attribution. The §16.36 Stage 2 statutory cross-check gate continues to earn its keep at the ~13% brief-quality error rate baseline. Recommendation: Stage 1 dispatch prompt should explicitly enumerate the known-drift watchpoints (s.464C/D omitted; s.131 routes via s.152; PM276000 = CIS not salaried-member; PM236500 does not exist; ITTOIA 2005 s.396B not ITA 2007) as a worked-example of what verification catches.",
+    "D-14 ALL SIX BRIEF EXTENSIONS THIS BATCH ANCHOR TO THE LIVE §11.C CLUSTER (PARENT + 3 SUB-LOCKS) + §11.B LP REFORMS — F-2 / F-4 / F-5 / F-6 lock requests raised at MW2 Stage 1 (across M2-A-B2 and M2-A-B3) have all been APPROVED and locked between Stage 1 and Stage 2. The pre-Stage-2 lock approvals produced clean inheritance: every Stage 2 brief this batch has a live HP-anchor mapping for its sub-regime content. No drift catches arose from missing HP anchors. The pre-Stage-2 lock approval pattern is the operational baseline that drives the §16.46 zero-Q&A observation forward.",
+    "D-15 ENTITY-CHOICE DECISION-FRAME COHERENCE ACROSS BUCKET — Bucket A's six picks now span the complete LtdCo + partnership decision frame: (i) the entity-types comparison (`sole-trader-vs-partnership` early fork); (ii) the partnership architecture (`partnership-partnership-agreement-roles-types-benefits` mid-fork); (iii) the LLP accounts + tax handbooks (`llp-accounts` + `llp-and-taxation-benefits`); (iv) the LtdCo entity pillar (A20 + A1 + this batch's `limited-companies-and-btl-properties` operational BTL handbook); (v) the CT-registration entry-point (`register-for-uk-corporation-tax`). Cross-link grid is dense and reciprocal. RUN-session writers across the six picks should rely on the sibling forward-links rather than restating sub-regime depth.",
+    "D-16 STAGE-2 PER-WRITE VERIFICATION RISK FOR THE BATCH — LtdCo and partnership clusters carry several rate-by-reference figures that RUN session must WebFetch at write time per §16.35 + §16.27: dividend rates (10.75% / 35.75% / 39.35% from 6 April 2026 per F-20 §21.4); s.455 rate (35.75% post-6-April-2026 per F-9 §21.1; 33.75% pre); secondary Class 1 NIC rate (15% from 6 April 2026 per F-19 §21.4); CGT residential rates (24% post-FA 2024 s.10; verify current FA 2025 + FA 2026 calibration); CGT AEA (£3k FY26 — verify current); FRS 105 + FRS 102 + LLP SORP current published versions; audit-exemption thresholds (post 6-April-2025 uplift); HMRC official rate of interest on BIK calculation; FA 2008 Sch 41 penalty calibration; TMA 1970 s.86 interest rate. The brief framework holds the architecture; the numbers are commodity."
+  ],
+  "anti_templating_check": "Six briefs read as a set. Boilerplate sections (Voice + style, 19-step workflow, Quality bar six checks) verbatim per §4.8 + §7. Substantive content (framing differentiators, worked examples, FAQ phrasing, statutory-anchor depth) is distinct per pick. Each pick's worked-example section uses distinct personas (Singh / Kapoor / Mawell-Estate / Patel / Verma / Singh-Family / Mr Singh-business-associate cycled across picks with role-variation to avoid template feel; no two picks reuse identical persona-role pairings). FAQ phrasing varies; do-not-write GREP discipline patterns vary per pick (10-14 patterns per pick reflecting the specific anti-avoidance regimes + house-position locks each pick touches). Worked-example arithmetic varies per pick (FRS 105 vs FRS 102 comparative on £300k portfolio; DLA-IN/OUT flip on £50k; £500k portfolio Form 17 vs partnership; £400k partnership 50/50 s.24(1) disaster; £2m partnership-to-LtdCo Sch 15 SLP; £1.5m partnership s.26 dissolution; £3m 4-SPV group operation). No template-feel; each worked-example holds the pick's distinctive operational angle.",
+  "cross_pick_coordination_check": "Pick 1 (`limited-companies-and-btl-properties`) sits in LtdCo operational layer below A20 pillar + A1 mechanics; references pick 5 (CT-registration entry-point) as forward-link. Pick 2 (`llp-accounts`) is LLP-specific accounts-side; reciprocally cross-links to pick 3 (LLP tax-side). Pick 3 (`llp-and-taxation-benefits`) is LLP-specific tax-side; references A10 + A11 (M2-A-B2 LLP sub-regime specialists) for depth without restating. Pick 4 (`partnership-partnership-agreement-roles-types-benefits`) is cross-cutting agreement-and-roles handbook; references A7 (M2-A-B2 partnership-existence definitional) as PRIOR-question link; pick 6 (sole-trader-vs-partnership) is the EARLY-entity-choice comparison above pick 4. Pick 5 (`register-for-uk-corporation-tax`) is operational entry-point referenced FROM pick 1 + pick 6. Pick 6 (`sole-trader-vs-partnership`) is early-entity-choice comparison; consumes §24 Form 17 lock + §11.C cluster; references pick 4 (partnership-agreement architecture for those who choose partnership). All cross-link directionality reciprocal and pillar→specialist consistent. No cross-pick content duplication detected.",
+  "hp_lock_alignment_summary": "Six briefs anchor to the following live locks: §11.A (ECCTA Part 1; companies + ECCTA framework); §11.B (LP reforms — LIVE post-M2-A-B1); §11.C (partnership statutory architecture parent — LIVE); §11.C.X (salaried-member sub-lock — LIVE); §11.C.Y (mixed-membership sub-lock — LIVE); §11.C.Z (LLP accounts sub-lock — LIVE post-F-6 approval); §1.A (SDLT partnership Sch 15); §1.M (post-MDR-abolition SDLT); §21 (Ltd Co + FIC family); §21.1 (DLA + s.455); §21.2 (settlements + spouse exception); §21.4 (rate stack 2026/27 with F-19 + F-20 corrections); §21.5 (FIC mechanics — cross-reference); §21.8 (multi-company group operation — LIVE post-F-3 approval); §21.A (CT three-figure framework FA 2021 architecture); §22 + §22.A (IHT + April 2026 BPR/APR cap); §22.X (long-term residence — cross-reference); §24 (Form 17 + joint ownership). No new HP-lock requested by any pick this batch. F-11 single new flag raised (ITA-vs-ITTOIA s.396B drift catch).",
+  "branch": "main",
+  "worktree": "C:/Users/user/Documents/Accounting (main repo, Stage 2 commits to main per dispatch prompt)"
 }
