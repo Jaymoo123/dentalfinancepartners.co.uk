@@ -3540,3 +3540,202 @@ Closes F-102 from MW1 Stage 2b (carryover from F-100's CIL portion — §31 was 
 ### 32.8 Practical writing rule for sessions
 
 Lead with the distinction between CIL and s.106 (national framework + LA rates vs bespoke negotiated obligation). Specify whether the property in question is purchase-of-existing-dwelling (no CIL) or development (CIL chargeable subject to exemptions). For self-build exemption pages, surface the procedural-discipline requirements + 3-year clawback aggressively. For LURA 2023 reform pages, verify commencement status at write.
+
+---
+
+# MW2 Stage 1b mini-lock extensions (locked 2026-05-27)
+
+Locked by Stage 1b conductor session on 2026-05-27 after MW2 Stage 1 closed at 60/60 picks. The locks below populate gaps surfaced by MW2 sub-agents (12 HP-extension flags raised across F-1..F-6, F-50..F-52, F-100, F-106). F-101 was info-only (no lock needed). Section numbering reconciled against existing §29 / §30 / §31 / §32 to avoid conflicts with prior MW1 locks. Stage 2 writers on MW2 picks (and downstream MW3+) should thread to these locks rather than self-sourcing the underlying statutes.
+
+---
+
+## 11.B ECCTA 2023 Part 2 — Limited Partnership reforms — MW2 mini-lock (added 2026-05-27)
+
+**Scope.** §11.B extends the §11 + §11.A companies-side ECCTA framework (Part 1) with the **Part 2 reforms** that bring limited partnerships under LPA 1907 into a CA-2006-style regime. The MW2 A3 seed (`companies-house-changes-limited-partnership-requirements`) writes against this lock; A7 / A16 / A18 cross-reference where their taxonomy must distinguish PA-1890 general partnership from LPA-1907 LP from LLPA-2000 LLP.
+
+- **Statutory hooks.** ECCTA 2023 Part 2 (ss.109-148, amending LPA 1907); Limited Partnerships Act 1907 as amended; commencement SIs (separate from companies-side rollout under §11.A); LRA 2002 Sch 4A (HMLR disposition-block where applicable).
+- **§11.B.1 ECCTA 2023 Part 2 section range.** Part 2 sections amend specified LPA 1907 sections (registered office, annual confirmation, GP ID verification, striking-off, information-disclosure obligations). Stage 2 writers verify verbatim section headings via WebFetch against legislation.gov.uk at write time per §16.35.
+- **§11.B.2 Commencement chain.** Companies House operational rollout for LP reforms is phased and SI-controlled separately from companies-side rollout per §11.A. Sessions verify current commencement state at the **campaign page** per §11.A F-12 (`https://changestoukcompanylaw.campaign.gov.uk/`) — do NOT use the deprecated `gov.uk/government/news/changes-to-uk-company-law` URL.
+- **§11.B.3 Operative new obligations for LPs.** Registered office (appropriate-address rule mirroring §11 + ECCTA Part 1 s.28-30); annual confirmation (GPs + LPs + nature of business); GP ID verification routing through s.66 ACSP regime per §11.A; striking-off powers; information-disclosure obligations.
+- **§11.B.4 GP ID-verification routing.** New + existing GPs must verify via the ACSP framework (§11.A.7 + §11.A.8). The ACSP route is preferred for non-UK-resident GPs over the GOV.UK One Login interactive flow.
+- **§11.B.5 RoE interaction.** Where an overseas-LP holds UK property, the overseas entity must register under ECTEA 2022 RoE regime per §11.A. Companies House then holds **two registrations**: the RoE entry on the entity itself, and the LP register entry on the LP. Both must remain current; lapse of either triggers consequences per §11.A.
+- **§11.B.6 Property-LP-specific implications.** Property-fund LPs (English limited partnership widely used in real-estate fund finance); JV-development LPs; family-investment LPs holding tenanted property. Each faces material new compliance overlay vs. pre-ECCTA position.
+- **§11.B.7 Tax-side preservation.** ECCTA Part 2 changes **compliance only** — tax-transparency of LPs (ITTOIA 2005 Part 9, TCGA 1992 s.59) is unchanged. Do not write that LP tax treatment has changed.
+
+**Pages anchored to this lock.** MW2: A3 (LP compliance changes seed). Cross-reference candidates: A7 (partnership taxonomy), A16 (partnership agreement), A18 (sole-trader vs partnership). Existing site: none currently dedicated to LP-side post-ECCTA (gap candidate for MW3+).
+
+**Do not write.** "LP-Act-1907 compliance is light-touch" (post-ECCTA, no longer true); "LP only files on changes" (annual confirmation now required); "LP has no registered office obligation" (it now does); "LP compliance is the same as LLP" (false; separate Acts, separate sub-regimes); "RoE doesn't apply to LPs" (false where overseas entities are GP/LP holding UK property).
+
+---
+
+## 11.C Partnership statutory architecture — PA 1890 + ITTOIA 2005 Part 9 + TCGA 1992 s.59 + FA 2003 Sch 15 — MW2 mini-lock (added 2026-05-27)
+
+**Scope.** §11.C is the unified partnership statutory architecture lock covering general partnerships (PA 1890), the tax-transparency framework (ITTOIA 2005 Part 9), CGT mechanics (TCGA 1992 s.59 + HMRC SP D12), and SDLT-side mechanics (FA 2003 Sch 15 — cross-references §1.A). Five+ MW2 Bucket A picks consume this lock (A7, A10, A14, A15, A16, A18). §11.C.X / §11.C.Y / §11.C.Z below extend §11.C with sub-regimes (salaried-member, mixed-membership, LLP accounts).
+
+- **Statutory hooks.** Partnership Act 1890 s.1 + s.2 + s.14 + s.24; ITTOIA 2005 Part 9 ss.846-863; ITA 2007 s.852; TCGA 1992 s.59 + HMRC SP D12; FA 2003 Sch 15; TMA 1970 s.12AA. All verified verbatim against legislation.gov.uk by sub-agents at A7 / A10 / A14 / A15 write time.
+- **§11.C.1 PA 1890 s.1 four cumulative tests.** Two-plus persons + business + in common + with a view of profit. All four required; failure of any → no partnership exists in law.
+- **§11.C.2 PA 1890 s.2 negative tests.** Particularly **s.2(1) joint property / co-ownership negative** — load-bearing for property audiences; one of the most common landlord misframings (joint ownership of a let property does NOT, by itself, create a partnership).
+- **§11.C.3 PA 1890 s.2(3) profit-share prima-facie rule.** Receipt of a share of profits is prima-facie evidence of partnership, subject to six rebuttal heads at s.2(3)(a)-(f) — debt repayment, remuneration of employee, annuity to widow/child, loan interest, annuity, sale of goodwill.
+- **§11.C.4 HMRC operative guidance map.** **BIM72005-72165** (partnership identification); **BIM72015** specifically (joint ownership of property — the operative HMRC line on s.2(1)); **PIM1030** (jointly owned property); **SDLTM33000+** (SDLT partnership Sch 15 mechanics, cross-reference §1.A); **SP D12** (CGT statement of practice on partnerships).
+- **§11.C.5 SA800 partnership return obligation.** TMA 1970 s.12AA is the operative trigger — once partnership exists, SA800 is mandatory regardless of profit level.
+- **§11.C.6 ITTOIA 2005 Part 9 partnership tax-transparency framework.** Sections 846-863 establish the look-through framework; ITA 2007 s.852 notional-trade rule.
+- **§11.C.7 TCGA 1992 s.59 fractional-interest framework.** SP D12 introduction / withdrawal / share-rebasing / dissolution treatment.
+- **§11.C.8 FA 2003 Sch 15 partnership-SDLT regime.** Para 1 "business" definitional gate (cross-reference §1.A); para 10 incorporation relief sum-of-lower-proportions (SLP) mechanics (cross-reference §1.A.5 step-by-step). Lock holds the gating definitional layer + the operative reliefs.
+- **§11.C.9 Entity distinction.** PA 1890 general partnership / LPA 1907 LP (cross-reference §11.B) / LLPA 2000 LLP / CTA 2010 + CA 2006 limited company (cross-reference §21). Entity-choice forks for property audiences.
+
+**Pages anchored to this lock.** MW2: A7 (does-your-business-qualify-as-a-partnership) / A10 (hybrid-LLP) / A14 (LLP accounts, cross-ref §11.C.Z) / A15 (LLP taxation benefits) / A16 (partnership agreement) / A18 (sole-trader vs partnership). Future MW3+ partnership picks thread here.
+
+**Do not write.** "Joint ownership = partnership" (s.2(1) PA 1890 negative); "sharing gross returns = partnership" (s.2(2) negative); "SA800 is optional where profits are low" (s.12AA mandates where partnership exists); "all partnerships get Sch 15 reliefs on incorporation" (para 1 business gate required); "civil partnership = business partnership" (CPA 2004 vs PA 1890 conflation — different concepts entirely).
+
+### 11.C.X Salaried-member rules + post-BlueCrest HMRC PM276000+ guidance (LLP sub-regime) — MW2 sub-lock
+
+**Scope.** Extends §11.C with the salaried-member regime that targets **individual** LLP members. Sibling to §11.C.Y mixed-membership (which targets corporate members). Both regimes can fire on the same LLP simultaneously. MW2 A11 (`hmrcs-new-guidelines-for-llps-raise-concerns`) writes against this lock; A10 / A14 / A15 cross-reference.
+
+- **§11.C.X.1 ITA 2007 s.863A-G regime architecture.** Three conjunctive Conditions — A: 80% disguised salary; B: lack of significant influence over the affairs of the partnership; C: capital < 25% of disguised salary. All three required for reclassification.
+- **§11.C.X.2 BlueCrest Supreme Court [2024] UKSC 33.** Condition B "significant influence over the affairs of the partnership" does NOT require whole-LLP influence; influence over a significant part can be enough. This **narrows** the safe-harbour reading the FTT/UT had taken; matrix-silo'd member roles may not count post-BlueCrest.
+- **§11.C.X.3 HMRC PM276000+ updated 2025 guidance.** Operative current text — Stage 2 writers verify at write time per §16.35. Narrower view of significant influence consistent with BlueCrest.
+- **§11.C.X.4 Operative practical safe harbour.** Condition C capital-contribution route (≥25% capital takes member OUT of the regime). Easier to demonstrate in practice than Condition B significant influence.
+- **§11.C.X.5 s.863G anti-avoidance overlay.** Catches contrived Condition C arrangements (round-trip loans; sham contributions; capital at no real economic risk).
+- **§11.C.X.6 Operative consequence of reclassification.** PAYE + secondary Class 1 NIC at LLP level (15% from 6 April 2026 per FA 2026 — verify rate at write per §16.27) + Apprenticeship Levy (0.5% above £15k allowance) + late-payment-penalty regime + interest, all backdated.
+
+**Do not write.** "Condition C requires 25% capital" (inverted — <25% IN, ≥25% OUT); "BlueCrest narrowed Condition B for everyone" (only narrowed the influence-over-the-whole-vs-part dimension); "salaried-member rules don't apply to property LLPs" (false — apply to all LLP business types regardless of trading/investment status); "BlueCrest was bad for taxpayers" (mixed — narrowed Condition B on one point; affirmed safe-harbour structure overall).
+
+### 11.C.Y Mixed-membership partnership rules + hybrid LLP architecture (ITA 2007 ss.850C-E) — MW2 sub-lock
+
+**Scope.** Extends §11.C with the mixed-membership regime that targets **corporate** members. Sibling to §11.C.X salaried-member (which targets individual members). FA 2014 anti-avoidance pair. MW2 A10 (`hybrid-limited-liability-partnership`) writes against this lock; A4 (corporate tax planning pillar) cross-references where lever-discussion touches hybrid LLPs.
+
+- **§11.C.Y.1 Hybrid LLP structure baseline.** LLPA 2000 imposes no restriction on member type; corporates can be members; Companies House operates no separate hybrid classification.
+- **§11.C.Y.2 ITA 2007 s.850C-E mixed-membership regime architecture.** Three operative steps: (i) corporate member allocated profit share; (ii) "excess" test — corporate's share > arms-length commercial entitlement; (iii) "power to enjoy" test — individual member directly or indirectly able to benefit from corporate's allocated profits. All three steps required for reallocation.
+- **§11.C.Y.3 Reallocation mechanism.** Excess profits + power to enjoy → reattributed to individual member taxed at marginal rate, with double-tax credit for corporate's CT paid. Outcome is generally worse than the original structure intended; double-tax credit only partially neutralises.
+- **§11.C.Y.4 HMRC PM236500-PM238000 operative guidance.** Stage 2 writers verify current text at write per §16.35.
+- **§11.C.Y.5 Interaction with salaried-member rules (§11.C.X).** Distinct regimes; mixed-membership targets corporate member; salaried-member targets individual member; both can fire on the same LLP simultaneously.
+- **§11.C.Y.6 Residual legitimate hybrid-LLP uses.** Asset protection (where corporate's commercial entitlement is real); succession planning via FIC corporate member (cross-reference §21.5 + §22.6); external-investor inclusion (institutional / PE corporate member with no individual power-to-enjoy link).
+
+**Do not write.** "Hybrid LLPs are illegal" (lawful under LLPA 2000); "mixed-membership rules apply to all hybrid LLPs" (only where excess + power-to-enjoy both met); "Section 24 is solved by a hybrid LLP" (mixed-membership rules systematically dismantle the income-splitting attraction for typical founder-LtdCo setups); "mixed-membership rules and salaried-member rules are the same thing" (different regimes, different targets); "double-tax credit makes reallocation neutral" (only partially — operational outcome is generally worse).
+
+### 11.C.Z LLP accounts + SORP + designated member framework (SI 2008/1911 + LLP SORP + FRS 102 Section 22 substance test) — MW2 sub-lock
+
+**Scope.** Extends §11.C with the operational-accounts spine that sits parallel to the tax-side architecture. MW2 A14 (`llp-accounts`) writes against this lock; A10 hybrid-LLP and A11 salaried-member cross-reference where accounts-side equity-vs-liability classification has cascade implications.
+
+- **§11.C.Z.1 LLPA 2000 + SI 2008/1911 statutory architecture.** SI applies CA 2006 Part 15 + Part 16 to LLPs with modifications (Sch 1 + Sch 2 modifications); members' interests instead of share capital; designated members carry director-equivalent responsibility.
+- **§11.C.Z.2 LLP SORP.** CCAB-published; 2025 revision current — Stage 2 verifies at write per §16.35. Operative GAAP overlay for LLP-specific accounting treatments.
+- **§11.C.Z.3 FRS 102 Section 22 + LLP SORP application.** Equity-vs-liability substance test for members' interests; commonly liability where puttable on retirement or where contractual obligation to repay exists; cascade implications for balance-sheet presentation + members' remuneration treatment.
+- **§11.C.Z.4 Members' remuneration accounts split.** Expense vs appropriation; automatic-allocation per LLP agreement triggers expense; discretionary-allocation post-profit triggers appropriation; SORP-driven; **independent of tax-side allocation** per ITTOIA 2005 + s.863.
+- **§11.C.Z.5 "Loans and other debts due to members".** Specific LLP balance-sheet line under SI 2008/1911 + LLP SORP — distinct from share-capital line on company balance sheets.
+- **§11.C.Z.6 Designated members responsibility.** LLPA 2000 ss.6-9 applied CA 2006 ss.451-453; minimum 2 required; carry statutory accounts + filing responsibility with criminal + civil exposure for default. Not honorific.
+- **§11.C.Z.7 Audit exemption thresholds.** Small-LLP exemption per applied CA 2006 s.477 + s.479 (turnover ≤ £10.2m, balance sheet ≤ £5.1m, ≤ 50 employees in 2 of 3 — Stage 2 verifies post-uplift wording at write per recent threshold-uplift policy); exemption denied where members holding ≥10% require audit per applied s.476; group consolidation trigger; regulated-sector LLPs ineligible.
+- **§11.C.Z.8 Filing windows.** Applied CA 2006 s.441 (9 months from end of accounting reference period; first accounts 21 months from incorporation); abridged accounts per applied s.444; filleted accounts per applied s.444A omitting P&L from public filing.
+- **§11.C.Z.9 Property-investment LLP fair-value treatment.** FRS 102 Section 16 commonly elected; **NO LLP-level deferred tax** (LLP tax-transparent); cleaner accounts presentation vs LtdCo Section 29 deferred-tax overhead.
+- **§11.C.Z.10 Post-ECCTA LLP-side operational overlay.** Cross-reference §11.B per F-1; registered email + appropriate registered office + ID verification + ACSP framework for designated members; phased rollout separate from companies-side per LLP-side SI implementation.
+
+**Do not write.** "LLP accounts are the same as company accounts" (false — SI 2008/1911 modifications apply throughout); "all members' interests are equity" (false — Section 22 substance test gates this); "members' remuneration is always appropriation" (false — automatic allocation triggers expense treatment); "audit exemption is automatic for small LLPs" (false — ≥10% members can require audit per applied s.476); "LLPs must use IFRS" (false — FRS 105 / FRS 102 commonly used); "FRS 102 fair-value gains trigger LLP-level deferred tax" (false — LLP tax-transparent, no LLP-level CT charge); "designated members are honorific" (false — director-equivalent statutory responsibility).
+
+---
+
+## 21.8 Multi-company group operation (CT group relief + SDLT group relief + dividend conduit + change-of-ownership loss restriction) — MW2 mini-lock (added 2026-05-27)
+
+**Scope.** §21.8 extends §21 (single-SPV Ltd Co + FIC operation, §21.1-§21.7) with multi-company group operation. MW2 A8 (`eligible-groups-for-group-relief-under-uk-corporation-tax`) writes against this lock; A6 marginal-relief pillar cross-references where associated-company gating overlaps with 75% group test.
+
+- **§21.8.1 CT group relief 75% test.** CTA 2010 s.131 (basic test) + s.1154 (definition of 75% subsidiary) + Sch 18 equity-holder overlay (defeats 100%-ordinary-share-capital-but-fails-economic-substance arrangements) + s.156 worldwide-group; consortium relief at ss.143-149 **limited to trading consortium-companies** (property-investment JV LtdCos do NOT qualify; developer JVs may).
+- **§21.8.2 SDLT group relief 75% test.** FA 2003 Sch 7 para 1 — **structurally similar but legally distinct** from CT 75% test; 3-year intra-group claw-back at Sch 7 para 3.
+- **§21.8.3 Dividend conduit through HoldCo.** CTA 2009 Part 9A intra-group dividend exemption (s.931A+) — small-company exemption limited; large-company exemption broader; conditions for class-of-distribution exemption.
+- **§21.8.4 Associated-company gating for marginal relief.** CTA 2010 s.18D-J post-FA 2021 — counts all **associated** companies (broader than 75% group; control test under s.450+) when allocating the £50k / £250k marginal relief thresholds. **Critical interaction:** group structuring decisions optimising group relief may dilute marginal relief thresholds across associated companies.
+- **§21.8.5 Change-of-ownership loss restriction.** CTA 2010 Part 14 — s.673 + s.674 + s.676. Operative when buying loss-making target SPVs. Pre-acquisition losses sterilised by s.673; post-acquisition losses restricted where major change in nature/conduct of trade.
+- **§21.8.6 Property-investment-vs-trading line for group purposes.** UK property businesses are typically **investment** (CTA 2009 Part 4). Consortium relief unavailable to investment JVs. Trading-investment line at CTA 2010 s.1124-1126 + ITTOIA 2005 s.5 + extensive case-law (cross-reference §28 Wave 8 trading-vs-investment cluster).
+
+**Pages anchored to this lock.** MW2: A8 (group-relief eligibility seed). Existing site: `property-company-group-relief-corporation-tax`, `sdlt-group-relief-for-corporate-landlord-portfolios`, `sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth`, `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics`. Future change-of-ownership / consortium / SSE-group-interaction picks thread here.
+
+**Do not write.** "100% ordinary share capital = automatic CT group relief" (Sch 18 overlay can disqualify); "CT and SDLT 75% tests are the same" (different regimes, different tests, different claw-back); "associated companies = 75% group" (associated-company test under s.450+ control test is broader); "consortium relief works for investment JVs" (trading-only); "intra-group dividends are always tax-free" (CTA 2009 s.931A+ class exemptions are conditional).
+
+---
+
+## 22.21 RoE trust-disclosure 2025 expansion — MW2 mini-lock (added 2026-05-27)
+
+**Scope.** §22.21 extends §11.A (ECCTA / ECTEA) and §22.16 (TRS) with the 2025 expansion of public access to trust information on the Register of Overseas Entities (RoE). Previously available only to law enforcement and legitimate-interest applicants; the 2025 expansion regulations made under ECCTA 2023 amending powers broaden access to structured-public. MW2 C18 (`public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded`) writes against this lock.
+
+- **Statutory hooks.** ECTEA 2022 ss.4 / 7 / 8 / 34; ECCTA 2023 Part 3 amending powers; LRA 2002 Sch 4A (HMLR disposition-block); MLR 2017 SI 2017/692 reg 45 / reg 76. 2025 expansion SI reference flagged for Stage 2 verification at legislation.gov.uk before commencement-tense claims.
+- **§22.21.1 Three-layer disclosure-expansion timeline.** ECTEA 2022 baseline (register existence + legitimate-interest access only) → ECCTA 2023 amendments + 1 March 2024 commencement (HMRC + LEA expansion) → 2025 expansion SI (structured-public access). Stage 2 verifies specific SI reference + commencement date at write.
+- **§22.21.2 Scope of newly-public trust information.** Trustee identity, trust name, trust type, beneficiary names or classes (exact list per SI — Stage 2 verifies).
+- **§22.21.3 Redaction architecture.** Personal safety grounds + vulnerable persons + residential addresses + DOB carve-outs preserved.
+- **§22.21.4 RoE-vs-TRS register distinction (CRITICAL).** Companies-House-administered **RoE** structured-public vs HMRC-administered **TRS** non-public. Critical for property audiences with overseas-entity ownership structures. Cross-reference §22.16 for TRS.
+- **§22.21.5 Non-application of CJEU Sovim in the UK post-Brexit.** CJEU C-37/20 + C-601/20 (Sovim) narrowed AML5 public access in EU member states. UK left EU pre-judgment; CJEU rulings don't bind UK post-Brexit. UK continues post-Brexit policy under ECCTA framework expanding (not restricting) RoE public access.
+
+**Pages anchored to this lock.** MW2: C18 (RoE trust-disclosure expansion). Cross-reference candidates: any future RoE / TRS / overseas-trust-property-holding compliance pages.
+
+**Do not write.** "RoE is private like TRS" (false — RoE is structured-public, TRS is not); "Sovim restricted UK RoE access" (false — UK left EU before Sovim; CJEU rulings don't bind UK post-Brexit); "2025 expansion is voluntary" (false — statutory, SI-controlled); "only trustees have to register" (false — RoE registers the overseas-entity not the trust per se).
+
+**CRITICAL RUN-session caveat.** SI reference must be verified against legislation.gov.uk before commencement-tense claims; use conditional framing ("the 2025 expansion regulations, once commenced, will...") if SI cannot be verified at write time.
+
+---
+
+## 29.12 VAT artificial separation — Sch 1 para 2 directions in property contexts — MW2 sub-lock (added 2026-05-27)
+
+**Scope.** §29.12 extends the §29 VAT architectural anchor cluster with anti-disaggregation mechanics under VATA 1994 Sch 1 paras 1A + 2 (single-taxable-person directions). MW2 B3 (`artificial-separation-and-vat-key-insights-from-cases`) writes against this lock; future FHL / serviced-accommodation / multi-SPV VAT pages cross-reference.
+
+- **Statutory hooks.** VATA 1994 Sch 1 para 1A (purpose of the direction power); Sch 1 para 2 (the direction power itself); Sch 1 para 1(1) registration threshold (rate-by-reference per §29.8, currently £90,000 from 1 April 2024 per Spring Budget 2024); VATA 1994 s.4 (taxable supply); s.94 (business); Sch 9 Group 1 (exempt residential lettings boundary, cross-reference §29.1); Sch 10 (option to tax, cross-reference §29.1).
+- **§29.12.1 Three-link test.** Financial + economic + organisational links — operative standard from successive FTT decisions + **HMRC VAT Notice 700/1** + VBNB / V1-28 internal guidance. Substance-over-form discipline.
+- **§29.12.2 Property-business application.** (a) FHL / short-stay accommodation post-FHL-income-tax-abolition (8 December 2023 Budget retained 20% VAT rating for short-stay accommodation; VAT registration threshold continues to bite where aggregated FHL turnover crosses); (b) serviced accommodation; (c) multi-SPV portfolio operators with parallel management LLPs (cross-reference §11.C); (d) **residential-letting carve-out** — pure exempt income outside Sch 1 para 2 reach; mixed standard-rated services pull part of the business back in.
+- **§29.12.3 Effective-date discipline.** Sch 1 para 2 directions are **prospective only** (cannot retro-impose registration on past supplies). Appeal under VATA 1994 s.83 does NOT stay the direction unless tribunal orders.
+- **§29.12.4 Leading-case map.** Stage 2 writers verify case-law citations verbatim at write per §16.36 strict gate. Sub-agent flagged candidate names in B3 brief with strict-verification gate.
+
+**Pages anchored to this lock.** MW2: B3 (artificial separation VAT seed). Cross-reference candidates: existing `landlord-vat-registration-when-required`, `togc-vat-property-letting-business`, future FHL / serviced-accommodation / multi-SPV VAT picks.
+
+**Do not write.** "HMRC can retro-tax past supplies under Sch 1 para 2" (false, prospective only); "residential lettings can never trigger Sch 1 para 2" (false where mixed standard-rated services are charged); "spouse co-ownership alone shows artificial separation" (false — financial + economic + organisational links collectively required); "HMRC gives clearance on separated structures" (no formal route — substance-over-form reviewed retrospectively).
+
+---
+
+## 33. Construction Industry Scheme (FA 2004 Part 3) — property-business context floor — MW2 extension (locked, 2026-05-27)
+
+**Scope.** New top-level §33 covering the Construction Industry Scheme — income-tax withholding regime on payments to construction subcontractors. Distinct from VAT domestic reverse charge (sibling regime; both can trigger on same payment but operate on different bases). MW2 B4 (`beginners-guide-to-cis-verification-in-the-uk`) writes against this lock; future property-developer-compliance / REIT-capex / BTL-refurb / HMO-capex pages cross-reference.
+
+- **Statutory hooks.** FA 2004 Part 3 (ss.57-77) with operative anchors at s.62 (deduction obligation), s.63 (registration for gross payment or for payment under deduction), s.64 (gross-payment registration tests), s.66 (cancellation of registration), s.69 (verification of subcontractor registration status), s.70 + ss.71-72 (returns + records). **SI 2005/2045** (Income Tax (Construction Industry Scheme) Regulations 2005) as the operational implementation.
+- **§33.1 In-scope categorisation for property businesses.** (a) **Property developers** — mainstream contractor under FA 2004 s.59(1)(k), always in scope when paying subcontractors for construction operations; (b) **property-investment companies + large landlord groups** — **deemed contractors** under FA 2004 s.59(1)(l) + Sch 11A once average annual construction-related spend crosses the **deemed-contractor £3 million rolling-12-month threshold** under FA 2021 reforms in force 6 April 2021 (rate-by-reference per §16.27; verify against current SI at write); (c) **REITs / property funds / HMO operators with capex programmes** — same deemed-contractor logic; (d) **pure-residential individual landlords (not businesses)** — OUT of scope as contractors. Stage 2 sub-agent verifies the precise individual-vs-business boundary at HMRC CIS Manual + Sch 11A wording at write per §16.35.
+- **§33.2 Verification process (FA 2004 s.69 + SI 2005/2045).** Contractor obtains subcontractor identifiers; HMRC system returns one of three statuses (gross-payment / registered-for-deduction / unregistered); HMRC issues verification reference (typically valid 2 tax years for that contractor-subcontractor relationship); contractor applies correct withholding rate.
+- **§33.3 Withholding rates.** FA 2004 s.62 + s.61(2) + SI 2005/2045 reg 6: gross-payment = 0%; registered-for-deduction = 20% of labour element; unregistered = 30% of labour element. **Materials portion excluded from deduction base** under s.61(2) + SI reg 6.
+- **§33.4 Returns + penalties.** FA 2004 s.70 + SI 2005/2045 + FA 2009 Sch 55/56: monthly **CIS300 return** required even if no payments (nil-return rule); late-filing penalty exposure on nil-returns is a common operational trap; under-deduction penalty exposure where contractor pays without verifying.
+- **§33.5 Interaction with VAT domestic reverse charge for construction.** CIS = income-tax withholding on subcontractor labour. Reverse charge = VAT-side regime where customer accounts for VAT. **Both trigger simultaneously on the same payment but operate on different bases.** Cross-reference existing `domestic-reverse-charge-construction-vat-landlords` page.
+
+**Pages anchored to this lock.** MW2: B4 (CIS verification beginner). Existing site: `domestic-reverse-charge-construction-vat-landlords` (VAT-side sibling). Future capex / refurb / property-developer-compliance / REIT-capex picks thread here.
+
+**Do not write.** "All landlords need to register for CIS" (false — pure-residential individual landlords are NOT contractors); "CIS only applies to property developers" (false — deemed-contractor threshold pulls in property-investment companies with high capex); "verification is a one-off step per subcontractor" (false — typically valid 2 tax years; re-verify when window expires); "you don't need to file CIS returns in months with no payments" (false — monthly nil-return required); "CIS deduction is on the full payment" (false — labour element only).
+
+---
+
+## 34. Landlord allowable expenses + home-office cross-tax trap — operational floor — MW2 extension (locked, 2026-05-27)
+
+**Scope.** New top-level §34 covering landlord-allowable-expenses architecture (ITTOIA 2005 s.272 imports trading rules into property businesses) and the **home-office cross-tax trap** under TCGA 1992 s.224(1) PPR business-use restriction. MW2 B5 (`claim-home-office-deduction-landlords`) writes against this lock; future motor / training / professional-fees / capital-vs-revenue deep-dives cross-reference.
+
+- **Statutory hooks.** ITTOIA 2005 s.271 (property business charge); s.271E (GAAP calculation); **s.272 (Application of trading income rules: GAAP — the operative import gateway)**; s.34 (wholly-and-exclusively, imported); s.94H (simplified expenses, imported); TCGA 1992 s.224(1) (PPR business-use restriction); ITEPA 2003 ss.316A-317 (Ltd Co employer-provided home-working allowance); CTA 2009 s.54 (Ltd Co rental-paid-to-director route).
+- **§34.1 Statutory architecture.** ITTOIA 2005 s.272 is the operative import gateway — trading-business deduction rules apply to property business GAAP calculation. HMRC PIM section anchors (Property Income Manual).
+- **§34.2 Home-office two-route choice + CGT-trap (CRITICAL).** (a) **ITTOIA s.94H simplified flat-rate** (hours-based, no exclusive-use requirement, no CGT downside); (b) **ITTOIA s.34 actual-cost apportionment** (potentially higher deduction but **exclusive-business-use characterisation triggers TCGA 1992 s.224(1) PPR restriction on disposal**). Decision-tree framing for which to choose by portfolio size + home-business-use intensity; documented mixed-use as the avoidance route.
+- **§34.3 Cross-tax discipline (LOAD-BEARING).** Where an income-tax claim characterises a fact (e.g. "this room is used exclusively for the property business"), the same characterisation flows through to CGT, IHT, and HMRC enquiry. Writers MUST surface cross-tax consequences before recommending route choices. Material consumer-protection exposure: a Stage 2 writer recommending the actual-cost route to a reader who would then lose 14% of their PPR exemption on home sale costs tens of thousands.
+- **§34.4 Ltd Co-landlord home-office mechanic.** ITEPA 2003 ss.316A-317 (employer-provided home-working allowance £6/week / £312/year) vs formal home-office rental between director and company (CTA 2009 s.54 + ITTOIA s.272 + director's individual-side ITTOIA s.272/s.94H/s.34 + TCGA s.224(1) on director's PPR). Cross-reference §21.3.
+
+**Pages anchored to this lock.** MW2: B5 (home-office deduction landlords). Existing site: `landlord-expenses-allowable-uk-2026` (pillar — back-patch candidate to add home-office CGT trap). Future motor-expenses / training-costs / professional-fees / capital-vs-revenue picks thread here.
+
+**Do not write.** "The simplified £10/month always wins" (false — actual-cost can be higher; depends on home-business-use intensity); "actual-cost apportionment doesn't affect PPR" (false — exclusive-business-use room characterisation triggers s.224(1)); "Ltd Co director can claim home-office on the corporation tax side directly without involving the director's personal tax" (false — must route through ITEPA s.316A-317 allowance OR formal rental; both have personal-side mechanics).
+
+---
+
+## 35. Payroll mechanics for property-business employers — MW2 extension (locked, 2026-05-27)
+
+**Scope.** New top-level §35 covering PAYE / NIC / Apprenticeship Levy / auto-enrolment as employer duties for property-business employers. Distinct from §3 MTD for ITSA (individual-side), §11.A ECCTA (companies-side compliance), §21 Ltd Co + FIC operational tax (CT, dividends, ER allowance edges). MW2 C1 / C5 / C7 (payroll cluster) write against this lock.
+
+- **Statutory hooks.** ITEPA 2003 (Parts 2, 3, 4, 11); SI 2003/2682 (PAYE Regulations — key regs 21, 67B, 67E, 67G, 73); SSCBA 1992 Part 1 (NIC — primary + secondary Class 1, Class 1A on BIK, Class 1B on PSAs); FA 2016 ss.99-121 (Apprenticeship Levy); Pensions Act 2008 (auto-enrolment).
+- **§35.1 Operative 2026/27 rate stack.** PT, ST, UEL, EA £10,500, Apprenticeship Levy £15k allowance, AE 8% total. **Rates by-reference per §16.27** — sessions verify at write time against current HMRC publications, not against this lock.
+- **§35.2 Property-business specifics.** (a) **Employment Allowance single-director bar** — LtdCo BTL with sole director-shareholder doesn't qualify; (b) **Apprenticeship Levy connected-employer aggregation** under FA 2016 s.101 for portfolio operators with multiple SPVs — the £3m payroll threshold + £15k allowance is shared across associated employers; (c) **BIK touchpoints for landlord-employers** — employer-provided live-in accommodation for property managers per ITEPA 2003 ss.97-113; pool-vehicle vs employer-provided-car for refurb foremen; (d) **employment-vs-self-employment Ready Mixed Concrete line** for on-call refurb labour and HMO property managers; (e) **corporation-tax interaction** — salary + employer NIC + AL are CT-deductible per CTA 2009 Part 3.
+- **§35.3 IR35 / off-payroll-working interaction.** Cross-reference future IR35 lock (currently not held). Stage 2 writers verify CEST / status-determination-statement workflow at write per §16.35.
+
+**Pages anchored to this lock.** MW2: C1 (UK payroll taxes pillar) / C5 (payroll reporting regulations) / C7 (running payroll effectively). Future IR35 / employment-status / Ltd Co landlord PAYE picks thread here.
+
+**Do not write.** "All LtdCos get the Employment Allowance" (single-director bar excludes BTL SPVs); "Apprenticeship Levy starts at £3m for each company" (connected-employer aggregation under s.101); "PAYE registration is automatic" (must be applied for before first payday); "RTI annual P35 is required" (P35 framework superseded by RTI from 2013/14).
+
+---
+
+# MW2 Stage 1b sign-off (2026-05-27)
+
+**Locks added.** §11.B (ECCTA Part 2 LP reforms) / §11.C (Partnership statutory architecture) + §11.C.X (salaried-member) + §11.C.Y (mixed-membership) + §11.C.Z (LLP accounts) / §21.8 (multi-company group operation) / §22.21 (RoE trust-disclosure 2025 expansion) / §29.12 (VAT artificial separation) / §33 (CIS property-context floor) / §34 (landlord allowable expenses + home-office CGT trap) / §35 (payroll for property-business employers). 11 mini-locks closing 11 of 12 HP-extension flag candidates raised across MW2 Stage 1 (F-1, F-2, F-3, F-4, F-5, F-6, F-50, F-51, F-52, F-100, F-106). F-101 was info-only (Wave 2 A10 s.117 erratum already self-corrected at A10 write time, no lock needed).
+
+**A19 SSE redirect-vs-proceed decision (DEFERRED).** A19 `substantial-shareholding-exemption-sse` flagged HIGH CANNIBAL risk with shipped `substantial-shareholding-exemption-property-companies` (2026-05-22). Carved by sub-agent as "deeper statutory-mechanics reference layer" but the differentiation may not be operationally sustainable. **Decision deferred to Stage 2 dispatch:** if Stage 2 sub-agent confirms the deeper-layer carve survives full statutory expansion, proceed; if not, REDIRECT the A19 slug to the existing comprehensive page (the slug retains generic-search-term capture funnelling).
+
+**Stage 2 unlocked.** Sessions can now dispatch Stage 2 brief extensions for all 60 MW2 picks via `./scripts/rolling-orchestrator.ps1 -Wave 2 -Phase stage2 -Lane {a,b,c}`. Stage 2 writers thread to the locks above where applicable; per-write §16.35 statute verification still required for all figures (rates, thresholds, deadlines change by Budget).
