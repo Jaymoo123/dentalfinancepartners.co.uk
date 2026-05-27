@@ -253,6 +253,30 @@ The correct framing is the **three-section composite**: s.131 (group condition) 
 
 ---
 
+## F-9 — BRIEF_DRIFT — HMRC PM276000 is CIS guidance, NOT salaried-member rules (salaried-member guidance sits at PM250000+)
+
+**Raised by:** M2-A-B2 Stage 2 sub-agent (2026-05-27) via the A11 `hmrcs-new-guidelines-for-llps-raise-concerns` brief WebFetch-verification of `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm276000` and `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm250000`.
+**Bucket:** A (Property partnership / LLP — LLP policy-update sub-regime).
+**Touched picks:** A11 `hmrcs-new-guidelines-for-llps-raise-concerns` (this batch — Stage 1 seed corrected in-place at Stage 2); F-4 (already raised) — text references "PM276000+"; A10 hybrid-LLP (this batch — cross-references same HMRC manual content); future Bucket A LLP picks (`llp-accounts`, `llp-and-taxation-benefits`).
+
+**Issue.** Stage 1 seed for A11 (and F-4 flag text) cited "HMRC Partnership Manual PM276000-PM277000 series — salaried member rules guidance" as the operative HMRC anchor for the post-BlueCrest narrowing. **VERIFIED 2026-05-27 against gov.uk: PM276000 is HMRC's Construction Industry Scheme (CIS) guidance for partnership subcontractors, NOT salaried-member rules.** The correct entry point is PM250000.
+
+- **Verified `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm276000`** (2026-05-27): page heading "PM276000 - Construction Industry Scheme (CIS)"; content addresses tax-deduction requirements in construction contracts; partnership sub-contractor form CIS304 mechanics; business / turnover / compliance tests for gross-payment status. **NO salaried-member content.**
+- **Verified `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm250000`** (2026-05-27): page heading "PM250000 - Salaried member rules: contents"; index lists nine operative sub-pages: PM251000 (Salaried member guidance); PM253000 (Who can be a salaried member?); PM254000 (Tests to use); PM255000 (Condition A — disguised salary); **PM256000 (Condition B — significant influence; LOAD-BEARING for BlueCrest narrowing — 12 sub-sub-pages PM256100+)**; PM258000 (Condition C — contributions); PM259000 (Anti-avoidance); PM260000 (Implementation); PM261000 (Global structures).
+- **Verified `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm256000`** (2026-05-27): page heading "PM256000 - Condition B - significant influence"; index lists 12 sub-sub-pages (PM256100+) covering LLP agreements, types of influence, FCA functions, hierarchies, delegated powers, indirect influence, group structures, change-in-circumstances. RUN session WebFetches the PM256100-series at write time for HMRC's verbatim Condition B reading.
+
+**Consolidation with F-4.** F-4 (already raised this batch) proposes a §11.C.X "Salaried member rules + post-BlueCrest HMRC guidance" sub-section under the F-2-proposed §11.C partnership architecture mini-lock. The §11.C.X.3 placeholder bullet references "HMRC PM276000+ updated 2025 guidance". F-9 surfaces that the §11.C.X.3 framing must change to "HMRC PM250000+ series (Salaried member rules: contents; PM256000 Condition B + PM259000 anti-avoidance load-bearing for post-BlueCrest narrowing)". Fold the PM250000+ correction into the §11.C.X lock when conductor sign-off on F-4 proceeds. No standalone HP-extension required beyond F-4 incorporating the PM250000+ correction.
+
+**Cross-pick impact.** Pick 4 A10 hybrid-LLP (this batch) references "HMRC PM236500+" for mixed-membership rules guidance — a SEPARATE PM range; Stage 2 verifies the mixed-membership PM range when extending pick 4. F-9 narrowly addresses the salaried-member PM-range mis-attribution; if the hybrid-LLP brief shows a parallel PM-range drift, sub-agent raises F-10 at that pick's Stage 2.
+
+**How to apply.** Stage 2 extended A11 brief in-place to: (a) note the §16.40 drift catch verbatim in the Statutory anchor block with WebFetched evidence URLs + date; (b) restructure the "Primary (HMRC guidance update)" anchor bullet to cite PM250000+ as the correct entry-point with the verified sub-page tree; (c) include in the do-not-write GREP discipline the new pattern "HMRC PM276000 covers salaried-member rules" (FALSE); (d) extend the §11.C.X.3 placeholder lock in F-4 to explicitly name PM250000+ and the PM256000 + PM259000 load-bearing sub-pages. Stage 1b reviewer / wave-close manager should consider adding the PM250000+ correct anchor map to the §11.C.X lock for use by future LLP-touching picks.
+
+**§16.40 lesson confirmed (third instance this wave).** Stage 2 statutory-citation cross-check gate (§16.36 baked into dispatch prompt) caught its third HMRC manual / statutory mis-attribution drift in this batch (F-7 ss.464C/D omission; F-8 s.131 vs s.152; F-9 PM276000 vs PM250000+). The pattern is robust: per-write WebFetch verification per §16.35 catches HMRC manual range mis-attribution drift that Stage 1 environment WebFetch couldn't reach.
+
+**Severity.** HIGH — the load-bearing HMRC operative guidance anchor was mis-attributed in the Stage 1 seed; the page hinges on what HMRC has said in the updated guidance, and pointing readers at PM276000 (CIS) instead of PM250000+ (salaried-member rules) would have been a substantive reader-protection failure. Stage 2 in-place correction preserves the analytic content; no shipped pages affected.
+
+---
+
 ## F-50 — HOUSE_POSITION_EXTENSION — VAT artificial separation (Sch 1 para 2 directions) property-context floor
 
 **Raised by:** M2-B-B1 sub-agent (Stage 1, 2026-05-26).
