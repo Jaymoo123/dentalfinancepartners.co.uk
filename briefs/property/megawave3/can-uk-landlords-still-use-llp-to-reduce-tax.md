@@ -70,10 +70,185 @@ This page reverses that with an honest layered answer: **YES, in four narrow sce
 - HMRC manuals + government anchors to cite: PM (Partnership Manual) cluster as above; PIM1000+ (Property Income Manual); SDLTM33000+ (SDLT partnership Sch 15 mechanics); CG70000+ (Capital Gains Manual — partnerships); HMRC SP D12 (CGT statement of practice on partnerships); legislation.gov.uk for s.272A, s.863A-G, s.850C-E, s.59A TCGA 1992, FA 2003 Sch 15 paras 9-13, ITTOIA 2005 ss.620-628 verbatim verification.
 - Case-law to ground: ***BlueCrest Capital Management v HMRC* [2024] UKSC 33** (Condition B significant-influence narrowing); ***Pawson v HMRC* [2013] UKUT 050 (TCC)** (BPR investment line — cross-reference, IHT-side test not the tax-side test); *Marson v Morton* [1986] 1 WLR 1343 (badges of trade — investment-vs-trading); *Henderson v Karmel's Executor* (older partnership existence case); any post-FA-2014 mixed-membership FTT cases (Stage 2 verifies at write — limited published case-law as the regime is operationally focused on assessment rather than litigation).
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — VERIFIED URLs
 
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes per memory `feedback_no_em_dashes`); LeadForm footer; aside-styled inline CTAs after the headline-trap opening + after the Scenario A-D walk-through + after the Scenario X-Z walk-through + at close; semantic HTML; FAQs 10-12 entries (decision-guide angled: "does the LLP wrapper avoid Section 24?" "can I use my LtdCo as a corporate member of an LLP to capture excess profits?" "what is the minimum capital contribution to escape the salaried-member rules?" "does Pawson BPR work for an LLP property portfolio?" "can I put my joint-ownership property into an LLP without paying SDLT?" "are LLP accounts cheaper than LtdCo accounts?" "does the LLP need to file with Companies House?"); FAQPage JSON-LD; rate-by-reference per §16.27; six-verification gate; §16.35 per-write statute re-verification at write time. Internal-link discipline: forward-link to §11.C cluster + §4 + §1.A + §21 + §22.1 + §22.9/10 + §11.A pages. NO em-dashes (memory feedback).]
+### Authority URLs (RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/2000/12/contents`** — Limited Liability Partnerships Act 2000 (LLP statutory architecture).
+- **`https://www.legislation.gov.uk/uksi/2008/1911/contents`** — SI 2008/1911 (Limited Liability Partnerships (Application of Companies Act 2006) Regulations 2009 — applies CA 2006 Parts 15 + 16 with modifications).
+- **`https://www.legislation.gov.uk/ukpga/2005/5/section/272A`** — ITTOIA 2005 s.272A (Section 24 — applies at member level on member's share of partnership rental profit; the headline-trap anchor).
+- **`https://www.legislation.gov.uk/ukpga/2005/5/section/863`** — ITTOIA 2005 s.863 (LLP treated as a partnership for income tax).
+- **`https://www.legislation.gov.uk/ukpga/2007/3/section/850C`** — ITA 2007 s.850C (mixed-membership regime — corporate member excess profit reallocation).
+- **`https://www.legislation.gov.uk/ukpga/2007/3/section/863A`** — ITA 2007 s.863A (salaried-member regime — three conjunctive conditions).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/59`** — TCGA 1992 s.59 (general partnership fractional-interest framework).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/59A`** — TCGA 1992 s.59A (LLP-specific CGT treatment — LLP property held by members directly).
+- **`https://www.legislation.gov.uk/ukpga/2003/14/schedule/15`** — FA 2003 Sch 15 (partnership SDLT regime including para 10 SLP relief + para 17A 3-year claw-back).
+- **`https://www.legislation.gov.uk/ukpga/2005/5/section/620`** — ITTOIA 2005 s.620 (settlements legislation — Scenario A family-splitting overlay).
+- **`https://www.legislation.gov.uk/ukpga/2023/56/contents`** — Economic Crime and Corporate Transparency Act 2023 (ECCTA — Part 1 Companies House reforms + Part 3 ACSP framework; LLP-side ID verification rollout).
+- **`https://www.legislation.gov.uk/ukpga/1890/39/contents`** — Partnership Act 1890 (PA 1890 s.1 four-cumulative-tests + s.2(1) negative — joint-ownership ≠ partnership).
+- **`https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm236500`** — HMRC PM236500-PM238000 (mixed-membership operative guidance).
+- **`https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm276000`** — HMRC PM276000+ (salaried-member updated 2025 guidance — §11.C.X.3).
+- **`https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005`** — HMRC BIM72005-72165 (partnership identification).
+- **`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030`** — HMRC PIM1030 (jointly owned property — partnership-vs-co-ownership distinction).
+- **`https://www.bailii.org/uk/cases/UKSC/2024/33.html`** — *BlueCrest Capital Management v HMRC* [2024] UKSC 33 (Condition B significant-influence narrowing — §11.C.X.2).
+- **`https://www.bailii.org/uk/cases/UKUT/TCC/2013/050.html`** — *Pawson v HMRC* [2013] UKUT 050 (TCC) (BPR investment line; IHT-side cross-reference for §22.1).
+
+### Competitor URLs
+
+`<!-- competitor section: session-side WebSearch at write time per §16.31 Wave 8/9 5/5 dead-rate pattern + §16.43 confirmation — Stage 2 did not invent firm URLs; RUN session sources fresh. Recommended queries: "LLP for landlord tax planning UK", "hybrid LLP Section 24 landlord", "BlueCrest 2024 supreme court salaried member", "mixed membership LLP property", "LLP versus Ltd Co landlord post 2024", "Pawson BPR LLP property investment", "partnership SDLT incorporation SLP relief 3 year clawback". Aim 4-6 specialist property tax firm "LLP for landlord" pages (note many describe the pre-FA-2014 picture — flag for differentiation); ICAEW Tax Faculty + CIOT commentary on mixed-membership + salaried-member; STEP commentary on LLP property structures; LandlordZONE / Property Tribes forum threads characterising the common landlord misunderstandings. -->`
+
+### HMRC + supervisor manual anchors
+
+- HMRC Partnership Manual PM236500-PM238000 (mixed-membership).
+- HMRC PM276000+ (salaried-member updated 2025 guidance).
+- HMRC BIM72005-72165 (partnership identification).
+- HMRC PIM1000+ (Property Income Manual).
+- HMRC PIM1030 (jointly owned property — partnership-vs-co-ownership distinction).
+- HMRC SDLTM33000+ (SDLT partnership Sch 15 mechanics including para 10 SLP relief).
+- HMRC CG70000+ (Capital Gains Manual — partnerships).
+- HMRC SP D12 (CGT statement of practice on partnerships).
+- HMRC IHTM (IHT Manual) — IHTM25000+ (BPR — for Pawson cross-reference).
+- Companies House LLP / ECCTA ID verification rollout guidance.
+
+### Case-law (verify each at BAILII at write time per §16.35)
+
+- ***BlueCrest Capital Management v HMRC* [2024] UKSC 33** — Condition B "significant influence over the affairs of the partnership" does NOT require whole-LLP influence; influence over a significant part can be enough. NARROWED the FTT/UT reading. Load-bearing for Scenario Y (salaried-member). §11.C.X.2 pre-locked.
+- ***Pawson v HMRC* [2013] UKUT 050 (TCC)** — BPR investment line; ordinary BTL letting held INVESTMENT for BPR purposes. Cross-reference for Scenario B + Scenario C limits + the IHT-side test sitting on the ACTIVITY not the entity wrapper. §22.1 pre-locked.
+- *Marson v Morton* [1986] 1 WLR 1343 — badges of trade (cross-reference for partnership-trading-vs-investment characterisation).
+- *Henderson v Karmel's Executor* and similar older partnership-existence case-law — for the PA 1890 s.1 four-cumulative-tests + s.2(1) negative.
+- Any post-FA-2014 mixed-membership FTT cases — RUN session verifies at tribunal databases at write; limited published case-law as the regime is operationally focused on assessment rather than litigation.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — The headline trap: LLP wrapper does NOT escape Section 24 at the member level
+
+Mr Patel and Mrs Patel form a family LLP holding 4 BTL properties. Total annual rental income £80,000; total finance costs £30,000. Mr Patel is higher-rate (40%); Mrs Patel is basic-rate (20%). Profit-share 50:50.
+
+- **Common landlord misframing:** "We set up an LLP so we can deduct mortgage interest like the pre-2017 rules — the LLP is treated as a partnership for tax, partnerships are tax-transparent, so Section 24 doesn't apply to the LLP itself."
+- **The reality:** ITTOIA 2005 s.272A finance cost restriction applies to the INDIVIDUAL MEMBER'S share of partnership rental profit. The LLP itself does not pay income tax (s.863 LLP-as-partnership). The members do, on their share. The s.272A restriction follows the member.
+- **Mr Patel's share (50%):** rental income £40,000 (taxable in full at marginal); finance cost share £15,000 (NOT deductible; gets 20% basic-rate credit of £3,000). Mr Patel's marginal-rate exposure is £40,000 × 40% - £3,000 = £13,000 net tax.
+- **Mrs Patel's share (50%):** rental income £40,000 (taxable in full at marginal); finance cost share £15,000 (Section 24 applies BUT at basic rate the 20% credit fully offsets the absence of deduction). Mrs Patel's net tax: £40,000 × 20% - £3,000 = £5,000.
+- **Conclusion:** the LLP wrapper has shifted £40,000 of income to Mrs Patel's basic-rate band (income-splitting benefit) BUT Section 24 still applies on Mr Patel's share at his marginal rate. The LLP did NOT escape Section 24; it produced an INCOME-SPLITTING benefit which is a different (and narrower) benefit. The headline misframing of "LLP solves Section 24" is wrong.
+
+### Example 2 — Scenario A working: family income-splitting between adult genuine partners
+
+Mr and Mrs Singh + their adult daughter Priya form an LLP holding a 6-property BTL portfolio (combined value £2.5m; rental income £150,000/year; finance costs £40,000). All three are GENUINE partners (each contributing capital; each materially involved in management decisions; each economically exposed). Profit-share 40:40:20 reflecting capital contributions.
+
+- **Capital contribution test (Scenario A gate):** Mr Singh £1m (40%); Mrs Singh £1m (40%); Priya £500k (20%). Capital contribution proportional to profit-share.
+- **Management decision test:** all three sign partnership agreement; quarterly partnership meetings documented; each member has decision rights on acquisitions over £100k. Partnership exists as genuine business per PA 1890 s.1 four-cumulative-tests.
+- **Tax outcome (each member's share):**
+  - Mr Singh (40%): rental income £60,000; less finance share £16,000 NOT deductible; net taxable £60,000; income tax at marginal (higher) = £24,000 (less basic-rate credit £3,200); net tax £20,800.
+  - Mrs Singh (40%): rental income £60,000; same Section 24 treatment; net taxable £60,000; income tax at marginal (higher if combined with other income) or basic (if no other income).
+  - Priya (20%): rental income £30,000; same Section 24 treatment; if Priya has no other income, after Personal Allowance + basic-rate band she pays significantly less than 40%.
+- **Settlements legislation watchpoint (Scenario A trap):** if Priya's economic substance is questioned (e.g., her capital contribution was funded by a gift from her parents + her decision-rights are nominal), HMRC can apply ITTOIA 2005 s.629 to attribute her share back to the parents. The structure must withstand the settlements test on its substance, not just its paperwork. §22.9 + §22.10 pre-locked.
+- **Operative point:** the LLP works HERE because (a) Section 24 still applies but income-splitting moves £30,000 to Priya's lower bands; (b) the partnership is GENUINE under PA 1890 s.1; (c) the settlements legislation is cleared because each member's contribution is independent and substantial.
+
+### Example 3 — Scenario X failing: founder-LtdCo hybrid LLP catches mixed-membership regime
+
+Patel Holdings Ltd is wholly owned by Mr Patel. The LLP comprises Mr Patel (individual member) + Patel Holdings Ltd (corporate member). Profit-share 5:95 (95% to corporate); paper purpose is to capture "excess" rental profits at corporation tax 25% rather than Mr Patel's individual marginal 40%.
+
+- **Mixed-membership regime test (ITA 2007 ss.850C-E):**
+  - Step (i) — corporate member allocated profit share: YES (Patel Holdings Ltd allocated 95%).
+  - Step (ii) — "excess" test (corporate's share > arms-length commercial entitlement): YES (arms-length share for a passive corporate member with no independent contribution would be 0-5%, not 95%).
+  - Step (iii) — "power to enjoy" test: YES (Mr Patel as sole shareholder of Patel Holdings Ltd has direct power-to-enjoy over the corporate's allocated profits via shareholding).
+- **Outcome:** All three conditions met → the "excess" profits are REALLOCATED back to Mr Patel at his marginal rate. The mixed-membership regime fires; the income-splitting attraction is SYSTEMATICALLY DISMANTLED.
+- **Net position:** Mr Patel pays income tax at 40% on the reallocated excess; Patel Holdings Ltd's CT-side tax is given as a credit but does not fully neutralise the reallocation; the overall tax outcome is WORSE than if Mr Patel had held the properties directly.
+- **Operative point:** the §11.C.Y do-not-write list explicitly bars "Section 24 is solved by a hybrid LLP" + "double-tax credit makes reallocation neutral". This is precisely why.
+
+### Example 4 — Scenario D working: SDLT-on-incorporation route into LLP using FA 2003 Sch 15 para 10 SLP relief
+
+Mr Patel has held a single BTL property worth £400,000 personally for 5 years. He restructures by transferring the property into a single-member LLP (himself as the only member with an interest in the LLP) under the partnership-SDLT regime.
+
+- **FA 2003 Sch 15 para 10 SLP calculation:** the sum-of-lower-proportions relief reduces the SDLT chargeable consideration to NIL where the partner contributing the land is the only partner with an interest in the LLP at the transfer.
+- **Outcome at transfer:** SDLT charge NIL (subject to the para 17A 3-year claw-back window).
+- **Trap (para 17A 3-year claw-back):** if Mr Patel brings in a new partner (e.g., Mrs Patel) within 3 years of the transfer, the SDLT charge is RETROSPECTIVELY triggered on the proportion of the LLP interest now held by the new partner. The "no SDLT on incorporation" outcome is only durable if Mr Patel does not bring in new partners within the 3-year claw-back window.
+- **Operative point:** the route works for SDLT mitigation on the transfer of an individually-held property into an LLP form, but the durability depends on the post-transfer structure remaining stable for 3 years. Sessions cross-link to §1.A pages for the SLP step-by-step rather than re-walking.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: Does the LLP wrapper avoid Section 24?**
+   A: No. ITTOIA 2005 s.272A finance cost restriction applies to the INDIVIDUAL MEMBER'S share of partnership rental profit. The LLP itself does not pay income tax (s.863 LLP-as-partnership); the members do, on their share. The s.272A restriction follows the member. The common misframing in landlord forums that "an LLP fixes Section 24" is wrong. The LLP can produce INCOME-SPLITTING benefits across multiple members' personal allowances and lower bands, which is a different and narrower benefit.
+
+2. **Q: Can I use my Ltd Co as a corporate member of an LLP to capture excess profits at CT rates?**
+   A: Generally no — the mixed-membership regime (ITA 2007 ss.850C-E) is precisely targeted at this structure. Three conditions: (i) corporate member allocated profit share; (ii) excess over arms-length commercial entitlement; (iii) individual member has power-to-enjoy via shareholding. If you own the corporate member, you fail (iii) automatically; if the corporate's share exceeds arms-length you fail (ii). The "excess" profits are reallocated back to you at your marginal rate. The structure typically produces a WORSE tax outcome than holding the properties directly.
+
+3. **Q: What is the minimum capital contribution to escape the salaried-member rules?**
+   A: ITA 2007 s.863A Condition C requires capital contribution to be LESS THAN 25% of disguised salary for the salaried-member rules to apply. So contributing 25% OR MORE of disguised salary takes the member OUT of the regime via Condition C safe harbour. **WATCH:** the common misframing is to invert this — the §11.C.X do-not-write list bars "Condition C requires 25% capital" (INVERTED). The rule is <25% IN, ≥25% OUT. For practical purposes, members contributing substantial capital (≥25% of expected partnership remuneration) are protected via Condition C; smaller contributions must clear Condition B (significant influence — narrowed post-*BlueCrest* 2024) instead.
+
+4. **Q: Does Pawson BPR work for an LLP property portfolio?**
+   A: No. The Pawson investment-vs-trading line (*Pawson v HMRC* [2013] UKUT 050 (TCC)) sits on the ACTIVITY, not the entity wrapper. Ordinary BTL letting is INVESTMENT for BPR purposes regardless of whether the letting is via individual ownership, partnership, LLP, or company. BPR is restricted to genuine TRADE businesses (FHL-with-substantial-services; property-development-trade). The LLP wrapper does NOT convert investment activity to trade activity. The §11.C.Y do-not-write list bars "use an LLP for BPR".
+
+5. **Q: Can I put my joint-ownership property into an LLP without paying SDLT?**
+   A: Potentially yes, using FA 2003 Sch 15 para 10 sum-of-lower-proportions relief. But the relief works cleanly only where the contributing partner is the ONLY partner with an interest in the LLP at the transfer. If multiple partners contribute or are brought in, the SLP calculation produces a partial SDLT charge. PLUS: the para 17A 3-year claw-back fires if new partners are brought in within 3 years of the original transfer. The route is fact-specific; sessions cross-link to §1.A pages for the SLP step-by-step.
+
+6. **Q: Are LLP accounts cheaper than Ltd Co accounts?**
+   A: Generally NO — LLP accounts carry the same accounting + filing burden as a Ltd Co. SI 2008/1911 applies CA 2006 Parts 15 + 16 to LLPs with modifications; LLP SORP applies; designated members have director-equivalent responsibility; SA800 partnership return is mandatory + the members' personal returns. Audit thresholds apply (currently £10.2m turnover / £5.1m balance sheet / 50 employees — Stage 2 verifies post-uplift wording at write). Companies House filing window 9 months. Cost-stack is comparable to Ltd Co; the operational complexity may be HIGHER because of the partnership-return + member-return interaction.
+
+7. **Q: Does the LLP need to file with Companies House?**
+   A: Yes. LLPs are registered at Companies House (LLPA 2000 ss.1-19); annual confirmation statement + annual accounts filed at Companies House. Post-ECCTA 2023 + LLP-side ID verification rollout, designated members face fresh ID verification obligations on engagement + change. §11.A + §11.A.1 pre-locked. RUN session verifies current commencement state at Companies House publications at write per §16.27.
+
+8. **Q: What is the difference between joint ownership and a partnership for HMRC purposes?**
+   A: Critical: joint ownership of property is NOT a partnership by default. PA 1890 s.2(1) negative explicitly states "joint property / co-ownership = partnership" is WRONG unless the four-cumulative-tests under PA 1890 s.1 are met. The four tests are: (i) carrying on a business; (ii) in common; (iii) with a view to profit; (iv) for the partners' joint benefit. Many landlords holding property jointly with a spouse or family member assume they are a partnership; they typically are NOT. HMRC PIM1030 covers the partnership-vs-co-ownership distinction. The fall-back is co-ownership taxed under the underlying ownership form (each owner's share included in their personal SA return; no SA800 needed).
+
+9. **Q: What did BlueCrest 2024 actually change?**
+   A: ***BlueCrest Capital Management v HMRC* [2024] UKSC 33** narrowed the FTT/UT reading of Condition B "significant influence over the affairs of the partnership" in the salaried-member regime (ITA 2007 s.863A). Pre-BlueCrest, the FTT/UT had read Condition B to require whole-LLP influence. Post-BlueCrest, the Supreme Court held that influence over a SIGNIFICANT PART of the LLP's affairs can be enough. Matrix-silo'd member roles (e.g., a senior trader managing only a specific desk's portfolio) may NOT clear Condition B safe harbour and may be reclassified as salaried members. LLPs reviewing member structures must re-test against the narrowed Condition B reading post-BlueCrest. §11.C.X.2 pre-locked.
+
+10. **Q: Can my LLP avoid the FA 2026 salaried-member NIC increase?**
+    A: No — if salaried-member rules apply to a member, that member's remuneration is treated as employment income for NIC purposes, attracting (typically) 15% secondary Class 1 NIC from 6 April 2026 per FA 2026 (RUN verifies the rate at write per §16.27). The route OUT of NIC exposure is to ensure the member clears the salaried-member safe-harbour: ≥25% capital contribution (Condition C) is the cleanest test; alternatively significant influence (Condition B per BlueCrest 2024) but the post-BlueCrest narrowing makes Condition B harder to demonstrate for matrix-silo'd roles. The LLP wrapper itself does not escape salaried-member NIC exposure.
+
+11. **Q: Should I use an LLP or a Ltd Co for my BTL portfolio?**
+    A: Case-by-case calculation, no default answer. The LLP works in Scenario A (genuine family income-splitting), Scenario B (non-tax reasons like asset protection / partnership flexibility), Scenario C (residual hybrid-LLP where corporate member is genuinely external + no power-to-enjoy link), and Scenario D (SDLT-on-incorporation via SLP relief with stable post-transfer structure). The Ltd Co works where Section 24 is the central pain point and the corporate-side cost stack (CT + extraction tax + accountancy) is acceptable. Talk to us about your specific facts; the decision is fact-specific and durable mistakes are expensive to reverse.
+
+12. **Q: What about LLP property in Wales or Scotland — does the analysis differ?**
+    A: The income-tax + Section 24 analysis is UK-wide uniform; the salaried-member + mixed-membership rules apply UK-wide; the SDLT-on-incorporation route into LLP is England-specific (FA 2003 Sch 15 para 10). For Welsh property, the LTT regime applies with its own partnership-LTT mechanics under LTTADA 2017. For Scottish property, the LBTT regime applies with its own partnership-LBTT mechanics. §23 architecture pre-locked. If you have cross-border LLP property scenarios, the analysis splits at the stamp-duty-equivalent step.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy (per `feedback_no_em_dashes` memory).
+- **Specific over generic.** Named statute (LLPA 2000; SI 2008/1911; ITTOIA 2005 s.272A + s.863; ITA 2007 ss.850C-E + ss.863A-G; TCGA 1992 s.59 + s.59A; FA 2003 Sch 15 paras 9-13 + para 17A; ITTOIA 2005 ss.620-628 + s.629; ECCTA 2023 Part 1 + Part 3; PA 1890 s.1 + s.2(1)). Worked-example personas only; no real firm or named LLP examples.
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Inline aside-styled CTAs at four conversion moments: (i) after the headline-trap opening (Section 24 misframing correction); (ii) after the Scenario A-D walk-through (where the LLP works); (iii) after the Scenario X-Z walk-through (where the LLP does not work); (iv) at close after the decision framework.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 10-12 entries (decision-guide angled per the seed).
+- **Body word count target:** 2,400-2,800.
+- **Anti-templating:** open with the layered honest framing from the seed counter-pattern ("If you have read that an LLP is the answer to Section 24, the position is more complicated than that. Here is when an LLP still works for a UK landlord, when it does not, and the headline trap most articles miss."). Do NOT open with "What is an LLP" generic explainer or "5 benefits of LLPs" sales-led pitch.
+- **Rate-by-reference per §16.27** for CT main rate (25% from 1 April 2023); income-tax bands + Personal Allowance taper; FA 2026 salaried-member NIC at 15% from 6 April 2026; CGT residential 18%/24% from 30 October 2024; LLP SORP audit thresholds (£10.2m turnover / £5.1m balance sheet / 50 employees — Stage 2 verifies post-uplift wording at write).
+- **Six-verification gate per §9.**
+- **§16.35 per-write statute re-verification at write time** — every LLPA / SI 2008/1911 / ITTOIA / ITA / TCGA / FA 2003 Sch 15 / ECCTA / PA 1890 cite verified at legislation.gov.uk at write. BlueCrest 2024 UKSC 33 holding verified at BAILII. Pawson 2013 UKUT 050 verified at BAILII. HMRC PM236500-PM238000 + PM276000+ + BIM72005-72165 + PIM1030 + SDLTM33000+ verified at HMRC manuals at write. ECCTA LLP-side ID verification commencement state verified at Companies House publications at write. LLP SORP 2025 reference verified at write.
+- **Do-not-write GREP discipline (RUN session greps draft):** "Section 24 is solved by a hybrid LLP" (FALSE — §11.C.Y do-not-write); "Section 24 doesn't apply to LLPs" (FALSE — applies at member level via s.272A + s.863 LLP-as-partnership); "Condition C requires 25% capital" (FALSE — INVERTED; <25% IN, ≥25% OUT); "salaried-member rules don't apply to property LLPs" (FALSE — apply to all LLP business types); "double-tax credit makes reallocation neutral" (FALSE — §11.C.Y do-not-write); "use an LLP for BPR" (FALSE — Pawson sits on activity not entity); "joint ownership of property automatically creates a partnership" (FALSE — PA 1890 s.2(1) negative); "incorporation relief s.162 applies to LLP" (FALSE — s.162 is for going-concern transfer to a COMPANY, not LLP); "LLP accounts are cheaper than Ltd Co" (FALSE — comparable burden); "BlueCrest widened Condition B safe harbour" (FALSE — narrowed it).
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §11.C cluster + §11.C.X salaried-member + §11.C.Y mixed-membership + §11.C.Z LLP accounts; §4 Section 24; §1.A partnership SDLT Sch 15; §22.1 Pawson BPR; §22.9 + §22.10 settlements; §21 Ltd Co cluster; §11.A ECCTA; §23 devolved jurisdictions).
+2. Claim this page in `megawave3_page_tracker.md`.
+3. Read this brief end-to-end.
+4. Fetch + read authority URLs above + WebSearch for current specialist firm "LLP for landlord" pages (note pre-FA-2014 pictures to differentiate against; post-BlueCrest 2024 reframing to align with).
+5. Read closest-existing pages: MW2 A10 hybrid-LLP statutory deep-dive; MW2 A11 HMRC LLP guidelines deep-dive; §11.C cluster pages; §4 Section 24 explainer pages; §1.A partnership SDLT Sch 15 pages; §22.1 Pawson BPR pages; §21 Ltd Co landlord cluster.
+6. Plan H2 / H3 outline: headline-trap open (Section 24 misframing correction) → why this page exists (the layered honest answer) → the four scenarios where LLP still works (Scenario A genuine family income-splitting; Scenario B non-tax flexibility; Scenario C residual hybrid-LLP with external corporate member; Scenario D SDLT-on-incorporation via SLP) → the three scenarios where LLP does not work (Scenario X founder-LtdCo income-splitting; Scenario Y salaried-member catch; Scenario Z paper partnership) → the LLP cost-stack (SI 2008/1911 + SORP + designated members + audit thresholds + ECCTA ID verification) → the 5-point decision framework → close.
+7. Verify factual claims per §16.35.
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit: `MegaWave 3 RUN C: can-uk-landlords-still-use-llp-to-reduce-tax`.
+15-19. Per workflow.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 1 seed committed 2026-05-27 by M3-C-B3 sub-agent. Anchors: §11.C (partnership architecture); §11.C.X (salaried-member + BlueCrest 2024); §11.C.Y (mixed-membership — DISMANTLES income-splitting); §11.C.Z (LLP accounts); §4 (Section 24 — APPLIES AT MEMBER LEVEL — headline trap); §1.A (partnership SDLT Sch 15 + SLP); §22.1 (Pawson BPR investment line); §22.9 + §22.10 (settlements legislation — Scenario A family-splitting trap); §21 (LtdCo comparison); §11.A (ECCTA + ID verification). No new HP lock — full architecture pre-locked in MW2 Stage 1b. The work is in INTEGRATION + post-FA-2014 + post-BlueCrest layered honest framing. Counter-pattern to avoid: "LLP solves Section 24" (§11.C.Y do-not-write) + "Condition C requires 25% capital" (§11.C.X do-not-write — INVERTED). Cluster-label drift flagged: queue cluster "Property accountant for cities / regions" is wrong cluster (this is an incorporation/entity-choice page). Stage 2 sub-agent verifies BlueCrest holding wording + FA 2026 salaried-member NIC rate + LLP SORP 2025 reference + ECCTA LLP-side commencement state at write per §16.27 + §16.35. Reference precedent for framing: MW2 A10 (hybrid-LLP) + A11 (HMRC LLP guidelines) seeds — this page is the landlord-decision page that forward-links to those statutory deep-dives.]
+[RUN session records work here at write time. **Stage 2 verification notes (2026-05-27):** Anchors: §11.C (partnership architecture LLPA 2000 + ITTOIA 2005 s.863 + SI 2008/1911); §11.C.X (salaried-member ITA 2007 ss.863A-G + BlueCrest 2024 UKSC 33 Condition B narrowing); §11.C.Y (mixed-membership ITA 2007 ss.850C-E — DISMANTLES income-splitting); §11.C.Z (LLP accounts + SORP + designated members + audit thresholds); §4 (Section 24 — APPLIES AT MEMBER LEVEL — headline trap correction); §1.A (partnership SDLT Sch 15 paras 9-13 + para 17A 3-year claw-back); §22.1 (Pawson BPR investment line — IHT-side test on activity not entity); §22.9 + §22.10 (settlements legislation — Scenario A family-splitting trap); §21 (Ltd Co cluster comparison); §11.A (ECCTA + ID verification); §23 (cross-jurisdictional LLP property — Welsh LTT + Scottish LBTT partnership mechanics). No new HP lock — full architecture pre-locked in MW2 Stage 1b at §11.C cluster. The work is in INTEGRATION + post-FA-2014 + post-BlueCrest layered honest framing. Counter-pattern to avoid: "LLP solves Section 24" (§11.C.Y do-not-write) + "Condition C requires 25% capital" (§11.C.X do-not-write — INVERTED) + "use an LLP for BPR" (§11.C.Y do-not-write — Pawson sits on activity). **Cluster-label drift flagged:** queue cluster "Property accountant for cities / regions" is wrong cluster (this is an incorporation/entity-choice page; recommend re-cluster to "Incorporation and company structures" — parallel to the C10 bed-and-breakfasting cluster-drift noted in M3-C-B2 D-6). Stage 2 sub-agent verifies BlueCrest holding wording + FA 2026 salaried-member NIC rate + LLP SORP 2025 reference + ECCTA LLP-side commencement state at write per §16.27 + §16.35. Reference precedent for framing: MW2 A10 (hybrid-LLP) + A11 (HMRC LLP guidelines) seeds — this page is the landlord-decision page that forward-links to those statutory deep-dives.]
+
+---
+
+## Stage 1 seed work log
+
+- **Stage 1 author:** MW3 Stage 1 Sub-Agent C on 2026-05-27.
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent C (batch M3-C-B3) on 2026-05-27.
+- **Cluster anchor:** §11.C (partnership architecture); §11.C.X (salaried-member + *BlueCrest* 2024 UKSC 33); §11.C.Y (mixed-membership — dismantles income-splitting); §11.C.Z (LLP accounts); §4 (Section 24 at member level); §1.A (partnership SDLT Sch 15); §22.1 (Pawson BPR investment line); §22.9 + §22.10 (settlements legislation); §21 (Ltd Co cluster); §11.A (ECCTA + ID verification); §23 (devolved jurisdictions cross-reference).
+- **HP-lock alignment:** all anchors pre-locked at MW2 Stage 1b. No new HP lock raised at Stage 1 or Stage 2.
+- **§16.36 statutory-citation cross-check (Stage 2):** LLPA 2000 + SI 2008/1911 + ITTOIA 2005 s.272A + s.863 + ITA 2007 ss.850C-E + ss.863A-G + TCGA 1992 s.59 + s.59A + FA 2003 Sch 15 paras 9-13 + para 17A + ITTOIA 2005 ss.620-628 + s.629 + ECCTA 2023 Part 1 + Part 3 + PA 1890 s.1 + s.2(1) all confirmed against §11.C cluster + §4 + §1.A + §22.1 + §22.9/10 + §11.A locks. *BlueCrest* 2024 UKSC 33 holding (Condition B narrowing — significant influence over PART can be enough) confirmed against §11.C.X.2 pre-lock. *Pawson* 2013 UKUT 050 (TCC) BPR investment line confirmed against §22.1 lock.
+- **§16.31 URL verification (Stage 2):** legislation.gov.uk anchors all confirmed live at seed time; HMRC manuals (PM236500-PM238000, PM276000+, BIM72005-72165, PIM1030, SDLTM33000+) confirmed live; BAILII case-law URLs (BlueCrest 2024 UKSC 33 + Pawson 2013 UKUT 050) confirmed at seed time. Competitor list deferred to RUN-time WebSearch with post-BlueCrest 2024 + post-FA-2014 mixed-membership filter.
+- **Cannibalisation reasoning:** MW2 A10 + A11 (hybrid-LLP + HMRC LLP guidelines) statutory deep-dives are the primary siblings — this page is COMPLEMENTARY (the landlord-decision page) not cannibalising. Sessions audit at RUN write for differentiation; if A10 / A11 cover the four-and-three scenario framing, escalate before write. Likely safe — this is the landlord-decision integration of the statutory deep-dives.
+- **Anti-templating watchpoints for RUN session:** (a) headline-trap open (Section 24 misframing correction — NOT generic "what is an LLP"); (b) the four-and-three structure (Scenarios A-D works; Scenarios X-Z fails) is the page's load-bearing differentiator — keep it intact; (c) "LLP solves Section 24" is BANNED framing — present as headline-trap to correct; (d) BlueCrest 2024 narrowing of Condition B is the most recent salaried-member development — surface explicitly; (e) the §11.C.X "Condition C requires 25% capital" inversion is one of the most common practitioner errors — surface the correct rule (<25% IN, ≥25% OUT); (f) Pawson sits on activity not entity — sessions must NOT write "use an LLP for BPR"; (g) the LLP cost-stack is HONEST not minimised — designated members + SORP + audit thresholds + ECCTA are real costs, not paperwork formality; (h) cluster-label drift flagged for manager Stage 1b re-cluster decision (administrative, not blocking).
