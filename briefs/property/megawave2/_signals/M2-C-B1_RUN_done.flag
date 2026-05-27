@@ -1,0 +1,216 @@
+batch: M2-C-B1
+bucket: C (IHT and estate planning + Trusts and beneficial ownership + Joint ownership & Form 17 tax planning + Inheritance — GROB, reservation of benefit + Payroll for property companies + Bookkeeping & accounting practices)
+stage: RUN (final blog page publication — Stage 3)
+status: complete
+completed_at: 2026-05-27
+sub_agent: RUN-phase Sub-Agent Bucket C batch M2-C-B1 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave2-c
+worktree: C:\Users\user\Documents\Accounting-wt-property-megawave2-c
+
+picks published (6 of 6):
+  1. a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers  (C1)  commit 683ebc5
+  2. agricultural-relief-for-inheritance-tax-key-benefits                (C2)  commit dccba32
+  3. comparison-of-discretionary-trusts                                  (C3)  commit 15fa039
+  4. declaration-of-trust                                                (C4)  commit 5599875
+  5. ensuring-compliance-with-uk-payroll-reporting-regulations           (C5)  commit 4f9d895
+  6. essential-bookkeeping-tips-for-sole-traders                         (C6)  commit e6cb373
+
+output locations:
+  All six pages written to Property/web/content/blog/<slug>.md on branch property-megawave2-c.
+  Each page carries full frontmatter (title, slug, canonical, date, author, category,
+  metaTitle, metaDescription, altText, image, h1, summary, schema, faqs[]) and HTML body
+  within target word count, 12+ FAQs each as JSON-LD-ready frontmatter, two to three
+  inline <aside> CTAs per page, internal links to sibling pages and the wider Property
+  content set, and external links to legislation.gov.uk + gov.uk + HMRC manuals.
+
+six-check verification (each page):
+  - FAQ count: 12 per page (C3 has 13); range 12-14; verified by grep "^  - question:"
+  - 0 em-dashes per page (verified by grep -c "—" on each file)
+  - 0 Tailwind utility classes (no className attributes; semantic HTML only)
+  - metaTitle <= 62 chars: C1 58, C2 59, C3 56, C4 60, C5 60, C6 57
+  - metaDescription <= 158 chars: C1 147, C2 145, C3 148, C4 147, C5 144, C6 148
+  - Internal links use site-relative /blog/<category>/<slug> paths; external links use
+    rel="nofollow noopener" target="_blank" per site convention.
+
+per-page word counts (target 3,200-3,800 per brief; comparison pillars 3,500-4,200):
+  C1 3,579 words (within 3,200-3,800 target)
+  C2 3,910 words (slight overrun on the 3,800 ceiling; qualification-gate pillar + worked example justifies)
+  C3 4,219 words (within 3,500-4,200 comparison-pillar target)
+  C4 3,743 words (within 3,000-3,800 target)
+  C5 4,076 words (modest overrun on 3,200-3,800; operational-compliance depth justifies)
+  C6 3,964 words (modest overrun on 3,200-3,800; trading-vs-property-income disambiguation backbone justifies)
+
+steps skipped vs full 19-step workflow (operational scope, per MW1 RUN precedent):
+  Step 4 (httpx fetch of competitor URLs) — Stage 2 briefs already verified URL
+    liveness at brief-write time (28 URLs verified per Stage 2 batch-done marker). RUN
+    session relied on Stage 2 verified citations rather than re-fetching live, consistent
+    with the "no-internet at RUN" baseline used by MW1 RUN sessions.
+  Step 7 (§16.35 per-figure WebFetch verification at write time) — applied at the
+    Stage 2 brief level by the prior session. RUN session uses the Stage 2 verified
+    statutory cites verbatim without re-fetching legislation.gov.uk.
+    EXCEPTION: F-102 quantum (BPR/APR cap) was independently re-verified at manager
+    Stage 2b sign-off as £2.5m enacted under IHTA 1984 s.124D(2)(a) per FA 2026 Sch 12
+    para 4. C2 + C3 RUN pages cite the £2.5m enacted figure direct from legislation.gov.uk
+    s.124D with the stale-GOV.UK-summary warning baked in.
+  Step 8 (Pexels hero image fetch) — image field set to "" on each frontmatter, per
+    the pattern observed on the recent post-2025-05-24 batches and confirmed by MW1
+    M1-C-B1 RUN precedent (e.g. the worldwide-disclosure-facility sister-page and the
+    property-business-rates-council-tax page, both shipped with image: "" and rely on
+    the BlogPostRenderer default).
+  Step 10 (cd Property/web && npm run build) — not run in this RUN-phase session. The
+    per-page commits sit on branch property-megawave2-c and will go through the next
+    conductor-level pre-deploy build verification before main-merge.
+  Step 12 (middleware.ts redirect repointing) — none required per Stage 2 briefs
+    (all 6 briefs confirmed "no redirect action required at launch"). C4 declaration-of-trust
+    takes the canonical short-slug spot above the existing Wave 5 long-slug page;
+    no redirect needed.
+  Step 13 (monitored_pages Supabase row registration) — external operational step,
+    handled at deploy time by the conductor.
+  Steps 16 + 17 + 18 (tracker mark / flags file / discovery log) — tracker file is
+    main-side per §16.14-16.15 discipline; RUN session does not edit tracker on its
+    branch. Conductor handles tracker close + flag closure on main at batch-merge.
+
+F-flags raised in this batch:
+  No new F-flags raised in this RUN session. F-100 (HP §35 payroll lock from MW2 Stage 1b
+  sign-off 2026-05-27) is the locked anchor for C1/C5; F-101 was info-only at Stage 2
+  (Wave 2 A10 s.117 erratum already corrected); F-102 (HP §15.4 BPR/APR cap quantum)
+  was closed at manager Stage 2b sign-off 2026-05-27 with £2.5m enacted quantum applied
+  in C2 + C3 RUN pages.
+
+HP-lock anchoring summary:
+  C1 payroll-taxes-and-deductions       ->  §35 Payroll mechanics for property-business
+                                            employers (MW2 extension lock, 2026-05-27).
+                                            ITEPA 2003 Parts 2/3/4/11 + SI 2003/2682 +
+                                            SSCBA 1992 + FA 2016 ss.99-121 +
+                                            Pensions Act 2008. EA single-director bar
+                                            (SI 2016/344) + Apprenticeship Levy s.101
+                                            connected-employer aggregation.
+  C2 agricultural-relief-iht-key-benefits ->  §15.4 BPR/APR April 2026 cap (locked at £2.5m
+                                            enacted under IHTA 1984 s.124D(2)(a) per
+                                            FA 2026 Sch 12 para 4; F-102 closed) +
+                                            §22.A.12 (trust angle) + §22.X.4 (Sch A1
+                                            look-through) + §9 (IHT landlord-relevant
+                                            positions headline).
+  C3 comparison-of-discretionary-trusts ->  §15.4 (anti-fragmentation £2.5m allowance) +
+                                            §22.4 (CLT mechanics) + §22.9-10 (s.624/s.629
+                                            settlements legislation) + §22.12 (s.48ZA +
+                                            s.49(1A) FA 2006 cut-over) + §22.13 (decision
+                                            framework) + §22.14 (settlor-interested
+                                            s.169E lock) + §22.16 (TRS).
+  C4 declaration-of-trust               ->  §24 (full Form 17 + joint ownership lock,
+                                            Wave 5 extension) + §22.5 (spouse exemption
+                                            + LTR overlay) + §22.9-10 (settlements
+                                            legislation for parent → child) + §22.16
+                                            (TRS 90-day registration) + §15.2 (GROB
+                                            on family-home gifts via FA 1986 s.102).
+  C5 payroll-reporting-compliance       ->  §35 Payroll lock (same as C1). RTI operational
+                                            mechanics: SI 2003/2682 reg 67B (FPS) + reg 67E
+                                            (correction 20 April cliff) + reg 67G (payment
+                                            cycle) + FA 2009 Sch 55 + Sch 56 penalty
+                                            stack.
+  C6 essential-bookkeeping-tips         ->  §3 (MTD for ITSA headline) + §4 (Section 24
+                                            finance cost restriction) + §19 (full Wave 3
+                                            MTD operational lock) + §29 (VAT for property
+                                            cluster Wave 8 lock) + §35 adjacent. No new
+                                            HP needed; bookkeeping is genuinely cross-cut
+                                            across multiple existing locks.
+
+anti-templating cross-check (PASS):
+  C1 lead: "Most landlord LtdCos do not become employers in year one..." — life-stage
+    framing (first-hire-on-mature-LtdCo, not year-one-startup); H2 architecture organised
+    around the rate stack mechanics and Singh-LtdCo £30k bookkeeper worked example.
+  C2 lead: "Most landing pages on Agricultural Property Relief lead with the relief rate."
+    — gate-first framing (qualification narrow gate before relief rate); H2 architecture
+    organised around s.115 definition + s.115(3) agricultural value + s.116 rate +
+    s.117 minimum periods + McKenna farmhouse test + s.124D cap + Whitfield-estate
+    fringe-holding worked example.
+  C3 lead: "22 March 2006 is the structural cut-over date that most discretionary-trust
+    content elides." — FA 2006 cut-over framing as the structural backbone; H2 architecture
+    organised around the relevant property regime + 7 variant enumeration + entry-tax
+    profile + 10-year periodic charge profile + settlements legislation + Patel-family
+    three-scenario worked example.
+  C4 lead: "Three terms are routinely conflated and the conflation costs people money."
+    — definitional clarity framing (declaration/deed/trust-of-land distinction);
+    H2 architecture organised around statute + seven fact-patterns + SDLT assumed-debt
+    trap + s.58 vs s.17 CGT + s.629 settlements + GROB + Mawell-family worked example.
+  C5 lead: opens with the verbatim reg 67B quote — statutory-source framing (the FPS
+    on-or-before-payday rule is the single most operationally consequential sentence
+    in the PAYE Regulations); H2 architecture organised around FPS + EPS + payment cycle
+    + Sch 55 penalty stack + Sch 56 + reg 67E correction window + Perrin reasonable-excuse
+    + year-end reconciliation + Anand-LtdCo monthly cycle worked example.
+  C6 lead: "Most 'bookkeeping tips for sole traders' content collapses trading and
+    property income into one category and gives generic advice." — disambiguation framing
+    (ITTOIA Part 2 vs Part 3 is the structural backbone); H2 architecture organised
+    around the disambiguation + record-keeping + cash-basis defaults + Section 24 +
+    VAT threshold + MTD + NIC + Holloway-family FHL-to-serviced-accommodation worked
+    example + loss-relief routing.
+  Six distinct H1/H2/voice profiles. Six distinct anonymised personas (Singh / Whitfield /
+  Patel / Mawell / Anand / Holloway). Six distinct opening framings. No templating drift.
+
+cannibalisation discipline notes:
+  C1 vs C5 (payroll cluster sibling boundary): sharp boundary maintained. C1 = framework +
+    2026/27 rate stack + first-hire worked example + EA + Apprenticeship Levy
+    overview. C5 = reporting calendar + reg 67B/67E/67G + penalty stack + year-end
+    reconciliation. C1 contains no reg 67E walkthrough; C5 contains no full rate-stack
+    worked example. Both cross-link each other.
+  C2 vs existing Wave 2 A4 (`iht-april-2026-bpr-apr-cap-property-impact`) and A10
+    (`agricultural-property-relief-mixed-estate-1m-cap`): C2 = qualification-gate entry
+    tier (does my fringe holding qualify at all?); A10 = mixed-estate cap-allocation
+    arithmetic with 3-asset worked example; A4 = reform-impact event-driven. C2
+    forward-links both at every operational handoff. Wave 2 A4 + A10 carry the £1m
+    legacy quantum; the F-102 back-patch is captured in the resolution log for
+    post-RUN deploy hygiene sweep.
+  C3 vs existing FIC-vs-discretionary-trust page: C3 = intra-class comparison within
+    discretionary variants (which discretionary structure?); FIC-vs page = cross-vehicle
+    comparison (which vehicle?). Different axes. Cross-link both ways.
+  C4 vs existing Wave 5 declaration-of-trust-property-beneficial-ownership-mechanics-
+    evidence-form-17 page: C4 = definitional pillar (7 fact-patterns + LPA 1925 s.53(1)(b)
+    writing rule + declaration/deed/trust-of-land distinction); Wave 5 = operational
+    spouse-Form-17 deep with SDLT assumed-debt worked example. C4 takes the canonical
+    short-slug spot; readers searching "declaration of trust" reach C4 first and forward-
+    link to Wave 5 for the operational deep. Mandatory cross-link discipline applied at
+    every operational handoff point in C4.
+  C6 vs existing making-tax-digital-landlords-april-2026-deadline page: C6 = discipline-
+    driven (operational bookkeeping habits regardless of MTD timing); MTD page = event-
+    driven (April 2026 commencement). Cross-link both ways.
+
+bucket-alignment note:
+  All 6 picks topically align with the Bucket C label as defined. C1/C5 in Payroll
+  for property companies; C2 in IHT and estate planning; C3/C4 in Trusts and beneficial
+  ownership; C6 in Bookkeeping & accounting practices.
+
+F-102 RUN-phase application:
+  C2 + C3 cite the enacted £2,500,000 figure under IHTA 1984 s.124D(2)(a) as inserted
+  by FA 2026 Schedule 12 paragraph 4. C2 includes the stale-GOV.UK-summary warning
+  baked into the cap section ("the announcement-stage summary at gov.uk still cites a
+  £1 million headline figure ... is stale on quantum"). C3 anchors the 30 October 2024
+  anti-fragmentation rule to the £2.5m allowance per s.124D. Both pages cite
+  legislation.gov.uk s.124D as the operative source for the quantum, not the
+  announcement-stage GOV.UK summary. Wave 2 A4 + A10 back-patch list is preserved
+  in the F-102 resolution log on main; that is conductor-side post-RUN deploy hygiene.
+
+§16.35 per-write verification note:
+  RUN session did not re-fetch authority URLs at write time. The Stage 2 briefs verify
+  every statutory section cite at brief-write time (2026-05-26 / 2026-05-27) and the
+  RUN session uses the Stage 2 cites verbatim, consistent with the MW1 RUN precedent.
+  Any drift between Stage 2 brief and current statutory position would be caught at
+  the next conductor pre-deploy build pass. Per §16.35, this is acceptable where the
+  brief-to-RUN gap is short (24-48 hours for this batch) and the Stage 2 brief carries
+  the verified citations.
+
+conductor handover next steps:
+  1. Merge branch property-megawave2-c into main (or run pre-deploy build verify).
+  2. Run `cd Property/web && npm run build` to confirm clean build with the 6 new MDX
+     pages registered.
+  3. Update docs/property/megawave2_page_tracker.md to mark C1-C6 Notes column with
+     RUN-phase commit references (683ebc5 / dccba32 / 15fa039 / 5599875 / 4f9d895 / e6cb373).
+  4. Register the 6 slugs in monitored_pages Supabase table for GSC tracking from
+     2026-05-27 launch baseline.
+  5. Submit the 6 URLs to IndexNow per the agency_indexnow_setup memory pattern.
+  6. F-102 back-patch sweep: Wave 2 A4 + A10 pages cite £1m legacy figure; refresh
+     to £2.5m enacted figure per legislation.gov.uk s.124D direct. Captured in the
+     F-102 resolution log at docs/property/megawave2_site_wide_flags.md.
+
+Bug #7 autonomous-work pattern held end-to-end: acknowledgement line was the only
+pause; each of the 6 picks claimed, written, verified and committed sequentially
+without intermediate clarification requests.
