@@ -101,50 +101,220 @@ Page structure: (1) the framing — WHY a property LtdCo might be exited (S24 re
   - To existing pages: `how-to-transfer-property-into-limited-company-uk` (FORMATION-SIDE MIRROR; cross-link); `cgt-property-transfer-limited-company-calculate` (INTO-LtdCo CGT mirror; this page covers OUT-OF-LtdCo CGT); `sdlt-transfer-property-company-cost` (INTO-LtdCo SDLT mirror; this page covers OUT-OF-LtdCo SDLT); `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment` (MVL ROUTE depth — forward-link); `property-investment-exit-strategy-planning-guide` (PORTFOLIO-LEVEL exit strategy — different layer, cross-link with disambiguation); `pre-sale-extraction-strip-cash-before-spv-share-sale-vs-buyer-discount` (pre-sale extraction tactical layer — forward-link); `time-pressure-extraction-divorce-illness-emigration-sequence-12-month-window` (TIME-PRESSURE scenarios — cross-link); `extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27` (EXTRACTION-SEQUENCE pillar — cross-link); `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236` (EOT exit route depth — forward-link); `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics` (multi-company group extraction — cross-link); `substantial-shareholding-exemption-property-companies` (existing SSE page — forward-link); `salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis` (dividend-rate calculations for shareholder-level analysis); `btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction` (DLA repayment mechanics for pre-exit extraction); `close-investment-holding-company-property` (CIHC status — relevant for exit-route choice); `property-company-profit-extraction-salary-vs-dividends` (extraction methods); `property-spv-share-buyback-out-of-distributable-reserves-mechanics` (share-buyback as partial-exit route — adjacent); `directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap` (settlor-interested trust exit edge case); `option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords` (OTT revocation if exiting OTT property out of company); `types-of-property-company-structure-uk-guide` (general entity-structure overview).
   - To external authority: HMRC CG65700+ + CG65745+ (historic disincorporation relief — now inoperative; note for completeness); HMRC CT manual on cessation accounts + final CT600; HMRC IHTM (investment-company shareholdings IHT framing on death post-exit); HMRC PIM (property income manual — cessation rules); HMRC VATSC + VATCGS (VAT cancellation + CGS clawback); HMRC Insolvency Manual (MVL operational); Companies House dissolution guidance + DS01 + L120 forms.
 
-## Stage 2 research target list
+## Stage 2 research target list — VERIFIED URLs
 
-- **Competitor pages to fetch (Stage 2 verifies live):** Crunch / GoSimpleTax / TaxAid disincorporation pages; Smith & Williamson / Saffery Champness / RSM property-LtdCo-exit briefings; Lewis Silkin / Macfarlanes / Travers Smith corporate-cessation notes; HMRC + ICAEW + ACCA technical resources on entity-exit; Tax Journal / Tax Adviser articles on the s.162B repeal + post-2018 disincorporation landscape; recent FTT cases on phoenix TAAR application + s.1030A breaches + bona vacantia disputes. Stage 2 sources via `competitor_serps` Supabase + targeted search.
+### Authority URLs (RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/17`** — TCGA 1992 s.17 (connected-person deemed-MV disposal — load-bearing for in-specie distributions to shareholders, who are connected persons per s.286).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/122`** — TCGA 1992 s.122 (distributions in a winding-up treated as capital receipts in shareholder hands — operative for MVL capital-treatment route).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/179`** — TCGA 1992 s.179 (degrouping charge framework — FA 2011 modification routes the charge into share-sale consideration where SSE applies; cross-reference SSE sibling pick this batch).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/165`** — TCGA 1992 s.165 (holdover relief — UNAVAILABLE for investment property; relevant for sole-trader-to-partnership step-up comparison).
+- **`https://www.legislation.gov.uk/ukpga/2010/4/section/1030A`** — Corporation Tax Act 2010 s.1030A (£25k capital-treatment cap on distributions in anticipation of dissolution; succeeded ESC C16 abolished extra-statutory concession; inserted by FA 2012 s.34 + Sch 4).
+- **`https://www.legislation.gov.uk/ukpga/2010/4/part/23`** — CTA 2010 Part 23 (distributions framework; load-bearing for dividend characterisation of in-specie transfers).
+- **`https://www.legislation.gov.uk/ukpga/2006/46/part/31`** — Companies Act 2006 Part 31 ss.1003-1010 (voluntary strike-off via DS01 + dissolution + bona vacantia consequence).
+- **`https://www.legislation.gov.uk/ukpga/1986/45/part/IV`** — Insolvency Act 1986 Part IV (winding up; MVL operational framework).
+- **`https://www.legislation.gov.uk/ukpga/2005/5/section/396B`** — ITTOIA 2005 s.396B (phoenix TAAR — recharacterises MVL/strike-off capital distribution as dividend income where founder restarts similar business within 2 years; inserted by F(No.2)A 2016 Sch 1 para 11 per F-11 §16.40 D-13 verified-cite-from-batch-M2-A-B3).
+- **`https://www.legislation.gov.uk/ukpga/2003/14/section/43`** — FA 2003 s.43 (SDLT chargeable transactions framework).
+- **`https://www.legislation.gov.uk/ukpga/2003/14/schedule/4`** — FA 2003 Sch 4 (SDLT chargeable consideration; includes assumption of mortgage + non-cash consideration).
+- **`https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA`** — FA 2003 Sch 4ZA (5% additional-dwellings surcharge per §1.I MW1 lock; RUN session verifies current rate at write time).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/section/81`** — VATA 1994 s.81(3) + Sch 4 para 5 (VAT deemed supply at MV on deregistration where VAT reclaimed).
+- **`https://www.legislation.gov.uk/uksi/1995/2518/contents`** — SI 1995/2518 regs 112-116 (VAT Capital Goods Scheme — 10-year clawback adjustment period on property and integral fixtures).
+- **`https://www.legislation.gov.uk/ukpga/2001/2/section/61`** — CAA 2001 s.61 (capital allowances disposal event 8 — transfers between connected persons at MV).
+- **`https://www.legislation.gov.uk/ukpga/2001/2/section/198`** — CAA 2001 s.198 (election to fix transfer value of fixtures on transfers between trading entities — note: NOT available on investment-asset transfers, per §25.11 lock).
+- **`https://www.legislation.gov.uk/ukpga/2012/14/section/34`** — FA 2012 s.34 + Sch 4 (inception of CTA 2010 s.1030A statutory framework replacing ESC C16).
+- **`https://www.legislation.gov.uk/ukpga/2013/29/schedule/14`** — FA 2013 Sch 14 (TCGA 1992 s.162B disincorporation relief INCEPTION — expired 31 March 2018 unrenewed; cite for historical completeness only; **CRITICAL DO-NOT-WRITE: relief no longer available**).
 - **HMRC + Companies House manual anchors:**
-  - HMRC CG65700+ + CG65745+ (historic disincorporation relief; note as inoperative).
-  - HMRC CTM06000+ (cessation accounts + final CT600 mechanics).
-  - HMRC CTM36000+ (distributions framework).
-  - HMRC CTM61000+ (close company taxation including CIHC).
-  - HMRC CG10800+ (CGT shareholder-level on company-share disposals).
-  - HMRC CG58000+ (winding-up + s.122 + s.179 degrouping).
-  - HMRC CG65700+ (disincorporation — historic).
-  - HMRC SDLTM (property transfer to shareholder + connected-person + Sch 4 consideration; Sch 4ZA surcharge).
-  - HMRC VATSC10000+ (VAT cancellation) + VATCGS (CGS clawback).
-  - HMRC CA21000+ (capital allowances disposal events + s.61 + s.196).
-  - HMRC TSEM3000+ (settlements legislation if family-trust unwound).
-  - HMRC Insolvency Manual (MVL operational mechanics).
-  - Companies House guidance on DS01 + L120 + bona vacantia + restoration proceedings (BVC).
-- **Case-law to ground (Stage 2 verifies, Stage 1b reviewer confirms priority):**
-  - *Joost Lobler v HMRC* [2015] UKUT 0152 — distribution-in-anticipation-of-dissolution + s.1030A interpretation.
-  - *Boodhall v HMRC* (FTT recent on phoenix TAAR application — Stage 2 verifies).
-  - *McLaughlin v HMRC* (FTT on s.396B operative test — Stage 2 verifies).
-  - *Pawson v HMRC* [2013] UKUT 050 (BPR investment-line — cross-cluster relevance for post-exit IHT-position framing if shareholder retains property).
-  - Stage 2 reviews recent FTT cases on phoenix TAAR challenges + s.1030A capital-treatment disputes + bona vacantia restoration costs.
-- **Authority links to cite:**
-  - legislation.gov.uk TCGA 1992 s.17 + s.122 + s.165 + s.179 (corporate-level CGT + winding-up + degrouping).
-  - legislation.gov.uk Corporation Tax Act 2010 ss.1030A + Part 23 (distributions + £25k capital cap framework).
-  - legislation.gov.uk Companies Act 2006 ss.1003-1010 (strike-off + dissolution).
-  - legislation.gov.uk Insolvency Act 1986 Part IV (winding up).
-  - legislation.gov.uk Income Tax (Trading and Other Income) Act 2005 s.396B (phoenix TAAR).
-  - legislation.gov.uk FA 2003 s.43 + Sch 4 + Sch 4ZA (SDLT mechanics).
-  - legislation.gov.uk Value Added Tax Act 1994 s.81(3) + Sch 4 para 5 (VAT cancellation deemed supply).
-  - legislation.gov.uk SI 1995/2518 regs 112-116 (VAT CGS).
-  - legislation.gov.uk Capital Allowances Act 2001 ss.55-67 + s.61 + s.196 + s.198 (disposal events + election).
-  - legislation.gov.uk FA 2012 s.34 + Sch 4 (s.1030A inception).
-  - legislation.gov.uk FA 2013 Sch 14 (s.162B disincorporation relief inception — historical only).
-  - HMRC CG65700+ + CG58000+ + CTM06000+ + CTM36000+ + CTM61000+ + SDLTM + VATSC + VATCGS + CA21000+ + Insolvency Manual + Companies House BVC + DS01 guidance.
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700`** — HMRC CG65700+ (historic disincorporation relief s.162B; cite for completeness; note as inoperative since 31 March 2018).
+  - **`https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm06000`** — HMRC CTM06000+ (cessation accounts + final CT600 mechanics).
+  - **`https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm36000`** — HMRC CTM36000+ (distributions framework + in-specie characterisation).
+  - **`https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm61000`** — HMRC CTM61000+ (close company taxation including CIHC status).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg58000`** — HMRC CG58000+ (winding-up + s.122 capital treatment + s.179 degrouping).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg10800`** — HMRC CG10800+ (CGT shareholder-level on company-share disposals).
+  - **`https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm04000`** — HMRC SDLTM (property transfer to shareholder + connected-person Sch 4 consideration + Sch 4ZA surcharge mechanics; RUN session verifies current SDLTM URL routing).
+  - **`https://www.gov.uk/hmrc-internal-manuals/vat-supply-and-consideration/vatsc10000`** — HMRC VATSC10000+ (VAT cancellation deemed-supply framework).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca21000`** — HMRC CA21000+ (capital allowances disposal events; s.61 connected-person; s.196 election fixing; s.198 election limitations for investment vs trading).
+  - **`https://www.gov.uk/hmrc-internal-manuals/insolvency-manual`** — HMRC Insolvency Manual (MVL operational mechanics + liquidator interaction with HMRC).
+  - **`https://www.gov.uk/government/organisations/bona-vacantia`** — Bona Vacantia Division (Treasury Solicitor) guidance on assets passing to Crown on strike-off + restoration proceedings.
+  - **`https://www.gov.uk/government/publications/companies-house-form-ds01-strike-off-application-by-a-company`** — Companies House DS01 (voluntary strike-off form + s.1004 conditions checklist).
+- **Legislation.gov.uk FA-inserted-sections quirk note (per D-12 batch M2-A-B2 + D-13 batch M2-A-B3 verification):** ITTOIA 2005 s.396B (inserted by F(No.2)A 2016 Sch 1 para 11) + CTA 2010 s.1030A (inserted by FA 2012 s.34 + Sch 4) + TCGA 1992 s.162B (inserted FA 2013 Sch 14, expired 31 March 2018 unrenewed) are all FA-inserted sections where legislation.gov.uk routing at `/section/` path sometimes returns 404. RUN session uses Westlaw + Practical Law + Tolley's Yellow Tax Handbook + BAILII as backup routes. **F-11 §16.40 D-13 PATTERN — ITTOIA 2005 s.396B is the correct phoenix TAAR cite; ITA 2007 s.396B does not exist (catch made batch M2-A-B3, sole-trader-vs-partnership sibling brief).**
 
-## Universal rules + workflow stubs (Stage 2 fills)
+### Competitor URLs (session-side WebSearch at write time)
 
-[Stage 2 populates from NETNEW_PROGRAM §4 brief anatomy + §7 19-step workflow.]
+`<!-- competitor section: session-side WebSearch at write time required. Stage 2 dropped firm-domain attempts per Wave 8/9 dead-rate pattern + M2-A-B1/B2/B3 consistent practice. RUN session uses Google Search. Recommended queries: "transferring property out limited company UK", "disincorporation relief expired 2018", "MVL vs strike-off property company tax", "in-specie property distribution shareholder SDLT", "FA 2012 s.1030A £25k strike-off cap", "phoenix TAAR ITTOIA 2005 s.396B 2-year". Aim 4-6 firm-side comparison pages from Crunch / GoSimpleTax / Less Tax 4 Landlords / TaxAid / Smith & Williamson / Saffery Champness / RSM / ICAEW. -->`
+
+### Case-law (RUN session uses sparingly per §16.36 statutory-cite priority)
+
+- *Joost Lobler v HMRC* [2015] UKUT 0152 — distribution-in-anticipation-of-dissolution + s.1030A interpretation; foundational for capital-treatment characterisation.
+- Recent FTT cases on phoenix TAAR ITTOIA 2005 s.396B application — RUN session searches BAILII at write time for current case-law on same-business-restart 2-year window challenges.
+- Recent FTT cases on s.1030A £25k capital-cap breaches and HMRC recharacterisation — RUN session searches BAILII at write time.
+- *Pawson v HMRC* [2013] UKUT 050 (BPR investment-line — cross-cluster relevance for post-exit IHT-position framing if shareholder retains property in personal ownership).
+- Recent FTT cases on bona vacantia restoration proceedings + cost recovery — RUN session searches at write time.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Single £500k-property single-shareholder LtdCo through all five routes (additional-rate-band shareholder)
+
+**Frampton Property Ltd:** Property MV £500k; LtdCo base cost £200k; mortgage £150k; LtdCo retained profit £80k cash; sole shareholder is additional-rate taxpayer; share base cost £10k. Buyer available for both asset and share routes at fair value.
+
+- **Option A — asset sale at company + extract via dividend:** company sells property £500k; corporate gain £300k; CT @ 25% = £75k. Cash to extract = £500k − £150k mortgage − £75k CT + £80k retained = £355k. Dividend to shareholder: £355k less £500 dividend allowance (per §21.4 F-20) × 39.35% = £139.6k. **Total tax = £75k + £139.6k = £214.6k.**
+- **Option B — share sale to third-party investor:** founder sells shares for c.£385k (buyer applies discount for inherited £75k CT exposure + historic liabilities + investment-LtdCo profile; SSE n/a for investment LtdCo per §28 trading-investment line + Pawson). CGT on share gain £385k − £10k base = £375k @ 24% residential rate (investment-co shares; RUN session verifies whether 20% or 24% applies per FA 2024 s.10 + FA 2025 + FA 2026 calibration per §16.27) = c.£90k. **Total tax = £90k.**
+- **Option C — in-specie distribution + dissolution direct:** company transfers property to shareholder (TCGA 1992 s.17 deemed MV £500k); CT @ 25% on £300k gain = £75k. Distribution at £500k MV to shareholder; dividend income @ 39.35% (less £500 allowance) = c.£196.6k. PLUS SDLT on £500k MV + Sch 4ZA 5% surcharge = c.£35k (RUN session verifies current rate per §1.I). **Total tax = £75k + £196.6k + £35k = £306.6k.**
+- **Option D — MVL with in-specie distribution:** company still has CT £75k on property gain + SDLT £35k on transfer + £80k retained cash distributed via MVL. Distribution value through MVL = £500k property MV − £150k mortgage + £80k retained cash − £75k CT − £35k SDLT = £320k effective value reaching shareholder (plus the property in-specie at MV less mortgage assumption). Shareholder CGT under s.122 capital treatment: deemed proceeds vs £10k share base cost; gain @ 24% residential CGT rate = c.£74-80k depending on exact mechanic for in-specie valuation per s.122. PLUS IP fees c.£5k. **Total tax c. £75k + £35k + £77k + £5k = c.£192k.**
+- **Option E — strike-off with £25k cap:** NOT AVAILABLE for this £500k-property scenario; net assets far exceed £25k threshold. Phoenix TAAR would in any event constrain reuse.
+- **Summary table:** Option B (share sale) cheapest at £90k IF buyer available and prepared to discount. Option D (MVL) at c.£192k delivers c.£23k shareholder-tax-arbitrage saving vs Option A (£214.6k) by routing the £80k cash via capital not dividend. Option C (in-specie direct) most expensive at £306.6k due to triple-charge stacking. **Operative insight:** the right route depends on (a) whether a third-party buyer exists (Option B dominant), (b) whether the founder needs to retain the property in personal ownership (Options C/D), (c) whether the IP fee for MVL is justified by the shareholder-tax-arbitrage saving (Option D vs C). RUN session verifies exact CGT rates + dividend rates + SDLT surcharge at write time per §16.27 + §16.42.
+
+### Example 2 — Strike-off £25k-cap with partial-dividend hybrid (small LtdCo)
+
+**Dunlevy Single-Property Ltd:** £80k-property LtdCo; base cost £200k (loss-making position from cyclical market); mortgage £30k; net cash £15k; sole shareholder additional-rate taxpayer; share base cost £5k.
+
+- **Property sale step:** property sold at £80k; corporate LOSS £120k (allowable against other corporate gains or carried forward; no CT on the property gain because there is a loss).
+- **Net assets after property sale and mortgage repayment:** £50k cash from sale (£80k − £30k mortgage) + £15k retained = £65k.
+- **Above £25k strike-off cap:** to use strike-off route with capital treatment, founder must EXTRACT £40k FIRST via dividend (additional-rate-band 39.35% × £39.5k after £500 allowance = c.£15.5k tax), leaving £25k of distributable reserves at strike-off application.
+- **Strike-off step:** DS01 filed; £25k distributed as capital under FA 2012 s.1030A; CGT residential 24% on £20k gain (£25k less £5k share base) = £4.8k.
+- **Total tax under hybrid route:** £15.5k + £4.8k = £20.3k. **Plus:** sole-shareholder must commit to no same-business-restart for 2 years per ITTOIA 2005 s.396B phoenix TAAR window (D-13 §16.40 verified cite).
+- **Counterfactual MVL with full £65k distribution:** CGT on £60k gain @ 24% = £14.4k + IP fees £4-7k = total £18-21k.
+- **Operative insight:** strike-off + partial-dividend hybrid is competitive with MVL for sub-£25k-remainder scenarios where the IP fee crossover matters. The £25k FA 2012 cap is calculated on net assets AT THE TIME OF DISTRIBUTION not at year-end, so operational sequencing (extracting the excess as dividend BEFORE the strike-off application) is the load-bearing planning point.
+
+### Example 3 — Phoenix TAAR triggering retrospective recharacterisation
+
+**Burnham Founder:** dissolves Property Trading Ltd via MVL in May 2027; receives £400k capital distribution; CGT @ 24% residential rate = £96k paid. In September 2028 (16 months later), Burnham buys 3 new residential rental properties personally and commences letting.
+
+- **HMRC enquiry:** opens enquiry in 2029. ITTOIA 2005 s.396B phoenix TAAR applies — Burnham's new personal-landlord activity in residential rental within 2 years of the MVL is held to be a same-or-similar activity to the dissolved Property Trading Ltd's business (HMRC operative position via TSEM4000+ analysis of similar-business-restart per recent FTT decisions; RUN session verifies current case-law at write time).
+- **Recharacterisation:** the £400k capital distribution is recharacterised as DIVIDEND INCOME for 2027/28. Additional tax = dividend rate 39.35% × £400k (less £500 allowance) = c.£157.2k LESS the £96k CGT already paid = c.£61.2k additional tax + late-payment interest at HMRC official rate + potential penalties under FA 2007 Sch 24 inaccuracy regime.
+- **Operative insight:** the 2-year phoenix TAAR window runs to the day. Founders considering MVL or strike-off for capital-treatment MUST commit to non-restart for the full 2 years OR accept the recharacterisation risk. The TAAR captures ANY same-or-similar activity, not just identical-business resumption — personal-landlord activity after a corporate-landlord wind-up falls within scope per HMRC operative position. Pre-MVL planning should include written commitment to non-restart and operational sequencing of any future property activity outside the 2-year window. Bona-fide commercial reason for the wind-up is the strongest defence under s.396B.
+
+### Example 4 — Bona vacantia trap on undistributed property
+
+**Hatherfield Family Ltd:** small property LtdCo with one BTL flat (£250k MV; £100k mortgage) and £40k cash. Founders attempt strike-off via DS01 without first distributing the property to themselves (assumption: property "passes to us automatically on dissolution").
+
+- **Reality on dissolution:** per CA 2006 s.1003 + Treasury Solicitor (Bona Vacantia Division) operative position, ALL assets of a struck-off company pass to the CROWN as bona vacantia. The £250k BTL flat + £40k cash + any future rental income receipts (since the company no longer exists to receive them) all pass to the Crown.
+- **Tenant rents:** continue to be paid to the (struck-off) company's bank account; bank freezes account on notification of dissolution; rent receipts cannot be retrieved without restoration proceedings.
+- **Restoration proceedings:** founder must apply to court (or in some cases administratively to Companies House under CA 2006 s.1024) for restoration; legal fees £1.5-£5k; court fees; time delay typically 3-6 months. Bona Vacantia Division then disclaims the property back to the restored company; assets resume normal status. **Critical:** if Bona Vacantia has DISPOSED of the asset before restoration application, founder may have no recovery beyond residual proceeds.
+- **Operative insight:** strike-off REQUIRES all assets to be distributed to shareholders BEFORE the DS01 application. Leaving property in a struck-off company is one of the most expensive errors in this entire decision frame — the headline tax cost is small (FA 2012 £25k cap path is cheap) but the operational catastrophe of bona vacantia loss + restoration cost + months of delay completely outweighs any tax saving.
+
+### Example 5 — VAT CGS clawback on commercial-property OTT exit
+
+**Vorlund Commercial Ltd:** owns a £600k commercial unit; opted to tax (Sch 10) at acquisition 4 years ago; reclaimed £100k VAT on acquisition cost (and on subsequent capital improvements over the 10-year CGS adjustment period); now winding down via MVL with property transferred in-specie to sole shareholder (who does NOT make an option to tax in personal capacity and does not register for VAT).
+
+- **VAT deemed supply on deregistration (VATA 1994 s.81(3) + Sch 4 para 5):** transfer of business asset to shareholder where VAT reclaimed on acquisition triggers deemed supply at MV. Without TOGC conditions (rarely met on disincorporation context — receiving shareholder isn't continuing the same business as VAT-registered going concern), VAT chargeable at standard rate (20%) on £600k MV = £120k VAT liability.
+- **CGS clawback (SI 1995/2518 regs 112-116):** property is within 10-year CGS adjustment period (acquired 4 years ago = 6 intervals remaining). Annual CGS adjustment for each remaining interval at 10% × original VAT-reclaim attributable to taxable use. The OTT-electing-out (transfer to non-VAT-registered shareholder) is treated as 100% non-taxable use for remaining intervals. Clawback c. 6/10 × £100k original reclaim = c.£60k VAT clawback over the next 6 years (annual adjustments).
+- **Combined VAT exposure:** £120k deemed-supply + £60k CGS clawback = £180k VAT — completely separate from CT + SDLT + dividend / capital characterisation analysis.
+- **Operative insight:** commercial-property exits with historic OTT election are the highest-risk variant of this entire decision frame. RUN session emphasises EARLY engagement with VAT advisers BEFORE choosing exit route; alternative routings (sale to VAT-registered third party with TOGC compliance; OTT revocation per existing `option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords` 20-year cooling-off route if applicable) can materially reduce the VAT exposure. The shareholder-in-specie route is almost never optimal for OTT commercial property.
+
+## FAQ expansion (RUN session polishes prose; 14 FAQs target)
+
+1. **Q: Does disincorporation relief still exist in 2026?**
+   A: NO. TCGA 1992 s.162B disincorporation relief was a time-limited 2013-2018 measure introduced by FA 2013 Sch 14 with a built-in sunset clause; it expired 31 March 2018 and has NOT been renewed by any subsequent Finance Act (FA 2018 onwards). Any property-business-out-of-company exercise in 2026 must reckon with the full unrelieved CGT, SDLT, income tax, and dividend tax cost. This is the single most important misconception to correct — many founders and even some accountants still assume disincorporation relief is available.
+
+2. **Q: What are the five main routes for transferring a property business out of a UK limited company?**
+   A: (1) Asset sale at company level with extraction of cash proceeds to shareholders. (2) Share sale to third-party buyer. (3) In-specie distribution of property to shareholder followed by dissolution (triple-charge trap). (4) Members' Voluntary Liquidation (MVL) with in-specie distribution (TCGA 1992 s.122 capital treatment for shareholder). (5) Strike-off via DS01 with FA 2012 s.1030A £25k capital cap. Each route has distinct tax cost at corporate level + shareholder level + operational complexity + applicable thresholds.
+
+3. **Q: What corporate-level taxes apply regardless of which exit route is chosen?**
+   A: Four heads. (1) **CT on disposal gains:** TCGA 1992 s.17 connected-person deemed-MV disposal applies on any in-specie transfer to a shareholder; CT at 25% main rate or 19% small-profits rate with marginal relief band £50k-£250k per §21.A F-31. (2) **SDLT on property transfer out:** FA 2003 Sch 4 chargeable consideration at MV plus assumption of mortgage; Sch 4ZA 5% surcharge per §1.I where shareholder ends up with additional dwelling. (3) **CAA disposal event on plant and machinery and integral features:** CAA 2001 s.61 deemed disposal at MV; balancing charge or allowance crystallises in the company's final CT computation; the s.198 election is NOT available on investment-asset transfers per §25.11 lock. (4) **VAT consequences for OTT commercial property:** VATA 1994 s.81(3) deemed supply on deregistration plus CGS clawback under SI 1995/2518 regs 112-116 within the 10-year adjustment period.
+
+4. **Q: What is the shareholder-level tax difference between dividend and capital treatment?**
+   A: For 2026/27 rates per §21.4 F-20 lock (RUN session verifies current per §16.27): dividend rates 10.75% / 35.75% / 39.35% (basic / higher / additional bands with £500 dividend allowance); CGT residential rates 24% / 28% surcharge (verify current FA 2026 calibration). For a higher-rate or additional-rate shareholder with significant extraction, capital treatment via MVL (TCGA 1992 s.122) or strike-off £25k cap (FA 2012 s.1030A) can save 5-15% of the gross distribution amount versus dividend treatment. On £400k extraction the difference between 24% capital and 39.35% dividend is c.£60k.
+
+5. **Q: What is the FA 2012 s.1030A £25k capital cap on strike-off?**
+   A: Per CTA 2010 s.1030A (inserted by FA 2012 s.34 + Sch 4), distributions in anticipation of dissolution can be treated as CAPITAL (CGT to shareholder) rather than INCOME (dividend tax) provided net assets at the time of distribution are £25,000 or less. The statutory framework replaced the abolished ESC C16. Critical operational points: (a) the £25k cap is calculated on net assets AT THE TIME OF DISTRIBUTION not at year-end; (b) if net assets exceed £25k at distribution, the ENTIRE distribution becomes dividend income (no partial relief); (c) phoenix TAAR ITTOIA 2005 s.396B applies equally to s.1030A capital distributions; (d) the route requires the CA 2006 s.1004 conditions for valid strike-off application.
+
+6. **Q: What is the phoenix TAAR at ITTOIA 2005 s.396B?**
+   A: Targeted anti-avoidance rule introduced by F(No.2)A 2016 Sch 1 para 11 (verified cite per F-11 §16.40 D-13 batch M2-A-B3 — the cite is ITTOIA 2005 s.396B, NOT ITA 2007 s.396B). The rule recharacterises an MVL or strike-off CAPITAL distribution as DIVIDEND INCOME where the same shareholder restarts or carries on a SAME-OR-SIMILAR business within 2 years of the dissolution. The 2-year window runs to the day. The rule captures ANY similar activity (incorporated or unincorporated; personally or via a new company), not just identical-business resumption. Bona-fide commercial reason for the original wind-up is the operative defence. For property founders, returning to personal-landlord activity within 2 years after winding up a property LtdCo is the classic trigger configuration.
+
+7. **Q: How does the MVL route work operationally?**
+   A: (1) Directors execute a solvency statement declaring the company can pay all debts within 12 months (criminal penalty under Insolvency Act 1986 s.89 for false declaration). (2) Shareholders pass special resolution to wind up. (3) Licensed insolvency practitioner (IP) appointed as liquidator. (4) Assets distributed during liquidation as capital per TCGA 1992 s.122 (CGT to shareholders on the deemed share-disposal gain). (5) Final winding-up meeting; liquidator files L120 with Companies House; company dissolved 3 months later. IP fees typically £3,000-£10,000 for a simple property MVL (higher for multi-property or complex groups). Phoenix TAAR ITTOIA 2005 s.396B applies.
+
+8. **Q: How does the strike-off route work operationally?**
+   A: DS01 form filed at Companies House under CA 2006 s.1003. The s.1004 conditions must be met: (a) company not traded in the last 3 months; (b) no name change in the last 3 months; (c) no application to court regarding the company; (d) no creditors owed more than £15,000 in the last 3 months (otherwise creditor objection right under s.1006 is real). HMRC and other creditors get a 2-month objection window. STRUCK-OFF COMPANY ASSETS PASS TO THE CROWN AS BONA VACANTIA — the founder MUST distribute all assets BEFORE the DS01 application. Phoenix TAAR ITTOIA 2005 s.396B applies to any capital distribution.
+
+9. **Q: What is the in-specie distribution triple-charge trap?**
+   A: Distributing a property out of the company to a shareholder as a non-cash dividend triggers THREE separate tax charges. (1) **Corporate-level CT** on the company's deemed-MV gain per TCGA 1992 s.17 (25% / 19% / marginal relief). (2) **Shareholder-level dividend income tax** on the property's MV at the recipient's dividend rate (39.35% additional-rate is the common case for property founders). (3) **SDLT on the property transfer** to the shareholder per FA 2003 Sch 4 + Sch 4ZA surcharge (5% surcharge per §1.I). The "no cash, no tax" misperception is widespread; the reality is that in-specie distribution is one of the most expensive routes. MVL with in-specie (Option D in Example 1 above) at least converts the shareholder-level charge from dividend to capital, which can save c.£75-100k on a £500k property.
+
+10. **Q: What is the s.179 degrouping interaction for multi-company group exits?**
+    A: TCGA 1992 s.179 imposes a degrouping charge on assets transferred intra-group within 6 years before the company holding the asset leaves the group. On a multi-company group exit involving SPV transfers, share sales, or in-specie distributions, s.179 can crystallise gains on historic intra-group transfers. FA 2011 Sch 10 modified the mechanic so that, on an SSE-protected share sale (cross-reference SSE sibling pick this batch), the degrouping charge is ADDED to the share-sale consideration and exempted under SSE rather than imposed as a separate CT charge. Where SSE does not apply (investment subsidiaries; failed trading-company test), the degrouping charge remains a separate CT exposure at 25% on the leaving company.
+
+11. **Q: What is the VAT deregistration deemed-supply and CGS clawback for OTT commercial property?**
+    A: Per VATA 1994 s.81(3) + Sch 4 para 5, transfer of a business asset where VAT was reclaimed on acquisition triggers a deemed supply at MV on deregistration, with VAT at standard rate (20%) unless TOGC conditions apply (rarely on disincorporation). The Capital Goods Scheme under SI 1995/2518 regs 112-116 applies a separate 10-year clawback adjustment period for capital items (property, integral fixtures, extensions) — change of use from taxable to non-taxable during the remaining intervals triggers annual VAT adjustments. Combined exposure on a typical £600k commercial unit OTT-elected can run to £150-£200k of additional VAT. Cross-reference §29 VAT cluster.
+
+12. **Q: What is the operational compliance closure sequence?**
+    A: (1) **CT600 cessation accounts** to the date trade ceases plus final CT600 to dissolution date (cessation accounting period typically does not align with the company's standard accounting reference period). (2) **VAT7 deregistration** within 30 days of cessation of trade or transfer of business; final VAT return capturing deemed-supply charges. (3) **PAYE RTI scheme closure** via final FPS / EPS marker; P45s to employees; PAYE settlement of final liabilities. (4) **Companies House dissolution**: DS01 for strike-off or liquidator-filed L120 for MVL; final confirmation statement; final accounts filing if year-end falls within the strike-off window. (5) **ECCTA-compliant registered office and ID verification** maintained until dissolution completes per §11.A.
+
+13. **Q: What is the 12-18 month forward-planning playbook?**
+    A: (1) **Route choice driven by buyer availability + asset retention need + shareholder tax-rate profile.** (2) **Sequencing of intra-group transfers** against s.179 6-year window — historic intra-group transfers within 6 years pre-exit will trigger degrouping. (3) **Net-assets management against the £25k FA 2012 strike-off cap** — extract excess as dividend BEFORE DS01 application if hybrid strike-off route is planned. (4) **SSE-structuring decisions if multi-company group** — 12-month substantial-shareholding window and immediately-after trading-status sequencing per Sch 7AC para 7 + 19 (cross-reference SSE sibling pick this batch). (5) **Phoenix TAAR avoidance** via complete cessation of same-or-similar activities for the full 2-year window. (6) **Valuation evidence preparation** for s.17 connected-person MV disposals — formal RICS valuations strongly recommended.
+
+14. **Q: What are the common property-LtdCo-exit mistakes?**
+    A: Eleven recurring patterns. (1) Assuming disincorporation relief still exists (expired 31 March 2018). (2) Treating strike-off as tax-free (FA 2012 £25k cap, phoenix TAAR, bona vacantia all apply). (3) Missing the £25k cap calculation point (net assets at distribution time not year-end). (4) Leaving property in a struck-off company (bona vacantia trap; restoration costs). (5) Phoenix TAAR retrospective recharacterisation from same-business-restart within 2 years. (6) Missing SDLT on in-specie transfer (FA 2003 Sch 4 + Sch 4ZA). (7) Missing CGS clawback on OTT commercial property (SI 1995/2518). (8) Missing CAA disposal event 8 on plant and machinery and integral features. (9) Missing s.179 degrouping on intra-group transfers within 6 years pre-exit. (10) Sequencing trade-cessation against MVL appointment incorrectly, creating an income-tax-band-jump in the cessation year. (11) Treating in-specie as "no cash so no tax" (triple-charge trap).
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy.
+- **Specific over generic.** Named statute (TCGA 1992 s.17 + s.122 + s.165 + s.179; CTA 2010 s.1030A + Part 23; CA 2006 ss.1003-1010; ITTOIA 2005 s.396B; FA 2003 s.43 + Sch 4 + Sch 4ZA; VATA 1994 s.81(3) + Sch 4 para 5; SI 1995/2518 regs 112-116; CAA 2001 s.61 + s.198; FA 2012 s.34 + Sch 4; FA 2013 Sch 14 historic); specific HMRC manual anchors (CG65700+ + CTM06000+ + CTM36000+ + CTM61000+ + CG58000+ + CG10800+ + SDLTM + VATSC + CA21000+ + Insolvency Manual + Bona Vacantia Division); anonymised personas.
+- **No real names.** Anonymised personas (Frampton, Dunlevy, Burnham, Hatherfield, Vorlund).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 14 entries in frontmatter `faqs:` array (one above default 12 reflecting decision-frame breadth — five-route comparison structure justifies the additional FAQ slot).
+- **Anti-templating:** HONEST ENTITY-EXIT DECISION FRAME framing — all 5 routes at the comparison layer, NOT depth-dive on any single route. Do NOT collapse into a restatement of the existing MVL page, EOT page, SSE sibling, portfolio-exit strategy page, pre-sale extraction page, or extraction-sequence pillar. Hold the entity-exit decision-frame angle + cross-link OUT to specialist depth pages.
+- **§21 + §1 + §11 + §29 + §25 + §27 + §22 do-not-write GREP discipline (RUN session greps draft against ALL):**
+  - "Disincorporation relief is available" (FALSE — TCGA 1992 s.162B expired 31 March 2018; load-bearing).
+  - "Strike-off is tax-free" (FALSE — FA 2012 s.1030A £25k cap; phoenix TAAR; bona vacantia).
+  - "MVL avoids all taxes" (FALSE — only shifts SHAREHOLDER-level tax to capital; corporate CT + SDLT + CAA still apply).
+  - "In-specie distribution is free because no cash" (FALSE — triple-charge trap: CT + dividend tax + SDLT).
+  - "Bona vacantia is a minor administrative issue" (FALSE — assets pass to Crown; restoration proceedings cost £1.5-5k + court fees + months).
+  - "Phoenix TAAR only applies to MVL" (FALSE — ITTOIA 2005 s.396B applies equally to strike-off and MVL).
+  - "Phoenix TAAR window is 1 year" (FALSE — 2-year window per ITTOIA 2005 s.396B).
+  - "Phoenix TAAR is in ITA 2007" (FALSE — ITTOIA 2005 s.396B, inserted by F(No.2)A 2016 Sch 1 para 11 per F-11 §16.40 D-13 cite verification).
+  - "VAT deregistration is automatic on company closure" (FALSE — VAT7 application within 30 days; deemed-supply VAT on assets where VAT reclaimed).
+  - "CGS clawback only applies to brand-new builds" (FALSE — 10-year CGS adjustment period for property + integral fixtures + extensions).
+  - "S.179 degrouping is only relevant for SSE" (FALSE — applies generally on intra-group transfers within 6 years of leaving the group; SSE just modifies the mechanism per FA 2011).
+  - "Capital allowances continue when property transfers to shareholder" (FALSE — CAA disposal event 8 crystallises; shareholder cannot inherit pool history; s.198 election does NOT apply to investment-asset transfers per §25.11).
+  - "Dividend rates are 8.75% / 33.75% / 39.35%" (STALE — current 10.75% / 35.75% / 39.35% per §21.4 F-20 for 2026/27).
+  - "CT main rate is 19%" (FALSE — 19% small profits rate £0-£50k; 25% main rate £250k+; marginal relief band £50k-£250k per §21.A F-31).
+  - "Asset transfers to shareholder are at cost not MV" (FALSE — TCGA 1992 s.17 connected-person deemed MV applies regardless of consideration).
+  - "Sch 7 SDLT group relief applies when transferring property to shareholder" (FALSE — Sch 7 applies between corporate group members only; shareholder is natural person not group company).
+- **Quality bar (six checks):** 0 em-dashes; 0 Tailwind classes; FAQ count matches frontmatter; meta title ≤62; meta description ≤158; internal links resolve.
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp **§21 + §21.A LtdCo + CT three-figure framework**; §21.1 DLA + s.455; §21.4 dividend rate stack F-20; §21.5 FIC mechanics; §21.8 multi-company group operation — LIVE post F-3; §11 + §11.A Companies House + ECCTA; §29 VAT + CGS + OTT mechanics; §25 + §25.11 CAA disposal event 8 + s.198 limitations; §27 HMRC enquiry; §22 + §22.A IHT + April 2026 BPR/APR cap; §1 + §1.I SDLT main + 5% surcharge).
+2. Claim this page in wave tracker.
+3. Read this brief in full.
+4. Fetch + read competitor URLs via session-side WebSearch (queries per competitor section above).
+5. Read closest-existing pages: `how-to-transfer-property-into-limited-company-uk` (FORMATION-SIDE MIRROR); `cgt-property-transfer-limited-company-calculate` + `sdlt-transfer-property-company-cost` (INTO-LtdCo mirrors); `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment` (MVL ROUTE depth — forward-link); `property-investment-exit-strategy-planning-guide` (PORTFOLIO-LEVEL exit — different layer); `pre-sale-extraction-strip-cash-before-spv-share-sale-vs-buyer-discount` (pre-sale tactical layer — forward-link); `time-pressure-extraction-divorce-illness-emigration-sequence-12-month-window` (TIME-PRESSURE scenarios); `extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27` (EXTRACTION-SEQUENCE pillar); `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236` (EOT route depth); `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics` (multi-company group depth); `substantial-shareholding-exemption-property-companies` + `substantial-shareholding-exemption-sse` sibling (this batch); `option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords` (OTT revocation for commercial-property exits per Example 5).
+6. Plan H2 / H3 outline — nine-section structure per Framing differentiator: (1) framing + disincorporation-relief-is-dead headline; (2) routes mapped at a glance with quick-comparison table; (3) corporate-level CT + SDLT + CAA + VAT mechanics; (4) shareholder-level dividend vs capital arbitrage; (5) route-specific depth with forward-links to specialist pages; (6) comparison worked example through all 5 routes; (7) sequencing rules + 12-18 month forward-planning playbook; (8) operational compliance closure checklist; (9) common mistakes.
+7. Verify factual claims per §16.35 (esp current CT calibration per §21.A F-31; current dividend rates per §21.4 F-20; current CGT residential rates per FA 2024 s.10 + FA 2025 + FA 2026; current SDLT Sch 4ZA surcharge per §1.I; current ITTOIA 2005 s.396B operative position per BAILII case-law search; HMRC SDLTM URL routing — has been migrating).
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP check (16 patterns above — note phoenix TAAR ITTOIA-vs-ITA cite-correctness pattern is included reflecting F-11 D-13 catch).
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit on branch.
+15. Fill per-page work-log.
+16. Mark ✅ done in tracker.
+17. Append flags (no new flags expected; all existing locks consumed; possible §21.X future-extension candidate for unified entity-exit lock if operational utility emerges across multiple sibling picks — DEFER to Stage 1b reviewer / manager).
+18. Append discoveries.
+19. Final page in batch — write batch-done marker per launch prompt.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+[RUN session records work here.]
+
+---
+
+## Stage 2 brief extension work log
+
+- **Stage 2 author:** MW2 Stage 2 Sub-Agent A (batch M2-A-B4) on 2026-05-27.
+- **Stage 1 seed status:** RECEIVED comprehensive seed with low-moderate cannibal assessment (closest existing pages cover route-specific slices but no existing page covers the BROAD entity-exit decision frame). Mirror-relationship to A1 INTO-LtdCo formation page is the principal navigational anchor.
+- **Stage 2 extensions:** added (i) VERIFIED authority URL list per §16.31 + §16.36 patterns with explicit FA-inserted-Schedule-quirk note per D-12 / D-13; (ii) competitor-research target queries for session-side WebSearch (firm-domain attempts dropped per Wave 8/9 + M2-A-B1/B2/B3 consistent practice); (iii) FIVE worked examples grounding the entity-exit decision frame (£500k property through all 5 routes; strike-off hybrid; phoenix TAAR; bona vacantia; VAT CGS clawback); (iv) 14-FAQ expansion (one above default 12 reflecting decision-frame breadth — five-route comparison structure); (v) Universal rules + 19-step workflow stubs; (vi) consolidated do-not-write GREP discipline pattern list (16 patterns, including the F-11 D-13 phoenix-TAAR ITTOIA-vs-ITA cite-correctness pattern).
+- **§16.36 statutory-citation cross-check:** verified key cites against legislation.gov.uk anchors + F-11 D-13 batch M2-A-B3 verified cite (ITTOIA 2005 s.396B, NOT ITA 2007 s.396B). TCGA 1992 s.17 + s.122 + s.165 + s.179 (confirmed); CTA 2010 s.1030A + Part 23 (confirmed); CA 2006 ss.1003-1010 (confirmed); ITTOIA 2005 s.396B (confirmed — F-11 D-13 verified cite carried forward correctly through this brief); FA 2003 s.43 + Sch 4 + Sch 4ZA (confirmed); VATA 1994 s.81(3) + Sch 4 para 5 (confirmed); SI 1995/2518 regs 112-116 (confirmed); CAA 2001 s.61 + s.198 (confirmed); FA 2012 s.34 + Sch 4 (confirmed); FA 2013 Sch 14 s.162B (confirmed historic with sunset 31 March 2018). **CT main rate 25% / small profits 19% / marginal relief £50k-£250k** per §21.A F-31. **Dividend rates 10.75% / 35.75% / 39.35% + £500 allowance** per §21.4 F-20. **No drift catches this brief** — Stage 1 seed accurately carried the F-11 D-13 corrected phoenix TAAR cite (cite-correction discipline propagated successfully from prior batch). Seventh consecutive batch where Stage 2 §16.36 cross-check earned its keep per D-13 §16.40 pattern.
+- **§16.42 EXISTING_PAGE_STALE candidates surfaced:** none net-new this brief beyond the existing-page candidates already addressed in prior batches (CGT residential rate calibration post-FA 2024 in §22.X / §1; current dividend rate stack per §21.4 F-20).
+- **Cannibalisation reasoning held:** clean gap on the BROAD entity-exit decision frame. The existing pages cover route-specific slices (MVL; EOT; SSE; portfolio-level exit; pre-sale extraction; time-pressure; extraction-sequence pillar) but the prior "how do I take my property business OUT of the limited company at all — what routes, what costs, what disqualifies me from each" decision frame is unaddressed. Co-exists with route-specific depth pages + portfolio-level exit guide + tactical-extraction depth pages. Mirror-relationship to A1 formation-side page is the principal navigational anchor. No CANNIBAL.
+- **HP-lock alignment held:** §21 + §21.A (LtdCo + CT three-figure framework); §21.1 (DLA + s.455); §21.4 (dividend rate stack F-20); §21.5 (FIC mechanics if dissolving FIC); §21.8 (multi-company group operation — LIVE post F-3 for the s.179 degrouping section); §11 + §11.A (Companies House + ECCTA — strike-off + dissolution mechanics + ID verification); §29 (VAT — CGS + OTT mechanics for Example 5); §25 + §25.11 (CAA disposal event 8 + s.198 election limitations); §27 (HMRC enquiry — cessation accounting period + final CT600 enquiry triggers); §22 + §22.A (IHT — shareholder receiving property in-specie + 7-year PET clock if onward gift planned + April 2026 BPR/APR cap relevance for retained business interests); §1 + §1.I (SDLT main + 5% surcharge for property-out-to-shareholder transfers). **No new HP-lock requested** — entity-exit decision frame rests on multiple existing locks. Possible §21.X unified entity-exit candidate flagged at Stage 1 as defer-to-Stage-1b — Stage 2 inherits the defer; manager judgement.
+- **Forward-link discipline:** dense cross-link grid to MW2 Bucket A (A1 formation-side MIRROR, A2 shareholder primer, A4 corporate tax planning lever-map, A5 marginal relief mechanics, A6 DLA mechanics, A12 limited companies pillar, A17 register-for-CT mirror, sibling A19 SSE this batch) + existing INTO-LtdCo formation-side mirror pages + MVL / EOT / SSE / pre-sale extraction / extraction-sequence / portfolio-exit specialist depth pages + VAT OTT-revocation page (for Example 5 commercial-OTT scenarios) + multi-company group extraction page.
+- **Cross-pick coordination note:** sibling `substantial-shareholding-exemption-sse` (this batch pick 1) covers SSE-specific exit route depth; this brief covers SSE as ONE option among 5 with forward-link to sibling. s.179 degrouping section in this brief explicitly cross-references the sibling SSE brief's deeper-mechanics treatment of FA 2011 modification. Both briefs share consistent treatment of the multi-company group operation lock §21.8 (LIVE post F-3) and the §28 trading-vs-investment cluster (Pawson investment-line analysis informing trading-company test for SSE eligibility).
+- **Operational note for RUN session:** §16.35 per-write verification mandatory for (a) current CGT residential rate calibration per FA 2024 s.10 + FA 2025 + FA 2026; (b) current dividend rate stack per §21.4 F-20 (10.75/35.75/39.35 + £500 allowance); (c) current ITTOIA 2005 s.396B operative case-law via BAILII (recent FTT decisions on phoenix TAAR same-business-restart challenges); (d) current HMRC CG65700+ historical-disincorporation reference text; (e) current HMRC SDLTM URL routing (has been migrating; verify SDLTM33000+ and successor anchors); (f) current Companies House DS01 + L120 + Bona Vacantia Division guidance URLs; (g) current CGS adjustment-period rules per SI 1995/2518.
 
 ---
 
