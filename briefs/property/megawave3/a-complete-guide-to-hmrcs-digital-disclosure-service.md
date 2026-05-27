@@ -50,13 +50,147 @@ The angle this page takes: an operator (landlord, property-developer, serviced-a
 - Legislation anchors RUN session must verify at write time: TMA 1970 s.7 + s.12B + s.29 + s.34 + s.36 + s.36A; Sch 41 FA 2008 (paras 5, 13, 20); Sch 24 FA 2007 (paras 3, 4, 4A, 9, 10, 14); Sch 18 FA 2017 (FtC).
 - Case-law to ground: Perrin v HMRC [2018] UKUT 156 (reasonable excuse four-stage test); HMRC v Tooth [2021] UKSC 17 (deliberate-behaviour test for s.29(4) / s.36(1A) deliberate limb).
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — extended
 
-[Stage 2 populates from NETNEW_PROGRAM §4.]
+### Authority URLs (Stage 2 surfaces; RUN session WebFetches at write time per §16.35)
+
+- **`https://www.gov.uk/guidance/admitting-tax-fraud-the-contractual-disclosure-facility-cop9`** — CoP9 / CDF gov.uk landing. Used in the page's boundary section (DDS is NOT for deliberate-fraud cases with criminal-prosecution exposure).
+- **`https://www.gov.uk/guidance/let-property-campaign`** — LPC gov.uk landing. Referenced as the residential-rental sub-track within DDS.
+- **`https://www.gov.uk/guidance/worldwide-disclosure-facility-make-a-disclosure`** — WDF gov.uk landing. Referenced as the offshore sub-track.
+- **`https://tax.service.gov.uk/digital-disclosure`** — DDS portal entry (URL to be re-verified at write time; HMRC restructured portal URLs in 2024-2025).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/7`** — TMA 1970 s.7 (notification obligation). Quoted verbatim for the "6 months from end of year of assessment" deadline.
+- **`https://www.legislation.gov.uk/ukpga/2008/9/schedule/41`** — Sch 41 FA 2008 (failure-to-notify mechanics). Paras 5, 13, 20 quoted verbatim for behaviour bands, mitigation matrix, reasonable excuse.
+- **`https://www.legislation.gov.uk/ukpga/2007/11/schedule/24`** — Sch 24 FA 2007 (inaccuracy penalties). Para 4 + 4A + 14 for the inaccuracy-in-filed-returns boundary.
+- **`https://www.legislation.gov.uk/ukpga/2017/32/schedule/18`** — Sch 18 FA 2017 (Requirement to Correct / Failure-to-Correct offshore overlay).
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch71000`** — HMRC Compliance Handbook CH71000+ (Sch 41 failure-to-notify commentary). RUN session reads child pages directly.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch150000`** — HMRC Compliance Handbook CH150000+ (disclosure mitigation commentary).
+- **`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2010`** — PIM2010+ (rental income chargeability framework — cross-reference for the LPC sub-track).
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: per §16.31 5/5 dead-rate pattern across Waves 8-9 + Wave 7 firm-domain hostile-to-WebFetch posture, Stage 2 did not pre-fetch firm URLs. RUN session uses Google Search at write time. Recommended search queries: "HMRC Digital Disclosure Service guide landlord", "DDS notification process 90 days gov.uk", "voluntary disclosure HMRC unprompted penalty". Target: 3-5 firm-side tax-investigation pages from BDO / RSM / Crowe / Saffery / Smith & Williamson + a tax-investigation-specialist boutique. -->`
+
+### Case-law
+
+- **Perrin v HMRC [2018] UKUT 156 (TCC)** — reasonable excuse four-stage test (controlling authority for Sch 41 para 20 disclosure-related defences).
+- **HMRC v Tooth [2021] UKSC 17** — Supreme Court on the deliberate-behaviour test for s.29(4) / s.36(1A) deliberate limb. Critical for the DDS-vs-CoP9 boundary: deliberate inaccuracy must be intentional; carelessness alone is not "deliberate" for the 20-year limit.
+- **HMRC v Lin [2018] UKUT 363 (TCC)** — discovery threshold under s.29; relevant for the counterfactual (what HMRC must show to open assessment outside DDS).
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Residential landlord routing to LPC sub-track
+
+- **Mrs Padmore** owns a single BTL flat in Manchester let since 2018; she has never declared the rental income on her self-assessment return. Gross rents £14,400/year; mortgage interest + agent fees + repairs leave ~£6,000 net rental profit.
+- **DDS sub-track:** residential rental → LPC route inside DDS. Mrs Padmore notifies LPC via gov.uk landlord disclosure form; HMRC issues a Disclosure Reference Number (DRN); 90-day window opens.
+- **Sch 41 floor:** non-deliberate after 12 months unprompted → 10% mitigation floor. Six tax years × £6,000 net rental at 20% basic-rate income tax = £1,200/year × 6 = £7,200 tax liability + interest under s.86 (~£600 cumulative) + 10% penalty = £720. Total settlement ~£8,520.
+- **Counterfactual (no LPC, HMRC discovery):** prompted-disclosure floor 35% non-deliberate → penalty £2,520; same tax + interest. LPC route saves ~£1,800 in penalty alone, plus avoids the s.36 6-year extended-assessment route catching the older years she might otherwise have argued out of scope.
+
+### Example 2 — Offshore rental income routing to WDF + FtC overlay
+
+- **Mr Cunliffe** owns 2 properties in Spain let to tourists since 2015. He is UK-resident and UK-domiciled and has never declared the Spanish rental income on his UK return (mistakenly relied on Spanish withholding tax as final). Gross Spanish rents €18,000/year; UK-equivalent net profit ~£10,000/year.
+- **DDS sub-track:** offshore → WDF route inside DDS (NOT LPC; LPC is UK-property-only). FtC overlay applies for pre-30-September-2018 offshore matters under Sch 18 FA 2017.
+- **Pre-FtC-deadline penalty:** for the 2015 / 2016 / 2017 / 2018 years that fell within the FtC window and were not corrected by 30 September 2018, the FtC minimum penalty is 200% of unpaid UK tax (reducible to 100% on complete unprompted disclosure + asset-based penalty + naming-and-shaming for £25k+).
+- **WDF cycle:** notify → 90 days (extendable to 180 on request) → pay. Documentary requirement: Spanish tax returns + Spanish bank statements + property letting records to substantiate the disclosure.
+- **Strategic note:** the FtC 200%/100% overlay makes the offshore-DDS path materially more expensive than LPC; the page's routing-decision section must flag that landlords with offshore rental income face a different cost-benefit profile than UK-only.
+
+### Example 3 — UK-only non-rental income routing to general DDS catch-all
+
+- **Mrs Eastleigh** ran an unincorporated property-management side-business (managing 8 properties for friends and family at 8% commission) from 2019-2024. She received ~£12,000/year in commission income and never declared it. The income is NOT rental income (so LPC does not apply); it is UK-source self-employment income.
+- **DDS sub-track:** general DDS catch-all (NOT LPC, NOT WDF, NOT Card Transaction Programme). General DDS uses the same notification → 90-day cycle but does not unlock LPC-specific mitigation floors; it relies on standard Sch 41 paras 5 + 13 architecture.
+- **Sch 41 floor:** if Mrs Eastleigh notifies unprompted within 12 months of when liability arose, non-deliberate floor 0%; if after 12 months, 10%. She is now ~3 years late so the 10% floor applies. Six years × £12,000 commission at 20% basic rate = £14,400 tax + £1,200 interest + 10% penalty (£1,440) = ~£17,040.
+
+### Example 4 — Deliberate-fraud case where DDS is the WRONG route
+
+- **Mr Helmstone** operated a 12-property BTL portfolio under a deliberate concealment scheme: he set up multiple bank accounts in family-member names, routed rental income through them, and filed self-assessment returns showing only his "own" 2 properties. HMRC has not yet opened an enquiry but Mr Helmstone is worried about increasing risk.
+- **Boundary:** this fact pattern is deliberate concealment under Sch 41 para 5(b)(ii) and may also involve cheat-the-public-revenue exposure or false-accounting offences. The unprompted-disclosure Sch 41 floor (30% deliberate-and-concealed unprompted) is available BUT it does NOT confer criminal-prosecution immunity.
+- **Correct route:** CoP9 / CDF under §27.5 lock. CoP9 is a HMRC-initiated process; CDF is the taxpayer-initiated entry into the CoP9 framework. Both require formal contractual admission of deliberate behaviour and confer criminal-prosecution immunity for the conduct described in the admission (subject to honesty and completeness conditions).
+- **Discipline:** a tax-investigation specialist solicitor should be instructed before any disclosure step. DDS is the wrong route here; it could fix the civil exposure but leave the criminal exposure live.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: What is HMRC's Digital Disclosure Service in plain terms?**
+   A: The Digital Disclosure Service (DDS) is HMRC's online portal for voluntary disclosure of undeclared tax liabilities. It hosts four distinct campaign tracks: the Let Property Campaign (LPC) for residential rental income; the Worldwide Disclosure Facility (WDF) for offshore matters; the Card Transaction Programme (CTP) for unreported card-acquirer income; and a general catch-all voluntary disclosure route for everything else. DDS launched on 5 September 2016 and remains the primary disclosure entry point for most non-criminal cases.
+
+2. **Q: Which DDS sub-track should I use for my situation?**
+   A: Residential rental income (UK landlords with undisclosed rental profit) → LPC. Offshore matters of any kind (foreign rental income, foreign bank interest, offshore investment gains) → WDF, with the Failure-to-Correct overlay applying for pre-30-September-2018 matters. Card-acquirer income (Airbnb hosts who took payments via card terminals) → CTP or LPC depending on the income nature. Anything else (UK-only non-rental matters: side-business income, commissions, other self-employment) → general DDS catch-all route.
+
+3. **Q: What is the three-step DDS cycle?**
+   A: Step 1 — notification: complete the notification form on gov.uk; HMRC issues a Disclosure Reference Number. Step 2 — disclosure: complete the full disclosure (tax computation + supporting records) within 90 days of HMRC's acknowledgment. Step 3 — payment: settle the disclosed tax + interest under TMA 1970 s.86 + penalty as agreed under the Sch 41 floor framework. If full payment within 90 days is not feasible, a time-to-pay arrangement under TMA 1970 s.108 can be requested.
+
+4. **Q: What penalty floor does DDS unlock under Schedule 41 FA 2008 paragraph 13?**
+   A: For unprompted disclosure: 0% (non-deliberate, within 12 months of when liability arose), 10% (non-deliberate, after 12 months), 20% (deliberate not concealed), 30% (deliberate and concealed). For prompted disclosure: 10% (non-deliberate), 35% (deliberate not concealed), 50% (deliberate and concealed). DDS preserves the unprompted floor provided you notify before HMRC opens an enquiry or contacts you about the matter.
+
+5. **Q: When is DDS the WRONG route?**
+   A: Two scenarios. First, deliberate-fraud cases with material criminal-prosecution exposure should go via CoP9 / CDF (under §27.5 lock), not DDS. CoP9 confers criminal-prosecution immunity for conduct disclosed in the formal admission; DDS does not. Second, where HMRC has already opened a formal s.9A enquiry or issued a discovery assessment under s.29, the unprompted-disclosure window has closed; the disclosure becomes prompted and the higher Sch 41 floor applies.
+
+6. **Q: What is the offshore Failure-to-Correct overlay under Schedule 18 FA 2017?**
+   A: For offshore matters that should have been corrected by 30 September 2018 but were not, the FtC regime imposes a minimum 200% penalty on the unpaid offshore-related UK tax, reducible to 100% on complete unprompted disclosure. The FtC regime also includes an asset-based penalty (up to 10% of the value of the relevant offshore asset) for cases where the lost tax exceeds £25,000, and naming-and-shaming for cases meeting that threshold. WDF is the DDS sub-track for offshore matters and the FtC overlay sits alongside.
+
+7. **Q: What records does HMRC expect to support a DDS disclosure?**
+   A: HMRC expects the records that would have supported a contemporaneous self-assessment return: rental statements, agent invoices, mortgage statements, repair invoices, tenancy agreements, bank statements showing rental receipts, and any documentation of expenses claimed. The statutory record-retention floor under TMA 1970 s.12B is 5 years from 31 January following the tax year; the firm's practical recommendation under §27.8 is 7 years for property businesses. Missing records do not block a disclosure but they make HMRC's challenge to the disclosure figures more likely.
+
+8. **Q: What is the "reasonable excuse" defence under Schedule 41 paragraph 20 and how does Perrin v HMRC apply?**
+   A: Sch 41 para 20 disapplies the failure-to-notify penalty where the taxpayer had a reasonable excuse for the failure and rectified it within a reasonable time of the excuse ceasing. The Upper Tribunal in Perrin v HMRC [2018] UKUT 156 set out the four-stage test: identify the obligation, identify the excuse, assess whether reasonable in the circumstances, assess whether the failure was remedied promptly after the excuse ceased. Where reasonable excuse applies, the Sch 41 penalty falls to nil; the LPC / DDS unprompted-disclosure floor becomes the floor below reasonable excuse rather than the only mitigation lever.
+
+9. **Q: Can I pay in instalments if I cannot afford the full disclosed liability in 90 days?**
+   A: Yes. HMRC will typically agree a time-to-pay arrangement under TMA 1970 s.108 + CRCA 2005 where the taxpayer demonstrates inability to pay in full. Interest under TMA 1970 s.86 continues to accrue during the time-to-pay period. The disclosure crystallisation is not blocked by an instalment plan; HMRC closes the disclosure on agreed-figure basis and the instalment arrangement runs alongside.
+
+10. **Q: Does DDS confer criminal-prosecution immunity?**
+    A: No. Only the Contractual Disclosure Facility (CDF) under CoP9 confers criminal-prosecution immunity, and only for the conduct described in the formal admission. DDS is a civil-resolution mechanism. Where deliberate fraud is involved with material criminal exposure, the correct route is CoP9 / CDF, not DDS. A tax-investigation specialist solicitor should advise on the route before any disclosure step is taken.
+
+11. **Q: What happens after a DDS disclosure is accepted and paid?**
+    A: The disclosed matter is closed for s.29 discovery purposes, subject to the s.29(4)/(5) re-opening conditions (incomplete or deliberately inaccurate disclosure can be re-opened). The taxpayer's ongoing record-keeping obligations under TMA 1970 s.12B continue. Any continuing rental income or other relevant activity from the disclosed period onwards must be brought into the regular self-assessment cycle (or MTD ITSA from 6 April 2026 if the qualifying-income threshold under §19.1 is met).
+
+12. **Q: How does DDS interact with the LPC-specific sibling pages on this site?**
+    A: This page is the umbrella architecture. The campaign-specific LPC pages on this site (the benefits-framed page in this same Bucket A batch, the descriptive "know about LPC" page, the calculator-led penalty page, the why-disclose page, and the "missed taxes rescue" page) all sit at the campaign-specific layer below this umbrella. Read this page first to determine which sub-track applies to your facts; then read the campaign-specific page for the depth treatment of your chosen track.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy.
+- **Specific over generic.** Named legislation (TMA 1970 s.7, Sch 41 FA 2008 paras 5/13/20, Sch 18 FA 2017), specific section numbers, anonymised personas.
+- **No real names.** Anonymised personas (Padmore, Cunliffe, Eastleigh, Helmstone in the worked examples above).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer.
+- **CSS in markdown:** semantic HTML only; no Tailwind classes.
+- **FAQs:** 10-14 entries in frontmatter `faqs:` array.
+- **Anti-templating:** highest risk on this slug is collapsing into sibling LPC-specific pages. RUN session must hold the **DDS umbrella architecture** framing tightly; each sub-track section is a routing-decision pointer (~150-200 words) to the campaign-specific page, not a duplication of campaign-specific mechanics.
+- **Quality bar (six checks).**
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §27.6 LPC + WDF + DDS + CoP9 architecture; §27.2 + §27.3 mechanics; §27.5 CoP9 boundary; §27.1 s.29 + s.36 + s.36A counterfactual).
+2. Claim this page in MW3 tracker.
+3. Read this brief (framing + key questions + research targets).
+4. Fetch + read competitor URLs via session-side Google Search at write time.
+5. Read closest-existing pages: the five sibling LPC-specific pages in MW3-A + any existing Wave 7 enquiry-mechanics pages.
+6. Plan H2 / H3 outline + meta + 10-14 FAQs + CTA placements — STRICTLY in the umbrella-architecture routing-decision framing.
+7. Verify factual claims against authorities per §16.35 (TMA 1970 s.7, Sch 41 paras 5/13/20, Sch 24 paras 4/4A/14, Sch 18 FA 2017, gov.uk DDS portal URL).
+8. Fetch hero image.
+9. Write markdown at `Property/web/content/blog/a-complete-guide-to-hmrcs-digital-disclosure-service.md`.
+10. Build clean.
+11. Six verifications.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit on session branch.
+15. Fill per-page work-log.
+16. Mark ✅ done in tracker.
+17. Append flags.
+18. Append discoveries.
+19. Claim next page.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+### Stage 2 author entry
+
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent A (batch M3-A-B1) on 2026-05-27.
+- **Stage 2 extensions added:** authority URL list anchored to legislation.gov.uk + gov.uk + HMRC manual paths (RUN re-verifies live at write time); 4 worked examples covering LPC (residential UK), WDF + FtC (offshore), general DDS catch-all (UK non-rental), and the CoP9 boundary case where DDS is the wrong route; 12 FAQs anchored to DDS sub-track choice, the 3-step cycle, Sch 41 floor matrix, FtC overlay, records, time-to-pay, criminal-immunity boundary, and the campaign-specific sibling-page relationship; voice + style + 19-step workflow stubs verbatim.
+- **§16.36 statutory-citation cross-check:** TMA 1970 s.7 verified live 2026-05-27 (Stage 1 author); Sch 41 / Sch 24 / Sch 18 anchored to §27 lock verification 2026-05-24. No new drift catches at Stage 2 cross-check.
+- **Anti-templating note:** five sibling LPC-specific pages exist in the same MW3-A wave. RUN session must hold the umbrella-architecture / routing-decision angle distinctly. Each sub-track section signposts OUT to the campaign-specific child, not duplicating mechanics.
+
+### RUN session entry (populate at write time)
+
+[RUN session records: H1 chosen, meta title + description, competitor URLs fetched, existing-page review notes, citations added, internal links added, build attempts, six-check verification, flags raised, summary.]
 
 ---
 
