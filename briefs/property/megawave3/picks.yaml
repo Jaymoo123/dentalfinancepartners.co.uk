@@ -1,0 +1,75 @@
+wave: 3
+# MegaWave 3 - Compliance / operations / specialist family
+# Sliced by slice-megawave.ps1 on 2026-05-27
+# Total: 60 picks (A:20 B:20 C:20)
+
+buckets:
+  A:
+    label: "Bucket A - MTD for ITSA + Penalties & enquiries + Penalties, enquiries & HMRC nudge letters + Let Property Campaign & HMRC voluntary disclosure + Self-assessment mechanics"
+    picks:
+      - { id: A1, slug: "paye-penalties-for-late-submission-and-filing", label: "[Penalties & enquiries] paye-penalties-for-late-submission-and-filing" }
+      - { id: A2, slug: "a-complete-guide-to-hmrcs-digital-disclosure-service", label: "[Let Property Campaign & HMRC voluntary disclosure] a-complete-guide-to-hmrcs-digital-disclosure-service" }
+      - { id: A3, slug: "benefits-of-participating-in-the-let-property-campaign", label: "[Let Property Campaign & HMRC voluntary disclosure] benefits-of-participating-in-the-let-property-campaign" }
+      - { id: A4, slug: "comparing-online-and-paper-self-assessment-tax-returns", label: "[Self-assessment mechanics] comparing-online-and-paper-self-assessment-tax-returns" }
+      - { id: A5, slug: "corporation-tax-deadlines-and-penalties", label: "[Penalties & enquiries] corporation-tax-deadlines-and-penalties" }
+      - { id: A6, slug: "government-to-implement-mtd-for-it-with-lower-threshold", label: "[MTD for ITSA] government-to-implement-mtd-for-it-with-lower-threshold" }
+      - { id: A7, slug: "heres-how-you-can-exit-mtd-if-your-income-falls", label: "[MTD for ITSA] heres-how-you-can-exit-mtd-if-your-income-falls" }
+      - { id: A8, slug: "hmrcs-loan-charge-settling-disguised-remuneration-schemes", label: "[Let Property Campaign & HMRC voluntary disclosure] hmrcs-loan-charge-settling-disguised-remuneration-schemes" }
+      - { id: A9, slug: "hmrcs-nudge-letters-demand-urgent-review-of-gift-hold-over-relief-claim", label: "[Penalties, enquiries & HMRC nudge letters] hmrcs-nudge-letters-demand-urgent-review-of-gift-hold-over-relief-claim" }
+      - { id: A10, slug: "hmrcs-nudge-letters-on-business-asset-disposal-relief", label: "[Penalties, enquiries & HMRC nudge letters] hmrcs-nudge-letters-on-business-asset-disposal-relief" }
+      - { id: A11, slug: "how-making-tax-digital-affects-limited-companies", label: "[MTD for ITSA] how-making-tax-digital-affects-limited-companies" }
+      - { id: A12, slug: "know-about-let-property-campaign", label: "[Let Property Campaign & HMRC voluntary disclosure] know-about-let-property-campaign" }
+      - { id: A13, slug: "late-filing-and-late-payment-penalties", label: "[Penalties & enquiries] late-filing-and-late-payment-penalties" }
+      - { id: A14, slug: "let-property-campaign-penalty-calculator", label: "[Penalties & enquiries] let-property-campaign-penalty-calculator" }
+      - { id: A15, slug: "let-property-campaign-why-voluntary-disclosure-makes-sense", label: "[Let Property Campaign & HMRC voluntary disclosure] let-property-campaign-why-voluntary-disclosure-makes-sense" }
+      - { id: A16, slug: "making-tax-digital-major-self-assessment-overhaul-ahead", label: "[MTD for ITSA] making-tax-digital-major-self-assessment-overhaul-ahead" }
+      - { id: A17, slug: "missed-taxes-let-property-campaign-to-the-rescue", label: "[Let Property Campaign & HMRC voluntary disclosure] missed-taxes-let-property-campaign-to-the-rescue" }
+      - { id: A18, slug: "what-is-qualifying-income-for-mtd", label: "[MTD for ITSA] what-is-qualifying-income-for-mtd" }
+      - { id: A19, slug: "mtd-made-simple-for-landlords-with-jointly-owned-properties", label: "[MTD for ITSA] mtd-made-simple-for-landlords-with-jointly-owned-properties" }
+      - { id: A20, slug: "mtd-penalties-exemptions-and-what-to-watch", label: "[MTD for ITSA] mtd-penalties-exemptions-and-what-to-watch" }
+  B:
+    label: "Bucket B - Non-resident landlords / NRL + Double Taxation Agreements (DTAs) + Leaving the UK / expat landlord tax + Overseas / international property + ATED (Annual Tax on Enveloped Dwellings)"
+    picks:
+      - { id: B1, slug: "double-taxation-agreement-uk-and-isle-of-man", label: "[Double Taxation Agreements (DTAs)] double-taxation-agreement-uk-and-isle-of-man" }
+      - { id: B2, slug: "double-taxation-convention-dta-uk-and-spain", label: "[Double Taxation Agreements (DTAs)] double-taxation-convention-dta-uk-and-spain" }
+      - { id: B3, slug: "double-taxation-convention-uk-and-india", label: "[Double Taxation Agreements (DTAs)] double-taxation-convention-uk-and-india" }
+      - { id: B4, slug: "hmrcs-otm-letters-campaign-directed-at-ated-avoidance", label: "[ATED (Annual Tax on Enveloped Dwellings)] hmrcs-otm-letters-campaign-directed-at-ated-avoidance" }
+      - { id: B5, slug: "annual-tax-on-enveloped-dwellings-pro-and-cons", label: "[ATED (Annual Tax on Enveloped Dwellings)] annual-tax-on-enveloped-dwellings-pro-and-cons" }
+      - { id: B6, slug: "are-you-leaving-the-uk-permanently", label: "[Leaving the UK / expat landlord tax] are-you-leaving-the-uk-permanently" }
+      - { id: B7, slug: "arriving-in-the-uk", label: "[Leaving the UK / expat landlord tax] arriving-in-the-uk" }
+      - { id: B8, slug: "ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal" }
+      - { id: B9, slug: "ated-penalties-and-appeals", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-penalties-and-appeals" }
+      - { id: B10, slug: "ated-rates", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-rates" }
+      - { id: B11, slug: "ated-relief-clawback-occupation-by-a-non-qualifying-occupation", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-relief-clawback-occupation-by-a-non-qualifying-occupation" }
+      - { id: B12, slug: "ated-relief-for-related-persons-and-market-rent-a-complete-guide", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-relief-for-related-persons-and-market-rent-a-complete-guide" }
+      - { id: B13, slug: "ated-return-amendment-guide-when-how-tax-tips", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-return-amendment-guide-when-how-tax-tips" }
+      - { id: B14, slug: "ated-valuation-date", label: "[ATED (Annual Tax on Enveloped Dwellings)] ated-valuation-date" }
+      - { id: B15, slug: "automatic-exchange-of-information", label: "[Leaving the UK / expat landlord tax] automatic-exchange-of-information" }
+      - { id: B16, slug: "avoiding-common-mistakes-with-enveloped-dwelling-tax", label: "[ATED (Annual Tax on Enveloped Dwellings)] avoiding-common-mistakes-with-enveloped-dwelling-tax" }
+      - { id: B17, slug: "changes-nrl-companies", label: "[Non-resident landlords / NRL] changes-nrl-companies" }
+      - { id: B18, slug: "contaminated-land-remediation-and-risk-assessment", label: "[ATED (Annual Tax on Enveloped Dwellings)] contaminated-land-remediation-and-risk-assessment" }
+      - { id: B19, slug: "do-i-have-to-pay-uk-tax", label: "[Leaving the UK / expat landlord tax] do-i-have-to-pay-uk-tax" }
+      - { id: B20, slug: "dont-pay-twice-an-introduction-to-tax-treaties", label: "[Double Taxation Agreements (DTAs)] dont-pay-twice-an-introduction-to-tax-treaties" }
+  C:
+    label: "Bucket C - CGT — disposal & specific scenarios + Property development tax (trading vs investment) + Land Remediation Relief (LRR) + CIS / construction industry scheme + Structures & Buildings Allowance (SBA) + Tenancies and Renters' Rights Act + Anti-avoidance and case law + Wear-and-tear, replacement of domestic items + Capital vs revenue, repair vs improvement + Pre-letting expenses & cash-vs-accruals + Property finance — refinance, BLs, LIBOR/SONIA + Service charges and ground rent + Block management & service-charge accounting + Planning permission & change-of-use for landlords + Property accountant for cities / regions + Serviced accommodation, short-term lets & OTA platforms + HMOs (multi-occupancy, licensing) + Shared ownership + Build to Rent (BTR) — institutional residential + HR/employment for property businesses + Property data / forecast / market reports + Section 24 / mortgage interest restriction"
+    picks:
+      - { id: C1, slug: "3m-mortgage-fraud-convicts-accountant-and-financial-adviser", label: "[Property accountant for cities / regions] 3m-mortgage-fraud-convicts-accountant-and-financial-adviser" }
+      - { id: C2, slug: "accidental-landlord-taxes-a-complete-guide", label: "[Property accountant for cities / regions] accidental-landlord-taxes-a-complete-guide" }
+      - { id: C3, slug: "a-complete-guide-to-periodic-tenancy", label: "[Tenancies and Renters' Rights Act] a-complete-guide-to-periodic-tenancy" }
+      - { id: C4, slug: "air-bnb-and-post-covid", label: "[Serviced accommodation, short-term lets & OTA platforms] air-bnb-and-post-covid" }
+      - { id: C5, slug: "airbnb-landlords", label: "[Property accountant for cities / regions] airbnb-landlords" }
+      - { id: C6, slug: "anti-avoidance-rules-share-exchanges-and-reorganisations", label: "[Anti-avoidance and case law] anti-avoidance-rules-share-exchanges-and-reorganisations" }
+      - { id: C7, slug: "are-rent-arrears-skyrocketing-and-squeezing-landlords", label: "[Property accountant for cities / regions] are-rent-arrears-skyrocketing-and-squeezing-landlords" }
+      - { id: C8, slug: "are-you-a-property-investor-or-developer", label: "[Property development tax (trading vs investment)] are-you-a-property-investor-or-developer" }
+      - { id: C9, slug: "a-short-guide-planning-permission-in-uk", label: "[Planning permission & change-of-use for landlords] a-short-guide-planning-permission-in-uk" }
+      - { id: C10, slug: "bed-and-breakfasting", label: "[Tenancies and Renters' Rights Act] bed-and-breakfasting" }
+      - { id: C11, slug: "booking-com-a-complete-guide-for-the-hosts", label: "[Serviced accommodation, short-term lets & OTA platforms] booking-com-a-complete-guide-for-the-hosts" }
+      - { id: C12, slug: "brief-introduction-to-commercial-property-service-charge-accounts", label: "[Service charges and ground rent] brief-introduction-to-commercial-property-service-charge-accounts" }
+      - { id: C13, slug: "btl-investment-plymouth-cardiff-landlord-hotspots", label: "[Property accountant for cities / regions] btl-investment-plymouth-cardiff-landlord-hotspots" }
+      - { id: C14, slug: "buy-to-let-market-sees-record-high-returns", label: "[Property data / forecast / market reports] buy-to-let-market-sees-record-high-returns" }
+      - { id: C15, slug: "can-uk-landlords-still-use-llp-to-reduce-tax", label: "[Property accountant for cities / regions] can-uk-landlords-still-use-llp-to-reduce-tax" }
+      - { id: C16, slug: "case-laws", label: "[Anti-avoidance and case law] case-laws" }
+      - { id: C17, slug: "change-landlord-accountants", label: "[Property accountant for cities / regions] change-landlord-accountants" }
+      - { id: C18, slug: "cis-deduction-by-contractors-in-the-uk", label: "[CIS / construction industry scheme] cis-deduction-by-contractors-in-the-uk" }
+      - { id: C19, slug: "cis-templates", label: "[CIS / construction industry scheme] cis-templates" }
+      - { id: C20, slug: "commonhold-and-leasehold-reform-bill", label: "[Service charges and ground rent] commonhold-and-leasehold-reform-bill" }
