@@ -72,13 +72,156 @@ Production note: this page should embed (or link to) an actual JavaScript calcul
 - Legislation anchors: Schedule 41 FA 2008 para 5 + para 6A + para 13 + para 20 (behaviour categories + offshore uplift + mitigation matrix + reasonable excuse). TMA 1970 s.7 (notification obligation) + s.29 / s.34 / s.36 / s.36A (discovery + extended time limits) + s.86 (interest). FA 2009 s.101 (HMRC interest framework). Cross-reference §27.3, §27.6, §27.1, §27.5.
 - Case-law to ground: HMRC v Tooth [2021] UKSC 17 (deliberate behaviour test — controlling SC authority); Perrin v HMRC [2018] UKUT 156 (reasonable excuse four-stage test). Sessions should NOT manufacture authorities.
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — extended
 
-[Stage 2 populates from NETNEW_PROGRAM §4: voice + style (no em-dashes, no Tailwind in markdown, FAQ count match, 6-check quality bar) and the 19-step workflow.]
+### Authority URLs (Stage 2 surfaces; RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/2008/9/schedule/41`** — Schedule 41 FA 2008 (failure-to-notify penalties). RUN session reads para 5 (behaviour categories) + para 6A (offshore Cat 1/2/3 uplift framework) + para 13 (disclosure mitigation matrix) + para 20 (reasonable excuse) verbatim. The 12-month qualifier on the non-deliberate-unprompted 0% floor is in paragraph 13 (NOT Sch 24 — F-5 Wave 7 lock).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/7`** — TMA 1970 s.7 (notification of chargeability). The statutory anchor for the failure-to-notify obligation that Sch 41 enforces (typical LPC scenario).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/29`** — TMA 1970 s.29 (discovery assessments). Anchors the discovery-window architecture that the LPC calculator's counterfactual leverages.
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/34`** — TMA 1970 s.34 (4-year ordinary time limit).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/36`** — TMA 1970 s.36 (extended time limits): s.36(1) 6-year careless; s.36(1A) 20-year deliberate; s.36A 12-year offshore innocent-error per FA 2019.
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/86`** — TMA 1970 s.86 (interest on unpaid income tax + CGT). Continuously accruing from each year's due date; NOT mitigated by LPC.
+- **`https://www.gov.uk/guidance/let-property-campaign`** — HMRC's published Let Property Campaign guidance. RUN session re-verifies live URL + operational status (open since 9 September 2013).
+- **`https://www.gov.uk/government/publications/let-property-campaign-disclosure`** — HMRC LPC disclosure form / supporting guidance.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch71000`** — Compliance Handbook CH71000+ (Sch 41 failure-to-notify mechanics). Reads child pages for the para-by-para operational framing.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch80000`** — Compliance Handbook CH80000+ (penalty calculation worked examples + disclosure mitigation framework).
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch82400`** — CH82400+ specifically on penalty quality-of-disclosure assessment (the "telling / helping / giving access" framework HMRC applies within the floor/max bracket).
+- **`https://www.gov.uk/government/publications/offshore-evaders-penalties-territories`** — HMRC published Category 1 / Category 2 / Category 3 territory list (verify currency at write time; the list updates with treaty changes).
+- **`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2000`** — Property Income Manual PIM2000+ (rental income computation framework that feeds the calculator's tax-due input).
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: per §16.31 Wave 8 + Wave 9 5/5 dead-rate pattern, Stage 2 did not pre-fetch firm-domain URLs. RUN session uses Google Search at write time. Recommended search queries: "let property campaign penalty calculator UK", "LPC penalty estimator landlord", "Sch 41 disclosure calculator", "HMRC voluntary disclosure penalty calculation". Target: 3-5 firm-side pages from tax-investigation specialist firms + accountancy practices + LPC-specialist legal sites; ensure differentiation from sibling MW3 A12 LPC-orientation / A15 strategic-rationale / A17 emotional-rescue pages. Test if any UK firm has published a publicly-accessible LPC calculator (HMRC has not). -->`
+
+### Case-law
+
+- **HMRC v Tooth [2021] UKSC 17** — Supreme Court controlling authority on "deliberate" behaviour in the penalty context. The conduct must involve a conscious choice to omit / understate income knowing it should have been disclosed. RUN session cites where the calculator's behaviour-categorisation input box references "deliberate" and the page explains the legal threshold.
+- **Perrin v HMRC [2018] UKUT 156 (TCC)** — Upper Tribunal four-stage test for reasonable excuse under Sch 41 para 20. RUN session cites where the calculator's reasonable-excuse-defence boundary is described.
+- **HMRC v Hicks [2020] UKUT 12 (TCC)** — Upper Tribunal on the Sch 41 prompted-vs-unprompted disclosure test. RUN session cites at the prompted/unprompted input box where the legal definition matters.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Non-deliberate / unprompted / within-12-months / UK property: the 0% headline
+
+- **Hollingsworth-Estate, the recently-realised landlord:** inherited a property in late 2024; let it from January 2025; never registered for self-assessment for 2024/25. Gross rent April 2024 to April 2025 = £14,000; allowable deductions £4,200; net profit £9,800. Realises the failure in March 2026 — within 12 months of the 2024/25 tax-year-end (5 April 2025). Behaviour self-assessment: non-deliberate (genuinely overlooked the SA obligation as accidental landlord). No nudge letter received.
+- **Calculator inputs:** years = 2024/25 only; gross rent = £14,000; deductions = £4,200; behaviour = non-deliberate; status = unprompted; territory = Cat 1 UK; tax-year-end = 5 April 2025; realisation-date = March 2026 (within 12 months).
+- **Calculator output:** tax due on £9,800 net profit at marginal rate (basic 20% = £1,960 assuming no other income above PA, or higher 40% = £3,920 for a higher-rate taxpayer); interest = TMA s.86 from 31 January 2026 (due date for 2024/25 balance) at current rate (Bank base + 4pp; verify at write time); penalty = 0% (Sch 41 para 13 non-deliberate-unprompted-within-12-months floor).
+- **Operational point:** the 0% floor is the headline rescue. RUN session must teach that the 12-month qualifier runs from the date the tax became payable (typically 31 January following the tax year, NOT the tax-year-end itself — sessions occasionally muddle this) per Sch 41 para 13 verbatim. Hollingsworth-Estate's disclosure window for 0% closes ~31 January 2027 (12 months after the 2024/25 tax became payable on 31 January 2026).
+
+### Example 2 — Non-deliberate / unprompted / after-12-months / UK property: the 10% floor
+
+- **Rashleigh-Estate, the older-realisation landlord:** has 6 years of undisclosed rental on a single BTL property let since 2019. Realises the failure in 2026 — all 6 years are past the 12-month window (the most recent tax year, 2024/25, is on the borderline depending on exact realisation date). Gross rent £18,000/year × 6 = £108,000 cumulative; expenses 30% = £32,400; net cumulative profit £75,600. Behaviour: non-deliberate (sloppy assumption that rental income was the letting agent's responsibility). No nudge letter.
+- **Calculator inputs:** years 2019/20 to 2024/25; aggregate gross rent £108,000; aggregate deductions £32,400; behaviour non-deliberate; status unprompted; territory Cat 1 UK; per-year tax computation at marginal rate.
+- **Calculator output:** tax due across 6 years at marginal rate (basic / higher mix depending on profile); interest accrual TMA s.86 from each year's due date (cumulatively substantial — interest on 2019/20 has been accruing for ~6 years); penalty = 10% across all 6 years (Sch 41 para 13 non-deliberate-unprompted-after-12-months floor); maximum 30% Cat 1.
+- **Operational point:** the calculator should DISPLAY both the 10% floor (operative outcome) AND the 30% maximum (worst-case HMRC discretion) so the landlord sees the bracket they are negotiating within. Also display interest separately — interest on 6 years of unpaid 2019-2024 tax is typically the largest single line item, often exceeding the penalty.
+
+### Example 3 — Deliberate / prompted (nudge letter received) / UK property: the 35% prompted-disclosure floor
+
+- **Belmount-Estate, the post-nudge-letter landlord:** holds 4 BTL properties; HMRC sent a nudge letter on 12 February 2026 indicating awareness of likely undisclosed rental. Belmount-Estate has 5 years of undisclosed rental, gross rent £85,000/year, expenses 25% = £21,250/year, net profit £63,750/year. Behaviour self-assessment: deliberate but not concealed (the omission was a knowing choice not to declare; no false invoices or document destruction).
+- **Calculator inputs:** years 2020/21 to 2024/25; aggregate gross rent £425,000; aggregate deductions £106,250; behaviour deliberate-not-concealed; status PROMPTED (nudge letter received); territory Cat 1 UK.
+- **Calculator output:** tax due across 5 years substantial (£318,750 cumulative net profit at marginal rate); interest accrual cumulative; penalty = 35% across all 5 years (Sch 41 para 13 deliberate-not-concealed PROMPTED floor — the nudge letter cost Belmount-Estate the 20% unprompted floor); maximum 70% Cat 1.
+- **Operational point:** the calculator must surface the COUNTERFACTUAL — what would the penalty have been had Belmount-Estate disclosed unprompted before the nudge letter? Answer: 20% floor across 5 years. The 15-percentage-point delta (35% minus 20%) on £318,750 cumulative tax is the cost of having waited until HMRC indicated awareness. Sessions writing must illustrate this delta clearly to teach the rising-cost-of-delay dynamic.
+
+### Example 4 — Offshore Cat 2 / Deliberate / Unprompted: where the calculator routes to specialist
+
+- **Vandenberg-Estate, the offshore landlord:** UK-tax-resident, owns a residential rental property in a Cat 2 partial-info-exchange territory (e.g. certain Middle East or Caribbean jurisdictions per the HMRC published list). 8 years of undisclosed rental; gross local-currency rent equivalent to £35,000/year; expenses 20% = £7,000/year; net profit £28,000/year. Behaviour self-assessment: deliberate-but-not-concealed. No nudge letter. Pre-30-September-2018 years engage the FtC overlay (FA 2017 Sch 18 — 200% penalty cliff on top of Sch 41).
+- **Calculator inputs:** years cover 8 historic years some pre-30-September-2018; aggregate gross rent £280,000; aggregate deductions £56,000; behaviour deliberate-not-concealed; status unprompted; territory Cat 2 (1.5x uplift); pre-FtC years flagged.
+- **Calculator output:** tax due cumulative; interest accrual; Sch 41 para 13 floor 20% × 1.5x Cat 2 uplift = 30% effective floor on undisclosed tax; maximum 70% × 1.5x = 105% effective maximum. PLUS the FtC overlay for pre-30-September-2018 years (200% standard / 100% reduced — but FtC is OUT OF SCOPE for the LPC route per §27.6 architecture; this landlord needs the WDF + FtC route, not LPC alone).
+- **Operational point:** the calculator MUST route Vandenberg-Estate to specialist counsel rather than self-service LPC. The calculator's design includes a routing-to-specialist trigger when: (a) the territory is Cat 2 or Cat 3; (b) any pre-30-September-2018 offshore years are in scope (FtC overlay); (c) the deliberate-and-concealed self-assessment suggests CoP9 territory; (d) HMRC enquiry is already open. Sessions writing must NOT use the LPC calculator to produce a definitive number for these cases — the calculator's role is to flag the specialist boundary, not to compute through it.
+
+### Example 5 — Use-case for the calculator's "early-notify advantage" line
+
+- **Padworth-Estate, the on-the-fence landlord:** has 3 years of undisclosed rental on a single residential property. Most recent year (2024/25) is within the 12-month window for the 0% floor (deadline ~31 January 2027). Earlier 2 years (2022/23 + 2023/24) are past the 12-month window — 10% floor on those years. Behaviour: non-deliberate. Status: unprompted (no nudge letter).
+- **Calculator output ("early-notify advantage" line):** the calculator displays a separate line showing the marginal savings from disclosing NOW (before 31 January 2027) versus disclosing AFTER 31 January 2027. Disclosing now: 0% penalty on 2024/25 tax + 10% on 2022/23 + 2023/24. Disclosing after the deadline: 10% on all 3 years. The marginal saving is 10% × 2024/25 tax = a quantifiable "early-notify advantage" figure the landlord can use to schedule the disclosure.
+- **Operational point:** the calculator's most operationally-useful output for borderline landlords is the early-notify-advantage line, not just the total estimated penalty. The line gives the landlord a deadline-driven nudge to act NOW rather than defer.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: How does the Let Property Campaign penalty calculator work?**
+   A: The calculator takes inputs covering the years of undisclosed rental, gross rent and deductions per year, behaviour self-assessment (non-deliberate, deliberate, deliberate-and-concealed), prompted-or-unprompted disclosure status, and territory category (Cat 1 UK, Cat 2 partial-info-exchange offshore, Cat 3 no-info-exchange offshore). It computes estimated tax due at marginal rate, interest accrual under TMA 1970 s.86, and penalty estimate under Schedule 41 FA 2008 paragraph 13. The output is a planning estimate, not a definitive HMRC assessment.
+
+2. **Q: What are the Schedule 41 unprompted-disclosure floors?**
+   A: For non-deliberate behaviour: 0% if disclosed within 12 months of the tax becoming payable, otherwise 10%. For deliberate-not-concealed: 20% (and 35% if prompted). For deliberate-and-concealed: 30% (and 50% if prompted). The unprompted floors apply only while HMRC has not indicated awareness of the failure (no nudge letter, no enquiry, no Connect-system match notified).
+
+3. **Q: What is the difference between unprompted and prompted disclosure?**
+   A: Unprompted disclosure occurs where the landlord initiates the disclosure BEFORE HMRC has indicated awareness of the failure. The bright-line tests: no nudge letter received, no enquiry opened, no Connect-system match notified. A landlord who has received a nudge letter has prompted-disclosure status; the unprompted floors are unavailable. The differential (typically 10 to 20 percentage points) is the operationally most important variable for landlords still in the unprompted window.
+
+4. **Q: What does the 12-month qualifier in paragraph 13 mean?**
+   A: For non-deliberate failure-to-notify under Sch 41, the 0% unprompted floor applies only where disclosure is made within 12 months of the date the tax became payable (typically 31 January following the tax year). After 12 months, the unprompted floor for non-deliberate behaviour is 10%. This 12-month qualifier exists only in Sch 41 paragraph 13 — it is NOT in Schedule 24 FA 2007 paragraph 10 (inaccuracy penalties), which has no 12-month equivalent on its careless-unprompted floor. The F-5 Wave 7 lock teaches this distinction.
+
+5. **Q: How does the calculator handle offshore rental property?**
+   A: Sch 41 paragraph 6A imports the offshore Category structure. Cat 1 = UK + offshore-with-full-information-exchange (most EU + post-CRS Channel Islands etc); Cat 2 = offshore-with-partial-information-exchange; Cat 3 = offshore-with-no-information-exchange. The Category multipliers are 1.0x / 1.5x / 2.0x applied to both the floor and the maximum bracket. The calculator references the current HMRC-published territory list; sessions verify currency at write time.
+
+6. **Q: When does the calculator route me to specialist advice instead of LPC?**
+   A: The calculator surfaces a specialist-routing trigger where: (a) the behaviour self-assessment is deliberate-and-concealed (CoP9 / Contractual Disclosure Facility territory with criminal-prosecution exposure); (b) offshore Cat 2 / Cat 3 territory with pre-30-September-2018 years engaging the FtC overlay under FA 2017 Sch 18; (c) HMRC enquiry is already open (the disclosure happens within the open enquiry, not as standalone LPC); (d) total estimated liability where specialist disclosure-counsel adds disproportionate value.
+
+7. **Q: How does the calculator estimate the discovery counterfactual?**
+   A: The calculator displays what HMRC could assess if discovery comes first under TMA 1970 s.29: 4 years ordinary (s.34); 6 years careless (s.36(1)); 20 years deliberate (s.36(1A)); 12 years offshore innocent-error (s.36A). The discovered-cases prompted-disclosure floor (10% / 35% / 50%) is the operative penalty rather than the unprompted floor (0% / 20% / 30%). The differential is the rising-cost-of-delay metric.
+
+8. **Q: What about interest on the undisclosed tax?**
+   A: Interest accrues under TMA 1970 s.86 from each year's due date (typically 31 January following the tax year) and is NOT mitigated by LPC. The calculator estimates interest as a separate line item using HMRC's published rate (Bank base + 4pp; current rate verified at write time). For multi-year disclosures, interest can be the largest line item in the disclosure total.
+
+9. **Q: Is the calculator's output binding on HMRC?**
+   A: No. The calculator is a planning estimator; HMRC has discretion within the floor / maximum bracket and the actual penalty is set in the disclosure-response letter. HMRC considers the quality of the disclosure (the "telling / helping / giving access" framework at CH82400+) when fixing the penalty within the bracket. A complete, prompt, well-evidenced disclosure tends toward the floor; an incomplete or evasive disclosure tends toward the maximum.
+
+10. **Q: How does behaviour categorisation work?**
+    A: HMRC v Tooth [2021] UKSC 17 sets the controlling Supreme Court authority on "deliberate" behaviour — the conduct must involve a conscious choice to omit / understate income, knowing it should have been disclosed. Honest-mistake and careless-error populations sit in non-deliberate ("other"); knowing-omission populations sit in deliberate-not-concealed; active-concealment populations (false invoices, third-party-conduit bank accounts, document destruction) sit in deliberate-and-concealed. The calculator's behaviour input is the landlord's self-assessment; HMRC's final categorisation may differ.
+
+11. **Q: What is the early-notify advantage?**
+    A: The early-notify advantage is the differential between disclosing within the 12-month window (0% floor on non-deliberate behaviour) and disclosing after the window (10% floor). For a borderline year, this is a quantifiable saving — 10% of the year's undisclosed tax. The calculator displays this as a separate line item so the landlord sees the deadline-driven cost of delay.
+
+12. **Q: How does LPC interact with the Worldwide Disclosure Facility?**
+    A: LPC accommodates UK-source residential rental income. WDF is for offshore-source income or assets. A landlord with UK rental income disclosed via LPC and separate offshore rental income disclosed via WDF uses both routes in parallel (each for its respective stream). The calculator on this page is calibrated for LPC; the WDF computation framework is similar but has separate operational requirements outside the calculator's scope.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy. Use commas, parentheses, full stops, middle dots, or restructure the sentence.
+- **Specific over generic.** Named legislation (Sch 41 FA 2008 paras 5 / 6A / 13 / 20; TMA 1970 s.7 / s.29 / s.34 / s.36 / s.86); specific paragraph numbers; anonymised personas.
+- **No real names.** Anonymised personas (Hollingsworth-Estate, Rashleigh-Estate, Belmount-Estate, Vandenberg-Estate, Padworth-Estate in the worked examples above).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Do not duplicate in body.
+- **CSS in markdown:** semantic HTML only. No Tailwind classes. `<aside>` styled by global CSS.
+- **FAQs:** 10-14 entries in frontmatter `faqs:` array, auto-emitted as FAQPage JSON-LD by the build.
+- **Calculator component:** likely a React component at `Property/web/src/components/calculators/LpcPenaltyCalculator.tsx` per the /calculators pattern. Stage 2 + RUN session decides component-vs-table-vs-iframe; the seed defines content specification. Inputs and outputs must match the Sch 41 para 13 matrix verbatim; do NOT introduce a custom mitigation framework.
+- **Anti-templating:** this page is the **calculator-led LPC penalty estimation page**. RUN session must hold this lane distinct from sibling A12 LPC-orientation (descriptive frame) / A15 strategic-rationale (philosophical frame) / A17 emotional-rescue (panic-moment frame) / A3 benefits-tally (tactical-numerical narrative) / A2 DDS umbrella (product-architecture frame). The calculator IS the differentiator — RUN session must design and embed an actual JavaScript calculator, not a narrative description of one. The F-5 Wave 7 lock on the Sch 41 12-month qualifier (NOT in Sch 24) is the load-bearing factual differentiation.
+- **Quality bar (six checks):** zero em-dashes, zero Tailwind, FAQ schema count matches frontmatter array, meta title ≤ 62 chars, meta description ≤ 158 chars, internal links resolve, calculator computes the matrix correctly across all 18 input-grid cells.
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §27.3 Sch 41 mitigation matrix + §27.6 LPC route + §27.1 discovery time limits + §27.5 CoP9 boundary).
+2. Claim this page in MW3 page tracker (⬜ → 🟡 with UTC timestamp).
+3. Read this brief (framing differentiator, key questions, manager pre-decisions, research target list).
+4. Fetch + read competitor URLs via session-side Google Search at write time (per §16.31 dead-rate pattern).
+5. Read closest-existing pages: sibling MW3 A12 LPC-orientation / A15 strategic-rationale / A17 emotional-rescue / A3 benefits-tally / A2 DDS / A13 SA-penalty-regime; any pillar pages on LPC or rental-income taxation; existing /calculators page patterns.
+6. Plan H2 / H3 outline + meta + 10-14 FAQs + CTA placements — STRICTLY in the calculator-led lane; the calculator IS the page; narrative supports and disclaimers the calculator.
+7. Verify factual claims against authorities per §16.35 (Sch 41 FA 2008 paras 5 / 6A / 13 / 20 + TMA 1970 s.7 / s.29 / s.34 / s.36 / s.86 + LPC guidance + Cat 1/2/3 territory list verbatim WebFetched from legislation.gov.uk + gov.uk).
+8. Implement calculator component (React) with the 18-cell input grid + floor/max output + early-notify-advantage line + counterfactual line + specialist-routing trigger.
+9. Write markdown at `Property/web/content/blog/let-property-campaign-penalty-calculator.md` (full frontmatter list per §4); embed calculator component.
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve, calculator passes manual test cells.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none identified at Stage 2).
+13. Register in `monitored_pages` Supabase table.
+14. Commit on session's MW3 worktree branch (per-page commit; do NOT merge to main from worktree).
+15. Fill per-page work-log at bottom of this brief.
+16. Mark ✅ done in MW3 tracker with 1-line Notes (body word count + 1-sentence summary).
+17. Append site-wide issues to MW3 flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+### Stage 2 author entry
+
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent A (batch M3-A-B3) on 2026-05-27.
+- **Stage 2 extensions added:** authority URL list (13 anchors covering Sch 41 FA 2008 + TMA 1970 s.7/s.29/s.34/s.36/s.86 + LPC guidance + Compliance Handbook CH71000/CH80000/CH82400 + offshore-evaders-penalties-territories list + PIM2000); 5 worked examples covering 0%-headline-unprompted-within-12-months (Hollingsworth-Estate), 10%-floor-unprompted-after-12-months (Rashleigh-Estate), 35%-prompted-disclosure-after-nudge-letter (Belmount-Estate), offshore-Cat-2-with-FtC-overlay-routes-to-specialist (Vandenberg-Estate), early-notify-advantage-line-for-borderline-landlord (Padworth-Estate); 12 FAQs anchored to calculator mechanics + Sch 41 floors + behaviour categorisation + offshore uplift + discovery counterfactual + specialist-routing + early-notify advantage + LPC-vs-WDF boundary; voice + style + 19-step workflow stubs verbatim per §4.8 + §7 with calculator-component implementation step added at step 8.
+- **§16.36 statutory-citation cross-check:** Sch 41 FA 2008 paras 5 + 6A + 13 + 20 verified live at Stage 1 author 2026-05-27 against legislation.gov.uk current-as-amended text. 12-month qualifier in para 13 confirmed; F-5 Wave 7 lock alignment confirmed (qualifier is in Sch 41 only, NOT Sch 24). TMA 1970 s.29 + s.34 + s.36 + s.36A discovery architecture verified. HMRC v Tooth [2021] UKSC 17 + Perrin v HMRC [2018] UKUT 156 verified against UKSC + UT published judgments. HMRC late-payment interest rate (Bank base + 4pp) flagged as rate-by-reference per §16.27. Cat 1/2/3 territory list flagged as currency-sensitive — RUN session re-verifies at write time.
+- **Anti-templating note:** the calculator IS the differentiator. RUN session must implement an actual JavaScript calculator (React component embedded in the markdown content), not a narrative description of one. The 18-cell input grid (3 behaviour bands × 2 prompted/unprompted × 3 territory categories) is the canonical structure; the early-notify-advantage line is the operationally-most-useful output for borderline landlords. The specialist-routing trigger must engage on Cat 2/3 + pre-30-September-2018 (FtC overlay) + deliberate-and-concealed (CoP9) + open-HMRC-enquiry. Cannibalisation risk against A12 / A15 / A17 / A3 / A2 / A13 is structural — the calculator-led intent is distinct from each. The F-5 Wave 7 lock (Sch 41 12-month qualifier; Sch 24 no equivalent) is the load-bearing factual differentiation; sessions writing must NOT collapse the two Sch instruments.
+
+### RUN session entry (populate at write time)
+
+[RUN session records: H1 chosen, meta title + description chosen, competitor URLs fetched + key takeaways, existing-page review notes, citations added, internal links added, calculator component implementation notes, build attempts pass / fail, six-check verification, flags raised, 2-3 sentence summary.]
 
 ---
 
