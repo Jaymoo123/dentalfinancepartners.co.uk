@@ -52,13 +52,145 @@ The page must also handle the under-discussed reality: under TMA 1970 s.8 the st
 - Legislation anchors RUN session must verify at write time: TMA 1970 s.8 (deadlines, all subsections cited above); s.7 (notification); Sch 55 FA 2009 (late-filing penalty matrix); Sch 56 FA 2009 (late-payment matrix); F(No.2)A 2017 Sch A1 + SI 2021/1076 (MTD ITSA mandate architecture).
 - Case-law to ground: Perrin v HMRC [2018] UKUT 156 (reasonable excuse four-stage test); HMRC v Hok Ltd [2012] UKUT 363 (Sch 55 jurisdictional limit — FTT cannot consider fairness, only reasonable excuse).
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — extended
 
-[Stage 2 populates from NETNEW_PROGRAM §4.]
+### Authority URLs (Stage 2 surfaces; RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/8`** — TMA 1970 s.8 (personal return + deadlines). RUN session quotes subsections (1D) (1F) (1G) verbatim.
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/7`** — TMA 1970 s.7 (notification of liability).
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/55`** — Sch 55 FA 2009 (late-filing penalties). £100 initial + daily £10 + 5%/£300 at 6 months + further at 12 months.
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/56`** — Sch 56 FA 2009 (late-payment penalties). 5/5/5 escalator for non-MTD; accelerated 3%/3%/10% from 6 April 2026 for MTD ITSA filers per §19.7.
+- **`https://www.legislation.gov.uk/ukpga/2017/32/schedule/A1`** — F(No.2)A 2017 Sch A1 (MTD digital reporting powers).
+- **`https://www.legislation.gov.uk/uksi/2021/1076`** — SI 2021/1076 Income Tax (Digital Requirements) Regs (as amended). Operative MTD ITSA regs.
+- **`https://www.gov.uk/self-assessment-tax-returns`** — gov.uk SA topic landing.
+- **`https://www.gov.uk/government/publications/self-assessment-tax-return-sa100`** — gov.uk SA100 paper-pack request page. Verify URL at write time (HMRC has restructured paper-pack pages 2024-2025).
+- **`https://www.gov.uk/file-your-self-assessment-tax-return`** — gov.uk online portal landing.
+- **`https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam121160`** — SAM121160 paper-filing deadline + electronic deadline + late notice exception.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch61000`** — CH61000+ (Sch 55 penalty commentary).
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: session-side WebSearch at write time per §16.31. Recommended search queries: "self assessment paper vs online deadline 2026", "HMRC paper SA100 request landlord", "online filing self assessment vs paper benefits". Target: 3-5 firm-side pages — accountancy practices (TaxAid, LITRG, MoneySavingExpert tax section) + tax-software vendors. -->`
+
+### Case-law
+
+- **Perrin v HMRC [2018] UKUT 156 (TCC)** — reasonable excuse four-stage test (relevant on appeal of Sch 55 £100 penalty for missed paper deadline).
+- **HMRC v Hok Ltd [2012] UKUT 363 (TCC)** — Sch 55 jurisdictional limit (FTT cannot consider general fairness, only reasonable excuse).
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Single-property landlord choosing paper vs online for 2025/26 (regular SA, below MTD threshold)
+
+- **Mr Tasburgh** owns 1 BTL flat in Sheffield; gross rental £8,400/year, net profit £4,200 after agent fees + repairs. Other income: employed PAYE salary £35,000. Total taxable income ~£39,200 — comfortably below phase 1 MTD ITSA threshold (£50k) AND phase 2 (£30k qualifying income). NOT in scope of MTD ITSA until phase 3 from 6 April 2028 IF qualifying income (gross rental £8,400) crosses £20,000 (which it does not on current facts).
+- **Filing-mode choice:** either route works statutorily. Paper deadline 31 October 2026; online deadline 31 January 2027. Mr Tasburgh has no Government Gateway credential.
+- **Decision drivers:** (i) deadline cushion — online buys 3 extra months; (ii) operational risk — paper-pack request from gov.uk takes 5-10 working days, leaving narrow margin if requested mid-October; (iii) refund speed — N/A on facts (Mr Tasburgh owes tax rather than is owed refund); (iv) MTD continuity — Mr Tasburgh is unlikely to enter MTD scope at phase 3 unless rental gross income grows to £20k+; (v) error-checking — online portal pre-validates arithmetic.
+- **Recommendation in page narrative:** online, even though paper is statutorily live. Reasons: deadline cushion, error-checking, refund-speed contingency, ability to amend within 12 months without re-submitting a complete paper return.
+
+### Example 2 — Landlord crossing MTD threshold for 2027/28 (phase 2)
+
+- **Mrs Quainton** owns 4 BTL properties; gross rental £36,000/year, net profit £18,000. Self-employed bookkeeper on the side: gross self-employment income £6,000. Total qualifying income £36,000 + £6,000 = £42,000 → above phase 2 threshold (£30k from 6 April 2027). The 2025/26 SA return is the determining return per §19.1 lock for phase 2; the 2026/27 SA return determines phase 3.
+- **Filing-mode path:** Mrs Quainton files 2024/25 + 2025/26 + 2026/27 returns in the regular SA cycle (any mode statutorily available). From 6 April 2027 onwards she is mandated to MTD ITSA and cannot use the paper SA100 route for 2027/28 or later years while in scope.
+- **Recommendation in page narrative:** start using online SA NOW (for 2024/25 and onwards) to build Government Gateway credential + agent ASA flow + software fluency before MTD mandate. The transition to MTD ITSA quarterly + EoPS + final declaration is operationally smoother where the landlord already has an online-SA workflow rather than a paper-SA workflow.
+
+### Example 3 — Digital exclusion case (paper still appropriate)
+
+- **Mr Hodgekiss** is 78, lives in rural Northumberland with no broadband, has never owned a computer, and his single income source is a small inherited rental property (£5,200/year net profit) plus his state pension. Total income ~£17,000.
+- **HMRC digital exclusion policy:** HMRC's reasonable-excuse / digital-exclusion policy permits paper filing for filers with genuine grounds (no internet access, religious exemption, disability impairing online use). The policy operates as a discretionary HMRC concession applied within s.8 not a formal statutory exemption.
+- **Operational flow:** Mr Hodgekiss requests a paper SA100 pack from gov.uk by phone (the paper-pack request page also accepts phone request). He files the SA100 + SA105 by 31 October 2026 for the 2025/26 tax year. If HMRC delays processing the request close to the deadline, Mr Hodgekiss's reasonable-excuse defence under Sch 55 para 23 protects him from the £100 penalty.
+- **Forward path:** if MTD ITSA mandate catches Mr Hodgekiss at phase 3 (unlikely on current facts — £5,200 net + below £20k qualifying income gross), the digital-exclusion policy would carry forward to exempt him from MTD ITSA digital requirements. Cross-reference §19 lock for the MTD-side exemption framework.
+
+### Example 4 — Late-notice scenario under TMA s.8(1F) and (1G)
+
+- **Mrs Welwick** received an HMRC notice to file on 15 August 2026 (after the 31 July notice-window boundary, before 31 October). She is a new BTL landlord who became chargeable to income tax on rental income in 2025/26 and notified under TMA s.7 on time.
+- **TMA s.8(1F) Exception 1 applies:** notice given between 31 July and 31 October → paper deadline is 3 months from date of notice; online deadline remains 31 January. So paper deadline = 15 November 2026; online = 31 January 2027. The 3-month-from-notice paper window can be tight.
+- **TMA s.8(1G) Exception 2 (illustrative variant):** if notice had instead been given on 15 November 2026 (after 31 October), both paper and online deadlines would be 3 months from notice (15 February 2027), eliminating the standard online advantage.
+- **Page framing:** the late-notice subsections of TMA s.8 are technical but matter for landlords whose first SA notice arrives late in the cycle. The page should walk through (1D) (1F) (1G) explicitly so readers can identify their own situation.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: What are the self-assessment filing deadlines for paper and online returns?**
+   A: Under TMA 1970 s.8(1D), paper returns must be delivered on or before 31 October following the end of the tax year; online (electronic) returns must be delivered on or before 31 January. So for the 2025/26 tax year (year ending 5 April 2026), paper is due 31 October 2026 and online is due 31 January 2027. Late-notice scenarios under s.8(1F) and (1G) adjust the deadlines: notice given after 31 July gives 3 months from notice for paper; notice given after 31 October gives 3 months from notice for both modes.
+
+2. **Q: Why is there a deadline asymmetry between paper and online filing?**
+   A: The asymmetry is statutory under TMA 1970 s.8(1D). HMRC needed time historically to process paper returns manually; the 31 October cutoff lets HMRC complete that work before the 31 January payment deadline. Online returns require no manual processing so the deadline remains aligned with the payment date. The asymmetry has effectively given an additional 3 months of preparation time to online filers since the online portal launched in the early 2000s.
+
+3. **Q: Can I still get a paper SA100 pack in 2026?**
+   A: Yes, but HMRC no longer routinely posts paper packs. You must request one from the gov.uk paper-pack request page (or by phone). Paper-pack distribution has been constrained since the 2022/23 cycle; request 3-4 weeks before the 31 October deadline to allow for processing time. HMRC may signpost you to the online portal first; if you have a digital-exclusion reasonable-excuse ground, state it clearly in the request.
+
+4. **Q: What is the MTD ITSA phase-out for paper filing?**
+   A: From 6 April 2026, landlords with qualifying income above £50,000 are mandated into MTD ITSA and cannot use the SA100 paper route while in scope. The phase 2 threshold (£30,000) takes effect from 6 April 2027; phase 3 (£20,000) from 6 April 2028. Each phase is set by §19.1 lock against the prior-but-one tax year's return data. Once mandated into MTD ITSA, a landlord's reporting cycle moves to four quarterly updates plus End of Period Statement plus final declaration via MTD-recognised software.
+
+5. **Q: Who is excluded from MTD ITSA and can therefore continue using paper SA?**
+   A: Limited companies (separate CT regime, not in MTD ITSA scope per §19.3 lock); partnerships (currently deferred to a date TBC); trustees filing SA900; persons with qualifying income below the current phase threshold; persons granted formal MTD ITSA exemption on digital-exclusion grounds. Trustees and partnerships use SA900 / SA800 forms that are not yet MTD-compatible; this is the principal long-running paper-or-online filer category.
+
+6. **Q: What is HMRC's digital-exclusion policy and how do I claim it?**
+   A: HMRC's digital-exclusion policy allows paper filing for filers with reasonable-excuse grounds — no internet access, religious exemption, or disability impairing online use. The policy operates as HMRC discretion applied within s.8, not as a separate statutory exemption. Apply informally via phone or letter; HMRC will grant in genuine cases. If HMRC refuses, the refusal can be challenged via the reasonable-excuse defence under Sch 55 para 23 on appeal to the First-tier Tribunal under TMA 1970 s.31A.
+
+7. **Q: What forms does paper filing involve?**
+   A: The main return is SA100 (10-12 pages). Supplementary pages depending on income: SA105 (UK property), SA108 (capital gains), SA106 (foreign income including foreign property), SA110 (tax calculation summary). A landlord with one UK BTL files SA100 + SA105 + SA110. A landlord with offshore property files SA100 + SA106 + SA110. Online filing surfaces the same fields through a single integrated guided flow without producing the supplementary forms as standalone documents.
+
+8. **Q: What is the late-filing penalty interaction if I miss the paper deadline but file online by 31 January?**
+   A: The Schedule 55 FA 2009 £100 initial penalty attaches only if NEITHER route is satisfied by the relevant deadline. A landlord who plans paper but misses 31 October can still file online by 31 January without a Sch 55 penalty. The reverse is not symmetric: a paper return arriving even one day after 31 October triggers the £100 immediately, even if HMRC physically receives the envelope on, say, 5 November.
+
+9. **Q: What is the refund-speed difference between paper and online?**
+   A: HMRC's published operational guidance puts online refund processing at 14-21 working days from filing in the ordinary case; paper refunds typically take 6-8 weeks because of manual handling. Both routes can take longer if the return is selected for compliance review. These figures are HMRC operational guidance not statute and may move with operational pressures; RUN session verifies current figures at write time.
+
+10. **Q: How does the agent-authorisation flow differ?**
+    A: Online filing supports the Agent Services Account (ASA) flow alongside the legacy 64-8 paper authorisation. From 6 April 2026 onwards, MTD ITSA mandates the ASA flow (the legacy 64-8 OSA route does not work for MTD ITSA per §19.10 lock). Paper filing supports the 64-8 paper authorisation only, with manual HMRC processing of the 64-8 form before the agent can act. Online filing is operationally faster for engaging a new agent mid-cycle.
+
+11. **Q: What Government Gateway credential do I need for online filing?**
+    A: A Government Gateway User ID + password combination, registered specifically for HMRC self-assessment. Identity verification involves SMS verification + ID document upload or activation-code-by-post for landlords without ID documents online-verifiable. The activation code takes 7-10 working days to arrive by post. First-time online filers should start the credential process at least 3-4 weeks before their target filing date to allow for activation.
+
+12. **Q: I am below the MTD threshold today but expect to cross it in 2-3 years. Should I file paper or online for the bridge years?**
+    A: Online. Building the Government Gateway credential, getting comfortable with the online portal, and (if you use an agent) setting up the Agent Services Account before mandate makes the MTD ITSA transition materially smoother. Paper filing for the bridge years gives no benefit to a landlord who will be mandated into MTD ITSA digital reporting in 2-3 years; it just defers the credential setup to a more stressful moment.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy.
+- **Specific over generic.** Named legislation (TMA 1970 s.7 / s.8(1D)(1F)(1G), Sch 55 FA 2009, F(No.2)A 2017 Sch A1, SI 2021/1076), specific section numbers, anonymised personas.
+- **No real names.** Anonymised personas (Tasburgh, Quainton, Hodgekiss, Welwick in worked examples).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 10-14 entries in frontmatter `faqs:` array.
+- **Anti-templating:** highest risk is collapsing into MTD-architecture sibling pages (A6 phase-3, A11 LtdCo, A16 top-line, A18 residential, A19 joint-property, A20 penalties). RUN session must hold the **filing-mode comparison within MTD transition timeline** angle distinctly. The page is for the bridge population still inside regular SA.
+- **Quality bar (six checks).**
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §19 MTD ITSA for phase-out context, §27 penalty + record retention).
+2. Claim this page in MW3 tracker.
+3. Read this brief.
+4. Fetch + read competitor URLs via session-side Google Search.
+5. Read closest-existing pages: sibling MW3 A6 (phase 3), A11 (LtdCo), A16 (top-line), A20 (penalties), A13 (general penalty); existing operational SA-filing pages.
+6. Plan H2 / H3 outline + meta + 10-14 FAQs + CTA placements — STRICTLY in the paper-vs-online filing-mode angle. Lead with the s.8 deadline asymmetry, anchor with the MTD-phase-out timeline, close with the bridge-population recommendation.
+7. Verify factual claims per §16.35 (TMA s.8 subsections, Sch 55 / Sch 56 mechanics, MTD ITSA phase thresholds + dates).
+8. Fetch hero image.
+9. Write markdown at `Property/web/content/blog/comparing-online-and-paper-self-assessment-tax-returns.md`.
+10. Build clean.
+11. Six verifications.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit on session branch.
+15. Fill per-page work-log.
+16. Mark ✅ done in tracker.
+17. Append flags.
+18. Append discoveries.
+19. Claim next page.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+### Stage 2 author entry
+
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent A (batch M3-A-B1) on 2026-05-27.
+- **Stage 2 extensions added:** authority URL list anchored to legislation.gov.uk + gov.uk + HMRC SAM + CH manual paths; 4 worked examples covering bridge-population below-MTD landlord (online recommended), crossing-threshold landlord (online for MTD continuity), digital-exclusion case (paper appropriate), and late-notice TMA s.8(1F)/(1G) variant; 12 FAQs anchored to s.8 subsection mechanics, paper-pack request operational reality, MTD phase-out, digital-exclusion policy, forms involved, Sch 55 penalty asymmetry, refund speed, agent flow, Government Gateway credential, and bridge-population recommendation; voice + style + 19-step workflow stubs verbatim.
+- **§16.36 statutory-citation cross-check:** TMA 1970 s.8 subsections (1D) (1F) (1G) verified live 2026-05-27 (Stage 1 author); MTD ITSA threshold timeline anchored to §19.1 lock verification 2026-05-22. No new drift catches at Stage 2 cross-check.
+- **Anti-templating note:** seven MTD-architecture sibling pages in same wave. RUN session must hold the **paper-vs-online filing-mode within regular SA universe** angle distinctly. The page is for the bridge population; MTD-architecture content should reference siblings rather than duplicate.
+
+### RUN session entry (populate at write time)
+
+[RUN session records: H1 chosen, meta title + description, competitor URLs fetched, existing-page review notes, citations added, internal links added, build attempts, six-check verification, flags raised, summary.]
 
 ---
 
