@@ -70,13 +70,161 @@ The page combines five rescue strands: (1) **acknowledgement** — name the pani
 - Legislation anchors: Schedule 41 FA 2008 paras 5 / 13 / 20 (behaviour categories + mitigation matrix + reasonable excuse). TMA 1970 s.7 (notification obligation) + s.29 / s.34 / s.36 / s.36A (discovery + extended time limits) + s.28A (closure notices) + s.86 (interest). FA 2009 s.101 (HMRC interest framework). Cross-reference §27.6, §27.3, §27.1, §27.4, §27.5.
 - Case-law to ground: limited applicability for emotional-rescue framing. Perrin v HMRC [2018] UKUT 156 (reasonable excuse — controlling) is the closest authority for the reasonable-excuse extension (e.g. bereavement or illness-driven late realisation); HMRC v Tooth [2021] UKSC 17 (deliberate behaviour test — controlling SC) for the boundary between careless rescue and deliberate-fraud CoP9 territory.
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — extended
 
-[Stage 2 populates from NETNEW_PROGRAM §4: voice + style (no em-dashes, no Tailwind in markdown, FAQ count match, 6-check quality bar) and the 19-step workflow.]
+### Authority URLs (Stage 2 surfaces; RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/2008/9/schedule/41`** — Schedule 41 FA 2008 (failure-to-notify penalties). RUN session reads para 5 + para 13 verbatim for the rescue floor architecture (0% unprompted-non-deliberate-within-12-months + 10% / 20% / 30% unprompted vs 10% / 35% / 50% prompted).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/7`** — TMA 1970 s.7 (notification of chargeability — the obligation the rescue remediates).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/28A`** — TMA 1970 s.28A (closure-notice architecture — the closure-of-exposure mechanism on LPC acceptance).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/29`** — TMA 1970 s.29 (discovery assessments — the counterfactual).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/34`** — TMA 1970 s.34 (4-year ordinary time limit).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/36`** — TMA 1970 s.36 (extended time limits: s.36(1) 6-year careless; s.36(1A) 20-year deliberate; s.36A 12-year offshore innocent-error).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/86`** — TMA 1970 s.86 (interest on unpaid tax — continuously accruing, NOT mitigated by LPC).
+- **`https://www.gov.uk/guidance/let-property-campaign`** — HMRC's published LPC guidance. The rescue route's primary anchor.
+- **`https://www.gov.uk/government/publications/let-property-campaign-disclosure`** — HMRC LPC disclosure form / supporting guidance.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch150000`** — Compliance Handbook CH150000+ (disclosure mitigation operational guidance — the routing-by-route-architecture anchor).
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch71000`** — Compliance Handbook CH71000+ (Sch 41 failure-to-notify mechanics).
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch80000`** — Compliance Handbook CH80000+ (penalty calculation worked examples).
+- **`https://www.gov.uk/government/publications/code-of-practice-9`** — HMRC Code of Practice 9 (CoP9) published material. RUN session anchors the CoP9 boundary statement — when to route AWAY from LPC.
+- **`https://www.gov.uk/government/publications/worldwide-disclosure-facility-make-a-disclosure`** — WDF published guidance. RUN session anchors the LPC-vs-WDF boundary for offshore-source rental.
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: per §16.31 Wave 8 + Wave 9 5/5 dead-rate pattern, Stage 2 did not pre-fetch firm-domain URLs. RUN session uses Google Search at write time. Recommended search queries: "I missed declaring rental income help", "accidental landlord undisclosed rental HMRC", "Let Property Campaign rescue landlord", "HMRC nudge letter rental property what to do". Target: 3-5 firm-side pages from tax-investigation specialist firms + accountancy practices + accidental-landlord-resource sites; ensure differentiation from sibling MW3 A12 LPC-orientation / A14 calculator / A15 strategic-rationale / A3 benefits-tally pages. Emotional-rescue tonal register is distinctive — most competitor pages on "missed rental income" tend to be either alarmist or breezy; the calm-structural-action-oriented register is the deliberate differentiator. -->`
+
+### Case-law
+
+- **Perrin v HMRC [2018] UKUT 156 (TCC)** — Upper Tribunal four-stage test for reasonable excuse. RUN session cites at the reasonable-excuse extension to the rescue framework where bereavement or illness explains the late realisation.
+- **HMRC v Tooth [2021] UKSC 17** — Supreme Court controlling authority on "deliberate" behaviour. RUN session cites at the boundary between careless-rescue (LPC) and deliberate-fraud-with-criminal-prosecution-exposure (CoP9 territory) — the page's most important routing decision.
+- **HMRC v Hicks [2020] UKUT 12 (TCC)** — Upper Tribunal on the Sch 41 prompted-vs-unprompted disclosure test. RUN session cites at the nudge-letter-status paragraph where the unprompted/prompted boundary matters.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — The accidental-landlord realisation moment
+
+- **Kettering-Estate, the accidental landlord:** moved out of her former main residence in 2019 and let it via a letting agent. Has been receiving net-of-agent-fees payments into her bank account every month since. In January 2026, while preparing her annual tax return for the first time (she has been outside SA on PAYE-only income), her accountant asks about the property and the rental income. Kettering-Estate realises with horror that 6 tax years of rental income (2019/20 to 2024/25) have never been declared. Gross rent £14,000/year × 6 = £84,000 cumulative; expenses 30% = £25,200; net cumulative profit £58,800.
+- **Rescue routing:** LPC is the correct route. Behaviour self-assessment: non-deliberate (Kettering-Estate genuinely did not know rental income required a tax return — a plausible non-deliberate stance for an accidental landlord without prior SA experience). Status: unprompted (no nudge letter, no enquiry).
+- **Penalty exposure:** Sch 41 para 13 unprompted floors apply. 2024/25 within 12-month window — 0% floor; 2019/20 to 2023/24 past 12-month window — 10% floor. Cumulative tax due ~£15,000-£25,000 (depending on marginal rate band); interest cumulative ~£3,500-£5,500; penalty cumulative ~£1,400-£2,400 (10% × ~£11,800-£20,800 cumulative-past-12-month tax).
+- **What Kettering-Estate must NOT do:** (a) file an amended 2024/25 SA return adding the rental — wrong route; (b) call HMRC and explain ad hoc — flips to prompted-status; (c) panic and approach via CoP9 — wrong route for careless / accidental behaviour; (d) pay HMRC a guess amount before disclosing — creates accounting complications.
+- **Operational point:** the accidental-landlord profile is THE most common LPC rescue scenario. Sessions writing must tonally calibrate to the realisation moment — calm + structural + immediate-action, without alarmism or breezy reassurance.
+
+### Example 2 — The nudge-letter-just-arrived scenario
+
+- **Linstead-Estate, the post-nudge-letter landlord:** received a HMRC nudge letter dated 8 March 2026 indicating awareness of likely undisclosed rental on a single BTL property he holds in his own name. Has been letting since 2022; gross rent £16,000/year × 3 = £48,000 cumulative. The nudge letter triggers immediate-action mode.
+- **Rescue routing:** LPC is STILL the correct route, but the disclosure-status has shifted from unprompted to PROMPTED for the years HMRC has identified in the nudge letter. Behaviour self-assessment: non-deliberate (assumed letting agent reported it on his behalf — a plausible non-deliberate stance; reality: letting agents do NOT report landlord rental income to HMRC under standard arrangements; the §19.13 enhanced reporting framework is for MTD ITSA support, not standalone rental reporting).
+- **Penalty exposure:** Sch 41 para 13 PROMPTED floors apply because of the nudge letter. 10% floor on all 3 years (non-deliberate-prompted). Cumulative tax due ~£8,000-£14,000; interest cumulative ~£1,500-£2,500; penalty cumulative ~£800-£1,400.
+- **What Linstead-Estate must NOT do:** (a) ignore the nudge letter — HMRC will escalate to formal enquiry within 30-90 days; (b) reply to HMRC directly without route-assessment — risks a worse position than LPC; (c) panic and approach via CoP9 — wrong route for the conduct profile; (d) try to argue unprompted-status post-nudge-letter — Sch 41 paragraph 13 framework explicitly characterises post-nudge-letter as prompted for the identified years.
+- **Operational point:** the nudge letter changes the disclosure-status for the IDENTIFIED years but does NOT necessarily lock all years into prompted-status. If Linstead-Estate has additional undisclosed rental on a different property not mentioned in the nudge letter, those years may retain unprompted-status. Stage 2 + RUN must teach this nuance carefully — over-broad characterisation costs the landlord money.
+
+### Example 3 — The inherited-portfolio-discovery scenario
+
+- **Mortlake-Estate, the executor / new landlord:** inherited a 4-property residential portfolio in 2024 following the death of a parent. Has continued to receive the rental income but has been treating it as inherited capital (it is not — rental income is income, not inheritance). The deceased had been declaring the rental income on their own SA returns; Mortlake-Estate did not realise the obligation transferred to him. 2024/25 gross rental income £52,000 (above £50k threshold — also in MTD ITSA scope from April 2026). 2024/25 tax never declared.
+- **Rescue routing:** LPC is the correct route. Behaviour self-assessment: non-deliberate (genuine inheritance-treatment misunderstanding; bereavement context as supporting reasonable-excuse fact for any reasonable-excuse extension). Status: unprompted.
+- **Penalty exposure:** Sch 41 para 13 unprompted floor — 0% on 2024/25 (within 12-month window — deadline ~31 January 2027 for the 0% advantage). Tax due ~£10,000-£15,000 depending on marginal rate; interest from 31 January 2026; penalty £0 (within 12 months).
+- **Additional point — MTD ITSA scope:** Mortlake-Estate also crosses the £50k threshold for MTD ITSA from 6 April 2026; the future filing obligation engages MTD ITSA. Cross-link to A16 / A18 for the MTD scope.
+- **Operational point:** the inherited-portfolio realisation is a relatively common LPC scenario. The bereavement context strengthens the non-deliberate characterisation; the within-12-month window for the 0% floor on 2024/25 is the time-sensitive rescue line.
+
+### Example 4 — The CoP9-not-LPC boundary case
+
+- **Norcombe-Estate, the deliberate-concealment landlord:** has 12 years of undisclosed rental on a 6-property residential portfolio. The undisclosed amount is ~£420,000 of gross rents cumulative. Norcombe-Estate has been actively concealing the rental via routing payments through a relative's bank account, fabricating expense receipts to reduce visible bank-account inflows, and instructing letting agents to pay specific amounts to specific accounts. The conduct profile is deliberate-and-concealed.
+- **Rescue routing:** LPC is NOT the correct route. CoP9 / CDF (criminal-prosecution-immunity-conditional-on-full-disclosure) is the appropriate route. The conduct profile (active concealment via third-party-conduit + false invoices) sits clearly in deliberate-concealed criminal-prosecution-exposure territory. CoP9 representation requires specialist tax-investigation counsel; Norcombe-Estate should engage specialist counsel BEFORE making any disclosure or HMRC contact.
+- **What Norcombe-Estate must NOT do:** (a) use the standard LPC notification form — wrong route, exposes Norcombe-Estate to criminal-prosecution without the CoP9 immunity protection; (b) make ad-hoc disclosure to HMRC — same risk; (c) ignore the situation — HMRC's data-matching against the relative's bank account or the falsified invoice records may eventually surface the failure, with no immunity protection.
+- **Operational point:** this page's most important routing function is the LPC-vs-CoP9 boundary. Sessions writing must signpost the boundary clearly: LPC for careless / accidental / deliberate-but-not-concealed conduct; CoP9 for deliberate-concealed-with-criminal-prosecution-exposure. The routing decision should be made BEFORE any HMRC contact.
+
+### Example 5 — The bereavement-during-disclosure-window reasonable-excuse case
+
+- **Ottershaw-Estate, the bereavement-period landlord:** held a single BTL property since 2018; husband (the family's primary tax-administrator) died in October 2023; Ottershaw-Estate did not file 2023/24 SA return because the husband had always handled the family's tax affairs. Through 2024 and into 2025, Ottershaw-Estate was in extended grief + probate administration. Realises in early 2026 that 2023/24 + 2024/25 rental income (£11,000/year + £12,000/year respectively) was never declared.
+- **Rescue routing:** LPC is the correct route. Behaviour self-assessment: non-deliberate (bereavement-period inability to attend to tax affairs). Status: unprompted. The bereavement context provides supporting reasonable-excuse evidence under Sch 41 para 20 + Perrin four-stage test if HMRC questions the non-deliberate characterisation.
+- **Penalty exposure:** Sch 41 para 13 unprompted floors — 0% on 2024/25 (within 12-month window) + 10% on 2023/24 (past 12-month window). Cumulative tax due ~£3,500-£5,500; interest from each year's due date; penalty ~£200-£350.
+- **Operational point:** the page's emotional-rescue tonal register is most operationally important for cases like Ottershaw-Estate where the realisation has a sympathetic factual background. The page must NOT amplify the panic; the LPC framework is calibrated for exactly this scenario. Reasonable-excuse Perrin four-stage analysis supports the non-deliberate characterisation; tonally the page is the calm anchor to take action.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: I have just realised I have undisclosed rental income — what do I do?**
+   A: The Let Property Campaign (LPC) is HMRC's published voluntary-disclosure route for exactly this situation. The route opened 9 September 2013 with no announced end date. Begin at gov.uk/guidance/let-property-campaign with the LPC notification form; HMRC issues a Disclosure Reference Number (DRN); within 90 days you submit the full disclosure (tax + interest + penalty by tax year); you pay on submission. The route is calibrated for the residential-landlord population and is HMRC's gentlest voluntary-disclosure entry-point.
+
+2. **Q: What is the 0% penalty floor and how do I qualify?**
+   A: Schedule 41 FA 2008 paragraph 13 provides a 0% penalty floor for non-deliberate failure-to-notify where the disclosure is made unprompted and within 12 months of the tax becoming payable. For 2024/25 rental income, the tax became payable on 31 January 2026; the 12-month window for the 0% floor on 2024/25 closes around 31 January 2027. Earlier years are past the window and engage the 10% unprompted-non-deliberate floor.
+
+3. **Q: What does "unprompted" mean?**
+   A: Disclosure is unprompted where you initiate it before HMRC indicates awareness of the failure. The bright-line tests: no nudge letter received, no enquiry opened, no Connect-system match notified. Once you receive a nudge letter, the unprompted-status is closed for the years HMRC has identified; prompted-disclosure floors (10% / 35% / 50%) apply instead of unprompted (0% / 20% / 30%).
+
+4. **Q: What should I NOT do?**
+   A: Do NOT file an amended self-assessment return adding the rental income. Do NOT respond to a nudge letter without route-assessment. Do NOT pay HMRC an ad hoc amount before disclosing. Do NOT call HMRC and explain the situation outside the LPC notify-disclose-pay cycle (creates prompted-status risk). Do NOT collapse into Code of Practice 9 / Contractual Disclosure Facility self-flagellation for genuinely careless behaviour — CoP9 is for deliberate-fraud-with-criminal-prosecution-exposure.
+
+5. **Q: What does a nudge letter actually change?**
+   A: A nudge letter puts you on notice that HMRC has indicated awareness of likely undisclosed rental. Disclosure after a nudge letter is treated as prompted under Sch 41 paragraph 13 for the years HMRC identified. The nudge letter does NOT necessarily lock all your years into prompted-status — if you have additional undisclosed rental on a different property or stream not mentioned in the nudge letter, those years may retain unprompted-status. Engage specialist input before drafting any response.
+
+6. **Q: What about the interest I will owe?**
+   A: Interest under TMA 1970 s.86 accrues continuously from each year's due date (typically 31 January following the tax year) at HMRC's published rate (Bank of England base rate plus 4 percentage points; current rate verified at write time). LPC does NOT mitigate interest — only penalty is mitigated. For multi-year disclosures, cumulative interest is often the largest line item in the disclosure total.
+
+7. **Q: What is the closure-of-exposure benefit?**
+   A: Once your LPC disclosure is accepted and paid in full, the covered years are closed for TMA 1970 s.29 discovery purposes (subject to s.29(4)/(5) re-opening only where the disclosure was incomplete or deliberately understated). The closure is the structural reassurance that LPC produces a finished outcome rather than a perpetually-open exposure. Your subsequent SA returns are then accepted as routine; the Connect-system risk-rating drops; future property disposals' CGT computation engages cleanly.
+
+8. **Q: When do I need specialist help instead of self-engagement?**
+   A: Engage specialist counsel where: (a) your behaviour self-assessment is deliberate-and-concealed (CoP9 territory); (b) you have offshore rental property in Cat 2 / Cat 3 territory with pre-30-September-2018 years (Worldwide Disclosure Facility + FtC overlay territory); (c) any HMRC enquiry is already open (the disclosure happens within the open enquiry); (d) the total estimated liability is large enough that specialist disclosure-counsel adds disproportionate value.
+
+9. **Q: What is the difference between LPC and CoP9?**
+   A: LPC is the published voluntary-disclosure route calibrated for non-deliberate, carelessly-deliberate, or unconcealed-deliberate conduct where the landlord self-corrects voluntarily. CoP9 / Contractual Disclosure Facility is HMRC's civil-route framework for SUSPECTED SERIOUS FRAUD, offering criminal-prosecution immunity conditional on full and frank disclosure within a 60-day window. The boundary turns on the conduct profile: active concealment via false invoices, third-party-conduit accounts, or document destruction is CoP9 territory; ordinary failure-to-notify or sloppy reporting is LPC territory.
+
+10. **Q: What is the operational timeline?**
+    A: Three steps. Notify via gov.uk LPC notification form (week 1). Receive Disclosure Reference Number from HMRC (typically 1-2 weeks). Prepare and submit full disclosure within 90 days of HMRC's acknowledgement (typical 4-8 weeks for a multi-year case requiring rental-records reconstruction). Pay on submission. HMRC responds in 4-12 weeks; closure on acceptance. Total notify-to-closure cycle: typically 4-9 months.
+
+11. **Q: What if my situation involves bereavement or illness?**
+    A: Bereavement, serious illness, or other extenuating circumstances during the period of failure support a non-deliberate characterisation under Schedule 41. The Perrin v HMRC [2018] UKUT 156 four-stage reasonable-excuse test additionally protects against penalty assessments where the excuse persisted through the period of failure and the failure was remedied without unreasonable delay once the excuse ended. Document the circumstances when preparing the disclosure (death certificate, medical evidence, correspondence trail).
+
+12. **Q: What is the boundary against the Worldwide Disclosure Facility?**
+    A: LPC accommodates UK-source residential rental income — including for non-UK-resident landlords with UK BTL property. WDF is for offshore-source rental and other offshore income / assets. A landlord with rental on a UK property goes through LPC regardless of their tax residence. A landlord with rental on offshore property (Cat 2 / Cat 3 territory) goes through WDF. Cross-stream landlords use both routes in parallel. Sessions writing must NOT route a non-resident landlord with UK-source rental to WDF — that is procedurally wrong.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy. Use commas, parentheses, full stops, middle dots, or restructure the sentence.
+- **Specific over generic.** Named legislation (Sch 41 FA 2008 paras 5 / 13 / 20; TMA 1970 s.7 / s.28A / s.29 / s.34 / s.36 / s.86); specific case authorities (Tooth, Perrin, Hicks); anonymised personas.
+- **No real names.** Anonymised personas (Kettering-Estate, Linstead-Estate, Mortlake-Estate, Norcombe-Estate, Ottershaw-Estate in the worked examples above).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Do not duplicate in body.
+- **CSS in markdown:** semantic HTML only. No Tailwind classes. `<aside>` styled by global CSS.
+- **FAQs:** 10-14 entries in frontmatter `faqs:` array, auto-emitted as FAQPage JSON-LD by the build.
+- **Tonal calibration:** this page's tone is the differentiator. Calm + structural + action-oriented. NOT alarmist (panic-amplification undermines the rescue function); NOT breezy ("don't worry, it's fine" undermines the urgency); NOT patronising ("HMRC understands you didn't know" reads as condescending). The tone-of-voice anchor is "your accountant who has handled this exact situation before, giving you the immediate next step in a calm voice".
+- **Anti-templating:** this page is the **emotional-rescue framing** of LPC. RUN session must hold this tonal lane distinct from sibling A12 LPC-orientation (descriptive frame), A14 calculator (numerical-estimation frame), A15 strategic-rationale (philosophical frame), A3 benefits-tally (tactical-numerical frame), A2 DDS umbrella (product-architecture frame). The five-strand rescue structure (acknowledgement / architectural-reassurance / immediate-action / operational-cycle / specialist-routing) is the load-bearing differentiator. The LPC-vs-CoP9 boundary is the most operationally-important routing — sessions must NOT inadvertently route panicking-but-careless landlords into CoP9 territory.
+- **Quality bar (six checks):** zero em-dashes, zero Tailwind, FAQ schema count matches frontmatter array, meta title ≤ 62 chars, meta description ≤ 158 chars, internal links resolve.
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §27.6 LPC + 3-step cycle + §27.3 Sch 41 mitigation matrix + §27.1 discovery time limits + §27.4 closure-of-exposure + §27.5 CoP9 boundary).
+2. Claim this page in MW3 page tracker (⬜ → 🟡 with UTC timestamp).
+3. Read this brief (framing differentiator, key questions, manager pre-decisions, research target list).
+4. Fetch + read competitor URLs via session-side Google Search at write time (per §16.31 dead-rate pattern).
+5. Read closest-existing pages: sibling MW3 A12 LPC-orientation / A14 calculator / A15 strategic-rationale / A3 benefits-tally / A2 DDS / A13 SA-penalty-regime; nudge-letter pages (A9 + A10 from M3-A-B2 batch); any pillar pages on LPC + HMRC enquiries + rental-records reconstruction.
+6. Plan H2 / H3 outline + meta + 10-14 FAQs + CTA placements — STRICTLY in the emotional-rescue tonal lane; the five rescue strands are the H2 backbone; calculator / strategic-rationale / tactical-mitigation deep-dive belongs in cross-links.
+7. Verify factual claims against authorities per §16.35 (Sch 41 FA 2008 paras 5 / 13 / 20 + TMA 1970 s.7 / s.28A / s.29 / s.34 / s.36 / s.86 + LPC + CoP9 + WDF guidance + Compliance Handbook CH150000 / CH71000 / CH80000 verbatim WebFetched from legislation.gov.uk + gov.uk).
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)` (calm + reassuring tone; avoid stress-imagery).
+9. Write markdown at `Property/web/content/blog/missed-taxes-let-property-campaign-to-the-rescue.md` (full frontmatter list per §4).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none identified at Stage 2).
+13. Register in `monitored_pages` Supabase table.
+14. Commit on session's MW3 worktree branch (per-page commit; do NOT merge to main from worktree).
+15. Fill per-page work-log at bottom of this brief.
+16. Mark ✅ done in MW3 tracker with 1-line Notes (body word count + 1-sentence summary).
+17. Append site-wide issues to MW3 flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+### Stage 2 author entry
+
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent A (batch M3-A-B3) on 2026-05-27.
+- **Stage 2 extensions added:** authority URL list (14 anchors covering Sch 41 FA 2008 + TMA 1970 s.7 / s.28A / s.29 / s.34 / s.36 / s.86 + LPC + CoP9 + WDF guidance + Compliance Handbook CH150000 / CH71000 / CH80000); 5 worked examples covering accidental-landlord-realisation (Kettering-Estate), nudge-letter-just-arrived (Linstead-Estate), inherited-portfolio-discovery (Mortlake-Estate), CoP9-not-LPC-boundary (Norcombe-Estate), bereavement-reasonable-excuse (Ottershaw-Estate); 12 FAQs anchored to the five rescue strands + LPC-vs-CoP9 boundary + LPC-vs-WDF boundary + interest cascade + closure-of-exposure benefit + operational timeline + reasonable-excuse extension; voice + style + 19-step workflow stubs verbatim per §4.8 + §7 with tonal-calibration note added at the §4.8 voice block.
+- **§16.36 statutory-citation cross-check:** Sch 41 FA 2008 paras 5 + 13 + 20 verified live at Stage 1 author 2026-05-27 against legislation.gov.uk current-as-amended text. TMA 1970 s.7 / s.28A / s.29 / s.34 / s.36 / s.86 architecture verified. Perrin v HMRC [2018] UKUT 156 + HMRC v Tooth [2021] UKSC 17 + HMRC v Hicks [2020] UKUT 12 verified. F-5 Wave 7 lock alignment confirmed (Sch 41 para 13 has 12-month qualifier on unprompted-non-deliberate floor; the operative regime for typical LPC failure-to-notify is Sch 41 because the typical conduct is never-notified-under-s.7; Sch 24 inaccuracy regime engages only where the landlord had FILED an SA return with the rental omitted, which is rarer). HMRC late-payment interest rate (Bank base + 4pp) flagged as rate-by-reference per §16.27.
+- **Anti-templating note:** the cannibalisation risk against A14 (calculator) and A15 (strategic-rationale) is the load-bearing watchpoint — A17 must NOT slide into "here are your numbers" (A14 territory) or "here is the philosophical case for disclosing" (A15 territory). The tonal calibration (calm + structural + action-oriented, NOT alarmist / breezy / patronising) is the load-bearing differentiator. The LPC-vs-CoP9 boundary routing is the most operationally-important pedagogical responsibility — sessions writing must clearly route panicking-but-careless landlords into LPC and panicking-with-deliberate-concealment landlords AWAY from LPC into CoP9. F-5 Wave 7 lock-alignment carried — Sch 41 is the operative regime for the typical LPC scenario (never-notified-under-s.7 failure); the 12-month qualifier on the 0% unprompted-non-deliberate floor is in Sch 41 para 13 only.
+
+### RUN session entry (populate at write time)
+
+[RUN session records: H1 chosen, meta title + description chosen, competitor URLs fetched + key takeaways, existing-page review notes, citations added, internal links added, tonal-calibration check (calm + structural + action-oriented), build attempts pass / fail, six-check verification, flags raised, 2-3 sentence summary.]
 
 ---
 
