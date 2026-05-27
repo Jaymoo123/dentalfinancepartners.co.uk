@@ -1,0 +1,53 @@
+{
+  "batch_id": "M2-A-B2",
+  "stage": 2,
+  "agent_id": "MW2-Stage2-A",
+  "completed_at": "2026-05-27T12:55:00Z",
+  "commit_shas": [
+    "73f37bb",
+    "229effe",
+    "5d4c559",
+    "afe67f9",
+    "e963e35",
+    "ad30a6a"
+  ],
+  "slugs_done": [
+    "does-your-business-qualify-as-a-partnership",
+    "eligible-groups-for-group-relief-under-uk-corporation-tax",
+    "hmrcs-new-guidelines-for-llps-raise-concerns",
+    "hybrid-limited-liability-partnership",
+    "incorporating-an-hmo-into-a-limited-company-pros-and-cons",
+    "limited-companies"
+  ],
+  "flags_raised": [
+    "F-8 BRIEF_DRIFT — CTA 2010 s.131 vs s.152 mis-attribution in group-relief eligibility seed. Stage 1 seed cited s.131 as containing the 75%-subsidiary group test directly; verified 2026-05-27 against legislation.gov.uk that the same-group test sits at s.152 (s.131 is the two-limb group-condition gateway routing to s.152 + s.134). Correct three-section composite: s.131 (group condition) → s.152 (same-group test) → s.1154 (75% subsidiary arithmetic) → Sch 18 (equity-holder overlay). Folds into F-3 §21.8.1 placeholder lock.",
+    "F-9 BRIEF_DRIFT — HMRC PM276000 is CIS guidance, NOT salaried-member rules. Stage 1 seed (and F-4 flag text) cited PM276000-PM277000 as the operative HMRC entry-point for salaried-member rules guidance; verified 2026-05-27 against gov.uk that PM276000 is CIS content. Correct entry point: PM250000 (Salaried member rules: contents) with nine sub-pages PM251000 → PM261000 covering the full regime; load-bearing PM256000 (Condition B significant influence) with 12 sub-sub-pages PM256100+. Folds into F-4 §11.C.X.3 placeholder lock.",
+    "F-10 BRIEF_DRIFT — HMRC PM236500 does not exist; mixed-membership rules sit at PM210000 → PM213000+. Stage 1 seed (and F-5 flag text) cited PM236500-PM238000 as the operative HMRC anchor for mixed-membership partnership rules; verified 2026-05-27 against gov.uk that PM236500 returns 404 and the correct entry point is PM210000 (Mixed member partnerships: contents) → PM213000 (Mixed member rules: contents) with 34 sub-pages PM214000 → PM248000 covering ss.850C–E framework. Load-bearing sub-pages: PM214000, PM218000–PM219000, PM224000 (power to enjoy), PM227000, PM228000, PM230000–PM231000, PM234000, PM248000 (close-company bridge to s.464A territory + F-7). Folds into F-5 §11.C.Y.4 placeholder lock."
+  ],
+  "drift_catches": [
+    "§16.40 (F-8) — Stage 1 seed for A8 mis-attributed the 75%-subsidiary same-group test to CTA 2010 s.131 directly. WebFetch against legislation.gov.uk confirmed test sits at s.152; s.131 routes via s.152 + s.134 (UK-related). Corrected in-place in A8 brief extension; F-8 raised.",
+    "§16.40 (F-9) — Stage 1 seed for A11 cited HMRC PM276000+ as salaried-member guidance entry-point. WebFetch confirmed PM276000 is Construction Industry Scheme content. Correct entry: PM250000+. Corrected in-place in A11 brief extension; F-9 raised.",
+    "§16.40 (F-10) — Stage 1 seed for A10 cited HMRC PM236500+ as mixed-membership rules entry-point. WebFetch returned 404 at PM236500; verified correct entry as PM210000 → PM213000+ (34 sub-pages). Corrected in-place in A10 brief extension; F-10 raised.",
+    "§16.40 (housekeeping, no flag) — Stage 1 seed for A7 said PA 1890 s.2(3) has 'six rebuttal heads'; WebFetch confirmed five paragraphs (a)–(e). Corrected in-place in A7 brief extension; severity too low for flag."
+  ],
+  "url_verification_summary": {
+    "authority_urls_verified_live": 11,
+    "authority_urls_attempted_404_or_other": 5,
+    "legislation_govuk_inserted_sections_404_pattern": "ITA 2007 s.863A and s.850C both returned 404 at the standard `/ukpga/2007/3/section/<n>` URL pattern (tried lowercase + uppercase + /data.htm). Likely a legislation.gov.uk routing quirk for FA-2014-inserted sections. RUN session uses BAILII / Westlaw / Practical Law as alternative routes for these citations.",
+    "supremecourt_uk_path_404": "BlueCrest Supreme Court canonical URL `https://www.supremecourt.uk/cases/uksc-2023-0078.html` returned 404 at the case-number path; BAILII URL form `https://www.bailii.org/uk/cases/UKSC/2024/33.html` returned 403. RUN session locates current canonical URL via supremecourt.uk + BAILII search for 'BlueCrest Capital Management UKSC 2024 33'.",
+    "competitor_urls_attempted": 0,
+    "competitor_urls_verified_live": 0,
+    "competitor_section_strategy": "session-side WebSearch at write time per Wave 8 F-1 + Wave 9 Bucket C 5/5 dead-rate pattern — RUN session sources via Google Search; Stage 2 did not attempt firm-domain URLs.",
+    "hmrc_pm_url_verification": "Five HMRC PM URLs verified live (PM250000 + PM253000 + PM256000 + PM259000 for salaried-member; PM210000 + PM213000 for mixed-membership). Three HMRC PM URLs verified absent (PM276000 confirmed CIS-not-salaried-member; PM236500 confirmed 404). Verification pattern catches the F-9 + F-10 systemic Stage 1 mis-attribution drift."
+  },
+  "discoveries_logged": [
+    "D-9 §16.40 PATTERN CONFIRMED ACROSS FOUR INSTANCES — F-7 (DLA ss.464C/D omission, M2-A-B1), F-8 (s.131 vs s.152, M2-A-B2), F-9 (PM276000 vs PM250000+, M2-A-B2), F-10 (PM236500 vs PM210000+/PM213000+, M2-A-B2). Two of the four are HMRC manual PM range mis-attribution. Recommendation: Stage 1 dispatch prompt should require WebFetch verification of HMRC PM URLs for any cited range. Stage 1 environment WebFetch was blocked when these seeds were written; Stage 2 verification gates are catching what Stage 1 + Stage 1b cannot.",
+    "D-10 ALL FOUR STAGE-2 DRIFT CATCHES THIS BATCH FOLD INTO ALREADY-PROPOSED HP LOCKS — F-8 folds into F-3 §21.8.1; F-9 folds into F-4 §11.C.X.3; F-10 folds into F-5 §11.C.Y.4. No standalone new HP-extensions required from Stage 2 drift catches. Conductor / wave-close manager sign-off on F-3 + F-4 + F-5 should incorporate the corrections.",
+    "D-11 PM-NUMBER MIS-ATTRIBUTION SUGGESTS LLM-GENERATED PLAUSIBLE-NUMBER PATTERN — Stage 1 sub-agent appears to have generated plausible-looking HMRC PM page numbers (PM276000, PM236500) without WebFetch verification (environment-blocked). Both are wrong; both happen to be NEAR but not AT correct ranges. Suggests systematic LLM tendency to interpolate plausible reference numbers when underlying lookup tool is unavailable. Pattern not previously documented; flag for §16 update.",
+    "D-12 BLUECREST CASE URL OPACITY — supremecourt.uk + BAILII URLs both inaccessible at canonical-pattern URLs from this Stage 2 environment. RUN session needs to locate current canonical via supremecourt.uk + BAILII search rather than direct URL construction. Firm-side commentary route remains viable. Not flagged for action; RUN session-aware caveat documented in A11 brief."
+  ],
+  "anti_templating_check": "Six briefs read as a set. Boilerplate sections (Voice + style, 19-step workflow, Quality bar six checks) are deliberately verbatim per §4.8 and §7. Substantive content (framing differentiators, worked examples, FAQ phrasing, statutory-anchor depth) is distinct per pick. No same-sentence drift detected in customer-facing content. Each pick's worked-example section uses distinct personas (Patel / Singh / Kapoor / Verma cycled across picks with role-variation to avoid template feel). FAQ phrasing varies; do-not-write GREP discipline patterns vary per pick. The 'limited-companies' pillar holds 14 FAQs (vs standard 10–12) per pillar-coverage discipline; the 'does-your-business-qualify-as-a-partnership' definitional layer holds 12 FAQs; mixed-membership / hybrid-LLP / salaried-member trio (A10 / A11 + cross-references to A7) coordinate on the FA 2014 anti-avoidance framework without cannibalising.",
+  "cross_pick_coordination_check": "A7 (partnership taxonomy) is the parent definitional layer; A10 (hybrid LLP — mixed-membership corporate-member-side) + A11 (salaried-member individual-member-side) are sibling FA-2014-anti-avoidance regime pages; A8 (group relief eligibility) is the LtdCo multi-company structural layer; A9 (HMO incorporation pros-and-cons) is the HMO-specific decision page; A12 (limited-companies pillar) sits above all of A1–A11 + A19 as the cluster entry point. Cross-link directionality enforced: pillar → specialist; specialist → pillar; sibling → sibling within FA-2014 regime cluster. No cross-pick contradictions identified.",
+  "branch": "main",
+  "worktree": "C:/Users/user/Documents/Accounting (main repo, Stage 2 commits to main per dispatch prompt)"
+}
