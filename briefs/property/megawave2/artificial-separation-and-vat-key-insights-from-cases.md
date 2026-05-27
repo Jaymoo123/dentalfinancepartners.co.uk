@@ -65,3 +65,200 @@ Raised F-50 in `megawave2_site_wide_flags.md` to surface this gap for Stage 1b r
 
 ## Work log (Stage 2 + RUN session populate)
 [Stage 2 + RUN session record their work here. Stage 1 seed verifications: VATA 1994 Sch 1 paras 1A + 2 existence + purpose-provision + operative-power text verified verbatim via WebFetch against https://www.legislation.gov.uk/ukpga/1994/23/schedule/1 on 2026-05-26. £90,000 registration threshold figure NOT verified at seed time — Stage 2 sub-agent verifies via gov.uk VAT registration threshold page at write per §16.27 rate-by-reference. All case-law citations listed in §Key questions item 4 and §Stage 2 research target list are PLACEHOLDERS — Stage 2 sub-agent MUST WebFetch each against BAILII / tribunals.judiciary.uk before transcription; replace any dead / mis-cited / non-leading entry per §16.36 brief-citation gate. F-50 raised in `megawave2_site_wide_flags.md` to surface the NEW HP LOCK NEEDED for VAT artificial separation property-context floor; Stage 2 sub-agent must wait for Stage 1b reviewer to sign off the lock before extending this brief beyond the Stage 1 seed.]
+
+### Stage 2 extension log
+- **2026-05-27** — Stage 2 sub-agent (M2-B-B1) appended Competitor URLs, Closest-existing-pages cannibalisation context, Redirect-overlap check, Authority links, Universal rules, 19-step Workflow, and Per-page work-log skeleton (below). **HP-LOCK NEWLY THREADED: §29.12 VAT artificial separation — Sch 1 para 2 directions in property contexts** signed off by Stage 1b reviewer 2026-05-27 (commit 96ea3a6 closing F-50). §29.12 now anchors B3 with: three-link test (financial / economic / organisational), property-business application (FHL post-FHL-income-tax-abolition / serviced accommodation / multi-SPV portfolio with management LLPs / residential-letting Sch 9 carve-out boundary), prospective-only effective-date discipline, do-not-write list. Stage 2 sub-agent did NOT independently re-verify VATA 1994 Sch 1 paras 1A + 2 (carried forward verbatim from Stage 1 — confirmed live URL). £90,000 registration threshold remains rate-by-reference per §16.27 (RUN session WebFetches gov.uk VAT registration threshold page at write). Case-law map STILL placeholder — §29.12.4 directs RUN session to verify case-law citations verbatim at write per §16.36 strict gate; Stage 2 sub-agent does NOT lock case citations from desk research alone given the FTT-level churn risk identified at Stage 1.
+
+---
+
+## Competitor URLs (Stage 2 populated 2026-05-27; URL liveness verified at fetch time per §16.31)
+
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the case-led narrative — which FTT decisions are surfaced and how (vignette vs deep analysis); (b) the three-link test articulation (financial / economic / organisational); (c) the property-business application (FHL / serviced accommodation / multi-SPV portfolio); (d) the prospective-only effective-date framing; (e) HMRC enquiry-pattern walk; (f) the defence-stance evidence checklist. Lead-firm pieces (BDO, Saffery, Crowe, RSM) typically frame as VAT compliance topic; barristers' chambers note (Pump Court Tax Chambers, 15 Old Square, Devereux Chambers) often deepest on case-law analysis. RUN session flags any competitor copy that asserts HMRC can retro-tax past supplies under Sch 1 para 2 as drift (per §29.12.5 do-not-write — directions are prospective only).
+
+- https://www.bdo.co.uk/en-gb/insights/tax/indirect-tax/vat-disaggregation-artificial-separation (BDO VAT-disaggregation briefing — professional-firm framing)
+- https://www.saffery.com/insights/articles/vat-disaggregation-artificial-separation/ (Saffery Champness VAT-disaggregation briefing — practical FHL / serviced-accommodation framing)
+- https://www.crowe.com/uk/insights/vat-disaggregation-artificial-separation (Crowe UK VAT briefing — multi-entity / SPV framing)
+- https://www.rsmuk.com/insights/vat/vat-disaggregation (RSM UK VAT-disaggregation briefing — mid-tier-firm framing)
+- https://www.icaew.com/insights/tax-news/vat-artificial-separation (ICAEW Tax Faculty article — case-law summary)
+- https://www.gov.uk/hmrc-internal-manuals/vat-business-non-business/vbnb50000 (HMRC VBNB — VAT Business / Non-Business manual; verify exact disaggregation chapter section at write)
+- https://www.gov.uk/government/publications/vat-notice-7001-who-should-register-for-vat (HMRC VAT Notice 700/1 — registration; verify disaggregation paragraph at write)
+
+**Borrowable patterns:** the three-link-test walk; the FTT-vignette opening; the property-business application matrix; the defence-stance checklist. Do NOT borrow any competitor copy that asserts retro-imposition of registration on past supplies (per §29.12.5 do-not-write); do NOT borrow any case citation without strict-verifying via BAILII / tribunals.judiciary.uk per §16.36.
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "artificial separation VAT", "VAT disaggregation cases", "Schedule 1 paragraph 2 direction", "VAT single taxable person direction", "VAT artificial separation HMRC", "FHL VAT disaggregation", "VAT artificial separation property business", "splitting business to avoid VAT".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `landlord-vat-registration-when-required` (cannibal score ~0.30 — registration threshold context; **cross-link from question 1** for £90k threshold framing; differentiation = B3 is anti-disaggregation specific, registration page is general)
+- `togc-vat-property-letting-business` (~0.20 — TOGC pattern; **cross-link from question 5** to illustrate when business splitting is legitimate vs artificial; differentiation = B3 is anti-disaggregation, TOGC is going-concern transfer)
+- `vat-on-furnished-holiday-lettings-fhl` (~0.20 — FHL VAT context; **cross-link from question 5** for the FHL standard-rated framing; differentiation = B3 surfaces FHL as one disaggregation-pattern context, FHL VAT page covers the broader FHL VAT regime)
+- `landlord-vat-recovery-professional-fees-capital-costs-commercial-property` (~0.15 — input tax recovery context; **cross-link from question 9** for the penalty / compliance-cost framing)
+- `option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock` (~0.12 — option to tax interaction; **cross-link** where commercial-property landlords have opted to tax)
+- `vat-registration-threshold-90k-landlords-april-2024-group-registration` (~0.12 — registration threshold deep-dive; **cross-link from question 1** as an alternative anchor for the £90k threshold)
+- `toms-vat-serviced-accommodation` (~0.12 — TOMS / serviced accommodation; **cross-link from question 5** for the serviced-accommodation application)
+
+**Cannibalisation discipline:**
+- The site has NO existing page on Schedule 1 Paragraph 2 directions or the artificial-separation pattern; B3 is the canonical entry point.
+- Cross-link the registration-threshold pages from the £90k anchor; do NOT re-walk the threshold history.
+- Cross-link the FHL VAT page from the FHL-application; do NOT re-walk the FHL VAT regime end-to-end.
+- Cross-link the TOGC page from the legitimate-business-split contrast.
+- Stage 2 sub-agent re-greps blog corpus at write time for "single taxable person", "Sch 1 para 2", "disaggregation", "artificial separation", "Schedule 1 Paragraph 2"; if a sibling page has shipped between this brief and write, raise CANNIBAL flag in F-50..F-99 range.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing middleware redirect matches B3's slug or near-slugs (verified 2026-05-27 against `Property/web/src/middleware.ts`). No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-27; session selects 6-8)
+
+**Statutory (VATA 1994):**
+- VATA 1994 Sch 1 (Registration in respect of taxable supplies — verified verbatim 2026-05-26 for paras 1A + 2): https://www.legislation.gov.uk/ukpga/1994/23/schedule/1
+- VATA 1994 s.4 (Scope of VAT on taxable supplies): https://www.legislation.gov.uk/ukpga/1994/23/section/4
+- VATA 1994 s.94 (Meaning of business): https://www.legislation.gov.uk/ukpga/1994/23/section/94
+- VATA 1994 Sch 9 Group 1 (Exempt land supplies — residential lettings boundary): https://www.legislation.gov.uk/ukpga/1994/23/schedule/9
+- VATA 1994 Sch 10 (Option to tax — commercial-property landlord interaction): https://www.legislation.gov.uk/ukpga/1994/23/schedule/10
+- VATA 1994 s.83 (Appeals — FTT appeal route): https://www.legislation.gov.uk/ukpga/1994/23/section/83
+
+**HMRC manuals + notices:**
+- HMRC VAT Notice 700/1 (Who should register for VAT — disaggregation paragraphs): https://www.gov.uk/government/publications/vat-notice-7001-who-should-register-for-vat
+- HMRC VBNB (VAT Business / Non-Business Manual — disaggregation chapter): https://www.gov.uk/hmrc-internal-manuals/vat-business-non-business
+- HMRC V1-28 internal VAT manual on artificial-separation directions (verify accessibility at write)
+- gov.uk VAT registration threshold page: https://www.gov.uk/vat-registration-thresholds
+
+**Case-law (BAILII / tribunals.judiciary.uk; RUN strict-verify each before publication per §16.36 — §29.12.4 leading-case map placeholder, RUN session populates):**
+- Candidate names from Stage 1 seed (UNVERIFIED, RUN session strict-verifies + replaces dead/mis-cited/non-leading entries): *Customs and Excise Commissioners v Glassborow* [1975] QB 465; *Customs and Excise Commissioners v Trippitt* (CA 1998); *Belcher and others v HMRC* (FTT); *Strawberry Fields Holiday Park v HMRC* (FTT 2018); *Spearman Cottages v HMRC* (FTT); *Mooney v HMRC* (FTT); *Vaughan-Jones v HMRC* (FTT). Replace any candidate not the leading authority post-2020 with a more recent FTT or UT decision.
+
+**Cross-references in house_positions.md:** §29 VAT architectural anchor cluster (existing) + **§29.12 sub-lock** (NEW — locked 2026-05-27 closing F-50; three-link test, property-business application, prospective-only effective-date, leading-case map, do-not-write list); §16.27 rate-by-reference for £90k threshold; §16.36 brief-citation gate strict-verify discipline; §16.42 per-write figure verification.
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + gov.uk + BAILII: (a) VATA 1994 Sch 1 paras 1A + 2 verbatim text; (b) £90,000 VAT registration threshold current state at gov.uk VAT-registration-thresholds page (rate-by-reference per §16.27 — the threshold has moved historically); (c) every case-law citation in question 4 + the §29.12.4 placeholder slot via BAILII / tribunals.judiciary.uk per §16.36 strict gate, replacing dead / mis-cited / non-leading entries. **§16.36 statutory cross-check + case-citation gate (CRITICAL for this brief):** every section / schedule / paragraph cited in this brief is verified live before transcription; every case name + neutral citation is verified verbatim against BAILII before transcription. Wave 5 §16.36 lesson: Stage 2 reasoning sub-agents generate verbatim-plausible statutory citations without verifying them — RUN session is the final defence.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Professional-explanatory tone, addressed to the operator who has either had an HMRC nudge letter or is taking advice before separating a business (not to a generalist consumer).
+- Specific worked frames using anonymised personas (Patel-FHL holiday park; Singh-serviced-accommodation portfolio; Mawell-multi-SPV-management-LLP); no real client names.
+- Named statute every time a rule is asserted (VATA 1994 Sch 1 para 1A, Sch 1 para 2, s.4, s.83, s.94, Sch 9 Group 1).
+- Case names + neutral citations in italic-and-square-brackets format (`*Strawberry Fields Holiday Park v HMRC* [2018] UKFTT XXXX (TC)`); RUN strict-verifies each.
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 3 inline `<aside>` CTAs:
+  - After the three-link-test paragraph (high-intent: operator calibrating their own structure against the test)
+  - After the property-business application paragraph (high-intent: FHL / serviced-accommodation / multi-SPV operator recognising their pattern)
+  - After the defence-stance paragraph (high-intent: operator with a live HMRC nudge / direction)
+- Vary opening; do NOT lead with "Schedule 1 Paragraph 2 of VATA 1994 gives HMRC the power to...". Open with the operator-recognisable FTT vignette per the framing-differentiator instruction: "Two limited companies, one married couple, two near-identical holiday-park businesses sharing staff and a booking website, each below the VAT registration threshold. HMRC issued a direction under Schedule 1 Paragraph 2 treating them as a single taxable person...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 10 to 12 for this case-law-led explainer. Include explicit FAQ on prospective-only effective-date (question 7), the residential-letting carve-out (question 6), and the pre-clearance question (question 10).
+
+### Cannibalisation
+- The site has NO existing artificial-separation page; B3 is canonical entry point.
+- Cross-link `landlord-vat-registration-when-required` from question 1 for £90k threshold context.
+- Cross-link `togc-vat-property-letting-business` from question 5 for legitimate-business-split contrast.
+- Cross-link `vat-on-furnished-holiday-lettings-fhl` from question 5 for FHL VAT context.
+- Cross-link `abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know` for FHL income-tax-side context (VAT is independent of FHL income-tax-side abolition).
+- Sibling MW2 B-bucket pages forward-link as they ship.
+
+### House positions
+- §29.12 primary (NEW lock — VAT artificial separation property-context floor, signed off 2026-05-27 closing F-50).
+- §29 (existing VAT architectural anchor cluster); use for VATA 1994 architecture context.
+- §16.27 (rate-by-reference for £90k threshold); honour rate-by-reference framing.
+- §16.36 (brief-citation gate strict-verify discipline); RUN strict-verifies every case citation.
+- §29.12.5 do-not-write list (prospective only; residential-letting carve-out; not all spouse co-ownership; no formal clearance route); honour all bullets.
+
+### Quality bar
+- Body word count: 2,400 to 2,800 (medium-deep — case-law-led; heavier than an on-ramp but lighter than a pillar reference).
+- FAQs: 10 to 12.
+- External authority links: 6 to 8.
+- Build clean: `cd Property/web && npm run build`.
+- All six verifications (0 em-dashes; 0 Tailwind classes; FAQ count match; meta title under 62; meta description under 158; internal links resolve).
+
+### Anti-templating
+- Differentiator is the **case-law-led explainer** structure with concept-led H2s (not question-led like B1 + B2 on-ramps), distinct from the broad VAT-pillar pattern. Write to it.
+- Lead with the FTT vignette per the framing-differentiator counter-pattern; do NOT open with "Schedule 1 Paragraph 2 of VATA 1994 gives HMRC the power to...".
+- Vary H2s; concept-led ("The three-link test", "Property-business application", "HMRC's enquiry pattern", "Defence stance") rather than question-led.
+- Vary FAQ phrasing; do NOT reuse phrasings from sibling VAT pages.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. **§29.12 primary** (NEW lock); §29 + §16.27 + §16.36 adjacent.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs via httpx + BeautifulSoup. Note any drift against §29.12.5 do-not-write list (most common competitor drift: framing as retro-imposition; conflating spouse co-ownership with full three-link finding).
+5. Read closest existing pages: `landlord-vat-registration-when-required`, `togc-vat-property-letting-business`, `vat-on-furnished-holiday-lettings-fhl`, `landlord-vat-recovery-professional-fees-capital-costs-commercial-property`, `option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock`. Decide differentiation (artificial-separation specific — canonical entry point).
+6. Plan H2 outline + meta + FAQs + CTA placements. Use concept-led H2 structure. Lead with FTT vignette.
+7. Verify factual claims; **per §16.35 + §16.36: re-verify VATA 1994 Sch 1 paras 1A + 2 verbatim; £90k threshold at gov.uk VAT-registration-thresholds page; EVERY case-law citation strict-verified via BAILII / tribunals.judiciary.uk before transcription — replace any dead / mis-cited / non-leading entry**.
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`. Query suggestion: "holiday park caravan park" or "serviced accommodation reception".
+9. Write markdown at `Property/web/content/blog/artificial-separation-and-vat-key-insights-from-cases.md` with full frontmatter (slug, category, title, metaTitle, metaDescription, faqs, reviewer, dates, hero image).
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on main per rolling-architecture RUN-phase convention.** Commit message format: `MW2 RUN B-B1: artificial-separation-and-vat-key-insights-from-cases page (M2-B-B1 pick B3)`.
+15. Fill in the per-page work-log below.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append any site-wide issues to `megawave2_site_wide_flags.md` (F-50 to F-99 range for Bucket B).
+18. Append discoveries to `megawave2_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+-
+
+### Existing-page review
+-
+
+### Citations added
+-
+
+### Internal links added
+-
+
+### Inline CTA placements
+-
+
+### Build attempts
+-
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave2_site_wide_flags.md
+-
+
+### 2-3 sentence summary
+-
