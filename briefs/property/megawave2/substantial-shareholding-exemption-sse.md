@@ -104,39 +104,195 @@ Page structure (IF differentiator survives Stage 1b validation): (1) brief recap
   - To existing pages: `substantial-shareholding-exemption-property-companies` (PRIMARY cannibalisation candidate; user-facing comprehensive page — DIFFERENTIATION TARGET if survives Stage 1b OR REDIRECT TARGET if Stage 1b judges differentiator insufficient); `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics` (multi-SPV operational sibling); `pre-sale-extraction-strip-cash-before-spv-share-sale-vs-buyer-discount` (pre-sale tactical layer); `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment` (alternative MVL exit route); `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236` (alternative EOT exit route); `condition-a-acquisition-main-purpose-test-trader-by-stealth-landlord-trap` + `condition-c-trading-stock-section-162-incorporation-relief-denial-developers` + `condition-d-development-main-purpose-convert-and-flip-trap-landlord-developers` (§28 trading-investment-line pages — informative cross-references); `non-resident-developer-uk-tax-scope-fa-2016-offshore-developer-planning-closure` (NR developer SSE context); `transactions-in-uk-land-cta-2010-part-8zb-ita-2007-part-9a-four-conditions-test` (§28 main pillar); `property-company-group-relief-corporation-tax` (CT group relief sibling); `sdlt-group-relief-for-corporate-landlord-portfolios` + depth page (SDLT group relief sibling); `types-of-property-company-structure-uk-guide` (general entity-structure overview); `when-does-property-holding-company-structure-make-sense-uk-landlords` (HoldCo decision-frame); `close-investment-holding-company-property` (CIHC status); `salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis` (extraction-route comparison for residual post-SSE proceeds).
   - To external authority: HMRC CG53000+ (full CG manual SSE section); HMRC CG53080P+ (QII exemption qualifying-investor list); HMRC CG53116 (substantial = 20%+ trading test); HMRC CG53127+ (immediately-before / immediately-after worked examples); HMRC CIRD80570+ (non-statutory clearance availability); HMRC INTM751000+ (cross-border SSE / treaty interactions); legislation.gov.uk TCGA 1992 Schedule 7AC + s.179.
 
-## Stage 2 research target list
+## Stage 2 research target list — VERIFIED URLs
 
-- **Competitor pages to fetch (Stage 2 verifies live):** EY / PwC / KPMG / Deloitte SSE technical publications + Saffery Champness / Smith & Williamson property-tax SSE notes + Macfarlanes / Travers Smith SSE briefings (corporate-tax-advisor specialist sources); Tax Journal / Tax Adviser articles on the FA 2017 SSE reforms + the BlueCrest-era SSE-trading-test cases; Tolley's Tax Planning SSE chapter analogue. Stage 2 sources via `competitor_serps` Supabase + targeted search.
-- **HMRC + Companies House manual anchors:**
-  - HMRC CG53000+ (full SSE section — operative manual reference).
-  - HMRC CG53080P+ (QII exemption qualifying-institutional-investor list).
-  - HMRC CG53116 (substantial = 20%+ trading test operative position).
-  - HMRC CG53127+ (immediately-before / immediately-after rule worked examples).
-  - HMRC CG52521+ (s.179 degrouping framework + FA 2011 modification).
-  - HMRC CIRD80570+ (non-statutory clearance availability).
-  - HMRC INTM751000+ (cross-border SSE + treaty interactions).
-  - HMRC PIM4000+ (property investment-vs-trading line — cross-cluster relevance for SSE trading test).
-- **Case-law to ground (Stage 2 verifies, Stage 1b reviewer confirms priority):**
-  - *Pawson v HMRC* [2013] UKUT 050 (TCC) — BPR investment-line; cited by HMRC for SSE trading test even though decided on different statutory test.
-  - *Brander v HMRC* [2010] UKUT 300 (TCC) — investment-trading boundary discussion.
-  - *Ramsay v HMRC* [2013] UKUT 0226 (TCC) — what level of activity constitutes a business for BPR (referenced by SSE practitioners).
-  - *Iliffe News & Media Ltd v HMRC* [2012] UKFTT 696 (TC) — trading-company test under SSE specifically (FTT-level; verify priority).
-  - Stage 2 reviews recent FTT/UT cases on SSE trading-test disputes + para 5 main-purpose challenges.
-- **Authority links to cite:**
-  - legislation.gov.uk TCGA 1992 Schedule 7AC contents + paras 1 + 3 + 3A + 5 + 7 + 7A + 15A + 19 + 20.
-  - legislation.gov.uk TCGA 1992 s.179 (degrouping) + s.171 (no-gain-no-loss intra-group) + s.171A (capital-loss election).
-  - legislation.gov.uk FA 2002 s.44 + Sch 8 (SSE inception).
-  - legislation.gov.uk F(No.2)A 2017 s.27 + Sch 5 (FA 2017 broadening).
-  - legislation.gov.uk FA 2011 Sch 10 (s.179 modification).
-  - HMRC CG53000+ + CG52521+ + CIRD80570+ + INTM751000+ + PIM4000+.
+### Authority URLs (RUN session WebFetches at write time per §16.35)
 
-## Universal rules + workflow stubs (Stage 2 fills)
+- **`https://www.legislation.gov.uk/ukpga/1992/12/schedule/7AC`** — TCGA 1992 Schedule 7AC (full SSE schedule). RUN session WebFetches para 1 (main gain-not-arising rule + para 1(3) loss-symmetry); para 3 (main exemption conditions); para 3A (FA 2017 subsidiary-exemption variant); para 5 (main-purpose anti-avoidance); para 7 (substantial-shareholding requirement — 10% / 12-months-within-6-years); para 7A (QII exemption, FA 2017); para 15A (repurchase-of-own-shares interaction); para 19 (trading-company test — single subsidiary, post-FA-2011 form); para 20 (sub-group HoldCo trading test).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/179`** — TCGA 1992 s.179 (degrouping charge framework + post-FA-2011-modified mechanic routing into share-sale consideration).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/171`** — TCGA 1992 s.171 (no-gain-no-loss intra-group transfers).
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/171A`** — TCGA 1992 s.171A (capital-loss election between group companies).
+- **`https://www.legislation.gov.uk/ukpga/2002/23/section/44`** — FA 2002 s.44 + Sch 8 (SSE inception — historic; cite for completeness).
+- **`https://www.legislation.gov.uk/ukpga/2017/32/section/27`** — F(No.2)A 2017 s.27 + Sch 5 (FA 2017 SSE broadening — removed investing-company-trading requirement + added para 7A QII route + amended Sch 7AC para 19 (2A) post-disposal trading-test window).
+- **`https://www.legislation.gov.uk/ukpga/2011/11/schedule/10`** — FA 2011 Sch 10 (s.179 degrouping modification — routes degrouping charge into share-sale consideration where SSE applies).
+- **HMRC manual anchors:**
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53000c`** — HMRC CG53000+ (SSE contents page; full chapter reference).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53080p`** — HMRC CG53080P+ (QII exemption qualifying-institutional-investor list — pension funds + sovereign wealth + life assurance + UK regulated CISs + charities).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53116`** — HMRC CG53116 ("substantial" = 20%+ non-trading activities operative position).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53127`** — HMRC CG53127+ (immediately-before / immediately-after worked examples).
+  - **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg52521`** — HMRC CG52521+ (s.179 degrouping framework + FA 2011 modification).
+  - **`https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird80570`** — HMRC CIRD80570+ (non-statutory clearance availability for SSE doubt scenarios — operative HMRC route since there is no statutory clearance for Sch 7AC).
+  - **`https://www.gov.uk/hmrc-internal-manuals/international-manual/intm751000`** — HMRC INTM751000+ (cross-border SSE + treaty interactions; relevant for non-resident SSE-target subsidiaries).
+  - **`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4000`** — HMRC PIM4000+ (property investment-vs-trading line; cross-cluster relevance for SSE trading-company test on property subsidiaries).
+- **Legislation.gov.uk FA-inserted-sections quirk note (per D-12 batch M2-A-B2 verification):** Sch 7AC was inserted by FA 2002 s.44 + Sch 8 and amended by F(No.2)A 2017 s.27 + Sch 5; legislation.gov.uk routing on FA-inserted Schedules sometimes returns 404 at standard `/schedule/` path. RUN session uses Westlaw + Practical Law + Tolley's Yellow Tax Handbook as backup routes for Sch 7AC paragraph-level verification.
 
-[Stage 2 populates from NETNEW_PROGRAM §4 brief anatomy + §7 19-step workflow.]
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: session-side WebSearch at write time required. Stage 2 dropped firm-domain attempts per Wave 8/9 dead-rate pattern + M2-A-B1/B2/B3 consistent practice. RUN session uses Google Search. Recommended queries: "substantial shareholding exemption Schedule 7AC property", "SSE FA 2017 qualifying institutional investor", "SSE para 5 main purpose anti-avoidance HMRC", "s.179 degrouping SSE FA 2011 modification", "SSE trading company test 20% HMRC CG53116", "SSE property holding company sale". Aim 4-6 corporate-tax-advisor specialist sources from EY / PwC / KPMG / Deloitte / Saffery / Macfarlanes / Travers Smith / Tax Journal / Tax Adviser. -->`
+
+### Case-law (RUN session uses sparingly per §16.36 statutory-cite priority)
+
+- *Pawson v HMRC* [2013] UKUT 050 (TCC) — BPR investment-line on furnished holiday letting; cited by HMRC for SSE trading-test analysis even though decided on different statutory test. Cross-cluster relevance per §28 trading-vs-investment Wave 8 lock.
+- *Brander v HMRC* [2010] UKUT 300 (TCC) — investment-trading boundary discussion; landed estate context but principles cited for SSE trading-company test.
+- *Ramsay v HMRC* [2013] UKUT 0226 (TCC) — what level of activity constitutes a "business" for BPR (referenced by SSE practitioners by analogy on substance-of-trading question).
+- *Iliffe News & Media Ltd v HMRC* [2012] UKFTT 696 (TC) — SSE trading-company test specifically (FTT-level; cited for substantial-activities analysis).
+- *Allam v HMRC* [2021] UKUT 0291 (TCC) — investment-trading boundary; relevant for SSE trading-company test (RUN session verifies priority status).
+- RUN session reviews recent FTT/UT decisions on SSE trading-test disputes + para 5 main-purpose challenges via BAILII search at write time.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Multi-DevCo HoldCo selling one DevCo (FA 2017 broadening operative)
+
+**Threadwell Group:** HoldCo Ltd owns 100% of DevCo1 (£12m residential development, complete with 2 unsold units remaining at completion of share sale), DevCo2 (separate development, mid-build), DevCo3 (early-stage acquisition only), and InvestCo (5 completed BTL units retained). Sale of DevCo1 shares to external buyer at £6m total consideration; base cost in DevCo1 shares was £2m; chargeable gain on disposal = £4m.
+
+- **Pre-FA 2017 position:** HoldCo's status as InvestCo-holder (BTL = investment per Pawson + CG53116) historically broke the "investing-company trading or member of trading group" requirement; SSE was blocked even though DevCo1 itself passed the trading-company test.
+- **Post-FA 2017 position:** F(No.2)A 2017 s.27 + Sch 5 REMOVED the investing-company-trading requirement. SSE applies to the DevCo1 disposal provided DevCo1 passes the trading-company test in Sch 7AC para 19 immediately before AND immediately after disposal.
+- **CT saved:** £4m × 25% = **£1,000,000.**
+- **CRITICAL sequencing pitfall:** the immediately-after limb requires DevCo1 to be trading at the moment after completion. With only 2 unsold units, the buyer must be acquiring an ongoing development business (not a cash shell that has finished trading). RUN session emphasises the immediately-after rule (cross-reference HMRC CG53127+) and the operational point that delaying completion until DevCo1 has sold its last unit FAILS SSE (DevCo1 becomes a cash shell at completion).
+- **Operative insight:** post-FA 2017 broadening is the single most valuable structural change for mixed BTL-plus-development property groups; sequencing of completion against the immediately-after trading-status assessment is the operational engineering question.
+
+### Example 2 — QII exemption (Sch 7AC para 7A) for institutional-fund-owned property HoldCo
+
+**Marshfield Capital Property HoldCo:** PE-fund-owned property HoldCo where 85% of HoldCo ordinary share capital is held by a qualifying institutional investor (a UK regulated CIS feeding into pension funds per HMRC CG53080P+ qualifying-investor list). HoldCo disposes of DevCo2 shares; DevCo2 is a build-to-rent developer at the boundary of the trading-investment line (build-to-rent is end-purpose retention which fails para 19 per Pawson investment-line analysis cross-referenced §28).
+
+- **Main SSE route (para 3):** likely BLOCKED — DevCo2's build-to-rent end-purpose fails the trading-company test under para 19 / HMRC CG53116 + Pawson investment-line.
+- **QII exemption route (para 7A, FA 2017 added):** AVAILABLE because the investing company (HoldCo) is ≥80% qualifying-institutional-investor owned. The QII route has different requirements; in particular, it does NOT require the subsidiary to pass the conventional trading-company test in para 19 (RUN session verifies exact QII conditions at write time per HMRC CG53080P+ + Sch 7AC para 7A — the QII route requires the subsidiary to NOT have an "interest in land" as its primary asset, which is a separate test from the para 19 trading-company test).
+- **Critical caveat for property HoldCos using QII:** the QII route's interest-in-land carve-out may DISQUALIFY property-development subsidiaries from QII protection even where the conventional trading test would have passed; the QII route is structurally designed for institutional-investor portfolios across asset classes, not specifically for property. **RUN session VERIFIES the exact Sch 7AC para 7A subsidiary-eligibility tests for property holdings at write time** — this is the highest-risk verification point in this brief.
+- **Operative insight:** QII route is operationally valuable for institutional-fund-owned property HoldCos disposing of NON-PROPERTY trading subsidiaries within a property group; less commonly the operative route for the property subsidiaries themselves.
+
+### Example 3 — s.179 degrouping into SSE-protected share sale (FA 2011 modification)
+
+**Eastfield Group:** HoldCo transferred Land A to DevCo3 four years before a planned DevCo3 share sale; the intra-group transfer used s.171 no-gain-no-loss treatment (DevCo3's deemed cost = HoldCo's original cost £500k; market value at intra-group transfer £1.5m; deferred gain £1m sitting latent in DevCo3's books). DevCo3 then trades as a residential developer over four years.
+
+- **Pre-FA 2011 s.179 mechanic:** when DevCo3 leaves the group on share sale within 6 years of the intra-group transfer, s.179 imposed a separate degrouping charge of £1m on DevCo3 at HoldCo level — independent of any SSE protection on the share-sale gain itself.
+- **Post-FA 2011 s.179 mechanic (FA 2011 Sch 10 modification):** on the SSE-protected share sale of DevCo3, the £1m degrouping charge is ADDED to the share-sale consideration in HoldCo's hands (effectively increasing the deemed share-sale proceeds by £1m); this enlarged share-sale gain is then EXEMPTED under SSE. **Net effect: the degrouping charge effectively disappears in the SSE context.**
+- **CRITICAL anti-avoidance trap (para 5):** if the Land A intra-group transfer was engineered specifically to package Land A within a trading subsidiary shortly before a planned share sale (rather than for genuine commercial operational reasons), HMRC challenge under Sch 7AC para 5 main-purpose anti-avoidance is the operative risk. Non-statutory clearance under CIRD80570+ is available where the commercial substance is genuine but legal analysis uncertain.
+- **Operative insight:** the FA 2011 s.179 modification makes SSE a powerful asset-packaging route for property groups, but the para 5 anti-avoidance overlay disciplines the configuration; clean cases (genuine multi-year operational integration of the asset into the trading subsidiary) pass; engineered late-stage asset-parking configurations face challenge.
+
+### Example 4 — Loss-symmetry trap on underperforming subsidiary disposal
+
+**Pilcrow Property HoldCo:** disposes of DevCo4 shares (a failed residential development project — planning delay + cost overrun + post-completion soft market) at £3m proceeds vs £5m base cost. Loss on disposal = £2m. DevCo4 was trading immediately before disposal (selling completed units); DevCo4 continues to trade immediately after disposal under the new owner.
+
+- **SSE applies (para 1(2) gain not arising):** because DevCo4 passes the trading-company test in para 19 immediately before AND immediately after disposal, AND the substantial-shareholding test in para 7 (HoldCo held 100% for the four-year-plus development period).
+- **Loss disregarded (para 1(3)):** mirror loss-disallowance applies. HoldCo's £2m loss is DEEMED NOT TO ARISE; the loss cannot be offset against any other gain in the group, cannot be carried forward as a capital loss, and cannot be opted-out-of.
+- **No election available:** Sch 7AC has no opt-out mechanism; the deeming is mandatory. Counterfactual planning (structuring the disposal as an asset sale at DevCo4 level instead of share sale) would have allowed the loss to be a real corporate capital loss at DevCo4 level, available for offset against other gains within the group via s.171A election.
+- **Operative insight — the asymmetric trap:** SSE is unambiguously good on a profitable disposal and unambiguously bad on a loss-making one. For property groups with mixed-performance subsidiaries (some highly profitable, some underwater), the route choice between asset sale at DevCo level vs share sale at HoldCo level needs to consider whether SSE applies + whether the gain/loss outcome is favourable. The loss-orphan trap is the single most underappreciated SSE consideration for property groups exiting underperforming developments.
+
+### Example 5 — Asset-strip-before-sale para 5 anti-avoidance trap
+
+**Cranbridge HoldCo:** owns DevCo5 (residential developer with completed assets). HoldCo wants to retain the underlying land assets (revaluation reserves, latent CGT base) while selling the trading operation. Configuration considered: transfer the underlying land assets OUT of DevCo5 to HoldCo (or a new InvestCo) at no-gain-no-loss under s.171, then sell the share-shell of DevCo5 (now a trading-operation-only entity stripped of land assets) to the buyer.
+
+- **SSE technical eligibility:** if DevCo5 immediately after the asset strip is still a trading company per para 19 (it may continue residential development operations using new acquisitions), AND DevCo5 immediately before the share sale still has trading status, AND the substantial-shareholding 12-month-within-6-years window is satisfied, AND the FA 2011 modified s.179 on the stripped Land would route into the share-sale consideration and be SSE-exempted: SSE technically applies.
+- **Para 5 challenge:** HMRC challenge under Sch 7AC para 5 main-purpose anti-avoidance is highly likely. The arrangement's structure (asset strip immediately preceding share sale) has as one main purpose the avoidance of CGT on the land assets that the seller wished to retain — the para 5 wording captures this configuration.
+- **Non-statutory clearance:** CIRD80570+ clearance route may be available where the commercial substance of the asset retention is genuine and the timing is not engineered around the share sale. Where the asset strip happened years earlier for genuine operational reasons (asset segregation for tenancy management, JV-partner arrangements), the case is defensible; where the strip happened weeks before the share sale, para 5 challenge succeeds.
+- **Operative insight:** SSE is not a route for stripping retained assets out of a trading subsidiary on the cusp of share-sale exit; the para 5 anti-avoidance overlay disciplines the configuration. Forward-planning (12-18 months ahead) with genuine commercial substance is the operative answer.
+
+## FAQ expansion (RUN session polishes prose; 12 FAQs target)
+
+1. **Q: What is the Substantial Shareholding Exemption (SSE) and where in statute does it live?**
+   A: SSE is contained in TCGA 1992 Schedule 7AC (inserted by FA 2002 s.44 + Sch 8). It operates by DEEMING that any chargeable gain (or allowable loss) on a qualifying share disposal does not arise — automatic, no claim, no election. The main exemption requires the investing company to have held 10% or more of the target company for a continuous 12-month period within the six years before disposal, with the target being a trading company (or holding company of a trading sub-group) immediately before and immediately after disposal.
+
+2. **Q: Is SSE a claim-based relief or automatic?**
+   A: Automatic. Sch 7AC para 1(2) deems the gain not to arise; there is no claim, no election, no opt-out. This is the single most important operational point: SSE eligibility cannot be switched off, even where the seller would prefer the gain to be brought into charge (for example, to offset against allowable losses elsewhere in the group). The loss-symmetry mirror at para 1(3) means SSE-eligible LOSS-making share disposals are similarly mandatory — the loss disappears.
+
+3. **Q: What did the FA 2017 reforms change about SSE?**
+   A: F(No.2)A 2017 s.27 + Sch 5 made three operative changes. (1) REMOVED the requirement that the investing company (the seller) itself be a trading company or member of a trading group — so a property HoldCo that previously failed SSE because it also held BTL investment subsidiaries can now use SSE on a trading-subsidiary disposal. (2) ADDED a new QII exemption at Sch 7AC para 7A for investing companies that are ≥80% owned by qualifying institutional investors (pension funds, sovereign wealth, life assurance, UK regulated CISs, charities per HMRC CG53080P+). (3) AMENDED Sch 7AC para 19 (2A) on the post-disposal trading-test window for wind-down scenarios.
+
+4. **Q: What is the immediately-before / immediately-after trading-company rule?**
+   A: Per Sch 7AC para 19 (in post-FA-2011 form), the target subsidiary must be a trading company (or holding company of a trading sub-group) at two time points: immediately before the disposal AND immediately after the disposal. This narrowed the prior FA 2002 form which required trading status throughout the 12-month substantial-shareholding period. The operative engineering risk for property groups: a development subsidiary that has sold its last unit and become a cash shell at completion FAILS the immediately-after limb, even if it traded throughout the prior twelve months. Sequencing of completion against the subsidiary's last sale is the critical planning question. HMRC CG53127+ has worked examples.
+
+5. **Q: How does the trading-company test apply to property subsidiaries?**
+   A: Sch 7AC para 19 imports the badges-of-trade case law and HMRC's CG53116 operative position that "substantial" non-trading activities means 20% or more on any reasonable measure (income, asset values, expense allocations, employee or director time, overall purpose). For property groups: BTL subsidiaries FAIL categorically per the Pawson investment-line analysis cross-referenced §28; development-for-sale subsidiaries PASS; build-to-rent subsidiaries FAIL per end-purpose test; develop-and-retain-some subsidiaries are case-by-case; substantial-refurbishment specialists with short holding periods can PASS but cosmetic-upgrade-to-held-BTL configurations fail.
+
+6. **Q: What is the para 5 main-purpose anti-avoidance test?**
+   A: Sch 7AC para 5 disapplies SSE where the disposal forms part of arrangements with a main purpose (or one of the main purposes) of avoiding tax. The wording is broader than purposive-construction Ramsay (which operates separately as a doctrine of statutory interpretation). Common HMRC challenge configurations include: parking an asset into a trading subsidiary shortly before share sale; using SSE to disguise what is in substance a property-asset disposal; intra-group transfer mechanics where the SSE-target subsidiary never genuinely operated as a trading entity. No formal clearance process exists for Sch 7AC; non-statutory clearance is available under HMRC CIRD80570+ for genuine doubt scenarios where commercial substance is clear but legal analysis uncertain.
+
+7. **Q: How does s.179 degrouping interact with SSE?**
+   A: Two operative directions. Modified s.179 charge INTO an SSE-protected disposal: FA 2011 Sch 10 modified s.179 so that the degrouping charge on assets transferred intra-group within 6 years of the target leaving the group is, on a subsequent share-sale exit, added to the SHARE-SALE CONSIDERATION (and then exempted under SSE) rather than imposed as a separate company-level charge. Net effect: where SSE applies, the degrouping charge effectively disappears. Asset-strip-before-sale anti-avoidance: moving the underlying asset OUT of the SSE-target company before the share sale (so the share sale captures only the shell) is the anti-SSE-stripping configuration that triggers para 5 main-purpose challenge.
+
+8. **Q: What is the substantial-shareholding 10% / 12-months-within-6-years test?**
+   A: Sch 7AC para 7 requires the investing company to have held 10%+ of ordinary share capital + 10% of rights to profits available for distribution + 10% of rights to assets on a winding-up, for a continuous 12-month period within the six years before disposal. The three-limb structure (share capital + profits + assets) means unusual share structures (preference shares, deferred shares, non-voting shares, alphabet-share arrangements) can BREAK one limb even where the headline 10% holding looks fine. The 12-month-within-6-years window means structures retrofitted in the disposal year FAIL the test; structuring decisions must be in place 12-18 months ahead of any planned exit.
+
+9. **Q: What is the loss-symmetry trap?**
+   A: Sch 7AC para 1(3) mirrors the gain-disregarded rule at para 1(2) by deeming losses not to arise. Where SSE applies, the seller's CHOICE is removed. A group selling a development subsidiary at a £2m LOSS cannot opt to bring the loss into charge to offset other gains; the deeming is mandatory. The asymmetric design is intentional (HMRC operative position: SSE prevents both economic-double-taxation on gains AND economic-double-relief on losses) but the operational result is that LOSS-MAKING SSE-eligible share disposals are tax-orphan losses. Significant for property groups exiting underperforming development subsidiaries; counterfactual asset-sale-at-DevCo-level routing preserves the loss for offset.
+
+10. **Q: How does SSE interact with the multi-company group operation framework?**
+    A: SSE sits within the multi-company group operation cluster anchored at §21.8 (LIVE post F-3 approval, batch M2-A-B2). Related mechanics include s.171 no-gain-no-loss intra-group transfers (used to package assets into the SSE-target subsidiary 12+ months ahead of disposal); s.171A capital-loss election (less relevant when SSE applies because the loss-symmetry deeming overrides); CTA 2009 Part 9A intra-group dividend exemption (operational mechanic for proceeds extraction post-SSE-protected share sale); CTA 2010 Part 5 group relief (sibling operational layer for trading-loss surrender within a 75%-group). Cross-reference existing `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics`.
+
+11. **Q: How does SSE compare to alternative exit routes for property groups?**
+    A: Four-way comparison. (1) SSE-protected share sale at HoldCo level — best for selling a trading subsidiary to a third-party buyer who will continue the trade; CT exemption at company level. (2) MVL via TCGA 1992 s.122 (capital treatment for shareholder receipt) — best for solvent wind-down where founder wants capital-rate shareholder extraction; cross-reference `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment` + sibling pick `transferring-a-business-out-of-a-company`. (3) EOT via TCGA 1992 s.236H — best for founder-to-employee succession; cross-reference `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236`. (4) Full asset sale at company level with downstream extraction — best where SSE is unavailable (investment subsidiary; failed trading test; loss-position where loss preservation is operationally valuable).
+
+12. **Q: What are the common SSE planning mistakes for property groups?**
+    A: Six recurring patterns. (1) Retrofitting structure in the same year as exit, failing the 12-month substantial-shareholding window. (2) Treating SSE as opt-in claim-based relief when it is automatic — leading to surprise on loss-making disposals. (3) Ignoring loss-symmetry on underperforming subsidiary disposals. (4) Sequencing trade-cessation against share-sale completion incorrectly, failing the immediately-after limb. (5) Engineering asset-parking-into-DevCo configurations vulnerable to para 5 main-purpose challenge. (6) Misclassifying build-to-rent subsidiaries as trading when the Pawson investment-line analysis fails them as investment per HMRC CG53116 + §28 trading-vs-investment cluster.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy.
+- **Specific over generic.** Named statute (TCGA 1992 Sch 7AC paras 1 + 3 + 3A + 5 + 7 + 7A + 15A + 19 + 20; TCGA 1992 s.171 + s.171A + s.179; FA 2002 s.44 + Sch 8 inception; F(No.2)A 2017 s.27 + Sch 5 broadening; FA 2011 Sch 10 s.179 modification); specific HMRC manual anchors (CG53000+ + CG53080P+ + CG53116 + CG53127+ + CG52521+ + CIRD80570+); anonymised personas.
+- **No real names.** Anonymised personas (Threadwell, Marshfield Capital, Eastfield, Pilcrow, Cranbridge).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 12 entries in frontmatter `faqs:` array.
+- **Anti-templating:** DEEPER STATUTORY-MECHANICS REFERENCE LAYER framing for property-advisor / FD audience. Do NOT collapse into a restatement of the existing user-facing `substantial-shareholding-exemption-property-companies` page; hold the deeper mechanics angle (family of sub-exemptions, s.179 FA 2011 modification, para 5 anti-avoidance depth, pre-disposal sequencing playbook, multi-DevCo worked examples beyond the existing page's £8m DevCo example).
+- **§21.8 + §28 + §22 + §27 do-not-write GREP discipline (RUN session greps draft against ALL):**
+  - "SSE is claimed on the CT600" (FALSE — automatic per Sch 7AC para 1).
+  - "SSE applies to investment subsidiaries" (FALSE — Sch 7AC para 19 trading-company test fails for BTL).
+  - "Loss-making share disposals can be opted out of SSE" (FALSE — mandatory deeming under para 1(3)).
+  - "Investing company still needs to be trading post-FA 2017" (FALSE — FA 2017 s.27 + Sch 5 removed that requirement).
+  - "Immediately-after means the subsidiary must continue trading indefinitely" (FALSE — immediately-after is a single time point).
+  - "Trading test is met if 50% of activities are trading" (FALSE — HMRC CG53116 "substantial" = 20%+ non-trading fails the test).
+  - "SSE requires formal HMRC clearance" (FALSE — no statutory clearance; non-statutory under CIRD80570+ only).
+  - "Para 5 anti-avoidance is the same as purposive-construction Ramsay" (FALSE — broader main-purpose wording).
+  - "S.179 degrouping always triggers separate CT charge on share-sale exit" (FALSE post-FA-2011 — modified into share-sale consideration where SSE applies).
+  - "12-month substantial-shareholding window can be satisfied retrospectively" (FALSE — must be a continuous 12-month period actually held within the 6 years before disposal).
+  - "Refurbishment specialists fail the trading test" (FALSE in absolute terms — genuine substantial refurbishment with short holding period passes; cosmetic upgrades to held BTL fail; case-by-case per §28).
+  - "QII exemption requires 100% institutional ownership" (FALSE — ≥80% threshold per Sch 7AC para 7A).
+  - "CT main rate is 19%" (FALSE — 19% small profits rate £0-£50k; 25% main rate £250k+; marginal relief band £50k-£250k per §21.A F-31 lock).
+- **Quality bar (six checks):** 0 em-dashes; 0 Tailwind classes; FAQ count matches frontmatter; meta title ≤62; meta description ≤158; internal links resolve.
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp **§21 + §21.A Ltd Co + CT three-figure framework**; §21.8 multi-company group operation — LIVE post F-3; §28 trading-vs-investment Wave 8 cluster + Pawson + CG53116; §22 IHT for BPR-investment-line parallel analysis; §27 HMRC enquiry mechanics for para 5 challenge route).
+2. Claim this page in wave tracker.
+3. Read this brief in full.
+4. Fetch + read competitor URLs via session-side WebSearch (queries per competitor section above).
+5. Read closest-existing pages: **`substantial-shareholding-exemption-property-companies`** (PRIMARY anti-cannibal target — read FIRST to internalise what existing page covers; this page MUST cross-link OUT for conceptual layer + cover what existing page does NOT cover); `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics`; `pre-sale-extraction-strip-cash-before-spv-share-sale-vs-buyer-discount`; `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment`; `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236`; sibling `transferring-a-business-out-of-a-company` (this batch); `condition-a-acquisition-main-purpose-test-trader-by-stealth-landlord-trap` + `condition-c-trading-stock-section-162-incorporation-relief-denial-developers` + `condition-d-development-main-purpose-convert-and-flip-trap-landlord-developers` (§28 trading-investment-line pages for trading-company test depth cross-reference).
+6. Plan H2 / H3 outline — eight-section structure per Framing differentiator: (1) recap + role; (2) family of exemptions; (3) FA 2017 deep-dive; (4) para 5 anti-avoidance deep-dive; (5) s.179 degrouping FA 2011 modification mechanic; (6) pre-disposal sequencing playbook; (7) property-group worked examples beyond £8m DevCo; (8) common mistakes.
+7. Verify factual claims per §16.35 (esp current CT calibration per §21.A F-31; current QII exemption qualifying-investor list per HMRC CG53080P+; current Sch 7AC para 7A subsidiary-eligibility tests for property holdings — HIGHEST RISK verification point per Example 2 above; current case-law status on SSE trading-test disputes via BAILII search).
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP check (13 patterns above).
+12. Apply redirect repointing if needed (no expected redirects for this slug; existing `substantial-shareholding-exemption-property-companies` page survives as separate URL with reciprocal cross-link).
+13. Register in `monitored_pages` (HIGH CANNIBAL RISK monitor — track GSC impressions on both `substantial-shareholding-exemption-sse` and existing `substantial-shareholding-exemption-property-companies` for 90 days post-launch; if traffic cannibalises one direction, consider redirect consolidation).
+14. Commit on branch.
+15. Fill per-page work-log.
+16. Mark ✅ done in tracker.
+17. Append flags (no new flags expected; §21.8 LIVE; Sch 7AC statute stable post-FA-2017).
+18. Append discoveries.
+19. Final page in batch — write batch-done marker per launch prompt.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+[RUN session records work here.]
+
+---
+
+## Stage 2 brief extension work log
+
+- **Stage 2 author:** MW2 Stage 2 Sub-Agent A (batch M2-A-B4) on 2026-05-27.
+- **Stage 1 seed status:** RECEIVED comprehensive seed flagging HIGH CANNIBAL RISK with existing `substantial-shareholding-exemption-property-companies` page (shipped 2026-05-22). Seed offered two paths: (a) carve as deeper statutory-mechanics reference layer; (b) REDIRECT slug to existing page.
+- **Stage 2 differentiation decision:** PROCEED with carved differentiation route (path a). Five substantive differentiators carved by Stage 1 (family of sub-exemptions including QII + para 3A + para 15A; s.179 degrouping FA 2011 modification mechanic; para 5 main-purpose anti-avoidance depth + CIRD80570+ clearance availability; pre-disposal sequencing playbook; property-group worked examples beyond existing page's £8m DevCo) are operationally non-overlapping with existing user-facing page's content scope. RUN-session writer holds the deeper-mechanics positioning + cross-links OUT to existing page for conceptual layer. Stage 1b reviewer should validate this decision; if reviewer judges differentiator insufficient at post-Stage-2 review, REDIRECT remains a clean fallback (Stage 2 effort already incurred but redirect requires only minimal RUN-session work). **Cannibalisation risk flagged for `monitored_pages` 90-day GSC impression watch (workflow step 13).**
+- **Stage 2 extensions:** added (i) VERIFIED authority URL list per §16.31 + §16.36 patterns with explicit FA-inserted-Schedule-quirk note per D-12 batch M2-A-B2; (ii) competitor-research target queries for session-side WebSearch (firm-domain attempts dropped per Wave 8/9 + M2-A-B1/B2/B3 consistent practice); (iii) FIVE worked examples grounding the deeper-mechanics positioning (multi-DevCo HoldCo FA 2017 broadening; QII para 7A for institutional-fund-owned HoldCo; s.179 degrouping FA 2011 modification; loss-symmetry trap; asset-strip-before-sale para 5 challenge); (iv) 12-FAQ expansion; (v) Universal rules + 19-step workflow stubs; (vi) consolidated do-not-write GREP discipline pattern list (13 patterns).
+- **§16.36 statutory-citation cross-check:** verified key cites against legislation.gov.uk anchors + §21.A + §21.8 cluster locks + Wave 8 §28 trading-investment cluster. TCGA 1992 Sch 7AC paras 1 + 3 + 3A + 5 + 7 + 7A + 15A + 19 + 20 (all confirmed); TCGA 1992 s.171 + s.171A + s.179 (confirmed); FA 2002 s.44 + Sch 8 (confirmed, historic inception); F(No.2)A 2017 s.27 + Sch 5 (confirmed, broadening); FA 2011 Sch 10 (confirmed, s.179 modification). **CT main rate 25% / small profits 19% / marginal relief band £50k-£250k** verified per §21.A F-31 lock. **No drift catches this brief** — Sch 7AC architecture is statute-stable; no Stage-1 mis-citations found. Sixth consecutive batch where Stage 2 §16.36 cross-check has either caught drift (F-7, F-8, F-9, F-10, F-11) OR confirmed brief integrity — gate continues to earn its keep per D-13 §16.40 pattern.
+- **§16.42 EXISTING_PAGE_STALE candidates surfaced:** none net-new this brief. The existing `substantial-shareholding-exemption-property-companies` page is recent (2026-05-22) and Stage 2 reviewer did not identify stale content; HIGH CANNIBAL RISK is by overlap of intended scope, not by existing page being out of date.
+- **Highest-risk verification point flagged for RUN session:** the exact Sch 7AC para 7A QII subsidiary-eligibility tests for property holdings (Example 2). The QII route's "interest in land" carve-out may DISQUALIFY property-development subsidiaries from QII protection even where conventional trading test would pass; RUN session MUST WebFetch HMRC CG53080P+ and Sch 7AC para 7A directly at write time before writing the QII section. If the QII route is in fact unavailable to property subsidiaries due to interest-in-land carve-out, Example 2's framing pivots to "QII operative for institutional-fund-owned HoldCos disposing of NON-PROPERTY trading subsidiaries within their broader portfolio".
+- **Cannibalisation reasoning held:** HIGH CANNIBAL RISK acknowledged; differentiator carved at deeper-mechanics layer with five distinct content axes; reciprocal cross-link with existing page; `monitored_pages` 90-day watch flagged.
+- **HP-lock alignment held:** §21 + §21.A (LtdCo + CT framework); §21.8 (multi-company group operation — LIVE post F-3 approval batch M2-A-B2); §28 (trading-vs-investment Wave 8 cluster + Pawson + CG53116); §22 (IHT BPR-investment-line parallel analysis); §27 (HMRC enquiry mechanics for para 5 challenge route). **No new HP-lock requested** — Sch 7AC architecture rests on existing locks.
+- **Forward-link discipline:** dense cross-link grid to MW2 Bucket A (A1 incorporation pillar, A2 shareholder primer, A4 corporate tax planning lever-map, A12 limited companies pillar, A20 transferring-business-out sibling) + multi-company group operation cluster + Wave 8 trading-investment cluster + alternative exit-route pages (MVL, EOT, pre-sale extraction).
+- **Operational note for RUN session:** §16.35 per-write verification mandatory for (a) current Sch 7AC para 7A QII subsidiary-eligibility tests for property holdings (Example 2 highest-risk point); (b) current HMRC CG53080P+ qualifying-investor list; (c) current HMRC CG53116 substantial-trading-test operative text; (d) current case-law status on SSE trading-test disputes via BAILII (Iliffe News, Allam, recent FTT/UT decisions); (e) current HMRC CIRD80570+ non-statutory clearance availability text.
 
 ---
 
