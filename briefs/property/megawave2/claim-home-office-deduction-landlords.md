@@ -59,3 +59,193 @@ Tone is plain-language with worked-example density; H2s are action-led ("How to 
 
 ## Work log (Stage 2 + RUN session populate)
 [Stage 2 + RUN session record their work here. Stage 1 seed verifications: ITTOIA 2005 s.272 ("Application of trading income rules: GAAP") existence + heading verified verbatim via WebFetch against https://www.legislation.gov.uk/ukpga/2005/5/section/272 on 2026-05-26. ITTOIA 2005 s.94H (simplified-flat-rate home-office), s.34 (wholly-and-exclusively trading test) imported via s.272 — Stage 2 sub-agent verifies the s.272 imported-provisions list against current legislation.gov.uk text at write per §16.35. TCGA 1992 s.224(1) (PPR business-use restriction), TCGA 1992 s.222(1), ITEPA 2003 ss.316A-317 (Ltd-Co home-working allowance) — Stage 2 sub-agent verifies at write per §16.35. s.94H flat-rate figures (£10/£18/£26) cited from HMRC simplified-expenses page (stable for several years); Stage 2 verifies against current gov.uk publication. F-52 raised for HP-lock candidate on landlord-allowable-expenses operational floor (including home office). Cannibalisation check: `landlord-expenses-allowable-uk-2026` currently has one home-office paragraph at simplified-flat-rate £10/month example only; B5's home-office deep-dive + CGT-trap angle is non-overlapping. Stage 2 re-greps at write time.]
+
+### Stage 2 extension log
+- **2026-05-27** — Stage 2 sub-agent (M2-B-B1) appended Competitor URLs, Closest-existing-pages cannibalisation context, Redirect-overlap check, Authority links, Universal rules, 19-step Workflow, and Per-page work-log skeleton (below). **HP-LOCK NEWLY THREADED: §34 Landlord allowable expenses + home-office cross-tax trap operational floor** signed off by Stage 1b reviewer 2026-05-27 (commit 96ea3a6 closing F-52). §34 now anchors B5 with: statutory architecture (ITTOIA 2005 s.272 import gateway), home-office two-route choice + CGT-trap (s.94H simplified flat-rate vs s.34 actual-cost apportionment, with exclusive-business-use characterisation triggering TCGA 1992 s.224(1) PPR restriction on disposal — the differentiator hook), cross-tax discipline framing, Ltd Co-landlord home-office mechanic via ITEPA 2003 ss.316A-317 + formal director rental, do-not-write list. Stage 2 sub-agent did NOT independently re-verify ITTOIA 2005 s.272 (carried forward verbatim from Stage 1 — confirmed live URL). s.94H flat-rate figures (£10/£18/£26) + CGT rates 18%/24% from 6 April 2024 remain rate-by-reference per §16.27 (RUN session WebFetches gov.uk simplified-expenses page + TCGA 1992 s.4 at write). Out-of-wave back-patch candidate logged: `landlord-expenses-allowable-uk-2026` pillar page does NOT surface the CGT trap on its home-office paragraph — should be back-patched once B5 ships (Stage 2 surfaces this as discovery for Stage 1b conductor / RUN session to escalate to manager queue).
+
+---
+
+## Competitor URLs (Stage 2 populated 2026-05-27; URL liveness verified at fetch time per §16.31)
+
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the simplified-flat-rate vs actual-cost decision framing; (b) the apportionment formula for actual-cost; (c) the hours-based simplified-flat-rate working; (d) the CGT-trap surfacing (most pieces miss this — it is B5's differentiator angle); (e) the Ltd-Co director home-office mechanic (ITEPA ss.316A-317 allowance vs formal rental); (f) the records-and-evidence expectation. Lead landlord-press pieces (RITA4Rent, Provestor, Landlord Today, Property118) typically surface the simplified £10/month at headline depth and do not surface the CGT trap. Established-firm pieces (Hammond & Co, Forbes Dawson, Crowe) sometimes surface the s.224(1) restriction but rarely walk the actual £ impact at house-sale. RUN session flags any competitor copy that asserts actual-cost-apportionment does not affect PPR as drift (per §34 do-not-write list).
+
+- https://www.rita4rent.co.uk/landlord-home-office-allowance-uk/ (RITA4Rent landlord home-office explainer — landlord-press framing)
+- https://www.provestor.co.uk/blog/landlord-home-office-expenses (Provestor landlord home-office explainer — landlord-LtdCo framing)
+- https://www.hammondco.com/insights/landlord-home-office-deduction (Hammond & Co landlord home-office briefing — professional-firm framing, sometimes surfaces CGT trap)
+- https://www.crowe.com/uk/insights/landlord-home-office-expenses (Crowe UK landlord home-office briefing — professional-firm framing)
+- https://www.gov.uk/simpler-income-tax-simplified-expenses/business-premises (gov.uk simplified-expenses page — authoritative for s.94H flat-rate figures)
+- https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2120 (HMRC PIM2120 — Property Income Manual home-office area; verify exact section live at write)
+- https://www.icaew.com/insights/tax-news/property-business-home-office-cgt (ICAEW Tax Faculty article on PPR business-use restriction — for the CGT-trap framing)
+
+**Borrowable patterns:** the apportionment formula walk; the s.94H hours-based table; the Ltd-Co director-formal-rental architecture. Do NOT borrow any competitor copy that asserts actual-cost-apportionment has no PPR consequence (per §34 do-not-write); do NOT borrow any flat-rate figure without re-verifying against gov.uk simplified-expenses page at write.
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "home office deduction landlord", "claim home office expenses landlord", "landlord home office tax relief", "simplified expenses landlord home office", "landlord home office CGT", "actual cost vs simplified home office", "home office PPR restriction landlord", "Ltd Co landlord home office".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `landlord-expenses-allowable-uk-2026` (cannibal score ~0.40 — the **broad allowable-expenses pillar**; **cross-link as the pillar reference**; B5 is the focused home-office deep-dive; differentiation = B5 walks the s.94H vs s.34 choice AND surfaces the s.224(1) CGT trap which the pillar does not cover; the pillar covers home-office at simplified-£10/month example only)
+- `principal-private-residence-relief-landlords` (~0.20 — PPR mechanics; **cross-link from question 5** for the s.222 / s.224 framework deep-dive; differentiation = B5 surfaces s.224(1) at home-office-trigger depth, PPR page deep-dives the broader relief mechanics)
+- `2027-tax-rates-incorporation-decision-property-landlords` + `2027-tax-rates-incorporation-decision-uk-landlords` (~0.10 — incorporation decision; **cross-link from question 6** for the Ltd-Co route framing; differentiation = B5 surfaces the Ltd-Co home-office mechanic at headline, incorporation pages deep-dive the broader Ltd-Co decision)
+
+**Cannibalisation discipline:**
+- Cross-link the allowable-expenses pillar heavily; do NOT re-walk the broader expense taxonomy. B5 stays focused on home-office only.
+- Cross-link the PPR page from question 5; do NOT re-walk the broader s.222 PPR architecture.
+- Cross-link the incorporation pages from question 6 (Ltd-Co route); do NOT re-walk the incorporation decision matrix.
+- Stage 2 sub-agent re-greps blog corpus at write time for "home office", "s.94H simplified", "s.224 business use", "exclusive business use room"; if a sibling page has shipped between this brief and write that overlaps B5's CGT-trap angle, raise CANNIBAL flag in F-50..F-99 range.
+- **OUT-OF-WAVE BACK-PATCH CANDIDATE** logged in Stage 2 work log: `landlord-expenses-allowable-uk-2026` should be back-patched to add the home-office CGT-trap cross-link once B5 ships; Stage 1b conductor / RUN session escalates to manager queue.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing middleware redirect matches B5's slug or near-slugs (verified 2026-05-27 against `Property/web/src/middleware.ts`). No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-27; session selects 6-8)
+
+**Statutory (ITTOIA 2005 + TCGA 1992 + ITEPA 2003):**
+- ITTOIA 2005 s.272 (Application of trading income rules: GAAP — verified verbatim 2026-05-26): https://www.legislation.gov.uk/ukpga/2005/5/section/272
+- ITTOIA 2005 s.271 (Property business charge): https://www.legislation.gov.uk/ukpga/2005/5/section/271
+- ITTOIA 2005 s.271E (Calculation in accordance with GAAP): https://www.legislation.gov.uk/ukpga/2005/5/section/271E
+- ITTOIA 2005 s.94H (Use of home for business purposes — simplified flat-rate): https://www.legislation.gov.uk/ukpga/2005/5/section/94H
+- ITTOIA 2005 s.34 (Expenses not wholly and exclusively for trade — actual-cost apportionment gateway): https://www.legislation.gov.uk/ukpga/2005/5/section/34
+- TCGA 1992 s.222 (Relief on disposal of private residence): https://www.legislation.gov.uk/ukpga/1992/12/section/222
+- TCGA 1992 s.224 (Amount of relief — business-use restriction at s.224(1)): https://www.legislation.gov.uk/ukpga/1992/12/section/224
+- ITEPA 2003 s.316A (Accommodation outgoings, etc — employer-provided home-working allowance): https://www.legislation.gov.uk/ukpga/2003/1/section/316A
+- ITEPA 2003 s.317 (Subsidised meals: home-working context): https://www.legislation.gov.uk/ukpga/2003/1/section/317
+- CTA 2009 s.54 (Expenses for the purpose of trade — Ltd Co CT-side gateway): https://www.legislation.gov.uk/ukpga/2009/4/section/54
+
+**HMRC manuals + guidance:**
+- HMRC Property Income Manual PIM2120 area (home office): https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2120 (verify exact section live at write)
+- HMRC Business Income Manual cross-references for s.94H + s.34
+- HMRC Capital Gains Manual CG64200+ (s.224(1) PPR business-use restriction)
+- gov.uk simplified-expenses page (s.94H flat-rate figures): https://www.gov.uk/simpler-income-tax-simplified-expenses/business-premises
+
+**Cross-references in house_positions.md:** **§34 primary** (NEW lock — Landlord allowable expenses + home-office cross-tax trap operational floor, signed off 2026-05-27 closing F-52); §34.1 statutory architecture; §34.2 home-office two-route choice + CGT-trap; §34.3 cross-tax discipline; §34.4 Ltd Co-landlord mechanic; §16.27 rate-by-reference for flat-rate figures + CGT rates; §16.42 per-write figure verification; §21.3 (existing — Ltd Co operational tax) for the Ltd-Co director rental cross-reference.
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + gov.uk: (a) ITTOIA 2005 s.272 imported-provisions list current text (confirms s.94H + s.34 are imported); (b) ITTOIA 2005 s.94H simplified flat-rate figures £10/£18/£26 against gov.uk simplified-expenses page (rate-by-reference per §16.27 — verify before publication); (c) TCGA 1992 s.224(1) business-use restriction current text; (d) TCGA 1992 s.4 CGT rates 18%/24% from 6 April 2024 (rate-by-reference per §16.27); (e) ITEPA 2003 s.316A employer-provided home-working allowance £6/week / £312/year HMRC permitted amount current state. **§16.36 statutory cross-check:** verify every section cited against legislation.gov.uk verbatim before transcription.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Plain-language, action-led tone with worked-example density. Addressed to a UK individual landlord who manages a residential rental portfolio from home and wants to know exactly how to claim a home-office deduction.
+- Specific worked frames using anonymised personas (Patel-3-flats-managed-from-home; Singh-15-unit-portfolio-with-dedicated-office-room; Mawell-Ltd-Co-landlord-director); no real client names.
+- Named statute every time a rate or rule is asserted (ITTOIA 2005 s.272, s.94H, s.34; TCGA 1992 s.222 + s.224(1); ITEPA 2003 ss.316A-317).
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 3 inline `<aside>` CTAs:
+  - After the two-method decision tree (high-intent: reader has just calibrated which route fits their portfolio)
+  - After the CGT-trap paragraph (high-intent: reader has realised they may have already characterised a room as exclusive-business-use on a prior tax return; CGT exposure is a strong adviser-engagement trigger)
+  - After the Ltd-Co route paragraph (high-intent: Ltd-Co landlord director ready to choose between ITEPA allowance and formal rental)
+- Vary opening; do NOT lead with "Many landlords work from home and can claim a deduction...". Open with the choice the reader needs to make per the framing-differentiator instruction: "If you manage your rental properties from home, HMRC gives you two ways to claim a deduction. One is easier and never costs you anything on sale; the other is more generous and can quietly cost you tens of thousands of pounds in lost capital-gains relief when you eventually sell...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 10 to 12 for this action-led deep-dive. Include explicit FAQ on the CGT-trap avoidance (question 5), the Ltd-Co route (question 6), and the employment-and-property double-occupation (question 9).
+
+### Cannibalisation
+- Cross-link `landlord-expenses-allowable-uk-2026` as the pillar reference; do NOT re-walk the broader expense taxonomy.
+- Cross-link `principal-private-residence-relief-landlords` from question 5; do NOT re-walk the broader s.222 PPR architecture.
+- Cross-link `2027-tax-rates-incorporation-decision-property-landlords` and `2027-tax-rates-incorporation-decision-uk-landlords` from question 6; do NOT re-walk the incorporation decision matrix.
+- Cross-link `abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know` from question 10 for FHL income-tax-side context.
+
+### House positions
+- §34 primary (NEW lock — Landlord allowable expenses + home-office cross-tax trap, signed off 2026-05-27 closing F-52); honour every sub-section.
+- §16.27 (rate-by-reference for flat-rate figures + CGT rates); honour rate-by-reference framing.
+- §21.3 (Ltd Co rent-charging mechanics — for the Ltd-Co director rental cross-reference); honour existing lock.
+- §34 do-not-write list (simplified does not always win; actual-cost does affect PPR; Ltd-Co director cannot CT-deduct without personal-side routing); honour all bullets.
+
+### Quality bar
+- Body word count: 2,200 to 2,600 (action-led deep-dive with worked-example density).
+- FAQs: 10 to 12.
+- External authority links: 6 to 8.
+- Build clean: `cd Property/web && npm run build`.
+- All six verifications (0 em-dashes; 0 Tailwind classes; FAQ count match; meta title under 62; meta description under 158; internal links resolve).
+
+### Anti-templating
+- Differentiator is the **action-led decision + process** structure focused on home-office only with CGT-trap as the differentiation hook, distinct from the broader allowable-expenses pillar pattern. Write to it.
+- Lead with the choice the reader needs to make per the framing-differentiator counter-pattern; do NOT open with "Many landlords work from home...".
+- Vary H2s; action-led ("How to claim the simplified flat-rate", "How to claim actual-cost apportionment", "The CGT trap: when claiming the deduction now costs you more on sale", "What about my Ltd Co?") rather than definitional.
+- Vary FAQ phrasing; do NOT reuse phrasings from the allowable-expenses pillar.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. **§34 primary** (NEW lock); §21.3 + §16.27 + §16.42 adjacent.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs via httpx + BeautifulSoup. Note any drift against §34 do-not-write list (most common competitor drift: asserting simplified always wins; missing the CGT trap; mis-stating Ltd-Co route as CT-side-only).
+5. Read closest existing pages: `landlord-expenses-allowable-uk-2026`, `principal-private-residence-relief-landlords`, `2027-tax-rates-incorporation-decision-property-landlords`, `2027-tax-rates-incorporation-decision-uk-landlords`. Decide differentiation (home-office deep-dive with CGT-trap differentiator).
+6. Plan H2 outline + meta + FAQs + CTA placements. Use action-led H2 structure. Lead with the choice the reader needs to make.
+7. Verify factual claims; **per §16.35: re-verify ITTOIA 2005 s.272 imported-provisions; ITTOIA s.94H flat-rate £10/£18/£26 at gov.uk simplified-expenses page; TCGA 1992 s.224(1) business-use restriction; TCGA 1992 s.4 CGT rates 18%/24%; ITEPA 2003 s.316A employer-allowance £6/week / £312/year**.
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`. Query suggestion: "home office desk laptop" or "person working from home accounting".
+9. Write markdown at `Property/web/content/blog/claim-home-office-deduction-landlords.md` with full frontmatter (slug, category, title, metaTitle, metaDescription, faqs, reviewer, dates, hero image).
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on main per rolling-architecture RUN-phase convention.** Commit message format: `MW2 RUN B-B1: claim-home-office-deduction-landlords page (M2-B-B1 pick B5)`.
+15. Fill in the per-page work-log below.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append any site-wide issues to `megawave2_site_wide_flags.md` (F-50 to F-99 range for Bucket B). **Specifically: raise out-of-wave back-patch flag for `landlord-expenses-allowable-uk-2026` to add the home-office CGT-trap cross-link once B5 ships.**
+18. Append discoveries to `megawave2_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+-
+
+### Existing-page review
+-
+
+### Citations added
+-
+
+### Internal links added
+-
+
+### Inline CTA placements
+-
+
+### Build attempts
+-
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave2_site_wide_flags.md
+-
+
+### 2-3 sentence summary
+-
