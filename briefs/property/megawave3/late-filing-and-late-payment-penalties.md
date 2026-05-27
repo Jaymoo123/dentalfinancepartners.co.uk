@@ -61,13 +61,148 @@ None of the sibling pages covers the **individual-landlord SA cascade end-to-end
 - Legislation anchors: FA 2009 Sch 55 paras 3 / 4 / 5 / 6 (legacy late-filing cascade) + Sch 56 paras 3 / 4 (legacy late-payment cascade) — verify verbatim against legislation.gov.uk current-as-amended text at write time per §16.35. FA 2021 Sch 24 (MTD ITSA points regime — verify status of commencement order at write time; if FA 2025 has amended the schedule, reflect that). TMA 1970 s.31A (appeal window) + s.86 (interest) + s.59A / s.59B (due dates). Cross-reference §19.7, §27.3, §27.4.
 - Case-law to ground: Perrin v HMRC [2018] UKUT 156 (reasonable excuse four-stage test — controlling); Martland v HMRC [2018] UKUT 178 (late-appeal admission three-stage test); Anderson v HMRC (suspension discretion — closest authority on HMRC's reasonable-grounds basis). Sessions should NOT manufacture authorities beyond these or any post-2024 UT / SC authority on the same issues that may have emerged.
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — extended
 
-[Stage 2 populates from NETNEW_PROGRAM §4: voice + style (no em-dashes, no Tailwind in markdown, FAQ count match, 6-check quality bar) and the 19-step workflow.]
+### Authority URLs (Stage 2 surfaces; RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/55`** — FA 2009 Schedule 55 (late-filing penalties, legacy regime still operative for non-MTD landlords). RUN session reads paras 3 / 4 / 5 / 6 verbatim — £100 fixed at filing date; £10/day from 3 months; 5% or £300 at 6 months; 5% or £300 at 12 months with para 6(3A)-(5) 70%/100% deliberate uplift.
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/56`** — FA 2009 Schedule 56 (late-payment penalties, legacy regime). RUN session reads para 3(2) / 3(3) / 3(4) verbatim — 5% at 30 days; 5% at 6 months; 5% at 12 months on item 1 (SA income tax / CGT under TMA 1970 s.59B).
+- **`https://www.legislation.gov.uk/ukpga/2021/26/schedule/24`** — FA 2021 Schedule 24 (the NEW points-based late-submission regime for MTD ITSA from 6 April 2026). RUN session reads at write time to verify commencement order status + verbatim points-threshold + £200 penalty + 24-month reset rules. Sessions must NOT conflate with FA 2007 Schedule 24 (which is the long-standing inaccuracy regime — same numerical name, totally different instrument).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/8`** — TMA 1970 s.8 (notice to file SA return for individuals; the statutory anchor for the filing obligation that Sch 55 enforces).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/59B`** — TMA 1970 s.59B (payment of income tax + CGT; sets the 31 January following the tax year SA payment due date that Sch 56 enforces).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/59A`** — TMA 1970 s.59A (payments on account at 31 January + 31 July; triggers interest only under s.86, NOT Sch 56 surcharge — operationally distinct from balance-payment cascade).
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/86`** — TMA 1970 s.86 (interest on unpaid income tax + CGT). RUN session anchors the continuously-accruing interest cascade, not mitigated by reasonable excuse.
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/31A`** — TMA 1970 s.31A (30-day appeal window against penalty assessments).
+- **`https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html`** — gov.uk Spring Statement 2025 HTML. RUN session re-verifies the 3% from day 15 / +3% from day 30 / +10% per annum from day 31 verbatim for the MTD ITSA accelerated late-payment cascade.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch61000`** — Compliance Handbook CH61000+ (late-filing penalty operational guidance). RUN session reads child pages for the per-cascade-stage operational triggers.
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch155000`** — Compliance Handbook CH155000+ (reasonable excuse operational guidance). RUN session reads for the post-Perrin operational framing.
+- **`https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam50000`** — Self Assessment Manual SAM50000+ (record-keeping + late-filing operational mechanics).
+- **`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2000`** — Property Income Manual PIM2000+ (property-business-specific income context).
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: per §16.31 Wave 8 + Wave 9 5/5 dead-rate pattern, Stage 2 did not pre-fetch firm-domain URLs. RUN session uses Google Search at write time. Recommended search queries: "self-assessment late filing penalty UK landlord 2026", "MTD ITSA late payment penalty 3% 10%", "FA 2009 Sch 55 reasonable excuse landlord", "points-based penalty MTD ITSA quarterly update". Target: 3-5 firm-side pages from accountancy practice + tax-investigation specialist firms; ensure differentiation from sibling MW3 A1 PAYE-regime / A5 CT-regime / A20 MTD-penalty-catalogue pages. -->`
+
+### Case-law
+
+- **Perrin v HMRC [2018] UKUT 156 (TCC)** — Upper Tribunal four-stage test for reasonable excuse under Sch 55 para 23 / Sch 56 para 16. RUN session cites at the reasonable-excuse paragraph as the controlling authority. The four stages: (1) what facts gave rise to the failure; (2) do those facts amount to a reasonable excuse on an objective test; (3) did the excuse persist throughout the period of failure; (4) was the failure remedied without unreasonable delay once the excuse ended.
+- **Martland v HMRC [2018] UKUT 178 (TCC)** — Upper Tribunal three-stage test for late-appeal admission. RUN session cites at the appeal-route paragraph where the 30-day s.31A window has passed.
+- **Anderson v HMRC [2018] UKFTT 200 (TC)** — First-tier Tribunal on the boundary between reasonable excuse and HMRC's discretion to suspend a penalty. Cite as supporting authority on suspension where the page addresses suspension mechanics.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Legacy regime: pre-MTD landlord misses 31 January, files in May
+
+- **Pemberton-Estate, the legacy landlord:** holds 3 BTL properties personally, 2023/24 gross rent £42,000 (below the April 2026 MTD ITSA threshold). Should have filed 2023/24 SA return by 31 January 2025. Did not file until 14 May 2025. Tax liability £6,800 (S24-restricted finance costs + standard expenses).
+- **Statutory analysis:** FA 2009 Sch 55 item 1 applies (legacy regime — landlord below £50k qualifying income, not in MTD ITSA scope). £100 fixed under para 3 at 1 February 2025. £10/day under para 4 from 1 May 2025 to 14 May 2025 (13 days) = £130. Total late-filing penalty at filing date: £230. Payment timeline: tax also late from 1 February; Sch 56 item 1 5% at 2 March = £340; Sch 56 5% at 1 August NOT yet triggered (Pemberton-Estate pays on filing 14 May). Interest accrues from 1 February at HMRC's published rate (Bank base + 4pp; rate verified at write time per §16.27).
+- **Operational point:** the legacy cascade is the BASELINE for landlords below the MTD ITSA threshold. From 6 April 2026 onwards, this exact scenario for a landlord with >£50k gross income would instead route through the FA 2021 Sch 24 points regime + Spring Statement 2025 accelerated cascade. Sessions writing must teach the BIFURCATION clearly — same facts, different regime depending on whether the landlord is in MTD scope.
+
+### Example 2 — MTD ITSA regime: in-scope landlord misses Q1 update + balance payment
+
+- **Whitfield-Estate, the MTD ITSA landlord:** holds 4 BTL properties personally, 2024/25 gross rent £58,000 (above the £50k April 2026 threshold). HMRC notice received Q4 2025; landlord in scope from 6 April 2026. First quarterly update period 6 April 2026 to 5 July 2026, due 7 August 2026. Landlord misses the 7 August submission entirely (overseas travel + new-software-adoption struggle); files 21 September 2026.
+- **Statutory analysis:** FA 2021 Sch 24 points-based regime engages. 1 point assigned for the missed Q1 update on the date HMRC records the failure. Whitfield-Estate is below the 4-point threshold (assuming no prior accumulation), so no £200 penalty at this stage. The point remains on Whitfield-Estate's compliance record. If Whitfield-Estate accumulates 3 further points within the rolling window (typically across the same or next tax year for quarterly filers), the £200 penalty per missed submission engages from the 4-point threshold onwards.
+- **Late-payment analysis:** if Whitfield-Estate also misses the SA balance-payment deadline (31 January following the tax year, e.g. 31 January 2028 for 2026/27 EoPS / final declaration), the Spring Statement 2025 accelerated cascade engages: 3% at day 15, +3% at day 30, +10% per annum from day 31. Sessions must NOT import the legacy Sch 56 31 / 6-months / 12-months schedule onto these triggers.
+- **Operational point:** the points-based regime is calibrated to forgive occasional missed submissions while penalising repeat-offender patterns. The cumulative penalty exposure for a chronic-late-filer in MTD scope can therefore exceed the legacy £100 + £10/day + 5%/£300 cascade once a landlord crosses the 4-point threshold.
+
+### Example 3 — Reasonable-excuse defence: bereavement during filing window
+
+- **Cordwell-Estate, the bereaved landlord:** sole-trader landlord with 2 BTL properties personally. Spouse died unexpectedly on 18 November 2024. 2023/24 SA return was being prepared by Cordwell-Estate's accountant; filing was delayed during the immediate bereavement period and probate administration. SA return ultimately filed 28 March 2025 (8 weeks after the 31 January deadline).
+- **Statutory analysis:** HMRC issued £100 fixed penalty under Sch 55 para 3 + first daily-penalty notice at the 3-month point. Cordwell-Estate appeals under Sch 55 para 23 reasonable-excuse defence + TMA 1970 s.31A 30-day appeal window.
+- **Perrin four-stage application:** (1) the facts giving rise to the failure — sudden bereavement of the landlord's spouse during the filing window; (2) reasonable-excuse on an objective test — bereavement of a close family member is a well-recognised reasonable excuse where it impairs the taxpayer's capacity to attend to tax affairs during the period of failure; (3) excuse persistence — the bereavement and probate administration occupied the period from mid-November 2024 to mid-March 2025, covering the 31 January deadline; (4) remedy without unreasonable delay — Cordwell-Estate filed 8 weeks after the deadline, consistent with the bereavement-period excuse and not an extended unrelated delay.
+- **Operational point:** HMRC's accept-rate on reasonable-excuse appeals depends on the quality of the documentation (death certificate; probate documents; correspondence with accountant during the period). Sessions writing must NOT promise that any specific category of excuse will succeed — the Perrin test is fact-sensitive; what counts as a reasonable excuse for one taxpayer may not for another.
+
+### Example 4 — Boundary case: landlord with both SA and CT obligations
+
+- **Marwood-Estate, the dual-stream landlord:** holds 3 BTL properties personally (above £50k gross — in MTD ITSA scope from 6 April 2026) AND is sole director / shareholder of a property LtdCo holding 2 further properties. Misses both the personal MTD ITSA quarterly update AND the CT600 return for the LtdCo's accounting period.
+- **Statutory analysis (personal):** FA 2021 Sch 24 points-based regime engages for the personal MTD ITSA stream — points accumulation as in Example 2.
+- **Statutory analysis (LtdCo):** entirely separate regime — FA 1998 Sch 18 paras 17-18 for the CT return (£100 fixed at 1 day late; £200 fixed at 3 months; tax-geared 10% at 6 months; tax-geared 20% at 12 months) + Sch 56 item 5 for the CT liability (5% at 30 days; 5% at 6 months; 5% at 12 months). Cross-link to A5 (`corporation-tax-deadlines-and-penalties`) for the CT-side mechanics.
+- **Operational point:** a landlord with both personal-stream and LtdCo-stream tax obligations faces TWO parallel penalty regimes. The personal stream sits under MTD ITSA (FA 2021 Sch 24 + Spring Statement 2025) or legacy SA (Sch 55 + Sch 56) depending on the £50k / £30k / £20k threshold; the LtdCo stream sits under FA 1998 Sch 18 + Sch 56 item 5. Sessions writing must NOT collapse the two regimes into a single penalty framework.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: What are the late-filing penalties for a landlord who misses the 31 January self-assessment deadline?**
+   A: For landlords below the MTD ITSA threshold (until April 2026 / 2027 / 2028 phasing in £50k / £30k / £20k qualifying income), the legacy FA 2009 Schedule 55 regime applies. The cascade is £100 fixed at the filing date; £10 per day from 3 months late (up to 90 days); 5% of tax or £300 (whichever is greater) at 6 months; a further 5% or £300 at 12 months. The 12-month penalty uplifts to 70% or 100% if HMRC characterises the failure as deliberate or deliberate-and-concealed under paragraph 6(3A)-(5).
+
+2. **Q: How are penalties different under MTD for Income Tax Self Assessment?**
+   A: Landlords with qualifying income above the threshold (£50,000 from 6 April 2026; £30,000 from 6 April 2027; £20,000 from 6 April 2028) move from the legacy Schedule 55 / Schedule 56 architecture to the FA 2021 Schedule 24 points-based late-submission regime and the Spring Statement 2025 accelerated late-payment regime. The points regime assigns 1 point per missed quarterly update; £200 penalty per subsequent missed submission once the taxpayer hits 4 points; points reset after 24 months of full compliance. The accelerated late-payment cascade is 3% at day 15, +3% at day 30, +10% per annum from day 31.
+
+3. **Q: What happens if I miss the SA payment deadline?**
+   A: For pre-MTD landlords, FA 2009 Schedule 56 item 1 applies — 5% of unpaid tax at the 30-day mark, +5% at 6 months, +5% at 12 months. For in-scope MTD ITSA landlords from 6 April 2026, the Spring Statement 2025 regime applies instead — 3% at day 15, +3% at day 30, +10% per annum from day 31. Interest under TMA 1970 s.86 accrues separately and continuously from the due date; the interest is not mitigated by reasonable excuse.
+
+4. **Q: What counts as a reasonable excuse for late filing?**
+   A: The four-stage test from Perrin v HMRC [2018] UKUT 156 governs. HMRC and the tribunals look at: (1) the facts giving rise to the failure; (2) whether those facts amount to a reasonable excuse on an objective standard; (3) whether the excuse persisted throughout the period of failure; (4) whether the failure was remedied without unreasonable delay once the excuse ended. Bereavement, serious illness, postal failure, software-recognised-by-HMRC failure are commonly accepted; cash-flow shortage, ignorance of the deadline, and accountant negligence are typically not.
+
+5. **Q: How do I appeal a penalty assessment?**
+   A: TMA 1970 s.31A provides a 30-day appeal window from the date of the penalty assessment. Appeals first go to HMRC review; if unresolved, escalate to the First-tier Tribunal (Tax Chamber) under TCEA 2007 and the Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 (SI 2009/273). Late appeals (after the 30-day window) require the Martland v HMRC [2018] UKUT 178 three-stage test for admission — length of delay, reasons for the delay, and consideration of all the circumstances.
+
+6. **Q: Are payments on account triggers for the late-payment penalty cascade?**
+   A: No, not directly. TMA 1970 s.59A payments on account (due 31 January and 31 July) trigger interest under TMA 1970 s.86 from the due date if unpaid, but do NOT trigger the FA 2009 Schedule 56 5% / 5% / 5% surcharge cascade. The Schedule 56 surcharge engages on the balancing payment due 31 January following the tax year under TMA 1970 s.59B.
+
+7. **Q: I am a director of a property limited company AND I hold properties personally — which penalty regime applies?**
+   A: Both, in parallel. The personal-stream rental sits under either the legacy SA penalty cascade or (if above threshold) the MTD ITSA cascade. The LtdCo-stream rental and the CT600 obligation sit under FA 1998 Schedule 18 paragraphs 17-18 (filing) and FA 2009 Schedule 56 item 5 (payment) — a completely separate regime with £100 / £200 / £1,000 / £2,000 fixed-figure escalators plus tax-geared 10% / 20% additions. Cross-link our limited-company deadline page for the CT mechanics.
+
+8. **Q: Does the MTD ITSA points regime apply if I voluntarily join MTD below the threshold?**
+   A: Yes. Voluntary participants (from 6 April 2025 pilot and 6 April 2026 general voluntary opt-in) are bound by the FA 2021 Schedule 24 points-based late-submission regime and the Spring Statement 2025 accelerated late-payment regime for the periods they participate. The legacy Schedule 55 / Schedule 56 regime is not available to voluntary participants for the participation period.
+
+9. **Q: What is the interest rate on unpaid tax?**
+   A: HMRC's late-payment interest rate is the Bank of England base rate plus 4 percentage points (current rate verified at write time; this rate moves with each MPC base-rate change). Interest accrues continuously from the due date of each year's liability and is not mitigated by any reasonable-excuse defence — the only way to stop interest accruing is to pay the underlying tax.
+
+10. **Q: My landlord SA return is also a Let Property Campaign disclosure — which regime applies?**
+    A: LPC is a voluntary-disclosure route that engages within the existing Schedule 41 FA 2008 failure-to-notify framework or the Schedule 24 FA 2007 inaccuracy framework, depending on whether the landlord had previously notified chargeability or filed inaccurate returns. The late-filing / late-payment cascade in this page applies SEPARATELY to the ongoing SA return obligations going forward. Cross-link our LPC orientation, calculator, and rescue pages for the disclosure-route mechanics.
+
+11. **Q: If HMRC characterises my late filing as deliberate, what is the worst-case penalty?**
+    A: Under FA 2009 Schedule 55 paragraph 6(3A)-(5), the 12-month tax-geared penalty uplifts from 5% to 70% of the tax liability (or £300 if greater) where the failure is deliberate-but-not-concealed, and to 100% where the failure is deliberate-and-concealed (e.g. with active steps to hide the omission). These uplifts apply on top of the £100 fixed and £10/day daily penalty stages.
+
+12. **Q: How does HMRC suspend a Schedule 24 inaccuracy penalty — is that relevant here?**
+    A: HMRC has discretionary power under FA 2007 Schedule 24 paragraph 14 to suspend a careless-inaccuracy penalty subject to conditions designed to prevent recurrence. Suspension is NOT available for Schedule 55 late-filing penalties or Schedule 56 late-payment penalties — only for Schedule 24 inaccuracy penalties. This page covers late-filing / late-payment; sessions should NOT promise suspension as an option for the cascade penalties covered here.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy. Use commas, parentheses, full stops, middle dots, or restructure the sentence.
+- **Specific over generic.** Named legislation (FA 2009 Sch 55 paras 3 / 4 / 5 / 6; Sch 56 paras 3(2) / 3(3) / 3(4); FA 2021 Sch 24 points regime; TMA 1970 s.8 / s.31A / s.59A / s.59B / s.86), specific paragraph numbers, anonymised personas.
+- **No real names.** Anonymised personas (Pemberton-Estate, Whitfield-Estate, Cordwell-Estate, Marwood-Estate in the worked examples above).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Do not duplicate in body.
+- **CSS in markdown:** semantic HTML only. No Tailwind classes. `<aside>` styled by global CSS.
+- **FAQs:** 10-14 entries in frontmatter `faqs:` array, auto-emitted as FAQPage JSON-LD by the build.
+- **Anti-templating:** this page is the **individual-landlord SA late-filing and late-payment penalty regime** covering both the legacy cascade and the MTD ITSA bifurcation. RUN session must hold this lane distinct from sibling A1 (PAYE regime — Sch 55 para 6C + RTI Regs reg 67B), A5 (CT regime — FA 1998 Sch 18 + Sch 56 item 5), and A20 (MTD penalty + exemption catalogue, broader scope). The F-1-adjacent risk (legacy 31/46/91 day-triggers crossed with new 3%/3%/10% percentages) is the load-bearing drift watchpoint — sessions writing the §19.7 cascade content MUST use the 15/30/31 day schedule and explicitly distinguish from the legacy non-MTD regime. The FA 2021 Sch 24 vs FA 2007 Sch 24 numerical-name collision is the second drift watchpoint — sessions writing must NOT collapse the two instruments.
+- **Quality bar (six checks):** zero em-dashes, zero Tailwind, FAQ schema count matches frontmatter array, meta title ≤ 62 chars, meta description ≤ 158 chars, internal links resolve.
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §19.7 MTD ITSA penalty regime + §27.3 Sch 41 reasonable-excuse read-across + §27.4 FTT appeal route).
+2. Claim this page in MW3 page tracker (⬜ → 🟡 with UTC timestamp).
+3. Read this brief (framing differentiator, key questions, manager pre-decisions, research target list).
+4. Fetch + read competitor URLs via session-side Google Search at write time (per §16.31 dead-rate pattern).
+5. Read closest-existing pages: sibling MW3 A1 PAYE-regime / A5 CT-regime / A16 MTD-overhaul / A20 MTD-catalogue; any pillar pages on SA mechanics.
+6. Plan H2 / H3 outline + meta + 10-14 FAQs + CTA placements — STRICTLY in the individual-landlord SA penalty regime lane; no overlap with sibling H2 structures.
+7. Verify factual claims against authorities per §16.35 (FA 2009 Sch 55 paras 3-6 + Sch 56 para 3 + FA 2021 Sch 24 + Spring Statement 2025 HTML + TMA 1970 s.8 / s.31A / s.59A / s.59B / s.86 verbatim WebFetched from legislation.gov.uk + gov.uk).
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write markdown at `Property/web/content/blog/late-filing-and-late-payment-penalties.md` (full frontmatter list per §4).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none identified at Stage 2).
+13. Register in `monitored_pages` Supabase table.
+14. Commit on session's MW3 worktree branch (per-page commit; do NOT merge to main from worktree).
+15. Fill per-page work-log at bottom of this brief.
+16. Mark ✅ done in MW3 tracker with 1-line Notes (body word count + 1-sentence summary).
+17. Append site-wide issues to MW3 flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+### Stage 2 author entry
+
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent A (batch M3-A-B3) on 2026-05-27.
+- **Stage 2 extensions added:** authority URL list (13 anchors covering FA 2009 Sch 55 / Sch 56 + FA 2021 Sch 24 + TMA 1970 s.8/s.31A/s.59A/s.59B/s.86 + Spring Statement 2025 HTML + Compliance Handbook CH61000/CH155000 + SAM50000 + PIM2000); 4 worked examples covering legacy-regime-non-MTD-landlord (Sch 55 + Sch 56), MTD-ITSA-in-scope-landlord (FA 2021 Sch 24 + Spring Statement 2025), reasonable-excuse-bereavement (Perrin four-stage), dual-stream-personal-plus-LtdCo (regime-bifurcation across A5 boundary); 12 FAQs anchored to legacy/MTD distinction + reasonable-excuse defence + appeal mechanics + interest + cross-regime boundary cases; voice + style + 19-step workflow stubs verbatim per §4.8 + §7.
+- **§16.36 statutory-citation cross-check:** FA 2009 Sch 55 paras 3-6 + Sch 56 para 3 verified live at Stage 1 author 2026-05-27 against legislation.gov.uk current-as-amended text. §19.7 MTD ITSA cascade (3%/3%/10% on 15/30/31 day schedule; £200 at 4-point threshold; 24-month reset) verified at Wave 3 §19.7 lock 2026-05-22 against gov.uk Spring Statement 2025 HTML. Perrin v HMRC [2018] UKUT 156 four-stage test verified against Upper Tribunal published judgment. TMA 1970 s.86 interest rate (Bank base + 4pp) flagged as rate-by-reference per §16.27 — RUN session re-verifies at write time.
+- **Anti-templating note:** this page sits in the individual-landlord SA late-filing/late-payment lane. The F-1-adjacent risk (legacy 31/46/91 day-triggers crossed with new 3%/3%/10% percentages from Spring Statement 2025) is the operative drift watchpoint — RUN session must use 15/30/31 day-triggers with the 3%/3%/10% rates and explicitly distinguish the legacy 31/46/91 at 5%/5%/5% schedule. The FA 2021 Sch 24 (new MTD points regime) vs FA 2007 Sch 24 (long-standing inaccuracy regime) numerical-name collision is the second drift watchpoint — RUN session must NOT collapse the two Sch 24 instruments. Sibling-collapse risk against A1 (PAYE) + A5 (CT) + A20 (MTD catalogue) is structural — keep narrative tightly in the individual-landlord SA cascade lane.
+
+### RUN session entry (populate at write time)
+
+[RUN session records: H1 chosen, meta title + description chosen, competitor URLs fetched + key takeaways, existing-page review notes, citations added, internal links added, build attempts pass / fail, six-check verification, flags raised, 2-3 sentence summary.]
 
 ---
 
