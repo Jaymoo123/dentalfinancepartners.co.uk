@@ -39,6 +39,8 @@ Possible reconciliations:
 
 **Severity.** HIGH — material policy figure used as worked-example anchor in 2 already-shipped pages and 2 in-flight briefs. Stage 1b conductor sign-off was 2026-05-27 11:53; this catch landed at Stage 2 verification ~30 minutes later. §16.40 pattern (Stage 2 catches drift Stage 1b couldn't reach because the per-write WebFetch wasn't done on the s.124D specific section).
 
+**RESOLUTION (2026-05-27, manager Stage 2b sign-off):** Enacted figure verified at £2.5 million via three independent WebFetches: (i) legislation.gov.uk IHTA 1984 s.124D direct; (ii) FA 2026 Sch 12 para 4 enacted text; (iii) IHTA 1984 s.104(1A) referring out to s.124D. All confirmed `(2)(a) £2.5 million`. The s.124D allowance operates as a **rolling 7-year aggregate** (s.124D(3) "allowance period") rather than a per-event cap; functionally collapses to per-estate-cap for death-only cases. HP §15.4 LOCKED at £2,500,000 with stale-GOV.UK-page warning baked in. Reconciliation (a) confirmed: the £1m headline policy figure was raised to £2.5m during Finance Bill 2025-26 → FA 2026 passage; GOV.UK summary page never updated post-enactment. RUN-phase writers must cite legislation.gov.uk s.124D direct (NOT the stale GOV.UK summary page) for the quantum. Back-patch list: Wave 2 A4 + A10 + any earlier IHT-cluster page citing £1m — scoped for post-RUN deploy hygiene sweep. Twelfth consecutive Bill-vs-enacted-Act drift in the program; §16.22 / §16.27 / §16.30 / §16.35 / §16.40 pattern firmly load-bearing. **F-102 CLOSED.**
+
 ---
 
 ## F-100 — HOUSE_POSITION_EXTENSION — Payroll cluster for property-business employers
