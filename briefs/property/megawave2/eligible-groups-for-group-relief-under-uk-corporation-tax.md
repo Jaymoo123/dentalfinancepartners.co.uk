@@ -9,8 +9,9 @@ intent: A landlord operating multiple property SPVs within a holding-company gro
 ## Statutory anchor
 
 - **Primary (framework):** CTA 2010 Part 5 (ss.97-188) — Group relief framework. Covers (a) surrender of trading losses + management expenses + excess capital allowances + excess non-trading deficits on loan relationships + excess non-trading losses on intangible fixed assets + excess UK property losses + excess overseas losses + excess QCB losses between members of a 75% group, and (b) consortium relief (one company owned ≥75% by a consortium of companies between whom relief can flow).
-- **Primary (group condition for surrender):** CTA 2010 s.131 — "the group condition" eligibility test. Two companies are in the same group for group-relief purposes if (a) one is the 75% subsidiary of the other, or (b) both are 75% subsidiaries of a third company. The 75% test is applied at three layers: (i) ownership of ordinary share capital (CTA 2010 s.1154 + s.1119 definitions); (ii) entitlement to profits available for distribution to equity holders (CTA 2010 Sch 18 — the equity holder overlay); (iii) entitlement to assets available for distribution on a winding-up (also Sch 18). All three layers must individually clear 75% for group relief to be available.
-- **Primary (75% definition):** CTA 2010 s.1154 — definition of "75% subsidiary". A company is a 75% subsidiary of another company if not less than 75% of its ordinary share capital is owned directly or indirectly by that other company. Direct + indirect ownership tests are at CTA 2010 ss.1155-1157 (the "ordinary share capital" chain — share capital other than capital where holders are entitled only to dividends at a fixed rate).
+- **Primary (group condition for surrender):** CTA 2010 **s.131** — "the group condition" eligibility test. **VERIFIED LIVE 2026-05-27** against `https://www.legislation.gov.uk/ukpga/2010/4/section/131`. Verbatim s.131(1): *"The group condition is met if the surrendering company and the claimant company—(a) are members of the same group of companies (see section 152), and (b) are both UK related."* The s.131 condition has two limbs: (i) same-group membership (operative test at s.152, not s.131 directly); (ii) UK-related test (defined at s.134). **STAGE 2 DRIFT CATCH (2026-05-27, §16.40 pattern — F-8 raised):** Stage 1 seed cited s.131 as containing the "75% subsidiary of other / both 75% subs of third" test directly. **That test lives at s.152, not s.131.** Verified s.152 verbatim against `https://www.legislation.gov.uk/ukpga/2010/4/section/152` on 2026-05-27: *"For the purposes of this Part two companies are members of the same group of companies if—(a) one is the 75% subsidiary of the other, or (b) both are 75% subsidiaries of a third company."* RUN session must cite s.131 + s.152 + s.134 as the three-section composite and NOT collapse the test into s.131 alone.
+- **Primary (same-group test under s.131):** CTA 2010 **s.152** — definitional bridge from s.131. **VERIFIED LIVE 2026-05-27.** The s.131 same-group condition resolves via s.152: two companies are members of the same group if (a) one is the 75% subsidiary of the other, OR (b) both are 75% subsidiaries of a third company. The 75% test then resolves into ordinary-share-capital (s.1154) + equity-holder overlay (Sch 18). The three-layer test is therefore: (i) s.152 same-group → (ii) s.1154 75% ordinary-share-capital → (iii) Sch 18 equity-holder overlay on profits-available-for-distribution + assets-on-winding-up. All three layers must individually clear for group relief to be available.
+- **Primary (75% definition):** CTA 2010 s.1154 — definition of "51% subsidiary", "75% subsidiary" and "90% subsidiary". **VERIFIED LIVE 2026-05-27** against `https://www.legislation.gov.uk/ukpga/2010/4/section/1154`. Verbatim 75% subsidiary text: *"B is a 75% subsidiary of A if at least 75% of B's ordinary share capital is owned directly or indirectly by A."* Direct + indirect ownership tests are at CTA 2010 ss.1155–1157 (the "ordinary share capital" chain — share capital other than capital where holders are entitled only to dividends at a fixed rate per s.1119).
 - **Primary (equity holder anti-avoidance overlay):** CTA 2010 Sch 18 — "Group relief: equity holders and profits or assets available for distribution". Critical anti-avoidance overlay that prevents groups from satisfying the bare 75%-ordinary-share-capital test while diverting economic ownership to non-group equity-holder positions. Sch 18 paras 1-7 define "equity holder" expansively to include (a) ordinary shareholders, (b) loan creditors holding loans other than normal commercial loans (NCL test in para 4), (c) holders of shares carrying participation rights even if labeled preference shares. The Schedule then re-tests the 75% gate at the level of profits-available-for-distribution and assets-available-on-winding-up rather than only at ordinary-share-capital level. **Common landlord-side trap:** a property holding company owning 100% of an SPV's ordinary shares but with the SPV's profit stream contractually diverted to a non-group lender via an excessive interest rate may fail the Sch 18 profits-available-for-distribution 75% gate.
 - **Primary (worldwide-group parent test):** CTA 2010 s.156 — "the worldwide-group" overlay for groups with non-UK members. Group relief in UK corporation tax flows only between UK-resident companies (and UK permanent establishments of overseas companies for limited purposes per CTA 2010 ss.107-110); the worldwide-group test confirms the parent/subsidiary relationship across the chain even where non-UK companies sit in the middle of the chain. For domestic property groups this rarely bites; for portfolios with overseas holding companies or offshore investor vehicles it controls eligibility.
 - **Primary (consortium relief):** CTA 2010 ss.143-149 — consortium relief. Available where a UK trading company is owned by a consortium of UK companies each holding at least 5% (and collectively at least 75%) of the consortium-company's ordinary share capital. Each consortium member can claim a share of the consortium-company's losses (limited to its proportional ownership). For property: relevant where 3-4 unconnected developers form a JV LtdCo for a single development site — each developer's company can claim consortium relief for its share of the JV's early-stage losses.
@@ -70,29 +71,166 @@ The angle this page takes: a portfolio operator with 3-15 SPVs (typical mid-size
   - Within MW2 Bucket A: `a-complete-guide-on-incorporating-a-company-in-uk` (A1 — single-LtdCo formation context), `corporate-tax-planning-strategies-for-uk-clients` (A4 — pillar lever-map; group operation is one lever), `corporation-tax-marginal-relief-uk-guide` (A5 — marginal relief associated-company gating interacts with group structures), `limited-companies` (this batch — LtdCo pillar companion), `incorporating-an-hmo-into-a-limited-company-pros-and-cons` (this batch — single-HMO incorporation decision that often expands into multi-SPV group structure later).
   - To existing pages: `property-company-group-relief-corporation-tax` (operating mechanics), `sdlt-group-relief-for-corporate-landlord-portfolios` (SDLT regime sibling), `sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth` (SDLT claw-back depth), `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics` (dividend extraction through group), `corporation-tax-rates-property-companies-2026-27` (rates context), `condition-c-trading-stock-section-162-incorporation-relief-denial-developers` (developer trading-vs-investment line — relevant to consortium-relief eligibility for developer JVs), `section-162-incorporation-relief-property-landlords` (single-incorporation, contrast page).
 
-## Stage 2 research target list
+## Stage 2 research target list — VERIFIED URLs
 
-- **Competitor pages to fetch (Stage 2 verifies live):** ukpropertyaccountants.co.uk source page (`https://www.ukpropertyaccountants.co.uk/eligible-groups-for-group-relief-under-uk-corporation-tax/`); firm-side CT group-relief eligibility pages (BDO, Crowe, RSM, Smith & Williamson typically publish on this); HMRC CTM80105+ on gov.uk (the group relief manual entry point). Stage 2 verifies URLs via `competitor_serps` Supabase + targeted search.
-- **HMRC + Companies House manual anchors:**
-  - HMRC Company Taxation Manual CTM80105+ (Group relief — introduction + eligibility).
-  - HMRC CTM81005+ (Group relief — the 75% test + Sch 18 equity-holder overlay).
-  - HMRC CTM82010+ (Consortium relief — eligibility + claim mechanics).
-  - HMRC CTM06000+ (Change of ownership of investment companies + restrictions on loss carry-forward).
-- **Case-law to ground (Stage 2 verifies, Stage 1b reviewer to confirm priority):**
-  - *Marks & Spencer plc v Halsey* (HMIT) [2013] UKSC 30 — cross-border group relief eligibility (post-Brexit relevance reduced but framework persists for UK chain analysis).
-  - *Pirelli Cable Holding NV v IRC* [2006] UKHL 4 — equity-holder overlay application in complex group structures.
-  - Stage 2 reviews FTT cases on s.137 arrangements-to-transfer-control where option arrangements over subsidiary shares were litigated.
-- **Authority links to cite:**
-  - legislation.gov.uk CTA 2010 Part 5 contents (`https://www.legislation.gov.uk/ukpga/2010/4/part/5`).
-  - legislation.gov.uk CTA 2010 s.131 + s.137 + s.143 + s.151 + s.152 + s.156 + s.1154 + s.1119 (each individually).
-  - legislation.gov.uk CTA 2010 Sch 18 (full Schedule).
-  - legislation.gov.uk CTA 2010 Part 14 (ss.673-732) — change of ownership.
-  - legislation.gov.uk FA 2003 Sch 7 (SDLT group relief — sibling regime, for distinction-from-CT discussion).
-  - HMRC CTM80105 / CTM81005 / CTM82010 / CTM06000 (verified URLs at write time).
+### Authority URLs (WebFetch-verified live 2026-05-27, with verbatim text captured)
 
-## Universal rules + workflow stubs (Stage 2 fills)
+- **`https://www.legislation.gov.uk/ukpga/2010/4/section/131`** — CTA 2010 s.131 (The group condition). **VERIFIED LIVE 2026-05-27.** Verbatim s.131(1) captured (see Statutory anchor above). s.131(2) routes "UK related" definition to s.134. The s.131 condition itself does NOT contain the 75% subsidiary test — it sits at s.152.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/section/152`** — CTA 2010 s.152 (Groups of companies). **VERIFIED LIVE 2026-05-27.** Verbatim captured (see Statutory anchor above). The operative same-group test sits HERE.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/section/1154`** — CTA 2010 s.1154 (75% subsidiary). **VERIFIED LIVE 2026-05-27.** Verbatim captured. The 75% ordinary-share-capital arithmetic gate.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/part/5`** — CTA 2010 Part 5 (Group relief framework). RUN session WebFetches contents page and key sections (s.97 surrender, s.99 surrender of UK property losses specifically, s.131 group condition, s.137 arrangements-to-transfer-control, s.143–s.149 consortium relief) at write time.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/schedule/18`** — CTA 2010 Sch 18 (Group relief: equity holders and profits or assets available for distribution). The anti-avoidance equity-holder overlay. RUN session WebFetches Sch 18 para 1 (equity holder definition), para 3 (profits-available-for-distribution test), para 4 (normal commercial loan / NCL test), para 5 (assets-on-winding-up test) at write time.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/section/137`** — CTA 2010 s.137 (Arrangements to transfer control). RUN session WebFetches at write time.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/section/143`** — CTA 2010 s.143 (consortium-condition gateway). RUN session WebFetches at write time + cross-fetches ss.144–149.
+- **`https://www.legislation.gov.uk/ukpga/2010/4/part/14`** — CTA 2010 Part 14 (Change of ownership — restrictions on loss carry-forward). RUN session WebFetches s.673 (change of ownership of investment company) + s.674 (change of ownership of company with investment business) + s.676 (loss-restriction overlay post-FA-2017) at write time.
+- **`https://www.legislation.gov.uk/ukpga/2003/14/schedule/7`** — FA 2003 Sch 7 (SDLT group relief). Sibling-regime URL for the CT-vs-SDLT distinction discussion. RUN session WebFetches Sch 7 para 1 (group definition + 75% test) + para 3 (3-year intra-group claw-back) at write time.
+- **`https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm80105`** — HMRC CTM80105 (Group relief — introduction). RUN session WebFetches at write time + CTM81005+ (75% test + Sch 18 equity-holder overlay), CTM82010+ (consortium relief eligibility + claim mechanics), CTM06000+ (change-of-ownership loss restrictions).
 
-[Stage 2 populates from NETNEW_PROGRAM §4 brief anatomy + §7 19-step workflow.]
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: session-side WebSearch at write time required. Stage 2 dropped firm-domain attempts per Wave 8/9 dead-rate pattern. RUN session uses Google Search. Recommended queries: "CT group relief 75% subsidiary Sch 18 equity holder property", "consortium relief property developer JV CTA 2010 s.143", "Marks Spencer Halsey group relief UK", "change of ownership s.673 loss restriction property SPV". Aim 3-5 firm-side eligibility explainers from BDO, Crowe, RSM, Smith & Williamson, Tolley. Source page `https://www.ukpropertyaccountants.co.uk/eligible-groups-for-group-relief-under-uk-corporation-tax/` is the topical seed; RUN session reads but does not cite. -->`
+
+### HMRC + Companies House manual anchors
+
+- HMRC CTM80105+ (Group relief — introduction + eligibility).
+- HMRC CTM81005+ (75% test + Sch 18 equity-holder overlay).
+- HMRC CTM82010+ (Consortium relief).
+- HMRC CTM06000+ (Change of ownership of investment companies + restrictions on loss carry-forward).
+
+### Case-law
+
+- *Marks & Spencer plc v Halsey* (HMIT) [2013] UKSC 30 — cross-border group relief eligibility (post-Brexit relevance reduced; framework persists for UK chain analysis).
+- *Pirelli Cable Holding NV v IRC* [2006] UKHL 4 — equity-holder overlay application in complex group structures.
+- RUN session reviews any post-2020 FTT cases on s.137 arrangements-to-transfer-control where option arrangements over subsidiary shares were litigated.
+
+### Legislation anchors (RUN session WebFetches at write time per §16.35)
+
+- **CTA 2010 s.131** — group condition (verified above).
+- **CTA 2010 s.134** — UK-related test.
+- **CTA 2010 s.137** — arrangements to transfer control.
+- **CTA 2010 ss.143–149** — consortium relief.
+- **CTA 2010 s.152** — same-group test (verified above).
+- **CTA 2010 s.156** — worldwide-group overlay.
+- **CTA 2010 s.1154** — 75% subsidiary (verified above).
+- **CTA 2010 s.1119** — ordinary share capital definition.
+- **CTA 2010 Sch 18** — equity-holder overlay.
+- **CTA 2010 Part 14 (ss.673–732)** — change of ownership.
+- **FA 2003 Sch 7** — SDLT group relief (sibling regime).
+- **CTA 2010 s.99(1)(d)** — UK property business loss surrender.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Three-layer 75% test (the headline arithmetic)
+
+- **Patel Holdings Ltd** owns: 100% of Patel Property A Ltd; 100% of Patel Property B Ltd; 80% of Patel Property C Ltd; 70% of Patel Property D Ltd.
+- **s.152 + s.1154 test:** A + B + Holdings are all 75%-related to each other (100% > 75%); C is also in the group (80% > 75%). D is NOT in the group (70% < 75%) — therefore D's losses cannot flow to or from any other group member under CTA 2010 Part 5.
+- **Result:** A, B, C, and Holdings can surrender losses to each other (subject to Sch 18 equity-holder overlay + s.137 arrangements anti-avoidance). D operates as a stand-alone CT entity.
+
+### Example 2 — Sch 18 equity-holder overlay defeats 100%-ordinary group relief
+
+- **Singh Holdings Ltd** owns 100% of the ordinary share capital of Singh BTL SPV Ltd. The SPV has also issued £1,000,000 of "fixed-coupon participating preference shares" to an external high-net-worth investor — the shares carry a fixed 5% preference dividend but also a contractual right to 90% of the surplus distributable profits and 90% of any surplus on winding-up.
+- **s.1154 bare arithmetic:** Singh Holdings owns 100% of ordinary share capital → looks like 100% subsidiary → looks like group relief available.
+- **Sch 18 para 1 + 4 equity-holder overlay:** the preference shares with participation rights bring the external investor into the equity-holder count. The Sch 18 para 3 profits-available-for-distribution test then runs: Singh Holdings is entitled to 100% of ordinary-share dividends but only 10% of surplus participating profits. **Singh Holdings' profits-available-for-distribution entitlement < 75%.** Group relief NOT available despite 100% ordinary-share ownership.
+- **Page surfaces this trap:** the most counter-intuitive feature of CT group relief; Stage 2 must lead the Sch 18 discussion with this scenario.
+
+### Example 3 — Consortium relief for a property-developer JV (works) vs property-investment JV (fails)
+
+- **Property-developer JV (works):** Three unconnected developer companies (BuildCo A Ltd, BuildCo B Ltd, BuildCo C Ltd) form JV Developer Ltd with ownership 40%/30%/30% (each ≥5%; collectively 100%). JV Developer carries on the trade of property development (purchase + build-out + sale of new-build flats). Year 1 trading loss £500k.
+- **s.143 result:** consortium relief flows. Each consortium member can claim a share of JV Developer's losses limited to its proportional ownership: BuildCo A claims up to £200k (40%); BuildCo B claims up to £150k (30%); BuildCo C claims up to £150k (30%), subject to each consortium member's own profit availability cap.
+- **Property-investment JV (fails):** same 40/30/30 ownership but JV BTL Ltd holds a 12-flat BTL portfolio for rental investment (not trading). UK property business under CTA 2009 Part 4 = investment, not trading. **s.143 requires the consortium-company to be a TRADING company** (or holding company of a trading group). Investment JV does NOT qualify; consortium relief unavailable; £500k loss is trapped in JV BTL Ltd and can only be used against JV BTL Ltd's own future UK property business profits per CTA 2010 ss.62–66 carry-forward rules.
+- **Page surfaces the trading-vs-investment line as the operative consortium-relief gate for property audiences.**
+
+### Example 4 — s.137 arrangements-to-transfer-control defeats group relief
+
+- **Kapoor Holdings Ltd** owns 100% of Kapoor BTL SPV Ltd. Kapoor Holdings is in negotiations to sell the SPV to a third-party buyer; an option agreement has been signed under which the buyer can call for the SPV's shares at any time in the next 18 months. Kapoor BTL SPV's UK property business has a £80k loss in the current accounting period.
+- **s.137 result:** the option agreement is an "arrangement" under which a member could leave the group. **Group relief is denied for the period during which the arrangements subsist.** The SPV's losses cannot be surrendered up to Kapoor Holdings or sideways to a sister SPV. This is a frequent edge for landlord audiences using option structures for portfolio sales.
+
+### Example 5 — Buying a loss-making target: s.673 change-of-ownership sterilisation
+
+- **Verma Holdings Ltd** acquires 100% of Verma Acquired SPV Ltd from an unrelated seller. The target SPV has £600k of brought-forward UK property business losses from pre-acquisition accounting periods. Verma Holdings plans to use those losses against the wider group's CT profits.
+- **CTA 2010 s.673 result:** change of ownership of an investment company → losses carried forward across the change of ownership are **restricted**. Where there is also a "major change in nature or conduct of the business" within 3 years before or 5 years after the change of ownership (s.674), the losses are **sterilised entirely**. Even absent the s.674 trigger, s.676 + s.676CA limits the use of pre-acquisition losses against the wider group's profits post-FA-2017 loss-restriction architecture.
+- **Page surfaces this trap:** buying a loss-making target SPV does NOT give the acquirer's group access to those losses without further analysis. RUN session frames this for portfolio-acquisition audiences.
+
+### Example 6 — CT vs SDLT group relief: distinguishing the regimes
+
+- **Kapoor Property Group:** HoldCo owns 100% of SPV-A + 100% of SPV-B. The group transfers a £750k commercial unit from SPV-A to SPV-B (intra-group property transfer).
+- **CT group relief context (CTA 2010 Part 5):** not directly engaged on a single asset transfer — Part 5 governs loss surrender between group companies, not intra-group asset transfers as such. (Note: TCGA 1992 s.171 governs the intra-group CGT roll-over on the asset transfer itself — sibling-but-distinct intra-group regime.)
+- **SDLT group relief (FA 2003 Sch 7):** **DIRECTLY engaged on the asset transfer.** Sch 7 para 1 applies the same 75%-subsidiary test (structurally similar to CTA 2010 s.152 / s.1154 — same numeric threshold but legally distinct provisions). Sch 7 para 3 imposes a **3-year intra-group claw-back** — if SPV-B leaves the group within 3 years carrying the transferred property, SDLT becomes payable retrospectively on the transfer at the time of leaving.
+- **Page surfaces the distinction:** CT group relief = loss flows between group members; SDLT group relief = SDLT exemption on intra-group property transfers (with 3-year claw-back). Same 75% gate numerically, structurally similar provisions, legally distinct regimes. Stage 2 must NOT conflate.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: What is the CTA 2010 s.131 "group condition" for corporation tax group relief?**
+   A: CTA 2010 s.131 is the eligibility gateway for CT group relief. Verbatim: "The group condition is met if the surrendering company and the claimant company—(a) are members of the same group of companies (see section 152), and (b) are both UK related." The s.131 condition has two limbs: (i) same-group membership (operative test at s.152); (ii) UK-related test (defined at s.134). The 75% subsidiary arithmetic itself lives at s.152 + s.1154, not at s.131 directly — readers (and earlier popular commentary) sometimes collapse the test into s.131 alone; the correct framing is the three-section composite.
+
+2. **Q: What is the 75% subsidiary test, and where is it defined?**
+   A: CTA 2010 s.152 sets the same-group test: two companies are members of the same group of companies if (a) one is the 75% subsidiary of the other, or (b) both are 75% subsidiaries of a third company. CTA 2010 s.1154 then defines "75% subsidiary": B is a 75% subsidiary of A if at least 75% of B's ordinary share capital is owned directly or indirectly by A. "Ordinary share capital" is defined at s.1119 (share capital other than capital where holders are entitled only to a dividend at a fixed rate). Indirect ownership is computed through the share-ownership chain at ss.1155–1157.
+
+3. **Q: What is the Sch 18 equity-holder overlay, and why can a 100%-subsidiary still fail group relief?**
+   A: CTA 2010 Sch 18 is the anti-avoidance overlay that re-tests the 75% gate at the level of (i) profits available for distribution to equity holders and (ii) assets available for distribution on a winding-up. Sch 18 para 1 defines "equity holder" expansively — ordinary shareholders, loan creditors holding loans other than normal commercial loans (NCL test at para 4), and holders of shares with participation rights even if labelled preference. A 100%-ordinary-share-capital parent can still fail Sch 18 where preference shares with participation rights, or non-NCL shareholder loans, divert economic ownership of the profits or winding-up surplus to non-group equity-holder positions. Most common landlord-side trap: an external participating-preference investor pulls the parent's profits-available-for-distribution entitlement below 75%, disqualifying group relief.
+
+4. **Q: What is consortium relief, and when does it apply to property businesses?**
+   A: CTA 2010 ss.143–149 govern consortium relief. Available where a UK company is owned by a consortium of UK companies each holding at least 5%, collectively at least 75%, of the consortium-company's ordinary share capital. Each consortium member can claim a share of the consortium-company's losses limited to its proportional ownership. **Critical for property:** s.143 requires the consortium-company to be a TRADING company (or holding company of a trading group). Property-investment JVs (BTL portfolio holding companies) typically do NOT qualify because UK property businesses are taxed as investment under CTA 2009 Part 4, not trading. Property-developer JVs (carrying on the trade of property development) DO qualify. The trading-versus-investment line at CTA 2010 ss.1124–1126 is the operative gate.
+
+5. **Q: What is the s.137 arrangements-to-transfer-control anti-avoidance?**
+   A: CTA 2010 s.137 denies group-relief eligibility where there are arrangements under which a member could leave the group. Option agreements over subsidiary shares are the most common trigger. The test is fact-intensive — case-law on what does and does not constitute "arrangements" matters. Practical effect: where a portfolio operator is in negotiations to sell an SPV (with an option agreement signed) the SPV's losses cannot be surrendered to or from the rest of the group while the arrangements subsist.
+
+6. **Q: What is the worldwide-group s.156 overlay?**
+   A: CTA 2010 s.156 is the "worldwide-group" overlay for groups with non-UK members in the ownership chain. Group relief in UK corporation tax flows only between UK-resident companies (and UK permanent establishments of overseas companies for limited purposes under ss.107–110). The worldwide-group test confirms the parent/subsidiary relationship across the chain even where non-UK companies sit in the middle. For domestic property groups this rarely bites; for portfolios with overseas holding companies or offshore investor vehicles it controls eligibility.
+
+7. **Q: How does CT group relief interact with the change-of-ownership loss-restriction regime?**
+   A: Distinct regimes that interact at acquisition events. CTA 2010 Part 14 (ss.673–732) imposes restrictions on the carry-forward of brought-forward losses when there is a change of ownership of a company. s.673 covers investment companies; s.674 covers companies with investment business where there is a major change in nature/conduct of the business within 3 years before or 5 years after the change of ownership; s.676 + s.676CA layer the post-FA-2017 loss-restriction overlay. For a property group acquiring a loss-making target SPV, the target's pre-acquisition losses may be sterilised entirely or restricted in their post-acquisition use against the acquirer's wider group profits — buying losses is not as simple as buying the company.
+
+8. **Q: What is the difference between CT group relief (CTA 2010 Part 5) and SDLT group relief (FA 2003 Sch 7)?**
+   A: Different regimes, different mechanics, different operative purposes. **CT group relief** governs the surrender of losses (trading losses; management expenses; excess capital allowances; excess non-trading deficits on loan relationships; excess UK property business losses per s.99(1)(d)) between members of a 75% group; no claw-back on intra-group asset transfers as such. **SDLT group relief** is an exemption from SDLT on intra-group transfers of land between members of a 75% group; Sch 7 para 3 imposes a 3-year intra-group claw-back where the transferee leaves the group within 3 years holding the property. Both regimes use a 75% test, but the tests are legally distinct provisions in different statutes. The two regimes are structurally similar but should not be conflated; the same group structure can pass one test and fail the other.
+
+9. **Q: Can property investment JVs use consortium relief?**
+   A: Generally no. s.143 requires the consortium-company to be a TRADING company (or holding company of a trading group). UK property businesses are typically investment under CTA 2009 Part 4 / Part 3 architecture. A property-investment JV LtdCo (BTL portfolio holding entity) does NOT qualify for consortium relief; its losses are trapped at the consortium-company level and can only be used against its own future UK property business profits. A property-developer JV LtdCo (carrying on the trade of property development under CTA 2010 ss.1124–1126 + extensive trading-vs-investment case-law) MAY qualify. Mixed development + retention portfolios occupy contested ground; the line is fact-intensive.
+
+10. **Q: For a typical property holding structure (HoldCo + 5 SPVs), what losses can flow under CT group relief?**
+    A: Where HoldCo owns 100% of each SPV (and Sch 18 equity-holder overlay is clean — no participating preference shares + no non-NCL shareholder loans), all of the following can flow between any group members under CTA 2010 Part 5: trading losses (s.99(1)(a)); management expenses (s.99(1)(c)); excess capital allowances (s.99(1)(b)); excess non-trading deficits on loan relationships; **excess UK property business losses (s.99(1)(d)) — the operative loss type for property groups**; excess overseas losses. Surrendering and claimant companies must elect within statutory time limits (typically 2 years from end of relevant claimant accounting period). Group relief mechanics covered on existing sibling page; this page covers the prior eligibility question.
+
+11. **Q: What is the "normal commercial loan" (NCL) test in Sch 18 para 4?**
+    A: Sch 18 para 4 distinguishes shareholder loans from equity for the equity-holder count. A normal commercial loan is excluded from the equity-holder count. A loan fails the NCL test (and is pulled into the equity-holder count) where it carries (i) the right to a share of profits (rather than a fixed or floating commercial interest rate); or (ii) the right to convert to shares; or (iii) terms inconsistent with arms-length commercial lending. The NCL test is the most common Sch 18 ambush for property groups using founder-loan + ratchet-share funding structures — non-NCL shareholder loans can drag the parent's profits-available-for-distribution entitlement below 75% even on a 100%-ordinary group.
+
+12. **Q: How does this page differ from the existing group-relief mechanics page on your site?**
+    A: This page is the **eligibility / definitional layer** — answering "do these companies qualify as one group for s.131 purposes?". The existing `property-company-group-relief-corporation-tax` page covers the **mechanics layer** — assuming group eligibility, how to surrender losses, claim ordering, CT600 boxes, time limits. Reading sequence: this page first to settle eligibility, then the mechanics page once eligibility is established. The pages cross-link.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy.
+- **Specific over generic.** Named statute (CTA 2010 Part 5; Sch 18; FA 2003 Sch 7); specific section numbers; anonymised personas.
+- **No real names.** Anonymised personas (Patel, Singh, Kapoor, Verma).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer.
+- **CSS in markdown:** semantic HTML only.
+- **FAQs:** 10–14 entries in frontmatter `faqs:` array.
+- **Anti-templating:** ELIGIBILITY / DEFINITIONAL FRAMING — page is the prior question to the mechanics page, NOT a CT600 mechanics restatement. The s.131 + s.152 + s.1154 three-section composite must replace any "s.131 contains the 75% test" framing. Sch 18 equity-holder overlay must be surfaced as the most counter-intuitive feature; consortium-relief trading-only gate must be explicit. Do NOT conflate CT and SDLT group relief regimes.
+- **§21 + §1 + proposed §21.8 (per F-3) do-not-write GREP discipline (RUN session greps draft against ALL):** "100% ordinary share capital = automatic group relief" (FALSE — Sch 18 overlay); "CT and SDLT 75% tests are identical" (FALSE — separate regimes); "consortium relief is available for investment JVs" (FALSE — trading-only); "buying a loss-making target gives immediate access to its losses" (FALSE — s.673 + s.674 + s.676); "associated companies = 75% group" (FALSE — control test under s.450+ is broader); **"s.131 contains the 75% subsidiary test directly"** (FALSE — test is at s.152; verified 2026-05-27 per F-8 drift catch).
+- **Quality bar (six checks).**
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §21 LtdCo single-SPV mechanics; §21.8 multi-company group operation once locked per F-3; §1.M post-MDR-abolition SDLT for the CT-vs-SDLT distinction; F-8 s.131-vs-s.152 drift catch).
+2. Claim this page in wave tracker.
+3. Read this brief — **note the §16.40 drift catch on s.131 vs s.152 attribution**.
+4. Fetch + read competitor URLs via session-side WebSearch (queries listed above).
+5. Read closest-existing pages: `property-company-group-relief-corporation-tax` (mechanics — direct sibling), `sdlt-group-relief-for-corporate-landlord-portfolios` (SDLT sibling regime), `sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth`, `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics`, `corporation-tax-marginal-relief-uk-guide` (A5 M2-A-B1 — associated-company gating sibling), `condition-c-trading-stock-section-162-incorporation-relief-denial-developers` (trading-vs-investment line for consortium-relief gating).
+6. Plan H2 / H3 outline — eligibility-first; mechanics + cross-links last.
+7. Verify factual claims per §16.35 (esp s.131 + s.152 + s.1154 verbatim against legislation.gov.uk URLs verified above; Sch 18 equity-holder overlay current; s.143 consortium-trading-only gate; s.673 + s.674 + s.676 change-of-ownership architecture).
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write grep check (6 patterns including the s.131-vs-s.152 catch).
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit on branch.
+15. Fill per-page work-log.
+16. Mark ✅ done in tracker.
+17. Append flags (none expected; F-3 already raised for HP extension request; F-8 raised at Stage 2 for drift catch).
+18. Append discoveries.
+19. Done.
 
 ## Work log (Stage 2 + RUN session populate)
 

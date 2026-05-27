@@ -229,6 +229,30 @@ The MW2 A8 seed (this batch) covers CT group-relief eligibility (the prior quest
 
 ---
 
+## F-8 — BRIEF_DRIFT — CTA 2010 s.131 vs s.152 mis-attribution in group-relief eligibility seed
+
+**Raised by:** M2-A-B2 Stage 2 sub-agent (2026-05-27) via the A8 `eligible-groups-for-group-relief-under-uk-corporation-tax` brief WebFetch-verification of `https://www.legislation.gov.uk/ukpga/2010/4/section/131` and `https://www.legislation.gov.uk/ukpga/2010/4/section/152`.
+**Bucket:** A (Limited company / BTL company operation — multi-company group operation eligibility).
+**Touched picks:** A8 `eligible-groups-for-group-relief-under-uk-corporation-tax` (this batch — Stage 1 seed corrected in-place at Stage 2); possibly upstream-relevant for any future MW2 pick touching CT group relief eligibility (A4 pillar lever-map, A5 marginal-relief associated-company sibling, future associated-company / group-structure pages).
+
+**Issue.** Stage 1 seed for A8 cited CTA 2010 **s.131** as containing the operative 75%-subsidiary test directly: *"s.131 — 'the group condition' eligibility test. Two companies are in the same group for group-relief purposes if (a) one is the 75% subsidiary of the other, or (b) both are 75% subsidiaries of a third company."* **VERIFIED 2026-05-27 against legislation.gov.uk: that test sits at s.152, not s.131.**
+
+- Verbatim s.131(1): *"The group condition is met if the surrendering company and the claimant company—(a) are members of the same group of companies (see section 152), and (b) are both UK related."* s.131 is the two-limb group-condition gateway (same-group per s.152 + UK-related per s.134); it does NOT contain the 75% subsidiary arithmetic directly.
+- Verbatim s.152: *"For the purposes of this Part two companies are members of the same group of companies if—(a) one is the 75% subsidiary of the other, or (b) both are 75% subsidiaries of a third company."* The same-group test sits HERE.
+- s.1154 verbatim: *"B is a 75% subsidiary of A if at least 75% of B's ordinary share capital is owned directly or indirectly by A."* The arithmetic test sits at s.1154.
+
+The correct framing is the **three-section composite**: s.131 (group condition) → s.152 (same-group test) → s.1154 (75% subsidiary arithmetic) → Sch 18 (equity-holder overlay on profits-available-for-distribution + assets-on-winding-up).
+
+**Consolidation with F-3.** F-3 (already raised this batch) proposes a §21.8 "Multi-company group operation" mini-lock. The §21.8.1 placeholder bullet in F-3 reads "CT group relief 75% test (CTA 2010 s.131 + s.1154 + Sch 18 equity-holder overlay + s.156 worldwide-group)". F-8 surfaces that the §21.8.1 framing should expand to "CTA 2010 s.131 (group condition) + s.152 (same-group test) + s.1154 (75% subsidiary arithmetic) + Sch 18 (equity-holder overlay) + s.156 (worldwide-group)" — fold the s.152 distinction into the §21.8.1 lock when conductor sign-off on F-3 proceeds. No standalone HP-extension required beyond F-3 incorporating the s.152 distinction.
+
+**How to apply.** Stage 2 extended A8 brief in-place to: (a) note the §16.40 drift catch verbatim in the Statutory anchor block with WebFetched evidence URL + date; (b) restructure the "Primary (group condition)" + "Primary (75% definition)" + new "Primary (same-group test under s.131)" anchor bullets into the correct three-section composite (s.131 → s.152 → s.1154); (c) include in the do-not-write GREP discipline the new pattern "s.131 contains the 75% subsidiary test directly" (FALSE); (d) extend the §21.8.1 placeholder lock in F-3 to explicitly name s.152. Stage 1b reviewer / wave-close manager should consider adding the s.131 + s.152 + s.1154 three-section composite as verbatim citations to the §21.8 lock for use by future group-relief-touching picks.
+
+**§16.40 lesson confirmed.** Stage 2 statutory-citation cross-check gate (§16.36 baked into dispatch prompt) caught this drift in the Stage 1 seed. Pattern continues from F-7 (DLA ss.464C/D omission). The Stage 1 → Stage 1b → Stage 2 multi-layer gate is working as designed: per-write WebFetch verification per §16.35 catches drift that earlier stages couldn't (Stage 1 environment WebFetch was blocked when seed was written; Stage 1b sign-off was structural; Stage 2 verbatim verification surfaced the s.131 vs s.152 question).
+
+**Severity.** MEDIUM — substantive citation mis-attribution but with structural correction-only impact (the 75% subsidiary test still applies; only the section number changes). Stage 2 in-place correction preserves the analytic content; no downstream pages on the live site are affected (no shipped pages in MW2 reference this attribution).
+
+---
+
 ## F-50 — HOUSE_POSITION_EXTENSION — VAT artificial separation (Sch 1 para 2 directions) property-context floor
 
 **Raised by:** M2-B-B1 sub-agent (Stage 1, 2026-05-26).
