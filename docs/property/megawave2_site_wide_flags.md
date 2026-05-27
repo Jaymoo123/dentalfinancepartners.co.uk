@@ -277,6 +277,42 @@ The correct framing is the **three-section composite**: s.131 (group condition) 
 
 ---
 
+## F-10 — BRIEF_DRIFT — HMRC PM236500 does not exist; mixed-membership rules sit at PM210000 → PM213000+ (34 sub-pages)
+
+**Raised by:** M2-A-B2 Stage 2 sub-agent (2026-05-27) via the A10 `hybrid-limited-liability-partnership` brief WebFetch-verification of `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm236500` (404) and `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm210000` + `https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm213000` (both verified live).
+**Bucket:** A (Property partnership / LLP — hybrid-LLP / corporate-member sub-regime).
+**Touched picks:** A10 `hybrid-limited-liability-partnership` (this batch — Stage 1 seed corrected in-place at Stage 2); F-5 (already raised) — text references "PM236500-PM238000"; future Bucket A LLP picks (`llp-accounts`, `llp-and-taxation-benefits`); A4 pillar lever-map (M2-A-B1 — if it cites mixed-membership PM range).
+
+**Issue.** Stage 1 seed for A10 (and F-5 flag text) cited "HMRC Partnership Manual PM236500-PM238000 series" as the operative HMRC anchor for mixed-membership partnership rules. **VERIFIED 2026-05-27 against gov.uk:**
+
+- **`https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm236500`** returns HTTP 404 — the URL does not exist.
+- **`https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm210000`** is verified live; page heading "Mixed member partnerships: contents"; three immediate sub-pages: PM211000 (Companies in partnership), PM212000 (Company partners and tax mitigation), PM213000 (Mixed member rules: contents — the operative regime entry-point).
+- **`https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm213000`** is verified live; indexes 34 sub-pages PM214000–PM248000 covering the full operative ss.850C–E framework.
+
+The seed's "PM236500+" anchor is incorrect at the root number (PM236500 doesn't exist). PM236000 / PM237000 / PM238000 ARE valid pages but they are SUB-PAGES within the PM213000+ tree (covering business transfers to partnership + examples + LLP takeover specifically) — NOT the entry point to the regime.
+
+Load-bearing sub-pages for the page audience (RUN session WebFetches at write time):
+- PM214000 (Overview)
+- PM218000–PM219000 (Conditions X + Y)
+- PM224000 (Power to enjoy) — LOAD-BEARING for the page audience
+- PM227000 (Enjoyment Conditions)
+- PM228000 (Is profit share influenced by power to enjoy?)
+- PM230000 + PM231000 (Reallocations: Individuals + Non-individuals)
+- PM234000 (Anti-avoidance)
+- PM248000 (Close companies: loans to participators + arrangements conferring benefit on participator — links to F-7 ss.464C/D omission + s.464A territory; cross-reference for DLA pages)
+
+**Consolidation with F-5.** F-5 (already raised this batch) proposes a §11.C.Y "Mixed membership partnership rules + hybrid LLP architecture" sub-section under the F-2-proposed §11.C partnership architecture mini-lock. The §11.C.Y.4 placeholder bullet references "HMRC PM236500-PM238000 operative guidance". F-10 surfaces that the §11.C.Y.4 framing must change to "HMRC PM210000 → PM213000+ series (Mixed member partnerships → Mixed member rules: contents; PM214000 + PM218000–PM219000 + PM224000 + PM227000 + PM228000 + PM230000 + PM231000 + PM234000 load-bearing sub-pages for hybrid-LLP audience; PM248000 close-company bridge to F-7 s.464A territory)". Fold the PM210000+ correction into the §11.C.Y lock when conductor sign-off on F-5 proceeds. No standalone HP-extension required beyond F-5 incorporating the PM210000+ correction.
+
+**Pattern with F-9.** F-10 is the second HMRC PM-range mis-attribution drift catch in this batch (F-9 = salaried-member PM276000 vs PM250000+; F-10 = mixed-membership PM236500+ vs PM210000+ → PM213000+). The Stage 1 seed sub-agent appears to have generated plausible-looking PM page numbers without verifying gov.uk URLs — a systemic Stage 1 environment limitation (WebFetch blocked at Stage 1) that Stage 2 verification gates catch.
+
+**How to apply.** Stage 2 extended A10 brief in-place to: (a) note the §16.40 drift catch verbatim in the Statutory anchor block with WebFetched evidence URLs + date; (b) restructure the "Primary (HMRC operative guidance)" anchor bullet to cite PM210000 → PM213000+ as the correct entry-point with the verified 34-sub-page tree; (c) include in the do-not-write GREP discipline the new pattern "HMRC PM236500 covers mixed-membership rules" (FALSE); (d) extend the §11.C.Y.4 placeholder lock in F-5 to explicitly name PM210000 → PM213000+ and the load-bearing sub-page list. Stage 1b reviewer / wave-close manager should consider adding the PM210000 + PM213000 correct anchor map to the §11.C.Y lock for use by future hybrid-LLP / mixed-membership-touching picks.
+
+**§16.40 lesson confirmed (fourth instance this wave).** Stage 2 statutory-citation cross-check gate (§16.36 baked into dispatch prompt) caught its fourth HMRC manual / statutory mis-attribution drift in this batch (F-7 ss.464C/D omission; F-8 s.131 vs s.152; F-9 PM276000 vs PM250000+; F-10 PM236500+ vs PM210000+). Recommendation for Stage 1b conductor / wave-close manager: consider whether Stage 1 dispatch prompt should require HMRC PM URL verification for any cited PM range, given the systemic pattern.
+
+**Severity.** HIGH — the load-bearing HMRC operative guidance anchor was mis-attributed in the Stage 1 seed AND the cited PM236500 root URL does not exist. Stage 2 in-place correction preserves the analytic content; no shipped pages affected.
+
+---
+
 ## F-50 — HOUSE_POSITION_EXTENSION — VAT artificial separation (Sch 1 para 2 directions) property-context floor
 
 **Raised by:** M2-B-B1 sub-agent (Stage 1, 2026-05-26).
