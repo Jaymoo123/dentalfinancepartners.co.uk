@@ -72,10 +72,256 @@ Open with: "If you are a UK property developer, run a large landlord group with 
 - Case-law to ground: *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 — employment-vs-self-employment three-element test (load-bearing for the on-boarding status-test template); possible cross-reference to *Perrin v HMRC* + *Martland v HMRC* (§27.2 + §27.4) where penalty appeals on CIS300 / Sch 55 arise. Limited other case-law dependency — CIS template practice is operationally regulated rather than litigated.
 - Watchpoint at write: Stage 2 sub-agent verifies (a) HMRC CIS Online URL + current CIS300 + PDS prescribed-format references; (b) SI 2019/892 reverse-charge consolidated text + any post-2026 amendments; (c) reg 9 direction wording for under-deduction relief; (d) ECCTA / Companies House ID verification commencement state for the on-boarding template overlay; (e) any 2025-2026 HMRC guidance updates on the materials-line definition (the "direct cost to a person other than the contractor" wording in reg 4(8) is operationally ambiguous on intra-group materials supply — Stage 2 monitors for any updated guidance).
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — VERIFIED URLs
 
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes per memory `feedback_no_em_dashes`); LeadForm footer; aside-styled inline CTAs after each of the five templates + at close; semantic HTML with structured tables for the field-by-field walkthroughs (the table format is load-bearing for this page — sessions must NOT collapse to prose for the per-template field lists); FAQs 10-12 entries (template-angled: "do I need to issue a PDS to gross-payment subcontractors?" "what counts as 'materials' for the labour/materials split on the invoice?" "can I send the PDS electronically?" "what happens if I miss the 14-day PDS deadline?" "do I need to file a CIS300 in a month with no subcontractor payments?" "is the HMRC CIS Online free?" "what's the difference between the CIS300 and the PDS?" "does CIS-registered status mean a subcontractor is automatically self-employed?" "how long is a verification reference valid for?" "do I need a labour/materials split on the invoice if the subcontractor is gross-payment?"); FAQPage JSON-LD; rate-by-reference per §16.27; six-verification gate; §16.35 per-write statute re-verification at write time. Internal-link discipline: forward-link to §33 + §29 + MW2 B4 + M3-C-B3 C18 + existing reverse-charge site page + §35.2 + §27.2 + §27.3 + §28 + §25.12 + §11.A cluster pages. NO em-dashes (memory feedback).]
+### Authority URLs (RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/2004/12/part/3`** — Finance Act 2004 Part 3 ss.57-77 (CIS architecture; §33 lock).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/61`** — FA 2004 s.61 (deduction obligation; s.61(2) materials excluded from deduction base — load-bearing for invoice template).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/69`** — FA 2004 s.69 (verification mechanic — anchor for verification checklist template).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/70`** — FA 2004 s.70 (periodic returns by contractors — statutory hook for CIS300 monthly return template, verbatim verified at seed time 2026-05-27).
+- **`https://www.legislation.gov.uk/uksi/2005/2045/regulation/4`** — SI 2005/2045 reg 4(1)-(9) (CIS300 + PDS prescribed contents + 14-day deadlines + electronic-delivery permission, verbatim verified at seed time 2026-05-27).
+- **`https://www.legislation.gov.uk/uksi/2005/2045/regulation/6`** — SI 2005/2045 reg 6 (verification mechanic operational detail; 2-tax-year window).
+- **`https://www.legislation.gov.uk/uksi/2005/2045/regulation/9`** — SI 2005/2045 reg 9 (direction transferring under-deduction liability to subcontractor where contractor took reasonable care).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/64`** — FA 2004 s.64 (gross-payment status three-test gate: business + turnover + compliance).
+- **`https://www.legislation.gov.uk/ukpga/2004/12/section/66`** — FA 2004 s.66 (cancellation of gross-payment status).
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/55`** — FA 2009 Sch 55 (late-filing penalty — applies to CIS300 including nil-returns).
+- **`https://www.legislation.gov.uk/ukpga/2009/10/schedule/56`** — FA 2009 Sch 56 (late-payment penalty — applies to deducted-amount delays).
+- **`https://www.legislation.gov.uk/ukpga/2007/11/schedule/24`** — FA 2007 Sch 24 (inaccuracy penalty — applies to under-deduction).
+- **`https://www.legislation.gov.uk/uksi/2019/892`** — SI 2019/892 (VAT domestic reverse charge for construction services in force 1 March 2021 — anchor for invoice-template reverse-charge statement field).
+- **`https://www.legislation.gov.uk/ukpga/1994/23/section/55A`** — VATA 1994 s.55A (reverse charge architecture; CIS / reverse-charge sibling regime).
+- **`https://www.legislation.gov.uk/ukpga/2017/22`** — Money Laundering Regulations 2017 (MLR ID verification overlay for on-boarding template).
+- **`https://www.legislation.gov.uk/ukpga/2023/56`** — Economic Crime and Corporate Transparency Act 2023 (ECCTA — ID verification overlay for UK-company subcontractors per §11.A; commencement state verified at write).
+- **`https://www.gov.uk/hmrc-internal-manuals/construction-industry-scheme-reform/cisr40000`** — HMRC CIS Manual CISR40000+ (contractor verification + monthly returns).
+- **`https://www.gov.uk/hmrc-internal-manuals/construction-industry-scheme-reform/cisr45000`** — HMRC CIS Manual CISR45000+ (PDS practice + materials-line guidance).
+- **`https://www.gov.uk/hmrc-internal-manuals/construction-industry-scheme-reform/cisr60000`** — HMRC CIS Manual CISR60000+ (gross-payment status operative guidance).
+- **`https://www.gov.uk/what-you-must-do-as-a-cis-contractor`** — HMRC contractor obligations + CIS300 monthly cycle + nil-return rule.
+- **`https://www.gov.uk/government/collections/construction-industry-scheme-cis`** — HMRC CIS collection on gov.uk (current rates, thresholds, verification process state).
+- **`https://www.gov.uk/guidance/vat-reverse-charge-technical-guide`** — HMRC VAT reverse charge technical guide (CIS / reverse-charge interaction).
+- **`https://www.bailii.org/uk/cases/QBD/1968/0001.html`** — *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 (employment-vs-self-employment three-element test; §35.2 cross-reference; load-bearing for on-boarding status-test template).
+
+### Competitor URLs
+
+`<!-- competitor section: session-side WebSearch at write time per §16.31 Wave 8/9 5/5 dead-rate pattern + §16.43 confirmation — Stage 2 did not invent firm URLs; RUN session sources fresh. Recommended queries: "CIS300 template property developer", "CIS payment deduction statement template UK", "CIS subcontractor verification checklist landlord", "CIS labour materials invoice split", "CIS subcontractor on-boarding compliance checklist UK", "VAT reverse charge invoice template construction CIS", "Ready Mixed Concrete CIS employment status template". Aim 4-6 specialist property-development accountancy firms (Hill & Co / Plus Accounting / Smith Cooper / Properly Built); ICAEW Tax Faculty + CIOT Tax Adviser CIS template commentary; Federation of Master Builders + Build UK construction-industry template libraries (note their generic-trade angle to differentiate against); LandlordZONE + Property Tribes practitioner CIS-template threads. Dominant competitor shape is generic construction-trade template-list OR template-thumbnail-behind-lead-form; this page DIFFERENTIATES via statute-anchored field-by-field walkthrough + property-business specificity. -->`
+
+### HMRC + supervisor manual anchors
+
+- HMRC CISR (CIS Manual) full set.
+- HMRC CISR40000+ (verification + monthly returns).
+- HMRC CISR45000+ (PDS practice + materials-line guidance).
+- HMRC CISR60000+ (gross-payment status).
+- HMRC PIM1000+ (Property Income Manual — for the property-business landing).
+- HMRC BIM60000+ (property income / trading distinction — trade-side for developers).
+- HMRC VAT Notice 735 (domestic reverse charge for building and construction services).
+- HMRC Compliance Handbook CH on Sch 24 / Sch 55 / Sch 56 penalty operative guidance.
+
+### Case-law (verify each at BAILII at write time per §16.35)
+
+- *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 — employment-vs-self-employment three-element test (mutuality + control + integration). Load-bearing for the on-boarding status-test template. §35.2 cross-reference.
+- *Perrin v HMRC* [2018] UKUT 156 (TCC) — reasonable-excuse 4-step framework (where penalty appeals arise from CIS300 missed-submission / PDS-not-issued).
+- *Martland v HMRC* [2018] UKUT 178 (TCC) — late-appeal three-stage framework.
+- Limited other case-law dependency — CIS template practice is operationally regulated rather than litigated.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — The CIS300 monthly return field-by-field (Patel Developments Ltd, August 2026 tax month)
+
+Patel Developments Ltd (mainstream contractor under FA 2004 s.59(1)(k)) paid three subcontractors in the August 2026 tax month (6 August to 5 September 2026). CIS300 due 19 September 2026 (22 September for electronic submission).
+
+Required fields per SI 2005/2045 reg 4 (verified verbatim at seed time 2026-05-27):
+
+| Field | Patel Developments value | Source |
+|---|---|---|
+| Contractor name | Patel Developments Ltd | Company record |
+| Contractor UTR | 1234567890 | HMRC tax record |
+| Accounts Office reference | 123PA00012345 | HMRC employer record |
+| Tax month | 6 August 2026 to 5 September 2026 | Per reg 4(2) |
+| For each subcontractor: name + UTR + payment + materials + tax deducted + verification reference (where unregistered) | See per-line entries below | Per reg 4(1) operative list |
+| Employment-status declaration | None of the contracts is a contract of employment | Per s.70 declaration |
+| Verification compliance declaration | All subcontractors verified | Per s.70 declaration |
+
+Per-line entries:
+
+- **P&S Electrical Ltd** (registered for payment under deduction; verification status confirmed by HMRC): payment £15,000 (labour £10,000 + materials £5,000); tax deducted £2,000 (20% × £10,000 labour); no verification reference needed (registered status).
+- **NW Builders Ltd** (gross-payment status under s.63 + s.64): payment £25,000 (labour £15,000 + materials £10,000); tax deducted £0 (0% deduction); no verification reference needed (gross-payment status).
+- **M Singh trading as MS Plumbing** (unverified — HMRC returned no record on verification request): payment £8,000 (labour £6,000 + materials £2,000); tax deducted £1,800 (30% × £6,000 labour); verification reference V123456789 recorded.
+
+Total deducted £3,800 paid to HMRC by 19 September 2026 (22 September electronic).
+
+**Common failure mode:** contractor omits NW Builders Ltd from the CIS300 because "no deduction so no entry needed". FALSE — gross-payment subcontractors must still appear on the CIS300 even at £0 deduction; the return is a record of ALL contract payments, not just those with deductions. Omission creates a Sch 24 inaccuracy penalty risk.
+
+### Example 2 — The Payment and Deduction Statement (PDS) field-by-field (P&S Electrical Ltd, August 2026)
+
+P&S Electrical Ltd is registered for payment under deduction. Patel Developments Ltd must issue a PDS within 14 days of the end of the August 2026 tax month (by 19 September 2026 per SI 2005/2045 reg 4(8)).
+
+Required fields per reg 4(8) (verified verbatim at seed time 2026-05-27):
+
+| Field | Patel-to-P&S August PDS value | Source |
+|---|---|---|
+| Contractor's name | Patel Developments Ltd | reg 4(8)(a) |
+| Contractor's employer's reference | 123/PA00012345 | reg 4(8)(b) |
+| Tax month / payment date | 6 August 2026 to 5 September 2026 | reg 4(8)(c) |
+| Subcontractor's name | P&S Electrical Ltd | reg 4(8)(d) |
+| Subcontractor's UTR | 9876543210 | reg 4(8)(e) |
+| Total amount of contract payments | £15,000 | reg 4(8)(f) |
+| Materials cost (direct cost to a person other than the contractor) | £5,000 | reg 4(8)(g) |
+| Total amount deducted under FA 2004 s.61 | £2,000 | reg 4(8)(h) |
+| Verification reference (unregistered subcontractors only) | n/a (P&S is registered) | reg 4(8) closing words |
+
+Delivery per reg 4(9): paper OR electronic permitted "if the sub-contractor has consented and the format permits paper printing".
+
+**Gross-payment carve-out:** NW Builders Ltd is GROSS-PAYMENT — Patel Developments Ltd does NOT issue a PDS to NW Builders for the August month (no deduction has been made; PDS regime applies only where there is a deduction). Sessions must NOT write "you must issue a PDS to every subcontractor regardless of status" — that is FALSE per reg 4(8) which applies only where a deduction was made.
+
+**Common failure mode:** contractor uses an out-of-date PDS template that omits the verification reference field. For M Singh (unregistered), this field is mandatory; absence creates a Sch 24 inaccuracy penalty risk + a CIS-system audit-trail gap that HMRC will flag on review.
+
+### Example 3 — The subcontractor verification checklist (P&S Electrical Ltd on-boarding)
+
+Patel Developments Ltd engages P&S Electrical Ltd as a new subcontractor. Verification template fields per FA 2004 s.69 + SI 2005/2045 reg 6:
+
+1. **Subcontractor identifiers captured** (company case): UTR 9876543210 + company registration number 12345678 + company name "P&S Electrical Ltd". (For sole-trader: UTR + name + NINO; for partnership: partnership UTR + each partner UTR.)
+2. **HMRC verification request** submitted via CIS Online or CIS-compliant payroll software.
+3. **HMRC verification response** (one of three statuses):
+   - Gross-payment (0% deduction) → record verification reference + apply 0% to labour element on first payment.
+   - Registered for payment under deduction (20% deduction) → record verification reference + apply 20% to labour element.
+   - Unregistered (30% deduction) → record verification reference + apply 30% to labour element + populate verification reference on PDS field.
+4. **Verification reference recorded** in contractor's subcontractor register with date + expiry (typically valid 2 tax years for that contractor-subcontractor relationship per §33.2).
+5. **Re-verification trigger** scheduled: when 2-tax-year window expires, re-verify before the next payment. Absent re-verification, the contractor risks under-deduction exposure under FA 2007 Sch 24.
+
+**Common failure mode:** contractor assumes verification reference is permanent. FALSE — re-verification is required when the 2-tax-year window expires. Stale verification at the 30-month mark creates Sch 24 inaccuracy exposure on every subsequent payment.
+
+### Example 4 — Subcontractor invoice template with labour/materials split + reverse-charge statement
+
+P&S Electrical Ltd is VAT-registered and Patel Developments Ltd is VAT-registered (not an end-user). P&S invoices for August 2026 work on Patel's commercial development:
+
+```
+INVOICE #1234
+Date: 31 August 2026
+Subcontractor: P&S Electrical Ltd
+UTR: 9876543210
+VAT registration number: GB123456789
+To: Patel Developments Ltd
+
+Project reference: SITE-CD-2026-04
+Description: Electrical installation, Phase 2
+
+Labour element:               £10,000.00
+Materials cost (direct cost
+to a person other than the
+contractor, per FA 2004
+s.61(2) + SI 2005/2045
+reg 4(8)(g)):                  £5,000.00
+--------------------------------
+Net total:                    £15,000.00
+VAT: Reverse charge applies under SI 2019/892 +
+VATA 1994 s.55A; customer to account for VAT.
+```
+
+**Labour/materials split discipline (FA 2004 s.61(2)):** the split MUST appear on the invoice. Without the split, Patel defaults to treating the whole £15,000 as labour, deducts 20% × £15,000 = £3,000 instead of 20% × £10,000 = £2,000. P&S receives £12,000 instead of £13,000; over-payment of £1,000 to HMRC; subcontractor disputes at year-end.
+
+**Reverse-charge statement (SI 2019/892):** mandatory on the invoice where both parties are VAT-registered and the customer is not an end-user. P&S issues the invoice WITHOUT VAT charged + with the reverse-charge statement; Patel accounts for VAT (£3,000 at 20%) on Patel's own VAT return (output £3,000 + input £3,000, typically netting to £0).
+
+**Common failure modes:** (a) materials apportioned arbitrarily ("70% labour / 30% materials" without invoice-cost evidence) — FALSE per reg 4(8)(g) which requires the cost to be the DIRECT COST to a person other than the contractor; (b) reverse-charge statement omitted where end-user characterisation is wrong (private householder customer is end-user; commercial customer normally is not unless specifically declared); (c) VAT charged in error on a reverse-charge invoice — HMRC will require re-invoicing.
+
+### Example 5 — Subcontractor on-boarding compliance checklist (M Singh trading as MS Plumbing)
+
+M Singh is a sole-trader plumber on-boarded for a 12-week refurb on a single Patel Developments site. On-boarding template per Ready Mixed Concrete + MLR + ECCTA + insurance + RTW:
+
+| Check | Status | Risk if absent |
+|---|---|---|
+| Employment-status review (Ready Mixed Concrete three-element test) | Reviewed: mutuality (12-week engagement); control (Patel site manager specifies methods); integration (uses Patel's tools) | HIGH reclassification risk → consider CEST review + Status Determination Statement. PAYE + 15% secondary Class 1 NIC (from 6 April 2026 per FA 2026) + Sch 24 inaccuracy exposure. |
+| Gross-payment-status check at verification | Verified: M Singh unregistered → 30% deduction on labour element | Wrong rate applied → Sch 24 inaccuracy. |
+| MLR ID verification (Money Laundering Regulations 2017) | Required where contractor sector is in scope; passport + utility bill + beneficial-ownership where applicable | MLR breach + civil penalty exposure under reg 76 + administrative tariff. |
+| ECCTA / Companies House ID verification | Not applicable (M Singh is sole-trader, not UK company) | n/a for sole-trader case. |
+| Insurance certificate check (PL + EL appropriate to construction operations) | Public Liability £2m + Employers' Liability £5m verified | Uninsured incident liability falls on Patel as principal. |
+| Right-to-work check | UK national; passport + share-code if EU national | Civil + criminal penalty under Immigration, Asylum and Nationality Act 2006. |
+
+**Common failure mode:** contractor relies on CIS registration as proxy for employment status. FALSE — CIS-registered status does NOT establish self-employment for employment-status purposes (Ready Mixed Concrete sits independently on the working pattern). 12-week single-site engagement with Patel's tools + Patel's methods is the classic Ready Mixed Concrete reclassification trigger. Sessions emphasise: the on-boarding checklist is a FINANCE / COMPLIANCE control, not an HR formality.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: Do I need to issue a PDS to gross-payment subcontractors?**
+   A: NO. SI 2005/2045 reg 4(8) — the PDS regime applies only where a deduction has been made. Gross-payment subcontractors (0% deduction under FA 2004 s.63 + s.64) do NOT receive a PDS. They still appear on the CIS300 monthly return at £0 deduction (mandatory entry per reg 4), but the PDS regime is silent on them. Sessions must NOT write "issue a PDS to every subcontractor regardless of status" — that is FALSE per reg 4(8).
+
+2. **Q: What counts as "materials" for the labour/materials split on the invoice?**
+   A: SI 2005/2045 reg 4(8)(g) — "the materials cost amount the contractor is satisfied represents the **direct cost to a person other than the contractor** of materials used in carrying out the construction operations". Materials means physical materials consumed (cement, steel, fixtures, plant hire in specified conditions). The split must reflect ACTUAL direct cost to a third party, not an arbitrary apportionment. Sessions must NOT write "you can split labour and materials however you want" (FALSE per reg 4(8)(g) — apportionment without third-party cost evidence is operative non-compliance + Sch 24 inaccuracy exposure).
+
+3. **Q: Can I send the PDS electronically?**
+   A: YES. SI 2005/2045 reg 4(9) — electronic delivery is permitted "if the sub-contractor has consented and the format permits paper printing". Two conditions: subcontractor consent (best practice: written consent recorded in on-boarding file) + format permits paper printing (PDF / printable HTML — not a database row that the subcontractor cannot extract). Sessions must NOT write "you can layer electronic PDS over paper PDS" (mis-framed — electronic is permitted INSTEAD of paper where conditions met, not as additional layer).
+
+4. **Q: What happens if I miss the 14-day PDS deadline?**
+   A: PDS late-issuance is not a Sch 55 late-filing penalty (Sch 55 is for the CIS300 return to HMRC, not the PDS to the subcontractor). However, PDS-not-issued creates: (a) audit-trail gap that HMRC flags on compliance review under Sch 24 inaccuracy framework; (b) operational dispute with the subcontractor who needs the PDS for their own tax filing; (c) cumulative pattern of missed PDS deliveries supports HMRC finding of "deliberate" inaccuracy under Sch 24 — higher penalty band. The 14-day deadline runs in parallel with the CIS300 deadline; treat as a single discipline.
+
+5. **Q: Do I need to file a CIS300 in a month with no subcontractor payments?**
+   A: YES. FA 2004 s.70 + SI 2005/2045 — nil-return rule. Late-filing penalty under FA 2009 Sch 55 applies to missed nil-returns as well as substantive returns. This is one of the most common operational traps. Sessions must NOT write "you don't need to file CIS returns in months with no payments" (FALSE per §33 do-not-write + Sch 55 penalty exposure).
+
+6. **Q: Is the HMRC CIS Online free?**
+   A: YES — HMRC CIS Online is free and accessible via the HMRC online services portal. Suitable for small / occasional contractors. For portfolio contractors (more than a handful of subcontractors per month, multiple sites, frequent on-boarding), the operational floor is CIS-compliant payroll software (Sage / Xero / IRIS / specialist CIS software) that handles verification + CIS300 generation + PDS generation + reconciliation. The page does NOT recommend specific software products (sales territory; affiliate / endorsement risk) — it names the gross-shape categories. SI 2005/2045 reg 4(1) requires the return "in a document or format provided or approved by the Commissioners" — RUN session verifies current HMRC-approved-format list at write per §16.35.
+
+7. **Q: What's the difference between the CIS300 and the PDS?**
+   A: The CIS300 is the **contractor's monthly return to HMRC** (FA 2004 s.70 + SI 2005/2045 reg 4(1)-(7)). It lists all subcontractors paid in the month + deductions + verification references where applicable. The PDS is the **contractor's statement to each individual non-gross subcontractor** (SI 2005/2045 reg 4(8)) showing that subcontractor's payment + materials + deduction for the month. Both are 14-day deadlines after end of tax month — parallel disciplines on different audiences. CIS300 goes to HMRC; PDS goes to the subcontractor.
+
+8. **Q: Does CIS-registered status mean a subcontractor is automatically self-employed?**
+   A: NO. *Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance* [1968] 2 QB 497 — the three-element test (mutuality + control + integration) sits independently on the working pattern. CIS-registered status is ADMINISTRATIVE (registration with HMRC for CIS deduction purposes); employment-status is SUBSTANTIVE. A CIS-registered subcontractor can be reclassified as an employee if the working pattern looks like employment under Ready Mixed Concrete. At that point the contractor faces PAYE + secondary Class 1 NIC at 15% from 6 April 2026 per FA 2026 (rate-by-reference per §16.27) on historic payments + potential Sch 24 inaccuracy penalty. The on-boarding template's status-test review is the protective control.
+
+9. **Q: How long is a verification reference valid for?**
+   A: Typically 2 tax years for that contractor-subcontractor relationship per §33.2 + SI 2005/2045 reg 6 framework (RUN session verifies current operative period at write per §16.35). When the window expires, re-verify before the next payment. Stale verification creates under-deduction or over-deduction exposure under FA 2007 Sch 24. Operative discipline: track verification expiry dates in the contractor's subcontractor register + schedule re-verification triggers in CIS-compliant software.
+
+10. **Q: Do I need a labour/materials split on the invoice if the subcontractor is gross-payment?**
+    A: TECHNICALLY no for CIS-deduction-rate-application purposes (gross-payment subcontractor receives full payment, no deduction calculation needed). HOWEVER: (a) operational audit-trail discipline — the CIS300 entry for the gross-payment subcontractor still records "materials cost" per reg 4(1) field structure; (b) contractor's own CT / IT reconciliation benefits from invoice-level labour/materials evidence; (c) any subsequent gross-payment cancellation under s.66 means the deduction-rate applies retroactively to invoices issued in the cancellation period — labour/materials split makes the retroactive calculation possible. Best practice: require the split on every subcontractor invoice regardless of status.
+
+11. **Q: What is the £3m deemed-contractor threshold and does it apply to me?**
+    A: FA 2004 s.59(1)(l) + Sch 11A — non-construction businesses become "deemed contractors" once average rolling-12-month construction-related expenditure exceeds £3m (FA 2021 reform in force 6 April 2021, raising the previous £1m threshold). Catches large landlord groups with active capex / refurb programmes, REITs, HMO portfolio operators. Once in scope, full CIS template architecture applies (CIS300 + PDS + verification + labour/materials invoice discipline + on-boarding checklist). RUN session verifies current threshold against HMRC CISR at write per §16.27. Pure-residential individual landlords are typically out of scope (private householder carve-out under s.59(2) + no business through which construction operations flow).
+
+12. **Q: Can I rely on the templates alone to be CIS-compliant?**
+    A: NO. Templates are the paper-trail evidence of the operational disciplines; the disciplines themselves are (a) verification BEFORE first payment (FA 2004 s.69 + SI 2005/2045 reg 6); (b) correct deduction rate applied to labour element only (FA 2004 s.61(2)); (c) monthly CIS300 including nil-returns (s.70); (d) timely PDS issuance to non-gross subcontractors (reg 4(8)); (e) deducted-amount payment to HMRC by 19th of following month (22nd electronic); (f) status-test review for long-running engagements (Ready Mixed Concrete). Sessions must NOT write "use this template and you are compliant" — templates are necessary but not sufficient.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy (per `feedback_no_em_dashes` memory).
+- **Specific over generic.** Named statute (FA 2004 ss.61(2) + s.64 + s.66 + s.69 + s.70; SI 2005/2045 reg 4(1)-(9) + reg 6 + reg 9; FA 2009 Sch 55 + Sch 56; FA 2007 Sch 24; SI 2019/892 VAT reverse charge; VATA 1994 s.55A; MLR 2017; ECCTA 2023). Worked-example personas only; no real subcontractor names.
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Inline aside-styled CTAs at five conversion moments: (i) after the five-template framing intro; (ii) after the CIS300 + PDS field-by-field walkthroughs; (iii) after the verification checklist; (iv) after the invoice + reverse-charge template walkthrough; (v) at close after the on-boarding compliance checklist.
+- **CSS in markdown:** semantic HTML only. **Structured tables for the field-by-field walkthroughs are LOAD-BEARING for this page — sessions must NOT collapse to prose for the per-template field lists.**
+- **FAQs:** 10-12 entries (template-angled per the seed).
+- **Body word count target:** 2,600-3,000.
+- **Anti-templating:** open with the property-business audience telegraph from the seed counter-pattern ("If you are a UK property developer, run a large landlord group with a capex programme, operate a REIT, or run an HMO portfolio, the Construction Industry Scheme requires five distinct templates as the operational paper-trail..."). Do NOT open with generic "What templates do I need for CIS?".
+- **Rate-by-reference per §16.27** for CIS rates 0%/20%/30% (FA 2004 s.62 + s.61(2) + SI 2005/2045 reg 6); £3m rolling-12-month deemed-contractor threshold (FA 2021 reform); CIS300 + PDS 14-day deadlines (SI 2005/2045 reg 4(2) + reg 4(8)); deducted-amount payment 19th / 22nd; Sch 55 + Sch 56 + Sch 24 penalty quanta (verified at write); 15% secondary Class 1 NIC from 6 April 2026 per FA 2026 (verified at write); LRGRA 2022 + BSA 2022 + MLR 2017 + ECCTA 2023 dates (verified at write).
+- **Six-verification gate per §9.**
+- **§16.35 per-write statute re-verification at write time** — every FA 2004 / SI 2005/2045 / FA 2009 / FA 2007 / SI 2019/892 / VATA / MLR / ECCTA cite verified at legislation.gov.uk at write. Current SI 2005/2045 reg 4(1)-(9) + reg 6 + reg 9 wording + £3m threshold + CIS rates + Sch 55/56/24 quanta + FA 2026 NIC rate verified at write per §16.27.
+- **Do-not-write GREP discipline (RUN session greps draft):** "use this template and you are compliant" (FALSE — templates are paper-trail evidence not statutory compliance); "the PDS is optional" (FALSE per SI 2005/2045 reg 4(8) — mandatory for non-gross subcontractors); "the PDS deadline is different from the CIS300 deadline" (FALSE — both 14 days after end of tax month); "you can split labour and materials however you want" (FALSE per reg 4(8)(g) — direct-cost evidence required); "the on-boarding checklist is for HR not finance" (FALSE — status-test + MLR + ECCTA are finance / compliance controls); "you must issue a PDS to every subcontractor regardless of status" (FALSE — gross-payment carve-out); "CIS-registered status means a subcontractor is self-employed" (FALSE — Ready Mixed Concrete test sits independently); "all landlords need to register for CIS" (FALSE per §33 do-not-write — pure-residential out of scope); "you don't need CIS300 in a nil month" (FALSE per §33 do-not-write); "CIS deduction is on the full payment" (FALSE per §33 do-not-write — labour element only); "verification is a one-off step" (FALSE per §33 do-not-write — 2-tax-year window); "the £3m deemed-contractor threshold is a single-payment threshold" (FALSE — rolling 12-month average).
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §33 + §33.1-§33.5 CIS architecture full lock; §29 VAT for property cluster; §35.2 employment-vs-self-employment; §27.2 + §27.3 penalties framework; §11.A ECCTA / ID verification overlay; §28 trading-vs-investment; §25.12 LRR for construction on remediation land).
+2. Claim this page in `megawave3_page_tracker.md`.
+3. Read this brief end-to-end.
+4. Fetch + read authority URLs above + WebSearch for current property-business-specific CIS template commentary (note dominant competitor shape is generic construction-industry template-list OR template-thumbnail-behind-lead-form; statute-anchored field-by-field walkthrough + property-business specificity is the differentiator).
+5. Read closest-existing pages: M3-C-B3 C18 `cis-deduction-by-contractors-in-the-uk` (deduction mechanic — companion not cannibaliser); MW2 B4 `beginners-guide-to-cis-verification-in-the-uk` (verification beginner walkthrough — companion); existing site `domestic-reverse-charge-construction-vat-landlords` VAT-side sibling; §33 + §29 + §35.2 + §27.2 + §27.3 + §11.A + §28 + §25.12 cluster pages.
+6. Plan H2 / H3 outline: property-business audience open → the five templates named explicitly (CIS300 / PDS / verification checklist / invoice / on-boarding) → Template 1 CIS300 field-by-field table → Template 2 PDS field-by-field table → Template 3 verification checklist → Template 4 invoice with labour/materials split + reverse-charge statement → Template 5 on-boarding compliance checklist → format question (HMRC CIS Online vs CIS-compliant software vs ERP) → reconciliation discipline (PDS-to-CIS300-to-payment trail) → penalty stack (Sch 55 + Sch 56 + Sch 24) → annual + cycle-end add-ons → close.
+7. Verify factual claims per §16.35.
+8. Fetch hero image.
+9. Write markdown.
+10. Build clean.
+11. Six verifications + do-not-write GREP.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit: `MegaWave 3 RUN C: cis-templates`.
+15-19. Per workflow.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 1 seed committed 2026-05-27 by M3-C-B4 sub-agent. Anchors: §33 + §33.1-§33.5 (CIS architecture — full lock at MW2 Stage 1b sign-off 2026-05-27); §29 (VAT for property — cross-reference for invoice-template reverse-charge field); §35.2 (Ready Mixed Concrete employment-vs-self-employment cross-reference for on-boarding status-test); §27.2 + §27.3 (Sch 55 / Sch 56 / Sch 24 penalties framework — primary protective layer the templates address); §11.A (ECCTA / ID verification overlay for on-boarding); §28 (trading-vs-investment — for property developers trade-side framing); §25.12 (LRR — where construction is on remediation land). No new HP lock — §33 cluster fully pre-locked. Statute-anchored five-template framing is the differentiator — page is the operational-template walkthrough page anchored to the precise statutory provisions that govern each template (SI 2005/2045 reg 4(1)-(7) for CIS300, reg 4(8) for PDS verbatim-verified at write 2026-05-27, FA 2004 s.69 for verification, s.61(2) for labour/materials split, Ready Mixed Concrete 1968 for on-boarding status). Companion pages: M3-C-B3 C18 (deduction mechanic) + MW2 B4 (verification process beginner walkthrough). All three anchored to §33; complementary not cannibalising — C18 is the deduction-mechanic, B4 is the verification-process beginner page, this page (C19) is the templates-and-field-by-field walkthrough page. Counter-pattern to avoid: generic construction-industry template-listing shape + all five do-not-write items specific to template pages ("use this template and you are compliant" / "PDS is optional" / "PDS deadline different from CIS300" / "materials cost arbitrarily apportioned" / "on-boarding checklist is HR not finance") + the five §33 do-not-write items universally. Stage 2 verifies (a) HMRC CIS Online URL + CIS300 + PDS prescribed-format references; (b) SI 2019/892 reverse-charge consolidated text; (c) SI 2005/2045 reg 9 direction wording; (d) ECCTA ID verification commencement state; (e) any 2025-2026 HMRC guidance updates on the materials-line definition + reg 4(8) intra-group materials supply at write per §16.27 + §16.35.]
+[RUN session records work here at write time. **Stage 2 verification notes (2026-05-27):** Anchors: §33 + §33.1-§33.5 (CIS architecture — full lock at MW2 Stage 1b sign-off 2026-05-27); §29 (VAT for property — cross-reference for invoice-template reverse-charge field); §35.2 (Ready Mixed Concrete employment-vs-self-employment — cross-reference for on-boarding status-test); §27.2 + §27.3 (Sch 55 / Sch 56 / Sch 24 penalties framework — primary protective layer); §11.A (ECCTA / ID verification overlay for on-boarding); §28 (trading-vs-investment — for property developers trade-side framing); §25.12 (LRR — where construction is on remediation land). No new HP lock — §33 cluster fully pre-locked. Statute-anchored five-template framing + property-business specificity is the differentiator. Companion pages: M3-C-B3 C18 (deduction mechanic) + MW2 B4 (verification beginner walkthrough). All three anchored to §33; complementary not cannibalising. Counter-pattern to avoid: generic construction-industry template-listing shape + accountancy-firm-marketing template-thumbnail-behind-lead-form shape + all five do-not-write items specific to template pages + the five §33 do-not-write items universally. Stage 2 verifies at write per §16.35: (a) HMRC CIS Online URL + CIS300 + PDS prescribed-format references; (b) SI 2019/892 reverse-charge consolidated text + any post-2026 amendments; (c) SI 2005/2045 reg 9 direction wording for under-deduction relief; (d) ECCTA / Companies House ID verification commencement state for on-boarding template overlay; (e) any 2025-2026 HMRC guidance updates on materials-line definition + reg 4(8) intra-group materials supply.]
+
+---
+
+## Stage 1 seed work log
+
+- **Stage 1 author:** MW3 Stage 1 Sub-Agent C on 2026-05-27.
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent C (batch M3-C-B4) on 2026-05-27.
+- **Cluster anchor:** §33 (CIS architecture full lock at MW2 Stage 1b sign-off 2026-05-27); §33.1 (in-scope categorisation); §33.2 (verification process); §33.3 (withholding rates + labour-only deduction base); §33.4 (returns + penalties); §33.5 (VAT domestic reverse charge sibling); §29 (VAT for property — cross-reference); §35.2 (Ready Mixed Concrete employment-vs-self-employment cross-reference); §27.2 + §27.3 (penalties framework cross-reference); §11.A (ECCTA / ID verification overlay); §28 (trading-vs-investment — for developer-vs-landlord boundary); §25.12 (LRR — for construction on remediation land).
+- **HP-lock alignment:** §33 cluster fully pre-locked at MW2 Stage 1b sign-off 2026-05-27. No new HP lock raised at Stage 1 or Stage 2.
+- **§16.36 statutory-citation cross-check (Stage 2):** FA 2004 ss.61(2) + s.64 + s.66 + s.69 + s.70 + SI 2005/2045 reg 4(1)-(9) + reg 6 + reg 9 + FA 2021 deemed-contractor threshold reform (£1m → £3m) + FA 2009 Sch 55 + Sch 56 + FA 2007 Sch 24 + SI 2019/892 + VATA 1994 s.55A + MLR 2017 + ECCTA 2023 all confirmed against §33 cluster full lock + §27.2/27.3 + §29 + §35.2 + §11.A. SI 2005/2045 reg 4(1) + reg 4(2) (14-day CIS300 deadline) + reg 4(8) (PDS prescribed contents + 14-day deadline + reg 4(9) electronic delivery permission) verbatim verified at https://www.legislation.gov.uk/uksi/2005/2045/regulation/4 on 2026-05-27 at seed time. FA 2004 s.70 (periodic returns by contractors with nil-return obligation under s.70(1)(d)) verbatim verified at https://www.legislation.gov.uk/ukpga/2004/12/section/70 on 2026-05-27 at seed time. *Ready Mixed Concrete* [1968] 2 QB 497 confirmed against §35.2 lock.
+- **§16.31 URL verification (Stage 2):** legislation.gov.uk anchors all confirmed live at seed time; HMRC CISR (CISR40000+, CISR45000+, CISR60000+) confirmed live; HMRC gov.uk CIS collection + contractor obligations + VAT Notice 735 confirmed live; BAILII Ready Mixed Concrete URL confirmed at seed time. Competitor list deferred to RUN-time WebSearch with property-business-specific filter (to differentiate against generic construction-trade template-list + accountancy-firm-marketing template-thumbnail-behind-lead-form shapes).
+- **Cannibalisation reasoning:** M3-C-B3 C18 `cis-deduction-by-contractors-in-the-uk` is the primary sibling (deduction-mechanic — COMPLEMENTARY not cannibalising; this page is the templates-and-field-by-field walkthrough page). MW2 B4 `beginners-guide-to-cis-verification-in-the-uk` is the second sibling (verification-process beginner walkthrough — COMPLEMENTARY; this page references the verification process but the operative subject is the verification CHECKLIST template + the verification-reference field on the CIS300 + PDS). Existing site `domestic-reverse-charge-construction-vat-landlords` is the VAT-side sibling (forward-link target). No existing site CIS template page at seed time. Statute-anchored five-template framing + property-business specificity is the differentiator. RUN session re-runs cannib check at brief gate.
+- **Anti-templating watchpoints for RUN session:** (a) property-business audience open (NOT generic "what CIS templates do I need"); (b) the five-template framing is the page's structural skeleton — surface clearly from the opening + use Example 1 (CIS300) + Example 2 (PDS) + Example 3 (verification) + Example 4 (invoice) + Example 5 (on-boarding) as the per-template field-by-field walkthroughs; (c) structured tables for the field-by-field walkthroughs are LOAD-BEARING — sessions must NOT collapse to prose for the per-template field lists; (d) the s.61(2) labour-only deduction base + the reg 4(8)(g) materials-cost definition are the operational traps — surface clearly with Example 4; (e) Ready Mixed Concrete employment-status risk is the most common practitioner blind-spot on the on-boarding template — surface clearly with Example 5; (f) all five template-specific do-not-write items + the five §33 do-not-write items are BANNED framings — RUN session grep enforces; (g) cluster-label alignment confirmed (CIS templates in property context = `property-types-and-specialist-tax`, consistent with C18 sibling).
