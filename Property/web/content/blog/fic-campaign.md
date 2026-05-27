@@ -116,10 +116,10 @@ editorialNote: "MW2 Bucket B B16: HMRC-side narrative on the April 2019 FIC Unit
 <p>The challenge framework draws on the established judicial line:</p>
 
 <ul>
-<li><em>WT Ramsay Ltd v IRC</em> [1982] AC 300 — the pre-ordained-arrangement principle.</li>
-<li><em>Furniss v Dawson</em> [1984] AC 474 — extending Ramsay to multi-step arrangements.</li>
-<li><em>MacNiven v Westmoreland</em> [2001] UKHL 6 — the commercial-versus-juristic concept distinction.</li>
-<li><em>Tower MCashback v HMRC</em> [2011] UKSC 19 and <em>UBS AG v HMRC</em> [2016] UKSC 13 — refining the modern judicial approach.</li>
+<li><em>WT Ramsay Ltd v IRC</em> [1982] AC 300, the pre-ordained-arrangement principle.</li>
+<li><em>Furniss v Dawson</em> [1984] AC 474, extending Ramsay to multi-step arrangements.</li>
+<li><em>MacNiven v Westmoreland</em> [2001] UKHL 6, the commercial-versus-juristic concept distinction.</li>
+<li><em>Tower MCashback v HMRC</em> [2011] UKSC 19 and <em>UBS AG v HMRC</em> [2016] UKSC 13, refining the modern judicial approach.</li>
 </ul>
 
 <p>The statutory General Anti-Abuse Rule at FA 2013 Part 5 (ss.206-215 plus Schedule 43) provides the formal anti-abuse procedure where the Ramsay judicial principle alone is insufficient. The GAAR procedure carries its own formal counteraction-notice mechanism and an independent Advisory Panel.</p>

@@ -201,7 +201,7 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <p>BPR can apply to FICs that hold genuinely trading businesses (an active hotel with substantial service offerings, a property development business with continuous building activity for resale), but the bar is high and HMRC scrutiny is intense.</p>
 
-<p>From April 2026, even where BPR does apply, the new £1 million combined BPR / APR cap restricts the relief to £1m at 100% with the excess relieved at 50%. The cap reduces the BPR benefit further on substantial trading businesses.</p>
+<p>From April 2026, even where BPR does apply, the new £2.5 million combined BPR / APR allowance under IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4 restricts the 100% relief to £2.5m of combined qualifying value per estate, with the excess relieved at 50%. The cap reduces the BPR benefit further on substantial trading businesses. The GOV.UK announcement-stage summary page still cites the stale £1m headline figure from 30 October 2024; the enacted FA 2026 quantum verified against legislation.gov.uk is £2.5 million.</p>
 
 <h3>Practical IHT Outcome on Death</h3>
 

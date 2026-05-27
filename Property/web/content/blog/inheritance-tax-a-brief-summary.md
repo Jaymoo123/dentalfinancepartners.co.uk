@@ -6,11 +6,11 @@ date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Inheritance Tax: A Brief Summary for UK Property Owners"
-metaDescription: "Brief IHT orientation: 40% rate, £325k NRB, £175k RNRB, spouse exemption, 7-year rule, GROB, April 2026 BPR/APR cap, April 2027 pensions reform."
+metaDescription: "Brief IHT orientation: 40% rate, £325k NRB, £175k RNRB, spouse exemption, 7-year rule, GROB, April 2026 BPR/APR £2.5m cap, April 2027 pensions reform."
 altText: "UK property owner reviewing inheritance tax orientation pack with nil rate band stack, residence nil rate band, taper relief grid and reform timeline"
 image: ""
 h1: "Inheritance Tax: A Brief Summary for UK Property Owners"
-summary: "Inheritance tax is a 40% charge on the estate above £325,000 (nil rate band) plus £175,000 (residence nil rate band where the home passes to direct descendants), both frozen until 5 April 2031. Married couples have £1 million combined where allowances transfer. Lifetime gifts to individuals (PETs) become exempt after seven years with taper relief for years three to seven. Spouse exemption is unlimited where both are UK long-term resident. April 2026 caps agricultural and business property relief at £1m combined; April 2027 brings unused pensions into the estate. This page is the deliberately-brief orientation that routes you to the operational deeps for each rule."
+summary: "Inheritance tax is a 40% charge on the estate above £325,000 (nil rate band) plus £175,000 (residence nil rate band where the home passes to direct descendants), both frozen until 5 April 2031. Married couples have £1 million combined where allowances transfer. Lifetime gifts to individuals (PETs) become exempt after seven years with taper relief for years three to seven. Spouse exemption is unlimited where both are UK long-term resident. April 2026 caps agricultural and business property relief at £2.5m combined (per IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4); April 2027 brings unused pensions into the estate. This page is the deliberately-brief orientation that routes you to the operational deeps for each rule."
 schema: ""
 faqs:
   - question: "What is inheritance tax?"
@@ -26,7 +26,7 @@ faqs:
   - question: "What is the residence nil rate band and when does it apply?"
     answer: "The RNRB gives an additional £175,000 nil rate band per individual where the deceased's home passes to direct lineal descendants (children, step-children, adopted, foster, grandchildren; nieces, nephews and siblings do not qualify). The RNRB tapers at £1 per £2 of net estate above £2,000,000, fully extinguished at £2,350,000 single (or £2,700,000 with full transferable RNRB). Most middle-income property owners receive the full RNRB; very-large-estate landlords lose it to the taper."
   - question: "What is changing on 6 April 2026?"
-    answer: "The combined cap on agricultural property relief and business property relief at £1,000,000 per estate. Above the cap, relief drops from 100% to 50%, producing an effective IHT rate of 20% on the above-cap slice. Lifetime gifts made on or after 30 October 2024 are caught if the donor dies on or after 6 April 2026 within seven years (anti-forestalling). Trusts settled on or after 30 October 2024 by the same settlor share a single £1m allowance. See our April 2026 BPR and APR cap page for the reform mechanics deep."
+    answer: "The combined cap on agricultural property relief and business property relief at £2,500,000 per estate (IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4). Note that the GOV.UK announcement-stage summary page still cites the £1m headline figure from 30 October 2024; the enacted FA 2026 quantum verified against legislation.gov.uk is £2.5 million. Above the cap, relief drops from 100% to 50%, producing an effective IHT rate of 20% on the above-cap slice. Lifetime gifts made on or after 30 October 2024 are caught if the donor dies on or after 6 April 2026 within seven years (anti-forestalling). Trusts settled on or after 30 October 2024 by the same settlor share a single allowance. See our April 2026 BPR and APR cap page for the reform mechanics deep."
   - question: "What is changing on 6 April 2027?"
     answer: "Unused defined-contribution pension funds and unused defined-benefit lump-sum death benefits will be brought into the deceased's estate for IHT from 6 April 2027. Personal representatives (not pension scheme administrators) will report and pay. Death-in-service benefits are excluded from the estate IHT charge. For middle-income landlords with a £100k-£500k DC pension pot, this is the most material 2027 reform impact; pension assets historically outside IHT will now sit alongside property and other assets in the estate calculation."
   - question: "Do buy-to-let portfolios qualify for business property relief?"
@@ -107,16 +107,16 @@ faqs:
 <p>Two reliefs reduce the chargeable value of qualifying property:</p>
 
 <ul>
-<li><strong>Agricultural Property Relief (APR), IHTA 1984 ss.115-124C.</strong> 100% relief below the new £1m combined cap; 50% above. Effective 6 April 2026.</li>
-<li><strong>Business Property Relief (BPR), IHTA 1984 ss.103-114.</strong> 100% relief below the £1m combined cap; 50% above (plus a separate 50% AIM sub-tier outside the cap). Effective 6 April 2026.</li>
+<li><strong>Agricultural Property Relief (APR), IHTA 1984 ss.115-124C.</strong> 100% relief below the new £2.5m combined cap (IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4); 50% above. Effective 6 April 2026.</li>
+<li><strong>Business Property Relief (BPR), IHTA 1984 ss.103-114.</strong> 100% relief below the £2.5m combined cap; 50% above (plus a separate 50% AIM sub-tier outside the cap). Effective 6 April 2026.</li>
 </ul>
 
-<p>The £1m cap is combined across APR and BPR; a mixed estate cannot stack £1m APR on top of £1m BPR.</p>
+<p>Note: the GOV.UK announcement-stage summary page still cites the £1m headline figure announced 30 October 2024; the enacted FA 2026 figure verified against legislation.gov.uk is £2.5 million. The £2.5m cap is combined across APR and BPR; a mixed estate cannot stack £2.5m APR on top of £2.5m BPR.</p>
 
 <p>The Pawson investment line: standard BTL does NOT qualify for BPR. <em>Pawson v HMRC</em> [2013] UKUT 050 (TCC) confirmed that passive rent collection from residential lettings is "mainly investment" and fails BPR. HMOs also fail. Property developers with genuine trading activity qualify on the trading element. Serviced-accommodation may qualify where active services are substantial; the bar is high.</p>
 
 <aside>
-<p>If your portfolio includes any agricultural or commercial element, the £1m cap from 6 April 2026 matters.</p>
+<p>If your portfolio includes any agricultural or commercial element, the £2.5m cap from 6 April 2026 matters.</p>
 <p>For the reform mechanics deep, see our <a href="/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact">April 2026 BPR and APR cap property impact</a> page. For the market commentary on whether the cap is driving farmland sales, see <a href="/blog/landlord-tax-essentials/farmland-supply-value-drops-is-iht-reform-to-blame">farmland supply value drops</a>. Property Tax Partners runs the APR / BPR estate review for mixed-asset clients. Use the form at the foot of the page to get in touch.</p>
 </aside>
 
@@ -177,8 +177,8 @@ faqs:
 
 <h2>The bigger picture</h2>
 
-<p>Inheritance tax is one tax with three reform fronts active in the 2024-2027 window: the £1m APR/BPR cap from 6 April 2026; the pensions-in-IHT reform from 6 April 2027; the LTR test replacing domicile from 6 April 2025. Each reform changes one piece of the architecture without changing the overall framework. The headline rate stays at 40%; the NRB stays at £325k; the RNRB stays at £175k; the seven-year PET rule survives; the spouse exemption survives.</p>
+<p>Inheritance tax is one tax with three reform fronts active in the 2024-2027 window: the £2.5m APR/BPR cap from 6 April 2026 (IHTA 1984 s.124D); the pensions-in-IHT reform from 6 April 2027; the LTR test replacing domicile from 6 April 2025. Each reform changes one piece of the architecture without changing the overall framework. The headline rate stays at 40%; the NRB stays at £325k; the RNRB stays at £175k; the seven-year PET rule survives; the spouse exemption survives.</p>
 
-<p>For most property owners reading this page, the practical implications come down to four questions. What is my net estate today, including any pension pot expected to be subject to the 2027 reform? Are my allowances fully used, fully transferable, or partially wasted by structure? Does my estate include any agricultural or business property that engages the £1m cap from April 2026? Is the family home passing to direct descendants in a way that engages the full RNRB?</p>
+<p>For most property owners reading this page, the practical implications come down to four questions. What is my net estate today, including any pension pot expected to be subject to the 2027 reform? Are my allowances fully used, fully transferable, or partially wasted by structure? Does my estate include any agricultural or business property that engages the £2.5m cap from April 2026? Is the family home passing to direct descendants in a way that engages the full RNRB?</p>
 
 <p>The deeper questions sit in the operational pages cross-linked above. This page is the orientation; the deeps are where the planning happens.</p>

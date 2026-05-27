@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Limited Companies for UK Property Landlords: Complete 2026/27 Guide"
-metaDescription: "Pillar guide to UK property limited companies: CA 2006 framework, eight use-case forks (BTL, HMO, FHL, development, commercial, group, FIC, LLP) and 2026/27 tax."
+metaTitle: "Limited Companies for UK Property Landlords: 2026/27 Guide"
+metaDescription: "Pillar guide to UK property limited companies: CA 2006 framework, eight use-case forks (BTL, HMO, FHL, development, commercial, group, FIC) and 2026/27 tax."
 altText: "Property landlord reviewing limited company incorporation paperwork and a portfolio summary, illustrating the entity-choice decision between personal ownership and a corporate structure"
 image: "https://images.pexels.com/photos/8961005/pexels-photo-8961005.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

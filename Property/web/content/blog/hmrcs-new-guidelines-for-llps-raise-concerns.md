@@ -48,7 +48,7 @@ dateModified: "2026-05-27"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
 reviewedAt: "2026-05-27"
-editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest [2024] UKSC 33 (October 2024) and HMRC's updated PM250000+ Partnership Manual guidance. Three-Condition framework with corrected Condition C direction ('less than 25% capital IN the regime, 25% or more OUT' — commonly inverted). Condition C surfaced as operative safe harbour for property-LLP members; s.863G round-trip-loan trap explicit. HMRC PM250000+ verified as correct entry point (NOT PM276000, which is CIS guidance per F-9 drift catch). Cost computation uses FA 2026 secondary Class 1 NIC at 15%."
+editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest [2024] UKSC 33 (October 2024) and HMRC's updated PM250000+ Partnership Manual guidance. Three-Condition framework with corrected Condition C direction ('less than 25% capital IN the regime, 25% or more OUT', commonly inverted). Condition C surfaced as operative safe harbour for property-LLP members; s.863G round-trip-loan trap explicit. HMRC PM250000+ verified as correct entry point (NOT PM276000, which is CIS guidance per F-9 drift catch). Cost computation uses FA 2026 secondary Class 1 NIC at 15%."
 ---
 
 <p>October 2024 brought the most significant change in seven years to how HMRC reads the salaried member rules for limited liability partnerships. The Supreme Court in <em>BlueCrest Capital Management (UK) LLP v HMRC</em> [2024] UKSC 33 narrowed the practical scope of the Condition B "significant influence" safe harbour in the ITA 2007 s.863A to s.863G regime. HMRC's updated Partnership Manual at PM250000+ layers the post-BlueCrest reading through the PM256000 series. Sector bodies (CIOT, ICAEW, ATT) have raised concerns that the narrower reading catches legitimate operational LLP architecture beyond what FA 2014 originally targeted.</p>
@@ -163,7 +163,7 @@ editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest
 
 <h2>Worked examples</h2>
 
-<h3>Example 1: Family property LLP — member-by-member status analysis</h3>
+<h3>Example 1: Family property LLP, member-by-member status analysis</h3>
 
 <p>Kapoor Family LLP holds 12 BTL properties. Four members:</p>
 
@@ -199,7 +199,7 @@ editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest
 
 <p>The operational discipline: member-by-member documentation of capital balance at year-end and disguised-salary calculation each year. Capital balances drift over time; the test must be re-run annually. For property LLPs where members are at risk on Condition B (post-BlueCrest narrowing), Condition C is the practical fix that is easier to evidence.</p>
 
-<h3>Example 4: s.863G anti-avoidance — contrived Condition C capital contribution</h3>
+<h3>Example 4: s.863G anti-avoidance, contrived Condition C capital contribution</h3>
 
 <p>Singh Property LLP has 4 members. Member 4 has £200 nominal capital plus £40,000 disguised salary, fails Condition C, and is at risk of salaried-member status. An adviser recommends:</p>
 
@@ -212,7 +212,7 @@ editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest
 
 <p>s.863G anti-avoidance result: the arrangement is a round-trip. The capital is not at Member 4's real economic risk (the LLP funded the contribution); the loan-and-contribution sequence is an arrangement one of the main purposes of which is to secure that the salaried-member rules do not apply. HMRC disregards the arrangement under s.863G; Condition C treated as not met; salaried-member status crystallises with retrospective cost. HMRC's PM259300 (Financing arrangements) is the operative guidance and walks through precisely this pattern.</p>
 
-<h3>Example 5: BlueCrest narrowing — matrix-silo'd operational member</h3>
+<h3>Example 5: BlueCrest narrowing, matrix-silo'd operational member</h3>
 
 <p>Verma Property LLP is a multi-strand operator with 6 members each managing a distinct geographic region (London / SE / SW / Midlands / North / Wales). Each member runs their region operationally: hires, fires, lender relationships in-region, capex decisions in-region. No member has authority across regions. The partnership board (all 6 members) jointly decides LLP-wide strategy at quarterly meetings.</p>
 

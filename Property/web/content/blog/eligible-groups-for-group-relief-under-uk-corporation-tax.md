@@ -6,7 +6,7 @@ date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "CT Group Relief Eligibility: 75% Test + Sch 18 Overlay Guide"
-metaDescription: "Which companies qualify as one group for CTA 2010 Part 5 corporation tax group relief? s.131 + s.152 + s.1154 three-layer test, Sch 18 overlay, consortium relief."
+metaDescription: "Which companies qualify as one group for CTA 2010 Part 5 group relief: s.131 + s.152 + s.1154 three-layer test, Sch 18 overlay, consortium relief."
 altText: "Corporate finance director reviewing a group structure diagram with subsidiary holdings, illustrating the 75% subsidiary test for corporation tax group relief eligibility"
 image: "https://images.pexels.com/photos/7567444/pexels-photo-7567444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

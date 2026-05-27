@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Hybrid LLP: ITA 2007 s.850C Mixed-Membership Trap for Landlords"
+metaTitle: "Hybrid LLP: ITA 2007 s.850C Mixed-Membership Trap"
 metaDescription: "Hybrid LLPs combine individuals + corporate members. ITA 2007 ss.850C-E mixed-membership rules reallocate excess profits where power to enjoy exists."
 altText: "Property landlord and accountant reviewing a hybrid LLP structure diagram showing individual and corporate members on either side of an LLP, with anti-avoidance markers"
 image: "https://images.pexels.com/photos/7821485/pexels-photo-7821485.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

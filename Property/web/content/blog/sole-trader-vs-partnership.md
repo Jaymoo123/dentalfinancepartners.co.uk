@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Sole Trader vs Partnership 2026/27: UK Property Landlord Choice"
+metaTitle: "Sole Trader vs Partnership 2026/27: UK Property Choice"
 metaDescription: "Sole trader vs partnership for UK property: tax position, liability, SA800 per-partner penalty, CGT on partner introduction, Form 17 alternative."
 altText: "Two clipboards on a desk with one personal SA100 return and one SA800 partnership return alongside property letting records, illustrating the sole-trader-vs-partnership comparison"
 image: "https://images.pexels.com/photos/7681079/pexels-photo-7681079.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

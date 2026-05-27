@@ -183,7 +183,7 @@ faqs:
 
 <h3>Lever 6: BPR and APR portfolio restructuring</h3>
 
-<p>Business Property Relief and Agricultural Property Relief continue to apply to qualifying assets, but the FA 2025/2026 combined £1m cap on 100% relief (with 50% relief above the cap, plus the s.124D anti-fragmentation framework) materially constrains the lever from 6 April 2026 onwards. BPR is not available on pure investment BTL portfolios per <em>Pawson v HMRC</em> [2013] UKUT 50 (TCC). Where a landlord has a genuine trading business alongside the rental portfolio (property development, qualifying FHL on a trading-line-passing basis, or a separate trading company), BPR planning may have a role. See our <a href="/blog/landlord-tax-essentials/maximising-business-relief-to-reduce-inheritance-tax">BPR planning pillar</a> for the detail.</p>
+<p>Business Property Relief and Agricultural Property Relief continue to apply to qualifying assets, but the FA 2026 combined £2.5m cap on 100% relief under IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4 (with 50% relief above the cap, plus the trust anti-fragmentation framework) materially constrains the lever from 6 April 2026 onwards. BPR is not available on pure investment BTL portfolios per <em>Pawson v HMRC</em> [2013] UKUT 50 (TCC). Where a landlord has a genuine trading business alongside the rental portfolio (property development, qualifying FHL on a trading-line-passing basis, or a separate trading company), BPR planning may have a role. See our <a href="/blog/landlord-tax-essentials/maximising-business-relief-to-reduce-inheritance-tax">BPR planning pillar</a> for the detail.</p>
 
 <h3>Lever 7: settled-property routes (trusts)</h3>
 
@@ -207,7 +207,7 @@ faqs:
 <li><strong>The freeze does not change the £3,000 annual gifting exemption (s.19), the £250 small gifts exemption (s.20), the normal-expenditure-out-of-income exemption (s.21), or the marriage gifts (s.22).</strong> The exemptions remain available and remain useful for high-income donors who can document a habitual gifting pattern.</li>
 <li><strong>The freeze does not change the spouse exemption.</strong> Inter-spouse transfers under s.18 remain unlimited (subject to the post-FA-2025 long-term-residence test in cross-border cases).</li>
 <li><strong>The freeze does not change the CGT uplift on death.</strong> TCGA 1992 s.62 continues to wipe the deceased's accrued gain at probate value. This often weighs against lifetime gifting for appreciated property; the freeze does not alter the trade-off.</li>
-<li><strong>The freeze does not change BPR or APR qualification rules.</strong> The FA 2025/2026 £1m cap on 100% relief is a separate, parallel reform. Both run in tandem.</li>
+<li><strong>The freeze does not change BPR or APR qualification rules.</strong> The FA 2026 £2.5m cap on 100% relief (IHTA 1984 s.124D) is a separate, parallel reform. Both run in tandem.</li>
 </ul>
 
 <p>The freeze is significant but it is one variable in a system of many. Planning that focuses on the freeze in isolation often produces poorly-targeted decisions, particularly around lifetime gifting where the CGT cost can swamp the IHT saving for appreciated property.</p>

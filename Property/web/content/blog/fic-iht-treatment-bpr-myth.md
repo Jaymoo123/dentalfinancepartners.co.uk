@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "FIC IHT Treatment and the BPR Myth: What Actually Applies"
-metaDescription: "Why Business Property Relief does not save a standard property FIC from IHT on death: Pawson v HMRC, investment-vs-trading test, April 2026 £1m cap."
+metaDescription: "Why Business Property Relief does not save a standard property FIC from IHT on death: Pawson v HMRC, investment-vs-trading test, April 2026 £2.5m cap."
 altText: "House key resting on banknotes, representing the intersection of property ownership and inheritance tax planning through a family investment company"
 image: "https://images.pexels.com/photos/29134213/pexels-photo-29134213.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -15,7 +15,7 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/real-estate-investment-with-euro-banknotes-and-key-29134213/
 h1: "FIC IHT Treatment and the BPR Myth: What Actually Saves Inheritance Tax in a Property FIC"
-summary: "Persistent FIC marketing suggests that Business Property Relief eliminates IHT on the founder's death. For a standard property-investment FIC, it does not. Pawson v HMRC settled the position; the April 2026 £1m BPR cap narrows it further. What FICs do save on IHT is real, but it comes from the growth-share architecture and lifetime gifting, not from BPR."
+summary: "Persistent FIC marketing suggests that Business Property Relief eliminates IHT on the founder's death. For a standard property-investment FIC, it does not. Pawson v HMRC settled the position; the April 2026 £2.5m BPR cap under IHTA 1984 s.124D (as inserted by FA 2026 Sch 12 para 4) narrows it further on the small population that does qualify. What FICs do save on IHT is real, but it comes from the growth-share architecture and lifetime gifting, not from BPR."
 schema: ""
 faqs:
   - question: "Does Business Property Relief apply to a Family Investment Company holding residential property?"
@@ -26,8 +26,8 @@ faqs:
     answer: "The case involved a furnished holiday letting business (Pawson) where the deceased owner had been actively involved in marketing, cleaning, providing keys, and other guest-service activities. The First-tier Tribunal held that BPR applied. The Upper Tribunal reversed: the activities were ancillary to the letting itself, and the letting income was investment income. The decision established the high bar for treating a letting business as trading for BPR purposes."
   - question: "Are there any FIC structures that DO qualify for BPR?"
     answer: "Yes, on narrow facts. A company that operates a genuine hotel or aparthotel business with substantial services (managed reception, daily cleaning, breakfast, restaurant, concierge) can qualify. A property development company with continuous building activity for resale (rather than holding for letting) typically qualifies. A property-trading company that buys-and-sells without long-term holdings qualifies. The bar is high and the HMRC enquiry exposure is real."
-  - question: "What is the April 2026 £1 million BPR cap?"
-    answer: "Announced in the Autumn Budget 2024 and effective from 6 April 2026, the combined BPR/APR relief is capped at £1 million of value per estate at 100% relief. Value above £1 million attracts 50% relief instead of 100% (so effectively 20% IHT rather than 0%, against the 40% rate). For a £5 million trading business held by a founder, the pre-2026 IHT was £0 (full BPR); post-2026, the IHT on £4m of excess at the half-rate is £800k."
+  - question: "What is the April 2026 BPR cap?"
+    answer: "Announced in the Autumn Budget 2024 at a £1 million headline and enacted via Finance Act 2026 Schedule 12 paragraph 4 (inserting IHTA 1984 s.124D) at £2.5 million. Effective from 6 April 2026, the combined BPR/APR relief is capped at £2.5 million of value per estate at 100% relief. Value above £2.5 million attracts 50% relief instead of 100% (so effectively 20% IHT rather than 0%, against the 40% rate). Note: the GOV.UK announcement-stage summary still cites the £1m headline figure and was never updated post-enactment; legislation.gov.uk s.124D is the operative source. For a £5 million trading business held by a founder, the pre-2026 IHT was £0 (full BPR); post-2026, £2.5m at 100% and £2.5m at 50% relief produces chargeable value £1.25m at 40% = £500k of IHT."
   - question: "Does the FHL abolition affect the BPR position?"
     answer: "Yes, indirectly. Before April 2025, Furnished Holiday Letting businesses had occasionally been argued to qualify for BPR (although Pawson largely closed that route). After April 2025, with the FHL regime abolished, the argument is essentially closed: former FHL properties are taxed as standard residential lets, and the trading-vs-investment distinction sits firmly on the investment side."
   - question: "What does a property FIC actually save on IHT?"
@@ -43,7 +43,7 @@ faqs:
   - question: "What about gifting to spouse? Does that save IHT?"
     answer: "Yes. Transfers between UK-domiciled spouses or civil partners are exempt from IHT under section 18 IHTA 1984. A founder can gift FIC shares to their spouse without IHT consequence. The spouse then holds the shares with their own nil-rate band available; on the spouse's death, the residue passes to the children using both spouses' nil-rate bands. The two-NRB approach is standard pre-positioning for a couple."
   - question: "Is there ever a case where BPR genuinely helps an FIC?"
-    answer: "Where the FIC holds a genuine trading business (active hotel, property development with continuous building activity, hands-on property trading), BPR can apply. The £1m April 2026 cap restricts the relief to £1m of value at 100%, with the rest at 50%. For a £3m active trading FIC, the post-2026 IHT is £400k (£2m at 20% effective rate), against £1.2m without any BPR. Real but not zero."
+    answer: "Where the FIC holds a genuine trading business (active hotel, property development with continuous building activity, hands-on property trading), BPR can apply. The £2.5m April 2026 cap under IHTA 1984 s.124D restricts the relief to £2.5m of value at 100%, with the rest at 50%. For a £3m active trading FIC, the post-2026 IHT is £100k (£500k above-cap at 20% effective rate), against £1.2m without any BPR. Real and a much smaller bill than the £1m headline figure would have implied."
 dateModified: "2026-05-22"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
@@ -51,7 +51,7 @@ reviewedAt: "2026-05-22"
 editorialNote: "FIC daughter, final Session C Track 1 page. The BPR myth is one of the most persistent misrepresentations in FIC marketing. This page sets out the actual position with Pawson and the April 2026 cap, and identifies what the FIC architecture genuinely does achieve on IHT."
 ---
 
-<p>One of the most persistent claims in FIC marketing material is that Business Property Relief reduces or eliminates the IHT charge on the founder's death. For a standard property-investment FIC, that claim is wrong. Pawson v HMRC [2013] settled the position over a decade ago; the April 2026 £1 million BPR/APR cap has narrowed the relief further for the small population of FICs to which it did apply.</p>
+<p>One of the most persistent claims in FIC marketing material is that Business Property Relief reduces or eliminates the IHT charge on the founder's death. For a standard property-investment FIC, that claim is wrong. Pawson v HMRC [2013] settled the position over a decade ago; the April 2026 £2.5 million BPR/APR cap under IHTA 1984 s.124D (as inserted by FA 2026 Sch 12 para 4) has narrowed the relief further for the small population of FICs to which it did apply.</p>
 
 <p>What FICs do achieve on IHT is real, but the savings come from the structural mechanics of the growth-share architecture and the lifetime gifting of shares, not from BPR. The growth-share class transfers all future capital growth out of the founder's estate from issue; gifts of the founder's freezer shares to children can qualify as Potentially Exempt Transfers, becoming fully exempt seven years after the gift. Together these mechanisms can move most of the underlying wealth out of the founder's estate over a 10 to 20-year horizon, with no reliance on BPR.</p>
 
@@ -61,7 +61,7 @@ editorialNote: "FIC daughter, final Session C Track 1 page. The BPR myth is one 
 
 <p>Business Property Relief sits in sections 103 to 114 IHTA 1984. Where it applies, qualifying business property is reduced in value for IHT purposes by 100% (full relief, no IHT) or 50% (partial relief, IHT at half the standard rate), depending on the type of property.</p>
 
-<p>The qualifying categories that produce 100% relief (subject to the new April 2026 £1m cap):</p>
+<p>The qualifying categories that produce 100% relief (subject to the new April 2026 £2.5m s.124D cap):</p>
 
 <ul>
   <li>An unincorporated business carried on for gain.</li>
@@ -153,9 +153,9 @@ editorialNote: "FIC daughter, final Session C Track 1 page. The BPR myth is one 
 
 <p>The wholly-or-mainly test allows some non-trading activity. A company with 60% of its activity in genuine trading (development for sale) and 40% in investment (rental holding) can still qualify for BPR on the whole. The 50% threshold is the cliff edge; an evenly-split company falls on the wrong side.</p>
 
-<h2>The April 2026 £1m BPR/APR Cap</h2>
+<h2>The April 2026 £2.5m BPR/APR Cap</h2>
 
-<p>The Autumn Budget 2024 announced a fundamental restriction on BPR and APR effective from 6 April 2026. The combined relief is capped at £1 million of value per estate at 100% relief. Value above the £1 million cap attracts 50% relief instead of 100%, so effectively 20% IHT rather than the standard 40% rate.</p>
+<p>Note: the GOV.UK announcement-stage summary page still cites the £1m headline figure announced 30 October 2024; the enacted FA 2026 figure verified against legislation.gov.uk is £2.5 million. The Autumn Budget 2024 announced a fundamental restriction on BPR and APR effective from 6 April 2026 at £1m; the Finance Act 2026 enacted the restriction at £2.5m via <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/124D" rel="nofollow noopener" target="_blank">IHTA 1984 s.124D</a> (inserted by FA 2026 Schedule 12 paragraph 4). The combined relief is capped at £2.5 million of value per estate at 100% relief. Value above the £2.5 million cap attracts 50% relief instead of 100%, so effectively 20% IHT rather than the standard 40% rate.</p>
 
 <h3>The Practical Impact for Trading FICs</h3>
 
@@ -163,14 +163,14 @@ editorialNote: "FIC daughter, final Session C Track 1 page. The BPR myth is one 
 
 <ul>
   <li>Pre-cap (assuming BPR applied at 100%): IHT charge £0.</li>
-  <li>Post-cap: £1m at 100% relief (no IHT), £4m at 50% relief (effective 20% IHT) = £800,000 IHT.</li>
+  <li>Post-cap at the enacted £2.5m s.124D allowance: £2.5m at 100% relief (no IHT), £2.5m at 50% relief (effective 20% IHT) = £500,000 IHT.</li>
 </ul>
 
-<p>The cap is a material change for substantial trading-business holders. It does not affect standard property-investment FICs (which already had no BPR), but it materially narrows the relief for the small population of genuinely-trading FICs.</p>
+<p>The cap is a material change for substantial trading-business holders, though the enacted £2.5m threshold is materially more generous than the £1m headline would have produced. It does not affect standard property-investment FICs (which already had no BPR), but it narrows the relief for the small population of genuinely-trading FICs above the allowance.</p>
 
 <h3>The Combined BPR + APR Limit</h3>
 
-<p>The £1 million cap is shared between BPR and Agricultural Property Relief. Farming families with both farmland (APR) and trading interests (BPR) have to allocate the cap between the two reliefs. For property FICs, APR is rarely relevant; the cap applies entirely against BPR.</p>
+<p>The £2.5 million s.124D cap is shared between BPR and Agricultural Property Relief. Farming families with both farmland (APR) and trading interests (BPR) have to allocate the cap between the two reliefs. For property FICs, APR is rarely relevant; the cap applies entirely against BPR.</p>
 
 <h2>What the FIC Structure Actually Saves on IHT</h2>
 
@@ -243,9 +243,9 @@ editorialNote: "FIC daughter, final Session C Track 1 page. The BPR myth is one 
 
 <p>Where an adviser proposes structural changes to the FIC to "secure BPR", challenge the proposal carefully. For a property-investment FIC, no structural change can secure BPR; the company would have to fundamentally change its activity (eg become a property developer or hotel operator) to meet the trading test. Marketing material that claims otherwise is misleading.</p>
 
-<h3>The £1m Cap Affects the Few FICs That Did Qualify</h3>
+<h3>The £2.5m s.124D Cap Affects the Few FICs That Did Qualify</h3>
 
-<p>Where the FIC holds a genuine trading business that did qualify pre-2026, the April 2026 cap requires reassessment of the IHT planning. Lifetime gifting may need to accelerate; insurance products may become more relevant; trust structures within the FIC's share register may be worth revisiting.</p>
+<p>Where the FIC holds a genuine trading business that did qualify pre-2026, the April 2026 cap requires reassessment of the IHT planning. Lifetime gifting may need to accelerate; insurance products may become more relevant; trust structures within the FIC's share register may be worth revisiting. The enacted £2.5m threshold (not the £1m headline still on the GOV.UK summary) means fewer FICs cross the cap line than the original announcement implied.</p>
 
 <h2>How This Closes the FIC Cluster</h2>
 

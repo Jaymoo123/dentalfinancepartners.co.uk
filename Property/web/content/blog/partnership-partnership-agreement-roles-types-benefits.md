@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Property Partnership Agreement 2026: Roles, Types, PA 1890 s.24"
+metaTitle: "Property Partnership Agreement: Roles, Types, PA 1890 s.24"
 metaDescription: "Property partnership agreement handbook: PA 1890 s.24 defaults to displace, partner roles, partnership types (general, LP, LLP), s.14 holding-out trap."
 altText: "Two property partners signing a written partnership agreement with property accounts on the desk, illustrating the displacement of PA 1890 s.24 defaults"
 image: "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
