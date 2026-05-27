@@ -80,6 +80,38 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
+**Last updated:** 2026-05-27 (afternoon) — **MegaWave 2 CLOSED via rolling architecture.** 60 new pages on main across 3 lanes (Bucket A 20 + Bucket B 20 + Bucket C 20). Topic family: Entity / incorporation / partnerships+LLPs / FICs / Companies House reforms + ECCTA + RoE / IHT + estate planning / trusts + beneficial ownership / joint ownership + Form 17 / payroll + bookkeeping. Build verification PASS on main: `Compiled successfully in 3.6s`; **672 routes prerendered** (was 577 at MW1-close → +60 MW2 blog pages + a handful of category route refreshes). **`main` is at `1ab5607`** post-MW2 close pre close-artifact commit.
+
+**Stage timeline:**
+- Stage 1 (60 seed briefs) + Stage 1b (11 HP-lock extensions §11.B / §11.C / §11.C.X / §11.C.Y / §11.C.Z / §21.8 / §22.21 / §29.12 / §33 / §34 / §35) closed 2026-05-27 ~11:53 BST.
+- Stage 2 (60 brief extensions) closed ~13:57 BST. Wallclock ~1h54.
+- Stage 2b sign-off ~14:18 BST (F-102 §15.4 BPR/APR cap quantum LOCKED at £2.5m per IHTA 1984 s.124D enacted by FA 2026 Sch 12 para 4 — TWELFTH consecutive Bill-vs-enacted-Act drift caught in the program; GOV.UK announcement-stage summary still cites stale £1m). D-20 §21.X unified entity-exit HP-lock candidate DEFERRED to MW3+ (sub-agent's own assessment was "no new lock needed").
+- RUN (60 final blog pages) closed ~16:13 BST. Wallclock ~1h55.
+
+**HP-lock + drift catch summary across MW2:**
+- 11 new HP-locks added at Stage 1b sign-off (covering ECCTA Part 2 LP reforms + partnership statutory architecture + salaried-member regime + mixed-membership rules + LLP accounts/SORP/designated-member + multi-company group operation + RoE trust-disclosure 2025 + VAT artificial separation + CIS property-context + landlord allowable-expenses + home-office CGT-trap + payroll-for-property-businesses framework).
+- 1 HP-lock corrected at Stage 2b (§15.4 quantum £1m → £2.5m per F-102).
+- F-7 / F-8 / F-9 / F-10 / F-11 Stage 2 brief-drift catches all operationalised cleanly into RUN authoring (CTA 2010 ss.464C/D omission held; s.131 vs s.152 three-section composite; HMRC PM250000+/PM210000+/PM213000+ correct anchors; ITTOIA 2005 s.396B vs ITA 2007 s.396B phoenix-TAAR cite-correctness with defensive callouts in A20).
+
+**Rolling-architecture drift bugs encountered (memory entries created/updated):**
+- `_stage2_done.json` marker-infix drift on lane B M2-B-B1 (Stage 2) — one-line rename fix.
+- YAML `.flag` instead of canonical JSON marker on lane C M2-C-B1 (RUN) — manager synthesised canonical JSON.
+- Empty-commit marker (commit message only, no file) on lane B M2-B-B2 + M2-B-B3 (RUN) — manager synthesised canonical JSON twice.
+- Worktree-branch drift (cwd=worktree at RUN by design causing page commits + markers to land on worktree branch not main) — 10× manual `git merge --no-ff property-megawave2-<lane>` workaround per `rolling_arch_drift_bug.md`.
+
+**Held for deploy, not yet pushed to production.** All 60 MW2 pages on main are pending user deploy decision. Per §0 norm: never deploy without explicit user instruction. Manager-side close-out steps (build verify ✓, close artifacts commit, NETNEW update) complete pre-deploy.
+
+**361 net-new pages on main** (W1-7 209 + W8 30 + W9 9 + MW1 53 + MW2 60 — historical totals to be reconciled post-deploy). 209 already in production (deployed 2026-05-26 22:43 BST). 152 pending deploy across MW1 + MW2 + holdovers.
+
+**Back-patch list for post-deploy hygiene sweep (captured during MW2):**
+- F-102 quantum back-patch: Wave 2 A4 + A10 + any earlier IHT-cluster page citing £1m → update to £2.5m s.124D enacted.
+- A19 SSE HIGH CANNIBAL risk: monitored_pages 90d GSC impression watch for cannibalisation vs existing `substantial-shareholding-exemption-property-companies`.
+- D-5 §11.A campaign-page F-12 URL sweep: grep `Property/web/content/blog/` for deprecated `gov.uk/government/news/changes-to-uk-company-law` URL and back-patch to live `changestoukcompanylaw.campaign.gov.uk`.
+- D-24 §21.X unified entity-exit candidate: reconsider at MW3+ Stage 1b if multiple sibling picks need unification.
+- B5 D-X out-of-wave back-patch: `landlord-expenses-allowable-uk-2026` pillar to surface s.224(1) PPR CGT-trap on home-office section.
+
+---
+
 **Last updated:** 2026-05-26 (evening) — **MegaWave 1 CLOSED via rolling architecture.** 52 new pages merged to main (Lane A 20 + Lane B 17 + Lane C 15; B12 dropped to MW2 carryover per F-51 lane-misclustering decision). 17 F-flags raised across Stage 1 / Stage 2 / Stage 2b / RUN; 15 closed in-session, 2 deferred (F-8 RUN per-write live-policy verification embedded in A18; F-10 effectively closed by Stage 2-extended Welsh page already covering Sch 13 post-Feb-2025/2026 amendments). 4 new HP-locks committed: §1.K FTB relief + §30 council-tax framework + §31 lease-extension + §32 CIL framework. §1.J extension applied (case-led sub-lines for s.116(1)(c) easement + PROW; A14 + A9 + A16 case-citation verified). F-52 drift in conductor's own §23.8 caught by Stage 2 sub-agent at write-time (s.41 → s.44 LTTA returns cite); propagated fix to Wave 9 welsh-LTT-MDR page. **301 net-new pages on main** (W1-7 209 + W8 30 + W9 9 + MW1 53; subtract 1 from MW1 for B12 carryover net 52, but rolling-arch also brought 1 new Stage 2 extension to A1 brief). MW1 + W4-W9 (~118 pages) all held for deploy pending user decision. Rolling architecture validated end-to-end: launcher pattern locked at `852cc0e`; batch-detect phase-aware fix at `8aae30f`; case-citation Agent dispatch pattern proven for §16-discipline; sub-agent commit-as-marker convention identified as gap (orchestrator polls for JSON files; manually synthesised markers to advance batches). Stage 2 + RUN markers needed manual synthesis 3× per lane → backlog item for batch-detect.ps1 / template harmonisation.
 
 **`main` is at `100395a`** post-MW1-close. MW1 close chain: `eb50951` (F-52 §23.8 close in HP file) / `b141378` (Stage 2b HP-lock drafts) / `6a09540` (F-2 + F-4 + F-6 + F-9 closure entries in flags file) / `1119910` (Stage 1b HP-locks signed off: §1.K + §30 + §31) / `0d956ba` (Lane A metaDesc trims worktree) / `cef8b95` (Lane C reviewer credentials backpatch worktree) / `88d22e3` (lane B merge) / `967acbe` (lane A merge) / `0c30917` (lane C merge) / `100395a` (F-52 propagation to Wave 9 welsh page). Build verification PASS on main: `Compiled successfully in 4.5s`; 577 blog pages prerendered; all 9 category routes + middleware clean.
