@@ -949,6 +949,47 @@ Calendar-quarter elections are available from 6 April 2026 (HMRC will allow file
 - "ASA authorisations transfer to a new agent automatically" (false; client must re-authorise).
 - "Foreign property income is excluded from MTD" (false; included where reported on UK return).
 
+### 19.18 SI 2021/1076 → SI 2026/336 migration (MW3 Stage 1b F-3, locked 2026-05-27)
+
+**Critical drift caught at MW3 A19 §16.35 per-write verification.** The Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076) — the operative MTD ITSA instrument anchoring all §19 architecture from Wave 3 forward — was **REVOKED on 1 April 2026** by the Income Tax (Digital Obligations) Regulations 2026 (SI 2026/336). Verified against legislation.gov.uk 2026-05-27 (the page header reads "The Income Tax (Digital Requirements) Regulations 2021 (revoked)" with the textual amendment note: "Regulations revoked (1.4.2026) by The Income Tax (Digital Obligations) Regulations 2026 (S.I. 2026/336)").
+
+The substantive mechanics carry over (qualifying-income, threshold tiers, exclusion notices, exit rule, voluntary opt-in, non-resident company exemption, trustee exemption are all preserved) but regulation numbers have migrated. Sub-agent verified the following migrations against legislation.gov.uk 2026-05-27 (additional rows marked "verify Stage 2" require per-write re-fetch):
+
+| Topic | OLD (SI 2021/1076, revoked) | NEW (SI 2026/336, in force) |
+|---|---|---|
+| Qualifying income | reg 20 | **reg 25** |
+| Qualifying amount / threshold | (implicit) | **reg 27** |
+| Exclusion notice / digital-exclusion exemption | reg 20 | **reg 18** |
+| Meaning of "excluded" (digitally-excluded or s.46-identity-verification carve-out) | (implicit) | **reg 20** |
+| Three-tax-year income-exemption exit rule | reg 22 | **reg 24** |
+| Election not to be exempt (voluntary opt-in) | reg 23 | (verify Stage 2) |
+| Non-resident company exemption | reg 24 | (verify Stage 2) |
+| Trustee exemption | reg 25 | (verify Stage 2) |
+
+**Sessions writing MTD ITSA pages after 2026-05-27 MUST cite SI 2026/336 with the new regulation numbers (or the verified migration table where the new number is yet to be confirmed by per-write fetch).** SI 2021/1076 references remain appropriate only in **historical context** (when describing the original 2021 framework and the 2026 migration) or in **migration discussion** where both old and new are explicitly named. Any page citing SI 2021/1076 as the live operative instrument is now stale — back-patch required.
+
+**Back-patch sweep scope (Stage 1b deferred to post-Stage-1b commit):**
+- All MW3 Bucket A MTD seeds shipped pre-A19: A6 / A7 / A11 / A16 / A18 — sub-agent at MW3 A19 flagged A18 as "wrong on two axes" (citing reg 20 as qualifying-income, which is now exclusion-notice; correct is reg 25 of new SI). Each requires per-pick judgment.
+- Wave 3 + Wave 4 MTD content on `Property/web/content/blog/` citing SI 2021/1076: mechanical text-swap candidates per §16.43. Any reg-20 references need judgment per the two-axis ambiguity for that specific regulation number.
+
+**Source authority:** legislation.gov.uk SI 2026/336 (in force from 1 April 2026); the SI 2021/1076 page now shows revocation note. Sub-agent at MW3 A19 verbatim verified at write time 2026-05-27. **Thirteenth Bill-vs-enacted-Act drift in the program** (F-6 §19.7, F-11 §20.7, F-12/F-13 §20.10/§20.5, F-18 §15.4 structural, F-9 §21.1 s.455 35.75%, F-3 NRB 2031, F-19/F-20 dividend rate stack, F-102 §15.4 quantum, now F-3 §19 SI migration). The §16.22 / §16.27 / §16.30 / §16.35 pattern continues to earn its keep.
+
+### 19.19 Points-based late submission regime (MW3 Stage 1b watchpoint, locked 2026-05-27)
+
+**Watchpoint surfaced at MW3 A20 per-write verification (§16.35).** The points-based late-submission regime sits at **FA 2021 Schedule 24** (NOT to be confused with FA 2007 Schedule 24, the long-standing inaccuracy regime — naming collision flagged at F-3 BRIEF_DRIFT, Bucket A). Points reset for quarterly filers requires a **dual-condition test** per HMRC's published policy paper: (a) 12-month compliance period AND (b) all submissions due within the preceding 24 months have been made. §19.7 in its earlier framing surfaced only the 24-month limb; sessions citing the reset rule must surface both limbs explicitly. Penalty structure: 4-point threshold for quarterly filers → £200 fixed penalty per failure after threshold reached; daily late-payment penalty escalation (3% / 3% / 10%) preserved per §19.7 F-6 Wave 4 lock.
+
+### 19.20 CT late-filing flat-rate penalty figures (MW3 Stage 1b F-1, locked 2026-05-27)
+
+**Verified verbatim at MW3 A5 + legislation.gov.uk 2026-05-27 against FA 1998 Schedule 18 paragraph 17:**
+
+- **Para 17(2)(a):** £200 if the company tax return is delivered within three months after the filing date.
+- **Para 17(2)(b):** £400 in any other case.
+- **Para 17(3):** Increased to £1,000 / £2,000 for a third successive failure (where failures relate to three successive accounting periods).
+
+These figures supersede the widely-cited historical £100 / £200 / £500 / £1,000 figures that may appear in pre-existing site content (older guides on CT penalties, accountant-services pillar pages, or earlier Stage-2 briefs). Sessions writing any CT late-filing penalty content **MUST cite the verified £200 / £400 / £1,000 / £2,000 figures, not the historical numbers**.
+
+**Back-patch sweep scope (Stage 1b deferred):** any pre-existing page citing flat-rate CT late-filing penalty figures at the historical £100/£200/£500/£1,000 levels. Pattern is mechanical text swap per §16.43.
+
 ---
 
 ## 20. Renters' Rights Act 2025 — Wave 3 extension (locked, 2026-05-22)
@@ -3743,3 +3784,136 @@ Locked by Stage 1b conductor session on 2026-05-27 after MW2 Stage 1 closed at 6
 **A19 SSE redirect-vs-proceed decision (DEFERRED).** A19 `substantial-shareholding-exemption-sse` flagged HIGH CANNIBAL risk with shipped `substantial-shareholding-exemption-property-companies` (2026-05-22). Carved by sub-agent as "deeper statutory-mechanics reference layer" but the differentiation may not be operationally sustainable. **Decision deferred to Stage 2 dispatch:** if Stage 2 sub-agent confirms the deeper-layer carve survives full statutory expansion, proceed; if not, REDIRECT the A19 slug to the existing comprehensive page (the slug retains generic-search-term capture funnelling).
 
 **Stage 2 unlocked.** Sessions can now dispatch Stage 2 brief extensions for all 60 MW2 picks via `./scripts/rolling-orchestrator.ps1 -Wave 2 -Phase stage2 -Lane {a,b,c}`. Stage 2 writers thread to the locks above where applicable; per-write §16.35 statute verification still required for all figures (rates, thresholds, deadlines change by Budget).
+
+---
+
+## 27.10 Disguised remuneration loan charge + settlement framework — MW3 Stage 1b F-2 lock (2026-05-27)
+
+The Bucket A LPC/voluntary-disclosure cluster contains a non-LPC limb — disguised-remuneration loan-charge settlement — that warrants a dedicated lock to prevent Stage 2 / RUN drift across the controlling statutes and case-law.
+
+**Statutory architecture (verified verbatim at write time, 2026-05-27, against legislation.gov.uk):**
+- **Finance (No.2) Act 2017 Schedule 11** — loan charge on outstanding 5 April 2019 balances; crystallisation mechanic; Sch 11 para 2 charging provision; Sch 11 para 14 PAYE / NIC interaction (verified at https://www.legislation.gov.uk/ukpga/2017/32/schedule/11).
+- **ITEPA 2003 Part 7A (ss.554A–554Z21)** — disguised remuneration head-rule. s.554A relevant arrangement test; ss.554B-554D relevant step categories; ss.554Z–554Z21 modifications and exceptions (verified at https://www.legislation.gov.uk/ukpga/2003/1/part/7A in force as of 27 May 2026 per legislation.gov.uk currency note).
+- **Finance Act 2020 Schedule 2** — Morse Review amendments: **9 December 2010 cut-off** (loans before that date carved out unless certain conditions met); **pre-2016 disclosed-but-unactioned carve-out** (taxpayer disclosed to HMRC before 2016 but no HMRC action followed); **PAYE-instalment deferral route** for genuine hardship; **double-charge denial** against double taxation.
+- **HMRC Settlement Opportunity** — administrative practice, not statutory regime; published in successive iterations 2017-2020.
+
+**Controlling case-law line:**
+- *RFC 2012 plc (in liquidation) v HMRC* [2017] UKSC 45 (Rangers EBT case) — confirms PAYE/NICs applied at the time of payment into the trust; foundational authority for the disguised-remuneration regime.
+- *Hargreaves Lansdown Pension Trustees Ltd v HMRC* [2022] UKUT 34 (TCC) — clarifies the interaction between historical EBT arrangements and current ITEPA 7A application.
+- *Hoey v HMRC* [2022] EWCA Civ 656 — confirms HMRC's discretion to issue Reg 80 directions transferring PAYE liability from employee to employer-equivalent.
+
+**Boundary disciplines:**
+- vs §21.1 CTA 2010 s.455-464A close-company loans — overlapping but DISTINCT regimes; s.455 catches close-company directors' loans (no "loan charge" mechanic; instead 35.75% standalone charge per §21.1); FA(No.2) 2017 Sch 11 catches disguised remuneration via third-party EBT/trust/contractor-loan arrangements.
+- vs §27.5 CoP9 / CDF — the loan charge / settlement framework operates alongside HMRC's civil-fraud routes but is not contingent on fraud-finding.
+- vs §27.6 LPC / WDF — LPC is unrelated to disguised remuneration; sessions must not collapse these into a single "voluntary disclosure" umbrella.
+
+**Do not write:**
+- "The 9 December 2010 cut-off applies universally" — it doesn't; FA 2020 Sch 2 added specific carve-out conditions; check the original loan arrangement.
+- "Settlement Opportunity figures are statutory" — false; they're HMRC administrative practice and have varied across publications.
+
+---
+
+## 31.B Commonhold White Paper 2025 + forthcoming Commonhold and Leasehold Reform Bill — MW3 Stage 1b F-103 lock (2026-05-27)
+
+**LIVE LEGISLATIVE PIPELINE — not yet enacted.** Sessions writing on commonhold conversion, leasehold-reform Bill updates, ground-rent-reform-for-existing-leases, forfeiture reform, service-charge transparency reform, or commonhold-conversion tax-treatment MUST use **forward-looking / proposed / consultation-stage framing** until the Bill is enacted. Verified at write time 2026-05-27: Bill **not yet introduced to Parliament**; White Paper published 3 March 2025; King's Speech 2024 announcement is the formal commitment.
+
+**In-force anchors (these ARE locked statute):**
+- **Commonhold and Leasehold Reform Act 2002 Part 1** (commonhold framework ss.1-70) + **Part 2** (leasehold reform ss.71-179) — verified at https://www.legislation.gov.uk/ukpga/2002/15/contents 2026-05-27 with post-LFRA-2024 + post-BSA-2022 amendment list.
+- **Leasehold Reform (Ground Rent) Act 2022 (c. 1)** — in force 30 June 2022 + 1 April 2023.
+- **Building Safety Act 2022 ss.116-125 + Sch 8** (§26.2 pre-locked) — in force 28 June 2022, LFRA 2024 amendments via SI 2024/1018 effective 31 October 2024.
+- **Leasehold and Freehold Reform Act 2024** (§31.3 pre-locked) — phased commencement 2024-2027.
+
+**White Paper proposals (forthcoming Bill territory, must use conditional framing):**
+- Default-commonhold for new flats.
+- Service-charge transparency reforms.
+- Forfeiture reform.
+- Ground-rent reform for existing leases.
+- Commonhold conversion pathway (existing leasehold → commonhold).
+- RTM (Right to Manage) simplification.
+- Buildings-insurance commission restriction.
+
+**Unresolved tax-treatment questions (DO NOT WRITE definitively until enacted):**
+- **SDLT on commonhold conversion** — no specific FA 2003 provision currently; conversion may trigger or be relieved by future bespoke provision.
+- **CGT on commonhold conversion** — TCGA 1992 s.22 part-disposal trajectory if value migrates; bespoke provision possible.
+- **IHT on commonhold unit-holder interest** — IHTA 1984 commonhold unit-holder treatment not currently provided; bespoke provision possible.
+
+**Cross-jurisdictional carve-out:** Welsh Government parallel intentions noted but separate. Scottish jurisdictional separation (Land Tenure Reform (Scotland) Act 1974, Long Leases (Scotland) Act 2012, Tenancy of Shops (Scotland) Act 1949) is structurally distinct — commonhold reform does NOT apply to Scotland.
+
+**Per-write verification gate:** sessions writing on this cluster MUST re-fetch the live state of the Bill at write time. If introduced to Parliament during writing → update framing to reflect Bill status; if enacted → migrate from this §31.B floor to a new §31.C enacted-state lock.
+
+---
+
+## 36. Professional conduct of property accountants — MW3 Stage 1b F-100 lock (2026-05-27)
+
+The professional-conduct / anti-money-laundering statutory cordon around property accountants, distinct from the §27 HMRC enquiry mechanics (civil-enquiry focused) and warranting a separate criminal-prosecution / AML-floor lock.
+
+**Statutory architecture (verified verbatim against legislation.gov.uk, 2026-05-27):**
+- **Proceeds of Crime Act 2002 ss.327-330** — principal money-laundering offences:
+  - s.327: concealing / disguising / converting / transferring / removing criminal property.
+  - s.328: arrangements (entering or becoming concerned in an arrangement that facilitates acquisition / retention / use / control of criminal property by another).
+  - s.329: acquisition / use / possession of criminal property.
+  - s.330: failure to disclose (regulated-sector head-rule — knowledge / suspicion / reasonable grounds for suspicion).
+- **Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 (SI 2017/692)** — regs 8 (scope), 18 (risk assessment), 19 (policies, controls and procedures), 27 (customer due diligence), 28 (CDD enhanced measures for high-risk situations), 33 (enhanced due diligence in respect of certain customers); these regs apply to accountancy-service providers per reg 11.
+- **Fraud Act 2006 s.2** — fraud by false representation; foundational for property-accountant prosecutions where the accountant participates in or facilitates fraudulent property transactions.
+
+**HMRC supervision route:** HMRC supervises accountancy-service providers not supervised by a professional body (ICAEW, ACCA, AAT, etc.). Money Laundering and Terrorist Financing Regulations 2019 (SI 2019/1511) made amendments effective 10 January 2020 strengthening the fit-and-proper test.
+
+**Property-context use cases:**
+- BTL portfolio mortgage-fraud schemes (false income / occupancy declarations).
+- SDLT-reclaim schemes (false rebate claims via ATED-relief / refurbishment claims).
+- Cash-purchase property-laundering (large-cash payment vs declared income mismatch).
+- FIC / trust structures used to obscure beneficial ownership ahead of TRS / RoE compliance.
+
+**Boundary disciplines:**
+- vs §27 (HMRC enquiry mechanics) — §27 is civil-enquiry focused (CoP8, CoP9, CDF); §36 is criminal-prosecution + AML-floor.
+- vs §11.A (ECCTA / RoE) — ECCTA 2023 / ECTEA 2022 are register / disclosure regimes; §36 is the broader professional-conduct + criminal-prosecution floor that runs alongside.
+
+**Do not write:**
+- "POCA applies only to large transactions" — false; no threshold.
+- "Accountants are exempt from MLR 2017 if not directly handling client money" — false; MLR scope extends to advisory and arrangement-facilitation.
+
+---
+
+## 37. Share-exchange + reconstruction reliefs + transactions-in-securities anti-avoidance — MW3 Stage 1b F-101 lock (2026-05-27)
+
+The TCGA 1992 share-exchange and reconstruction reliefs plus the parallel income-tax-side and corporation-tax-side transactions-in-securities anti-avoidance regimes, with their advance-clearance procedures.
+
+**TCGA 1992 reliefs (verified verbatim, 2026-05-27, against legislation.gov.uk):**
+- **s.127** — equation of original shares and new holding (treats the new shares as the same asset acquired at the same time as the original shares).
+- **s.135** — exchange of securities for those in another company; relief gateway requires (a) bona-fide commercial reason AND (b) main purpose of arrangements not avoidance of tax (the s.137 gate).
+- **s.136** — reconstruction involving issue of securities (broader than s.135; applies to reconstructions where shares are issued in a scheme).
+- **s.137** — anti-avoidance gate / main-purpose test; **subsections (1)-(1C) substituted by FA 2026 s.37(4)(b)** per current legislation.gov.uk text (2026-05-27 currency).
+- **s.138** — advance clearance procedure for s.135 / s.136 reliefs; written application to HMRC.
+- **s.139** — reconstruction involving transfer of business; relief on transfer of business in exchange for shares.
+
+**ITA 2007 Part 13 Chapter 1 (ss.682-713)** — income-tax-side transactions-in-securities anti-avoidance:
+- s.685 — counteraction-notice mechanic.
+- s.701 — clearance route (advance application to HMRC for non-application of the Chapter).
+- Full chapter contents verified at https://www.legislation.gov.uk/ukpga/2007/3/part/13/chapter/1 2026-05-27.
+
+**CTA 2010 Part 15 (ss.731-751)** — corporation-tax-side transactions-in-securities anti-avoidance:
+- s.748 — clearance route (advance application).
+
+**Foundational case-law line:**
+- *IRC v Brebner* [1967] 2 AC 18 — the foundational "main purpose" test for transactions-in-securities anti-avoidance.
+- *IRC v Cleary* [1968] AC 766 — extension of the *Brebner* test to share-buy-back arrangements.
+- *Joiner v IRC* [1975] STC 657 — purpose-test application to reorganisations.
+- *Snell v HMRC* [2008] UKSPC SPC00713 — modern application of the purpose test.
+- *MyTravel Group plc v HMRC* [2007] STC 1267 — main-purpose test in corporate reconstruction context.
+
+**Property-context use cases:**
+- Parent HoldCo insertion above existing property SPVs (s.135 share-exchange relief; s.138 clearance recommended).
+- Portfolio merger of two BTL companies under a single shareholder (s.136 reconstruction; s.138 clearance recommended).
+- FIC reorganisation (alphabet shares → growth shares restructure; s.136 + clearance route).
+- Demerger of mixed-use SPV into separate residential / commercial SPVs (s.136 + s.139 if business transfer involved).
+- Group share buyback under CTA 2010 Pt 18 ss.1033-1048 (purchase of own shares for trade-purposes treatment) — intersects with transactions-in-securities anti-avoidance.
+
+**Boundary disciplines:**
+- vs §21 (LtdCo / FIC mechanics) — §21 is operational; §37 is the reorganisation / restructure relief framework.
+- vs §11.B (Companies House / ECCTA) — §11.B is filing / disclosure; §37 is tax-relief structure.
+
+**Do not write:**
+- "s.137 main-purpose test is identical to GAAR" — false; s.137 predates GAAR and has narrower scope.
+- "Advance clearance is optional" — practical fact: optional in statute, but operationally mandatory for any non-trivial reorganisation.
+
+

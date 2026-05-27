@@ -1,0 +1,18 @@
+Stage 1b signed off 2026-05-27 by manager.
+
+HP-lock decisions:
+- F-1: §19.20 locked (CT Sch 18 para 17: £200/£400 + £1,000/£2,000 third successive; manager WebFetch-verified). Back-patch sweep deferred.
+- F-3: §19.18 locked (SI 2021/1076 → SI 2026/336 migration; manager WebFetch-verified the revocation status). §19.19 locked (points-based regime dual-condition reset). Back-patch sweep deferred.
+- F-100: §36 locked (Professional conduct: POCA + MLR 2017 + Fraud Act 2006).
+- F-101: §37 locked (Share-exchange + reconstruction reliefs + transactions-in-securities anti-avoidance; s.137 at post-FA-2026 text).
+- F-103: §31.B locked (Commonhold White Paper 2025 + forthcoming Bill — live pipeline floor).
+- F-2: §27.10 locked (Disguised remuneration loan charge + settlement framework).
+- F-102: monitoring (cannibalisation watch on serviced-accomm cluster — Stage 2 + RUN responsibility, not HP).
+
+Stage 2 dispatch UNLOCKED.
+
+Deferred back-patch sweeps (will commit post-Stage-1b, before Stage 2 close):
+1. F-1: site-wide swap of historical £100/£200/£500/£1,000 CT late-filing figures → £200/£400/£1,000/£2,000.
+2. F-3: site-wide swap of SI 2021/1076 references → SI 2026/336 with new regulation numbers (per §19.18 migration table); special-case judgment for any reference to SI 2021/1076 reg 20 (now wrong on two axes — reg 25 is qualifying income, reg 20 of new SI is "excluded" definition).
+
+Note: previously-shipped MW3 Bucket A MTD seeds (A6/A7/A11/A16/A18) need re-verification at Stage 2 — sub-agents may pick up the corrected SI numbering via the new §19.18 lock, or manager applies via the back-patch sweep.
