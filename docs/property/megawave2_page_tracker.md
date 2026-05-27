@@ -30,8 +30,8 @@
 | ✅ | A16 | `partnership-partnership-agreement-roles-types-benefits` | Property partnership / LLP | M2-A-B3 | | | Stage 1 seed `a4025cb` — partnership agreement architecture + member roles + types/benefits. Sits under §11.C F-2 candidate. |
 | ✅ | A17 | `register-for-uk-corporation-tax` | Limited company / BTL company operation | M2-A-B3 | | | Stage 1 seed `c76d412` — operational CT-registration mechanics post-incorporation; 3-month HMRC window; sits under §21 + cross-refs A1 incorporation pillar. |
 | ✅ | A18 | `sole-trader-vs-partnership` | Property partnership / LLP | M2-A-B3 | | | Stage 1 seed `d513321` — entity-choice page; sits under §11.C F-2 candidate framework (partnership statutory architecture). |
-| ⬜ | A19 | `substantial-shareholding-exemption-sse` | Limited company / BTL company operation | M2-A-B4 | | | |
-| ⬜ | A20 | `transferring-a-business-out-of-a-company` | Incorporation mechanics | M2-A-B4 | | | |
+| ✅ | A19 | `substantial-shareholding-exemption-sse` | Limited company / BTL company operation | M2-A-B4 | | | Stage 1 seed `edebcce` — **HIGH CANNIBAL RISK** with shipped `substantial-shareholding-exemption-property-companies` (2026-05-22). Carved as deeper statutory-mechanics reference layer (QII para 7A + para 3A subsidiary + s.179 degrouping + para 5 anti-avoidance + CIRD80570+ clearance + pre-disposal sequencing). **Stage 1b reviewer must decide: differentiate or redirect.** |
+| ✅ | A20 | `transferring-a-business-out-of-a-company` | Incorporation mechanics | M2-A-B4 | | | Stage 1 seed `1763b78` — entity-exit DECISION FRAME (asset sale + share sale + in-specie + MVL + strike-off comparison layer); mirror to A1 INTO-LtdCo formation. LOW-MODERATE cannibal (closest existing pages cover slices). HP consumption: §21/§21.A + §11/§11.A + §29 + §25/§25.11 + §27 + §1/§1.I + §5. |
 
 ## Session B - Family Investment Companies & FICs + Pension-funded property (SIPP / SSAS) + Companies House reforms / ECCTA / RoE (20 picks)
 
