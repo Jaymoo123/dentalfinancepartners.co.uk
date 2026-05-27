@@ -143,10 +143,379 @@ The anti-templating axis vs the C13 family-home decision pillar: C13 is the four
   - Cross-check the **£2m taper threshold freeze** — confirm it tracks the RNRB freeze on the same FA enactments.
   - **OPTIONAL F-flag candidate:** if Stage 1b reviewer judges the RNRB freeze + fiscal-drag mechanism material warrants a dedicated HP-lock entry alongside §22.X.1 (which currently anchors the freeze fiscal-drag), Stage 2 may flag this for consideration. At write time NO new F-flag is raised — the existing HP §15 + §22.X.1 + §22.1 + §22.5 anchors fully cover the topic at orientation depth.
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Competitor URLs (compiled by Stage 2 M2-C-B4; RUN session WebFetch-verifies per §16.31)
 
-[Stage 2 populates from NETNEW_PROGRAM §4]
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then `BeautifulSoup(html, "lxml")`. Extract (a) competitor framing of the freeze — single point of news ("RNRB is frozen at £175k") vs three-layer timeline (2021 + 2022 + 2024 announcements); (b) explicit treatment of the £2m taper-threshold also being frozen — typically absent; (c) explicit treatment of the 21-year frozen-NRB run by 2030 — typically absent; (d) explicit fiscal-drag explanation — typically absent or generic; (e) planning-response menu breadth — most competitor pages mention spouse exemption + downsizing addition but omit charitable-bequest + BPR-restructuring + DoV + IPDI levers; (f) honest editorial framing of the "couples get £1m" claim — frequently overstated without the closely-inherited + £2m-taper qualifiers.
+
+- https://www.legislation.gov.uk/ukpga/1984/51 — IHTA 1984 (full Act for the RNRB suite ss.8D-8M).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8D — IHTA 1984 s.8D (entitlement to RNRB).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8E — IHTA 1984 s.8E (amount of RNRB).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8FA — IHTA 1984 s.8FA (£2m taper).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8G — IHTA 1984 s.8G (transferable RNRB).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8H — IHTA 1984 s.8H (claim for brought-forward allowance).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8J — IHTA 1984 s.8J (closely-inherited condition).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8K — IHTA 1984 s.8K (qualifying residential interest).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/8L — IHTA 1984 s.8L (downsizing addition).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/49A — IHTA 1984 s.49A (IPDI — immediate post-death interest).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/142 — IHTA 1984 s.142 (deed of variation).
+- https://www.legislation.gov.uk/ukpga/1984/51/section/7 — IHTA 1984 s.7 (rates of tax + s.7(4) charity reduced rate trigger).
+- https://www.legislation.gov.uk/ukpga/1984/51/schedule/1A — IHTA 1984 Sch 1A (36% reduced charity rate computation).
+- https://www.legislation.gov.uk/ukpga/2021/26/section/86 — FA 2021 s.86 (the original 2021 freeze of NRB + RNRB + £2m taper).
+- https://www.legislation.gov.uk/ukpga/2023/1 — FA 2023 (the November 2022 Autumn Statement extension — Stage 2 verifies precise section).
+- https://www.gov.uk/inheritance-tax — GOV.UK consumer "How Inheritance Tax works".
+- https://www.gov.uk/inheritance-tax/passing-on-home — GOV.UK passing-on-home (RNRB consumer guidance).
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm46000 — IHTM46000+ (RNRB technical guidance).
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm46021 — IHTM46021 (downsizing addition mechanics).
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm43020 — IHTM43020 (transferable nil-rate band claims).
+- https://www.gov.uk/government/publications/autumn-budget-2024-overview-of-tax-legislation-and-rates-ootlar — HMT Autumn Budget 2024 OOTLAR (the published policy paper for the freeze extension to April 2030).
+- https://obr.uk — OBR Economic + Fiscal Outlook (most recent for IHT receipts projections).
+- https://www.gov.uk/government/collections/uk-house-price-index-reports — UK HPI (Land Registry).
+- https://www.ons.gov.uk/economy/inflationandpriceindices — ONS CPI series.
+- https://www.gov.uk/government/publications/iht-receipts — HMRC quarterly IHT receipts statistics (the published evidence of fiscal-drag impact).
+
+**Borrowable patterns:** GOV.UK + HMRC consumer-facing pages are the canonical baseline for the RNRB architecture. Most competitor accountancy + private-client-law-firm "RNRB frozen" pages either (a) treat the freeze as a single point of news without the three-layer timeline + 21-year-NRB-freeze framing, or (b) bury the £2m-taper also-frozen point. The page's structural advantage is the explicit three-layer freeze timeline backbone + the double-freeze framing + the fiscal-drag-mechanism explanation as the central explanatory device.
+
+---
+
+## GSC data
+
+*Net-new page. Primary topical queries expected: "residence nil-rate band frozen", "RNRB frozen until 2030", "inheritance tax allowance frozen", "RNRB 2030 freeze", "nil-rate band frozen 2030", "IHT thresholds frozen", "RNRB taper £2m frozen", "fiscal drag inheritance tax", "should I gift property because of RNRB freeze", "RNRB freeze planning", "Autumn Budget 2024 inheritance tax freeze", "stealth tax inheritance".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `iht-residence-nil-rate-band-2m-taper-property-portfolios` (existing — operational £2m taper mechanics deep). **Cannibalisation risk MEDIUM-HIGH.** Sharp boundary: that page = computational s.8FA reduction-by-£1-per-£2 mechanics for portfolio landlords doing IHT modelling; C20 (this page) = news + fiscal-drag + planning-response pillar at orientation depth on the FREEZE itself. C20 forward-links into that page as the mechanics depth.
+- `inheritance-tax-and-the-family-home` (MW2 C-batch-3 sibling — family-home decision pillar). MEDIUM overlap (family home is the asset at the heart of the RNRB question). Sharp boundary: that page = four-route decision menu (RNRB-route vs market-rent-route vs s.102B-route vs IPDI-route); C20 = news + fiscal-drag on the FREEZE specifically. Cross-link as sibling.
+- `inheritance-tax-a-brief-summary` (MW2 C-batch-2 sibling — IHT brief). LOW-MEDIUM overlap on IHT-framework orientation. Sharp boundary: that page = orientation across all of IHT; C20 = freeze-specific news + planning-response. Cross-link as upstream orientation.
+- `inheritance-tax-lifetime-gifts-vs-transfer-at-death` (MW2 C-batch-3 sibling — lifetime-vs-death pillar). LOW-MEDIUM overlap on the lifetime-gifting planning lever. Cross-link as sibling for lifetime-gifting depth.
+- `maximising-business-relief-to-reduce-inheritance-tax` (MW2 C-batch-3 sibling — BPR planning pillar). LOW-MEDIUM overlap on the BPR-restructuring planning lever. Cross-link.
+- `putting-a-rental-property-into-a-trust` (MW2 C-batch-4 sibling — trust orientation pillar, this batch). LOW-MEDIUM overlap on the settled-property planning lever. Cross-link.
+- `gift-with-reservation-of-benefit` (MW2 C-batch-2 sibling — GROB pillar). LOW overlap. Cross-link for the "lifetime gifting can fall to GROB" footnote.
+- `iht-property-investors-decision-framework-2026-onwards` (existing — broad IHT decision pillar). LOW-MEDIUM overlap on the broader planning menu. Cross-link.
+- `iht-april-2026-bpr-apr-cap-property-impact` (existing — BPR/APR cap mechanics). LOW overlap. Cross-link for the BPR-restructure-lever depth.
+- `inheritance-tax-rental-property-uk-guide` (existing — IHT rental-portfolio comprehensive). LOW-MEDIUM overlap. Cross-link.
+- `iht-non-resident-uk-property-april-2025-residence-test` (existing — non-resident IHT under LTR). LOW overlap. Cross-link for overseas-landlord readers.
+- `deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (existing — DoV deep). LOW overlap. Cross-link for the DoV planning lever.
+- `grob-s102-family-home-shared-occupation-s102b-uk-mechanics` (existing — GROB mechanics deep). LOW overlap. Cross-link.
+- `iht-7-year-clock-property-gifting-mid-life-landlord-strategy` (existing — 7-year-clock strategy pillar). LOW-MEDIUM overlap on lifetime-gifting lever. Cross-link.
+- `iht-lifetime-gifts-7-year-rule-property-taper` (existing — taper deep). LOW overlap. Cross-link.
+
+**Cannibalisation discipline:**
+- C20 is the **news + fiscal-drag + planning-response pillar on the freeze itself** at orientation depth. It does not own the £2m-taper computational mechanics (that's the existing deep), the family-home decision routes (that's the MW2 C13 sibling), or any of the planning-lever mechanics (each forward-links to a dedicated deep or sibling pillar). C20's structural advantage is the three-layer freeze timeline + fiscal-drag mechanism + double-freeze framing + 21-year-NRB-freeze callout.
+- Forward-link to existing £2m taper mechanics deep at the "how the taper actually works" reference point; forward-link to the MW2 C-batch-3 family-home decision pillar at the "what to do about it" point; forward-link to the MW2 C-batch-4 sibling trust orientation pillar at the "settled-property route" point.
+
+---
+
+## Redirect overlap (on launch)
+
+Stage 2 scan: no existing "residence-nil-rate-band-frozen" / "RNRB-frozen" / "rnrb-2030" canonical-form redirects detected. No middleware edit required on initial launch.
+
+---
+
+## Authority links (Stage 2 compiled; session selects 10-12)
+
+**Primary legislation (legislation.gov.uk):**
+- IHTA 1984 s.8D (entitlement to RNRB): https://www.legislation.gov.uk/ukpga/1984/51/section/8D
+- IHTA 1984 s.8E (amount): https://www.legislation.gov.uk/ukpga/1984/51/section/8E
+- IHTA 1984 s.8FA (£2m taper): https://www.legislation.gov.uk/ukpga/1984/51/section/8FA
+- IHTA 1984 s.8G + s.8H (transferable RNRB + claim mechanics): https://www.legislation.gov.uk/ukpga/1984/51/section/8G
+- IHTA 1984 s.8J (closely-inherited condition): https://www.legislation.gov.uk/ukpga/1984/51/section/8J
+- IHTA 1984 s.8K (qualifying residential interest): https://www.legislation.gov.uk/ukpga/1984/51/section/8K
+- IHTA 1984 s.8L (downsizing addition): https://www.legislation.gov.uk/ukpga/1984/51/section/8L
+- IHTA 1984 s.49A (IPDI): https://www.legislation.gov.uk/ukpga/1984/51/section/49A
+- IHTA 1984 s.18 (spouse exemption, LTR test post-FA-2025): https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- IHTA 1984 s.142 (deed of variation): https://www.legislation.gov.uk/ukpga/1984/51/section/142
+- IHTA 1984 Sch 1A (36% reduced charity rate): https://www.legislation.gov.uk/ukpga/1984/51/schedule/1A
+- IHTA 1984 ss.103-114 (BPR architecture, FA 2025/2026 £1m cap context): https://www.legislation.gov.uk/ukpga/1984/51
+- FA 2021 s.86 (original 2021 freeze): https://www.legislation.gov.uk/ukpga/2021/26/section/86
+- FA 2023 (Nov 2022 Autumn Statement extension — Stage 2 verifies precise section): https://www.legislation.gov.uk/ukpga/2023/1
+- FA 2025 (Autumn Budget 2024 extension to April 2030 — Stage 2 verifies enactment + section + commencement; conditional framing if not yet confirmed at RUN time)
+
+**HMRC manuals + GOV.UK consumer guidance:**
+- IHTM46000+ (RNRB technical guidance): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm46000
+- IHTM46021+ (downsizing addition mechanics): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm46021
+- IHTM43020+ (transferable nil-rate band claims): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm43020
+- GOV.UK "How Inheritance Tax works: thresholds, rules and allowances": https://www.gov.uk/inheritance-tax
+- GOV.UK "Inheritance Tax: passing on home": https://www.gov.uk/inheritance-tax/passing-on-home
+- HMRC IHT400 + IHT435 (RNRB claim form) + IHT436 (transferable RNRB claim form)
+- HMT Autumn Budget 2024 OOTLAR (the published policy paper for the further freeze): https://www.gov.uk/government/publications/autumn-budget-2024-overview-of-tax-legislation-and-rates-ootlar
+
+**Statistics + macro data:**
+- OBR Economic + Fiscal Outlook (IHT receipts projection): https://obr.uk
+- HMRC quarterly IHT receipts statistics: https://www.gov.uk/government/publications/iht-receipts
+- Land Registry UK HPI: https://www.gov.uk/government/collections/uk-house-price-index-reports
+- ONS CPI series: https://www.ons.gov.uk/economy/inflationandpriceindices
+
+---
+
+## Worked-example data (Stage 2 populated; RUN-phase verifies rates at write time)
+
+**Verified 2026/27 RNRB-freeze figures (rate-by-reference per §16.27; RUN verifies at write):**
+
+| Parameter | 2026/27 value |
+|---|---|
+| RNRB main rate (frozen) | £175,000 per individual |
+| RNRB £2m taper threshold (frozen) | £2,000,000 |
+| RNRB taper extinguish point | £2,350,000 estate value (RNRB reduced to £0) |
+| Taper mechanic (s.8FA) | RNRB reduced by £1 per £2 of estate excess over £2m |
+| NRB (frozen since 2009/10) | £325,000 |
+| Total combined NRB + RNRB single individual | £500,000 (where qualifying residential interest closely-inherited) |
+| Total combined NRB + RNRB married couple (max headline) | £1,000,000 (both NRBs transferred + both RNRBs transferred; closely-inherited at second death; survivor's estate under £2m) |
+| Original freeze (FA 2021 s.86) | 2021/22 → 2025/26 |
+| First extension (FA 2023, Nov 2022 Autumn Statement) | through 2027/28 |
+| Second extension (FA 2025, Autumn Budget 2024) | through 2029/30 (i.e. to 5 April 2030 inclusive) |
+| Cumulative NRB freeze duration by April 2030 | 21 years (NRB at £325k since 2009/10) |
+| IHT headline death rate | 40% |
+| IHT reduced charity rate (Sch 1A) | 36% where ≥10% of net estate to qualifying charity |
+| Downsizing addition (s.8L + ss.8FB-8FE) | preserves RNRB up to value of foregone qualifying interest if home sold/downsized since 8 July 2015 |
+| Transferable RNRB (s.8G-8H) | unused RNRB on first death transfers to survivor; claimed on IHT436 within 2 years of second death |
+| Closely-inherited condition (s.8J) | lineal descendants — children, grandchildren (inc. step/adopted/fostered); spouse of deceased lineal descendant subject to remarriage rules |
+
+**Core worked-example vignette — the Surrey-couple RNRB extinguishment under the freeze**
+
+Persona: Holloway-family married couple, both 68, owning family home in Surrey at £950k current value; £1.1m combined pension drawdown + investments + cash; one BTL flat at £400k. Combined gross estate ~£2.45m at first death. First death assumed in 2026; all-to-survivor by Will + spouse exemption (s.18) — no IHT charged at first death; full TNRB + TRNRB carried forward.
+
+**At second death (assume ~5 years later, 2031):**
+- Property growth assumption: 2% pa modest growth → family home £1.05m; BTL £440k.
+- Pension drawdown net of withdrawals: assume £900k after the survivor's 5 years of drawdown.
+- Cash + investments: assume £200k.
+- Survivor's estate at second death = £1.05m + £440k + £900k + £200k = £2.59m.
+
+**RNRB position under the freeze:**
+- Combined RNRB available pre-taper: £175k + £175k (transferred from first death) = £350k.
+- Estate exceeds £2m taper threshold by £590k.
+- Taper reduction: £590k ÷ 2 = £295k reduction. (Note: HMRC view per IHTM46035 is that taper applies once to the combined allowance; Stage 2 RUN-session re-verifies cumulative-taper interaction with TRNRB.)
+- Residual RNRB: £350k - £295k = £55k. (If RNRB extinguish point is £2.35m for an individual + £2.7m where TRNRB available — Stage 2 verifies precise cumulation rule.)
+- **Sensitivity check:** if property growth is 4% pa (closer to historical South-East average) instead of 2%, family home grows to £1.16m and BTL to £487k by 2031; survivor's estate £2.75m; RNRB likely fully tapered to £0.
+
+**IHT computation at second death (£2.59m estate, residual RNRB £55k assumed):**
+- Available allowances: NRB £325k + TNRB £325k + £55k residual RNRB = £705k.
+- Chargeable estate: £2.59m - £705k = £1.885m.
+- IHT at 40%: £754,000.
+
+**Comparison to pre-freeze counterfactual:** if RNRB and NRB had uprated with CPI from 2009-2030 (rough ~50% cumulative CPI), RNRB might have reached ~£260k per individual and NRB ~£480k by 2030 → combined £325k+£325k+£480k+£480k+£260k+£260k = £2.13m allowance (before taper); estate £2.59m vs allowance £2.13m → chargeable £460k @ 40% = £184k IHT. **The freeze costs this couple approximately £570k of IHT exposure (£754k - £184k).** Most of that delta is the frozen NRB + RNRB + frozen £2m taper threshold.
+
+**Planning levers to consider:**
+- Charitable bequest of ≥10% of net chargeable estate triggers Sch 1A 36% reduced rate — saves £75k+ in this scenario.
+- IPDI structuring at first death keeps assets available for survivor but reduces second-death-estate composition.
+- Lifetime gifting from first-death survivor (PETs to children + grandchildren) starts the 7-year clock and reduces final estate value.
+- BPR-restructuring of investment portfolio toward qualifying trading-business holdings (£1m cap from April 2026 per FA 2025/2026) — subject to genuine trading-business test.
+- Downsizing addition s.8L if survivor downsizes — preserves RNRB value where home is sold.
+- Sketch outcome: planning levers can materially reduce the £754k IHT exposure but require advice + multi-step execution + realistic time horizon.
+
+**£2m taper illustration — the marginal-pound impact**
+
+| Estate value | RNRB available (single individual) | Combined NRB + RNRB | Effect of £1 estate growth |
+|---|---|---|---|
+| £2.0m or below | £175,000 (full) | £500,000 | normal 40p IHT on marginal pound |
+| £2.1m | £125,000 (£175k − £50k taper) | £450,000 | 40p IHT + 50p RNRB loss → effective 60p/£ marginal |
+| £2.2m | £75,000 (£175k − £100k taper) | £400,000 | 40p IHT + 50p RNRB loss → effective 60p/£ marginal |
+| £2.3m | £25,000 (£175k − £150k taper) | £350,000 | 40p IHT + 50p RNRB loss → effective 60p/£ marginal |
+| £2.35m | £0 (fully tapered) | £325,000 | 40p IHT on marginal pound (no more RNRB to lose) |
+
+**Sketch insight:** the £2m-to-£2.35m band is the highest-marginal-IHT-impact zone — every £1 of estate growth in the taper band loses £0.50 of RNRB (so 20p of IHT exposure from the RNRB-loss alone) plus the 40p of IHT on the marginal pound itself — effective marginal IHT rate ~60% in the taper zone. Many southern UK + South-East homeowners do not realise they are within striking distance of this band. The freeze + property-price growth combine to draw more estates into the band each year.
+
+---
+
+## FAQ draft (10-12 entries, Stage 2 populated; RUN sub-agent polishes prose)
+
+1. **What is the residence nil-rate band (RNRB)?**
+   The RNRB is an additional inheritance tax allowance, set at £175,000 per individual, introduced from 6 April 2017 by IHTA 1984 ss.8D-8M. It applies on top of the standard £325,000 nil-rate band, but only on death (not on lifetime gifts), and only where a qualifying residential interest passes to a lineal descendant — children, grandchildren, step / adopted / fostered children, or the surviving spouse of a deceased lineal descendant. Unused RNRB transfers to a surviving spouse under s.8G-s.8H.
+
+2. **What does "frozen" mean for the RNRB?**
+   The RNRB has been held at £175,000 in nominal terms since the 2020/21 tax year (FA 2021 s.86 first freeze). The Autumn Budget 2024 extended the freeze to 5 April 2030. "Frozen" means the cash figure stays the same while everything else changes around it — house prices rise, inflation erodes the real value, and more estates are drawn over the threshold. This is called "fiscal drag" and is the principal real-world consequence of the freeze.
+
+3. **When was the freeze announced and how has it been extended?**
+   The freeze has three layers. First freeze: Spring Budget March 2021 froze the RNRB (and the £2m taper threshold) until 2025/26 via Finance Act 2021 s.86. First extension: Autumn Statement November 2022 extended the freeze to 2027/28 via Finance Act 2023. Second extension: Autumn Budget October 2024 extended the freeze further to 5 April 2030 via Finance Act 2025 (RUN session re-verifies the precise FA 2025 enacting section). The cumulative effect is a ten-year freeze of the RNRB at £175k.
+
+4. **Is the £2m taper threshold also frozen?**
+   Yes. The £2m threshold at which RNRB starts to taper has been frozen on the same schedule as the RNRB headline rate, since 2017 introduction. The £2m has never been uprated. With property and asset prices rising, more estates are creeping into the taper zone — particularly in London, the South-East, and other high-value regions. The double-freeze (RNRB + taper threshold) compounds the fiscal-drag impact.
+
+5. **Is the £325,000 NRB also frozen?**
+   Yes — and for much longer. The NRB has been held at £325,000 since the 2009/10 tax year. The same Finance Act 2021, Finance Act 2023, and Finance Act 2025 provisions that froze the RNRB also froze the NRB. By April 2030 this will be 21 consecutive years of frozen NRB. Real-terms the NRB has eroded by approximately half over that period when adjusted for cumulative CPI.
+
+6. **How does fiscal drag actually work?**
+   The rate stays the same in cash terms while everything else moves around it. House prices rise, inflation erodes purchasing power, pension pots grow with markets — but the IHT allowance does not change. Estates that were comfortably below the threshold drift over it. The number of estates paying IHT has approximately doubled in projection across the freeze period — from around 4% of UK deaths (pre-freeze baseline) toward 8-10% by the end of the decade. The Office for Budget Responsibility tracks this in its Economic + Fiscal Outlook.
+
+7. **What is the £2m taper trap and why is it acute?**
+   IHTA 1984 s.8FA reduces the RNRB by £1 for every £2 by which the estate exceeds £2m. A £2.35m estate has £0 RNRB; a £2.7m estate (where the second spouse has transferred RNRB) loses the full combined £350k. In the £2m-to-£2.35m band, every £1 of estate growth costs the estate £0.50 of RNRB headroom — combined with the 40% IHT rate on the marginal pound, the effective marginal IHT impact is around 60%. Property growth, pension growth, and modest investment growth can push southern UK homeowners into this band without their realising.
+
+8. **Does the £1 million combined allowance for couples still hold under the freeze?**
+   The "couples get £1 million" headline depends on three conditions all being met: (i) the survivor's estate is below the £2m taper threshold (otherwise some RNRB is tapered away); (ii) the qualifying residential interest is closely-inherited by lineal descendants at second death (not, for example, passed to a sibling or trust); (iii) BOTH NRBs are unused at first death (typically by all-to-survivor spousal Will). Failure of any condition reduces the £1m figure materially. The freeze does not change these conditions, but rising estate values mean condition (i) — the £2m taper — fails for an increasing share of couples.
+
+9. **What is the downsizing addition and when does it apply?**
+   Per IHTA 1984 s.8L + ss.8FB-8FE, where a deceased had sold or downsized from a qualifying residence on or after 8 July 2015, the RNRB can be preserved up to the value of the foregone qualifying interest, subject to detailed conditions. The personal representatives must claim the downsizing addition explicitly — it is not automatic. Documentary evidence of the original residence, the disposal value, the disposal date, and the subsequent estate composition is required (typically via HMRC form IHT435 + supporting schedules). The addition is a structurally important lever for the typical retirement-downsize narrative.
+
+10. **What is the IPDI route in a Will?**
+    An immediate post-death interest (IPDI) under IHTA 1984 s.49A allows assets to be settled into a trust at death giving a named life tenant (typically the surviving spouse) an interest in possession. The life tenant is treated as beneficially entitled to the underlying assets for IHT (so the spouse exemption applies at first death and the assets are aggregated with the life tenant's estate at second death), but the trustees can be empowered with overriding powers for downstream flexibility. IPDI preserves the RNRB position on closely-inherited routing at second death and is structurally useful for blended families, vulnerable beneficiaries, and contingency planning.
+
+11. **What planning responses are available under the freeze?**
+    The principal planning-response menu at orientation depth: (i) lifetime gifting using the PET / 7-year clock — see the lifetime-vs-death pillar; (ii) spouse exemption + transferable allowances under s.18 + s.8G-s.8H — the baseline; (iii) IPDI in the Will under s.49A; (iv) downsizing addition under s.8L where the home has been sold or downsized; (v) settled-property routes via the trust orientation pillar — with the GROB and CGT-uplift trade-offs covered there; (vi) charitable bequest of ≥10% of net estate to trigger the Sch 1A 36% reduced rate; (vii) BPR / APR portfolio restructuring under the FA 2025/2026 £1m combined cap — subject to genuine trading-business test for BPR; (viii) post-death deeds of variation under s.142 + s.62(6). Most plans use two or three levers in combination, not a single silver bullet.
+
+12. **Should I rush to gift property now because of the freeze?**
+    No. Lifetime gifting decisions should not be driven by freeze-news alone. The CGT-vs-IHT trade-off (lifetime gifts crystallise CGT immediately under TCGA 1992 s.17 with no holdover for non-trading assets, while hold-to-death secures the CGT uplift under s.62) often weighs against lifetime gifting for appreciated property — particularly for older donors. The lifetime-vs-death decision needs the full CGT + IHT total-tax framework, not just the IHT side. The freeze is a planning input, not a planning trigger.
+
+13. **Where does the family home fit in this?**
+    The family home is typically the largest single asset in a UK estate and is the asset most directly affected by the RNRB framework. Its IHT treatment is decision-rich: hold to death (RNRB + spouse exemption + CGT s.62 uplift); lifetime gift (loses RNRB; GROB risk if the donor stays in occupation; CGT s.17 immediate crystallisation); IPDI in Will (preserves RNRB + flexibility); settled-property route (loses RNRB; GROB trap if settlor-as-beneficiary). The family-home decision pillar covers the four-route comparison; this freeze pillar is the news + fiscal-drag framing that motivates the decision.
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):**
+(i) Verify IHTA 1984 ss.8D-8M RNRB suite verbatim against legislation.gov.uk — particular care on s.8FA taper mechanic and s.8L downsizing addition mechanics.
+(ii) Verify s.8G + s.8H transferable RNRB mechanics + claim window.
+(iii) Verify FA 2021 s.86 (original freeze) verbatim including sub-sections.
+(iv) Verify FA 2023 (Nov 2022 Autumn Statement extension) precise enacting section + commencement.
+(v) **CRITICAL: verify FA 2025 (Autumn Budget 2024 extension to April 2030) precise enacting section + commencement against legislation.gov.uk before publication. Conditional framing required if not yet on legislation.gov.uk at RUN time.**
+(vi) Verify cumulative NRB freeze: £325k at this level since 2009/10 — confirm starting year + cumulative-freeze duration as it stands at the announced 2030 endpoint.
+(vii) Verify IHTA 1984 s.49A IPDI provisions.
+(viii) Verify s.142 + TCGA 1992 s.62(6) DoV 2-year window unchanged.
+(ix) Verify Sch 1A 36% reduced charity rate threshold + computation.
+(x) Verify CGT residential rates 24%/18% under FA 2024 unification remain in force.
+(xi) Verify HMRC IHTM46035 view on cumulative taper interaction with TRNRB (the precise rule for whether taper applies to the combined allowance once or to each individual allowance separately at the cumulation step).
+(xii) Verify OBR projection on IHT receipts (most recent EFO publication).
+
+### Voice
+- **No em-dashes.**
+- Lead with the three-layer freeze announcement timeline (2021 → 2022 → 2024 → 2030) NOT with the £175k headline figure.
+- Explain fiscal drag explicitly with a one-paragraph mechanism description before any worked-example numbers.
+- Surface the double-freeze (RNRB + £2m taper threshold) prominently — most amateur content omits.
+- Surface the 21-year frozen-NRB run by 2030 — most amateur content omits.
+- "Stealth tax" framing is permitted (widely-used, accurate technical descriptor) but no editorialising on government policy. Tone is factual + advisory throughout.
+- Planning-response menu at breadth, not depth — forward-link to dedicated deeps + sibling pillars for each lever.
+- Honest on the limits of planning: forward-link to lifetime-vs-death pillar for the CGT-vs-IHT trade-off warning before recommending any lifetime gifting lever.
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer.
+
+### CTA placement guidance
+- 3 inline `<aside>` CTAs:
+  - After the three-layer freeze timeline introduction (reader grasping the scale of the policy)
+  - After the Surrey-couple worked example (reader realising the freeze costs measurable IHT exposure)
+  - After the planning-response menu (high-intent: reader wanting to review their own estate)
+
+### CSS in markdown
+- Semantic HTML only.
+
+### FAQs
+- Frontmatter `faqs:` array. Target 12 entries (currently drafted 13 — RUN session selects best 12).
+
+### Cannibalisation
+- Existing £2m taper mechanics deep = forward-link for taper computational depth.
+- MW2 C-batch-3 family-home decision pillar = sibling; cross-link.
+- MW2 C-batch-2 IHT brief summary = upstream orientation; cross-link.
+- MW2 C-batch-3 lifetime-vs-death pillar = sibling for lifetime-gifting lever; cross-link.
+- MW2 C-batch-3 BPR planning pillar = sibling for BPR-restructure lever; cross-link.
+- MW2 C-batch-4 trust orientation pillar (sibling this batch) = sibling for settled-property lever; cross-link.
+- MW2 C-batch-2 GROB pillar = sibling for GROB-trap reference; cross-link.
+- Existing IHT rental-property comprehensive = related; cross-link.
+- Existing DoV deep = forward-link for DoV lever depth.
+- Existing GROB mechanics deep = forward-link for GROB depth.
+- Existing 7-year-clock strategy pillar = forward-link for lifetime-gifting strategy.
+- Existing IHT broader decision pillar (2026 onwards) = upward cross-link.
+
+### House positions
+- **§15.1 (IHT general architecture)** — primary anchor.
+- **§22.X.1 (RNRB freeze fiscal-drag lock)** — primary anchor.
+- **§22.1 (asset-value fiscal-drag)** — primary anchor.
+- **§22.5 (spouse exemption + transferable allowances + closely-inherited routing + LTR test post-FA-2025)** — primary anchor.
+- §15.3 (lifetime transfers — CLT vs PET fork) — anchor for lifetime-gifting lever.
+- §22.2 (CGT uplift on death — interaction with frozen allowances) — anchor.
+- §22.11 (GROB) — anchor for the lifetime-gift-can-fall-to-GROB note.
+- §22.13 (relevant property regime — for the trust-route lever cross-link) — anchor.
+- §15.4 (BPR/APR + £1m cap from April 2026) — anchor for the BPR-restructure lever.
+- §22.17 (probate + IHT computation interaction) — adjacent.
+- §22.X (post-FA-2025 LTR architecture) — adjacent for overseas-landlord readers.
+- §15.6 (non-resident IHT) — adjacent.
+
+### Quality bar
+- Word count: 2,400-2,800 (news + fiscal-drag + planning-response pillar at orientation depth; long enough to walk the three-layer timeline + fiscal-drag mechanism + double-freeze framing + Surrey-couple worked example + £2m-taper illustration + planning-response menu, but short enough to avoid drifting into the computational mechanics that belong to the existing £2m taper deep).
+- FAQs: 12.
+- New external authority links: 10-12 (with the HMT Autumn Budget 2024 OOTLAR + OBR EFO + HMRC IHT receipts statistics as the freeze-impact evidence layer).
+- Worked-example: Surrey-couple £2.45m → £2.59m at second death RNRB-extinguishment scenario + £2m taper illustration table.
+
+### Anti-templating
+- Open with the three-layer freeze announcement timeline (2021 first freeze → 2022 first extension → 2024 second extension → April 2030 endpoint) NOT with "The RNRB is £175,000..." or similar headline-figure-first.
+- Explain fiscal drag explicitly in the opening 600 words — most amateur content uses the word without defining it.
+- Make the double-freeze (RNRB + £2m taper threshold) point structurally prominent — not buried in a paragraph deep in the body.
+- Make the 21-year frozen-NRB run by 2030 callout a separate H3 or pull-quote — most amateur content omits.
+- Worked-example RNRB-extinguishment must be HONEST about the sensitivity to property-growth assumption — show the 2% vs 4% pa sensitivity, not just a single point estimate.
+- Planning-response menu must list seven or more levers at orientation breadth — pre-empts the typical competitor framing that mentions only spouse exemption + lifetime gifting.
+- Vary FAQ phrasing — do NOT reuse Wave 2 or MW2 C-batch-1/2/3 IHT-page FAQ wording.
+
+---
+
+## Workflow (per page; verbatim 19 steps)
+
+1. Read `house_positions.md`. §15.1 + §22.X.1 + §22.1 + §22.5 primary; §15.3 + §22.2 + §22.11 + §22.13 + §15.4 + §22.17 adjacent.
+2. Claim in `wave_tracker` (⬜ → 🟡 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs with httpx + BS4; extract framing per Stage 2 instruction.
+5. Read closest existing pages (£2m taper mechanics deep + MW2 C13 family-home decision pillar + MW2 C12 IHT brief + MW2 C14 lifetime-vs-death pillar + MW2 C17 BPR pillar + MW2 C-batch-4 sibling trust orientation pillar + existing IHT broader-decision pillar + existing IHT rental-portfolio comprehensive + existing DoV deep + existing GROB mechanics deep).
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page — anti-templating).
+7. Verify factual claims; **per §16.35: re-verify IHTA 1984 ss.8D-8M (full RNRB suite) + s.49A (IPDI) + s.142 (DoV) + Sch 1A (36% rate) + FA 2021 s.86 + FA 2023 extension + FA 2025 extension to April 2030 (CONDITIONAL framing if not yet on legislation.gov.uk) + cumulative NRB freeze since 2009/10 + IHTM46035 cumulative-taper rule + CGT residential rates 24%/18%**.
+8. Fetch Pexels hero image via `fetch_image_for_post(query)`.
+9. Write markdown at `Property/web/content/blog/residence-nil-rate-band-frozen.md`.
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. No middleware edit on initial launch.
+13. Register in `monitored_pages` Supabase table.
+14. Commit on session's branch (per-page commit; do NOT merge to main).
+15. Fill per-page work-log at bottom of this brief.
+16. Mark `✅ done` in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review
+- 
+
+### Citations added
+- 
+
+### Internal links added
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised
+- 
+
+### 2-3 sentence summary
+- 
+
+---
 
 ## Work log (Stage 2 + RUN session populate)
 
 - 2026-05-27 (Stage 1 seed): seed committed under M2-C-B4 by sub-agent. IHTA 1984 ss.8D-8M (full RNRB suite including s.8FA £2m taper, s.8G-8H transferable, s.8J closely-inherited, s.8K qualifying residential interest, s.8L downsizing addition) verified verbatim per HP §15 + §22.5. **Three-layer freeze announcement timeline** (FA 2021 s.86 Spring Budget 2021 first freeze; FA 2023 Autumn Statement Nov 2022 first extension; FA 2025 Autumn Budget Oct 2024 second extension to April 2030) verified at write time per HP §22.X.1 lock — **RUN-session caveat: FA 2025 enactment section MUST be re-verified against legislation.gov.uk before publication; conditional framing required if not yet confirmed.** Concurrent NRB freeze (21-year frozen-NRB run by 2030) framed per HP §15 + §22.X.1. **News-led + fiscal-drag + planning-response pillar** (2,400-2,800 words target) — distinct from existing operational £2m taper mechanics deep (`iht-residence-nil-rate-band-2m-taper-property-portfolios`) by the orientation-vs-mechanics axis; this page is news + fiscal-drag + planning-response, that page is computational £2m taper mechanic. **Three-layer freeze announcement timeline as structural backbone** — pre-empts the "single point of news" amateur framing. **Fiscal drag as central explanatory mechanism** + **double-freeze + 21-year-frozen-NRB callout** as secondary structural anchors. **Stealth-tax framing** (factual not editorialising) honest about policy direction across three successive freezes. **Planning-response menu as breadth not depth** — lifetime gifting / spouse exemption + transferable / IPDI / downsizing addition / settled-property routes / charitable bequest / BPR restructuring all at orientation depth with forward-link to the dedicated deeps (C14 lifetime-vs-death, C17 BPR, C19 trust orientation, C13 family-home decision, C10 GROB, etc.). Core worked-example vignette (£2.6m Surrey couple's RNRB extinguishment under the freeze) + £2m taper illustration (£2.0m → £2.35m showing tapering). Distinct from: £2m taper mechanics deep (existing), C13 family-home decision pillar (sibling MW2), C12 brief IHT summary (sibling MW2), C14 lifetime-vs-death pillar (sibling MW2), C17 BPR planning pillar (sibling MW2), C19 trust orientation pillar (sibling MW2), C10 GROB pillar (sibling MW2), C15 inheriting-a-house pillar (sibling MW2), C11 probate-timeline pillar (sibling MW2). HP §15.1/§15.3/§22.X/§22.X.1/§22.1/§22.2/§22.5/§22.11/§22.13/§15.4/§15.6/§22.17 anchors. **No new F-flag raised** — page sits within existing HP-lock universe (§15 IHT general + §22.X.1 freeze fiscal-drag + §22.5 spouse-exemption + transferable allowances + §22.1 asset-value fiscal-drag fully cover the topic at orientation depth). **OPTIONAL F-flag candidate:** if Stage 1b reviewer judges the RNRB freeze + fiscal-drag mechanism warrants a dedicated HP-lock entry alongside §22.X.1, Stage 2 may flag for consideration — at write time the existing lock universe is judged sufficient.
+- 2026-05-27 (Stage 2 extension, M2-C-B4): batch sub-agent extended seed in place. Authority links table compiled (15 legislation.gov.uk entries spanning IHTA 1984 ss.8D-8M full RNRB suite + s.18 spouse exemption + s.49A IPDI + s.142 DoV + Sch 1A 36% charity rate + ss.103-114 BPR + FA 2021 s.86 + FA 2023 + FA 2025 (the latter conditionally pending RUN-session legislation.gov.uk re-verification) + 7 HMRC manual entries + HMT OOTLAR + OBR EFO + Land Registry HPI + ONS CPI + HMRC IHT receipts statistics). **Surrey-couple worked example** populated with explicit property-growth sensitivity (2% pa baseline vs 4% pa South-East-historical-average) showing freeze-driven IHT exposure of approximately £754k at 2% vs full-taper at 4%, with pre-freeze counterfactual estimate (£184k) illustrating the £570k delta attributable to the freeze. **£2m-taper illustration table** populated showing the 60% effective marginal IHT rate in the taper band — the structural insight that the £2m-£2.35m zone is the highest-marginal-impact band. 13-FAQ draft populated (RUN session selects best 12); FAQs structurally distinct from MW2 C-batch-2 IHT-brief-summary FAQs, MW2 C-batch-3 family-home decision pillar FAQs, MW2 C-batch-3 lifetime-vs-death FAQs, MW2 C-batch-3 BPR FAQs, and existing £2m taper mechanics deep FAQs — news + fiscal-drag + planning-response depth throughout. Universal rules + 19-step workflow stub added. Per-page work-log scaffolding added. **§16.36 statutory-citation cross-check passed:** RNRB suite at IHTA 1984 ss.8D-8M (s.8D entitlement, s.8E amount, s.8FA taper, s.8G transferable, s.8H claim, s.8J closely-inherited, s.8K qualifying residential interest, s.8L downsizing addition); IPDI at s.49A; DoV at s.142 + TCGA 1992 s.62(6); spouse exemption at s.18 (LTR test post-FA-2025); 36% reduced charity rate at s.7(4) + Sch 1A; BPR at ss.103-114 (FA 2025/2026 £1m cap context); CGT residential rates 24%/18% under FA 2024 unification; freeze provisions at FA 2021 s.86 + FA 2023 + FA 2025 — all cite-checks resolve to locked HP §15.1 (IHT general architecture) + §22.X.1 (RNRB freeze fiscal-drag lock) + §22.1 (asset-value fiscal-drag) + §22.5 (spouse exemption + transferable allowances + LTR + closely-inherited routing) + §15.3 (lifetime transfers CLT-vs-PET fork) + §22.2 (CGT uplift on death) + §22.11 (GROB) + §22.13 (relevant property regime) + §15.4 (BPR/APR + £1m cap) + §22.17 (probate + IHT computation) + §22.X (post-FA-2025 LTR architecture) + §15.6 (non-resident IHT). **CRITICAL RUN-session caveat re-emphasised:** FA 2025 enactment of the second extension to April 2030 MUST be re-verified against legislation.gov.uk before publication; if precise FA 2025 section + commencement not yet confirmed at RUN time, body text must use conditional framing ("the announced extension takes the freeze through to April 2030 pending the Finance Act 2025 enactment route"). No new F-flag raised — existing HP §22.X.1 lock plus the §15.1 + §22.5 + §22.1 architecture fully cover the freeze + fiscal-drag + planning-response framing at orientation depth. Cross-bucket sequencing: C20 forward-links to existing £2m taper mechanics deep + MW2 C-batch-2 IHT brief summary (exists) + GROB entry-tier (exists) + MW2 C-batch-3 family-home decision sibling (exists) + lifetime-vs-death pillar sibling (exists) + BPR planning sibling (exists) + MW2 C-batch-4 sibling trust orientation pillar (same batch, both flow to main directly — pick 1 already committed at 8308ec0). No sequencing constraint required.
