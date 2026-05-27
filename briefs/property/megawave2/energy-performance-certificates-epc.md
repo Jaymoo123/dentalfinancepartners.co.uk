@@ -68,13 +68,182 @@ Tone is plain-language + definitional + landlord-grounded; H2s are definitional-
 - Worked-example numbers: EPC cost £60-£120 (residential), £150-£500 (commercial) — verify at write against 2026-vintage practitioner survey + GoCompare / Compare The Market published market data. MEES landlord cost cap £3,500 incl. VAT — STATUTE-LOCKED per reg.25(2) SI 2015/962; verify at write but no variability expected. EPC E floor + commencement dates — STATUTE-LOCKED per §26.3 + SI 2015/962; verify at write. EPC C by 2030 framing — POLICY ASPIRATION ONLY, do NOT write as enacted statute per §26.8 critical do-not-write.
 - Cross-link targets: existing `epc-c-2030-minimum-energy-efficiency-landlord-spending-cap` (mythbuster — forward-link from question 9); existing `epc-improvement-grant-schemes-landlords-eco4-bus-gbis` (grants deep-dive — forward-link from question 10); existing `landlord-allowable-expenses-uk-2026` (allowable-expenses pillar — forward-link from question 11 for the broader capital-vs-revenue framework); existing `commercial-property-mees-april-2023-deadline-tax-side` (commercial MEES deep-dive — forward-link from question 6 where commercial reader landed); existing RRA-2025 cluster + DHS-PRS page + §26 regulatory pages for the wider compliance environment.
 
-## Stage 2 research target list
-- Competitor pages to fetch (Stage 2 verifies liveness before listing): gov.uk EPC guidance + MEES landlord guidance (primary statute + government guidance); RICS guidance on EPCs + SAP/RdSAP methodology; Citizens Advice EPC + MEES landlord guidance; NRLA + RLA + ARLA Propertymark + Propertymark landlord-association EPC + MEES guides; Hamptons / Knight Frank / Savills + Strutt & Parker estate-agent EPC briefings; Hometrack + Land Registry data on EPC band distribution for context; The Energy Saving Trust EPC explainers; Which? + Money Saving Expert consumer-facing EPC guides; BDO + Saffery + Crowe + RSM landlord-compliance briefings on MEES + EPC; Mishcon de Reya + Burges Salmon + Trowers & Hamlins property-side legal briefings on MEES enforcement.
-- HMRC + DLUHC + government-side manuals to cite: gov.uk EPC obtaining + finding + register; gov.uk MEES landlord guidance; PRS Exemptions Register at gov.uk; SI 2012/3118 + SI 2015/962 pages at legislation.gov.uk; DESNZ (Department for Energy Security and Net Zero) policy publications on EPC C trajectory.
-- Case-law to ground: limited case-law specifically on EPC validity; civil-penalty FTT appeals on MEES enforcement (verify any reported decisions at write per §16.36); broader regulatory enforcement framework via Care Quality Commission / Local Government Association / Trading Standards Authority statements on MEES enforcement performance.
+## Stage 2 research target list — VERIFIED URLs
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes anywhere; commas, parentheses, full stops, middle dots only); lead-gen architecture (LeadForm footer auto-injected; aside-styled inline CTAs at conversion moments — after the obtaining-EPC section, after the MEES floor section, after the C-2030 trajectory section, after the tax side section); semantic HTML only; FAQs 13-15 entries given definitional-pillar depth; FAQPage JSON-LD auto-emitted; cannibalisation forward-link discipline to existing C-2030 mythbuster + grants deep-dive + allowable-expenses pillar + commercial MEES page, do NOT re-walk their ground; commencement-state + statute-cite verification gov.uk + legislation.gov.uk at write per §26.3 + §16.27 + §16.35; quality bar six-verification gate (0 em-dashes, 0 Tailwind class attrs, FAQ count match, metaTitle ≤62, metaDescription ≤158, all internal `/blog/...` links resolve); anti-templating opening per the framing-differentiator (open with the definitional reality, not the C-2030 trajectory framing); critical do-not-write per §26.8 — DO NOT assert "EPC C by 2030 is law", "the cap rises to £10,000" as live statute.]
+### Authority URLs (RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/uksi/2012/3118/contents`** — EPB Regulations 2012 (SI 2012/3118) contents. RUN session WebFetches reg.6 (EPC required on sale / letting), reg.7 (information to prospective buyer / tenant), reg.11 (10-year validity), reg.34 (accredited assessor requirement), reg.35-37 (penalty regime).
+- **`https://www.legislation.gov.uk/uksi/2015/962/contents`** — MEES Regulations 2015 (SI 2015/962) contents. RUN session WebFetches reg.23-25 (sub-standard letting prohibition + £3,500 cap), reg.24-25 (exemptions register), reg.27 (commencement chain — 1 April 2018 / 2020 / 2023), reg.36-37 (enforcement + £5,000 max penalty).
+- **`https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance`** — gov.uk DESNZ landlord MEES guidance (primary operational anchor). RUN session re-verifies live + topic coverage at write.
+- **`https://www.gov.uk/find-energy-certificate`** — gov.uk EPC central register / lookup service. RUN session verifies the public-search anchor.
+- **`https://www.gov.uk/buy-sell-your-home/energy-performance-certificates`** — gov.uk EPC-on-sale guidance (where the page touches sale-side obligations).
+- **`https://www.gov.uk/prs-exemption-register`** — PRS Exemptions Register portal. RUN session verifies the six-category exemption framework + registration mechanic at write.
+- **`https://www.gov.uk/apply-boiler-upgrade-scheme`** — Boiler Upgrade Scheme (BUS) gov.uk landing (£7,500 grant for ASHP / GSHP / biomass). RUN session verifies grant amount + landlord eligibility at write.
+- **`https://www.gov.uk/energy-company-obligation`** — Energy Company Obligation (ECO4 + GBIS) gov.uk landing. RUN session verifies operative scheme state + landlord access route at write (note ECO4 runs Apr 2022 - Mar 2026; successor scheme TBC).
+- **`https://www.gov.uk/government/publications/home-upgrade-grant-phase-2-eligible-supplier-list`** — HUG2 landing (off-gas-grid grant). RUN session verifies replacement-scheme status at write.
+- **`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030`** — HMRC PIM2030 (capital vs revenue in rental businesses) for tax-side capital/revenue line per §26.7.
+- **`https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim35400`** — HMRC BIM35400+ general capital vs revenue framework.
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: session-side WebSearch at write time required per F-9 / Wave 8/9 dead-rate pattern. Recommended queries: "EPC landlord guide UK", "EPC how to obtain landlord requirements", "MEES minimum energy efficiency standard landlord", "EPC bands A to G explained SAP RdSAP", "EPC C 2030 trajectory law enacted policy". Aim 6-8 firm-side practitioner briefings — RICS guidance on EPCs + SAP/RdSAP methodology; Citizens Advice EPC + MEES landlord guidance; NRLA + RLA + ARLA Propertymark landlord-association EPC + MEES guides; Hamptons + Knight Frank + Savills + Strutt & Parker estate-agent EPC briefings; Energy Saving Trust EPC explainers; Which? + Money Saving Expert consumer-facing EPC guides; BDO + Saffery + Crowe + RSM landlord-compliance briefings on MEES + EPC tax side; Mishcon de Reya + Burges Salmon + Trowers & Hamlins property-side legal briefings on MEES enforcement; The Lettings Industry Council / Propertymark policy briefings. -->`
+
+### HMRC + DESNZ + government-side manual anchors
+
+- gov.uk EPC obtaining + finding + register hub (verified above).
+- gov.uk MEES landlord guidance + commercial MEES guidance (April 2023 commercial floor).
+- PRS Exemptions Register at gov.uk (verified above).
+- SI 2012/3118 + SI 2015/962 pages at legislation.gov.uk (verified above).
+- DESNZ (Department for Energy Security and Net Zero) policy publications on EPC C trajectory (RUN session verifies current consultation outcome + any SI laying state at write — DO NOT assert as enacted statute per §26.8).
+- HMRC PIM2030+ + BIM35400+ for tax-side capital/revenue framework.
+
+### Case-law
+
+- Limited case-law specifically on EPC validity. Civil-penalty FTT appeals on MEES enforcement — RUN session verifies any reported decisions at write per §16.36 against bailii.org / tax tribunals decisions list.
+- Broader regulatory enforcement framework via Local Government Association / Trading Standards Authority statements on MEES enforcement performance — referenced in body text rather than load-bearing authority.
+
+### Legislation anchors (RUN session WebFetches at write time per §16.35)
+
+- EPB Regulations 2012 (SI 2012/3118; verified above).
+- MEES Regulations 2015 (SI 2015/962; verified above).
+- ITTOIA 2005 s.272 (general allowable expenses test — wholly-and-exclusively rule applied to compulsory regulatory costs).
+- TCGA 1992 s.38(1)(b) (capital improvements added to CGT base cost).
+- Building Regulations Part L (energy efficiency in new build + major refurbishment; new-build EPC trigger).
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — The SAP / RdSAP to A-G band mapping table (page's primary educational artefact)
+
+Provide as an HTML table in body (semantic `<table>` styled by global CSS):
+
+| Band | SAP / RdSAP score | Typical energy efficiency | MEES letting status |
+|---|---|---|---|
+| A | 92-100 | Very high; modern build with passive design | MEES compliant + grant-priority desirable |
+| B | 81-91 | High; well-insulated post-2010 stock | MEES compliant |
+| C | 69-80 | Good; well-maintained modern stock | MEES compliant + EPC-C-2030-aspiration target |
+| D | 55-68 | Average; typical existing housing stock | MEES compliant (floor is E) |
+| E | 39-54 | Below average; minimum legal letting band | MEES compliant at floor; risk of slipping to F |
+| F | 21-38 | Poor | MEES-PROHIBITED without registered exemption |
+| G | 1-20 | Very poor | MEES-PROHIBITED without registered exemption |
+
+Operational anchor: a property at SAP 39 sits at the very bottom of band E and is MEES-compliant; at SAP 38 it is band F and prohibited. Mass band-E properties run close to the F-line; a marginal regulation-tightening or fabric-degradation can drop them below the floor.
+
+### Example 2 — A landlord's annual EPC obtaining mechanic
+
+Mr Carter is buying his fourth BTL property in March 2026, a 1980s 2-bed terrace currently let. EPC obtaining sequence: (i) at exchange, request the existing EPC from the seller — most likely valid given the 10-year validity window (EPC issued post-March 2016 is still live); (ii) check the band on the gov.uk Find an Energy Certificate service at `https://www.gov.uk/find-energy-certificate` — confirms current band D; (iii) on completion + new-letting, no new EPC is required (existing carries over); (iv) the new tenancy can proceed at band D — MEES compliant; (v) Mr Carter schedules a voluntary re-assessment in year 5 (2031) before the EPC's natural expiry in 2026 + 10 years = 2036 to plan any upgrade investment + capture grants. If the EPC had been EXPIRED at exchange (pre-March 2016), a new EPC would be commissioned via a Domestic Energy Assessor — typical cost £60-£120 + turnaround 1-5 days. New tenancy cannot proceed without a current EPC.
+
+### Example 3 — A landlord's MEES floor management for a sub-E property
+
+Mrs Khan owns a single 1930s Victorian terrace let to long-term tenants since 2012; current EPC band F (SAP 35). Under MEES Regulations 2015 (SI 2015/962), letting at band F or G is prohibited without a registered exemption (continuing-lets floor since 1 April 2020 per reg.27). Three operational options. (a) **Upgrade to E** within the £3,500 (incl. VAT) landlord cost cap under reg.25(2): typical upgrade pack of loft insulation top-up + cylinder thermostat + LED lighting + draught-proofing brings the property to band E for approximately £2,800; works completed; new EPC obtained at SAP 41 (mid-band E). MEES-compliant. (b) **Register a high-cost exemption** on the PRS Exemptions Register if £3,500 of spend would not bring the property to E — for older solid-wall properties this is common; exemption is typically 5-year duration with renewal mechanic. (c) **Register a wall-insulation exemption** if independent installer confirms cavity-wall or external/internal-wall insulation would negatively affect building fabric or structure. Failure to register any exemption AND failure to upgrade = continued non-compliance + civil penalty up to £5,000 per non-compliant tenancy under reg.36-37.
+
+### Example 4 — The tax-side capital vs revenue split on an EPC upgrade
+
+Mrs Khan's £2,800 MEES upgrade in Example 3 needs tax tagging at point of spend per §26.7: (i) **EPC reassessment fee** (£90) — REVENUE / deductible against rental income under ITTOIA 2005 s.272 (compulsory regulatory cost); (ii) **Loft insulation top-up** (£950) — CAPITAL improvement under TCGA 1992 s.38(1)(b) (improves building specification); CGT base-cost addition; not deductible against rental income; (iii) **Cylinder thermostat fitting** (£280) — REVENUE / deductible (repair / renewal of existing control); (iv) **LED lighting replacement** (£420) — REVENUE / deductible (replacement of failed bulbs / fixtures); (v) **Draught-proofing works** (£1,150) — CAPITAL improvement (improves fabric); CGT base-cost addition. Net: £790 revenue-deductible + £2,100 capital base-cost addition. Any grant receipts (e.g. ECO4 Flex local-authority allocation reducing the loft insulation spend) reduce the CGT base cost — grant is matched against the expenditure it funded under HMRC's general principle.
+
+### Example 5 — Misframings the page must correct (verbatim do-not-write list per §26.8)
+
+- **Misframe 1:** "EPC C by 2030 is now law" / "EPC C is required from 2028" — CRITICAL FALSE per §26.3 + §26.8. Government policy aspiration only; no amending SI has been laid. £3,500 cap + EPC E floor under SI 2015/962 are the enacted current state.
+- **Misframe 2:** "The landlord cap rises to £10,000" — FALSE / policy aspiration only. Current cap is £3,500 incl. VAT per reg.25(2).
+- **Misframe 3:** "All listed buildings are exempt from EPCs" — FALSE; the exemption is conditional + most listed buildings still require an EPC unless specific improvements would impair character. Practitioner advice required.
+- **Misframe 4:** "EPCs last forever" — FALSE; 10-year validity under reg.11 EPB 2012.
+- **Misframe 5:** "A change of tenant requires a new EPC" — FALSE; existing EPC carries over within its 10-year validity; new EPC only required where existing has expired or building works trigger Part L.
+- **Misframe 6:** "MEES is HSE-enforced" — FALSE; MEES is enforced by local weights and measures authority (typically the local authority) under civil regime. Gas safety is HSE-enforced under criminal regime (see B17 sibling).
+- **Misframe 7:** "CORGI registered engineer can issue an EPC" — FALSE; CORGI defunct since 2009 + CORGI was the gas engineer register (not EPC). EPCs are issued by Domestic Energy Assessors / Non-Domestic Energy Assessors, not gas engineers.
+
+## FAQ expansion (RUN session polishes prose; 13-15 FAQs target — definitional-pillar depth)
+
+1. **Q: What is an Energy Performance Certificate (EPC)?**
+   A: A statutory document issued under the Energy Performance of Buildings (England and Wales) Regulations 2012 (SI 2012/3118). It rates a building's modelled energy efficiency on a scale from A (most efficient) to G (least efficient) and provides recommended upgrades. Required by law on every UK residential sale or letting (with limited exceptions); produced by an accredited Domestic Energy Assessor; valid for 10 years from the date of issue; registered on the central Energy Performance of Buildings Register at gov.uk where any future buyer or tenant can look it up. Typical cost £60-£120 for a residential property. The EPC band drives the MEES letting-eligibility test for landlords and informs prospective buyers and tenants on running cost expectations.
+
+2. **Q: How does the SAP / RdSAP rating map to the A-G band?**
+   A: Standard Assessment Procedure (SAP) for new dwellings; Reduced data Standard Assessment Procedure (RdSAP) for existing dwellings. The numerical score runs from 1 to 100+ and maps to bands as follows: A = 92-100; B = 81-91; C = 69-80; D = 55-68; E = 39-54; F = 21-38; G = 1-20. The numerical rating is the precise driver — a property at SAP 39 sits at the very bottom of band E and is MEES-compliant; at SAP 38 it is band F and MEES-prohibited without an exemption. Borderline-E properties carry slip-to-F risk on fabric degradation or regulation tightening.
+
+3. **Q: How is an EPC obtained?**
+   A: Five steps. (i) Select an accredited Domestic Energy Assessor (DEA) for residential or Non-Domestic Energy Assessor (NDEA) for commercial — find via the central register at gov.uk. (ii) The DEA visits the property typically for 30-90 minutes, takes measurements, photographs heating system + insulation + fenestration + boiler + thermostat controls. (iii) The DEA inputs data into RdSAP-approved software and generates the draft EPC. (iv) The EPC is lodged on the central register at gov.uk. (v) The landlord or seller receives the PDF + reference number. Typical cost £60-£120 residential; £150-£500 commercial. Turnaround 1-5 days.
+
+4. **Q: When do I need an EPC?**
+   A: On every residential sale (commissioned before marketing begins per reg.6 EPB 2012); on every residential letting (new tenancy, renewal, change of tenant; existing tenants in pre-2008 leases without an EPC need one when the property is next let); on every commercial sale or letting; on completion of a new build (Part L Building Regulations completion certificate). Limited exemptions: certain listed buildings (conditional on the energy-performance improvements impairing character — practitioner advice required); standalone buildings under 50 sq m; certain holiday accommodation rented under 4 months/year + occupied less than 4 months/year; temporary buildings under 2-year planning permission; workshops + agricultural buildings with low energy demand.
+
+5. **Q: How long is an EPC valid for?**
+   A: 10 years from the date of issue under reg.11 EPB 2012. A new EPC is not required mid-validity merely on a change of tenant or new sale — the existing certificate carries over. A new EPC is required where the existing has expired beyond 10 years, where building works trigger a Part L completion EPC (extensions, major refurbishments, change of use), or where the property is voluntarily re-assessed after upgrade works to update the band on the register.
+
+6. **Q: What is the Minimum Energy Efficiency Standard (MEES)?**
+   A: MEES Regulations 2015 (SI 2015/962) prohibit letting "sub-standard" private rented property — domestic EPC F or G — without a registered exemption on the PRS Exemptions Register at gov.uk. The current enacted floor is EPC E with effect from 1 April 2018 (new tenancies) + 1 April 2020 (all continuing lets) + 1 April 2023 (continuing non-domestic lets) per reg.27. Landlords with sub-standard properties must either upgrade to EPC E or register an exemption. The landlord cost cap is £3,500 (including VAT) under reg.25(2) — landlords are not obliged to spend more than £3,500 of their own money on energy improvements; where £3,500 is insufficient to bring the property to E, a high-cost exemption can be registered.
+
+7. **Q: What are the exemptions on the PRS Exemptions Register?**
+   A: Six categories under MEES 2015 regs 24-25 + government guidance. (i) High-cost exemption — improvements would cost more than £3,500 incl. VAT. (ii) Devaluation exemption — independent surveyor confirms recommended upgrades would reduce property market value by more than 5%. (iii) Consent exemption — third-party consent (tenant, freeholder, planning authority, lender) refused or conditional. (iv) Wall-insulation exemption — independent installer confirms cavity-wall or external/internal-wall insulation would negatively affect building fabric or structure. (v) All-relevant-improvements-made exemption — all cost-effective improvements within the £3,500 cap have been made but property still below E. (vi) New landlord temporary exemption — 6-month window from acquisition or comparable trigger. Exemption typically 5-year duration; renewal mechanic on expiry. Without a registered exemption, letting a sub-standard property is unlawful.
+
+8. **Q: What are the penalties for letting a sub-standard property?**
+   A: Civil penalty regime under reg.36-37 MEES 2015. Up to £5,000 per non-compliant tenancy + up to £5,000 false-information penalty + up to £5,000 published-information penalty (each capped at £5,000 per breach). Enforcement by local weights and measures authority. Additional published-on-PRS-Exemptions-Register-as-defaulter consequence. Stages: penalty notice + 28-day window for representations + final penalty notice + FTT appeal route. The penalty is NOT tax-deductible per BIM38500+ (penalties for breach of law are non-deductible). The reputational + counterparty-due-diligence consequence is increasingly material — lenders, JV partners, professional advisers check MEES status as part of due diligence on landlord portfolios.
+
+9. **Q: Is the EPC C by 2030 framing actually law?**
+   A: No. The "EPC C by 2030 for all PRS / 2028 for new tenancies / £10,000 spending cap" framing is government policy aspiration only as of 2026-05-27. No amending Statutory Instrument has been laid to give the EPC C trajectory statutory force. The 2020 government consultation, the more recent consultation outcomes, and various ministerial statements all stop short of legislating a new minimum band. The £3,500 cap + EPC E floor under SI 2015/962 are the enacted current state. Forward-link to existing site mythbuster `epc-c-2030-minimum-energy-efficiency-landlord-spending-cap` for the full enacted-vs-policy walkthrough. Per §26.3 + §26.8 critical do-not-write.
+
+10. **Q: What grant schemes can fund my upgrades?**
+    A: Four principal routes — overview only; forward-link to grants deep-dive. (i) ECO4 (Energy Company Obligation 4, Apr 2022 to Mar 2026, successor scheme TBC) — energy-supplier-funded; LA Flex route allows landlord access in some council areas; means-tested + property-band-tied. (ii) GBIS (Great British Insulation Scheme) — running alongside ECO4; general-eligibility route open to landlords in some areas; focus on insulation measures. (iii) BUS (Boiler Upgrade Scheme) — £7,500 grant for ASHP / GSHP / biomass heat-pump replacement of fossil-fuel heating; landlord-eligible without means-test; key route for off-gas-grid + high-EPC-impact upgrades. (iv) HUG2 (Home Upgrade Grant 2) — off-gas-grid homes; means-tested; landlord access partial; replacement-scheme status verifies at write. Grant receipts reduce CGT base cost under HMRC general principle.
+
+11. **Q: Are EPC and upgrade costs deductible against rental income?**
+    A: Three-line answer per §26.7 lock. (a) EPC assessment fee + MEES compliance regulatory costs are REVENUE / deductible against rental income under ITTOIA 2005 s.272 (compulsory regulatory expense). (b) MEES upgrade spend that materially improves the building specification (insulation, double-glazing, heat-pump installation, high-efficiency boiler replacing low-efficiency) is CAPITAL improvement under TCGA 1992 s.38(1)(b); CGT base-cost addition; NOT deductible against rental income. (c) MEES upgrade spend that is like-for-like repair (e.g. replacing a failed boiler with a comparable-specification equivalent on a 1:1 basis) is REVENUE / deductible. Grant receipts reduce the CGT base cost. Section 24 finance-cost restriction NOT engaged by EPC compliance costs.
+
+12. **Q: What is the operational EPC compliance checklist for a landlord?**
+    A: Six-step operational checklist. (i) Check current EPC validity for every property in portfolio at gov.uk EPB Register — note expiry date + band. (ii) For any property below EPC E without registered exemption, stop marketing immediately; register exemption or upgrade to E. (iii) For any property at exact-band-E (SAP 39) with marginal slip risk, plan upgrade or buffer-band-D move-up. (iv) Plan for portfolio-level 10-year-mass-expiry of EPCs — schedule rolling re-assessment. (v) Track government consultation on EPC C 2030 + £10,000 cap trajectory + future SI laying — plan upgrades on the policy expectation but DO NOT commit to schedule until SI is laid. (vi) Document MEES upgrade spend with capital/revenue tagging at point of spend for tax-side treatment + future CGT base-cost evidence.
+
+13. **Q: How is MEES different from EPC?**
+    A: An EPC is the rating document itself (issued under EPB Regulations 2012). MEES is the regulatory floor that uses the EPC band to determine letting eligibility (issued under MEES Regulations 2015). Every let property needs an EPC; MEES then determines whether the EPC band is high enough to permit letting (band E or better) without an exemption.
+
+14. **Q: What does a Domestic Energy Assessor actually do during the visit?**
+    A: 30-90 minutes typical residential visit. Measurements: floor area, room dimensions, ceiling heights. Photographs: heating system, boiler, thermostat, hot-water cylinder, radiator types, fenestration (window types, glazing), insulation (loft, wall where visible). Data: appliance makes + models + serial numbers, lighting type (incandescent / LED / CFL count), heating-control programmer details, ventilation system details. The DEA inputs into RdSAP-approved software, which models energy consumption + emissions against standardised occupant assumptions. The software output is the SAP score + the recommended upgrade list + the energy / emission cost framework + the band.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy. Commas, parentheses, full stops, middle dots only.
+- **Specific over generic.** Named statute (EPB Regulations 2012 SI 2012/3118 reg.6 + 7 + 11 + 34 + 35-37; MEES Regulations 2015 SI 2015/962 reg.23-25 + 27 + 36-37; ITTOIA 2005 s.272; TCGA 1992 s.38(1)(b); HMRC PIM2030+ / BIM35400+). Anonymised personas in worked examples.
+- **No real names.**
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Inline aside-styled CTAs at four conversion moments: (i) after the obtaining-EPC walkthrough; (ii) after the MEES floor + exemptions section; (iii) after the EPC C 2030 mythbuster section; (iv) after the tax side capital/revenue section.
+- **CSS in markdown:** semantic HTML only (table for SAP-to-band mapping in Example 1; no Tailwind classes).
+- **FAQs:** 13-15 entries (definitional-pillar depth).
+- **Body word count target:** 2,600-3,200 (definitional pillar depth).
+- **Anti-templating:** open with the definitional reality per the framing-differentiator counter-pattern, NOT with the EPC C 2030 trajectory framing or generic corporate-speak.
+- **§26.3 + §26.8 critical do-not-write GREP discipline (RUN session greps draft against ALL):** "EPC C by 2030 is law" / "EPC C is required from 2028" (FALSE — policy aspiration only); "The landlord cap rises to £10,000" (FALSE — current cap £3,500); "All listed buildings are exempt from EPCs" (FALSE — conditional); "EPCs last forever" (FALSE — 10-year); "A change of tenant requires a new EPC" (FALSE — carries over); "MEES is HSE-enforced" (FALSE — local authority civil regime); "CORGI registered" (FALSE — defunct since 2009 + gas register not EPC); "ECO4 / GBIS / BUS / HUG2 is fully open to all landlords" (FALSE — eligibility varies + means-test for ECO4 / HUG2).
+- **Quality bar (six checks per §9).**
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §26.3 + §26.7 + §26.8 MEES + EPC lock; §4 Section 24 not engaged; §13 main do-not-write).
+2. Claim this page in `megawave2_page_tracker.md` (⬜ → 🟡 + UTC timestamp).
+3. Read this brief end-to-end (esp framing differentiator + SAP-to-band mapping table + worked examples + FAQ canvas).
+4. Fetch + read competitor URLs via session-side WebSearch (queries listed above).
+5. Read closest-existing pages: `epc-c-2030-minimum-energy-efficiency-landlord-spending-cap` (mythbuster — forward-link from question 9); `epc-improvement-grant-schemes-landlords-eco4-bus-gbis` (grants deep-dive — forward-link from question 10); `landlord-allowable-expenses-uk-2026` (forward-link from question 11); `commercial-property-mees-april-2023-deadline-tax-side` (forward-link from question 6 commercial reader); B17 `gas-safety-certificates` sibling (this batch — forward-link in the landlord-safety-cluster framing).
+6. Plan H2 / H3 outline: definitional-led open → SAP/band table → obtaining mechanic → validity + when-required → MEES floor + £3,500 cap → exemptions register → penalties → EPC C 2030 mythbuster (short + forward-link to deep-dive) → grants overview (short + forward-link) → tax side capital/revenue → compliance checklist close.
+7. Verify factual claims per §16.35: WebFetch SI 2012/3118 + SI 2015/962 + DESNZ landlord guidance; verify MEES commencement chain dates + £3,500 cap quantum at write per §16.27; verify grant scheme operational state at write; verify EPC C 2030 enactment state (DO NOT assert as live statute).
+8. Fetch hero image (EPC certificate / efficiency-band aesthetic).
+9. Write markdown.
+10. Build clean.
+11. Six verifications + 8-pattern do-not-write GREP from voice rules above.
+12. Apply redirect repointing if needed.
+13. Register in `monitored_pages`.
+14. Commit on main: `MegaWave 2 Stage 2 B: energy-performance-certificates-epc full brief (M2-B-B3)`.
+15. Fill per-page work-log.
+16. Mark ✅ done in tracker.
+17. Append flags if any (none expected — sits within locked §26 architecture).
+18. Append discoveries.
+19. Claim next page in batch.
 
 ## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here. Stage 1 seed verifications: EPB Regulations 2012 (SI 2012/3118) + MEES Regulations 2015 (SI 2015/962) section attributions pre-locked at §26.3 per Wave 7 lock (commencement chain hardened 2026-05-24); treated as authoritative for Stage 1 seed purposes; Stage 2 sub-agent re-verifies at write per §16.35 against legislation.gov.uk. MEES E floor commencement dates (1 April 2018 / 2020 / 2023) — STATUTE-LOCKED per §26.3 reg.27 chain. Landlord cost cap £3,500 incl. VAT — STATUTE-LOCKED per reg.25(2); verify at write. EPC validity 10 years per reg.11 EPB 2012 — STATUTE-LOCKED. EPC C 2030 trajectory — POLICY ASPIRATION ONLY per §26.3 + §26.8 critical do-not-write; Stage 2 sub-agent re-verifies at write per https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance; do NOT assert as enacted statute. Grant schemes (ECO4 + GBIS + BUS + HUG2) — Stage 2 sub-agent verifies live + replacement-scheme status at write per gov.uk. Tax-side capital/revenue line — pre-locked at §26.7 per Wave 7. No new HP-lock candidate raised by THIS Pick 15 — this EPC pillar sits squarely within locked §26.3 + §26.7 + §26.8 architecture (the Wave 7 MEES + EPC lock is the operative HP-floor; B15 adds no new statutory ground requiring a fresh lock). Cross-link discipline: this page forward-links to the existing mythbuster + grants deep-dive + allowable-expenses pillar + commercial MEES page; do NOT re-walk their ground — the definitional pillar's job is the bare-query on-ramp, NOT depth on the trajectory debate or the grant-funding mechanics.]
+
+[RUN session records their work here at write time. Stage 2 verification notes: EPB Regulations 2012 (SI 2012/3118) reg.6 / reg.7 / reg.11 / reg.34 / reg.35-37 + MEES Regulations 2015 (SI 2015/962) reg.23-25 / reg.27 / reg.36-37 pre-locked at §26.3 per Wave 7 lock; RUN session re-verifies at write per §16.35. MEES E floor commencement chain (1 April 2018 / 2020 / 2023) STATUTE-LOCKED per reg.27. Landlord cost cap £3,500 incl. VAT STATUTE-LOCKED per reg.25(2). EPC validity 10 years per reg.11 STATUTE-LOCKED. EPC C 2030 trajectory POLICY ASPIRATION ONLY per §26.3 + §26.8 critical do-not-write; RUN session re-verifies enactment state at write per https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance + DESNZ publications; do NOT assert as enacted statute. Grant schemes (ECO4 / GBIS / BUS / HUG2) — RUN session verifies live + replacement-scheme status at write per gov.uk. Tax-side capital/revenue line pre-locked at §26.7 per Wave 7. No new HP-lock candidate raised by THIS Pick 15.]
+
+---
+
+## Stage 1 seed work log
+
+- **Stage 1 author:** MW2 Stage 1 Sub-Agent B (batch M2-B-B1) on 2026-05-26.
+- **Stage 2 author:** MW2 Stage 2 Sub-Agent B (batch M2-B-B3) on 2026-05-27 extending Stage 1 seed into full RUN-ready brief.
+- **Cluster anchor:** EPC definitional pillar — the bare-query on-ramp for the broadest entry-level query. Distinct from the existing EPC C 2030 mythbuster (policy-vs-enacted lens), the existing grants deep-dive (funding mechanics lens), and the existing commercial-MEES page (commercial-letting lens). Routes qualified readers onto the two deep-dives for the trajectory + grants depth.
+- **HP-lock alignment:** §26.3 Wave 7 lock (MEES regime current state + EPC E floor STATUTE-LOCKED + EPC C 2030 IS NOT ENACTED critical do-not-write); §26.7 (tax-side capital/revenue line); §26.8 (§26 cluster do-not-write); §4 (s.24 not engaged); §13 main do-not-write. No new HP-lock candidate raised by this pick — the Wave 7 MEES + EPC lock is the operative HP-floor; B15 adds no new statutory ground requiring a fresh lock.
+- **§16.36 statutory-citation cross-check (Stage 2):** SI 2012/3118 reg.6 / 7 / 11 / 34 / 35-37 + SI 2015/962 reg.23-25 / 27 / 36-37 + ITTOIA 2005 s.272 + TCGA 1992 s.38(1)(b) — all verified against §26.3 + §26.7 locked anchors. No drift catches raised at Stage 2.
+- **§16.31 URL verification (Stage 2):** legislation.gov.uk anchors for SI 2012/3118 + SI 2015/962 confirmed live; gov.uk DESNZ landlord MEES guidance + EPC central register + PRS Exemptions Register + BUS landing + ECO4 landing + HUG2 landing confirmed live. HMRC PIM2030 + BIM35400 manual landings confirmed live. Competitor URLs deferred to session-side WebSearch at write per F-9 dead-rate pattern.
+- **Cannibalisation reasoning:** clean cluster gap. B15's definitional-pillar slot distinct from the existing C-2030 mythbuster (policy-vs-enacted), existing grants deep-dive (funding mechanics), existing commercial-MEES page (commercial-letting), the wider §26 regulatory cluster (RRA + BSA + DHS + HMO), and B17 gas-safety sibling (criminal-track gas safety). Forward-link relationships preserved without re-walking ground. No CANNIBAL.
+- **Anti-templating watchpoints for RUN session:** (a) open with the definitional reality + £60-£120 cost frame per the framing-differentiator counter-pattern (NOT with C-2030 trajectory framing); (b) the SAP-to-band table (Example 1) is the page's primary educational artefact — render as semantic HTML table; (c) the EPC C 2030 section is SHORT (a paragraph + forward-link to mythbuster) — do NOT re-walk the deep-dive; (d) the grants section is SHORT (overview + forward-link to grants page) — do NOT walk the funding mechanics; (e) the tax-side section anchors at §26.7 capital/revenue line — provide worked tagging illustration (Example 4); (f) word count target 2,600-3,200 (definitional pillar depth); resist either over-shooting (signals duplication) or under-shooting (fails the pillar coverage promise).
