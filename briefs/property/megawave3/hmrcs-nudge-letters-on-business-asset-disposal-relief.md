@@ -59,13 +59,148 @@ The angle this page takes: a landlord, former-FHL operator, or LtdCo property di
 - Legislation anchors: TCGA 1992 ss.169H + 169I + 169S + 169SA (all verified above); FA 2020 s.23 (renaming) + s.24 (£1m lifetime cap); FA 2019 s.39 (2-year qualifying period); FA 2024 + FA 2025 (rate steps); FA 2025 Sch 5 Parts 4 + 5 (FHL abolition transitional + CGT commencement); TMA 1970 s.9A + s.29 + s.31A + s.36(1)/(1A); Sch 24 FA 2007. Cross-reference §5, §25.7, §27.1, §27.2 of house_positions.md.
 - Case-law to ground: Pawson v HMRC [2013] UKUT 50 (BPR investment line — referenced by analogy for the BADR trade/investment line); McQuillan v HMRC [2017] STC 1657 (BADR personal-company test); Perrin v HMRC [2018] UKUT 156 (reasonable excuse for any late response); Martland v HMRC [2018] UKUT 178 (late-appeal framework).
 
-## Universal rules + workflow stubs (Stage 2 fills)
+## Stage 2 research target list — extended
 
-[Stage 2 populates from NETNEW_PROGRAM §4: voice + style (no em-dashes, no Tailwind in markdown, FAQ count match, 6-check quality bar) and the 19-step workflow.]
+### Authority URLs (Stage 2 surfaces; RUN session WebFetches at write time per §16.35)
+
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/169H`** — TCGA 1992 s.169H (BADR introduction). RUN session reads the chapter-opener verbatim and anchors the renaming from Entrepreneurs' Relief by FA 2020 s.23.
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/169I`** — TCGA 1992 s.169I (material disposal gateway). RUN session reads s.169I(2) three-category definition + s.169I(3) 2-year qualifying period verbatim.
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/169S`** — TCGA 1992 s.169S (personal company + 5% economic-interest gates). RUN session reads s.169S(3) tri-conditional test (5% ordinary share capital + 5% voting rights + 5% distributable profits) verbatim.
+- **`https://www.legislation.gov.uk/ukpga/1992/12/section/169N`** — TCGA 1992 s.169N (BADR rate). RUN session re-verifies the 10% → 14% → 18% trajectory per §5 / Wave 2 lock at write time.
+- **`https://www.legislation.gov.uk/ukpga/2025`** — FA 2025 (parent Act for the FHL abolition transitional + rate-step architecture). RUN session locates Sch 5 Parts 4 + 5 for FHL transitional protection.
+- **`https://www.legislation.gov.uk/ukpga/2020/14/section/23`** — FA 2020 s.23 (renaming from Entrepreneurs' Relief).
+- **`https://www.legislation.gov.uk/ukpga/2020/14/section/24`** — FA 2020 s.24 (£1m lifetime cap, reduced from £10m from 11 March 2020). RUN session anchors the £1m cap explicitly to prevent drift to historic £10m figure.
+- **`https://www.legislation.gov.uk/ukpga/1970/9/section/29`** — TMA 1970 s.29 (discovery assessments). RUN session anchors the post-nudge discovery architecture.
+- **`https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg63950`** — CG63950+ Capital Gains Manual on BADR. RUN session reads the operational guidance index, especially CG64030 (personal-company gate) and CG64115 (trading-vs-investment line).
+- **`https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch80000`** — Compliance Handbook CH80000+ (Sch 24 inaccuracy mechanics). RUN session anchors the penalty-mitigation architecture for the post-nudge enquiry path.
+
+### Competitor URLs (session-side WebSearch at write time)
+
+`<!-- competitor section: per §16.31 Wave 8 + Wave 9 5/5 dead-rate pattern, Stage 2 did not pre-fetch firm-domain URLs. RUN session uses Google Search at write time. Recommended search queries: "HMRC nudge letter BADR Business Asset Disposal Relief", "Entrepreneurs Relief review HMRC nudge", "FHL BADR transitional FA 2025". Target: 3-5 firm-side pages from accountancy practice + tax-investigation specialist firms; differentiation from sibling A9 hold-over-nudge page in the same wave. -->`
+
+### Case-law
+
+- **Pawson v HMRC [2013] UKUT 50 (TCC)** — Upper Tribunal on the BPR trading/investment line; applies by analogy to the BADR trade/investment gate. RUN session cites at the why-BADR-fails-for-investment-property paragraph.
+- **McQuillan v HMRC [2017] STC 1657** — Upper Tribunal on the BADR personal-company test (ordinary-share-capital definition). RUN session cites at the s.169S 5% gate paragraph.
+- **Perrin v HMRC [2018] UKUT 156 (TCC)** — reasonable-excuse four-stage test, controlling authority for any late-response penalty appeal.
+- **Martland v HMRC [2018] UKUT 178 (TCC)** — late-appeal framework.
+
+## Worked-example data (RUN session uses these as canvas)
+
+### Example 1 — Former FHL operator who disposed in 2024/25 (transitional protection check)
+
+- **Aldridge Holiday Lets Ltd, the operator:** ran a furnished-holiday-let business meeting all four FHL conditions throughout 2022/23 and 2023/24. In December 2024 (2024/25 tax year) the operator sold the property and claimed BADR on a £200,000 gain at the 10% rate. Tax filed at £20,000.
+- **Trigger:** 2026 HMRC nudge letter asks the operator to confirm BADR eligibility given the FHL abolition.
+- **Statutory analysis:** FHL fell within BADR until 5 April 2025 abolition. The December 2024 disposal is pre-abolition, with a qualifying trading period running through to the disposal date. FA 2025 Schedule 5 Part 4 transitional protection preserves BADR for disposals where the qualifying trading conditions were met for the FA-prescribed period ending on the disposal date. The 2024/25 disposal qualifies for the pre-abolition 10% rate.
+- **Anti-forestalling check:** between 6 March 2024 (announcement) and 5 April 2025 (abolition) HMRC's anti-forestalling rules prevent artificial pre-abolition disposals. A bona fide arm's-length sale to an unconnected purchaser is not caught; a sale to a connected party at undervalue or with a buy-back arrangement may be.
+- **Effect:** the BADR claim survives if (a) the FHL met all four conditions through to the disposal date AND (b) the disposal is not anti-forestalling. The operator's claim is valid and the nudge response is "confirmed, transitional protection applies".
+
+### Example 2 — LtdCo property-portfolio director, BADR claim on share disposal
+
+- **Mawell Property Holdings Ltd, the director:** sold 100% of the shares in the LtdCo in 2025/26 for £1,800,000 (gain of £1,200,000 after base-cost computation). The director claimed BADR on the disposal, expecting the 14% in-year rate.
+- **Trigger:** 2026 HMRC nudge letter asks the director to confirm that the company is a TRADING company throughout the 2-year qualifying period under s.169I + s.169S.
+- **Statutory analysis:** s.169I(2)(c) covers disposal of shares in a "personal company". The company must be a TRADING company (or holding company of a trading group) throughout the 2-year period under s.169S. The LtdCo's activity is buy-to-let residential portfolio management — investment, not trading, per the Pawson analysis applied by analogy. The BADR claim fails the trading-company test.
+- **Effect:** the BADR claim is invalid. Gain is taxable at standard CGT rates: 24% on residential element / 20% on commercial element (or 18% / 14% pre-April-2026 transitional steps where applicable). On a £1,200,000 gain at standard residential rate of 24% the consequential tax is ~£288,000 versus the £168,000 BADR-claimed liability. Schedule 24 penalty exposure on the £120,000 under-assessment.
+
+### Example 3 — Personal-company 5% gate failure on share dilution
+
+- **Singh-Estate Property Ltd, the founding director:** held 8% of the ordinary share capital + 8% of voting rights at the start of the 2-year qualifying window. During the qualifying window an external investor injected capital; the founder's holding diluted to 4.5% of ordinary share capital + 5.2% of voting rights for the final 9 months before disposal.
+- **Trigger:** 2026 HMRC nudge letter asks the founder to confirm the s.169S 5%-throughout test.
+- **Statutory analysis:** s.169S(3) requires 5% of ordinary share capital + 5% of voting rights + 5% of distributable profits (FA 2018 amendment) THROUGHOUT the 2-year qualifying period. The 4.5% ordinary-share-capital reading for the final 9 months fails the test. The dilution event terminates the qualifying period; the founder cannot claim BADR on the share disposal.
+- **Effect:** BADR denied; gain taxed at standard rates. Sessions writing must NOT collapse "5% interest" — the test is tri-conditional and each limb must be met independently throughout the 2 years.
+
+### Example 4 — Mixed-use property disposal, partial trading element
+
+- **Carmichael Mixed-Use Ltd, the director:** owned a building with a shop on the ground floor (operated as the company's bakery trade) and 3 residential flats above let on standard ASTs. Sold the building in 2025/26 for £1,500,000. The director claimed BADR on the whole £600,000 gain.
+- **Trigger:** 2026 HMRC nudge letter asks the director to confirm the trading-vs-investment apportionment.
+- **Statutory analysis:** BADR applies to the trading portion only. The ground-floor bakery use qualifies; the residential lettings are investment. Apportionment is on a just and reasonable basis under HMRC's CG64115+ guidance — typically by floor area + rental-income contribution.
+- **Effect:** if ground-floor area is 40% of total + bakery sales contribute 35% of historic income, a just-and-reasonable apportionment might land on ~38% of the gain qualifying for BADR. The other ~62% is taxed at standard CGT rates. Sessions writing should NOT publish a single apportionment ratio — the methodology is fact-specific.
+
+## FAQ expansion (RUN session polishes prose; 10-12 FAQs target)
+
+1. **Q: What is Business Asset Disposal Relief and how does it differ from Entrepreneurs' Relief?**
+   A: Business Asset Disposal Relief (BADR) is the name given to Entrepreneurs' Relief from 6 April 2020 (renaming under Finance Act 2020 section 23). The mechanic is the same — a reduced rate of CGT on qualifying business disposals — but the lifetime cap was reduced from £10 million to £1 million on 11 March 2020 by Finance Act 2020 section 24.
+
+2. **Q: What is the current BADR rate?**
+   A: Per the §5 / Wave 2 lock, the rate trajectory is 10% pre-6-April-2025, 14% from 6 April 2025, and 18% from 6 April 2026 (aligning with the standard residential CGT lower-band rate). RUN session re-verifies the live rate at write time per §16.27 rate-by-reference discipline.
+
+3. **Q: Did Furnished Holiday Lets qualify for BADR?**
+   A: Yes, until 5 April 2025 abolition. FHL property fell within BADR on the basis that the FHL meets the four statutory conditions and is treated as trading for many CGT purposes. From 6 April 2025 the FHL regime is abolished by Finance Act 2025. Disposals during a pre-abolition qualifying trading period retain BADR via FA 2025 Schedule 5 Part 4 transitional protection.
+
+4. **Q: How does the FA 2025 Schedule 5 transitional protection work?**
+   A: FA 2025 Sch 5 Part 4 preserves BADR for qualifying disposals where the trading-period conditions were met up to the disposal date pre-abolition. Anti-forestalling rules between 6 March 2024 (announcement) and 5 April 2025 (abolition) prevent artificial pre-abolition disposals. Sessions reading the brief must verify the specific commencement architecture per FA 2025 Sch 5 Part 5 para 13 (CGT commencement) at write time.
+
+5. **Q: Why does BADR not apply to a buy-to-let LtdCo share disposal?**
+   A: TCGA 1992 s.169S requires the company to be a TRADING company (or holding company of a trading group) throughout the 2-year qualifying period. A buy-to-let property-portfolio LtdCo is investment, not trading, per the Pawson analysis applied by analogy to the BADR trade/investment line. The s.169I gateway fails for pure investment activity.
+
+6. **Q: What is the 2-year qualifying period?**
+   A: TCGA 1992 s.169I(3), as amended by FA 2019 s.39, requires the qualifying conditions to be met THROUGHOUT the 2 years ending on the disposal date. Before FA 2019 the period was 1 year. For share disposals the s.169S "personal company" + 5% economic-interest test must be met throughout the 2 years.
+
+7. **Q: What is the 5% economic-interest test under section 169S?**
+   A: Section 169S(3) requires three things to be met throughout the 2-year qualifying period: (i) 5% of the ordinary share capital; (ii) 5% of the voting rights; (iii) 5% of the distributable profits (added by Finance Act 2018). All three limbs must be met independently. Sessions writing must NOT collapse to "5% interest" — the test is tri-conditional.
+
+8. **Q: I received a BADR nudge letter. What are my options?**
+   A: Within the 60-day operational window, review the prior return and characterise the underlying transaction against the BADR conditions. If the claim is valid (trading company, 2-year qualifying period met, 5% gates met throughout, transitional protection applies for FHL), respond confirming. If the claim is invalid, self-correct via the Digital Disclosure Service for unprompted-disclosure mitigation under Schedule 24 FA 2007.
+
+9. **Q: What penalty exposure follows if my BADR claim was wrong?**
+   A: Schedule 24 FA 2007 inaccuracy penalties apply. Standard maxima are 30% careless, 70% deliberate, 100% deliberate-concealed. Mitigation floors apply on unprompted disclosure (0% non-deliberate per F-5 / Wave 7 lock, no 12-month qualifier on Sch 24 para 10). The amount at stake under a wrongly-claimed BADR can be material — the difference between 10%-18% (BADR) and 24% (standard residential) on a six-figure gain runs into tens of thousands.
+
+10. **Q: How does this nudge letter campaign compare with the hold-over relief campaign?**
+    A: Both campaigns share the operational "One Too Many" mechanic but operate on different statutory regimes. The hold-over campaign targets prior s.165 + s.260 claims (a CGT-deferral mechanic on gifts). The BADR campaign targets prior ss.169H-169SA claims (a CGT-rate reduction on qualifying business disposals). The failure points differ: BADR fails on the trading-company / 2-year / 5%-throughout tests; hold-over fails on the trade/investment line and the settlor-interested trust trap.
+
+11. **Q: What is the appeal route if HMRC issues an amended assessment?**
+    A: TMA 1970 s.31A provides a 30-day appeal window from the date of HMRC's amendment or assessment. Alternative Dispute Resolution (ADR) is available before formal escalation. The First-tier Tribunal hears statutory appeals; the Upper Tribunal in Perrin v HMRC [2018] UKUT 156 sets the reasonable-excuse four-stage test, and Martland v HMRC [2018] UKUT 178 governs late-appeal admission.
+
+12. **Q: Does BADR still offer a rate advantage from April 2026?**
+    A: Limited. From 6 April 2026 the BADR rate of 18% aligns with the standard residential CGT lower-band rate of 18%. BADR continues to offer a rate advantage against the higher-band 24% residential rate and the standard 20% commercial rate, but the relief's rate-advantage utility has narrowed substantially since the historic 10% rate. Planning decisions involving BADR should weigh the diminishing rate advantage against compliance complexity.
+
+## Universal rules + workflow stubs (RUN session follows)
+
+### Voice + style (verbatim per §4.8)
+
+- **No em-dashes** in body copy. Use commas, parentheses, full stops, middle dots, or restructure the sentence.
+- **Specific over generic.** Named legislation (TCGA 1992 ss.169H-169SA; FA 2020 ss.23 + 24; FA 2019 s.39; FA 2025 Sch 5 Parts 4 + 5; TMA 1970 s.29 + s.31A; Sch 24 FA 2007), specific section numbers, anonymised personas.
+- **No real names.** Anonymised personas (Aldridge Holiday Lets, Mawell Property Holdings, Singh-Estate Property, Carmichael Mixed-Use in the worked examples above).
+- **Lead-gen architecture:** `<LeadForm>` auto-injected at footer. Do not duplicate in body.
+- **CSS in markdown:** semantic HTML only. No Tailwind classes. `<aside>` styled by global CSS.
+- **FAQs:** 10-14 entries in frontmatter `faqs:` array, auto-emitted as FAQPage JSON-LD by the build.
+- **Anti-templating:** this page must hold the **BADR (ss.169H-169SA)** focus distinctly from sibling A9 hold-over-nudge-letter page (same campaign-mechanic framing, different statutory regime). Each H2 should reflect the BADR architecture, the rate trajectory (10% → 14% → 18%), the £1m lifetime cap, the FHL transitional protection, and the 5%-throughout gate — NOT the hold-over deferral mechanic or settlor-interested-trust framing. The £1m / £10m drift catch (stale historic figure) is the load-bearing factual lock for this page.
+- **Quality bar (six checks):** zero em-dashes, zero Tailwind, FAQ schema count matches frontmatter array, meta title ≤ 62 chars, meta description ≤ 158 chars, internal links resolve.
+
+### 19-step workflow (verbatim per §7)
+
+1. Read `house_positions.md` at session start (esp §5 BADR + FHL + CGT rate trajectory + §25.7 FA 2025 Sch 5 FHL transitional + §27 HMRC enquiry cluster + §27.1 discovery + §27.2 Sch 24).
+2. Claim this page in MW3 page tracker (⬜ → 🟡 with UTC timestamp).
+3. Read this brief (framing differentiator, key questions, manager pre-decisions, research target list).
+4. Fetch + read competitor URLs via session-side Google Search at write time (per §16.31 dead-rate pattern).
+5. Read closest-existing pages: sibling MW3 A9 hold-over-nudge-letter page (reciprocal pairing); A2 DDS umbrella; A13 late-filing penalties; any pillar pages on CGT for landlords or BADR.
+6. Plan H2 / H3 outline + meta + 10-14 FAQs + CTA placements — STRICTLY in the BADR / nudge-letter angle; no overlap with A9 hold-over-nudge structure.
+7. Verify factual claims against authorities per §16.35 (TCGA 1992 ss.169H + 169I + 169S + 169SA + FA 2020 ss.23 + 24 + FA 2025 Sch 5 Parts 4 + 5 + TMA 1970 s.29 + s.31A + Sch 24 FA 2007 verbatim WebFetched from legislation.gov.uk).
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write markdown at `Property/web/content/blog/hmrcs-nudge-letters-on-business-asset-disposal-relief.md` (full frontmatter list per §4).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none identified at Stage 2).
+13. Register in `monitored_pages` Supabase table.
+14. Commit on session's MW3 worktree branch (per-page commit; do NOT merge to main from worktree).
+15. Fill per-page work-log at bottom of this brief.
+16. Mark ✅ done in MW3 tracker with 1-line Notes (body word count + 1-sentence summary).
+17. Append site-wide issues to MW3 flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
 
 ## Work log (Stage 2 + RUN session populate)
 
-[Stage 2 + RUN session record their work here.]
+### Stage 2 author entry
+
+- **Stage 2 author:** MW3 Stage 2 Sub-Agent A (batch M3-A-B2) on 2026-05-27.
+- **Stage 2 extensions added:** authority URL list verified against legislation.gov.uk + gov.uk page paths (RUN session re-verifies live at write time per §16.31 + §16.35); 4 worked examples covering FHL transitional disposal, LtdCo investment-fails-trading-test, share-dilution 5%-gate failure, and mixed-use apportionment; 12 FAQs anchored to BADR architecture + rate trajectory + £1m cap + FHL transitional + 5%-throughout gate + sibling-A9 distinction; voice + style + 19-step workflow stubs verbatim per §4.8 + §7.
+- **§16.36 statutory-citation cross-check:** TCGA 1992 s.169H + s.169I + s.169S verified live 2026-05-27 (Stage 1 author + Stage 2 review); rate trajectory (10% / 14% / 18%) anchored to §5 Wave 2 lock; £1m lifetime cap (FA 2020 s.24 from 11 March 2020) verbatim-anchored to prevent drift to historic £10m figure; FA 2025 Sch 5 Part 4 FHL transitional verified against §25.7 Wave 6 capital allowances lock.
+- **Anti-templating note:** sibling A9 hold-over-nudge-letter page is the reciprocal pairing in MW3 Bucket A. Both pages share the nudge-letter campaign-mechanic framing; differentiation must be at the statutory level (BADR vs hold-over). RUN session must hold the line. The rate trajectory (10% / 14% / 18%) and the £1m / £10m drift catch are two load-bearing differentiators that have no analogue in the A9 hold-over page. The FHL transitional protection mechanic is a third A10-specific anchor.
+
+### RUN session entry (populate at write time)
+
+[RUN session records: H1 chosen, meta title + description chosen, competitor URLs fetched + key takeaways, existing-page review notes, citations added, internal links added, build attempts pass / fail, six-check verification, flags raised, 2-3 sentence summary.]
 
 ---
 
