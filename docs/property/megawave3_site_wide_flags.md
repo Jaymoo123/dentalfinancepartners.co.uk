@@ -165,3 +165,41 @@ Flags never block. Sessions continue work after flagging.
 **Status:** open, informational. Manager triages at Stage 1b.
 
 **RESOLUTION (2026-05-27, manager Stage 1b sign-off):** §27.10 HP-lock added (Disguised remuneration loan charge + settlement framework). Captures FA(No.2) 2017 Sch 11 + ITEPA 2003 Pt 7A + FA 2020 Sch 2 Morse + case-law. **F-2 CLOSED.**
+
+---
+
+## F-104 — BRIEF_DRIFT (SI title mis-citation) (Bucket C, Sub-Agent M3-C-B1 Stage 2)
+
+**Raised:** 2026-05-27 during Stage 2 verification of C4 (`air-bnb-and-post-covid`) seed.
+
+**Issue:** Stage 1 seed for C4 cited SI 2023/817 as "International Tax Compliance (Amendment) Regulations 2023" (described as the UK DAC7-equivalent platform-reporting instrument). Stage 2 WebFetch of `https://www.legislation.gov.uk/uksi/2023/817/contents` on 2026-05-27 returned the correct title: **"The Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023"**. The SI number is correct; the title was wrong. This is the operative UK instrument implementing OECD Model Reporting Rules for Digital Platforms (the DAC7-equivalent for the UK following Brexit, since DAC7 is an EU instrument).
+
+**Scope of drift:** Stage 2 corrected the citation in the C4 brief in-place. Pick 5 (`airbnb-landlords`) also references SI 2023/817 in the same incorrect framing — Stage 2 will apply the same correction to the C5 brief. No existing on-site Property pages cite this SI by title (confirmed via Stage 2 spot grep against `Property/web/content/blog/*.md` for "International Tax Compliance (Amendment) Regulations" — zero hits as of 2026-05-27).
+
+**Recommendation:** RUN session re-verifies the SI title at write time; corrected title used in all body prose. No HP-lock candidate raised (the SI itself is a procedural reporting instrument, not a statutory floor needing a §X lock).
+
+**Status:** open. Stage 2 + RUN responsibility. Will close at manager Stage 2b sign-off.
+
+---
+
+## F-105 — BRIEF_DRIFT (LURA 2023 section mis-citation, second-home council-tax premium) (Bucket C, Sub-Agent M3-C-B1 Stage 2)
+
+**Raised:** 2026-05-27 during Stage 2 verification of C4 (`air-bnb-and-post-covid`) seed.
+
+**Issue:** Stage 1 seed for C4 cited "LURA 2023 s.81 inserting Local Government Finance Act 1992 s.11C" as the statutory anchor for the up-to-100% council-tax premium on second homes from 1 April 2025. Stage 2 WebFetch of legislation.gov.uk on 2026-05-27 confirmed:
+
+- **LURA 2023 s.79 "Long-term empty dwellings: England"** — amends LGFA 1992 **s.11B** (long-term empty premium).
+- **LURA 2023 s.80 "Dwellings occupied periodically: England"** — amends LGFA 1992 to permit billing authorities to charge up to 100% premium on dwellings where "(a) there is no resident of the dwelling, and (b) the dwelling is substantially furnished". **This is the correct anchor for the second-home / periodically-occupied dwelling premium.**
+- **LURA 2023 s.81 "Alteration of street names: England"** — unrelated to council tax.
+
+So the seed cited the wrong section (s.81 should be s.80) AND the wrong LGFA target section (s.11C should be the s.80-amendment-target sections of LGFA 1992 — Stage 2 deferred mapping the exact LGFA s.11B / s.11C / s.11D landing point to RUN-time verification).
+
+**Scope of drift:** Stage 2 corrected the citation in the C4 brief in-place to "LURA 2023 s.80 amending LGFA 1992 (s.11B / s.11C / s.11D — verify at write)". Pick 5 (`airbnb-landlords`) also references LURA 2023 s.81 + LGFA 1992 s.11C in the same incorrect framing — Stage 2 applies the same correction to the C5 brief.
+
+**Pre-existing content scan (Stage 2 spot grep against `Property/web/content/blog/*.md` for "LURA 2023 s.81" + "LGFA 1992 s.11C"):** Stage 2 deferred the full sweep — RUN session and post-merge cleanup batch verify whether existing pre-MW3 Property pages carry the same drift and need a back-patch under §16.43 sub-agent dispatch pattern.
+
+**Recommendation:** (a) RUN session uses the corrected LURA 2023 s.80 anchor + verifies the LGFA 1992 amendment target section at write time. (b) Post-merge cleanup batch greps existing Property content for "LURA 2023 s.81" / "Levelling-up and Regeneration Act 2023 section 81" / "LGFA 1992 s.11C" and back-patches via sub-agent dispatch per §16.43 if hits surface.
+
+**Status:** open. Stage 2 + RUN responsibility. Site-wide back-patch deferred to post-merge cleanup.
+
+---
