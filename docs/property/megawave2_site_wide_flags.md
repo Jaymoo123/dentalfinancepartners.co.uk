@@ -211,6 +211,24 @@ The MW2 A8 seed (this batch) covers CT group-relief eligibility (the prior quest
 
 ---
 
+## F-7 — BRIEF_DRIFT + EXISTING_PAGE_STALE — CTA 2010 ss.464C + 464D OMITTED by FA 2025 s.81(3)(b)-(4) from 30 October 2024 (residual anti-avoidance is s.464A)
+
+**Raised by:** M2-A-B1 Stage 2 sub-agent (2026-05-27) via the A6 `directors-loan-accountsdla-uk-guide` brief WebFetch-verification of `https://www.legislation.gov.uk/ukpga/2010/4/section/464C`.
+**Bucket:** A (Limited company / BTL company operation — DLA anti-avoidance).
+**Touched picks:** A6 `directors-loan-accountsdla-uk-guide` (this batch — Stage 1 seed cited ss.464C/D as live primary anti-avoidance; corrected in-place during Stage 2 extension); possibly upstream-relevant for A4 pillar lever-map (lever 3 extraction mix discussion of DLA anti-avoidance) and any future MW2 pick touching DLA.
+
+**Issue.** Stage 1 seed for A6 cited CTA 2010 **s.464C + s.464D** as live primary anti-avoidance — the 30-day bed-and-breakfast specific rule + £15k intention-to-redraw extension. WebFetch verification 2026-05-27 against `https://www.legislation.gov.uk/ukpga/2010/4/section/464C` confirms: **ss.464C + 464D are OMITTED in full by Finance Act 2025 s.81(3)(b)-(4) from 30 October 2024.** The page returns only ellipses with the omission note. The residual anti-avoidance is now CTA 2010 **s.464A** (Charge to tax: arrangements conferring benefit on participator) — broader "arrangements" framework, dividend-upper-rate by-reference architecture matching s.455. Verified against `https://www.legislation.gov.uk/ukpga/2010/4/section/464A`.
+
+**Consolidation with prior site-wide F-10 (Wave 6 commit `195e895`).** This matches the existing F-10 site-wide back-patch flag noted at NETNEW_PROGRAM §16.42: "**F-10:** CTA 2010 ss.464C/464D omission propagated into pre-Wave-6 sister pages (Wave 1 B1 DLA mechanics, Wave 4 A1 DLA repayment strategy, possibly Wave 1 B7)". F-7 here is the **MW2-specific** instance — Stage 1 seed drift that survived Stage 1b sign-off and was caught at Stage 2.
+
+**Critical existing-page implication.** Existing page slug `directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d` literally encodes the omitted-section numbers in the slug. Back-patch options: (a) update the page content to cite s.464A current architecture + frame ss.464C/D historically (lower-effort; preserves SEO equity on the slug); (b) URL repoint via middleware to a new slug like `directors-loan-repayment-anti-avoidance-s464a` (heavier; loses some SEO equity but corrects the slug-encoded staleness). Decision deferred to wave-close manager.
+
+**How to apply.** Stage 2 extended A6 brief in-place to: (a) note the §16.40 drift catch verbatim in the Statutory anchor block; (b) cite s.464A as live current operative anti-avoidance; (c) include in the §21.A.2 + §21.1 do-not-write GREP discipline the new pattern "s.464C 30-day rule applies" (FALSE); (d) RUN session flags the existing-slug back-patch tension at step 5 of the 19-step workflow. Stage 1b reviewer / wave-close manager should consider adding s.464A + ss.464C/D-omission verbatim citation to the §21.1 lock for use by future DLA-touching picks.
+
+**§16.40 lesson confirmed.** Stage 2 statutory-citation cross-check gate (§16.36 baked into dispatch prompt) caught this drift in the Stage 1 seed. The pattern continues from Wave 6: per-write verification per §16.35 remains load-bearing even after Stage 1b sign-off.
+
+---
+
 ## F-50 — HOUSE_POSITION_EXTENSION — VAT artificial separation (Sch 1 para 2 directions) property-context floor
 
 **Raised by:** M2-B-B1 sub-agent (Stage 1, 2026-05-26).
