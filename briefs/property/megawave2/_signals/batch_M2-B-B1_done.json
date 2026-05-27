@@ -1,0 +1,40 @@
+{
+  "batch_id": "M2-B-B1",
+  "stage": 2,
+  "agent_id": "MW2-Stage2-B-RUN-leaf",
+  "completed_at": "2026-05-27T18:00:00Z",
+  "commit_shas": [
+    "542d527",
+    "66e58df",
+    "1075974",
+    "bc48d9f",
+    "fa5b3f8",
+    "8f7852b"
+  ],
+  "slugs_done": [
+    "a-complete-guide-to-family-investment-companies-fics",
+    "a-complete-guide-to-identity-verification-in-uk",
+    "artificial-separation-and-vat-key-insights-from-cases",
+    "beginners-guide-to-cis-verification-in-the-uk",
+    "claim-home-office-deduction-landlords",
+    "companies-house-emails-directors-for-identity-verification-under-new-rules"
+  ],
+  "flags_raised": [],
+  "drift_catches": [],
+  "url_verification_summary": {
+    "authority_urls_verified_live_at_stage1_or_stage2": "Stage 1 + Stage 2 sub-agents had verified the load-bearing statutory anchors verbatim: ECCTA 2023 s.64 (verified 2026-05-26 against legislation.gov.uk per B2/B6 cross-reference); VATA 1994 Sch 1 paras 1A + 2 (verified 2026-05-26 per B3); FA 2004 ss.63 + 69 (verified 2026-05-26 per B4); ITTOIA 2005 s.272 (verified 2026-05-26 per B5); CTA 2010 s.18N (verified 2026-05-26 per B1 carried from MW2 Bucket A pre-work). RUN session relied on those Stage 1/Stage 1b/Stage 2 verifications and the locked HP positions (§11.A Wave 9 mini-lock for ECCTA; §21.5/§22.6/§22.1/§22.5 for FIC; §29.12 new lock for VAT artificial separation; §33 new lock for CIS; §34 new lock for landlord allowable expenses + home-office cross-tax trap).",
+    "rate_by_reference_discipline": "All rate citations anchored to HP-locked positions or framed by-reference. B1 CT rates 19/25% (§21.A/§21.4); dividend rates 10.75/35.75/39.35% (§21.4 F-20 corrected); s.455 35.75% by-reference to ITA 2007 s.8(2) (§21.1 F-9 corrected). B3 VAT registration threshold £90,000 by-reference (§16.27). B4 CIS deemed-contractor £3m rolling-12-month threshold by-reference (§16.27 + §33). B5 simplified-flat-rate £10/£18/£26 + CGT rates 18%/24% by-reference (§16.27 + §34).",
+    "competitor_urls_attempted": 0,
+    "competitor_section_strategy": "Per Wave 8/9 + Stage 1b + MW2-A-B1 RUN-session precedent, competitor URLs not attempted by RUN; relied on Stage 2 sub-agent compiled URL lists and the locked HP positions."
+  },
+  "discoveries_logged": [
+    "D-21 LEAF-AGENT 6-PICK BATCH PROCEEDED CLEANLY — RUN session authored all 6 picks in sequence (B1 FIC definitional on-ramp, B2 ID-verification definitional on-ramp, B3 VAT artificial-separation case-law-led, B4 CIS verification process-led decision-tree, B5 home-office two-method deep-dive with CGT-trap differentiator, B6 Companies House email scam-vetting/news-led) without sub-agent dispatch, per Bug #7 fix. Each page committed individually on branch property-megawave2-b. No new flags raised at RUN-time.",
+    "D-22 ANTI-TEMPLATING CHECK PASSED ACROSS A 6-PAGE SET WITH DIFFERING FRAMING TIERS — B1 + B2 are definitional on-ramps (question-led H2s, ~3,500-word body length); B3 is case-law-led explainer (concept-led H2s + FTT-vignette opening + Glassborow anchor); B4 is process-led decision-tree (mixed Q&A + walkthrough H2s + property-business decision matrix); B5 is action-led deep-dive (worked-example density + the s.224(1) CGT-trap differentiator); B6 is news-led reactive scam-vetting (urgency cues + sender-domain authentication checklist). Personas cycled (multi-SPV portfolio family, FHL host, holiday-park husband-and-wife, CIS deemed-contractor, individual-landlord-with-home-office, multi-SPV-director-with-email).",
+    "D-23 CROSS-PICK COORDINATION ENFORCED — B1 (FIC on-ramp) cross-links forward to existing decision pillar + mechanics reference + sibling FIC cluster + B2/B6 ID-verification siblings (forward, not back). B2 (ID-verification on-ramp) cross-links forward to operational walkthrough + B6 + B18 US-director sibling + existing confirmation-statement page. B3 (VAT artificial separation) cross-links to existing VAT TOGC + option-to-tax + registration pillar; B3 is canonical entry point with no internal MW2-B sibling overlap. B4 (CIS verification) cross-links to existing reverse-charge page + landlord-expenses pillar; canonical entry point. B5 (home-office) cross-links to allowable-expenses pillar + PPR + incorporation decision; differentiator surfaces the CGT trap that the pillar page does not yet carry. B6 (CH email) cross-links to B2 + operational walkthrough + confirmation-statement page. No cross-pick contradictions.",
+    "D-24 OUT-OF-WAVE BACK-PATCH CANDIDATE LOGGED (carried from B5 brief Stage 2 work log) — landlord-expenses-allowable-uk-2026 pillar carries home-office at simplified-flat-rate-only depth and does NOT surface the TCGA 1992 s.224(1) PPR business-use restriction CGT trap. Recommend manager queue add cross-link to B5 from the pillar's home-office section on next pillar refresh. Logged here for visibility; not actioned in this RUN session per Bug #7 bounded-batch discipline."
+  ],
+  "anti_templating_check": "Six pages read as a distinct set across the three differentiator tiers active in this MW2 Stage 2 RUN lane. Tier 1 definitional on-ramps (B1 FIC + B2 ID-verification): question-led H2s, plain-language tone, funnel to deeper pages. Tier 2 specialist explainers (B3 VAT artificial separation case-law-led + B4 CIS process-led decision-tree + B5 home-office action-led deep-dive): concept- and action-led H2s, statute + worked-example density, mid-depth body. Tier 3 reactive on-ramp (B6 CH email scam-vetting + news-led): urgency cues, sender-domain authentication checklist, deadline framing, forward-link to B2 (definitional) + operational walkthrough. Boilerplate (no-em-dash, anonymised personas, internal-link cross-references) is verbatim per house style; substantive content distinct.",
+  "cross_pick_coordination_check": "B1 -> existing FIC decision pillar / mechanics reference / BPR myth / trust-vs-FIC / growth-shares / gifting-shares cluster + forward-link to B2/B6 ID-verification siblings. B2 -> existing ECCTA operational walkthrough + B6 sibling + B18 US-director sibling + existing confirmation-statement page. B3 -> existing VAT TOGC / option-to-tax / registration-threshold / FHL-VAT / reverse-charge / TOMS cluster (canonical entry point, no internal MW2-B overlap). B4 -> existing domestic-reverse-charge + landlord-expenses-allowable-uk-2026 (canonical entry point, no internal MW2-B overlap). B5 -> existing landlord-expenses pillar + PPR + 2027-incorporation-decision (CGT-trap differentiator; out-of-wave back-patch flag raised D-24 for the pillar's home-office section). B6 -> B2 + existing ECCTA operational walkthrough + existing confirmation-statement page. Cross-link directionality enforced: definitional on-ramps -> operational walkthroughs and pillars; specialist explainers -> canonical entry points with sibling cross-links to adjacent regimes (CIS <-> reverse charge, VAT artificial separation <-> threshold/TOGC); reactive on-ramp -> definitional sibling + operational walkthrough. No cross-pick contradictions.",
+  "branch": "property-megawave2-b",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave2-b (worktree on branch property-megawave2-b; per rolling-arch sub-agent drift bug note in MEMORY, manager will need to git merge --no-ff this branch into main at batch close)"
+}
