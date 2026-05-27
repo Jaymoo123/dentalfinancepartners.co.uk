@@ -75,3 +75,192 @@ Tone is plain-language with urgency cues (operational deadlines, scam-vetting ch
 
 ## Work log (Stage 2 + RUN session populate)
 [Stage 2 + RUN session record their work here. Stage 1 seed verifications: ECCTA 2023 s.64 ("Identity verification of persons with significant control") existence + heading verified verbatim via WebFetch per Pick 2 B2 cross-reference (same WebFetch result; not re-fetched at this Pick 6 emission). Other ECCTA section attributions (s.65, s.66, s.67, s.68, s.69, ss.40-45, ss.28-30, ss.51-52, ss.59-63) used here are pre-locked at house_positions.md §11.A (Wave 9 mini-lock, verified verbatim 2026-05-25 against legislation.gov.uk per F-10 / F-14 close) and treated as authoritative for Stage 1 seed purposes; Stage 2 sub-agent re-verifies each citation at write time per §16.35. Commencement dates pre-locked at §11.A per F-11 hardening 2026-05-25; Stage 2 + RUN sessions re-verify against the Companies House campaign page `https://changestoukcompanylaw.campaign.gov.uk/` at write time per §11.A discipline and per F-12 (do NOT use the deprecated `gov.uk/government/news/changes-to-uk-company-law` URL — 404). No new HP-lock candidate raised — this page sits squarely within the locked §11.A architecture; scam-vetting + Action Fraud / NCSC URLs are Stage 2 sub-agent verifications at write per §16.35. Cross-link discipline: this page forward-links to existing Wave 9 operational page + B2 + B7/B11/B18/B19/B20 sibling pages once shipped; do NOT re-walk their ground.]
+
+### Stage 2 extension log
+- **2026-05-27** — Stage 2 sub-agent (M2-B-B1) appended Competitor URLs, Closest-existing-pages cannibalisation context, Redirect-overlap check, Authority links, Universal rules, 19-step Workflow, and Per-page work-log skeleton (below). HP-lock thread CONFIRMED: §11.A Wave 9 mini-lock (locked 2026-05-25, signed off pre-MW2) + §11 main text — Stage 2 verified §11.A integrity unchanged since Stage 1 seed emission. No new HP-lock candidate raised by B6 (page sits squarely within locked §11.A architecture as a news-led / scam-vetting on-ramp). §16.36 statutory cross-check (Stage 2 brief-citation gate): ECCTA 2023 s.64 verbatim verified at Stage 1 cross-reference to B2 (carried forward — confirmed live URL). Other ECCTA section attributions (s.65, s.66, s.67, s.68, s.69, ss.40-45, ss.28-30, ss.51-52, ss.59-63, CA 2006 ss.853A-G) pre-locked at §11.A — Stage 2 sub-agent did NOT re-verify individually. RUN session re-verifies per §16.35 at write time; commencement-state dates re-verified against the Companies House campaign page per §11.A F-12 discipline. Action Fraud + NCSC URLs require RUN-time §16.31 liveness verification before publication (scam-vetting URLs change cadence is unpredictable).
+
+---
+
+## Competitor URLs (Stage 2 populated 2026-05-27; URL liveness verified at fetch time per §16.31)
+
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the genuine-vs-scam authentication checklist (sender domain, link-hover discipline, never-asks-for-payment); (b) the deadline-urgency framing (newly appointed roles immediate vs existing roles by next confirmation statement within transition window); (c) the per-natural-person multi-SPV reveal (one verification = all directorships); (d) the One Login vs ACSP route summary; (e) the consequences of ignoring the email; (f) the broader ECCTA-reforms framing. Mainstream press coverage (FT, Times, Telegraph) typically frames as news event; lead-firm pieces typically frame as compliance reminder. Companies House blog + Action Fraud are the authoritative anti-fraud sources. RUN session flags any competitor copy that asserts ID verification is voluntary post-18-November-2025 as drift (per §11.A do-not-write list).
+
+- https://changestoukcompanylaw.campaign.gov.uk/ (Companies House official campaign page — primary authoritative source; verify at write per §11.A)
+- https://companieshouse.blog.gov.uk/ (Companies House blog — operational rollout posts; verify recent post for email rollout campaign update)
+- https://www.bdo.co.uk/en-gb/insights/audit/regulatory-update/eccta-identity-verification (BDO ECCTA ID-verification briefing — professional-firm framing for email rollout)
+- https://www.saffery.com/insights/articles/eccta-identity-verification/ (Saffery ECCTA explainer — independent-firm framing)
+- https://www.icaew.com/insights/tax-news/eccta-identity-verification (ICAEW Tax Faculty AML + ACSP briefing — professional-body voice on email rollout)
+- https://www.actionfraud.police.uk/ (Action Fraud — Companies House-impersonation scam reporting; verify exact advisory URL at write)
+- https://www.ncsc.gov.uk/guidance/suspicious-email-actions (NCSC suspicious email guidance — for email-authentication framing; verify exact URL at write)
+
+**Borrowable patterns:** the sender-domain authentication checklist; the deadline-urgency framing; the per-natural-person multi-SPV reveal. Do NOT borrow any competitor copy that frames verification as "optional" post-18-November-2025 (per §11.A do-not-write); do NOT use the deprecated `gov.uk/government/news/changes-to-uk-company-law` URL (404 per §11.A F-12); do NOT borrow any scam-reporting URL without §16.31 liveness verification at write.
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "companies house identity verification email", "companies house email scam", "is this companies house email real", "companies house ID verification email what to do", "companies house emailing directors identity", "ECCTA email companies house", "verify identity companies house deadline", "what does companies house email mean".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos` (cannibal score ~0.62 — the **operational walkthrough**; **cross-link as the operational deep-dive** for landlord LtdCo directors; B6 sits adjacent as the news-led / scam-vetting on-ramp; differentiation = B6 is reactive trigger (email received), operational page is comprehensive walkthrough)
+- `a-complete-guide-to-identity-verification-in-uk` (B2 — sibling MW2 B-batch pick; **cross-link as the definitional / search-term on-ramp**; differentiation = B2 is curious-searcher upstream, B6 is email-recipient reactive)
+- `companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure` (~0.32 — confirmation statement reforms; **cross-link from question 10** for the broader ECCTA reforms framing; differentiation = B6 surfaces broader reforms at headline, confirmation-statement page deep-dives 4 March 2024 changes)
+
+**Cannibalisation discipline:**
+- Cross-link the operational walkthrough (`eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos`) heavily; do NOT re-walk the One Login vs ACSP route choice mechanics, per-company filing cadence, or sanctions deep-dive. B6 surfaces each at headline depth and forward-links.
+- Cross-link the B2 definitional on-ramp (`a-complete-guide-to-identity-verification-in-uk`) from question 10 for the broader ECCTA framework context.
+- Cross-link the confirmation-statement page from question 10 + question 4.
+- Sibling MW2 B-bucket pages (`companies-house-id-verification-begins-today` B7, `companies-house-tightens-id-rules-what-does-it-mean` B11, `how-us-based-directors-of-uk-companies-can-navigate-ecctas-new-identity-verification-rules` B18, `identity-verification-form` B19, `identity-verification-for-pscs-your-questions-answered` B20) ship in this MegaWave; B6 forward-links them in work log when slugs are live.
+- B6 + B2 cannibal-pair coordination: B6 is the operational-urgency / scam-vetting reactive entry point; B2 is the definitional / search-term curious entry point. Both forward-link to the same operational walkthrough but at different reader-state triggers. No CANNIBAL flag required — distinct intent + distinct framing differentiator.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing middleware redirect matches B6's slug or near-slugs (verified 2026-05-27 against `Property/web/src/middleware.ts`). No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-27; session selects 6-8)
+
+**Statutory (ECCTA 2023 + CA 2006):**
+- ECCTA 2023 c. 56 (contents): https://www.legislation.gov.uk/ukpga/2023/56/contents
+- ECCTA 2023 s.64 (Identity verification of persons with significant control — verified verbatim 2026-05-26): https://www.legislation.gov.uk/ukpga/2023/56/section/64
+- ECCTA 2023 s.65 (Procedure etc for verifying identity): https://www.legislation.gov.uk/ukpga/2023/56/section/65
+- ECCTA 2023 s.66 (Authorisation of corporate service providers — ACSP): https://www.legislation.gov.uk/ukpga/2023/56/section/66
+- ECCTA 2023 s.68 (Allocation of unique identifiers — Companies House personal code): https://www.legislation.gov.uk/ukpga/2023/56/section/68
+- ECCTA 2023 s.69 (Identity verification: material unavailable for public inspection): https://www.legislation.gov.uk/ukpga/2023/56/section/69
+- CA 2006 ss.853A-G (confirmation statement — as amended by ECCTA): https://www.legislation.gov.uk/ukpga/2006/46/section/853A
+
+**Companies House (operational guidance) + anti-fraud sources:**
+- Companies House campaign page (PRIMARY — verify at write per §11.A F-12): https://changestoukcompanylaw.campaign.gov.uk/
+- Companies House blog: https://companieshouse.blog.gov.uk/
+- gov.uk Verify your identity for Companies House: https://www.gov.uk/guidance/verify-your-identity-for-companies-house
+- Action Fraud: https://www.actionfraud.police.uk/ (verify exact Companies House-impersonation advisory URL at write per §16.31)
+- NCSC suspicious email guidance: https://www.ncsc.gov.uk/guidance/suspicious-email-actions (verify URL liveness at write per §16.31)
+
+**Cross-references in house_positions.md:** §11.A Wave 9 mini-lock (ECCTA 2023 Part 1 statutory architecture, commencement chain, ACSP framework, multi-SPV per-natural-person verification rule, do-not-write list); §11 main text (broader CH reforms timeline framing).
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + Companies House campaign page: (a) ECCTA 2023 s.64 + s.65 + s.66 + s.68 + s.69 verbatim text; (b) CA 2006 ss.853A-G as amended by ECCTA current text; (c) commencement chain (8 April 2025 voluntary opening; 18 November 2025 legal requirement for new directors/PSCs; ~November 2026 transition window end for existing roles) per Companies House campaign page; (d) accepted-documents list current state per gov.uk verify-your-identity page; (e) **scam-vetting URLs (Action Fraud + NCSC) §16.31 liveness verification at write — these change cadence is unpredictable; if either is dead at write time, replace with current equivalent + flag in work log**. **§16.36 statutory cross-check:** verify every section / subsection cited against legislation.gov.uk verbatim before transcription. **F-12 URL discipline:** do NOT cite the deprecated `gov.uk/government/news/changes-to-uk-company-law` URL (404 per §11.A F-12); use the campaign page URL only.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Plain-language with operational-urgency cues. Addressed to the email-recipient who is anxious about the legitimacy of the message + the deadline.
+- Specific worked frames using anonymised personas (Mawell-portfolio-director-5-SPVs; Patel-overseas-director-resident-in-Dubai; Singh-new-appointment-mid-November-2025); no real client names.
+- Named statute every time a rule is asserted (ECCTA 2023 s.64, s.65, s.66, s.68, s.69; CA 2006 ss.853A-G).
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 3 inline `<aside>` CTAs:
+  - After the genuine-vs-scam-checks section (high-intent: reader has just calibrated whether the email is real)
+  - After the deadline-urgency section (high-intent: reader has realised they need to action immediately)
+  - After the per-natural-person multi-SPV reveal (high-intent: landlord-LtdCo director realising one verification covers all SPVs and ready for the operational walkthrough)
+- Vary opening; do NOT lead with "The Economic Crime and Corporate Transparency Act 2023 introduced...". Open with the email-recipient scenario per the framing-differentiator instruction: "If you've just received an email from Companies House asking you to verify your identity, or you've heard that such emails are being sent and want to know if it'll happen to you, the first question is whether the email is genuine, and the second is what you actually have to do...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 10 to 12 for this action-led + scam-vetting tier. Include explicit FAQ on the per-natural-person rule (question 7), the overseas-director angle (question 8), and the email-says-wrong-role scenario (question 9).
+
+### Cannibalisation
+- Cross-link `eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos` as the operational walkthrough — heavily; do NOT re-walk One Login vs ACSP route choice deep-dive or per-company filing cadence.
+- Cross-link `a-complete-guide-to-identity-verification-in-uk` (B2 sibling — once shipped) as the definitional on-ramp.
+- Cross-link `companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure` from question 4 + question 10.
+- Sibling MW2 B-bucket pages (B7, B11, B18, B19, B20) forward-link from relevant questions once shipped.
+
+### House positions
+- §11.A primary (Wave 9 mini-lock — ECCTA 2023 Part 1 architecture + commencement chain + ACSP framework + multi-SPV rule + do-not-write list).
+- §11 (broader CH reforms timeline framing).
+- F-11 hardening of commencement dates (2026-05-25); use 18 November 2025 + ~November 2026 commencement chain.
+- F-12 URL discipline (use campaign page only).
+
+### Quality bar
+- Body word count: 1,800 to 2,200 (urgent / action-led; lower than the 3,000+ operational walkthrough and lower than B2's 2,000-2,400 definitional on-ramp).
+- FAQs: 10 to 12.
+- External authority links: 6 to 8.
+- Build clean: `cd Property/web && npm run build`.
+- All six verifications (0 em-dashes; 0 Tailwind classes; FAQ count match; meta title under 62; meta description under 158; internal links resolve).
+
+### Anti-templating
+- Differentiator is the **news-led / scam-vetting reactive on-ramp** structure targeting the email-recipient's urgent question (is this real? what do I do? how fast?), distinct from B2's curious-searcher definitional on-ramp and the operational walkthrough's comprehensive deep-dive. Write to it.
+- Lead with the email-recipient scenario per the framing-differentiator counter-pattern; do NOT open with "The Economic Crime and Corporate Transparency Act 2023 introduced...".
+- Vary H2s; action-led + scam-vetting ("Is this email genuine — how can I tell?", "What does the email actually require?", "How fast do I need to act?", "What if I ignore it?", "How does the verification process work?") rather than definitional or mechanic-led.
+- Operational-urgency tone calibrated to reader's reactive context (different from B2's curious tone, different from the operational page's comprehensive tone).
+- Vary FAQ phrasing; do NOT reuse phrasings from B2 or the operational page.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. §11.A primary; §11 adjacent.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end.
+4. Fetch competitor URLs via httpx + BeautifulSoup. Note any drift against §11.A do-not-write list (most common competitor drift: framing verification as "optional" post-18-November-2025; under-surfacing the scam-vetting angle).
+5. Read closest existing pages: `eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos`, `a-complete-guide-to-identity-verification-in-uk` (B2 sibling — verify shipped before claiming), `companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure`. Decide differentiation (news-led / scam-vetting reactive on-ramp).
+6. Plan H2 outline + meta + FAQs + CTA placements. Use action-led + scam-vetting H2 structure. Lead with email-recipient scenario.
+7. Verify factual claims; **per §16.35: re-verify ECCTA 2023 s.64 + s.65 + s.66 + s.68 + s.69 verbatim; CA 2006 ss.853A-G verbatim; commencement chain (18 November 2025 + ~November 2026) at Companies House campaign page; accepted-documents list at gov.uk verify-your-identity page; Action Fraud + NCSC URLs §16.31 liveness — REPLACE if dead and flag in work log**.
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`. Query suggestion: "email notification laptop" or "letter from authority paperwork".
+9. Write markdown at `Property/web/content/blog/companies-house-emails-directors-for-identity-verification-under-new-rules.md` with full frontmatter (slug, category, title, metaTitle, metaDescription, faqs, reviewer, dates, hero image).
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on main per rolling-architecture RUN-phase convention.** Commit message format: `MW2 RUN B-B1: companies-house-emails-directors-for-identity-verification-under-new-rules page (M2-B-B1 pick B6)`.
+15. Fill in the per-page work-log below.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append any site-wide issues to `megawave2_site_wide_flags.md` (F-50 to F-99 range for Bucket B).
+18. Append discoveries to `megawave2_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+-
+
+### Existing-page review
+-
+
+### Citations added
+-
+
+### Internal links added
+-
+
+### Inline CTA placements
+-
+
+### Build attempts
+-
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave2_site_wide_flags.md
+-
+
+### 2-3 sentence summary
+-
