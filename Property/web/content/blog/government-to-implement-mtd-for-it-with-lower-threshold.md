@@ -53,7 +53,7 @@ reviewedAt: "2026-05-28"
 
 <h2>The three-phase MTD ITSA mandate timeline</h2>
 
-<p>The mandate framework sits at Schedule A1 of the Finance (No. 2) Act 2017 and is operative under the Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076 as amended). The three phases:</p>
+<p>The mandate framework sits at Schedule A1 of the Finance (No. 2) Act 2017 and is operative under the Income Tax (Digital Obligations) Regulations 2026 (SI 2026/336), which revoked the earlier Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076) on 1 April 2026. Substantive mechanics carry over; the regulation numbers have migrated (qualifying income at reg 25, qualifying amount at reg 27, three-year income-exit at reg 24). The three phases:</p>
 
 <ul>
 <li><strong>Phase 1:</strong> mandate from 6 April 2026 for qualifying income above £50,000. Determining return: 2024/25 SA return. Newly-mandated cohort estimated at around 130,000 landlords and self-employed taxpayers.</li>
@@ -218,7 +218,7 @@ reviewedAt: "2026-05-28"
 <p>For some landlords, incorporation is an attractive route out of MTD ITSA compliance overhead. For others, the cost of incorporation outweighs the saving:</p>
 
 <ul>
-<li><strong>SDLT on transfer:</strong> properties transferred from individual to LtdCo attract SDLT at market value, with the 3% additional-property surcharge plus residential rates. For a £400,000 BTL portfolio, SDLT on incorporation can be £24,000 or more.</li>
+<li><strong>SDLT on transfer:</strong> properties transferred from individual to LtdCo attract SDLT at market value, with the 5% additional-property surcharge plus residential rates (the surcharge was raised from 3% to 5% on 31 October 2024 by FA(No.2) 2024). For a £400,000 BTL portfolio, SDLT on incorporation is around £30,000.</li>
 <li><strong>CGT on transfer:</strong> the disposal from individual to LtdCo is a market-value disposal for CGT purposes, with chargeable gains crystallising. Incorporation relief under TCGA 1992 section 162 can defer the gain in narrow circumstances (where the property business meets the trade test, which is rare for passive BTL portfolios).</li>
 <li><strong>Ongoing CT compliance:</strong> the CT600 cycle plus statutory accounts plus confirmation statement plus PAYE for director salary plus dividend documentation is a meaningful compliance overhead, although it is annual rather than quarterly.</li>
 <li><strong>Dividend extraction:</strong> profits taken out of the LtdCo as dividends attract income tax at 8.75% / 33.75% / 39.35% (basic / higher / additional rates), on top of the 19% / 25% CT layer.</li>

@@ -10,21 +10,21 @@ metaDescription: "Qualifying income is gross rent plus gross self-employment tur
 altText: "UK landlord at a desk with rental statements and a laptop showing the gov.uk MTD ITSA mandate checker page"
 image: ""
 h1: "What Is Qualifying Income for MTD? The Technical Threshold-Test Definition for UK Landlords (April 2026 Onwards)"
-summary: "Qualifying income under SI 2021/1076 regulation 20 is gross self-employment turnover plus gross property rental income, before deductions, aggregated across the two streams in the test year. The threshold figures (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) are gross figures, not net profits. A landlord with £52,000 gross rental income and £40,000 of allowable deductions (£12,000 net profit) is in scope at the April 2026 mandate; the intuitive net-profit-based test produces the wrong answer. The aggregation rule combines self-employment and rental streams: £30,000 of trade plus £25,000 of rental equals £55,000 combined and pulls a landlord-trader into scope at April 2026. Excluded from qualifying income: employment income (PAYE), pensions, dividends, savings interest, partnership profit shares (until the deferred partnership phase commences), limited company rental (the company's CT-side income), and pension fund (SIPP / SSAS) rental (the scheme's income). The letting-agent net-of-fees trap: a landlord must test against gross rent collected by the agent, not the net paid to the landlord after agent commission and management fees. Joint-property treatment: each owner tests their share of gross under regulation 21 (default 50/50, or per the Form 17 election where filed)."
+summary: "Qualifying income under SI 2026/336 regulation 25 (which replaced SI 2021/1076 regulation 20 on 1 April 2026 when the new Income Tax (Digital Obligations) Regulations 2026 revoked the prior 2021 Regulations) is gross self-employment turnover plus gross property rental income, before deductions, aggregated across the two streams in the test year. The threshold figures (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) are gross figures, not net profits. A landlord with £52,000 gross rental income and £40,000 of allowable deductions (£12,000 net profit) is in scope at the April 2026 mandate; the intuitive net-profit-based test produces the wrong answer. The aggregation rule combines self-employment and rental streams: £30,000 of trade plus £25,000 of rental equals £55,000 combined and pulls a landlord-trader into scope at April 2026. Excluded from qualifying income: employment income (PAYE), pensions, dividends, savings interest, partnership profit shares (until the deferred partnership phase commences), limited company rental (the company's CT-side income), and pension fund (SIPP / SSAS) rental (the scheme's income). The letting-agent net-of-fees trap: a landlord must test against gross rent collected by the agent, not the net paid to the landlord after agent commission and management fees. Joint-property treatment: each owner tests their share of gross (default 50/50, or per the Form 17 election where filed)."
 schema: ""
 faqs:
   - question: "What is qualifying income for MTD ITSA?"
-    answer: "Qualifying income under SI 2021/1076 regulation 20 is gross self-employment turnover plus gross property rental income, before deductions, aggregated across the two streams in the test year. The threshold figures (£50,000 from April 2026, £30,000 from April 2027, £20,000 from April 2028) are gross figures, not net profit after expenses. The threshold test is at the top-line gross, not the bottom-line net."
+    answer: "Qualifying income under SI 2026/336 regulation 25 (which replaced SI 2021/1076 regulation 20 on 1 April 2026 when the new Income Tax (Digital Obligations) Regulations 2026 revoked the 2021 Regulations) is gross self-employment turnover plus gross property rental income, before deductions, aggregated across the two streams in the test year. The threshold figures (£50,000 from April 2026, £30,000 from April 2027, £20,000 from April 2028) are gross figures, not net profit after expenses. The threshold test is at the top-line gross, not the bottom-line net."
   - question: "Why is the gross-not-net point so important?"
     answer: "It is the single most common misconception about the MTD ITSA threshold test. A landlord with £52,000 gross rental income and £40,000 of allowable deductions (£12,000 net profit) is in scope at the April 2026 mandate, despite the £12,000 net profit being well below the £50,000 figure. The Section 24 mortgage-interest restriction makes this worse: restricted finance costs reduce net profit substantially while leaving gross rental income unchanged. Net-low / gross-high landlords are the largest population HMRC's outreach is targeting."
   - question: "How does aggregation work if I have both trade and rental income?"
-    answer: "SI 2021/1076 regulation 20 aggregates the two streams for the threshold test. £30,000 of self-employment trade turnover plus £25,000 of rental gross equals £55,000 combined qualifying income, which is above the £50,000 April 2026 threshold. Either stream alone may be below the threshold but the combined total triggers the mandate. The aggregation rule trips landlord-traders who think 'neither my trade nor my rental alone is above the threshold, so I am out of scope'."
+    answer: "SI 2026/336 regulation 25 (replacing SI 2021/1076 regulation 20 from 1 April 2026) aggregates the two streams for the threshold test. £30,000 of self-employment trade turnover plus £25,000 of rental gross equals £55,000 combined qualifying income, which is above the £50,000 April 2026 threshold. Either stream alone may be below the threshold but the combined total triggers the mandate. The aggregation rule trips landlord-traders who think 'neither my trade nor my rental alone is above the threshold, so I am out of scope'."
   - question: "What is excluded from qualifying income?"
     answer: "Employment income (PAYE), pensions, dividends, savings interest, partnership profit shares (until the partnership phase commences; the partnership start date is currently deferred with no confirmed date), and overseas property income reported via specific non-MTD routes (such as Non-Resident Landlord scheme reporting). Foreign property income generally counts as property income for MTD where reported on the UK return; the foreign-property exclusion is narrow. Limited-company rental income and pension-fund-held property rental are also excluded as cross-stream boundaries."
   - question: "What is the threshold timeline?"
     answer: "From 6 April 2026, mandatory for those with qualifying income above £50,000, tested against the 2024/25 SA return filed by 31 January 2026. From 6 April 2027, mandatory for those above £30,000, tested against 2025/26. From 6 April 2028, mandatory for those above £20,000, tested against 2026/27. HMRC writes to taxpayers who appear in scope based on the SA return; the obligation is the taxpayer's regardless of whether the HMRC letter arrives."
   - question: "How does joint-property ownership affect the threshold test?"
-    answer: "SI 2021/1076 regulation 21 governs joint-property treatment. Each owner tests their share of gross rental income against the threshold, not the property's total gross. Default 50/50 split applies absent a Form 17 election. A Form 17 election that splits 75/25 brings the 75% spouse into scope earlier than the 25% spouse on the same property. HMRC's published view is that joint-owner threshold testing follows the SA income-split rule applied to the joint property, not a separate joint-test rule."
+    answer: "Under SI 2026/336 (in force from 1 April 2026), joint-property treatment tests each owner's share of gross rental income against the threshold, not the property's total gross. Default 50/50 split applies absent a Form 17 election. A Form 17 election that splits 75/25 brings the 75% spouse into scope earlier than the 25% spouse on the same property. HMRC's published view is that joint-owner threshold testing follows the SA income-split rule applied to the joint property, not a separate joint-test rule."
   - question: "What is the letting-agent net-of-fees trap?"
     answer: "A landlord using a letting agent receives monthly statements showing gross rent collected by the agent, agent commission and management fees deducted, and net paid to the landlord's bank account. The MTD ITSA threshold test must use the gross rent collected by the agent, not the net paid to the landlord. Reporting 'net of agent fees' as gross income understates qualifying income and may incorrectly conclude below the threshold for borderline landlords. A landlord with £60,000 gross collected and £8,000 agent fees plus management is at £60,000 for threshold purposes, not £52,000."
   - question: "What if I have personal-name property AND a property limited company?"
@@ -32,7 +32,7 @@ faqs:
   - question: "What if I have a SIPP or SSAS holding commercial property?"
     answer: "Pension fund trustees are excluded from MTD ITSA. The SIPP or SSAS rental income is the scheme's income, not the landlord's, and is not aggregated with personal-portfolio rental for the threshold test. The landlord with both personal portfolio and SIPP-held property tests only the personal-portfolio gross against the mandate threshold. The pension fund files via its own reporting framework (annual SIPP / SSAS administrator filings, not the landlord's SA return)."
   - question: "How does foreign property income count?"
-    answer: "Foreign property income counts as property income for MTD where reported on the UK return, which is the most common scenario for UK-tax-resident landlords with overseas property. The narrow exclusion is for specific non-MTD reporting routes, such as where the income is reported via the Non-Resident Landlord scheme for non-resident landlords or via other non-MTD reporting channels. Verify the specific reporting route at write time; the boundary is in regulation 20 and the related HMRC guidance."
+    answer: "Foreign property income counts as property income for MTD where reported on the UK return, which is the most common scenario for UK-tax-resident landlords with overseas property. The narrow exclusion is for specific non-MTD reporting routes, such as where the income is reported via the Non-Resident Landlord scheme for non-resident landlords or via other non-MTD reporting channels. Verify the specific reporting route at write time; the boundary is in regulation 25 of SI 2026/336 and the related HMRC guidance."
   - question: "Can I opt into MTD ITSA voluntarily if I am below the threshold?"
     answer: "Yes. Voluntary participation is available from 6 April 2025 (pilot) or 6 April 2026 (general voluntary). Voluntary participants are bound by the quarterly cycle and the FA 2021 Schedule 24 plus Spring Statement 2025 penalty regimes for the periods they participate. Voluntary opt-in is most useful for landlords whose income is trending upward, who anticipate crossing the threshold soon, and who want to test the cycle in a planning window before the mandate bites."
   - question: "I have heard about a £10,000 threshold. What is that?"
@@ -45,13 +45,13 @@ reviewedAt: "2026-05-28"
 
 <p>The Making Tax Digital for Income Tax Self Assessment threshold test is at the gross figure. Not the net. The single point that produces more wrong answers than anything else in MTD readiness conversations is this: a landlord intuitively thinks of their tax position as net rental profit after expenses, and they intuitively apply the £50,000 (or £30,000, or £20,000) threshold to that net figure. The test is not net-based. It is gross-based, and the difference between gross and net for a typical property business is substantial. A landlord with £52,000 of gross rental income and £40,000 of allowable deductions (producing £12,000 of net profit) is in scope of the April 2026 mandate. The £12,000 net profit is irrelevant to the threshold test; the £52,000 gross figure is what matters.</p>
 
-<p>This page is the technical-definition layer of the MTD ITSA pillar. It is the page to read when you are at the threshold-test moment (typically the year before each successive mandate date), and you need a yes / no answer on whether you are in scope. It walks the regulation 20 definition under SI 2021/1076, the aggregation rule, the exclusion catalogue, the joint-property treatment, the letting-agent trap, and the cross-stream boundaries to limited companies and pension funds. Six worked examples follow, each chosen for a specific definitional point that lands more sharply through illustration than through abstract text.</p>
+<p>This page is the technical-definition layer of the MTD ITSA pillar. It is the page to read when you are at the threshold-test moment (typically the year before each successive mandate date), and you need a yes / no answer on whether you are in scope. It walks the regulation 25 definition under SI 2026/336 (which replaced SI 2021/1076 regulation 20 on 1 April 2026), the aggregation rule, the exclusion catalogue, the joint-property treatment, the letting-agent trap, and the cross-stream boundaries to limited companies and pension funds. Six worked examples follow, each chosen for a specific definitional point that lands more sharply through illustration than through abstract text.</p>
 
 <p>The companion pages cover wider angles. Our MTD orientation page is the four-axis system-overhaul overview. Our joint-owner page is the primary deep-dive for spouses and other joint owners. Our exit-on-income-drop page covers the regulation 22 three-tax-year exemption. Our limited-company MTD page covers the LtdCo cross-stream boundary in detail. This page is the input-definition deep-dive; the others cover what happens once you have the answer.</p>
 
-<h2>The regulation 20 definition</h2>
+<h2>The regulation 25 definition (SI 2026/336)</h2>
 
-<p>SI 2021/1076 regulation 20 defines qualifying income for the MTD ITSA threshold test. The operative components:</p>
+<p>SI 2026/336 regulation 25 defines qualifying income for the MTD ITSA threshold test. The new SI revoked SI 2021/1076 on 1 April 2026; the substantive definition carries over from the prior regulation 20 of the 2021 Regulations with the regulation number renumbered to 25 under the 2026 Regulations. The operative components:</p>
 
 <ul>
 <li><strong>Gross self-employment turnover.</strong> Turnover from any UK-taxable trade or profession run by the individual, before deductions for expenses, capital allowances, or any other adjustments. The Adam Smith definition of turnover: what the customers paid for the goods and services in the period.</li>
@@ -60,7 +60,7 @@ reviewedAt: "2026-05-28"
 <li><strong>Test year.</strong> The threshold is tested against the SA return for the relevant test year. For the April 2026 mandate, the test year is 2024/25 (SA return filed by 31 January 2026). For April 2027, 2025/26. For April 2028, 2026/27.</li>
 </ul>
 
-<p>The definition is procedurally simple but operationally consequential. The gross-not-net point is the difference between being in scope or out for a meaningful proportion of the landlord population. Sessions writing must lead with the gross-not-net headline; it is the page's load-bearing pedagogical line.</p>
+<p>The definition is procedurally simple but operationally consequential. The gross-not-net point is the difference between being in scope or out for a meaningful proportion of the landlord population.</p>
 
 <h2>Why the gross-not-net point matters more than any other input</h2>
 
@@ -72,7 +72,7 @@ reviewedAt: "2026-05-28"
 
 <h3>Landlord intuition runs the wrong way</h3>
 
-<p>Most landlords think about their tax position in net terms. "How much did I actually make from the property this year." That mental model is correct for income-tax-liability purposes (the tax is computed on net rental profit, with the Section 24 adjustment for finance costs) but wrong for the MTD ITSA threshold test. The regulation 20 definition prioritises the gross figure for scope purposes precisely because the gross figure is more stable and less judgement-laden than the net (no expense categorisation arguments, no capital-vs-revenue boundary calls).</p>
+<p>Most landlords think about their tax position in net terms. "How much did I actually make from the property this year." That mental model is correct for income-tax-liability purposes (the tax is computed on net rental profit, with the Section 24 adjustment for finance costs) but wrong for the MTD ITSA threshold test. The regulation 25 definition prioritises the gross figure for scope purposes precisely because the gross figure is more stable and less judgement-laden than the net (no expense categorisation arguments, no capital-vs-revenue boundary calls).</p>
 
 <h3>HMRC is targeting the net-low / gross-high cohort</h3>
 
@@ -80,7 +80,7 @@ reviewedAt: "2026-05-28"
 
 <h2>The aggregation rule for trade and rental crossover</h2>
 
-<p>Regulation 20 aggregates self-employment turnover and rental income for the threshold test. A landlord-trader who runs a small consultancy and holds a BTL property is tested on the combined figure.</p>
+<p>Regulation 25 of SI 2026/336 aggregates self-employment turnover and rental income for the threshold test. A landlord-trader who runs a small consultancy and holds a BTL property is tested on the combined figure.</p>
 
 <p>Worked combinations:</p>
 
@@ -95,7 +95,7 @@ reviewedAt: "2026-05-28"
 
 <h2>What is excluded from qualifying income</h2>
 
-<p>Six categories sit outside the regulation 20 definition. Each has an operational reason.</p>
+<p>Six categories sit outside the regulation 25 definition. Each has an operational reason.</p>
 
 <h3>Employment income (PAYE)</h3>
 
@@ -149,9 +149,9 @@ reviewedAt: "2026-05-28"
 
 <p>Pevensey-Estate reads the accountant's summary showing £12,000 net rental profit. The intuitive reasoning: "I only made £12,000 this year, well below the £50,000 threshold; I am not in scope of MTD ITSA at April 2026."</p>
 
-<h3>The regulation 20 test</h3>
+<h3>The regulation 25 test</h3>
 
-<p>SI 2021/1076 regulation 20 tests gross rental income, not net profit. Pevensey-Estate's gross figure is £52,000, which is above the £50,000 April 2026 threshold. Pevensey-Estate is in scope from 6 April 2026.</p>
+<p>SI 2026/336 regulation 25 tests gross rental income, not net profit. Pevensey-Estate's gross figure is £52,000, which is above the £50,000 April 2026 threshold. Pevensey-Estate is in scope from 6 April 2026.</p>
 
 <h3>The Section 24 dimension</h3>
 
@@ -159,7 +159,7 @@ reviewedAt: "2026-05-28"
 
 <h3>The operational point</h3>
 
-<p>Pevensey-Estate is the headline misconception. The Wave 3 lock on this regime ("Net-low / gross-high landlords are the largest population HMRC's outreach is targeting") describes exactly the Pevensey-Estate profile. The takeaway: check the gross figure on the SA return when assessing MTD scope, not the net profit.</p>
+<p>Pevensey-Estate is the headline misconception. The "net-low / gross-high" landlords are the largest population HMRC's outreach is targeting. The takeaway: check the gross figure on the SA return when assessing MTD scope, not the net profit.</p>
 
 <h2>Worked example 2: aggregation across trade and rental</h2>
 
@@ -169,9 +169,9 @@ reviewedAt: "2026-05-28"
 
 <p>Neither stream alone is above the £50,000 threshold (£30,000 trade is below; £25,000 rental is below). The intuitive reasoning: "I am out of scope at April 2026 because neither stream alone crosses £50,000."</p>
 
-<h3>The regulation 20 test</h3>
+<h3>The regulation 25 test</h3>
 
-<p>Regulation 20 aggregates the two streams. £30,000 trade plus £25,000 rental equals £55,000 combined qualifying income, which is above £50,000. Quenington-Estate is in scope from 6 April 2026 via aggregation.</p>
+<p>Regulation 25 of SI 2026/336 aggregates the two streams. £30,000 trade plus £25,000 rental equals £55,000 combined qualifying income, which is above £50,000. Quenington-Estate is in scope from 6 April 2026 via aggregation.</p>
 
 <h3>The operational point</h3>
 
@@ -183,7 +183,7 @@ reviewedAt: "2026-05-28"
 
 <h3>Default 50/50 threshold test</h3>
 
-<p>Each spouse tests £50,000 (the 50% share of the £100,000 total) against the £50,000 April 2026 threshold. The regulation 20 phrasing requires income "above" £50,000; £50,000 itself is not above £50,000. Neither spouse is in scope at April 2026 on the default 50/50 split. Both spouses come in scope at April 2027 when the £30,000 threshold engages (£50,000 is above £30,000).</p>
+<p>Each spouse tests £50,000 (the 50% share of the £100,000 total) against the £50,000 April 2026 threshold. The regulation 25 phrasing requires income "above" £50,000; £50,000 itself is not above £50,000. Neither spouse is in scope at April 2026 on the default 50/50 split. Both spouses come in scope at April 2027 when the £30,000 threshold engages (£50,000 is above £30,000).</p>
 
 <h3>Form 17 75/25 threshold test</h3>
 
@@ -193,9 +193,9 @@ reviewedAt: "2026-05-28"
 
 <p>The Form 17 election is principally a tax-planning instrument: it uses both spouses' Personal Allowances and lower-rate bands to reduce the combined income-tax bill on the rental income. The MTD ITSA threshold-testing consequence is a secondary effect. For the Rochester-Estate facts, the 75/25 election brings the higher-share spouse into MTD ITSA scope one year earlier than would otherwise be the case. The income-tax saving from the Form 17 election typically dominates the additional MTD admin cost, but the timing-of-MTD-adoption dimension is worth noting in the planning conversation.</p>
 
-<h3>The regulation 21 anchor</h3>
+<h3>The joint-property anchor</h3>
 
-<p>SI 2021/1076 regulation 21 governs joint-property treatment. The share-of-gross rule is anchored there. HMRC's published view is that joint-owner threshold testing follows the SA income-split rule applied to the joint property (default 50/50 or Form 17 election as filed), not a separate MTD-specific joint-test rule.</p>
+<p>Under SI 2026/336 (which from 1 April 2026 replaced the joint-property treatment previously at SI 2021/1076 regulation 21), each joint owner tests their share of gross rental income against the threshold. The share-of-gross rule operates per individual. HMRC's published view is that joint-owner threshold testing follows the SA income-split rule applied to the joint property (default 50/50 or Form 17 election as filed), not a separate MTD-specific joint-test rule.</p>
 
 <h2>Worked example 4: the letting-agent net-of-fees trap</h2>
 
@@ -207,15 +207,13 @@ reviewedAt: "2026-05-28"
 
 <h3>The borderline-facts variant</h3>
 
-<p>Stapleford-Lite-Estate has a smaller portfolio. 2024/25 agent statements show: gross rent collected £52,000; agent commission and management £8,000; net paid £44,000. The "net-paid-as-rental" framing gives £44,000, which is below the £50,000 threshold; the landlord would conclude not in scope at April 2026. The correct regulation 20 framing uses the gross collected by the agent (£52,000), which is above the threshold; the landlord is in scope from April 2026. The misframing flips the answer.</p>
+<p>Stapleford-Lite-Estate has a smaller portfolio. 2024/25 agent statements show: gross rent collected £52,000; agent commission and management £8,000; net paid £44,000. The "net-paid-as-rental" framing gives £44,000, which is below the £50,000 threshold; the landlord would conclude not in scope at April 2026. The correct regulation 25 framing uses the gross collected by the agent (£52,000), which is above the threshold; the landlord is in scope from April 2026. The misframing flips the answer.</p>
 
 <h3>The regulation framework</h3>
 
 <p>The landlord is the MTD filer (not the letting agent). The threshold-test input must use the gross rent collected by the agent (the figure before any deductions, however administered). The agent commission, management fees, and other agent-administered deductions are allowable expenses against the rental income for income-tax purposes; they are not netted off the gross figure for MTD ITSA threshold testing.</p>
 
-<h3>The discipline</h3>
-
-<p>When testing the MTD threshold for an agent-managed portfolio, request the agent statement summary showing gross rent collected for the tax year. The figure may differ materially from the net-paid-to-landlord figure on bank statements. Use the gross figure. Sessions writing must teach this with a specific example where the misframing flips the answer.</p>
+<p>When testing the MTD threshold for an agent-managed portfolio, request the agent statement summary showing gross rent collected for the tax year. The figure may differ materially from the net-paid-to-landlord figure on bank statements. Use the gross figure.</p>
 
 <h2>Worked example 5: the limited-company cross-stream boundary</h2>
 
@@ -257,7 +255,7 @@ reviewedAt: "2026-05-28"
 
 <p>Foreign property income counts as property income for MTD where reported on the UK return. For a UK-tax-resident landlord who owns a Spanish holiday let or a French apartment and reports the foreign rental on the UK SA return under the foreign-property pages, the gross foreign rental is qualifying income alongside any UK rental.</p>
 
-<p>The narrow exclusion applies to non-MTD reporting routes. A non-resident landlord whose UK rental is reported under the Non-Resident Landlord scheme with 20% withholding (where no NRL1 gross-payment approval is in place) is in a specific reporting framework that interacts with MTD ITSA differently. Verify the specific reporting route at write time; the boundary is in regulation 20 and the related HMRC guidance.</p>
+<p>The narrow exclusion applies to non-MTD reporting routes. A non-resident landlord whose UK rental is reported under the Non-Resident Landlord scheme with 20% withholding (where no NRL1 gross-payment approval is in place) is in a specific reporting framework that interacts with MTD ITSA differently. Verify the specific reporting route at write time; the boundary is in regulation 25 of SI 2026/336 and the related HMRC guidance.</p>
 
 <p>The default treatment for the typical foreign-property landlord (UK-resident, owning offshore rental, reporting on the UK return) is straightforward: gross foreign rental counts as qualifying income for MTD threshold purposes.</p>
 
@@ -301,7 +299,7 @@ reviewedAt: "2026-05-28"
 
 <ul>
 <li>Our MTD orientation page covers the four-axis system-overhaul overview: filing frequency, record form, software requirement, and agent route. The orientation page is the headline-level read for landlords coming to MTD for the first time.</li>
-<li>Our exit-on-income-drop page covers the three-tax-year exemption under SI 2021/1076 regulation 22 for landlords whose income falls below the threshold after entering the regime.</li>
+<li>Our exit-on-income-drop page covers the three-tax-year exemption under SI 2026/336 regulation 24 (previously SI 2021/1076 regulation 22 before the 1 April 2026 revocation) for landlords whose income falls below the threshold after entering the regime.</li>
 <li>Our joint-owner MTD page is the primary deep-dive for spouses and other joint owners, covering Form 17 mechanics, default 50/50 split, and the joint-owner-specific operational considerations.</li>
 <li>Our limited-company MTD page covers the LtdCo cross-stream boundary in detail, including MTD for VAT (in scope if registered) and the future MTD for CT (no go-live date).</li>
 <li>Our MTD penalty-and-exemption page covers the FA 2021 Schedule 24 points regime, the Spring Statement 2025 accelerated cascade, and the regulation 18 / 20 / 24 / 25 / 27 exemption categories under SI 2026/336.</li>

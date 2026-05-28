@@ -14,7 +14,7 @@ summary: "If you operate a property business through a limited company (a single
 schema: ""
 faqs:
   - question: "Does MTD for Income Tax Self-Assessment apply to limited companies?"
-    answer: "No. MTD ITSA applies to individuals (sole traders and landlords) under TMA 1970 Schedule A1 and the Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076). Limited companies are structurally outside MTD ITSA because they are taxed under corporation tax, not income tax. The exclusion is structural, not an exemption; sessions writing must not describe LtdCos as exempt from MTD ITSA (the framing implies a route that does not exist)."
+    answer: "No. MTD ITSA applies to individuals (sole traders and landlords) under TMA 1970 Schedule A1 and the Income Tax (Digital Obligations) Regulations 2026 (SI 2026/336), which on 1 April 2026 revoked the prior Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076). Limited companies are structurally outside MTD ITSA because they are taxed under corporation tax, not income tax. The exclusion is structural, not an exemption; LtdCos should not be described as exempt from MTD ITSA (the framing implies a route that does not exist)."
   - question: "Does MTD for VAT apply to a property LtdCo?"
     answer: "Yes, where the LtdCo is VAT-registered. MTD VAT has been mandatory for above-threshold VAT-registered businesses since 1 April 2019 and for ALL VAT-registered businesses (regardless of turnover) since 1 April 2022. A property LtdCo with VAT-registered commercial-property activity (typically via an option to tax under VATA 1994 Schedule 10) is within MTD VAT scope."
   - question: "When does a property LtdCo become VAT-registered?"
@@ -51,13 +51,13 @@ reviewedAt: "2026-05-28"
 
 <h2>Layer 1: MTD ITSA does not apply to limited companies</h2>
 
-<p>The statutory architecture. MTD for Income Tax Self-Assessment sits at Schedule A1 of the Taxes Management Act 1970, inserted by Schedule 14 of the Finance (No. 2) Act 2017. The framework is implemented through the Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076). Both the parent enabling power and the operative regulations are part of the income-tax management framework. They apply to persons chargeable to income tax on rental or self-employment income.</p>
+<p>The statutory architecture. MTD for Income Tax Self-Assessment sits at Schedule A1 of the Taxes Management Act 1970, inserted by Schedule 14 of the Finance (No. 2) Act 2017. The framework is implemented through the Income Tax (Digital Obligations) Regulations 2026 (SI 2026/336), which from 1 April 2026 revoked the prior Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076). Both the parent enabling power and the operative regulations are part of the income-tax management framework. They apply to persons chargeable to income tax on rental or self-employment income.</p>
 
 <p>A limited company is not chargeable to income tax on its trading or rental profits. It is chargeable to corporation tax under the Corporation Tax Acts (CTA 2009 for profit computation; CTA 2010 for charge and rate; FA 1998 Schedule 18 for self-assessment administration). The income-tax management Act, including Schedule A1, simply does not engage on the company's profit cycle.</p>
 
 <p>The consequence. A LtdCo with £500,000 of rental income is not subject to MTD ITSA regardless of the turnover figure. It files CT600 annually, in the same way it did before MTD existed, with statutory accounts and tax computation. The £50,000, £30,000, and £20,000 qualifying-income thresholds that determine entry to MTD ITSA on the personal side are immaterial to the LtdCo.</p>
 
-<p>The framing discipline. Sessions writing on LtdCos and MTD should NOT describe them as "exempt from MTD ITSA". Exemption implies a route or a threshold or a circumstance-based test (the regulation 20 digital-exclusion exemption is an example for individuals). The LtdCo position is structural: the regime does not apply at all. The same individual operating personally and through a LtdCo can have an MTD ITSA obligation on the personal side and no MTD ITSA obligation on the corporate side simultaneously, because the two activities sit in different tax regimes.</p>
+<p>The framing discipline. LtdCos should not be described as "exempt from MTD ITSA". Exemption implies a route or a threshold or a circumstance-based test (the SI 2026/336 regulation 18 digital-exclusion exemption is an example for individuals). The LtdCo position is structural: the regime does not apply at all. The same individual operating personally and through a LtdCo can have an MTD ITSA obligation on the personal side and no MTD ITSA obligation on the corporate side simultaneously, because the two activities sit in different tax regimes.</p>
 
 <h2>Layer 2: MTD for VAT applies where the LtdCo is VAT-registered</h2>
 

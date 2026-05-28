@@ -141,7 +141,7 @@ editorialNote: "MW3 Bucket C C11: Booking.com-specific operational picture (NOT 
     <tr><td>Airbnb</td><td>£45,000</td><td>3 percent host-only fee</td><td>£1,350</td><td>£43,650</td><td>UK VAT (Airbnb Payments UK Ltd)</td></tr>
     <tr><td>Vrbo</td><td>£25,000</td><td>5 percent host (8 percent guest, not deducted from host net)</td><td>£1,250</td><td>£23,750</td><td>Reverse-charge (Vrbo Inc., US)</td></tr>
     <tr><td>Expedia</td><td>£15,000</td><td>15 percent</td><td>£2,250</td><td>£12,750</td><td>Reverse-charge (Expedia Group, EU)</td></tr>
-    <tr><td><strong>Total</strong></td><td><strong>£165,000</strong></td><td>—</td><td><strong>£18,450</strong></td><td><strong>£146,550</strong></td><td>Mixed reverse-charge / UK VAT</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>£165,000</strong></td><td>n/a</td><td><strong>£18,450</strong></td><td><strong>£146,550</strong></td><td>Mixed reverse-charge / UK VAT</td></tr>
   </tbody>
 </table>
 
