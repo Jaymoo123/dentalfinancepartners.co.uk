@@ -80,6 +80,41 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
+**Last updated:** 2026-05-29 — **MegaWave 3 CLOSED via rolling architecture (RUN-close + drift fixes committed 2026-05-28).** 60 new pages on main across 3 lanes (Lane A 20 + Lane B 20 + Lane C 20). Topic family: Compliance / operations / specialist family — MTD ITSA + Penalties & enquiries + Let Property Campaign + Self-assessment mechanics (A) / NRL + DTAs + Leaving the UK + ATED (B) / CGT scenarios + Property development + LRR + CIS + SBA + RRA tenancies + Anti-avoidance + Service charges + Serviced accommodation + Commonhold + Property data (C). Build verified green on main twice during close (after `059efd6b` backfill + after `d504d384` drift fixes per commit messages). **`main` is at `d504d384`** post-MW3 close.
+
+**Stage timeline:**
+- Stage 1 (60 seed briefs) + Stage 1b (7 HP-locks) closed 2026-05-27 evening; sign-off committed at `53b3eba`.
+- Stage 2 (60 brief extensions) closed 2026-05-27 ~23:46 BST. Wallclock ~2h06.
+- Stage 2b sign-off 2026-05-28 — F-104 (SI 2023/817 verbatim title) + F-105 (LURA 2023 s.80 inserting LGFA 1992 s.11C, NOT s.81) both CLOSED with §30.4 refinement; zero on-site back-patch hits for either.
+- RUN (60 final blog pages) closed 2026-05-28 ~12:18 BST at `f05a2d0c`. Wallclock ~3h10 across 12 batches; one mid-RUN stall recovered by synthesising A-B2 + C-B2 markers from worktree commits + restart.
+- Post-RUN housekeeping: `059efd6b` reviewerCredentials + reviewedAt backfill on all 20 Lane A pages (sub-agent dropped fields across B1-B4); `d504d384` drift sweep against MW3 HP locks caught 3 real deploy-blockers across 8 RUN pages (F-3 SI 2021/1076 → SI 2026/336 migration on 6 pages + 1 SDLT 3% → 5% present-tense worked example + 2 em-dashes), and confirmed FALSE-POSITIVE on 10 other suspected-drift patterns (CGT 28%, AEA £12,300, £10k MTD threshold, F-104, F-105, MDR-still-available, FHL-still-available, VAT-£85k, NRL-22%, CT-penalty-£100).
+
+**HP-lock + drift catch summary across MW3:**
+- §19.18 SI 2021/1076 → SI 2026/336 migration with verified reg numbers (reg 5 / 18-20 / 24 / 25 / 27 + Part 7 = Exemptions). Stage 1b F-3; site-wide back-patch deferred to RUN drift sweep `d504d384`.
+- §19.19 Points-based late submission regime dual-condition reset.
+- §19.20 CT Sch 18 para 17 verified figures (£200/£400 + £1k/£2k third successive). Manager WebFetch-verified.
+- §27.10 Disguised remuneration loan charge + settlement framework (FA (No.2) 2017 Sch 11 + FA 2020 Sch 2 Morse + ITEPA 2003 Part 7A).
+- §31.B Commonhold White Paper 2025 + forthcoming Bill — live pipeline floor (CLRA 2002 Part 1 + Part 2 post-LFRA-2024 + post-BSA-2022 amendments).
+- §36 Professional conduct of property accountants — POCA s.330/s.333A + MLR 2017 reg 8(2)(c)+(f) + Fraud Act 2006 s.2. POCA s.330 verbatim re-verified at write per C1 brief.
+- §37 Share-exchange + reconstruction reliefs + transactions-in-securities anti-avoidance — TCGA s.127/135/136/137/138/139 + ITA 2007 Pt 13 Ch 1 + CTA 2010 Pt 15. FA 2026 s.137 substitution effective 18 March 2026 verified at write per C6 brief.
+- §30.4 refinement (Stage 2b) — LURA s.79/s.80 insertion citations + LGFA 1992 s.11D regulations gate + s.11C(2) verbatim two-condition test + s.11C(3) one-year notice rule + s.11C(5) mutual exclusion with s.11A + s.11C(7)+(8) newspaper-notice discipline + updated Do-not-write list.
+- **13th consecutive Bill-vs-enacted-Act drift catch in the program** at Stage 1b F-3 (SI 2021/1076 revoked + replaced by SI 2026/336 effective 1 April 2026 — verifying authoritative reg numbers from the new SI's contents page).
+
+**Held for deploy, not yet pushed to production.** All 60 MW3 pages on main are pending user deploy decision; MW2's 60 pages also remain held. Per §0 norm: never deploy without explicit user instruction. **Manager-side WRAP in progress this session — NETNEW §3 update (this edit), rolling architecture memory update, final build verify, close-artifact commit — before the deploy gate is opened.**
+
+**421 net-new pages on main** (W1-7 209 + W8 30 + W9 9 + MW1 53 + MW2 60 + MW3 60 — historical totals to be reconciled post-deploy). 300 already in production (deployed 2026-05-26 22:43 BST). **120 pending deploy across MW2 + MW3** = single consolidated push expected this session.
+
+**Back-patch list for post-deploy hygiene sweep (captured during MW3):**
+- F-3 SI 2021/1076 → SI 2026/336 site-wide non-MW3 sweep beyond the single hit on `essential-bookkeeping-tips-for-sole-traders.md` actioned at Stage 1b — confirm zero residual hits across pre-MW3 content.
+- F-104 (SI 2023/817 verbatim title) — Stage 2b zero on-site hits; recheck post-deploy to be safe.
+- F-105 (LURA 2023 s.80 / s.11C, NOT s.81) — Stage 2b zero on-site hits; recheck post-deploy to be safe.
+- MW2 carry-forward back-patch items (per MW2-close §3) still open if not actioned during MW3.
+- §22.5 spouse-exemption pre-FA-2025 architecture refresh — still deferred from Wave 6 inter-wave queue, MW3 did not actively touch.
+
+**Worktrees alive (safe to prune post-deploy):** `Accounting-wt-property-megawave3-{a,b,c}` at lane-tip commits (`edc117c2` / `132e8b24` / `80828cec`). Earlier-wave worktrees (megawave1-{a,b,c}, megawave2-{a,b,c}, track2-phase3-*, wave7-{a,b,c}, wave8-{a,b,c}, wave9-{a,b,c}) still present from prior sessions and can be cleaned up in a separate hygiene pass.
+
+---
+
 **Last updated:** 2026-05-27 (late evening) — **MegaWave 3 Stage 2 CLOSED; Stage 2b + RUN pending tomorrow.** Topic family: Compliance / operations / specialist family (HP touchpoints §17, §18, §19, §20, §27, §28 + new §27.10 + §31.B + §36 + §37). Stage 1 (60 seed briefs) closed ~20:40. Stage 1b sign-off committed at `53b3eba` with 5 new HP-locks + 2 critical drift catches verified (F-1 CT Sch 18 figures + F-3 SI 2021/1076 → SI 2026/336 revocation). Stage 2 (60 brief extensions) closed ~23:46 with all 12 batch markers + 3 lane-done flags. Wallclock Stage 2: ~2h6.
 
 **`main` HEAD: `5a34d5c`** post-Stage-2 last commit. Stage 2b sign-off + RUN dispatch NOT YET done.
