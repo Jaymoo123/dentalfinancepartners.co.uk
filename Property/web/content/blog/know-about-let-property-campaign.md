@@ -41,6 +41,8 @@ faqs:
     answer: "This page is the definitional plus process-walkthrough layer (what LPC is, who can use it, the three-step mechanic, the penalty architecture, the route comparison). Sibling pages cover decision layers (why disclose), tool layers (penalty calculator), and remediation narratives. Readers seeking the orientation read should land here; readers comparing LPC against doing nothing should land on the decision-layer page; readers needing penalty numbers should land on the calculator."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>HMRC's Let Property Campaign (LPC) has been open since 9 September 2013 with no announced end date. It is the published voluntary-disclosure route for residential landlords (UK and non-UK resident) with undisclosed rental income. Twelve years into the campaign, the LPC remains the operationally dominant route for accidental landlords, inheritance recipients with a year or two of unreported rent, long-term landlords whose returns omitted rental income on one property in a multi-property portfolio, and ex-tenants who have moved back into a property after a let-out period and now realise the historic rents were taxable.</p>

@@ -41,6 +41,8 @@ faqs:
     answer: "This page is the umbrella architecture: which sub-track to use and how to choose. The campaign-specific Let Property Campaign pages on this site (the benefits-framed page in this same batch, the descriptive orientation page, the calculator-led penalty page, the why-disclose page, and the missed-taxes-rescue page) sit at the campaign-specific layer below the umbrella. Read this page first to determine which sub-track applies to your facts, then read the campaign-specific page for the depth treatment of your chosen track."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>HMRC's Digital Disclosure Service (DDS) is the online portal at gov.uk that hosts the major voluntary-disclosure campaigns under one digital product. For a landlord, a serviced-accommodation operator, or a property-business owner who has identified some prior-year undeclared liability, DDS is almost always the right starting point. The product launched in September 2016 and has since absorbed and re-routed several earlier paper-based disclosure regimes into a unified notify-then-disclose-then-pay cycle.</p>

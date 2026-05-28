@@ -41,6 +41,8 @@ faqs:
     answer: "No. LPC is a civil-resolution mechanism. Only the Contractual Disclosure Facility (CDF) under Code of Practice 9 confers criminal-prosecution immunity, and only for the conduct described in the formal admission, subject to honesty-and-completeness conditions. Where the calculator's behaviour self-assessment is deliberate-and-concealed and the underlying conduct involves substantial sums or active concealment over many years, the appropriate route is CoP9 / CDF with specialist tax-investigation counsel, not LPC. An LPC disclosure that crystallises deliberate-and-concealed conduct can give HMRC the evidential foundation for a parallel criminal investigation."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>A landlord at the decision moment between (i) notify LPC now, (ii) wait, or (iii) ignore needs a number to weigh the choice. The number is not produced by HMRC's internal penalty system (which is not public-facing) nor by an HMRC published online calculator (the gov.uk LPC pages walk the process, not the arithmetic). It is produced by walking the Schedule 41 paragraph 13 mitigation matrix manually against five inputs. This page is the structured walk-through. It shows the matrix in full, runs five fact-pattern examples, and identifies the four triggers where the calculator routes the landlord to specialist counsel rather than self-service LPC.</p>

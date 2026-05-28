@@ -41,6 +41,8 @@ faqs:
     answer: "HMRC's Capital Gains Manual CG66880 onwards covers hold-over relief in detail (section 165 and section 260 application, the trade-versus-investment line, the agricultural-property extension, the settlor-interested-trust exclusion). The Enquiry Manual EM3270 onwards governs the post-nudge enquiry path. The Compliance Handbook CH80000 onwards covers Schedule 24 mitigation mechanics. These are the live HMRC operational documents the response letter should reference."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>You opened the envelope and HMRC has asked you to review a hold-over relief claim from a return you filed years ago. The letter does not allege wrongdoing. It is not the start of a formal enquiry. It invites you, within 60 days, to confirm the prior claim or amend the return if you now think the claim was wrong. The letter is a nudge: HMRC's published One-Too-Many campaign mechanic, deployed at scale against population groups where HMRC's risk analysis points at a recurring claim type that often fails on scrutiny.</p>

@@ -41,6 +41,8 @@ faqs:
     answer: "Real-time information for PAYE and Making Tax Digital for Income Tax are separate digital reporting cycles with no statutory overlap. A landlord LtdCo employing PAYE staff, and the same individual landlord-director filing MTD ITSA personally on a self-employed or rental basis, will run both cycles in parallel: the LtdCo's PAYE FPS cycle (monthly, on or before payment) and the director's individual MTD ITSA quarterly cycle. The penalty regimes are also distinct: Schedule 55 paragraph 6C for RTI; the points-based Schedule 55 regime as amended for MTD ITSA late submissions; and the accelerated Schedule 56 3% / 3% / 10% schedule for MTD ITSA late payment."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>Property-business employers sit inside the same real-time information (RTI) penalty regime as any other UK employer, but the operational risk profile is distinctive. A landlord limited company paying a director's Personal Allowance salary monthly, a portfolio operator with one or two employed property managers, and a serviced-accommodation business with cleaning and front-of-house staff all face the Schedule 55 paragraph 6C late-filing penalty cycle every month of the tax year. The penalty is small per failure (£100 for a small employer) but it attaches monthly, and it stacks with the Schedule 56 late-payment escalator where PAYE is paid late as well as filed late.</p>

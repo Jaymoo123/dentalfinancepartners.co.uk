@@ -41,6 +41,8 @@ faqs:
     answer: "Three structural differences. First, control of scope: a voluntary disclosure is scoped to the years the landlord chooses to offer; HMRC discovery reaches whatever section 36 permits (4, 6, 12, or 20 years depending on behaviour and territory). Second, control of timing: voluntary disclosure runs on the landlord's preparation timeline; HMRC discovery runs on HMRC's enquiry timeline, typically with shorter deadlines and a defensive posture. Third, control of floor: voluntary disclosure unlocks the unprompted floor; HMRC discovery locks in the prompted floor with no return to the lower bracket. The three controls collectively are the structural argument for voluntary disclosure."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>The decision a landlord faces when historic undisclosed rental income surfaces is not principally about penalty arithmetic. The penalty number matters, of course, and our LPC penalty calculator page works through the floors. But the underlying choice is a strategic one: voluntary disclosure now, while still in unprompted status, versus waiting and accepting whatever outcome HMRC produces through its own discovery processes. Five independent rationales point in the same direction, and the convergence is the structural argument for the voluntary route.</p>

@@ -41,6 +41,8 @@ faqs:
     answer: "Five-step. First, is the underlying liability disputed? If yes, separate the liability appeal from the penalty appeal under section 31A. Second, is there a reasonable-excuse defence? Apply the Perrin four-stage test honestly. Third, what is the appeal-window status? 30 days is short; act fast. Fourth, what time-to-pay options exist? HMRC will agree time-to-pay under TMA 1970 section 108 where the landlord cannot pay in full. Fifth, is the underlying failure undisclosed rental income rather than a late return on a known liability? If yes, the Let Property Campaign route under Schedule 41 may be the better engagement than fighting the penalty."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>The individual-landlord self-assessment penalty regime is splitting in two from 6 April 2026. Landlords below the Making Tax Digital for Income Tax Self Assessment (MTD ITSA) qualifying-income threshold continue on the long-established Finance Act 2009 cascades. Landlords above the threshold move to a newer architecture: a points-based late-submission regime under Finance Act 2021 Schedule 24, plus an accelerated late-payment regime introduced in the Spring Statement 2025. The bifurcation is mandatory, not optional. It is driven by whether the landlord's qualifying property and trading income crosses the phased threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028).</p>

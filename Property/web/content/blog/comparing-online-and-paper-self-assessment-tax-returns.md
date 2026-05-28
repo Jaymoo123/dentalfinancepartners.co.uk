@@ -41,6 +41,8 @@ faqs:
     answer: "Section 8(1F) applies Exception 1: where the notice to file is given after 31 July but on or before 31 October following the end of the tax year, the paper deadline becomes 3 months from the date of the notice, and the online deadline remains 31 January. A notice given on 15 August 2026 sets a paper deadline of 15 November 2026 and an online deadline of 31 January 2027. Section 8(1G) applies Exception 2 for notices given after 31 October: both paper and online deadlines become 3 months from the notice date, eliminating the standard online deadline advantage in late-notice cases."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>For most of the last twenty years the paper-versus-online filing decision has been a real choice. The statutory deadline asymmetry under TMA 1970 section 8 gives online filers three extra months to prepare and submit, and the online portal provides arithmetic validation that paper does not, but paper has remained operationally live for landlords who prefer it, who lack a Government Gateway credential, or who fall inside HMRC's digital-exclusion policy. From 2026 onwards, that balance shifts decisively. Making Tax Digital for Income Tax mandates digital reporting for the largest landlords from 6 April 2026, and HMRC has wound down routine paper-pack distribution since 2022/23.</p>

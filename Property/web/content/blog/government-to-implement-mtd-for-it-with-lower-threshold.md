@@ -41,6 +41,8 @@ faqs:
     answer: "The statutory wording catches qualifying income 'above' the threshold, so HMRC's operational interpretation is that exactly £20,000 sits below the cliff and the landlord is not in scope. The drafting matters for landlords with predictable gross rental sitting near the threshold: a £20,001 figure is in; a £20,000 figure is out. Landlords managing close to the cliff should keep contemporaneous records that support the gross-rental computation, because HMRC review of the qualifying-income figure at the determining-return stage will be focused on the exact arithmetic."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>From 6 April 2028, landlords and self-employed taxpayers with qualifying income above £20,000 will be mandated into Making Tax Digital for Income Tax (MTD ITSA) under the phase 3 threshold confirmed at Spring Statement 2025 and Autumn Statement 2025. Phase 3 is the largest of the three phases by population. HMRC's published impact assessment estimates roughly 700,000 to 800,000 newly-mandated taxpayers at the £20,000 level, dwarfing the phase 1 (£50,000 from 6 April 2026) and phase 2 (£30,000 from 6 April 2027) cohorts combined.</p>

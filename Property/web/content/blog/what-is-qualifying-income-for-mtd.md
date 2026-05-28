@@ -39,6 +39,8 @@ faqs:
     answer: "The £10,000 figure was the original 2018 MTD ITSA design threshold. It was abandoned in late 2022 / early 2023 under the previous government; the phased £50,000 / £30,000 / £20,000 schedule was announced on 19 December 2022 and is the operative timeline. The £10,000 figure was never implemented. Any source citing the £10,000 threshold is stale: the page was written before December 2022 or has not been updated since."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>The Making Tax Digital for Income Tax Self Assessment threshold test is at the gross figure. Not the net. The single point that produces more wrong answers than anything else in MTD readiness conversations is this: a landlord intuitively thinks of their tax position as net rental profit after expenses, and they intuitively apply the £50,000 (or £30,000, or £20,000) threshold to that net figure. The test is not net-based. It is gross-based, and the difference between gross and net for a typical property business is substantial. A landlord with £52,000 of gross rental income and £40,000 of allowable deductions (producing £12,000 of net profit) is in scope of the April 2026 mandate. The £12,000 net profit is irrelevant to the threshold test; the £52,000 gross figure is what matters.</p>

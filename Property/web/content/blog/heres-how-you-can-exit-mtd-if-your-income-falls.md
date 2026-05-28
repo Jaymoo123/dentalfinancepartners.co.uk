@@ -41,6 +41,8 @@ faqs:
     answer: "Regulation 22 is headed 'Income exemption: persons to whom the digital requirements have applied for three tax years'. The exit window does not open until the landlord has been within MTD ITSA for three complete tax years AND has had three consecutive tax years of qualifying income below the cohort threshold. The two conditions overlap in practice but should not be conflated when drafting the notification."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>You have been in Making Tax Digital for Income Tax Self-Assessment for two years. Your rental income has dropped. A tenancy ended badly and the void period stretched. You sold a property and the portfolio shrank. A spousal Form 17 election shifted the income split and your individual share is now well below the threshold. You are still filing four quarterly updates a year, plus an end-of-period statement, plus a final declaration, for a tax return that the headline mandate would no longer pull you into if you were registering today.</p>

@@ -41,6 +41,8 @@ faqs:
     answer: "RFC 2012 Plc v Advocate General for Scotland [2017] UKSC 45 (the Rangers case) is the controlling Supreme Court authority. The decision treated EBT loan arrangements as employment earnings at the point the loan was made, establishing the no-redirection-of-earnings principle that underpins Part 7A and the loan charge sweep-up. HMRC v Hargreaves [2022] UKUT 34 dismissed a loan-charge constitutional and human-rights challenge. Hoey v HMRC [2022] EWCA Civ 656 covered the transfer-of-assets-abroad interaction."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>The loan charge at Finance (No. 2) Act 2017 Schedule 11 is the most distinctive piece of tax architecture of the past decade: a one-off income tax and National Insurance contributions charge that crystallised on outstanding balances of disguised-remuneration loans at 5 April 2019, sweeping up a population of historic tax-planning participants in a single date-stamped event. For property-business directors with pre-2019 EBT, contractor-loan, or remuneration-trust history inside their property-development LtdCo wrappers, the loan charge is a live exposure that the published Settlement Opportunity (now closed for new entrants since 30 September 2020) used to address through an administrative HMRC route. The residual route forward is voluntary disclosure to HMRC's Counter Avoidance team, with Schedule 24 and Schedule 41 penalty exposure attaching to the underlying tax loss.</p>

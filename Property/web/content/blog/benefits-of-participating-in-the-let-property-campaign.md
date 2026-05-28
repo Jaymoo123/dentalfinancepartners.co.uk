@@ -41,6 +41,8 @@ faqs:
     answer: "Not automatically. Receipt of an HMRC nudge letter is informal contact, not a formal section 9A enquiry or a section 29 discovery assessment. HMRC's operational practice has been to accept a disclosure made in response to a nudge letter as still unprompted, provided the disclosure is filed within the nudge-letter response window and before any formal enquiry is opened. The discipline is to act fast: notifying LPC the same week the nudge letter arrives preserves the unprompted floor; waiting until after the response window expires and HMRC escalates to a formal enquiry pushes the disclosure into the prompted floor."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>The Let Property Campaign (LPC) is HMRC's voluntary-disclosure route for residential landlords who have undeclared rental income on UK property. The campaign has been open continuously since 9 September 2013 and remains the primary disclosure entry point for individual landlords with historic exposure. What it offers, in concrete terms, is access to the Schedule 41 paragraph 13 unprompted-disclosure penalty floor: a numerical mitigation matrix that is materially more favourable than the alternative of HMRC discovering the position first.</p>

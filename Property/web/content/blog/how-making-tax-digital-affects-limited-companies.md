@@ -41,6 +41,8 @@ faqs:
     answer: "No. The phased threshold schedule is the individual-landlord trigger for MTD ITSA. It is immaterial to the LtdCo angle because LtdCos are structurally outside MTD ITSA regardless of turnover. Sessions writing must not cite the £50,000 / £30,000 / £20,000 thresholds as if they were LtdCo triggers; the operative threshold for a LtdCo's MTD engagement is the VAT registration threshold (currently £90,000 from 1 April 2024) for the VAT limb only."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>If you operate a property business through a limited company, Making Tax Digital affects your structure in a very specific three-layer pattern that is easy to get wrong on the headline reading. The headline that "MTD is coming for landlords" implies a regime that pulls every landlord into quarterly digital reporting. That headline applies to landlords operating personally (sole trade and partnership-equivalent). It does NOT apply to landlords operating through a limited company. A LtdCo is taxed under corporation tax, not income tax. The MTD ITSA architecture, sitting inside TMA 1970 Schedule A1 (which is the income-tax management Act), does not engage on the LtdCo's rental activity at all.</p>

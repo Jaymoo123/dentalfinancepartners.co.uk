@@ -41,6 +41,8 @@ faqs:
     answer: "The £1 million lifetime cap applies to cumulative qualifying gains across all BADR claims by the individual over their lifetime. Once £1 million of cumulative qualifying gain has been relieved, further qualifying gains are taxed at standard rates. The cap was reduced from £10 million on 11 March 2020 (Finance Act 2020 section 24). Pre-11-March-2020 claims that used some of the £10 million cap count against the current £1 million cap on a cumulative basis."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>HMRC's nudge-letter campaigns on Business Asset Disposal Relief are the most operationally significant tax-investigation challenge facing landlords and former Furnished Holiday Let operators in the 2024 to 2027 window. The campaign targets prior BADR claims (the relief renamed from Entrepreneurs' Relief by Finance Act 2020 section 23) under TCGA 1992 sections 169H to 169SA. The 60-day response window asks the recipient to confirm or amend the prior claim. HMRC's risk analysis identifies recurring failure types: FHL operators caught between the 5 April 2025 abolition and the Finance Act 2025 transitional protection; LtdCo property-portfolio directors who claimed BADR on share disposals despite the company being investment not trading; share disposals where the tri-conditional 5% economic-interest test under section 169S failed during the 2-year qualifying period.</p>

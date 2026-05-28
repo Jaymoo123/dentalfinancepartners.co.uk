@@ -43,6 +43,8 @@ faqs:
     answer: "Yes. ITA 2007 section 836 applies only to spouses and civil partners living together (the Sokoya v HMRC line at Special Commissioners on the living-together limb). On separation the default 50/50 rule ceases to apply; the SA income split reverts to actual beneficial interest (default 50/50 per legal title absent other evidence; or per Declaration of Trust if one exists). Each spouse's MTD scope is re-assessed against the post-separation SA return. The cessation date can be fact-sensitive in messy separations; specialist tax representation is appropriate where the cessation date materially affects the threshold test."
 dateModified: "2026-05-28"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-05-28"
 ---
 
 <p>A jointly-owned rental portfolio is the most common UK landlord ownership pattern. A married couple buy a house in joint names, let it out, declare the rental income on both SA returns at the default 50/50 split, and at the threshold-test moment for Making Tax Digital for Income Tax Self Assessment ask the question that determines whether either or both of them are in scope: do we test the property's £100,000 gross against the £50,000 threshold, or do we each test our £50,000 share? The answer is the latter. The MTD ITSA threshold test runs per owner against the owner's share of gross rental income, not against the property's total gross. The mechanic is locked at house-position §19.4 and is the single point that separates this page from the orientation-level treatment most competitor sites offer.</p>
