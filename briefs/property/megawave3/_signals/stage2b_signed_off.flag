@@ -1,0 +1,23 @@
+Stage 2b signed off 2026-05-28 by manager.
+
+Flag resolutions (both closed):
+- F-104 (BRIEF_DRIFT, SI 2023/817 title): CLOSED. Verbatim title "The Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023" confirmed via WebFetch at legislation.gov.uk/uksi/2023/817/contents. Stage 2 sub-agent fixed C4 + C5; manager Stage 2b sweep extended fix to C11 (M3-C-B2 missed it entirely). Zero on-site pre-existing-content hits — no back-patch needed.
+- F-105 (BRIEF_DRIFT, LURA 2023 section mis-citation): CLOSED. Verbatim verification at legislation.gov.uk/ukpga/2023/55/section/80 confirmed: LURA 2023 s.80 "Dwellings occupied periodically: England" inserts LGFA 1992 s.11C ("Higher amount for dwellings occupied periodically: England") + s.11D ("Section 11C: regulations"). s.11C(3) one-year notice rule means earliest statutory floor 1 April 2024 (FY 2024/25) for LAs that determined in 2023, with most tourism-area LAs first imposing the premium from 1 April 2025 (FY 2025/26). On-site pre-existing-content grep for "LURA 2023 s.81" + "section 81" returned zero hits; the single existing on-site s.11C reference (single-person-council-tax-discount.md) is correct.
+
+HP-lock refinement:
+- §30.4 "Premium powers (post-LURA 2023)" patched with: LURA s.79/s.80 insertion citations; LGFA 1992 s.11D regulations gate; s.11C(2) verbatim two-condition test; s.11C(3) one-year notice rule + statutory-floor-vs-common-adoption-date distinction; s.11C(5) mutual exclusion with s.11A determinations; s.11C(7)+(8) newspaper-notice publication discipline; updated Do-not-write list (including the s.81 misciting trap).
+
+Brief corrections:
+- C4 (air-bnb-and-post-covid.md) — fixed residual s.81 references in Statutory anchor + numerical-verification list + body item 2 + body item 5.
+- C5 (airbnb-landlords.md) — fixed residual s.81 reference in Statutory anchor + SI 2023/817 title in Primary-digital-platform-reporting block (Stage 2 fixed elsewhere but missed line 15).
+- C11 (booking-com-a-complete-guide-for-the-hosts.md) — full sweep: Statutory anchors (digital-platform + council-tax bullets), body items 7 + 8, manager pre-decisions block, Stage 2 research target list (URL + heading), FAQ Q6 + Q7 implicit, anti-templating Specific-over-generic block, Rate-by-reference block, §16.36 work-log entry. C11 was completely missed by Stage 2 sub-agent (M3-C-B2 different batch from M3-C-B1).
+
+RUN dispatch UNLOCKED.
+
+Deferred back-patch sweeps (none required):
+- F-104: zero on-site hits.
+- F-105: zero on-site stale-citation hits; single correct s.11C reference confirmed correct.
+
+Going-forward discipline:
+- RUN sub-agents writing on second-home council-tax-premium MUST cite LGFA 1992 s.11C (inserted by LURA 2023 s.80, NOT s.81) and respect the s.11C(3) one-year notice rule (1 April 2024 statutory floor; 1 April 2025 common tourism-area adoption date).
+- RUN sub-agents writing on digital-platform reporting MUST cite SI 2023/817 by its verbatim title "The Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023" — NOT "International Tax Compliance (Amendment) Regulations 2023".

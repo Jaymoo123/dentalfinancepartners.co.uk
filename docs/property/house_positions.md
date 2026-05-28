@@ -3262,11 +3262,22 @@ Closes F-100 from MW1 Stage 1b. Anchors lane C council-tax cluster (C2 new build
 - **Sole or main residence test (s.11(5)):** fact-specific; the most-litigated single concept in the council-tax statute. Where a person has multiple homes (e.g. London weekday flat + country weekend house), the test asks which is their "sole or main residence" — not "where they sleep most nights." Look for the Williams v Horsham DC and Bennett v Copeland BC case-law line.
 - **Disregard interaction with Class N exemption:** a household where ALL occupants are students gets the Class N exemption (£0 council tax — full removal). A household where ONLY SOME occupants are students gets the single-person discount on the non-student count (students disregarded under Sch 1 para 4). Misclassification can cost the entire annual bill.
 
-### 30.4 Premium powers (post-LURA 2023)
+### 30.4 Premium powers (post-LURA 2023) — MW3 Stage 2b F-105 refinement (2026-05-28)
 
-- **Empty-property premium (s.11B):** LAs can charge up to 100% premium after 1 year empty (reduced from 2 years pre-LURA 2023). After 5 years: up to 200%. After 10 years: up to 300%. Each LA sets its own policy.
-- **Second-home premium (s.11C):** LAs can charge up to 100% premium for furnished second homes (i.e. periodically occupied, not let). Permitted by LURA 2023, in force from 1 April 2024 for English LAs that adopted the power.
+**Statutory insertion architecture (verified verbatim against legislation.gov.uk 2026-05-28):**
+- **LURA 2023 s.79 "Long-term empty dwellings: England"** amends LGFA 1992 **s.11B** (long-term empty premium).
+- **LURA 2023 s.80 "Dwellings occupied periodically: England"** inserts LGFA 1992 **s.11C** ("Higher amount for dwellings occupied periodically: England") and **s.11D** ("Section 11C: regulations" — Secretary-of-State regulations-making power to specify excepted classes of dwelling).
+
+**Premium powers:**
+- **Empty-property premium (LGFA 1992 s.11B, as amended by LURA 2023 s.79):** LAs can charge up to 100% premium after 1 year empty (reduced from 2 years pre-LURA 2023). After 5 years: up to 200%. After 10 years: up to 300%. Each LA sets its own policy.
+- **Second-home premium (LGFA 1992 s.11C, inserted by LURA 2023 s.80):** LAs can charge up to 100% premium for furnished second homes where (a) "there is no resident of the dwelling" AND (b) "the dwelling is substantially furnished" (s.11C(2) verbatim). Each LA sets its own percentage up to the 100% ceiling by determination (s.11C(1)).
+- **s.11C(3) one-year notice rule:** "A billing authority's first determination under this section must be made at least one year before the beginning of the financial year to which it relates." Practical consequence: LAs that determined in 2023 could first impose the premium from **1 April 2024** (FY 2024/25); LAs that determined later (most tourism-area LAs) first impose it from **1 April 2025** (FY 2025/26). Sessions citing the effective date must distinguish the statutory floor (1 April 2024) from the commonly-adopted date (1 April 2025).
+- **s.11C(5):** mutual exclusion with s.11A(3)/(4)/(4A) determinations for the same class of dwellings.
+- **s.11C(7)+(8):** LA must publish notice in at least one local newspaper within 21 days of determination (validity not affected by failure under s.11C(9)).
+- **s.11D regulations gate:** Secretary of State may specify by regulations classes of dwelling excepted from s.11C (e.g. dwellings being actively marketed for sale, dwellings undergoing probate). Sessions writing on exceptions cite the latest in-force SI under s.11D.
 - **Premium interactions:** a single owner-occupier with a second furnished home pays single-person discount on their main residence + the second-home premium on the second property (where LA has adopted).
+
+**Do not write:** "LURA 2023 s.81" (s.81 is street-naming, unrelated to council tax). "LURA 2023 inserted s.11C" without crediting s.80. "Premium in force from 1 April 2024" without acknowledging the s.11C(3) notice rule. "Premium from 1 April 2025" as the statutory commencement (it is the common tourism-area adoption date, not the statutory floor).
 
 ### 30.5 HMO and owner-liability mechanics
 

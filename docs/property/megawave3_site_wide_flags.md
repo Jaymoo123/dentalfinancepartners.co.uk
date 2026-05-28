@@ -180,6 +180,8 @@ Flags never block. Sessions continue work after flagging.
 
 **Status:** open. Stage 2 + RUN responsibility. Will close at manager Stage 2b sign-off.
 
+**RESOLUTION (2026-05-28, manager Stage 2b sign-off):** Verbatim verification at `https://www.legislation.gov.uk/uksi/2023/817/contents` confirmed canonical title = **"The Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023"**. Stage 2 sub-agent applied the in-brief correction to C4 + C5; manager Stage 2b sweep extended the correction to C11 (M3-C-B2 missed both drift catches entirely) — fixed at the Statutory anchor block, body item 7, Stage 2 research target list, FAQ Q6, anti-templating Specific-over-generic block, and Stage 2 work-log. On-site pre-existing-content grep `Property/web/content/blog/*.md` for the stale title returned **zero hits** as of 2026-05-28 — no post-merge sweep required. **F-104 CLOSED.**
+
 ---
 
 ## F-105 — BRIEF_DRIFT (LURA 2023 section mis-citation, second-home council-tax premium) (Bucket C, Sub-Agent M3-C-B1 Stage 2)
@@ -201,5 +203,7 @@ So the seed cited the wrong section (s.81 should be s.80) AND the wrong LGFA tar
 **Recommendation:** (a) RUN session uses the corrected LURA 2023 s.80 anchor + verifies the LGFA 1992 amendment target section at write time. (b) Post-merge cleanup batch greps existing Property content for "LURA 2023 s.81" / "Levelling-up and Regeneration Act 2023 section 81" / "LGFA 1992 s.11C" and back-patches via sub-agent dispatch per §16.43 if hits surface.
 
 **Status:** open. Stage 2 + RUN responsibility. Site-wide back-patch deferred to post-merge cleanup.
+
+**RESOLUTION (2026-05-28, manager Stage 2b sign-off):** Verbatim verification at `https://www.legislation.gov.uk/ukpga/2023/55/section/80` confirmed: **LURA 2023 s.80 "Dwellings occupied periodically: England"** inserts LGFA 1992 **s.11C** "Higher amount for dwellings occupied periodically: England" + **s.11D** "Section 11C: regulations" (Secretary-of-State regulations-making power for excepted classes). LGFA 1992 s.11C in force 26 October 2023; s.11C(3) one-year notice rule means earliest LA implementation 1 April 2024 (FY 2024/25) for LAs that determined in 2023, with most tourism-area LAs first imposing the premium from 1 April 2025 (FY 2025/26). §30.4 HP-lock refined accordingly with the s.11C(2) verbatim "no resident" + "substantially furnished" two-condition test, the s.11D regulations gate, and the statutory-floor-vs-common-adoption-date distinction. Manager Stage 2b sweep corrected C4 + C5 + C11 briefs (C4 + C5 had residual stale citations Stage 2 missed; C11 was untouched by Stage 2). On-site pre-existing-content grep against `Property/web/content/blog/*.md` for "LURA 2023 s.81" + "Levelling-up and Regeneration Act 2023 section 81": **zero hits** — no back-patch sweep required. The single existing on-site reference to LGFA 1992 s.11C (in `single-person-council-tax-discount.md`) is correct per WebFetch verification. **F-105 CLOSED.**
 
 ---
