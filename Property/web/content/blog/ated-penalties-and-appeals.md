@@ -1,0 +1,203 @@
+---
+title: "ATED Penalties and Appeals: The Full Architecture (Sch 55, Sch 56, Sch 24) and the Appeal Routes for Non-Natural-Person Filers"
+slug: "ated-penalties-and-appeals"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/ated-penalties-and-appeals"
+date: "2026-05-28"
+author: "Property Tax Partners Editorial Team"
+category: "Property Types & Specialist Tax"
+metaTitle: "ATED Penalties and Appeals: Full Architecture Guide"
+metaDescription: "ATED penalties: Sch 55 late filing, Sch 56 late payment, Sch 24 inaccuracy + offshore Cat-3 200% uplift; two-routes appeal, 30-day clock, OTM-letter context."
+altText: "A solicitor's desk with a tax-disputes file and statute book open at FA 2009 Schedule 55, representing the ATED penalty regime"
+image: "https://images.pexels.com/photos/5668856/pexels-photo-5668856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: RDNE Stock project
+  photographer_url: https://www.pexels.com/@rdne
+  source: Pexels
+  source_url: https://www.pexels.com/photo/woman-in-pink-blazer-holding-white-paper-5668856/
+h1: "ATED Penalties and Appeals: The Full Architecture (Sch 55, Sch 56, Sch 24) and the Appeal Routes for Non-Natural-Person Filers"
+summary: "ATED non-compliance triggers three parallel penalty regimes, not one. FA 2009 Schedule 55 catches late filing via items 11A and 11B at the Table at paragraph 1, with the £100 immediate, £200 at 3 months, £300 at 6 months and £300 at 12 months escalator, plus tax-geared paragraph 5 and paragraph 6 (and paragraph 6A behaviour) uplifts beyond 12 months that take penalties to 100% of the tax due for deliberate-concealed behaviour. FA 2009 Schedule 56 catches late payment with a 5% / 5% / 5% escalator at 30 days, 5 months and 11 months, plus interest under FA 2009 ss.101-102 running in parallel from the original due date. FA 2007 Schedule 24 catches inaccuracy in the return: careless 0 to 30%, deliberate not-concealed 20 to 70%, deliberate-concealed 30 to 100%, with the offshore Category 3 uplift under paragraph 4A and the Offshore Inaccuracies Order (SI 2011/975) doubling those maxima to 200% for jurisdictions without automatic information exchange. A single delinquent ATED filer can attract all three regimes simultaneously. Appeal architecture is independent two-routes (paragraph 23 reasonable excuse plus paragraph 16 special reduction for Sch 55, with parallel paragraph 14 and paragraph 11 for Sch 24), with a 30-day clock under TMA 1970 s.31A and the statutory-review pause route under TMA 1970 s.49. This page walks the three-regimes matrix, the Sch 55 escalator arithmetic, the Sch 24 Category-3 worked example, the disclosure-mitigation matrix, the cumulative exposure for multi-year multi-dwelling non-filers, the OTM-letter context that triggers most ATED penalty cases, and 14 of the most common questions."
+schema: ""
+faqs:
+  - question: "What penalty regimes apply to an ATED filer?"
+    answer: "Three parallel regimes. Late filing under FA 2009 Sch 55 (operative via items 11A and 11B at the Table at paragraph 1): £100 immediate, £200 at 3 months, £300 at 6 months, £300 at 12 months, plus tax-geared paragraph 5 and paragraph 6 uplifts beyond 12 months. Late payment under FA 2009 Sch 56: 5% at 30 days, additional 5% at 5 months, additional 5% at 11 months, with FA 2009 ss.101-102 interest in parallel. Inaccuracy under FA 2007 Sch 24 (where the return contains an understatement): careless 0 to 30%, deliberate not-concealed 20 to 70%, deliberate-concealed 30 to 100%, with offshore Category 2 (1.5x) and Category 3 (up to 200%) uplifts. A single delinquent filer can attract all three simultaneously."
+  - question: "What is the ATED late-filing penalty schedule?"
+    answer: "£100 immediate (FA 2009 Sch 55 paragraph 3 day-after-filing-date fixed penalty), £200 at 3 months (paragraph 4 mechanism, HMRC ATED practice issues the £200 escalator rather than daily £10s), £300 at 6 months (paragraph 5: 5% of tax due or £300 if greater), and £300 at 12 months (paragraph 6: 5% of tax due or £300 if greater, with behaviour-tiered uplifts under paragraph 6A). Beyond 12 months the tax-geared paragraphs take the penalty up to behaviour maxima: careless 30%, deliberate not-concealed 70%, deliberate-concealed 100% of tax due. Mitigation under paragraphs 17 and 18 mirrors the Sch 24 disclosure-mitigation matrix."
+  - question: "What about late-payment penalties under Schedule 56?"
+    answer: "ATED falls in FA 2009 Sch 56 via the same items 11A and 11B route. Paragraph 3 escalator: 5% of unpaid tax at 30 days after due date, additional 5% at 5 months, additional 5% at 11 months. Cumulative cap is 15% of unpaid tax in fixed penalties. Interest under FA 2009 ss.101-102 runs in parallel from the original due date (currently around 7 to 8% annualised; verify gov.uk at consultation date). Late-payment penalties are separate from late-filing penalties; both can apply to the same delinquent return."
+  - question: "What is the inaccuracy penalty regime under Schedule 24?"
+    answer: "Behaviour-tiered. Careless (failure to take reasonable care, Sch 24 paragraph 3(1)(a)): maximum 30%, mitigation to 0% unprompted disclosure within 12 months, 15% prompted minimum floor. Deliberate not-concealed (paragraph 3(1)(b)): 20 to 70%; 35% prompted minimum. Deliberate-concealed (paragraph 3(1)(c)): 30 to 100%; 50% prompted minimum. Offshore Category 2 uplift (1.5x) under paragraph 4A. Offshore Category 3 uplift (2.0x, taking the maximum to 200%) for jurisdictions without automatic information exchange per SI 2011/975. Relevant for ATED filers via overseas-incorporated structures."
+  - question: "What is the offshore Category-3 200% uplift?"
+    answer: "Per FA 2007 Sch 24 paragraph 4A and SI 2011/975 (Offshore Inaccuracies Order), jurisdictions are classified Category 1 (full information exchange with UK), Category 2 (some exchange) and Category 3 (no exchange). For ATED inaccuracies involving Category 3 jurisdictions the penalty maximum doubles to 200%. Common Category 3 jurisdictions historically include certain Caribbean and Pacific offshore centres; verify the current SI 2011/975 list at consultation. Channel Islands and Isle of Man are typically Category 2. The uplift is non-trivial: a £100,000 undeclared ATED inaccuracy at deliberate-concealed Category 3 could carry a £200,000 penalty versus £100,000 for the same behaviour at Category 1."
+  - question: "How does the disclosure-mitigation matrix work?"
+    answer: "Sch 24 paragraph 10 (mirrored in Sch 55 paragraphs 17 and 18). Unprompted disclosure (taxpayer acts before HMRC has crystallised the inquiry) within 12 months of the failure produces the lowest mitigation floor: 0% careless, 20% deliberate not-concealed, 30% deliberate-concealed. Prompted disclosure (after HMRC has opened a formal enquiry, issued an OTM letter or made a discovery assessment): 15% careless, 35% deliberate not-concealed, 50% deliberate-concealed. Beyond 12 months the floors shift upward. The OTM-letter window is the operationally critical disclosure-mitigation moment: engagement within the window typically allows unprompted-floor framing for the substantive disclosure."
+  - question: "What is the two-routes appeal architecture for late-filing penalties?"
+    answer: "Two independent statutory grounds. Reasonable excuse under FA 2009 Sch 55 paragraph 23 is the appellant's defence on an objective test (Perrin v HMRC [2018] UKUT 156 (TCC) four-stage framework). Special reduction under FA 2009 Sch 55 paragraph 16 is HMRC's discretionary judgment; the FTT exercises supervisory jurisdiction only under paragraph 22 (cannot substitute its own view). The routes are not mutually exclusive; they are typically pleaded simultaneously. See our dedicated ATED late-filing penalty appeal page for the operational deep-dive on the two routes, the Perrin Stage 3 objective-with-actual-characteristics test and the para 23(2)(b) reliance-on-another-person carve-out."
+  - question: "What is the inaccuracy-penalty appeal architecture?"
+    answer: "Parallel structure to late-filing. Reasonable excuse under FA 2007 Sch 24 paragraph 14 (mirror of Sch 55 paragraph 23 but for inaccuracy). Special reduction under FA 2007 Sch 24 paragraph 11 (mirror of Sch 55 paragraph 16). Plus behaviour-categorisation challenge: the appellant can challenge HMRC's deliberate-concealed, deliberate-not-concealed or careless determination under Sch 24 paragraph 3. Moving the behaviour category down reduces both the maximum and the mitigated floor; this is often the most consequential lever in inaccuracy-penalty appeals."
+  - question: "What is the 30-day appeal clock?"
+    answer: "TMA 1970 s.31A, 30 days from the date of the penalty notice. Within the window the appellant has three options: (a) appeal direct to the First-tier Tribunal; (b) request HMRC statutory review under TMA 1970 s.49 (stops the FTT clock pending HMRC's review conclusion notice, then a fresh 30-day FTT window opens); (c) pay without prejudice and lodge a protective appeal. Late appeals (after 30 days) require formal Martland v HMRC [2018] UKUT 178 (TCC) framework application to the FTT. HMRC cannot administratively extend the 30-day window."
+  - question: "What does the statutory review under TMA 1970 s.49 do?"
+    answer: "Statutory review is HMRC's internal review process; an officer not previously involved with the case re-examines the penalty decision. The appellant requests review within the 30-day appeal window by written notice. HMRC typically issues a review conclusion notice within 45 days (longer for complex cases). On receipt of the conclusion notice a fresh 30-day FTT appeal window opens. Review is operationally a cheaper, faster first step than direct FTT appeal; appellants often secure penalty discharge or reduction at review without litigation."
+  - question: "I received an HMRC OTM letter about possible unfiled ATED returns. What should I do?"
+    answer: "Engage within the OTM window. OTM letters are HMRC One-To-Many compliance letters inviting voluntary disclosure; they are not assessments. Acting within the OTM window typically allows your subsequent disclosure to be characterised as unprompted (lowest mitigation floor); delay typically crystallises into prompted-disclosure floors. Operational sequence: (i) engage specialist tax representation within 7 days; (ii) gather documentation across all chargeable periods; (iii) prepare a Digital Disclosure Service submission with full disclosure; (iv) submit with calculation showing unprompted-disclosure framing where the facts support it."
+  - question: "I did not file an ATED return because the dwelling was relief-eligible (claim-only). Am I exposed?"
+    answer: "Yes. The £100, £200, £300 and £300 Sch 55 escalator applies to any missed ATED return including claim-only returns where relief covers the chargeable period. The tax-geared paragraphs 5 and 6 effectively do not bite at zero tax due (the 5% defaults to the £300 floor) but the fixed escalator does. A multi-year multi-dwelling non-filer with claim-only relief still faces material penalty exposure: 4 dwellings x 5 years x £600 minimum is £12,000 in base penalties before any tax-geared uplift. Sch 55 paragraph 23 reasonable-excuse and paragraph 16 special-reduction routes remain available."
+  - question: "My company is in a Category 3 jurisdiction (Cayman, BVI, similar). Am I automatically exposed to the 200% uplift?"
+    answer: "Only if the inaccuracy is deliberate-concealed and involves an offshore element. The Sch 24 paragraph 4A and SI 2011/975 uplift applies to inaccuracies where the offshore-element involvement is established. For a Cayman ATED filer where the inaccuracy is bona-fide careless (a defensible valuation methodology that turned out to under-state the band) the careless maximum applies, uplifted to 60% for Category 3 careless (30% x 2.0). The Category 3 uplift bites hardest at deliberate-concealed (200% maximum). Specialist tax representation can challenge HMRC's behaviour categorisation as part of the appeal process."
+  - question: "What is the cumulative exposure for a 5-year multi-dwelling non-filer?"
+    answer: "Dramatic. Each chargeable period generates a separate Sch 55 escalator and Sch 56 escalator per dwelling. A 5-year non-filer for a single £2m-band dwelling at 2026/27 figures faces 5 x (£100 + £200 + £300 + £300) = £4,500 minimum Sch 55 base penalty plus tax-geared paragraphs 5 and 6 uplifts where tax was due, plus Sch 56 5% / 5% / 5% per year, plus interest. A 4-dwelling 5-year deliberate-not-concealed case can comfortably exceed £3 million in cumulative exposure (penalties plus tax plus interest). OTM voluntary disclosure within the unprompted window is the standard remediation route; specialist representation is essential."
+dateModified: "2026-05-28"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-05-28"
+editorialNote: "Full ATED penalty + appeal architecture catalogue page (MegaWave 3 Bucket B, batch M3-B-B2). Architectural-overview framing across Sch 55 + Sch 56 + Sch 24 + appeal mechanics. Distinct from operational two-routes deep-dive (sibling B8) and upstream-error-prevention page (B16) and OTM-letter response (B4). Anchors: FA 2013 ss.159, 161, 163; FA 2009 Sch 55 paragraphs 3, 4, 5, 6, 6A, 16, 17, 18, 22, 23 + Table items 11A and 11B; FA 2009 Sch 56 paragraph 3 + Table; FA 2009 ss.101-102 interest; FA 2007 Sch 24 paragraphs 1-3, 4A, 9, 10, 11, 14; SI 2011/975 Offshore Inaccuracies Order; TMA 1970 ss.31, 31A, 49; Perrin v HMRC [2018] UKUT 156 (TCC); Martland v HMRC [2018] UKUT 178 (TCC). House positions §2, §18 + §18.4 + §18.7, §27 + §27.2 + §27.3 + §27.4 + §27.5 + §27.9. Anonymised personas (Iberic Holdings Limited, Cordova Cayman Limited, Sapphire Estates Cayman Holdings Limited). 5 worked examples, 14 FAQs, 4 inline asides."
+---
+<p>ATED non-compliance triggers three parallel penalty regimes, not one. The popular shorthand "ATED has a £100 / £200 / £300 late-filing penalty cascade" describes only one of the three. FA 2009 Schedule 55 catches late filing via items 11A and 11B at the Table at paragraph 1. FA 2009 Schedule 56 catches late payment with its own 5% / 5% / 5% escalator at 30 days, 5 months and 11 months, with interest under FA 2009 ss.101-102 running in parallel from the original due date. FA 2007 Schedule 24 catches inaccuracy in the return, with behaviour-tiered penalties up to 100% of the tax understated for deliberate-concealed behaviour, doubled to 200% under the offshore Category 3 uplift in paragraph 4A and the Offshore Inaccuracies Order (SI 2011/975) for jurisdictions without automatic information exchange.</p>
+<p>A single delinquent ATED filer can attract all three regimes simultaneously. A non-resident company that files late, pays late and understates the rate band on the late return faces Sch 55 fixed and tax-geared penalties plus Sch 56 late-payment penalties plus Sch 24 inaccuracy penalties plus FA 2009 ss.101-102 interest, all running on the same tax. For a single £2m-band dwelling with deliberate-concealed offshore Category 3 behaviour, the cumulative penalty exposure can exceed 250% of the underlying ATED bill before interest is added.</p>
+<p>The appeal architecture is two independent statutory routes mirrored across Sch 55 and Sch 24. Paragraph 23 (Sch 55) and paragraph 14 (Sch 24) are reasonable-excuse defences on an objective test, governed by Perrin v HMRC [2018] UKUT 156 (TCC) four-stage framework. Paragraph 16 (Sch 55) and paragraph 11 (Sch 24) are special-reduction discretionary routes; the FTT exercises supervisory jurisdiction only under paragraph 22 (Sch 55) and the parallel Sch 24 architecture. Both can be pleaded simultaneously, with a 30-day clock under TMA 1970 s.31A and the statutory-review pause route under TMA 1970 s.49.</p>
+<p>This page walks the three-regimes matrix, the Sch 55 worked arithmetic, the Sch 24 Category-3 worked example, the disclosure-mitigation matrix, the cumulative-exposure walkthrough for multi-year multi-dwelling non-filers, the OTM-letter context, and 14 of the most common questions. For the operational two-routes deep-dive on appeals, see our <a href="/blog/property-types-and-specialist-tax/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal">ATED late-filing penalty appeal page</a>. For upstream prevention, see our <a href="/blog/property-types-and-specialist-tax/avoiding-common-mistakes-with-enveloped-dwelling-tax">avoiding common ATED mistakes page</a>. For OTM-letter response strategy, see our <a href="/blog/property-types-and-specialist-tax/hmrcs-otm-letters-campaign-directed-at-ated-avoidance">HMRC OTM letters page</a>.</p>
+
+<h2>The three regimes side by side</h2>
+<table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Statutory hook</th>
+<th>Trigger</th>
+<th>Quantum</th>
+<th>Disclosure mitigation</th>
+<th>Appeal route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Late filing</strong></td>
+<td>FA 2009 Sch 55 items 11A and 11B at the Table at para 1</td>
+<td>Filing date missed (FA 2013 s.159: 30-day rule from chargeability for existing dwellings; 90-day extension under ss.124-125 for new dwellings and conversions)</td>
+<td>£100 immediate; £200 at 3 months; £300 at 6 months; £300 at 12 months; behaviour-tiered tax-geared uplifts beyond 12 months under paras 5, 6 and 6A</td>
+<td>Yes per Sch 55 paras 17 and 18 (mitigation floors mirror Sch 24)</td>
+<td>Sch 55 para 23 reasonable excuse + para 16 special reduction; 30-day window under TMA 1970 s.31A</td>
+</tr>
+<tr>
+<td><strong>Late payment</strong></td>
+<td>FA 2009 Sch 56 items 11A and 11B at the Table at para 1</td>
+<td>Tax not paid by due date (30 April for annual; 30 days from chargeability for new dwellings)</td>
+<td>5% of unpaid tax at 30 days; additional 5% at 5 months; additional 5% at 11 months; interest in parallel under FA 2009 ss.101-102</td>
+<td>Yes per Sch 56 disclosure-mitigation provisions (parallel to Sch 55)</td>
+<td>Sch 56 reasonable excuse + special reduction parallel; 30-day window under TMA 1970 s.31A</td>
+</tr>
+<tr>
+<td><strong>Inaccuracy</strong></td>
+<td>FA 2007 Sch 24</td>
+<td>Return contains an inaccuracy that leads to tax understatement</td>
+<td>Careless 0 to 30%; deliberate not-concealed 20 to 70%; deliberate-concealed 30 to 100%; offshore Category 2 uplift 1.5x; offshore Category 3 uplift to 200% maximum per para 4A and SI 2011/975</td>
+<td>Yes per Sch 24 para 10 (mitigation matrix); unprompted-within-12-months gives the lowest floor</td>
+<td>Sch 24 para 14 reasonable excuse + para 11 special reduction; 30-day window under TMA 1970 s.31A</td>
+</tr>
+</tbody>
+</table>
+<p>A single delinquent ATED filer can attract all three regimes simultaneously. The cumulative arithmetic is harsh: total exposure for a £2m-band dwelling in 2026/27 (£9,450 ATED) deliberately concealed could exceed 250% of the underlying ATED if all three regimes are maximised. The operational lesson is that ATED penalty cases should never be analysed regime-by-regime in isolation; the cumulative bill is the headline figure and the disclosure-mitigation strategy needs to address all three regimes in a single response.</p>
+
+<aside><p>Three regimes, one response strategy.</p><p>We help non-natural-person ATED filers facing penalty exposure to map the full three-regime position (Sch 55 + Sch 56 + Sch 24) before drafting any HMRC representation. The disclosure-mitigation analysis under Sch 24 para 10 and Sch 55 paras 17 and 18 typically governs the eventual penalty quantum across all three regimes; an unprompted-disclosure-within-12-months framing can reduce total exposure by 50% or more compared with a prompted-disclosure-post-enquiry position. The OTM-letter window is the operationally critical moment; engagement within the window is materially more valuable than substantive accuracy at a later disclosure.</p></aside>
+
+<h2>Sch 55 late filing: the escalator with worked arithmetic</h2>
+<p>Iberic Holdings Limited (UK ltd-co holding a £2.4m London dwelling; £9,450 2026/27 ATED charge; relief claimed for 2024/25 and 2025/26; 2026/27 return missed). Filing date 30 April 2026; return not filed by year-end.</p>
+<ol>
+<li><strong>Day after filing date (1 May 2026).</strong> Sch 55 paragraph 3 fixed penalty £100. Cumulative: £100.</li>
+<li><strong>3 months late (31 July 2026).</strong> Sch 55 paragraph 4 daily penalties potentially trigger (HMRC must issue notice; in ATED practice HMRC typically issues the £200 escalator instead of daily £10s). Cumulative: £300.</li>
+<li><strong>6 months late (31 October 2026).</strong> Sch 55 paragraph 5 triggers: 5% of tax due or £300 if greater. 5% × £9,450 = £472.50; £300 is the floor. Operative escalator figure £300 (HMRC practice); paragraph 5 mechanic produces £472.50 where tax-geared exceeds the floor. Cumulative under floor logic: £600; under tax-geared logic: £772.50.</li>
+<li><strong>12 months late (30 April 2027).</strong> Sch 55 paragraph 6 triggers: 5% of tax due or £300 if greater, with behaviour uplifts per paragraph 6A. Careless 30% upper bound, 0% lower floor with full unprompted disclosure within 12 months. Deliberate not-concealed 70% upper, 20% floor. Deliberate-concealed 100% upper, 30% floor. For careless behaviour with prompted disclosure: 15% × £9,450 = £1,417.50.</li>
+</ol>
+<p>Total cumulative for a 12-month-delinquent careless prompted-disclosure case: £100 + £200 + £300 + £1,417.50 = £2,017.50 of late-filing penalties on a £9,450 ATED bill. For deliberate-concealed prompted-disclosure: 50% × £9,450 = £4,725 at paragraph 6; total £100 + £200 + £300 + £4,725 = £5,325 of late-filing penalties (56% of the ATED bill in late-filing penalty alone).</p>
+<p>Plus Sch 56 late-payment (assuming tax also late): 5% at 30 days (£472.50) + 5% at 5 months (£472.50) + 5% at 11 months (£472.50) = £1,417.50 in late-payment penalties. Plus interest under FA 2009 ss.101-102 (current HMRC late-payment interest rate around 7 to 8% annualised; verify gov.uk at consultation date).</p>
+<p>Grand total worst case (12-month delinquent + deliberate-concealed + prompted disclosure + late tax payment + interest): £5,325 + £1,417.50 + interest = approximately £7,000 or more on a £9,450 ATED bill. The arithmetic justifies engaging specialist tax representation immediately on receipt of any HMRC ATED enquiry.</p>
+
+<h2>Sch 56 late payment: the parallel overlay</h2>
+<p>Sch 56 operates on the same items 11A and 11B at the Table at paragraph 1 as Sch 55. The triggers are different: Sch 55 catches failure to file; Sch 56 catches failure to pay. The two regimes apply independently. A delinquent filer who files late but pays the right amount of tax at the right time attracts Sch 55 only. A timely filer who fails to pay attracts Sch 56 only. A delinquent filer who also fails to pay attracts both.</p>
+<p>The Sch 56 paragraph 3 escalator runs on three triggers: 5% of unpaid tax at 30 days after the original due date; an additional 5% at 5 months after the original due date; a further additional 5% at 11 months. The cumulative fixed-penalty cap is 15% of unpaid tax. The 5% calculations are based on the original due date, not the filing date; a return filed 4 months late but where tax was paid at the original due date attracts no Sch 56 penalty.</p>
+<p>Interest under FA 2009 ss.101-102 runs from the original due date in parallel with the Sch 56 penalties. The HMRC late-payment interest rate is uplifted under the FA 2009 indexation mechanism; the current rate (verify gov.uk at consultation date) is typically around 7 to 8% annualised. Interest is not part of the penalty regime and is not subject to the same appeal mechanics; interest is compensation for HMRC's loss of use of funds.</p>
+<p>The Sch 56 appeal routes mirror Sch 55: reasonable excuse and special reduction, with the same 30-day clock under TMA 1970 s.31A. The same Perrin v HMRC [2018] UKUT 156 (TCC) four-stage framework applies on reasonable excuse; the same supervisory-jurisdiction limit applies on special reduction.</p>
+
+<h2>Sch 24 inaccuracy: the Cordova Cayman walked example</h2>
+<p>Cordova Cayman Limited (Cayman company holding a £6.2m London apartment; ATED return filed by 30 April 2025 for 2025/26; declared at £5m to £10m band giving £73,050 ATED at 2025/26 figures, paid in full; HMRC enquiry October 2026 establishes the dwelling was correctly valued at £10.3m at the 1 April 2022 valuation date, so the band should have been £10m to £20m at £146,650). Undeclared tax: £146,650 − £73,050 = £73,600.</p>
+<p>Cordova used a professional RICS valuation that was internally consistent but understated. The behaviour analysis depends on the facts. If the valuation methodology was reasonable and the under-valuation was bona-fide error, the behaviour is careless under Sch 24 paragraph 3(1)(a) (failure to take reasonable care). If the methodology was knowingly aggressive and the UBO directed the valuer, the behaviour may be deliberate not-concealed under paragraph 3(1)(b). Cordova is Cayman-incorporated, an offshore-element case; Cayman is a Category 3 jurisdiction (no automatic information exchange) per SI 2011/975, so the Category 3 uplift at paragraph 4A applies.</p>
+<p>Careless scenario (HMRC accepts bona-fide error). Sch 24 paragraph 4 maximum: 30%. Sch 24 paragraph 10 reduction for prompted disclosure within 12 months: 15% minimum floor. Range 15 to 30%. Offshore Category 3 uplift: 1.5x multiplier per paragraph 4A, range 22.5 to 45%. HMRC typically agrees mid-range for cooperative disclosure: around 30% × £73,600 = £22,080 inaccuracy penalty.</p>
+<p>Deliberate not-concealed scenario (HMRC challenges). Sch 24 paragraph 4 maximum: 70%. Sch 24 paragraph 10 reduction for prompted disclosure: 35% minimum floor. Range 35 to 70%. Offshore Category 3 uplift: 1.5x multiplier, range 52.5 to 105%. Worst case: 105% × £73,600 = £77,280 inaccuracy penalty (more than the underlying tax).</p>
+<p>Deliberate-concealed scenario (extreme). Sch 24 paragraph 4 maximum: 100%. Sch 24 paragraph 10 reduction for prompted disclosure: 50% minimum floor. Offshore Category 3 uplift: 2.0x multiplier (200% maximum per SI 2011/975 plus paragraph 4A). Range 100 to 200%. Worst case: 200% × £73,600 = £147,200 inaccuracy penalty (double the underlying tax).</p>
+<p>Plus underlying tax £73,600 and interest under FA 2009 ss.101-102 from the original due date. Offshore-corporate ATED filers face dramatically asymmetric penalty exposure on inaccuracy. The route to the low end of each band is unprompted-disclosure-within-12-months under Sch 24 paragraph 10. Engage specialist tax representation before submitting any amended return; Digital Disclosure Service timing matters; specialist tax counsel may negotiate behaviour categorisation with HMRC, often the most consequential lever in inaccuracy cases.</p>
+
+<aside><p>Behaviour categorisation is the most consequential lever in any Sch 24 inaccuracy appeal.</p><p>The dividing line between careless (30% maximum, uplifted to 60% for Category 3) and deliberate not-concealed (70% maximum, uplifted to 140%) is a Sch 24 paragraph 3 fact-finding question that the FTT decides on the evidence. HMRC v Tooth [2021] UKSC 17 sets the Supreme Court framework for the deliberate-behaviour test, and FTT cases like Auxilium Project Management v HMRC [2016] UKFTT 249 illustrate the careless-versus-deliberate dividing line. We help offshore-incorporated ATED filers build the behaviour-categorisation evidence pack as part of an integrated disclosure-plus-appeal response; the difference between careless and deliberate not-concealed for a £100,000 inaccuracy at Category 3 can be £60,000 to £140,000 in penalty exposure.</p></aside>
+
+<h2>The disclosure-mitigation matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Behaviour</th>
+<th>Sch 24 max</th>
+<th>Sch 24 min unprompted &lt; 12 months</th>
+<th>Sch 24 min prompted</th>
+<th>Offshore Cat 3 max (Sch 24 para 4A)</th>
+<th>Sch 55 para 6A uplift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Careless</td>
+<td>30%</td>
+<td>0%</td>
+<td>15%</td>
+<td>60%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Deliberate not-concealed</td>
+<td>70%</td>
+<td>20%</td>
+<td>35%</td>
+<td>140%</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>Deliberate-concealed</td>
+<td>100%</td>
+<td>30%</td>
+<td>50%</td>
+<td>200%</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p>Unprompted-disclosure-within-12-months is the lowest-floor route. The status flips to prompted on HMRC's opening of a formal enquiry, the issue of an OTM letter or a discovery assessment. ATED OTM-letter recipients should typically respond within the OTM window so that any subsequent disclosure registers as unprompted; once HMRC's enquiry has formally opened, the prompted-disclosure floor applies. Beyond 12 months the floors shift upward further; speed matters as much as accuracy in any disclosure decision.</p>
+
+<h2>The two-routes appeal architecture</h2>
+<p>The substantive appeal grounds for any ATED Sch 55 or Sch 24 penalty are two independent statutory routes. Reasonable excuse (Sch 55 paragraph 23, Sch 24 paragraph 14) is the appellant's defence on an objective test. Per Perrin v HMRC [2018] UKUT 156 (TCC) the four-stage framework runs as follows: (1) facts on the balance of probabilities; (2) which of those facts are relevant to the alleged reasonable excuse; (3) objective test with the appellant's actual knowledge and characteristics; (4) remedy without unreasonable delay once the excuse ceased. Special reduction (Sch 55 paragraph 16, Sch 24 paragraph 11) is HMRC's discretionary judgment; the FTT exercises supervisory jurisdiction only (Sch 55 paragraph 22 and the parallel Sch 24 architecture) on Wednesbury-equivalent grounds.</p>
+<p>Statutory exclusions exist for both routes. Sch 55 paragraph 23(2) excludes insufficient funds (unless beyond control), reliance on another person (unless reasonable steps taken) and failure to remedy once the excuse ceased. Sch 55 paragraph 16(2) excludes inability to pay and cross-taxpayer revenue balancing from special circumstances. The same exclusions apply in the parallel Sch 24 architecture. The two routes are not mutually exclusive and are typically pleaded simultaneously, paragraph 23 (or paragraph 14 on inaccuracy) as primary defence aiming for full discharge, paragraph 16 (or paragraph 11 on inaccuracy) as fallback aiming for reduction or stay. For the operational deep-dive on the two routes with the Perrin Stage 3 worked example and the para 23(2)(b) "reliance on another person" carve-out, see our <a href="/blog/property-types-and-specialist-tax/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal">ATED late-filing penalty appeal page</a>.</p>
+
+<h2>The 30-day clock and the statutory-review route</h2>
+<p>The TMA 1970 s.31A 30-day appeal window runs from the date of the penalty notice and is non-negotiable. HMRC cannot administratively extend the window. Within the 30 days the appellant has three options: (a) appeal direct to the FTT under TMA 1970 s.31; (b) request HMRC statutory review under TMA 1970 s.49; (c) pay without prejudice and lodge a protective appeal. Doing nothing forfeits the appeal right outside a formal Martland v HMRC [2018] UKUT 178 (TCC) framework late-appeal application.</p>
+<p>The statutory-review route is operationally valuable. The appellant requests review by written notice within the 30 days. The request stops the FTT clock pending HMRC's review conclusion notice. A different HMRC officer (not previously involved with the case) examines the penalty decision; the review is typically concluded within 45 days for straightforward cases (longer for complex multi-year or multi-dwelling cases). On receipt of the conclusion notice, a fresh 30-day FTT appeal window opens; the appellant can then either accept the review outcome or proceed to FTT.</p>
+<p>The decision between direct FTT appeal and statutory review is fact-specific. Statutory review is typically the right first step where HMRC's original decision is templated, where the underlying facts are evidentiary, and where a fresh HMRC officer with the full submission may discharge the penalty without litigation. Direct FTT appeal is the right route where HMRC has already engaged at quality and refused, or where the legal point is novel and benefits from FTT clarification. The pay-without-prejudice route is conservative; it stops further escalation and preserves later remedy, with HMRC refunding with interest if the appeal succeeds.</p>
+
+<h2>The OTM-letter context</h2>
+<p>HMRC's One-To-Many compliance letter campaign is the modal trigger for ATED penalty cases. The letters target overseas-company Land Registry holders identified through Land Registry, RoE and HMRC database cross-matching, with suspected unfiled ATED returns. The letter invites voluntary disclosure within a specified window (typically 30 to 60 days) and warns that failure to engage will lead to formal enquiry under FA 2013 s.165 or discovery assessment.</p>
+<p>The operational discipline is to engage within the OTM window. The window is HMRC's invitation to characterise the disclosure as unprompted (lowest mitigation floor under Sch 24 paragraph 10 and the parallel Sch 55 paragraphs 17 and 18). Once the window closes without engagement, the next interaction is typically a formal enquiry, after which any disclosure is prompted. The difference between unprompted and prompted floors is material: at deliberate-not-concealed, the unprompted floor is 20% (uplifted to 40% for Category 3) versus the prompted floor of 35% (uplifted to 70% for Category 3).</p>
+<p>OTM-letter recipients should not under any circumstances ignore the letter. The letter is not an assessment but it is a recorded HMRC interaction that closes the unprompted-disclosure pathway if unanswered. The standard operational sequence is: engage specialist tax representation within 7 days of receipt; gather documentation across all chargeable periods (ATED returns previously filed or not; underlying valuation evidence; corporate-structure documentation); prepare a Digital Disclosure Service submission with full disclosure of the position; submit with calculation showing unprompted-disclosure framing where the facts support it; follow up with HMRC's allocated officer if the OTM-channel allocation is identified.</p>
+
+<aside><p>The OTM-letter window is the most consequential timing-driven moment in ATED compliance.</p><p>We work with overseas-company ATED filers on OTM-letter responses across all five Sch 24 behaviour categorisations (careless, deliberate not-concealed, deliberate-concealed, plus the Category 2 and Category 3 offshore uplifts). The disclosure quality matters but the disclosure timing matters more. An unprompted-framed disclosure 14 days into the OTM window with a deliberate-not-concealed behaviour categorisation can save 50% of total penalty exposure compared with a prompted-framed disclosure 90 days into the window after the OTM letter has expired. Engage within days, not weeks.</p></aside>
+
+<h2>Cumulative exposure for multi-year multi-dwelling non-filers</h2>
+<p>Sapphire Estates Cayman Holdings Limited (Cayman company holding 4 London apartments worth £3.2m, £4.8m, £6.7m and £12.4m; deliberately non-filed ATED returns 2021/22 through 2025/26; HMRC OTM letter received March 2026 prompting voluntary disclosure).</p>
+<p>Per-dwelling per-year ATED at 2025/26 figures: £3.2m is the £2m to £5m band at £18,500; £4.8m is also £2m to £5m at £18,500; £6.7m is the £5m to £10m band at £73,050; £12.4m is the £10m to £20m band at £146,650. Total annual ATED at 2025/26 rates: £18,500 + £18,500 + £73,050 + £146,650 = £256,700 per year, multiplied by 5 years = £1,283,500 of historic ATED.</p>
+<p>Sch 55 late-filing escalator per year per dwelling: £100 + £200 + £300 + tax-geared paragraph 6 uplift at deliberate-not-concealed Category 3 with prompted disclosure (105% of ATED for that uplifted behaviour band). For the £12.4m dwelling: £100 + £200 + £300 + 105% × £146,650 = £154,583 per year, multiplied by 5 years = approximately £772,915 in late-filing penalties on that single dwelling. Across all 4 dwellings: approximately £1,348,675 in Sch 55 late-filing penalties alone.</p>
+<p>Sch 56 late-payment escalator per year per dwelling: 5% + 5% + 5% = 15% of unpaid tax multiplied by £256,700 multiplied by 5 = £192,525 in late-payment penalties. Sch 24 inaccuracy does not apply where no return was filed (Sch 41 wrongdoing might apply on the facts, with parallel architecture). Interest under FA 2009 ss.101-102 on £1.28m over 5 years at HMRC late-payment interest rates (typically 7%-plus annualised): approximately £400,000 in interest.</p>
+<p>Total historic exposure: £1.28m ATED + £1.35m Sch 55 + £193k Sch 56 + £400k interest = approximately £3.2 million. The OTM voluntary-disclosure route, if Sapphire engages within the window and elects unprompted-disclosure framing where defensible, can drop the Sch 55 penalty layer by 30 to 50% relative to the worst-case prompted-disclosure post-OTM-letter scenario. The cumulative arithmetic for multi-year multi-dwelling non-filers is dramatic; the operational lever is engagement on receipt of the OTM letter, not at the formal-enquiry stage that follows OTM-window expiry.</p>
+
+<h2>Procedural and operational notes</h2>
+<p>The penalty appeal bundle for any ATED case should include: each penalty notice as a separate exhibit; the underlying ATED return (or absence of return) for each chargeable period; the company's corporate record showing the responsible officer at each filing date; the evidence pack for the Perrin four-stage application (facts, relevance, objective-test characteristics, remedy timeline); the evidence pack for the paragraph 16 (or paragraph 11) special-circumstances submission; the statutory-review request or FTT appeal form; the cover representation pleading both routes simultaneously across all years.</p>
+<p>For overseas-incorporated filers the bundle should also include UK contact details, a statement of UK address for service and (where relevant) the Register of Overseas Entities registration evidence. For multi-year cases the representation should typically combine all years into a single submission rather than appealing year-by-year; the disclosure-mitigation analysis runs across all years together and HMRC tends to settle cumulative cases in a single closing position rather than piecemeal.</p>
+
+<h2>Frequently asked questions</h2>
+<p>The FAQ list above covers the three parallel penalty regimes, the ATED-specific late-filing escalator, the Sch 56 late-payment regime, the Sch 24 behaviour-tiered inaccuracy regime, the offshore Category 3 200% uplift, the disclosure-mitigation matrix mechanics, the two-routes appeal architecture for both late-filing and inaccuracy, the 30-day appeal clock under TMA 1970 s.31A, the statutory-review route under TMA 1970 s.49, the OTM-letter response strategy, the claim-only-return penalty position, the Category 3 jurisdiction question, and the cumulative-exposure arithmetic for multi-year multi-dwelling non-filers. For the operational deep-dive on the two appeal routes, see our <a href="/blog/property-types-and-specialist-tax/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal">ATED late-filing penalty appeal page</a>. For upstream prevention of common ATED errors, see our <a href="/blog/property-types-and-specialist-tax/avoiding-common-mistakes-with-enveloped-dwelling-tax">avoiding common ATED mistakes page</a>. For the broader ATED context, see our <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">complete ATED guide for 2026/27</a>.</p>
+
+<h2>Next step</h2>
+<p>If you are facing an HMRC ATED penalty position (single notice, multiple notices, OTM letter, or formal enquiry) the three-regime architecture means the disclosure-and-appeal strategy needs to address Sch 55 late filing, Sch 56 late payment and Sch 24 inaccuracy in a single response. The 30-day clock under TMA 1970 s.31A applies per penalty notice; the OTM-letter window applies separately for unprompted-disclosure framing. Both timelines matter and both need to be managed in parallel by representation that understands both regimes. Contact us via the form below to discuss the specific position.</p>
