@@ -12,7 +12,7 @@
 
 You are taking over the orchestrator role for an ongoing program. Do this before responding to the user:
 
-1. **Read this entire doc** (~10-15 min). It is the durable context.
+1. **Read this entire doc** (~10-15 min). It is the durable context. **§16.T1-T6 (Track 2-native lessons) are load-bearing — read them carefully**: the deterministic-floor principle (never gate a high-consequence call on LLM plausibility), the data-gated collapse-equity guard, monitored_pages as a decision input, and the mandatory per-batch execution chain. Also read `docs/property/TRACK2_REWRITE_RESUME_2026-05-29.md` (the current resume point).
 2. **Read** `docs/property/NETNEW_PROGRAM.md` §0 + §14 + §16.18 + §16.31 (the parent program's read-only-against-Wave-N discipline + reasoning-first + URL-verification lessons that Track 2 inherits).
 3. **Run these commands to see current state:**
    ```
@@ -544,7 +544,19 @@ For the trial: gates apply to the 3 hand-drafted briefs and the Track 2B output.
 
 ## §16 Lessons learned (running log)
 
-(Empty at trial start. Populated post-trial and post-each-Phase-2-batch.)
+> Track 2-native lessons are numbered **§16.Tn** to avoid colliding with the inherited NETNEW §16.N numbering. These are the load-bearing ones — read them before any execution.
+
+**§16.T1 — DETERMINISTIC FLOOR for high-consequence calls (the load-bearing principle).** The remediation root cause was the pipeline trusting LLM *plausibility* for calls that destroy value when wrong (link categories, tax arithmetic, statute citations, collapse direction). The fix pattern, applied repeatedly: **for any decision that can lose rankings, money, or correctness, the floor is deterministic data/code — never an LLM judgement; an adversarial verify is a SECOND layer, never the only one.** Encoded as: internal-link category → `optimisation_engine/blog_generator/slug_resolver.py` (a slug has exactly one real category; never guess); tax arithmetic + statutes → `track2_independent_qa.wf.js` recomputes every example + WebFetches every cite, `scripts/qa_verdict.py` **derives `all_clear` from those fields (never trusts the agent's self-reported boolean)**, `scripts/predeploy_gate.py` HARD-blocks; collapse direction → `track2_collapse_guard.py` (§16.T2). When you add a new high-consequence decision, ask "what's the deterministic floor?" first.
+
+**§16.T2 — Redirect-collapse MUST be data-gated on equity (weaker→stronger only).** DIAGNOSE once proposed collapsing a near-page-1 page (193 impr, pos 15.5) INTO a far weaker page-4 page (4 impr, pos 44.5) because the target's slug *sounded* like the canonical — it never compared ranking equity. A 301 in the wrong direction buries the stronger page. `scripts/track2_collapse_guard.py` is the deterministic floor, wired into `track2_rewrite_engine.wf.js` between diagnose and brief: a REVERSED verdict auto-flips the decision to REWRITE. **Run it before adding ANY `DUPLICATE_REDIRECTS` entry by hand, too.** It is: (a) **spike-robust** — equity = `sustained` impressions (90d total minus the single biggest week) + weeks-present, NOT raw 90d sum (a one-week spike once inflated a dead page to "469 impr"); protects only pages present in ≥3 weeks with ≥50 sustained impr, kept deliberately permissive so micro-optimisation of genuinely weak pages is NOT blocked; (b) **monitored-aware** — never collapses a page rewritten in the last 45 days (its GSC reads artificially low mid-recovery).
+
+**§16.T3 — Don't revert live redirects on a static snapshot; check the time-series first.** A retrospective audit of all 115 live `DUPLICATE_REDIRECTS` flagged 13 as reversed-equity, but the weekly impressions-by-date series showed EVERY one was a single-week spike or a same-day rewrite, not a durable buried ranking. Auto-reverting would have flip-flopped live URLs for no gain. For any hard-to-reverse outward-facing routing change, confirm with the weekly time-series + `monitored_pages` context (and the user) before acting.
+
+**§16.T4 — `monitored_pages` is an INPUT to decisions, not just an output.** `track2_worklist.py` excludes monitored slugs from the to-do; the collapse guard reads `monitored_pages` (R5). Before collapsing/re-touching a page, check whether it is an active monitored rewrite (recently invested in / mid-recovery). `rewrite_type` CHECK allows only `rewrite` / `redirect` / `cleanup_sweep`.
+
+**§16.T5 — Engine hardening shipped (WS-D D3/D4, commits `bda6ad8c` + `4c1f643a` + `586fc819`).** The writer (`track2_rewrite_writer.wf.js`) has a Normalise stage (canonicalises links, flags invented slugs) and reads `briefs/property/track2/<batch>/<slug>.md` + `<slug>.corrections.md` when present. **Mandatory per-batch chain:** `track2_rewrite_engine.wf.js` (diagnose+brief, guard-gated) → writer → `python scripts/qa_verdict.py pending --batch X --slugs …` → `track2_independent_qa.wf.js` → save its return → `python scripts/qa_verdict.py record --batch X --verdicts …` → `python scripts/predeploy_gate.py --qa-batch X` → `cd Property/web && npm run build` → deploy (`deploy-and-index.ps1 -Site property -QaBatch X`) → `monitored_pages` + IndexNow.
+
+**§16.T6 — Parked risk: duplicate flat/nested blog URLs.** `london-property-accountant` is indexed under both `/blog/<slug>` and `/blog/property-accountant-services/<slug>` (split impressions). Canonical/duplicate-URL hygiene is worth a corpus check; parked 2026-05-29.
 
 ---
 
@@ -558,6 +570,8 @@ For the trial: gates apply to the 3 hand-drafted briefs and the Track 2B output.
 6. **Universe under/over-counting.** Stage 0 exclusion audit is line-by-line auditable; if Stage 1 finds an unreconcilable slug, flag to manager.
 7. **DeepSeek-era brief contamination.** Track 2A sub-agents instructed not to read deprecated briefs at `briefs/property/<slug>.md` (top level, the 63 from 2026-05-21) unless explicitly cited as starter signal.
 8. **Wave 5 merges mid-Phase-2.** When Wave 5 lands its 30 net-new on `main`, the universe drops to ~204. Re-run exclusion arithmetic and refresh the Cannibalisation Index at the boundary.
+9. **Reversed-equity redirect-collapse (traffic-destroying).** DIAGNOSE can pick a collapse target by name, not equity, and 301 a stronger page into a weaker one. Mitigation: `scripts/track2_collapse_guard.py` deterministic floor wired into the engine (auto-flips reversed collapses to REWRITE); spike-robust + monitored-aware; run it before any hand-added `DUPLICATE_REDIRECTS`. See §16.T2/§16.T3.
+10. **Plausibility-only verification (the remediation root cause).** Review layers that reason about plausibility share blind spots and ship wrong arithmetic / wrong-Act citations / 404 links. Mitigation: deterministic floors for links, arithmetic, statutes, and collapse-direction; the QA gate derives `all_clear` from data, not the agent's boolean. See §16.T1.
 
 ---
 

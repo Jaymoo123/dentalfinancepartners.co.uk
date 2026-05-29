@@ -6,6 +6,16 @@ You are picking up the **Property legacy rewrite program** (~233 residual legacy
 
 ---
 
+> **⚡ UPDATE 2026-05-29 PM (commit `bda6ad8c`) — the two unbuilt hardening pieces are now BUILT, and the program has RESUMED.** Before resuming the rewrites the user directed "harden first": the plan's D3 + D4 (specified but not built at WS-D `717f0038`) are done.
+> - **D3 (writer link-canonicalisation):** `slug_resolver.py --fix` CLI + a deterministic **Normalise** stage in `track2_rewrite_writer.wf.js` (legacy rewrites bypass `content_pipeline`, so they were NOT getting the auto-canonicalisation §1.1 describes for net-new — now they are). Invented slugs fail `html_valid`, never guessed.
+> - **D4 (deterministic QA gate):** `track2_independent_qa.wf.js` now forces `arithmetic_recomputed[]` + `statute_checks[]` + `links_resolve` + `all_clear`; new `scripts/qa_verdict.py` records verdicts keyed to file sha256 (with `all_clear` **DERIVED from the dimensions, not trusted from the agent**) + a **pending-QA** marker; `predeploy_gate.py` blocks known-bad live pages + pending-unQA'd rewrites; strict `--qa-batch <name>` coverage wired through `deploy-and-index.ps1 -QaBatch`.
+> - **MANDATORY operator chain per rewrite batch:** `track2_rewrite_engine.wf.js` (diagnose+brief, rewrite-vs-collapse) → `track2_rewrite_writer.wf.js` (rewrite in place) → `python scripts/qa_verdict.py pending --batch X --slugs …` → `track2_independent_qa.wf.js` → save its return → `python scripts/qa_verdict.py record --batch X --verdicts …` → `python scripts/predeploy_gate.py --qa-batch X` → build → deploy (`-QaBatch X`) → monitored_pages + IndexNow.
+> - **Worklist:** **164 residual pages remain** — `docs/property/track2_worklist_2026-05-29.md` (+ `.json`), ROI-ranked + clustered; rebuild with `python scripts/track2_worklist.py`. Batch 1 (5 high-ROI pages) is the first run through the hardened pipeline.
+> - Full state + the per-batch chain: memory [[track2_remediation_state]].
+> - **Institutionalised (do not rediscover):** the principles behind all of this are now baked into `TRACK2_PROGRAM.md` **§16.T1-T6** + §17 risks 9-10 — the deterministic-floor rule (never gate a high-consequence call on LLM plausibility), the data-gated collapse-equity guard (`scripts/track2_collapse_guard.py`, run before ANY hand-added `DUPLICATE_REDIRECTS`), monitored_pages as a decision input, and the mandatory per-batch execution chain. Read them.
+
+---
+
 ## 0. What just happened (the remediation — now COMPLETE)
 
 A single root cause (the pipeline let the LLM guess internal-link categories and "verify" by plausibility only; `house_positions.md` was itself wrong on the April-2027 rules and re-seeded the error) produced four defect classes. All four workstreams are done:
