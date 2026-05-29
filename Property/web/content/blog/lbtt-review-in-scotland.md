@@ -201,10 +201,10 @@ editorialNote: "State-of-the-tax editorial review essay covering Scottish LBTT f
 <li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers">Scottish LBTT ADS mechanics page</a> for the 8% surcharge depth.</li>
 <li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics">Scottish LBTT FTB relief mechanics page</a> for the Sch 4A relief depth.</li>
 <li>The <a href="/blog/landlord-tax-essentials/essential-guide-for-first-time-homebuyers-in-scotland">essential guide for first-time homebuyers in Scotland</a> for the buyer-onboarding journey.</li>
-<li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics">Scottish LBTT bare-trust corporate-restructuring page</a> for the corporate-reorganisation depth.</li>
+<li>The <a href="/blog/incorporation-and-company-structures/scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics">Scottish LBTT bare-trust corporate-restructuring page</a> for the corporate-reorganisation depth.</li>
 <li>The <a href="/blog/landlord-tax-essentials/lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax">LBTT acquisition relief page</a> for the Sch 11 Part 3 mechanics.</li>
 <li>The <a href="/blog/landlord-tax-essentials/bare-trusts-and-lbtt-relief-availability">bare trusts and LBTT relief availability page</a> for the Sch 18 Part 3 look-through.</li>
-<li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision">corporate-buyer pathway page</a> for the corporate-buyer decision tree.</li>
+<li>The <a href="/blog/incorporation-and-company-structures/scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision">corporate-buyer pathway page</a> for the corporate-buyer decision tree.</li>
 </ul>
 
 <p>Scotland's LBTT regime is its own rule book. The 2015 to 2026 arc has seen four ADS upratings, the introduction and stabilisation of FTB relief, the retention of MDR where England abolished and Wales modified, and the broadly stable underlying mechanic-by-mechanic alignment with SDLT. The 2026/27 freeze on main rates and bands suggests medium-term stability on the main residential framework, with ADS likely to remain the active policy lever and with cross-border investor positioning sensitive to the MDR-and-six-dwellings divergence from English SDLT.</p>

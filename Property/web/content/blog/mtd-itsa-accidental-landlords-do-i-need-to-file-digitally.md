@@ -63,7 +63,7 @@ editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Persona-driven page
 
 <p>The decision moment: at the point you receive the first month's rent, run the qualifying-income test on the projected annual figure. The <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">gross-vs-net qualifying income page</a> walks through the mechanic. If you are in scope, register for MTD ITSA before 6 April of the relevant mandate year.</p>
 
-<p>For the operational side of becoming a landlord after a bereavement, the <a href="/blog/landlord-tax-essentials/inheriting-uk-rental-property-executors-step-by-step">inheriting a UK rental property page</a> covers the executor sequence and the personal-representative-to-beneficiary handover.</p>
+<p>For the operational side of becoming a landlord after a bereavement, the <a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">inheriting a UK rental property page</a> covers the executor sequence and the personal-representative-to-beneficiary handover.</p>
 
 <h3>Route 2: relocation, letting the former home</h3>
 

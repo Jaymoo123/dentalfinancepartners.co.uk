@@ -225,11 +225,11 @@ faqs:
 <h2>Where to read next</h2>
 
 <ul>
-<li><a href="/blog/landlord-tax-essentials/inheriting-uk-rental-property-executors-step-by-step">Inheriting UK rental property: executors' step-by-step</a>. Executor side of the same lifecycle event.</li>
-<li><a href="/blog/landlord-tax-essentials/cgt-inherited-rental-property-calculation-uk">CGT inherited rental property calculation UK</a>. Mechanics deep for the keep-and-let future-disposal route.</li>
+<li><a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">Inheriting UK rental property: executors' step-by-step</a>. Executor side of the same lifecycle event.</li>
+<li><a href="/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk">CGT inherited rental property calculation UK</a>. Mechanics deep for the keep-and-let future-disposal route.</li>
 <li><a href="/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving">Deed of variation property estate</a>. DoV mechanics deep.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance tax rental property UK guide</a>. Rental-portfolio IHT comprehensive.</li>
-<li><a href="/blog/landlord-tax-essentials/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">CGT main residence relief and joint ownership</a>. PPR mechanics where the inherited house is occupied with a partner.</li>
+<li><a href="/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">CGT main residence relief and joint ownership</a>. PPR mechanics where the inherited house is occupied with a partner.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-a-brief-summary">Inheritance tax: a brief summary</a>. General IHT orientation.</li>
 <li><a href="/blog/landlord-tax-essentials/how-long-does-probate-take-in-the-uk">How long does probate take in the UK</a>. Probate timeline pillar.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-and-the-family-home">Inheritance tax and the family home</a>. Outgoing family-home decision pillar.</li>

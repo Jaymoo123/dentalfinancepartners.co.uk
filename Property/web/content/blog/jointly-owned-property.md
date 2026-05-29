@@ -156,15 +156,15 @@ faqs:
 <ul>
 <li><strong>I want to understand JT versus TIC mechanics.</strong> See our <a href="/blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords">joint tenants vs tenants in common</a> page.</li>
 <li><strong>I am married and want to use Form 17.</strong> See our <a href="/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation">Form 17 declaration of beneficial interest</a> page.</li>
-<li><strong>I am married and considering an unequal split.</strong> See our <a href="/blog/landlord-tax-essentials/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision">unequal rental income split spouses tax planning</a> page.</li>
-<li><strong>I am working out Section 24 on a joint property.</strong> See our <a href="/blog/landlord-tax-essentials/section-24-joint-property-ownership-tax-split">Section 24 joint property ownership tax split</a> page.</li>
+<li><strong>I am married and considering an unequal split.</strong> See our <a href="/blog/section-24-and-tax-relief/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision">unequal rental income split spouses tax planning</a> page.</li>
+<li><strong>I am working out Section 24 on a joint property.</strong> See our <a href="/blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split">Section 24 joint property ownership tax split</a> page.</li>
 <li><strong>I am planning for IHT on jointly owned property.</strong> See our <a href="/blog/landlord-tax-essentials/iht-joint-ownership-property-spouse-exemption-transferable-allowances-jointly-tic-vs-jt">IHT joint ownership property</a> page.</li>
-<li><strong>I am running the MTD for ITSA threshold check on joint property.</strong> See our <a href="/blog/landlord-tax-essentials/mtd-itsa-jointly-owned-property-threshold-split">MTD-ITSA jointly owned property threshold split</a> page.</li>
+<li><strong>I am running the MTD for ITSA threshold check on joint property.</strong> See our <a href="/blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split">MTD-ITSA jointly owned property threshold split</a> page.</li>
 <li><strong>I am preparing a declaration of trust.</strong> See our <a href="/blog/landlord-tax-essentials/declaration-of-trust">declaration of trust</a> definitional pillar and the <a href="/blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17">declaration of trust mechanics</a> deep.</li>
 <li><strong>I am working through SDLT on a joint purchase or restructure.</strong> See our <a href="/blog/landlord-tax-essentials/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules">second home SDLT additional dwellings joint owners</a> page.</li>
-<li><strong>I am working through PPR on joint ownership.</strong> See our <a href="/blog/landlord-tax-essentials/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">CGT main residence relief joint ownership</a> page.</li>
+<li><strong>I am working through PPR on joint ownership.</strong> See our <a href="/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">CGT main residence relief joint ownership</a> page.</li>
 <li><strong>I am in a civil partnership.</strong> See our <a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnerships joint property ownership</a> page.</li>
-<li><strong>I am retired and reshaping the income split.</strong> See our <a href="/blog/landlord-tax-essentials/retirement-planning-spousal-rental-income-shift-form-17-marginal-rate-restructure">retirement planning spousal rental income shift</a> page.</li>
+<li><strong>I am retired and reshaping the income split.</strong> See our <a href="/blog/portfolio-management/retirement-planning-spousal-rental-income-shift-form-17-marginal-rate-restructure">retirement planning spousal rental income shift</a> page.</li>
 </ul>
 
 <h2>The bigger picture</h2>

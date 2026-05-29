@@ -81,7 +81,7 @@ reviewedAt: "2026-05-26"
 
 <p>FIG is not a perpetual concession. After the 4-year window closes, the individual is on the worldwide arising basis with no further foreign-income relief, subject to the temporary-non-residence rules under TCGA 1992 s.10A if they later leave the UK.</p>
 
-<p>For the operational deep-dive on FIG, including worked examples for property investors, see the <a href="/blog/property-types-and-specialist-tax/non-dom-reform-april-2025-fig-regime-property-investors">FIG regime for property investors page</a>. For the post-window planning, see the <a href="/blog/property-types-and-specialist-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords">FIG year-5 cliff page</a>.</p>
+<p>For the operational deep-dive on FIG, including worked examples for property investors, see the <a href="/blog/non-resident-landlord-tax/non-dom-reform-april-2025-fig-regime-property-investors">FIG regime for property investors page</a>. For the post-window planning, see the <a href="/blog/non-resident-landlord-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords">FIG year-5 cliff page</a>.</p>
 
 <aside>
 <p>The arithmetic on whether to claim FIG in any specific tax year is a clean modelling exercise. Foreign income above roughly £30,000 in a year typically makes the claim worth the loss of personal allowance and CGT annual exempt amount; below that, the position can flip. Year-by-year modelling is the right discipline, not a blanket "claim every year" position.</p>
@@ -111,7 +111,7 @@ reviewedAt: "2026-05-26"
 
 <p>TRF is for the legacy cohort only. A 2025-26 new arrival does not use TRF; they use FIG. The two regimes are mutually exclusive in any given tax year by reference to the individual's historic status.</p>
 
-<p>For the scenario-by-scenario operational deep-dive, see the <a href="/blog/property-types-and-specialist-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms">TRF qualifying overseas capital page</a>.</p>
+<p>For the scenario-by-scenario operational deep-dive, see the <a href="/blog/non-resident-landlord-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms">TRF qualifying overseas capital page</a>.</p>
 
 <h2>CGT rebasing: the narrow Sch 11 election</h2>
 
@@ -126,7 +126,7 @@ reviewedAt: "2026-05-26"
 
 <p>The election is made disposal by disposal. For a qualifying individual, the effect is to substitute the 5 April 2017 market value for the original base cost on the elected disposal. This typically reduces the chargeable gain on a long-held foreign asset where the 2017 value was meaningfully above original cost.</p>
 
-<p>For the eligibility analysis and worked examples, see the <a href="/blog/property-types-and-specialist-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms">FA 2025 Sch 11 narrow eligibility page</a>.</p>
+<p>For the eligibility analysis and worked examples, see the <a href="/blog/non-resident-landlord-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms">FA 2025 Sch 11 narrow eligibility page</a>.</p>
 
 <h2>IHT: the new LTR architecture</h2>
 

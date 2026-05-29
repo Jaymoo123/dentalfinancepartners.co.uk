@@ -134,7 +134,7 @@ faqs:
 
 <p>Welsh purchases use Land Transaction Tax with higher additional rates, and Scottish purchases use Land and Buildings Transaction Tax with the Additional Dwelling Supplement. Both have their own rate schedules.</p>
 
-<p>For a deeper look see our <a href="/blog/section-24-and-tax-relief/stamp-duty-buy-to-let-surcharge">SDLT buy-to-let surcharge guide</a>.</p>
+<p>For a deeper look see our <a href="/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge">SDLT buy-to-let surcharge guide</a>.</p>
 
 <h2>Allowable expenses for a former FHL now taxed as ordinary property income</h2>
 

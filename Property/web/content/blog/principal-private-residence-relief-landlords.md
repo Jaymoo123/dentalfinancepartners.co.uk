@@ -250,7 +250,7 @@ faqs:
 <ul>
 <li><strong>£3,000 annual exempt amount:</strong> applies to the residual chargeable gain after PRR and Lettings Relief. Each spouse has their own AEA. See the <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">AEA depth guide</a>.</li>
 <li><strong>Capital losses:</strong> brought-forward losses (claimed within four years per TMA 1970 s.43) can be set against the residual taxable gain after PRR and AEA. See the <a href="/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses">capital losses guide</a>.</li>
-<li><strong>Former Furnished Holiday Let property:</strong> FHL was abolished from 6 April 2025 by Finance Act 2025 Sch 5. Former FHL property is now treated as standard residential rental for CGT purposes. PRR can still apply where the former FHL was at some point the owner's main residence; the FHL status itself does not change the PRR analysis. Business Asset Disposal Relief at the former 10% rate is closed for post-5-April-2025 FHL disposals. The grandfathered position is in the Wave 6 <a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>.</li>
+<li><strong>Former Furnished Holiday Let property:</strong> FHL was abolished from 6 April 2025 by Finance Act 2025 Sch 5. Former FHL property is now treated as standard residential rental for CGT purposes. PRR can still apply where the former FHL was at some point the owner's main residence; the FHL status itself does not change the PRR analysis. Business Asset Disposal Relief at the former 10% rate is closed for post-5-April-2025 FHL disposals. The grandfathered position is in the Wave 6 <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>.</li>
 <li><strong>Reduce-CGT planning levers generally:</strong> PRR is one of the ten reduction levers covered in the <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">reduce CGT survey</a>.</li>
 <li><strong>Rollover relief (s.152):</strong> not generally available on a PRR-eligible property because residential occupation is not 'trade use' under s.155 Class 1 Head A. See the <a href="/blog/capital-gains-tax/rollover-relief-property-landlords">rollover relief guide</a>.</li>
 </ul>
@@ -305,6 +305,6 @@ faqs:
 <li><a href="/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses">Capital losses on property disposal</a></li>
 <li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">Reduce CGT on property disposal: 10-lever survey</a></li>
 <li><a href="/blog/capital-gains-tax/rollover-relief-property-landlords">Rollover relief for property landlords</a></li>
-<li><a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
+<li><a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
 <li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What a specialist property accountant handles</a></li>
 </ul>

@@ -224,18 +224,18 @@ faqs:
 <h2>Where to read next</h2>
 
 <ul>
-<li><a href="/blog/landlord-tax-essentials/register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords">Register of Overseas Entities annual update statement</a>. Operational annual-update mechanic.</li>
-<li><a href="/blog/landlord-tax-essentials/trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017">Trust Registration Service compliance for trust-owned BTL</a>. TRS-side compliance regime (separate register).</li>
+<li><a href="/blog/non-resident-landlord-tax/register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords">Register of Overseas Entities annual update statement</a>. Operational annual-update mechanic.</li>
+<li><a href="/blog/incorporation-and-company-structures/trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017">Trust Registration Service compliance for trust-owned BTL</a>. TRS-side compliance regime (separate register).</li>
 <li><a href="/blog/landlord-tax-essentials/excluded-property-trust-long-term-resident-settlor-pivot-landlords">Excluded property trust long-term resident settlor pivot</a>. Post-FA-2025 LTR architecture for excluded-property trusts.</li>
-<li><a href="/blog/landlord-tax-essentials/settlor-interested-property-trust-grob-interaction-double-trap-mechanics">Settlor-interested property trust and GROB interaction</a>. Settlor-interested trust traps.</li>
-<li><a href="/blog/landlord-tax-essentials/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">Settlor-interested trust IHT s.49(1A) and CGT s.169B attribution</a>. Trust-attribution rules.</li>
-<li><a href="/blog/landlord-tax-essentials/directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap">Directors of trust-owned SPV extraction rules</a>. Trust-owned-SPV extraction.</li>
-<li><a href="/blog/landlord-tax-essentials/iht-non-resident-uk-property-april-2025-residence-test">IHT non-resident UK property April 2025 residence test</a>. Non-resident IHT under LTR.</li>
-<li><a href="/blog/landlord-tax-essentials/a-complete-guide-to-identity-verification-in-uk">A complete guide to identity verification in UK</a>. Identity verification orientation.</li>
-<li><a href="/blog/landlord-tax-essentials/companies-house-emails-directors-for-identity-verification-under-new-rules">Companies House emails directors for identity verification under new rules</a>. Identity verification news.</li>
+<li><a href="/blog/incorporation-and-company-structures/settlor-interested-property-trust-grob-interaction-double-trap-mechanics">Settlor-interested property trust and GROB interaction</a>. Settlor-interested trust traps.</li>
+<li><a href="/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">Settlor-interested trust IHT s.49(1A) and CGT s.169B attribution</a>. Trust-attribution rules.</li>
+<li><a href="/blog/incorporation-and-company-structures/directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap">Directors of trust-owned SPV extraction rules</a>. Trust-owned-SPV extraction.</li>
+<li><a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">IHT non-resident UK property April 2025 residence test</a>. Non-resident IHT under LTR.</li>
+<li><a href="/blog/incorporation-and-company-structures/a-complete-guide-to-identity-verification-in-uk">A complete guide to identity verification in UK</a>. Identity verification orientation.</li>
+<li><a href="/blog/incorporation-and-company-structures/companies-house-emails-directors-for-identity-verification-under-new-rules">Companies House emails directors for identity verification under new rules</a>. Identity verification news.</li>
 <li><a href="/blog/landlord-tax-essentials/declaration-of-trust">Declaration of trust</a>. Declaration of trust definitional pillar.</li>
 <li><a href="/blog/landlord-tax-essentials/comparison-of-discretionary-trusts">Comparison of discretionary trusts</a>. Discretionary trust intra-class comparison.</li>
-<li><a href="/blog/landlord-tax-essentials/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack">Putting rental property into a trust: decision pillar</a>. Trust decision pillar.</li>
+<li><a href="/blog/incorporation-and-company-structures/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack">Putting rental property into a trust: decision pillar</a>. Trust decision pillar.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance tax rental property UK guide</a>. Rental-portfolio IHT comprehensive.</li>
 </ul>
 

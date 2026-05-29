@@ -91,7 +91,7 @@ faqs:
 
 <p>Landlords within MTD for Income Tax Self Assessment scope must keep digital records under the digital-link requirement (records originate digitally or are transferred digitally without manual re-entry between systems). The MTD digital-records rules sit alongside section 12B, not in place of it. The 5-year retention period continues to apply; the records that must be retained are now in digital form for MTD-scope landlords.</p>
 
-<p>Practically, MTD landlords typically use accounting software that retains records indefinitely. The 5-year retention rule remains relevant for migration, change-of-software, or scenarios where the landlord exits MTD scope. <a href="/blog/landlord-tax-essentials/making-tax-digital-property-income-2026-complete-guide">Our MTD for ITSA depth page</a> covers the digital-records framework in more detail.</p>
+<p>Practically, MTD landlords typically use accounting software that retains records indefinitely. The 5-year retention rule remains relevant for migration, change-of-software, or scenarios where the landlord exits MTD scope. <a href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide">Our MTD for ITSA depth page</a> covers the digital-records framework in more detail.</p>
 
 <h2>The disclosure-route decision tree for incomplete-records cases</h2>
 

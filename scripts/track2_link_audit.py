@@ -108,6 +108,62 @@ def classify(path: str, source_slug: str):
 
 LINK_RE = re.compile(r'(?:href=["\']|\]\()(/[^"\')\s#?][^"\')\s]*)')
 
+
+# --fix-wrong-category: deterministically repoint WRONG-CATEGORY links to the
+# target slug's real frontmatter category (proven 404->200). Dry-run unless
+# --apply. NO-FILE / no-flat-slug / location-404 links are NOT auto-fixed; they
+# are reported for hand-adjudication. Bounded replace (delimiter lookahead) so a
+# slug that is a prefix of a longer slug is never partially rewritten.
+if "--fix-wrong-category" in sys.argv:
+    apply = "--apply" in sys.argv
+    changed_files = 0
+    total_fixes = 0
+    nofile = []
+    other_hard = []
+    for f in sorted(BLOG.glob("*.md")):
+        src = f.stem
+        txt = f.read_text(encoding="utf-8")
+        fixes = {}
+        for m in LINK_RE.finditer(txt):
+            link = m.group(1)
+            verdict, detail = classify(link, src)
+            if verdict != "HARD":
+                continue
+            if "WRONG-CATEGORY" in detail:
+                p = link.split("#")[0].split("?")[0].rstrip("/")
+                parts = [x for x in p.strip("/").split("/") if x]
+                cat, slug = parts[1], parts[2]
+                fixes[f"/blog/{cat}/{slug}"] = f"/blog/{slug_to_filecat[slug]}/{slug}"
+            elif "NO-FILE" in detail or "no-flat-slug" in detail:
+                nofile.append((src, link, detail))
+            else:
+                other_hard.append((src, link, detail))
+        if fixes:
+            new = txt
+            file_n = 0
+            for wrong, right in fixes.items():
+                new, n = re.subn(re.escape(wrong) + r'(?=["\'\)\s#?/]|$)', right, new)
+                file_n += n
+            if file_n:
+                total_fixes += file_n
+                changed_files += 1
+                if apply:
+                    f.write_text(new, encoding="utf-8")
+                else:
+                    for wrong, right in fixes.items():
+                        print(f"  [{src}] {wrong} -> {right}")
+    print(f"\n{'APPLIED' if apply else 'DRY-RUN (pass --apply to write)'}: "
+          f"{total_fixes} wrong-category link fixes across {changed_files} files")
+    print(f"\nNOT auto-fixed (hand-adjudicate): {len(nofile)} no-file / no-flat-slug links")
+    for src, link, detail in nofile:
+        print(f"  [{src}] {link} -> {detail}")
+    if other_hard:
+        print(f"\nOther HARD (hand-adjudicate): {len(other_hard)}")
+        for src, link, detail in other_hard:
+            print(f"  [{src}] {link} -> {detail}")
+    sys.exit(0)
+
+
 hard = []
 soft = []
 for f in sorted(BLOG.glob("*.md")):

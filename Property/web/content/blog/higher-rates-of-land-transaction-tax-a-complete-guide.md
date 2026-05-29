@@ -154,13 +154,13 @@ editorialNote: "Operational complete guide to Welsh LTT higher residential rates
 
 <p>At £300,000, England is cheapest (£20,000), Wales is mid (£19,950), Scotland is most expensive (£28,600). The pattern reverses at higher price points: at £1,000,000, England's 5% flat surcharge plus standard SDLT produces a different relative position from Wales's 12.5% band on the £400,000 to £750,000 slice.</p>
 
-<p>See our <a href="/blog/landlord-tax-essentials/a-complete-guide-to-5-sdlt-surcharge-refund-claims">English 5% SDLT surcharge guide</a> for the equivalent English mechanics and the Scottish ADS page for the Scottish parallel.</p>
+<p>See our <a href="/blog/property-types-and-specialist-tax/a-complete-guide-to-5-sdlt-surcharge-refund-claims">English 5% SDLT surcharge guide</a> for the equivalent English mechanics and the Scottish ADS page for the Scottish parallel.</p>
 
 <h2>MDR interaction for portfolio buyers</h2>
 
 <p>Welsh multiple dwellings relief (MDR) was retained when SDLT MDR was abolished on 1 June 2024, but the Welsh regime has been modified twice. The Land Transaction Tax (Modification of Multiple Dwellings Relief) (Wales) Regulations 2025 removed MDR from main-residence-with-subsidiary-dwelling purchases from 7 February 2025. The Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2026 introduced a minimum effective rate of 3% from 13 February 2026.</p>
 
-<p>Where MDR applies on a Welsh portfolio acquisition, the consideration is averaged across the dwellings, the higher-rate bands are applied to the averaged figure, and the result is multiplied by the number of dwellings. The 3% minimum effective rate from 13 February 2026 prevents the relief from reducing the effective rate below 3% on the total consideration. See our <a href="/blog/landlord-tax-essentials/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh MDR-survives page</a> for the modified mechanics in detail.</p>
+<p>Where MDR applies on a Welsh portfolio acquisition, the consideration is averaged across the dwellings, the higher-rate bands are applied to the averaged figure, and the result is multiplied by the number of dwellings. The 3% minimum effective rate from 13 February 2026 prevents the relief from reducing the effective rate below 3% on the total consideration. See our <a href="/blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh MDR-survives page</a> for the modified mechanics in detail.</p>
 
 <h2>The 30-day Welsh Revenue Authority return</h2>
 
@@ -187,7 +187,7 @@ editorialNote: "Operational complete guide to Welsh LTT higher residential rates
 <ul>
 <li>The <a href="/blog/landlord-tax-essentials/welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers">Welsh LTT main rates page</a> covers the 0%, 6%, 7.5%, 10%, 12% main residential band table for buyers who do not own another dwelling.</li>
 <li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics">Welsh LTT higher-rate mechanics page</a> covers the scenario-led second-home, BTL, and additional-property mechanics in depth (this page is the rate-table-first complete-guide upstream of that).</li>
-<li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh LTT MDR-survives page</a> covers the modified Welsh MDR mechanics for portfolio buyers, including the 2025 subsidiary-dwelling carve-out and the 13 February 2026 minimum 3% rate floor.</li>
+<li>The <a href="/blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh LTT MDR-survives page</a> covers the modified Welsh MDR mechanics for portfolio buyers, including the 2025 subsidiary-dwelling carve-out and the 13 February 2026 minimum 3% rate floor.</li>
 <li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer position page</a> covers the policy-absence framing (no separate FTB regime in Wales; the universal £225,000 nil band substitutes).</li>
 </ul>
 

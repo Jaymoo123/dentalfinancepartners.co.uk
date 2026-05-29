@@ -217,6 +217,6 @@ editorialNote: "Annual-housekeeping companion page covering the four ECCTA-drive
 <li><a href="/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk">Landlord incorporation step-by-step guide</a>, the upstream incorporation pillar.</li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let limited company complete guide</a>, the broader operational pillar for BTL property SPVs.</li>
 <li><a href="/blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children">Alphabet shares in a property SPV: dividend splitting</a>, the multi-share-class structures where PSC complexity most commonly arises.</li>
-<li><a href="/blog/incorporation-and-company-structures/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics">FIC estate planning: value-freezing and IHT mechanics</a>, the FIC context where multi-PSC and adult-child-shareholder filings most commonly arise.</li>
+<li><a href="/blog/landlord-tax-essentials/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics">FIC estate planning: value-freezing and IHT mechanics</a>, the FIC context where multi-PSC and adult-child-shareholder filings most commonly arise.</li>
 <li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Property company corporation tax accountant services</a>, the annual-accounts-and-filing-cycle context for landlord LtdCos.</li>
 </ul>

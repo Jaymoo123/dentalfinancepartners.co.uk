@@ -121,7 +121,7 @@ faqs:
 
 <p>Section 169B TCGA 1992 blocks s.260 holdover where the trust is settlor-interested (broadly, where the settlor or the settlor's spouse / civil partner / minor children can benefit). The block exists because the settlor-interested structure was being used to defer CGT artificially without giving up family control of the asset. Where s.169B applies, the trustees acquire the property at full market value and the donor's CGT gain crystallises on the gift.</p>
 
-<p>The Wave 6 <a href="/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">settlor-interested trust guide</a> covers the s.169B mechanics in depth. Practical takeaway: any property settlement on trust that contemplates s.260 holdover needs the settlor-interested analysis done first; the holdover does not work if the settlor's family can benefit.</p>
+<p>The Wave 6 <a href="/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">settlor-interested trust guide</a> covers the s.169B mechanics in depth. Practical takeaway: any property settlement on trust that contemplates s.260 holdover needs the settlor-interested analysis done first; the holdover does not work if the settlor's family can benefit.</p>
 
 <h3>The GROB trap and POAT</h3>
 
@@ -188,7 +188,7 @@ faqs:
 <ul>
 <li><strong>Section 152 rollover</strong> is no longer available on post-6-April-2025 FHL property disposals. The "quasi-trading" treatment that pre-2025 FHL had under s.152 ended with the regime.</li>
 <li><strong>Section 165 holdover on gift</strong> is similarly closed for post-2025 FHL property gifts on the same trade-versus-investment basis.</li>
-<li><strong>Business Asset Disposal Relief at the former 10% rate</strong> is closed for post-5-April-2025 FHL disposals. BADR rates and the FHL position are covered in the Wave 6 <a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>.</li>
+<li><strong>Business Asset Disposal Relief at the former 10% rate</strong> is closed for post-5-April-2025 FHL disposals. BADR rates and the FHL position are covered in the Wave 6 <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>.</li>
 <li><strong>Anti-forestalling rules</strong> between 6 March 2024 (announcement) and 5 April 2025 (abolition) closed routes that attempted to crystallise pre-abolition disposals to lock in the old regime. Pre-abolition advice given in that window needs to be reviewed against current law.</li>
 </ul>
 
@@ -247,7 +247,7 @@ faqs:
 <li><a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT payment deadlines</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT calculation on incorporation</a></li>
-<li><a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
-<li><a href="/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">Settlor-interested trusts and the s.169B holdover block</a></li>
+<li><a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
+<li><a href="/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">Settlor-interested trusts and the s.169B holdover block</a></li>
 <li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What a specialist property accountant handles</a></li>
 </ul>

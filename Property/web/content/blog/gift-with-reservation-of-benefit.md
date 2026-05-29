@@ -194,10 +194,10 @@ faqs:
 
 <ul>
 <li><a href="/blog/landlord-tax-essentials/iht-gifts-with-reservation-of-benefit-property">IHT gifts with reservation of benefit property</a>. The statute walkthrough deep: subsection by subsection through s.102, s.102A, s.102B and the Sch 20 carve-outs.</li>
-<li><a href="/blog/landlord-tax-essentials/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family-home shared-occupation s.102B UK mechanics</a>. The s.102B(4) shared-occupation route operational deep.</li>
+<li><a href="/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family-home shared-occupation s.102B UK mechanics</a>. The s.102B(4) shared-occupation route operational deep.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics">IHT gift with reservation letting children paying rent mechanics</a>. The full-market-rent escape route operational deep.</li>
-<li><a href="/blog/landlord-tax-essentials/settlor-interested-property-trust-grob-interaction-double-trap-mechanics">Settlor-interested property trust GROB interaction double-trap</a>. The trust-overlay fact pattern.</li>
-<li><a href="/blog/landlord-tax-essentials/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics">Gifting property to adult children decision tree</a>. The broader adult-child gift decision pillar covering CGT, occupancy and IHT together.</li>
+<li><a href="/blog/incorporation-and-company-structures/settlor-interested-property-trust-grob-interaction-double-trap-mechanics">Settlor-interested property trust GROB interaction double-trap</a>. The trust-overlay fact pattern.</li>
+<li><a href="/blog/incorporation-and-company-structures/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics">Gifting property to adult children decision tree</a>. The broader adult-child gift decision pillar covering CGT, occupancy and IHT together.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-a-brief-summary">Inheritance tax: a brief summary</a>. The top-of-funnel IHT orientation if this is your first contact with the broader IHT framework.</li>
 <li><a href="/blog/landlord-tax-essentials/how-long-does-probate-take-in-the-uk">How long does probate take in the UK</a>. The post-death procedural pillar for when GROB planning did not run and the family is now in the probate phase.</li>
 </ul>

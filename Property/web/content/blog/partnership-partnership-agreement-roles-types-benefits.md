@@ -224,7 +224,7 @@ editorialNote: "Cross-cutting partnership-agreement-and-roles practical handbook
 
 <h2>A note on terminology: "civil partnership" vs "business partnership"</h2>
 
-<p>The word "partnership" appears in two distinct statutory contexts. The Civil Partnership Act 2004 establishes civil partnership as a marriage-equivalent relationship for tax-residence, IHT, CGT inter-spouse transfer, and Form 17 election purposes. That is a different concept from a business partnership under PA 1890. This page uses "partnership" to mean business partnership throughout. For the spousal and civil-partner joint-property mechanics under PIM1030 and Form 17, see <a href="/blog/incorporation-and-company-structures/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnership joint-property tax treatment</a>.</p>
+<p>The word "partnership" appears in two distinct statutory contexts. The Civil Partnership Act 2004 establishes civil partnership as a marriage-equivalent relationship for tax-residence, IHT, CGT inter-spouse transfer, and Form 17 election purposes. That is a different concept from a business partnership under PA 1890. This page uses "partnership" to mean business partnership throughout. For the spousal and civil-partner joint-property mechanics under PIM1030 and Form 17, see <a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnership joint-property tax treatment</a>.</p>
 
 <h2>Where this page sits in the cluster</h2>
 
@@ -241,7 +241,7 @@ editorialNote: "Cross-cutting partnership-agreement-and-roles practical handbook
 <li><a href="/blog/incorporation-and-company-structures/property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction">Property partnership trading vs investment JV structures</a>: the trading-vs-investment characterisation.</li>
 <li><a href="/blog/incorporation-and-company-structures/limited-companies">Limited companies (pillar)</a> and <a href="/blog/incorporation-and-company-structures/limited-companies-and-btl-properties">limited companies and BTL properties</a>: the LtdCo route for entity-choice comparison.</li>
 <li><a href="/blog/incorporation-and-company-structures/a-complete-guide-on-incorporating-a-company-in-uk">Incorporating a company in the UK</a> and <a href="/blog/incorporation-and-company-structures/register-for-uk-corporation-tax">register for UK corporation tax</a>: the LtdCo entry points.</li>
-<li><a href="/blog/incorporation-and-company-structures/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">Civil partnership joint-property tax treatment</a>: the CPA 2004 marriage-equivalent topic, disambiguated clearly from this page.</li>
+<li><a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">Civil partnership joint-property tax treatment</a>: the CPA 2004 marriage-equivalent topic, disambiguated clearly from this page.</li>
 </ul>
 
 <aside>

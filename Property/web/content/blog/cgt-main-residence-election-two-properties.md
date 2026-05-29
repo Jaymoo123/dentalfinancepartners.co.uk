@@ -284,6 +284,6 @@ faqs:
 <li><a href="/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk">CGT on inherited rental property</a>: the s.62 death uplift and the fresh PRR clock for inheriting beneficiaries</li>
 <li><a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates on residential property 2026/27</a>: the 18 per cent and 24 per cent rate framework that applies on the non-elected property</li>
 <li><a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines 2026/27</a>: the 60-day reporting mechanics on the eventual sale of the non-elected property</li>
-<li><a href="/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting">Non-resident CGT on UK property</a>: where the owner becomes non-resident before disposal</li>
+<li><a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">Non-resident CGT on UK property</a>: where the owner becomes non-resident before disposal</li>
 <li><a href="/blog/capital-gains-tax/cgt-commercial-property-different-residential">CGT on commercial vs residential property</a>: where one of the elected residences is a mixed-use property</li>
 </ul>

@@ -180,7 +180,7 @@ editorialNote: "Wave 8 Bucket C C8, self-storage standard-rated carve-out at VAT
 <ul>
 <li><a href="/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock">Option to tax framework pillar</a> (C1)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics">VAT partial exemption special method</a> (C5)</li>
-<li><a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption standard method</a> (Wave 5)</li>
+<li><a href="/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption standard method</a> (Wave 5)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment">VAT on mixed-use property purchase apportionment</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT option to tax mechanics</a> (Wave 5)</li>
 </ul>

@@ -174,8 +174,8 @@ editorialNote: "Verified against gov.uk MTD ITSA collection and house position Â
 <li>The accidental-landlord routes (inherited property, moved abroad, relationship breakdown), where a non-active landlord may nevertheless be in scope. See our <a href="/blog/making-tax-digital-mtd/mtd-itsa-accidental-landlords-do-i-need-to-file-digitally">accidental-landlord page</a>.</li>
 <li>The headline six changes for residential landlords. See our <a href="/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords">MTD ITSA overview</a>.</li>
 <li>The original switch-in mechanic. The exit rule is the mirror of <a href="/blog/making-tax-digital-mtd/how-to-switch-self-assessment-mtd-property-income">how to switch from self-assessment to MTD</a> in the first place.</li>
-<li>The strategic-exit context where partial disposal triggers the income drop. See our <a href="/blog/property-investment/property-investment-exit-strategy-planning-guide">property investment exit-strategy guide</a> for the wider portfolio decision.</li>
-<li>The expat case, where leaving the UK may trigger cessation rather than the three-year rule. See our <a href="/blog/expat-landlords/leaving-uk-landlord-12-month-pre-departure-checklist">12-month pre-departure checklist</a>.</li>
+<li>The strategic-exit context where partial disposal triggers the income drop. See our <a href="/blog/portfolio-management/property-investment-exit-strategy-planning-guide">property investment exit-strategy guide</a> for the wider portfolio decision.</li>
+<li>The expat case, where leaving the UK may trigger cessation rather than the three-year rule. See our <a href="/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist">12-month pre-departure checklist</a>.</li>
 </ul>
 
 <h2>When to seek advice</h2>

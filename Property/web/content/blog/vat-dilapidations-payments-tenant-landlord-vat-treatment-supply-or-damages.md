@@ -176,7 +176,7 @@ editorialNote: "Bucket A applied page. Lease-end-specific applied page sitting d
 <ul>
 <li><a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT Option to Tax Commercial Property: Mechanics, Cooling-Off and Revocation</a></li>
 <li><a href="/blog/landlord-tax-essentials/landlord-vat-registration-when-required">Landlord VAT Registration 2026/27: When Required, Option to Tax, and Holiday-Let Rules</a></li>
-<li><a href="/blog/property-types-and-specialist-tax/togc-vat-property-letting-business">TOGC and VAT on a Property Letting Business: The Five-Condition Test</a></li>
+<li><a href="/blog/incorporation-and-company-structures/togc-vat-property-letting-business">TOGC and VAT on a Property Letting Business: The Five-Condition Test</a></li>
 </ul>
 
 <h2>Authorities Cited</h2>

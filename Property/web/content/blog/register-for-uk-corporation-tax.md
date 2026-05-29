@@ -253,7 +253,7 @@ editorialNote: "Step-by-step CT-registration operational entry-point handbook fo
 <li><a href="/blog/incorporation-and-company-structures/eligible-groups-for-group-relief-under-uk-corporation-tax">Eligible groups for group relief</a>: the multi-SPV group-relief eligibility framework.</li>
 <li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Accountant for corporation tax property companies</a>: the accountancy-services angle.</li>
 <li><a href="/blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 ID verification</a>: the Companies House ID verification overlay.</li>
-<li><a href="/blog/incorporation-and-company-structures/mtd-itsa-vs-limited-company-cohort-different-rules">MTD-ITSA vs limited company</a>: the cohort comparison between direct-ownership MTD obligations and LtdCo CT obligations.</li>
+<li><a href="/blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules">MTD-ITSA vs limited company</a>: the cohort comparison between direct-ownership MTD obligations and LtdCo CT obligations.</li>
 <li><a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a property portfolio 2026</a>: the broader portfolio-incorporation context.</li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let limited company complete guide</a>: the BTL LtdCo introductory guide.</li>
 <li><a href="/blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide">SPV property investment guide</a>: the SPV-specific introduction.</li>

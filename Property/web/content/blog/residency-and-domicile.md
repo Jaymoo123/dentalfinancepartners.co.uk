@@ -221,10 +221,10 @@ reviewedAt: "2026-05-26"
 
 <ul>
 <li><strong>Historical context on the remittance basis.</strong> The companion <a href="/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals">remittance basis page</a> explains what ended on 6 April 2025 and the architectural map of what replaced it.</li>
-<li><strong>FIG regime for property investors.</strong> The <a href="/blog/property-types-and-specialist-tax/non-dom-reform-april-2025-fig-regime-property-investors">FIG operational deep-dive</a> walks through the per-year claim mechanics, the personal-allowance trade-off, and worked examples.</li>
-<li><strong>FIG year-5 cliff planning.</strong> The <a href="/blog/property-types-and-specialist-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords">year-5 onwards page</a> covers the move from FIG exemption to full worldwide arising basis.</li>
-<li><strong>TRF Sch 10 designation scenarios.</strong> The <a href="/blog/property-types-and-specialist-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms">TRF page</a> walks through the three designation scenarios under Sch 10 para 2.</li>
-<li><strong>CGT rebasing narrow eligibility.</strong> The <a href="/blog/property-types-and-specialist-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms">FA 2025 Sch 11 page</a> covers the rebasing election eligibility analysis.</li>
+<li><strong>FIG regime for property investors.</strong> The <a href="/blog/non-resident-landlord-tax/non-dom-reform-april-2025-fig-regime-property-investors">FIG operational deep-dive</a> walks through the per-year claim mechanics, the personal-allowance trade-off, and worked examples.</li>
+<li><strong>FIG year-5 cliff planning.</strong> The <a href="/blog/non-resident-landlord-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords">year-5 onwards page</a> covers the move from FIG exemption to full worldwide arising basis.</li>
+<li><strong>TRF Sch 10 designation scenarios.</strong> The <a href="/blog/non-resident-landlord-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms">TRF page</a> walks through the three designation scenarios under Sch 10 para 2.</li>
+<li><strong>CGT rebasing narrow eligibility.</strong> The <a href="/blog/non-resident-landlord-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms">FA 2025 Sch 11 page</a> covers the rebasing election eligibility analysis.</li>
 </ul>
 
 <p>If you are a UK-property-owning expat considering departure or return, a new arrival weighing UK property purchase plus tax position, an adviser running residency-and-domicile assessments for property clients, or a trust beneficiary or settlor with UK property in pre-FA-2025 structures, the form at the foot of the page is the route to a structured assessment.</p>

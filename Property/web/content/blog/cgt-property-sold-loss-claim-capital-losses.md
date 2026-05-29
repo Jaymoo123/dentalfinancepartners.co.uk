@@ -162,7 +162,7 @@ faqs:
 
 <p>Each co-owner claims their share of the loss on their own Self Assessment return. The carried-forward balance sits on each individual record. If one co-owner has chargeable gains in a future year and the other does not, only the first uses their share of the loss; the second carries on holding the balance until their own gains arise. The losses do not pool.</p>
 
-<p>The mechanics on the gain side (which apply the same beneficial-ownership rule) are covered in the <a href="/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">joint-ownership PRR mechanics guide</a> and the <a href="/blog/income-tax/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision">unequal income split decision guide</a>.</p>
+<p>The mechanics on the gain side (which apply the same beneficial-ownership rule) are covered in the <a href="/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">joint-ownership PRR mechanics guide</a> and the <a href="/blog/section-24-and-tax-relief/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision">unequal income split decision guide</a>.</p>
 
 <h2>Spouse transfers and the no-gain-no-loss rule (s.58)</h2>
 

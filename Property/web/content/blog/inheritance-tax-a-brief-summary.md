@@ -136,7 +136,7 @@ faqs:
 <li>Schedule A1 IHTA 1984 continues to bring UK residential property held via offshore structures into UK IHT (enveloped-residential look-through).</li>
 </ul>
 
-<p>For the operational mechanics, see our <a href="/blog/landlord-tax-essentials/iht-non-resident-uk-property-april-2025-residence-test">IHT non-resident UK property April 2025 residence test</a> page.</p>
+<p>For the operational mechanics, see our <a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">IHT non-resident UK property April 2025 residence test</a> page.</p>
 
 <h2>Mini-illustration: a £950k landlord estate</h2>
 

@@ -48,7 +48,7 @@ faqs:
 
 <p>The separate property income tax rates of 22% basic, 42% higher and 47% additional from 6 April 2027 are now enacted in <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/7">Finance Act 2026 c.11 section 7</a> (Royal Assent on 18 March 2026), for England and Northern Ireland. Finance Act 2026 Schedule 1 also lifts the Section 24 finance-cost reducer (the credit given under the <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272A">ITTOIA 2005 s.272A</a> restriction, computed under ss.274AA and 274C) to the new 22% property basic rate, so it rises in step with the rates. The gap between the rate at which property income is taxed and the rate at which mortgage interest is relieved is therefore unchanged: zero for basic-rate landlords, 20 percentage points at the higher rate, 25 points at the additional rate. The real 2027 cost is the flat 2 percentage point rate rise on net rental profit. This page walks through that by landlord profile, sets out the planning responses available before commencement, and locates where the change does and does not bite.</p>
 
-<p>For the wider Section 24 mechanism see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 tax relief complete guide</a>. For the incorporation comparison see our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a>. For the 2027 pillar covering the rate framing across all property tax interactions see our <a href="/blog/section-24-and-tax-relief/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates pillar</a>.</p>
+<p>For the wider Section 24 mechanism see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 tax relief complete guide</a>. For the incorporation comparison see our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a>. For the 2027 pillar covering the rate framing across all property tax interactions see our <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates pillar</a>.</p>
 
 <h2>The April 2027 property income rates: now enacted via Finance Act 2026</h2>
 
@@ -235,8 +235,8 @@ faqs:
 <p>This page covers the Section 24 mechanic interaction specifically. Adjacent pages cover the broader 2027 rate framework from other angles:</p>
 
 <ul>
-<li>The pillar treatment of the 2027 rates across all property tax interactions is in our <a href="/blog/section-24-and-tax-relief/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates pillar</a>.</li>
-<li>The CGT-side analysis of how the 2027 changes affect disposal timing is in <a href="/blog/section-24-and-tax-relief/2027-property-tax-rates-affect-capital-gains-tax-sales">how 2027 property tax rates affect CGT on property sales</a>.</li>
+<li>The pillar treatment of the 2027 rates across all property tax interactions is in our <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates pillar</a>.</li>
+<li>The CGT-side analysis of how the 2027 changes affect disposal timing is in <a href="/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales">how 2027 property tax rates affect CGT on property sales</a>.</li>
 <li>The 2026/27 CGT rate position itself is in our <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates property 2026/27 page</a>.</li>
 <li>The full Section 24 mechanism is in our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 tax relief complete guide</a>.</li>
 <li>The incorporation comparison is in our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a>.</li>

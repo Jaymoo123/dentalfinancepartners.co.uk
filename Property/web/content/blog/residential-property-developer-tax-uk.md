@@ -202,6 +202,6 @@ faqs:
 
 <h2>Next steps</h2>
 
-<p>For supporting reading, see our <a href="/blog/property-development-tax/property-development-tax-trading-vs-investment-income">trading versus investment income guide</a>, our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a> (much of which applies equally to development companies), and our pillar on <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation</a>.</p>
+<p>For supporting reading, see our <a href="/blog/property-types-and-specialist-tax/property-development-tax-trading-vs-investment-income">trading versus investment income guide</a>, our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a> (much of which applies equally to development companies), and our pillar on <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation</a>.</p>
 
 <p>If you operate at scale (£500,000+ project budgets, multiple sites per year) and want a structured review of your tax position before the next acquisition, send us your last set of accounts and the deal pipeline using the form below. Initial calls are free.</p>

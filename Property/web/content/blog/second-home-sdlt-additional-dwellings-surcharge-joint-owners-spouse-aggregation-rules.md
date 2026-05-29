@@ -188,7 +188,7 @@ editorialNote: "SDLT joint-buyer applied page covering the FA 2003 Sch 4ZA para 
 <ul>
 <li>The <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT BTL rates and surcharge guide</a> covers the standard bands, the surcharge mechanics, and the BTL acquisition framework in general.</li>
 <li>The <a href="/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process">SDLT surcharge refund claim process page</a> covers the 36-month refund window and the procedural mechanics.</li>
-<li>The <a href="/blog/landlord-tax-essentials/sdlt-non-resident-2-percent-surcharge">SDLT non-resident 2% surcharge page</a> covers the further layer where any buyer is non-UK resident.</li>
+<li>The <a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">SDLT non-resident 2% surcharge page</a> covers the further layer where any buyer is non-UK resident.</li>
 </ul>
 
 <p>For the Form 17 income-tax mechanic that operates on the same joint-ownership population but at the income-tax level rather than at acquisition, see our <a href="/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation">Form 17 mechanic page</a>. The Sch 4ZA acquisition surcharge and the s.836 / s.837 income-tax framework operate on different lines of the tax return but on overlapping facts; couples planning a joint purchase should run both analyses simultaneously.</p>

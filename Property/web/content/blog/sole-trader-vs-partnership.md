@@ -110,7 +110,7 @@ editorialNote: "Early entity-choice comparison for UK property landlords: sole t
 
 <p>For spouses and civil partners on joint property, a specific election is available that often makes partnership formation unnecessary. The default for spouses and civil partners is 50/50 taxation regardless of actual beneficial ownership (TCGA 1992 s.282 and ITA 2007 s.836). The Form 17 election under ITA 2007 s.836 lets the couple be taxed on their actual beneficial shares (for example 90/10) rather than the default 50/50. The election requires the underlying beneficial ownership to be in those shares (Land Registry, deed of trust, financial reality), not a paper construct.</p>
 
-<p>The Form 17 election is a joint-ownership election, not a partnership formation. It applies to passive co-ownership under PA 1890 s.2(1) negative. For the mechanics see <a href="/blog/incorporation-and-company-structures/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnership joint-property tax treatment</a>.</p>
+<p>The Form 17 election is a joint-ownership election, not a partnership formation. It applies to passive co-ownership under PA 1890 s.2(1) negative. For the mechanics see <a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnership joint-property tax treatment</a>.</p>
 
 <h3>Worked example: joint ownership vs Form 17 vs partnership</h3>
 
@@ -209,14 +209,14 @@ editorialNote: "Early entity-choice comparison for UK property landlords: sole t
 
 <h2>A note on terminology: civil partnership vs business partnership</h2>
 
-<p>The word "partnership" appears in two distinct statutory contexts. The Civil Partnership Act 2004 establishes civil partnership as a marriage-equivalent relationship for tax-residence, IHT, CGT inter-spouse transfer, and Form 17 election purposes. That is a different concept from a business partnership under PA 1890. This page uses "partnership" to mean business partnership throughout. For the spousal and civil-partner joint-property mechanics, see <a href="/blog/incorporation-and-company-structures/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnership joint-property tax treatment</a>.</p>
+<p>The word "partnership" appears in two distinct statutory contexts. The Civil Partnership Act 2004 establishes civil partnership as a marriage-equivalent relationship for tax-residence, IHT, CGT inter-spouse transfer, and Form 17 election purposes. That is a different concept from a business partnership under PA 1890. This page uses "partnership" to mean business partnership throughout. For the spousal and civil-partner joint-property mechanics, see <a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">civil partnership joint-property tax treatment</a>.</p>
 
 <h2>Where this page sits in the cluster</h2>
 
 <ul>
 <li><a href="/blog/incorporation-and-company-structures/does-your-business-qualify-as-a-partnership">Does your business qualify as a partnership</a>: the prior definitional question.</li>
 <li><a href="/blog/incorporation-and-company-structures/partnership-partnership-agreement-roles-types-benefits">Partnership agreement, roles, types and benefits</a>: the partnership-agreement architecture for those who choose partnership.</li>
-<li><a href="/blog/incorporation-and-company-structures/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">Civil partnership joint-property tax treatment</a>: the Form 17 alternative for couples (CPA 2004 marriage-equivalent, distinct from business partnership).</li>
+<li><a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">Civil partnership joint-property tax treatment</a>: the Form 17 alternative for couples (CPA 2004 marriage-equivalent, distinct from business partnership).</li>
 <li><a href="/blog/incorporation-and-company-structures/llp-property-investment-worth-considering">LLP for property investment</a>: the LLP entity-overview for the next-tier-up step.</li>
 <li><a href="/blog/incorporation-and-company-structures/llp-accounts">LLP accounts</a>: the LLP accounts-and-filing operational handbook.</li>
 <li><a href="/blog/incorporation-and-company-structures/llp-and-taxation-benefits">LLP and taxation benefits</a>: the honest LLP tax analysis.</li>
@@ -230,10 +230,10 @@ editorialNote: "Early entity-choice comparison for UK property landlords: sole t
 <li><a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Partnership SDLT Sch 15 incorporation relief</a>: the SDLT Sch 15 SLP mechanics depth.</li>
 <li><a href="/blog/incorporation-and-company-structures/property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction">Property partnership trading vs investment JV structures</a>: the trading-vs-investment characterisation.</li>
 <li><a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">Limited company vs personal ownership</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">should I incorporate</a>: the next-tier-up entity-choice pages.</li>
-<li><a href="/blog/incorporation-and-company-structures/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs incorporation</a>: the Section 24 decision page.</li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs incorporation</a>: the Section 24 decision page.</li>
 <li><a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">Section 162 incorporation relief</a>: the CGT-deferral route on portfolio-to-LtdCo incorporation.</li>
 <li><a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a property portfolio 2026</a>: the portfolio-incorporation context.</li>
-<li><a href="/blog/incorporation-and-company-structures/mtd-itsa-vs-limited-company-cohort-different-rules">MTD-ITSA vs limited company</a>: the MTD regime cohort comparison.</li>
+<li><a href="/blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules">MTD-ITSA vs limited company</a>: the MTD regime cohort comparison.</li>
 </ul>
 
 <aside>

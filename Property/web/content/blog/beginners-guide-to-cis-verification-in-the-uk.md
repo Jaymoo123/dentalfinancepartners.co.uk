@@ -153,7 +153,7 @@ editorialNote: "MW2 Bucket B B4: process-led entry-level explainer on CIS verifi
 
 <p>The VAT domestic reverse charge operates on the VAT side: the subcontractor invoices the contractor without VAT (subject to specific reverse-charge wording on the invoice); the contractor accounts for the output VAT on its own VAT return and recovers the input VAT under the normal partial-exemption rules. The materials element is included in the VAT base.</p>
 
-<p>For a payment to a CIS-registered subcontractor for standard-rated construction work, both regimes engage: CIS withholding on labour at the verification rate, and reverse-charge VAT on the full labour-plus-materials value. Our <a href="/blog/property-types-and-specialist-tax/domestic-reverse-charge-construction-vat-landlords">domestic reverse charge page</a> covers the VAT-side mechanics in detail; for the cost-treatment angle on refurb spend see our <a href="/blog/landlord-tax-essentials/landlord-expenses-allowable-uk-2026">landlord allowable expenses page</a>.</p>
+<p>For a payment to a CIS-registered subcontractor for standard-rated construction work, both regimes engage: CIS withholding on labour at the verification rate, and reverse-charge VAT on the full labour-plus-materials value. Our <a href="/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords">domestic reverse charge page</a> covers the VAT-side mechanics in detail; for the cost-treatment angle on refurb spend see our <a href="/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026">landlord allowable expenses page</a>.</p>
 
 <h2>Authorities Cited</h2>
 

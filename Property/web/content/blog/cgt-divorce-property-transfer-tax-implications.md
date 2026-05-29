@@ -213,7 +213,7 @@ faqs:
 <li><strong>Split-year treatment affects the s.58 window timing.</strong> Where the SRT split-year treatment applies, the date of becoming non-resident in the year affects the AEA position and the rate-band stacking, but does not directly reset the s.58 window which runs against the tax year of separation regardless of mid-year residence changes.</li>
 </ul>
 
-<p>The wider non-resident CGT framework, including the post-Finance Act 2019 statutory architecture and the 5 April 2015 and 5 April 2019 rebasing dates, sits in our <a href="/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT</a> page.</p>
+<p>The wider non-resident CGT framework, including the post-Finance Act 2019 statutory architecture and the 5 April 2015 and 5 April 2019 rebasing dates, sits in our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT</a> page.</p>
 
 <h2>Post-2023 timing decisions worth getting right</h2>
 
@@ -232,8 +232,8 @@ faqs:
 <ul>
 <li><strong>Non-separation spouse transfers</strong> (Form 17, declaration of trust, portfolio rebalancing while still living together): our <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on property transfers between spouses</a> page.</li>
 <li><strong>Joint ownership and PRR generally</strong> (s.222(5) nomination, s.222(6) one-residence-per-couple, joint-tenants vs tenants-in-common interactions): our <a href="/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics">joint-ownership PRR mechanics</a> page.</li>
-<li><strong>Form 17 mechanics</strong> (how to declare unequal beneficial interests for income tax during marriage, not relevant once the spouses separate): our <a href="/blog/form-17-and-joint-ownership/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation">Form 17 pillar</a>.</li>
-<li><strong>Joint tenants vs tenants in common</strong> (severance routes used to set up Mesher orders): our <a href="/blog/form-17-and-joint-ownership/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords">JT vs TIC for landlords</a> page.</li>
+<li><strong>Form 17 mechanics</strong> (how to declare unequal beneficial interests for income tax during marriage, not relevant once the spouses separate): our <a href="/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation">Form 17 pillar</a>.</li>
+<li><strong>Joint tenants vs tenants in common</strong> (severance routes used to set up Mesher orders): our <a href="/blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords">JT vs TIC for landlords</a> page.</li>
 <li><strong>CGT pillar</strong> (rates, AEA, regime overview): <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>.</li>
 <li><strong>Related life events</strong>: <a href="/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk">CGT on inherited rental property</a> (where a separating beneficiary holds an inherited property).</li>
 </ul>

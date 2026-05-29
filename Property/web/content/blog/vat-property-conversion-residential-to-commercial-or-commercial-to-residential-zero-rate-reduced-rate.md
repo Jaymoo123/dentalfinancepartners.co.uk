@@ -195,7 +195,7 @@ editorialNote: "Bucket A applied page. Sibling to existing new-build (Sch 8 Grou
 <ul>
 <li><a href="/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property">VAT on New-Build Residential Property: Zero-Rate, 5%, 20%</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/diy-housebuilders-vat-refund-scheme">DIY Housebuilders VAT Refund Scheme: Self-Builders and Self-Converters</a></li>
-<li><a href="/blog/property-types-and-specialist-tax/domestic-reverse-charge-construction-vat-landlords">Domestic Reverse Charge for Construction Services: Landlord and Developer Guide</a></li>
+<li><a href="/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords">Domestic Reverse Charge for Construction Services: Landlord and Developer Guide</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT Option to Tax Commercial Property: Mechanics, Cooling-Off and Revocation</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment">VAT on Mixed-Use Property Purchase: Residential and Commercial Apportionment</a></li>
 </ul>

@@ -85,7 +85,7 @@ reviewedAt: "2026-05-26"
 
 <h3>7. ATED 5-yearly revaluation</h3>
 
-<p>The Annual Tax on Enveloped Dwellings under FA 2013 Part 3 and Schedule 33 applies to companies holding UK residential property valued over the threshold. The chargeable band is determined by the property's value at the relevant valuation date, with 5-yearly revaluations. For ATED purposes, a Red Book valuation at the revaluation date is the standard. See our companion <a href="/blog/property-types-and-specialist-tax/ated-valuation-date-rules-2027-revaluation">ATED valuation date page</a> for the 2027 revaluation mechanics.</p>
+<p>The Annual Tax on Enveloped Dwellings under FA 2013 Part 3 and Schedule 33 applies to companies holding UK residential property valued over the threshold. The chargeable band is determined by the property's value at the relevant valuation date, with 5-yearly revaluations. For ATED purposes, a Red Book valuation at the revaluation date is the standard. See our companion <a href="/blog/incorporation-and-company-structures/ated-valuation-date-rules-2027-revaluation">ATED valuation date page</a> for the 2027 revaluation mechanics.</p>
 
 <h3>8. Court or tribunal evidence in landlord-tenant disputes</h3>
 

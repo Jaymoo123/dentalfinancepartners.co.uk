@@ -304,7 +304,7 @@ reviewedAt: "2026-05-26"
 <li>New build council tax mechanics: see our <a href="/blog/property-types-and-specialist-tax/council-tax-for-new-builds">council tax for new builds page</a>.</li>
 <li>HMO single-dwelling rule and the SI 2023/1175 reform: see our <a href="/blog/property-types-and-specialist-tax/government-to-end-council-tax-on-hmo-rooms">HMO council tax reform page</a>.</li>
 <li>Policy and market-impact analysis: see our <a href="/blog/property-types-and-specialist-tax/is-increasing-council-tax-damaging-the-housing-market">council tax and the housing market page</a>.</li>
-<li>Business rates versus council tax regime distinction: see our <a href="/blog/property-types-and-specialist-tax/property-business-rates-council-tax-landlords">business rates and council tax for landlords page</a>.</li>
+<li>Business rates versus council tax regime distinction: see our <a href="/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords">business rates and council tax for landlords page</a>.</li>
 </ul>
 
 <p>The reductions framework sits within the wider council tax statute (LGFA 1992 plus the 1992 statutory instruments). Reading any one route in isolation can mislead; the routes interact, and several can stack. Where you are unsure which route applies, work through the six routes systematically.</p>

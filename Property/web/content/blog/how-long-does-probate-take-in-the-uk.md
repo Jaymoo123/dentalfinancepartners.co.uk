@@ -242,7 +242,7 @@ faqs:
 <li><a href="/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact">April 2026 BPR and APR cap property impact</a>. The reform mechanics relevant for IHT400 completion post-6-April-2026.</li>
 <li><a href="/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving">Deed of variation property estate redirecting inheritance</a>. The post-death route within the 2-year window under IHTA 1984 s.142.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-spouse-exemption-second-death-property-portfolio-window-mechanics">IHT spouse exemption and second-death property portfolio window</a>. The spouse-route and second-death sequencing.</li>
-<li><a href="/blog/landlord-tax-essentials/a-complete-guide-to-stamp-duty-relief-for-probate-properties">Stamp duty relief for probate properties</a>. The SDLT-on-probate transactional moment.</li>
+<li><a href="/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-relief-for-probate-properties">Stamp duty relief for probate properties</a>. The SDLT-on-probate transactional moment.</li>
 <li><a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">Gift with reservation of benefit</a>. The pre-death GROB planning context.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-a-brief-summary">Inheritance tax: a brief summary</a>. The top-of-funnel IHT orientation.</li>
 </ul>

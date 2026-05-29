@@ -250,7 +250,7 @@ faqs:
 <li>For no consideration; payment in exchange for the variation destroys the s.142 read-back</li>
 </ul>
 
-<p>There is no SDLT charge on the redirection (FA 2003 Schedule 4 paragraph 8). Deeds of variation are typically used to skip a generation (parent to child rather than spouse, with the spouse waiving), to qualify the estate for the Sch 1A 36 per cent charitable IHT rate, or to direct the property into a discretionary trust for protection from the next-generation beneficiary's creditors or divorce. The IHT-side mechanics sit in our <a href="/blog/inheritance-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT decision framework for property investors</a>.</p>
+<p>There is no SDLT charge on the redirection (FA 2003 Schedule 4 paragraph 8). Deeds of variation are typically used to skip a generation (parent to child rather than spouse, with the spouse waiving), to qualify the estate for the Sch 1A 36 per cent charitable IHT rate, or to direct the property into a discretionary trust for protection from the next-generation beneficiary's creditors or divorce. The IHT-side mechanics sit in our <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT decision framework for property investors</a>.</p>
 
 <h2>Capital-loss interactions</h2>
 
@@ -282,7 +282,7 @@ faqs:
 
 <p>CGT sits on top of the IHT position, not under it. The death-uplift wipes out CGT on lifetime growth, but the same date-of-death value is the IHT-chargeable value. An estate that under-values the property to suppress IHT is increasing the eventual CGT on disposal by the same amount, often at a higher rate (IHT at 40 per cent on the marginal pound above the nil-rate band versus CGT at 24 per cent on the marginal pound at the PR rate, before any beneficiary-side band-stacking).</p>
 
-<p>The wider IHT mechanics (NRB, RNRB, transferable allowances, BPR for landlord estates) sit in our <a href="/blog/inheritance-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT decision framework</a>. The operational sequence the personal representatives follow (probate valuation, IHT400 versus excepted-estate route, the grant, the administration period, the assent or sale decision, NRL handover for non-resident beneficiaries) is in our <a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">executor's step-by-step guide</a>. SDLT on the various probate property transfers (assent, beneficiary buyout, mortgage assumption) is covered in our <a href="/blog/landlord-tax-essentials/sdlt-on-probate-property-transfers">SDLT on probate property transfers</a> page.</p>
+<p>The wider IHT mechanics (NRB, RNRB, transferable allowances, BPR for landlord estates) sit in our <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT decision framework</a>. The operational sequence the personal representatives follow (probate valuation, IHT400 versus excepted-estate route, the grant, the administration period, the assent or sale decision, NRL handover for non-resident beneficiaries) is in our <a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">executor's step-by-step guide</a>. SDLT on the various probate property transfers (assent, beneficiary buyout, mortgage assumption) is covered in our <a href="/blog/landlord-tax-essentials/sdlt-on-probate-property-transfers">SDLT on probate property transfers</a> page.</p>
 
 <h2>Reporting and record-keeping</h2>
 
@@ -307,7 +307,7 @@ faqs:
 <ul>
 <li><a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">Inheriting a UK Rental Property: An Executor's Step-by-Step Guide</a>, the operational sequence from date of death to closing the estate</li>
 <li><a href="/blog/landlord-tax-essentials/sdlt-on-probate-property-transfers">SDLT on probate property transfers</a>, the five categories of probate transfer and the SDLT on each</li>
-<li><a href="/blog/inheritance-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT decision framework for property investors</a>, the wider estate-planning context</li>
+<li><a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT decision framework for property investors</a>, the wider estate-planning context</li>
 <li><a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines for UK property sales</a>, the 60-day reporting mechanics in full</li>
 <li><a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates on residential property 2026/27</a>, the rate-band-stacking arithmetic for the beneficiary-side calculation</li>
 </ul>

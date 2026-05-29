@@ -230,7 +230,7 @@ faqs:
 
 <p>Incorporation does NOT, on its own, reduce inheritance tax on a residential BTL business. Business Relief at 100% requires the underlying business to be a trade, not an investment. A residential letting business is treated as investment activity for IHT purposes regardless of how active the management. So shares in a BTL company are valued at market value in your estate and face IHT at 40% above the nil-rate band.</p>
 
-<p>Effective IHT planning on a property portfolio uses trusts (gift into a discretionary trust as a Potentially Exempt Transfer, with a seven-year survival requirement), life assurance written in trust, or strategic lifetime gifting of company shares. See our <a href="/blog/inheritance-tax/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a> for the wider mechanics.</p>
+<p>Effective IHT planning on a property portfolio uses trusts (gift into a discretionary trust as a Potentially Exempt Transfer, with a seven-year survival requirement), life assurance written in trust, or strategic lifetime gifting of company shares. See our <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a> for the wider mechanics.</p>
 
 <aside>
 <p>Already considering incorporation and want a written second opinion before instructing?</p>
@@ -291,6 +291,6 @@ faqs:
 
 <h2>Next steps</h2>
 
-<p>For supporting reading, see our guide on <a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">limited company versus personal ownership comparison</a>, our <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">incorporation timing guide</a>, and our pillar guides on <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a>, <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property</a>, and <a href="/blog/inheritance-tax/inheritance-tax-rental-property-uk-guide">inheritance tax on rental property</a>.</p>
+<p>For supporting reading, see our guide on <a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">limited company versus personal ownership comparison</a>, our <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">incorporation timing guide</a>, and our pillar guides on <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a>, <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property</a>, and <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">inheritance tax on rental property</a>.</p>
 
 <p>If you are weighing incorporation against staying personal and want a specific recommendation based on your figures, send us your last self assessment and current portfolio summary using the form below. Initial calls are free and we will tell you honestly whether incorporation is the right call for your specific circumstances.</p>

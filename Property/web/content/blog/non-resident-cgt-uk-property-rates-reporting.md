@@ -186,7 +186,7 @@ faqs:
 
 <p>A UK landlord emigrating to Portugal in 2024, selling their UK BTL in 2025 while non-resident, and returning to UK residence in 2027 within the five-year window will have the 2025 gain recaptured in 2027/28. The 60-day NRCGT return is filed in 2025; the 2025/26 UK Self Assessment carries the disposal but no UK tax beyond what the non-resident regime already extracted; the 2027/28 SA carries the s.10A recapture computation.</p>
 
-<p>The trap most commonly catches people who emigrate explicitly to crystallise UK property gains at a lower foreign rate, then return to the UK within a few years. The mechanism makes the strategy unworkable unless the emigration is genuinely permanent. The wider expat tax framework is in our <a href="/blog/non-resident-landlord-tax/leaving-the-uk-tax-implications-for-landlords">leaving the UK</a> page.</p>
+<p>The trap most commonly catches people who emigrate explicitly to crystallise UK property gains at a lower foreign rate, then return to the UK within a few years. The mechanism makes the strategy unworkable unless the emigration is genuinely permanent. The wider expat tax framework is in our <a href="/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist">leaving the UK</a> page.</p>
 
 <h2>Non-resident companies: corporation tax, not CGT</h2>
 
@@ -213,7 +213,7 @@ faqs:
 <li><strong>NRCGT (TCGA 1992 s.1A).</strong> Applies on the eventual disposal of the UK property (or indirect interest). The 60-day return is filed regardless of NRL status; the NRL approval letter has no effect on the NRCGT obligation.</li>
 </ul>
 
-<p>The two systems run in parallel. A non-resident landlord with an NRL1 approval letter who sells the let property still files the 60-day NRCGT return on disposal; the NRL withholding regime ends at the date of disposal (no more rent to withhold from); the 60-day clock starts at completion. NRL detail sits in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-tax-uk-complete-guide">non-resident landlord tax guide</a>.</p>
+<p>The two systems run in parallel. A non-resident landlord with an NRL1 approval letter who sells the let property still files the 60-day NRCGT return on disposal; the NRL withholding regime ends at the date of disposal (no more rent to withhold from); the 60-day clock starts at completion. NRL detail sits in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord tax guide</a>.</p>
 
 <h2>Worked example: returning UK resident hit by s.10A</h2>
 
@@ -231,7 +231,7 @@ faqs:
 
 <h2>SDLT, Welsh LTT and Scottish LBTT on the non-resident side</h2>
 
-<p>The CGT regime sits alongside the SDLT (England + Northern Ireland), LTT (Wales) and LBTT (Scotland) regimes on the buy side. Non-resident purchasers of UK residential property are subject to the 2 per cent non-resident surcharge on top of the standard SDLT rates (Finance Act 2003 Sch 4ZA + Sch 4A relevant provisions), in addition to the 5 per cent additional dwellings surcharge where applicable. The non-resident SDLT surcharge applies separately to LTT and LBTT in Wales and Scotland respectively, on the devolved regimes' own terms. Detail in our <a href="/blog/landlord-tax-essentials/non-resident-stamp-duty-surcharge-2-percent-residential-property">non-resident SDLT surcharge</a> page. CGT and SDLT are independent; the existence of a non-resident SDLT surcharge has no bearing on the 60-day CGT return obligation.</p>
+<p>The CGT regime sits alongside the SDLT (England + Northern Ireland), LTT (Wales) and LBTT (Scotland) regimes on the buy side. Non-resident purchasers of UK residential property are subject to the 2 per cent non-resident surcharge on top of the standard SDLT rates (Finance Act 2003 Sch 4ZA + Sch 4A relevant provisions), in addition to the 5 per cent additional dwellings surcharge where applicable. The non-resident SDLT surcharge applies separately to LTT and LBTT in Wales and Scotland respectively, on the devolved regimes' own terms. Detail in our <a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">non-resident SDLT surcharge</a> page. CGT and SDLT are independent; the existence of a non-resident SDLT surcharge has no bearing on the 60-day CGT return obligation.</p>
 
 <h2>The Statutory Residence Test and split-year treatment</h2>
 
@@ -245,7 +245,7 @@ faqs:
 
 <p>Where a person becomes UK-resident or non-resident part-way through a tax year, split-year treatment under Schedule 45 Part 3 may apply (Cases 1 to 8). The split-year treatment determines which UK / overseas residence position applies to events on each side of the split date. For a UK property disposal, the residence position at the completion date determines whether the seller is within the non-resident 60-day every-disposal rule or the UK-resident 60-day where-tax-is-due rule.</p>
 
-<p>The SRT depth sits in our <a href="/blog/non-resident-landlord-tax/statutory-residence-test-srt-uk-property-landlords">Statutory Residence Test for UK property landlords</a> page. The temporary non-residence trap under s.10A is in our <a href="/blog/non-resident-landlord-tax/temporary-non-residence-tcga-s10a-property-recapture">temporary non-residence and the s.10A trap</a> page.</p>
+<p>The SRT depth sits in our <a href="/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree">Statutory Residence Test for UK property landlords</a> page. The temporary non-residence trap under s.10A is in our <a href="/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property">temporary non-residence and the s.10A trap</a> page.</p>
 
 <aside>
 <p>Cross-border CGT position to work through with a specialist?</p>
@@ -275,12 +275,12 @@ faqs:
 <p>The CGT regime is one element of a broader non-resident landlord tax position that also includes ongoing income tax (the NRL scheme), SDLT (the 2 per cent non-resident surcharge), ATED (where the property is held through a company and exceeds £500,000), and the wider Statutory Residence Test / domicile-reform framework. Companion pages:</p>
 
 <ul>
-<li><a href="/blog/non-resident-landlord-tax/non-resident-landlord-tax-uk-complete-guide">Non-resident landlord tax: complete guide</a>, the ongoing rental position</li>
-<li><a href="/blog/landlord-tax-essentials/non-resident-stamp-duty-surcharge-2-percent-residential-property">Non-resident SDLT 2 per cent surcharge</a></li>
-<li><a href="/blog/non-resident-landlord-tax/statutory-residence-test-srt-uk-property-landlords">Statutory Residence Test for UK property landlords</a></li>
-<li><a href="/blog/non-resident-landlord-tax/temporary-non-residence-tcga-s10a-property-recapture">Temporary non-residence and the s.10A trap</a></li>
-<li><a href="/blog/non-resident-landlord-tax/leaving-the-uk-tax-implications-for-landlords">Leaving the UK: tax implications for landlords</a></li>
-<li><a href="/blog/ated-and-corporate-property/ated-annual-tax-enveloped-dwellings-uk-property-guide">ATED: annual tax on enveloped dwellings</a></li>
+<li><a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">Non-resident landlord tax: complete guide</a>, the ongoing rental position</li>
+<li><a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">Non-resident SDLT 2 per cent surcharge</a></li>
+<li><a href="/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree">Statutory Residence Test for UK property landlords</a></li>
+<li><a href="/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property">Temporary non-residence and the s.10A trap</a></li>
+<li><a href="/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist">Leaving the UK: tax implications for landlords</a></li>
+<li><a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">ATED: annual tax on enveloped dwellings</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates on residential property 2026/27</a> (the UK-resident equivalent rates)</li>
 <li><a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines for UK property sales 2026/27</a> (the UK-resident 60-day rule)</li>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a></li>

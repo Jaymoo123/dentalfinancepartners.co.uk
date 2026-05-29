@@ -155,7 +155,7 @@ editorialNote: "Wave 8 Bucket C C2, option-to-tax revocation depth, builds on C1
 <li><a href="/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock">Option to tax framework pillar: the 20-year lock, opter binding, prior permission, real estate election</a> (C1 cluster pillar)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT option to tax: operational mechanics, election and revocation</a> (companion Wave 5 mechanics page)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics">Capital Goods Scheme for property businesses: 10-year adjustment mechanics</a></li>
-<li><a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption for landlords with mixed residential and commercial portfolios</a></li>
+<li><a href="/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption for landlords with mixed residential and commercial portfolios</a></li>
 <li><a href="/blog/incorporation-and-company-structures/togc-vat-property-letting-business">TOGC and VAT on property letting businesses</a></li>
 </ul>
 

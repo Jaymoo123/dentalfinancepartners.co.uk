@@ -124,7 +124,7 @@ editorialNote: "Master hub page for the Welsh LTT cluster. Covers main residenti
 
 <p>Welsh MDR still applies to genuine multi-dwelling portfolio acquisitions outside the subsidiary-dwelling carve-out, subject to the 3% minimum effective rate. The averaging mechanism (compute LTT on the average price per dwelling, multiply by number of dwellings, apply the higher-rate bands if any joint buyer triggers them) operates broadly as it did pre-modification.</p>
 
-<p>For the modified mechanics, the calculation steps, and the SDLT-abolition contrast, see our <a href="/blog/landlord-tax-essentials/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh MDR survives page</a>.</p>
+<p>For the modified mechanics, the calculation steps, and the SDLT-abolition contrast, see our <a href="/blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh MDR survives page</a>.</p>
 
 <h2>Non-residential rates and the absent six-dwellings rule</h2>
 
@@ -150,7 +150,7 @@ editorialNote: "Master hub page for the Welsh LTT cluster. Covers main residenti
 <li><strong>Partnership relief (LTTA 2017 Sch 7):</strong> genuine pre-existing letting partnership incorporating into a limited company. The evidential bar is identical to FA 2003 Sch 15: formal partnership agreement, separate partnership accounts, joint borrowing facilities, active joint management of the lettings. Hobby-partnership claims fail the evidential test routinely.</li>
 <li><strong>Charities relief (LTTA 2017 Sch 19):</strong> charity acquiring property for charitable use, with clawback if the charity ceases to apply the property to charitable purposes.</li>
 <li><strong>Sub-sale relief (LTTA 2017 Sch 2 Part 4):</strong> narrow application where the original buyer sub-sells before completing on the original contract. Welsh sub-sale relief is structurally similar to the SDLT version but narrower in some edge cases.</li>
-<li><strong>Derelict-property refund:</strong> properties uninhabitable at the effective date may qualify for a partial refund under specific Welsh Revenue Authority guidance. See our <a href="/blog/landlord-tax-essentials/welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics">derelict-property refund page</a>.</li>
+<li><strong>Derelict-property refund:</strong> properties uninhabitable at the effective date may qualify for a partial refund under specific Welsh Revenue Authority guidance. See our <a href="/blog/property-types-and-specialist-tax/welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics">derelict-property refund page</a>.</li>
 </ul>
 
 <p>Each relief has its own time limit, evidential bar, and clawback regime. Sessions advising on Welsh portfolio incorporations or charity acquisitions should treat the Welsh statute as the primary source, not the SDLT equivalent, even though the structures mirror each other.</p>
@@ -201,9 +201,9 @@ editorialNote: "Master hub page for the Welsh LTT cluster. Covers main residenti
 <li>The <a href="/blog/landlord-tax-essentials/welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers">Welsh LTT main residential rates and bands page</a> for the band-by-band rate-table depth.</li>
 <li>The <a href="/blog/landlord-tax-essentials/higher-rates-of-land-transaction-tax-a-complete-guide">higher-rates complete guide</a> for the post-11-December-2024 higher-rate band table.</li>
 <li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics">Welsh LTT higher-rate mechanics page</a> for the scenario-led second-home and BTL mechanics.</li>
-<li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh MDR-survives page</a> for portfolio buyers navigating the post-2025 carve-out and the post-2026 3% floor.</li>
+<li>The <a href="/blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh MDR-survives page</a> for portfolio buyers navigating the post-2025 carve-out and the post-2026 3% floor.</li>
 <li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer position page</a> for the policy-absence framing and the cross-jurisdictional FTB comparison.</li>
-<li>The <a href="/blog/landlord-tax-essentials/welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics">Welsh LTT derelict-property refund page</a> for the niche refund mechanics on uninhabitable purchases.</li>
+<li>The <a href="/blog/property-types-and-specialist-tax/welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics">Welsh LTT derelict-property refund page</a> for the niche refund mechanics on uninhabitable purchases.</li>
 </ul>
 
 <p>For the Scottish and English parallels, see the Scottish LBTT and SDLT clusters. The Welsh LTT regime is a free-standing rule book: don't import SDLT assumptions, don't import LBTT assumptions, and check the Welsh statute and Welsh Revenue Authority guidance directly for every operative position.</p>

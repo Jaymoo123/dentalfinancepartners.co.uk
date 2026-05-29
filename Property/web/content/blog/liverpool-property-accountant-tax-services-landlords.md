@@ -71,7 +71,7 @@ faqs:
 
 <h3>Regeneration zones</h3>
 
-<p>The Baltic Triangle, Knowledge Quarter, Paddington Village, and the waterfront (Liverpool Waters, Ten Streets) have driven significant uplift. Where you hold a commercial-to-residential conversion, capital allowances analysis can be valuable. Where you operate near the borderline between development and investment, the badges of trade decide whether you face 18%/24% CGT or income tax plus Class 4 NICs as a property trader. See our <a href="/blog/property-development-tax/property-development-tax-trading-vs-investment-income">trading vs investment guide</a> for the test.</p>
+<p>The Baltic Triangle, Knowledge Quarter, Paddington Village, and the waterfront (Liverpool Waters, Ten Streets) have driven significant uplift. Where you hold a commercial-to-residential conversion, capital allowances analysis can be valuable. Where you operate near the borderline between development and investment, the badges of trade decide whether you face 18%/24% CGT or income tax plus Class 4 NICs as a property trader. See our <a href="/blog/property-types-and-specialist-tax/property-development-tax-trading-vs-investment-income">trading vs investment guide</a> for the test.</p>
 
 <h3>Non-resident investors</h3>
 
@@ -163,7 +163,7 @@ faqs:
 <li>Incorporation analysis including SDLT, CGT, and Section 162 relief</li>
 <li>SPV setup and group structures for portfolio landlords (see our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company guide</a>)</li>
 <li>Pre-disposal CGT planning (timing, PPR elections, gift relief between spouses)</li>
-<li>Inheritance tax mitigation including life assurance and trust structures (see our <a href="/blog/inheritance-tax/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a>)</li>
+<li>Inheritance tax mitigation including life assurance and trust structures (see our <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a>)</li>
 <li>Pension-funded property purchase through SSAS or SIPP (commercial only)</li>
 </ul>
 

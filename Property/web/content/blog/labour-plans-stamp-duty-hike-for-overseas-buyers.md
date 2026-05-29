@@ -147,10 +147,10 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A18 (final pick of batch). Policy-
 
 <ul>
 <li>Our <a href="/blog/property-types-and-specialist-tax/how-owning-property-abroad-leads-higher-stamp-duty-rates">how owning property abroad leads to higher SDLT rates page</a> maps the three statutory routes through which overseas property ownership raises a UK buyer's SDLT bill (Schedule 4ZA worldwide reach, Schedule 9A non-resident, Schedule 6ZA FTB-disqualification).</li>
-<li>Our <a href="/blog/property-types-and-specialist-tax/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules">second-home SDLT additional dwellings surcharge page</a> covers the Schedule 4ZA mechanics including the spouse-aggregation rule.</li>
+<li>Our <a href="/blog/landlord-tax-essentials/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules">second-home SDLT additional dwellings surcharge page</a> covers the Schedule 4ZA mechanics including the spouse-aggregation rule.</li>
 <li>Our <a href="/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers">applicable SDLT rates for first-time buyers page</a> covers the FTB-relief rate table and the 1 April 2025 reversion.</li>
 <li>Our <a href="/blog/property-types-and-specialist-tax/first-time-buyer-relief-benefits-and-eligibility-requirements">first-time buyer relief eligibility page</a> covers the Schedule 6ZA worldwide-property test.</li>
-<li>Our <a href="/blog/property-types-and-specialist-tax/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> covers speculative claim marketing including the non-resident-buyer angle.</li>
+<li>Our <a href="/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> covers speculative claim marketing including the non-resident-buyer angle.</li>
 </ul>
 
 <h2>Statutory references</h2>

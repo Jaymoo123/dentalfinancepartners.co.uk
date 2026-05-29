@@ -194,7 +194,7 @@ faqs:
 
 <p>The bookkeeping consequence is that the recording cadence shifts from annual (most taxpayers historically processing their books at year-end for the SA100) to quarterly. For most sole traders and individual landlords, this is a behavioural change rather than a software change: the cloud accounting software they already use is MTD-compatible. The discipline shift is to update the records monthly (so the quarterly snapshot is accurate) rather than catching up on the books in January.</p>
 
-<p>For the upstream framing on MTD specifically as an event (who is caught, what to do this quarter, how to prepare), the <a href="/blog/landlord-tax-essentials/making-tax-digital-landlords-april-2026-deadline">MTD landlords April 2026 deadline page</a> is the event-driven companion. This page is discipline-driven and assumes the reader is operating MTD-compliantly regardless of whether the April 2026 threshold has actually bitten yet.</p>
+<p>For the upstream framing on MTD specifically as an event (who is caught, what to do this quarter, how to prepare), the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD landlords April 2026 deadline page</a> is the event-driven companion. This page is discipline-driven and assumes the reader is operating MTD-compliantly regardless of whether the April 2026 threshold has actually bitten yet.</p>
 
 <h2>NIC: Class 2 abolition and Class 4 mechanics</h2>
 

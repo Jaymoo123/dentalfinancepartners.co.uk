@@ -43,7 +43,7 @@ faqs:
 
 <p>A trust is not a tax-saving wrapper. It is a fiduciary structure that trades an upfront inheritance tax entry cost for capital gains tax deferral, with a recurring inheritance tax cost every ten years thereafter, in exchange for control and succession features that suit a narrow band of estates. For the right candidate the trade can be worth making. For most landlords reading the topic cold, the answer is that a trust is the wrong tool.</p>
 
-<p>This page is the pre-decision orientation pillar. It explains what a trust actually is at law, the three routes for putting buy-to-let property into one, the four tax-impact axes at orientation depth, the gift-with-reservation-of-benefit (GROB) elephant in the room, and an honest section on who is and who is not suited to the trust route. Where the decision has weight, the page hands off to the operational <a href="/blog/landlord-tax-essentials/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack">decision-stack pillar</a> that works the mechanics in computational detail.</p>
+<p>This page is the pre-decision orientation pillar. It explains what a trust actually is at law, the three routes for putting buy-to-let property into one, the four tax-impact axes at orientation depth, the gift-with-reservation-of-benefit (GROB) elephant in the room, and an honest section on who is and who is not suited to the trust route. Where the decision has weight, the page hands off to the operational <a href="/blog/incorporation-and-company-structures/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack">decision-stack pillar</a> that works the mechanics in computational detail.</p>
 
 <h2>What a trust actually is in law</h2>
 
@@ -133,7 +133,7 @@ faqs:
 
 <p>The case law has tightened the rules over time. <em>Ingram v IRC</em> [2000] 1 AC 293 was the canonical pre-s.102A sequence (later closed by statute). <em>Buzzoni v HMRC</em> [2013] EWCA Civ 1684 set out the modern "benefit to donee not detriment to donor" tracing test. <em>Phizackerley v HMRC</em> [2007] STC SCD 328 caught a spouse-via-trust arrangement that the parties believed safe.</p>
 
-<p>The practical filter: if you intend to retain any economic benefit from the property after the gift, rent, occupation, or even an open expectation of distributions, the trust route fails on the GROB rule and the costs are sunk. The most common workable structures put the settlor outside the beneficiary class entirely. See our <a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">gift with reservation of benefit pillar</a> and the <a href="/blog/landlord-tax-essentials/settlor-interested-property-trust-grob-interaction-double-trap-mechanics">settlor-interested + GROB double-trap deep</a> for the full mechanics.</p>
+<p>The practical filter: if you intend to retain any economic benefit from the property after the gift, rent, occupation, or even an open expectation of distributions, the trust route fails on the GROB rule and the costs are sunk. The most common workable structures put the settlor outside the beneficiary class entirely. See our <a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">gift with reservation of benefit pillar</a> and the <a href="/blog/incorporation-and-company-structures/settlor-interested-property-trust-grob-interaction-double-trap-mechanics">settlor-interested + GROB double-trap deep</a> for the full mechanics.</p>
 
 <aside>
 <p>The settlor-as-beneficiary structure is the textbook GROB trap and the single most common reason landlord trusts fail. By the time the costs have been incurred and the structure is in place, undoing it is expensive.</p>
@@ -215,7 +215,7 @@ faqs:
 <li><a href="https://www.legislation.gov.uk/uksi/2017/692/regulation/45" rel="nofollow noopener" target="_blank">MLR 2017 SI 2017/692 reg 45</a> requires most express trusts holding UK land to register on the Trust Registration Service within 90 days of becoming registrable, with 90-day updates on changes and annual reviews.</li>
 <li>Trust tax returns (SA900) plus annual trustee accounts are required.</li>
 <li>The Register of Overseas Entities under ECTEA 2022 applies separately where the trust holds the property indirectly via an overseas entity. The 2025 RoE-trust-data public-access expansion under ECCTA 2023 is a developing area, see our <a href="/blog/landlord-tax-essentials/public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded">RoE trust-data expansion guide</a>.</li>
-<li>Ten-yearly periodic-charge modelling is required to anticipate the IHT cost at each anniversary and to plan capital appointments accordingly. See our <a href="/blog/landlord-tax-essentials/trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017">TRS compliance deep</a> for the mechanics.</li>
+<li>Ten-yearly periodic-charge modelling is required to anticipate the IHT cost at each anniversary and to plan capital appointments accordingly. See our <a href="/blog/incorporation-and-company-structures/trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017">TRS compliance deep</a> for the mechanics.</li>
 </ul>
 
 <h2>Where to read next</h2>
@@ -223,10 +223,10 @@ faqs:
 <p>If the trust route is on your shortlist, the next reading order is:</p>
 
 <ul>
-<li><a href="/blog/landlord-tax-essentials/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack">Putting rental property into a trust: IHT, CGT, SDLT decision pillar</a>, the operational mechanics page that models the full cost stack.</li>
+<li><a href="/blog/incorporation-and-company-structures/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack">Putting rental property into a trust: IHT, CGT, SDLT decision pillar</a>, the operational mechanics page that models the full cost stack.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge">The 20% CLT entry charge deep</a>, the s.7(2) mechanic in computational detail.</li>
-<li><a href="/blog/landlord-tax-essentials/bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors">Bare trust vs nominee company vs formal trust</a>, the vehicle-comparison deep for property investors.</li>
-<li><a href="/blog/landlord-tax-essentials/fic-vs-discretionary-trust-property-comparison">FIC vs discretionary trust</a>, the alternative-vehicle comparison.</li>
+<li><a href="/blog/incorporation-and-company-structures/bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors">Bare trust vs nominee company vs formal trust</a>, the vehicle-comparison deep for property investors.</li>
+<li><a href="/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison">FIC vs discretionary trust</a>, the alternative-vehicle comparison.</li>
 <li><a href="/blog/landlord-tax-essentials/comparison-of-discretionary-trusts">Comparison of discretionary trusts</a>, the intra-class comparison across seven discretionary-trust variants.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-lifetime-gifts-vs-transfer-at-death">Inheritance tax: lifetime gifts vs transfer at death</a>, the lifetime-vs-death comparative pillar.</li>
 <li><a href="/blog/landlord-tax-essentials/maximising-business-relief-to-reduce-inheritance-tax">Maximising business relief to reduce inheritance tax</a>, the BPR planning pillar.</li>

@@ -283,7 +283,7 @@ faqs:
 <li><a href="/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk">CGT deferral mechanics guide</a></li>
 <li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">Reduce CGT on property disposal: 10-lever survey</a></li>
 <li><a href="/blog/capital-gains-tax/rollover-relief-property-landlords">Rollover relief for property landlords</a></li>
-<li><a href="/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting">NRCGT for non-resident landlords</a></li>
+<li><a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">NRCGT for non-resident landlords</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a></li>
 <li><a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Property investment tax complete guide 2026</a></li>
 <li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What a specialist property accountant handles</a></li>

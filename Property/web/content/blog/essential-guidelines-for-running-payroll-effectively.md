@@ -217,7 +217,7 @@ faqs:
 <li>This page answers HOW to run payroll well. Operational discipline angle with the ten guidelines above and the worked examples that ground them in property-business operator patterns.</li>
 </ul>
 
-<p>For the bookkeeping discipline on the sole-trader and individual-landlord side, see our <a href="/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders">bookkeeping discipline for sole traders and property-income individuals</a> page. For the dormant-LtdCo lifecycle transition (where the SPV exits payroll and goes dormant), see our <a href="/blog/property-accountant-services/file-dormant-accounts-a-complete-guide">dormant accounts filing guide</a>. For the property-LtdCo incorporation sequence (where the SPV starts payroll for the first time), see our <a href="/blog/property-accountant-services/a-complete-guide-on-incorporating-a-company-in-uk">incorporating a UK company guide</a>.</p>
+<p>For the bookkeeping discipline on the sole-trader and individual-landlord side, see our <a href="/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders">bookkeeping discipline for sole traders and property-income individuals</a> page. For the dormant-LtdCo lifecycle transition (where the SPV exits payroll and goes dormant), see our <a href="/blog/property-accountant-services/file-dormant-accounts-a-complete-guide">dormant accounts filing guide</a>. For the property-LtdCo incorporation sequence (where the SPV starts payroll for the first time), see our <a href="/blog/incorporation-and-company-structures/a-complete-guide-on-incorporating-a-company-in-uk">incorporating a UK company guide</a>.</p>
 
 <h2>The bigger picture</h2>
 

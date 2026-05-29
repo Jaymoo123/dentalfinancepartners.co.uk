@@ -155,7 +155,7 @@ editorialNote: "Bucket A operational page. Reg 111 is canonical, statute-led, an
 <li><a href="/blog/landlord-tax-essentials/landlord-vat-registration-when-required">Landlord VAT Registration 2026/27: When Required, Option to Tax, and Holiday-Let Rules</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-property-conversion-residential-to-commercial-or-commercial-to-residential-zero-rate-reduced-rate">Property Conversion VAT: Three Reliefs, Two Routes, One Project</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property">VAT on New-Build Residential Property: Zero-Rate, 5%, 20%</a></li>
-<li><a href="/blog/property-types-and-specialist-tax/domestic-reverse-charge-construction-vat-landlords">Domestic Reverse Charge for Construction Services: Landlord and Developer Guide</a></li>
+<li><a href="/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords">Domestic Reverse Charge for Construction Services: Landlord and Developer Guide</a></li>
 </ul>
 
 <h2>Authorities Cited</h2>

@@ -113,7 +113,7 @@ faqs:
 
 <p>Business Asset Disposal Relief (BADR) at 14% from 6 April 2025 (and rising to 18% from 6 April 2026 per Finance Act 2025) is restricted to disposals of qualifying business assets where the owner has a personal trading-status involvement. Standard residential investment letting does not qualify (the same trade-versus-investment test that excludes BTL from rollover relief under s.152). Property development, where trading status can be evidenced, can qualify. Pre-6-April-2025 Furnished Holiday Lettings could qualify at the former 10% rate; FHL was abolished by Finance Act 2025 Sch 5 with effect from 6 April 2025 and anti-forestalling rules between 6 March 2024 and 5 April 2025 closed pre-abolition routes.</p>
 
-<p>For 2026/27, the realistic BADR-on-property population is owner-occupier traders disposing of trading-business premises and property developers with evidenced trading status. The standard BTL landlord is excluded. The Wave 6 <a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a> covers the post-abolition position; our <a href="/blog/capital-gains-tax/rollover-relief-property-landlords">rollover relief guide</a> sets out the trade-versus-investment line that BADR shares.</p>
+<p>For 2026/27, the realistic BADR-on-property population is owner-occupier traders disposing of trading-business premises and property developers with evidenced trading status. The standard BTL landlord is excluded. The Wave 6 <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a> covers the post-abolition position; our <a href="/blog/capital-gains-tax/rollover-relief-property-landlords">rollover relief guide</a> sets out the trade-versus-investment line that BADR shares.</p>
 
 <h2>Time the disposal across tax years and around the income cycle</h2>
 
@@ -234,7 +234,7 @@ faqs:
 <li><a href="/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk">CGT deferral mechanics guide</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT payment deadlines</a></li>
 <li><a href="/blog/capital-gains-tax/rollover-relief-property-landlords">Rollover relief for property landlords</a></li>
-<li><a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
+<li><a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT calculation on incorporation</a></li>
 <li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What a specialist property accountant handles</a></li>

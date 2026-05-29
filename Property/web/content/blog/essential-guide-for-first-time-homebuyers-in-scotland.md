@@ -161,7 +161,7 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <p>Crossover points worth knowing if you are choosing between locations or comparing offers across the border. At £200,000, a Scottish FTB pays £500, an English FTB pays £0, a Welsh buyer (FTB or not) pays £0. At £300,000, a Scottish FTB pays £2,500, an English FTB pays £0, a Welsh buyer pays £3,750. At £500,000, a Scottish FTB pays £21,750, an English FTB pays £10,000, a Welsh buyer pays £14,750. At £700,000, a Scottish FTB pays £43,750, an English FTB pays £22,500 (no FTB relief at this price), a Welsh buyer pays £32,750.</p>
 
-<p>The Scottish regime is structurally less generous at the low end of the FTB market but more generous (and predictable) at the high end. For cross-jurisdictional context on the Welsh position, see our <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer mechanics page</a>; for the English regime, see the <a href="/blog/landlord-tax-essentials/applicable-sdlt-rates-for-first-time-buyers">SDLT first-time buyer rates page</a>.</p>
+<p>The Scottish regime is structurally less generous at the low end of the FTB market but more generous (and predictable) at the high end. For cross-jurisdictional context on the Welsh position, see our <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer mechanics page</a>; for the English regime, see the <a href="/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers">SDLT first-time buyer rates page</a>.</p>
 
 <h2>Common mistakes Scottish first-time buyers make</h2>
 

@@ -202,13 +202,13 @@ editorialNote: "Operational handbook for a BTL limited company through its lifec
 <li><a href="/blog/incorporation-and-company-structures/corporate-tax-planning-strategies-for-uk-clients">Corporate tax planning strategies</a>: the lever-map pillar for property LtdCo CT planning.</li>
 <li><a href="/blog/incorporation-and-company-structures/btl-limited-company-year-end-date-changing-tax-planning">BTL year-end planning</a>: the year-end-specific operational page.</li>
 <li><a href="/blog/incorporation-and-company-structures/extracting-money-from-property-limited-company">Extracting money from a property LtdCo</a> and <a href="/blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27">extraction sequence pillar</a>: the extraction-side specialists.</li>
-<li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">Transferring property into a LtdCo</a> and <a href="/blog/incorporation-and-company-structures/cgt-property-transfer-limited-company-calculate">CGT on property transfer</a>: the transfer-in mechanics.</li>
+<li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">Transferring property into a LtdCo</a> and <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT on property transfer</a>: the transfer-in mechanics.</li>
 <li><a href="/blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide">SPV property investment guide</a>: the SPV-specific introduction.</li>
 <li><a href="/blog/incorporation-and-company-structures/multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics">Multi-company group extraction</a>: the HoldCo + SPV dividend-conduit mechanics.</li>
 <li><a href="/blog/incorporation-and-company-structures/sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth">SDLT group relief Sch 7 claw-back</a>: the SDLT-side intra-group transfer depth.</li>
-<li><a href="/blog/incorporation-and-company-structures/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs incorporation</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">Should I incorporate</a>: the entity-choice fork above this page.</li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs incorporation</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">Should I incorporate</a>: the entity-choice fork above this page.</li>
 <li><a href="/blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 ID verification</a>: the Companies House ID verification overlay.</li>
-<li><a href="/blog/incorporation-and-company-structures/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">BPR Pawson test for BTL</a>: the IHT investment-line angle.</li>
+<li><a href="/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">BPR Pawson test for BTL</a>: the IHT investment-line angle.</li>
 </ul>
 
 <aside>

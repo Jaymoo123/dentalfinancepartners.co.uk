@@ -51,7 +51,7 @@ editorialNote: "Wave 8 Bucket C C5, partial-exemption special-method depth. Refr
 
 <p>The standard partial-exemption method at SI 1995/2518 regulation 101 apportions residual input tax (input VAT non-attributable to specific taxable or specific exempt supplies) by the ratio of taxable supply values to total supply values. For most mixed-portfolio landlords the standard method is administratively simple and approximates actual use closely enough. For some, it does not. Where the supply-value ratio materially differs from actual use of residual costs (typically because rental yields on the taxable and exempt sides of the portfolio do not track the cost-allocation pattern), three statutory levers move the landlord off standard-method default and toward a more accurate attribution.</p>
 
-<p>This page is the depth on those three levers: the regulation 102 special-method approval route, the regulation 107A standard-method override, and the regulation 102B HMRC direction. Companion to our <a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">standard-method page</a>, which covers the regulation 101 baseline. The special-method route is what comes after standard method when standard method does not work; standard-method override is the in-method correction when distortion is occasional rather than structural; HMRC direction is the route HMRC takes when the taxpayer has not moved voluntarily.</p>
+<p>This page is the depth on those three levers: the regulation 102 special-method approval route, the regulation 107A standard-method override, and the regulation 102B HMRC direction. Companion to our <a href="/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">standard-method page</a>, which covers the regulation 101 baseline. The special-method route is what comes after standard method when standard method does not work; standard-method override is the in-method correction when distortion is occasional rather than structural; HMRC direction is the route HMRC takes when the taxpayer has not moved voluntarily.</p>
 
 <h2>The standard-method baseline in 90 seconds</h2>
 
@@ -172,7 +172,7 @@ editorialNote: "Wave 8 Bucket C C5, partial-exemption special-method depth. Refr
 <h2>Related reading</h2>
 
 <ul>
-<li><a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption for mixed residential and commercial portfolios (standard method)</a> (Wave 5 companion)</li>
+<li><a href="/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption for mixed residential and commercial portfolios (standard method)</a> (Wave 5 companion)</li>
 <li><a href="/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock">Option to tax framework pillar</a> (C1)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics">Capital Goods Scheme for property businesses</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment">VAT on mixed-use property purchase: residential and commercial apportionment</a></li>

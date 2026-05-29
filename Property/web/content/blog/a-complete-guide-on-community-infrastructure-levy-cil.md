@@ -186,7 +186,7 @@ reviewedAt: "2026-05-26"
 <p>For a developer or self-builder, the position is best modelled as four independent liability events:</p>
 
 <ul>
-<li><strong>Acquisition:</strong> SDLT under FA 2003 Part 4 on the purchase price (or non-residential rates where the site qualifies). See our <a href="/blog/property-types-and-specialist-tax/property-business-rates-council-tax-landlords">business rates vs council tax page</a> for the regime-distinction context, and our SDLT content set for the chargeable consideration mechanics.</li>
+<li><strong>Acquisition:</strong> SDLT under FA 2003 Part 4 on the purchase price (or non-residential rates where the site qualifies). See our <a href="/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords">business rates vs council tax page</a> for the regime-distinction context, and our SDLT content set for the chargeable consideration mechanics.</li>
 <li><strong>Planning permission:</strong> no immediate CIL liability on grant of permission. The liability crystallises on commencement.</li>
 <li><strong>Commencement of development:</strong> CIL under PA 2008 Part 11 + SI 2010/948 on net additional internal floorspace, calculated as above. Section 106 contributions are typically negotiated and signed as part of the planning permission package.</li>
 <li><strong>Completion and first occupation:</strong> council tax under LGFA 1992 starts from the completion day under s.17 LGFA 1992 + Sch 4A LGFA 1988. See our <a href="/blog/property-types-and-specialist-tax/council-tax-for-new-builds">council tax for new builds page</a> for the completion-notice mechanic.</li>

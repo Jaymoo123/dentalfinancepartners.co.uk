@@ -181,7 +181,7 @@ editorialNote: "Bucket A umbrella decision-framework page. Closes the Wave 5 A b
 <ul>
 <li><a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT Option to Tax Commercial Property</a> for the OTT election, cooling-off, anti-avoidance disapplication, and 20-year revocation mechanic.</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics">VAT Capital Goods Scheme</a> for the 10-year adjustment on capital items above £250,000 VAT-exclusive.</li>
-<li><a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT Partial Exemption</a> for the standard method, de-minimis test, and annual adjustment.</li>
+<li><a href="/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT Partial Exemption</a> for the standard method, de-minimis test, and annual adjustment.</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment">VAT on Mixed-Use Property Purchase</a> for residential-vs-commercial apportionment on acquisition.</li>
 <li><a href="/blog/landlord-tax-essentials/vat-dilapidations-payments-tenant-landlord-vat-treatment-supply-or-damages">VAT Dilapidations Payments</a> for the supply-vs-damages diagnostic at lease end.</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-property-conversion-residential-to-commercial-or-commercial-to-residential-zero-rate-reduced-rate">Property Conversion VAT</a> for the three reliefs (Sch 8 Group 5 Item 1(b) zero-rate, Sch 7A Groups 6 and 7 reduced rates).</li>
@@ -190,7 +190,7 @@ editorialNote: "Bucket A umbrella decision-framework page. Closes the Wave 5 A b
 <li><a href="/blog/property-types-and-specialist-tax/vat-cladding-remediation-relief-residential-building-safety-act-section-30a-mechanics">VAT on Cladding Remediation</a> for the standard-rated default and BSA 2022 cost waterfall.</li>
 <li><a href="/blog/landlord-tax-essentials/landlord-vat-registration-when-required">Landlord VAT Registration</a> for the operational when-must-you-register mechanic, de-registration, and MTD compliance.</li>
 <li><a href="/blog/property-types-and-specialist-tax/toms-vat-serviced-accommodation">TOMS and VAT on Serviced Accommodation</a> for the broader TOMS framework on direct-let serviced accommodation.</li>
-<li><a href="/blog/property-types-and-specialist-tax/togc-vat-property-letting-business">TOGC and VAT on a Property Letting Business</a> for the five-condition transfer-of-going-concern test on portfolio sales.</li>
+<li><a href="/blog/incorporation-and-company-structures/togc-vat-property-letting-business">TOGC and VAT on a Property Letting Business</a> for the five-condition transfer-of-going-concern test on portfolio sales.</li>
 </ul>
 
 <h2>Authorities Cited</h2>

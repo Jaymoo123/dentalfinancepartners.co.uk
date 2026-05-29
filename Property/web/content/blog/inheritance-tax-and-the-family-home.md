@@ -158,7 +158,7 @@ faqs:
 
 <p>The practical filter for the family home: if you continue to live in a property after gifting it, either (i) you pay full market rent and document it, or (ii) the donee genuinely shares the occupation and the s.102B(4) conditions are met. There is no third sustainable route.</p>
 
-<p>For the full statute walkthrough and case-law, see our <a href="/blog/landlord-tax-essentials/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a> page and the <a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">gift with reservation of benefit</a> entry-tier orientation.</p>
+<p>For the full statute walkthrough and case-law, see our <a href="/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a> page and the <a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">gift with reservation of benefit</a> entry-tier orientation.</p>
 
 <h2>The CGT silent killer</h2>
 
@@ -213,7 +213,7 @@ faqs:
 <h2>Where to read next</h2>
 
 <ul>
-<li><a href="/blog/landlord-tax-essentials/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a>. Full statute walkthrough and case-law.</li>
+<li><a href="/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a>. Full statute walkthrough and case-law.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios">IHT residence nil rate band £2m taper property portfolios</a>. Taper mechanics on portfolio estates.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance tax rental property UK guide</a>. Rental portfolio comprehensive deep.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT property investors decision framework 2026 onwards</a>. Broad IHT decision pillar.</li>

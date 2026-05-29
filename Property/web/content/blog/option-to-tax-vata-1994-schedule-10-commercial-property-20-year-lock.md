@@ -212,7 +212,7 @@ editorialNote: "Wave 8 Bucket C C1 PILLAR, option-to-tax cluster framework page.
 <li><a href="/blog/property-types-and-specialist-tax/landlord-vat-recovery-professional-fees-capital-costs-commercial-property">Landlord VAT recovery: three-step framework</a> (C10 cluster sibling; input-tax recovery)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT option to tax: operational mechanics, election and revocation</a> (Wave 5 companion mechanics page)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics">Capital Goods Scheme for property businesses: 10-year adjustment mechanics</a></li>
-<li><a href="/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption for landlords with mixed residential and commercial portfolios</a></li>
+<li><a href="/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method">VAT partial exemption for landlords with mixed residential and commercial portfolios</a></li>
 <li><a href="/blog/incorporation-and-company-structures/togc-vat-property-letting-business">TOGC and VAT on property letting businesses</a> (Wave 5 overview)</li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment">VAT on mixed-use property purchase: residential and commercial apportionment</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property">VAT on new-build residential property: zero-rate, 5%, 20%</a></li>

@@ -225,7 +225,7 @@ editorialNote: "Definitional / taxonomy pillar page for partnership existence te
 <li><a href="/blog/incorporation-and-company-structures/hybrid-limited-liability-partnership">Hybrid limited liability partnership</a>: corporate-member-in-LLP architecture and the mixed-membership anti-avoidance.</li>
 <li><a href="/blog/incorporation-and-company-structures/llp-property-investment-worth-considering">LLP for property investment</a>: the LLP route in property contexts.</li>
 <li><a href="/blog/incorporation-and-company-structures/limited-companies">Limited companies (pillar)</a>: the LtdCo entity-choice fork.</li>
-<li><a href="/blog/incorporation-and-company-structures/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">Civil partnership joint-property tax treatment (CPA 2004 marriage-equivalent, NOT business partnership)</a>: the spousal and civil-partner joint-letting mechanics; disambiguated cleanly from this page.</li>
+<li><a href="/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality">Civil partnership joint-property tax treatment (CPA 2004 marriage-equivalent, NOT business partnership)</a>: the spousal and civil-partner joint-letting mechanics; disambiguated cleanly from this page.</li>
 </ul>
 
 <p>Read this page first to settle the existence question, then follow the cross-links to the mechanics pages for the SDLT, LLP, LP, or LtdCo route that applies. The pages cross-link.</p>

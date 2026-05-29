@@ -107,7 +107,7 @@ faqs:
 
 <p>The Furnished Holiday Lettings regime treated FHL as 'quasi-trading' for limited CGT purposes including s.152 rollover. FHL was abolished by Finance Act 2025 Schedule 5 with effect from 6 April 2025. Pre-abolition disposals could claim rollover where the FHL business met the qualifying conditions (the let was substantially commercial, the property was available for 210 days a year and actually let for 105 days, etc.).</p>
 
-<p>Anti-forestalling rules between the 6 March 2024 announcement and the 5 April 2025 abolition closed routes that attempted to crystallise pre-abolition disposals artificially. Post-6-April-2025 former FHL property is treated as standard residential rental and does not qualify for rollover. The grandfathered position on remaining FHL features (BADR transitional, capital allowances grandfathering) is in the Wave 6 <a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>.</p>
+<p>Anti-forestalling rules between the 6 March 2024 announcement and the 5 April 2025 abolition closed routes that attempted to crystallise pre-abolition disposals artificially. Post-6-April-2025 former FHL property is treated as standard residential rental and does not qualify for rollover. The grandfathered position on remaining FHL features (BADR transitional, capital allowances grandfathering) is in the Wave 6 <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>.</p>
 
 <aside>
 <p>Disposing of a commercial-business property or considering a developer rollover?</p>
@@ -206,7 +206,7 @@ faqs:
 <li><strong>Cross-cut-off disposals:</strong> a disposal completing before 6 April 2025 retained the FHL CGT treatment; a disposal completing after that date does not. The disposal date for CGT is the completion date (or the contract date if unconditional and earlier).</li>
 </ul>
 
-<p>The grandfathered position on remaining FHL features (BADR transitional, capital allowances grandfathering, ongoing implications for in-flight depreciation pools) is in the Wave 6 <a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>. For income-side post-abolition framing see the rewritten <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">PRR for landlords guide</a> for PRR interaction.</p>
+<p>The grandfathered position on remaining FHL features (BADR transitional, capital allowances grandfathering, ongoing implications for in-flight depreciation pools) is in the Wave 6 <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL grandfathered claims guide</a>. For income-side post-abolition framing see the rewritten <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">PRR for landlords guide</a> for PRR interaction.</p>
 
 <h2>Alternative CGT reliefs for landlords who don't qualify</h2>
 
@@ -295,8 +295,8 @@ faqs:
 <li><a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT payment deadlines</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">BTL CGT calculation walkthrough</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">£3,000 annual exempt amount</a></li>
-<li><a href="/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
-<li><a href="/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">Settlor-interested trusts and s.169B holdover block</a></li>
+<li><a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-2025 grandfathered claims</a></li>
+<li><a href="/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">Settlor-interested trusts and s.169B holdover block</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a></li>
 <li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What a specialist property accountant handles</a></li>
 </ul>

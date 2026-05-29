@@ -41,7 +41,7 @@ faqs:
 
 <p>A property SPV becomes dormant at a specific lifecycle moment: completion of a sale with the next purchase not yet identified; setup of a new LtdCo in anticipation of a purchase that has not yet completed; legacy of a closed BTL portfolio retained for VAT-history continuity or brought-forward CT loss preservation; family-holding shell sitting under an IHT planning structure. The filing mechanics are simple in principle and unforgiving in practice. Most amateur dormancy claims fail on micro-transactions (bank interest on retained cash; insurance refunds after a policy cancellation; utility deposit returns; bank charges) that break the Companies Act 2006 s.1169 "no significant accounting transactions" test.</p>
 
-<p>This page walks the dormant-accounts filing framework from the Companies House side and the parallel HMRC corporation-tax dormancy side, with the property-context fact patterns surfaced throughout. For the sibling operational-discipline pillars covering payroll and bookkeeping, see <a href="/blog/property-accountant-services/essential-guidelines-for-running-payroll-effectively">essential guidelines for running payroll effectively</a> and <a href="/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders">essential bookkeeping tips for sole traders</a>. For the incorporation-side predecessor in the SPV lifecycle, see <a href="/blog/property-accountant-services/a-complete-guide-on-incorporating-a-company-in-uk">incorporating a UK company guide</a>.</p>
+<p>This page walks the dormant-accounts filing framework from the Companies House side and the parallel HMRC corporation-tax dormancy side, with the property-context fact patterns surfaced throughout. For the sibling operational-discipline pillars covering payroll and bookkeeping, see <a href="/blog/property-accountant-services/essential-guidelines-for-running-payroll-effectively">essential guidelines for running payroll effectively</a> and <a href="/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders">essential bookkeeping tips for sole traders</a>. For the incorporation-side predecessor in the SPV lifecycle, see <a href="/blog/incorporation-and-company-structures/a-complete-guide-on-incorporating-a-company-in-uk">incorporating a UK company guide</a>.</p>
 
 <h2>The Companies Act 2006 s.1169 dormant-company definition</h2>
 
@@ -151,7 +151,7 @@ faqs:
 
 <p>The CS01 confirms the company's registered details (registered office, directors, shareholders, PSC information, registered email address from ECCTA 2023, lawful-purpose statement from ECCTA 2023). For a dormant SPV with no operational activity, the CS01 is typically a "no changes" confirmation; the filing takes around 5 minutes via WebFiling.</p>
 
-<p>Critical for ECCTA 2023 compliance: the CS01 also confirms the identity-verification status of directors and PSCs. The ID verification rollout from 2025 onwards applies to dormant LtdCo directors and PSCs no less than active ones. For the operational mechanics of ECCTA 2023 ID verification, see the existing <a href="/blog/landlord-tax-essentials/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 ID verification mandatory Companies House landlord LtdCos</a> page.</p>
+<p>Critical for ECCTA 2023 compliance: the CS01 also confirms the identity-verification status of directors and PSCs. The ID verification rollout from 2025 onwards applies to dormant LtdCo directors and PSCs no less than active ones. For the operational mechanics of ECCTA 2023 ID verification, see the existing <a href="/blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 ID verification mandatory Companies House landlord LtdCos</a> page.</p>
 
 <h2>The HMRC corporation-tax notification</h2>
 
@@ -272,12 +272,12 @@ faqs:
 <h2>The companion lifecycle pages</h2>
 
 <ul>
-<li><a href="/blog/property-accountant-services/a-complete-guide-on-incorporating-a-company-in-uk">Incorporating a UK company guide</a>. The predecessor lifecycle step: setting up the SPV before its first purchase.</li>
+<li><a href="/blog/incorporation-and-company-structures/a-complete-guide-on-incorporating-a-company-in-uk">Incorporating a UK company guide</a>. The predecessor lifecycle step: setting up the SPV before its first purchase.</li>
 <li><a href="/blog/property-accountant-services/essential-guidelines-for-running-payroll-effectively">Essential guidelines for running payroll effectively</a>. The sibling operational-discipline pillar covering payroll. Dormant SPVs have no payroll; closing payroll is part of the dormancy transition for any SPV that previously paid the director.</li>
 <li><a href="/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders">Essential bookkeeping tips for sole traders</a>. The sole-trader-side operational-discipline pillar; the director of a dormant SPV may still have personal-side sole-trader bookkeeping obligations.</li>
-<li><a href="/blog/landlord-tax-essentials/corporate-tax-planning-strategies-for-uk-clients">Corporate tax planning strategies</a>. The strategic-CT context for brought-forward loss preservation in a dormant SPV.</li>
-<li><a href="/blog/landlord-tax-essentials/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 ID verification mandatory Companies House landlord LtdCos</a>. The director and PSC identity-verification regime that applies to dormant LtdCos no less than active ones.</li>
-<li><a href="/blog/landlord-tax-essentials/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure">Companies House confirmation statement changes 2024 onwards PSC disclosure</a>. The CS01 reform that applies during dormancy as during active periods.</li>
+<li><a href="/blog/incorporation-and-company-structures/corporate-tax-planning-strategies-for-uk-clients">Corporate tax planning strategies</a>. The strategic-CT context for brought-forward loss preservation in a dormant SPV.</li>
+<li><a href="/blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 ID verification mandatory Companies House landlord LtdCos</a>. The director and PSC identity-verification regime that applies to dormant LtdCos no less than active ones.</li>
+<li><a href="/blog/incorporation-and-company-structures/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure">Companies House confirmation statement changes 2024 onwards PSC disclosure</a>. The CS01 reform that applies during dormancy as during active periods.</li>
 </ul>
 
 <h2>The bigger picture</h2>

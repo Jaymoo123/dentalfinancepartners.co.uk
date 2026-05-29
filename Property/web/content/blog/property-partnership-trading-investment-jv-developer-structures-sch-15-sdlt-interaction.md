@@ -80,7 +80,7 @@ faqs:
 
 <p>For a property developer JV that involves a land contribution from the landowner, the paragraph 10 transfer-into-partnership rules apply at the time of the contribution. Where the landowner is connected with one or more other partners under section 1122 (typical for family or related-party partnerships, less typical for arm's-length JVs with unconnected developers and funders), the SLP can substantially reduce the SDLT cost. For purely arm's-length JVs with no connected partners, the SLP is zero and the SDLT cost is the full market-value SDLT.</p>
 
-<p>The deep-dive on the SDLT Schedule 15 mechanics, including the SLP calculation, the three-year paragraph 17A anti-withdrawal rule, the genuine-partnership substance requirement under post-Project Blue HMRC enquiry practice, and the cohabitant exclusion under section 1122, sits at the Wave 7 partnership SDLT pillar at <a href="/blog/portfolio-management/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">partnership SDLT relief at Schedule 15 FA 2003</a>. This page focuses on the trading-versus-investment side; the SDLT-side mechanics are covered separately.</p>
+<p>The deep-dive on the SDLT Schedule 15 mechanics, including the SLP calculation, the three-year paragraph 17A anti-withdrawal rule, the genuine-partnership substance requirement under post-Project Blue HMRC enquiry practice, and the cohabitant exclusion under section 1122, sits at the Wave 7 partnership SDLT pillar at <a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">partnership SDLT relief at Schedule 15 FA 2003</a>. This page focuses on the trading-versus-investment side; the SDLT-side mechanics are covered separately.</p>
 
 <h2>The three-year anti-withdrawal rule at paragraph 17A</h2>
 
@@ -140,7 +140,7 @@ faqs:
 <li><a href="/blog/incorporation-and-company-structures/condition-c-trading-stock-section-162-incorporation-relief-denial-developers">Condition C trading stock and section 162 incorporation relief denial</a> (s.162 denial for trading-stock partnerships)</li>
 <li><a href="/blog/property-types-and-specialist-tax/anti-fragmentation-rule-section-356oh-section-517h-multi-entity-developer-scheme-defeat">Anti-fragmentation under section 356OH and section 517H</a> (JV connected-or-related test)</li>
 <li><a href="/blog/property-types-and-specialist-tax/badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords">Badges of trade and Marson v Morton</a> (supporting evidence at partner level)</li>
-<li><a href="/blog/portfolio-management/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Partnership SDLT relief at Schedule 15 FA 2003</a> (Wave 7 SDLT-side companion)</li>
+<li><a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Partnership SDLT relief at Schedule 15 FA 2003</a> (Wave 7 SDLT-side companion)</li>
 </ul>
 
 <aside>

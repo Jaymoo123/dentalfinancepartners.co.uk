@@ -77,7 +77,7 @@ editorialNote: "Honest UK-property-context analysis of LLP tax position. Sibling
 <li><strong>LtdCo counterfactual.</strong> CTA 2009 Part 5 gives full interest deductibility for the company. Taxable profit £50,000; CT at 19% small profits rate (single-company, profit at or below £50,000 threshold) = £9,500. Retained £40,500 inside the company. Extraction to HRT individual: dividend tax on £40,000 (after £500 dividend allowance) at 35.75% = £14,302. Total tax cost £23,800 for the year on extracted profits.</li>
 </ul>
 
-<p>The LLP and direct ownership produce identical Section 24 outcomes. The LtdCo retention beats both where profits are not extracted. The LtdCo extraction at higher-rate is broadly level. The widely-promoted "LLP saves Section 24" claim is false for individual higher-rate members on residential property. For the entity-choice depth see <a href="/blog/incorporation-and-company-structures/section-24-vs-incorporation-which-saves-more-tax">Section 24 versus incorporation</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">should I incorporate</a>.</p>
+<p>The LLP and direct ownership produce identical Section 24 outcomes. The LtdCo retention beats both where profits are not extracted. The LtdCo extraction at higher-rate is broadly level. The widely-promoted "LLP saves Section 24" claim is false for individual higher-rate members on residential property. For the entity-choice depth see <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24 versus incorporation</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">should I incorporate</a>.</p>
 
 <h2>The corporate-member workaround dismantled</h2>
 
@@ -170,7 +170,7 @@ editorialNote: "Honest UK-property-context analysis of LLP tax position. Sibling
 
 <p>From 6 April 2026 a £2.5 million combined BPR/APR cap under <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/124D" rel="nofollow noopener" target="_blank">IHTA 1984 s.124D</a> (as inserted by FA 2026 Sch 12 para 4) further restricts available relief even where the business qualifies. The GOV.UK announcement-stage summary still cites the £1m headline figure announced 30 October 2024; the enacted FA 2026 figure verified against legislation.gov.uk is £2.5 million. Above the £2.5 million cap, the relief operates at half rate (an effective 20%). The cap reduces what BPR can deliver even for genuinely trading property-developer LLPs.</p>
 
-<p>The LLP form does not unlock BPR; only the underlying business activity does. A restructure from investment-letting to genuine trading (for example regular property development with sales) might change the analysis, but the restructure itself triggers other tax consequences (base-cost reset risks, loss of investment reliefs, GAAR exposure on motive). For depth see <a href="/blog/incorporation-and-company-structures/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">BPR Pawson test and BTL</a>.</p>
+<p>The LLP form does not unlock BPR; only the underlying business activity does. A restructure from investment-letting to genuine trading (for example regular property development with sales) might change the analysis, but the restructure itself triggers other tax consequences (base-cost reset risks, loss of investment reliefs, GAAR exposure on motive). For depth see <a href="/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">BPR Pawson test and BTL</a>.</p>
 
 <h2>The entity-choice decision frame</h2>
 
@@ -242,8 +242,8 @@ editorialNote: "Honest UK-property-context analysis of LLP tax position. Sibling
 <li><a href="/blog/incorporation-and-company-structures/corporate-tax-planning-strategies-for-uk-clients">Corporate tax planning strategies</a>: the lever-map for the LtdCo route.</li>
 <li><a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Partnership SDLT Sch 15 incorporation relief</a>: the SDLT mechanics depth.</li>
 <li><a href="/blog/incorporation-and-company-structures/property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction">Property partnership trading vs investment JV structures</a>: the trading-versus-investment line.</li>
-<li><a href="/blog/incorporation-and-company-structures/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">BPR Pawson test and BTL</a>: the IHT investment-line depth.</li>
-<li><a href="/blog/incorporation-and-company-structures/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs incorporation</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">should I incorporate</a>: the entity-choice decision pages.</li>
+<li><a href="/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">BPR Pawson test and BTL</a>: the IHT investment-line depth.</li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs incorporation</a> and <a href="/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026">should I incorporate</a>: the entity-choice decision pages.</li>
 </ul>
 
 <aside>

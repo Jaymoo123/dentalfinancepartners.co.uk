@@ -248,6 +248,6 @@ faqs:
 
 <h2>Next steps</h2>
 
-<p>For supporting reading, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>, our <a href="/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step">PPR relief calculation walkthrough</a>, and our <a href="/blog/inheritance-tax/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a>.</p>
+<p>For supporting reading, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>, our <a href="/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step">PPR relief calculation walkthrough</a>, and our <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a>.</p>
 
 <p>If you are planning a property gift in the current or next tax year and want the tax cost modelled before you commit, send us your property purchase history and current valuation using the form below. Initial calls are free and we will tell you whether a different route (s58 spousal pre-gifting, s260 trust route, FIC structure) saves you meaningful tax.</p>

@@ -176,7 +176,7 @@ editorialNote: "MW2 Bucket B B17: definitional pillar for the bare query 'gas sa
 <li><strong>Gas-pipework re-routing or major installation upgrade:</strong> capital improvement.</li>
 </ul>
 
-<p>The capital/revenue label has to be tagged at the point of spend. A boiler invoice tagged at the time of payment as "like-for-like replacement of 25-year-old boiler" supports the revenue treatment; the same invoice tagged after-the-fact several years later is materially harder to defend. Section 24 finance-cost restriction is not engaged by gas safety compliance costs (these are operating costs, not finance costs). For the wider allowable-expenses framework, see our <a href="/blog/landlord-tax-essentials/landlord-expenses-allowable-uk-2026">landlord allowable expenses pillar</a>.</p>
+<p>The capital/revenue label has to be tagged at the point of spend. A boiler invoice tagged at the time of payment as "like-for-like replacement of 25-year-old boiler" supports the revenue treatment; the same invoice tagged after-the-fact several years later is materially harder to defend. Section 24 finance-cost restriction is not engaged by gas safety compliance costs (these are operating costs, not finance costs). For the wider allowable-expenses framework, see our <a href="/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026">landlord allowable expenses pillar</a>.</p>
 
 <p>For Making Tax Digital for Income Tax Self Assessment (MTD ITSA) in-scope landlords, gas safety and repair costs must be digital-records-compliant from the MTD effective date. The certificate plus the engineer's invoice is the records pack; the cloud-based property-management system that retains the certificate should also hold the invoice with the capital/revenue tag.</p>
 

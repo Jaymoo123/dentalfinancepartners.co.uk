@@ -194,7 +194,7 @@ faqs:
 
 <p>FIC shares are unquoted under s.105(1)(bb) and appear to qualify on the share-class test. But the test runs through to the underlying business activity. A FIC holding pure BTL has a business that consists "wholly or mainly of making or holding investments" under s.105(3). BPR is denied at the company level; the share value receives no relief. The same reasoning applies to any corporate or trust wrapper around investment property: the wrapper does not change the activity test.</p>
 
-<p>FICs do other useful things in property planning (value-freeze of growth via preference-share structures; family income distribution at lower marginal rates; control retention via voting structure). BPR is not one of them. For the deeper analysis see our <a href="/blog/landlord-tax-essentials/fic-vs-discretionary-trust-property-comparison">FIC vs discretionary trust property comparison</a> page.</p>
+<p>FICs do other useful things in property planning (value-freeze of growth via preference-share structures; family income distribution at lower marginal rates; control retention via voting structure). BPR is not one of them. For the deeper analysis see our <a href="/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison">FIC vs discretionary trust property comparison</a> page.</p>
 
 <h2>The combined cap and APR competition</h2>
 
@@ -215,9 +215,9 @@ faqs:
 <ul>
 <li><a href="/blog/landlord-tax-essentials/business-property-relief-rental-property-iht">Business property relief and rental property IHT</a>. BPR definitional explainer.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact">IHT April 2026 BPR and APR cap property impact</a>. Cap mechanics deep.</li>
-<li><a href="/blog/landlord-tax-essentials/serviced-accommodation-bpr-eligibility-pawson-test">Serviced accommodation BPR eligibility Pawson test</a>. SA qualifying-fact-pattern deep.</li>
+<li><a href="/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test">Serviced accommodation BPR eligibility Pawson test</a>. SA qualifying-fact-pattern deep.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge">IHT CLT property discretionary trust 20% entry charge</a>. CLT-into-trust route deep.</li>
-<li><a href="/blog/landlord-tax-essentials/fic-vs-discretionary-trust-property-comparison">FIC vs discretionary trust property comparison</a>. Wrapper comparison.</li>
+<li><a href="/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison">FIC vs discretionary trust property comparison</a>. Wrapper comparison.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT property investors decision framework</a>. Broad IHT decision pillar.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance tax rental property UK guide</a>. Rental-portfolio IHT comprehensive.</li>
 <li><a href="/blog/landlord-tax-essentials/agricultural-relief-for-inheritance-tax-key-benefits">Agricultural relief for inheritance tax key benefits</a>. APR pillar sibling.</li>

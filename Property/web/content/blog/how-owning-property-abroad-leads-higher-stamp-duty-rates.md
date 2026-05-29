@@ -163,12 +163,12 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A17. Worldwide-property-ownership 
 <h2>Related pages on this site</h2>
 
 <ul>
-<li>Our <a href="/blog/property-types-and-specialist-tax/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules">second-home SDLT additional dwellings surcharge page</a> covers the domestic-UK spouse-aggregation mechanics in depth.</li>
+<li>Our <a href="/blog/landlord-tax-essentials/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules">second-home SDLT additional dwellings surcharge page</a> covers the domestic-UK spouse-aggregation mechanics in depth.</li>
 <li>Our <a href="/blog/property-types-and-specialist-tax/labour-plans-stamp-duty-hike-for-overseas-buyers">Labour plans stamp duty hike for overseas buyers page</a> covers the proposed policy direction on the non-resident surcharge.</li>
 <li>Our <a href="/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers">applicable SDLT rates for first-time buyers page</a> covers the current FTB rate table and the 1 April 2025 reversion in detail.</li>
 <li>Our <a href="/blog/property-types-and-specialist-tax/first-time-buyer-relief-benefits-and-eligibility-requirements">first-time buyer relief eligibility page</a> covers the Schedule 6ZA worldwide-property test, the joint-purchase rule, and the intention-to-occupy test.</li>
 <li>Our <a href="/blog/property-types-and-specialist-tax/first-time-buyer-relief-understanding-tax-credits-and-deductions">first-time buyer relief and tax credits page</a> addresses US-vocabulary mappings for cross-border buyers.</li>
-<li>Our <a href="/blog/property-types-and-specialist-tax/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> covers the wider pattern of speculative claim marketing.</li>
+<li>Our <a href="/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> covers the wider pattern of speculative claim marketing.</li>
 </ul>
 
 <h2>Statutory references</h2>

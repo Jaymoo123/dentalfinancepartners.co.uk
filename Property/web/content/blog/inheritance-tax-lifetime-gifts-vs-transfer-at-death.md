@@ -181,7 +181,7 @@ faqs:
 
 <p>FA 1986 s.102 catches lifetime gifts where the donor reserves a benefit. The most common amateur failure: gift the family home to the children, continue to live there rent-free, "wait seven years". The gift fails as a GROB; the property stays in the estate at death value; the seven-year clock never starts.</p>
 
-<p>Statutory carve-outs survive (full market rent under FA 1986 Sch 20 para 6(1)(a); shared-occupation undivided-share gift under s.102B(4)), but the carve-outs are narrow and disciplined. Most amateur plans fail. For the GROB depth see our <a href="/blog/landlord-tax-essentials/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a> page and the <a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">gift with reservation of benefit</a> entry-tier orientation.</p>
+<p>Statutory carve-outs survive (full market rent under FA 1986 Sch 20 para 6(1)(a); shared-occupation undivided-share gift under s.102B(4)), but the carve-outs are narrow and disciplined. Most amateur plans fail. For the GROB depth see our <a href="/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a> page and the <a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">gift with reservation of benefit</a> entry-tier orientation.</p>
 
 <h2>The lifetime exemptions stack</h2>
 
@@ -228,10 +228,10 @@ faqs:
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance tax rental property UK guide</a>. Rental portfolio comprehensive.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios">IHT residence nil rate band £2m taper property portfolios</a>. RNRB taper deep.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge">IHT CLT property discretionary trust 20% entry charge</a>. CLT-into-trust depth.</li>
-<li><a href="/blog/landlord-tax-essentials/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a>. GROB statute walkthrough.</li>
+<li><a href="/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics">GROB s.102 family home shared occupation s.102B UK mechanics</a>. GROB statute walkthrough.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact">April 2026 BPR and APR cap property impact</a>. 2026 reform mechanics.</li>
 <li><a href="/blog/landlord-tax-essentials/maximising-business-relief-to-reduce-inheritance-tax">Maximising business relief to reduce inheritance tax</a>. BPR planning pillar.</li>
-<li><a href="/blog/landlord-tax-essentials/cgt-inherited-rental-property-calculation-uk">CGT inherited rental property calculation UK</a>. CGT death uplift mechanic.</li>
+<li><a href="/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk">CGT inherited rental property calculation UK</a>. CGT death uplift mechanic.</li>
 <li><a href="/blog/landlord-tax-essentials/inheritance-tax-a-brief-summary">Inheritance tax: a brief summary</a>. Top-of-funnel IHT orientation.</li>
 <li><a href="/blog/landlord-tax-essentials/gift-with-reservation-of-benefit">Gift with reservation of benefit</a>. GROB entry-tier orientation.</li>
 <li><a href="/blog/landlord-tax-essentials/inheriting-a-house-in-the-uk">Inheriting a house in the UK</a>. Beneficiary perspective.</li>

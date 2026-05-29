@@ -104,7 +104,7 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A14. Single-case-analysis page on 
 <li><strong>Leasehold-with-easement sub-line:</strong> Bonsu v HMRC [2024] UKFTT 158 (TC) and Sexton v HMRC [2023] UKFTT 73 (TC). FTT held a communal-garden easement subsisting for the benefit of a leasehold flat is itself residential property under s.116(1)(c) and the lease-plus-easement is a single residential transaction.</li>
 </ul>
 
-<p>Across all four sub-lines, the FTT has consistently narrowed the scope for mixed-use treatment. The wider doctrine is summarised on our <a href="/blog/property-types-and-specialist-tax/sdlt-mixed-use-property-classification">SDLT mixed-use property classification page</a>. Hortons Hall v HMRC, a separate FTT decision on the grounds-classification sub-line involving a substantial estate fact pattern, is covered on our <a href="/blog/property-types-and-specialist-tax/horton-hall-sdlt-case-residential-vs-non-residential-dispute">Hortons Hall case analysis page</a>.</p>
+<p>Across all four sub-lines, the FTT has consistently narrowed the scope for mixed-use treatment. The wider doctrine is summarised on our <a href="/blog/landlord-tax-essentials/sdlt-mixed-use-property-classification">SDLT mixed-use property classification page</a>. Hortons Hall v HMRC, a separate FTT decision on the grounds-classification sub-line involving a substantial estate fact pattern, is covered on our <a href="/blog/property-types-and-specialist-tax/horton-hall-sdlt-case-residential-vs-non-residential-dispute">Hortons Hall case analysis page</a>.</p>
 
 <h2>The numerical incentive for taxpayers to push a mixed-use argument</h2>
 
@@ -149,7 +149,7 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A14. Single-case-analysis page on 
 <li>Take independent advice from a chartered tax adviser or solicitor with SDLT specialism.</li>
 <li>Confirm the FTT case-law position (Bonsu and Sexton on the leasehold-with-easement sub-line; the wider Hyman / Suterwalla / Hortons Hall trajectory on the broader s.116 boundary).</li>
 <li>Confirm the conveyancer's original SDLT return position and check whether there is any genuinely commercial easement attached to the lease (rare on standard leasehold flats).</li>
-<li>Read our <a href="/blog/property-types-and-specialist-tax/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> for the wider pattern of speculative claim marketing.</li>
+<li>Read our <a href="/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> for the wider pattern of speculative claim marketing.</li>
 </ol>
 
 <aside>

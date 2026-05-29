@@ -99,7 +99,7 @@ faqs:
 <li><strong>£1m lifetime limit.</strong> BADR can be claimed multiple times across an individual's life, but the cumulative qualifying gain capped at £1m. Above the cap, the standard 18 per cent / 24 per cent rates apply.</li>
 </ul>
 
-<p>For most landlords, BADR is unavailable: the let property is investment, not trade. The exceptions are narrow: owner-occupied trading premises (a shop owner selling the shop they trade from); pre-abolition FHL disposals (covered by the grandfathered FHL BADR regime in our <a href="/blog/wave6-capital-allowances/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-April-2025 grandfathered claims</a> page); the rare serviced-accommodation operation that crosses the Pawson trading threshold.</p>
+<p>For most landlords, BADR is unavailable: the let property is investment, not trade. The exceptions are narrow: owner-occupied trading premises (a shop owner selling the shop they trade from); pre-abolition FHL disposals (covered by the grandfathered FHL BADR regime in our <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-April-2025 grandfathered claims</a> page); the rare serviced-accommodation operation that crosses the Pawson trading threshold.</p>
 
 <h2>Rollover relief, the trading-asset requirement that catches most landlords</h2>
 
@@ -127,13 +127,13 @@ faqs:
 <p>The capital allowances reduce taxable rental profit during ownership. On disposal, two adjustments happen:</p>
 
 <ul>
-<li><strong>Balancing adjustment under CAA 2001.</strong> The disposal value of qualifying assets is compared with the written-down value remaining in the pool. Where disposal value exceeds written-down value, a balancing charge brings the excess back into taxable profits. Where disposal value falls short, a balancing allowance gives a further deduction. The balancing adjustment is computed for each pool separately (main pool, special-rate pool, single-asset pools, SBA). Detail in our <a href="/blog/wave6-capital-allowances/balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics">balancing allowance and balancing charge</a> page.</li>
+<li><strong>Balancing adjustment under CAA 2001.</strong> The disposal value of qualifying assets is compared with the written-down value remaining in the pool. Where disposal value exceeds written-down value, a balancing charge brings the excess back into taxable profits. Where disposal value falls short, a balancing allowance gives a further deduction. The balancing adjustment is computed for each pool separately (main pool, special-rate pool, single-asset pools, SBA). Detail in our <a href="/blog/property-types-and-specialist-tax/balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics">balancing allowance and balancing charge</a> page.</li>
 <li><strong>CGT base-cost adjustment under TCGA 1992 s.41.</strong> The net capital allowances claimed (after any balancing-adjustment recapture) reduce the CGT base cost of the property, increasing the chargeable gain on disposal. The mechanism prevents double relief: the same expenditure cannot reduce both income tax (through allowances) and CGT (through base cost) for the same period.</li>
 </ul>
 
-<p>For SBA specifically, the legislation provides that SBA claimed during ownership reduces the CGT base cost dollar-for-dollar on disposal. This is the main reason SBA, despite providing a steady 3 per cent annual deduction during ownership, is often less generous after disposal than it looks. Detail in our <a href="/blog/wave6-capital-allowances/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">SBA 3 per cent claim mechanics</a> page.</p>
+<p>For SBA specifically, the legislation provides that SBA claimed during ownership reduces the CGT base cost dollar-for-dollar on disposal. This is the main reason SBA, despite providing a steady 3 per cent annual deduction during ownership, is often less generous after disposal than it looks. Detail in our <a href="/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">SBA 3 per cent claim mechanics</a> page.</p>
 
-<p>The s.198 fixtures election that allocates the price of fixtures between buyer and seller at acquisition affects both sides' capital allowances pools and the eventual CGT base cost calculation. Getting the election right at acquisition is one of the highest-leverage moves on commercial property tax planning; getting it wrong can prevent the buyer from claiming any allowances at all. Detail in our <a href="/blog/wave6-capital-allowances/commercial-property-fixtures-claim-s198-election-purchase-mechanics">commercial property fixtures s.198 election</a> page.</p>
+<p>The s.198 fixtures election that allocates the price of fixtures between buyer and seller at acquisition affects both sides' capital allowances pools and the eventual CGT base cost calculation. Getting the election right at acquisition is one of the highest-leverage moves on commercial property tax planning; getting it wrong can prevent the buyer from claiming any allowances at all. Detail in our <a href="/blog/property-types-and-specialist-tax/commercial-property-fixtures-claim-s198-election-purchase-mechanics">commercial property fixtures s.198 election</a> page.</p>
 
 <h2>SIPP and SSAS commercial property</h2>
 
@@ -146,7 +146,7 @@ faqs:
 <li><strong>Residential property is broadly prohibited.</strong> FA 2004 Schedule 29A imposes the unauthorised payments charge on a SIPP or SSAS holding 'taxable property', which includes residential dwellings. The charge can reach 70 per cent of the value of the residential property and effectively prevents residential ownership in pension schemes.</li>
 </ul>
 
-<p>The SIPP/SSAS commercial route is particularly attractive for an owner-occupied commercial property used by the member's trading company: the company pays rent to the SIPP (deductible against trading profits), the rent grows the pension pot tax-free, the property's eventual disposal is CT-free within the scheme, and tax only arises on drawdown. The detailed mechanics, including the FA 2004 Schedule 29A taxable-property definitions, sit in our <a href="/blog/wave7-regulatory/sipp-ssas-commercial-property-taxable-property-fa-2004-sch-29a-mechanics">SIPP/SSAS commercial property</a> page.</p>
+<p>The SIPP/SSAS commercial route is particularly attractive for an owner-occupied commercial property used by the member's trading company: the company pays rent to the SIPP (deductible against trading profits), the rent grows the pension pot tax-free, the property's eventual disposal is CT-free within the scheme, and tax only arises on drawdown. The detailed mechanics, including the FA 2004 Schedule 29A taxable-property definitions, sit in our <a href="/blog/incorporation-and-company-structures/sipp-ssas-commercial-property-purchase-mechanics-landlord-pension-fund">SIPP/SSAS commercial property</a> page.</p>
 
 <h2>Companies holding commercial property: CT at 25 per cent</h2>
 
@@ -270,7 +270,7 @@ faqs:
 
 <h2>The 60-day reporting asymmetry</h2>
 
-<p>The 60-day CGT on UK property reporting service applies only to disposals of UK residential property by UK-resident individuals where CGT is due. UK residents disposing of UK commercial property report only on Self Assessment, with payment due by 31 January following the tax year. Non-resident individuals, by contrast, file the 60-day return for every UK land disposal (residential, commercial or indirect) regardless of whether tax is due. The detailed mechanics are in our <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines</a> guide and our <a href="/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT</a> page respectively.</p>
+<p>The 60-day CGT on UK property reporting service applies only to disposals of UK residential property by UK-resident individuals where CGT is due. UK residents disposing of UK commercial property report only on Self Assessment, with payment due by 31 January following the tax year. Non-resident individuals, by contrast, file the 60-day return for every UK land disposal (residential, commercial or indirect) regardless of whether tax is due. The detailed mechanics are in our <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines</a> guide and our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT</a> page respectively.</p>
 
 <h2>Records to keep</h2>
 
@@ -298,21 +298,21 @@ faqs:
 <li>Headline rates: <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates on residential property 2026/27</a> (the unified rate explainer)</li>
 <li>Calculation walkthrough: <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">CGT calculation step-by-step</a></li>
 <li>60-day reporting: <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines</a></li>
-<li>Non-resident reporting: <a href="/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT</a></li>
+<li>Non-resident reporting: <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT</a></li>
 <li>Rollover relief depth: <a href="/blog/capital-gains-tax/rollover-relief-property-landlords">rollover relief for property landlords</a></li>
 <li>PRR mechanics: <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">PRR for landlords</a></li>
 <li>Capital allowances mechanics:
   <ul>
-  <li><a href="/blog/wave6-capital-allowances/balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics">Balancing allowance and balancing charge on disposal</a></li>
-  <li><a href="/blog/wave6-capital-allowances/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">SBA 3 per cent claim mechanics</a></li>
-  <li><a href="/blog/wave6-capital-allowances/full-expensing-50-percent-fya-commercial-property-spvs-mechanics-fa-2023">50 per cent first-year allowance for commercial property SPVs</a></li>
-  <li><a href="/blog/wave6-capital-allowances/commercial-property-fixtures-claim-s198-election-purchase-mechanics">Commercial property fixtures s.198 election</a></li>
-  <li><a href="/blog/wave6-capital-allowances/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-April-2025 grandfathered claims</a></li>
+  <li><a href="/blog/property-types-and-specialist-tax/balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics">Balancing allowance and balancing charge on disposal</a></li>
+  <li><a href="/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">SBA 3 per cent claim mechanics</a></li>
+  <li><a href="/blog/property-types-and-specialist-tax/full-expensing-50-percent-fya-commercial-property-spvs-mechanics-fa-2023">50 per cent first-year allowance for commercial property SPVs</a></li>
+  <li><a href="/blog/property-types-and-specialist-tax/commercial-property-fixtures-claim-s198-election-purchase-mechanics">Commercial property fixtures s.198 election</a></li>
+  <li><a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL post-April-2025 grandfathered claims</a></li>
   </ul>
 </li>
-<li>Trust holdover blocking: <a href="/blog/wave6-trusts/settlor-interested-trust-iht-s49-1a-cgt-s169b-holdover-mechanics-blocking">settlor-interested trust holdover blocking</a></li>
-<li>Pension scheme angle: <a href="/blog/wave7-regulatory/sipp-ssas-commercial-property-taxable-property-fa-2004-sch-29a-mechanics">SIPP/SSAS commercial property</a></li>
-<li>VAT on commercial: <a href="/blog/vat-and-property/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT option to tax on commercial property</a></li>
+<li>Trust holdover blocking: <a href="/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules">settlor-interested trust holdover blocking</a></li>
+<li>Pension scheme angle: <a href="/blog/incorporation-and-company-structures/sipp-ssas-commercial-property-purchase-mechanics-landlord-pension-fund">SIPP/SSAS commercial property</a></li>
+<li>VAT on commercial: <a href="/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation">VAT option to tax on commercial property</a></li>
 <li>Income tax differential: Section 24 finance cost restriction guide (residential only)</li>
 <li>Corporate structure: <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a></li>
 </ul>

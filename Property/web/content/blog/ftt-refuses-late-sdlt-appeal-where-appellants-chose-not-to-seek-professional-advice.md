@@ -147,7 +147,7 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A15. Procedural-case-analysis page
 <li>Check whether the 30-day Schedule 10 paragraph 35 appeal window is still open. If not, evaluate the Martland route only with a substantive obstacle-based reason for delay (not a no-advice or merits-re-evaluation reason).</li>
 <li>Check whether the four-year Schedule 10 paragraph 34 overpayment-relief window is still open. Most refund-claim-firm-driven scenarios sit here, not on the appeal route.</li>
 <li>Take independent advice from a chartered tax adviser or solicitor with SDLT specialism before paying any contingent fee.</li>
-<li>Read our <a href="/blog/property-types-and-specialist-tax/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> for the wider pattern of speculative claim marketing.</li>
+<li>Read our <a href="/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid">SDLT refund scams page</a> for the wider pattern of speculative claim marketing.</li>
 </ol>
 
 <h2>What to do when an HMRC SDLT decision lands and the 30 days has not yet expired</h2>
