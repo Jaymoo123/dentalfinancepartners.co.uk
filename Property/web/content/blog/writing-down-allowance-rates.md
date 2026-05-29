@@ -146,7 +146,7 @@ imageCredit:
 
 <p>For commercial property investments, capital allowances are more widely available, including on integral features and the structures and buildings allowance. If you own commercial property, you should ensure you are claiming all available relief.</p>
 
-<p>For property developers, the position is different again. Development activities may be treated as trading, meaning different capital allowances rules apply. You can read our <a href="/blog/property-investment-tax-uk-complete-guide-2026">complete guide to property investment tax</a> for more details on how different property activities are taxed.</p>
+<p>For property developers, the position is different again. Development activities may be treated as trading, meaning different capital allowances rules apply. You can read our <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">complete guide to property investment tax</a> for more details on how different property activities are taxed.</p>
 
 <h2>Interaction with Section 24</h2>
 

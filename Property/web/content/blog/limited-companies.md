@@ -351,7 +351,7 @@ Standard medium-cost lever for owner-operators with rental profits above PA.</li
 <li><a href="/blog/incorporation-and-company-structures/incorporating-an-hmo-into-a-limited-company-pros-and-cons">Incorporating an HMO into a limited company: pros and cons</a></li>
 <li><a href="/blog/incorporation-and-company-structures/incorporating-hmo-portfolio-to-limited-company">Incorporating an HMO portfolio to a limited company (mechanics)</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant">HMO tax guide: rental income and deductions</a></li>
-<li><a href="/blog/incorporation-and-company-structures/hmo-capital-allowances-multi-tenant-landlords-claim">HMO capital allowances: multi-tenant landlords' claim</a></li>
+<li><a href="/blog/property-types-and-specialist-tax/hmo-capital-allowances-multi-tenant-landlords-claim">HMO capital allowances: multi-tenant landlords' claim</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property">HMO common-parts capital allowances</a></li>
 </ul>
 

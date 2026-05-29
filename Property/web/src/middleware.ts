@@ -338,6 +338,9 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {
+  // Track 2 batch 3 collapse (2026-05-30): landlord-expenses-allowable -> landlord-tax-deductions.
+  // Guard ALLOW: canonical dominates (84 impr/pos 53/61 inbound vs source 30 impr/pos 80/4 inbound). Source .md removed.
+  "landlord-expenses-allowable-uk-2026": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
   // Track 2 CityService cluster-collapse (2026-05-29): 8 weak/duplicate pages merged
   // into 2 canonicals after their query coverage was lifted in first (lossless merge).
   "property-specialist-accountant-london": "/blog/property-accountant-services/london-property-accountant",

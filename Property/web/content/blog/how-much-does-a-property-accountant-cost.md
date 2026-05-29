@@ -179,6 +179,6 @@ faqs:
 
 <h2>Related Reading</h2>
 <ul>
-<li><a href="/blog/property-accountant-services/property-accountant-services">Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords</a></li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">When to Hire a Property Accountant: A UK Landlord's Guide</a></li>
 </ul>

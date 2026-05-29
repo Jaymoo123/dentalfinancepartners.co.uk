@@ -26,7 +26,7 @@ faqs:
 
 <h2>What Are Property Management Accounting Services?</h2>
 <p><strong>Property management accounting services</strong> encompass the full range of financial and tax services specifically designed for property investors. These go beyond general accounting to address the unique challenges landlords face, from Section 24 mortgage interest restrictions to capital gains tax planning.</p>
-<p>A specialist <a href="/blog/property-accountant-services/property-accountant-services">property accountant</a> understands the intricacies of rental income reporting, allowable expense claims, and the timing of capital improvements versus repairs. They also stay current with legislative changes that could impact your portfolio's profitability.</p>
+<p>A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> understands the intricacies of rental income reporting, allowable expense claims, and the timing of capital improvements versus repairs. They also stay current with legislative changes that could impact your portfolio's profitability.</p>
 <h3>Core Service Areas</h3>
 <ul>
 <li><strong>Annual tax return preparation</strong> – Ensuring all rental income and allowable expenses are correctly reported</li>
