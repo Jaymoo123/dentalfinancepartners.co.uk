@@ -55,7 +55,18 @@ Invoke a workflow: `Workflow({scriptPath, args:{...}})`. Workflows write pages t
 - Rewrite-writer hardened: rewrite stage returns minimal payload (StructuredOutput flakiness fixed); verify stage reads the saved file as the gate.
 - **CITYSERVICE CLUSTER COMPLETE (47/47): 8 collapse + 13 Tier-1 full + 26 Tier-2 refresh, all deployed + monitored.** Tier-2A commit `27ec789e`, Tier-2B commit `7eb620c8`. Recurring fixes applied by verify+manager: CGT 24% cite = Finance (No.2) Act 2024 not FA 2024 (cambridge/coventry/aberdeen); FA 2026 enacted-not-awaiting framing (belfast/how-to-become/ipswich); SCOTLAND - 22/42/47 are rest-of-UK, Scottish property rates set by Holyrood per FA2026 s.8/Sch2 (edinburgh/aberdeen fixed; glasgow/dundee already correct; reading "all UK landlords" softened); newcastle CGT attribution (wrong Act+date) corrected to plain current-rate statement.
 - **PARKED corpus-quality sweeps** (do as dedicated reasoning passes, not blanket script): (1) CGT 18/24 Act-attribution consistency across the corpus - safe pattern is state current rates, attribute carefully (residential 24% = F(No.2)A 2024 c.12 from 6 Apr 2024; main rates aligned 18/24 by FA 2025 from 30 Oct 2024) or omit the Act; newcastle FAILED on this, several others had advisories. (2) FA2024->F(No.2)A2024 same family. (3) non-Track-2 pricing-leak pages (~half of 108; e.g. nottingham flagged by norwich verify).
-- NEXT CLUSTER: Incorporation(35)+CGT(7) rewrite-heavy; Section24(27)+CapitalAllowances(21) collapse-heavy (run triage -> collapse-verify(merge) -> apply-lifts, like CityService collapses). VATcalc(4) collapse. Then smaller clusters.
+- NEXT CLUSTERS: Incorporation(35) rewrite-heavy; Section24(27)+CapitalAllowances(21) collapse-heavy; VATcalc(4) collapse. Then smaller (MTD8/NonResident3/FHL5/SDLT1/IHT1).
+
+## CGT cluster triage (2026-05-29) - IN PROGRESS
+7 pages -> 6 redirect-collapse + 1 rewrite. Collapse pairs (source -> terminal canonical; verify-merge then apply):
+- tax-sell-rental-property-uk (240impr/pos37, weak dup) -> capital-gains-tax-property-sale-uk-2026-rates-allowances (560impr/pos5.7)
+- cgt-selling-buy-to-let-property-calculation-guide -> cgt-calculation-selling-buy-to-let-property-step-by-step
+- property-capital-gains-tax-calculator -> cgt-calculation-selling-buy-to-let-property-step-by-step
+- cgt-selling-multiple-properties-same-year -> reduce-cgt-property-disposal-uk
+- property-improvements-reduce-cgt-enhancement-expenditure -> reduce-cgt-property-disposal-uk
+- non-resident-cgt-selling-uk-property-overseas-guide -> non-resident-cgt-uk-property-rates-reporting
+REWRITE: cgt-record-keeping-property-sales-what-to-save-how-long (invisible, distinct intent, no stronger canonical).
+Next steps: track2_collapse_verify.wf.js on the 6 pairs -> track2_apply_lifts.wf.js for any confirm-with-lift -> middleware DUPLICATE_REDIRECTS + remove sources + collapse-monitor -> rewrite-writer on cgt-record-keeping -> build -> deploy -> monitored_pages. (Canonicals are all Phase-3/2026-05-21 rewrites, strong.)
 - Per-batch loop: workflow -> read compact audits -> fix pass-with-fixes (factual, manager-direct) -> build -> commit (rewrites + any markup) -> deploy -> insert monitored_pages (rewrite_type) at deploy. Keep batches at 13 so the tree never holds a huge uncommitted set (compaction-safe).
 - AFTER CityService: next clusters via triage->engine. Section24(27) + CapitalAllowances(21) are collapse-heavy (severe self-cannibalisation, mostly redirect-collapse with query-coverage MERGE per track2_collapse_verify + track2_apply_lifts). Then CGT(7) + Incorporation(35) rewrites.
 - Then the other clusters via the same triage->engine: CGT(7), Incorporation(35), CapitalAllowances(21, collapse-heavy),
