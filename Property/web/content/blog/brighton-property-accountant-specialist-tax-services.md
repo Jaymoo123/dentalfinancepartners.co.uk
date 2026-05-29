@@ -5,106 +5,110 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Brighton Property Accountant: Specialist Tax Services"
-metaDescription: "Specialist property accountant Brighton services for landlords. Expert tax advice, Section 24 planning, and MTD compliance for local property investors."
-altText: "Brighton property accountant reviewing rental property tax documents with local landlord client"
+metaTitle: "Brighton Property Accountant | HMO, Article 4 & S24 Tax"
+metaDescription: "Specialist property accountant help for Brighton landlords: city-wide HMO licensing and Article 4, Section 24, MTD from April 2026 and CGT planning explained."
+altText: "Brighton property accountant reviewing rental property tax documents with a local landlord client"
 image: ""
 h1: "Why Do Brighton Landlords Need a Specialist Property Accountant?"
-summary: "Brighton's property market presents unique challenges for landlords, from coastal property regulations to high rental yields. Specialist property accountants help navigate complex tax rules and maximise returns."
+summary: "Brighton landlords face a distinctive mix of city-wide HMO licensing, an Article 4 direction across the whole city, student-let demand and high property values. A specialist property accountant helps you handle Section 24, Making Tax Digital from April 2026 and capital gains planning correctly."
 schema: ""
 faqs:
   - question: "Do I need a specialist property accountant in Brighton, or will any accountant do?"
-    answer: "A specialist property accountant understands the complex tax rules affecting landlords, including Section 24 restrictions, capital gains planning, and upcoming changes like separate property income tax rates from 2027. General accountants often lack this specific expertise, potentially missing tax-saving opportunities or making compliance errors."
-  - question: "How much does a property accountant cost in Brighton?"
-    answer: "Brighton property accounting fees typically range from £150-£400 monthly for landlords with 3-10 properties, depending on complexity. This includes bookkeeping, tax returns, and basic advice. Specialist services like incorporation planning or capital gains calculations may cost additional fees but often deliver substantial tax savings that justify the investment."
-  - question: "What services should a Brighton property accountant provide?"
-    answer: "A comprehensive property accountant should provide monthly bookkeeping, annual tax return preparation, quarterly MTD submissions (from 2026), strategic tax planning advice, incorporation analysis, capital gains calculations, and compliance monitoring. They should also understand Brighton's local property market and regulations affecting tax treatment."
-  - question: "When should Brighton landlords consider incorporation of their property business?"
-    answer: "Incorporation typically becomes beneficial for Brighton landlords with substantial portfolios facing higher-rate income tax. With property income tax rates increasing to 22% basic and 42% higher rate from 2027, incorporation planning becomes even more important. Professional modelling helps determine whether the long-term savings justify upfront incorporation costs and ongoing complexity."
+    answer: "A specialist understands the tax rules that actually move the needle for landlords: the Section 24 finance-cost restriction, the abolition of the Furnished Holiday Lettings regime from April 2025, Making Tax Digital for Income Tax, capital gains on residential disposals and the separate property-income tax rates that take effect from April 2027. A good general accountant can file a return, but property specialism is where compliance errors and missed planning opportunities are avoided. For a fuller checklist, see our guide to choosing a property accountant."
+  - question: "How are Brighton HMOs taxed differently from a standard buy-to-let?"
+    answer: "An HMO is taxed as a UK property business in the same way as a standard let, but the day-to-day accounting is more involved. Communal-area costs, furnishings, utilities included in the rent and per-room repairs all need careful allocation, and capital allowances can apply to qualifying plant and machinery in the common parts. Licensing fees, where they are revenue in nature, are generally allowable. Brighton's city-wide additional licensing and Article 4 direction make accurate record-keeping especially important."
+  - question: "Does Section 24 affect Brighton landlords?"
+    answer: "Yes. Section 24 is fully in force. You can no longer deduct residential mortgage interest as an expense; instead you receive a basic-rate (20%) tax reducer. Because Brighton property values, and therefore typical mortgage sizes, are high, the restriction can push landlords into higher-rate territory and reduce the value of relief. Our complete Section 24 guide explains the calculation step by step."
+  - question: "When does Making Tax Digital start for Brighton landlords?"
+    answer: "Making Tax Digital for Income Tax is being phased in by qualifying income. It applies from 6 April 2026 for landlords and sole traders with qualifying income over £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. It requires digital records and quarterly updates to HMRC. Given Brighton rents, many active landlords fall within the first phase."
+  - question: "I used to run a Brighton holiday let. What changed?"
+    answer: "The Furnished Holiday Lettings regime was abolished from 6 April 2025. Short-term and holiday lets are now taxed as an ordinary UK property business, which removes the old FHL advantages such as capital allowances on furniture, business-asset capital gains reliefs and the treatment of profits as relevant earnings for pension purposes. Many Brighton seafront and city-centre operators have reviewed their structure as a result. See our guide on the FHL abolition for the detail."
+  - question: "What capital gains tax applies when I sell a Brighton rental?"
+    answer: "Gains on residential property are taxed at 18% within the basic-rate band and 24% above it, after deducting allowable costs and the annual exempt amount, which is £3,000. A UK-resident individual must report and pay the CGT within 60 days of completion using HMRC's Capital Gains Tax on UK property service. Timing of disposals, use of the annual exemption and inter-spouse planning can all affect the outcome. Our complete CGT guide works through the calculation."
+  - question: "Are the 2027 property income tax rates confirmed?"
+    answer: "Yes. Finance Act 2026 enacted separate tax rates for property income from 6 April 2027: 22% at the basic rate, 42% at the higher rate and 47% at the additional rate. These are higher than the current rates on most non-property income, so the change makes structure and timing decisions more important for higher-income Brighton landlords."
+  - question: "Should a Brighton landlord incorporate?"
+    answer: "Incorporation can help some landlords, particularly higher-rate taxpayers with leveraged portfolios who want full relief on finance costs, but it is not right for everyone. Transferring property into a company can trigger capital gains tax and stamp duty land tax, including the additional-dwellings surcharge, so it needs modelling against your specific position. Our complete limited company guide sets out the trade-offs."
+  - question: "Do I have to license my Brighton HMO, and is the fee deductible?"
+    answer: "Brighton and Hove operates city-wide additional HMO licensing alongside the national mandatory scheme, and the city has had an Article 4 direction since 2010 that requires planning permission to change a home into a small HMO anywhere in the city. Whether a licensing fee is tax-deductible depends on whether it is revenue or capital in nature and on the length of the licence; a specialist can confirm the correct treatment for your accounts."
 ---
 
-<p>Brighton's thriving property market creates unique opportunities and challenges for landlords. With average rental yields in some areas exceeding 6% and a strong student population driving demand, many investors are building substantial portfolios. However, managing the tax implications of Brighton property investments requires specialist knowledge that goes beyond general accounting.</p>
+<p>Brighton and Hove has one of the most distinctive rental markets in the south of England, and that shapes how local landlords are taxed. Strong tenant demand from two universities, a city-wide Article 4 direction, additional HMO licensing across the whole authority and high property values combine to make property tax here more involved than in many other towns. A specialist property accountant helps you handle the detail correctly rather than discovering problems at filing time.</p>
 
-<p>A <strong>property accountant Brighton</strong> specialist understands both the local market dynamics and the complex UK tax landscape affecting landlords. From Section 24 mortgage interest restrictions to the upcoming Making Tax Digital requirements, property taxation has become increasingly sophisticated.</p>
+<p>This guide explains the tax issues that matter most to Brighton landlords in 2026, from the Section 24 finance-cost restriction and Making Tax Digital to capital gains and the separate property-income tax rates arriving in 2027.</p>
 
-<h2>Brighton Property Market: Tax Implications for Landlords</h2>
+<h2>What Makes Brighton Property Tax Different</h2>
 
-<p>Brighton's property market presents several factors that make specialist accounting crucial. The city's mix of Victorian terraces, modern developments, and student accommodation creates diverse rental streams, each with different tax treatments.</p>
+<p>Brighton's housing stock runs from Victorian and Regency terraces in the central wards to modern flats near the seafront and station, and student-focused houses in areas such as Moulsecoomb and Bevendean. Each of these creates a different accounting picture. A converted Victorian terrace let room by room is taxed and recorded very differently from a single-let flat, and the city's licensing rules add a compliance layer that affects both your costs and your record-keeping.</p>
 
-<p>Many Brighton landlords operate HMOs targeting the large student population at the University of Brighton and University of Sussex. HMO accounting requires room-by-room profit calculations, careful tracking of communal area expenses, and understanding of business rates implications when properties exceed the domestic threshold.</p>
+<p>Two local features stand out. First, the whole city sits under an Article 4 direction (in place since 2010) that removes permitted-development rights for changing a dwelling house into a small house in multiple occupation, so planning permission is needed to create an HMO almost anywhere in Brighton and Hove. Second, the council runs additional HMO licensing across the entire authority, sitting alongside the national mandatory HMO scheme, and there is a selective licensing scheme covering specific wards. These rules influence what you can let, how you account for licensing costs, and how you plan acquisitions.</p>
 
-<p>The coastal location also attracts short-term letting investors. Following the abolition of Furnished Holiday Lettings tax reliefs from April 2025, many Brighton landlords need advice on restructuring their operations to maintain tax efficiency.</p>
+<p>From a tax perspective, the licensing position matters because it affects which costs you incur and how they are treated. Application fees, professional fees on a purchase, and works carried out to meet licensing or planning conditions can fall on either side of the revenue and capital line, which changes whether they reduce this year's rental profit or form part of your base cost for a future capital gains calculation. A specialist will look at these decisions together rather than in isolation, so that nothing is double-counted or missed when the property is eventually sold.</p>
 
-<h3>Student Accommodation and HMOs</h3>
-<p>Brighton's large student population makes HMO investment attractive, but the tax treatment is complex. HMO landlords must track expenses room-by-room and understand when properties become liable for business rates rather than council tax.</p>
-<p>A typical Brighton student HMO with six bedrooms renting at £120 per week each generates around £37,440 annually. Proper expense allocation between communal areas and individual rooms affects both profit calculations and capital allowances claims.</p>
+<h2>Student Lets and HMOs in Brighton</h2>
 
-<h3>Serviced Accommodation</h3>
-<p>Following the FHL regime abolition, many Brighton operators offering short-term accommodation need to restructure. The key question is whether the operation constitutes property investment or trading business, which affects both current tax treatment and eventual capital gains.</p>
-<p>Brighton's tourism season creates seasonal rental patterns that complicate this distinction. Professional advice helps determine the correct classification and plan for optimal tax treatment.</p>
+<p>The University of Brighton and the University of Sussex underpin sustained demand for shared housing, which is why HMO investment is common across the city. The tax treatment of an HMO is broadly the same as any UK property business, but the bookkeeping is more demanding.</p>
 
-<h3>Commercial Property</h3>
-<p>Brighton's commercial property sector, from seafront shops to business centres, offers different tax advantages. Commercial property isn't subject to Section 24 restrictions, and owners can claim full capital allowances on qualifying fixtures and fittings.</p>
-
-<h2>Section 24 Impact and Mitigation Strategies</h2>
-<p>Section 24 mortgage interest restrictions hit Brighton landlords particularly hard due to higher property prices and correspondingly larger mortgages. A typical Brighton BTL property costing £400,000 with a 75% mortgage faces significant tax increases under the current rules.</p>
-<p>Consider a Brighton landlord with three BTL properties generating £48,000 annual rental income and £18,000 mortgage interest. Under Section 24, they lose higher-rate tax relief on the interest, potentially increasing their tax bill by £3,600 annually compared to the old rules.</p>
-<p>A specialist <strong>buy to let accountant Brighton</strong> can model different scenarios, including potential incorporation strategies to mitigate Section 24's impact. They'll also prepare for the 2027 changes when property income faces separate tax rates of 22% basic rate and 42% higher rate.</p>
-<p>For detailed guidance on how Section 24 affects your rental income calculations, see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a>.</p>
-
-<h2>Making Tax Digital (MTD) Compliance</h2>
-<p>From April 2026, Brighton landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This affects most serious property investors in the area, given typical rental yields.</p>
-<p>MTD requires quarterly digital record-keeping and submissions to HMRC. A Brighton property accountant can set up appropriate software systems and ensure smooth compliance. They'll also handle the transition period, helping landlords avoid penalties during the first year of implementation.</p>
-<p>The digital requirements are particularly challenging for landlords managing multiple property types. A Brighton investor with standard BTLs, student HMOs, and former holiday lets needs sophisticated systems to track different income streams and allowable expenses correctly.</p>
-<p>Learn more about preparing for these changes in our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD compliance guide</a>.</p>
-
-<h2>Incorporation Planning for Brighton Landlords</h2>
-<p>Many Brighton property investors consider incorporation to mitigate Section 24 and access lower corporation tax rates. However, incorporation isn't suitable for everyone and requires careful planning to avoid unnecessary tax charges.</p>
-<p>A Brighton landlord with a £2 million portfolio might save £15,000 annually through incorporation, but the transfer process could trigger substantial stamp duty and capital gains charges. Professional modelling helps determine whether long-term savings justify upfront costs.</p>
-<p>The upcoming 2027 property income tax changes add another layer of complexity. <strong>Landlord tax advice Brighton</strong> specialists can model scenarios under both current and future tax regimes to inform incorporation decisions.</p>
-<p>For comprehensive incorporation guidance, read our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete limited company guide</a>.</p>
-
-<h2>Capital Gains Tax Planning</h2>
-<p>Brighton's strong property price growth creates significant capital gains tax exposure for landlords. With CGT rates at 18% for basic-rate taxpayers and 24% for higher-rate taxpayers, proper planning can save thousands.</p>
-<p>A Brighton landlord selling a property bought for £300,000 and now worth £450,000 faces CGT on the £150,000 gain (minus costs and annual exemption). Strategic timing of disposals and use of available reliefs can minimise the liability.</p>
-<p>Specialist accountants help Brighton landlords plan disposals to utilise annual CGT exemptions, consider principal private residence relief opportunities, and time sales to manage overall tax positions.</p>
-<p>Understanding your CGT position is crucial - our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete CGT guide</a> explains the calculations in detail.</p>
-
-<h2>Choosing and Working with a Brighton Property Accountant</h2>
-<p>While remote accounting services exist, a local Brighton property accountant offers several advantages. When selecting a <strong>property accountant Brighton</strong>, consider these key factors:</p>
 <ul>
-<li><strong>Property specialisation:</strong> Ensure they focus primarily on property taxation rather than general small business accounting.</li>
-<li><strong>Qualification level:</strong> Look for ACA, ACCA, or CTA qualifications with specific property experience.</li>
-<li><strong>Local market knowledge:</strong> Understanding Brighton's specific rental markets, from student areas like Moulsecoomb to prime locations near the seafront, as well as Brighton & Hove Council's licensing requirements.</li>
-<li><strong>Technology approach:</strong> Confirm they use modern cloud-based systems for efficient collaboration and MTD readiness.</li>
-<li><strong>Service scope:</strong> Check whether they provide both compliance work and strategic planning advice.</li>
-<li><strong>Network connections:</strong> Relationships with local solicitors, mortgage brokers, and property professionals for integrated service.</li>
-<li><strong>Face-to-face meetings:</strong> Personal service for complex planning discussions and portfolio reviews.</li>
+<li><strong>Expense allocation.</strong> Utilities, broadband and council tax are often included in the rent, so they sit in the landlord's accounts rather than the tenant's. Communal-area repairs, cleaning and furnishings need to be tracked accurately.</li>
+<li><strong>Capital allowances.</strong> Qualifying plant and machinery in the common parts of an HMO can attract capital allowances, even though such allowances are not available for furniture inside an ordinary single-let dwelling. This is a genuine point of difference that is easy to miss.</li>
+<li><strong>Licensing costs.</strong> Brighton's additional licensing and any mandatory licence carry fees. Whether a fee is deductible depends on its nature and the licence term, so it should be reviewed rather than assumed.</li>
 </ul>
-<p>Ask potential accountants about their experience with Brighton's specific property challenges, from HMO regulations to seafront commercial property issues.</p>
-<p>Our guide on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">choosing a property accountant</a> provides additional selection criteria.</p>
 
-<h3>Cost Considerations</h3>
-<p>Professional property accounting fees in Brighton typically range from £150-£400 monthly for landlords with 3-10 properties, depending on complexity. This includes monthly bookkeeping, tax return preparation, and basic planning advice.</p>
-<p>More complex services like incorporation planning, capital gains calculations, and MTD setup command higher fees but often deliver substantial tax savings. A £2,000 incorporation planning fee might save £10,000+ annually for larger portfolios.</p>
-<p>Brighton landlords should view accounting fees as an investment in tax efficiency rather than a cost. Professional advice typically pays for itself through legitimate tax savings and compliance peace of mind.</p>
-<p>For detailed fee information, see our guide on <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">property accountant costs</a>.</p>
+<p>For a side-by-side comparison of how shared houses and standard lets are taxed, see our <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO vs standard buy-to-let tax comparison</a>.</p>
 
-<h2>The Future of Property Taxation in Brighton</h2>
-<p>Brighton landlords face several upcoming changes that make professional advice increasingly valuable:</p>
-<p><strong>2027 Property Income Tax Changes:</strong> Separate rates of 22% basic and 42% higher rate will apply to property income, potentially increasing tax bills significantly for many Brighton landlords.</p>
-<p><strong>Renters' Rights Act 2025:</strong> Section 21 abolition on commencement 1 May 2026 (per SI 2026/421) changes the risk profile of letting, affecting both insurance costs and potentially investment values.</p>
-<p><strong>Environmental Regulations:</strong> Increasing focus on energy efficiency could require substantial property improvements, affecting both deductible expenses and capital gains calculations.</p>
-<p>A proactive <strong>property accountant Brighton</strong> helps landlords prepare for these changes rather than simply reacting to them when they arrive.</p>
+<h2>Short-Term and Former Holiday Lets</h2>
 
-<h2>Getting Started with Professional Property Accounting</h2>
-<p>Brighton landlords should consider professional accounting advice when their property activities become substantial enough to justify the investment. This typically occurs when:</p>
+<p>Brighton's tourism and conference trade made short-term letting attractive for years, often under the old Furnished Holiday Lettings rules. That regime was abolished from 6 April 2025. Short-term and holiday lets are now taxed as an ordinary UK property business, which means the former FHL advantages no longer apply: capital allowances on furniture, the business-asset capital gains reliefs and the treatment of profits as relevant earnings for pension contributions have all gone.</p>
+
+<p>The practical question for many Brighton operators is now whether their activity is a property business or a genuine trade, because that distinction still affects the correct treatment in some cases. If you ran a seafront or city-centre holiday let, this is worth reviewing carefully. Our guide on the <a href="/blog/landlord-tax-essentials/abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know">abolition of the FHL regime</a> sets out what individual owners need to know.</p>
+
+<h2>Section 24 and Mortgage Interest</h2>
+
+<p>Section 24 is fully in force. Residential landlords can no longer deduct finance costs, including mortgage interest, as an ordinary expense. Instead, relief is given as a basic-rate (20%) tax reducer applied after the tax is calculated.</p>
+
+<p>Because Brighton property prices are high relative to much of the country, mortgages tend to be larger, and the impact of Section 24 is felt more keenly here. The restriction can inflate a landlord's taxable income on paper, push some into the higher-rate band, and reduce the effective value of interest relief. Modelling your position under the current rules is the starting point for any sensible planning. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a> walks through the mechanics.</p>
+
+<h2>Making Tax Digital for Income Tax</h2>
+
+<p>Making Tax Digital for Income Tax (MTD for ITSA) is live and is being phased in by qualifying income:</p>
+
 <ul>
-<li>Gross rental income exceeds £30,000 annually</li>
-<li>The portfolio includes three or more properties</li>
-<li>Different property types create complex accounting requirements</li>
-<li>Incorporation or other restructuring is being considered</li>
-<li>MTD compliance requirements apply</li>
+<li>From 6 April 2026 for landlords and sole traders with qualifying income over £50,000.</li>
+<li>From 6 April 2027 for those above £30,000.</li>
+<li>From 6 April 2028 for those above £20,000.</li>
 </ul>
-<p>Even smaller landlords benefit from professional advice during property acquisition or disposal, when tax planning opportunities are greatest.</p>
-<p>The investment in specialist property accounting typically pays for itself through improved tax efficiency, compliance confidence, and strategic planning that supports long-term wealth building through Brighton property investment.</p>
+
+<p>MTD requires digital record-keeping using compatible software and quarterly updates to HMRC, followed by a final declaration after the tax year. Given typical Brighton rents, many active landlords fall within the first phase from April 2026. Landlords running a mix of standard lets, student HMOs and former holiday lets have the most to gain from getting their systems right early, because each income stream needs to be captured cleanly. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD compliance guide</a> covers how to prepare.</p>
+
+<h2>Capital Gains Tax on Brighton Disposals</h2>
+
+<p>Brighton's long-run price growth means many landlords are sitting on substantial gains. Capital gains tax on residential property is charged at 18% within the basic-rate band and 24% above it, after deducting allowable costs and the annual exempt amount of £3,000.</p>
+
+<p>A UK-resident individual selling a residential rental must report and pay the CGT within 60 days of completion through HMRC's Capital Gains Tax on UK property service, separately from the annual self-assessment return. Planning options that a specialist will consider include the timing of disposals across tax years, making full use of the annual exemption, transfers between spouses or civil partners, and whether any private residence relief applies where a property was once a main home. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete CGT guide</a> explains the calculation in detail.</p>
+
+<h2>Looking Ahead: The 2027 Property Income Rates and Incorporation</h2>
+
+<p>Finance Act 2026 has enacted separate tax rates for property income from 6 April 2027: 22% at the basic rate, 42% at the higher rate and 47% at the additional rate. These are higher than the current rates that apply to most other income, so for higher-income Brighton landlords the change strengthens the case for reviewing how a portfolio is held.</p>
+
+<p>Incorporation is one option that landlords often raise, particularly higher-rate taxpayers with leveraged portfolios who want full relief on finance costs inside a company. It is not automatically beneficial. Moving property into a company can trigger capital gains tax and stamp duty land tax, including the additional-dwellings surcharge, and it adds ongoing administration. The right answer depends on your numbers, your plans and your appetite for complexity, which is exactly the kind of decision worth modelling before acting. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete limited company guide</a> sets out the trade-offs.</p>
+
+<h2>Choosing a Property Accountant in Brighton</h2>
+
+<p>When you are comparing accountants, it helps to focus on a few practical points rather than general assurances:</p>
+
+<ul>
+<li><strong>Property focus.</strong> Look for genuine specialism in landlord and property taxation rather than general small-business work.</li>
+<li><strong>Qualifications.</strong> ACA, ACCA or CTA qualifications, ideally with demonstrable property experience.</li>
+<li><strong>Local awareness.</strong> Familiarity with Brighton specifics such as city-wide additional HMO licensing, the Article 4 direction and student-let patterns near the universities.</li>
+<li><strong>MTD-ready systems.</strong> Use of compatible, cloud-based software so quarterly updates are straightforward.</li>
+<li><strong>Advisory as well as compliance.</strong> The ability to plan ahead, not just file returns after the year has ended.</li>
+</ul>
+
+<p>For a broader selection framework, read our guide on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a>.</p>
+
+<h2>Getting Started</h2>
+
+<p>Professional advice usually becomes worthwhile once your activity is more than a single straightforward let: when you hold several properties, run an HMO, operate a former holiday let, fall within MTD, or are weighing up incorporation or a disposal. Even smaller Brighton landlords benefit from advice at the point of buying or selling, when the planning opportunities are greatest and mistakes are hardest to undo.</p>
+
+<p>If you would like to talk through your own position, you can request a callback using the form on this page and we will connect you with a specialist who works with Brighton landlords.</p>

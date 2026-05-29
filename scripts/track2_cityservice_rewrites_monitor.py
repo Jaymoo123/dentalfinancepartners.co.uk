@@ -78,13 +78,15 @@ def baseline(slug):
 
 def main():
     commit = "--commit" in sys.argv
+    cli = [a for a in sys.argv[1:] if not a.startswith("--")]
+    rewrites = cli if cli else REWRITES
     monitor_until = (datetime.date.fromisoformat(GO_LIVE) + datetime.timedelta(days=MONITOR_DAYS)).isoformat()
     pulled = datetime.datetime.now(datetime.timezone.utc).isoformat()
     existing = {r["slug"] for r in sql(
         f"SELECT slug FROM monitored_pages WHERE site_key='{SITE}' AND slug IN ("
-        + ",".join(esc(s) for s in REWRITES) + ");")}
+        + ",".join(esc(s) for s in rewrites) + ");")}
     rows = []
-    for slug in REWRITES:
+    for slug in rewrites:
         if slug in existing:
             print(f"  SKIP(exists) {slug}"); continue
         clk, imp, pos = baseline(slug)

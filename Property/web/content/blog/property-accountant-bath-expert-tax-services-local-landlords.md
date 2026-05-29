@@ -5,115 +5,130 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Bath: Expert Tax Services for Landlords"
-metaDescription: "Specialist property accountant Bath services for landlords. Section 24 compliance, MTD preparation, CGT planning. Expert tax advice for property investors."
-altText: "Professional property accountant reviewing Bath rental property tax documents and financial statements"
+metaTitle: "Property Accountant Bath | HMO, Section 24 & MTD Help"
+metaDescription: "Specialist property accountant support for Bath landlords: Section 24, MTD for Income Tax from April 2026, CGT at 18%/24%, HMO licensing in B&NES and incorporation."
+altText: "Property accountant reviewing rental tax records for a Bath landlord"
 image: ""
 h1: "Why Do Bath Landlords Need a Specialist Property Accountant?"
-summary: "Bath property investors face unique challenges from Section 24 restrictions to upcoming MTD requirements. A specialist property accountant provides essential tax expertise for the local market."
+summary: "Bath landlords face Section 24, MTD for Income Tax from April 2026, CGT at 18%/24% and the 2027 property income rates. This guide explains where a specialist property accountant adds value in Bath and Bath & North East Somerset."
 schema: ""
 faqs:
   - question: "Do I need a specialist property accountant if I only have one rental property in Bath?"
-    answer: "Yes, even single property landlords benefit from specialist advice. Section 24 restrictions, upcoming MTD requirements from April 2026, and CGT planning on disposal affect all landlords. Bath's high property values make tax efficiency particularly important, and specialist knowledge often pays for itself through legitimate tax savings and compliance support."
-  - question: "How much does a property accountant cost in Bath compared to a general accountant?"
-    answer: "Property specialists typically charge 20-50% more than general accountants, but the expertise often saves more in tax than the additional fees cost. For Bath landlords, where property values and tax implications are significant, specialist knowledge of Section 24, CGT planning, and local market factors usually provides excellent value. The cost varies based on portfolio size and complexity."
-  - question: "When should Bath landlords consider incorporating their property business?"
-    answer: "Consider incorporation when rental profits exceed £20,000-30,000 annually, or when building a growth-focused portfolio. Bath's high property values often mean quicker incorporation benefits. Key factors include your personal tax rate, mortgage interest levels, and growth plans. A property accountant can model scenarios to determine optimal timing for your situation."
-  - question: "What makes Bath's property market different for tax planning purposes?"
-    answer: "Bath's heritage constraints create specific expense categories, high property values amplify Section 24 impacts and CGT exposure, strong capital growth requires careful disposal timing, and university-driven rental patterns affect cash flow planning. Student accommodation and conservation area compliance add complexity that requires local expertise beyond general property tax knowledge."
+    answer: "Often, yes. Even a single let is affected by the Section 24 finance cost restriction, the Making Tax Digital for Income Tax timetable starting 6 April 2026, and Capital Gains Tax when you eventually sell. Bath's high property values tend to push more landlords into higher-rate tax and into Making Tax Digital scope, so getting the treatment right from the first return usually matters more here than in lower-value markets."
+  - question: "When does Making Tax Digital for Income Tax start for Bath landlords?"
+    answer: "Making Tax Digital for Income Tax (MTD for ITSA) is phased in by qualifying income from self-employment and property. It applies from 6 April 2026 where qualifying income is over £50,000, from 6 April 2027 where it is over £30,000, and from 6 April 2028 where it is over £20,000. Qualifying income is gross rents and trading income before expenses, so several Bath landlords with modest profits but higher turnover will still fall within scope."
+  - question: "How does Section 24 affect a higher-rate Bath landlord?"
+    answer: "Under Section 24 you can no longer deduct mortgage interest and other finance costs from rental profit. Instead you receive a basic-rate (20%) tax reducer. For a higher or additional-rate taxpayer this means relief on finance costs is given at 20% rather than at your marginal rate, which raises the effective tax on a geared portfolio. Bath's higher purchase prices usually mean larger mortgages, so the impact is felt more sharply here."
+  - question: "What Capital Gains Tax will I pay when I sell a Bath rental property?"
+    answer: "Capital Gains Tax on residential property is charged at 18% within your remaining basic-rate band and 24% above it, after the annual exempt amount of £3,000 for 2026/27. Where tax is due, UK residents must report and pay through HMRC's UK Property service within 60 days of completion. Private Residence Relief may reduce the gain if the property was ever your main home."
+  - question: "Does the Furnished Holiday Lettings regime still apply to my Bath short-let?"
+    answer: "No. The Furnished Holiday Lettings (FHL) regime was abolished from 6 April 2025. A Bath property let on short stays is now taxed as a standard residential rental business, so the old FHL advantages (full finance cost relief, capital allowances on furnishings and Business Asset Disposal Relief on sale) no longer apply. Capital allowances pooled before abolition can still attract writing-down allowances, which is one area where specialist review pays off."
+  - question: "Do student lets near the University of Bath need an HMO licence?"
+    answer: "A property let to three or more tenants forming more than one household, sharing facilities, is a House in Multiple Occupation. Mandatory HMO licensing applies to larger HMOs across England, and Bath & North East Somerset also operates additional licensing and Article 4 directions in parts of the city affecting HMO use. You should check the current B&NES licensing designations and any planning requirements for your address. Licensing and compliance costs are generally deductible against rental profit."
+  - question: "Should a Bath landlord hold property through a limited company?"
+    answer: "Incorporation removes the Section 24 restriction because companies deduct finance costs in full and pay Corporation Tax on profit. It is not automatically better: transferring existing properties can trigger Capital Gains Tax and Stamp Duty Land Tax, mortgage options differ, and extracting profit is taxed again. Given Bath's high values, the sums involved are large, so the decision should be modelled before you act."
+  - question: "What records will I need to keep once MTD for Income Tax applies?"
+    answer: "You will need to keep digital records of rental income and expenses and send quarterly updates to HMRC using compatible software, followed by a final declaration after the tax year. For Bath landlords with conservation-area maintenance, listed-building works or student-let void periods, setting up the right expense categories early makes the quarterly cycle far smoother."
+  - question: "Can a general accountant handle my Bath rental tax, or do I need a property specialist?"
+    answer: "A general accountant can file a return, but property tax is a moving target: Section 24, the MTD timetable, the post-2024 CGT rates and the property income rates arriving in 2027 all change the answer. A specialist focuses on these rules day to day and on the local Bath picture, from B&NES HMO licensing to conservation-area expenses, which reduces the risk of missed reliefs or compliance errors."
 ---
 
-<p>Bath's thriving property market attracts investors from across the UK, but local landlords face increasingly complex tax challenges. A specialist <strong>property accountant in Bath</strong> provides essential expertise to navigate Section 24 restrictions, prepare for MTD compliance, and optimise tax positions in one of the UK's most competitive rental markets.</p>
-<p>With property values in Bath consistently above national averages and strong rental demand from students, professionals, and tourists, local landlords need accounting expertise that understands both property taxation and the Bath market dynamics.</p>
+<p>Bath is one of the strongest rental markets in the South West, with demand from two universities, a large professional workforce and a steady visitor economy. It is also one of the more demanding markets for tax. High purchase prices, UNESCO World Heritage constraints and a significant student-let sector mean a Bath landlord's tax position is rarely straightforward. A specialist <strong>property accountant in Bath</strong> helps you manage the Section 24 finance cost restriction, prepare for Making Tax Digital, plan for Capital Gains Tax and decide whether incorporation is right for you.</p>
 
-<h2>Understanding Bath's Unique Property Market</h2>
-<p>Bath's property landscape presents unique opportunities and challenges. The city's UNESCO World Heritage status restricts development, maintaining property values but creating specific compliance requirements. Local landlords typically manage a mix of Georgian conversions, student accommodation near the university, and traditional family homes in surrounding areas like Bathwick and Bear Flat.</p>
-<p>A <strong>buy to let accountant in Bath</strong> understands these local dynamics. They recognise that a Victorian terrace conversion in Oldfield Park faces different tax considerations than a purpose-built student block near the University of Bath campus.</p>
-<p>The city's rental market includes significant seasonal variation, particularly in areas popular with tourists. This affects cash flow planning and expense timing — areas where specialist property accounting expertise proves invaluable.</p>
-<p>Bath's property market shows distinct patterns that influence tax strategies:</p>
-<p><strong>Rental Yields:</strong> City centre yields typically range from 4-6%, while suburban areas may achieve 6-8%. This affects cash flow planning and incorporation decisions.</p>
-<p><strong>Capital Growth:</strong> Consistent above-inflation growth creates CGT planning opportunities but requires careful timing of disposals.</p>
-<p><strong>Seasonal Variation:</strong> Tourist demand creates rental fluctuations, particularly in city centre properties, affecting cash flow and expense timing.</p>
-<p><strong>Development Restrictions:</strong> Limited new supply maintains values but creates specific compliance costs for existing properties.</p>
-<p>Understanding these trends helps optimise tax positions and plan for regulatory changes.</p>
+<p>This guide sets out where specialist property tax knowledge matters most for landlords in Bath and the wider Bath &amp; North East Somerset (B&amp;NES) area, and links to our detailed guides on each topic.</p>
 
-<h2>Navigating Section 24 Mortgage Interest Restrictions</h2>
-<p>Section 24 mortgage interest restrictions hit Bath landlords particularly hard due to higher property values and corresponding mortgage levels. With average property prices significantly above national figures, many local landlords carry substantial borrowings.</p>
-<p>Under current rules, mortgage interest relief is capped at the basic rate (20% tax credit), regardless of your marginal tax rate. For a Bath landlord earning £60,000 from employment plus £25,000 rental income, this restriction creates a significant tax burden that generic accountants often miscalculate.</p>
-<p>From April 2027, the situation becomes even more complex when separate property income tax rates apply — 22% basic, 42% higher, and 47% additional rate on rental profits. Local <strong>landlord tax advice in Bath</strong> will be crucial for navigating this transition.</p>
-<p>Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a> explains these restrictions in detail, but Bath-specific factors require local expertise.</p>
-<p>Common mistakes include miscalculating the restrictions or failing to optimise the basic rate tax credit.</p>
+<h2>Section 24: the finance cost restriction for Bath landlords</h2>
 
-<h2>Preparing for Making Tax Digital (MTD) Compliance</h2>
-<p>MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Given Bath's rental yields, most local landlords will fall within scope.</p>
-<p>The compliance burden includes quarterly digital submissions and year-end declarations. For Bath landlords managing multiple properties — perhaps a mix of student lets near the university and traditional BTL properties in residential areas — the record-keeping requirements are substantial.</p>
-<p>A property accountant familiar with Bath's market can implement systems that capture local expense patterns. For example, properties in conservation areas often require specialist maintenance using approved materials and contractors, creating specific documentation requirements for tax relief claims.</p>
-<p>Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD guide for landlords</a> covers the technical requirements, but local implementation requires Bath market knowledge. A common pitfall is delaying preparation, leading to compliance difficulties from April 2026.</p>
+<p>The Section 24 (S24) finance cost restriction is fully in force. You can no longer deduct mortgage interest and other finance costs from your rental profit. Instead, relief is given as a basic-rate (20%) tax reducer, whatever your marginal rate.</p>
 
-<h2>Capital Gains Tax Planning for Property Disposals</h2>
-<p>Bath's strong capital growth creates significant CGT exposure for investors. With property values rising consistently above inflation, many landlords face substantial tax bills when selling.</p>
-<p>CGT rates on residential property are 18% for basic rate taxpayers and 24% for higher rate taxpayers, with only a £3,000 annual exempt amount for 2026/27. For Bath properties appreciating by £50,000-£100,000 over typical holding periods, this represents serious tax liability.</p>
-<p>Strategic planning options include:</p>
+<p>For a higher or additional-rate Bath landlord this matters a great deal. Because Bath property prices sit well above the national average, mortgages tend to be larger, and the gap between deducting interest in full and receiving only a 20% credit is correspondingly wider. Section 24 can also push some landlords into a higher tax band, because rental profit is now calculated before finance costs.</p>
+
+<p>Common errors we see include calculating the tax reducer against the wrong figure, missing the cap where finance costs exceed property profits, and failing to plan around the restriction at all. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24</a> explains the mechanics in full.</p>
+
+<h2>Making Tax Digital for Income Tax is now phasing in</h2>
+
+<p>Making Tax Digital for Income Tax (MTD for ITSA) is live and phasing in by qualifying income:</p>
+
 <ul>
-<li>Timing disposals across tax years to utilise annual exemptions</li>
-<li>Considering spousal transfers to optimise rate bands</li>
-<li>Evaluating incorporation timing for portfolio growth</li>
-<li>Principal Private Residence Relief planning for mixed-use properties</li>
+<li><strong>From 6 April 2026:</strong> qualifying income over £50,000</li>
+<li><strong>From 6 April 2027:</strong> qualifying income over £30,000</li>
+<li><strong>From 6 April 2028:</strong> qualifying income over £20,000</li>
 </ul>
-<p>Bath's premium property market makes <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT planning</a> particularly important, requiring expertise in both tax law and local market conditions. A frequent error is missing opportunities for tax-efficient disposals or failing to consider spousal transfers.</p>
 
-<h2>Evaluating Property Company Structures and Incorporation</h2>
-<p>Many Bath landlords consider incorporation to mitigate Section 24 restrictions. Limited companies aren't subject to mortgage interest restrictions and benefit from corporation tax rates (19% small profits rate up to £50,000 profits, 25% main rate above £250,000, with marginal relief between).</p>
-<p>For Bath investors building significant portfolios, incorporation often makes sense. However, the decision depends on factors including:</p>
+<p>Qualifying income is your gross rental and self-employment turnover before expenses, not your profit. Given Bath's rent levels, many landlords with only a couple of properties will cross the first threshold sooner than they expect. Once in scope you must keep digital records and send quarterly updates to HMRC through compatible software, followed by a final declaration after the tax year.</p>
+
+<p>The practical work is in the set-up. A Bath portfolio that mixes student lets near the University of Bath, period flats in the city centre and family homes in areas such as Oldfield Park or Bear Flat will have different expense patterns and void cycles. Getting the digital bookkeeping structured around those patterns before April makes the quarterly rhythm manageable. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords guide</a> covers the requirements and the timeline in detail.</p>
+
+<h2>Capital Gains Tax when you sell a Bath property</h2>
+
+<p>Bath's long record of capital growth means many landlords face a meaningful Capital Gains Tax (CGT) bill on disposal. The current position is:</p>
+
 <ul>
-<li>Current and projected rental profits</li>
-<li>Personal tax position and other income sources</li>
-<li>Long-term growth plans and exit strategy</li>
-<li>SDLT implications on property transfers</li>
+<li><strong>Rates:</strong> 18% on residential gains within your remaining basic-rate band and 24% above it.</li>
+<li><strong>Annual exempt amount:</strong> £3,000 per person for 2026/27.</li>
+<li><strong>Reporting:</strong> where CGT is due, UK residents must report and pay through HMRC's UK Property service within 60 days of completion.</li>
 </ul>
-<p>Bath's high property values mean incorporation decisions often involve substantial sums. A property accountant can model scenarios and advise on optimal timing.</p>
-<p>Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to BTL companies</a> covers the technical aspects, but Bath-specific factors require local expertise. This is a key consideration for portfolio expansion and growth strategies.</p>
 
-<h2>Specialist Sectors: Student and Heritage Properties</h2>
-<p>The University of Bath and Bath Spa University create strong demand for student accommodation. Many local landlords specialise in this sector, which has specific tax implications.</p>
-<p>Student properties often qualify as HMOs, requiring licensing and creating additional compliance costs that are tax-deductible. The seasonal nature of student lettings affects cash flow and expense timing.</p>
-<p>Key considerations include:</p>
+<p>Planning levers that often help include timing a disposal across tax years to use two annual exemptions, transferring a share to a spouse or civil partner on a no-gain-no-loss basis to use both allowances and both rate bands, and checking whether any period of main-residence occupation gives Private Residence Relief. These choices need to be made before exchange, not after, which is why early advice matters. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on property guide</a> works through the detail.</p>
+
+<h2>Furnished Holiday Lettings and Bath's short-let market</h2>
+
+<p>Bath's visitor economy has long supported short-stay lettings, but the tax treatment has changed. The Furnished Holiday Lettings (FHL) regime was <strong>abolished from 6 April 2025</strong>. A short-let Bath property is now taxed as a standard residential rental business. That means:</p>
+
 <ul>
-<li>Council tax exemption rules for student-occupied properties</li>
-<li>HMO licensing costs and compliance expenses</li>
-<li>Furniture and equipment capital allowances</li>
-<li>Void period planning and expense allocation</li>
+<li>Finance costs fall under the Section 24 restriction (no full deduction).</li>
+<li>The old FHL capital allowances on furniture and equipment are no longer available for new expenditure, though allowances pooled before abolition can still attract writing-down allowances.</li>
+<li>Business Asset Disposal Relief no longer applies on sale of a former FHL.</li>
 </ul>
-<p>With the Furnished Holiday Lettings regime abolished from April 2025, student accommodation tax planning requires updated strategies. Common complications include incorrect treatment of academic year accounting or HMO expense allocation.</p>
-<p>Furthermore, many Bath rental properties fall within conservation areas or are listed buildings. This creates specific expense categories and compliance requirements that affect tax positions.</p>
-<p>Maintenance and improvement works often require:</p>
+
+<p>If you ran a Bath holiday let under the FHL rules, the transition needs careful handling, particularly the treatment of brought-forward losses and pooled allowances. Note also that short lets in Bath can engage planning and licensing rules in their own right, so check the current B&amp;NES position for your address.</p>
+
+<h2>HMO and student lets: licensing in Bath &amp; North East Somerset</h2>
+
+<p>The University of Bath and Bath Spa University create strong, reliable demand for shared student housing. A property let to three or more tenants forming more than one household, sharing facilities such as a kitchen or bathroom, is a House in Multiple Occupation (HMO).</p>
+
+<p>Two layers of rules apply. Mandatory HMO licensing covers larger HMOs across England. On top of that, Bath &amp; North East Somerset operates additional HMO licensing and Article 4 directions in parts of the city, which affect both licensing and planning permission for HMO use. Because these designations are set locally and reviewed periodically, you should check the current B&amp;NES scheme for your specific address rather than relying on general guidance.</p>
+
+<p>From a tax point of view, HMO licensing fees, fire-safety works, mandatory compliance costs and ongoing management are generally deductible against rental profit, and the higher running costs of an HMO change the profit picture compared with a single let. If you are weighing a shared-house strategy, our comparison of <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO versus standard buy-to-let tax</a> is a useful starting point.</p>
+
+<h2>Conservation areas, listed buildings and deductible costs</h2>
+
+<p>Much of Bath's housing stock sits within conservation areas, and many properties are listed. Maintaining these homes can mean using approved materials and specialist contractors, obtaining listed-building consent, and engaging architects or planning consultants. These factors do not change the tax rules, but they do change how costs fall.</p>
+
+<p>The key distinction is between repairs, which are deductible against rental profit, and improvements, which are capital and instead affect the base cost for CGT. Heritage works can blur that line. Like-for-like restoration using traditional materials is usually a repair even where it is expensive, while works that materially upgrade or extend the property are capital. Getting this classification right protects both your annual return and your eventual CGT position.</p>
+
+<h2>Should you incorporate your Bath portfolio?</h2>
+
+<p>Many landlords consider a limited company to escape the Section 24 restriction, since companies deduct finance costs in full and pay Corporation Tax on profit (the small profits rate applies to profits up to £50,000, the main rate above £250,000, with marginal relief between). Incorporation is not automatically the right answer:</p>
+
 <ul>
-<li>Planning consent and listed building consent</li>
-<li>Use of approved contractors and traditional materials</li>
-<li>Enhanced professional fees for architects and planning consultants</li>
-<li>Longer project timelines affecting cash flow</li>
+<li>Transferring existing properties can trigger CGT and Stamp Duty Land Tax, including the higher rates for additional dwellings.</li>
+<li>Company mortgage terms differ from personal buy-to-let lending.</li>
+<li>Profit taken out of the company is taxed again as salary or dividends.</li>
+<li>Section 162 incorporation relief may defer CGT where a genuine property business is transferred, but the bar for that is fact-specific.</li>
 </ul>
-<p>These factors influence the deductibility of expenses and timing of capital allowances claims. A property accountant familiar with Bath's heritage requirements can ensure proper treatment of these costs and help avoid misclassifying improvement works, which can be complex in heritage properties.</p>
 
-<h2>Choosing the Right Property Accountant in Bath</h2>
-<p>When selecting a <strong>property accountant in Bath</strong>, look for:</p>
-<p><strong>Property Tax Specialisation:</strong> General practice accountants often lack current property tax knowledge. Section 24, MTD, and upcoming changes require specialist expertise.</p>
-<p><strong>Local Market Knowledge:</strong> Understanding Bath's property dynamics, rental patterns, and compliance requirements adds significant value beyond pure tax compliance.</p>
-<p><strong>Technology and Systems:</strong> MTD compliance requires digital record-keeping. Your accountant should provide or recommend appropriate systems.</p>
-<p><strong>Proactive Planning:</strong> Look for advisors who provide strategic guidance, not just compliance services. Tax planning opportunities require forward-thinking advice.</p>
-<p><strong>Transparent Pricing:</strong> Understand fee structures upfront. Our <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">guide to property accountant costs</a> helps set expectations.</p>
+<p>Because Bath values are high, the figures involved are large and the decision rewards proper modelling. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">guide to buy-to-let limited companies</a> sets out the trade-offs in full.</p>
 
-<h2>Strategic Investment and Growth Planning</h2>
-<p>Bath's constrained supply and strong demand fundamentals support long-term investment strategies, but tax efficiency is crucial for growth.</p>
-<p>Strategic considerations include:</p>
-<p><strong>Portfolio Expansion:</strong> Balancing tax efficiency with growth targets, particularly considering Section 24 restrictions and incorporation timing.</p>
-<p><strong>Market Positioning:</strong> Choosing between high-yield suburban properties and lower-yield city centre investments based on tax position.</p>
-<p><strong>Exit Planning:</strong> Preparing for eventual disposal through CGT planning and optimal timing strategies.</p>
-<p><strong>Regulatory Changes:</strong> Positioning portfolios for upcoming tax changes, including the 2027 property income tax rates.</p>
-<p>A Bath-based property accountant can model these scenarios and provide tailored strategies for local market conditions.</p>
+<h2>Looking ahead: the 2027 property income rates</h2>
 
-<h2>The Value of Local Property Accounting Expertise</h2>
-<p>While property tax rules apply nationally, their practical application varies significantly by location. Bath's unique characteristics — from heritage constraints to university-driven demand — create specific planning opportunities and compliance requirements.</p>
-<p>A specialist <strong>buy to let accountant in Bath</strong> combines technical property tax expertise with local market knowledge, providing advice that generic practitioners simply cannot match.</p>
-<p>Whether you're managing a single BTL property or building a substantial portfolio, the complexity of current and upcoming tax rules makes specialist advice essential. The cost of expert guidance is typically far outweighed by the tax savings and compliance benefits achieved.</p>
-<p>For Bath landlords serious about tax efficiency and regulatory compliance, partnering with a property specialist isn't just advisable — it's essential for long-term success in one of the UK's most dynamic property markets.</p>
+<p>Landlords should plan for change as well as current rules. Finance Act 2026 introduced separate rates on property income that take effect from 6 April 2027: <strong>22% basic, 42% higher and 47% additional</strong>, which is 2 percentage points above the equivalent rates on other income. For 2026/27, the standard 20%, 40% and 45% rates continue to apply to rental profit.</p>
+
+<p>For a higher-rate Bath landlord on a geared portfolio, the combination of the Section 24 restriction and the higher 2027 property income rate strengthens the case for reviewing structure and finance costs now, rather than reacting later.</p>
+
+<h2>Choosing a property accountant in Bath</h2>
+
+<p>A specialist makes a difference where the rules are technical and the local picture matters. When choosing a <strong>property accountant in Bath</strong>, look for:</p>
+
+<ul>
+<li><strong>Property tax focus:</strong> current, working knowledge of Section 24, MTD, CGT and the 2027 changes, not occasional exposure.</li>
+<li><strong>Local awareness:</strong> familiarity with B&amp;NES HMO licensing and Article 4 areas, conservation-area expenses and the student-let cycle.</li>
+<li><strong>MTD readiness:</strong> the systems and bookkeeping to handle quarterly digital reporting cleanly.</li>
+<li><strong>Forward planning:</strong> advice on structure, disposals and timing, not just an annual return.</li>
+</ul>
+
+<p>For a wider view of what to expect from the role, see our guides on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> and <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a>.</p>
+
+<h2>The value of local property tax expertise</h2>
+
+<p>Property tax rules apply nationally, but their effect is shaped by where you invest. In Bath, high values amplify Section 24 and CGT, the universities sustain a substantial HMO sector governed by local licensing, and heritage constraints complicate the repairs-versus-improvements line. A specialist who understands both the tax law and the Bath market can keep you compliant through the MTD transition and help you hold your portfolio in the most efficient structure for your circumstances. If you would like to talk through your position, we connect Bath landlords with experienced property tax advisers for an initial conversation.</p>
