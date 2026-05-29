@@ -1,93 +1,71 @@
 ---
-title: "Why Do Slough Landlords Need a Specialist Property Accountant in 2026?"
+title: "Property Accountant Slough: MTD and Landlord Tax for 2026"
 slug: "slough-property-accountant-landlord-tax-services"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/slough-property-accountant-landlord-tax-services"
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Slough | Landlord Tax Services"
-metaDescription: "Specialist property accountant in Slough helping local landlords navigate Section 24, MTD compliance, and changing tax rules. Expert buy-to-let tax advice."
-altText: "Professional property accountant working with Slough landlord on tax planning and compliance"
+metaTitle: "Property Accountant Slough | MTD & Landlord Tax 2026"
+metaDescription: "Specialist property accountant for Slough landlords: Making Tax Digital from April 2026, Section 24, HMO licensing, incorporation and CGT planning explained."
+altText: "Professional property accountant reviewing tax planning with a Slough buy-to-let landlord"
 image: ""
-h1: "Why Do Slough Landlords Need a Specialist Property Accountant in 2026?"
-summary: "Slough landlords face complex tax challenges from Section 24 restrictions to upcoming MTD requirements. A specialist property accountant provides essential expertise for local property investors."
+h1: "Property Accountant in Slough: MTD, Section 24 and Landlord Tax in 2026"
+summary: "Slough landlords face Making Tax Digital from April 2026, the Section 24 interest restriction and the abolition of the furnished holiday let regime. A specialist property accountant explains what each change means and where local landlords can plan ahead."
 schema: ""
 faqs:
-  - question: "Do I need a specialist property accountant if I only have one buy-to-let in Slough?"
-    answer: "Even single property landlords in Slough can benefit from specialist advice, particularly given Section 24 restrictions and upcoming MTD requirements. The complexity of current property tax rules means general accountants often miss important planning opportunities that specialists routinely identify."
-  - question: "How much does a property accountant cost for Slough landlords?"
-    answer: "Costs vary depending on portfolio size and complexity, typically ranging from £800-£2,000 annually for basic services. However, the tax savings from proper Section 24 planning, incorporation analysis, or CGT strategies often exceed professional fees by substantial margins."
-  - question: "Should Slough landlords incorporate their property businesses?"
-    answer: "Incorporation can provide tax benefits for many Slough landlords, particularly those in higher tax brackets. However, the decision requires careful analysis of stamp duty costs, CGT on transfer, and ongoing compliance requirements. A specialist property accountant can model these scenarios using your specific circumstances."
-  - question: "When do Slough landlords need to comply with Making Tax Digital?"
-    answer: "MTD for Income Tax becomes mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This requires quarterly digital record-keeping and submissions to HMRC, representing a significant change from annual tax return filing."
+  - question: "When do Slough landlords have to start using Making Tax Digital?"
+    answer: "Making Tax Digital for Income Tax is mandatory from 6 April 2026 for landlords and sole traders whose gross qualifying income is above £50,000. The threshold falls to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. Qualifying income is measured on gross rents and any self-employment turnover before expenses, so a Slough landlord with several tenancies can cross the threshold faster than they expect. Once inside MTD you keep digital records and send quarterly updates to HMRC through compatible software."
+  - question: "Does Making Tax Digital apply if I am below the £50,000 threshold?"
+    answer: "Not yet. If your combined gross property and self-employment income is at or below £50,000 you stay on the existing Self Assessment process for now, but you should plan for the £30,000 threshold from April 2027 and £20,000 from April 2028. Many smaller Slough landlords will be pulled in during those later phases, so moving record-keeping onto compatible software early avoids a rushed transition."
+  - question: "How does Section 24 affect a higher-rate Slough landlord?"
+    answer: "Section 24 is fully in force. You can no longer deduct mortgage interest from rental profit. Instead, finance costs are relieved through a basic-rate (20%) tax credit. For a higher-rate or additional-rate Slough landlord, that means tax is calculated on rental income before interest, then reduced by the 20% credit, which raises the effective tax on geared portfolios. It can also push total income into a higher band or affect allowances. Modelling your figures before year end shows the real position."
+  - question: "Should a Slough landlord move properties into a limited company?"
+    answer: "Incorporation can restore full finance-cost relief because companies deduct mortgage interest in full and pay Corporation Tax rather than the personal property-income rates. It is not automatically the right answer. Transferring property is a disposal for Capital Gains Tax, usually triggers Stamp Duty Land Tax including the higher rates for additional dwellings, and adds running costs and dividend tax on extraction. The decision depends on your income, gearing and plans, so it should be modelled on your own numbers."
+  - question: "What happened to the furnished holiday let rules near Heathrow and Slough?"
+    answer: "The furnished holiday let (FHL) regime was abolished from 6 April 2025. Short-let and serviced accommodation around Heathrow and central Slough is now taxed under the ordinary property income rules. That means the old FHL advantages, such as full finance-cost relief, capital allowances on furnishings and certain Capital Gains Tax reliefs, no longer apply. Landlords who relied on FHL treatment should review their position for the current tax year."
+  - question: "Do I need an HMO licence for a shared house in Slough?"
+    answer: "Any HMO occupied by five or more people forming two or more households needs a mandatory HMO licence anywhere in England under the Housing Act 2004. Slough Borough Council has also operated additional and selective licensing schemes covering smaller HMOs and other private rentals in parts of the borough, and has consulted on reintroducing and expanding them. Always check the current designation with the council before letting. Licence fees are generally deductible as a revenue expense of the rental business."
+  - question: "What Capital Gains Tax will I pay when I sell a Slough rental property?"
+    answer: "Residential property gains are taxed at 18% within your remaining basic-rate band and 24% above it. The annual exempt amount is £3,000. A UK residential property disposal must be reported and the tax paid within 60 days of completion through a CGT on UK property return. Timing a sale across tax years, using both spouses' allowances and claiming all available reliefs can reduce the bill, so it pays to plan the disposal in advance."
+  - question: "Will property income be taxed at separate rates from 2027?"
+    answer: "Yes. Finance Act 2026 has enacted separate rates for property income from 6 April 2027 of 22% basic, 42% higher and 47% additional. This is a structural change rather than a proposal, so Slough landlords planning disposals, incorporations or large repairs should factor the new rates into decisions that straddle the change."
+  - question: "Do I need a property accountant if I only own one buy-to-let in Slough?"
+    answer: "Even a single-property landlord faces Section 24, the move to Making Tax Digital and Capital Gains Tax on eventual sale. A specialist property accountant makes sure expenses are claimed correctly, the MTD transition is handled on time and reliefs are not missed. For a wider view of what the role covers, see our guide on what a property accountant does."
 ---
 
-<p>Slough's property market continues to attract investors, but the tax landscape for landlords has become increasingly complex. From Section 24 mortgage interest restrictions to the upcoming Making Tax Digital requirements, Slough landlords need specialist expertise to navigate these challenges effectively.</p>
-<p>A <strong>property accountant in Slough</strong> understands both the local market dynamics and the intricate tax rules affecting buy-to-let investors. With property income tax rates set to change dramatically from April 2027, the need for specialist advice has never been greater.</p>
+<p>Slough sits on the western edge of London with fast rail links into Paddington via the Elizabeth line, direct access to the M4 and M25, and Heathrow on its doorstep. That makes it a steady rental market for commuter tenants, airport workers and shared houses. It also means many local landlords sit in higher tax bands, where recent changes hit hardest.</p>
+<p>A <strong>property accountant in Slough</strong> works with both the local rental picture and the tax rules that now apply to buy-to-let. The three biggest shifts for 2026 are Making Tax Digital becoming live, the Section 24 interest restriction in full force, and the abolition of the furnished holiday let regime. This guide explains each one and where Slough landlords can plan ahead.</p>
 
-<h2>Why Specialist Property Accountants Are Essential</h2>
-<p>Many Slough landlords initially work with general practice accountants, but property taxation requires specialist knowledge that goes beyond standard accounting services. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Understanding what a property accountant does</a> reveals the depth of expertise needed. General accountants often struggle with the complexities of landlord tax, which include:</p>
-<ul>
-<li><strong>Section 24 calculations:</strong> Complex interest restriction computations</li>
-<li><strong>Capital allowances:</strong> Identifying qualifying expenditure on commercial and residential properties</li>
-<li><strong>Incorporation timing:</strong> Advising when to transfer properties to limited companies</li>
-<li><strong>CGT reliefs:</strong> Maximising available exemptions and reliefs</li>
-<li><strong>MTD compliance:</strong> Preparing for quarterly digital reporting requirements</li>
-</ul>
-<p>The value of this specialist property tax expertise is significant. For Slough landlords, the complexity of current property taxation rules makes it increasingly valuable. From Section 24 calculations through MTD compliance to strategic incorporation decisions, the technical knowledge required goes far beyond general accounting services. Investing in specialist property accounting services typically pays for itself through improved tax efficiency and compliance certainty.</p>
+<h2>Making Tax Digital is now live for Slough landlords</h2>
+<p>Making Tax Digital for Income Tax is no longer a future deadline. It is mandatory from <strong>6 April 2026</strong> for landlords and sole traders whose gross qualifying income is above <strong>£50,000</strong>. The threshold then falls to <strong>£30,000 from 6 April 2027</strong> and <strong>£20,000 from 6 April 2028</strong>, so most active Slough landlords will be brought in during one of these phases.</p>
+<p>The test that catches people out is that qualifying income is measured on <strong>gross rents</strong> plus any self-employment turnover, before deducting expenses or mortgage interest. A landlord with two or three Slough tenancies can be above £50,000 on gross rent alone even where the net profit is modest. If you also have self-employment income, the two are added together for the test.</p>
+<p>Once inside MTD you must keep digital records and send <strong>quarterly updates</strong> to HMRC through compatible software, followed by a final declaration after the tax year. This replaces the single annual Self Assessment return. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">full guide to Making Tax Digital for landlords</a> covers the timeline and software requirements in detail. The practical work for Slough landlords is choosing software, getting opening records clean, and setting up a quarterly routine before the relevant start date.</p>
 
-<h2>Key Tax Considerations for the Slough Property Market</h2>
-<p>Slough's proximity to London and strong transport links make it attractive for property investment, but this comes with specific tax implications. The town's mix of residential and commercial opportunities creates diverse accounting needs for local landlords.</p>
-<p>Property values in Slough mean many landlords fall into higher rate tax brackets, making the Section 24 restrictions particularly painful. A typical Slough landlord with three buy-to-let properties might see their effective tax rate increase significantly compared to pre-2017 rules.</p>
-<p>The upcoming changes to property income taxation from April 2027 will see separate tax rates of 22% basic rate, 42% higher rate, and 47% additional rate applied specifically to rental income. This represents a fundamental shift requiring careful planning.</p>
-<h3>Local Slough Property Challenges and Types</h3>
-<p>Slough landlords face unique circumstances that require local market understanding. The town's regeneration projects, proximity to Heathrow, and mix of residential and commercial opportunities create specific tax planning needs. Many Slough properties serve as HMOs due to local demand, requiring specialist knowledge of room-by-room accounting, licensing costs, and business rates implications. A <strong>buy to let accountant in Slough</strong> understands these local nuances.</p>
-<p>Slough's diverse property market includes various investment types, each with specific tax implications:</p>
-<ul>
-<li><strong>Traditional buy-to-let:</strong> Section 24 impact, standard deductions</li>
-<li><strong>HMO properties:</strong> Room-by-room accounting, licensing costs</li>
-<li><strong>Commercial units:</strong> Capital allowances, VAT considerations</li>
-<li><strong>Development projects:</strong> Trading vs investment treatment</li>
-<li><strong>Serviced accommodation:</strong> Post-FHL abolition treatment</li>
-</ul>
-<p>Each property type requires different accounting approaches and tax strategies, emphasising the need for specialist property tax expertise.</p>
+<h2>Section 24: the interest restriction in full force</h2>
+<p>The Section 24 mortgage interest restriction is fully in force and affects geared Slough landlords directly. You can no longer deduct finance costs from rental profit. Instead, mortgage interest and other finance costs are relieved through a <strong>basic-rate (20%) tax credit</strong>.</p>
+<p>For a higher-rate or additional-rate landlord the effect is twofold. First, tax is calculated on rental income before interest is taken off, which raises the effective rate on a mortgaged portfolio. Second, the larger taxable figure can push total income into a higher band or reduce allowances. A Slough landlord with a well-let but heavily mortgaged property can therefore pay more tax than the cash profit suggests. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24 and tax relief</a> walks through the calculation step by step.</p>
+<p>Planning responses include reviewing ownership shares between spouses on different tax bands, timing larger deductible repairs, and assessing whether a company structure makes sense for new purchases. None of these is a default answer, and each turns on your own figures.</p>
 
-<h2>Navigating Section 24 Mortgage Interest Restrictions</h2>
-<p>The Section 24 mortgage interest restriction hits Slough landlords particularly hard due to the area's property values and typical borrowing levels. <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Understanding Section 24 fully</a> is crucial for local property investors.</p>
-<p>Consider a Slough landlord with a £400,000 buy-to-let property generating £24,000 annual rent, with £12,000 mortgage interest. Under the old rules, they could deduct the full interest amount. Now, they receive only a 20% tax credit, potentially increasing their tax liability by thousands of pounds. A specialist property accountant can model different scenarios, including incorporation options that might restore full interest relief for Slough landlords.</p>
+<h2>Furnished holiday lets and short-term lets around Heathrow</h2>
+<p>Slough's proximity to Heathrow has long supported short-stay and serviced accommodation aimed at travellers and contractors. The tax treatment changed on <strong>6 April 2025</strong>, when the furnished holiday let (FHL) regime was abolished.</p>
+<p>Short-let income is now taxed under the ordinary property income rules. The advantages that came with FHL status, including full finance-cost relief, capital allowances on furniture and fittings, and certain Capital Gains Tax reliefs, no longer apply. Landlords near Heathrow or in central Slough who structured around the old FHL rules should review their position for the current year and check how the change affects both income tax and any future disposal.</p>
 
-<h2>Preparing for Making Tax Digital (MTD)</h2>
-<p>Slough landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital from April 2026</a>. This means quarterly digital record-keeping and submission of income and expenditure summaries to HMRC. The compliance burden is significant, particularly for landlords managing multiple properties across Slough.</p>
-<p>Specialist software integration and regular submissions require ongoing professional support rather than annual accounts preparation. <strong>Landlord tax advice in Slough</strong> should include MTD preparation, covering:</p>
-<ul>
-<li>Software selection and setup</li>
-<li>Quarterly submission processes</li>
-<li>Digital record-keeping requirements</li>
-<li>End-of-period statement preparation</li>
-</ul>
-<p>Property tax planning isn't a once-yearly exercise. Slough landlords benefit from regular reviews to assess changing circumstances, market conditions, and evolving tax legislation. Quarterly MTD submissions provide natural review points for ongoing optimisation.</p>
+<h2>HMO and shared-house landlords in Slough</h2>
+<p>Slough has significant demand for shared housing from airport and commuter workers, so houses in multiple occupation are common. Two layers of rules matter here.</p>
+<p>First, licensing. Any HMO occupied by <strong>five or more people forming two or more households</strong> requires a mandatory HMO licence anywhere in England under the Housing Act 2004. On top of this, <strong>Slough Borough Council</strong> has operated additional licensing (covering smaller HMOs) and selective licensing (covering other private rentals in designated wards, historically including central Slough and Chalvey), and has consulted on reintroducing and widening these schemes. Because designations change, always confirm the current position with the council before letting a shared house.</p>
+<p>Second, tax. HMOs need room-by-room record-keeping, careful allocation of shared running costs, and correct treatment of licence fees, which are generally deductible as a revenue expense of the rental business. Penalties and fines for operating without a required licence are not deductible. For the detail, see our guide on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> for shared-house portfolios.</p>
 
-<h2>Incorporation and Limited Company Structures</h2>
-<p>Many Slough landlords consider transferring properties to limited companies to restore mortgage interest relief and benefit from lower corporation tax rates. However, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation decisions</a> require careful analysis of individual circumstances. Stamp duty land tax surcharges, capital gains tax on transfer, and ongoing compliance costs must be weighed against potential tax savings. A specialist property accountant can model these scenarios using actual Slough property values and rental yields.</p>
-<h3>Corporation Tax vs Income Tax Analysis</h3>
-<p>Limited companies pay corporation tax at 19% on profits up to £50,000 (small profits rate), 25% on profits above £250,000 (main rate), with marginal relief tapering between, compared to the upcoming property income tax rates of 22%/42%/47% for individuals. However, extracting profits through dividends creates additional tax considerations. For a Slough landlord with substantial property income, the analysis becomes complex, requiring specialist expertise to determine the optimal structure.</p>
+<h2>Incorporation: when a limited company helps</h2>
+<p>Many Slough landlords ask whether moving properties into a limited company is the answer to Section 24. Companies deduct mortgage interest in full and pay Corporation Tax rather than the personal property-income rates, which can be attractive for higher-rate landlords reinvesting profit.</p>
+<p>The trade-offs are real. Transferring an existing property to a company is a disposal for Capital Gains Tax, normally triggers Stamp Duty Land Tax including the higher rates for additional dwellings, and adds company running costs plus dividend tax when profits are extracted. For some landlords the structure pays off over time; for others it does not. The right call depends on income level, gearing, holding period and whether the portfolio is growing. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">guide to buy-to-let limited companies</a> explains the full picture so the decision can be modelled on your own numbers.</p>
 
-<h2>Capital Gains Tax Planning for Property Disposals</h2>
-<p>Slough's property appreciation over recent years means many landlords face substantial capital gains tax liabilities when disposing of properties. <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital gains tax planning</a> requires specialist knowledge of available reliefs and timing strategies.</p>
-<p>With CGT rates at 18% for basic rate taxpayers and 24% for higher rate taxpayers on residential property, plus the reduced annual exempt amount of £3,000, careful planning is essential. Techniques such as deed of variation, timing of disposals, and relief claims require specialist expertise.</p>
+<h2>Capital Gains Tax when selling a Slough property</h2>
+<p>When a Slough landlord sells a residential investment property, the gain is taxed at <strong>18%</strong> within any remaining basic-rate band and <strong>24%</strong> above it. The annual exempt amount is <strong>£3,000</strong>. A UK residential property disposal must be reported and the tax paid within <strong>60 days of completion</strong> through a CGT on UK property return, separate from the annual tax cycle.</p>
+<p>Planning levers include spreading a sale across two tax years, using both spouses' allowances and bands where ownership allows, and ensuring all qualifying costs and reliefs are claimed. These work best when considered before exchange rather than after completion. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to Capital Gains Tax on property</a> sets out the reliefs and the 60-day reporting process.</p>
 
-<h2>Cost and Selection of Professional Services</h2>
-<p>Many Slough landlords question whether specialist property accounting services justify the cost. <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">Understanding the investment in professional services</a> often reveals significant returns through tax savings and compliance efficiency. A typical saving from proper Section 24 planning, incorporation analysis, or CGT mitigation strategies often exceeds annual professional fees many times over. For Slough landlords with substantial portfolios, the expertise becomes essential rather than optional.</p>
-<p>Not all property accountants offer the same level of expertise. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Selecting the right professional</a> requires considering their specific experience with property taxation and understanding of local market conditions. Key factors for Slough landlords include:</p>
-<ul>
-<li><strong>Property tax specialisation:</strong> Focus on landlord clients rather than general practice</li>
-<li><strong>Local market knowledge:</strong> Understanding Slough property dynamics</li>
-<li><strong>Technology integration:</strong> MTD compliance capabilities</li>
-<li><strong>Proactive planning:</strong> Regular reviews and strategic advice</li>
-<li><strong>Incorporation expertise:</strong> Ability to model complex scenarios</li>
-</ul>
-<p>Annual reviews should cover portfolio performance, tax efficiency opportunities, and strategic planning for future acquisitions or disposals. This proactive approach often identifies significant savings opportunities.</p>
+<h2>What changes in 2027</h2>
+<p>Finance Act 2026 has enacted <strong>separate rates for property income from 6 April 2027</strong>: 22% basic, 42% higher and 47% additional. This is settled legislation, not a proposal. For Slough landlords it means any decision that straddles April 2027, such as the timing of a disposal, an incorporation, or a year of large deductible spending, should be assessed against the new rate structure rather than today's bands.</p>
 
-<h2>The Future for Slough Landlords</h2>
-<p>The upcoming changes to property income taxation from 2027, combined with ongoing compliance requirements, mean Slough landlords need professional support that understands both the technical aspects and local market dynamics.</p>
+<h2>Working with a specialist for Slough property tax</h2>
+<p>General-practice accountants often handle property as a sideline. A specialist focuses on the rules above day to day: the MTD transition, Section 24 modelling, HMO record-keeping, incorporation analysis and CGT timing. For Slough landlords, that local market context (commuter and airport demand, shared-house licensing, and the higher-rate profile of many owners) shapes the planning.</p>
+<p>Property Tax Partners connects landlords with specialist property accountants who handle exactly these situations. If you are weighing up MTD readiness, a Section 24 review or a possible incorporation, a short conversation can map out the priorities for your portfolio.</p>

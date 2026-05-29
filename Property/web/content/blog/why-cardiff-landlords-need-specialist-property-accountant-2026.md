@@ -2,107 +2,129 @@
 title: "Why Cardiff Landlords Need a Specialist Property Accountant in 2026"
 slug: "why-cardiff-landlords-need-specialist-property-accountant-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/why-cardiff-landlords-need-specialist-property-accountant-2026"
-date: "2026-04-10"
+date: "2026-05-29"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Cardiff: Tax Services for Landlords"
-metaDescription: "Property accountant Cardiff services for landlords. Section 24, MTD, CGT & incorporation tax advice. Get professional support."
-altText: "Cardiff property accountant reviewing tax documents for local landlord client"
+metaTitle: "Property Accountant Cardiff | Welsh LTT & Landlord Tax Help"
+metaDescription: "Specialist property accountant support for Cardiff landlords. Welsh LTT, Rent Smart Wales, Cathays Article 4 HMOs, Section 24, MTD and CGT planning. Free call."
+altText: "Property accountant reviewing rental tax documents for a Cardiff landlord client"
 image: ""
 h1: "Why Cardiff Landlords Need a Specialist Property Accountant in 2026"
-summary: "Cardiff's property market presents unique tax challenges for landlords. From Section 24 restrictions to MTD compliance, specialist property accounting expertise is essential for maximising returns and staying compliant."
+summary: "Cardiff landlords work under a different tax and regulatory regime than English landlords. Land Transaction Tax (LTT) replaces Stamp Duty, Rent Smart Wales registration and licensing is mandatory (and is itself administered by Cardiff Council for the whole of Wales), Article 4 directions in Cathays, Roath and Plasnewydd control student HMO conversions, and the Renting Homes (Wales) Act 2016 reshaped tenancies. A specialist models all of this alongside the UK-wide rules: Section 24, MTD-for-ITSA (live from April 2026), the April 2027 property income rates, and CGT at 18% and 24%."
 schema: ""
 faqs:
-  - question: "How much should I expect to pay for a property accountant in Cardiff?"
-    answer: "Property accounting fees in Cardiff typically range from £800-£2,500 annually for individual landlords, depending on portfolio size and complexity. Limited company structures may incur additional costs of £500-£1,500 for corporation tax returns. However, tax savings achieved often exceed these fees, particularly for higher-rate taxpayers affected by Section 24 restrictions."
-  - question: "Do I need a Cardiff-based property accountant or can I work with someone elsewhere?"
-    answer: "While location isn't critical for tax compliance, Cardiff-based accountants often have valuable local market knowledge and understand specific challenges facing Welsh landlords. However, expertise in property taxation is more important than location. Many successful landlords work with specialist property accountants outside Cardiff who offer superior technical knowledge and systems."
-  - question: "What's the difference between a general accountant and a property specialist?"
-    answer: "Property specialists understand complex issues like Section 24 mortgage interest restrictions, capital gains tax on property disposals, and incorporation planning. They're also familiar with MTD requirements and property-specific deductions. General accountants often miss opportunities or make errors with property taxation, potentially costing landlords thousands in overpaid tax or compliance failures."
-  - question: "When should Cardiff landlords consider incorporating their property portfolio?"
-    answer: "Incorporation becomes particularly attractive for higher-rate taxpayers facing Section 24 restrictions and the new property income tax rates from April 2027. Cardiff landlords with growing portfolios, those planning significant acquisitions, or higher-rate taxpayers should have incorporation modelled by a specialist. However, incorporation isn't suitable for everyone and requires careful analysis of individual circumstances."
+  - question: "Do Cardiff landlords pay Stamp Duty or something different?"
+    answer: "Something different. Wales has its own property purchase tax, Land Transaction Tax (LTT), administered by the Welsh Revenue Authority rather than HMRC. LTT replaced Stamp Duty Land Tax in Wales on 1 April 2018. For 2026/27 the main residential bands are 0% up to £225,000, 6% from £225,001 to £400,000, 7.5% from £400,001 to £750,000, 10% from £750,001 to £1,500,000, and 12% above that. A buy-to-let or second home triggers the higher residential rates, which in Wales are a separate band table (starting at 5% on the first £180,000 from 11 December 2024) rather than a flat surcharge stacked on the standard rates. The Welsh nil-rate band of £225,000 is materially higher than England's, and Wales has no first-time-buyer relief and no non-resident surcharge."
+  - question: "What is Rent Smart Wales and does it affect my tax position?"
+    answer: "Rent Smart Wales is the mandatory landlord and agent scheme under the Housing (Wales) Act 2014. Every landlord with a privately rented property in Wales must register, and any landlord who self-manages must also hold a licence (which requires approved training). Interestingly for Cardiff landlords, the scheme is hosted and administered by Cardiff Council on behalf of all 22 Welsh authorities. Registration, licence and approved-training costs are allowable expenses against rental profit. Failure to register or licence where required is a criminal offence, so a specialist will check this is in place before filing."
+  - question: "How do Article 4 directions affect Cardiff student-let landlords?"
+    answer: "Cardiff Council has an Article 4 direction covering Cathays, Roath and Plasnewydd, the main student wards, in force since 2016. It removes the permitted-development right to convert a standard home (use class C3) into a small shared house (use class C4), so converting a property to a small HMO in those areas now needs planning permission, and the council assesses HMO density before granting it. This matters for tax because it changes how you acquire and structure student-let stock: a property already in lawful HMO use carries a value (and an acquisition cost) that an unconverted house does not, and that feeds into your LTT, capital allowances and eventual CGT base-cost position."
+  - question: "Does Cardiff Council operate HMO licensing?"
+    answer: "Yes. Mandatory HMO licensing applies across Wales to larger HMOs (broadly 5 or more occupants forming 2 or more households), and Cardiff also runs an additional licensing scheme covering smaller HMOs in defined areas including Cathays, Plasnewydd, Roath and parts of Heath. Licence fees and renewals are allowable expenses against rental income. Check Cardiff Council's housing pages for the areas and current fees, as additional schemes are periodically renewed and redrawn."
+  - question: "Is Making Tax Digital now mandatory for Cardiff landlords?"
+    answer: "Yes, on the same UK-wide footing. MTD for Income Tax went live on 6 April 2026 for landlords and sole traders with combined gross self-employment and property income above £50,000. The threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. It is a gross-income test, so a Cardiff landlord judges it on rents received before deducting any costs. In scope means keeping digital records and filing quarterly updates through MTD-compatible software. Welsh landlords use the same HMRC infrastructure as the rest of the UK."
+  - question: "How does Section 24 affect a Cardiff landlord's tax bill?"
+    answer: "Section 24 is fully in force. You can no longer deduct mortgage interest and other finance costs from rental income before tax. Instead you receive a basic-rate (20%) tax credit. For a basic-rate taxpayer the effect is broadly neutral, but for a higher or additional-rate Cardiff landlord with a mortgage it can sharply raise the effective tax rate, and in some cases push reported income high enough to affect the personal allowance or child benefit. Section 24 is the single biggest reason leveraged higher-rate landlords ask us to model incorporation."
+  - question: "When should a Cardiff landlord consider incorporating their portfolio?"
+    answer: "Incorporation tends to come into focus for higher or additional-rate taxpayers with geared portfolios feeling the full weight of Section 24, especially with the April 2027 property income rates approaching. But it is not automatically right: transferring property into a company is a disposal for CGT (potentially at 18% or 24%), can trigger Welsh LTT at the higher residential rates on the way in, and adds ongoing corporation tax and filing obligations. The Welsh higher-rate LTT entry cost is steeper than England's surcharge, so the transfer-cost analysis matters more here. A specialist models your specific numbers before you commit."
+  - question: "What is the April 2027 property income rate change and does it apply in Wales?"
+    answer: "Finance Act 2026 introduced a 2 percentage point surcharge on UK property income from 6 April 2027, producing effective rates of 22% basic, 42% higher and 47% additional. It applies UK-wide, including Wales, on rental profit after the Section 24 adjustment. For 2026/27 the standard 20%, 40% and 45% rates still apply. Cardiff landlords planning disposals, refinancing or incorporation over the next couple of years should factor the scheduled rates into the timing."
+  - question: "Do I need a Cardiff-based accountant, or can I use a Welsh-aware specialist remotely?"
+    answer: "For tax work, property specialism plus Welsh knowledge matters more than a physical Cardiff office. The UK-wide rules (Section 24, MTD, CGT) are national, but Wales has its own LTT, Rent Smart Wales regime and Renting Homes (Wales) Act tenancy framework, and Cardiff has its own Article 4 and HMO licensing position. A specialist who handles Welsh portfolios can advise wherever they are based, often alongside a local Cardiff letting agent or property manager."
+  - question: "What does specialist property accounting cost for a Cardiff landlord?"
+    answer: "Property accountants are usually engaged on a fixed annual basis that reflects portfolio size, structure (personal or company) and complexity, and the cost is itself deductible against rental profit or corporation tax. We cover how property accounting is typically structured, and what is included, in our guide to how a property accountant works, and the most useful first step is a short discovery call so the work can be scoped to your actual portfolio."
 ---
 
-<p>Cardiff's thriving rental market offers excellent opportunities for property investors, but navigating the complex UK tax landscape requires specialist expertise. A <strong>property accountant Cardiff</strong> can help local landlords optimise their tax position, ensure compliance, and maximise rental returns in an increasingly regulated environment.</p>
-<p>With major tax changes taking effect from April 2027 and MTD compliance mandatory from 2026, Cardiff landlords face significant challenges. This guide explains why working with a specialist property accountant is becoming essential for success in the Welsh capital's rental market.</p>
+<p>Cardiff has one of the strongest rental markets in Wales, driven by Cardiff University, Cardiff Metropolitan University and the University of South Wales, NHS and public-sector employment, and a growing professional-services and media cluster around Cardiff Bay. For landlords, that demand sits on top of a tax and regulatory regime that is genuinely different from England, and a general accountant who treats Cardiff like any English city will miss the parts that matter.</p>
 
-<h2>Cardiff Property Market: Tax Challenges for Landlords</h2>
-<p>Cardiff's property market has experienced strong growth, with average rental yields ranging from 5-7% across different areas. However, this success comes with complex tax obligations that general accountants often struggle to navigate effectively.</p>
-<p>The city's diverse property portfolio includes everything from city centre apartments to family homes in suburbs like Whitchurch and Llandaff. Each property type brings specific tax considerations that require specialist knowledge to optimise.</p>
-<h3>Key Tax Issues Facing Cardiff Landlords</h3>
+<p>This guide explains why specialist support is worth having for a Cardiff portfolio in 2026: the Welsh-specific rules (Land Transaction Tax, Rent Smart Wales, Article 4 directions and the Renting Homes (Wales) Act), the UK-wide rules that hit Welsh landlords just as hard (Section 24, Making Tax Digital, Capital Gains Tax), and the changes already scheduled for April 2027.</p>
+
+<h2>Why Cardiff Is Different From an English Property Market</h2>
+
+<p>Most landlord tax content online is written for England, and the headline rules that diverge in Wales are exactly the ones that cost money if you get them wrong. Cardiff landlords face a layered set of obligations:</p>
+
 <ul>
-<li><strong>Section 24 mortgage interest restrictions</strong> - particularly impactful for leveraged portfolios</li>
-<li><strong>Capital gains tax planning</strong> - essential when disposing of Cardiff properties</li>
-<li><strong>MTD compliance requirements</strong> from April 2026 for landlords earning over the MTD threshold (£50,000 from 6 April 2026)</li>
-<li><strong>New property income tax rates</strong> from April 2027 (22%/42%/47%)</li>
-<li><strong>SDLT surcharge implications</strong> when acquiring additional Cardiff properties</li>
+<li><strong>Land Transaction Tax (LTT)</strong>, not Stamp Duty, on every purchase, administered by the Welsh Revenue Authority.</li>
+<li><strong>Rent Smart Wales registration and licensing</strong>, mandatory under the Housing (Wales) Act 2014, and (a nice irony) administered by Cardiff Council itself for the whole of Wales.</li>
+<li><strong>Article 4 directions</strong> in Cathays, Roath and Plasnewydd controlling conversions to small HMOs in the student heartland.</li>
+<li><strong>The Renting Homes (Wales) Act 2016</strong>, which replaced assured shorthold tenancies with occupation contracts from December 2022.</li>
+<li><strong>The UK-wide tax rules</strong>: Section 24, MTD-for-ITSA, CGT, and the April 2027 property income rates, which apply in Wales identically to England.</li>
 </ul>
 
-<h2>What Makes a Good Property Accountant in Cardiff?</h2>
-<p>Not all accountants understand property investment taxation. A specialist <strong>buy to let accountant Cardiff</strong> should demonstrate expertise across several critical areas specific to rental property businesses.</p>
-<h3>Essential Qualifications and Experience</h3>
-<p>Look for accountants who are members of recognised professional bodies (ICAEW, ACCA, CIMA) with demonstrable property experience. They should understand Cardiff's local market dynamics and have worked with similar property portfolios in Wales.</p>
-<p>Experience with property company structures is particularly valuable, as many Cardiff landlords are considering incorporation to mitigate tax increases. Your accountant should be able to advise on <a href="/incorporation">incorporation strategies</a> and ongoing compliance requirements.</p>
-<h3>Technology and Systems Knowledge</h3>
-<p>Modern property accounting requires robust systems for tracking rental income, expenses, and compliance obligations. Your Cardiff property accountant should be proficient with cloud accounting software and <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD-compatible systems</a>.</p>
+<h2>Land Transaction Tax: The Welsh Purchase Tax</h2>
 
-<h2>Comprehensive Services for Cardiff Landlords</h2>
-<p>A comprehensive property accounting service goes beyond basic tax return preparation. Cardiff landlords should expect specialist support across multiple areas of their property business.</p>
-<h3>Tax Planning and Compliance</h3>
-<p><strong>Landlord tax advice Cardiff</strong> should include proactive tax planning, not just reactive compliance. This means regularly reviewing your structure, identifying available reliefs, and planning for future tax changes.</p>
-<p>Key services include preparation of property income sections on self-assessment returns, CGT calculations on disposals, and advice on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable deductions</a> for Cardiff rental properties.</p>
-<h3>Structure Optimisation and Incorporation</h3>
-<p>Many Cardiff landlords are reviewing their ownership structures ahead of the 2027 tax changes. A specialist property accountant can model different scenarios and advise on the optimal approach for your portfolio.</p>
-<p>This might include incorporation into a limited company structure, which can provide significant tax advantages for higher-rate taxpayers. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to buy-to-let limited companies</a> explains the key considerations. Incorporation can be complex, involving potential Capital Gains Tax (CGT) liabilities at 18% or 24% on property transfers and ongoing corporation tax at 19% or 25% on profits.</p>
-<h3>Digital Compliance and MTD Support</h3>
-<p>From April 2026, Cardiff landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital (MTD) requirements. This means quarterly digital submissions and maintaining digital records.</p>
-<p>Your property accountant should provide systems setup, training, and ongoing support to ensure smooth compliance with these new obligations. Proactive MTD planning is essential to avoid penalties and streamline your record-keeping.</p>
+<p>Stamp Duty Land Tax does not apply in Wales. Since 1 April 2018, Welsh purchases have been subject to <strong>Land Transaction Tax (LTT)</strong> under the Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017, administered by the Welsh Revenue Authority rather than HMRC.</p>
 
-<h2>Cardiff-Specific Property Tax Considerations</h2>
-<p>Cardiff's property market has unique characteristics that require local knowledge and expertise to navigate effectively.</p>
-<h3>Student Property Market</h3>
-<p>Cardiff's large student population creates opportunities in areas near the University of South Wales and Cardiff University. Student properties often qualify for council tax exemption, but this requires proper management and documentation.</p>
-<p>HMO properties serving student markets face additional compliance requirements, including licensing costs and business rates considerations that impact tax calculations.</p>
-<h3>Commercial Property Opportunities</h3>
-<p>Cardiff's growing business district offers commercial property investment opportunities. These investments benefit from different tax rules - <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions don't apply</a> to commercial properties, and capital allowances may be available.</p>
-<h3>Regeneration Areas and Capital Gains</h3>
-<p>Cardiff's ongoing regeneration creates opportunities for capital appreciation, particularly in areas like Cardiff Bay and the city centre. However, this also means careful <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT planning</a> is essential when disposing of properties. The current CGT rates for residential property are 18% for basic-rate taxpayers and 24% for higher or additional-rate taxpayers.</p>
+<p>For 2026/27 the <strong>main residential LTT rates</strong> (where you do not own another dwelling) are:</p>
 
-<h2>Cost vs Value: Property Accounting Investment</h2>
-<p>Many Cardiff landlords question whether specialist property accounting services represent good value compared to general accountants or DIY approaches.</p>
-<h3>Typical Cost Structure</h3>
-<p>Property accounting fees typically range from £800-£2,500 annually for individual landlords, depending on portfolio complexity. Limited company structures may incur additional costs for corporation tax returns and compliance.</p>
-<p>However, the tax savings achieved through proper planning often exceed these fees significantly. For example, optimising mortgage interest relief under Section 24 or planning CGT on a single property disposal can save thousands.</p>
-<h3>Hidden Costs of Poor Advice</h3>
-<p>Using a general accountant or attempting DIY property tax compliance can result in missed opportunities and compliance failures. HMRC penalties for late or incorrect submissions can quickly exceed professional fees.</p>
-<p>More significantly, poor tax planning can result in overpaying tax by thousands annually, particularly for higher-rate taxpayers affected by Section 24 restrictions.</p>
+<table>
+<thead><tr><th>Band</th><th>Rate</th></tr></thead>
+<tbody>
+<tr><td>£0 to £225,000</td><td>0%</td></tr>
+<tr><td>£225,001 to £400,000</td><td>6%</td></tr>
+<tr><td>£400,001 to £750,000</td><td>7.5%</td></tr>
+<tr><td>£750,001 to £1,500,000</td><td>10%</td></tr>
+<tr><td>Above £1,500,000</td><td>12%</td></tr>
+</tbody>
+</table>
 
-<h2>Planning for Major Tax Changes from 2026 and 2027</h2>
-<p>Cardiff landlords face significant tax and compliance changes that will reshape property investment economics. Specialist advice is becoming essential for navigating these changes effectively.</p>
-<h3>Making Tax Digital (MTD) from April 2026</h3>
-<p>The mandatory shift to MTD for Income Tax requires landlords to maintain digital records and submit quarterly updates. A property accountant can ensure your systems are compliant and help you adapt your processes.</p>
-<h3>New Property Income Tax Rates from April 2027</h3>
-<p>From April 2027, property income will be taxed at separate rates: 22% for basic rate taxpayers, 42% for higher rate, and 47% for additional rate taxpayers. This represents a significant increase that requires careful planning.</p>
-<p>Combined with existing Section 24 restrictions, many Cardiff landlords will need to review their investment strategies and potentially consider incorporation to maintain viable returns.</p>
-<h3>Increased Compliance Complexity</h3>
-<p>The combination of MTD requirements, new tax rates, and existing regulations creates a complex compliance environment that's difficult to navigate without specialist support.</p>
-<p>Property accountants who understand these changes can help Cardiff landlords prepare effectively and maintain compliance while optimising their tax position.</p>
+<p>The £225,000 nil-rate band is much higher than England's, and Wales has no first-time-buyer relief and no non-resident-purchaser surcharge.</p>
 
-<h2>Choosing and Getting Started with a Property Accountant</h2>
-<p>Selecting the right property accountant is crucial for long-term success. Cardiff landlords should evaluate potential advisers across several key criteria.</p>
-<h3>Questions to Ask Potential Advisers</h3>
-<p>When interviewing potential property accountants, ask specific questions about their experience with Cardiff's rental market and similar property portfolios.</p>
+<p>Buy-to-let purchases and second homes attract the <strong>higher residential rates</strong>. In Wales these are a separate band table (not a flat surcharge stacked on the standard rates), starting at 5% on the first £180,000 and rising through the bands, in force from 11 December 2024. The higher rates apply where you (or any joint buyer) already own another dwelling anywhere in the world worth £40,000 or more at the date of purchase. If you are replacing your main residence inside the prescribed window you pay the main rates, with a repayment route via the Welsh Revenue Authority where the old home sells after completion. Getting the band structure and the higher-rate test right is precisely the kind of detail an English-oriented accountant tends to mishandle. Source: <a href="https://www.gov.wales/land-transaction-tax-rates-and-bands">gov.wales LTT rates and bands</a>.</p>
+
+<h2>Rent Smart Wales and Cardiff's Regulatory Role</h2>
+
+<p>Every Cardiff landlord with a property let on a domestic tenancy must register with <strong>Rent Smart Wales</strong>, and any landlord who self-manages must also hold a licence, which requires completing approved training. The scheme runs under the Housing (Wales) Act 2014, and Cardiff Council is the designated licensing authority operating it for all 22 Welsh local authorities. Source: <a href="https://www.gov.wales/communities-and-childrens-secretary-reminds-landlords-need-register-rent-smart-wales">gov.wales Rent Smart Wales</a>.</p>
+
+<p>For tax purposes, registration fees, licence fees and the cost of the approved training course are allowable expenses against rental income. Failure to register or licence where required is a criminal offence and can lead to rent-repayment orders, so a specialist confirms compliance is in place as part of preparing the return rather than treating it as someone else's problem.</p>
+
+<h2>Article 4 Directions and Cardiff's HMO Hotspots</h2>
+
+<p>Cardiff's student-let economy is concentrated in <strong>Cathays, Roath and Plasnewydd</strong>, and these wards sit under an <strong>Article 4 direction</strong> that has been in force since 2016. The direction removes the permitted-development right to convert a standard home (use class C3) into a small shared house (use class C4), so a new small-HMO conversion in those areas needs planning permission, and the council weighs HMO density (commonly assessed against a concentration threshold in the immediate area) before granting it.</p>
+
+<p>On top of planning, Cardiff Council operates <strong>mandatory and additional HMO licensing</strong>. Mandatory licensing applies to larger HMOs across Wales, and Cardiff's additional scheme reaches smaller HMOs in defined areas including Cathays, Plasnewydd, Roath and parts of Heath. The practical tax consequences are real:</p>
+
 <ul>
-<li>How many Cardiff landlords do you currently advise?</li>
-<li>What's your experience with property company incorporations?</li>
-<li>How do you handle MTD compliance for property clients?</li>
-<li>Can you provide case studies of tax savings achieved?</li>
-<li>What systems do you recommend for record-keeping?</li>
+<li>A property already in lawful C4/HMO use carries a premium and a different acquisition cost, which flows into your LTT, your capital allowances claim on qualifying fixtures, and your eventual CGT base cost.</li>
+<li>HMO licensing and renewal fees are deductible against rental profit.</li>
+<li>HMO income often pushes a landlord over the MTD gross-income threshold sooner than a single standard let would.</li>
 </ul>
-<h3>Red Flags to Avoid</h3>
-<p>Be wary of accountants who don't understand property-specific issues or make unrealistic promises about tax savings. Good advisers will explain limitations and risks alongside opportunities.</p>
-<p>Avoid accountants who don't invest in modern systems or seem unfamiliar with upcoming changes like MTD requirements or the 2027 property income tax changes.</p>
-<h3>Initial Assessment Areas</h3>
-<p>A good <strong>property accountant Cardiff</strong> will begin by reviewing your current portfolio, ownership structure, and tax efficiency. This typically includes analysing recent tax returns, assessing compliance risks, and identifying immediate opportunities.</p>
-<p>For landlords considering expansion or disposal of properties, timing and structure become critical considerations that require specialist input.</p>
-<p>The investment in specialist property accounting support typically pays for itself through improved tax efficiency and compliance. Cardiff's dynamic rental market offers excellent opportunities, but success requires navigating an increasingly complex regulatory environment with expert guidance.</p>
+
+<p>If you run or plan student HMOs in Cardiff, structure and acquisition timing become specialist questions, not box-ticking. Our guides to <a href="https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">holding buy-to-let property through a limited company</a> and to <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable landlord deductions</a> cover the foundations.</p>
+
+<h2>Section 24: The UK-Wide Rule That Hits Cardiff Hardest</h2>
+
+<p>Section 24 is now fully in force across the UK, Wales included. Finance costs (mortgage interest and similar) are no longer deductible from rental income. Instead, landlords receive a <strong>basic-rate (20%) tax credit</strong> against the tax on the finance cost.</p>
+
+<p>For a basic-rate Cardiff landlord the effect is broadly neutral. For a higher or additional-rate landlord with a mortgage, the effect can be severe: tax is calculated on rental income before finance costs, so a leveraged portfolio can show a healthy paper profit while delivering very thin real cash flow. It can also inflate reported income enough to erode the personal allowance or trigger the high-income child benefit charge. This is the single most common reason Cardiff landlords ask us to model their position. Our <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">complete guide to the Section 24 restriction</a> walks through the mechanics.</p>
+
+<h2>Capital Gains Tax on Cardiff Disposals</h2>
+
+<p>When a Cardiff landlord sells a residential rental property at a gain, Capital Gains Tax applies at <strong>18% for the part falling in the basic-rate band and 24% above it</strong> (the rates in force since 30 October 2024). The annual exempt amount is <strong>£3,000</strong> per individual.</p>
+
+<p>The reporting trap catches people out: where CGT is due, a UK-resident landlord must file a CGT-on-UK-property return and pay the tax within <strong>60 days of completion</strong>, long before the normal Self Assessment deadline. With Cardiff Bay and city-centre regeneration continuing to drive capital growth, disposal timing, use of both spouses' annual exemptions, and any available Private Residence Relief on a property that was once a main home are all worth planning before you accept an offer. Our <a href="https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete CGT on property guide</a> covers the reliefs and the 60-day return in detail.</p>
+
+<h2>MTD for Income Tax: Live, and Coming Down the Thresholds</h2>
+
+<p>Making Tax Digital for Income Tax is no longer a future deadline. It went <strong>live on 6 April 2026</strong> for landlords and sole traders whose combined gross self-employment and property income exceeds <strong>£50,000</strong>. The threshold then falls to <strong>£30,000 from 6 April 2027</strong> and <strong>£20,000 from 6 April 2028</strong>.</p>
+
+<p>The test is on <strong>gross</strong> income (rents received before costs), so a Cardiff landlord with two or three lets, or a single well-tenanted HMO, can be in scope sooner than expected. In scope means keeping digital records and submitting quarterly updates through compatible software, then a final declaration after the tax year. Our <a href="https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords guide</a> sets out what compliant record-keeping looks like in practice.</p>
+
+<h2>The April 2027 Property Income Rates</h2>
+
+<p>Finance Act 2026 introduced a 2 percentage point surcharge on UK property income from <strong>6 April 2027</strong>, producing effective rates of <strong>22% basic, 42% higher and 47% additional</strong>. This applies UK-wide, Wales included, to rental profit after the Section 24 adjustment. For 2026/27 the standard 20%, 40% and 45% rates continue to apply.</p>
+
+<p>For a higher-rate Cardiff landlord, the 2-point uplift on profit, layered on top of Section 24, is enough to change the calculus on whether a geared portfolio still works held personally. Decisions on refinancing, disposals and incorporation taken in 2026 should be made with the 2027 rates already in view rather than as an afterthought.</p>
+
+<h2>Choosing a Property Accountant for a Cardiff Portfolio</h2>
+
+<p>The most important test is not whether the accountant is based in Cardiff, but whether they handle property and understand Wales. Questions worth asking:</p>
+
+<ul>
+<li>Do they routinely advise Welsh landlords, and are they fluent in LTT (including the higher residential rates) rather than defaulting to SDLT?</li>
+<li>Do they understand Rent Smart Wales, the Renting Homes (Wales) Act and Cardiff's Article 4 and HMO licensing position?</li>
+<li>Can they model Section 24, incorporation and the April 2027 rates against your actual numbers, not generic examples?</li>
+<li>Are they set up for MTD-for-ITSA quarterly filing and digital record-keeping?</li>
+</ul>
+
+<p>If you are weighing up who to work with, our guide on <a href="https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> sets out the criteria in full. Cardiff's rental market offers genuine opportunity, but the Welsh layer on top of the UK-wide rules means specialist, Wales-aware advice is what keeps a portfolio efficient and compliant. The most useful first step is a short discovery call so any work can be scoped to your real position.</p>

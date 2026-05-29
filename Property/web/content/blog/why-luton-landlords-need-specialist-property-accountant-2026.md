@@ -5,123 +5,92 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Luton: Expert Tax Help for Landlords"
-metaDescription: "Why Luton landlords choose specialist property accountants. Expert tax advice for BTL portfolios, Section 24, and MTD compliance."
-altText: "Professional property accountant reviewing tax documents for Luton landlord clients"
+metaTitle: "Property Accountant Luton: MTD, Section 24 & HMO Tax Help"
+metaDescription: "Luton landlords face live MTD for Income Tax, Section 24, and town-centre HMO licensing. See why specialist property accountants beat general practice."
+altText: "Property accountant reviewing buy-to-let tax records for a Luton landlord"
 image: ""
 h1: "Why Do Luton Landlords Need a Specialist Property Accountant in 2026?"
-summary: "Luton's property market presents unique challenges that require specialist accounting expertise. With Section 24 restrictions and incoming MTD requirements, local landlords need accountants who understand buy-to-let taxation."
+summary: "Luton landlords now face Making Tax Digital for Income Tax (live from April 2026), the full force of Section 24, town-centre HMO licensing, and the abolition of the holiday-let regime. A specialist property accountant understands how these rules land on a Luton portfolio in a way a general accountant rarely does."
 schema: ""
 faqs:
-  - question: "What's the difference between a property accountant and a general accountant in Luton?"
-    answer: "A property accountant specialises specifically in buy-to-let taxation, Section 24 restrictions, MTD compliance, and property-related reliefs. They understand local rental markets and can provide strategic advice on portfolio optimisation, incorporation timing, and tax planning strategies that general accountants typically cannot offer."
-  - question: "How much does a specialist property accountant cost in Luton?"
-    answer: "Specialist property accountants typically charge £1,500-£3,000 annually for modest portfolios, compared to £800-£1,200 for basic compliance from general accountants. However, the additional expertise often identifies tax savings worth many times the extra fee, particularly for portfolios over £300,000 or annual rental income exceeding £30,000."
-  - question: "Do I need a property accountant if I only have one buy-to-let property in Luton?"
-    answer: "For single properties with straightforward finances, a general accountant may suffice initially. However, if you're a higher-rate taxpayer affected by Section 24, planning to expand your portfolio, or the property value exceeds £300,000, specialist advice often pays for itself through tax savings and strategic guidance."
-  - question: "What should I look for when choosing a property accountant in Luton?"
-    answer: "Look for specific property sector qualifications, local market knowledge, MTD-ready systems, proactive tax planning approach (not just compliance), and positive testimonials from similar property investors. They should demonstrate understanding of current legislation like Section 24 and upcoming changes including the 2027 property tax rates."
+  - question: "Is a property accountant different from a general accountant for Luton landlords?"
+    answer: "Yes. A specialist property accountant works daily with the rules that govern rental income: the Section 24 finance cost restriction, Making Tax Digital for Income Tax, capital gains tax on residential disposals, incorporation analysis, and the new property income rates scheduled for April 2027. A general accountant may file an accurate return but is less likely to spot planning points specific to a buy-to-let portfolio, or to understand Luton-specific issues such as town-centre HMO licensing and Article 4 planning controls."
+  - question: "Has Making Tax Digital for Income Tax actually started?"
+    answer: "Yes. Making Tax Digital for Income Tax (MTD for ITSA) is live from 6 April 2026 for sole-trader landlords and self-employed individuals with qualifying income above 50,000 pounds. The threshold drops to 30,000 pounds from 6 April 2027 and to 20,000 pounds from 6 April 2028. Affected landlords must keep digital records and send quarterly updates to HMRC through compatible software. Limited companies are outside MTD for ITSA and continue to file annual company tax returns."
+  - question: "How does Section 24 affect a higher-rate Luton landlord?"
+    answer: "Section 24 is fully in force. Mortgage and other finance costs are no longer deducted from rental profit. Instead you receive a basic-rate (20 percent) tax credit. For a higher-rate or additional-rate taxpayer this means tax is charged on rental income before finance costs, then only 20 percent relief is given back. It can also push total income into higher bands and erode the personal allowance above 100,000 pounds. A specialist models this precisely rather than assuming interest is still deductible."
+  - question: "Do I need HMO or selective licensing for my Luton rental?"
+    answer: "It depends on the property and its location. Luton Borough Council operates an additional HMO licensing scheme covering smaller houses in multiple occupation across the borough, plus a selective licensing scheme for the town centre and Park Town areas, with the schemes published to run from 1 June 2026. Separately, an Article 4 direction covering the town centre removes some permitted development rights, so certain conversions need full planning permission. Always check the current position with the council. Licence fees and the costs of meeting standards are generally allowable revenue expenses against rental income, while structural improvements are capital."
+  - question: "What capital gains tax will I pay when I sell a Luton rental?"
+    answer: "For disposals on or after 30 October 2024, residential property gains are taxed at 18 percent for the part falling in the basic-rate band and 24 percent for the higher-rate band. The annual exempt amount is 3,000 pounds per person. Where tax is due, UK residents must report and pay through HMRC's UK property service within 60 days of completion. Private Residence Relief may reduce the gain if the property was once your main home. The rules around mixed use and joint ownership are exactly where specialist advice earns its place."
+  - question: "Is the furnished holiday lettings regime still available?"
+    answer: "No. The furnished holiday lettings (FHL) regime was abolished from 6 April 2025. Former holiday lets are now taxed as standard residential property, so Section 24 applies to their finance costs, and FHL-specific advantages such as capital allowances on new expenditure, Business Asset Disposal Relief, and treating profits as relevant earnings for pensions are no longer available. Transitional rules apply to brought-forward capital allowances pools and losses."
+  - question: "What are the 2027 property income tax rates?"
+    answer: "A 2 percent surcharge on UK property income was announced in the Autumn Budget and is scheduled to take effect from 6 April 2027, with the legislation enacted in Finance Act 2026. From 2027/28 this produces effective property income rates of 22 percent (basic), 42 percent (higher), and 47 percent (additional). For 2026/27 the standard 20, 40, and 45 percent rates still apply. Planning ahead of April 2027 is worthwhile, particularly around ownership structure and the timing of income."
+  - question: "Should I hold my Luton properties in a limited company?"
+    answer: "Sometimes, but not always. Companies deduct finance costs in full (Section 24 does not apply to them) and pay corporation tax rather than income tax, which can suit higher-rate landlords who are growing a portfolio and retaining profit. Against that you weigh stamp duty land tax and capital gains tax on any transfer, mortgage availability and rates, the cost of running a company, and the new Companies House identity-verification rules. The right answer depends on your income, plans, and existing borrowing, which is why this needs modelling rather than a rule of thumb. See our buy-to-let limited company guide for the full picture."
+  - question: "I only have one buy-to-let in Luton. Is specialist advice worth it?"
+    answer: "Even a single property can benefit, particularly if you are a higher-rate taxpayer affected by Section 24, if your qualifying income brings you into MTD for Income Tax, if the property has been your main residence at some point, or if you are weighing whether to expand. A specialist can confirm you are claiming the right expenses, set you up correctly for digital record-keeping, and flag the capital gains position before you sell rather than after."
 ---
 
-<p>Luton's property market has evolved significantly over recent years, with many local landlords building substantial buy-to-let portfolios. Whether you're managing terraced houses in Bury Park or modern apartments near the university, the tax complexities facing property investors have increased dramatically. This raises an important question: do you need a specialist <strong>property accountant in Luton</strong>, or will a general accountant suffice?</p>
+<p>Luton's rental market has grown and changed quickly. Whether you let terraced homes near Bury Park, family houses in Stopsley or Round Green, professional flats handy for the airport and the Thameslink line into London, or rooms to students near the University of Bedfordshire, the tax rules around your income have tightened year on year. That raises a fair question: do you actually need a specialist <strong>property accountant in Luton</strong>, or will a general accountant do?</p>
 
-<p>The answer increasingly points towards specialist expertise. With Section 24 mortgage interest restrictions now fully implemented, Making Tax Digital requirements approaching in April 2026, and new property-specific tax rates coming in 2027, Luton landlords face challenges that general accountants often struggle to navigate effectively.</p>
+<p>For most landlords in 2026 the honest answer leans towards specialist expertise. Making Tax Digital for Income Tax is now live, the Section 24 finance cost restriction is fully in force, the furnished holiday lettings regime has gone, capital gains tax rates on residential property changed in late 2024, and a separate set of property income rates is scheduled for April 2027. Each of these lands differently on a Luton portfolio, and several interact with the borough's own licensing and planning rules.</p>
 
-<h2>The Luton Property Landscape: Why Location Matters</h2>
+<h2>The Luton Picture: Why Local Detail Matters</h2>
 
-<p>Luton presents unique opportunities and challenges for property investors. The town's proximity to London, strong transport links via the M1 and airport employment, plus the presence of the University of Bedfordshire, creates diverse rental markets. Many local landlords operate mixed portfolios including:</p>
+<p>Luton sits on fast rail links into St Pancras, next to a major airport, and around a growing university. That mix produces several distinct rental segments, and each carries its own tax and compliance profile:</p>
 <ul>
-<li>Student accommodation near the university campus</li>
-<li>Family homes in areas like Stopsley and Round Green</li>
-<li>Professional rentals targeting airport and commuter workers</li>
-<li>HMO properties in central Luton areas</li>
-</ul>
-<p>Each property type brings specific tax implications that require specialist knowledge. A <strong>buy to let accountant in Luton</strong> who understands the local market can provide targeted advice that generic accountants simply cannot match.</p>
-<p>A <strong>property accountant in Luton</strong> also brings valuable local market knowledge that national firms often lack. This includes understanding:</p>
-<ul>
-<li>Typical rental yields and market rents across different Luton areas</li>
-<li>Local authority licensing requirements for HMOs</li>
-<li>Planning trends that might affect property values</li>
-<li>Student market dynamics around the university</li>
-<li>Transport infrastructure developments impacting rental demand</li>
-</ul>
-<p>This local expertise enables more accurate financial projections and strategic advice tailored to Luton's specific market conditions.</p>
-
-<h2>What Makes Property Accounting Different?</h2>
-
-<p>Property taxation operates under distinct rules that differ significantly from other business activities. Understanding <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> helps explain why specialisation matters.</p>
-
-<h3>Navigating Section 24 Mortgage Interest Restrictions</h3>
-<p>The most significant change affecting landlords is Section 24, which restricts mortgage interest relief to the basic rate of tax. For a Luton landlord with three BTL properties earning £45,000 rental income annually, this restriction can add thousands to their tax bill compared to pre-2017 rules.</p>
-<p>A specialist property accountant can help navigate Section 24 through strategies such as:</p>
-<ul>
-<li>Optimal timing of property purchases and disposals</li>
-<li>Assessment of <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into a limited company</a></li>
-<li>Spouse transfer strategies to utilise lower tax bands</li>
-<li>Portfolio restructuring to minimise the overall impact</li>
-</ul>
-<p>Proper Section 24 planning might save a higher-rate taxpaying landlord £3,000+ annually.</p>
-
-<h3>Preparing for Making Tax Digital (MTD) Compliance</h3>
-<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a>. This represents a fundamental shift in how rental income and expenses are recorded and reported.</p>
-<p>Many Luton landlords currently use basic spreadsheets or even manual records. MTD requires digital record-keeping and quarterly submissions through compatible software. A specialist property accountant can:</p>
-<ul>
-<li>Recommend appropriate MTD-compatible software</li>
-<li>Set up digital processes for different property types</li>
-<li>Ensure quarterly submissions are accurate and timely</li>
-<li>Handle the technical aspects of API submissions to HMRC</li>
+<li>Student lets and shared houses near the University of Bedfordshire campus</li>
+<li>Family homes in areas such as Stopsley, Round Green and Leagrave</li>
+<li>Professional rentals aimed at airport employees and London commuters</li>
+<li>Houses in multiple occupation (HMOs), concentrated historically in areas including Bury Park and High Town</li>
 </ul>
 
-<h2>Key Tax Risks and Strategic Planning</h2>
+<p>The local detail is not decoration. Luton Borough Council operates an additional licensing scheme for smaller HMOs across the borough and a selective licensing scheme covering the town centre and Park Town areas, with the schemes published to run from 1 June 2026. Separately, an Article 4 direction covering the town centre, in force since October 2023, removes certain permitted development rights, so some commercial-to-residential conversions that once proceeded automatically now need full planning permission. An accountant who understands how licensing costs, standards spending, and planning-related expenditure split between revenue and capital can make sure your return is both accurate and efficient. A national firm working purely from a portal rarely has that context.</p>
 
-<p>Property tax mistakes can be expensive, particularly for landlords with multiple properties. Specialist accountants provide crucial guidance to avoid common pitfalls and implement effective strategies.</p>
+<h2>What Makes Property Accounting a Specialism</h2>
 
-<h3>Avoiding Costly Errors</h3>
-<p>Common errors include incorrect expense claims, which HMRC frequently challenges. A specialist understands which costs qualify as allowable deductions versus capital improvements. For example, replacing a boiler in a Luton rental property is typically an allowable expense, while installing central heating for the first time usually counts as capital expenditure.</p>
-<p>When Luton landlords sell properties, <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax calculations</a> can be complex, especially where properties have been used as both main residences and rentals. Specialist accountants understand the nuances of Principal Private Residence Relief and can often identify legitimate ways to reduce CGT liabilities. The current CGT rates for residential property are 18% for basic-rate taxpayers and 24% for higher-rate taxpayers.</p>
+<p>Property income is taxed under its own rules, which differ from a trade or a typical business. If you want the ground-level view, our guide to <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> sets out the day-to-day work. The points below are where Luton landlords most often need specialist input.</p>
 
-<h3>Incorporation and Structure Advice</h3>
-<p>Many Luton landlords consider moving properties into limited companies to mitigate Section 24. However, the decision of when and how to incorporate requires careful analysis of current and projected income, existing mortgage arrangements, and stamp duty implications. Poor timing can result in unnecessary tax charges running into tens of thousands of pounds.</p>
-<p>As portfolios grow, the optimal ownership structure often changes. Specialist accountants can model different scenarios, considering factors like current corporation tax rates (19% small profits rate for profits up to £50,000, 25% main rate above £250,000, with marginal relief between), future property-specific rates from 2027, inheritance planning, and operational flexibility.</p>
+<h3>Section 24: The Finance Cost Restriction in Full Force</h3>
+<p>Section 24 (S24) is the single change that reshaped landlord taxation, and it is now fully in force. Mortgage interest and other finance costs are no longer deducted from your rental profit. Instead, you receive a tax credit worth 20 percent of those costs (the basic rate). For basic-rate taxpayers the effect is broadly neutral. For higher-rate and additional-rate landlords it is not: tax is charged on rental income before finance costs, and only 20 percent is given back.</p>
+<p>The knock-on effects matter as much as the headline. Because rental income is counted gross of finance costs, it can tip you into a higher band, restrict child benefit through the High Income Child Benefit Charge, or start eroding the personal allowance once total income passes 100,000 pounds (the effective 60 percent band). A specialist works through this rather than assuming interest is still deductible. Realistic responses include reviewing ownership splits between spouses, considering whether <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporating into a limited company</a> stacks up, and timing purchases and disposals sensibly. For the full mechanics, see our <a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 guide</a>.</p>
 
-<h3>Proactive Tax Planning and Portfolio Optimisation</h3>
-<p>Beyond compliance, proactive tax planning can save substantial amounts. This includes timing property disposals to utilise annual CGT exemptions, managing rental income across tax years, and optimising the use of available reliefs and allowances.</p>
-<p>Regular portfolio reviews can identify underperforming properties, optimal refinancing opportunities, and strategic acquisition targets. For Luton landlords, this might involve analysing whether to focus on student accommodation given the university's growth plans, or targeting professional rentals near the airport.</p>
+<h3>Making Tax Digital for Income Tax: Now Live</h3>
+<p>Making Tax Digital for Income Tax (MTD for ITSA) is live from 6 April 2026 for sole-trader landlords and self-employed individuals with qualifying income above 50,000 pounds. The threshold falls to 30,000 pounds from 6 April 2027 and to 20,000 pounds from 6 April 2028. Affected landlords must keep digital records and send quarterly updates to HMRC through compatible software, followed by a final declaration after the tax year ends. Limited companies are outside MTD for ITSA and continue with annual company tax returns.</p>
+<p>Joint owners test the threshold against their share of gross rental income, not the property's total, which is a point that catches couples out. Many Luton landlords still rely on spreadsheets or paper. Moving onto compliant software and a quarterly rhythm is a process change as much as a tax one. A specialist can recommend appropriate software, set up records that separate properties cleanly, and keep the quarterly cycle on track. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords guide</a> covers the deadlines and what qualifying income includes.</p>
 
-<h2>The 2027 Tax Game Changer</h2>
-<p>From April 2027, a separate tax regime applies to property income, with rates of 22% (basic), 42% (higher), and 47% (additional rate). This represents a significant increase from current rates and makes strategic planning even more critical.</p>
-<p>Luton landlords need accountants who understand these future changes and can help restructure portfolios appropriately. This might involve accelerating property disposals before 2027, optimising incorporation timing, or adjusting rental strategies to manage taxable income levels.</p>
+<h3>Capital Gains Tax on Disposal</h3>
+<p>When you sell a Luton rental, the capital gains tax (CGT) position can be more involved than it looks, especially if the property has ever been your main home or is jointly owned. For disposals on or after 30 October 2024, residential gains are taxed at 18 percent within the basic-rate band and 24 percent above it. The annual exempt amount is 3,000 pounds per person. Where tax is due, UK residents must report and pay through HMRC's UK property service within 60 days of completion, and the penalty regime for missing that window is real.</p>
+<p>Private Residence Relief can reduce the gain where the property was once your main residence, with the final nine months of ownership always qualifying. Joint ownership lets a couple use two annual exempt amounts and potentially two basic-rate bands. These are exactly the points a specialist checks before completion, not after. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a> walks through the calculation.</p>
 
-<h2>Cost vs. Value of Specialist Expertise</h2>
-<p>Many landlords initially baulk at <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">specialist accountancy fees</a>, viewing them as an unnecessary expense. However, the cost should be weighed against potential savings and the value of strategic advice.</p>
-<p>A specialist property accountant might charge £1,500-£3,000 annually for a modest portfolio, compared to £800-£1,200 for basic compliance from a general accountant. However, the specialist often identifies tax savings and strategic opportunities worth many times their additional fee. For example, optimal incorporation timing could save tens of thousands in unnecessary tax charges. Even basic expense optimisation often recovers the additional fees within months.</p>
+<h3>The End of the Holiday Let Regime</h3>
+<p>The furnished holiday lettings (FHL) regime was abolished from 6 April 2025. If you previously ran a short-let on FHL terms, it is now taxed as a standard residential let: Section 24 applies to its finance costs, and the old advantages (capital allowances on new expenditure, Business Asset Disposal Relief on sale, and counting profits as relevant earnings for pension contributions) have gone. Transitional rules preserve brought-forward capital allowances pools and ring-fence FHL losses, but the planning landscape is very different. Landlords who still think of these properties as holiday lets for tax need to update their approach.</p>
 
-<h2>When You Definitely Need a Specialist</h2>
-<p>Certain situations make specialist property accounting expertise essential rather than optional:</p>
+<h2>Structure, Incorporation and the 2027 Rates</h2>
+
+<p>Many Luton landlords ask about moving properties into a limited company to sidestep Section 24, because companies deduct finance costs in full and pay corporation tax. It can be the right move for a growing, profit-retaining portfolio, but the decision turns on detail: stamp duty land tax and CGT on any transfer, mortgage availability, the cost and admin of running a company, and the Companies House identity-verification rules now rolling out for directors and people with significant control. Poor timing can trigger unnecessary tax charges, so this needs modelling against your own figures rather than a blanket rule.</p>
+
+<p>Looking ahead, a 2 percent surcharge on UK property income was announced in the Autumn Budget and is scheduled to take effect from 6 April 2027, with the legislation enacted in Finance Act 2026. From 2027/28 that produces effective property income rates of 22 percent (basic), 42 percent (higher), and 47 percent (additional). For 2026/27 the standard 20, 40, and 45 percent rates continue. The scheduled increase sharpens the case for reviewing structure and the timing of income now, while there is room to plan. Our <a href="/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide">landlord tax changes guide</a> tracks the moving parts.</p>
+
+<h2>Where Specialist Advice Earns Its Place</h2>
+
+<p>Some situations make specialist input close to essential rather than optional:</p>
 <ul>
-<li>Portfolio value exceeding £500,000</li>
-<li>Annual rental income above £50,000</li>
-<li>Mixed portfolio including commercial or HMO properties</li>
-<li>Recent or planned incorporation</li>
-<li>Properties held in multiple ownership structures</li>
-<li>Non-resident tax status</li>
-<li>Regular property development activity</li>
+<li>A higher-rate or additional-rate taxpayer feeling the full weight of Section 24</li>
+<li>Qualifying income that brings you into MTD for Income Tax</li>
+<li>A mixed portfolio that includes HMOs or commercial units</li>
+<li>A planned or recent incorporation</li>
+<li>Properties that have been a main residence at some point, where Private Residence Relief is in play</li>
+<li>Non-resident status, where the Non-Resident Landlord scheme and 60-day CGT reporting apply to every disposal</li>
+<li>HMOs in Luton's town centre or Article 4 area, where licensing and planning costs need correct tax treatment</li>
 </ul>
-<p>If any of these apply, the complexity typically justifies specialist fees many times over.</p>
+<p>Common errors a specialist heads off include mis-claiming expenses, the classic capital-versus-revenue confusion (replacing a worn-out boiler in a Luton rental is usually an allowable repair, while installing central heating where there was none is capital), missing the 60-day CGT deadline, and assuming finance costs are still deductible.</p>
 
-<h2>Finding the Right Property Accountant in Luton</h2>
-<p>Not all property accountants are equal. When seeking <strong>landlord tax advice in Luton</strong>, look for:</p>
-<ul>
-<li>Specific property sector experience and qualifications</li>
-<li>Understanding of local market conditions</li>
-<li>Proactive approach to tax planning, not just compliance</li>
-<li>MTD-ready systems and processes</li>
-<li>Clear fee structures and service levels</li>
-<li>Positive testimonials from similar-sized property investors</li>
-</ul>
-<p>The right accountant should demonstrate knowledge of current legislation, upcoming changes, and strategic options relevant to your portfolio size and objectives.</p>
+<h2>Choosing a Property Accountant in Luton</h2>
 
-<h2>Conclusion: The Strategic Imperative</h2>
-<p>The question isn't whether Luton landlords can manage with general accountants – it's whether they can afford not to use specialists. With Section 24 restrictions, incoming MTD requirements, future property tax rate increases, and an increasingly complex regulatory environment, property investment has become a specialised field requiring expert guidance.</p>
-<p>For landlords serious about maximising returns and minimising tax liabilities, partnering with a specialist property accountant represents strategic investment rather than optional expense. The local knowledge, sector expertise, and proactive planning they provide typically deliver value far exceeding their fees.</p>
-<p>As Luton's property market continues evolving, landlords equipped with specialist professional support are better positioned to navigate challenges and capitalise on opportunities. Those relying on generic advice risk falling behind in an increasingly competitive and regulated market.</p>
+<p>Not every accountant who takes on landlords is a property specialist. When you are weighing up <strong>landlord tax advice in Luton</strong>, look for genuine property-sector experience, a proactive planning approach rather than year-end compliance only, MTD-ready systems, and an understanding of local issues such as HMO and selective licensing and the town-centre Article 4 direction. Our note on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> sets out the questions worth asking.</p>
+
+<h2>The Bottom Line for Luton Landlords</h2>
+<p>The question is not really whether Luton landlords can get by with a general accountant. It is whether the rules now in force (live MTD for Income Tax, Section 24 in full, the end of the holiday-let regime, changed CGT rates, and the scheduled 2027 property income rates) reward the local knowledge and forward planning a specialist brings. For most landlords, getting the structure, the records, and the timing right is worth far more than the cost of advice. If you would like a clearer view of where your Luton portfolio stands, our team is happy to talk it through.</p>
