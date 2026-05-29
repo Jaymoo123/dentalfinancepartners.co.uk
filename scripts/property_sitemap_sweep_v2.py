@@ -30,7 +30,7 @@ from xml.etree import ElementTree as ET
 import httpx
 
 ROOT = Path(__file__).resolve().parent
-TODAY = "2026-05-23"
+TODAY = "2026-05-29"
 
 SITEMAP_PATHS = [
     "/sitemap.xml",
@@ -445,7 +445,7 @@ def main():
     for e in partial:
         by_cluster_partial[e["cluster"]].append(e)
 
-    out_json = Path("briefs/property/_topic_gaps_delta_2026-05-23.json")
+    out_json = Path("briefs/property/_topic_gaps_delta_2026-05-29.json")
     payload = {
         "summary": {
             "domains_with_data": len(all_topical_urls),
@@ -464,9 +464,9 @@ def main():
 
 
 def write_md(universe_set, all_topical_urls, no_data, total_topical, net_new, partial, by_cluster_new, by_cluster_partial):
-    out_md = Path("docs/property/topic_gaps_delta_2026-05-23.md")
+    out_md = Path("docs/property/topic_gaps_delta_2026-05-29.md")
     lines = []
-    lines.append("# Property -- topic gaps delta (Wave 4 prep, 2026-05-23)")
+    lines.append("# Property -- topic gaps delta (MW4 prep, 2026-05-29)")
     lines.append("")
     lines.append("Sitemap re-sweep against the data-driven competitor universe v2 (see `competitor_universe_v2.md`). Compared the top competitor domains by SERP frequency against:")
     lines.append("- 376 existing Property pages (`Property/web/content/blog/*.md`)")
