@@ -73,6 +73,28 @@ if ($DryRun) { Write-Host "[DRY-RUN MODE - no changes will be made]" -Foreground
 Write-Step "Deploy + IndexNow for site '$Site'"
 Write-Host ""
 
+# 0. Pre-deploy content gate (Property): block on broken internal /blog links
+#    (the recurring Track-2 defect class). Em-dash / pricing surface as warnings;
+#    run `python scripts/predeploy_gate.py --strict` to enforce those too.
+Write-Step "0/6 Pre-deploy content gate"
+if ($Site -eq 'property') {
+    if ($DryRun) {
+        Write-Warn "Would run: python scripts/predeploy_gate.py"
+    } else {
+        Push-Location $accountingRoot
+        python scripts/predeploy_gate.py
+        $gateExit = $LASTEXITCODE
+        Pop-Location
+        if ($gateExit -ne 0) {
+            Write-Fail "Pre-deploy gate failed (broken internal links). Fix before deploying."
+        }
+        Write-OK "Pre-deploy gate passed"
+    }
+} else {
+    Write-Warn "Pre-deploy gate is Property-only; skipping for '$Site'"
+}
+Write-Host ""
+
 # 1. Validate vercel CLI present
 Write-Step "1/6 Checking vercel CLI"
 $vercel = Get-Command vercel -ErrorAction SilentlyContinue

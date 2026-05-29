@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "description": "Multi-site UK accounting lead-gen network. Root of the npm workspace; per-site Next.js apps live in {site}/web and shared code in packages/*.",
+  "scripts": {
+    "gate:property": "python scripts/predeploy_gate.py"
+  },
   "workspaces": [
     "packages/*",
     "Dentists/web",

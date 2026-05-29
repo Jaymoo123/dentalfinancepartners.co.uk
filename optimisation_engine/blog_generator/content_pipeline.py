@@ -27,6 +27,11 @@ from optimisation_engine.blog_generator.post_processing import (
 )
 from optimisation_engine.blog_generator.topic_repository import Topic
 from optimisation_engine.blog_generator.validation import validate_post
+from optimisation_engine.blog_generator.slug_resolver import (
+    build_slug_map,
+    load_redirects,
+    normalise_links,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -558,6 +563,21 @@ def _format_research_for_prompt(bundle: dict) -> str:
 # ---------------------------------------------------------------------------
 
 
+_RESOLVER_CACHE: dict = {}
+
+
+def _resolver_maps(output_dir: str):
+    """(slug_map, slug_to_cat, dup) for a site, cached per run. slug_map is the
+    route's source of truth; redirect maps come from the site's middleware.ts.
+    Empty maps (site has no corpus yet) make the caller no-op safely."""
+    if output_dir not in _RESOLVER_CACHE:
+        slug_map = build_slug_map(ROOT / output_dir)
+        mw = ROOT / Path(output_dir).parent.parent / "src" / "middleware.ts"
+        slug_to_cat, dup = load_redirects(mw)
+        _RESOLVER_CACHE[output_dir] = (slug_map, slug_to_cat, dup)
+    return _RESOLVER_CACHE[output_dir]
+
+
 def _apply_post_processing(
     *,
     fields: dict,
@@ -617,6 +637,31 @@ def _apply_post_processing(
         audience_link=audience_link,
         min_required=3,
     )
+
+    # Canonicalise internal /blog links: the model chose the slug + anchor; the
+    # resolver fixes only the category prefix it cannot reliably know (a slug
+    # has exactly one real category). Invented slugs are LEFT and flagged - the
+    # resolver never guesses; the pre-deploy gate blocks on any that still 404.
+    output_dir = site_config.get("output_dir")
+    if output_dir:
+        try:
+            slug_map, slug_to_cat, dup = _resolver_maps(output_dir)
+            if slug_map:
+                unresolved: list[str] = []
+                body, u = normalise_links(body, slug_map,
+                                          slug_to_cat=slug_to_cat, dup=dup)
+                unresolved += u
+                for i in range(1, 9):
+                    for k in (f"faq{i}", f"faa{i}"):
+                        if isinstance(fields.get(k), str):
+                            fields[k], u = normalise_links(
+                                fields[k], slug_map,
+                                slug_to_cat=slug_to_cat, dup=dup)
+                            unresolved += u
+                if unresolved:
+                    fields["_unresolved_links"] = sorted(set(unresolved))
+        except Exception as exc:  # never break generation; the gate backstops
+            fields["_link_normalise_error"] = str(exc)
 
     fields["content"] = body
     fields["_cited_sources"] = cited
