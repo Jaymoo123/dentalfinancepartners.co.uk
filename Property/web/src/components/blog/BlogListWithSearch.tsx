@@ -5,8 +5,16 @@ import Link from "next/link";
 import { focusRing } from "@/components/ui/layout-utils";
 import type { BlogPost } from "@/types/blog";
 
+// Lightweight projection: only the fields the list actually renders.
+// Crucially excludes contentHtml so the full article corpus is never
+// serialized into the page payload (see /blog FALLBACK_BODY_TOO_LARGE fix).
+export type BlogListItem = Pick<
+  BlogPost,
+  "title" | "summary" | "category" | "slug" | "date"
+> & { categorySlug: string };
+
 type BlogListWithSearchProps = {
-  posts: Array<BlogPost & { categorySlug: string }>;
+  posts: BlogListItem[];
   categories: Array<{ slug: string; name: string; count: number }>;
   readTimes: Map<string, number>;
   activeCategory?: string;

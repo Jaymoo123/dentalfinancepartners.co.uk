@@ -33,8 +33,16 @@ export default function BlogIndexPage() {
   const categories = getAllCategories();
   const readTimes = new Map(posts.map((p) => [p.slug, calculateReadTime(p.contentHtml)]));
 
-  const postsWithCategorySlug = posts.map((post) => ({
-    ...post,
+  // Project to metadata only. Spreading the full post here serializes every
+  // article's contentHtml into the client payload, which pushed /blog past
+  // Vercel's 19 MB body limit (FALLBACK_BODY_TOO_LARGE). The list never reads
+  // contentHtml; read times are precomputed server-side and passed separately.
+  const postsForList = posts.map((post) => ({
+    title: post.title,
+    summary: post.summary,
+    category: post.category,
+    slug: post.slug,
+    date: post.date,
     categorySlug: getCategorySlug(post),
   }));
 
@@ -100,7 +108,7 @@ export default function BlogIndexPage() {
         <div className={siteContainerLg}>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8">All Articles</h2>
-            <BlogListWithSearch posts={postsWithCategorySlug} categories={categories} readTimes={readTimes} />
+            <BlogListWithSearch posts={postsForList} categories={categories} readTimes={readTimes} />
           </div>
         </div>
       </section>
