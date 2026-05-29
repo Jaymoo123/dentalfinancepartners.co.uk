@@ -59,6 +59,23 @@ const VERIFY_SCHEMA = {
   },
 }
 
+const BRIEF_SCHEMA = { type: 'object', additionalProperties: false, required: ['brief_path', 'statute_citations', 'word_target', 'summary'],
+  properties: { brief_path: { type: 'string' }, statute_citations: { type: 'array', items: { type: 'string' } }, word_target: { type: 'number' }, summary: { type: 'string' } } }
+
+const GUARD_SCHEMA = { type: 'object', additionalProperties: false, required: ['verdict', 'source_metrics', 'canonical_metrics', 'reason'],
+  properties: { verdict: { type: 'string', enum: ['ALLOW', 'REVERSED'] }, source_metrics: { type: 'string' }, canonical_metrics: { type: 'string' }, reason: { type: 'string' } } }
+
+// Draft the gold-reference rewrite brief for a slug whose decision is REWRITE.
+const draftBrief = (prev) => agent(
+  `You are the Track 2 BRIEF stage for "${prev.slug}". The diagnosis decided REWRITE.
+${REQUIRED_READING}
+Diagnosis to build on: ${JSON.stringify(prev.diagnosis)}
+Draft a complete gold-reference rewrite brief matching the depth and 15-section structure of the gold-reference and birmingham city templates above. The brief must include: gap-mode diagnosis, the primary + secondary query targets, the cannibalisation/distinctiveness statement, the section-by-section content plan to ~${prev.diagnosis.target_word_count} words, the statute spine (every section number with its Act, to be verified), the competitor depth benchmark, internal-link targets within the live corpus, and the metaTitle/metaDescription/h1 plan. Obey every HARD RULE (no pricing, no em-dashes, anonymised proof).
+WRITE the brief to briefs/property/track2/batch3/${prev.slug}.md (create the directory if needed via the Write tool path).
+Return a JSON object with: { "brief_path": "briefs/property/track2/batch3/${prev.slug}.md", "statute_citations": ["TCGA 1992 s.222", ...], "word_target": <number>, "summary": "<3-sentence summary of the rewrite approach>" }.`,
+  { label: `brief:${prev.slug}`, phase: 'Brief', schema: BRIEF_SCHEMA }
+).then(b => ({ ...prev, brief: b, brief_path: b.brief_path }))
+
 const results = await pipeline(
   slugs,
 
@@ -70,30 +87,38 @@ Do this:
 1. Read the current live page at Property/web/content/blog/${slug}.md (frontmatter + body). Count its body words.
 2. Pull GSC performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM gsc_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' GROUP BY query ORDER BY impr DESC LIMIT 15;"\` to see what it ranks for. (Empty = INVISIBLE page.)
 3. Cannibalisation scan: Grep Property/web/content/blog for other pages targeting the same intent (for a city page, other pages for the same city/region; for a topic page, sibling topics). Decide: is this a REWRITE (distinct intent, worth lifting) or a REDIRECT-COLLAPSE (a stronger canonical already owns the intent)?
+   CRITICAL collapse-direction rule: a REDIRECT-COLLAPSE 301s THIS page away into a canonical, so it must only ever point a WEAKER page at a STRONGER one. Before proposing redirect-collapse you MUST pull the candidate canonical's OWN GSC the same way (re-run the step-2 query with the canonical's slug) and compare impressions + position + clicks, plus rough internal inbound-link counts. NEVER collapse a page that ranks better, gets more impressions, or has more inbound links than the target - that destroys ranking equity. If THIS page is the stronger one, the decision is REWRITE (and, if anything, the weaker page should later redirect into this one). A deterministic equity guard re-checks every collapse and will reject a reversed-equity direction, so get it right here.
 4. Find the top 2-4 competitor URLs ranking for the primary query (WebFetch a Google/Bing search or known specialist competitor sites; confirm each URL is live).
 5. Identify stale facts / statute risks / pricing-leak in the current page.
 Return the structured diagnosis. Be decisive on rewrite vs redirect-collapse and give a competitor-benchmarked target word count.`,
     { label: `diagnose:${slug}`, phase: 'Diagnose', schema: DIAGNOSE_SCHEMA }
   ).then(d => ({ slug, diagnosis: d })),
 
-  // Stage 2 — Brief (writes to disk; returns a pointer + citations)
+  // Stage 2 — Equity guard (for collapses) then Brief.
+  // A redirect-collapse 301s THIS page away, so it MUST go weaker->stronger. The
+  // diagnose stage chooses the target by reasoning; this DETERMINISTIC guard
+  // re-checks the actual GSC + inbound-link equity and FLIPS a reversed-equity
+  // collapse back to REWRITE. The LLM is removed from the traffic-destroying call.
   (prev) => {
     const d = prev.diagnosis
     if (d.decision === 'redirect-collapse') {
-      log(`${prev.slug}: redirect-collapse -> ${d.redirect_canonical} (no brief drafted)`)
-      return { ...prev, brief_path: null, note: `redirect-collapse to ${d.redirect_canonical}` }
+      return agent(
+        `DETERMINISTIC collapse-equity guard for "${prev.slug}" -> proposed canonical "${d.redirect_canonical}".
+Run EXACTLY this command and report what it prints:
+  python scripts/track2_collapse_guard.py --source ${prev.slug} --canonical ${d.redirect_canonical}
+Return: verdict = the printed VERDICT (ALLOW or REVERSED) verbatim; source_metrics + canonical_metrics = the two printed metric lines; reason = the printed reason(s). The guard is AUTHORITATIVE: REVERSED means collapsing would bury a stronger page and it must be REWRITTEN instead. Do not second-guess it.`,
+        { label: `guard:${prev.slug}`, phase: 'Diagnose', schema: GUARD_SCHEMA }
+      ).then(g => {
+        if (g.verdict === 'REVERSED') {
+          log(`${prev.slug}: collapse -> ${d.redirect_canonical} BLOCKED by equity guard (${g.reason}); FLIPPING to REWRITE`)
+          prev.diagnosis = { ...d, decision: 'rewrite', redirect_canonical: '', collapse_blocked_to: d.redirect_canonical, guard_reason: g.reason }
+          return draftBrief(prev)
+        }
+        log(`${prev.slug}: collapse -> ${d.redirect_canonical} guard ALLOW`)
+        return { ...prev, brief_path: null, guard: g, note: `redirect-collapse to ${d.redirect_canonical} (equity-guard ALLOW)` }
+      })
     }
-    return agent(
-      `You are the Track 2 BRIEF stage for "${prev.slug}". The diagnosis decided REWRITE.
-${REQUIRED_READING}
-Diagnosis to build on: ${JSON.stringify(d)}
-Draft a complete gold-reference rewrite brief matching the depth and 15-section structure of the gold-reference and birmingham city templates above. The brief must include: gap-mode diagnosis, the primary + secondary query targets, the cannibalisation/distinctiveness statement, the section-by-section content plan to ~${d.target_word_count} words, the statute spine (every section number with its Act, to be verified), the competitor depth benchmark, internal-link targets within the live corpus, and the metaTitle/metaDescription/h1 plan. Obey every HARD RULE (no pricing, no em-dashes, anonymised proof).
-WRITE the brief to briefs/property/track2/batch3/${prev.slug}.md (create the directory if needed via the Write tool path).
-Return a JSON object with: { "brief_path": "briefs/property/track2/batch3/${prev.slug}.md", "statute_citations": ["TCGA 1992 s.222", ...], "word_target": <number>, "summary": "<3-sentence summary of the rewrite approach>" }.`,
-      { label: `brief:${prev.slug}`, phase: 'Brief',
-        schema: { type: 'object', additionalProperties: false, required: ['brief_path', 'statute_citations', 'word_target', 'summary'],
-          properties: { brief_path: { type: 'string' }, statute_citations: { type: 'array', items: { type: 'string' } }, word_target: { type: 'number' }, summary: { type: 'string' } } } }
-    ).then(b => ({ ...prev, brief: b, brief_path: b.brief_path }))
+    return draftBrief(prev)
   },
 
   // Stage 3 — Adversarial verify
