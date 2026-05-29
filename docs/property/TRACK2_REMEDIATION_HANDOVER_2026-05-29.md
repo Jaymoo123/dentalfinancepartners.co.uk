@@ -1,5 +1,7 @@
 # Track 2 REMEDIATION handover — fresh manager start-here (2026-05-29 PM)
 
+> **⚠️ SUPERSEDED (2026-05-29 PM).** Workstream A (CityService remediation) described below is now DONE, DEPLOYED, and VERIFIED LIVE (commit `dfb3d277`). For the next stage, read **`TRACK2_WSB_HANDOVER_2026-05-29.md`** instead — it covers WS-B (corpus 2027-framing sweep), WS-C (corpus 404-link fix), and WS-D (engine hardening), with verified ground truth and the worklist. The remediation steps in the rest of this file are complete; keep it only for historical context.
+
 **Read THIS first, then `docs/property/TRACK2_CITYSERVICE_AUTONOMOUS_PICKUP_2026-05-29.md` (full session state + per-cluster slug lists + engine commands).**
 
 **Acknowledge the user with one short message**, e.g.: *"Picked up. CityService cluster (47 pages) is built + deployed, but an independent QA pass found real blocking errors on live pages that the writer-verify missed. I'm halting new clusters and remediating: verify-then-fix the confirmed issues, QA-sweep all ~40 live pages, fix the broken-links-from-lifts, redeploy. FA 2026 enactment confirmed (not an issue). Ready."* Then start remediation.
