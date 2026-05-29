@@ -197,6 +197,61 @@ def selftest(blog_dir=_DEFAULT_BLOG, middleware_path=_DEFAULT_MW) -> int:
     return 0 if ok else 1
 
 
+def fix_files(paths, *, blog_dir=_DEFAULT_BLOG, middleware_path=_DEFAULT_MW,
+              apply=True):
+    """Canonicalise internal /blog links in each given .md file IN PLACE.
+
+    This is the content_pipeline `_apply_post_processing` link-fix, exposed for
+    the Track 2 legacy-rewrite path - which writes .md files directly with the
+    Write/Edit tools and so BYPASSES the pipeline. The whole file text is
+    normalised, so links in the HTML body and in frontmatter `faqs` are both
+    fixed; non-href text (frontmatter slug/category, prose) is never touched.
+
+    Returns (changed_files, unresolved) where `unresolved` is
+    [(file_stem, href), ...] for invented slugs (a link to a page that does not
+    exist and is not a redirect source) - LEFT unchanged, never guessed."""
+    slug_map = build_slug_map(blog_dir)
+    valid_categories = set(slug_map.values())
+    slug_to_cat, dup = load_redirects(middleware_path)
+    changed = 0
+    all_unresolved: list[tuple[str, str]] = []
+    for path in paths:
+        p = pathlib.Path(path)
+        txt = p.read_text(encoding="utf-8")
+        new, unresolved = normalise_links(
+            txt, slug_map, valid_categories=valid_categories,
+            slug_to_cat=slug_to_cat, dup=dup)
+        if new != txt:
+            changed += 1
+            if apply:
+                p.write_text(new, encoding="utf-8")
+        for u in unresolved:
+            all_unresolved.append((p.stem, u))
+    return changed, all_unresolved
+
+
 if __name__ == "__main__":
     import sys
+    argv = sys.argv[1:]
+    if argv and argv[0] == "--fix":
+        # --fix <file.md> [...]  |  --fix --all   [--dry-run]
+        dry = "--dry-run" in argv
+        if "--all" in argv:
+            files = [str(p) for p in sorted(_DEFAULT_BLOG.glob("*.md"))]
+        else:
+            files = [a for a in argv[1:] if not a.startswith("--")]
+        if not files:
+            print("usage: slug_resolver.py --fix <file.md> [<file.md> ...] "
+                  "| --fix --all   [--dry-run]")
+            sys.exit(2)
+        changed, unresolved = fix_files(files, apply=not dry)
+        verb = "would canonicalise" if dry else "canonicalised"
+        print(f"slug_resolver --fix: {verb} {changed}/{len(files)} file(s); "
+              f"{len(unresolved)} unresolved (invented) link(s)")
+        for stem, href in unresolved:
+            print(f"  UNRESOLVED (invented slug, left as-is): [{stem}] {href}")
+        # Exit non-zero ONLY when an invented slug remains - i.e. the writer
+        # linked to a page that does not exist (a category fix can't help). The
+        # writer's Normalise stage surfaces these for repointing.
+        sys.exit(1 if unresolved else 0)
     sys.exit(selftest())

@@ -43,7 +43,12 @@ param(
 
     [switch]$DryRun,
     [switch]$SkipPreview,
-    [switch]$SkipIndexNow
+    [switch]$SkipIndexNow,
+
+    # Enforce strict independent-QA coverage for a deploy batch: the gate then
+    # requires every slug in optimisation_engine/.cache/qa_verdict_<QaBatch>.json
+    # to be all_clear with a matching file hash, else aborts.
+    [string]$QaBatch
 )
 
 $ErrorActionPreference = 'Stop'
@@ -78,15 +83,17 @@ Write-Host ""
 #    run `python scripts/predeploy_gate.py --strict` to enforce those too.
 Write-Step "0/6 Pre-deploy content gate"
 if ($Site -eq 'property') {
+    $gateArgs = @('scripts/predeploy_gate.py')
+    if ($QaBatch) { $gateArgs += @('--qa-batch', $QaBatch) }
     if ($DryRun) {
-        Write-Warn "Would run: python scripts/predeploy_gate.py"
+        Write-Warn "Would run: python $($gateArgs -join ' ')"
     } else {
         Push-Location $accountingRoot
-        python scripts/predeploy_gate.py
+        python @gateArgs
         $gateExit = $LASTEXITCODE
         Pop-Location
         if ($gateExit -ne 0) {
-            Write-Fail "Pre-deploy gate failed (broken internal links). Fix before deploying."
+            Write-Fail "Pre-deploy gate failed (broken links / known-bad QA pages). Fix before deploying."
         }
         Write-OK "Pre-deploy gate passed"
     }

@@ -3,6 +3,7 @@ export const meta = {
   description: 'Execute Track 2 legacy rewrites: per page pull GSC+GA4+competitors, rewrite the .md in place (de-leak, de-stale, depth), then adversarially verify statutes/pricing/facts/cannibalisation/HTML',
   phases: [
     { title: 'Rewrite', detail: 'data-grounded in-place rewrite of the page .md' },
+    { title: 'Normalise', detail: 'deterministic internal-link canonicalisation (slug_resolver)' },
     { title: 'Verify', detail: 'adversarial statute/pricing/facts/cannibalisation/HTML check' },
   ],
 }
@@ -43,6 +44,17 @@ const REWRITE_SCHEMA = {
   },
 }
 
+const NORMALISE_SCHEMA = {
+  type: 'object', additionalProperties: false,
+  required: ['slug', 'canonicalised', 'unresolved'],
+  properties: {
+    slug: { type: 'string' },
+    canonicalised: { type: 'boolean', description: 'true if the resolver reported it rewrote one or more internal-link categories' },
+    unresolved: { type: 'array', items: { type: 'string' },
+      description: 'exact hrefs the resolver printed as UNRESOLVED - the writer linked to a page that does not exist; needs repointing. Empty if none.' },
+  },
+}
+
 const VERIFY_SCHEMA = {
   type: 'object', additionalProperties: false,
   required: ['slug', 'statutes_ok', 'pricing_clean', 'em_dash_clean', 'facts_current', 'cannibalisation_ok', 'html_valid', 'verdict', 'flags'],
@@ -73,8 +85,23 @@ IMPORTANT: after you have SAVED the file, your final action is to return ONLY {s
     { label: `rewrite:${slug}`, phase: 'Rewrite', schema: REWRITE_SCHEMA }
   ).then(rw => ({ slug, rewrite: rw })),
 
+  // Stage 2 - deterministic link canonicalisation (NOT an LLM judgement). The
+  // slug_resolver fixes the one thing the writer reliably gets wrong: the
+  // /blog/<category>/ prefix (a slug has exactly one real category). It LEAVES
+  // links to nonexistent pages and prints them as UNRESOLVED for repointing.
+  // This is the WS-D root-cause fix wired into the legacy-rewrite path (the
+  // net-new generator already does this in content_pipeline).
+  (prev) => agent(
+    `Deterministic internal-link canonicalisation for the just-rewritten page Property/web/content/blog/${prev.slug}.md.
+Run EXACTLY this command (it rewrites every internal /blog link to the one real category for the slug the writer chose, collapses known 301 hops, and LEAVES any link to a nonexistent page - printing it as UNRESOLVED):
+  python optimisation_engine/blog_generator/slug_resolver.py --fix Property/web/content/blog/${prev.slug}.md
+Do NOT hand-edit links yourself; the script is the source of truth. Then report what it printed: canonicalised = true if it said it canonicalised the file, and unresolved = the exact list of any "UNRESOLVED" hrefs (empty array if none). Any UNRESOLVED entry means the writer linked to a page that does not exist - it must be repointed, so report each verbatim.`,
+    { label: `normalise:${prev.slug}`, phase: 'Normalise', schema: NORMALISE_SCHEMA }
+  ).then(nz => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: nz })),
+
   (prev) => agent(
     `You are the adversarial VERIFY stage for the rewritten page Property/web/content/blog/${prev.slug}.md. Default skeptical.
+The deterministic Normalise stage reported these UNRESOLVED (invented) links that still need repointing: [${(prev.normalise && prev.normalise.unresolved || []).join(', ') || 'none'}]. If that list is non-empty, set html_valid:false and add each to flags.
 Read the file (post-rewrite). Check:
 1. STATUTES: every statute/section cited - WebFetch legislation.gov.uk to confirm it exists, says what the page claims, and (for any Finance Act) its Royal Assent (Bill-vs-enacted).
 2. PRICING: NO fees/fee-ranges/hourly rates/percentage-of-rent fees anywhere (legitimate tax figures like the GBP3,000 CGT allowance or SDLT bands are fine).
@@ -84,11 +111,13 @@ Read the file (post-rewrite). Check:
 6. HTML valid (no leaked markdown, frontmatter intact).
 Return the structured verdict. pass only if statutes_ok AND pricing_clean AND em_dash_clean AND facts_current AND cannibalisation_ok AND html_valid.`,
     { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA }
-  ).then(v => ({ slug: prev.slug, rewrite: prev.rewrite, verify: v }))
+  ).then(v => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, verify: v }))
 )
 
 const ok = results.filter(Boolean)
 const c = (x) => ok.filter(r => r.verify && r.verify.verdict === x).length
-log(`Rewrite-writer done: ${c('pass')} pass, ${c('pass-with-fixes')} pass-with-fixes, ${c('fail')} fail`)
+const unresolvedTotal = ok.reduce((n, r) => n + ((r.normalise && r.normalise.unresolved || []).length), 0)
+log(`Rewrite-writer done: ${c('pass')} pass, ${c('pass-with-fixes')} pass-with-fixes, ${c('fail')} fail | ${unresolvedTotal} unresolved (invented) link(s) to repoint`)
 return ok.map(r => ({ slug: r.slug, verdict: r.verify && r.verify.verdict, flags: (r.verify && r.verify.flags) || [],
-  words_after: r.rewrite && r.rewrite.words_after, done: r.rewrite && r.rewrite.done }))
+  words_after: r.rewrite && r.rewrite.words_after, done: r.rewrite && r.rewrite.done,
+  unresolved_links: (r.normalise && r.normalise.unresolved) || [] }))
