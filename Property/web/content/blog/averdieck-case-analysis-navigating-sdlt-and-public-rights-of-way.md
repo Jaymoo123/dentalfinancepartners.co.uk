@@ -143,5 +143,3 @@ editorialNote: "MegaWave 1 batch M1-A-B2 pick A9. Single-case analysis page on J
 <h2>Where this page sits in the cluster</h2>
 
 <p>This is a single-case-analysis page on a leading FTT authority for the public-rights-of-way mixed-use claim. For the broader residential / mixed-use doctrine, see our SDLT mixed-use property classification page. For the related building-habitability sub-line of section 116(1)(a), see our Bewley uninhabitable-property test page. For the broader case-law cluster of recent SDLT and LBTT tribunal decisions, see our companion pages on the Archer LBTT lease-extension transitional decision (A8), the FTT residential SDLT rates with garden easement decision (A14), the FTT late SDLT appeal refusal (A15), and the Horton Hall residential-versus-non-residential dispute (A16). For the contingent-fee SDLT-refund firm context, see our SDLT refund scams page. For the additional dwellings surcharge interaction that mixed-use claims often seek to disapply alongside the rate-table reclassification, see our second-home SDLT additional dwellings surcharge guide.</p>
-</content>
-</invoke>

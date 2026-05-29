@@ -163,5 +163,3 @@ editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk MTD for VAT 
 <h2>When to seek advice</h2>
 
 <p>If the incorporation question is genuinely on the table for you in 2026 or 2027, the time to model the full trade-off is before the next acquisition or disposal locks the structure in. The MTD factor will rarely be the deciding voice, but it does interact with the timing of any property transfer (the personal-MTD obligation continues until the property is fully transferred or the three-year exit clock runs). The right sequence almost always reduces the total tax friction by tens of thousands of pounds across a typical portfolio.</p>
-</content>
-</invoke>

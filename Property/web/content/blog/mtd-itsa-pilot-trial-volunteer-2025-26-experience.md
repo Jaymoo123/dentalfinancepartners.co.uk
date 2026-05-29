@@ -193,5 +193,3 @@ editorialNote: "Verified against gov.uk MTD ITSA pilot guidance and house positi
 <h2>When to seek advice</h2>
 
 <p>The pilot vs wait decision is usually clearer than the post-mandate operational questions, but it benefits from a short advisory conversation for landlords near the threshold where the choice is finely balanced. If the answer to "would I be in at the April 2026 mandate anyway?" is yes and the landlord's bookkeeping is already in cloud software, the pilot conversation is shorter; if the answer is no and the cohort mandate is the April 2028 £20,000 line, three years of voluntary cost is rarely the right answer. Anywhere in between, talk it through.</p>
-</content>
-</invoke>

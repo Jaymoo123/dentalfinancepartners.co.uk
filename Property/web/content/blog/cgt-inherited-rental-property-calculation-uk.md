@@ -313,4 +313,3 @@ faqs:
 </ul>
 
 <p>Related life-event CGT pages: <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on property transfers between spouses</a> (where an inherited property is subsequently transferred to a spouse), and <a href="/blog/capital-gains-tax/cgt-divorce-property-transfer-tax-implications">CGT on property transfers during divorce</a> (where a separating beneficiary holds an inherited property).</p>
-</content>

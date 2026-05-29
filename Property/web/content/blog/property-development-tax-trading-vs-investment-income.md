@@ -196,5 +196,3 @@ faqs:
 <h2>Where to take this from here</h2>
 
 <p>For ongoing landlord activity, the practical position is usually clear: long-hold rental is investment, taxed under the rental income and CGT framework. For developers, the classification is the central tax question and should be addressed structurally at the start of each project, not at year-end. Our wider guides cover the structural alternatives: the <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company guide</a>, the <a href="/blog/landlord-tax-essentials/residential-property-developer-tax-uk">residential property developer tax page</a>, and the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT pillar</a> for the investment-classification disposal mechanics.</p>
-</content>
-</invoke>

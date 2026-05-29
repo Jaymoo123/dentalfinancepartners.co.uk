@@ -287,4 +287,3 @@ faqs:
 <li><a href="/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting">Non-resident CGT on UK property</a>: where the owner becomes non-resident before disposal</li>
 <li><a href="/blog/capital-gains-tax/cgt-commercial-property-different-residential">CGT on commercial vs residential property</a>: where one of the elected residences is a mixed-use property</li>
 </ul>
-</content>

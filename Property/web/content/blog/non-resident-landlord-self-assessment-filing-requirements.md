@@ -262,5 +262,3 @@ faqs:
 <ul>
 <li><a href="/blog/non-resident-landlord-tax/foreign-tax-credit-uk-property-overseas-landlords">Foreign Tax Credit for UK Landlords with Overseas Property: TIOPA 2010 Claim Mechanics</a>, the structural mirror image for UK-resident landlords with overseas property (the SA106 question from the opposite direction).</li>
 </ul>
-</content>
-</invoke>

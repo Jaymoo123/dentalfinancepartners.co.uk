@@ -173,5 +173,3 @@ editorialNote: "Verified against gov.uk MTD ITSA outreach campaign and house pos
 <h2>When to seek advice</h2>
 
 <p>The verification routes (figure-check, structural exclusion, post-reference-year change) are within most landlords' capability to run themselves. The dispute and exemption routes benefit from professional help because the evidence requirements and the HMRC interaction sequence are not always obvious from the gov.uk guidance. If the letter has surfaced an unexpected structural issue (you thought you were in a Ltd Co but the timing means the personal-ownership year still triggers MTD; you thought partnership deferral applied but the partnership has a non-individual partner that changes the analysis), the right action is to talk to an adviser before responding to HMRC, not after.</p>
-</content>
-</invoke>

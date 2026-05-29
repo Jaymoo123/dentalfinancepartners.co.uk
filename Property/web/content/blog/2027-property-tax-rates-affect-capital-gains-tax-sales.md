@@ -183,5 +183,3 @@ faqs:
 </ul>
 
 <p>For modelling on a specific portfolio, the form at the bottom of the page routes through to a property tax specialist who handles the sell-versus-hold-versus-incorporate analysis as part of standard work.</p>
-</content>
-</invoke>

@@ -199,5 +199,3 @@ editorialNote: Full rewrite to include insurance claim payout treatment (income 
 <h2>What this means in practice</h2>
 
 <p>Premium deductibility for routine landlord cover is one of the more settled areas of property tax: get the wholly-and-exclusively test right, apportion where personal use exists, and claim everything that is allowable. The payout side is where most landlords benefit from professional input, particularly on capital claims where the rollover and CGT base cost interaction can materially affect the eventual disposal liability. For routine premiums, in-house bookkeeping with MTD-compliant software is usually sufficient. For significant claims (any meaningful capital event, contested rent guarantee, or major repair reimbursement), getting the treatment right at the time of the claim avoids a much harder reconstruction exercise at year-end or on disposal.</p>
-</content>
-</invoke>

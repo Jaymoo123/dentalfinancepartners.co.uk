@@ -235,5 +235,3 @@ faqs:
 <p>For a higher-rate landlord planning to grow a leveraged portfolio over a 10-plus-year horizon, the SPV route is usually the right answer, and the April 2027 income tax change has widened the gap further. For a basic-rate landlord with a single low-leverage property held for income, the SPV is usually unnecessary. The decision is portfolio-specific and turns on leverage, marginal rate, growth plans and extraction timing.</p>
 
 <p>The decisions worth getting professional input on at the SPV setup stage are the share structure (alphabet shares, spouse split, future growth share planning), the equity-versus-director-loan funding mix (which compounds for years afterwards in extraction efficiency), and the SIC code choice (which is fixed at incorporation and easier to set correctly than to change). After setup, the SPV runs on standard corporation tax mechanics, with the usual annual rhythm of accounts, CT600 and (where applicable) ATED.</p>
-</content>
-</invoke>

@@ -159,5 +159,3 @@ faqs:
 <h2>Are you hiring a property accountant rather than becoming one?</h2>
 
 <p>This page is the careers guide. If you are a landlord looking for a property accountant for your portfolio, our companion pages set out what the work involves and how to evaluate options: <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what does a property accountant do</a>, <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">how much does a property accountant cost</a>, and our city-specific guides for landlords in Peterborough, Leeds, Liverpool, Manchester, Birmingham, Bristol, Swansea, Leicester and other UK cities.</p>
-</content>
-</invoke>

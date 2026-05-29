@@ -220,5 +220,3 @@ faqs:
 <h2>Where this fits in the wider compliance picture</h2>
 
 <p>CGT compliance on disposal is one element of a broader tax position that also includes income tax on rental profits (now within <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> for sole-trader landlords above £50,000 from 6 April 2026), Section 24 mortgage interest restriction, and where the property is held through a company, ATED and corporation tax. The 60-day return is the most time-sensitive of these, but the others compound costs over the holding period and can shift the buy/sell decision in their own right.</p>
-</content>
-</invoke>

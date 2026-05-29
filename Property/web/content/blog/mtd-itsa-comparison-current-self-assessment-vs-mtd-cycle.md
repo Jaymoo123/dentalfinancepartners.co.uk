@@ -243,5 +243,3 @@ editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk Self Assessm
 <h2>When to seek advice</h2>
 
 <p>The comparison is straightforward to understand; the operational transition is where landlords commonly need help. Choosing the right MTD-compatible software for the portfolio shape, setting up bank feeds across multiple property-bank accounts, deciding whether to keep the existing accountant or move to one with stronger MTD agent workflows, and timing the first quarterly submission for portfolios that were previously casual about in-year record-keeping, all benefit from a short advisory conversation before the first cycle bites. The cost of getting the first three months wrong is mostly recoverable; the cost of getting the first three quarterly submissions wrong is harder to unwind.</p>
-</content>
-</invoke>

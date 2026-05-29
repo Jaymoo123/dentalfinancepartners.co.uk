@@ -287,4 +287,3 @@ faqs:
 </ul>
 
 <p>Cross-references on the cluster of cross-border applied-mechanic pages: <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on property transfers between spouses</a> (where one spouse is non-resident); <a href="/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk">CGT on inherited rental property</a> (where a beneficiary is non-resident); <a href="/blog/capital-gains-tax/cgt-divorce-property-transfer-tax-implications">CGT on property transfers in divorce</a> (where one spouse relocates during the settlement).</p>
-</content>

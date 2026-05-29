@@ -135,5 +135,3 @@ editorialNote: "MegaWave 1 batch M1-A-B2 pick A8. Single-case analysis page on A
 <h2>Where this page sits in the cluster</h2>
 
 <p>This is a single-case-analysis page on a narrow but operationally important Scottish FTT decision at the SDLT-to-LBTT transitional boundary. For the broader Scottish LBTT regime including the 8% Additional Dwelling Supplement (ADS) and the Scottish first-time buyer relief, see our <a href="/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics">Scottish LBTT first-time buyer relief page</a> and the broader Scottish LBTT review cluster. For the English equivalent statutory architecture on lease variations under FA 2003 Schedule 17A paragraph 9, see our SDLT leasehold extension versus fresh purchase page. For the broader case-analysis cluster of recent SDLT and LBTT tribunal decisions, see our companion case-law pages on the FTT residential SDLT rates with garden easement decision (A14), the FTT late SDLT appeal refusal (A15), the Horton Hall residential-versus-non-residential dispute (A16), and the Averdieck case on SDLT and public rights of way (A9).</p>
-</content>
-</invoke>

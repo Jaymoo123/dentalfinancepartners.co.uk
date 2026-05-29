@@ -266,4 +266,3 @@ faqs:
 </ul>
 
 <p>Related CGT cluster pages: <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a> (pillar), <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates 2026/27</a>, <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">CGT annual exempt amount</a>, <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">CGT calculation walkthrough</a>, <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">gifting to non-spouses</a>.</p>
-</content>

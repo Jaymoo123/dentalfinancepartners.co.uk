@@ -201,5 +201,3 @@ faqs:
 <p>The exit decision sits inside the broader tax framework: Section 24 income tax friction during ownership, MTD compliance during the run-off years for in-scope landlords, the 2027 income tax change, the personal-vs-company structural decision. A coherent exit strategy aligns all of these rather than treating the disposal as a one-off event.</p>
 
 <p>For ongoing portfolio management see our <a href="/blog/portfolio-management/multi-property-landlord-tax-planning-strategies-5-plus-properties">multi-property tax planning page</a>. For Section 24 mechanics see the <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 pillar</a>. For the limited company alternative see the <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company guide</a>. For specific disposal mechanics see the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT pillar</a>.</p>
-</content>
-</invoke>

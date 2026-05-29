@@ -237,5 +237,3 @@ faqs:
 <h2>What this means in practice</h2>
 
 <p>The 2027 property income tax rate change is meaningful for higher-rate geared landlords, modestly significant for higher-rate ungeared landlords, and marginal for basic-rate landlords with small portfolios. The headline rate increase is 2 percentage points across all three bands, but the effect is amplified by the Section 24 mechanics for individual residential landlords with mortgage interest. The right response is to model the actual portfolio against the new rates rather than react to the announcement in isolation, with the limited company route as the natural alternative structure for the landlords most affected.</p>
-</content>
-</invoke>

@@ -345,5 +345,3 @@ faqs:
 </ul>
 
 <p>HMRC's standard retention period for business taxpayers (which includes most landlords) is five years and 10 months from the end of the relevant tax year. In practice, retain records for at least six years after the disposal, with longer retention for any unusual feature of the computation.</p>
-</content>
-</invoke>

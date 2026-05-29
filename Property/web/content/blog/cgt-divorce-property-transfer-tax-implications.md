@@ -259,4 +259,3 @@ faqs:
 </ul>
 
 <p>HMRC's retention standard for business taxpayers is five years and 10 months from the end of the tax year of the eventual disposal by the receiving spouse. In practice, retain the divorce-related evidence indefinitely, because the receiving spouse may hold the property for many years before disposal and the inherited base cost figure may need to be evidenced decades after the transfer.</p>
-</content>

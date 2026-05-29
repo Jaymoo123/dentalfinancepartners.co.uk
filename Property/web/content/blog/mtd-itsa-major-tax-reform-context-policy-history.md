@@ -191,5 +191,3 @@ editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk 19 December 
 <li>Spring Statement 2025 HTML publication on gov.uk, the corrected late-payment regime for MTD ITSA cohorts.</li>
 <li>gov.uk MTD ITSA collection, the current operational guidance.</li>
 </ul>
-</content>
-</invoke>

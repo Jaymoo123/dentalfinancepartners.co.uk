@@ -212,5 +212,3 @@ faqs:
 <p>The case for buying through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> rarely turns on SDLT, because both routes pay the surcharge. It usually turns on whether the higher-rate income tax saving from full mortgage interest deduction inside the company, compounded over the holding period, exceeds the additional friction (corporation tax, dividend tax on extraction, accountancy and filing costs). Modelling both routes for a specific property and a specific investor profile is the only way to answer it properly.</p>
 
 <p>Compliance through ownership and on exit, including <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> (live from 6 April 2026 for sole-trader landlords above £50,000), is part of the same picture and should be factored into the buy decision rather than treated as a downstream worry.</p>
-</content>
-</invoke>

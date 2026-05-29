@@ -183,5 +183,3 @@ editorialNote: "Verified against gov.uk MTD ITSA collection and house position Â
 <p>Most landlords thinking about MTD exit are doing so because something material has changed in their portfolio: a property has been sold, a tenant has left for a long period, the FHL regime ended, or a move abroad is in view. The exit notification itself is administrative. The choice between cessation, the three-year rule, and staying in voluntarily is the strategic decision, and it interacts with CGT timing, S24 finance-cost cash flows, incorporation conversations, and (in the expat case) split-year residence treatment.</p>
 
 <p>If any of these are on your horizon over the next 12 to 36 months, the time to take advice is now rather than at the end of the three-year window. Choices made in the first sub-threshold year (such as whether to keep or sell a particular property) frequently determine whether the three-year clock starts cleanly or has to restart.</p>
-</content>
-</invoke>

@@ -220,5 +220,3 @@ faqs:
 </ul>
 
 <p>The first MTD year is the one where landlords typically need the most support, because the system is new and the points-based penalty regime starts running from day one. After the first cycle is complete, most landlords find subsequent quarters straightforward.</p>
-</content>
-</invoke>

@@ -316,4 +316,3 @@ faqs:
 <li>Income tax differential: Section 24 finance cost restriction guide (residential only)</li>
 <li>Corporate structure: <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a></li>
 </ul>
-</content>
