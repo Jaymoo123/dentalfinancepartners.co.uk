@@ -12,6 +12,7 @@ const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
 const slugs = A.slugs || []
 const depth = A.depth || 'full'   // 'full' = gold-reference depth; 'refresh' = de-leak/de-stale/local-depth, lighter
 const cluster = A.cluster || 'CityService'
+const briefDir = A.briefDir || ''   // if set, the writer reads <briefDir>/<slug>.md + .corrections.md as its plan
 if (!slugs.length) { log('No slugs in args.slugs'); return [] }
 log(`Rewrite-writer: ${slugs.length} page(s), depth=${depth}, cluster=${cluster}`)
 
@@ -78,6 +79,7 @@ const results = await pipeline(
 ${HARD}
 ${DEPTH_NOTE}
 Steps:
+${briefDir ? `0. PLAN (read FIRST if present): \`${briefDir}/${slug}.md\` is your verified rewrite brief - follow its gap-mode diagnosis, section-by-section content plan, target word count, statute spine, competitor depth benchmark, and internal-link targets. ALSO read \`${briefDir}/${slug}.corrections.md\` if present and PREFER its statute corrections over anything in the brief (the brief's statute spine may carry adversarially-flagged miscites). If neither file exists, proceed from the data pull below. Regardless: independently re-verify EVERY statute you cite at legislation.gov.uk at write time and trust legislation.gov.uk over the brief.` : ''}
 1. Run \`python -m optimisation_engine.track2.pull_page_data --slug ${slug}\` for GSC queries (what it should target), GA4 engagement (where users engage/bounce, if any), competitor signals, and the parsed content map.
 2. Read Property/web/content/blog/${slug}.md in full (frontmatter + body).
 3. Rewrite the .md IN PLACE per the depth note and every hard rule: target the primary + secondary queries the GSC data shows, fix all stale facts, strip all pricing, add genuine specificity, proper HTML body, internal links, FAQs in frontmatter. Use the Write/Edit tools on Property/web/content/blog/${slug}.md.
