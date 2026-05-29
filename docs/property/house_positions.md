@@ -192,10 +192,11 @@ Bands are indexed annually (CPI for the year ended September). 2026/27 figures a
 - Where the credit is restricted by the cap, the un-credited portion **carries forward** indefinitely.
 - **Applies to individuals, partnerships, and trusts.** Does NOT apply to limited companies (companies deduct interest in full pre-CT).
 - **Furnished holiday lets:** S24 did not apply while FHL was a separate regime; from 6 April 2025 (FHL abolition) it now applies to former FHL properties under the standard residential let rules.
+- **From 2027/28 (Finance Act 2026, Royal Assent 18 March 2026):** the finance-cost tax reducer is given at the new **property basic rate of 22%**, NOT frozen at 20% (FA 2026 Sch 1 amends ITTOIA 2005 ss.274AA/274C and ITA 2007 s.399B). The three-part cap above is computed at 22% for 2027/28 onwards; 20% applies for 2026/27 and earlier. Because the reducer rate tracks the basic property income rate, a basic-rate landlord sees NO new wedge in 2027/28; a higher/additional-rate landlord's relief rises from 20% to 22% but still sits well below their 42%/47% rate (see §7).
 
 **Interaction with the £100k personal allowance taper:** the credit doesn't undo the taper. Rental profit is added to total income BEFORE the credit; £1 of personal allowance is lost for every £2 above £100,000, fully eliminated at £125,140. This is the "60% effective marginal rate" trap.
 
-**Do not write:** "Mortgage interest is deductible 100%" (only for companies). "S24 is repealed" (in force). "S24 doesn't apply to higher-rate taxpayers" (it does — that's the point).
+**Do not write:** "Mortgage interest is deductible 100%" (only for companies). "S24 is repealed" (in force). "S24 doesn't apply to higher-rate taxpayers" (it does — that's the point). "The reducer/credit stays at 20% in 2027/28" (it rises to the 22% property basic rate). "A new basic-rate wedge opens in 2027/28" (it does not — the reducer tracks the 22% rate).
 
 ---
 
@@ -243,15 +244,15 @@ Bands are indexed annually (CPI for the year ended September). 2026/27 figures a
 
 ## 7. April 2027 property income tax surcharge — house framing
 
-**Locked framing:** A 2% surcharge on UK property income, on top of standard income tax rates, was **announced in the Autumn Budget** and is **scheduled to take effect from 6 April 2027**. The legislation sits in the **draft Finance Act 2026**, awaiting Royal Assent.
+**Locked framing:** Separate property income tax rates were **announced at the Autumn Budget 2025 (26 November 2025)** and **enacted by Finance Act 2026 (Royal Assent 18 March 2026)**, ss.6-7, taking effect from **6 April 2027**. They apply to property income in **England and Northern Ireland**; Scotland and Wales set their own property income rates (FA 2026 s.8 / Sch 2). FA 2026 has Royal Assent — state the rates as enacted law, not as a proposal, surcharge-to-come, or draft.
 
-For **2026/27**, the standard UK income tax rates of **20%, 40%, 45%** continue to apply to rental income alongside other income.
+For **2026/27**, the standard UK income tax rates of **20%, 40%, 45%** apply to rental income alongside other income, and the Section 24 finance-cost reducer is a **20% basic-rate tax credit**.
 
-For **2027/28** (subject to Finance Act 2026 receiving Royal Assent), the surcharge produces effective property income rates of **22% basic, 42% higher, 47% additional**.
+For **2027/28 onwards**, property income (England + NI) is taxed at **22% basic, 42% higher, 47% additional**, and — critically — FA 2026 Sch 1 gives the **Section 24 finance-cost reducer at the new property basic rate of 22%** (amending ITTOIA 2005 ss.274AA/274C and ITA 2007 s.399B). The reducer is NOT frozen at 20%.
 
-Plan against these scheduled rates while noting they require enactment to crystallise. Avoid asserting them as "confirmed law" — they are scheduled and in draft legislation.
+**Consequence (state this correctly):** for a **basic-rate** landlord the reducer (22%) matches the rate on property income (22%), so **no new wedge** opens from this change. For **higher/additional-rate** landlords the reducer rises 20%→22% (a 2 percentage point improvement) but remains far below their 42%/47% rate, leaving a finance-cost wedge of **20pp (42−22)** / **25pp (47−22)** — the same as the 2026/27 wedge of 20pp (40−20) / 25pp (45−20). The wedge does NOT widen.
 
-**Do not write:** "22/42/47 is speculation" (it's announced and scheduled). "22/42/47 is confirmed law" (pending Royal Assent). "Property income is taxed at 20/40/45 in 2027/28" (wrong if the FA passes).
+**Do not write:** "the reducer/credit stays at 20% in 2027/28" (it rises to 22%). "a new basic-rate wedge opens in 2027/28" (it does not — the reducer tracks the 22% rate). "FA 2026 is draft / awaiting Royal Assent / a proposal" (enacted 18 March 2026). "announced at the Autumn Budget 2024" for these property income rates (that was Budget 2025; the 30 October 2024 budget did the SDLT 5% surcharge and CGT 18/24). "Property income is taxed at 20/40/45 in 2027/28" (it is 22/42/47 in England + NI).
 
 ---
 

@@ -24,7 +24,7 @@ faqs:
   - question: "Does the £1,000 property allowance reduce my tax bill?"
     answer: "Yes, if your gross rental receipts are above £1,000. You can either deduct the £1,000 property allowance (no other expenses allowed) or claim full actual allowable expenses (no £1,000 allowance). Pick whichever produces the lower taxable amount. The allowance wins when actual expenses (other than finance costs, which sit separately under Section 24) are less than £1,000. The allowance is automatic and does not require a return where gross rents are £1,000 or less and there is no other reason to file."
   - question: "How does the Section 24 mortgage interest credit work in the calculation?"
-    answer: "After your full income tax bill is calculated using rental profit before deducting mortgage interest, a credit equal to 20% of residential finance costs is applied. The credit is capped at the lowest of: total finance costs, total property profits for the year, or adjusted total income above the personal allowance (ITA 2007 s.274A). Excess unrelieved finance costs are carried forward to future years. For most landlords with regular income, the cap does not bite and the full 20% credit applies."
+    answer: "After your full income tax bill is calculated using rental profit before deducting mortgage interest, a credit equal to 20% of residential finance costs is applied. The credit is capped at the lowest of: total finance costs, total property profits for the year, or adjusted total income above the personal allowance (ITTOIA 2005 s.274A). Excess unrelieved finance costs are carried forward to future years. For most landlords with regular income, the cap does not bite and the full 20% credit applies."
   - question: "Why is my effective rate on rental income higher than 20% or 40% if I have a mortgage?"
     answer: "Because mortgage interest is not deducted from the rental profit before tax bands are applied. The full rent (less only non-finance expenses) is added to your other income to determine which band you fall in, and the 20% credit on the interest is a flat amount applied later. For a higher-rate landlord, the effective rate on cash profit (rent minus interest minus other expenses) can be 50% or more, because tax is being charged on a notional profit higher than the actual cash profit, with only a 20% credit offsetting the difference."
   - question: "Are CGT and income tax separate when I sell?"
@@ -254,7 +254,7 @@ faqs:
 <li><strong>Forgetting replacement-of-domestic-items relief</strong> on like-for-like furniture and white goods replacements (ITTOIA 2005 s.311A).</li>
 <li><strong>Using the default 50/50 spousal split when Form 17 would route more profit to a lower-band spouse.</strong></li>
 <li><strong>Ignoring the personal allowance taper</strong> at £100,000, where rental income tips the landlord into the 60% effective marginal zone.</li>
-<li><strong>Not tracking carry-forward of unrelieved finance costs</strong> under ITA 2007 s.274A when the three-way cap on the Section 24 credit bites.</li>
+<li><strong>Not tracking carry-forward of unrelieved finance costs</strong> under ITTOIA 2005 s.274A when the three-way cap on the Section 24 credit bites.</li>
 </ul>
 
 <h2>Related Reading</h2>

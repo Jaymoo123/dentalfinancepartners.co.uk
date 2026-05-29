@@ -23,7 +23,7 @@ faqs:
   - question: "Do I need a property specialist if I only have one buy-to-let?"
     answer: "Even a single buy-to-let raises issues a generalist may miss: whether your gross rental income takes you into Making Tax Digital for Income Tax, how Section 24 affects you if you have a mortgage, which costs are deductible repairs versus non-deductible improvements, and the Capital Gains Tax position when you eventually sell. A specialist is most valuable at the points of change, buying, refinancing, incorporating, or selling, rather than purely for routine filing."
   - question: "How important is Making Tax Digital readiness when choosing an accountant?"
-    answer: "It is now a near-term compliance question, not a future one. MTD for Income Tax began on 6 April 2026 for individuals with qualifying income above 50,000 pounds, extends to those above 30,000 pounds from 6 April 2027, and to those above 20,000 pounds from 6 April 2028. Qualifying income is gross rental income (and any sole-trade income) before expenses. Ask whether the firm files through HMRC-recognised compatible software, how they handle the quarterly updates, and whether they use the Agent Services Account, which is the mandatory route for agents filing under MTD."
+    answer: "It is now a near-term compliance question, not a future one. MTD for Income Tax began on 6 April 2026 for individuals with qualifying income above £50,000, extends to those above £30,000 from 6 April 2027, and to those above £20,000 from 6 April 2028. Qualifying income is gross rental income (and any sole-trade income) before expenses. Ask whether the firm files through HMRC-recognised compatible software, how they handle the quarterly updates, and whether they use the Agent Services Account, which is the mandatory route for agents filing under MTD."
   - question: "What property tax knowledge should I test for in an interview?"
     answer: "Ask them to explain Section 24 in plain terms (a 20% basic-rate tax credit on finance costs, not a deduction from rental profit), confirm the current residential CGT rates (18% basic rate, 24% higher rate), and describe how the 50/50 default split works for jointly owned property and when a Form 17 election changes it. A specialist answers these without hesitation. If the answers are vague, they are unlikely to spot the planning points that matter to you."
   - question: "Should my property accountant understand the rules in Scotland and Wales?"
@@ -49,7 +49,7 @@ faqs:
 
 <h2>Why a Property Specialist Beats a Generalist</h2>
 <p>Most high street accountants are competent at general bookkeeping and self-assessment, but property investment has its own body of rules that a generalist rarely encounters often enough to master. The gap shows up not in routine filing but in the decisions around it: how finance costs are relieved, whether a cost is a deductible repair or a capital improvement, how to time a disposal, and whether a company structure is worth the friction.</p>
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> who works predominantly with landlords treats these as everyday questions. They will know, for example, that pre-letting expenses incurred to get a property ready for its first tenant can usually be set against later rental income, that replacing a like-for-like kitchen is generally a deductible repair while extending it is capital, and that the order in which you sell properties in a year can change your total Capital Gains Tax bill because the annual exempt amount is now only 3,000 pounds.</p>
+<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> who works predominantly with landlords treats these as everyday questions. They will know, for example, that pre-letting expenses incurred to get a property ready for its first tenant can usually be set against later rental income, that replacing a like-for-like kitchen is generally a deductible repair while extending it is capital, and that the order in which you sell properties in a year can change your total Capital Gains Tax bill because the annual exempt amount is now only £3,000.</p>
 <p>The right specialist is not simply a more expensive generalist. They are a different proposition: someone whose default frame of reference is the landlord's tax position, so the planning points surface naturally rather than being missed.</p>
 
 <h2>The Qualifications That Actually Matter</h2>
@@ -69,16 +69,16 @@ faqs:
 <h3>A Worked Example</h3>
 <p>Consider a landlord who is a higher-rate taxpayer with the following annual figures on a buy-to-let:</p>
 <ul>
-<li>Rental income: 18,000 pounds</li>
-<li>Allowable running costs (letting agent, insurance, repairs, etc.): 3,000 pounds</li>
-<li>Mortgage interest: 7,000 pounds</li>
+<li>Rental income: £18,000</li>
+<li>Allowable running costs (letting agent, insurance, repairs, etc.): £3,000</li>
+<li>Mortgage interest: £7,000</li>
 </ul>
-<p>Before Section 24, the landlord would have deducted both the running costs and the mortgage interest, leaving a taxable profit of 8,000 pounds and tax at 40% of 3,200 pounds.</p>
-<p>Under the rules now in force, the mortgage interest is no longer deducted. The taxable rental profit is 18,000 minus 3,000, which is 15,000 pounds. Tax at 40% is 6,000 pounds, reduced by a finance cost tax credit of 20% of the 7,000 pounds interest, which is 1,400 pounds. The tax due is therefore 4,600 pounds, around 1,400 pounds more than under the old rules for the same underlying cash position. A specialist will model exactly this for your figures and discuss whether any structural response is worthwhile.</p>
+<p>Before Section 24, the landlord would have deducted both the running costs and the mortgage interest, leaving a taxable profit of £8,000 and tax at 40% of £3,200.</p>
+<p>Under the rules now in force, the mortgage interest is no longer deducted. The taxable rental profit is 18,000 minus 3,000, which is £15,000. Tax at 40% is £6,000, reduced by a finance cost tax credit of 20% of the £7,000 interest, which is £1,400. The tax due is therefore £4,600, around £1,400 more than under the old rules for the same underlying cash position. A specialist will model exactly this for your figures and discuss whether any structural response is worthwhile.</p>
 <p>The same rules now apply to former furnished holiday lets. The separate FHL regime was abolished from 6 April 2025, so those properties are taxed as standard residential lets, with Section 24 applying to their finance costs. An accountant who still describes FHLs as a live, favourable regime is working from out-of-date knowledge.</p>
 
 <h2>Making Tax Digital Readiness</h2>
-<p>Making Tax Digital for Income Tax is no longer a distant prospect. It began on 6 April 2026 for individuals whose qualifying income exceeds 50,000 pounds, extends to those above 30,000 pounds from 6 April 2027, and reaches those above 20,000 pounds from 6 April 2028. Qualifying income is measured on gross rental income (plus any sole-trade income) before expenses are deducted, which catches more landlords than many expect.</p>
+<p>Making Tax Digital for Income Tax is no longer a distant prospect. It began on 6 April 2026 for individuals whose qualifying income exceeds £50,000, extends to those above £30,000 from 6 April 2027, and reaches those above £20,000 from 6 April 2028. Qualifying income is measured on gross rental income (plus any sole-trade income) before expenses are deducted, which catches more landlords than many expect.</p>
 <p>Those in scope must keep digital records and send quarterly updates to HMRC through compatible software, in addition to a final declaration after the tax year. Limited companies are outside MTD for Income Tax entirely, since they file Corporation Tax returns instead. When you choose an accountant, confirm that they:</p>
 <ul>
 <li>file through HMRC-recognised compatible software (the recognised list is maintained on gov.uk and changes regularly);</li>
@@ -89,7 +89,7 @@ faqs:
 <p>If you are close to a threshold, the timing of your decision matters. Our guide to the <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">MTD qualifying-income test</a> explains how gross income is assessed against the thresholds.</p>
 
 <h2>Capital Gains Tax and Disposal Planning</h2>
-<p>The point at which good advice is worth the most is often the sale. <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> on residential property is charged at 18% for gains falling within the basic-rate band and 24% above it, following the rate change that took effect on 30 October 2024. The annual exempt amount is 3,000 pounds per person, and a residential property disposal must be reported and the tax paid within 60 days of completion.</p>
+<p>The point at which good advice is worth the most is often the sale. <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> on residential property is charged at 18% for gains falling within the basic-rate band and 24% above it, following the reduction of the residential higher rate from 28% to 24% with effect from 6 April 2024 (Finance (No.2) Act 2024). The annual exempt amount is £3,000 per person, and a residential property disposal must be reported and the tax paid within 60 days of completion.</p>
 <p>A specialist looks at disposals well before completion, not afterwards. They will consider whether transferring a share to a spouse or civil partner before sale makes use of two annual exemptions and two basic-rate bands, whether the timing of a sale across tax years helps, and whether any private residence relief applies for periods you lived in the property. They will also make sure the 60-day return is filed on time, because the penalties for missing it are easily avoided with planning.</p>
 <p>For jointly owned property, the default split of income between spouses is 50/50 regardless of the underlying ownership shares. A Form 17 election can change that split to match the actual beneficial ownership, which can be a useful planning tool where one partner pays tax at a lower rate. A specialist knows when this is worth doing and how to evidence it correctly.</p>
 
@@ -144,12 +144,12 @@ faqs:
 <p>If you are unsure whether your current arrangement is keeping pace with the rules, comparing what a specialist offers against your present setup is a useful exercise in itself. Our guides to <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> and the wider <a href="/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide">landlord tax changes for 2026</a> are good starting points.</p>
 
 <h2>A Note on the Rules Ahead</h2>
-<p>Property taxation continues to evolve, so currency of knowledge is part of what you are buying. Finance Act 2026 has enacted a separate set of property income tax rates that take effect from 6 April 2027, producing effective rates of 22% at the basic rate, 42% at the higher rate and 47% at the additional rate for property income. A specialist who is already factoring forthcoming changes into your planning, rather than reacting to them after the event, is exactly the kind of adviser worth choosing.</p>
+<p>Property taxation continues to evolve, so currency of knowledge is part of what you are buying. Finance Act 2026 has enacted a separate set of property income tax rates that take effect from 6 April 2027, producing rates of 22% at the basic rate, 42% at the higher rate and 47% at the additional rate for property income in England and Northern Ireland (Scotland and Wales set their own property income rates). A specialist who is already factoring forthcoming changes into your planning, rather than reacting to them after the event, is exactly the kind of adviser worth choosing.</p>
 
 <h2>Related Reading</h2>
 <ul>
 <li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What Does a Property Accountant Do? Essential Services for UK Landlords</a></li>
-<li><a href="/blog/property-accountant-services/section-24-mortgage-interest-restriction-uk-landlords">Section 24 Mortgage Interest Restriction Explained</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 Mortgage Interest Restriction Explained</a></li>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property: The Complete UK Guide</a></li>
-<li><a href="/blog/buy-to-let/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: The Complete UK Guide</a></li>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: The Complete UK Guide</a></li>
 </ul>

@@ -16,7 +16,7 @@ faqs:
   - question: "Which SA105 box do I use to claim mortgage interest in 2025/26?"
     answer: "Enter the full annual finance cost in the 'Residential finance costs not included in Loan interest and other financial costs' box of SA105 (box 44 on the 2024-25 form). Do NOT also enter the interest in the general 'Loan interest and other financial costs' box, that would attempt a full deduction and create a double-counting error. The figure includes mortgage interest, arrangement fees treated as finance costs, broker fees treated as finance costs, and interest on any other property loan. HMRC's online return then applies the 20% basic-rate credit automatically."
   - question: "What is the three-way cap on the Section 24 credit?"
-    answer: "The 20% basic-rate credit is capped at the lowest of three figures: (a) total residential finance costs for the year, (b) total property profits for the year (before finance costs), or (c) adjusted total income (excluding savings and dividend income) above the personal allowance. The credit is the cap multiplied by 20%. If the cap bites, the unrelieved excess of finance costs is carried forward to future tax years under ITA 2007 s.274A, with no time limit on use."
+    answer: "The 20% basic-rate credit is capped at the lowest of three figures: (a) total residential finance costs for the year, (b) total property profits for the year (before finance costs), or (c) adjusted total income (excluding savings and dividend income) above the personal allowance. The credit is the cap multiplied by 20%. If the cap bites, the unrelieved excess of finance costs is carried forward to future tax years under ITTOIA 2005 s.274A, with no time limit on use."
   - question: "What costs count as residential finance costs?"
     answer: "Interest on mortgages used to buy residential rental property, interest on remortgaging or further advances secured on rental property (up to the value at the date the property entered the lettings business under HMRC's withdrawal rule), interest on bridging loans used for rental property, arrangement fees and broker fees that are treated as finance costs (typically amortised over the loan term), and interest on personal loans where the borrowed funds were demonstrably used for the rental business. The HMRC reference is PIM2056 onwards."
   - question: "What costs do NOT count as residential finance costs?"
@@ -24,7 +24,7 @@ faqs:
   - question: "Can my limited company claim mortgage interest in full?"
     answer: "Yes. Section 24 applies only to individual landlords (including those operating in partnership or as members of an LLP). A limited company holding rental property continues to deduct mortgage interest in full as a business expense in arriving at taxable rental profit subject to corporation tax. This is the single biggest tax-driven reason to incorporate a leveraged buy-to-let portfolio, and the worked-example trade-off is in our SDLT on incorporation guide."
   - question: "What happens if I have a loss after the Section 24 calculation?"
-    answer: "The 20% credit cannot create a loss. If the three-way cap reduces the credit to less than the actual 20% of finance costs, the excess finance costs are carried forward under ITA 2007 s.274A. In subsequent tax years, the carried-forward amount is added to that year's finance costs and re-tested against the cap. There is no time limit on the carry-forward. Note that a property business trading loss (in the property business itself, not from finance costs) is automatically carried forward against future UK property profits, separately from the Section 24 carry-forward."
+    answer: "The 20% credit cannot create a loss. If the three-way cap reduces the credit to less than the actual 20% of finance costs, the excess finance costs are carried forward under ITTOIA 2005 s.274A. In subsequent tax years, the carried-forward amount is added to that year's finance costs and re-tested against the cap. There is no time limit on the carry-forward. Note that a property business trading loss (in the property business itself, not from finance costs) is automatically carried forward against future UK property profits, separately from the Section 24 carry-forward."
   - question: "Does the Section 24 credit reduce my higher-rate tax band?"
     answer: "No. The credit is applied against your final income tax liability after all bands have been calculated. So the full rental profit (including the portion that ought to have funded the mortgage interest) is added to your other income to determine your tax bands. Many higher-rate landlords find that Section 24 pushes their adjusted total income above the £100,000 personal allowance taper threshold or the £125,140 additional-rate threshold, with the credit then applied flat at 20% against a higher tax bill."
   - question: "How is mortgage interest claimed when a property is jointly owned?"
@@ -86,7 +86,7 @@ faqs:
 
 <h2>The Three-Way Cap on the 20% Credit</h2>
 
-<p>The 20% credit is not unlimited. Under ITA 2007 s.274A, the relievable amount of finance costs in any year is the <strong>lowest of</strong>:</p>
+<p>The 20% credit is not unlimited. Under ITTOIA 2005 s.274A, the relievable amount of finance costs in any year is the <strong>lowest of</strong>:</p>
 
 <ol>
 <li>Total finance costs incurred in the year.</li>

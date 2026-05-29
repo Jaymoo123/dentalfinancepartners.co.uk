@@ -22,11 +22,11 @@ faqs:
   - question: "Is it worth incorporating my Stockport buy-to-let portfolio into a limited company?"
     answer: "It depends on your marginal tax rate, how geared your portfolio is, whether you reinvest profits or draw them, and your long-term plans. A company is not caught by Section 24, so highly geared higher-rate landlords often model better inside a company. Against that you must weigh stamp duty land tax on transferring properties in, potential capital gains tax on the transfer, mortgage refinancing and ongoing company filing duties. It is a modelling exercise, not a default. Our guide to buy-to-let limited companies sets out the trade-offs in detail."
   - question: "When does Making Tax Digital for Income Tax start for Stockport landlords?"
-    answer: "Making Tax Digital for Income Tax is being phased in by income level. From 6 April 2026 it applies to landlords and sole traders with gross qualifying income above 50,000 pounds. From 6 April 2027 the threshold falls to 30,000 pounds, and from 6 April 2028 it falls to 20,000 pounds. Once you are in, you keep digital records and send quarterly updates to HMRC through compatible software, then a final declaration after the tax year ends."
+    answer: "Making Tax Digital for Income Tax is being phased in by income level. From 6 April 2026 it applies to landlords and sole traders with gross qualifying income above £50,000. From 6 April 2027 the threshold falls to £30,000, and from 6 April 2028 it falls to £20,000. Once you are in, you keep digital records and send quarterly updates to HMRC through compatible software, then a final declaration after the tax year ends."
   - question: "How is the Making Tax Digital threshold measured: is it per property or total income?"
     answer: "The test is on gross qualifying income, which is your combined turnover from self-employment and property before expenses, not your profit and not a per-property figure. So a landlord with several modest properties can cross the threshold even if each one earns little, because the rents are added together. Jointly owned property is counted on your share. Getting this test right matters, because it decides when you are mandated, and we cover it in our guide to MTD qualifying income."
   - question: "What capital gains tax will I pay when I sell a rental property in Stockport?"
-    answer: "Residential property gains are taxed at 18 percent within your remaining basic-rate band and 24 percent above it, after deducting the annual exempt amount, currently 3,000 pounds. You can also deduct purchase costs, selling costs and qualifying capital improvements. A reportable gain must be declared and the tax paid within 60 days of completion through a CGT on UK property account. Planning the timing of a sale, and using both spouses' allowances where a property is jointly owned, can make a real difference."
+    answer: "Residential property gains are taxed at 18 percent within your remaining basic-rate band and 24 percent above it, after deducting the annual exempt amount, currently £3,000. You can also deduct purchase costs, selling costs and qualifying capital improvements. A reportable gain must be declared and the tax paid within 60 days of completion through a CGT on UK property account. Planning the timing of a sale, and using both spouses' allowances where a property is jointly owned, can make a real difference."
   - question: "Do I still get any tax advantage from a holiday let near Stockport or in the Peak District?"
     answer: "No. The Furnished Holiday Lettings regime was abolished from 6 April 2025. Properties that previously qualified, including short-term lets in the Peak District within easy reach of Stockport, are now taxed under the ordinary property income rules. That means no more FHL capital allowances on furnishings, no separate treatment for pension purposes and the Section 24 finance cost restriction now applies. If you ran a holiday let on the old basis, your tax position has changed and is worth reviewing."
   - question: "Does stamp duty work differently when I buy another rental in Stockport?"
@@ -68,16 +68,16 @@ faqs:
 
 <h3>Worked example: a higher-rate Stockport landlord</h3>
 
-<p>Consider a higher-rate taxpayer who owns three mortgaged buy-to-lets across Cheadle Hulme and Edgeley. Assume rental income of 42,000 pounds, allowable non-finance expenses of 8,000 pounds and mortgage interest of 15,000 pounds.</p>
+<p>Consider a higher-rate taxpayer who owns three mortgaged buy-to-lets across Cheadle Hulme and Edgeley. Assume rental income of £42,000, allowable non-finance expenses of £8,000 and mortgage interest of £15,000.</p>
 
 <ul>
-<li><strong>Taxable rental profit</strong> is rental income minus non-finance expenses only: 42,000 minus 8,000 equals 34,000 pounds. Interest is no longer deducted here.</li>
-<li><strong>Tax before the credit</strong>, at the 40 percent higher rate, is 34,000 times 40 percent, which is 13,600 pounds.</li>
-<li><strong>Section 24 tax credit</strong> is 20 percent of the 15,000 pounds interest, which is 3,000 pounds.</li>
-<li><strong>Tax payable on the rental profit</strong> is 13,600 minus 3,000, which is 10,600 pounds.</li>
+<li><strong>Taxable rental profit</strong> is rental income minus non-finance expenses only: 42,000 minus 8,000 equals £34,000. Interest is no longer deducted here.</li>
+<li><strong>Tax before the credit</strong>, at the 40 percent higher rate, is 34,000 times 40 percent, which is £13,600.</li>
+<li><strong>Section 24 tax credit</strong> is 20 percent of the £15,000 interest, which is £3,000.</li>
+<li><strong>Tax payable on the rental profit</strong> is 13,600 minus 3,000, which is £10,600.</li>
 </ul>
 
-<p>Under the pre-2017 rules the same landlord would have deducted the full 15,000 pounds of interest first, leaving a 19,000 pounds profit taxed at 40 percent, or 7,600 pounds. The difference, 3,000 pounds in this example, is the real cost of Section 24 to a geared higher-rate landlord. It also illustrates a second trap: because the full rent inflates taxable income, Section 24 can tip a landlord into the higher-rate band, restrict the personal allowance above 100,000 pounds, or affect the High Income Child Benefit Charge, even where cash profit has not changed.</p>
+<p>Under the pre-2017 rules the same landlord would have deducted the full £15,000 of interest first, leaving a £19,000 profit taxed at 40 percent, or £7,600. The difference, £3,000 in this example, is the real cost of Section 24 to a geared higher-rate landlord. It also illustrates a second trap: because the full rent inflates taxable income, Section 24 can tip a landlord into the higher-rate band, restrict the personal allowance above £100,000, or affect the High Income Child Benefit Charge, even where cash profit has not changed.</p>
 
 <p>A property accountant models these knock-on effects and tests the responses: shifting beneficial ownership towards a lower-rate spouse, reviewing gearing, or considering whether a company structure (which is not subject to Section 24) suits the portfolio. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24</a> works through the mechanics in full, and our list of <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable landlord deductions</a> sets out what you can still claim.</p>
 
@@ -86,9 +86,9 @@ faqs:
 <p>Making Tax Digital for Income Tax is no longer on the horizon. It began on 6 April 2026 and is phased in by income level:</p>
 
 <ul>
-<li><strong>From 6 April 2026:</strong> landlords and sole traders with gross qualifying income above 50,000 pounds.</li>
-<li><strong>From 6 April 2027:</strong> the threshold falls to 30,000 pounds.</li>
-<li><strong>From 6 April 2028:</strong> the threshold falls to 20,000 pounds.</li>
+<li><strong>From 6 April 2026:</strong> landlords and sole traders with gross qualifying income above £50,000.</li>
+<li><strong>From 6 April 2027:</strong> the threshold falls to £30,000.</li>
+<li><strong>From 6 April 2028:</strong> the threshold falls to £20,000.</li>
 </ul>
 
 <p>Once you are mandated, the annual Self Assessment return is replaced by digital record-keeping and quarterly updates sent to HMRC through compatible software, followed by a final declaration after the tax year ends. The most common misunderstanding is the threshold test itself. It is measured on <strong>gross qualifying income</strong>, your combined property and self-employment turnover before expenses, not your profit and not a per-property figure. A Stockport landlord with four modest terraces in Reddish and Brinnington can therefore be mandated even though no single property earns much, because the rents are added together. Our guide to <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords and the April 2026 deadline</a> walks through the timeline and what compatible software looks like.</p>
@@ -97,13 +97,13 @@ faqs:
 
 <h2>Capital Gains Tax When You Sell</h2>
 
-<p>Stockport values have risen substantially over the last decade, particularly across the sought-after suburbs, so disposals frequently produce a sizeable gain. Residential property gains are taxed at <strong>18 percent</strong> within your remaining basic-rate band and <strong>24 percent</strong> above it, after deducting the annual exempt amount, currently <strong>3,000 pounds</strong>. From the gain you can deduct purchase and sale costs and qualifying capital improvements, which is why keeping a clean record of works over the years of ownership is so valuable.</p>
+<p>Stockport values have risen substantially over the last decade, particularly across the sought-after suburbs, so disposals frequently produce a sizeable gain. Residential property gains are taxed at <strong>18 percent</strong> within your remaining basic-rate band and <strong>24 percent</strong> above it, after deducting the annual exempt amount, currently <strong>£3,000</strong>. From the gain you can deduct purchase and sale costs and qualifying capital improvements, which is why keeping a clean record of works over the years of ownership is so valuable.</p>
 
 <p>Two deadlines catch landlords out. A reportable residential gain must be declared and the tax paid within <strong>60 days</strong> of completion through a CGT on UK property account, separately from your normal return. And where a property was once your main home, Private Residence Relief and the final-period exemption may reduce the gain, but the rules are precise and worth checking before you sell.</p>
 
 <h3>Worked example: a jointly owned disposal</h3>
 
-<p>A couple who jointly own a former let in Marple sell for a 60,000 pounds gain after costs. Held 50:50, each takes a 30,000 pounds gain, each deducts the 3,000 pounds annual exempt amount, leaving 27,000 pounds each. If one is a basic-rate taxpayer with band remaining and the other higher-rate, the rates applied differ, but using both allowances has already removed 6,000 pounds of gain from charge. Timing a sale across two tax years, or completing before a change in circumstances, can shelter more. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete CGT on property guide</a> covers reliefs, the 60-day return and disposal planning.</p>
+<p>A couple who jointly own a former let in Marple sell for a £60,000 gain after costs. Held 50:50, each takes a £30,000 gain, each deducts the £3,000 annual exempt amount, leaving £27,000 each. If one is a basic-rate taxpayer with band remaining and the other higher-rate, the rates applied differ, but using both allowances has already removed £6,000 of gain from charge. Timing a sale across two tax years, or completing before a change in circumstances, can shelter more. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete CGT on property guide</a> covers reliefs, the 60-day return and disposal planning.</p>
 
 <h2>Stamp Duty and Buying Additional Property</h2>
 
@@ -129,7 +129,7 @@ faqs:
 
 <h2>What Is Coming in 2027</h2>
 
-<p>Forward planning matters more now because the direction of travel is set in law, not merely proposed. <strong>Finance Act 2026 enacted separate rates for property income from 6 April 2027</strong>: 22 percent at the basic rate, 42 percent at the higher rate and 47 percent at the additional rate. These sit above the equivalent rates on other income, so the effective tax on rental profit will rise for many landlords. Combined with the Making Tax Digital threshold dropping to 30,000 pounds from the same date, 2027 is a meaningful inflection point. Decisions about structure, ownership splits and the timing of disposals are best modelled now, while there is room to act, rather than after the rates step up.</p>
+<p>Forward planning matters more now because the direction of travel is set in law, not merely proposed. <strong>Finance Act 2026 enacted separate rates for property income from 6 April 2027</strong>: 22 percent at the basic rate, 42 percent at the higher rate and 47 percent at the additional rate. These sit above the equivalent rates on other income, so the effective tax on rental profit will rise for many landlords. Combined with the Making Tax Digital threshold dropping to £30,000 from the same date, 2027 is a meaningful inflection point. Decisions about structure, ownership splits and the timing of disposals are best modelled now, while there is room to act, rather than after the rates step up.</p>
 
 <h2>Choosing a Property Accountant in Stockport</h2>
 

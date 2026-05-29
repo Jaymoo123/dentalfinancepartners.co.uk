@@ -16,11 +16,11 @@ faqs:
   - question: "Do I need a specialist property accountant in Coventry?"
     answer: "If you own rental property in Coventry, a specialist property accountant helps you handle Section 24 finance-cost restrictions, get ready for Making Tax Digital for Income Tax, and structure disposals and incorporation around your actual portfolio. A general accountant can file a tax return, but property-specific planning around HMO licensing, student lets and the Article 4 wards is where most landlords leave money or compliance gaps on the table."
   - question: "Is Making Tax Digital for Income Tax actually live for Coventry landlords?"
-    answer: "Yes. Making Tax Digital for Income Tax (MTD for ITSA) is live. From 6 April 2026 it applies to landlords and sole traders with qualifying income above GBP50,000, then GBP30,000 from 6 April 2027 and GBP20,000 from 6 April 2028. Qualifying income is gross rental and trading income before expenses, so the threshold catches more Coventry landlords than people expect. Affected landlords must keep digital records and submit quarterly updates through compatible software."
+    answer: "Yes. Making Tax Digital for Income Tax (MTD for ITSA) is live. From 6 April 2026 it applies to landlords and sole traders with qualifying income above £50,000, then £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Qualifying income is gross rental and trading income before expenses, so the threshold catches more Coventry landlords than people expect. Affected landlords must keep digital records and submit quarterly updates through compatible software."
   - question: "How does Section 24 affect a Coventry buy-to-let landlord?"
     answer: "Section 24 is fully in force. Individual landlords can no longer deduct mortgage interest and other finance costs from rental profit. Instead you get a basic-rate (20%) tax reducer on those costs. For higher-rate and additional-rate taxpayers in Coventry that means you are taxed on a larger profit figure, and in some cases finance costs can tip you into a higher band. Modelling the impact before the tax year ends is the practical fix."
   - question: "What are the capital gains tax rates when I sell a Coventry rental property?"
-    answer: "Residential property gains are taxed at 18% within your basic-rate band and 24% above it, following the Finance (No. 2) Act 2024. The annual exempt amount is GBP3,000. You must report the gain and pay the tax through an online UK Property CGT return within 60 days of completion. Timing the disposal, splitting ownership between spouses and using the annual exemption efficiently can all change the bill."
+    answer: "Residential property gains are taxed at 18% within your basic-rate band and 24% above it, following the Finance (No. 2) Act 2024. The annual exempt amount is £3,000. You must report the gain and pay the tax through an online UK Property CGT return within 60 days of completion. Timing the disposal, splitting ownership between spouses and using the annual exemption efficiently can all change the bill."
   - question: "Do I need an HMO licence to let a shared house in Coventry?"
     answer: "Very likely. Coventry runs a citywide additional HMO licensing scheme that started on 4 May 2025 and runs to 3 May 2030. It covers HMOs occupied by three or four people, on top of the national mandatory licensing for larger HMOs of five or more. Letting an unlicensed HMO risks civil penalties and rent repayment orders, so factor licensing and its tax treatment into any student-let or shared-house plan."
   - question: "What is the Article 4 direction in Coventry and why does it matter for landlords?"
@@ -44,7 +44,7 @@ faqs:
 <ul>
 <li><strong>Section 24 finance-cost restriction</strong> · mortgage interest no longer reduces taxable profit directly; you receive a basic-rate (20%) tax reducer instead.</li>
 <li><strong>Making Tax Digital for Income Tax</strong> · digital records and quarterly updates, phased in from April 2026 by income level.</li>
-<li><strong>Capital gains tax on disposals</strong> · 18% and 24% residential rates with a GBP3,000 annual exemption and a 60-day reporting deadline.</li>
+<li><strong>Capital gains tax on disposals</strong> · 18% and 24% residential rates with a £3,000 annual exemption and a 60-day reporting deadline.</li>
 <li><strong>HMO licensing and Article 4</strong> · citywide additional licensing plus planning restrictions on new small HMOs in named wards.</li>
 </ul>
 
@@ -61,9 +61,9 @@ faqs:
 <p>Making Tax Digital for Income Tax is no longer a future threat. The timetable is fixed:</p>
 
 <ul>
-<li><strong>6 April 2026</strong> · qualifying income above GBP50,000.</li>
-<li><strong>6 April 2027</strong> · qualifying income above GBP30,000.</li>
-<li><strong>6 April 2028</strong> · qualifying income above GBP20,000.</li>
+<li><strong>6 April 2026</strong> · qualifying income above £50,000.</li>
+<li><strong>6 April 2027</strong> · qualifying income above £30,000.</li>
+<li><strong>6 April 2028</strong> · qualifying income above £20,000.</li>
 </ul>
 
 <p>Qualifying income is gross rental and trading income before expenses, not profit, so a Coventry landlord with a couple of buy-to-lets can cross the threshold sooner than expected. Affected landlords must keep digital records and send quarterly updates through compatible software, followed by a year-end finalisation. The work now is getting record-keeping clean and software in place so the first quarter is routine rather than a scramble. Our <a href="/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords">MTD for ITSA overview</a> walks through the six practical changes for residential landlords.</p>
@@ -84,7 +84,7 @@ faqs:
 
 <h2>Capital Gains Tax When You Sell in Coventry</h2>
 
-<p>Selling a Coventry rental triggers capital gains tax on the increase in value. Residential gains are taxed at 18% within your basic-rate band and 24% above it (Finance (No. 2) Act 2024), with a GBP3,000 annual exempt amount. The gain must be reported and the tax paid through HMRC's online UK Property service within 60 days of completion, a deadline that catches landlords out and carries penalties.</p>
+<p>Selling a Coventry rental triggers capital gains tax on the increase in value. Residential gains are taxed at 18% within your basic-rate band and 24% above it (Finance (No. 2) Act 2024), with a £3,000 annual exempt amount. The gain must be reported and the tax paid through HMRC's online UK Property service within 60 days of completion, a deadline that catches landlords out and carries penalties.</p>
 
 <p>Planning levers include timing a disposal across tax years, transferring a share to a spouse before sale to use both annual exemptions and lower bands, and keeping proper records of capital improvements that reduce the gain. For staged exits across a Coventry portfolio, sequencing disposals can keep more of the gain in the lower rate band. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to capital gains tax on property</a> sets out the full picture.</p>
 

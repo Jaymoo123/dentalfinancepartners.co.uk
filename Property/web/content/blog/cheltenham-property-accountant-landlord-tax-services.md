@@ -47,7 +47,7 @@ faqs:
 <li><strong>Making Tax Digital for Income Tax (MTD for ITSA) is being phased in</strong> from 6 April 2026, with quarterly digital reporting to HMRC.</li>
 </ul>
 
-<p>On top of these, <strong>Finance Act 2026 legislated separate property income tax rates from 6 April 2027</strong>: 22% basic, 42% higher, and 47% additional. That is a two-percentage-point uplift on the standard income tax rates, applied specifically to rental profit.</p>
+<p>On top of these, <strong>Finance Act 2026 legislated separate property income tax rates from 6 April 2027</strong>: 22% basic, 42% higher, and 47% additional, for property income in England and Northern Ireland (Scotland and Wales set their own). That is a two-percentage-point uplift on the standard income tax rates, applied specifically to rental profit.</p>
 
 <h2>Section 24 and the Cheltenham landlord</h2>
 
@@ -94,7 +94,7 @@ faqs:
 
 <p>The property income rates legislated for 6 April 2027 (22%, 42%, 47%) raise the cost of holding rentals personally, particularly for higher and additional-rate landlords. A limited company is not subject to Section 24, and companies pay corporation tax (19% on small profits up to £50,000, 25% above £250,000, with marginal relief between), which is why incorporation is back on the agenda for many Cheltenham investors.</p>
 
-<p>It is not automatically the right answer. Transferring property into a company is a disposal for capital gains tax and usually triggers Stamp Duty Land Tax, and extracting profit as dividends has its own cost. The decision needs modelling against your actual income, gearing, and plans. Our <a href="/blog/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets out when incorporation tends to make sense and when it does not.</p>
+<p>It is not automatically the right answer. Transferring property into a company is a disposal for capital gains tax and usually triggers Stamp Duty Land Tax, and extracting profit as dividends has its own cost. The decision needs modelling against your actual income, gearing, and plans. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets out when incorporation tends to make sense and when it does not.</p>
 
 <h2>Student lets and HMOs in Cheltenham</h2>
 

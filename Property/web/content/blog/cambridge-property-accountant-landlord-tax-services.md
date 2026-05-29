@@ -10,7 +10,7 @@ metaDescription: "Cambridge landlord tax help: Section 24, the live MTD for Inco
 altText: "Cambridge property accountant reviewing rental property tax documents with a local landlord client"
 image: ""
 h1: "Cambridge Property Accountant for Landlords: A Tax Services Guide"
-summary: "Cambridge landlords face Section 24, the live Making Tax Digital rollout, CGT on disposals and a citywide HMO regime. Here is what a specialist property accountant handles and where the local rules bite."
+summary: "Cambridge landlords face Section 24, the live Making Tax Digital rollout, CGT on disposals and HMO licensing rules. Here is what a specialist property accountant handles and where the local rules bite."
 schema: ""
 faqs:
   - question: "Do Cambridge landlords need a specialist property accountant?"
@@ -18,20 +18,20 @@ faqs:
   - question: "How does Section 24 affect Cambridge landlords specifically?"
     answer: "Section 24 is fully in force. You can no longer deduct mortgage interest from rental profit. Instead you get a 20% basic-rate tax credit on the interest. Cambridge stings more than most areas because purchase prices, and therefore mortgage balances, are high relative to rent. A higher-rate or additional-rate landlord effectively loses relief on the difference between their marginal rate and 20%, and the added rental profit can push income into a higher band."
   - question: "When does Making Tax Digital for Income Tax apply to me?"
-    answer: "Making Tax Digital for Income Tax is live and phasing in by qualifying income (combined gross self-employment and property income). It applies from 6 April 2026 if your qualifying income is over GBP50,000, from 6 April 2027 if it is over GBP30,000, and from 6 April 2028 if it is over GBP20,000. Once in scope you keep digital records and send quarterly updates to HMRC using compatible software, then a final declaration after the tax year."
+    answer: "Making Tax Digital for Income Tax is live and phasing in by qualifying income (combined gross self-employment and property income). It applies from 6 April 2026 if your qualifying income is over £50,000, from 6 April 2027 if it is over £30,000, and from 6 April 2028 if it is over £20,000. Once in scope you keep digital records and send quarterly updates to HMRC using compatible software, then a final declaration after the tax year."
   - question: "Has anything changed for capital gains tax on rental property?"
-    answer: "Yes. Residential property capital gains tax rates were unified by the Finance (No. 2) Act 2024 at 18% for gains within the basic-rate band and 24% above it. The annual exempt amount is GBP3,000 for 2026/27. A UK residential disposal that creates a gain must be reported and the tax paid within 60 days of completion through HMRC's Capital Gains Tax on UK Property service."
+    answer: "Yes. Residential property capital gains tax rates were unified by the Finance (No. 2) Act 2024 at 18% for gains within the basic-rate band and 24% above it. The annual exempt amount is £3,000 for 2026/27. A UK residential disposal that creates a gain must be reported and the tax paid within 60 days of completion through HMRC's Capital Gains Tax on UK Property service."
   - question: "Do the furnished holiday let rules still apply in Cambridge?"
     answer: "No. The furnished holiday let regime was abolished from 6 April 2025. Short-let and serviced-accommodation properties in and around Cambridge are now taxed under the ordinary property income rules, with no separate FHL capital allowances, no relevant earnings for pension purposes and no FHL-specific capital gains treatment. Existing short-let landlords should review how the change affects their tax position."
   - question: "What HMO and licensing rules affect Cambridge landlords?"
-    answer: "Cambridge City Council operates a citywide Article 4 Direction that removes permitted development rights for converting a family home (use class C3) into a small shared house (C4), so planning permission is needed for many HMO conversions. Larger HMOs need a mandatory HMO licence. Licence and renewal costs are revenue expenses for tax, but the planning constraint and the standards required affect yield and value, so they belong in any acquisition appraisal."
+    answer: "Cambridge does not currently operate a citywide Article 4 Direction for HMOs, so across much of the city the permitted development right to convert a family home (use class C3) into a small shared house (C4) still applies. Article 4 designations can change and may apply in specific areas, so always confirm the current planning position with Cambridge City Council before a conversion. Larger HMOs still need a mandatory HMO licence regardless. Licence and renewal costs are revenue expenses for tax, but the planning position and the standards required affect yield and value, so they belong in any acquisition appraisal."
   - question: "Are the separate property income tax rates from 2027 confirmed?"
     answer: "Yes. Finance Act 2026 enacted separate rates for property income from 6 April 2027 of 22% (basic), 42% (higher) and 47% (additional), 2 percentage points above the equivalent main rates. The change is on the statute book rather than speculative, so portfolio and incorporation planning should already factor it in alongside Section 24."
   - question: "Does Property Tax Partners work with landlords based in Cambridge?"
     answer: "Yes. We support Cambridge and South Cambridgeshire landlords remotely, from single buy-to-let owners to larger portfolios and incorporated structures. We handle Self Assessment and property pages, Making Tax Digital readiness, CGT reporting and strategic planning around Section 24 and company structures."
 ---
 
-<p>Cambridge is one of the harder UK markets for landlords to run efficiently. High capital values relative to rent, a large student population split between the University of Cambridge and Anglia Ruskin, and strong professional demand from the Science Park and the Biomedical Campus all push tax planning to the front. Add Section 24, the live Making Tax Digital rollout and a citywide HMO regime, and the gap between a generalist accountant and a property specialist becomes real money.</p>
+<p>Cambridge is one of the harder UK markets for landlords to run efficiently. High capital values relative to rent, a large student population split between the University of Cambridge and Anglia Ruskin, and strong professional demand from the Science Park and the Biomedical Campus all push tax planning to the front. Add Section 24, the live Making Tax Digital rollout and Cambridge's HMO licensing rules, and the gap between a generalist accountant and a property specialist becomes real money.</p>
 
 <p>This guide sets out the tax issues that bite hardest for Cambridge landlords and what a specialist property accountant actually does about them. It is general information, not advice on your specific circumstances.</p>
 
@@ -51,7 +51,7 @@ faqs:
 
 <h3>Capital gains tax on disposals</h3>
 
-<p>Cambridge values have risen substantially over the long run, so disposals often produce sizeable gains. Residential property capital gains tax was unified by the Finance (No. 2) Act 2024 at 18% within the basic-rate band and 24% above it. The annual exempt amount is GBP3,000 for 2026/27.</p>
+<p>Cambridge values have risen substantially over the long run, so disposals often produce sizeable gains. Residential property capital gains tax was unified by the Finance (No. 2) Act 2024 at 18% within the basic-rate band and 24% above it. The annual exempt amount is £3,000 for 2026/27.</p>
 
 <p>Two points catch landlords out. First, a UK residential disposal that produces a gain must be reported and the tax paid within 60 days of completion, separately from Self Assessment. Second, reliefs such as private residence relief on a former home, and the correct treatment of capital improvements, can materially change the bill if the records exist. Our <a href="https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">guide to current CGT rates on property</a> sets out the rates and the reporting steps in full.</p>
 
@@ -70,7 +70,7 @@ faqs:
 <h2>Local Cambridge rules to factor in</h2>
 
 <ul>
-<li><strong>Article 4 HMO direction:</strong> Cambridge City Council operates a citywide Article 4 Direction that removes the permitted development right to convert a family home (use class C3) into a small shared house (C4). In practice this means planning permission is often required before creating a small HMO, which constrains supply and affects values.</li>
+<li><strong>Article 4 and HMO planning:</strong> Cambridge does not currently operate a citywide Article 4 Direction removing the permitted development right to convert a family home (use class C3) into a small shared house (C4), so that conversion is generally still permitted development across much of the city. Designations can change and may apply locally, so confirm the current position with Cambridge City Council before creating a small HMO.</li>
 <li><strong>HMO licensing:</strong> Larger HMOs require a mandatory HMO licence, and licence standards and renewal costs need to be budgeted. Those costs are revenue expenses for tax, but the standards can require capital works that are treated differently.</li>
 <li><strong>Two councils, similar pressures:</strong> Properties may sit within Cambridge City Council or South Cambridgeshire District Council, each with its own licensing and planning detail. Knowing which authority applies matters for both compliance and acquisition appraisals.</li>
 <li><strong>England, not Scotland or Wales:</strong> Cambridge purchases attract stamp duty land tax (SDLT) with the additional-dwelling surcharge, not Scotland's LBTT plus ADS or Wales' LTT. This matters when modelling acquisition costs and any incorporation transfer.</li>
@@ -78,7 +78,7 @@ faqs:
 
 <h2>Making Tax Digital is now live</h2>
 
-<p>Making Tax Digital for Income Tax is no longer a future deadline. It is rolling out by qualifying income, which combines gross self-employment and property income before expenses. It applies from 6 April 2026 above GBP50,000, from 6 April 2027 above GBP30,000, and from 6 April 2028 above GBP20,000.</p>
+<p>Making Tax Digital for Income Tax is no longer a future deadline. It is rolling out by qualifying income, which combines gross self-employment and property income before expenses. It applies from 6 April 2026 above £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000.</p>
 
 <p>Once in scope, you must keep digital records and send quarterly updates to HMRC through compatible software, followed by a final declaration after year end. Many Cambridge landlords with multiple properties cross the first threshold without realising it, because the test is on combined gross income, not profit. Getting onto suitable software and a clean quarterly process early avoids a scramble. Our <a href="https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital guide for landlords</a> explains the records, the quarters and the software requirements.</p>
 
@@ -99,6 +99,6 @@ faqs:
 
 <h2>Working with Property Tax Partners</h2>
 
-<p>Property Tax Partners specialises in UK property taxation and supports Cambridge and South Cambridgeshire landlords remotely, from single buy-to-let owners to larger and incorporated portfolios. We focus on the issues that define this market: Section 24 under high loan balances, CGT on long-held gains, the Article 4 and licensing backdrop, and getting Making Tax Digital running cleanly before the relevant threshold bites.</p>
+<p>Property Tax Partners specialises in UK property taxation and supports Cambridge and South Cambridgeshire landlords remotely, from single buy-to-let owners to larger and incorporated portfolios. We focus on the issues that define this market: Section 24 under high loan balances, CGT on long-held gains, the HMO licensing and planning backdrop, and getting Making Tax Digital running cleanly before the relevant threshold bites.</p>
 
 <p>For the wider picture, our <a href="https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax guide</a> and our breakdown of <a href="https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords in 2026/27</a> give the rules in depth. To talk through your own Cambridge portfolio, get in touch for an initial conversation about where you stand and what support fits.</p>

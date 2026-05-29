@@ -16,13 +16,13 @@ faqs:
   - question: "Can I offset mortgage interest against my buy-to-let rental income in London?"
     answer: "Not directly. Since 6 April 2020, individual landlords cannot deduct mortgage interest from rental income. Instead, Section 24 of the Finance (No.2) Act 2015 gives a 20% basic-rate tax credit on finance costs. So a London landlord with £40,000 of mortgage interest receives a £8,000 credit, regardless of whether they are a basic-rate, higher-rate, or additional-rate taxpayer. Limited companies are not affected by Section 24 and continue to deduct interest in full against rental profits."
   - question: "What is the SDLT surcharge on a London buy-to-let in 2026?"
-    answer: "The additional-dwellings surcharge has been 5% since 31 October 2024, up from the 3% that ran from 2016 to 2024. It is added on top of the standard residential SDLT rates and applies to any additional dwelling purchased while you already own a residential property. On a £600,000 London flat, total SDLT in 2026/27 is £39,500: £20,000 standard (£0 on the first £125k at 0%, £2,500 on £125k-£250k at 2%, £17,500 on £250k-£600k at 5%) plus £30,000 surcharge (5% of £600,000). Non-resident purchasers add a further 2% surcharge."
+    answer: "The additional-dwellings surcharge has been 5% since 31 October 2024, up from the 3% that ran from 2016 to 2024. It is added on top of the standard residential SDLT rates and applies to any additional dwelling purchased while you already own a residential property. On a £600,000 London flat, total SDLT in 2026/27 is £50,000: £20,000 standard (£0 on the first £125k at 0%, £2,500 on £125k-£250k at 2%, £17,500 on £250k-£600k at 5%) plus £30,000 surcharge (5% of £600,000). Non-resident purchasers add a further 2% surcharge."
   - question: "When does it make sense for a London landlord to incorporate?"
     answer: "Incorporation is most often worthwhile for higher-rate or additional-rate London landlords with mortgaged portfolios above roughly £750,000 of gross value who intend to retain profits for reinvestment rather than draw them. The corporation tax rate of 19% on profits up to £50,000 and 25% above £250,000 (with marginal relief between) usually beats personal 40% or 45% rates after Section 24. The decision must weigh the SDLT cost of transferring existing properties (which can trigger the full 5% surcharge plus standard rates unless a partnership incorporation relief applies under TCGA 1992 s.162), the CGT cost on the deemed disposal at market value, and the cost of refinancing existing residential mortgages into BTL company products."
   - question: "What expenses can I claim as a London buy-to-let landlord?"
     answer: "Allowable expenses against London rental income include letting agent fees (typically 10-15% of rent in central London), repairs and maintenance (not improvements), buildings and contents insurance, ground rent and service charges, gas safety and EICR certification, accountancy fees, advertising for tenants, replacement of domestic items (like-for-like furniture, white goods, soft furnishings), and travel costs for property management visits. Improvements that enhance the property beyond its original state are capital, not revenue, and are added to the base cost for CGT instead. Mortgage interest is no longer deductible but generates the 20% Section 24 credit."
   - question: "Does Annual Tax on Enveloped Dwellings (ATED) apply to my company-held London flat?"
-    answer: "ATED applies to residential properties worth more than £500,000 held in a company, partnership with corporate members, or collective investment scheme. The 2026/27 annual charges (CPI-indexed each April) sit in six bands starting around £4,400 for the £500,001-£1m band and rising to roughly £290,000 for properties over £20m. Most genuine buy-to-let companies claim ATED relief (the property must be let on arm's-length terms to an unconnected tenant) by filing a relief declaration return by 30 April each year. Failure to file the relief return on time creates a charge even when relief would have applied."
+    answer: "ATED applies to residential properties worth more than £500,000 held in a company, partnership with corporate members, or collective investment scheme. The 2026/27 annual charges (CPI-indexed each April) sit in six bands starting around £4,600 for the £500,001-£1m band and rising to roughly £303,000 for properties over £20m. Most genuine buy-to-let companies claim ATED relief (the property must be let on arm's-length terms to an unconnected tenant) by filing a relief declaration return by 30 April each year. Failure to file the relief return on time creates a charge even when relief would have applied."
   - question: "How does MTD for ITSA affect me as a London landlord?"
     answer: "MTD for Income Tax went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. London landlords are disproportionately affected because the high gross rents in Zones 1-3 push most multi-property portfolios over £50,000 quickly. You must keep digital records, submit quarterly updates through MTD-compatible software, and file a Final Declaration by 31 January after the tax year end. Limited company structures are outside MTD for ITSA entirely; they continue to file corporation tax returns annually."
   - question: "What CGT rate applies when I sell a London buy-to-let in 2026/27?"
@@ -51,14 +51,14 @@ faqs:
 
 <p>London buy-to-let is the most heavily taxed corner of the UK residential market in 2026/27. The 5% additional-dwellings SDLT surcharge (raised from 3% on 31 October 2024) hits every purchase. Section 24 has reduced higher-rate landlords' mortgage interest relief to a flat 20% basic-rate credit since 6 April 2020. Making Tax Digital for Income Tax (MTD for ITSA) went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000, and the threshold drops to £30,000 in 2027 and £20,000 in 2028. Annual Tax on Enveloped Dwellings (ATED) applies to company-held high-value flats. The post-Autumn-2024 CGT rates of 18% and 24% bite on disposal. A specialist <strong>buy-to-let accountant in London</strong> exists to convert that pile of rules into a coherent plan for a specific portfolio.</p>
 
-<p>This page sets out the issues that actually matter for London landlords and investors in 2026/27 with worked figures sized to the central-London market. It is the investor-focused companion to our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant-london">how to choose a London property accountant</a> guide.</p>
+<p>This page sets out the issues that actually matter for London landlords and investors in 2026/27 with worked figures sized to the central-London market. It is the investor-focused companion to our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a London property accountant</a> guide.</p>
 
 <h2>Why London Buy-to-Let Is Taxed Differently in Practice</h2>
 
 <p>Tax law is national. The way it lands in London is local. Three structural features push the average London buy-to-let into a different tax position than the same gross rent would face in, say, Wolverhampton or Swansea.</p>
 
 <ul>
-<li><strong>Average purchase price.</strong> An entry-level Zone 3 one-bed flat at around £400,000 attracts the 5% additional-dwellings surcharge from the first pound, plus standard SDLT, so the buyer hits £27,500 of total SDLT before they have collected a month's rent.</li>
+<li><strong>Average purchase price.</strong> An entry-level Zone 3 one-bed flat at around £400,000 attracts the 5% additional-dwellings surcharge from the first pound, plus standard SDLT, so the buyer hits £30,000 of total SDLT before they have collected a month's rent.</li>
 <li><strong>Higher leverage and lower gross yields.</strong> Central London gross yields of 3.5% to 4.5% on a 75% LTV mortgage mean the interest line is a huge fraction of rent. Under Section 24 that fraction now sits above the line, dragging the headline taxable rental profit up well above true cash profit.</li>
 <li><strong>Bigger gains, smaller AEA.</strong> A 10-year-held Zone 2 flat carrying a £200,000 capital gain has been a routine reality for London investors. The CGT annual exempt amount fell from £12,300 to £6,000 in 2023/24 and to £3,000 from 2024/25, so almost the entire gain is now in charge.</li>
 </ul>
@@ -79,7 +79,7 @@ faqs:
 
 <h2>Section 24 for Higher-Rate London Landlords (Worked Example)</h2>
 
-<p>Section 24 is the single biggest tax change to hit individual landlords in a generation. Before 2017, mortgage interest was a fully deductible expense. From 2017 to 2020 it was phased out. Since 6 April 2020 finance costs are not deductible at all; instead a basic-rate tax credit at 20% is applied against the income tax bill. The mechanic is set out in Income Tax Act 2007 s.272A onwards.</p>
+<p>Section 24 is the single biggest tax change to hit individual landlords in a generation. Before 2017, mortgage interest was a fully deductible expense. From 2017 to 2020 it was phased out. Since 6 April 2020 finance costs are not deductible at all; instead a basic-rate tax credit at 20% is applied against the income tax bill. The mechanic is set out in Income Tax (Trading and Other Income) Act 2005 s.272A onwards.</p>
 
 <h3>A typical Zone 2 portfolio</h3>
 
@@ -162,12 +162,12 @@ faqs:
 <tr><th>Property value band</th><th>2026/27 annual charge (approx.)</th></tr>
 </thead>
 <tbody>
-<tr><td>£500,001 - £1,000,000</td><td>£4,400</td></tr>
-<tr><td>£1,000,001 - £2,000,000</td><td>£9,000</td></tr>
-<tr><td>£2,000,001 - £5,000,000</td><td>£30,500</td></tr>
-<tr><td>£5,000,001 - £10,000,000</td><td>£71,500</td></tr>
-<tr><td>£10,000,001 - £20,000,000</td><td>£143,500</td></tr>
-<tr><td>Over £20,000,000</td><td>£287,500</td></tr>
+<tr><td>£500,001 - £1,000,000</td><td>£4,600</td></tr>
+<tr><td>£1,000,001 - £2,000,000</td><td>£9,450</td></tr>
+<tr><td>£2,000,001 - £5,000,000</td><td>£32,200</td></tr>
+<tr><td>£5,000,001 - £10,000,000</td><td>£75,450</td></tr>
+<tr><td>£10,000,001 - £20,000,000</td><td>£151,450</td></tr>
+<tr><td>Over £20,000,000</td><td>£303,450</td></tr>
 </tbody>
 </table>
 
@@ -175,9 +175,9 @@ faqs:
 
 <h2>Capital Gains Tax on London Disposals</h2>
 
-<p>The Autumn 2024 Budget reduced the residential CGT higher rate from 28% to 24% with effect from 30 October 2024. The lower rate stayed at 18%. The annual exempt amount stayed at £3,000 for 2026/27. So a higher-rate London landlord disposing of a £400,000-purchase Zone 2 flat for £700,000 in 2026/27, after £15,000 of qualifying improvement costs and £8,000 of disposal costs (legal, agent), has a gain of £277,000, taxable on £274,000 at 24% = £65,760.</p>
+<p>The residential CGT higher rate fell from 28% to 24% with effect from 6 April 2024 (Finance (No.2) Act 2024); the lower rate stayed at 18%. The annual exempt amount stayed at £3,000 for 2026/27. So a higher-rate London landlord disposing of a £400,000-purchase Zone 2 flat for £700,000 in 2026/27, after £15,000 of qualifying improvement costs and £8,000 of disposal costs (legal, agent), has a gain of £277,000, taxable on £274,000 at 24% = £65,760.</p>
 
-<p>The most-missed mechanic is the <strong>60-day reporting and payment window</strong> under TCGA 1992 Schedule 2 paragraph 6: the disposal must be reported and the tax paid within 60 days of completion through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>, separately from the Self Assessment return. Penalties under Schedule 55 FA 2009 start at £100, rise to £300 after six months, and continue rising. Daily penalties can apply in egregious cases. We have rewritten the disposal mechanics in detail in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT on UK residential property sale</a> guide.</p>
+<p>The most-missed mechanic is the <strong>60-day reporting and payment window</strong> introduced by Schedule 2 to the Finance Act 2019 (the original 30-day window was extended to 60 days by the Finance Act 2022 for completions on or after 27 October 2021): the disposal must be reported and the tax paid within 60 days of completion through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>, separately from the Self Assessment return. Penalties under Schedule 55 FA 2009 start at £100, rise to £300 after six months, and continue rising. Daily penalties can apply in egregious cases. We have rewritten the disposal mechanics in detail in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT on UK residential property sale</a> guide.</p>
 
 <aside>
 <p>About to exchange on a London buy-to-let sale?</p>
@@ -198,7 +198,7 @@ faqs:
 <p>The pillar guide on the structure mechanics is <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">our BTL limited company guide</a>. For London-specific transfer-in planning, three points matter:</p>
 
 <ol>
-<li><strong>SDLT on transfer in.</strong> A sale-and-purchase between you and your wholly-owned company is treated for SDLT as a transaction at market value (FA 2003 s.53), which means the full 5% additional-dwellings surcharge plus standard rates applies. On a £1m portfolio that is £71,250 of SDLT before any tax saving has accrued.</li>
+<li><strong>SDLT on transfer in.</strong> A sale-and-purchase between you and your wholly-owned company is treated for SDLT as a transaction at market value (FA 2003 s.53), which means the full 5% additional-dwellings surcharge plus standard rates applies. On a £1m portfolio that is £93,750 of SDLT before any tax saving has accrued.</li>
 <li><strong>Partnership incorporation relief.</strong> A genuine pre-existing property letting partnership (run for a meaningful period, with partnership records, joint accounting, joint borrowing where possible) can transfer into a connected company without SDLT under HMRC's interpretation of FA 2003 Sch 15 para 18, combined with TCGA 1992 s.162 incorporation relief for the CGT side. This route is heavily reviewed by HMRC and is not appropriate for a husband-and-wife portfolio that has never actually traded as a partnership.</li>
 <li><strong>Refinancing.</strong> Residential BTL mortgages are individual products; you cannot simply transfer them. Existing loans must be repaid and replaced with limited-company BTL mortgages, which run at 0.5%-1% higher rates. This refinancing cost is recurrent and must be modelled across the holding period.</li>
 </ol>
@@ -212,7 +212,7 @@ faqs:
 <li>The landlord to register via <strong>form NRL1</strong> (individuals) or <strong>NRL2</strong> (companies) and receive rents gross, with tax settled through annual Self Assessment.</li>
 </ul>
 
-<p>UK rental profits are taxed at UK rates regardless of residency, and most non-resident landlords are better off in the gross-payment scheme. CGT on disposal is reportable within 60 days under the same UK Property CGT service that UK residents use. The 2% non-resident SDLT surcharge applies on purchases. We cover the mechanics in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-tax">non-resident landlord tax guide</a>.</p>
+<p>UK rental profits are taxed at UK rates regardless of residency, and most non-resident landlords are better off in the gross-payment scheme. CGT on disposal is reportable within 60 days under the same UK Property CGT service that UK residents use. The 2% non-resident SDLT surcharge applies on purchases. We cover the mechanics in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord tax guide</a>.</p>
 
 <h2>Borough-Level Licensing in London (Tax Treatment)</h2>
 
@@ -271,7 +271,7 @@ faqs:
 <li>Do you model partnership incorporation relief for SDLT-free transfer into a limited company where applicable? (Should be a confident yes for a genuine portfolio specialist.)</li>
 </ul>
 
-<p>Anyone unable to answer those without checking is not the right adviser for a serious London buy-to-let portfolio. The longer companion piece is our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant-london">guide to finding the best property accountant in London</a>, which walks through the selection process in full.</p>
+<p>Anyone unable to answer those without checking is not the right adviser for a serious London buy-to-let portfolio. The longer companion piece is our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">guide to finding the best property accountant in London</a>, which walks through the selection process in full.</p>
 
 <p>One more point, because the canonical case above is pitched at large portfolios: specialist advice is not only for £1.5m-plus investors. Even a single mortgaged London flat that clears the MTD for ITSA threshold and sits inside the Section 24 finance-cost restriction benefits from a property accountant, because the quarterly digital filing, the 20% credit mechanics, and the eventual CGT on disposal all apply just as much to one property as to ten.</p>
 
@@ -309,7 +309,7 @@ faqs:
 
 <ul>
 <li><a href="/locations/london">Property Tax Partners London</a></li>
-<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant-london">Finding the Best Property Accountant in London</a></li>
+<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Finding the Best Property Accountant in London</a></li>
 <li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Complete Guide</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL Limited Company Complete Guide</a></li>
 </ul>

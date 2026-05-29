@@ -186,7 +186,7 @@ faqs:
 <li><strong>The furnished holiday lettings regime</strong> was abolished from 6 April 2025, moving former holiday let owners onto standard residential rules and generating a wave of restructuring questions.</li>
 <li><strong>CGT reporting</strong> now runs on a 60 day clock, which catches out unrepresented sellers and drives demand for help at the point of sale.</li>
 <li><strong>Making Tax Digital for Income Tax</strong> is rolling out across landlords from April 2026, bringing more landlords into a regime where they need ongoing software and compliance support.</li>
-<li><strong>The April 2027 property income rate rise,</strong> announced at the Autumn Budget 2024 and enacted by the Finance Act 2026 (Royal Assent 18 March 2026), adds 2% to the income tax rates on property income from 2027/28, producing rates of 22% basic, 42% higher and 47% additional. It is the kind of change that drives landlords toward specialist advice.</li>
+<li><strong>The April 2027 property income rate rise,</strong> announced at the Autumn Budget 2025 (26 November 2025) and enacted by the Finance Act 2026 (Royal Assent 18 March 2026), adds 2 percentage points to the income tax rates on property income in England and Northern Ireland from 2027/28, producing rates of 22% basic, 42% higher and 47% additional (Scotland and Wales set their own). It is the kind of change that drives landlords toward specialist advice.</li>
 </ul>
 <p>Alongside the rule changes, landlords themselves are professionalising. More investors hold portfolios through companies, plan around inheritance tax, and want a specialist rather than a generalist. That trend favours anyone building a property focused accounting career.</p>
 
