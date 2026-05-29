@@ -1,4 +1,6 @@
-# Track 2 Manager Pickup — paste verbatim into a fresh Claude Opus 4.7 session at C:/Users/user/Documents/Accounting/
+# Track 2 Manager Pickup — paste verbatim into a fresh Claude Opus session at C:/Users/user/Documents/Accounting/
+
+> **⚠️ 2026-05-29 — REMEDIATION COMPLETE, ENGINE HARDENED. Read `docs/property/TRACK2_REWRITE_RESUME_2026-05-29.md` FIRST.** The program paused because QA found systematic generator errors (backwards April-2027 framing + ~229 broken internal links). All four remediation workstreams are now done — three deployed live (`dfb3d277`, `4ca1f97e`, `f4f6d977`), the engine fix committed (`717f0038`). The generator is now hardened: a slug resolver auto-canonicalises internal-link categories at generation, and a **pre-deploy gate blocks any deploy with a broken `/blog` link — run `python scripts/predeploy_gate.py` before deploying.** The resume doc has the new engine constraints + the verified 2027 ground truth every rewrite must use. The mechanics below still apply; the resume doc is the current context on top of them.
 
 **Last refreshed:** 2026-05-24 PM (post-Phase-3 close — paused awaiting deploy authorisation).
 
