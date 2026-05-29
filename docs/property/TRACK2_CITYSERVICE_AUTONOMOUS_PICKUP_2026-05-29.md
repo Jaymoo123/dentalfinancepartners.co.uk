@@ -49,9 +49,13 @@ Invoke a workflow: `Workflow({scriptPath, args:{...}})`. Workflows write pages t
   "fix leaks inline" during rewrites (not a separate firefight). NON-Track-2 leak pages (net-new/rewritten,
   ~half of 108) won't be reached inline -> parked for a later optimisation pass.
 
-## IN PROGRESS / NEXT (autonomous)
-- Rewrite-writer PROOF running on milton-keynes + bristol + manchester (depth=full). On pass+build-green: commit + deploy.
-- Then run Tier 1 remainder (full), then Tier 2 (refresh), in batches: each batch -> verify -> build -> commit -> deploy.
+## PROGRESS (autonomous, updated through Tier-1)
+- DONE+DEPLOYED+MONITORED: CityService **13 Tier-1 rewrites** (commits `22b82a40` rewrites + `d8301db3` markup strip). All verified (statutes/pricing/em-dash/facts/cannibalisation/HTML). 13 monitored_pages rewrite rows inserted.
+- DONE+DEPLOYED: **site-wide leaked-markup strip** - 34 live pages had `</content></invoke>` from prior sub-agents; stripped via `scripts/strip_leaked_tool_markup.py`. Verify caught it (now a standing guard).
+- Rewrite-writer hardened: rewrite stage returns minimal payload (StructuredOutput flakiness fixed); verify stage reads the saved file as the gate.
+- IN PROGRESS: **Tier 2A** (13 invisible long-tail, depth=refresh) running. Then Tier 2B (remaining 13): northampton, norwich, oxford, preston, reading, warrington, sunderland, york, why-cardiff, why-luton, why-sheffield, slough, newcastle.
+- Per-batch loop: workflow -> read compact audits -> fix pass-with-fixes (factual, manager-direct) -> build -> commit (rewrites + any markup) -> deploy -> insert monitored_pages (rewrite_type) at deploy. Keep batches at 13 so the tree never holds a huge uncommitted set (compaction-safe).
+- AFTER CityService: next clusters via triage->engine. Section24(27) + CapitalAllowances(21) are collapse-heavy (severe self-cannibalisation, mostly redirect-collapse with query-coverage MERGE per track2_collapse_verify + track2_apply_lifts). Then CGT(7) + Incorporation(35) rewrites.
 - Then the other clusters via the same triage->engine: CGT(7), Incorporation(35), CapitalAllowances(21, collapse-heavy),
   Section24(27, collapse-heavy - severe self-cannibalisation, mostly collapse), MTD(8), VATcalc(4, collapse), etc.
 - Deploy: repo root, `VERCEL_PROJECT_ID=prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH vercel deploy --prod --yes`.
