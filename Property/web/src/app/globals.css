@@ -283,6 +283,33 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--slate-700);
 }
 
+.prose-blog aside .aside-cta-row {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.prose-blog aside a.aside-cta,
+.prose-blog aside a.aside-cta:hover {
+  display: inline-block;
+  padding: 0.625rem 1.125rem;
+  background: var(--emerald-700);
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.prose-blog aside a.aside-cta:hover {
+  background: var(--emerald-600);
+}
+
+.prose-blog aside a.aside-cta:focus-visible {
+  outline: 2px solid var(--emerald-600);
+  outline-offset: 2px;
+}
+
 /* ============================================================
    UTILITY CLASSES
    ============================================================ */

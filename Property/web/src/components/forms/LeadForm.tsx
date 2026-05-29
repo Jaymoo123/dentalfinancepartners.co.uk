@@ -52,13 +52,15 @@ export function LeadForm({
 
     if (fullName.length < 2) errs.fullName = "Enter your name.";
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
-    
-    if (!ukPhoneRe.test(phone)) {
-      errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123";
-    } else if (!hasMinDigits(phone, 10)) {
-      errs.phone = "Enter at least 10 digits.";
+
+    if (phone.length > 0) {
+      if (!ukPhoneRe.test(phone)) {
+        errs.phone = "Use only digits, spaces, +, -, ( ), e.g. 07700 900123";
+      } else if (!hasMinDigits(phone, 10)) {
+        errs.phone = "Enter at least 10 digits.";
+      }
     }
-    
+
     if (!role) errs.role = "Select your landlord type.";
 
     if (message.length > 0 && message.length < 10) {
@@ -208,13 +210,12 @@ export function LeadForm({
 
         <div>
           <label htmlFor="phone" className="block text-sm font-semibold text-slate-900">
-            Phone
+            Phone <span className="font-normal text-slate-500">(optional)</span>
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            required
             autoComplete="tel"
             maxLength={20}
             placeholder={niche.lead_form.placeholders.phone}

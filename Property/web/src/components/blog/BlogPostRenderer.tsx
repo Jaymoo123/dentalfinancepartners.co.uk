@@ -7,6 +7,10 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
+import { StickyCTA } from "@/components/ui/StickyCTA";
+import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 
@@ -16,9 +20,80 @@ type BlogPostRendererProps = {
   related?: { slug: string; title: string; summary: string; categorySlug: string }[];
 };
 
+type CTACopy = { heading: string; body: string; button: string };
+
+const CTA_BY_CATEGORY: Record<string, CTACopy> = {
+  "Section 24 & Tax Relief": {
+    heading: "Want your Section 24 position checked?",
+    body: "Get a property tax specialist to run the numbers on your portfolio under the s.24 finance cost restriction. Free 20-minute call, no hard sell.",
+    button: "Book a Section 24 review",
+  },
+  "Incorporation & Company Structures": {
+    heading: "Considering incorporating your portfolio?",
+    body: "Incorporation is one of the most consequential decisions a landlord can make. Get a specialist to model the SDLT, CGT and ongoing tax impact for your specific portfolio.",
+    button: "Book an incorporation review",
+  },
+  "Making Tax Digital (MTD)": {
+    heading: "Get your MTD ITSA setup checked before April 2026",
+    body: "Run a parallel-quarter dry run with us. We will check your records, your software, and your digital links so the mandate is a non-event.",
+    button: "Book an MTD readiness call",
+  },
+  "Capital Gains Tax": {
+    heading: "Selling a property? Get the CGT position checked first",
+    body: "The 60-day CGT reporting deadline is unforgiving. Get a specialist to compute your gain, model any reliefs, and file on time.",
+    button: "Book a CGT review",
+  },
+  "Portfolio Management": {
+    heading: "Want a second pair of eyes on your portfolio?",
+    body: "Get a property tax specialist to review your portfolio structure, reliefs, and tax exposure. Practical recommendations, no hard sell.",
+    button: "Book a portfolio review",
+  },
+  "Property Accountant Services": {
+    heading: "Want a fixed-fee property accountant?",
+    body: "Get a property tax specialist to handle your accounts, tax returns, and ongoing advice. Fixed fees, 24-hour response, no surprises.",
+    button: "Book an introduction call",
+  },
+  "Landlord Tax Essentials": {
+    heading: "Want your landlord tax position checked?",
+    body: "Get a property tax specialist to run through your situation. Practical recommendations, no hard sell.",
+    button: "Book a consultation",
+  },
+  "Property Types & Specialist Tax": {
+    heading: "Have a specialist property tax question?",
+    body: "Furnished holiday lets, mixed-use, HMOs, commercial, agricultural. Get a specialist who has handled your property type before.",
+    button: "Book a specialist call",
+  },
+  "Non-Resident Landlord Tax": {
+    heading: "UK property and a foreign tax position to manage?",
+    body: "Get a property tax specialist with cross-border experience. NRL scheme, treaty credit, FIG regime, NRCGT, we have walked these for landlords like you.",
+    button: "Book a cross-border review",
+  },
+};
+
 function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+}
+
+function decorateAsides(html: string): string {
+  return html.replace(
+    /<aside>([\s\S]*?)<\/aside>/g,
+    (_m, inner) =>
+      `<aside>${inner}<p class="aside-cta-row"><a class="aside-cta" href="#enquiry-form">Talk to a specialist →</a></p></aside>`,
+  );
+}
+
+function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 4) {
+    return { before: html, after: null };
+  }
+  const targetIdx = Math.floor(headings.length * 0.6);
+  const target = headings[targetIdx];
+  if (target?.index === undefined) {
+    return { before: html, after: null };
+  }
+  return { before: html.slice(0, target.index), after: html.slice(target.index) };
 }
 
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
@@ -27,6 +102,21 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const jsonLd =
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
+
+  const decoratedHtml = decorateAsides(post.contentHtml);
+  const { before, after } = splitContentAtMidScroll(decoratedHtml);
+
+  const ctaCopy: CTACopy = CTA_BY_CATEGORY[post.category] ?? {
+    heading: niche.blog.cta_heading,
+    body: niche.blog.cta_body,
+    button: niche.blog.cta_button,
+  };
+
+  const isMTDPost = post.category === "Making Tax Digital (MTD)";
+
+  const reviewerName = post.reviewedBy?.trim();
+  const reviewerCreds = post.reviewerCredentials?.trim();
+  const hasReviewer = !!(reviewerName && reviewerCreds);
 
   return (
     <>
@@ -75,6 +165,14 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 {post.summary ? (
                   <p className="mt-4 text-lg text-slate-700 leading-relaxed">{post.summary}</p>
                 ) : null}
+                <div className="mt-6">
+                  <a
+                    href="#enquiry-form"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:text-emerald-800 underline underline-offset-4"
+                  >
+                    Skip to enquiry form ↓
+                  </a>
+                </div>
               </header>
 
               <div className="lg:hidden mt-8">
@@ -91,10 +189,37 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 />
               ) : null}
 
-              <div
-                className="article-body prose-blog mt-10"
-                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-              />
+              <div className="article-body prose-blog mt-10">
+                <div dangerouslySetInnerHTML={{ __html: before }} />
+                {after ? (
+                  <>
+                    <InlineMiniLeadForm topic={post.category} />
+                    <div dangerouslySetInnerHTML={{ __html: after }} />
+                  </>
+                ) : null}
+              </div>
+
+              {isMTDPost ? (
+                <div className="mt-12">
+                  <MTDCountdown />
+                </div>
+              ) : null}
+
+              <section
+                id="enquiry-form"
+                className="mt-16 bg-slate-900 p-8 sm:p-10 text-white scroll-mt-24"
+                aria-labelledby="enquiry-form-heading"
+              >
+                <h2 id="enquiry-form-heading" className="text-2xl font-bold text-white sm:text-3xl">
+                  {ctaCopy.heading}
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-slate-200">
+                  {ctaCopy.body}
+                </p>
+                <div className="mt-8">
+                  <LeadForm redirectOnSuccess={false} submitLabel={ctaCopy.button} />
+                </div>
+              </section>
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">
@@ -119,26 +244,32 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-emerald-700">About the author</p>
-                  <p className="mt-1 text-lg font-bold text-slate-900">{niche.display_name}</p>
-                  <p className="mt-2 text-sm text-slate-600 leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
-                    Learn more about our team →
-                  </Link>
+                  {hasReviewer ? (
+                    <>
+                      <p className="text-sm font-bold uppercase tracking-wider text-emerald-700">Reviewed by</p>
+                      <p className="mt-1 text-lg font-bold text-slate-900">{reviewerName}</p>
+                      <p className="mt-1 text-sm text-slate-600">{reviewerCreds}</p>
+                      {post.reviewedAt ? (
+                        <p className="mt-2 text-xs text-slate-500">
+                          Last reviewed {formatUkDate(post.reviewedAt)}
+                        </p>
+                      ) : null}
+                      <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                        Learn more about our team →
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-sm font-bold uppercase tracking-wider text-emerald-700">About the author</p>
+                      <p className="mt-1 text-lg font-bold text-slate-900">{niche.display_name}</p>
+                      <p className="mt-2 text-sm text-slate-600 leading-relaxed">{niche.description}</p>
+                      <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                        Learn more about our team →
+                      </Link>
+                    </>
+                  )}
                 </div>
               </aside>
-
-              <div className="mt-16 bg-slate-900 p-8 sm:p-10 text-white">
-                <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                  {niche.blog.cta_heading}
-                </h2>
-                <p className="mt-4 text-base leading-relaxed text-slate-200">
-                  {niche.blog.cta_body}
-                </p>
-                <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
-                </div>
-              </div>
 
               {related.length > 0 ? (
                 <section className="mt-16" aria-labelledby="related-heading">
@@ -170,6 +301,14 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
           </div>
         </div>
       </article>
+
+      <StickyCTA
+        href="#enquiry-form"
+        primary="Want this checked for your situation?"
+        secondary="Free 20-minute call with a property tax specialist"
+        buttonLabel="Talk to a specialist"
+      />
+      <ExitIntentModal topic={post.category} />
     </>
   );
 }

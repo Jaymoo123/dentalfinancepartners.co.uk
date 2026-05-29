@@ -5,7 +5,19 @@ import Link from "next/link";
 import { btnPrimary } from "./layout-utils";
 import { niche } from "@/config/niche-loader";
 
-export function StickyCTA() {
+type StickyCTAProps = {
+  href?: string;
+  primary?: string;
+  secondary?: string;
+  buttonLabel?: string;
+};
+
+export function StickyCTA({
+  href = "/contact",
+  primary,
+  secondary,
+  buttonLabel,
+}: StickyCTAProps = {}) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
 
@@ -25,6 +37,10 @@ export function StickyCTA() {
 
   if (dismissed) return null;
 
+  const primaryText = primary ?? niche.cta.sticky_primary;
+  const secondaryText = secondary ?? niche.cta.sticky_secondary;
+  const button = buttonLabel ?? niche.cta.sticky_button;
+
   return (
     <div
       className={`fixed bottom-0 left-0 right-0 z-50 transform border-t-4 border-emerald-600 bg-slate-900 shadow-2xl transition-transform duration-300 ${
@@ -34,15 +50,15 @@ export function StickyCTA() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-4 px-4 py-3 sm:py-4 sm:px-6 lg:px-8">
         <div className="min-w-0 flex-1 border-l-2 border-emerald-600 pl-3 sm:pl-4">
           <p className="text-xs sm:text-sm font-bold text-white lg:text-base">
-            {niche.cta.sticky_primary}
+            {primaryText}
           </p>
           <p className="mt-0.5 hidden text-xs text-slate-300 sm:block">
-            {niche.cta.sticky_secondary}
+            {secondaryText}
           </p>
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
-          <Link href="/contact" className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}>
-            {niche.cta.sticky_button}
+          <Link href={href} className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}>
+            {button}
           </Link>
           <button
             onClick={() => setDismissed(true)}

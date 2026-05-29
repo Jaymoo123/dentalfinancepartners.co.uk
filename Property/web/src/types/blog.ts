@@ -21,6 +21,9 @@ export type BlogFrontmatter = {
   schema?: string;
   canonical?: string;
   faqs?: BlogFaq[];
+  reviewedBy?: string;
+  reviewerCredentials?: string;
+  reviewedAt?: string;
 };
 
 export type BlogPost = BlogFrontmatter & {
