@@ -1,125 +1,190 @@
 #!/usr/bin/env python3
-"""Track 2 collapse-direction guard (DETERMINISTIC).
+"""Track 2 collapse-direction guard (DETERMINISTIC, spike-robust, monitored-aware).
 
 WHY THIS EXISTS
 ---------------
-The engine DIAGNOSE stage chooses a redirect-collapse target by SEMANTIC
-reasoning (which slug "looks like" the broad canonical) WITHOUT comparing the
-actual ranking equity of the source vs the proposed canonical. That let it
-propose collapsing a near-page-1 page (193 impr, pos 15.5) INTO a far weaker
-page-4 page (4 impr, pos 44.5) - a 301 that would have buried the cluster's only
-ranking equity. The adversarial verify caught it, but a traffic-DESTROYING
-decision must never depend on a probabilistic catch. This guard is the
-deterministic floor: a collapse may only ever point a WEAKER page at a STRONGER
-one, measured by data, not by what the title sounds like.
+The engine DIAGNOSE stage chose redirect-collapse targets by SEMANTIC reasoning
+(which slug "sounds like" the canonical) WITHOUT comparing actual ranking equity,
+and proposed collapsing a near-page-1 page into a far weaker one - a 301 that
+buries ranking equity. This guard is the deterministic floor: a collapse may
+only ever point a WEAKER page at a STRONGER one, measured by data.
+
+SPIKE-ROBUST (calibrated): raw 90-day impression SUMS are dominated by one-week
+spikes (a single 468-impression week made a dead page look strong). So equity is
+measured as `sustained` impressions = 90d total MINUS the single biggest week,
+combined with `weeks_present` (distinct weeks with traffic). A page only counts
+as a protected ranking asset if it is present in >= MIN_WEEKS weeks with
+>= SUSTAIN_FLOOR sustained impressions. Deliberately PERMISSIVE: genuinely weak
+or spiky pages still collapse freely, so micro-optimisation is not blocked.
+
+MONITORED-AWARE: a page rewritten in the last RECENT_REWRITE_DAYS days is mid-
+recovery (its GSC is artificially low), so it is never collapsed on current
+numbers - we don't throw away a page we just invested in.
 
 VERDICT
-  ALLOW    - canonical is clearly >= source on equity; safe to 301 source->canonical.
-  REVERSED - source has materially more equity; collapsing it would lose ranking.
-             Caller (engine) flips the decision to REWRITE (keep the source).
+  ALLOW    - safe to 301 source -> canonical (target >= source, source not protected).
+  REVERSED - source is a sustained ranker / recently-rewritten; collapsing loses
+             equity. Caller (engine) flips the decision to REWRITE.
 
-Equity = GSC 90d (impressions, clicks, impression-weighted position) + internal
-inbound-link count. Reads gsc_query_data via the Supabase Management API.
-
-Usage:
-  python scripts/track2_collapse_guard.py --source <slug> --canonical <slug>
+Usage:  python scripts/track2_collapse_guard.py --source <slug> --canonical <slug>
 Exit 0 = ALLOW, exit 3 = REVERSED, exit 1 = error.
 """
 from __future__ import annotations
 
 import argparse
+import datetime
 import pathlib
 import sys
+import time
 
-# Allow running as a bare script (python scripts/track2_collapse_guard.py): put
-# the repo root on the path so `optimisation_engine` imports.
+# Run as a bare script: put repo root on the path so `optimisation_engine` imports.
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from optimisation_engine.competitor._db import _sql
 
 BLOG = pathlib.Path("Property/web/content/blog")
+SUSTAIN_FLOOR = 50        # spike-discounted impressions below which a page is not a protected asset
+                          # (kept permissive so marginal pages still collapse - micro-optimisation)
+MIN_WEEKS = 3             # must appear in >= this many distinct weeks to count as a sustained ranker
+RECENT_REWRITE_DAYS = 45  # a monitored rewrite newer than this is mid-recovery -> protect it
+
+
+def _sql_retry(q, tries=4):
+    for i in range(tries):
+        try:
+            return _sql(q)
+        except Exception:
+            if i == tries - 1:
+                raise
+            time.sleep(2 * (i + 1))
 
 
 def gsc(slug: str) -> dict:
-    """GSC 90d page-level aggregate for a slug (exact last-path-segment match)."""
-    rows = _sql(f"""
-        SELECT page_url,
-               SUM(impressions) AS impr, SUM(clicks) AS clk,
-               (SUM(position*impressions)/NULLIF(SUM(impressions),0)) AS wpos
+    """Weekly GSC over 90d -> total, spike-discounted `sustained`, `weeks_present`,
+    clicks, impression-weighted position (exact last-path-segment match)."""
+    rows = _sql_retry(f"""
+        SELECT page_url, date_trunc('week', date)::date AS wk,
+               SUM(impressions) AS impr, SUM(clicks) AS clk, SUM(position*impressions) AS pw
         FROM gsc_query_data
         WHERE site_key='property'
           AND (page_url ILIKE '%/{slug}' OR page_url ILIKE '%/{slug}/')
           AND date > now() - interval '90 days'
-        GROUP BY page_url;
+        GROUP BY page_url, wk;
     """)
-    best = {"impr": 0, "clk": 0, "wpos": None}
+    wk_impr: dict[str, int] = {}
+    tot_impr = tot_clk = 0
+    pw = 0.0
     for r in rows:
-        seg = (r["page_url"] or "").rstrip("/").split("/")[-1]
-        if seg != slug:  # ILIKE suffix could catch a longer slug; require exact
-            continue
-        impr = int(r["impr"] or 0)
-        if impr >= best["impr"]:
-            best = {"impr": impr, "clk": int(r["clk"] or 0),
-                    "wpos": round(float(r["wpos"]), 1) if r["wpos"] is not None else None}
-    return best
+        if (r["page_url"] or "").rstrip("/").split("/")[-1] != slug:
+            continue  # ILIKE suffix could catch a longer slug; require exact
+        i = int(r["impr"] or 0)
+        wk_impr[str(r["wk"])] = wk_impr.get(str(r["wk"]), 0) + i
+        tot_impr += i
+        tot_clk += int(r["clk"] or 0)
+        pw += float(r["pw"] or 0)
+    max_week = max(wk_impr.values()) if wk_impr else 0
+    return {
+        "impr": tot_impr,
+        "clk": tot_clk,
+        "wpos": round(pw / tot_impr, 1) if tot_impr else None,
+        "sustained": tot_impr - max_week,   # drop the single biggest week (spike-discount)
+        "weeks_present": sum(1 for v in wk_impr.values() if v > 0),
+    }
 
 
 def inbound_links(slug: str) -> int:
-    """How many other blog .md files link to this slug (internal authority)."""
     needle = f"/{slug}"
-    n = 0
-    for f in BLOG.glob("*.md"):
-        if f.stem == slug:
-            continue
-        if needle in f.read_text(encoding="utf-8"):
-            n += 1
-    return n
+    return sum(1 for f in BLOG.glob("*.md")
+               if f.stem != slug and needle in f.read_text(encoding="utf-8"))
+
+
+def monitored(slug: str):
+    """Active monitored-page status + days since rewrite (None if not monitored)."""
+    rows = _sql_retry(f"""
+        SELECT rewrite_date, monitor_until, rewrite_type, status
+        FROM monitored_pages WHERE site_key='property' AND slug='{slug}' LIMIT 1;
+    """)
+    if not rows:
+        return None
+    r = rows[0]
+    days = None
+    if r.get("rewrite_date"):
+        try:
+            days = (datetime.date.today() - datetime.date.fromisoformat(str(r["rewrite_date"]))).days
+        except Exception:
+            pass
+    return {"rewrite_date": r.get("rewrite_date"), "rewrite_type": r.get("rewrite_type"),
+            "monitor_until": r.get("monitor_until"), "days_since": days}
+
+
+def enrich(slug: str) -> dict:
+    m = gsc(slug)
+    m["inbound"] = inbound_links(slug)
+    m["exists"] = (BLOG / f"{slug}.md").exists()
+    mon = monitored(slug)
+    m["monitored"] = mon
+    m["monitored_recent"] = bool(mon and mon["days_since"] is not None
+                                 and mon["days_since"] <= RECENT_REWRITE_DAYS)
+    return m
 
 
 def evaluate(src: dict, can: dict) -> tuple[str, list[str]]:
-    """REVERSED if the source out-ranks the proposed canonical on any axis that
-    means real equity would be lost by collapsing it away."""
+    """REVERSED if the source is a sustained ranker (or a freshly-rewritten page
+    we are monitoring) that collapsing would damage. Permissive by design."""
     reasons: list[str] = []
     s_pos, c_pos = src["wpos"], can["wpos"]
+    s_durable = src["weeks_present"] >= MIN_WEEKS and src["sustained"] >= SUSTAIN_FLOOR
 
-    # 1. Source gets more real traffic (clicks) than the target.
+    # R1 - source earns real clicks the target doesn't (clicks are the strongest signal).
     if src["clk"] > can["clk"]:
         reasons.append(f"source has more clicks ({src['clk']} > {can['clk']})")
-    # 2. Source has more demand AND an equal-or-better position.
-    if src["impr"] > can["impr"] and (c_pos is None or (s_pos is not None and s_pos <= c_pos)):
-        reasons.append(f"source has more impressions ({src['impr']} > {can['impr']}) "
-                       f"at equal/better position ({s_pos} vs {c_pos})")
-    # 3. Catastrophic: collapsing a near-page-1 source into a much weaker target.
-    if s_pos is not None and s_pos <= 20 and (c_pos is None or c_pos > s_pos + 10):
-        reasons.append(f"source is near page 1 (pos {s_pos}) and target is far weaker "
-                       f"(pos {c_pos}) - collapsing would bury a ranking page")
-    # 4. Source is the established internal hub and has at least as much demand.
-    if src["inbound"] > can["inbound"] and src["impr"] >= can["impr"]:
-        reasons.append(f"source has more internal inbound links "
-                       f"({src['inbound']} > {can['inbound']}) and >= demand")
+    # R2 - durable source out-performs target on sustained impressions at equal/better position.
+    if s_durable and src["sustained"] > can["sustained"] and (c_pos is None or (s_pos is not None and s_pos <= c_pos)):
+        reasons.append(f"source is a sustained ranker (sustained {src['sustained']} impr over "
+                       f"{src['weeks_present']} weeks) out-ranking the target (sustained {can['sustained']}; "
+                       f"pos {s_pos} vs {c_pos})")
+    # R3 - durable source near page 1 vs a much weaker target.
+    if s_durable and s_pos is not None and s_pos <= 15 and (c_pos is None or c_pos > s_pos + 10):
+        reasons.append(f"source is a sustained near-page-1 ranker (pos {s_pos}, {src['weeks_present']} weeks) "
+                       f"vs far-weaker target (pos {c_pos}) - collapsing would bury it")
+    # R4 - source is the established internal hub AND a durable ranker.
+    if src["inbound"] > can["inbound"] and s_durable and src["sustained"] >= can["sustained"]:
+        reasons.append(f"source is the internal hub ({src['inbound']} > {can['inbound']} inbound) "
+                       f"and a sustained ranker")
+    # R5 - monitored-awareness: never collapse a page rewritten in the last RECENT_REWRITE_DAYS days.
+    if src["monitored_recent"]:
+        reasons.append(f"source is an ACTIVE monitored rewrite ({src['monitored']['days_since']}d ago) - "
+                       f"its GSC is mid-recovery; do not collapse a page we just invested in")
 
     return ("REVERSED" if reasons else "ALLOW"), reasons
 
 
+def _fmt(slug, m):
+    mon = ""
+    if m["monitored"]:
+        mon = f" monitored(rewrite {m['monitored']['rewrite_date']}, {m['monitored']['days_since']}d ago)"
+    return (f"   impr={m['impr']} sustained={m['sustained']} weeks={m['weeks_present']} "
+            f"clk={m['clk']} pos={m['wpos']} inbound={m['inbound']} md={'Y' if m['exists'] else 'N'}{mon}")
+
+
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Block reversed-equity redirect collapses.")
+    ap = argparse.ArgumentParser(description="Block reversed-equity / mid-recovery redirect collapses.")
     ap.add_argument("--source", required=True, help="slug being collapsed away")
     ap.add_argument("--canonical", required=True, help="slug it would 301 into")
     a = ap.parse_args()
 
-    src = gsc(a.source); src["inbound"] = inbound_links(a.source)
-    can = gsc(a.canonical); can["inbound"] = inbound_links(a.canonical)
+    src, can = enrich(a.source), enrich(a.canonical)
     verdict, reasons = evaluate(src, can)
 
     print(f"source     {a.source}")
-    print(f"           impr={src['impr']} clk={src['clk']} wpos={src['wpos']} inbound={src['inbound']}")
+    print(_fmt(a.source, src))
     print(f"canonical  {a.canonical}")
-    print(f"           impr={can['impr']} clk={can['clk']} wpos={can['wpos']} inbound={can['inbound']}")
+    print(_fmt(a.canonical, can))
     print(f"VERDICT: {verdict}")
     for r in reasons:
         print(f"  - {r}")
     if verdict == "ALLOW":
-        print(f"  collapse {a.source} -> {a.canonical} is safe (target >= source on equity)")
+        print(f"  collapse {a.source} -> {a.canonical} is safe (target >= source; source not a protected asset)")
     else:
         print(f"  DO NOT collapse - REWRITE the source instead, or flip the direction "
               f"({a.canonical} -> {a.source}).")
