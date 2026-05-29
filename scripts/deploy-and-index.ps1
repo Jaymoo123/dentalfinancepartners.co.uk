@@ -143,8 +143,16 @@ try {
     } else {
         Push-Location $accountingRoot
         try {
+            # vercel prints its banner + progress to stderr. Under this script's
+            # ErrorActionPreference='Stop', `2>&1` would wrap those stderr lines as
+            # terminating NativeCommandErrors (PowerShell 5.1) and abort the deploy
+            # even on success. Drop to 'Continue' for the native call and judge the
+            # result by $LASTEXITCODE instead.
+            $prevEAP = $ErrorActionPreference
+            $ErrorActionPreference = 'Continue'
             $vercelOutput = & vercel deploy --prod --yes 2>&1 | Out-String
             $vercelExit = $LASTEXITCODE
+            $ErrorActionPreference = $prevEAP
         } finally {
             Pop-Location
         }
