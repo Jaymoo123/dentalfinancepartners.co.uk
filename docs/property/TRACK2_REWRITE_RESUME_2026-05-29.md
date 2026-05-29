@@ -1,6 +1,40 @@
-# Track 2 — RESUME POINT for the rewrite manager (start here) — 2026-05-29 PM
+# Track 2 — RESUME POINT for the rewrite manager (start here) — updated 2026-05-30 (batch 3 shipped)
 
-**Read this first, then `track2_program_state` + `track2_remediation_state` + `property_2027_rates_ground_truth` memories, then `docs/property/TRACK2_MANAGER_PICKUP.md` for the rewrite-program mechanics.**
+**Read this first, then `track2_remediation_state` + `property_2027_rates_ground_truth` memories, then `TRACK2_PROGRAM.md §16.T1-T6` (load-bearing lessons), then `docs/property/TRACK2_MANAGER_PICKUP.md` for the rewrite-program mechanics.**
+
+---
+
+## ✅ CURRENT STATUS — 2026-05-30 (pipeline validated end-to-end; first batch live)
+
+**The hardened pipeline is built, validated, and has shipped its first batch to production. ~157 residual rewrites remain.** To continue: scope the next highest-ROI cluster from the worklist and run the mandatory chain below.
+
+**Live now** (commit `c151126b`, prod `www.propertytaxpartners.co.uk`): 4 rewrites + 1 equity-safe collapse, all QA-gated. The full chain caught real problems and held: the equity guard auto-flipped a reversed-equity collapse; the independent-QA caught wrong tax advice (s.94H flat-rate home-office wrongly offered to landlords) that the writer-verify had missed; and a source-check rejected a bad statute "fix" (the verify wanted to change a correct ITTOIA 2005 cite to a 404 ITA 2007 section). Blow-by-blow in memory `track2_remediation_state`.
+
+**Count reconciliation (the "where did the 200+ go" answer):** original residual universe **234** → **77 handled** (Phase 3 + the 2026-05-21 rewrite pass + the CityService cluster 2026-05-29 + this batch) → **~157 remaining**. Worklist: `docs/property/track2_worklist_2026-05-29.md` (rebuild with `python scripts/track2_worklist.py`; it auto-excludes anything in `monitored_pages`, so you never redo a page).
+
+### THE MANDATORY PER-BATCH CHAIN (full detail in `TRACK2_PROGRAM.md §16.T5`)
+1. **`track2_rewrite_engine.wf.js {slugs, cluster}`** — diagnose + brief. The collapse-equity guard (§16.T2) runs between diagnose and brief and auto-flips any reversed-equity collapse to REWRITE. **Adjudicate every statute flag at legislation.gov.uk — trust the source, not the agent.**
+2. **`track2_rewrite_writer.wf.js {slugs, depth:'full', cluster, briefDir:'briefs/property/track2/<batchN>'}`** — rewrites in place, reads the brief + `<slug>.corrections.md`, canonicalises links.
+3. **`python scripts/qa_verdict.py pending --batch <name> --slugs …`** — the gate now blocks until QA clears these.
+4. **`track2_independent_qa.wf.js {slugs}`** — re-derives every worked example + content-verifies every statute. **This is the layer that catches what writer-verify misses — never skip it.** Fix any blocking issue (verify the fix at legislation.gov.uk), then re-QA the fixed pages.
+5. Save the QA return to JSON → **`python scripts/qa_verdict.py record --batch <name> --verdicts <json>`** (derives all_clear from the data; clears pending).
+6. **`python scripts/predeploy_gate.py --qa-batch <name>`** — MUST be PASS (0 HARD links, all slugs all_clear, hashes match).
+7. Commit (surgical staging), build (`cd Property/web && npm run build`), deploy, then insert `monitored_pages` rows (timed to go-live) + IndexNow.
+
+### Deploy method
+`scripts/deploy-and-index.ps1 -Site property -QaBatch <name>` now works (the vercel-stderr-banner bug was fixed, commit `16242597`). If it ever trips again, fall back to the raw command this batch used, from repo root:
+`VERCEL_PROJECT_ID=prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH vercel deploy --prod --yes` (env vars override the restored project.json), then `python -m optimisation_engine.indexing.submit_indexnow --site property <urls>`.
+
+### Open items / nuances for the next manager
+- **Reversed-collapse audit (done, NO reverts needed):** all 115 live `DUPLICATE_REDIRECTS` were audited; 13 looked reversed on a static snapshot but the weekly time-series showed every one was a single-week spike or a same-day rewrite, not a durable buried ranking. 4 Tier-A targets are registered on `monitored_pages` as absorb-watch (`london-property-accountant`, `birmingham-property-accountant`, `section-24-mortgage-interest-restriction-uk-landlords`, `incorporation-timing-…`) — confirm they recover over the next 2-4 weeks; act only if they don't.
+- **2 pages quietly retired from the worklist:** `section-24-mortgage-interest-restriction-uk-landlords` + `incorporation-timing-when-to-incorporate-property-portfolio` were registered for absorb-watch, so the worklist now excludes them. `incorporation-timing` is weak (pos ~89) and may still merit a rewrite — revisit it deliberately rather than letting monitoring retire it.
+- **Parked:** `london-property-accountant` is indexed under both `/blog/<slug>` and `/blog/property-accountant-services/<slug>` (duplicate-URL / canonical issue worth a corpus check).
+- Residual minor follow-ups (em-dash sweep then `predeploy_gate.py --strict`, the SOFT 301-hops, non-2027 arithmetic nits) — see `track2_remediation_state`.
+
+### This session's commits (audit trail)
+`bda6ad8c` D3+D4 hardening · `4c1f643a` + `586fc819` collapse-equity guard · `1b73c68e` §16.T1-T6 lessons · `6328d7ef` writer reads brief+corrections · `c151126b` batch 3 (4 rewrites + collapse) · `16242597` deploy-script fix. Working tree: only pre-existing unrelated WIP (`Medical/`, `contractors-ir35/`, megawave docs) remains uncommitted — leave it.
+
+---
 
 You are picking up the **Property legacy rewrite program** (~233 residual legacy pages). It was paused mid-flight because QA found the generator was producing systematic errors. **That remediation is now finished** — the blocker is cleared and the engine is hardened, so you can resume generating/executing rewrites on a sound footing.
 
