@@ -49,7 +49,7 @@ faqs:
 
 <h2>What's actually changing in April 2027</h2>
 
-<p>The confirmed change is the new separate property income tax rates announced in the Autumn Budget and scheduled for inclusion in Finance Act 2026:</p>
+<p>The confirmed change is the new separate property income tax rates announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026):</p>
 
 <table>
 <thead>
@@ -96,18 +96,18 @@ faqs:
 <ul>
 <li>Rental profit (cash-basis): £14,000</li>
 <li>Section 24 effect: the £6,000 finance cost is added back and a 20% tax credit applies (£1,200 reduction to her income tax bill)</li>
-<li>Tax on rental profit at 40%: £5,600, less £1,200 credit = £4,400 effective income tax</li>
-<li>Retained after-tax rental cashflow: £14,000 minus £4,400 = £9,600</li>
+<li>Tax on the £20,000 (rental profit with the £6,000 finance cost added back) at 40%: £8,000, less £1,200 credit = £6,800 effective income tax</li>
+<li>Retained after-tax rental cashflow: £14,000 minus £6,800 = £7,200</li>
 </ul>
 
 <p>From April 2027 the income tax rate on her rental profit increases to 42%:</p>
 
 <ul>
-<li>Tax on rental profit at 42%: £5,880, less £1,200 credit = £4,680 effective income tax</li>
-<li>Retained after-tax rental cashflow: £14,000 minus £4,680 = £9,320</li>
+<li>Tax on the £20,000 at 42%: £8,400, less £1,320 credit (the Section 24 credit also rises to 22% in 2027/28: 22% × £6,000) = £7,080 effective income tax</li>
+<li>Retained after-tax rental cashflow: £14,000 minus £7,080 = £6,920</li>
 </ul>
 
-<p>The annual after-tax cashflow drops by £280, or about 2.9%. Over a 10-year hold, the cumulative loss compared to the pre-April 2027 rate is £2,800 (ignoring time-value).</p>
+<p>The annual after-tax cashflow drops by £280, or about 3.9%. Over a 10-year hold, the cumulative loss compared to the pre-April 2027 rate is £2,800 (ignoring time-value).</p>
 
 <p>The CGT cost of selling now: £100,000 gain less £3,000 AEA at 24% = £23,280.</p>
 
@@ -140,7 +140,7 @@ faqs:
 
 <p>Section 162 requires the whole property business to be transferred as a going concern in exchange for shares (not cash or loan notes). Case law on what counts as a "business" for these purposes is well-developed. The Ramsay v HMRC ([2013] UKUT 226) decision set the modern test: the activity must amount to a business, not mere passive investment, with the relevant indicators including time spent on the business, scale, and the nature of the services provided. A single property let on a long-term tenancy with light-touch management is unlikely to qualify; a portfolio with active management often does.</p>
 
-<p>For landlords whose business clearly meets the Ramsay test, the April 2027 income tax change is a strong argument to bring forward the incorporation decision (whilst recognising that doing so before legislation is enacted does carry residual risk if the rates were to be amended in a later fiscal event). For landlords whose business sits in the grey area, the cost of getting the test wrong (CGT crystallises in full, no deferral) is significant, and a settlement check or non-statutory clearance with HMRC may be appropriate before completion.</p>
+<p>For landlords whose business clearly meets the Ramsay test, the April 2027 income tax change is a strong argument to bring forward the incorporation decision (whilst recognising that an already-enacted rate could still be amended at a future fiscal event). For landlords whose business sits in the grey area, the cost of getting the test wrong (CGT crystallises in full, no deferral) is significant, and a settlement check or non-statutory clearance with HMRC may be appropriate before completion.</p>
 
 <h2>Disposal timing patterns that often make sense regardless of 2027</h2>
 

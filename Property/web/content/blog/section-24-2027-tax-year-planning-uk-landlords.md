@@ -14,9 +14,9 @@ summary: "Section 24 restrictions remain in place for 2027/28, but separate prop
 schema: ""
 faqs:
   - question: "Does Section 24 still apply in the 2027/28 tax year?"
-    answer: "Yes, Section 24 mortgage interest restrictions continue unchanged in 2027/28. Interest relief remains capped at 20% tax credit regardless of your marginal tax rate. However, the new separate property tax rates from April 2027 mean rental profits face higher tax rates of 22%/42%/47%."
+    answer: "Yes, the Section 24 mortgage interest restriction continues in 2027/28. Interest relief is still given as a basic-rate tax credit, which rises to 22% from April 2027 (up from 20%), regardless of your marginal tax rate. Rental profits face the new separate property tax rates of 22%/42%/47%, so the practical effect is a flat 2 percentage point rise on net profit."
   - question: "How do the new property tax rates from April 2027 affect Section 24 calculations?"
-    answer: "The Section 24 tax credit remains at 20% of mortgage interest, but rental profits are taxed at the new higher property rates (22% basic, 42% higher, 47% additional). This increases the overall tax burden on leveraged property investments compared to current rates."
+    answer: "The Section 24 tax credit rises to 22% of mortgage interest from April 2027 (Finance Act 2026 Schedule 1), in step with the new basic rate, so the gap between the rate and the relief is unchanged. Rental profits are taxed at the new property rates (22% basic, 42% higher, 47% additional), so the increase is a flat 2 percentage points on net rental profit, not a widening Section 24 wedge."
   - question: "Should I incorporate my property portfolio before April 2027?"
     answer: "Incorporation may become more attractive with higher individual property tax rates from April 2027. Companies aren't affected by Section 24 and face corporation tax at 19%/25% rather than the new 42%/47% property rates. However, consider CGT on transfer and ongoing compliance costs before deciding."
   - question: "What records do I need to keep for Section 24 under the 2027/28 tax regime?"
@@ -29,7 +29,7 @@ faqs:
 
 <h2>Section 24 Restrictions and the New Property Tax Rates</h2>
 
-<p>The core Section 24 rules remain unchanged in the 2027/28 tax year. Mortgage interest relief is still capped at the basic rate tax credit of 20%, regardless of your marginal tax rate. This restriction applies to individual landlords only. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Limited companies remain unaffected by Section 24</a> and can still deduct mortgage interest as a business expense.</p>
+<p>The core Section 24 mechanism is unchanged in the 2027/28 tax year, but the credit rate rises. Mortgage interest relief is still given as the basic-rate tax credit, which rises to 22% from April 2027 (up from 20%), regardless of your marginal tax rate. This restriction applies to individual landlords only. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Limited companies remain unaffected by Section 24</a> and can still deduct mortgage interest as a business expense.</p>
 
 <h3>What Section 24 Still Covers</h3>
 <ul>
@@ -60,9 +60,9 @@ Net tax: £12,000 - £3,000 = £9,000</p>
 Rental profit: £30,000<br>
 Less mortgage interest deduction: £0 (Section 24 continues)<br>
 Tax on rental profit: £30,000 × 42% = £12,600<br>
-Tax credit for interest: £15,000 × 20% = £3,000<br>
-Net tax: £12,600 - £3,000 = £9,600</p>
-<p>The additional tax burden is £600 annually in this example, purely from the higher property tax rates.</p>
+Tax credit for interest: £15,000 × 22% = £3,300<br>
+Net tax: £12,600 - £3,300 = £9,300</p>
+<p>The additional tax burden is £300 annually in this example (2% of the £15,000 of net profit after finance costs); the 2 percentage point rate rise on profit is partly offset by the Section 24 credit rising from 20% to 22%.</p>
 
 <h2>Making Tax Digital (MTD) Requirements</h2>
 <p>Making Tax Digital (MTD) for Income Tax becomes mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). By 2027/28, this will be the established system for property tax reporting.</p>

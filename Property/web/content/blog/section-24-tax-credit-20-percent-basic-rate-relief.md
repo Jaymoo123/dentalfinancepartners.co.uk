@@ -142,7 +142,7 @@ Income tax on rental profit: £12,000 × 40% = £4,800</p>
 <p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> becoming mandatory from April 2026, digital record keeping will be essential.</p>
 
 <h2>Future Changes and Professional Advice</h2>
-<p>From April 2027, property income will be subject to separate tax rates (22% basic, 42% higher, 47% additional rate). This change may affect how the Section 24 tax credit system operates, though the 20% basic rate relief principle is expected to remain.</p>
+<p>From April 2027, property income will be subject to separate tax rates (22% basic, 42% higher, 47% additional rate), and the Section 24 finance-cost credit rises to the new 22% property basic rate in step (Finance Act 2026 Schedule 1). The basic-rate-relief principle is unchanged: the credit still tracks the basic rate, which is now 22% rather than 20%.</p>
 <p>The complexity of Section 24 calculations often justifies professional assistance. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants specialising in landlord taxation</a> can help optimise your tax position and ensure accurate compliance. Consider professional advice if you:</p>
 <ul>
 <li>Own multiple properties with complex financing arrangements</li>

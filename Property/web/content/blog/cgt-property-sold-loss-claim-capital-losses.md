@@ -222,7 +222,7 @@ faqs:
 
 <p>For 2026/27 the £3,000 AEA per individual applies, and the £50,270 basic-rate income threshold drives the rate split on the gain. Detail on the rate mechanics is in the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates 2026/27 guide</a> and the <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">£3,000 AEA depth guide</a>.</p>
 
-<p>On future-rate context: the property income tax rates announced in the Autumn Budget 2024 (22% basic / 42% higher / 47% additional rate from April 2027) are scheduled subject to Finance Act 2026 receiving Royal Assent. Those changes are to property INCOME tax, not to CGT. The 18% / 24% CGT rates on residential property are not affected by the announced 2027 income-tax surcharge regime and remain in force through 2027/28 on the Autumn Budget 2024 settlement. Any longer-term CGT-rate change would require a separate Budget announcement.</p>
+<p>On future-rate context: the property income tax rates announced at the Autumn Budget 2025 (22% basic / 42% higher / 47% additional rate from April 2027) were enacted in Finance Act 2026 (Royal Assent 18 March 2026). Those changes are to property INCOME tax, not to CGT. The 18% / 24% CGT rates on residential property are not affected by the announced 2027 income-tax surcharge regime and remain in force through 2027/28 on the Autumn Budget 2024 settlement. Any longer-term CGT-rate change would require a separate Budget announcement.</p>
 
 <h2>Reporting the loss and the 60-day CGT on UK property service</h2>
 

@@ -171,9 +171,9 @@ faqs:
 <ul>
 <li>Aggregate gain: £270,000</li>
 <li>Less single AEA: £267,000 taxable</li>
-<li>Less PRR on Property B (4/16 × £110,000): £27,500 exempt; £242,500 net taxable</li>
-<li>Less final-9-months PRR on Property B (9/192 × £110,000): £5,156 further exempt; £237,344 net taxable</li>
-<li>CGT at 24% (higher rate throughout): £56,963</li>
+<li>Less PRR on Property B (4/16 × £110,000): £27,500 exempt; £239,500 net taxable</li>
+<li>Less final-9-months PRR on Property B (9/192 × £110,000): £5,156 further exempt; £234,344 net taxable</li>
+<li>CGT at 24% (higher rate throughout): £56,243</li>
 </ul>
 
 <p>With staggered planning across two tax years, half of Property A and a half-share of Property B pre-transferred to the spouse:</p>
@@ -193,7 +193,7 @@ faqs:
 <li>Year 2 total: £27,922.</li>
 </ul>
 
-<p>Two-year planned total: £51,682. Saving versus the unplanned single-year scenario: £5,281, plus the cash-flow benefit of paying half the CGT one year later.</p>
+<p>Two-year planned total: £51,682. Saving versus the unplanned single-year scenario: £4,561, plus the cash-flow benefit of paying half the CGT one year later.</p>
 
 <p>The arithmetic is sensitive to the spouse's income profile and to the buyer's flexibility on completion dates. The planning works because three levers stack: the AEA across two years and two people (four £3,000s in total against £270,000 of gain), the spouse's basic-rate band on two disposals, and the PRR proportion on Property B. Pre-sale spouse transfer of Property B itself before sale needs to be a genuine transfer, ideally with the deed of trust dated well before the sale negotiation.</p>
 
@@ -204,7 +204,7 @@ faqs:
 
 <h2>Future-rate context for planning</h2>
 
-<p>For 2026/27 the residential property CGT rates are 18% and 24%. The property income tax rates announced in the Autumn Budget 2024 (22% basic / 42% higher / 47% additional rate from April 2027) are scheduled subject to Finance Act 2026 receiving Royal Assent. Those rates apply to property income, not to CGT: the 18% / 24% CGT rates on residential property are not affected by the announced 2027 income-tax surcharge and remain in force through 2027/28 on current law. Any longer-term CGT-rate change would require a separate Budget announcement. Detail is in the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 CGT rates page</a> and the <a href="/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords">CGT 2027 rate-changes hedge page</a>.</p>
+<p>For 2026/27 the residential property CGT rates are 18% and 24%. The property income tax rates announced at the Autumn Budget 2025 (22% basic / 42% higher / 47% additional rate from April 2027) were enacted in Finance Act 2026 (Royal Assent 18 March 2026). Those rates apply to property income, not to CGT: the 18% / 24% CGT rates on residential property are not affected by the 2027 income-tax change and remain in force through 2027/28 on current law. Any longer-term CGT-rate change would require a separate Budget announcement. Detail is in the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 CGT rates page</a> and the <a href="/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords">CGT 2027 rate-changes hedge page</a>.</p>
 
 <p>Decisions taken now on a 2026/27 or 2027/28 disposal should rely on the current-law position; longer-horizon decisions need to factor in rate uncertainty.</p>
 

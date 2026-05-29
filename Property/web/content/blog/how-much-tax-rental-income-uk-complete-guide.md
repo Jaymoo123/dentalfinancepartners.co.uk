@@ -16,7 +16,7 @@ faqs:
   - question: "What rate of tax do I pay on UK rental income in 2026/27?"
     answer: "Rental income is added to your other income (employment, pension, dividends, savings interest) and taxed at the standard UK income tax rates: 0% on the first £12,570 (personal allowance), 20% from £12,571 to £50,270 (basic rate), 40% from £50,271 to £125,140 (higher rate), and 45% above £125,140 (additional rate). Residential mortgage interest is not deducted from rental profit; instead a 20% basic-rate tax credit is applied against the overall income tax bill under Section 24."
   - question: "Are there separate property income tax rates of 22%, 42%, and 47% from April 2027?"
-    answer: "Yes, scheduled. The 2% property-income surcharge was announced in the Autumn Budget and is scheduled to take effect from 6 April 2027, with the legislation sitting in the draft Finance Act 2026 awaiting Royal Assent. For 2026/27 the standard 20%, 40%, and 45% rates continue to apply to rental income alongside other income. Plan on the basis that 22%, 42%, and 47% apply from 6 April 2027."
+    answer: "Yes. The 2 percentage point uplift on property income was announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026), taking effect from 6 April 2027 for England and Northern Ireland. For 2026/27 the standard 20%, 40%, and 45% rates continue to apply to rental income alongside other income; 22%, 42%, and 47% apply to property income from 6 April 2027."
   - question: "How is rental profit calculated for the income tax bill?"
     answer: "Gross rental receipts minus allowable revenue expenses (excluding mortgage interest) equals taxable rental profit. Allowable expenses include letting agent fees, repairs and maintenance, insurance, ground rent and service charges, certifications, accountancy fees, advertising, replacement of domestic items, and travel for property management. Mortgage interest is not deducted at this stage; it is dealt with separately as a 20% basic-rate credit under Section 24. Capital improvements (new kitchen, extension) are not deductible against rental profit; they are added to the property base cost for CGT."
   - question: "What is the personal allowance for landlords?"
@@ -70,7 +70,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The personal allowance tapers at the rate of £1 reduction for every £2 of income above £100,000, fully eliminated by £125,140. Bands have been frozen since 2021/22 and the freeze runs to 2027/28 under current legislation. Separate property income tax rates of <strong>22%, 42%, and 47%</strong> were announced in the Autumn Budget and are scheduled for 6 April 2027 under the draft Finance Act 2026; for 2026/27 the rates above apply to property income alongside other income.</p>
+<p>The personal allowance tapers at the rate of £1 reduction for every £2 of income above £100,000, fully eliminated by £125,140. Bands have been frozen since 2021/22 and the freeze runs to 2027/28 under current legislation. Separate property income tax rates of <strong>22%, 42%, and 47%</strong> were announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026), taking effect from 6 April 2027; for 2026/27 the rates above apply to property income alongside other income.</p>
 
 <h2>Worked Example 1: Basic-Rate Cash-Buyer Landlord</h2>
 

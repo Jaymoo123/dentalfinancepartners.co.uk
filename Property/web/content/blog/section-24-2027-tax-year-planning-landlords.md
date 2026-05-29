@@ -18,7 +18,7 @@ faqs:
   - question: "Should I incorporate my property portfolio before 2027?"
     answer: "Incorporation becomes more attractive with the 2027 tax changes, especially for portfolios with significant mortgage borrowing. However, incorporation involves upfront CGT costs and ongoing compliance requirements. A property tax specialist should model your specific situation to determine if incorporation saves tax overall."
   - question: "Will Section 24 mortgage interest relief change in 2027?"
-    answer: "No, Section 24 restrictions remain the same – mortgage interest relief is still capped at 20% tax credit. However, this 20% relief applies against property income now taxed at 22%, 42% or 47%, making the restriction more costly for higher rate taxpayers."
+    answer: "The Section 24 restriction stays the same, but the credit rate rises: from April 2027 mortgage interest relief is given as a 22% basic-rate tax credit (up from 20%, Finance Act 2026 Schedule 1). Because it rises in step with the property income rates (22%, 42%, 47%), the gap between the rate and the relief is unchanged, so the restriction is no more costly in percentage-point terms than before."
   - question: "When should I start planning for the 2027 property tax changes?"
     answer: "Planning should begin now. If considering incorporation, allow 12-18 months for proper analysis and implementation. Property transfers to companies can trigger capital gains tax, requiring careful timing. The 2026/27 tax year is the last under current rates, making it crucial for timing decisions."
 ---
@@ -38,22 +38,23 @@ faqs:
 <p>A landlord earning £30,000 from employment and £20,000 net rental profit would pay 20% on employment income up to the basic rate threshold, then 22% on the property income portion.</p>
 
 <h2>The Combined Impact of Section 24 and Higher Rates</h2>
-<p>Section 24 mortgage interest relief restrictions remain in place under the new system. This creates a double impact: reduced mortgage interest relief combined with higher tax rates on property income.</p>
-<p>Currently, mortgage interest relief is restricted to a 20% tax credit. From 2027, this 20% credit applies against property income taxed at 22%, 42% or 47%. The gap widens significantly for higher rate taxpayers.</p>
-<p>Consider a higher rate landlord with £50,000 rental income and £30,000 mortgage interest:</p>
+<p>Section 24's mortgage interest restriction remains in place under the new system, but the basic-rate credit rises to 22% in step with the rates. So the only real change is the 2 percentage point higher tax rate on property income, not a reduction in interest relief.</p>
+<p>Currently, mortgage interest relief is given as a 20% basic-rate tax credit. From April 2027 that credit rises to 22% (Finance Act 2026 Schedule 1), in step with the new property basic rate, while property income is taxed at 22%, 42% or 47%. Because the credit rises with the rates, the gap between the rate and the relief does not widen.</p>
+<p>Consider a higher rate landlord with £50,000 of rental profit before finance costs and £30,000 of mortgage interest, all taxed in the higher-rate band:</p>
 <ul>
-<li><strong>2026/27:</strong> £20,000 taxable profit, £30,000 × 20% = £6,000 tax credit, effective rate around 28%</li>
-<li><strong>2027/28:</strong> Same profit and credit, but property tax at 42%, effective rate around 30%</li>
+<li><strong>2026/27:</strong> £50,000 × 40% = £20,000, less a 20% credit on the £30,000 interest (£6,000), net £14,000.</li>
+<li><strong>2027/28:</strong> £50,000 × 42% = £21,000, less a 22% credit on the £30,000 interest (£6,600), net £14,400.</li>
 </ul>
+<p>The increase is £400, which is 2% of the £20,000 of net profit after finance costs. Because the Section 24 credit rises from 20% to 22% in step with the rates, the gap between the rate and the relief does not widen.</p>
 <p>The combination makes <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into a limited company</a> more attractive for many landlords, especially those with significant mortgage borrowing.</p>
 
 <h2>Key Planning Strategies and Timing</h2>
 <h3>Timing Property Disposals</h3>
 <p>Landlords considering selling properties might benefit from completing sales before April 2027. While <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax rates</a> remain unchanged (18%/24%), the reduced after-tax rental income from 2027 affects the hold-vs-sell calculation.</p>
 <p>A property generating £8,000 annual profit for a higher rate taxpayer produces £4,800 after tax currently (40%). From 2027, this drops to £4,640 (42% rate). Over 10 years, that's £1,600 less income per property.</p>
-<h3>Accelerating Improvement Expenditure</h3>
-<p>Property improvements and repairs remain fully deductible against rental income. Bringing forward planned work to the 2026/27 tax year means relief at current rates rather than the higher 2027 rates.</p>
-<p>A higher rate landlord spending £10,000 on property improvements saves £4,000 in tax in 2026/27 versus £4,200 from 2027/28. While only £200 difference per £10,000 spent, the savings add up across multiple properties.</p>
+<h3>Timing Repair Expenditure</h3>
+<p>Revenue repairs remain fully deductible against rental income (capital improvements are not, but add to the CGT base cost). Because rates rise in 2027/28, deferring discretionary repair work into 2027/28 means relief at the higher 2027 rates rather than the current rates.</p>
+<p>A higher rate landlord spending £10,000 on deductible repairs saves £4,200 in tax at the 2027/28 rate versus £4,000 at the 2026/27 rate. The £200 difference per £10,000 points to deferring rather than accelerating discretionary work, where commercially sensible.</p>
 <h3>Incorporation Timing</h3>
 <p>The 2027 changes make incorporation more attractive, but timing matters. Incorporating before April 2027 allows property transfers at current CGT rates and establishes the company structure before higher property income tax rates apply.</p>
 <p>Limited companies continue paying corporation tax at 19% (small profits rate, profits up to £50k) or 25% (main rate, above £250k), with marginal relief tapering between, on property profits. Section 24 doesn't apply to companies, making them increasingly attractive for leveraged portfolios.</p>
@@ -62,7 +63,7 @@ faqs:
 <h2>Planning Considerations by Portfolio Size</h2>
 <p>The impact of section 24 2027 tax year planning varies significantly by portfolio size and borrowing levels.</p>
 <p><strong>Small Portfolio Landlords (1-3 Properties):</strong> Landlords with minimal borrowing may see limited benefit from incorporation due to setup costs and ongoing compliance. The 2% property income tax increase (20% to 22% basic rate, 40% to 42% higher rate) might be acceptable compared to company administration burdens. Focus should be on maximising allowable deductions and considering whether to maintain or reduce the portfolio size.</p>
-<p><strong>Medium Portfolio Landlords (4-10 Properties):</strong> This group faces the most complex decisions. Higher absolute tax increases make incorporation more viable, but personal circumstances vary widely. A landlord with 6 BTL properties, £120,000 gross rental income, £60,000 mortgage interest, and £20,000 other expenses generates £40,000 net profit. Under Section 24, they receive only £12,000 mortgage relief (20% of £60,000). Current effective tax: approximately £16,800. From 2027: approximately £17,600 (assuming higher rate taxpayer). Annual increase: £800 across the portfolio.</p>
+<p><strong>Medium Portfolio Landlords (4-10 Properties):</strong> This group faces the most complex decisions. Higher absolute tax increases make incorporation more viable, but personal circumstances vary widely. A landlord with 6 BTL properties, £120,000 gross rental income, £60,000 mortgage interest, and £20,000 other expenses generates £40,000 net profit. Under Section 24 the mortgage interest is relieved as a basic-rate credit: £12,000 in 2026/27 (20% of £60,000), rising to £13,200 from 2027/28 (22%). Because the credit rises in step with the rates, the net increase is about £800 across the portfolio, which is 2% of the £40,000 of net profit after finance costs.</p>
 <p><strong>Large Portfolio Landlords (10+ Properties):</strong> Substantial portfolios almost certainly benefit from incorporation planning. The combination of Section 24 restrictions and higher property tax rates creates significant annual tax increases. Additionally, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026 add compliance complexity for individual landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
 
 <h2>Deadlines and Action Timeline</h2>
@@ -70,7 +71,7 @@ faqs:
 <h3>2025 Calendar Year</h3>
 <p>Model your current and projected tax position under the new rates. Calculate the annual tax increase across your portfolio and evaluate incorporation benefits. If incorporating, begin the process early. Property transfers to companies can trigger capital gains tax, requiring careful timing and potentially holdover relief planning.</p>
 <h3>2026/27 Tax Year</h3>
-<p>This is the final tax year under current property income tax rates. Consider accelerating income or expenditure where beneficial. Complete any planned property sales where the proceeds won't be reinvested immediately. The after-tax income from property reduces from 2027, affecting the investment return calculation.</p>
+<p>This is the final tax year under current property income tax rates. Consider accelerating income into this year, and deferring deductible repair expenditure into 2027/28, where beneficial. Complete any planned property sales where the proceeds won't be reinvested immediately. The after-tax income from property reduces from 2027, affecting the investment return calculation.</p>
 <h3>April 2027 and Beyond</h3>
 <p>Once the new rates apply, focus shifts to optimising the tax position within the new framework. This includes maximising allowable expenses, potentially restructuring financing arrangements, and ongoing incorporation evaluation.</p>
 

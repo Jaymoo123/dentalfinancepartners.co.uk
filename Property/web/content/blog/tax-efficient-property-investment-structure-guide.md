@@ -10,7 +10,7 @@ metaDescription: "Sole trader vs limited company vs joint ownership vs LLP for U
 altText: "UK property investor reviewing different business structures and tax implications on documents"
 image: ""
 h1: "What Is the Most Tax-Efficient Property Investment Structure for UK Landlords in 2026/27?"
-summary: "There is no single best structure for every landlord. The right answer depends on total income, portfolio size, leverage, intended hold period, and extraction plans. This guide compares sole-trader (SA105), joint ownership with Form 17, general partnership, limited liability partnership (LLP), and limited company across 2026/27 tax rules, with worked figures for the four scenarios that cover most UK landlords. It also models the announced 2% property-income tax surcharge scheduled for 6 April 2027 (22% basic, 42% higher, 47% additional), included in the draft Finance Act 2026."
+summary: "There is no single best structure for every landlord. The right answer depends on total income, portfolio size, leverage, intended hold period, and extraction plans. This guide compares sole-trader (SA105), joint ownership with Form 17, general partnership, limited liability partnership (LLP), and limited company across 2026/27 tax rules, with worked figures for the four scenarios that cover most UK landlords. It also models the 2 percentage point property-income tax uplift that takes effect on 6 April 2027 (22% basic, 42% higher, 47% additional), enacted in Finance Act 2026."
 schema: ""
 faqs:
   - question: "Is a limited company always more tax-efficient for buy-to-let?"
@@ -20,7 +20,7 @@ faqs:
   - question: "Can married couples split rental income between them?"
     answer: "Yes. Property held as joint tenants is automatically split 50/50 for income tax. Property held as tenants in common can be split in any proportion reflecting beneficial ownership, but the actual income shares for tax purposes must match the beneficial ownership shares (HMRC will not accept a 99/1 income split on a 50/50 beneficial ownership without a Form 17 declaration). Form 17, supported by evidence of the underlying beneficial ownership (typically a declaration of trust), is the standard route. This is most useful where one spouse is a non-taxpayer or basic-rate taxpayer and the other is higher or additional rate."
   - question: "Are the separate property-income tax rates of 22%, 42%, and 47% confirmed?"
-    answer: "They were announced in the Autumn Budget and are scheduled to take effect from 6 April 2027, with the legislation in the draft Finance Act 2026 awaiting Royal Assent. The mechanism is a 2% surcharge on property income on top of the standard 20%, 40%, and 45% rates. Plan on the basis that they will apply from 6 April 2027, while being aware that the position becomes locked only once Royal Assent is granted. The case for incorporation strengthens for higher-rate landlords under the new rates."
+    answer: "Yes. They were announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026), taking effect from 6 April 2027. The mechanism is a 2 percentage point uplift on property income on top of the standard 20%, 40%, and 45% rates. The case for incorporation strengthens for higher-rate landlords under the new rates."
   - question: "What is the main downside of holding property in a limited company?"
     answer: "Three things. First, the cost of getting in: SDLT at market value, refinancing existing residential mortgages into company BTL products at 0.5-1% higher rates, and legal and accountancy fees. Second, the cost of getting money out: profits face corporation tax (19-25%) plus dividend tax on extraction (10.75% basic, 35.75% higher, 39.35% additional), which can leave headline-rate higher-rate landlords with little net saving if every pound is drawn. Third, ongoing compliance: statutory accounts, CT600, Confirmation Statement, potential ATED relief returns for properties above £500,000."
   - question: "When does a partnership or LLP make sense for property investment?"
@@ -60,7 +60,7 @@ faqs:
 <p>One scheduled change also shapes the conversation:</p>
 
 <ul>
-<li><strong>Separate property-income tax rates (22% basic, 42% higher, 47% additional).</strong> A 2% surcharge on property income above the normal income tax rates was announced in the Autumn Budget and is scheduled to apply from 6 April 2027. The provision sits in the draft Finance Act 2026, expected to receive Royal Assent before the start of 2027/28. Plan on the basis that the surcharge applies from 6 April 2027.</li>
+<li><strong>Separate property-income tax rates (22% basic, 42% higher, 47% additional).</strong> A 2 percentage point uplift on property income above the normal income tax rates was announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026). It applies from 6 April 2027.</li>
 </ul>
 
 <h2>Structure One: Sole Trader (SA105)</h2>
@@ -287,7 +287,7 @@ faqs:
 
 <h2>What About the 2027 "22% / 42% / 47%" Property Income Rates?</h2>
 
-<p>The 2% surcharge on property income above the normal income tax rates was announced in the Autumn Budget and is scheduled for 6 April 2027. The provision is in the draft Finance Act 2026 and is expected to complete its parliamentary stages before the start of 2027/28. Until Royal Assent the figures could theoretically still change, but plan on the basis that the current income tax rates (20%, 40%, 45%) apply to property income for 2026/27 and that 22%, 42%, 47% apply from 6 April 2027.</p>
+<p>The 2 percentage point uplift on property income above the normal income tax rates was announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026), applying from 6 April 2027. The current income tax rates (20%, 40%, 45%) apply to property income for 2026/27, and 22%, 42%, 47% apply from 6 April 2027.</p>
 
 <p>The surcharge strengthens the case for incorporation for higher-rate landlords, because the 22%/42% rates push the personal-tax cost of holding property further above the corporation tax rate. Modelling both rate sets (2026/27 vs 2027/28) is the right way to test the decision before incorporating.</p>
 

@@ -20,7 +20,7 @@ faqs:
   - question: "How much extra tax do landlords pay due to mortgage interest restrictions?"
     answer: "The extra tax depends on the landlord's tax rate and mortgage interest amount. A higher-rate (40%) taxpayer previously saved 40% on mortgage interest but now only gets 20% relief. For £10,000 annual mortgage interest, this creates an additional £2,000 tax bill compared to the old rules."
   - question: "Will the 2027 property income tax changes affect mortgage interest relief?"
-    answer: "The mortgage interest restriction will remain in place from April 2027, but landlords will face new property income tax rates of 22%/42%/47%. Since mortgage interest credit stays at 20%, the gap between the tax rate and relief rate will actually increase for higher-rate taxpayers, making the restriction even more costly."
+    answer: "The mortgage interest restriction will remain in place from April 2027, and landlords will face new property income tax rates of 22%/42%/47%. The basic-rate credit also rises to 22% from April 2027 (Finance Act 2026 Schedule 1), in step with the rates, so the gap between the tax rate and the relief rate is unchanged: a higher-rate landlord's gap stays at 20 percentage points. The only real change is the flat 2 percentage point rise on net rental profit."
 ---
 
 <p>The question of whether mortgage interest is deductible for UK landlords in 2026 has a straightforward but frustrating answer: <strong>no, mortgage interest is not fully deductible as it once was</strong>. Since April 2020, Section 24 tax restrictions have completely changed how landlords can claim mortgage interest tax relief, replacing the previous full deduction with a more limited 20% tax credit system.</p>
@@ -58,7 +58,7 @@ faqs:
 <li>Less mortgage interest credit (20% of £8,000): £1,600</li>
 <li>Net tax: £3,200</li>
 </ul>
-<p>Sarah now pays £1,600 more in tax annually – a 100% increase.</p>
+<p>Sarah now pays £1,600 more in tax annually, a 100% increase.</p>
 
 <p>When completing your 2026 tax return, mortgage interest must be reported correctly:</p>
 <ul>
@@ -99,8 +99,8 @@ faqs:
 
 <h2>Future Changes: Property Income Tax from 2027</h2>
 
-<p>From April 2027, the UK tax system will introduce separate tax rates specifically for property income: 22% basic rate, 42% higher rate, and 47% additional rate. <strong>Crucially, the mortgage interest restriction will remain in place</strong> – landlords will still only receive a 20% tax credit rather than full deductibility.</p>
-<p>This means the Section 24 impact will actually worsen for higher-rate taxpayers. A landlord paying the new 42% rate on property income will still only receive 20% relief on mortgage interest, creating an even larger gap than under current rules.</p>
+<p>From April 2027, the UK tax system will introduce separate tax rates specifically for property income: 22% basic rate, 42% higher rate, and 47% additional rate. <strong>The mortgage interest restriction remains in place, but the basic-rate credit also rises to 22%</strong> from April 2027 (Finance Act 2026 Schedule 1), in step with the new rates, rather than restoring full deductibility.</p>
+<p>This means the Section 24 gap does not widen. A landlord paying the new 42% rate on property income receives relief at 22%, a 20 percentage point wedge (42% minus 22%), the same as under current rules (40% minus 20%). A basic-rate landlord sees no new wedge. The only real change is a flat 2 percentage point rise on net rental profit after finance costs.</p>
 
 <h2>Alternative Strategies for UK Landlords</h2>
 
@@ -121,4 +121,4 @@ faqs:
 <p>The complexity of Section 24 rules and their interaction with other tax changes means professional advice is often worthwhile. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can help you understand your specific situation and explore available options.</p>
 <p>For landlords considering incorporation or other restructuring, the tax implications can be significant. Professional guidance helps ensure you make informed decisions based on your complete financial picture.</p>
 
-<p>The mortgage interest rules for UK landlords in 2026 remain fundamentally changed from the pre-2017 position. While individual landlords cannot fully deduct mortgage interest, understanding exactly how the current system works – and exploring available alternatives – remains crucial for effective tax planning in today's property investment landscape.</p>
+<p>The mortgage interest rules for UK landlords in 2026 remain fundamentally changed from the pre-2017 position. While individual landlords cannot fully deduct mortgage interest, understanding exactly how the current system works (and exploring available alternatives) remains crucial for effective tax planning in today's property investment landscape.</p>

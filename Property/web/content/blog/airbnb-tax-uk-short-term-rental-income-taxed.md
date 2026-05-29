@@ -65,7 +65,7 @@ faqs:
 
 <p>Rental profit sits on top of other income (employment, pension, self-employment) for band purposes. A higher-rate-employed host with £80,000 salary and £15,000 of net Airbnb profit pays 40% on the rental slice, not 20%.</p>
 
-<p>A separate 2% surcharge on property income was announced at the Autumn Budget 2024 (30 October 2024), with the operative rates of 22% basic, 42% higher and 47% additional scheduled to take effect from 6 April 2027. Legislation sits in the draft Finance Act 2026; the 2026/27 tax year uses the standard 20% / 40% / 45% rates. Plan against the scheduled 2027/28 rates while noting they require enactment to crystallise.</p>
+<p>A separate 2 percentage point uplift on property income was announced at the Autumn Budget 2025, with the operative rates of 22% basic, 42% higher and 47% additional taking effect from 6 April 2027 (England and Northern Ireland). It was enacted in Finance Act 2026 (Royal Assent 18 March 2026); the 2026/27 tax year still uses the standard 20% / 40% / 45% rates.</p>
 
 <h2>What FHL abolition changed in practice</h2>
 

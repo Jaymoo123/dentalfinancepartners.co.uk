@@ -75,7 +75,7 @@ faqs:
 <li>Mortgage interest tax credit: £12,000 × 20% = £2,400</li>
 <li>Net tax on property: £8,800 - £2,400 = £6,400</li>
 </ul>
-<p>From April 2027, the UK tax system introduces separate tax rates for property income. These rates will be 22% for basic rate, 42% for higher rate, and 47% for additional rate taxpayers. However, <strong>mortgage interest relief will remain restricted to 20%</strong>, creating an even larger gap for higher-rate taxpayers. This change makes the mortgage interest restriction even more significant for property investors with substantial rental income.</p>
+<p>From April 2027, the UK tax system introduces separate tax rates for property income. These rates will be 22% for basic rate, 42% for higher rate, and 47% for additional rate taxpayers. The basic-rate credit also rises to 22% from April 2027 (Finance Act 2026 Schedule 1), in step with the rates, so <strong>the gap between a higher-rate landlord's rate and the relief stays at 20 percentage points</strong>, the same as now. Applied to the example above, 2027/28 net property tax becomes £22,000 × 42% − £12,000 × 22% = £6,600, a £200 rise on the £6,400 figure: that is 2% of the £10,000 of profit left after the £12,000 of interest, not 2% of the £22,000. A landlord with no mortgage sees the full 2% of profit.</p>
 
 <h2>Record Keeping and Common Mistakes</h2>
 
@@ -102,7 +102,7 @@ faqs:
 
 <p>One key advantage of holding rental properties through a limited company is that <strong>Section 24 restrictions do not apply to companies</strong>. Corporate landlords can still deduct mortgage interest as a full business expense against rental income.</p>
 <p>This creates a significant tax advantage for company structures, particularly for higher-rate taxpaying landlords with substantial mortgage costs. However, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation involves other considerations</a> including corporation tax (19% small profits rate on profits up to £50k / 25% main rate above £250k, with marginal relief between), dividend tax, and stamp duty costs on property transfers.</p>
-<p>The Section 24 restriction represents a permanent change to the UK tax system for individual landlords. With property income tax rates increasing from April 2027, the gap between mortgage costs and available relief will widen further. This trend continues to make company structures more attractive for landlords with significant mortgage costs, particularly those paying higher rates of tax on their total income.</p>
+<p>The Section 24 restriction represents a permanent change to the UK tax system for individual landlords. With property income tax rates increasing from April 2027 (and the basic-rate credit rising to 22% in step, so the relief gap is unchanged), company structures remain attractive for landlords with significant mortgage costs, because a company deducts the full interest against its corporation tax rather than relieving it at the basic-rate credit, particularly for those paying higher rates of tax on their total income.</p>
 
 <h2>Strategies to Manage the Mortgage Interest Restriction</h2>
 

@@ -18,7 +18,7 @@ faqs:
   - question: "Are CGT rates on residential property confirmed to change from April 2027?"
     answer: "No specific CGT rate change for residential property has been confirmed in legislation for April 2027 as of May 2026. The confirmed April 2027 change is the new separate property income tax rates of 22% basic, 42% higher, and 47% additional rate. Speculation has circulated about aligning CGT rates with income tax rates more closely, but no such legislation has been laid. Treat scenarios involving 2027 CGT rate changes as planning contingencies, not as confirmed events. The position can change at any fiscal event."
   - question: "What is the confirmed April 2027 change for property landlords?"
-    answer: "Separate property income tax rates of 22% basic, 42% higher, and 47% additional rate apply to rental income from 6 April 2027. This is 2 percentage points above the equivalent general income tax rates. The change was announced in the Autumn Budget and is scheduled for inclusion in Finance Act 2026. The change affects rental income (i.e. profit on letting), not capital gains on property disposal. It does, however, strengthen the case for limited company ownership for many higher-rate landlords."
+    answer: "Separate property income tax rates of 22% basic, 42% higher, and 47% additional rate apply to rental income from 6 April 2027. This is 2 percentage points above the equivalent general income tax rates. The change was announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026). The change affects rental income (i.e. profit on letting), not capital gains on property disposal. It does, however, strengthen the case for limited company ownership for many higher-rate landlords."
   - question: "Should I sell my rental properties before April 2027 to lock in current rates?"
     answer: "Only if you were already planning to sell. The CGT rates for residential property are not confirmed to change in April 2027 (the income tax rates are). Selling purely to avoid a possible rate change creates a definite cost (CGT on the gain, lost rental income, transaction costs) to protect against an uncertain saving. The more defensible reasons to sell before April 2027 are personal: portfolio rebalancing, exit from underperforming properties, capital gains absorption against an unusually low-income year, or preparation for a step-down in property activity. Tax timing is a secondary input to those decisions, not the primary driver."
   - question: "How does the April 2027 income tax change affect my CGT planning?"
@@ -75,7 +75,7 @@ faqs:
 <li>Additional rate property income tax: 47% (up from 45%)</li>
 </ul>
 
-<p>These rates apply to rental income (rental profit, after allowable expenses but with Section 24 still operating) for individual landlords from 6 April 2027. They were announced in the Autumn Budget and are scheduled for inclusion in Finance Act 2026.</p>
+<p>These rates apply to rental income (rental profit, after allowable expenses but with Section 24 still operating) for individual landlords from 6 April 2027. They were announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026).</p>
 
 <p><strong>Critically, these are income tax rates, not CGT rates.</strong> The headline figure most landlords focus on (the rate at which they pay tax on disposal gains) does not change as a confirmed matter from 6 April 2027. No CGT rate change for residential property has been laid in legislation for that date as at May 2026.</p>
 

@@ -20,7 +20,7 @@ faqs:
   - question: "Should I transfer my properties to a company before April 2027?"
     answer: "This depends on your tax position, capital gains liability, and rental income levels. Higher rate taxpayers generally benefit more from incorporation after 2027, while basic rate taxpayers see smaller advantages. The transfer itself triggers CGT, so you need to weigh one-time costs against ongoing tax savings."
   - question: "Do the 2027 changes affect Section 24 mortgage interest restrictions?"
-    answer: "Section 24 remains in place, but the impact worsens for personal ownership. Mortgage interest still gets only basic rate relief (20%), while property income faces 22% or higher rates. Companies continue to get full mortgage interest deductions against their 19% corporation tax rate, making incorporation more attractive for leveraged properties."
+    answer: "Section 24 remains in place, but the basic-rate credit rises to 22% from April 2027 in step with the rates (Finance Act 2026 Schedule 1), so the gap between the rate and the relief does not widen for personal ownership. Companies still come out ahead on leverage because they deduct mortgage interest in full against their 19% to 25% corporation tax, rather than relieving it at the basic-rate credit, making incorporation more attractive for heavily mortgaged properties."
 ---
 
 <p>From April 2027, the UK government introduces separate tax rates specifically for property income. This represents the most significant change to landlord taxation in decades and fundamentally alters the <strong>2027 tax rates incorporation decision</strong> for property investors.</p>
@@ -35,7 +35,7 @@ faqs:
 <li><strong>42% higher rate</strong> on property income (replacing 40%)</li>
 <li><strong>47% additional rate</strong> on property income (replacing 45%)</li>
 </ul>
-<p>These rates apply after the personal allowance (£12,570 in 2026/27) and stack on top of your other income. Crucially, these are separate from general income tax rates, which remain at 20%, 40%, and 45% for employment, pensions, and other income sources. Meanwhile, corporation tax rates for 2027/28 are expected to remain at 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between.</p>
+<p>These rates apply after the personal allowance (£12,570 in 2026/27) and stack on top of your other income. Crucially, these are separate from general income tax rates, which are unchanged at 20%, 40%, and 45% for employment, pensions, and other income sources. Meanwhile, corporation tax rates for 2027/28 are expected to remain at 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between.</p>
 
 <h2>Incorporation Analysis: Comparing Tax Rates</h2>
 
@@ -52,7 +52,7 @@ faqs:
 <li><strong>Personal ownership (from April 2027):</strong> Property income tax: £50,000 × 42% = £21,000. After-tax income: £29,000.</li>
 <li><strong>Limited company ownership:</strong> Corporation tax: £50,000 × 19% = £9,500. Available for dividends: £40,500. Dividend tax (higher rate): £40,500 × 35.75% = £14,479. Total after-tax: £26,021.</li>
 </ul>
-<p>Even after dividend tax, the company structure saves £3,979 annually in this example. For larger portfolios, these savings multiply significantly.</p>
+<p>Even after dividend tax, the company structure saves £2,979 annually in this example (£29,000 − £26,021). For larger portfolios, these savings multiply significantly.</p>
 
 <h2>Should You Incorporate Before 2027?</h2>
 
@@ -61,12 +61,12 @@ faqs:
 
 <h2>Mortgage Interest and Section 24</h2>
 
-<p>The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 mortgage interest restrictions</a> remain in place after 2027, but their impact changes with the new rates. For personal ownership, mortgage interest still gets only basic rate relief (20% in 2027), while the property income faces 22% or higher rates. This widens the effective penalty for leveraged personal property ownership. Companies continue to get full mortgage interest deductions against their corporation tax liability, making the incorporation benefit even stronger for heavily mortgaged properties.</p>
+<p>The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 mortgage interest restrictions</a> remain in place after 2027. For personal ownership the basic-rate credit rises to 22% from April 2027, in step with the property income rates, so the Section 24 wedge itself does not widen. The incorporation advantage on leverage comes from the structure, not a widening wedge: companies deduct mortgage interest in full against their corporation tax liability rather than relieving it at the basic-rate credit, which makes incorporation stronger for heavily mortgaged properties.</p>
 
 <h2>Alternative Ownership Structures and Strategies</h2>
 
 <p>Beyond simple incorporation, the 2027 changes open up other planning opportunities. Some landlords might benefit from holding high-yielding properties in companies while keeping capital growth assets personally. This mixed ownership approach can optimise both income tax and CGT positions.</p>
-<p>For married couples, transferring properties to the spouse with lower overall income could help keep rental profits in the 22% rather than 42% bracket, though this is becoming less effective as the gap narrows. Higher rate taxpayers can also obtain 40% tax relief on pension contributions, potentially reducing their overall rate from 42% to effectively 22% on property income used for pension funding.</p>
+<p>For married couples, transferring properties to the spouse with lower overall income could help keep rental profits in the 22% rather than 42% band; the saving is 20 percentage points per pound shifted, the same as under the pre-2027 rates. Higher rate taxpayers can also obtain tax relief on pension contributions at their marginal rate, potentially moving property income that would be taxed at 42% into the 22% band on the amount used for pension funding.</p>
 
 <h2>Administrative and Compliance Considerations</h2>
 

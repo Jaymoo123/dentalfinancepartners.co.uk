@@ -12,11 +12,11 @@ metaDescription_prev: "From April 2027, UK landlords face separate property inco
 altText: "UK landlord reviewing 2027 property income tax rates documentation on laptop"
 image: ""
 h1: "2027 Property Income Tax Rates for UK Landlords: 22%, 42%, 47% Explained"
-summary: "The Autumn Budget announced separate property income tax rates for UK individual landlords from 6 April 2027: 22% basic rate, 42% higher rate, 47% additional rate. The rates are 2 percentage points above the equivalent general income tax rates and are scheduled for inclusion in Finance Act 2026. This page covers the announced structure, scope, interaction with Section 24, MTD and the limited company alternative, with worked examples at the common landlord income points."
+summary: "The Autumn Budget 2025 announced separate property income tax rates for individual landlords from 6 April 2027: 22% basic rate, 42% higher rate, 47% additional rate. The rates are 2 percentage points above the equivalent general income tax rates, apply in England and Northern Ireland (Scotland and Wales set their own), and were enacted in Finance Act 2026 (Royal Assent 18 March 2026). This page covers the structure, scope, interaction with Section 24, MTD and the limited company alternative, with worked examples at the common landlord income points."
 schema: ''
 faqs:
   - question: "What rates were announced for 2027 property income tax?"
-    answer: "The Autumn Budget announced separate property income tax rates for individual landlords from 6 April 2027: 22% on property income within the basic rate band, 42% within the higher rate band, and 47% within the additional rate band. These are 2 percentage points above the equivalent general income tax rates. The bands themselves (£12,570 personal allowance, £50,270 higher rate threshold, £125,140 additional rate threshold) are frozen at 2026/27 levels until April 2028 and are unchanged for property income. The rates are scheduled for inclusion in Finance Act 2026; this guide reflects the announced position as of May 2026."
+    answer: "The Autumn Budget 2025 (26 November 2025) announced separate property income tax rates for individual landlords from 6 April 2027: 22% on property income within the basic rate band, 42% within the higher rate band, and 47% within the additional rate band. These are 2 percentage points above the equivalent general income tax rates. The bands themselves (£12,570 personal allowance, £50,270 higher rate threshold, £125,140 additional rate threshold) are frozen at 2026/27 levels until April 2028 and are unchanged for property income. The rates were enacted in Finance Act 2026 (Royal Assent 18 March 2026) and apply in England and Northern Ireland; Scotland and Wales set their own property income rates."
   - question: "Who do the new rates apply to?"
     answer: "Individual landlords (sole traders) with UK residential rental income are in scope: single-property buy-to-let landlords, portfolio landlords, joint owners (each on their share), partners in property partnerships (each on their share), and non-UK resident landlords. Limited companies are NOT affected and continue to pay corporation tax at 19% (small profits rate, profits under £50,000), 25% (main rate, over £250,000), with marginal relief between. Commercial property income to individuals continues to be taxed at the standard income tax rates, not the new property rates."
   - question: "What property types are caught by the new rates?"
@@ -24,7 +24,7 @@ faqs:
   - question: "Are the bands or personal allowance changing?"
     answer: "No. The personal allowance remains £12,570 and the basic/higher rate thresholds remain at the same levels as for general income tax (£50,270 and £125,140). The personal allowance taper above £100,000 also operates in the same way. The change is to the rates that apply within those bands for property income specifically, not to the bands themselves."
   - question: "How does the rate change interact with Section 24?"
-    answer: "Section 24 restricts relief for finance costs (mortgage interest, loan interest, finance fees) on residential property held by individuals to a basic-rate tax credit at 20%. The new property income tax rates apply to net property profit before the Section 24 add-back, then the 20% basic-rate credit is applied. For higher-rate landlords with significant mortgage interest, the gap between the 20% credit and the 42% rate on retained profit widens, making the effective tax cost of leveraged residential property higher in 2027/28 than in 2026/27. Section 24 detail is in our <a href=\"/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide\">Section 24 complete guide</a>."
+    answer: "Section 24 restricts relief for residential finance costs (mortgage interest, loan interest, finance fees) for individual landlords to a basic-rate tax credit. From 6 April 2027 that credit is given at the new 22% property basic rate (Finance Act 2026, Schedule 1), not held at 20%, so it rises in step with the rates. The new rates apply to net property profit before the Section 24 add-back, then the 22% credit is applied. A basic-rate landlord sees no new wedge (income and credit both at 22%); a higher-rate landlord's wedge between the 42% rate and the 22% credit is 20 percentage points, the same as 40% minus 20% in 2026/27. Leveraged property does cost more in 2027/28, but only through the flat 2 percentage point rate rise on profit, not a widening Section 24 gap. Section 24 detail is in our <a href=\"/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide\">Section 24 complete guide</a>."
   - question: "What does the change cost a basic-rate landlord?"
     answer: "Two percentage points on net rental profit within the basic-rate band. For a sole-trader landlord with £20,000 of taxable rental profit fully within the basic-rate band, the additional tax is £400 a year (2% × £20,000). For one with £40,000 of taxable rental profit fully within the basic-rate band, the additional tax is £800. The pound increase scales linearly with taxable profit. The relative increase (from 20% to 22%) is 10%, the largest proportional increase among the three bands."
   - question: "What does the change cost a higher-rate landlord?"
@@ -38,18 +38,18 @@ faqs:
   - question: "How does Making Tax Digital interact with the 2027 rate change?"
     answer: "MTD for Income Tax went live on 6 April 2026 for sole-trader landlords with rental income above £50,000. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. The new property income tax rates apply from 6 April 2027, so 2027/28 is the first full tax year affected. In-scope landlords keep digital records and submit quarterly updates; the year-end finalisation applies the new rates. Setting up MTD-compliant software cleanly during 2026/27 makes the 2027/28 transition smoother. Our <a href=\"/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline\">MTD pillar guide</a> covers the mechanics."
   - question: "What planning is available before April 2027?"
-    answer: "The genuinely useful pre-2027 levers are: (a) review of Section 24 exposure and whether incorporation makes sense; (b) review of joint-ownership splits between spouses with mismatched marginal rates (Form 17 elections on jointly-held property); (c) bring-forward of any large allowable expense items where commercially sensible (timing of repairs, professional fees); (d) review of mortgage structure where remortgaging is due. Speculative pre-emptive disposals or rushed incorporations are usually worse than the additional tax they were intended to avoid. The 2 percentage point change is meaningful but not transformative."
+    answer: "The genuinely useful pre-2027 levers are: (a) review of Section 24 exposure and whether incorporation makes sense; (b) review of joint-ownership splits between spouses with mismatched marginal rates (Form 17 elections on jointly-held property); (c) deferral of any large allowable expense items into 2027/28 or later where commercially sensible (timing of repairs, professional fees), so the relief lands at the higher 22%/42% rates; (d) review of mortgage structure where remortgaging is due. Speculative pre-emptive disposals or rushed incorporations are usually worse than the additional tax they were intended to avoid. The 2 percentage point change is meaningful but not transformative."
   - question: "Are the rates locked in?"
-    answer: "The Autumn Budget announcement is the source of the 22/42/47% figures. The legislative vehicle is Finance Act 2026, which is the standard route for the rates to enter statute. Until the Finance Act is enacted in final form, the figures are policy commitment rather than statute. As of May 2026, no contrary signal has emerged, but Budget commitments have been changed at later fiscal events in the past. Plan on the announced position but stay alert for any modifications in the run-up to 6 April 2027."
+    answer: "Yes. The 22/42/47% rates were announced at the Autumn Budget 2025 and enacted in Finance Act 2026, which received Royal Assent on 18 March 2026 (sections 6 to 7). They are now statute, not a mere Budget pledge, and take effect from 6 April 2027 for property income in England and Northern Ireland. A future fiscal event could in principle amend them before they take effect, but as of May 2026 they are legislated and unchanged. Plan on the enacted position."
   - question: "What records and reporting changes do I need to make?"
     answer: "No new return forms are introduced by the rate change itself. The existing SA105 UK Property pages of the Self Assessment return continue to capture rental income and expenses. For 2027/28 onwards the tax calculation applies the new rates to the property profit element rather than the general rates. MTD-in-scope landlords feed the same data through the MTD quarterly cycle. The key practical change is making sure software, accountants and bookkeepers correctly apply the new rates to property income from 6 April 2027, separately from any non-property income, so reporting is not under or overstated."
 ---
 
-<p>The Autumn Budget announced separate property income tax rates for UK individual landlords from 6 April 2027: <strong>22% basic rate, 42% higher rate, 47% additional rate</strong>. These rates are 2 percentage points above the equivalent general income tax rates and apply to net property rental profit after allowable expenses. The change is scheduled for inclusion in Finance Act 2026.</p>
+<p>The Autumn Budget 2025 announced separate property income tax rates for individual landlords from 6 April 2027: <strong>22% basic rate, 42% higher rate, 47% additional rate</strong>. These rates are 2 percentage points above the equivalent general income tax rates and apply to net property rental profit after allowable expenses, for property income in England and Northern Ireland (Scotland and Wales set their own). The change was enacted in Finance Act 2026 (Royal Assent 18 March 2026).</p>
 
-<p>This page sets out the announced structure and how it interacts with the rest of the landlord tax framework. The position reflects the announcement as of May 2026 and is subject to confirmation in the final form of Finance Act 2026. We update this page after each fiscal event.</p>
+<p>This page sets out the enacted structure and how it interacts with the rest of the landlord tax framework. The rates are now in statute (Finance Act 2026, Royal Assent 18 March 2026); we update this page after each fiscal event.</p>
 
-<h2>The announced rate structure</h2>
+<h2>The enacted rate structure</h2>
 
 <table>
 <thead>
@@ -139,20 +139,20 @@ faqs:
 
 <ul>
 <li>Taxable rental profit (after non-finance expenses but before Section 24 add-back): £85,000 − £15,000 = £70,000</li>
-<li>Mortgage interest of £35,000 generates a Section 24 basic-rate credit of 20% × £35,000 = £7,000</li>
+<li>Mortgage interest of £35,000 generates a Section 24 basic-rate credit at the new 22% property basic rate: 22% × £35,000 = £7,700</li>
 <li>Total income: £40,000 + £70,000 = £110,000</li>
 <li>Personal allowance: £12,570 (used against consultancy income first)</li>
 <li>Consultancy tax: (£40,000 − £12,570) at 20% = £5,486</li>
 <li>Property profit allocation: £10,270 in basic-rate band (the remaining slice up to £50,270) at 22% = £2,259, then £59,730 in higher-rate band at 42% = £25,087</li>
 <li>Property tax before credit: £27,346</li>
-<li>Less Section 24 credit: £7,000</li>
-<li>Net property tax: £20,346</li>
-<li>Combined tax: £25,832</li>
+<li>Less Section 24 credit (22% × £35,000): £7,700</li>
+<li>Net property tax: £19,646</li>
+<li>Combined tax: £25,132</li>
 </ul>
 
-<p>For comparison in 2026/27 (property profit at 20%/40% rather than 22%/42%, same Section 24 mechanics): property tax would be £10,270 × 20% + £59,730 × 40% = £2,054 + £23,892 = £25,946 less £7,000 credit = £18,946. Plus consultancy tax £5,486 = £24,432.</p>
+<p>For comparison in 2026/27 (property profit at 20%/40% rather than 22%/42%, and the Section 24 credit at 20% rather than 22%): property tax would be £10,270 × 20% + £59,730 × 40% = £2,054 + £23,892 = £25,946 less £7,000 credit = £18,946. Plus consultancy tax £5,486 = £24,432.</p>
 
-<p>The 2027/28 increase for Priya is £1,400, almost all of which is the 2 percentage point property rate uplift on the £70,000 of property profit (£70,000 × 2% = £1,400). The Section 24 mechanics interact unchanged.</p>
+<p>The 2027/28 increase for Priya is £700. The 2 percentage point rate uplift adds £1,400 on the £70,000 of property profit (£70,000 × 2%), but the Section 24 credit also rises from 20% to 22%, giving £700 more relief on the £35,000 of mortgage interest (£35,000 × 2%), so the net increase is £700. The wedge between her 42% rate and the credit is unchanged at 20 percentage points.</p>
 
 <aside>
 <p>Modelling the 2027/28 tax cost for a specific portfolio</p>
@@ -161,11 +161,11 @@ faqs:
 
 <h2>Interaction with Section 24</h2>
 
-<p>Section 24 restricts relief for residential property finance costs (mortgage interest, loan interest, finance fees, related arrangement costs) for individual landlords to a basic-rate tax credit at 20%. The credit is unchanged by the 2027 rate change.</p>
+<p>Section 24 restricts relief for residential property finance costs (mortgage interest, loan interest, finance fees, related arrangement costs) for individual landlords to a basic-rate tax credit. From 6 April 2027 that credit is given at the new 22% property basic rate (Finance Act 2026, Schedule 1), rising from 20%, so it moves up in step with the rates rather than staying frozen.</p>
 
-<p>The 2 percentage point uplift in property income tax rates means the gap between the value of the Section 24 credit (20%) and the effective rate on retained profit widens. A higher-rate landlord now sees a 22 percentage point gap (42% rate minus 20% credit), compared to a 20 percentage point gap in 2026/27. For an additional-rate landlord the gap is 27 percentage points (47% minus 20%).</p>
+<p>Because the credit rises to 22% alongside the rates, the Section 24 wedge does not widen. A basic-rate landlord has no wedge at all (income and credit both at 22%). A higher-rate landlord's gap between the 42% rate and the 22% credit is 20 percentage points, the same as the 20-point gap in 2026/27 (40% minus 20%). An additional-rate landlord's gap is 25 percentage points (47% minus 22%), again unchanged from 2026/27 (45% minus 20%).</p>
 
-<p>The economic effect is that the Section 24 friction increases proportionately with the rate change. Leveraged residential landlords feel the change more than ungeared landlords. This is one of the strongest arguments for incorporation for higher-rate landlords with significant mortgage debt.</p>
+<p>The economic effect is that the Section 24 wedge holds constant in percentage-point terms while the headline rate rises 2 points. For a geared landlord the 2027 increase works out at 2 percentage points on net economic profit, because the rate rise on gross profit is partly offset by the larger credit on finance costs, so leveraged landlords are not hit by a widening wedge. Incorporation remains attractive for higher-rate landlords with significant mortgage debt, but because a company deducts finance costs in full and pays 19% to 25%, not because Section 24 worsens in 2027.</p>
 
 <h2>The limited company alternative</h2>
 
@@ -179,7 +179,7 @@ faqs:
 </thead>
 <tbody>
 <tr><td>Rate on rental profit</td><td>42% (higher), 47% (additional)</td><td>19% (small profits), 25% (main)</td></tr>
-<tr><td>Mortgage interest relief</td><td>Basic-rate credit (20%) only</td><td>Fully deductible</td></tr>
+<tr><td>Mortgage interest relief</td><td>Basic-rate credit (22% from 2027/28) only</td><td>Fully deductible</td></tr>
 </tbody>
 </table>
 
@@ -209,8 +209,8 @@ faqs:
 <ul>
 <li><strong>Incorporation review.</strong> For higher-rate landlords with significant mortgage debt, the 2027 change strengthens the case for incorporation. The mechanics (CGT on the deemed disposal subject to section 162 incorporation relief, SDLT including the 5% surcharge subject to the partnership route, mortgage refinancing) are substantial undertakings. The 2027 change does not change the answer for a basic-rate ungeared landlord but does shift the break-even for a higher-rate geared landlord.</li>
 <li><strong>Joint-ownership rebalancing between spouses.</strong> Where one spouse is a higher-rate taxpayer and the other is not, a Form 17 election on jointly-held property can shift more of the rental profit to the lower-rate spouse. The 2027 rate change widens the saving on this kind of split.</li>
-<li><strong>Bring-forward of allowable expenses.</strong> Where commercially sensible, bring forward repairs, professional fees, or other allowable revenue costs into pre-2027/28 years where the relief is at 20%/40% rather than 22%/42%. This is a marginal lever, worth doing where the work was going to happen anyway but not worth manufacturing.</li>
-<li><strong>Mortgage refinancing review.</strong> The Section 24 effect widens from April 2027. A landlord paying down mortgage debt reduces Section 24 exposure faster than the rate change widens it. Whether to prioritise mortgage paydown over portfolio growth is a portfolio-specific call.</li>
+<li><strong>Timing of allowable expenses.</strong> Where commercially sensible, defer repairs, professional fees, or other allowable revenue costs into 2027/28 or later, where the relief is at 22%/42% rather than 20%/40%. This is a marginal lever (a 2 percentage point difference), worth doing where the work was going to happen anyway but not worth manufacturing.</li>
+<li><strong>Mortgage refinancing review.</strong> The Section 24 restriction continues from April 2027, but the wedge does not widen, because the finance-cost credit rises to 22% alongside the rates. Paying down mortgage debt still reduces both the Section 24 exposure and the interest cost itself. Whether to prioritise mortgage paydown over portfolio growth is a portfolio-specific call.</li>
 </ul>
 
 <p>Speculative pre-emptive disposals or rushed incorporations are usually worse than the additional tax they were intended to avoid. The 2 percentage point uplift is meaningful at the margin but not transformative. Acting against the announced rates by selling profitable property early or restructuring without modelling usually costs more than it saves.</p>
@@ -222,7 +222,7 @@ faqs:
 
 <h2>Status check and authoritative sources</h2>
 
-<p>This guide reflects the position announced in the Autumn Budget and scheduled for inclusion in Finance Act 2026. Until the Finance Act is enacted in final form, the figures are policy commitment rather than statute. The authoritative confirmation will be the eventual Finance Act 2026 and the corresponding update to HMRC's rates and allowances guidance.</p>
+<p>This guide reflects the position announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026). The figures are now statute. The authoritative references are Finance Act 2026 and HMRC's rates and allowances guidance.</p>
 
 <p>For up-to-date confirmation:</p>
 

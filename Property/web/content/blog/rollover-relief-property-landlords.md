@@ -249,7 +249,7 @@ faqs:
 
 <p>A deferred rollover gain crystallises at the rates in force in the year of crystallisation, not at the rates in force in the year of the original disposal. For individuals in 2026/27, the residential property CGT rates are 18% (basic rate) and 24% (higher rate) on the chargeable gain after reliefs and AEA.</p>
 
-<p>The property income tax rates announced in the Autumn Budget 2024 (22% basic / 42% higher / 47% additional rate from April 2027) are scheduled subject to Finance Act 2026 receiving Royal Assent. Those rates apply to property INCOME, not to CGT: the 18% / 24% CGT rates on residential property are not affected by the announced 2027 income-tax surcharge and remain in force through 2027/28 on current law. Any longer-term CGT-rate change would require a separate Budget announcement.</p>
+<p>The property income tax rates announced at the Autumn Budget 2025 (22% basic / 42% higher / 47% additional rate from April 2027) were enacted in Finance Act 2026 (Royal Assent 18 March 2026). Those rates apply to property INCOME, not to CGT: the 18% / 24% CGT rates on residential property are not affected by the 2027 income-tax change and remain in force through 2027/28 on current law. Any longer-term CGT-rate change would require a separate Budget announcement.</p>
 
 <p>Rollover deferrals on long horizons (rolled into a replacement asset held for 10+ years) need to factor in rate-uncertainty risk: a deferred 24%-rate gain could crystallise at a different rate depending on future Budget policy. The SDLT additional dwellings surcharge increased to 5% from 30 October 2024 under the Autumn Budget 2024 changes, affecting the net cash cost of reinvestment in further residential property.</p>
 
