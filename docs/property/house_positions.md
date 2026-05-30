@@ -609,7 +609,9 @@ For property-tax purposes, the tie-breaker often resolves a UK SRT-resident land
 
 ### 16.6 NRL scheme is statutory, not treaty
 
-The Non-Resident Landlord scheme (FA 1995 Sch 23; SI 1995/2902 — the Taxation of Income from Land (Non-Residents) Regulations) is a UK statutory withholding mechanism. Tenants / letting agents withhold 20% of UK rent paid to non-resident landlords and account to HMRC quarterly, unless the landlord holds an **NRL1 / NRL2 / NRL3** approval to receive rent gross. Treaty residence does not displace NRL; even a treaty-resolved non-UK resident must apply for gross-payment approval.
+The Non-Resident Landlord scheme (live basis **ITA 2007 ss.971-972** + **SI 1995/2902**, the Taxation of Income from Land (Non-Residents) Regulations 1995) is a UK statutory withholding mechanism. Tenants / letting agents withhold 20% of UK rent paid to non-resident landlords and account to HMRC quarterly, unless the landlord holds an **NRL1** (individuals) / **NRL2** (companies) / **NRL3** (trustees) gross-payment approval. Treaty residence does not displace NRL; even a treaty-resolved non-UK resident must apply for gross-payment approval.
+
+> **Citation discipline (corrected 2026-05-30, F-NRL-1 / F-8 family, Track 2 citation fix):** the live regulation-making power is **ITA 2007 s.971** ("Income tax due in respect of income of non-resident landlords", in force) + **s.972**, under which **SI 1995/2902** continues. History: the original power was **ICTA 1988 s.42A** (inserted by FA 1995 s.40), rewritten into ITA 2007 ss.971-972 and repealed in ICTA from 6 Apr 2007; the SI's preamble still recites the now-repealed ICTA s.42A. **Do NOT cite "FA 1995 Sch 23"** — that schedule ("Obligations etc. imposed on UK representatives") was repealed by TIOPA 2010 (Sch 10 Pt 11) and is unrelated to the NRL scheme. ~10+ corpus pages inherited the "FA 1995 Sch 23" miscite; back-patch sweep tracked.
 
 **Do not write:** "DTAs eliminate UK tax on UK property income for non-UK residents" (false — treaty allocates taxing rights to UK as situs state). "NRL withholding is treaty-based" (false — statutory). "Foreign tax credit applies automatically" (false — claimed on relevant tax return).
 
@@ -680,11 +682,12 @@ Split-year is **not optional** — the cases either apply or they don't. Where m
 
 ### 17.5 NRL scheme operational mechanics
 
-- **NRL1** — landlord application to receive rent gross. Approved where landlord's UK tax affairs are up to date and they expect to remain compliant. Decision usually within 6 weeks.
-- **NRL2** — letting agent's quarterly return of rent paid to non-resident landlords + 20% tax withheld.
-- **NRL3** — tenant's equivalent where no letting agent involved AND annual rent exceeds £100/week (=£5,200/year).
-- **NRL6** — annual statement of tax deducted, given to landlord.
-- Failure to operate NRL: tenant / agent becomes liable for the unwithheld tax (no time limit for unprompted discovery).
+- **NRL1 / NRL2 / NRL3** — the landlord's gross-payment application, by entity type: **NRL1** (individuals), **NRL2** (companies), **NRL3** (trustees). Approved where the landlord's UK tax affairs are up to date and they expect to remain compliant. Decision usually within ~6 weeks. (Corrected 2026-05-30: NRL2/NRL3 are NOT the quarterly returns.)
+- **NRL4** — UK letting agent's registration with HMRC to operate the scheme (NRL5 = branch-by-branch operation).
+- **NRLQ** — the letting agent's (or tenant's) **quarterly** return of rent paid + 20% tax withheld. **NRLY** — the **annual** information return.
+- **NRL6** — annual certificate of tax deducted, given by the agent / tenant to the landlord.
+- The £100/week (=£5,200/year) threshold is the point above which a **tenant** (where no UK letting agent is involved) must operate the scheme.
+- Failure to operate NRL: the tenant / agent (the "prescribed person") becomes liable to account for the unwithheld tax and HMRC may assess it. (Ordinary TMA 1970 assessment time limits apply; there is no special "unlimited" discovery window for NRL.)
 
 ### 17.6 Domicile reform and the residence-based regime (April 2025+)
 

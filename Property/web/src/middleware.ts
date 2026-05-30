@@ -254,7 +254,6 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "nrl-approval-receive-rent-gross-hmrc-guide": "non-resident-landlord-tax",
   "non-resident-landlord-self-assessment-filing-requirements": "non-resident-landlord-tax",
   "sa105-property-income-form-2026-complete-guide": "landlord-tax-essentials",
-  "non-resident-cgt-selling-uk-property-overseas-guide": "non-resident-landlord-tax",
   "how-to-switch-self-assessment-mtd-property-income": "making-tax-digital-mtd",
   "peterborough-property-accountant-specialist-tax-services": "property-accountant-services",
   "property-accountant-stockport-landlords": "property-accountant-services",
@@ -338,6 +337,9 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {
+  // Track 2 NonResident batch collapse (2026-05-30): non-resident-cgt-selling-overseas-guide -> non-resident-cgt-uk-property-rates-reporting.
+  // Guard ALLOW: canonical dominates (6,169w/13 FAQs/ICAEW-reviewed/22 inbound vs source 1,943w/4 FAQs/no reviewer/10 inbound; both 0 sustained GSC, source only 12 Bing impr). Source .md removed; 10 inbound links repointed.
+  "non-resident-cgt-selling-uk-property-overseas-guide": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
   // Track 2 batch 3 collapse (2026-05-30): landlord-expenses-allowable -> landlord-tax-deductions.
   // Guard ALLOW: canonical dominates (84 impr/pos 53/61 inbound vs source 30 impr/pos 80/4 inbound). Source .md removed.
   "landlord-expenses-allowable-uk-2026": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",

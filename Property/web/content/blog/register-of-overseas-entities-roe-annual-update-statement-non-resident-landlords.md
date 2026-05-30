@@ -184,7 +184,7 @@ editorialNote: "Annual-update-side companion to existing initial-registration ma
 
 <ul>
 <li><a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">Non-Resident Landlord Scheme complete guide</a>, the income-side companion obligation for offshore landlord-corporates.</li>
-<li><a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">Non-resident CGT on selling UK property</a>, the disposal-side companion that intersects with the LRA 2002 Sch 4A block at completion.</li>
+<li><a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">Non-resident CGT on selling UK property</a>, the disposal-side companion that intersects with the LRA 2002 Sch 4A block at completion.</li>
 <li><a href="/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements">Non-resident landlord Self Assessment filing requirements</a>, the income-tax-side filing companion.</li>
 <li><a href="/blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos">ECCTA 2023 Companies House identity verification</a>, the parallel mandatory-enrolment regime that applies to directors and PSCs of UK limited companies (a different regime but in the same compliance family).</li>
 <li><a href="/blog/incorporation-and-company-structures/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure">Companies House confirmation statement changes from 4 March 2024 onwards</a>, the UK-LtdCo annual filing companion for landlords who hold UK limited companies above or below an overseas structure.</li>

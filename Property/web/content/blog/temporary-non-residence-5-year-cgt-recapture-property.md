@@ -109,7 +109,7 @@ editorialNote: "Reviewed against TCGA 1992 section 10A (substituted by Finance A
 <li><strong>Non-UK situs assets, return after 5 years:</strong> Outside both regimes for UK CGT purposes (foreign country taxation depends on its own rules).</li>
 </ul>
 
-<p>The companion <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates and reporting</a> page sets out the NRCGT mechanics in detail; the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">non-resident CGT when selling UK property</a> page handles the operational steps for the UK land disposal itself.</p>
+<p>The companion <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates and reporting</a> page sets out the NRCGT mechanics in detail; the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT when selling UK property</a> page handles the operational steps for the UK land disposal itself.</p>
 
 <h2>Three landlord-emigrant scenarios</h2>
 

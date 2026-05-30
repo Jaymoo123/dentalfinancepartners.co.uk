@@ -132,7 +132,7 @@ UAE Value Added Tax (Federal Decree-Law No. 8 of 2017): 5%, but residential rent
 <li><strong>60-day UK NRCGT return</strong> on disposal of UK land regardless of tax due.</li>
 <li><strong>SRT records:</strong> retain travel records evidencing UAE residence and UK day counts in case HMRC opens an enquiry into your residence position.</li>
 </ul>
-<p>The <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a> and <a href="/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide">NRL1 approval process page</a> cover the operational sequencing; the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">non-resident CGT selling guide</a> walks the 60-day disposal return.</p>
+<p>The <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a> and <a href="/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide">NRL1 approval process page</a> cover the operational sequencing; the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT selling guide</a> walks the 60-day disposal return.</p>
 <h2>Common traps for UAE-resident UK landlords</h2>
 <p>Five traps catch UAE-resident UK landlord positions most often:</p>
 <ol>
