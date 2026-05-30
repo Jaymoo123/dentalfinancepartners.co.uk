@@ -96,6 +96,22 @@ def main():
         if not prev or (r["impr"] or 0) > prev["impr"]:
             gsc[slug] = {"impr": r["impr"] or 0, "clk": r["clk"] or 0, "wpos": r["wpos"],
                          "url": r["page_url"]}
+    # Bing page-level aggregate (latest snapshot). Legacy pages routinely rank
+    # page-1 on Bing while page 4-8 on Google, so a Google-only ROI buries the
+    # best lift targets (a 0-Google / page-1-Bing page is a TOP rewrite target).
+    brows = sql("""
+        SELECT page_url, SUM(impressions) AS impr, SUM(clicks) AS clk,
+               ROUND((SUM(position*impressions)/NULLIF(SUM(impressions),0))::numeric,1) AS wpos
+        FROM bing_query_data WHERE site_key='property'
+          AND date=(SELECT MAX(date) FROM bing_query_data WHERE site_key='property')
+        GROUP BY page_url;
+    """)
+    bing = {}
+    for r in brows:
+        slug = r["page_url"].rstrip("/").split("/")[-1]
+        prev = bing.get(slug)
+        if not prev or (r["impr"] or 0) > prev["impr"]:
+            bing[slug] = {"impr": r["impr"] or 0, "clk": r["clk"] or 0, "wpos": r["wpos"]}
     monitored = {r["slug"] for r in sql("SELECT slug FROM monitored_pages WHERE site_key='property';")}
     live_files = {p.stem for p in BLOG_DIR.glob("*.md")}
 
@@ -103,20 +119,25 @@ def main():
     for slug in residual:
         handled = slug in HANDLED_PHASE3 or slug in monitored
         g = gsc.get(slug, {})
+        b = bing.get(slug, {})
+        gi, bi = g.get("impr", 0), b.get("impr", 0)
         work.append({
             "slug": slug, "cluster": cluster_of(slug),
-            "impr": g.get("impr", 0), "clk": g.get("clk", 0), "wpos": g.get("wpos"),
+            "impr": gi, "clk": g.get("clk", 0), "wpos": g.get("wpos"),
+            "bimpr": bi, "bclk": b.get("clk", 0), "bwpos": b.get("wpos"),
+            "combined_impr": gi + bi,
             "handled": handled,
             "on_disk": slug in live_files,  # False => already redirected/removed
         })
 
     todo = [w for w in work if not w["handled"]]
-    todo.sort(key=lambda w: (-w["impr"], w["slug"]))
+    # ROI by combined (Google + Bing) demand; Google impr then slug as tiebreaks.
+    todo.sort(key=lambda w: (-w["combined_impr"], -w["impr"], w["slug"]))
 
     by_cluster = collections.Counter(w["cluster"] for w in todo)
     impr_by_cluster = collections.Counter()
     for w in todo:
-        impr_by_cluster[w["cluster"]] += w["impr"]
+        impr_by_cluster[w["cluster"]] += w["combined_impr"]
 
     out = pathlib.Path("docs/property/track2_worklist_2026-05-29.md")
     L = ["# Track 2 legacy-rewrite worklist (2026-05-29)", "",
@@ -124,16 +145,18 @@ def main():
          f"| **remaining to process: {len(todo)}**", "",
          "GSC = 90d (2026-02-28..2026-05-29) page-level aggregate. Pages with impr>0 but "
          "weak position are highest rewrite ROI; impr=0 pages are INVISIBLE (rewrite-or-collapse).", "",
-         "## Clusters (remaining), by total impressions", "",
-         "| Cluster | Pages | Total impr | Avg pos (impr-wtd top) |", "|---|---:|---:|---|"]
+         "## Clusters (remaining), by combined Google+Bing impressions", "",
+         "| Cluster | Pages | Total impr (G+Bing) |", "|---|---:|---:|"]
     for cl, _ in impr_by_cluster.most_common():
-        pages = by_cluster[cl]
-        L.append(f"| {cl} | {pages} | {impr_by_cluster[cl]} | |")
-    L += ["", "## Top 40 by rewrite ROI (impressions, mediocre position)", "",
-          "| Impr | Clk | Pos | Cluster | Slug | on_disk |", "|---:|---:|---:|---|---|---|"]
+        L.append(f"| {cl} | {by_cluster[cl]} | {impr_by_cluster[cl]} |")
+    L += ["", "## Top 40 by rewrite ROI (combined Google+Bing demand)",
+          "B-pos near page 1 with weak G-pos = proven content, just needs a Google lift.", "",
+          "| G-impr | G-pos | B-impr | B-pos | Clk | Cluster | Slug | on_disk |",
+          "|---:|---:|---:|---:|---:|---|---|---|"]
     for w in todo[:40]:
-        L.append(f"| {w['impr']} | {w['clk']} | {w['wpos'] if w['wpos'] is not None else '-'} "
-                 f"| {w['cluster']} | {w['slug']} | {'y' if w['on_disk'] else 'n'} |")
+        L.append(f"| {w['impr']} | {w['wpos'] if w['wpos'] is not None else '-'} "
+                 f"| {w['bimpr']} | {w['bwpos'] if w['bwpos'] is not None else '-'} "
+                 f"| {w['clk']} | {w['cluster']} | {w['slug']} | {'y' if w['on_disk'] else 'n'} |")
     out.write_text("\n".join(L), encoding="utf-8")
 
     pathlib.Path("docs/property/track2_worklist_2026-05-29.json").write_text(
@@ -143,9 +166,10 @@ def main():
     print("\nClusters (remaining) by total GSC impressions:")
     for cl, _ in impr_by_cluster.most_common():
         print(f"  {cl:<26} {by_cluster[cl]:>3} pages   {impr_by_cluster[cl]:>5} impr")
-    print("\nTop 15 rewrite-ROI residual pages:")
+    print("\nTop 15 rewrite-ROI residual pages (G impr/pos | B impr/pos):")
     for w in todo[:15]:
-        print(f"  {w['impr']:>4} imp  pos{str(w['wpos']):>5}  {w['cluster']:<22} {w['slug']}")
+        print(f"  G {w['impr']:>4}/{str(w['wpos']):<5} B {w['bimpr']:>4}/{str(w['bwpos']):<5}  "
+              f"{w['cluster']:<22} {w['slug']}")
     print(f"\nWrote {out}")
 
 

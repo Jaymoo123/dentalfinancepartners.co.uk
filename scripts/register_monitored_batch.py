@@ -36,6 +36,7 @@ URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
 BLOG_DIR = pathlib.Path("Property/web/content/blog")
 CACHE = pathlib.Path("optimisation_engine/.cache")
 SITE = "property"
+PROD_DOMAIN = "https://www.propertytaxpartners.co.uk"
 MONITOR_DAYS = 90
 BASELINE_WINDOW_DAYS = 90
 
@@ -120,6 +121,8 @@ def main():
     ap.add_argument("--rewrite-date", default=datetime.date.today().isoformat(),
                     help="go-live date YYYY-MM-DD (default today)")
     ap.add_argument("--commit", action="store_true")
+    ap.add_argument("--print-urls", action="store_true",
+                    help="print the full canonical URL for each batch slug and exit (no DB writes); for IndexNow")
     a = ap.parse_args()
 
     if a.batch and not a.slugs:
@@ -128,6 +131,11 @@ def main():
         slugs = a.slugs
     else:
         raise SystemExit("Pass --batch or --slugs.")
+
+    if a.print_urls:
+        for slug in slugs:
+            print(PROD_DOMAIN + page_url_for(slug))
+        return
 
     go_live = datetime.date.fromisoformat(a.rewrite_date)
     monitor_until = (go_live + datetime.timedelta(days=MONITOR_DAYS)).isoformat()

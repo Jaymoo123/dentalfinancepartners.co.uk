@@ -44,9 +44,15 @@ MGMT_URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
 BING_API_KEY: str = os.getenv("BING_WEBMASTER_API_KEY", "")
 BING_BASE = "https://ssl.bing.com/webmaster/api.svc/json"
 
-# BWT-verified site URL per site_key. Override with --site-url.
+# BWT-verified site URL per site_key (from GetUserSites). Override with --site-url.
+# _resolve_site_url matches by host (www-insensitive), so these need only be close.
 DEFAULT_SITE_URL = {
-    "property": "https://www.propertytaxpartners.co.uk",
+    "property": "https://propertytaxpartners.co.uk",
+    "dentists": "https://www.dentalfinancepartners.co.uk",
+    "medical": "https://medicalaccounts.co.uk",
+    "solicitors": "https://accountsforlawyers.co.uk",
+    "generalist": "https://hollowaydavies.co.uk",
+    "agency": "https://agencyfounderfinance.co.uk",
 }
 
 

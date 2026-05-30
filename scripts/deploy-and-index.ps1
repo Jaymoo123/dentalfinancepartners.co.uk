@@ -196,16 +196,45 @@ try {
 # Bail if deploy failed (post-restore)
 if ($deployFailed) { exit 1 }
 
+# 5b. Register the deploy batch into monitored_pages (Google + Bing baselines) so
+#     it ships MONITORED. Registration used to be a hardcoded, opt-in script run
+#     by hand (red-team: batches shipped unmonitored); now it is driven off the
+#     same QA manifest the gate consumes.
+if ($QaBatch) {
+    Write-Step "5b/7 Registering monitored_pages for batch '$QaBatch'"
+    if ($DryRun) {
+        Write-Warn "Would: python scripts/register_monitored_batch.py --batch $QaBatch --commit"
+    } else {
+        Push-Location $accountingRoot
+        try {
+            & python scripts/register_monitored_batch.py --batch $QaBatch --commit
+            $regExit = $LASTEXITCODE
+        } finally { Pop-Location }
+        if ($regExit -ne 0) { Write-Warn "monitored_pages registration returned exit $regExit (deploy already live - investigate)" }
+        else { Write-OK "Registered batch '$QaBatch' for the 90d regression watch (Google + Bing baselines)" }
+    }
+}
+
 # 6. IndexNow drain
 Write-Step "6/6 IndexNow drain"
 if ($SkipIndexNow) {
     Write-Warn "Skipped (-SkipIndexNow)"
 } else {
     if ($DryRun) {
+        if ($QaBatch) { Write-Warn "Would: submit batch '$QaBatch' URLs to IndexNow (register_monitored_batch.py --print-urls)" }
         Write-Warn "Would: python -m optimisation_engine.indexing.submit_indexnow --site $Site --from-queue"
     } else {
         Push-Location $accountingRoot
         try {
+            if ($QaBatch) {
+                # Submit EXACTLY the URLs this batch changed. The rewrite path does
+                # not enqueue them, so --from-queue alone would miss them.
+                $batchUrls = @(& python scripts/register_monitored_batch.py --batch $QaBatch --print-urls)
+                if ($batchUrls.Count -gt 0) {
+                    & python -m optimisation_engine.indexing.submit_indexnow --site $Site @batchUrls
+                    Write-OK "Submitted $($batchUrls.Count) batch URL(s) to IndexNow"
+                }
+            }
             & python -m optimisation_engine.indexing.submit_indexnow --site $Site --from-queue
             $indexExit = $LASTEXITCODE
         } finally {

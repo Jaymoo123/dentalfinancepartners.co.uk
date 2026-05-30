@@ -43,6 +43,7 @@ if ROOT not in sys.path:
 
 from optimisation_engine.analysis.detectors import run_all_detectors  # noqa: E402
 from optimisation_engine.config import PRIORITY_ORDER, get_sites  # noqa: E402
+from optimisation_engine.snapshot import run_snapshot  # noqa: E402
 from optimisation_engine.cost_tracker import CostTracker  # noqa: E402
 from optimisation_engine.ingestion.ingest_dataforseo import (  # noqa: E402
     SITE_PLANS as DFS_SITE_PLANS,
@@ -51,6 +52,10 @@ from optimisation_engine.ingestion.ingest_dataforseo import (  # noqa: E402
 )
 from optimisation_engine.ingestion.ingest_ga4 import run as run_ga4_ingestion  # noqa: E402
 from optimisation_engine.ingestion.ingest_gsc_queries import run as run_gsc_ingestion  # noqa: E402
+from optimisation_engine.ingestion.ingest_gsc_pages import run as run_gsc_pages_ingestion  # noqa: E402
+from optimisation_engine.clients.bing_query_client import (  # noqa: E402
+    BingQueryFetcher, DEFAULT_SITE_URL as BING_SITE_URL,
+)
 
 # ---------------------------------------------------------------------------
 # Weekly DataForSEO rotation
@@ -92,6 +97,35 @@ def step_ingest_gsc(sites: list[str]) -> dict[str, int]:
     print("[Step 1] GSC query-level ingestion (free)")
     print("=" * 80)
     return run_gsc_ingestion(site_keys=sites, days=28)
+
+
+def step_ingest_bing(sites: list[str]) -> dict[str, int]:
+    """Pull per-page Bing Webmaster query stats into bing_query_data. Legacy
+    pages routinely rank page-1 on Bing while page 4-8 on Google, so this is the
+    primary regression signal for many pages and feeds the monitored-page Bing
+    arm + the Track 2 worklist ROI. Resilient per-site; skips sites with no BWT
+    mapping. Free."""
+    print("\n" + "=" * 80)
+    print("[Step 1.3] Bing Webmaster query ingestion (free)")
+    print("=" * 80)
+    out: dict[str, int] = {}
+    for s in sites:
+        if s not in BING_SITE_URL:
+            print(f"  Skipping {s}: no BWT site mapping")
+            continue
+        try:
+            out[s] = BingQueryFetcher(s).fetch_and_store()
+        except Exception as exc:
+            print(f"  [bing] {s} failed: {type(exc).__name__}: {exc}")
+            out[s] = -1
+    return out
+
+
+def step_ingest_gsc_pages(sites: list[str]) -> dict[str, int]:
+    print("\n" + "=" * 80)
+    print("[Step 1.2] GSC page-level ingestion (unthresholded — gsc_page_performance)")
+    print("=" * 80)
+    return run_gsc_pages_ingestion(site_keys=sites, days=35)
 
 
 def step_ingest_ga4(sites: list[str]) -> dict[str, dict]:
@@ -276,6 +310,9 @@ def step_review_outcomes() -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site", help="Restrict to one site_key (otherwise all active)")
+    parser.add_argument("--skip-snapshot", action="store_true")
+    parser.add_argument("--skip-gsc-pages", action="store_true")
+    parser.add_argument("--skip-bing", action="store_true")
     parser.add_argument("--skip-ga4", action="store_true")
     parser.add_argument("--skip-dataforseo", action="store_true")
     parser.add_argument("--dataforseo-dry-run", action="store_true", help="Run DFS planning but do not spend")
@@ -296,6 +333,20 @@ def main() -> None:
 
     # Step 1: GSC (always free, always run)
     report["gsc"] = step_ingest_gsc(sites)
+
+    # Step 1.3: Bing Webmaster (free) — primary regression signal for legacy pages
+    if args.skip_bing:
+        print("\n[Step 1.3] Bing ingestion skipped via --skip-bing")
+        report["bing"] = "skipped"
+    else:
+        report["bing"] = step_ingest_bing(sites)
+
+    # Step 1.2: GSC page-level (unthresholded) — must run before snapshot
+    if args.skip_gsc_pages:
+        print("\n[Step 1.2] GSC page ingestion skipped via --skip-gsc-pages")
+        report["gsc_pages"] = "skipped"
+    else:
+        report["gsc_pages"] = step_ingest_gsc_pages(sites)
 
     # Step 1.5: GA4 (free, lagged 2d, only for GA4-enabled sites)
     if args.skip_ga4:
@@ -332,6 +383,24 @@ def main() -> None:
         report["review"] = "skipped"
     else:
         report["review"] = step_review_outcomes()
+
+    # Step 6: Daily snapshot (runs after ingestion so it reads freshest data)
+    if args.skip_snapshot:
+        print("\n[Step 6] Snapshot skipped via --skip-snapshot")
+        report["snapshot"] = "skipped"
+    else:
+        print("\n" + "=" * 80)
+        print("[Step 6] Site health snapshot -> Google Sheets")
+        print("=" * 80)
+        snapshot_urls: dict[str, str] = {}
+        for site in sites:
+            try:
+                url = run_snapshot(site)
+                snapshot_urls[site] = url
+            except Exception as exc:
+                print(f"  [snapshot] {site} failed: {type(exc).__name__}: {exc}")
+                snapshot_urls[site] = f"error: {exc}"
+        report["snapshot"] = snapshot_urls
 
     print("\n" + "=" * 80)
     print("Weekly run complete")
