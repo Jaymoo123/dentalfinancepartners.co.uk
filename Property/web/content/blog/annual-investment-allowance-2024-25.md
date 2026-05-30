@@ -20,7 +20,7 @@ faqs:
 - question: Does the AIA apply to furnished holiday lettings after April 2025?
   answer: No. The furnished holiday lettings regime was abolished from 6 April 2025. From that date, FHL properties are treated as standard residential lettings. This means the AIA is no longer available for FHL properties. If you have qualifying expenditure before April 2025, you should claim the AIA in your 2024/25 tax return. After that, you may need to rely on other deductions.
 - question: Can I claim the AIA on a car used for my property business?
-  answer: No. Cars are specifically excluded from the AIA. If you use a car for your property business, you must claim capital allowances through the special rate pool (6% per year) or the main rate pool (18% per year), depending on the car's CO2 emissions. Vans and lorries do qualify for the AIA, provided they are used for business purposes.
+  answer: No. Cars are specifically excluded from the AIA. If you use a car for your property business, you must claim capital allowances through the special rate pool (6% per year) or the main rate pool (14% per year from April 2026; it was 18% before then), depending on the car's CO2 emissions. Vans and lorries do qualify for the AIA, provided they are used for business purposes.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
@@ -64,7 +64,7 @@ imageCredit:
 <p>It is important to note that the AIA does not apply to buildings themselves. You cannot claim the AIA on the cost of buying or constructing a property. Only the integral fixtures and fittings within the building qualify.</p>
 
 <h2>How Much Can You Claim?</h2>
-<p>For the 2024/25 tax year, the AIA threshold is £1 million. This means you can claim 100% relief on qualifying expenditure up to £1 million. If your qualifying expenditure exceeds £1 million, the excess is claimed through writing down allowances at a lower rate (typically 6% or 18% per year, depending on the asset pool).</p>
+<p>For the 2024/25 tax year, the AIA threshold is £1 million. This means you can claim 100% relief on qualifying expenditure up to £1 million. If your qualifying expenditure exceeds £1 million, the excess is claimed through writing down allowances at a lower rate (typically 6% or 14% per year from April 2026 (the main pool rate was 18% before then), depending on the asset pool).</p>
 <p>The £1 million threshold applies per business, not per property. If you have multiple properties, you aggregate all qualifying expenditure across your property business. If you operate multiple separate businesses, each business has its own £1 million AIA limit.</p>
 
 <h2>How to Claim the AIA</h2>

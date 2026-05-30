@@ -190,7 +190,7 @@ faqs:
 <tr><td>Tax on rental profit</td><td>20% / 40% / 45% income tax (22% / 42% / 47% from 6 April 2027)</td><td>19% small profits / 25% main rate corporation tax (marginal relief between £50k and £250k)</td></tr>
 <tr><td>Mortgage interest treatment</td><td>Restricted to a 20% tax credit (Section 24)</td><td>Fully deductible before corporation tax</td></tr>
 <tr><td>Mortgage rates available</td><td>Standard BTL rates</td><td>Limited company BTL rates, typically materially higher</td></tr>
-<tr><td>Profit extraction</td><td>Already personal income, no second step</td><td>Salary, dividends (8.75% basic / 33.75% higher / 39.35% additional), or director's loan repayment if a balance exists</td></tr>
+<tr><td>Profit extraction</td><td>Already personal income, no second step</td><td>Salary, dividends (10.75% basic / 35.75% higher / 39.35% additional), or director's loan repayment if a balance exists</td></tr>
 <tr><td>Transferring existing property in</td><td>Not applicable</td><td>Triggers SDLT (including the 5% surcharge) and CGT at market value; incorporation relief under TCGA 1992 s.162 may defer CGT where conditions are met</td></tr>
 <tr><td>Capital gains on sale</td><td>18% / 24% individual CGT rates, £3,000 annual exemption</td><td>Gain taxed inside the company at corporation tax rates, then dividend tax on extraction</td></tr>
 <tr><td>Inheritance tax planning</td><td>Property forms part of the personal estate</td><td>Shares can be transferred to the next generation; family investment company structures possible</td></tr>

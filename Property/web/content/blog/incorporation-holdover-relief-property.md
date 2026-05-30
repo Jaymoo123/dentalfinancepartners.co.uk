@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Holdover Relief Property: UK Incorporation Guide 2026"
-metaDescription: "Holdover relief defers CGT when transferring property to a company — but strict conditions apply. Eligibility rules and how to claim."
+metaDescription: "Holdover relief defers CGT when transferring property to a company, but strict conditions apply. Eligibility rules and how to claim."
 altText: "UK landlord reviewing property incorporation documents with holdover relief calculations"
 image: ""
 h1: "Holdover Relief Property: How It Works for UK Property Incorporation"
@@ -18,7 +18,7 @@ faqs:
   - question: "What's the difference between incorporation relief and holdover relief for property?"
     answer: "Incorporation relief (Section 162) specifically applies when transferring a business to a company in exchange for shares, allowing CGT deferral. Standard holdover relief (Section 165) applies to gifts of business assets between individuals or to companies under specific conditions. For property portfolios, incorporation relief is more commonly available, but both have strict qualifying conditions that must be met."
   - question: "Do I have to pay CGT immediately when incorporating my property portfolio?"
-    answer: "Not necessarily. If your transfer qualifies for incorporation relief, CGT can be deferred with the gain being held over to the company. However, this isn't automatic – specific conditions about business transfers must be met. The company inherits a lower base cost, creating potential future tax implications. Professional advice is crucial to understand which reliefs apply and their long-term consequences."
+    answer: "Not necessarily. If your transfer qualifies for incorporation relief, CGT can be deferred with the gain being held over to the company. However, this isn't automatic, specific conditions about business transfers must be met. The company inherits a lower base cost, creating potential future tax implications. Professional advice is crucial to understand which reliefs apply and their long-term consequences."
   - question: "What happens to the deferred CGT if I use holdover relief on property incorporation?"
     answer: "The deferred gain reduces the company's base cost in the properties and affects your base cost in the company shares. When the company eventually sells the properties, it pays corporation tax on a higher gain. If you sell your shares, your CGT calculation uses the reduced base cost. This creates future tax liabilities that need careful planning, especially for exit strategies."
 ---
@@ -60,7 +60,7 @@ faqs:
 <h3>Timing and Elections</h3>
 <p>Critical deadlines apply to holdover relief property claims:</p>
 <ul>
-<li>Incorporation relief is automatic if conditions are met</li>
+<li>For transfers on or after 6 April 2026 incorporation relief must be claimed (by the first anniversary of the 31 January following the tax year of transfer, around 13 months); it is no longer automatic, and the old s.162A election to disapply has been repealed</li>
 <li>Elections for other reliefs must be made within specified time limits</li>
 <li>Professional advice should be taken before the transfer</li>
 </ul>
@@ -92,7 +92,7 @@ faqs:
 
 <p>Holdover relief property transfers involve multiple areas of tax law, company law, and ongoing compliance requirements. The interaction between different reliefs, timing issues, and future planning considerations make professional advice essential.</p>
 <p>A specialist property accountant can model different incorporation scenarios, ensuring you understand both immediate and long-term implications. They can also help structure the transfer to maximise available reliefs while maintaining compliance with all requirements.</p>
-<p>The cost of getting this wrong – through missed deadlines, invalid elections, or unexpected tax charges – far exceeds the cost of proper professional guidance from the outset.</p>
+<p>The cost of getting this wrong, through missed deadlines, invalid elections, or unexpected tax charges, far exceeds the cost of proper professional guidance from the outset.</p>
 
 <h2>Related Reading</h2>
 <ul>

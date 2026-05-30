@@ -262,7 +262,7 @@ faqs:
 <li><strong>Section 24 mortgage interest restriction.</strong> Section 24 applies to residential landlords (basic-rate-restriction on finance costs) but not commercial. Over a long ownership period, the section 24 differential typically dwarfs the CGT-side differences for highly-geared individual residential portfolios.</li>
 <li><strong>Capital allowances during ownership.</strong> Commercial allowances reduce income tax annually; residential rental does not have building-level allowances. The s.41 clawback on disposal is real but typically smaller than the cumulative income-tax saving.</li>
 <li><strong>SIPP/SSAS commercial pension ownership.</strong> Commercial property in a registered pension scheme is exempt from CT on disposal; residential is broadly prohibited.</li>
-<li><strong>BPR availability for IHT.</strong> Genuinely-trading commercial may qualify for Business Property Relief on death; passive rental does not under the Pawson v HMRC line. The post-6 April 2026 £1m combined BPR/APR cap also affects the IHT-side calculation.</li>
+<li><strong>BPR availability for IHT.</strong> Genuinely-trading commercial may qualify for Business Property Relief on death; passive rental does not under the Pawson v HMRC line. The post-6 April 2026 £2.5m combined BPR/APR cap also affects the IHT-side calculation.</li>
 <li><strong>Furnished Holiday Lettings, pre-abolition.</strong> FHL was historically the residential category that crossed into commercial-style treatment (BADR + capital allowances + no s.24 restriction). The regime ended 6 April 2025; disposals after that date follow standard residential rules.</li>
 </ul>
 

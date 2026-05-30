@@ -99,7 +99,7 @@ faqs:
 <p>Landlords often make these errors when incorporating:</p>
 <ul>
 <li><strong>Ignoring SDLT:</strong> The 5% surcharge on additional properties makes SDLT a major cost. Many landlords underestimate this.</li>
-<li><strong>Assuming Section 162 relief is automatic:</strong> HMRC scrutinises claims. You need to demonstrate you are running a business, not just holding investments.</li>
+<li><strong>Assuming Section 162 relief is automatic:</strong> HMRC scrutinises claims. You need to demonstrate you are running a business, not just holding investments. From 6 April 2026 the relief is no longer automatic at all: it must be claimed by the first anniversary of the 31 January following the tax year of transfer (around 13 months), so a missed claim is fatal.</li>
 <li><strong>Not modelling dividend tax:</strong> Extracting profits from the company via dividends incurs income tax at 10.75% (basic), 35.75% (higher), or 39.35% (additional) on dividends above the £500 dividend allowance. This reduces the net benefit of incorporation.</li>
 <li><strong>Forgetting about mortgage transfer costs:</strong> Early repayment charges and arrangement fees can add thousands to the cost.</li>
 <li><strong>Going it alone:</strong> Incorporation is complex. A specialist property accountant can save you significant money and stress.</li>

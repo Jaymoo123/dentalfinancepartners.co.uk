@@ -129,7 +129,7 @@ faqs:
 
 <h2>Section 162 incorporation relief: the portfolio-landlord route</h2>
 
-<p><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/162">Section 162 TCGA 1992</a> incorporation relief is the most commonly applicable deferral route for portfolio landlords. The mechanic transfers the property business (not just a single property) to a company in exchange for shares, and rolls the CGT gain into the shares' base cost. The relief is automatic where the conditions are met; no election is required.</p>
+<p><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/162">Section 162 TCGA 1992</a> incorporation relief is the most commonly applicable deferral route for portfolio landlords. The mechanic transfers the property business (not just a single property) to a company in exchange for shares, and rolls the CGT gain into the shares' base cost. For incorporations on or after 6 April 2026 the relief must be claimed (it is no longer automatic); the claim has to be made by the first anniversary of the 31 January following the tax year of transfer, around 13 months. The old s.162A election to disapply the relief has been repealed, so where you do not want the relief you simply do not claim it.</p>
 
 <h3>The going-concern test</h3>
 

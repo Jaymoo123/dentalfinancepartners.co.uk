@@ -34,7 +34,7 @@ faqs:
 <li>The business must be transferred as a going concern</li>
 <li>The consideration must be wholly or mainly in shares</li>
 </ul>
-<p>The relief is automatic if these conditions are satisfied, but for property landlords, the first condition typically presents an insurmountable hurdle.</p>
+<p>For transfers on or after 6 April 2026 the relief must be claimed (it is no longer automatic; the claim has to be made by the first anniversary of the 31 January following the tax year of transfer, around 13 months). The separate s.162A election to disapply the relief has been repealed. For property landlords, however, the first condition typically presents an insurmountable hurdle in any event.</p>
 
 <h2>Why Property Landlords Usually Don't Qualify for Incorporation Relief</h2>
 <p>HMRC's position is clear: ordinary buy-to-let activity is considered investment rather than trading. The key distinction lies in the level of activity and services provided to tenants.</p>

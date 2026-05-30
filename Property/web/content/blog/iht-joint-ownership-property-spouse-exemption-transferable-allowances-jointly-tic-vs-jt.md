@@ -99,7 +99,7 @@ editorialNote: "Structural-choice page on IHT treatment of jointly owned propert
 
 <h2>The £2 million RNRB taper trap</h2>
 
-<p>The residence nil-rate band (currently £175,000 per individual, frozen at this level to April 2030) is reduced by £1 for every £2 by which the net estate at death exceeds £2 million (<a href="https://www.legislation.gov.uk/ukpga/1984/51/section/8D">IHTA 1984 s.8D</a>). The taper is the load-bearing constraint for couples with consolidated estates approaching or exceeding £2 million.</p>
+<p>The residence nil-rate band (currently £175,000 per individual, frozen at this level to 5 April 2031) is reduced by £1 for every £2 by which the net estate at death exceeds £2 million (<a href="https://www.legislation.gov.uk/ukpga/1984/51/section/8D">IHTA 1984 s.8D</a>). The taper is the load-bearing constraint for couples with consolidated estates approaching or exceeding £2 million.</p>
 
 <p>The arithmetic of the taper at the standard frozen amounts:</p>
 

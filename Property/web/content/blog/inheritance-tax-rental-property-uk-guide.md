@@ -10,11 +10,11 @@ metaDescription: "UK IHT on rental property: 40% above £325k nil-rate band, RNR
 altText: "UK property investor reviewing inheritance tax documents with calculator and rental property keys"
 image: ""
 h1: "Inheritance Tax on Rental Property Portfolios: UK Guide 2026"
-summary: "UK inheritance tax on rental property in 2026. Covers the 40% headline rate, the £325,000 nil-rate band (frozen to April 2030), the £175,000 residence nil-rate band (with tapering above £2m), why ordinary BTL does NOT qualify for Business Property Relief, the impact of pensions entering the IHT net from 6 April 2027, the seven-year gifting rule, trust structures, joint tenancy versus tenants-in-common decisions, and the Family Investment Company alternative."
+summary: "UK inheritance tax on rental property in 2026. Covers the 40% headline rate, the £325,000 nil-rate band (frozen to 5 April 2031), the £175,000 residence nil-rate band (with tapering above £2m), why ordinary BTL does NOT qualify for Business Property Relief, the impact of pensions entering the IHT net from 6 April 2027, the seven-year gifting rule, trust structures, joint tenancy versus tenants-in-common decisions, and the Family Investment Company alternative."
 schema: ""
 faqs:
   - question: "Does inheritance tax apply to rental properties?"
-    answer: "Yes. Rental properties form part of your estate at open market value at the date of death. IHT applies at 40% on the value above your available nil-rate bands. The £325,000 nil-rate band is frozen until April 2030 (extended at Autumn Budget 2024 from the previous April 2028 freeze). The £175,000 residence nil-rate band applies only to your main home passing to direct descendants, not to BTL stock. Mortgages and other liabilities on the rental properties are deducted from the estate value."
+    answer: "Yes. Rental properties form part of your estate at open market value at the date of death. IHT applies at 40% on the value above your available nil-rate bands. The £325,000 nil-rate band is frozen until 5 April 2031 (extended a further year at Autumn Budget 2025 by Finance Act 2026 s.72; an earlier Autumn Budget 2024 extension had taken it from the previous April 2028 freeze to April 2030). The £175,000 residence nil-rate band applies only to your main home passing to direct descendants, not to BTL stock. Mortgages and other liabilities on the rental properties are deducted from the estate value."
   - question: "Can rental property qualify for Business Property Relief?"
     answer: "Almost never for ordinary buy-to-let. BPR requires the asset to be used in a trading business. Rental property is treated by HMRC and the courts as investment activity, even when actively managed. The leading case is HMRC v Pawson (2013), where intensive holiday let management still failed the BPR test. Exceptions where BPR may apply: serviced accommodation with significant additional services (cleaning, breakfast, concierge, comparable to a hotel) and some property development trades. Standard residential lets, FHL stock (the regime itself was abolished from 6 April 2025), and student HMOs all fail."
   - question: "How is rental property valued for IHT purposes?"
@@ -50,7 +50,7 @@ faqs:
 <p>UK inheritance tax applies at 40% on the value of your estate above your available nil-rate bands. Key numbers:</p>
 
 <ul>
-<li><strong>Nil-rate band:</strong> £325,000 per person, frozen until April 2030 (the freeze was extended from April 2028 at Autumn Budget 2024).</li>
+<li><strong>Nil-rate band:</strong> £325,000 per person, frozen until 5 April 2031 (the freeze was extended a further year by Finance Act 2026 s.72, announced at Autumn Budget 2025; an earlier extension at Autumn Budget 2024 had taken it to April 2030).</li>
 <li><strong>Residence nil-rate band:</strong> £175,000 per person, applies only where your main residence passes to direct descendants (children, grandchildren, step- and adopted). Does NOT apply to BTL stock.</li>
 <li><strong>RNRB tapering:</strong> Reduced by £1 for every £2 of estate value above £2 million, so estates over £2.35 million lose RNRB entirely.</li>
 <li><strong>Spouse / civil partner transferable bands:</strong> Unused NRB and RNRB on first death can transfer to the surviving spouse, so a couple can have up to £1 million tax-free (£650,000 NRB plus £350,000 RNRB) where the second-death estate includes a qualifying main residence.</li>
@@ -237,7 +237,7 @@ faqs:
 <li><a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">Inheriting a UK Rental Property: An Executor's Step-by-Step Guide</a>, the operational sibling for executors administering a let-property estate.</li>
 <li><a href="/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios">RNRB and the £2m Taper for Landlord Estates</a>, the full taper mechanic with three estate-tier worked examples.</li>
 <li><a href="/blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning">Pension IHT from April 2027: What It Means for Landlord Estate Planning</a>, the depth on the April 2027 pension reform.</li>
-<li><a href="/blog/property-types-and-specialist-tax/agricultural-property-relief-mixed-estate-1m-cap">Agricultural Property Relief and the £1m Cap: Planning for Mixed Estates</a>, the mixed-estate APR and BPR cap analysis from April 2026.</li>
+<li><a href="/blog/property-types-and-specialist-tax/agricultural-property-relief-mixed-estate-1m-cap">Agricultural Property Relief and the £2.5m Cap: Planning for Mixed Estates</a>, the mixed-estate APR and BPR cap analysis from April 2026.</li>
 </ul>
 
 <p>If your portfolio is approaching or above £750,000 in residential property and you do not yet have a documented IHT plan, send us a portfolio summary using the form below. Initial calls are free and we will identify the two or three highest-impact opportunities for your specific circumstances.</p>

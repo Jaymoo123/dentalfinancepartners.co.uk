@@ -16,7 +16,7 @@ faqs:
 - question: Can I claim capital allowances on a second hand van if I am a sole trader landlord?
   answer: Yes, sole trader landlords can claim capital allowances on a second hand van, provided the van is used wholly and exclusively for the property business. If you use the van for both business and personal journeys, you must apportion the claim based on business mileage. Keep a mileage log to support your claim. The Annual Investment Allowance (AIA) allows you to claim 100% of the cost in the year of purchase, up to the £1 million limit.
 - question: What is the difference between claiming capital allowances on a van versus a car?
-  answer: Vans are treated more favourably than cars for capital allowances. Vans qualify for the full AIA and an 18% writing-down allowance without CO2 restrictions. Cars are subject to a lower WDA (6% or 18% depending on CO2 emissions) and cannot use AIA if used for business purposes. If you buy a dual-purpose vehicle, HMRC may classify it as a car, limiting your claim. Always check the vehicle's classification.
+  answer: Vans are treated more favourably than cars for capital allowances. Vans qualify for the full AIA and a 14% writing-down allowance without CO2 restrictions (the main pool rate from April 2026; it was 18% before then). Cars are subject to a lower WDA (6% or 14% depending on CO2 emissions) and cannot use AIA if used for business purposes. If you buy a dual-purpose vehicle, HMRC may classify it as a car, limiting your claim. Always check the vehicle's classification.
 - question: Do I need to keep a mileage log to claim capital allowances on a second hand van?
   answer: Yes, HMRC expects you to keep a mileage log to support the business use percentage of your van. This is especially important if you use the van for both business and personal journeys. The log should record the date, purpose, and mileage of each business journey. Without this evidence, HMRC may reduce or reject your capital allowances claim. A simple spreadsheet or app is sufficient.
 - question: Can I claim capital allowances on a second hand van if I buy it from a relative?
@@ -51,7 +51,7 @@ imageCredit:
 
 <p>If you are a sole trader landlord, you can claim AIA on a second hand van as long as the van is used for your property business. The full cost can be deducted in the year you buy it, subject to the AIA limit. This is a significant tax saving, as it reduces your taxable rental income immediately.</p>
 
-<p>For limited companies, the same AIA rules apply. However, companies must also consider the writing-down allowance (WDA) if the AIA limit is exceeded. The WDA for vans is typically 18% per year on a reducing balance basis.</p>
+<p>For limited companies, the same AIA rules apply. However, companies must also consider the writing-down allowance (WDA) if the AIA limit is exceeded. The WDA for vans is typically 14% per year on a reducing balance basis (the main pool rate from April 2026; it was 18% before then).</p>
 
 <h2>What About Cars? The Difference Matters</h2>
 <p>Vans are treated more favourably than cars for capital allowances. Cars are subject to stricter rules, including CO2-based restrictions on the writing-down allowance. Vans, by contrast, are generally treated as plant and machinery without these restrictions, provided they are used for business purposes.</p>
@@ -76,9 +76,9 @@ imageCredit:
 <p>For a full breakdown of what you can and cannot claim, see our <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">complete list of landlord tax deductions</a>.</p>
 
 <h2>Second Hand Vans and the Writing-Down Allowance</h2>
-<p>If you do not claim AIA, or if the cost exceeds the AIA limit, you can claim the writing-down allowance (WDA). For vans, the WDA is 18% per year on the reducing balance. This means you claim 18% of the remaining value each year until the asset is fully written down.</p>
+<p>If you do not claim AIA, or if the cost exceeds the AIA limit, you can claim the writing-down allowance (WDA). For vans, the WDA is 14% per year on the reducing balance (the main pool rate from April 2026; it was 18% before then). This means you claim 14% of the remaining value each year until the asset is fully written down.</p>
 
-<p>For example, if you buy a second hand van for £15,000 and do not use AIA, you claim £2,700 in year one (18% of £15,000). In year two, you claim 18% of the remaining £12,300, which is £2,214, and so on.</p>
+<p>For example, if you buy a second hand van for £15,000 and do not use AIA, you claim £2,100 in year one (14% of £15,000). In year two, you claim 14% of the remaining £12,900, which is £1,806, and so on.</p>
 
 <p>This is less generous than AIA, so most landlords prefer to use AIA if they have sufficient profits to offset.</p>
 
@@ -88,7 +88,7 @@ imageCredit:
 <p>However, you must ensure the van is not a "connected party" purchase. If you buy the van from a relative or a company you control, HMRC may treat the transaction as a disposal at market value. This could affect the amount you can claim. Always get a professional valuation in such cases.</p>
 
 <h2>Vans vs. Cars: Which Is Better for Landlords?</h2>
-<p>For most landlords, a van is a better choice than a car for claiming capital allowances. Vans qualify for the full AIA and WDA without CO2 restrictions. Cars are subject to a lower WDA (6% or 18% depending on CO2 emissions) and cannot use AIA if the car is used for business purposes.</p>
+<p>For most landlords, a van is a better choice than a car for claiming capital allowances. Vans qualify for the full AIA and WDA without CO2 restrictions. Cars are subject to a lower WDA (6% or 14% depending on CO2 emissions) and cannot use AIA if the car is used for business purposes.</p>
 
 <p>If you need a vehicle for your property business, a van is often the most tax-efficient option. However, consider your actual needs. A van is not suitable for all landlords, especially if you do not carry tools or materials regularly.</p>
 

@@ -65,7 +65,7 @@ faqs:
 
 <p>Most landlords will use the Annual Investment Allowance (AIA), which gives 100% tax relief in the year you make the purchase. The current AIA limit is £1 million per year, which covers virtually all landlord equipment purchases.</p>
 
-<p>If your qualifying expenditure exceeds the AIA limit (unlikely for most landlords), the excess goes into a pool where you can claim Writing Down Allowances at 18% per year on a reducing balance basis.</p>
+<p>If your qualifying expenditure exceeds the AIA limit (unlikely for most landlords), the excess goes into a pool where you can claim Writing Down Allowances at 14% per year on a reducing balance basis (the main pool rate from April 2026; it was 18% before then).</p>
 
 <p>For most UK landlords, the AIA provides the best tax relief because you get immediate 100% relief rather than spreading it over multiple years.</p>
 

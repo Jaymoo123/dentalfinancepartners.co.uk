@@ -153,7 +153,7 @@ reviewedAt: "2026-05-28"
 <ul>
 <li><strong>Corporation tax rates:</strong> 19% to 25% depending on profits and the marginal-relief band, against personal rates of 20% / 40% / 45% on rental profit (post the Section 24 mortgage-interest restriction on the personal side). The CT rate is often more efficient on retained profits.</li>
 <li><strong>Section 24 absorption:</strong> the restriction on mortgage-interest deductibility for personal-side BTL does NOT apply inside the LtdCo. The LtdCo deducts interest as an ordinary expense.</li>
-<li><strong>Dividend extraction:</strong> profits taken out of the LtdCo as dividends attract income tax at 8.75% / 33.75% / 39.35% (basic / higher / additional rates), on top of the 19% / 25% CT layer.</li>
+<li><strong>Dividend extraction:</strong> profits taken out of the LtdCo as dividends attract income tax at 10.75% / 35.75% / 39.35% (basic / higher / additional rates), on top of the 19% / 25% CT layer.</li>
 <li><strong>ATED:</strong> residential properties valued above £500,000 held inside a LtdCo can attract Annual Tax on Enveloped Dwellings unless a relief is claimed (typically the let-out-to-third-party relief).</li>
 <li><strong>SDLT on incorporation transfer:</strong> properties transferred from individual to LtdCo attract SDLT at market value, with the additional-property surcharge plus residential rates. Material on multi-property portfolios.</li>
 <li><strong>CGT on incorporation transfer:</strong> the disposal from individual to LtdCo is a market-value disposal for CGT. Incorporation relief under TCGA 1992 section 162 can defer the gain in narrow circumstances (where the property business meets the trade test, rare for passive BTL).</li>

@@ -73,7 +73,7 @@ imageCredit:
 <h2>Annual Investment Allowance (AIA)</h2>
 <p>The Annual Investment Allowance (AIA) gives 100% tax relief on qualifying plant and machinery costs up to £1 million per year <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. This means you can deduct the full cost of qualifying assets in the year you buy them, rather than spreading the relief over several years.</p>
 <p>The AIA is available to most businesses, including property businesses that let commercial property. It applies to most plant and machinery, but not to cars or assets you owned before the business started.</p>
-<p>If you spend more than £1 million on qualifying plant and machinery in a single year, the excess goes into the main pool or special rate pool, where you claim writing-down allowances at 18% or 6% per year respectively <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>If you spend more than £1 million on qualifying plant and machinery in a single year, the excess goes into the main pool or special rate pool, where you claim writing-down allowances at 14% or 6% per year respectively (the main pool rate fell from 18% to 14% from April 2026; the special rate pool stays at 6%) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 <p>The £1 million AIA limit is temporary but has been extended several times. It is currently set at £1 million until at least 31 March 2026. Check current limits with HMRC or a specialist accountant.</p>
 
 <h2>Full Expensing and First-Year Allowances</h2>
@@ -86,10 +86,10 @@ imageCredit:
 <p>If you cannot claim AIA or full expensing, you claim writing-down allowances (WDAs) on the value of your plant and machinery pool. The pool is a running total of all qualifying assets you own.</p>
 <p>There are two main pools <sup><a href="#ref-2" id="cite-2">[2]</a></sup>:</p>
 <ul>
-<li><strong>Main pool (18% per year):</strong> General plant and machinery, including computers, office furniture, and most equipment.</li>
+<li><strong>Main pool (14% per year from April 2026; was 18%):</strong> General plant and machinery, including computers, office furniture, and most equipment.</li>
 <li><strong>Special rate pool (6% per year):</strong> Integral features (electrical systems, water systems, heating), long-life assets (assets expected to last 25+ years), and thermal insulation.</li>
 </ul>
-<p>WDAs are calculated on the reducing balance of the pool. So if you have £10,000 in the main pool, you claim £1,800 in year one, leaving a pool value of £8,200. In year two, you claim 18% of £8,200 (£1,476), and so on.</p>
+<p>WDAs are calculated on the reducing balance of the pool. So if you have £10,000 in the main pool, you claim £1,400 in year one, leaving a pool value of £8,600. In year two, you claim 14% of £8,600 (£1,204), and so on.</p>
 <p>You can only claim WDAs if you have enough taxable profits to cover them. If your profits are lower than the allowance, you can carry the unused allowance forward to future years.</p>
 
 <h2>How to Claim Capital Allowances on Property</h2>

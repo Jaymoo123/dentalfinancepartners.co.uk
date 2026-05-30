@@ -69,7 +69,7 @@ faqs:
 
 <h3>Writing Down Allowances</h3>
 
-<p>If your plant and machinery costs exceed the AIA limit, or you choose not to claim AIA, you can claim writing down allowances at 18% per year on the reducing balance.</p>
+<p>If your plant and machinery costs exceed the AIA limit, or you choose not to claim AIA, you can claim writing down allowances at 14% per year on the reducing balance (the main pool rate from April 2026; it was 18% before then, and accounting periods that straddle the change use a blended rate).</p>
 
 <h2>Structures and Buildings Allowance (SBA)</h2>
 
@@ -123,7 +123,7 @@ faqs:
 <p>You must maintain separate pools for different types of assets:</p>
 
 <ul>
-<li><strong>Main pool</strong> - standard plant and machinery (18% writing down allowance)</li>
+<li><strong>Main pool</strong> - standard plant and machinery (14% writing down allowance from April 2026; was 18%)</li>
 <li><strong>Special rate pool</strong> - integral features like heating systems (6% writing down allowance)</li>
 <li><strong>AIA pool</strong> - items where you claim 100% first-year relief</li>
 </ul>
