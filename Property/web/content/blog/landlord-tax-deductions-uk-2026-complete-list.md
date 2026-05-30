@@ -66,7 +66,7 @@ faqs:
 <li><strong>Bad debts and legal:</strong> unpaid rent written off, debt collection, possession and eviction costs</li>
 </ul>
 
-<p><strong>Not deductible as a revenue expense:</strong> capital improvements, personal use, your own labour, mortgage capital repayments, fines and penalties, and the costs of buying or selling the property. Several of these instead feed your Capital Gains Tax base cost. See the dedicated section below.</p>
+<p><strong>Not deductible as a revenue expense:</strong> capital improvements, personal use, your own labour, mortgage capital repayments, fines and penalties, and the costs of buying or selling the property. Several of these instead feed your Capital Gains Tax base cost. See the dedicated section below, and for the repair-versus-improvement borderline use our <a href="/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk">capital vs revenue expenditure decision guide</a>.</p>
 
 <h3>Landlord Expenses List: At-a-Glance Table</h3>
 <p>For a quick, scannable reference, here is a table of common allowable landlord expenses for 2026/27.</p>

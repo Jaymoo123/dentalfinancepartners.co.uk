@@ -1,155 +1,198 @@
 ---
-title: "Capital vs Revenue Expenditure for UK Landlords: How to Tell the Difference"
+title: "Capital vs Revenue Expenditure for UK Landlords: The Repair vs Improvement Decision Guide"
 slug: "capital-vs-revenue-expenditure-landlord-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk"
 date: "2026-04-10"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Capital vs Revenue: Landlord Tax Examples 2026"
-metaDescription: "Stop guessing which costs you can deduct. See clear capital vs revenue examples for UK landlords and cut your tax bill. Read the worked guide."
-metaTitle_prev: "Capital vs Revenue Expenditure Landlord: UK Tax Guide 2026"
-metaDescription_prev: "Learn how to classify capital vs revenue expenditure as a UK landlord. Understand HMRC rules, tax implications, and practical examples for 2026."
+metaTitle: "Capital vs Revenue Expenditure: Landlord Tax Decision Guide"
+metaDescription: "Is your landlord cost capital or revenue? Use the repair vs improvement test, the four HMRC tests and a clear decision table, with worked examples."
+metaTitle_prev: "Capital vs Revenue: Landlord Tax Examples 2026"
+metaDescription_prev: "Stop guessing which costs you can deduct. See clear capital vs revenue examples for UK landlords and cut your tax bill. Read the worked guide."
 altText: "UK property tax specialist reviewing landlord expenditure classifications on laptop with calculator and property documents"
 image: ""
-h1: "Capital vs Revenue Expenditure for UK Landlords: How to Tell the Difference"
-summary: "Understanding whether property costs are capital or revenue expenditure affects your tax bill significantly. We explain HMRC's rules with practical examples to help landlords classify expenses correctly."
+h1: "Capital vs Revenue Expenditure for UK Landlords: The Repair vs Improvement Decision Guide"
+summary: "Whether a landlord cost is capital or revenue decides where the relief lands: a same-year deduction against rental income, or an addition to your Capital Gains Tax base cost. This decision guide gives you the four HMRC tests, a classification table and worked examples so you can place each cost correctly."
 schema: ""
 faqs:
-  - question: "Can I claim tax relief on property improvements?"
-    answer: "Property improvements are typically classified as capital expenditure, which means you cannot deduct them from rental income in the year you spend the money. However, improvements do add to your property's base cost for Capital Gains Tax calculations, reducing your CGT liability when you eventually sell the property."
-  - question: "What's the difference between a repair and an improvement for tax purposes?"
-    answer: "A repair restores something to its previous working condition using similar materials and quality. An improvement enhances the property beyond its original state or uses superior materials. For example, fixing a broken boiler is a repair, while installing central heating where none existed is an improvement. Repairs are usually deductible against rental income, while improvements are capital expenditure."
+  - question: "What is the difference between capital and revenue expenditure for a UK landlord?"
+    answer: "Revenue expenditure keeps a property in its existing condition. It is deducted from rental income in the same tax year, reducing your taxable profit. Capital expenditure acquires, improves or enhances the property beyond its original state. It cannot be deducted from rental income; instead it is added to the property's base cost and reduces your Capital Gains Tax when you eventually sell. The wholly-and-exclusively revenue deduction test comes from ITTOIA 2005 section 34, applied to property businesses by section 272."
+  - question: "How does HMRC tell capital and revenue expenditure apart?"
+    answer: "HMRC applies four practical tests, set out in its Property Income Manual at PIM2030: like-for-like (replacing something with a broadly similar item is a repair), entirety (looking at the asset as a whole rather than a part of it), restoration versus enhancement (restoring is a repair, bettering is an improvement), and character of the asset (a change in the nature or function of the asset is capital). A modern-equivalent replacement, for example double glazing replacing single glazing, is still treated as a repair if the function and character are broadly the same."
+  - question: "Is expenditure on a rental property capital or revenue?"
+    answer: "It depends on what the spending does. Money spent maintaining the property in its current condition (fixing a boiler, replacing worn carpets like-for-like, repointing brickwork) is revenue and deductible in the year. Money spent acquiring, extending, upgrading or fundamentally improving the property (a loft conversion, installing central heating where none existed, replacing a basic kitchen with a high-specification one) is capital and added to your CGT base cost. Use the four HMRC tests and the decision table in this guide to place each cost."
+  - question: "What is the difference between a repair and an improvement for tax purposes?"
+    answer: "A repair restores an asset to its previous working condition using broadly similar materials, and is revenue (deductible against rental income). An improvement enhances the property beyond its original state, or changes the character of the asset, and is capital (added to the CGT base cost). Fixing a broken boiler is a repair. Installing central heating where none existed is an improvement. The line is decided on the facts using HMRC's four tests, not on the size of the bill alone."
   - question: "Are initial repairs to a newly purchased property deductible?"
-    answer: "Initial repairs to recently purchased properties may be treated as capital expenditure rather than deductible repairs, especially if you paid a reduced price reflecting the property's poor condition or the repairs were needed to make the property lettable. HMRC will consider the circumstances of your purchase and whether the repairs were anticipated when you bought the property."
-  - question: "How should I document expenses to support my capital vs revenue classification?"
-    answer: "Keep detailed invoices and receipts with clear work descriptions, take before and after photos, obtain professional reports explaining the work's necessity and scope, and maintain property purchase records showing the original condition. Good documentation is essential if HMRC challenges your expense classifications, particularly as Making Tax Digital increases scrutiny on landlord record-keeping."
+    answer: "Often not. Where you buy a run-down property at a price reduced to reflect its condition, and the works are needed to make it usable or lettable, those initial repairs are treated as capital, following the Law Shipping and Odeon Associated Theatres line of cases. They are added to the CGT base cost rather than deducted against rental income. By contrast, ordinary repairs to a property that was already in a fit state when bought, and which deteriorates through normal wear during your ownership, are revenue. The purchase price, surveys and the property's condition at acquisition are the key evidence."
+  - question: "Is replacing a boiler a repair or an improvement?"
+    answer: "Replacing a broken boiler with a broadly equivalent modern unit is normally a repair and deductible against rental income, even if the new boiler is more efficient, because the function and character of the asset are unchanged (the nearest-modern-equivalent principle). Installing central heating where there was none before is an improvement and capital. If you upgrade well beyond a like-for-like replacement, the excess over the cost of an equivalent unit may be treated as capital."
+  - question: "Is the Renewals Allowance still available?"
+    answer: "No. The renewals basis for furniture, furnishings and appliances in let residential property was abolished from April 2016. It was replaced by Replacement of Domestic Items Relief (RDIR) under ITTOIA 2005 section 311A. RDIR is a like-for-like relief, not a free upgrade, so any guidance still describing a renewals allowance that covers slightly better replacements is out of date."
+  - question: "Can I claim Replacement of Domestic Items Relief on a better replacement?"
+    answer: "Only up to the cost of an equivalent item. RDIR (ITTOIA 2005 section 311A) lets you deduct the cost of replacing a domestic item (white goods, furniture, carpets, curtains and similar) in a let residential dwelling, net of any proceeds from disposing of the old item. Section 311A(9) restricts the deduction where the new item is not the same or substantially the same as the old one: relief is capped at what a like-for-like replacement would have cost, and the upgrade element is not relieved. RDIR does not cover the initial provision of an item, and the former furnished holiday lettings regime that allowed capital allowances on furnishings was abolished from 6 April 2025."
+  - question: "Can landlords claim capital allowances on fixtures inside a let dwelling?"
+    answer: "Generally no. CAA 2001 section 35 denies plant and machinery allowances for plant or machinery for use in a dwelling-house within a UK or overseas property business. So the boiler, white goods and fixtures inside a let home do not attract capital allowances, the route for replacing free-standing domestic items is RDIR instead. Capital allowances can still apply in qualifying non-dwelling areas: the common parts of a block (communal boiler, lift, lighting) and integral features in commercial or mixed-use space."
+  - question: "What is the writing-down allowance rate for landlords now?"
+    answer: "Where capital allowances do apply (non-dwelling areas such as common parts and commercial space), the main-pool writing-down allowance is 14% from April 2026, reduced from 18% by Finance Act 2026 section 28 (a hybrid, time-apportioned rate applies to a chargeable period straddling the start date). The special-rate pool, which includes integral features, stays at 6%. Finance Act 2026 also introduced a new 40% first-year allowance for new and unused main-rate plant bought by unincorporated businesses from 1 January 2026, excluding cars, second-hand assets and assets for overseas leasing."
+  - question: "Does capital expenditure reduce my Capital Gains Tax?"
+    answer: "Yes, where it is enhancement expenditure. Capital spending that is reflected in the state or nature of the property at the time you sell is deductible from your gain under TCGA 1992 section 38(1)(b), reducing your Capital Gains Tax. For 2026/27 the residential CGT rates are 18% for gains within the basic-rate band and 24% above it, with a £3,000 annual exempt amount. Keep evidence that the works are still reflected in the property at disposal; spending that has since been removed or superseded does not qualify."
+  - question: "How do I split a project that is part repair and part improvement?"
+    answer: "HMRC accepts a reasonable apportionment of mixed expenditure on the facts. A single refurbishment often has a revenue limb (restoring what was there) and a capital limb (genuine improvements). Identify each element, support the split with itemised invoices and a contractor scope of works, and claim the repair element against rental income while adding the improvement element to the CGT base cost. Document the basis of the apportionment in case HMRC asks."
+  - question: "How should I document expenses to support my classification?"
+    answer: "Keep itemised invoices and receipts with clear descriptions of the work, before-and-after photos, contractor scope-of-works letters explaining what was restored versus improved, and purchase records showing the property's condition when you bought it (surveys, the price paid, marketing particulars). This evidence is what decides the initial-repairs question and supports any apportionment. Records matter more than ever under Making Tax Digital for Income Tax, which is live from 6 April 2026 for landlords with qualifying income above £50,000."
 ---
 
-<p>The distinction between <strong>capital vs revenue expenditure for landlords</strong> is one of the most important tax concepts UK property investors need to understand. Getting this classification wrong can cost you thousands in unnecessary tax or lead to problems with HMRC.</p>
+<p>The split between <strong>capital and revenue expenditure</strong> is the single decision that drives a UK landlord's tax position on almost every pound spent on a property. Get it right and revenue costs cut your rental profit this year while capital costs reduce your Capital Gains Tax later. Get it wrong and you either overstate your deductions (inviting an HMRC enquiry) or quietly overpay tax by treating a deductible repair as if it were locked away in your base cost.</p>
 
-<p>Capital expenditure typically cannot be deducted from rental income immediately, while revenue expenditure usually can. This fundamental difference affects your annual tax bill and long-term investment returns. For landlords managing multiple properties or considering major improvements, understanding these rules is essential.</p>
+<p>This page is the decision hub for that classification. It gives you the four HMRC tests, a top-of-page decision table, worked examples and the traps that catch landlords most often. Where a topic deserves a deeper dive, such as exactly which repairs are deductible or how improvements feed into a CGT calculation, we link out to the dedicated guide. Read this first, then follow the links to go deeper.</p>
 
-<h2>Understanding Capital and Revenue Expenditure</h2>
+<h2>The decision at a glance</h2>
 
-<p>Capital expenditure is money spent on acquiring, improving, or enhancing an asset in a way that goes beyond normal repairs and maintenance. For UK landlords, <strong>HMRC capital expenditure property</strong> rules focus on whether the spending creates lasting value or fundamentally changes the property. Capital costs are typically added to the property's base cost for Capital Gains Tax calculations when you eventually sell. They cannot usually be deducted against rental income in the year you incur them.</p>
+<p>Most landlord costs fall into a recognisable pattern. The table below shows the common cases, the test that decides each one, and where the relief lands. Use it as a first sort, then read the relevant section for the borderline calls.</p>
 
-<p>Revenue expenditure covers the day-to-day costs of maintaining and running a rental property. These expenses keep the property in its current condition rather than improving or enhancing it. Revenue costs can typically be <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">deducted from rental income</a> in the same tax year, reducing your taxable profit and immediate tax liability.</p>
+<table>
+<thead>
+<tr><th>Cost example</th><th>Capital or revenue?</th><th>Which test decides it</th><th>Where the relief lands</th></tr>
+</thead>
+<tbody>
+<tr><td>Replace a broken boiler with an equivalent modern unit</td><td>Revenue</td><td>Like-for-like / character of asset</td><td>Deducted from rental income this year</td></tr>
+<tr><td>Repoint brickwork, redecorate, replace worn carpets like-for-like</td><td>Revenue</td><td>Restoration vs enhancement</td><td>Deducted from rental income this year</td></tr>
+<tr><td>Replace free-standing white goods or furniture in a let home</td><td>Revenue (via RDIR)</td><td>Like-for-like, capped at equivalent cost</td><td>Deducted from rental income this year</td></tr>
+<tr><td>Re-roof the whole property with upgraded materials</td><td>Capital</td><td>Entirety + character of asset</td><td>Added to CGT base cost</td></tr>
+<tr><td>Install central heating where none existed</td><td>Capital</td><td>Character of the asset</td><td>Added to CGT base cost</td></tr>
+<tr><td>Loft conversion, extension, extra bathroom</td><td>Capital</td><td>Restoration vs enhancement</td><td>Added to CGT base cost</td></tr>
+<tr><td>Repairs to a run-down property bought at a reduced price</td><td>Capital (initial repairs)</td><td>Law Shipping line</td><td>Added to CGT base cost</td></tr>
+</tbody>
+</table>
 
-<h3>Common Examples of Capital Expenditure</h3>
+<p>For the revenue side worked through in detail, see our guide to <a href="/blog/landlord-tax-essentials/what-repairs-can-landlords-deduct-from-rental-income">what repairs landlords can deduct from rental income</a>. For the capital side, see how <a href="/blog/capital-gains-tax/property-improvements-reduce-cgt-enhancement-expenditure">property improvements reduce CGT through enhancement expenditure</a>.</p>
+
+<h2>Capital vs revenue: the core definitions</h2>
+
+<p><strong>Revenue expenditure</strong> covers the cost of running and maintaining a property in its existing condition: routine repairs, redecoration, replacing worn parts like-for-like, agent fees, insurance, and similar running costs. It is deducted from rental income in the same tax year, reducing your taxable property profit. The legal test is the wholly-and-exclusively rule in <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/34" rel="nofollow">ITTOIA 2005 section 34</a>, which applies to property businesses through <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272" rel="nofollow">section 272</a>.</p>
+
+<p><strong>Capital expenditure</strong> is money spent acquiring, extending, improving or enhancing the property beyond its original state. It cannot be deducted from rental income. Instead, qualifying enhancement spending is added to the property's base cost and reduces the gain when you sell, under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/38" rel="nofollow">TCGA 1992 section 38(1)(b)</a>. The relief is real, but it lands years later and at the CGT rate rather than your income tax rate.</p>
+
+<p>That timing difference is why the classification matters so much. A £900 boiler repair deducted this year saves income tax now. A £40,000 extension sits in your base cost until disposal and only saves CGT when, and if, you sell at a gain. Misclassifying the repair as capital costs you the immediate relief; misclassifying the extension as a repair overstates your deductions and is exactly the kind of error HMRC looks for.</p>
+
+<h2>The four HMRC tests</h2>
+
+<p>HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030" rel="nofollow">Property Income Manual at PIM2030</a> sets out the framework for deciding whether work is a deductible repair or capital improvement. In practice there are four tests, and a cost can be caught by any one of them.</p>
+
+<h3>1. The like-for-like test</h3>
+<p>Replacing something with a broadly similar item of broadly similar quality is normally a repair. Swapping a worn bathroom suite for a comparable new one is a repair. Replacing it with a luxury spa bathroom is an improvement. The comparison is with a modern equivalent of the original, not with the materials available decades ago.</p>
+
+<h3>2. The entirety test</h3>
+<p>HMRC looks at whether the work repairs a subsidiary part of a larger asset, or replaces the asset in its entirety. Replacing a few damaged roof tiles is a repair to the roof. Stripping and rebuilding the entire roof, especially with upgraded materials, can be the renewal of the whole and treated as capital. The key question is: what is the asset, and have you repaired part of it or renewed all of it?</p>
+
+<h3>3. The restoration versus enhancement test</h3>
+<p>Work that restores an asset to its former condition is a repair. Work that makes it better than it was, or adds something that was not there, is an improvement. Replacing rotten window frames with equivalent new ones restores; adding a conservatory enhances.</p>
+
+<h3>4. The character of the asset test</h3>
+<p>This is the test most landlord guides miss, and the one HMRC leans on for borderline cases. If the work changes the nature or character of the asset, it is capital even if it looks like a replacement. Conversely, an upgrade that uses modern materials but leaves the function and character broadly the same is still a repair. PIM2030 makes this point directly: an alteration due to advances in technology, such as single glazing replaced by double glazing, is generally an allowable repair where the functionality and character of the asset are broadly unchanged. Replacing a pitched roof with a flat one, or knocking two flats into a house, changes the character and is capital.</p>
+
+<h2>Worked example: kitchen replacement</h2>
+
+<p>Consider a landlord refurbishing the kitchen in a ten-year-old let house. The same project can contain both limbs.</p>
+
 <ul>
-<li><strong>Property purchase costs:</strong> Legal fees, survey costs, stamp duty, estate agent fees</li>
-<li><strong>Major improvements:</strong> Kitchen extensions, loft conversions, adding bathrooms</li>
-<li><strong>Structural changes:</strong> Knocking down walls, adding conservatories, garage conversions</li>
-<li><strong>System installations:</strong> Central heating systems, new electrical wiring throughout</li>
-<li><strong>Enhancement works:</strong> Double glazing upgrades, new driveways, landscaping</li>
-</ul>
-<p>A landlord spending £25,000 on a kitchen extension would typically treat this as capital expenditure. The cost adds lasting value to the property and goes well beyond routine maintenance.</p>
-
-<h3>Common Examples of Revenue Expenditure</h3>
-<ul>
-<li><strong>Routine maintenance:</strong> Repainting, replacing broken tiles, fixing leaky taps</li>
-<li><strong>Repairs and renewals:</strong> Boiler repairs, replacing worn carpets, fixing roof tiles</li>
-<li><strong>Property management costs:</strong> Letting agent fees, advertising, tenant referencing</li>
-<li><strong>Regular servicing:</strong> Annual boiler service, electrical safety checks</li>
-<li><strong>Professional fees:</strong> Accountancy, legal advice for tenancy issues</li>
-</ul>
-<p>A landlord spending £800 repairing a faulty boiler would typically treat this as revenue expenditure, deductible against rental income in that tax year.</p>
-
-<h2>The Improvement vs Repair Test</h2>
-
-<p>The most challenging area for landlords is distinguishing between <strong>improvement vs repair for landlords</strong>. HMRC applies several tests to determine the correct classification, and the line isn't always clear-cut.</p>
-
-<h3>HMRC's Key Tests</h3>
-<p><strong>1. The "Like for Like" Test:</strong> If you're replacing something with a similar item of similar quality, it's likely a repair. Replacing a basic bathroom suite with another basic suite would typically be a repair. Installing a luxury bathroom where a basic one existed would likely be an improvement.</p>
-<p><strong>2. The "Entirety Test":</strong> HMRC looks at the work in its entirety. Replacing individual roof tiles is repair work. Re-roofing the entire property might be classified as improvement, especially if you upgrade the materials.</p>
-<p><strong>3. The "Restoration vs Enhancement" Test:</strong> Work that restores something to its previous condition is typically repair. Work that makes it better than before is usually improvement.</p>
-
-<h3>Practical Example: Kitchen Replacement</h3>
-<p>Consider a landlord replacing a kitchen in a 10-year-old rental property:</p>
-<ul>
-<li><strong>Revenue (repair):</strong> Replacing a broken cooker with a similar model, fixing damaged cabinet doors, replacing worn worktops with similar materials</li>
-<li><strong>Capital (improvement):</strong> Completely redesigning the kitchen layout, installing granite worktops where laminate existed, adding an island unit, upgrading from basic to premium appliances</li>
-</ul>
-
-<h2>Special Rules and Exceptions</h2>
-
-<h3>Initial Repairs to Recently Purchased Properties</h3>
-<p>If you buy a property knowing it needs work, HMRC may treat necessary repairs as capital expenditure rather than revenue. This typically applies when:</p>
-<ul>
-<li>You paid a reduced price reflecting the property's poor condition</li>
-<li>The repairs were needed to make the property lettable</li>
-<li>You completed the repairs shortly after purchase</li>
-</ul>
-<p>For example, if you buy a property for £180,000 (reduced from £200,000 due to a damaged roof) and spend £8,000 on roof repairs immediately after purchase, HMRC might treat this as capital expenditure.</p>
-
-<h3>Renewals Allowance</h3>
-<p>For furnished lettings, landlords can claim a renewals allowance for replacing furniture, fixtures, and fittings. This allows you to deduct the cost of replacements (minus any proceeds from selling the old items) as revenue expenditure, even if the replacement is slightly better quality.</p>
-
-<h3>Integral Features</h3>
-<p>HMRC has specific rules for "integral features" of buildings, including:</p>
-<ul>
-<li>Electrical and lighting systems</li>
-<li>Cold water systems</li>
-<li>Space and water heating systems</li>
-<li>Air conditioning and ventilation systems</li>
-<li>Lifts, escalators, and moving walkways</li>
-<li>External solar shading</li>
-</ul>
-<p>Replacing integral features is typically treated as capital expenditure for companies, though individual landlords may have more flexibility.</p>
-
-<h2>Tax Treatment and Implications</h2>
-
-<p>Revenue costs are deducted from your rental income in the same tax year. This reduces your taxable profit, providing immediate income tax relief.</p>
-
-<p>Capital costs cannot typically be deducted from rental income immediately. Instead, they add to the property's base cost for CGT calculations, reducing your <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> liability when you sell. For a higher rate taxpayer, this means capital expenditure provides CGT relief at 24% rather than immediate income tax relief at 40%.</p>
-
-<p>However, remember that <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> mean mortgage interest is now only available as a 20% tax credit rather than a full deduction.</p>
-
-<h2>Record Keeping Requirements</h2>
-
-<p>Proper documentation is essential for supporting your expenditure classifications. HMRC increasingly challenges landlords on their expense categorisation, particularly following <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> implementation.</p>
-
-<h3>Essential Records to Keep</h3>
-<ul>
-<li><strong>Invoices and receipts:</strong> Keep all supporting documentation with clear descriptions of work completed</li>
-<li><strong>Before and after photos:</strong> Visual evidence can support repair vs improvement claims</li>
-<li><strong>Professional reports:</strong> Surveyor or contractor reports explaining the necessity and scope of work</li>
-<li><strong>Property purchase records:</strong> To identify what condition the property was in when acquired</li>
+<li><strong>Revenue (repair):</strong> replacing a broken oven with a comparable model, fixing damaged units, replacing worn laminate worktops with similar laminate, retiling to a similar standard. These restore the kitchen and are deductible against rental income.</li>
+<li><strong>Capital (improvement):</strong> redesigning the layout, installing granite worktops where laminate existed, adding an island unit, upgrading from a basic range to a premium fitted kitchen. These enhance beyond the original and are added to the CGT base cost.</li>
 </ul>
 
-<h2>Common Mistakes Landlords Make</h2>
+<p>The nearest-modern-equivalent principle does the heavy lifting here. You will struggle to buy a like-for-like 2014 kitchen in 2026; using current materials of broadly equivalent quality is still a repair. It only becomes an improvement once the specification or layout is genuinely upgraded.</p>
 
-<h3>1. Treating All Property Costs as Deductible</h3>
-<p>Many new landlords assume all property-related costs can be deducted immediately. This leads to incorrect tax returns and potential HMRC investigations.</p>
+<h2>Initial repairs and the Law Shipping trap</h2>
 
-<h3>2. Inconsistent Classification</h3>
-<p>Some landlords classify similar work differently across their portfolio. Consistency is important - if you treat new carpets as revenue expenditure in one property, you should do so across all properties unless circumstances genuinely differ.</p>
+<p>One of the most expensive misclassifications is treating initial repairs to a newly bought property as deductible. Where you acquire a run-down property at a price that reflects its poor condition, and the works are needed to put it into a usable or lettable state, those repairs are capital, not revenue.</p>
 
-<h3>3. Ignoring the Purchase Context</h3>
-<p>Failing to consider whether repair work was anticipated at purchase can lead to incorrect classification. If you bought a property specifically to renovate, much of the initial work may be capital rather than revenue.</p>
+<p>The principle comes from the case law line of <em>Law Shipping Co Ltd v CIR</em> and <em>Odeon Associated Theatres Ltd v Jones</em>. In short: if the purchase price was reduced because the property was dilapidated, the cost of putting it right is part of the cost of acquiring a usable asset and is added to the base cost. By contrast, where you buy a property that was already in a fit state and it deteriorates through normal wear during your ownership, repairs you carry out later are ordinary revenue repairs. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2025" rel="nofollow">Property Income Manual at PIM2025</a> sets out the general repairs position.</p>
 
-<h2>Planning Strategies for Landlords</h2>
+<p>A worked illustration: you buy a property for £180,000, reduced from a typical £200,000 because the roof is failing, and you spend £8,000 on roof works straight after completion. Because the price reflected the defect and the works made the property fit to let, that £8,000 is likely capital, added to your base cost. If instead the roof had been sound at purchase and failed three years into your ownership, the same £8,000 would be a revenue repair. The surveys, the marketing particulars and the price you paid are the evidence that decides it, so keep them.</p>
 
-<h3>Timing Considerations</h3>
-<p>The timing of improvements and repairs can affect your tax position. Consider:</p>
+<h2>Replacement of Domestic Items Relief (not the old Renewals Allowance)</h2>
+
+<p>Older guidance still refers to a "renewals allowance" for furniture and appliances in furnished lettings. That basis was <strong>abolished from April 2016</strong>. The current relief is <strong>Replacement of Domestic Items Relief (RDIR)</strong> under <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/311A" rel="nofollow">ITTOIA 2005 section 311A</a>, and it works differently in two important ways.</p>
+
 <ul>
-<li>Spreading major improvement work across tax years to manage CGT implications</li>
-<li>Timing repairs to years with higher rental income for maximum tax relief</li>
-<li>Planning improvements before sale to maximise CGT base cost additions</li>
+<li><strong>It is like-for-like, not a free upgrade.</strong> Section 311A(9) restricts the deduction where the new item is not the same or substantially the same as the old one: relief is capped at what an equivalent replacement would have cost, and you cannot relieve the cost of the upgrade element.</li>
+<li><strong>It is net of disposal proceeds.</strong> The deduction is reduced by anything you receive for the old item you are replacing.</li>
 </ul>
 
-<h3>Company vs Individual Ownership</h3>
-<p>The capital vs revenue distinction can have different implications depending on your ownership structure. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Limited company landlords</a> may have access to capital allowances not available to individual landlords, particularly for commercial properties.</p>
+<p>RDIR covers free-standing domestic items in a let residential dwelling (white goods, furniture, carpets, curtains, crockery and similar), and it applies to unfurnished and part-furnished lets, not just fully furnished ones. It does not cover the initial provision of an item (only replacements), and it does not apply to the old furnished holiday lettings regime, which was abolished from 6 April 2025. For the mechanics and the qualifying-item detail, see our guide to <a href="/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide">Replacement of Domestic Items Relief</a>.</p>
 
-<h2>When to Seek Professional Advice</h2>
+<h2>Capital allowances and integral features</h2>
 
-<p>Given the complexity of these rules and their significant tax implications, landlords should consider professional advice when:</p>
+<p>A common misconception is that landlords can claim capital allowances on the boiler, white goods and fixtures inside a let home. They generally cannot. <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/35" rel="nofollow">CAA 2001 section 35</a> denies plant and machinery allowances for plant or machinery for use in a dwelling-house within a UK or overseas property business. This applies to individual and company landlords alike; it is not a company-only rule. The route for replacing free-standing domestic items in a dwelling is RDIR, not capital allowances.</p>
+
+<p>Capital allowances can still apply, but only in qualifying <strong>non-dwelling areas</strong>: the common parts of a block of flats (a communal boiler, lift or lighting), and commercial or mixed-use space. In those areas the rates are:</p>
+
 <ul>
-<li>Planning major property improvements or refurbishments</li>
-<li>Purchasing properties requiring significant initial work</li>
-<li>Managing large property portfolios with multiple expense types</li>
-<li>Facing HMRC queries about expense classifications</li>
+<li><strong>Main-pool writing-down allowance: 14% from April 2026</strong>, reduced from 18% by Finance Act 2026 section 28 (a hybrid, time-apportioned rate applies where a chargeable period straddles the start date).</li>
+<li><strong>Special-rate pool: 6%</strong>, unchanged. This pool includes integral features (electrical systems, cold water systems, space and water heating, air conditioning and lifts) under CAA 2001 section 33A, where they sit in qualifying non-dwelling areas.</li>
+<li><strong>New 40% first-year allowance</strong> on new and unused main-rate plant bought from 1 January 2026 by unincorporated businesses (Finance Act 2026 section 29), excluding cars, second-hand assets and assets for overseas leasing.</li>
 </ul>
-<p>A qualified <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help ensure correct classification and optimal tax planning across your portfolio.</p>
 
-<p>The distinction between capital and revenue expenditure remains one of the most important tax concepts for UK landlords. While the rules provide a framework, their application to specific situations often requires careful consideration of the facts and circumstances involved.</p>
+<p>Finance Act 2026 received Royal Assent on 18 March 2026, so these are current rules, not proposals. For the full mechanics across the pools, see our guide to <a href="/blog/property-types-and-specialist-tax/capital-allowances-on-property">capital allowances on property</a>.</p>
+
+<aside>
+<p><strong>Not sure which side of the line your refurbishment falls?</strong> A specialist property accountant can classify each element correctly, apportion mixed projects and keep the evidence HMRC expects. Get in touch for a no-obligation conversation about your portfolio.</p>
+</aside>
+
+<h2>Mixed and apportioned expenditure</h2>
+
+<p>Real refurbishments rarely fall cleanly into one box. A whole-house renovation typically restores some things (revenue) and improves others (capital) in the same set of invoices. HMRC accepts a <strong>reasonable apportionment</strong> on the facts. The practical approach is to itemise the works, identify the repair limb and the improvement limb separately, and support the split with a contractor scope of works.</p>
+
+<p>For example, rewiring to the same standard as before is a repair, but if you also add extra circuits to support a new extension, that part is capital. Plastering after damp treatment is a repair; the same plastering as part of converting a garage into a habitable room is capital. Claim the repair element against rental income and add the improvement element to the base cost, and record how you arrived at the split.</p>
+
+<h2>Tax treatment and where the relief lands</h2>
+
+<p>To bring it together:</p>
+
+<ul>
+<li><strong>Revenue costs</strong> are deducted from rental income in the same tax year, reducing your taxable property profit and giving relief at your income tax rate.</li>
+<li><strong>Capital costs</strong> that are enhancement expenditure are added to the property's base cost under TCGA 1992 section 38(1)(b) and relieve against the gain on disposal. For 2026/27 the residential CGT rates are <strong>18%</strong> within the basic-rate band and <strong>24%</strong> above it, with a <strong>£3,000</strong> annual exempt amount.</li>
+</ul>
+
+<p>A point of caution on section 38(1)(b): the enhancement must still be reflected in the state or nature of the property at the time you sell. Spending that has since been removed, superseded or worn out does not qualify, so the original works that were later ripped out in a second refurbishment do not stay in your base cost. For how this feeds a full computation, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to Capital Gains Tax on property</a> and the detail on <a href="/blog/capital-gains-tax/property-improvements-reduce-cgt-enhancement-expenditure">enhancement expenditure</a>.</p>
+
+<p>One thing the capital-versus-revenue line does <em>not</em> govern is mortgage interest. Finance costs sit in a separate regime: under the <a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 mortgage interest restriction</a>, interest is relieved as a 20% basic-rate tax credit rather than a deduction. Do not fold finance costs into your repair-or-improvement analysis; they follow their own rules.</p>
+
+<h2>Record-keeping and Making Tax Digital</h2>
+
+<p>Classification is only as good as the evidence behind it. The records that matter most are:</p>
+
+<ul>
+<li><strong>Itemised invoices and receipts</strong> with clear descriptions of what was done.</li>
+<li><strong>Before-and-after photographs</strong> showing the condition restored or the improvement made.</li>
+<li><strong>Contractor scope-of-works letters</strong> distinguishing repair from improvement, which support any apportionment.</li>
+<li><strong>Purchase evidence</strong>, surveys, marketing particulars and the price paid, which decide the initial-repairs question.</li>
+</ul>
+
+<p>This discipline matters more under <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a>, which is live from 6 April 2026 for landlords with qualifying income above £50,000, extending to £30,000 from April 2027 and £20,000 from April 2028. Quarterly digital reporting means your classifications are visible to HMRC sooner and more often, so getting the capital-versus-revenue split right at the point of spending, with the evidence on file, is no longer something you can leave to the year-end.</p>
+
+<h2>Common mistakes landlords make</h2>
+
+<h3>1. Treating every property cost as deductible</h3>
+<p>Assuming all spending can be claimed against rental income leads to overstated returns and is a frequent trigger for HMRC enquiries. Improvements and initial repairs belong in the base cost, not the year's deductions.</p>
+
+<h3>2. Inconsistent classification across a portfolio</h3>
+<p>Classifying similar work differently across properties without a reason undermines your position. Treat like work alike unless the facts genuinely differ, and be ready to explain why.</p>
+
+<h3>3. Ignoring the purchase context</h3>
+<p>Failing to consider whether work was effectively bought with the property is the classic initial-repairs error. If you bought cheap because the property needed work, much of that work is capital.</p>
+
+<h3>4. Assuming a better replacement is fully deductible</h3>
+<p>Under RDIR, upgrading a replaced item only attracts relief up to the cost of an equivalent item. The upgrade element is not deductible, and treating it as if it were is a common slip.</p>
+
+<h2>When to get this checked</h2>
+
+<p>The classification rewards specialist input at a few decision points: a major refurbishment with mixed elements, the purchase of a run-down property you intend to renovate, an HMRC query about a previous return, or simply bringing consistency to a growing portfolio. The numbers at stake on a single misclassified refurbishment are often far larger than the cost of getting advice.</p>
+
+<aside>
+<p><strong>Planning works on a property, or facing an HMRC question about a past return?</strong> Our partner specialists work with landlords across England, Wales, Scotland and Northern Ireland to classify expenditure correctly and document it properly. Reach out for a no-obligation discussion of your situation.</p>
+</aside>
+
+<p>For a wider view of what you can claim, see our guide to <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable landlord tax deductions</a>, or read more about <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a>. The capital-versus-revenue line is the gateway to your whole tax position, so it is worth getting right from the first invoice.</p>

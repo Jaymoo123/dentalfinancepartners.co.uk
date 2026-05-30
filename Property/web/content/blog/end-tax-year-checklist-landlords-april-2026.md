@@ -2,113 +2,128 @@
 title: "End of Tax Year Checklist for Landlords: What to Do Before 5 April 2026"
 slug: "end-tax-year-checklist-landlords-april-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/end-tax-year-checklist-landlords-april-2026"
-date: "2026-04-10"
+date: "2026-05-30"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "End of Tax Year Checklist Landlords 2026: April Deadline"
-metaDescription: "Complete end of tax year checklist for landlords 2026. Essential year end landlord tasks before 5 April 2026 deadline including MTD preparation."
-altText: "UK landlord reviewing end of tax year checklist documents and calculator on desk before April 2026 deadline"
+metaTitle: "Landlord Year-End Tax Checklist 2026: Before 5 April"
+metaDescription: "The year-end tax checklist for UK landlords before 5 April 2026: records, allowable expenses, Section 24, CGT timing, MTD and pensions, with key dates."
+altText: "UK landlord reviewing end of tax year checklist documents and calculator on desk before the 5 April 2026 deadline"
 image: ""
 h1: "End of Tax Year Checklist for Landlords: What to Do Before 5 April 2026"
-summary: "A comprehensive checklist of essential tasks UK landlords must complete before the 5 April 2026 tax year end, including MTD preparation and key deadlines."
+summary: "A task-by-task year-end checklist for UK landlords before 5 April 2026, covering records, allowable expenses, Section 24, CGT timing, MTD for Income Tax readiness, pensions and key dates."
 schema: ""
 faqs:
-  - question: "What are the most important year end landlord tasks for 2026?"
-    answer: "The most critical tasks include completing your financial records review, preparing for MTD from April 2026, calculating Section 24 restrictions properly, and ensuring all allowable expenses are documented. You should also consider any CGT planning if disposing of properties and verify your record-keeping systems meet MTD requirements."
-  - question: "When does Making Tax Digital start for landlords?"
-    answer: "MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means you'll need compatible software and must submit quarterly updates starting with the period 6 April to 5 July 2026, due by 5 August 2026."
-  - question: "How do Section 24 restrictions affect my 2025/26 tax calculation?"
-    answer: "Section 24 restrictions are fully in place for 2025/26. Mortgage interest on residential buy-to-let properties is no longer deductible from rental income. Instead, you receive a 20% tax credit based on the lower of your mortgage interest paid or your rental profits. This typically increases tax for higher and additional rate taxpayers."
-  - question: "Should I consider incorporating my property portfolio before April 2026?"
-    answer: "Consider incorporation carefully, especially with separate property income tax rates starting April 2027 (22%/42%/47% on property income). Current factors include your total income level, portfolio size, Section 24 impact, and future growth plans. Professional advice is recommended as incorporation involves CGT on transfer and ongoing compliance costs."
+  - question: "What are the most important year-end tasks for landlords before 5 April 2026?"
+    answer: "Reconcile your 2025/26 rental records, make sure every allowable expense is captured, confirm your Section 24 finance-cost credit is claimed correctly, use your £3,000 capital gains annual exempt amount and any pension allowance before they reset at 5 April, and get ready for Making Tax Digital for Income Tax, which becomes mandatory from 6 April 2026 for landlords with qualifying income above £50,000. The reliefs that lapse at midnight on 5 April (the annual exempt amount, the pension annual allowance and the chance to bank an in-year capital loss) are the ones to act on first."
+  - question: "When is the first Making Tax Digital quarterly update due for landlords?"
+    answer: "MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with qualifying income above £50,000. The first quarterly update covers the period 6 April to 5 July 2026 and is due by 7 August 2026, not 5 August. The remaining UK tax-year quarters are due 7 November 2026, 7 February 2027 and 7 May 2027. From 6 April 2026 you can elect to use calendar-quarter periods ending 30 June, 30 September, 31 December and 31 March instead, but the default is the 5th-of-the-month quarters."
+  - question: "What happens if I miss a Making Tax Digital deadline?"
+    answer: "Late quarterly updates are dealt with under a points-based regime: you get one point for each missed update, and once you reach four points a £200 penalty applies, with points resetting after 24 months of full compliance. Late payment of MTD Income Tax from 6 April 2026 follows the accelerated Spring Statement 2025 schedule: 3% of the unpaid tax once it is 15 days overdue, a further 3% at 30 days, then 10% per annum from day 31. The older 31/46/91-day schedule at 2%/2%/4% no longer applies to MTD filers."
+  - question: "How does Section 24 affect my 2025/26 tax return?"
+    answer: "Section 24 is fully in force. You cannot deduct mortgage interest and other finance costs from your residential rental profit. Instead you receive a basic-rate tax credit set at 20% for 2025/26, given on the lower of your finance costs, your residential rental profit, or your income above the personal allowance. Any part of the credit restricted by that cap carries forward. Companies are not affected (they still deduct interest in full before corporation tax)."
+  - question: "Can I still claim indexation relief on a property I bought before 1998?"
+    answer: "No, not as an individual. Indexation allowance was withdrawn for individuals from April 1998 and has not been available since. It survives only for companies, and even then it was frozen at December 2017. If you hold a long-owned property personally, your gain is the disposal proceeds less the original cost and qualifying improvement costs, with no inflation uplift."
+  - question: "How do I use my capital gains annual exempt amount before the tax year ends?"
+    answer: "The annual exempt amount is £3,000 per person for 2025/26. It does not roll forward, so any unused part is lost at 5 April. If you are planning a disposal and you have not used the allowance, completing the sale before 5 April lets you set the exemption against this year's gain. Couples each have their own £3,000, so a jointly owned property disposal can shelter £6,000 of gain between two spouses or civil partners."
+  - question: "Can I transfer a property to my spouse before 5 April to save tax?"
+    answer: "A transfer between spouses or civil partners who live together is made on a no-gain, no-loss basis under section 58 of the Taxation of Chargeable Gains Act 1992, so it triggers no immediate capital gains tax. Landlords use this before a planned sale to put part of the property into a lower-rate or unused-allowance spouse's name, banking a second £3,000 annual exempt amount and potentially taxing part of the gain at 18% rather than 24%. For rental income, the default 50/50 split for jointly held property can be changed with a Form 17 election where ownership is unequal."
+  - question: "Should I make a pension contribution before 5 April 2026?"
+    answer: "Possibly, if you have relevant earnings from employment or self-employment. The pension annual allowance is £60,000 for 2025/26, tapered down where adjusted income exceeds £260,000 and threshold income exceeds £200,000 (floor £10,000). The catch for landlords is that rental profit is not relevant earnings for pension tax relief, so your contribution is capped by your other earned income (or £3,600 gross if you have none). Where you do have earnings, a contribution before 5 April uses this year's allowance, which does not carry forward beyond the normal three-year unused-allowance window."
+  - question: "Should I bring forward or delay repairs before the tax year end?"
+    answer: "Timing deductible expenditure can be worth doing. A genuine, deductible repair (for example redecoration, or replacing a worn-out boiler like-for-like) reduces taxable rental profit in the year the cost is incurred. If your rental profit is higher this year, or you will pay tax at a higher rate this year than next, bringing a planned repair into 2025/26 saves more tax. The work must be a real revenue repair, not a capital improvement, and it must actually be carried out, not merely invoiced."
+  - question: "Should I incorporate my property portfolio before April 2026?"
+    answer: "There is no April 2026 cliff edge that forces the decision. From 6 April 2027, property income in England and Northern Ireland is taxed at separate rates of 22%, 42% and 47% under the Finance Act 2026 (which received Royal Assent on 18 March 2026), and the Section 24 finance-cost reducer rises to 22% at the same time. Because the reducer tracks the new 22% basic rate, no new wedge opens for basic-rate landlords, and the higher and additional-rate wedge does not widen. Incorporation can still help some portfolio landlords, but it brings its own capital gains, stamp duty and ongoing compliance considerations, so it is a modelling exercise rather than a year-end rush."
+  - question: "Are the April 2027 property income tax rates definitely happening?"
+    answer: "Yes. The separate property income tax rates of 22% basic, 42% higher and 47% additional were announced at the Autumn Budget 2025 and enacted by the Finance Act 2026, which received Royal Assent on 18 March 2026 (sections 6 and 7). They take effect from 6 April 2027 and apply to property income in England, Wales and Northern Ireland; only Scotland is carved out, so Scottish taxpayers pay the Scottish income tax rates set by the Scottish Parliament on their property income. (Finance Act 2026 section 8 and Schedule 2 contain a future power for Wales and Scotland to set their own property income rates, but it is not in force for 2027/28.) They are current law, not a proposal, so plan on the basis that they will apply."
+  - question: "Does year-end planning change for a property that used to be a furnished holiday let?"
+    answer: "Yes. The furnished holiday lettings regime was abolished from 6 April 2025, so for 2025/26 a former holiday let is taxed as standard residential property. Section 24 applies to its finance costs, Business Asset Disposal Relief is no longer available on a future sale, and its profits no longer count as relevant earnings for pension purposes. Capital allowance pools already built up under the old regime continue to be written down in the ordinary property business."
+  - question: "What does a non-resident landlord need to check before the tax year ends?"
+    answer: "Confirm your position under the Non-resident Landlord Scheme is current, so that rent is paid without 20% being withheld where you have HMRC approval to receive it gross. Remember that a non-resident must report every UK property disposal within 60 days of completion regardless of whether tax is due. Year-end is a sensible point to check that your records and any agent arrangements are in order before the new tax year."
+  - question: "Which year-end tasks are urgent and which can wait?"
+    answer: "Urgent before 5 April: using the £3,000 capital gains annual exempt amount, completing any spouse transfer ahead of a planned sale, making pension contributions for the year, and crystallising an in-year capital loss to offset a gain. These cannot be done retrospectively. Less time-critical: record reconciliation, the Section 24 calculation and the final allowable-expenses review, which can be finished up to the 31 January 2027 filing deadline, though doing them early reduces the risk of missed claims and gives time to fix any gaps."
 ---
 
-<p>The end of tax year checklist for landlords 2026 requires careful planning as 5 April 2026 approaches. With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becoming mandatory</a> from 6 April 2026, this year's preparations are more critical than ever.</p>
-<p>This comprehensive guide covers all essential year end landlord tasks you need to complete before the tax year ends on 5 April 2026. Missing these deadlines can result in penalties, missed reliefs, and compliance issues.</p>
+<p>The weeks before 5 April are the part of the landlord tax year where a few hours of attention genuinely changes your bill. Once the clock passes midnight on 5 April 2026, the 2025/26 tax year is closed: allowances that have not been used are gone, transfers that have not completed cannot be backdated, and contributions that have not been paid no longer count for the year. This checklist sequences the year-end tasks that matter for UK landlords and points each one to the specialist guide that covers it in full.</p>
+<p>This year-end is more consequential than most. <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory from 6 April 2026 for landlords with qualifying income above £50,000, so 2025/26 is the last year many landlords will file under the old once-a-year process. The Finance Act 2026 has also already changed several rules that take effect at the start of the new tax year. Work through the dated table first, then the eight tasks below it.</p>
 
-<h2>Essential Financial Records Review</h2>
-<p>Start your 5 April landlord checklist by reviewing all financial records for the 2025/26 tax year. Ensure every rental payment, expense, and transaction is properly documented and categorised.</p>
-<p>Check your bank statements match your rental income records. Any discrepancies need resolving before you prepare your tax return. This includes verifying tenant deposits, advance rent payments, and any rent arrears recovered during the year.</p>
-<p>Review all <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable expense claims</a> with supporting documentation. Missing receipts or inadequate records can lead to disallowed deductions and higher tax bills.</p>
-<h3>Key Records to Verify</h3>
+<h2>At a glance: key year-end and 2026/27 dates</h2>
+<p>These are the dates that drive the tasks in this checklist. The actions tied to 5 April 2026 are the ones that cannot be done after the deadline.</p>
+<table>
+<thead>
+<tr><th>Date</th><th>What happens</th><th>What to do</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>5 April 2026</strong></td><td>End of the 2025/26 tax year</td><td>Use your £3,000 capital gains annual exempt amount, make pension contributions, complete any spouse or civil-partner transfer, and crystallise any in-year capital loss. None of these can be backdated.</td></tr>
+<tr><td><strong>6 April 2026</strong></td><td>MTD for Income Tax becomes mandatory for landlords with qualifying income above £50,000. The main-pool writing-down allowance also falls from 18% to 14% (Finance Act 2026, section 28).</td><td>Have compatible software and digital records in place. See the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD deadline guide</a>.</td></tr>
+<tr><td><strong>7 August 2026</strong></td><td>First MTD quarterly update deadline, covering the period 6 April to 5 July 2026</td><td>Submit your first quarterly summary. The remaining quarters are due 7 November, 7 February and 7 May. See the <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">quarterly deadlines guide</a>.</td></tr>
+<tr><td><strong>31 January 2027</strong></td><td>Filing deadline for the 2025/26 Self Assessment return and the balancing payment, plus the first 2026/27 payment on account</td><td>File and pay. The records and calculations below feed this return.</td></tr>
+</tbody>
+</table>
+
+<aside>
+<p>Want a second pair of eyes on your year-end position before 5 April?</p>
+<p>If you would like someone to check that your reliefs, allowances and Section 24 credit are being used correctly this year, the form below routes to a property tax specialist who handles landlord year-end planning as part of normal practice.</p>
+</aside>
+
+<h2>Task 1: Reconcile your 2025/26 records</h2>
+<p>Start by making sure your records for the year actually tie up. Check that every rental payment shown on your bank statements matches your rent records, and chase down any difference before you build the figures into a return. The common discrepancies are tenant deposits treated as income (they are not your income while held under a deposit scheme), advance rent that straddles the year end, and arrears recovered during the year that need to be recorded in the right period.</p>
+<p>This is also the moment to get ahead of MTD. From 6 April 2026 landlords above the £50,000 threshold must keep digital records capable of producing quarterly summaries, so a clean, categorised 2025/26 dataset is the natural starting point for whatever software you adopt. The closer your current records are to a tidy digital ledger, the less painful the first quarter under MTD will be.</p>
+<h3>Records to verify</h3>
 <ul>
-<li>Monthly rental income statements</li>
-<li>Bank statements for all property accounts</li>
-<li>Credit card statements for property expenses</li>
-<li>Property management company statements</li>
-<li>Tenant deposit and checkout reports</li>
-<li>Insurance renewal documents</li>
-<li>Mortgage statements and interest calculations</li>
+<li>Monthly rental income against bank receipts for every property account</li>
+<li>Tenant deposit and check-out records (deposits held are not income)</li>
+<li>Mortgage statements and the finance costs paid in the year (needed for the Section 24 credit)</li>
+<li>Letting-agent statements, including fees and any costs they paid on your behalf</li>
+<li>Insurance, service-charge and ground-rent documents</li>
+<li>Receipts and invoices for repairs and other expenses</li>
 </ul>
 
-<h2>Capital Gains Tax (CGT) Planning</h2>
-<p>If you're planning any property disposals before 5 April 2026, act quickly. <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital gains tax</a> rates remain at 18% for basic rate taxpayers and 24% for higher rate taxpayers, with the annual exempt amount at £3,000.</p>
-<p>Consider whether timing any sale before or after the tax year end makes sense for your overall tax position. Remember that CGT is payable within 60 days of completion for UK residents.</p>
-<p>Review any available reliefs, including <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a> for former main homes now let out.</p>
-<h3>CGT Considerations</h3>
-<ul>
-<li>Calculate potential gains on planned disposals</li>
-<li>Review annual exempt amount usage</li>
-<li>Consider spouse transfers for tax efficiency</li>
-<li>Assess incorporation timing if relevant</li>
-<li>Check indexation relief eligibility for pre-1998 acquisitions</li>
-</ul>
-<p>Complete your end of tax year checklist by updating property valuations for CGT purposes.</p>
+<h2>Task 2: Capture every allowable expense before year-end</h2>
+<p>The biggest source of overpaid landlord tax is unclaimed deductions. The gateway question for each cost is whether it is a revenue expense (deductible against this year's rental profit) or capital (added to the property's base cost for capital gains tax instead). Get that line right and most of the work is done.</p>
+<p>Categories landlords most often miss include letting-agent and accountancy fees, ground rent and service charges, landlord insurance, the costs of advertising for tenants, travel to and from the property wholly for the letting business, replacement of domestic items relief (the deduction for replacing free-standing white goods, furniture and similar in a let property), and a reasonable proportion of home-office and phone costs for self-managing landlords. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual">Property Income Manual</a> sets out the boundaries.</p>
+<p><strong>Worked example.</strong> A landlord expects rental profit of about £18,000 in 2025/26 but only £9,000 next year because a property will be empty for a refurbishment. A planned £3,000 redecoration is a genuine revenue repair. Carrying it out before 5 April 2026 sets the £3,000 against the higher-profit year, where the landlord is a higher-rate taxpayer, rather than against next year's lower profit. The work has to be a real repair and actually done before the year end, not merely invoiced.</p>
+<p>For the full list of deductible categories and the revenue-versus-capital tests, see the <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">complete landlord tax deductions list</a>.</p>
 
-<h2>Section 24 Tax Relief Restrictions</h2>
-<p>The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> continue to apply in full for 2025/26. Ensure your mortgage interest calculations are correct, as relief is limited to a 20% tax credit rather than a deduction from rental income.</p>
-<p>Calculate your total mortgage interest paid during 2025/26 and ensure you're claiming the maximum 20% tax credit available. This calculation becomes more complex with variable rate mortgages or where properties were bought or sold during the year.</p>
+<h2>Task 3: Check your Section 24 finance-cost relief for 2025/26</h2>
+<p>Section 24 is fully in force. You cannot deduct mortgage interest and other finance costs from rental profit. Instead you receive a basic-rate tax credit, set at 20% for 2025/26, calculated on the lowest of three figures: your finance costs for the year, your residential rental profit before finance costs, and your income above the personal allowance. Where the cap restricts the credit, the unused part carries forward indefinitely, so year-end is the point to check that any carried-forward amount has been picked up.</p>
+<p>One forward-looking point worth knowing now. From 2027/28 the finance-cost reducer rises to 22%, because the Finance Act 2026 (Schedule 1, amending ITA 2007 section 399B) sets it at the new property basic rate rather than freezing it at 20%. As the reducer tracks the 22% basic rate on property income, no new wedge opens for basic-rate landlords, and the higher and additional-rate wedge does not widen. That is the opposite of how the change is often described, and it matters for any incorporation decision (see Task 7).</p>
+<p>For the mechanics and a worked credit calculation, see <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">how to claim mortgage interest relief under Section 24</a> and the <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a>.</p>
 
-<h2>Allowable Expenses Review</h2>
-<p>Complete a thorough review of all property-related expenses claimed during 2025/26. Common areas where landlords miss deductions include professional fees, travel costs, and home office expenses for self-managing landlords.</p>
-<p>Ensure all repairs and maintenance costs are properly classified as revenue expenses rather than capital improvements. The distinction affects whether costs are deductible in the current year or must be added to the property's base cost for CGT purposes.</p>
-<p>Review any estimates used during the year and replace with actual figures where possible. This includes final utility bills, annual insurance premiums, and professional service fees.</p>
-<h3>Commonly Missed Deductions</h3>
-<ul>
-<li>Property accountant and tax preparation fees</li>
-<li>Landlord insurance premiums and excess payments</li>
-<li>Legal fees for rent recovery or lease renewals</li>
-<li>Telephone and internet costs for property management</li>
-<li>Vehicle expenses for property visits</li>
-<li>Home office costs (if self-managing)</li>
-<li>Professional subscriptions and training costs</li>
-</ul>
+<h2>Task 4: Capital gains tax timing actions</h2>
+<p>If a disposal is on the cards, the timing around 5 April changes the tax. Residential property gains are taxed at 18% within your remaining basic-rate band and 24% above it, with the <a href="https://www.gov.uk/capital-gains-tax/rates">annual exempt amount</a> at £3,000 per person for 2025/26. The annual exempt amount does not roll forward, so an unused £3,000 simply disappears at 5 April.</p>
+<p><strong>Use the annual exempt amount before it resets.</strong> If you are selling and you have not used your £3,000, completing before 5 April sets it against this year's gain. A jointly owned property gives a couple £6,000 of combined exemption.</p>
+<p><strong>Consider a spouse or civil-partner transfer.</strong> A transfer between spouses or civil partners who live together is treated as no gain, no loss under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/58">section 58 of the Taxation of Chargeable Gains Act 1992</a>, so it triggers no immediate tax. Done before a planned sale, it can bank a second £3,000 exemption and move part of the gain to a lower-rate spouse.</p>
+<p><strong>Worked example.</strong> A higher-rate landlord plans to sell a buy-to-let with a £40,000 gain. Sold in their sole name, after one £3,000 exemption the £37,000 taxable gain costs £8,880 at 24%. If they transfer a half share to a basic-rate spouse first, each uses a £3,000 exemption (£6,000 total) and £34,000 is split. The higher-rate half (£17,000) is taxed at 24% (£4,080) and the basic-rate spouse's £17,000, sitting within their basic-rate band, is largely taxed at 18% rather than 24%. The exact saving depends on the spouse's other income, but the structure routinely cuts the bill, and the transfer itself is tax-free.</p>
+<p><strong>Crystallise losses in-year.</strong> A loss realised in the same tax year as a gain is set against it automatically, so disposing of a loss-making asset before 5 April can shelter a gain you have already banked.</p>
+<p>Where you sell a former main home that has been let, Private Residence Relief under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/222">section 222 of the Taxation of Chargeable Gains Act 1992</a> can cover the periods you lived there plus the final nine months. See <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Private Residence Relief for landlords</a>. Remember that where tax is due, UK residents must report and pay within 60 days of completion: see the <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT payment deadlines guide</a>. For the wider picture, the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a> covers reliefs and rates in full.</p>
 
-<h2>Making Tax Digital (MTD) Preparation and Record Keeping</h2>
-<p>With MTD for Income Tax becoming mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), your year end landlord tasks must include MTD readiness checks.</p>
-<p>Ensure your record-keeping systems can produce the required quarterly updates. Most landlords will need compatible software to meet HMRC's digital requirements from the new tax year. Implement robust record-keeping systems before the new tax year starts. MTD requires digital records capable of producing quarterly summaries of income and expenses.</p>
-<p>Test your chosen MTD software with your current year's data to identify any issues before the April deadline. This includes checking category mappings and ensuring all income and expense types are properly classified.</p>
-<p>Ensure all supporting documentation is stored systematically. HMRC may request evidence during enquiries, and proper organisation saves time and reduces stress. Consider cloud-based storage solutions for important documents. This provides backup protection and access from multiple locations when needed.</p>
-<h3>MTD Readiness Checklist</h3>
-<ul>
-<li>Choose and set up MTD-compatible software</li>
-<li>Import or input historical data for testing</li>
-<li>Verify income and expense categorisation</li>
-<li>Check quarterly reporting functionality</li>
-<li>Ensure bank feed connections work properly</li>
-<li>Test end-of-period statement generation</li>
-</ul>
+<h2>Task 5: Get ready for Making Tax Digital, and know the penalty stakes</h2>
+<p>From 6 April 2026, MTD for Income Tax is mandatory for landlords whose qualifying income (gross rents plus any sole-trade income) exceeds £50,000. The threshold falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Limited companies are outside MTD for Income Tax entirely, and general partnerships are deferred to a date HMRC has not yet confirmed. Joint owners test the threshold against their share of the rent, not the property's total.</p>
+<p>In practice you will need HMRC-recognised compatible software, kept up to date with digital records, and you will submit a quarterly summary plus a final declaration each year. The quarters and their deadlines are 6 April to 5 July (due 7 August), 6 July to 5 October (due 7 November), 6 October to 5 January (due 7 February) and 6 January to 5 April (due 7 May). From 6 April 2026 you can elect to use calendar-quarter periods (ending 30 June, 30 September, 31 December and 31 March) instead.</p>
+<p><strong>The penalties are worth understanding before you start.</strong> Late quarterly updates use a points-based system: one point per missed update, with a £200 penalty once you reach four points, and points reset after 24 months of compliance. Late payment of MTD Income Tax follows the accelerated Spring Statement 2025 schedule: 3% of the unpaid tax once it is 15 days late, a further 3% at 30 days, then 10% per annum from day 31. The older 31/46/91-day schedule at 2%/2%/4% does not apply to MTD filers, so do not plan around it.</p>
+<p>For the mandate detail see the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadline guide</a>, and for the full quarterly calendar see the <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly deadlines guide</a>.</p>
 
-<h2>Property Portfolio Tax Efficiency and Structure</h2>
-<p>Review your overall portfolio structure before the tax year end. Consider whether any inter-spouse property transfers might reduce your combined tax liability, particularly if one spouse is a basic rate taxpayer while the other pays higher rates.</p>
-<p>Assess whether the timing of any major expenditure (such as significant renovations) should be accelerated or delayed depending on your tax position. Large deductible expenses might be more valuable in years with higher rental income.</p>
-<p>Consider whether <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into a limited company</a> structure might be beneficial before the next tax year, particularly given the upcoming separate property income tax rates from April 2027. If you're considering incorporation or have a complex portfolio, specialist advice becomes even more valuable.</p>
-<p>Consider pension contributions if you have significant rental profits. Annual allowances for 2025/26 remain at £60,000 (subject to tapered reductions for high earners).</p>
+<aside>
+<p>Not sure whether MTD applies to you, or how to get your records ready in time?</p>
+<p>The form below routes to a property tax specialist who can confirm whether you are in scope from April 2026 and help you set up compliant digital records before the first quarter.</p>
+</aside>
 
-<h2>Compliance and Deadlines Calendar</h2>
-<p>Prepare your compliance calendar for the coming months. Key dates include the 31 January 2027 deadline for 2025/26 tax returns and the new quarterly MTD reporting requirements starting 6 April 2026.</p>
-<p>If you're a non-resident landlord, ensure all NRL scheme requirements are met and any required approvals are in place for the new tax year.</p>
-<p>Commercial property landlords should review their VAT position and consider whether the option to tax election remains appropriate for each property.</p>
-<h3>Key Upcoming Dates</h3>
-<ul>
-<li>5 April 2026: End of 2025/26 tax year</li>
-<li>6 April 2026: MTD for Income Tax starts</li>
-<li>5 July 2026: First MTD quarterly update deadline</li>
-<li>31 January 2027: 2025/26 tax return deadline</li>
-</ul>
+<h2>Task 6: Pension contributions before 5 April</h2>
+<p>A pension contribution made before 5 April uses this year's allowance, and pension tax relief is one of the few ways a higher-rate taxpayer can still get full-rate relief on income. The annual allowance is £60,000 for 2025/26, tapered down where adjusted income exceeds £260,000 and threshold income exceeds £200,000 (with a £10,000 floor).</p>
+<p>The landlord-specific catch is that rental profit is not relevant earnings for pension tax relief. Your tax-relievable contribution is capped by your earnings from employment or self-employment (or £3,600 gross if you have none), not by your rental income. So a contribution makes sense where you have other earned income alongside your portfolio.</p>
+<p><strong>Worked example.</strong> A landlord with £55,000 of employment income and a sizeable rental portfolio pays £20,000 into a personal pension before 5 April. Because the contribution is within their earnings and their annual allowance, it attracts basic-rate relief at source and the higher-rate element is reclaimed through their tax return, reducing the income on which higher-rate tax bites. The rental profit plays no part in setting the contribution limit.</p>
 
-<h2>Professional Support and Final Preparations</h2>
-<p>Consider whether you need professional help with your tax affairs, particularly given the upcoming MTD requirements. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can ensure compliance and identify tax planning opportunities.</p>
-<p>Many landlords benefit from professional support during transition periods like the introduction of MTD. The <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of professional advice</a> is typically offset by improved compliance and tax efficiency.</p>
-<p>Complete your final preparations by reviewing insurance coverage and ensuring all legal compliance requirements are met. Schedule regular portfolio reviews for the coming year. Property investment success depends on staying on top of changing regulations and tax requirements.</p>
-<p>The transition to MTD and upcoming separate property income tax rates make professional guidance increasingly valuable. Consider your support needs early rather than waiting until deadlines approach.</p>
+<h2>Task 7: Review your portfolio structure (and the 2027 rates)</h2>
+<p>Year-end is a natural point to look at how the portfolio is held, without rushing the decision. Two reversible moves are worth modelling now: inter-spouse transfers to balance rental income across tax bands (the default 50/50 split for jointly held property can be varied with a Form 17 election where ownership is unequal), and the timing of major deductible expenditure, which is more valuable in a higher-profit year.</p>
+<p><strong>The April 2027 rates, stated correctly.</strong> From 6 April 2027, property income in England, Wales and Northern Ireland is taxed at separate rates of 22% basic, 42% higher and 47% additional. These were announced at the Autumn Budget 2025 and enacted by the <a href="https://www.legislation.gov.uk/ukpga/2026/11/contents">Finance Act 2026</a> (sections 6 and 7), which received Royal Assent on 18 March 2026. Only Scotland is carved out, so Scottish taxpayers pay the Scottish income tax rates on their property income. (Section 8 and Schedule 2 hold a future power for Wales and Scotland to set their own property income rates, but it is not in force for 2027/28.) This is current law, not a proposal. Crucially, the Section 24 finance-cost reducer rises to 22% at the same time (Schedule 1), so it tracks the new basic rate: no new wedge opens for basic-rate landlords, and the higher and additional-rate wedge stays the same width as now. See the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates guide</a> for the full picture.</p>
+<p>Incorporation can still help some portfolio landlords, particularly those reinvesting profits or building scale, because companies deduct finance costs in full. But it brings capital gains tax on the transfer (unless incorporation relief applies), stamp duty land tax, and ongoing company compliance, so it is a modelling exercise rather than a year-end deadline. See the <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> and <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">how to incorporate rental property without triggering CGT</a>.</p>
+
+<h2>Task 8: Compliance calendar and special cases</h2>
+<p>Set out the dates for the year ahead. The 31 January 2027 deadline covers both the 2025/26 Self Assessment return and the balancing payment, alongside the first payment on account for 2026/27. For landlords moving into MTD, the quarterly cycle runs in parallel from 6 April 2026, so build both into the same calendar.</p>
+<p>A few situations need a specific year-end check. Non-resident landlords should confirm their Non-resident Landlord Scheme position is current, so rent is received without 20% withheld where they hold HMRC approval, and should remember the 60-day reporting obligation on every UK disposal. Commercial landlords should review whether an option-to-tax election still suits each property for VAT. Landlords with capital allowance pools should note the main-pool writing-down allowance falls to 14% from April 2026 (Finance Act 2026, section 28), with the special rate pool unchanged at 6%; a straddling period uses a time-apportioned rate.</p>
+<p>For ongoing portfolio performance rather than the April tax deadline, the separate <a href="/blog/portfolio-management/property-portfolio-review-checklist-landlords-2026">property portfolio review checklist</a> covers yield, voids, refinancing and EPC planning.</p>
+
+<h2>When year-end planning needs a specialist</h2>
+<p>Most of this checklist is straightforward record-keeping and timing. The judgement calls (whether a spouse transfer is worth doing before a sale, how much to contribute to a pension, whether incorporation stacks up) are where a property tax specialist earns their place. In one anonymised case, a portfolio landlord used a pre-year-end spouse transfer to bank a second annual exempt amount and shift part of a gain to a basic-rate band, materially reducing the tax on a planned disposal, simply because the transfer completed before 5 April rather than after.</p>
+<p>The combination of the MTD mandate landing in April 2026 and the enacted 2027 rate changes means more landlords than usual have a reason to take advice this year. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can confirm your reliefs are being used, get your records MTD-ready, and model the structural questions before they become urgent. If that would help, the form on this page routes your details to a specialist who works with landlords on exactly this.</p>

@@ -2,170 +2,201 @@
 title: "Landlord Tax Calendar 2026/27: Every Key Date You Need"
 slug: "landlord-tax-calendar-2026-27-key-dates"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/landlord-tax-calendar-2026-27-key-dates"
-date: "2026-04-10"
+date: "2026-05-30"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Landlord Tax Calendar 2026/27: Key Dates & Deadlines"
-metaDescription: "Essential tax deadlines for landlords in 2026/27. Self assessment dates, MTD quarterly returns, CGT deadlines and payment dates all explained."
+metaTitle: "2026/27 Landlord Tax Calendar: SA, MTD, CGT Key Dates"
+metaDescription: "The full 2026/27 landlord tax calendar in one view: Self Assessment, payments on account, MTD quarters (7 Aug/7 Nov/7 Feb/7 May), 60-day CGT and CT deadlines."
 altText: "UK landlord reviewing tax calendar and deadlines for 2026-27 tax year"
 image: ""
 h1: "Landlord Tax Calendar 2026/27: Every Key Date You Need"
-summary: "Complete landlord tax calendar for 2026/27 including self assessment deadlines, quarterly MTD returns, and capital gains tax payment dates."
+summary: "The whole 2026/27 landlord tax year in one calendar: Self Assessment filing and payment-on-account dates, the new MTD for Income Tax quarterly cycle, the 60-day CGT clock, corporation tax for company landlords, and the enacted April 2027 property income tax rates."
 schema: ""
 faqs:
+  - question: "What are the key landlord tax dates for 2026/27?"
+    answer: "The spine of the year is built around Self Assessment: 31 July 2026 is the second payment on account for 2025/26, 31 January 2027 is the 2025/26 filing and balancing-payment deadline plus the first 2026/27 payment on account, and 5 April 2027 ends the tax year. Landlords inside Making Tax Digital for Income Tax also file quarterly updates due 7 August 2026, 7 November 2026, 7 February 2027 and 7 May 2027. Anyone selling a rental property has a separate 60-day clock to report and pay any Capital Gains Tax due."
   - question: "When does Making Tax Digital become mandatory for landlords?"
-    answer: "Making Tax Digital for Income Tax becomes mandatory from 6 April 2026 for landlords with gross annual qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). You'll need to submit quarterly returns using MTD-compatible software, with the first return due by 5 August 2026."
-  - question: "What are the key tax deadlines for landlords in 2026/27?"
-    answer: "The main deadlines are: quarterly MTD returns due 5 August, 5 November, 5 February and 5 May; 31 July 2026 for 2025/26 self assessment and payment; 31 January 2027 for 2026/27 self assessment, balancing payment and first payment on account for 2027/28."
-  - question: "How do the new property income tax rates from April 2027 affect landlords?"
-    answer: "From April 2027, property income is taxed at separate rates: 22% basic rate, 42% higher rate, and 47% additional rate. These are higher than general income tax rates and apply regardless of your other income levels."
-  - question: "What happens if I miss a quarterly MTD return deadline?"
-    answer: "Late MTD submission penalties start at £200 for the first failure, rising to £400 for the second failure and £800 for subsequent defaults within 12 months. Interest also applies on any tax due, currently at 7.75% per year."
+    answer: "Making Tax Digital for Income Tax (MTD for ITSA) is live from 6 April 2026 for landlords and sole traders with qualifying income above 50,000 pounds. The threshold falls to 30,000 pounds from 6 April 2027 and 20,000 pounds from 6 April 2028. Limited companies are outside MTD for ITSA entirely. The first quarterly update covers 6 April to 5 July 2026 and is due by 7 August 2026."
+  - question: "What are the MTD quarterly update deadlines for 2026/27?"
+    answer: "The four quarterly updates for the 2026/27 tax year are due on 7 August 2026 (quarter 6 April to 5 July), 7 November 2026 (6 July to 5 October), 7 February 2027 (6 October to 5 January) and 7 May 2027 (6 January to 5 April). Each deadline is the 7th day of the second month after the quarter ends. A calendar-quarter election (quarters ending 30 June, 30 September, 31 December and 31 March) is available from 6 April 2026, but the 5th-of-month tax-year quarters are the default."
+  - question: "Is the MTD first quarterly update really due on the 5th of the month?"
+    answer: "No. Some calendars still show 5 August, 5 November, 5 February and 5 May, which are the quarter-end period dates, not the submission deadlines. The submission deadlines are the 7th of the following month: 7 August, 7 November, 7 February and 7 May. The period ends on the 5th, but you have until the 7th of the second month to file the update."
+  - question: "What happens if I miss a quarterly MTD update?"
+    answer: "Late MTD submissions use a points-based system. You receive one point for each missed quarterly update, and a 200 pound penalty applies only once you reach four points within a rolling 24-month window, then for each further late submission while at the threshold. Points reset after 24 months of full compliance. There is no 200/400/800 pound escalating ladder. HMRC has confirmed a lighter-touch first year for 2026/27 where failures are not deliberate, but that easing does not extend to the Final Declaration or to late payment of tax."
+  - question: "Is 31 July 2026 a filing deadline?"
+    answer: "No. 31 July 2026 is the second payment on account towards your 2025/26 tax bill. It is a payment date, not a filing date. The 2025/26 Self Assessment return and any balancing payment are due by 31 January 2027 under section 59B of the Taxes Management Act 1970."
+  - question: "When do I have to report Capital Gains Tax on a property sale?"
+    answer: "If you are UK resident and dispose of UK residential property at a gain on which Capital Gains Tax is actually due, you must file a CGT on UK property return and pay the tax within 60 days of completion. Where the gain is fully covered by Private Residence Relief, losses or the annual exempt amount, no 60-day return is required for UK residents. Non-UK residents must report every UK land disposal within 60 days, whether or not any tax is due."
+  - question: "What are the Capital Gains Tax rates on residential property in 2026/27?"
+    answer: "Residential property gains are taxed at 18% within your remaining basic-rate band and 24% above it, with an annual exempt amount of 3,000 pounds per individual. These rates have applied since 30 October 2024 and run throughout 2026/27. Trustees and personal representatives pay 24% throughout."
+  - question: "What are the new property income tax rates from April 2027?"
+    answer: "From 6 April 2027, property income in England, Wales and Northern Ireland is taxed at separate rates of 22% basic, 42% higher and 47% additional, enacted by sections 6 and 7 of Finance Act 2026 (Royal Assent 18 March 2026). At the same time the Section 24 finance-cost reducer rises from 20% to 22%, so a basic-rate landlord sees no new wedge open because the reducer matches the 22% rate. Only Scotland is carved out, so Scottish taxpayers pay the Scottish income tax rates on their property income."
+  - question: "When are payments on account due and how much are they?"
+    answer: "If your previous year's Self Assessment bill (after tax already deducted at source) was more than 1,000 pounds, you make two payments on account, each usually 50% of that bill. The first is due by 31 January and the second by 31 July. They are credited against the following year's liability, with any shortfall settled as a balancing payment the next 31 January. You can apply to reduce them if you expect a lower bill, but reducing them too far attracts interest."
+  - question: "What are the corporation tax deadlines for a property company?"
+    answer: "A company landlord files its CT600 corporation tax return within 12 months of its accounting period end and pays the tax within 9 months and 1 day of that period end. For a 31 March year-end, payment is due by 1 January and the return by 31 March the following year. Companies with augmented profits above 1.5 million pounds pay by quarterly instalments instead. The rate is 19% on profits up to 50,000 pounds, with marginal relief between 50,000 and 250,000 pounds, and 25% above 250,000 pounds."
+  - question: "Does HMRC charge a fixed 7.75% on late tax?"
+    answer: "No. HMRC late-payment interest is variable and tracks the Bank of England base rate, so the headline percentage changes whenever the base rate moves. Always check the current rate on the gov.uk HMRC interest rates page rather than relying on a fixed figure. For landlords inside MTD for ITSA, late-payment penalties from 6 April 2026 are 3% of the unpaid tax at 15 days late, a further 3% at 30 days, then 10% per annum from day 31, on top of interest."
+  - question: "Do Scottish and Welsh landlords follow the same calendar?"
+    answer: "The Self Assessment, MTD and Capital Gains Tax dates are the same UK-wide because they are administered by HMRC. The main differences are on transaction taxes: Scotland uses Land and Buildings Transaction Tax with the Additional Dwelling Supplement, and Wales uses Land Transaction Tax. On the April 2027 property income rates, the 22/42/47 rates apply in England, Wales and Northern Ireland; only Scotland is carved out, so Scottish taxpayers pay the Scottish income tax rates on their property income instead."
+  - question: "What should I do before 6 April 2026?"
+    answer: "Confirm whether your gross property and self-employment income for 2024/25 was above 50,000 pounds, which brings you into MTD for ITSA from 6 April 2026. If it was, choose HMRC-recognised compatible software, set up digital record-keeping, and make sure your bookkeeping is ready to support quarterly updates. It is also the moment to make use-it-or-lose-it allowances for 2025/26 and to plan cash flow for the 31 January and 31 July payment dates."
 ---
 
-<p>The <strong>landlord tax calendar 2026</strong> brings significant changes that every property investor needs to understand. With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becoming mandatory</a> and new property income tax rates starting in April 2027, planning your tax obligations has never been more critical.</p>
+<p>The landlord tax year for 2026/27 has more moving parts than any year before it. <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> is live from 6 April 2026, the 60-day Capital Gains Tax clock keeps running for anyone who sells, and the enacted April 2027 property income tax rates are now on the horizon. This page is the single-pane calendar: every key date for the year in one place, with links out to the detailed guides for each deadline.</p>
 
-<p>This comprehensive guide covers every key date in the 2026/27 tax year, from quarterly MTD returns to annual self assessment deadlines. Whether you're managing a single buy-to-let or a substantial property portfolio, missing these dates can result in penalties and cash flow problems.</p>
+<p>Use it as a planning map. The dates below are grouped first into a chronological table you can scan in seconds, then explained section by section so you know exactly which deadlines apply to you, whether you hold property personally, jointly, or through a company.</p>
 
-<h2>Key Dates and Deadlines for 2026/27</h2>
+<h2>2026/27 landlord tax calendar at a glance</h2>
 
-<p><strong>6 April 2026: New Tax Year Begins</strong><br>
-The 2026/27 tax year starts on 6 April 2026. This is when the new income tax bands take effect and Making Tax Digital for Income Tax becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
+<p>The table below lists the load-bearing dates for the 2026/27 tax year in date order. Not every date applies to every landlord: the MTD rows only matter if your qualifying income is above the threshold, and the Capital Gains Tax row only applies if you sell. The "Who it applies to" column tells you which is which.</p>
 
-<p><strong>From 6 April 2026: MTD Quarterly Returns Begin</strong><br>
-If your annual gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), you must start submitting quarterly returns through MTD-compatible software. Your first quarter covers 6 April to 5 July 2026, with the return due by 5 August 2026.</p>
+<table>
+<thead>
+<tr><th>Date</th><th>What is due</th><th>Who it applies to</th></tr>
+</thead>
+<tbody>
+<tr><td>6 April 2026</td><td>2026/27 tax year begins; MTD for Income Tax goes live</td><td>All landlords; MTD start for income above 50,000 pounds</td></tr>
+<tr><td>5 July 2026</td><td>MTD quarter 1 period ends (covers 6 Apr to 5 Jul)</td><td>MTD-mandated landlords</td></tr>
+<tr><td>31 July 2026</td><td>Second payment on account for 2025/26 (a payment date, not a filing date)</td><td>Landlords with a 2024/25 bill over 1,000 pounds</td></tr>
+<tr><td>7 August 2026</td><td>MTD quarter 1 update deadline</td><td>MTD-mandated landlords</td></tr>
+<tr><td>5 October 2026</td><td>MTD quarter 2 period ends (6 Jul to 5 Oct)</td><td>MTD-mandated landlords</td></tr>
+<tr><td>5 October 2026</td><td>Deadline to register for Self Assessment if newly in scope for 2025/26</td><td>First-time landlords with 2025/26 rental income</td></tr>
+<tr><td>31 October 2026</td><td>Paper 2025/26 Self Assessment filing deadline</td><td>Landlords filing on paper (rare)</td></tr>
+<tr><td>7 November 2026</td><td>MTD quarter 2 update deadline</td><td>MTD-mandated landlords</td></tr>
+<tr><td>30 December 2026</td><td>Deadline to file online if you want tax under 3,000 pounds collected via your PAYE code</td><td>Landlords with a PAYE income source</td></tr>
+<tr><td>5 January 2027</td><td>MTD quarter 3 period ends (6 Oct to 5 Jan)</td><td>MTD-mandated landlords</td></tr>
+<tr><td>31 January 2027</td><td>2025/26 online filing deadline, 2025/26 balancing payment, and first 2026/27 payment on account</td><td>All Self Assessment landlords</td></tr>
+<tr><td>7 February 2027</td><td>MTD quarter 3 update deadline</td><td>MTD-mandated landlords</td></tr>
+<tr><td>5 April 2027</td><td>MTD quarter 4 period ends; 2026/27 tax year ends</td><td>All landlords</td></tr>
+<tr><td>6 April 2027</td><td>New property income tax rates begin (England, Wales and NI; Scotland sets its own); MTD threshold drops to 30,000 pounds</td><td>All landlords; new MTD cohort</td></tr>
+<tr><td>7 May 2027</td><td>MTD quarter 4 update deadline (for the 2026/27 year)</td><td>MTD-mandated landlords</td></tr>
+<tr><td>Within 60 days of completion</td><td>Report and pay any Capital Gains Tax on a UK residential property disposal</td><td>Anyone selling at a taxable gain (every disposal if non-resident)</td></tr>
+</tbody>
+</table>
 
-<p><strong>5 July 2026: Q1 MTD Period Ends</strong><br>
-Your first MTD quarter ends on 5 July 2026. This period covers three months of rental income and allowable expenses from the start of the tax year.</p>
+<p>The rest of this guide breaks the calendar into the parts of the system that drive it: the Self Assessment spine, the MTD overlay, the Capital Gains Tax clock, the company route, and the April 2027 change ahead.</p>
 
-<p><strong>31 July 2026: 2025/26 Self Assessment Deadline and Payments</strong><br>
-The final deadline for submitting your 2025/26 self assessment return online. Late filing penalties start at £100. Any remaining tax for 2025/26 must be paid, along with your first payment on account for 2026/27. This can create significant cash flow pressure.</p>
+<h2>The Self Assessment spine: 31 January and 31 July</h2>
 
-<p><strong>5 August 2026: Q1 MTD Return Deadline</strong><br>
-Your first quarterly return for the period 6 April to 5 July 2026 must be submitted. Late submission penalties for MTD returns are £200 for the first failure, rising to £400 and £800 for subsequent defaults within 12 months.</p>
+<p>For most landlords, the backbone of the year is Self Assessment. Two payment dates and one filing date carry the most weight, and confusing them is one of the most common (and expensive) mistakes.</p>
 
-<p><strong>5 October 2026: Q2 MTD Period Ends</strong><br>
-The second MTD quarter (6 July to 5 October 2026) comes to an end.</p>
+<p><strong>31 January 2027</strong> is the deadline to file your 2025/26 tax return online and to pay the balancing payment for that year. It is also the date your first 2026/27 payment on account falls due. The balancing-payment due date is set by section 59B of the Taxes Management Act 1970. Miss the filing deadline and an automatic 100 pound penalty applies even if you owe nothing, followed by daily penalties after three months and tax-geared penalties at six and twelve months.</p>
 
-<p><strong>5 November 2026: Q2 MTD Return Due</strong><br>
-Submit your second quarterly return covering rental income and expenses from 6 July to 5 October 2026.</p>
+<p><strong>31 July 2026</strong> is the second payment on account for 2025/26. This is the date most often misread as a filing deadline. It is not. Nothing is filed on 31 July. It is purely a payment towards the bill you will finalise the following January. You make payments on account if your previous Self Assessment bill (after tax already deducted at source) was more than 1,000 pounds, and each instalment is normally 50% of that bill, due on 31 January and 31 July.</p>
 
-<p><strong>5 January 2027: Q3 MTD Period Ends</strong><br>
-Your third quarter (6 October 2026 to 5 January 2027) ends.</p>
-
-<p><strong>31 January 2027: Critical Multiple Deadlines</strong><br>
-This is arguably the most important date in the <strong>landlord tax calendar 2026</strong>:</p>
+<p>Other Self Assessment dates worth pinning:</p>
 <ul>
-<li>2026/27 self assessment return submission deadline</li>
-<li>Balancing payment for 2026/27 tax due</li>
-<li>Second payment on account for 2026/27 (the remaining 50%)</li>
-<li>Capital gains tax payments for 2026/27 disposals</li>
+<li><strong>5 October 2026:</strong> the deadline to tell HMRC you need to file for 2025/26 if you have not registered before (for example, a first-time landlord who let a property during 2025/26).</li>
+<li><strong>31 October 2026:</strong> the paper filing deadline for the 2025/26 return. Most landlords file online and this date does not apply to them.</li>
+<li><strong>30 December 2026:</strong> the online filing deadline if you want HMRC to collect a balance of under 3,000 pounds through your PAYE tax code rather than as a lump sum, where you have an employment or pension income source.</li>
 </ul>
-<p>The 31 January deadline creates substantial cash flow demands. Many landlords find themselves paying multiple tax obligations on the same day.</p>
 
-<p><strong>5 February 2027: Q3 MTD Return Due</strong><br>
-Submit returns for the quarter ending 5 January 2027.</p>
+<p>For the full mechanics of the filing deadline and the penalties that follow it, see our guide to the <a href="/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026">landlord tax return deadline for 2026</a>. For payment-on-account planning, the same 31 January and 31 July dates carry through into 2027/28.</p>
 
-<p><strong>5 April 2027: Q4 MTD Period Ends</strong><br>
-Your final quarter of 2026/27 (6 January to 5 April 2027) ends just before the new tax rates take effect.</p>
+<aside>
+<p>Not sure whether you are in payment-on-account territory or how the January 2027 cash demand stacks up against your MTD quarters? A property-focused accountant can model the whole year's cash flow for you so nothing lands as a surprise. The enquiry form on this page reaches a specialist property accounting team.</p>
+</aside>
 
-<h2>Making Tax Digital (MTD): Compliance and Planning</h2>
+<h2>Making Tax Digital for Income Tax: the quarterly overlay</h2>
 
-<p>The transition to Making Tax Digital represents the biggest change in the <strong>landlord tax calendar 2026</strong>. Many landlords underestimate the impact. Unlike the current annual tax return system, you'll need to maintain digital records and submit updates four times per year. This represents a fundamental shift in how <strong>tax deadlines landlord</strong> obligations work.</p>
+<p>From 6 April 2026, Making Tax Digital for Income Tax (MTD for ITSA) is live. If your qualifying income (gross rental income plus any self-employment turnover, before expenses) was above <strong>50,000 pounds</strong> on your 2024/25 return, you are in scope from the start of the 2026/27 tax year. The threshold then drops to <strong>30,000 pounds from 6 April 2027</strong> and <strong>20,000 pounds from 6 April 2028</strong>. Joint owners test the threshold against their own share of the gross rent, not the property total. Limited companies are outside MTD for ITSA altogether and continue to file annual corporation tax returns.</p>
 
-<p>Key preparation steps include:</p>
-<p><strong>Before 6 April 2026:</strong></p>
+<p>Being in scope means keeping digital records and submitting four quarterly updates a year through HMRC-recognised compatible software, then a Final Declaration to wrap up the year. The single most-confused point on every calendar is the submission deadline. The quarter <em>period</em> ends on the 5th, but the update is not due until the <strong>7th of the second month</strong> after the quarter ends.</p>
+
+<table>
+<thead>
+<tr><th>Quarter</th><th>Period covered</th><th>Submission deadline</th></tr>
+</thead>
+<tbody>
+<tr><td>Quarter 1</td><td>6 April to 5 July 2026</td><td>7 August 2026</td></tr>
+<tr><td>Quarter 2</td><td>6 July to 5 October 2026</td><td>7 November 2026</td></tr>
+<tr><td>Quarter 3</td><td>6 October 2026 to 5 January 2027</td><td>7 February 2027</td></tr>
+<tr><td>Quarter 4</td><td>6 January to 5 April 2027</td><td>7 May 2027</td></tr>
+<tr><td>Final Declaration</td><td>Whole 2026/27 year</td><td>31 January 2028</td></tr>
+</tbody>
+</table>
+
+<p>You can elect to use calendar quarters instead (ending 30 June, 30 September, 31 December and 31 March), which many landlords find tidier for accounting, but the 5th-of-month tax-year quarters above are the default. The Final Declaration replaces the old annual tax return for in-scope landlords and is still due by the following 31 January.</p>
+
+<p>For the full quarter-by-quarter mechanics, software choices and the digital-records rules, see our detailed guide to the <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly deadlines for 2026/27</a>. The wider scope rules and the case for getting ready early are covered in our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords guide</a>.</p>
+
+<h2>MTD penalties and late-payment charges</h2>
+
+<p>The old assumption that a missed quarterly filing brings an immediate fixed fine is wrong, and the often-quoted 200/400/800 pound escalating ladder does not exist. MTD late-submission penalties are <strong>points-based</strong>:</p>
 <ul>
-<li>Choose and implement MTD-compatible software</li>
-<li>Set up digital record-keeping systems</li>
-<li>Train yourself or your team on quarterly submission requirements</li>
-<li>Register with HMRC for MTD (if gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028))</li>
+<li>You receive <strong>one point</strong> for each quarterly update filed late.</li>
+<li>A <strong>200 pound penalty</strong> applies only once you reach the <strong>4-point threshold</strong> within a rolling 24-month window, then for each further late submission while you remain at the threshold.</li>
+<li>Points reset to zero after 24 months of full compliance.</li>
 </ul>
-<p>Many landlords benefit from <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">professional property accounting support</a> during this transition. The quarterly submission requirement demands more consistent record-keeping than the annual system.</p>
 
-<h3>MTD Record-Keeping Requirements</h3>
-<p>Digital record-keeping becomes mandatory under MTD. You must maintain:</p>
+<p>HMRC has confirmed a <strong>lighter-touch first year for 2026/27</strong>, easing enforcement where failures are genuine rather than deliberate. That easing applies to the quarterly updates only. It does <em>not</em> extend to the Final Declaration and it does <em>not</em> cover late payment of tax.</p>
+
+<p>Late-<em>payment</em> charges are separate from filing penalties. From 6 April 2026, landlords inside MTD for ITSA face an accelerated schedule: <strong>3% of the unpaid tax at 15 days late, a further 3% at 30 days, then 10% per annum from day 31</strong>. This is steeper and faster than the legacy non-MTD schedule, so the 31 January payment date matters more than ever for in-scope landlords. On top of the penalties, HMRC charges interest. That interest rate is <strong>variable and tracks the Bank of England base rate</strong>, so do not rely on any fixed headline figure. Check the live rate on the <a href="https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments" rel="nofollow">gov.uk HMRC interest rates page</a>.</p>
+
+<h2>Capital Gains Tax: the 60-day clock</h2>
+
+<p>Selling a rental property triggers a deadline that has nothing to do with the Self Assessment or MTD cycles. If you are UK resident and dispose of UK residential property at a gain on which Capital Gains Tax is actually due, you must file a CGT on UK property return and pay the estimated tax within <strong>60 days of completion</strong>.</p>
+
+<p>The qualifier matters. Where the gain is fully covered by Private Residence Relief, capital losses, or the annual exempt amount, <strong>no 60-day return is required</strong> for a UK resident. Non-UK residents are treated differently: they must report <strong>every</strong> UK land disposal within 60 days, whether or not any tax is due. HMRC's own guidance confirms the UK-resident rule applies where you "have tax on gains to pay" (see the <a href="https://www.gov.uk/capital-gains-tax/report-and-pay-capital-gains-tax" rel="nofollow">gov.uk report and pay CGT</a> page).</p>
+
+<p>For 2026/27, residential property gains are taxed at <strong>18% within your remaining basic-rate band and 24% above it</strong>, with an annual exempt amount of <strong>3,000 pounds</strong> per individual. These rates have applied since 30 October 2024. The 60-day payment is an estimate: the final position is reconciled on your Self Assessment return for the year, so any adjustment feeds into the following 31 January.</p>
+
+<p>The full reporting mechanics, including how the 60-day figure interacts with your annual return and what happens if you have multiple disposals, are set out in our guide to <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines on property sales</a>.</p>
+
+<h2>Corporation tax: the company landlord cycle</h2>
+
+<p>If you hold property through a limited company, none of the Self Assessment or MTD dates above apply to the company. Companies are outside MTD for ITSA and run their own corporation tax cycle, keyed to the company's accounting period rather than the 5 April tax year:</p>
 <ul>
-<li>Digital records of all rental income</li>
-<li>Digital records of allowable expenses</li>
-<li>Backup and security for digital records</li>
-<li>Records for at least 5 years after the 31 January submission deadline</li>
+<li><strong>Pay corporation tax within 9 months and 1 day</strong> of the accounting period end. For a 31 March year-end, that is 1 January.</li>
+<li><strong>File the CT600 corporation tax return within 12 months</strong> of the accounting period end. For a 31 March year-end, that is 31 March the following year.</li>
+<li>Note the order: payment is due before the return. Companies with augmented profits above <strong>1.5 million pounds</strong> pay by quarterly instalments instead of in a single sum.</li>
 </ul>
-<p>Paper records are no longer sufficient for MTD purposes, though you can digitise existing paper records where necessary.</p>
 
-<h2>Payments on Account and Cash Flow</h2>
-<p>If your previous year's tax bill exceeded £1,000, you'll make payments on account:</p>
-<p><strong>31 July 2026: First payment on account</strong><br>
-50% of the previous year's tax liability.</p>
-<p><strong>31 January 2027: Second payment on account</strong><br>
-The remaining 50%, plus any balancing payment for the current year.</p>
-<p>Many landlords struggle with payments on account because they're based on historical tax bills. If your rental income has grown significantly, the January payment can be substantial. The January deadline creates significant cash demands. Consider setting aside funds monthly rather than scrambling for payment in January.</p>
+<p>The corporation tax rate is <strong>19% on profits up to 50,000 pounds</strong>, with <strong>marginal relief between 50,000 and 250,000 pounds</strong>, and a main rate of <strong>25% above 250,000 pounds</strong>. These thresholds are divided by the number of associated companies, so a landlord running several property companies should check how the bands split. Directors who also draw income personally still have their own Self Assessment dates to keep.</p>
 
-<h2>Capital Gains Tax (CGT) on Property Disposals</h2>
-<p>Capital gains tax on property disposals follows different deadlines. If you sell a rental property during 2026/27:</p>
-<p><strong>60 days after completion: CGT reporting</strong><br>
-You must report the disposal and pay any CGT due within 60 days of completion. This applies to UK residents and is separate from your annual self assessment.</p>
-<p><strong>31 January 2028: Final CGT payment</strong><br>
-Any additional CGT due (after the 60-day payment) is included in your 2026/27 self assessment, due by 31 January 2028.</p>
-<p>Current CGT rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers, with an annual exempt amount of £3,000. These rates apply throughout 2026/27.</p>
+<p>The full corporation tax timetable, including the instalment regime and the penalties for late filing, is covered in our guide to <a href="/blog/incorporation-and-company-structures/corporation-tax-deadlines-and-penalties">corporation tax deadlines and penalties</a>. If you are weighing up whether to incorporate at all, our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> walks through the trade-offs.</p>
 
-<h2>New Property Income Tax Rates from April 2027</h2>
-<p><strong>6 April 2027: New Property Income Tax Rates</strong><br>
-The 2027/28 tax year introduces separate tax rates for property income. This fundamental change affects all landlords, regardless of their total income level. The new rates are:</p>
+<h2>Looking ahead: the April 2027 property income tax rates</h2>
+
+<p>The 2026/27 year ends with a significant change on the horizon. From <strong>6 April 2027</strong>, property income in <strong>England, Wales and Northern Ireland</strong> is taxed at separate rates: <strong>22% basic, 42% higher and 47% additional</strong>. This is enacted law, not a proposal. It was announced at the Autumn Budget 2025 (26 November 2025) and enacted by <strong>sections 6 and 7 of Finance Act 2026</strong>, which received Royal Assent on <strong>18 March 2026</strong>. Only Scotland is carved out, so Scottish taxpayers pay the Scottish income tax rates on their property income. (Section 8 of the same Act holds a future power for Wales and Scotland to set their own property income rates, but it is not in force for 2027/28.)</p>
+
 <ul>
 <li>Basic rate: 22% (was 20%)</li>
 <li>Higher rate: 42% (was 40%)</li>
 <li>Additional rate: 47% (was 45%)</li>
 </ul>
-<p>This return for the quarter ending 5 January 2027 is particularly significant as it covers the final quarter under current tax arrangements.</p>
 
-<h2>Penalty and Interest Charges</h2>
-<p>Understanding penalty dates helps avoid unnecessary costs:</p>
-<p><strong>Late filing penalties:</strong></p>
+<p>A common misreading is that this leaves every landlord worse off, including basic-rate landlords. It does not, and the reason is the Section 24 finance-cost reducer. Finance Act 2026 raises the reducer from 20% to <strong>22%</strong> at the same time, so for a basic-rate landlord the reducer (22%) matches the rate on property income (22%). No new wedge opens for them. Higher and additional-rate landlords still face a finance-cost wedge, but it does not widen: the reducer improves from 20% to 22% while their rates rise by the same 2 points, so the gap stays the same as in 2026/27.</p>
+
+<p>Because the 2026/27 year is the last full year before the change, it is the natural window to model your 2027/28 position and to revisit whether incorporation makes sense for your portfolio. The detail, including worked numbers on the reducer, is in our guide to the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates for landlords</a>.</p>
+
+<h2>What to do before 6 April 2026</h2>
+
+<p>The single highest-value action this year is preparing for MTD before the tax year starts, because the first quarter begins on day one. A short pre-year checklist:</p>
 <ul>
-<li>1 day late: £100 fixed penalty</li>
-<li>3 months late: Additional £10 per day (maximum £900)</li>
-<li>6 months late: Additional 5% of tax due (minimum £300)</li>
-<li>12 months late: Additional 5% of tax due (minimum £300)</li>
+<li><strong>Check your status.</strong> Confirm whether your 2024/25 qualifying income was above 50,000 pounds. If it was, you are in MTD from 6 April 2026.</li>
+<li><strong>Choose software.</strong> Pick an HMRC-recognised compatible package (or a spreadsheet-plus-bridging setup that is on the list) and have it ready before the year begins.</li>
+<li><strong>Set up digital record-keeping.</strong> Quarterly filing demands more consistent bookkeeping than the old annual system; get the routine in place early.</li>
+<li><strong>Use 2025/26 allowances.</strong> Make sure any use-it-or-lose-it reliefs and your annual exempt amount are not wasted before 5 April 2026.</li>
+<li><strong>Plan cash flow.</strong> Map the 31 January and 31 July payment dates against your rent receipts so the demands do not bunch up.</li>
 </ul>
-<p><strong>Late payment interest:</strong><br>
-Currently 7.75% per year, calculated from the day after the due date. Interest compounds daily, making prompt payment essential.</p>
 
-<h2>Corporation Tax for Property Companies</h2>
-<p>If you operate through a limited company, corporation tax deadlines run independently:</p>
-<p><strong>9 months after year-end: CT600 filing deadline</strong><br>
-For a company with a March year-end, returns are due by 31 December.</p>
-<p><strong>9 months and 1 day after year-end: Corporation tax payment</strong><br>
-Tax must be paid by this date to avoid interest charges.</p>
-<p>Companies with profits exceeding £1.5m must make quarterly instalment payments, creating additional cash flow considerations. The current corporation tax rate is 19% for profits up to £50,000, with marginal relief up to £250,000, and a main rate of 25% for profits above £250,000.</p>
+<p>For a structured pre-year-end run-through, see our <a href="/blog/landlord-tax-essentials/end-tax-year-checklist-landlords-april-2026">end of tax year checklist for landlords</a>. To get the timing of larger expenses right against your tax position, our list of <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable landlord tax deductions</a> shows what counts and when to claim it.</p>
 
-<h2>Strategic Planning and Key Actions</h2>
-<p>The complexity of MTD and changing tax rates makes professional support increasingly valuable. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Choosing the right property accountant</a> can save both time and money.</p>
+<h2>Where the calendar differs across the UK</h2>
 
-<p><strong>Incorporation timing:</strong><br>
-With separate property tax rates from April 2027, some landlords may benefit from <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporating their property business</a>. The timing of any incorporation affects which tax rates apply.</p>
-
-<p><strong>Expense planning:</strong><br>
-Understanding <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable deductions</a> becomes more valuable as tax rates increase. Timing major expenses can optimise tax relief.</p>
-
-<h3>Your 2026/27 Action Plan</h3>
-<p>The <strong>self assessment dates 2026</strong> timeline requires careful planning. Key actions include:</p>
-<p><strong>Immediate (before April 2026):</strong></p>
+<p>The Self Assessment, MTD and Capital Gains Tax dates in this calendar are UK-wide, because HMRC administers them for the whole UK. The differences sit elsewhere:</p>
 <ul>
-<li>Implement MTD-compatible software</li>
-<li>Establish quarterly submission processes</li>
-<li>Review cash flow planning for increased tax rates</li>
+<li><strong>Transaction taxes on purchase.</strong> England and Northern Ireland use Stamp Duty Land Tax with a 5% additional-dwellings surcharge. Scotland uses Land and Buildings Transaction Tax with an 8% Additional Dwelling Supplement, payable to Revenue Scotland. Wales uses Land Transaction Tax with its own higher rates for additional properties, payable to the Welsh Revenue Authority. Each has its own filing and payment deadline tied to completion, not to the income tax calendar.</li>
+<li><strong>The April 2027 property income rates.</strong> The 22/42/47 rates apply in England, Wales and Northern Ireland; only Scotland is carved out, so Scottish taxpayers pay the Scottish income tax rates on their property income. Section 8 of Finance Act 2026 holds a future power for Wales and Scotland to set their own property income rates, but it is not in force for 2027/28.</li>
 </ul>
-<p><strong>Throughout 2026/27:</strong></p>
-<ul>
-<li>Submit quarterly MTD returns by the 5th of each submission month</li>
-<li>Maintain digital records continuously</li>
-<li>Plan for the 31 January 2027 payment deadlines</li>
-</ul>
-<p><strong>Planning for 2027/28:</strong></p>
-<ul>
-<li>Model the impact of separate property tax rates</li>
-<li>Consider incorporation if beneficial</li>
-<li>Review property portfolio strategy under new tax rules</li>
-</ul>
-<p>The changes in 2026/27 represent a step-change in landlord tax obligations. Early preparation and professional support can help navigate these changes effectively while maintaining profitability in your property investments.</p>
+
+<p>If your portfolio spans more than one UK nation, the income tax calendar is shared but the purchase-tax and 2027 rate positions are not, so it is worth a single review to keep them aligned.</p>
+
+<h2>How a property accountant keeps the calendar on track</h2>
+
+<p>The 2026/27 year layers a quarterly MTD rhythm on top of the annual Self Assessment spine, with the 60-day CGT clock and the company cycle running independently. The practical risk is not any single date but the way several can collide, most obviously around 31 January. A specialist property accounting team handles the diary, the software, the quarterly filings and the cash-flow modelling so the deadlines stop being something you chase.</p>
+
+<p>If you are choosing who to work with, our guides on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> and <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant actually does</a> set out what good looks like. To talk through your own 2026/27 timetable, use the enquiry form on this page and a property specialist will be in touch.</p>

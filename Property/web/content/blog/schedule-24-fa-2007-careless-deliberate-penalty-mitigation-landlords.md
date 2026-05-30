@@ -154,7 +154,7 @@ faqs:
 <li><strong>Schedule 56 FA 2009:</strong> late payment of tax assessed. Procedural; surcharges at 30 days, 6 months and 12 months past the due date.</li>
 </ul>
 
-<p>On the same facts a landlord can face penalties under more than one regime. A landlord who never registered for self-assessment for some years (Schedule 41 territory), then filed inaccurate returns for later years (Schedule 24 territory), then filed late for further years (Schedule 55 territory), then paid late on the resulting assessments (Schedule 56 territory) is within all four regimes simultaneously on different limbs. Our <a href="/blog/landlord-tax-essentials/hmrc-penalties-late-landlord-tax-returns-2026">HMRC late-landlord-tax-returns coverage</a> separates Schedule 55 and Schedule 56 from the Schedule 24 inaccuracy mechanics covered here. Penalties do not double-count on the same tax loss but each regime applies to its own statutory failure.</p>
+<p>On the same facts a landlord can face penalties under more than one regime. A landlord who never registered for self-assessment for some years (Schedule 41 territory), then filed inaccurate returns for later years (Schedule 24 territory), then filed late for further years (Schedule 55 territory), then paid late on the resulting assessments (Schedule 56 territory) is within all four regimes simultaneously on different limbs. Our <a href="/blog/landlord-tax-essentials/late-filing-and-late-payment-penalties">HMRC late-landlord-tax-returns coverage</a> separates Schedule 55 and Schedule 56 from the Schedule 24 inaccuracy mechanics covered here. Penalties do not double-count on the same tax loss but each regime applies to its own statutory failure.</p>
 
 <h2>Operational playbook for a Schedule 24 penalty assessment</h2>
 

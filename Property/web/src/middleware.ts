@@ -221,7 +221,6 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "buy-to-let-limited-company-mortgage-rates-2026-market-guide": "incorporation-and-company-structures",
   "non-resident-cgt-uk-property-rates-reporting": "non-resident-landlord-tax",
   "cgt-inherited-rental-property-calculation-uk": "capital-gains-tax",
-  "hmrc-penalties-late-landlord-tax-returns-2026": "landlord-tax-essentials",
   "deposit-buy-to-let-2026-mortgage-requirements": "landlord-tax-essentials",
   "end-tax-year-checklist-landlords-april-2026": "landlord-tax-essentials",
   "how-to-calculate-net-rental-income-after-all-costs-uk-guide": "landlord-tax-essentials",
@@ -337,6 +336,9 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {
+  // Track 2 SA-Deductions batch collapse (2026-05-30, guard ALLOW + adversarial intent-check SAFE; source 0 equity into ICAEW-reviewed canonical). Source removed; inbound links repointed.
+  // NOTE: the penalties-not-declaring-rental-income-hmrc collapse was REVERSED 2026-05-30 - adversarial intent-validation found the Let-Property-Campaign canonical orphans the source's distinct detection / penalty-bands / discovery-time-limit intent; source restored, kept as the penalties pillar (rewrite later).
+  "hmrc-penalties-late-landlord-tax-returns-2026": "/blog/landlord-tax-essentials/late-filing-and-late-payment-penalties",
   // Track 2 NonResident batch collapse (2026-05-30): non-resident-cgt-selling-overseas-guide -> non-resident-cgt-uk-property-rates-reporting.
   // Guard ALLOW: canonical dominates (6,169w/13 FAQs/ICAEW-reviewed/22 inbound vs source 1,943w/4 FAQs/no reviewer/10 inbound; both 0 sustained GSC, source only 12 Bing impr). Source .md removed; 10 inbound links repointed.
   "non-resident-cgt-selling-uk-property-overseas-guide": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",

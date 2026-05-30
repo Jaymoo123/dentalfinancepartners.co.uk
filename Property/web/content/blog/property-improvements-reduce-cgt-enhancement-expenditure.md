@@ -24,7 +24,7 @@ faqs:
 ---
 
 <p>When you sell a rental property, <strong>enhancement expenditure CGT property</strong> rules can significantly reduce your capital gains tax liability. Enhancement expenditure covers qualifying improvements you've made to the property that increase its value or extend its useful life. Understanding which costs qualify and how to claim them correctly could save you thousands in CGT.</p>
-<p>Enhancement expenditure is one of the allowable deductions when calculating your capital gain, alongside the original purchase price, buying costs, and selling costs. However, HMRC has specific rules about what counts as enhancement versus routine maintenance, and getting this wrong can be costly.</p>
+<p>Enhancement expenditure is one of the allowable deductions when calculating your capital gain, alongside the original purchase price, buying costs, and selling costs. However, HMRC has specific rules about what counts as enhancement versus routine maintenance, and getting this wrong can be costly. The first step is always to decide whether a cost is capital or revenue at all: our <a href="/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk">capital vs revenue expenditure decision guide</a> sets out the four HMRC tests that make that call.</p>
 
 <h2>What Is Enhancement Expenditure for CGT?</h2>
 <p>Enhancement expenditure refers to capital spending on improvements that enhance the value of your property or extend its useful life. These costs are added to your property's base cost when calculating capital gains tax, effectively reducing your taxable gain.</p>

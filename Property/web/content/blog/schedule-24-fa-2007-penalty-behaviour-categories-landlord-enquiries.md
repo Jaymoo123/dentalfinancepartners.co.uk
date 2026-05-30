@@ -175,7 +175,7 @@ faqs:
 <ul>
 <li><strong>Schedule 24 FA 2007</strong> (inaccuracy in returns and documents). This page.</li>
 <li><strong>Schedule 41 FA 2008</strong> (failure to notify chargeability). Bites where a landlord never registered for self-assessment despite having rental income, under TMA 1970 section 7. Standard maxima 30 / 70 / 100 per cent of potential lost revenue, with a within-12-months 0 per cent floor for non-deliberate unprompted disclosure that does not feature in Schedule 24. See <a href="/blog/landlord-tax-essentials/penalties-not-declaring-rental-income-hmrc">our coverage of penalties for not declaring rental income</a>.</li>
-<li><strong>Schedule 55 FA 2009</strong> (late filing). £100 fixed penalty, daily £10 charges, 5 per cent / £300 milestone penalties. See <a href="/blog/landlord-tax-essentials/hmrc-penalties-late-landlord-tax-returns-2026">our coverage of HMRC penalties for late landlord tax returns</a>.</li>
+<li><strong>Schedule 55 FA 2009</strong> (late filing). £100 fixed penalty, daily £10 charges, 5 per cent / £300 milestone penalties. See <a href="/blog/landlord-tax-essentials/late-filing-and-late-payment-penalties">our coverage of HMRC penalties for late landlord tax returns</a>.</li>
 <li><strong>Schedule 56 FA 2009</strong> (late payment). 5 per cent surcharges at 30 days, 6 months and 12 months past payment deadline.</li>
 <li><strong>Schedule 18 FA 2017</strong> (Failure to Correct, the offshore disclosure regime with a 30 September 2018 deadline and post-deadline 200 per cent / 100 per cent penalty bands). Relevant only to offshore landlord disclosures that should have been made by 30 September 2018.</li>
 </ul>
