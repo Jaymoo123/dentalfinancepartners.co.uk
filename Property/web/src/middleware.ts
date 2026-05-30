@@ -328,25 +328,21 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "cgt-record-keeping-property-sales-what-to-save-how-long": "capital-gains-tax",
   "property-improvements-reduce-cgt-enhancement-expenditure": "capital-gains-tax",
   "cgt-main-residence-election-two-properties": "capital-gains-tax",
+  // Restored 2026-05-30 (rewrite-only rule): flat->categorised entries for the
+  // collapse-reversed pages that carried one before being collapsed.
+  "non-resident-cgt-selling-uk-property-overseas-guide": "non-resident-landlord-tax",
+  "hmrc-penalties-late-landlord-tax-returns-2026": "landlord-tax-essentials",
+  "mtd-penalties-landlords-miss-deadline": "making-tax-digital-mtd",
+  "mtd-quarterly-reporting-landlords-step-by-step-guide": "making-tax-digital-mtd",
+  "rental-income-tax-uk-complete-guide-landlords": "section-24-and-tax-relief",
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {
-  // Track 2 MTD + GeneralGuides SAFE collapses (2026-05-30, intent-validated).
-  "mtd-penalties-landlords-miss-deadline": "/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch",
-  "mtd-quarterly-reporting-landlords-step-by-step-guide": "/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords",
-  "buy-to-let-accountants-near-me-guide": "/blog/property-accountant-services/property-accountant-near-me",
-  "rental-income-tax-uk-complete-guide-landlords": "/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide",
-  // Track 2 CapitalAllowances batch collapses (2026-05-30, guard ALLOW + adversarial intent-validation SAFE).
-  "aia-capital-allowance-property-landlords": "/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk",
-  "capital-allowance-aia-property-landlords": "/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk",
-  "aia-capital-allowances": "/blog/section-24-and-tax-relief/annual-investment-allowance-uk",
-  "annual-investment-allowance-2025": "/blog/section-24-and-tax-relief/annual-investment-allowance-uk",
-  // Track 2 SA-Deductions batch collapse (2026-05-30, guard ALLOW + adversarial intent-check SAFE; source 0 equity into ICAEW-reviewed canonical). Source removed; inbound links repointed.
-  // NOTE: the penalties-not-declaring-rental-income-hmrc collapse was REVERSED 2026-05-30 - adversarial intent-validation found the Let-Property-Campaign canonical orphans the source's distinct detection / penalty-bands / discovery-time-limit intent; source restored, kept as the penalties pillar (rewrite later).
-  "hmrc-penalties-late-landlord-tax-returns-2026": "/blog/landlord-tax-essentials/late-filing-and-late-payment-penalties",
-  // Track 2 NonResident batch collapse (2026-05-30): non-resident-cgt-selling-overseas-guide -> non-resident-cgt-uk-property-rates-reporting.
-  // Guard ALLOW: canonical dominates (6,169w/13 FAQs/ICAEW-reviewed/22 inbound vs source 1,943w/4 FAQs/no reviewer/10 inbound; both 0 sustained GSC, source only 12 Bing impr). Source .md removed; 10 inbound links repointed.
-  "non-resident-cgt-selling-uk-property-overseas-guide": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
+  // NOTE 2026-05-30: the 10 not-yet-deployed Track 2 collapses (NonResident x1,
+  // SA-Deductions x1, CapitalAllowances x4, MTD/GeneralGuides x4) were REVERSED
+  // under the user's rewrite-only rule - the source .md files were restored and
+  // these pages re-entered the rewrite queue. See memory feedback_rewrite_only_no_collapse.
+  // The already-DEPLOYED collapses below (batch 3, CityService, Phase 3, Wave 6, etc.) stay.
   // Track 2 batch 3 collapse (2026-05-30): landlord-expenses-allowable -> landlord-tax-deductions.
   // Guard ALLOW: canonical dominates (84 impr/pos 53/61 inbound vs source 30 impr/pos 80/4 inbound). Source .md removed.
   "landlord-expenses-allowable-uk-2026": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
