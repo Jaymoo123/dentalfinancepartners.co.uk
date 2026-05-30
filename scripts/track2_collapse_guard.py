@@ -21,6 +21,14 @@ MONITORED-AWARE: a page rewritten in the last RECENT_REWRITE_DAYS days is mid-
 recovery (its GSC is artificially low), so it is never collapsed on current
 numbers - we don't throw away a page we just invested in.
 
+TARGET-ESTABLISHMENT (R6): the collapse target must itself be a proven ranking
+asset. The source-protection rules above do not stop a collapse INTO a brand-new
+or zero-equity page. Redirecting an indexed page into a page search engines have
+not yet ranked (no clicks, below the sustained floor, < MIN_WEEKS weeks present)
+is the wrong direction - it bins the source's existing index presence on a bet.
+So a collapse into an unproven target (when the source is the more-established of
+the two) is REVERSED: rewrite the source, or wait until the target ranks.
+
 VERDICT
   ALLOW    - safe to 301 source -> canonical (target >= source, source not protected).
   REVERSED - source is a sustained ranker / recently-rewritten; collapsing loses
@@ -123,8 +131,13 @@ def enrich(slug: str) -> dict:
     m["exists"] = (BLOG / f"{slug}.md").exists()
     mon = monitored(slug)
     m["monitored"] = mon
+    # R5 refinement: a row with rewrite_type='redirect' is the redirect's OWN
+    # monitored record - it must not "protect" the slug from being (re)collapsed
+    # on the strength of its own redirect entry (self-referential). Only genuine
+    # rewrites/keepers earn mid-recovery protection.
     m["monitored_recent"] = bool(mon and mon["days_since"] is not None
-                                 and mon["days_since"] <= RECENT_REWRITE_DAYS)
+                                 and mon["days_since"] <= RECENT_REWRITE_DAYS
+                                 and mon.get("rewrite_type") != "redirect")
     return m
 
 
@@ -155,6 +168,21 @@ def evaluate(src: dict, can: dict) -> tuple[str, list[str]]:
     if src["monitored_recent"]:
         reasons.append(f"source is an ACTIVE monitored rewrite ({src['monitored']['days_since']}d ago) - "
                        f"its GSC is mid-recovery; do not collapse a page we just invested in")
+    # R6 - target must be an ESTABLISHED asset. The other rules only check the
+    # source is weak enough to give up; none checked that the destination is
+    # actually stronger. Collapsing an indexed page into a brand-new / unproven
+    # canonical (no clicks, below the sustained floor, present in < MIN_WEEKS
+    # weeks) is the wrong direction: you bin the source's existing index presence
+    # and bet on a page search engines have not yet ranked. Rewrite the source,
+    # or wait until the target proves it ranks, then collapse weaker->proven.
+    can_unproven = (can["clk"] == 0 and can["sustained"] < SUSTAIN_FLOOR
+                    and can["weeks_present"] < MIN_WEEKS)
+    if can_unproven and src["impr"] > can["impr"]:
+        reasons.append(f"target is NOT an established ranking asset (clicks 0, sustained "
+                       f"{can['sustained']} impr over {can['weeks_present']} weeks) while the source is "
+                       f"more established ({src['impr']} vs {can['impr']} impr) - collapsing into an "
+                       f"unproven/brand-new page is the wrong direction; rewrite the source or wait "
+                       f"until the target ranks")
 
     return ("REVERSED" if reasons else "ALLOW"), reasons
 

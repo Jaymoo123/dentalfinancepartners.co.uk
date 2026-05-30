@@ -12,6 +12,7 @@ export const meta = {
 const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
 const slugs = A.slugs || []
 const cluster = A.cluster || 'unknown'
+const briefDir = A.briefDir || 'briefs/property/track2/batch3'
 if (!slugs.length) { log('No slugs passed in args.slugs'); return [] }
 log(`Track 2 rewrite engine: ${slugs.length} page(s) in cluster ${cluster}`)
 
@@ -71,8 +72,8 @@ const draftBrief = (prev) => agent(
 ${REQUIRED_READING}
 Diagnosis to build on: ${JSON.stringify(prev.diagnosis)}
 Draft a complete gold-reference rewrite brief matching the depth and 15-section structure of the gold-reference and birmingham city templates above. The brief must include: gap-mode diagnosis, the primary + secondary query targets, the cannibalisation/distinctiveness statement, the section-by-section content plan to ~${prev.diagnosis.target_word_count} words, the statute spine (every section number with its Act, to be verified), the competitor depth benchmark, internal-link targets within the live corpus, and the metaTitle/metaDescription/h1 plan. Obey every HARD RULE (no pricing, no em-dashes, anonymised proof).
-WRITE the brief to briefs/property/track2/batch3/${prev.slug}.md (create the directory if needed via the Write tool path).
-Return a JSON object with: { "brief_path": "briefs/property/track2/batch3/${prev.slug}.md", "statute_citations": ["TCGA 1992 s.222", ...], "word_target": <number>, "summary": "<3-sentence summary of the rewrite approach>" }.`,
+WRITE the brief to ${briefDir}/${prev.slug}.md (create the directory if needed via the Write tool path).
+Return a JSON object with: { "brief_path": "${briefDir}/${prev.slug}.md", "statute_citations": ["TCGA 1992 s.222", ...], "word_target": <number>, "summary": "<3-sentence summary of the rewrite approach>" }.`,
   { label: `brief:${prev.slug}`, phase: 'Brief', schema: BRIEF_SCHEMA }
 ).then(b => ({ ...prev, brief: b, brief_path: b.brief_path }))
 
@@ -85,7 +86,8 @@ const results = await pipeline(
 ${REQUIRED_READING}
 Do this:
 1. Read the current live page at Property/web/content/blog/${slug}.md (frontmatter + body). Count its body words.
-2. Pull GSC performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM gsc_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' GROUP BY query ORDER BY impr DESC LIMIT 15;"\` to see what it ranks for. (Empty = INVISIBLE page.)
+2. Pull GSC performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM gsc_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' GROUP BY query ORDER BY impr DESC LIMIT 15;"\` to see what it ranks for on Google. (Empty = INVISIBLE on Google.)
+2b. Pull BING performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM bing_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' AND date=(SELECT MAX(date) FROM bing_query_data WHERE site_key='property') GROUP BY query ORDER BY impr DESC LIMIT 15;"\`. Many legacy pages rank PAGE 1 on Bing while page 4-8 on Google for the same intent: that is proven demand and evidence the core answer works. Fold the Bing query universe into the primary/secondary target set, and weigh it in the rewrite-vs-collapse call (a page with strong Bing equity must NOT be collapsed).
 3. Cannibalisation scan: Grep Property/web/content/blog for other pages targeting the same intent (for a city page, other pages for the same city/region; for a topic page, sibling topics). Decide: is this a REWRITE (distinct intent, worth lifting) or a REDIRECT-COLLAPSE (a stronger canonical already owns the intent)?
    CRITICAL collapse-direction rule: a REDIRECT-COLLAPSE 301s THIS page away into a canonical, so it must only ever point a WEAKER page at a STRONGER one. Before proposing redirect-collapse you MUST pull the candidate canonical's OWN GSC the same way (re-run the step-2 query with the canonical's slug) and compare impressions + position + clicks, plus rough internal inbound-link counts. NEVER collapse a page that ranks better, gets more impressions, or has more inbound links than the target - that destroys ranking equity. If THIS page is the stronger one, the decision is REWRITE (and, if anything, the weaker page should later redirect into this one). A deterministic equity guard re-checks every collapse and will reject a reversed-equity direction, so get it right here.
 4. Find the top 2-4 competitor URLs ranking for the primary query (WebFetch a Google/Bing search or known specialist competitor sites; confirm each URL is live).

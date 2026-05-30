@@ -1,138 +1,162 @@
 ---
-title: 'Annual Investment Allowance for UK Landlords: A Complete Guide'
+title: 'Annual Investment Allowance for UK Landlords: Who Can Actually Claim It'
 slug: annual-investment-allowance-landlords-uk
 canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk
 date: '2026-05-20'
 author: Property Tax Partners Editorial Team
 category: Section 24 & Tax Relief
-metaTitle: 'Annual Investment Allowance: Guide for UK Landlords'
-metaDescription: Learn how the annual investment allowance works for UK landlords. Claim up to £1m on plant and machinery. Includes rules for companies and sole traders.
-altText: A UK landlord reviewing a capital allowances claim form with a calculator and property portfolio documents on a desk
+metaTitle: 'Can Landlords Claim the Annual Investment Allowance?'
+metaDescription: "Most residential landlords cannot claim the annual investment allowance on dwelling plant (CAA 2001 s.35). See the three exceptions and what to claim instead."
+altText: "A UK landlord reviewing a capital allowances claim against property records with a calculator on a desk"
 image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'Annual Investment Allowance for UK Landlords: A Complete Guide'
-summary: The annual investment allowance (AIA) lets UK landlords claim up to £1 million on qualifying plant and machinery. This guide explains who can claim, what qualifies, and how the rules differ for limited companies, sole traders, and partnerships.
+h1: 'Annual Investment Allowance for UK Landlords: Who Can Actually Claim It'
+summary: "For an ordinary residential let, the annual investment allowance on plant inside the dwelling is blocked by CAA 2001 s.35. This guide explains the dwelling-house bar, the three situations where a landlord genuinely can claim, the relief residential landlords use instead, and how the £1 million cap and the 2026 first-year allowance changes work."
 schema: ''
 faqs:
-- question: Can I claim the annual investment allowance on a buy-to-let property I own personally?
-  answer: Yes, you can claim the AIA on qualifying plant and machinery in a personally owned buy-to-let property, provided you use accruals accounting. If you use the cash basis, you can only claim capital allowances on business cars, not on fixtures or furnishings in the property. Most residential landlords with small portfolios use the cash basis, so check your accounting method before claiming.
-- question: Does the annual investment allowance apply to second-hand plant and machinery?
-  answer: Yes, the AIA applies to both new and second-hand plant and machinery, as long as it qualifies as plant and machinery for tax purposes. The value for capital allowances is what you paid for it. If you owned the item before starting to use it in your rental business, you use the market value at the date you brought it into the business.
-- question: What is the annual investment allowance limit for the 2025/26 tax year?
-  answer: The AIA limit is £1 million per 12-month accounting period for the 2025/26 tax year. This limit has been in place since 1 January 2019 and is not due to change. If your accounting period is shorter than 12 months, the limit is proportionally reduced. For example, a 6-month period gives a £500,000 cap.
-- question: Can I claim the annual investment allowance if my property business makes a loss?
-  answer: Yes, you can still claim the AIA even if your property business makes a loss. The AIA can create or increase a loss. For limited companies, the loss can be carried forward against future profits or, in some cases, carried back. For sole traders, the loss may be set against other income or carried forward. Speak to a specialist property accountant for advice on your specific situation.
-dateModified: '2026-05-20'
-sourcesVerifiedAt: '2026-05-20'
+- question: "Can you claim capital allowances on investment property in the UK?"
+  answer: "It depends on what the property is and where the plant sits. For an ordinary residential buy-to-let, capital allowances on plant and machinery inside the let dwelling are blocked by CAA 2001 s.35, so the annual investment allowance does not apply to the boiler, kitchen, bathroom or furnishings in the flat itself. You can still claim on plant in the communal common parts of a multi-let building, on commercial or mixed-use commercial space, and on a grandfathered furnished-holiday-let pool. For replacing furniture and white goods in a let dwelling, residential landlords use Replacement of Domestic Items Relief instead, which is an income or corporation tax deduction rather than a capital allowance."
+- question: "Can a buy-to-let landlord claim the annual investment allowance on a flat or house they let out?"
+  answer: "Not on plant inside the dwelling itself. CAA 2001 s.35(2) states that expenditure on plant or machinery for use in a dwelling-house is not qualifying expenditure for a property business, so the annual investment allowance cannot be claimed on a boiler, central heating, fitted kitchen, bathroom suite, white goods or furniture inside an ordinary let dwelling. The bar applies whether you hold the property personally or through a company. The exceptions are communal common parts, commercial or non-dwelling areas, and pre-abolition furnished-holiday-let pools."
+- question: "Can I claim AIA on a new boiler in my rental property?"
+  answer: "Not if the boiler serves an individual let dwelling, because CAA 2001 s.35 bars plant for use in a dwelling-house. You can claim on a communal boiler that heats the common parts of a block of flats or a house in multiple occupation, because that plant is not in any single dwelling-house. If the boiler is in a self-contained flat you let out, the annual investment allowance does not apply, although you may be able to treat a like-for-like replacement of a domestic heating item as a repair against rental profits depending on the facts."
+- question: "Can I claim the annual investment allowance on furniture in a furnished let?"
+  answer: "No. Furniture, white goods and furnishings inside a let dwelling are caught by the s.35 dwelling-house bar, so the annual investment allowance does not apply. Residential landlords instead use Replacement of Domestic Items Relief (ITTOIA 2005 s.311A for income tax, CTA 2009 s.250A for companies), which gives an income or corporation tax deduction for the cost of replacing a domestic item with a broadly equivalent one, less any proceeds from the old item. The initial purchase of furniture is not relieved, only the replacement."
+- question: "What is the annual investment allowance limit for 2026/27?"
+  answer: "The annual investment allowance is £1,000,000 per 12-month chargeable period (CAA 2001 s.51A(5)). This £1 million cap was made permanent from 1 April 2023 by Finance (No. 2) Act 2023 s.8, so the earlier framing about a temporary cap reverting to £200,000 is out of date. If your accounting period is shorter than 12 months the cap is reduced proportionately, and a period longer than 12 months is split into 12-month tranches."
+- question: "Is there an annual investment allowance calculator?"
+  answer: "A calculator only helps once you have established that you have qualifying expenditure in the first place, which for a residential landlord is the harder question. The mechanics are straightforward: qualifying spend up to £1,000,000 in the chargeable period gets a 100% deduction, and anything above the cap goes into the main pool (14% writing-down allowance from April 2026) or the special-rate pool (6%). Because the s.35 dwelling-house bar removes most residential plant from the equation, the first step is always to work out what, if anything, actually qualifies rather than to reach for a calculator."
+- question: "Does the annual investment allowance apply to commercial property?"
+  answer: "Yes. Commercial property does not face the s.35 dwelling-house restriction, so plant and integral features in offices, shops, warehouses and other non-dwelling space can qualify for the annual investment allowance up to the £1,000,000 cap. Mixed-use buildings are apportioned: the commercial part can qualify while the dwelling part is barred. Companies holding commercial property can also use full expensing on new and unused main-rate plant, which is a separate company-only relief."
+- question: "Can a property SPV claim full expensing?"
+  answer: "A company SPV can claim full expensing (CAA 2001 s.45S, a 100% first-year allowance on new and unused main-rate plant) only where the underlying expenditure qualifies, which for a property SPV means commercial or non-dwelling plant. Full expensing is company-only, so individual landlords and partnerships cannot use it. A pure residential buy-to-let SPV gets no full expensing on plant inside the let dwellings because s.35 removes that expenditure from qualifying status before full expensing is ever reached."
+- question: "Do multiple property SPVs each get their own £1 million annual investment allowance?"
+  answer: "Not always. Where two or more companies are under common control and related to each other (CAA 2001 s.51E, using the shared-premises test or the similar-activities test in s.51G), they share a single £1,000,000 annual investment allowance between them rather than each receiving a full cap. Landlords running several property SPVs under common control should check whether the companies are related before assuming each has its own allowance, because the single shared cap is a common and expensive trap."
+- question: "Can I still claim capital allowances on a former furnished holiday let?"
+  answer: "You can continue to write down a plant-and-machinery pool that was already established for a furnished-holiday-let business before abolition, but you cannot start a new furnished-holiday-let claim. The furnished-holiday-let regime was abolished from 1 April 2025 for corporation tax and 6 April 2025 for income tax by Finance Act 2025 Schedule 5. Existing pool balances transfer into the ordinary property-business pool and keep receiving writing-down allowances, but any new expenditure must satisfy the ordinary rules, which means the s.35 dwelling-house bar applies to new spend."
+- question: "Can a landlord claim the new 40% first-year allowance introduced in 2026?"
+  answer: "A landlord can claim the 40% first-year allowance (Finance Act 2026 s.29, inserting CAA 2001 s.45U) only on qualifying main-rate plant that is new and unused, incurred on or after 1 January 2026, and only where that plant is not caught by the s.35 dwelling-house bar. Unlike full expensing, the 40% allowance is available to unincorporated businesses as well as companies, so an individual landlord could in principle use it on qualifying non-dwelling plant, for example in the commercial part of a mixed-use building or in communal common parts. Cars and second-hand or used assets are excluded."
+- question: "Does the annual investment allowance apply to second-hand plant?"
+  answer: "Yes, the annual investment allowance can be claimed on second-hand as well as new plant, provided the expenditure qualifies in the first place. This is one of the differences between the annual investment allowance and the first-year allowances: full expensing (s.45S) and the new 40% allowance (s.45U) both require the plant to be new and unused, whereas the annual investment allowance has no such restriction. Cars are excluded from the annual investment allowance regardless of whether they are new or used."
+- question: "Can I claim the annual investment allowance if my property business makes a loss?"
+  answer: "Where you have qualifying expenditure, the annual investment allowance can be claimed even if it creates or increases a loss. For companies, a resulting loss can be carried forward against future profits or, in some cases, carried back. For individuals and partnerships, property-business losses generally carry forward against future profits of the same property business. The point that catches landlords out is usually not the loss rules but whether there was any qualifying expenditure at all, given the s.35 dwelling-house bar."
+- question: "Why does HMRC let me deduct a new kitchen but not let me claim the annual investment allowance on it?"
+  answer: "These are two different reliefs. The annual investment allowance is a capital allowance, and s.35 bars it on plant in a let dwelling. Replacing an existing kitchen on a like-for-like basis can instead be a revenue repair deductible against rental profits, and replacing standalone domestic items such as white goods can qualify for Replacement of Domestic Items Relief. So you may well get tax relief for the spend, just not through the annual investment allowance, and getting the route right matters because the rules and records differ."
+dateModified: '2026-05-30'
+sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
-- aka.hmrc.gov.uk
+- legislation.gov.uk
 - gov.uk
-- icaew.com
 imageCredit:
   photographer: Jakub Zerdzicki
   photographer_url: https://www.pexels.com/@jakubzerdzicki
   source: Pexels
   source_url: https://www.pexels.com/photo/real-estate-investment-concept-with-keys-and-money-30139610/
 ---
-<h2>What Is the Annual Investment Allowance?</h2>
-<p>The annual investment allowance (AIA) is a capital allowance that lets you claim a full tax deduction on qualifying plant and machinery costs in the year you buy them. For most businesses, including property rental businesses, the AIA is set at £1 million per year <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>This means if you spend £50,000 on a new boiler system for a block of flats you let out, you can deduct the full £50,000 from your taxable profits in that accounting period, rather than spreading the deduction over several years through writing-down allowances.</p>
-<p>The AIA is particularly valuable for landlords who own property through a limited company, because corporation tax rates (19% to 25%) mean the tax saving is substantial. For individual landlords, the allowance reduces your income tax bill at your marginal rate.</p>
+<h2>Can a UK landlord claim the annual investment allowance? Start with the dwelling-house bar</h2>
+<p>The short answer surprises most residential landlords: for an ordinary buy-to-let, you usually cannot claim the annual investment allowance (AIA) on the plant inside the let property at all. The boiler, the fitted kitchen, the bathroom suite, the white goods and the furniture in the flat or house you let out are blocked from plant-and-machinery allowances by the dwelling-house restriction in section 35 of the Capital Allowances Act 2001 <sup><a href="#ref-1" id="cite-s35-1">[1]</a></sup>.</p>
+<p>That is the opposite of what a lot of online guidance implies, and it is the single most important point on this page. The AIA itself is generous. It gives a 100% tax deduction in the year of purchase on qualifying plant and machinery up to £1,000,000 per 12-month chargeable period <sup><a href="#ref-2" id="cite-s51a-1">[2]</a></sup>. The catch for landlords is not the size of the allowance, it is whether the spend qualifies in the first place. For plant inside a let dwelling, it does not.</p>
+<p>This page is the landlord-specific companion to our <a href="/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework">complete guide to capital allowances for property investors</a>, which sets out the full CAA 2001 decision framework. Here we focus on the question landlords actually ask: can I claim the AIA, and if not, what can I claim instead?</p>
+<p>The honest structure of the answer is: the dwelling-house bar comes first, then the three narrow situations where a landlord genuinely can claim, then the relief residential landlords use in place of the AIA.</p>
 
-<h2>Who Can Claim the Annual Investment Allowance?</h2>
-<p>The AIA is available to most businesses that pay UK tax on their profits. This includes:</p>
+<h2>Why s.35 blocks plant-and-machinery allowances in a dwelling-house</h2>
+<p>Section 35 is headed "Expenditure on plant or machinery for use in dwelling-house not qualifying expenditure in certain cases". The operative rule, at s.35(2), is blunt: a person's expenditure "is not qualifying expenditure if it is incurred in providing plant or machinery for use in a dwelling-house" <sup><a href="#ref-1" id="cite-s35-2">[1]</a></sup>. The bar applies to any property business, whether UK or overseas, and to special leasing of plant.</p>
+<p>Because the expenditure is not qualifying expenditure, it never reaches the AIA, full expensing or writing-down allowances. There is nothing to claim. That is why the items landlords most often assume they can claim are exactly the items that are blocked when they sit inside a let dwelling:</p>
 <ul>
-<li>Limited companies that own buy-to-let properties</li>
-<li>Sole traders and partnerships running a property rental business</li>
-<li>Property developers and traders</li>
+<li>The boiler and central heating system serving the let flat or house</li>
+<li>The fitted kitchen, including units, worktops and built-in appliances</li>
+<li>The bathroom suite and sanitaryware</li>
+<li>White goods such as fridges, freezers, washing machines and dishwashers</li>
+<li>Free-standing and fitted furniture and furnishings in a furnished let</li>
 </ul>
-<p>However, there is an important restriction for sole traders and partnerships. If you use the cash basis of accounting for your rental income, you can only claim capital allowances on business cars <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Most residential landlords with small portfolios use the cash basis, so this rule catches many people out.</p>
-<p>If you use accruals accounting (the traditional method), you can claim AIA on a wider range of plant and machinery. Our guide on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a> explains the difference between cash and accruals basis in more detail.</p>
+<p>None of these qualify for the AIA when they are provided for use in a dwelling-house. The mistake is so common that it is worth being explicit: a landlord who claims the AIA on a new boiler or a replacement kitchen inside an ordinary let dwelling is making an incorrect claim, and the relief is not available simply because the cost is genuine and capital in nature.</p>
+<p>Section 35(3) does allow an apportionment where plant is used partly in a dwelling-house and partly elsewhere, so a fair split is possible where, for example, a heating system serves both a let flat and a non-dwelling area. The integral-features rules in s.33A (electrical systems, cold-water systems, space and water heating, lifts, external solar shading) still sit inside this framework, so an integral feature genuinely located in a non-dwelling area can qualify, while the same feature inside the dwelling cannot.</p>
 
-<h2>What Qualifies for the Annual Investment Allowance?</h2>
-<p>To qualify for AIA, the item must be "plant and machinery" for tax purposes. This includes:</p>
+<h2>The three situations where a landlord can claim the AIA</h2>
+<p>The dwelling-house bar is wide, but it is not total. There are three situations where a landlord genuinely can claim the AIA, because in each one the plant is not "for use in a dwelling-house".</p>
+
+<h3>(a) Communal common parts of a multi-let building</h3>
+<p>Where you let a block of flats or a house in multiple occupation, the communal areas are not a dwelling-house. Plant serving the common parts is therefore outside the s.35 bar and can qualify. Typical qualifying items include a communal boiler or heating plant serving the building rather than an individual flat, lifts, communal lighting, stairwell and corridor heating, fire and security systems in the common parts, and door-entry systems.</p>
+<p>This is the carve-out that matters most to portfolio landlords. Consider a landlord we advised who owned a converted block of flats with a single communal boiler heating the stairwells and corridors and serving the hot-water supply to the building as a whole. The boiler serving the common parts fell outside s.35 and qualified, even though an in-flat combi boiler in the same building would have been barred. The mechanics of these claims, including how to evidence the common-parts allocation, are covered in detail in our guide to <a href="/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property">HMO common-parts capital allowances and the s.35 claim mechanics</a>.</p>
+
+<h3>(b) Commercial property, mixed-use commercial space and commercial SPVs</h3>
+<p>Commercial property is not a dwelling-house, so the s.35 bar does not bite. Plant, integral features and fixtures in offices, shops, warehouses, surgeries and other commercial space can qualify for the AIA up to the £1,000,000 cap, subject to the usual buildings exclusion in s.21 and the integral-features rules in s.33A. A mixed-use building is apportioned: the commercial part can qualify while the dwelling part is barred.</p>
+<p>A worked example shows the difference. Suppose a company SPV buys a high-street building with a shop on the ground floor and two flats above, and spends £180,000 fitting out the shop with new air-conditioning, electrical rewiring, a shopfront and trade equipment. The shop fit-out is commercial plant, not dwelling plant, so the qualifying portion can attract the AIA in the year of spend, up to the £1,000,000 cap. The flats above are barred. Where the SPV is a company, it can also consider full expensing on the new and unused main-rate elements, a company-only 100% first-year allowance covered in our guide to <a href="/blog/property-types-and-specialist-tax/full-expensing-50-percent-fya-commercial-property-spvs-mechanics-fa-2023">full expensing and the 50% FYA for commercial property SPVs</a>. The structure of the building itself does not qualify for plant-and-machinery allowances, but newly constructed non-residential structures can attract the <a href="/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">structures and buildings allowance at 3%</a>, which deliberately does not apply to residential property.</p>
+
+<h3>(c) Grandfathered furnished-holiday-let pools</h3>
+<p>The furnished-holiday-let (FHL) regime, which used to give holiday-let owners access to the broader plant-and-machinery claim base, was abolished from 1 April 2025 for corporation tax and 6 April 2025 for income tax by Finance Act 2025 Schedule 5 <sup><a href="#ref-3" id="cite-fa25-1">[3]</a></sup>. From those dates a former FHL is an ordinary residential let, and the s.35 dwelling-house bar applies to new spend in full.</p>
+<p>There is a transitional carve-out for plant already pooled. A plant-and-machinery pool established for an FHL business before abolition transfers into the ordinary property-business pool and continues to receive writing-down allowances, but no new FHL expenditure qualifies. The detail of these grandfathered claims, including how the balances carry across, is set out in our guide to <a href="/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics">FHL capital allowances after April 2025</a>. The practical message is simple: do not build a capital-allowances plan around a furnished holiday let started after abolition, because it no longer carries the FHL advantage.</p>
+
+<aside>
+<p><strong>Not sure whether your spend qualifies?</strong> The line between barred dwelling plant, qualifying common-parts plant and a deductible repair turns on the facts of each property. If you hold a multi-let block, a mixed-use building or a former holiday let, a short review of where the plant sits and how it is used can prevent both an incorrect AIA claim and a missed legitimate one. Get in touch for a specialist property capital-allowances review.</p>
+</aside>
+
+<h2>What residential landlords claim instead: Replacement of Domestic Items Relief</h2>
+<p>If the AIA is barred on furniture and white goods inside a let dwelling, what relief does a residential landlord actually use? The answer is Replacement of Domestic Items Relief (RDIR), which is an income tax deduction for individuals under ITTOIA 2005 s.311A <sup><a href="#ref-4" id="cite-rdir-1">[4]</a></sup> and a corporation tax deduction for companies under CTA 2009 s.250A <sup><a href="#ref-5" id="cite-rdir-2">[5]</a></sup>.</p>
+<p>RDIR is not a capital allowance. It is a deduction against rental profits for the cost of replacing a domestic item provided for the tenant's use, such as a sofa, bed, carpet, curtains, fridge, freezer, washing machine or crockery. The relief is given on the cost of a broadly equivalent replacement, reduced by any proceeds from selling or part-exchanging the old item, and reduced further if the new item is an improvement rather than a like-for-like replacement.</p>
+<p>Two limits catch landlords out. First, RDIR only covers replacement, not the initial purchase: kitting out a property for the first time gets no relief under this route. Second, the item must be a free-standing or movable domestic item rather than a fixture that forms part of the building (a fitted kitchen replaced on a like-for-like basis is generally a repair, deductible on different principles). We cover the boundaries, the proceeds adjustment and the improvement rule in full in our <a href="/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide">guide to Replacement of Domestic Items Relief for UK landlords</a>. The point for this page is that the relief residential landlords reach for on furnishings is RDIR, not the AIA.</p>
+
+<h2>How much is the AIA, and the permanent £1 million cap</h2>
+<p>Where you do have qualifying expenditure, the AIA is a 100% deduction in the chargeable period of purchase, up to a cap of £1,000,000. Section 51A(5) states it plainly: "The maximum allowance is £1,000,000" <sup><a href="#ref-2" id="cite-s51a-2">[2]</a></sup>.</p>
+<p>The £1 million cap is permanent. It was made permanent from 1 April 2023 by Finance (No. 2) Act 2023 s.8, which ended the previous structure of a temporary uplift over a £200,000 baseline. Older guidance that describes the cap as temporary, or as due to fall back to £200,000, is out of date and should not be relied on.</p>
+<p>The cap is set by reference to a 12-month chargeable period. If your accounting period is shorter than 12 months, the cap is reduced proportionately: a 9-month period gives a cap of 9/12 of £1,000,000, which is £750,000. A period longer than 12 months is divided into 12-month tranches, each with its own £1,000,000 entitlement plus a proportionate amount for the balance.</p>
+
+<h2>The related-company trap: one AIA shared across a group of SPVs</h2>
+<p>Portfolio landlords often hold property through several special-purpose companies. A natural assumption is that each company gets its own £1,000,000 AIA. That is not always true.</p>
+<p>Under CAA 2001 s.51E, where two or more companies are both under common control and related to one another, they share a single £1,000,000 annual investment allowance between them, allocated as they see fit. "Control" is defined in s.51F, and companies are "related" under s.51G if they meet either the shared-premises condition or the similar-activities condition (broadly, the same first-level industry classification with substantial overlap). A group of property SPVs run from the same office and carrying on the same letting activity can easily be related, in which case one £1,000,000 cap covers the whole group rather than one per company.</p>
+<p>The practical effect is that a landlord with, say, four commercial-property SPVs under common control and related to each other does not have £4,000,000 of AIA headroom across the group, but a single £1,000,000 to share. Where the AIA matters to your structure, the relatedness test is worth checking before you commit to a fit-out programme, because the wrong assumption can leave a large chunk of spend in the writing-down pools rather than fully relieved in year one.</p>
+
+<aside>
+<p><strong>Running several property companies?</strong> The single-AIA rule for related companies is one of the easiest and most expensive things to get wrong in a portfolio structure. If you hold property through more than one SPV and undertake significant qualifying spend, it is worth confirming how the shared allowance is allocated before you file. We can review your group's relatedness position as part of a capital-allowances and structuring review.</p>
+</aside>
+
+<h2>How the AIA sits alongside full expensing, WDAs and the new first-year allowances</h2>
+<p>The AIA is one of several capital allowances, and the choice between them matters once spend exceeds the cap or where a more specific relief applies.</p>
 <ul>
-<li>Fixtures in a rental property, such as boilers, heating systems, lifts, and air conditioning</li>
-<li>Kitchen and bathroom fittings in furnished properties</li>
-<li>Furniture, white goods, and furnishings in furnished lettings</li>
-<li>Solar panels and other energy-saving equipment</li>
-<li>Office equipment used to manage your property portfolio</li>
+<li><strong>Full expensing (CAA 2001 s.45S).</strong> A 100% first-year allowance on new and unused main-rate plant, incurred on or after 1 April 2023. It is company-only, so individual landlords and partnerships cannot use it, and it does not apply to second-hand assets. For a commercial-property company it can sit alongside the AIA, with a 50% first-year allowance available for special-rate (integral-feature and long-life) assets.</li>
+<li><strong>The new 40% first-year allowance (Finance Act 2026 s.29, inserting CAA 2001 s.45U).</strong> A 40% first-year allowance on new and unused main-rate plant incurred on or after 1 January 2026 <sup><a href="#ref-6" id="cite-fa26-1">[6]</a></sup>. Crucially, unlike full expensing it is available to unincorporated businesses as well as companies, so an individual landlord can use it on qualifying non-dwelling plant. Cars and second-hand or used assets are excluded.</li>
+<li><strong>Writing-down allowances.</strong> Spend above the AIA cap, and main-rate plant not given a first-year allowance, goes into the main pool. The main-pool writing-down allowance is 14% from April 2026, reduced from 18% by Finance Act 2026 s.28, which substituted the new rate into CAA 2001 s.56(1) <sup><a href="#ref-7" id="cite-fa26-2">[7]</a></sup>. Periods that straddle the start date use a time-apportioned hybrid rate between 18% and 14%. The special-rate pool, which holds integral features and long-life assets, is unchanged at 6%.</li>
 </ul>
-<p>Land does not qualify, nor do buildings themselves. You cannot claim AIA on the cost of buying a property, only on the plant and machinery within it. If you buy a property that already contains qualifying fixtures, you may need a capital allowances valuation to apportion the purchase price.</p>
-<p>For a full breakdown of what counts as plant and machinery in a rental context, see our <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant services</a> page, which covers capital allowances planning.</p>
+<p>For completeness, the 130% super-deduction that ran from 1 April 2021 to 31 March 2023 has expired and is relevant now only when computing a disposal-value clawback on assets first claimed in that window.</p>
+<p>For a residential landlord the headline is unchanged by any of this: the first-year allowances and writing-down allowances only matter where there is qualifying expenditure, and the s.35 bar removes most dwelling plant before these rates ever apply. They become relevant on common-parts plant, commercial space and grandfathered pools.</p>
 
-<h2>How Much Can You Claim?</h2>
-<p>The AIA is £1 million per 12-month accounting period <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is a generous allowance that covers most landlords' capital expenditure in a typical year.</p>
-<p>If your accounting period is shorter than 12 months, the allowance is proportionally reduced. For example, if your company's first accounting period is 9 months long, the AIA cap is 9/12 × £1,000,000 = £750,000 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>If your accounting period is longer than 12 months, you get the allowance for each 12-month period within it. So a 15-month period would give you £1 million for the first 12 months and £250,000 for the remaining 3 months (3/12 × £1,000,000).</p>
-<p>The £1 million cap has been in place since 1 January 2019 <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. Before that, the AIA was temporarily set at £1 million from January 2019, having been £200,000 for the 2018/19 tax year.</p>
-
-<h2>When Can You Claim the AIA?</h2>
-<p>You can only claim AIA in the accounting period in which you bought the item <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The date you bought it depends on the payment terms:</p>
+<h2>When you can claim: timing, payment dates and hire purchase</h2>
+<p>The AIA is claimed in the chargeable period in which the expenditure is incurred, and the date of incurring depends on the payment terms <sup><a href="#ref-8" id="cite-govuk-1">[8]</a></sup>.</p>
 <ul>
-<li>If payment is due within less than 4 months of signing the contract, the date of purchase is when you signed the contract</li>
-<li>If payment is due more than 4 months later, the date of purchase is when payment becomes due <sup><a href="#ref-1" id="cite-1">[1]</a></sup></li>
+<li>If payment is required in full within four months of the obligation to pay arising, the expenditure is generally treated as incurred when the obligation becomes unconditional.</li>
+<li>If payment is required more than four months after the obligation becomes unconditional, the expenditure is treated as incurred on the date payment is required.</li>
 </ul>
-<p>If you buy something under a hire purchase contract, you can claim AIA when you start using the item, for all payments you will make under the contract <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is useful for landlords who finance equipment purchases through HP.</p>
-<p>There is a special rule if your business closes. You cannot claim AIA for items bought in the final accounting period <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This typically applies when a company is wound up or a sole trader retires.</p>
+<p>For plant bought under hire purchase, you can generally claim the AIA once the plant is brought into use, on the capital element of the payments to be made under the agreement, even though the instalments are still outstanding. There is also a restriction in the final chargeable period of a business: the AIA is not available for expenditure incurred in the period in which the qualifying activity permanently ceases, which is relevant where a company is wound up or a sole-trader business ends.</p>
 
-<h2>How Does the AIA Interact with Other Capital Allowances?</h2>
-<p>The AIA is just one type of capital allowance. Others include:</p>
+<h2>Buying a property with existing fixtures: apportionment and the s.198 election</h2>
+<p>When you buy a commercial property that already contains qualifying fixtures, such as heating, lighting and integral features, you do not automatically inherit the seller's allowances. For post-April-2014 acquisitions, two gates apply. The pooling requirement means the past owner must have pooled the fixture expenditure for the buyer to claim at all. The fixed-value requirement means the value attributed to the fixtures must be fixed within two years of completion, normally through a joint election under CAA 2001 s.198 (or, failing agreement, a tribunal determination). Miss the election window or the pooling gate and the fixtures can be stranded, with no allowances available to the buyer or any later owner.</p>
+<p>This matters for landlords buying commercial or mixed-use buildings, not for ordinary residential purchases, because the s.35 dwelling-house bar means there are no qualifying fixtures inside the let dwellings to apportion in the first place. Where a sale of fixtures triggers disposal values, the seller-side mechanics and any balancing charge are covered in our guide to <a href="/blog/property-types-and-specialist-tax/balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics">balancing allowances and balancing charges on disposal</a>.</p>
+
+<h2>Selling an asset you claimed the AIA on: disposal values and balancing charges</h2>
+<p>The AIA gives relief up front, but it is not a permanent giveaway. When you dispose of an asset on which you claimed the AIA, a disposal value is brought into the relevant pool. If the disposal value exceeds the balance left in the pool, the excess is a balancing charge, which is a taxable receipt that effectively claws back some of the relief. If the pool balance exceeds the disposal value when the activity ends, you may instead receive a balancing allowance.</p>
+<p>The timing advantage usually remains worthwhile, because a 100% deduction now followed by a charge later is better for cash flow than spreading the relief. But the disposal mechanics are easy to overlook on a sale that includes fixtures, and they should be modelled before exchange rather than discovered afterwards.</p>
+
+<h2>Common AIA mistakes landlords actually make</h2>
+<p>Ranked by how often they cause an incorrect claim or a missed relief:</p>
 <ul>
-<li><strong>Writing-down allowances</strong>, for plant and machinery that does not qualify for AIA, or if you exceed the £1 million cap</li>
-<li><strong>Full expensing</strong>, available to companies from 1 April 2023, allowing a 100% deduction on qualifying main-rate plant and machinery <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
-<li><strong>50% first-year allowance</strong>, for special-rate assets (e.g. integral features, long-life assets) bought by companies from 1 April 2023 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
-<li><strong>40% first-year allowance</strong>, for qualifying plant and machinery purchased after 1 January 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
+<li><strong>Claiming the AIA on plant inside a let dwelling.</strong> This is the biggest one. A new boiler, kitchen, bathroom or set of white goods inside an ordinary let flat or house is barred by s.35. Claiming it is wrong, even though the cost is real.</li>
+<li><strong>Treating RDIR spend as an AIA claim, or the reverse.</strong> Replacing furniture and white goods in a let dwelling is RDIR, an income or corporation tax deduction, not a capital allowance. Mixing the two leads to claims in the wrong box and the wrong records.</li>
+<li><strong>Assuming each SPV has its own £1 million cap.</strong> Related companies under common control share a single AIA under s.51E. A group structure does not multiply the allowance.</li>
+<li><strong>Assuming individual landlords can use full expensing.</strong> Full expensing (s.45S) is company-only. An individual landlord cannot use it, although the new 40% first-year allowance (s.45U) is available to unincorporated businesses on qualifying non-dwelling plant.</li>
+<li><strong>Over-claiming on the residential part of a mixed-use building.</strong> The commercial part can qualify, the dwelling part cannot, and the apportionment has to be defensible.</li>
 </ul>
-<p>The super-deduction (130% allowance) and 50% special rate first-year allowance were available from 1 April 2021 to 31 March 2023 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. These have now been replaced by full expensing and the 50% first-year allowance.</p>
-<p>For most landlords, the AIA is the most straightforward option. If you spend more than £1 million in a year, the excess falls into the main pool and attracts writing-down allowances at 18% per year (or 6% for special-rate assets).</p>
+<p>If you are unsure which side of the line your spend falls, it is worth a specialist review before you file, because correcting an over-claim later is more disruptive than getting it right first time. If you are approaching the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital deadline for landlords</a>, make sure your digital records distinguish capital spend, replacement-item spend and repairs so that the right relief is claimed through the right mechanism.</p>
 
-<h2>Annual Investment Allowance for Limited Companies vs Sole Traders</h2>
-<p>The AIA rules are broadly the same for all business structures, but there are practical differences:</p>
-<ul>
-<li><strong>Limited companies</strong>, Can claim AIA on a wider range of assets. Corporation tax relief at 19% to 25% makes the allowance highly valuable. Companies can also access full expensing from April 2023.</li>
-<li><strong>Sole traders and partnerships</strong>, If using cash basis, restricted to claiming capital allowances only on business cars <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If using accruals basis, the full AIA is available.</li>
-</ul>
-<p>Many landlords choose to incorporate their portfolio into a limited company to access better tax reliefs, including full capital allowances. Our <a href="/incorporation">incorporation guide</a> explains the process and tax implications.</p>
-
-<h2>Common Mistakes Landlords Make with the AIA</h2>
-<p>Here are the most frequent errors we see:</p>
-<ul>
-<li><strong>Claiming on buildings</strong>, You cannot claim AIA on the cost of the property itself, only on plant and machinery within it</li>
-<li><strong>Missing the cash basis restriction</strong>, Sole traders using cash basis cannot claim AIA on most items, only on cars</li>
-<li><strong>Not apportioning purchase prices</strong>, When buying a property with fixtures, you need a capital allowances valuation to separate the building cost from the plant and machinery</li>
-<li><strong>Claiming in the wrong period</strong>, The AIA must be claimed in the period you bought the item, not when you paid for it (if payment is deferred)</li>
-<li><strong>Forgetting about hire purchase</strong>, You can claim AIA on HP items when you start using them, even though you have not yet paid the full amount</li>
-</ul>
-<p>If you are unsure about any of these points, it is worth speaking to a specialist property accountant. Our <a href="/services">services page</a> explains how we help landlords with capital allowances planning.</p>
-
-<h2>How to Claim the Annual Investment Allowance</h2>
-<p>Claiming the AIA is straightforward:</p>
-<ol>
-<li>Identify all qualifying plant and machinery expenditure in the accounting period</li>
-<li>Calculate the total cost (use market value if you owned the item before starting to use it in your business, or if it was a gift) <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
-<li>Include the AIA claim in your tax return (company tax return for limited companies, self-assessment for sole traders and partnerships)</li>
-<li>Ensure the claim does not exceed the £1 million cap for the period</li>
-</ol>
-<p>For limited companies, the claim is made on the CT600 corporation tax return. For sole traders and partnerships, it goes on the self-assessment tax return. If you use accounting software, most packages have a capital allowances section where you can enter the expenditure.</p>
-<p>If you are approaching the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital deadline for landlords</a> (April 2026 for those with gross income over £50,000), ensure your digital records capture capital expenditure correctly so you can claim the AIA without errors.</p>
-
-<h2>Planning Your Capital Expenditure to Maximise the AIA</h2>
-<p>Because the AIA is a 100% deduction in the year of purchase, timing your capital expenditure can significantly reduce your tax bill. If you know you will have a high-profit year, consider bringing forward planned purchases of plant and machinery to that year.</p>
-<p>For example, if you are a higher-rate taxpayer with a limited company paying 25% corporation tax, spending £100,000 on qualifying plant and machinery saves you £25,000 in tax. If you delay the purchase to a lower-profit year, the saving may be less.</p>
-<p>However, do not let tax drive poor business decisions. The AIA is generous enough that most landlords can claim it in the year they make the purchase regardless of profit levels.</p>
-<p>For landlords with large portfolios, the £1 million cap may be reached in a single year. In that case, consider spreading large capital projects across two accounting periods to maximise the allowance.</p>
-
-<h2>What Happens If You Sell an Asset on Which You Claimed AIA?</h2>
-<p>When you sell an asset on which you claimed AIA, the proceeds are deducted from the relevant capital allowances pool. If the pool balance becomes negative, the excess is added to your taxable profits as a balancing charge.</p>
-<p>This means the tax relief you received upfront is effectively clawed back when you dispose of the asset. However, because the AIA gives you 100% relief immediately, the timing advantage is still valuable, you get the tax saving now and pay tax later, which is better for cash flow.</p>
-<p>If you sell the asset for less than its tax written-down value, you may get a balancing allowance, which is an additional deduction.</p>
-
-<h2>Frequently Asked Questions</h2>
+<h2>Where this sits</h2>
+<p>This page is the landlord-applied node in our capital-allowances coverage. For the full CAA 2001 decision framework, including how the qualifying-activity, buildings-exclusion and dwelling-house tests interact across every property type, see the <a href="/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework">complete capital allowances pillar for property investors</a>. For the general mechanics of the AIA across all businesses rather than the landlord-specific view, see our <a href="/blog/section-24-and-tax-relief/annual-investment-allowance-uk">annual investment allowance overview</a>.</p>
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances/annual-investment-allowance" rel="noopener noreferrer">Claim capital allowances: Annual investment allowance - GOV.UK</a></li>
-  <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/capital-allowances/fya/water.htm" rel="noopener noreferrer">Claim capital allowances: Overview - GOV.UK</a></li>
-  <li id="ref-3"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/business-tax/capital-allowances" rel="noopener noreferrer">Capital allowances | Tax - ICAEW.com</a></li>
+  <li id="ref-1"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/35" rel="noopener noreferrer">Capital Allowances Act 2001 s.35 - Expenditure on plant or machinery for use in dwelling-house not qualifying expenditure in certain cases</a></li>
+  <li id="ref-2"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/51A" rel="noopener noreferrer">Capital Allowances Act 2001 s.51A - Entitlement to annual investment allowance (s.51A(5): £1,000,000 maximum)</a></li>
+  <li id="ref-3"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2025/8/schedule/5" rel="noopener noreferrer">Finance Act 2025 Schedule 5 - Furnished holiday lettings (abolition, commencement 1 April / 6 April 2025)</a></li>
+  <li id="ref-4"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/311A" rel="noopener noreferrer">Income Tax (Trading and Other Income) Act 2005 s.311A - Replacement domestic items relief</a></li>
+  <li id="ref-5"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2009/4/section/250A" rel="noopener noreferrer">Corporation Tax Act 2009 s.250A - Replacement domestic items relief</a></li>
+  <li id="ref-6"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/29" rel="noopener noreferrer">Finance Act 2026 s.29 - 40% first-year allowance (CAA 2001 s.45U), expenditure on or after 1 January 2026</a></li>
+  <li id="ref-7"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/56" rel="noopener noreferrer">Capital Allowances Act 2001 s.56 - Amount of allowances and charges (main-rate WDA 14%, substituted by Finance Act 2026 s.28)</a></li>
+  <li id="ref-8"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances/annual-investment-allowance" rel="noopener noreferrer">Claim capital allowances: Annual investment allowance - GOV.UK</a></li>
 </ol>
-

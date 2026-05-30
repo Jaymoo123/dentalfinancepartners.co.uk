@@ -5,6 +5,8 @@ Usage:
 
 Pulls (read-only):
     - gsc_query_data (top 25 queries by impressions, 90d)
+    - bing_query_data (top 25 Bing queries, latest snapshot; legacy pages often
+      rank far better on Bing than Google for the same intent)
     - ga4_page_data (engagement signals, 90d)
     - competitor_serps (any SERP runs referencing this URL)
     - competitor_pages (competitor URLs at those SERPs)
@@ -46,6 +48,33 @@ def pull(slug: str, days: int = 90) -> None:
     """)
     if not rows:
         print("  (no GSC rows for this slug in the window)")
+    for r in rows:
+        print(
+            f"  {r['impressions']:>5} imp | {r['clicks']:>3} clk | "
+            f"pos {r['avg_position']:>5} | CTR {r['ctr_pct'] or 0:>5}% | "
+            f"{r['query']}"
+        )
+
+    _section("1b. Bing query_data - what this page ranks for on Bing (latest snapshot)")
+    print(
+        "  NOTE: many legacy pages rank FAR better on Bing (often page 1) than on\n"
+        "  Google for the same intent. Treat these queries as proven demand to keep\n"
+        "  serving, and the strong Bing positions as evidence the page's core answer\n"
+        "  already works - the rewrite should DEEPEN and lift Google, not discard it."
+    )
+    rows = _sql(f"""
+        SELECT query, SUM(impressions) AS impressions, SUM(clicks) AS clicks,
+               ROUND(AVG(position)::numeric, 1) AS avg_position,
+               ROUND((SUM(clicks)::numeric / NULLIF(SUM(impressions),0) * 100), 2) AS ctr_pct
+        FROM bing_query_data
+        WHERE site_key='property' AND page_url ILIKE '{url_like}'
+          AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key='property')
+        GROUP BY query
+        ORDER BY 2 DESC
+        LIMIT 25;
+    """)
+    if not rows:
+        print("  (no Bing rows for this slug - INVISIBLE on Bing, or below the GetPageStats cap)")
     for r in rows:
         print(
             f"  {r['impressions']:>5} imp | {r['clicks']:>3} clk | "

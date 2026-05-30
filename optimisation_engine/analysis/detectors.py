@@ -1174,6 +1174,8 @@ def detect_monitored_page_regression(
     grace_days: int = 14,
     clicks_drop_ratio: float = 0.5,
     position_drop: float = 5.0,
+    impressions_drop_ratio: float = 0.5,
+    bing_position_drop: float = 3.0,
     redirect_min_clicks: int = 1,
 ) -> list[Opportunity]:
     """Flag regressions on actively-monitored pages from the 2026-05-21 cleanup pass.
@@ -1207,7 +1209,8 @@ def detect_monitored_page_regression(
     rows = _sql(
         f"""
         SELECT id, slug, page_url, rewrite_date, rewrite_type, redirect_target,
-               baseline_clicks, baseline_impressions, baseline_position
+               baseline_clicks, baseline_impressions, baseline_position,
+               baseline_bing_clicks, baseline_bing_impressions, baseline_bing_position
         FROM monitored_pages
         WHERE site_key = {_esc(site_key)}
           AND status = 'active'
@@ -1252,15 +1255,59 @@ def detect_monitored_page_regression(
         for r in stat_rows
     }
 
+    # Bing arm: these legacy pages frequently rank page-1 on Bing while sitting
+    # page 4-8 on Google, so a Google-only regression net is blind to their real
+    # visibility. Compare the latest Bing snapshot against the per-page Bing
+    # baseline captured at registration.
+    bing_rows = _sql(
+        f"""
+        WITH tagged AS (
+          SELECT CASE {cases} ELSE NULL END AS matched_slug, impressions, clicks, position
+          FROM bing_query_data
+          WHERE site_key = {_esc(site_key)}
+            AND ({ors})
+            AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key = {_esc(site_key)})
+        )
+        SELECT matched_slug,
+               COALESCE(SUM(impressions),0) AS impressions,
+               COALESCE(SUM(clicks),0) AS clicks,
+               CASE WHEN SUM(impressions) > 0
+                    THEN ROUND((SUM(position*impressions)/SUM(impressions))::NUMERIC, 1)
+                    ELSE NULL END AS position
+        FROM tagged
+        WHERE matched_slug IS NOT NULL
+        GROUP BY matched_slug
+        """
+    )
+    current_bing = {
+        r["matched_slug"]: {
+            "impressions": int(r["impressions"]),
+            "clicks": int(r["clicks"]),
+            "position": float(r["position"]) if r["position"] is not None else None,
+        }
+        for r in bing_rows
+    }
+
     for r in rows:
         slug = r["slug"]
         cur = current.get(slug, {"clicks": 0, "impressions": 0, "position": None})
+        cb = current_bing.get(slug, {"clicks": 0, "impressions": 0, "position": None})
         base_clicks = int(r["baseline_clicks"] or 0)
+        base_impr = int(r["baseline_impressions"] or 0)
         base_pos = float(r["baseline_position"]) if r["baseline_position"] is not None else None
+        base_bclicks = int(r["baseline_bing_clicks"] or 0)
+        base_bimpr = int(r["baseline_bing_impressions"] or 0)
+        base_bpos = float(r["baseline_bing_position"]) if r["baseline_bing_position"] is not None else None
 
         if r["rewrite_type"] == "redirect":
-            # Old slug should be silent. Any remaining clicks indicate a redirect issue.
+            # Old slug should be silent on BOTH engines. Remaining clicks on either
+            # indicate the 301 is not firing or the keeper is bleeding traffic.
+            leak = []
             if cur["clicks"] >= redirect_min_clicks:
+                leak.append(f"Google clicks {cur['clicks']}")
+            if cb["clicks"] >= redirect_min_clicks:
+                leak.append(f"Bing clicks {cb['clicks']}")
+            if leak:
                 out.append(Opportunity(
                     site_key=site_key,
                     opportunity_type="monitored_redirect_leak",
@@ -1269,11 +1316,11 @@ def detect_monitored_page_regression(
                     target_query_cluster=[],
                     recommended_action=(
                         f"Verify 301 redirect is firing for /blog/.../{slug}. "
-                        f"Old slug still received {cur['clicks']} clicks in {window_days}d."
+                        f"Old slug still received: {'; '.join(leak)} in {window_days}d."
                     ),
                     rationale=(
                         f"Slug {slug} was redirected on {r['rewrite_date']} to {r['redirect_target']}. "
-                        f"Current {window_days}d clicks on old path: {cur['clicks']} (expected ~0)."
+                        f"Old path still has traffic ({'; '.join(leak)}); expected ~0."
                     ),
                     score=60,
                     confidence="high",
@@ -1284,16 +1331,28 @@ def detect_monitored_page_regression(
                         "baseline_clicks": base_clicks,
                         "current_clicks": cur["clicks"],
                         "current_impressions": cur["impressions"],
+                        "current_bing_clicks": cb["clicks"],
+                        "current_bing_impressions": cb["impressions"],
                     },
                 ))
         else:
-            # Rewrite row: compare current vs baseline
+            # Rewrite row: compare current vs baseline across BOTH engines. Most of
+            # these pages have ~0 Google clicks and a NULL Google position, so the
+            # clicks/position flags alone are blind (red-team finding): add a Google
+            # impression-drop fallback and a full Bing arm (where they actually rank).
             flags = []
             if base_clicks >= 5 and cur["clicks"] < base_clicks * (1 - clicks_drop_ratio):
-                flags.append(f"clicks {base_clicks} -> {cur['clicks']}")
+                flags.append(f"Google clicks {base_clicks} -> {cur['clicks']}")
             if (base_pos is not None and cur["position"] is not None and
                     cur["position"] - base_pos >= position_drop):
-                flags.append(f"position {base_pos:.1f} -> {cur['position']:.1f}")
+                flags.append(f"Google position {base_pos:.1f} -> {cur['position']:.1f}")
+            if base_impr >= 10 and cur["impressions"] < base_impr * (1 - impressions_drop_ratio):
+                flags.append(f"Google impressions {base_impr} -> {cur['impressions']}")
+            if (base_bpos is not None and cb["position"] is not None and
+                    cb["position"] - base_bpos >= bing_position_drop):
+                flags.append(f"Bing position {base_bpos:.1f} -> {cb['position']:.1f}")
+            if base_bimpr >= 10 and cb["impressions"] < base_bimpr * (1 - impressions_drop_ratio):
+                flags.append(f"Bing impressions {base_bimpr} -> {cb['impressions']}")
             if not flags:
                 continue
             out.append(Opportunity(
@@ -1307,9 +1366,10 @@ def detect_monitored_page_regression(
                     f"Compare current page vs git diff at {r['rewrite_date']}."
                 ),
                 rationale=(
-                    f"Page rewritten on {r['rewrite_date']}. Baseline "
-                    f"clicks={base_clicks} pos={base_pos}. "
-                    f"Current: clicks={cur['clicks']} pos={cur['position']}."
+                    f"Page rewritten on {r['rewrite_date']}. Baseline G(clk={base_clicks},"
+                    f"impr={base_impr},pos={base_pos}) Bing(impr={base_bimpr},pos={base_bpos}). "
+                    f"Current G(clk={cur['clicks']},impr={cur['impressions']},pos={cur['position']}) "
+                    f"Bing(impr={cb['impressions']},pos={cb['position']})."
                 ),
                 score=70,
                 confidence="high",
@@ -1317,11 +1377,17 @@ def detect_monitored_page_regression(
                     "monitored_page_id": r["id"],
                     "rewrite_type": "rewrite",
                     "rewrite_date": str(r["rewrite_date"]),
+                    "flags": flags,
                     "baseline_clicks": base_clicks,
+                    "baseline_impressions": base_impr,
                     "baseline_position": base_pos,
+                    "baseline_bing_impressions": base_bimpr,
+                    "baseline_bing_position": base_bpos,
                     "current_clicks": cur["clicks"],
                     "current_impressions": cur["impressions"],
                     "current_position": cur["position"],
+                    "current_bing_impressions": cb["impressions"],
+                    "current_bing_position": cb["position"],
                     "window_days": window_days,
                 },
             ))

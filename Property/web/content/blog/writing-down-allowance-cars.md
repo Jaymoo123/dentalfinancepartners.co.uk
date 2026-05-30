@@ -1,131 +1,157 @@
 ---
-title: 'Writing Down Allowance on Cars: A Guide for UK Property Investors'
+title: 'Writing Down Allowance on Cars: 2026/27 Rules for UK Property Investors'
 slug: writing-down-allowance-cars
 canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/writing-down-allowance-cars
 date: '2026-05-20'
 author: Property Tax Partners Editorial Team
 category: Section 24 & Tax Relief
-metaTitle: 'Writing Down Allowance Cars: UK Property Investor Guide'
-metaDescription: Learn how writing down allowance on cars works for UK property investors. Rates, electric car rules, and claiming capital allowances explained.
-altText: UK property investor reviewing car capital allowance paperwork with HMRC guidance on a laptop
+metaTitle: 'Writing Down Allowance on Cars 2026/27 | 14% & 6% Rates'
+metaDescription: 'Writing down allowance on cars for UK landlords: main rate cut to 14% from April 2026, 6% special rate, 100% FYA for zero-emission cars, worked examples.'
+altText: "UK property investor reviewing car capital allowance figures and CO2 emissions paperwork at a desk"
 image: https://images.pexels.com/photos/7519351/pexels-photo-7519351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'Writing Down Allowance on Cars: A Guide for UK Property Investors'
-summary: A practical guide to writing down allowance on cars for UK property investors. Covers current rates, the upcoming reduction to 14% from April 2026, and how to claim capital allowances on business cars used in your property portfolio.
+h1: 'Writing Down Allowance on Cars: 2026/27 Rules for UK Property Investors'
+summary: 'Writing down allowance (WDA) lets you deduct the cost of a business car against your property profits over time. The main pool rate falls from 18% to 14% from April 2026 (CAA 2001 s.56, as amended by Finance Act 2026), the special rate pool stays at 6%, and only new and unused zero-emission (0g/km) cars qualify for the 100% first-year allowance under CAA 2001 s.45D. This guide explains which pool your car sits in, how the reducing-balance calculation works, the April 2026 rate change, electric-car treatment, and how WDA interacts with Section 24 and Making Tax Digital.'
 schema: ''
 faqs:
-- question: What is the writing down allowance rate for cars in 2025/26?
-  answer: For the 2025/26 tax year, the main rate writing down allowance for cars is 18% on the reducing balance. This applies to cars with CO2 emissions of 50g/km or less. Cars with emissions above 50g/km qualify for the special rate of 6%. Electric cars (0g/km) can claim 100% first-year allowances. These rates change from April 2026 when the main rate drops to 14%.
-- question: Can I claim writing down allowance on a car used for my property business?
-  answer: Yes, you can claim writing down allowance on a car used for your property business, provided you use the car for business purposes. If you use the car for both business and personal use, you can only claim the business proportion. You must keep detailed mileage records to support your claim. Sole traders using cash basis accounting can still claim capital allowances on business cars.
-- question: What happens to writing down allowance from April 2026?
-  answer: From April 2026, the main rate writing down allowance reduces from 18% to 14% for both corporation tax and income tax purposes. A new first-year allowance of 40% for main-rate assets is introduced from January 2026. The 100% first-year allowance for zero-emission vehicles is extended to March 2027 for corporation tax and April 2027 for income tax.
-- question: Can I claim writing down allowance on an electric car?
-  answer: Yes, electric cars receive favourable treatment. New and unused electric cars (0g/km CO2) qualify for 100% first-year allowances, meaning you can deduct the full cost in the year of purchase. This relief is extended to March 2027 for corporation tax and April 2027 for income tax. After the first year, electric cars fall into the main rate pool.
-dateModified: '2026-05-20'
-sourcesVerifiedAt: '2026-05-20'
+- question: "What is the writing down allowance rate on cars for 2026/27?"
+  answer: "For 2026/27 the main pool writing down allowance rate is 14%. It was cut from 18% to 14% from 1 April 2026 for businesses paying Corporation Tax and 6 April 2026 for businesses paying Income Tax, under CAA 2001 s.56 as amended by Finance Act 2026. The main pool applies to cars with CO2 emissions of 50g/km or less (and to second-hand electric cars). Cars with emissions above 50g/km sit in the special rate pool at 6%, which is unchanged. Both rates are applied on the reducing balance."
+- question: "Do cars qualify for the 100% first-year allowance?"
+  answer: "Only new and unused cars with CO2 emissions of zero grams per kilometre (electric or hydrogen) qualify for the 100% first-year allowance, under CAA 2001 s.45D. The car must be first registered on or after 17 April 2002 and bought new, not second-hand. Cars emitting 1g/km or more, and any second-hand car (including a used electric car), do not get the 100% allowance. They go into the main pool (14%) or special rate pool (6%) instead. The zero-emission car allowance is currently available for expenditure up to 31 March 2027 (Corporation Tax) and 5 April 2027 (Income Tax)."
+- question: "Are cars covered by the new 40% first-year allowance from January 2026?"
+  answer: "No. The new 40% first-year allowance for main-pool plant and machinery, introduced for expenditure from 1 January 2026, specifically excludes cars. HMRC has confirmed cars are outside the scope of the new allowance regardless of which pool they fall into. Cars are also excluded from the Annual Investment Allowance. The only enhanced first-year relief available for a car is the 100% allowance for new, unused zero-emission cars under s.45D."
+- question: "Can I claim writing down allowance on a car used for my property business?"
+  answer: "Yes, provided you genuinely use the car for your property business and you are not using simplified mileage rates. You claim WDA only on the business-use proportion. If you use the car 60% for property business journeys and 40% privately, you restrict the allowance to 60% and the car goes into its own single-asset pool so the private-use adjustment can be tracked. You must keep contemporaneous mileage records to support the split. If you instead claim the HMRC simplified mileage rate (45p per mile for the first 10,000 business miles, 25p thereafter), you cannot also claim capital allowances on the same car."
+- question: "What is the difference between the main rate pool and the special rate pool for cars?"
+  answer: "A car with CO2 emissions of 50g/km or less goes into the main pool and is written down at 14% from April 2026 (previously 18%). A car with emissions above 50g/km goes into the special rate pool and is written down at 6%. Second-hand electric cars go into the main pool at 14% because they do not qualify for the 100% first-year allowance. Where a car has private use, it is held in a single-asset pool rather than the general pool, but the same 14% or 6% rate applies to the business proportion."
+- question: "How do I calculate writing down allowance on a reducing balance?"
+  answer: "You apply the pool rate to the remaining balance each year. For a car in the main pool you claim 14% of the balance, then carry forward the 86% that is left, and apply 14% again the next year, and so on. For example, a £20,000 main-pool car gives £2,800 in year one (14% of £20,000), leaving £17,200; year two gives £2,408 (14% of £17,200), leaving £14,792. The allowance never fully writes the car off in a single year, which is why the 100% first-year allowance for zero-emission cars is so much more valuable up front."
+- question: "Does the April 2026 writing down allowance cut affect cars already in my pool?"
+  answer: "Yes. The reduction from 18% to 14% applies to the whole main pool balance from the change date, not only to cars bought after April 2026. So a car you bought in an earlier year and are still writing down will have the new 14% rate applied to its remaining balance from the first chargeable period beginning on or after 1 April 2026 (Corporation Tax) or 6 April 2026 (Income Tax). Businesses whose accounting period straddles the change date apply a hybrid rate split in proportion to the days before and after the change."
+- question: "Can a sole trader landlord on the cash basis claim writing down allowance on a car?"
+  answer: "Yes. Cars are the one capital allowance exception under the cash basis. A landlord using the cash basis for a UK property business cannot generally claim capital allowances, but can claim them on a car used in the business (subject to the business-use restriction). The alternative is the simplified mileage rate. You cannot use both methods for the same vehicle in the same period, so you choose mileage rates or actual costs plus capital allowances when you first use the car for the business."
+- question: "What happens to the allowance when I sell or stop using the business car?"
+  answer: "When you dispose of the car you bring in a disposal value, normally the sale proceeds (or open market value for a connected-party sale). If the car was in a single-asset pool, comparing the disposal value with the remaining pool balance produces either a balancing allowance (extra relief, where you sold for less than the written-down value) or a balancing charge (a clawback added to profit, where you sold for more). Cars held in the general main or special rate pool instead reduce the pool balance by the disposal value, so a separate balancing event does not usually arise on each sale."
+- question: "Does Section 24 restrict my car capital allowance claim?"
+  answer: "No. Section 24 (the ITTOIA 2005 finance-cost restriction) only restricts relief on mortgage and loan interest for individual landlords, giving it as a basic-rate tax reducer rather than a deduction. Capital allowances, including writing down allowance on a business car, are an ordinary deduction from your property profit and are not caught by Section 24. The finance-cost reducer rises to the new 22% property basic rate from 6 April 2027 under Finance Act 2026, but that change does not affect how car allowances are claimed."
+- question: "Do I need to keep digital records of car allowances under Making Tax Digital?"
+  answer: "If you are within Making Tax Digital for Income Tax, yes. MTD for Income Tax is live, with mandation phased by gross income: £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Once you are in scope you must keep digital records of your property income and expenses and submit quarterly updates. Capital allowance computations, including car WDA, are reported in the year-end final declaration rather than in the quarterly updates, but the underlying expense and mileage records should be kept digitally."
+- question: "Are the rules different in Scotland or Wales?"
+  answer: "Capital allowances are a UK-wide reserved tax, so the same WDA rates and CO2 thresholds apply to a property business whether the landlord is in Scotland, Wales, England or Northern Ireland. What differs is the property purchase tax: England and Northern Ireland use SDLT, Scotland uses Land and Buildings Transaction Tax (LBTT) with the 8% Additional Dwelling Supplement, and Wales uses Land Transaction Tax (LTT). Those transaction taxes have nothing to do with car capital allowances, but Scottish landlords should also note that Scottish income tax rates and bands differ from the rest of the UK, which changes the value of any deduction."
+- question: "Can I claim writing down allowance on a van instead of a car?"
+  answer: "Vans are treated more generously than cars. A van is plant and machinery rather than a car, so it qualifies for the Annual Investment Allowance (up to £1 million), which lets you deduct the full cost in the year of purchase for most vans. New and unused zero-emission goods vehicles have their own 100% first-year allowance under CAA 2001 s.45DA. Because vans avoid the restrictive car rules, the timing and amount of relief are very different. See our separate guide on capital allowances on vans for the detail."
+dateModified: '2026-05-30'
+sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
-- accaglobal.com
-- aka.hmrc.gov.uk
 - gov.uk
-- icaew.com
+- legislation.gov.uk
 imageCredit:
   photographer: Ollie Craig
   photographer_url: https://www.pexels.com/@olliecraig1
   source: Pexels
   source_url: https://www.pexels.com/photo/aerial-view-of-city-buildings-7519351/
 ---
-<h2>What Is Writing Down Allowance on Cars?</h2>
-<p>Writing down allowance on cars is a form of capital allowance that lets you deduct the cost of a business car from your taxable profits over several years. If you use a car for your property business, whether you are a sole trader landlord or run a limited company, you can claim this relief on the car's value each year <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>For UK property investors, claiming the correct writing down allowance can reduce your tax bill significantly. The allowance applies to cars that are suitable for private use and not built for transporting goods <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Motorcycles bought before 6 April 2009 do not count as cars for capital allowance purposes <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>This guide explains how writing down allowance on cars works, the rates that apply, and what changes are coming from April 2026.</p>
+<p>Writing down allowance on cars lets a property business deduct the cost of a business car against its taxable profit over a number of years rather than all at once. For 2026/27 the main pool rate is <strong>14%</strong> (cut from 18% from April 2026), the special rate pool stays at <strong>6%</strong>, and only new and unused <strong>zero-emission</strong> cars qualify for the 100% first-year allowance under <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/45D" rel="noopener noreferrer">CAA 2001 s.45D</a>. This guide sets out which pool your car falls into, how the reducing-balance calculation works, what changed in April 2026, and how the relief interacts with Section 24 and Making Tax Digital for property investors.</p>
 
-<h2>How Does Writing Down Allowance Work?</h2>
-<p>Writing down allowance (WDA) is calculated on the reducing balance of the car's value. You claim a percentage of the car's value each year, and the allowance reduces as the car depreciates <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-<p>For example, if you buy a car for £20,000 that qualifies for the main rate WDA of 18%, you can claim £3,600 in year one. The remaining value becomes £16,400, and in year two you claim 18% of that, £2,952, and so on.</p>
-<p>You can claim writing down allowances if your plant and machinery does not qualify for another allowance, or if there is value remaining after claiming the maximum amount of another allowance <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
-<p>If you are a sole trader or partnership using cash basis accounting, you can only claim capital allowances on business cars <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This is an important distinction for landlords who may use cash basis for their rental income.</p>
+<p>For the wider plant-and-machinery framework that sits behind car allowances, see our <a href="/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework">capital allowances for property investors pillar guide</a>. For the broader picture of what landlords can deduct, see our <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">complete list of landlord tax deductions</a>.</p>
 
-<h2>Current Writing Down Allowance Rates for Cars</h2>
-<p>The rate of writing down allowance you can claim depends on the car's CO2 emissions and when it was bought. There are two main rate categories <sup><a href="#ref-1" id="cite-1">[1]</a></sup>:</p>
+<h2>What is writing down allowance on cars?</h2>
+<p>Writing down allowance (WDA) is a type of capital allowance. Cars are plant for capital allowance purposes but are governed by a special set of rules that keep them out of the more generous reliefs available to other equipment. Instead of deducting the whole cost in one year, you write the car's cost down by a fixed percentage of the remaining balance each year.</p>
+<p>A car for these rules is a vehicle that is suitable for private use and was not built mainly to carry goods. A motorcycle is not a car for capital allowance purposes (motorcycles bought on or after 6 April 2009 are treated as ordinary plant and machinery), and most vans are goods vehicles rather than cars, which is why vans get much better relief.</p>
+<p>You can claim WDA on a car only where it is used in a qualifying activity. For most readers of this page that activity is a UK property business carried on either personally or through a company. The car must be genuinely used for the business, and where there is private use the claim is restricted to the business proportion.</p>
+
+<h2>Which pool does your car go into?</h2>
+<p>The rate of allowance depends on the car's CO2 emissions and whether it is new or second-hand. There are three possible outcomes, set by <a href="https://www.gov.uk/capital-allowances/business-cars" rel="noopener noreferrer">HMRC's business cars rules</a> for cars bought from April 2021 onwards.</p>
+<table>
+<thead>
+<tr><th>Car type</th><th>Treatment</th><th>Rate</th></tr>
+</thead>
+<tbody>
+<tr><td>New and unused, 0g/km CO2 (electric or hydrogen)</td><td>100% first-year allowance (CAA 2001 s.45D)</td><td>100% in year one</td></tr>
+<tr><td>CO2 of 50g/km or less (and second-hand electric cars)</td><td>Main rate pool</td><td>14% reducing balance</td></tr>
+<tr><td>CO2 above 50g/km</td><td>Special rate pool</td><td>6% reducing balance</td></tr>
+</tbody>
+</table>
+<p>Two points trip people up most often. First, the 100% first-year allowance is restricted to <strong>zero-emission</strong> cars that are <strong>new and unused</strong>; a car emitting even 1g/km does not qualify, and neither does a used electric car. Second, a <strong>second-hand electric car</strong> goes into the main pool at 14%, not the 100% allowance. So buying a nearly-new used EV is very different, for tax, from buying it new.</p>
+<p>Cars are excluded from the Annual Investment Allowance entirely, and they are also excluded from the new 40% first-year allowance introduced for other main-pool plant and machinery from 1 January 2026. For cars, the only routes are the 100% s.45D allowance (zero-emission, new) or the pool-based WDA.</p>
+
+<h2>The April 2026 rate cut: 18% down to 14%</h2>
+<p>The main pool writing down allowance was reduced from <strong>18% to 14%</strong> from <strong>1 April 2026</strong> for Corporation Tax and <strong>6 April 2026</strong> for Income Tax, legislated in <a href="https://www.legislation.gov.uk/ukpga/2026/11/enacted" rel="noopener noreferrer">Finance Act 2026</a> amending CAA 2001 s.56. The special rate pool is unchanged at 6%.</p>
+<p>Three things follow from this for a property investor:</p>
 <ul>
-<li><strong>Main rate (18%)</strong>: Applies to cars with CO2 emissions of 50g/km or less, including electric cars after the first year.</li>
-<li><strong>Special rate (6%)</strong>: Applies to cars with CO2 emissions above 50g/km.</li>
+<li><strong>It applies to your existing pool, not just new purchases.</strong> The 14% rate is applied to the remaining balance of the whole main pool from the first chargeable period beginning on or after the change date, so a car you bought a few years ago and are still writing down moves to 14% as well.</li>
+<li><strong>Straddling periods use a hybrid rate.</strong> If your accounting period spans the change date, you apply a blended rate based on the number of days falling before and after the change. A 31 December 2026 year end, for example, runs at 18% for the days to 31 March 2026 and 14% thereafter, weighted by days.</li>
+<li><strong>Relief is now slower, which raises the value of the 100% allowance.</strong> Writing a petrol or diesel car down at 14% (or 6%) takes many years to give full relief. A new zero-emission car that gets 100% relief in year one is, in cash-flow terms, materially more attractive than it was when the gap was 18% versus 100%.</li>
 </ul>
-<p>These rates apply from 1 April for businesses that pay Corporation Tax, and 6 April for businesses that pay Income Tax <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>New and unused cars with CO2 emissions of 0g/km (electric cars) qualify for 100% first-year allowances <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This means you can deduct the full cost of an electric car in the year you buy it, subject to certain conditions.</p>
-<p>For cars with CO2 emissions of 50g/km or less, the main rate writing down allowance is 100% in the first year (first year allowance) and then 18% per annum on the reducing balance <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 
-<h2>Major Changes From April 2026</h2>
-<p>Several important changes to writing down allowance on cars take effect from April 2026. These affect both corporation tax payers and income tax payers <sup><a href="#ref-5" id="cite-5">[5]</a></sup>:</p>
+<h2>How the reducing-balance calculation works</h2>
+<p>Writing down allowance is calculated on the reducing balance: you apply the rate to what is left in the pool each year, never to the original cost. Here is a worked example for a main-pool car bought for £20,000 by a landlord using actual costs (not mileage rates), with full business use.</p>
+<table>
+<thead>
+<tr><th>Year</th><th>Opening balance</th><th>WDA at 14%</th><th>Closing balance</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>£20,000</td><td>£2,800</td><td>£17,200</td></tr>
+<tr><td>2</td><td>£17,200</td><td>£2,408</td><td>£14,792</td></tr>
+<tr><td>3</td><td>£14,792</td><td>£2,071</td><td>£12,721</td></tr>
+<tr><td>4</td><td>£12,721</td><td>£1,781</td><td>£10,940</td></tr>
+</tbody>
+</table>
+<p>The allowance gets smaller every year because the balance it is applied to keeps shrinking. After four years more than half the original cost is still sitting unrelieved in the pool. A higher-emission car in the special rate pool at 6% writes down even more slowly.</p>
+<p>Contrast that with a new electric car bought for £35,000. Because it is new, unused and zero-emission, it qualifies for the 100% first-year allowance under s.45D, so the whole £35,000 is deducted in year one (subject to any private-use restriction). That single-year deduction, against a property profit, is the headline reason the rules favour new EVs so heavily.</p>
+
+<h2>Private use and the single-asset pool</h2>
+<p>If you are a sole-trader or partnership landlord and the car has private use, you cannot pool it with everything else, because the private element has to be stripped out each year. Instead the car sits in its own <strong>single-asset pool</strong> and the allowance is restricted to the business-use proportion.</p>
+<p>For example, a landlord buys a £20,000 main-pool car used 70% for property business journeys (visiting properties, meeting agents, going to viewings) and 30% privately. Year one WDA is calculated as £20,000 × 14% = £2,800, but only 70% (£1,960) is allowable; the full £2,800 still reduces the pool balance to £17,200 for next year. Accurate, contemporaneous mileage records are essential to defend the proportion if HMRC asks.</p>
+<p>A company that owns the car does not make a private-use restriction in the same way; instead the employee or director is taxed on a car benefit in kind, and the company claims the full allowance. For property investors weighing personal versus company ownership, see our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a>.</p>
+
+<h2>Mileage rates versus capital allowances</h2>
+<p>You have a choice when a car first enters the business. You can either claim <strong>simplified mileage rates</strong> (45p per mile for the first 10,000 business miles in the tax year, then 25p per mile) or claim <strong>actual running costs plus capital allowances</strong>. You cannot mix the two methods for the same car.</p>
+<p>Mileage rates are simpler and avoid pool tracking, balancing charges and private-use apportionment, and they are often better for a low-value, high-mileage car. Capital allowances tend to win for an expensive car or a new electric car, where the 100% first-year allowance can deliver a large up-front deduction that mileage rates could never match. The decision is made per vehicle and, once you start using mileage rates for a car, you must continue with that car until you change it.</p>
+
+<h2>Cash basis landlords and cars</h2>
+<p>Most individual landlords now use the cash basis by default for a UK property business. Under the cash basis you generally cannot claim capital allowances, with one important exception: <strong>cars</strong>. A cash-basis landlord can still claim capital allowances on a business car (or, alternatively, use mileage rates). This is why the car rules matter even to landlords who otherwise never touch a capital allowance computation. The cash basis does not change the WDA rates or the CO2 thresholds; it only affects which other assets you can claim on.</p>
+
+<h2>Selling the car: balancing allowances and charges</h2>
+<p>When you dispose of a car you bring in a disposal value, usually the sale proceeds (or open market value where you sell to a connected person). What happens next depends on how the car was held:</p>
 <ul>
-<li><strong>Main rate reduction</strong>: From 1 April 2026 for corporation tax and 6 April 2026 for income tax, main rate writing-down allowances will reduce from 18% to 14% <sup><a href="#ref-5" id="cite-5">[5]</a></sup>.</li>
-<li><strong>New first-year allowance</strong>: From 1 January 2026, a new first-year allowance of 40% for main-rate assets is introduced to preserve incentives to invest <sup><a href="#ref-5" id="cite-5">[5]</a></sup>.</li>
-<li><strong>ZEV extension</strong>: First-year 100% allowances for zero-emission vehicles (ZEVs) and chargepoints is extended to 31 March 2027 for corporation tax purposes and 5 April 2027 for income tax purposes <sup><a href="#ref-5" id="cite-5">[5]</a></sup>.</li>
+<li><strong>Single-asset pool</strong> (private use, or short-life asset election): compare the disposal value with the remaining balance. If you sold for less than the written-down value, you get a <strong>balancing allowance</strong> (extra relief). If you sold for more, you have a <strong>balancing charge</strong> (a clawback added back to profit). A balancing charge is common with cars that hold their value, because tax depreciation at 14% or 6% lags real-world value.</li>
+<li><strong>General main or special rate pool</strong>: the disposal value simply reduces the pool balance. A balancing event usually only arises when the qualifying activity itself ends.</li>
 </ul>
-<p>These changes mean that property investors planning to buy a business car should consider timing their purchase to maximise available relief.</p>
+<p>If you claimed the 100% first-year allowance on a new electric car, the full sale proceeds on a later disposal are brought in as a balancing charge, because the car's pool value was written down to nil in year one. That is not a penalty, just the system recovering relief you have already had on value you recouped on sale.</p>
 
-<h2>Writing Down Allowance vs Annual Investment Allowance</h2>
-<p>The annual investment allowance (AIA) allows you to claim up to £1 million on certain plant and machinery in the year of purchase <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. However, cars are generally excluded from AIA unless they are zero-emission vehicles.</p>
-<p>If an item qualifies for more than one capital allowance, you can choose which one to use <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. For most property investors, writing down allowance on cars will be the primary route for claiming relief on business vehicles.</p>
-<p>For a complete list of allowable deductions for landlords, see our guide on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a>.</p>
+<h2>Writing down allowance and Section 24</h2>
+<p>Section 24 restricts finance-cost relief for individual landlords, giving relief on mortgage and loan interest as a basic-rate tax reducer rather than a deduction from profit. It does <strong>not</strong> touch capital allowances. Writing down allowance on a business car is an ordinary deduction from your property profit and is unaffected by Section 24.</p>
+<p>From 6 April 2027 the finance-cost reducer is given at the new property basic rate of 22% (Finance Act 2026), up from 20%, but this concerns interest, not car allowances. For the full mechanics of the interest restriction, see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24</a> and our overview of <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">capital allowances and landlord tax relief</a>.</p>
 
-<h2>Claiming Writing Down Allowance as a Property Investor</h2>
-<p>To claim writing down allowance on cars, you must use the car for your property business. If you use the car for both business and personal purposes, you can only claim the business proportion.</p>
-<p>For example, if you use your car 60% for property business travel and 40% privately, you claim WDA on 60% of the car's value. You must keep detailed mileage records to support your claim.</p>
-<p>Property investors who are sole traders or in partnerships can claim capital allowances on business cars even if they use cash basis accounting <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This is a specific exception to the general rule that cash basis users cannot claim capital allowances.</p>
-<p>If you run your property portfolio through a limited company, the rules are similar but the rates apply from 1 April rather than 6 April <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. For more on company structures, see our guide on <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a>.</p>
+<h2>Making Tax Digital and car allowances</h2>
+<p>Making Tax Digital (MTD) for Income Tax is live and is being phased in by income level: landlords and sole traders with gross income over <strong>£50,000</strong> are mandated from <strong>6 April 2026</strong>, over <strong>£30,000</strong> from <strong>6 April 2027</strong>, and over <strong>£20,000</strong> from <strong>6 April 2028</strong>. The gross income test for property looks at rental turnover, not profit.</p>
+<p>Once in scope you must keep digital records and file quarterly updates. Capital allowances, including your car WDA, are dealt with in the year-end final declaration rather than in the quarterly updates, but you still need clean digital records of the car cost, disposal proceeds and business-mileage split. For the mandation detail and what counts towards the threshold, see our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords guide</a>.</p>
 
-<h2>Electric Cars and Writing Down Allowance</h2>
-<p>Electric cars receive favourable treatment under the capital allowance rules. New and unused electric cars (0g/km CO2) qualify for 100% first-year allowances <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This means you can deduct the full cost in the year of purchase.</p>
-<p>The 100% first-year allowance for zero-emission vehicles is extended to 31 March 2027 for corporation tax purposes and 5 April 2027 for income tax purposes <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. After the first year, electric cars fall into the main rate pool at 18% (reducing to 14% from April 2026).</p>
-<p>From April 2028, a new mileage charge for electric and plug-in hybrid cars is introduced, called Electric Vehicle Excise Duty (eVED) <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. Electric cars will pay half the equivalent fuel duty rate for petrol and diesel cars, and plug-in hybrid cars will pay a reduced rate equivalent to half of the electric car rate <sup><a href="#ref-5" id="cite-5">[5]</a></sup>.</p>
-<p>For property investors considering electric vehicles, the combination of 100% first-year allowances and lower ongoing running costs can make them a tax-efficient choice.</p>
-
-<h2>Practical Example: Writing Down Allowance Calculation</h2>
-<p>Let's look at a practical example. A landlord with a property portfolio buys a new petrol car for £25,000 in June 2025. The car has CO2 emissions of 120g/km, so it falls into the special rate pool at 6%.</p>
+<h2>Common mistakes to avoid</h2>
 <ul>
-<li>Year 1 (2025/26): WDA = £25,000 × 6% = £1,500. Remaining value = £23,500.</li>
-<li>Year 2 (2026/27): WDA = £23,500 × 6% = £1,410. Remaining value = £22,090.</li>
-<li>Year 3 (2027/28): WDA = £22,090 × 6% = £1,325.40. Remaining value = £20,764.60.</li>
+<li><strong>Assuming any electric car gets 100% relief.</strong> Only new and unused, zero-emission cars qualify. A second-hand electric car goes into the main pool at 14%.</li>
+<li><strong>Treating cars like other plant.</strong> Cars are excluded from the Annual Investment Allowance and from the new 40% first-year allowance, so you cannot deduct the full cost of a petrol or diesel car in one year.</li>
+<li><strong>Using the old 18% rate.</strong> The main pool rate is 14% from April 2026, not 18%. Check whether your accounting period straddles the change and needs a hybrid rate.</li>
+<li><strong>Double-counting with mileage rates.</strong> You cannot claim both mileage rates and capital allowances on the same car.</li>
+<li><strong>No mileage records.</strong> Without a contemporaneous business-mileage log, the private-use restriction is hard to defend on enquiry.</li>
+<li><strong>Forgetting the balancing charge on sale.</strong> Selling a fully written-down car (especially one given the 100% allowance) usually brings the proceeds back into profit.</li>
 </ul>
-<p>If the same landlord bought an electric car for £35,000 in June 2025, they could claim 100% first-year allowance of £35,000 in year one, reducing their taxable profits by the full amount.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-<p>Property investors often make errors when claiming writing down allowance on cars. Here are the most common:</p>
-<ul>
-<li><strong>Claiming on cars used only privately</strong>: You can only claim WDA on cars used for your property business.</li>
-<li><strong>Using the wrong rate</strong>: Check the CO2 emissions to determine whether main rate (18%) or special rate (6%) applies.</li>
-<li><strong>Forgetting the April 2026 changes</strong>: The main rate drops to 14% from April 2026, so plan your purchases accordingly.</li>
-<li><strong>Not keeping mileage records</strong>: HMRC requires evidence of business use to support your claim.</li>
-</ul>
-<p>If you are unsure about your specific situation, it is worth speaking to a specialist. Our team at Property Tax Partners can help, see <a href="/services">our services page</a> for more information.</p>
-
-<h2>Writing Down Allowance and Section 24</h2>
-<p>Section 24 restricts mortgage interest relief for individual landlords to the basic rate of tax (20% tax credit). However, capital allowances, including writing down allowance on cars, are not affected by Section 24. You can still claim these deductions against your rental income.</p>
-<p>For a full explanation of how Section 24 works, see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24</a>.</p>
-<p>If you are considering incorporating your property portfolio to avoid Section 24 restrictions, our guide on <a href="/incorporation">incorporation</a> explains the process and tax implications.</p>
-
-<h2>Making Tax Digital and Car Allowances</h2>
-<p>From 6 April 2026, Making Tax Digital (MTD) for Income Tax becomes mandatory for landlords with gross property income over £50,000 <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. This means you will need to keep digital records of your car expenses and capital allowance claims.</p>
-<p>For more on MTD requirements, see our guide on <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords</a>.</p>
 
 <h2>Summary</h2>
-<p>Writing down allowance on cars is a valuable tax relief for UK property investors who use vehicles for their business. Key points to remember:</p>
 <ul>
-<li>Main rate WDA is currently 18% but reduces to 14% from April 2026.</li>
-<li>Special rate WDA is 6% for cars with CO2 emissions above 50g/km.</li>
-<li>Electric cars qualify for 100% first-year allowances until April 2027.</li>
-<li>Keep detailed mileage records to support your claim.</li>
-<li>Consider timing your car purchase to maximise available relief.</li>
+<li>Main pool WDA on cars is <strong>14%</strong> from April 2026 (down from 18%); special rate pool stays at <strong>6%</strong>.</li>
+<li>Only <strong>new, unused, zero-emission</strong> cars get the 100% first-year allowance under s.45D, available to 31 March 2027 (CT) and 5 April 2027 (IT).</li>
+<li>Cars are excluded from both the Annual Investment Allowance and the new 40% first-year allowance.</li>
+<li>Restrict the claim to business use and keep mileage records; private-use cars sit in a single-asset pool.</li>
+<li>Capital allowances are not restricted by Section 24, and the rules are the same across the UK (only the property purchase taxes differ).</li>
 </ul>
-<p>For personalised advice on your property tax situation, <a href="/contact">contact our team</a> or learn more about <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a>.</p>
+<p>If you are weighing up how to fund a business vehicle tax-efficiently within a property portfolio, our team can help. Learn more about <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> or <a href="/contact">get in touch</a> to discuss your situation.</p>
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances/business-cars" rel="noopener noreferrer">Claim capital allowances: Business cars - GOV.UK</a></li>
-  <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/work-out-capital-allowances" rel="noopener noreferrer">Work out your writing down allowances - GOV.UK</a></li>
-  <li id="ref-3"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/capital-allowances/fya/water.htm" rel="noopener noreferrer">Claim capital allowances: Overview - GOV.UK</a></li>
-  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2026/feb-2026/winners-and-losers-from-capital-allowances-changes" rel="noopener noreferrer">Winners and losers from capital allowances changes - ICAEW.com</a></li>
-  <li id="ref-5"><strong>accaglobal.com</strong>: <a href="https://www.accaglobal.com/gb/en/technical-activities/technical-resources-search/2025/November/Capital-allowances-electric-car-changes.html" rel="noopener noreferrer">Capital allowances and electric car changes - ACCA Global</a></li>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances/business-cars" rel="noopener noreferrer">Claim capital allowances: business cars - GOV.UK</a></li>
+  <li id="ref-2"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/45D" rel="noopener noreferrer">CAA 2001 s.45D: first-year allowances for low-emission cars</a></li>
+  <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/government/publications/new-first-year-allowance-and-main-rate-of-writing-down-allowances/capital-allowances-new-first-year-allowance-and-reducing-main-rate-writing-down-allowances" rel="noopener noreferrer">Capital allowances: new first-year allowance and reducing main rate writing-down allowances - GOV.UK</a></li>
+  <li id="ref-4"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2026/11/enacted" rel="noopener noreferrer">Finance Act 2026</a></li>
+  <li id="ref-5"><strong>gov.uk</strong>: <a href="https://www.gov.uk/work-out-capital-allowances" rel="noopener noreferrer">Work out your writing down allowances - GOV.UK</a></li>
 </ol>
-
