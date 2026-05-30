@@ -3,111 +3,208 @@ title: "HMO Tax Guide: How to Calculate Rental Income and Claim Deductions on Mu
 slug: "hmo-tax-guide-rental-income-deductions-multi-tenant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant"
 date: "2026-04-10"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-05-30"
 category: "Property Types & Specialist Tax"
-metaTitle: "HMO Tax Guide: Income & Deductions for Landlords"
-metaDescription: "Complete HMO tax guide covering rental income calculation, allowable deductions, licensing costs, and compliance requirements for multi-tenant properties."
+metaTitle: "HMO Tax Rules 2026/27: Income & Deductions Guide"
+metaDescription: "How HMO rental income is taxed and what you can deduct: room-by-room income, communal expenses, domestic items relief, Section 24, council tax and MTD."
 altText: "UK landlord reviewing HMO tax calculations with rental income statements and expense receipts on desk"
 image: ""
-h1: "HMO Tax Guide: How to Calculate Rental Income and Claim Deductions on Multi-Tenant Properties"
-summary: "HMOs have specific tax rules covering room-by-room rental income, communal area expenses, and licensing costs. This comprehensive guide explains how to calculate taxable income and maximise deductions for multi-tenant properties."
+h1: "HMO Tax Rules: How to Calculate Rental Income and Claim Deductions on Multi-Tenant Properties"
+summary: "HMOs follow specific tax rules covering room-by-room rental income, communal-area expenses, replacement of domestic items relief, Section 24 and council tax. This 2026/27 guide explains how to work out taxable HMO income and what you can legitimately deduct on a multi-tenant property."
 schema: ""
 faqs:
+  - question: "What are the HMO tax rules for landlords in 2026/27?"
+    answer: "An HMO is taxed as part of your ordinary UK property business. You declare the total rent and service income from every room, deduct revenue running costs (the communal share plus directly attributable costs), and Section 24 restricts mortgage interest to a 20% basic-rate tax credit rather than a deduction. The 10% wear and tear allowance no longer exists. It was abolished from April 2016 and replaced by Replacement of Domestic Items Relief. From 6 April 2026 Making Tax Digital for Income Tax applies if your gross property and self-employment income is above 50,000 pounds."
   - question: "How is HMO rental income calculated for tax purposes?"
-    answer: "HMO rental income includes all payments from tenants - room rents, service charges, utilities, and booking fees. Calculate income room-by-room, accounting for actual occupancy periods rather than assuming 100% occupancy. Include retained deposits only when kept for unpaid rent or damages."
+    answer: "Add together every payment from tenants across all let rooms: room rents, all-inclusive rent, separate service or utility charges, and any retained deposit kept for unpaid rent or damage. Recognise income for the period it is earned (the receivable basis if your gross cash receipts exceed 150,000 pounds, otherwise the cash basis), room by room, and only for periods a room was actually let. Do not assume 100% occupancy. The total gross figure is your starting point before any allowable expenses."
+  - question: "What expenses can I deduct against HMO rental income?"
+    answer: "You can deduct revenue running costs incurred wholly and exclusively for the letting: communal cleaning and repairs, gardening, agent fees, accountancy, the landlord-paid utilities and council tax, buildings and contents insurance, fire-safety servicing, gas and electrical safety certificates, and HMO licence fees and renewals. Capital improvements are not deductible against income but add to your CGT base cost. Mortgage interest is not a deduction; it gives a 20% basic-rate tax credit under Section 24."
+  - question: "Can I still claim the 10% wear and tear allowance on a furnished HMO?"
+    answer: "No. The 10% wear and tear allowance was abolished from April 2016 and cannot be claimed on any let residential property, furnished or not. It was replaced by Replacement of Domestic Items Relief (ITTOIA 2005 s.311A), which gives a deduction for the cost of replacing a domestic item (beds, sofas, white goods, carpets, curtains, crockery) on a like-for-like basis. There is no deduction for the initial purchase of an item, only for its replacement."
+  - question: "How does Replacement of Domestic Items Relief work for an HMO?"
+    answer: "RDIR lets you deduct the cost of replacing a domestic item provided for tenant use, such as a worn-out fridge, mattress or sofa. The replacement must be substantially the same as the old item. If you upgrade, relief is capped at the cost of an equivalent like-for-like replacement, plus the incidental costs of disposal and delivery, less any sale proceeds for the old item. There is no relief for the first time you buy an item, and fixtures such as boilers and fitted kitchens are excluded because they are part of the building."
   - question: "Can I claim HMO licensing costs as tax deductions?"
-    answer: "Yes, all HMO licensing costs are fully deductible as revenue expenses. This includes initial licence fees, renewals, planning applications, building regulation fees, fire risk assessments, gas safety certificates, and legal advice on HMO compliance."
-  - question: "Do HMOs pay business rates or council tax?"
-    answer: "This depends on the property configuration. HMOs with self-contained rooms and private facilities often pay business rates. Traditional HMOs with shared facilities usually pay council tax, either as a single bill or divided among tenants. Both are fully deductible against rental income."
+    answer: "Yes. Mandatory and additional or selective HMO licence fees, plus renewals, are revenue expenses and are deductible against rental income, along with associated fire risk assessments, gas and electrical safety certificates, and legal advice on compliance. The cost of a first planning permission or initial works to convert a property into an HMO is usually capital, not revenue. See our dedicated guide to HMO licensing fees for the detail."
+  - question: "Do HMO landlords pay business rates or council tax?"
+    answer: "Most traditional HMOs with shared facilities are a single council tax dwelling, and the landlord is liable for the council tax. HMOs converted into self-contained units with private kitchens and bathrooms can instead be assessed for business rates. Either way, the charge the landlord actually pays is deductible against rental income. The government has confirmed plans to stop the Valuation Office Agency banding individual HMO rooms separately for council tax in England, so check the current position for your property."
+  - question: "How does council tax work for a house of multiple occupancy?"
+    answer: "For a standard shared-facilities HMO, the whole house is usually one council tax band and the landlord is the liable person under the Local Government Finance Act 1992, even when tenants have individual room agreements. The landlord normally recovers the cost through inclusive rent. Where rooms have been banded separately in the past, that has caused disputes, which is why the government has moved to disaggregate room-level banding so a typical HMO is treated as a single dwelling."
   - question: "How does Section 24 affect HMO mortgage interest relief?"
-    answer: "HMO mortgages are subject to Section 24 restrictions like other residential BTL properties. Mortgage interest relief is capped at basic rate (20% tax credit) rather than full deduction. This can significantly impact tax efficiency for higher-rate taxpayers, leading many to consider incorporation."
+    answer: "HMO mortgages fall under the same Section 24 restriction as any residential buy-to-let. Finance costs are no longer deductible from rental profit. Instead you receive a tax reduction worth 20% of the interest. For a higher-rate landlord this raises the effective tax cost of borrowing, which is why some HMO investors review whether a limited company structure suits them."
+  - question: "Do I have to register an HMO for VAT?"
+    answer: "Almost never on the rent alone. Residential letting is an exempt supply under VATA 1994 Schedule 9 Group 1, and exempt income does not count towards the 90,000 pound VAT registration threshold. So even a large HMO portfolio does not trigger VAT registration purely from rent. Registration only becomes relevant if you make genuinely separate standard-rated supplies, for example serviced or short-stay accommodation, separately charged cleaning or meals, above the threshold."
+  - question: "Does Making Tax Digital apply to HMO landlords?"
+    answer: "Yes, on the same timetable as all landlords. Making Tax Digital for Income Tax is mandatory from 6 April 2026 where combined gross property and sole-trader income exceeds 50,000 pounds, from 6 April 2027 above 30,000 pounds, and from 6 April 2028 above 20,000 pounds. Many HMO landlords cross the first threshold, so you will need MTD-compatible software, quarterly updates and digital records."
+  - question: "What capital gains tax do I pay when I sell an HMO?"
+    answer: "An HMO held as an investment is residential property for CGT. Gains above the annual exempt amount (3,000 pounds for 2026/27) are taxed at 18% within your basic-rate band and 24% above it. Business Asset Disposal Relief is not available for a residential property investment. Genuine improvements such as a major conversion add to your base cost and reduce the gain, but routine repairs do not."
+  - question: "What is the best tax planning for HMO landlords?"
+    answer: "Sensible HMO tax planning starts with claiming every allowable revenue cost correctly, getting the repair versus improvement line right, and using Replacement of Domestic Items Relief on furnishings. From there it can include reviewing ownership structure (personal versus limited company in light of Section 24), spreading licence renewals across tax years, timing larger works, and making sure you are MTD-ready. The right answer depends on your marginal rate, borrowing and long-term plans, so it is worth a specialist review."
+  - question: "Where can I get tax advice for HMO landlords?"
+    answer: "Property Tax Partners works with HMO landlords on income and expense computation, Section 24 modelling, incorporation decisions, MTD readiness and disposals. You can request a free, no-obligation consultation through the form on this page and we will connect you with a specialist property tax adviser."
 ---
 
-<p>Houses in Multiple Occupation (HMOs) present unique tax challenges that standard buy-to-let properties don't face. This <strong>HMO tax guide</strong> explains how to calculate rental income, claim deductions, and meet compliance requirements for multi-tenant properties.</p>
+<p>Houses in Multiple Occupation (HMOs) sit under the same income tax framework as any other residential let, but the day-to-day mechanics are different enough to trip up even experienced landlords. Multiple rooms, mixed occupancy, inclusive rent, communal running costs and HMO-specific compliance all change how you work out taxable income and what you can deduct.</p>
 
-<p>HMOs generate rental income from multiple tenants, often with shared facilities, which creates specific accounting and tax considerations. Understanding these rules is essential for maximising your tax efficiency and avoiding HMRC penalties.</p>
+<p>This guide sets out the <strong>HMO tax rules</strong> for 2026/27: how to calculate rental income room by room, what counts as an allowable deduction, how Section 24, council tax, Replacement of Domestic Items Relief and Making Tax Digital apply, and what happens on disposal. It is the hub for our wider HMO content, so where a topic has its own detailed guide we link to it rather than repeat it.</p>
 
-<h2>What Qualifies as HMO Rental Income for Tax Purposes?</h2>
+<p>One health warning first. A lot of HMO tax content online is out of date. Two errors are especially common: the 10% wear and tear allowance (abolished in 2016) and a stale or misleading VAT-registration claim. Both are corrected below, with the current statutory position.</p>
 
-<p>All income generated from your HMO counts as rental income for tax purposes, regardless of how it's structured. This includes:</p>
+<h2>HMO Tax at a Glance: Key Facts for 2026/27</h2>
 
-<ul>
-<li><strong>Room rents:</strong> Individual bedroom rental payments</li>
-<li><strong>Inclusive rent:</strong> All-inclusive payments covering utilities, internet, and other services</li>
-<li><strong>Service charges:</strong> Separate charges for utilities, internet, cleaning, or maintenance</li>
-<li><strong>Deposits:</strong> Only when retained to cover unpaid rent or damages</li>
-<li><strong>Booking fees:</strong> Administrative charges for new tenancies</li>
-<li><strong>Late payment charges:</strong> Penalties for overdue rent</li>
-</ul>
+<p>The table below summarises the positions that most often get HMO landlords confused. Each is explained in full further down.</p>
 
-<p>Unlike standard BTL properties, HMO rental income tax calculations often involve multiple income streams from the same property. You must declare the total gross rental income from all tenants, even if some payments are described as "services" rather than rent.</p>
+<table>
+<thead>
+<tr><th>Tax point</th><th>Position for 2026/27</th></tr>
+</thead>
+<tbody>
+<tr><td>How HMO income is taxed</td><td>As part of your ordinary UK property business (profits taxed at your marginal income tax rate)</td></tr>
+<tr><td>Income recognition</td><td>Cash basis by default; accruals (receivable) basis where gross cash receipts exceed 150,000 pounds</td></tr>
+<tr><td>Mortgage interest (Section 24)</td><td>Not deductible from profit; given as a 20% basic-rate tax reduction</td></tr>
+<tr><td>10% wear and tear allowance</td><td>Abolished from April 2016. No longer available</td></tr>
+<tr><td>Replacing furniture and white goods</td><td>Replacement of Domestic Items Relief (ITTOIA 2005 s.311A), like-for-like, no relief on first purchase</td></tr>
+<tr><td>Capital allowances on plant</td><td>Barred inside the dwelling by CAA 2001 s.35; communal common-parts plant can qualify</td></tr>
+<tr><td>VAT on residential rent</td><td>Exempt (VATA 1994 Sch 9 Group 1); rent does not count toward the 90,000 pound threshold</td></tr>
+<tr><td>Council tax</td><td>Usually one band for a shared-facilities HMO, landlord normally liable</td></tr>
+<tr><td>Making Tax Digital for Income Tax</td><td>From 6 Apr 2026 above 50,000 pounds; 6 Apr 2027 above 30,000 pounds; 6 Apr 2028 above 20,000 pounds</td></tr>
+<tr><td>CGT on disposal</td><td>18% (basic-rate band) / 24% (higher); annual exempt amount 3,000 pounds; no BADR for residential investment</td></tr>
+</tbody>
+</table>
 
-<h2>Calculating Taxable Income and Allowable Deductions</h2>
+<h2>How Is HMO Rental Income Calculated for Tax Purposes?</h2>
 
-<p>HMO income calculation differs from standard rental properties because you're typically dealing with multiple tenants, varying occupancy rates, and inclusive rent arrangements.</p>
-
-<h3>Room-by-Room Accounting Method</h3>
-
-<p>Most HMO landlords use room-by-room accounting, treating each bedroom as a separate rental unit. For example:</p>
-
-<p>A 5-bedroom HMO with rooms rented at £500, £450, £480, £460, and £520 per month generates £2,410 monthly gross rental income. Over 12 months, this equals £28,920 gross annual income before expenses.</p>
-
-<h3>Handling Void Periods and Occupancy Variations</h3>
-
-<p>HMOs often experience higher tenant turnover than standard BTL properties. Calculate your actual rental income based on occupied periods:</p>
-
-<ul>
-<li>Track occupancy by room and by month</li>
-<li>Only include rent actually received or receivable</li>
-<li>Don't inflate income figures by assuming 100% occupancy</li>
-<li>Account for rent-free periods or reduced rents during tenant transitions</li>
-</ul>
-
-<h3>Allowable HMO Tax Deductions and Expenses</h3>
-
-<p>Multi-tenant property deductions follow the same basic rules as standard rental properties, but HMOs often incur additional costs that qualify for tax relief.</p>
+<p>All income generated from the property is rental income, regardless of how it is described or split. The label "service charge" does not change its character if it is really part of what tenants pay to occupy a room. For an HMO this typically includes:</p>
 
 <ul>
-<li><strong>Property Management and Maintenance:</strong> Cleaning of communal areas, repairs, garden upkeep, security systems, and inventory replacement.</li>
-<li><strong>HMO Licensing and Compliance:</strong> Licence fees, planning permission costs, building regulation fees, professional surveys (fire risk, electrical, gas safety), and related legal fees.</li>
-<li><strong>Utilities and Service Provisions:</strong> Gas, electricity, water rates, internet, TV services, council tax (where landlord is liable), and buildings insurance when provided as part of inclusive rent.</li>
+<li><strong>Room rents:</strong> individual bedroom rental payments.</li>
+<li><strong>All-inclusive rent:</strong> a single payment covering the room plus utilities, internet and other services.</li>
+<li><strong>Separate service or utility charges:</strong> amounts billed on top of rent for utilities, internet, cleaning or maintenance.</li>
+<li><strong>Retained deposits:</strong> only the part of a deposit you keep to cover unpaid rent or damage. A protected deposit you hold and later return is not income.</li>
+<li><strong>Other tenant charges:</strong> administrative charges and any late-payment fees actually received.</li>
 </ul>
 
-<h2>Business Rates vs Council Tax for HMOs</h2>
+<h3>Recognising Income Room by Room and Period by Period</h3>
 
-<p>HMOs may be liable for business rates instead of council tax, depending on their configuration and local authority assessment. This affects both your costs and tax deductions. Both business rates and council tax are fully deductible against your HMO rental income.</p>
+<p>Most HMO landlords account room by room, treating each let bedroom as its own income stream so void periods and rent changes are easy to track. The key discipline is recognising income for the period it is earned, only for the time a room was genuinely let.</p>
 
-<p>Your HMO typically pays business rates if individual rooms are self-contained with private facilities and the property operates more like a commercial accommodation business. Traditional HMOs with shared facilities usually remain liable for council tax, either as a single bill payable by the landlord or divided among tenants (though the landlord often remains ultimately liable).</p>
+<p>By default a property business uses the <strong>cash basis</strong>: you count rent when you receive it. If your gross property cash receipts exceed 150,000 pounds in the tax year, you must instead use the <strong>accruals (receivable) basis</strong>, recognising rent as it falls due. Either way, you should not inflate the figure by assuming every room was full all year.</p>
 
-<h2>Section 24 Mortgage Interest Relief and Incorporation</h2>
+<p>For example, a five-room HMO with rooms let at varying rents, where one room sat empty for two months between tenancies, is taxed on the rent actually due across the periods each room was occupied, not on a theoretical fully let figure. Tracking occupancy by room and by month makes this straightforward and gives you a defensible audit trail if HMRC ever asks.</p>
 
-<p>HMO mortgages are subject to the same <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> as other residential buy-to-let properties. This means mortgage interest relief is capped at the basic rate of tax (20% tax credit) rather than full deduction from rental income.</p>
+<aside>
+<p><strong>Not sure you are recognising HMO income correctly?</strong> A short review of your room-by-room rent roll and expense allocation can confirm you are declaring the right figure and claiming everything you are entitled to. Request a free, no-obligation consultation using the form on this page.</p>
+</aside>
 
-<p>Section 24 can significantly impact HMO profitability, particularly for higher-rate taxpayers. For example: An HMO generating £30,000 rental income with £18,000 mortgage interest would previously have allowed the landlord to pay tax on £12,000 net income. Under Section 24, they pay tax on the full £30,000 rental income, then receive a 20% tax credit on the £18,000 interest (£3,600 credit).</p>
+<h2>What Expenses Can HMO Landlords Deduct?</h2>
 
-<p>Many HMO landlords consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a> to avoid Section 24 restrictions, as companies can still deduct mortgage interest in full. Company ownership can also provide access to corporation tax rates (19% small profits rate, profits up to £50k; 25% main rate, above £250k; marginal relief between) versus higher personal tax rates, allow profits to be retained for reinvestment, and offer more flexible succession planning. However, incorporation involves additional compliance costs and potential CGT charges on property transfers.</p>
+<p>HMO deductions follow the ordinary property-business rules in ITTOIA 2005: a cost is allowable if it is a <strong>revenue</strong> (not capital) expense incurred <strong>wholly and exclusively</strong> for the letting. HMOs simply tend to incur more of these costs, and more communal ones, than a single-let property.</p>
 
-<h2>Capital Allowances and VAT Considerations</h2>
+<h3>Common Allowable Revenue Costs</h3>
 
-<h3>Capital Allowances on HMO Equipment and Furnishings</h3>
-<p>HMOs often involve substantial expenditure on furniture, white goods, and equipment. While most residential landlords can't claim capital allowances, some HMO expenses may qualify for integral features and plant & machinery allowances, such as heating systems, electrical systems, security systems, and fitted kitchen appliances.</p>
-<p>Most HMO furniture costs are treated as revenue expenses. You can claim either the renewal basis (deducting replacement costs when furniture is renewed) or the wear and tear allowance (10% annual deduction for furnished properties only). The renewal basis is often more beneficial for HMOs due to higher furniture replacement rates.</p>
+<ul>
+<li><strong>Communal running costs:</strong> cleaning of shared areas, communal repairs and redecoration, gardening, waste and recycling, communal lighting and security systems.</li>
+<li><strong>Landlord-paid utilities and council tax:</strong> gas, electricity, water and broadband where you provide them inclusively, and council tax where you are the liable person.</li>
+<li><strong>Compliance and safety:</strong> HMO licence fees and renewals, annual gas safety certificates, the five-yearly electrical (EICR) inspection, fire risk assessments, fire alarm and emergency lighting servicing, and PAT testing.</li>
+<li><strong>Professional and management costs:</strong> letting and management agent fees, accountancy, and legal fees on routine tenancy and compliance matters.</li>
+<li><strong>Insurance:</strong> specialist HMO buildings, contents and landlord liability cover.</li>
+<li><strong>Finance costs other than interest:</strong> for example, mortgage arrangement and broker fees on a residential let are subject to the Section 24 restriction rather than a straight deduction (see below).</li>
+</ul>
 
-<h3>VAT for Large HMO Operations</h3>
-<p>HMO landlords with annual rental income exceeding £85,000 must register for VAT. Calculate your VAT liability based on total rental income from all properties. Once registered, you must add 20% VAT to rental income (where tenants are not exempt), reclaim VAT on qualifying business expenses, and submit quarterly returns.</p>
-<p>Most residential rent is VAT-exempt, but some HMO services like cleaning, laundry, or meals may be standard-rated.</p>
+<h3>The Revenue Versus Capital Line</h3>
 
-<h2>Record-Keeping Requirements and Making Tax Digital</h2>
-<p>HMO record-keeping is more complex than standard rental properties due to multiple tenants, varying occupancy, and additional services. Essential records include tenancy agreements, monthly rent rolls by room, deposit protection documentation, utility bills, service receipts, and all HMO licensing and compliance certificates.</p>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). HMO landlords often exceed this threshold and must use MTD-compatible software, submit quarterly income and expense updates, file annual summaries, and maintain digital records.</p>
+<p>The single most important judgement in HMO expenses is whether a cost is a repair (revenue, deductible now) or an improvement (capital, added to your CGT base cost). Replacing a worn-out boiler with a modern equivalent is usually a repair. Converting a family home into an HMO, adding ensuites or reconfiguring rooms is improvement, and that initial conversion spend is capital. Getting this line right protects both your income tax position and your future CGT calculation.</p>
 
-<h2>Tax Planning, Disposal, and Professional Advice</h2>
+<h3>Replacing Furniture and White Goods (Not the Old 10% Allowance)</h3>
 
-<h3>Common HMO Tax Planning Strategies</h3>
-<p>Plan major HMO expenses to optimise tax relief. Ensure repairs are treated as revenue expenses rather than capital improvements, consider accelerating deductible expenses before 5 April where beneficial, and time HMO licence renewals to spread costs across tax years.</p>
+<p>If you have read elsewhere that you can deduct a flat 10% of rent as a wear and tear allowance, that is wrong. The <strong>10% wear and tear allowance was abolished from April 2016</strong> and is not available to any residential landlord, furnished or otherwise. It was replaced by <a href="/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide">Replacement of Domestic Items Relief</a> (ITTOIA 2005 s.311A), which works very differently.</p>
 
-<h3>HMO Disposal and Capital Gains Tax</h3>
-<p>When selling an HMO, <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> applies at 18% (basic rate) or 24% (higher rate) on the gain above the annual exempt amount (£3,000 for 2026/27). HMO-specific considerations include enhancement expenditure (where HMO licensing and compliance improvements may qualify) and the fact that business asset disposal relief is generally not available for residential property investments. Professional advice is essential due to the complex interaction between licensing costs, improvements, and CGT calculations.</p>
+<p>RDIR gives a deduction when you <strong>replace</strong> a domestic item provided for tenant use, such as beds, mattresses, sofas, fridges, washing machines, carpets, curtains and crockery. The four statutory conditions are that you carry on a property business including a dwelling, you replace an old item with a new one provided solely for the tenant, the cost is not capital and is wholly and exclusively for the business, and no capital allowance is claimed on it. Key points for HMO landlords:</p>
 
-<h3>Getting Professional Help with HMO Tax</h3>
-<p>HMO taxation involves numerous complexities. Consider specialist property tax advice if you own multiple HMOs, are considering incorporation, face licensing changes, need MTD-compliant systems, or are planning major capital expenditure or disposals. <a href="/services">Professional property tax advice</a> can help optimise your HMO tax position and ensure full compliance.</p>
+<ul>
+<li>The relief is for replacement only. There is <strong>no deduction for the first time</strong> you buy an item to furnish a room.</li>
+<li>The replacement must be <strong>substantially the same</strong>. If you upgrade (say a basic fridge to a high-spec one), relief is capped at the cost of a like-for-like replacement.</li>
+<li>You can add the <strong>incidental costs</strong> of disposing of the old item and acquiring the new one, less any proceeds from selling or part-exchanging the old item.</li>
+<li><strong>Fixtures are excluded.</strong> Boilers, fitted kitchens and integral heating are part of the building, not domestic items, so they fall outside RDIR.</li>
+</ul>
+
+<h3>Capital Allowances: What Communal Plant Can and Cannot Qualify</h3>
+
+<p>Capital allowances are tightly restricted for residential lettings. <strong>CAA 2001 s.35</strong> bars plant and machinery allowances for plant provided for use <strong>in a dwelling-house</strong>. So furniture, appliances and heating inside the let rooms do not qualify (RDIR is the route for replacements instead).</p>
+
+<p>The narrow opening is the <strong>communal common parts</strong> of a multi-let building. Plant in shared areas that are not part of any single dwelling, for example a communal boiler serving the whole house, communal lighting, a lift or fire-alarm system in the common parts, can qualify for plant and machinery allowances, with the main pool written down at 14% from April 2026 (reduced from 18% by Finance Act 2026 s.28). This is a specialist area with a genuine dwelling-house boundary to police, so we cover the mechanics in the dedicated guide to <a href="/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property">HMO common-parts capital allowances and the s.35 claim</a>.</p>
+
+<h2>Section 24 and HMO Mortgage Interest</h2>
+
+<p>HMO mortgages are caught by the same <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restriction</a> as any residential buy-to-let. You can no longer deduct mortgage and other finance costs from rental profit. Instead, you pay tax on the full rental profit and then receive a tax reduction worth 20% of your finance costs.</p>
+
+<h3>A Worked Example</h3>
+
+<p>Take a higher-rate landlord whose HMO produces 30,000 pounds of rental income with running costs of 6,000 pounds and mortgage interest of 12,000 pounds.</p>
+
+<ul>
+<li>Taxable rental profit is 30,000 minus 6,000, which is 24,000 pounds. The interest is not deducted here.</li>
+<li>Income tax at 40% on 24,000 pounds is 9,600 pounds.</li>
+<li>The Section 24 reduction is 20% of the 12,000 pounds interest, which is 2,400 pounds.</li>
+<li>Net income tax on the HMO is 9,600 minus 2,400, which is 7,200 pounds.</li>
+</ul>
+
+<p>Under the pre-2017 rules the same landlord would have deducted the interest in full and paid 40% on 12,000 pounds (24,000 minus 12,000), which is 4,800 pounds. The Section 24 restriction therefore costs this landlord an extra 2,400 pounds for the year. The effect grows with borrowing and bites hardest on higher and additional-rate taxpayers, which is why some HMO investors model whether a limited company structure works for them. We weigh that decision in the guide to <a href="/blog/incorporation-and-company-structures/incorporating-an-hmo-into-a-limited-company-pros-and-cons">incorporating an HMO into a limited company</a>, where mortgage interest remains a deductible business cost but other charges (potential CGT and SDLT on transfer, ongoing compliance) come into play.</p>
+
+<h2>Council Tax and Business Rates for an HMO</h2>
+
+<p>HMO landlords ask two recurring questions here: who pays the <strong>council tax</strong> on a <strong>house of multiple occupancy</strong>, and could the property be assessed for business rates instead.</p>
+
+<p>For a traditional shared-facilities HMO, the whole property is normally a single council tax dwelling and, under the Local Government Finance Act 1992, the <strong>landlord is the liable person</strong> even where tenants hold individual room agreements. Landlords usually recover this through inclusive rent. Where rooms are self-contained with their own kitchen and bathroom, the Valuation Office Agency has at times banded each room separately, which caused disputes and unexpected bills. The government has confirmed it will change the rules so that a typical HMO is treated as one dwelling rather than room-by-room. The detail and timing are covered in our note on the <a href="/blog/property-types-and-specialist-tax/government-to-end-council-tax-on-hmo-rooms">plan to end council tax on individual HMO rooms</a>.</p>
+
+<p>A small number of HMOs that operate more like serviced commercial accommodation can fall into <strong>business rates</strong> rather than council tax. Whichever charge you, as landlord, actually pay is a deductible revenue expense against your rental income.</p>
+
+<h2>VAT and HMOs: Why Rent Almost Never Triggers Registration</h2>
+
+<p>This is the second area where online advice is frequently wrong. You may have seen a claim that an HMO landlord whose income exceeds the VAT threshold must register for VAT. That is misleading.</p>
+
+<p>Residential letting is an <strong>exempt</strong> supply under <strong>VATA 1994 Schedule 9 Group 1</strong>. Exempt income does <strong>not</strong> count towards the taxable-turnover test for VAT registration. The standard registration threshold is <strong>90,000 pounds</strong> of taxable turnover, but because residential rent is exempt rather than taxable, even a large HMO portfolio does not require VAT registration on the rent alone.</p>
+
+<p>VAT only becomes relevant where you make genuinely <strong>separate standard-rated supplies</strong>, for instance running serviced or short-stay accommodation, or separately charging for cleaning, laundry or meals as distinct services, and those standard-rated supplies exceed the threshold. For an ordinary residential HMO, that is rarely the case. If you do provide additional services, take advice before assuming either that you must register or that you are exempt.</p>
+
+<h2>HMO Landlord Tax Planning</h2>
+
+<p>Good <strong>HMO landlord tax planning</strong> is mostly about getting the basics right consistently, then layering structural choices on top. The order matters: claim everything you are entitled to before chasing more complex strategies.</p>
+
+<ul>
+<li><strong>Claim every allowable revenue cost.</strong> HMOs carry more compliance and communal expenditure than single lets, and these are easy to under-claim. A complete expense schedule, room by room where helpful, is the foundation.</li>
+<li><strong>Police the repair-versus-improvement line.</strong> Treating a genuine repair as capital loses you relief now; treating an improvement as a repair invites an HMRC challenge. Document the basis for each significant cost.</li>
+<li><strong>Use RDIR properly on furnishings.</strong> Keep evidence of like-for-like replacements and the incidental costs you add.</li>
+<li><strong>Review your ownership structure.</strong> Section 24 has made the personal-versus-company question central for geared HMO landlords. The answer depends on your marginal rate, borrowing and whether you reinvest or draw profits.</li>
+<li><strong>Time discretionary spend.</strong> Where commercially sensible, spreading licence renewals or larger works across tax years can smooth relief and keep you below thresholds that matter to you.</li>
+<li><strong>Get MTD-ready early.</strong> Digital records and compatible software reduce risk and make the quarterly cycle painless.</li>
+</ul>
+
+<p>If you compare an HMO with a standard single let, the higher gross yield usually comes with more cost, more compliance and a sharper Section 24 effect from typically higher borrowing. Our <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO versus standard buy-to-let tax comparison</a> sets the two side by side, and the detail on licensing relief is in the guide to <a href="/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords">whether HMO licensing fees are tax deductible</a>.</p>
+
+<aside>
+<p><strong>Want tax advice for your HMO?</strong> Whether you run one shared house or a multi-property HMO portfolio, a specialist review can confirm your income and expense position, model Section 24 and incorporation, and get you MTD-ready. Request a free, no-obligation consultation through the form on this page.</p>
+</aside>
+
+<h2>Making Tax Digital for HMO Landlords</h2>
+
+<p>HMO record-keeping is already more involved than a single let, with multiple tenancies, changing occupancy and inclusive-rent splits to track. <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> formalises that discipline.</p>
+
+<p>It becomes mandatory from <strong>6 April 2026</strong> for landlords (and sole traders) whose combined gross income exceeds <strong>50,000 pounds</strong>, then from 6 April 2027 above 30,000 pounds, and from 6 April 2028 above 20,000 pounds. The test is on gross income, not profit, so a single HMO can put you over the line. In scope, you must keep digital records, submit quarterly updates of income and expenses, and file a final declaration after the tax year. Building your room-by-room rent roll into MTD-compatible software now removes the year-end scramble later.</p>
+
+<h2>Capital Gains Tax When You Sell an HMO</h2>
+
+<p>An HMO held as an investment is residential property for <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a>. On disposal, the gain above the annual exempt amount (<strong>3,000 pounds for 2026/27</strong>) is taxed at <strong>18%</strong> to the extent it falls within your remaining basic-rate band and <strong>24%</strong> above it.</p>
+
+<p>Two HMO-specific points are worth flagging. First, genuine <strong>improvement</strong> expenditure, such as the original conversion to HMO use or adding ensuites, adds to your base cost and reduces the gain, whereas routine repairs (already relieved against income) do not. Second, <strong>Business Asset Disposal Relief is not available</strong> for a residential property investment, so do not assume the 10% BADR rate applies. A UK residential property disposal also has to be reported and the tax paid within 60 days of completion, separate from the annual return.</p>
+
+<h2>Record-Keeping and Getting It Right</h2>
+
+<p>For an HMO, keep tenancy agreements, a monthly rent roll by room, deposit-protection records, all utility and service invoices, council tax and licence documentation, and the safety certificates (gas, electrical, fire) you are required to hold. These records support both your income computation and your evidence base for repairs, RDIR claims and the eventual CGT calculation. Where the property sits in a portfolio, a clear allocation of shared costs between properties keeps each computation defensible.</p>
+
+<h3>Where to Get Specialist HMO Tax Advice</h3>
+
+<p>HMO taxation rewards attention to detail: the income-recognition basis, the communal-versus-dwelling expense split, RDIR rather than the abolished wear and tear allowance, the s.35 capital-allowances boundary, Section 24 and the structural choices it drives. If you own multiple HMOs, are weighing incorporation, face licensing or banding changes, or are planning a disposal, a specialist review pays for itself in accuracy and peace of mind. Use the form on this page to request a free, no-obligation consultation with a property tax adviser who works with HMO landlords every day.</p>
