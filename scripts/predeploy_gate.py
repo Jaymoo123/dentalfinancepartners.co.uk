@@ -28,10 +28,20 @@ Checks:
      requires that batch fully QA'd-clean with matching hashes. This is the
      deterministic arithmetic + statute backstop (plausibility review alone
      shipped the backwards-2027 and Bill-vs-enacted errors).
+  5. Query coverage        - OPT-IN, off by default. WARNING under --coverage,
+     HARD under --coverage-strict. Confirms each rewritten page covers the
+     target query set per scripts/track2_query_coverage.py. Manifest-first
+     (reads optimisation_engine/.cache/coverage_<batch>.json and, exactly like
+     the QA gate, re-verifies each slug's sha256 against the live file so a page
+     edited after coverage cannot ride out on a stale pass); falls back to
+     running the per-slug coverage script under --coverage-run.
 
 Exit 0 = no HARD failures (safe to deploy). Exit 1 = a HARD gate failed.
 Pass --strict to also hard-fail on em-dashes and pricing (use once swept).
 Pass --qa-batch <name> to enforce strict QA coverage for a deploy batch.
+Pass --coverage (warn) or --coverage-strict (hard) to enable the query-coverage
+gate; --coverage-batch <name> selects the coverage manifest and --coverage-run
+runs the per-slug coverage script as a fallback.
 """
 import hashlib
 import json
@@ -45,6 +55,13 @@ BLOG = ROOT / "Property/web/content/blog"
 CACHE = ROOT / "optimisation_engine/.cache"
 STRICT = "--strict" in sys.argv
 
+# Query-coverage gate is OPT-IN. --coverage = WARNING mode, --coverage-strict =
+# HARD. If neither is set, check_query_coverage() is a silent no-op so existing
+# callers (no flags / --strict / --qa-batch) are completely unaffected.
+COVERAGE = "--coverage" in sys.argv
+COVERAGE_STRICT = "--coverage-strict" in sys.argv
+COVERAGE_RUN = "--coverage-run" in sys.argv
+
 
 def _qa_batch_arg():
     """--qa-batch <name>: enforce strict QA coverage for that batch."""
@@ -55,7 +72,17 @@ def _qa_batch_arg():
     return None
 
 
+def _coverage_batch_arg():
+    """--coverage-batch <name>: select the coverage manifest for that batch."""
+    if "--coverage-batch" in sys.argv:
+        i = sys.argv.index("--coverage-batch")
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    return None
+
+
 QA_BATCH = _qa_batch_arg()
+COVERAGE_BATCH = _coverage_batch_arg()
 
 failures = []   # HARD - block deploy
 warnings = []   # surfaced, non-blocking unless --strict
@@ -245,16 +272,111 @@ def check_qa():
                   "QA'd-clean with matching hashes")
 
 
+def check_query_coverage():
+    """Query-coverage gate (OPT-IN). No-op unless --coverage/--coverage-strict.
+
+    Confirms each rewritten page covers its target query set. Conservative:
+    WARNING under --coverage, HARD under --coverage-strict (bucket chosen the
+    same way check_em_dashes/check_pricing pick failures vs warnings).
+
+    Manifest-first: with --coverage-batch <name>, reads
+    optimisation_engine/.cache/coverage_<name>.json
+    ({batch, ts, slugs:{<slug>:{sha256, passed, coverage_score, missing}}}) and,
+    exactly like the QA gate, re-verifies each slug's sha256 against the live
+    file (a page edited after coverage needs re-coverage) plus passed===true.
+
+    Fallback: with --coverage-run, runs
+    `python scripts/track2_query_coverage.py --slug <s> --json` per slug in the
+    batch manifest (subprocess exit 2 => passed=false). With no manifest there
+    is no authoritative slug list, so it prints a note and skips rather than
+    invent one.
+    """
+    if not (COVERAGE or COVERAGE_STRICT):
+        return  # silent no-op; existing callers unaffected
+
+    bucket = failures if COVERAGE_STRICT else warnings
+    label = "FAIL" if COVERAGE_STRICT else "warn"
+
+    if not COVERAGE_BATCH:
+        print("[ok]   query coverage: no coverage batch specified "
+              "(pass --coverage-batch <name>); nothing to enforce")
+        return
+
+    manifest = CACHE / f"coverage_{COVERAGE_BATCH}.json"
+    slugs = None
+    if manifest.exists():
+        try:
+            slugs = json.loads(manifest.read_text(encoding="utf-8")).get("slugs", {})
+        except Exception:
+            slugs = None
+    if slugs is None and not COVERAGE_RUN:
+        bucket.append(f"Query coverage (batch '{COVERAGE_BATCH}'): no/unreadable "
+                      f"manifest ({manifest}) - run coverage then re-deploy, or "
+                      "pass --coverage-run.")
+        print(f"[{label}] query coverage: batch '{COVERAGE_BATCH}' manifest missing")
+        return
+    if slugs is None and COVERAGE_RUN:
+        print(f"[ok]   query coverage: no manifest for batch '{COVERAGE_BATCH}' "
+              "and no slug list to run - skipped (provide a manifest to enforce)")
+        return
+
+    problems = []
+    if COVERAGE_RUN:
+        # Fallback: run the per-slug coverage script for each manifest slug.
+        for slug in slugs:
+            res = subprocess.run(
+                [sys.executable, "scripts/track2_query_coverage.py",
+                 "--slug", slug, "--json"],
+                capture_output=True, text=True,
+            )
+            passed = res.returncode != 2
+            try:
+                out = json.loads(res.stdout)
+                passed = bool(out.get("passed", passed))
+            except Exception:
+                pass
+            if res.returncode == 2:
+                passed = False
+            if not passed:
+                problems.append(f"{slug}: coverage gate-fail (live run)")
+    else:
+        # Manifest-first: sha256-match each slug, then require passed===true.
+        for slug, rec in slugs.items():
+            cur = _sha(slug)
+            if cur is None:
+                problems.append(f"{slug}: .md missing")
+            elif cur != rec.get("sha256"):
+                problems.append(f"{slug}: changed since coverage (re-coverage needed)")
+            elif rec.get("passed") is not True:
+                problems.append(f"{slug}: not passed "
+                                f"(missing {len(rec.get('missing') or [])} query(ies))")
+
+    if problems:
+        bucket.append(f"Query coverage (batch '{COVERAGE_BATCH}'): {len(problems)} "
+                      "slug(s) not coverage-clean.")
+        print(f"[{label}] query coverage: batch '{COVERAGE_BATCH}': "
+              f"{len(problems)} slug(s) not clean")
+        for p in problems[:20]:
+            print("         " + p)
+    else:
+        print(f"[ok]   query coverage: batch '{COVERAGE_BATCH}': all {len(slugs)} "
+              "slug(s) covered with matching hashes")
+
+
 def main():
     print("=" * 60)
     print("PRE-DEPLOY GATE (Property)" + ("  [--strict]" if STRICT else "")
-          + (f"  [--qa-batch {QA_BATCH}]" if QA_BATCH else ""))
+          + (f"  [--qa-batch {QA_BATCH}]" if QA_BATCH else "")
+          + ("  [--coverage]" if COVERAGE and not COVERAGE_STRICT else "")
+          + ("  [--coverage-strict]" if COVERAGE_STRICT else "")
+          + (f"  [--coverage-batch {COVERAGE_BATCH}]" if COVERAGE_BATCH else ""))
     print("=" * 60)
     check_links()
     check_frontmatter()
     check_em_dashes()
     check_pricing()
     check_qa()
+    check_query_coverage()
     print("-" * 60)
     if warnings and not STRICT:
         print("WARNINGS (non-blocking; pass --strict to enforce once swept):")

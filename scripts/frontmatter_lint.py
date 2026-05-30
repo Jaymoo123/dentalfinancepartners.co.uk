@@ -45,7 +45,7 @@ SITE_BLOG = {
 
 QUOTE_KEYS = ("title", "metaTitle", "metaDescription", "summary", "altText", "h1",
               "author", "ogTitle", "ogDescription", "reviewedBy", "reviewerCredentials",
-              "question", "answer")
+              "question", "answer", "name", "text")
 _line_re = re.compile(rf'^(\s*-?\s*)({"|".join(QUOTE_KEYS)}):[ \t]+(.*?)[ \t]*$')
 
 

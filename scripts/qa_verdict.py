@@ -87,7 +87,15 @@ def _derive_all_clear(v) -> bool:
         and s.get("royal_assent_ok", True)
         for s in (v.get("statute_checks") or []))
     links_ok = bool(v.get("links_resolve", True))
-    derived = no_blocking and arithmetic_ok and statutes_ok and links_ok
+    # Ranking-grade dimensions. Defaults PASS when absent so existing
+    # batch1/batch4 caches (recorded before coverage/meta existed) do not
+    # retro-fail. eeat_present / schema_valid are quality-only and stay OUT.
+    qc = v.get("query_coverage") or {}
+    coverage_ok = not (qc.get("uncovered_high_demand") or [])
+    meta = v.get("meta_quality") or {}
+    meta_ok = meta.get("ok", True)
+    derived = (no_blocking and arithmetic_ok and statutes_ok and links_ok
+               and coverage_ok and meta_ok)
     reported = bool(v.get("all_clear", derived))  # absent -> use the derivation
     return derived and reported
 
@@ -117,6 +125,19 @@ def _rows(data):
                 "severity": "blocking", "type": "statute",
                 "detail": "QA returned no statute_checks but the page cites statutes "
                           "- statutes were not content-verified (vacuous all_clear blocked)."}]
+        # Ranking-grade synthesis (mirrors the anti-vacuous-statute block):
+        # uncovered high-demand queries and meta overflow are blocking.
+        uncovered = (v.get("query_coverage") or {}).get("uncovered_high_demand") or []
+        if uncovered:
+            blocking = blocking + [{
+                "severity": "blocking", "type": "coverage",
+                "detail": "uncovered high-demand queries: " + ", ".join(map(str, uncovered))}]
+        meta = v.get("meta_quality") or {}
+        if "ok" in meta and not meta.get("ok"):
+            blocking = blocking + [{
+                "severity": "blocking", "type": "meta",
+                "detail": "meta overflow: title_len={} desc_len={} (limits 60/155)".format(
+                    meta.get("title_len"), meta.get("desc_len"))}]
         rows.append({
             "slug": v["slug"],
             "all_clear": ac,
@@ -213,6 +234,50 @@ def record(batch: str, verdicts_path: str) -> None:
         print("  all recorded slugs are all_clear")
 
 
+def coverage(batch: str, slugs) -> None:
+    """Run the deterministic query-coverage check per slug and write a coverage
+    manifest keyed to each .md's sha256. Exit code 2 from the coverage script is
+    a real gate-fail RESULT (not an error): passed=False is recorded."""
+    import subprocess
+    out_slugs: dict = {}
+    for slug in slugs:
+        h = sha256_of(slug)
+        if h is None:
+            print(f"  WARNING: no .md for '{slug}' - skipped")
+            continue
+        proc = subprocess.run(
+            ["python", "scripts/track2_query_coverage.py", "--slug", slug, "--json"],
+            capture_output=True, text=True)
+        # exit 0 = pass/invisible, exit 2 = gate-fail; both emit JSON on stdout.
+        if proc.returncode not in (0, 2):
+            print(f"  WARNING: coverage script errored for '{slug}' "
+                  f"(exit {proc.returncode}): {proc.stderr.strip()[:200]}")
+            continue
+        try:
+            res = json.loads(proc.stdout)
+        except Exception as e:
+            print(f"  WARNING: could not parse coverage JSON for '{slug}': {e}")
+            continue
+        missing = [m.get("query") if isinstance(m, dict) else m
+                   for m in (res.get("missing_queries") or [])]
+        out_slugs[slug] = {
+            "sha256": h,
+            "passed": bool(res.get("passed", False)),
+            "coverage_score": float(res.get("coverage_score", 0) or 0),
+            "missing": missing,
+        }
+    CACHE.mkdir(parents=True, exist_ok=True)
+    out = CACHE / f"coverage_{batch}.json"
+    out.write_text(json.dumps(
+        {"batch": batch, "ts": time.time(), "slugs": out_slugs}, indent=2),
+        encoding="utf-8")
+    passed = sum(1 for v in out_slugs.values() if v["passed"])
+    print(f"qa_verdict coverage: {passed}/{len(out_slugs)} slug(s) passed -> {out}")
+    failed = [s for s, v in out_slugs.items() if not v["passed"]]
+    if failed:
+        print(f"  NOT passed (uncovered high-demand): {', '.join(failed)}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Record + track independent-QA verdicts for the pre-deploy gate.")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -222,11 +287,16 @@ def main() -> None:
     p = sub.add_parser("pending", help="mark freshly-rewritten slugs as awaiting QA (gate blocks until cleared)")
     p.add_argument("--batch", required=True, help="batch name")
     p.add_argument("--slugs", required=True, nargs="+", help="slugs just rewritten")
+    cov = sub.add_parser("coverage", help="run the deterministic query-coverage check per slug and write a coverage manifest")
+    cov.add_argument("--batch", required=True, help="batch name (used in the manifest filename)")
+    cov.add_argument("--slugs", required=True, nargs="+", help="slugs to check coverage for")
     a = ap.parse_args()
     if a.cmd == "record":
         record(a.batch, a.verdicts)
     elif a.cmd == "pending":
         pending(a.batch, a.slugs)
+    elif a.cmd == "coverage":
+        coverage(a.batch, a.slugs)
 
 
 if __name__ == "__main__":

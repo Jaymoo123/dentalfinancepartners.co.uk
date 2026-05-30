@@ -24,6 +24,8 @@ export type BlogFrontmatter = {
   reviewedBy?: string;
   reviewerCredentials?: string;
   reviewedAt?: string;
+  dateModified?: string;
+  howToSteps?: { name: string; text: string }[];
 };
 
 export type BlogPost = BlogFrontmatter & {

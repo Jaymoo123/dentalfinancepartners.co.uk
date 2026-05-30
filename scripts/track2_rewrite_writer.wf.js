@@ -4,6 +4,7 @@ export const meta = {
   phases: [
     { title: 'Rewrite', detail: 'data-grounded in-place rewrite of the page .md' },
     { title: 'Normalise', detail: 'deterministic internal-link canonicalisation (slug_resolver)' },
+    { title: 'Coverage', detail: 'deterministic query-coverage check + bounded weave-repair' },
     { title: 'Verify', detail: 'adversarial statute/pricing/facts/cannibalisation/HTML check' },
   ],
 }
@@ -56,9 +57,12 @@ const NORMALISE_SCHEMA = {
   },
 }
 
+const COVERAGE_SCHEMA = { type:'object', additionalProperties:false, required:['slug','passed','coverage_score','missing','repaired'],
+  properties:{ slug:{type:'string'}, passed:{type:'boolean'}, coverage_score:{type:'number'}, missing:{type:'array',items:{type:'string'}}, repaired:{type:'boolean'} } }
+
 const VERIFY_SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['slug', 'statutes_ok', 'pricing_clean', 'em_dash_clean', 'facts_current', 'cannibalisation_ok', 'html_valid', 'verdict', 'flags'],
+  required: ['slug', 'statutes_ok', 'pricing_clean', 'em_dash_clean', 'facts_current', 'cannibalisation_ok', 'html_valid', 'query_coverage', 'meta_ok', 'eeat_ok', 'schema_ok', 'verdict', 'flags'],
   properties: {
     slug: { type: 'string' },
     statutes_ok: { type: 'boolean' },
@@ -67,6 +71,15 @@ const VERIFY_SCHEMA = {
     facts_current: { type: 'boolean', description: 'MTD/Section 24/FHL/CGT/2027 all stated correctly' },
     cannibalisation_ok: { type: 'boolean', description: 'Still distinct from sibling/canonical pages (no new cannibalisation introduced)' },
     html_valid: { type: 'boolean' },
+    query_coverage: { type: 'object', additionalProperties: false, required: ['covered_pct', 'missing', 'natural'],
+      properties: {
+        covered_pct: { type: 'number', description: 'percent of target_queries[] served (from the Coverage stage result)' },
+        missing: { type: 'array', items: { type: 'string' }, description: 'proven-demand queries still not served' },
+        natural: { type: 'boolean', description: 'false if queries are stuffed (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs' },
+      } },
+    meta_ok: { type: 'boolean', description: 'metaTitle<=60 chars AND metaDescription<=155 chars AND h1 query-aligned to the primary intent' },
+    eeat_ok: { type: 'boolean', description: 'reviewedBy + reviewerCredentials + reviewedAt + dateModified all present in frontmatter' },
+    schema_ok: { type: 'boolean', description: 'richest valid schema emitted: FAQPage present iff faqs exist, HowTo present iff howToSteps exist' },
     verdict: { type: 'string', enum: ['pass', 'pass-with-fixes', 'fail'] },
     flags: { type: 'array', items: { type: 'string' } },
   },
@@ -79,10 +92,11 @@ const results = await pipeline(
 ${HARD}
 ${DEPTH_NOTE}
 Steps:
-${briefDir ? `0. PLAN (read FIRST if present): \`${briefDir}/${slug}.md\` is your verified rewrite brief - follow its gap-mode diagnosis, section-by-section content plan, target word count, statute spine, competitor depth benchmark, and internal-link targets. ALSO read \`${briefDir}/${slug}.corrections.md\` if present and PREFER its statute corrections over anything in the brief (the brief's statute spine may carry adversarially-flagged miscites). If neither file exists, proceed from the data pull below. Regardless: independently re-verify EVERY statute you cite at legislation.gov.uk at write time and trust legislation.gov.uk over the brief.` : ''}
-1. Run \`python -m optimisation_engine.track2.pull_page_data --slug ${slug}\` for GSC queries (what it should target), GA4 engagement (where users engage/bounce, if any), competitor signals, and the parsed content map.
+${briefDir ? `0. PLAN (read FIRST if present): \`${briefDir}/${slug}.md\` is your verified rewrite brief - follow its gap-mode diagnosis, section-by-section content plan, target word count, statute spine, competitor depth benchmark, and internal-link targets. ALSO read \`${briefDir}/${slug}.corrections.md\` if present and PREFER its statute corrections over anything in the brief (the brief's statute spine may carry adversarially-flagged miscites). If neither file exists, proceed from the data pull below. Regardless: independently re-verify EVERY statute you cite at legislation.gov.uk at write time and trust legislation.gov.uk over the brief.` : `0. NO BRIEF: treat target_queries[] from the data pull (step 1) as your authoritative coverage target set and the competitor_depth[] word/section/faq counts as your depth benchmark. Enumerate and weave every target_queries[] item with the same rigor a brief would demand.`}
+1. Run \`python -m optimisation_engine.track2.pull_page_data --slug ${slug} --json\` for GSC queries (what it should target), GA4 engagement (where users engage/bounce, if any), competitor signals, and the parsed content map. This prints \`target_queries[]\` (EVERY proven GSC+Bing demand query, deduped and sorted by impressions descending) and an \`adjacent[]\` opportunity list - these are your coverage targets.
 2. Read Property/web/content/blog/${slug}.md in full (frontmatter + body).
 3. Rewrite the .md IN PLACE per the depth note and every hard rule: target the primary + secondary queries the GSC data shows, fix all stale facts, strip all pricing, add genuine specificity, proper HTML body, internal links, FAQs in frontmatter. Use the Write/Edit tools on Property/web/content/blog/${slug}.md.
+4. ON-PAGE SEO (best-practice; REWRITE-ONLY, never collapse): weave EVERY target_queries[] item naturally and ONCE, prioritised by impressions - highest-impression queries belong in the metaTitle / h1 / an early H2; mid-impression in H2s and FAQs; long-tail in FAQs and body prose. NEVER repeat a query to satisfy a checker: a separate stage judges naturalness and stuffing (repeated or list-dumped queries) FAILS it. metaTitle <=60 chars, leading with the primary (highest-impression) query plus a CTR hook; metaDescription <=155 chars; h1 query-aligned to the primary intent; phrase H2s as the user's actual question/intent where natural; 8-14 FAQs that reuse the long-tail target_queries[] (and competitor PAA from the data pull) VERBATIM where natural. E-E-A-T + freshness: set reviewedBy + reviewerCredentials + reviewedAt=2026-05-30 and dateModified=2026-05-30 in frontmatter, but PRESERVE the original \`date\` field; use a REAL reviewer per docs/property/house_positions.md - never invent a name or credentials. If the page is step-by-step / "how to", add a \`howToSteps: [{name, text}]\` list to frontmatter (this auto-emits HowTo schema). Add 3-6 internal links to REAL sibling slugs.
 IMPORTANT: after you have SAVED the file, your final action is to return ONLY {slug, words_after, done:true}. Keep this return tiny so it is never truncated; the verify stage reads the saved file for the real audit. If you could not finish the rewrite, return done:false with a one-line note.`,
     { label: `rewrite:${slug}`, phase: 'Rewrite', schema: REWRITE_SCHEMA }
   ).then(rw => ({ slug, rewrite: rw })),
@@ -104,9 +118,28 @@ The scripts are the source of truth. Then report what it printed: canonicalised 
     { label: `normalise:${prev.slug}`, phase: 'Normalise', schema: NORMALISE_SCHEMA }
   ).then(nz => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: nz })),
 
+  // Stage 3 - DETERMINISTIC query-coverage check + bounded weave-repair. The
+  // coverage script (target_queries[] from the data pull, deduped/sorted by
+  // impressions) is authoritative on WHICH proven-demand queries are served;
+  // the agent only weaves any missing high-demand query into the indicated
+  // field, never repeats, and re-runs the deterministic check. This is the
+  // ranking-grade gate the verify stage reports against.
+  (prev) => agent(
+    `Deterministic query-coverage check for the just-rewritten page Property/web/content/blog/${prev.slug}.md.
+Run \`python scripts/track2_query_coverage.py --slug ${prev.slug} --json\`.
+- If it returns passed:true -> return {slug:"${prev.slug}", passed:true, repaired:false, coverage_score:<its coverage_score>, missing:[]}.
+- If it returns passed:false -> it lists missing_queries[] (proven GSC+Bing demand NOT served) and, per query, a \`where\` hint (meta / H2 / FAQ / body) for where it should go. WEAVE-REPAIR, MAX TWICE:
+    a. Edit Property/web/content/blog/${prev.slug}.md to place EACH missing query naturally in the indicated field (metaTitle/metaDescription/H2/FAQ/body), ONCE each. Break NO HARD RULE (no pricing, no em-dashes, current facts, valid HTML, real reviewer). Do NOT repeat a query or dump a bare list - a separate stage fails stuffing.
+    b. After editing, run \`python scripts/frontmatter_lint.py --fix Property/web/content/blog/${prev.slug}.md\` then RE-RUN \`python scripts/track2_query_coverage.py --slug ${prev.slug} --json\`.
+    c. Repeat (a)-(b) at most twice total. After at most 2 repairs, return the FINAL deterministic result.
+Return {slug:"${prev.slug}", passed:<final passed>, repaired:<true if you edited the file>, coverage_score:<final coverage_score>, missing:<final missing_queries as a list of query strings>}.`,
+    { label: `coverage:${prev.slug}`, phase: 'Coverage', schema: COVERAGE_SCHEMA }
+  ).then(cv => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, coverage: cv })),
+
   (prev) => agent(
     `You are the adversarial VERIFY stage for the rewritten page Property/web/content/blog/${prev.slug}.md. Default skeptical.
 The deterministic Normalise stage reported these UNRESOLVED (invented) links that still need repointing: [${(prev.normalise && prev.normalise.unresolved || []).join(', ') || 'none'}]. If that list is non-empty, set html_valid:false and add each to flags.
+The deterministic Coverage stage returned: passed=${prev.coverage && prev.coverage.passed}, coverage_score=${prev.coverage && prev.coverage.coverage_score}, missing=[${(prev.coverage && prev.coverage.missing || []).join(', ') || 'none'}]. TRUST those numbers - do not recompute coverage. Populate query_coverage from them: covered_pct = the coverage_score (as a percentage), missing = that missing list; you ONLY judge query_coverage.natural - set it false if any target query is STUFFED (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
 Read the file (post-rewrite). Check:
 1. STATUTES: every statute/section cited - WebFetch legislation.gov.uk to confirm it exists, says what the page claims, and (for any Finance Act) its Royal Assent (Bill-vs-enacted).
 2. PRICING: NO fees/fee-ranges/hourly rates/percentage-of-rent fees anywhere (legitimate tax figures like the GBP3,000 CGT allowance or SDLT bands are fine).
@@ -114,9 +147,12 @@ Read the file (post-rewrite). Check:
 4. FACTS CURRENT: MTD live (Apr 2026 GBP50k / 2027 GBP30k / 2028 GBP20k), Section 24 in force, FHL abolished Apr 2025, CGT 18/24 unified, FA 2026 2027 rates stated as enacted. Flag any stale framing.
 5. CANNIBALISATION: Grep Property/web/content/blog - the rewrite must not duplicate a stronger sibling/canonical's intent (no new cannibalisation).
 6. HTML valid (no leaked markdown, frontmatter intact).
-Return the structured verdict. pass only if statutes_ok AND pricing_clean AND em_dash_clean AND facts_current AND cannibalisation_ok AND html_valid.`,
+7. META: set meta_ok = (metaTitle is <=60 chars) AND (metaDescription is <=155 chars) AND (h1 is aligned to the primary query intent). Count the characters.
+8. E-E-A-T: set eeat_ok = (reviewedBy AND reviewerCredentials AND reviewedAt AND dateModified are all present in frontmatter).
+9. SCHEMA: set schema_ok = the page emits the richest VALID schema - FAQPage present iff faqs exist, HowTo present iff howToSteps exist (no schema asserting content the page lacks, and none missing where the content exists).
+Return the structured verdict. verdict = pass ONLY if statutes_ok AND pricing_clean AND em_dash_clean AND facts_current AND cannibalisation_ok AND html_valid. The meta_ok / eeat_ok / schema_ok / query_coverage fields are REPORTED for the deterministic gate to act on; they do NOT themselves flip verdict to fail (the deterministic coverage gate, not this stage, blocks on coverage).`,
     { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA }
-  ).then(v => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, verify: v }))
+  ).then(v => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, coverage: prev.coverage, verify: v }))
 )
 
 const ok = results.filter(Boolean)
@@ -125,4 +161,6 @@ const unresolvedTotal = ok.reduce((n, r) => n + ((r.normalise && r.normalise.unr
 log(`Rewrite-writer done: ${c('pass')} pass, ${c('pass-with-fixes')} pass-with-fixes, ${c('fail')} fail | ${unresolvedTotal} unresolved (invented) link(s) to repoint`)
 return ok.map(r => ({ slug: r.slug, verdict: r.verify && r.verify.verdict, flags: (r.verify && r.verify.flags) || [],
   words_after: r.rewrite && r.rewrite.words_after, done: r.rewrite && r.rewrite.done,
+  coverage_passed: r.coverage && r.coverage.passed, coverage_score: r.coverage && r.coverage.coverage_score,
+  coverage_missing: (r.coverage && r.coverage.missing) || [],
   unresolved_links: (r.normalise && r.normalise.unresolved) || [] }))

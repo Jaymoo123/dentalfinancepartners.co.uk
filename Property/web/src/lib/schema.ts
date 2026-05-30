@@ -69,12 +69,21 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     description: post.metaDescription,
     image: imageUrl,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.dateModified ?? post.date,
     author: {
       "@type": "Person" as const,
       name: `${siteConfig.name} Editorial Team`,
       url: `${siteConfig.url}/about`,
     },
+    ...(post.reviewedBy?.trim() && {
+      reviewedBy: {
+        "@type": "Person" as const,
+        name: post.reviewedBy,
+        ...(post.reviewerCredentials?.trim() && {
+          jobTitle: post.reviewerCredentials,
+        }),
+      },
+    }),
     publisher,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -84,5 +93,25 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     inLanguage: "en-GB",
   };
 
-  return JSON.stringify(faq ? [article, faq] : article);
+  const blocks: object[] = [article];
+  if (faq) blocks.push(faq);
+  if (post.howToSteps?.length) blocks.push(buildHowToJsonLd(post, path));
+  return JSON.stringify(blocks.length === 1 ? blocks[0] : blocks);
+}
+
+/** Build HowTo JSON-LD for step-by-step pages (only when `howToSteps` present) */
+export function buildHowToJsonLd(post: BlogPost, path: string) {
+  void path;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.h1,
+    ...(post.metaDescription && { description: post.metaDescription }),
+    step: (post.howToSteps ?? []).map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  };
 }

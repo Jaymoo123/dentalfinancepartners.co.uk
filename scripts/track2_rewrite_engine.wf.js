@@ -37,13 +37,22 @@ HARD RULES (memory-locked):
 
 const DIAGNOSE_SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['slug', 'decision', 'gap_modes', 'primary_query', 'current_word_count', 'target_word_count', 'cannibalisation', 'competitor_targets', 'risk_notes'],
+  required: ['slug', 'decision', 'gap_modes', 'primary_query', 'target_queries', 'current_word_count', 'target_word_count', 'cannibalisation', 'competitor_targets', 'risk_notes'],
   properties: {
     slug: { type: 'string' },
     decision: { type: 'string', enum: ['rewrite', 'redirect-collapse'] },
     redirect_canonical: { type: 'string', description: 'If redirect-collapse: the canonical slug to collapse into. Empty for rewrite.' },
     gap_modes: { type: 'array', items: { type: 'string' }, description: 'e.g. STALE_FACTS, THIN_DEPTH, STRUCTURE, INVISIBLE, CTR_FAIL, PRICING_LEAK' },
     primary_query: { type: 'string' },
+    target_queries: { type: 'array',
+      description: 'EVERY returned GSC top-15 + Bing top-15 query enumerated (not "representative") - the full proven-demand set the brief and the deterministic coverage check consume.',
+      items: { type: 'object', additionalProperties: false, required: ['query', 'source', 'impr', 'pos'],
+        properties: {
+          query: { type: 'string' },
+          source: { type: 'string', enum: ['gsc', 'bing', 'adjacent'] },
+          impr: { type: 'number' },
+          pos: { type: 'number' },
+        } } },
     current_word_count: { type: 'number' },
     target_word_count: { type: 'number', description: 'Recommended rewrite length, benchmarked to top competitors (gold-ref briefs run ~3000-5800 words)' },
     cannibalisation: { type: 'string', description: 'Which existing live pages overlap this slug and how the rewrite stays distinct OR why it should collapse into one of them' },
@@ -77,7 +86,11 @@ const draftBrief = (prev) => agent(
   `You are the Track 2 BRIEF stage for "${prev.slug}". The diagnosis decided REWRITE.
 ${REQUIRED_READING}
 Diagnosis to build on: ${JSON.stringify(prev.diagnosis)}
-Draft a complete gold-reference rewrite brief matching the depth and 15-section structure of the gold-reference and birmingham city templates above. The brief must include: gap-mode diagnosis, the primary + secondary query targets, the cannibalisation/distinctiveness statement, the section-by-section content plan to ~${prev.diagnosis.target_word_count} words, the statute spine (every section number with its Act, to be verified), the competitor depth benchmark, internal-link targets within the live corpus, and the metaTitle/metaDescription/h1 plan. Obey every HARD RULE (no pricing, no em-dashes, anonymised proof).
+Draft a complete gold-reference rewrite brief matching the depth and 15-section structure of the gold-reference and birmingham city templates above. The brief must include: gap-mode diagnosis, the primary + secondary query targets, the cannibalisation/distinctiveness statement, the section-by-section content plan to ~${prev.diagnosis.target_word_count} words, the statute spine (every section number with its Act, to be verified), the competitor depth benchmark, internal-link targets within the live corpus, and the metaTitle/metaDescription/h1 plan. The brief must ALSO include these three named sections (consistent with the existing brief templates):
+- \`## Query-coverage plan\`: a table with columns Query | source | impr | pos | served-in (metaTitle / H1 / H2# / FAQ# / body§) - ONE row per target_queries[] item from the diagnosis, each query assigned exactly once to where it will be served.
+- \`## Meta plan\`: metaTitle (<=62 chars), metaDescription (<=158 chars), h1, summary.
+- \`## Schema plan\`: reviewer name + credentials (from docs/property/house_positions.md, a REAL reviewer), howTo: true|false (true only for step-by-step pages), dateModified=2026-05-30, and which JSON-LD blocks emit (Article/FAQPage/HowTo).
+Obey every HARD RULE (no pricing, no em-dashes, anonymised proof).
 WRITE the brief to ${briefDir}/${prev.slug}.md (create the directory if needed via the Write tool path).
 Return a JSON object with: { "brief_path": "${briefDir}/${prev.slug}.md", "statute_citations": ["TCGA 1992 s.222", ...], "word_target": <number>, "summary": "<3-sentence summary of the rewrite approach>" }.`,
   { label: `brief:${prev.slug}`, phase: 'Brief', schema: BRIEF_SCHEMA }
@@ -94,6 +107,7 @@ Do this:
 1. Read the current live page at Property/web/content/blog/${slug}.md (frontmatter + body). Count its body words.
 2. Pull GSC performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM gsc_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' GROUP BY query ORDER BY impr DESC LIMIT 15;"\` to see what it ranks for on Google. (Empty = INVISIBLE on Google.)
 2b. Pull BING performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM bing_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' AND date=(SELECT MAX(date) FROM bing_query_data WHERE site_key='property') GROUP BY query ORDER BY impr DESC LIMIT 15;"\`. Many legacy pages rank PAGE 1 on Bing while page 4-8 on Google for the same intent: that is proven demand and evidence the core answer works. Fold the Bing query universe into the primary/secondary target set, and weigh it in the rewrite-vs-collapse call (a page with strong Bing equity must NOT be collapsed).
+2c. ENUMERATE COVERAGE TARGETS: put EVERY returned query from steps 2 and 2b into target_queries[] with its source (gsc|bing), impr, and pos - do NOT summarise to "representative". The brief and the deterministic coverage check consume the FULL list, so a query you drop here is a query the rewrite is allowed to miss.
 3. Cannibalisation scan: Grep Property/web/content/blog for other pages targeting the same intent (for a city page, other pages for the same city/region; for a topic page, sibling topics). Decide: is this a REWRITE (distinct intent, worth lifting) or a REDIRECT-COLLAPSE (a stronger canonical already owns the intent)?
    CRITICAL collapse-direction rule: a REDIRECT-COLLAPSE 301s THIS page away into a canonical, so it must only ever point a WEAKER page at a STRONGER one. Before proposing redirect-collapse you MUST pull the candidate canonical's OWN GSC the same way (re-run the step-2 query with the canonical's slug) and compare impressions + position + clicks, plus rough internal inbound-link counts. NEVER collapse a page that ranks better, gets more impressions, or has more inbound links than the target - that destroys ranking equity. If THIS page is the stronger one, the decision is REWRITE (and, if anything, the weaker page should later redirect into this one). A deterministic equity guard re-checks every collapse and will reject a reversed-equity direction, so get it right here.
 4. Find the top 2-4 competitor URLs ranking for the primary query (WebFetch a Google/Bing search or known specialist competitor sites; confirm each URL is live).

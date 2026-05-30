@@ -12,7 +12,8 @@ log(`Independent QA on ${slugs.length} live pages`)
 const SCHEMA = {
   type: 'object', additionalProperties: false,
   required: ['slug', 'signoff', 'issues', 'strengths', 'expert_plausible',
-             'arithmetic_recomputed', 'statute_checks', 'links_resolve', 'all_clear'],
+             'arithmetic_recomputed', 'statute_checks', 'links_resolve',
+             'query_coverage', 'meta_quality', 'eeat_present', 'schema_valid', 'all_clear'],
   properties: {
     slug: { type: 'string' },
     signoff: { type: 'string', enum: ['sign-off', 'minor-issues', 'blocking-issues'],
@@ -45,6 +46,20 @@ const SCHEMA = {
           content_supports_claim: { type: 'boolean', description: 'its operative wording actually supports what the page asserts (not just that the URL resolves)' },
           royal_assent_ok: { type: 'boolean', description: 'for a Finance Act: RA date verified and consistent with the page framing (enacted vs draft). true (NA) for non-FA cites.' } } } },
     links_resolve: { type: 'boolean', description: 'every internal /blog link on the page resolves (no 404 / wrong-category). Run or trust scripts/track2_link_audit.py.' },
+    query_coverage: { type: 'object', additionalProperties: false,
+      required: ['high_demand_covered_pct', 'uncovered_high_demand', 'natural'],
+      properties: {
+        high_demand_covered_pct: { type: 'number', description: 'percent of high-demand (impr>=50) target queries served, from the coverage script' },
+        uncovered_high_demand: { type: 'array', items: { type: 'string' },
+          description: 'GSC/Bing queries with impr>=gate that are NOT served on the page (from the coverage script missing_queries)' },
+        natural: { type: 'boolean', description: 'false if target queries are stuffed (repeated) or dumped as a bare list rather than woven naturally' } } },
+    meta_quality: { type: 'object', additionalProperties: false, required: ['title_len', 'desc_len', 'ok'],
+      properties: {
+        title_len: { type: 'number', description: 'metaTitle character count' },
+        desc_len: { type: 'number', description: 'metaDescription character count' },
+        ok: { type: 'boolean', description: 'title_len<=60 AND desc_len<=155' } } },
+    eeat_present: { type: 'boolean', description: 'reviewedBy + reviewerCredentials + reviewedAt all present in frontmatter' },
+    schema_valid: { type: 'boolean', description: 'rendered JSON-LD valid + complete: FAQPage iff faqs, HowTo iff howToSteps' },
     strengths: { type: 'string', description: 'what is genuinely good' },
     expert_plausible: { type: 'boolean', description: 'Would a qualified UK property tax accountant find nothing embarrassing or wrong here?' },
     all_clear: { type: 'boolean', description: 'THE DEPLOY-GATE SIGNAL. TRUE only if ALL hold: no blocking issues AND every arithmetic_recomputed.agrees===true AND every statute_checks entry has exists && content_supports_claim && royal_assent_ok AND links_resolve===true. If any fails, all_clear MUST be false.' },
@@ -63,6 +78,11 @@ Read Property/web/content/blog/${slug}.md (frontmatter + body). Then judge it as
 4. LINKS: confirm every internal /blog link resolves (set links_resolve). The deterministic auditor is scripts/track2_link_audit.py - a correct slug under the wrong category 404s.
 5. WRITING QUALITY: expert, specific, human (not generic AI filler)? Any em-dashes? Leaked markup / broken HTML? Does local/topic specificity ring true?
 6. CANNIBALISATION: does it duplicate a stronger sibling?
+7. QUERY COVERAGE: run \`python scripts/track2_query_coverage.py --slug ${slug} --json\`. TRUST its numbers - record high_demand_covered_pct from it and set uncovered_high_demand to its missing_queries[] entries where impr>=50 ("GSC/Bing queries with impr>=gate NOT served"). You ONLY judge query_coverage.natural: set natural=false if target queries are stuffed (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
+8. META: count metaTitle and metaDescription characters into meta_quality.title_len / desc_len; set meta_quality.ok = (title_len<=60 AND desc_len<=155).
+9. E-E-A-T: set eeat_present = (reviewedBy AND reviewerCredentials AND reviewedAt are all present in frontmatter).
+10. SCHEMA: set schema_valid = the rendered JSON-LD is valid AND complete - FAQPage present iff faqs exist, HowTo present iff howToSteps exist.
+Note for the gate (qa_verdict derives it, do not fold into your prose all_clear beyond this): uncovered high-demand queries (step 7) and meta overflow (step 8) are BLOCKING; eeat_present / schema_valid are quality signals only.
 
 Then set all_clear per its definition: TRUE only if no blocking issue AND every arithmetic example agrees AND every statute check passes (exists + content_supports_claim + royal_assent_ok) AND links_resolve. Any failure => all_clear:false and the relevant issue logged as severity "blocking". Be specific and cite what you checked. Default to flagging if unsure.`,
     { label: `qa:${slug}`, phase: 'QA', schema: SCHEMA }

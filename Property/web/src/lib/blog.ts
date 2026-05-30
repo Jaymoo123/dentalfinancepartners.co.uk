@@ -35,6 +35,8 @@ function parsePostFile(filePath: string): BlogPost {
     reviewedBy: fm.reviewedBy,
     reviewerCredentials: fm.reviewerCredentials,
     reviewedAt: fm.reviewedAt,
+    dateModified: fm.dateModified,
+    howToSteps: fm.howToSteps,
     contentHtml: contentWithIds,
   };
 }
