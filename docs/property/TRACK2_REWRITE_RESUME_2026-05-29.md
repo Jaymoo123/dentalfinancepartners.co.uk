@@ -1,3 +1,6 @@
+> # ⛔ SUPERSEDED — start at `docs/property/TRACK2_RESUME_2026-05-31.md`
+> This doc is the historical record up to 2026-05-30 evening. As of 2026-05-31 the engine is **ranking-grade + rewrite-only** (query-coverage floor, rolling QA+auto-fix runner, editorial gate) and the GeneralGuides cluster (16 rewrites) is committed. The current start-here is **`TRACK2_RESUME_2026-05-31.md`** + memory `track2_ranking_grade_engine`. Read those, not the body below.
+
 # Track 2 — RESUME POINT for the rewrite manager (start here) — updated 2026-05-30 (evening: 4 more batches shipped)
 
 > ## ⭐⭐ SESSION-END CHECKPOINT 2026-05-30 EVENING — NEW MANAGER START HERE
