@@ -98,7 +98,7 @@ faqs:
 <p>Understanding the typical progression helps you read where any given role, and its pay, sits.</p>
 
 <h3>Trainee and junior</h3>
-<p>Early roles focus on technical foundations: preparing rental accounts, drafting straightforward Self Assessment computations, learning property specific reliefs such as <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">capital allowances</a>, and progressing through professional exams. Many start in general practice before specialising in property. Pay at this stage is the most predictable point on the range.</p>
+<p>Early roles focus on technical foundations: preparing rental accounts, drafting straightforward Self Assessment computations, learning property specific reliefs such as <a href="/blog/property-types-and-specialist-tax/capital-allowances-on-property">capital allowances</a>, and progressing through professional exams. Many start in general practice before specialising in property. Pay at this stage is the most predictable point on the range.</p>
 
 <h3>Qualified and senior</h3>
 <p>Once qualified, accountants take on more complex portfolios, advise on Section 24 implications, and begin to manage client relationships independently. A senior property accountant handles incorporation questions, more sophisticated planning and the review of junior work. This is the stage at which specialism starts to drive a clear pay premium.</p>

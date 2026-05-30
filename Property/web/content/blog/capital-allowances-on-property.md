@@ -3,29 +3,66 @@ title: 'Capital Allowances on Property: A Complete Guide for UK Landlords'
 slug: capital-allowances-on-property
 canonical: https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/capital-allowances-on-property
 date: '2026-05-20'
-author: Property Tax Partners Editorial Team
+author: "Property Tax Partners Editorial Team"
 category: Property Types & Specialist Tax
-metaTitle: 'Capital Allowances on Property: A Complete Guide for UK'
-metaDescription: Learn how capital allowances on property work for UK landlords. Discover what qualifies, how to claim, and key rules for residential and commercial
-altText: A UK landlord reviewing property documents and tax forms with a calculator and pen on a desk
+metaTitle: 'Capital Allowances on Property: UK Landlord Guide 2026'
+metaDescription: "How capital allowances on property work in 2026: the s.35 residential bar, commercial fixtures, AIA, the 40% FYA, SBA and WDA rates after Finance Act 2026."
+altText: "A UK landlord reviewing property documents and tax forms with a calculator and pen on a desk"
 image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Capital Allowances on Property: A Complete Guide for UK Landlords'
-summary: Capital allowances on property let UK landlords claim tax relief on certain fixtures, equipment, and structures. This guide explains what qualifies, how to claim, and the key differences between residential and commercial properties.
+summary: "Capital allowances on property let UK landlords and investors claim tax relief on qualifying fixtures, plant and structures. This guide explains what qualifies after Finance Act 2026, why residential dwellings are largely barred, how commercial property and HMO common parts differ, and how the AIA, the new 40% first-year allowance, full expensing, the SBA and writing-down allowances fit together."
 schema: ''
 faqs:
-- question: Can I claim capital allowances on a buy-to-let property?
-  answer: For standard buy-to-let residential properties, you cannot claim capital allowances on fixtures inside individual dwelling units. Since 2016, HMRC restricts capital allowances on residential property to communal areas in buildings with multiple residential units, such as blocks of flats. For single-let properties, you claim relief through the replacement of domestic items relief or repairs and maintenance deductions instead.
-- question: What is the difference between capital allowances and repairs?
-  answer: Repairs are revenue expenses that restore an asset to its original condition. You deduct the full cost in the year you incur it. Capital allowances apply to assets that improve or add value to a property, such as installing a new boiler or lift. You claim relief over several years through writing-down allowances or immediately through the Annual Investment Allowance. HMRC distinguishes between the two based on whether the work is maintenance or enhancement.
-- question: How do I claim capital allowances on a commercial property I already own?
-  answer: You need to identify which fixtures and assets in the property qualify as plant and machinery. This often requires a capital allowances survey by a specialist surveyor. Once you have a schedule of qualifying assets and their costs, you include the claim in your tax return. Claims must be made within two years of the end of the accounting period to which they relate. If you miss the deadline, you lose the right to claim for that period.
-- question: Can I claim capital allowances if I let property through a limited company?
-  answer: Yes, limited companies can claim capital allowances on qualifying plant and machinery in commercial properties. Companies also have access to full expensing, which allows 100% relief on qualifying assets in the year of purchase with no cap. For special rate assets, companies can claim a 50% first-year allowance. The rules for residential property are the same as for individuals, claims are restricted to communal areas in multi-unit buildings.
-dateModified: '2026-05-20'
-sourcesVerifiedAt: '2026-05-20'
+- question: "Can I claim capital allowances on a buy-to-let property?"
+  answer: "For a standard residential buy-to-let, no. Section 35 of the Capital Allowances Act 2001 bars plant and machinery allowances on items provided for use in a dwelling-house within a UK property business. The carve-out is narrow: plant in the common parts of a multi-unit building (a communal boiler, a lift, shared-area lighting) can still qualify because those areas are not the dwelling itself. For fixtures inside individual flats or houses you claim relief instead through the replacement of domestic items relief or through revenue repairs, not through capital allowances."
+- question: "Is the dwelling-house restriction based on a 2016 HMRC view?"
+  answer: "No. The restriction is statutory, not a policy view. It sits in section 35 of the Capital Allowances Act 2001, which provides that expenditure on plant or machinery is not qualifying expenditure if it is incurred in providing plant or machinery for use in a dwelling-house. The same section requires a just and reasonable apportionment where an item serves both a dwelling and a non-dwelling area. It applies regardless of when you bought the property."
+- question: "What capital allowances can I claim on commercial property?"
+  answer: "Commercial property opens up the full plant and machinery regime. You can claim on qualifying fixtures such as heating and ventilation, air conditioning, lifts and escalators, fire and security systems, sanitary fittings and certain kitchen and lighting equipment. Integral features (electrical, cold and hot water, space and water heating, lifts, external solar shading and certain ventilation) sit in the special rate pool under section 33A. New non-residential construction can also attract the Structures and Buildings Allowance."
+- question: "Is the Annual Investment Allowance still £1 million, and is it temporary?"
+  answer: "It is £1 million and it is permanent. Section 51A(5) of the Capital Allowances Act 2001 fixes the maximum at £1,000,000, and Finance (No. 2) Act 2023 made that level permanent from 1 April 2023. The old framing of a temporary cap that reverts to £200,000 is out of date. The AIA gives 100% relief in the year of spend on qualifying plant and machinery (cars excluded) up to the cap."
+- question: "What is the new 40% first-year allowance for plant and machinery?"
+  answer: "Finance Act 2026 section 29 introduced a 40% first-year allowance, inserted as section 45U of the Capital Allowances Act 2001. It applies to new and unused main-rate plant and machinery where the spend is incurred on or after 1 January 2026. It excludes cars, second-hand or used assets, and assets for leasing overseas. It is the practical first-year route for sole traders, partnerships and individual landlords with qualifying commercial plant, and for leasing, because a company buying qualifying new main-rate plant will normally claim 100% full expensing instead."
+- question: "What is full expensing and who can claim it?"
+  answer: "Full expensing is a 100% first-year allowance on new and unused main-rate plant and machinery under section 45S of the Capital Allowances Act 2001. It is permanent and available only to companies within the charge to corporation tax. Sole traders, partnerships and LLPs cannot claim it, which is why the new 40% first-year allowance matters for unincorporated landlords. There is a companion 50% first-year allowance for new and unused special rate assets, also company-only."
+- question: "What are the current writing-down allowance rates?"
+  answer: "From April 2026 the main pool writing-down allowance is 14% on the reducing balance, cut from 18% by Finance Act 2026 section 28, which substituted 14% into section 56(1) of the Capital Allowances Act 2001. The special rate pool stays at 6% under section 104D. A chargeable period that straddles 1 April 2026 (corporation tax) or 6 April 2026 (income tax) uses a hybrid, time-apportioned rate between 18% and 14% under section 28(2) to (6)."
+- question: "What is the Structures and Buildings Allowance and the allowance statement trap?"
+  answer: "The SBA gives a 3% straight-line allowance on qualifying non-residential construction cost over 33 and one third years, where construction began on or after 29 October 2018. A successor owner cannot claim a penny unless an allowance statement exists: section 270IA(2) treats the qualifying expenditure as nil until the allowance statement requirement is met. The SBA also has no balancing event on sale; instead the cumulative SBA claimed is added back to your CGT base cost under section 37B of the Taxation of Chargeable Gains Act 1992."
+- question: "Do furnished holiday lets still get the old capital allowances treatment?"
+  answer: "No. The furnished holiday lettings regime was abolished from 6 April 2025 for income tax and 1 April 2025 for corporation tax by Finance Act 2025 Schedule 5. A former FHL is now an ordinary residential property business, so the section 35 dwelling-house bar applies to new spend. Pools of plant and machinery built up while the property was an FHL are grandfathered: the brought-forward balances continue to be written down in the ordinary property business, but no new FHL plant qualifies."
+- question: "Is there a deadline to claim capital allowances?"
+  answer: "For most income tax claims you generally need to amend the relevant return within the normal time limit, broadly two years from the end of the accounting period or by the self assessment amendment window for that year. Plant in a pool can still be claimed in a later period if you still own and use it, but missing the window for a specific period can lose the relief for that period. For fixtures bought with a commercial property, the pooling requirement and the section 198 election create a separate, often tighter, set of conditions that must be dealt with at the point of purchase."
+- question: "What happens to capital allowances when I sell a commercial property?"
+  answer: "It depends on what is sold and what was claimed. Where fixtures pass with the building, disposal values are brought in under section 61 and the fixtures Table at section 196, which can trigger a balancing charge if the disposal value exceeds the pool balance. Buyer and seller usually fix the fixtures value by a joint section 198 election, which becomes the buyer's qualifying expenditure and the seller's disposal value. Without a valid election and prior pooling, the buyer's fixtures claim can be barred entirely."
+- question: "Do capital allowances interact with Section 24 and Making Tax Digital?"
+  answer: "They are separate reliefs but they coexist. Section 24 restricts residential mortgage interest to a 20% basic-rate tax credit and has nothing to do with capital allowances, which sit on plant, fixtures and structures. Under Making Tax Digital for Income Tax, landlords with qualifying income over £50,000 must keep digital records and report quarterly from April 2026 (£30,000 from April 2027 and £20,000 from April 2028), and any capital allowances position feeds into the year-end digital return."
+- question: "Can I claim capital allowances on a property held in a limited company?"
+  answer: "Yes, and companies have the widest access. A company can claim AIA, the special rate and main pool writing-down allowances, full expensing at 100% on new and unused main-rate plant, the 50% first-year allowance on new special rate assets, and the SBA on qualifying non-residential construction. The section 35 dwelling-house bar still applies, so a corporate residential landlord is restricted to common parts in the same way an individual is."
+- question: "I bought a commercial property and the seller gave me no allowances schedule. Have I lost the claim?"
+  answer: "Not necessarily, but it needs prompt attention. For fixtures, the buyer can usually only claim if the past owner pooled the expenditure and the parties make a valid section 198 election, or in some cases obtain a tribunal determination of value. A specialist capital allowances review can identify unclaimed fixtures and integral features and put the paperwork in order before the window closes. The SBA is separate again: there you need the allowance statement from the chain of ownership."
+dateModified: '2026-05-30'
+sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
+- legislation.gov.uk
 - gov.uk
-- icaew.com
+sources:
+- title: 'Capital Allowances Act 2001 s.35 (dwelling-house restriction)'
+  url: https://www.legislation.gov.uk/ukpga/2001/2/section/35
+- title: 'Capital Allowances Act 2001 s.51A (Annual Investment Allowance, £1m permanent)'
+  url: https://www.legislation.gov.uk/ukpga/2001/2/section/51A
+- title: 'Capital Allowances Act 2001 s.56 (main pool WDA 14%, substituted by FA 2026 s.28)'
+  url: https://www.legislation.gov.uk/ukpga/2001/2/section/56
+- title: 'Finance Act 2026 s.29 (40% first-year allowance, inserting CAA 2001 s.45U)'
+  url: https://www.legislation.gov.uk/ukpga/2026/11/section/29
+- title: 'Capital Allowances Act 2001 s.270AA (Structures and Buildings Allowance)'
+  url: https://www.legislation.gov.uk/ukpga/2001/2/section/270AA
+- title: 'Capital Allowances Act 2001 s.270IA (SBA allowance statement)'
+  url: https://www.legislation.gov.uk/ukpga/2001/2/section/270IA
+- title: 'Finance Act 2025 Schedule 5 (abolition of the FHL regime)'
+  url: https://www.legislation.gov.uk/ukpga/2025/8/schedule/5
+- title: 'Claim capital allowances: overview - GOV.UK'
+  url: https://www.gov.uk/capital-allowances
 imageCredit:
   photographer: Jakub Zerdzicki
   photographer_url: https://www.pexels.com/@jakubzerdzicki
@@ -33,117 +70,105 @@ imageCredit:
   source_url: https://www.pexels.com/photo/real-estate-investment-concept-with-keys-and-money-30139610/
 ---
 <h2>What Are Capital Allowances on Property?</h2>
-<p>Capital allowances on property let you deduct the cost of certain assets from your taxable profits. Instead of treating the full cost as a one-off expense, you spread the relief over several years or claim it immediately, depending on the type of asset.</p>
-<p>HMRC defines capital allowances as relief for "equipment, machinery, and business vehicles" that you buy for your business <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. For property investors, this typically means fixtures and fittings in rental properties, such as boilers, lifts, air conditioning, and security systems.</p>
-<p>The key point is that capital allowances are not the same as repairs or maintenance. Repairs are revenue expenses you deduct in full in the year you incur them. Capital allowances apply to assets that have a longer useful life and are considered part of the property's capital cost. Working out which side of that line a cost falls is the gateway question, and our <a href="/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk">capital vs revenue expenditure decision guide</a> walks through the four HMRC tests that decide it.</p>
-<p>If you are a landlord with a portfolio of properties, understanding capital allowances on property can reduce your tax bill significantly. However, the rules differ depending on whether you let residential or commercial property.</p>
+<p>Capital allowances on property let you deduct the cost of certain qualifying assets from your taxable profits. Instead of treating the full cost as a one-off expense, you claim relief either immediately or spread across several years, depending on the asset and the allowance that applies. They are the capital-side counterpart to the everyday revenue deductions a landlord claims, and they sit on a different part of the tax computation entirely.</p>
+<p>HMRC describes capital allowances as relief for equipment, machinery and certain fixtures you buy for a business <sup><a href="#ref-1" id="cite-gov">[1]</a></sup>. For property investors that usually means qualifying plant and machinery in commercial buildings, integral features such as electrical and heating systems, and, for new non-residential construction, the Structures and Buildings Allowance. It is governed by the Capital Allowances Act 2001, reshaped most recently by Finance Act 2026.</p>
+<p>The first thing to understand is that capital allowances are not the same as repairs. Repairs are revenue expenses you deduct in full in the year you incur them. Capital expenditure either qualifies for a capital allowance or, if it does not, simply adds to the property's base cost for capital gains tax later. Working out which side of that line a cost falls is the gateway question, and our <a href="/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk">capital vs revenue expenditure guide</a> walks through the HMRC tests that decide it.</p>
+<p>The second thing to understand is that the rules turn sharply on the type of property. A residential buy-to-let is largely shut out of plant and machinery allowances by statute. A commercial building is wide open. The sections below explain why, and then route you to the deeper guides on each mechanism.</p>
 
-<h2>Residential Property: Limited Scope for Capital Allowances</h2>
-<p>For most residential landlords, capital allowances on property are very restricted. Since 2016, HMRC has taken the view that residential property is not a qualifying activity for capital allowances on plant and machinery in individual dwelling units.</p>
-<p>You can only claim capital allowances for items used in a residential building if the building has multiple residential units, like a block of flats, and the item is used in a communal part of the building <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. So a lift serving all flats in a block qualifies, but a boiler inside a single flat does not.</p>
-<p>This restriction applies to buy-to-let properties, HMOs, and student housing. If you own a standard single-let residential property, you cannot claim capital allowances on fixtures like kitchens, bathrooms, or heating systems. Instead, you claim relief through the replacement of domestic items relief or through repairs and maintenance deductions.</p>
-<p>For a full breakdown of what you can and cannot deduct, see our guide on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions for 2025/26</a>.</p>
+<aside>
+<p>Not sure whether your fixtures qualify, or whether a past owner left allowances on the table? Our specialist partner firms run capital allowances reviews for landlords and commercial investors across the UK. Use the form on this page to be introduced.</p>
+</aside>
 
-<h2>Commercial Property: Full Capital Allowances Available</h2>
-<p>Commercial property investors have much wider access to capital allowances on property. If you let offices, shops, warehouses, or industrial units, you can claim capital allowances on qualifying plant and machinery installed in the building.</p>
-<p>Qualifying assets include <sup><a href="#ref-1" id="cite-1">[1]</a></sup>:</p>
+<h2>Residential Property: The Section 35 Dwelling-House Bar</h2>
+<p>For most residential landlords, plant and machinery allowances are off the table, and the reason is statutory rather than a matter of HMRC opinion. Section 35 of the Capital Allowances Act 2001 provides that expenditure on plant or machinery is not qualifying expenditure if it is incurred in providing plant or machinery for use in a dwelling-house, where the qualifying activity is an ordinary UK or overseas property business <sup><a href="#ref-2" id="cite-s35">[2]</a></sup>.</p>
+<p>That means a boiler, a fitted kitchen, a bathroom suite or a heating system inside a let house or flat does not generate a capital allowance. Instead, residential landlords claim relief on the like-for-like replacement of items such as white goods, carpets and furniture through the replacement of domestic items relief, and on genuine repairs as revenue deductions. Our <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">complete list of landlord tax deductions</a> sets out what residential landlords can actually claim.</p>
+<p>There is a narrow but useful carve-out. Section 35 bars plant for use in a dwelling-house, not plant elsewhere in the same building. So in a block of flats, plant serving the common parts (a communal boiler, a shared lift, stairwell and corridor lighting, a door-entry system) is not in a dwelling and can qualify. Where one item serves both the dwellings and the common parts, section 35 requires a just and reasonable apportionment of the cost.</p>
+<p><strong>Worked example: the common-parts carve-out.</strong> A landlord owns a converted Victorian building split into six flats with a shared entrance hall, stairwell and a communal gas boiler feeding all six units. The boiler, the stairwell lighting and the door-entry system are not in any individual dwelling, so they are candidates for capital allowances on the common-parts portion. The kitchens, bathrooms and individual flat heating controls inside each flat are barred by section 35. If the boiler also serves a ground-floor commercial unit, the cost is apportioned between the qualifying (common parts plus commercial) and non-qualifying (dwelling) use.</p>
+<p>HMOs and student housing follow the same logic: communal plant can qualify, plant inside the let rooms or units cannot. This is the single most common misconception in residential capital allowances, so it is worth being precise about it before any claim is built.</p>
+
+<h2>Commercial Property: The Full Plant and Machinery Regime</h2>
+<p>Commercial property investors have the widest access to capital allowances on property. If you let offices, shops, warehouses, industrial units or other non-residential premises, you can claim on qualifying plant and machinery installed in the building. Typical qualifying fixtures include <sup><a href="#ref-1" id="cite-gov-2">[1]</a></sup>:</p>
 <ul>
-<li>Heating and ventilation systems</li>
-<li>Air conditioning and cooling equipment</li>
-<li>Lifts and escalators</li>
+<li>Heating, ventilation and air conditioning systems</li>
+<li>Lifts, escalators and moving walkways</li>
 <li>Fire alarm and security systems</li>
-<li>Lighting systems</li>
-<li>Sanitary fittings and kitchen equipment</li>
-<li>Business vehicles used for the property business</li>
+<li>Sanitary fittings and certain kitchen equipment</li>
+<li>General lighting and certain electrical systems</li>
+<li>Demountable partitioning and signage in some cases</li>
 </ul>
-<p>You can also claim on certain fixtures that are integral to the building, such as electrical systems, water systems, and space or water heating systems. These are known as "integral features" and qualify for special rate allowances.</p>
-<p>If you are considering converting a commercial property to residential use, the capital allowances position changes. You should seek specialist advice before starting any conversion project.</p>
+<p>Many of these are integral features, which sit in the special rate pool under section 33A of the Capital Allowances Act 2001: electrical and lighting systems, cold and hot water systems, space and water heating systems, lifts and escalators, external solar shading and certain ventilation and air-cooling systems. Our <a href="/blog/property-types-and-specialist-tax/integral-features-capital-allowances">integral features guide</a> covers the five categories and how they pool. For the full menu of what qualifies in a commercial building, see <a href="/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim">what you can claim on commercial property</a>.</p>
+<p>The practical point for buyers of second-hand commercial property is that the fixtures already embedded in the building may carry unclaimed allowances. Identifying them often needs a capital allowances survey, and a valid section 198 election with the seller to fix the value (covered in the property sales section below). If you are considering converting a commercial property to residential use, the position changes once it becomes a dwelling, so the timing of expenditure matters and specialist advice is sensible before you start.</p>
 
-<h2>Structures and Buildings Allowance (SBA)</h2>
-<p>For new commercial buildings or structures, you can claim the Structures and Buildings Allowance (SBA). This gives a 3% straight-line annual allowance on the qualifying construction cost <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The relief applies to the cost of the building itself, not just the plant and machinery inside it.</p>
-<p>The SBA applies to:</p>
+<h2>The Annual Investment Allowance (AIA): Permanent at £1 Million</h2>
+<p>The Annual Investment Allowance gives 100% tax relief in the year of spend on qualifying plant and machinery, up to a generous annual cap. Section 51A(5) of the Capital Allowances Act 2001 fixes the maximum at £1,000,000, and that level was made permanent from 1 April 2023 by Finance (No. 2) Act 2023 <sup><a href="#ref-3" id="cite-s51a">[3]</a></sup>. The old framing, that the £1 million cap is temporary and will revert to £200,000, is out of date and should be ignored.</p>
+<p>The AIA is available to most businesses, including property businesses that hold commercial property. It covers most plant and machinery, including special rate items such as integral features, but it does not cover cars or assets you owned for another purpose before bringing them into the business. Because residential dwellings are barred by section 35, an ordinary residential landlord rarely has AIA-qualifying spend at all; the AIA is mainly a commercial-property and common-parts tool.</p>
+<p>Where you spend more than £1 million on qualifying plant in a single year, the excess goes into the main pool or the special rate pool and is written down over time. For how to allocate the AIA across assets and across associated businesses, see our <a href="/blog/section-24-and-tax-relief/annual-investment-allowance-uk">Annual Investment Allowance deep-dive</a>.</p>
+
+<h2>Full Expensing and the New 40% First-Year Allowance</h2>
+<p>Two first-year allowances sit alongside the AIA, and the distinction between them turns on whether you trade through a company.</p>
+<p><strong>Full expensing</strong> is a 100% first-year allowance on new and unused main-rate plant and machinery under section 45S of the Capital Allowances Act 2001. It is permanent and is available only to companies within the charge to corporation tax. There is a companion 50% first-year allowance for new and unused special rate assets, also company-only. Full expensing is unavailable to sole traders, partnerships and LLPs, and it does not extend to plant bought for leasing. Our <a href="/blog/property-types-and-specialist-tax/full-expensing-50-percent-fya-commercial-property-spvs-mechanics-fa-2023">full expensing and 50% FYA guide for commercial property SPVs</a> covers the company-side mechanics.</p>
+<p><strong>The new 40% first-year allowance</strong> was introduced by Finance Act 2026 section 29, which inserted section 45U into the Capital Allowances Act 2001 <sup><a href="#ref-4" id="cite-s45u">[4]</a></sup>. It gives a 40% first-year allowance on new and unused main-rate plant and machinery where the expenditure is incurred on or after 1 January 2026. It excludes cars, second-hand or used assets, and assets for leasing overseas. The section sets no incorporation test, so it is not strictly companies-only or unincorporated-only. In practice it is the first-year route for sole traders, partnerships and individual landlords with qualifying commercial plant, and for leasing, because a company buying qualifying new main-rate plant will normally take 100% full expensing instead.</p>
+<p><strong>Worked example: a sole trader buying commercial plant.</strong> A self-employed investor owns a let workshop unit and spends £60,000 in February 2026 on a new, unused ventilation and racking installation that is main-rate qualifying plant. As a sole trader she cannot use full expensing (companies only). She can use her AIA to write off the whole £60,000 at 100% in the year, but suppose she has already used her AIA on other expenditure. The new 40% first-year allowance under section 45U then gives her £24,000 of relief in the first year, with the remaining £36,000 going into the main pool to be written down at 14%.</p>
+<p>The most important thing not to do here is to treat the 40% first-year allowance as though it covered cars (it does not) or as though companies were locked out (they are not, though they would usually prefer full expensing). For low-emission vehicles, the only first-year allowance is the 100% relief for new, unused zero-emission (0 g/km) cars under section 45D; cars above that get no first-year allowance and are pooled by emissions. Our <a href="/blog/section-24-and-tax-relief/writing-down-allowance-cars">writing-down allowance on cars</a> guide covers the emissions thresholds.</p>
+
+<h2>Writing-Down Allowances: 14% Main Pool, 6% Special Rate</h2>
+<p>Where an asset does not get the AIA or a first-year allowance, you claim writing-down allowances on the reducing balance of the relevant pool. From April 2026 the rates are:</p>
 <ul>
-<li>New commercial buildings (offices, shops, factories)</li>
-<li>New structures (bridges, tunnels, car parks)</li>
-<li>Extensions to existing commercial buildings</li>
+<li><strong>Main pool: 14% per year</strong> (reduced from 18%). Finance Act 2026 section 28 substituted 14% into section 56(1) of the Capital Allowances Act 2001, effective for chargeable periods beginning on or after 1 April 2026 for corporation tax and 6 April 2026 for income tax <sup><a href="#ref-5" id="cite-s56">[5]</a></sup>. The main pool holds general plant such as office furniture, computers and most loose equipment.</li>
+<li><strong>Special rate pool: 6% per year</strong> (unchanged), under section 104D. This holds integral features, long-life assets and thermal insulation. The 6% rate did not change in Finance Act 2026; any suggestion it falls to 4% is wrong.</li>
 </ul>
-<p>The allowance is calculated on the cost of construction, excluding the cost of land. You claim 3% of the qualifying cost each year for 33 years and 4 months. This is a fixed rate and does not change with inflation or market value.</p>
-<p>For example, if you build a new office block costing £1 million (excluding land), you can claim £30,000 per year against your rental profits for the next 33 years.</p>
+<p><strong>Worked example: the straddling-period hybrid rate.</strong> A company has a 12-month accounting period running 1 January 2026 to 31 December 2026, so it straddles the 1 April 2026 start date for the new main-pool rate. Under section 28(2) to (6) it does not simply pick 18% or 14%; it applies a hybrid, time-apportioned rate. Roughly, the three months to 31 March 2026 carry the old 18% rate and the nine months from 1 April 2026 carry the new 14%, blended to a single effective rate for the period. Periods beginning wholly on or after the start date use the clean 14%. Our <a href="/blog/property-types-and-specialist-tax/writing-down-allowance-rates">writing-down allowance rates guide</a> works the hybrid calculation through in full.</p>
+<p>WDAs are reduced proportionately for a short chargeable period, and you can only relieve allowances against available profits, with unused amounts effectively carried in the pool to future years.</p>
 
-<h2>Annual Investment Allowance (AIA)</h2>
-<p>The Annual Investment Allowance (AIA) gives 100% tax relief on qualifying plant and machinery costs up to £1 million per year <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. This means you can deduct the full cost of qualifying assets in the year you buy them, rather than spreading the relief over several years.</p>
-<p>The AIA is available to most businesses, including property businesses that let commercial property. It applies to most plant and machinery, but not to cars or assets you owned before the business started.</p>
-<p>If you spend more than £1 million on qualifying plant and machinery in a single year, the excess goes into the main pool or special rate pool, where you claim writing-down allowances at 14% or 6% per year respectively (the main pool rate fell from 18% to 14% from April 2026; the special rate pool stays at 6%) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-<p>The £1 million AIA limit is temporary but has been extended several times. It is currently set at £1 million until at least 31 March 2026. Check current limits with HMRC or a specialist accountant.</p>
+<h2>The Structures and Buildings Allowance (SBA)</h2>
+<p>The SBA is a separate relief for the construction cost of non-residential buildings and structures, distinct from plant and machinery. Section 270AA of the Capital Allowances Act 2001 gives a 3% straight-line annual allowance on qualifying construction expenditure, over an allowance period of 33 and one third years, where construction began on or after 29 October 2018 and the first use is non-residential <sup><a href="#ref-6" id="cite-sba">[6]</a></sup>. The relief is on the build cost itself (offices, shops, factories, bridges, car parks, extensions), not on the land and not on the plant inside, which goes through the plant and machinery regime instead.</p>
+<p><strong>Worked example.</strong> A company builds a new commercial unit for £1,000,000, excluding the land. At 3% straight-line it claims £30,000 a year against its profits for 33 and one third years. The rate is fixed and does not flex with inflation or market value.</p>
+<p>Two traps make the SBA different from plant allowances. First, the <strong>allowance statement</strong>: section 270IA(2) treats the qualifying expenditure as nil until the allowance statement requirement is met, so a buyer of a second-hand building who cannot get a written allowance statement from the chain of ownership cannot claim anything. Second, the <strong>capital gains interaction</strong>: there is no balancing event on sale, but the cumulative SBA you have claimed is added back to your disposal proceeds for capital gains tax under section 37B of the Taxation of Chargeable Gains Act 1992, which means the relief is partly recovered through a higher gain. The SBA is also blocked on residential use by section 270CF. For the full claim mechanics, see our <a href="/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">SBA claim-mechanics guide</a>.</p>
 
-<h2>Full Expensing and First-Year Allowances</h2>
-<p>From 1 April 2023, companies can claim full expensing on qualifying plant and machinery investments <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This means you can deduct 100% of the cost in the year of purchase, with no cap. Full expensing is available to companies only, not to sole traders or partnerships.</p>
-<p>For special rate assets (like integral features and long-life assets), companies can claim a 50% first-year allowance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This gives 50% relief in the first year, with the remaining balance going into the special rate pool.</p>
-<p>From 1 January 2026, a 40% first-year allowance is available for qualifying plant and machinery purchased after that date <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This applies to both companies and unincorporated businesses.</p>
-<p>These allowances are generous but come with specific rules. You must use the asset wholly for business purposes, and you cannot claim if you lease the asset rather than buy it outright.</p>
+<h2>Furnished Holiday Lets: The Regime Has Been Abolished</h2>
+<p>Until recently, a furnished holiday let was treated as a qualifying activity in its own right and could access the full plant and machinery regime even though it was residential. That route is gone. Finance Act 2025 Schedule 5 abolished the furnished holiday lettings regime from 6 April 2025 for income tax and 1 April 2025 for corporation tax <sup><a href="#ref-7" id="cite-fhl">[7]</a></sup>.</p>
+<p>The consequences for capital allowances are direct. A former FHL is now an ordinary residential property business, so the section 35 dwelling-house bar applies to any new spend, exactly as it does to any other residential let. New furniture, kitchens and heating inside the property no longer qualify for plant and machinery allowances. However, pools of plant and machinery built up while the property was a qualifying FHL are grandfathered: the brought-forward pool balances are carried into the ordinary property business and continue to be written down under the normal writing-down allowance rules. You keep writing down what you already pooled; you simply cannot add new dwelling-house plant to it.</p>
+<p>If you ran FHLs, the cleaner question now is which reliefs survived (some capital gains transitional protection did, for disposals tied to the pre-abolition trading period) and which did not. That is a planning conversation rather than a guide section, and it is one our partner firms handle regularly.</p>
 
-<h2>Writing-Down Allowances: Main Pool and Special Rate Pool</h2>
-<p>If you cannot claim AIA or full expensing, you claim writing-down allowances (WDAs) on the value of your plant and machinery pool. The pool is a running total of all qualifying assets you own.</p>
-<p>There are two main pools <sup><a href="#ref-2" id="cite-2">[2]</a></sup>:</p>
+<h2>How to Claim, and the Two-Year Window</h2>
+<p>You claim capital allowances through your tax return: the self assessment return for individuals and partnerships, or the company tax return (CT600) for companies. You identify which assets qualify, calculate the cost, and apply the right allowance (AIA, a first-year allowance, or writing-down allowances).</p>
+<p>Timing matters. For a specific period, the practical position is that a claim is made or amended within the normal time limit for that return, broadly two years from the end of the accounting period or within the self assessment amendment window for that tax year. Plant already in a pool can still be claimed in later periods while you own and use it, but missing the window for a given period can lose relief for that period. For a commercial property you already own where the seller never provided an allowances schedule, you usually need a capital allowances survey to identify embedded fixtures before the position is settled.</p>
+
+<h2>Capital Allowances When You Sell a Commercial Property</h2>
+<p>On a sale, the treatment depends on what was claimed and what passes to the buyer.</p>
+<p>Where qualifying fixtures pass with the building, disposal values are brought into the seller's computation under section 61, using the fixtures Table at section 196. If the disposal value brought in exceeds the relevant pool balance, the difference is a balancing charge, a taxable receipt that claws back relief. In practice, buyer and seller fix the fixtures value by a joint <strong>section 198 election</strong>, which then becomes both the seller's disposal value and the buyer's qualifying expenditure. The election has its own deadline and depends on the seller having first pooled the expenditure; without a valid election and prior pooling, the buyer's fixtures claim can be barred altogether. The SBA, by contrast, has no balancing event on sale, but it triggers the section 37B capital gains add-back described above.</p>
+<p>For residential property, capital allowances are rarely an issue on disposal because the section 35 bar means little plant was ever pooled. The exception is a block with qualifying common parts, where you should keep records of anything claimed.</p>
+
+<h2>Holding Property Through a Limited Company</h2>
+<p>A company has the widest access to the allowances on this page. It can claim the AIA, main pool and special rate writing-down allowances, full expensing at 100% on new and unused main-rate plant, the 50% first-year allowance on new special rate assets, and the SBA on qualifying non-residential construction. What a company cannot do is escape the section 35 dwelling-house bar: a corporate residential landlord is restricted to common parts in exactly the same way an individual is, and full expensing has no application to dwellings.</p>
+<p>For investors weighing the structure, full expensing and the broader corporation tax treatment of plant are genuine factors in the incorporation decision, though rarely the decisive one on their own. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets the capital allowances point alongside the wider trade-offs.</p>
+
+<h2>Capital Allowances and Making Tax Digital</h2>
+<p>Making Tax Digital for Income Tax is being phased in for landlords and the self-employed. From 6 April 2026 it applies to those with qualifying income over £50,000, from 6 April 2027 to those over £30,000, and from 6 April 2028 to those over £20,000. In scope, you must keep digital records and send quarterly updates, with a year-end process that finalises the position.</p>
+<p>Capital allowances are part of that year-end position rather than something quantified afresh each quarter, but the underlying records (invoices, contracts, asset and pool registers) need to be digital and current. If you are not yet on compliant software, getting your capital allowances pools into it early avoids a scramble. Our guide to the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026 MTD deadline for landlords</a> sets out what to do.</p>
+
+<h2>Where to Go Next</h2>
+<p>This page is the gateway to capital allowances on property. The detail for each mechanism lives in its own guide:</p>
 <ul>
-<li><strong>Main pool (14% per year from April 2026; was 18%):</strong> General plant and machinery, including computers, office furniture, and most equipment.</li>
-<li><strong>Special rate pool (6% per year):</strong> Integral features (electrical systems, water systems, heating), long-life assets (assets expected to last 25+ years), and thermal insulation.</li>
+<li><a href="/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework">The full decision framework</a> for who can claim what, on which spend, through which vehicle.</li>
+<li><a href="/blog/section-24-and-tax-relief/annual-investment-allowance-uk">Annual Investment Allowance</a> allocation and association rules.</li>
+<li><a href="/blog/property-types-and-specialist-tax/writing-down-allowance-rates">Writing-down allowance rates</a>, including the straddling-period hybrid.</li>
+<li><a href="/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward">SBA claim mechanics</a> and the allowance statement.</li>
+<li><a href="/blog/property-types-and-specialist-tax/integral-features-capital-allowances">Integral features</a> and the special rate pool.</li>
 </ul>
-<p>WDAs are calculated on the reducing balance of the pool. So if you have £10,000 in the main pool, you claim £1,400 in year one, leaving a pool value of £8,600. In year two, you claim 14% of £8,600 (£1,204), and so on.</p>
-<p>You can only claim WDAs if you have enough taxable profits to cover them. If your profits are lower than the allowance, you can carry the unused allowance forward to future years.</p>
-
-<h2>How to Claim Capital Allowances on Property</h2>
-<p>To claim capital allowances on property, you must include the claim in your tax return or company tax return. For sole traders and partnerships, this is the Self Assessment tax return (SA800 or partnership return). For limited companies, it is the Company Tax Return (CT600).</p>
-<p>You need to identify which assets qualify and calculate their cost. For a property you already own, you may need a capital allowances survey or report from a specialist surveyor. This is common when buying a commercial property where the seller has not provided a capital allowances schedule.</p>
-<p>Claims must be made within two years of the end of the accounting period to which they relate <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you miss the deadline, you lose the right to claim for that period. You can still claim for later periods if you still own the asset.</p>
-<p>If you are unsure about what qualifies, a <a href="/services">property accountant</a> can help you prepare the claim and ensure it meets HMRC requirements.</p>
-
-<h2>Capital Allowances and Property Sales</h2>
-<p>When you sell a property on which you have claimed capital allowances, the tax treatment depends on whether you sold the asset or the property itself.</p>
-<p>If you sell a qualifying asset separately (like a boiler or lift), you may have to pay a balancing charge. This brings the proceeds into your tax return as income, effectively clawing back some of the relief you claimed.</p>
-<p>If you sell the property as a whole, the capital allowances are typically transferred to the buyer. The buyer can continue to claim WDAs on the pool value. This is common in commercial property transactions where the seller provides a capital allowances schedule to the buyer.</p>
-<p>For residential property, capital allowances are rarely an issue on sale because they are so restricted. But if you own a block of flats with communal areas, you should keep records of any capital allowances claimed.</p>
-
-<h2>Common Mistakes and Pitfalls</h2>
-<p>Many landlords make mistakes when claiming capital allowances on property. Here are the most common ones:</p>
-<ul>
-<li><strong>Claiming on residential fixtures:</strong> As noted, you cannot claim on fixtures inside individual dwelling units. Only communal areas in multi-unit buildings qualify.</li>
-<li><strong>Confusing repairs with capital expenditure:</strong> Repairs are deductible in full. Capital expenditure must go through the capital allowances system. If you claim a capital item as a repair, HMRC may disallow it.</li>
-<li><strong>Missing the two-year deadline:</strong> Claims must be made within two years of the end of the accounting period. Set a reminder to file on time.</li>
-<li><strong>Not keeping proper records:</strong> You need invoices, contracts, and asset registers to support your claim. Without them, HMRC can reject the claim.</li>
-<li><strong>Assuming the AIA applies to everything:</strong> The AIA has exclusions, including cars and assets bought before the business started. Check the rules before claiming.</li>
-</ul>
-<p>If you are unsure about any aspect of your claim, speak to a specialist. Our team at <a href="/about">Property Tax Partners</a> can review your portfolio and identify missed opportunities.</p>
-
-<h2>Capital Allowances for Limited Companies</h2>
-<p>If you hold your property portfolio through a limited company (SPV), the capital allowances rules are broadly the same as for individuals. However, companies have access to full expensing, which individuals do not.</p>
-<p>Full expensing allows companies to claim 100% relief on qualifying plant and machinery in the year of purchase, with no cap <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is more generous than the AIA, which has a £1 million cap and applies to all businesses.</p>
-<p>Companies also benefit from the 50% first-year allowance on special rate assets and the 40% first-year allowance from January 2026 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>If you are considering incorporating your property business, see our guide on <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a> for a full comparison of the tax implications.</p>
-
-<h2>Capital Allowances and Making Tax Digital (MTD)</h2>
-<p>From April 2026, Making Tax Digital for Income Tax becomes mandatory for landlords with gross property income over £50,000 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This means you must keep digital records and submit quarterly updates to HMRC.</p>
-<p>Capital allowances claims must be included in these quarterly updates. If you are not yet keeping digital records, now is the time to start. A good accounting software package can track your capital allowances pool and calculate WDAs automatically.</p>
-<p>For more on MTD requirements, read our guide on <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords</a>.</p>
 
 <h2>When to Get Professional Advice</h2>
-<p>Capital allowances on property are complex, especially for mixed-use properties, conversions, or large portfolios. The rules change frequently, and HMRC often challenges claims that are not properly documented.</p>
-<p>You should consider professional advice if:</p>
-<ul>
-<li>You are buying or selling a commercial property</li>
-<li>You own a block of flats with communal areas</li>
-<li>You are converting a property from commercial to residential use</li>
-<li>You have a large portfolio with significant capital expenditure</li>
-<li>You are unsure whether an asset qualifies for capital allowances</li>
-</ul>
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help you identify qualifying assets, calculate the correct allowances, and submit the claim to HMRC. They can also advise on the interaction between capital allowances and other tax reliefs, such as Section 24 interest restriction.</p>
-<p>If you need help with your capital allowances claim, <a href="/contact">contact us</a> for a consultation.</p>
-
-<h2>Frequently Asked Questions</h2>
+<p>Capital allowances reward precision and punish guesswork. The areas where a specialist usually earns their place are buying or selling commercial property (the fixtures pooling and section 198 election), a block of flats or HMO with significant common-parts plant, a commercial-to-residential conversion, a large portfolio with material capital spend, and any second-hand building where the SBA allowance statement is missing.</p>
+<p>A specialist can identify qualifying assets a generic tax return would miss, build a defensible claim, and keep the interaction with Section 24, the SBA capital gains add-back and MTD clean. Note that Section 24, the restriction of residential mortgage interest to a 20% basic-rate credit, is a separate regime from capital allowances and should never be conflated with it.</p>
+<p>If you would like an introduction to a property tax specialist who handles capital allowances claims and reviews, use the form on this page and we will connect you with a partner firm suited to your portfolio.</p>
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances" rel="noopener noreferrer">Claim capital allowances: Overview - GOV.UK</a></li>
-  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/business-tax/capital-allowances" rel="noopener noreferrer">Capital allowances | Tax - ICAEW.com</a></li>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances" rel="noopener noreferrer">Claim capital allowances: overview - GOV.UK</a></li>
+  <li id="ref-2"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/35" rel="noopener noreferrer">Capital Allowances Act 2001, s.35 (dwelling-house restriction)</a></li>
+  <li id="ref-3"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/51A" rel="noopener noreferrer">Capital Allowances Act 2001, s.51A (AIA maximum £1,000,000)</a></li>
+  <li id="ref-4"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/29" rel="noopener noreferrer">Finance Act 2026, s.29 (40% first-year allowance, inserting CAA 2001 s.45U)</a></li>
+  <li id="ref-5"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/56" rel="noopener noreferrer">Capital Allowances Act 2001, s.56 (main pool WDA 14%, substituted by FA 2026 s.28)</a></li>
+  <li id="ref-6"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/270AA" rel="noopener noreferrer">Capital Allowances Act 2001, s.270AA (Structures and Buildings Allowance)</a></li>
+  <li id="ref-7"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2025/8/schedule/5" rel="noopener noreferrer">Finance Act 2025, Schedule 5 (abolition of the FHL regime)</a></li>
 </ol>
-

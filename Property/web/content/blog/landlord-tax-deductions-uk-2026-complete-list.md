@@ -147,7 +147,7 @@ faqs:
 
 <p><strong>Grey area: sub-£100 repairs.</strong> There is no minimum claim threshold. A £30 call-out fee or a £45 replacement part is fully deductible. Many landlords leave these off because they feel trivial, but across a portfolio and a full tax year they add up to real money. Keep the receipt for every one.</p>
 
-<p><strong>The repairs-versus-improvements line.</strong> This is the most scrutinised distinction in landlord tax. A repair restores; an improvement betters. Replacing a worn worktop with a similar one is a repair. Building an extension or fitting a brand-new kitchen is an improvement. HMRC sets out the test in detail at <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030" rel="nofollow">PIM2030 of the Property Income Manual</a>, noting that using modern equivalent materials (for example, double-glazing replacing single-glazing where it is now the standard) is usually still a repair, not an improvement. Improvements are capital: they are not deductible against rental income, but they form part of your Capital Gains Tax base cost when you sell. For the full treatment, see our guide to <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">landlord capital allowances and the capital-versus-revenue boundary</a>.</p>
+<p><strong>The repairs-versus-improvements line.</strong> This is the most scrutinised distinction in landlord tax. A repair restores; an improvement betters. Replacing a worn worktop with a similar one is a repair. Building an extension or fitting a brand-new kitchen is an improvement. HMRC sets out the test in detail at <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030" rel="nofollow">PIM2030 of the Property Income Manual</a>, noting that using modern equivalent materials (for example, double-glazing replacing single-glazing where it is now the standard) is usually still a repair, not an improvement. Improvements are capital: they are not deductible against rental income, but they form part of your Capital Gains Tax base cost when you sell. For the full treatment, see our guide to <a href="/blog/property-types-and-specialist-tax/capital-allowances-on-property">landlord capital allowances and the capital-versus-revenue boundary</a>.</p>
 
 <h2>Professional Fees, Advertising and Management</h2>
 
@@ -316,6 +316,6 @@ faqs:
 <li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords</a></li>
 <li><a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 Mortgage Interest Restriction Explained</a></li>
 <li><a href="/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide">Replacement of Domestic Items Relief: Full Guide</a></li>
-<li><a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">Landlord Capital Allowances and Capital-versus-Revenue</a></li>
+<li><a href="/blog/property-types-and-specialist-tax/capital-allowances-on-property">Landlord Capital Allowances and Capital-versus-Revenue</a></li>
 <li><a href="/blog/landlord-tax-essentials/pre-letting-expenses-landlord-claim-before-first-tenant">Pre-Letting Expenses: What You Can Claim Before Your First Tenant</a></li>
 </ul>

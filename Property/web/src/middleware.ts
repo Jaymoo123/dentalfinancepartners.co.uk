@@ -51,7 +51,6 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "landlord-accounting-software-uk-2026": "portfolio-management",
   "landlord-accounting-software-uk-best-options-2026": "making-tax-digital-mtd",
   "landlord-capital-allowances-maximizing-tax-relief": "section-24-and-tax-relief",
-  "landlord-capital-allowances-tax-relief": "section-24-and-tax-relief",
   "landlord-incorporation-step-by-step-guide-uk": "incorporation-and-company-structures",
   "landlord-insurance-tax-deductible": "section-24-and-tax-relief",
   "landlord-insurance-tax-deductible-what-can-you-claim": "section-24-and-tax-relief",
@@ -332,10 +331,14 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "cgt-record-keeping-property-sales-what-to-save-how-long": "capital-gains-tax",
   "property-improvements-reduce-cgt-enhancement-expenditure": "capital-gains-tax",
   "cgt-main-residence-election-two-properties": "capital-gains-tax",
-  "hmo-capital-allowances-multi-tenant-landlords-claim": "property-types-and-specialist-tax",
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {
+  // Track 2 CapitalAllowances batch collapses (2026-05-30, guard ALLOW + adversarial intent-validation SAFE).
+  "aia-capital-allowance-property-landlords": "/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk",
+  "capital-allowance-aia-property-landlords": "/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk",
+  "aia-capital-allowances": "/blog/section-24-and-tax-relief/annual-investment-allowance-uk",
+  "annual-investment-allowance-2025": "/blog/section-24-and-tax-relief/annual-investment-allowance-uk",
   // Track 2 SA-Deductions batch collapse (2026-05-30, guard ALLOW + adversarial intent-check SAFE; source 0 equity into ICAEW-reviewed canonical). Source removed; inbound links repointed.
   // NOTE: the penalties-not-declaring-rental-income-hmrc collapse was REVERSED 2026-05-30 - adversarial intent-validation found the Let-Property-Campaign canonical orphans the source's distinct detection / penalty-bands / discovery-time-limit intent; source restored, kept as the penalties pillar (rewrite later).
   "hmrc-penalties-late-landlord-tax-returns-2026": "/blog/landlord-tax-essentials/late-filing-and-late-payment-penalties",
@@ -374,7 +377,7 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "investment-property-accounting-uk-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "landlord-accounting-software-uk-2026": "/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026",
   "landlord-capital-allowances-maximizing-tax-relief": "/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework",
-  "landlord-capital-allowances-tax-relief": "/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework",
+  "landlord-capital-allowances-tax-relief": "/blog/property-types-and-specialist-tax/capital-allowances-on-property",
   "property-company-profit-extraction-salary-vs-dividends": "/blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27",
   "property-company-employer-pension-contributions-directors": "/blog/incorporation-and-company-structures/property-spv-employer-pension-contributions-wholly-and-exclusively-test-mechanics",
   "hmo-capital-allowances-multi-tenant-landlords-claim": "/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property",
