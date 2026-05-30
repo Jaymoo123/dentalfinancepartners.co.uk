@@ -13,8 +13,14 @@ const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
 const slugs = A.slugs || []
 const cluster = A.cluster || 'unknown'
 const briefDir = A.briefDir || 'briefs/property/track2/batch3'
+// Standing user rule (2026-05-30): REWRITE-ONLY, never collapse. The engine must
+// not emit a redirect-collapse. Pass rewriteOnly:false to re-enable collapse.
+const REWRITE_ONLY = A.rewriteOnly !== false
 if (!slugs.length) { log('No slugs passed in args.slugs'); return [] }
-log(`Track 2 rewrite engine: ${slugs.length} page(s) in cluster ${cluster}`)
+log(`Track 2 rewrite engine: ${slugs.length} page(s) in cluster ${cluster}${REWRITE_ONLY ? ' [REWRITE-ONLY]' : ''}`)
+
+const MODE_NOTE = REWRITE_ONLY ? `
+REWRITE-ONLY MODE (standing rule, non-negotiable): do NOT propose redirect-collapse for ANY page. decision MUST be "rewrite". If a stronger sibling/canonical overlaps this slug, the correct output is a REWRITE with a SHARP differentiation plan in the cannibalisation field (distinct primary intent + distinct query targets that the canonical does NOT own), never a 301. Collapse is a separate future workstream and is out of scope here.` : ''
 
 const REQUIRED_READING = `
 REQUIRED READING (read these before drafting — they are the durable context, do not restate them in output):
@@ -83,7 +89,7 @@ const results = await pipeline(
   // Stage 1 — Diagnose
   (slug) => agent(
     `You are the Track 2 DIAGNOSE stage for the legacy page slug "${slug}" (cluster: ${cluster}) on the UK property-accountant lead-gen site propertytaxpartners.co.uk.
-${REQUIRED_READING}
+${REQUIRED_READING}${MODE_NOTE}
 Do this:
 1. Read the current live page at Property/web/content/blog/${slug}.md (frontmatter + body). Count its body words.
 2. Pull GSC performance: run \`python scripts/_sb_query.py "SELECT query, SUM(impressions) impr, SUM(clicks) clk, ROUND(AVG(position)::numeric,1) pos FROM gsc_query_data WHERE site_key='property' AND page_url LIKE '%/${slug}' GROUP BY query ORDER BY impr DESC LIMIT 15;"\` to see what it ranks for on Google. (Empty = INVISIBLE on Google.)
@@ -103,6 +109,11 @@ Return the structured diagnosis. Be decisive on rewrite vs redirect-collapse and
   // collapse back to REWRITE. The LLM is removed from the traffic-destroying call.
   (prev) => {
     const d = prev.diagnosis
+    if (REWRITE_ONLY && d.decision === 'redirect-collapse') {
+      log(`${prev.slug}: diagnose proposed collapse -> ${d.redirect_canonical}; REWRITE-ONLY rule forces REWRITE (differentiate, never 301)`)
+      prev.diagnosis = { ...d, decision: 'rewrite', redirect_canonical: '', collapse_blocked_to: d.redirect_canonical, rewrite_only_override: true }
+      return draftBrief(prev)
+    }
     if (d.decision === 'redirect-collapse') {
       return agent(
         `DETERMINISTIC collapse-equity guard for "${prev.slug}" -> proposed canonical "${d.redirect_canonical}".
