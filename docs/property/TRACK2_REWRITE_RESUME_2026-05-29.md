@@ -1,4 +1,41 @@
-# Track 2 — RESUME POINT for the rewrite manager (start here) — updated 2026-05-30 (batch 3 shipped)
+# Track 2 — RESUME POINT for the rewrite manager (start here) — updated 2026-05-30 (evening: 4 more batches shipped)
+
+> ## ⭐⭐ SESSION-END CHECKPOINT 2026-05-30 EVENING — NEW MANAGER START HERE
+> A long execution session shipped **4 more batches to `main` (none deployed — user wants MANUAL deploys only)**. Full detail in memory [[track2_remediation_state]]. Read that + the ground-truth memories, then continue from "REMAINING WORK" below.
+>
+> ### Committed this session (all gate-PASS + build-green, NOT deployed, NOT pushed)
+> - `ee4f424f` NonResident — 3 rewrites + 1 collapse
+> - `2ef24d4a` SA-Deductions + penalties — 10 rewrites + 1 collapse + 1 reversed→rewritten penalties pillar
+> - `8f6ac8e9` CapitalAllowances — 10 rewrites + 6 collapses
+> - `aa134890` MTD + GeneralGuides — 4 SAFE collapses
+> Net: **~30 rewrites, 12 collapses applied, ~118 residual.**
+>
+> ### House-position ROOT fixes (verified at legislation.gov.uk — ground truth now corrected, do NOT re-derive)
+> - **§16.6/§17.5 NRL:** `FA 1995 Sch 23` (repealed by TIOPA 2010) → **ITA 2007 ss.971-972 + SI 1995/2902**; NRL forms NRLQ/NRLY (quarterly/annual), NRL2/3 = company/trustee gross-payment apps.
+> - **§7 2027 property rates:** "England+NI only" → **England, Wales & NI** (only Scotland carved out; FA 2026 s.8/Sch 2 Welsh power is FUTURE). [[property_2027_rates_ground_truth]] corrected.
+> - **§38 40% FYA:** NOT "unincorporated-only" → CAA 2001 **s.45U**, available to qualifying persons generally (practically the unincorporated+leasing route). [[property_capital_allowances_2026_ground_truth]] corrected.
+> - **§38 SBA:** standard 3% is CAA 2001 **s.270AA(5) / Finance Act 2020** (NOT "FA 2021 Sch 22 para 7(4)", which is the Freeport 10% SBA); aligned to §25.4/§25.5.
+> - ~50 older corpus pages still carry the old "England+NI only" 2027-rate framing → MINOR, fix opportunistically on rewrite, NOT a standalone sweep (user steer: stop micro-error corpus sweeps).
+>
+> ### COLLAPSE AUDIT (all 12 applied verified correct; 4 bad ones caught + NOT applied)
+> Every applied collapse passed the deterministic equity guard (weaker→stronger) AND an adversarial intent-validation (default-RISKY, re-pulled GSC+Bing per source). 9/12 sources were 0/0 equity (no queries to lose); the 3 with equity collapse into canonicals that out-rank them on the SAME queries. Lone caveat: `aia-capital-allowances` left 2 minor content nuances un-carried (zero query demand, so nothing rankable lost). **CAUGHT + NOT applied (would have destroyed value):** penalties-not-declaring (reversed→rewritten), MTD making-tax-digital-property-income (backwards, Bing pos 2), MTD mtd-software (micro-cluster), GG hmo-landlord-accounting (out-ranks canonical).
+>
+> ### REMAINING WORK (next manager)
+> **MTD + GeneralGuides REWRITES (~20 pages, briefs already in `briefs/property/track2/{mtd,generalguides}/`) + 3 cannibalisation KNOTS.** Run each via the per-batch chain (§16.T5): `track2_rewrite_writer.wf.js` → `track2_independent_qa.wf.js` → `qa_verdict.py record --batch <name>` → `predeploy_gate.py --qa-batch <name>` → build → commit.
+> - **Clean rewrites (run first):** MTD (how-to-register-mtd-landlord-step-by-step-guide, how-to-switch-self-assessment-mtd-property-income, mtd-record-keeping-landlords-digital-requirements) + GeneralGuides (~14 of the 18, e.g. property-investment-company-structure-planning, accounting-services-for-property-owners, commercial-property-tax-..., property-investment-tax-uk-complete-guide-2026, etc.).
+> - **KNOT 1 — MTD keeper/reverse:** rewrite `making-tax-digital-property-income-2026-complete-guide` (Bing pos 2 keeper), THEN reverse-collapse the weaker+wronger `making-tax-digital-landlords-april-2026-deadline` INTO it (validate the reverse direction first; april-deadline is near-zero equity).
+> - **KNOT 2 — MTD fold:** `mtd-software-landlords-free-vs-paid-options-compared` owns a distinct "free vs paid" micro-cluster (29 GSC impr) — fold those terms into `best-mtd-software-landlords-2026` then collapse, OR rewrite as the dedicated comparison page.
+> - **KNOT 3 — HMO pair:** differentiate `hmo-landlord-accounting-multi-tenant-property-tax` (operations/accounting intent) from `hmo-tax-guide-rental-income-deductions-multi-tenant` (tax/deductions intent) — rewrite BOTH, keep distinct; the tax-guide canonical has stale lines (~94 wear-and-tear, ~97 £85k VAT) to fix.
+>
+> ### PARKED (revisit deliberately)
+> - **AIA-cluster knot:** `aia-allowance-uk-property-investors` out-ranks the `annual-investment-allowance-uk` hub on Google, but the hub owns Bing + is the collapse target for other AIA pages — needs a deliberate merge, not a rushed rewrite (its rewrite cannibalised the hub and was reverted).
+> - `landlord-tax-return-deadline-2026` — uncertain collapse target; deferred.
+>
+> ### WORKING PATTERN (user-confirmed this session — keep doing this)
+> - Scale batches to whole clusters; agent parallelism makes per-stage wall-clock ~flat with size.
+> - **Manager adjudicates ONLY the judgment calls** (collapse direction/intent; statutes that contradict locked ground truth) and **DELEGATES execution** (fix-application, record/gate/build/commit) to sub-agents to preserve context.
+> - **Collapse-intent validation (default-RISKY, re-pull GSC+Bing demand) is MANDATORY before applying ANY collapse** — the equity guard alone is intent-blind and would have shipped 4 bad collapses this session.
+> - **NO automatic deployments.** Commit to `main`; deploy is the user's to trigger (deploy method §"Deploy method" below + memory [[vercel_blog_fallback_size_limit]] for the ISR-size env var).
 
 **Read this first, then `track2_remediation_state` + `property_2027_rates_ground_truth` + `property_capital_allowances_2026_ground_truth` + `fa2026_corpus_sweep_state` + `bing_webmaster_data` memories, then `TRACK2_PROGRAM.md §16.T1-T6` (load-bearing lessons), then `docs/property/TRACK2_MANAGER_PICKUP.md` for the rewrite-program mechanics.**
 
