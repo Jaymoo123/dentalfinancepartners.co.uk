@@ -79,6 +79,28 @@ def check_links():
         print(f"[FAIL] internal links: {hard} HARD 404s")
 
 
+def check_frontmatter():
+    """HARD GATE: every blog page's YAML frontmatter must parse. The Track 2
+    writer emits unquoted free-text values; a colon-space (e.g. "2026/27: main
+    pool") makes YAML read a nested mapping and the Next.js build dies. The QA
+    'frontmatter intact' check never parsed the YAML, so this slipped to build.
+    Deterministic, so it belongs in the gate."""
+    res = subprocess.run(
+        [sys.executable, "scripts/frontmatter_lint.py", "--check", "--site", "property"],
+        capture_output=True, text=True,
+    )
+    if res.returncode == 0:
+        print("[ok]   frontmatter: all blog YAML valid")
+    else:
+        failures.append("Frontmatter: invalid YAML in one or more blog pages "
+                        "(unquoted colon-space breaks the build). Fix with "
+                        "`python scripts/frontmatter_lint.py --fix --site property`.")
+        print("[FAIL] frontmatter: invalid YAML")
+        for ln in res.stdout.splitlines():
+            if ln.startswith(("FRONTMATTER", "  ")):
+                print("         " + ln.strip())
+
+
 def check_em_dashes():
     bucket = failures if STRICT else warnings
     label = "FAIL" if STRICT else "warn"
@@ -229,6 +251,7 @@ def main():
           + (f"  [--qa-batch {QA_BATCH}]" if QA_BATCH else ""))
     print("=" * 60)
     check_links()
+    check_frontmatter()
     check_em_dashes()
     check_pricing()
     check_qa()

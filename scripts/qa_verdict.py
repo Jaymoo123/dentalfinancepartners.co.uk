@@ -37,6 +37,7 @@ import argparse
 import hashlib
 import json
 import pathlib
+import re
 import time
 
 ROOT = pathlib.Path(".")
@@ -48,6 +49,20 @@ PENDING = CACHE / "pending_qa.json"
 def sha256_of(slug: str) -> str | None:
     p = BLOG / f"{slug}.md"
     return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
+
+
+_STATUTE_RE = re.compile(
+    r"Finance\s*\(No\.?\s*2\)\s*Act\s*20\d\d|Finance\s+Act\s+20\d\d|\bFA\s*20\d\d|"
+    r"CAA\s*2001|TCGA\s*1992|ITTOIA\s*2005|ITA\s*2007|CTA\s*20\d\d|IHTA\s*1984|"
+    r"TMA\s*1970|VATA\s*1994|\bs\.?\s?\d+[A-Z]{0,3}\b|\bsection\s+\d+", re.I)
+
+
+def _md_statute_citations(slug: str) -> int:
+    """How many statute/section references the live .md actually makes."""
+    p = BLOG / f"{slug}.md"
+    if not p.exists():
+        return 0
+    return len(_STATUTE_RE.findall(p.read_text(encoding="utf-8")))
 
 
 def _derive_all_clear(v) -> bool:
@@ -90,9 +105,21 @@ def _rows(data):
             continue
         blocking = [i for i in (v.get("issues") or [])
                     if isinstance(i, dict) and i.get("severity") == "blocking"]
+        ac = _derive_all_clear(v)
+        # Anti-vacuous (red-team D4 follow-up): an empty statute_checks[] passes
+        # the statute dimension by default. A page that visibly cites statutes
+        # but came back with NO statute_checks was not actually verified - it
+        # cannot be all_clear. Threshold 3 to ignore an incidental "s.1" mention.
+        n_checks = len(v.get("statute_checks") or [])
+        if ac and n_checks == 0 and _md_statute_citations(v["slug"]) >= 3:
+            ac = False
+            blocking = blocking + [{
+                "severity": "blocking", "type": "statute",
+                "detail": "QA returned no statute_checks but the page cites statutes "
+                          "- statutes were not content-verified (vacuous all_clear blocked)."}]
         rows.append({
             "slug": v["slug"],
-            "all_clear": _derive_all_clear(v),
+            "all_clear": ac,
             "reported_all_clear": bool(v.get("all_clear", False)),
             "blocking": blocking or v.get("blocking") or [],
         })

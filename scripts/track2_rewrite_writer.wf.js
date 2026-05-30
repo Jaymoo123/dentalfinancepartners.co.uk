@@ -94,10 +94,13 @@ IMPORTANT: after you have SAVED the file, your final action is to return ONLY {s
   // This is the WS-D root-cause fix wired into the legacy-rewrite path (the
   // net-new generator already does this in content_pipeline).
   (prev) => agent(
-    `Deterministic internal-link canonicalisation for the just-rewritten page Property/web/content/blog/${prev.slug}.md.
-Run EXACTLY this command (it rewrites every internal /blog link to the one real category for the slug the writer chose, collapses known 301 hops, and LEAVES any link to a nonexistent page - printing it as UNRESOLVED):
-  python optimisation_engine/blog_generator/slug_resolver.py --fix Property/web/content/blog/${prev.slug}.md
-Do NOT hand-edit links yourself; the script is the source of truth. Then report what it printed: canonicalised = true if it said it canonicalised the file, and unresolved = the exact list of any "UNRESOLVED" hrefs (empty array if none). Any UNRESOLVED entry means the writer linked to a page that does not exist - it must be repointed, so report each verbatim.`,
+    `Deterministic normalisation for the just-rewritten page Property/web/content/blog/${prev.slug}.md.
+Run EXACTLY these two commands IN ORDER (both are deterministic; do NOT hand-edit):
+  1. python scripts/frontmatter_lint.py --fix Property/web/content/blog/${prev.slug}.md
+     (quotes free-text frontmatter values so an unquoted colon-space e.g. "rates 2026/27: main pool" cannot break the YAML build - this is a systematic writer defect; ALWAYS run it)
+  2. python optimisation_engine/blog_generator/slug_resolver.py --fix Property/web/content/blog/${prev.slug}.md
+     (rewrites every internal /blog link to the one real category for the slug the writer chose, collapses known 301 hops, and LEAVES any link to a nonexistent page - printing it as UNRESOLVED)
+The scripts are the source of truth. Then report what it printed: canonicalised = true if it said it canonicalised the file, and unresolved = the exact list of any "UNRESOLVED" hrefs (empty array if none). Any UNRESOLVED entry means the writer linked to a page that does not exist - it must be repointed, so report each verbatim.`,
     { label: `normalise:${prev.slug}`, phase: 'Normalise', schema: NORMALISE_SCHEMA }
   ).then(nz => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: nz })),
 
