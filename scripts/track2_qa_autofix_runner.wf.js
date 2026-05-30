@@ -3,7 +3,8 @@ export const meta = {
   description: 'Rolling per-page QA-autofix orchestrator for already-rewritten Track 2 pages: independent QA -> classify failing items (fixable vs escalate) -> auto-apply routine fixes (re-verifying statutes at legislation.gov.uk) -> re-QA, bounded by maxRounds. Writes per-slug verdicts to disk; returns a COMPACT manifest only. Does NOT commit/deploy.',
   phases: [
     { title: 'QA', detail: 'independent expert sign-off review per page (verbatim from track2_independent_qa)' },
-    { title: 'Fix', detail: 'surgical auto-fix of QA-prescribed routine corrections, statutes re-verified at source' },
+    { title: 'Editorial', detail: 'separate commissioning-editor writing-quality review (filler/repetition/hedging/voice); only a weak grade blocks' },
+    { title: 'Fix', detail: 'surgical auto-fix of QA-prescribed routine corrections + editorial prose polish, statutes re-verified at source' },
     { title: 'Record', detail: 'persist each full verdict object to optimisation_engine/.cache/qa_runner/<batch>/<slug>.json' },
   ],
 }
@@ -100,6 +101,29 @@ Note for the gate (qa_verdict derives it, do not fold into your prose all_clear 
 Then set all_clear per its definition: TRUE only if no blocking issue AND every arithmetic example agrees AND every statute check passes (exists + content_supports_claim + royal_assent_ok) AND links_resolve. Any failure => all_clear:false and the relevant issue logged as severity "blocking". Be specific and cite what you checked. Default to flagging if unsure.`
 
 // ---------------------------------------------------------------------------
+// EDITORIAL-QUALITY GATE - a SEPARATE agent + schema, distinct from the factual
+// QA above (which is a fact-checker). This judges WRITING quality only: is the
+// page genuinely expert and human, or generic AI content? Its result is MERGED
+// onto the verdict as verdict.editorial before deriveAllClear / persisting.
+// Only a 'weak' grade blocks; strong/adequate/absent all pass (null-safe).
+// ---------------------------------------------------------------------------
+const EDITORIAL_SCHEMA = { type:'object', additionalProperties:false, required:['grade','reads_human','issues'],
+  properties:{
+    grade: { type:'string', enum:['strong','adequate','weak'],
+      description:'strong = genuine expert voice, specific, publish proudly; adequate = solid, publishable, only minor polish; weak = generic AI filler / no real expertise / pervasive hedging / templated - must not publish' },
+    reads_human: { type:'boolean', description:'false if it reads as generic AI content (filler intros, "in today\'s ever-changing landscape", "it is important to note", listicle-in-prose, hedging that says nothing)' },
+    issues: { type:'array', items:{ type:'object', additionalProperties:false, required:['type','detail','suggested_fix'],
+      properties:{
+        type:{ type:'string', description:'filler / repetition / hedging / generic / structure / readability / voice' },
+        detail:{ type:'string', description:'the EXACT offending text/location' },
+        suggested_fix:{ type:'string', description:'a concrete, surgical rewrite/cut that preserves all facts and figures' } } } } } }
+
+// The editorial reviewer prompt - a DISTINCT persona (commissioning editor, NOT a
+// fact-checker). It polishes prose only and never touches tax substance.
+const editorPrompt = (slug) =>
+  `You are a senior commissioning editor for a UK property-tax firm's blog. You are NOT a fact-checker (a separate reviewer handles facts, statutes and arithmetic - do NOT re-check those). Judge ONLY the writing quality of Property/web/content/blog/${slug}.md: is it genuinely expert and human, or generic AI content? Read it, then flag with the EXACT offending text: (1) AI-filler / generic phrasing (e.g. 'in today's ever-changing landscape', 'it is important to note', 'navigating the complexities', empty throat-clearing intros, conclusions that merely restate); (2) repetition (a phrase/word/idea recycled across sections - quote each); (3) hedging / waffle (over-qualified sentences that say nothing); (4) listicle-in-prose tells ('three things. First... Second... Third...') used formulaically; (5) weak structure (sections that do not earn their place); (6) readability (sentences too long or dense); (7) voice (does it carry a real adviser's point of view and concrete specificity, or is it bland and generic?). House voice: confident, specific, plain UK English, NO em-dashes, no on-page pricing, a lead-gen handoff tone. GRADE the page: strong / adequate / weak. 'adequate' is the publishable bar; reserve 'weak' for genuinely generic, filler-heavy, hedged or templated writing with no real expert substance. Set reads_human=false if it reads as generic AI. For each issue give type + the exact offending text (detail) + a concrete suggested_fix that PRESERVES every fact, figure and citation (you are polishing prose, never changing tax substance). Be a tough but fair editor.`
+
+// ---------------------------------------------------------------------------
 // derived_all_clear - MIRRORS qa_verdict.py _derive_all_clear EXACTLY, in JS,
 // AND-ed with the agent's self-reported all_clear (never trust the agent alone).
 // Same dimensions and same "empty array / absent => PASS that dimension" defaults.
@@ -116,7 +140,10 @@ function deriveAllClear(v) {
   const coverage_ok = !((qc.uncovered_high_demand || []).length)
   const meta = v.meta_quality || {}
   const meta_ok = (meta.ok === undefined ? true : meta.ok !== false)
-  const derived = no_blocking && arithmetic_ok && statutes_ok && links_ok && coverage_ok && meta_ok
+  // Editorial-quality gate (distinct from factual QA): only a 'weak' grade
+  // blocks. strong / adequate / absent all pass (null-safe default = pass).
+  const editorial_ok = !(v.editorial && v.editorial.grade === 'weak')
+  const derived = no_blocking && arithmetic_ok && statutes_ok && links_ok && coverage_ok && meta_ok && editorial_ok
   const reported = (v.all_clear === undefined ? derived : !!v.all_clear) // absent -> use derivation
   return derived && reported
 }
@@ -164,6 +191,15 @@ function collectFailing(v) {
       text: `meta overflow: title_len=${meta.title_len} desc_len=${meta.desc_len} (limits 60/155)`,
       prescribed: 'shorten metaTitle<=60 and metaDescription<=155' })
   }
+  // Editorial issues are auto-collected ONLY when the grade is 'weak' (the
+  // blocking bar). adequate pages ship - their issues stay recorded in the
+  // verdict as notes; do NOT auto-edit adequate prose.
+  if (v.editorial && v.editorial.grade === 'weak') {
+    for (const i of (v.editorial.issues || [])) {
+      if (!i) continue
+      out.push({ kind: 'editorial', subtype: (i.type || 'voice'), text: i.detail || '', prescribed: i.suggested_fix || '' })
+    }
+  }
   return out
 }
 
@@ -190,6 +226,13 @@ function classifyItem(item, round, priorAttempted) {
   // No concrete correction to apply -> manager must decide what is correct.
   const prescribed = (item.prescribed || '').trim()
   if (!prescribed) return { decision: 'escalate', reason: 'QA gave no concrete correct value/citation' }
+  // Editorial items are pure PROSE POLISH (cut filler, vary repetition, tighten
+  // hedging) and can never be a house_positions contradiction - so they SKIP the
+  // ground-truth escalate branch. A non-empty prescribed (suggested_fix) is
+  // fixable; out-of-rounds / no-progress above still apply.
+  if (item.kind === 'editorial') {
+    return { decision: 'fixable', reason: 'editorial prose polish (preserves all facts)' }
+  }
   // Contradiction with locked ground truth -> a judgment call, not a routine fix.
   const hay = (item.text + ' ' + prescribed).toLowerCase()
   if (HOUSE_POSITION_CUES.some(cue => hay.includes(cue))) {
@@ -214,6 +257,7 @@ RULES:
 - COVERAGE FIXES: weave each uncovered high-demand query naturally ONCE into the indicated slot (metaTitle/metaDescription/H2/FAQ/body); never repeat or list-dump.
 - META FIXES: trim metaTitle to <=60 chars and metaDescription to <=155 chars while keeping the primary query intent.
 - TABLE FIX: if a missing comparison table was flagged on a comparison page, add one plain-HTML side-by-side <table> (thead+tbody), no inline styles, no pricing.
+- EDITORIAL FIX: for any [editorial] item, the fix is a SURGICAL PROSE EDIT per the suggested_fix - cut filler, vary repetition, tighten hedging, improve flow - while PRESERVING every fact, figure, statute citation and worked example exactly (the factual QA re-runs after, so any drift will be caught). Do not add new claims.
 After applying the edits, run EXACTLY these two deterministic commands IN ORDER (do NOT hand-edit what they fix):
   1. python scripts/frontmatter_lint.py --fix Property/web/content/blog/${slug}.md
   2. python optimisation_engine/blog_generator/slug_resolver.py --fix Property/web/content/blog/${slug}.md
@@ -267,6 +311,12 @@ async function processPage(slug) {
       break
     }
 
+    // (1b) EDITORIAL agent - a SEPARATE writing-quality reviewer (distinct from
+    // the factual QA above). Merge its result onto verdict.editorial before
+    // deriveAllClear / persisting. Null-safe default = pass (adequate / human).
+    const ed = await agent(editorPrompt(slug), { label: `editorial:${slug}`, phase: 'Editorial', schema: EDITORIAL_SCHEMA }).catch(() => null)
+    verdict.editorial = ed || { grade: 'adequate', reads_human: true, issues: [] }
+
     // (2) Derive all_clear in JS (mirror of qa_verdict.py), AND-ed with reported flag.
     if (deriveAllClear(verdict)) {
       result = { slug, all_clear: true, rounds: round, signoff: verdict.signoff, unresolved: [], verdict }
@@ -293,19 +343,31 @@ async function processPage(slug) {
       { label: `fix:${slug}`, phase: 'Fix', schema: FIX_SCHEMA }
     ).catch(() => null)
 
-    // Items we attempted this round are recorded so a later round that sees them
-    // STILL failing classifies them as "no progress" -> escalate.
-    for (const f of fixList) priorAttempted.add(f.text)
-
-    // Any prescribed fix the agent could not safely apply (e.g. legislation.gov.uk
-    // contradicted it) -> treat as escalate now; do not loop pointlessly.
-    const couldNot = (fixRes && fixRes.could_not_apply) || (fixRes ? [] : ['fix agent failed/returned nothing'])
-    if (couldNot.length) {
-      const unresolved = couldNot.map(s => `${s} [escalate: fix could not be applied at source]`)
-      result = { slug, all_clear: false, rounds: round, signoff: verdict.signoff, unresolved, verdict }
+    // If the fix agent returned NOTHING at all, it cannot proceed -> escalate-exit
+    // (no edits were applied, so re-QA'ing would just repeat the same verdict).
+    if (!fixRes) {
+      result = { slug, all_clear: false, rounds: round, signoff: verdict.signoff,
+        unresolved: ['fix agent failed/returned nothing [escalate: cannot proceed]'], verdict }
       break
     }
-    // else loop to round+1 and RE-QA the now-edited page.
+
+    // The fix agent RAN. Record BOTH the applied items AND the could_not_apply
+    // items in priorAttempted (so a later round that still sees them failing
+    // classifies them as "no progress" -> escalate). Then DO NOT break - CONTINUE
+    // the loop to re-QA the now-edited page. This fixes the stale-verdict bug:
+    // previously a single could_not_apply broke immediately with the PRE-FIX
+    // verdict on disk, so applied fixes were never re-QA'd and minor non-blocking
+    // "no fix needed" notes wrongly forced a false escalation. Now: genuinely
+    // stuck blockers re-fail the next QA and escalate via the existing no-progress
+    // / maxRounds logic (with a FRESH post-fix verdict on disk); minor non-blocking
+    // notes simply will not fail deriveAllClear, so the page passes.
+    for (const f of fixList) priorAttempted.add(f.text)
+    const couldNot = fixRes.could_not_apply || []
+    for (const s of couldNot) priorAttempted.add(s)
+    if (couldNot.length) {
+      log(`fix:${slug} round ${round} could_not_apply: ${couldNot.join('; ')}`)
+    }
+    // Loop to round+1 and RE-QA the now-edited page (fresh verdict on disk).
   }
 
   // (5) Safety net: if the loop exhausted maxRounds without all_clear and without

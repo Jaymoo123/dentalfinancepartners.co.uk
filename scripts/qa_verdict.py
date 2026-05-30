@@ -94,8 +94,12 @@ def _derive_all_clear(v) -> bool:
     coverage_ok = not (qc.get("uncovered_high_demand") or [])
     meta = v.get("meta_quality") or {}
     meta_ok = meta.get("ok", True)
+    # Editorial-quality gate (separate from the factual QA). Only a 'weak'
+    # editorial grade blocks; strong / adequate / absent all pass.
+    editorial = v.get("editorial") or {}
+    editorial_ok = editorial.get("grade") != "weak"
     derived = (no_blocking and arithmetic_ok and statutes_ok and links_ok
-               and coverage_ok and meta_ok)
+               and coverage_ok and meta_ok and editorial_ok)
     reported = bool(v.get("all_clear", derived))  # absent -> use the derivation
     return derived and reported
 
@@ -138,6 +142,14 @@ def _rows(data):
                 "severity": "blocking", "type": "meta",
                 "detail": "meta overflow: title_len={} desc_len={} (limits 60/155)".format(
                     meta.get("title_len"), meta.get("desc_len"))}]
+        editorial = v.get("editorial") or {}
+        if editorial.get("grade") == "weak":
+            ed_issues = editorial.get("issues") or []
+            first = (ed_issues[0].get("detail") if ed_issues and isinstance(ed_issues[0], dict)
+                     else "") or ""
+            blocking = blocking + [{
+                "severity": "blocking", "type": "editorial",
+                "detail": "editorial grade weak: " + first}]
         rows.append({
             "slug": v["slug"],
             "all_clear": ac,
