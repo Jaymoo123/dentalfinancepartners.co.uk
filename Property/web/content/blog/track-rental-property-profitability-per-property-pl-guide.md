@@ -189,7 +189,7 @@ faqs:
 
 <h3>Section 24 Impact and MTD Preparation</h3>
 
-<p>While your P&L should show actual mortgage interest costs for commercial analysis, remember that <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">tax relief is restricted</a> to basic rate only. From April 2026, landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must keep digital records and submit quarterly updates under Making Tax Digital (MTD). Robust P&L tracking systems support this compliance requirement.</p>
+<p>While your P&L should show actual mortgage interest costs for commercial analysis, remember that <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">tax relief is restricted</a> to basic rate only. From April 2026, landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must keep digital records and submit quarterly updates under Making Tax Digital (MTD). Robust P&L tracking systems support this compliance requirement.</p>
 
 <h2>Using P&L Data for Strategic Decisions</h2>
 

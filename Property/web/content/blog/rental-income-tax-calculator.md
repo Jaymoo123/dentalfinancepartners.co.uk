@@ -27,7 +27,7 @@ faqs:
     answer: "From April 2026, landlords with property income over £50,000 must keep digital records and submit quarterly updates to HMRC. This doesn't change how tax is calculated but requires more frequent reporting. Choose MTD-compatible software and set up digital record-keeping well before the deadline."
 ---
 
-<p>Working out your <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax</a> can feel overwhelming, especially with <a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24</a> mortgage interest restrictions and various allowable deductions to consider. A <strong>rental income tax calculator</strong> helps you understand your tax liability and plan your finances effectively.</p>
+<p>Working out your <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">rental income tax</a> can feel overwhelming, especially with <a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24</a> mortgage interest restrictions and various allowable deductions to consider. A <strong>rental income tax calculator</strong> helps you understand your tax liability and plan your finances effectively.</p>
 
 <p>This guide explains how to calculate your rental income tax, what deductions you can claim, and how Section 24 affects your final tax bill.</p>
 

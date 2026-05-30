@@ -187,7 +187,7 @@ editorialNote: "Verified against gov.uk MTD ITSA pilot guidance and house positi
 <li>The software side: see <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">Best MTD software for landlords 2026</a>.</li>
 <li>The pillar: see <a href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide">Making Tax Digital for property income complete guide</a>.</li>
 <li>The qualifying-income mechanic: see <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">The gross-vs-net qualifying-income test</a>.</li>
-<li>The quarterly-reporting process page: see <a href="/blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide">MTD quarterly reporting step by step</a>.</li>
+<li>The quarterly-reporting process page: see <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly reporting step by step</a>.</li>
 </ul>
 
 <h2>When to seek advice</h2>

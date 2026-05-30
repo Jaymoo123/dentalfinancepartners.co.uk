@@ -114,7 +114,7 @@ faqs:
 
 <h2>Tax Implications of Deposit Size</h2>
 
-<p>Your deposit amount affects the tax efficiency of your investment through its impact on mortgage interest deductions. Under <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">current tax rules</a>, mortgage interest relief is restricted to basic rate tax relief only.</p>
+<p>Your deposit amount affects the tax efficiency of your investment through its impact on mortgage interest deductions. Under <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">current tax rules</a>, mortgage interest relief is restricted to basic rate tax relief only.</p>
 
 <p>Higher rate taxpayers particularly feel this impact, making larger deposits (and lower borrowings) more attractive from a tax perspective. However, this must be balanced against the opportunity cost of capital and potential returns from additional investments.</p>
 

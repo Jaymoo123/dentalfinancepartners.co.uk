@@ -313,7 +313,7 @@ faqs:
 
 <h2>Related Reading</h2>
 <ul>
-<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords</a></li>
+<li><a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">Rental Income Tax UK: Complete Guide for Landlords</a></li>
 <li><a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 Mortgage Interest Restriction Explained</a></li>
 <li><a href="/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide">Replacement of Domestic Items Relief: Full Guide</a></li>
 <li><a href="/blog/property-types-and-specialist-tax/capital-allowances-on-property">Landlord Capital Allowances and Capital-versus-Revenue</a></li>

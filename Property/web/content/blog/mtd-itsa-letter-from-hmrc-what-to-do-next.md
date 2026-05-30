@@ -167,7 +167,7 @@ editorialNote: "Verified against gov.uk MTD ITSA outreach campaign and house pos
 <li>The Ltd Co route if you are considering it: see <a href="/blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules">the cohort comparison between MTD ITSA and limited company</a>.</li>
 <li>The exit route if cessation is in view: see <a href="/blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test">the MTD ITSA exit rule</a>.</li>
 <li>The deadline anchor: see <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">the April 2026 mandate deadline reference</a>.</li>
-<li>The penalty consequences of inaction: see <a href="/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline">MTD penalties for landlords who miss deadlines</a>.</li>
+<li>The penalty consequences of inaction: see <a href="/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch">MTD penalties for landlords who miss deadlines</a>.</li>
 </ul>
 
 <h2>When to seek advice</h2>

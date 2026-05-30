@@ -87,7 +87,7 @@ imageCredit:
 <h2>AIA and Residential Property</h2>
 <p>For standard residential buy-to-let properties, the AIA is less commonly used. This is because most residential landlords do not install significant plant and machinery in their properties. However, if you install a new heating system, solar panels, or a security system, these may qualify.</p>
 <p>Note that the AIA does not apply to the cost of the building itself or to land. It only applies to plant and machinery. If you are refurbishing a property, the distinction between repairs (revenue) and improvements (capital) is important. Repairs are deductible immediately, while improvements may qualify for capital allowances.</p>
-<p>For a comprehensive overview of how property income is taxed, see our <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax guide</a>.</p>
+<p>For a comprehensive overview of how property income is taxed, see our <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">rental income tax guide</a>.</p>
 
 <h2>Planning for the AIA Limit Change</h2>
 <p>With the AIA limit expected to drop from £1 million to £200,000 from 1 April 2026, property investors should plan their capital expenditure carefully. If you are considering significant plant and machinery investments, it may be beneficial to bring them forward to before the change.</p>

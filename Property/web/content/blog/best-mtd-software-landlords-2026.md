@@ -133,7 +133,7 @@ faqs:
 <li><strong>Before the next quarterly deadline:</strong> Run a dry submission. If the tool offers a sandbox or test mode, use it. If not, work with an accountant to review the first submission before it goes live.</li>
 </ol>
 
-<p>If you are already past your first quarterly deadline and have missed it, see our separate guide on <a href="/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline">MTD penalties for landlords</a>. Catching up on a missed deadline is faster than waiting for HMRC to flag it.</p>
+<p>If you are already past your first quarterly deadline and have missed it, see our separate guide on <a href="/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch">MTD penalties for landlords</a>. Catching up on a missed deadline is faster than waiting for HMRC to flag it.</p>
 
 <h2>Common MTD Mistakes Landlords Are Making in 2026</h2>
 
@@ -163,4 +163,4 @@ faqs:
 <p>We work with property landlords across all the recognised platforms. The consultation is free and we will recommend the tool that fits your portfolio shape, not the one we earn the most commission from (we do not take software affiliate fees). Scroll to the form at the bottom of this page.</p>
 </aside>
 
-<p>Related reading: <a href="/blog/making-tax-digital-mtd/mtd-software-landlords-free-vs-paid-options-compared">Free vs paid MTD software comparison</a>, <a href="/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide">How to register for MTD as a landlord</a>, <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly deadlines 2026-27</a>, <a href="/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline">MTD penalties</a>, <a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">MTD threshold and exemptions</a>, and <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>.</p>
+<p>Related reading: <a href="/blog/making-tax-digital-mtd/mtd-software-landlords-free-vs-paid-options-compared">Free vs paid MTD software comparison</a>, <a href="/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide">How to register for MTD as a landlord</a>, <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly deadlines 2026-27</a>, <a href="/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch">MTD penalties</a>, <a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">MTD threshold and exemptions</a>, and <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>.</p>

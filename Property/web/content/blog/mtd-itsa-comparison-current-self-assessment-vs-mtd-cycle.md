@@ -232,7 +232,7 @@ editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk Self Assessm
 <li>The SA-side workflow if you're still on annual: <a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">Landlord tax return complete guide 2026</a>.</li>
 <li>The pillar: <a href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide">Making Tax Digital for property income complete guide</a>.</li>
 <li>The bucket overview: <a href="/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords">MTD ITSA overview: six changes</a>.</li>
-<li>The quarterly-reporting process page: <a href="/blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide">MTD quarterly reporting step by step</a>.</li>
+<li>The quarterly-reporting process page: <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly reporting step by step</a>.</li>
 <li>The SA-side process page: <a href="/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide">How to complete a landlord self assessment filing</a>.</li>
 <li>The trigger-event page for landlords just receiving the HMRC letter: <a href="/blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next">MTD ITSA letter from HMRC, what to do next</a>.</li>
 <li>The mechanic on whether you are in at all: <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">The gross-vs-net qualifying-income test</a>.</li>

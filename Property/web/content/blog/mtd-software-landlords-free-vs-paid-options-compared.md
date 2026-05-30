@@ -83,7 +83,7 @@ faqs:
 <h2>Choosing Software Based on Portfolio Size</h2>
 <p>Your choice between free and paid MTD software should align with your portfolio complexity and growth plans.</p>
 <h3>Small Portfolios (1-3 Properties)</h3>
-<p>Landlords with small portfolios might find free MTD software adequate if all properties are standard residential BTL, income and expenses are straightforward, and there are no immediate expansion plans. However, even small portfolios benefit from paid software when dealing with <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">complex tax calculations</a> or frequent transactions.</p>
+<p>Landlords with small portfolios might find free MTD software adequate if all properties are standard residential BTL, income and expenses are straightforward, and there are no immediate expansion plans. However, even small portfolios benefit from paid software when dealing with <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">complex tax calculations</a> or frequent transactions.</p>
 <h3>Medium Portfolios (4-10 Properties)</h3>
 <p>Medium-sized portfolios typically require paid software due to the volume of transactions exceeding free tier limits, the need for detailed reporting and analysis, significant time savings from automation, and increased compliance risks requiring better validation.</p>
 <h3>Large Portfolios (10+ Properties)</h3>

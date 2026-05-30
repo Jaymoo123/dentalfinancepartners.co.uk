@@ -136,7 +136,7 @@ faqs:
 
 <h2>How Much Tax to Pay on a Furnished Holiday Let</h2>
 
-<p>The question of <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">how much tax to pay in a furnished holiday let</a> depends on your overall income and property portfolio. Here's a simplified example:</p>
+<p>The question of <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">how much tax to pay in a furnished holiday let</a> depends on your overall income and property portfolio. Here's a simplified example:</p>
 
 <p>Let's say your FHL generates £25,000 in rental income per year. Your allowable expenses (cleaning, utilities, insurance, repairs, letting agent fees) total £8,000. Your net rental profit is £17,000.</p>
 

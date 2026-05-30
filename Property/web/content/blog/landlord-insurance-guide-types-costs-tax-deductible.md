@@ -79,7 +79,7 @@ faqs:
 <p>Short-term rental properties require specialist coverage due to higher guest turnover and different risk profiles. Following the abolition of Furnished Holiday Lettings relief from April 2025, many operators are reassessing their insurance needs alongside their tax positions.</p>
 
 <h3>Insurance by Ownership Structure</h3>
-<p>If you own properties personally, insurance premiums are fully deductible against your <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income</a>, subject to the Section 24 restrictions on mortgage interest relief. Properties owned through <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited companies</a> can claim insurance premiums as business expenses, reducing corporation tax at 19% (small profits rate) or 25% (main rate). Company ownership often provides more flexibility in insurance arrangements and may qualify for better commercial rates on portfolio policies.</p>
+<p>If you own properties personally, insurance premiums are fully deductible against your <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">rental income</a>, subject to the Section 24 restrictions on mortgage interest relief. Properties owned through <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited companies</a> can claim insurance premiums as business expenses, reducing corporation tax at 19% (small profits rate) or 25% (main rate). Company ownership often provides more flexibility in insurance arrangements and may qualify for better commercial rates on portfolio policies.</p>
 
 <h2>Landlord Insurance Tax Deductibility</h2>
 

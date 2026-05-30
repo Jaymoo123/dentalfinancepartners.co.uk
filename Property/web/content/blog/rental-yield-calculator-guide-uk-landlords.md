@@ -226,6 +226,6 @@ faqs:
 
 <h2>Related Reading</h2>
 <ul>
-<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+<li><a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
 <li><a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Property Investment Tax UK: Complete Guide 2026</a></li>
 </ul>

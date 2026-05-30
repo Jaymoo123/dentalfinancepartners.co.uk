@@ -48,7 +48,7 @@ dateModified: "2026-05-22"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
 reviewedAt: "2026-05-22"
-editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Bucket pillar covering the six headline changes for residential landlords. Strict scope discipline against CANNIBAL-WATCH from Stage 1 (mtd-quarterly-reporting-landlords-step-by-step-guide): each change carries an overview-level summary plus cross-link to the operational deep-dive, no process detail on quarterly submission or other changes."
+editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Bucket pillar covering the six headline changes for residential landlords. Strict scope discipline against CANNIBAL-WATCH from Stage 1 (mtd-quarterly-deadlines-2026-2027-landlords): each change carries an overview-level summary plus cross-link to the operational deep-dive, no process detail on quarterly submission or other changes."
 ---
 
 <p>Making Tax Digital for Income Tax Self Assessment is the most consequential change to UK self-assessment since the 1996 reform that created self assessment itself. Six things change for residential landlords brought into scope. Each one is a substantial operational shift on its own. Together they reset how a landlord interacts with HMRC across the tax year.</p>
@@ -69,7 +69,7 @@ editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Bucket pillar cover
 
 <p>Each update is a summary of cumulative income and expenses for the tax year to date, filed through MTD-compatible software. Updates are cumulative, not stand-alone: Q2 includes Q1's figures plus Q2's new transactions. Corrections to earlier-quarter data are made in the next update or at end-of-period statement stage. Calendar-quarter elections are available from 6 April 2026 (filers can use 31 March / 30 June / 30 September / 31 December quarter-ends and file by the 7th of the following month), but the default remains the 5th-of-month UK tax-year quarter ends.</p>
 
-<p>For the operational mechanics of each quarter (what figures to include, how the software builds the submission, the bank-feed-vs-manual-entry decision, and the correction workflow), the <a href="/blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide">MTD quarterly reporting step-by-step guide</a> is the operational deep-dive.</p>
+<p>For the operational mechanics of each quarter (what figures to include, how the software builds the submission, the bank-feed-vs-manual-entry decision, and the correction workflow), the <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly reporting step-by-step guide</a> is the operational deep-dive.</p>
 
 <h2>Change 3: end-of-period statement plus final declaration close the year</h2>
 
@@ -103,7 +103,7 @@ editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Bucket pillar cover
 
 <p><strong>Late payment, Spring Statement 2025 accelerated schedule.</strong> The unpaid-tax penalty cascade for MTD ITSA filers from 6 April 2026 is 3% of the unpaid tax from day 15 after the payment due date, a further 3% from day 30, then 10% per annum from day 31. The Spring Statement 2025 reform both doubled the percentages and accelerated the day-triggers (the legacy schedule was 2% / 2% / 4% on 31 / 46 / 91 day-triggers; that legacy schedule continues for VAT and for non-MTD income tax). The change is significant: a landlord with a £20,000 unpaid liability that runs 60 days late accrues £1,200 of fixed-percentage penalties (3% + 3% = 6%) plus a £329 daily-accruing penalty (10% per annum on £20,000 for 30 days), compared with £400 under the legacy 2%/2% schedule.</p>
 
-<p>For the penalty cascade in operational detail (cure periods, time-to-pay arrangements that pause the cascade, the special-circumstances reduction under Schedule 24, and tribunal appeal grounds), the <a href="/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline">MTD penalties page</a> walks through the schedule and the appeal routes.</p>
+<p>For the penalty cascade in operational detail (cure periods, time-to-pay arrangements that pause the cascade, the special-circumstances reduction under Schedule 24, and tribunal appeal grounds), the <a href="/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch">MTD penalties page</a> walks through the schedule and the appeal routes.</p>
 
 <aside>
 <p>The six changes look daunting in aggregate. In practice, picking the right software and setting up the digital record-keeping habit before the first mandated quarter begins handles four of the six changes without further conscious attention. The remaining two (threshold awareness and the new penalty regime) become relevant if your income drops out of scope or if you slip on a quarterly deadline.</p>

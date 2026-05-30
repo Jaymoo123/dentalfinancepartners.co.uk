@@ -130,7 +130,6 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "property-vat-registration-expert-services": "portfolio-management",
   "reduce-cgt-property-disposal-uk": "capital-gains-tax",
   "rental-income-tax-calculator": "section-24-and-tax-relief",
-  "rental-income-tax-uk-complete-guide-landlords": "section-24-and-tax-relief",
   "rental-property-accountant-near-me": "portfolio-management",
   "rental-yield-calculation-gross-vs-net-yield": "portfolio-management",
   "rental-yield-calculator-guide-uk-landlords": "landlord-tax-essentials",
@@ -184,7 +183,6 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "first-time-landlord-tax-guide-everything-you-need-to-know": "landlord-tax-essentials",
   "2027-property-income-tax-rates-landlords-uk": "landlord-tax-essentials",
   "how-to-register-mtd-landlord-step-by-step-guide": "making-tax-digital-mtd",
-  "mtd-quarterly-reporting-landlords-step-by-step-guide": "making-tax-digital-mtd",
   "making-tax-digital-property-income-2026-complete-guide": "making-tax-digital-mtd",
   "tax-sell-rental-property-uk": "capital-gains-tax",
   "landlord-tax-changes-2026-complete-guide": "landlord-tax-essentials",
@@ -242,7 +240,6 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "how-to-complete-landlord-self-assessment-filing-step-by-step-guide": "landlord-tax-essentials",
   "penalties-not-declaring-rental-income-hmrc": "landlord-tax-essentials",
   "renters-rights-act-2026-tax-implications-landlords": "landlord-tax-essentials",
-  "mtd-penalties-landlords-miss-deadline": "making-tax-digital-mtd",
   "mtd-software-landlords-free-vs-paid-options-compared": "making-tax-digital-mtd",
   "mtd-record-keeping-landlords-digital-requirements": "making-tax-digital-mtd",
   "mtd-10000-threshold-when-does-it-apply": "making-tax-digital-mtd",
@@ -334,6 +331,11 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {
+  // Track 2 MTD + GeneralGuides SAFE collapses (2026-05-30, intent-validated).
+  "mtd-penalties-landlords-miss-deadline": "/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch",
+  "mtd-quarterly-reporting-landlords-step-by-step-guide": "/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords",
+  "buy-to-let-accountants-near-me-guide": "/blog/property-accountant-services/property-accountant-near-me",
+  "rental-income-tax-uk-complete-guide-landlords": "/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide",
   // Track 2 CapitalAllowances batch collapses (2026-05-30, guard ALLOW + adversarial intent-validation SAFE).
   "aia-capital-allowance-property-landlords": "/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk",
   "capital-allowance-aia-property-landlords": "/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk",
