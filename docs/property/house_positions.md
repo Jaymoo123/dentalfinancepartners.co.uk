@@ -3258,7 +3258,7 @@ Closes F-100 from MW1 Stage 1b. Anchors lane C council-tax cluster (C2 new build
   - Class N: occupied solely by full-time students (£0 council tax)
   - Class W: annex occupied by dependent relative (aged 65+, severely mentally impaired, substantially disabled)
 - **SI 1992/554 — Council Tax (Administration and Enforcement) Regulations 1992** — billing, enforcement, recovery procedures.
-- **SI 1992/612 — Council Tax (Liability of Owners) Regulations 1992** — when the owner (not resident) is liable (HMOs, certain care arrangements, etc.).
+- **SI 1992/551 — Council Tax (Liability for Owners) Regulations 1992** (England and Wales) — when the owner (not resident) is liable (HMOs are Class C; care homes, religious communities, domestic staff, ministers, asylum-seeker accommodation are the other classes). Note "Liability FOR Owners". Do NOT cite SI 1992/612 (that is the Local Authorities (Calculation of Council Tax Base) Regulations 1992, an unrelated base-calculation instrument), and do NOT use the "Liability OF Owners" wording (that is the Scotland-only SI 1992/1331). Scotland owner-liability instrument: SI 1992/1331 if the devolved nuance is needed.
 
 ### 30.3 Discount mechanics
 
@@ -3285,7 +3285,8 @@ Closes F-100 from MW1 Stage 1b. Anchors lane C council-tax cluster (C2 new build
 
 ### 30.5 HMO and owner-liability mechanics
 
-- **HMO definition under SI 1992/612:** dwelling occupied by more than one household, where occupants share basic amenities. HMO occupancy can shift council-tax liability from residents (room-by-room) to the owner (whole-property single bill). Government plans to change this — see C3 brief for the 2024-2026 reform proposals; verify current status at Stage 2.
+- **HMO owner-liability instrument:** **SI 1992/551 — Council Tax (Liability for Owners) Regulations 1992** (England and Wales), Class C, makes an HMO owner-liable (not the residents). NOT SI 1992/612 (that is the council-tax-base regs); NOT "Liability of Owners" (that wording is Scotland-only SI 1992/1331). HMO occupancy shifts council-tax liability from residents to the owner (a single whole-property bill), so void-period council tax is a genuine deductible landlord cost.
+- **HMO single-dwelling banding rule — SETTLED current law from 1 December 2023 (verified at legislation.gov.uk 2026-05-30).** **SI 2023/1175 — Council Tax (Chargeable Dwellings and Liability for Owners) (Amendment) (England) Regulations 2023** came into force 1 December 2023 (reg 1, England only). Reg 2 inserts **article 3C into SI 1992/549 (Council Tax (Chargeable Dwellings) Order 1992)**: "an HMO must be treated as a single dwelling" for council tax, using the **Housing Act 2004 s.254** HMO meaning (modified to exclude s.254(1)(e) and (5)). Reg 3 amends SI 1992/551 Class C to align owner-liability with the s.254 meaning. The combined effect: an HMO has ONE council tax band and ONE bill, payable by the owner. The prior VOA per-room disaggregation practice (roughly 2020-2023) ENDED at that date. This is current settled law, NOT a "government plans to change" proposal, and there is no announced reversal. Pre-1-Dec-2023 per-room bandings remain on the list until reviewed under SI 1992/549 art 6. Canonical page: C3 `government-to-end-council-tax-on-hmo-rooms`.
 
 ### 30.6 Cross-jurisdictional notes
 
