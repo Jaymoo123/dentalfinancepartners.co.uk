@@ -145,23 +145,47 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <h1 className="mt-3 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl md:text-5xl">
                   {post.h1}
                 </h1>
-                <p className="mt-3 text-sm text-slate-500">
-                  {post.date && (
-                    <time dateTime={post.date}>{formatUkDate(post.date)}</time>
-                  )}
-                  {post.author ? (
+                <div className="mt-3 text-sm text-slate-500">
+                  {post.dateModified && post.dateModified !== post.date ? (
                     <>
-                      {" · "}
-                      <span>{post.author}</span>
+                      {post.date && (
+                        <span className="block">
+                          First published{" "}
+                          <time dateTime={post.date}>{formatUkDate(post.date)}</time>
+                        </span>
+                      )}
+                      <span className="block">
+                        Last updated{" "}
+                        <time dateTime={post.dateModified}>{formatUkDate(post.dateModified)}</time>
+                      </span>
+                      {(post.author || readTime > 0) && (
+                        <span className="mt-1 block">
+                          {post.author ? <span>{post.author}</span> : null}
+                          {post.author && readTime > 0 ? " · " : null}
+                          {readTime > 0 ? <span>{readTime} min read</span> : null}
+                        </span>
+                      )}
                     </>
-                  ) : null}
-                  {readTime > 0 && (
+                  ) : (
                     <>
-                      {" · "}
-                      <span>{readTime} min read</span>
+                      {post.date && (
+                        <time dateTime={post.date}>{formatUkDate(post.date)}</time>
+                      )}
+                      {post.author ? (
+                        <>
+                          {" · "}
+                          <span>{post.author}</span>
+                        </>
+                      ) : null}
+                      {readTime > 0 && (
+                        <>
+                          {" · "}
+                          <span>{readTime} min read</span>
+                        </>
+                      )}
                     </>
                   )}
-                </p>
+                </div>
                 {post.summary ? (
                   <p className="mt-4 text-lg text-slate-700 leading-relaxed">{post.summary}</p>
                 ) : null}
