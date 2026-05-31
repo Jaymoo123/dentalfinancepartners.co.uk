@@ -3,134 +3,172 @@ title: "CGT Record Keeping for Property Sales: What to Save and for How Long?"
 slug: "cgt-record-keeping-property-sales-what-to-save-how-long"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long"
 date: "2026-04-10"
+dateModified: "2026-05-31"
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist. Retention periods aligned with house position §27.7 (TMA 1970 s.12B record retention, locked 2026-05-24); every statutory reference re-verified against legislation.gov.uk and gov.uk on 31 May 2026."
+reviewedAt: "2026-05-31"
 category: "Capital Gains Tax"
-metaTitle: "CGT Record Keeping Property: What to Save & How Long | UK Guide"
-metaDescription: "Essential guide to CGT record keeping for property sales. Learn what documents to save, HMRC requirements, and how long to keep records for capital gains tax."
-altText: "UK landlord organising property CGT records and documents for tax compliance"
+metaTitle: "CGT Property Records: What to Keep and How Long | UK"
+metaDescription: "What property records to keep for capital gains tax, the real retention period under TMA 1970 s.12B (5 years, not 6), and how to rebuild lost CGT records."
+altText: "UK landlord organising property purchase, improvement and sale records for a capital gains tax return"
 image: ""
-h1: "CGT Record Keeping for Property Sales: What to Save and for How Long?"
-summary: "Proper CGT record keeping for property is crucial for accurate tax calculations and HMRC compliance. This guide covers what documents you need to save and for how long."
+h1: "CGT Record Keeping for Property Sales: What to Save and How Long to Keep It"
+summary: "The records you keep decide how much capital gains tax you pay when you sell a rental property. This guide sets out exactly what to save across purchase, improvement and sale, the real retention period under TMA 1970 s.12B (five years for landlords, not the six often quoted), how Making Tax Digital changes the form your records take, and how to rebuild a base cost when the paperwork has gone missing."
 schema: ""
+howToSteps:
+  - name: "Save the acquisition file"
+    text: "Keep the purchase completion statement, the SDLT (or LBTT or LTT) return and payment evidence, the conveyancing invoice, and any survey or valuation. For an inherited property keep the probate valuation. These fix your base cost."
+  - name: "Log every capital improvement as it happens"
+    text: "File builder and trade invoices, planning consents, architect and surveyor fees, and before-and-after photos for extensions, conversions and other works that add value. Mark clearly which spend is improvement and which is repair, because only improvement reduces the gain."
+  - name: "Keep the disposal file"
+    text: "On sale, save the completion statement, the estate agent commission invoice, the conveyancing invoice for the sale, and any EPC or marketing cost. These are deductible disposal costs."
+  - name: "Hold the records for the statutory period"
+    text: "Keep everything for at least five years after the 31 January following the tax year of disposal if you sell as an individual, or six years from the end of the accounting period if you sell through a company. We recommend seven years as a buffer."
+  - name: "Report and pay within 60 days, then file the SA return"
+    text: "Where capital gains tax is due, file the UK property CGT return and pay within 60 days of completion, then report the same disposal again on your Self Assessment return for the year."
 faqs:
   - question: "How long must I keep CGT records for property sales?"
-    answer: "You must keep CGT records for at least 6 years after 31 January following the tax year in which you sold the property. For example, if you sold in 2025/26, keep records until at least 31 January 2033. If HMRC opens an enquiry, you may need to retain records longer until the enquiry closes."
+    answer: "If you sell as an individual, the statutory floor under TMA 1970 s.12B is five years after the 31 January following the tax year of disposal, because letting is treated as a business. Sell in 2026/27 and you must keep the records until at least 31 January 2033. Companies keep records for six years from the end of the accounting period. We recommend seven years across the board as a buffer against late-discovered errors."
+  - question: "Do I really only need to keep records for 6 years?"
+    answer: "Six years is the figure most websites quote, but it is the corporation tax period, not the rule for personal landlords. For income tax and CGT the floor is five years from the 31 January filing date, which for a property sold mid-tax-year works out close to but not the same as six calendar years from the disposal. The safest approach is to keep everything for seven years and never destroy the original purchase paperwork while you still own the property."
   - question: "What documents do I need for CGT record keeping on property?"
-    answer: "Essential documents include: purchase completion statements, SDLT returns, solicitor bills, survey reports, improvement invoices with receipts, planning permissions, sale completion statements, estate agent fees, and marketing costs. Keep anything that affects your property's base cost, enhancement expenditure, or disposal costs."
+    answer: "Three groups. Acquisition: completion statement, SDLT or LBTT or LTT return and payment, conveyancing invoice, survey, and probate valuation for inherited property. Improvement: builder and trade invoices, planning consents, professional fees, and photos. Disposal: completion statement, estate agent commission, sale conveyancing invoice, EPC and marketing costs. Anything that changes your base cost, your enhancement expenditure or your costs of sale belongs in the file."
+  - question: "Can I claim renovation costs against capital gains tax?"
+    answer: "Only capital improvements that are still reflected in the property at the date of sale, such as an extension, a loft conversion or a new kitchen where there was none. Routine repairs and redecoration are revenue costs, deductible against rental income, not against the gain. The same invoice can sometimes serve both purposes, so keep enough detail to show which element is which."
   - question: "Can I store CGT property records digitally?"
-    answer: "Yes, HMRC accepts digital copies provided they're clear and complete. Use high-quality scans, maintain backup copies in separate locations, organise files by property and tax year, and protect sensitive documents with passwords. Physical originals should still be kept secure for irreplaceable documents."
+    answer: "Yes. HMRC accepts digital copies provided they are complete and legible, and landlords inside Making Tax Digital for Income Tax must in any case keep their records digitally. Use clear scans, back them up in two places, organise by property and tax year, and keep irreplaceable originals such as completion statements safe as well."
   - question: "What happens if I lose important CGT records?"
-    answer: "You may be able to reconstruct lost records from Land Registry documents, mortgage lender files, solicitors' records, bank statements, or HMRC's own SDLT records. Where complete reconstruction isn't possible, HMRC may accept reasonable estimates based on available evidence, but you bear the burden of proving your CGT calculation accuracy."
+    answer: "You can usually rebuild a base cost from the Land Registry (purchase price and date), your conveyancer's file, mortgage lender records, old bank statements showing payments to builders, and HMRC's own SDLT records. Where reconstruction is incomplete HMRC may accept a reasonable estimate, but the burden of proving your figure sits with you, so the more contemporaneous evidence you can find, the better."
+  - question: "How does Making Tax Digital change property record keeping?"
+    answer: "Making Tax Digital for Income Tax is live, phased by income: from 6 April 2026 for landlords with qualifying income above £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. Joint owners test the threshold against their share. In scope you must keep digital records and file quarterly updates. The digital-records rule changes the form of your records, not the retention period, and it does not replace the separate CGT records you need for an eventual sale."
+  - question: "Do I keep different records for rental income and for CGT?"
+    answer: "They overlap but serve different jobs. Rental income records (rent received, allowable expenses, repairs) support your annual return and follow the five-year retention floor. CGT records can span the entire period of ownership, often decades, because the base cost is fixed at purchase. A major improvement invoice does both jobs, which is why a single property file is the cleanest system."
+  - question: "What records do non-UK residents need when selling UK property?"
+    answer: "The same acquisition, improvement and disposal evidence, plus the figures needed for rebasing. Residential gains are rebased to 5 April 2015 and non-residential to 5 April 2019, so a non-resident needs a credible value at the relevant rebasing date as well as the original cost. Every non-resident disposal of UK land must be reported within 60 days regardless of whether tax is due."
+  - question: "Do I need to keep records if I transferred the property to my spouse?"
+    answer: "Yes, and arguably more carefully. A transfer to a spouse or civil partner is no-gain-no-loss under s.58 TCGA 1992, so they inherit your original base cost and acquisition date. The receiving spouse therefore needs your full acquisition and improvement file, not just the transfer paperwork, to calculate the gain when they eventually sell."
+  - question: "What records prove a Private Residence Relief claim?"
+    answer: "Anything that evidences when the property was your only or main home: council tax bills, utility accounts in your name, the electoral roll, correspondence addressed to you there, and tenancy agreements for the periods it was let. PRR is apportioned by time, so the relief is only as strong as the dates you can prove."
+  - question: "What is the penalty for failing to keep CGT records?"
+    answer: "TMA 1970 s.12B(5) sets a penalty of up to £3,000 for each year of failure to keep adequate records. In practice the larger exposure is not that penalty but the inaccuracy penalties under Schedule 24 FA 2007 on any tax you then under-report because the figures could not be supported."
 ---
 
-<p>When you sell a rental property, <strong>CGT record keeping</strong> becomes critical for calculating your tax liability accurately and satisfying HMRC requirements. Poor record keeping can cost you thousands in additional tax or penalties, while good records can help you claim every allowable deduction.</p>
+<p>The records you keep are not box-ticking. They are the difference between paying capital gains tax on the real gain and paying it on the sale price because you could not prove what the property cost you. When you sell a rental property, every pound of base cost, every qualifying improvement and every cost of sale has to be evidenced, and the burden of proof sits with you, not with HMRC.</p>
 
-<p>This guide explains exactly what property sale documentation you need to keep, how long HMRC expects you to retain these records, and practical tips for staying organised throughout your property investment journey.</p>
+<p>This guide sets out what to keep across the life of the property, the retention period that actually applies (which is not the six years most sites quote for personal landlords), how Making Tax Digital reshapes the form your records take, and how to rebuild a base cost when the paperwork has gone missing.</p>
 
-<h2>HMRC Record Keeping Requirements for CGT</h2>
+<h2>How long must you keep CGT records for property?</h2>
 
-<p>HMRC requires property investors to keep detailed <strong>CGT records</strong> for capital gains tax purposes. The legal requirement is to retain all relevant documents for <strong>at least 6 years after the 31 January following the tax year</strong> in which you disposed of the property.</p>
+<p>The legal hook is section 12B of the Taxes Management Act 1970. Because letting property is treated as a business for record-keeping purposes (the Salisbury House Estate principle), the longer business-records rule applies, not the 22-month rule that covers a straightforward employee.</p>
 
-<p>For example, if you sold a property in August 2025 (tax year 2025/26), you must keep records until at least 31 January 2033. However, if HMRC opens an enquiry into your return, this period can extend significantly.</p>
+<p>That longer rule is widely misquoted as "six years". For a personal landlord it is not. The income tax and CGT floor is <strong>five years after the 31 January following the tax year of disposal</strong>. The six-year figure is the corporation tax period for companies. Selling through a company, or as an individual, changes the number.</p>
 
-<p>The penalties for inadequate record keeping can be substantial. HMRC can impose penalties of up to £3,000 per tax year for failing to keep proper records, plus additional charges if this leads to an incorrect return.</p>
+<table>
+<thead>
+<tr><th>Who is selling</th><th>Statutory minimum (s.12B)</th><th>Worked example: sale in 2026/27</th></tr>
+</thead>
+<tbody>
+<tr><td>Individual landlord (income tax and CGT)</td><td>5 years after 31 January following the tax year</td><td>Keep until at least 31 January 2033</td></tr>
+<tr><td>Company (corporation tax)</td><td>6 years from the end of the accounting period</td><td>6 years from the company's period end</td></tr>
+<tr><td>Any seller where HMRC opens an enquiry</td><td>Until the enquiry is closed (plus an appeal window)</td><td>Can run well beyond the floor</td></tr>
+<tr><td>Our standing recommendation</td><td>7 years</td><td>Buffer against late-discovered errors</td></tr>
+</tbody>
+</table>
 
-<h2>Essential Documents for Property CGT Calculations</h2>
+<p>Two practical points follow. First, never destroy the original purchase paperwork while you still own the property, whatever the retention clock says, because the base cost is fixed at acquisition and you may not sell for decades. Second, if you file a return late, the clock runs from the date you actually filed, not the original deadline, so a late filer keeps records longer.</p>
 
-<p>Your <strong>CGT record keeping property</strong> system should capture every document that affects your capital gains calculation. These fall into three main categories: acquisition costs, enhancement expenditure, and disposal costs.</p>
+<h2>What documents you need for property CGT calculations</h2>
 
-<h3>Acquisition and Purchase Documentation</h3>
+<p>Your file should capture everything that moves the three numbers in a CGT calculation: what the property cost you (base cost), what you spent improving it (enhancement expenditure), and what it cost you to sell (disposal costs). The table below is the reference set.</p>
 
-<p>Keep all documents from when you originally bought the property:</p>
+<table>
+<thead>
+<tr><th>Stage</th><th>Documents to keep</th><th>Why it matters for the gain</th></tr>
+</thead>
+<tbody>
+<tr><td>Acquisition</td><td>Completion statement, SDLT/LBTT/LTT return and payment, conveyancing invoice, survey or valuation, probate valuation for inherited property</td><td>Fixes the base cost deducted from the sale proceeds</td></tr>
+<tr><td>Improvement</td><td>Builder and trade invoices, planning consents and building-regulation approvals, architect and surveyor fees, before-and-after photos</td><td>Capital improvements reduce the gain; routine repairs do not</td></tr>
+<tr><td>Disposal</td><td>Sale completion statement, estate agent commission invoice, sale conveyancing invoice, EPC, marketing costs</td><td>Costs of sale are deducted from proceeds</td></tr>
+</tbody>
+</table>
+
+<h3>Acquisition and purchase documentation</h3>
+
+<p>The completion statement is the single most important document you will ever hold for the property, because it is the primary evidence of what you paid. Keep it with the conveyancer's invoice (legal fees and searches are part of the base cost), the Stamp Duty Land Tax return and payment evidence (or the Land and Buildings Transaction Tax return in Scotland, or the Land Transaction Tax return in Wales), and any survey or valuation. For an inherited property the probate valuation sets your base cost in place of a purchase price, so it is non-negotiable.</p>
+
+<h3>Enhancement and improvement records</h3>
+
+<p>This is where most landlords lose money at sale, because the line between an improvement and a repair is poorly understood. An improvement creates something that was not there before or materially upgrades the asset: an extension, a loft conversion, a first central-heating system, a new bathroom where there was none. A repair restores what was already there: replacing a worn boiler, redecorating, re-roofing on a like-for-like basis. Only improvement still reflected in the property at sale reduces the gain. Repairs are revenue costs, deductible against rental income instead. Keep the invoices detailed enough to show which is which, and photograph the work, because a faded receipt for "building works, £14,000" with no detail is the kind of figure HMRC challenges.</p>
+
+<h3>Disposal and sale documentation</h3>
+
+<p>On sale, the completion statement again carries the headline figure, this time the proceeds. Keep the estate agent's commission invoice and the conveyancing invoice for the sale, both of which are deductible disposal costs, along with any marketing spend and the Energy Performance Certificate. Small disposal costs add up, and they come straight off the gain.</p>
+
+<h2>Can you store CGT property records digitally?</h2>
+
+<p>Yes, and for many landlords you will soon have no choice. HMRC accepts digital copies as long as they are complete and legible, and landlords within <a href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide">Making Tax Digital for Income Tax</a> are required to keep their records digitally. A workable system has clear scans or photos, two backups in different places (cloud plus a local copy), a folder per property broken down by tax year, and reasonable protection on sensitive financial documents. Keep irreplaceable originals such as completion statements physically secure as well, because a corrupt file is not a defence.</p>
+
+<h2>How Making Tax Digital changes your record keeping</h2>
+
+<p>Making Tax Digital for Income Tax is no longer on the horizon, it is live and phasing in by income level: from 6 April 2026 for landlords whose qualifying income exceeds £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. Joint owners test the threshold against their own share of gross property income, not the property's total. In scope, you keep digital records and submit quarterly updates through compatible software.</p>
+
+<p>Two things landlords routinely get wrong here. The digital-records requirement changes the <em>form</em> of your records, not how long you keep them: the s.12B retention period is untouched. And MTD covers your rental income reporting, not the CGT side. The records you assemble for an eventual sale sit alongside your MTD records, they are not replaced by them. Our guide to <a href="/blog/making-tax-digital-mtd/mtd-record-keeping-landlords-digital-requirements">MTD record keeping for landlords</a> covers the digital obligations in full.</p>
+
+<h2>Special situations that extend record keeping</h2>
+
+<p>Some circumstances push the retention period beyond the statutory floor or demand a thicker file than usual.</p>
+
+<h3>HMRC enquiries and investigations</h3>
+
+<p>If HMRC opens an enquiry into a return, you must keep all relevant records until that enquiry is closed, plus a sensible window for any appeal. For a contested property valuation or a complex disposal this can add years. This is the practical reason we recommend seven years rather than the bare statutory minimum.</p>
+
+<h3>Connected-party transactions</h3>
+
+<p>Sales between connected parties (family members, business partners, related companies) are treated as taking place at market value regardless of what actually changed hands, so HMRC scrutinises them closely. Keep evidence of how you arrived at the market value used, ideally an independent valuation contemporaneous with the transfer.</p>
+
+<h3>Spouse and civil partner transfers</h3>
+
+<p>A transfer to a spouse or civil partner is no-gain-no-loss under s.58 TCGA 1992, which means the receiving spouse takes over your original base cost and acquisition date. The implication for record keeping is easy to miss: the receiving spouse needs your <em>full</em> acquisition and improvement file, not just the transfer paperwork, because their future gain is calculated from your original cost. Our guide to <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on property transfers between spouses</a> works through the mechanics.</p>
+
+<h3>Private Residence Relief claims</h3>
+
+<p>If you are claiming <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Private Residence Relief</a> on a property that was at times your main home and at times let, the relief is apportioned by time. It is therefore only as strong as the occupancy dates you can prove. Keep council tax bills, utility accounts, electoral-roll evidence and the tenancy agreements that mark the let periods.</p>
+
+<h2>Rental income records versus CGT records</h2>
+
+<p>The two systems overlap but answer different questions. Rental income records (rent received, allowable expenses, repairs) feed your annual return and follow the same five-year floor. CGT records can span the entire ownership period, because the base cost is locked in at purchase and only the gain is tested at sale. Some documents do both jobs: a major improvement invoice is enhancement expenditure for CGT and, where part of the work is genuinely a repair, an allowable cost against rental income. Holding everything in one property file rather than two parallel systems removes the risk of a document being filed under "rental" and lost by the time you sell.</p>
+
+<h2>Reporting and paying after a sale</h2>
+
+<p>Records do not exist in a vacuum, they exist to support what you report. Where capital gains tax is due on a UK residential disposal, you must file the UK property CGT return and pay the tax within <strong>60 days of completion</strong>, then report the same disposal again on your Self Assessment return for the year. Where the gain is fully covered by Private Residence Relief, losses or the £3,000 annual exempt amount, a UK resident does not need to file the 60-day return, but a non-UK resident must report every UK land disposal regardless of whether tax is due. Residential gains for 2026/27 are charged at 18% (basic rate) and 24% (higher rate), and the annual exempt amount is £3,000.</p>
+
+<p>The records carry directly into both filings. A clean file lets you file the 60-day return on time, which matters because late filing attracts a £100 fixed penalty, daily penalties from day 91, and tax-geared penalties at six and twelve months. For the full timeline see our guide to <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines for property sales</a>, and for the calculation itself see <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">how to calculate CGT on a buy-to-let sale</a>.</p>
+
+<h2>Record keeping for different ownership types</h2>
+
+<h3>Buy-to-let, commercial and development property</h3>
+
+<p>A standard residential buy-to-let needs the full acquisition, improvement and disposal file above, with particular care on improvement spend. Commercial investors should also keep records of any capital allowances claimed, because allowances interact with the CGT calculation. For development projects, keep every cost (land, construction, professional fees, finance) because the documentation often decides whether the profit is taxed as a trade (income tax) or as a capital gain.</p>
+
+<h3>Incorporation and business changes</h3>
+
+<p>Transferring a portfolio into a company is itself a disposal for CGT, so it demands a market value for each property at the transfer date and, if you are relying on it, evidence to support an incorporation relief claim. The acquisition file you have kept for each property feeds straight into that calculation. If incorporation is on your radar, start with our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">guide to the buy-to-let limited company</a>, and remember that once inside a company the retention rule shifts to the six-year corporation tax period.</p>
+
+<h2>What happens if records are lost or incomplete?</h2>
+
+<p>A missing file is a problem, not a disaster. You can usually rebuild the key figures from independent sources:</p>
+
 <ul>
-<li><strong>Completion statement</strong> from your solicitor showing the purchase price</li>
-<li><strong>SDLT return (SDLT1)</strong> and payment evidence</li>
-<li><strong>Solicitor's bill</strong> itemising legal fees and searches</li>
-<li><strong>Survey reports</strong> and valuation certificates</li>
-<li><strong>Estate agent fees</strong> for finding the property</li>
-<li><strong>Mortgage arrangement fees</strong> (if they increase the base cost)</li>
-</ul>
-<p>For inherited properties, you'll also need probate valuations and any inheritance tax documentation. These establish your base cost for CGT purposes.</p>
-
-<h3>Enhancement and Improvement Records</h3>
-
-<p>Capital improvements that add value to the property can be deducted from your capital gain. Keep detailed records of:</p>
-<ul>
-<li><strong>Builder invoices</strong> for extensions, loft conversions, or major renovations</li>
-<li><strong>Planning permission documents</strong> and building regulation approvals</li>
-<li><strong>Architect and surveyor fees</strong> for improvement projects</li>
-<li><strong>Material receipts</strong> for substantial DIY improvements</li>
-<li><strong>Before and after photos</strong> documenting the improvements</li>
-</ul>
-<p>Note that routine repairs and maintenance cannot be claimed against CGT - only improvements that enhance the property's value or extend its useful life qualify.</p>
-
-<h3>Disposal and Sale Documentation</h3>
-
-<p>When you sell the property, retain all disposal-related documents:</p>
-<ul>
-<li><strong>Completion statement</strong> showing the sale price and deductions</li>
-<li><strong>Estate agent's contract</strong> and commission invoice</li>
-<li><strong>Solicitor's bill</strong> for the sale transaction</li>
-<li><strong>Marketing costs</strong> including professional photos and advertising</li>
-<li><strong>Energy Performance Certificate</strong> if required for the sale</li>
+<li><strong>Land Registry</strong> records show the purchase price and date</li>
+<li><strong>Your conveyancer's file</strong> is typically retained for six to seven years after completion and may hold the completion statement</li>
+<li><strong>Mortgage lender records</strong> can evidence the loan and arrangement costs</li>
+<li><strong>Old bank statements</strong> can show payments to builders and professionals</li>
+<li><strong>HMRC's own records</strong> may confirm the SDLT return and payment</li>
 </ul>
 
-<h2>Digital vs Physical Record Storage</h2>
+<p>Where the figure cannot be fully reconstructed, HMRC may accept a reasonable estimate supported by what evidence you do have. But the burden of proof is yours, so the more contemporaneous documents you can assemble, the closer the agreed figure will be to the truth rather than to HMRC's cautious assumption.</p>
 
-<p>HMRC accepts digital copies of documents for <strong>CGT records HMRC</strong> purposes, provided they're clear and complete. Many property investors find digital storage more practical for long-term record keeping.</p>
-<p>If storing digitally, ensure you have:</p>
-<ul>
-<li><strong>High-quality scans or photos</strong> showing all text clearly</li>
-<li><strong>Backup copies</strong> stored separately (cloud storage plus local backup)</li>
-<li><strong>Organised folder structure</strong> by property and tax year</li>
-<li><strong>Password protection</strong> for sensitive financial documents</li>
-</ul>
-<p>Physical documents should be stored securely and protected from damage. Consider fireproof filing cabinets for irreplaceable original documents like completion statements.</p>
+<h2>Getting the file right before you sell</h2>
 
-<h2>Special Situations Requiring Extended Record Keeping</h2>
-
-<p>Some circumstances require you to keep <strong>property sale documentation</strong> for longer than the standard 6-year period.</p>
-<h3>HMRC Enquiries and Investigations</h3>
-<p>If HMRC opens an enquiry into your CGT return, you must retain all relevant records until the enquiry is closed. This can extend the retention period by several years, particularly for complex property transactions or where HMRC suspects tax avoidance.</p>
-<h3>Connected Party Transactions</h3>
-<p>Sales between connected parties (family members, business partners, or related companies) often attract additional HMRC scrutiny. Keep detailed records of how you determined the market value used for CGT purposes, including any professional valuations obtained.</p>
-<h3>Principal Private Residence Relief Claims</h3>
-<p>If you're claiming <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief</a> on a property that was sometimes your main home and sometimes let out, maintain detailed records of occupancy periods. This includes utility bills, council tax records, and tenancy agreements that prove when the property was occupied versus let.</p>
-
-<h2>Rental Income Records vs CGT Records</h2>
-
-<p>Don't confuse rental income record keeping with CGT requirements. While both are important, they serve different purposes and have different retention periods.</p>
-<p>Rental income records (monthly rent received, allowable expenses, repairs) are needed for your annual tax returns and should be kept for 6 years after the tax year they relate to. CGT records, however, may span the entire period you owned the property - potentially decades for long-term investments.</p>
-<p>Some documents serve both purposes. For example, major improvement invoices affect both your rental income tax (potentially claimable as repairs) and your CGT calculation (as enhancement expenditure). Understanding this overlap helps streamline your record keeping system.</p>
-
-<h2>Practical Tips for Staying Organised</h2>
-
-<p>Effective <strong>CGT record keeping property</strong> systems prevent last-minute scrambles when you come to sell. Here are some practical approaches:</p>
-<h3>Property-Specific Files</h3>
-<p>Create a separate file (physical or digital) for each property containing all acquisition, improvement, and rental-related documents. This makes it easy to calculate CGT when you eventually sell.</p>
-<h3>Annual Reviews</h3>
-<p>Review your records annually, ideally when completing your tax return. This helps identify missing documents while they're still obtainable and ensures your system stays current.</p>
-<h3>Professional Support</h3>
-<p>Consider working with a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> who can advise on record keeping requirements and help structure your documentation for tax efficiency. The cost of professional advice often pays for itself through better tax planning and reduced compliance risks.</p>
-
-<h2>Record Keeping for Different Property Types and Situations</h2>
-
-<p>Different property investments and business changes may have specific record keeping requirements:</p>
-<h3>Buy-to-Let, Commercial, and Development Properties</h3>
-<p>Standard residential BTL properties require the comprehensive records outlined above. Pay particular attention to improvement expenditure. Commercial property investors should also keep records of any capital allowances claimed, as these affect the CGT calculation. For development projects, keep detailed records of all development costs, including land purchase, construction, professional fees, and finance costs. This documentation helps determine whether profits are subject to income tax or CGT.</p>
-<h3>Incorporation and Business Changes</h3>
-<p>If you're considering <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporating your property business</a>, your record keeping becomes even more critical. Transferring properties into a company is a disposal for CGT purposes, requiring detailed records of market values at the transfer date. Similarly, if you're affected by upcoming changes like <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>, ensure your record keeping systems are compatible with digital reporting obligations.</p>
-
-<h2>What Happens if Records Are Lost or Incomplete?</h2>
-
-<p>If you've lost important <strong>CGT records HMRC</strong> requires, don't panic. You may be able to reconstruct the information from other sources:</p>
-<ul>
-<li><strong>Land Registry documents</strong> can provide purchase prices and dates</li>
-<li><strong>Mortgage lender records</strong> may show loan amounts and arrangement fees</li>
-<li><strong>Solicitors' files</strong> are typically retained for 6-7 years after completion</li>
-<li><strong>HMRC's own records</strong> may show SDLT payments and returns</li>
-<li><strong>Bank statements</strong> can evidence payments to builders and professionals</li>
-</ul>
-<p>Where records cannot be reconstructed, HMRC may accept reasonable estimates based on available evidence. However, the burden of proof remains with you to demonstrate the accuracy of your CGT calculation.</p>
-
-<p>For comprehensive guidance on all aspects of property tax planning, including CGT planning strategies, see our complete guide to <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property in the UK</a>.</p>
+<p>The cheapest time to organise CGT records is years before the sale, when documents are still obtainable and memories are fresh. A short annual review at the same time you do your tax return catches gaps while they can still be filled. If your records are scattered, or you are weighing a sale, a transfer or incorporation, a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can pressure-test the file before HMRC does and make sure no allowable deduction is left on the table. For the wider picture on disposals, see our complete guide to <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property in the UK</a>.</p>

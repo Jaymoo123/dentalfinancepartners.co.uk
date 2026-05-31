@@ -3,159 +3,190 @@ title: "How Is CGT Calculated When Selling a Buy-to-Let Property? Step-by-Step G
 slug: "cgt-selling-buy-to-let-property-calculation-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide"
 date: "2026-04-10"
+dateModified: "2026-05-31"
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Tax Adviser (CTA), Property Tax Specialist"
+reviewedAt: "2026-05-31"
 category: "Capital Gains Tax"
-metaTitle: "CGT Selling Buy-to-Let Property: Step-by-Step UK Guide 2026"
-metaDescription: "Complete guide to calculating CGT when selling buy-to-let property. Step-by-step examples, deductions, rates and deadlines for UK landlords."
-altText: "UK landlord calculating capital gains tax on laptop with property documents and calculator on desk"
+metaTitle: "CGT on Selling a Buy-to-Let: How It Is Calculated (UK)"
+metaDescription: "How CGT is calculated when you sell a buy-to-let in the UK: the gain, allowable costs, 18% and 24% rates, the £3,000 exemption and the 60-day return."
+altText: "UK landlord calculating capital gains tax on a buy-to-let sale with property completion statement and calculator"
 image: ""
-h1: "CGT Selling Buy-to-Let Property: Complete Calculation Guide for UK Landlords"
-summary: "Calculate capital gains tax accurately when selling your buy-to-let property with our step-by-step guide covering all deductions and current UK tax rates."
+h1: "How Is CGT Calculated When You Sell a Buy-to-Let Property?"
+summary: "A worked, step-by-step method for calculating capital gains tax on a buy-to-let sale: working out the gain, the costs HMRC actually allows, how the 18% and 24% rates stack against your income, and the 60-day reporting trap."
 schema: ""
+howToSteps:
+  - name: "Work out your net sale proceeds"
+    text: "Take the sale price and deduct the incidental costs of disposal that TCGA 1992 s.38 allows: estate agent commission, the conveyancing solicitor's fees, and advertising or auction costs. The figure left is your net proceeds."
+  - name: "Add up your total base cost"
+    text: "Add the original purchase price, the SDLT you paid on acquisition, your purchase legal and survey fees, and any capital improvement expenditure that is still reflected in the property at the date of sale. This is the cost you deduct from proceeds."
+  - name: "Calculate the gross gain"
+    text: "Subtract the total base cost from the net sale proceeds. The result is the gross chargeable gain on the disposal."
+  - name: "Deduct reliefs and the annual exempt amount"
+    text: "Apply any Private Residence Relief for periods you lived in the property, deduct allowable capital losses, then subtract the £3,000 annual exempt amount for 2026/27 to reach the taxable gain."
+  - name: "Apply the right CGT rate to each slice"
+    text: "Stack the taxable gain on top of your taxable income. The part falling in your remaining basic-rate band is taxed at 18%; everything above the basic-rate threshold is taxed at 24%."
+  - name: "Report and pay within 60 days"
+    text: "File a CGT on UK property return and pay the tax within 60 days of completion, then report the disposal again on your Self Assessment return by the following 31 January."
 faqs:
+  - question: "How is CGT calculated when selling a buy-to-let property?"
+    answer: "Start with the sale price, deduct selling costs to get net proceeds, then deduct your total base cost (purchase price, acquisition SDLT and fees, plus capital improvements). That gives the gross gain. Deduct any Private Residence Relief, allowable losses and the £3,000 annual exempt amount to reach the taxable gain, then apply 18% to the part within your remaining basic-rate band and 24% to the rest."
   - question: "How much CGT do I pay when selling a buy-to-let property?"
-    answer: "CGT on residential property is charged at 18% for basic-rate taxpayers or 24% for higher-rate taxpayers. Your rate depends on your total income including the capital gain. You can deduct the £3,000 annual CGT exemption and various costs from the gain before calculating tax due."
+    answer: "Residential property gains are taxed at 18% for the part of the gain that falls within your remaining basic-rate band and 24% above it (TCGA 1992 s.1H, in force from 30 October 2024). Because the gain is added on top of your income, a basic-rate taxpayer with a large gain will pay 24% on the slice that tips them over the higher-rate threshold."
   - question: "What costs can I deduct when calculating CGT on property?"
-    answer: "You can deduct purchase costs (solicitor fees, stamp duty, surveys), sale costs (estate agent fees, solicitor fees, advertising), and capital improvements that enhanced the property's value (extensions, new kitchens, conversions). Routine repairs and maintenance cannot be deducted."
-  - question: "Do I need to report the sale even if I don't owe any CGT?"
-    answer: "Yes, all residential property disposals must be reported to HMRC within 60 days of completion, even if you've made a loss or don't owe any tax. You'll also need to include the disposal in your Self Assessment return by 31 January following the tax year of sale."
-  - question: "Can I reduce CGT if I lived in the property before renting it out?"
-    answer: "Yes, you may qualify for Principal Private Residence Relief for periods when the property was your main home, plus the final 9 months of ownership. This relief is calculated based on the proportion of your ownership period when it was your main residence versus when it was let out."
+    answer: "TCGA 1992 s.38 allows the purchase price, incidental acquisition costs (SDLT, purchase legal fees, surveys), capital enhancement expenditure that is still reflected in the property at sale, and incidental selling costs (estate agent commission, conveyancing fees, advertising). It does not allow routine repairs, decoration, or mortgage interest."
+  - question: "Can I deduct mortgage interest or repairs from the gain?"
+    answer: "No. Mortgage interest is a revenue cost relieved against rental income through the Section 24 basic-rate tax reducer, not against the capital gain, and TCGA 1992 s.38 specifically excludes interest. Routine repairs and redecoration are revenue expenses too. Only capital improvements that enhance the property and remain reflected in it at the date of sale are deductible for CGT."
+  - question: "Do I have to report the sale if I do not owe any CGT?"
+    answer: "If the disposal produces a taxable gain you must file a CGT on UK property return and pay within 60 days of completion. If, after reliefs and the £3,000 exemption, there is no taxable gain and no tax to pay, no 60-day return is generally required, but you still report the disposal on your Self Assessment return if you complete one or if you want to claim a loss."
+  - question: "What is the 60-day CGT rule for property?"
+    answer: "When a UK resident disposes of UK residential property at a taxable gain, a standalone CGT on UK property return must be filed and the tax paid within 60 days of the completion date. Missing it triggers automatic late-filing penalties even where the tax is later settled through Self Assessment, so the deadline runs from completion, not from the tax year end."
+  - question: "How does CGT work if I lived in the property before letting it?"
+    answer: "Periods when the property was your only or main home, plus the final 9 months of ownership, qualify for Private Residence Relief, which exempts that proportion of the gain. Only the proportion of the gain relating to the let period is chargeable. If you lived there throughout and let only part, the relief is apportioned by time and by area."
+  - question: "Is the annual exempt amount still £3,000?"
+    answer: "Yes. The CGT annual exempt amount is £3,000 per individual for 2026/27, down from £6,000 in 2023/24 and £12,300 before April 2023. Spouses and civil partners each have their own £3,000, so a jointly owned property gets two exemptions where the beneficial ownership is genuinely shared."
+  - question: "How do I work out whether I pay 18% or 24%?"
+    answer: "Add your taxable gain on top of your taxable income for the year. Any part of the gain that still falls within your unused basic-rate band (up to £50,270 of total taxable income for 2026/27) is taxed at 18%; the remainder is taxed at 24%. A higher or additional-rate taxpayer pays 24% on the whole residential gain."
+  - question: "Can transferring the property to my spouse before sale reduce CGT?"
+    answer: "Transfers between spouses or civil partners living together are made on a no-gain, no-loss basis, so a share can be moved across before sale to use both £3,000 exemptions and both basic-rate bands at 18%. The transfer must be a genuine outright gift of beneficial ownership, not a paper arrangement, and HMRC will look at the substance. See our guide on transferring property to a spouse for the mechanics."
+  - question: "How are capital losses on a buy-to-let used?"
+    answer: "A loss on one property is set first against gains on any chargeable asset in the same tax year, before the annual exempt amount, then carried forward. A brought-forward loss is used only down to the £3,000 exemption, preserving it where possible. The loss must be claimed to HMRC within four years of the end of the tax year of disposal, after which it is used indefinitely once claimed."
+  - question: "Does incorporating my portfolio avoid CGT on a sale?"
+    answer: "Transferring properties into a company is itself a disposal at market value for CGT. Section 162 incorporation relief can defer the gain where a genuine property business (usually an actively managed portfolio) is transferred wholly or partly for shares, but it does not erase the gain and there is normally an SDLT cost on the transfer. It is a deferral and restructuring decision, not a way to sell a single buy-to-let tax-free."
 ---
 
-<p>When selling a buy-to-let property in the UK, calculating capital gains tax (CGT) correctly is crucial to avoid overpaying or facing penalties. <strong>CGT selling buy-to-let property</strong> involves several steps and potential deductions that can significantly impact your final tax bill.</p>
+<p>Get the capital gains tax (CGT) calculation right on a buy-to-let sale and you pay tax only on the real profit. Get it wrong and you either overpay by missing allowable costs, or underpay and face a penalty when HMRC recalculates. The method itself is not complicated, but three things trip landlords up: which costs HMRC actually allows, how the gain pushes you between the 18% and 24% rates, and the 60-day reporting clock that starts at completion.</p>
 
-<p>This guide walks through the complete process of calculating CGT on your rental property sale, with real examples and current tax rates for 2026/27.</p>
+<p>This guide works through the full calculation with real figures, sets out exactly what you can and cannot deduct, and shows how the rate stacking decides your final bill for 2026/27.</p>
 
-<h2>What Is Capital Gains Tax on Buy-to-Let Property?</h2>
+<h2>What CGT applies to on a buy-to-let sale</h2>
 
-<p>Capital gains tax is charged on the profit you make when selling a buy-to-let property. The gain is calculated as the difference between your sale price and your acquisition cost, with various deductions and reliefs potentially reducing the taxable amount.</p>
+<p>Capital gains tax is charged on the profit you make when you dispose of a buy-to-let, not on the sale price. The disposal is normally the sale, but a gift, a transfer at undervalue to a connected person, or moving the property into a company all count too. For residential property the rates for 2026/27 are set by TCGA 1992 s.1H:</p>
 
-<p>For the 2026/27 tax year, CGT rates on residential property are:</p>
 <ul>
-<li><strong>18%</strong> if you're a basic-rate taxpayer</li>
-<li><strong>24%</strong> if you're a higher or additional-rate taxpayer</li>
-</ul>
-<p>Your CGT rate depends on your total income for the tax year, including the capital gain itself. This means even basic-rate taxpayers may pay the higher 24% rate if the gain pushes them into the higher-rate tax band.</p>
-
-<h2>Step-by-Step CGT Calculation Process</h2>
-
-<p>Calculating <strong>sell BTL capital gains</strong> involves a systematic approach. Follow these steps to determine your taxable gain.</p>
-
-<h3>Step 1: Determine Your Sale Proceeds</h3>
-<p>Your sale proceeds include the full sale price minus allowable selling costs. Deductible selling costs typically include:</p>
-<ul>
-<li>Estate agent fees</li>
-<li>Solicitor's fees</li>
-<li>Advertising costs</li>
-<li>Valuation fees</li>
-<li>Auctioneer's commission (if applicable)</li>
-</ul>
-<p><strong>Example:</strong> Property sold for £400,000, with estate agent fees of £6,000 and solicitor fees of £2,000. Sale proceeds = £400,000 - £8,000 = £392,000.</p>
-
-<h3>Step 2: Calculate Your Total Allowable Costs</h3>
-<p>Your total allowable costs are deducted from the sale proceeds to calculate the gain. They consist of three main elements:</p>
-<ol>
-<li><strong>Acquisition Cost:</strong> The original purchase price plus allowable purchase costs such as stamp duty, solicitor's fees for purchase, survey costs, and other professional fees related to the purchase.
-<strong>Example:</strong> Original purchase price £250,000, stamp duty £7,500, solicitor fees £1,500. Total acquisition cost = £259,000.</li>
-<li><strong>Enhancement Expenditure:</strong> Capital improvements that increased the property's value. This includes extensions, new kitchens and bathrooms, central heating installation, and significant structural improvements. Routine repairs and maintenance cannot be deducted.
-<strong>Example:</strong> Kitchen renovation £15,000, loft conversion £25,000. Total enhancements = £40,000.</li>
-</ol>
-
-<h3>Step 3: Calculate Your Gross and Taxable Gain</h3>
-<p>Gross capital gain = Sale proceeds - Total allowable costs (acquisition cost + enhancement expenditure).</p>
-<p><strong>CGT calculation example</strong> using figures above:<br>
-£392,000 (sale proceeds) - £259,000 (acquisition cost) - £40,000 (enhancements) = £93,000 gross gain.</p>
-<p>From this gross gain, subtract your annual CGT exemption (£3,000 for 2026/27) and any other applicable reliefs to find your taxable gain.<br>
-Taxable gain = £93,000 - £3,000 = £90,000.</p>
-
-<h3>Step 4: Determine Your CGT Rate and Calculate Tax Due</h3>
-<p>Your CGT rate depends on your total income (including the capital gain) for the tax year. For 2026/27:</p>
-<ul>
-<li><strong>Basic-rate threshold:</strong> Up to £50,270 total income</li>
-<li><strong>Higher-rate threshold:</strong> £50,271 and above</li>
-</ul>
-<p>If your regular income is £40,000 and you have a £90,000 capital gain, your total income becomes £130,000. This means:</p>
-<ul>
-<li>£10,270 of the gain (up to £50,270 total) taxed at 18%</li>
-<li>£79,730 of the gain taxed at 24%</li>
-</ul>
-<p>Total CGT = (£10,270 × 18%) + (£79,730 × 24%) = £1,849 + £19,135 = £20,984.</p>
-
-<h2>Special Reliefs and Considerations</h2>
-
-<h3>Principal Private Residence Relief</h3>
-<p>If you lived in the property before letting it out, you may qualify for <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a>. This can significantly reduce your CGT liability.</p>
-<p>The relief covers periods when the property was your main residence, plus the final 9 months of ownership (regardless of whether you lived there).</p>
-
-<h3>Lettings Relief</h3>
-<p>Lettings relief was largely abolished from April 2020, except for landlords who share occupation of the property with their tenants. Most buy-to-let landlords can no longer claim this relief.</p>
-
-<h3>Incorporation Relief</h3>
-<p>If you're considering transferring your property portfolio to a limited company, incorporation relief may defer CGT. However, this is complex and requires careful planning. Our guide to <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a> covers this in detail.</p>
-
-<h2>Reporting, Payment, and Record Keeping</h2>
-<p>When you sell a buy-to-let property, you have strict reporting obligations and must maintain detailed records.</p>
-<h3>Reporting and Payment Deadlines</h3>
-<ul>
-<li><strong>60 days:</strong> Report and pay CGT through the residential property CGT service</li>
-<li><strong>31 January:</strong> Include the disposal in your Self Assessment return</li>
-</ul>
-<p>Missing the 60-day deadline incurs automatic penalties, even if no tax is due. This reporting requirement applies to all residential property disposals, regardless of whether you make a gain or loss.</p>
-<h3>Record Keeping for CGT Calculations</h3>
-<p>Maintaining detailed records is essential for accurate CGT calculations. Keep documents for:</p>
-<ul>
-<li>Purchase contracts and completion statements</li>
-<li>All improvement invoices and receipts</li>
-<li>Estate agent and solicitor invoices for sale</li>
-<li>Stamp duty and survey certificates</li>
-<li>Any professional valuations</li>
-</ul>
-<p>HMRC can query CGT calculations up to 4 years after the tax year of disposal, so retain records for at least this period.</p>
-
-<h2>Capital Losses on Disposal</h2>
-
-<p>A capital loss arises when net disposal proceeds (sale price after incidental costs) are less than the base cost. Property capital losses can be set against gains on any chargeable asset, not just other property gains, but cannot be set against income.</p>
-
-<p><strong>In-year and brought-forward offset.</strong> In-year capital losses are set against gains arising in the same tax year BEFORE the annual exempt amount is applied (so they can be wasted against gains the AEA would otherwise cover). Brought-forward losses from earlier years are used only to the extent needed to reduce the year's net gain down to the AEA threshold, preserving the £3,000 AEA where possible.</p>
-
-<p><strong>The 4-year claim deadline.</strong> Per Taxes Management Act 1970 section 43 (and HMRC guidance at gov.uk/capital-gains-tax/losses), a capital loss must be CLAIMED to HMRC within four years of the end of the tax year in which the disposal occurred. If the claim window is missed, the loss is permanently unavailable for offset. Once validly claimed, there is no time limit on use: a claimed loss is carried forward indefinitely until absorbed against future gains. The distinction is critical and frequently confused. The four-year limit applies to the act of CLAIMING the loss, not to using a loss after it has been claimed.</p>
-
-<p>The claim is made on the SA108 Capital Gains pages of the Self Assessment return for the disposal year, or by separate written notification to HMRC outside Self Assessment. The 60-day CGT on UK property return is not itself a loss claim; the loss must be claimed via SA108 or by letter.</p>
-
-<h2>Common CGT Calculation Mistakes and Planning</h2>
-
-<h3>Common Mistakes</h3>
-<p>Many landlords make costly errors when calculating CGT on property sales:</p>
-<ul>
-<li><strong>Forgetting Allowable Costs:</strong> Failing to claim all allowable purchase and sale costs can result in overpaying CGT. Even small fees like property searches and bank transfer charges may be deductible.</li>
-<li><strong>Incorrectly Claiming Repairs:</strong> Only capital improvements can be deducted, not repairs or maintenance. A new boiler might qualify, but fixing an existing one typically won't.</li>
-<li><strong>Miscalculating the Tax Rate:</strong> Remember that the capital gain itself affects which tax band you fall into. Many landlords incorrectly apply their current income tax rate without considering the impact of the gain.</li>
-<li><strong>Missing the 60-Day Deadline:</strong> The separate CGT reporting requirement catches many landlords off guard. Even if you're not normally required to complete a tax return, property disposals must be reported within 60 days.</li>
+<li><strong>18%</strong> on the part of the gain falling within your remaining basic-rate band</li>
+<li><strong>24%</strong> on the part above the basic-rate threshold</li>
 </ul>
 
-<h3>Planning for Multiple Property Sales</h3>
-<p>If you're selling multiple properties, timing can significantly impact your CGT liability. Consider:</p>
+<p>These rates have applied since 30 October 2024. The single most misunderstood point is that the rate is not fixed by your salary alone: the gain itself is stacked on top of your income, so a sizeable gain can move a basic-rate taxpayer into the 24% band for most of the profit. The worked example below shows exactly how.</p>
+
+<h2>Step 1: Work out your net sale proceeds</h2>
+
+<p>Start with the gross sale price, then deduct the incidental costs of disposal. TCGA 1992 s.38 names these specifically: estate agent commission, the conveyancing solicitor's fees, advertising costs, and auctioneer's commission where the property is sold at auction. Surveyor and valuer fees connected with the sale also qualify.</p>
+
+<p><strong>Worked example.</strong> A landlord sells a former buy-to-let in Leeds for £400,000. Estate agent commission is £6,000 and conveyancing fees are £2,000.</p>
+
+<p>Net sale proceeds = £400,000 − £8,000 = <strong>£392,000</strong>.</p>
+
+<h2>Step 2: Add up your total base cost</h2>
+
+<p>Your base cost is everything you can deduct from the proceeds. It has three parts, all drawn from TCGA 1992 s.38.</p>
+
+<h3>Acquisition cost</h3>
+<p>The original purchase price plus the incidental costs of buying: the Stamp Duty Land Tax you paid (including the additional-dwelling surcharge if it applied), your purchase legal fees, and any survey or valuation costs on acquisition.</p>
+<p>In our example: purchase price £250,000 + SDLT £7,500 + legal fees £1,500 = <strong>£259,000</strong>.</p>
+
+<h3>Enhancement expenditure</h3>
+<p>Capital improvements that increased the value of the property, but only to the extent the improvement is <em>still reflected in the state or nature of the property at the date of sale</em>. That statutory test (s.38(1)(b)) is why a new extension counts but a kitchen you fitted and then ripped out before sale does not. Qualifying items include extensions, loft conversions, a first central-heating installation, and structural improvements.</p>
+<p>In our example: loft conversion £25,000 + kitchen renovation £15,000 = <strong>£40,000</strong>.</p>
+
+<h3>What you cannot include</h3>
+<p>The boundary between a deductible improvement and a non-deductible repair is where most disputes arise, so it is worth being precise.</p>
+
+<table>
+<thead>
+<tr><th>Deductible as capital improvement</th><th>Not deductible (revenue or excluded)</th></tr>
+</thead>
+<tbody>
+<tr><td>Building an extension or conservatory</td><td>Repainting and redecoration</td></tr>
+<tr><td>Loft or garage conversion adding a room</td><td>Replacing a broken boiler with a like-for-like one</td></tr>
+<tr><td>First installation of central heating or double glazing</td><td>Fixing the roof, guttering or damp</td></tr>
+<tr><td>Adding a new bathroom where there was none</td><td>Routine kitchen or bathroom refresh of an existing one</td></tr>
+<tr><td>Legal costs of defending or establishing title</td><td>Mortgage interest (relieved against rent via Section 24, not the gain)</td></tr>
+</tbody>
+</table>
+
+<p>Repairs and mortgage interest are revenue costs. Interest in particular is relieved against your rental profit through the <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">Section 24 basic-rate tax reducer</a>, and s.38 expressly bars it from the capital gains computation. Trying to deduct it twice is a common and easily spotted error.</p>
+
+<h2>Step 3: Calculate the gross gain</h2>
+
+<p>Subtract the total base cost from the net sale proceeds:</p>
+
+<p>£392,000 (net proceeds) − £259,000 (acquisition) − £40,000 (enhancements) = <strong>£93,000 gross gain</strong>.</p>
+
+<h2>Step 4: Deduct reliefs, losses and the annual exempt amount</h2>
+
+<p>Before tax is calculated, reduce the gross gain by anything that applies:</p>
+
 <ul>
-<li>Spreading sales across tax years to use multiple annual exemptions</li>
-<li>Realising losses in the same tax year to offset gains</li>
-<li>The impact of <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> on your reporting obligations</li>
+<li><strong>Private Residence Relief</strong> for any period the property was your only or main home, plus the final 9 months of ownership. If you never lived there, this is nil. See our guide to <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Private Residence Relief for landlords</a>.</li>
+<li><strong>Allowable capital losses</strong>, set against the gain (in-year losses first, then brought-forward losses down to the exemption).</li>
+<li><strong>The annual exempt amount</strong> of <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">£3,000 for 2026/27</a>, per individual.</li>
 </ul>
-<p>For landlords with substantial portfolios, professional advice becomes increasingly valuable. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help optimise your disposal strategy and ensure compliance.</p>
 
-<h2>Future Tax Changes and Professional Advice</h2>
+<p>Assuming our landlord never lived in the property and has no losses to carry, the taxable gain is:</p>
 
-<h3>Impact of Future Tax Changes</h3>
-<p>From April 2027, property income will face separate tax rates (22% basic, 42% higher, 47% additional rate). While this doesn't directly affect CGT, it may influence your decision on when to sell properties versus retaining them for income.</p>
-<p>Consider your overall property investment strategy alongside current and future tax implications. Our comprehensive guide to <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax</a> covers the broader tax landscape.</p>
+<p>£93,000 − £3,000 = <strong>£90,000 taxable gain</strong>.</p>
 
-<h3>Getting Professional Help</h3>
-<p>CGT calculations on property can be complex, particularly with multiple properties, mixed-use buildings, or historical ownership changes. Professional advice ensures you:</p>
+<h2>Step 5: Apply the right rate to each slice</h2>
+
+<p>This is the step landlords most often get wrong. The taxable gain sits on top of your taxable income for the year. The basic-rate threshold for 2026/27 is £50,270 of total taxable income. Only the part of the gain that still fits below that threshold is taxed at 18%; everything above it is taxed at 24%.</p>
+
+<p>Suppose the landlord has taxable income of £40,000 before the gain. That leaves £10,270 of basic-rate band unused (£50,270 − £40,000).</p>
+
+<table>
+<thead>
+<tr><th>Slice of the £90,000 gain</th><th>Rate</th><th>CGT</th></tr>
+</thead>
+<tbody>
+<tr><td>£10,270 (fills remaining basic-rate band)</td><td>18%</td><td>£1,848.60</td></tr>
+<tr><td>£79,730 (above the higher-rate threshold)</td><td>24%</td><td>£19,135.20</td></tr>
+<tr><td><strong>Total taxable gain £90,000</strong></td><td></td><td><strong>£20,983.80</strong></td></tr>
+</tbody>
+</table>
+
+<p>If the same landlord were already a higher-rate taxpayer, the whole £90,000 would be taxed at 24% (£21,600). If both spouses owned the property equally and each used a £3,000 exemption and a slice of basic-rate band, the combined bill would be materially lower again, which is why ownership splitting before a sale is worth planning. The mechanics are in our note on <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">transferring property to a spouse</a>.</p>
+
+<h2>Reliefs that reduce the gain in more detail</h2>
+
+<h3>Private Residence Relief and the let period</h3>
+<p>If the property was once your home, the relief is apportioned by the time it was your main residence against total ownership, plus the final 9 months which always qualify once the property has been your main home at some point. Lettings relief was withdrawn from April 2020 except where you share occupation with the tenant, so most pure buy-to-let landlords no longer get it.</p>
+
+<h3>Spousal transfers and the two exemptions</h3>
+<p>Transfers between spouses and civil partners living together happen on a no-gain, no-loss basis, so beneficial ownership can be moved across before completion. The result is two annual exempt amounts and two basic-rate bands taxed at 18%. The transfer must be a genuine outright gift of the beneficial interest; HMRC looks at substance, and where the legal title and beneficial split differ, a Form 17 election may be needed for the income side.</p>
+
+<h3>Incorporation relief is a deferral, not a saving</h3>
+<p>Moving a portfolio into a limited company is a disposal at market value for CGT. <a href="/blog/incorporation-and-company-structures/incorporation-holdover-relief-property">Section 162 incorporation relief</a> can defer the gain where a genuine property business is transferred wholly or partly for shares, but the gain is rolled into the base cost of the shares rather than wiped out, and there is usually an SDLT charge on the transfer. It is a restructuring decision for active portfolios, covered in our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a>, not a way to sell a single property tax-free.</p>
+
+<h2>Reporting and paying: the 60-day clock</h2>
+
+<p>Two separate obligations apply to a buy-to-let sale, and confusing them is what generates penalties.</p>
+
 <ul>
-<li>Claim all available reliefs and deductions</li>
-<li>Meet reporting deadlines</li>
-<li>Optimise your disposal strategy</li>
-<li>Maintain compliant records</li>
+<li><strong>Within 60 days of completion:</strong> file a CGT on UK property return and pay the tax due. This is a standalone return, separate from Self Assessment, and the clock runs from the completion date.</li>
+<li><strong>By the following 31 January:</strong> report the disposal again on your Self Assessment return, where the figures are finalised against your actual income for the year.</li>
 </ul>
-<p>The cost of professional advice often pays for itself through tax savings and compliance certainty. Consider the <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of a property accountant</a> against the potential benefits.</p>
-<p>For complex situations or valuable properties, getting calculations checked professionally can provide peace of mind and potentially identify additional tax savings you might have missed.</p>
+
+<p>Late-filing penalties apply automatically if the 60-day return is missed, even when the tax is eventually paid through Self Assessment. The full timetable and penalty position are in our guide to <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines on property sales</a>.</p>
+
+<h3>Records to keep</h3>
+<p>Keep the completion statements for both purchase and sale, all improvement invoices, the SDLT return, estate agent and solicitor invoices, and any professional valuations. HMRC can enquire into a CGT computation well after the disposal year, so retain the paperwork for at least six years from the end of the tax year of sale.</p>
+
+<h2>Capital losses: claim them in time</h2>
+
+<p>A capital loss arises where net disposal proceeds fall below the base cost. Property losses can be set against gains on any chargeable asset, not just other property, but never against income. In-year losses are set against the year's gains before the annual exempt amount is applied, so they can be partly wasted against gains the £3,000 would have covered anyway. Brought-forward losses are more efficient: they are used only down to the exemption, preserving the £3,000.</p>
+
+<p>The deadline that catches people out is the claim deadline. A loss must be claimed to HMRC within four years of the end of the tax year in which the disposal occurred (Taxes Management Act 1970 s.43). Miss that window and the loss is gone for good. Once validly claimed, there is no time limit on using it. The four-year limit is on the act of claiming, not on later use. The claim is made on the SA108 capital gains pages or by separate written notice; the 60-day return is not itself a loss claim.</p>
+
+<h2>How April 2027 changes the picture (and how it does not)</h2>
+
+<p>From 6 April 2027, property income in England, Wales and Northern Ireland is taxed at separate rates of 22% basic, 42% higher and 47% additional, enacted by Finance Act 2026 (Royal Assent 18 March 2026). Only Scotland is carved out for 2027/28. This is income tax on rental profit, not CGT, so the 18% and 24% disposal rates above are unaffected.</p>
+
+<p>It does change the hold-or-sell maths. With property income taxed slightly higher from 2027/28, the after-tax return on continuing to let can shift, which feeds into the timing of a disposal. Critically, the Section 24 finance-cost reducer rises in step to 22%, so no new basic-rate wedge opens for landlords financing through a mortgage. Our analysis of the <a href="/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales">2027 rates and CGT sales</a> sets out how the income-side change interacts with disposal timing.</p>
+
+<h2>Planning a disposal across more than one property</h2>
+
+<p>If you are selling more than one property, timing is a lever. Completing one sale before 6 April and the next after it splits the gains across two tax years and uses two £3,000 exemptions. Realising a loss-making sale in the same year as a gain offsets the two. And from April 2026 the wider <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> regime tightens record-keeping expectations for landlords above the threshold, which makes the clean cost records a CGT computation needs easier to assemble.</p>
+
+<p>For a portfolio, or for a property with mixed private and let use, complicated ownership history, or a borderline repair-versus-improvement question, the computation rewards getting the base cost and reliefs right before completion rather than after. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> works the disposal calculation, the 60-day return and the reliefs together so nothing allowable is left on the table.</p>
