@@ -49,6 +49,7 @@ type WebhookPayload = {
 // order. To drop a column, delete its line; to rename a label, edit it here.
 const FIELDS: { label: string; get: (r: LeadRecord) => string | undefined }[] = [
   { label: "Received", get: (r) => formatTimestamp(r.created_at) },
+  { label: "Submitted at", get: (r) => formatTimestamp(r.submitted_at) },
   { label: "Name", get: (r) => r.full_name },
   { label: "Email", get: (r) => r.email },
   { label: "Phone", get: (r) => r.phone },
@@ -57,6 +58,7 @@ const FIELDS: { label: string; get: (r: LeadRecord) => string | undefined }[] = 
   { label: "Message", get: (r) => r.message },
   { label: "Site", get: (r) => prettySource(r.source) },
   { label: "Submitted from", get: (r) => r.source_url },
+  { label: "Status", get: (r) => r.status },
   { label: "Lead ID", get: (r) => r.id },
 ];
 
@@ -100,8 +102,8 @@ function escapeHtml(value: string): string {
 function buildHtml(r: LeadRecord): string {
   const rows = FIELDS.map(({ label, get }) => {
     const raw = (get(r) ?? "").toString().trim();
-    if (!raw) return ""; // skip empty fields so the table stays tidy
-    const value = escapeHtml(raw).replace(/\n/g, "<br>");
+    // Show every column from the leads table; render blanks as "(none)".
+    const value = raw ? escapeHtml(raw).replace(/\n/g, "<br>") : "(none)";
     return `<tr>
       <td style="padding:8px 12px;border:1px solid #e2e8f0;background:#f8fafc;font-weight:600;color:#0f172a;white-space:nowrap;vertical-align:top;">${escapeHtml(label)}</td>
       <td style="padding:8px 12px;border:1px solid #e2e8f0;color:#0f172a;">${value}</td>
@@ -113,8 +115,8 @@ function buildHtml(r: LeadRecord): string {
   <body style="margin:0;padding:24px;background:#f1f5f9;font-family:Arial,Helvetica,sans-serif;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
       <tr><td>
-        <h2 style="margin:0 0 4px;color:#0f172a;font-size:18px;">New lead${r.full_name ? `: ${escapeHtml(r.full_name)}` : ""}</h2>
-        <p style="margin:0 0 16px;color:#475569;font-size:13px;">From the ${escapeHtml(prettySource(r.source) || "website")} site. Forward this email to the partner firm.</p>
+        <h2 style="margin:0 0 4px;color:#0f172a;font-size:18px;">New lead for ${escapeHtml(prettySource(r.source) || "website")}</h2>
+        <p style="margin:0 0 16px;color:#475569;font-size:13px;">Forward this email to Reflex Accounting</p>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-size:14px;">
           ${rows}
         </table>
@@ -127,9 +129,9 @@ function buildHtml(r: LeadRecord): string {
 function buildText(r: LeadRecord): string {
   const lines = FIELDS.map(({ label, get }) => {
     const raw = (get(r) ?? "").toString().trim();
-    return raw ? `${label}: ${raw}` : "";
-  }).filter(Boolean);
-  return `New lead${r.full_name ? `: ${r.full_name}` : ""}\n\n${lines.join("\n")}`;
+    return `${label}: ${raw || "(none)"}`;
+  });
+  return `New lead for ${prettySource(r.source) || "website"}\n\nForward this email to Reflex Accounting\n\n${lines.join("\n")}`;
 }
 
 // Health probe: confirms the route is deployed and whether env is wired,
