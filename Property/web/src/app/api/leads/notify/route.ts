@@ -175,7 +175,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "No record" }, { status: 400 });
   }
 
-  const to = process.env.LEADS_NOTIFY_TO || "jeff@emplifex.com";
+  const to = process.env.LEADS_NOTIFY_TO || "junaydmoughal@hotmail.co.uk";
   const subject = `New ${prettySource(r.source) || "website"} lead${r.full_name ? `: ${r.full_name}` : ""}`;
 
   try {
@@ -185,8 +185,8 @@ export async function POST(req: NextRequest) {
       subject,
       html: buildHtml(r),
       text: buildText(r),
-      // Replying to the notification reaches the lead directly.
-      ...(r.email ? { replyTo: r.email } : {}),
+      // No reply-to: the lead's address is never placed in the email headers,
+      // so the lead can never be contacted from this notification.
     });
     if (error) {
       console.error("leads/notify: resend error", error);

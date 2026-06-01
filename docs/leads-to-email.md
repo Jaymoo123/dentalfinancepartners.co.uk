@@ -5,6 +5,9 @@ row to `/api/leads/notify` on the Property site, which emails a pre-formatted HT
 table to the internal inbox. Open the email, forward it to the partner firm, done.
 No Supabase export, no spreadsheet.
 
+The lead is never emailed and their address is never placed in a reply-to header.
+The only recipient is the internal notification inbox.
+
 This runs independently of the Google Sheets sync (`/api/leads/sync`,
 `leads_to_sheets_trg`): separate trigger, separate endpoint, so one failing never
 affects the other.
@@ -31,7 +34,7 @@ line; to reorder, move it.
    - `RESEND_FROM_EMAIL` — from-address on a Resend-verified domain
      (default `leads@propertytaxpartners.co.uk`; must be verified in Resend).
    - `RESEND_FROM_NAME` — optional display name (default "Property Tax Partners Leads").
-   - `LEADS_NOTIFY_TO` — recipient inbox (default `jeff@emplifex.com`).
+   - `LEADS_NOTIFY_TO` — recipient inbox (default `junaydmoughal@hotmail.co.uk`).
    - `LEADS_NOTIFY_SECRET` — optional; falls back to the existing `LEADS_SYNC_SECRET`.
 
 2. **Deploy** the Property site so `/api/leads/notify` is live.
