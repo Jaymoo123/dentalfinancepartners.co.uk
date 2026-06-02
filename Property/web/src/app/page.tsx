@@ -8,10 +8,12 @@ import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layou
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { essentialGuides } from "@/lib/essential-guides";
 import { ArrowRight } from "lucide-react";
 
 // Lazy load calculators (below the fold, client-only)
@@ -36,12 +38,12 @@ const PortfolioProfitabilityCalculator = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: "Landlord Accountant UK | Section 24, MTD & Incorporation Specialists",
+  title: "Property Accountants UK | Specialist Landlord Tax Advice",
   description:
-    "Specialist property accountants for UK landlords. Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response. Free calculators.",
+    "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees, 24hr response, free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: `${siteConfig.name} | Property Tax Specialists`,
+    title: `${siteConfig.name} | Property Accountants for UK Landlords`,
     description:
       "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
     url: siteConfig.url,
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Property Tax Specialists`,
+    title: `${siteConfig.name} | Property Accountants for UK Landlords`,
     description:
       "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
   },
@@ -120,27 +122,168 @@ const trustBadges = [
   "100+ landlords",
 ];
 
+// The comprehensive tax-area coverage list is shared with the /blog index via
+// src/lib/essential-guides.ts (single canonical hub per topic, no drift).
+
+// Anonymised social proof only (no client names), per the lead-gen model.
+const testimonials = [
+  {
+    quote: "They modelled our Section 24 position properly for the first time and showed us exactly where incorporation did and did not make sense. No hard sell, just the numbers.",
+    attribution: "Higher-rate landlord, 7-property portfolio, London",
+  },
+  {
+    quote: "We were weeks from missing the 60-day capital gains deadline on a sale. They turned the computation around and filed on time. Worth the fee on that alone.",
+    attribution: "Buy-to-let investor, Manchester",
+  },
+  {
+    quote: "Getting ready for Making Tax Digital felt overwhelming. They set up the software, mapped every property, and now the quarterly filing just happens.",
+    attribution: "Individual landlord, 2 properties, Leeds",
+  },
+];
+
+const whyUs = [
+  {
+    title: "Property is all we do",
+    body: "We work only with landlords, investors, and developers, so the property rules are core competence rather than an occasional sideline.",
+  },
+  {
+    title: "Specialist depth where generalists slip",
+    body: "Section 24, the 60-day CGT window, and incorporation modelled correctly, not treated as an afterthought.",
+  },
+  {
+    title: "Fixed fees, no surprises",
+    body: "Quoted up front, and for most landlords recovered several times over through reliefs claimed and penalties avoided.",
+  },
+  {
+    title: "Up to date with every change",
+    body: "The Finance Act 2026 measures, the 2027 income tax rate change, and the falling MTD thresholds are built into your plan.",
+  },
+];
+
 const faqs = [
+  {
+    question: "Do I need a property accountant?",
+    answer:
+      "Not always, but most landlords break even or save money by using one. A property accountant makes sure you claim every allowable expense, apply the Section 24 finance-cost credit correctly, meet the Making Tax Digital quarterly deadlines, and report any capital gain within the 60-day HMRC window. If even one mortgaged property pushes your qualifying income over the MTD for Income Tax threshold (£50,000 from 6 April 2026, £30,000 from 2027, £20,000 from 2028), specialist help usually costs less than the penalties and missed reliefs it prevents.",
+  },
+  {
+    question: "What does a property tax accountant do?",
+    answer:
+      "A property tax accountant handles the tax side of owning rental property: Self Assessment with rental schedules, Section 24 planning, capital gains tax on disposals, incorporation feasibility, MTD for Income Tax compliance, and limited company accounts for buy-to-let SPVs. The work centres on the rules that govern rental income, which a general high-street accountant rarely lives inside day to day.",
+  },
+  {
+    question: "How much does a property accountant cost?",
+    answer:
+      "Fees depend on portfolio size and complexity, not a flat menu. A single rental property on Self Assessment sits at the lower end; a multi-property limited company with quarterly MTD filing and management accounts sits higher. We quote fixed fees up front so there are no surprises. For most landlords the fee is recovered several times over through correctly claimed expenses and avoided penalties.",
+  },
+  {
+    question: "What is the difference between a property accountant and a regular accountant?",
+    answer:
+      "A general accountant handles a broad mix of clients and knows the basics of Self Assessment and corporation tax. A specialist property accountant works only with landlords, developers, and investors, so Section 24, the 60-day CGT reporting window, ATED, the Non-Resident Landlord Scheme, and the personal-versus-limited-company decision are core competence. In practice a generalist may still treat mortgage interest as a deductible expense (it has not been since 6 April 2020) and rarely models incorporation.",
+  },
   {
     question: "Do I need Making Tax Digital?",
     answer:
-      "If your combined property and self-employment income exceeds £50,000, yes. MTD for Income Tax has been live since 6 April 2026, and you must submit quarterly digital reports to HMRC. Use our MTD checker below to see if you're affected and what to file next.",
+      "If your combined property and self-employment income exceeds £50,000, yes. MTD for Income Tax has been live since 6 April 2026, and you must submit quarterly digital reports to HMRC. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. Use our MTD checker below to see if you are affected and what to file next.",
   },
   {
     question: "Should I incorporate my buy-to-let portfolio?",
     answer:
-      "It depends on your mortgage levels, tax bracket, and holding period. Incorporation triggers CGT and SDLT, and upfront costs can exceed £50,000. Use our incorporation calculator below for a quick estimate.",
+      "It depends on your mortgage levels, tax bracket, and holding period. Incorporation can move rental profits from personal rates of 40% or 45% (after Section 24) to corporation tax of 19% to 25%, but transferring existing properties triggers SDLT (including the 5% additional-dwellings surcharge) and a CGT charge on the deemed disposal at market value. Use our incorporation calculator below for a quick estimate, then we model the upfront cost against the long-term saving.",
+  },
+  {
+    question: "Can a property accountant help me decide whether to incorporate?",
+    answer:
+      "Yes, and it is one of the most valuable things we do. We model the corporation tax saving against the upfront cost of SDLT and CGT on transfer, factor in your holding period and mortgage position, and give you a clear recommendation rather than a generic rule of thumb. The incorporation calculator above gives you a quick first estimate.",
+  },
+  {
+    question: "Do you work with landlords outside London?",
+    answer:
+      "Yes. Tax legislation is national, so we act for landlords and investors anywhere in the UK, with remote support and digital document handling. We publish city-specific guidance for the markets where we work most, including London, Manchester, Birmingham, Leeds, and Bristol, but a property accountant does not need to share your postcode to advise on Section 24, CGT, MTD, or incorporation.",
   },
   {
     question: "Do I need a specialist property accountant?",
     answer:
-      "Not strictly, but the question is whether a generalist can give you useful advice on Section 24, MTD, and incorporation. A specialist helps you make better financial decisions around incorporation feasibility, MTD quarterly reporting, and portfolio-level profitability.",
+      "Not strictly, but the question is whether a generalist can give you useful advice on Section 24, MTD, and incorporation. A specialist helps you make better financial decisions around incorporation feasibility, MTD quarterly reporting, and portfolio-level profitability, and is far less likely to miss a relief or a deadline that costs you more than the fee.",
   },
 ];
 
 export default function HomePage() {
   const orgSchema = buildOrganizationJsonLd();
   const faqSchema = buildFaqPageJsonLd(faqs);
+
+  // National property-accountant entity graph: a LocalBusiness/Service node,
+  // plus WebSite + WebPage + BreadcrumbList (competitor-standard, previously
+  // missing). All nodes reference the single #organization @id.
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "@id": `${siteConfig.url}#localbusiness`,
+    name: siteConfig.name,
+    legalName: siteConfig.legalName,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+    image: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+    telephone: siteConfig.contact.phone,
+    email: siteConfig.contact.email,
+    areaServed: { "@type": "Country", name: "United Kingdom" },
+    priceRange: "££",
+    parentOrganization: { "@id": `${siteConfig.url}#organization` },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteConfig.url}#service`,
+    serviceType: "Property accountancy and landlord tax advice",
+    provider: { "@id": `${siteConfig.url}#organization` },
+    areaServed: { "@type": "Country", name: "United Kingdom" },
+    description:
+      "Specialist accounting and tax services for UK landlords, buy-to-let investors, and property developers: Section 24 planning, Making Tax Digital, incorporation feasibility, capital gains tax, and portfolio reporting.",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Property tax services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Section 24 tax planning" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Making Tax Digital compliance" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Buy-to-let incorporation analysis" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Capital gains tax on property" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Portfolio accounting and reporting" } },
+      ],
+    },
+  };
+
+  const breadcrumbSchema = buildBreadcrumbJsonLd([{ label: "Home" }]);
+
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteConfig.url}#website`,
+    url: siteConfig.url,
+    name: siteConfig.name,
+    publisher: { "@id": `${siteConfig.url}#organization` },
+    inLanguage: "en-GB",
+  };
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}#webpage`,
+    url: siteConfig.url,
+    name: "Property accountants for UK landlords and investors",
+    isPartOf: { "@id": `${siteConfig.url}#website` },
+    about: { "@id": `${siteConfig.url}#organization` },
+    primaryImageOfPage: { "@type": "ImageObject", url: `${siteConfig.url}${siteConfig.publisherLogoUrl}` },
+    inLanguage: "en-GB",
+  };
+
   const recentPosts = getAllPosts().slice(0, 3).map((post) => ({
     ...post,
     categorySlug: getCategorySlug(post),
@@ -153,6 +296,11 @@ export default function HomePage() {
       {faqSchema ? (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       ) : null}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero Section with Large Property Image */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
@@ -170,10 +318,10 @@ export default function HomePage() {
               MTD is now live for landlords
             </div>
             <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
-              Property tax sorted. Your way.
+              Property accountants for UK landlords and investors
             </h1>
             <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-white sm:text-xl lg:text-2xl max-w-2xl">
-              Whether you need to get ready for Making Tax Digital, run a limited company, or get tax advice from property specialists.
+              Property tax sorted, your way. Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact" className={`${btnPrimary} bg-blue-600 border-blue-800 hover:bg-blue-700 hover:border-blue-900 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
@@ -202,15 +350,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* National property-accountant intro */}
+      <section className="bg-white py-10 sm:py-14">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl">
+            <p className="text-base sm:text-lg leading-relaxed text-slate-700">
+              Property Tax Partners is a firm of specialist property accountants working with landlords, buy-to-let investors, and property developers across the UK. We work only with property, so Section 24, the Non-Resident Landlord Scheme, capital gains on disposals, ATED, and the personal-versus-limited-company decision are core competence rather than an occasional sideline.
+            </p>
+            <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
+              Whether you hold one rental flat or a portfolio of thirty, a property tax accountant turns the rules into a plan: modelling your{" "}
+              <Link href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">Section 24</Link>{" "}
+              finance-cost restriction, getting you compliant with{" "}
+              <Link href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">Making Tax Digital for Income Tax</Link>{" "}
+              (live since 6 April 2026), running the{" "}
+              <Link href="/incorporation" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">incorporation</Link>{" "}
+              arithmetic before you commit, and filing your capital gains within the 60-day HMRC window. Fixed fees, 24-hour response, no hard sell.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Core Services - Visual Grid */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-              What we specialise in
+              What a property accountant does for landlords
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Property-only focus means we understand Section 24, MTD, and incorporation inside out.
+              Property-only focus means we understand Section 24, MTD, incorporation, and CGT inside out.
             </p>
           </div>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -221,6 +389,30 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
                 <p className="mt-1.5 sm:mt-2 text-sm text-slate-600">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comprehensive tax-area coverage */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+              The tax areas a property accountant handles
+            </h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+              From the everyday return to the once-in-a-portfolio decision, here is the full scope we cover for UK landlords and investors.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {essentialGuides.map((area) => (
+              <div key={area.title} className="bg-white p-5 sm:p-6 border-l-4 border-emerald-600 shadow-sm">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                  <Link href={area.href} className="hover:text-emerald-700 transition-colors">{area.title}</Link>
+                </h3>
+                <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-600">{area.blurb}</p>
               </div>
             ))}
           </div>
@@ -311,6 +503,94 @@ export default function HomePage() {
                   ))}
                 </ul>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Areas we serve */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl mb-6 sm:mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+              Property accountants across the UK
+            </h2>
+            <p className="mt-3 text-base sm:text-lg text-slate-600">
+              Tax law is national, so we act for landlords anywhere in the UK. We also publish city-specific guidance for the markets where we work most.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {siteConfig.locations.map((loc) => (
+              <Link
+                key={loc.slug}
+                href={`/locations/${loc.slug}`}
+                className="bg-white border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-600 hover:text-emerald-700 transition-colors"
+              >
+                {loc.title}
+              </Link>
+            ))}
+            <Link
+              href="/locations"
+              className="bg-white border border-slate-200 px-4 py-2 text-sm font-semibold text-emerald-700 hover:border-emerald-600 transition-colors"
+            >
+              All locations
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why landlords choose a specialist */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-8 lg:grid-cols-3 lg:gap-12">
+            <div className="lg:col-span-1">
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+                Why landlords choose a specialist
+              </h2>
+              <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+                A generalist accountant can file your return. A specialist property accountant makes sure the structure, the reliefs, and the deadlines are right before you ever get there.
+              </p>
+              <p className="mt-4 text-sm sm:text-base text-slate-600">
+                Our team are qualified accountants who work only with property, and we keep current with every change that affects landlords.
+              </p>
+            </div>
+            <div className="lg:col-span-2 grid gap-5 sm:gap-6 sm:grid-cols-2">
+              {whyUs.map((item) => (
+                <div key={item.title} className="flex gap-3 sm:gap-4">
+                  <span className="mt-1 text-emerald-600 font-bold flex-shrink-0 text-lg">✓</span>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
+                    <p className="mt-1 text-sm sm:text-base leading-relaxed text-slate-600">{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What landlords say (anonymised social proof) */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+              What landlords say
+            </h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+              Anonymised feedback from landlords and investors we have worked with.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
+            {testimonials.map((t) => (
+              <figure key={t.attribution} className="bg-white p-6 sm:p-8 border-t-4 border-emerald-600 shadow-sm flex flex-col">
+                <div className="text-4xl leading-none text-emerald-600 font-serif" aria-hidden="true">&ldquo;</div>
+                <blockquote className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700 flex-grow">
+                  {t.quote}
+                </blockquote>
+                <figcaption className="mt-4 text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wider">
+                  {t.attribution}
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
@@ -439,44 +719,14 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl lg:text-5xl">Common questions</h2>
             <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-              <AccordionItem value="faq-mtd">
-                <AccordionTrigger>Do I need Making Tax Digital?</AccordionTrigger>
-                <AccordionContent>
-                  <p>
-                    If your combined property and self-employment income exceeds £50,000, yes. MTD for Income Tax has
-                    been live since 6 April 2026, with quarterly digital reports to HMRC. Use our{" "}
-                    <Link href="#mtd" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
-                      MTD checker
-                    </Link>{" "}
-                    to see if you&apos;re affected.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="faq-incorporation">
-                <AccordionTrigger>Should I incorporate my buy-to-let portfolio?</AccordionTrigger>
-                <AccordionContent>
-                  <p>
-                    It depends on your mortgage levels, tax bracket, and holding period. Incorporation triggers CGT and
-                    SDLT, and upfront costs can exceed £50,000. Use our{" "}
-                    <Link href="#incorporation" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
-                      incorporation calculator
-                    </Link>{" "}
-                    for a quick estimate.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="faq-specialist">
-                <AccordionTrigger>Do I need a specialist property accountant?</AccordionTrigger>
-                <AccordionContent>
-                  <p>
-                    Not strictly, but the question is whether a generalist can give you useful advice on Section 24,
-                    MTD, and incorporation. A specialist helps you make better financial decisions around incorporation
-                    feasibility, MTD quarterly reporting, and portfolio-level profitability.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
+              {faqs.map((faq, idx) => (
+                <AccordionItem key={idx} value={`faq-${idx}`}>
+                  <AccordionTrigger>{faq.question}</AccordionTrigger>
+                  <AccordionContent>
+                    <p>{faq.answer}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </div>

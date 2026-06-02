@@ -6,17 +6,18 @@ import { getAllPosts, getAllCategories, getCategorySlug, calculateReadTime } fro
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
+import { essentialGuides } from "@/lib/essential-guides";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blog | Property Tax Insights for UK Landlords",
   description:
-    "Property tax articles for UK landlords — Section 24, MTD, incorporation, portfolio management. Written by specialist property accountants.",
+    "Property tax guides for UK landlords: Section 24, MTD, capital gains tax, incorporation, SDLT, inheritance tax, and VAT. Written by specialist property accountants.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: "Blog | Property Tax Insights for UK Landlords",
     description:
-      "Property tax articles for UK landlords — Section 24, MTD, incorporation, portfolio management. Written by specialist property accountants.",
+      "Property tax guides for UK landlords: Section 24, MTD, capital gains tax, incorporation, SDLT, inheritance tax, and VAT. Written by specialist property accountants.",
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog | Property Tax Insights for UK Landlords",
     description:
-      "Property tax articles for UK landlords — Section 24, MTD, incorporation, portfolio management. Written by specialist property accountants.",
+      "Property tax guides for UK landlords: Section 24, MTD, capital gains tax, incorporation, SDLT, inheritance tax, and VAT. Written by specialist property accountants.",
   },
 };
 
@@ -68,8 +69,39 @@ export default function BlogIndexPage() {
             />
             <h1 className="mt-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">Property tax insights</h1>
             <p className="mt-4 text-xl text-white">
-              Practical notes on tax, accounts, and property economics — written for landlords, not generic SMEs.
+              Practical notes on tax, accounts, and property economics, written for landlords, not generic SMEs.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-2">
+              Start here: essential guides
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 mb-8">
+              The canonical guide for each major property tax topic. Start with these, then dig into the full library below.
+            </p>
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {essentialGuides.map((guide) => (
+                <Link
+                  key={guide.href}
+                  href={guide.href}
+                  className="group block bg-slate-50 border-l-4 border-emerald-600 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all"
+                >
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    {guide.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{guide.blurb}</p>
+                  <div className="mt-3 flex items-center text-emerald-600 font-medium text-sm">
+                    Read the guide
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

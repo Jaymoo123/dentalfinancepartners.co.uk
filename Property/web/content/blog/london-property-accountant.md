@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Specialist Accountant London: BTL Tax Help 2026"
+metaTitle: "London Property Accountant: BTL Tax Help for Landlords 2026"
 metaDescription: "What a specialist London property accountant does: Section 24, SDLT, ATED, MTD software, CGT, incorporation, and inheritance tax. Free 20-minute review."
 altText: "Professional London property accountant reviewing rental property tax returns and financial documents"
 image: ""
@@ -37,7 +37,7 @@ faqs:
     answer: "Yes. Most central and inner London boroughs run additional or selective licensing schemes. Tower Hamlets, Newham, Brent, Croydon, Hackney, Waltham Forest, and Southwark all have wide-area schemes. Licensing fees, typically £500-£1,500 per property for five years, are revenue expenses for tax purposes and deductible against rental income. Failing to obtain a required licence is a strict-liability offence under the Housing Act 2004 (criminal conviction plus rent repayment order of up to 2 years for the tenant), and HMRC will not allow loss relief for fines or penalties."
   - question: "When should I switch property accountants?"
     answer: "Switch if your current adviser has not modelled your post-Section-24 personal vs limited company position, has not raised MTD for ITSA registration before April 2026 (or April 2027 once the £30,000 threshold bites), still talks about a 3% SDLT surcharge (which became 5% on 31 October 2024) or a £6,000 CGT annual exempt amount (which became £3,000 in 2024/25), or treats your portfolio as four separate tax returns rather than a single planning unit. London portfolios above £1.5m of gross value almost always justify a specialist adviser over a high-street generalist."
-  - question: "What is the difference between a property specialist accountant and a general accountant?"
+  - question: "What is the difference between a London property accountant and a general accountant?"
     answer: "A general accountant handles a broad mix of clients and knows the basics of Self Assessment and corporation tax, but rarely works inside the rules that govern rental income. A property specialist accountant works exclusively with landlords, developers, and investors, so Section 24, capital gains on disposals, ATED, the Non-Resident Landlord Scheme, and the personal-versus-limited-company decision are core competence. The practical difference shows up in three places: a generalist may still treat mortgage interest as a deductible expense, may miss the 60-day CGT reporting window, and rarely models incorporation, whereas a specialist gets all three right by default."
   - question: "What qualifications should a property specialist accountant in London have?"
     answer: "Look for membership of a recognised professional body, such as the Association of Taxation Technicians (ATT), Chartered Tax Adviser (CTA), the Institute of Chartered Accountants in England and Wales (ICAEW), or the Association of Chartered Certified Accountants (ACCA). Subscriptions to bodies on HMRC's approved list (List 3) are tax-deductible for the adviser, so a genuine specialist keeps their qualifications current. Beyond the letters after their name, ask how much of their practice is property-focused and what types of property they handle, since a true specialist deals with buy-to-let, HMO, commercial, and development clients day in and day out."
@@ -53,6 +53,8 @@ faqs:
 
 <p>This page sets out the issues that actually matter for London landlords and investors in 2026/27 with worked figures sized to the central-London market. It is the investor-focused companion to our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a London property accountant</a> guide.</p>
 
+<p>For landlords outside the capital, see our main <a href="/">property accountants</a> page for UK-wide Section 24, MTD, and incorporation advice.</p>
+
 <h2>Why London Buy-to-Let Is Taxed Differently in Practice</h2>
 
 <p>Tax law is national. The way it lands in London is local. Three structural features push the average London buy-to-let into a different tax position than the same gross rent would face in, say, Wolverhampton or Swansea.</p>
@@ -65,7 +67,7 @@ faqs:
 
 <p>Each of these creates a planning lever, and each is a place where a specialist saves more in tax than the fee they charge.</p>
 
-<h2>Property Specialist Accountant vs High-Street Generalist</h2>
+<h2>London Property Accountant vs High-Street Generalist</h2>
 
 <p>The phrase people search for most is <strong>property specialist accountant</strong>, and the contrast with a high-street generalist is the whole reason the search exists. A general practice accountant handles a broad mix of clients, from cafes to consultancies, and knows the basics of Self Assessment and corporation tax. They rarely live inside the rules that govern rental income, which is exactly where a property accountant specialist earns their keep.</p>
 
