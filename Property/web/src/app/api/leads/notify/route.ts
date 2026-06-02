@@ -36,6 +36,9 @@ type LeadRecord = {
   source?: string;
   source_url?: string;
   status?: string;
+  consent_given?: boolean;
+  consent_text?: string;
+  consent_at?: string;
 };
 
 type WebhookPayload = {
@@ -65,6 +68,7 @@ const DETAIL_FIELDS: DetailField[] = [
   { label: "Source page", get: (r) => r.source_url, kind: "url" },
   { label: "Submitted at", get: (r) => formatTimestamp(r.submitted_at) },
   { label: "Status", get: (r) => r.status, kind: "pill" },
+  { label: "Consent", get: (r) => (r.consent_given ? "Data-sharing agreed" : undefined) },
 ];
 
 function secretsMatch(provided: string, expected: string): boolean {

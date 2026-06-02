@@ -34,6 +34,7 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
+  const [consent, setConsent] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -43,6 +44,8 @@ export function LeadForm({
 
   const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
   const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
+
+  const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -54,19 +57,21 @@ export function LeadForm({
 
     if (fullName.length < 2) errs.fullName = "Enter your name.";
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
-    
+
     // Phone: must have at least 10 digits and only allowed chars
     if (!ukPhoneRe.test(phone)) {
       errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123 or +44 20 1234 5678";
     } else if (!hasMinDigits(phone, 10)) {
       errs.phone = "Enter at least 10 digits.";
     }
-    
+
     if (!role) errs.role = "Tell us whether you are an associate, owner, or group.";
 
     if (message.length > 0 && message.length < 10) {
       errs.message = "If you add a note, a sentence or two is enough — but not just a word or two.";
     }
+
+    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
 
     return errs;
   }, []);
@@ -99,6 +104,9 @@ export function LeadForm({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
+      consent_given: consent,
+      consent_text: consentText,
+      consent_at: new Date().toISOString(),
     };
 
     try {
@@ -135,6 +143,7 @@ export function LeadForm({
 
       setStatus("success");
       form.reset();
+      setConsent(false);
       if (redirectOnSuccess) {
         router.push("/thank-you");
       }
@@ -287,6 +296,33 @@ export function LeadForm({
         ) : null}
       </div>
 
+      <div>
+        <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-[var(--muted)]">
+          <input
+            id="consent"
+            name="consent"
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--accent)]"
+            aria-invalid={fieldErrors.consent ? "true" : "false"}
+            aria-describedby={fieldErrors.consent ? "err-consent" : undefined}
+          />
+          <span>
+            I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our{" "}
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--accent)] underline">
+              Privacy Policy
+            </a>
+            .
+          </span>
+        </label>
+        {fieldErrors.consent ? (
+          <p id="err-consent" className="mt-1 text-sm text-red-700">
+            {fieldErrors.consent}
+          </p>
+        ) : null}
+      </div>
+
       {status === "error" && errorMessage ? (
         <div
           className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-900"
@@ -298,13 +334,13 @@ export function LeadForm({
 
       <button
         type="submit"
-        disabled={status === "loading"}
+        disabled={status === "loading" || !consent}
         className={`${btnPrimary} w-full min-w-0 sm:min-w-[12rem]`}
       >
         {status === "loading" ? "Sending…" : submitLabel}
       </button>
 
-      <p className="text-xs leading-relaxed text-[var(--muted)]">We do not share your details with third parties.</p>
+      <p className="text-xs leading-relaxed text-[var(--muted)]">We store your details securely.</p>
     </form>
   );
 }

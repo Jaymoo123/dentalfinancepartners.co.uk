@@ -33,6 +33,7 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
+  const [consent, setConsent] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -41,6 +42,8 @@ export function LeadForm({
   }, []);
 
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
+
+  const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -66,6 +69,8 @@ export function LeadForm({
     if (message.length > 0 && message.length < 10) {
       errs.message = "Add a sentence or two if you have a specific question.";
     }
+
+    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
 
     return errs;
   }, []);
@@ -98,6 +103,9 @@ export function LeadForm({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
+      consent_given: consent,
+      consent_text: consentText,
+      consent_at: new Date().toISOString(),
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);
@@ -122,6 +130,7 @@ export function LeadForm({
 
     setStatus("success");
     form.reset();
+    setConsent(false);
 
     if (redirectOnSuccess) {
       setTimeout(() => {
@@ -252,6 +261,33 @@ export function LeadForm({
         )}
       </div>
 
+      <div>
+        <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-slate-600">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-0.5 h-4 w-4 shrink-0 accent-emerald-600"
+            aria-invalid={!!fieldErrors.consent}
+            aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
+          />
+          <span>
+            I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our{" "}
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
+              Privacy Policy
+            </a>
+            .
+          </span>
+        </label>
+        {fieldErrors.consent && (
+          <p id="consent-error" className="mt-1.5 text-xs font-medium text-red-600">
+            {fieldErrors.consent}
+          </p>
+        )}
+      </div>
+
       {errorMessage && (
         <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
           <p className="text-sm font-medium text-red-800">{errorMessage}</p>
@@ -268,14 +304,14 @@ export function LeadForm({
 
       <button
         type="submit"
-        disabled={status === "loading" || status === "success"}
+        disabled={status === "loading" || status === "success" || !consent}
         className={`${btnPrimary} w-full`}
       >
         {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : submitLabel}
       </button>
 
       <p className="text-xs leading-relaxed text-slate-500">
-        We respond within 24 hours. Your details are stored securely and never shared.
+        We respond within 24 hours and store your details securely.
       </p>
     </form>
   );

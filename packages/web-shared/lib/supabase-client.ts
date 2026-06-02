@@ -13,6 +13,12 @@ export interface LeadSubmission {
   source: string;
   source_url: string;
   submitted_at: string;
+  // Mandatory data-sharing consent captured by every lead form. consent_text is
+  // the exact disclosure the user ticked (firm name varies per site); consent_at
+  // is when they agreed. Required so a form cannot submit a lead without it.
+  consent_given: boolean;
+  consent_text: string;
+  consent_at: string;
 }
 
 export async function submitLead(
