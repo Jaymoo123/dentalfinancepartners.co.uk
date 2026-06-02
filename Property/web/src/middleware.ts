@@ -438,7 +438,6 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "section-24-tax-calculator-annual-cost": "/blog/section-24-and-tax-relief/section-24-calculator",
   "section-24-vs-incorporation-tax-savings": "/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax",
   "senior-property-accountant-london": "/blog/property-accountant-services/property-accountant-jobs-uk",
-  "should-i-incorporate-buy-to-let-portfolio-2026": "/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio",
   "stamp-duty-buy-to-let-surcharge-explained": "/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge",
   "uk-property-accountants-london-expert-services": "/blog/property-accountant-services/london-property-accountant",
   "when-to-incorporate-property-portfolio-timing": "/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio",
