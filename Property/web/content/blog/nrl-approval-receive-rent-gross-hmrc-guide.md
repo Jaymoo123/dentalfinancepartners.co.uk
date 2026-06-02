@@ -3,29 +3,53 @@ title: "How to Apply for NRL Gross Approval Using the HMRC NRL1 Form"
 slug: "nrl-approval-receive-rent-gross-hmrc-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-06-02"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-06-02"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
-metaTitle: "NRL1 Form: Apply to Receive UK Rent Gross (HMRC Guide)"
-metaDescription: "How non-resident landlords use the HMRC NRL1 form to receive UK rent gross instead of 20% deducted: eligibility, the steps, timescales and reclaiming tax."
+metaTitle: "NRL1 Form: Apply to Receive UK Rent Gross (HMRC)"
+metaDescription: "How to use the HMRC NRL1 form to receive UK rent gross instead of 20% deducted: apply online or by post, where to send it, timescales and reclaiming tax."
 altText: "HMRC NRL1 form application process for non-resident landlords to receive UK rental income gross without 20% tax deducted"
 image: ""
-h1: "How to Apply for NRL Gross Approval Using the HMRC NRL1 Form"
-summary: "Non-resident landlords can apply for gross-payment approval using the HMRC NRL1 form so they receive UK rent in full and settle tax through Self Assessment, instead of having 20% deducted at source by a letting agent or tenant. This guide walks through the eligibility gate, the form sections, timescales and quarter-start backdating, and how to reclaim tax already withheld."
+h1: "NRL1 Form: How to Apply for Gross Approval to Receive UK Rent Without Tax Deducted"
+summary: "Non-resident landlords use the HMRC NRL1 form to receive UK rent gross and settle tax through Self Assessment, instead of having 20% deducted at source by a letting agent or tenant. This guide covers who qualifies, how to apply online or by post, where to send the paper form, what the approval reference number does, the timescales and quarter-start backdating, where NRL tax deducted goes on your Self Assessment return, and how to reclaim tax already withheld."
 schema: ""
+howToSteps:
+  - name: "Check you are within the scheme"
+    text: "Confirm your usual place of abode is outside the UK (HMRC treats living abroad for six months or more in a tax year as the practical trigger). This is the scheme test, separate from the Statutory Residence Test."
+  - name: "Get your UK tax affairs up to date"
+    text: "File any outstanding Self Assessment returns, pay any tax due and clear penalties before applying. HMRC only grants gross-payment approval where your tax affairs are up to date and expected to stay that way."
+  - name: "Gather your details"
+    text: "Have your name, your overseas address, your National Insurance number if you have one, your Unique Taxpayer Reference if already in Self Assessment, the full UK address of every property you let, and each letting agent's name and address."
+  - name: "Choose online or paper"
+    text: "Apply through HMRC's online NRL1 service, or download, print and post form NRL1. If you want an accountant to act for you, use the paper form so you can attach agent authorisation (form 64-8); the online service does not support agent authorisation."
+  - name: "Submit the form"
+    text: "Complete form NRL1 (NRL1i for individuals) and submit it. The paper form is posted to HMRC at Charities, Savings and International 1, HM Revenue and Customs, BX9 1AU, United Kingdom. Make sure every name, address and reference matches HMRC's records exactly."
+  - name: "Wait for approval and the reference number"
+    text: "HMRC usually decides within around six weeks. Approval comes with an approval (reference) number and is normally backdated to the first day of the quarter in which HMRC received your application."
+  - name: "Give your agent or tenant the approval number"
+    text: "Pass the approval reference to each letting agent (or to a tenant who must operate the scheme) so they stop deducting 20% and pay you the rent in full from then on."
 faqs:
   - question: "What is the NRL1 form?"
     answer: "The NRL1 (in its current interactive version, NRL1i) is the HMRC application an individual non-resident landlord uses to receive UK rental income gross, without basic-rate tax deducted at source. Once HMRC approves it, your letting agent or tenant pays you the full rent and you account for the tax yourself through Self Assessment. Companies use form NRL2 and trustees use form NRL3."
+  - question: "Can you do the NRL1 form online?"
+    answer: "Yes. You can apply through HMRC's online NRL1 service using a Government Gateway account, or you can download, print and post the paper NRL1 form. The one exception: if you want a tax agent or accountant to act for you, HMRC's guidance is not to use the online service. In that case you apply on paper and attach the Authorising your agent form (64-8)."
+  - question: "Where do I send the NRL1 form?"
+    answer: "Post the completed paper NRL1 form to Charities, Savings and International 1, HM Revenue and Customs, BX9 1AU, United Kingdom. BX9 1AU is HMRC's central handling address and does not need a street name. If you are applying with an accountant, include the signed 64-8 agent authorisation in the same envelope. Always check the address printed on the current version of the form before posting."
   - question: "How do I apply for NRL gross approval?"
-    answer: "Apply using form NRL1 (NRL1i). You can apply through HMRC's online service, or print and post the form. You will need your name, your address outside the UK, your National Insurance number if you have one, your Unique Taxpayer Reference if you are already in Self Assessment, the addresses of your UK rental properties, and your letting agent details. HMRC approves the application where your UK tax affairs are up to date and you expect to keep them up to date."
+    answer: "Apply using form NRL1 (NRL1i). You can apply through HMRC's online service or print and post the form. You will need your name, your address outside the UK, your National Insurance number if you have one, your Unique Taxpayer Reference if you are already in Self Assessment, the addresses of your UK rental properties, and your letting agent details. HMRC approves the application where your UK tax affairs are up to date and you expect to keep them up to date."
+  - question: "Can I apply for gross NRL status if I already do a Self Assessment return?"
+    answer: "Yes, and being in Self Assessment usually helps. Gross approval and Self Assessment work together: approval stops the 20% deduction at source, and you then declare the rent and pay the correct tax through your annual return. If you already file, give your Unique Taxpayer Reference on the NRL1 so HMRC can match the application to your record, which tends to speed up the check."
+  - question: "How do I get my NRL approval reference number from HMRC?"
+    answer: "The approval (reference) number is issued by HMRC when it approves your NRL1, in the approval notice it sends you. You do not request it separately. Once you have it, give it to each letting agent or to any tenant who has to operate the scheme so they can switch you to gross payment. Keep the approval notice safe, because the agent needs the reference on file to stop deducting."
+  - question: "How can I find out if I have submitted an NRL1 form to HMRC?"
+    answer: "If you applied online, your Government Gateway account shows the submission. If you posted the paper form and are unsure it arrived, contact HMRC's non-resident landlords team, quoting your name, National Insurance number or Unique Taxpayer Reference and the date you sent it. Keep proof of posting for paper applications. If weeks pass with no acknowledgement, follow up rather than assume it is in the queue."
   - question: "How long does NRL1 approval take?"
     answer: "There is no fixed statutory deadline, but HMRC usually decides within around six weeks. It can take longer if HMRC needs to check your tax history or asks for more information. Importantly, when approval is granted it is normally backdated to the first day of the quarter in which HMRC received your application, so tax over-deducted in that quarter can be recovered."
-  - question: "Is the NRL1 form online or paper?"
-    answer: "Both. You can apply through HMRC's online service or download, print and post the NRL1 form. If you want a tax agent or accountant to act for you, you generally cannot use the online service: you must apply on the paper form and send it in with a completed agent authorisation (form 64-8)."
-  - question: "Can I use the online NRL1 service if I have a tax agent?"
-    answer: "No. HMRC's guidance is that you should not use the online service if you want to authorise a tax agent to act on your behalf. In that case you complete the paper NRL1 form and send it to HMRC together with the Authorising your agent form (64-8)."
-  - question: "What happens to tax deducted before NRL approval?"
-    answer: "Any basic-rate tax your agent or tenant withheld before approval is not lost. Because approval is normally backdated to the start of the quarter in which HMRC received your application, tax wrongly withheld in that quarter can be repaid. Tax deducted across the wider tax year is credited against your final Self Assessment liability, and if more was withheld than you owe, HMRC repays the difference."
+  - question: "Where do I enter NRL tax deducted on my Self Assessment return?"
+    answer: "Report your UK rental income and allowable expenses on the UK property pages (form SA105) of your Self Assessment return. The basic-rate tax your agent or tenant deducted under the scheme is entered as tax already deducted, so it is credited against your final liability for the year. Use the NRL6 year-end certificate your agent or tenant gives you for the exact figure. If more was deducted than you owe, HMRC repays the difference after you file."
   - question: "Can I reclaim over-deducted NRL tax?"
     answer: "Yes. Where more tax has been deducted under the scheme than you actually owe, you reclaim it. Within Self Assessment the deducted tax is set against your liability and any excess is refunded after you file. For amounts that fall outside that, a non-resident landlord can make a repayment claim to HMRC directly. Keep the year-end certificate (NRL6) your agent or tenant gives you, as it evidences the tax deducted."
   - question: "Does NRL approval backdate?"
@@ -40,11 +64,11 @@ faqs:
     answer: "Gross-payment approval does not expire on a fixed date, but it is not unconditional. HMRC can withdraw it if your tax affairs slip, for example if you stop filing or build up tax debts. If approval is withdrawn, your agent or tenant must resume deducting basic-rate tax until you are reinstated."
   - question: "What is the usual place of abode test?"
     answer: "For the Non-resident Landlords Scheme you are a non-resident landlord if your usual place of abode is outside the UK. HMRC's working guidance treats living abroad for six months or more in a year as the practical trigger. This is a scheme-specific test and is broader than, and separate from, the Statutory Residence Test used for your overall tax residence."
-  - question: "Do treaty non-residents still need NRL1?"
+  - question: "Do treaty non-residents still need the NRL1?"
     answer: "Yes. The Non-resident Landlords Scheme is a UK statutory withholding mechanism, not a treaty relief. Even if a double tax treaty resolves your residence to another country, a UK letting agent or tenant must still deduct basic-rate tax on your rent unless you hold gross-payment approval. To receive your rent gross you still apply with the NRL1 form."
 ---
 
-<p>If you live abroad and let out property in the UK, your letting agent or tenant is generally required to deduct basic-rate tax (20%) from your rent before they pay you. Gross-payment approval, applied for using HMRC's <strong>NRL1 form</strong>, removes that deduction: you receive the full rent and account for the tax yourself through Self Assessment. This guide is the specialist walkthrough of that application, from the eligibility gate to the form sections, the timescales, and how to recover tax already withheld.</p>
+<p>If you live abroad and let out property in the UK, your letting agent or tenant is generally required to deduct basic-rate tax (20%) from your rent before they pay you. Gross-payment approval, applied for using HMRC's <strong>NRL1 form</strong>, removes that deduction: you receive the full rent and account for the tax yourself through Self Assessment. This guide is the specialist walkthrough of that application, from the eligibility gate to completing and posting the form, the timescales, the approval reference number, where the tax deducted goes on your return, and how to recover tax already withheld.</p>
 
 <p>For a broader overview of who counts as a non-resident landlord and how the scheme works end to end, see our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">complete guide to the Non-resident Landlords Scheme</a>. This page goes deeper specifically on the gross-approval application itself.</p>
 
@@ -66,7 +90,7 @@ faqs:
 
 <h2>NRL1, NRL2, NRL3 and the rest of the form family</h2>
 
-<p>People often confuse the application form with the agent's returns. They are different forms with different jobs. The gross-payment application is made by the landlord, by type of landlord; the returns are made by the agent or tenant who operates the scheme. The table below sets out the family.</p>
+<p>People often confuse the gross-payment application with the agent's returns. They are different forms with different jobs. The application is made by the landlord, by type of landlord; the returns are made by the agent or tenant who operates the scheme. Search results muddy this further because "NRL" is also a rugby league competition, so the HMRC form is sometimes typed as the "non-resident landlord election form" or "NRL landlord form". On HMRC's own register the document you want is the NRL1. The table below sets out the family.</p>
 
 <table>
 <thead>
@@ -97,15 +121,30 @@ faqs:
 <li>The date you went, or expect to go, abroad</li>
 </ul>
 
-<p>The form itself walks through your personal details, the properties concerned, your letting arrangements and your tax history. Make sure the name, address and references you give match HMRC's records exactly, because a mismatch is the single most frequent reason applications stall.</p>
+<p>The form walks through your personal details, the properties concerned, your letting arrangements and your tax history. Make sure the name, address and references you give match HMRC's records exactly, because a mismatch is the single most frequent reason applications stall. If you already file a return, quoting your UTR lets HMRC tie the NRL1 straight to your record.</p>
 
-<h3>Online service or paper, and the agent caveat</h3>
+<h3>Can you do the NRL1 form online, or do you post it?</h3>
 
-<p>You can apply two ways. You can use HMRC's online service, or you can download, print and post the NRL1 form to the address shown on it. There is one important caveat the online route does not make obvious: <strong>if you want a tax agent or accountant to act for you, you generally cannot use the online service.</strong> HMRC's guidance is to complete the paper NRL1 form instead and send it in together with a completed <a href="https://www.gov.uk/guidance/apply-as-an-individual-to-receive-uk-rental-income-without-uk-tax-deducted" rel="nofollow">agent authorisation form (64-8)</a>. If you intend to have an accountant handle your UK property tax, choose the paper route from the start so you do not have to redo the authorisation later.</p>
+<p>You can apply two ways. You can use HMRC's online NRL1 service through a Government Gateway account, or you can download, print and post the paper NRL1 form. There is one important caveat the online route does not make obvious: <strong>if you want a tax agent or accountant to act for you, you generally cannot use the online service.</strong> HMRC's guidance is to complete the paper NRL1 form instead and send it in together with a completed <a href="https://www.gov.uk/guidance/apply-as-an-individual-to-receive-uk-rental-income-without-uk-tax-deducted" rel="nofollow">agent authorisation form (64-8)</a>. If you intend to have an accountant handle your UK property tax, choose the paper route from the start so you do not have to redo the authorisation later.</p>
 
-<h2>What happens after you submit: timescales and quarter-start backdating</h2>
+<h3>Where to send the paper NRL1 form</h3>
 
-<p>There is no fixed statutory deadline for HMRC to decide an NRL1, and HMRC may approve an application after an initial check and review the detail later. In practice, a decision usually comes within around six weeks, though it can take longer if HMRC needs to verify your tax history or asks for more information. Treat that as a planning guide, not a guarantee.</p>
+<p>The paper NRL1 goes to HMRC's non-resident landlords handling team:</p>
+
+<ul>
+<li>Charities, Savings and International 1</li>
+<li>HM Revenue and Customs</li>
+<li>BX9 1AU</li>
+<li>United Kingdom</li>
+</ul>
+
+<p>BX9 1AU is HMRC's central postal address and does not need a street name. Where you are using an accountant, put the signed 64-8 in the same envelope as the NRL1. Keep proof of posting: it is your evidence the application was sent on a given date, which matters for the quarter-start backdating explained below. Always check the address printed on the current version of the form before you post, as HMRC updates its handling addresses from time to time.</p>
+
+<h2>What happens after you submit: timescales, the approval number and backdating</h2>
+
+<p>There is no fixed statutory deadline for HMRC to decide an NRL1, and HMRC may approve an application after an initial check and review the detail later. In practice, a decision usually comes within around six weeks, though it can take longer if HMRC needs to verify your tax history or asks for more information. Treat that as a planning guide, not a guarantee. If you applied online, the submission shows in your Government Gateway account; if you posted the form and hear nothing for several weeks, contact HMRC's non-resident landlords team quoting your name and UTR or National Insurance number rather than assume it is progressing.</p>
+
+<p>When HMRC approves the application it issues an <strong>approval (reference) number</strong> in the approval notice. This number is what makes the gross payment happen in practice: you pass it to each letting agent, and to any tenant who has to operate the scheme, and they use it to stop deducting and pay you in full. You do not apply for the reference separately, and there is no way to obtain it before approval, so keep the approval notice safe.</p>
 
 <p>The more valuable point for cash flow is <strong>backdating</strong>. When HMRC approves your application, the approval date is normally the first day of the quarter in which HMRC received it. The scheme operates on quarters ending 30 June, 30 September, 31 December and 31 March. So an application HMRC receives in late August takes effect from 1 July; one received in February takes effect from 1 January. Any basic-rate tax withheld between that quarter start and the point your agent actually stops deducting can therefore be recovered, which is the subject of the next section.</p>
 
@@ -117,6 +156,10 @@ faqs:
 
 <p>Second, the Self Assessment route. Across the wider tax year, any tax deducted under the scheme is credited against your final Self Assessment liability. You report your gross rental income and allowable expenses, the tax already withheld is set against the tax you actually owe, and if more was withheld than you owe, HMRC repays the difference after you file. Where a repayment is due outside that mechanism, a non-resident landlord makes a repayment claim to HMRC directly. In most ordinary cases, filing your return and letting the deducted tax run through it is the cleaner path.</p>
 
+<h3>Where NRL tax deducted goes on your Self Assessment return</h3>
+
+<p>A frequent practical question is where the withheld tax actually appears on the return. You report the UK rental income and allowable expenses on the <strong>UK property pages (form SA105)</strong>, and you enter the basic-rate tax deducted under the scheme as <strong>tax already taken off</strong>, so it is credited against the year's liability rather than charged again. Use the figure on your NRL6 certificate. If the deductions across the year exceed your actual tax, the excess is repaid once the return is processed. Our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements">guide to non-resident landlord Self Assessment filing</a> works through the pages in more detail.</p>
+
 <aside>
 <p><strong>Worried you have lost tax to deductions before approval?</strong> Recovering over-withheld NRL tax depends on holding the right certificates and claiming through the right route at the right time. A specialist can confirm what is recoverable in your case and make the claim correctly. Get in touch using the form on this page.</p>
 </aside>
@@ -125,17 +168,17 @@ faqs:
 
 <p>Suppose you let a UK flat from abroad for £30,000 of rent a year, with £8,000 of allowable expenses (mortgage interest is dealt with separately as a tax reducer, see below). Your taxable rental profit is £22,000.</p>
 
-<p>Under deduction at source, your agent withholds basic-rate tax of 20% on the rent after the expenses they have paid, which can leave several thousand pounds tied up with HMRC well before your actual liability is known. With gross-payment approval, you receive the full £30,000, set your real expenses against it, and pay tax on the £22,000 profit through Self Assessment. For most landlords that improves cash flow and aligns the tax you pay with the tax you actually owe, rather than a flat 20% of rent. Remember that finance costs such as mortgage interest are not deducted from profit in the usual way: they give a basic-rate tax reducer instead, as our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">guide to Section 24 and the finance-cost restriction</a> explains.</p>
+<p>Under deduction at source, your agent withholds basic-rate tax of 20% on the rent after the expenses they have paid, which can leave a meaningful sum tied up with HMRC well before your actual liability is known. With gross-payment approval, you receive the full £30,000, set your real expenses against it, and pay tax on the £22,000 profit through Self Assessment. For most landlords that improves cash flow and aligns the tax you pay with the tax you actually owe, rather than a flat 20% of rent. Remember that finance costs such as mortgage interest are not deducted from profit in the usual way: they give a basic-rate tax reducer instead, as our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">guide to Section 24 and the finance-cost restriction</a> explains.</p>
 
 <h2>After approval: notifying your letting agents</h2>
 
-<p>Approval does not automatically reach your agent. Once HMRC issues your approval, you give your agent the approval reference so they can stop deducting and pay you gross from then on. Provide the reference, confirm which properties the approval covers, and keep your contact details current with them. Most established agents handle the scheme routinely and will switch you to gross promptly once they have the reference on file.</p>
+<p>Approval does not automatically reach your agent. Once HMRC issues your approval, you give your agent the approval reference number so they can stop deducting and pay you gross from then on. Provide the reference, confirm which properties the approval covers, and keep your contact details current with them. Most established agents handle the scheme routinely and will switch you to gross promptly once they have the reference on file.</p>
 
 <p>If you let directly, with no UK agent, the obligation can fall on the tenant instead, but only where the rent exceeds £100 a week (£5,200 a year). Below that threshold a tenant is not required to operate the scheme. Where a tenant does have to deduct, your approval reference tells them to pay gross in the same way.</p>
 
 <h2>Self Assessment and MTD obligations after approval</h2>
 
-<p>Gross payment shifts the responsibility for the tax onto you. You must file a Self Assessment return for each tax year, by 31 January following the end of the tax year, declaring all your UK rental income and allowable expenses and paying any tax due. We cover the detail in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements">guide to non-resident landlord Self Assessment filing</a>, so we will not repeat it here.</p>
+<p>Gross payment shifts the responsibility for the tax onto you. You must file a Self Assessment return for each tax year, by 31 January following the end of the tax year, declaring all your UK rental income and allowable expenses and paying any tax due. The filing detail, including the SA105 property pages, is in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements">non-resident landlord Self Assessment guide</a>.</p>
 
 <p>Two forward-looking points matter for planning. First, <strong>Making Tax Digital for Income Tax is now live</strong> and rolling in by income level: from 6 April 2026 for landlords and sole traders with qualifying income over £50,000, from 6 April 2027 at over £30,000, and from 6 April 2028 at over £20,000. If you cross the relevant threshold you will keep digital records and send quarterly updates, even filing from an overseas address. See our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">guide to MTD for landlords</a> for what to do now.</p>
 
@@ -159,8 +202,9 @@ faqs:
 <li><strong>Details that do not match HMRC's records.</strong> A name, address or reference that differs from what HMRC holds is the most common cause of delay. Check them before you submit.</li>
 <li><strong>Missing a property.</strong> List every UK property you let, including any temporarily empty, not just the one prompting the application.</li>
 <li><strong>Using the online service when you want an agent.</strong> If an accountant is to act for you, use the paper NRL1 plus the 64-8 from the outset.</li>
+<li><strong>Posting to the wrong place.</strong> Send the paper form to BX9 1AU and keep proof of posting, so the receipt date that drives backdating is not in doubt.</li>
 <li><strong>Applying with affairs in arrears.</strong> A late return or unpaid balance will usually get the application refused. Fix it first.</li>
-<li><strong>Discarding the NRL6.</strong> The year-end certificate is your evidence of tax deducted and is what supports any reclaim.</li>
+<li><strong>Discarding the NRL6.</strong> The year-end certificate is your evidence of tax deducted and is what supports any reclaim and your Self Assessment entry.</li>
 </ul>
 
 <h2>When to get specialist help</h2>

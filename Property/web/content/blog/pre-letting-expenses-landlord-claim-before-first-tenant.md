@@ -3,16 +3,32 @@ title: "Pre-Letting Expenses: What Can Landlords Claim Before First Tenant?"
 slug: "pre-letting-expenses-landlord-claim-before-first-tenant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/pre-letting-expenses-landlord-claim-before-first-tenant"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-06-02"
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Tax Adviser (CTA), Landlord Tax Specialist"
+reviewedAt: "2026-06-02"
 category: "Landlord Tax Essentials"
 metaTitle: "Pre-Letting Expenses: The 7-Year Rule for Landlords"
-metaDescription: "What can UK landlords claim before the first tenant? The 7-year pre-letting window, the deemed-first-day rule, and which costs qualify, with worked examples."
+metaDescription: "What can UK landlords claim before the first tenant? The 7-year pre-letting window, the deemed-first-day rule, and which costs qualify, plus examples."
 altText: "UK landlord reviewing invoices and receipts for pre-letting expenses on desk"
 image: ""
 h1: "Pre-Letting Expenses: What Landlords Can Claim Before the First Tenant"
 summary: "How the 7-year pre-letting rule and the deemed-first-day treatment work, which costs before your first tenant qualify, and how to claim them correctly, with worked examples and the statute behind it."
 schema: ""
+howToSteps:
+  - name: "Fix your commencement date"
+    text: "Establish the day your property business started, the day the first property was first let or genuinely first available and held out for letting. The seven-year window is measured back from this date and all qualifying costs are deemed incurred on it."
+  - name: "List every pre-letting cost in the seven-year window"
+    text: "Gather all costs incurred to prepare the property for letting in the seven years before commencement. Anything incurred more than seven years before the start date is outside the window and cannot be claimed."
+  - name: "Split revenue from capital"
+    text: "Keep only the revenue costs (repairs, redecoration, safety certificates, letting fees, insurance, void-period running costs). Strip out capital items (the purchase price, SDLT, purchase legal fees, mortgage arrangement fees, improvements), which are not deductible against rental income."
+  - name: "Confirm wholly and exclusively for letting"
+    text: "Check each surviving cost was incurred wholly and exclusively for the letting business. Apportion any cost that also benefited you personally and keep records of the split."
+  - name: "Deduct the qualifying total in your first period"
+    text: "Enter the qualifying pre-letting costs within total allowable expenses on the SA105 property pages for the first period of the business. They are not reported in a separate box; the deemed-first-day rule pulls them onto day one."
+  - name: "Retain the evidence"
+    text: "Keep invoices, payment records, contractor quotes, dated photographs and marketing evidence, plus proof of your commencement date, for at least the enquiry window and longer where a cost feeds a future Capital Gains Tax computation."
 faqs:
   - question: "Is there a time limit for claiming pre-letting expenses?"
     answer: "Yes. There is a hard seven-year window. Qualifying pre-commencement expenditure must be incurred no more than seven years before the date your property business starts (ITTOIA 2005 section 57, applied to property businesses by section 272, set out in HMRC's manual PIM2505). There is no two-year cliff and no open-ended 'no time limit' position. Costs outside the seven-year window cannot be claimed."
@@ -86,7 +102,7 @@ faqs:
 <li><strong>The cost is deducted on day one, not spread or deferred.</strong> You do not "claim it in the year you first receive rent" as a matter of choice; the statute deems it incurred on the commencement date and it falls into that first period's allowable expenses.</li>
 </ul>
 
-<p>One technical footnote worth knowing if you read the legislation directly. The standalone legislation.gov.uk page for section 57 carries a banner that the section was "excluded" by Finance Act 2020. That exclusion is a narrow, context-specific carve-out for the loan-charge and disguised-remuneration rules in Schedule 16 of Finance Act 2020. It is not a general repeal. Section 57 remains fully in force as the pre-trading-expenses provision and is expressly imported for property businesses by the section 272(2) table, which is why PIM2505 continues to treat it as the operative authority. For companies, the equivalent provision is Corporation Tax Act 2009 section 61.</p>
+<p>One technical footnote worth knowing if you read the legislation directly. The standalone legislation.gov.uk page for section 57 carries a banner that the section was "excluded" by Finance Act 2020. That exclusion is a narrow carve-out for employment costs met by coronavirus support payments (Finance Act 2020 Schedule 16, para 4(6)). It is not a general repeal. Section 57 remains fully in force as the pre-trading-expenses provision and is expressly imported for property businesses by the section 272(2) table, which is why PIM2505 continues to treat it as the operative authority. For companies, the equivalent provision is Corporation Tax Act 2009 section 61.</p>
 
 <h2>Qualifying vs non-qualifying pre-letting costs</h2>
 
@@ -128,7 +144,7 @@ faqs:
 
 <h3>Example 2: mortgage interest during a void before the first tenant</h3>
 
-<p>The same landlord pays mortgage interest for the three months between completion and the first tenancy. That interest is a finance cost, not an ordinary expense. For an individual landlord it does not reduce rental profit directly; it is relieved through the Section 24 finance-cost tax credit, given at the 20% basic rate for 2026/27. The arrangement fee and broker fee paid to set up that mortgage, by contrast, are capital and are not claimable at all. The mechanics of the finance-cost restriction are covered in our guide to <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">claiming mortgage interest on a rental property under Section 24</a>.</p>
+<p>The same landlord pays mortgage interest for the three months between completion and the first tenancy. That interest is a finance cost, not an ordinary expense. For an individual landlord it does not reduce rental profit directly; it is relieved through the Section 24 finance-cost tax credit, given at the 20% basic rate for 2026/27. So if that pre-letting interest came to one thousand five hundred pounds, the landlord does not deduct it from profit. Instead they get a tax credit of three hundred pounds (20% of one thousand five hundred), and that is the same three hundred pounds whether they are a basic-rate or a higher-rate (40%) taxpayer. That is the whole point of Section 24: higher-rate landlords no longer get interest relief at their marginal rate, only at the basic rate. The arrangement fee and broker fee paid to set up that mortgage, by contrast, are capital and are not claimable at all. The mechanics of the finance-cost restriction are covered in our guide to <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">claiming mortgage interest on a rental property under Section 24</a>.</p>
 
 <h3>Example 3: the seven-year boundary</h3>
 
@@ -172,7 +188,7 @@ faqs:
 
 <h2>Planning and looking ahead</h2>
 
-<p>Timing matters because the year a cost lands in affects the rate of relief. If you expect to be a higher-rate taxpayer in the first year of letting, the deemed-first-day rule already concentrates qualifying pre-letting costs into that first period, which is usually helpful. From 6 April 2027, property income in England and Northern Ireland is taxed at separate rates of 22% (basic), 42% (higher) and 47% (additional), enacted by Finance Act 2026 (Royal Assent 18 March 2026). Scotland and Wales set their own property income rates. This is settled law, not a proposal, so it is worth factoring into the rate at which your first-year deductions will be relieved.</p>
+<p>Timing matters because the year a cost lands in affects the rate of relief. If you expect to be a higher-rate taxpayer in the first year of letting, the deemed-first-day rule already concentrates qualifying pre-letting costs into that first period, which is usually helpful. From 6 April 2027, property income in England, Wales and Northern Ireland is taxed at separate property rates of 22% (basic), 42% (higher) and 47% (additional), enacted by Finance Act 2026 (Royal Assent 18 March 2026). Only Scotland is carved out of this change for 2027/28; it continues to set its own income tax rates and bands on property income for now. The Section 24 finance-cost reducer rises to 22% in step with the new basic rate, so a basic-rate landlord sees no new wedge open up. This is settled law, not a proposal, so it is worth factoring into the rate at which your first-year deductions will be relieved.</p>
 
 <p>If you hold property through a company, the principle is the same but the statute is Corporation Tax Act 2009 section 61 rather than ITTOIA 2005 section 57, and the Section 24 finance-cost restriction does not apply to companies. Whether to hold personally or through a company is a wider decision; our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> works through the trade-offs.</p>
 

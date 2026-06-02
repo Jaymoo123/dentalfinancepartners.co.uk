@@ -6,12 +6,27 @@ date: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "UK Landlord Tax Changes 2026 and 2027: Every Update"
-metaDescription: "Every UK landlord tax change for 2026 and 2027: Making Tax Digital, the enacted 22/42/47 property income rates, CGT, SDLT and Renters' Rights, with key dates."
+metaDescription: "Every UK landlord tax change for 2026 and 2027: Making Tax Digital, the enacted 22/42/47 property income rates, Section 24, CGT and SDLT, with key dates."
 altText: "UK landlord reviewing tax documents and calculator on desk with calendar showing 2026 and 2027"
 image: ""
 h1: "What Are the Major UK Landlord Tax Changes for 2026 and 2027?"
 summary: "Two tax years bring the biggest shift in landlord taxation for a generation. From 6 April 2026, Making Tax Digital for Income Tax becomes mandatory. From 6 April 2027, separate property income tax rates of 22%, 42% and 47% take effect in England, Wales and Northern Ireland, enacted by Finance Act 2026. This hub explains every change, with key dates, action points and links to the detailed guides."
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedAt: "2026-06-02"
+dateModified: "2026-06-02"
 schema: ""
+howToSteps:
+  - name: "Confirm whether MTD catches you from April 2026"
+    text: "Add your gross self-employment turnover and gross property rent before any deductions. If the combined figure exceeds £50,000 you are mandated into Making Tax Digital for Income Tax from 6 April 2026. Joint owners test their own share of the gross rent, not the property total."
+  - name: "Choose and set up MTD-compatible software"
+    text: "Pick HMRC-recognised software, connect it before 6 April 2026 and start keeping digital records from day one of the 2026/27 tax year so your first quarter is captured cleanly."
+  - name: "Map the 2027 property income rates against your marginal rate"
+    text: "From 6 April 2027 property income is taxed at 22%, 42% and 47% in England, Wales and Northern Ireland. Work out which band your rental profit falls into and how the Section 24 reducer, now 22%, applies to your finance costs."
+  - name: "Recheck your ownership structure before the rate change"
+    text: "If the 42% or 47% property rates would apply to geared profit, model personal ownership against a limited company, including the CGT and SDLT cost of transferring, before you commit either way."
+  - name: "Diarise the fixed deadlines"
+    text: "Mark the quarterly MTD updates (7 August, 7 November, 7 February, 7 May), the 31 January year-end declaration, and the 60-day CGT-on-property reporting window so nothing slips."
 faqs:
   - question: "When do the main landlord tax changes for 2026 and 2027 take effect?"
     answer: "Two dates matter most. From 6 April 2026, Making Tax Digital (MTD) for Income Tax becomes mandatory for landlords with qualifying income above £50,000. From 6 April 2027, separate property income tax rates of 22% (basic), 42% (higher) and 47% (additional) apply in England, Wales and Northern Ireland (only Scotland is carved out). Both are now law, not proposals: the 2027 rates were enacted by Finance Act 2026, which received Royal Assent on 18 March 2026."
@@ -39,6 +54,20 @@ faqs:
     answer: "The Renters' Rights Act 2025 (2025 c. 26) reforms the private rented sector, and the abolition of Section 21 'no-fault' evictions together with reformed Section 8 grounds comes into force on 1 May 2026, appointed by SI 2026/421. This is not a direct tax change, but it affects possession timing and cash-flow planning, which in turn influence when landlords can dispose of a property and trigger CGT."
   - question: "Should I incorporate my portfolio before the 2027 rate changes?"
     answer: "It depends on your marginal rate, your borrowing, and whether you intend to draw the income or retain it. Incorporation can be attractive once property income is taxed at 42% or 47% while corporation tax sits at 19% to 25%, but it carries CGT and SDLT cost on transfer and ongoing compliance. There is no one-size answer. Our buy-to-let limited company guide sets out the trade-offs, and the form on this page routes to a specialist who can model your specific position."
+  - question: "What expenses can landlords still deduct in 2026/27?"
+    answer: "Revenue costs incurred wholly and exclusively for the letting remain deductible against rental profit: letting agent and management fees, repairs and maintenance (not improvements), buildings and contents insurance, ground rent and service charges, accountancy, advertising for tenants, and the replacement of domestic items relief for furnishings. Mortgage interest and other finance costs are the exception. Section 24 blocks them from the profit calculation and gives a 20% tax reducer instead for 2026/27, rising to 22% from 2027/28. So landlord insurance is tax deductible as an ordinary running cost, but loan interest is not deducted in the same way."
+  - question: "Does Section 24 affect basic-rate taxpayers?"
+    answer: "It can, even though the headline aim was higher-rate landlords. Because finance costs are added back to your profit before the tax is worked out, the gross rent can push a basic-rate landlord into the higher-rate band, where the income is then taxed at 40% (42% on property income from 2027/28) while the relief stays at the basic-rate percentage. So a landlord who looks like a basic-rate taxpayer on their day job can be tipped over by the add-back. Modelling the full income picture, not just the rental profit in isolation, is the only way to see your real position."
+  - question: "Do landlords need to register for VAT?"
+    answer: "Residential lettings are exempt from VAT, so residential rent does not count towards the £90,000 registration threshold and most buy-to-let landlords never register. Commercial property is different: it is exempt by default but can be subject to an option to tax, which makes the rent standard-rated and the threshold relevant. Furnished holiday-style serviced accommodation can also be standard-rated. If you let any commercial space or run serviced lets, check the VAT position rather than assuming the residential exemption covers you."
+  - question: "How is income from a property company taxed when I take it out?"
+    answer: "A company pays corporation tax on its rental profit first (19% up to £50,000, 25% above £250,000, with marginal relief between). When you extract that profit as dividends you pay dividend tax personally on top, after the £500 dividend allowance, at 8.75%, 33.75% or 39.35% depending on your band. That two-layer charge is why a company is not automatically cheaper than personal ownership: it depends heavily on whether you draw the income now or leave it in the company to reinvest."
+  - question: "Is there a special tax treatment for HMOs?"
+    answer: "An HMO is taxed like any other residential let for income tax: the same Section 24 finance-cost restriction, the same 2027 property income rates, and standard residential CGT on disposal. There is no separate HMO tax regime. The real differences are practical, such as licensing costs (deductible) and, in areas with an Article 4 direction, planning permission to convert to an HMO. Larger commercial-scale operations can raise different questions, which are worth checking case by case."
+  - question: "How do pension contributions interact with Section 24?"
+    answer: "Rental profit is not relevant UK earnings for pension purposes, so property income on its own does not create pension contribution headroom beyond the £3,600 gross basic amount. But a personal pension contribution extends your basic-rate band, which can pull rental profit that would otherwise be taxed at the higher property rate back into the basic band and reduce the Section 24 wedge. For landlords with other earned income, pension planning is one of the few levers that genuinely changes the Section 24 arithmetic."
+  - question: "Is there a calculator for landlord rental income tax?"
+    answer: "A rental income tax calculation runs in a set order: gross rent, less allowable revenue expenses (but not finance costs), gives the taxable property profit; that profit is added to your other income to find your band; then the Section 24 reducer is applied against the tax. For 2027/28 you use the 22/42/47 property rates and a 22% reducer. The sequence matters more than any single figure, because the finance-cost add-back is what determines your band. The form on this page routes to a specialist who can run your actual numbers rather than a generic estimate."
 ---
 
 <p>Two consecutive tax years bring the biggest shift in landlord taxation for a generation. The 2026/27 year makes <strong>Making Tax Digital for Income Tax</strong> mandatory for most landlords, and the 2027/28 year introduces <strong>separate, higher property income tax rates</strong>. Both changes are now law. Finance Act 2026 received Royal Assent on 18 March 2026, so the 2027 rates are no longer a proposal you can plan around as if they might not happen.</p>
@@ -58,6 +87,16 @@ faqs:
 
 <p><strong>Action point.</strong> If your gross rental income is anywhere near £50,000, assume you are in scope and choose compatible software now, then digitise your records ahead of 6 April 2026. The detail, including the qualifying-income test and the software list, is in our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadline guide</a>.</p>
 
+<h3>Getting MTD-ready: the practical sequence</h3>
+<p>Most landlords who run into trouble do so because they wait until the first quarterly deadline approaches before setting anything up. The work is straightforward if you do it in order before the tax year starts:</p>
+<ol>
+<li><strong>Confirm scope.</strong> Add gross self-employment turnover and gross rent (your share, if jointly owned). Over £50,000 means you are in from April 2026.</li>
+<li><strong>Pick recognised software.</strong> Choose from HMRC's compatible list and connect it to your HMRC account ahead of 6 April 2026.</li>
+<li><strong>Move records into the software.</strong> Stop relying on a shoebox or a year-end spreadsheet. Capture rent and costs digitally from the first day of the new tax year.</li>
+<li><strong>Set the quarterly rhythm.</strong> Diarise 7 August, 7 November, 7 February and 7 May, and decide whether to use the optional calendar-quarter election.</li>
+<li><strong>Plan the year-end.</strong> The End-of-Period Statement and Final Declaration replace the old return and are both due by 31 January after the tax year ends.</li>
+</ol>
+
 <h2>Property Income Tax Rates from 2027 and Section 24</h2>
 <p>The bigger structural change arrives a year later. From the 2027/28 tax year, property income in England, Wales and Northern Ireland is taxed at its own set of rates, separate from the rates on employment, pension and other income (only Scotland is carved out):</p>
 <ul>
@@ -76,6 +115,23 @@ faqs:
 </ul>
 <p>So the real story for geared higher-rate landlords is the rate rise from 40% to 42% (and 45% to 47%) on the profit itself, not a worsening of the interest restriction.</p>
 
+<h3>A Section 24 worked example for a higher-rate landlord</h3>
+<p>Numbers make this concrete. Take a higher-rate landlord with £30,000 of gross rent, £6,000 of allowable running costs (insurance, agent fees, repairs) and £12,000 of mortgage interest. Section 24 strips the interest out of the profit calculation and hands back a tax reducer instead. The table compares the same landlord in 2026/27 (40% rate, 20% reducer) and 2027/28 (42% property rate, 22% reducer).</p>
+<table>
+<thead>
+<tr><th>Step</th><th>2026/27 (40% / 20% reducer)</th><th>2027/28 (42% / 22% reducer)</th></tr>
+</thead>
+<tbody>
+<tr><td>Gross rent</td><td>£30,000</td><td>£30,000</td></tr>
+<tr><td>Less allowable running costs</td><td>(£6,000)</td><td>(£6,000)</td></tr>
+<tr><td>Taxable property profit (interest not deducted)</td><td>£24,000</td><td>£24,000</td></tr>
+<tr><td>Tax on profit at the property rate</td><td>£9,600</td><td>£10,080</td></tr>
+<tr><td>Less finance-cost reducer (20% then 22% of £12,000)</td><td>(£2,400)</td><td>(£2,640)</td></tr>
+<tr><td>Income tax on the rental income</td><td>£7,200</td><td>£7,440</td></tr>
+</tbody>
+</table>
+<p>Two things stand out. The interest is never deducted from profit, so the landlord is taxed on £24,000 even though their economic margin after interest is only £12,000. And the £240 increase between the two years comes from the rate moving to 42% on the profit, partly offset by the reducer rising to 22%. The reducer keeping step with the property basic rate is exactly why no new basic-rate wedge opens for landlords below the higher-rate threshold. If the same landlord remained inside the basic-rate band, the 22% charge on the profit and the 22% reducer on the interest would cancel on the geared portion entirely.</p>
+
 <aside>
 <p>Wondering whether the 2027 rates change the case for incorporating?</p>
 <p>The enacted 22/42/47 rates, combined with the Section 24 restriction, change the arithmetic for geared higher-rate landlords, but incorporation carries its own CGT and SDLT cost on transfer plus ongoing compliance. The right answer depends on your marginal rate, your borrowing and whether you draw or retain the income. The form below routes to a specialist who can model the post-2027 position against your actual portfolio before you commit.</p>
@@ -90,9 +146,27 @@ faqs:
 <p>The Stamp Duty Land Tax (SDLT) surcharge for additional residential properties is 5% for transactions on or after 31 October 2024, raised from the previous 3% by Finance (No.2) Act 2024 (the surcharge sits in Schedule 4ZA of the Finance Act 2003). It applies to second homes, buy-to-let purchases, and purchases by companies, and it is charged on top of the standard residential SDLT bands. You can confirm the current bands on the <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="nofollow">gov.uk SDLT residential rates page</a>.</p>
 <p>SDLT is an England and Northern Ireland tax. Scotland charges Land and Buildings Transaction Tax (LBTT) with an 8% Additional Dwelling Supplement, and Wales charges Land Transaction Tax (LTT) with its own higher rates for additional properties, so the surcharge figure is not the same across the UK. Where you have paid the surcharge on a property that replaces a former main residence, a refund may be available within the statutory window: see our <a href="/blog/property-types-and-specialist-tax/a-complete-guide-to-5-sdlt-surcharge-refund-claims">SDLT surcharge refund guide</a>.</p>
 
+<h2>What Landlords Can Still Deduct</h2>
+<p>None of the 2026 and 2027 changes touch the ordinary deduction rules for running costs, and it is worth restating what survives because the Section 24 noise leads some landlords to assume more has been taken away than actually has. Revenue costs incurred wholly and exclusively for the letting are still deducted from rental profit: letting agent and management fees, repairs and maintenance (as distinct from improvements, which are capital), buildings and contents insurance, ground rent and service charges, accountancy and professional fees, advertising for tenants, and the replacement of domestic items relief for furnishings in a let property. Landlord insurance is fully tax deductible as a running cost. The single exception is finance costs. Mortgage interest, arrangement fees and the interest element of any borrowing are removed from the profit calculation by Section 24 and replaced with the tax reducer described above.</p>
+<p>The line between repairs and improvements is where landlords most often get the deduction wrong. Replacing a worn-out boiler like for like is a deductible repair; upgrading a single-glazed window to double glazing where that is now the standard equivalent is generally a repair too, but adding an extension or converting a loft is capital and goes against the eventual CGT computation instead. If you are unsure, the safer assumption is to treat genuine betterment as capital.</p>
+
 <h2>Operating Through a Limited Company</h2>
 <p>For landlords already holding property in a limited company, corporation tax for 2026/27 is unchanged: a 19% small-profits rate up to £50,000 of profit, a 25% main rate above £250,000, and marginal relief tapering the effective rate between those two figures. Companies are outside MTD for Income Tax entirely and continue to file an annual CT600. Companies also deduct mortgage interest in full before corporation tax, so the Section 24 restriction does not apply to them.</p>
-<p>The enacted 2027 rates change the comparison for individuals. Once property income is taxed at 42% or 47% in personal hands while corporation tax stays at 19% to 25%, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">holding property through a company</a> looks more attractive on the headline rate for geared higher-rate landlords. The decision is not automatic, though. Incorporating an existing portfolio can crystallise CGT and SDLT, and extracting profit from the company is itself taxed. The right structure depends on whether you intend to draw the income now or build a portfolio over time.</p>
+<p>The enacted 2027 rates change the comparison for individuals. Once property income is taxed at 42% or 47% in personal hands while corporation tax stays at 19% to 25%, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">holding property through a company</a> looks more attractive on the headline rate for geared higher-rate landlords. The catch is the second layer of tax. A company pays corporation tax on its profit, and you then pay dividend tax personally when you draw that profit out (after the £500 dividend allowance, at 8.75%, 33.75% or 39.35%). So the company route favours landlords who reinvest rather than draw, while a higher-rate landlord who needs the income to live on may find the combined charge closer to personal ownership than the headline corporation tax rate suggests. The table sets out the structural differences that matter most after 2027.</p>
+<table>
+<thead>
+<tr><th>Feature</th><th>Personal ownership (from 2027/28)</th><th>Limited company</th></tr>
+</thead>
+<tbody>
+<tr><td>Tax on rental profit</td><td>22% / 42% / 47% property income rates</td><td>19% to 25% corporation tax</td></tr>
+<tr><td>Mortgage interest</td><td>Restricted by Section 24 (22% reducer)</td><td>Deducted in full before tax</td></tr>
+<tr><td>Tax to extract profit</td><td>None (profit is already personal)</td><td>Dividend tax on top when drawn</td></tr>
+<tr><td>Making Tax Digital</td><td>In scope above the income threshold</td><td>Outside MTD for Income Tax</td></tr>
+<tr><td>Cost to move existing property in</td><td>Not applicable</td><td>Potential CGT and SDLT on transfer</td></tr>
+<tr><td>Ongoing compliance</td><td>Self Assessment / MTD</td><td>CT600, accounts and confirmation statement</td></tr>
+</tbody>
+</table>
+<p>The decision is not automatic. Incorporating an existing portfolio can crystallise CGT and SDLT, and extracting profit from the company is itself taxed. The right structure depends on whether you intend to draw the income now or build a portfolio over time. Our <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates guide</a> models the personal-rate side of that comparison in more depth.</p>
 
 <h2>Abolished and Reformed Regimes: FHL and Renters' Rights</h2>
 <p>The <a href="/blog/property-types-and-specialist-tax/end-of-the-furnished-holiday-letting-regime">Furnished Holiday Lettings (FHL) regime was abolished from 6 April 2025</a>. Properties that used to qualify as FHL are now taxed as standard residential lets. That means Section 24 applies to their finance costs, and the old FHL advantages have gone: capital allowances on furniture and equipment, Business Asset Disposal Relief on sale, and the treatment of profits as relevant earnings for pension contributions. Transitional rules preserve pooled capital allowances brought forward and ring-fence former-FHL losses against future profits of the new residential business, but for ongoing operation the property is now ordinary residential.</p>
