@@ -39,6 +39,20 @@ LBTT MDR was NOT abolished alongside the SDLT abolition by FA(No.2) 2024 s.7. Th
 
 ---
 
+## [F-2] HOUSE_POSITION_EXTENSION — Welsh LTT Sch 13 post-Feb-2025 + post-Feb-2026 statutory state needs HP-lock
+
+**Raised by:** MW1 Bucket A batch M1-A-B4 (RUN sub-agent at A20 write-time), 2026-05-26.
+**Type:** HOUSE_POSITION_EXTENSION (HP-LOCK CANDIDATE for Stage 1b conductor).
+**Affected pages:** A20 `multiple-dwellings-relief` (this batch, RUN a58980e); existing `welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` (Wave 9, deployed); A19 `land-and-buildings-transaction-tax-multiple-dwellings-relief` (this batch, RUN e11c9ab — cross-references Welsh side); any future Welsh LTT pages.
+
+**Why a lock is needed:** LTTA 2017 Schedule 13 has had two material amendments in the last 12 months that competitor commentary has largely not picked up. (1) New paragraph 7A "Subsidiary dwellings" inserted 7 February 2025 by SI 2025/119 (the Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2025): a qualifying dwelling and a purchased dwelling (or more than one) that is subsidiary to it are treated as if they were an interest in a single dwelling for MDR purposes (an anti-fragmentation refinement). (2) Substitution of the paragraph 6(2) minimum-prescribed-amount floor to 3% effective 13 February 2026 by Welsh Regulations (verify exact SI series at site-wide patch time). A20 surfaces both updates explicitly per §16.36 Stage 2 finding; future Welsh pages need a locked anchor so the same statutory state is asserted consistently and competitor-drift sources are not re-imported.
+
+**Pairs with F-1 (this file).** F-1 raised the broader devolved-property-taxes HP-extension (LBTT Scotland + LTT Wales spanned in a single block, or per-jurisdiction sub-sections). F-2 is the Welsh-side specific content that the conductor should lock if F-1 is resolved with a Welsh sub-section: paragraph 7A subsidiary dwellings + paragraph 6(2) floor at 3% from 13 February 2026 as the operative architecture. If conductor instead extends §1 (the SDLT-architecture house position) with a non-SDLT-jurisdictions sub-block, F-2 content should be locked there.
+
+**No-block discipline:** A20 ships with the Welsh statutory updates surfaced verbatim in body text and FAQ #7 + #10; the page authority rests on the §16.36 statutory-citation gate (legislation.gov.uk verbatim Sch 13 + SI 2025/119 + the post-Feb-2026 Welsh Regulations referenced) rather than on a settled HP-lock. F-2 sets the stage for Stage 1b conductor to lock the Welsh position so subsequent MW1 / MW2 / wave 10+ Welsh content references a single in-house anchor.
+
+---
+
 ## [F-50] CROSS_BUCKET — B9 soft cannib pair with existing Wave 5 page (intentional but needs conductor sanity-check)
 
 **Raised by:** MW1 Bucket B batch M1-B-B2 (Stage 1 sub-agent), 2026-05-26.
@@ -384,3 +398,109 @@ The four BRIEF_DRIFT flags raised at Stage 2 for unconfirmed case citations (F-2
 **F-9 closed:** A8 page cites **Archer (UK) Limited v Revenue Scotland [2025] FTSTC 10** (10 July 2025). Statutory framework MUST cite LBTT (Transitional Provisions) (Scotland) Order 2014 **Article 13** (the key transitional provision) + LBTT(S)A 2013 Sch 19 + FA 2003 Sch 17A para 9. Counsel: Philip Simpson KC. **Judge name pending primary-source verification** (taxtribunals.scot 403'd at Agent runtime; verify via browser before RUN-phase write).
 
 All four verified citations are appended to each affected brief on the lane A worktree branch (`property-megawave1-a`). The closure blocks include the verification URL, key holding paragraphs, and line/cluster notes. The Stage 2 verification gap that prompted F-2 / F-4 / F-6 / F-9 is now closed; RUN-phase sub-agent re-verifies at write-time per §16.35.
+
+---
+
+## [F-11] BRIEF_DRIFT — A4 brief cites "Sch 10 para 34" for the 4-year overpayment-relief time limit; correct architecture is Sch 10 para 34 (gateway) + Sch 10 para 34B (4-year time limit)
+
+**Raised by:** MW1 Bucket A batch M1-A-B1 RUN session, 2026-05-26.
+**Type:** BRIEF_DRIFT (precision-of-citation drift; non-blocking).
+**Affected brief:** A4 (`a-complete-guide-to-5-sdlt-surcharge-refund-claims`) Stage 1 seed + Stage 2 extension both refer to "FA 2003 Sch 10 para 34 (overpayment relief — 4-year window)" as a single citation, conflating the overpayment-relief gateway provision with the time-limit provision.
+
+**Drift confirmed at RUN-write:** WebFetch verification against https://www.legislation.gov.uk/ukpga/2003/14/schedule/10 on 2026-05-26 confirms:
+- **FA 2003 Sch 10 para 34** is the **gateway** ("Claim for relief for overpaid tax etc"). It establishes the substantive right to claim relief but does not itself impose a time limit.
+- **FA 2003 Sch 10 para 34A** sets out the **HMRC refusal grounds** (cases in which the Commissioners are not liable to give effect to a claim) — substantive exclusions, not timing.
+- **FA 2003 Sch 10 para 34B(1)** imposes the **4-year time limit**: "A claim under paragraph 34 may not be made more than 4 years after the effective date of the transaction."
+
+**A4 page (RUN d8a9c5a) uses the corrected architecture:** the page cites "FA 2003 Schedule 10 paragraph 34" for the overpayment-relief gateway and "FA 2003 Schedule 10 paragraph 34B" for the 4-year time limit in every relevant section (Routes 2-5 deadline architecture, the consolidated-deadlines summary table, the FAQ on deadlines, and the mechanics-of-filing section). Paragraph 34A (HMRC refusal grounds) is also surfaced in the mechanics section as a check-at-the-start item.
+
+**Back-patch consideration:** any future brief in any bucket that recycles the "Sch 10 para 34 (4-year window)" shorthand should be amended to the corrected three-paragraph architecture (gateway 34 / refusal 34A / time-limit 34B) at Stage 2 extension. No existing live page is affected (A4 is the first page in the MW1 family to depend on the precise overpayment-relief architecture; the existing `sdlt-5-percent-surcharge-refund-claim-process` Wave 9 page is replacement-route-mechanics-only and does not turn on the overpayment-relief paras).
+
+**No-block discipline:** drift is fully corrected in the A4 RUN output; no downstream action required for the rest of M1-A-B1 (Picks 1, 2, 3 do not turn on the overpayment-relief paras; Picks 5 and 6 are stamp-duty-refund-umbrella and probate-relief, both of which will use the corrected architecture).
+
+---
+
+## [F-12] BRIEF_DRIFT — A5 brief cites "Sch 9A para 11A" with "1-year UK-residence requalification" for the non-UK resident surcharge refund; correct cite is Sch 9A para 19 with a 2-year amendment window
+
+**Raised by:** MW1 Bucket A batch M1-A-B1 RUN session, 2026-05-26.
+**Type:** BRIEF_DRIFT (substantive citation + time-limit drift; non-blocking because corrected at RUN-write).
+**Affected brief:** A5 (`a-complete-guide-to-stamp-duty-refund`) Stage 1 seed + Stage 2 extension both refer to "FA 2003 Schedule 9A para 11A (non-UK resident surcharge — 1-year UK-residence requalification refund — verify paragraph number at write)" — the Stage 2 watchpoint flagged this for write-time verification, which has now resolved the drift.
+
+**Drift confirmed at RUN-write:** WebFetch verification against https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A on 2026-05-26 confirms:
+- The non-UK resident surcharge requalification refund provision is at **FA 2003 Sch 9A paragraph 19** (not paragraph 11A).
+- The time limit is **2 years** beginning with the day after the effective date of the transaction (not 1 year).
+- Verbatim wording: "The land transaction return may be amended, at any time before the end of the period of 2 years beginning with the day after the effective date of the transaction, to take account of the fact that the transaction is not a non-resident transaction."
+
+**A5 page (RUN a8d58a1) uses the corrected architecture:** the page cites "FA 2003 Schedule 9A paragraph 19" for the requalification refund provision and "two-year window from the day after the effective date" for the time limit throughout (Family 2 section, deadline architecture summary, FAQ on Family 2, worked example Scenario B with explicit 8 March 2027 deadline computation, editorial note).
+
+**Back-patch consideration:** any future brief in any bucket that recycles the "Sch 9A para 11A (1-year)" formulation should be corrected to "Sch 9A para 19 (2-year)" at Stage 2 extension. No existing live page on the site relies on the Sch 9A requalification provision in a load-bearing way (the existing non-resident surcharge coverage is at a different abstraction level); A5 is the first MW1 page to use the precise citation.
+
+**No-block discipline:** drift is fully corrected in the A5 RUN output. Pick 6 (`a-complete-guide-to-stamp-duty-relief-for-probate-properties`) does not turn on the Sch 9A requalification provision.
+
+---
+
+## [F-13] BRIEF_DRIFT — A6 brief and widely-circulated commentary state Sch 4ZA para 16 triple-condition (≤50% share + ≤£40k value + 3-year window); statute has NO £40k value cap
+
+**Raised by:** MW1 Bucket A batch M1-A-B1 RUN session, 2026-05-26.
+**Type:** BRIEF_DRIFT (substantive misstatement of statutory condition; medium-impact because widely-circulated commentary across adviser firms repeats the £40k formulation).
+**Affected brief:** A6 (`a-complete-guide-to-stamp-duty-relief-for-probate-properties`) Stage 1 seed + Stage 2 extension both refer to "Sch 4ZA para 16 inherited-interest carve-out (≤50% share AND ≤£40k value AND inherited within 3 years before the new purchase)" as a triple-condition — the Stage 2 watchpoint flagged this for write-time verification.
+
+**Drift confirmed at RUN-write:** WebFetch verification against https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA on 2026-05-26 confirms:
+- Paragraph 16 contains **two conditions only**: (a) "P's beneficial share in the interest does not exceed 50%" (verbatim); (b) "P is not to be treated for the purposes of paragraph 3(4)(a) or 6(1)(e) as having the major interest at any time during the period of three years beginning with the date of the inheritance" (verbatim).
+- **There is NO £40,000 value threshold in paragraph 16.** The £40,000 figure that appears in other Schedule 4ZA paragraphs (notably the minimum-consideration threshold on a transaction triggering the surcharge under paragraph 3) is a separate provision applied to the new transaction, not a value cap on the inherited interest under paragraph 16.
+
+**A6 page (RUN e704b9d) uses the corrected architecture:** the page cites "Sch 4ZA paragraph 16 two-condition carve-out" throughout, with an explicit "Note on the £40,000 question" paragraph in the dedicated paragraph 16 H2 explaining why the widely-circulated triple-condition formulation is wrong and the £40,000 figure has a separate provenance. The four-scenario worked decision tree turns on the share + temporal conditions only.
+
+**Back-patch consideration:** the misstatement is repeated in some standard adviser commentary; any future brief in any bucket that recycles the £40,000 triple-condition formulation should be corrected to the two-condition architecture at Stage 2 extension. No existing live page on the site has been identified as relying on the £40,000 formulation in a load-bearing way; the existing `sdlt-on-probate-property-transfers.md` page touches paragraph 16 indirectly but does not depend on the triple-condition framing.
+
+**No-block discipline:** drift fully corrected in A6 RUN output; final pick of batch.
+
+---
+
+## [F-14] EXISTING_PAGE_STALE — Existing sdlt-on-probate-property-transfers page cites "Paragraph 8 Schedule 4 FA 2003" for deed-of-variation exemption; correct primary cite is Sch 3 para 4 (exemption gateway) with Sch 4 para 8A (chargeable-consideration carve-out)
+
+**Raised by:** MW1 Bucket A batch M1-A-B1 RUN session, 2026-05-26.
+**Type:** EXISTING_PAGE_STALE (citation-precision drift; non-blocking — the substantive position is correct, the statutory anchor is slightly imprecise).
+**Affected existing page:** `Property/web/content/blog/sdlt-on-probate-property-transfers.md` (Wave 2 / pre-MW1, deployed 2026-05-22). FAQ #2 and the five-transfer-type table both cite "Paragraph 8 Schedule 4 FA 2003" as the statutory basis for the deed-of-variation exemption.
+
+**Drift confirmed at RUN-write:** WebFetch verification against https://www.legislation.gov.uk/ukpga/2003/14/schedule/4 and https://www.legislation.gov.uk/ukpga/2003/14/schedule/3 on 2026-05-26 confirms:
+- The substantive deed-of-variation exemption (the "no chargeable consideration on a section 142 IHTA 1984-compliant variation") is at **FA 2003 Sch 3 para 4** (the no-charge-on-relevant-transactions schedule).
+- **FA 2003 Sch 4 para 8A** (verbatim text confirmed) is a parallel chargeable-consideration carve-out for variations that fail the Sch 3 para 4 condition through containing consideration other than the variation of another disposition; the carve-out limits the chargeable consideration to the actual consideration paid, not the variation itself.
+- FA 2003 Sch 4 paragraph 8 (without the A suffix) deals with a different matter (just and reasonable apportionment of consideration across multiple transactions).
+
+**A6 page (RUN e704b9d) uses the corrected architecture:** the dedicated DoV H2 cites "FA 2003 Schedule 3 paragraph 4 with Schedule 4 paragraph 8A" with the operational logic explained: paragraph 4 is the headline exemption; paragraph 8A is the protective fallback chargeable-consideration carve-out. The corrected architecture is consistent with the IHTA 1984 section 142 read-across that the existing page also relies on.
+
+**Back-patch required:** edit `Property/web/content/blog/sdlt-on-probate-property-transfers.md` at FAQ #2 + the five-transfer-type table row + the Deeds of Variation H2 to cite "FA 2003 Schedule 3 paragraph 4" as the primary exemption gateway (with optional reference to Sch 4 para 8A as the chargeable-consideration carve-out). The substantive position on the existing page is unchanged; only the statutory-anchor precision is updated.
+
+**No-block discipline:** A6 RUN output supersedes the imprecise cite; back-patch on the existing page is a wave-close cleanup item, not a blocker for MW1 RUN-phase continuation.
+
+---
+
+## [F-52] BRIEF_DRIFT — LTTA 2017 s.41 vs s.44 for the 30-day Welsh LTT return window
+
+**Raised by:** MW1 Bucket B batch M1-B-B1 Stage 2 review (closed in Pick 3 Stage 2 brief); reverified at RUN-phase 2026-05-26.
+**Type:** BRIEF_DRIFT (statutory cite drift; non-blocking; in-page fix applied).
+**Affected briefs / pages:**
+- Pick 2 (`higher-rates-of-land-transaction-tax-a-complete-guide`) Stage 2 brief cited s.41 in the citation block; RUN session caught the residual reference at the writing stage and fixed via commit 1234923 on `property-megawave1-b`.
+- Pick 3 (`land-transaction-tax-a-complete-guide`) brief carried the closed drift catch from Stage 2 and the RUN output uses s.44 throughout.
+- The HP §23.10 citation block needs back-patching to s.44 alongside Pick 2's brief citation.
+
+**Drift confirmed at Stage 2 + RUN:** the correct section is **LTTA 2017 s.44 "Duty to make a return"** in Part 6 Returns and Payments. s.41 is in Part 5 Application to Certain Persons and Bodies. Verified at https://www.legislation.gov.uk/anaw/2017/1/section/44.
+
+**Back-patch action:** HP §23.10 should be updated from "s.41" to "s.44" by the HP-back-patch reviewer. M1-B-B2 sibling page `ltt-calculator` may also carry the same drift and should be checked.
+
+---
+
+## [F-53] VERIFICATION_GAP — LBTT(S)A 2013 Sch 11 para 6(3) prescribed-proportion SSI not located at RUN-write
+
+**Raised by:** MW1 Bucket B batch M1-B-B1 RUN session, 2026-05-26.
+**Type:** VERIFICATION_GAP (specific SSI cite missing; non-blocking; page text accurate on the mechanic).
+**Affected page:** Pick 5 (`lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax`).
+
+**What was verified at RUN:** LBTT(S)A 2013 Sch 11 para 6 verbatim text confirmed via WebFetch legislation.gov.uk 2026-05-26 (the prescribed-proportion mechanic in para 6(2) and the order-making power in para 6(3) read together). The Pick 5 page describes the mechanic accurately and references the broadly-aligned SDLT 0.5% comparator under FA 2003 Sch 7 para 9(2) for cross-jurisdictional context.
+
+**What is not yet verified:** the specific Scottish Statutory Instrument that sets the current operative prescribed proportion under Sch 11 para 6(3). RUN session WebFetched legislation.gov.uk SSI 2014/378 (A90 trunk road, irrelevant), SSI 2015/126 (LBTT Tax Rates and Tax Bands Order 2015, irrelevant), and the Revenue Scotland LBTT3010 reliefs index without locating a specific Sch 11 para 6(3) SSI cite. LBTT3026 (the dedicated acquisition-relief guidance page) returned 404 at fetch.
+
+**Back-patch action:** HP-back-patch reviewer should confirm the operative SSI and current verbatim percentage and update §23.6 (or new §23.X) accordingly. Pick 5 page can be amended to lock the verbatim Scottish figure (rather than the current SDLT-comparator framing) once the SSI is verified.
+
+**No-block discipline:** the Pick 5 page is operative as-published; the mechanic and the comparator framing are accurate. The verification gap is precision-of-figure, not correctness-of-mechanic.
