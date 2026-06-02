@@ -45,8 +45,16 @@ def call_deepseek(
     model: str = "deepseek-chat",
     max_tokens: int = 4096,
     temperature: float = 0.3,
+    json_mode: bool = False,
 ) -> LLMResult:
-    """Call DeepSeek chat completions API. OpenAI-compatible shape."""
+    """Call DeepSeek chat completions API. OpenAI-compatible shape.
+
+    Args:
+        json_mode: if True, sets response_format={"type":"json_object"} which
+                   forces DeepSeek to return valid JSON. Use this for any prompt
+                   that expects a structured JSON response. The system prompt must
+                   explicitly mention JSON for this mode to work correctly.
+    """
     import httpx
 
     api_key = os.getenv("DEEPSEEK_API_KEY", "")
@@ -62,6 +70,8 @@ def call_deepseek(
         "max_tokens": max_tokens,
         "temperature": temperature,
     }
+    if json_mode:
+        payload["response_format"] = {"type": "json_object"}
 
     headers = {
         "Authorization": f"Bearer {api_key}",

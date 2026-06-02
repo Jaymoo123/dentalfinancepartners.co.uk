@@ -1,0 +1,75 @@
+wave: 2
+# MegaWave 2 - Entity / incorporation / trusts family
+# Sliced by slice-megawave.ps1 on 2026-05-26
+# Total: 60 picks (A:20 B:20 C:20)
+
+buckets:
+  A:
+    label: "Bucket A - Limited company / BTL company operation + Incorporation mechanics + Property partnership / LLP"
+    picks:
+      - { id: A1, slug: "a-complete-guide-on-incorporating-a-company-in-uk", label: "[Incorporation mechanics] a-complete-guide-on-incorporating-a-company-in-uk" }
+      - { id: A2, slug: "a-guide-for-shareholders-in-the-uk", label: "[Limited company / BTL company operation] a-guide-for-shareholders-in-the-uk" }
+      - { id: A3, slug: "companies-house-changes-limited-partnership-requirements", label: "[Property partnership / LLP] companies-house-changes-limited-partnership-requirements" }
+      - { id: A4, slug: "corporate-tax-planning-strategies-for-uk-clients", label: "[Limited company / BTL company operation] corporate-tax-planning-strategies-for-uk-clients" }
+      - { id: A5, slug: "corporation-tax-marginal-relief-uk-guide", label: "[Limited company / BTL company operation] corporation-tax-marginal-relief-uk-guide" }
+      - { id: A6, slug: "directors-loan-accountsdla-uk-guide", label: "[Limited company / BTL company operation] directors-loan-accountsdla-uk-guide" }
+      - { id: A7, slug: "does-your-business-qualify-as-a-partnership", label: "[Property partnership / LLP] does-your-business-qualify-as-a-partnership" }
+      - { id: A8, slug: "eligible-groups-for-group-relief-under-uk-corporation-tax", label: "[Limited company / BTL company operation] eligible-groups-for-group-relief-under-uk-corporation-tax" }
+      - { id: A9, slug: "hmrcs-new-guidelines-for-llps-raise-concerns", label: "[Property partnership / LLP] hmrcs-new-guidelines-for-llps-raise-concerns" }
+      - { id: A10, slug: "hybrid-limited-liability-partnership", label: "[Property partnership / LLP] hybrid-limited-liability-partnership" }
+      - { id: A11, slug: "incorporating-an-hmo-into-a-limited-company-pros-and-cons", label: "[Limited company / BTL company operation] incorporating-an-hmo-into-a-limited-company-pros-and-cons" }
+      - { id: A12, slug: "limited-companies", label: "[Limited company / BTL company operation] limited-companies" }
+      - { id: A13, slug: "limited-companies-and-btl-properties", label: "[Limited company / BTL company operation] limited-companies-and-btl-properties" }
+      - { id: A14, slug: "llp-accounts", label: "[Property partnership / LLP] llp-accounts" }
+      - { id: A15, slug: "llp-and-taxation-benefits", label: "[Property partnership / LLP] llp-and-taxation-benefits" }
+      - { id: A16, slug: "partnership-partnership-agreement-roles-types-benefits", label: "[Property partnership / LLP] partnership-partnership-agreement-roles-types-benefits" }
+      - { id: A17, slug: "register-for-uk-corporation-tax", label: "[Limited company / BTL company operation] register-for-uk-corporation-tax" }
+      - { id: A18, slug: "sole-trader-vs-partnership", label: "[Property partnership / LLP] sole-trader-vs-partnership" }
+      - { id: A19, slug: "substantial-shareholding-exemption-sse", label: "[Limited company / BTL company operation] substantial-shareholding-exemption-sse" }
+      - { id: A20, slug: "transferring-a-business-out-of-a-company", label: "[Incorporation mechanics] transferring-a-business-out-of-a-company" }
+  B:
+    label: "Bucket B - Family Investment Companies & FICs + Pension-funded property (SIPP / SSAS) + Companies House reforms / ECCTA / RoE"
+    picks:
+      - { id: B1, slug: "a-complete-guide-to-family-investment-companies-fics", label: "[Family Investment Companies & FICs] a-complete-guide-to-family-investment-companies-fics" }
+      - { id: B2, slug: "a-complete-guide-to-identity-verification-in-uk", label: "[Family Investment Companies & FICs] a-complete-guide-to-identity-verification-in-uk" }
+      - { id: B3, slug: "artificial-separation-and-vat-key-insights-from-cases", label: "[Family Investment Companies & FICs] artificial-separation-and-vat-key-insights-from-cases" }
+      - { id: B4, slug: "beginners-guide-to-cis-verification-in-the-uk", label: "[Family Investment Companies & FICs] beginners-guide-to-cis-verification-in-the-uk" }
+      - { id: B5, slug: "claim-home-office-deduction-landlords", label: "[Family Investment Companies & FICs] claim-home-office-deduction-landlords" }
+      - { id: B6, slug: "companies-house-emails-directors-for-identity-verification-under-new-rules", label: "[Family Investment Companies & FICs] companies-house-emails-directors-for-identity-verification-under-new-rules" }
+      - { id: B7, slug: "companies-house-id-verification-begins-today", label: "[Family Investment Companies & FICs] companies-house-id-verification-begins-today" }
+      - { id: B8, slug: "companies-house-reforms", label: "[Companies House reforms / ECCTA / RoE] companies-house-reforms" }
+      - { id: B9, slug: "companies-house-reforms-explained-for-business-success", label: "[Companies House reforms / ECCTA / RoE] companies-house-reforms-explained-for-business-success" }
+      - { id: B10, slug: "companies-house-reforms-navigating-the-new-landscape", label: "[Companies House reforms / ECCTA / RoE] companies-house-reforms-navigating-the-new-landscape" }
+      - { id: B11, slug: "companies-house-tightens-id-rules-what-does-it-mean", label: "[Companies House reforms / ECCTA / RoE] companies-house-tightens-id-rules-what-does-it-mean" }
+      - { id: B12, slug: "confirmation-statements", label: "[Companies House reforms / ECCTA / RoE] confirmation-statements" }
+      - { id: B13, slug: "consequences-for-roe-non-compliance", label: "[Companies House reforms / ECCTA / RoE] consequences-for-roe-non-compliance" }
+      - { id: B14, slug: "disadvantages-of-family-investment-companies-fics", label: "[Family Investment Companies & FICs] disadvantages-of-family-investment-companies-fics" }
+      - { id: B15, slug: "energy-performance-certificates-epc", label: "[Family Investment Companies & FICs] energy-performance-certificates-epc" }
+      - { id: B16, slug: "fic-campaign", label: "[Family Investment Companies & FICs] fic-campaign" }
+      - { id: B17, slug: "gas-safety-certificates", label: "[Family Investment Companies & FICs] gas-safety-certificates" }
+      - { id: B18, slug: "how-us-based-directors-of-uk-companies-can-navigate-ecctas-new-identity-verification-rules", label: "[Family Investment Companies & FICs] how-us-based-directors-of-uk-companies-can-navigate-ecctas-new-identity-verification-rules" }
+      - { id: B19, slug: "identity-verification-form", label: "[Family Investment Companies & FICs] identity-verification-form" }
+      - { id: B20, slug: "identity-verification-for-pscs-your-questions-answered", label: "[Family Investment Companies & FICs] identity-verification-for-pscs-your-questions-answered" }
+  C:
+    label: "Bucket C - IHT and estate planning + Trusts and beneficial ownership + Joint ownership & Form 17 tax planning + Inheritance — GROB, reservation of benefit + Payroll for property companies + Bookkeeping & accounting practices"
+    picks:
+      - { id: C1, slug: "a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers", label: "[Payroll for property companies] a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers" }
+      - { id: C2, slug: "agricultural-relief-for-inheritance-tax-key-benefits", label: "[IHT and estate planning] agricultural-relief-for-inheritance-tax-key-benefits" }
+      - { id: C3, slug: "comparison-of-discretionary-trusts", label: "[Trusts and beneficial ownership] comparison-of-discretionary-trusts" }
+      - { id: C4, slug: "declaration-of-trust", label: "[Trusts and beneficial ownership] declaration-of-trust" }
+      - { id: C5, slug: "ensuring-compliance-with-uk-payroll-reporting-regulations", label: "[Payroll for property companies] ensuring-compliance-with-uk-payroll-reporting-regulations" }
+      - { id: C6, slug: "essential-bookkeeping-tips-for-sole-traders", label: "[Bookkeeping & accounting practices] essential-bookkeeping-tips-for-sole-traders" }
+      - { id: C7, slug: "essential-guidelines-for-running-payroll-effectively", label: "[Payroll for property companies] essential-guidelines-for-running-payroll-effectively" }
+      - { id: C8, slug: "farmland-supply-value-drops-is-iht-reform-to-blame", label: "[IHT and estate planning] farmland-supply-value-drops-is-iht-reform-to-blame" }
+      - { id: C9, slug: "file-dormant-accounts-a-complete-guide", label: "[Bookkeeping & accounting practices] file-dormant-accounts-a-complete-guide" }
+      - { id: C10, slug: "gift-with-reservation-of-benefit", label: "[Inheritance — GROB, reservation of benefit] gift-with-reservation-of-benefit" }
+      - { id: C11, slug: "how-long-does-probate-take-in-the-uk", label: "[IHT and estate planning] how-long-does-probate-take-in-the-uk" }
+      - { id: C12, slug: "inheritance-tax-a-brief-summary", label: "[IHT and estate planning] inheritance-tax-a-brief-summary" }
+      - { id: C13, slug: "inheritance-tax-and-the-family-home", label: "[IHT and estate planning] inheritance-tax-and-the-family-home" }
+      - { id: C14, slug: "inheritance-tax-lifetime-gifts-vs-transfer-at-death", label: "[IHT and estate planning] inheritance-tax-lifetime-gifts-vs-transfer-at-death" }
+      - { id: C15, slug: "inheriting-a-house-in-the-uk", label: "[IHT and estate planning] inheriting-a-house-in-the-uk" }
+      - { id: C16, slug: "jointly-owned-property", label: "[Joint ownership & Form 17 tax planning] jointly-owned-property" }
+      - { id: C17, slug: "maximising-business-relief-to-reduce-inheritance-tax", label: "[IHT and estate planning] maximising-business-relief-to-reduce-inheritance-tax" }
+      - { id: C18, slug: "public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded", label: "[Trusts and beneficial ownership] public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded" }
+      - { id: C19, slug: "putting-a-rental-property-into-a-trust", label: "[Trusts and beneficial ownership] putting-a-rental-property-into-a-trust" }
+      - { id: C20, slug: "residence-nil-rate-band-frozen", label: "[IHT and estate planning] residence-nil-rate-band-frozen" }

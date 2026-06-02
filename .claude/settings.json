@@ -11,7 +11,16 @@
       "Edit(*)",
       "Grep(*)",
       "Glob(*)",
-      "Skill(*)"
+      "Skill(*)",
+      "Monitor(*)",
+      "TaskCreate(*)",
+      "TaskUpdate(*)",
+      "TaskGet(*)",
+      "TaskList(*)",
+      "TaskStop(*)",
+      "TaskOutput(*)",
+      "ToolSearch(*)",
+      "AskUserQuestion(*)"
     ],
     "deny": [
       "Bash(rm -rf /*)",
@@ -27,5 +36,8 @@
       "PowerShell(Remove-Item -Recurse -Force /*)",
       "PowerShell(Remove-Item -Recurse -Force ~*)"
     ]
+  },
+  "enabledPlugins": {
+    "vercel@claude-plugins-official": true
   }
 }

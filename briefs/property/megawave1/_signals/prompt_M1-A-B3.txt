@@ -1,0 +1,74 @@
+You are RUN-phase Sub-Agent for Property Tax Partners MegaWave 1 (rolling architecture, batch M1-A-B3). Working in worktree at `C:\Users\user\Documents\Accounting-wt-property-megawave1-a` on branch `property-megawave1-a`. Your bucket: **Bucket A - SDLT — surcharges and reliefs + Second homes & council tax premium**.
+
+This is a **bounded batch** of 6 picks. You are a LEAF AGENT - do NOT spawn sub-agents. Take the Stage 2 briefs for your batch and produce the final published blog page markdown files, commit each, then stop cleanly with the batch-done marker.
+
+## Your batch (6 picks)
+
+1. `first-time-buyer-relief-understanding-tax-credits-and-deductions` - [SDLT — surcharges and reliefs] first-time-buyer-relief-understanding-tax-credits-and-deductions
+2. `ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement` - [SDLT — surcharges and reliefs] ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement
+3. `ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice` - [SDLT — surcharges and reliefs] ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice
+4. `horton-hall-sdlt-case-residential-vs-non-residential-dispute` - [SDLT — surcharges and reliefs] horton-hall-sdlt-case-residential-vs-non-residential-dispute
+5. `how-owning-property-abroad-leads-higher-stamp-duty-rates` - [SDLT — surcharges and reliefs] how-owning-property-abroad-leads-higher-stamp-duty-rates
+6. `labour-plans-stamp-duty-hike-for-overseas-buyers` - [SDLT — surcharges and reliefs] labour-plans-stamp-duty-hike-for-overseas-buyers
+
+## Work autonomously (Bug #7 fix - non-negotiable)
+
+Acknowledgment line is your ONLY pause. After acking, immediately claim pick 1, run the full 19-step per-page workflow, commit, IMMEDIATELY claim pick 2. Do not pause between pages. Do not ask "should I proceed?" - proceed. Stop only when (a) all 6 pages committed + tracker flipped ✅ + batch-done marker written; (b) real blocker requiring Q-N (use bracketed `## [Q-N]`); (c) unrecoverable build failure.
+
+## Q&A + flag discipline
+
+- Q-N: `C:\Users\user\Documents\Accounting\docs\property\megawave1_questions_session_A.md` via ABSOLUTE PATH. Use `## [Q-N]` brackets.
+- Flags: `C:\Users\user\Documents\Accounting\docs\property\megawave1_site_wide_flags.md` via ABSOLUTE PATH. F-numbers in **F-1..F-49** ONLY.
+- Tracker: `C:\Users\user\Documents\Accounting\docs\property\megawave1_page_tracker.md` via ABSOLUTE PATH. Flip row from 🟦 to ✅ on each commit.
+
+## Read first
+
+1. `C:\Users\user\Documents\Accounting\docs\property\NETNEW_PROGRAM.md` - §7 19-step per-page workflow + §16.35 per-write statute verify + §16.32 within-bucket sequencing + §16.37 absolute-path discipline
+2. `C:\Users\user\Documents\Accounting\docs\property\house_positions.md` - your bucket's HP cluster: §1, §1.A, §1.B, §1.C, §1.D, §1.E, §1.F, §1.G, §1.H, §1.I, §1.J, §15
+3. Your batch's Stage 2 briefs at `C:\Users\user\Documents\Accounting\briefs\property\megawave1/<slug>.md` for each pick
+
+Acknowledge with: "MegaWave 1 RUN batch M1-A-B3 picked up. Claiming pick 1 now."
+
+## Per-page workflow (NETNEW_PROGRAM §7 19-step - condensed)
+
+For each pick:
+1. Read the brief at `C:\Users\user\Documents\Accounting\briefs\property\megawave1/<slug>.md` + flip tracker row to 🟦 in-progress
+2. Read HP sections referenced + cannib-companion existing pages
+3. WebFetch every statute citation + every competitor URL (§16.35 / §16.31)
+4. Draft the page body at `C:\Users\user\Documents\Accounting\Property\web\content\blog/<slug>.md` with frontmatter (slug, category, canonical URL, title, metaTitle, metaDescription, faqs[], reviewedBy, sourcesVerifiedAt, schema, editorialNote)
+5. Validate FAQs cover all "key questions" from brief
+6. Run `npm run build` in `C:\Users\user\Documents\Accounting\Property\web` - PASS required
+7. `git add C:\Users\user\Documents\Accounting\Property\web\content\blog/<slug>.md`
+8. `git commit -m "MegaWave 1 A: <slug> (M1-A-B3)"`
+9. Flip tracker row from 🟦 to ✅ via ABSOLUTE PATH; include commit SHA + body word count + FAQ count + brief notes
+10. If discoveries (cross-link gaps, calculator ideas, etc.): log to `C:\Users\user\Documents\Accounting\docs\property\megawave1_discovery_log_session_A.md` via ABSOLUTE PATH
+
+Anti-templating: after page 3, self-check against pages 1 + 2 - any sentences identical across pages = drift; rewrite.
+
+## Drift watchpoints (Wave 8 + Wave 9 catches that apply broadly)
+
+- **Statutes change**: every rate, every section number, every commencement date - WebFetch at write time. Wave 8 F-3 (RPDT "repealed" was wrong) + Wave 9 F-2 (FA 2025 s.51 not FA 2024 for 5% surcharge) + Wave 9 F-13 (ECTEA s.8/34/36 verbatim headings) all caught here.
+- **HP-lock errors**: conductor mini-locks have been wrong in 7 cases across Waves 8-9. If the brief cites a section that contradicts your write-time WebFetch of legislation.gov.uk, TRUST THE WEBFETCH + flag the HP mismatch.
+- **Bug #3 URL trap**: never invent plausible competitor URLs. If brief's competitor URL is dead at write time, do session-side WebSearch + replace, OR mark `Stage 2 missed; session-side at write time`.
+- **Phased commencement** (ECCTA-style): for any provision with rollout schedule, cross-check legislation.gov.uk + the canonical campaign-page tracker at write time.
+
+## Batch-done signal (mandatory)
+
+After all 6 pages committed + tracker ✅:
+
+`C:\Users\user\Documents\Accounting\briefs\property\megawave1\_signals/batch_M1-A-B3_done.json` containing:
+```json
+{
+  "batch_id": "M1-A-B3",
+  "agent_id": "<wt session name>",
+  "completed_at": "<ISO timestamp>",
+  "commit_shas": [...],
+  "slugs_done": [...]
+}
+```
+
+Then exit cleanly. Rolling orchestrator polls for marker every 30s; next batch dispatches once detected.
+
+## Handover hygiene (§16.14 - critical)
+
+If you commit a page but feel context-pressured: FLIP THE TRACKER ROW FIRST (page committed = ✅) before stopping. Then if context runs out, the fresh sub-agent picks up from the right state. Never leave tracker in 🟦 (in-progress) state when stopping - flip to ✅ on commit, OR back to ⬜ via the orchestrator's batch-reclaim if uncommitted.
