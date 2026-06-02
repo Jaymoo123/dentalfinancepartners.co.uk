@@ -80,6 +80,12 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+*.err
+*_err.txt
+*_tmp_*
+
+# Engine QA/verdict cache (regenerated; never committed)
+optimisation_engine/.cache/
 
 # Documentation (keep in repo but ignore editor temp files)
 .docs/*.tmp
