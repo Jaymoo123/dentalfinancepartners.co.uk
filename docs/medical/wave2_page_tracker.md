@@ -21,9 +21,14 @@ scripts/medical_flat_link_audit.py.
 | E1 | buying-into-gp-partnership-capital-parity-explained | GP Tax & Accounts | §1, §4 | done | 2870 | 14 |
 | E2 | gp-partnership-mutual-assessment-period-what-to-check | GP Tax & Accounts | §1, §4 | done | 2878 | 14 |
 | E3 | financing-gp-partnership-buy-in-tax-relief | GP Tax & Accounts | §1 (ITA 2007 s.398) | done | 2853 | 14 |
-| F1 | retiring-from-gp-partnership-tax-capital-account | GP Tax & Accounts | §1, §4 | todo | | |
-| F2 | gp-practice-merger-accounts-tax-explained | GP Tax & Accounts | §1, §4 | todo | | |
-| F3 | gp-expense-sharing-vs-full-partnership | GP Tax & Accounts | §1 | todo | | |
+| F1 | retiring-from-gp-partnership-tax-capital-account | GP Tax & Accounts | §1, §4, §9 | done | 2850 | 14 |
+| F2 | gp-practice-merger-accounts-tax-explained | GP Tax & Accounts | §1, §4 | done | 3012 | 14 |
+| F3 | gp-expense-sharing-vs-full-partnership | GP Tax & Accounts | §1 | done | 2900 | 14 |
+
+## Wave 2 close (2026-06-03)
+- 18 pages WRITTEN + VERIFIED. Six-check passed all 18 (body 2,803-3,425; 14 FAQs each; metaTitle <=58; metaDescription <=158; 0 em-dashes; 0 class/id/style; £ not "pounds"). Flat-link audit 0 HARD 404 corpus-wide (73 posts). Frontmatter 73/73 valid. Build exit 0.
+- COMMITTED fa8400ab (main) + DEPLOYED to https://www.medicalaccounts.co.uk (live, 200s) + IndexNow 73 URLs (202).
+- HP-lock gate adds this wave: §6.A dispensing-drug VAT zero-rating (Sch 8 Group 12). Deferred future HP locks: basis-period reform (BIM81201/BIM81310), qualifying-loan-interest-relief (ITA 2007 s.398/s.24A).
 
 ## HP-lock gate log
 - Cluster A (PASSED 2026-06-03): GMS funding structure verified (SI 2015/1862, SFE, Carr-Hill, QOF aspiration/achievement, DES/LES) at NHS England/BMA/PCSE. Global Sum/QOF figures hedged per §3 VERIFY flag. No HP gap.
