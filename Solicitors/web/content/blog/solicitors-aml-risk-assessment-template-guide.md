@@ -11,6 +11,12 @@ altText: "Solicitor reviewing AML risk assessment documents in a law firm office
 image: ""
 h1: "How Should a Solicitor Structure an AML Risk Assessment for Their Firm?"
 summary: "A solicitor must complete a firm-wide AML risk assessment under the Money Laundering Regulations. This guide explains how to structure it, covering client risk, geographic risk, and service-specific vulnerabilities. It includes practical examples for a typical high-street firm."
+keyTakeaways:
+  - "The Money Laundering Regulations 2017 require every SRA-regulated firm to hold a firm-wide AML risk assessment, reviewed at least annually."
+  - "The assessment must cover client risk, service-specific risk, geographic risk, and delivery channel risk, each with a low, medium or high rating."
+  - "Conveyancing and corporate work are the highest-risk legal services, so they should drive enhanced due diligence in your policy."
+  - "A generic or copied template will be rejected; the assessment must reflect your own clients, services, and jurisdictions."
+  - "In 2023 the SRA fined firms with inadequate AML risk assessments, with penalties ranging from £5,000 to £50,000."
 schema: ""
 faqs:
   - question: "What is the difference between a firm-wide risk assessment and an AML policy?"

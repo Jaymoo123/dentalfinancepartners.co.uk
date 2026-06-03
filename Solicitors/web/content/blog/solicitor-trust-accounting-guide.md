@@ -1,175 +1,144 @@
 ---
-title: "Solicitor Trust Accounting: Complete Guide to SRA Accounts Rules Compliance"
+title: "Solicitor Trust Accounting: The Practical Guide to Client Money and the SRA Accounts Rules"
 slug: "solicitor-trust-accounting-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-trust-accounting-guide"
 date: "2026-04-01"
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
-metaTitle: "Solicitor Trust Accounting: SRA Compliance Guide 2026"
-metaDescription: "Client money must reach a designated client account by the next working day. Monthly reconciliations, segregation rules, and SRA breach reporting."
-altText: "UK solicitor reviewing trust accounting records and client money reconciliation statements"
+metaTitle: "Solicitor Trust Accounting: Client Money Guide for UK Firms"
+metaDescription: "How to run client money safely: the client account, three-way reconciliation every five weeks, ledgers, the COFA's role, software and the common pitfalls that trigger SRA action."
+altText: "UK solicitor reviewing client ledger balances against a client account bank statement during a three-way reconciliation"
 image: ""
-h1: "Solicitor Trust Accounting: Complete Guide to SRA Accounts Rules Compliance"
-summary: "Essential guide covering solicitor trust accounting requirements under SRA Accounts Rules, including client money handling, reconciliations, and compliance obligations for UK law firms."
+h1: "Solicitor Trust Accounting: The Practical Guide to Client Money and the SRA Accounts Rules"
+summary: "A working guide to solicitor trust accounting: holding client money in the client account, the three-way reconciliation cycle, client ledgers and controls, the COFA's responsibilities, choosing software, and the pitfalls that lead to SRA breaches. Links to the detailed rule-by-rule siblings without repeating them."
+keyTakeaways:
+  - "Client money must be held in a separately named client account and never mixed with the firm's own funds, even briefly (Rules 3 and 4)."
+  - "The client account must be reconciled three ways at least every five weeks under Rule 8.3, signed off by the COFA or a manager."
+  - "Rule 3.3 bans using the client account to provide banking facilities; every movement must relate to a regulated legal service."
+  - "A firm is exempt from the accountant's report under Rule 12.2 if client money stays within an average of £10,000 and a maximum of £250,000, or is Legal Aid Agency money only."
+  - "Client money records must be kept for at least six years, and a client ledger must never be allowed to go overdrawn."
 schema: ""
 faqs:
-  - question: "What happens if I accidentally mix client money with business money?"
-    answer: "If you discover mixed funds, separate them immediately using your business money to cover any shortfall. Document the error, investigate how it happened, and strengthen procedures to prevent recurrence. Consider notifying your professional indemnity insurers and seek advice on whether SRA notification is required. The key is acting quickly once you discover the problem."
-  - question: "How often must I reconcile my client accounts?"
-    answer: "The SRA Accounts Rules require monthly reconciliation of client accounts. This includes reconciling your client cash book with bank statements, ensuring individual client balances match total account balances, and completing all reconciliations within a reasonable time after month-end. Most firms aim to complete reconciliations within 10-15 working days of month-end."
-  - question: "Can I hold client money in my business current account temporarily?"
-    answer: "No, client money must go into a designated client account by the end of the next working day after receipt. There are very limited exceptions, such as money received after banking hours on the last day before a bank holiday, but these are rare. Mixing client money with business funds, even temporarily, is a serious breach of the SRA Accounts Rules."
-  - question: "Do I need an accountant's report if I handle small amounts of client money?"
-    answer: "You need an accountant's report if your annual client money turnover exceeds £10,000 or you hold more than £4,000 of client money for longer than two weeks. If you fall below both thresholds, you're exempt from the accountant's report requirement but must still comply with all other SRA Accounts Rules provisions including proper record keeping and reconciliations."
+  - question: "Is 'trust accounting' the same as the SRA client account?"
+    answer: "Largely, yes. Under the SRA Accounts Rules 2019 the regulator's own terms are 'client money' and the 'client account'. 'Trust accounting' is the practitioner-search phrase for the same discipline: handling money that is not the firm's own. It also covers genuine trustee and executor money, where the firm acts as a trustee or office-holder and holds funds in that capacity. The controls are the same: total separation from the firm's money, accurate ledgers, and regular reconciliation."
+  - question: "How often must a firm reconcile its client account?"
+    answer: "At least every five weeks under Rule 8.3 of the SRA Accounts Rules 2019. The reconciliation is a three-way match: the client account bank statement, the firm's cash book, and the total of all individual client ledger balances must agree. The statement of the comparison must be signed off by the COFA or a manager, and any difference must be investigated and corrected promptly rather than carried forward."
+  - question: "Can a firm hold client money in its business account for a short time?"
+    answer: "No. Client money must be paid into a client account promptly, and it must be kept separate from the firm's own money under Rule 4. Holding client money in the business account, even briefly, is a breach. Money received outside banking hours should be banked into the client account on the next working day. If client and office money are received together, the client element must reach the client account without delay."
+  - question: "When is a firm exempt from the accountant's report?"
+    answer: "Under Rule 12.2 a firm that has held client money can be exempt from obtaining an accountant's report if all the client money it held stayed within an average of £10,000 and a maximum of £250,000 across the accounting period, or if the only client money it held was money from the Legal Aid Agency. Firms above those limits must obtain a report; the exemption removes only the report, not the underlying duty to comply with every other rule."
+  - question: "Can a client account be used to move money for a client as a banking service?"
+    answer: "No. Rule 3.3 prohibits using a client account to provide banking facilities. Every payment into, transfer within, or withdrawal from the client account must relate to a regulated legal service the firm is actually delivering for that client. Passing funds through the client account with no underlying legal work, as a convenience or to move money on a client's behalf, is one of the breaches the SRA treats most seriously."
 ---
 
-<p>Solicitor trust accounting forms the backbone of legal practice financial management in the UK. Every law firm handling client money must comply with the SRA Accounts Rules, which govern how solicitors manage funds that don't belong to them. Getting this wrong can result in regulatory action, hefty fines, or even striking off.</p>
+<p>Solicitor trust accounting is the discipline of looking after money that is not yours. For a law firm in England and Wales that means client money: completion funds, damages and settlements, money on account of costs and disbursements, court and stakeholder funds, and genuine trustee or executor money the firm holds as an office-holder. The rules that govern it are the <strong>SRA Accounts Rules 2019</strong>, in force since 25 November 2019, and getting them wrong is one of the fastest routes to regulatory action.</p>
 
-<p>This guide explains the key requirements for solicitor trust accounting, from basic client money handling to advanced reconciliation procedures.</p>
+<p>This guide is the practical version: how the client account works, how the three-way reconciliation cycle keeps you safe, what your ledgers and controls have to do, where the COFA sits, how to choose software, and the everyday pitfalls that turn into breaches. Where a single rule deserves its own deep dive, this page links the detailed sibling guide rather than repeating it.</p>
 
-<h2>What is Solicitor Trust Accounting?</h2>
+<h2>What Solicitor Trust Accounting Actually Covers</h2>
 
-<p>Solicitor trust accounting is the system used to manage client money — funds held by law firms that belong to clients or third parties. Under the SRA Accounts Rules, solicitors must keep client money completely separate from their own business funds.</p>
+<p>In the SRA's own language there is no "trust account": the regulated terms are <strong>client money</strong> and the <strong>client account</strong>. "Trust accounting" is the search-and-practice term for the same job, plus the narrower case where the firm genuinely acts as a trustee or executor and holds money in that capacity. Either way the core obligation is identical: money that belongs to a client or a third party is held separately from the firm's own funds and returned to the right person when it is due.</p>
 
-<p>Client money includes advance payments for costs, money received on behalf of clients (like settlement funds), and deposits held in connection with legal transactions. It does not include agreed fees for work already completed.</p>
+<p>Client money (Rule 2.1) is money the firm holds or receives relating to regulated services, on behalf of a third party, in its capacity as a trustee or office-holder, or in respect of unpaid fees and disbursements before a bill is delivered. It is <em>not</em> the firm's income. The firm's own fees, once properly billed, are office money and belong in the business account. The full definition, with the edge cases, is set out in our companion guide to <a href="/blog/sra-accounts-rules/what-counts-as-client-money-uk-solicitors">what counts as client money for UK solicitors</a>.</p>
 
-<p>The fundamental principle is simple: client money must be held in trust and returned to the rightful owner on demand. However, the practical implementation requires robust accounting systems and strict compliance procedures.</p>
+<h2>The Client Account: Rules 3 and 4</h2>
 
-<h2>SRA Accounts Rules: Core Requirements</h2>
+<p>Client money lives in a <strong>client account</strong> (Rule 3): a separate account at a bank or building society branch in England and Wales, with a name that includes the firm's name and the word "client" so the funds are identifiable as client money. Most firms run a general client account for routine matters and open separate designated client accounts where a specific matter calls for ring-fenced funds.</p>
 
-<p>The SRA Accounts Rules 2019 set out detailed requirements for handling client money. The key obligations include:</p>
-
-<ul>
-<li><strong>Separate client accounts:</strong> Client money must be held in designated client accounts at approved banks</li>
-<li><strong>Same-day banking:</strong> Client money received must be paid into a client account by the end of the next working day</li>
-<li><strong>Proper accounting records:</strong> Detailed records showing all client money transactions</li>
-<li><strong>Regular reconciliations:</strong> Monthly reconciliation of client account balances</li>
-<li><strong>Annual compliance:</strong> Accountant's reports and delivery to the SRA</li>
-</ul>
-
-<p>Firms with annual client money turnover exceeding £10,000, or holding more than £4,000 of client money for longer than two weeks, must obtain an accountant's report annually.</p>
-
-<h2>Client Money vs Business Money</h2>
-
-<p>Understanding what constitutes client money is crucial for proper solicitor trust accounting. The distinction affects where funds must be held and how they're treated.</p>
-
-<h3>Client Money Includes:</h3>
-<ul>
-<li>Advance payments for future costs and disbursements</li>
-<li>Money received on behalf of clients (damages, settlements)</li>
-<li>Deposits in property transactions</li>
-<li>Court funds and stakeholder money</li>
-<li>Unpaid professional disbursements</li>
-</ul>
-
-<h3>Business Money Includes:</h3>
-<ul>
-<li>Agreed fees for work completed</li>
-<li>Money for costs where a bill has been delivered</li>
-<li>Interest earned on general client accounts</li>
-<li>Office money temporarily in client accounts (limited circumstances)</li>
-</ul>
-
-<p>The timing of when money changes classification is critical. For example, an advance payment becomes business money once you deliver a bill and apply the funds to pay it.</p>
-
-<h2>Setting Up Client Account Systems</h2>
-
-<p>Effective solicitor trust accounting starts with proper systems. Your client account setup should include:</p>
-
-<p><strong>Bank Accounts:</strong> Separate designated client accounts at banks approved by the SRA. Many firms use a general client account for most transactions, plus separate designated client accounts for specific matters requiring extra protection.</p>
-
-<p><strong>Accounting Software:</strong> Most firms use specialized legal accounting software that handles trust accounting automatically. The system should track client money separately, generate required reports, and flag potential compliance issues.</p>
-
-<p><strong>Documentation Procedures:</strong> Clear procedures for recording all client money transactions, including the source, purpose, and any restrictions on use.</p>
-
-<p>A typical 10-partner commercial firm might handle £2-3 million of client money annually across 500+ active matters. Without robust systems, tracking this volume becomes impossible.</p>
-
-<h2>Daily Trust Accounting Procedures</h2>
-
-<p>Successful solicitor trust accounting relies on consistent daily procedures:</p>
-
-<p><strong>Receipt of Client Money:</strong> Record the source, amount, client matter, and any special conditions. Pay into the client account by the next working day. Issue receipts showing the money is held as client money.</p>
-
-<p><strong>Payments from Client Account:</strong> Only make payments with proper authority (client instructions, court orders, or statutory requirements). Ensure sufficient cleared funds for the specific client matter.</p>
-
-<p><strong>Transfers Between Accounts:</strong> Moving money from client account to business account requires proper authorization and must be for the correct client matter.</p>
-
-<p>For example, when a property transaction completes, you might receive £500,000 in completion funds. This goes straight into the client account. You can only transfer your legal fees to the business account after delivering a bill and with proper authority.</p>
-
-<h2>Reconciliation Requirements</h2>
-
-<p>Monthly reconciliation is mandatory for solicitor trust accounting. This involves three key reconciliations:</p>
-
-<p><strong>Client Cash Book Reconciliation:</strong> Reconcile your internal records of client account transactions with the bank statements. This should happen monthly and identify any discrepancies.</p>
-
-<p><strong>Client Matter Balance Reconciliation:</strong> The total of all individual client matter balances should equal the total client account balance. Any differences indicate errors in allocation.</p>
-
-<p><strong>Client Account Reconciliation:</strong> Compare your client cash book balance with the actual bank balance, accounting for unpresented cheques and uncleared deposits.</p>
-
-<p>These reconciliations must be completed within a reasonable time after month-end. Many COFAs aim to complete them within 10 working days.</p>
-
-<h2>Common Trust Accounting Errors</h2>
-
-<p>Even experienced firms can make mistakes with solicitor trust accounting. Common errors include:</p>
+<p>Two rules sit underneath this and are the ones that catch firms out:</p>
 
 <ul>
-<li><strong>Mixing funds:</strong> Accidentally paying business expenses from client account</li>
-<li><strong>Timing issues:</strong> Transferring money before delivering bills or obtaining authority</li>
-<li><strong>Allocation errors:</strong> Recording transactions against wrong client matters</li>
-<li><strong>Reconciliation delays:</strong> Failing to identify and correct differences promptly</li>
-<li><strong>Interest obligations:</strong> Not paying interest on large balances when required</li>
+<li><strong>Keep it separate (Rule 4).</strong> Client money must be kept separate from the firm's own money. There is no "temporary" exception for parking client funds in the office account, even for a day. Where client and office money arrive together, the client element must reach the client account without delay.</li>
+<li><strong>No banking facilities (Rule 3.3).</strong> The client account must not be used to provide banking facilities. Every payment in, transfer, or withdrawal has to relate to a regulated service the firm is actually delivering for that client. Running money through the client account with no underlying legal work, however well-intentioned, is a breach the SRA treats very seriously.</li>
 </ul>
 
-<p>A Manchester-based firm recently faced SRA action after using client money to pay supplier invoices during a cash flow crisis. The partners had to reimburse £25,000 immediately and faced regulatory sanctions.</p>
+<p>Client money must be returned <strong>promptly</strong> once there is no longer a proper reason to hold it (Rule 2.5). Residual balances left sitting on the ledger long after a matter has closed are a recurring source of findings, so a routine to identify and return them is part of good housekeeping.</p>
 
-<h2>Technology and Trust Accounting</h2>
+<h2>The Backbone: Three-Way Reconciliation Every Five Weeks</h2>
 
-<p>Modern solicitor trust accounting relies heavily on technology. Most firms use integrated practice management systems that combine case management, time recording, and trust accounting.</p>
+<p>Reconciliation is the single most important control in trust accounting, and Rule 8.3 sets the standard: the client account must be reconciled <strong>at least every five weeks</strong>. It is a <strong>three-way</strong> comparison, and all three figures must agree:</p>
 
-<p>Key features to look for include automated bank reconciliation, real-time client balance reporting, and built-in compliance checks. Cloud-based systems offer additional benefits like automatic backups and remote access for partners.</p>
+<ol>
+<li>The <strong>client account bank statement</strong> balance.</li>
+<li>The firm's <strong>cash book</strong> (the running record of client account receipts and payments).</li>
+<li>The total of every individual <strong>client ledger</strong> balance added together.</li>
+</ol>
 
-<p>However, technology isn't foolproof. You still need proper procedures, regular reviews, and staff training to maintain compliance.</p>
+<p>If the three do not match, money is unaccounted for, mis-allocated, or recorded against the wrong matter, and the difference has to be found and corrected rather than carried forward. The statement of the reconciliation must be <strong>signed off by the COFA or a manager</strong>, which makes the check a documented, accountable event rather than a quiet desk task. A common, avoidable failing is letting an unexplained reconciling difference roll from one period to the next. It should be investigated and cleared each cycle.</p>
 
-<h2>Record Keeping and Retention</h2>
+<p>Five weeks is the outer limit, not a target. Many firms reconcile monthly so the cycle never drifts past the rule, and so that errors surface while they are still small and traceable. The mechanics, the worked example, and the sign-off detail are covered in our dedicated guide to <a href="/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation">solicitor client account reconciliation</a>.</p>
 
-<p>The SRA requires detailed records for all client money transactions. These must be kept for at least six years and include:</p>
+<h2>Client Ledgers and Daily Controls</h2>
+
+<p>The reconciliation only works if the underlying records do. Each matter needs its own <strong>client ledger</strong> showing every receipt and payment of client money for that client, so that at any moment you can state exactly how much of the pooled client account belongs to whom. The daily controls that keep those ledgers honest are straightforward but unforgiving:</p>
+
+<p><strong>On receipt.</strong> Record the source, amount, matter, and any condition attached, allocate it to the correct client ledger, and bank it into the client account promptly. Money received outside banking hours is banked on the next working day.</p>
+
+<p><strong>On payment out.</strong> Pay only on proper authority (client instruction, court order, or statutory requirement) and only against cleared funds held for <em>that</em> matter. A client ledger must never go overdrawn: paying out more than a matter holds spends another client's money and creates a shortfall that has to be replaced from the firm's own funds immediately.</p>
+
+<p><strong>On transfer to office.</strong> Money only moves from client to business account once it has genuinely become office money, which usually means a bill has been delivered and the transfer is for the billed amount on that matter. Transferring before the bill, or for the wrong matter, is a classic timing breach.</p>
+
+<p>Consider an anonymised conveyancing example. A firm receives completion funds for a purchase: the whole sum is client money and goes straight to the client account, allocated to that matter's ledger. The firm cannot move its fee to the office account until it has delivered a bill, and even then only the billed amount, leaving the balance held for the client. Get the sequence right and the ledger reconciles; get it wrong and the firm has either taken its fee early or left a phantom balance behind.</p>
+
+<h2>Interest on Client Money: Rule 7</h2>
+
+<p>Where the firm holds client money, Rule 7 requires it to account to the client (or relevant third party) for a <strong>fair sum of interest</strong>. "Fair" is judged by the amount held and how long it is held, and the firm should have a written interest policy that explains its approach. This is a fairness duty, not a fixed rate, and it is separate from the VAT and tax treatment of the firm's own income. Our guide to <a href="/blog/sra-accounts-rules/handling-client-money-interest-sra-rules">handling client money interest under SRA Rule 7</a> works through a sensible policy.</p>
+
+<h2>The COFA and the Compliance Spine</h2>
+
+<p>Every SRA-regulated firm appoints a <strong>COFA</strong> (Compliance Officer for Finance and Administration), who carries primary responsibility for the firm's compliance with the Accounts Rules. In practice the COFA owns the reconciliation sign-off, monitors exception reports (old balances, overdrawn ledgers, unusual transactions), and decides when a problem has to be recorded or reported. The role is best supported by a routine monthly review rather than a year-end scramble. The full duties are set out in our guide to the <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA's responsibilities for UK law firms</a>.</p>
+
+<h2>The Accountant's Report and the Rule 12 Exemption</h2>
+
+<p>A firm that has held client money during its accounting period normally has to obtain an <strong>accountant's report</strong> (Rule 12), prepared by an independent reporting accountant within six months of the period end and delivered to the SRA only where it is qualified. There are two routes to <strong>exemption</strong> under Rule 12.2:</p>
 
 <ul>
-<li>Client cash books showing all receipts and payments</li>
-<li>Client matter ledgers for each individual client</li>
-<li>Monthly reconciliation statements</li>
-<li>Bank statements and paying-in books</li>
-<li>Copy client bills and authorities for payments</li>
+<li>All the client money held stayed within an <strong>average of £10,000 and a maximum of £250,000</strong> across the period; or</li>
+<li>The only client money held was money received from the <strong>Legal Aid Agency</strong>.</li>
 </ul>
 
-<p>Digital records are acceptable, but you must have proper backup procedures. Many firms keep both digital and physical copies of key documents.</p>
+<p>The exemption removes the report, not the rules: an exempt firm still has to keep proper records, reconcile every five weeks, and comply with everything else. The exact test, with how the average and maximum are measured, is in our guide to the <a href="/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds">SRA accountant's report exemption thresholds</a>.</p>
 
-<h2>Compliance Monitoring and Reviews</h2>
+<h2>Choosing Trust Accounting Software</h2>
 
-<p>Regular internal reviews help maintain solicitor trust accounting standards. Most firms conduct monthly compliance checks covering:</p>
+<p>Modern firms run client money through legal accounting or practice management software rather than a spreadsheet, and for good reason: volume makes manual tracking unsafe. The features that matter for compliance are the ones that mirror the rules. Look for:</p>
 
-<p>Account reconciliations, compliance with banking deadlines, proper authorization for all payments, and client balance reviews for potential issues.</p>
+<ul>
+<li>Strict separation of client and office ledgers, with a hard block on overdrawing a client ledger.</li>
+<li>A built-in <strong>three-way reconciliation</strong> tool (bank statement, cash book, ledger total) with a dated, signed audit trail.</li>
+<li>Exception and aged-balance reporting, so residual and dormant balances surface automatically.</li>
+<li>Bank-feed or statement import to reduce keying errors, with the reconciliation still reviewed by a person.</li>
+<li>A clear record of authorities and bills behind every client-to-office transfer.</li>
+</ul>
 
-<p>COFAs should also review exception reports monthly, covering items like old client balances, negative balances, and unusual transactions. For detailed guidance on COFA responsibilities, see our <a href="/sra-compliance">SRA compliance guide</a>.</p>
+<p>Software reduces error; it does not remove responsibility. The controls, the monthly review, and staff training are what keep the system honest. A tool that reconciles automatically is only as reliable as the allocations fed into it.</p>
 
-<h2>When Things Go Wrong</h2>
+<h2>Records and Retention</h2>
 
-<p>If you discover problems with your solicitor trust accounting, act immediately. The SRA takes a dim view of delays in addressing compliance issues.</p>
+<p>The Accounts Rules require accurate, contemporaneous records of all client money dealings, retained for at least <strong>six years</strong>. In practice that means the cash book, the individual client ledgers, the periodic reconciliation statements, bank statements, and the bills and authorities behind transfers. Digital records are acceptable provided there is a reliable backup regime; many firms keep both digital and key paper copies.</p>
 
-<p>Steps to take include investigating the full extent of problems, correcting any shortfalls immediately (using business money if necessary), notifying your professional indemnity insurers, and considering whether to report to the SRA.</p>
+<h2>The Common Pitfalls</h2>
 
-<p>Most importantly, get specialist advice quickly. Trust accounting problems can escalate rapidly and may require immediate SRA notification.</p>
+<p>Most breaches are not exotic. They cluster around a handful of recurring failures:</p>
 
-<h2>Getting Professional Help</h2>
+<ul>
+<li><strong>Mixing money:</strong> paying an office cost from the client account, or leaving client money in the business account "for now".</li>
+<li><strong>Overdrawn client ledgers:</strong> paying out more for a matter than it holds, spending another client's money in the process.</li>
+<li><strong>Premature transfers:</strong> moving the firm's fee to office before a bill is delivered, or for the wrong matter.</li>
+<li><strong>Reconciliation drift:</strong> letting the five-week cycle slip, or carrying an unexplained difference forward instead of clearing it.</li>
+<li><strong>Banking-facility breaches:</strong> passing funds through the client account with no underlying legal service (Rule 3.3).</li>
+<li><strong>Residual balances:</strong> failing to return small balances promptly once the matter is finished (Rule 2.5).</li>
+<li><strong>Interest:</strong> holding sizeable balances without a fair-interest policy under Rule 7.</li>
+</ul>
 
-<p>Solicitor trust accounting can be complex, particularly for larger firms or those handling specialized transactions. Many firms benefit from working with accountants who understand legal practice requirements.</p>
+<p>For an anonymised cautionary case: a firm under cash-flow pressure used client account funds to meet a supplier cost, intending to replace them. That is a shortfall the moment it happens, a clear breach regardless of intent, and the firm had to make good the client account from its own money and deal with the regulatory consequences. The lesson is blunt: client money is never a short-term liquidity source. A fuller list of the breaches that trigger SRA attention is in our guide to <a href="/blog/sra-accounts-rules/sra-accounts-rules-explained-for-uk-solicitors">the SRA Accounts Rules explained for UK solicitors</a>.</p>
 
-<p>Professional help is particularly valuable for setting up new systems, training staff, resolving compliance issues, and preparing for SRA inspections. The cost of good advice is minimal compared to the potential consequences of getting it wrong.</p>
+<h2>When Something Goes Wrong</h2>
 
-<p>For more information about specialist legal accounting services, visit our <a href="/services">services page</a> or <a href="/contact">contact us</a> directly.</p>
+<p>If you find a shortfall or a serious breach, act at once. Correct any shortfall immediately, using the firm's own money where necessary, and restore the client ledger. Investigate how it happened and tighten the procedure that allowed it. Document what you found and what you did. Consider whether your professional indemnity insurers should be notified, and assess, through the COFA, whether the matter needs to be reported to the SRA. The regulator takes a far dimmer view of a breach that was concealed or left to fester than of one that was caught, corrected, and reported promptly. Where the position is unclear, take specialist advice quickly: client money problems escalate fast.</p>
 
-<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
-<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to SRA Accounts Rules compliance, client money handling, and trust accounting.</p>
-<p><a href="/blog/sra-compliance-trust-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete SRA Compliance Guide →</a></p>
-</div>
+<h2>Getting It Right From the Start</h2>
+
+<p>Solid trust accounting is not complicated, but it is unforgiving of drift. The firms that stay clear of trouble do the same few things well: they keep client money rigorously separate, they reconcile three ways at least every five weeks with the COFA signing off, they never let a client ledger go overdrawn, and they return money promptly when its job is done. Build those habits into the software, the monthly review, and the team's training, and compliance becomes the by-product of a system that works rather than an annual panic.</p>
+
+<p>For specialist support with setting up client account systems, training staff, or preparing for the accountant's report, see our <a href="/services">services page</a> or <a href="/contact">contact us</a> directly.</p>

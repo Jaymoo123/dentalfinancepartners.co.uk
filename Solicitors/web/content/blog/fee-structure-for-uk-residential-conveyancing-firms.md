@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing a conveyancing fee structure document in a mode
 image: ""
 h1: "How Should a UK Law Firm Structure Its Conveyancing Fee for Clients?"
 summary: "A clear guide for UK solicitors on structuring residential conveyancing fees. Covers fixed fee conveyancing, the no completion no fee model, referral fee rules, and SRA compliance considerations for law firms."
+keyTakeaways:
+  - "Fixed fee conveyancing is the dominant UK model, typically £800 to £2,500, with excluded items listed in the client care letter."
+  - "No completion no fee creates a conflict-of-interest risk, so you need a documented policy for advising clients to withdraw."
+  - "Referral fees are legal but must be disclosed to the client in writing, and non-disclosure can attract SRA fines."
+  - "Referral fees for conveyancing are standard-rated for VAT at 20%, so check each introducer's VAT status."
+  - "Disbursement money received in advance is client money and must stay in the client account until the cost is paid."
 schema: ""
 faqs:
   - question: "Can a UK law firm charge a fixed fee for conveyancing and then add extra charges later?"

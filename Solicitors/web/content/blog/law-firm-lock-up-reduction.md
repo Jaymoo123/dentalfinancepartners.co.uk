@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing financial reports to reduce law firm lock-up an
 image: ""
 h1: "Law Firm Lock-Up Reduction: Essential Strategies for UK Legal Practices"
 summary: "Law firm lock-up reduction is essential for maintaining healthy cash flow in UK legal practices. Effective strategies can significantly improve working capital and financial stability."
+keyTakeaways:
+  - "Lock-up is the value of unbilled time, unpaid bills and work in progress, often tying up 3 to 6 months of revenue."
+  - "Most UK firms should target lock-up of 60 to 90 days of turnover, with anything above 120 days signalling billing or collection problems."
+  - "Billing monthly rather than at completion, and billing costs within 48 hours, are the foundation of lock-up reduction."
+  - "Set 30-day payment terms as standard (some firms use 14 days) and enforce them consistently with credit checks and aged-debt reviews."
+  - "Lock-up reduction needs cultural change, with monthly per-fee-earner reporting and lock-up built into partner reviews."
 schema: ""
 faqs:
   - question: "What is a typical law firm lock-up level for UK practices?"

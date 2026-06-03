@@ -11,6 +11,12 @@ altText: "Solicitor reviewing SRA consent documents for law firm acquisition at 
 image: ""
 h1: "How Does a Solicitor Obtain SRA Consent When Acquiring a Law Firm?"
 summary: "Acquiring a law firm requires more than a commercial agreement. The SRA must consent to the change of ownership or control. This guide explains the notification, consent, and ABS application process for solicitors buying a firm."
+keyTakeaways:
+  - "The SRA must approve any change of ownership or control before a law firm acquisition can complete."
+  - "An owner manager change (all-lawyer buyers) needs SRA notification within 28 days, typically processed in 2 to 4 weeks."
+  - "An ABS application is required for non-solicitor ownership and needs prior SRA approval, usually determined within 12 weeks."
+  - "Completing an ABS-route acquisition before SRA consent is a breach that can trigger fines, suspension, or unwinding the deal."
+  - "Before applying, ensure the target firm's client account is compliant and register as a data controller with the ICO."
 schema: ""
 faqs:
   - question: "What is the difference between SRA notification and an ABS application?"

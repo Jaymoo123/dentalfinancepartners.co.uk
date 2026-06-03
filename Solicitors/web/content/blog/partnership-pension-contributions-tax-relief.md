@@ -11,6 +11,12 @@ altText: "UK solicitor partner reviewing pension contribution tax relief paperwo
 image: ""
 h1: "How Do LLP Partners Claim Tax Relief on Personal Pension Contributions?"
 summary: "A practical guide for UK solicitors in LLPs on claiming income tax relief for personal pension contributions. Covers marginal rate relief, annual allowance, and how contributions interact with partnership profit allocation."
+keyTakeaways:
+  - "An LLP partner makes personal contributions and claims relief on self-assessment; pension contributions do not reduce the partnership profit share."
+  - "The provider adds 20% basic-rate relief at source, and higher or additional rate partners claim the extra relief on their tax return using the gross figure."
+  - "A contribution between £100,000 and £125,140 of income can restore the personal allowance, giving effective relief of around 60%."
+  - "The standard annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income over £260,000, down to £10,000."
+  - "Carry forward lets you use unused allowance from the previous three tax years, provided you were a registered pension scheme member in each."
 schema: ""
 faqs:
   - question: "Can an LLP partner claim tax relief on pension contributions made from drawings before the partnership year end?"

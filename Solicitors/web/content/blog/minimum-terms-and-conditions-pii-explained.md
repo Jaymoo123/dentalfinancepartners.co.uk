@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing professional indemnity insurance policy documen
 image: ""
 h1: "What Are the SRA Minimum Terms and Conditions for Solicitor PII?"
 summary: "The SRA Minimum Terms and Conditions (MTC) set the mandatory baseline for every solicitor's professional indemnity insurance policy. This guide explains the £2m cover requirement, qualifying insurer rules, and practical compliance steps for COFAs and partners."
+keyTakeaways:
+  - "The MTC sets a minimum limit of indemnity of £2m per claim for firms with two or more principals, and £3m for sole practitioners."
+  - "PII must be placed with an SRA qualifying insurer; using a non-qualifying insurer breaches the SRA Indemnity Insurance Rules."
+  - "On closure a firm must hold run-off cover for at least six years, typically costing around 1.5 to 2.5 times the last annual premium."
+  - "The MTC applies only to the primary layer, so excess top-up policies may carry different terms, exclusions and conditions."
+  - "All MTC policies are claims-made and the insurer cannot avoid for innocent non-disclosure, only for fraud."
 schema: ""
 faqs:
   - question: "What is the minimum PII cover required under the SRA MTC for a two-partner firm?"

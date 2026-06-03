@@ -11,6 +11,12 @@ altText: "Solicitor reviewing SRA investigation notice in a UK law firm office"
 image: ""
 h1: "How Should a Law Firm Respond to an SRA Investigation?"
 summary: "An SRA investigation is a formal regulatory process. This guide explains how a law firm should respond to an SRA notice, what a client matter review involves, and how to prepare an effective investigation response."
+keyTakeaways:
+  - "On receiving an SRA notice, notify your COLP and COFA, engage a specialist regulatory solicitor, and secure all files and data."
+  - "Never destroy or alter documents, since the SRA treats concealment far more seriously than the underlying breach."
+  - "A client matter review samples your files for compliance with the Accounts Rules, AML checks, billing, and reconciliations."
+  - "A strong investigation response addresses each allegation with evidence, mitigating factors, and remedial steps taken."
+  - "Outcomes range from no further action to fines, practising conditions, or referral to the Solicitors Disciplinary Tribunal."
 schema: ""
 faqs:
   - question: "What is an SRA notice and what should I do when I receive one?"

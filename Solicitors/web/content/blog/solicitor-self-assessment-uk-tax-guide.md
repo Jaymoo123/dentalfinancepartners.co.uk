@@ -1,334 +1,208 @@
 ---
-title: "Solicitor Self Assessment: Complete UK Tax Guide for Legal Professionals"
+title: "Solicitor Self Assessment: The Complete UK Tax Guide for Sole Practitioners and Partners"
 slug: "solicitor-self-assessment-uk-tax-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide"
 date: "2026-04-01"
 author: "Accounts for Lawyers Editorial Team"
 category: "Sole Practitioner Tax"
-metaTitle: "Solicitor Self Assessment Tax Guide 2026/27"
-metaDescription: "31 January deadline, allowable expenses (PII, SRA fees, CPD), and MTD obligations from April 2026. Tax returns for sole practitioners and partners."
-altText: "UK solicitor reviewing self assessment tax return documents on desk with calculator and legal papers"
+metaTitle: "Solicitor Self Assessment Tax Guide 2025/26"
+metaDescription: "Who files, the 31 January deadline, payments on account, the income tax and Class 4 NIC computation, VAT and MTD touchpoints. Current 2025/26 figures for sole practitioners and partners."
+altText: "UK solicitor reviewing a self assessment tax return with calculator, legal papers and a laptop showing HMRC online filing"
 image: ""
-h1: "Solicitor Self Assessment: Complete UK Tax Guide for Legal Professionals"
-summary: "Understanding solicitor self assessment requirements is essential for sole practitioners and partners. This guide covers tax obligations, deadlines, allowable expenses and compliance requirements for UK legal professionals."
+h1: "Solicitor Self Assessment: The Complete UK Tax Guide for Sole Practitioners and Partners"
+summary: "A current, end-to-end guide to self assessment for solicitors: who must file, the key deadlines, how payments on account work, the income tax and Class 4 National Insurance computation, and the VAT and Making Tax Digital touchpoints. Figures are stated for 2025/26 with the changes from April 2026 flagged."
+keyTakeaways:
+  - "The online filing and payment deadline is 31 January, so the 2024/25 return is due by 31 January 2026, with a £100 penalty for missing it even if no tax is owed."
+  - "Sole practitioners and partners are taxed on their allocated profit share, not their drawings, and Class 4 NIC is 6% between £12,570 and £50,270, then 2% above."
+  - "The flat-rate Class 2 NIC charge was removed from 6 April 2024, so any return still showing weekly Class 2 is out of date."
+  - "Payments on account apply once your liability exceeds £1,000, paid in two instalments on 31 January and 31 July."
+  - "MTD for Income Tax starts from 6 April 2026 for qualifying income over £50,000, requiring digital records and quarterly updates."
 schema: ""
 faqs:
-  - question: "What's the deadline for solicitor self assessment submission?"
-    answer: "The deadline for online self assessment submission is 31 January following the end of the tax year. For 2024/25, this means 31 January 2026. Any tax owed is also due by this date. Missing the deadline results in an automatic £100 penalty, even if no tax is due."
-  - question: "What expenses can solicitors claim on self assessment?"
-    answer: "Solicitors can claim allowable business expenses including office costs, professional indemnity insurance, SRA fees, CPD courses, travel for client meetings, computer equipment, and a proportion of home office expenses. All expenses must be wholly and exclusively for business purposes."
-  - question: "Do all solicitors need to complete a tax return?"
-    answer: "Most solicitors must complete a self-assessment tax return. This includes all sole practitioners, partners, and LLP members regardless of income level. Employed solicitors may also need to file if they have additional income over £1,000 or total income exceeds £100,000."
-  - question: "How does Making Tax Digital affect solicitor self assessment?"
-    answer: "From April 2026, solicitors with business income over £50,000 must comply with Making Tax Digital for Income Tax. This requires quarterly digital record-keeping and submissions to HMRC, though annual self assessment returns continue as normal."
-  - question: "Can I claim professional indemnity insurance as a tax deduction?"
-    answer: "Yes, professional indemnity insurance premiums are fully deductible as a business expense for solicitors. This includes both mandatory cover and any additional protection you choose to purchase. Keep your renewal documents as proof of payment."
-  - question: "Do I need to declare client money held in trust accounts?"
-    answer: "No, client money held in trust accounts is not your income and should never be declared on your personal tax return. However, interest earned on client accounts may be taxable depending on your arrangements. Always maintain clear separation between client funds and practice income."
-  - question: "When does Making Tax Digital apply to solicitors?"
-    answer: "Making Tax Digital for Income Tax becomes mandatory from April 2026 for self-employed individuals and partnerships with annual income above £30,000. This includes most sole practitioner solicitors and legal partnerships. You'll need compatible software and must submit quarterly updates to HMRC."
+  - question: "What is the deadline for a solicitor's self assessment tax return?"
+    answer: "The online filing deadline is 31 January following the end of the tax year, so the 2024/25 return is due by 31 January 2026 and the 2025/26 return by 31 January 2027. Any balancing tax for the year is due on the same date, and a first payment on account for the next year may also fall due. Missing the filing deadline triggers an automatic 100 pound penalty even if no tax is owed, with daily penalties and further charges if the delay continues."
+  - question: "Do all solicitors need to complete a self assessment return?"
+    answer: "Every sole practitioner, partner in a traditional partnership and member of an LLP files self assessment, because they are taxed as self-employed on their profit share regardless of income level. Employed solicitors usually have tax collected through PAYE but must register and file if they have untaxed income over 1,000 pounds, taxable benefits, or other reasons HMRC specifies. An employed solicitor with consultancy, writing or lecturing income on the side will normally need to file."
+  - question: "How is National Insurance worked out on a solicitor's self assessment?"
+    answer: "Self-employed solicitors pay Class 4 National Insurance through self assessment: for 2025/26 it is 6 percent on profits between 12,570 and 50,270 pounds and 2 percent on profits above 50,270 pounds, calculated automatically from your return. Class 2 National Insurance is no longer a separate weekly charge. From 6 April 2024 the flat-rate Class 2 liability was removed, so a sole practitioner or partner with profits at or above the small profits threshold is treated as having paid and keeps their state pension entitlement without paying Class 2."
+  - question: "What expenses can a solicitor claim on self assessment?"
+    answer: "Allowable expenses are those incurred wholly and exclusively for the practice: professional indemnity insurance, the SRA practising certificate, Law Society and other professional subscriptions, CPD, legal research subscriptions, office costs, IT and software, business travel to court and client meetings, and a reasonable proportion of home-working costs. Capital items such as IT equipment and fit-out are dealt with through capital allowances rather than as a straight expense. Client money held on behalf of clients is never your income and is not part of the computation."
+  - question: "How do payments on account work for solicitors?"
+    answer: "If your self assessment bill (after tax already deducted at source) is more than 1,000 pounds, HMRC asks for payments on account towards the following year. Each instalment is half of the current year's tax and Class 4 National Insurance liability, due on 31 January and 31 July. A balancing payment or repayment then settles the difference once the next return is filed. If you expect profits to fall you can apply to reduce the payments on account, but reducing them too far attracts interest."
+  - question: "When does Making Tax Digital for Income Tax apply to solicitors?"
+    answer: "Making Tax Digital for Income Tax Self Assessment is phased in by qualifying income, which is gross trading plus property income before expenses. It applies from 6 April 2026 where qualifying income is over 50,000 pounds, from 6 April 2027 over 30,000 pounds, and from 6 April 2028 over 20,000 pounds. Most full-time sole practitioners and partners are over 50,000 pounds and so are in scope from April 2026, needing compatible software and quarterly updates. It does not apply to companies, which are outside income tax."
+  - question: "Do I declare client money held in trust on my tax return?"
+    answer: "No. Money held in the client account on behalf of clients is not your income and must never appear on your personal return. The point of the SRA Accounts Rules is to keep that money separate from the firm's own funds. Interest earned on client money may be taxable on the firm depending on how the account is operated, and your own fees become taxable practice income once they are properly transferred out of the client account."
+  - question: "Does the VAT registration threshold affect my self assessment?"
+    answer: "VAT and self assessment are separate, but they interact. Legal services are standard-rated for VAT at 20 percent, and a firm must register once taxable turnover exceeds 90,000 pounds (the threshold from 1 April 2024). Once registered, the fee income you report for self assessment is shown net of the VAT you collect, because that VAT belongs to HMRC rather than to the practice. VAT-registered firms also already file under Making Tax Digital for VAT."
 ---
 
-<p>Solicitor self assessment is a critical responsibility for UK legal professionals operating as sole practitioners or partners in law firms. With Making Tax Digital (MTD) for Income Tax launching in April 2026 and ongoing changes to tax regulations, understanding your obligations has never been more important.</p>
+<p>Self assessment is the backbone of a solicitor's personal tax compliance. If you practise as a sole practitioner, a partner in a traditional partnership or a member of an LLP, you are taxed as self-employed on your share of the profit, and self assessment is how you report it and pay the income tax and National Insurance due. This guide sets out who must file, the deadlines that carry penalties, how payments on account work, the income tax and Class 4 National Insurance computation, and the VAT and Making Tax Digital touchpoints that sit alongside the return.</p>
 
-<p>This comprehensive guide covers everything you need to know about completing your solicitor self assessment accurately and on time, from identifying allowable expenses to meeting key deadlines.</p>
+<p>Figures are stated for the 2025/26 tax year, with the changes that take effect from April 2026 flagged where they matter. The aim is a current, comprehensive reference you can work through before you sit down to file.</p>
 
-<h2>Who Needs to Complete Self Assessment as a Solicitor</h2>
-<p>Most solicitors must complete a self assessment return, but the requirements vary depending on your employment structure:</p>
+<h2>Who must complete self assessment as a solicitor</h2>
 
-<ul>
-<li><strong>Sole practitioners:</strong> Always required to complete self assessment as you're self-employed</li>
-<li><strong>Partnership members:</strong> Must complete self assessment to declare your share of partnership profits</li>
-<li><strong>LLP members:</strong> Typically treated as self-employed and require self assessment</li>
-<li><strong>Employed solicitors:</strong> May need self assessment if you have additional income over £1,000, benefits in kind, or other complications</li>
-</ul>
-
-<p>Even employed solicitors often find themselves needing to complete returns due to additional income from legal consultancy, writing, or speaking engagements.</p>
-
-<h2>Key Deadlines for Solicitor Self Assessment 2026/27</h2>
-
-<p>Missing self assessment deadlines triggers automatic penalties. Here are the critical dates:</p>
+<p>Most practising solicitors are inside self assessment, but the reason depends on how you practise:</p>
 
 <ul>
-<li><strong>31 January 2026:</strong> Online self assessment submission deadline for 2024/25 tax year</li>
-<li><strong>31 January 2026:</strong> Payment deadline for any outstanding tax owed</li>
-<li><strong>31 July 2026:</strong> Second payment on account due (if applicable)</li>
-<li><strong>5 October 2025:</strong> Register for self assessment if starting practice</li>
+<li><strong>Sole practitioners.</strong> Always within self assessment. You are self-employed, so all of your fee income, expenses and capital allowances are reported on the self-employment pages of your return.</li>
+<li><strong>Partners in a traditional partnership.</strong> The partnership files its own return (the SA800), and each partner reports their allocated share of the profit on the partnership pages of their personal return. You are taxed on your <strong>allocated profit share, not on your drawings</strong>, which is the single most common partner cash-flow surprise.</li>
+<li><strong>LLP members.</strong> An LLP is tax-transparent, so members are taxed as self-employed partners on their profit share in the same way as a traditional partnership. (A member who is caught by the salaried member rules can instead be taxed through PAYE, which is a separate question covered in our <a href="/blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms">guide to how LLP members are taxed</a>.)</li>
+<li><strong>Employed solicitors.</strong> Tax is normally collected through PAYE, but you must register and file if you have untaxed income over 1,000 pounds, taxable benefits in kind, or another reason HMRC specifies. Consultancy, legal writing, training and speaking income commonly tips an employed solicitor into self assessment.</li>
 </ul>
 
-<p>For sole practitioners, your accounting period typically runs from 6 April to 5 April. Partnership members receive their allocation of partnership profits on a K1 form, which must be included in your personal return.</p>
+<p>If you are unsure whether you need to register, the safe position is to do so: registering late and paying late both attract penalties, whereas filing a nil or low return does not.</p>
 
-<h2>Allowable Business Expenses for Solicitors</h2>
+<h2>Key deadlines and penalties</h2>
 
-<p>Proper expense management significantly impacts your tax liability. Common allowable expenses for solicitor self assessment include:</p>
-
-<h3>Office and Professional Expenses</h3>
-<ul>
-<li>Office rent, utilities, and business rates</li>
-<li>Professional indemnity insurance premiums</li>
-<li>SRA practicing certificate and membership fees</li>
-<li>Law Society subscriptions and CPD course costs</li>
-<li>Computer equipment, software, and IT support</li>
-</ul>
-
-<h3>Client-Related Costs</h3>
-<ul>
-<li>Travel expenses for client meetings and court appearances</li>
-<li>Client entertainment (limited to 50% of costs)</li>
-<li>Telephone and mobile phone bills (business proportion)</li>
-<li>Postage and courier services</li>
-</ul>
-
-<h3>Home Office Expenses</h3>
-<p>If you work from home, you can claim either:</p>
-<ul>
-<li>£6 per week (£312 annually) using the simplified method</li>
-<li>Actual costs based on the business proportion of your home</li>
-</ul>
-
-<p>The simplified method works well for occasional home working, while the actual cost method suits dedicated home offices.</p>
-
-<h2>Allowable Deductions for Legal Professionals</h2>
-<p>The key to minimising your tax liability lies in correctly claiming all allowable business expenses. For solicitors, these typically include:</p>
-
-<h3>Practice-Related Expenses</h3>
-<ul>
-<li>Professional indemnity insurance premiums</li>
-<li>SRA practicing certificate fees</li>
-<li>Law Society membership and other professional subscriptions</li>
-<li>Continuing professional development courses</li>
-<li>Legal research tools and database subscriptions</li>
-</ul>
-
-<h3>Office and Equipment Costs</h3>
-<ul>
-<li>Office rent and utilities (if not claimed through partnership)</li>
-<li>Computer equipment and software</li>
-<li>Legal books and publications</li>
-<li>Stationery and office supplies</li>
-<li>Professional cleaning of office premises</li>
-</ul>
-
-<h3>Travel and Client-Related Expenses</h3>
-<ul>
-<li>Travel to court hearings and client meetings</li>
-<li>Hotel stays for out-of-town cases</li>
-<li>Client entertainment (limited to 50%)</li>
-<li>Parking fees and congestion charges for business travel</li>
-</ul>
-
-<p>Home office expenses can be claimed if you work from home, either using the simplified flat rate (£6 per week for 2024/25) or actual costs based on the proportion of your home used for work.</p>
-
-<h2>Making Tax Digital Implications</h2>
-<p>From April 2026, Making Tax Digital for Income Tax becomes mandatory for most self-employed solicitors and partnerships with income above £30,000. This means:</p>
+<p>Self assessment runs to a fixed calendar, and the penalties are automatic. The dates that matter for a solicitor are:</p>
 
 <ul>
-<li>Digital record-keeping throughout the year</li>
-<li>Quarterly updates to HMRC</li>
-<li>Compatible software for submitting information</li>
-<li>End of year reconciliation still required</li>
+<li><strong>5 October:</strong> deadline to register for self assessment if you have started practising or have a new source of untaxed income in the tax year just ended.</li>
+<li><strong>31 January:</strong> online filing deadline, and the date the balancing payment for the year and any first payment on account both fall due. The 2024/25 return is due by 31 January 2026; the 2025/26 return by 31 January 2027.</li>
+<li><strong>31 July:</strong> second payment on account for the year, where payments on account apply.</li>
 </ul>
 
-<p>Start planning now if your practice income exceeds the threshold, as the transition requires compatible accounting systems and revised processes.</p>
+<p>Miss the filing deadline and there is an immediate 100 pound penalty even if no tax is due, followed by daily penalties after three months and further percentage-based charges at six and twelve months. Late payment carries its own penalties plus interest from the original due date. For sole practitioners and partners the tax year runs to 5 April, and partners pick up their profit allocation from the partnership return, so a delay in finalising the firm's accounts can cascade into every partner's personal filing.</p>
 
-<h2>Common Mistakes in Solicitor Self Assessment</h2>
+<h2>The income tax computation</h2>
 
-<p>Avoid these frequent errors that trigger HMRC enquiries:</p>
+<p>Your taxable profit (fee income less allowable expenses and capital allowances, plus any other income) is taxed at the 2025/26 income tax rates:</p>
 
 <ul>
-<li>Mixing personal and business expenses without proper allocation</li>
-<li>Claiming 100% of home costs when working from a home office</li>
-<li>Incorrectly reporting client money interest as business income</li>
-<li>Failing to include partnership profit shares accurately</li>
-<li>Missing capital gains on property or investment disposals</li>
+<li><strong>Personal allowance:</strong> 12,570 pounds, tapered away once income exceeds 100,000 pounds and lost entirely at 125,140 pounds.</li>
+<li><strong>Basic rate, 20 percent:</strong> on taxable income up to 50,270 pounds.</li>
+<li><strong>Higher rate, 40 percent:</strong> on income from 50,271 to 125,140 pounds.</li>
+<li><strong>Additional rate, 45 percent:</strong> on income above 125,140 pounds.</li>
 </ul>
 
-<p>Consider working with a specialist who understands both legal practice operations and tax compliance requirements.</p>
+<p>These thresholds are frozen, so as profits grow more of a solicitor's income is pulled into the higher and additional rates over time. The taper between 100,000 and 125,140 pounds produces a high marginal rate on that band of income, which is worth bearing in mind when timing income or making pension contributions.</p>
 
-<h2>Payment on Account Requirements</h2>
+<h2>National Insurance for self-employed solicitors</h2>
 
-<p>If your tax bill exceeds £1,000, HMRC requires payments on account:</p>
+<p>Self-employed solicitors pay <strong>Class 4 National Insurance</strong> through self assessment, calculated automatically from your profit:</p>
 
 <ul>
-<li><strong>First payment:</strong> Due 31 January during the tax year</li>
-<li><strong>Second payment:</strong> Due 31 July after the tax year ends</li>
-<li><strong>Each payment:</strong> 50% of the previous year's tax liability</li>
+<li><strong>6 percent</strong> on profits between 12,570 and 50,270 pounds, and</li>
+<li><strong>2 percent</strong> on profits above 50,270 pounds (2025/26).</li>
 </ul>
 
-<p>For example, if your 2024/25 tax bill was £8,000, you'll pay £4,000 on 31 January 2026 and £4,000 on 31 July 2026 toward your 2025/26 liability.</p>
+<p>Class 2 National Insurance is no longer a separate weekly charge. <strong>From 6 April 2024 the flat-rate Class 2 liability was removed.</strong> A sole practitioner or partner with profits at or above the small profits threshold is now treated as having paid Class 2 and keeps their state pension and contributory benefit entitlement without making any payment. Solicitors with profits below the small profits threshold (for example during a quiet start-up year or a career break) can still pay Class 2 voluntarily to protect their National Insurance record, but it is no longer collected as a mandatory weekly amount through the return. If an older return or accountant's note still shows a payable weekly Class 2 figure, it is out of date.</p>
 
-<h2>Record Keeping Requirements</h2>
+<h2>Allowable expenses for solicitors</h2>
 
-<p>Maintain comprehensive records to support your solicitor self assessment:</p>
+<p>Reducing your taxable profit comes down to claiming every expense incurred <strong>wholly and exclusively</strong> for the practice. The expenses a solicitor most commonly claims fall into a few groups.</p>
+
+<h3>Professional and regulatory costs</h3>
+<ul>
+<li>Professional indemnity insurance premiums (deductible in full, and insurance is VAT-exempt so there is no input VAT to reclaim).</li>
+<li>SRA practising certificate and authorisation fees.</li>
+<li>Law Society and other relevant professional subscriptions.</li>
+<li>Continuing professional development, covered in more depth in our <a href="/blog/fee-earner-tax-compensation/solicitor-cpd-tax-deductible-uk-2025-26">guide to CPD tax relief for solicitors</a>.</li>
+<li>Legal research tools, case databases and practitioner texts.</li>
+</ul>
+
+<h3>Office, equipment and home working</h3>
+<ul>
+<li>Office rent, business rates, utilities and cleaning.</li>
+<li>Software, IT support and consumables (significant equipment is claimed through capital allowances rather than as an outright expense).</li>
+<li>Home working, claimed either on the simplified flat-rate basis or as the genuine business proportion of household costs where you have a dedicated work space.</li>
+</ul>
+
+<h3>Travel and client costs</h3>
+<ul>
+<li>Travel to court, tribunals and client meetings, including parking and congestion charges; ordinary commuting to a regular office is not allowable.</li>
+<li>The business proportion of telephone and mobile costs.</li>
+<li>Postage, courier and document services.</li>
+<li>Client entertainment is generally not deductible for tax even though it is a real business cost.</li>
+</ul>
+
+<p>A fuller treatment of what does and does not qualify, with the evidence HMRC expects, is in our <a href="/blog/sole-practitioner-tax/solicitor-expenses-claims-tax-relief-guide">guide to solicitor expense claims and tax relief</a>.</p>
+
+<h2>Payments on account</h2>
+
+<p>Self assessment collects most of your tax in arrears, but once your bill is large enough HMRC asks you to pay part of next year's tax in advance through <strong>payments on account</strong>. They apply when your self assessment liability for the year (the income tax and Class 4 National Insurance not already collected at source) exceeds 1,000 pounds.</p>
 
 <ul>
-<li>All business receipts and invoices</li>
-<li>Bank statements for business and client accounts</li>
-<li>Mileage logs for business travel</li>
-<li>Home office expense calculations</li>
-<li>Professional development certificates and receipts</li>
+<li><strong>First payment on account:</strong> due 31 January, alongside the balancing payment for the year just ended.</li>
+<li><strong>Second payment on account:</strong> due 31 July.</li>
+<li><strong>Each instalment:</strong> half of the previous year's liability.</li>
 </ul>
 
-<p>Keep records for at least six years after the relevant tax year ends. Digital records are acceptable provided they're accurate and complete.</p>
+<p>A balancing payment (or repayment) then trues up the difference once the next return is filed. Worked through with anonymised figures: a solicitor whose 2024/25 liability is 8,000 pounds pays 4,000 pounds on 31 January 2026 and 4,000 pounds on 31 July 2026 towards 2025/26, then settles any shortfall or reclaims any overpayment when the 2025/26 return is filed. The first year of practice is the cash-flow pinch point, because the balancing payment for year one and the first payment on account for year two land together on the same 31 January. If you genuinely expect profits to fall, you can apply to reduce your payments on account, but reduce them below the eventual liability and HMRC charges interest on the difference.</p>
 
-<h2>Getting Professional Help</h2>
+<h2>VAT touchpoints</h2>
 
-<p>Solicitor self assessment involves complex interactions between business income, professional regulations, and tax law. Many legal professionals benefit from specialist advice, particularly when:</p>
+<p>VAT and self assessment are separate regimes, but they meet on the income figure you report. Legal services (advice, conveyancing, litigation, drafting) are <strong>standard-rated for VAT at 20 percent</strong>, with no exemption for residential conveyancing. A firm must register for VAT once its taxable turnover exceeds <strong>90,000 pounds</strong>, the registration threshold in force from 1 April 2024, and may deregister if turnover falls below the 88,000 pound deregistration threshold.</p>
+
+<p>Once you are registered, the fee income you report for self assessment is shown <strong>net of VAT</strong>, because the VAT you charge belongs to HMRC and was never the practice's money. Input VAT on business costs reduces the real cost of those expenses, and disbursements paid on behalf of clients need careful handling: a payment only escapes VAT as a true disbursement if it meets all of HMRC's conditions, and search fees the firm interprets in its own advice are part of its taxable supply rather than a VAT-free pass-through. The detail of where the line falls is set out in our <a href="/blog/vat-compliance/vat-registration-for-uk-law-firms">VAT registration guide for law firms</a>. Do not confuse the 90,000 pound VAT registration threshold with the income tax and National Insurance thresholds above; they are unrelated numbers that happen to sit close together.</p>
+
+<h2>Making Tax Digital for Income Tax</h2>
+
+<p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) changes how self-employed solicitors keep records and report to HMRC. It is phased in by <strong>qualifying income</strong>, which is gross trading plus property income before expenses, on this timetable:</p>
 
 <ul>
-<li>Starting or changing practice structure</li>
-<li>Dealing with significant capital gains</li>
-<li>Managing multiple income sources</li>
-<li>Preparing for MTD compliance</li>
+<li><strong>From 6 April 2026:</strong> qualifying income over 50,000 pounds.</li>
+<li><strong>From 6 April 2027:</strong> qualifying income over 30,000 pounds.</li>
+<li><strong>From 6 April 2028:</strong> qualifying income over 20,000 pounds.</li>
 </ul>
 
-<p>A specialist solicitor accountant understands both legal practice requirements and tax optimization strategies, ensuring your returns are accurate and compliant.</p>
+<p>Most full-time sole practitioners and partners have qualifying income comfortably above 50,000 pounds, so they are in scope <strong>from April 2026</strong>. Being in scope means keeping digital records, submitting quarterly updates to HMRC through compatible software, and finalising the year with a digital declaration that replaces the current style of return. The annual reconciliation does not disappear; it becomes the year-end step in a digital process. MTD for ITSA does not apply to companies, because it is part of income tax rather than corporation tax. VAT-registered firms already file under MTD for VAT, so a registered practice is partly familiar with the discipline. If your practice income is near the threshold, the time to choose and test software is before April 2026, not after. Our <a href="/blog/sole-practitioner-tax/making-tax-digital-solicitors">Making Tax Digital guide for solicitors</a> walks through the practical steps.</p>
+
+<h2>Client money and your tax return</h2>
+
+<p>One feature that sets solicitor self assessment apart from most other professions is client money. Money held in the client account on behalf of clients is <strong>not your income</strong> and must never appear on your personal return. Keeping it rigorously separate from the firm's own funds is the core of the SRA Accounts Rules, covered in our <a href="/blog/sra-compliance-trust-accounting/sra-accounts-rules-compliance-guide">SRA Accounts Rules compliance guide</a>. A few points feed through to the tax computation:</p>
+
+<ul>
+<li>Client balances held in trust are not taxable on you and are excluded entirely from the return.</li>
+<li>Interest earned on client money may be taxable on the firm, depending on how the account is operated and what is agreed with the client.</li>
+<li>Your own fees become taxable practice income once they are properly billed and transferred out of the client account into the office account.</li>
+<li>Costs and disbursements paid on behalf of a client are not your deductible expenses unless the practice ultimately bears them.</li>
+</ul>
+
+<h2>Partnership and LLP points</h2>
+
+<p>Partners and LLP members have a layer of complexity beyond the sole practitioner. The firm files an SA800 partnership return showing each member's share of profit or loss and any Class 4 National Insurance, and each member carries their allocation onto the partnership pages of their personal return. The recurring trap is being <strong>taxed on your profit share, not on your drawings</strong>: a member who draws less than their allocation still pays tax on the full allocation, with the retained balance left in the firm as working capital.</p>
+
+<p>Basis period reform has also bedded in. From 2024/25 unincorporated businesses are taxed on a <strong>tax-year basis</strong> (profits for the actual tax year to 5 April) rather than on the accounting period ending in the year, with 2023/24 having been the transition year. Firms whose year end was not already close to 5 April had transition profits to bring in, spread across five tax years unless they elected to accelerate, which can create a one-off cash-flow charge for established partners. The mechanics are set out in our <a href="/blog/partnership-llp-accounting/basis-period-reform-law-firms">guide to basis period reform for law firms</a>, and the way profit is split between members is covered in our <a href="/blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms">partner profit allocation guide</a>.</p>
+
+<h2>Other income to declare</h2>
+
+<p>Solicitors frequently have income beyond core practice profits, and all of it belongs on the return:</p>
+
+<ul>
+<li>Consultancy, locum and fixed-fee referral work.</li>
+<li>Legal writing, publishing, training and speaking fees.</li>
+<li>Rental income, including from practice premises you own personally.</li>
+<li>Dividends and other investment income above the relevant allowances.</li>
+<li>Capital gains, for example on selling a share of goodwill or disposing of property and investments, which go on the capital gains pages rather than as trading income.</li>
+</ul>
+
+<h2>Record keeping</h2>
+
+<p>Self assessment is only as reliable as the records behind it. Keep business receipts and invoices, business and client account bank statements, mileage logs for business travel, your home-working calculation, and evidence of CPD and professional costs. Records must be retained for at least <strong>six years</strong> after the end of the relevant tax year, and digital records are acceptable provided they are complete and accurate, which is also exactly what MTD for ITSA will require from April 2026. Good records are the difference between a quick year-end and a stressful HMRC enquiry.</p>
+
+<h2>Common mistakes to avoid</h2>
+
+<p>The errors that most often trigger an HMRC enquiry or an avoidable penalty for solicitors are:</p>
+
+<ul>
+<li>Treating client money, or interest on it, as practice income.</li>
+<li>Being taxed by surprise on an allocated profit share that exceeds drawings.</li>
+<li>Claiming a full 100 percent of home costs rather than a justified business proportion.</li>
+<li>Mixing personal and business spending without a clear allocation.</li>
+<li>Carrying forward an out-of-date National Insurance position, such as showing payable weekly Class 2 that was removed from April 2024.</li>
+<li>Reducing payments on account too aggressively and incurring interest.</li>
+<li>Missing the 31 January deadline even when little or no tax is due.</li>
+</ul>
+
+<h2>Getting it right</h2>
+
+<p>Solicitor self assessment sits at the intersection of self-employment tax, the SRA Accounts Rules, VAT and, from April 2026, Making Tax Digital. A specialist who understands both legal practice and tax can keep the computation accurate, make sure no relief is missed, and prepare your records for the digital regime. Reviewing your position through the year, rather than only at the 31 January rush, is what turns self assessment from a deadline scramble into a routine.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
-<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
-<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">Related guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">For partners and LLP members, our partnership tax guide takes the profit-share computation and basis period rules further.</p>
+<p><a href="/blog/partnership-llp-accounting/law-firm-partnership-tax-guide" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the law firm partnership tax guide</a></p>
 </div>
-
-<h2>Income Sources to Declare</h2>
-<p>Solicitors often have multiple income streams that must be declared on your self assessment:</p>
-
-<h3>Primary Legal Practice Income</h3>
-<ul>
-<li>Sole practice profits</li>
-<li>Partnership profit share</li>
-<li>LLP member drawings and profit allocations</li>
-<li>Consultancy fees</li>
-</ul>
-
-<h3>Additional Income</h3>
-<ul>
-<li>Legal writing and publications</li>
-<li>Training and speaking fees</li>
-<li>Rental income from practice premises</li>
-<li>Investment income above £1,000</li>
-<li>Directorship fees</li>
-</ul>
-
-<p>Remember that client money held in trust accounts is not your income and should never be declared on your personal tax return.</p>
-
-<h2>Special Considerations for Client Money</h2>
-<p>One area where solicitor self assessment differs from other professionals is the handling of client money. This is crucial for <a href="/sra-compliance">SRA compliance</a> and your personal tax position:</p>
-
-<ul>
-<li>Client money held in trust accounts is not taxable income to you personally</li>
-<li>Interest earned on client accounts may be taxable depending on your arrangement with clients</li>
-<li>Ensure clear separation between client money and practice income in your records</li>
-<li>Costs and disbursements paid on behalf of clients are not deductible expenses unless ultimately borne by your practice</li>
-</ul>
-
-<p>Maintaining proper records is essential both for SRA compliance and accurate tax reporting.</p>
-
-<h2>Partnership and LLP Considerations</h2>
-<p>If you're a partner in a traditional partnership or LLP member, your solicitor self assessment becomes more complex:</p>
-
-<h3>Partnership Income</h3>
-<p>You'll receive a Partnership Statement (SA800) showing your share of:</p>
-<ul>
-<li>Profit or loss</li>
-<li>Class 4 National Insurance contributions</li>
-<li>Any tax already deducted</li>
-</ul>
-
-<h3>Basis Period Reform Impact</h3>
-<p>Following the 2023 changes to basis periods, partnerships now align with the tax year (6 April to 5 April). This affects how partnership profits are allocated between tax years and may create transitional adjustments.</p>
-
-<p>For many legal partnerships, this has meant reviewing profit allocation methods and ensuring all partners understand their personal tax implications.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-<p>Based on experience with legal professionals, these are the most frequent errors in solicitor self assessment:</p>
-
-<ul>
-<li><strong>Including client money as income:</strong> Never include funds held on behalf of clients</li>
-<li><strong>Missing professional expenses:</strong> Failing to claim legitimate professional development and membership costs</li>
-<li><strong>Incorrect mileage claims:</strong> Not keeping proper records of business travel</li>
-<li><strong>Mixed personal and business expenses:</strong> Claiming personal costs as business deductions</li>
-<li><strong>Late payment penalties:</strong> Missing the 31 January deadline even when no tax is due</li>
-</ul>
-
-<h2>Planning for 2026/27 and Beyond</h2>
-<p>Looking ahead, several factors will impact solicitor self assessment:</p>
-
-<ul>
-<li><strong>MTD rollout:</strong> Prepare systems and processes for April 2026 if applicable</li>
-<li><strong>Tax rate stability:</strong> Current income tax rates and bands are frozen until 2028</li>
-<li><strong>Practice evolution:</strong> Consider how AI and technology changes might affect your income and expenses</li>
-<li><strong>Professional requirements:</strong> Stay updated on SRA rule changes affecting financial compliance</li>
-</ul>
-
-<p>Regular review of your tax position, ideally quarterly, helps avoid year-end surprises and ensures you're maximising available reliefs and allowances.</p>
-
-<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
-<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
-<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
-</div>
-
-<h2>Self-Assessment Requirements for Solicitors</h2>
-<p>Most solicitors must complete a self-assessment tax return, regardless of their practice structure. The key trigger points include:</p>
-
-<ul>
-<li>Being a sole practitioner with any level of self-employed income</li>
-<li>Partnership or LLP membership (even if income is below £1,000)</li>
-<li>Total income exceeding £100,000 annually</li>
-<li>Receiving untaxed income over £1,000 from other sources</li>
-</ul>
-
-<p>Even employed solicitors may need to complete a solicitor tax return if they have additional income from legal consultancy, writing, or training work.</p>
-
-<h2>Sole Practitioner Tax Returns</h2>
-<p>Sole practitioners face the most straightforward tax return process but must handle all compliance personally. Your annual return must include:</p>
-
-<ul>
-<li>All fee income from legal services</li>
-<li>Business expenses and allowable deductions</li>
-<li>Capital allowances on equipment and office assets</li>
-<li>Class 2 and Class 4 National Insurance calculations</li>
-</ul>
-
-<p>The 2025/26 tax year brings additional complexity with Making Tax Digital (MTD) for Income Tax starting in April 2026. Sole practitioners with annual turnover over £10,000 will need MTD-compatible software for quarterly reporting.</p>
-
-<h3>Common Deductions for Sole Practitioners</h3>
-
-<p>Legal practitioners can claim various business expenses against their fee income:</p>
-
-<ul>
-<li>Professional indemnity insurance premiums</li>
-<li>SRA practicing certificate fees and CPD costs</li>
-<li>Office rent, utilities, and business rates</li>
-<li>Legal research subscriptions and law reports</li>
-<li>Travel costs for client meetings and court appearances</li>
-<li>Professional membership fees and networking events</li>
-</ul>
-
-<h2>Client Money and Trust Accounting</h2>
-<p>Solicitors handling client money must maintain strict separation between business and client funds. This doesn't typically affect your personal tax return, but proper <a href="/sra-compliance">SRA compliance</a> is essential for avoiding regulatory issues that could impact your practice income.</p>
-
-<p>Interest earned on general client accounts is usually treated as practice income and must be included in your solicitor tax return calculations.</p>
-
-<h2>VAT Considerations</h2>
-<p>Legal services are generally standard-rated for VAT, meaning most solicitors with turnover over £85,000 must register. VAT registration affects your tax return in several ways:</p>
-
-<ul>
-<li>Fee income figures should be shown net of VAT</li>
-<li>Input VAT on business expenses reduces your actual cost</li>
-<li>Disbursements paid on behalf of clients need careful treatment</li>
-<li>Quarterly VAT returns create additional compliance obligations</li>
-</ul>
-
-<h2>Key Deadlines and Penalties</h2>
-<p>Missing solicitor tax return deadlines can be costly, particularly for high-earning legal practitioners:</p>
-
-<ul>
-<li>Online self-assessment deadline: 31 January following the tax year</li>
-<li>Payment on account dates: 31 January and 31 July</li>
-<li>Penalty for late filing: £100 minimum, rising with further delays</li>
-<li>Interest charges on late payments from the original due date</li>
-</ul>
-
-<p>Given the demanding nature of legal practice, many solicitors find it worthwhile to engage specialist accountants who understand the profession's unique requirements.</p>

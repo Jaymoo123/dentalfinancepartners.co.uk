@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing VAT registration paperwork at a law firm desk w
 image: ""
 h1: "When Should a UK Law Firm Register for VAT? A Solicitor's Guide to Threshold, Timing and Scheme Choice"
 summary: "A practical guide for UK solicitors and law firm partners on VAT registration: when the £90,000 threshold triggers compulsory registration, how to time voluntary registration for maximum cash-flow benefit, and which VAT scheme suits a legal practice best."
+keyTakeaways:
+  - "A firm must register for VAT within 30 days of its rolling 12-month taxable turnover exceeding the £90,000 threshold."
+  - "Client account money held under the SRA Accounts Rules is not turnover, but recharged standard-rated disbursements count."
+  - "The flat rate scheme uses a 14.5% rate and is rarely worthwhile, since most firms' input VAT is only 5 to 10% of turnover."
+  - "Cash accounting (available below £1.35 million turnover) lets a firm pay VAT only when clients pay, easing cash flow on long matters."
+  - "Voluntary registration suits firms with VAT-registered business clients and high input VAT, but penalises firms acting for private individuals."
 schema: ""
 faqs:
   - question: "What is the VAT registration threshold for a UK law firm in 2025/26?"

@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing a counsel fee invoice and VAT treatment for bar
 image: ""
 h1: "How Do UK Solicitors Handle VAT on Counsel Fees and Barrister Disbursements?"
 summary: "A practical guide for UK solicitors on the VAT treatment of counsel fees, including when barrister fees are treated as a disbursement, when the reverse charge applies, and how to bill the client correctly."
+keyTakeaways:
+  - "Counsel fees can be a genuine disbursement, recharged with no VAT added, only when the client instructs the barrister and the solicitor pays as agent."
+  - "If the solicitor consumes the barrister's service, such as a retainer recharged to clients, 20% VAT must be added on re-billing."
+  - "Since 1 March 2017 a domestic reverse charge applies between VAT-registered solicitors and barristers, leaving the solicitor's net VAT at zero."
+  - "A barrister below the £90,000 VAT threshold charges no VAT, so no reverse charge applies and the fee is re-billed without VAT."
+  - "Keep the barrister's invoice, the client bill, and the agency retainer letter, as HMRC can request these for six years."
 schema: ""
 faqs:
   - question: "Do I need to add VAT to counsel fees when re-billing the client?"

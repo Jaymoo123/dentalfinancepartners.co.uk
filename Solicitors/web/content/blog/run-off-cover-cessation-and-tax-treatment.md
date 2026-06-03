@@ -11,6 +11,12 @@ altText: "Solicitor reviewing run-off PII documents at a law firm office desk"
 image: ""
 h1: "How Do Solicitors and Law Firms Handle Run-Off Cover Tax Treatment on Cessation?"
 summary: "When a solicitor or law firm ceases practice, run-off professional indemnity insurance (PII) is mandatory. The tax treatment of these premiums depends on whether the firm is a partnership, LLP, or limited company. This article explains the rules for deducting run-off cover costs and the interaction with cessation of trade."
+keyTakeaways:
+  - "The SRA Minimum Terms and Conditions require every firm to hold run-off cover for at least six years from the date of cessation, regardless of structure."
+  - "Paying the run-off premium before the cessation date secures a full deduction against trading profits for partnerships and LLPs."
+  - "A premium paid after cessation is a post-cessation expense under Section 96 ITTOIA 2005, deductible only against post-cessation receipts, which are often nil."
+  - "Overlap relief is applied in the final year, so paying the premium before cessation reduces the final profit share before relief and can produce a significant tax saving."
+  - "Broker fees on run-off arrangements carry 20% VAT, so paying before VAT deregistration preserves the firm's ability to recover that VAT."
 schema: ""
 faqs:
   - question: "Can I deduct a run-off premium paid after my law firm has ceased trading?"

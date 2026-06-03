@@ -11,6 +11,12 @@ altText: "UK locum solicitor reviewing tax documents in a modern law office"
 image: ""
 h1: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
 summary: "A clear guide for locum solicitors and the firms that engage them, covering IR35 status, VAT registration thresholds, and the practical tax implications of working as a self-employed solicitor or through a personal service company."
+keyTakeaways:
+  - "A locum solicitor's tax depends on the engagement structure, not the job title, so HMRC examines the real working relationship."
+  - "VAT registration is required once taxable turnover exceeds £90,000 in any rolling 12-month period, across all assignments."
+  - "IR35 can apply to PSC locums, with a medium or large engaging firm deciding inside or outside status."
+  - "Sole trader locums pay Class 4 NIC at 6% to £50,270 then 2%; Class 2 was abolished from April 2024."
+  - "Handling client money brings SRA Accounts Rules duties, including a client account and reconciliation every five weeks."
 schema: ""
 faqs:
   - question: "Do locum solicitors need to register for VAT?"

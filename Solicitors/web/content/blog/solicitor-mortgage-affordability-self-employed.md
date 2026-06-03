@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing mortgage documents with a calculator and SA302 
 image: ""
 h1: "How Does Self-Employment Affect a Solicitor's Mortgage Affordability?"
 summary: "Self-employed solicitors and LLP partners face different mortgage affordability checks than salaried employees. Lenders typically require SA302 tax calculations and 2-3 years of accounts. This guide explains how partner drawings, retained profits, and the structure of your firm affect your borrowing capacity."
+keyTakeaways:
+  - "Lenders treat equity partners, LLP members, sole practitioners and most fixed-share partners as self-employed for mortgage purposes."
+  - "The core documents are SA302 tax calculations and Tax Year Overviews, usually for the last two or three full tax years."
+  - "Lenders assess your taxable profit share, not the drawings you actually take home, which often works in a partner's favour."
+  - "Affordability typically runs at 4 to 4.5 times income, with some specialist lenders reaching 5 times for professionals."
+  - "Locums through a personal service company may see dividends treated as 80% of gross value, so a specialist broker is strongly advised."
 schema: ""
 faqs:
   - question: "Can a solicitor with only one year of self-employed accounts get a mortgage?"

@@ -11,6 +11,12 @@ altText: "UK solicitor accountant reviewing law firm financial documents and SRA
 image: ""
 h1: "Why UK Law Firms Need a Specialist Solicitor Accountant"
 summary: "A specialist solicitor accountant understands the unique challenges facing UK law firms, from SRA compliance to partnership taxation and client money handling."
+keyTakeaways:
+  - "Specialist solicitor accountants understand SRA Accounts Rules, client money handling, and trust accounting that most general accountants have never encountered."
+  - "They prepare the annual accountant's report and ensure proper separation of client money from office money to protect the firm's authorisation."
+  - "Legal sector tax expertise covers partnership and LLP profit allocation, the employment versus self-employment distinction, and basis period reform."
+  - "Sole practitioners need specialist guidance on Making Tax Digital for Income Tax, which applies from April 2026."
+  - "The right adviser also supports cash flow and lock-up management, VAT on disbursements, and tax-efficient practice succession."
 schema: ""
 faqs:
   - question: "How do I know if my current accountant understands legal practice requirements?"

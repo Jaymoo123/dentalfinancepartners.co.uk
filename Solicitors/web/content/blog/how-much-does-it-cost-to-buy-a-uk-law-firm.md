@@ -10,6 +10,12 @@ metaDescription: "What it actually costs to buy a UK law firm in 2025/26. EBITDA
 altText: "Solicitor reviewing acquisition documents for a UK law firm purchase"
 h1: "How Much Does It Cost to Buy a UK Law Firm in 2025/26?"
 summary: "UK law firm purchase prices in 2025/26 typically range from £150k for a small sole practitioner book to £5m+ for established multi-partner LLPs. The price = normalised profit × multiple + WIP + tangibles. We break down realistic ranges and what drives them."
+keyTakeaways:
+  - "The headline price is normalised profit times a market multiple, plus recoverable WIP and the net book value of tangible assets."
+  - "Multiples run from 0.6 to 1.2x for sole practitioners up to 2 to 3x for specialist firms, with conveyancing firms at the low end."
+  - "WIP is valued at recoverable amount, with files over six months old typically written down or excluded from the deal."
+  - "Bank lending usually covers 60 to 75% of the price, with vendor financing and earn-outs reducing the upfront cash needed."
+  - "SRA notification is required within 7 days of a material change in ownership, and an ABS licence can take 3 to 6 months."
 faqs:
   - question: "What's the typical multiple for a UK law firm acquisition in 2025/26?"
     answer: "Multiples vary widely by firm type. Sole practitioners and small books: 0.6 to 1.2 times normalised profit. Mid-market partnership / LLP: 1.2 to 2 times. Specialist firms (personal injury with strong CFA pipeline, niche commercial litigation, prestige private client): 2 to 3 times. Conveyancing-heavy firms are currently depressed by post-2022 market conditions and trade at the lower end. Add WIP at recoverable value and tangible assets at net book value for the headline price."

@@ -10,6 +10,12 @@ altText: "UK solicitors reviewing partnership accounting documents and financial
 image: ""
 h1: "Solicitor Partnership Accounting: Complete Guide for Legal Partnerships"
 summary: "Essential guide covering partnership tax obligations, profit allocation, accounts preparation and compliance requirements for UK legal partnerships."
+keyTakeaways:
+  - "A legal partnership is not a separate taxable entity; each partner pays Income Tax and National Insurance on their allocated profit share."
+  - "Partners are taxed on their profit share even where profits stay in the firm as capital, which can create cash flow pressure at tax time."
+  - "Partners take regular drawings as advances against profit, with over or under-drawings adjusted through their capital accounts at year-end."
+  - "Basis Period Reform from April 2024 taxes partners on profits arising in the tax year, and Making Tax Digital arrives from April 2026."
+  - "Client money must stay strictly separate from partnership funds under the SRA Accounts Rules, with the COFA responsible for the Accountant's Report."
 schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-partnership-accounting-guide"
 faqs:

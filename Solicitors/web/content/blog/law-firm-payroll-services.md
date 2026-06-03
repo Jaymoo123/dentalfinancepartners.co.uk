@@ -13,6 +13,12 @@ altText: "UK law firm payroll specialist working on legal practice salary calcul
 image: ""
 h1: "Law Firm Payroll Services: Complete Guide for UK Legal Practices"
 summary: "Specialist law firm payroll services designed for UK legal practices, handling everything from partner distributions to associate salaries with full SRA compliance support."
+keyTakeaways:
+  - "Law firm payroll must handle partner drawings, variable billing-linked bonuses and trainee progression that standard systems cannot."
+  - "Payroll differs sharply between traditional partnerships (partners self-employed) and LLPs, where members may be employed or self-employed."
+  - "Specialist providers integrate with legal case management software to calculate performance-related pay from actual billing data."
+  - "Switching provider typically takes 4 to 6 weeks, and the start of a new tax year is usually the cleanest time to move."
+  - "Choose a provider with genuine legal-sector experience who understands SRA compliance and your partnership or LLP structure."
 schema: ""
 faqs:
   - question: "What makes law firm payroll different from standard business payroll?"

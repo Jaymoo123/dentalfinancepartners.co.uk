@@ -11,6 +11,12 @@ altText: "Solicitor reviewing PII renewal documents at desk in UK law firm offic
 image: ""
 h1: "How Should a Solicitor Approach the PII Renewal Cycle for Their Law Firm?"
 summary: "A practical guide for solicitors on managing the PII renewal cycle. Covers the October renewal deadline, run-off cover obligations, current market conditions, and how premiums are treated for tax. Includes a checklist for COFAs and equity partners."
+keyTakeaways:
+  - "Most SRA-regulated firms renew PII on 1 October each year, and a new policy must be in place before midnight on 30 September with no grace period."
+  - "The SRA requires every firm to hold run-off cover for at least six years after it ceases regulated work, typically costing 1.5 to 3 times the last annual premium."
+  - "Annual PII premiums and run-off premiums are allowable trade expenses, deducted from firm profits before allocation to partners or shareholders."
+  - "The COFA is personally responsible for ensuring the firm holds MTC-compliant cover (£2 million or £3 million minimum) and can face SRA action if cover lapses."
+  - "A firm that cannot secure PII must stop regulated work immediately, as the SRA operates no fallback scheme."
 schema: ""
 faqs:
   - question: "What is the PII renewal deadline for UK law firms?"

@@ -11,6 +11,12 @@ altText: "Locum solicitor reviewing IR35 contract in a law firm office with a la
 image: ""
 h1: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
 summary: "IR35 rules affect locum solicitors who work through a personal service company (PSC). The engaging firm, if medium or large, determines the locum's employment status for tax. Getting the determination wrong can mean unpaid tax, NIC and penalties for both parties."
+keyTakeaways:
+  - "IR35 applies to locum solicitors working through a PSC, deciding whether they are taxed broadly as an employee."
+  - "A medium or large engaging firm must issue a Status Determination Statement; if the firm is small, the PSC decides its own status."
+  - "Status turns on substitution, control and mutuality of obligation, judged on the real working arrangements not just the contract."
+  - "IR35 status is assessed per engagement, so a locum can be inside IR35 for one firm and outside for another."
+  - "Penalties run up to 100% of the tax due for deliberate, concealed errors, plus interest from the date tax was payable."
 schema: ""
 faqs:
   - question: "Does IR35 apply to a locum solicitor working through an agency?"

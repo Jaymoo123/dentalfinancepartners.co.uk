@@ -10,6 +10,12 @@ metaDescription: "UK trainee solicitor salaries 2025/26 by firm type and region.
 altText: "UK trainee solicitor at a law firm desk reviewing case files"
 h1: "How Much Do UK Trainee Solicitors Earn in 2025/26?"
 summary: "UK trainee solicitor salaries in 2025/26 range from £25,000 at small high-street firms to £60,000+ at Magic Circle firms. Most are in £28,000-£40,000 range. We cover salaries by firm type, post-qualification jumps, take-home after tax and student loan."
+keyTakeaways:
+  - "UK trainee solicitor salaries in 2025/26 span £25,000 at small high-street firms to £60,000 or more at the Magic Circle."
+  - "Firm type is the biggest driver: most trainees sit in the £28,000 to £40,000 range."
+  - "On a £30,000 salary, take-home is roughly £23,377 a year after tax, NI, 5 percent pension and Plan 2 student loan."
+  - "The trainee-to-NQ jump is the largest single career salary step, up to +162 percent at US firms in London."
+  - "Above £50,270 the marginal rate hits 51 percent (40 percent tax, 2 percent NI, 9 percent student loan), netting about £490 per extra £1,000."
 faqs:
   - question: "Do UK trainee solicitors get paid?"
     answer: "Yes. All trainee solicitors at SRA-regulated firms are employed and receive a salary. There is no longer a mandatory minimum salary set by the SRA (the requirement was abolished in 2014). The Law Society publishes a recommended minimum salary annually as a guideline but it is not enforceable. In practice, almost all firms pay at or above National Minimum Wage (which would be the legal floor for any employee) and most pay materially more."

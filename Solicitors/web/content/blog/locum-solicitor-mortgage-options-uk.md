@@ -11,6 +11,12 @@ altText: "Locum solicitor reviewing mortgage documents in a UK law firm office"
 image: ""
 h1: "How Can a Locum Solicitor Secure a Mortgage on Self-Employed Income?"
 summary: "Locum solicitors face unique mortgage challenges because lenders treat them as self-employed. This guide explains how to structure your finances, what lenders look for, and how 12-month accounts can strengthen your application."
+keyTakeaways:
+  - "Lenders treat locum solicitors as self-employed, so most mainstream lenders want two to three years of accounts."
+  - "Some specialist lenders and building societies accept 12-month accounts, often at a lower income multiple of around 3.5x."
+  - "If you work through a limited company, lenders assess salary and dividends, not turnover or retained profit."
+  - "Claiming heavy expenses cuts declared profit and borrowing capacity, so time discretionary spending around an application."
+  - "A 20% or larger deposit, a clean trading history and a specialist broker materially improve approval chances."
 schema: ""
 faqs:
   - question: "Can a locum solicitor get a mortgage with only 12 months of accounts?"

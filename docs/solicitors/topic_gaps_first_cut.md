@@ -1,0 +1,1222 @@
+# Accounts for Lawyers — filtered competitor topic gaps
+
+Filtered from raw competitor sitemap scrape (`briefs/solicitors/_competitor_urls.json`) using news-pattern exclusion + evergreen-pattern inclusion + loose-match exclusion against our 149 pages.
+
+Primary competitors considered: armstrongwatson.co.uk, hazlewoods.co.uk, pkf-francisclark.co.uk, perrysaccountants.co.uk, moorethompson.co.uk, hawsons.co.uk, bennettbrooks.co.uk, lanop.co.uk, mmba.co.uk, rpartners.co.uk, accountant4lawyers.co.uk, cvhaccountants.co.uk, lawfirmambition.co.uk, jonathonbray.com, ten-percent.co.uk, ilfm.org.uk, slaccountants.co.uk
+
+**How to read this:**
+- Topics are bucketed by theme.
+- Within each bucket, slugs are ordered by the number of competitor sites that cover them (higher = stronger demand signal).
+- A slug listed here means at least one direct competitor has an evergreen guide on it, and we don't (loose slug match).
+- The slug itself is a starting hypothesis for the gap topic, not a final spec — Opus should look at the underlying competitor URL to confirm scope before we commit to writing.
+
+---
+
+## Other / uncategorised (339 gap topics, 342 competitor pages)
+
+- **[x2]** `new-financial-penalties-for-law-firms-revealed`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-capital-gains-tax-payment-and-reporting-deadlines-reminder/new-financial-penalties-for-law-firms-revealed/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-financial-penalties-for-law-firms-revealed/
+- **[x2]** `report-on-cybercrime-highlights-risks-for-law-firms`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-capital-gains-tax-payment-and-reporting-deadlines-reminder/report-on-cybercrime-highlights-risks-for-law-firms/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/report-on-cybercrime-highlights-risks-for-law-firms/
+- **[x2]** `services-for-lawyers`
+  - ten-percent.co.uk: https://ten-percent.co.uk/features/services-for-lawyers/
+  - ten-percent.co.uk: https://ten-percent.co.uk/services-for-lawyers/
+- [x1] `%ef%bb%bf%ef%bb%bf%ef%bb%bf%ef%bb%bf%ef%bb%bfregional-variations-in-legal-recruitment`
+  - ten-percent.co.uk: https://ten-percent.co.uk/%ef%bb%bf%ef%bb%bf%ef%bb%bf%ef%bb%bf%ef%bb%bfregional-variations-in-legal-recruitment/
+- [x1] `3rd-class-law-degree-from-overseas-university`
+  - ten-percent.co.uk: https://ten-percent.co.uk/3rd-class-law-degree-from-overseas-university/
+- [x1] `adjusting-numbers-future-finance-law-firms`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/07/adjusting-numbers-future-finance-law-firms
+- [x1] `advice-for-australian-lawyers-looking-for-legal-jobs-uk`
+  - ten-percent.co.uk: https://ten-percent.co.uk/advice-for-australian-lawyers-looking-for-legal-jobs-uk/
+- [x1] `akounts-connect-online-accounting-powered-by-salhan-accountants`
+  - accountant4lawyers.co.uk: https://accountant4lawyers.co.uk/akounts-connect-online-accounting-powered-by-salhan-accountants/
+- [x1] `andy-poole-legal-sector-partner-armstrong-watson-interviews-jon-davies-vice-president`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/07/andy-poole-legal-sector-partner-armstrong-watson-interviews-jon-davies-vice-president
+- [x1] `annual-reviews-for-lawyers`
+  - ten-percent.co.uk: https://ten-percent.co.uk/annual-reviews-for-lawyers/
+- [x1] `application-forms-solicitors-detest-them`
+  - ten-percent.co.uk: https://ten-percent.co.uk/application-forms-solicitors-detest-them/
+- [x1] `are-psychometric-tests-a-good-idea-for-solicitor-recruitment`
+  - ten-percent.co.uk: https://ten-percent.co.uk/are-psychometric-tests-a-good-idea-for-solicitor-recruitment/
+- [x1] `are-your-accountants-simply-analyzing-data-or-are-they-thinking-like-a-true-business-partner`
+  - lanop.co.uk: https://lanop.co.uk/are-your-accountants-simply-analyzing-data-or-are-they-thinking-like-a-true-business-partner/
+- [x1] `armstrong-watson-acquires-burnetts-solicitors-financial-services-arm`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/09/armstrong-watson-acquires-burnetts-solicitors-financial-services-arm
+- [x1] `armstrong-watson-acquires-north-east-accountancy-firm`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/03/armstrong-watson-acquires-north-east-accountancy-firm
+- [x1] `armstrong-watson-gains-exclusive-endorsement-law-society`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/03/armstrong-watson-gains-exclusive-endorsement-law-society
+- [x1] `armstrong-watson-stands-firm-against-iht-increase-farmers`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/11/armstrong-watson-stands-firm-against-iht-increase-farmers
+- [x1] `ask-a-legal-recruitment-consultant`
+  - ten-percent.co.uk: https://ten-percent.co.uk/ask-a-legal-recruitment-consultant/
+- [x1] `audit-assurance`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/legal/audit-assurance/
+- [x1] `bank-finance-law-firms-faqs`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/finance-and-accounting/bank-finance-law-firms-faqs
+- [x1] `banner-legal`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-sectors/legal-firms/banner-legal/
+- [x1] `banner-legal2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-sectors/legal-firms/banner-legal2/
+- [x1] `battling-the-costs-reviewing-your-pricing-strategy`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/battling-the-costs-reviewing-your-pricing-strategy/
+- [x1] `building-perfect-legal-business-checklist`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/strategy/building-perfect-legal-business-checklist
+- [x1] `building-your-team-and-improving-collaboration-checklist`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/managing-people/building-your-team-and-improving-collaboration-checklist
+- [x1] `business-strategy-and-profit-improvement`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-sectors/legal-firms/business-strategy-and-profit-improvement/
+- [x1] `business-support-services`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-sectors/legal-firms/business-support-services/
+- [x1] `businessmenmakinghandshakewithhispartnerincafe-business`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/considering-acquiring-another-law-firm-heres-what-you-need-to-consider/businessmenmakinghandshakewithhispartnerincafe-business/
+- [x1] `buy-or-sell-a-solicitors-practice`
+  - ten-percent.co.uk: https://ten-percent.co.uk/buy-or-sell-a-solicitors-practice/
+- [x1] `can-a-solicitor-be-a-millionaire-recent-question`
+  - ten-percent.co.uk: https://ten-percent.co.uk/can-a-solicitor-be-a-millionaire-recent-question/
+- [x1] `can-you-be-a-millionaire-or-very-rich-and-work-as-a-solicitor`
+  - ten-percent.co.uk: https://ten-percent.co.uk/can-you-be-a-millionaire-or-very-rich-and-work-as-a-solicitor/
+- [x1] `can-you-help-me-revolutionise-the-legal-profession`
+  - ten-percent.co.uk: https://ten-percent.co.uk/can-you-help-me-revolutionise-the-legal-profession/
+- [x1] `can-you-help-overseas-lawyers-find-legal-jobs-in-the-uk`
+  - ten-percent.co.uk: https://ten-percent.co.uk/ufaq/can-you-help-overseas-lawyers-find-legal-jobs-in-the-uk/
+- [x1] `can-you-improve-your-firms-financial-health`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/can-you-improve-your-firms-financial-health/
+- [x1] `career-planning-for-lawyers-stick-or-twist`
+  - ten-percent.co.uk: https://ten-percent.co.uk/career-planning-for-lawyers-stick-or-twist/
+- [x1] `child-care-solicitors-what-do-they-do-and-how-do-i-become-one`
+  - ten-percent.co.uk: https://ten-percent.co.uk/child-care-solicitors-what-do-they-do-and-how-do-i-become-one/
+- [x1] `childcare-costs-crisis`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/childcare-costs-crisis
+- [x1] `choosing-firm-accountants`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/finance-and-accounting/choosing-firm-accountants
+- [x1] `choosing-the-spec-for-in-house-lawyer-vacancies`
+  - ten-percent.co.uk: https://ten-percent.co.uk/choosing-the-spec-for-in-house-lawyer-vacancies/
+- [x1] `choppy-waters-ahead-legal-sector`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/03/choppy-waters-ahead-legal-sector
+- *(+299 more in this bucket)*
+
+## Payroll, pensions & staff (127 gap topics, 137 competitor pages)
+
+- **[x4]** `payroll`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/business-accountants/payroll/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/neonatal-care-leave-what-is-it-and-what-does-it-mean/payroll/
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/our-services/payroll/
+  - cvhaccountants.co.uk: https://cvhaccountants.co.uk/payroll/
+- **[x2]** `cipp-publishes-results-of-its-first-in-house-payroll-insights-survey`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/cipp-publishes-results-of-its-first-in-house-payroll-insights-survey/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-will-the-imminent-arrival-of-the-employment-rights-bill-affect-businesses/cipp-publishes-results-of-its-first-in-house-payroll-insights-survey/
+- **[x2]** `common-employer-paye-charge-issues`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/common-employer-paye-charge-issues/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/common-employer-paye-charge-issues/common-employer-paye-charge-issues/
+- **[x2]** `deadline-approaches-for-paye-settlement-agreement`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/deadline-approaches-for-paye-settlement-agreement/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/employers-paye-variable-payment-plan-what-you-need-to-know/deadline-approaches-for-paye-settlement-agreement/
+- **[x2]** `how-a-payroll-saving-scheme-benefits-your-employees`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-a-payroll-saving-scheme-benefits-your-employees/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-will-the-imminent-arrival-of-the-employment-rights-bill-affect-businesses/how-a-payroll-saving-scheme-benefits-your-employees/
+- **[x2]** `payroll-bureau`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/mt-pay/payroll-bureau/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-sectors/agriculture-and-rural-affairs/payroll-bureau/
+- **[x2]** `payroll-hr-advice`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/covid-19-re-build-and-recover-were-here-to-help-you-get-back-on-track/payroll-hr-advice/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/covid-19-re-build-and-recover-were-here-to-help-you-get-back-on-track/payroll-hr-advice/payroll-hr-advice/
+- **[x2]** `year-end-payroll-preparation`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-do-the-measures-in-the-autumn-statement-2023-affect-your-payroll/year-end-payroll-preparation/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/year-end-payroll-preparation/
+- [x1] `advancing-payroll-beyond-the-term-time-conundrum`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/advancing-payroll-beyond-the-term-time-conundrum/
+- [x1] `ai-payroll-pioneers-human-touch`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/07/ai-payroll-pioneers-human-touch
+- [x1] `are-you-ready-for-payrolling-employee-benefits`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/are-you-ready-for-payrolling-employee-benefits/
+- [x1] `armstrong-watsons-payroll-professionals-included-exclusive-reward-300-index`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/06/armstrong-watsons-payroll-professionals-included-exclusive-reward-300-index
+- [x1] `as-summer-approaches-prepare-your-payroll-for-part-year-workers`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/as-summer-approaches-prepare-your-payroll-for-part-year-workers/
+- [x1] `auto-enrolment-pension`
+  - lanop.co.uk: https://lanop.co.uk/auto-enrolment-pension/
+- [x1] `auto-enrolment-videos`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/mt-pay/auto-enrolment-videos/
+- [x1] `auto-enrolment-what-it-means-for-your-business`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/mt-pay/auto-enrolment-what-it-means-for-your-business/
+- [x1] `auto-enrolment-what-postponement`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2016/01/auto-enrolment-what-postponement
+- [x1] `avoid-stress-and-prepare-for-payroll-year-end`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/avoid-stress-and-prepare-for-payroll-year-end/
+- [x1] `benefits-and-payroll-a-comprehensive-guide`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/benefits-and-payroll-a-comprehensive-guide/
+- [x1] `bonus-schemes-love-them-or-hate-them`
+  - ten-percent.co.uk: https://ten-percent.co.uk/bonus-schemes-love-them-or-hate-them/
+- [x1] `boost-your-payroll`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-do-the-measures-in-the-autumn-statement-2023-affect-your-payroll/boost-your-payroll/
+- [x1] `can-you-afford-ignore-new-employment-allowance`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/04/can-you-afford-ignore-new-employment-allowance
+- [x1] `celebrate-national-payroll-week-with-moore-thompson`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/celebrate-national-payroll-week-with-moore-thompson/
+- [x1] `company-bonus-scheme`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/company-bonus-scheme
+- [x1] `employee-benefits-and-mandatory-payroll-reporting`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/employee-benefits-and-mandatory-payroll-reporting/
+- [x1] `employee-benefits-and-mandatory-payroll-reporting_2279811267`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/uk-company-law-is-changing-get-ready-now/employee-benefits-and-mandatory-payroll-reporting_2279811267/
+- [x1] `employee-benefits-and-mandatory-payroll-reporting_2279811267-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/uk-company-law-is-changing-get-ready-now/employee-benefits-and-mandatory-payroll-reporting_2279811267-2/
+- [x1] `employee-benefits-and-mandatory-payroll-reporting_2279811267-3`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/tax-basis-getting-ready-for-the-end-of-the-transitional-year-2/employee-benefits-and-mandatory-payroll-reporting_2279811267-3/
+- [x1] `employees-and-workplace-pensions`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/employees-and-workplace-pensions/
+- [x1] `employers-must-do-more-to-help-employees-understand-their-payslip-cipp-payroll-survey-finds`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/employers-must-do-more-to-help-employees-understand-their-payslip-cipp-payroll-survey-finds/
+- [x1] `employers-national-insurance-increase`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/employers-national-insurance-increase
+- [x1] `epic-common-employer-paye-charge-issues`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/common-employer-paye-charge-issues/epic-common-employer-paye-charge-issues/
+- [x1] `fact-or-fiction-debunking-payroll-myths`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/fact-or-fiction-debunking-payroll-myths/
+- [x1] `first-payroll-professional-new-partner`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/04/first-payroll-professional-new-partner
+- [x1] `higher-and-additional-rate-taxpayers-still-select-club`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/07/higher-and-additional-rate-taxpayers-still-select-club
+- [x1] `how-payroll-giving-can-boost-corporate-social-responsibility-while-benefiting-employees`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-payroll-giving-can-boost-corporate-social-responsibility-while-benefiting-employees/
+- [x1] `how-to-handle-paye-settlement-agreement-payments`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-to-handle-paye-settlement-agreement-payments/
+- [x1] `how-to-manage-salary-advances-on-your-payroll`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-to-manage-salary-advances-on-your-payroll/
+- [x1] `how-to-manage-student-and-postgraduate-loans-on-payroll`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-to-manage-student-and-postgraduate-loans-on-payroll/
+- [x1] `is-your-payroll-ready-for-sick-pay-reform`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/is-your-payroll-ready-for-sick-pay-reform/
+- *(+87 more in this bucket)*
+
+## VAT on legal services & disbursements (95 gap topics, 101 competitor pages)
+
+- **[x3]** `vat`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/vat/
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/our-services/taxation/vat/
+  - cvhaccountants.co.uk: https://cvhaccountants.co.uk/vat/
+- **[x2]** `a-new-vat-penalty-system-is-now-in-effect`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/a-new-vat-penalty-system-is-now-in-effect/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/implementation-of-mtd-for-itsa-delayed-for-two-years/a-new-vat-penalty-system-is-now-in-effect/
+- **[x2]** `avoiding-the-pitfalls-of-private-residence-relief`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/avoiding-the-pitfalls-of-private-residence-relief/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/avoiding-the-pitfalls-of-private-residence-relief/avoiding-the-pitfalls-of-private-residence-relief/
+- **[x2]** `inside-the-private-equity-boom`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/inside-the-private-equity-boom/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/management-buyouts-an-alternative-approach-to-exit-and-succession/inside-the-private-equity-boom/
+- **[x2]** `private-residence-relief`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/private-residence-relief
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/avoiding-the-pitfalls-of-private-residence-relief/private-residence-relief/
+- [x1] `agriculturetractorcultivatingland-combineharvesteratwheatfield-combine`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/agricultural-sector-urged-to-maintain-compliance-despite-decline-in-hmrc-evasion-investigations/agriculturetractorcultivatingland-combineharvesteratwheatfield-combine/
+- [x1] `are-changes-vat-imminent`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/11/are-changes-vat-imminent
+- [x1] `are-you-thinking-about-vat-your-works-christmas-party`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/12/are-you-thinking-about-vat-your-works-christmas-party
+- [x1] `avoid-these-costly-vat-mistakes`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/avoid-these-costly-vat-mistakes/
+- [x1] `avoid-vat-issues-new-dwellings-farms`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/06/avoid-vat-issues-new-dwellings-farms
+- [x1] `bank-interest-and-partial-exemption-new-vat-risk-law-firms`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/02/bank-interest-and-partial-exemption-new-vat-risk-law-firms
+- [x1] `banner-vat`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/vat/banner-vat/
+- [x1] `boriss-proposed-brexit-deal-customs-vat-and-irish-border`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/10/boriss-proposed-brexit-deal-customs-vat-and-irish-border
+- [x1] `brexit-vat-changes`
+  - lanop.co.uk: https://lanop.co.uk/brexit-vat-changes/
+- [x1] `building-vat-building-projects`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/09/building-vat-building-projects
+- [x1] `can-reclaim-vat-christmas-party`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/can-reclaim-vat-christmas-party
+- [x1] `cgt-private-residence-relief-renting-home-uk`
+  - lanop.co.uk: https://lanop.co.uk/cgt-private-residence-relief-renting-home-uk/
+- [x1] `changes-hospitality-vat-rates`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/02/changes-hospitality-vat-rates
+- [x1] `changing-vat-rates-causing-confusion-hospitality-businesses`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/07/changing-vat-rates-causing-confusion-hospitality-businesses
+- [x1] `client-story-private-family`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/client-story/client-story-private-family/
+- [x1] `company-car-vat-avoiding-mistakes-when-applying-the-fuel-scale-charge`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/company-car-vat-avoiding-mistakes-when-applying-the-fuel-scale-charge/
+- [x1] `conservative-majority-financial-markets-reaction`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/12/conservative-majority-financial-markets-reaction
+- [x1] `cultivating-compliance-navigating-vat-in-farming`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/farms-and-estates/cultivating-compliance-navigating-vat-in-farming/
+- [x1] `deal-or-no-deal-brexit-vat-guidance`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/08/deal-or-no-deal-brexit-vat-guidance
+- [x1] `delay-domestic-reverse-charge-vat`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/delay-domestic-reverse-charge-vat
+- [x1] `diversifying-your-farm-innovative-ways-to-boost-income`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/diversifying-your-farm-innovative-ways-to-boost-income/
+- [x1] `does-my-charity-need-register-vat`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/07/does-my-charity-need-register-vat
+- [x1] `dont-forget-about-vat-christmas`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/11/dont-forget-about-vat-christmas
+- [x1] `effective-vat-return-solutions-to-optimize-your-taxation`
+  - lanop.co.uk: https://lanop.co.uk/effective-vat-return-solutions-to-optimize-your-taxation/
+- [x1] `equine-vat`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/equine/equine-vat/
+- [x1] `farming-innovation-programme-driving-growth-in-agriculture-industry`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/farming-innovation-programme-driving-growth-in-agriculture-industry/
+- [x1] `here-are-all-the-changes-in-vat-after-brexit`
+  - lanop.co.uk: https://lanop.co.uk/here-are-all-the-changes-in-vat-after-brexit/
+- [x1] `how-retain-and-motivate-key-talent`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/managing-people/how-retain-and-motivate-key-talent
+- [x1] `how-to-protect-your-business-from-kittel-vat-risks`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-to-protect-your-business-from-kittel-vat-risks/
+- [x1] `how-to-protect-your-business-from-kittel-vat-risks_2044837307`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/fiscal-drag-and-tax-thresholds-what-does-it-mean-for-you/how-to-protect-your-business-from-kittel-vat-risks_2044837307/
+- [x1] `innovation-and-glencroft-chair-wool`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/03/innovation-and-glencroft-chair-wool
+- [x1] `innovative-companies-are-you-missing-out-tax-saving`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/08/innovative-companies-are-you-missing-out-tax-saving
+- [x1] `inspector-calls-visit-vatman`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/11/inspector-calls-visit-vatman
+- [x1] `ir35-and-local-authority-contractors-are-we-heading-towards-the-same-regime-for-private-practice`
+  - ten-percent.co.uk: https://ten-percent.co.uk/ir35-and-local-authority-contractors-are-we-heading-towards-the-same-regime-for-private-practice/
+- [x1] `it-designed-dwelling-vat-pitfall`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/02/it-designed-dwelling-vat-pitfall
+- *(+55 more in this bucket)*
+
+## Practice sale, succession & goodwill (98 gap topics, 100 competitor pages)
+
+- **[x2]** `business-asset-disposal-relief`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/business-asset-disposal-relief/
+  - mmba.co.uk: https://www.mmba.co.uk/blog/business-asset-disposal-relief
+- **[x2]** `succession-who-do-you-trust`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/succession-who-do-you-trust
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/11/succession-who-do-you-trust
+- [x1] `a-guide-to-tax-efficient-business-succession`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/a-guide-to-tax-efficient-business-succession/
+- [x1] `acquisitions-and-disposals`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/advisory/acquisitions-and-disposals/
+- [x1] `agriculture-relief-and-succession-planning`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/agriculture-relief-and-succession-planning/
+- [x1] `announcing-the-retirement-of-mary-tierney`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/announcing-the-retirement-of-mary-tierney/
+- [x1] `approaching-retirement`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/approaching-retirement
+- [x1] `average-income-retirement`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/04/average-income-retirement
+- [x1] `banner-acquisitions-and-disposals`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/advisory/acquisitions-and-disposals/banner-acquisitions-and-disposals/
+- [x1] `banner-preparing-for-exit`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/budgeting-and-planning/preparing-for-exit/banner-preparing-for-exit/
+- [x1] `boost-your-investment-returns-using-cgt-exemption`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/07/boost-your-investment-returns-using-cgt-exemption
+- [x1] `brexit-and-payroll-implications`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2016/05/brexit-and-payroll-implications
+- [x1] `brexit-branch-v-subsidiary-uk`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/01/brexit-branch-v-subsidiary-uk
+- [x1] `brexit-what-are-corporate-tax-implications-companies`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/04/brexit-what-are-corporate-tax-implications-companies
+- [x1] `business-asset-disposal-relief-badr`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/business-asset-disposal-relief-badr/
+- [x1] `business-asset-disposal-relief-what-its-future`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/01/business-asset-disposal-relief-what-its-future
+- [x1] `business-exit-strategies`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/our-services/taxation/business-exit-strategies/
+- [x1] `business-exit-strategy`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/business-exit-strategy
+- [x1] `business-sales-and-acquisitions`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/our-services/corporate-finance/business-sales-and-acquisitions/
+- [x1] `businesses-urged-apply-new-brexit-support-fund`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/03/businesses-urged-apply-new-brexit-support-fund
+- [x1] `can-business-asset-disposal-relief-badr-improve-a-clients-business-sale-value`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/can-business-asset-disposal-relief-badr-improve-a-clients-business-sale-value/
+- [x1] `can-you-live-ps8000-year-retirement`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/02/can-you-live-ps8000-year-retirement
+- [x1] `capital-gains-tax-allowance-legal-ways-reduce-cgt`
+  - lanop.co.uk: https://lanop.co.uk/capital-gains-tax-allowance-legal-ways-reduce-cgt/
+- [x1] `capital-gains-tax-cgt-6-april`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/project/capital-gains-tax-cgt-6-april/
+- [x1] `claiming-capital-allowances-acquisition-building`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/08/claiming-capital-allowances-acquisition-building
+- [x1] `client-story-succession-planning-for-a-family-farming-and-equestrian-business`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/client-story/client-story-succession-planning-for-a-family-farming-and-equestrian-business/
+- [x1] `dealing-customers-post-brexit`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/11/dealing-customers-post-brexit
+- [x1] `ensuring-your-pension-lasts-through-your-retirement-risks-and-strategies-flexible`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/06/ensuring-your-pension-lasts-through-your-retirement-risks-and-strategies-flexible
+- [x1] `exit-lockdown-implications-businesses`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/07/exit-lockdown-implications-businesses
+- [x1] `exit-strategies-for-business-owners-guide`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/exit-strategies-for-business-owners-guide/
+- [x1] `exit-uk-tax-residency-hnwi-guide`
+  - lanop.co.uk: https://lanop.co.uk/exit-uk-tax-residency-hnwi-guide/
+- [x1] `exiting-your-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/06/exiting-your-business
+- [x1] `family-business-and-succession-planning`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/05/family-business-and-succession-planning
+- [x1] `farming-familys-acquisition-almost-doubles-size-poultry-operation`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/farming-familys-acquisition-almost-doubles-size-poultry-operation
+- [x1] `farms-and-estates-succession-in-farming-families`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/podcasts/farms-and-estates-succession-in-farming-families/
+- [x1] `frustration-over-delays-lump-sum-bps-retirement-scheme`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/12/frustration-over-delays-lump-sum-bps-retirement-scheme
+- [x1] `gender-gap-retirement-savings`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/02/gender-gap-retirement-savings
+- [x1] `grow-strong-exit-smart`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/business-accountants/corporate-finance-deals/grow-strong-exit-smart/
+- [x1] `guide-to-business-asset-disposal-relief`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/business-asset-disposal-relief-badr/guide-to-business-asset-disposal-relief/
+- [x1] `guide-to-exit-strategies`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/business-asset-disposal-relief-badr/guide-to-exit-strategies/
+- *(+58 more in this bucket)*
+
+## Structure, incorporation & ABS (49 gap topics, 49 competitor pages)
+
+- [x1] `absence-management`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/mt-hr/absence-management/
+- [x1] `benefits-incorporating-limited-company`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/04/benefits-incorporating-limited-company
+- [x1] `buy-a-car-through-your-limited-company`
+  - lanop.co.uk: https://lanop.co.uk/buy-a-car-through-your-limited-company/
+- [x1] `can-you-claim-capital-gains-tax-relief-incorporation-your-property-letting-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/12/can-you-claim-capital-gains-tax-relief-incorporation-your-property-letting-business
+- [x1] `changes-to-dividend-taxation`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/changes-to-dividend-taxation
+- [x1] `charity-structures-finding-the-right-one-for-you`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/charities/charity-structures-finding-the-right-one-for-you/
+- [x1] `choosing-your-law-firms-business-structure`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/strategy/choosing-your-law-firms-business-structure
+- [x1] `closing-a-limited-company-taar`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/closing-a-limited-company-taar
+- [x1] `company-year-end-planning-capital-allowances-pension-contributions-and-dividend-rates`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/04/company-year-end-planning-capital-allowances-pension-contributions-and-dividend-rates
+- [x1] `considering-the-benefits-of-incorporation`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/considering-the-benefits-of-incorporation/
+- [x1] `corporate-partner-structures-what-happens-now`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/02/corporate-partner-structures-what-happens-now
+- [x1] `corporation-tax-a-reminder-about-the-annual-investment-allowance-and-the-structures-and-buildings-allowance`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/corporation-tax-a-reminder-about-the-annual-investment-allowance-and-the-structures-and-buildings-allowance/
+- [x1] `deal-structure-v-valuation-which-is-more-important`
+  - ten-percent.co.uk: https://ten-percent.co.uk/deal-structure-v-valuation-which-is-more-important/
+- [x1] `director-shareholder-salary-dividend-changes`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/director-shareholder-salary-dividend-changes/
+- [x1] `dividend-calculator`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/dividend-calculator
+- [x1] `dividend-tax-allowance-a-double-hit`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/dividend-tax-allowance-a-double-hit
+- [x1] `dividend-tax-allowance-further-details`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/dividend-tax-allowance-further-details
+- [x1] `dividends-paperwork-are-you-compliant`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/dividends-paperwork-are-you-compliant
+- [x1] `do-i-still-have-correct-structure-my-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/01/do-i-still-have-correct-structure-my-business
+- [x1] `effectivecomplianceandlawprinciplecultureincorporate-ethicalinvest`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/will-a-minimum-wage-rise-trigger-unexpected-student-loan-repayments/effectivecomplianceandlawprinciplecultureincorporate-ethicalinvest/
+- [x1] `family-business-accountancy-restructure`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/family-business-accountancy-restructure
+- [x1] `farms-and-estates-business-structures`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/podcasts/farms-and-estates-business-structures/
+- [x1] `how-much-dividends-can-i-pay-myself`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/how-much-dividends-can-i-pay-myself
+- [x1] `how-to-structure-your-equine-business`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/equine/how-to-structure-your-equine-business/
+- [x1] `incorporation`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/client-story/incorporation/
+- [x1] `incorporation-relief-for-property-landlords-guide`
+  - lanop.co.uk: https://lanop.co.uk/incorporation-relief-for-property-landlords-guide/
+- [x1] `incorporations-across-armstrong-watson-region`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/02/incorporations-across-armstrong-watson-region
+- [x1] `is-it-time-to-restructure-your-business`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/is-it-time-to-restructure-your-business/
+- [x1] `is-it-time-to-restructure-your-business_2477354687`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/fiscal-drag-and-tax-thresholds-what-does-it-mean-for-you/is-it-time-to-restructure-your-business_2477354687/
+- [x1] `limited-company-closure-why-when-and-how`
+  - lanop.co.uk: https://lanop.co.uk/limited-company-closure-why-when-and-how/
+- [x1] `limited-company-structure-in-the-legal-sector`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/limited-company-structure-in-the-legal-sector/
+- [x1] `long-term-relationship-pays-dividends`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/long-term-relationship-pays-dividends
+- [x1] `managing-absenteeism-checklist`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/managing-people/managing-absenteeism-checklist
+- [x1] `managing-sickness-absence-on-payroll`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/managing-sickness-absence-on-payroll/
+- [x1] `mt-running-a-limited-company-brochure`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/being-brave-everything-to-help-the-new-entrepreneur/mt-running-a-limited-company-brochure/
+- [x1] `mt-running-a-limited-company-cover`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/mt-running-a-limited-company-cover/
+- [x1] `new-shareholder-dividend-reporting-requirements-are-fast-approaching`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-shareholder-dividend-reporting-requirements-are-fast-approaching/
+- [x1] `practice-structure`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/practice-structure/
+- [x1] `practice-structure-and-incorporation-advice`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/legal/practice-structure-and-incorporation-advice/
+- [x1] `restricting-tax-reliefs-incorporation-law-firms`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/12/restricting-tax-reliefs-incorporation-law-firms
+- *(+9 more in this bucket)*
+
+## Practice finance & lending (43 gap topics, 46 competitor pages)
+
+- **[x3]** `grant-funding`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/grant-funding
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/outsourcing/grant-funding/
+  - cvhaccountants.co.uk: https://cvhaccountants.co.uk/grant-funding/
+- **[x2]** `grant-funding-opportunities-for-small-homeless-charities`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/grant-funding-opportunities-for-small-homeless-charities/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/grant-funding-opportunities-for-small-homeless-charities/grant-funding-opportunities-for-small-homeless-charities/
+- [x1] `armstrong-watson-expands-corporate-finance-team-new-funding-and-debt-advisory-partner`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/02/armstrong-watson-expands-corporate-finance-team-new-funding-and-debt-advisory-partner
+- [x1] `banner-grant-and-funding-service`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-services/banner-grant-and-funding-service/
+- [x1] `business-lending-landscape-and-options-hlt-businesses`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/06/business-lending-landscape-and-options-hlt-businesses
+- [x1] `businessfinancingandgrantsconcept-copyspace-grantfundinghandwritten`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/grant-funding-opportunity-200000-available-for-uk-road-safety-schemes/businessfinancingandgrantsconcept-copyspace-grantfundinghandwritten/
+- [x1] `cbils-and-impact-funding-landscape`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/09/cbils-and-impact-funding-landscape
+- [x1] `cost-doing-business-refinance`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/04/cost-doing-business-refinance
+- [x1] `dollarmoneybagonfarmfield-lendingandsubsidizingfarmers`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/capital-grants-scheme-sees-over-8000-farmers-share-150-million/dollarmoneybagonfarmfield-lendingandsubsidizingfarmers/
+- [x1] `extra-funding-for-uk-horticulture-growth`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/extra-funding-for-uk-horticulture-growth/
+- [x1] `final-call-for-technology-funding`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/final-call-for-technology-funding/
+- [x1] `funding-application-reviews`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/mt-grants-service/funding-application-reviews/
+- [x1] `funding-business-equipment-and-kit`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/11/funding-business-equipment-and-kit
+- [x1] `funding-business-why-and-where`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/08/funding-business-why-and-where
+- [x1] `funding-options-management-buy-outs`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/10/funding-options-management-buy-outs
+- [x1] `funding-options-support-re-opening-your-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/06/funding-options-support-re-opening-your-business
+- [x1] `funding-options-your-pii-renewal-we-can-help`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/09/funding-options-your-pii-renewal-we-can-help
+- [x1] `funding-pi-insurance-and-tax`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/finance-and-accounting/funding-pi-insurance-and-tax
+- [x1] `get-hunting-for-grant-funding`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/get-hunting-for-grant-funding/
+- [x1] `get-your-share-of-new-lottery-funding`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/get-your-share-of-new-lottery-funding/
+- [x1] `government-funding-charities`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/04/government-funding-charities
+- [x1] `government-issues-funding-to-combat-livestock-disease`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/government-issues-funding-to-combat-livestock-disease/
+- [x1] `grant-and-funding-service-flyer-download`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/grant-and-funding-service-flyer-download/
+- [x1] `grant-funding-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/09/grant-funding-business
+- [x1] `grant-funding-for-uk-businesses-unlocking-opportunities`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/grant-funding-for-uk-businesses-unlocking-opportunities/
+- [x1] `grant-funding-help-identify-your-businesss-cyber-risks`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/05/grant-funding-help-identify-your-businesss-cyber-risks
+- [x1] `grant-funding-service-book-a-meeting-form`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/grant-funding-service-book-a-meeting-form/
+- [x1] `grant-funding-videos`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/outsourcing/grant-funding/grant-funding-videos/
+- [x1] `growth-funding-secured-glasgow-media-companys-expansion`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/growth-funding-secured-glasgow-media-companys-expansion
+- [x1] `high-street-lending-sme-businesses-has-fallen`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/06/high-street-lending-sme-businesses-has-fallen
+- [x1] `hospitality-businesses-certainty-and-further-funding-needed`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/02/hospitality-businesses-certainty-and-further-funding-needed
+- [x1] `mt-grant-funding-questions-cover`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/mt-grant-funding-questions-cover/
+- [x1] `new-defra-funding-for-farmers-and-growers-available`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-defra-funding-for-farmers-and-growers-available/
+- [x1] `new-grant-funding-businesses-impacted-omicron`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/01/new-grant-funding-businesses-impacted-omicron
+- [x1] `new-year-new-grant-funding`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-year-new-grant-funding/
+- [x1] `optimising-partner-capital-and-lock-professional-firms`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/12/optimising-partner-capital-and-lock-professional-firms
+- [x1] `rural-yorkshire-manufacturer-secures-grant-funding-expansion`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/rural-yorkshire-manufacturer-secures-grant-funding-expansion
+- [x1] `stephen-dinsmore-leads-armstrong-watson-commercial-funding`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/12/stephen-dinsmore-leads-armstrong-watson-commercial-funding
+- [x1] `student-loans-and-funding-university`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/student-loans-and-funding-university
+- [x1] `success-our-bankruptcy-funding-product`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/02/success-our-bankruptcy-funding-product
+- *(+3 more in this bucket)*
+
+## MTD & digital tax (33 gap topics, 34 competitor pages)
+
+- **[x2]** `mtd-landlords`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/mtd-landlords
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/mtd-landlords
+- [x1] `are-your-systems-ready-for-mtd-five-things-to-check-as-the-clock-ticks-down`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/are-your-systems-ready-for-mtd-five-things-to-check-as-the-clock-ticks-down/
+- [x1] `implementation-of-mtd-for-itsa-delayed-for-two-years`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/implementation-of-mtd-for-itsa-delayed-for-two-years/
+- [x1] `implementation-of-mtd-for-itsa-delayed-for-two-years-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/implementation-of-mtd-for-itsa-delayed-for-two-years/implementation-of-mtd-for-itsa-delayed-for-two-years-2/
+- [x1] `just-over-half-a-year-left-to-prepare-for-mtd-for-income-tax-act-now`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/just-over-half-a-year-left-to-prepare-for-mtd-for-income-tax-act-now/
+- [x1] `just-over-half-a-year-left-to-prepare-for-mtd-for-income-tax_2501744721-1000x666`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/what-does-the-governments-plan-for-small-businesses-mean-for-you/just-over-half-a-year-left-to-prepare-for-mtd-for-income-tax_2501744721-1000x666/
+- [x1] `mt-mtd-guide`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mt-mtd-guide/
+- [x1] `mt-mtd-income-tax-cover`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/mt-mtd-income-tax-cover/
+- [x1] `mt-mtd-income-tax-cover-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/mt-mtd-income-tax-cover-2/
+- [x1] `mt-mtd-roadmap`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mt-mtd-roadmap/
+- [x1] `mt-mtd-roadmap-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mt-mtd-roadmap-2/
+- [x1] `mt-mtd-roadmap-3`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mt-mtd-roadmap-3/
+- [x1] `mtd-countdown-underway_1673416576-1000x666`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/what-impact-will-the-agricultural-property-relief-apr-and-business-property-relief-bpr-u-turn-have/mtd-countdown-underway_1673416576-1000x666/
+- [x1] `mtd-countdown-underway_1673416576-375x210`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/the-clock-is-ticking-down-to-payrolling-benefits-in-kind/mtd-countdown-underway_1673416576-375x210/
+- [x1] `mtd-faqs`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/mtd-faqs/
+- [x1] `mtd-for-income-tax-do-you-know-what-to-do`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/mtd-for-income-tax-do-you-know-what-to-do/
+- [x1] `mtd-guide`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/literature/mtd-guide
+- [x1] `mtd-itsa-and-the-questions-you-were-too-afraid-to-ask`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/mtd-itsa-and-the-questions-you-were-too-afraid-to-ask/
+- [x1] `mtd-next-steps-btn`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/mtd-next-steps-btn/
+- [x1] `mtd-roadmap`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap/
+- [x1] `mtd-roadmap-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap-2/
+- [x1] `mtd-roadmap-4`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap-4/
+- [x1] `mtd-roadmap-5`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap-5/
+- [x1] `mtd-roadmap-6`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap-6/
+- [x1] `mtd-roadmap-7`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap-7/
+- [x1] `mtd-roadmap-guide`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/making-tax-digital/take-the-next-step-on-the-road-to-making-tax-digital/mtd-roadmap-guide/
+- [x1] `mtd-self-employment`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/mtd-self-employment
+- [x1] `quarterlyreportconcept-companyfinancialreport-businesscharts-colorfulquarterwoodenpie`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/financial-strategies-for-businesses-facing-labour-shortages/quarterlyreportconcept-companyfinancialreport-businesscharts-colorfulquarterwoodenpie/
+- [x1] `register-for-our-weekly-mtd-blogs`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/news-events/register-for-our-weekly-mtd-blogs/
+- [x1] `the-final-countdown-is-this-your-last-chance-to-get-ready-for-mtd-for-income-tax`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/the-final-countdown-is-this-your-last-chance-to-get-ready-for-mtd-for-income-tax/
+- [x1] `top-mtd-software-best-fit-for-business`
+  - lanop.co.uk: https://lanop.co.uk/top-mtd-software-best-fit-for-business/
+- [x1] `what-are-the-implications-of-mtd-for-itsa-for-smes`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/what-are-the-implications-of-mtd-for-itsa-for-smes/
+- [x1] `who-exempt-mtd-income-tax`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/03/who-exempt-mtd-income-tax
+
+## IR35, locum & consultant solicitors (32 gap topics, 33 competitor pages)
+
+- **[x2]** `ir35-rules-what-they-are-and-why-they-matter`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/ir35-rules-what-they-are-and-why-they-matter/
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/time-to-rethink-your-property-portfolio-what-you-need-to-consider/ir35-rules-what-they-are-and-why-they-matter/
+- [x1] `are-law-firms-missing-a-trick-with-locum-candidates`
+  - ten-percent.co.uk: https://ten-percent.co.uk/are-law-firms-missing-a-trick-with-locum-candidates/
+- [x1] `are-you-inside-ir35`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/are-you-inside-ir35
+- [x1] `bad-locums-avoiding-them-and-bad-law-firms`
+  - ten-percent.co.uk: https://ten-percent.co.uk/bad-locums-avoiding-them-and-bad-law-firms/
+- [x1] `becoming-freelance-solicitor-england-and-wales-requirements-benefits-and-tax`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/04/becoming-freelance-solicitor-england-and-wales-requirements-benefits-and-tax
+- [x1] `do-you-assist-with-locum-and-permanent-legal-recruitment`
+  - ten-percent.co.uk: https://ten-percent.co.uk/ufaq/do-you-assist-with-locum-and-permanent-legal-recruitment/
+- [x1] `etiquette-for-locums`
+  - ten-percent.co.uk: https://ten-percent.co.uk/etiquette-for-locums/
+- [x1] `how-does-the-economic-cycle-affect-locum-permanent-work`
+  - ten-percent.co.uk: https://ten-percent.co.uk/how-does-the-economic-cycle-affect-locum-permanent-work/
+- [x1] `how-much-money-can-you-earn-as-a-freelancer-locum-or-consultant-in-law`
+  - ten-percent.co.uk: https://ten-percent.co.uk/how-much-money-can-you-earn-as-a-freelancer-locum-or-consultant-in-law/
+- [x1] `impact-changes-ir35-closing-your-personal-service-company`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/11/impact-changes-ir35-closing-your-personal-service-company
+- [x1] `ir35-employers-must-be-aware-of-their-obligations`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/ir35-employers-must-be-aware-of-their-obligations/
+- [x1] `ir35-explained-for-contractors-guide`
+  - lanop.co.uk: https://lanop.co.uk/ir35-explained-for-contractors-guide/
+- [x1] `ir35-increase-in-financial-thresholds-for-small-client-company`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/ir35-increase-in-financial-thresholds-for-small-client-company/
+- [x1] `ir35-legislation-contractor-status-tax-guide`
+  - lanop.co.uk: https://lanop.co.uk/ir35-legislation-contractor-status-tax-guide/
+- [x1] `ir35-legislation-overview`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/02/ir35-legislation-overview
+- [x1] `ir35-payroll-obligations`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/02/ir35-payroll-obligations
+- [x1] `ir35-rules-inside-or-outside-ir35`
+  - lanop.co.uk: https://lanop.co.uk/ir35-rules-inside-or-outside-ir35/
+- [x1] `locum`
+  - ten-percent.co.uk: https://ten-percent.co.uk/locum/
+- [x1] `locum-dilemna-firm-have-cancelled-an-assignment-at-short-notice-what-do-i-do`
+  - ten-percent.co.uk: https://ten-percent.co.uk/locum-dilemna-firm-have-cancelled-an-assignment-at-short-notice-what-do-i-do/
+- [x1] `locum-solicitors-and-the-curse-of-the-clients-change-of-plans`
+  - ten-percent.co.uk: https://ten-percent.co.uk/locum-solicitors-and-the-curse-of-the-clients-change-of-plans/
+- [x1] `locums-covering-more-than-one-field-of-law`
+  - ten-percent.co.uk: https://ten-percent.co.uk/locums-covering-more-than-one-field-of-law/
+- [x1] `locums-get-paid-promptly-or-else`
+  - ten-percent.co.uk: https://ten-percent.co.uk/locums-get-paid-promptly-or-else/
+- [x1] `multi-million-pound-ir35-penalties-highlight-need-advice`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/08/multi-million-pound-ir35-penalties-highlight-need-advice
+- [x1] `new-locum-guide-available`
+  - ten-percent.co.uk: https://ten-percent.co.uk/new-locum-guide-available/
+- [x1] `new-permanent-locum-lawyers-looking-for-work`
+  - ten-percent.co.uk: https://ten-percent.co.uk/new-permanent-locum-lawyers-looking-for-work/
+- [x1] `payroll-working-rules-ir35-faqs`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/02/payroll-working-rules-ir35-faqs
+- [x1] `register-a-locum-assignment`
+  - ten-percent.co.uk: https://ten-percent.co.uk/register-a-locum-assignment/
+- [x1] `the-baby-boom-locum-maternity-cover-phenomenon`
+  - ten-percent.co.uk: https://ten-percent.co.uk/the-baby-boom-locum-maternity-cover-phenomenon/
+- [x1] `what-do-umbrella-companies-do-and-is-there-any-point-a-solicitor-using-one-to-do-locum-work`
+  - ten-percent.co.uk: https://ten-percent.co.uk/what-do-umbrella-companies-do-and-is-there-any-point-a-solicitor-using-one-to-do-locum-work/
+- [x1] `what-is-a-locum-solicitor`
+  - ten-percent.co.uk: https://ten-percent.co.uk/what-is-a-locum-solicitor/
+- [x1] `what-is-ir35-guide`
+  - lanop.co.uk: https://lanop.co.uk/what-is-ir35-guide/
+- [x1] `your-payroll-considerations-when-employing-contractors-and-freelancers`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/your-payroll-considerations-when-employing-contractors-and-freelancers/
+
+## Sole practitioner & partner tax (30 gap topics, 31 competitor pages)
+
+- **[x2]** `sole-traders`
+  - lanop.co.uk: https://lanop.co.uk/sole-traders/
+  - cvhaccountants.co.uk: https://cvhaccountants.co.uk/sole-traders/
+- [x1] `advice-sole-traders-marketing`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/advice-sole-traders-marketing
+- [x1] `appeal-against-self-assessment-penalty-step-by-step-guide`
+  - lanop.co.uk: https://lanop.co.uk/appeal-against-self-assessment-penalty-step-by-step-guide/
+- [x1] `are-your-farm-contractors-really-self-employed`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/02/are-your-farm-contractors-really-self-employed
+- [x1] `bank-and-building-society-interest-what-needs-to-be-reported-under-self-assessment`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/bank-and-building-society-interest-what-needs-to-be-reported-under-self-assessment/
+- [x1] `common-mistakes-to-avoid-when-filing-a-self-assessment-tax-return`
+  - lanop.co.uk: https://lanop.co.uk/common-mistakes-to-avoid-when-filing-a-self-assessment-tax-return/
+- [x1] `company-director-self-assessment-tax-return-changes`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/company-director-self-assessment-tax-return-changes/
+- [x1] `crypto-transactions-to-become-part-of-self-assessment-under-new-regulations`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/crypto-transactions-to-become-part-of-self-assessment-under-new-regulations/
+- [x1] `file-your-self-assessment-tax-return-early`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/11/file-your-self-assessment-tax-return-early
+- [x1] `how-to-register-as-a-sole-trader`
+  - lanop.co.uk: https://lanop.co.uk/how-to-register-as-a-sole-trader/
+- [x1] `impact-national-insurance-changes-self-employed-and-their-state-pension`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/06/impact-national-insurance-changes-self-employed-and-their-state-pension
+- [x1] `importance-income-protection-self-employed-and-contract-workers`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/08/importance-income-protection-self-employed-and-contract-workers
+- [x1] `mtd-countdown-underway-landlords-and-sole-traders-have-just-months-left-to-prepare`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/mtd-countdown-underway-landlords-and-sole-traders-have-just-months-left-to-prepare/
+- [x1] `mtd-expenses-for-sole-traders-maximize-your-tax-deductions`
+  - lanop.co.uk: https://lanop.co.uk/mtd-expenses-for-sole-traders-maximize-your-tax-deductions/
+- [x1] `prepare-a-self-assessment-tax-return`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/prepare-a-self-assessment-tax-return
+- [x1] `second-payment-on-account-for-self-assessment-31-july`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/project/second-payment-on-account-for-self-assessment-31-july/
+- [x1] `self-assessment-are-all-your-tax-affairs-order`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/10/self-assessment-are-all-your-tax-affairs-order
+- [x1] `self-assessment-late-payment-penalty-28-february`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/project/self-assessment-late-payment-penalty-28-february/
+- [x1] `self-assessment-payments-on-account`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/self-assessment-payments-on-account
+- [x1] `self-assessment-payments-on-account-2`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/self-assessment-payments-on-account-2
+- [x1] `self-assessment-tax-return-submit-them-any-day-of-the-year`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/self-assessment-tax-return-submit-them-any-day-of-the-year/
+- [x1] `self-assessment-time-get-your-tax-affairs-order`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/09/self-assessment-time-get-your-tax-affairs-order
+- [x1] `self-employed-what-to-do`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/self-employed-what-to-do
+- [x1] `setting-up-and-running-a-sole-trader-business-in-the-uk-complete-guide`
+  - lanop.co.uk: https://lanop.co.uk/setting-up-and-running-a-sole-trader-business-in-the-uk-complete-guide/
+- [x1] `simplified-business-for-self-employed`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/simplified-business-for-self-employed
+- [x1] `sole-trader-ps70000-turnover`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/sole-trader-ps70000-turnover
+- [x1] `tax-self-assessment-have-you-completed-yours`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2016/12/tax-self-assessment-have-you-completed-yours
+- [x1] `too-many-sole-traders-are-still-missing-out-on-their-state-pension`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/too-many-sole-traders-are-still-missing-out-on-their-state-pension/
+- [x1] `understanding-self-assessment-in-the-uk-who-needs-to-file`
+  - lanop.co.uk: https://lanop.co.uk/understanding-self-assessment-in-the-uk-who-needs-to-file/
+- [x1] `what-are-allowable-expenses-for-the-self-employed`
+  - lanop.co.uk: https://lanop.co.uk/what-are-allowable-expenses-for-the-self-employed/
+
+## Conveyancing & SDLT/LBTT/LTT (31 gap topics, 31 competitor pages)
+
+- [x1] `avoiding-negligence-claims-residential-conveyancing`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/avoiding-negligence-claims-residential-conveyancing
+- [x1] `changing-from-conveyancing-to-a-life-of-crime-a-good-idea`
+  - ten-percent.co.uk: https://ten-percent.co.uk/changing-from-conveyancing-to-a-life-of-crime-a-good-idea/
+- [x1] `conveyancing`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing/
+- [x1] `conveyancing-booming-or-busting-a-potted-history`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-booming-or-busting-a-potted-history/
+- [x1] `conveyancing-lancashire`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-lancashire/
+- [x1] `conveyancing-lawyers-has-your-job-been-affected-by-the-lockdown`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-lawyers-has-your-job-been-affected-by-the-lockdown/
+- [x1] `conveyancing-legal-secretary-kent`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-legal-secretary-kent/
+- [x1] `conveyancing-locums-sought-for-various-roles-x-8`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-locums-sought-for-various-roles-x-8/
+- [x1] `conveyancing-north-west-london`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-north-west-london/
+- [x1] `conveyancing-salford-quays`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-salford-quays/
+- [x1] `conveyancing-secretary-canvey-island`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-secretary-canvey-island/
+- [x1] `conveyancing-solicitor-wimbledon`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-solicitor-wimbledon/
+- [x1] `conveyancing-watford`
+  - ten-percent.co.uk: https://ten-percent.co.uk/conveyancing-watford/
+- [x1] `experienced-residential-conveyancer-cornwall`
+  - ten-percent.co.uk: https://ten-percent.co.uk/experienced-residential-conveyancer-cornwall/
+- [x1] `improve-your-chances-of-success-of-recruiting-conveyancing-solicitors`
+  - ten-percent.co.uk: https://ten-percent.co.uk/improve-your-chances-of-success-of-recruiting-conveyancing-solicitors/
+- [x1] `non-uk-resident-sdlt-surcharge-reclaim-guide`
+  - lanop.co.uk: https://lanop.co.uk/non-uk-resident-sdlt-surcharge-reclaim-guide/
+- [x1] `part-time-conveyancer-hertford`
+  - ten-percent.co.uk: https://ten-percent.co.uk/part-time-conveyancer-hertford/
+- [x1] `put-property-into-company-sdlt-cgt-mortgage-uk`
+  - lanop.co.uk: https://lanop.co.uk/put-property-into-company-sdlt-cgt-mortgage-uk/
+- [x1] `residential-conveyancing-east-central-london`
+  - ten-percent.co.uk: https://ten-percent.co.uk/residential-conveyancing-east-central-london/
+- [x1] `residnetial-conveyancing-taunton`
+  - ten-percent.co.uk: https://ten-percent.co.uk/residnetial-conveyancing-taunton/
+- [x1] `sdlt-higher-rates-refund-england-ni`
+  - lanop.co.uk: https://lanop.co.uk/sdlt-higher-rates-refund-england-ni/
+- [x1] `sdlt-stampdutylandtaxwriteonacard`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/hmrc-announces-new-stamp-duty-land-tax-sdlt-registration-rules-for-law-firms/sdlt-stampdutylandtaxwriteonacard/
+- [x1] `stamp-duty-land-tax-advice-for-farming-businesses`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/stamp-duty-land-tax-advice-for-farming-businesses/
+- [x1] `stamp-duty-land-tax-calculator`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/calculators/stamp-duty-land-tax-calculator
+- [x1] `stamp-duty-land-tax-sdlt-1-april`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/project/stamp-duty-land-tax-sdlt-1-april/
+- [x1] `stamp-duty-land-tax-when-buying-farm-property`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/02/stamp-duty-land-tax-when-buying-farm-property
+- [x1] `thinking-about-a-move-in-residential-conveyancing`
+  - ten-percent.co.uk: https://ten-percent.co.uk/thinking-about-a-move-in-residential-conveyancing/
+- [x1] `transfer-home-to-company-sdlt-refund-disposal-uk`
+  - lanop.co.uk: https://lanop.co.uk/transfer-home-to-company-sdlt-refund-disposal-uk/
+- [x1] `understanding-stamp-duty-land-tax-in-agriculture`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/understanding-stamp-duty-land-tax-in-agriculture/
+- [x1] `what-does-a-conveyancing-solicitor-do`
+  - ten-percent.co.uk: https://ten-percent.co.uk/what-does-a-conveyancing-solicitor-do/
+- [x1] `what-does-the-former-chancellors-cut-to-stamp-duty-land-tax-sdlt-mean-for-you`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/what-does-the-former-chancellors-cut-to-stamp-duty-land-tax-sdlt-mean-for-you/
+
+## Probate & private client practice (30 gap topics, 30 competitor pages)
+
+- [x1] `ask-accountant-write-will`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/ask-accountant-write-will
+- [x1] `barnby-in-the-willows`
+  - slaccountants.co.uk: https://slaccountants.co.uk/barnby-in-the-willows/
+- [x1] `barton-le-willows`
+  - slaccountants.co.uk: https://slaccountants.co.uk/barton-le-willows/
+- [x1] `coventry-city-culture-trust-administration`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/coventry-city-culture-trust-administration
+- [x1] `exploring-uk-intestacy-rules-what-happens-without-a-will`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/exploring-uk-intestacy-rules-what-happens-without-a-will
+- [x1] `five-reasons-couples-include-trust-their-wills`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/06/five-reasons-couples-include-trust-their-wills
+- [x1] `importance-making-will`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/10/importance-making-will
+- [x1] `jimmy-williams`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/people/jimmy-williams/
+- [x1] `katie-williams`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/people/katie-williams/
+- [x1] `matt-williams`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/people/matt-williams/
+- [x1] `perrys-investigate-wills`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/perrys-investigate-wills
+- [x1] `probate-and-estate-administration`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/07/probate-and-estate-administration
+- [x1] `probate-fee-proposals`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/probate-fee-proposals
+- [x1] `probate-guide`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/literature/probate-guide
+- [x1] `silk-willoughby`
+  - slaccountants.co.uk: https://slaccountants.co.uk/silk-willoughby/
+- [x1] `south-willingham`
+  - slaccountants.co.uk: https://slaccountants.co.uk/south-willingham/
+- [x1] `steve-williams`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/steve-williams
+- [x1] `what-does-a-wills-and-probate-solicitor-do`
+  - ten-percent.co.uk: https://ten-percent.co.uk/what-does-a-wills-and-probate-solicitor-do/
+- [x1] `what-is-probate`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/what-is-probate
+- [x1] `why-have-a-will`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/why-have-a-will
+- [x1] `willoughby-waterleys`
+  - slaccountants.co.uk: https://slaccountants.co.uk/willoughby-waterleys/
+- [x1] `wills-and-lasting-power-of-attorney-lpa-guide`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/literature/wills-and-lasting-power-of-attorney-lpa-guide
+- [x1] `wills-and-probate-solicitor-in-manchester`
+  - ten-percent.co.uk: https://ten-percent.co.uk/wills-and-probate-solicitor-in-manchester/
+- [x1] `wills-probate`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/wills-probate
+- [x1] `wills-probate-burnley`
+  - ten-percent.co.uk: https://ten-percent.co.uk/wills-probate-burnley/
+- [x1] `wills-probate-lancashire`
+  - ten-percent.co.uk: https://ten-percent.co.uk/wills-probate-lancashire/
+- [x1] `wills-probate-solicitor-oxford`
+  - ten-percent.co.uk: https://ten-percent.co.uk/wills-probate-solicitor-oxford/
+- [x1] `wills-probate-solicitor-south-manchester`
+  - ten-percent.co.uk: https://ten-percent.co.uk/wills-probate-solicitor-south-manchester/
+- [x1] `wills-probate-west-london`
+  - ten-percent.co.uk: https://ten-percent.co.uk/wills-probate-west-london/
+- [x1] `writing-a-will`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/writing-a-will
+
+## Trainees, paralegals & qualification (28 gap topics, 28 competitor pages)
+
+- [x1] `advice-to-a-paralegal-looking-for-a-training-contract`
+  - ten-percent.co.uk: https://ten-percent.co.uk/advice-to-a-paralegal-looking-for-a-training-contract/
+- [x1] `apprenticeship-icon`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/corporate-social-responsibility/apprenticeship-icon/
+- [x1] `apprenticeships-and-early-careers`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/careers/apprenticeships-and-early-careers/
+- [x1] `armstrong-watson-marks-national-apprenticeship-week-growing-trainee-cohort-and`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/02/armstrong-watson-marks-national-apprenticeship-week-growing-trainee-cohort-and
+- [x1] `armstrong-watson-takes-record-number-new-trainees`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/09/armstrong-watson-takes-record-number-new-trainees
+- [x1] `auditor-role-qualifications-and-importance`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/auditor-role-qualifications-and-importance
+- [x1] `celebrating-apprenticeships-and-busting-myths`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/02/celebrating-apprenticeships-and-busting-myths
+- [x1] `changing-solicitors-firms-during-a-training-contract`
+  - ten-percent.co.uk: https://ten-percent.co.uk/changing-solicitors-firms-during-a-training-contract/
+- [x1] `converting-overseas-qualifications-uk-equivalents`
+  - ten-percent.co.uk: https://ten-percent.co.uk/converting-overseas-qualifications-uk-equivalents/
+- [x1] `crime-paralegal-walthamstow`
+  - ten-percent.co.uk: https://ten-percent.co.uk/crime-paralegal-walthamstow/
+- [x1] `cv-review-commercial-paralegal-with-experience`
+  - ten-percent.co.uk: https://ten-percent.co.uk/cv-review-commercial-paralegal-with-experience/
+- [x1] `cv-review-for-paralegal-in-south-east-england`
+  - ten-percent.co.uk: https://ten-percent.co.uk/cv-review-for-paralegal-in-south-east-england/
+- [x1] `graduate-aca-trainee`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/career/graduate-aca-trainee/
+- [x1] `have-you-got-any-training-contracts`
+  - ten-percent.co.uk: https://ten-percent.co.uk/have-you-got-any-training-contracts/
+- [x1] `i-am-a-law-graduate-seeking-paralegal-work-can-you-assist`
+  - ten-percent.co.uk: https://ten-percent.co.uk/ufaq/i-am-a-law-graduate-seeking-paralegal-work-can-you-assist/
+- [x1] `life-as-a-trainee-accountant`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/life-as-a-trainee-accountant/
+- [x1] `our-trainee-chartered-accountant-programme-what-our-trainees-think`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2016/12/our-trainee-chartered-accountant-programme-what-our-trainees-think
+- [x1] `perrys-trainee-accountant-ice-hockey`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/perrys-trainee-accountant-ice-hockey
+- [x1] `personal-injury-paralegal-st-albans`
+  - ten-percent.co.uk: https://ten-percent.co.uk/personal-injury-paralegal-st-albans/
+- [x1] `professional-apprenticeships`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/careers/professional-apprenticeships
+- [x1] `school-college-leaver-ignite-apprenticeship`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/career/school-college-leaver-ignite-apprenticeship/
+- [x1] `trainee-accountant`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/trainee-accountant/
+- [x1] `trainee-accountant-graduate-academy`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/trainee-accountant-graduate-academy/
+- [x1] `training-contract-help`
+  - ten-percent.co.uk: https://ten-percent.co.uk/training-contract-help/
+- [x1] `training-contract-pack`
+  - ten-percent.co.uk: https://ten-percent.co.uk/training-contract-pack/
+- [x1] `we-want-to-recruit-a-paralegal-and-hes-got-to-be-male`
+  - ten-percent.co.uk: https://ten-percent.co.uk/we-want-to-recruit-a-paralegal-and-hes-got-to-be-male/
+- [x1] `what-do-my-south-african-qualifications-count-for-in-the-uk-i-am-a-south-african-qualified-lawyer`
+  - ten-percent.co.uk: https://ten-percent.co.uk/what-do-my-south-african-qualifications-count-for-in-the-uk-i-am-a-south-african-qualified-lawyer/
+- [x1] `why-do-paralegals-always-seem-so-unreliable`
+  - ten-percent.co.uk: https://ten-percent.co.uk/why-do-paralegals-always-seem-so-unreliable/
+
+## PII & run-off (23 gap topics, 23 competitor pages)
+
+- [x1] `are-you-claiming-the-right-office-based-expenses`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/are-you-claiming-the-right-office-based-expenses/
+- [x1] `avoiding-claims-insurance`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance
+- [x1] `avoiding-claims-insurance-overview`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/avoiding-claims-insurance-overview
+- [x1] `avoiding-negligence-claims-commercial-litigation`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/avoiding-negligence-claims-commercial-litigation
+- [x1] `avoiding-negligence-claims-commercial-property-law`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/avoiding-negligence-claims-commercial-property-law
+- [x1] `avoiding-negligence-claims-company-and-commercial-law`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/avoiding-negligence-claims-company-and-commercial-law
+- [x1] `avoiding-negligence-claims-wills-trusts-and-probate-law`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/avoiding-negligence-claims-wills-trusts-and-probate-law
+- [x1] `business-interruption-claims-and-fraud`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/02/business-interruption-claims-and-fraud
+- [x1] `can-company-directors-legally-claim-medical-dental-costs`
+  - lanop.co.uk: https://lanop.co.uk/can-company-directors-legally-claim-medical-dental-costs/
+- [x1] `careful-timing-needed-claim-capital-allowances-assets-hire-purchase`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/04/careful-timing-needed-claim-capital-allowances-assets-hire-purchase
+- [x1] `changes-redundancy-payment-claims-directors`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/05/changes-redundancy-payment-claims-directors
+- [x1] `claims-management-company-contract-dispute-ps200000`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/claims-management-company-contract-dispute-ps200000
+- [x1] `final-claims-statutory-sick-pay-rebate-scheme`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/02/final-claims-statutory-sick-pay-rebate-scheme
+- [x1] `financial-claims-management`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/mt-grants-service/financial-claims-management/
+- [x1] `guide-to-claiming-r-d-tax-relief`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/guide-to-claiming-r-d-tax-relief
+- [x1] `how-do-you-claim-rd-tax-credit`
+  - lanop.co.uk: https://lanop.co.uk/how-do-you-claim-rd-tax-credit/
+- [x1] `locums-have-you-ever-been-asked-about-pii`
+  - ten-percent.co.uk: https://ten-percent.co.uk/locums-have-you-ever-been-asked-about-pii/
+- [x1] `loss-of-profits-and-income-claims`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/loss-of-profits-and-income-claims/
+- [x1] `professional-indemnity-insurance-law-firms-faqs-part-one`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/professional-indemnity-insurance-law-firms-faqs-part-one
+- [x1] `professional-indemnity-insurance-law-firms-faqs-part-two`
+  - lawfirmambition.co.uk: https://lawfirmambition.co.uk/topics/avoiding-claims-insurance/professional-indemnity-insurance-law-firms-faqs-part-two
+- [x1] `professional-negligence-claims`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/professional-negligence-claims/
+- [x1] `questionable-expense-claims-top-excuses`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/questionable-expense-claims-top-excuses
+- [x1] `repeal-of-furnished-holiday-lettings-tax-regime-last-chance-for-capital-allowance-claims`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/repeal-of-furnished-holiday-lettings-tax-regime-last-chance-for-capital-allowance-claims/
+
+## Capital allowances & equipment (22 gap topics, 22 competitor pages)
+
+- [x1] `annual-investment-allowance-maximise-reliefs-available`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/01/annual-investment-allowance-maximise-reliefs-available
+- [x1] `annual-investment-allowance-timing-everything`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/11/annual-investment-allowance-timing-everything
+- [x1] `banner-capital-allowance`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/business-tax/capital-allowances/banner-capital-allowance/
+- [x1] `capital-allowances`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/business-tax/capital-allowances/
+- [x1] `capital-allowances-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/business-tax/capital-allowances/capital-allowances-2/
+- [x1] `capital-allowances-commercial-property-held-pension-funds`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2016/08/capital-allowances-commercial-property-held-pension-funds
+- [x1] `capital-allowances-for-property-owners-explained`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/capital-allowances-for-property-owners-explained/
+- [x1] `capital-allowances-for-property-owners-explained_1515093797`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/fiscal-drag-and-tax-thresholds-what-does-it-mean-for-you/capital-allowances-for-property-owners-explained_1515093797/
+- [x1] `capital-allowances-full-expensing-vs-aia-vs-writing-down-allowances`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/capital-allowances-full-expensing-vs-aia-vs-writing-down-allowances/
+- [x1] `capital-allowances-new-rules-for-a-new-tax-year`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/capital-allowances-new-rules-for-a-new-tax-year/
+- [x1] `capital-allowances-on-cars-uk-businesses-tax-guide`
+  - lanop.co.uk: https://lanop.co.uk/capital-allowances-on-cars-uk-businesses-tax-guide/
+- [x1] `capital-allowances-tips-and-traps`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/05/capital-allowances-tips-and-traps
+- [x1] `dont-miss-out-on-capital-allowances-for-farm-machinery`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/dont-miss-out-on-capital-allowances-for-farm-machinery/
+- [x1] `farms-and-estates-capital-allowances`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/podcasts/farms-and-estates-capital-allowances/
+- [x1] `fhl-capital-allowances-holiday-lets`
+  - lanop.co.uk: https://lanop.co.uk/fhl-capital-allowances-holiday-lets/
+- [x1] `how-does-full-expensing-work`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/how-does-full-expensing-work/
+- [x1] `how-does-full-expensing-work-shutterstock_2067697043`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/government-announces-shakeup-in-the-payment-of-benefits-in-kind/how-does-full-expensing-work-shutterstock_2067697043/
+- [x1] `increased-capital-allowances-law-firms-operating-companies`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/10/increased-capital-allowances-law-firms-operating-companies
+- [x1] `slurry-storage-costs-what-qualifies-capital-allowances`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/05/slurry-storage-costs-what-qualifies-capital-allowances
+- [x1] `solar-panels-capital-allowances-uk-tax-savings-guide`
+  - lanop.co.uk: https://lanop.co.uk/solar-panels-capital-allowances-uk-tax-savings-guide/
+- [x1] `the-impact-of-changes-to-capital-allowances-on-farming-and-rural-businesses`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/the-impact-of-changes-to-capital-allowances-on-farming-and-rural-businesses/
+- [x1] `uk-full-expensing-capital-allowances`
+  - lanop.co.uk: https://lanop.co.uk/uk-full-expensing-capital-allowances/
+
+## WIP, lock-up & cash flow (21 gap topics, 21 competitor pages)
+
+- [x1] `agricultural-business-facing-cash-flow-issues`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/agricultural-business-facing-cash-flow-issues
+- [x1] `agriculture-and-cash-flow-striking-the-balance`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/agriculture-and-cash-flow-striking-the-balance/
+- [x1] `approaching-retirement-importance-building-cash-flow-plan`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/04/approaching-retirement-importance-building-cash-flow-plan
+- [x1] `budgeting-and-cash-flow-forecasting-farmers-uncertain-times`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/03/budgeting-and-cash-flow-forecasting-farmers-uncertain-times
+- [x1] `cash-flow-forecasting-uk-smes-guide`
+  - lanop.co.uk: https://lanop.co.uk/cash-flow-forecasting-uk-smes-guide/
+- [x1] `cash-flow-problems-and-solutions`
+  - lanop.co.uk: https://lanop.co.uk/cash-flow-problems-and-solutions/
+- [x1] `cashflow-crisis-why-smes-continue-to-struggle`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/cashflow-crisis-why-smes-continue-to-struggle/
+- [x1] `cashflow-crisis_2695413081-1000x666`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/what-impact-will-the-agricultural-property-relief-apr-and-business-property-relief-bpr-u-turn-have/cashflow-crisis_2695413081-1000x666/
+- [x1] `cashflow-crisis_2695413081-375x210`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/the-clock-is-ticking-down-to-payrolling-benefits-in-kind/cashflow-crisis_2695413081-375x210/
+- [x1] `debtor-vs-creditor`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/debtor-vs-creditor
+- [x1] `debtors-creditors`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/debtors-creditors
+- [x1] `dont-be-caught-out-change-basis-period-plan-ahead`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/10/dont-be-caught-out-change-basis-period-plan-ahead
+- [x1] `farms-focus-cashflow-following-sfi-scheme-closure`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2025/06/farms-focus-cashflow-following-sfi-scheme-closure
+- [x1] `how-cash-flow-modelling-supported-clients-eot`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/how-cash-flow-modelling-supported-clients-eot/
+- [x1] `income-tax-basis-period-reforms`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/11/income-tax-basis-period-reforms
+- [x1] `inflationtaxcashflowandanotherfinancialconcept-financialadvisor`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/the-importance-of-cash-flow-forecasting-for-law-firms/inflationtaxcashflowandanotherfinancialconcept-financialadvisor/
+- [x1] `top-tips-improving-your-cash-flow`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/11/top-tips-improving-your-cash-flow
+- [x1] `understand-your-accounts-and-cashflow`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/12/understand-your-accounts-and-cashflow
+- [x1] `understanding-your-cash-flow-and-tax-payments`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2019/10/understanding-your-cash-flow-and-tax-payments
+- [x1] `what-cashflow-modelling-and-why-it-important`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/10/what-cashflow-modelling-and-why-it-important
+- [x1] `what-does-change-basis-period-mean-me-and-my-farming-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/05/what-does-change-basis-period-mean-me-and-my-farming-business
+
+## Bookkeeping & legal accounting software (19 gap topics, 19 competitor pages)
+
+- [x1] `banner-bookkeeping`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/audit-and-accounts/bookkeeping-and-accounting/banner-bookkeeping/
+- [x1] `bookkeeping-and-accounting`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/audit-and-accounts/bookkeeping-and-accounting/
+- [x1] `client-story-transitioning-to-xero`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/client-story/client-story-transitioning-to-xero/
+- [x1] `driving-growth-through-management-accounts-dashboards`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/driving-growth-through-management-accounts-dashboards/
+- [x1] `how-xero-can-help-increase-uk-gdp`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2016/02/how-xero-can-help-increase-uk-gdp
+- [x1] `not-just-us-our-clients-love-xero-too`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/10/not-just-us-our-clients-love-xero-too
+- [x1] `outsourced-bookkeeping-and-preparation-group-management-information-international`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/outsourced-bookkeeping-and-preparation-group-management-information-international
+- [x1] `presenting-xero-roadshows-and-introduction-files-xero`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/12/presenting-xero-roadshows-and-introduction-files-xero
+- [x1] `streamlining-your-business-xero-beginners-implementation-guide`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/02/streamlining-your-business-xero-beginners-implementation-guide
+- [x1] `tips-and-tricks-xeros-magnifying-glass-search-function`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/07/tips-and-tricks-xeros-magnifying-glass-search-function
+- [x1] `xero-accountants`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/xero-accountants
+- [x1] `xero-accounting-system`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/xero-accounting-system
+- [x1] `xero-and-sage-save-time`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/xero-and-sage-save-time
+- [x1] `xero-goes-strength-strength`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/03/xero-goes-strength-strength
+- [x1] `xero-gold-partner-2`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/specialist-services/mt-cloud-accounting/xero-gold-partner-2/
+- [x1] `xero-online-accounting`
+  - lanop.co.uk: https://lanop.co.uk/xero-online-accounting/
+- [x1] `xero-tips-and-tricks-inbuilt-calculator`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/10/xero-tips-and-tricks-inbuilt-calculator
+- [x1] `xero-tips-and-tricks-keyboard-shortcuts`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/07/xero-tips-and-tricks-keyboard-shortcuts
+- [x1] `xero-your-business`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/01/xero-your-business
+
+## SRA Accounts Rules & client money (16 gap topics, 16 competitor pages)
+
+- [x1] `are-you-ready-for-potential-changes-to-the-sra-guidelines-around-client-finances`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/are-you-ready-for-potential-changes-to-the-sra-guidelines-around-client-finances/
+- [x1] `armstrong-watson-responds-sra-consultation-proposed-amendments-standards-regulations`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2023/03/armstrong-watson-responds-sra-consultation-proposed-amendments-standards-regulations
+- [x1] `audit-independent-examination-sra-audit-thresholds`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/audit-independent-examination-sra-audit-thresholds
+- [x1] `cofa-fee-earner-and-cashier-training-courses`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/legal/cofa-fee-earner-and-cashier-training-courses/
+- [x1] `insights-from-ilfm-conference-and-sra-developments`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/legal/insights-from-ilfm-conference-and-sra-developments/
+- [x1] `interest-income-client-monies-sra-guidance`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/04/interest-income-client-monies-sra-guidance
+- [x1] `more-power-comes-more-responsibility-new-fining-powers-sra`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/09/more-power-comes-more-responsibility-new-fining-powers-sra
+- [x1] `sra-account-rules-for-law-firms`
+  - mmba.co.uk: https://www.mmba.co.uk/blog/sra-account-rules-for-law-firms
+- [x1] `sra-funding`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/sra-secures-grant-to-develop-new-approaches-to-alternative-dispute-resolution/sra-funding/
+- [x1] `sra-key-areas-of-regulatory-focus-for-law-firms`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/insights/legal/sra-key-areas-of-regulatory-focus-for-law-firms/
+- [x1] `sra-releases-guidance-to-law-firms-on-wellbeing-at-work`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/sra-releases-guidance-to-law-firms-on-wellbeing-at-work/
+- [x1] `sra-secures-grant-to-develop-new-approaches-to-alternative-dispute-resolution`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/sra-secures-grant-to-develop-new-approaches-to-alternative-dispute-resolution/
+- [x1] `sra_guidelines_1687192501-1000x667`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/the-financial-benefit-to-an-ai-revolution/sra_guidelines_1687192501-1000x667/
+- [x1] `staying-compliant-with-sra-financial-regulations`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/staying-compliant-with-sra-financial-regulations/
+- [x1] `top-tips-for-sra-compliant-record-keeping`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/top-tips-for-sra-compliant-record-keeping/
+- [x1] `what-does-colp-and-cofa-mean`
+  - ten-percent.co.uk: https://ten-percent.co.uk/what-does-colp-and-cofa-mean/
+
+## Tax planning & efficiency (16 gap topics, 16 competitor pages)
+
+- [x1] `dont-miss-out-rd-tax-savings`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/05/dont-miss-out-rd-tax-savings
+- [x1] `estate-and-inheritance-tax-planning`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/our-services/tax/personal-tax/estate-and-inheritance-tax-planning/
+- [x1] `extension-dotas-rules-inheritance-tax-planning`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/11/extension-dotas-rules-inheritance-tax-planning
+- [x1] `grand-depart-towards-tax-saving-opportunity`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/07/grand-depart-towards-tax-saving-opportunity
+- [x1] `inheritance-tax-planning-considerations-businesses-around-new-ps25m-aprbpr-threshold`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2026/01/inheritance-tax-planning-considerations-businesses-around-new-ps25m-aprbpr-threshold
+- [x1] `mt-tax-planning-checklist-cover`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/brochures/mt-tax-planning-checklist-cover/
+- [x1] `potential-tax-efficient-strategy-business-owners`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2022/01/potential-tax-efficient-strategy-business-owners
+- [x1] `pro-activity-leads-tax-savings`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/pro-activity-leads-tax-savings
+- [x1] `ps10000-now-most-tax-efficient-salary-ownerdirectors`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/05/ps10000-now-most-tax-efficient-salary-ownerdirectors
+- [x1] `ps10600-most-tax-efficient-salary-directors`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2015/05/ps10600-most-tax-efficient-salary-directors
+- [x1] `ps11500-most-tax-efficient-salary-directors`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/10/ps11500-most-tax-efficient-salary-directors
+- [x1] `specialist-tax-planning-for-medical-professionals`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/specialist-tax-planning-for-medical-professionals/
+- [x1] `tax-planning-advice-is-key-for-agricultural-businesses`
+  - bennettbrooks.co.uk: https://www.bennettbrooks.co.uk/news-events/blog/tax-planning-advice-is-key-for-agricultural-businesses/
+- [x1] `tax-saving-health-check`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/tax-saving-health-check
+- [x1] `tax-saving-tips-for-high-income-earners-uk`
+  - lanop.co.uk: https://lanop.co.uk/tax-saving-tips-for-high-income-earners-uk/
+- [x1] `the-importance-of-tax-planning`
+  - perrysaccountants.co.uk: https://perrysaccountants.co.uk/news/the-importance-of-tax-planning
+
+## Partnership & LLP taxation (13 gap topics, 13 competitor pages)
+
+- [x1] `armstrong-watson-capitalise-partnership-helps-client-achieve-significant-and-timely`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/case-studies/armstrong-watson-capitalise-partnership-helps-client-achieve-significant-and-timely
+- [x1] `celebrating-4-years-platinum-partnership-xero`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2018/05/celebrating-4-years-platinum-partnership-xero
+- [x1] `changes-taxation-partnerships-and-llps`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2014/05/changes-taxation-partnerships-and-llps
+- [x1] `dangling-carrots-partnerships-in-sme-law-firms`
+  - ten-percent.co.uk: https://ten-percent.co.uk/dangling-carrots-partnerships-in-sme-law-firms/
+- [x1] `job-offers-and-dangling-partnership-carrots`
+  - ten-percent.co.uk: https://ten-percent.co.uk/job-offers-and-dangling-partnership-carrots/
+- [x1] `new-accounting-practices-outlined-for-llps`
+  - moorethompson.co.uk: https://www.moorethompson.co.uk/new-accounting-practices-outlined-for-llps/
+- [x1] `partnership-affairs`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/01/partnership-affairs
+- [x1] `partnership-prospects`
+  - ten-percent.co.uk: https://ten-percent.co.uk/partnership-prospects/
+- [x1] `partnerships-and-llps`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/business-accountants/tax/partnerships-and-llps/
+- [x1] `qcs-partnership`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/healthcare/qcs-partnership/
+- [x1] `tax-planning-checklist-sole-traders-and-partnerships`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2024/03/tax-planning-checklist-sole-traders-and-partnerships
+- [x1] `taxation-partnerships-and-llps`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2013/05/taxation-partnerships-and-llps
+- [x1] `understanding-ps20k-new-partnership-scheme-what-consider-signing`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2020/10/understanding-ps20k-new-partnership-scheme-what-consider-signing
+
+## Benchmarking & profitability (4 gap topics, 4 competitor pages)
+
+- [x1] `benchmarking-and-profitability`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/benchmarking-and-profitability/
+- [x1] `driving-profit-through-right-kpis`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2021/04/driving-profit-through-right-kpis
+- [x1] `effective-kpis-for-your-day-nursery-business`
+  - hazlewoods.co.uk: https://www.hazlewoods.co.uk/expertise/by-sector/day-nurseries/effective-kpis-for-your-day-nursery-business/
+- [x1] `measuring-success-your-business-financial-kpis`
+  - armstrongwatson.co.uk: https://www.armstrongwatson.co.uk/news/2017/08/measuring-success-your-business-financial-kpis

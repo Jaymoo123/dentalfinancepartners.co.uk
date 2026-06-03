@@ -32,6 +32,9 @@ function parsePostFile(filePath: string): BlogPost {
     schema: fm.schema,
     canonical: fm.canonical,
     faqs: fm.faqs,
+    updatedDate: fm.updatedDate,
+    keyTakeaways: fm.keyTakeaways,
+    imageCredit: fm.imageCredit,
     contentHtml: contentWithIds,
   };
 }

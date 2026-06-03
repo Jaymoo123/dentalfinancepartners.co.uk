@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing VAT registration documents at desk with calcula
 image: ""
 h1: "VAT Registration for Solicitors: When and How to Register Your Legal Practice"
 summary: "UK solicitors must register for VAT when turnover exceeds £90,000. Understanding registration requirements, timing, and compliance obligations is crucial for legal practice management."
+keyTakeaways:
+  - "VAT registration is mandatory once a solicitor's taxable turnover exceeds £90,000 in any rolling 12-month period."
+  - "Genuine agency disbursements like Land Registry and court fees are excluded from the threshold, but photocopying, travel and admin charges count towards it."
+  - "Voluntary registration below £90,000 lets you recover input VAT but forces a 20% charge on clients who may not reclaim it."
+  - "Registered firms file quarterly VAT returns due one month and seven days after quarter end, with digital records under Making Tax Digital."
+  - "The cash accounting scheme is available below £1.35 million turnover, letting you account for VAT when payments are received."
 schema: ""
 faqs:
   - question: "Can solicitors register for VAT voluntarily below the threshold?"

@@ -10,6 +10,12 @@ altText: "UK solicitor reviewing VAT accounting documents and legal service invo
 image: ""
 h1: "Solicitor VAT Accounting: A Complete Guide for UK Law Firms"
 summary: "VAT accounting for solicitors involves specific rules around legal services, disbursement treatment, and client money handling. Understanding these requirements is essential for compliance and cash flow management."
+keyTakeaways:
+  - "Most legal services are standard-rated for VAT at 20%, and firms must register once taxable turnover exceeds £90,000."
+  - "True disbursements such as court and Land Registry fees carry no VAT when recharged, but firm-arranged services like counsel and expert fees usually do."
+  - "The key disbursement test is whether the firm was involved in selecting or instructing the third party."
+  - "Cash accounting (available below £1.35 million turnover) lets you account for VAT when paid rather than when invoiced, easing lock-up cash flow."
+  - "VAT charged on fees must be separated from client money and transferred promptly to the office account to stay SRA-compliant."
 schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/solicitor-vat-accounting-guide"
 faqs:

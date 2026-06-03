@@ -11,6 +11,12 @@ altText: "UK solicitor equity partner reviewing deferred compensation agreement 
 image: ""
 h1: "How Does Deferred Compensation Work for UK Law Firm Partners?"
 summary: "Deferred compensation is a common mechanism in UK law firms to retain equity partners, manage cash flow, and align long-term interests. This article explains how deferred profit share arrangements work, the tax implications for solicitors, and what partners should consider when negotiating such terms."
+keyTakeaways:
+  - "Deferred compensation lets a partner take part of their profit share later, used for cash flow, retention, succession and tax planning."
+  - "A contractual deferred profit share is usually taxed as income in the year it is earned, not when it is paid."
+  - "Locked-in equity sits in the capital account and is taxed under CGT on exit, with BADR cutting the rate to 14% in 2025/26 and 18% from April 2026."
+  - "Post-retirement consultancy payments are only treated as earned income if the services are genuine; otherwise HMRC may recharacterise them as capital for goodwill."
+  - "Deferred amounts owed to partners are not client money, and the COFA must ensure client money is never used to fund partner payouts."
 schema: ""
 faqs:
   - question: "Is deferred compensation taxed as income or capital for a UK solicitor?"

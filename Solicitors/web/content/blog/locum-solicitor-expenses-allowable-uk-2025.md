@@ -11,6 +11,12 @@ altText: "UK locum solicitor reviewing expense receipts and tax records at a des
 image: ""
 h1: "What Expenses Can a Locum Solicitor Claim in the UK for 2025/26?"
 summary: "A practical guide for locum solicitors working in the UK on which expenses are allowable against their self-employed income. Covers SRA fees, PII excess, training expenses, travel, and home office costs with real £-figure examples for the 2025/26 tax year."
+keyTakeaways:
+  - "Expenses must be incurred wholly and exclusively for the trade, and mixed-use items must be apportioned."
+  - "The SRA practising certificate fee (around £430 for 2025/26), Law Society membership and PII excess are all allowable."
+  - "Travel to a temporary workplace is claimable at HMRC mileage rates of 45p per mile (first 10,000) then 25p."
+  - "Home office costs use either £26 to £52 per month simplified rates or an apportioned actual-costs calculation."
+  - "From 6 April 2026 Making Tax Digital applies to locum income over £50,000, dropping to £30,000 from April 2027."
 schema: ""
 faqs:
   - question: "Can a locum solicitor claim the cost of their SRA practising certificate fee?"

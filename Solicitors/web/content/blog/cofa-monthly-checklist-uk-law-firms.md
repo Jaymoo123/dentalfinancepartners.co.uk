@@ -11,7 +11,12 @@ altText: "UK solicitor COFA reviewing monthly compliance checklist at law firm d
 image: ""
 h1: "What Should a COFA Monthly Checklist Include for UK Law Firms?"
 summary: "A structured monthly checklist helps COFAs at UK law firms stay on top of SRA Accounts Rules, client money reconciliations, and regulatory filings. This guide outlines the key tasks to complete each month, from bank reconciliations to COFA duties."
-schema: ""
+keyTakeaways:
+  - "The SRA Accounts Rules require client account reconciliation at least every five weeks, but a monthly cycle is safer and easier to manage."
+  - "The client account reconciliation is the core monthly task: match total client ledger balances to the client bank balance, then sign and date the report."
+  - "Each month also review the undertakings register, CDD and SAR logs, PII renewal status, ledger anomalies and any SRA-reportable events."
+  - "A COFA can delegate the reconciliation to a trained assistant but retains personal regulatory responsibility and must review and sign it off."
+  - "On a serious breach, inform the COLP immediately, document the breach and remedy, and report to the SRA where there is a risk of client loss or systemic failure."
 faqs:
   - question: "How often must a COFA reconcile the client account under the SRA Accounts Rules?"
     answer: "The SRA Accounts Rules require client account reconciliations at least every five weeks. However, most COFAs perform a monthly reconciliation to maintain tighter control and catch discrepancies early. The reconciliation must compare the client bank account balance to the total of all client ledger balances, and the report must be signed and dated. Monthly reconciliations also align well with a firm's reconciliation calendar and make it easier to spot trends or errors before they escalate."

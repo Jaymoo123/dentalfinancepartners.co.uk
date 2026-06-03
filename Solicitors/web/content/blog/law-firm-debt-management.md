@@ -10,6 +10,12 @@ altText: "UK solicitor reviewing client invoices and debt management reports on 
 image: ""
 h1: "Law Firm Debt Management: Essential Strategies for UK Legal Practices"
 summary: "Effective debt management is crucial for law firm profitability and cash flow. Learn practical strategies to reduce bad debt and manage outstanding fees."
+keyTakeaways:
+  - "Average debtor days in the legal sector often exceed 60, and effective debt management can bring this down to 45 to 60 days."
+  - "Prevention beats recovery: credit-check commercial clients, set clear fee terms, and request fees on account for higher-value matters."
+  - "Run a structured follow-up sequence, from a reminder at 7 days overdue to external collection or legal action at 50 days plus."
+  - "Firms can charge statutory interest on commercial debts at 8 percent plus the Bank of England base rate under the 1998 Act."
+  - "Bad debts can only be written off for tax once genuinely irrecoverable, with documented recovery attempts kept for HMRC."
 schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-debt-management"
 faqs:

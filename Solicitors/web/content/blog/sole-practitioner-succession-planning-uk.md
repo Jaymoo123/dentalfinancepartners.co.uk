@@ -11,6 +11,12 @@ altText: "UK solicitor sole practitioner reviewing succession plan documents wit
 image: ""
 h1: "How Does a Sole Practitioner Solicitor Plan for Succession and Exit?"
 summary: "A practical guide for UK sole practitioner solicitors on planning succession, structuring client transfers, using locum agreements, and managing SRA compliance. Includes worked examples and tax considerations for a smooth exit."
+keyTakeaways:
+  - "Start formal succession planning at least three to five years before exit, and immediately if you are over 55, because a sole practice stops without a plan in place."
+  - "Sale of goodwill is a capital gain eligible for Business Asset Disposal Relief at 14% in 2025/26 (rising to 18% from April 2026) up to a £1 million lifetime limit."
+  - "Sole practitioner goodwill typically attracts a multiple of 0.5x to 1.5x normalised profit, discounted because clients are often loyal to the individual rather than the firm."
+  - "Client consent is required before transferring files, and the final client account reconciliation must be completed within five weeks of the last transaction."
+  - "Six-year PII run-off cover, costing roughly 1.5 to 3 times the last annual premium, must be budgeted into the exit alongside the COLP and COFA handover."
 schema: ""
 faqs:
   - question: "Do I need SRA approval to sell my sole practitioner practice?"

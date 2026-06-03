@@ -11,7 +11,12 @@ altText: "A conveyancing solicitor reviewing client identification documents at 
 image: ""
 h1: "How Should a UK Conveyancing Solicitor Conduct Client Due Diligence Under the Money Laundering Regulations?"
 summary: "A practical guide for conveyancing solicitors on client due diligence (CDD) under the Money Laundering Regulations. Covers standard ID verification, enhanced due diligence for high-risk matters, and record-keeping obligations."
-schema: ""
+keyTakeaways:
+  - "Every conveyancing solicitor is a relevant person under MLR 2017 and must identify, verify and risk-assess each client before receiving client money or acting."
+  - "Standard CDD needs certified ID plus proof of address; enhanced due diligence applies to PEPs, high-risk jurisdictions and opaque corporate or trust structures."
+  - "Electronic ID verification is supplementary only; you must still hold a certified copy of the client's passport or driving licence on file."
+  - "Verify the source of funds (and source of wealth where EDD applies), keeping CDD records for at least five years after completion."
+  - "If a client refuses to provide ID you must not act, and if you suspect money laundering submit a SAR to the NCA without tipping off the client."
 faqs:
   - question: "What is the difference between standard CDD and enhanced due diligence in conveyancing?"
     answer: "Standard CDD applies to most residential conveyancing clients and involves basic identity verification using a passport or driving licence and proof of address. Enhanced due diligence (EDD) applies when the client or transaction is higher risk, such as a PEP, a client from a high-risk jurisdiction, or a complex corporate structure. EDD requires additional verification of source of funds and source of wealth, senior management approval, and extra steps to understand the client's ownership structure."

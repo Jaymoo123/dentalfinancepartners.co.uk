@@ -6,150 +6,140 @@ date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "How to Prepare for an SRA Accountant's Report: Solicitor Guide"
-metaDescription: "Step-by-step guide for UK solicitors on preparing an SRA accountant's report. Covers reconciliation checklist, SAR evidence, and common pitfalls to avoid."
+metaDescription: "Step-by-step preparation guide for UK solicitors: the records to assemble, choosing and instructing a reporting accountant, the timeline, what gets tested, and how to secure an unqualified report."
 altText: "Solicitor reviewing SRA accountant's report documents in a UK law firm office"
 image: ""
 h1: "How to Prepare for an SRA Accountant's Report: A Solicitor's Step-by-Step Guide"
-summary: "A practical guide for UK solicitors and law firm COFAs on preparing for the SRA accountant's report. Covers the reconciliation checklist, gathering SAR evidence, and common pitfalls that delay sign-off."
+summary: "A practical preparation guide for UK solicitors and law firm COFAs: the records to assemble, how to choose and instruct an independent reporting accountant, the year-round timeline, what the accountant tests, how to fix issues before the visit, and how to secure an unqualified report."
+keyTakeaways:
+  - "Firms holding client money must obtain and file the accountant's report within six months of the accounting reference date."
+  - "The report must be signed by an independent reporting accountant who is a member of a recognised body such as ICAEW, ACCA or ICAS."
+  - "Reconcile client accounts at least every five weeks under Rule 8.3, tying both individual ledgers and the total to the bank."
+  - "An unqualified report is earned through year-round controls, not tidy year-end paperwork: deliver a bill before every client-to-business transfer."
+  - "The accountant has a duty to report material breaches to the SRA regardless of what the firm says, so concealment never helps."
 schema: ""
 faqs:
-  - question: "What happens if I miss the SRA accountant's report deadline?"
-    answer: "Missing the deadline is a breach of Rule 12.3 of the SRA Accounts Rules. The SRA may refer the matter to its enforcement team, which can result in a warning, a fine, or conditions on the firm's practising certificate. If you cannot meet the deadline, contact the SRA as soon as possible to explain the circumstances. Late submission is better than no submission, but you should aim to avoid this situation entirely by planning ahead."
-  - question: "Can I prepare the SRA accountant's report myself?"
-    answer: "No. The SRA requires the report to be completed by a registered reporting accountant who is independent of the firm. The accountant must be a chartered or certified accountant registered with the SRA for this purpose. You can prepare the evidence pack and reconciliations internally, but the final report must be signed by the reporting accountant. Attempting to prepare the report yourself would breach the independence requirement."
-  - question: "How long does the SRA accountant's report process take?"
-    answer: "The process typically takes 4 to 8 weeks from the date the reporting accountant receives the evidence pack. The time depends on the size of the firm, the volume of transactions, and whether any issues arise during testing. For a small firm with straightforward client account activity, the process may be quicker. For larger firms with complex conveyancing or litigation work, allow more time. Starting the preparation three months before the year end is recommended."
-  - question: "What is the difference between a qualified and unqualified SRA accountant's report?"
-    answer: "An unqualified report means the accountant found no material breaches of the SRA Accounts Rules. A qualified report means the accountant identified one or more material breaches. The qualification will describe the nature of the breach and the accountant's findings. The SRA reviews all qualified reports and may take regulatory action depending on the severity and frequency of the breaches. A qualified report does not automatically mean a sanction, but it does trigger SRA scrutiny."
+  - question: "What records should I assemble before the reporting accountant arrives?"
+    answer: "Have the full set ready as one evidence pack: client and business account bank statements for the whole accounting period, client ledger reports showing every transaction, your five-weekly reconciliations (signed and dated under Rule 8.3), a list of every client matter open at the period end with balances, evidence of bill delivery before each client-to-business transfer, a sample of matter files with bills and receipts, and the COFA's compliance record. Having this assembled in advance is the single biggest factor in a fast, clean report."
+  - question: "Who can act as my reporting accountant, and can I prepare the report myself?"
+    answer: "No, you cannot prepare it yourself. The report must be signed by an independent reporting accountant who is a member of a recognised supervisory body (the chartered accountancy bodies such as ICAEW, ACCA or ICAS) and who is independent of the firm. You can and should prepare the evidence pack and the reconciliations internally, but the accountant must form and sign the opinion. Choosing an accountant who works regularly with SRA-regulated firms makes the testing faster and the findings more useful."
+  - question: "When is the report due, and when should I start preparing?"
+    answer: "The report must be obtained and filed within six months of your accounting reference date (period end). Preparation should be year-round, not a year-end scramble: reconcile every five weeks, clear residual balances as matters close, and run a self-review in the final quarter. As a practical rule, start the formal preparation around three months before the period end so any issues surface while you still have time to fix them."
+  - question: "What does the reporting accountant actually test?"
+    answer: "The accountant checks that client money was kept separate from the firm's money, that reconciliations were performed at least every five weeks (Rule 8.3) and properly signed off, and that withdrawals from client account were authorised and properly due. They then test a sample of matters: client money paid in promptly, withdrawals only when due, a bill delivered before each client-to-business transfer, and residual balances dealt with. If the sample shows errors, they may extend testing."
+  - question: "How do I secure an unqualified report?"
+    answer: "An unqualified report means the accountant found no material breach of the SRA Accounts Rules. You secure it by getting the controls right during the year, not by presenting tidy paperwork at the end: reconcile on time, keep client money out of the business account, deliver a bill before every transfer, and clear residual balances promptly. If you find a breach before the visit, fix it, document the correction, and be transparent. The accountant has a duty to report material breaches regardless of what the firm says, so concealment never helps."
 ---
 
-<p>Every SRA-regulated law firm that holds client money must submit an accountant's report to the SRA within six months of the accounting reference date. The report confirms that the firm has complied with the SRA Accounts Rules during the period. If your firm holds client money, this is not optional. The deadline is fixed. Missing it can trigger a compliance review or referral to the SRA's enforcement team.</p>
+<p>If your firm has held client money during the accounting period, you must obtain an accountant's report and file it with the SRA within six months of the period end. The report confirms whether the firm complied with the SRA Accounts Rules. This guide is about one thing: how to prepare for that report so it goes smoothly and comes back unqualified. It covers the records to assemble, how to choose and instruct the reporting accountant, the timeline to work to, exactly what the accountant tests, and how to fix problems before the visit rather than have them written up afterwards.</p>
 
-<p>This guide explains how to prepare for the SRA accountant's report. It covers the reconciliation checklist, the evidence your reporting accountant will need (SAR evidence), and the common issues that delay sign-off. The process is manageable if you approach it systematically throughout the year, rather than scrambling in the final weeks.</p>
+<p>Two related questions sit alongside preparation. Whether your firm needs a report at all (the trigger), and whether you qualify for the narrow exemption, are covered in detail on separate pages so this guide can stay focused on the workflow. If you are not yet sure a report applies to you, read <a href="/blog/sra-accounts-rules/when-is-an-sra-accountants-report-required">when an SRA accountant's report is required</a> and <a href="/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds">whether you qualify for the exemption</a> first. The short version: a firm that held client money in the period needs a report unless it held only Legal Aid Agency money, or its client money stayed within an average of £10,000 and a maximum of £250,000 across the period. Most conveyancing, litigation and private client firms will not qualify, so the rest of this guide assumes a report applies to you.</p>
 
-<h2>Who Needs an SRA Accountant's Report?</h2>
+<h2>Step 1: Assemble the Records the Accountant Will Need</h2>
 
-<p>Any SRA-regulated solicitor or law firm that holds client money must submit an accountant's report. The only exemption is the de minimis rule: your firm held no more than £10,000 of client money at any time during the accounting period, and the average client money balance did not exceed £250. Most conveyancing firms, litigation practices, and private client departments will not qualify for this exemption.</p>
-
-<p>The report must be completed by a registered SRA reporting accountant. This is typically a chartered accountant or certified accountant who is registered with the SRA for this purpose. The accountant reviews your client account records, tests a sample of transactions, and confirms whether the firm has complied with the Accounts Rules.</p>
-
-<h2>The Reconciliation Checklist: Your First Line of Defence</h2>
-
-<p>The reconciliation checklist is the core of the SRA accountant's report preparation. The reporting accountant will check that reconciliations have been performed correctly and at the required intervals. Rule 8.3 of the SRA Accounts Rules requires that client account reconciliations be carried out at least every five weeks. Most firms do this monthly, which is good practice.</p>
-
-<p>Your reconciliation checklist should cover three areas:</p>
+<p>Preparation is mostly about having the right records ready as a single, complete evidence pack. A reporting accountant who has to chase missing documents takes longer and is more likely to flag gaps. Assemble the following before you instruct anyone:</p>
 
 <ul>
-<li><strong>Client ledger balances to client account bank statements.</strong> Each client's ledger balance must match the total held for that client in the bank account. Discrepancies must be investigated and resolved before the reporting period ends.</li>
-<li><strong>Client account bank balance to the total of all client ledger balances.</strong> The overall client account bank balance must equal the sum of all individual client ledger balances. This is the most common point of failure in SRA accountant's reports.</li>
-<li><strong>Business account bank balance to the firm's accounting records.</strong> While the SRA focuses on client money, the reporting accountant will also check that business money is properly segregated.</li>
+<li>Client account bank statements covering the entire accounting period.</li>
+<li>Business account bank statements (the accountant checks these for any client money that landed in the wrong account).</li>
+<li>Client ledger reports showing every transaction on every matter for the period.</li>
+<li>Your reconciliations for each five-week period (or each month), each one signed and dated by the person who performed it and the COFA or manager who reviewed it.</li>
+<li>A list of every client matter open at the period end, with its balance.</li>
+<li>Evidence of bill delivery before each transfer from client to business account.</li>
+<li>A sample of matter files with the bills and receipts attached.</li>
+<li>The COFA's compliance record for the period, including the firm's policies and any reviews of compliance with the Accounts Rules.</li>
 </ul>
 
-<p>For each reconciliation, you need to document the date performed, the person who performed it, and the person who reviewed it. The SRA expects a clear audit trail. If you use practice management software, the system should generate reconciliation reports automatically. If you use spreadsheets, keep a signed and dated copy of each reconciliation.</p>
+<p>If you use practice management software, most of this can be exported in minutes. If you reconcile on spreadsheets, keep a signed and dated copy of each reconciliation as you go, because reconstructing them at year end is exactly the kind of gap an accountant notices. The SRA expects a clear audit trail: who performed each reconciliation, who reviewed it, and when.</p>
 
-<h3>Common Reconciliation Errors</h3>
+<h2>Step 2: Choose and Instruct the Reporting Accountant</h2>
 
-<p>The most frequent errors we see in SRA report preparation include:</p>
+<p>You cannot sign your own report. It must be completed by a reporting accountant who is both independent of the firm and a member of a recognised supervisory body, that is, one of the chartered accountancy bodies such as ICAEW, ACCA or ICAS. Independence means the accountant who forms the opinion is not the same person who keeps the firm's books or runs its compliance, so the opinion is genuinely external.</p>
 
-<ul>
-<li>Uncleared cheques or BACS payments that have not been matched to the correct client ledger.</li>
-<li>Client money held in the business account (or vice versa). This is a breach of Rule 2.1.</li>
-<li>Interest on client money not paid or credited correctly. Rule 7.1 requires that client money earns interest when it is fair to do so.</li>
-<li>Residual balances on closed client matters that have not been dealt with.</li>
-</ul>
+<p>When choosing an accountant, the practical differentiator is whether they work regularly with SRA-regulated firms. A general practice accountant who rarely sees the Accounts Rules will spend longer learning your systems and is less able to tell you, in advance, where the risk sits. An accountant who tests law firm client accounts every month knows what good looks like and can give you a useful steer before any visit.</p>
 
-<p>If you identify any of these issues during the year, resolve them before the reporting period ends. The reporting accountant will test a sample of transactions, and unresolved errors will appear in the report.</p>
+<p>Instruct early. Agree the scope, the period covered, the format the accountant wants the evidence pack in, and the visit or remote review date well before the period end. Confirm how they will access your records and who at the firm will be their point of contact. The earlier the instruction, the more chance you have to act on anything they spot.</p>
 
-<h2>Gathering SAR Evidence: What the Reporting Accountant Needs</h2>
+<h2>Step 3: Work to a Year-Round Timeline</h2>
 
-<p>The SRA accountant's report (SAR) evidence is the documentation that supports the accountant's opinion. The reporting accountant will request a standard set of documents. Having these ready in advance saves time and reduces the risk of a qualified report.</p>
-
-<p>Your SAR evidence pack should include:</p>
-
-<ul>
-<li>Client account bank statements for the entire period.</li>
-<li>Business account bank statements (the accountant will check for any client money breaches).</li>
-<li>Client ledger reports showing all transactions for the period.</li>
-<li>Reconciliation reports for each month (or five-week period).</li>
-<li>A list of all client accounts open at the period end, with balances.</li>
-<li>Details of any transfers from client to business account (Rule 4.3 compliance).</li>
-<li>Copies of bills and receipts for a sample of matters.</li>
-<li>The firm's COFA compliance file, including risk assessments and policies.</li>
-</ul>
-
-<p>The accountant will also want to see your COFA's annual review of the firm's compliance with the Accounts Rules. This is not a legal requirement, but it is best practice and the SRA expects it. If you have not conducted a formal review, do so before the accountant visits.</p>
-
-<h3>Sample Testing: What the Accountant Checks</h3>
-
-<p>The reporting accountant will select a sample of client matters to test. The sample size depends on the volume of transactions and the firm's risk profile. Typically, the accountant tests between 10 and 30 matters. For each matter, they will check:</p>
-
-<ul>
-<li>That client money was paid into the client account promptly (Rule 3.1).</li>
-<li>That money was only withdrawn from the client account when properly due (Rule 5.1).</li>
-<li>That bills were delivered before transfers from client to business account (Rule 4.3).</li>
-<li>That residual balances were dealt with correctly.</li>
-</ul>
-
-<p>If the accountant finds errors in the sample, they may extend the testing. If the errors are systemic, the report will be qualified. A qualified report means the SRA will review the firm's compliance and may impose conditions or sanctions.</p>
-
-<h2>Timing: When to Start Preparing</h2>
-
-<p>Do not wait until the accountant arrives. Start preparing at least three months before the accounting reference date. This gives you time to resolve any issues that emerge during the reconciliation process.</p>
+<p>The report is filed after the period end, but preparation is not an end-of-year task. The cleanest reports come from firms that get the controls right all year and simply collate the evidence at the end. Reconcile at least every five weeks, clear residual balances as matters close, and never let client money sit in the business account.</p>
 
 <p>A practical timeline looks like this:</p>
 
 <ul>
-<li><strong>Three months before year end.</strong> Review all open client matters. Identify any residual balances or stale transactions. Contact clients about unclaimed funds.</li>
-<li><strong>Two months before year end.</strong> Run a full reconciliation of all client accounts. Investigate and resolve any discrepancies.</li>
-<li><strong>One month before year end.</strong> Prepare the SAR evidence pack. Review the COFA compliance file. Conduct a mock audit of a sample of matters.</li>
-<li><strong>After year end.</strong> Complete the final reconciliation. Send the evidence pack to the reporting accountant.</li>
+<li><strong>Three months before the period end.</strong> Review every open client matter. Identify residual balances and stale transactions. Contact clients about funds that should be returned.</li>
+<li><strong>Two months before the period end.</strong> Run a full reconciliation of all client accounts. Investigate and resolve any discrepancy before it ages further.</li>
+<li><strong>One month before the period end.</strong> Build the evidence pack. Review the COFA's compliance record. Run a self-review (a mock test) on a sample of matters using the checks in Step 4.</li>
+<li><strong>After the period end.</strong> Complete the final reconciliation and hand the evidence pack to the reporting accountant.</li>
 </ul>
 
-<p>The accountant's report must be submitted to the SRA within six months of the accounting reference date. If your year end is 30 April, the report is due by 31 October. Late submission is a breach of Rule 12.3 and can result in a referral to the SRA's enforcement team.</p>
+<p>The filing deadline is fixed: six months from the accounting reference date. If your period ends on 30 April, the report is due by 31 October. Late filing is a breach and can be referred to the SRA's enforcement team, so the timeline above is built to leave room, not to run to the wire.</p>
 
-<h2>Common Pitfalls in SRA Report Preparation</h2>
+<h2>Step 4: Know What the Accountant Tests</h2>
 
-<p>Even experienced COFAs make mistakes. Here are the most common pitfalls we see:</p>
+<p>You prepare far better when you know what is being checked. The reporting accountant works at two levels: the firm's controls, then a sample of individual matters.</p>
 
-<p><strong>Pitfall 1: Incomplete reconciliations.</strong> Some firms reconcile the client account bank balance to the total of client ledger balances but do not check individual client balances against the bank statements. The SRA expects both levels of reconciliation.</p>
+<p>At the controls level, the accountant confirms that client money was kept separate from the firm's own money, that reconciliations were carried out at least every five weeks under Rule 8.3 and signed off by the COFA or a manager, and that withdrawals from client account were authorised and only made when properly due. The reconciliation work usually decides the tone of the whole report: a firm whose client account balance ties cleanly to the total of its client ledgers, and whose individual ledgers tie to the bank, starts from a strong position.</p>
 
-<p><strong>Pitfall 2: Missing or incorrect interest calculations.</strong> Rule 7.1 requires that client money earns interest when it is fair to do so. Many firms have a policy of not paying interest on small balances or short holding periods. This is acceptable, but the policy must be documented and consistently applied.</p>
+<p>At the matter level, the accountant selects a sample, typically running across the firm's range of work, and for each matter checks:</p>
 
-<p><strong>Pitfall 3: Client money in the business account.</strong> This is a common error in conveyancing firms where a client pays a deposit by bank transfer and the payment lands in the business account by mistake. Rule 2.1 requires that client money is held in a client account. If this happens, transfer the money to the client account immediately and document the error.</p>
+<ul>
+<li>That client money was paid into the client account promptly.</li>
+<li>That money left the client account only when it was properly due.</li>
+<li>That a bill was delivered before any transfer from client to business account.</li>
+<li>That residual balances were dealt with correctly when the matter closed.</li>
+</ul>
 
-<p><strong>Pitfall 4: Failure to deal with residual balances.</strong> When a matter closes, any residual client money must be returned to the client or dealt with in accordance with the SRA's guidance on residual balances. Leaving small balances on closed matters for years is a common compliance issue.</p>
+<p>If the sample is clean, the testing stops there. If it shows errors, the accountant may widen the sample, and systemic errors lead to a qualified report. Knowing this, your self-review in the final month should mirror these exact checks.</p>
 
-<p><strong>Pitfall 5: Inadequate COFA oversight.</strong> The COFA must take reasonable steps to ensure the firm complies with the Accounts Rules. If the COFA cannot demonstrate active oversight during the period, the accountant may qualify the report.</p>
+<h2>Step 5: Fix Issues Before the Visit, Not After</h2>
 
-<h2>What Happens If the Report Is Qualified?</h2>
+<p>The point of preparing is to find and fix problems while they are still your problem to fix, before they become a finding in the report. The issues that most often surface in preparation are:</p>
 
-<p>A qualified report means the accountant has identified a material breach of the SRA Accounts Rules. The SRA will review the report and may take regulatory action. The action depends on the severity of the breach. Minor breaches may result in a warning or a requirement to implement corrective measures. Serious or repeated breaches can lead to a referral to the Solicitors Disciplinary Tribunal, a fine, or conditions on the firm's practising certificate.</p>
+<p><strong>Reconciliations that do not tie at both levels.</strong> Some firms reconcile the client account bank balance to the total of client ledger balances but never check individual client balances against the bank. Both levels matter, and a mismatch at either is the most common point of failure. Resolve every discrepancy before the period end.</p>
 
-<p>If you know there is a breach, do not try to hide it from the reporting accountant. The accountant has a duty to report material breaches to the SRA, regardless of what the firm says. It is better to be transparent and demonstrate that you have taken corrective action.</p>
+<p><strong>Client money in the business account.</strong> This is common in conveyancing, where a client pays a deposit by transfer and it lands in the business account by mistake. Client money must be held in a client account. If it has happened, move it to the client account at once and document the correction.</p>
+
+<p><strong>Transfers made without a bill delivered first.</strong> Money may only move from client to business account once a bill has been delivered. A transfer ahead of the bill is a frequent finding; check the sequence on every matter in your self-review.</p>
+
+<p><strong>Residual balances left on closed matters.</strong> When a matter closes, any remaining client money must be returned to the client or dealt with under the SRA's guidance. Small balances left for years are a recurring compliance issue, so clear them as part of the three-month review.</p>
+
+<p><strong>Weak evidence of COFA oversight.</strong> The COFA must be able to show active oversight of compliance during the period, not just at year end. If that record is thin, build it up before the accountant arrives.</p>
+
+<p>Fix what you find, document the correction, and keep the evidence. A corrected error that you can show you identified and resolved is in a different category from an open breach the accountant uncovers.</p>
+
+<h2>How to Secure an Unqualified Report</h2>
+
+<p>An unqualified report means the accountant found no material breach of the Accounts Rules. A qualified report means they identified one or more, and the SRA reviews every qualified report and may act on it depending on the severity and pattern of the breaches. A qualification is not an automatic sanction, but it does invite scrutiny.</p>
+
+<p>You earn an unqualified report through the controls, not the presentation. Reconcile on time and at both levels, keep client money out of the business account, deliver a bill before every transfer, and clear residual balances as matters close. Then collate the evidence pack so the accountant can test quickly and find nothing material.</p>
+
+<p>If you know there is a breach, do not try to keep it from the accountant. The reporting accountant has a duty to report material breaches to the SRA regardless of what the firm says, so concealment achieves nothing and damages credibility. Transparency, plus clear evidence that you have already taken corrective action, is the stronger position.</p>
 
 <h2>How a Specialist Solicitor Accountant Can Help</h2>
 
-<p>Preparing for the SRA accountant's report is a specialised task. A general practice accountant may not understand the specific requirements of the SRA Accounts Rules. A <a href="/services/solicitor-accountants">solicitor accountant</a> who works regularly with law firms will know exactly what the reporting accountant looks for and can help you prepare the evidence pack efficiently.</p>
+<p>Preparing for the report is a specialised task, and a general practice accountant may not understand the specific demands of the SRA Accounts Rules. A <a href="/services/solicitor-accountants">solicitor accountant</a> who works regularly with law firms knows exactly what the reporting accountant tests and can help you build the evidence pack efficiently and run a realistic self-review before the visit.</p>
 
-<p>We also offer <a href="/services/cofa-compliance-support">COFA compliance support</a> for firms that want ongoing guidance throughout the year, not just at year end. Regular compliance reviews reduce the risk of surprises when the reporting accountant arrives.</p>
+<p>For firms that want guidance throughout the year rather than only at the period end, we offer <a href="/services/cofa-compliance-support">COFA compliance support</a>. Regular reviews keep the controls in good order, so there are no surprises when the reporting accountant arrives. If you are preparing for your first report as a new firm or a new COFA, our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a> covers the fundamentals.</p>
 
-<p>If you are preparing for your first SRA accountant's report as a new firm or a new COFA, our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a> covers the fundamentals. For firms with complex client account structures, we recommend a pre-audit review before the formal report preparation begins.</p>
+<h2>Final Preparation Checklist</h2>
 
-<h2>Final Checklist for SRA Report Preparation</h2>
-
-<p>Use this checklist in the weeks before your reporting accountant's visit:</p>
+<p>Run through this in the weeks before the reporting accountant's review:</p>
 
 <ul>
-<li>Complete all client account reconciliations for the period.</li>
-<li>Resolve any discrepancies identified in the reconciliations.</li>
-<li>Review all open client matters for residual balances.</li>
-<li>Confirm that interest on client money has been correctly calculated and paid.</li>
-<li>Prepare the SAR evidence pack (bank statements, ledgers, reconciliations, bills).</li>
-<li>Review the COFA compliance file and risk assessments.</li>
-<li>Conduct a mock audit of a sample of client matters.</li>
-<li>Confirm the reporting accountant's visit date and provide access to records.</li>
+<li>Complete every client account reconciliation for the period and resolve all discrepancies.</li>
+<li>Check that reconciliations tie at both levels: individual ledgers to the bank, and the client account total to the sum of all client ledgers.</li>
+<li>Review every open matter for residual balances and clear them.</li>
+<li>Confirm a bill was delivered before each client-to-business transfer.</li>
+<li>Confirm any client money that reached the business account has been corrected and documented.</li>
+<li>Build the evidence pack: bank statements, ledgers, signed reconciliations, bills and the open-matter list.</li>
+<li>Review and strengthen the COFA compliance record.</li>
+<li>Run a self-review on a sample of matters using the accountant's own tests.</li>
+<li>Confirm the reporting accountant's date and how they will access your records.</li>
 </ul>
 
-<p>The SRA accountant's report is a regulatory requirement, but it is also a useful health check for your firm. A clean report confirms that your systems and controls are working. A qualified report identifies weaknesses that need attention. Either way, the process is manageable if you prepare properly.</p>
+<p>The accountant's report is a regulatory requirement, but it is also a useful health check. A clean, unqualified report confirms your systems and controls are working. A qualified report points to weaknesses that need attention. Either way, the process is manageable when you prepare year-round and collate the evidence properly.</p>
 
-<p>If you need assistance with your SRA accountant's report preparation, <a href="/contact">contact our team</a> of specialist solicitor accountants. We work with law firms across the UK and can help you navigate the process efficiently.</p>
+<p>If you would like help preparing for your SRA accountant's report, <a href="/contact">contact our team</a> of specialist solicitor accountants. We work with law firms across England and Wales and can help you get the evidence pack right and the controls clean before the report is signed.</p>
+</content>
+</invoke>

@@ -11,6 +11,12 @@ altText: "UK law firm performance dashboard showing key benchmarking metrics and
 image: ""
 h1: "Law Firm Benchmarking UK: Essential KPIs and Performance Metrics for Legal Practices"
 summary: "Understanding where your practice stands against UK legal sector benchmarks is crucial for strategic planning and identifying improvement opportunities."
+keyTakeaways:
+  - "Profit per equity partner typically ranges from £80,000 to £300,000 plus, while net profit margins sit between 20 and 40 percent."
+  - "Most UK firms target fee-earner utilisation of 75 to 85 percent and aim to keep lock-up below 120 days."
+  - "Work in progress should ideally stay under 25 percent of annual turnover, with client retention above 90 percent."
+  - "Progressive firms invest 3 to 5 percent of turnover in technology and keep staff turnover below 15 percent a year."
+  - "Benchmark against firms of comparable size, location and practice area, reviewing key metrics monthly and benchmarking quarterly."
 schema: ""
 faqs:
   - question: "How do regional differences affect law firm benchmarking in the UK?"

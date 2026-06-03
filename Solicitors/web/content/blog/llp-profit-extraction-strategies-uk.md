@@ -11,6 +11,12 @@ altText: "Solicitor partner reviewing LLP profit extraction and drawings schedul
 image: ""
 h1: "How Do LLPs Handle Partner Drawings and Profit Extraction for Solicitors?"
 summary: "A practical guide for solicitor partners in LLPs on how profit extraction works through partner drawings, interim distributions, and annual profit allocation, with tax considerations under the Salaried Member Rules."
+keyTakeaways:
+  - "Partners are taxed on their allocated annual profit share, not on the cash they draw during the year."
+  - "Drawings are advances against the profit share, while interim distributions are formal profit allocations that are taxable when made."
+  - "Over-drawing creates a debit capital balance, effectively an interest-free loan that may trigger a benefit-in-kind charge."
+  - "The Salaried Member Rules (FA 2014) can force PAYE on a fixed-share partner if all three conditions are met."
+  - "A separate tax reserve account at the marginal rate plus Class 4 NIC protects partners from January cash flow shocks."
 schema: ""
 faqs:
   - question: "Can a solicitor partner in an LLP draw more than their profit share?"

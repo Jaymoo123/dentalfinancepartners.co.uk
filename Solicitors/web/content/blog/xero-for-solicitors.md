@@ -11,6 +11,12 @@ altText: "UK solicitor using Xero accounting software on laptop with legal docum
 image: ""
 h1: "Xero for Solicitors: Complete Setup and Compliance Guide"
 summary: "Essential guide for solicitors considering Xero accounting software. Covers setup, SRA compliance requirements, and trust accounting functionality for UK legal practices."
+keyTakeaways:
+  - "Xero can meet the SRA Accounts Rules when configured with separate tracking categories for client money and office money and the right chart of accounts."
+  - "Set up a distinct Xero bank account for each physical account (client, business current, deposit), recording client receipts as liabilities."
+  - "Integrations with Clio, LawWorks and InfoTrack push time and disbursement data into Xero, but must preserve audit trails for SRA compliance."
+  - "Key legal reports include client money reconciliations, aged debtor analysis by matter, work-in-progress summaries and partner drawings."
+  - "Xero supports Making Tax Digital for income tax from April 2026, submitting quarterly updates for sole practitioners and partnerships."
 schema: ""
 faqs:
   - question: "Can Xero handle SRA Accounts Rules compliance for solicitors?"

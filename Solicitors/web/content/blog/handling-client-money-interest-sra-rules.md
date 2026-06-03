@@ -5,156 +5,136 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/handlin
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
-metaTitle: "SRA Rule 7: Handling Client Money Interest for Solicitors"
-metaDescription: "Understand SRA Rule 7 on client money interest. Learn when interest must be paid to clients, fair interest policies, and compliance for law firms."
-altText: "Law firm partner reviewing SRA client account interest policy documents with calculator"
+metaTitle: "SRA Rule 7: Client Money Interest Policy for Law Firms"
+metaDescription: "SRA Rule 7 in practice: the fair-sum-of-interest test, writing a de minimis interest policy, accounting for interest between client and office account, and disclosure."
+altText: "Law firm partner reviewing an SRA client account interest policy and ledger reconciliation"
 image: ""
 h1: "How Should a Law Firm Handle Client Money Interest Under SRA Rule 7?"
-summary: "SRA Rule 7 requires law firms to pay a fair amount of interest on client money held. This article explains when interest must be paid, how to calculate it, and how to set up a compliant fair interest policy."
+summary: "SRA Rule 7 requires a firm to account to clients for a fair sum of interest on client money held. This guide covers the fairness test, writing a documented interest policy with a defensible de minimis, how interest is accounted for between client and office account, and the client-care disclosure that keeps you compliant."
+keyTakeaways:
+  - "Rule 7 requires a fair sum of interest, not every penny, and the test is fairness by amount and duration together."
+  - "The SRA sets no fixed de minimis, so each firm must set and justify its own threshold against actual administrative cost."
+  - "Short holds are not automatically interest-free, since a large balance held briefly can still cross a sensible de minimis."
+  - "Interest owed flows to the client, while retained interest below the de minimis must move promptly to the office account."
+  - "The accountant's report exemption needs both limbs met: an average balance under £10,000 and a maximum under £250,000."
 schema: ""
 faqs:
-  - question: "What is the SRA de minimis for client money interest?"
-    answer: "The SRA does not set a specific de minimis amount. Each firm must set its own based on the administrative cost of calculating and paying interest. Typical de minimis levels are between £20 and £50 of interest per client matter. The threshold must be fair and justifiable. Setting a de minimis of £500 or more would likely be considered unreasonable by the SRA."
+  - question: "Does the SRA set a de minimis for client money interest?"
+    answer: "No. Rule 7 does not state a figure. The SRA expects each firm to set its own de minimis in a written policy and to be able to justify it by reference to the administrative cost of calculating and paying small sums. The test the SRA applies is fairness, not a fixed number, so a threshold that quietly retains sums a client would regard as material is the risk, not the absence of a published SRA figure."
   - question: "Do I have to pay interest on client money held for only a few days?"
-    answer: "Yes, if the interest that would be earned exceeds your firm's de minimis threshold. Short-term holdings are not automatically exempt. For example, holding £100,000 for 5 days at 2% earns about £27.40. If your de minimis is £20, you must pay that interest. If it is £50, you may retain it. The key is having a documented policy and applying it consistently."
+    answer: "Possibly. Rule 7 is a fairness test by amount and duration, not a duration exemption. Short holdings are not automatically excluded. You assess the sum that would accrue on the actual balance for the actual period against your documented de minimis, and you apply that policy consistently across every matter. A large balance held briefly can still cross a reasonable de minimis."
   - question: "Can a law firm keep client money interest?"
-    answer: "Yes, but only where the interest is below your firm's de minimis threshold. This is known as retained interest and is a legitimate source of income. However, you cannot use a high de minimis to deliberately avoid paying interest that is clearly due. The SRA will assess whether your policy is fair. Retained interest must be transferred to the office account, not left in the client account."
-  - question: "What happens if I fail to pay client money interest?"
-    answer: "Failure to pay client money interest when due is a breach of the SRA Accounts Rules. The SRA can take regulatory action, including fines, rebukes, or referral to the Solicitors Disciplinary Tribunal. If you discover unpaid interest, pay it promptly to the client and document the correction. Notify the SRA if the breach is material. Your COFA should be involved in managing the issue."
+    answer: "A firm may retain interest only where the sum falls below its documented de minimis, in which case the retained amount is transferred to the office account and recognised as the firm's income. You cannot set an inflated de minimis to retain interest that is plainly due, and you cannot leave retained interest sitting in the client account. Rule 7.2 also lets you agree a different arrangement in writing, but only if the client has sufficient information to give informed consent."
+  - question: "What is the correct exemption from the SRA accountant's report?"
+    answer: "Under Rule 12.2 a firm is exempt from obtaining an accountant's report for an accounting period if all the client money it held was money from the Legal Aid Agency, or if the statement or passbook balance did not exceed an average of £10,000 and a maximum of £250,000 (or the foreign-currency equivalent) across the period. Both balance limbs must be satisfied. The exemption removes the report obligation only; Rule 7 on interest and the rest of the Accounts Rules still apply."
+  - question: "Where should client money interest sit, the client account or the office account?"
+    answer: "Interest you owe a client is accounted to that client (paid out, or credited to them and then paid when their money leaves the client account). Interest you are entitled to retain because it is below your de minimis belongs to the firm and is moved to the office account as income. On a separate designated deposit account the interest the bank pays belongs to the client and must reach them; it should not be absorbed by the firm."
 ---
 
-<h2>What Does SRA Rule 7 Say About Client Money Interest?</h2>
+<h2>What Does SRA Rule 7 Actually Require?</h2>
 
-<p>SRA Rule 7 is one of the most frequently misunderstood parts of the SRA Accounts Rules. It governs when and how a law firm must pay interest to clients on money held in the client account. The rule is not optional. Every SRA-regulated firm must comply, whether it holds client money for a week or a year.</p>
+<p>Rule 7 of the SRA Accounts Rules 2019 governs interest on client money, and it is one of the most frequently misread parts of the rulebook. The operative wording is short. Under Rule 7.1 you "account to clients or third parties for a fair sum of interest on any client money held by you on their behalf". Under Rule 7.2 you may, by written agreement, come to a different arrangement, but only where you "provide sufficient information to enable them to give informed consent".</p>
 
-<p>The core requirement is straightforward. A firm must pay a client a "fair sum" of interest on client money held, unless the amount is too small to justify the administrative cost. The rule applies to all client money held in a client account, including money held for conveyancing completions, litigation settlements, or probate administration.</p>
+<p>Two points follow immediately. First, the obligation is to a "fair sum", not to every penny of interest the bank pays. Second, the standard is fairness, assessed by the amount held and the period it is held for, not a bright-line figure handed down by the SRA. The rule deliberately leaves the firm to translate "fair" into a written, defensible policy. That policy is what an inspector, your accountant and a complaining client will all measure you against.</p>
 
-<p>Many solicitors assume that if the client money is held for a short period, no interest is due. That is not correct. The test is not the duration of the holding but whether the amount of interest that would be earned is "fair" to pay given the administrative cost of calculating and paying it. A firm must have a documented policy to determine this.</p>
+<p>The rule bites on all client money held in the client account: completion monies on a conveyancing matter, a litigation settlement awaiting distribution, probate funds held during administration, or money held to a third party's order. If it is client money under Rule 2, Rule 7 applies to the interest on it.</p>
 
-<p>For a detailed breakdown of the full SRA Accounts Rules, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules Essentials guide</a>.</p>
+<p>For the wider framework around the client account, reconciliation and the accountant's report, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules Essentials guide</a>.</p>
 
-<h2>When Must You Pay Interest on Client Money?</h2>
+<h2>The Fairness Test: Amount and Duration, Not Just Time Held</h2>
 
-<p>Interest must be paid to a client when the amount of client money held is significant enough that a fair sum of interest would accrue. The SRA does not specify a minimum threshold. Instead, it expects each firm to set its own de minimis level based on its administrative costs.</p>
+<p>The single most common error is to assume that money held for a short period carries no interest obligation. That is not what Rule 7 says. The test is whether the sum of interest that would accrue is fair to pay, judged on the actual balance and the actual number of days held. A short hold of a large sum can produce interest that a client would reasonably expect to receive; a long hold of a trivial sum may not.</p>
 
-<p>Typical practice among UK law firms is to set the de minimis at around £20 to £50 of interest per client per matter. If the interest that would be earned over the period the money is held is below that threshold, the firm may retain the interest. If it exceeds the threshold, the firm must pay the interest to the client.</p>
+<p>So the fairness assessment has two moving parts working together:</p>
 
-<p>For example, consider a conveyancing matter where the firm holds £200,000 of client money for 14 days. At a typical client account interest rate of 2% per annum, the interest earned would be approximately £153. That clearly exceeds a £50 de minimis. The firm must pay that £153 to the client. If the firm held £5,000 for 10 days, the interest would be about £2.74. That falls below the de minimis, so the firm may retain it.</p>
-
-<p>The key point is that the firm must calculate the interest that would be earned on the specific amount held for the specific period. You cannot simply decide that all short-term holdings are exempt. Each matter must be assessed individually.</p>
-
-<h2>What Is a Fair Interest Policy?</h2>
-
-<p>A fair interest policy is a written document that sets out how your firm determines whether to pay interest on client money. It must be applied consistently across all client matters. The SRA expects every firm that holds client money to have such a policy in place.</p>
-
-<p>The policy should include:</p>
 <ul>
-<li>The de minimis threshold (the minimum amount of interest you will pay)</li>
-<li>The interest rate you use to calculate interest (typically the rate your client account actually earns)</li>
-<li>The calculation method (daily or monthly, simple or compound)</li>
-<li>How you will notify clients about the policy (usually in your terms of business)</li>
-<li>How you will record decisions not to pay interest</li>
+<li><strong>Amount held.</strong> The larger the balance, the faster interest accrues to a level that is clearly fair to pay.</li>
+<li><strong>Duration.</strong> The longer it is held, the more accrues, but duration alone never makes interest payable or unpayable; it is one input.</li>
 </ul>
 
-<p>Your policy must be fair. It cannot be designed to avoid paying interest that is clearly due. The SRA will review your policy during a compliance visit and may challenge it if it appears unreasonable.</p>
+<p>This is why "we never pay interest on completion monies because they are only held for a day or two" is not a defensible position. The defensible position is a written policy that applies a consistent de minimis to the calculated sum, whatever the duration. Consider, illustratively, a balance of £200,000 held for fourteen days. Even on a modest deposit rate, the accrual runs into the tens of pounds, comfortably above a sensible de minimis. The same de minimis applied to £4,000 held for ten days produces a sum measured in pennies, which the policy would let you retain. The duration is similar; the fair outcome differs because the amount differs.</p>
 
-<p>For example, setting a de minimis of £500 would likely be considered unfair for most firms, because it would allow the firm to retain significant sums that properly belong to the client. A de minimis of £20 to £50 is more typical and more likely to be accepted by the SRA.</p>
+<h2>Setting a Documented Interest Policy</h2>
 
-<h2>How Do You Calculate Client Money Interest?</h2>
+<p>Every firm that holds client money should have a written interest policy, approved at management level and applied consistently. The SRA does not prescribe its contents, but a policy that an inspector will accept covers the following:</p>
 
-<p>The calculation is straightforward in principle but can be time-consuming in practice. You need to know:</p>
 <ul>
-<li>The amount of client money held</li>
-<li>The number of days it was held</li>
-<li>The interest rate payable on the client account</li>
+<li><strong>The de minimis threshold.</strong> The minimum accrued interest below which the firm will retain rather than pay. Express it as a sum of interest per matter, and record the reasoning that ties it to your actual administrative cost of calculating and paying small amounts.</li>
+<li><strong>The reference rate.</strong> The rate you use to calculate interest, normally linked to what the client account actually earns. State the source so the figure is auditable.</li>
+<li><strong>The calculation basis.</strong> Daily accrual on the cleared balance, the day-count convention you use, and whether you calculate on a designated balance or an apportioned share of a pooled account.</li>
+<li><strong>The de minimis policy thresholds in practice.</strong> How the threshold is applied to short holds, interim payments on long-running matters, and matters where the balance fluctuates.</li>
+<li><strong>Disclosure.</strong> How and where you tell clients about the policy (see the client-care section below).</li>
+<li><strong>Record-keeping.</strong> How a decision not to pay interest is evidenced on the file.</li>
 </ul>
 
-<p>The formula is: (Amount x Interest Rate x Days Held) / 365.</p>
+<p>The de minimis is the part the SRA scrutinises hardest. A low single-figure or low-tens threshold is straightforward to justify on cost grounds. A threshold set high enough to retain sums a client would plainly regard as theirs is the danger zone: it converts a fairness rule into a revenue line and invites challenge. The policy must read as a genuine cost-based cut-off, not as a device to keep interest.</p>
 
-<p>For example, if you hold £50,000 for 30 days at 2.5% per annum, the interest is (£50,000 x 0.025 x 30) / 365 = £102.74. If your de minimis is £50, you must pay this to the client.</p>
+<h2>How Do You Calculate the Interest?</h2>
 
-<p>Most modern practice management systems can automate this calculation. If your system does not, you may need to calculate manually or use a spreadsheet. The SRA expects you to have a reliable method and to keep records of your calculations.</p>
+<p>The mechanics are simple; the discipline is in applying them every time. You need the cleared balance, the number of days held, and the reference rate from your policy. The standard daily-accrual formula is:</p>
 
-<p>Interest must be paid promptly after the client money is withdrawn from the client account. You cannot delay payment until the end of the matter. If the money is held for a long period, you may need to make interim interest payments.</p>
+<p><strong>Interest = (Balance x Rate x Days held) / 365</strong></p>
 
-<h2>What About Client Money Held for Short Periods?</h2>
+<p>Apply it to the calculated accrual, then compare that accrual to your de minimis. If it is at or above the threshold, you account to the client for it. If it is below, your policy lets you retain it and the file note records why. The key compliance behaviour is that the same calculation and the same threshold are applied to every matter, so the outcome is driven by the policy rather than by who happens to be running the file.</p>
 
-<p>Short-term holdings are not automatically exempt. The test is always whether the interest that would be earned exceeds your de minimis. If it does, you must pay it, even if the money was only held for a few days.</p>
+<p>On a <strong>pooled client account</strong>, which is what most firms operate, interest is calculated on each client's notional share of the pooled balance for the period it was held, not on the account as a whole. On a <strong>separate designated deposit account</strong> opened for a single client or matter, the bank pays interest referable to that balance and it belongs to that client; the firm cannot absorb it. Both methods are permitted, and Rule 7 applies to each.</p>
 
-<p>However, the administrative cost of calculating and paying very small amounts of interest can outweigh the benefit to the client. That is why the de minimis exists. The SRA accepts that it is not practical to pay interest of £1 or £2. But you must have a policy that sets a reasonable threshold.</p>
+<p>Most practice management systems will run the daily accrual automatically if the reference rate and de minimis are configured correctly. Where the calculation is manual, keep the worked figures, because your reporting accountant will sample them.</p>
 
-<p>For example, if you hold £100,000 for 5 days at 2%, the interest is £27.40. If your de minimis is £50, you may retain this. If your de minimis is £20, you must pay it. The choice of de minimis is yours, but it must be justifiable.</p>
+<h2>Accounting for Interest Between Client and Office Account</h2>
 
-<h2>What Happens If You Do Not Pay Interest When Required?</h2>
+<p>Getting the bookkeeping right matters as much as the policy, because the wrong ledger movement is itself a breach. Two distinct flows arise:</p>
 
-<p>Failure to pay client money interest when it is due is a breach of the SRA Accounts Rules. The SRA can take regulatory action, including fines, rebukes, or in serious cases, referral to the Solicitors Disciplinary Tribunal. It can also damage your firm's reputation with clients.</p>
-
-<p>In practice, the SRA often discovers non-compliance during routine compliance visits or when a client complains. If you have a documented fair interest policy and can show that you applied it consistently, you are less likely to face action for an isolated error. But a pattern of non-payment will attract scrutiny.</p>
-
-<p>If you identify that you have failed to pay interest that was due, you should pay it promptly to the client and notify the SRA if the breach is material. Your COFA should be involved in this process.</p>
-
-<h2>Can a Law Firm Keep Client Money Interest?</h2>
-
-<p>Yes, but only where the interest is below your de minimis threshold. The SRA does not require you to pay every penny of interest earned. The rule is about paying a "fair sum", not every last pound.</p>
-
-<p>If the interest is below your de minimis, you may retain it. This is sometimes called "banking the interest" or "retained interest". It is a legitimate source of income for the firm, but it must be properly accounted for. The retained interest should be credited to the firm's office account, not left in the client account.</p>
-
-<p>However, you cannot use a high de minimis to deliberately avoid paying interest that is clearly due. The SRA will look at the overall fairness of your policy. If you retain significant sums that would be material to clients, you are at risk.</p>
-
-<p>For more on COFA responsibilities around client money, see our <a href="/services/cofa-compliance-support">COFA Compliance Support page</a>.</p>
-
-<h2>How Should You Document Your Fair Interest Policy?</h2>
-
-<p>Your fair interest policy should be a formal document, approved by the firm's management and reviewed annually. It should be included in your firm's compliance manual or procedures folder. Every fee-earner who handles client money should be aware of it.</p>
-
-<p>The policy should be communicated to clients in your terms of business. You should explain that you will pay interest on client money where it is fair to do so, and that you have a de minimis threshold. This manages client expectations and reduces disputes.</p>
-
-<p>You should also keep records of decisions not to pay interest. If a client queries why no interest was paid, you should be able to show that you considered the matter and applied your policy consistently. A simple note on the file is sufficient.</p>
-
-<h2>What About Interest on Client Money Held in a Designated Account?</h2>
-
-<p>If you hold client money in a designated client account (a separate account for a specific client or matter), the interest earned on that account belongs to the client. You cannot retain it. The bank will usually pay the interest directly to the client, but if it pays it to the firm, you must pass it on.</p>
-
-<p>Designated accounts are less common than pooled client accounts. Most firms use a pooled client account where all client money is held together and interest is calculated on the average balance. The SRA allows both methods, but the interest rules apply equally.</p>
-
-<h2>Common Mistakes in Handling Client Money Interest</h2>
-
-<p>Several common mistakes lead to SRA breaches:</p>
 <ul>
-<li>Not having a written fair interest policy at all</li>
-<li>Setting a de minimis that is too high (e.g., £500)</li>
-<li>Failing to calculate interest on short-term holdings</li>
-<li>Not paying interest promptly after client money is withdrawn</li>
-<li>Retaining interest that clearly exceeds the de minimis</li>
-<li>Not notifying clients about the policy in terms of business</li>
-<li>Not recording decisions not to pay interest</li>
+<li><strong>Interest you owe the client.</strong> This is accounted to the client. In practice it is either paid out to them or credited to their matter ledger and then released with their funds when their money leaves the client account. It is the client's money, so it is dealt with through the client side.</li>
+<li><strong>Interest you are entitled to retain.</strong> Where the accrual is below your de minimis, the retained amount is the firm's income. It is transferred to the <strong>office account</strong> and recognised in the firm's books. Retained interest must not be parked in the client account; client account is for client money, and leaving firm income in it is a Rule 3 problem as well as a Rule 7 one.</li>
 </ul>
 
-<p>If any of these apply to your firm, you should review your procedures immediately. The SRA is increasingly focused on client money compliance, and interest is a common area of concern.</p>
+<p>The boundary to watch is therefore simple to state and easy to get wrong: amounts due to clients flow through the client side and out to the client; amounts the firm may keep are moved promptly to office account as income. Interest due to a client should be accounted for promptly after the client's money is paid out rather than left to accumulate untracked, and on long-running matters you may need interim interest accounting rather than a single year-end sweep. For the underlying distinction between the two accounts, see <a href="/blog/sra-accounts-rules/office-account-vs-client-account-differences">office account versus client account</a>, and for how this all surfaces on the regular reconciliation see <a href="/blog/sra-accounts-rules/sra-client-account-reconciliation-frequency">client account reconciliation frequency</a>.</p>
 
-<h2>How Does Client Money Interest Affect Your SRA Accountant's Report?</h2>
+<h2>Disclosing Your Interest Policy in the Client-Care Letter</h2>
 
-<p>Your SRA accountant's report will include a review of your client money interest procedures. The accountant will check that you have a fair interest policy and that you are applying it consistently. If the accountant finds a breach, they must report it.</p>
+<p>Rule 7 works hand in hand with your client-care obligations. The interest policy should be disclosed to the client at the outset, normally in the client-care letter or terms of business, so the client knows that you will account for a fair sum of interest, that a de minimis applies below which interest is retained, and how the sum is calculated. Clear disclosure manages expectations, reduces complaints, and demonstrates that the policy is being operated openly rather than as a hidden retention.</p>
 
-<p>If your firm holds less than £10,000 of client money at any time and the average balance does not exceed £250, you may be exempt from the accountant's report requirement. But you are still subject to the SRA Accounts Rules, including Rule 7 on interest.</p>
+<p>Disclosure also underpins the Rule 7.2 route. If you intend to depart from the default and agree a different interest arrangement with a client, Rule 7.2 permits it by written agreement, but only where you have given the client sufficient information to give informed consent. A passing line buried in standard terms is unlikely to meet that bar for anything other than the ordinary de minimis position. A genuine alternative arrangement needs the client to understand what they are agreeing to and what they are giving up.</p>
 
-<p>For firms that do require an accountant's report, the accountant will typically ask to see your fair interest policy and a sample of interest calculations. They may also review your client account reconciliations to ensure interest is being properly accounted for.</p>
+<h2>When Interest Can Be Retained, and When It Cannot</h2>
 
-<p>For more on the accountant's report process, see our <a href="/services/sra-accounts-rules">SRA Accounts Rules services</a>.</p>
+<p>Retaining interest is legitimate where the accrued sum sits below your documented de minimis. That retained interest is a recognised, if modest, income line, provided it is moved to office account and the policy that generated it is fair. What is not legitimate is using a high threshold to sweep up interest that is plainly due, or applying the policy inconsistently so that some clients are paid and others in the same position are not.</p>
 
-<h2>Practical Steps to Get Compliant</h2>
+<p>The SRA assesses the overall fairness of the policy and its application. A firm that can show a sensible cost-based de minimis, a consistent calculation, contemporaneous file notes for decisions not to pay, and disclosure to clients is in a strong position even if an isolated figure is later debated. A firm with no written policy, an unexplained high threshold, or no records is exposed. For how this connects to wider client-money compliance and the COFA's role, see our <a href="/services/cofa-compliance-support">COFA compliance support</a>.</p>
 
-<p>If you are unsure whether your firm is compliant with SRA Rule 7, take these steps:</p>
+<h2>How Interest Practice Shows Up in the Accountant's Report</h2>
+
+<p>If your firm has held client money in the period, you will normally need an accountant's report, and the reporting accountant will look at interest. Expect them to ask for the written interest policy, a sample of interest calculations, and evidence that retained interest reached the office account and paid interest reached clients. Weaknesses they commonly flag are the absence of a policy, an unjustified de minimis, and interest left sitting in the client account.</p>
+
+<p>A firm is <strong>exempt</strong> from obtaining the report under Rule 12.2 only in narrow circumstances: where all the client money held in the period was money received from the Legal Aid Agency, or where the statement or passbook balance did not exceed <strong>an average of £10,000 and a maximum of £250,000</strong> (or the foreign-currency equivalent) across the accounting period. Both balance limbs must be met. Note that this is the report exemption only: even an exempt firm remains fully subject to Rule 7 and the rest of the Accounts Rules. The exemption is frequently misquoted, so if you are testing whether you qualify, work it through carefully against the detail in our <a href="/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds">accountant's report exemption thresholds</a> guide.</p>
+
+<h2>Common Mistakes With Client Money Interest</h2>
+
+<p>The recurring breaches cluster in a few places:</p>
+
+<ul>
+<li>Operating with no written interest policy at all.</li>
+<li>Treating all short holds as automatically interest-free, ignoring the amount.</li>
+<li>Setting a de minimis high enough to retain sums clients would regard as material.</li>
+<li>Applying the policy inconsistently between matters and fee-earners.</li>
+<li>Leaving retained interest in the client account instead of moving it to office account.</li>
+<li>Failing to disclose the policy to clients in the client-care letter or terms of business.</li>
+<li>Keeping no file note of a decision not to pay interest.</li>
+<li>Misstating the Rule 12.2 report exemption (it is an average of £10,000 and a maximum of £250,000, not a £250 average).</li>
+</ul>
+
+<h2>Practical Steps to Get Rule 7 Right</h2>
+
 <ol>
-<li>Review your current fair interest policy. If you do not have one, draft one immediately.</li>
-<li>Set a reasonable de minimis threshold based on your administrative costs.</li>
-<li>Ensure your practice management system calculates interest correctly.</li>
-<li>Train all fee-earners on the policy and their obligations.</li>
-<li>Include the policy in your terms of business for new clients.</li>
-<li>Review your client account records for the last 12 months to check if any interest was due but not paid.</li>
-<li>If you find unpaid interest, pay it to the client and document the correction.</li>
+<li>Put a written interest policy in place, approved at management level, and review it at least annually as deposit rates move.</li>
+<li>Set a de minimis you can justify from your actual administrative cost, and record the reasoning.</li>
+<li>Configure the reference rate and de minimis in your practice management system so accruals are calculated consistently.</li>
+<li>Define how interest due to clients is accounted to them, and how retained interest moves to office account.</li>
+<li>Disclose the policy in your client-care letter and terms of business, and use the Rule 7.2 written-agreement route only with genuine informed consent.</li>
+<li>Note on each file where a decision is taken not to pay interest under the de minimis.</li>
+<li>Review the last twelve months for any interest that was due but not accounted for, and correct it promptly if found.</li>
 </ol>
 
-<p>If you need help drafting a fair interest policy or reviewing your compliance, speak to a legal-sector-specialist accountant. We can help you avoid SRA action and protect your firm's reputation.</p>
-
-<p>Contact our team for a <a href="/free-firm-health-check">free firm health check</a> focused on your client money compliance.</p>
+<p>If you would like a second pair of eyes on your interest policy, your de minimis, or how interest is moving between client and office account, our team works only with law firms and reviews this as part of a broader client-money compliance check. Contact us for a <a href="/free-firm-health-check">free firm health check</a> focused on your SRA Accounts Rules compliance.</p>

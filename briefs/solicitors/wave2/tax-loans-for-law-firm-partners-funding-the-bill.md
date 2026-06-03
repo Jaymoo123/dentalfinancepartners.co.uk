@@ -1,0 +1,92 @@
+# Page brief: tax-loans-for-law-firm-partners-funding-the-bill
+
+> You are an Opus 4.8 sub-agent writing ONE net-new blog post for "Accounts for Lawyers" (www.accountsforlawyers.co.uk), a lead-gen site for UK law-firm accountancy. The load-bearing point is using a TAX LOAN / fee-funding product to BORROW the cash to meet the 31 January and 31 July payments on account (and especially the basis-period-reform transition-profit charge still being collected to 2027/28), as distinct from SAVING/reserving for it. How the products work, the cash-flow logic, and the CRITICAL deductibility point: interest on a loan to pay a partner's PERSONAL income tax / Class 4 NIC is generally NOT an allowable trade deduction (it is a personal liability, not a trade purpose). Differentiate from Wave 1 `law-firm-partner-tax-reserving-payments-on-account` (that page is about reserving/saving; this is about borrowing). Every statute/figure below is pre-verified at primary source or locked in `docs/solicitors/house_positions.md` (cited as §N). Do NOT invent rules. No em-dashes (use commas, parentheses, full stops, middle dots). No pricing, no client names. Date-tag every rate. England and Wales focus (SRA-regulated).
+
+## Page identity
+
+- **Slug**: `tax-loans-for-law-firm-partners-funding-the-bill`
+- **Category**: Practice Finance & Cash Flow
+- **Canonical**: `https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/tax-loans-for-law-firm-partners-funding-the-bill`
+- **Content file**: `Solicitors/web/content/blog/tax-loans-for-law-firm-partners-funding-the-bill.md`
+- **Cluster**: E (Funding the tax bill, staffing levies & PII finance)
+
+## Target query / intent
+
+- Primary: "tax loan for law firm partners" / "fund my self assessment tax bill partner" / "can I borrow to pay my tax bill" / "tax loan deductible"
+- Secondary: "partner tax loan payments on account", "fund 31 January tax bill solicitor", "loan to pay self assessment", "is interest on a tax loan tax deductible", "basis period transition profit cash flow loan", "law firm partner tax funding facility", "spread my tax bill instalments", "HMRC time to pay vs tax loan"
+- Intent: a law-firm partner/member (or their firm/finance director) facing a lumpy 31 Jan / 31 Jul demand, possibly amplified by the transition-profit charge running to 2027/28, who is considering BORROWING to meet it rather than only reserving. Wants to understand the products, the cash-flow logic, the deductibility (honest answer), and the alternatives (HMRC Time to Pay). Distinct from the reserving page. High-intent, under-served.
+
+## The honest thesis (lead and hold)
+
+A self-employed partner is taxed on their allocated profit share, not their drawings (§2), and the bill lands in lumps through payments on account on 31 January and 31 July (§3), often amplified through 2027/28 by the basis-period-reform transition-profit charge (§4). Where a partner has not reserved enough, or where lock-up has tied the cash up in WIP and debtors, a tax loan (also called a fee-funding or tax-funding facility) lets the partner or firm borrow the amount due and repay it in monthly instalments, smoothing the spike. The page does three jobs: it explains how these facilities work and where they fit the partner cash-flow calendar; it gives the cash-flow logic honestly (a loan converts a lump into instalments at a cost, it does not reduce the tax); and it states the deductibility position carefully and correctly: interest on borrowing to pay a partner's OWN income tax and Class 4 NIC is a PERSONAL cost and is generally NOT an allowable trade deduction, because paying the proprietor's tax is not a purpose of the trade. This is the single most important and most often-mis-stated point, and the page must get it right. Contrast clearly with §2 qualifying-loan interest on partnership CAPITAL, which IS relievable, but is a different thing entirely.
+
+## H2 outline (aim 9-12 sections, ~2,900-3,500 words)
+
+1. **Why a partner's tax bill arrives in lumps (and why borrowing is even a question)** · lead: you are taxed on your allocated profit share, not drawings (§2); the bill comes in two payments on account, 31 January and 31 July (§3, TMA 1970 s.59A); and through 2027/28 many partners are still paying the spread transition-profit charge on top (§4). When the reserve falls short, or lock-up has locked the cash in WIP/debtors, partners look to borrow. Signpost the products, the cash-flow logic and the deductibility answer. Cross-link the reserving page (`law-firm-partner-tax-reserving-payments-on-account`) as the saving-side companion.
+2. **What a tax loan / fee-funding facility actually is** · a short-term unsecured (usually) loan, taken by the partner individually or arranged at firm level, equal to the tax due, paid to HMRC (or to the partner) and repaid by the partner over (typically) several monthly instalments with interest or an arrangement fee. Often arranged through brokers/insurers, sometimes provided by the firm to its partners. Note the firm-arranged vs partner-arranged distinction up front (it drives the deductibility analysis later). No pricing.
+3. **Where it fits the partner cash-flow calendar** · map the facility onto the 31 Jan / 31 Jul dates and the balancing-payment pile-up (the first January a partner is in the POA regime can feel like ~150% of a year's tax; §3 / cross-link the reserving page). A facility can also fund the transition-profit slice (§4) that runs to 2027/28. The benefit is smoothing, not saving.
+4. **The deductibility question, answered honestly (THE core section)** · interest on borrowing is allowable ONLY to the extent the borrowing is wholly and exclusively for the purposes of the trade (ITTOIA 2005 s.34; HMRC BIM45690). Paying a partner's OWN income tax and Class 4 NIC is a PERSONAL liability and an application of profit, NOT a trade purpose, so interest on a loan taken to pay that personal tax is generally NOT an allowable deduction. Say this plainly. Contrast: where the FIRM borrows for genuine working capital (to fund the trade, not a partner's personal tax) the interest is a trade expense; that is a different transaction. Do NOT tell partners their tax-loan interest is deductible.
+5. **The capital-buy-in distinction (do not confuse the two)** · §2: interest on a personal loan taken to fund a genuine CAPITAL contribution to (or buy into) the LLP qualifies for income-tax relief under ITA 2007 ss.398 to 412 (qualifying loan to invest in a partnership), while the member stays a partner and the capital stays in. This is a real and valuable relief, but it is for partnership CAPITAL, not for paying a tax bill. Writer: keep these two ideas in separate boxes so the reader cannot conflate "borrowing to buy in (relievable)" with "borrowing to pay my tax (not relievable)". Cross-link `law-firm-partner-capital-accounts-tax-treatment`.
+6. **Tax loan vs HMRC Time to Pay** · HMRC's own Time to Pay arrangement can spread a self-assessment bill in instalments and charges HMRC late-payment interest (a published rate; date-tag and tell the writer NOT to state a specific percentage without checking the current rate). A commercial tax loan may be quicker/larger or preserve the HMRC relationship, but it is third-party borrowing. Frame as a comparison, not a recommendation; the right route is fact-specific.
+7. **Reducing payments on account instead of borrowing** · a partner expecting a genuinely lower liability (e.g. a falling profit share) can claim to reduce POAs (§3 / reserving page), but reduce too far and HMRC charges interest on the shortfall back to the original due dates. So this is an alternative lever to consider before borrowing, used on evidence not optimism.
+8. **The lock-up trap that drives the borrowing** · the cruel law-firm point: you are taxed on the allocated profit share even where the firm's cash is locked in unbilled WIP and unpaid debtors (WIP recognised under FRS 102, §4). A profitable firm with heavy lock-up can leave a partner owing tax on profit not yet turned into drawable cash, which is exactly when a tax loan looks attractive. The real fix is reducing lock-up; the loan is a bridge. Cross-link `law-firm-lock-up-reduction` and `law-firm-cash-flow-management`.
+9. **Firm-arranged facilities and the partnership books** · where the firm arranges or provides the funding to partners, set out cleanly: a loan from the firm to a partner is the partner's borrowing (not a firm cost); any interest the firm charges is firm income; the partner's tax remains the partner's personal liability. Do NOT present a firm-level facility as converting personal-tax interest into a deductible firm expense. Keep this tight and accurate.
+10. **Decision frame and checklist** · (i) reserve first (cross-link reserving page), borrow only to bridge a genuine shortfall; (ii) assume tax-loan interest on personal tax is NOT deductible; (iii) compare a commercial tax loan with HMRC Time to Pay and with reducing POAs on evidence; (iv) keep the capital-buy-in qualifying-loan relief (§2) entirely separate; (v) treat the transition-profit slice (to 2027/28) as a known, plannable demand, not a surprise; (vi) attack lock-up as the durable fix. Inline CTA (segment: partner planning tax-bill funding). No pricing.
+11. **FAQ** (frontmatter, 10-14 Qs).
+
+## VERIFIED ANCHOR BLOCK (quote/paraphrase only from this; verified at primary source 2026-06-03)
+
+- **Interest deductibility, general rule (HMRC BIM45690, verbatim 2026-06-03):** "When the business is funded using borrowed money and that money is used for business purposes the interest is allowable as a deduction in computing the trade profits. The interest is not allowable as a deduction if the funds are being used for private purposes." Also: interest is not allowable "if the borrowing finances private spending because the proprietor has taken more out of the business than they have put in or earned in profits." (Source: gov.uk/hmrc-internal-manuals/business-income-manual/bim45690.)
+- **Personal-tax point (locked position, derived from BIM45690 + ITTOIA 2005 s.34, §10 wholly-and-exclusively):** a partner's/sole trader's own income tax and Class 4 NIC is a PERSONAL liability and an application of profits, not an expense of the trade; so interest on a loan taken to pay that personal tax is generally NOT an allowable trade deduction. State this as the load-bearing answer. (Locked §10 wholly-and-exclusively; §3 personal tax computation.)
+- **Payments on account (§3):** two payments on account towards income tax and Class 4 NIC, due 31 January (in the tax year) and the following 31 July, each broadly 50% of the prior year's self-assessment liability, with a balancing payment the next 31 January (TMA 1970 s.59A). Not required if the prior bill was under £1,000 or more than 80% was collected at source. Class 4 NIC is included; Class 2 not a charge from 6 April 2024.
+- **Basis-period transition profit (§4, FA 2022 Sch 1, conductor-verified at legislation.gov.uk 2026-06-03):** transition profits (catch-up to 5 April 2024, less overlap relief) are spread at 20% a year across 2023/24, 2024/25, 2025/26, 2026/27, with the balance in 2027/28, unless the partner elects to accelerate. Taxed as a standalone charge; within Class 4 NIC. Still being collected to 2027/28 for non-March/5-April year-ends.
+- **Qualifying-loan interest on CAPITAL (§2, different from a tax loan):** interest on a personal loan to fund a genuine CAPITAL contribution to (or buy into) the LLP is relievable against the member's income under ITA 2007 ss.398 to 412, while the member remains a partner and the capital stays in. This is for capital, NOT for paying tax. Keep separate.
+- **HMRC Time to Pay (writer note):** HMRC can agree instalment arrangements for self-assessment and charges late-payment interest at a published rate. Do NOT state a specific percentage without confirming the current rate at the date of writing; date-tag any figure used.
+
+## Worked-example sketches (illustrative only; label as not advice)
+
+1. **Tax loan to bridge a January shortfall (interest NOT deductible).** A partner faces a 31 January demand that exceeds their reserve and takes a tax loan repaid over the following months. The instalments smooth the cash, but the interest relates to paying personal income tax and Class 4 NIC, so it is NOT an allowable trade deduction. Caption: "a tax loan smooths the cash but does not reduce the tax, and the interest is not deductible because the tax is personal."
+2. **Funding the transition-profit slice to 2027/28.** A partner with a December year-end still has a transition-profit charge feeding their 2026/27 and 2027/28 bills (§4); a facility can spread that known, plannable demand. Caption: "the transition charge is known in advance, so plan for it rather than be surprised by it."
+3. **Capital buy-in loan (relievable) vs tax loan (not).** A partner borrows to fund a genuine capital contribution on promotion: interest qualifies for relief under ITA 2007 ss.398 to 412 (§2). The same partner borrows separately to pay their tax bill: that interest is not relievable. Caption: "borrowing to buy in is relievable; borrowing to pay your tax is not. Different transactions, different answers."
+4. **Reducing payments on account on evidence.** A partner whose profit share is genuinely falling claims to reduce their POAs rather than borrow, but reduces only to a defensible figure to avoid HMRC interest on a shortfall. Caption: "reduce a payment on account on evidence, not optimism, or HMRC charges interest back to the due date."
+
+## FAQ seeds (write 10-14, answers 40-90 words)
+
+1. What is a tax loan for a law firm partner? (a short-term loan to pay the tax bill, repaid in instalments)
+2. Is the interest on a tax loan tax deductible? (generally no, because the tax is a personal liability, not a trade expense)
+3. Why is interest on a tax loan not deductible when business loan interest is? (the loan funds a personal tax bill, not the trade)
+4. Does a tax loan reduce my tax bill? (no, it only spreads the cash cost; the tax is unchanged)
+5. Tax loan or HMRC Time to Pay, which is better? (fact-specific; Time to Pay is HMRC instalments with interest, a tax loan is third-party borrowing)
+6. Can my firm provide partners with tax-funding? (yes, but it is the partner's borrowing and the partner's tax stays personal)
+7. Can I borrow to pay the basis-period transition charge? (yes, the same products can fund the transition slice running to 2027/28)
+8. Is borrowing to BUY INTO the partnership treated the same as a tax loan? (no; capital-buy-in interest can be relievable under ITA 2007 ss.398 to 412, a tax loan is not)
+9. Should I reduce my payments on account instead of borrowing? (consider it where your liability is genuinely lower, but only on evidence)
+10. What happens if I reduce my payments on account too far? (HMRC charges interest on the shortfall back to the original due dates)
+11. Why do I owe tax on profit I have not drawn? (you are taxed on your allocated profit share, not drawings; lock-up can tie the cash up)
+12. When is the tax actually due? (31 January and 31 July payments on account, balancing payment the next 31 January)
+13. Is a tax loan reportable to the SRA? (it is personal/firm borrowing; check the firm's own borrowing notification position, not client money)
+14. What is the durable alternative to a tax loan? (reserve against the allocation and reduce lock-up so the cash is there)
+
+## Suggested internal links (slugs)
+
+Sibling new (Cluster E): `apprenticeship-levy-and-solicitor-apprenticeships-law-firms`, `secondment-of-solicitors-vat-and-tax-treatment`, `financing-pii-premiums-tax-treatment-of-premium-finance`.
+Existing finance / partner tax: `law-firm-partner-tax-reserving-payments-on-account` (Wave 1, the saving-side companion), `solicitor-practice-finance-options`, `law-firm-cash-flow-management`, `law-firm-lock-up-reduction`, `law-firm-partner-capital-accounts-tax-treatment`, `how-llp-members-are-taxed-uk-2025-26`, `drawings-vs-profit-share-law-firm-partners`.
+
+## External authority links to favour
+
+- legislation.gov.uk ITTOIA 2005 s.34 (wholly and exclusively): https://www.legislation.gov.uk/ukpga/2005/5/section/34
+- gov.uk HMRC BIM45690 (funding the business, interest deductibility): https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim45690
+- legislation.gov.uk ITA 2007 s.398 (qualifying loan to invest in a partnership): https://www.legislation.gov.uk/ukpga/2007/3/section/398
+- gov.uk Pay your Self Assessment tax bill / Time to Pay: https://www.gov.uk/pay-self-assessment-tax-bill
+
+## How this DIFFERENTIATES from the nearest existing page
+
+`law-firm-partner-tax-reserving-payments-on-account` (Wave 1) is about SAVING for the bill: the payment-on-account mechanics, the reserving rule of thumb, and the transition-profit squeeze. This page is about BORROWING to meet the bill when the reserve falls short: the tax-loan/fee-funding products, the cash-flow logic, the deductibility answer (interest on personal-tax borrowing is NOT deductible), the capital-buy-in contrast, and HMRC Time to Pay. `solicitor-practice-finance-options` covers firm-level borrowing generally and does not address partner personal-tax funding or its deductibility. Genuinely net-new; it pairs with the reserving page as the borrow-side companion.
+
+## EXISTING_PAGE_STALE catch (record for conductor)
+
+- No factual error spotted specific to this topic in the skimmed existing pages. GAP (not error): `solicitor-practice-finance-options` and `law-firm-partner-tax-reserving-payments-on-account` do not address partner tax-LOAN funding or the non-deductibility of interest on personal-tax borrowing. Recommend an internal link to this new page at next rewrite. Low urgency.
+
+## Competitor-evidence notes (verified live 2026-06-03)
+
+- Tax-loan / fee-funding facilities are heavily marketed by brokers and insurers to professional-firm partners, confirming demand, but their marketing rarely states the deductibility position, and several imply or leave open that the interest is a business cost. The HMRC position (BIM45690 + ITTOIA 2005 s.34) is that interest on borrowing for a partner's PERSONAL tax is not a trade deduction; this is the ownable, accuracy-led angle no consumer-facing competitor page holds cleanly. Positions verified against the BIM45690 verbatim quote and locked HP sections on 2026-06-03.

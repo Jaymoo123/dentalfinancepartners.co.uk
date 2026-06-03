@@ -11,6 +11,12 @@ altText: "Solicitor reviewing a PII claim document in a law firm office with a c
 image: ""
 h1: "What Happens to PII Claim Payments and Reserves for Tax Purposes in a Solicitor’s Law Firm?"
 summary: "When a professional indemnity (PII) claim hits a law firm, the tax treatment of the payment, the excess, and any reserve account depends on whether the claim is revenue or capital, and on the firm’s accounting basis. This guide explains the rules for solicitors and their COFAs."
+keyTakeaways:
+  - "A PII claim payment is normally an allowable trading expense, deductible when the liability is recognised under the accruals basis."
+  - "The PII excess (deductible), whether £10,000, £25,000 or £100,000, is treated the same as the claim payment and is fully deductible."
+  - "Cash set aside in a reserve account gives no deduction; HMRC allows relief only when there is a present obligation from a past event."
+  - "In an LLP the deduction reduces profit taxed at members' marginal rates (20%, 40% or 45%); in a company it cuts corporation tax (19% or 25%)."
+  - "Insurer recoveries are not taxable income, but a subrogation recovery received after the claim was deducted is taxable in the year received."
 schema: ""
 faqs:
   - question: "Can a law firm deduct a PII claim payment if the claim is disputed and not yet settled?"

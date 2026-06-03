@@ -11,6 +11,12 @@ altText: "Solicitor reviewing tax documents before sabbatical leave, law firm of
 image: ""
 h1: "How Does a Sabbatical Affect a Solicitor’s Tax Position?"
 summary: "A solicitor taking unpaid sabbatical leave faces specific tax consequences around PAYE continuity, partnership profit allocation, and pension contributions. This article explains the rules for salaried solicitors, equity partners, and locum solicitors planning extended leave."
+keyTakeaways:
+  - "An employed solicitor keeps PAYE continuity if the firm keeps them on payroll with a zero-pay Full Payment Submission each month during the sabbatical."
+  - "An equity partner remains self-employed and reports a nil partnership profit share, with any drawings treated as a return of capital rather than taxable income."
+  - "If the solicitor has no relevant UK earnings in the sabbatical year, personal pension contributions are capped at £3,600 gross unless carry forward from the previous three years applies."
+  - "Maintaining partnership status through the break preserves the two-year holding period for Business Asset Disposal Relief, which is 14% in 2025/26 and rises to 18% from April 2026."
+  - "A salaried partner whose disguised salary drops below 80% of total reward for the year may fall outside Condition A and be treated as self-employed for that year."
 schema: ""
 faqs:
   - question: "Can a solicitor take an unpaid sabbatical and still be treated as employed for tax purposes?"

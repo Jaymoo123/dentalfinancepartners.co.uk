@@ -11,6 +11,12 @@ altText: "Two solicitors reviewing legal documents at a desk in a modern UK law 
 image: ""
 h1: "LLP vs Traditional Partnership for UK Law Firms: Which Structure Works Best for Solicitors?"
 summary: "A clear comparison of LLP and traditional partnership structures for UK law firms, covering liability protection, tax treatment, regulatory compliance, and practical considerations for solicitors considering a change."
+keyTakeaways:
+  - "A traditional partnership carries unlimited joint and several liability, while an LLP caps members' exposure to the firm's assets."
+  - "Both structures are tax-transparent, so equity partners are taxed identically on their profit share at personal rates."
+  - "The Salaried Member Rules (FA 2014) can reclassify fixed-share LLP members as employees, but never apply to traditional partners."
+  - "An LLP must file annual accounts and a confirmation statement at Companies House; a traditional partnership has no such filings."
+  - "Converting a partnership to an LLP is usually tax-neutral, but profit-share changes can trigger a goodwill disposal and CGT (BADR 14% in 2025/26, 18% from April 2026)."
 schema: ""
 faqs:
   - question: "Can a traditional partnership convert to an LLP without triggering a tax charge?"

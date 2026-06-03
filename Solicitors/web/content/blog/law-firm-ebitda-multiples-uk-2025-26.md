@@ -10,6 +10,12 @@ metaDescription: "UK law firm EBITDA multiples 2025/26 by firm type. Conveyancin
 altText: "Senior partners reviewing law firm EBITDA multiple analysis for sale planning"
 h1: "Law Firm EBITDA Multiples UK 2025/26: What's a Realistic Range?"
 summary: "UK law firm EBITDA multiples in 2025/26 range from 0.8x for conveyancing-heavy firms in soft markets to 3x+ for specialist firms with premium positioning. Most multi-partner firms sit at 1.2-2.0x normalised EBITDA. We cover the realistic ranges and what drives them."
+keyTakeaways:
+  - "Conveyancing-heavy firms sit at 0.8 to 1.5x normalised EBITDA, mid-market LLPs at 1.2 to 2.0x, and specialists at 2.0 to 3.0x or more."
+  - "Normalisation adjustments add roughly 10 to 25 percent to reported EBITDA, moving valuation more than the choice of multiple does."
+  - "The largest add-back replaces equity partner drawings with a market salary, typically £80,000 to £140,000 for the fee-earning role."
+  - "Key-person risk where one partner is essentially the firm typically caps the multiple at 1.0 to 1.3x even for a profitable practice."
+  - "The BADR rate rises from 14 to 18 percent on 6 April 2026, adding £40,000 of CGT per £1m of qualifying gain if you complete after."
 faqs:
   - question: "What's a typical UK law firm EBITDA multiple in 2025/26?"
     answer: "Wide range by firm type and market position. Conveyancing-heavy high-street firms: 0.8-1.5x normalised EBITDA (depressed post-2022 by market conditions). Mid-market mixed LLPs: 1.2-2.0x. Specialist firms (personal injury with strong CFA pipeline, niche commercial litigation, prestige private client, top-tier criminal): 2.0-3.0x+. Corporate acquirers paying for strategic fit sometimes pay above market multiples. A single 'UK law firm average multiple' doesn't really exist — the variance is the story."

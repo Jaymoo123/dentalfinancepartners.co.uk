@@ -11,7 +11,12 @@ altText: "UK solicitor reviewing law firm financial documents and due diligence 
 image: ""
 h1: "How to Conduct Financial Due Diligence When Buying a UK Law Firm"
 summary: "Buying a law firm requires more than a handshake. This guide walks solicitors through the financial due diligence process, from reviewing seller accounts and WIP to checking SRA compliance and partner tax liabilities."
-schema: ""
+keyTakeaways:
+  - "Request at least three years of full statutory accounts plus current-year management accounts; a single year's figures can hide a firm sliding toward insolvency."
+  - "Value WIP conservatively, discount items over six months old, and check the ratio: WIP above 25% of annual turnover suggests under-billing or dead matters."
+  - "Review the last three SRA accountant's reports and 12 months of client account reconciliations; a history of client account breaches is a major red flag."
+  - "A share purchase inherits the company's historical tax liabilities, while an asset purchase generally does not; structure and warranties matter."
+  - "Discount concentrated earnings: if one client or fee-earner generates over 40% of revenue, the firm is vulnerable, and budget for 10-20% client attrition."
 faqs:
   - question: "What is the most important document to request in a law firm due diligence?"
     answer: "The most important document is the last three years of full statutory accounts, including the profit and loss, balance sheet, and notes. These accounts show the firm's revenue trends, profit margins, and balance sheet strength. Without them, you cannot assess whether the asking price is fair. Management accounts for the current year are also essential to check for any recent deterioration in performance."

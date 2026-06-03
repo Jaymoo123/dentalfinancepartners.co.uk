@@ -5,128 +5,142 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/sra-acc
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
-metaTitle: "SRA Accounts Rules 2019: Key Rules for UK Solicitors"
-metaDescription: "Understand the SRA Accounts Rules 2019 for solicitors. Client account rules, reconciliation intervals, accountants report exemptions, and COFA duties explained."
+metaTitle: "SRA Accounts Rules 2019 Explained: A Guide for UK Solicitors"
+metaDescription: "A plain-English overview of the SRA Accounts Rules 2019: client account duties, the Rule 3.3 banking ban, five-weekly reconciliations, interest, and accountant's reports."
 altText: "UK solicitor reviewing SRA Accounts Rules compliance checklist at a law firm desk"
 image: ""
 h1: "What Are the SRA Accounts Rules and How Do They Affect UK Solicitors?"
-summary: "The SRA Accounts Rules 2019 govern how solicitors handle client money. They require separate client accounts, five-weekly reconciliations, and annual accountant reports unless exempt. This guide explains the core rules, common pitfalls, and compliance steps for UK law firms."
+summary: "The SRA Accounts Rules 2019 govern how solicitors in England and Wales handle client money. They require a separate client account, reconciliations at least every five weeks, a fair sum of interest, and an annual accountant's report unless the firm qualifies for the limited exemption. This guide gives a plain-English overview of the core rules, the duties that fall on the COFA, and the breaches the SRA sees most often."
+keyTakeaways:
+  - "The SRA Accounts Rules 2019 took effect on 25 November 2019 and require client money to be held in a separate, correctly named client account."
+  - "Rule 3.3 forbids using the client account as a bank, so every movement must relate to a regulated legal service you are delivering."
+  - "Rule 8.3 requires a three-way reconciliation at least every five weeks, signed off by the COFA or a manager."
+  - "An accountant's report is needed unless you meet the Rule 12.2 exemption: an average of £10,000 and a maximum of £250,000, or Legal Aid Agency money only."
+  - "Client account records must be kept for at least six years, and residual balances must be returned promptly under Rule 2.5."
 schema: ""
 faqs:
-  - question: "Do all solicitors need an accountants report under the SRA Accounts Rules?"
-    answer: "No. You are exempt if your firm held no more than £10,000 of client money at any time during the accounting period AND the average client money balance did not exceed £250. Even if exempt, you must keep records to prove you meet the criteria. If you hold any client money at all, check the thresholds carefully. Most conveyancing and litigation firms will need a report."
+  - question: "Do all solicitors need an accountant's report under the SRA Accounts Rules?"
+    answer: "No. Under Rule 12.2 you are exempt if either all the client money you held came only from the Legal Aid Agency, or the balance of client money you held did not exceed an average of £10,000 and a maximum of £250,000 across the accounting period. If you breach either limb of that test (the £10,000 average or the £250,000 peak), you need a report. Even when exempt, you must keep records to prove you meet the criteria. Most firms doing conveyancing or litigation will need a report. For the detail and worked examples, see our guide to the accountant's report exemption thresholds."
   - question: "What happens if I miss the five-week reconciliation deadline?"
-    answer: "Missing the deadline is a breach of Rule 8.3 of the SRA Accounts Rules 2019. You must report it to the SRA if it is serious or repeated. The SRA may require a qualified accountants report or take regulatory action. To avoid this, set a four-week reminder and designate a responsible person for each reconciliation."
+    answer: "Missing the interval is a breach of Rule 8.3 of the SRA Accounts Rules 2019, which requires a reconciliation of the bank statement, cash book and client ledger total at least every five weeks, signed off by the COFA or a manager. You must report a breach to the SRA where it is serious or part of a pattern. To stay clear of the limit, set an internal reminder shorter than five weeks and give one named person responsibility for each reconciliation."
   - question: "Can I use the client account to pay my firm's overheads?"
-    answer: "No. The client account is for client money only. You cannot pay office expenses, salaries, or tax from it. You must first transfer the money to the office account after billing the client. Mixing client and office money is a serious breach that can lead to SRA intervention."
+    answer: "No. The client account is for client money only, and Rule 3.3 forbids using it to provide banking facilities. You cannot pay office expenses, salaries or tax from it. Money is moved to the office account only once there is a proper reason, such as after you have delivered a bill. Mixing client and office money is a serious breach that can lead to SRA intervention."
   - question: "How long must I keep client account records?"
-    answer: "You must keep all client account records for at least six years after the matter is closed. This includes ledgers, bank statements, reconciliations, and transfer instructions. The SRA can request records from previous years during a compliance visit or investigation."
+    answer: "You must keep client account records for at least six years. This includes ledgers, bank statements, reconciliations and transfer instructions. The SRA can request records from previous years during a compliance visit or investigation, so a well-ordered compliance file is part of staying compliant."
 ---
 
 <h2>Introduction to the SRA Accounts Rules</h2>
 
-<p>The SRA Accounts Rules are the regulatory framework that governs how <strong>solicitors</strong> in England and Wales handle client money. They are set by the Solicitors Regulation Authority (SRA) and apply to every SRA-regulated law firm, from sole practitioners to large multi-partner LLPs. The current version came into effect on 25 November 2019, replacing the 2011 rules, and has been amended since.</p>
+<p>The SRA Accounts Rules are the regulatory framework that governs how <strong>solicitors</strong> in England and Wales handle client money. They are set by the Solicitors Regulation Authority (SRA) and apply to every SRA-regulated law firm, from sole practitioners to large multi-partner LLPs. The current version, the <strong>SRA Accounts Rules 2019</strong>, came into force on 25 November 2019, replacing the 2011 rules, and has been amended since.</p>
 
-<p>If you are a <strong>solicitor</strong>, a COFA, or a partner in a law firm, you need to understand these rules thoroughly. Non-compliance can lead to SRA intervention, fines, or even closure of your practice. This article explains the key requirements of the SRA Accounts Rules 2019, focusing on client account rules, reconciliation intervals, the accountants report, and common compliance issues.</p>
+<p>This article is the broad overview. If you are a <strong>solicitor</strong>, a COFA, or a partner in a law firm, it explains what the rules cover and how they affect day-to-day practice: the client account, the ban on using it as a bank, reconciliations, interest, and the accountant's report. Non-compliance can lead to SRA intervention, fines, or even closure of a practice, so the rules reward a clear understanding rather than guesswork. Where a topic has its own detailed page (such as the accountant's report exemption), we point you to it rather than repeat the full working here.</p>
 
-<p>For a deeper look at the practical steps, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules Essentials guide</a>.</p>
+<p>For hands-on help applying these rules, see our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a>.</p>
 
-<h2>Core Requirements of the SRA Accounts Rules 2019</h2>
+<h2>Core Principles of the SRA Accounts Rules 2019</h2>
 
-<p>The rules are built around a few fundamental principles. The most important is that client money must be kept separate from the firm's own money at all times. This is the bedrock of the <strong>client account rules</strong>.</p>
+<p>The 2019 rules are deliberately shorter and more principles-based than their predecessors. They are built around a simple idea: client money is not your money, and it must be kept safe and kept separate. Everything else (the account, the reconciliations, the report) exists to protect that principle.</p>
 
-<h3>Client Account Rules: Separation and Safeguarding</h3>
+<h3>What Counts as Client Money</h3>
 
-<p>Rule 2.1 of the SRA Accounts Rules 2019 states that client money must be held in a separate client bank account. This account cannot be used for the firm's own business transactions. The account must be designated as a client account, and the bank must be notified of its status. The firm must also ensure that client money is held on trust for the client, meaning the firm has no beneficial interest in those funds.</p>
+<p><strong>Rule 2.1</strong> defines client money. In broad terms it is money you hold or receive that relates to regulated services delivered to a client, money held on behalf of a third party, money held as a trustee or in another fiduciary capacity, and money held in respect of your fees and any unpaid disbursements before you have delivered a bill. If money falls within that definition, the rest of the rules apply to it.</p>
 
-<p>There are specific rules about what can and cannot be paid into a client account. For example, you can pay in client money, money held as a stakeholder, and money held for a client as a trustee. But you cannot pay in the firm's own money, except for a small sum to open the account or to correct a minor error.</p>
+<p>Knowing what is and is not client money matters, because the safeguards below attach to client money specifically. Mislabelling office money as client money, or the reverse, is where many breaches begin.</p>
 
-<p>When you withdraw client money, you must have the client's authorisation (usually in the form of a signed bill or written instruction). The withdrawal must be for a proper purpose, such as paying a disbursement or transferring to the firm's office account after billing.</p>
+<h3>The Separate Client Account</h3>
 
-<h3>Five-Weekly Reconciliation Requirement</h3>
+<p><strong>Rule 3</strong> requires client money to be held in a separate client account at a bank or building society in England and Wales. The account must be in the firm's name and include the word "client" in its title, and it must be kept distinct from the firm's own money. The point of the separate account is that client funds never sit alongside, and are never exposed to, the firm's own business risk.</p>
 
-<p>Rule 8.3 of the SRA Accounts Rules 2019 requires that you reconcile your client account at least every five weeks. This means comparing your client ledger balances with the bank statement balance. The reconciliation must be signed off by a principal of the firm (or someone authorised by them).</p>
+<p>There are limits on what can pass through the account. You pay in client money; you do not pay in the firm's own money, except a small sum to open or maintain the account, or to correct an error. When you withdraw client money you must have a proper reason for doing so, such as paying a disbursement on the client's behalf or transferring funds to the office account after you have billed.</p>
 
-<p>Many firms reconcile monthly, which is fine as long as the interval never exceeds five weeks. The reconciliation must cover all client accounts, including any designated deposit accounts. If you have multiple client accounts, each one must be reconciled separately.</p>
+<h3>No Banking Facilities (Rule 3.3)</h3>
 
-<p>Failure to reconcile within the five-week window is a common breach reported in SRA annual reports. It is often the first thing an SRA inspector checks during a compliance visit.</p>
+<p><strong>Rule 3.3</strong> contains one of the most frequently misunderstood duties. You must not use a client account to provide banking facilities to clients or third parties. Every payment into, and every transfer or withdrawal out of, a client account must be in respect of the delivery by your firm of regulated services. In practice this means you cannot route money through the client account simply because a client finds it convenient. If the movement of money is not tied to legal work you are actually doing, it does not belong in the client account, and the SRA treats this as a serious matter.</p>
 
-<h3>Client Money Interest: The Fairness Test</h3>
+<h3>Returning Client Money Promptly (Rule 2.5)</h3>
 
-<p>Under Rule 7.1, you must account to clients for interest earned on their money held in your client account. However, the rule applies a "fairness test". You only need to pay interest if it is fair to do so, considering the amount held and the length of time it was held. For small amounts held for short periods, you can retain the interest as part of your firm's policy.</p>
+<p><strong>Rule 2.5</strong> requires you to return client money promptly, to the client or the third party it is held for, as soon as there is no longer any proper reason to hold it. Residual balances left sitting in the client account long after a matter has closed are a common and avoidable breach. A periodic sweep of dormant balances should be part of every firm's routine.</p>
 
-<p>Many firms set a de minimis threshold, such as not paying interest on amounts under £500 held for less than 30 days. This must be documented in your firm's client care letters or terms of business. If you do retain interest, you must still account for it properly in your books.</p>
+<h3>Accounting for Interest (Rule 7)</h3>
 
-<h2>The SRA Accountants Report: Who Needs One and When</h2>
+<p>Under <strong>Rule 7</strong> you must account to clients, or the relevant third party, for a fair sum of interest on client money you hold on their behalf. The test is one of fairness, judged by the amount held and how long it was held, rather than a mechanical pass-through of every penny of bank interest. A firm may set out a reasonable interest policy and record it in its terms of business, provided the outcome is fair. Many firms apply a sensible de minimis approach for very small sums held for very short periods, documented in the client care letter.</p>
 
-<p>The accountants report is a formal document submitted to the SRA by a qualified accountant, confirming that your firm has complied with the SRA Accounts Rules during the reporting period. It is required under Rule 12.1 of the SRA Accounts Rules 2019.</p>
+<h3>Reconciliation At Least Every Five Weeks (Rule 8.3)</h3>
 
-<h3>When Is an Accountants Report Required?</h3>
+<p><strong>Rule 8.3</strong> requires a reconciliation of the client account at least every five weeks. The reconciliation must bring together the bank or building society statement balance, the cash book balance, and the client ledger total, and the record of it must be signed off by the <strong>COFA or a manager</strong> of the firm. Reconciling monthly is fine, as long as the interval never slips past five weeks. If you operate more than one client account, each must be reconciled. Late or missing reconciliations are among the breaches the SRA reports most often, and they are usually the first thing an inspector checks.</p>
 
-<p>You must submit an accountants report if your firm held client money during the reporting period. The reporting period is typically the firm's accounting year. The report must be submitted within six months of the end of the accounting period.</p>
+<h2>The SRA Accountant's Report: Who Needs One and When</h2>
 
-<p>There is an exemption under Rule 12.2. You do not need an accountants report if your firm held no more than £10,000 of client money at any time during the period AND the average client money balance did not exceed £250. This exemption is common for firms that do no conveyancing or litigation work. But if you hold any client money at all, you must check the thresholds carefully.</p>
+<p>The accountant's report is a formal document, prepared by a qualified accountant, confirming whether your firm has complied with the SRA Accounts Rules during the accounting period. The obligation sits in <strong>Rule 12.1</strong>: a firm that has held or received client money during the period must obtain an accountant's report within six months of the end of that period (and deliver it to the SRA within six months if it is qualified).</p>
 
-<p>Even if exempt, you must still keep records to demonstrate that you meet the exemption criteria. The SRA can request evidence at any time.</p>
+<h3>The Exemption (Rule 12.2)</h3>
+
+<p>Not every firm needs a report. Under <strong>Rule 12.2</strong> your firm is exempt if either of the following applies:</p>
+
+<ul>
+<li>all the client money you held or received during the period was money held only on behalf of the Legal Aid Agency; or</li>
+<li>the statement or passbook balance of the client money you held or received did not exceed <strong>an average of £10,000 and a maximum of £250,000</strong> during the accounting period.</li>
+</ul>
+
+<p>Both limbs of the balance test must be satisfied. If your average client money balance goes over £10,000, or your peak balance goes over £250,000 at any point, the exemption is lost and a report is required. Even where you are exempt, you must keep records that demonstrate you meet the criteria, because the SRA can ask to see them.</p>
+
+<p>This is the single point on which firms most often get the numbers wrong, so it is worth stating plainly: the <strong>£10,000 figure is the average limit</strong> and the <strong>£250,000 figure is the maximum</strong>. For worked examples of how the average and the peak are measured across an accounting period, and the practical traps in applying the test, see our dedicated guide to the <a href="/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds">SRA accountant's report exemption thresholds</a>.</p>
 
 <h3>What the Accountant Checks</h3>
 
-<p>The accountant will review your client account records, including ledgers, bank statements, reconciliations, and transfer records. They will check that client money was held separately, that withdrawals were properly authorised, and that reconciliations were done on time. They will also check that the firm's accounting systems are adequate.</p>
+<p>The reporting accountant reviews your client account records: ledgers, bank statements, reconciliations and transfer records. They check that client money was held separately, that withdrawals had a proper purpose, that reconciliations were carried out within the five-week interval, and that the firm's systems and records are adequate. If they identify a breach, they must record it. Material breaches may lead the SRA to require a qualified report or to take further action.</p>
 
-<p>If the accountant finds any breaches, they must report them in the accountants report. Material breaches may lead to the SRA requiring a qualified report or taking regulatory action.</p>
-
-<p>For support with preparing for an accountants report, see our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a>.</p>
+<p>For support preparing for a report, see our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a>.</p>
 
 <h2>COFA Responsibilities Under the SRA Accounts Rules</h2>
 
-<p>The COFA (Compliance Officer for Finance and Administration) is the person responsible for ensuring the firm complies with the SRA Accounts Rules. Every SRA-regulated firm must have a COFA, who must be a manager or employee of the firm. The COFA's duties are set out in the SRA Authorisation Rules.</p>
+<p>The COFA (Compliance Officer for Finance and Administration) is the person who carries primary responsibility for the firm's compliance with the SRA Accounts Rules. Every SRA-regulated firm must appoint a COFA, who must be a manager or employee of the firm. The role sits alongside the COLP (Compliance Officer for Legal Practice), and the underlying duties are framed in the SRA's authorisation rules.</p>
 
-<p>The COFA must ensure that the firm's financial systems are robust, that client money is properly safeguarded, and that all required reports (including the accountants report) are filed on time. The COFA must also report any serious breaches to the SRA promptly.</p>
-
-<p>If you are a COFA, you should have a thorough understanding of the SRA Accounts Rules 2019. You should also maintain a compliance file with all reconciliations, transfer records, and client account statements. The SRA can request this file at any time.</p>
-
-<p>For more on the COFA role, read our <a href="/solicitor-guides/cofa-fundamentals">COFA Fundamentals guide</a>.</p>
+<p>In practice the COFA makes sure the firm's financial systems are robust, that client money is safeguarded, that reconciliations are completed and signed off on time, and that any accountant's report is obtained when required. The COFA must also report serious breaches to the SRA promptly. A COFA should hold a working knowledge of the 2019 rules and maintain a compliance file (reconciliations, transfer records, client account statements) that can be produced on request.</p>
 
 <h2>Common Breaches and How to Avoid Them</h2>
 
-<p>The SRA publishes annual reports on the most common breaches of the Accounts Rules. Here are the top issues and how to avoid them.</p>
+<p>The breaches the SRA reports most frequently are rarely exotic. They are everyday lapses that a tidy system prevents.</p>
 
 <h3>Late or Missing Reconciliations</h3>
 
-<p>This is the most common breach. To avoid it, set a calendar reminder for every four weeks (not five, to give a buffer). Designate one person to be responsible for each reconciliation. If you are a sole practitioner, do the reconciliation yourself on a fixed day each month.</p>
+<p>This is the most common breach. To stay inside the Rule 8.3 limit, set an internal reminder shorter than five weeks to give yourself a buffer, and give one named person responsibility for each reconciliation. A sole practitioner should fix a regular day each month and treat it as non-negotiable.</p>
 
 <h3>Mixing Client and Office Money</h3>
 
-<p>Never pay office money into the client account. If you need to correct a small error, use a separate transfer from the office account. If you accidentally pay client money into the office account, transfer it immediately and record the correction.</p>
+<p>Never pay office money into the client account, and never use the client account to settle the firm's own costs. If client money lands in the office account in error, move it back at once and record the correction. Keeping the two streams strictly separate is the heart of the rules.</p>
 
-<h3>Failure to Pay Interest</h3>
+<h3>Using the Client Account as a Bank</h3>
 
-<p>Document your firm's interest policy clearly. If you retain interest on small amounts, ensure your client care letters explain this. Review the policy annually to ensure it remains fair.</p>
+<p>Routing funds through the client account for a client's convenience, with no link to legal work you are doing, breaches Rule 3.3. If you cannot point to the regulated service the payment relates to, it should not pass through the client account.</p>
+
+<h3>Residual Balances Left Unreturned</h3>
+
+<p>Small balances left on closed matters breach the Rule 2.5 duty to return client money promptly. Build a periodic review of dormant balances into your routine so funds are returned, or properly dealt with, without delay.</p>
 
 <h3>Inadequate Records</h3>
 
-<p>Keep all client account records for at least six years after the matter is closed. This includes ledgers, bank statements, reconciliations, and transfer instructions. The SRA can request records from previous years.</p>
+<p>Keep all client account records for at least six years. This includes ledgers, bank statements, reconciliations and transfer instructions. The SRA can ask for records from earlier years, and a complete file is the simplest way to demonstrate compliance.</p>
 
-<h2>Practical Steps for Compliance</h2>
+<h2>A Practical Compliance Checklist</h2>
 
-<p>Here is a checklist for staying compliant with the SRA Accounts Rules 2019.</p>
+<p>Pulling the rules together, here is an overview checklist for staying compliant with the SRA Accounts Rules 2019.</p>
 
 <ul>
-<li>Maintain a separate client bank account at all times.</li>
-<li>Reconcile the client account at least every five weeks.</li>
-<li>Keep a compliance file with all reconciliations and transfer records.</li>
-<li>Submit the accountants report within six months of the year-end (if required).</li>
-<li>Document your client money interest policy.</li>
-<li>Train all fee-earners on the client account rules.</li>
-<li>Review your SRA Accounts Rules compliance annually with your accountant.</li>
+<li>Hold client money in a separate, correctly named client account at all times (Rule 3).</li>
+<li>Never use the client account to provide banking facilities (Rule 3.3).</li>
+<li>Reconcile every client account at least every five weeks, signed off by the COFA or a manager (Rule 8.3).</li>
+<li>Return client money promptly once there is no proper reason to hold it (Rule 2.5).</li>
+<li>Account to clients for a fair sum of interest and document your interest policy (Rule 7).</li>
+<li>Obtain an accountant's report within six months of the period end, unless you qualify for the Rule 12.2 exemption (average £10,000 and maximum £250,000, or Legal Aid Agency money only).</li>
+<li>Keep a complete compliance file and retain records for at least six years.</li>
+<li>Train every fee-earner on the client account rules and review compliance regularly with a legal-sector accountant.</li>
 </ul>
 
-<p>If you need help with any of these steps, our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can assist.</p>
+<p>If you need help with any of these steps, our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a> can assist.</p>
 
 <h2>Conclusion</h2>
 
-<p>The SRA Accounts Rules 2019 are not optional. They are a regulatory requirement that protects client money and maintains trust in the legal profession. Every solicitor and law firm must understand the client account rules, the five-weekly reconciliation requirement, and the accountants report obligations.</p>
+<p>The SRA Accounts Rules 2019 are not optional. They are a regulatory requirement that protects client money and underpins trust in the legal profession. Every solicitor and firm should understand the separate client account, the Rule 3.3 banking prohibition, the five-weekly reconciliation, the duty to account for interest, and the accountant's report obligation.</p>
 
-<p>If you are a COFA or a partner, make compliance a priority. Regular reviews with a legal-sector-specialist accountant can catch issues before they become breaches. The cost of non-compliance far outweighs the effort of getting it right.</p>
-
-<p>For a full review of your firm's compliance with the SRA Accounts Rules, speak to a specialist solicitor accountant. We can help you prepare for your accountants report, set up robust systems, and avoid common pitfalls. <a href="/contact">Contact us</a> for a confidential discussion.</p>
+<p>If you are a COFA or a partner, treat compliance as routine rather than a year-end scramble. Regular reviews with a legal-sector-specialist accountant catch issues before they become breaches. For a review of your firm's compliance, or help preparing for an accountant's report, <a href="/contact">contact us</a> for a confidential discussion.</p>

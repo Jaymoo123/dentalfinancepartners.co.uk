@@ -11,6 +11,12 @@ altText: "UK law firm partner reviewing monthly management accounts in a modern 
 image: ""
 h1: "How Should a UK Law Firm Structure Its Monthly Management Accounts for Partner Decision-Making?"
 summary: "Monthly management accounts are a critical tool for law firm partners to monitor profitability, cash flow, and fee-earner performance. This guide explains how to structure them for actionable insight, not just compliance."
+keyTakeaways:
+  - "Management accounts are forward-looking internal tools, distinct from the historical statutory accounts filed with HMRC and the SRA."
+  - "Produce them monthly for any firm with more than one partner, ready within 10 working days of month end."
+  - "A good pack has four parts: P&L with budget variance, a lockup-focused balance sheet, a cash summary, and a fee-earner dashboard."
+  - "Track five KPIs: lockup days (target under 90), net profit margin (25 to 35%), utilisation (75 to 85%), realisation (90%+), and drawings vs profit share."
+  - "Use accruals not cash basis, value WIP at expected billing, and reconcile partner capital accounts every month."
 schema: ""
 faqs:
   - question: "What is the difference between management accounts and statutory accounts for a law firm?"

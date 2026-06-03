@@ -11,6 +11,12 @@ altText: "UK solicitors reviewing law firm valuation documents in professional o
 image: ""
 h1: "Law Firm Valuation: A Complete Guide for UK Solicitors"
 summary: "Understanding law firm valuation is crucial for practice succession planning, partner buyouts, and practice sales. This guide covers the key valuation methods and factors that determine your firm's worth."
+keyTakeaways:
+  - "UK law firms typically achieve 1.5 to 4 times annual net profit, with niche specialists commanding the higher multiples."
+  - "Revenue-based methods apply roughly 0.5 to 1.5 times annual gross fees, used mainly for practices with consistent recurring income."
+  - "Client concentration is a major risk: where one client exceeds 20 percent of revenue, valuers apply a meaningful discount."
+  - "Founder dependence, volatile earnings and extended lock-up reduce value, while strong systems and multiple fee earners raise it."
+  - "The SRA must approve a practice sale, checking the buyer's fitness to hold client money, typically taking 6 to 8 weeks."
 schema: ""
 faqs:
   - question: "How often should I get my law firm valued?"

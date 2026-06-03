@@ -10,6 +10,12 @@ metaDescription: "What it costs to start a UK law firm in 2025/26. SRA authorisa
 altText: "Newly-qualified solicitor planning a new UK law firm setup"
 h1: "How Much Does It Cost to Start a Law Firm in the UK in 2025/26?"
 summary: "Starting a UK law firm in 2025/26 typically costs £15,000-£35,000 in upfront setup plus 6-12 months of working capital. Total realistic first-year cash requirement: £40,000-£100,000 for a sole practitioner, £80,000-£250,000 for a small partnership."
+keyTakeaways:
+  - "Upfront setup runs £15,000 to £35,000, but the realistic first-year cash need is £40,000 to £100,000 for a sole practitioner."
+  - "PII is the largest recurring cost, from £4,000 for private-client work to £18,000 or more for conveyancing-focused start-ups."
+  - "Year-1 SRA fees are £2,260 for a sole practitioner, including the £1,540 Recognised Body application fee and £307 practising certificates."
+  - "Most new firms run out of cash in month 8 to 10 because the cash conversion cycle is slower than budgeted."
+  - "Model your specific working capital before launch, not after, to avoid closing inside year 2."
 faqs:
   - question: "Do I need to be a solicitor to start a UK law firm?"
     answer: "To start a traditional SRA-regulated Recognised Body, all owners and managers must be solicitors (or other approved legal professionals). To start an Alternative Business Structure (ABS), non-solicitors can own or manage the firm with SRA approval. ABS licence applications take 3 to 6 months and have higher application fees. For most start-ups, the Recognised Body route is faster and cheaper."

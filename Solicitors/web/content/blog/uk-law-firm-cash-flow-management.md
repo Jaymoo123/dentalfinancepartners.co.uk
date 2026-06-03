@@ -11,6 +11,12 @@ altText: "UK law firm partner reviewing cash flow forecast on a tablet in a mode
 image: ""
 h1: "How Can a UK Law Firm Improve Cash Flow Without Taking on External Debt?"
 summary: "Cash flow pressure is a common challenge for UK law firms, especially those handling long-running litigation or conveyancing. This article explains how solicitors and partners can improve liquidity without external borrowing, using better WIP funding, client account discipline, and cash flow forecasting."
+keyTakeaways:
+  - "A firm can be profitable on paper yet short of cash because bills are collected months after the work is done."
+  - "A rolling cash flow forecast covering at least 12 weeks lets you spot shortfalls early and accelerate billing or delay payments."
+  - "Interim billing, billing on account for disbursements, and faster payment terms cut WIP lock-up without taking on debt."
+  - "A total lock-up target of 60 to 75 days is reasonable; over 90 days signals a structural cash flow problem."
+  - "Link partner drawings to realised cash rather than budgeted profit to avoid draining the office account before VAT and payroll fall due."
 schema: ""
 faqs:
   - question: "Can a law firm use client account money to pay office bills?"

@@ -10,7 +10,12 @@ altText: "UK solicitor reviewing client money accounting records and SRA complia
 image: ""
 h1: "Client Money Accounting for Solicitors: Essential SRA Compliance Guide"
 summary: "Essential guide covering SRA Accounts Rules compliance for client money handling, trust accounting requirements, and practical steps to avoid regulatory breaches."
-schema: ""
+keyTakeaways:
+  - "Client money is any money you hold that does not belong to your firm and must be kept in a separate, designated client account at all times."
+  - "Mixing client and practice money breaches the SRA Accounts Rules and can trigger intervention, fines and restriction of your practising certificate."
+  - "Reconcile client accounts monthly, comparing client ledger balances to bank statements and investigating every difference."
+  - "Pay interest on client money over 500 pounds held for more than 8 weeks, at a reasonable rate (typically base rate minus 2%), per your terms of business."
+  - "Keep client cash accounts, ledgers and reconciliation records for at least six years, available for SRA inspection."
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/client-money-accounting-solicitors"
 faqs:
   - question: "What happens if I mix client money with practice money?"

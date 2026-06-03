@@ -10,6 +10,12 @@ altText: "Professional meeting discussing finance options for UK solicitor pract
 image: ""
 h1: "Solicitor Practice Finance Options: A Comprehensive Guide for UK Law Firms"
 summary: "UK law firms have numerous financing options beyond traditional bank loans, from asset-based lending to litigation funding. Understanding the pros and cons of each option helps you choose the right funding mix for your practice's specific needs and growth plans."
+keyTakeaways:
+  - "Bank term loans and overdrafts remain the foundation of legal sector funding, with overdraft rates typically 2% to 5% above base."
+  - "Invoice discounting advances 70-85% of outstanding invoices within 24 hours, unlocking working capital without alerting clients."
+  - "Litigation funders back high-value cases (often £1 million plus) for success fees of 25-50% of recovered damages."
+  - "The SRA requires firms to notify it of borrowing above set thresholds, and client money can never be used as security for practice borrowing."
+  - "Reducing lock-up improves cash flow without external finance: cutting debtor days from 90 to 60 frees 30 days of working capital."
 schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-finance-options"
 faqs:

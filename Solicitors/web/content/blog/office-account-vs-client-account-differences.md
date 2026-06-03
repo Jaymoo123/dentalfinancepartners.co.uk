@@ -11,6 +11,12 @@ altText: "Solicitor reviewing office account and client account bank statements 
 image: ""
 h1: "Office Account vs Client Account: What Every UK Solicitor Must Know About the SRA Split"
 summary: "A clear comparison of office account and client account under the SRA Accounts Rules. Covers the legal basis for the split, common classification errors, and practical compliance steps for solicitors and COFAs."
+keyTakeaways:
+  - "Rule 2.1 requires client money to be held in a designated client account from receipt, with no temporary holding in the office account."
+  - "Advance fees and deposits stay client money until the firm delivers a bill, after which the billed amount can move to office account."
+  - "You can pool all client money in one account but must keep a separate client ledger for each client or matter under Rule 8.1."
+  - "The client account must be reconciled at least every five weeks (Rule 8.3) and pay fair interest to clients where appropriate (Rule 7.1)."
+  - "Serious or systemic failures to separate client and office money can trigger SRA fines of up to £25,000 and conditions on the practising certificate."
 schema: ""
 faqs:
   - question: "Can a solicitor hold client money in an office account temporarily?"

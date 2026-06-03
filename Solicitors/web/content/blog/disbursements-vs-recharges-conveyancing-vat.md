@@ -11,6 +11,12 @@ altText: "Solicitor reviewing conveyancing file with VAT disbursement notes on d
 image: ""
 h1: "How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?"
 summary: "A practical guide for UK solicitors on distinguishing agency disbursements from principal disbursements in conveyancing transactions, with worked examples and HMRC compliance requirements."
+keyTakeaways:
+  - "An agency disbursement carries no VAT because the supply is to the client; a principal disbursement does, because the solicitor is the customer."
+  - "SDLT, Land Registry fees, and most search fees are agency disbursements with no VAT added on the recharge to the client."
+  - "Panel manager fees, indemnity insurance arranged in the firm's name, courier and photocopying costs are principal recharges that carry 20% VAT."
+  - "Itemise every agency disbursement separately on the invoice, or HMRC may treat the whole amount as a principal recharge subject to VAT."
+  - "Treating a principal disbursement as agency under-declares output VAT, which HMRC can assess with interest and penalties up to 30% for carelessness."
 schema: ""
 faqs:
   - question: "Is SDLT subject to VAT when recharged to the client?"

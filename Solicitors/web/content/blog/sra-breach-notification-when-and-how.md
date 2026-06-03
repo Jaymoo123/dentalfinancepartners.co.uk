@@ -11,6 +11,12 @@ altText: "Solicitor reviewing SRA breach notification form at desk in UK law fir
 image: ""
 h1: "SRA Breach Notification: When and How Must a Solicitor Report a Breach?"
 summary: "SRA breach notification is a mandatory compliance duty for solicitors and law firms. This guide explains when a breach must be reported, what counts as material, and how the COLP or COFA should manage the process."
+keyTakeaways:
+  - "Only material breaches must be reported to the SRA, and notification must be made promptly under Accounts Rule 8.5."
+  - "A breach is material if it involves significant client money, systemic control failure, client loss, dishonesty, or is persistent."
+  - "Serious breaches involving dishonesty or client loss need immediate notification; other material breaches within 7 to 14 days."
+  - "The COLP and COFA are jointly responsible; in a sole practice the individual solicitor holds both roles."
+  - "Failing to report a material breach is itself a serious breach that can lead to fines or tribunal referral."
 schema: ""
 faqs:
   - question: "Do I need to report every client account error to the SRA?"

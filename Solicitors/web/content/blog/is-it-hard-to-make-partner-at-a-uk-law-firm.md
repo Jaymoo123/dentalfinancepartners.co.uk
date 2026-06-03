@@ -10,6 +10,12 @@ metaDescription: "How hard is it to make partner at a UK law firm? Magic Circle 
 altText: "Senior associate solicitor discussing partnership track with mentor"
 h1: "Is It Hard to Make Partner at a UK Law Firm in 2025/26?"
 summary: "Making partner at a UK law firm depends heavily on the firm tier. Magic Circle: ~1-in-12 trainees become partner (8-10 years). Mid-tier City: ~1-in-6. Regional and high-street: ~1-in-3. We cover realistic odds, timeline, and the financial reality at each step."
+keyTakeaways:
+  - "Partnership odds vary sharply by tier: roughly 7 to 10 percent of Magic Circle trainees make equity partner versus 25 to 40 percent at regional firms."
+  - "Typical time to partnership is 8 to 11 years at the Magic Circle and 5 to 8 years at regional and high-street firms."
+  - "Firms weigh technical excellence, business development capacity and management readiness; billable-hour skill alone rarely wins partnership."
+  - "Buy-in capital ranges from £15,000 at small firms to £300,000 or more at the Magic Circle, usually loan-financed with qualifying interest relief."
+  - "Most new partners take a small cash-flow step backwards in year 1 before profit share scales up over years 2 to 4."
 faqs:
   - question: "What percentage of solicitors make partner at UK law firms?"
     answer: "Heavily depends on firm tier. Magic Circle: roughly 7-10% of joining trainees eventually make equity partner at the firm, with 8-11 years typical to partnership. Silver Circle and elite mid-tier City: roughly 12-18% over 7-10 years. National firms: 15-25% over 6-9 years. Regional and high-street firms: 25-40% over 5-8 years. Smaller firms have higher partnership conversion because the partnership economics are simpler and the entry capital is smaller."
@@ -158,7 +164,7 @@ faqs:
 
 <h3>The buy-in capital</h3>
 
-<p>£15,000 at small high-street firms up to £300,000+ at Magic Circle. Most equity partners loan-finance, attracting qualifying loan interest relief under ITA 2007 s.398. See our <a href="/blog/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership">buy-in cost guide</a> for the full breakdown.</p>
+<p>£15,000 at small high-street firms up to £300,000+ at Magic Circle. Most equity partners loan-finance, attracting qualifying loan interest relief under ITA 2007 s.398. See our <a href="/blog/partnership-llp-structure/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership">buy-in cost guide</a> for the full breakdown.</p>
 
 <h3>The tax transition</h3>
 
@@ -192,7 +198,7 @@ faqs:
 
 <h3>Starting your own firm</h3>
 
-<p>Some senior associates leave to start their own practice rather than wait for internal partnership. Sole practitioner or small partnership can be set up within 6-12 months. Capital requirement £15k-£35k upfront plus 6-12 months of working capital — see our <a href="/blog/how-much-does-it-cost-to-start-a-law-firm-uk">cost to start a law firm guide</a>. Higher autonomy and upside; higher risk and stress.</p>
+<p>Some senior associates leave to start their own practice rather than wait for internal partnership. Sole practitioner or small partnership can be set up within 6-12 months. Capital requirement £15k-£35k upfront plus 6-12 months of working capital — see our <a href="/blog/firm-acquisition-merger/how-much-does-it-cost-to-start-a-law-firm-uk">cost to start a law firm guide</a>. Higher autonomy and upside; higher risk and stress.</p>
 
 <h3>Going in-house</h3>
 

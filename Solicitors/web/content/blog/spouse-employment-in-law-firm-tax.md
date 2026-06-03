@@ -11,6 +11,12 @@ altText: "UK law firm partner reviewing accounts with spouse employee in a moder
 image: ""
 h1: "How Can a Law Firm Employ a Spouse Tax-Efficiently Under the Wholly and Exclusively Rule?"
 summary: "Employing a spouse in a law firm can be tax-efficient, but HMRC scrutinises family arrangements closely. The salary must pass the wholly and exclusively test and be at a genuine market rate for the work done. This guide explains the rules for solicitors and law firm partners."
+keyTakeaways:
+  - "A spouse's salary is only deductible if it passes the wholly and exclusively test under s.34 ITTOIA 2005, meaning genuine work must be performed."
+  - "Pay no more than the market rate for the role and location, or HMRC disallows the excess as a disguised profit distribution."
+  - "Document the arrangement with a written contract, timesheets, and payroll payments from the office account, never the client account."
+  - "Paying a spouse purely to shift income can be caught by the settlements legislation (ITTOIA 2005 s.624-628), reallocating it back to the partner."
+  - "If the spouse is an LLP member meeting all three Salaried Member Rules conditions, PAYE and employer NIC apply to their drawings."
 schema: ""
 faqs:
   - question: "Can I pay my spouse a salary if they do no work for the law firm?"

@@ -10,6 +10,12 @@ metaDescription: "Difference between LLP and partnership for UK law firms 2025/2
 altText: "UK solicitors comparing LLP and partnership structure documents"
 h1: "What's the Difference Between an LLP and a Partnership for UK Solicitors?"
 summary: "An LLP gives UK law firm members limited liability for the firm's debts while preserving the tax-transparent treatment of a general partnership. Both are taxed identically; the LLP adds Companies House filing and separate legal personality. For most multi-partner firms, LLP wins."
+keyTakeaways:
+  - "An LLP caps each member's liability at their capital contribution plus any guarantees, while general partners face unlimited joint and several liability."
+  - "Both structures are tax-transparent and taxed identically: members pay personal income tax plus Class 4 NIC on their profit share, with no corporation tax."
+  - "The FA 2014 Salaried Member Rules apply only to LLP members and can deem fixed-share members as employees unless one of the three conditions is broken."
+  - "Converting a general partnership to an LLP is generally tax-neutral, takes three to six months, and adds Companies House accounts filing."
+  - "For most multi-partner firms with meaningful liability exposure, the LLP is the right structure despite the public disclosure cost."
 faqs:
   - question: "Are LLPs and partnerships taxed differently in the UK?"
     answer: "No, the tax treatment is functionally identical for income tax purposes. Both LLPs and general partnerships are tax-transparent: each member or partner is taxed personally on their share of profit at personal income tax rates plus Class 4 National Insurance. Neither entity pays corporation tax. The LLP files an SA800 partnership tax return showing total profit and allocation between members; each member files their personal self-assessment with their share."

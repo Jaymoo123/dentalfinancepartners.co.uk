@@ -19,28 +19,77 @@ HARD = 404 (no file, or wrong category, or unknown flat slug, or unknown city).
 SOFT = resolves via a 301 hop (works, but a direct link is cleaner; a 301 that
        points back to the SAME page is a self-loop worth removing).
 """
+import json
 import re
 import pathlib
 import sys
 
 ROOT = pathlib.Path(".")
-BLOG = ROOT / "Property/web/content/blog"
-MW = (ROOT / "Property/web/src/middleware.ts").read_text(encoding="utf-8")
 
-VALID_LOCATIONS = {"london", "manchester", "birmingham", "leeds", "bristol"}
+
+def _arg_site() -> str:
+    """--site <key> selects which site's corpus + routes to audit (default property)."""
+    if "--site" in sys.argv:
+        i = sys.argv.index("--site")
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    return "property"
+
+
+SITE = _arg_site()
+
+
+def _load_site_cfg(site: str) -> dict:
+    p = ROOT / "sites" / f"{site}.json"
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    if site == "property":
+        return {"paths": {"blogContentDir": "Property/web/content/blog",
+                          "buildDir": "Property/web",
+                          "siteConfigJson": "Property/niche.config.json"}}
+    raise FileNotFoundError(f"Site config missing: {p}")
+
+
+_CFG = _load_site_cfg(SITE)
+BLOG = ROOT / _CFG["paths"]["blogContentDir"]
+_MW_PATH = ROOT / _CFG["paths"]["buildDir"] / "src" / "middleware.ts"
+MW = _MW_PATH.read_text(encoding="utf-8") if _MW_PATH.exists() else ""
+
+
+def _valid_locations(cfg: dict) -> set:
+    """Location slugs that render = the site's niche.config locations[].slug."""
+    try:
+        nc = json.loads((ROOT / cfg["paths"]["siteConfigJson"]).read_text(encoding="utf-8"))
+        locs = {str(l.get("slug", "")).strip().lower() for l in nc.get("locations", []) if l.get("slug")}
+        if locs:
+            return locs
+    except Exception:
+        pass
+    return {"london", "manchester", "birmingham", "leeds", "bristol"}
+
+
+VALID_LOCATIONS = _valid_locations(_CFG)
 
 
 def slugify_category(c: str) -> str:
+    # Mirror the Next route's slugifyCategory (web/src/lib/blog.ts): lowercase,
+    # REMOVE "&" (not -> "and"), spaces -> hyphens, strip any non-alphanumeric/
+    # hyphen char (commas, parens, slashes), collapse repeats, trim. Previously
+    # this did `&` -> "and", which disagreed with the route for every category
+    # containing "&" (e.g. "VAT & Compliance"), giving false 404s on solicitors/
+    # dentists. Now matches the route exactly.
     c = c.lower()
-    c = re.sub(r"[()]", "", c)
-    c = c.replace("&", "and")
+    c = c.replace("&", "")
     c = re.sub(r"\s+", "-", c)
+    c = re.sub(r"[^a-z0-9-]", "", c)
     c = re.sub(r"-{2,}", "-", c)
-    return c.strip()
+    return c.strip("-")
 
 
 def extract_map_keys(name: str):
     m = re.search(r"const " + name + r":[^=]*=\s*\{(.*?)\n\};", MW, re.S)
+    if not m:
+        return {}  # site has no such redirect map (e.g. newer site / no middleware)
     body = m.group(1)
     return dict(re.findall(r'"([^"]+)"\s*:\s*"([^"]+)"', body))
 

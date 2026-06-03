@@ -10,6 +10,12 @@ metaDescription: "UK newly qualified solicitor salary 2025/26 by firm type. Magi
 altText: "Newly qualified solicitor reviewing the first NQ compensation offer letter"
 h1: "Newly Qualified Solicitor Salary UK 2025/26: Full Breakdown by Firm Type"
 summary: "UK newly qualified solicitor (NQ) salaries in 2025/26 range from £35,000 at small high-street firms to £180,000+ at US firms in London. Magic Circle sits at £125,000-£150,000. We cover the full range, take-home after tax, and the trade-offs each tier involves."
+keyTakeaways:
+  - "NQ salaries span roughly £35,000 at high-street firms to over £180,000 at US firms in London, with Magic Circle at £125,000 to £150,000."
+  - "On a £125,000 Magic Circle salary, net take-home is around £67,958 a year after tax, NI, 5% pension and Plan 2 student loan."
+  - "Between £100,000 and £125,140 the personal allowance tapers away, creating a roughly 60% effective marginal tax rate."
+  - "Pension contributions are the most valuable planning move, saving 40% or 45% tax and able to restore the personal allowance below £100,000."
+  - "Top London salaries reflect higher revenue per fee-earner and a 2,000+ billable-hours expectation, versus 1,200 to 1,500 at regional firms."
 faqs:
   - question: "What is a newly qualified solicitor salary in the UK in 2025/26?"
     answer: "Depends entirely on firm type. Magic Circle (Allen & Overy / Shearman, Clifford Chance, Freshfields, Linklaters, Slaughter and May): £125,000-£150,000. US firms in London (Kirkland & Ellis, Latham, Sullivan & Cromwell): £150,000-£180,000+. Silver Circle and mid-tier City: £105,000-£135,000. National firm London office: £85,000-£105,000. National firm regional office: £55,000-£75,000. Mid-market regional independent: £45,000-£70,000. High-street firm: £35,000-£55,000. In-house and government: £45,000-£65,000."

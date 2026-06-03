@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing MTD for VAT compliance on a laptop with account
 image: ""
 h1: "How Does MTD for VAT Apply to a Law Firm? A Compliance Guide for Solicitors"
 summary: "Making Tax Digital for VAT (MTD for VAT) is mandatory for all VAT-registered law firms. This guide explains the software requirements, bridging tools, and how solicitors can ensure compliance with HMRC's digital record-keeping rules."
+keyTakeaways:
+  - "Since April 2022, MTD for VAT applies to every VAT-registered law firm, including voluntary registrants, with no turnover floor."
+  - "Returns must be filed through functional compatible software such as Xero or QuickBooks, or via bridging software linked to an Excel system."
+  - "Disbursements paid to a third party and recharged at cost are outside the scope of VAT, while professional fees are standard-rated at 20%."
+  - "Late submissions sit in HMRC's points-based regime, with a £200 penalty once you reach 5 points for quarterly filing."
+  - "Client account movements are not VAT events, so the digital records must keep client money separate from the firm's VAT figures."
 schema: ""
 faqs:
   - question: "Can a law firm use Excel spreadsheets for MTD for VAT?"
