@@ -5,174 +5,150 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-tax-return"
 date: "2026-04-01"
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
-metaTitle: "GP Tax Return 2026/27: Filing Guide for UK GPs"
-metaDescription: "GP partners must file self-assessment; salaried GPs may need to as well. Deadlines, partnership returns, and medical-specific filing tips for 2026/27."
-altText: "UK GP reviewing tax documents and self-assessment forms at desk"
+metaTitle: "GP Tax Return 2026/27: SA800, SA104 and SA103 Filing Guide"
+metaDescription: "Which self-assessment forms a GP files by role (SA800, SA104, SA103, SA100), the 31 January deadline, payments on account, Class 4 NIC and MTD for 2026/27."
+altText: "UK GP reviewing self-assessment tax return forms and partnership statement at desk"
 image: ""
 h1: "GP Tax Return: Complete Guide for UK General Practitioners"
-summary: "A comprehensive guide covering GP tax return requirements, including self-assessment deadlines, partnership returns, and specific considerations for UK general practitioners."
+summary: "How GPs file self-assessment by role: the partnership SA800, the SA104 partnership pages, the SA103 self-employment pages and the SA100, plus deadlines, payments on account, Class 4 NIC and Making Tax Digital for 2026/27."
 schema: ""
 faqs:
-  - question: "When should I start looking for an accountant for my tax return?"
-    answer: "Start looking by October/November for the following year's return. Good medical accountants get busy between December and January, so early contact ensures better availability. This also allows time for proper onboarding and year-end tax planning before the 31st January deadline."
-  - question: "Do I need a specialist medical accountant for my tax return?"
-    answer: "Yes, if you have GP partnership income, mixed NHS/private work, significant NHS pension contributions, or earn over £100k. Medical professionals face unique tax challenges including tapered annual allowances, basis period reforms, and professional expense classifications that generic accountants often handle incorrectly."
-  - question: "What expenses can I claim on my GP tax return?"
-    answer: "GP partners can claim their share of practice expenses plus personal professional costs. This includes GMC fees, medical defence subscriptions, BMA membership, training courses, medical journals, conference fees, and business travel. Salaried GPs can claim professional expenses if completing a tax return."
-  - question: "How do NHS pension contributions affect my GP tax return?"
-    answer: "NHS pension contributions are automatically deducted from NHS income with tax relief applied at source. However, you may need to claim additional relief for voluntary contributions or declare annual allowance charges if your pension growth exceeds £60,000 (or your tapered allowance limit)."
-  - question: "How much does an accountant charge for a medical professional's tax return?"
-    answer: "Fees typically range from £400-600 for simple employed doctors to £1,000-1,500 for complex situations involving GP partnerships, multiple income sources, or private practice income. The exact cost depends on your income complexity, number of sources, and additional services like tax planning advice."
+  - question: "Which self-assessment forms does a GP partner file?"
+    answer: "The practice files one partnership return (SA800) reporting total practice profit and each partner's profit share. Each partner then files a personal SA100 with the partnership pages (SA104) attached, where their share of profit is taxed as trading income with Class 4 NIC. Partners are taxed on their profit share, not their drawings, so your tax can differ from the cash you actually took out during the year."
+  - question: "Do salaried GPs and locums need to file a tax return?"
+    answer: "A salaried GP taxed under PAYE on NHS pay alone usually does not, unless they have other reportable income or hit a HMRC trigger (for example income over £100,000, or untaxed private or locum work above £1,000). A freelance GP locum is normally a sole trader and files the self-employment pages (SA103) with their SA100. A locum working through their own limited company files a personal return for any salary and dividends, while the company files its own corporation tax return."
+  - question: "When are the GP tax return deadlines and payments on account?"
+    answer: "For 2025/26 the online filing and payment deadline is 31 January 2027 (paper returns were due by 31 October 2026). If your prior-year bill exceeded £1,000 and less than 80% was collected at source, you also make two payments on account, each 50% of the prior year's liability, due 31 January and 31 July, with any balancing payment due the following 31 January."
+  - question: "What National Insurance does a GP partner or locum pay?"
+    answer: "Self-employed GP partners and sole-trader locums pay Class 4 NIC at 6% on profits between £12,570 and £50,270 and 2% above £50,270 (the main rate fell from 9% to 6% on 6 April 2024). Class 2 is no longer a required weekly payment from 6 April 2024: where profits are at or above the Small Profits Threshold you are treated as having paid it and keep your state-pension entitlement."
+  - question: "Does Making Tax Digital affect my GP tax return?"
+    answer: "Making Tax Digital for Income Tax began on 6 April 2026 for sole traders and landlords with qualifying income over £50,000 (falling to £30,000 from April 2027 and £20,000 from April 2028). Most full-time locums and unincorporated private GPs are caught from April 2026 and must keep digital records and send quarterly updates. General partnerships are deferred with no confirmed date, and limited companies are outside MTD for Income Tax entirely."
 ---
 
-<p>Every GP in the UK faces specific tax return obligations that differ from employed professionals. Whether you're a GP partner, salaried GP with additional income, or working locum shifts, understanding your <strong>GP tax return</strong> requirements is essential for staying compliant with HMRC.</p>
+<p>Every GP in the UK has self-assessment obligations that depend on how they work, and the single most common filing mistake is using the wrong combination of forms for the role. A GP partner, a salaried GP, a freelance locum and a GP working through a limited company each report in a different way. This guide sets out which <strong>GP tax return</strong> forms apply to each role, the 2026/27 deadlines, how payments on account work, the Class 4 National Insurance position and what Making Tax Digital now means for you.</p>
 
-<p>This guide covers everything you need to know about filing your GP tax return, from partnership obligations to self-assessment deadlines.</p>
+<p>This is general information for UK general practitioners, not personal advice. Figures are stated for the 2026/27 tax year and tagged where they changed.</p>
+
+<h2>Which GP Tax Return Forms Apply to You?</h2>
+
+<p>HMRC self-assessment is built from a core return (the <strong>SA100</strong>) plus supplementary pages for each type of income. The right pages follow the substance of how you work, not the job title:</p>
+
+<ul>
+<li><strong>GP partner</strong> is self-employed. The practice files a single <strong>partnership return (SA800)</strong>, and your share flows onto the <strong>partnership pages (SA104)</strong> of your personal SA100, taxed as trading income with Class 4 NIC.</li>
+<li><strong>Salaried GP</strong> is an employee of the practice, taxed under PAYE with Class 1 NIC deducted at source. You only file a return if you have other reportable income or hit a HMRC trigger.</li>
+<li><strong>Freelance GP locum</strong> is usually a sole trader and reports profits on the <strong>self-employment pages (SA103)</strong> of the SA100. A locum trading through a personal service company instead files a personal return for salary and dividends, while the company files corporation tax separately (see our <a href="/blog/locum-doctor-limited-company-pros-and-cons">guide to the locum limited company decision</a>).</li>
+<li><strong>Hospital consultant</strong> is an NHS employee (PAYE) who may also do private work as a sole trader, partnership or company, reported on the relevant supplementary pages.</li>
+</ul>
+
+<p>The detail of the partner-versus-salaried split, including how it changes your tax and pension, is covered in our <a href="/blog/gp-partner-vs-salaried-gp-tax-comparison">GP partner vs salaried GP tax comparison</a>.</p>
 
 <h2>Who Needs to File a GP Tax Return?</h2>
 
-<p>Not every GP needs to complete a self-assessment tax return. Your obligation depends on your employment structure and total income.</p>
+<p><strong>GP partners</strong> must always file. As a partner you receive a share of practice profits rather than a salary, and all partnership income is declared through self-assessment.</p>
 
-<p><strong>GP Partners</strong> must always file a tax return. As a partner in a medical practice, you're self-employed and receive a share of practice profits rather than a salary. HMRC requires all partnership income to be declared through self-assessment.</p>
-
-<p><strong>Salaried GPs</strong> typically don't need to file if their only income is their NHS salary. However, you'll need to complete a tax return if you:</p>
+<p><strong>Salaried GPs</strong> taxed only through PAYE on their NHS pay often do not need to file at all. You will need to complete a return if you:</p>
 <ul>
-<li>Earn over £100,000 annually (affecting personal allowance)</li>
-<li>Have locum income exceeding £1,000</li>
-<li>Receive private practice income</li>
-<li>Have rental or investment income above £10,000</li>
-<li>Make pension contributions requiring higher rate relief claims</li>
+<li>have income over £100,000 (where the personal allowance begins to taper away);</li>
+<li>have untaxed locum or private practice income above £1,000;</li>
+<li>need to declare an annual allowance charge on NHS pension growth (see below);</li>
+<li>need to claim higher-rate relief on personal pension or gift aid; or</li>
+<li>have other untaxed income such as significant rental or dividend income.</li>
 </ul>
 
-<p><strong>Locum GPs</strong> operating through limited companies may not need personal tax returns if all income flows through the company. However, most locum doctors working directly with practices need to file self-assessment returns.</p>
+<p><strong>Locum GPs</strong> working directly with practices are sole traders and almost always need to file. A locum operating through a limited company may take income as salary and dividends, both of which go on a personal return, while the company handles its own corporation tax.</p>
 
-<h2>GP Partnership Tax Returns</h2>
+<h2>GP Partnership Tax Returns: SA800 and SA104</h2>
 
-<p>GP partnerships face unique <a href="/blog/gp-partnership-tax-complete-guide">tax return obligations</a>. The practice itself must file a partnership tax return (SA800), while each partner completes their individual return (SA100).</p>
+<p>A GP partnership reports in two stages, and understanding the split avoids double-counting and missed profit shares.</p>
 
-<h3>Partnership Return Requirements</h3>
+<h3>The Partnership Return (SA800)</h3>
 
-<p>Your practice manager or accountant typically handles the partnership return, which includes:</p>
+<p>The practice (usually through its accountant) files one <strong>SA800 partnership return</strong> covering the whole practice. It reports total practice profit and allocates a share to each partner. It typically draws together:</p>
 <ul>
-<li>Total practice income from GMS, PMS, or APMS contracts</li>
-<li>QOF and enhanced service payments</li>
-<li>Private work and other income streams</li>
-<li>Practice expenses and capital allowances</li>
-<li>Each partner's profit share allocation</li>
+<li>core NHS contract income (Global Sum weighted by the Carr-Hill formula under a GMS, PMS or APMS contract);</li>
+<li>QOF, enhanced services and PCN or Network Contract DES income (including ARRS reimbursement);</li>
+<li>any dispensing income, private and other income streams;</li>
+<li>practice expenses and capital allowances; and</li>
+<li>each partner's allocated profit share.</li>
 </ul>
 
-<p>The partnership return deadline is 31 January following the tax year end. For 2023/24, this means 31 January 2025.</p>
+<p>There is no single national per-patient value, as the Global Sum and QOF point value are weighted and uplifted each year. For how this practice income is built and shared, see our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> and <a href="/blog/gp-partnership-profit-sharing-tax-planning">profit-sharing planning guide</a>.</p>
 
-<h3>Individual Partner Returns</h3>
+<h3>Each Partner's Personal Return (SA100 plus SA104)</h3>
 
-<p>Each GP partner must report their share of partnership profits on their personal tax return. You'll receive a partnership statement showing your allocated share, which transfers to your SA100 form.</p>
-
-<p>Common partnership tax issues include:</p>
+<p>Each partner then reports their allocated share on the <strong>partnership pages (SA104)</strong> of their personal SA100. The partnership statement from the SA800 gives the figure that transfers across. Two points trip GPs up most often:</p>
 <ul>
-<li>Capital account adjustments for equipment purchases</li>
-<li>Private patient income allocation</li>
-<li>Expense sharing between partners</li>
-<li>Pension contribution timing</li>
+<li>You are taxed on your <strong>profit share, not your drawings</strong>. The cash you withdraw during the year is on account of profit, and the tax follows the allocated profit even if it differs from what you took out.</li>
+<li>Items handled personally (for example certain professional subscriptions, personal pension contributions, or expenses met personally rather than by the practice) belong on your own return, not the SA800.</li>
 </ul>
+
+<h2>Locum and Private Income: The SA103 Pages</h2>
+
+<p>A freelance GP locum trading as a sole trader reports turnover and allowable expenses on the <strong>self-employment pages (SA103)</strong>, and the resulting profit is taxed with Class 4 NIC alongside any other income on the SA100. A salaried GP who also picks up locum sessions or private work needs the SA103 pages on top of their PAYE income. The full mechanics are in our <a href="/blog/locum-doctor-self-assessment-filing-guide">locum doctor self-assessment filing guide</a>, and what you can deduct is set out in our <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum expenses guide</a>.</p>
+
+<p>Allowable costs for self-employed GP income (wholly and exclusively for the profession) commonly include your GMC retention fee, medical defence subscription (MDU, MPS or MDDUS), BMA and relevant Royal College or specialty fees on HMRC's approved list, genuinely relevant CPD, equipment (usually via capital allowances), and business mileage between work sites at the HMRC approved rate of <strong>55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p thereafter</strong>. Home-to-first-site travel is non-deductible commuting. Our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a> covers the full picture, and home-working costs are in our <a href="/blog/gp-home-office-expenses-tax-relief">home office expenses guide</a>.</p>
+
+<h2>Deadlines and Payments on Account</h2>
+
+<p>The self-assessment filing and payment deadline is <strong>31 January</strong> following the tax year end (the paper deadline is the earlier 31 October). So for the 2025/26 tax year, online filing and payment are due by <strong>31 January 2027</strong>, with the paper deadline 31 October 2026. The same 31 January date applies to the partnership SA800 and to each partner's personal return.</p>
+
+<p>Self-employed GPs (partners and sole-trader locums) usually also make <strong>payments on account</strong>: two interim payments towards the next year's bill, each <strong>50% of the prior year's liability</strong>, due <strong>31 January and 31 July</strong>. These are required where your prior-year bill exceeded <strong>£1,000</strong> and less than <strong>80%</strong> of your tax was collected at source. Any shortfall is settled by a balancing payment the following 31 January. New partners are frequently caught out the first time payments on account fall due, effectively meeting one and a half years of tax in a single January, so it is worth budgeting for this from the start.</p>
+
+<h2>National Insurance on Your GP Tax Return</h2>
+
+<p>Self-employed GP income carries <strong>Class 4 NIC</strong>, calculated through the return. The main rate fell from 9% to <strong>6% on 6 April 2024</strong>, so for 2026/27 you pay <strong>6% on profits between £12,570 and £50,270</strong> and <strong>2% above £50,270</strong>.</p>
+
+<p><strong>Class 2 NIC is no longer a required payment from 6 April 2024.</strong> Where your profits are at or above the Small Profits Threshold you are treated as having paid Class 2 and keep your state-pension entitlement, with no weekly charge to budget for. Those below the threshold can still pay voluntary Class 2 to protect their record. Salaried GPs and consultants pay Class 1 NIC through PAYE instead, deducted at source.</p>
 
 <h2>NHS Pension and Your GP Tax Return</h2>
 
-<p>NHS pension contributions create significant tax planning opportunities but also compliance obligations for your GP tax return.</p>
+<p>The NHS pension interacts with self-assessment in two ways. First, the annual allowance charge: the pension <strong>annual allowance is £60,000</strong>, but it is measured on pension <em>growth</em> (the pension input amount), not contributions paid, so high-earning GPs can breach it. It <strong>tapers</strong> where threshold income exceeds <strong>£200,000</strong> and adjusted income exceeds <strong>£260,000</strong>, reducing by £1 for every £2 of adjusted income above £260,000 down to a floor of <strong>£10,000</strong>. The allowance rose from £40,000 to £60,000 in April 2023. Any charge is declared and either paid through your return or settled via Scheme Pays. The detail is in our <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance guide</a>, the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered allowance calculator</a> and the <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays deadlines guide</a>.</p>
 
-<p>GP partners making additional voluntary contributions (AVCs) can claim tax relief through their self-assessment return. This is particularly valuable for higher rate taxpayers saving 40% tax on contributions.</p>
+<p>Second, GP pension certification runs alongside the tax return but is separate from it: Type 1 partners complete the Annual Certificate of Pensionable Profits, Type 2 salaried GPs complete the Type 2 self-assessment, and freelance locums use Locum forms A and B (see our <a href="/blog/nhs-pension-for-locums-form-a-form-b">locum pension forms guide</a>). These record pensionable pay and contributions; they do not replace your HMRC return.</p>
 
-<p>The <a href="/nhs-pension">NHS pension</a> annual allowance (£60,000 for most GPs) can be exceeded due to pension growth. If your annual allowance charge applies, this must be declared and paid through your tax return.</p>
+<p>The lifetime allowance was abolished from 6 April 2024 and replaced by the Lump Sum Allowance (£268,275) and the Lump Sum and Death Benefit Allowance (£1,073,100), so there is no longer a lifetime allowance charge to report.</p>
 
-<p>High-earning GPs face tapered annual allowance reductions. With threshold income over £200,000 and adjusted income over £260,000, your allowance reduces to potentially £10,000. This significantly impacts tax planning and return preparation.</p>
+<h2>Making Tax Digital for Income Tax</h2>
+
+<p>Making Tax Digital (MTD) for Income Tax changes how self-assessment is kept and filed for many GPs. It mandates digital record-keeping and <strong>quarterly updates</strong> to HMRC, phased in by qualifying income (gross trading plus property income tested on the prior year's return):</p>
+<ul>
+<li><strong>£50,000 from 6 April 2026</strong>;</li>
+<li><strong>£30,000 from 6 April 2027</strong>;</li>
+<li><strong>£20,000 from 6 April 2028</strong>.</li>
+</ul>
+
+<p>Most full-time locums and unincorporated private GPs exceed £50,000 and are <strong>in scope from 6 April 2026</strong>. Three points matter for GPs specifically:</p>
+<ul>
+<li><strong>General partnerships are deferred</strong> with no confirmed date, so a GP practice is not yet mandated at partnership level. A partner's own return still enters MTD where their personal qualifying income (for example sole-trader private work) crosses the threshold.</li>
+<li><strong>Limited companies are out</strong> of MTD for Income Tax entirely, so a locum trading through a company is not affected by it.</li>
+<li>A salaried GP is not brought in by NHS employment alone, but locum or private earnings on top can take them over the threshold.</li>
+</ul>
+
+<h2>When a GP Needs a Specialist Accountant</h2>
+
+<p>Medical self-assessment carries traps that catch out generalist accountants. You are likely to benefit from a specialist where you have:</p>
+<ul>
+<li><strong>GP partnership income</strong>, where the SA800 to SA104 allocation, capital accounts and profit-share adjustments need to be right;</li>
+<li><strong>mixed income</strong>, such as NHS pay plus locum sessions, private work or teaching;</li>
+<li><strong>NHS pension complexity</strong>, including annual allowance charges and the tapered allowance;</li>
+<li><strong>income over £100,000</strong> where the personal allowance tapers, or over the taper thresholds where the pension allowance reduces; or</li>
+<li><strong>private practice incorporation</strong>, which is a private-work-only decision and must be weighed against the loss of NHS pension accrual on income taken as dividends (see our <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP limited company guide</a>).</li>
+</ul>
+
+<p>Generic advice often goes wrong on the partner-versus-salaried distinction, the classification of NHS versus private income, and the NHS pension interaction. For a wider overview of how specialist support works across the year, see our <a href="/blog/gp-accountant-services-complete-guide">GP accountant services guide</a>.</p>
+
+<h2>Common GP Tax Return Mistakes to Avoid</h2>
+<ul>
+<li><strong>Taxing drawings instead of profit share</strong>, when partners are taxed on allocated profit regardless of cash withdrawn.</li>
+<li><strong>Using the wrong supplementary pages</strong>, for example putting locum sole-trader income on the partnership pages or omitting the SA103.</li>
+<li><strong>Forgetting payments on account</strong>, leaving a much larger January bill than expected.</li>
+<li><strong>Missing NHS pension annual allowance charges</strong>, or miscalculating the taper.</li>
+<li><strong>Overlooking allowable expenses</strong>, such as GMC and defence subscriptions, relevant CPD and inter-site mileage (see our <a href="/blog/gp-tax-deductions-complete-list-2026">deductions list</a>).</li>
+<li><strong>Ignoring MTD timing</strong>, when sole-trader and locum income over £50,000 is in quarterly reporting from April 2026.</li>
+</ul>
 
 <h2>Planning Ahead</h2>
 
-<p>Successful GP tax return completion starts with year-round planning. Regular reviews of income, expenses, and pension contributions help avoid year-end surprises.</p>
+<p>A clean GP tax return starts with year-round records: keeping NHS and private income clearly separated, tracking deductible costs as you go, and reviewing pension growth against the annual allowance before year-end. This is even more important now that MTD requires digital records and quarterly updates for many GPs.</p>
 
-<p>Consider quarterly reviews with your accountant to track progress against budgets and identify tax planning opportunities. This approach makes the annual <strong>GP tax return</strong> process much smoother and often identifies additional tax savings.</p>
-
-<p>If you need help with your GP tax return or want to discuss your specific circumstances, our team of specialist medical accountants can provide tailored advice for your situation.</p>
-
-<h2>When Medical Professionals Need an Accountant Tax Return</h2>
-<p>You'll typically need professional help with your tax return if you have:</p>
-
-<ul>
-<li><strong>GP partnership income</strong> — profit shares require specialist knowledge of basis period reform and partnership accounting</li>
-<li><strong>Multiple income sources</strong> — NHS salary plus private work, locum income, or teaching fees</li>
-<li><strong>Complex NHS pension situations</strong> — annual allowance charges, tapered allowances, or recycling issues</li>
-<li><strong>High earnings</strong> — over £100k where personal allowance tapers or over £200k where pension tapering applies</li>
-<li><strong>Private practice incorporation</strong> — dividend vs salary optimisation and corporation tax planning</li>
-<li><strong>Significant medical expenses</strong> — GMC fees, indemnity costs, CPD expenses, and equipment purchases</li>
-</ul>
-
-<p>A Manchester-based consultant earning £180k from NHS work plus £40k private income, for example, needs someone who understands both employment and self-employment tax rules, plus the interaction with NHS pension contributions.</p>
-
-<h2>What to Expect from an Accountant Tax Return Service</h2>
-<p>A professional <strong>accountant tax return</strong> service for medical professionals typically includes:</p>
-
-<h3>Initial Consultation and Data Gathering</h3>
-<p>Your accountant will review your income sources, expenses, and personal circumstances. They'll explain what records you need and set up systems for ongoing compliance.</p>
-
-<p>For GP partners, this includes understanding your practice's profit-sharing arrangements and basis period changes. For locum doctors, it covers IR35 assessments and employment status decisions.</p>
-
-<h3>Tax Return Preparation and Filing</h3>
-<p>Professional preparation covers all relevant sections including employment income, self-employment profits, property income, and investment gains. Medical-specific items like NHS pension contributions and professional expenses are optimised correctly.</p>
-
-<p>Your accountant will also handle any queries from HMRC and ensure deadlines are met — the 31st January filing deadline for paper returns or 31st January online.</p>
-
-<h3>Tax Planning and Optimisation</h3>
-<p>Beyond compliance, good accountants provide ongoing tax planning. This might include pension contribution timing, income smoothing strategies, or incorporation advice for growing private practices.</p>
-
-<h2>Cost of Accountant Tax Return Services</h2>
-<p>Fees for medical professional tax returns typically range from £400 to £1,500 annually, depending on complexity:</p>
-
-<ul>
-<li><strong>Simple employed doctors</strong> — £400-600 for straightforward NHS employment with basic expenses</li>
-<li><strong>GP partners or consultants</strong> — £800-1,200 for partnership income or mixed NHS/private work</li>
-<li><strong>Complex situations</strong> — £1,000-1,500 for multiple income sources, property portfolios, or incorporation planning</li>
-</ul>
-
-<p>A Birmingham GP partner earning £120k might pay £950 for annual accounts and tax return preparation, while a London consultant with NHS and private income could expect fees around £1,200.</p>
-
-<p>Remember that accountancy fees are tax-deductible against your professional income, effectively reducing the net cost by your marginal tax rate.</p>
-
-<h2>Choosing the Right Accountant for Your Tax Return</h2>
-<p>Not all accountants understand medical tax complexities. Look for:</p>
-
-<ul>
-<li><strong>Medical sector experience</strong> — they should understand NHS pension rules, GMC requirements, and medical professional structures</li>
-<li><strong>Relevant qualifications</strong> — ACA, ACCA, or equivalent with continuing professional development</li>
-<li><strong>Technology integration</strong> — cloud-based systems for document sharing and real-time collaboration</li>
-<li><strong>Proactive communication</strong> — regular updates on tax changes affecting medical professionals</li>
-</ul>
-
-<p>Ask potential accountants about their experience with situations similar to yours. A GP partnership specialist might not be ideal for a locum doctor facing IR35 issues.</p>
-
-<h2>Beyond the Tax Return: Ongoing Support</h2>
-<p>The best <strong>accountant tax return</strong> services include year-round support. This covers:</p>
-
-<ul>
-<li><strong>Quarterly reviews</strong> — checking you're on track for tax obligations and pension planning</li>
-<li><strong>Tax planning meetings</strong> — annual sessions to optimise your tax position for the following year</li>
-<li><strong>HMRC correspondence</strong> — handling any queries or investigations professionally</li>
-<li><strong>Strategic advice</strong> — guidance on practice purchases, incorporations, or retirement planning</li>
-</ul>
-
-<p>Many medical professionals find the ongoing relationship more valuable than the annual compliance work alone.</p>
-
-<h2>Common Tax Return Mistakes to Avoid</h2>
-<p>Medical professionals often make costly errors when handling their own returns:</p>
-
-<ul>
-<li><strong>Incorrect NHS pension calculations</strong> — missing annual allowance relief or miscalculating tapered allowances</li>
-<li><strong>Mixed-up income classification</strong> — treating employment income as self-employment or vice versa</li>
-<li><strong>Missed professional expenses</strong> — not claiming legitimate costs like professional development or equipment (see our <a href="/blog/gp-tax-deductions-complete-list-2026">complete deductions list</a>)</li>
-<li><strong>Basis period confusion</strong> — GP partners struggling with the recent basis period reform changes</li>
-</ul>
-
-<h2>Related Reading</h2>
-
-- <a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions Complete List 2026</a>
-- <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS Pension Annual Allowance Complete Guide</a>
-
-<p>A specialist accountant prevents these errors while often identifying additional legitimate deductions you might have missed.</p>
+<p>If you would like help with your self-assessment, partnership return or NHS pension position, our specialist medical accountants work with GPs and consultants across the UK. <a href="/contact">Get in touch</a> to discuss your specific circumstances.</p>

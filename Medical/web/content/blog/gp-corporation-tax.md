@@ -5,183 +5,139 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-corporation-tax"
 date: "2026-04-01"
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "GP Corporation Tax 2026/27 | Medical Accountants UK"
-metaDescription: "Corporation tax rates range from 19% to 25% depending on profit level. Rates, reliefs, and extraction strategies for incorporated GP practices."
-altText: "UK GP reviewing corporation tax documents and financial statements for medical practice"
+metaTitle: "GP Corporation Tax Rates 2026/27 (19% to 25%) | Medical Accountants UK"
+metaDescription: "Corporation tax for an incorporated GP or medical company in 2026/27: 19% to 25% with marginal relief, plus the 2026/27 dividend rates and the NHS pension trap."
+altText: "UK GP reviewing corporation tax rates and dividend figures for an incorporated private medical company"
 image: ""
 h1: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
-summary: "Understanding GP corporation tax is crucial for incorporated medical practices. This guide covers current rates, reliefs, and planning strategies for UK medical professionals considering or operating through limited companies."
+summary: "How corporation tax works for an incorporated GP or medical company in 2026/27: the 19% to 25% rates with marginal relief, the 2026/27 dividend rates, profit extraction, and why company income is never NHS-pensionable."
 schema: ""
 faqs:
-  - question: "What corporation tax rate do GP practices pay in 2025/26?"
-    answer: "GP practices pay 19% corporation tax on profits up to £50,000, a marginal rate of 26.5% on profits between £50,000-£250,000, and 25% on profits over £250,000. Most GP practices fall into the marginal rate band."
-  - question: "Can incorporated GPs still access the NHS pension scheme?"
-    answer: "Yes, but it requires careful planning. As company directors, GPs aren't automatically eligible but can maintain access through their salary arrangements. The company can also make additional pension contributions with corporation tax relief."
-  - question: "When are corporation tax payments due for medical companies?"
-    answer: "Corporation tax is due 9 months and 1 day after your accounting year end. Companies with profits over £1.5 million must make quarterly installment payments. Returns must be filed within 12 months of the year end. Late payments incur interest and penalties."
-  - question: "What professional expenses can GP practices claim against corporation tax?"
-    answer: "GP practices can claim GMC registration fees, professional indemnity insurance, BMA membership, CPD courses, medical journals, practice equipment, and other costs wholly and exclusively for business purposes. These reduce taxable profit and corporation tax liability."
-  - question: "What corporation tax rate applies to my medical company?"
-    answer: "Medical companies pay 19% corporation tax on profits up to £50,000, 25% on profits over £250,000, with marginal relief between these thresholds. The rate depends on your annual profits, not your profession. However, profit extraction strategies affect your overall tax burden significantly."
-  - question: "Can I claim medical equipment as corporation tax deductions?"
-    answer: "Yes, medical equipment typically qualifies for capital allowances providing immediate or accelerated tax relief. Diagnostic equipment, consultation furniture, and clinical software often qualify for annual investment allowance, giving 100% first-year relief on purchases up to £1 million."
-  - question: "How does IR35 affect my company's corporation tax?"
-    answer: "If your locum work falls within IR35, you must operate PAYE on deemed employment income, reducing profits subject to corporation tax. This eliminates many corporation tax advantages. Specialist accountants help structure arrangements to maintain genuine business status where possible."
+  - question: "What corporation tax rate does an incorporated GP company pay in 2026/27?"
+    answer: "Corporation tax is 19% on profits up to £50,000, the main rate of 25% on profits over £250,000, and an effective marginal rate of around 26.5% on profits between £50,000 and £250,000 (marginal relief, standard fraction 3/200). The rate depends on profit level, not your profession. These thresholds are divided by the number of associated companies."
+  - question: "Can an incorporated GP still build up NHS pension through the company?"
+    answer: "No. A limited company cannot hold a GMS or PMS contract, and any income routed through a company (including dividends) is not NHS-pensionable. Only NHS work taken in your own name as a partner, salaried GP or locum builds NHS pension. This is why incorporation is a private-work decision only, and why any corporation tax saving has to be weighed against lost NHS pension accrual."
+  - question: "What are the dividend tax rates for an incorporated GP in 2026/27?"
+    answer: "From 6 April 2026 the dividend rates are 10.75% (ordinary or basic), 35.75% (upper or higher) and 39.35% (additional, unchanged), after a £500 dividend allowance. In 2025/26 the ordinary and upper rates were 8.75% and 33.75%. The April 2026 rise narrows the historic salary-versus-dividend advantage, so always model your own numbers."
+  - question: "When is corporation tax due for a medical company?"
+    answer: "Corporation tax is payable 9 months and 1 day after the company's accounting year end, and the CT600 return must be filed within 12 months of the year end. Only large companies (broadly profits over £1.5 million, divided by associated companies) make quarterly instalment payments, which is rare for a medical company. Late filing and late payment attract penalties and interest."
+  - question: "Can a medical company claim capital allowances on equipment?"
+    answer: "Yes. Most clinical and consulting equipment qualifies for the Annual Investment Allowance, which gives 100% relief on up to £1 million of qualifying plant and machinery each year (the £1m limit is permanent, and cars are excluded). New, unused main-rate plant can instead use the 40% first-year allowance available from 1 January 2026, or full expensing (companies only). The main-rate writing-down allowance falls from 18% to 14% from 1 April 2026."
+  - question: "Does IR35 affect an incorporated locum doctor's corporation tax?"
+    answer: "Yes. If a locum's work through a personal service company is inside IR35, the fee-payer (for NHS trust work, the trust or agency, not the locum) operates PAYE and NIC on that income, so it cannot be extracted tax-efficiently as salary and dividend. IR35 has not been abolished. Status depends on the engagement, so a locum can hold a mix of inside and outside determinations across hirers."
 ---
 
-<p><strong>GP corporation tax</strong> affects thousands of medical professionals operating through limited companies in the UK. Whether you're considering incorporation or already running an incorporated practice, understanding how corporation tax applies to medical services is essential for effective tax planning.</p>
+<p><strong>GP corporation tax</strong> is the tax an incorporated GP or medical company pays on its profits. If you run private medical work through a limited company, or are weighing up incorporation, the headline question is usually the same: what rate of corporation tax will the company pay, and how much of the profit reaches you after dividend tax. This guide sets out the <strong>2026/27 corporation tax rates</strong>, marginal relief, the current dividend rates, and the one issue that decides most GP cases: NHS pension accrual.</p>
 
-<p>The decision to <a href="/blog/medical-practice-incorporation-step-by-step">incorporate your GP practice</a> fundamentally changes your tax obligations. Instead of paying income tax and National Insurance as a sole trader or partnership, your practice pays GP corporation tax on profits, while you pay personal tax on salary and dividends.</p>
+<p>One point matters before anything else. A limited company <strong>cannot hold an NHS GMS or PMS contract</strong>, and income routed through a company is <strong>not NHS-pensionable</strong>. So GP corporation tax is a <strong>private-work</strong> conversation: insurance medicals, medico-legal and expert-witness work, occupational health, cosmetic and self-pay clinics, and locum work taken outside IR35. Your core NHS partnership or salaried income stays in your own name and is taxed as trading or employment income, not through a company. For the wider incorporation decision and the pros and cons, see our guides on <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP limited company tax benefits and drawbacks</a> and <a href="/blog/medical-practice-incorporation-step-by-step">medical practice incorporation step by step</a>.</p>
 
-<h2>Common GP Corporation Tax Mistakes</h2>
+<h2>GP Corporation Tax Rates 2026/27</h2>
 
-<p>Several errors frequently increase corporation tax liabilities for medical professionals:</p>
-
-<ul>
-<li><strong>Poor record keeping:</strong> Missing expense claims due to inadequate documentation</li>
-<li><strong>Personal vs business expenses:</strong> Claiming inappropriate personal costs</li>
-<li><strong>Timing errors:</strong> Misunderstanding when income and expenses are recognised</li>
-<li><strong>Dividend vs salary mistakes:</strong> Sub-optimal profit extraction strategies</li>
-</ul>
-
-<p>These mistakes often arise because medical training doesn't cover tax planning. Working with specialists familiar with medical practice taxation is typically cost-effective.</p>
-
-<h2>How GP Corporation Tax Differs from Personal Tax</h2>
-
-<p>The shift from personal taxation to corporate taxation creates both opportunities and complications for medical professionals.</p>
-
-<h3>Timing Differences</h3>
-
-<p>Corporation tax is paid nine months and one day after your company's year-end, not through PAYE like employed doctors. This creates cash flow advantages but requires discipline to set aside funds.</p>
-
-<h3>Profit Extraction Options</h3>
-
-<p>Once your practice pays <strong>GP corporation tax</strong>, you have several ways to extract the remaining profits:</p>
+<p>Corporation tax is charged on company profits at rates that depend on how much profit the company makes, not on your profession. For the financial year from 1 April 2026 the rates are:</p>
 
 <ul>
-<li><strong>Salary:</strong> Subject to income tax and National Insurance but deductible for corporation tax</li>
-<li><strong>Dividends:</strong> Taxed at dividend rates with no National Insurance</li>
-<li><strong>Pension contributions:</strong> Tax-efficient but subject to annual allowance limits</li>
+<li><strong>19% small profits rate</strong> on taxable profits up to £50,000.</li>
+<li><strong>25% main rate</strong> on taxable profits over £250,000.</li>
+<li><strong>Marginal relief</strong> on profits between £50,000 and £250,000, which produces an effective marginal rate of around <strong>26.5%</strong> in that band (the standard marginal relief fraction is 3/200).</li>
 </ul>
 
-<p>Many GP practices use a low salary (typically £12,570 to maximise the personal allowance) combined with dividends for tax efficiency.</p>
+<p>These same rates and thresholds applied in the 2025/26 financial year, so a company with an accounting period straddling 1 April does not see a rate change. The £50,000 and £250,000 limits are <strong>divided by the number of associated companies</strong>, so if you control more than one company the bands shrink, and the limits are also time-apportioned for accounting periods shorter than 12 months.</p>
 
-<h2>Medical Practice Corporation Tax Complexities</h2>
-<h3>Mixed Income Streams</h3>
+<p>Most incorporated GP and consultant companies sit in the £50,000 to £250,000 marginal relief band, where the effective rate is the highest of the three. That makes the choice between leaving profit in the company, paying a salary, or drawing dividends a real planning question rather than an afterthought.</p>
 
-<p>Many medical professionals receive income from multiple sources, each requiring different corporation tax treatment. NHS income, private fees, medico-legal work, teaching income, and research grants all have specific rules for recognition and timing.</p>
+<h2>How Corporation Tax Differs from Personal Tax for Doctors</h2>
 
-<p>Your accountant must understand these nuances to ensure accurate profit calculations and tax liabilities. Misclassifying income or expenses can result in underpayment penalties or overpayment of corporation tax.</p>
+<p>If you have only ever been taxed through PAYE as a salaried GP or hospital consultant, or through self-assessment as a partner or sole-trader locum, company taxation works differently in two ways that matter for cash flow.</p>
 
-<h3>Equipment and Capital Allowances</h3>
+<h3>Payment Timing</h3>
 
-<p>Medical equipment purchases often qualify for enhanced capital allowances, providing immediate tax relief rather than spreading costs over several years. Understanding which items qualify and optimal timing for purchases requires specialist <strong>accountant corporation tax</strong> knowledge.</p>
+<p>Corporation tax is paid <strong>9 months and 1 day after the company's accounting year end</strong>, not deducted as you earn. That gives a cash-flow gap you can use, but it also means the money has to be set aside, because the bill lands months after the profit was earned. Only large companies (broadly profits over £1.5 million, again divided by associated companies) pay by quarterly instalments, which almost never applies to a medical company.</p>
 
-<p>Diagnostic equipment, consultation room furniture, IT systems, and clinical software typically qualify for annual investment allowance relief, currently set at £1 million until March 2026.</p>
+<h3>Two Layers of Tax</h3>
 
-<h2>NHS Pension Considerations for Incorporated GPs</h2>
+<p>Company profit is taxed once inside the company (corporation tax) and again when you extract it personally (income tax on salary, or dividend tax on dividends). The art of running a medical company is managing those two layers together rather than looking at corporation tax in isolation.</p>
 
-<p>Incorporation affects your <a href="/nhs-pension">NHS pension</a> arrangements significantly. As a company director, you're not automatically entitled to NHS pension membership.</p>
+<h2>Profit Extraction: Salary, Dividends and Pension</h2>
 
-<p>Many incorporated GPs maintain NHS pension eligibility through their salary, but this requires careful planning to ensure contributions qualify. The annual allowance (£60,000 for most doctors, potentially tapered for high earners) applies to total pension growth across all schemes.</p>
+<p>Once the company has paid GP corporation tax, the retained profit can be extracted in several ways, each taxed differently:</p>
+
+<ul>
+<li><strong>Salary:</strong> deductible for corporation tax, but subject to income tax and National Insurance. The company also pays employer (secondary Class 1) NIC at 15% on salary above the £5,000 secondary threshold. The Employment Allowance (£10,500) is not available to a company whose only employee is a single director, which is why one-director medical companies often set a modest salary at or near that secondary threshold.</li>
+<li><strong>Dividends:</strong> paid out of taxed profits, with no National Insurance, and taxed at the dividend rates below after a £500 allowance.</li>
+<li><strong>Employer pension contributions:</strong> the company can contribute to your pension and deduct it for corporation tax on a paid basis, with no NIC, subject to the annual allowance.</li>
+</ul>
+
+<h3>Dividend Tax Rates 2026/27</h3>
+
+<p>The dividend rate you pay depends on your total income. For <strong>2026/27 (from 6 April 2026)</strong> the rates are:</p>
+
+<ul>
+<li><strong>Ordinary (basic) rate: 10.75%</strong></li>
+<li><strong>Upper (higher) rate: 35.75%</strong></li>
+<li><strong>Additional rate: 39.35%</strong> (unchanged)</li>
+</ul>
+
+<p>These apply after the <strong>£500 dividend allowance</strong>. They are a rise on the <strong>2025/26</strong> rates of 8.75% ordinary and 33.75% upper (the additional rate stayed at 39.35%). Because most incorporated GPs draw dividends in the higher-rate band, the April 2026 increase directly reduces the take-home from a dividend strategy, so the salary-versus-dividend balance is worth re-running for 2026/27.</p>
+
+<h3>A Note on the Director's Loan Trap</h3>
+
+<p>A medical company is a close company, so drawing more than the profits available as dividends can leave you with an overdrawn director's loan. An overdrawn loan that is still outstanding 9 months and 1 day after the period end triggers a <strong>section 455 charge</strong> at the dividend upper rate: <strong>33.75% on loans made in 2025/26</strong> and <strong>35.75% on loans made on or after 6 April 2026</strong>. The charge is refundable once the loan is repaid, but the refund is deferred, so it is a cash-flow cost worth avoiding.</p>
+
+<h2>NHS Pension and Incorporated GPs: the Decisive Issue</h2>
+
+<p>This is where many GP incorporation decisions are won or lost. Because a company cannot hold an NHS contract and <strong>company income and dividends are not NHS-pensionable</strong>, every pound of private income you route through a company is a pound that builds no NHS pension. For a GP partner or salaried GP, NHS pension accrues only on income taken in your own name and certified through the NHS pension machinery (the Type 1 Annual Certificate of Pensionable Profits for partners, the Type 2 self-assessment for salaried GPs, and Locum forms A and B for freelance locums). For a hospital consultant, only the NHS post is pensionable; private work, whether sole trader, partnership or company, never is.</p>
+
+<p>So any corporation tax saving has to be set against the value of the NHS pension you give up by taking that income through a company. The <strong>annual allowance is £60,000</strong> for 2025/26 (the limit rose from £40,000 to £60,000 in April 2023), tapering where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a floor of £10,000. For doctors close to the taper, deliberately keeping some private income outside pensionable NHS pay can actually be a reason to incorporate, because it reduces pension growth that would otherwise trigger an annual allowance charge. That is a genuine planning lever, but it is a fine judgement, not a default.</p>
+
+<p>For the detail, see our guides to the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance</a> and <a href="/blog/gp-pension-contributions-tax-relief">GP pension contributions and tax relief</a>. The short version: never model an incorporation tax saving without modelling the pension-accrual loss alongside it.</p>
 
 <h3>Corporation Tax Relief on Pension Contributions</h3>
 
-<p>Your company can make pension contributions on your behalf, receiving full corporation tax relief. However, these contributions count towards your annual allowance and must not exceed your relevant UK earnings.</p>
+<p>The company can pay into a personal or stakeholder pension for you and deduct it against corporation tax (on a paid basis, wholly and exclusively for the trade), with no National Insurance on the contribution. These payments count towards your annual allowance, and unused allowance can be carried forward from the previous three tax years. This is a separate, private (defined contribution) pot, not NHS pension, so it does not replace the NHS accrual you lose by incorporating.</p>
 
-<h2>Planning Strategies to Minimise GP Corporation Tax</h2>
+<h2>Allowable Expenses and Capital Allowances</h2>
 
-<p>Several legitimate strategies can help reduce your corporation tax liability while maintaining compliance.</p>
+<p>Costs incurred wholly and exclusively for the company's trade reduce taxable profit and so reduce corporation tax. For a medical company these commonly include GMC retention fees, medical indemnity (MDU, MPS or MDDUS), relevant Royal College or specialty membership and BMA subscriptions where on HMRC's approved list, CPD genuinely relevant to current practice, professional and accountancy fees, and business use of phone, internet and a home office.</p>
 
-<h3>Timing of Income and Expenses</h3>
+<p>Business mileage between work sites can be reimbursed at HMRC's approved rate, which rose for <strong>2026/27 to 55p per mile for the first 10,000 business miles and 25p thereafter</strong> (up from 45p, effective 6 April 2026). Travel from home to your first work site of the day is ordinary commuting and is not allowable.</p>
 
-<p>Unlike NHS employees who have little control over income timing, incorporated GPs can influence when profits are recognised. Consider:</p>
+<h3>Equipment and Capital Allowances</h3>
 
-<ul>
-<li>Delaying invoicing near year-end to defer income</li>
-<li>Accelerating equipment purchases to increase deductions</li>
-<li>Making pension contributions before year-end</li>
-</ul>
+<p>Most clinical and consulting equipment qualifies for the <strong>Annual Investment Allowance (AIA)</strong>, giving 100% relief on up to <strong>£1 million</strong> of qualifying plant and machinery each year. The £1m limit is permanent, and cars are excluded. Diagnostic kit, IT, instruments and consulting-room furniture typically qualify.</p>
 
-<h3>Capital Allowances</h3>
-
-<p>Medical equipment purchases may qualify for capital allowances, including the annual investment allowance (currently £1 million). This can provide immediate tax relief rather than spreading costs over several years.</p>
-
-<h3>Research and Development Relief</h3>
-
-<p>GP practices involved in clinical research may qualify for enhanced corporation tax relief. This specialized area requires expert advice but can significantly reduce <strong>GP corporation tax</strong> for qualifying activities.</p>
-
-<h2>Filing Requirements and Deadlines</h2>
-
-<p>Incorporated GP practices must file annual corporation tax returns (CT600) and pay any tax due. Key deadlines include:</p>
+<p>For 2026/27 there are two further points to weigh:</p>
 
 <ul>
-<li><strong>Corporation tax return:</strong> 12 months after year-end</li>
-<li><strong>Tax payment:</strong> 9 months and 1 day after year-end</li>
-<li><strong>Quarterly payments:</strong> Required for large companies (rare for GP practices)</li>
+<li>The <strong>main-rate writing-down allowance falls from 18% to 14%</strong> for relief from 1 April 2026 (corporation tax), with a time-apportioned hybrid rate for an accounting period straddling that date. The special-rate pool (integral features such as electrical and heating systems) stays at 6%.</li>
+<li>A new <strong>40% first-year allowance</strong> applies to new (unused, not second-hand) main-rate plant and machinery from 1 January 2026, and <strong>full expensing</strong> (100% on new main-rate plant) remains available to companies. For most spend the AIA at 100% is still the simplest first port of call.</li>
 </ul>
 
-<p>Late filing or payment triggers automatic penalties, starting at £100 for late returns and interest on overdue tax.</p>
+<p>On a clinic fit-out or a premises purchase that includes fixtures, the way costs are split between pools, and a CAA 2001 section 198 election on a purchase, can materially change the relief, so this is worth getting right at the point of spend.</p>
 
-<h2>When to Seek Professional Help</h2>
+<h2>IR35 and Corporation Tax for Locum Companies</h2>
 
-<p>Given the complexity of <strong>GP corporation tax</strong> and its interaction with personal tax, NHS pensions, and medical professional requirements, most incorporated practices benefit from professional support.</p>
+<p>If you locum through a personal service company, IR35 (the off-payroll rules) decides whether your engagements are taxed as if employed. Inside IR35, the fee-payer deducts PAYE and NIC before the company is paid, so that income cannot be extracted efficiently as salary and dividend, and the usual corporation tax planning largely falls away. For NHS trust and other public-sector work the trust or agency in the chain decides status and operates the deductions, not the locum, although the determination can be challenged through the disagreement process. For medium and large private clients the hirer decides; for small private clients the company itself still decides.</p>
 
-<p>Consider specialist advice if you're:</p>
+<p>IR35 has not been abolished, and a locum can hold a mix of inside and outside determinations across different hirers in the same year. For how this works in practice, see our guide to <a href="/blog/locum-doctor-ir35-what-you-need-to-know">locum doctor IR35</a>.</p>
+
+<h2>Filing, Deadlines and Records</h2>
+
+<p>An incorporated medical practice must file a corporation tax return (CT600) and pay any tax due. The key dates are:</p>
 
 <ul>
-<li>Considering incorporation for your practice</li>
-<li>Struggling with optimal profit extraction strategies</li>
-<li>Dealing with complex expense claims</li>
-<li>Planning significant equipment investments</li>
-<li>Managing multiple income sources (NHS and private)</li>
+<li><strong>Pay corporation tax:</strong> 9 months and 1 day after the accounting year end.</li>
+<li><strong>File the CT600 return:</strong> within 12 months of the year end.</li>
+<li><strong>Quarterly instalments:</strong> only for large companies (rare for medical companies).</li>
 </ul>
 
-<p>At Medical Accounts, we specialise in helping UK medical professionals navigate corporation tax efficiently. Our <a href="/services">services</a> are designed specifically for GP practices and other medical professionals operating through limited companies.</p>
+<p>Late filing triggers automatic penalties (starting at £100) and interest runs on overdue tax. Note that <strong>Making Tax Digital for Income Tax does not apply to limited companies</strong>: it is an income tax regime for sole traders and landlords, so a locum trading through a company stays outside it, while a sole-trader locum or unincorporated private GP with qualifying income over £50,000 is in scope from 6 April 2026. HMRC expects a medical company to keep full digital records (invoices, expense receipts, bank statements) supporting the corporation tax computation.</p>
 
-<p>If you need help with your <strong>GP corporation tax</strong> planning or have questions about incorporation, please <a href="/contact">contact us</a> for expert guidance tailored to medical professionals.</p>
+<h2>Is Incorporation Worth It for Your Private Work?</h2>
 
-<h2>Key Corporation Tax Services for Medical Professionals</h2>
-<h3>Annual Corporation Tax Returns</h3>
+<p>At 2025/26 rates the pure tax saving from incorporating private medical work is often modest at typical profit levels, and the 2026/27 dividend-rate rise narrows it further. The genuine drivers tend to be managing the annual allowance taper, retaining profit in the company rather than drawing it all, family-shareholder planning, and limited liability, rather than a headline rate saving. And every one of those has to be balanced against the NHS pension accrual you give up on income taken through the company.</p>
 
-<p>Filing accurate CT600 returns requires detailed understanding of medical practice expenses and allowable deductions. Professional indemnity insurance, GMC registration fees, continuing professional development costs, and practice equipment all require proper classification.</p>
+<p>Consider specialist advice if you are weighing up incorporation for your private work, structuring locum arrangements around IR35, planning significant equipment spend, or running mixed NHS and private income. For NHS-versus-private income generally, see our guide to <a href="/blog/private-practice-tax-nhs-and-private-income">private practice tax: NHS and private income</a>, and for whole-of-practice support our <a href="/blog/gp-accountant">GP accountant</a> overview.</p>
 
-<p>Timing is crucial - corporation tax returns must be filed within 12 months of your accounting year end, with tax payments due 9 months and 1 day after the year end. Missing deadlines results in penalties and interest charges that erode your practice profits.</p>
+<p>At Medical Accountants UK we focus on the tax affairs of GPs, consultants and other doctors, including incorporated private work and locum companies. Our <a href="/services">services</a> are built around medical professionals. If you would like help modelling your <strong>GP corporation tax</strong> position alongside the NHS pension picture, please <a href="/contact">contact us</a> for guidance tailored to your situation.</p>
 
-<h3>Tax Planning and Optimization</h3>
-
-<p>Effective <strong>accountant corporation tax</strong> planning involves more than just compliance. It includes strategies for profit extraction, timing of equipment purchases, pension contributions, and managing the interaction between corporation tax and personal tax liabilities.</p>
-
-<p>A locum doctor earning £200,000 annually through their company might benefit from paying themselves a salary up to the primary threshold (£12,570 in 2024/25) plus employer's NIC optimization, then extracting remaining profits as dividends to minimize overall tax burden.</p>
-
-<h2>IR35 and Corporation Tax Implications</h2>
-<p>Locum doctors operating through personal service companies face complex <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 assessments</a> that directly impact corporation tax liabilities. If your arrangements fall within IR35, corporation tax advantages may be severely limited.</p>
-
-<p>Specialist accountants help structure locum arrangements to maintain genuine business status while ensuring corporation tax efficiency remains viable. This includes contract reviews, business substance assessments, and ongoing compliance monitoring.</p>
-
-<h2>Dividend vs Salary Corporation Tax Strategies</h2>
-<p>Optimizing profit extraction requires balancing salary payments (which reduce corporation tax but increase employment taxes) against dividend distributions (subject to corporation tax but with different personal tax treatment).</p>
-
-<p>Current dividend tax rates of 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate) must be weighed against corporation tax savings and employment tax implications. The optimal strategy depends on your total income, including NHS pension growth.</p>
-
-<h2>Managing Corporation Tax Cash Flow</h2>
-<p>Corporation tax payments can create significant cash flow challenges, particularly for practices with seasonal income patterns or large equipment investments. Professional <strong>accountant corporation tax</strong> services include cash flow forecasting and payment planning.</p>
-
-<p>Companies with profits exceeding £1.5 million must make quarterly installment payments, requiring accurate profit forecasting and cash management. Even smaller medical companies benefit from setting aside corporation tax reserves monthly rather than facing large lump sum payments.</p>
-
-<h2>Compliance and Record Keeping</h2>
-<p>HMRC expects medical companies to maintain detailed records supporting corporation tax calculations. This includes client invoices, expense receipts, bank statements, and documentation of business decisions affecting tax liabilities.</p>
-
-<p>Digital record keeping requirements mean your accounting systems must capture transaction details electronically and maintain audit trails. Many medical professionals find cloud-based accounting software integrated with specialist <strong>accountant corporation tax</strong> support provides the most efficient solution.</p>
-
-<h2>Choosing the Right Corporation Tax Accountant</h2>
-<p>Not all accountants understand medical practice corporation tax complexities. Look for specialists who demonstrate experience with GP practices, consultant companies, and locum doctor structures.</p>
-
-<h2>Related Reading</h2>
-
-- <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP Limited Company Tax Benefits and Drawbacks</a>
-- <a href="/blog/medical-practice-incorporation-step-by-step">Medical Practice Incorporation Step by Step</a>
-
-<p>Your ideal accountant should understand NHS pension implications, medical expense categories, IR35 assessments, and the interaction between personal and corporate tax planning. They should also provide proactive advice rather than just compliance services.</p>
-
-<p>For specialist <strong>accountant corporation tax</strong> support tailored to medical professionals, consider speaking to accountants who focus exclusively on healthcare practices. Their expertise can make a substantial difference to your tax efficiency and compliance burden.</p>
+<p>This article is general information, not personal tax advice. Rates and thresholds are stated for the tax years shown and can change. Always take advice on your own circumstances before acting.</p>

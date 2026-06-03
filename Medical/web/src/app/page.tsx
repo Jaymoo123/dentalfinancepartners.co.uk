@@ -57,16 +57,19 @@ const realityPoints = [
 
 const whoWeWorkWith = [
   {
+    href: "/for-gps",
     title: "GP Partners & Salaried GPs",
     subtitle: "Practice income · NHS pension · GP tax advice",
     body: "From partnership accounts and profit-sharing to individual tax returns and pension planning. Our GP accountants ensure your practice finances are structured efficiently and your personal tax position is optimised, particularly around NHS superannuation and GP tax planning.",
   },
   {
+    href: "/for-consultants",
     title: "Hospital Consultants",
     subtitle: "NHS & private practice · Consultant accountant",
     body: "Managing a mix of NHS salary, private patient fees, and medico-legal work creates a complex tax picture. Our medical accountants provide clarity on income splitting, legitimate expense claims, and long-term pension strategy to protect your wealth.",
   },
   {
+    href: "/for-locum-doctors",
     title: "Locum Doctors",
     subtitle: "Locum accountant · Self-assessment · IR35",
     body: "If you're working through agencies or directly with practices, you're running a business. Our locum accountants handle your self-assessment, advise on allowable expenses, manage your VAT position, and ensure you're compliant and tax-efficient with specialist locum tax advice.",
@@ -182,10 +185,10 @@ export default function HomePage() {
               Speak to a medical accountant
             </Link>
             <Link
-              href="#how-we-work"
-              className={`inline-flex min-h-12 items-center text-sm font-semibold text-white/90 underline decoration-[var(--coral)] decoration-2 underline-offset-4 transition-colors hover:text-white ${focusRing} rounded-full px-2`}
+              href="/free-practice-health-check"
+              className={`inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10 ${focusRing}`}
             >
-              How we work →
+              Free practice health check
             </Link>
           </div>
         </div>
@@ -270,6 +273,12 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-[var(--ink)]">{block.title}</h3>
                 <p className="mt-1 text-sm font-medium text-[var(--coral)]">{block.subtitle}</p>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{block.body}</p>
+                <Link
+                  href={block.href}
+                  className={`mt-4 inline-flex min-h-10 items-center text-sm font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4 ${focusRing} rounded`}
+                >
+                  View specialist services →
+                </Link>
               </div>
             ))}
           </div>
@@ -384,14 +393,20 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-6">
             <Link
               href="/blog"
               className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4 ${focusRing} rounded`}
             >
               View all articles
             </Link>
-          </p>
+            <Link
+              href="/medical-guides"
+              className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4 ${focusRing} rounded`}
+            >
+              Browse medical guides
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -5,188 +5,119 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-bookkeeping-guide-uk"
 date: "2026-04-01"
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
-metaTitle: "GP Bookkeeping Guide 2026 | Medical Practice Accounts UK"
-metaDescription: "GP bookkeeping goes beyond standard accounting — partnership profit sharing, NHS income tracking, and expense categories explained for UK practices."
+metaTitle: "GP Practice Bookkeeping Guide 2026/27 | Recording NHS Income UK"
+metaDescription: "How to do GP practice bookkeeping: record Global Sum, QOF, enhanced services and PCN income, track drawings vs profit share, and keep MTD-ready digital records."
 altText: "GP practice manager working on bookkeeping records with computer and financial documents"
 image: ""
 h1: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
-summary: "GP bookkeeping involves complex partnership accounting, profit sharing calculations, and NHS contract tracking. Understanding these requirements is essential for tax compliance and practice management."
+summary: "A practical guide to GP practice bookkeeping: recording NHS income streams (Global Sum, QOF, enhanced services and PCN funding), separating partner drawings from profit share, allocating practice expenses, and keeping digital records ready for Making Tax Digital."
 schema: ""
 faqs:
-  - question: "What records must GP partnerships keep for bookkeeping compliance?"
-    answer: "GP partnerships must maintain detailed records including all income sources (NHS payments, private fees, enhanced services), partnership agreements, individual partner drawings and profit shares, all expenses with supporting invoices, bank statements, VAT records if applicable, and capital account movements. Records should be kept for at least six years and support both partnership and individual partner tax returns."
-  - question: "How do partner drawings differ from profit shares in GP bookkeeping?"
-    answer: "Partner drawings are monthly advance payments taken against expected profit share throughout the year. These are recorded in each partner's current account as they occur. Profit shares are the actual allocation of annual practice profits to each partner based on the partnership agreement, calculated after year-end. The difference between total drawings and final profit share creates either a balance owed to or from each partner."
-  - question: "Do GP practices need special bookkeeping software for partnership accounting?"
-    answer: "While generic bookkeeping software can work, GP practices benefit from medical practice-specific software that handles partnership profit sharing, NHS income allocation, and complex reporting requirements. These systems often integrate with clinical software and understand medical practice workflows. Many practices outsource to specialist medical accountants who use appropriate software and expertise."
-  - question: "How should GP practices handle NHS income timing differences in their bookkeeping?"
-    answer: "GP practices should use accruals accounting to match NHS income with the period it relates to, even if payment arrives later. QOF payments received in May should be allocated to the previous year's accounts if that's when the work was performed. Enhanced services income should be recognised when services are provided, not when payment is received. Proper cut-off procedures ensure accurate profit measurement and tax compliance."
-  - question: "What makes medical accountant bookkeeping different from general bookkeeping services?"
-    answer: "Medical accountant bookkeeping requires specialist knowledge of NHS pension rules, medical practice structures, IR35 compliance for locums, and unique medical expenses like professional indemnity and GMC fees. General bookkeepers often lack this sector-specific expertise, potentially missing valuable tax deductions and compliance requirements."
-  - question: "How much should I expect to pay for professional medical bookkeeping services?"
-    answer: "Fees vary based on income complexity and service level. Simple salaried GP bookkeeping might cost £500-1,000 annually, while GP partners or consultants with multiple income streams typically pay £1,500-3,000. Monthly bookkeeping services generally cost £100-300 per month depending on transaction volume and complexity."
-  - question: "Do I need monthly bookkeeping or is annual accounting sufficient?"
-    answer: "This depends on your income complexity and planning needs. GP partners, consultants with private practice, and high earners facing tapered annual allowance issues often benefit from monthly bookkeeping for ongoing tax planning. Salaried GPs with straightforward arrangements may find annual accounting adequate, though monthly services still provide better financial visibility."
+  - question: "What records must a GP partnership keep for its bookkeeping?"
+    answer: "Keep every income source split by type (Global Sum and other GMS/PMS payments, QOF, enhanced services, PCN and Network Contract DES funding, dispensing income where relevant, and any private fees), all expenses with supporting invoices, bank statements, the partnership agreement, each partner's current and capital account movements, and VAT records if the practice has taxable income over the threshold. HMRC expects records to be kept for at least six years to support both the partnership return (SA800) and each partner's personal return."
+  - question: "How are partner drawings different from profit share in GP bookkeeping?"
+    answer: "Drawings are advance payments a partner takes against their expected share of profit during the year, posted to that partner's current account as they happen. Profit share is the actual allocation of the practice's annual profit under the partnership agreement, calculated after year-end. Drawings are not an expense and are not what a partner is taxed on. A GP partner is taxed on their profit share, not on the cash they drew. The gap between total drawings and final profit share leaves a balance owed to or by each partner."
+  - question: "How should NHS income like QOF be recorded when payment arrives in a later month?"
+    answer: "Use accruals accounting so income is matched to the period it relates to, not the month the cash lands. QOF achievement payments and many enhanced-services receipts arrive after the work, so the bookkeeping should accrue the earned amount into the correct year with clear cut-off at the accounting date. There is no single national Global Sum or QOF point value to plug in: both are weighted and uplifted annually, so record the actual amounts shown on your NHS statements rather than an assumed figure."
+  - question: "Does a GP practice need Making Tax Digital and is the practice in scope?"
+    answer: "Making Tax Digital for Income Tax is being phased in by qualifying income: £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028. General partnerships are deferred with no confirmed start date, so a GP partnership is not mandated at partnership level yet. An individual partner can still be in MTD on their own qualifying income (for example sole-trader private or locum work over the threshold), so keeping digital records now is the sensible default. Limited companies are outside MTD for Income Tax entirely."
+  - question: "Do I need special software for GP partnership bookkeeping?"
+    answer: "No single product is required. Mainstream cloud bookkeeping software handles GP partnership accounting well when it is set up with the right income categories (Global Sum, QOF, enhanced services, PCN funding) and a current account per partner. The discipline matters more than the brand: consistent coding of NHS income streams, drawings posted to current accounts, and digital records that satisfy Making Tax Digital. Many practices use a specialist medical accountant who configures the software and reviews the partnership numbers."
+  - question: "Does a GP practice have to register for VAT?"
+    answer: "NHS GMS and PMS income is outside the scope of VAT and exempt medical care does not count towards the threshold, so most practices stay below it. VAT registration is required only when taxable (non-exempt) turnover passes £90,000 in a rolling 12 months, with a deregistration threshold of £88,000. Standard-rated items such as some medico-legal reports or purely cosmetic work can push a practice or partner over, so track non-exempt income separately. Our guide to GP VAT registration covers what counts."
 ---
 
-<p>GP bookkeeping is far more complex than standard business accounting. As a GP partner, you're dealing with partnership profit sharing, NHS contract income, private patient receipts, and shared practice expenses. Getting your <strong>gp bookkeeping</strong> right is essential for accurate tax returns and practice management.</p>
+<p>GP practice bookkeeping is a different job from standard business bookkeeping. A general practice records NHS contract income that arrives in several distinct streams, separates partner drawings from the profit each partner is actually taxed on, allocates shared practice costs, and now has to keep records in a digital, Making Tax Digital ready form. This guide walks through how to record each piece correctly so the partnership return and every partner's personal return stand up.</p>
 
-<p>Many GP partners underestimate the complexity involved. Unlike sole traders or limited companies, medical practices operate as partnerships with unique accounting requirements. This guide covers the essential elements you need to understand.</p>
+<p>The detail that trips practices up is income. A GP partnership does not bill in dental UDA bands or charge a simple fee per job. Core funding comes through the <strong>Global Sum</strong>, weighted by the Carr-Hill formula, on top of which sit <strong>QOF</strong>, enhanced services and Primary Care Network funding. Recording those streams accurately, and matching them to the period they relate to, is most of what GP bookkeeping is about.</p>
 
-<h2>Understanding GP Partnership Bookkeeping</h2>
+<h2>Recording GP NHS income streams correctly</h2>
 
-<p>GP practices typically operate as partnerships, which creates specific bookkeeping requirements. Each partner's share of profits and losses must be tracked separately, even though the practice operates as one entity.</p>
+<p>NHS primary medical care in England is delivered under GMS (General Medical Services), PMS (Personal Medical Services) or APMS (Alternative Provider Medical Services) contracts. Whichever your practice holds, the bookkeeping should give each income stream its own category rather than dropping everything into one "NHS income" line. The streams to track separately are:</p>
 
-<p>Your practice accounts need to show total income from all sources: GMS contract payments, QOF achievements, enhanced services, private patient fees, and any other income streams. This information feeds into individual partner tax calculations.</p>
-
-<p>The partnership agreement determines how profits are shared. Some practices split everything equally, others use complex formulas based on seniority, sessions worked, or capital contributed. Your <strong>gp bookkeeping</strong> system must accurately reflect these arrangements.</p>
-
-<h2>Essential Income Tracking for GP Practices</h2>
-
-<p>GP practices receive income from multiple sources, each requiring different treatment in your books. NHS Commissioning Board payments form the bulk of most practices' income, including your GMS global sum and QOF payments.</p>
-
-<p>Enhanced services income needs separate tracking. Whether you're providing extended hours, minor surgery, or contraception services, each contract should be identifiable in your records. This helps with performance monitoring and renewal discussions.</p>
-
-<p>Private income streams require careful handling. If you see private patients or provide occupational health services, this income may be treated differently for tax purposes. Some practices operate private income through separate limited companies.</p>
-
-<p>PCN (Primary Care Network) funding adds another layer. Direct Enhanced Services income through your PCN needs proper allocation between participating practices in your <strong>gp bookkeeping</strong> records.</p>
-
-<h2>Managing Practice Expenses and Cost Allocation</h2>
-
-<p>GP practice expenses fall into several categories, each with different implications for partner tax positions. Understanding how to categorise and allocate these costs is crucial for accurate bookkeeping.</p>
-
-<p>Staff costs typically represent your largest expense. This includes employed staff salaries, employers' National Insurance and pension contributions, and any agency costs. Partner drawings and profit shares are not expenses – they're profit distributions.</p>
-
-<p>Premises costs need careful tracking, especially if partners own the building. Rent paid to partner landlords must be shown separately from other premises expenses. If the practice owns the building, depreciation and mortgage interest need appropriate treatment.</p>
-
-<p>Professional costs are significant in medical practice. GMC registration fees, medical indemnity (MDU or MPS), BMA membership, and continuing professional development costs all qualify as allowable expenses when properly recorded.</p>
-
-<h2>Partnership Profit Sharing and Drawings</h2>
-
-<p>The distinction between partner drawings and profit shares causes confusion in <strong>gp bookkeeping</strong>. Drawings are monthly payments partners take as advances against their profit share. The actual profit share is calculated annually based on the partnership agreement.</p>
-
-<p>Most GP practices operate current accounts for each partner. These track drawings taken, expenses paid personally by partners, and ultimately the profit allocation. At year-end, each partner's current account shows their final position.</p>
-
-<p>Some practices pay different drawing amounts to different partners, reflecting different profit share ratios or seniority. Your bookkeeping system must track these individual arrangements accurately.</p>
-
-<p>Capital accounts track each partner's investment in the practice. This might include their share of premises, equipment, or working capital. Changes in partnership (new joiners or departing partners) require careful capital account adjustments.</p>
-
-<h2>Compliance Requirements and Record Keeping</h2>
-
-<p>HMRC expects GP practices to maintain detailed records supporting their tax returns. Partnership tax returns require specific information about income allocation, partner profit shares, and individual partner positions.</p>
-
-<p>Under Making Tax Digital requirements, many GP practices must now maintain digital records and submit VAT returns through approved software. This affects practices with annual turnover exceeding £85,000 – which includes most GP practices.</p>
-
-<p>Your <strong>gp bookkeeping</strong> records must support each partner's individual tax return. Partners need their profit share, capital account movements, and any benefits in kind for their personal tax calculations.</p>
-
-<p>Document retention is crucial. Keep all invoices, receipts, bank statements, and supporting records for at least six years. HMRC investigations can go back this far, and missing records create significant problems.</p>
-
-<h2>Technology and Software Solutions</h2>
-
-<p>Modern GP practices need robust bookkeeping software that handles partnership accounting. Generic small business packages often lack the functionality needed for complex profit sharing arrangements.</p>
-
-<p>Medical practice-specific <a href="/blog/gp-accounting-software">accounting software</a> can handle GMS income allocation, partner drawings tracking, and the complex reporting requirements of GP partnerships. Integration with your clinical system can streamline income recording.</p>
-
-<p>Many practices outsource their <strong>gp bookkeeping</strong> to specialist medical accountants. This ensures compliance while freeing up your time for patient care. When choosing an accountant, look for specific GP partnership experience.</p>
-
-<p>Cloud-based solutions offer advantages for multi-site practices or those with partners working different patterns. Real-time access to financial information helps with management decisions and planning.</p>
-
-<h2>Common Bookkeeping Mistakes to Avoid</h2>
-
-<p>Mixing personal and practice expenses is a frequent error. Partners sometimes pay practice expenses from personal accounts or use practice funds for personal costs. Clear separation is essential for accurate bookkeeping and tax compliance.</p>
-
-<p>Incorrectly treating partner benefits causes problems. Cars provided to partners, private medical insurance, or pension contributions need proper recording as benefits in kind where appropriate.</p>
-
-<p>Many practices struggle with accruals and prepayments. NHS income often arrives in different periods from when it's earned, and large expenses like insurance may cover multiple accounting periods. Proper cut-off procedures ensure accurate profit measurement.</p>
-
-<p>Partnership changes mid-year require careful handling in your <strong>gp bookkeeping</strong>. New partners joining or existing partners leaving affects profit sharing calculations and capital account movements throughout the year.</p>
-
-<h2>Planning Ahead: Future Considerations</h2>
-
-<p>The move to calendar year accounting affects how <a href="/blog/gp-partnership-tax-complete-guide">GP partnerships report their income</a> and expenses. This basis period reform changes long-established practices around accounting dates and overlap profits.</p>
-
-<p>NHS funding changes regularly, with new enhanced services and contract modifications. Your bookkeeping system needs flexibility to handle these changes without major disruption.</p>
-
-<p>Consider your practice's long-term structure. Some partnerships are exploring incorporation or alternative structures. Your current <strong>gp bookkeeping</strong> setup should support these potential changes.</p>
-
-<p>Regular management accounts help partners understand the practice's financial position throughout the year. This supports better decision-making around expenses, investments, and drawings.</p>
-
-<p>For complex GP bookkeeping situations or specialist advice on partnership accounting, consider consulting with medical accounting professionals who understand the unique requirements of general practice partnerships. Our <a href="/services">specialist services</a> can help ensure your practice maintains accurate, compliant financial records.</p>
-
-<h2>Why Medical Professionals Need Specialist Accountant Bookkeeping</h2>
-<p>Medical income rarely fits standard employment patterns. A typical GP partner might earn £120,000 from their practice share, £15,000 from sessional work at another practice, and £8,000 from private consultations. Each income source has different tax implications and reporting requirements.</p>
-
-<p>Standard bookkeeping services often struggle with medical-specific issues like basis period reform for GP partnerships, tapered annual allowance calculations for high earners, and the complex interaction between NHS pension growth and private earnings. Specialist medical <strong>accountant bookkeeping</strong> addresses these challenges systematically.</p>
-
-<p>Professional indemnity payments to organisations like the MDU or MPS, GMC registration fees, and BMA membership are all allowable medical expenses that require proper categorisation. Missing these deductions can cost hundreds or thousands in unnecessary tax.</p>
-
-<h2>Essential Bookkeeping Records for Medical Professionals</h2>
-<p>Effective <strong>accountant bookkeeping</strong> starts with comprehensive record-keeping. Medical professionals should maintain detailed records of all income sources, professional expenses, and business-related transactions.</p>
-
-<h3>Income Documentation</h3>
 <ul>
-<li>NHS payslips and P60s from all employing organisations</li>
-<li>GP partnership profit share certificates</li>
-<li>Private practice invoices and payment records</li>
-<li>Locum booking confirmations and payment advice</li>
-<li>Any other medical income including teaching or research payments</li>
+<li><strong>Global Sum.</strong> The core per-patient payment, weighted by the Carr-Hill formula (list size adjusted for age, sex, morbidity, list turnover and geography to give weighted patients). There is no single national per-patient value to assume: it is uplifted annually, so record the actual amount on your NHS statements.</li>
+<li><strong>QOF (Quality and Outcomes Framework).</strong> A voluntary, points-based quality scheme. The QOF point value is uprated each year, and payment usually follows the achievement period, so this is a classic accruals item.</li>
+<li><strong>Enhanced services.</strong> Extended hours, minor surgery, contraception and other locally or nationally commissioned services. Keep each contract identifiable for both the books and renewal discussions.</li>
+<li><strong>PCN and Network Contract DES funding.</strong> Primary Care Network income, including the Additional Roles Reimbursement Scheme (ARRS), needs proper allocation between participating practices.</li>
+<li><strong>Dispensing income</strong> where the practice is a dispensing practice, and any <strong>private or non-NHS fees</strong> (insurance medicals, occupational health, medico-legal), which can carry different VAT and tax treatment.</li>
 </ul>
 
-<h3>Expense Records</h3>
+<p>Note what GP income is <strong>not</strong>: it is not measured in UDAs or dental activity bands, and there is no single fixed national figure to slot in. If a source quotes "the Global Sum is £X per patient", treat that as indicative only and book the real numbers from your statements.</p>
+
+<h2>Accruals and cut-off: matching NHS income to the right year</h2>
+
+<p>Because QOF and many enhanced-services receipts land after the work is done, GP practices should use accruals accounting and apply clean cut-off at the accounting date. Income earned in the year but received afterwards is accrued in; payments received in advance are deferred. The same applies to large costs such as annual indemnity or insurance that span periods. Getting cut-off right is what makes the profit figure accurate, and the profit figure is what each partner is taxed on, so loose cut-off feeds straight through to personal tax.</p>
+
+<h2>Drawings versus profit share: the distinction that matters</h2>
+
+<p>The single most important bookkeeping concept in a GP partnership is the gap between drawings and profit share. Drawings are advance cash payments a partner takes during the year, posted to that partner's <strong>current account</strong> as they occur. Profit share is the actual allocation of the year's profit under the partnership agreement, calculated after year-end.</p>
+
+<p>Drawings are never an expense in the practice accounts, and a partner is <strong>not taxed on what they drew</strong>. A GP partner is taxed on their profit share. The partnership files an SA800; each partner's share then flows to the partnership pages of their personal return and is taxed as trading income, with Class 4 National Insurance (6% on profits between £12,570 and £50,270, then 2% above, for 2025/26). Class 2 is no longer a required payment from 6 April 2024 where profits are at or above the small profits threshold.</p>
+
+<p>Practically, the books need a <strong>current account per partner</strong> recording drawings taken, any practice costs a partner paid personally, and the year-end profit allocation. The difference leaves a balance owed to or by each partner. Because partners often take unequal drawings to reflect different profit-share ratios or sessions, the system has to track each partner individually. For the mechanics of how shares are set and the tax planning around them, see our guide to <a href="/blog/gp-partnership-profit-sharing-tax-planning">GP partnership profit sharing and tax planning</a>.</p>
+
+<h2>Capital accounts, partner changes and premises</h2>
+
+<p>Alongside current accounts, each partner has a <strong>capital account</strong> recording their longer-term investment in the practice (a share of net assets, working capital, and any owned premises). When a partner joins, a buy-in pays for their share of net assets; when a partner leaves, a buy-out returns their capital. These movements must be posted carefully, especially where they happen mid-year, because they change the profit-sharing split and the capital balances at the same time.</p>
+
+<p>One point GP bookkeeping must get right: NHS goodwill is not part of the picture. The sale of NHS GP goodwill has been prohibited since 1 April 2004 (currently under SI 2019/251), so a partner's entry or exit is about <strong>tangible assets, premises and capital accounts</strong>, never a sale of NHS goodwill. Premises are often held in a separate property partnership outside the medical partnership, with income support via notional rent or legacy cost rent, and they carry their own bookkeeping and the well-known "last man standing" risk. We cover that in our note on <a href="/blog/gp-partnership-last-man-standing-premises-risk">the last man standing premises risk</a>.</p>
+
+<h2>Allocating practice expenses</h2>
+
+<p>GP practice costs need consistent categories so the partnership return is accurate and nothing deductible is missed. The main groups are:</p>
+
 <ul>
-<li>Professional fees (GMC, royal college, professional bodies)</li>
-<li>Indemnity insurance premiums (MDU, MPS, or similar)</li>
-<li>CPD course fees and associated travel costs</li>
-<li>Medical journals and reference materials</li>
-<li>Professional equipment and uniforms</li>
-<li>Home office expenses for administrative work</li>
+<li><strong>Staff costs.</strong> Usually the largest line: employed staff salaries, employer National Insurance, employer pension contributions and any agency cover. Remember partner drawings and profit share sit outside this entirely, they are distributions of profit, not staff costs.</li>
+<li><strong>Premises costs.</strong> Rent (shown separately where it is paid to partner landlords), rates, utilities, repairs, and the treatment of any owned building.</li>
+<li><strong>Professional and clinical costs.</strong> GMC retention fees, indemnity subscriptions (MDU, MPS or MDDUS), BMA and Royal College membership where on HMRC's approved List 3, and CPD relevant to current practice. A medical-specific point: NHS GP clinical negligence has been state-indemnified through CNSGP since 1 April 2019, so partners' own paid indemnity is now mainly for private, non-clinical or regulatory cover.</li>
+<li><strong>Equipment.</strong> Clinical and IT equipment is normally relieved through capital allowances (the Annual Investment Allowance gives 100% relief up to £1,000,000), not booked as a simple expense.</li>
 </ul>
 
-<p>Digital receipt management systems work well for busy medical professionals. Photographing receipts immediately and storing them in organised folders saves time during year-end accounting.</p>
+<p>For an itemised view of what a doctor can and cannot claim, see our <a href="/blog/gp-tax-deductions-complete-list-2026">complete list of GP tax deductions</a>.</p>
 
-<h2>Choosing the Right Accountant for Medical Bookkeeping</h2>
-<p>Not all accountants understand medical practice finances. When selecting professional <strong>accountant bookkeeping</strong> services, look for specific medical sector experience and qualifications.</p>
+<h2>Keeping MTD-ready digital records</h2>
 
-<p>Essential criteria include proven experience with NHS pension calculations, understanding of medical practice structures, and familiarity with common medical expenses and allowances. Ask potential accountants about their experience with tapered annual allowance cases and basis period reform implementation.</p>
+<p>Making Tax Digital for Income Tax (MTD for ITSA) mandates digital records and quarterly updates by <strong>qualifying income</strong>, phased in as £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Two points matter for a GP practice.</p>
 
-<p>Consider the breadth of services offered. Comprehensive medical accounting should include bookkeeping, tax planning, pension advice, and practice financial analysis. Many medical professionals benefit from integrated <a href="/services">accounting services</a> that handle all aspects of their financial management.</p>
+<p>First, <strong>general partnerships are deferred</strong> with no confirmed start date, so a GP partnership is not mandated at partnership level yet. Second, that does not let an individual partner off the hook: a partner with their own sole-trader income (private clinics, expert-witness work, locum sessions) is tested on that personal qualifying income, and most full-time locums and unincorporated private GPs exceed £50,000 and are in scope from 6 April 2026. Limited companies are outside MTD for Income Tax altogether, so a locum trading through a company is not in MTD for ITSA on that income.</p>
 
-<h2>Tax Planning Through Professional Bookkeeping</h2>
-<p>Strategic <strong>accountant bookkeeping</strong> enables proactive tax planning rather than reactive compliance. Professional accountants can identify opportunities for income timing, pension contributions, and allowable expense optimisation.</p>
+<p>The practical takeaway is to keep digital records now regardless of the partnership timeline, because the partnership's numbers feed personal returns that are increasingly being brought into MTD. Do not confuse this with the old £10,000 figure, which no longer applies.</p>
 
-<p>For GP partners, timing practice drawings and understanding how basis period reform affects profit allocation can significantly impact tax liabilities. Consultants with both NHS and private income need careful planning around the tapered annual allowance threshold.</p>
+<h2>VAT for GP practices: usually exempt, but watch the watch-items</h2>
 
-<p>High-earning medical professionals (threshold income above £200,000) face complex pension planning decisions. Professional bookkeeping provides the accurate income forecasting needed for optimal <a href="/nhs-pension">NHS pension planning</a> strategies.</p>
+<p>NHS GMS and PMS income is outside the scope of VAT, and exempt medical care (where the principal purpose is the protection, maintenance or restoration of health) does not count towards the registration threshold. That keeps most practices below the line. Registration is required only when <strong>taxable (non-exempt) turnover</strong> passes <strong>£90,000</strong> in a rolling 12 months (the threshold rose from £85,000 on 1 April 2024), with a deregistration threshold of £88,000.</p>
 
-<h2>Monthly vs Annual Bookkeeping Approaches</h2>
-<p>Medical professionals can choose between monthly bookkeeping maintenance and annual accounting exercises. Each approach has advantages depending on income complexity and planning needs.</p>
+<p>The bookkeeping job is to track non-exempt income separately, because some receipts are standard-rated even though a doctor provides them: many medico-legal and expert-witness reports, purely cosmetic or aesthetic work, and some occupational-health and administrative services. A practice or partner generating enough of those can cross £90,000 on taxable turnover alone. Our <a href="/blog/gp-vat-registration">guide to GP VAT registration</a> sets out what counts and when partial exemption applies.</p>
 
-<p>Monthly bookkeeping provides ongoing financial visibility and enables proactive tax planning throughout the year. This approach works well for GP partners with variable income or consultants managing both NHS and private earnings.</p>
+<h2>Software: get the setup right, not a particular brand</h2>
 
-<p>Annual bookkeeping may suit salaried GPs with straightforward income streams, though even simple arrangements benefit from professional oversight of allowable expenses and tax planning opportunities.</p>
+<p>You do not need a single specified product. Mainstream cloud bookkeeping software handles GP partnership accounting perfectly well once it is configured with the right income categories, a current account per partner, and bank-feed coding rules that keep the NHS streams separate. The choice that matters is configuration and discipline, not logo. Where a practice uses dedicated medical software or integrates with the clinical system, that can streamline income recording, but the same principles apply. Our overview of <a href="/blog/gp-accounting-software">GP accounting software</a> compares the options.</p>
 
-<h2>Technology and Medical Bookkeeping</h2>
-<p>Modern <strong>accountant bookkeeping</strong> leverages technology to streamline record-keeping and improve accuracy. Cloud-based accounting software enables real-time collaboration between medical professionals and their accountants.</p>
+<p>Whatever the tool, the records have to be digital end to end to satisfy Making Tax Digital, and they have to reconcile to the bank, the NHS statements and each partner's current account.</p>
 
-<p>Integration with banking systems automates transaction categorisation and reduces manual data entry. Mobile apps allow immediate expense recording, crucial for busy medical professionals who might otherwise lose receipts or forget deductible costs.</p>
+<h2>Common GP bookkeeping mistakes to avoid</h2>
 
-<p>Professional medical accountants typically provide access to secure client portals where documents can be shared safely and financial reports accessed at any time.</p>
+<ul>
+<li><strong>Treating drawings as profit (or as an expense).</strong> Drawings go to current accounts; profit share is the taxable figure. Mixing them distorts both the accounts and every partner's tax.</li>
+<li><strong>Lumping all NHS income together.</strong> Without separate Global Sum, QOF, enhanced-services and PCN lines you cannot check funding, accrue correctly or answer queries.</li>
+<li><strong>Weak cut-off.</strong> Booking QOF or enhanced-services income in the month the cash lands rather than the year it was earned misstates profit and tax.</li>
+<li><strong>Mixing personal and practice money.</strong> Paying practice costs from a personal account, or vice versa, without posting it to the right current account.</li>
+<li><strong>Mishandling partner changes mid-year.</strong> Buy-ins, buy-outs and changed profit-share ratios need careful current and capital account adjustments.</li>
+<li><strong>Assuming the partnership is in MTD when it is deferred, or assuming a partner is out when their own income is in scope.</strong></li>
+</ul>
 
-<h2>Compliance and Regulatory Considerations</h2>
-<p>Medical <strong>accountant bookkeeping</strong> must address both tax compliance and professional regulatory requirements. HMRC expects accurate record-keeping and timely submission of returns, while medical professionals must also consider GMC guidance on financial probity.</p>
+<h2>How specialist medical bookkeeping helps</h2>
 
-<p>Recent changes including basis period reform and IR35 legislation have increased compliance complexity for many medical professionals. Professional bookkeeping ensures these changes are implemented correctly without creating unnecessary tax burdens.</p>
+<p>GP income, the drawings-versus-profit distinction, premises held in a separate partnership, and the NHS-pension and annual-allowance angles all sit outside standard small-business bookkeeping. A specialist medical accountant configures the income categories correctly, keeps the records MTD-ready, and makes sure the partnership numbers feed each partner's return accurately. That accuracy also supports related decisions covered elsewhere on this site, from the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance</a> for higher-earning partners to whether private work should ever be incorporated (a private-work-only question, since a company cannot hold an NHS contract and company income is not NHS-pensionable).</p>
 
-<p>Regular reviews of accounting processes help identify potential compliance issues before they become problems. Professional medical accountants stay current with regulatory changes and implement necessary updates proactively.</p>
+<p>This guide is general information, not personal advice. For help setting up or reviewing your practice's bookkeeping, our <a href="/services">specialist medical accounting services</a> work with GP partnerships across the UK.</p>
 
-<h2>Getting Started with Professional Medical Bookkeeping</h2>
-<p>Implementing professional <strong>accountant bookkeeping</strong> starts with gathering existing financial records and identifying specific needs and objectives. Most medical professionals benefit from an initial consultation to review their current situation and develop an appropriate accounting strategy.</p>
+<h2>Related reading</h2>
 
-<p>Consider your income complexity, tax planning objectives, and time availability for financial management. These factors will determine whether monthly support or annual services better meet your needs.</p>
-
-<h2>Related Reading</h2>
-
-- <a href="/blog/gp-accounting-guide">GP Accounting: Essential Guide</a>
-- <a href="/blog/gp-accounting-software">GP Accounting Software Guide</a>
-
-<p>Professional medical accountants typically offer initial consultations to assess requirements and explain their approach. This meeting provides an opportunity to evaluate their medical sector knowledge and service quality before making commitments.</p>
+<ul>
+<li><a href="/blog/gp-accounting-guide">GP accounting: the essential guide</a></li>
+<li><a href="/blog/gp-accounting-software">GP accounting software</a></li>
+<li><a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax: complete guide</a></li>
+<li><a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions: complete list</a></li>
+</ul>

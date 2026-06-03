@@ -1,5 +1,6 @@
 /* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
 @import "tailwindcss" source("..");
+@import "tw-animate-css";
 
 /*
   UI ground rules (mobile-first) — Medical Accountants UK
@@ -447,6 +448,31 @@ tr:hover {
   background: linear-gradient(120deg, var(--copper-soft) 0%, transparent 100%);
   padding: 0.125rem 0.25rem;
   border-radius: 4px;
+}
+
+/* Inline CTA aside (matches Property's pattern, uses medical accent) */
+.prose-blog aside {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid var(--medical-teal);
+  background: var(--copper-soft);
+  border-radius: 0 4px 4px 0;
+}
+
+.prose-blog aside p:first-child {
+  margin-top: 0;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 1.0625rem;
+}
+
+.prose-blog aside p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
 }
 
 /* Accessibility */
