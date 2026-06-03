@@ -3,169 +3,165 @@ title: "Can an Associate Dentist Claim Mileage When Working at Multiple Practice
 slug: "can-dental-associates-claim-mileage-multiple-practices"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/can-dental-associates-claim-mileage-multiple-practices"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
-metaTitle: "Associate Dentist Mileage Claims for Multiple Practices | UK Tax Guide"
-metaDescription: "Can you claim mileage as an associate dentist travelling between practices? HMRC rules, rates, and what counts as a qualifying journey. Practical examples for UK dentists."
+metaTitle: "Associate Dentist Mileage: Multiple Practices 2026/27"
+metaDescription: "Mileage for associate dentists across practices: the 2026/27 55p/25p rates, the home-to-first-practice commuting trap, and what travel you can claim."
 altText: "Associate dentist reviewing mileage logbook in a UK dental practice office"
-image: ""
+image: "https://images.pexels.com/photos/7247409/pexels-photo-7247409.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-holding-a-tax-form-7247409/"
 h1: "Can an Associate Dentist Claim Mileage When Working at Multiple Practices?"
-summary: "Travel between different dental practices is typically allowable as a mileage claim for self-employed associate dentists. Journeys from home to a single permanent practice are not. This guide explains the rules with worked examples."
+summary: "Travel between dental practices is usually allowable mileage for a self-employed associate dentist, but the journey from home to a single regular practice is ordinary commuting and is not. This guide covers the 2026/27 rates, the qualifying-journey rules, mileage method versus actual costs, and the records you must keep."
+keyTakeaways:
+  - "For 2026/27 the approved car and van rate is 55p per mile for the first 10,000 business miles, then 25p, with motorcycles at 24p and bicycles at 20p."
+  - "The 55p rate took effect on 6 April 2026, replacing the 45p rate that had stood since 2011, and the 10,000-mile threshold resets each tax year across all your vehicles combined."
+  - "Travel between two practices on the same working day is allowable, but the home-to-first-practice and last-practice-to-home legs are ordinary commuting and never deductible."
+  - "Once you use the mileage method for a vehicle you must keep using it until you change the car, and you cannot use it where capital allowances have already been claimed."
+  - "Electric and hybrid cars use the same car rate, which already covers charging, so you cannot add electricity costs on top of the mileage claim."
 schema: ""
 faqs:
   - question: "Can I claim mileage if I work at two practices on the same day?"
-    answer: "Yes. If you travel directly from one practice to another on the same day, that journey is business travel and is allowable. For example, if you finish a morning list at Practice A and drive to Practice B for an afternoon list, the mileage between the two practices is claimable. Keep a record of both addresses and the mileage. The journey from home to your first practice and from your last practice back home remains commuting and is not allowable."
-  - question: "What mileage rate should I use for my electric car as an associate dentist?"
-    answer: "The same rates apply as for petrol or diesel cars: 45p per mile for the first 10,000 business miles, then 25p per mile thereafter. There is no separate lower rate for electric vehicles. However, if you use the mileage rate, you cannot also claim the cost of electricity for charging at home separately. The 45p rate is designed to cover all running costs, including electricity. If you charge at a public charging point, you cannot claim that cost separately either under the mileage method."
+    answer: "Yes. If you travel directly from one practice to another on the same working day, that journey is business travel and is allowable. For example, if you finish a morning list at one practice and drive straight to a second practice for an afternoon list, the mileage between the two is claimable. Record both addresses, the date and the distance. The journey from home to your first practice, and from your last practice back home, remains ordinary commuting and is not allowable."
+  - question: "What is the mileage rate for the 2026/27 tax year?"
+    answer: "For cars and vans the approved rate is 55p per business mile for the first 10,000 business miles in the tax year, then 25p per mile after that. The 55p rate took effect from 6 April 2026 and replaced the 45p rate that had applied since 2011, so it covers the whole 2026/27 year. Motorcycles are 24p per mile and bicycles are 20p per mile at all distances. The same car rate applies to electric and hybrid vehicles. Always check gov.uk for the rate that applies to the year you are claiming, because the relief is given at the rate for that tax year."
   - question: "Do I need to keep receipts for fuel if I use the mileage rate?"
-    answer: "No. If you use HMRC's approved mileage allowance payments (AMAPs), you do not need to keep fuel receipts. You only need a mileage log showing the date, start and end addresses, purpose, and mileage for each business journey. However, you should keep records of your total annual mileage (business and private) to demonstrate that you have not exceeded the 10,000-mile threshold for the lower rate. HMRC may ask to see your log if they enquire into your return."
-  - question: "Can a salaried associate dentist claim mileage tax relief?"
-    answer: "Yes, but the rules are stricter. Salaried associates can claim tax relief on business travel that is not ordinary commuting. Travel between two permanent workplaces is generally not allowable for employees. However, travel to a temporary workplace (less than 24 months) is allowable. If your practice reimburses you at HMRC's approved rates (45p/25p), the reimbursement is tax-free. If they pay less, you can claim relief on the difference. If they pay more, the excess is taxable. Check your employment contract and speak to a dental-specialist accountant for your specific situation."
+    answer: "No. If you use the approved mileage rate (the simplified method) you do not need fuel receipts. You need a mileage log showing the date, the start and end points, the purpose and the distance of each business journey, plus a running total of business miles so you can see when you cross 10,000 and move to the lower rate. Keep the log as you go rather than reconstructing it later, because a contemporaneous record carries far more weight if HMRC enquires into your return."
+  - question: "Can I switch between the mileage method and actual costs each year?"
+    answer: "Once you start using the mileage method for a particular vehicle you must keep using it for that vehicle until you change the vehicle. You cannot mix the two methods for the same car in the same year, for example claiming the mileage rate and also claiming fuel or servicing. You also cannot use the mileage method for a vehicle on which you have already claimed capital allowances. Decide your method when you first use the vehicle for the business, and run both calculations once before you commit."
+  - question: "Does claiming mileage reduce my NHS pension?"
+    answer: "For a self-employed associate, pensionable NHS earnings are based on your net pensionable earnings declared to the pensions agency, not on every line of your accounts, so routine mileage claims are part of normal expense deduction rather than a separate pension adjustment. The interaction between expenses, profit and pensionable earnings is fact-specific, so confirm your figures with your dental accountant and the pensions agency rather than assuming. This guide deals with the mileage relief itself, not your pension position."
 ---
 
-<h2>Can You Claim Mileage as a Self-Employed Associate Dentist?</h2>
+<h2>Can a self-employed associate dentist claim mileage across multiple practices?</h2>
 
-<p>The short answer is yes, but only for certain journeys. If you are a self-employed associate dentist working across multiple dental practices, you can claim tax relief on travel between those practices. However, the journey from your home to your main practice is not allowable. This distinction trips up many dentists and can lead to unnecessary tax bills if you get it wrong.</p>
+<p>If you are a self-employed associate dentist splitting your week across more than one practice, mileage is one of the more valuable expenses you can claim, but only for the right journeys. Travel between practices on the same day is normally business travel and is allowable. The drive from home to a single regular practice is ordinary commuting and is not. Getting that line right is the whole game, because the wrong claims are exactly what an HMRC enquiry looks for.</p>
 
-<p>HMRC draws a clear line between "ordinary commuting" (home to a permanent workplace) and "business travel" (travel between workplaces or to a temporary workplace). For a self-employed associate dentist, each practice you work at is a separate workplace. Travel between them is business travel. Travel from home to your first practice of the day is commuting, unless that practice is a temporary workplace under HMRC's definition.</p>
+<p>This article is the mileage deep dive for associates working across several sites. It covers the 2026/27 rates, what counts as a qualifying journey, the home-to-first-practice trap, the choice between the mileage method and actual costs, and the records you must keep. For the wider picture of everything an associate can deduct, see our guide to <a href="/blog/associate-tax/associate-dentist-allowable-expenses-uk-2025-26">allowable expenses for associate dentists</a>, and for Self Assessment as a whole see the <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax guide</a>. This page goes deeper on travel than either of those.</p>
 
-<p>This article explains the rules in plain English, with real examples and the current mileage rates for 2025/26. We also cover what records you need to keep and how to claim the relief on your Self Assessment tax return.</p>
+<h2>The commuting trap: home to your first practice</h2>
 
-<h2>HMRC Rules on Mileage for Self-Employed Associate Dentists</h2>
+<p>HMRC draws a hard line between ordinary commuting and business travel. Ordinary commuting is the journey between your home and a place you attend regularly to do your work, and it is never deductible, however far you drive and however inconvenient the route. Business travel is travel you make in the course of the work itself, which for an associate mainly means travel between workplaces.</p>
 
-<p>HMRC's guidance on travel expenses for the self-employed is set out in the Business Income Manual (BIM). The key principle is that travel costs are allowable if they are incurred "wholly and exclusively" for the purposes of the trade. For a self-employed associate dentist, that means travel between different workplaces is allowable, but ordinary commuting is not.</p>
+<p>The trap is that each practice you attend on a settled, ongoing basis is a regular workplace. So the drive from home to your first practice of the day is commuting, even if you only work there two days a week, and even if it is not your "main" practice. The fact that you happen to work across several sites does not turn the home-to-practice leg into business travel. What it does do is create allowable journeys in between.</p>
 
-<p>HMRC defines a "permanent workplace" as a place you attend regularly, for more than 24 months, or where you spend 40% or more of your working time. For most associate dentists, each practice you work at on a regular schedule (e.g., every Tuesday and Thursday) is a permanent workplace. Travel from home to that practice is commuting.</p>
+<p>An associate working across several practices therefore has a genuinely stronger case for inter-practice travel being business mileage than a dentist sitting at one chair all week, but the strength of that case lives or dies on the record-keeping. A clear mileage log that shows you drove from one practice to another on the same day is persuasive. A round figure typed in at the year end is not.</p>
 
-<p>However, if you work at a practice only occasionally, or for a short-term contract, it may qualify as a "temporary workplace". In that case, travel from home directly to that practice is allowable. This is a common scenario for locum dentists, but it can also apply to associates covering a colleague's list for a few months.</p>
+<h2>What counts as a qualifying journey</h2>
 
-<h3>What Counts as a Qualifying Journey?</h3>
-
-<p>For a self-employed associate dentist, the following journeys are typically allowable:</p>
+<p>For a self-employed associate dentist, the journeys that are normally allowable are:</p>
 
 <ul>
-<li>Travel from your home to a temporary workplace (e.g., a practice you cover for three months)</li>
-<li>Travel between two practices on the same day (e.g., from Practice A to Practice B)</li>
-<li>Travel from a practice to a training course or CPD event that is directly related to your work</li>
-<li>Travel from a practice to a dental laboratory or supplier for work-related purposes</li>
+<li>Travel between two practices on the same working day, in either direction</li>
+<li>Travel from your home or a practice to a genuinely temporary workplace, such as a practice you are covering for a short, time-limited spell</li>
+<li>Travel from a practice to a course, conference or CPD event directly related to your current clinical work</li>
+<li>Travel from a practice to a dental laboratory, supplier or bank for a business purpose</li>
 </ul>
 
-<p>The following journeys are not allowable:</p>
+<p>The journeys that are not allowable are:</p>
 
 <ul>
-<li>Travel from home to your main permanent practice</li>
-<li>Travel from home to a practice you attend regularly (even if it is not your "main" practice)</li>
-<li>Travel from home to a practice where you have a fixed schedule and no end date</li>
+<li>Home to your first practice of the day, and your last practice back home, at any of your regular sites</li>
+<li>Travel to a practice you attend on a settled, indefinite schedule, even if it is part-time and not your main practice</li>
+<li>Any private leg, such as a detour to the shops on the way home, even on a day you also did a business journey</li>
 </ul>
 
-<h2>Mileage Allowance Rates for 2025/26</h2>
+<h3>The temporary workplace point</h3>
 
-<p>HMRC publishes approved mileage allowance payments (AMAPs) for business travel in private vehicles. For 2025/26, the rates are:</p>
+<p>A temporary workplace is somewhere you attend to perform a task of limited duration or for a temporary purpose. Travel from home directly to a temporary workplace can be allowable in full, which is why locum-style cover and short fixed-term arrangements behave differently from your settled sites. The key tests are whether the attendance is genuinely time-limited and whether the place becomes, in practice, somewhere you go regularly with no real end in sight. Once attendance at a place is expected to last, or actually lasts, beyond the limits HMRC sets, it stops being temporary and the travel to it becomes commuting again. If you rely on a temporary-workplace argument, write down at the outset why the arrangement is time-limited, because that contemporaneous reasoning is what supports the claim later.</p>
+
+<h2>Mileage rates for 2026/27</h2>
+
+<p>HMRC publishes approved mileage rates for using your own vehicle for business. For the 2026/27 tax year the rates are:</p>
+
+<table>
+<thead>
+<tr><th>Vehicle</th><th>First 10,000 business miles</th><th>Above 10,000 business miles</th></tr>
+</thead>
+<tbody>
+<tr><td>Cars and vans</td><td>55p per mile</td><td>25p per mile</td></tr>
+<tr><td>Motorcycles</td><td>24p per mile</td><td>24p per mile</td></tr>
+<tr><td>Bicycles</td><td>20p per mile</td><td>20p per mile</td></tr>
+</tbody>
+</table>
+
+<p>The car and van figure is significant this year. The 55p rate for the first 10,000 business miles took effect from 6 April 2026 and applies across the whole 2026/27 tax year. It replaced the 45p rate that had stood since 2011, so it is the first increase in well over a decade. The 25p rate above 10,000 miles is unchanged, and motorcycle and bicycle rates are unchanged. Because the relief is given at the rate for the tax year of the journey, anything you are still tidying up for an earlier year is calculated at that earlier year's rate, so always confirm the figure on gov.uk for the year you are actually claiming.</p>
+
+<p>The 10,000-mile threshold resets at the start of each tax year and it applies to you as an individual across all your vehicles combined, not separately per vehicle. Electric and hybrid cars use the same car rate as petrol and diesel. There is no separate, lower rate for electric vehicles, and you cannot add a home or public charging cost on top of the mileage rate, because the approved rate is designed to cover all running costs of the car.</p>
+
+<h2>Worked example: an associate across three practices</h2>
+
+<p>Consider an associate who splits the week across three sites. She works two days at a practice 12 miles from home, two days at a practice 18 miles from home, and one day at a private clinic 22 miles from home. On the days she does a morning list at one practice and an afternoon list at another, she drives directly between the two, a distance of 15 miles each time.</p>
+
+<p>How the journeys break down:</p>
+
+<table>
+<thead>
+<tr><th>Journey</th><th>Treatment</th><th>Why</th></tr>
+</thead>
+<tbody>
+<tr><td>Home to first practice of the day</td><td>Not allowable</td><td>Ordinary commuting to a regular workplace</td></tr>
+<tr><td>Last practice back home</td><td>Not allowable</td><td>Ordinary commuting</td></tr>
+<tr><td>Practice to practice on a split day (15 miles)</td><td>Allowable</td><td>Business travel between two workplaces</td></tr>
+<tr><td>Practice to an evening CPD course</td><td>Allowable</td><td>Travel for the purposes of the trade</td></tr>
+<tr><td>Detour to the supermarket on the way home</td><td>Not allowable</td><td>Private journey</td></tr>
+</tbody>
+</table>
+
+<p>Suppose she does one split day a week for 45 working weeks, giving 15 miles each way, so 30 business miles a week, which is 1,350 inter-practice business miles a year. Add roughly 150 miles of qualifying CPD and supplier journeys and she has about 1,500 business miles. Comfortably within the first 10,000 miles, that is 1,500 at 55p, which is 825 pounds of allowable expense for the year. As a higher-rate taxpayer that deduction reduces both income tax and Class 4 National Insurance on her profits. The exact saving depends on her marginal position, but the point is that the relief flows entirely from the inter-practice and CPD legs. Not one penny of it comes from the home-to-practice drives, which is precisely why those are the journeys people wrongly try to claim.</p>
+
+<h2>Mileage method or actual costs?</h2>
+
+<p>There are two ways to claim vehicle running costs, and you use one or the other for a given vehicle, never both.</p>
+
+<p><strong>The mileage method (simplified expenses).</strong> You multiply your business miles by the approved rate and claim the total. The rate is meant to cover everything: fuel or charging, insurance, servicing, repairs, road tax and wear. You keep a mileage log but you do not keep fuel or running-cost receipts for the calculation. For most associates this is simpler and gives a sound result, and it is the common choice.</p>
+
+<p><strong>The actual-cost method.</strong> You add up the real running costs of the vehicle for the year, then claim the business-use proportion, and you can also claim capital allowances on the vehicle itself. This can produce a larger deduction for an expensive car with high running costs, but it needs full receipts, an accurate business-versus-private mileage split, and more bookkeeping.</p>
+
+<p>Two rules matter when you choose. Once you have used the mileage method for a vehicle, you keep using it for that vehicle until you replace the car. And you cannot use the mileage method on a vehicle for which you have already claimed capital allowances. Because the choice is effectively locked in per vehicle, it is worth running both calculations once when you first start using a car for the business, then sticking with the method that suits it.</p>
+
+<h2>The records you must keep</h2>
+
+<p>Whichever method you use, a contemporaneous mileage log is the foundation of the claim. For every business journey, record:</p>
 
 <ul>
-<li>Cars and vans: 45p per mile for the first 10,000 business miles in the tax year, then 25p per mile thereafter</li>
-<li>Motorcycles: 24p per mile</li>
-<li>Bicycles: 20p per mile</li>
+<li>The date of the journey</li>
+<li>The start and end points, including practice names where relevant</li>
+<li>The purpose, for example "practice to practice for afternoon list" or "CPD course on endodontics"</li>
+<li>The distance for that journey</li>
+<li>A running total of business miles for the year, so you can see when you cross 10,000</li>
 </ul>
 
-<p>These rates are designed to cover both fuel and the running costs of your vehicle (insurance, maintenance, depreciation). You cannot claim separately for those costs if you use the mileage rate. Alternatively, you can claim the actual costs of running your vehicle (fuel, insurance, repairs, etc.) apportioned for business use. For most associate dentists, the mileage rate is simpler and more generous, especially if you have a fuel-efficient car.</p>
+<p>A notebook, a spreadsheet or a mileage-tracking app are all acceptable, and HMRC accepts digital records. What matters is that the log is built as you go, not reassembled from memory at the year end. If you use the actual-cost method, keep the running-cost receipts and a record of total mileage as well, so you can support the business-use proportion. Keep all of this for at least the period HMRC can open an enquiry into the relevant return.</p>
 
-<p>If you use an electric car, the 45p/25p rates still apply. There is no separate lower rate for electric vehicles, despite some misconceptions. HMRC confirmed this in their 2024/25 guidance.</p>
+<h2>Three mistakes associates make</h2>
 
-<h2>Worked Examples for Associate Dentists</h2>
+<p><strong>Claiming the home-to-practice leg.</strong> This is the big one. Working across several practices does not make your first and last drives of the day deductible. They are commuting to and from a regular workplace. Only a genuine temporary workplace changes that.</p>
 
-<h3>Example 1: Two Practices, Regular Schedule</h3>
+<p><strong>Mixing private and business miles.</strong> A journey only counts to the extent it is for the business. A detour, a school run on the way, or the trip home via the shops is private, even on a day you also drove between practices. Log the business legs precisely and leave the private ones out.</p>
 
-<p>Sarah is a self-employed associate dentist. She works at Practice A on Mondays and Wednesdays, and at Practice B on Tuesdays and Thursdays. Both practices are permanent workplaces. She drives 15 miles from home to Practice A, then 20 miles from Practice A to Practice B on Wednesdays when she has a split day.</p>
+<p><strong>Treating electric cars as a special case.</strong> Electric and hybrid cars use the ordinary car rate, and the rate already covers charging. You cannot claim the mileage rate and then add the cost of electricity on top.</p>
 
-<p>Her allowable mileage claim:</p>
-<ul>
-<li>Home to Practice A: Not allowable (commuting)</li>
-<li>Practice A to Practice B: Allowable (20 miles each way, 40 miles total per Wednesday)</li>
-<li>Home to Practice B: Not allowable (commuting)</li>
-</ul>
+<h2>How to claim on your Self Assessment</h2>
 
-<p>If Sarah does this for 48 weeks of the year, she can claim 40 miles x 48 weeks = 1,920 business miles. At 45p per mile, that is £864 in tax relief. As a higher-rate taxpayer (40%), she saves £345.60 in income tax and £115.20 in Class 4 NI, for a total saving of £460.80.</p>
+<p>You claim mileage as a business expense in the self-employment pages of your Self Assessment return, within travel costs. Under the mileage method you simply enter the total of your business miles multiplied by the approved rate. Under the actual-cost method you enter the business-use proportion of your running costs and claim capital allowances separately. You do not submit the log with the return, but you must be able to produce it if asked. If your work spans several practices, a company, or a mix of self-employed and employed income, the travel position gets more involved, and a dental-specialist accountant can make sure the claim is both maximised and defensible.</p>
 
-<h3>Example 2: Three Practices, One Temporary</h3>
+<h2>Talk to a dental accountant</h2>
 
-<p>James is an associate dentist at Practice X (his main practice, 3 days a week). He also covers a colleague's maternity leave at Practice Y for 6 months (2 days a week). Practice Y is 25 miles from his home. He also does one day a month at Practice Z, a private clinic 30 miles away.</p>
+<p>Mileage is straightforward in principle, but the line between commuting and business travel, the temporary-workplace test, and the choice of method are all places where associates lose relief or overclaim. At Dental Finance Partners we work with associate dentists across the UK and can review your travel pattern, confirm which journeys qualify, and set up a log that stands up to scrutiny. If you would like a second look at your mileage position, <a href="/contact">contact our team</a> for an initial discussion.</p>
 
-<p>His allowable mileage claim:</p>
-<ul>
-<li>Home to Practice X: Not allowable (permanent workplace)</li>
-<li>Home to Practice Y: Allowable (temporary workplace, less than 24 months and not regular long-term)</li>
-<li>Home to Practice Z: Allowable (temporary workplace, occasional attendance)</li>
-<li>Practice X to Practice Y on a split day: Allowable</li>
-</ul>
-
-<p>James can claim 25 miles x 2 days x 26 weeks = 1,300 miles for Practice Y, plus 30 miles x 12 months = 360 miles for Practice Z. Total: 1,660 miles at 45p = £747. His tax saving as a higher-rate taxpayer is approximately £298.80.</p>
-
-<h2>How to Claim Mileage on Your Self Assessment</h2>
-
-<p>You claim mileage as a business expense on your Self Assessment tax return. The relevant box is in the "Self-employment" section (pages SA103S or SA103F). You enter the total allowable mileage expenses in the "Travel and subsistence" box. You do not need to submit a separate form for AMAPs, but you must keep records to support your claim.</p>
-
-<p>If you use the mileage rate, you simply multiply your business miles by the appropriate rate and enter the total. If you use actual costs, you need to calculate the proportion of total vehicle costs that relate to business use (e.g., if you drive 10,000 miles total and 4,000 are business, you claim 40% of your fuel, insurance, servicing, etc.).</p>
-
-<p>Most associate dentists find the mileage rate simpler and more tax-efficient. However, if you have a very expensive car with high running costs, the actual cost method might give a larger deduction. It is worth running both calculations to see which is better for your situation.</p>
-
-<h2>Records You Must Keep</h2>
-
-<p>HMRC can ask to see evidence of your business mileage. You should keep a mileage log for each vehicle you use. The log should record:</p>
+<h2>Mileage checklist for associates</h2>
 
 <ul>
-<li>Date of each journey</li>
-<li>Start and end addresses (including practice names)</li>
-<li>Purpose of the journey (e.g., "travel from Practice A to Practice B for afternoon list")</li>
-<li>Mileage for each journey</li>
-<li>Total business and private miles for the vehicle</li>
+<li>Treat each regular practice as a workplace, so home-to-first-practice is commuting</li>
+<li>Claim inter-practice, temporary-workplace, CPD and supplier journeys, not your daily commute</li>
+<li>Use 55p per mile for the first 10,000 car or van business miles in 2026/27, then 25p</li>
+<li>Keep a contemporaneous log with date, route, purpose, distance and a running total</li>
+<li>Pick the mileage method or actual costs per vehicle, and do not mix the two</li>
+<li>Review the position whenever your practice schedule or vehicle changes</li>
 </ul>
-
-<p>You can keep this log in a notebook, a spreadsheet, or using a mileage-tracking app. HMRC accepts digital records. The key is that the log is created at or near the time of the journey, not reconstructed months later. A contemporaneous record carries more weight if HMRC enquires into your return.</p>
-
-<p>If you use the actual cost method, you also need to keep receipts for fuel, insurance, servicing, repairs, and any other vehicle costs. For the mileage rate, you only need the log and a record of the total business miles.</p>
-
-<h2>Common Mistakes Associate Dentists Make</h2>
-
-<p>Three errors come up repeatedly in our work with associate dentists.</p>
-
-<p><strong>Mistake 1: Claiming home-to-practice mileage as a business expense.</strong> Even if you work at multiple practices, the journey from your home to your first practice of the day is almost always commuting. Only if that practice is a temporary workplace (less than 24 months, irregular attendance) can you claim it.</p>
-
-<p><strong>Mistake 2: Not separating business and private mileage.</strong> You cannot claim mileage for personal journeys, even if they happen on the same day as a business trip. If you drive from Practice B to the supermarket on your way home, that leg is private.</p>
-
-<p><strong>Mistake 3: Using the wrong rate for electric cars.</strong> Some dentists think electric cars have a lower rate. They do not. The 45p/25p rates apply to all cars, including electric. However, if you charge your electric car at home, you cannot claim the electricity cost separately if you use the mileage rate. The 45p rate is meant to cover all running costs.</p>
-
-<h2>What About Salaried Associate Dentists?</h2>
-
-<p>If you are a salaried associate dentist (employed under a contract of service, not self-employed), the rules are different. Employees can claim mileage relief on business travel, but the definition of "business travel" is narrower. For employees, travel from home to a permanent workplace is never allowable. Travel between workplaces is allowable only if the journey is for a work-related purpose and the employee is not simply commuting between two permanent workplaces.</p>
-
-<p>Salaried associates should check their employment contract. Some practices reimburse mileage at HMRC's approved rates. If they do, the reimbursement is tax-free up to the AMAP rates. If the practice pays less than the AMAP rate, the employee can claim tax relief on the difference. If the practice pays more, the excess is taxable as earnings.</p>
-
-<p>For most salaried associates, the simplest approach is to agree with your practice a clear policy on travel reimbursement. If you are unsure, speak to a dental-specialist accountant who can review your specific arrangement.</p>
-
-<h2>Mileage and the NHS Pension Scheme</h2>
-
-<p>One point that catches out associate dentists: mileage expenses do not affect your NHS Pension contributions. Your pensionable earnings are based on your NHS fee income (UDAs, private fees, etc.), not your net profit after expenses. So claiming mileage does not reduce your pensionable earnings or your future pension benefits. This is a common concern, but it is not an issue for self-employed associates.</p>
-
-<p>However, if you are a salaried associate, your pensionable earnings are your salary. Mileage reimbursements are not pensionable, so they do not affect your pension contributions either way.</p>
-
-<h2>When to Use a Dental-Specialist Accountant</h2>
-
-<p>Mileage claims are straightforward for most associate dentists, but the rules become more complex if you have multiple practices, use a limited company, or have a mix of self-employed and employed income. A dental-specialist accountant can help you structure your travel claims correctly and avoid HMRC enquiries.</p>
-
-<p>At Dental Finance Partners, we work with hundreds of associate dentists across the UK. We can review your mileage log, calculate your claim, and ensure it is fully compliant with HMRC rules. We also help with <a href="/services/associate-tax">associate tax planning</a>, including <a href="/dental-guides/associate-tax-survival-guide">our Associate Tax Survival Guide</a>, which covers mileage, expenses, and tax-saving strategies in detail.</p>
-
-<p>If you are a principal or practice owner, you may also want to read our guide on <a href="/services/practice-accounting">practice accounting</a> to understand how mileage and travel expenses affect your practice's profitability.</p>
-
-<h2>Final Checklist for Associate Dentists Claiming Mileage</h2>
-
-<ul>
-<li>Identify each practice as permanent or temporary based on HMRC's definitions</li>
-<li>Keep a contemporaneous mileage log with dates, addresses, and purposes</li>
-<li>Use the 45p/25p mileage rate or calculate actual costs (choose the more beneficial method)</li>
-<li>Claim only business travel between practices, not home-to-practice commuting</li>
-<li>Include the claim in your Self Assessment tax return under "Travel and subsistence"</li>
-<li>Review your claim annually, especially if your practice schedule changes</li>
-</ul>
-
-<p>If you are unsure about any aspect of your mileage claim, <a href="/contact">contact our team</a> for a free initial discussion. We are dental-specialist accountants who understand the unique tax position of associate dentists in the UK.</p>

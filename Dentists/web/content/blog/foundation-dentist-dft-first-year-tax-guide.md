@@ -1,0 +1,159 @@
+---
+title: "Foundation Dentist (DFT) First Year: Tax, Pay and the Move to Self-Employment"
+slug: "foundation-dentist-dft-first-year-tax-guide"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/foundation-dentist-dft-first-year-tax-guide"
+date: "2026-06-03"
+author: "Dental Finance Partners Editorial Team"
+category: "Locum Tax"
+metaTitle: "Foundation Dentist (DFT) First Year Tax Guide UK"
+metaDescription: "Your DFT year is salaried and PAYE on £42,408 from April 2025. We explain the tax, the NHS pension, and the switch to self-employed associate after."
+altText: "Newly qualified foundation dentist reviewing a first payslip in a UK dental practice"
+image: ""
+h1: "Foundation Dentist (DFT) First Year: Tax, Pay and the Move to Self-Employment"
+summary: "Dental foundation training is a salaried, PAYE year on a national salary of £42,408 from April 2025, with tax, National Insurance and your NHS pension deducted at source. The real tax change comes when you finish DFT and become a self-employed associate. This guide explains both halves and how to prepare for the switch."
+schema: ""
+faqs:
+  - question: "Is a foundation dentist employed or self-employed for tax?"
+    answer: "During dental foundation training you are an employee. Your training practice runs you through PAYE, deducts income tax and Class 1 National Insurance from your salary at source, and you are a member of the NHS Pension Scheme as an officer. You do not file Self Assessment on your DFT salary unless you have other untaxed income. This is the opposite of an associate, who is normally self-employed. The move to self-employment happens after DFT, not during it."
+  - question: "What is the DFT salary in 2025/26?"
+    answer: "The national dental foundation training salary is £42,408 from 1 April 2025, set in the Primary Dental Services Statement of Financial Entitlements and paid at the same rate across England, Wales and Northern Ireland for a 35-hour week. It is uplifted annually, so always check the current figure for your year. Because it is a salary, tax and National Insurance come off before you are paid, so the headline figure is not what lands in your account."
+  - question: "Do I pay National Insurance as a foundation dentist?"
+    answer: "Yes, but as an employee you pay Class 1 National Insurance, deducted from your salary alongside income tax. When you become a self-employed associate after DFT you switch to Class 4 National Insurance, which you pay through Self Assessment rather than at source. Class 2 National Insurance is no longer charged from 6 April 2024 for profits above the small profits threshold, so as a self-employed associate you keep your state pension record without a separate weekly charge."
+  - question: "Can I claim expenses during my DFT year?"
+    answer: "Very little. As an employee your scope to claim is narrow, limited to a few specific employment expenses incurred wholly, exclusively and necessarily for the job, which is a stricter test than the one self-employed dentists meet. The wide range of allowable expenses, indemnity, GDC fees, professional subscriptions, equipment and motoring between practices, opens up when you become a self-employed associate. Keep your receipts from the day you go self-employed, not before."
+  - question: "Is my DFT salary pensionable?"
+    answer: "Yes. During foundation training you are an NHS Pension Scheme officer, so your DFT salary is pensionable and you build a year of officer service in the 2015 CARE scheme. When you become a self-employed associate your NHS pension continues but on the practitioner basis, where pensionable pay derives from your NHS-related income rather than a salary. The two routes accrue differently, which is worth understanding early."
+  - question: "When do I register for Self Assessment after DFT?"
+    answer: "Register as soon as you start earning self-employed income, and in any case by 5 October following the end of the tax year in which you became self-employed. If you finish DFT in the summer and start as an associate, you will usually need to register that year. Late registration risks penalties, and registering early gives you time to understand the payments-on-account bill that lands in your first January."
+  - question: "Why does my first self-employed tax bill feel so large?"
+    answer: "Because nothing was deducted at source during the year and, on top of the tax for that year, HMRC asks for payments on account towards the next year. Your first January bill can therefore look like roughly eighteen months of tax at once. This is the single biggest cash-flow shock in the move from DFT to associate, and it is the reason to set money aside from your first self-employed payment. We cover the mechanics in our guide to the first Self Assessment and payments on account."
+  - question: "Do I keep the same indemnity and registration moving from DFT to associate?"
+    answer: "You must hold GDC registration and clinical indemnity throughout, but the tax treatment of the cost changes. During DFT these are typically arranged for you or are not deductible in the same way. As a self-employed associate the GDC annual retention fee and your indemnity premium become allowable expenses against your trading profit. Restoration fees and penalties are not allowable, only the standard retention and indemnity costs."
+  - question: "Will Making Tax Digital apply to me as a new associate?"
+    answer: "If your gross self-employed and property income exceeds £50,000, Making Tax Digital for Income Tax applies from 6 April 2026, which catches most full-time associates. It means digital records and quarterly updates rather than a single annual return. The threshold is tested on your prior year's figures, so a new associate may fall in scope a year or two after starting once income is established. Set up digital bookkeeping early to avoid a scramble."
+  - question: "Should I incorporate as soon as I finish DFT?"
+    answer: "Almost never in the first year. At an early associate's income level the tax saving from a limited company is small or negative once employer National Insurance and the 2026/27 dividend rates are counted, and a company costs more to run and complicates your NHS pension. Establish yourself as a sole trader first, understand your real profit, and revisit structure later. Our locum company-versus-sole-trader guide works through the comparison."
+  - question: "Do I need an accountant in my first self-employed year?"
+    answer: "It is strongly advisable. The transition from a salaried DFT year to self-employment brings Self Assessment registration, the payments-on-account bill, the switch to Class 4 National Insurance, and a new set of allowable expenses, all in your first year. A dental accountant who has guided foundation dentists through the move will set your tax reserve correctly and stop the January bill becoming a crisis."
+---
+
+<p>Dental foundation training is the bridge between qualifying and working as an independent dentist, and for tax it is a year of two halves that catches a lot of newly qualified dentists out. The first half is simple: during your <strong>DFT year you are a salaried employee</strong>, and the tax is handled for you. The second half is where it gets real: the moment you finish foundation training and become a self-employed associate, the whole tax picture changes, and the change is not gentle.</p>
+
+<p>This guide walks through both. We explain what your DFT payslip actually does, how the <strong>national salary of £42,408 from 1 April 2025</strong> is taxed, and why your NHS pension during DFT works differently from the pension you build afterwards. Then we set out the switch to self-employment: the Self Assessment registration, the change from employee National Insurance to self-employed National Insurance, the expenses that suddenly open up, and the cash-flow shock that arrives the following January. Understand it now and your first self-employed year will be a planned step rather than a nasty surprise.</p>
+
+<h2>What dental foundation training is, in tax terms</h2>
+
+<p>Foundation training, historically called vocational training or VT, is the year of supervised NHS practice that a newly qualified dentist normally completes before working independently in the NHS in England. Clinically it is a training year. For tax, the key fact is that you are an <strong>employee of your training practice</strong>, not a self-employed contractor. That single distinction drives everything else: how you are paid, how your tax is collected, what you can claim, and how your pension is built.</p>
+
+<p>This matters because almost everything written about dentist tax assumes you are a self-employed associate, with Self Assessment, allowable expenses and payments on account. None of that applies to your DFT salary. It all applies the year after. Getting the order right is the whole point.</p>
+
+<h2>Your DFT payslip: PAYE, Class 1 and the NHS pension</h2>
+
+<p>As a salaried foundation dentist, three things come off your pay before it reaches you:</p>
+
+<ul>
+<li><strong>Income tax through PAYE.</strong> Your training practice operates Pay As You Earn, deducting income tax each month based on your tax code. You do not have to calculate or file anything to pay this tax. If your code is correct, the right amount comes off across the year.</li>
+<li><strong>Class 1 National Insurance.</strong> As an employee you pay Class 1 National Insurance, deducted alongside income tax. This is a different class from the Class 4 National Insurance you will pay as a self-employed associate later.</li>
+<li><strong>NHS pension contributions.</strong> You are an NHS Pension Scheme officer during DFT, so a tiered employee contribution is deducted and you build a year of pensionable service.</li>
+</ul>
+
+<p>Because all of this happens at source, you generally have no Self Assessment obligation on your DFT salary alone. You only need to file a return if you have other untaxed income, for example freelance work outside the training contract or significant savings or investment income.</p>
+
+<h2>The £42,408 salary and what actually lands</h2>
+
+<p>The national DFT salary is <strong>£42,408 from 1 April 2025</strong>, set in the Primary Dental Services Statement of Financial Entitlements and paid at the same rate across England, Wales and Northern Ireland for a 35-hour week. It is reviewed and uplifted annually, so confirm the figure for your own training year.</p>
+
+<p>Treat that as a gross figure. After the personal allowance, basic-rate income tax, Class 1 National Insurance and your pension contribution, your take-home is meaningfully lower than £42,408. That is normal for a salaried role and is not something you can change by claiming expenses, because the employee expenses rules are narrow. The number to budget around is your net monthly pay, not the headline salary.</p>
+
+<h2>What you can and cannot claim during DFT</h2>
+
+<p>This is where new dentists most often go wrong, usually by assuming the generous self-employed expenses rules apply to their DFT year. They do not. As an employee you can only claim expenses incurred <strong>wholly, exclusively and necessarily</strong> in the performance of your duties, a deliberately strict test that most everyday professional costs fail.</p>
+
+<p>The wide menu of dental expenses, your indemnity premium, the GDC annual retention fee, professional subscriptions on HMRC's approved list, loupes and instruments, mileage between workplaces, a proportion of home and phone costs, only becomes deductible when you are <strong>self-employed</strong>. So during DFT, do not expect to reclaim these against tax. From the day you start as an associate, start keeping every receipt, because then they count.</p>
+
+<h2>Your NHS pension: officer now, practitioner later</h2>
+
+<p>During DFT you accrue NHS pension as an <strong>officer</strong>, on your salary, in the 2015 Career Average Revalued Earnings scheme. When you become a self-employed associate, your NHS pension continues but on the <strong>practitioner</strong> basis, where your pensionable pay is derived from your NHS-related income rather than a fixed salary. Both build benefits in the same 2015 scheme, but the way pensionable pay is measured differs. Our guide to the <a href="https://www.dentalfinancepartners.co.uk/blog/nhs-pension/nhs-pension-1995-2008-2015-explained-dentists">NHS pension scheme for dentists</a> explains the 2015 scheme and the officer versus practitioner distinction in full. The practical point for your first year is simply that the pension does not stop when DFT ends, it shifts basis.</p>
+
+<h2>The switch: the day you become a self-employed associate</h2>
+
+<p>When you finish foundation training and take an associate post, you stop being an employee and become <strong>self-employed</strong>. For most dentists this is the right status, because the associate model, clinical autonomy, your own indemnity, payment by fee share or per unit of dental activity, naturally supports self-employment. Status is judged on the substance of the arrangement rather than the label on the contract, but the typical associate set-up passes comfortably.</p>
+
+<p>The day that switch happens, three things change at once: nobody deducts your tax any more, your National Insurance class changes, and a whole new set of expenses becomes claimable. Each needs handling.</p>
+
+<h3>Registering for Self Assessment</h3>
+
+<p>You must tell HMRC you have started self-employment and register for Self Assessment. The deadline is <strong>5 October following the end of the tax year</strong> in which you became self-employed, but register sooner so you are set up before your first bill. Our guide to <a href="https://www.dentalfinancepartners.co.uk/blog/associate-tax/self-assessment-registration-dentist-uk">registering for Self Assessment as a dentist</a> walks through the steps. From then on you file an annual return and pay your own tax, rather than having it deducted.</p>
+
+<h3>Class 1 to Class 4 National Insurance</h3>
+
+<p>As an associate you no longer pay Class 1 National Insurance. Instead you pay <strong>Class 4 National Insurance</strong> through Self Assessment: 6% on profits between £12,570 and £50,270, then 2% above £50,270 for 2025/26. <strong>Class 2 National Insurance is no longer charged from 6 April 2024</strong> for profits above the small profits threshold, and you are treated as having paid it, so your state pension record continues without a separate weekly charge. The shift from employee to self-employed National Insurance is one of the moving parts of your first self-employed return.</p>
+
+<h3>The expenses that open up</h3>
+
+<p>As a self-employed associate the strict employee test is gone, replaced by the <strong>wholly and exclusively</strong> test for trading expenses. That brings in your indemnity, the GDC retention fee, approved professional subscriptions, CPD relevant to your current work, equipment through capital allowances, mileage between practices at 45p per mile for the first 10,000 business miles then 25p, and apportioned home and phone costs. Our guide to <a href="https://www.dentalfinancepartners.co.uk/blog/locum-tax/allowable-expenses-locum-dentists-uk-2025-26">allowable expenses for self-employed dentists</a> sets out what qualifies and what does not. Restoration fees and penalties are never allowable, only standard fees.</p>
+
+<h2>The cash-flow trap nobody warns you about</h2>
+
+<p>Here is the part that catches almost every newly qualified dentist. During DFT your tax was deducted at source, so you never had to set anything aside. In your first self-employed year, <strong>nothing is deducted</strong>. You receive your associate income gross and you are responsible for the tax on it. Worse, when your first Self Assessment bill arrives, it is not just the tax for that year. HMRC also asks for <strong>payments on account</strong> towards the next year, two interim payments due on 31 January and 31 July, each broadly half of the prior year's liability.</p>
+
+<p>The result is that your first January bill can look like roughly <strong>eighteen months of tax in one go</strong>: the balancing tax for your first self-employed year, plus the first payment on account for the next. If you have spent your associate income as it came in, this is a genuine crisis. The fix is simple but has to be deliberate: set aside a fixed percentage of every payment from your very first self-employed month. We walk through the exact numbers in our companion guide to the <a href="https://www.dentalfinancepartners.co.uk/blog/associate-tax/newly-qualified-dentist-first-self-assessment-payments-on-account">newly qualified dentist's first Self Assessment and the payments-on-account shock</a>.</p>
+
+<h2>The expenses question in more detail</h2>
+
+<p>It is worth dwelling on expenses, because it is where the difference between the two halves of the year is starkest and where money is most often left on the table. The reason an employee can claim so little is the word <strong>necessarily</strong>. For an employee, an expense is only deductible if it was incurred wholly, exclusively and <em>necessarily</em> in performing the duties of the job, meaning the duties could not be done without it. That is a high bar, and most ordinary professional costs fail it because, in HMRC's view, they put you in a position to do the job rather than being incurred in actually doing it.</p>
+
+<p>The self-employed test drops the word necessarily. A trading expense need only be incurred <strong>wholly and exclusively</strong> for the purposes of the trade. That single change is why an associate can deduct the GDC retention fee, indemnity, approved subscriptions, relevant CPD, equipment, professional journals and a share of home and motoring costs, while a foundation dentist generally cannot. Knowing this stops two mistakes: trying to claim associate-style expenses during DFT, which is wrong, and failing to claim them once self-employed, which is expensive. The watershed is your employment status, and it flips on the day DFT ends.</p>
+
+<p>A few specific items are worth naming. The <strong>GDC annual retention fee</strong> is allowable once you are self-employed, but restoration fees if you let registration lapse, and any fitness-to-practise penalties, are never allowable. <strong>CPD</strong> is deductible where it maintains or updates skills you already use, but a course that trains you in a genuinely new skill can be capital rather than revenue, which is treated differently. <strong>Loupes and instruments</strong> usually come in through capital allowances and the Annual Investment Allowance rather than as a straight expense. And <strong>motoring</strong> between practices is claimable at the approved mileage rate, but the trip from home to your first or only regular workplace is non-deductible commuting. None of this applies during the salaried DFT year; all of it applies the moment you go self-employed.</p>
+
+<h2>How your tax is actually calculated in each half</h2>
+
+<p>Seeing the calculation side by side makes the switch concrete. During DFT, your employer applies your tax code to your salary each pay period and deducts the right income tax and Class 1 National Insurance automatically. The system is cumulative, so it self-corrects across the year, and you typically end the year having paid almost exactly the right amount with nothing left to do.</p>
+
+<p>As a self-employed associate, nothing is calculated for you in real time. At the end of the tax year you (or your accountant) total your income, subtract your allowable expenses to reach your <strong>profit</strong>, and that profit is taxed: income tax at 20%, 40% or 45% across the bands, plus <strong>Class 4 National Insurance</strong> at 6% then 2%. The figure is then settled through Self Assessment, in arrears, with payments on account towards the following year layered on top. The same person, doing similar clinical work, moves from a fully automated, real-time, at-source system to a manual, annual, in-arrears one. That is the structural shift behind every practical change in this guide.</p>
+
+<h2>Student loans, the high-income picture and other moving parts</h2>
+
+<p>Two further details often surprise foundation dentists in the transition. First, if you have a <strong>student loan</strong>, repayments were deducted through PAYE during DFT but are collected through Self Assessment once you are self-employed, which can add a further slice to your first self-employed bill that you were not expecting. Second, as your associate income grows you may approach thresholds, the £50,000 to £60,000 child benefit charge zone if you have a family, or the £100,000 point where the personal allowance starts to taper, that simply did not feature on a £42,408 DFT salary. None of these is a reason for alarm, but each is a reason to have your first self-employed year modelled properly rather than guessed.</p>
+
+<h2>A worked timeline from DFT to associate</h2>
+
+<p>Take a dentist who finishes DFT in the summer and starts as an associate.</p>
+
+<ul>
+<li><strong>DFT year.</strong> Salary £42,408 (from April 2025), taxed through PAYE with Class 1 National Insurance and officer pension contributions deducted at source. No Self Assessment, no expenses to claim, no money to set aside for tax.</li>
+<li><strong>First associate months.</strong> Say you earn the equivalent of £75,000 of gross associate income over a full year once established. Nothing is deducted. You register for Self Assessment, switch to Class 4 National Insurance, and start claiming expenses. Critically, you set aside roughly a third of each payment for tax.</li>
+<li><strong>The following January.</strong> Your first self-employed return is due and your first real tax bill lands, including a payment on account towards the next year. If you reserved as you went, it is covered. If you did not, it hurts.</li>
+</ul>
+
+<p>The lesson is that the DFT salary year lulls you into a rhythm where tax looks after itself, and self-employment breaks that rhythm overnight. The dentists who manage it well are the ones who understood the switch before it happened.</p>
+
+<h2>What changes for your NHS pension at the transition, in practice</h2>
+
+<p>The pension shift from officer to practitioner deserves a closer look, because it is the part of the transition with the longest-lasting consequences and the one foundation dentists understand least. In your DFT year, your pension was simple: a deduction from a known salary, building officer service. As a practitioner associate, your pensionable pay is derived from your NHS-related income under scheme-specific rules, with a tiered contribution rate and a year-end certificate that reconciles what you actually earned. The mechanics are more involved, and the figures are not handed to you on a payslip, so this is one of the first things a dental accountant will help you get right.</p>
+
+<p>There are two practical pitfalls. The first is simply <strong>continuity</strong>: make sure your pension membership carries across cleanly from the training practice to your associate post, so you do not leave an accidental gap in pensionable service. The second is understanding that your <strong>NHS-derived income is what is pensionable</strong>, so the mix of NHS and private work you take on as an associate directly shapes your pension build. A foundation dentist who moves into a heavily private role will pension far less than one in a predominantly NHS post, which is a planning point worth understanding at the outset rather than discovering years later. None of this is a reason to delay becoming an associate; it is a reason to treat your pension as something to set up deliberately at the transition.</p>
+
+<h2>Building good habits from your first self-employed month</h2>
+
+<p>The dentists who navigate this transition smoothly tend to do four unglamorous things from the very start. They <strong>separate their money</strong>, opening a dedicated account for tax and moving a fixed slice of every payment into it before it can be spent. They <strong>keep records as they go</strong>, photographing or filing every receipt for an allowable cost from day one, rather than reconstructing a year later. They <strong>set up digital bookkeeping early</strong>, both because it keeps the tax reserve accurate and because Making Tax Digital will require it once income passes the threshold. And they <strong>engage an accountant before the first year ends</strong>, not in a panic the following January. These habits cost almost nothing to start and remove almost all the stress that the transition otherwise generates.</p>
+
+<h2>Should you do anything clever with structure in year one?</h2>
+
+<p>Almost never. New associates sometimes ask whether they should set up a limited company straight away. At an early associate's income, the tax saving from a company is small or even negative once you count <strong>employer National Insurance at 15% above the £5,000 secondary threshold</strong> and the higher 2026/27 dividend rates of 10.75% and 35.75%, and a company adds cost, payroll and NHS pension complications. Establish yourself as a sole trader first, learn your real profit, and revisit structure once there is something to optimise. Our guide to a <a href="https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-limited-company-vs-sole-trader-tax">limited company versus sole trader for a locum or early-career dentist</a> works through why the company rarely pays in the first year.</p>
+
+<h2>Your first-year checklist</h2>
+
+<ul>
+<li>Treat your DFT year as salaried: tax, National Insurance and pension are deducted for you, and there is nothing to file or claim.</li>
+<li>Budget around your net DFT pay, not the £42,408 headline.</li>
+<li>The day you become an associate, register for Self Assessment and start keeping every receipt.</li>
+<li>Understand you have switched from Class 1 to Class 4 National Insurance, payable through your return.</li>
+<li>Set aside roughly a third of every self-employed payment for tax from day one.</li>
+<li>Expect a large first January bill that includes a payment on account for the next year.</li>
+<li>Leave incorporation for later: it rarely pays in your first self-employed year.</li>
+<li>Get a dental accountant involved before, not after, your first self-employed year.</li>
+</ul>
+
+<p>Foundation training is a salaried, well-supported start. The tax only becomes your responsibility when you become an associate, and the first self-employed year carries a cash-flow shock that is entirely manageable if you see it coming. Plan the switch, reserve from the first payment, and the move from DFT to independent practice will be the smooth professional step it should be.</p>

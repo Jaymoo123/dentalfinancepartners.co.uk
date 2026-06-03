@@ -3,171 +3,226 @@ title: "GDS vs PDS vs ODS: Which NHS Dental Contract Should You Be On?"
 slug: "gds-vs-pds-vs-ods-contracts-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/gds-vs-pds-vs-ods-contracts-dentists"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "GDS vs PDS vs ODS: NHS Dental Contract Comparison for UK Dentists"
-metaDescription: "Compare GDS, PDS, and ODS NHS dental contracts. Understand UDA rates, funding models, pension implications, and which contract type suits your practice."
+metaTitle: "GDS vs PDS vs ODS NHS Dental Contracts Compared"
+metaDescription: "Compare GDS, PDS and ODS NHS dental contracts in England: what each is, who holds them, term, security and how each transfers when you sell a practice."
 altText: "UK dentist reviewing NHS contract documents with GDS, PDS, and ODS terms on a desk"
-image: ""
+image: "https://images.pexels.com/photos/8413334/pexels-photo-8413334.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "SHVETS production"
+  photographerUrl: "https://www.pexels.com/@shvets-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/female-dentist-doing-an-examination-on-her-elderly-patient-8413334/"
 h1: "GDS vs PDS vs ODS: Which NHS Dental Contract Should You Be On?"
-summary: "A clear comparison of the three main NHS dental contract types in England: General Dental Services (GDS), Personal Dental Services (PDS), and Other Dental Services (ODS). Understand how each contract affects your UDA targets, income structure, pension contributions, and practice value."
+summary: "A clear, side-by-side comparison of the three NHS dental contract types in England: General Dental Services (GDS), Personal Dental Services (PDS) and Other Dental Services (ODS). Understand what each is, who holds it, how long it lasts, the security it offers and how it transfers when you buy or sell a practice."
+keyTakeaways:
+  - "GDS is the standard open-ended NHS dental contract in England, introduced in 2006 on a Units of Dental Activity basis, and held by the large majority of practices."
+  - "PDS is a UDA-based local alternative that is typically time-limited and now rare, so the remaining term and renewal position drive its security and saleability."
+  - "ODS covers out-of-hours and operational arrangements outside the mainstream model, commissioned on its own bespoke terms rather than as a like-for-like UDA practice contract."
+  - "On an asset sale the NHS contract does not pass automatically and must be novated with commissioner consent, whereas on a share sale it stays inside the company with no novation."
+  - "There is no single national UDA value (each figure traces to the 2006 baseline), and NHS dental income is VAT-exempt under Schedule 9 Group 7 regardless of contract type."
 schema: ""
 faqs:
+  - question: "Is GDS or PDS the better contract to hold?"
+    answer: "For most practice owners a GDS contract is the more comfortable position to be in, because it is open-ended rather than time-limited, it is the type the large majority of buyers and lenders understand, and there are many comparable sales to support a valuation. A PDS contract is not inferior in itself, but its time-limited nature and rarity mean a buyer will look closely at how long is left to run and at the renewal position. Neither is automatically right or wrong; the question is whether the contract terms in front of you are commercially sound and transferable. Have the specific contract reviewed before you commit."
   - question: "Can a practice switch from GDS to PDS or vice versa?"
-    answer: "In theory, yes, but in practice it is rare. Switching contract types requires negotiation with NHS England (or the local commissioner) and is subject to local commissioning priorities. Most practices remain on their original contract type unless there is a specific reason to change, such as a service reconfiguration or a new contract procurement. If you are considering a switch, discuss it with your commissioner and a dental-specialist accountant first."
-  - question: "How does contract type affect practice goodwill value?"
-    answer: "GDS practices are generally easier to value because there are many comparable sales and a standardised UDA model. PDS and ODS practices are harder to value due to fewer comparables and less standardised terms. This can reduce the pool of potential buyers and may lower the sale price. Valuers typically apply a risk discount to non-GDS contracts. For a detailed analysis, see our <a href=\"/dental-guides/goodwill-valuation-and-sale-playbook\">Goodwill Valuation and Sale Playbook</a>."
-  - question: "Are PDS contracts being phased out?"
-    answer: "There is no national policy to phase out PDS contracts, but local commissioners may choose to convert them to GDS when contracts come up for renewal. The NHS dental contract reform programme has focused on testing new models rather than actively removing PDS. If you hold a PDS contract, monitor communications from your commissioner and seek advice if you receive a notice of proposed changes."
-  - question: "Do associates need to know which contract type their practice uses?"
-    answer: "Yes, because the contract type affects UDA targets, income stability, and pension contributions. Associates working under a GDS practice will typically have clear UDA targets and predictable income. Those in a PDS practice may have more variable income depending on the payment model. Always ask about the contract type when negotiating an associate agreement. For more guidance, see our <a href=\"/dental-guides/associate-tax-survival-guide\">Associate Tax Survival Guide</a>."
+    answer: "It is possible but uncommon. Changing contract type means renegotiating with your commissioner (NHS England locally) and depends on local commissioning priorities, so most practices stay on the contract type they started with unless there is a specific trigger such as a service reconfiguration or a new procurement. If you are weighing a switch, raise it with your commissioner and take advice from a dental-specialist accountant before agreeing to anything, because the change can affect your activity targets, your security of tenure and how the practice will later be valued."
+  - question: "Do GDS, PDS and ODS contracts all use UDAs?"
+    answer: "GDS and PDS contracts in England are both built on Units of Dental Activity (UDAs), so both carry an annual activity target and a contract value set from the 2006 baseline. ODS contracts cover operational and out-of-hours arrangements that sit outside the standard mainstream model, so they are commissioned on their own terms rather than as a like-for-like UDA practice contract. There is no single national UDA value; the per-UDA figure is specific to each individual contract."
+  - question: "Does the contract type change how the contract transfers when I sell?"
+    answer: "The mechanism is the same across GDS and PDS. On an asset sale the NHS contract does not pass automatically; it is transferred by novation, which needs the commissioner's consent, and some commissioners use the change of ownership as a moment to revisit the contract value. On a share sale the contract stays inside the company because the legal entity that holds it does not change, so there is no novation. We cover this in detail in our guide on transferring an NHS dental contract on a practice sale."
+  - question: "Do associates need to know which contract type their practice holds?"
+    answer: "Yes. The contract type sits behind your activity targets and the stability of the practice you are joining, and on a GDS or PDS contract your work feeds the practice's UDA delivery. Ask which contract the practice holds, how long it runs if it is time-limited, and how your share of activity is measured, before you sign an associate agreement. It is also worth understanding how patient charges work, because those charges count towards the contract value rather than sitting on top of it."
 ---
 
-<h2>What Are GDS, PDS, and ODS Contracts?</h2>
+<h2>What GDS, PDS and ODS Contracts Are</h2>
 
-<p>If you are a UK dentist working in England, the type of <strong>NHS contract</strong> your practice holds determines how you are paid, how many units of dental activity (UDAs) you must deliver, and how your practice is valued when you come to sell. The three main contract types are <strong>GDS</strong> (General Dental Services), <strong>PDS</strong> (Personal Dental Services), and <strong>ODS</strong> (Other Dental Services).</p>
+<p>If you are a UK dentist working in England, the type of <strong>NHS dental contract</strong> behind your practice shapes how you are paid, the activity you are committed to deliver, how secure your position is, and how cleanly the practice transfers when you come to buy or sell. The three contract types you will meet are <strong>GDS</strong> (General Dental Services), <strong>PDS</strong> (Personal Dental Services) and <strong>ODS</strong> (Other Dental Services).</p>
 
-<p>This article compares each contract type, explains the practical differences for practice owners and associates, and highlights the financial implications you need to consider. If you are buying a practice or negotiating an associate agreement, understanding which contract type applies is essential.</p>
+<p>This article sets them side by side: what each one is, who tends to hold it, how long it lasts, the security it offers and how it moves on a sale. The aim is to help you recognise quickly which contract you are dealing with and what that means in practice, whether you are reviewing your own arrangement, looking at a practice to buy, or negotiating an associate agreement.</p>
 
-<h2>GDS Contract: The Standard Model</h2>
+<p>One point applies across all of them. There is <strong>no single national UDA value</strong>. Each contract's per-UDA figure traces back to the 2006 baseline, when historic fee income was converted into a contract value and an activity target, and it has been uplifted since. So you cannot read across from one practice to another; you read the specific contract in front of you. For how that number is built and what it means, see our explainer on <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">UDA value explained for UK dentists</a>.</p>
 
-<p>The <strong>GDS contract</strong> is the most common NHS dental contract in England. It was introduced in 2006 and replaced the old fee-per-item system with a UDA-based model. Under a GDS contract, the practice has a target number of UDAs to deliver each year in exchange for a fixed annual contract value.</p>
+<h2>The Comparison at a Glance</h2>
 
-<h3>How GDS Payments Work</h3>
+<p>The table below is the quickest way to see how the three contract types differ on the points that actually matter to a practice owner: what the contract is for, who holds it, how long it runs, the security it gives you and how it transfers on a sale.</p>
 
-<p>Each practice negotiates a contract value with NHS England (or the relevant local commissioning body). This value is divided by the UDA target to give a UDA rate. For example, a practice with a £200,000 annual contract value and 8,000 UDA target has a UDA rate of £25.00. The practice receives this amount regardless of the actual treatment mix, provided the UDA target is met.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>GDS (General Dental Services)</th>
+<th>PDS (Personal Dental Services)</th>
+<th>ODS (Other Dental Services)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>What it is</strong></td>
+<td>The standard mainstream NHS dental contract for routine and ongoing care</td>
+<td>A local alternative to GDS, often used for specific or specialist provision</td>
+<td>Contracting for operational and out-of-hours arrangements outside the mainstream model</td>
+</tr>
+<tr>
+<td><strong>How common</strong></td>
+<td>The large majority of NHS practice contracts</td>
+<td>Now rare</td>
+<td>Limited and service-specific</td>
+</tr>
+<tr>
+<td><strong>Activity basis</strong></td>
+<td>UDA-based, with an annual activity target</td>
+<td>UDA-based, with an annual activity target</td>
+<td>Commissioned on its own terms, not as a like-for-like UDA practice contract</td>
+</tr>
+<tr>
+<td><strong>Term</strong></td>
+<td>Open-ended (continues unless ended)</td>
+<td>Typically time-limited</td>
+<td>Set by the specific commissioning arrangement</td>
+</tr>
+<tr>
+<td><strong>Security of tenure</strong></td>
+<td>Strong, given the open-ended term</td>
+<td>Depends on how long is left to run and the renewal position</td>
+<td>Tied to the term and scope of the arrangement</td>
+</tr>
+<tr>
+<td><strong>Who holds it</strong></td>
+<td>The bulk of general dental practices</td>
+<td>Practices on a local or specialist footing</td>
+<td>Providers covering operational or out-of-hours needs</td>
+</tr>
+<tr>
+<td><strong>Transfer on asset sale</strong></td>
+<td>Novation with commissioner consent</td>
+<td>Novation with commissioner consent</td>
+<td>Subject to the specific arrangement and commissioner</td>
+</tr>
+<tr>
+<td><strong>Transfer on share sale</strong></td>
+<td>Stays within the company (no novation)</td>
+<td>Stays within the company (no novation)</td>
+<td>Stays within the company (no novation)</td>
+</tr>
+<tr>
+<td><strong>Valuation comfort</strong></td>
+<td>Most comparables, best understood by buyers and lenders</td>
+<td>Fewer comparables, buyers scrutinise term and renewal</td>
+<td>Specialised, assessed case by case</td>
+</tr>
+</tbody>
+</table>
 
-<p>UDA rates vary significantly by region and individual contract. In England, the average UDA rate is roughly £25 to £35, but individual contracts can range from £15 to £45 or more. London and the South East typically command higher rates than the North and Midlands.</p>
+<h2>GDS: The Standard Open-Ended Contract</h2>
 
-<h3>Pros and Cons of GDS</h3>
+<p>The <strong>GDS contract</strong> is the standard NHS dental contract in England and the type the large majority of practices hold. It was introduced in 2006 when the old fee-per-item system was replaced with a model built on <strong>Units of Dental Activity</strong>. Under a GDS contract the practice agrees an annual contract value with its commissioner and a matching UDA target, and delivers that activity across the year in return for payment.</p>
 
-<p><strong>Advantages:</strong></p>
+<p>The defining feature of GDS is that it is <strong>open-ended</strong>. It does not have a built-in expiry date and continues until it is ended by one of the routes set out in the regulations. That permanence is why GDS sits at the centre of most practice valuations: a buyer is acquiring an ongoing contract rather than a clock that is running down, lenders are comfortable with it, and there is a deep pool of comparable transactions to support a price.</p>
+
+<p>Treatment is grouped into bands, and patient charges sit within that framework. A point worth holding onto, because it is often misunderstood, is that <strong>patient charges count towards the contract value, not on top of it</strong>. The charges patients pay are part of how the contract value is funded, so they do not represent extra income above the agreed figure.</p>
+
+<p><strong>Where GDS fits best:</strong></p>
 <ul>
-<li>Predictable income stream if you meet your UDA target</li>
-<li>Well understood by accountants and valuers, making practice valuation more straightforward</li>
-<li>Established model with clear performance monitoring</li>
+<li>Practice owners who want security of tenure and a contract that does not need renewing on a fixed cycle</li>
+<li>Anyone planning to sell, refinance or bring in a partner, because GDS is the most readily understood and most comparable contract type</li>
+<li>Associates joining a practice and wanting a stable base of activity to work against</li>
 </ul>
 
-<p><strong>Disadvantages:</strong></p>
+<p><strong>What to watch:</strong></p>
 <ul>
-<li>Pressure to hit UDA targets, with financial penalties for underperformance</li>
-<li>Limited flexibility to vary treatment mix without affecting UDA delivery</li>
-<li>UDA rates can be low in some areas, making it hard to cover costs</li>
+<li>The contract is target-based, so under-delivery against the agreed UDAs has to be managed across the year</li>
+<li>The per-UDA value is specific to that contract, so never assume it matches a neighbouring practice</li>
 </ul>
 
-<h2>PDS Contract: The Pilot Model</h2>
+<h2>PDS: The Time-Limited, Often Local Contract</h2>
 
-<p>The <strong>PDS contract</strong> was introduced as a pilot scheme alongside GDS in 2006. It was designed to offer more flexibility than the standard GDS model. PDS contracts are less common than GDS but still exist in some areas, particularly where local commissioners wanted to test different approaches.</p>
+<p>The <strong>PDS contract</strong> is a local alternative to GDS. It was conceived to give commissioners flexibility to arrange provision on a more tailored footing, often for specific or specialist services in a particular area. Like GDS, a PDS contract in England is <strong>UDA-based</strong>: it carries an annual activity target and a contract value drawn from the same 2006 baseline approach. The everyday running of a PDS practice can look very similar to a GDS one.</p>
 
-<h3>How PDS Differs from GDS</h3>
+<p>The features that set PDS apart are that it is <strong>typically time-limited</strong> and that it is now <strong>rare</strong>. The time-limited nature is the point that matters most commercially. Where a GDS contract simply continues, a PDS contract has a term, so the question for any owner or prospective buyer is how long is left to run and what happens at the end. That does not make PDS a problem contract, but it does make the renewal position a central part of any review.</p>
 
-<p>The key difference is that PDS contracts are not necessarily UDA-based. Some PDS contracts use a block payment model, where the practice receives a fixed annual sum with fewer activity targets. Others use a blended model combining a block element with some UDA-style targets. The exact terms depend on the local agreement.</p>
+<p>Because PDS contracts are uncommon, there are fewer comparable sales to lean on when valuing a PDS practice, and a buyer or lender will look harder at the specifics. The practical consequence is that you cannot treat a PDS contract as interchangeable with GDS; the term, the renewal outlook and the local commissioning intent all need checking on the actual contract.</p>
 
-<p>PDS contracts also often include additional requirements around access, quality, and patient satisfaction that go beyond the standard GDS framework. This can mean more administrative work but also more freedom in how you deliver care.</p>
-
-<h3>Pros and Cons of PDS</h3>
-
-<p><strong>Advantages:</strong></p>
+<p><strong>Where PDS appears:</strong></p>
 <ul>
-<li>Greater flexibility in treatment delivery compared to GDS</li>
-<li>Block payment elements reduce the pressure to hit strict UDA targets</li>
-<li>Can be more attractive for practices wanting to focus on quality over volume</li>
+<li>Practices set up on a local or specialist basis under a tailored commissioning arrangement</li>
+<li>Situations where a commissioner historically wanted provision shaped differently from the mainstream model</li>
 </ul>
 
-<p><strong>Disadvantages:</strong></p>
+<p><strong>What to watch:</strong></p>
 <ul>
-<li>Less standardised, making practice valuation harder</li>
-<li>Fewer comparables available for valuation purposes</li>
-<li>May have additional reporting and quality requirements</li>
-<li>Less common, so finding a buyer familiar with PDS can be harder</li>
+<li>The remaining term and the renewal position, which drive the security of the practice and its saleability</li>
+<li>Fewer comparables, so valuation and buyer due diligence focus closely on the contract itself</li>
+<li>Any local conditions attached to the contract that go beyond the standard framework</li>
 </ul>
 
-<h2>ODS Contract: The Specialist and Urgent Care Model</h2>
+<h2>ODS: Out-of-Hours and Operational Arrangements</h2>
 
-<p>The <strong>ODS contract</strong> covers "Other Dental Services." This is a separate contract type used for services that do not fit within the standard GDS or PDS frameworks. ODS contracts are typically used for:</p>
+<p>The <strong>ODS contract</strong>, Other Dental Services, sits outside the mainstream GDS and PDS model. It is the route commissioners use for <strong>out-of-hours and operational</strong> arrangements rather than for a standard general dental practice contract. Because it is commissioned to meet a particular operational need, an ODS arrangement is set up on its own terms rather than as a like-for-like UDA practice contract, and its scope, term and funding follow the specific commissioning agreement.</p>
+
+<p>For most practice owners ODS is not a contract you choose between in the way you might weigh GDS against PDS. It is the framework that applies to a defined operational service. If your interest is an ODS arrangement, the work is to read the specific agreement closely: what it requires, how long it lasts, and how it is funded, because there is no standard template to read across to.</p>
+
+<p><strong>Where ODS fits:</strong></p>
 <ul>
-<li>Community dental services (CDS) for special needs patients</li>
-<li>Urgent dental care services (e.g., dental access centres)</li>
-<li>Sedation services</li>
-<li>Orthodontic services</li>
-<li>Oral surgery services</li>
+<li>Out-of-hours and operational provision arranged by a commissioner outside the mainstream practice model</li>
+<li>Situations needing bespoke terms rather than a standard ongoing practice contract</li>
 </ul>
 
-<h3>How ODS Payments Work</h3>
-
-<p>ODS contracts are usually block-funded or activity-based depending on the service type. For example, an urgent dental care centre might receive a fixed annual sum to provide a specified number of appointment slots. An orthodontic ODS contract might be based on units of orthodontic activity (UOAs).</p>
-
-<p>Because ODS contracts are service-specific, the financial terms vary widely. There is no standard UDA rate or contract value formula. Each ODS contract is individually negotiated with the commissioner.</p>
-
-<h3>Pros and Cons of ODS</h3>
-
-<p><strong>Advantages:</strong></p>
+<p><strong>What to watch:</strong></p>
 <ul>
-<li>Tailored to specific patient groups or services</li>
-<li>Can be more stable if block-funded</li>
-<li>Less UDA pressure than GDS</li>
+<li>The terms are specific to the arrangement, so each one is assessed on its own facts</li>
+<li>There are few direct comparables, so any commercial or valuation question is handled case by case</li>
 </ul>
 
-<p><strong>Disadvantages:</strong></p>
+<h2>How Each Contract Transfers When You Buy or Sell</h2>
+
+<p>One of the most important practical differences between deal structures, rather than between the contract types themselves, is how the NHS contract moves on a sale. This is the same mechanism for GDS and PDS, and it is worth being precise about because it shapes the whole transaction.</p>
+
+<p>On an <strong>asset sale</strong>, where the buyer purchases the practice's assets and goodwill, the NHS contract does <strong>not</strong> pass automatically. It is transferred by <strong>novation</strong>, which requires the commissioner's consent. The commissioner has to agree to release the seller and accept the buyer in their place, and some commissioners treat a change of ownership as a point at which to revisit the contract value, so the consent step is not a formality to take for granted.</p>
+
+<p>On a <strong>share sale</strong>, where the buyer acquires the company that holds the contract, the contract simply <strong>stays within the company</strong>. The legal entity that is party to the contract does not change, so there is no novation and no separate transfer of the NHS contract itself. That is one of the structural reasons a share sale can be cleaner from an NHS-contract perspective, although it carries its own wider considerations.</p>
+
+<p>Because this transfer mechanism can make or break a deal timetable, we cover it in full in our guide on <a href="/blog/buying-a-practice/transferring-nhs-dental-contract-on-practice-sale">transferring an NHS dental contract on a practice sale</a>. If you are reviewing a contract document itself rather than the transfer, our walkthrough of <a href="/blog/nhs-contracts/how-to-read-your-nhs-dental-contract">how to read your NHS dental contract</a> takes you through the clauses that matter most.</p>
+
+<h2>What About Scotland, Wales and Northern Ireland?</h2>
+
+<p>The GDS, PDS and ODS framework described here is the <strong>England</strong> position. The picture across the rest of the UK is not uniform:</p>
 <ul>
-<li>Hard to value for sale purposes due to lack of comparables</li>
-<li>Often lower profitability than GDS or private work</li>
-<li>May have restrictive terms around service delivery</li>
+<li><strong>Wales and Northern Ireland</strong> also use a Units of Dental Activity mechanism for the bulk of NHS dental provision, so the underlying activity-based logic will feel familiar, even though the detailed contract arrangements are set within each nation's own system.</li>
+<li><strong>Scotland</strong> sits outside the UDA model entirely. It uses the item-of-service <strong>Statement of Dental Remuneration (SDR)</strong>, where fees attach to individual treatments rather than to units of activity against an annual target.</li>
 </ul>
+<p>If you practise outside England, take advice from an accountant familiar with your nation's specific dental arrangements, because the contract mechanics, and therefore the financial planning around them, differ.</p>
 
-<h2>Which Contract Is Best for Your Practice?</h2>
+<h2>A Note on VAT</h2>
 
-<p>There is no single "best" contract type. The right choice depends on your practice's location, patient demographics, and your personal priorities as a practice owner.</p>
+<p>Whichever contract type sits behind your NHS work, the income from providing NHS dental care is <strong>exempt from VAT</strong>. The supply of dental care by a registered dentist is treated as exempt under Schedule 9 Group 7 of the VAT legislation, so NHS dental income does not carry VAT and does not count towards the VAT registration threshold. The contract type does not change that exempt status. Where a practice also carries out purely cosmetic work with no therapeutic purpose, that element can fall outside the exemption, which is a separate question from which NHS contract you hold.</p>
 
-<p>If you value predictability and a straightforward valuation model, <strong>GDS</strong> is likely the best fit. Most dental practice buyers and lenders are familiar with GDS contracts, which makes selling easier. However, you must be comfortable with UDA targets and the associated performance pressure.</p>
+<h2>Which Contract Should You Be On?</h2>
 
-<p>If you want more flexibility and are prepared to accept a less standardised model, <strong>PDS</strong> may suit you. This is particularly relevant if you are in an area where PDS contracts are common and local valuers understand them.</p>
+<p>For most practice owners the honest answer is that you do not pick freely between GDS, PDS and ODS; you inherit the contract that comes with the practice, and the real task is understanding what you hold and whether it is sound. That said, the differences point clearly in one direction for a typical general practice.</p>
 
-<p>If you run a specialist service or community clinic, <strong>ODS</strong> is your only option. The key is to ensure the contract terms are commercially viable and that you have a clear exit strategy.</p>
+<p>A <strong>GDS</strong> contract is the most comfortable position to hold. It is open-ended, it is the type the large majority of buyers and lenders understand, and it has the deepest pool of comparable sales behind it, which makes valuation, lending and succession all more straightforward.</p>
 
-<h2>Financial Implications of Contract Type</h2>
+<p>A <strong>PDS</strong> contract is not inferior in itself, and a well-run PDS practice can be an excellent business. The watch-points are its time-limited term and its rarity, so the renewal outlook and the specific terms deserve real scrutiny before you commit to buying or staying.</p>
 
-<h3>Practice Valuation</h3>
+<p>An <strong>ODS</strong> contract is a different category. It applies to out-of-hours and operational provision rather than to a standard practice, so the question is not whether to choose it but whether its specific terms are commercially viable for the service it covers.</p>
 
-<p>Practice goodwill valuation methods typically rely on earnings-based multiples or percentage-of-fee-income rules of thumb. GDS practices with clear UDA targets and consistent performance are easier to value because there are many comparable sales. PDS and ODS practices are harder to value, which can reduce the pool of potential buyers and affect sale price.</p>
+<h2>Practical Next Steps</h2>
 
-<p>For a <strong>GDS practice</strong>, goodwill multiples often range from 0.6 to 1.4 times adjusted EBITDA, depending on NHS/private mix and region. A <strong>PDS practice</strong> might attract a lower multiple because of the uncertainty around future contract terms. <strong>ODS practices</strong> are typically valued on a case-by-case basis with fewer comparables.</p>
-
-<h3>Pension Contributions</h3>
-
-<p>All three contract types allow NHS Pension Scheme membership for eligible dentists. The key difference is how pensionable earnings are calculated. Under GDS, pensionable earnings are based on the contract value and UDA delivery. Under PDS and ODS, the calculation depends on the specific payment model. Always check with NHSBSA if you are unsure how your contract type affects your pension contributions.</p>
-
-<p>For a detailed guide on NHS Pension rules, see our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials for Dentists</a>.</p>
-
-<h3>Tax and Accounting</h3>
-
-<p>The contract type does not directly change your tax position, but it affects your income pattern. GDS practices with stable UDA delivery have predictable income, making tax planning easier. PDS and ODS practices with block payments may have more variable income, requiring careful cash flow management.</p>
-
-<p>If you are an associate working under any of these contracts, your tax treatment depends on your employment status, not the contract type. See our <a href="/services/associate-tax">Associate Tax Services</a> for more details.</p>
-
-<h2>What About Scotland, Wales, and Northern Ireland?</h2>
-
-<p>The GDS, PDS, and ODS contract types apply specifically to England. Other UK nations use different systems:</p>
-<ul>
-<li><strong>Scotland:</strong> Uses the Statement of Dental Remuneration (SDR) with item-of-service fees, not UDAs.</li>
-<li><strong>Wales:</strong> Uses a different contract structure with its own unit values and rules.</li>
-<li><strong>Northern Ireland:</strong> Has its own health board and contract arrangements.</li>
-</ul>
-<p>If you practice outside England, consult a dental-specialist accountant familiar with your nation's rules.</p>
-
-<h2>Practical Steps for Practice Owners</h2>
-
-<p>If you are considering buying a practice or changing your contract type, take these steps:</p>
+<p>Whether you are reviewing your own arrangement or assessing a practice to buy, work through these steps:</p>
 <ol>
-<li>Review your current contract terms carefully. Know your UDA target, contract value, and any special conditions.</li>
-<li>Get a professional valuation that accounts for your specific contract type. Our <a href="/services/practice-valuation">Practice Valuation Services</a> can help.</li>
-<li>Understand the local market. In some areas, PDS contracts are being phased out or converted to GDS. Check with your commissioner.</li>
-<li>Factor in the impact on your NHS Pension. Different contract types can affect your pensionable earnings.</li>
-<li>Speak to a dental-specialist accountant who understands the nuances of each contract type.</li>
+<li>Confirm which contract type you are dealing with, and for a PDS or ODS contract, establish the term and the renewal or end position.</li>
+<li>Check the per-UDA value on the specific contract rather than assuming a regional figure, and remember that patient charges count towards the contract value, not on top of it. Our <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">UDA value guide</a> explains how to read it.</li>
+<li>Read the contract document itself for the conditions that bind you, using our <a href="/blog/nhs-contracts/how-to-read-your-nhs-dental-contract">guide to reading your NHS dental contract</a>.</li>
+<li>Plan the transfer mechanism early if a sale is in view, because an asset sale needs commissioner consent to novate the contract, while a share sale keeps it inside the company. See <a href="/blog/buying-a-practice/transferring-nhs-dental-contract-on-practice-sale">transferring an NHS dental contract on a practice sale</a>.</li>
+<li>Speak to a dental-specialist accountant who understands how each contract type affects valuation, lending and your wider financial position.</li>
 </ol>
 
 <h2>Final Thoughts</h2>
 
-<p>The choice between <strong>GDS, PDS, and ODS</strong> contracts is one of the most important financial decisions you will make as a practice owner. Each model has trade-offs between predictability, flexibility, and valuation. There is no universal right answer, but understanding the differences will help you make an informed decision.</p>
+<p>The split between <strong>GDS, PDS and ODS</strong> is less about choosing the perfect contract and more about recognising what you hold and what it means for your security, your activity commitment and your exit. GDS gives you the open-ended, widely understood position most owners want; PDS can work well but carries a term and renewal question; ODS is a specific operational framework rather than a standard practice contract. Get clear on which one applies, read the actual document, and plan the transfer mechanism before you need it.</p>
 
-<p>If you are unsure which contract type applies to your practice or how it affects your finances, speak to a dental-specialist accountant. We work with practice owners across all contract types and can help you <a href="/free-practice-health-check">book a free practice health check</a> to review your position.</p>
+<p>If you are unsure which contract type sits behind your practice or how it affects your finances and your options on a sale, speak to a dental-specialist accountant. We work with practice owners across all contract types and can help you <a href="/free-practice-health-check">book a free practice health check</a> to review your position.</p>

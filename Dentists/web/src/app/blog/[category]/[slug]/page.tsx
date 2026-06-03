@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       siteName: siteConfig.name,
       publishedTime: post.date,
+      modifiedTime: post.updatedDate || post.date,
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {

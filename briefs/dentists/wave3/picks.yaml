@@ -1,0 +1,26 @@
+wave: 3
+buckets:
+  A:
+    label: "Bucket A — Locum and foundation dentist tax (HP §1, §8)"
+    picks:
+      - { id: A1, slug: "foundation-dentist-dft-first-year-tax-guide", label: "Foundation dentist (DFT/VT) first year: salaried tax then the move to self-employment" }
+      - { id: A2, slug: "locum-dentist-limited-company-vs-sole-trader-tax", label: "Locum dentist: limited company vs sole trader, the tax comparison" }
+      - { id: A3, slug: "locum-dentist-pension-options-outside-nhs-scheme", label: "Pension options for a locum dentist outside the NHS scheme" }
+      - { id: A4, slug: "newly-qualified-dentist-first-self-assessment-payments-on-account", label: "The newly qualified dentist's first Self Assessment and the payments-on-account shock" }
+      - { id: A5, slug: "dentist-working-abroad-uk-tax-residence-implications", label: "Working abroad as a UK dentist: tax residence and the income tax implications" }
+  B:
+    label: "Bucket B — NHS contract and UDA finance (HP §3)"
+    picks:
+      - { id: B1, slug: "uda-value-benchmarking-good-uda-rate-dental-practice", label: "UDA value benchmarking: what is a good per-UDA rate and why yours varies" }
+      - { id: B2, slug: "nhs-dental-uda-carry-forward-and-credit-rules-tax", label: "NHS dental UDA carry-forward and credit rules, and the accounting treatment" }
+      - { id: B3, slug: "handing-back-nhs-dental-contract-going-private-tax", label: "Handing back the NHS contract and going private: the financial and tax decision" }
+      - { id: B4, slug: "accounting-for-mixed-nhs-private-dental-income", label: "Accounting for mixed NHS and private income in a dental practice" }
+      - { id: B5, slug: "superannuation-nhs-contract-income-dentists-pensionable-pay", label: "Superannuation on NHS contract income: how pensionable pay is calculated" }
+  C:
+    label: "Bucket C — Practice finance and lending (HP §5)"
+    picks:
+      - { id: C1, slug: "dental-practice-acquisition-bank-loan-financing-guide", label: "Financing a dental practice acquisition: bank loans, terms and tax" }
+      - { id: C2, slug: "dental-practice-cash-flow-management-tax-reserves", label: "Dental practice cash flow management and setting aside tax reserves" }
+      - { id: C3, slug: "dental-practice-refinancing-debt-restructure-tax-implications", label: "Refinancing or restructuring dental practice debt: the tax implications" }
+      - { id: C4, slug: "dental-practice-working-capital-overdraft-finance-options", label: "Working capital and overdraft finance options for a dental practice" }
+      - { id: C5, slug: "dental-practice-financial-kpis-owner-should-track", label: "The financial KPIs every dental practice owner should track monthly" }

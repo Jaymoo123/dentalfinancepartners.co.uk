@@ -3,6 +3,7 @@ title: What Do Dental Accountants Do That General Accountants Cannot?
 slug: dental-accountants
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountants
 date: '2026-05-19'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting
 metaTitle: 'Dental Accountants: What They Do That Generalists Cannot'
@@ -11,6 +12,12 @@ altText: Dental accountant reviewing practice accounts with a dentist in a UK pr
 image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Do Dental Accountants Do That General Accountants Cannot?
 summary: 'Dental accountants bring sector-specific knowledge that general accountants rarely have: UDA contract mechanics, NHS pension scheme rules, goodwill amortisation relief, and associate self-employment status. This article explains the key differences and why they matter for your bottom line.'
+keyTakeaways:
+  - "England average UDA values sit around £25 to £35, but individual contracts range from £15 to £45 depending on region, negotiation and contract type."
+  - "All active members accrue in the 2015 CARE section, and the McCloud remedy lets those with 1995 or 2008 benefits between 1 April 2015 and 31 March 2022 choose scheme rules at retirement."
+  - "Goodwill acquired by a company on or after 1 April 2019 qualifies for fixed-rate relief at 6.5% a year, while goodwill bought between 8 July 2015 and 31 March 2019 generally has none."
+  - "Dental treatment is VAT-exempt under VATA 1994 Schedule 9 Group 7, but the £90,000 registration threshold (raised from £85,000 on 1 April 2024) can still apply to standard-rated cosmetic income."
+  - "Buying a practice with fixtures needs a CAA 2001 s.198 election to agree their value, or the buyer can lose capital allowances on those assets."
 schema: ''
 faqs:
 - question: Do I need a dental accountant if I am a salaried associate?
@@ -99,13 +106,13 @@ imageCredit:
 
 <h2>Practice Profit Extraction: Partnership vs Limited Company</h2>
 
-<p>Dental practices can operate as sole traders, partnerships, or limited companies. The optimal structure depends on profit level, NHS/private mix, pension contributions, and exit plans. Corporation tax rates are 19% for profits up to £50,000 and 25% for profits above £250,000, with marginal relief between. Dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate), with a £500 dividend allowance.</p>
+<p>Dental practices can operate as sole traders, partnerships, or limited companies. The optimal structure depends on profit level, NHS/private mix, pension contributions, and exit plans. Corporation tax rates are 19% for profits up to £50,000 and 25% for profits above £250,000, with marginal relief between. Dividend tax rates are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate), with a £500 dividend allowance.</p>
 
 <p>A dental accountant will model the tax position under each structure, including employer NIC, dividend tax, and pension contributions. They will also consider the impact of the NHS Pension Scheme annual allowance and the tapered personal allowance for high earners. A generalist may default to a limited company structure without considering the dental-specific factors.</p>
 
 <h2>Practice Sale and Business Asset Disposal Relief</h2>
 
-<p>Selling a dental practice is a capital disposal, not trading income. Gains are subject to capital gains tax, with Business Asset Disposal Relief (BADR) available if conditions are met. BADR gives a 14% rate for 2025/26, rising to 18% from 6 April 2026. The lifetime limit is £1 million.</p>
+<p>Selling a dental practice is a capital disposal, not trading income. Gains are subject to capital gains tax, with Business Asset Disposal Relief (BADR) available if conditions are met. BADR gives an 18% rate for 2026/27 (14% up to 5 April 2026). The lifetime limit is £1 million.</p>
 
 <p>A dental accountant will structure the sale to maximise BADR eligibility, including ensuring the practice is a trading business and that the seller meets the ownership and officer/employee conditions. They will also advise on the interaction between goodwill value, property value, and the BADR limit. A generalist may not know the BADR rules or may incorrectly assume all practice sales qualify.</p>
 

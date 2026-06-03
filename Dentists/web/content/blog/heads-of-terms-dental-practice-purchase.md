@@ -3,142 +3,122 @@ title: "How Do Heads of Terms Shape a Dental Practice Purchase?"
 slug: "heads-of-terms-dental-practice-purchase"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/heads-of-terms-dental-practice-purchase"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
-metaTitle: "Dental Practice Heads of Terms: What Buyers Must Know"
-metaDescription: "Learn how heads of terms set the deal structure for a dental practice purchase. Key clauses, goodwill valuation, exclusivity, and what to check before you sign."
+metaTitle: "Dental Practice Heads of Terms: Tax Points to Fix Early"
+metaDescription: "What goes in the heads of terms for a dental practice sale and the tax to settle early: asset vs share, goodwill split, earn-outs and the BADR disposal date."
 altText: "Dental practice purchase heads of terms document on a desk with a calculator and pen, UK context"
-image: ""
+image: "https://images.pexels.com/photos/7433832/pexels-photo-7433832.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Vlada Karpovich"
+  photographerUrl: "https://www.pexels.com/@vlada-karpovich"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-using-a-calculator-7433832/"
 h1: "How Do Heads of Terms Shape a Dental Practice Purchase?"
-summary: "Heads of terms (HOTs) are the non-binding skeleton of a dental practice purchase. They set the price, exclusivity period, and deal structure. Getting them right avoids costly disputes later."
+summary: "Heads of terms are the mostly non-binding skeleton of a dental practice sale. They set the price, the structure and the conditions. The tax points decided here, asset vs share, the goodwill split, earn-out treatment and the disposal date, are hard to undo later."
+keyTakeaways:
+  - "Heads of terms are mostly non-binding on price and structure, with only exclusivity, confidentiality and costs clauses typically drafted to bind."
+  - "Four tax-driving decisions are fixed here: asset vs share sale, the goodwill and tangibles split, earn-out treatment and the disposal date governing the BADR rate."
+  - "A company asset sale leaves the gain inside the company so the shareholder gets no BADR, which is why an incorporated seller usually prefers a share sale."
+  - "For an unconditional contract the CGT disposal date is the date of exchange (TCGA 1992 s.28), so an unconditional exchange on or before 5 April 2026 fixes the 14% BADR rate before it rises to 18%."
+  - "An unascertainable earn-out creates a separate chargeable asset (the Marren v Ingles right) often outside BADR, while ascertainable deferred consideration over 18 months can use instalment relief over up to eight years."
 schema: ""
 faqs:
   - question: "Are heads of terms legally binding for a dental practice purchase?"
-    answer: "Heads of terms are generally not legally binding on the main commercial terms such as price and deal structure. However, specific clauses like exclusivity, confidentiality, and costs are usually binding. The document should state which clauses are binding and which are not. Always have a solicitor review the heads of terms before you sign to understand your obligations."
+    answer: "Heads of terms are generally not legally binding on the main commercial terms such as price and deal structure. The clauses that usually are binding are exclusivity, confidentiality and costs. The document should state which parts bind and which do not. Have a solicitor review the heads of terms before you sign so you understand exactly which obligations you are taking on."
   - question: "What happens if due diligence reveals problems after heads of terms are signed?"
-    answer: "The heads of terms should include conditions precedent that allow the buyer to withdraw if due diligence reveals material issues. Common examples include UDA underperformance, equipment defects, or NHS contract problems. If no adjustment mechanism exists, the buyer may need to renegotiate the price or walk away. A well-drafted HOTs document protects the buyer's position here."
-  - question: "How long does exclusivity typically last in dental practice heads of terms?"
-    answer: "Exclusivity periods for dental practice purchases typically range from 4 to 8 weeks. For a straightforward single-site practice with a small NHS contract, 4 weeks may be enough. For a multi-site practice or one with a large NHS contract requiring novation, 8 weeks is safer. The period should match the expected time for due diligence and finance approval."
-  - question: "Can I use a standard commercial heads of terms template for a dental practice purchase?"
-    answer: "Using a generic template is risky. Dental practice purchases have unique features including NHS contract terms, Performers List requirements, goodwill valuation methods specific to dentistry, and TUPE implications for dental staff. A template designed for a shop or restaurant will miss these issues. Use a solicitor and accountant who specialise in dental practice purchases to draft or review the heads of terms."
+    answer: "Well-drafted heads of terms include conditions that let the buyer withdraw or adjust the price if due diligence reveals material issues, such as UDA underperformance, equipment defects or NHS contract problems. If no adjustment mechanism exists the buyer may need to renegotiate or walk away. The heads of terms are where you set the price-adjustment route, so do not leave it out."
+  - question: "Does the heads of terms decide whether the seller gets Business Asset Disposal Relief?"
+    answer: "It shapes it. Whether the deal is an asset sale or a share sale, and who the seller is, drives BADR. A shareholder selling shares can qualify for BADR if the conditions are met, but where a company sells its assets the gain sits in the company and the individual shareholder gets no BADR on that asset sale. Fixing the structure in the heads of terms is what protects the relief, and BADR is 14% on qualifying gains for disposals to 5 April 2026, then 18% from 6 April 2026."
+  - question: "When is the disposal date for capital gains tax on a practice sale?"
+    answer: "For an unconditional contract the disposal date for CGT is the date of exchange, not completion (TCGA 1992 s.28). For a conditional contract, for example one conditional on NHS contract novation, the disposal date is the date the condition is satisfied. This matters because an unconditional exchange on or before 5 April 2026 fixes the 14% BADR rate even if completion follows later. Settle the completion mechanics in the heads of terms with this date in mind."
 ---
 
-<h2>What Are Heads of Terms in a Dental Practice Purchase?</h2>
+<h2>What Are Heads of Terms in a Dental Practice Sale?</h2>
 
-<p>Heads of terms (HOTs) are the preliminary document that sets out the key commercial terms of a dental practice purchase. They are typically non-binding except for specific clauses such as exclusivity, confidentiality, and costs. Think of them as the blueprint for the full legal contract that follows.</p>
+<p>Heads of terms (often shortened to HoT) are the preliminary document that records the key commercial terms of a dental practice sale before the lawyers draft the full contract. They are almost always non-binding on the main commercial points, with a small number of clauses (exclusivity, confidentiality and the parties bearing their own costs) drafted to bind. Treat them as the blueprint for the sale and purchase agreement that follows.</p>
 
-<p>For a dental practice purchase, the HOTs should cover the purchase price, how it is allocated between goodwill, equipment, and premises, the proposed deal structure (asset purchase vs share purchase), and any conditions precedent such as NHS contract approval or finance. Without clear heads of terms, buyers and sellers risk misunderstandings that can derail the transaction or lead to disputes later.</p>
+<p>For a dental practice the heads of terms should set out the price, how it is split between goodwill, equipment and any property, whether the deal is an asset sale or a share sale, the earn-out or deferred-payment treatment, and the conditions that must be met before completion. Get these right and the tax planning follows cleanly. Leave them vague and you are renegotiating the most expensive points of the deal under time pressure.</p>
 
-<p>This guide explains what every UK dentist should include in their heads of terms, common pitfalls, and how the document affects your tax position and financing.</p>
+<p>This guide focuses on what to put in the heads of terms and, more importantly, the tax points to settle early. If you are at the start of the process, our <a href="/for-practice-buyers">page for practice buyers</a> sets out the wider route.</p>
 
-<h2>Why Heads of Terms Matter for Dentists</h2>
+<h2>Why the Tax Points Belong in the Heads of Terms</h2>
 
-<p>Dental practice purchases are more complex than buying a standard business. The mix of NHS contracts, goodwill valuation, equipment, and premises creates multiple layers of negotiation. Heads of terms force both parties to agree the fundamentals before instructing solicitors and incurring significant legal fees.</p>
+<p>By the time solicitors are drafting the full agreement, the structure is usually fixed and the price is broadly agreed. The cheapest moment to influence the tax outcome is at heads of terms, before either side has anchored on a number. Four decisions made here drive the tax for both parties: the choice between an asset sale and a share sale, the split of the price between goodwill and tangibles, how any earn-out is treated, and the disposal date that governs the capital gains tax rate.</p>
 
-<p>For the buyer, the HOTs protect your position during due diligence. For the seller, they provide certainty that the buyer is serious and has a clear plan. A well-drafted set of heads of terms also helps your accountant and solicitor structure the deal tax-efficiently from the start.</p>
+<p>Each of these is hard to reverse once it is in the signed agreement. A seller who discovers after exchange that the structure has cost them Business Asset Disposal Relief, or a buyer who finds the goodwill split gives them little tax relief, has very little room left to move.</p>
 
-<p>If you are considering buying a practice, our <a href="/for-practice-buyers">for practice buyers</a> page has more resources on the full process.</p>
+<h2>The Key Heads of Terms Items and the Tax They Drive</h2>
 
-<h2>Key Clauses in Dental Practice Heads of Terms</h2>
+<p>The table below maps each heads of terms item to the tax point it controls. Use it as a checklist when you read a draft.</p>
 
-<h3>Purchase Price and Allocation</h3>
-<p>The total price is the headline figure, but how it is split matters for tax. The typical allocation for a dental practice purchase is 60-80% to goodwill, with the remainder to equipment, fixtures, and possibly premises. This split affects the seller's capital gains tax (CGT) position and the buyer's future tax relief on amortisation and capital allowances.</p>
+<table>
+<thead>
+<tr><th>Heads of terms item</th><th>What it decides</th><th>The tax it drives</th></tr>
+</thead>
+<tbody>
+<tr><td>Asset sale vs share sale</td><td>Whether the buyer takes the business and assets or the company itself</td><td>Whether the seller can reach BADR (a company asset sale leaves the gain in the company, so the shareholder gets no BADR on it), whether the buyer gets capital allowances and goodwill relief, and whether latent company liabilities transfer</td></tr>
+<tr><td>Goodwill and tangibles split</td><td>How the headline price is allocated across goodwill, equipment, fixtures and property</td><td>The seller's CGT exposure and the buyer's capital allowances and goodwill amortisation relief; the split is the figure HMRC tests, so it needs a basis</td></tr>
+<tr><td>Earn-out or deferred consideration</td><td>How much of the price is fixed, deferred or contingent on future performance</td><td>Whether part of the gain is taxed as a separate asset (the Marren v Ingles right), whether BADR reaches it, and whether instalment relief is available</td></tr>
+<tr><td>Completion timing and conditionality</td><td>Whether exchange is unconditional or conditional, and the completion date</td><td>The CGT disposal date (s.28), which fixes the BADR rate band that applies to the gain</td></tr>
+<tr><td>NHS contract condition</td><td>That the deal depends on novation of the NHS contract with commissioner consent</td><td>Whether the contract is conditional (which moves the disposal date) and whether the price holds if the commissioner reduces contract value</td></tr>
+<tr><td>Exclusivity and confidentiality</td><td>A locked negotiating window and protection of shared information</td><td>Usually the only genuinely binding clauses; no direct tax effect but they protect the deal while the tax structuring is settled</td></tr>
+<tr><td>Price adjustment mechanism</td><td>Completion accounts or a locked-box with a leakage clause</td><td>The final consideration figure, which feeds the seller's gain and the buyer's base cost and allowances</td></tr>
+</tbody>
+</table>
 
-<p>For example, if you buy a practice for £500,000 and allocate £400,000 to goodwill and £100,000 to equipment, the buyer can claim capital allowances on the equipment (typically 100% relief under the Annual Investment Allowance) and tax relief on goodwill amortisation at 6.5% per year (for qualifying goodwill acquired post-1 April 2019). The seller pays CGT on the goodwill element, potentially at 14% under Business Asset Disposal Relief (BADR) for 2025/26, rising to 18% from April 2026.</p>
+<h2>Asset Sale or Share Sale: the Structural Choice</h2>
 
-<p>Your <a href="/services/practice-valuation">practice valuation</a> should inform this allocation, not just a rough guess.</p>
+<p>Most dental practice sales are structured as asset sales (sometimes called a business sale). The buyer takes the goodwill, equipment and any property, but not the selling company. This gives the buyer a clean position with no inherited liabilities and lets the buyer claim capital allowances on the tangibles and, where the conditions are met, fixed-rate relief on the goodwill.</p>
 
-<h3>Deal Structure: Asset Purchase vs Share Purchase</h3>
-<p>Most dental practice purchases are structured as asset purchases (sometimes called a business purchase). The buyer buys the goodwill, equipment, and possibly the premises, but not the company itself. This gives the buyer a clean slate with no inherited liabilities, and allows them to claim capital allowances on equipment.</p>
+<p>The structure has a sharp tax consequence for the seller, and it depends on who currently owns the practice. Where the practice is unincorporated, an asset sale by the individual sole trader or partner can qualify for BADR on the gain. Where the practice is already a company and that company sells its assets, the gain sits inside the company and is taxed as a corporation tax charge. The individual shareholder gets no BADR on that asset sale, and extracting the net proceeds out of the company then triggers a further charge. This double layer is the single most important reason an incorporated seller usually prefers a share sale, and it is why the structure must be settled at heads of terms, not assumed.</p>
 
-<p>Share purchases are less common in dentistry but happen when the buyer wants to preserve NHS contracts, avoid re-registering with the CQC, or keep the company's trading history. The downside is inheriting any hidden liabilities and losing the ability to claim capital allowances on existing assets.</p>
+<p>A share sale is only available if the practice is incorporated. The buyer takes the company with its trading history, which can help preserve NHS contracts and CQC registration, but inherits the company's liabilities and gets no fresh capital allowances or goodwill relief on assets already in the company. For the shareholder seller, a share sale can qualify for BADR where the conditions are held throughout the two years to disposal: a trading company, at least 5% of ordinary share capital and 5% of voting rights, and officer or employee status. We compare the two routes in full in our guide to <a href="/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice">asset sale vs share sale for a dental practice</a>.</p>
 
-<p>The heads of terms should state clearly whether the transaction is an asset purchase or share purchase. This decision affects the entire deal structure and the tax treatment for both parties.</p>
+<h2>The Goodwill and Tangibles Split</h2>
 
-<h3>Exclusivity Period</h3>
-<p>An exclusivity clause prevents the seller from negotiating with other buyers for a set period, typically 4-8 weeks. This gives the buyer time to complete due diligence, arrange finance, and instruct solicitors without the risk of being gazumped.</p>
+<p>The headline price is one number, but how it is split across goodwill, equipment, fixtures and any property changes the tax for both sides. Goodwill is typically the large majority of a dental practice price, with tangibles making up the balance. The split is not a formality, because it is the figure HMRC will test if the seller and buyer take inconsistent positions.</p>
 
-<p>For dental practices, exclusivity is particularly important because due diligence can take longer than for a standard business. You need to review NHS contract terms, Performers List status, equipment condition, lease terms, and staff contracts. A 6-week exclusivity period is common, but 8 weeks is safer for a complex practice with multiple sites or a large NHS contract.</p>
+<p>For the buyer, the equipment and fixtures element can attract capital allowances, with the Annual Investment Allowance giving full relief on qualifying plant and machinery up to the £1m limit. The goodwill element can attract fixed-rate relief at 6.5% per year, but only where the goodwill is acquired as part of a business acquisition that also includes qualifying intellectual property, and the relief is capped at six times that qualifying-IP spend. A blanket assumption that any goodwill bought after April 2019 attracts 6.5% relief is wrong, because of that IP condition, so the buyer should test it rather than assume it.</p>
 
-<h3>Conditions Precedent</h3>
-<p>These are the conditions that must be met before the deal completes. Common conditions for a dental practice purchase include:</p>
-<ul>
-<li>Satisfactory due diligence on financial accounts, NHS contract performance, and equipment</li>
-<li>Approval of NHS contract assignment or novation (if applicable)</li>
-<li>Obtaining finance from a lender</li>
-<li>Consent from the landlord for lease assignment or a new lease</li>
-<li>CQC registration transfer or new registration</li>
-</ul>
-<p>If any condition is not met by a specified date, either party can walk away without penalty. This protects both sides from committing to a deal that cannot proceed.</p>
+<p>For the seller, the split sets how much of the gain is goodwill (which, on a qualifying disposal by an individual, can sit within BADR) and how much is tangibles. Because the buyer wants relief-bearing tangibles and the seller wants BADR-bearing goodwill, the apportionment is a negotiation in its own right and should be recorded with a basis, not left as a round number. We work through it in detail in our note on the <a href="/blog/goodwill-and-practice-sale/dental-practice-sale-goodwill-equipment-price-apportionment">goodwill and equipment price apportionment</a>, and your <a href="/services/practice-valuation">practice valuation</a> should support the figures.</p>
 
-<h3>Timeline and Completion Date</h3>
-<p>The heads of terms should include a proposed timeline, including dates for due diligence, exchange of contracts, and completion. A typical dental practice purchase takes 3-6 months from heads of terms to completion, but this varies depending on NHS contract approvals and finance.</p>
+<h2>Earn-Outs and Deferred Consideration</h2>
 
-<p>Be realistic about the timeline. NHS contract novation can take 3-4 months alone. If the practice has a large NHS contract, factor this into your timeline from the start.</p>
+<p>Many dental deals hold part of the price back. Where the deferred amount is fixed and known at the outset (ascertainable deferred consideration, such as agreed instalments), the full amount is taxed at the disposal even though the cash arrives later. Where the consideration is unascertainable because it depends on future performance (a genuine earn-out), the tax works differently and the heads of terms should flag which one you are agreeing.</p>
+
+<p>On an unascertainable earn-out the seller is treated as receiving, at the date of disposal, a separate chargeable asset: the right to the future payment. This is the Marren v Ingles principle. CGT is charged at disposal on the valued right, then again on a second disposal when the right is satisfied and the cash comes in. Two points matter for planning. First, BADR usually does not reach that second disposal, because the right to payment is not itself a qualifying business asset, so the earn-out element is often taxed at the standard CGT rate rather than the BADR rate. Second, if the eventual payment is less than the value placed on the right, the resulting loss can be carried back against the original gain.</p>
+
+<p>Where the deferred consideration is ascertainable but spread over a period of more than 18 months, instalment relief can let the tax be paid by instalments over up to eight years. The choice between a fixed deferred structure and a performance-based earn-out therefore changes both the rate and the timing of the seller's tax, which is exactly why it belongs in the heads of terms. Our dedicated guide on <a href="/blog/goodwill-and-practice-sale/dental-practice-sale-earn-out-deferred-consideration-cgt">earn-outs and deferred consideration CGT</a> sets out the mechanics.</p>
+
+<h2>Conditions, NHS Contract Novation and the Disposal Date</h2>
+
+<p>The conditions in the heads of terms are not just commercial protections. They interact directly with the capital gains tax disposal date, and that date fixes the BADR rate that applies to the gain.</p>
+
+<p>For an unconditional contract, the CGT disposal date is the date of exchange, not the date of completion (TCGA 1992 s.28). For a conditional contract, the disposal date is the date the condition is satisfied. This is the lever behind the 6 April 2026 BADR step. An unconditional exchange on or before 5 April 2026 fixes the 14% rate even if completion follows later, whereas a contract conditional on, say, NHS contract novation will not be treated as disposed of until that condition is met, which may push the disposal into the 18% band. Sellers timing a completion around that rate change need the heads of terms drafted with the conditionality and the exchange mechanics in mind.</p>
+
+<p>NHS contracts are central to this. An asset sale transfers the contract by novation with commissioner consent, and the commissioner can refuse or use the sale to renegotiate value. The heads of terms should make the deal conditional on that consent and set out what happens to the price if the commissioner reduces the contract value. A share sale keeps the contract inside the company so no novation is needed. The timing and consent points are covered in our guide to <a href="/blog/buying-a-practice/transferring-nhs-dental-contract-on-practice-sale">transferring an NHS dental contract on a practice sale</a>. Beyond the NHS condition, the usual conditions for a dental deal include satisfactory due diligence on the accounts, NHS performance and equipment, finance approval for the buyer, landlord consent for the lease, and CQC registration. If a condition is not met by the long-stop date, either party can walk away without penalty.</p>
+
+<h2>Exclusivity, Price Adjustment and the Other Commercial Terms</h2>
+
+<p>An exclusivity clause stops the seller negotiating with other buyers for a set window, commonly four to eight weeks, giving the buyer time to complete due diligence and arrange finance without being gazumped. For a dental practice the window should match the realistic time for the work involved, which is longer where there is a large NHS contract requiring novation. Exclusivity and confidentiality are typically the only clauses drafted to bind, so they deserve careful wording even though the rest of the document does not bind.</p>
+
+<p>The price adjustment mechanism is the other term that feeds the tax. A completion accounts approach trues the price up or down against the net assets at completion, while a locked-box fixes the price at an earlier balance sheet date with a leakage clause to claw back value taken out in the meantime. Either way, the final consideration figure flows into the seller's gain and the buyer's base cost and allowances, so the mechanism should be set at heads of terms rather than argued over later. A UDA adjustment, reducing the price if actual UDA delivery falls short of the contract target, is a common dental-specific protection that sits within this clause.</p>
 
 <h2>Common Pitfalls in Dental Practice Heads of Terms</h2>
 
-<h3>Vague Goodwill Valuation</h3>
-<p>The heads of terms might say "goodwill valued at £300,000" without explaining how that figure was reached. This is a red flag. The valuation method matters because it affects the buyer's future tax relief and the seller's CGT position.</p>
+<p>A goodwill figure stated without a basis ("goodwill valued at a round sum") is a warning sign, because the valuation method drives both the buyer's relief and the seller's gain. The heads of terms should reference the valuation approach even if the final number is subject to due diligence. Our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a> explains the methods.</p>
 
-<p>A proper goodwill valuation for a dental practice typically uses an earnings-based multiple (commonly 0.6-1.4x adjusted EBITDA depending on NHS/private mix and region) or a percentage of fee income (25-60% depending on type). The heads of terms should reference the valuation method, even if the final figure is subject to due diligence adjustment.</p>
+<p>Treating the NHS contract as automatically transferable is another frequent error. It is not, and the deal should be conditional on commissioner consent with a clear route if consent is refused or delayed. Staff and the Performers List also need attention early: TUPE typically applies where the practice transfers as a going concern, and an incoming principal-performer needs to be on the Performers List for the area before completion, which can take several weeks. Finally, leaving out a price adjustment mechanism exposes the buyer where due diligence shows a weaker financial picture than expected.</p>
 
-<p>Our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a> explains the methods in detail.</p>
+<h2>Practical Steps After Signing</h2>
 
-<h3>Ignoring NHS Contract Terms</h3>
-<p>NHS contracts are not automatically transferable. The buyer must apply for assignment or novation, and the NHS body can refuse. The heads of terms should state that the deal is conditional on NHS contract approval, and include a mechanism for what happens if approval is refused or delayed.</p>
-
-<p>Some buyers include a "UDA adjustment" clause where the purchase price reduces if the actual UDA delivery is below the contract target. This is sensible because UDA underperformance can significantly affect practice profitability.</p>
-
-<h3>Overlooking Staff and Performers List</h3>
-<p>Dental practices rely on their team. The heads of terms should address how staff will be transferred (TUPE applies if the practice is a going concern) and whether the buyer requires key associates or hygienists to sign new contracts. For the seller, the Performers List status of associates must be confirmed.</p>
-
-<p>If the practice has a principal who is also the main performer, the buyer needs to ensure they can join the Performers List for that area before completion. This can take several weeks and should be factored into the timeline.</p>
-
-<h3>No Mechanism for Price Adjustment</h3>
-<p>What happens if due diligence reveals that the practice's net asset value is lower than expected, or that UDA delivery is below target? The heads of terms should include a price adjustment mechanism, typically based on a completion accounts review or a locked-box mechanism with a leakages clause.</p>
-
-<p>Without this, the buyer may overpay for a practice that does not meet the expected financial profile.</p>
-
-<h2>Tax Implications of the Deal Structure</h2>
-
-<p>The heads of terms set the foundation for tax planning. If the deal is structured as an asset purchase, the buyer can claim capital allowances on equipment and fixtures, and tax relief on goodwill amortisation. The seller pays CGT on the goodwill and equipment proceeds, with BADR available if conditions are met.</p>
-
-<p>For a share purchase, the buyer inherits the company's tax history, including any latent liabilities. The seller may pay CGT on the share sale, but the buyer gets no capital allowances on existing assets and no goodwill amortisation relief (because goodwill is already on the company's balance sheet).</p>
-
-<p>Your accountant should review the heads of terms before you sign them to ensure the deal structure is tax-efficient for your situation. Our <a href="/services/dental-accountants">dental accountants</a> team specialises in practice purchase tax planning.</p>
-
-<h2>How to Negotiate Heads of Terms</h2>
-
-<p>Heads of terms are a negotiation document. The seller will want a high price and minimal conditions. The buyer will want a lower price, strong protections, and a clear exit if due diligence fails. Both sides should be realistic about what is achievable.</p>
-
-<p>Key negotiation points include:</p>
-<ul>
-<li>The purchase price and allocation between goodwill, equipment, and premises</li>
-<li>The exclusivity period length</li>
-<li>Whether the deal is conditional on finance (buyers want this; sellers may resist)</li>
-<li>The timeline for due diligence and completion</li>
-<li>Any price adjustment mechanisms</li>
-</ul>
-<p>Use a solicitor experienced in dental practice purchases to draft or review the heads of terms. A generic commercial property solicitor may miss dental-specific issues such as NHS contract terms or Performers List requirements.</p>
-
-<h2>Practical Steps After Signing Heads of Terms</h2>
-
-<p>Once the heads of terms are signed, the buyer should immediately:</p>
-<ul>
-<li>Instruct a dental-specialist solicitor and accountant</li>
-<li>Begin financial due diligence on the practice accounts, tax returns, and NHS contract performance</li>
-<li>Arrange practice finance with a lender who understands dental lending</li>
-<li>Apply for NHS contract assignment or novation if applicable</li>
-<li>Check Performers List requirements for the area</li>
-<li>Review the lease terms and negotiate with the landlord if needed</li>
-</ul>
-<p>The heads of terms are not legally binding on the main deal terms, but they set the commercial framework. Acting quickly after signing shows the seller you are serious and helps maintain momentum.</p>
+<p>Once the heads of terms are signed, move quickly. Instruct a dental-specialist solicitor and accountant, begin financial due diligence on the accounts, tax returns and NHS performance, arrange finance with a lender that understands dental lending, apply for NHS contract novation where relevant, check the Performers List position, and review the lease. Acting promptly shows the seller you are serious and keeps the deal moving through the exclusivity window. For the buyer's side of the due diligence, see our <a href="/dental-guides/practice-purchase-financial-due-diligence">practice purchase financial due diligence guide</a>.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>Heads of terms are the most important document in a dental practice purchase that most buyers rush through. Taking time to get them right saves money, time, and stress later. The allocation of price between goodwill and equipment, the deal structure, and the conditions precedent all have lasting tax and financial consequences.</p>
+<p>Heads of terms are the document most parties rush, yet they fix the points that matter most for tax: the asset-or-share structure, the goodwill split, the earn-out treatment and the disposal date that governs the BADR rate. None of these is easy to change once the full agreement is drafted. A dental-specialist accountant and solicitor working alongside each other from the heads of terms stage will protect the seller's relief and set the buyer up for the allowances and goodwill relief the deal should deliver.</p>
 
-<p>Work with a dental-specialist accountant and solicitor from the start. They will help you draft heads of terms that protect your position and set up the deal for tax efficiency. For more guidance on the full purchase process, see our <a href="/dental-guides/practice-purchase-financial-due-diligence">practice purchase financial due diligence guide</a>.</p>
-
-<p>Every practice purchase is different. The figures and terms that work for one deal may not suit another. Speak to a dental-specialist accountant before signing any heads of terms to ensure the deal structure matches your personal tax position and long-term goals.</p>
+<p>Every practice sale is different, and the structure that suits one deal can be the wrong answer for the next. Speak to a dental-specialist accountant before signing any heads of terms, so the structure, the timing and the price split all match your personal tax position and your goals. Our <a href="/services/dental-accountants">dental accountants</a> team works on practice sales from the heads of terms stage onward.</p>

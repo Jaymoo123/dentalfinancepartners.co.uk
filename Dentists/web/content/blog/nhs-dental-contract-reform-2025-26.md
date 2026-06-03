@@ -3,115 +3,122 @@ title: "What Does NHS Dental Contract Reform Mean for Your Practice Finances in 
 slug: "nhs-dental-contract-reform-2025-26"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/nhs-dental-contract-reform-2025-26"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "NHS Dental Contract Reform 2025/26: Financial Impact for UK Dentists"
-metaDescription: "Understand how NHS dental contract reform, band reform, and commissioning changes affect your practice income, UDA values, and tax planning in 2025/26."
+metaTitle: "NHS Dental Contract Reform 2025/26: What It Means"
+metaDescription: "How England's incremental NHS dental contract reform affects practice income and planning for 2025/26 and 2026/27, and why the UDA model still applies."
 altText: "UK dentist reviewing NHS contract documents in a modern practice office"
-image: ""
+image: "https://images.pexels.com/photos/305567/pexels-photo-305567.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Daniel Frank"
+  photographerUrl: "https://www.pexels.com/@fr3nks"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/white-dental-equipment-near-wall-305567/"
 h1: "What Does NHS Dental Contract Reform Mean for Your Practice Finances in 2025/26?"
-summary: "NHS dental contract reform in 2025/26 is reshaping how practices are commissioned and paid. This article explains the financial implications for practice owners and associates, including changes to band structures, UDA values, and the need for updated tax planning."
+summary: "NHS dental contract reform in England is incremental, not a wholesale replacement. The UDA mechanism continues through 2025/26 into 2026/27, with phased changes to urgent care, prevention and quality. This article explains what has actually changed and the practical message for practice owners and associates: plan on the contract as it stands."
+keyTakeaways:
+  - "NHS dental contract reform in England is incremental: the UDA mechanism continues and the GDS/PDS contracts are amended, not replaced, for 2026/27."
+  - "Urgent care moves from the historic 1.2-UDA basis to a separate fixed and activity-based crediting arrangement, with a minimum unscheduled-care requirement for larger contracts."
+  - "Prevention changes introduce a standalone fluoride varnish course and reclassify fissure sealants from Band 1 to Band 2."
+  - "Reforms reshape how existing contract value is earned rather than increasing the total budget, so the effect is composition not a step change."
+  - "VAT exemption, NHS Pension rules and the income tax treatment of contract income are unchanged by reform; new payment credits still form part of the UDA-based contract value."
 schema: ""
 faqs:
-  - question: "Will NHS dental contract reform reduce my practice income?"
-    answer: "Not necessarily. Contract reform aims to improve access and quality, which could increase your contract value if you serve under-documented areas or meet quality targets. However, practices with high UDA volumes and low rates may see their core payment set below their current contract value, requiring them to earn the difference through quality payments. The financial impact depends on your specific contract, patient mix, and local commissioning decisions. Model both scenarios with your accountant."
-  - question: "How does band reform affect associate payments?"
-    answer: "Band reform changes the patient charge per course of treatment. If your associate agreement pays you a percentage of gross NHS fees (typically 40-55%), a change in band structure directly affects your income. For example, if a new band is introduced at a higher charge level, your gross fee income per course rises, increasing your percentage payment. However, if the practice's contract value is adjusted to offset the increase, your effective percentage may need renegotiation. Some practices are moving to fixed sessional rates to simplify the arrangement."
-  - question: "Is the NHS pension affected by contract reform?"
-    answer: "The NHS Pension Scheme rules themselves are not changing, but your pensionable earnings may change if your contract moves to a blended model. The fixed core payment is likely to be pensionable. Quality or performance-related payments may or may not be pensionable, depending on how they are structured. Associates moving from a percentage-of-fees basis to a fixed sessional rate should check whether the new arrangement still qualifies for NHS Pension Scheme membership. Speak to NHS Pensions or your dental accountant for a definitive answer."
-  - question: "When will contract reform be fully implemented?"
-    answer: "There is no single national implementation date. Contract reform is being rolled out through local pilot programmes and commissioning changes. Some areas, such as the North West and South West of England, are already operating blended models. Other areas may not see significant changes for several years. The government has indicated a phased approach, with full implementation expected by 2028-2030, but this timeline is subject to political and budgetary decisions. Check with your regional NHS England team for your local timeline."
+  - question: "Is the UDA system being scrapped in 2025/26 or 2026/27?"
+    answer: "No. Despite years of debate about replacing it, the Units of Dental Activity (UDA) mechanism continues. The reforms confirmed for 2026/27 amend the existing General Dental Services and Personal Dental Services contracts rather than replacing them. New payment credits introduced by the reforms still form part of your contract value, which remains a UDA-based contract. For financial planning, you should assume the UDA model continues and plan on the contract as it stands, not on assumed wholesale reform."
+  - question: "Will the reforms increase or reduce my NHS contract value?"
+    answer: "It depends on your specific contract and how you deliver care. The reforms reshape how parts of the contract value are earned, for example by changing how urgent care and prevention are credited and by introducing minimum delivery requirements for some activity. They do not, of themselves, hand every practice a larger budget. The practical question is whether the change in how you earn your existing value helps or hinders your delivery profile. Model it against your own activity data with your accountant rather than assuming an uplift."
+  - question: "How does contract reform affect associate pay?"
+    answer: "If your associate agreement pays a percentage of UDA value, any change in how activity is credited can change your gross income per course of treatment. Reforms that re-credit urgent care or prevention differently can shift the mix of work that generates your share. The headline contract value still flows through the same fee-split, so the effect is usually a change in composition rather than a step change in total. Review your agreement against the new crediting rules and recalculate before assuming your income is unaffected."
+  - question: "Where should I check the confirmed reform detail for my contract?"
+    answer: "NHS England and the Department of Health and Social Care are the authoritative sources. NHS England has published quality and payment reform guidance and is releasing detailed contractual guidance in stages, with some elements confirmed and others still to be finalised. Your commissioner (the relevant integrated care board) and your Local Dental Committee can confirm what applies to your individual contract. Treat any third-party summary, including this article, as a starting point and verify the specifics for your contract before you plan around them."
+  - question: "Does contract reform change my NHS pension or tax position?"
+    answer: "The NHS Pension Scheme rules are not changed by contract reform. Your pensionable earnings flow from your contract value in the usual way, so a change in how that value is earned does not, by itself, change the pension framework. The tax position also follows the existing rules: NHS contract income is recognised when earned and taxed under self assessment or corporation tax depending on your structure. The reform changes the composition of your income, not the tax treatment of it. Speak to a dental-specialist accountant if your delivery profile is changing materially."
 ---
 
-<p>NHS dental contract reform has been a topic of discussion for over a decade. The 2025/26 tax year brings concrete changes that affect how practices are commissioned, how UDAs are allocated, and how banded fees are structured. For practice owners and associates, these changes have direct financial consequences that require careful planning.</p>
+<p>NHS dental contract reform has been discussed for over a decade, and the noise often runs ahead of the substance. For practice owners and associates trying to plan, the question that matters is simple: what has actually changed, and what should you assume when you price a deal, set a budget or negotiate an associate agreement? This article answers that question for 2025/26 and the 2026/27 contract year that follows it.</p>
 
-<p>This article explains what the current reform proposals mean for your practice income, your tax position, and your long-term financial strategy. We focus on the practical financial implications, not the policy debate.</p>
+<p>The short version is that reform in England is incremental. The Units of Dental Activity (UDA) mechanism continues. The General Dental Services (GDS) and Personal Dental Services (PDS) contracts are being amended, not torn up and replaced. That single fact should anchor your planning. We focus here on the practical financial implications, not the policy debate, and we point you to NHS England and your commissioner for the confirmed detail that applies to your individual contract.</p>
 
-<h2>What Is NHS Dental Contract Reform in 2025/26?</h2>
+<h2>What Is NHS Dental Contract Reform, and What Has Actually Happened?</h2>
 
-<p>Contract reform refers to the ongoing process of changing how NHS dental services are commissioned, funded, and delivered. The current system, based on Units of Dental Activity (UDAs) and banded patient charges, has been criticised for incentivising volume over quality and for failing to improve access in under-served areas.</p>
+<p>Contract reform is the ongoing process of changing how NHS dental services are commissioned, funded and delivered. The existing system, built on UDAs and banded patient charges, has long been criticised for rewarding volume over quality and for failing to improve access in under-served areas. Reform is the attempt to address that.</p>
 
-<p>In 2025/26, several pilot programmes and local commissioning changes are being rolled out across England. Wales, Scotland, and Northern Ireland operate under separate contract arrangements, but similar reform pressures exist in each nation. The key financial changes for English practices include:</p>
+<p>For England, the direction is now clearer than it has been for some time. Following a consultation on quality and payment reforms, the government confirmed in late 2025 that it would proceed with a set of changes, with some amendments to reflect the feedback. Those changes are being introduced for the 2026/27 contract year. Crucially, NHS England has confirmed that the new payment credits the reforms introduce still form part of a dental contractor's contract value. In other words, the contract remains a UDA-based contract that is being amended at the edges, not a new model that replaces the UDA.</p>
 
-<ul>
-<li>Revised band structures for patient charges (band reform)</li>
-<li>New commissioning models that move away from pure UDA-based contracts</li>
-<li>Increased emphasis on prevention and oral health outcomes</li>
-<li>Changes to how contract values are uplifted annually</li>
-</ul>
+<p>Wales, Scotland and Northern Ireland operate under separate arrangements (Scotland does not use UDAs at all), and similar reform pressures exist in each nation. This article is about England. If you hold a contract elsewhere, check your own national framework.</p>
 
-<p>These changes affect how much income your practice generates from NHS work, how that income is recognised for tax purposes, and how you plan for future profitability.</p>
+<p>The practical headline for your finances is this: through 2025/26 and into 2026/27, plan on the contract as it stands. Do not price a practice purchase, sale or budget on assumed reform upside that has not been confirmed for your contract.</p>
 
-<h2>Band Reform: What Changes and What Stays the Same</h2>
+<h2>What the 2026/27 Reforms Change (and What They Do Not)</h2>
 
-<p>Band reform is the most visible change for patients and practices. The current three-band system (Band 1: £26.80, Band 2: £73.50, Band 3: £319.10 for 2025/26) is being reviewed. Proposals include introducing a fourth band for more complex treatments or adjusting the thresholds between bands.</p>
+<p>The confirmed reforms are a set of targeted, incremental changes layered onto the existing UDA contract. The table below summarises the main confirmed elements and the practical financial point for each. Some elements are still being finalised by NHS England, so treat the detail as subject to confirmation for your individual contract.</p>
 
-<p>For a practice owner, band reform affects your gross fee income per patient course of treatment. If a new band is introduced at a higher charge level, your private-equivalent income from NHS work could increase. However, the Department of Health and Social Care may adjust the contract value to offset any increase in patient charge revenue, meaning your total NHS income might not rise.</p>
+<table>
+<thead>
+<tr><th>Area</th><th>What is changing for 2026/27</th><th>Practical point for your finances</th></tr>
+</thead>
+<tbody>
+<tr><td>Underlying mechanism</td><td>The UDA model continues. New payment credits form part of the existing contract value. The GDS/PDS contract is amended, not replaced.</td><td>Plan on the contract as it stands. There is no wholesale replacement to budget for.</td></tr>
+<tr><td>Urgent and unscheduled care</td><td>Urgent care moves away from the historic 1.2-UDA basis to a separate fixed and activity-based crediting arrangement. Larger contracts carry a minimum unscheduled-care delivery requirement.</td><td>Re-credited urgent work changes the mix of how your contract value is earned. Model your urgent-care volumes against the new requirement.</td></tr>
+<tr><td>Prevention</td><td>A standalone fluoride varnish course (for example by suitably trained and indemnified dental nurses) is introduced, and fissure sealants are reclassified from Band 1 to Band 2.</td><td>Prevention activity is credited differently. Skill-mix delivery may help you meet contract requirements more efficiently.</td></tr>
+<tr><td>Complex care</td><td>New complex care pathways for adults, intended to use fixed national tariffs rather than inconsistent UDA allocations. Detail is being finalised by NHS England later in the year.</td><td>Potentially significant for high-needs caseloads. Do not plan firm numbers until the tariffs are confirmed.</td></tr>
+<tr><td>Quality improvement</td><td>An opt-in quality improvement programme (for example focused on the clinical appropriateness of recall intervals), with a payment for completing the requirements.</td><td>Optional. Weigh the payment against the delivery and reporting effort before opting in.</td></tr>
+</tbody>
+</table>
 
-<p>Consider a practice that sees 5,000 Band 2 courses of treatment per year. At £73.50 per course, that generates £367,500 in patient charge income. If band reform reclassifies 20% of those courses into a new Band 2a at £95.00, the patient charge income rises to £390,000. But if the contract value is reduced by the same amount, your net NHS income stays flat.</p>
+<p>What is not changing is just as important. There is still no single national UDA value, so each contract's per-UDA value remains specific to that contract. Bands and their UDA weightings remain the structural basis of most activity. Patient charges continue to count towards the contract value rather than sitting on top of it. And the year-end reconciliation and clawback framework continues to apply. If you want the detail on how those mechanics work, our guides on the <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">UDA value and how it is set</a> and on <a href="/blog/nhs-contracts/how-to-read-your-nhs-dental-contract">how to read your NHS dental contract</a> cover them in full.</p>
 
-<p>The key financial question is whether the reform increases your practice's total NHS revenue or merely shifts the composition between contract payments and patient charges. Your dental accountant should model both scenarios for your specific contract.</p>
+<h2>The Income Point: Composition, Not a Step Change</h2>
 
-<h2>Commissioning Changes: Moving Away from UDAs</h2>
+<p>The most common misunderstanding about reform is that it will hand every practice a bigger budget. For most contracts, the reforms reshape how parts of the existing contract value are earned rather than adding to the total. Urgent care is credited on a new basis. Prevention activity is weighted differently. Some contracts carry a minimum unscheduled-care delivery requirement. None of that, of itself, increases the headline money.</p>
 
-<p>NHS commissioning is shifting from a pure UDA-based model to a blended model that includes a fixed "core" payment for essential services and a variable "quality" or "activity" payment. This is already happening in some pilot areas, such as the Dental Contract Reform Programme in the North West and South West of England.</p>
+<p>For a practice owner, the financial question is therefore about delivery profile, not windfall. If a large share of your activity is urgent care, the change in how that work is credited matters to you, and you should model it against your actual volumes. If your caseload is prevention-heavy, the reclassification of certain preventive treatments and the new standalone prevention course change how you earn against target. The total contract value is the same money sliced differently, so the practice that adapts its delivery to the new crediting rules protects its position best.</p>
 
-<p>For a practice owner, this means your contract value is no longer simply UDA volume multiplied by UDA rate. Instead, you receive a guaranteed core payment for providing a minimum level of service, plus additional payments for meeting access targets, treating vulnerable patients, or delivering preventive care.</p>
+<p>This is why a generic "reform will help" or "reform will hurt" view is unhelpful. The honest answer is that it depends on your contract value, your activity mix and how your delivery maps onto the new rules. Model it with your own data.</p>
 
-<p>The financial impact depends on your current UDA rate and volume. A practice with a high UDA rate (£40+ per UDA) and stable volume may see its core payment set below its current contract value, requiring it to earn the difference through quality payments. A practice with a low UDA rate (£20 per UDA) and high volume may benefit from a higher core payment that recognises its fixed costs.</p>
+<h2>What This Means for Associates</h2>
 
-<p>For associates paid on a percentage of gross NHS fees, the change is significant. If the practice's core payment is fixed and does not vary with activity, your associate percentage may need to be renegotiated. Some practices are moving to a fixed-sessional rate for associates to reflect the new commissioning model. You can use our <a href="/calculators/associate-take-home-calculator">associate take-home calculator</a> to model different payment structures.</p>
+<p>For associates paid a percentage of UDA value, the reforms change the mix of activity that generates your share rather than the fee-split itself. If urgent care is re-credited and you do a lot of it, your gross income per course of that treatment can shift. If prevention is reweighted, the value of that part of your day changes. The contract value still flows through the same percentage arrangement, so the effect is usually a change in composition rather than a step change in total earnings.</p>
 
-<h2>Tax Implications of Contract Reform</h2>
+<p>The practical step is to read your associate agreement against the new crediting rules before you assume your income is unaffected. Where the new rules change how a material part of your work is valued, it is reasonable to revisit the agreement so the split still reflects the work you actually do. You can use our <a href="/calculators/associate-take-home-calculator">associate take-home calculator</a> to compare different payment scenarios. Some practices use a contract-reform conversation as the moment to move to a clearer sessional or blended basis, but that is a commercial choice, not something the reforms require.</p>
 
-<p>Contract reform creates several tax planning considerations for practice owners and associates.</p>
+<h2>Tax, VAT and Pension: Mostly Unchanged</h2>
 
-<h3>Income Recognition and Timing</h3>
+<p>It is worth being clear about what contract reform does not touch, because a good deal of anxiety is misplaced.</p>
 
-<p>If your contract moves to a blended model with a fixed core payment, you recognise that income when it is earned, not when UDAs are delivered. This can affect your profit and loss account timing and your self-assessment tax payments. For a practice owner, the core payment is likely to be monthly or quarterly, smoothing your cash flow compared to the UDA-based model where income can be lumpy.</p>
+<h3>Income tax and timing</h3>
 
-<p>For associates, if your practice changes your payment basis from a percentage of UDA fees to a fixed sessional rate, your income becomes more predictable for tax purposes. This can simplify your self-assessment return, but it may also affect your ability to claim certain expenses if you are treated as an employee for tax purposes.</p>
+<p>NHS contract income is recognised when it is earned and taxed under self assessment (for sole traders and partnerships) or corporation tax (for an incorporated practice), exactly as before. A change in how parts of the contract value are credited changes the composition of your income, not the tax treatment of it. Your monthly contract payments continue to smooth cash flow across the year, and the year-end reconciliation still trues up delivery against target.</p>
 
-<h3>VAT Considerations</h3>
+<h3>VAT</h3>
 
-<p>NHS dental treatment remains VAT-exempt under Group 7 Schedule 9 VATA 1994. However, if band reform introduces a new band for purely cosmetic treatments (for example, tooth whitening as part of an NHS course), the VAT treatment of that element could change. HMRC looks at the medical purpose of each treatment, not just whether it is NHS-funded.</p>
+<p>NHS dental treatment remains VAT-exempt as a supply of dental care, and the reforms do not change that. The VAT watch-points for a dental practice continue to be the private and cosmetic side of the business, where treatment with no therapeutic purpose can be standard-rated. If your delivery mix shifts and you take on more private work alongside NHS activity, review your partial-exemption position, but that is a function of your private growth, not of contract reform.</p>
 
-<p>If your practice starts offering more private cosmetic treatments alongside NHS work, you need to review your VAT partial exemption calculation. A practice that is predominantly NHS-exempt may need to register for VAT if its private taxable turnover exceeds £90,000. Our <a href="/services">dental accounting services</a> team can help you model the VAT impact.</p>
+<h3>NHS pension</h3>
 
-<h3>Capital Allowances and Equipment</h3>
+<p>The NHS Pension Scheme rules are not changed by contract reform. Your pensionable earnings flow from your contract value in the established way, so a change in how that value is earned does not, by itself, alter the pension framework. The familiar pension considerations still apply, including the difference between practitioner and officer pensionable pay and the pension consequences of incorporating. Those are driven by your structure, not by the reforms.</p>
 
-<p>If contract reform requires you to invest in new equipment (for example, digital scanners for preventive care or new surgery setups for additional patient access), you can claim capital allowances. The Annual Investment Allowance (AIA) of £1,000,000 covers most dental equipment, including chairs, X-ray units, autoclaves, and computers. This provides 100% tax relief in the year of purchase.</p>
+<h2>Reform and Practice Valuation</h2>
 
-<p>If you are buying a practice with existing fixtures, you need a Section 198 election under CAA 2001 to ensure you can claim capital allowances on the fixtures you acquire. This is particularly relevant if the seller has already claimed allowances on those items.</p>
+<p>For anyone buying or selling, the right posture is caution rather than speculation. Buyers should value a practice on the contract as it stands, using the actual per-UDA value, the actual delivery history and the confirmed rules for 2026/27. Pricing in assumed reform upside that has not been confirmed for that specific contract is how buyers overpay. Sellers, equally, should not expect a premium for reform that has not landed.</p>
 
-<h2>NHS Pension Implications</h2>
-
-<p>Contract reform does not change the NHS Pension Scheme rules, but it can affect your pensionable earnings. If your practice moves to a blended model with a fixed core payment, that core payment is likely to be pensionable. However, any quality or performance-related payments may or may not be pensionable, depending on how they are structured.</p>
-
-<p>For associates, if your payment basis changes from a percentage of fees to a fixed sessional rate, you need to check whether the new arrangement qualifies for NHS Pension Scheme membership. Associates paid on a percentage of gross fees are typically eligible. Associates paid a fixed sessional rate may still be eligible if the practice treats them as a worker for pension purposes. Our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme guide</a> covers the eligibility rules in detail.</p>
-
-<p>The McCloud remedy continues to affect members who had benefits in the 1995 or 2008 sections between 1 April 2015 and 31 March 2022. At retirement, you can choose which scheme rules apply to that period. Contract reform does not change this, but it may affect your final salary if you are in the 1995 section and approaching retirement.</p>
-
-<h2>Planning for Your Practice Finances</h2>
-
-<p>Contract reform is not a single event. It is a gradual process that varies by region and by individual contract. The most important financial steps you can take are:</p>
-
-<ul>
-<li>Review your current contract value and understand how it is calculated (UDA volume x rate, plus any additional payments).</li>
-<li>Model the financial impact of moving to a blended model, using your actual patient data and cost structure.</li>
-<li>Negotiate your associate agreement or practice partnership deed to reflect the new payment structure.</li>
-<li>Update your tax planning to account for changes in income timing and composition.</li>
-<li>Review your NHS Pension Scheme contributions and check whether your pensionable earnings are affected.</li>
-</ul>
-
-<p>For practice owners considering a sale, contract reform affects goodwill valuation. Buyers will discount practices with uncertain contract values or low UDA rates. Our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a> explains how to prepare your practice for sale in a changing NHS environment.</p>
+<p>Where reform does matter to a deal is risk. A contract with a heavy reliance on a category of activity that is being re-credited carries more uncertainty than one with a balanced delivery profile, and a careful buyer will price that uncertainty. The transfer mechanics of the contract on a sale are unchanged: an asset sale transfers the contract by novation with commissioner consent, and a share sale keeps the contract inside the company. Reform does not alter that.</p>
 
 <h2>What Should You Do Now?</h2>
 
-<p>Contract reform is not optional. It is happening in your region or will happen soon. The practices that adapt quickly will protect their income and profitability. Those that wait may find their contract value eroded or their associate relationships strained.</p>
+<p>Reform is incremental, it is real, and it is being introduced in stages. The sensible response is neither to ignore it nor to over-react to it. Take these practical steps:</p>
 
-<p>Start by reviewing your current contract and understanding the specific reform proposals for your area. NHS England publishes local commissioning plans, and your regional dental deanery or Local Dental Committee can provide updates.</p>
+<ul>
+<li>Confirm what applies to <em>your</em> contract. NHS England and the Department of Health and Social Care are the authoritative sources, and some reform detail is still being finalised. Your commissioner and Local Dental Committee can confirm the specifics.</li>
+<li>Map your delivery profile against the new crediting rules, especially for urgent care and prevention, using your own activity data.</li>
+<li>Treat unconfirmed elements (such as complex care tariffs still being finalised) as planning assumptions only, not as fixed numbers.</li>
+<li>Review associate and partnership agreements against the new rules so the split still reflects the work actually done.</li>
+<li>Keep pricing any purchase, sale or budget on the contract as it stands, not on assumed reform upside.</li>
+</ul>
 
-<p>Then speak to a dental-specialist accountant who understands NHS contract structures and can model the financial impact on your practice. Generalist accountants may not appreciate the nuances of UDA rates, band reform, and NHS pension eligibility.</p>
+<p>If you want to understand how the year-end position interacts with these changes, our explainer on <a href="/blog/nhs-contracts/nhs-dental-contract-clawback-explained">how NHS dental contract clawback works</a> sets out the reconciliation framework that continues to apply.</p>
 
-<p>If you would like to discuss how contract reform affects your practice finances, contact our team. We work with practice owners, associates, and locum dentists across the UK to optimise tax planning and practice profitability in a changing NHS environment.</p>
+<p>If you would like to discuss how contract reform affects your particular practice finances, contact our team. We work with practice owners, associates and locum dentists across the UK to plan tax and profitability around the NHS contract as it actually stands, and to keep that plan current as reform is confirmed.</p>

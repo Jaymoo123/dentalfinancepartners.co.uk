@@ -3,149 +3,146 @@ title: "How Does the Statement of Dental Remuneration (SDR) Work for NHS Dental 
 slug: "scotland-statement-of-dental-remuneration-explained"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/scotland-statement-of-dental-remuneration-explained"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "SDR Scotland: NHS Dental Remuneration Explained for Dentists"
-metaDescription: "Understand how the Statement of Dental Remuneration (SDR) works for NHS dental in Scotland. Item of service fees, capitation, seniority payments, and tax implications explained."
+metaTitle: "SDR Scotland: How NHS Dentists Are Paid Explained"
+metaDescription: "How the Statement of Dental Remuneration pays Scottish NHS dentists per item of service, how it differs from England's UDA model, and the tax that follows."
 altText: "NHS dental practice in Scotland with dentist treating patient, SDR contract paperwork visible"
-image: ""
+image: "https://images.pexels.com/photos/8413334/pexels-photo-8413334.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "SHVETS production"
+  photographerUrl: "https://www.pexels.com/@shvets-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/female-dentist-doing-an-examination-on-her-elderly-patient-8413334/"
 h1: "How Does the Statement of Dental Remuneration (SDR) Work for NHS Dental in Scotland?"
-summary: "The Statement of Dental Remuneration (SDR) is the contract framework for NHS dental services in Scotland. Unlike England's UDA system, the SDR pays dentists per item of service, with additional capitation and continuing care payments. This article explains how SDR works, what it means for your income, and the key tax and accounting considerations for Scottish dental practices."
+summary: "The Statement of Dental Remuneration (SDR) is the payment framework for NHS dental services in Scotland. Unlike England's UDA activity model, the SDR pays a defined fee for each item of treatment, alongside allowances. This article explains how the SDR works, how the 1 November 2023 payment reform changed it, and the key tax and accounting points for Scottish dental practices."
+keyTakeaways:
+  - "Scottish NHS dentistry is paid item-of-service under the Statement of Dental Remuneration, with a defined fee per treatment and no UDA target, unlike England's contract."
+  - "From 1 November 2023 a new SDR determination replaced hundreds of treatment codes with a shorter, streamlined set, aiming for a higher-trust, lower-bureaucracy model."
+  - "The SDR also provides capitation and continuing care payments for registered patients, seniority payments for principals, and practice, remote-rural and training allowances."
+  - "Dental care is VAT exempt under VATA 1994 Schedule 9 Group 7 UK-wide, with only non-exempt cosmetic turnover counting towards the £90,000 registration threshold."
+  - "Scottish dentists accrue in the 2015 CARE NHS Pension section, and because dividends are not pensionable, incorporation can reduce accrual even where it saves tax."
 schema: ""
 faqs:
   - question: "What is the main difference between the SDR in Scotland and the UDA system in England?"
-    answer: "The SDR (Statement of Dental Remuneration) in Scotland is an item-of-service system. You are paid a specific fee for each individual treatment you provide, such as an examination, filling, or extraction. In England, the NHS contract uses Units of Dental Activity (UDAs), where you are paid a fixed sum per UDA regardless of the actual treatment mix. Scotland has no UDA targets. Instead, income depends directly on the volume and type of treatments delivered."
+    answer: "The SDR (Statement of Dental Remuneration) in Scotland is an item-of-service system. You are paid a defined fee for each individual treatment you provide, such as an examination, a filling or an extraction. In England, the NHS contract uses Units of Dental Activity (UDAs), where a course of treatment earns a set number of units and you are paid per UDA up to an annual target. Scotland has no UDA target. Instead, NHS income depends directly on the volume and mix of treatments delivered against the SDR fee scale, so the link between work done and income earned is more direct."
+  - question: "How did the November 2023 reform change the SDR?"
+    answer: "From 1 November 2023 the Scottish Government introduced a new determination of the SDR that replaced the previous long list of treatment codes with a much shorter, streamlined set of item-of-service codes. The stated aim was a higher-trust, lower-bureaucracy model giving dentists more clinical discretion. Any course of treatment opened on or after that date is paid under the reformed scale. Because the codes and fees have changed and are uplifted periodically, always work from the current SDR determination rather than older figures."
   - question: "Can an associate dentist in Scotland claim the same expenses as one in England?"
-    answer: "Yes, the same general principles apply. Associates in Scotland can claim allowable trade expenses such as GDC registration, indemnity insurance, CPD costs, professional subscriptions, and travel between practices. However, because SDR income is more variable, careful budgeting for tax payments on account is essential. Associates should also ensure their fee split agreement clearly states how lab fees and materials are deducted."
+    answer: "Yes, the same general principles apply. Self-employed associates in Scotland can claim allowable trade expenses such as GDC registration, indemnity cover, CPD costs, professional subscriptions and travel between practices. Because item-of-service income can be more variable than a fixed UDA contract, careful budgeting for payments on account matters. Associates should also make sure the fee-split agreement states clearly how laboratory fees and materials are treated before the share is calculated."
   - question: "Are locum dentists in Scotland subject to IR35 rules?"
-    answer: "Yes. If a locum dentist works through a personal service company (PSC) and the engaging practice is a medium or large client, the practice is responsible for determining the locum's IR35 status under the off-payroll rules (effective from 6 April 2021). If the role is deemed inside IR35, the practice must deduct PAYE and National Insurance from the locum's fees. Small practices are exempt from this responsibility, but the locum's PSC must still assess its own status."
+    answer: "Yes. Where a locum works through a personal service company and the engaging practice is a medium or large client, the off-payroll working rules that apply from 6 April 2021 make the practice responsible for determining the locum's status and issuing a Status Determination Statement with reasons. If the engagement is inside the rules, the fee-payer deducts PAYE and National Insurance before paying the company. A locum working across several practices can hold a mix of inside and outside determinations, so each engagement is assessed on its own facts."
   - question: "How are seniority payments taxed for practice owners in Scotland?"
-    answer: "Seniority payments are treated as part of the practice's NHS income. For a sole trader or partnership, they are included in the practice's trading profits and taxed as self-employed income at the owner's marginal rate. For a limited company, they are part of the company's turnover and subject to corporation tax. Seniority payments are also pensionable under the NHS Pension Scheme, so they affect your pension contributions and benefits."
+    answer: "Seniority payments form part of the practice's NHS income. For a sole trader or partnership they are included in trading profits and taxed as self-employed income at the owner's marginal rate. For a limited company they form part of turnover and fall within corporation tax. Seniority and other SDR earnings also feed into NHS pensionable pay, so they affect pension contributions and accrual. Where you incorporate, remember that dividends are not pensionable, which changes how much of your income builds NHS pension."
 ---
+
+<p>If you practise NHS dentistry in Scotland, your NHS income does not run on Units of Dental Activity. It runs on the Statement of Dental Remuneration, the item-of-service framework that pays a defined fee for each treatment you provide. Anyone moving across the border quickly finds the two systems do not translate. This guide explains what the SDR is, how the 2023 payment reform reshaped it, how Scottish NHS dentists are paid, and the tax and accounting points that follow. For the English mechanism it contrasts with, see our explainers on <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">what a UDA value is</a> and <a href="/blog/nhs-contracts/how-uda-rates-vary-by-region-uk">how UDA rates vary by region</a>.</p>
 
 <h2>What is the Statement of Dental Remuneration (SDR)?</h2>
 
-<p>The Statement of Dental Remuneration (SDR) is the contractual framework that governs how NHS dental services are paid for in Scotland. If you practise NHS dentistry in Scotland, the SDR determines every aspect of your NHS income: what treatments you can claim for, how much each treatment is worth, and what rules apply to patient registration and continuing care.</p>
+<p>The Statement of Dental Remuneration (SDR) is the framework that governs how NHS dental services are paid for in Scotland. It is issued by the Scottish Government and sets out the fee scale for NHS treatment, the rates for salaried dentists, and the allowances, grants and reimbursements available to practices and practitioners. If you hold an NHS arrangement with a Health Board in Scotland, the SDR determines what you can claim for, what each item is worth, and the rules attached to NHS patient care.</p>
 
-<p>Unlike the NHS dental contract in England, which is built around Units of Dental Activity (UDAs) and a banded fee system, the SDR operates on a fundamentally different principle. It is an item-of-service system, meaning you are paid for each specific treatment you provide, with a set fee for each item. This distinction is critical for any dentist working in Scotland, whether you are a practice owner, an associate, or a locum.</p>
+<p>The defining feature of the SDR is that it is an item-of-service system. You are paid for each specific treatment you carry out, with a set fee for each item, rather than a single payment per unit of activity. This is a genuinely different model from the one used in England, Wales and Northern Ireland, and the distinction matters for every Scottish dentist, whether you own a practice, work as an associate, or cover sessions as a locum. The SDR is updated periodically by determination, with fee uplifts and occasional structural change, so the safest habit is to price your NHS activity from the current determination rather than from a figure that may have moved on.</p>
 
-<p>The SDR is formally issued by the Scottish Government and is updated periodically, typically with annual changes to fee levels and occasionally more significant structural amendments. It applies to all NHS general dental practitioners (GDPs) in Scotland who hold a contract with a Health Board.</p>
+<h2>How the November 2023 Payment Reform Changed the SDR</h2>
+
+<p>The most important recent change is the NHS dental payment reform that took effect from 1 November 2023. Under a new determination of the SDR, the Scottish Government replaced the previous long list of treatment codes (which numbered in the hundreds) with a much shorter, streamlined set of item-of-service codes. The aim, set out in the wider oral health strategy, was a higher-trust, lower-bureaucracy model that gives dentists greater clinical discretion. Any course of treatment opened on or after 1 November 2023 is paid under the reformed scale, and fees have been uplifted in the years since. The takeaway for planning is the principle rather than a number. The SDR is a live document, so model your NHS income from the determination currently in force.</p>
 
 <h2>How the SDR Differs from the English UDA System</h2>
 
-<p>The most common point of confusion for dentists moving between England and Scotland is the difference between UDAs and the SDR. In England, NHS dental contracts are built around UDAs. Each contract specifies a target number of UDAs to be delivered per year, and the practice is paid a fixed sum per UDA, regardless of the actual treatment provided. A simple examination might count as 1 UDA, while a complex course of treatment might count as 3 or 12 UDAs, depending on the band.</p>
+<p>The single most common point of confusion for dentists who move between England and Scotland is the difference between UDAs and the SDR. In England the NHS contract is built around Units of Dental Activity: each course of treatment earns a set number of units, the practice holds an annual UDA target, and it is paid a per-UDA value up to that target. There is no national UDA value, and the figure on each contract descends from a 2006 baseline, which is why values differ widely from one English practice to the next. In Scotland there are no UDAs and no annual activity target of that kind. The SDR sets a fee for each treatment item, you claim for each item you provide, and the payment is built up from those individual fees subject to the rules in the determination. The link between work done and income earned is more direct, but income is also more sensitive to treatment volume and mix than a smoothed UDA contract. The table below summarises the contrast.</p>
 
-<p>In Scotland, there are no UDAs. Instead, the SDR lists hundreds of individual treatment items, each with a specific fee. For example, an examination has a set fee, a scale and polish has a set fee, a two-surface amalgam filling has a set fee, and so on. You claim for each item you provide, and the total payment is the sum of those individual fees, subject to certain caps and rules.</p>
+<table>
+<thead>
+<tr><th>Feature</th><th>Scotland: SDR (item of service)</th><th>England: UDA contract</th></tr>
+</thead>
+<tbody>
+<tr><td>Payment basis</td><td>A defined fee per treatment item claimed</td><td>A set value per Unit of Dental Activity delivered</td></tr>
+<tr><td>Activity target</td><td>No UDA target; income follows treatment claimed</td><td>Annual contracted UDA target to deliver</td></tr>
+<tr><td>How the rate is set</td><td>National SDR fee scale, set by determination</td><td>Per-contract value from a 2006 baseline, no national rate</td></tr>
+<tr><td>Year-end risk</td><td>Income reflects activity actually claimed in the period</td><td>Under-delivery against target can trigger clawback or carry-forward</td></tr>
+<tr><td>Income variability</td><td>More variable, tracks treatment volume and mix</td><td>Smoothed by monthly contract payments against target</td></tr>
+<tr><td>Set by</td><td>Scottish Government, administered via Health Boards</td><td>NHS England commissioners</td></tr>
+</tbody>
+</table>
 
-<p>This item-of-service model gives Scottish dentists a more direct link between the work they do and the income they generate. However, it also means that practice income is more variable and depends on the volume and mix of treatments provided, rather than on a fixed UDA target.</p>
+<p>Because the mechanisms are so different, UDA benchmarks do not carry across the border, and a Scottish practice cannot be valued or budgeted as if it held a UDA contract.</p>
 
 <h2>Key Components of the SDR</h2>
 
-<h3>Item of Service Fees</h3>
+<h3>Item-of-Service Fees</h3>
 
-<p>The core of the SDR is the item-of-service fee schedule. This is a comprehensive list of all NHS treatments that can be claimed, each with a specific fee. The schedule is divided into sections covering examinations, radiographs, fillings, crowns, dentures, root canal treatments, periodontal treatment, oral surgery, and many others.</p>
-
-<p>Each item has a code and a fee. For example, an examination (code 0101) might have a fee of around £20, while a simple extraction (code 1101) might be around £30. Complex treatments such as a metal-ceramic crown (code 0601) might be £150 or more. The exact fees are updated annually by the Scottish Government and are published in the SDR document.</p>
-
-<p>It is important to note that some items have restrictions. For instance, a scale and polish (code 0201) can only be claimed once per patient per 6-month period. Similarly, a full-mouth radiograph survey (code 0303) has a specific claim frequency limit. Understanding these rules is essential to avoid incorrect claims that could lead to clawbacks or compliance issues.</p>
+<p>The core of the SDR is the item-of-service fee scale, the list of NHS treatments that can be claimed, each with its own defined fee. The current scale follows the streamlined post-reform structure and covers the range of general dentistry available on the NHS in Scotland. Some items carry frequency limits or eligibility conditions, so accurate claiming against the current determination is essential. Incorrect or unsupported claims can lead to recovery of payments or compliance attention, so good records and current knowledge of the scale both matter.</p>
 
 <h3>Capitation and Continuing Care Payments</h3>
 
-<p>In addition to item-of-service fees, the SDR includes capitation and continuing care payments. These are periodic payments made for each registered patient, intended to cover the cost of maintaining the patient's oral health and providing ongoing care.</p>
-
-<p>Capitation payments are made for children (under 18) and are calculated based on the patient's age and the practice's capitation band. Continuing care payments are made for adult patients who are registered with the practice. These payments are typically lower than the item-of-service fees but provide a stable, recurring income stream that helps smooth out the variability of treatment-based claims.</p>
-
-<p>The exact capitation and continuing care rates are set out in the SDR and are adjusted annually. For a typical practice with a mixed patient list, these payments can represent a significant portion of total NHS income, often 20-30% or more.</p>
+<p>Alongside item-of-service fees, the SDR provides for registration-based payments. Capitation arrangements apply to registered child patients and continuing care arrangements apply to registered adults, giving a recurring element of income tied to the registered list rather than to treatment delivered. These payments smooth some of the variability of a pure item-of-service model, and the rates sit in the determination in force. The balance between treatment fees and registration payments varies by practice depending on the patient base.</p>
 
 <h3>Seniority Payments</h3>
 
-<p>The SDR also includes a seniority payment system for practice owners. This is an additional payment made to principals who have been providing NHS dental services for a certain number of years. The payment is calculated based on the principal's length of service and is intended to reward experience and retention in the NHS.</p>
-
-<p>Seniority payments are not available to associates or locums. They are paid directly to the practice owner and are treated as part of the practice's NHS income. The rates are tiered, with higher payments for longer service. For example, a principal with 10 years of service might receive a seniority payment of several thousand pounds per year, while someone with 25 years might receive significantly more.</p>
+<p>The SDR includes seniority payments for principals, rewarding length of service in NHS dentistry. Seniority is paid to the practice owner and is tiered by years of service, so it is not available to associates or locums. For tax it forms part of the practice's NHS income and is pensionable, so it both adds to taxable profit and feeds into NHS pensionable pay.</p>
 
 <h3>Other Allowances and Grants</h3>
 
-<p>The SDR also includes various allowances and grants. These include:</p>
+<p>The SDR also provides for a range of allowances and grants. The main categories are the following.</p>
 
 <ul>
-<li><strong>Practice Allowance:</strong> A fixed annual payment to cover practice overheads, calculated based on the practice's list size and other factors.</li>
-<li><strong>Rural Allowance:</strong> Additional payments for practices in remote or rural areas, intended to support access to NHS dental services in underserved locations.</li>
-<li><strong>Vocational Training Grant:</strong> Payments for practices that host foundation dentists (formerly vocational trainees).</li>
-<li><strong>Discretionary Grants:</strong> Health Boards may offer additional grants for specific purposes, such as practice improvements or recruitment incentives.</li>
+<li><strong>Practice allowances:</strong> payments contributing to practice running costs, reflecting factors such as list size.</li>
+<li><strong>Remote and rural support:</strong> additional payments aimed at sustaining NHS access in remote or rural areas, more prominent in Scotland than in much of England.</li>
+<li><strong>Vocational and foundation training payments:</strong> support for practices that host trainee dentists.</li>
+<li><strong>Discretionary support:</strong> Health Boards may offer further support for purposes such as recruitment or improvement, on terms that vary locally.</li>
 </ul>
+
+<p>The rates for each allowance sit in the current determination and are revised periodically, so treat the list above as the categories to look for rather than fixed amounts.</p>
 
 <h2>How Associates and Locums Are Paid Under the SDR</h2>
 
-<p>For associate dentists working in Scotland, the SDR directly affects how they are paid by the practice. Most associates in Scotland work on a fee-percentage basis, typically 40-55% of the NHS fees they generate. Because the SDR is an item-of-service system, the associate's income is directly tied to the volume and type of treatments they provide.</p>
+<p>For associate dentists in Scotland, the SDR shapes the fee-split arrangement with the practice. Most associates are paid a percentage of the NHS fees they generate, so because the SDR is item-of-service, their earnings track the volume and mix of treatments they personally deliver. That is a different rhythm from a UDA-based arrangement in England and can mean more month-to-month variation, which is why budgeting and tax planning deserve attention. The fee-split agreement should be explicit about whether laboratory fees and materials are deducted before the share is worked out, since that point can move take-home pay materially.</p>
 
-<p>This is different from England, where associates often work on a UDA-based contract. In Scotland, an associate's earnings can vary significantly from month to month, depending on patient demand and the mix of treatments. This variability makes budgeting and tax planning particularly important for Scottish associates.</p>
+<p>Locum dentists are usually paid a session or day rate rather than a share of each item, but the rate a practice can sustain still depends on the SDR income it generates. Locums working through a limited company also need to weigh the off-payroll working (IR35) rules. Where the engaging practice is a medium or large client, the practice determines status, and an inside determination means PAYE and National Insurance are deducted before the company is paid.</p>
 
-<p>Locum dentists in Scotland also need to understand the SDR. If you are a locum working in an NHS practice, the practice will typically pay you a daily or session rate, rather than a fee-per-item. However, the practice's ability to pay that rate depends on the SDR income it generates. Locums working through a limited company should also be aware of IR35 considerations, as the engaging practice (if a medium or large entity) is responsible for determining your employment status under the off-payroll rules.</p>
-
-<p>For more detailed guidance on associate tax and self-employment status, see our <a href="/dental-guides/associate-tax-survival-guide">Associate Tax Survival Guide</a>.</p>
+<p>For more on associate status and self-employment, see our <a href="/dental-guides/associate-tax-survival-guide">Associate Tax Survival Guide</a>.</p>
 
 <h2>Tax and Accounting Considerations for Scottish Dental Practices</h2>
 
-<p>The SDR has several implications for tax and accounting that differ from the English system. Here are the key points to consider.</p>
-
 <h3>Income Recognition</h3>
 
-<p>Under the SDR, NHS income is recognised when the treatment is completed and the claim is submitted. For accounting purposes, most practices use an accruals basis, meaning income is recorded in the period the treatment was provided, even if the payment from the Health Board arrives later. This is standard practice but requires careful tracking of claims and payments.</p>
-
-<p>Because the SDR involves many small claims, it is essential to have robust practice management software that can track claims and payments accurately. Errors in claiming or recording can lead to discrepancies in your accounts and potential issues with HMRC.</p>
+<p>NHS income under the SDR is generally recognised on an accruals basis, so income is recorded in the period the treatment is provided and the claim arises, even if the Health Board payment lands later. Because the SDR generates many individual claims, accurate software and disciplined reconciliation between claims submitted and payments received are essential, and gaps between the two are a common source of error in dental accounts.</p>
 
 <h3>Expense Allocation</h3>
 
-<p>Practice expenses in Scotland are generally similar to those in England, but the mix of treatments can affect the cost base. For example, a practice that does a high volume of laboratory work (crowns, dentures) will have higher lab fees, which need to be factored into the associate fee split or practice profitability calculations.</p>
-
-<p>Capital allowances on dental equipment (chairs, X-ray machines, autoclaves) are claimed in the same way as in England. The Annual Investment Allowance (AIA) of £1,000,000 is available for qualifying plant and machinery, including dental chairs, compressors, and X-ray units. If you are buying a practice, you may need a Section 198 election to claim allowances on fixtures purchased from the seller.</p>
+<p>Practice expenses in Scotland follow the same principles as elsewhere in the UK, but the treatment mix shapes the cost base. A practice doing more laboratory-heavy work carries higher lab costs, which need to be reflected in the associate fee split and in profitability analysis. Capital allowances on dental equipment such as chairs, compressors and imaging are claimed as across the UK, with the Annual Investment Allowance available for qualifying plant and machinery, and a Section 198 election may be needed on a practice purchase to fix the value of fixtures passing with the property.</p>
 
 <h3>VAT on Dental Treatment</h3>
 
-<p>VAT treatment of dental services is the same across the UK. Treatment by a registered dental professional in the course of their profession is exempt from VAT under Schedule 9 Group 7 of the Value Added Tax Act 1994. This applies to both NHS and private treatment. However, purely cosmetic treatments without a medical purpose may be standard-rated. Tooth whitening is a known borderline area that HMRC scrutinises.</p>
-
-<p>If your practice provides private cosmetic services, you should review your VAT position carefully. For more information, see our <a href="/services">dental accountancy services</a> page.</p>
+<p>VAT treatment of dental services is UK-wide and does not change in Scotland. The supply of dental care by a registered dental professional in the course of their profession is exempt from VAT under Schedule 9 Group 7 of the Value Added Tax Act 1994, whether the work is NHS-funded or private, because the exemption turns on the supply being medical care. Purely cosmetic treatment with no therapeutic purpose can be standard-rated, and tooth whitening and facial aesthetics are the classic borderline cases that need a principal-purpose assessment. Only non-exempt (taxable) turnover counts towards the £90,000 VAT registration threshold, so a practice with both exempt and taxable supplies operates partial exemption. For wider support, see our <a href="/services">dental accountancy services</a> page.</p>
 
 <h3>NHS Pension Scheme</h3>
 
-<p>Scottish dentists are members of the NHS Pension Scheme, which is administered by the NHS Business Services Authority (NHSBSA) for Scotland. The scheme operates on the same principles as the rest of the UK, with the 2015 CARE section being the current scheme for most members. The McCloud remedy applies equally to Scottish dentists, meaning those who had benefits in the 1995 or 2008 sections between 1 April 2015 and 31 March 2022 can choose at retirement which scheme rules apply to that period.</p>
-
-<p>Pension contributions are based on your NHS pensionable earnings, which include item-of-service fees, capitation payments, and seniority payments. If you are a practice owner, you must ensure that your pension records are accurate and that you are not overpaying or underpaying contributions.</p>
-
-<p>For a detailed guide, see our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials for Dentists</a>.</p>
+<p>Scottish dentists are members of the NHS Pension Scheme on the same principles as the rest of the UK, with the 2015 Career Average Revalued Earnings section the scheme in which all active members now accrue. The McCloud remedy applies to Scottish members in the same way, so service in the remedy period from 1 April 2015 to 31 March 2022 was rolled back into the legacy section, with eligible members choosing between legacy and 2015 terms at retirement. Pensionable pay for a practitioner derives from NHS-derived income, which under the SDR includes item-of-service fees, registration payments and seniority. One point to plan around is that if you incorporate and take dividends, those dividends are not pensionable, so incorporation can reduce NHS pension accrual even where it saves tax. For a fuller treatment, see our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials for Dentists</a>.</p>
 
 <h2>Practical Tips for Managing SDR Income</h2>
 
-<p>Here are some practical steps to help you manage your finances under the SDR.</p>
+<p>A few habits make the item-of-service model easier to manage.</p>
 
 <ul>
-<li><strong>Track your claims monthly.</strong> Use your practice software to generate reports showing the value of claims submitted each month. This helps you forecast income and identify any trends or issues.</li>
-<li><strong>Budget for variability.</strong> Because SDR income depends on treatment mix, your monthly income can fluctuate. Build a cash reserve to cover slower months, and consider using a budgeting tool or working with a dental-specialist accountant to forecast your annual income.</li>
-<li><strong>Review your fee split regularly.</strong> If you are an associate, ensure your fee percentage reflects the true cost of materials and lab work. Some practices deduct lab fees before calculating the associate's share, while others do not. Make sure you understand the arrangement.</li>
-<li><strong>Plan for tax payments.</strong> Self-employed associates and locums in Scotland must make payments on account if their tax bill exceeds £1,000. This means paying 50% of your estimated tax bill on 31 January and 50% on 31 July. Budget for these payments throughout the year.</li>
-<li><strong>Consider incorporation.</strong> Some Scottish dentists operate through a limited company for tax efficiency. This can be beneficial for profit extraction and pension planning, but it requires careful structuring and compliance with IR35 rules for locums. Speak to a specialist accountant before incorporating.</li>
+<li><strong>Track claims monthly.</strong> Report the value of claims submitted each month so you can forecast income and catch issues early.</li>
+<li><strong>Budget for variability.</strong> Because income tracks treatment mix, cash flow can swing month to month. Hold a reserve for quieter periods and forecast across the full year.</li>
+<li><strong>Pin down the fee split.</strong> If you are an associate, confirm whether lab fees and materials come out before your percentage is applied, and review the split as your treatment mix changes.</li>
+<li><strong>Plan for payments on account.</strong> Self-employed associates and locums make payments on account where the prior-year tax bill is high enough, which front-loads tax into January and July, so set money aside through the year.</li>
+<li><strong>Weigh incorporation carefully.</strong> A limited company can be efficient for some Scottish dentists, but pair any tax saving against the loss of NHS pension accrual on dividends and the IR35 position for company locums.</li>
 </ul>
 
-<p>For practice owners, we also recommend using our <a href="/calculators/practice-valuation-calculator">Practice Valuation Calculator</a> to understand the value of your practice under the SDR system. Goodwill valuations in Scotland follow similar principles to England, but the income stream is different, so a tailored approach is essential.</p>
+<p>For practice owners, our <a href="/calculators/practice-valuation">Practice Valuation Calculator</a> is a useful starting point. Goodwill valuation in Scotland follows the same general principles as the rest of the UK, but because the income stream is item-of-service rather than UDA-based, the earnings must be modelled on the SDR rather than mapped across from a UDA contract.</p>
 
-<h2>Common Questions About the SDR</h2>
+<h2>Can I Move from England to Scotland and Keep My NHS Contract?</h2>
 
-<h3>Can I move from England to Scotland and keep my NHS contract?</h3>
-
-<p>No. NHS dental contracts are issued by individual Health Boards. If you move from England to Scotland, you will need to apply for a new contract with the relevant Scottish Health Board. Your English UDA contract will not transfer. You will also need to join the Performers' List for Scotland.</p>
-
-<h3>How are SDR fees updated?</h3>
-
-<p>The Scottish Government reviews SDR fees annually, usually with effect from 1 April. Fee changes are published in the SDR document and are typically based on recommendations from the Doctors' and Dentists' Review Body (DDRB). However, the government may decide to implement changes in full, in part, or not at all, depending on budget constraints.</p>
-
-<h3>What happens if I overclaim under the SDR?</h3>
-
-<p>Overclaiming can lead to clawbacks, where the Health Board recovers the overpaid amount. In serious cases, it can result in compliance investigations or referral to the General Dental Council (GDC). It is essential to have robust systems in place to ensure claims are accurate and comply with SDR rules.</p>
+<p>No. NHS dental arrangements are held with individual Health Boards, and an English UDA contract does not transfer. Moving to Scotland means joining the relevant Health Board's NHS arrangements and the Scottish performers list, and working under the SDR rather than a UDA contract from that point. Because the income basis is item-of-service, treat the move as a fresh financial model rather than a transfer of an existing contract.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>The Statement of Dental Remuneration is a detailed and specific framework that governs NHS dental income in Scotland. Its item-of-service model offers a direct link between treatment and income, but it also requires careful management of claims, expenses, and tax obligations. Whether you are a practice owner, associate, or locum, understanding the SDR is essential for running a successful NHS dental practice in Scotland.</p>
+<p>The Statement of Dental Remuneration governs NHS dental income in Scotland, and its item-of-service basis gives a direct link between treatment and pay. That directness is a strength, but it also means income, accounting and tax planning all hinge on claiming accurately against the current determination and managing the variability of treatment-based pay. The 1 November 2023 reform streamlined the system and the SDR continues to be revised, so currency matters more here than in a settled contract. Because the SDR is unique to Scotland, a generalist accountant unfamiliar with dental work can miss both its risks and its opportunities.</p>
 
-<p>Because the SDR is unique to Scotland, generalist accountants who are not familiar with dental-specific tax issues may miss important opportunities or risks. Working with a dental-specialist accountant who understands the SDR, the NHS Pension Scheme, and the tax implications of item-of-service income can save you time, money, and stress.</p>
-
-<p>If you would like to discuss your specific situation, contact our team of <a href="/services/dental-accountants">dental accountants</a> who specialise in Scottish dental practices. We can help you with tax planning, practice valuation, associate contracts, and all aspects of dental finance.</p>
+<p>If you would like to talk through your own position, contact our <a href="/services/dental-accountants">dental accountants</a> who work with Scottish dental practices on tax planning, valuation, associate arrangements and the wider financial picture.</p>

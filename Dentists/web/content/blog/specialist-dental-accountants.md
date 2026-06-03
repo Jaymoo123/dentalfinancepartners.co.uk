@@ -3,6 +3,7 @@ title: What Does a Specialist Dental Accountant Do That a General Accountant Can
 slug: specialist-dental-accountants
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/specialist-dental-accountants
 date: '2026-05-20'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting
 metaTitle: 'Specialist Dental Accountants: Why UK Dentists Need One'
@@ -11,12 +12,18 @@ altText: UK dentist reviewing financial documents with a specialist dental accou
 image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Does a Specialist Dental Accountant Do That a General Accountant Cannot?
 summary: A specialist dental accountant brings sector-specific knowledge of NHS contracts, UDA valuations, the NHS Pension Scheme, goodwill amortisation rules, and VAT exemptions that a general accountant typically does not have. This article explains the key differences and why they matter for UK dentists.
+keyTakeaways:
+  - "England UDA rates average around £25 to £35 but range from £15 to £45 or more per contract, while Scotland uses item-of-service SDR fees rather than UDAs at all."
+  - "Goodwill amortisation gives company tax relief at 6.5% a year for acquisitions after 1 April 2019, but goodwill bought between 8 July 2015 and 31 March 2019 generally has none."
+  - "Buying a practice with fixtures needs a CAA 2001 section 198 election to claim capital allowances, and Structures and Buildings Allowance gives 3% straight-line on qualifying premises after 29 October 2018."
+  - "Dental treatment is VAT exempt under VATA 1994 Schedule 9 Group 7, but borderline cosmetic work like tooth whitening can be standard-rated, with the registration threshold at £90,000."
+  - "Business Asset Disposal Relief is 18% for 2026/27, and a spouse's salary or dividends must reflect genuine market-rate work or HMRC can reclassify the dividends as earnings."
 schema: ''
 faqs:
 - question: How do I know if my current accountant is missing dental-specific tax relief?
   answer: Look at your last set of accounts. Did your accountant claim capital allowances on dental chairs, X-ray equipment, or compressors using the Annual Investment Allowance? Did they check whether you need a section 198 election for fixtures when you bought the practice? Did they model your NHS pension growth against the annual allowance? If the answer to any of these is no, you may be missing relief that a specialist dental accountant would identify.
 - question: Can a general accountant handle a dental practice sale?
-  answer: A general accountant can prepare the basic accounts, but a dental practice sale involves goodwill valuation methods specific to dentistry, tax relief on goodwill amortisation at 6.5% per year, and Business Asset Disposal Relief at 14% for 2025/26. The quarterly NASDAL goodwill survey provides benchmarking data that generalists do not have. A specialist will also advise on incorporation relief under Section 162 TCGA 1992 if you are transferring to a company structure.
+  answer: A general accountant can prepare the basic accounts, but a dental practice sale involves goodwill valuation methods specific to dentistry, tax relief on goodwill amortisation at 6.5% per year, and Business Asset Disposal Relief at 18% for 2026/27. The quarterly NASDAL goodwill survey provides benchmarking data that generalists do not have. A specialist will also advise on incorporation relief under Section 162 TCGA 1992 if you are transferring to a company structure.
 - question: What is the cost difference between a general and a specialist dental accountant?
   answer: Fees vary by firm and complexity. A general accountant might charge £500 to £1,500 per year for a basic self-assessment return. A specialist dental accountant typically charges £1,500 to £5,000 or more for a practice owner with multiple income streams, NHS contracts, and staff. The additional cost is often recovered through better tax planning, correct capital allowance claims, and avoidance of HMRC penalties. For most practice owners, the net saving is positive.
 - question: Do I need a specialist accountant if I am an associate dentist?
@@ -94,7 +101,7 @@ imageCredit:
 
 <h2>Practice Profit Extraction: Partnership vs Limited Company</h2>
 
-<p>The choice between trading as a partnership or a limited company affects your tax position significantly. Corporation tax rates are 19% for small profits (up to £50,000) and 25% for profits above £250,000, with marginal relief in between. Dividend tax rates are 8.75% basic, 33.75% higher, and 39.35% additional. The dividend allowance is £500. A general accountant may recommend a standard structure without considering how NHS contract rules, pension contributions, and personal tax bands interact for a dental practice.</p>
+<p>The choice between trading as a partnership or a limited company affects your tax position significantly. Corporation tax rates are 19% for small profits (up to £50,000) and 25% for profits above £250,000, with marginal relief in between. Dividend tax rates are 10.75% basic, 35.75% higher, and 39.35% additional. The dividend allowance is £500. A general accountant may recommend a standard structure without considering how NHS contract rules, pension contributions, and personal tax bands interact for a dental practice.</p>
 
 <p>A specialist will model both structures using your actual figures, including the impact of employer NI at 15% on earnings above £5,000 per year, and the Employment Allowance of £10,500. They will also consider whether incorporation relief under Section 162 TCGA 1992 is available if you are converting from a sole trade or partnership to a company.</p>
 

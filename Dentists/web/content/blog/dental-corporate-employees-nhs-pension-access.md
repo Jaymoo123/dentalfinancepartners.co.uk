@@ -1,116 +1,133 @@
 ---
-title: "Can Corporate Dentists Still Access the NHS Pension Scheme?"
+title: "Corporate Dentists and the NHS Pension: Can You Still Build Accrual?"
 slug: "dental-corporate-employees-nhs-pension-access"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/dental-corporate-employees-nhs-pension-access"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
-metaTitle: "NHS Pension for Corporate Dentists: Access Rules Explained"
-metaDescription: "Can dentists working for Bupa, Rodericks, or other corporate groups stay in the NHS Pension Scheme? We explain the rules, the McCloud remedy, and what to check."
+metaTitle: "NHS Pension for Corporate Dentists: What Counts in 2026/27"
+metaDescription: "Working for a corporate dental group? Whether your NHS pension keeps building depends on the contract route and how you are paid, not the corporate brand."
 altText: "Dentist in a corporate dental practice reviewing NHS pension documents with a financial adviser"
-image: ""
-h1: "Can Corporate Dentists Still Access the NHS Pension Scheme?"
-summary: "Dentists employed by corporate dental groups can remain in the NHS Pension Scheme if they perform NHS treatment under a GDS/PDS contract. The key factor is the employment structure and whether the corporate holds the contract. This article explains the rules, the McCloud remedy, and what to check with your employer."
+image: "https://images.pexels.com/photos/8297715/pexels-photo-8297715.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-holding-a-calculate-8297715/"
+h1: "Corporate Dentists and the NHS Pension: Can You Still Build Accrual?"
+summary: "Working through or for a corporate dental group does not by itself decide your NHS pension. What matters is whether your work is NHS-funded under a GDS or PDS contract route and how you are paid. This guide explains when corporate NHS work is pensionable, the practitioner-versus-officer distinction, the incorporation trap where dividends are not pensionable, and exactly what to check with NHSBSA."
+keyTakeaways:
+  - "NHS pension access follows NHS-funded work under a GDS or PDS contract route properly pensioned through the contract, not the corporate brand, and purely private work builds no accrual."
+  - "Practitioners (sole traders, partners and associates) pension net NHS-derived income, while officers (salaried roles and incorporated dentists on PAYE) pension only the salary."
+  - "The incorporation trap means an incorporated associate is an officer, so only the small PAYE salary is pensionable and dividends are not, cutting accrual over the run to retirement."
+  - "From 1 April 2022 all active members accrue in the 2015 CARE section, building 1/54th of each year's pensionable earnings, with the 1995 and 2008 sections closed to new accrual."
+  - "Moving between corporate and independent practice does not by itself disturb the NHS pension; only a change of route or NHS-versus-private mix changes accrual."
 schema: ""
 faqs:
-  - question: "Can I join the NHS Pension Scheme if I work for Bupa Dental Care?"
-    answer: "Yes, if you are an employee of Bupa Dental Care and you perform NHS treatment in a practice where Bupa holds the GDS/PDS contract. You must be on PAYE with employee benefits such as holiday pay and sick pay. If you are a self-employed associate working in a Bupa practice, you cannot join the scheme. Check your employment contract and payslip for NHS pension deductions to confirm your status."
-  - question: "What happens to my NHS pension if I move from a corporate to an independent practice?"
-    answer: "Your NHS pension is unaffected by the change in employer, provided you remain an employee performing NHS work in the new role. Your pensionable service is continuous. If you move from an employed role to a self-employed associate role, your pension contributions will stop because self-employed dentists cannot join the scheme. You can resume contributions if you later return to employed NHS work."
-  - question: "Do corporate dental groups offer private pensions instead of the NHS pension?"
-    answer: "Some corporate groups offer private employer pension schemes, typically defined contribution (money purchase) plans. These are not a replacement for the NHS Pension Scheme, which is a defined benefit scheme with guaranteed benefits. If you are offered a choice, the NHS pension is almost always more valuable for long-term NHS dentists. However, some corporate roles do not offer NHS pension access at all, leaving the private scheme as your only option."
-  - question: "How do I check if my corporate employer is paying my NHS pension contributions correctly?"
-    answer: "Check your payslip for deductions labelled \"NHS Pension\" or \"NHSPS\". The amount should be a percentage of your pensionable pay (typically 9.3% for the 2015 scheme). You can also request a pension forecast from NHSBSA via the Total Reward Statement online portal. If you see no deductions or your forecast shows gaps, contact your HR department and NHSBSA. A dental-specialist accountant can help you resolve discrepancies."
+  - question: "Can I stay in the NHS Pension Scheme if I work for a corporate dental group?"
+    answer: "In most cases yes, provided your work is NHS-funded under a GDS or PDS contract route and that work is properly pensioned through the contract. NHS pension access follows the NHS-funded dental work you do, not the corporate brand above the door. Purely private corporate work is not NHS-pensionable. The practical detail is how your earnings reach the scheme: as an associate doing NHS work you usually pension your NHS-derived income on the practitioner basis, while a salaried role is pensioned as an officer on the salary. Confirm your exact route with NHSBSA."
+  - question: "Are dividends from my dental company pensionable if I work at a corporate?"
+    answer: "No, not for an incorporated associate. If you incorporate and take a small PAYE salary plus dividends, only the salary is pensionable and the dividends are not. This is the incorporation pension trap and it applies to incorporated associates regardless of whether the practice is corporate or independent. Whether an incorporated contract-holding principal can still pension NHS-derived profit through the practitioner mechanism is more nuanced and case-specific, so check your own position with NHSBSA before assuming either way."
+  - question: "Is the private work I do at a corporate practice pensionable?"
+    answer: "No. Only NHS-funded dental work delivered under an NHS contract route is pensionable in the NHS Pension Scheme. Private treatment, whether you do it at a corporate group or an independent practice, does not build NHS pension accrual. A mixed book builds pension on the NHS portion only, which is one reason it helps to know how much of your earnings is genuinely NHS-derived and properly pensioned through the contract."
+  - question: "What is the difference between the practitioner and officer routes for NHS pension?"
+    answer: "Practitioner status applies to dentists working as sole traders, in partnership, or as associates, who pension their net NHS-derived income under the practitioner rules. Officer status applies where you are paid a salary, for example a foundation dentist or a salaried role, where the salary itself is pensioned. An incorporated dentist taking a salary is treated as an officer, so only that salary is pensionable. The distinction decides what counts as pensionable pay, so it is worth confirming which route applies to you."
+  - question: "How do I check what NHS pension I am actually building at a corporate?"
+    answer: "Start by establishing the contract route: is your NHS work delivered under a GDS or PDS contract, and is that NHS work being pensioned through the contract? Then check how you are paid and on what basis you are in the scheme, practitioner or officer. Review your annual benefit statement and your Total Reward Statement from NHSBSA for gaps, and reconcile your NHS-derived earnings against what has been declared. For the contract-route and incorporation questions, NHSBSA is the authoritative source. A dental-specialist accountant can help you gather the figures and spot discrepancies."
 ---
 
-<h2>Can You Stay in the NHS Pension Scheme When Working for a Corporate?</h2>
+<h2>Does Working for a Corporate Decide Your NHS Pension?</h2>
 
-<p>Yes, in most cases. The NHS Pension Scheme is tied to the performance of NHS dental services, not to the legal structure of your employer. If you are a dentist performing NHS treatment under a General Dental Services (GDS) or Personal Dental Services (PDS) contract, and you are employed by the corporate entity that holds that contract, you are eligible to be a member of the NHS Pension Scheme.</p>
+<p>Not on its own. NHS pension access for a dentist depends on doing NHS-funded dental work under a General Dental Services (GDS) or Personal Dental Services (PDS) contract route, and on that work being properly pensioned through the contract. It does not depend on the corporate brand above the door. A dentist doing NHS work at a corporate group can usually access the NHS Pension Scheme on their NHS-derived income, in the same way as a dentist at an independent practice.</p>
 
-<p>The critical distinction is that the <strong>employer</strong> must be the party holding the NHS contract. If you are a self-employed associate working within a corporate-owned practice, you are not an employee of that practice and therefore cannot join the NHS Pension Scheme through that role. Your eligibility depends on your employment status, not just the type of work you do.</p>
+<p>This matters because a common misconception is that joining a corporate automatically ends NHS pension membership, or conversely that being employed by a corporate guarantees it. Both are wrong. The right question is not "who owns the practice" but "is my work NHS-funded under a contract route, is that work being pensioned through the contract, and how am I paid". The answers to those questions decide what counts.</p>
 
-<p>This is a common point of confusion. Many dentists assume that working in a corporate dental setting automatically excludes them from the NHS pension. That is not correct. The rules are the same as for any other NHS dentist: you must be an employee of the organisation that holds the NHS contract, and you must be performing NHS work.</p>
+<p>The flip side is just as important. Purely private corporate work is not NHS-pensionable. Many corporate roles are heavily or wholly private, and private treatment builds no NHS pension accrual wherever you do it. So if you have moved to a corporate to do more private dentistry, expect your NHS pension to reflect only the NHS-funded portion of what you do.</p>
 
-<h2>How Does Employment Status Affect NHS Pension Access?</h2>
+<h2>Practitioner or Officer: Why the Route Matters</h2>
 
-<p>The NHS Pension Scheme is only open to <strong>employees</strong>. Self-employed associates, locums working through a limited company, and other non-employee contractors cannot join. This is a fundamental rule that applies regardless of whether the practice is a single-handed principal or a large corporate group.</p>
+<p>The NHS Pension Scheme treats dentists in one of two ways, and the route decides what your pensionable pay is.</p>
 
-<p>If you are employed directly by a corporate dental group (for example, Bupa, Rodericks, Portman, or Colosseum) and your contract of employment states you are an employee, you are eligible to join the NHS Pension Scheme provided you are performing NHS treatment. The corporate employer must also be the party that holds the GDS/PDS contract with NHS England (or the equivalent body in Wales, Scotland, or Northern Ireland).</p>
+<p><strong>Practitioner.</strong> Dentists working as sole traders, in partnership, or as associates are practitioners. Their pensionable earnings derive from their net NHS-derived income, calculated under scheme-specific permitted-expenses rules, declared on a year-end certificate, and subject to a tiered employee contribution rate. An associate doing NHS work at a corporate practice typically pensions their NHS-derived income on this practitioner basis, provided the work is properly pensioned through the contract.</p>
 
-<p>Some corporate groups employ dentists on a salaried basis specifically to allow NHS pension access. Others use associate-style arrangements where the dentist is self-employed. The distinction is not always clear from the job title alone. You should check your employment contract and your tax status. If you are paid via a limited company or invoice, you are almost certainly not an employee and cannot access the NHS pension through that role.</p>
+<p><strong>Officer.</strong> Where you are paid a salary, you are an officer and the salary itself is pensioned. A foundation dentist in the salaried first year is an officer, and so is anyone in a genuinely salaried clinical role. Crucially, an incorporated dentist who takes a PAYE salary from their own company is also treated as an officer, which is where the incorporation trap below comes in.</p>
 
-<h2>What About the McCloud Remedy for Corporate Dentists?</h2>
+<p>The practitioner-versus-officer label is not about the corporate brand. The same corporate group can have practitioner associates and salaried officers under one roof. What sets your route is how you work and how you are paid, so it is worth establishing which one applies to you before you assume anything about your accrual.</p>
 
-<p>The McCloud remedy applies to all NHS Pension Scheme members who had benefits in the 1995 or 2008 sections between 1 April 2015 and 31 March 2022. This includes dentists employed by corporate groups. If you moved from a legacy section to the 2015 CARE scheme during that period, you will have a choice at retirement about which scheme rules apply to your remedy period service.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Route</th>
+      <th>Who it applies to</th>
+      <th>What is pensionable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Practitioner</td>
+      <td>Sole trader, partner, associate doing NHS work</td>
+      <td>Net NHS-derived income (permitted-expenses rules, year-end certificate)</td>
+    </tr>
+    <tr>
+      <td>Officer</td>
+      <td>Salaried roles, foundation dentists, incorporated dentist on PAYE salary</td>
+      <td>The PAYE salary only</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>For corporate dentists, the key point is that your pensionable service during the remedy period counts regardless of who your employer was at the time. If you were employed by a corporate group during part or all of that period, your remedy rights are the same as any other NHS dentist. The remedy does not depend on the type of employer.</p>
+<h2>The Incorporation Trap: Dividends Are Not Pensionable</h2>
 
-<p>If you are unsure whether you were in the legacy or 2015 section during the remedy period, check your annual benefit statements from NHS Business Services Authority (NHSBSA). The statements should show which section you were in for each year. If you have gaps or missing data, contact NHSBSA directly. A <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">dental-specialist accountant can help you interpret your pension records</a> and plan for the McCloud choice.</p>
+<p>This is the single most important pension point for any dentist thinking about a limited company, and it bites the same way at a corporate practice as anywhere else. If you incorporate and take a small PAYE salary plus dividends, you are treated as an officer, so <strong>only the PAYE salary is pensionable and the dividends are not</strong>.</p>
 
-<h2>Do Private Employer Pension Schemes Replace the NHS Pension?</h2>
+<p>The effect is large because dividends are usually the bulk of the extraction. A dentist who switches a meaningful slice of pensionable NHS-derived income into a modest salary plus dividends cuts their pensionable pay down to that salary, and loses accrual that can add up over a ten to fifteen year run to retirement. This is why an incorporation decision should never be modelled on the tax saving alone. The pension accrual you give up has to sit alongside any tax benefit, because it is a real and recurring cost.</p>
 
-<p>Some corporate dental groups offer their own private employer pension schemes, often as an alternative to the NHS Pension Scheme. These are typically defined contribution (money purchase) schemes where the employer and employee contribute a percentage of salary. They are not a replacement for the NHS Pension Scheme in terms of benefits or structure.</p>
+<p>This trap is the default position for an <strong>incorporated associate or performer</strong> on the officer route. We summarise it here because it travels with the corporate question so often, but the full deep-dive, including a worked picture of the lost Career Average Revalued Earnings accrual over the run to retirement, lives in our dedicated guide: <a href="/blog/nhs-pension/nhs-pension-incorporation-trap-dentists-lost-accrual">the NHS pension incorporation trap and lost accrual</a>.</p>
 
-<p>The NHS Pension Scheme is a defined benefit (final salary or CARE) scheme, which guarantees a pension based on your salary and length of service. Private employer schemes are defined contribution, meaning your pension depends on investment performance and contribution levels. The two are not equivalent. A private employer pension is generally less valuable than NHS pension membership, especially for long-serving employees.</p>
+<p>One area is genuinely more nuanced. Whether an incorporated <strong>contract-holding principal</strong> can still pension NHS-derived profit through the practitioner mechanism is contested and case-specific. We do not assert it either way, and nor should anyone selling you a structure. If this is your situation, treat it as an open question to settle with NHSBSA directly before you commit to a structure, not as a settled benefit.</p>
 
-<p>If you are offered a choice between the NHS Pension Scheme and a private employer scheme, the NHS option is almost always the better financial decision, provided you intend to stay in NHS dentistry for the long term. However, some corporate groups do not offer NHS pension access at all, particularly for roles that are not directly clinical or where the corporate does not hold the NHS contract. In those cases, the private employer scheme is your only option.</p>
+<h2>How Much of My Corporate Work Is Actually Pensionable?</h2>
 
-<h2>What Should You Check in Your Corporate Employment Contract?</h2>
-
-<p>If you are considering a role with a corporate dental group, or if you are already in one, you should check the following points in your employment contract:</p>
-
-<ul>
-<li><strong>Employment status:</strong> Does the contract state you are an employee? Look for wording about PAYE, holiday pay, sick pay, and employer NI contributions. If you are self-employed, you are not an employee.</li>
-<li><strong>NHS contract holder:</strong> Is the corporate group the named party on the GDS/PDS contract? If the contract is held by a different entity (for example, a subsidiary or a separate partnership), you may not be eligible.</li>
-<li><strong>Pension scheme membership:</strong> Does the contract explicitly state that you are eligible for the NHS Pension Scheme? Some corporate contracts include a clause about the employer's pension obligations.</li>
-<li><strong>Pension contributions:</strong> Are employer contributions being paid to NHSBSA? Check your payslip for deductions labelled "NHS Pension" or similar.</li>
-</ul>
-
-<p>If you are unsure about any of these points, ask your employer for written confirmation. You can also request a pension forecast from NHSBSA to check your contribution history. A <a href="/services/dental-accountants">dental-specialist accountant can review your contract and pension records</a> to confirm your eligibility and identify any gaps.</p>
-
-<h2>What Happens If You Move Between Corporate and Non-Corporate Roles?</h2>
-
-<p>Moving between a corporate dental group and a non-corporate practice (or vice versa) does not affect your NHS Pension Scheme membership, provided you remain an employee performing NHS work in each role. Your pensionable service is continuous as long as you are in pensionable employment each time. There is no break in service penalty for changing employers.</p>
-
-<p>However, if you move from an employed role to a self-employed associate role, your NHS pension contributions will stop. You cannot contribute to the scheme as a self-employed person. If you later return to employed NHS work, your pensionable service resumes. The gap is simply a period of non-membership.</p>
-
-<p>This is an important planning point. If you are considering leaving a corporate employed role to become a self-employed associate, you should factor in the loss of NHS pension benefits. The value of the NHS pension is often significantly higher than the employer contributions you would receive in a private scheme. A <a href="/for-associates">financial review with a dental-specialist accountant</a> can help you quantify the impact.</p>
-
-<h2>Are There Any Exceptions for Locums or Limited Company Dentists?</h2>
-
-<p>No. The NHS Pension Scheme is only available to employees. If you work as a locum dentist through a limited company, or as a self-employed associate, you cannot join the scheme. This applies regardless of whether the practice is a corporate group or an independent practice.</p>
-
-<p>Some locums attempt to structure their work as an employment arrangement to access the NHS pension. This is difficult to achieve in practice because HMRC and NHSBSA look at the substance of the relationship, not the paperwork. If you are genuinely self-employed (with control over your hours, no guaranteed work, and financial risk), you are not an employee and cannot be in the scheme.</p>
-
-<p>If you are a locum or associate and want NHS pension access, your only option is to find an employed role with a practice that holds an NHS contract. This is a significant career decision and should not be taken lightly. A <a href="/services/locum-dentist-tax">dental-specialist accountant can help you model the financial trade-offs</a> between locum/associate income and employed NHS pension benefits.</p>
-
-<h2>What About Dentists Working for Bupa or Other Large Corporates?</h2>
-
-<p>Bupa Dental Care, Rodericks, Portman, Colosseum, and other large corporate groups all employ dentists on both employed and self-employed bases. The employed dentists in these groups are eligible for the NHS Pension Scheme if they perform NHS treatment. The self-employed associates are not.</p>
-
-<p>The key factor is not the corporate brand but the individual employment contract. If you are an employee of Bupa Dental Care and you work in a practice where Bupa holds the NHS contract, you can join the NHS Pension Scheme. If you are a self-employed associate working in the same practice, you cannot.</p>
-
-<p>Some corporate groups have moved towards employing more dentists in recent years, partly to offer NHS pension access as a recruitment incentive. Others continue to use self-employed associate models. The trend varies by group and by region. If you are considering a role with a corporate group, ask explicitly about NHS pension eligibility before accepting the position.</p>
-
-<h2>How to Verify Your NHS Pension Contributions as a Corporate Employee</h2>
-
-<p>If you are employed by a corporate dental group and believe you are in the NHS Pension Scheme, you should verify your contributions regularly. Here is how:</p>
+<p>Because only NHS-funded work counts, the practical answer depends on the mix in your particular corporate role. Three patterns are common.</p>
 
 <ul>
-<li><strong>Check your payslip:</strong> Look for a deduction labelled "NHS Pension" or "NHSPS". The amount should be a percentage of your pensionable pay (typically 9.3% for dentists in the 2015 scheme, but rates vary by section and salary band).</li>
-<li><strong>Request a pension forecast:</strong> Log in to the NHSBSA online portal (Total Reward Statement) or request a paper forecast. This will show your pensionable service history and estimated benefits.</li>
-<li><strong>Check your employer's contributions:</strong> Your employer should be paying contributions to NHSBSA on your behalf. If you see no pension deductions on your payslip, you are not in the scheme.</li>
-<li><strong>Ask your HR department:</strong> If you are unsure, ask your employer for written confirmation of your pension scheme membership and contribution rate.</li>
+<li><strong>Mostly NHS, practitioner basis.</strong> An associate delivering NHS treatment under the practice's GDS or PDS contract usually pensions their NHS-derived income on the practitioner basis, provided that income is properly pensioned through the contract. Your private add-ons in the same chair do not count.</li>
+<li><strong>Salaried clinical role.</strong> A genuinely salaried NHS role is pensioned as an officer on the salary. The salary is the pensionable figure, not your headline earnings.</li>
+<li><strong>Mostly private.</strong> Some corporate roles are largely or wholly private. Private work builds no NHS pension, so a mostly-private corporate role may leave you with little or no NHS accrual even though you are busy.</li>
 </ul>
 
-<p>If you discover that you are not in the NHS Pension Scheme despite being an employee performing NHS work, you should raise this with your employer immediately. Backdated membership may be possible in some circumstances, but it is not guaranteed. A <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">dental-specialist accountant can help you navigate any disputes or backdated claims</a>.</p>
+<p>The thread running through all three is that the NHS pension follows the NHS-funded work that is properly pensioned through the contract, not your total income and not the corporate logo. If you are unsure how much of your work is genuinely NHS-derived and being pensioned, that is the first thing to pin down. Our guide on <a href="/blog/nhs-pension/nhs-pension-pensionable-pay-dentists">what counts as NHS pensionable pay for dentists</a> walks through the detail of what does and does not make it into the calculation.</p>
 
-<h2>Final Thoughts: Corporate Employment and the NHS Pension</h2>
+<h2>Which Scheme Section Are You In?</h2>
 
-<p>Working for a corporate dental group does not automatically exclude you from the NHS Pension Scheme. The rules are the same as for any other NHS dentist: you must be an employee of the organisation that holds the NHS contract, and you must be performing NHS work. If you meet these conditions, you can join the scheme and build pensionable service just like a dentist in an independent practice.</p>
+<p>Whatever route you are on, the section you accrue in is now settled. From 1 April 2022 all active members accrue in the <strong>2015 section</strong>, a Career Average Revalued Earnings (CARE) scheme that builds <strong>1/54th</strong> of each year's pensionable earnings, with active revaluation each year. The older 1995 and 2008 sections are legacy service only: real for benefits already built, but closed for new accrual.</p>
 
-<p>The main risk is confusion about your employment status. Many dentists in corporate settings are self-employed associates, not employees, and therefore cannot access the NHS pension. If you are unsure about your status, check your contract and your payslip. If you are self-employed, you cannot join the scheme, and you should plan your retirement savings accordingly.</p>
+<p>This applies to corporate dentists exactly as it does to everyone else. A move into or out of a corporate group does not change which section you accrue in, and it does not create a break in your pensionable record on its own. What changes your accrual is the route and the pensionable pay, not the employer's ownership. If you want to understand how the three sections fit together and how legacy service is preserved, see our explainer on <a href="/blog/nhs-pension/nhs-pension-1995-2008-2015-explained-dentists">the 1995, 2008 and 2015 sections for dentists</a>.</p>
 
-<p>For dentists who are employed by a corporate group and are in the NHS Pension Scheme, the benefits are identical to those of any other NHS dentist. The McCloud remedy applies to you if you were in a legacy section during the remedy period. Your pensionable service is continuous across employer changes. And your employer contributions are paid to NHSBSA, not to a private scheme.</p>
+<h2>What to Check Before and During a Corporate Role</h2>
 
-<p>If you are considering a move to or from a corporate dental role, or if you want to check your NHS pension eligibility, speak to a dental-specialist accountant. The rules are straightforward in principle, but the practical application depends on your specific employment contract and the structure of the corporate group. A professional review can save you from costly mistakes.</p>
+<p>Whether you are weighing up a corporate offer or already in one, work through these points so you know exactly what your NHS pension is doing.</p>
+
+<ul>
+<li><strong>The contract route.</strong> Is your NHS work delivered under a GDS or PDS contract, and is that NHS work actually being pensioned through the contract? This is the gateway question. Get it in writing from the practice or group.</li>
+<li><strong>Your route, practitioner or officer.</strong> Are you pensioning NHS-derived income as a practitioner, or being pensioned on a salary as an officer? The two are calculated differently, so confirm which applies.</li>
+<li><strong>The NHS-versus-private split.</strong> How much of your expected work is NHS-funded? Private work builds no NHS accrual, so a heavily private role may give little pension even on good earnings.</li>
+<li><strong>Your structure.</strong> If you operate or plan to operate through a limited company, remember that as an incorporated associate only the salary is pensionable and dividends are not. Factor the lost accrual into the decision, not just the tax.</li>
+<li><strong>Your record.</strong> Review your annual benefit statement and Total Reward Statement from NHSBSA for gaps, and reconcile your NHS-derived earnings against what has been declared on your behalf.</li>
+</ul>
+
+<p>If anything is unclear, ask for written confirmation rather than relying on a job title or an assumption. NHSBSA is the authoritative source for the contract-route and incorporation questions, and it is the right place to settle the contested contract-holding-principal point. A <a href="/services/dental-accountants">dental-specialist accountant can help you gather the figures, reconcile your NHS-derived income, and spot discrepancies</a> before they harden into missing years.</p>
+
+<h2>Moving Between Corporate and Independent Practice</h2>
+
+<p>Moving between a corporate group and an independent practice does not, by itself, disturb your NHS pension. Your accrued benefits stay intact and you continue to build in the 2015 section wherever you do NHS-funded work that is pensioned through a contract route. There is no penalty simply for changing who owns the practice.</p>
+
+<p>What does change your accrual is a change in route or in the NHS-versus-private mix. Shifting from a mostly-NHS associate role to a mostly-private one will reduce your NHS pensionable pay even if your total income rises. Incorporating, and moving to a small-salary-plus-dividend extraction, will cut your pensionable pay to the salary on the officer route. These are the levers that matter, so when you compare roles, compare the pension consequences alongside the headline numbers. A <a href="/for-associates">review with a dental-specialist accountant</a> can help you quantify the trade-off before you decide.</p>
+
+<h2>The Bottom Line for Corporate Dentists</h2>
+
+<p>Working through or for a corporate dental group does not by itself decide your NHS pension. Access follows NHS-funded dental work under a GDS or PDS contract route, properly pensioned through that contract, and you build on either the practitioner basis (associates and partners, on net NHS-derived income) or the officer basis (salaried roles, on the salary). Purely private work builds nothing, wherever you do it.</p>
+
+<p>The decision that most often costs dentists pension is incorporation. For an incorporated associate, dividends are not pensionable, only the salary is, and that lost accrual must be weighed against any tax saving. The contract-holding-principal position is more nuanced and should be confirmed with NHSBSA rather than assumed. Pin down your contract route, your practitioner-or-officer status, and your NHS-versus-private split, check your record with NHSBSA, and take advice on the structure before you commit. Get those right and the corporate label is largely beside the point.</p>

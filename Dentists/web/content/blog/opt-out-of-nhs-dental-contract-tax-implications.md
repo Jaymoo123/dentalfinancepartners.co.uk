@@ -3,124 +3,149 @@ title: "What Are the Tax Implications of Opting Out of an NHS Dental Contract?"
 slug: "opt-out-of-nhs-dental-contract-tax-implications"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/opt-out-of-nhs-dental-contract-tax-implications"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
-metaTitle: "NHS Contract Opt Out: Tax Implications for UK Dentists"
-metaDescription: "Opting out of an NHS dental contract triggers capital gains, VAT, and pension consequences. Understand the tax implications before you hand back your contract."
+metaTitle: "NHS Contract Opt Out: Tax Implications for Dentists"
+metaDescription: "Opting out of your NHS dental contract ends UDA income and clawback risk and cuts pension accrual. The VAT myth, profit extraction and cash flow explained."
 altText: "Dentist reviewing NHS contract opt-out paperwork with accountant in a UK dental practice"
-image: ""
+image: "https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
 h1: "What Are the Tax Implications of Opting Out of an NHS Dental Contract?"
-summary: "Opting out of an NHS dental contract is a major financial decision. The tax consequences depend on whether you sell the practice, transfer goodwill, or continue as a private practice. This guide covers the key tax implications for UK dentists."
+summary: "Opting out of an NHS dental contract ends your UDA income and your year-end clawback exposure, changes your NHS pension position and reshapes how you take money out of the practice. This guide sets out the real tax and cash-flow consequences for the 2026/27 tax year, and corrects the common myth that going private means charging VAT on dental care."
+keyTakeaways:
+  - "Opting out of an NHS contract ends UDA income and year-end clawback exposure, but the contract has no separate capital value and cannot be sold on its own."
+  - "Going private does not make clinical dental care taxable, as it stays VAT exempt under VATA 1994 Schedule 9 Group 7; only cosmetic, standard-rated work counts towards the £90,000 threshold."
+  - "Switching NHS-derived pensionable profit into non-pensionable dividends ends accrual on that slice, a loss that can run into tens of thousands of pounds of eventual annual pension."
+  - "At 2026/27 rates the dividend ordinary rate is 10.75% and the upper rate 35.75%, which narrows any incorporation advantage for a newly private practice."
+  - "Self-employed associates pay Class 4 NIC at 6% between £12,570 and £50,270, then 2%, with Class 2 removed from 6 April 2024; employer NIC is 15% above the £5,000 threshold."
 schema: ""
 faqs:
-  - question: "Can I sell my NHS dental contract to another dentist?"
-    answer: "No. NHS dental contracts are not saleable assets. They are personal to the performer and the practice. When you opt out, the contract is extinguished. You cannot transfer it to another dentist for payment. The only way to realise value from the contract is to sell the practice as a going concern, with the buyer taking over the contract via a novation or assignment process approved by NHS England. If you hand back the contract without a sale, the goodwill value tied to the NHS work is lost."
-  - question: "Do I pay capital gains tax if I opt out and go private?"
-    answer: "Not directly on the opt-out itself. Opting out does not trigger a disposal for CGT purposes because the contract is not a chargeable asset. However, if you later sell the practice as a private-only business, the gain on the sale of goodwill and other assets is subject to CGT. The gain will be lower than if the NHS contract were still in place, because the goodwill value is reduced. Business Asset Disposal Relief (14% for 2025/26, rising to 18% from April 2026) may apply if you meet the conditions."
+  - question: "Does going private mean I have to charge VAT on my dental treatment?"
+    answer: "No. This is the most persistent myth around opting out. Clinical dental care is exempt from VAT under VATA 1994 Schedule 9 Group 7, whether it is NHS-funded or privately paid. Going more private does not change that. The only dental income that is standard-rated is purely cosmetic or aesthetic work with no therapeutic purpose (facial aesthetics such as Botox and fillers for cosmetic reasons, and some tooth whitening). VAT only becomes a question if your taxable (non-exempt) turnover exceeds the registration threshold of £90,000 in a 12-month period. Exempt clinical income does not count towards that threshold."
   - question: "What happens to my NHS pension if I opt out of the contract?"
-    answer: "Opting out of the NHS contract does not automatically end your NHS Pension Scheme membership. You can continue to contribute if you still perform NHS work (e.g., as a locum or associate). If you cease all NHS work, you stop accruing benefits in the scheme. Your existing benefits are preserved and will be paid at retirement. If you are within 10 years of retirement, the loss of future accrual can be significant. You should model the pension impact before opting out."
-  - question: "Is it better to hand back the contract or sell the practice?"
-    answer: "From a tax perspective, selling the practice as a going concern with the contract transferring to the buyer is almost always better. It preserves goodwill value and allows you to claim CGT reliefs like BADR. Handing back the contract destroys goodwill value without any tax relief. However, if you cannot find a buyer (e.g., because UDA values are low or the patient list is declining), handback may be the only option. In that case, plan the transition carefully to minimise financial impact."
+    answer: "Opting out does not close your NHS Pension Scheme membership, but it does end NHS pension accrual on the income you stop earning. The 2015 CARE scheme builds benefits at 1/54th of your pensionable earnings each year, so as your NHS-derived pensionable income falls, so does your future accrual. Your benefits already built up are preserved and revalued, and you can keep accruing if you still do some NHS work as a locum or associate. Dividends from a private limited company are not pensionable, so a switch to private dividend income leaves a pension gap that is worth modelling before you decide."
+  - question: "Can I sell my NHS contract when I opt out?"
+    answer: "No. An NHS dental contract has no separate capital value to you and cannot be sold to another dentist on its own. If you simply hand it back, it ends. The only way the contract carries value into a transaction is on a sale of the practice as a going concern, where it novates to the buyer with commissioner consent. Opting out by handback is therefore a decision to give up that route, not a disposal that triggers capital gains tax in itself."
+  - question: "Will I save tax by opting out and going private?"
+    answer: "Not automatically. Opting out ends your UDA income and your clawback risk, but it does not change the underlying tax rates on your profit. Whether you are better off depends on the private fee income you can build, your cost base, how you extract profit, and the NHS pension accrual you give up. At 2026/27 rates the dividend ordinary rate is 10.75% and the upper rate is 35.75%, which narrows any incorporation advantage, and the pension loss can outweigh the headline tax position for dentists close to retirement. Model the whole picture, not just one number."
 ---
 
-<h2>Why Opting Out of an NHS Dental Contract Is a Tax Event</h2>
+<h2>Opting out is a cash-flow and tax decision, not just a clinical one</h2>
 
-<p>Opting out of an NHS dental contract is not simply a clinical or operational decision. It is a tax event with consequences for capital gains, VAT, pension contributions, and income tax. Whether you are a single-handed principal handing back a UDA contract or a multi-site group exiting NHS work entirely, the structure of the exit determines how much of the proceeds you keep.</p>
+<p>Handing back or not renewing your NHS dental contract changes far more than your appointment book. It ends your Units of Dental Activity (UDA) income, removes your year-end clawback exposure, alters your NHS pension position and reshapes how you take money out of the practice. None of this is a single tax event with one bill attached. It is a set of moving parts that interact, and the right answer is specific to your contract, your patient base and how close you are to retirement.</p>
 
-<p>This article explains the main tax implications of an NHS contract opt-out, covering goodwill valuation, capital gains tax (CGT), VAT on private practice, and NHS pension considerations. It is written for UK dentists who are considering or planning an exit from NHS dentistry, either to go fully private or to sell the practice.</p>
+<p>This article sets out the real implications of opting out of an NHS contract for a UK dentist going fully or more private, framed for the 2026/27 tax year. It covers what happens to your UDA income and clawback risk, the NHS pension consequence, the VAT position (and the myth that going private means charging VAT), profit extraction at current rates, and the cash-flow change you should plan for.</p>
 
-<h2>Goodwill and the NHS Contract: What Happens When You Opt Out?</h2>
+<h2>What you actually give up: UDA income and clawback risk</h2>
 
-<p>Goodwill is the intangible asset that represents the value of a dental practice beyond its physical assets. For an NHS-heavy practice, a significant portion of goodwill is tied to the NHS contract itself. When you opt out, that contract ceases to exist. The question is: does the goodwill value disappear, or does it transfer to the private practice?</p>
+<p>An NHS General Dental Services (GDS) contract is a target-based agreement. You receive monthly payments against an annual UDA target, and at year-end your actual delivery is reconciled against that target. Deliver below target and the commissioner claws back the unearned portion. There is no single national UDA value; each contract has its own per-UDA rate set from a historic baseline and uplifted over time.</p>
 
-<p>In most cases, the goodwill value of an NHS contract is not separately saleable. If you hand back the contract to NHS England (or the equivalent body in Wales, Scotland, or Northern Ireland), you cannot sell it to another dentist. The contract is extinguished. However, if you sell the practice as a going concern and the buyer takes over the NHS contract, the goodwill transfers with the business. This is the typical route for a practice sale.</p>
+<p>When you opt out, two things happen at once. You lose the guaranteed monthly UDA income, and you also lose the clawback exposure that comes with it. For a practice that has been under-delivering and facing repeated year-end clawback, removing that liability is a genuine benefit of going private that is easy to overlook. For a practice that comfortably hits target, the loss of predictable income is the dominant effect.</p>
 
-<p>If you opt out and continue as a private practice, the goodwill shifts from NHS-dependent to private-patient-dependent. The valuation multiple may change. Private practices typically command higher EBITDA multiples (often 1.0-1.4x adjusted EBITDA) than NHS-heavy practices (0.6-1.0x). But the transition period can be risky: you lose guaranteed UDA income and must build a private patient list from scratch.</p>
+<p>Crucially, the NHS contract has no separate capital value to you. You cannot sell it to another dentist on its own, and handing it back is not a disposal of a chargeable asset. The contract only carries value into a transaction on a sale of the practice as a going concern, where it transfers to the buyer by novation with commissioner consent. If you simply opt out, that route closes. We cover the sale-and-novation alternative in our guide on <a href="/blog/buying-a-practice/transferring-nhs-dental-contract-on-practice-sale">transferring an NHS dental contract on a practice sale</a>.</p>
 
-<h3>Goodwill Valuation on Opt-Out</h3>
+<h2>The VAT myth: clinical dental care stays exempt</h2>
 
-<p>If you sell the practice as a going concern and the buyer takes over the NHS contract, the goodwill is valued as part of the total practice price. The typical split is 60-80% goodwill, 20-40% tangible assets (equipment, fixtures, property). The goodwill multiple depends on the NHS/private mix, location, and profitability.</p>
+<p>The single most common error around opting out is the belief that going private means you must start charging VAT on your treatment. You do not. The supply of clinical dental care by a registered dentist or dental care professional is exempt from VAT under VATA 1994 Schedule 9 Group 7, and that exemption applies whether the care is NHS-funded or privately paid. Switching your funding mix from NHS to private does not convert exempt clinical care into a taxable supply.</p>
 
-<p>If you opt out and do not sell, the goodwill attributable to the NHS contract is effectively lost. You cannot claim a capital loss on it for tax purposes because the contract is not a chargeable asset in its own right. The goodwill is part of the practice's overall value, and its diminution is not separately recognisable for CGT purposes.</p>
+<p>The exemption turns on the supply being medical care, meaning its principal purpose is protecting, maintaining or restoring health. The only dental income that falls outside the exemption and becomes standard-rated is work that is purely cosmetic or aesthetic with no therapeutic purpose. Facial aesthetics such as Botox and dermal fillers carried out for cosmetic reasons are the classic example, and some tooth whitening is a borderline case HMRC scrutinises on a principal-purpose basis.</p>
 
-<p>For a worked example: a single-handed principal with a 100% NHS contract generating £120,000 net profit per year might have a practice valued at £300,000-£400,000 (based on a 0.6-0.8x EBITDA multiple). If they opt out and go private, the practice value might drop to £150,000-£200,000 initially, until the private patient base builds. The £100,000-£200,000 difference is not a tax-deductible loss.</p>
+<table>
+<thead>
+<tr><th>Type of income</th><th>VAT treatment</th><th>Counts towards the £90,000 threshold?</th></tr>
+</thead>
+<tbody>
+<tr><td>NHS clinical dental care</td><td>Exempt (Sch 9 Group 7)</td><td>No</td></tr>
+<tr><td>Private clinical dental care</td><td>Exempt (Sch 9 Group 7)</td><td>No</td></tr>
+<tr><td>Cosmetic facial aesthetics (no therapeutic purpose)</td><td>Standard-rated at 20%</td><td>Yes</td></tr>
+<tr><td>Cosmetic-only tooth whitening</td><td>Standard-rated (principal-purpose test)</td><td>Yes</td></tr>
+</tbody>
+</table>
 
-<h2>Capital Gains Tax on Practice Sale After Opt-Out</h2>
+<p>So VAT exposure does not grow because you go more private. It grows only if you build a meaningful book of cosmetic, standard-rated work. The VAT registration threshold is £90,000 of taxable (non-exempt) turnover measured over a rolling 12 months, raised from £85,000 on 1 April 2024. Your exempt clinical income, however large, does not count towards that £90,000. Many practices going more private add facial aesthetics at the same time, so it is the aesthetic income, not the dental income, that needs watching.</p>
 
-<p>If you sell the practice after opting out (or as part of the opt-out process), the gain on goodwill and other chargeable assets is subject to CGT. The key reliefs available are:</p>
+<p>If your taxable supplies do cross the threshold and you register, you become partially exempt: you make both exempt (clinical) and taxable (cosmetic) supplies, and you can only recover input VAT attributable to the taxable side, subject to the de minimis test. That is a manageable position, but it is driven by your cosmetic income, not by the act of leaving the NHS. Our guide on <a href="/blog/vat-and-compliance/facial-aesthetics-vat-uk-dental-practices">facial aesthetics and VAT</a> walks through the partial-exemption mechanics in detail.</p>
+
+<h2>The NHS pension consequence</h2>
+
+<p>The NHS Pension Scheme is one of the most valuable benefits attached to NHS work, so the accrual you give up is often the largest hidden cost of opting out. Leaving the contract does not close your scheme membership, but it ends NHS pension accrual on the income you stop earning. As your NHS-derived pensionable income falls, your future benefit build-up falls with it.</p>
+
+<p>Everyone now accruing in the scheme does so in the 2015 Career Average Revalued Earnings (CARE) section, which builds pension at 1/54th of each year's pensionable earnings, revalued each year while you remain active. The benefits you have already earned are preserved and revalued, and you keep them. What you lose is the future accrual on the income that disappears. If you continue any NHS work as a locum or associate, you keep accruing on that reduced pensionable income.</p>
+
+<p>There is a further trap if you go private through a limited company. For an incorporated dentist taking a PAYE salary, only the salary is pensionable; dividends are not pensionable. So a switch from NHS-derived pensionable profit into a low-salary, high-dividend extraction can cut your pensionable pay sharply and stop accrual on the dividend portion entirely. For a dentist within ten to fifteen years of retirement, the cumulative accrual given up can run well into the tens of thousands of pounds of eventual annual pension. This is the part of the decision that most rewards careful modelling. Our guide to <a href="/blog/nhs-pension/nhs-pension-pensionable-pay-dentists">what counts as NHS pensionable pay for dentists</a> sets out exactly which earnings build benefits.</p>
+
+<h2>Profit extraction after you go private (2026/27 rates)</h2>
+
+<p>Once your income shifts from guaranteed UDA payments to variable private fees, how you structure and extract profit becomes more important. The headline tax rates do not change when you leave the NHS, but the loss of a predictable income floor changes the planning.</p>
+
+<p>If you trade as a sole trader or partnership, you pay income tax plus Class 4 National Insurance on your profit share. Class 4 NIC is 6% on profits between £12,570 and £50,270 and 2% above £50,270, and Class 2 NIC is no longer payable (it was removed from 6 April 2024, with self-employed profits above the small-profits threshold treated as having paid). The personal allowance is £12,570 and tapers away between £100,000 and £125,140 of income, creating an effective marginal rate above 60% in that band that careful timing of income can soften.</p>
+
+<p>If you operate through a limited company, the company pays corporation tax and you extract profit through salary, dividends and pension contributions. The current rates are:</p>
+
+<table>
+<thead>
+<tr><th>Tax</th><th>2026/27 position</th></tr>
+</thead>
+<tbody>
+<tr><td>Corporation tax</td><td>19% small-profits rate (profits up to £50,000), 25% main rate (above £250,000), marginal relief in between</td></tr>
+<tr><td>Dividend ordinary rate</td><td>10.75%</td></tr>
+<tr><td>Dividend upper rate</td><td>35.75%</td></tr>
+<tr><td>Dividend additional rate</td><td>39.35%</td></tr>
+<tr><td>Dividend allowance</td><td>£500</td></tr>
+<tr><td>Employer (secondary) NIC</td><td>15% on salary above the £5,000 secondary threshold</td></tr>
+<tr><td>Class 4 NIC (self-employed)</td><td>6% (£12,570 to £50,270), then 2%</td></tr>
+</tbody>
+</table>
+
+<p>The dividend ordinary and upper rates rose from 6 April 2026 (to 10.75% and 35.75%), which narrows the gap between extracting profit as dividends through a company and simply drawing self-employed profit. That matters specifically for the opt-out decision, because the case for incorporating a newly-private practice is weaker than the old 8.75%/33.75% figures suggested. Pair any incorporation tax comparison with the NHS pension accrual you would lose on the dividend portion: the two effects pull in opposite directions and need to be weighed together, never the tax saving alone.</p>
+
+<p>If you employ staff, employer NIC is 15% on earnings above the £5,000 secondary threshold. The Employment Allowance can offset some of that where you are eligible, though it is not available to a company whose only employee is a single director. A genuinely employed spouse paid at a market rate for real work can change that position, but the work and pay must be genuine and documented through PAYE.</p>
+
+<h2>The cash-flow change to plan for</h2>
+
+<p>The financial risk of opting out is not really about tax rates. It is about cash flow during the transition. NHS monthly payments are predictable; private fee income is not, especially in the first 12 to 24 months while you rebuild patient relationships on a fee-paying basis. You may lose the income floor before the private base has fully replaced it.</p>
+
+<p>Plan for that gap deliberately:</p>
 
 <ul>
-<li><strong>Business Asset Disposal Relief (BADR)</strong>: For 2025/26, the rate is 14% on gains up to £1 million lifetime limit. From 6 April 2026, the rate rises to 18%. To qualify, you must have owned the practice for at least two years and it must be a trading business.</li>
-<li><strong>Section 162 incorporation relief</strong>: If you transfer the practice to a company in exchange for shares, you can defer the CGT until you sell the shares. This is common when a principal incorporates a sole practice into a limited company.</li>
-<li><strong>Holdover relief</strong>: In limited circumstances, you can defer the gain if you gift the practice to a connected person (e.g., a family member).</li>
+<li><strong>Build a buffer.</strong> Hold enough working capital to cover the dip between losing UDA payments and private income stabilising.</li>
+<li><strong>Reset your drawings.</strong> If you incorporate, set a sustainable salary and take dividends only out of genuinely available distributable profit, not in anticipation of it, to avoid an overdrawn director's loan account and a section 455 charge.</li>
+<li><strong>Re-budget your tax payments.</strong> Self-assessment payments on account are based on the prior year. A profit profile that changes sharply after opting out can leave payments on account misaligned with the new reality, which you can manage by claiming to reduce them where justified.</li>
+<li><strong>Watch any new cosmetic income against the VAT threshold.</strong> If facial aesthetics grow, track that taxable turnover against the rolling £90,000 limit so registration does not arrive as a surprise.</li>
 </ul>
 
-<p>If you opt out and then sell the practice as a private-only business, the goodwill value will be lower, but the CGT rate may still apply. The key is to structure the sale before the opt-out if possible, so the buyer takes over the NHS contract and the goodwill value is preserved.</p>
+<h2>Handback versus a practice sale</h2>
 
-<p>For a principal selling a practice with £500,000 goodwill and claiming BADR, the CGT bill in 2025/26 would be £70,000 (14% of £500,000). If the sale happens after 5 April 2026, the bill rises to £90,000 (18%). Timing matters.</p>
-
-<h2>VAT Implications of Going Private</h2>
-
-<p>Dental treatment by a registered dental professional is exempt from VAT under VATA 1994 Schedule 9 Group 7. This applies whether the treatment is NHS-funded or privately paid. However, purely cosmetic treatments without a medical purpose can be standard-rated at 20%. Tooth whitening is a known borderline case that HMRC scrutinises.</p>
-
-<p>If you opt out and go fully private, you need to consider your VAT registration position. The VAT registration threshold is £90,000 (as of 1 April 2024). If your private fee income exceeds this, you must register for VAT. However, because most dental treatment is exempt, you cannot charge VAT to your patients. This means you are in a "partial exemption" position: you make exempt supplies but incur VAT on your costs (equipment, materials, rent, etc.).</p>
-
-<p>Partial exemption can be complex. You can only recover VAT on costs directly attributable to taxable supplies (e.g., cosmetic treatments). VAT on costs for exempt supplies (general dentistry) is irrecoverable. This creates a cost burden that many dentists do not anticipate.</p>
-
-<p>If you are considering going private, you should review your cost base and VAT recovery position with a dental-specialist accountant. The <a href="/services/practice-accounting">practice accounting</a> team at Dental Finance Partners can model the VAT impact of a private-only model.</p>
-
-<h2>NHS Pension Implications of Opting Out</h2>
-
-<p>The NHS Pension Scheme is a valuable benefit for many dentists. Opting out of the NHS contract does not automatically mean you leave the pension scheme. You can continue to make contributions as a non-GP provider if you still perform NHS work (e.g., as a locum or associate). But if you cease all NHS work, you stop accruing NHS pension benefits.</p>
-
-<p>There are three sections of the NHS Pension Scheme: the 1995 section (closed to new members), the 2008 section (closed), and the 2015 CARE section (current). If you opt out and later return to NHS work, you re-join the 2015 section. The McCloud remedy applies to members who had benefits in legacy schemes between 1 April 2015 and 31 March 2022; at retirement, they can choose which scheme rules apply to that period.</p>
-
-<p>If you are within 10 years of retirement, the loss of NHS pension accrual can be significant. For a principal earning £100,000 per year from NHS work, the annual pension accrual in the 2015 scheme is approximately 1/54th of pensionable earnings, or about £1,850 per year of pension income. Over 10 years, that is £18,500 per year of lost pension income (index-linked).</p>
-
-<p>You should model the pension impact before opting out. The <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials guide</a> explains the accrual rates and contribution tiers in detail.</p>
-
-<h2>Income Tax and Profit Extraction After Opt-Out</h2>
-
-<p>If you continue as a private practice after opting out, your income structure changes. You lose guaranteed UDA income and replace it with variable private fee income. This affects your tax planning in several ways:</p>
-
-<ul>
-<li><strong>Profit volatility</strong>: Private practice income can fluctuate month-to-month. You may need to budget for lower income in the first 12-24 months while building the patient list.</li>
-<li><strong>Profit extraction</strong>: If you operate through a limited company, you can extract profits via salary, dividends, or pension contributions. The dividend allowance for 2025/26 is £500. Dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate).</li>
-<li><strong>Employer NI</strong>: If you employ staff, employer NI is 15% on earnings above £5,000 per year. The Employment Allowance of £10,500 can reduce this if you are eligible.</li>
-<li><strong>Capital allowances</strong>: If you invest in new equipment for the private practice (chairs, X-ray units, autoclaves), the Annual Investment Allowance of £1,000,000 gives 100% tax relief in the year of purchase.</li>
-</ul>
-
-<p>For a principal who was earning £150,000 from NHS work and now earns £120,000 from private work, the tax position changes. The higher-rate tax band starts at £50,270. Personal allowance is tapered above £100,000 and fully removed at £125,140. Careful profit extraction planning is essential to avoid paying 60%+ marginal rates on income between £100,000 and £125,140.</p>
-
-<h2>Contract Handback vs Sale: Which Route Is Better?</h2>
-
-<p>There are two main routes for exiting an NHS contract:</p>
+<p>There are two ways to leave NHS dentistry, and they have very different financial consequences:</p>
 
 <ol>
-<li><strong>Contract handback</strong>: You notify NHS England that you are terminating the contract. The contract is extinguished. You cannot sell it. You may continue as a private practice or close the business.</li>
-<li><strong>Practice sale with contract transfer</strong>: You sell the practice as a going concern, and the buyer takes over the NHS contract. This preserves the goodwill value and triggers a capital gain (with reliefs available).</li>
+<li><strong>Handback or non-renewal.</strong> You notify the commissioner and the contract ends. You keep no capital value from the contract, and you continue as a private practice or wind down. This is the route this article focuses on.</li>
+<li><strong>Sale as a going concern.</strong> You sell the practice and the buyer takes over the NHS contract by novation with commissioner consent. The contract value is preserved within the sale price, and any gain on the disposal of goodwill and other assets can potentially be relieved.</li>
 </ol>
 
-<p>From a tax perspective, the sale route is almost always better. It crystallises a gain that can be relieved via BADR or incorporation relief. The handback route destroys goodwill value without any tax relief.</p>
+<p>If your goal is to extract value from the business, a sale almost always beats a handback, because the contract carries value into the transaction rather than simply ending. A handback makes sense when you intend to keep practising privately, or where a sale is not realistically achievable. The two routes are not interchangeable, and the choice should be made before you give notice. Our guide on <a href="/blog/buying-a-practice/transferring-nhs-dental-contract-on-practice-sale">transferring an NHS dental contract on a practice sale</a> covers the novation route in full.</p>
 
-<p>However, the sale route requires a buyer. In some areas, NHS contracts are hard to sell because UDA values are low or the patient list is declining. If you cannot find a buyer, handback may be the only option. In that case, you should plan the transition carefully to minimise the financial impact.</p>
+<h2>Steps to take before you give notice</h2>
 
-<h2>Practical Steps Before Opting Out</h2>
-
-<p>Before you hand back your NHS contract, take these steps:</p>
+<p>Before you commit to opting out, work through the following:</p>
 
 <ul>
-<li><strong>Get a practice valuation</strong>: Understand what your practice is worth as an NHS-going-concern vs a private-only business. The <a href="/services/practice-valuation">practice valuation</a> team can provide a detailed analysis.</li>
-<li><strong>Model the tax impact</strong>: Calculate the CGT, VAT, and pension consequences of each route. Use the <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> to estimate the goodwill value.</li>
-<li><strong>Review your pension position</strong>: If you are close to retirement, the loss of NHS pension accrual may outweigh the benefits of going private.</li>
-<li><strong>Check your Performers' List status</strong>: If you continue any NHS work (e.g., as a locum), you must remain on the Performers' List.</li>
-<li><strong>Consult a dental-specialist accountant</strong>: The rules are complex and fact-specific. A generalist accountant may miss key reliefs or obligations.</li>
+<li><strong>Model the NHS pension you would give up.</strong> Especially if you are within fifteen years of retirement, the lost accrual can be the deciding factor.</li>
+<li><strong>Stress-test the cash-flow transition.</strong> Build a month-by-month forecast through the first two years of private-only income.</li>
+<li><strong>Confirm your VAT position.</strong> Establish whether any cosmetic income will push your taxable turnover towards the £90,000 threshold, and ignore the myth that clinical care becomes taxable.</li>
+<li><strong>Decide handback versus sale deliberately.</strong> If there is any prospect of selling, explore the novation route before giving notice.</li>
+<li><strong>Keep your Performers' List status if you will do any NHS work.</strong> You must remain listed to continue as a locum or associate.</li>
+<li><strong>Take dental-specialist advice.</strong> The interaction of UDA income, NHS pension, VAT and profit extraction is fact-specific, and a generalist adviser can miss the pension and VAT points entirely.</li>
 </ul>
 
-<h2>Final Thoughts</h2>
+<h2>Final thoughts</h2>
 
-<p>Opting out of an NHS dental contract is a significant financial decision. The tax implications depend on whether you sell the practice, hand back the contract, or continue as a private practice. Goodwill, CGT, VAT, and pension considerations all interact. There is no one-size-fits-all answer.</p>
+<p>Opting out of an NHS dental contract is a significant financial decision, but it is not the tax minefield it is sometimes made out to be. Handing back the contract ends your UDA income and your clawback risk, reduces your NHS pension accrual on that income, and changes your cash flow. It does not, by itself, make your clinical dental care subject to VAT: clinical care stays exempt, and VAT only enters the picture through cosmetic, standard-rated work. The profit-extraction maths runs at the same 2026/27 rates whether you are NHS or private, with the dividend rise narrowing the incorporation case.</p>
 
-<p>The best approach is to plan the exit 12-24 months in advance. This gives you time to find a buyer, model the tax outcomes, and structure the transaction to minimise tax. A dental-specialist accountant can help you navigate the process and avoid costly mistakes.</p>
-
-<p>If you are considering an NHS contract opt-out, speak to the team at Dental Finance Partners. We work with principals, associates, and locums across the UK. Contact us for a confidential discussion about your options.</p>
+<p>The dentists who handle opt-out well plan it 12 to 24 months ahead, model the pension and cash-flow effects properly, and decide consciously between handback and sale. If you are weighing up leaving the NHS contract, speak to the team at Dental Finance Partners for a confidential discussion of your options.</p>

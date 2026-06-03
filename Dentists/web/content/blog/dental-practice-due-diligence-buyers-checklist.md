@@ -3,6 +3,7 @@ title: What Financial Due Diligence Should a Dental Practice Buyer Complete Befo
 slug: dental-practice-due-diligence-buyers-checklist
 canonical: https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-due-diligence-buyers-checklist
 date: '2026-05-19'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Buying a Practice
 metaTitle: 'Dental Practice Due Diligence: Buyer''s Checklist'
@@ -11,6 +12,12 @@ altText: Dental practice buyer reviewing financial documents and a practice valu
 image: https://images.pexels.com/photos/8293735/pexels-photo-8293735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Financial Due Diligence Should a Dental Practice Buyer Complete Before Purchase?
 summary: Buying a dental practice is one of the biggest financial decisions a dentist will make. This guide provides a structured due diligence checklist covering goodwill valuation, NHS contract terms, TUPE obligations, VAT status, capital allowances, and regulatory compliance. Use it to avoid costly surprises and negotiate with confidence.
+keyTakeaways:
+  - "Goodwill typically represents 60 to 80 percent of a dental practice price, valued on roughly 0.6 to 1.4 times adjusted EBITDA or 25 to 60 percent of fee income."
+  - "England UDA rates average around 25 to 35 pounds but individual contracts span 15 to 45 pounds plus, so verify the exact value, volume and clawback risk."
+  - "Employed staff transfer under TUPE on existing terms, whereas associate contracts do not transfer automatically and need fresh agreements to retain them."
+  - "A CAA 2001 s.198 election fixes the value of fixtures with the seller, and the Annual Investment Allowance is 1,000,000 pounds for 2026/27."
+  - "CQC registration can take more than 120 days and must be in place before completion, so the buyer cannot treat patients under the seller's registration."
 schema: ''
 faqs:
 - question: How long does due diligence take for a dental practice purchase?
@@ -93,7 +100,7 @@ imageCredit:
 
 <h2>5. Capital Allowances: What Can You Claim on Fixtures and Equipment?</h2>
 
-<p>Dental chairs, lights, compressors, suction units, autoclaves, X-ray machines (including OPG), and computer equipment typically qualify for capital allowances under the Annual Investment Allowance (AIA), which is £1,000,000 for 2025/26. This means you can deduct the full cost from your taxable profits in the year of purchase.</p>
+<p>Dental chairs, lights, compressors, suction units, autoclaves, X-ray machines (including OPG), and computer equipment typically qualify for capital allowances under the Annual Investment Allowance (AIA), which is £1,000,000 for 2026/27. This means you can deduct the full cost from your taxable profits in the year of purchase.</p>
 
 <p>However, when you buy a practice from a seller who has already claimed capital allowances on the fixtures, you need an election under CAA 2001 s.198 to agree a fixed value for the fixtures. Without this election, HMRC may challenge your capital allowance claims later. Your accountant should review the seller's capital allowance pool history and agree a s.198 election before completion.</p>
 
@@ -134,7 +141,7 @@ imageCredit:
 <p>Key tax considerations:</p>
 <ul>
 <li><strong>Corporation tax:</strong> A limited company pays 19-25% on profits, depending on profit level. You then extract profits via salary and dividends, each with its own tax and NI consequences.</li>
-<li><strong>Dividend allowance:</strong> Only £500 for 2025/26, with dividend tax rates of 8.75% (basic), 33.75% (higher), and 39.35% (additional).</li>
+<li><strong>Dividend allowance:</strong> Only £500 for 2026/27, with dividend tax rates of 10.75% (basic), 35.75% (higher), and 39.35% (additional).</li>
 <li><strong>Employer NI:</strong> 15% on earnings above £5,000 per year. Employment Allowance of £10,500 can offset some of this if you employ staff.</li>
 <li><strong>Goodwill amortisation:</strong> If you buy goodwill through a company, tax relief is available at 6.5% per year for qualifying goodwill acquired after 1 April 2019. Goodwill purchased between 8 July 2015 and 31 March 2019 generally has no tax relief.</li>
 <li><strong>Section 162 incorporation relief:</strong> If you are transferring an existing unincorporated practice into a company, you may defer CGT on goodwill by taking shares instead of cash.</li>

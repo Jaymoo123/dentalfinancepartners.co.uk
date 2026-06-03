@@ -1,0 +1,26 @@
+wave: 4
+buckets:
+  A:
+    label: "Cluster A — Practice ownership transitions & financing (HP §4, §5, §7)"
+    picks:
+      - { id: A1, slug: "dental-partner-buy-in-financing-tax-guide", label: "Financing a dental partnership buy-in: how an associate buys into the practice and the tax" }
+      - { id: A2, slug: "dental-partner-buy-out-retiring-partner-tax", label: "Buying out a retiring dental partner: funding the share and the CGT/goodwill tax" }
+      - { id: A3, slug: "dental-expense-sharing-vs-partnership-tax", label: "Expense-sharing arrangement vs full partnership for dentists: the financial and tax difference" }
+      - { id: A4, slug: "squat-dental-practice-working-capital-ramp-finance", label: "Funding a squat dental practice through the ramp: working capital and the loss-year tax position" }
+      - { id: A5, slug: "dental-partnership-capital-accounts-profit-share-tax", label: "Partnership capital accounts and profit-sharing for incoming and outgoing dental partners" }
+  B:
+    label: "Cluster B — Dentist mobility & tax residence (HP §11, §1)"
+    picks:
+      - { id: B1, slug: "uk-dentist-returning-from-abroad-tax-residence", label: "UK dentist returning from abroad: temporary non-residence anti-avoidance and the FIG regime" }
+      - { id: B2, slug: "dentist-leaving-uk-emigrating-tax-position", label: "Dentist leaving the UK or emigrating: the tax position, split-year and what to settle first" }
+      - { id: B3, slug: "dft-to-dct-specialty-training-pay-tax-progression", label: "DFT to DCT and specialty training: how a dentist's pay and tax position progresses" }
+      - { id: B4, slug: "dentist-working-abroad-double-tax-treaty-relief", label: "Double-tax-treaty relief for a UK dentist working abroad: avoiding being taxed twice" }
+      - { id: B5, slug: "split-year-treatment-dentist-arriving-leaving-uk", label: "Split-year treatment for a dentist arriving in or leaving the UK mid-year" }
+  C:
+    label: "Cluster C — Practice staff & systems finance (HP §8, §5, general)"
+    picks:
+      - { id: C1, slug: "employing-first-dental-nurse-practice-manager-cost-tax", label: "Employing your first dental nurse or practice manager: the cost, the tax and employer NIC" }
+      - { id: C2, slug: "dental-practice-payroll-auto-enrolment-staff-pensions", label: "Payroll and auto-enrolment for dental practice staff: getting workplace pensions right" }
+      - { id: C3, slug: "dental-practice-bookkeeping-mtd-readiness-systems", label: "Dental practice bookkeeping and MTD-readiness: building systems that pass digital records" }
+      - { id: C4, slug: "trivial-benefits-staff-perks-dental-team-tax", label: "Trivial benefits and tax-efficient perks for a dental team: what you can give staff tax-free" }
+      - { id: C5, slug: "cost-of-locum-cover-dental-practice-tax-treatment", label: "The cost of locum cover for a dental practice: budgeting it and the tax treatment" }
