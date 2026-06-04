@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
+import { allTools } from "@/lib/calculators/registry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -12,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/incorporation",
     "/calculators",
-    "/calculators/stamp-duty-calculator",
+    "/embed",
     "/locations",
     "/blog",
     "/privacy-policy",
@@ -42,6 +43,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
+      alternates: hreflang(url),
+    });
+  }
+
+  for (const tool of allTools()) {
+    const url = `${base}/calculators/${tool.slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
       alternates: hreflang(url),
     });
   }

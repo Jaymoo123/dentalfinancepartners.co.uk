@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { EmbedCta } from "@/components/embed/EmbedCta";
 
-export function MTDCheckerCalculator() {
+export function MTDCheckerCalculator({ variant = "page" }: { variant?: "page" | "embed" }) {
   const [rentalIncome, setRentalIncome] = useState(35000);
   const [selfEmploymentIncome, setSelfEmploymentIncome] = useState(20000);
   const [otherIncome, setOtherIncome] = useState(0);
@@ -133,6 +134,7 @@ export function MTDCheckerCalculator() {
           </div>
         </div>
       </div>
+      {variant === "embed" && <EmbedCta campaign="mtd-checker" />}
     </div>
   );
 }

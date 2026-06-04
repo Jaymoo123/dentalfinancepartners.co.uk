@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { EmbedCta } from "@/components/embed/EmbedCta";
+import { additionalDwellingSdlt } from "@/lib/sdlt";
 
-export function IncorporationCostCalculator() {
+export function IncorporationCostCalculator({ variant = "page" }: { variant?: "page" | "embed" }) {
   const [propertyValue, setPropertyValue] = useState(300000);
   const [purchasePrice, setPurchasePrice] = useState(200000);
   const [annualRentalIncome, setAnnualRentalIncome] = useState(24000);
@@ -13,9 +15,10 @@ export function IncorporationCostCalculator() {
   const cgtRate = taxBand === "basic" ? 0.18 : 0.24;
   const cgtCost = capitalGain * cgtRate;
   
-  const sdltRate = 0.05;
-  const sdltCost = propertyValue * sdltRate;
-  
+  // Transferring a rental into a company is an additional-dwelling purchase:
+  // standard SDLT bands plus the 5% surcharge on the whole price.
+  const sdltCost = additionalDwellingSdlt(propertyValue);
+
   const totalUpfrontCost = cgtCost + sdltCost;
   
   const personalTaxableProfit = annualRentalIncome;
@@ -153,7 +156,7 @@ export function IncorporationCostCalculator() {
                 <span className="font-semibold text-slate-300">£{cgtCost.toLocaleString("en-GB", { maximumFractionDigits: 0 })}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-400">SDLT (5%)</span>
+                <span className="text-slate-400">SDLT (incl. 5% surcharge)</span>
                 <span className="font-semibold text-slate-300">£{sdltCost.toLocaleString("en-GB", { maximumFractionDigits: 0 })}</span>
               </div>
             </div>
@@ -186,6 +189,7 @@ export function IncorporationCostCalculator() {
           </div>
         </div>
       </div>
+      {variant === "embed" && <EmbedCta campaign="incorporation-cost-calculator" />}
     </div>
   );
 }

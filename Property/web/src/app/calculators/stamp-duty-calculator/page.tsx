@@ -4,6 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 
 export const metadata: Metadata = {
   title: "Stamp Duty Calculator | SDLT incl. Buy-to-Let Surcharge (England & NI)",
@@ -26,6 +27,17 @@ export const metadata: Metadata = {
 export default function StampDutyCalculatorPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildCalculatorJsonLd({
+            name: "Stamp Duty (SDLT) Calculator",
+            description:
+              "Work out Stamp Duty Land Tax on a property purchase in England and Northern Ireland, including the 5% additional-dwelling surcharge, first-time-buyer relief and the 2% non-resident surcharge.",
+            path: "/calculators/stamp-duty-calculator",
+          }),
+        }}
+      />
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb

@@ -1,6 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import {
+  STANDARD_SDLT_BANDS,
+  FTB_SDLT_BANDS,
+  ADDITIONAL_DWELLING_SURCHARGE,
+  marginalSdlt,
+} from "@/lib/sdlt";
 
 /**
  * Stamp Duty Land Tax (SDLT) calculator — England & Northern Ireland.
@@ -14,31 +20,6 @@ import { useState } from "react";
 
 type Variant = "page" | "embed";
 
-const STANDARD_BANDS = [
-  { upTo: 125_000, rate: 0 },
-  { upTo: 250_000, rate: 0.02 },
-  { upTo: 925_000, rate: 0.05 },
-  { upTo: 1_500_000, rate: 0.1 },
-  { upTo: Infinity, rate: 0.12 },
-];
-const FTB_BANDS = [
-  { upTo: 300_000, rate: 0 },
-  { upTo: 500_000, rate: 0.05 },
-  { upTo: Infinity, rate: 0.12 }, // not reached: FTB relief withdrawn >500k (handled below)
-];
-
-function marginal(price: number, bands: { upTo: number; rate: number }[]) {
-  let prev = 0;
-  let tax = 0;
-  for (const b of bands) {
-    if (price <= prev) break;
-    const upper = Math.min(price, b.upTo);
-    tax += (upper - prev) * b.rate;
-    prev = upper;
-  }
-  return tax;
-}
-
 const gbp = (n: number) =>
   "£" + Math.round(n).toLocaleString("en-GB", { maximumFractionDigits: 0 });
 
@@ -51,8 +32,8 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
   // First-time-buyer relief: only if the buyer is NOT also buying an additional
   // property and the price is within the £500k cap.
   const ftbReliefApplies = ftb && !additional && price <= 500_000;
-  const standard = marginal(price, ftbReliefApplies ? FTB_BANDS : STANDARD_BANDS);
-  const surcharge = additional ? price * 0.05 : 0;
+  const standard = marginalSdlt(price, ftbReliefApplies ? FTB_SDLT_BANDS : STANDARD_SDLT_BANDS);
+  const surcharge = additional ? price * ADDITIONAL_DWELLING_SURCHARGE : 0;
   const nonRes = nonResident ? price * 0.02 : 0;
   const total = standard + surcharge + nonRes;
   const effectiveRate = price > 0 ? (total / price) * 100 : 0;

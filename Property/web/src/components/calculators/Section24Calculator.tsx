@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { EmbedCta } from "@/components/embed/EmbedCta";
 
-export function Section24Calculator() {
+export function Section24Calculator({ variant = "page" }: { variant?: "page" | "embed" }) {
   const [rentalIncome, setRentalIncome] = useState(50000);
   const [mortgageInterest, setMortgageInterest] = useState(20000);
   const [otherExpenses, setOtherExpenses] = useState(8000);
@@ -152,6 +153,7 @@ export function Section24Calculator() {
           </div>
         </div>
       </div>
+      {variant === "embed" && <EmbedCta campaign="section-24-calculator" />}
     </div>
   );
 }
