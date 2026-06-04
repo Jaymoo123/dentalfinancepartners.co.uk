@@ -96,10 +96,17 @@ export default function CalculatorsPage() {
             </div>
           ))}
 
-          <div className="mt-10 text-center">
-            <Link href="/embed" className="text-sm font-semibold text-slate-500 hover:text-emerald-700">
-              Run a property-related site? Embed any of these calculators for free →
-            </Link>
+          <div className="mt-10 space-y-2 text-center">
+            <p>
+              <Link href="/property-tax-rates" className="text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                See all current UK property tax rates for 2026/27 →
+              </Link>
+            </p>
+            <p>
+              <Link href="/embed" className="text-sm font-semibold text-slate-500 hover:text-emerald-700">
+                Run a property-related site? Embed any of these calculators for free →
+              </Link>
+            </p>
           </div>
 
           <div className="mt-12 sm:mt-16 bg-slate-900 p-6 sm:p-10 text-center text-white">
