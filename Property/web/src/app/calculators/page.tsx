@@ -5,14 +5,15 @@ import { Section24Calculator } from "@/components/calculators/Section24Calculato
 import { IncorporationCostCalculator } from "@/components/calculators/IncorporationCostCalculator";
 import { MTDCheckerCalculator } from "@/components/calculators/MTDCheckerCalculator";
 import { PortfolioProfitabilityCalculator } from "@/components/calculators/PortfolioProfitabilityCalculator";
+import { StampDutyCalculator } from "@/components/calculators/StampDutyCalculator";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Free Property Tax Calculators | Section 24, Incorporation, MTD & Yield",
+  title: "Free Property Tax Calculators | Stamp Duty, Section 24, Incorporation & MTD",
   description:
-    "4 free calculators for UK landlords: Section 24 tax impact, incorporation cost & break-even, MTD checker, portfolio profitability. Current 2026/27 tax rates. Instant results.",
+    "5 free calculators for UK landlords: stamp duty (SDLT incl. buy-to-let surcharge), Section 24 tax impact, incorporation cost & break-even, MTD checker, portfolio profitability. Current rates. Instant results.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
     title: "Free Property Tax Calculators for UK Landlords",
@@ -50,8 +51,8 @@ export default function CalculatorsPage() {
               Property tax calculators for UK landlords
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-xl leading-relaxed text-white">
-              Free calculators built by specialist property accountants. Work out your Section 24 tax impact,
-              incorporation costs, MTD compliance requirements, and rental yield.
+              Free calculators built by specialist property accountants. Work out your stamp duty (incl. the
+              buy-to-let surcharge), Section 24 tax impact, incorporation costs, MTD compliance, and rental yield.
             </p>
           </div>
         </div>
@@ -60,6 +61,10 @@ export default function CalculatorsPage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="space-y-12 sm:space-y-16">
+            <div id="stamp-duty">
+              <StampDutyCalculator variant="page" />
+            </div>
+
             <div id="section24">
               <Section24Calculator />
             </div>

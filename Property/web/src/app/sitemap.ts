@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/incorporation",
     "/calculators",
+    "/calculators/stamp-duty-calculator",
     "/locations",
     "/blog",
     "/privacy-policy",
