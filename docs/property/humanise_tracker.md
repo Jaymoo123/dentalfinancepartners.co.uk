@@ -19,4 +19,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide | done | robotic | 49.7 | 1.9 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | non-resident-landlord-scheme-uk-complete-guide | done | robotic | 39.5 | 10 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | a-complete-guide-to-stamp-duty-refund | done | robotic | 40.3 | 4.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| principal-private-residence-relief-landlords | done | robotic | 41.8 | 5.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
