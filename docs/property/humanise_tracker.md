@@ -26,4 +26,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | vat-dilapidations-payments-tenant-landlord-vat-treatment-supply-or-damages | done | robotic | 36.9 | 7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | residency-and-domicile | done | robotic | 42 | 1.6 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | higher-rates-of-land-transaction-tax-a-complete-guide | done | robotic | 42 | 1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence | done | robotic | 53 | 13.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
