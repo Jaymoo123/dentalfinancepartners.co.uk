@@ -2,7 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { ConsentProvider } from "@/components/analytics/ConsentProvider";
+import { ConsentedScripts } from "@/components/analytics/ConsentedScripts";
+import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -62,13 +64,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
-        <PageShell>{children}</PageShell>
+        <ConsentProvider>
+          <AnalyticsProvider siteKey={niche.content_strategy.source_identifier}>
+            <PageShell>{children}</PageShell>
+          </AnalyticsProvider>
+          {/* GA4 + Microsoft Clarity load only after consent is granted. */}
+          <ConsentedScripts
+            gaMeasurementId={niche.seo.google_analytics_id}
+            clarityProjectId={process.env.NEXT_PUBLIC_CLARITY_ID}
+          />
+        </ConsentProvider>
       </body>
     </html>
   );

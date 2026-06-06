@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { CalcField, CalcValues } from "@/lib/calculators/types";
 import { getGenericTool } from "@/lib/calculators/registry";
 import { EmbedCta } from "@/components/embed/EmbedCta";
+import { track } from "@/lib/analytics/track";
 
 function defaultValues(fields: CalcField[]): CalcValues {
   const v: CalcValues = {};
@@ -98,8 +99,31 @@ export function Calculator({
 }) {
   const tool = getGenericTool(slug);
   const [values, setValues] = useState<CalcValues>(() => (tool ? defaultValues(tool.fields) : {}));
-  const set = (id: string, v: number | string | boolean) =>
+  const interactedRef = useRef(false);
+  const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // calc_view once per mounted tool (no-ops without consent / inside embeds).
+  useEffect(() => {
+    if (tool) track("calc_view", { calculator_slug: tool.slug, variant });
+    return () => {
+      if (computeTimer.current) clearTimeout(computeTimer.current);
+    };
+  }, [tool, variant]);
+
+  const set = (id: string, v: number | string | boolean) => {
     setValues((prev) => ({ ...prev, [id]: v }));
+    if (!tool) return;
+    track("calc_input_change", { calculator_slug: tool.slug, field_id: id });
+    if (!interactedRef.current) {
+      interactedRef.current = true;
+      track("calc_result_viewed", { calculator_slug: tool.slug, variant });
+    }
+    // Debounced "the user settled on inputs and saw a result".
+    if (computeTimer.current) clearTimeout(computeTimer.current);
+    computeTimer.current = setTimeout(() => {
+      track("calc_computed", { calculator_slug: tool.slug });
+    }, 800);
+  };
 
   if (!tool) return null;
   const result = tool.compute(values);

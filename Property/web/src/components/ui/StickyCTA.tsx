@@ -57,7 +57,12 @@ export function StickyCTA({
           </p>
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
-          <Link href={href} className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}>
+          <Link
+            href={href}
+            data-cta="sticky_cta"
+            data-cta-placement="sticky"
+            className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
+          >
             {button}
           </Link>
           <button

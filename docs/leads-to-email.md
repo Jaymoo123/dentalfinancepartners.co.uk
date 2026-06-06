@@ -33,12 +33,19 @@ line; to reorder, move it.
    - `RESEND_API_KEY` — Resend API key.
    - `RESEND_FROM_EMAIL` — from-address on a Resend-verified domain
      (default `leads@propertytaxpartners.co.uk`; must be verified in Resend).
-   - `RESEND_FROM_NAME` — optional display name (default "Property Tax Partners Leads").
+   - `RESEND_FROM_NAME` — optional display name (default "JM Lead Notification").
+     Site-agnostic on purpose: one endpoint serves every site, so the originating
+     site is shown in the subject line and the "Site" body row, not the sender name.
+     If this env var is set on the Property project it overrides the default, so to
+     adopt the new default make sure it is unset (or set it to "JM Lead Notification").
    - `LEADS_NOTIFY_TO` — recipient inbox (default `junaydmoughal@hotmail.co.uk`).
+   - `LEADS_NOTIFY_CC` — optional CC, comma-separated for multiple
+     (default `ahmadtirmizey@reflexaccounting.co.uk`). Set to an empty string to
+     disable the CC entirely.
    - `LEADS_NOTIFY_SECRET` — optional; falls back to the existing `LEADS_SYNC_SECRET`.
 
 2. **Deploy** the Property site so `/api/leads/notify` is live.
-   Health check: `GET /api/leads/notify` → `{ secretSet, resendSet, notifyTo }`.
+   Health check: `GET /api/leads/notify` → `{ secretSet, resendSet, notifyTo, ccSet }`.
 
 3. **Create the trigger** via the Supabase Management API, substituting the real
    endpoint URL (`https://www.propertytaxpartners.co.uk/api/leads/notify`) and the

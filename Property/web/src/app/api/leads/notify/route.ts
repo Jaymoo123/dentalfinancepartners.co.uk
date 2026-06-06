@@ -140,12 +140,16 @@ function buildHtml(r: LeadRecord): string {
                 </tr>`,
   ).join("");
 
-  const messageBlock = message
-    ? `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Message</p>
+  // Always render the message block so the field never silently disappears; an
+  // empty message shows a muted "Not provided" like the other detail fields, so
+  // it is obvious there was no message rather than leaving the reader unsure.
+  const messageCell = message
+    ? escapeHtml(message).replace(/\n/g, "<br>")
+    : `<span style="color:#94a3b8;">Not provided</span>`;
+  const messageBlock = `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Message</p>
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
-                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:14px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${escapeHtml(message).replace(/\n/g, "<br>")}</td></tr>
-                </table>`
-    : "";
+                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:14px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${messageCell}</td></tr>
+                </table>`;
 
   return `<!doctype html>
 <html lang="en">
@@ -207,7 +211,7 @@ function buildText(r: LeadRecord): string {
     const raw = (field.get(r) ?? "").toString().trim();
     lines.push(`${field.label}: ${raw || "Not provided"}`);
   }
-  if (message) lines.push("", "MESSAGE", message);
+  lines.push("", "MESSAGE", message || "Not provided");
   lines.push("", `Lead ID: ${r.id || "Not provided"}`);
   return lines.join("\n");
 }
@@ -220,6 +224,7 @@ export async function GET() {
     secretSet: Boolean(process.env.LEADS_NOTIFY_SECRET || process.env.LEADS_SYNC_SECRET),
     resendSet: Boolean(process.env.RESEND_API_KEY),
     notifyTo: Boolean(process.env.LEADS_NOTIFY_TO),
+    ccSet: Boolean(process.env.LEADS_NOTIFY_CC),
   });
 }
 
@@ -256,12 +261,19 @@ export async function POST(req: NextRequest) {
   }
 
   const to = process.env.LEADS_NOTIFY_TO || "junaydmoughal@hotmail.co.uk";
+  // Partner firm copied on every lead. Comma-separated list supported via env;
+  // defaults to Reflex Accounting so no new Vercel config is required.
+  const cc = (process.env.LEADS_NOTIFY_CC ?? "ahmadtirmizey@reflexaccounting.co.uk")
+    .split(",")
+    .map((addr) => addr.trim())
+    .filter(Boolean);
   const subject = `New ${prettySource(r.source) || "website"} lead${r.full_name ? `: ${r.full_name}` : ""}`;
 
   try {
     const { error } = await getResend().emails.send({
       from: getFromAddress(),
       to,
+      ...(cc.length ? { cc } : {}),
       subject,
       html: buildHtml(r),
       text: buildText(r),

@@ -4,6 +4,9 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@/components/analytics/useFormTracking";
+import { track } from "@/lib/analytics/track";
+import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -42,6 +45,12 @@ export function ExitIntentModal({ topic }: { topic?: string }) {
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const ft = useFormTracking("exit_intent_form");
+
+  // Record when the exit-intent modal is actually shown (a UX/funnel signal).
+  useEffect(() => {
+    if (open) track("exit_intent_shown", { topic: topic || "" });
+  }, [open, topic]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -121,14 +130,19 @@ export function ExitIntentModal({ topic }: { topic?: string }) {
       consent_given: consent,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
+      visitor_id: getVisitorId() || undefined,
+      session_id: getSessionId() || undefined,
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again.");
+      ft.onError("form", "server");
       return;
     }
+
+    ft.onLead({ source: payload.source, role: "exit_intent" });
 
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;

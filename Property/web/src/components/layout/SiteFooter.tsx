@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -67,10 +68,11 @@ export function SiteFooter() {
           </div>
         </div>
         
-        <div className="mt-10 pt-6 border-t border-slate-700">
+        <div className="mt-10 pt-6 border-t border-slate-700 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs leading-relaxed text-slate-400">
             © {year} {siteConfig.legalName}. Registered in England and Wales.
           </p>
+          <ConsentToggle className="text-xs text-slate-400 underline hover:text-emerald-400 hover:no-underline" />
         </div>
       </div>
     </footer>

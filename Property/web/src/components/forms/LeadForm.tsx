@@ -5,6 +5,8 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@/components/analytics/useFormTracking";
+import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
 
 const fieldClass =
   "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
@@ -34,6 +36,7 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const ft = useFormTracking("lead_form");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -82,7 +85,11 @@ export function LeadForm({
     const data = new FormData(form);
     const errs = validate(data);
     setFieldErrors(errs);
-    if (Object.keys(errs).length > 0) return;
+    if (Object.keys(errs).length > 0) {
+      for (const [field, kind] of Object.entries(errs)) ft.onError(field, kind ? "validation" : "validation");
+      return;
+    }
+    ft.onSubmit(Object.keys(data).length);
 
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -106,6 +113,9 @@ export function LeadForm({
       consent_given: consent,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
+      // Stitch this lead to its anonymous first-party journey (no-op if untracked).
+      visitor_id: getVisitorId() || undefined,
+      session_id: getSessionId() || undefined,
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);
@@ -113,8 +123,12 @@ export function LeadForm({
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again or email us directly.");
+      ft.onError("form", "server");
       return;
     }
+
+    // First-party conversion event (system of record), stitched to the journey.
+    ft.onLead({ source: payload.source, role: payload.role });
 
     // Track conversion in Google Analytics
     if (typeof window !== "undefined" && "gtag" in window) {
@@ -140,7 +154,20 @@ export function LeadForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" noValidate aria-busy={status === "loading"}>
+    <form
+      onSubmit={onSubmit}
+      onFocusCapture={(e) => {
+        const t = e.target as HTMLElement & { name?: string };
+        if (t?.name) ft.onFieldFocus(t.name);
+      }}
+      onBlurCapture={(e) => {
+        const t = e.target as HTMLElement & { name?: string; value?: string };
+        if (t?.name) ft.onFieldBlur(t.name, Boolean(t.value && t.value.trim()));
+      }}
+      className="space-y-5"
+      noValidate
+      aria-busy={status === "loading"}
+    >
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
 
       <div>

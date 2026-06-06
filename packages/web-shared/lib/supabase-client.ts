@@ -19,6 +19,12 @@ export interface LeadSubmission {
   consent_given: boolean;
   consent_text: string;
   consent_at: string;
+  // First-party analytics ids (optional). When present, they stitch this lead to
+  // its anonymous pre-conversion journey (web_sessions/web_events). Sites without
+  // tracking simply omit them; the leads columns are nullable. Optional so older
+  // builds and other sites are unaffected.
+  visitor_id?: string;
+  session_id?: string;
 }
 
 export async function submitLead(

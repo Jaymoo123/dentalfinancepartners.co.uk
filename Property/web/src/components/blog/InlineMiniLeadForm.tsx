@@ -4,6 +4,8 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@/components/analytics/useFormTracking";
+import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -18,6 +20,7 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const ft = useFormTracking("inline_mini_form");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -68,14 +71,19 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
       consent_given: consent,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
+      visitor_id: getVisitorId() || undefined,
+      session_id: getSessionId() || undefined,
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again or use the full form below.");
+      ft.onError("form", "server");
       return;
     }
+
+    ft.onLead({ source: payload.source, role: "inline_mini" });
 
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -112,7 +120,20 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
           </p>
         </div>
       ) : (
-        <form onSubmit={onSubmit} className="mt-5 space-y-4" noValidate aria-busy={status === "loading"}>
+        <form
+          onSubmit={onSubmit}
+          onFocusCapture={(e) => {
+            const t = e.target as HTMLElement & { name?: string };
+            if (t?.name) ft.onFieldFocus(t.name);
+          }}
+          onBlurCapture={(e) => {
+            const t = e.target as HTMLElement & { name?: string; value?: string };
+            if (t?.name) ft.onFieldBlur(t.name, Boolean(t.value && t.value.trim()));
+          }}
+          className="mt-5 space-y-4"
+          noValidate
+          aria-busy={status === "loading"}
+        >
           <div className="grid gap-4 sm:grid-cols-[1fr_2fr]">
             <div>
               <label htmlFor="mini-email" className="block text-sm font-semibold text-slate-900">
