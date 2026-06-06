@@ -14,6 +14,8 @@ import {
   getLeadForVisitor,
   type VisitorEvent,
 } from "@/lib/analytics/server/adminData";
+import { buildStory, buildActivityRows } from "@/lib/analytics/journey";
+import VisitorTabs from "./VisitorTabs";
 
 export const dynamic = "force-dynamic";
 export const metadata = { robots: { index: false, follow: false } };
@@ -41,33 +43,6 @@ const GROUPS: Array<{ title: string; events: Array<[string, string]> }> = [
 function secs(ms: number): string {
   const s = Math.round(ms / 1000);
   return s < 60 ? `${s}s` : `${Math.floor(s / 60)}m ${s % 60}s`;
-}
-
-function summarise(e: VisitorEvent): string {
-  const p = e.props || {};
-  switch (e.event_name) {
-    case "page_view": return `Viewed ${e.page_path}`;
-    case "scroll_depth": return `Scrolled ${p.pct}%`;
-    case "cta_click": return `Clicked CTA "${p.cta_id}"${p.placement ? ` (${p.placement})` : ""}`;
-    case "element_click": return `Clicked ${p.nearest_text || p.selector}`;
-    case "custom_interaction": return `Interacted "${p.track_id}"`;
-    case "outbound_click": return `Left to ${p.target_host}`;
-    case "contact_click": return `Clicked ${p.kind} link`;
-    case "calc_view": return `Opened calculator ${p.calculator_slug}`;
-    case "calc_input_change": return `Edited ${p.calculator_slug} (${p.field_id})`;
-    case "calc_computed": return `Computed ${p.calculator_slug}`;
-    case "calc_result_viewed": return `Saw result for ${p.calculator_slug}`;
-    case "form_start": return `Started form "${p.form_id}"`;
-    case "form_field_focus": return `Focused ${p.form_id}.${p.field}`;
-    case "form_field_abandon": return `Abandoned ${p.form_id}.${p.field}`;
-    case "form_error": return `Form error (${p.field}: ${p.error_kind})`;
-    case "lead_submitted": return `✅ Converted — submitted ${p.form_id}`;
-    case "rage_click": return `😠 Rage-clicked ${p.selector}`;
-    case "engagement_time": return `Engaged +${Math.round(Number(p.engaged_ms_delta || 0) / 1000)}s`;
-    case "exit_intent_shown": return "Exit-intent shown";
-    case "client_error": return `JS error: ${p.message}`;
-    default: return e.event_name;
-  }
 }
 
 function Stat({ label, value }: { label: string; value: string }) {
@@ -119,12 +94,16 @@ export default async function VisitorTimelinePage({
     }
   }
 
-  // Group events by session.
+  // Group events by session (for the new-vs-returning + sparkline maths).
   const bySession = new Map<string, VisitorEvent[]>();
   for (const e of events) {
     const g = bySession.get(e.session_id);
     if (g) g.push(e); else bySession.set(e.session_id, [e]);
   }
+
+  // Humanised views: a readable per-session STORY + the granular ACTIVITY log.
+  const storySessions = buildStory(events);
+  const activityRows = buildActivityRows(events);
 
   // Journey-as-story summary.
   const visits = journey?.total_sessions ?? bySession.size;
@@ -273,28 +252,8 @@ export default async function VisitorTimelinePage({
         </div>
       </div>
 
-      {/* Timeline */}
-      <h2 className="mt-8 text-lg font-bold text-slate-900">Timeline</h2>
-      {bySession.size === 0 ? (
-        <p className="mt-3 text-slate-400">No events for this visitor.</p>
-      ) : (
-        Array.from(bySession.entries()).map(([sessionId, evts], si) => (
-          <section key={sessionId} className="mt-5">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
-              Session {si + 1} · {new Date(evts[0].ts).toLocaleString("en-GB")}
-            </h3>
-            <ol className="mt-2 border-l-2 border-slate-200">
-              {evts.map((e, i) => (
-                <li key={i} className="relative pl-5 pb-2.5">
-                  <span className="absolute -left-[5px] top-1.5 h-2 w-2 rounded-full bg-emerald-500" />
-                  <span className="text-xs text-slate-400">{new Date(e.ts).toLocaleTimeString("en-GB")}</span>
-                  <span className="ml-2 text-sm text-slate-800">{summarise(e)}</span>
-                </li>
-              ))}
-            </ol>
-          </section>
-        ))
-      )}
+      {/* Story + Activity tabs */}
+      <VisitorTabs story={storySessions} activity={activityRows} />
     </div>
   );
 }

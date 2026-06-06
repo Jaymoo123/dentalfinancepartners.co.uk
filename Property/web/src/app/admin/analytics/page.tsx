@@ -16,6 +16,8 @@ import {
   getExperimentResults,
   type VisitorJourney,
 } from "@/lib/analytics/server/adminData";
+import { ruleLabel, surfaceLabel } from "@/lib/intent/labels";
+import { getTopic } from "@/lib/intent/taxonomy";
 
 export const dynamic = "force-dynamic";
 export const metadata = { robots: { index: false, follow: false } };
@@ -43,6 +45,27 @@ function tally(rows: VisitorJourney[], key: keyof VisitorJourney): Array<[string
     m.set(v, (m.get(v) || 0) + 1);
   }
   return Array.from(m.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
+}
+
+/**
+ * A short, representative copy string for what a given rule + topic actually
+ * shows the visitor — derived from the canonical taxonomy so the user can see
+ * roughly what each personalisation surface displays.
+ */
+function personalizationHint(ruleId: string, topicKey: string): string {
+  const topic = getTopic(topicKey);
+  if (!topic) return "—";
+  switch (ruleId) {
+    case "escalate_specialist":
+      return `Speak to a ${topic.label} specialist`;
+    case "topic_cta":
+    case "deep_scroll_offer":
+    case "returning_welcome":
+    case "topic_next_step":
+      return topic.ctaCopy;
+    default:
+      return topic.ctaCopy;
+  }
 }
 
 function Kpi({ label, value, sub }: { label: string; value: string; sub?: string }) {
@@ -162,6 +185,9 @@ export default async function AdminAnalyticsPage({
         <Kpi label="Conversion rate" value={pct(convRate)} sub={`${totals.converted} leads`} />
         <Kpi label="Avg engaged" value={secs(avgEngaged)} sub="per visitor" />
       </div>
+      <p className="mt-2 text-xs text-slate-500">
+        Visitors = unique people · Sessions = visits (reset after 30 min idle).
+      </p>
 
       {/* Funnel */}
       <h2 className="mt-10 text-lg font-bold text-slate-900">Conversion funnel</h2>
@@ -237,8 +263,8 @@ export default async function AdminAnalyticsPage({
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
             <tr>
               <th className="px-3 py-2">Surface</th>
-              <th className="px-3 py-2">Topic</th>
               <th className="px-3 py-2">Rule</th>
+              <th className="px-3 py-2">What&apos;s shown</th>
               <th className="px-3 py-2 text-right">Shown</th>
               <th className="px-3 py-2 text-right">Clicks</th>
               <th className="px-3 py-2 text-right">CTR</th>
@@ -251,9 +277,9 @@ export default async function AdminAnalyticsPage({
             ) : (
               personalization.map((p, i) => (
                 <tr key={`${p.surface}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100">
-                  <td className="px-3 py-2 text-slate-700">{p.surface}</td>
-                  <td className="px-3 py-2 text-slate-600">{p.topic}</td>
-                  <td className="px-3 py-2 text-slate-500">{p.rule_id}</td>
+                  <td className="px-3 py-2 text-slate-700">{surfaceLabel(p.surface)}</td>
+                  <td className="px-3 py-2 text-slate-600">{ruleLabel(p.rule_id)}</td>
+                  <td className="px-3 py-2 text-slate-500">“{personalizationHint(p.rule_id, p.topic)}”</td>
                   <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
                   <td className="px-3 py-2 text-right font-mono">{p.clicked}</td>
                   <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
@@ -296,46 +322,6 @@ export default async function AdminAnalyticsPage({
           </div>
         </>
       )}
-
-      {/* Leads */}
-      <h2 className="mt-10 text-lg font-bold text-slate-900">Leads</h2>
-      <p className="text-xs text-slate-500">Real submissions, newest first. Open a journey to see everything that person did.</p>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table className="w-full text-sm">
-          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-            <tr>
-              <th className="px-3 py-2">Name</th>
-              <th className="px-3 py-2">Email</th>
-              <th className="px-3 py-2">Phone</th>
-              <th className="px-3 py-2">Role</th>
-              <th className="px-3 py-2">When</th>
-              <th className="px-3 py-2">Journey</th>
-            </tr>
-          </thead>
-          <tbody>
-            {leads.length === 0 ? (
-              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No leads yet.</td></tr>
-            ) : (
-              leads.map((l) => (
-                <tr key={l.id} className="border-t border-slate-100">
-                  <td className="px-3 py-2 font-medium text-slate-800">{l.full_name || "—"}</td>
-                  <td className="px-3 py-2 break-all text-slate-700">{l.email || "—"}</td>
-                  <td className="px-3 py-2 text-slate-600">{l.phone || "—"}</td>
-                  <td className="px-3 py-2 text-slate-600">{l.role || "—"}</td>
-                  <td className="px-3 py-2 text-slate-500">{ago(l.created_at)}</td>
-                  <td className="px-3 py-2">
-                    {l.visitor_id ? (
-                      <Link href={`/admin/analytics/visitor/${l.visitor_id}?k=${expected}`} className="text-emerald-700 underline">view</Link>
-                    ) : (
-                      <span className="text-slate-300">—</span>
-                    )}
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
 
       {/* Visitors */}
       <h2 className="mt-10 text-lg font-bold text-slate-900">Visitors</h2>
