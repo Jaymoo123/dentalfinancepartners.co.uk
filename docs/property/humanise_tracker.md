@@ -27,4 +27,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | cgt-property-transfer-spouse | done | robotic | 49.6 | 12.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | incorporation-timing-when-to-incorporate-property-portfolio | done | robotic | 35.7 | 1.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | ated-six-step-compliance-walkthrough-uk-non-natural-persons | done | robotic | 45 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line | done | robotic | 46.1 | 4.1 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
