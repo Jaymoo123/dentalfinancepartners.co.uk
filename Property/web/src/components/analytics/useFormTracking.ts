@@ -9,6 +9,7 @@
  */
 import { useCallback, useRef } from "react";
 import { track } from "@/lib/analytics/track";
+import { setConverted } from "@/lib/intent/session";
 
 export function useFormTracking(formId: string) {
   const startedRef = useRef(false);
@@ -57,6 +58,7 @@ export function useFormTracking(formId: string) {
   const onLead = useCallback(
     (extra: Record<string, string | number | boolean> = {}) => {
       completedRef.current = true;
+      setConverted(); // personalization: stop nagging a converted visitor
       track("lead_submitted", { form_id: formId, ...extra });
     },
     [formId],

@@ -65,6 +65,7 @@ function toUrl(href: string): URL | null {
 let installed = false;
 let humanSeen = false;
 const scrollSent = new Set<number>();
+let maxScrollPct = 0;
 let docHeight = 0;
 let rafPending = false;
 
@@ -186,6 +187,7 @@ function measureScroll(): void {
   docHeight = Math.max(doc.scrollHeight, document.body.scrollHeight);
   const viewed = window.scrollY + window.innerHeight;
   const pct = docHeight > 0 ? Math.min(100, Math.round((viewed / docHeight) * 100)) : 0;
+  if (pct > maxScrollPct) maxScrollPct = pct;
   for (const m of LIMITS.SCROLL_MILESTONES) {
     if (pct >= m && !scrollSent.has(m)) {
       scrollSent.add(m);
@@ -302,5 +304,16 @@ export function installAutoCapture(): { destroy: () => void; resetForNavigation:
 /** Reset per-page state (scroll milestones) on an SPA route change. */
 export function resetForNavigation(): void {
   scrollSent.clear();
+  maxScrollPct = 0;
   rafPending = false;
+}
+
+/** Live read of the current page's max scroll depth (%), for personalization. */
+export function getMaxScrollPct(): number {
+  return maxScrollPct;
+}
+
+/** Live read of cumulative engaged time (ms) this session, for personalization. */
+export function getEngagedMs(): number {
+  return cumulativeMs;
 }

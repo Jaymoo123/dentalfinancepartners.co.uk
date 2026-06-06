@@ -5,6 +5,9 @@ import { PageShell } from "@/components/layout/PageShell";
 import { ConsentProvider } from "@/components/analytics/ConsentProvider";
 import { ConsentedScripts } from "@/components/analytics/ConsentedScripts";
 import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
+import { IntentProvider } from "@/components/intent/IntentProvider";
+import { ReturningBar } from "@/components/intent/ReturningBar";
+import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -69,7 +72,11 @@ export default function RootLayout({
       >
         <ConsentProvider>
           <AnalyticsProvider siteKey={niche.content_strategy.source_identifier}>
-            <PageShell>{children}</PageShell>
+            <IntentProvider>
+              <PageShell>{children}</PageShell>
+              <ReturningBar />
+              <DeepScrollModal />
+            </IntentProvider>
           </AnalyticsProvider>
           {/* GA4 + Microsoft Clarity load only after consent is granted. */}
           <ConsentedScripts

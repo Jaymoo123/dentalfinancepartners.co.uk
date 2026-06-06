@@ -36,6 +36,9 @@ export const EVENT_NAMES = [
   "calc_share",
   "embed_cta_click",
   "exit_intent_shown",
+  "personalization_shown",
+  "personalization_clicked",
+  "personalization_dismissed",
 ] as const;
 
 export type EventName = (typeof EVENT_NAMES)[number];
@@ -72,6 +75,7 @@ export const INTERACTION_EVENTS: ReadonlySet<string> = new Set([
   "form_field_focus",
   "form_submit",
   "lead_submitted",
+  "personalization_clicked",
 ]);
 
 /** Free-form, JSON-serialisable event payload. Values are scrubbed of PII. */

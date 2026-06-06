@@ -92,3 +92,26 @@ export function getVisitCount(): number {
 export function isReturning(): boolean {
   return getVisitCount() > 1;
 }
+
+const CONVERTED_KEY = "ptp_converted";
+
+/** Mark this visitor converted (set on lead submit) so we stop nagging them. */
+export function setConverted(): void {
+  const s = ls();
+  if (!s) return;
+  try {
+    s.setItem(CONVERTED_KEY, "1");
+  } catch {
+    /* ignore */
+  }
+}
+
+export function isConverted(): boolean {
+  const s = ls();
+  if (!s) return false;
+  try {
+    return s.getItem(CONVERTED_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
