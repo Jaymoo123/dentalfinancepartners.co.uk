@@ -1,7 +1,8 @@
 /**
  * The first-party tracker: queue → batch → sendBeacon('/api/track').
  *
- * - No-ops entirely until consent === 'granted' (gate-everything model).
+ * - Tracks by default (legitimate-interest); no-ops only when the visitor has
+ *   opted out (consent === 'denied'), re-checked on every call.
  * - Batches events and flushes on size, on a timer, and on tab-hide/pagehide
  *   via navigator.sendBeacon (with fetch keepalive fallback) so events survive
  *   the page being closed.

@@ -76,7 +76,7 @@ def detect_funnel_dropoff(site_key: str, *, min_sessions: int = 50) -> list[Oppo
     if agg["sessions"] < min_sessions:
         return []
 
-    stages = ["sessions", "engaged", "cta", "form_start", "converted"]
+    stages = ["sessions", "engaged", "calculator", "cta", "form_start", "converted"]
     worst = None  # (drop_ratio, from_stage, to_stage, prev_count, cur_count)
     for a, b in zip(stages, stages[1:]):
         prev, cur = agg[a], agg[b]

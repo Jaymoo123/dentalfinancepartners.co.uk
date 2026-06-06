@@ -11,6 +11,7 @@ import {
   getFunnelDaily,
   getCalculatorConversion,
   getTopVisitors,
+  getLeadsForSite,
   type VisitorJourney,
 } from "@/lib/analytics/server/adminData";
 
@@ -88,11 +89,19 @@ export default async function AdminAnalyticsPage({
   if (!expected || k !== expected) notFound();
 
   const siteKey = niche.content_strategy.source_identifier;
-  const [funnel, calculators, visitors] = await Promise.all([
+  const [funnel, calculators, visitors, leads] = await Promise.all([
     getFunnelDaily(siteKey),
     getCalculatorConversion(siteKey),
     getTopVisitors(siteKey),
+    getLeadsForSite(siteKey),
   ]);
+
+  // Map each visitor to the lead they became (newest wins), so the visitor
+  // table can show who converted even before the lead_id stitch backfills.
+  const leadByVisitor = new Map<string, (typeof leads)[number]>();
+  for (const l of leads) {
+    if (l.visitor_id && !leadByVisitor.has(l.visitor_id)) leadByVisitor.set(l.visitor_id, l);
+  }
 
   const totals = funnel.reduce(
     (a, d) => ({
@@ -200,6 +209,46 @@ export default async function AdminAnalyticsPage({
         </table>
       </div>
 
+      {/* Leads */}
+      <h2 className="mt-10 text-lg font-bold text-slate-900">Leads</h2>
+      <p className="text-xs text-slate-500">Real submissions, newest first. Open a journey to see everything that person did.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Name</th>
+              <th className="px-3 py-2">Email</th>
+              <th className="px-3 py-2">Phone</th>
+              <th className="px-3 py-2">Role</th>
+              <th className="px-3 py-2">When</th>
+              <th className="px-3 py-2">Journey</th>
+            </tr>
+          </thead>
+          <tbody>
+            {leads.length === 0 ? (
+              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No leads yet.</td></tr>
+            ) : (
+              leads.map((l) => (
+                <tr key={l.id} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{l.full_name || "—"}</td>
+                  <td className="px-3 py-2 break-all text-slate-700">{l.email || "—"}</td>
+                  <td className="px-3 py-2 text-slate-600">{l.phone || "—"}</td>
+                  <td className="px-3 py-2 text-slate-600">{l.role || "—"}</td>
+                  <td className="px-3 py-2 text-slate-500">{ago(l.created_at)}</td>
+                  <td className="px-3 py-2">
+                    {l.visitor_id ? (
+                      <Link href={`/admin/analytics/visitor/${l.visitor_id}?k=${expected}`} className="text-emerald-700 underline">view</Link>
+                    ) : (
+                      <span className="text-slate-300">—</span>
+                    )}
+                  </td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+
       {/* Visitors */}
       <h2 className="mt-10 text-lg font-bold text-slate-900">Visitors</h2>
       <p className="text-xs text-slate-500">Click any visitor to see everything they did.</p>
@@ -222,8 +271,10 @@ export default async function AdminAnalyticsPage({
             {visitors.length === 0 ? (
               <tr><td colSpan={9} className="px-3 py-4 text-center text-slate-400">No visitors yet.</td></tr>
             ) : (
-              visitors.map((v) => (
-                <tr key={v.visitor_id} className={`border-t border-slate-100 ${v.converted ? "bg-emerald-50/40" : ""}`}>
+              visitors.map((v) => {
+                const lead = leadByVisitor.get(v.visitor_id);
+                return (
+                <tr key={v.visitor_id} className={`border-t border-slate-100 ${v.converted || lead ? "bg-emerald-50/40" : ""}`}>
                   <td className="px-3 py-2">
                     <Link href={`/admin/analytics/visitor/${v.visitor_id}?k=${expected}`} className="font-mono text-emerald-700 underline">
                       {v.visitor_id.slice(0, 14)}…
@@ -236,9 +287,10 @@ export default async function AdminAnalyticsPage({
                   <td className="px-3 py-2 text-slate-600">{v.device_type || "—"}</td>
                   <td className="px-3 py-2 text-slate-600">{v.country || "—"}</td>
                   <td className="px-3 py-2 text-slate-600">{v.referrer_host || v.utm_source || "direct"}</td>
-                  <td className="px-3 py-2 text-center">{v.converted ? "✅" : ""}</td>
+                  <td className="px-3 py-2 text-xs text-emerald-800">{lead ? (lead.full_name || lead.email || "✅") : v.converted ? "✅" : ""}</td>
                 </tr>
-              ))
+                );
+              })
             )}
           </tbody>
         </table>

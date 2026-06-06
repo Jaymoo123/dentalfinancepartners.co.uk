@@ -10,7 +10,7 @@
  *   5. writes via the service role through the ingest_web_events RPC, which
  *      OR-merges sticky flags and increments counters atomically.
  *
- * Anonymous, consent-gated (the client only sends after opt-in), no PII. Always
+ * Anonymous, track-by-default (the client sends unless the visitor opted out), no PII. Always
  * returns 204 so bots get no signal; failures are logged server-side, never thrown
  * back to the page.
  */

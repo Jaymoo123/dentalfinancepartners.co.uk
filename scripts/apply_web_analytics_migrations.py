@@ -29,6 +29,7 @@ MIGRATIONS = [
     "20260605000003_extend_opportunity_types.sql",
     "20260605000004_loosen_human_filter.sql",
     "20260605000005_enrich_visitor_journey.sql",
+    "20260606000001_stitch_lead_to_session.sql",
 ]
 
 
@@ -65,14 +66,23 @@ def run_sql(ref: str, token: str, sql: str) -> tuple[bool, str]:
 
 def main() -> None:
     target = sys.argv[1] if len(sys.argv) > 1 else "staging"
+    # Optional 2nd arg: run ONLY migrations whose filename contains this string.
+    # Re-running the whole list can fail on non-idempotent statements (e.g. bare
+    # partition CREATEs), so apply new migrations individually:
+    #   python scripts/apply_web_analytics_migrations.py prod 20260606000001
+    only = sys.argv[2] if len(sys.argv) > 2 else None
     if target not in PROJECT_REFS:
         raise SystemExit(f"target must be one of {list(PROJECT_REFS)}")
     ref = PROJECT_REFS[target]
     token = load_env("SUPABASE_ACCESS_TOKEN")
 
-    print(f"Target: {target} ({ref})\n")
+    migrations = [m for m in MIGRATIONS if only is None or only in m]
+    if only and not migrations:
+        raise SystemExit(f"no migration in MIGRATIONS matches {only!r}")
+
+    print(f"Target: {target} ({ref})" + (f"  [only: {only}]" if only else "") + "\n")
     all_ok = True
-    for name in MIGRATIONS:
+    for name in migrations:
         sql = (ROOT / "supabase" / "migrations" / name).read_text(encoding="utf-8")
         ok, msg = run_sql(ref, token, sql)
         status = "PASS" if ok else "FAIL"

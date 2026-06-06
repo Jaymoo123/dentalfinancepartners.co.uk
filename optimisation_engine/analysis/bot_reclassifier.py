@@ -57,8 +57,31 @@ def _suspect(row: dict) -> str | None:
     return None
 
 
+def reconcile_lead_sessions() -> int:
+    """Conversion-stitch backstop: link any leads whose web_sessions row landed
+    AFTER the lead insert (sendBeacon race). Idempotent; calls the
+    reconcile_lead_sessions() SQL function. Global (all sites) and cheap."""
+    r = httpx.post(
+        f"{SUPABASE_URL}/rest/v1/rpc/reconcile_lead_sessions",
+        headers={**_headers(), "Content-Type": "application/json"},
+        json={},
+        timeout=30.0,
+    )
+    if r.status_code not in (200, 204):
+        print(f"[RECONCILE] failed: {r.status_code} {r.text[:160]}")
+        return 0
+    n = int(r.json() or 0) if r.text.strip() else 0
+    print(f"[RECONCILE] stitched {n} lead->session link(s)")
+    return n
+
+
 def reclassify_bots(site_key: str, *, days: int = 7) -> dict[str, Any]:
-    """Scan recent non-bot, human-confirmed sessions and flag impossible ones."""
+    """Scan recent non-bot, human-confirmed sessions and flag impossible ones.
+
+    Also runs the conversion-stitch reconciliation backstop (links leads to the
+    sessions whose row arrived after the lead insert).
+    """
+    reconcile_lead_sessions()
     since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
     r = httpx.get(
         f"{SUPABASE_URL}/rest/v1/web_sessions",

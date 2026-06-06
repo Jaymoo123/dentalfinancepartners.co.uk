@@ -11,6 +11,7 @@ import { niche } from "@/config/niche-loader";
 import {
   getVisitorJourney,
   getVisitorEvents,
+  getLeadForVisitor,
   type VisitorEvent,
 } from "@/lib/analytics/server/adminData";
 
@@ -91,9 +92,10 @@ export default async function VisitorTimelinePage({
 
   const { visitorId } = await params;
   const siteKey = niche.content_strategy.source_identifier;
-  const [journey, events] = await Promise.all([
+  const [journey, events, lead] = await Promise.all([
     getVisitorJourney(siteKey, visitorId),
     getVisitorEvents(siteKey, visitorId),
+    getLeadForVisitor(siteKey, visitorId),
   ]);
 
   // Counts per event type.
@@ -130,12 +132,24 @@ export default async function VisitorTimelinePage({
 
       {/* Header card */}
       <div className={`mt-3 rounded-xl border p-5 ${journey?.converted ? "border-emerald-300 bg-emerald-50" : "border-slate-200 bg-white"}`}>
-        <div className="flex items-center justify-between">
-          <h1 className="break-all font-mono text-sm font-bold text-slate-900">{visitorId}</h1>
-          {journey?.converted ? (
-            <span className="rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">CONVERTED</span>
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            {lead ? (
+              <>
+                <h1 className="truncate text-base font-bold text-slate-900">{lead.full_name || lead.email || "Lead"}</h1>
+                <div className="mt-0.5 break-all text-xs text-slate-600">
+                  {[lead.email, lead.phone, lead.role].filter(Boolean).join(" · ") || "—"}
+                </div>
+                <div className="mt-0.5 break-all font-mono text-[11px] text-slate-400">{visitorId}</div>
+              </>
+            ) : (
+              <h1 className="break-all font-mono text-sm font-bold text-slate-900">{visitorId}</h1>
+            )}
+          </div>
+          {journey?.converted || lead ? (
+            <span className="shrink-0 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">CONVERTED</span>
           ) : (
-            <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-bold text-slate-600">Not converted</span>
+            <span className="shrink-0 rounded-full bg-slate-200 px-3 py-1 text-xs font-bold text-slate-600">Not converted</span>
           )}
         </div>
         {journey && (
@@ -184,7 +198,7 @@ export default async function VisitorTimelinePage({
           <div className="mt-2 space-y-1 text-sm">
             {pages.size === 0 ? <p className="text-xs text-slate-300">none</p> :
               Array.from(pages.entries()).sort((a, b) => b[1] - a[1]).map(([p, n]) => (
-                <div key={p} className="flex justify-between gap-2"><span className="truncate text-slate-700">{p}</span><span className="font-mono text-slate-400">{n}</span></div>
+                <div key={p} className="flex justify-between gap-2"><span className="break-all text-slate-700" title={p}>{p}</span><span className="font-mono text-slate-400">{n}</span></div>
               ))}
           </div>
         </div>
@@ -202,7 +216,7 @@ export default async function VisitorTimelinePage({
           <div className="mt-2 space-y-1 text-sm">
             {ctas.size === 0 ? <p className="text-xs text-slate-300">none</p> :
               Array.from(ctas.entries()).sort((a, b) => b[1] - a[1]).map(([id, n]) => (
-                <div key={id} className="flex justify-between gap-2"><span className="truncate text-slate-700">{id}</span><span className="font-mono text-slate-400">{n}</span></div>
+                <div key={id} className="flex justify-between gap-2"><span className="break-all text-slate-700" title={id}>{id}</span><span className="font-mono text-slate-400">{n}</span></div>
               ))}
           </div>
         </div>

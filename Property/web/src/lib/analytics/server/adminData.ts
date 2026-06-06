@@ -119,3 +119,42 @@ export function getVisitorEvents(siteKey: string, visitorId: string) {
     limit: "2000",
   });
 }
+
+export type LeadInfo = {
+  id: string;
+  full_name: string | null;
+  email: string | null;
+  phone: string | null;
+  role: string | null;
+  source: string | null;
+  message: string | null;
+  created_at: string;
+  visitor_id: string | null;
+  session_id: string | null;
+};
+
+// Leads are distinguished per site by `source` (= the source_identifier), not
+// site_key. PII is read with the service role straight from the table and never
+// flows through a vw_* view.
+const LEAD_COLS =
+  "id,full_name,email,phone,role,source,message,created_at,visitor_id,session_id";
+
+export function getLeadsForSite(siteKey: string, limit = 200) {
+  return rest<LeadInfo>("leads", {
+    source: `eq.${siteKey}`,
+    select: LEAD_COLS,
+    order: "created_at.desc",
+    limit: String(limit),
+  });
+}
+
+/** The lead a given visitor became, if any (newest match wins). */
+export function getLeadForVisitor(siteKey: string, visitorId: string) {
+  return rest<LeadInfo>("leads", {
+    source: `eq.${siteKey}`,
+    visitor_id: `eq.${visitorId}`,
+    select: LEAD_COLS,
+    order: "created_at.desc",
+    limit: "1",
+  }).then((rows) => rows[0] ?? null);
+}

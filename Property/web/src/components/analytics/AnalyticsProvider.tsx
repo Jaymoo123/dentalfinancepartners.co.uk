@@ -4,13 +4,14 @@
  * Boots the first-party analytics SDK and fires page_view on every App-Router
  * navigation. Mounted once in the root layout, inside the body.
  *
- * Consent: the SDK itself no-ops until consent === 'granted', so this provider
- * can mount unconditionally; nothing leaves the browser pre-consent.
+ * Consent: track-by-default (legitimate-interest). The SDK runs unless the
+ * visitor explicitly opts out ("denied" in localStorage); track() re-checks on
+ * every call so an opt-out takes effect live.
  *
- * Embed guard: PageShell renders children on /embed/* (partner iframes). Under
- * the gate-everything model we cannot obtain consent inside someone else's site,
- * so we DO NOT first-party-track embeds — their attribution stays on the
- * UTM-tagged /contact link in EmbedCta. The provider becomes a no-op there.
+ * No-track routes: /embed/* (partner iframes, where we can't obtain consent
+ * inside someone else's site, so embed attribution stays on the UTM-tagged
+ * EmbedCta link) and /admin/* (our own dashboard; don't pollute the data we
+ * measure).
  */
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
@@ -59,10 +60,12 @@ function pageViewProps(isEntry: boolean): Record<string, string | number | boole
 export function AnalyticsProvider({ siteKey, children }: AnalyticsProviderProps) {
   const pathname = usePathname();
   const { state } = useConsent();
-  const isEmbed = (pathname || "").startsWith("/embed");
+  // Don't track partner embeds (can't consent in someone else's iframe) or our
+  // own /admin dashboard (would pollute the very data we're measuring).
+  const noTrack = (pathname || "").startsWith("/embed") || (pathname || "").startsWith("/admin");
   // Track by default; only an explicit opt-out ("denied") stops it. (track()
   // also re-checks localStorage on every call, so opt-out is honoured live.)
-  const granted = state !== "denied" && !isEmbed;
+  const granted = state !== "denied" && !noTrack;
   const firstViewRef = useRef(true);
 
   // Configure + install auto-capture unless opted out (never in embeds).
