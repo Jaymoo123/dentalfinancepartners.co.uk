@@ -20,6 +20,7 @@ import { getEntryTopic, getLastTopic, isReturning, isConverted } from "@/lib/int
 import { getMaxScrollPct, getEngagedMs } from "@/lib/analytics/autoCapture";
 import { evaluate, type IntentAction, type IntentContext, type Surface } from "@/lib/intent/engine";
 import type { TopicKey } from "@/lib/intent/taxonomy";
+import { ruleLabel } from "@/lib/intent/labels";
 
 const Ctx = createContext<IntentContext | null>(null);
 
@@ -95,5 +96,10 @@ export function trackPersonalization(
     topic: a.topic,
     surface: a.surface,
     variant: a.variant,
+    // What the visitor actually saw (the rendered headline/CTA copy) + a human
+    // rule name, so the dashboard journey reads in plain English without having
+    // to re-derive it from rule_id/topic.
+    content: a.ctaCopy,
+    label: ruleLabel(a.ruleId),
   });
 }

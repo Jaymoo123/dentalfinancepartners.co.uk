@@ -77,6 +77,7 @@ export function DeepScrollModal() {
           <button
             type="button"
             aria-label="Close"
+            data-cta="deep_scroll_close"
             onClick={() => close(true)}
             className="text-slate-400 hover:text-slate-700"
           >

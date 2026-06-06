@@ -83,6 +83,8 @@ export function StickyCTA({
           </Link>
           <button
             onClick={() => setDismissed(true)}
+            data-cta="sticky_cta_close"
+            data-cta-placement="sticky"
             className="flex h-11 w-11 items-center justify-center text-slate-400 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-slate-900 rounded-lg flex-shrink-0"
             aria-label="Dismiss"
             type="button"

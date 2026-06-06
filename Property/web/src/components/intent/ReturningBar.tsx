@@ -56,6 +56,7 @@ export function ReturningBar() {
           <button
             type="button"
             aria-label="Dismiss"
+            data-cta="returning_bar_close"
             onClick={() => {
               try {
                 window.sessionStorage.setItem(DISMISS_KEY, "1");

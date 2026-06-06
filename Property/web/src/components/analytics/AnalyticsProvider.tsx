@@ -35,6 +35,19 @@ function deviceType(): string {
   return "desktop";
 }
 
+/**
+ * The page's readable title for the journey view ("Opened: <article title>"
+ * rather than a raw URL). Not PII. Strips the " | Property Tax Partners" site
+ * suffix so the dashboard shows just the page's own name.
+ */
+function readablePageTitle(): string {
+  if (typeof document === "undefined") return "";
+  const raw = (document.title || "").trim();
+  // Drop the trailing site-name suffix (handles "·"/"-"/"|" separators).
+  const stripped = raw.replace(/\s*[|·-]\s*Property Tax Partners\s*$/i, "").trim();
+  return (stripped || raw).slice(0, 200);
+}
+
 function pageViewProps(isEntry: boolean): Record<string, string | number | boolean> {
   const params = new URLSearchParams(window.location.search);
   const ref = document.referrer || "";
@@ -45,6 +58,7 @@ function pageViewProps(isEntry: boolean): Record<string, string | number | boole
     refHost = "";
   }
   return {
+    page_title: readablePageTitle(),
     referrer: ref.slice(0, 300),
     referrer_host: refHost,
     utm_source: params.get("utm_source") || "",

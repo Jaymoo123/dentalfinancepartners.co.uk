@@ -33,10 +33,27 @@ let queue: TrackEvent[] = [];
 let flushTimer: ReturnType<typeof setTimeout> | null = null;
 let listenersBound = false;
 
+/**
+ * Events fired before configureAnalytics() has run (React fires child effects
+ * before parent effects, so a deeply-nested mount effect like the calculator's
+ * calc_view can call track() a tick before AnalyticsProvider sets the siteKey).
+ * We hold those here and replay them the instant the site key arrives, so the
+ * very first view is never silently dropped.
+ */
+let pending: Array<{ eventName: EventName; props: EventProps }> = [];
+const MAX_PENDING = 20;
+
 /** Called once by AnalyticsProvider with the site/embed context. */
 export function configureAnalytics(next: AnalyticsConfig): void {
+  const hadKey = !!config.siteKey;
   config = next;
   bindLifecycleFlush();
+  // First time we learn the site key: replay anything captured before boot.
+  if (!hadKey && config.siteKey && pending.length > 0) {
+    const replay = pending;
+    pending = [];
+    for (const e of replay) track(e.eventName, e.props);
+  }
 }
 
 const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
@@ -68,7 +85,13 @@ function currentPath(): { path: string; query: string } {
 export function track(eventName: EventName, props: EventProps = {}): void {
   if (typeof window === "undefined") return;
   if (!isTrackingAllowed()) return;
-  if (!config.siteKey) return;
+  if (!config.siteKey) {
+    // Not configured yet (effect ordering race). Buffer and replay on configure
+    // rather than dropping the event. Capped so a never-configured page (e.g. an
+    // opted-out/embed context that bails before configure) can't grow unbounded.
+    if (pending.length < MAX_PENDING) pending.push({ eventName, props });
+    return;
+  }
 
   const { path, query } = currentPath();
   const exp = activeExperimentString();
