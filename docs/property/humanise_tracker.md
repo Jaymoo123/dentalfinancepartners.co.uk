@@ -29,4 +29,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | property-accountant-oxford-guide-local-landlords | done | robotic | 39.4 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | capital-allowance-aia-property-landlords | done | robotic | 41.7 | 3.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits | done | robotic | 45.9 | 3.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| bed-and-breakfasting | done | robotic | 42.8 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
