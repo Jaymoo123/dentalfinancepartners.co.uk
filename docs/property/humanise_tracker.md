@@ -22,4 +22,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | first-time-buyer-relief-overcome-down-payment | done | robotic | 34.5 | 6.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | vat-how-to-calculate | done | robotic | 36.3 | 14.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | capital-allowances-examples | done | robotic | 44.1 | 8.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords | done | robotic | 38.2 | 3.3 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
