@@ -25,4 +25,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | sdlt-transfer-property-company-cost | done | robotic | 28.8 | 0.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | why-southampton-landlords-need-property-accountant | done | robotic | 31.2 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | btl-mortgage | done | robotic | 28.4 | 0.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| btl-investment-plymouth-cardiff-landlord-hotspots | done | robotic | 38.7 | 5.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
