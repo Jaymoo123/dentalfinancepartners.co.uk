@@ -10,4 +10,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 |---|---|---|---|---|---|---|---|---|
 | double-taxation-agreement-uk-and-isle-of-man | done | robotic | 29.9 | 2.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | double-taxation-agreement-uk-and-isle-of-man | done | robotic | 29.9 | 2.3 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| airbnb-landlords | done | severe | 64.2 | 3.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
