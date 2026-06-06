@@ -24,4 +24,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | integral-features-capital-allowances | done | robotic | 35.9 | 9.7 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | sdlt-transfer-property-company-cost | done | robotic | 28.8 | 0.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | why-southampton-landlords-need-property-accountant | done | robotic | 31.2 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| btl-mortgage | done | robotic | 28.4 | 0.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
