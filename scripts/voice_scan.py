@@ -174,6 +174,22 @@ _STRUCT_RE = re.compile("|".join(STRUCTURAL_PATTERNS), re.I)
 _SIGN_RE = re.compile("|".join(SIGNPOST_PATTERNS), re.I)
 _EMDASH_RE = re.compile("—")
 
+# S7 British-English lock: unambiguous American spellings/idiom ONLY, so it never
+# false-fires on UK words. The -ize family is matched by curated stems so it does
+# not catch size / prize / seize / capsize / resize. UK "catalogue", "centre",
+# "maths", "licence" are all safe (no word boundary / different letters).
+AMERICANISM_PATTERNS = [
+    r"\bcolor(s|ed|ing|ful)?\b", r"\bcenter(s|ed|ing)?\b",
+    r"\bfavor(s|ed|ing|ite|ites|able|ably)?\b", r"\bbehavior(s|al)?\b",
+    r"\bflavor(s|ed)?\b", r"\bneighbor(s|hood|ing)?\b", r"\bdefense\b", r"\boffense\b",
+    r"\bfulfill(s|ed|ment|ments|ing)?\b", r"\benrollment\b", r"\benroll\b",
+    r"\bcatalog(s|ed|ing)?\b", r"\bgotten\b", r"\breal estate\b", r"\bmath\b",
+    r"\b(?:organi|recogni|optimi|reali|analy|maximi|minimi|categori|prioriti|emphasi|"
+    r"standardi|capitali|summari|speciali|normali|utili|moderni|legali|finali|customi)"
+    r"z(?:e|es|ed|ing|ation|ations)\b",
+]
+_AMERICAN_RE = re.compile("|".join(AMERICANISM_PATTERNS), re.I)
+
 # S1 guards.
 _HONORIFIC_RE = re.compile(r"\b(?:Mr|Mrs|Ms|Miss|Dr|Sir|Dame|Lord|Lady)\b\.?")
 _COMPANY_RE = re.compile(r"\b(?:Ltd|Limited|LLP|PLC|plc|Co)\b")
@@ -331,6 +347,9 @@ def scan_page(slug: str, site: str = "property", cfg: dict | None = None,
     # S5
     s5_count = len(_SIGN_RE.findall(prose))
     s5_per_1k = round(s5_count / prose_words * 1000, 2)
+    # S7 British-English lock (reported + gated separately; NOT in robot_score, so
+    # the calibrated bands are unchanged).
+    s7_count = len(_AMERICAN_RE.findall(emdash_text))
     # S6
     is_pillar = _is_pillar(slug, fm, cfg)
     ideal = cfg["lengthIdeal"]["pillar"] if is_pillar else cfg["lengthIdeal"]["nonPillar"]
@@ -387,6 +406,8 @@ def scan_page(slug: str, site: str = "property", cfg: dict | None = None,
                            "examples": _snippets(_SIGN_RE, prose)},
         "s6_length": {"body_words": body_words, "is_pillar": is_pillar,
                       "ideal": ideal, "over_ideal_pct": round(over, 3)},
+        "s7_americanisms": {"count": s7_count,
+                            "examples": _snippets(_AMERICAN_RE, emdash_text, limit=6)},
         "subscores": {"s1": round(sat1, 3), "s2": round(sat2, 3), "s3": round(sat3, 3),
                       "s4": round(sat4, 3), "s5": round(sat5, 3), "s6": round(sat6, 3)},
     }
@@ -425,6 +446,10 @@ def _print_human(res: dict) -> None:
     print(f"  S6 length              : {s6['body_words']} body words "
           f"(ideal {s6['ideal']}, pillar={s6['is_pillar']}, "
           f"over={int(s6['over_ideal_pct'] * 100)}%)")
+    s7 = res["s7_americanisms"]
+    print(f"  S7 americanisms (UK)   : {s7['count']}")
+    for ex in s7["examples"][:4]:
+        print(f"         | {ex}")
 
 
 def _scan_all(site: str, cfg: dict, limit: int | None = None) -> list[dict]:
@@ -463,6 +488,7 @@ def _flat(res: dict) -> dict:
         "s5_per_1k": res["s5_signposting"]["per_1k"],
         "body_words": res["s6_length"]["body_words"],
         "over_ideal_pct": res["s6_length"]["over_ideal_pct"],
+        "s7_count": res["s7_americanisms"]["count"],
     }
 
 
@@ -544,6 +570,12 @@ def _selftest() -> int:
          mk("<table><tr><td>The landlord</td><td>The taxpayer</td></tr></table>"
             "<p>You report the rent on a Self Assessment return.</p>"),
          lambda r: r["s1_abstract_nouns"]["count"] == 0),
+        ("S7 americanism hit: 'organize' + 'real estate'",
+         mk("<p>Organize your real estate records before you file.</p>"),
+         lambda r: r["s7_americanisms"]["count"] >= 2),
+        ("S7 no-hit: British 'organise' + 'size'/'centre' safe",
+         mk("<p>Organise your records; the property size and the town centre matter.</p>"),
+         lambda r: r["s7_americanisms"]["count"] == 0),
     ]
 
     all_ok = True

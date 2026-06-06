@@ -8,7 +8,7 @@
 
 ---
 
-## The seven rules
+## The rules
 
 ### 1. Second person by default
 Write to the reader as "you" / "your". This is the single biggest lever.
@@ -42,6 +42,19 @@ House style bans the em-dash (U+2014); it reads as AI-generated. Use commas, par
 
 ### 7. Length as the topic needs, never padded
 A tight page that fully answers the query beats a padded one. Do not write to a word target and do not pad to hit one. Comprehensive depth is good where the topic warrants it (worked examples, comparison tables, real statutory detail); restating the same point, throat-clearing intros, and restate-only conclusions are not. Indicative landing ranges (NOT targets): non-pillar ~1,400-2,400 words, pillar ~2,400-3,500; under-length is fine if intent is fully served.
+
+### 8. British English, for a UK audience
+Write in British English throughout: `-ise` / `-isation` spellings (organise, optimise, recognise, realise, analyse, maximise), British terms and idiom (HMRC, a tax return, Self Assessment, £, VAT, "property" not "real estate", "maths" not "math", "whilst", "cheque", "licence" the noun), and a UK register. No American spellings or idiom (color, center, favor, behavior, defense, "license" the noun, fulfill, enrollment, "filing taxes", "gotten", "real estate", "math"). The audience is UK landlords, investors and advisers; a single Americanism reads wrong and undercuts authority. Enforced by a deterministic Americanism check in `voice_scan.py` (S7) and the per-page gate.
+
+### 9. Authoritative and genuinely engaging (never clickbait)
+The page must earn the click and the read the way the best adviser in the niche would, never with hype. The reader is a real person with a real worry and money on the line.
+- **Open with the reader's stake.** Lead with the cost, risk or opportunity to *you*, not a textbook definition. "Get the residence test wrong and HMRC's discovery window stays open" beats "This article explains the residence test."
+- **Hold a clear point of view.** A senior adviser takes a position; cut endless hedging.
+- **Make it scannable.** Short paragraphs, H2s phrased as the reader's real question, key figures in **bold** where it helps a skimmer, tables for comparisons.
+- **Close so the next step is obvious.** A natural, non-salesy lead into getting expert help (the lead form follows the body; never add pricing or fake urgency).
+- **Never cross into clickbait.** No hype, no "save thousands", no invented urgency, nothing that breaks the gold-standard authority bar. Enticing here means clear, relevant, specific and confident, backed by real substance.
+
+This deepens rules 1-7 rather than replacing them: same facts, same queries, same depth, framed to genuinely engage a real person. It does NOT touch the SERP snippet (metaTitle / metaDescription / h1 stay frozen; CTR is a separate data-driven, monitored workstream).
 
 ---
 
