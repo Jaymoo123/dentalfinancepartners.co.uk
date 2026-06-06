@@ -105,6 +105,7 @@ export function ExitIntentModal({ topic }: { topic?: string }) {
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
+    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
@@ -216,6 +217,8 @@ export function ExitIntentModal({ topic }: { topic?: string }) {
             noValidate
             aria-busy={status === "loading"}
           >
+            {/* Honeypot: off-screen, hidden from humans; only bots fill it. */}
+            <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
             <div>
               <label htmlFor="exit-email" className="sr-only">
                 Email

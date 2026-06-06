@@ -45,6 +45,7 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
+    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
@@ -134,6 +135,8 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
           noValidate
           aria-busy={status === "loading"}
         >
+          {/* Honeypot: off-screen, hidden from humans; only bots fill it. */}
+          <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
           <div className="grid gap-4 sm:grid-cols-[1fr_2fr]">
             <div>
               <label htmlFor="mini-email" className="block text-sm font-semibold text-slate-900">

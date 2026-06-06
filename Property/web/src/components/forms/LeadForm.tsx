@@ -83,6 +83,8 @@ export function LeadForm({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Honeypot: only bots fill this hidden field. Silently drop.
+    if (String(data.get("company_url") || "").trim() !== "") return;
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) {
@@ -169,6 +171,8 @@ export function LeadForm({
       aria-busy={status === "loading"}
     >
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
+      {/* Honeypot: off-screen, hidden from humans; only bots fill it. */}
+      <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
 
       <div>
         <label htmlFor="role" className="block text-sm font-semibold text-slate-900">
