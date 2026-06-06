@@ -21,4 +21,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | corporation-tax-marginal-relief-uk-guide | done | robotic | 45 | 0 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | essential-guide-for-first-time-homebuyers-in-scotland | done | robotic | 32.1 | 3.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | nrl-scheme-letting-agents-quarterly-returns-mechanics | done | robotic | 39 | 22.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| annual-investment-allowance-2024-25 | done | robotic | 47.3 | 4.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
