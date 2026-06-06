@@ -181,3 +181,21 @@ export function getPersonalizationResults(siteKey: string) {
     limit: "100",
   });
 }
+
+export type ExperimentResult = {
+  exp: string;
+  sessions: number;
+  cta_clicks: number;
+  form_starts: number;
+  converted_sessions: number;
+  conversion_rate: number | null;
+};
+
+export function getExperimentResults(siteKey: string) {
+  return rest<ExperimentResult>("vw_experiment_results", {
+    site_key: `eq.${siteKey}`,
+    select: "*",
+    order: "sessions.desc",
+    limit: "100",
+  });
+}

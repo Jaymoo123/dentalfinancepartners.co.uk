@@ -18,6 +18,7 @@ import {
   LIMITS,
   TrackEvent,
 } from "./types";
+import { activeExperimentString } from "@/lib/experiments/active";
 
 const INGEST_PATH = "/api/track";
 
@@ -70,6 +71,7 @@ export function track(eventName: EventName, props: EventProps = {}): void {
   if (!config.siteKey) return;
 
   const { path, query } = currentPath();
+  const exp = activeExperimentString();
   const event: TrackEvent = {
     event_name: eventName,
     visitor_id: getVisitorId(),
@@ -82,7 +84,7 @@ export function track(eventName: EventName, props: EventProps = {}): void {
     embed_slug: config.embedSlug,
     // "undecided" => tracked by default under legitimate interest (no banner).
     consent_state: getConsent() === "undecided" ? "legitimate_interest" : getConsent(),
-    props: scrubProps(props),
+    props: scrubProps(exp ? { ...props, exp } : props),
   };
 
   queue.push(event);

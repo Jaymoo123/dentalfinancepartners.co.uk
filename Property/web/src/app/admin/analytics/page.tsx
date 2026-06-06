@@ -13,6 +13,7 @@ import {
   getTopVisitors,
   getLeadsForSite,
   getPersonalizationResults,
+  getExperimentResults,
   type VisitorJourney,
 } from "@/lib/analytics/server/adminData";
 
@@ -90,12 +91,13 @@ export default async function AdminAnalyticsPage({
   if (!expected || k !== expected) notFound();
 
   const siteKey = niche.content_strategy.source_identifier;
-  const [funnel, calculators, visitors, leads, personalization] = await Promise.all([
+  const [funnel, calculators, visitors, leads, personalization, experiments] = await Promise.all([
     getFunnelDaily(siteKey),
     getCalculatorConversion(siteKey),
     getTopVisitors(siteKey),
     getLeadsForSite(siteKey),
     getPersonalizationResults(siteKey),
+    getExperimentResults(siteKey),
   ]);
 
   // Map each visitor to the lead they became (newest wins), so the visitor
@@ -258,6 +260,38 @@ export default async function AdminAnalyticsPage({
           </tbody>
         </table>
       </div>
+
+      {/* Experiments */}
+      {experiments.length > 0 && (
+        <>
+          <h2 className="mt-10 text-lg font-bold text-slate-900">Experiments</h2>
+          <p className="text-xs text-slate-500">A/B results from first-party events (directional; significance needs volume).</p>
+          <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+            <table className="w-full text-sm">
+              <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+                <tr>
+                  <th className="px-3 py-2">Experiment : variant</th>
+                  <th className="px-3 py-2 text-right">Sessions</th>
+                  <th className="px-3 py-2 text-right">CTA clicks</th>
+                  <th className="px-3 py-2 text-right">Form starts</th>
+                  <th className="px-3 py-2 text-right">Conversion</th>
+                </tr>
+              </thead>
+              <tbody>
+                {experiments.map((x) => (
+                  <tr key={x.exp} className="border-t border-slate-100">
+                    <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
+                    <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
+                    <td className="px-3 py-2 text-right font-mono">{x.cta_clicks}</td>
+                    <td className="px-3 py-2 text-right font-mono">{x.form_starts}</td>
+                    <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
 
       {/* Leads */}
       <h2 className="mt-10 text-lg font-bold text-slate-900">Leads</h2>
