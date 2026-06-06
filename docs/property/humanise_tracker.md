@@ -29,4 +29,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | ated-six-step-compliance-walkthrough-uk-non-natural-persons | done | robotic | 45 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line | done | robotic | 46.1 | 4.1 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | companies-house-changes-limited-partnership-requirements | done | robotic | 46.3 | 2 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| fic-complete-guide-property-wealth-transfer | done | robotic | 47.1 | 0.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->

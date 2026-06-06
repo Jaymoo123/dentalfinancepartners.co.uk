@@ -15,7 +15,7 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/people-talking-8729979/
 h1: "Family Investment Companies for Property: The Comprehensive Reference"
-summary: "FIC mechanics in detail for the reader who has already decided that an FIC fits. Entity choice, share-class architecture, articles of association, funding, life-and-death tax treatment, the BPR myth, and governance. The companion to our decision-focused 'Is It Worth It?' page."
+summary: "FIC mechanics in detail once you have decided an FIC fits: entity choice, share-class architecture, articles of association, funding, life-and-death tax treatment, the BPR myth, and governance. Still weighing it up? Start with the 'Is It Worth It?' decision guide."
 schema: ""
 faqs:
   - question: "What is a Family Investment Company in structural terms?"
@@ -23,29 +23,29 @@ faqs:
   - question: "What share classes are typically used in a property FIC?"
     answer: "The standard architecture has three or four classes. A-shares (founders): voting rights, sometimes a fixed-coupon dividend, no growth participation. B-shares (children/grandchildren): no voting, full growth participation, dividend rights at the board's discretion. C-shares (charitable or contingent class) where the structure provides for a default beneficiary. Some FICs add D-shares for spouse income provision. The exact structure is bespoke to the family's wealth-transfer objectives."
   - question: "How is the FIC funded at the start?"
-    answer: "Three principal routes. (1) Founder loan: the founder lends cash to the FIC, which uses the cash to acquire property. The loan is repayable to the founder out of post-tax profits, giving a tax-free extraction route until repaid. (2) Property transfer in exchange for shares: the founder transfers an existing portfolio to the FIC for shares, potentially with s.162 incorporation relief if the conditions are met. (3) Cash subscription for shares: simpler but produces less efficient extraction later. Most property FICs use a mix of (1) and (2)."
+    answer: "Three principal routes. (1) Founder loan: you lend cash to the FIC, which uses it to acquire property. The loan is repayable to you out of post-tax profits, giving a tax-free extraction route until repaid. (2) Property transfer in exchange for shares: you transfer an existing portfolio to the FIC for shares, potentially with s.162 incorporation relief if the conditions are met. (3) Cash subscription for shares: simpler but produces less efficient extraction later. Most property FICs use a mix of (1) and (2)."
   - question: "Does Section 162 incorporation relief apply to a property transfer into an FIC?"
-    answer: "Potentially, but only where the transferred portfolio is genuinely a business (not a passive holding). Ramsay v HMRC [2013] is the leading authority on the business test: evidence of regular active management (over 20 hours a week), multiple properties, day-to-day involvement in tenant relationships. A passive five-property buy-to-let portfolio held by an individual with full-time employment elsewhere usually fails the Ramsay test and CGT crystallises in full on transfer."
+    answer: "Potentially, but only where the transferred portfolio is genuinely a business (not a passive holding). Ramsay v HMRC [2013] is the leading authority on the business test: evidence of regular active management (over 20 hours a week), multiple properties, day-to-day involvement in tenant relationships. If you hold a passive five-property buy-to-let portfolio and work full-time elsewhere, the transfer usually fails the Ramsay test and CGT crystallises in full."
   - question: "Are FICs subject to corporation tax on rental income?"
     answer: "Yes. The FIC pays corporation tax on rental profits at 19% (small profits rate, up to £50,000) or 25% (main rate, above £250,000), with marginal-rate relief between the two thresholds. The corporation-tax position is the same as for any property letting company. The FIC's CIHC (close investment-holding company) status (because letting income is investment income) means the small profits rate is restricted in certain circumstances, though connected-party-let exceptions apply."
   - question: "What is the dividend extraction position?"
-    answer: "Dividends declared by the FIC are taxed in the shareholders' hands at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate), with the £500 annual dividend allowance for each shareholder. A growth-share architecture that allows the children to receive dividends at their own (often lower) marginal rates is one of the principal income-tax planning benefits. The founder typically restricts dividends to themselves to manage their own marginal rate."
+    answer: "Dividends declared by the FIC are taxed in the shareholders' hands at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate), with the £500 annual dividend allowance for each shareholder. A growth-share architecture that lets the children receive dividends at their own (often lower) marginal rates is one of the principal income-tax planning benefits. You typically restrict your own dividends to manage your marginal rate."
   - question: "How does the wealth transfer actually work?"
-    answer: "Three mechanisms. (1) Growth allocation: economic growth in the underlying portfolio accrues to the growth-share class (typically the children's class), not to the founder's voting class. Wealth shifts down a generation as the portfolio appreciates. (2) Gifting growth shares: the founder gifts already-issued shares to children at low base value (potentially exempt as a PET, fully exempt after 7 years). (3) Reissuing growth shares: new growth shares are issued to children, diluting the founder's economic interest going forward."
+    answer: "Three mechanisms. (1) Growth allocation: economic growth in the underlying portfolio accrues to the growth-share class (typically the children's class), not to your voting class. Wealth shifts down a generation as the portfolio appreciates. (2) Gifting growth shares: you gift already-issued shares to your children at low base value (potentially exempt as a PET, fully exempt after 7 years). (3) Reissuing growth shares: new growth shares are issued to the children, diluting your economic interest going forward."
   - question: "Do FICs qualify for Business Property Relief (BPR) on death?"
-    answer: "No, where the FIC holds residential investment property. BPR requires the company to be 'wholly or mainly trading'; standard buy-to-let property letting is investment, not trading. Pawson v HMRC [2013] is the leading authority. Active hotel or serviced-accommodation business with substantial services can qualify but the bar is high. A property FIC should be designed on the assumption that BPR will not apply on the founder's death."
+    answer: "No, where the FIC holds residential investment property. BPR requires the company to be 'wholly or mainly trading'; standard buy-to-let property letting is investment, not trading. Pawson v HMRC [2013] is the leading authority. Active hotel or serviced-accommodation business with substantial services can qualify but the bar is high. Design a property FIC on the assumption that BPR will not apply on your death."
   - question: "Are FIC dividends in scope for IHT?"
-    answer: "Dividends already received and held in cash form part of the recipient's estate for IHT in the normal way. The FIC's underlying property value is in the value of the FIC shares, not in the cash dividend distributions. The growth-share architecture means most of the underlying wealth is in the children's hands (via the growth-share class) and is outside the founder's estate from day one."
+    answer: "Dividends already received and held in cash form part of the shareholder's estate for IHT in the normal way. The FIC's underlying property value is in the value of the FIC shares, not in the cash dividend distributions. The growth-share architecture means most of the underlying wealth is in the children's hands (via the growth-share class) and is outside your estate from day one."
   - question: "How does governance retain founder control without economic ownership?"
-    answer: "The voting-share class (A-shares) typically holds 100% of voting rights and a minority (sometimes none) of economic rights. Articles of association reserve specified decisions (selling property, distributing assets on a winding-up, issuing new shares, removing directors) to the A-class. The founder is the sole or controlling director. Even where the founder has gifted away most A-shares to a trust, the trust deed often gives the founder the right to direct trustee actions during their lifetime."
+    answer: "The voting-share class (A-shares) typically holds 100% of voting rights and a minority (sometimes none) of economic rights. Articles of association reserve specified decisions (selling property, distributing assets on a winding-up, issuing new shares, removing directors) to the A-class. You are the sole or controlling director. Even where you have gifted away most A-shares to a trust, the trust deed often gives you the right to direct trustee actions during your lifetime."
   - question: "Can a discretionary trust hold the FIC shares?"
-    answer: "Yes, and this is a common structure. A discretionary trust holding the growth-share class allows the trustees (typically including the founder) to manage distributions to the beneficiary children with flexibility. The trust itself is subject to the ten-year IHT charge regime (up to 6% of value above the nil-rate band every ten years) and exit charges on distributions, but these are typically much smaller than the 40% IHT charge on direct ownership."
+    answer: "Yes, and this is a common structure. A discretionary trust holding the growth-share class lets the trustees (typically including you) manage distributions to the beneficiary children with flexibility. The trust itself is subject to the ten-year IHT charge regime (up to 6% of value above the nil-rate band every ten years) and exit charges on distributions, but these are typically much smaller than the 40% IHT charge on direct ownership."
   - question: "What are the principal HMRC enquiry risks for FICs?"
-    answer: "Three areas. (1) Founder remuneration: HMRC scrutinises whether the founder's salary, dividends, and benefits from the FIC reflect arm's-length value. (2) Share valuation: gifts of growth shares are CGT and IHT events at market value; HMRC challenges undervaluations. (3) Connected-party transactions: rents charged to family members occupying FIC property must be at market value to avoid benefit-in-kind and ATED issues. HMRC opened a dedicated FIC compliance unit in 2019; it was closed in 2021 after finding no widespread non-compliance, but FICs remain a topic-specific area of focus."
+    answer: "Three areas. (1) Founder remuneration: HMRC scrutinises whether your salary, dividends, and benefits from the FIC reflect arm's-length value. (2) Share valuation: gifts of growth shares are CGT and IHT events at market value; HMRC challenges undervaluations. (3) Connected-party transactions: rents charged to family members occupying FIC property must be at market value to avoid benefit-in-kind and ATED issues. HMRC opened a dedicated FIC compliance unit in 2019; it was closed in 2021 after finding no widespread non-compliance, but FICs remain a topic-specific area of focus."
   - question: "When does a property FIC genuinely make sense?"
-    answer: "Where the portfolio is large enough that the setup and ongoing costs (typically £10,000 to £25,000 setup, £4,000 to £8,000 annually) are recovered by the tax efficiencies, where the founder has clear wealth-transfer objectives over a 10+ year horizon, and where the family is governance-capable (a workable shareholders' agreement, capable directors, no factional disputes). For most landlords with under £2m of property and shorter wealth-transfer horizons, simpler structures (joint ownership, lifetime gifting, a trust without a corporate wrapper) produce most of the benefit with less administrative drag."
+    answer: "Where your portfolio is large enough that the setup and ongoing costs (typically £10,000 to £25,000 setup, £4,000 to £8,000 annually) are recovered by the tax efficiencies, where you have clear wealth-transfer objectives over a 10+ year horizon, and where your family is governance-capable (a workable shareholders' agreement, capable directors, no factional disputes). With under £2m of property and a shorter wealth-transfer horizon, simpler structures (joint ownership, lifetime gifting, a trust without a corporate wrapper) produce most of the benefit with less administrative drag."
   - question: "How does an FIC interact with the 15% flat-rate SDLT and ATED?"
-    answer: "An FIC is a non-natural person for ATED and Schedule 4A SDLT purposes. Property acquisitions above £500k by the FIC are within the 15% SDLT flat rate unless a relief is claimed; properties held above £500k are within ATED unless a relief is claimed. The standard reliefs (Property Rental Business Relief at acquisition and annually) apply where the FIC lets commercially. The reliefs and the mechanics are covered in our pillar guide on ATED and the 15% SDLT interaction."
+    answer: "An FIC is a non-natural person for ATED and Schedule 4A SDLT purposes. Property acquisitions above £500k by the FIC are within the 15% SDLT flat rate unless a relief is claimed; properties held above £500k are within ATED unless a relief is claimed. The standard reliefs (Property Rental Business Relief at acquisition and annually) apply where the FIC lets commercially. See our dedicated guides on ATED and the 15% SDLT interaction for how the reliefs and the mechanics work."
 dateModified: "2026-05-22"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
@@ -53,9 +53,9 @@ reviewedAt: "2026-05-22"
 editorialNote: "FIC bucket. Comprehensive reference companion to the existing decision-focused 'Is It Worth It?' page. Cross-linked bidirectionally (forward from here; back-link from existing page raised as INTERNAL_LINK flag in track1_site_wide_flags.md)."
 ---
 
-<p>A Family Investment Company is the structural vehicle most often used in UK property wealth transfer where the founder wants to retain control during their lifetime while moving economic ownership to the next generation outside the IHT estate. It sits between simpler structures (lifetime gifting, joint ownership) and more sophisticated arrangements (offshore trusts, foundations), and for portfolios in the £2m-plus range it is now the standard answer where the family's circumstances support it.</p>
+<p>If you hold a substantial property portfolio and want it to pass to your children without a large slice of the growth disappearing in inheritance tax, a Family Investment Company lets you keep full control during your lifetime while economic ownership shifts to the next generation, outside your estate. It sits between simpler structures (lifetime gifting, joint ownership) and more sophisticated arrangements (offshore trusts, foundations), and for portfolios in the £2m-plus range it is now the standard answer where the family's circumstances support it.</p>
 
-<p>This page is the comprehensive structural reference. It covers entity choice, share-class architecture, articles of association, funding routes, life-and-death tax treatment, the Business Property Relief myth, governance, and the HMRC enquiry profile. The companion decision-focused page (<a href="/blog/incorporation-and-company-structures/family-investment-company-property-worth-it">"Family Investment Company for Property: Is It Worth It?"</a>) covers the threshold question; this page is for the reader who has decided it fits and wants the detail.</p>
+<p>What follows is the structural detail: entity choice, share-class architecture, articles of association, funding routes, life-and-death tax treatment, the Business Property Relief myth, governance, and the HMRC enquiry profile. If you have not yet decided whether an FIC is right for you, start with the threshold question in <a href="/blog/incorporation-and-company-structures/family-investment-company-property-worth-it">"Family Investment Company for Property: Is It Worth It?"</a>.</p>
 
 <h2>Why FICs Emerged as the Default Property Wealth-Transfer Vehicle</h2>
 
@@ -118,7 +118,7 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <ul>
   <li><strong>C-shares for charitable purposes</strong> (typically held by a charitable foundation), providing a contingent default if the family beneficiary plan changes.</li>
-  <li><strong>D-shares for spouse income</strong> (typically held by the founder's spouse), providing a separate dividend stream isolated from the founder's tax position.</li>
+  <li><strong>D-shares for spouse income</strong> (typically held by your spouse), providing a separate dividend stream isolated from your own tax position.</li>
 </ul>
 
 <p>The exact architecture is bespoke to the family's wealth-transfer objectives, tax position, and governance preferences. Professional share-class drafting is non-negotiable; the standard Companies House model articles are inadequate for an FIC.</p>
@@ -129,13 +129,13 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <h3>Founder Loan</h3>
 
-<p>The founder lends cash to the FIC. The FIC uses the cash to acquire property. The loan sits on the FIC's balance sheet as a creditor; repayments are tax-free to the founder (return of capital, not income). This route gives the founder a tax-free extraction mechanism until the loan is fully repaid, which can extend over 10 to 20 years on substantial portfolios.</p>
+<p>You lend cash to the FIC, and the FIC uses that cash to acquire property. The loan sits on the FIC's balance sheet as a creditor, and repayments come back to you tax-free (return of capital, not income). This gives you a tax-free extraction route until the loan is fully repaid, which can run over 10 to 20 years on a substantial portfolio.</p>
 
-<p>The loan should be documented as a formal loan agreement with interest payable (or expressly interest-free), repayment terms, and security if any. Informal "money in the company account" arrangements create HMRC challenge on the substance of the loan.</p>
+<p>Document the loan properly: a formal loan agreement with interest payable (or expressly interest-free), repayment terms, and security if any. Informal "money in the company account" arrangements invite HMRC challenge on the substance of the loan.</p>
 
 <h3>Property Transfer in Exchange for Shares</h3>
 
-<p>The founder transfers an existing property portfolio to the FIC in exchange for shares (typically A-shares). The transfer is a CGT disposal at market value, with two potential reliefs:</p>
+<p>You transfer an existing property portfolio to the FIC in exchange for shares (typically A-shares). The transfer is a CGT disposal at market value, with two potential reliefs:</p>
 
 <ul>
   <li><strong>Section 162 TCGA 1992 incorporation relief</strong> defers CGT where ALL assets (other than cash) are transferred wholly or partly for shares, and where the transferred activity is a business. The Ramsay v HMRC [2013] case sets the threshold: usually requires 20+ hours per week of active management, multiple properties, day-to-day tenant involvement.</li>
@@ -146,7 +146,7 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <h3>Cash Subscription for Shares</h3>
 
-<p>The founder subscribes for shares in cash. Simpler than the loan route but produces less efficient extraction because share capital can be returned only through formal capital reduction (a costly process) or on winding-up. Most FICs use cash subscription only for the nominal founding share capital (£1 or £100), with substantive funding via the loan route.</p>
+<p>You subscribe for shares in cash. Simpler than the loan route, but extraction is less efficient because share capital can be returned only through a formal capital reduction (a costly process) or on winding-up. Most FICs use cash subscription only for the nominal founding share capital (£1 or £100), with the substantive funding coming through the loan route.</p>
 
 <aside>
 <p>The funding choice at FIC formation is permanent in practical terms.</p>
@@ -163,35 +163,35 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <h3>Dividend Tax on Extraction</h3>
 
-<p>Dividends declared by the FIC are taxed at 10.75% / 35.75% / 39.35% in the shareholders' hands. The £500 annual dividend allowance applies per shareholder. Because the growth-share architecture allows the children's class to receive dividends, the combined family marginal rate on FIC profits can be materially lower than the founder's personal rate alone. The trade-off is that the children become tax filers if their dividend income exceeds the relevant thresholds.</p>
+<p>Dividends declared by the FIC are taxed at 10.75% / 35.75% / 39.35% in the shareholders' hands. The £500 annual dividend allowance applies per shareholder. Because the growth-share architecture lets the children's class receive dividends, the combined family marginal rate on FIC profits can be materially lower than your personal rate alone. The trade-off is that your children become taxpayers in their own right once their dividend income exceeds the relevant thresholds.</p>
 
 <h3>SDLT and ATED on Property Held in the FIC</h3>
 
 <p>Property acquisitions above £500,000 by the FIC are within the 15% flat-rate SDLT under Schedule 4A FA 2003 unless a relief is claimed. Properties held above £500,000 are within ATED unless a relief is claimed. Both reliefs (Property Rental Business Relief at acquisition, and annually for ATED) apply where the FIC lets commercially to unconnected tenants. Where the FIC owns a property occupied by a connected family member, both reliefs fail.</p>
 
-<p>The interaction is covered in our pillar guide on <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">ATED for 2026/27</a> and the dedicated <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">SDLT-ATED interaction guide</a>.</p>
+<p>For how these reliefs work in practice, see <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">ATED for 2026/27</a> and the dedicated <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">SDLT-ATED interaction guide</a>.</p>
 
 <h2>Wealth Transfer in Practice</h2>
 
-<p>Three mechanisms move wealth from the founder's estate to the next generation:</p>
+<p>Three mechanisms move wealth from your estate to the next generation:</p>
 
 <h3>1. Growth-Share Accrual</h3>
 
-<p>The principal mechanism, and the one that makes the FIC fundamentally different from simpler structures. Economic growth in the underlying portfolio accrues automatically to the growth-share class (typically the children's B-shares), not to the founder's A-shares. A property portfolio worth £3m at FIC formation that grows to £5m over ten years sees the £2m of growth attached to the children's shares from the moment of growth, not at any later transfer event.</p>
+<p>This is the principal mechanism, and the one that makes an FIC fundamentally different from simpler structures. Economic growth in the underlying portfolio accrues automatically to the growth-share class (typically the children's B-shares), not to your A-shares. A property portfolio worth £3m at FIC formation that grows to £5m over ten years sees the £2m of growth attached to the children's shares from the moment of growth, not at any later transfer event.</p>
 
-<p>The accrual is automatic by the share-class definition; no transfer is required and no tax event triggers (no CGT on the founder, no IHT on the founder). This is the single most efficient feature of the FIC structure.</p>
+<p>The accrual is automatic under the share-class definition: no transfer is required and no tax event triggers (no CGT on you, no IHT on you). This is the single most efficient feature of the structure.</p>
 
 <h3>2. Gifting Issued Shares</h3>
 
-<p>The founder may gift A-shares (or growth shares originally issued to the founder) to children or to a trust. The gift is a CGT disposal at market value (potentially subject to holdover relief on a discretionary trust gift). The gift is also a PET (Potentially Exempt Transfer) for IHT, which becomes fully exempt after 7 years.</p>
+<p>You can gift A-shares (or growth shares originally issued to you) to your children or to a trust. The gift is a CGT disposal at market value (potentially subject to holdover relief on a discretionary trust gift). It is also a PET (Potentially Exempt Transfer) for IHT, which becomes fully exempt after 7 years.</p>
 
 <h3>3. Reissuing Growth Shares</h3>
 
-<p>The FIC can issue additional growth shares to children, diluting the founder's economic share going forward. The dilution is a deemed gift for IHT and CGT in some circumstances (where the existing shareholders pay less than market value for the dilution).</p>
+<p>The FIC can issue additional growth shares to your children, diluting your economic share going forward. The dilution is a deemed gift for IHT and CGT in some circumstances (where the existing shareholders pay less than market value for it).</p>
 
 <h2>Death-Stage Tax Treatment</h2>
 
-<p>The founder's death triggers an IHT charge on the value of the founder's estate. For an FIC, the relevant value is the founder's A-shares (and any other shares the founder still holds).</p>
+<p>Your death triggers an IHT charge on the value of your estate. For an FIC, the relevant value is your A-shares (and any other shares you still hold).</p>
 
 <h3>The BPR Myth</h3>
 
@@ -205,16 +205,16 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <h3>Practical IHT Outcome on Death</h3>
 
-<p>For a property FIC where the founder holds A-shares worth £2m at death:</p>
+<p>Say you hold A-shares worth £2m at death:</p>
 
 <ul>
   <li>No BPR applies (investment property).</li>
-  <li>The £2m value is in the founder's estate.</li>
-  <li>IHT at 40% on the value above the nil-rate band (£325,000) and Residence Nil-Rate Band (£175,000 if the founder's main residence passes to direct descendants and the £2m taper does not apply).</li>
-  <li>The growth that has accrued to the children's B-shares since formation is <strong>not</strong> in the founder's estate. This is the structural saving the FIC delivers.</li>
+  <li>The £2m value is in your estate.</li>
+  <li>IHT at 40% on the value above the nil-rate band (£325,000) and Residence Nil-Rate Band (£175,000 if your main residence passes to direct descendants and the £2m taper does not apply).</li>
+  <li>The growth that has accrued to the children's B-shares since formation is <strong>not</strong> in your estate. This is the structural saving the FIC delivers.</li>
 </ul>
 
-<p>The saving comes from the growth-share accrual mechanism over the lifetime of the FIC, not from BPR on death.</p>
+<p>The saving comes from growth-share accrual over the lifetime of the FIC, not from BPR on death.</p>
 
 <h2>Governance and Control</h2>
 
@@ -223,12 +223,12 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 <ul>
   <li><strong>Voting rights attached to A-shares</strong>: A-class typically holds 100% of voting power.</li>
   <li><strong>Reserved matters list</strong>: specified decisions (selling property, distributing assets, issuing new shares, amending articles, removing directors) require A-class approval, sometimes a 100% A-class supermajority.</li>
-  <li><strong>Director appointment</strong>: the founder is typically the sole or controlling director, with the right to appoint successor directors.</li>
+  <li><strong>Director appointment</strong>: you are typically the sole or controlling director, with the right to appoint successor directors.</li>
   <li><strong>Pre-emption rights</strong>: shares cannot be transferred outside the family without first being offered to existing shareholders, preserving control of share ownership.</li>
   <li><strong>Drag-along and tag-along rights</strong>: standard private-company protections allowing or requiring transfer of all shares on certain triggers.</li>
 </ul>
 
-<p>The shareholders' agreement supplements the articles, typically with detail on dispute resolution, dividend policy, and exit mechanisms. A workable shareholders' agreement that anticipates intergenerational disagreements is the principal indicator of an FIC that will endure beyond the founder's lifetime.</p>
+<p>The shareholders' agreement supplements the articles, typically with detail on dispute resolution, dividend policy, and exit mechanisms. A workable shareholders' agreement that anticipates intergenerational disagreements is the best indicator of an FIC that will endure beyond your lifetime.</p>
 
 <h2>HMRC Enquiry Profile</h2>
 
@@ -237,7 +237,7 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 <p>The principal enquiry areas are:</p>
 
 <ul>
-  <li><strong>Founder remuneration:</strong> whether the founder's salary, dividends, and benefits-in-kind reflect arm's-length value for the work done.</li>
+  <li><strong>Founder remuneration:</strong> whether your salary, dividends, and benefits-in-kind reflect arm's-length value for the work you actually do.</li>
   <li><strong>Share valuation on gifts:</strong> gifts of growth shares are valued at market value for CGT and IHT; HMRC challenges undervaluations and the discount-for-lack-of-marketability claimed.</li>
   <li><strong>Connected-party rents:</strong> property let to family members must be at market value or benefit-in-kind / ATED rental relief failure follows.</li>
   <li><strong>Trust interactions:</strong> where a discretionary trust holds growth shares, the ten-yearly charge and the trust-residence-for-CGT-purposes positions are scrutinised.</li>
@@ -250,13 +250,13 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 <p>An FIC produces material benefit where:</p>
 
 <ul>
-  <li>The portfolio is substantial enough that setup costs (£10k-£25k) and ongoing costs (£4k-£8k a year) are recovered. The break-even point is typically around £2m of property value.</li>
-  <li>The founder has clear wealth-transfer objectives over a 10+ year horizon. Short-horizon planning rarely justifies the structural overhead.</li>
-  <li>The family is governance-capable: a workable shareholders' agreement, capable directors, no immediate factional disputes.</li>
-  <li>The property is not the founder's main residence (PRR is lost on incorporation; trapped value in a personal residence is rarely worth incorporating).</li>
-  <li>The incorporation event (if transferring an existing portfolio in) can use s.162 relief or the CGT cost is acceptable.</li>
+  <li>Your portfolio is substantial enough that setup costs (£10k-£25k) and ongoing costs (£4k-£8k a year) are recovered. The break-even point is typically around £2m of property value.</li>
+  <li>You have clear wealth-transfer objectives over a 10+ year horizon. Short-horizon planning rarely justifies the structural overhead.</li>
+  <li>Your family is governance-capable: a workable shareholders' agreement, capable directors, no immediate factional disputes.</li>
+  <li>The property is not your main residence (PRR is lost on incorporation, and trapped value in a personal residence is rarely worth incorporating).</li>
+  <li>The incorporation event (if you are transferring an existing portfolio in) can use s.162 relief, or the CGT cost is acceptable.</li>
 </ul>
 
-<p>Where the portfolio is under £2m, where the time horizon is short, or where the family governance is uncertain, simpler alternatives (joint ownership with adult children, lifetime gifting, a trust without a corporate wrapper) typically produce most of the wealth-transfer benefit with materially less administrative drag. The decision-focused companion page, <a href="/blog/incorporation-and-company-structures/family-investment-company-property-worth-it">"Family Investment Company for Property: Is It Worth It?"</a>, walks through the threshold question with worked examples.</p>
+<p>Where your portfolio is under £2m, the time horizon is short, or the family governance is uncertain, simpler alternatives (joint ownership with adult children, lifetime gifting, a trust without a corporate wrapper) typically deliver most of the wealth-transfer benefit with far less administrative drag. If you are still weighing whether an FIC clears that bar, the threshold question is worked through with examples in <a href="/blog/incorporation-and-company-structures/family-investment-company-property-worth-it">"Family Investment Company for Property: Is It Worth It?"</a>.</p>
 
-<p>For the FIC reader who has decided the structure fits and is now planning the share-class architecture, governance, and funding, the detail in this page is the structural reference; bespoke implementation requires both tax and legal input on the specific family's circumstances.</p>
+<p>Once you have decided the structure fits, the share-class drafting, governance and funding all have to be built around your family's specific circumstances, and getting any one of them wrong is expensive to unwind. This is where both tax and legal input earn their fee. If you are planning an FIC for your portfolio, talk to us before the articles are drafted and the first property goes in.</p>
