@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { StampDutyCalculator } from "@/components/calculators/StampDutyCalculator";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -61,6 +62,7 @@ export default function StampDutyCalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <StampDutyCalculator variant="page" />
+            <CalculatorPageResources slug="stamp-duty-calculator" pageTitle="Stamp Duty (SDLT) Calculator" />
           </div>
         </div>
       </section>

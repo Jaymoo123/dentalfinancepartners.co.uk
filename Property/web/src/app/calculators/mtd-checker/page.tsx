@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { MTDCheckerCalculator } from "@/components/calculators/MTDCheckerCalculator";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -61,6 +62,7 @@ export default function MTDCheckerPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <MTDCheckerCalculator variant="page" />
+            <CalculatorPageResources slug="mtd-checker" pageTitle="Making Tax Digital (MTD) Checker" />
           </div>
         </div>
       </section>

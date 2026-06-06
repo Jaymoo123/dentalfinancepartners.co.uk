@@ -13,6 +13,12 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
+import { hasPremiumTool } from "@/lib/calculators/premium/registry";
+import { gateCopy } from "@/lib/resources/copy";
+import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
+import { ResourceGateLazy } from "@/components/resources/ResourceGateLazy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -105,6 +111,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
   const decoratedHtml = decorateAsides(post.contentHtml);
   const { before, after } = splitContentAtMidScroll(decoratedHtml);
+
+  // Premium tools + gated resources (additive, SEO-safe). Resolve the topic from
+  // the URL category SLUG (not the human label). The premium island and the
+  // resource gate only appear once a category is actually enabled — until then
+  // (Phase A) these flags are false and the page renders exactly as before, i.e.
+  // the existing InlineMiniLeadForm at the mid-scroll split, nothing new.
+  const topic = topicForBlogSlug(categorySlug);
+  const hasPremium = topic ? hasPremiumTool(resourceForTopic(topic)?.toolId) : false;
+  const hasGate = topic ? hasEnabledResource(topic) : false;
+  const showPremiumIslands = !!topic && (hasPremium || hasGate);
 
   const ctaCopy: CTACopy = CTA_BY_CATEGORY[post.category] ?? {
     heading: niche.blog.cta_heading,
@@ -217,7 +233,18 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <div dangerouslySetInnerHTML={{ __html: before }} />
                 {after ? (
                   <>
-                    <InlineMiniLeadForm topic={post.category} />
+                    {showPremiumIslands && topic ? (
+                      <>
+                        {hasPremium ? <PremiumUpgrade topic={topic} /> : null}
+                        {hasGate ? (
+                          <ResourceGateLazy topic={topic} copy={gateCopy(topic, post.title)} />
+                        ) : (
+                          <InlineMiniLeadForm topic={post.category} />
+                        )}
+                      </>
+                    ) : (
+                      <InlineMiniLeadForm topic={post.category} />
+                    )}
                     <div dangerouslySetInnerHTML={{ __html: after }} />
                   </>
                 ) : null}

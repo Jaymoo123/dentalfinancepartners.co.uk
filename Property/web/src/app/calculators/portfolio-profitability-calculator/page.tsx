@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PortfolioProfitabilityCalculator } from "@/components/calculators/PortfolioProfitabilityCalculator";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -61,6 +62,7 @@ export default function PortfolioProfitabilityCalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <PortfolioProfitabilityCalculator variant="page" />
+            <CalculatorPageResources slug="portfolio-profitability-calculator" pageTitle="Portfolio Profitability Calculator" />
           </div>
         </div>
       </section>

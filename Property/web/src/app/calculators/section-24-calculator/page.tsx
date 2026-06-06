@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section24Calculator } from "@/components/calculators/Section24Calculator";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -61,6 +62,7 @@ export default function Section24CalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <Section24Calculator variant="page" />
+            <CalculatorPageResources slug="section-24-calculator" pageTitle="Section 24 Tax Calculator" />
           </div>
         </div>
       </section>

@@ -48,7 +48,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["section-24-and-tax-relief"],
     primaryCalculator: "section-24-calculator",
     ctaCopy: "Get your Section 24 position checked",
-    resourceId: null,
+    resourceId: "section-24",
   },
   {
     key: "incorporation",
@@ -56,7 +56,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["incorporation-and-company-structures"],
     primaryCalculator: "incorporation-cost-calculator",
     ctaCopy: "See the real cost and saving of incorporating",
-    resourceId: null,
+    resourceId: "incorporation",
   },
   {
     key: "capital-gains",
@@ -64,7 +64,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["capital-gains-tax"],
     primaryCalculator: "capital-gains-tax-calculator",
     ctaCopy: "Estimate the CGT on your sale",
-    resourceId: null,
+    resourceId: "capital-gains",
   },
   {
     key: "landlord-essentials",
@@ -72,7 +72,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["landlord-tax-essentials"],
     primaryCalculator: "rental-income-tax-calculator",
     ctaCopy: "Check your landlord tax position",
-    resourceId: null,
+    resourceId: "landlord-essentials",
   },
   {
     key: "mtd",
@@ -80,7 +80,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["making-tax-digital-mtd"],
     primaryCalculator: "mtd-checker",
     ctaCopy: "Check if and when MTD applies to you",
-    resourceId: null,
+    resourceId: "mtd",
   },
   {
     key: "portfolio",
@@ -112,7 +112,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: [],
     primaryCalculator: "stamp-duty-calculator",
     ctaCopy: "Check your stamp duty",
-    resourceId: null,
+    resourceId: "stamp-duty",
   },
   {
     key: "services",

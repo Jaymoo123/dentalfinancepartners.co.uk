@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IncorporationCostCalculator } from "@/components/calculators/IncorporationCostCalculator";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -61,6 +62,7 @@ export default function IncorporationCostCalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <IncorporationCostCalculator variant="page" />
+            <CalculatorPageResources slug="incorporation-cost-calculator" pageTitle="Incorporation Cost Calculator" />
           </div>
         </div>
       </section>
