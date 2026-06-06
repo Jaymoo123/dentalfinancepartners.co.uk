@@ -17,4 +17,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | london-property-accountant | done | robotic | 41.7 | 5.7 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | tax-sell-rental-property-uk | done | robotic | 26.6 | 0.8 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide | done | robotic | 49.7 | 1.9 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| non-resident-landlord-scheme-uk-complete-guide | done | robotic | 39.5 | 10 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
