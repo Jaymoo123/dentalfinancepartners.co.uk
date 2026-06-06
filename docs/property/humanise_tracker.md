@@ -29,4 +29,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | full-expensing-capital-allowances | done | robotic | 51.9 | 2.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | land-transaction-tax-a-complete-guide | done | robotic | 31.4 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | when-does-hmrc-accept-rental-property-incorporation-business | done | robotic | 39.6 | 3.9 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| partnership-partnership-agreement-roles-types-benefits | done | robotic | 34.8 | 6.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
