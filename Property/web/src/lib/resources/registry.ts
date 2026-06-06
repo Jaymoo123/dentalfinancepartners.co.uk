@@ -71,12 +71,12 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     xlsx: {
       file: "/resources/section-24/section-24-model.xlsx",
       label: "Section 24 model (Excel)",
-      enabled: false,
+      enabled: true,
     },
     guide: {
       slug: "section-24",
       label: "Section 24 landlord guide",
-      enabled: false,
+      enabled: true,
     },
     magnetTitle: "The Section 24 landlord toolkit",
     magnetBlurbTemplate:
@@ -238,4 +238,11 @@ export function hasEnabledResource(topic: TopicKey | null | undefined): boolean 
 /** Every topic key that has at least one enabled asset (for static params, etc). */
 export function enabledResourceTopics(): TopicKey[] {
   return (Object.keys(RESOURCES) as TopicKey[]).filter((t) => hasEnabledResource(t));
+}
+
+/** Every topic key whose written guide is enabled (for the guide route's params). */
+export function enabledGuideTopics(): TopicKey[] {
+  return (Object.keys(RESOURCES) as TopicKey[]).filter((t) =>
+    isGuideEnabled(resourceForTopic(t)),
+  );
 }

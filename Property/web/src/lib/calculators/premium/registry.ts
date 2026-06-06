@@ -12,12 +12,15 @@
  * (the same id stored on CategoryResource.toolId in lib/resources/registry.ts).
  */
 import type { PremiumToolConfig } from "./types";
+import { section24PremiumTool } from "./tools/section-24";
 
 /**
  * toolId -> config. Append one line per category as its premium tool is authored.
- * Empty in Phase A by design.
+ * Keyed by the same id stored on CategoryResource.toolId in lib/resources/registry.
  */
-export const PREMIUM_TOOLS: Record<string, PremiumToolConfig> = {};
+export const PREMIUM_TOOLS: Record<string, PremiumToolConfig> = {
+  "section-24-premium": section24PremiumTool,
+};
 
 /** Look up a premium tool config by its id (or undefined). */
 export function getPremiumTool(toolId: string | null | undefined): PremiumToolConfig | undefined {

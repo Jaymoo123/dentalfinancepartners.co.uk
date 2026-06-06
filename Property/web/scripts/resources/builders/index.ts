@@ -15,6 +15,7 @@
  *   4. flip the xlsx `enabled` flag in src/lib/resources/registry.ts.
  */
 import type ExcelJS from "exceljs";
+import { build as buildSection24 } from "./section-24";
 
 /** A builder produces one workbook for one category. */
 export type WorkbookBuilder = () => ExcelJS.Workbook | Promise<ExcelJS.Workbook>;
@@ -29,6 +30,12 @@ export interface BuilderEntry {
 }
 
 /**
- * Append one entry per category as builders are authored. Empty in Phase A.
+ * Append one entry per category as builders are authored.
  */
-export const BUILDERS: BuilderEntry[] = [];
+export const BUILDERS: BuilderEntry[] = [
+  {
+    topic: "section-24",
+    fileName: "section-24-model.xlsx",
+    build: buildSection24,
+  },
+];
