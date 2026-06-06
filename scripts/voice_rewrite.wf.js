@@ -59,6 +59,8 @@ const DET_SCHEMA = { type: 'object', additionalProperties: false,
     robot_after: { type: 'number', description: 'voice_scan robot_score after' },
     band_after: { type: 'string', description: 'voice_scan band after' },
     americanisms: { type: 'number', description: 'voice_scan S7 americanisms count (must be 0 for British-English lock)' },
+    html_ok: { type: 'boolean', description: 'voice_html_check "passed" (frontmatter parses + HTML balanced + no leaked markdown)' },
+    html_detail: { type: 'string', description: 'one-line of any build-safety errors, else "clean"' },
   } }
 
 const FIDELITY_SCHEMA = { type: 'object', additionalProperties: false,
@@ -132,13 +134,15 @@ Steps: read ${blogPath} in full; read ${WT}/docs/_engines/VOICE_STANDARD.md; rew
 
     // Deterministic checks C1-C3 (one agent runs the three tools, reports JSON).
     const det = await agent(
-      `Run these THREE deterministic checks for ${slug} and report their output faithfully (do not judge, just run and copy the numbers):
+      `Run these FOUR deterministic checks for ${slug} and report their output faithfully (do not judge, just run and copy the numbers):
 1) python ${WT}/scripts/voice_safety_diff.py check --slug ${slug} --site ${site} --json
    -> safety_passed = (its "passed" is true); safety_detail = a one-line summary of any removed/added figures, citations, links, or frontmatter_mismatches (or "clean").
 2) python ${WT}/scripts/track2_query_coverage.py --slug ${slug} --json
    -> coverage_passed = its "passed"; coverage_missing = its missing_queries (query strings), or [].
 3) python ${WT}/scripts/voice_scan.py --slug ${slug} --site ${site} --json
    -> robot_after = its robot_score; band_after = its band; americanisms = its s7_americanisms.count.
+4) python ${WT}/scripts/voice_html_check.py --slug ${slug} --site ${site} --json
+   -> html_ok = its "passed"; html_detail = a one-line of its errors (or "clean").
 Return the structured result.`,
       { label: `checks:${slug}#${attempt}`, phase: 'Verify', schema: DET_SCHEMA })
 
@@ -146,13 +150,15 @@ Return the structured result.`,
     const voiceImproved = (det.robot_after < robotBefore) &&
       (det.band_after === 'clean' || det.band_after === 'minor')
     const britishOk = (det.americanisms === 0)
+    const htmlOk = (det.html_ok !== false)
 
-    if (!(det.safety_passed && det.coverage_passed && voiceImproved && britishOk)) {
+    if (!(det.safety_passed && det.coverage_passed && voiceImproved && britishOk && htmlOk)) {
       fails = []
       if (!det.safety_passed) fails.push(`SAFETY-DIFF failed (a fact/citation/link/frontmatter changed): ${det.safety_detail}. You MUST preserve every figure, citation, internal link and protected frontmatter field.`)
       if (!det.coverage_passed) fails.push(`QUERY-COVERAGE failed: these queries are no longer served: ${(det.coverage_missing || []).join('; ')}. Restore the query-bearing phrasing in an H2/FAQ/body.`)
       if (!voiceImproved) fails.push(`VOICE not improved enough: robot_score ${det.robot_after} (band ${det.band_after}) vs before ${robotBefore}. Remove more abstract-noun voice / meta-commentary / structural talk / signposting.`)
       if (!britishOk) fails.push(`BRITISH ENGLISH failed: ${det.americanisms} American spelling(s)/idiom found (voice_scan S7). Rewrite in British English throughout (-ise spellings, UK terms; no color/center/organize/optimize/analyze/"real estate"/"math"/"gotten").`)
+      if (!htmlOk) fails.push(`BUILD-SAFETY failed: ${det.html_detail}. Fix the body HTML (balanced tags, valid frontmatter YAML, no leaked markdown like "## " or "- " lines).`)
       await agent(
         `Revert ${slug}: run python ${WT}/scripts/voice_safety_diff.py restore --slug ${slug} --site ${site}. Confirm it reverted the page to the pre-edit bytes. Return {slug:"${slug}", reverted:true}.`,
         { label: `revert:${slug}#${attempt}`, phase: 'Verify', schema: REVERT_SCHEMA })
