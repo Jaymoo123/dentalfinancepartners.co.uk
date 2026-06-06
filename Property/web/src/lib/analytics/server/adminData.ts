@@ -200,6 +200,40 @@ export function getExperimentResults(siteKey: string) {
   });
 }
 
+export type PersonalizationArm = {
+  sessions: number;
+  converted_sessions: number;
+  conversion_rate: number | null;
+};
+
+export type PersonalizationAB = {
+  control: PersonalizationArm | null;
+  treatment: PersonalizationArm | null;
+};
+
+/**
+ * The personalisation A/B head-to-head: reads vw_experiment_results and pulls
+ * the two `personalization:*` rows so the dashboard can show control vs
+ * treatment conversion and the relative lift. Returns null arms when an arm has
+ * no data yet (the card then renders the honest not-enough-data state).
+ */
+export async function getPersonalizationAB(siteKey: string): Promise<PersonalizationAB> {
+  const rows = await getExperimentResults(siteKey);
+  const pick = (exp: string): PersonalizationArm | null => {
+    const r = rows.find((x) => x.exp === exp);
+    if (!r) return null;
+    return {
+      sessions: r.sessions,
+      converted_sessions: r.converted_sessions,
+      conversion_rate: r.conversion_rate,
+    };
+  };
+  return {
+    control: pick("personalization:control"),
+    treatment: pick("personalization:treatment"),
+  };
+}
+
 export type TimePoint = {
   bucket: string;
   sessions: number;

@@ -14,10 +14,14 @@ import {
   getLeadsForSite,
   getPersonalizationResults,
   getExperimentResults,
+  getPersonalizationAB,
   type VisitorJourney,
+  type CalculatorConversion,
+  type PersonalizationAB,
 } from "@/lib/analytics/server/adminData";
 import { ruleLabel, surfaceLabel } from "@/lib/intent/labels";
 import { getTopic } from "@/lib/intent/taxonomy";
+import DashboardTabs from "./DashboardTabs";
 
 export const dynamic = "force-dynamic";
 export const metadata = { robots: { index: false, follow: false } };
@@ -108,6 +112,250 @@ function Breakdown({ title, rows }: { title: string; rows: Array<[string, number
   );
 }
 
+/**
+ * The minimum sessions PER ARM before we trust an A/B number. Below this we show
+ * a "directional only" state instead of a confident lift figure.
+ */
+const AB_MIN_SESSIONS = 100;
+
+/**
+ * Prominent personalisation A/B head-to-head card. Honest about significance:
+ * if either arm is below AB_MIN_SESSIONS we say so rather than quoting a lift.
+ */
+function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
+  const { control, treatment } = ab;
+  const hasBoth = !!control && !!treatment;
+  const cRate = control?.conversion_rate ?? 0;
+  const tRate = treatment?.conversion_rate ?? 0;
+  const cSessions = control?.sessions ?? 0;
+  const tSessions = treatment?.sessions ?? 0;
+  const enough = hasBoth && cSessions >= AB_MIN_SESSIONS && tSessions >= AB_MIN_SESSIONS;
+
+  const relLift = cRate > 0 ? (tRate - cRate) / cRate : null;
+
+  // Two-proportion z-test (bonus): only meaningful once both arms have volume.
+  let sig: { z: number; significant: boolean } | null = null;
+  if (hasBoth && cSessions > 0 && tSessions > 0) {
+    const cConv = control!.converted_sessions;
+    const tConv = treatment!.converted_sessions;
+    const pPool = (cConv + tConv) / (cSessions + tSessions);
+    const se = Math.sqrt(pPool * (1 - pPool) * (1 / cSessions + 1 / tSessions));
+    if (se > 0) {
+      const z = (tRate - cRate) / se;
+      sig = { z, significant: Math.abs(z) >= 1.96 };
+    }
+  }
+
+  // Headline: signal vs honest not-enough-data.
+  let headline: React.ReactNode;
+  let headlineClass = "text-slate-900";
+  if (!hasBoth) {
+    headline = "Waiting for both arms to log sessions";
+    headlineClass = "text-slate-500";
+  } else if (!enough) {
+    headline = "Not enough data yet — directional only (need ~100+ sessions per arm)";
+    headlineClass = "text-amber-700";
+  } else if (relLift == null) {
+    headline = "Control has no conversions yet — lift not computable";
+    headlineClass = "text-slate-500";
+  } else {
+    const sign = relLift >= 0 ? "+" : "";
+    const dir = relLift >= 0 ? "vs" : "below";
+    headline = (
+      <>
+        Personalisation: <span className={relLift >= 0 ? "text-emerald-700" : "text-rose-700"}>{sign}{(relLift * 100).toFixed(0)}% conversions</span> {dir} control
+      </>
+    );
+    headlineClass = "text-slate-900";
+  }
+
+  return (
+    <div className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="text-xs font-semibold uppercase tracking-wider text-emerald-800">
+          Personalisation A/B — control vs treatment
+        </h3>
+        {enough && sig && (
+          <span
+            className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${
+              sig.significant ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-600"
+            }`}
+          >
+            {sig.significant ? "Statistically significant (95%)" : "Not yet significant (95%)"}
+          </span>
+        )}
+      </div>
+
+      <p className={`mt-2 text-xl font-bold ${headlineClass}`}>{headline}</p>
+
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        <div className="rounded-lg border border-slate-200 bg-white p-3">
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Control (generic)</div>
+          <div className="mt-1 text-2xl font-bold text-slate-900">{pct(control?.conversion_rate)}</div>
+          <div className="mt-0.5 text-xs text-slate-500">
+            {cSessions} sessions · {control?.converted_sessions ?? 0} converted
+          </div>
+        </div>
+        <div className="rounded-lg border border-emerald-300 bg-white p-3">
+          <div className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Treatment (personalised)</div>
+          <div className="mt-1 text-2xl font-bold text-slate-900">{pct(treatment?.conversion_rate)}</div>
+          <div className="mt-0.5 text-xs text-slate-500">
+            {tSessions} sessions · {treatment?.converted_sessions ?? 0} converted
+          </div>
+        </div>
+      </div>
+
+      <p className="mt-3 text-xs text-slate-500">
+        Control (~25%) gets the plain generic site; treatment (~75%) gets behaviour-driven offers. Relative lift =
+        (treatment − control) ÷ control. Honest by design: figures stay directional until each arm has ~
+        {AB_MIN_SESSIONS}+ sessions.
+        {enough && sig && !sig.significant && " The current gap could still be noise."}
+      </p>
+    </div>
+  );
+}
+
+/**
+ * Per-calculator opportunity scoring. We surface the weaker of the two funnel
+ * steps (view→compute, compute→lead) and rank by traffic × how bad that step is,
+ * so the biggest fixable losses float to the top.
+ */
+type CalcOpportunity = CalculatorConversion & {
+  weakStep: "compute" | "lead" | null;
+  weakRate: number | null;
+  opportunityScore: number;
+  needsAttention: boolean;
+};
+
+// Below these rates a step is "weak" enough to flag (given enough traffic).
+const WEAK_COMPUTE_RATE = 0.4; // < 40% of viewers actually compute
+const WEAK_LEAD_RATE = 0.05; // < 5% of computers become a lead
+const MIN_TRAFFIC_TO_FLAG = 20; // ignore tiny-sample noise
+
+function scoreCalculators(rows: CalculatorConversion[]): CalcOpportunity[] {
+  const scored: CalcOpportunity[] = rows.map((c) => {
+    const compute = c.compute_rate;
+    const lead = c.computed_to_lead_rate;
+    const hasTraffic = c.viewed >= MIN_TRAFFIC_TO_FLAG;
+
+    // Estimate sessions "lost" at each step to compare apples to apples.
+    // view→compute loss is measured against viewers; compute→lead against computers.
+    const computeGap = compute != null ? Math.max(0, WEAK_COMPUTE_RATE - compute) : 0;
+    const leadGap = lead != null ? Math.max(0, WEAK_LEAD_RATE - lead) : 0;
+    const computeLoss = computeGap * c.viewed;
+    const leadLoss = leadGap * c.computed;
+
+    let weakStep: "compute" | "lead" | null = null;
+    let weakRate: number | null = null;
+    let opportunityScore = 0;
+    if (hasTraffic && (computeLoss > 0 || leadLoss > 0)) {
+      if (computeLoss >= leadLoss) {
+        weakStep = "compute";
+        weakRate = compute;
+        opportunityScore = computeLoss;
+      } else {
+        weakStep = "lead";
+        weakRate = lead;
+        opportunityScore = leadLoss;
+      }
+    }
+
+    return {
+      ...c,
+      weakStep,
+      weakRate,
+      opportunityScore,
+      needsAttention: weakStep != null,
+    };
+  });
+
+  // Opportunities first (by score), then the rest by traffic.
+  return scored.sort((a, b) => {
+    if (b.opportunityScore !== a.opportunityScore) return b.opportunityScore - a.opportunityScore;
+    return b.viewed - a.viewed;
+  });
+}
+
+function CalcStepBar({ rate, kind }: { rate: number | null; kind: "compute" | "lead" }) {
+  const weak = kind === "compute" ? WEAK_COMPUTE_RATE : WEAK_LEAD_RATE;
+  const isWeak = rate != null && rate < weak;
+  const widthPct = rate == null ? 0 : Math.min(100, rate * 100);
+  return (
+    <div>
+      <span className={isWeak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(rate)}</span>
+      <div className="mt-1 h-1.5 rounded bg-slate-100">
+        <div
+          className={`h-1.5 rounded ${isWeak ? "bg-rose-400" : "bg-emerald-500"}`}
+          style={{ width: `${widthPct}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
+function CalculatorPanel({ rows }: { rows: CalcOpportunity[] }) {
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Calculator drop-off & opportunities</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        Funnel per tool: <strong>Viewed → Computed → Lead</strong>. Rows with decent traffic but a weak step are flagged
+        and sorted to the top (biggest traffic × worst rate first). A weak <em>view→compute</em> means people open it
+        but don&apos;t finish; a weak <em>compute→lead</em> means they get a result but don&apos;t convert.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Calculator</th>
+              <th className="px-3 py-2 text-right">Viewed</th>
+              <th className="px-3 py-2 text-right">Computed</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="px-3 py-2">View→Compute</th>
+              <th className="px-3 py-2">Compute→Lead</th>
+              <th className="px-3 py-2">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No calculator data yet.</td></tr>
+            ) : (
+              rows.map((c) => (
+                <tr
+                  key={c.calculator_slug}
+                  className={`border-t border-slate-100 ${c.needsAttention ? "bg-amber-50/50" : ""}`}
+                >
+                  <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
+                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
+                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
+                  <td className="px-3 py-2">
+                    {c.needsAttention ? (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold text-amber-800">
+                        Needs attention
+                        <span className="font-normal text-amber-700">
+                          ({c.weakStep === "compute" ? "low compute" : "low convert"})
+                        </span>
+                      </span>
+                    ) : (
+                      <span className="text-xs text-slate-400">—</span>
+                    )}
+                  </td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-2 text-xs text-slate-400">
+        Note: <code className="rounded bg-slate-100 px-1">calc_view</code> was recently fixed, so very old rows may
+        under-count views (and inflate their compute rate). Treat low-traffic tools with caution.
+      </p>
+    </div>
+  );
+}
+
 export default async function AdminAnalyticsPage({
   searchParams,
 }: {
@@ -118,14 +366,16 @@ export default async function AdminAnalyticsPage({
   if (!expected || k !== expected) notFound();
 
   const siteKey = niche.content_strategy.source_identifier;
-  const [funnel, calculators, visitors, leads, personalization, experiments] = await Promise.all([
-    getFunnelDaily(siteKey),
-    getCalculatorConversion(siteKey),
-    getTopVisitors(siteKey),
-    getLeadsForSite(siteKey),
-    getPersonalizationResults(siteKey),
-    getExperimentResults(siteKey),
-  ]);
+  const [funnel, calculators, visitors, leads, personalization, experiments, personalizationAB] =
+    await Promise.all([
+      getFunnelDaily(siteKey),
+      getCalculatorConversion(siteKey),
+      getTopVisitors(siteKey),
+      getLeadsForSite(siteKey),
+      getPersonalizationResults(siteKey),
+      getExperimentResults(siteKey),
+      getPersonalizationAB(siteKey),
+    ]);
 
   // Map each visitor to the lead they became (newest wins), so the visitor
   // table can show who converted even before the lead_id stitch backfills.
@@ -171,19 +421,14 @@ export default async function AdminAnalyticsPage({
     ["Converted", totals.converted],
   ];
 
-  return (
-    <div className="mx-auto max-w-6xl px-4 py-10">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="text-2xl font-bold text-slate-900">Analytics — {siteKey}</h1>
-        <div className="flex items-center gap-4 text-xs">
-          <Link href={`/admin/analytics/trends?k=${expected}`} className="text-emerald-700 underline">Trends</Link>
-          <Link href={`/admin/analytics/leads?k=${expected}`} className="text-emerald-700 underline">All leads</Link>
-          <span className="text-slate-500">Human-only · live</span>
-        </div>
-      </div>
+  const calcOpportunities = scoreCalculators(calculators);
 
+  // ── Section nodes (server-rendered, passed to the client tab switcher) ──
+
+  const overviewSection = (
+    <div>
       {/* KPIs */}
-      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Kpi label="Visitors" value={String(visitors.length)} sub="most recent 500" />
         <Kpi label="Sessions" value={String(totals.sessions)} sub={`last ${funnel.length} days`} />
         <Kpi label="Conversion rate" value={pct(convRate)} sub={`${totals.converted} leads`} />
@@ -194,7 +439,7 @@ export default async function AdminAnalyticsPage({
       </p>
 
       {/* Funnel */}
-      <h2 className="mt-10 text-lg font-bold text-slate-900">Conversion funnel</h2>
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
       <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <tbody>
@@ -219,100 +464,134 @@ export default async function AdminAnalyticsPage({
           </tbody>
         </table>
       </div>
+    </div>
+  );
 
-      {/* Breakdowns */}
-      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+  const acquisitionSection = (
+    <div>
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-lg font-bold text-slate-900">How people arrive</h2>
+        <Link href={`/admin/analytics/trends?k=${expected}`} className="text-xs text-emerald-700 underline">
+          View trends →
+        </Link>
+      </div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Breakdown title="Traffic source" rows={tally(visitors, "referrer_host")} />
         <Breakdown title="Device" rows={tally(visitors, "device_type")} />
         <Breakdown title="Country" rows={tally(visitors, "country")} />
         <Breakdown title="New vs returning" rows={newVsReturning} />
       </div>
+    </div>
+  );
 
-      {/* Calculators */}
-      <h2 className="mt-10 text-lg font-bold text-slate-900">Calculator conversion</h2>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table className="w-full text-sm">
-          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-            <tr>
-              <th className="px-3 py-2">Calculator</th>
-              <th className="px-3 py-2 text-right">Viewed</th>
-              <th className="px-3 py-2 text-right">Computed</th>
-              <th className="px-3 py-2 text-right">Leads</th>
-              <th className="px-3 py-2 text-right">Computed→Lead</th>
-            </tr>
-          </thead>
-          <tbody>
-            {calculators.length === 0 ? (
-              <tr><td colSpan={5} className="px-3 py-4 text-center text-slate-400">No calculator data yet.</td></tr>
-            ) : (
-              calculators.map((c) => (
-                <tr key={c.calculator_slug} className="border-t border-slate-100">
-                  <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
-                  <td className="px-3 py-2 text-right">{pct(c.computed_to_lead_rate)}</td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
+  const behaviourSection = (
+    <div className="space-y-8">
+      <CalculatorPanel rows={calcOpportunities} />
+
+      {/* Visitors */}
+      <div>
+        <h2 className="text-lg font-bold text-slate-900">Visitors</h2>
+        <p className="text-xs text-slate-500">Click any visitor to see everything they did.</p>
+        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Visitor</th>
+                <th className="px-3 py-2">Last seen</th>
+                <th className="px-3 py-2 text-right">Visits</th>
+                <th className="px-3 py-2 text-right">Pages</th>
+                <th className="px-3 py-2 text-right">Engaged</th>
+                <th className="px-3 py-2">Device</th>
+                <th className="px-3 py-2">Country</th>
+                <th className="px-3 py-2">Source</th>
+                <th className="px-3 py-2 text-center">Lead</th>
+              </tr>
+            </thead>
+            <tbody>
+              {visitors.length === 0 ? (
+                <tr><td colSpan={9} className="px-3 py-4 text-center text-slate-400">No visitors yet.</td></tr>
+              ) : (
+                visitors.map((v) => {
+                  const lead = leadByVisitor.get(v.visitor_id);
+                  return (
+                  <tr key={v.visitor_id} className={`border-t border-slate-100 ${v.converted || lead ? "bg-emerald-50/40" : ""}`}>
+                    <td className="px-3 py-2">
+                      <Link href={`/admin/analytics/visitor/${v.visitor_id}?k=${expected}`} className="font-mono text-emerald-700 underline">
+                        {v.visitor_id.slice(0, 14)}…
+                      </Link>
+                    </td>
+                    <td className="px-3 py-2 text-slate-500">{ago(v.last_seen)}</td>
+                    <td className="px-3 py-2 text-right font-mono">{v.total_sessions}</td>
+                    <td className="px-3 py-2 text-right font-mono">{v.page_views}</td>
+                    <td className="px-3 py-2 text-right font-mono">{secs(v.total_engaged_ms || 0)}</td>
+                    <td className="px-3 py-2 text-slate-600">{v.device_type || "—"}</td>
+                    <td className="px-3 py-2 text-slate-600">{v.country || "—"}</td>
+                    <td className="px-3 py-2 text-slate-600">{v.referrer_host || v.utm_source || "direct"}</td>
+                    <td className="px-3 py-2 text-xs text-emerald-800">{lead ? (lead.full_name || lead.email || "✅") : v.converted ? "✅" : ""}</td>
+                  </tr>
+                  );
+                })
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
+    </div>
+  );
 
-      {/* Personalization */}
-      <h2 className="mt-10 text-lg font-bold text-slate-900">Personalization (live A/B)</h2>
-      <p className="text-xs text-slate-500">
-        Behaviour-driven offers (tool / guide / specialist) run as a live A/B: <strong>control (~25%)</strong> gets the
-        plain generic site, <strong>treatment (~75%)</strong> gets the matched offer. The table below shows how each
-        treatment surface performs (human-only). For the head-to-head conversion lift of control vs treatment, see the{" "}
-        <a href="#experiments" className="font-semibold text-emerald-700 underline">Experiments panel</a>{" "}
-        (row <code className="rounded bg-slate-100 px-1">personalization:treatment</code> vs{" "}
-        <code className="rounded bg-slate-100 px-1">personalization:control</code>). Directional until enough data
-        accrues for significance.
-      </p>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table className="w-full text-sm">
-          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-            <tr>
-              <th className="px-3 py-2">Surface</th>
-              <th className="px-3 py-2">Rule</th>
-              <th className="px-3 py-2">What&apos;s shown</th>
-              <th className="px-3 py-2 text-right">Shown</th>
-              <th className="px-3 py-2 text-right">Clicks</th>
-              <th className="px-3 py-2 text-right">CTR</th>
-              <th className="px-3 py-2 text-right">Shown→Lead</th>
-            </tr>
-          </thead>
-          <tbody>
-            {personalization.length === 0 ? (
-              <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No personalization data yet.</td></tr>
-            ) : (
-              personalization.map((p, i) => (
-                <tr key={`${p.surface}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100">
-                  <td className="px-3 py-2 text-slate-700">{surfaceLabel(p.surface)}</td>
-                  <td className="px-3 py-2 text-slate-600">{ruleLabel(p.rule_id)}</td>
-                  <td className="px-3 py-2 text-slate-500">“{personalizationHint(p.rule_id, p.topic)}”</td>
-                  <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
-                  <td className="px-3 py-2 text-right font-mono">{p.clicked}</td>
-                  <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
-                  <td className="px-3 py-2 text-right">{pct(p.shown_to_lead_rate)}</td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
+  const conversionSection = (
+    <div className="space-y-8">
+      {/* Personalisation A/B — front and centre */}
+      <PersonalizationABCard ab={personalizationAB} />
+
+      {/* Personalization surface performance */}
+      <div>
+        <h2 className="text-lg font-bold text-slate-900">Personalisation surfaces</h2>
+        <p className="text-xs text-slate-500">
+          How each treatment surface (tool / guide / specialist offer) performs (human-only). The head-to-head lift of
+          control vs treatment is the card above.
+        </p>
+        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Surface</th>
+                <th className="px-3 py-2">Rule</th>
+                <th className="px-3 py-2">What&apos;s shown</th>
+                <th className="px-3 py-2 text-right">Shown</th>
+                <th className="px-3 py-2 text-right">Clicks</th>
+                <th className="px-3 py-2 text-right">CTR</th>
+                <th className="px-3 py-2 text-right">Shown→Lead</th>
+              </tr>
+            </thead>
+            <tbody>
+              {personalization.length === 0 ? (
+                <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No personalization data yet.</td></tr>
+              ) : (
+                personalization.map((p, i) => (
+                  <tr key={`${p.surface}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100">
+                    <td className="px-3 py-2 text-slate-700">{surfaceLabel(p.surface)}</td>
+                    <td className="px-3 py-2 text-slate-600">{ruleLabel(p.rule_id)}</td>
+                    <td className="px-3 py-2 text-slate-500">“{personalizationHint(p.rule_id, p.topic)}”</td>
+                    <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
+                    <td className="px-3 py-2 text-right font-mono">{p.clicked}</td>
+                    <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
+                    <td className="px-3 py-2 text-right">{pct(p.shown_to_lead_rate)}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       {/* Experiments */}
       {experiments.length > 0 && (
-        <>
-          <h2 id="experiments" className="mt-10 scroll-mt-20 text-lg font-bold text-slate-900">Experiments</h2>
+        <div>
+          <h2 className="text-lg font-bold text-slate-900">Experiments</h2>
           <p className="text-xs text-slate-500">
-            A/B results from first-party events (directional; significance needs volume). The{" "}
-            <code className="rounded bg-slate-100 px-1">personalization</code> experiment compares{" "}
-            <code className="rounded bg-slate-100 px-1">control</code> (~25%, generic site) against{" "}
-            <code className="rounded bg-slate-100 px-1">treatment</code> (~75%, behaviour-driven offers); a higher
-            treatment conversion is the personalisation lift.
+            All A/B results from first-party events (directional; significance needs volume). The{" "}
+            <code className="rounded bg-slate-100 px-1">personalization</code> rows back the lift card above.
           </p>
           <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
             <table className="w-full text-sm">
@@ -338,55 +617,32 @@ export default async function AdminAnalyticsPage({
               </tbody>
             </table>
           </div>
-        </>
+        </div>
       )}
 
-      {/* Visitors */}
-      <h2 className="mt-10 text-lg font-bold text-slate-900">Visitors</h2>
-      <p className="text-xs text-slate-500">Click any visitor to see everything they did.</p>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table className="w-full text-sm">
-          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-            <tr>
-              <th className="px-3 py-2">Visitor</th>
-              <th className="px-3 py-2">Last seen</th>
-              <th className="px-3 py-2 text-right">Visits</th>
-              <th className="px-3 py-2 text-right">Pages</th>
-              <th className="px-3 py-2 text-right">Engaged</th>
-              <th className="px-3 py-2">Device</th>
-              <th className="px-3 py-2">Country</th>
-              <th className="px-3 py-2">Source</th>
-              <th className="px-3 py-2 text-center">Lead</th>
-            </tr>
-          </thead>
-          <tbody>
-            {visitors.length === 0 ? (
-              <tr><td colSpan={9} className="px-3 py-4 text-center text-slate-400">No visitors yet.</td></tr>
-            ) : (
-              visitors.map((v) => {
-                const lead = leadByVisitor.get(v.visitor_id);
-                return (
-                <tr key={v.visitor_id} className={`border-t border-slate-100 ${v.converted || lead ? "bg-emerald-50/40" : ""}`}>
-                  <td className="px-3 py-2">
-                    <Link href={`/admin/analytics/visitor/${v.visitor_id}?k=${expected}`} className="font-mono text-emerald-700 underline">
-                      {v.visitor_id.slice(0, 14)}…
-                    </Link>
-                  </td>
-                  <td className="px-3 py-2 text-slate-500">{ago(v.last_seen)}</td>
-                  <td className="px-3 py-2 text-right font-mono">{v.total_sessions}</td>
-                  <td className="px-3 py-2 text-right font-mono">{v.page_views}</td>
-                  <td className="px-3 py-2 text-right font-mono">{secs(v.total_engaged_ms || 0)}</td>
-                  <td className="px-3 py-2 text-slate-600">{v.device_type || "—"}</td>
-                  <td className="px-3 py-2 text-slate-600">{v.country || "—"}</td>
-                  <td className="px-3 py-2 text-slate-600">{v.referrer_host || v.utm_source || "direct"}</td>
-                  <td className="px-3 py-2 text-xs text-emerald-800">{lead ? (lead.full_name || lead.email || "✅") : v.converted ? "✅" : ""}</td>
-                </tr>
-                );
-              })
-            )}
-          </tbody>
-        </table>
+      <Link href={`/admin/analytics/leads?k=${expected}`} className="inline-block text-xs text-emerald-700 underline">
+        View all leads →
+      </Link>
+    </div>
+  );
+
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-10">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h1 className="text-2xl font-bold text-slate-900">Analytics — {siteKey}</h1>
+        <div className="flex items-center gap-4 text-xs">
+          <Link href={`/admin/analytics/trends?k=${expected}`} className="text-emerald-700 underline">Trends</Link>
+          <Link href={`/admin/analytics/leads?k=${expected}`} className="text-emerald-700 underline">All leads</Link>
+          <span className="text-slate-500">Human-only · live</span>
+        </div>
       </div>
+
+      <DashboardTabs
+        overview={overviewSection}
+        acquisition={acquisitionSection}
+        behaviour={behaviourSection}
+        conversion={conversionSection}
+      />
     </div>
   );
 }
