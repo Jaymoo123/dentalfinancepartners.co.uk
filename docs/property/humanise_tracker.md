@@ -25,4 +25,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics | done | robotic | 50.7 | 2.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | scottish-lbtt-first-time-buyer-relief-eligibility-mechanics | done | robotic | 52.8 | 3 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | temporary-repatriation-facility-trf-designation-mechanics-12-15-percent-rates | done | robotic | 59.3 | 2.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| vat-developer-pre-registration-input-tax-recovery-property-development-projects | done | robotic | 38 | 5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
