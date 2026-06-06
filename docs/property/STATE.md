@@ -36,7 +36,9 @@ Built the analytics into a conversion engine. **DEPLOYED live 2026-06-06** (migr
 - **Dashboard ops console:** `/admin/analytics/trends` (`web_timeseries` RPC: 24h 15-min+hourly, 7d hourly+daily, 30d daily; dependency-free SVG charts) + `/admin/analytics/leads` (paginated 100/page, journey-enriched).
 - **Footer:** removed the sister-site cross-links (focus property positioning).
 
-**Remaining (not yet built):** Phase 4 free resources (email-gate mechanism + actual PDF assets — user will supply PDFs later, wire flagged-off until they exist); A6 anti-spam (honeypot quick; Vercel BotID needs routing lead submits through a Next route); Phase 8 calculators flagship (user-flagged CORE but parked); Phase 9 chatbot (decided: curated FAQ + specialist CTA, not RAG).
+**Shipped + deployed after the initial cut (same day 2026-06-06):** A6 honeypot anti-spam on all three lead forms (off-screen `company_url`, silent drop); Phase 9 **curated specialist FAQ widget** (`components/support/SpecialistWidget.tsx` + `lib/support/faq.ts`) — topic-aware FAQ + honest "ask a specialist" lead capture (replies within one working day; NOT a RAG bot, chosen for cost/risk).
+
+**Still remaining (need inputs / a decision):** Phase 4 free resources (email-gate mechanism + actual PDF assets — deferred until the PDFs exist; user supplies/commissions them); Phase 8 calculators flagship (user-parked "circle back later"); A6 Vercel BotID (needs routing lead submits through a Next API route so `checkBotId()` has a server hook).
 
 ## 0. Core-page SEO engine + homepage optimisation (NEW 2026-06-02 — DEPLOYED to production 2026-06-03)
 
