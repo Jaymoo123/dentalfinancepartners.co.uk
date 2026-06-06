@@ -20,4 +20,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | non-resident-landlord-scheme-uk-complete-guide | done | robotic | 39.5 | 10 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | property-accountant-jobs-uk | done | robotic | 47 | 10.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | first-time-buyer-relief-overcome-down-payment | done | robotic | 34.5 | 6.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| vat-how-to-calculate | done | robotic | 36.3 | 14.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
