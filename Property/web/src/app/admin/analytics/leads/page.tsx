@@ -48,7 +48,7 @@ export default async function LeadsPage({
         </Link>
       </div>
       <p className="mt-1 text-xs text-slate-500">
-        Newest first, {PAGE} per page, enriched with each lead's journey.
+        Newest first, {PAGE} per page, enriched with each lead&apos;s journey.
       </p>
 
       <div className="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white">
