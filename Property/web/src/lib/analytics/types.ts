@@ -40,6 +40,7 @@ export const EVENT_NAMES = [
   "personalization_shown",
   "personalization_clicked",
   "personalization_dismissed",
+  "support_opened",
 ] as const;
 
 export type EventName = (typeof EVENT_NAMES)[number];
@@ -78,6 +79,7 @@ export const INTERACTION_EVENTS: ReadonlySet<string> = new Set([
   "form_submit",
   "lead_submitted",
   "personalization_clicked",
+  "support_opened",
 ]);
 
 /** Free-form, JSON-serialisable event payload. Values are scrubbed of PII. */

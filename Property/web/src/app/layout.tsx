@@ -8,6 +8,7 @@ import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
 import { IntentProvider } from "@/components/intent/IntentProvider";
 import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
+import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
               <PageShell>{children}</PageShell>
               <ReturningBar />
               <DeepScrollModal />
+              <SpecialistWidget />
             </IntentProvider>
           </AnalyticsProvider>
           {/* GA4 + Microsoft Clarity load only after consent is granted. */}
