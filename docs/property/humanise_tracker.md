@@ -13,4 +13,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | airbnb-landlords | done | severe | 64.2 | 3.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | commercial-property-fixtures-claim-s198-election-purchase-mechanics | done | severe | 61 | 23.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | know-about-let-property-campaign | done | severe | 66.9 | 2.5 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| late-filing-and-late-payment-penalties | done | severe | 60 | 11.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
