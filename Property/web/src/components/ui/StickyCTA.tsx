@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "./layout-utils";
 import { niche } from "@/config/niche-loader";
+import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
 
 type StickyCTAProps = {
   href?: string;
@@ -20,6 +21,8 @@ export function StickyCTA({
 }: StickyCTAProps = {}) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const action = useIntent("sticky_cta");
+  const shownRef = useRef(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,11 +38,23 @@ export function StickyCTA({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [dismissed]);
 
+  // Log a personalization impression the first time a tailored sticky shows.
+  useEffect(() => {
+    if (visible && action && !shownRef.current) {
+      shownRef.current = true;
+      trackPersonalization("shown", action);
+    }
+  }, [visible, action]);
+
   if (dismissed) return null;
 
-  const primaryText = primary ?? niche.cta.sticky_primary;
+  // Intent-tailored copy + destination (in-place swap, no layout shift). Falls
+  // back to the generic niche CTA when the page has no topic.
+  const useCalc = !!action && action.variant !== "escalate" && !!action.calculatorSlug;
+  const ctaHref = action ? (useCalc ? `/calculators/${action.calculatorSlug}` : "/contact") : href;
+  const primaryText = action ? action.ctaCopy : (primary ?? niche.cta.sticky_primary);
   const secondaryText = secondary ?? niche.cta.sticky_secondary;
-  const button = buttonLabel ?? niche.cta.sticky_button;
+  const button = action ? (useCalc ? "Open the calculator" : niche.cta.sticky_button) : (buttonLabel ?? niche.cta.sticky_button);
 
   return (
     <div
@@ -58,9 +73,10 @@ export function StickyCTA({
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
           <Link
-            href={href}
+            href={ctaHref}
             data-cta="sticky_cta"
             data-cta-placement="sticky"
+            onClick={() => action && trackPersonalization("clicked", action)}
             className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
           >
             {button}
