@@ -23,4 +23,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | nrl-scheme-letting-agents-quarterly-returns-mechanics | done | robotic | 39 | 22.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | annual-investment-allowance-2024-25 | done | robotic | 47.3 | 4.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | ated-rates-2026-27-bands-table-worked-examples | done | robotic | 39.1 | 8.5 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| iht-joint-ownership-property-spouse-exemption-transferable-allowances-jointly-tic-vs-jt | done | robotic | 28 | 1.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
