@@ -6,15 +6,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { niche } from "@/config/niche-loader";
 import { getTimeseries } from "@/lib/analytics/server/adminData";
-import { TimeSeriesChart } from "@/components/admin/TimeSeriesChart";
+import { TrendChart } from "@/components/admin/TrendChart";
 
 export const dynamic = "force-dynamic";
 export const metadata = { robots: { index: false, follow: false } };
 
 const isoOf = (d: Date) => d.toISOString();
-const hhmm = (s: string) => new Date(s).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-const hourLabel = (s: string) => new Date(s).toLocaleString("en-GB", { weekday: "short", hour: "2-digit" });
-const dayLabel = (s: string) => new Date(s).toLocaleDateString("en-GB", { day: "2-digit", month: "short" });
 
 export default async function TrendsPage({
   searchParams,
@@ -51,21 +48,21 @@ export default async function TrendsPage({
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 24 hours</h2>
       <div className="mt-3 space-y-3">
-        <TimeSeriesChart data={q15} metric="sessions" label="Sessions · 15-minute" format={hhmm} />
-        <TimeSeriesChart data={h24hourly} metric="sessions" label="Sessions · hourly" format={hhmm} />
+        <TrendChart data={q15} metric="sessions" label="Sessions · 15-minute" formatType="time" />
+        <TrendChart data={h24hourly} metric="sessions" label="Sessions · hourly" formatType="time" />
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 7 days</h2>
       <div className="mt-3 space-y-3">
-        <TimeSeriesChart data={w7hourly} metric="sessions" label="Sessions · hourly" format={hourLabel} />
-        <TimeSeriesChart data={w7daily} metric="sessions" label="Sessions · daily" format={dayLabel} />
-        <TimeSeriesChart data={w7daily} metric="leads" label="Leads · daily" format={dayLabel} />
+        <TrendChart data={w7hourly} metric="sessions" label="Sessions · hourly" formatType="hour" />
+        <TrendChart data={w7daily} metric="sessions" label="Sessions · daily" formatType="day" />
+        <TrendChart data={w7daily} metric="leads" label="Leads · daily" formatType="day" />
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 30 days</h2>
       <div className="mt-3 space-y-3">
-        <TimeSeriesChart data={m30daily} metric="sessions" label="Sessions · daily" format={dayLabel} />
-        <TimeSeriesChart data={m30daily} metric="leads" label="Leads · daily" format={dayLabel} />
+        <TrendChart data={m30daily} metric="sessions" label="Sessions · daily" formatType="day" />
+        <TrendChart data={m30daily} metric="leads" label="Leads · daily" formatType="day" />
       </div>
     </div>
   );

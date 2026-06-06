@@ -68,6 +68,14 @@
   --ring: #059669;
   --radius: 0rem;
 
+  /* shadcn chart palette (Recharts ChartContainer resolves --color-* from these).
+     Brand-aligned: emerald family for sessions/events, indigo for leads. */
+  --chart-1: #059669; /* emerald-600 */
+  --chart-2: #4f46e5; /* indigo-600 */
+  --chart-3: #10b981; /* emerald-500 */
+  --chart-4: #6366f1; /* indigo-500 */
+  --chart-5: #047857; /* emerald-700 */
+
   /* Canonical brand tokens for @accounting-network/web-shared components. */
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
@@ -94,6 +102,11 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
