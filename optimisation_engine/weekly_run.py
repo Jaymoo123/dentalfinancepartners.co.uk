@@ -42,6 +42,8 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from optimisation_engine.analysis.detectors import run_all_detectors  # noqa: E402
+from optimisation_engine.analysis.behaviour_detectors import run_behaviour_detectors  # noqa: E402
+from optimisation_engine.analysis.bot_reclassifier import reclassify_bots  # noqa: E402
 from optimisation_engine.config import PRIORITY_ORDER, get_sites  # noqa: E402
 from optimisation_engine.snapshot import run_snapshot  # noqa: E402
 from optimisation_engine.cost_tracker import CostTracker  # noqa: E402
@@ -184,6 +186,26 @@ def step_detect(sites: list[str]) -> list[dict]:
     print("[Step 3] Opportunity detection")
     print("=" * 80)
     return [run_all_detectors(s) for s in sites]
+
+
+def step_detect_behaviour(sites: list[str]) -> list[dict]:
+    """CRO opportunity detection from first-party on-site behaviour.
+
+    Reclassifies stale bot sessions first (so human-only rollups are clean),
+    then runs the behaviour detectors. Resilient per-site: a site with no
+    web_events yet simply yields zero opportunities.
+    """
+    print("\n" + "=" * 80)
+    print("[Step 3b] Behaviour (CRO) detection")
+    print("=" * 80)
+    out: list[dict] = []
+    for s in sites:
+        try:
+            reclassify_bots(s)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[CRO] reclassify_bots({s}) ERROR: {type(exc).__name__}: {exc}")
+        out.append(run_behaviour_detectors(s))
+    return out
 
 
 def step_apply_high_confidence(*, dry_run: bool) -> dict:
@@ -371,6 +393,12 @@ def main() -> None:
         report["detect"] = "skipped"
     else:
         report["detect"] = step_detect(sites)
+
+    # Step 3b: Behaviour / CRO detection (first-party on-site behaviour)
+    if args.skip_detect:
+        report["detect_behaviour"] = "skipped"
+    else:
+        report["detect_behaviour"] = step_detect_behaviour(sites)
 
     # Step 4: Apply (conservative this cycle)
     if args.skip_apply:
