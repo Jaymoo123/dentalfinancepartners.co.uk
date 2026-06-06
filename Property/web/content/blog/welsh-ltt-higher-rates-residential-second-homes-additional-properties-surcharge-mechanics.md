@@ -15,7 +15,7 @@ imageCredit:
   source: "Pexels"
   source_url: "https://www.pexels.com/photo/charming-village-architecture-in-north-wales-35860843/"
 h1: "Welsh LTT Higher Rates: Mechanics for Second Homes and Additional Property Buyers"
-summary: "Welsh higher residential rates apply where a buyer (or any joint buyer) already owns another dwelling worth £40,000 or more anywhere in the world at the effective date of the transaction. From 11 December 2024 the higher residential rates uplifted by 1 percentage point across all six bands to a standalone band structure starting at 5% and rising to 17% above £1.5 million. This page walks the band table, the £40,000 minor-interest threshold, the 36-month replacement-of-main-residence rule, the spousal-aggregation rule under LTTA 2017 Sch 5 para 25, the corporate-buyer position, and the Welsh Revenue Authority refund mechanism. Three worked examples use Welsh purchase prices."
+summary: "Welsh higher residential rates apply where you (or any joint buyer) already own another dwelling worth £40,000 or more anywhere in the world at the effective date of the transaction. From 11 December 2024 the higher residential rates uplifted by 1 percentage point across all six bands to a standalone band structure starting at 5% and rising to 17% above £1.5 million. Here is the band table, the £40,000 minor-interest threshold, the 36-month replacement-of-main-residence rule, the spousal-aggregation rule under LTTA 2017 Sch 5 para 25, the corporate-buyer position, and the Welsh Revenue Authority refund mechanism, with three worked examples at Welsh purchase prices."
 schema: ''
 faqs:
   - question: "What are the current Welsh LTT higher residential rates?"
@@ -23,9 +23,9 @@ faqs:
   - question: "How is the Welsh higher-rates structure different from the SDLT 5% surcharge?"
     answer: "SDLT and Welsh LTT take different statutory shapes. SDLT applies the standard residential band table and then adds a flat 5% surcharge on top of every band (FA 2003 Sch 4ZA). Welsh LTT discards the main residential rate table entirely for higher-rate transactions and applies a standalone band structure starting at 5% from £1 (LTTA 2017 Sch 5). The practical effect is that the Welsh higher rates bite earlier (from the first pound of consideration rather than only above the nil band) but the headline percentages on individual slices are sometimes lower than the SDLT-plus-5% combination. The architectures are not interchangeable."
   - question: "When does the £40,000 minor-interest threshold apply?"
-    answer: "Higher rates apply where the buyer (or any joint buyer) holds another dwelling-interest with a market value of £40,000 or more anywhere in the world at the effective date. Interests below £40,000 are ignored. For jointly-held existing properties, each owner's share is valued separately: joint tenants divide the total value by the number of tenants; tenants in common multiply the property value by the declared share. The £40k floor under LTTA 2017 Sch 5 mirrors the SDLT Schedule 4ZA threshold; both regimes are aligned on this point."
+    answer: "Higher rates apply where you (or any joint buyer) hold another dwelling-interest with a market value of £40,000 or more anywhere in the world at the effective date. Interests below £40,000 are ignored. For jointly-held existing properties, each owner's share is valued separately: joint tenants divide the total value by the number of tenants; tenants in common multiply the property value by the declared share. The £40k floor under LTTA 2017 Sch 5 mirrors the SDLT Schedule 4ZA threshold; both regimes are aligned on this point."
   - question: "How does the 36-month replacement-of-main-residence rule work in Wales?"
-    answer: "Where a buyer is replacing their main residence and sells the old main residence within 36 months of buying the new one, the main residential rates apply instead of the higher rates. The mechanic is set out at LTTA 2017 Sch 5 paras 8 to 11 (and para 17 for related deeming). If the old main residence is sold BEFORE the new one is bought (within the same 36-month window looking backwards), the buyer pays main rates from the outset. If the old main residence is sold AFTER the new one is bought, the buyer pays higher rates initially and claims a refund from the Welsh Revenue Authority once the old sale completes within the 36-month window."
+    answer: "Where you are replacing your main residence and sell the old one within 36 months of buying the new one, the main residential rates apply instead of the higher rates. The mechanic is set out at LTTA 2017 Sch 5 paras 8 to 11 (and para 17 for related deeming). If you sell the old main residence BEFORE you buy the new one (within the same 36-month window looking backwards), you pay main rates from the outset. If you sell it AFTER you buy the new one, you pay higher rates initially and claim a refund from the Welsh Revenue Authority once the old sale completes within the 36-month window."
   - question: "How does spousal aggregation work under Welsh LTT?"
     answer: "Under LTTA 2017 Sch 5 para 25, spouses and civil partners living together are treated as a single economic unit for higher-rates purposes. If either spouse owns another dwelling-interest worth £40,000 or more, the higher rates apply to a purchase by either spouse regardless of which one is buying. The non-purchasing spouse is treated as a deemed buyer for the rule's purpose. The aggregation breaks where the spouses are formally separated (court order, separation deed, or de facto permanent separation evidenced by separate residences). Cohabitees who are not married or in a civil partnership are NOT aggregated; only married couples and civil partners fall within Sch 5 para 25."
   - question: "Do Welsh higher rates apply to corporate buyers?"
@@ -37,7 +37,7 @@ faqs:
   - question: "Does Wales charge a non-resident surcharge on top of higher rates?"
     answer: "No. Wales has not introduced a non-resident-buyer surcharge equivalent to England's 2% (FA 2003 Sch 9A from 1 April 2021). A non-UK-resident buyer who already owns another dwelling pays the Welsh higher residential rates as set out in the table, with no additional surcharge for non-residence. A non-UK-resident buyer in England in the same position pays SDLT plus the 5% additional dwellings surcharge plus the 2% non-resident surcharge, materially more. The Welsh policy treatment of non-residence is deliberately neutral."
   - question: "Is there a subsidiary-dwelling carve-out under Welsh higher rates?"
-    answer: "Yes, but it is narrow. LTTA 2017 Sch 5 para 14 (and the broader subsidiary-dwelling treatment for individual main-residence buyers from 7 February 2025) provides that an annexe or subsidiary dwelling forming part of a main-residence purchase does NOT count as a separate dwelling for higher-rates purposes if specific conditions are met. The subsidiary dwelling must be smaller, fall below a one-third value threshold relative to the main dwelling, and be acquired as part of the same transaction. The 7 February 2025 amendment specifically targeted main-residence-with-annexe purchases that previously could claim multiple dwellings relief; that route is now closed in many cases. The interaction with MDR is covered on our companion page."
+    answer: "Yes, but it is narrow. LTTA 2017 Sch 5 para 14 (and the broader subsidiary-dwelling treatment for individual main-residence buyers from 7 February 2025) provides that an annexe or subsidiary dwelling forming part of a main-residence purchase does NOT count as a separate dwelling for higher-rates purposes if specific conditions are met. The subsidiary dwelling must be smaller, fall below a one-third value threshold relative to the main dwelling, and be acquired as part of the same transaction. The 7 February 2025 amendment specifically targeted main-residence-with-annexe purchases that previously could claim multiple dwellings relief; that route is now closed in many cases. For how this plays against multiple dwellings relief, see our Welsh MDR guide."
   - question: "How is Welsh LTT higher rates filed and paid?"
     answer: "The Welsh LTT return is filed online via the Welsh Revenue Authority portal at gov.wales/file-tax-return-land-transaction-tax-online, within 30 days of the effective date (LTTA 2017 s.41). Where higher rates apply, the return includes higher-rates-specific declarations (joint buyer interests, the £40k test, replacement-of-main-residence position). Payment is due at the same time as the return. The 30-day Welsh clock is more generous than the 14-day SDLT clock, but the broader filing complexity is higher because the joint-buyer + spousal + trust attribution rules introduce more declaration points."
   - question: "Does the £225,000 main-rate nil band apply when I'm paying higher rates?"
@@ -45,7 +45,7 @@ faqs:
   - question: "What is the underlying Welsh legislation for higher rates?"
     answer: "The primary statute is LTTA 2017 Sch 5, available at legislation.gov.uk/anaw/2017/1/schedule/5. The Schedule sets out the trigger conditions for higher rates (paras 3, 11, 20 for individuals), the replacement-of-main-residence rule (paras 8 and 17), spousal aggregation (para 25), bare trust and settlement treatment (paras 27-28), subsidiary dwelling exception (para 14), and the general deeming provisions (para 29). The current higher-rate band table is set by regulations under LTTA 2017 s.24, most recently the Land Transaction Tax (Tax Bands and Tax Rates) (Wales) (Amendment) Regulations 2024 (made under the made-affirmative procedure and in force from 11 December 2024)."
   - question: "Where does this page sit alongside the other Welsh LTT pages?"
-    answer: "This page covers the higher-rates mechanic specifically. The main residential rates (£225k nil band and the bands above) are on our companion page (Welsh LTT main rates entry page). Welsh multiple dwellings relief, which interacts with higher rates for bulk acquisitions, is on the MDR companion page (post-7-February-2025 modifications + 3% minimum-rate floor from 13 February 2026). The Welsh derelict-property refund route, which reclassifies severely derelict properties as non-residential, is on the derelict-property companion page. For the SDLT-applied parallel to Welsh higher rates, the SDLT BTL surcharge pillar covers England's 5% additional dwellings surcharge."
+    answer: "This is the higher-rates mechanic specifically. The main residential rates (£225k nil band and the bands above) sit in a separate guide on Welsh LTT main rates. Welsh multiple dwellings relief, which interacts with higher rates for bulk acquisitions, has its own guide covering the post-7-February-2025 modifications and the 3% minimum-rate floor from 13 February 2026. The Welsh derelict-property refund route, which reclassifies severely derelict properties as non-residential, is covered separately. For the SDLT-applied parallel to Welsh higher rates, our SDLT buy-to-let surcharge guide covers England's 5% additional dwellings surcharge."
 dateModified: "2026-05-23"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
@@ -53,17 +53,17 @@ reviewedAt: "2026-05-23"
 editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 17% standalone band structure under LTTA 2017 Sch 5), with the £40,000 minor-interest threshold, the 36-month replacement-of-main-residence rule under paras 8 + 17, spousal aggregation under para 25, corporate-buyer position, three worked examples at Welsh purchase prices, and the Welsh Revenue Authority refund mechanism for sale of old main residence within window."
 ---
 
-<p>If you are buying a residential property in Wales and you already own another dwelling, the Welsh higher residential rates apply rather than the main residential rates. The architecture is materially different from England's SDLT additional dwellings surcharge. SDLT applies the standard residential bands and bolts a flat 5% on top of every band. Welsh LTT discards the main residential table entirely and applies a standalone band structure starting at 5% from the first pound and rising to 17% above £1.5 million. This page covers the standalone-band-structure mechanic, the £40,000 minor-interest threshold, the 36-month replacement-of-main-residence rule, the spousal-aggregation rule under LTTA 2017 Sch 5 para 25, and the corporate-buyer position.</p>
+<p>If you are buying a residential property in Wales and you already own another dwelling, you pay the Welsh higher residential rates, not the main residential rates. The architecture is materially different from England's SDLT additional dwellings surcharge. SDLT applies the standard residential bands and bolts a flat 5% on top of every band. Welsh LTT discards the main residential table entirely and applies a standalone band structure starting at 5% from the first pound and rising to <strong>17% above £1.5 million</strong>. Get the mechanic wrong, miss your spouse's separate flat or your old main residence's sale window, and you can overpay by tens of thousands or face a corrective assessment with interest and penalties.</p>
 
-<p>If your purchase is in England or Northern Ireland, the parallel page is our <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT additional dwellings surcharge pillar</a>. If your purchase is in Scotland, the parallel is the Additional Dwelling Supplement at 8% on the entire purchase price. Each jurisdiction has its own statute, its own rate table and its own rules; this page covers Wales only.</p>
+<p>Buying in England or Northern Ireland instead? The equivalent rules are in our <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT additional dwellings surcharge guide</a>. In Scotland it is the Additional Dwelling Supplement at 8% on the entire purchase price. Each jurisdiction has its own statute, its own rate table and its own rules; what follows is Wales.</p>
 
 <h2>What "higher rates" means in Wales (and why it is not a surcharge)</h2>
 
-<p>The single positive Welsh-specific structural point that anchors this page: Welsh higher rates are a <strong>standalone band structure</strong>, not a flat surcharge stacked on the main rates. The Welsh Government, in setting the higher-rate regime in LTTA 2017 Sch 5 and the rate-setting regulations under s.24, chose to define a separate band table that applies in its entirety to higher-rate transactions. The result is structurally distinct from SDLT.</p>
+<p>Welsh higher rates are a <strong>standalone band structure</strong>, not a flat surcharge stacked on the main rates. In setting the higher-rate regime in LTTA 2017 Sch 5 and the rate-setting regulations under s.24, the Welsh Government defined a separate band table that applies in its entirety to higher-rate transactions. That makes it structurally distinct from SDLT.</p>
 
-<p>The practical effect of the standalone-band design is that Welsh higher rates start biting from the first pound of consideration, with no nil band carve-out for the bottom of the market. By contrast, the SDLT 5% surcharge sits on top of the standard residential bands including the £125,000 nil band: a £100,000 second-home purchase in Yorkshire attracts £5,000 of SDLT (5% on the full £100,000) because the surcharge does not respect the nil band. The Welsh higher rates and the SDLT-plus-surcharge produce similar absolute outcomes at lower prices and diverge at the top of the market, where Welsh 17% above £1.5 million is materially higher than SDLT 17% (12% standard + 5% surcharge) on the same slice.</p>
+<p>Because the band table stands alone, Welsh higher rates start biting from the first pound of consideration, with no nil band carve-out for the bottom of the market. The SDLT 5% surcharge, by comparison, sits on top of the standard residential bands including the £125,000 nil band: a £100,000 second-home purchase in Yorkshire attracts £5,000 of SDLT (5% on the full £100,000) because the surcharge does not respect the nil band. The two regimes produce similar absolute outcomes at lower prices and diverge at the top of the market, where Welsh 17% above £1.5 million is materially higher than SDLT 17% (12% standard + 5% surcharge) on the same slice.</p>
 
-<p>This is not just a numerical difference. It shapes everything else on this page: there is no Welsh equivalent of the SDLT-style "the surcharge is X% on top of everything"; the band table IS the higher-rate regime, full stop.</p>
+<p>This is not just a numerical difference. There is no Welsh version of "the surcharge is X% on top of everything"; the band table IS the higher-rate regime, full stop, and everything below follows from that.</p>
 
 <h2>The 2026/27 higher residential rate table</h2>
 
@@ -89,7 +89,7 @@ editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 
 
 <h2>The £40,000 minor-interest threshold</h2>
 
-<p>Higher rates apply only where the buyer (or any joint buyer) holds another dwelling-interest worth £40,000 or more anywhere in the world at the effective date of the transaction. Dwelling-interests below £40,000 are ignored. The threshold is the same as the SDLT Schedule 4ZA threshold; both regimes harmonised on this point from inception.</p>
+<p>Higher rates apply only where you (or any joint buyer) hold another dwelling-interest worth £40,000 or more anywhere in the world at the effective date of the transaction. Dwelling-interests below £40,000 are ignored. The threshold is the same as the SDLT Schedule 4ZA threshold; both regimes harmonised on this point from inception.</p>
 
 <p>The valuation rule for jointly-held existing properties is specific. The Welsh Revenue Authority technical guidance at LTTA/8020 sets out:</p>
 
@@ -98,26 +98,26 @@ editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 
 <li><strong>Tenants in common</strong> (divided shares): the property value multiplied by the declared share. A 10% share of a £300,000 property is a £30,000 interest, below the £40k threshold and ignored for the test.</li>
 </ul>
 
-<p>The threshold matters in practice for landlords with small portfolio holdings or with inherited fractional interests. A buyer who holds a 5% beneficial interest in a £500,000 family property under a sibling-pool arrangement (worth £25,000) is NOT triggered into higher rates by that interest. The same buyer with a 10% interest (worth £50,000) IS triggered.</p>
+<p>The threshold matters most if you have small portfolio holdings or an inherited fractional interest. Hold a 5% beneficial interest in a £500,000 family property under a sibling-pool arrangement (worth £25,000) and that interest does NOT trigger higher rates. Hold a 10% interest in the same property (worth £50,000) and it DOES.</p>
 
 <h2>The 36-month replacement-of-main-residence rule</h2>
 
-<p>Where a buyer is replacing their main residence, the higher rates do not apply if the old main residence is sold within 36 months of the new purchase (or has been sold within the 36 months preceding the new purchase). The rule sits at LTTA 2017 Sch 5 paras 8 and 17, with related deeming provisions at para 29.</p>
+<p>If you are replacing your main residence, the higher rates fall away as long as you sell the old main residence within 36 months of the new purchase (or have already sold it within the 36 months before it). The rule sits at LTTA 2017 Sch 5 paras 8 and 17, with related deeming provisions at para 29.</p>
 
 <p>The mechanic divides cleanly into two cases:</p>
 
 <ul>
-<li><strong>Sell first, then buy</strong> (within 36 months looking backwards): the buyer pays main rates from the outset. No refund needed. The conveyancer ticks the appropriate box on the LTT return declaring the replacement.</li>
-<li><strong>Buy first, then sell</strong> (within 36 months looking forwards): the buyer pays higher rates upfront on the new purchase. Once the old main residence is sold, the buyer claims a refund from the Welsh Revenue Authority. The claim deadline is the later of 12 months from the sale of the old main residence and 12 months from the LTT return filing date for the new purchase.</li>
+<li><strong>Sell first, then buy</strong> (within 36 months looking backwards): you pay main rates from the outset. No refund needed. Your conveyancer ticks the appropriate box on the LTT return declaring the replacement.</li>
+<li><strong>Buy first, then sell</strong> (within 36 months looking forwards): you pay higher rates upfront on the new purchase, then claim a refund from the Welsh Revenue Authority once the old main residence sells. The claim deadline is the later of 12 months from the sale of the old main residence and 12 months from the LTT return filing date for the new purchase.</li>
 </ul>
 
 <p>The 36-month window now harmonises with England's SDLT replacement-of-main-residence refund window (3 years under FA 2003 Sch 4ZA para 3) and Scotland's ADS refund window (36 months under LBTT(S)A 2013 Sch 2A). All three jurisdictions arrived at 36 months via different routes, but the practical answer is now the same across the UK.</p>
 
-<p>The "main residence" qualifier matters. A buyer-out from a portfolio purchase who has never used the old property as a main residence cannot claim the replacement refund; the rule preserves the regime's anti-avoidance integrity. Where the old main residence has been let out for years before sale, the question of whether it remains the buyer's main residence at the relevant time can attract HMRC-style enquiries from the Welsh Revenue Authority.</p>
+<p>The "main residence" qualifier matters. If you are buying out a portfolio property you have never actually lived in as your main residence, you cannot claim the replacement refund; the rule is there to keep the regime's anti-avoidance integrity intact. And if the old main residence has been let out for years before sale, whether it still counts as your main residence at the relevant time can attract HMRC-style enquiries from the Welsh Revenue Authority.</p>
 
 <h2>Spousal aggregation under LTTA 2017 Sch 5 para 25</h2>
 
-<p>Welsh higher rates apply to a transaction where any joint buyer is triggered into higher rates by holding another dwelling-interest above the £40k threshold. The spousal-aggregation rule at LTTA 2017 Sch 5 para 25 extends the joint-buyer concept to married couples and civil partners living together: a spouse who is NOT a buyer is treated as a deemed buyer for the higher-rates test.</p>
+<p>Higher rates bite on the whole transaction if any joint buyer is triggered by holding another dwelling-interest above the £40k threshold. The spousal-aggregation rule at LTTA 2017 Sch 5 para 25 then extends that to married couples and civil partners living together: a spouse who is NOT on the purchase is treated as a deemed buyer for the higher-rates test. So your spouse's separate property can pull your purchase into higher rates even when only you are buying.</p>
 
 <p>The practical consequence: if Mr Davies-Powell solo-buys a £300,000 holiday cottage in Pembrokeshire but his spouse owns a separate £400,000 family home in Cardiff, the holiday cottage purchase attracts higher rates because Mrs Davies-Powell's existing dwelling-interest is attributed to Mr Davies-Powell under para 25. The fact that Mrs Davies-Powell is not on the title deed of the cottage purchase is immaterial.</p>
 
@@ -136,7 +136,7 @@ editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 
 <p>Cross-jurisdictional spousal aggregation works in both directions: an English-resident spouse's London flat triggers higher rates on a Welsh purchase, and a Welsh-resident spouse's Cardigan holiday home triggers the 5% SDLT surcharge on a London purchase. We work with cross-border landlords on the joined-up declarations. Use the form at the foot of the page to talk through your case.</p>
 </aside>
 
-<p>The English SDLT spousal-aggregation parallel sits at FA 2003 Sch 4ZA para 9. Our forthcoming sibling page covers the SDLT mechanic in depth alongside the Welsh and Scottish equivalents; the manager will hyperlink that page at merge.</p>
+<p>The English SDLT spousal-aggregation parallel sits at FA 2003 Sch 4ZA para 9, and works the same way: your spouse's separate dwelling triggers the surcharge on your purchase whether or not they are on the title.</p>
 
 <h2>Corporate buyers and trust interests</h2>
 
@@ -146,7 +146,7 @@ editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 
 
 <p>Trust interests fall under LTTA 2017 Sch 5 paras 27 to 28 (bare trusts) and the broader settlement treatment. Bare trusts look through to the beneficiary's circumstances. Interest-in-possession trusts focus on the beneficiary's separate position. Discretionary trusts treat trustees as quasi-entities and the trustees' own holdings matter. The attribution pattern for trust structures can be unintuitive: a property settled by a parent on a discretionary trust for the benefit of an adult child can produce attribution back to the parent, depending on the trustee composition and the residual reservation. Trust-heavy planning warrants bespoke advice.</p>
 
-<p>Minor children of the buyer (under 18) have their dwelling-interests attributed to the buyer-parent under Sch 5 para 25. A property held in a bare trust for a 12-year-old of the buyer counts towards the buyer's own £40k test. The rule prevents fragmentation by gifting property interests to minor children.</p>
+<p>Your minor children (under 18) have their dwelling-interests attributed to you as the buyer-parent under Sch 5 para 25. A property held in a bare trust for your 12-year-old counts towards your own £40k test. The rule stops you fragmenting holdings by gifting property interests to minor children.</p>
 
 <h2>Three worked examples at Welsh higher rates</h2>
 
@@ -207,7 +207,7 @@ editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 
 
 <h2>How Welsh higher rates compare to SDLT and Scottish ADS</h2>
 
-<p>Sessions advising landlords with cross-jurisdictional portfolios need the three regimes side-by-side. Each has its own statute, its own rate structure, and its own refund mechanism, but the 36-month replacement window has converged.</p>
+<p>If your portfolio straddles borders, you need the three regimes side by side. Each has its own statute, its own rate structure and its own refund mechanism, but the 36-month replacement window has now converged.</p>
 
 <table>
 <thead>
@@ -225,18 +225,18 @@ editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 
 
 <p>The three regimes are now closer on the replacement-window mechanic and the £40k threshold than they have been since the devolved taxes came in. The main divergences remain in the rate-structure architecture (standalone vs flat surcharge vs flat 8%) and the corporate-buyer treatment (Wales applies higher rates band table to companies in full; England has the £500k+ 15% flat rate; Scotland uses ADS).</p>
 
-<h2>Where this page sits in the wider Welsh LTT picture</h2>
+<h2>The other Welsh LTT rules that interact with higher rates</h2>
 
-<p>This page is the Welsh higher-rates depth page. The companion pages cover:</p>
+<p>Higher rates rarely sit on their own. A few neighbouring rules can change the answer for you:</p>
 
 <ul>
-<li><strong>Welsh LTT main residential rates</strong>: the £225k nil band and the bands above, applying where no other dwelling is held. The main-rates entry page.</li>
-<li><strong>Welsh multiple dwellings relief</strong>: still available in Wales (unlike SDLT MDR which was abolished 1 June 2024), with the 7 February 2025 subsidiary-dwelling carve-out and the 13 February 2026 minimum-rate floor of 3%. MDR can reduce the higher-rates exposure on bulk acquisitions; the companion page covers the interaction.</li>
-<li><strong>Welsh first-time-buyer absence</strong>: Wales does not operate a separate FTB regime. Cross-border FTBs need to know which jurisdiction the FTB relief actually exists in.</li>
-<li><strong>Welsh derelict-property refund</strong>: reclassifies severely derelict properties as non-residential, accessing the lower non-residential band table (0% to 6%). Useful where a higher-rate transaction can be reframed.</li>
+<li><strong>Welsh LTT main residential rates</strong>: the £225k nil band and the bands above, which apply where you hold no other dwelling.</li>
+<li><strong>Welsh multiple dwellings relief</strong>: still available in Wales (unlike SDLT MDR, which was abolished 1 June 2024), with the 7 February 2025 subsidiary-dwelling carve-out and the 13 February 2026 minimum-rate floor of 3%. MDR can cut your higher-rates exposure on bulk acquisitions.</li>
+<li><strong>Welsh first-time-buyer absence</strong>: Wales does not operate a separate FTB regime. If you are a cross-border first-time buyer, you need to know which jurisdiction the relief actually exists in.</li>
+<li><strong>Welsh derelict-property refund</strong>: reclassifies severely derelict properties as non-residential, accessing the lower non-residential band table (0% to 6%). Worth knowing where a higher-rate transaction can be reframed.</li>
 </ul>
 
-<p>For comparison with the English SDLT additional dwellings surcharge that this page parallels, the <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT BTL rates and surcharge pillar</a> sits alongside. For the refund claim mechanism on the English side, our <a href="/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process">SDLT 5% surcharge refund claim process page</a> covers the FA 2003 Sch 4ZA refund mechanic in detail. For non-UK-resident landlords considering Welsh purchases (where there is no non-resident surcharge), our <a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">SDLT non-resident surcharge page</a> explains the English mechanism that does NOT apply in Wales.</p>
+<p>For the English side that this mirrors, our <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT buy-to-let rates and surcharge guide</a> covers the additional dwellings surcharge, and our <a href="/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process">SDLT 5% surcharge refund claim process</a> sets out the FA 2003 Sch 4ZA refund mechanic in detail. If you are a non-UK-resident buyer eyeing a Welsh purchase (where there is no non-resident surcharge), our <a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">SDLT non-resident surcharge guide</a> explains the English charge that does NOT apply in Wales.</p>
 
 <aside>
 <p>Cross-jurisdictional spousal aggregation, trust-structured purchase, or chain-timing on a replacement-of-main-residence refund?</p>
