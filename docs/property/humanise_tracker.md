@@ -27,4 +27,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | capital-allowances-second-hand-vans | done | robotic | 41 | 8.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | buy-to-let-limited-company-complete-guide-uk | done | robotic | 31.3 | 3.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | annual-investment-allowance-landlords-uk | done | robotic | 46.8 | 9.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| aia-allowance-uk-property-investors | done | robotic | 35.8 | 3.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
