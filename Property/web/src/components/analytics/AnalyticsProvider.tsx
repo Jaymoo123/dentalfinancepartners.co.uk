@@ -18,6 +18,8 @@ import { useEffect, useRef } from "react";
 import { configureAnalytics, track } from "@/lib/analytics/track";
 import { installAutoCapture, resetForNavigation } from "@/lib/analytics/autoCapture";
 import { isNewSession } from "@/lib/analytics/ids";
+import { deriveTopic } from "@/lib/intent/deriveTopic";
+import { recordEntryTopic, recordTopicVisit, bumpVisits, isReturning } from "@/lib/intent/session";
 import { useConsent } from "./ConsentProvider";
 
 type AnalyticsProviderProps = {
@@ -82,7 +84,18 @@ export function AnalyticsProvider({ siteKey, children }: AnalyticsProviderProps)
     const isEntry = firstViewRef.current && isNewSession();
     firstViewRef.current = false;
     resetForNavigation();
-    track("page_view", pageViewProps(isEntry));
+
+    // Intent capture: topic is derived from the route (no per-page wiring).
+    bumpVisits(isEntry);
+    const topic = deriveTopic(pathname || "");
+    recordEntryTopic(topic); // landing topic = search-intent proxy (first wins)
+    recordTopicVisit(topic); // most-recent topic, for returning-visitor tailoring
+
+    const props = pageViewProps(isEntry);
+    if (topic) props.page_topic = topic;
+    if (isEntry) props.entry_topic = topic ?? "";
+    props.visit_class = isReturning() ? "returning" : "new";
+    track("page_view", props);
   }, [pathname, granted]);
 
   return <>{children}</>;
