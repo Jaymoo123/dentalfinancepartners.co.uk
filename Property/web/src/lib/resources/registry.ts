@@ -88,12 +88,12 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     xlsx: {
       file: "/resources/incorporation/incorporation-model.xlsx",
       label: "Incorporation model (Excel)",
-      enabled: false,
+      enabled: true,
     },
     guide: {
       slug: "incorporation",
       label: "Incorporation decision guide",
-      enabled: false,
+      enabled: true,
     },
     magnetTitle: "The landlord incorporation toolkit",
     magnetBlurbTemplate:
@@ -105,12 +105,12 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     xlsx: {
       file: "/resources/capital-gains/capital-gains-model.xlsx",
       label: "Capital Gains model (Excel)",
-      enabled: false,
+      enabled: true,
     },
     guide: {
       slug: "capital-gains",
       label: "Capital Gains Tax guide",
-      enabled: false,
+      enabled: true,
     },
     magnetTitle: "The property CGT toolkit",
     magnetBlurbTemplate:
@@ -122,12 +122,12 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     xlsx: {
       file: "/resources/landlord-essentials/landlord-essentials-model.xlsx",
       label: "Landlord tax model (Excel)",
-      enabled: false,
+      enabled: true,
     },
     guide: {
       slug: "landlord-essentials",
       label: "Landlord tax essentials guide",
-      enabled: false,
+      enabled: true,
     },
     magnetTitle: "The landlord tax essentials toolkit",
     magnetBlurbTemplate:
@@ -139,12 +139,12 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     xlsx: {
       file: "/resources/stamp-duty/stamp-duty-model.xlsx",
       label: "Stamp duty model (Excel)",
-      enabled: false,
+      enabled: true,
     },
     guide: {
       slug: "stamp-duty",
       label: "Stamp duty (SDLT) guide",
-      enabled: false,
+      enabled: true,
     },
     magnetTitle: "The property stamp duty toolkit",
     magnetBlurbTemplate:
@@ -156,12 +156,12 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     xlsx: {
       file: "/resources/mtd/mtd-model.xlsx",
       label: "MTD readiness model (Excel)",
-      enabled: false,
+      enabled: true,
     },
     guide: {
       slug: "mtd",
       label: "Making Tax Digital guide",
-      enabled: false,
+      enabled: true,
     },
     magnetTitle: "The Making Tax Digital toolkit",
     magnetBlurbTemplate:

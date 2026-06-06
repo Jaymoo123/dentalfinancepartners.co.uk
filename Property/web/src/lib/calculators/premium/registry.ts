@@ -13,6 +13,11 @@
  */
 import type { PremiumToolConfig } from "./types";
 import { section24PremiumTool } from "./tools/section-24";
+import { incorporationPremiumTool } from "./tools/incorporation";
+import { capitalGainsPremiumTool } from "./tools/capital-gains";
+import { landlordEssentialsPremiumTool } from "./tools/landlord-essentials";
+import { stampDutyPremiumTool } from "./tools/stamp-duty";
+import { mtdPremiumTool } from "./tools/mtd";
 
 /**
  * toolId -> config. Append one line per category as its premium tool is authored.
@@ -20,6 +25,11 @@ import { section24PremiumTool } from "./tools/section-24";
  */
 export const PREMIUM_TOOLS: Record<string, PremiumToolConfig> = {
   "section-24-premium": section24PremiumTool,
+  "incorporation-premium": incorporationPremiumTool,
+  "capital-gains-premium": capitalGainsPremiumTool,
+  "landlord-essentials-premium": landlordEssentialsPremiumTool,
+  "stamp-duty-premium": stampDutyPremiumTool,
+  "mtd-premium": mtdPremiumTool,
 };
 
 /** Look up a premium tool config by its id (or undefined). */

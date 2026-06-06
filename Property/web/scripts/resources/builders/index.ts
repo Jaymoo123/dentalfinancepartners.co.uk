@@ -16,6 +16,11 @@
  */
 import type ExcelJS from "exceljs";
 import { build as buildSection24 } from "./section-24";
+import { build as buildIncorporation } from "./incorporation";
+import { build as buildCapitalGains } from "./capital-gains";
+import { build as buildLandlordEssentials } from "./landlord-essentials";
+import { build as buildStampDuty } from "./stamp-duty";
+import { build as buildMtd } from "./mtd";
 
 /** A builder produces one workbook for one category. */
 export type WorkbookBuilder = () => ExcelJS.Workbook | Promise<ExcelJS.Workbook>;
@@ -37,5 +42,30 @@ export const BUILDERS: BuilderEntry[] = [
     topic: "section-24",
     fileName: "section-24-model.xlsx",
     build: buildSection24,
+  },
+  {
+    topic: "incorporation",
+    fileName: "incorporation-model.xlsx",
+    build: buildIncorporation,
+  },
+  {
+    topic: "capital-gains",
+    fileName: "capital-gains-model.xlsx",
+    build: buildCapitalGains,
+  },
+  {
+    topic: "landlord-essentials",
+    fileName: "landlord-essentials-model.xlsx",
+    build: buildLandlordEssentials,
+  },
+  {
+    topic: "stamp-duty",
+    fileName: "stamp-duty-model.xlsx",
+    build: buildStampDuty,
+  },
+  {
+    topic: "mtd",
+    fileName: "mtd-model.xlsx",
+    build: buildMtd,
   },
 ];

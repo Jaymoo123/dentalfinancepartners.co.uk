@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { additionalDwellingSdlt } from "@/lib/sdlt";
+import { computeIncorporation } from "@/lib/incorporation";
 
 export function IncorporationCostCalculator({ variant = "page" }: { variant?: "page" | "embed" }) {
   const [propertyValue, setPropertyValue] = useState(300000);
@@ -11,31 +11,23 @@ export function IncorporationCostCalculator({ variant = "page" }: { variant?: "p
   const [mortgageInterest, setMortgageInterest] = useState(9000);
   const [taxBand, setTaxBand] = useState<"basic" | "higher" | "additional">("higher");
 
-  const capitalGain = Math.max(0, propertyValue - purchasePrice);
-  const cgtRate = taxBand === "basic" ? 0.18 : 0.24;
-  const cgtCost = capitalGain * cgtRate;
-  
-  // Transferring a rental into a company is an additional-dwelling purchase:
-  // standard SDLT bands plus the 5% surcharge on the whole price.
-  const sdltCost = additionalDwellingSdlt(propertyValue);
+  // All math via the shared incorporation engine (lib/incorporation.ts), which
+  // reuses the locked CGT / SDLT / Section 24 / Corporation Tax / dividend modules,
+  // so this calculator, the premium tool and the Excel model cannot drift apart.
+  const res = computeIncorporation({
+    propertyValue,
+    purchasePrice,
+    annualRentalIncome,
+    mortgageInterest,
+    taxBand,
+  });
 
-  const totalUpfrontCost = cgtCost + sdltCost;
-  
-  const personalTaxableProfit = annualRentalIncome;
-  const personalTaxRate = taxBand === "basic" ? 0.20 : taxBand === "higher" ? 0.40 : 0.45;
-  const personalTaxBeforeCredit = personalTaxableProfit * personalTaxRate;
-  const section24Credit = mortgageInterest * 0.20;
-  const personalTax = personalTaxBeforeCredit - section24Credit;
-  
-  const companyProfit = Math.max(0, annualRentalIncome - mortgageInterest);
-  const corporationTax = companyProfit * 0.19;
-  const dividendAfterCorpTax = companyProfit - corporationTax;
-  const dividendTaxRate = taxBand === "basic" ? 0.0875 : taxBand === "higher" ? 0.3375 : 0.3935;
-  const dividendTax = dividendAfterCorpTax * dividendTaxRate;
-  const totalCompanyTax = corporationTax + dividendTax;
-  
-  const annualSaving = personalTax - totalCompanyTax;
-  const breakEvenYears = annualSaving > 0 ? totalUpfrontCost / annualSaving : 999;
+  const cgtCost = res.cgtCost;
+  const sdltCost = res.sdltCost;
+  const totalUpfrontCost = res.totalUpfrontCost;
+  const annualSaving = res.annualSaving;
+  const breakEvenYears = res.breakEvenYears;
+  const effectiveCgtRate = res.capitalGain > 0 ? (res.cgtCost / res.capitalGain) * 100 : 0;
 
   return (
     <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
@@ -152,7 +144,7 @@ export function IncorporationCostCalculator({ variant = "page" }: { variant?: "p
             </div>
             <div className="mt-3 sm:mt-4 space-y-2 text-xs sm:text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-400">CGT ({(cgtRate * 100).toFixed(0)}%)</span>
+                <span className="text-slate-400">CGT ({effectiveCgtRate.toFixed(0)}%)</span>
                 <span className="font-semibold text-slate-300">£{cgtCost.toLocaleString("en-GB", { maximumFractionDigits: 0 })}</span>
               </div>
               <div className="flex justify-between">
