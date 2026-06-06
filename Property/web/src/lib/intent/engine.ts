@@ -3,8 +3,15 @@
  * context of already-captured signals, decide what (if anything) each surface
  * should show. Kept import-light + side-effect-free so it is trivially testable
  * and safe in the client bundle. Measurement/track() lives in the provider.
+ *
+ * Substantive offers (not just a copy swap): every action now carries a matched
+ * ASSET (an `offer`) chosen from BEHAVIOUR + intent, pointing at a real live
+ * resource — the topic's interactive calculator (/calculators/<slug>), its gated
+ * guide + Excel (/resources/<topic>), or a specialist (/contact). The surfaces
+ * render the offer (title + blurb + reason + button to offer.href).
  */
 import { getTopic, type TopicKey } from "./taxonomy";
+import { resourceForTopic, isGuideEnabled } from "@/lib/resources/registry";
 
 export type Surface =
   | "hero_cta"
@@ -24,6 +31,22 @@ export type IntentContext = {
   isMobile: boolean;
 };
 
+/** The matched asset a surface should promote — a real, live resource. */
+export type OfferKind = "tool" | "guide" | "specialist";
+
+export type IntentOffer = {
+  /** which kind of asset this is (also stamped onto events as `content`). */
+  kind: OfferKind;
+  /** headline shown on the surface. */
+  title: string;
+  /** one-line supporting copy. */
+  blurb: string;
+  /** where the button goes (a real route: calculator / resource / contact). */
+  href: string;
+  /** the behaviour-derived "why you're seeing this" line. */
+  reason: string;
+};
+
 export type IntentAction = {
   ruleId: string;
   surface: Surface;
@@ -33,17 +56,95 @@ export type IntentAction = {
   calculatorSlug: string | null;
   resourceId: string | null;
   variant: string; // for A/B + measurement
+  /** the substantive, behaviour-matched asset this action promotes. */
+  offer: IntentOffer;
 };
 
 // Thresholds (tuned conservatively; easy to A/B later).
-const ENGAGED_ESCALATE_MS = 90_000;
-const SCROLL_ESCALATE_PCT = 60;
-const SCROLL_MODAL_PCT = 70;
+const ENGAGED_ESCALATE_MS = 90_000; // deeply engaged -> offer a specialist
+const ENGAGED_GUIDE_MS = 60_000; // engaged reader -> offer the full guide
+const SCROLL_ESCALATE_PCT = 60; // "deep into the page" threshold
+const SCROLL_MODAL_PCT = 70; // deep-scroll modal trigger
+
+/** True if the topic has a published, gated guide at /resources/<topic>. */
+function hasGuide(topicKey: TopicKey): boolean {
+  return isGuideEnabled(resourceForTopic(topicKey));
+}
+
+/** Build the "tool" offer (the topic's interactive calculator). */
+function toolOffer(topicKey: TopicKey): IntentOffer | null {
+  const t = getTopic(topicKey);
+  if (!t || !t.primaryCalculator) return null;
+  const label = t.label.toLowerCase();
+  return {
+    kind: "tool",
+    title: t.ctaCopy,
+    blurb: `Run your own numbers on ${label} in a couple of minutes.`,
+    href: `/calculators/${t.primaryCalculator}`,
+    reason: "Most-used tool for this topic",
+  };
+}
+
+/** Build the "guide" offer (the gated guide + Excel at /resources/<topic>). */
+function guideOffer(
+  topicKey: TopicKey,
+  reason = "You're deep into this — here's the complete guide + Excel",
+): IntentOffer | null {
+  if (!hasGuide(topicKey)) return null;
+  const t = getTopic(topicKey);
+  if (!t) return null;
+  const label = t.label.toLowerCase();
+  return {
+    kind: "guide",
+    title: `The complete ${label} guide`,
+    blurb: `Get the full ${label} model + worked examples (free).`,
+    href: `/resources/${topicKey}`,
+    reason,
+  };
+}
+
+/** Build the "specialist" offer (a human, routed via /contact). */
+function specialistOffer(topicKey: TopicKey): IntentOffer {
+  const t = getTopic(topicKey);
+  const label = (t?.label ?? "property tax").toLowerCase();
+  return {
+    kind: "specialist",
+    title: `Speak to a ${label} specialist`,
+    blurb: "Get your specific position checked by a property tax specialist.",
+    href: "/contact",
+    reason: "You've spent real time here — a specialist can confirm your position",
+  };
+}
+
+/**
+ * Behaviour + intent -> the single best offer for this visitor on this topic.
+ * Escalation ladder (most-engaged first):
+ *  - deeply engaged & unconverted  -> specialist
+ *  - engaged reader                -> the full guide + Excel (if published)
+ *  - light browser                 -> the interactive tool
+ * Falls back down the ladder when the richer asset doesn't exist for the topic.
+ */
+function pickOffer(topicKey: TopicKey, ctx: IntentContext): IntentOffer | null {
+  const deeplyEngaged =
+    ctx.engagedMs >= ENGAGED_ESCALATE_MS && ctx.scrollPct >= SCROLL_ESCALATE_PCT;
+  const engagedReader =
+    ctx.scrollPct >= SCROLL_ESCALATE_PCT || ctx.engagedMs >= ENGAGED_GUIDE_MS;
+
+  if (deeplyEngaged && !ctx.converted) {
+    return specialistOffer(topicKey);
+  }
+  if (engagedReader) {
+    return guideOffer(topicKey) ?? toolOffer(topicKey) ?? specialistOffer(topicKey);
+  }
+  // Light browser: the interactive tool (fall back to guide, then specialist).
+  return toolOffer(topicKey) ?? guideOffer(topicKey) ?? specialistOffer(topicKey);
+}
 
 function build(
   surface: Surface,
   ruleId: string,
   topicKey: TopicKey | null,
+  offer: IntentOffer,
   override?: Partial<IntentAction>,
 ): IntentAction | null {
   const t = getTopic(topicKey);
@@ -53,10 +154,11 @@ function build(
     surface,
     topic: t.key,
     label: t.label,
-    ctaCopy: t.ctaCopy,
+    ctaCopy: offer.title,
     calculatorSlug: t.primaryCalculator,
     resourceId: t.resourceId,
     variant: "default",
+    offer,
     ...override,
   };
 }
@@ -70,34 +172,50 @@ export function evaluate(surface: Surface, ctx: IntentContext): IntentAction | n
     case "hero_cta":
     case "sticky_cta": {
       if (ctx.converted) return null; // never nag someone who already converted
-      // Escalate to a specialist after deep, unconverted engagement.
-      if (
-        primary &&
-        ctx.engagedMs >= ENGAGED_ESCALATE_MS &&
-        ctx.scrollPct >= SCROLL_ESCALATE_PCT
-      ) {
-        const t = getTopic(primary)!;
-        return build(surface, "escalate_specialist", primary, {
-          ctaCopy: `Speak to a ${t.label.toLowerCase()} specialist`,
-          variant: "escalate",
-        });
-      }
-      return build(surface, "topic_cta", primary);
+      if (!primary) return null;
+      const offer = pickOffer(primary, ctx);
+      if (!offer) return null;
+      const ruleId =
+        offer.kind === "specialist"
+          ? "escalate_specialist"
+          : offer.kind === "guide"
+            ? "engaged_guide"
+            : "topic_cta";
+      const variant = offer.kind === "specialist" ? "escalate" : "default";
+      return build(surface, ruleId, primary, offer, { variant });
     }
 
-    case "next_step":
+    case "next_step": {
       // End-of-article: always tied to the CURRENT page's topic.
-      return build(surface, "topic_next_step", ctx.pageTopic);
+      if (!ctx.pageTopic) return null;
+      const offer = pickOffer(ctx.pageTopic, ctx);
+      if (!offer) return null;
+      return build(surface, "topic_next_step", ctx.pageTopic, offer);
+    }
 
     case "deep_scroll_modal": {
       if (ctx.converted) return null;
       if (ctx.scrollPct < SCROLL_MODAL_PCT) return null;
-      return build(surface, "deep_scroll_offer", ctx.pageTopic);
+      if (!ctx.pageTopic) return null;
+      const offer = pickOffer(ctx.pageTopic, ctx);
+      if (!offer) return null;
+      return build(surface, "deep_scroll_offer", ctx.pageTopic, offer);
     }
 
     case "returning_bar": {
       if (ctx.converted || !ctx.returning) return null;
-      return build(surface, "returning_welcome", ctx.lastTopic ?? ctx.entryTopic);
+      // Resume their last topic — point them at its guide (the deepest asset)
+      // so a return visit picks up where they left off, not back at square one.
+      const resume = ctx.lastTopic ?? ctx.entryTopic;
+      if (!resume) return null;
+      const offer =
+        guideOffer(
+          resume,
+          "Pick up where you left off — the full guide + Excel",
+        ) ??
+        toolOffer(resume) ??
+        specialistOffer(resume);
+      return build(surface, "returning_welcome", resume, offer);
     }
   }
 }

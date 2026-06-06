@@ -37,18 +37,35 @@ let listenersBound = false;
  * Events fired before configureAnalytics() has run (React fires child effects
  * before parent effects, so a deeply-nested mount effect like the calculator's
  * calc_view can call track() a tick before AnalyticsProvider sets the siteKey).
- * We hold those here and replay them the instant the site key arrives, so the
- * very first view is never silently dropped.
+ * We hold those here and replay them, in order, the instant the site key
+ * arrives, so the very first view is never silently dropped.
+ *
+ * Cap is generous (a real page fires only a handful of pre-config events) so the
+ * calc_view can never be evicted by noisier auto-capture events that race ahead
+ * of it. A dev-only warning fires if we ever hit the cap, so the regression that
+ * caused calc_view=0 (buffer overflow before replay) is caught in QA.
  */
 let pending: Array<{ eventName: EventName; props: EventProps }> = [];
-const MAX_PENDING = 20;
+const MAX_PENDING = 100;
+/** Dedupe key for the buffer: only collapses events that carry a slug (the
+ * idempotent "view" events — a calc_view for the same tool should be queued
+ * once even if a StrictMode double-invoke / re-mount fires it twice pre-config).
+ * Events without a slug (clicks, scroll, etc.) are never deduped. */
+function pendingDedupeKey(eventName: EventName, props: EventProps): string | null {
+  const slug = props.calculator_slug;
+  if (typeof slug !== "string" || slug.length === 0) return null;
+  return `${eventName}::${slug}`;
+}
 
 /** Called once by AnalyticsProvider with the site/embed context. */
 export function configureAnalytics(next: AnalyticsConfig): void {
   const hadKey = !!config.siteKey;
   config = next;
   bindLifecycleFlush();
-  // First time we learn the site key: replay anything captured before boot.
+  // First time we learn the site key: replay everything captured before boot,
+  // in the order it arrived. Swap the buffer out *before* replaying so any
+  // re-entrant track() (now that the key is set) takes the normal queue path
+  // and can't recurse back into the buffer.
   if (!hadKey && config.siteKey && pending.length > 0) {
     const replay = pending;
     pending = [];
@@ -89,7 +106,26 @@ export function track(eventName: EventName, props: EventProps = {}): void {
     // Not configured yet (effect ordering race). Buffer and replay on configure
     // rather than dropping the event. Capped so a never-configured page (e.g. an
     // opted-out/embed context that bails before configure) can't grow unbounded.
-    if (pending.length < MAX_PENDING) pending.push({ eventName, props });
+    const dedupeKey = pendingDedupeKey(eventName, props);
+    if (
+      dedupeKey !== null &&
+      pending.some((p) => pendingDedupeKey(p.eventName, p.props) === dedupeKey)
+    ) {
+      // An identical (event + calculator_slug) is already buffered — e.g. a
+      // StrictMode double-invoke or re-mount firing calc_view twice before the
+      // site key lands. Keep the first; don't double-count the view.
+      return;
+    }
+    if (pending.length < MAX_PENDING) {
+      pending.push({ eventName, props });
+    } else if (process.env.NODE_ENV !== "production") {
+      // We dropped a pre-config event. On a real page this should never happen;
+      // if it does, a view (e.g. calc_view) may be lost — surface it in QA.
+      console.warn(
+        `[analytics] pre-config buffer full (${MAX_PENDING}); dropping "${eventName}". ` +
+          `Event fired before configureAnalytics(); it will not be sent.`,
+      );
+    }
     return;
   }
 

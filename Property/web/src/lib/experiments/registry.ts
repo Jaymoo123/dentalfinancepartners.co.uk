@@ -21,15 +21,21 @@ export type Experiment = {
 };
 
 export const EXPERIMENTS: Experiment[] = [
-  // Example (kept off so it changes nothing live):
-  // {
-  //   key: "sticky_cta_copy",
-  //   status: "off",
-  //   variants: [
-  //     { id: "control", weight: 50 },
-  //     { id: "v2", weight: 50 },
-  //   ],
-  // },
+  // Behaviour-driven personalisation vs the plain generic experience.
+  //  - control   (~25%): personalisation suppressed (IntentProvider yields no
+  //               actions / useIntent returns null) -> the generic site.
+  //  - treatment (~75%): the Part-A behaviour-matched offers (tool/guide/specialist).
+  // The arm is registered in IntentProvider so props.exp = "personalization:<arm>"
+  // is stamped on every event; vw_experiment_results + the Experiments dashboard
+  // panel then show personalization:control vs personalization:treatment.
+  {
+    key: "personalization",
+    status: "running",
+    variants: [
+      { id: "control", weight: 25 },
+      { id: "treatment", weight: 75 },
+    ],
+  },
 ];
 
 /** A running experiment by key, or null (unknown / off). */

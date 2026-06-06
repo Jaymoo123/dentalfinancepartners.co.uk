@@ -55,12 +55,16 @@ function tally(rows: VisitorJourney[], key: keyof VisitorJourney): Array<[string
 function personalizationHint(ruleId: string, topicKey: string): string {
   const topic = getTopic(topicKey);
   if (!topic) return "—";
+  const label = topic.label.toLowerCase();
   switch (ruleId) {
     case "escalate_specialist":
-      return `Speak to a ${topic.label} specialist`;
+      return `Speak to a ${label} specialist`;
+    case "engaged_guide":
+      return `The complete ${label} guide (+ Excel)`;
+    case "returning_welcome":
+      return `Pick up where you left off — ${label}`;
     case "topic_cta":
     case "deep_scroll_offer":
-    case "returning_welcome":
     case "topic_next_step":
       return topic.ctaCopy;
     default:
@@ -256,8 +260,16 @@ export default async function AdminAnalyticsPage({
       </div>
 
       {/* Personalization */}
-      <h2 className="mt-10 text-lg font-bold text-slate-900">Personalization</h2>
-      <p className="text-xs text-slate-500">How the intent-tailored surfaces perform (human-only). Shown→Lead needs the conversion stitch live.</p>
+      <h2 className="mt-10 text-lg font-bold text-slate-900">Personalization (live A/B)</h2>
+      <p className="text-xs text-slate-500">
+        Behaviour-driven offers (tool / guide / specialist) run as a live A/B: <strong>control (~25%)</strong> gets the
+        plain generic site, <strong>treatment (~75%)</strong> gets the matched offer. The table below shows how each
+        treatment surface performs (human-only). For the head-to-head conversion lift of control vs treatment, see the{" "}
+        <a href="#experiments" className="font-semibold text-emerald-700 underline">Experiments panel</a>{" "}
+        (row <code className="rounded bg-slate-100 px-1">personalization:treatment</code> vs{" "}
+        <code className="rounded bg-slate-100 px-1">personalization:control</code>). Directional until enough data
+        accrues for significance.
+      </p>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -294,8 +306,14 @@ export default async function AdminAnalyticsPage({
       {/* Experiments */}
       {experiments.length > 0 && (
         <>
-          <h2 className="mt-10 text-lg font-bold text-slate-900">Experiments</h2>
-          <p className="text-xs text-slate-500">A/B results from first-party events (directional; significance needs volume).</p>
+          <h2 id="experiments" className="mt-10 scroll-mt-20 text-lg font-bold text-slate-900">Experiments</h2>
+          <p className="text-xs text-slate-500">
+            A/B results from first-party events (directional; significance needs volume). The{" "}
+            <code className="rounded bg-slate-100 px-1">personalization</code> experiment compares{" "}
+            <code className="rounded bg-slate-100 px-1">control</code> (~25%, generic site) against{" "}
+            <code className="rounded bg-slate-100 px-1">treatment</code> (~75%, behaviour-driven offers); a higher
+            treatment conversion is the personalisation lift.
+          </p>
           <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
             <table className="w-full text-sm">
               <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">

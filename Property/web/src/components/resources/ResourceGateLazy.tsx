@@ -1,22 +1,20 @@
-"use client";
-
 /**
- * Thin client wrapper that lazy-loads the (heavy) ResourceGate via next/dynamic.
+ * SSR-renderable wrapper around the email-gate ResourceGate.
  *
- * It exists so SERVER components (e.g. BlogPostRenderer) can reference the gate
- * without statically importing the lead-form / Supabase code into the route's
- * client bundle. The real ResourceGate is only fetched when actually rendered —
- * i.e. when a category asset is enabled. Phase A: never rendered → never fetched
- * → the blog bundle is unchanged.
+ * IMPORTANT (visibility fix): the gate is rendered as a NORMAL client component
+ * (server-rendered shell + hydrate), NOT `dynamic(ssr:false)`. That guarantees
+ * the email-gate form markup is present in the page's server HTML (verifiable
+ * with curl/grep) and can never silently vanish on a client-side import failure.
+ * The form is light (no recharts / heavy deps), so there is no bundle reason to
+ * defer it. ResourceGate itself is SSR-safe (its only window access is inside a
+ * useEffect).
+ *
+ * This file is intentionally a thin pass-through so the import sites
+ * (BlogPostRenderer, CalculatorPageResources) keep a single, stable entry point.
  */
-import dynamic from "next/dynamic";
+import { ResourceGate } from "@/components/resources/ResourceGate";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import type { GateCopy } from "@/lib/resources/copy";
-
-const ResourceGate = dynamic(
-  () => import("@/components/resources/ResourceGate").then((m) => m.ResourceGate),
-  { ssr: false },
-);
 
 export function ResourceGateLazy({ topic, copy }: { topic: TopicKey; copy: GateCopy }) {
   return <ResourceGate topic={topic} copy={copy} />;

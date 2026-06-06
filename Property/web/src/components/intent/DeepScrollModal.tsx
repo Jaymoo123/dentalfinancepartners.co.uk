@@ -9,7 +9,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
-import { getTopic } from "@/lib/intent/taxonomy";
 
 const SUPPRESS_DAYS = 30;
 const suppressKey = (topic: string) => `ptp_deepscroll_${topic}`;
@@ -51,13 +50,29 @@ export function DeepScrollModal() {
   }, [action, open]);
 
   if (!open || !action) return null;
-  const topic = getTopic(action.topic);
-  const href = action.calculatorSlug ? `/calculators/${action.calculatorSlug}` : "/contact";
+  const offer = action.offer;
+  // Secondary action: always a route to a specialist, unless the primary offer
+  // already IS the specialist (then the secondary is the topic's calculator).
+  const secondaryHref =
+    offer.kind === "specialist" && action.calculatorSlug
+      ? `/calculators/${action.calculatorSlug}`
+      : "/contact";
+  const secondaryLabel =
+    offer.kind === "specialist" && action.calculatorSlug
+      ? "Open the calculator instead"
+      : "Talk to a specialist";
 
   const close = (dismiss: boolean) => {
     setOpen(false);
     if (dismiss) trackPersonalization("dismissed", action);
   };
+
+  const primaryLabel =
+    offer.kind === "tool"
+      ? "Open the calculator"
+      : offer.kind === "guide"
+        ? "Get the free guide"
+        : "Talk to a specialist";
 
   return (
     <div
@@ -71,9 +86,7 @@ export function DeepScrollModal() {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">
-          <h2 className="text-lg font-bold text-slate-900">
-            Still working through {topic ? topic.label.toLowerCase() : "this"}?
-          </h2>
+          <h2 className="text-lg font-bold text-slate-900">{offer.title}</h2>
           <button
             type="button"
             aria-label="Close"
@@ -84,13 +97,13 @@ export function DeepScrollModal() {
             &times;
           </button>
         </div>
-        <p className="mt-2 text-sm text-slate-600">
-          Run your own numbers in a couple of minutes, or get a property tax
-          specialist to check your position.
+        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+          {offer.reason}
         </p>
+        <p className="mt-2 text-sm text-slate-600">{offer.blurb}</p>
         <div className="mt-5 flex flex-col gap-2">
           <Link
-            href={href}
+            href={offer.href}
             data-cta="deep_scroll_modal"
             onClick={() => {
               trackPersonalization("clicked", action);
@@ -98,17 +111,17 @@ export function DeepScrollModal() {
             }}
             className="rounded-lg bg-emerald-600 px-4 py-2.5 text-center font-semibold text-white hover:bg-emerald-700"
           >
-            {action.ctaCopy}
+            {primaryLabel}
           </Link>
           <Link
-            href="/contact"
+            href={secondaryHref}
             onClick={() => {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
             className="rounded-lg border border-slate-200 px-4 py-2.5 text-center font-semibold text-slate-700 hover:bg-slate-50"
           >
-            Talk to a specialist
+            {secondaryLabel}
           </Link>
         </div>
       </div>

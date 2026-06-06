@@ -102,6 +102,59 @@ function splitContentAtMidScroll(html: string): { before: string; after: string 
   return { before: html.slice(0, target.index), after: html.slice(target.index) };
 }
 
+/**
+ * EARLY split for the premium-tool / resource islands. Splits at the FIRST h2
+ * (~20-25% into most articles) so the value-add tool lifts dwell time before the
+ * 57%-of-visitors-bounce-at-25%-scroll wall. Falls back to after the first ~2
+ * paragraphs when there is no h2, and to the whole article (append at end) when
+ * there is no usable break at all — so EVERY post can be injected into.
+ */
+function splitContentEarly(html: string): { before: string; after: string } {
+  const firstH2 = html.search(/<h2[^>]*>/);
+  if (firstH2 > 0) {
+    return { before: html.slice(0, firstH2), after: html.slice(firstH2) };
+  }
+  // No h2: break after the 2nd closing </p> so the tool still lands early.
+  const paragraphRe = /<\/p>/g;
+  let m: RegExpExecArray | null;
+  let count = 0;
+  let cut = -1;
+  while ((m = paragraphRe.exec(html)) !== null) {
+    count += 1;
+    if (count === 2) {
+      cut = m.index + m[0].length;
+      break;
+    }
+  }
+  if (cut > 0 && cut < html.length) {
+    return { before: html.slice(0, cut), after: html.slice(cut) };
+  }
+  // No usable break: render the whole article first, append the island at the end.
+  return { before: html, after: "" };
+}
+
+/**
+ * Find a SECOND, later split point in the post-early-tool remainder for the email
+ * gate, so the tool (value) lands first and the gate (ask) lands a step later.
+ * Targets a heading roughly half-way through the remainder. Returns after=null
+ * when the remainder has no further heading, in which case the caller drops the
+ * gate directly under the tool instead.
+ */
+function splitRemainderForGate(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  // Need at least 2 headings in the remainder to place the gate at a natural
+  // break that is clearly below the tool.
+  if (headings.length < 2) {
+    return { before: html, after: null };
+  }
+  const targetIdx = Math.max(1, Math.floor(headings.length * 0.5));
+  const target = headings[targetIdx];
+  if (target?.index === undefined) {
+    return { before: html, after: null };
+  }
+  return { before: html.slice(0, target.index), after: html.slice(target.index) };
+}
+
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
@@ -110,17 +163,27 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
 
   const decoratedHtml = decorateAsides(post.contentHtml);
-  const { before, after } = splitContentAtMidScroll(decoratedHtml);
 
   // Premium tools + gated resources (additive, SEO-safe). Resolve the topic from
   // the URL category SLUG (not the human label). The premium island and the
-  // resource gate only appear once a category is actually enabled — until then
-  // (Phase A) these flags are false and the page renders exactly as before, i.e.
-  // the existing InlineMiniLeadForm at the mid-scroll split, nothing new.
+  // resource gate only appear once a category is actually enabled.
   const topic = topicForBlogSlug(categorySlug);
   const hasPremium = topic ? hasPremiumTool(resourceForTopic(topic)?.toolId) : false;
   const hasGate = topic ? hasEnabledResource(topic) : false;
   const showPremiumIslands = !!topic && (hasPremium || hasGate);
+
+  // Tiered, EARLY placement of the resource module:
+  //  - When a topic has an enabled tool/gate, inject the interactive TOOL early
+  //    (after the first h2, ~20-25% in) so it lifts dwell before the scroll wall,
+  //    then place the email GATE a step later (a second, lower break) — or, when
+  //    there is no later break, directly under the tool. We ALWAYS inject (the
+  //    early split has an end-of-article fallback) so short/<4-h2 posts get it too.
+  //  - When the topic has NO enabled tool/gate, fall back to the existing
+  //    InlineMiniLeadForm at the mid-scroll split (unchanged behaviour).
+  const earlySplit = showPremiumIslands ? splitContentEarly(decoratedHtml) : null;
+  const gateSplit =
+    earlySplit && hasGate ? splitRemainderForGate(earlySplit.after) : null;
+  const fallbackSplit = showPremiumIslands ? null : splitContentAtMidScroll(decoratedHtml);
 
   const ctaCopy: CTACopy = CTA_BY_CATEGORY[post.category] ?? {
     heading: niche.blog.cta_heading,
@@ -230,24 +293,46 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               ) : null}
 
               <div className="article-body prose-blog mt-10">
-                <div dangerouslySetInnerHTML={{ __html: before }} />
-                {after ? (
+                {showPremiumIslands && topic && earlySplit ? (
                   <>
-                    {showPremiumIslands && topic ? (
+                    {/* Content up to the first h2 (~20-25% in). */}
+                    <div dangerouslySetInnerHTML={{ __html: earlySplit.before }} />
+
+                    {/* EARLY: the interactive premium tool (value → lifts dwell). */}
+                    {hasPremium ? <PremiumUpgrade topic={topic} /> : null}
+
+                    {gateSplit && gateSplit.after ? (
                       <>
-                        {hasPremium ? <PremiumUpgrade topic={topic} /> : null}
-                        {hasGate ? (
-                          <ResourceGateLazy topic={topic} copy={gateCopy(topic, post.title)} />
-                        ) : (
-                          <InlineMiniLeadForm topic={post.category} />
-                        )}
+                        {/* More content between the tool and the gate. */}
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
+                        {/* A STEP LATER: the email gate (ask). */}
+                        <ResourceGateLazy topic={topic} copy={gateCopy(topic, post.title)} />
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
                       </>
                     ) : (
-                      <InlineMiniLeadForm topic={post.category} />
+                      <>
+                        {/* No later break: gate goes directly under the tool, then
+                            the rest of the article. */}
+                        {hasGate ? (
+                          <ResourceGateLazy topic={topic} copy={gateCopy(topic, post.title)} />
+                        ) : null}
+                        <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
+                      </>
                     )}
-                    <div dangerouslySetInnerHTML={{ __html: after }} />
                   </>
-                ) : null}
+                ) : (
+                  <>
+                    {/* No enabled tool/gate for this topic: original behaviour —
+                        the InlineMiniLeadForm at the mid-scroll split. */}
+                    <div dangerouslySetInnerHTML={{ __html: fallbackSplit?.before ?? decoratedHtml }} />
+                    {fallbackSplit?.after ? (
+                      <>
+                        <InlineMiniLeadForm topic={post.category} />
+                        <div dangerouslySetInnerHTML={{ __html: fallbackSplit.after }} />
+                      </>
+                    ) : null}
+                  </>
+                )}
               </div>
 
               {isMTDPost ? (

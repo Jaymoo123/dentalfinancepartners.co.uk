@@ -20,14 +20,26 @@ export function Calculator({
   slug: string;
   variant?: "page" | "embed";
 }) {
+  // Resolved synchronously from a static registry, so `tool` is never briefly
+  // undefined for a valid slug: it's the same stable reference on every render,
+  // which keeps the calc_view effect below firing exactly once.
   const tool = getGenericTool(slug);
   const [values, setValues] = useState<CalcValues>(() => (tool ? defaultValues(tool.fields) : {}));
   const interactedRef = useRef(false);
+  const viewedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // calc_view once per mounted tool (no-ops without consent / inside embeds).
+  // calc_view once per resolved tool. The ref makes "exactly once" hold even if
+  // the effect is re-invoked (React StrictMode double-mount / Fast Refresh), so
+  // the view is fired precisely once and uses the SAME slug as calc_computed
+  // below — so the dashboard reconciles views against computes for a tool.
+  // track() buffers this until configureAnalytics() lands, so it can't be lost
+  // to the provider/child effect-ordering race. No-ops without consent.
   useEffect(() => {
-    if (tool) track("calc_view", { calculator_slug: tool.slug, variant });
+    if (tool && !viewedRef.current) {
+      viewedRef.current = true;
+      track("calc_view", { calculator_slug: tool.slug, variant });
+    }
     return () => {
       if (computeTimer.current) clearTimeout(computeTimer.current);
     };

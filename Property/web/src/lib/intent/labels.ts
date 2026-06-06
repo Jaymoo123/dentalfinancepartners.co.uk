@@ -13,7 +13,8 @@
 
 /** rule_id (from engine.ts `build(... ruleId ...)`) -> human label. */
 export const RULE_LABELS: Record<string, string> = {
-  topic_cta: "Topic-matched CTA",
+  topic_cta: "Tool offer (topic-matched)",
+  engaged_guide: "Guide offer (engaged reader)",
   escalate_specialist: "Specialist escalation",
   deep_scroll_offer: "Deep-scroll offer",
   returning_welcome: "Returning greeting",

@@ -9,7 +9,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
-import { getTopic } from "@/lib/intent/taxonomy";
 
 const DISMISS_KEY = "ptp_returning_bar_dismissed";
 
@@ -34,24 +33,23 @@ export function ReturningBar() {
   }, [action, dismissed]);
 
   if (!action || dismissed) return null;
-  const topic = getTopic(action.topic);
-  const href = action.calculatorSlug ? `/calculators/${action.calculatorSlug}` : "/contact";
+  const offer = action.offer;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-emerald-700 bg-emerald-900 text-white shadow-2xl">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 text-sm">
-        <span>
-          Welcome back. Pick up where you left off with{" "}
-          {topic ? topic.label.toLowerCase() : "your property tax"}.
+        <span className="min-w-0">
+          <span className="font-semibold">Welcome back. {offer.reason}.</span>{" "}
+          <span className="hidden text-emerald-200 sm:inline">{offer.blurb}</span>
         </span>
         <div className="flex shrink-0 items-center gap-3">
           <Link
-            href={href}
+            href={offer.href}
             data-cta="returning_bar"
             onClick={() => trackPersonalization("clicked", action)}
             className="rounded bg-white px-3 py-1.5 font-semibold text-emerald-900 hover:bg-emerald-50"
           >
-            {action.ctaCopy}
+            {offer.title}
           </Link>
           <button
             type="button"

@@ -21,8 +21,16 @@ import { getMaxScrollPct, getEngagedMs } from "@/lib/analytics/autoCapture";
 import { evaluate, type IntentAction, type IntentContext, type Surface } from "@/lib/intent/engine";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import { ruleLabel } from "@/lib/intent/labels";
+import { getVisitorId } from "@/lib/analytics/ids";
+import { assignVariant } from "@/lib/experiments/assign";
+import { setActiveExperiment } from "@/lib/experiments/active";
+
+/** The personalization A/B: control gets the plain generic experience. */
+const PERSONALIZATION_EXP = "personalization";
 
 const Ctx = createContext<IntentContext | null>(null);
+/** The visitor's personalization A/B arm ("control" | "treatment" | null). */
+const ArmCtx = createContext<string | null>(null);
 
 export function IntentProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -34,8 +42,23 @@ export function IntentProvider({ children }: { children: React.ReactNode }) {
 
   const [mounted, setMounted] = useState(false);
   const [signals, setSignals] = useState({ scrollPct: 0, engagedMs: 0 });
+  // A/B arm for the personalization experiment. null until assigned after mount
+  // (SSR-safe). "control" => suppress personalisation entirely; "treatment" =>
+  // run the Part-A behaviour-driven offers.
+  const [arm, setArm] = useState<string | null>(null);
 
   useEffect(() => setMounted(true), []);
+
+  // Assign the visitor to the running personalization experiment and register
+  // the assignment so track() stamps props.exp = "personalization:control|treatment"
+  // onto EVERY event (the Experiments dashboard then shows the split automatically).
+  useEffect(() => {
+    const v = assignVariant(getVisitorId() || "", PERSONALIZATION_EXP);
+    if (v) {
+      setActiveExperiment(PERSONALIZATION_EXP, v);
+      setArm(v);
+    }
+  }, []);
 
   // Poll live scroll/engagement on a low-frequency tick (drives the deep-scroll
   // modal + specialist escalation). Only updates state when a value moved.
@@ -67,13 +90,34 @@ export function IntentProvider({ children }: { children: React.ReactNode }) {
     };
   }, [active, pathname, mounted, signals]);
 
-  return <Ctx.Provider value={ctx}>{children}</Ctx.Provider>;
+  return (
+    <ArmCtx.Provider value={arm}>
+      <Ctx.Provider value={ctx}>{children}</Ctx.Provider>
+    </ArmCtx.Provider>
+  );
 }
 
-/** Resolved action for a surface (null = render the generic, non-tailored version). */
+/**
+ * Resolved action for a surface (null = render the generic, non-tailored version).
+ *
+ * A/B gate: when the visitor is in the experiment CONTROL arm we suppress
+ * personalisation entirely and return null, so control sees the plain generic
+ * experience. Treatment (and visitors not assigned to the experiment) get the
+ * behaviour-driven offer. Either way, props.exp is already stamped on events, so
+ * the Experiments panel measures control vs treatment conversion.
+ */
 export function useIntent(surface: Surface): IntentAction | null {
   const ctx = useContext(Ctx);
-  return useMemo(() => (ctx ? evaluate(surface, ctx) : null), [ctx, surface]);
+  const arm = useContext(ArmCtx);
+  return useMemo(() => {
+    if (arm === "control") return null; // suppressed for the control arm
+    return ctx ? evaluate(surface, ctx) : null;
+  }, [ctx, surface, arm]);
+}
+
+/** The visitor's personalization A/B arm ("control" | "treatment" | null). */
+export function usePersonalizationArm(): string | null {
+  return useContext(ArmCtx);
 }
 
 export function useIntentContext(): IntentContext | null {
@@ -98,8 +142,11 @@ export function trackPersonalization(
     variant: a.variant,
     // What the visitor actually saw (the rendered headline/CTA copy) + a human
     // rule name, so the dashboard journey reads in plain English without having
-    // to re-derive it from rule_id/topic.
-    content: a.ctaCopy,
+    // to re-derive it from rule_id/topic. `content` now carries the matched
+    // asset kind (tool/guide/specialist) so we can see which offer converts.
+    content: `${a.offer.kind}: ${a.offer.title}`,
+    offer_kind: a.offer.kind,
+    offer_href: a.offer.href,
     label: ruleLabel(a.ruleId),
   });
 }

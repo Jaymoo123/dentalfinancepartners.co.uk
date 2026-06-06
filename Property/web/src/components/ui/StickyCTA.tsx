@@ -48,13 +48,21 @@ export function StickyCTA({
 
   if (dismissed) return null;
 
-  // Intent-tailored copy + destination (in-place swap, no layout shift). Falls
-  // back to the generic niche CTA when the page has no topic.
-  const useCalc = !!action && action.variant !== "escalate" && !!action.calculatorSlug;
-  const ctaHref = action ? (useCalc ? `/calculators/${action.calculatorSlug}` : "/contact") : href;
-  const primaryText = action ? action.ctaCopy : (primary ?? niche.cta.sticky_primary);
-  const secondaryText = secondary ?? niche.cta.sticky_secondary;
-  const button = action ? (useCalc ? "Open the calculator" : niche.cta.sticky_button) : (buttonLabel ?? niche.cta.sticky_button);
+  // Substantive, behaviour-matched offer (in-place swap, no layout shift). The
+  // offer points at a REAL asset — the topic's calculator, its gated guide +
+  // Excel, or a specialist. Falls back to the generic niche CTA when the page has
+  // no topic (or the visitor is in the control arm, where action is null).
+  const offer = action?.offer ?? null;
+  const ctaHref = offer ? offer.href : href;
+  const primaryText = offer ? offer.title : (primary ?? niche.cta.sticky_primary);
+  const secondaryText = offer ? offer.blurb : (secondary ?? niche.cta.sticky_secondary);
+  const button = offer
+    ? offer.kind === "tool"
+      ? "Open the calculator"
+      : offer.kind === "guide"
+        ? "Get the free guide"
+        : "Talk to a specialist"
+    : (buttonLabel ?? niche.cta.sticky_button);
 
   return (
     <div
@@ -64,6 +72,11 @@ export function StickyCTA({
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-4 px-4 py-3 sm:py-4 sm:px-6 lg:px-8">
         <div className="min-w-0 flex-1 border-l-2 border-emerald-600 pl-3 sm:pl-4">
+          {offer && (
+            <p className="mb-0.5 hidden text-[11px] font-semibold uppercase tracking-wide text-emerald-400 sm:block">
+              {offer.reason}
+            </p>
+          )}
           <p className="text-xs sm:text-sm font-bold text-white lg:text-base">
             {primaryText}
           </p>
