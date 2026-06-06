@@ -31,4 +31,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits | done | robotic | 45.9 | 3.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | bed-and-breakfasting | done | robotic | 42.8 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | let-property-campaign-why-voluntary-disclosure-makes-sense | done | robotic | 54.6 | 7.3 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way | done | robotic | 38.6 | 0.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
