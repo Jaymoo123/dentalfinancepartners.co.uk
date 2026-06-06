@@ -32,4 +32,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | government-to-implement-mtd-for-it-with-lower-threshold | done | robotic | 49.9 | 5.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | mtd-itsa-overview-six-changes-residential-landlords | done | robotic | 48.9 | 1.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | commonhold-and-leasehold-reform-bill | done | robotic | 52.8 | 7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| foreign-tax-credit-uk-property-overseas-landlords | done | robotic | 36.6 | 8.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
