@@ -15,7 +15,7 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/hand-holding-house-keys-in-modern-interior-31651009/
 h1: "Gifts with Reservation of Benefit on Property: A Section 102 FA 1986 Walkthrough"
-summary: "Section 102 Finance Act 1986 is the IHT anti-avoidance rule that catches the classic 'gift your home but keep living there' scenario. This page walks through the statute subsection by subsection (s.102(1) the rule, s.102(3) the death-time deeming, s.102(4) the cessation-PET, s.102(5) the carved-out gifts), the rent-payment escape route, the narrow Sch 20 para 6 co-ownership carve-out, POAT as the back-stop where GROB doesn't bite, the IHT500 election, and how GROB interacts with BTL portfolio gifts."
+summary: "Section 102 Finance Act 1986 is the IHT anti-avoidance rule that catches the classic 'gift your home but keep living there' scenario. Here is the statute subsection by subsection (s.102(1) the rule, s.102(3) the death-time deeming, s.102(4) the cessation-PET, s.102(5) the carved-out gifts), the rent-payment escape route, the narrow Sch 20 para 6 co-ownership carve-out, POAT as the back-stop where GROB doesn't bite, the IHT500 election, and how GROB interacts with BTL portfolio gifts."
 schema: ""
 faqs:
   - question: "What does section 102 Finance Act 1986 actually say?"
@@ -51,9 +51,9 @@ reviewedAt: "2026-05-22"
 editorialNote: "Wave 2 A2 (IHT). Statute-walkthrough deep dive on s.102 FA 1986 applied to property gifts. Companion to the IHT decision framework pillar at /blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards, which references this page for the GROB mechanics. Distinct H2 structure (statute subsection-led, not decision-led) to avoid templating with A1 and the wider IHT pillar."
 ---
 
-<p>Section 102 of the Finance Act 1986 is the IHT anti-avoidance rule that catches the most common piece of bad amateur estate planning on property: gift your house to your children, carry on living in it, hope the seven-year clock runs the gift out of your estate. The rule says no. The property remains in your estate at its open-market value at the date of death, the gift was ineffective for IHT, and many years of planning are wasted. This page walks through the statute subsection by subsection, sets out the escape routes that do work (paying full market rent, the narrow Schedule 20 paragraph 6 co-ownership carve-out, the cessation-of-reservation PET under s.102(4)), explains where Pre-Owned Assets Tax steps in as the back-stop when s.102 does not bite, and applies the framework to the standard BTL portfolio gift.</p>
+<p>Gift your house to your children, carry on living in it, and hope the seven-year clock runs the gift out of your estate: it is the most common piece of bad amateur estate planning on property, and Section 102 of the Finance Act 1986 stops it dead. The property stays in your estate at its open-market value at the date of death, the gift was ineffective for IHT, and years of planning are wasted. The escape routes that genuinely work are paying full market rent, the narrow Schedule 20 paragraph 6 co-ownership carve-out, and the cessation-of-reservation PET under s.102(4). Where s.102 does not bite, Pre-Owned Assets Tax usually steps in as the back-stop. Each of those, plus how it all lands on a standard BTL portfolio gift, is below.</p>
 
-<p>For the planning context (when this matters, where it fits in the wider mitigation menu, the cost of getting it wrong), the sister page is the <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT Decision Framework for UK Landlords</a>. The CGT side of any property gift, which runs in parallel to the IHT analysis here, is at <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">CGT on Gifting Property to Family Members</a>.</p>
+<p>For when this matters, where it fits in the wider mitigation menu and the cost of getting it wrong, see the <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">IHT Decision Framework for UK Landlords</a>. Every property gift also has a CGT side running alongside the IHT analysis, covered in <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">CGT on Gifting Property to Family Members</a>.</p>
 
 <h2>The statute in one paragraph: what s.102 actually does</h2>
 
@@ -66,19 +66,19 @@ editorialNote: "Wave 2 A2 (IHT). Statute-walkthrough deep dive on s.102 FA 1986 
 
 <p>The consequence under s.102(3): property subject to a reservation immediately before death is treated for IHT purposes as property to which the donor was beneficially entitled immediately before death. It falls into the estate at its open-market value at the date of death. The lifetime gift, however dutifully documented, does not lift it out.</p>
 
-<p>The carve-outs (s.102(5)) and the cessation-PET (s.102(4)) are the two routes back to a clean gift, and the rest of the page walks through them. Section 102(8) cross-references Schedule 20 FA 1986, which contains the supplementary provisions including the para 6 co-ownership rule.</p>
+<p>The carve-outs (s.102(5)) and the cessation-PET (s.102(4)) are the two routes back to a clean gift. Section 102(8) cross-references Schedule 20 FA 1986, which holds the supplementary provisions including the para 6 co-ownership rule.</p>
 
 <h2>What "reservation of benefit" actually covers</h2>
 
 <p>Two phrases in s.102(1)(b) carry the analytical weight: "entire exclusion, or virtually to the entire exclusion" and "any benefit to him by contract or otherwise". The combined effect is broad.</p>
 
-<p>HMRC's reading, set out across IHTM14301 to IHTM14400, treats almost any continuing connection between the donor and the gifted property as a reservation. Continued occupation (the classic case). Continued receipt of rents (where the donor lets the gifted property and takes the income). Use as a holiday home. A right to occupy reserved in the deed of gift. An arrangement under which the donor pays nothing and the donee gives the donor a benefit in return for the gift. The "virtually" qualifier picks up arrangements where the donor's reserved benefit is small but is still a benefit.</p>
+<p>HMRC's reading, set out across IHTM14301 to IHTM14400, treats almost any continuing connection between you and the gifted property as a reservation: continued occupation (the classic case), continued receipt of rents where you let the gifted property and keep the income, use as a holiday home, a right to occupy reserved in the deed of gift, or an arrangement under which you pay nothing and get something back from the donee in return for the gift. The "virtually" qualifier picks up arrangements where your reserved benefit is small but is still a benefit.</p>
 
-<p>The flip side: the donee must assume "bona fide possession and enjoyment". A bare legal transfer where the donee receives no actual control, no rents, no day-to-day enjoyment of the asset, fails the s.102(1)(a) limb regardless of what the donor does or does not retain.</p>
+<p>The flip side is that the donee must assume "bona fide possession and enjoyment". A bare legal transfer where the donee gets no actual control, no rents and no day-to-day enjoyment of the asset fails the s.102(1)(a) limb regardless of what you do or do not retain.</p>
 
 <h2>The classic trap: a £600,000 home gifted, parents continue to live there</h2>
 
-<p>The textbook GROB scenario. The Patel-estate persona: parents in their late 60s, family home in Stockport worth £600,000 at the gift date, two adult children. The parents transfer the legal title to the children in equal shares, intend the gift as a PET, continue to live in the property rent-free, pay the council tax and utilities themselves, and update their wills accordingly.</p>
+<p>Take the textbook GROB scenario. The Patels are in their late 60s, with a family home in Stockport worth £600,000 at the gift date and two adult children. They transfer the legal title to the children in equal shares, intend the gift as a PET, continue to live in the property rent-free, pay the council tax and utilities themselves, and update their wills accordingly.</p>
 
 <p>The parents die eight and nine years later. The property at death is worth £820,000. The children expected the property to be outside the estate (both PET seven-year clocks ran out). HMRC's response: s.102(1)(b) was breached throughout the period. The property was not enjoyed to the entire exclusion of the donors. The reservation was continuous from the date of gift to the date of each death. Under s.102(3) the property is in the deceased's estate at £820,000 (each parent's death is computed on the share of the property they had gifted, with the survivor's death picking up the second half).</p>
 
@@ -88,89 +88,89 @@ editorialNote: "Wave 2 A2 (IHT). Statute-walkthrough deep dive on s.102 FA 1986 
 
 <aside>
 <p>The most expensive estate planning mistake on a family home is also the most common.</p>
-<p>If a "gift then keep living there" plan is in your file from years ago, the seven-year clock has been running on a void gift. We work alongside specialist estate-planning advisors who can model the cost and find the best remediation route.</p>
+<p>If a "gift then keep living there" plan is in your file from years ago, the seven-year clock has been running on a void gift. We work alongside specialist estate-planning advisers who can model the cost and find the best remediation route.</p>
 </aside>
 
 <h2>Escape route one: pay full market rent</h2>
 
-<p>The clean route through s.102 on a continued-occupation home gift is to pay the donee full open-market rent for the period of occupation. The mechanics:</p>
+<p>The clean route through s.102 on a continued-occupation home gift is to pay the donee full open-market rent for as long as you stay. The mechanics:</p>
 
 <ul>
 <li>Commercial-rate rent, set against current local lettings comparables for an unfurnished or furnished equivalent property.</li>
 <li>Documented in a written tenancy agreement (typically an assured shorthold tenancy or a private letting agreement at this scale).</li>
 <li>Reviewed every two to three years against fresh market evidence and adjusted accordingly. A static rent over a decade of rising local rents looks like a constructive reservation even where the original rent was commercial.</li>
-<li>Actually paid, with bank evidence (standing order from the donor's bank account to the donee's, monthly).</li>
+<li>Actually paid, with bank evidence (a monthly standing order from your bank account to the donee's).</li>
 <li>The donee declares the rent as rental income on self-assessment, deducts allowable expenses, and pays income tax at their marginal rate.</li>
 </ul>
 
 <p>What does not work: a peppercorn rent, a £1-a-year rent, a token rent set well below local market. HMRC's enquiry pattern on this is consistent. They compare the rent against contemporaneous lettings evidence (Rightmove archive, ARLA data, valuer reports) and treat any material shortfall as a continuing reservation.</p>
 
-<p>The donor's CGT base cost is unchanged by the rental arrangement; the property having been gifted at deemed market value, the donee's base cost is the gift-date value (see <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">CGT on Gifting Property to Family Members</a> for the donor-side mechanics including the 60-day reporting obligation and the connected-persons rule).</p>
+<p>The rental arrangement does not change your CGT position on the gift itself. Because the property was gifted at deemed market value, the donee's base cost is the gift-date value (see <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">CGT on Gifting Property to Family Members</a> for the gift-side mechanics, including the 60-day reporting obligation and the connected-persons rule).</p>
 
 <h2>Escape route two: the Schedule 20 paragraph 6 co-ownership carve-out</h2>
 
 <p>Paragraph 6 of Schedule 20 FA 1986 provides a narrow carve-out where donor and donee both occupy the property after the gift. The conditions:</p>
 
 <ul>
-<li>The donor and the donee both occupy the land after the gift.</li>
-<li>The donor receives no benefit (other than a negligible one) provided by or at the expense of the donee in connection with the gift.</li>
-<li>The donor bears their share of the cost of running the property: council tax, utilities, repairs, maintenance, allocated proportionately to use.</li>
+<li>You and the donee both occupy the land after the gift.</li>
+<li>You receive no benefit (other than a negligible one) provided by or at the expense of the donee in connection with the gift.</li>
+<li>You bear your share of the cost of running the property: council tax, utilities, repairs, maintenance, allocated proportionately to use.</li>
 </ul>
 
-<p>Where met, s.102 does not apply to the donor's continued occupation. Practical examples that genuinely work: an adult child moves into the parent's family home (perhaps following a divorce, or to care for the parent), legal title is transferred to the child, both occupy the property thereafter, the parent pays their proportionate share of running costs.</p>
+<p>Where those conditions are met, s.102 does not apply to your continued occupation. The arrangement that genuinely works in practice: an adult child moves into the parent's family home (perhaps following a divorce, or to care for the parent), legal title is transferred to the child, both occupy the property thereafter, and the parent pays their proportionate share of running costs.</p>
 
-<p>HMRC scrutiny is high. The carve-out fails where the running-cost split is too favourable to the donor, where the donee's "occupation" is nominal (only visits occasionally), or where the donor enjoys an exclusive part of the property (parent uses the principal bedroom and en suite, child has a small back room). The documentary trail (proportionate utility-bill payments, council-tax assessment showing both as residents, contemporaneous records) needs to be solid before any enquiry.</p>
+<p>HMRC scrutiny is high. The carve-out fails where the running-cost split is too favourable to you, where the donee's "occupation" is nominal (only visits occasionally), or where you enjoy an exclusive part of the property (parent uses the principal bedroom and en suite, child has a small back room). The documentary trail (proportionate utility-bill payments, council-tax assessment showing both as residents, contemporaneous records) needs to be solid before any enquiry.</p>
 
-<p>If the donor's co-occupation ends, the carve-out ends. Section 102(4) then operates from the cessation date (see below).</p>
+<p>If your co-occupation ends, so does the carve-out, and s.102(4) takes over from the cessation date.</p>
 
 <h2>POAT as the back-stop where s.102 does not bite</h2>
 
-<p>The Finance Act 2004 Pre-Owned Assets Tax regime (s.84 plus Schedule 15) is the income tax catch for arrangements that escape s.102 but still leave the donor enjoying the property. The canonical case: cash gift route. A donor gifts £500,000 of cash to a child, the child uses the cash to buy a house, the donor moves in rent-free.</p>
+<p>The Finance Act 2004 Pre-Owned Assets Tax regime (s.84 plus Schedule 15) is the income tax catch for arrangements that escape s.102 but still leave you enjoying the property. The canonical case is the cash gift route: you give a child £500,000 of cash, the child uses it to buy a house, and you move in rent-free.</p>
 
-<p>Section 102 does not apply: the gift was of cash, not of the subsequent property; the donor never owned the house. POAT does apply: the donor enjoys the property and POAT charges an annual income tax sum based on the deemed market rent of the occupied property, in proportion to the gifted cash contribution to the purchase price.</p>
+<p>Section 102 does not apply, because the gift was of cash and not of the house you never owned. POAT does apply: you enjoy the property, so POAT charges an annual income tax sum based on the deemed market rent of the occupied property, in proportion to the gifted cash contribution to the purchase price.</p>
 
 <p>POAT mechanics:</p>
 
 <ul>
-<li><strong>Annual charge:</strong> deemed market rent of the property, multiplied by the proportion of the purchase price funded by the gifted cash, taxed at the donor's marginal rate on self-assessment.</li>
+<li><strong>Annual charge:</strong> deemed market rent of the property, multiplied by the proportion of the purchase price funded by the gifted cash, taxed at your marginal rate on self-assessment.</li>
 <li><strong>De minimis:</strong> no charge where the annual deemed rent (after proportioning) is under £5,000.</li>
 <li><strong>Indexation:</strong> the deemed rent is re-valued every five years against current market rates.</li>
-<li><strong>Election out (under paragraph 21 Sch 15 FA 2004):</strong> the donor can elect on form IHT500 to be treated as making a GROB instead. The election removes the annual income tax charge but puts the property into the donor's estate for IHT. The election is made by 31 January after the tax year in which POAT first applies and is irrevocable.</li>
+<li><strong>Election out (under paragraph 21 Sch 15 FA 2004):</strong> you can elect on form IHT500 to be treated as making a GROB instead. The election removes the annual income tax charge but puts the property into your estate for IHT. You make it by 31 January after the tax year in which POAT first applies, and it is irrevocable.</li>
 </ul>
 
-<p>The choice between paying POAT and electing to GROB is age-and-survival dependent. For a donor in their early 60s in good health, the long POAT income tax bill (potentially 20+ years of charges) usually exceeds the eventual IHT cost, so the election is often the right move. For a donor in their late 70s with health concerns, the few years of POAT may be cheaper than full IHT on a property in the estate.</p>
+<p>Whether to pay POAT or elect to GROB turns on your age and likely survival. In your early 60s and in good health, the long POAT income tax bill (potentially 20+ years of charges) usually outweighs the eventual IHT cost, so the election is often the right move. In your late 70s with health concerns, a few years of POAT may well be cheaper than full IHT on a property sitting in your estate.</p>
 
 <h2>Cessation of reservation: the s.102(4) escape and the false-PET clock</h2>
 
 <p>Section 102(4) provides that where the reservation ceases before the end of the relevant period, the donor is treated as having made a PET at the moment of cessation. The seven-year clock then runs from the cessation date, not from the original gift.</p>
 
-<p>Application: a donor gifted the family home at age 65, lived there rent-free for the first five years (GROB applying throughout), then moved into residential care at age 70 (reservation ends at the move-out). The deemed PET arises at age 70. The donor must survive to age 77 for the full seven-year PET protection. Where the donor dies before age 77, the deemed PET becomes chargeable; taper relief between years 3 and 7 reduces the tax (s.7(4) IHTA 1984), but the gift comes back into the estate at its open-market value at the cessation date (not the original gift date and not the death date).</p>
+<p>Say you gift the family home at age 65, live there rent-free for the first five years (GROB applying throughout), then move into residential care at age 70, at which point the reservation ends. The deemed PET arises at age 70, and you must survive to age 77 for the full seven-year protection. Die before age 77 and the deemed PET becomes chargeable; taper relief between years 3 and 7 reduces the tax (s.7(4) IHTA 1984), but the gift comes back into the estate at its open-market value at the cessation date (not the original gift date and not the death date).</p>
 
-<p>The donor's personal representatives report the cessation-PET on form IHT100c where death is within seven years. HMRC reconciles the donor's IHT400 with the IHT100c calculation; double charges relief under the FA 1986 (Double Charges) Regulations 1987 ensures the property is not taxed twice if both the GROB rules and the PET-on-cessation rules would otherwise apply.</p>
+<p>Your personal representatives report the cessation-PET on form IHT100c where death is within seven years. HMRC reconciles your IHT400 with the IHT100c calculation, and double charges relief under the FA 1986 (Double Charges) Regulations 1987 ensures the property is not taxed twice where both the GROB rules and the PET-on-cessation rules would otherwise apply.</p>
 
 <h2>GROB and BTL portfolio gifts: when does it bite?</h2>
 
-<p>On the standard fact pattern, gifts of BTL property are clean for s.102 purposes. The donor was never the occupier; the donee takes the rents from the date of legal transfer and pays the income tax on them; the donor enjoys no benefit. The PET runs from the gift date in the normal way, and on full seven-year survival the gift falls out of the estate.</p>
+<p>On the standard fact pattern, gifts of BTL property are clean for s.102 purposes. You were never the occupier, the donee takes the rents from the date of legal transfer and pays the income tax on them, and you enjoy no benefit. The PET runs from the gift date in the normal way, and on full seven-year survival the gift falls out of the estate.</p>
 
 <p>GROB does bite on BTL gifts where the facts are non-standard:</p>
 
 <ul>
-<li>The donor continues to receive the rents (through a side-letter, an undocumented family understanding, or because the donee has no bank account to receive them). HMRC's enquiry pattern looks at where the rent actually goes; nominal transfer of legal title is not enough.</li>
-<li>The donor uses the property as a personal holiday home or weekend retreat, even occasionally.</li>
-<li>The donor retains the right to live in the property (e.g. a clause in the deed of gift reserving a lifetime interest).</li>
-<li>The donor manages the property and takes management fees that exceed market rate (constructive reservation through over-paid management).</li>
+<li>You keep receiving the rents (through a side-letter, an undocumented family understanding, or because the donee has no bank account to receive them). HMRC looks at where the rent actually goes; a nominal transfer of legal title is not enough.</li>
+<li>You use the property as a personal holiday home or weekend retreat, even occasionally.</li>
+<li>You retain the right to live in the property (e.g. a clause in the deed of gift reserving a lifetime interest).</li>
+<li>You manage the property and take management fees above market rate (constructive reservation through over-paid management).</li>
 </ul>
 
-<p>The clean BTL gift fact pattern: legal title transferred to donee, donee receives rents directly from tenant or via the donee's own letting agent into the donee's own bank account, donee declares the rental income on their own self-assessment, donor has no ongoing involvement. Where that pattern is documented contemporaneously, s.102 is not engaged.</p>
+<p>The clean BTL gift fact pattern: legal title transferred to the donee; the donee receives rents directly from the tenant, or via their own letting agent, into their own bank account; the donee declares the rental income on their own self-assessment; and you have no ongoing involvement. Where that pattern is documented at the time, s.102 is not engaged.</p>
 
-<p>For the framing of where BTL gifting sits within the wider planning menu, see the parallel <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance Tax on Rental Property Portfolios</a> pillar.</p>
+<p>For where BTL gifting sits within the wider planning menu, see <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance Tax on Rental Property Portfolios</a>.</p>
 
 <h2>The s.102(5) exemptions and the s.102A to s.102C extensions</h2>
 
 <p>Section 102(5) excludes gifts that qualify under specified exempt-transfer provisions of IHTA 1984. The principal exclusions:</p>
 
 <ul>
-<li><strong>s.18 IHTA 1984:</strong> transfers between UK-resident spouses and civil partners. A gift to a spouse who then allows the donor to continue to occupy is outside s.102.</li>
+<li><strong>s.18 IHTA 1984:</strong> transfers between UK-resident spouses and civil partners. A gift to your spouse who then allows you to continue to occupy is outside s.102.</li>
 <li><strong>s.20 IHTA 1984:</strong> small gifts (£250 per donee per tax year).</li>
 <li><strong>s.22 IHTA 1984:</strong> gifts in consideration of marriage or civil partnership (limits apply: £5,000 from a parent, £2,500 from a grandparent or party to the marriage, £1,000 from anyone else).</li>
 <li><strong>s.23 IHTA 1984:</strong> gifts to qualifying charities.</li>
@@ -182,10 +182,10 @@ editorialNote: "Wave 2 A2 (IHT). Statute-walkthrough deep dive on s.102 FA 1986 
 <h2>The four most-enquired patterns and how HMRC approaches them</h2>
 
 <ol>
-<li><strong>The gift-then-occupy pattern.</strong> Donor gifts the family home and continues to live in it rent-free or below-market. HMRC's standard enquiry: request the deed of gift, the tenancy agreement (if any), bank statements showing rent paid, market evidence of comparable lettings. The reservation is established by reference to s.102(1)(b) and the property goes into the estate at death-date market value.</li>
-<li><strong>The pre-2003 home-loan scheme.</strong> The donor and a related party set up matching trusts holding interests in the home. Most pre-2003 schemes are now caught by POAT under Sch 15 FA 2004, with the donor either paying annual POAT income tax or making the IHT500 election to GROB. HMRC's view, supported in the case law, is that the schemes do not work.</li>
-<li><strong>The BTL "gift but I keep the rent" pattern.</strong> Donor transfers legal title to a child but continues to bank the rent. HMRC's enquiry traces the actual rent recipient. Constructive reservation is established under s.102(1)(b) regardless of what the legal title shows.</li>
-<li><strong>The shared-occupancy carve-out claim.</strong> The donor and donee both live in the property and the donor claims the Sch 20 para 6 carve-out without bearing a proper share of running costs. HMRC's enquiry pattern: request council-tax letters showing both as resident, utility bill split, evidence of donor's proportionate cost contributions. The carve-out fails where the contributions don't match the use.</li>
+<li><strong>The gift-then-occupy pattern.</strong> You gift the family home and carry on living in it rent-free or below-market. HMRC's standard enquiry asks for the deed of gift, the tenancy agreement (if any), bank statements showing rent paid, and market evidence of comparable lettings. The reservation is established by reference to s.102(1)(b) and the property goes into the estate at death-date market value.</li>
+<li><strong>The pre-2003 home-loan scheme.</strong> You and a related party set up matching trusts holding interests in the home. Most pre-2003 schemes are now caught by POAT under Sch 15 FA 2004, leaving you either paying annual POAT income tax or making the IHT500 election to GROB. HMRC's view, supported in the case law, is that the schemes do not work.</li>
+<li><strong>The BTL "gift but I keep the rent" pattern.</strong> You transfer legal title to a child but carry on banking the rent. HMRC traces the actual rent recipient, and constructive reservation is established under s.102(1)(b) regardless of what the legal title shows.</li>
+<li><strong>The shared-occupancy carve-out claim.</strong> You and the donee both live in the property and you claim the Sch 20 para 6 carve-out without bearing a proper share of running costs. HMRC asks for council-tax letters showing both as resident, the utility bill split, and evidence of your proportionate cost contributions. The carve-out fails where the contributions don't match the use.</li>
 </ol>
 
 <aside>
@@ -193,4 +193,4 @@ editorialNote: "Wave 2 A2 (IHT). Statute-walkthrough deep dive on s.102 FA 1986 
 <p>If your planning relies on any of them, the contemporaneous documentation needs to be in place now, not at the point of HMRC enquiry. Get in touch via the form at the foot of the page if you want a specialist review of the paper trail.</p>
 </aside>
 
-<p>For the wider question of how lifetime gifting fits within an overall IHT plan, including life cover, FIC restructuring, and the post-April-2027 pension picture, the decision-framework counterpart is at <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords</a>. Spousal transfers fall outside s.102 entirely (s.18 IHTA 1984); the CGT mechanics on that route are at <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on Property Transfer to Spouse</a>.</p>
+<p>To see how lifetime gifting fits within an overall IHT plan, including life cover, FIC restructuring and the post-April-2027 pension picture, read <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords</a>. Spousal transfers fall outside s.102 entirely (s.18 IHTA 1984); for the CGT mechanics on that route, see <a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on Property Transfer to Spouse</a>.</p>
