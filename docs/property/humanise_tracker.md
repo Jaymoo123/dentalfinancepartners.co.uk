@@ -25,4 +25,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | vat-on-rental-income-residential-vs-commercial-landlord-vat-status-decision-framework | done | robotic | 59.1 | 4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers | done | robotic | 51.1 | 1.1 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | capital-allowances-second-hand-vans | done | robotic | 41 | 8.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| buy-to-let-limited-company-complete-guide-uk | done | robotic | 31.3 | 3.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
