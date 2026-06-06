@@ -29,4 +29,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence | done | robotic | 53 | 13.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | vat-calculator | done | robotic | 32.4 | 7.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | iht-gifts-with-reservation-of-benefit-property | done | robotic | 41.5 | 15.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| toms-vat-serviced-accommodation | done | robotic | 35 | 20 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
