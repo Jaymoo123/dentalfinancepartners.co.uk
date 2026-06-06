@@ -25,4 +25,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords | done | robotic | 38.2 | 3.3 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | liverpool-property-accountant-tax-services-landlords | done | robotic | 39.6 | 0 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | capital-allowances-on-vans | done | robotic | 50.2 | 8.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics | done | robotic | 35.6 | 2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
