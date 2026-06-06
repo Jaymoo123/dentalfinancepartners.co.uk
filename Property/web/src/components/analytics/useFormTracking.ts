@@ -29,10 +29,14 @@ export function useFormTracking(formId: string) {
 
   /** Call on blur. An empty field blurred before submit is a friction point. */
   const onFieldBlur = useCallback(
-    (field: string, hadValue: boolean) => {
+    (field: string, hadValue: boolean, charLen?: number) => {
       if (completedRef.current) return;
       if (!hadValue) {
         track("form_field_abandon", { form_id: formId, field, had_value: false });
+      } else if (field === "email" && typeof charLen === "number") {
+        // Reached + typed into email but not yet submitted: a high-intent
+        // friction point. LENGTH only (a number), never the value (PII).
+        track("form_field_abandon", { form_id: formId, field, had_value: true, char_len: charLen });
       }
     },
     [formId],

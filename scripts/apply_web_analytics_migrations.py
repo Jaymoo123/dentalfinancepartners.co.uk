@@ -31,6 +31,7 @@ MIGRATIONS = [
     "20260605000005_enrich_visitor_journey.sql",
     "20260606000001_stitch_lead_to_session.sql",
     "20260606000002_personalization_view.sql",
+    "20260606000003_section_engagement.sql",
 ]
 
 

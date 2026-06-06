@@ -67,6 +67,11 @@ let humanSeen = false;
 const scrollSent = new Set<number>();
 let maxScrollPct = 0;
 let docHeight = 0;
+
+// section read tracking
+let sectionObserver: IntersectionObserver | null = null;
+const sectionSeen = new Set<string>();
+const sectionTimers = new Map<string, number>();
 let rafPending = false;
 
 // engagement accounting
@@ -152,8 +157,21 @@ function onClick(e: MouseEvent): void {
       x: e.clientX,
       y: e.clientY,
     });
+    return;
   }
-  // pure text/whitespace clicks are intentionally not logged (noise).
+
+  // dead_click: looks clickable (cursor:pointer within a few levels) but nothing
+  // handled it (not a CTA/link/control). A UX-bug signal, not plain text noise.
+  const clickable = looksClickable(target);
+  if (clickable) {
+    track("dead_click", {
+      selector: cssSelector(clickable),
+      nearest_text: nearestText(clickable),
+      section: nearestSection(clickable),
+      x: e.clientX,
+      y: e.clientY,
+    });
+  }
 }
 
 function detectRage(e: MouseEvent): void {
@@ -177,6 +195,65 @@ function detectRage(e: MouseEvent): void {
       recentClicks = [];
     }
   }
+}
+
+/** Walk up a few levels looking for a cursor:pointer affordance. */
+function looksClickable(el: Element): Element | null {
+  let node: Element | null = el;
+  for (let i = 0; node && i < 3; i++) {
+    try {
+      if (window.getComputedStyle(node).cursor === "pointer") return node;
+    } catch {
+      return null;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+// ----- section read tracking -------------------------------------------------
+
+/** Emit section_view once per H2 the reader actually dwelt on (>=50% / >=2s). */
+function setupSectionObserver(): void {
+  if (typeof IntersectionObserver === "undefined") return;
+  if (sectionObserver) sectionObserver.disconnect();
+  const headings = Array.from(document.querySelectorAll("h2[id]"));
+  if (headings.length === 0) {
+    sectionObserver = null;
+    return;
+  }
+  sectionObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        const id = (entry.target as HTMLElement).id;
+        if (!id || sectionSeen.has(id)) continue;
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          if (!sectionTimers.has(id)) {
+            const text = (entry.target.textContent || "").slice(0, 80);
+            const timer = window.setTimeout(() => {
+              sectionTimers.delete(id);
+              if (sectionSeen.has(id)) return;
+              sectionSeen.add(id);
+              track("section_view", {
+                section_id: id,
+                section_text: text,
+                page_path: window.location.pathname,
+              });
+            }, 2000);
+            sectionTimers.set(id, timer);
+          }
+        } else {
+          const t = sectionTimers.get(id);
+          if (t) {
+            clearTimeout(t);
+            sectionTimers.delete(id);
+          }
+        }
+      }
+    },
+    { threshold: [0, 0.5, 1] },
+  );
+  for (const h of headings) sectionObserver.observe(h);
 }
 
 // ----- scroll depth ----------------------------------------------------------
@@ -295,6 +372,8 @@ export function installAutoCapture(): { destroy: () => void; resetForNavigation:
       window.removeEventListener("error", onError);
       window.removeEventListener("unhandledrejection", onRejection);
       if (engagementTimer) clearInterval(engagementTimer);
+      sectionObserver?.disconnect();
+      sectionTimers.forEach((t) => clearTimeout(t));
       installed = false;
     },
     resetForNavigation,
@@ -306,6 +385,11 @@ export function resetForNavigation(): void {
   scrollSent.clear();
   maxScrollPct = 0;
   rafPending = false;
+  // Rebuild section tracking for the new page once its content has rendered.
+  sectionSeen.clear();
+  sectionTimers.forEach((t) => clearTimeout(t));
+  sectionTimers.clear();
+  if (typeof window !== "undefined") window.setTimeout(setupSectionObserver, 400);
 }
 
 /** Live read of the current page's max scroll depth (%), for personalization. */

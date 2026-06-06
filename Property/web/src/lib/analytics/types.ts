@@ -13,6 +13,7 @@
 export const EVENT_NAMES = [
   "page_view",
   "scroll_depth",
+  "section_view",
   "engagement_time",
   "rage_click",
   "dead_click",
@@ -59,6 +60,7 @@ export function isKnownEvent(name: string): name is EventName {
 export const INTERACTION_EVENTS: ReadonlySet<string> = new Set([
   "engagement_time",
   "scroll_depth",
+  "section_view",
   "element_click",
   "cta_click",
   "custom_interaction",

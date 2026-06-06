@@ -108,6 +108,7 @@ export function ExitIntentModal({ topic }: { topic?: string }) {
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
+    ft.onSubmit(2);
 
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -200,7 +201,21 @@ export function ExitIntentModal({ topic }: { topic?: string }) {
             </p>
           </div>
         ) : (
-          <form onSubmit={onSubmit} className="mt-5 space-y-4" noValidate aria-busy={status === "loading"}>
+          <form
+            onSubmit={onSubmit}
+            onFocusCapture={(e) => {
+              const t = e.target;
+              if (t instanceof HTMLInputElement && t.name) ft.onFieldFocus(t.name);
+            }}
+            onBlurCapture={(e) => {
+              const t = e.target;
+              if (t instanceof HTMLInputElement && t.name)
+                ft.onFieldBlur(t.name, Boolean(t.value), t.name === "email" ? t.value.length : undefined);
+            }}
+            className="mt-5 space-y-4"
+            noValidate
+            aria-busy={status === "loading"}
+          >
             <div>
               <label htmlFor="exit-email" className="sr-only">
                 Email
