@@ -158,3 +158,26 @@ export function getLeadForVisitor(siteKey: string, visitorId: string) {
     limit: "1",
   }).then((rows) => rows[0] ?? null);
 }
+
+export type PersonalizationResult = {
+  rule_id: string;
+  surface: string;
+  topic: string;
+  variant: string;
+  shown: number;
+  clicked: number;
+  dismissed: number;
+  shown_sessions: number;
+  converted_sessions: number;
+  click_rate: number | null;
+  shown_to_lead_rate: number | null;
+};
+
+export function getPersonalizationResults(siteKey: string) {
+  return rest<PersonalizationResult>("vw_personalization_results", {
+    site_key: `eq.${siteKey}`,
+    select: "*",
+    order: "shown.desc",
+    limit: "100",
+  });
+}

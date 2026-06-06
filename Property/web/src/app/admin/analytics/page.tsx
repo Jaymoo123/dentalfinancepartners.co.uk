@@ -12,6 +12,7 @@ import {
   getCalculatorConversion,
   getTopVisitors,
   getLeadsForSite,
+  getPersonalizationResults,
   type VisitorJourney,
 } from "@/lib/analytics/server/adminData";
 
@@ -89,11 +90,12 @@ export default async function AdminAnalyticsPage({
   if (!expected || k !== expected) notFound();
 
   const siteKey = niche.content_strategy.source_identifier;
-  const [funnel, calculators, visitors, leads] = await Promise.all([
+  const [funnel, calculators, visitors, leads, personalization] = await Promise.all([
     getFunnelDaily(siteKey),
     getCalculatorConversion(siteKey),
     getTopVisitors(siteKey),
     getLeadsForSite(siteKey),
+    getPersonalizationResults(siteKey),
   ]);
 
   // Map each visitor to the lead they became (newest wins), so the visitor
@@ -202,6 +204,42 @@ export default async function AdminAnalyticsPage({
                   <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
                   <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
                   <td className="px-3 py-2 text-right">{pct(c.computed_to_lead_rate)}</td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Personalization */}
+      <h2 className="mt-10 text-lg font-bold text-slate-900">Personalization</h2>
+      <p className="text-xs text-slate-500">How the intent-tailored surfaces perform (human-only). Shown→Lead needs the conversion stitch live.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Surface</th>
+              <th className="px-3 py-2">Topic</th>
+              <th className="px-3 py-2">Rule</th>
+              <th className="px-3 py-2 text-right">Shown</th>
+              <th className="px-3 py-2 text-right">Clicks</th>
+              <th className="px-3 py-2 text-right">CTR</th>
+              <th className="px-3 py-2 text-right">Shown→Lead</th>
+            </tr>
+          </thead>
+          <tbody>
+            {personalization.length === 0 ? (
+              <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No personalization data yet.</td></tr>
+            ) : (
+              personalization.map((p, i) => (
+                <tr key={`${p.surface}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100">
+                  <td className="px-3 py-2 text-slate-700">{p.surface}</td>
+                  <td className="px-3 py-2 text-slate-600">{p.topic}</td>
+                  <td className="px-3 py-2 text-slate-500">{p.rule_id}</td>
+                  <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
+                  <td className="px-3 py-2 text-right font-mono">{p.clicked}</td>
+                  <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
+                  <td className="px-3 py-2 text-right">{pct(p.shown_to_lead_rate)}</td>
                 </tr>
               ))
             )}

@@ -30,6 +30,7 @@ MIGRATIONS = [
     "20260605000004_loosen_human_filter.sql",
     "20260605000005_enrich_visitor_journey.sql",
     "20260606000001_stitch_lead_to_session.sql",
+    "20260606000002_personalization_view.sql",
 ]
 
 
