@@ -27,4 +27,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | btl-mortgage | done | robotic | 28.4 | 0.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | btl-investment-plymouth-cardiff-landlord-hotspots | done | robotic | 38.7 | 5.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | full-expensing-capital-allowances | done | robotic | 51.9 | 2.5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| land-transaction-tax-a-complete-guide | done | robotic | 31.4 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
