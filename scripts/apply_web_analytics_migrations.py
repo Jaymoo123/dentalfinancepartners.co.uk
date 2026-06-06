@@ -33,6 +33,7 @@ MIGRATIONS = [
     "20260606000002_personalization_view.sql",
     "20260606000003_section_engagement.sql",
     "20260606000004_experiments.sql",
+    "20260606000005_timeseries.sql",
 ]
 
 

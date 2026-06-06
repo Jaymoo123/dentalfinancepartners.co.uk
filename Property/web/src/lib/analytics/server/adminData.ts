@@ -199,3 +199,36 @@ export function getExperimentResults(siteKey: string) {
     limit: "100",
   });
 }
+
+export type TimePoint = {
+  bucket: string;
+  sessions: number;
+  events: number;
+  leads: number;
+};
+
+/** Bucketed time-series via the web_timeseries RPC (stable fn, GET-able). */
+export function getTimeseries(
+  siteKey: string,
+  bucket: "15 minutes" | "1 hour" | "1 day",
+  fromISO: string,
+  toISO: string,
+) {
+  return rest<TimePoint>("rpc/web_timeseries", {
+    p_site_key: siteKey,
+    p_bucket: bucket,
+    p_from: fromISO,
+    p_to: toISO,
+  });
+}
+
+/** A page of leads (newest first) for the paginated leads sub-page. */
+export function getLeadsPage(siteKey: string, offset: number, limit: number) {
+  return rest<LeadInfo>("leads", {
+    source: `eq.${siteKey}`,
+    select: LEAD_COLS,
+    order: "created_at.desc",
+    offset: String(offset),
+    limit: String(limit),
+  });
+}

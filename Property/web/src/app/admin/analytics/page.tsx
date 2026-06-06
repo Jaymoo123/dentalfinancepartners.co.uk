@@ -146,9 +146,13 @@ export default async function AdminAnalyticsPage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
-      <div className="flex items-baseline justify-between">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h1 className="text-2xl font-bold text-slate-900">Analytics — {siteKey}</h1>
-        <span className="text-xs text-slate-500">Human-only (bots excluded) · live</span>
+        <div className="flex items-center gap-4 text-xs">
+          <Link href={`/admin/analytics/trends?k=${expected}`} className="text-emerald-700 underline">Trends</Link>
+          <Link href={`/admin/analytics/leads?k=${expected}`} className="text-emerald-700 underline">All leads</Link>
+          <span className="text-slate-500">Human-only · live</span>
+        </div>
       </div>
 
       {/* KPIs */}
