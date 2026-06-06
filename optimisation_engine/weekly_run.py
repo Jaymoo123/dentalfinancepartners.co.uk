@@ -44,6 +44,7 @@ if ROOT not in sys.path:
 from optimisation_engine.analysis.detectors import run_all_detectors  # noqa: E402
 from optimisation_engine.analysis.behaviour_detectors import run_behaviour_detectors  # noqa: E402
 from optimisation_engine.analysis.bot_reclassifier import reclassify_bots  # noqa: E402
+from optimisation_engine.analysis.bot_scorer import reclassify_bots_scored  # noqa: E402
 from optimisation_engine.config import PRIORITY_ORDER, get_sites  # noqa: E402
 from optimisation_engine.snapshot import run_snapshot  # noqa: E402
 from optimisation_engine.cost_tracker import CostTracker  # noqa: E402
@@ -200,10 +201,17 @@ def step_detect_behaviour(sites: list[str]) -> list[dict]:
     print("=" * 80)
     out: list[dict] = []
     for s in sites:
+        # Primary: multi-signal bot scorer (writes bot_score + is_bot + bot_reason).
+        # Fallback: the crude deterministic reclassifier, so a scorer failure never
+        # leaves the human-only rollups un-cleaned.
         try:
-            reclassify_bots(s)
+            reclassify_bots_scored(s)
         except Exception as exc:  # noqa: BLE001
-            print(f"[CRO] reclassify_bots({s}) ERROR: {type(exc).__name__}: {exc}")
+            print(f"[CRO] reclassify_bots_scored({s}) ERROR: {type(exc).__name__}: {exc}")
+            try:
+                reclassify_bots(s)
+            except Exception as exc2:  # noqa: BLE001
+                print(f"[CRO] reclassify_bots({s}) fallback ERROR: {type(exc2).__name__}: {exc2}")
         out.append(run_behaviour_detectors(s))
     return out
 
