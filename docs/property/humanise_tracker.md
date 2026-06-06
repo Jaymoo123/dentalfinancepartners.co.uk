@@ -28,4 +28,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | vat-developer-pre-registration-input-tax-recovery-property-development-projects | done | robotic | 38 | 5 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d | done | robotic | 48.6 | 3.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms | done | severe | 62.1 | 3.7 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions | done | robotic | 36.9 | 4.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
