@@ -30,4 +30,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | aia-allowance-uk-property-investors | done | robotic | 35.8 | 3.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework | done | robotic | 47.4 | 8.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | government-to-implement-mtd-for-it-with-lower-threshold | done | robotic | 49.9 | 5.8 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| mtd-itsa-overview-six-changes-residential-landlords | done | robotic | 48.9 | 1.6 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
