@@ -126,6 +126,34 @@ export default async function VisitorTimelinePage({
     if (g) g.push(e); else bySession.set(e.session_id, [e]);
   }
 
+  // Journey-as-story summary.
+  const visits = journey?.total_sessions ?? bySession.size;
+  const visitClass = visits > 1 ? "Returning" : "New";
+  const sectionsRead = counts.get("section_view") || 0;
+  const storyParts: string[] = [`${visitClass} visitor`];
+  if (visits) storyParts.push(`${visits} visit${visits > 1 ? "s" : ""}`);
+  if (pages.size)
+    storyParts.push(
+      `${pages.size} page${pages.size > 1 ? "s" : ""}${sectionsRead ? ` (${sectionsRead} sections read)` : ""}`,
+    );
+  if (calcs.size) storyParts.push(`${calcs.size} calculator${calcs.size > 1 ? "s" : ""}`);
+  if (lead) storyParts.push(`converted as ${lead.full_name || lead.email}`);
+  else if (journey?.converted) storyParts.push("converted");
+  const story = storyParts.join(" · ");
+
+  // Per-session engaged time (ms) for the sparkline (max cumulative per session).
+  const sessionEngagement = Array.from(bySession.values()).map((evts) => {
+    let ms = 0;
+    for (const e of evts) {
+      if (e.event_name === "engagement_time") {
+        const c = Number(e.props?.cumulative_ms || 0);
+        if (c > ms) ms = c;
+      }
+    }
+    return ms;
+  });
+  const maxEng = Math.max(1, ...sessionEngagement);
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
       <Link href={`/admin/analytics?k=${expected}`} className="text-sm text-emerald-700 underline">← All visitors</Link>
@@ -146,11 +174,18 @@ export default async function VisitorTimelinePage({
               <h1 className="break-all font-mono text-sm font-bold text-slate-900">{visitorId}</h1>
             )}
           </div>
-          {journey?.converted || lead ? (
-            <span className="shrink-0 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">CONVERTED</span>
-          ) : (
-            <span className="shrink-0 rounded-full bg-slate-200 px-3 py-1 text-xs font-bold text-slate-600">Not converted</span>
-          )}
+          <div className="flex shrink-0 flex-col items-end gap-1">
+            <span
+              className={`rounded-full px-3 py-1 text-xs font-bold ${visitClass === "Returning" ? "bg-indigo-600 text-white" : "bg-slate-200 text-slate-700"}`}
+            >
+              {visitClass.toUpperCase()}
+            </span>
+            {journey?.converted || lead ? (
+              <span className="rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">CONVERTED</span>
+            ) : (
+              <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-bold text-slate-600">Not converted</span>
+            )}
+          </div>
         </div>
         {journey && (
           <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -162,6 +197,22 @@ export default async function VisitorTimelinePage({
             <Stat label="Country" value={journey.country || "—"} />
             <Stat label="Source" value={journey.referrer_host || journey.utm_source || "direct"} />
             <Stat label="Entry" value={journey.entry_paths?.[0] || "—"} />
+          </div>
+        )}
+      </div>
+
+      {/* Story line + engagement sparkline */}
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white p-4">
+        <p className="text-sm text-slate-700">{story}</p>
+        {sessionEngagement.length > 0 && (
+          <div className="flex items-end gap-1" title="Engaged time per session (left = first visit)">
+            {sessionEngagement.map((ms, i) => (
+              <div
+                key={i}
+                className="w-2 rounded-t bg-emerald-500"
+                style={{ height: `${Math.max(3, (ms / maxEng) * 32)}px` }}
+              />
+            ))}
           </div>
         )}
       </div>

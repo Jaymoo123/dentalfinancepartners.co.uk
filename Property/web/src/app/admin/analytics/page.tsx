@@ -105,6 +105,17 @@ export default async function AdminAnalyticsPage({
     if (l.visitor_id && !leadByVisitor.has(l.visitor_id)) leadByVisitor.set(l.visitor_id, l);
   }
 
+  let newCount = 0;
+  let returningCount = 0;
+  for (const v of visitors) {
+    if ((v.total_sessions || 0) > 1) returningCount++;
+    else newCount++;
+  }
+  const newVsReturning: Array<[string, number]> = [
+    ["Returning", returningCount],
+    ["New", newCount],
+  ];
+
   const totals = funnel.reduce(
     (a, d) => ({
       sessions: a.sessions + d.sessions,
@@ -174,10 +185,11 @@ export default async function AdminAnalyticsPage({
       </div>
 
       {/* Breakdowns */}
-      <div className="mt-6 grid gap-3 sm:grid-cols-3">
+      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Breakdown title="Traffic source" rows={tally(visitors, "referrer_host")} />
         <Breakdown title="Device" rows={tally(visitors, "device_type")} />
         <Breakdown title="Country" rows={tally(visitors, "country")} />
+        <Breakdown title="New vs returning" rows={newVsReturning} />
       </div>
 
       {/* Calculators */}
