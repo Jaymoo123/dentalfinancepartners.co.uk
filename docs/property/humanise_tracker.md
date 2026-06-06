@@ -22,4 +22,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | principal-private-residence-relief-landlords | done | robotic | 41.8 | 5.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | how-much-tax-rental-income-uk-complete-guide | done | robotic | 32.6 | 0 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | rental-yield-vs-roi-property-investors-uk | done | robotic | 33.8 | 1.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| vat-on-rental-income-residential-vs-commercial-landlord-vat-status-decision-framework | done | robotic | 59.1 | 4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
