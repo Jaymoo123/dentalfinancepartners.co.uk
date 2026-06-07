@@ -35,4 +35,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | making-a-disclosure-using-the-worldwide-disclosure-facility | done | robotic | 43.9 | 1.3 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | inheritance-tax-and-the-family-home | done | robotic | 36.3 | 7.2 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | jointly-owned-property | done | robotic | 36.7 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| lbtt-review-in-scotland | done | robotic | 32.9 | 3.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
