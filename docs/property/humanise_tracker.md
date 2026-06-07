@@ -35,4 +35,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | mtd-itsa-letting-agent-managed-portfolio-who-files-quarterly | done | severe | 65.7 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | mtd-itsa-foreign-property-income-quarterly-reporting-rules | done | robotic | 35.2 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | property-accountant-edinburgh-landlord-tax-services | done | robotic | 31.7 | 0 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017 | done | robotic | 49.9 | 5.9 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
