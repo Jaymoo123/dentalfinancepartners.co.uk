@@ -51,7 +51,29 @@ import sys
 import pathlib
 
 ROOT = pathlib.Path(".")
-BLOG = ROOT / "Property/web/content/blog"
+
+
+def _arg_site() -> str:
+    """--site <key> selects the site corpus (default property for back-compat)."""
+    if "--site" in sys.argv:
+        i = sys.argv.index("--site")
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    return "property"
+
+
+SITE = _arg_site()
+
+
+def _blog_dir(site: str) -> pathlib.Path:
+    p = ROOT / "sites" / f"{site}.json"
+    if p.exists():
+        cfg = json.loads(p.read_text(encoding="utf-8"))
+        return ROOT / cfg["paths"]["blogContentDir"]
+    return ROOT / "Property/web/content/blog"
+
+
+BLOG = _blog_dir(SITE)
 CACHE = ROOT / "optimisation_engine/.cache"
 STRICT = "--strict" in sys.argv
 
@@ -90,7 +112,7 @@ warnings = []   # surfaced, non-blocking unless --strict
 
 def check_links():
     res = subprocess.run(
-        [sys.executable, "scripts/track2_link_audit.py"],
+        [sys.executable, "scripts/track2_link_audit.py", "--site", SITE],
         capture_output=True, text=True,
     )
     m = re.search(r"HARD 404 ISSUES:\s*(\d+)", res.stdout)
@@ -113,7 +135,7 @@ def check_frontmatter():
     'frontmatter intact' check never parsed the YAML, so this slipped to build.
     Deterministic, so it belongs in the gate."""
     res = subprocess.run(
-        [sys.executable, "scripts/frontmatter_lint.py", "--check", "--site", "property"],
+        [sys.executable, "scripts/frontmatter_lint.py", "--check", "--site", SITE],
         capture_output=True, text=True,
     )
     if res.returncode == 0:
@@ -121,7 +143,7 @@ def check_frontmatter():
     else:
         failures.append("Frontmatter: invalid YAML in one or more blog pages "
                         "(unquoted colon-space breaks the build). Fix with "
-                        "`python scripts/frontmatter_lint.py --fix --site property`.")
+                        f"`python scripts/frontmatter_lint.py --fix --site {SITE}`.")
         print("[FAIL] frontmatter: invalid YAML")
         for ln in res.stdout.splitlines():
             if ln.startswith(("FRONTMATTER", "  ")):
@@ -365,7 +387,7 @@ def check_query_coverage():
 
 def main():
     print("=" * 60)
-    print("PRE-DEPLOY GATE (Property)" + ("  [--strict]" if STRICT else "")
+    print(f"PRE-DEPLOY GATE ({SITE})" + ("  [--strict]" if STRICT else "")
           + (f"  [--qa-batch {QA_BATCH}]" if QA_BATCH else "")
           + ("  [--coverage]" if COVERAGE and not COVERAGE_STRICT else "")
           + ("  [--coverage-strict]" if COVERAGE_STRICT else "")

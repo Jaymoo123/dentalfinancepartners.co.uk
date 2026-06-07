@@ -1,0 +1,29 @@
+You are Session C for Wave 9 RUN phase (TEST scope — 9 picks total). Worktree `Accounting-wt-property-wave9-c` on branch `property-wave9-c`. Bucket: HMRC penalties + enquiries depth (3 pages C1-C3).
+
+Your task: take the 3 Stage 2 briefs at `briefs/property/wave9/<slug>.md` and produce final published blog pages at `Property/web/content/blog/<slug>.md`, committed on this worktree branch. NETNEW_PROGRAM §7 19-step workflow.
+
+**Q&A discipline:** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_C.md` via ABSOLUTE PATH. Use `## [Q-N]` format with brackets (your Stage 2 used `## Q-N` no-brackets which the watcher missed; manager replied A-1 + A-2 in your Q&A file — read those).
+
+**F-numbering range:** F-20 to F-29 (none used yet; next F-20).
+
+Read first:
+1. docs/property/NETNEW_PROGRAM.md §7 19-step + §16.35 + §16.27
+2. docs/property/house_positions.md §20 (penalty cluster) + §26 (HMRC enquiries — §26.9 £30k→£40k from FA 2024) + §27 (Sched 24 — §27.2 careless-floor 12-month-qualifier)
+3. Your 3 Stage 2 briefs at briefs/property/wave9/:
+   - C1: let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026 (partial-overlap 0.32 — differentiation framing in brief)
+   - C2: schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords (partial-overlap 0.30 — differentiation framing in brief)
+   - C3: hmrc-discovery-assessment-tma-1970-section-29-time-limits-landlords
+4. docs/property/wave9_page_tracker.md (C1-C3 rows; ABSOLUTE PATH)
+5. docs/property/wave9_questions_session_C.md — read A-1 + A-2 manager replies
+
+Acknowledge with one short status line: "Wave 9 Session C picked up. A-1 (30/40/30 qualitative) + A-2 (URL-liveness pattern) read. Claiming C2 first."
+
+Critical drift watchpoints (Wave 9 Stage 2 catches):
+- Per A-1: drop the 30/40/30 telling/helping/giving numeric split; frame qualitatively within the unprompted (0-30%) / prompted (15-30%) Sch 24 para 9 reduction window. Helping (full quantification) typically carries the largest practical weight.
+- Per A-2: 5 Stage 1a competitor URLs were dead (100% rate). Stage 2 brief has 2 verified live landing pages + WebSearch-at-write-time marker for missing. Fresh competitor SERP scan at write time per §16.31 + workflow step 4.
+- §26.9 £30k → £40k threshold change from FA 2024 — verify against current legislation.gov.uk
+- TMA 1970 s.29 discovery time limits: 4 years (ordinary) / 6 years (careless) / 20 years (deliberate) per s.36 — Tooth + Hicks staleness doctrine
+
+Within-bucket sequencing: C2 → C1 → C3.
+
+Commit discipline: each page = separate commit on `property-wave9-c` with `Wave 9 C<N>: <slug>` after §6 build verify. Handover hygiene (§16.14): tracker flip to ✅ via ABSOLUTE PATH before stopping.

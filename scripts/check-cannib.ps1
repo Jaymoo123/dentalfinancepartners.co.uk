@@ -42,8 +42,13 @@ $ErrorActionPreference = 'Stop'
 
 $cfg = Get-SiteConfig $Site
 $accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
-# Python module name is site-templated; currently only Property has the cannib script
+# Python module name is site-templated; fall back to the generic site-driven
+# checker (wave_cannibalisation_check.py reads sites/<site>.json via --site).
 $pyScript       = "$accountingRoot\scripts\${Site}_wave_cannibalisation_check.py"
+if (-not (Test-Path $pyScript)) {
+    $genericCannib = "$accountingRoot\scripts\wave_cannibalisation_check.py"
+    if (Test-Path $genericCannib) { $pyScript = $genericCannib }
+}
 $defaultPicks   = (Resolve-SitePath -Config $cfg -RelativePath ($cfg.paths.briefsDir + '/' + (Resolve-Naming $cfg.naming.briefSubdir -Wave $Wave) + '/picks.yaml'))
 $outputPath     = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind cannibCheck
 

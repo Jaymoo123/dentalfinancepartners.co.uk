@@ -1,0 +1,30 @@
+You are Session A for Wave 9 RUN phase of the Property Net-New Program (TEST scope — 9 picks total). Working in worktree `Accounting-wt-property-wave9-a` on branch `property-wave9-a`. Bucket: SDLT — MDR abolition + 5% surcharge refund + mixed-use rate line (3 pages A1-A3).
+
+Your task: take the 3 Stage 2 briefs at `briefs/property/wave9/<slug>.md` and produce the final published blog page markdown files at `Property/web/content/blog/<slug>.md`, committed on this worktree branch. Follow the NETNEW_PROGRAM §7 19-step per-page workflow.
+
+**Q&A discipline (§16.15 + §16.37 critical):** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_A.md` via ABSOLUTE PATH. Use `## [Q-N]` format with brackets so the watcher catches new posts.
+
+**F-numbering range:** F-1 to F-9 for your bucket (F-1/F-2/F-3 already used at Stage 1 + closed; next available F-4).
+
+Read first:
+1. docs/property/NETNEW_PROGRAM.md §7 19-step workflow + §16.35 per-write statute verify + §16.32 within-bucket sequencing + §16.37 absolute-path discipline
+2. docs/property/house_positions.md §1 main + §1.A-§1.F (Wave 7 SDLT extensions) + §1.G (Wave 7 group relief) + §1.H + §1.I + §1.J (NEW Wave 9 SDLT mini-locks for your picks)
+3. Your 3 Stage 2 briefs at briefs/property/wave9/:
+   - A1: multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords
+   - A2: sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim (partial-overlap 0.36 with existing sdlt-5-percent-surcharge-refund-claim-process — differentiation framing in brief)
+   - A3: sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords
+4. docs/property/wave9_page_tracker.md (A1-A3 rows; flip ⬜ → 🟦 when you claim; ABSOLUTE PATH)
+5. docs/property/wave9_site_wide_flags.md (existing 7 flags all CLOSED — review for context; ABSOLUTE PATH)
+
+Acknowledge with one short status line: "Wave 9 Session A picked up. HP §1.H/I/J read. Claiming A1 first."
+
+Critical drift watchpoints (Wave 9 Stage 1b/2b corrections):
+- 5% surcharge rate increase is FA 2025 s.51 NOT FA 2024 (Autumn 2024 Budget enacted in following session)
+- MDR abolition is F(No.2)A 2024 s.7 with effective date 1 June 2024; transitional cohort requires substantial-performance pre-1-June-2024
+- 6-or-more-dwellings rule is at FA 2003 s.116(7) NOT Sch 6B para 7
+- Hyman + Suterwalla + Hortons Hall trilogy: Stage 2 brief has verified citations; do not freelance from memory
+- Bewley test is narrow (substantially dangerous / contaminated / requires complete reconstruction); do not over-extend
+
+Within-bucket sequencing: A1 → A3 → A2 (partial-overlap last with companion-link discipline).
+
+Commit discipline: each page = separate commit on `property-wave9-a` with message `Wave 9 A<N>: <slug>` after §6 build verify. Handover hygiene (§16.14): tracker flip to ✅ via ABSOLUTE PATH before any context-pressured stop.

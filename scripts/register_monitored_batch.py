@@ -25,6 +25,7 @@ import json
 import os
 import pathlib
 import re
+import sys
 
 import httpx
 from dotenv import load_dotenv
@@ -33,10 +34,33 @@ load_dotenv()
 PROJECT_REF = "dhlxwmvmkrfnmcgjbntk"
 TOKEN = os.environ["SUPABASE_ACCESS_TOKEN"]
 URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
-BLOG_DIR = pathlib.Path("Property/web/content/blog")
+
+
+def _arg_site() -> str:
+    """--site <key> selects the site_key + corpus + production domain (default
+    property for back-compat). Resolved here so SITE/BLOG_DIR/PROD_DOMAIN stay
+    module-level, matching scripts/track2_link_audit.py + predeploy_gate.py."""
+    if "--site" in sys.argv:
+        i = sys.argv.index("--site")
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    return "property"
+
+
+def _resolve_site(site: str):
+    """(site_key, blog_dir, prod_domain) from sites/<site>.json (default Property)."""
+    p = pathlib.Path("sites") / f"{site}.json"
+    if p.exists():
+        cfg = json.loads(p.read_text(encoding="utf-8"))
+        blog = pathlib.Path(cfg["paths"]["blogContentDir"])
+        dom = (cfg.get("vercel", {}).get("productionDomain") or "").strip().rstrip("/")
+        prod = ("https://" + dom) if (dom and not dom.startswith("http")) else dom
+        return site, blog, (prod or "https://www.propertytaxpartners.co.uk")
+    return "property", pathlib.Path("Property/web/content/blog"), "https://www.propertytaxpartners.co.uk"
+
+
+SITE, BLOG_DIR, PROD_DOMAIN = _resolve_site(_arg_site())
 CACHE = pathlib.Path("optimisation_engine/.cache")
-SITE = "property"
-PROD_DOMAIN = "https://www.propertytaxpartners.co.uk"
 MONITOR_DAYS = 90
 BASELINE_WINDOW_DAYS = 90
 
@@ -116,6 +140,8 @@ def slugs_from_manifest(batch: str) -> list[str]:
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--site", default="property",
+                    help="site_key + corpus + production domain (resolved at import via sites/<site>.json; default property)")
     ap.add_argument("--batch", help="QA batch name -> reads optimisation_engine/.cache/qa_verdict_<batch>.json")
     ap.add_argument("--slugs", nargs="+", help="explicit slugs (instead of --batch manifest)")
     ap.add_argument("--rewrite-date", default=datetime.date.today().isoformat(),
