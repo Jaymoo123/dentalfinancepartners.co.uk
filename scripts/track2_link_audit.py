@@ -71,15 +71,37 @@ def _valid_locations(cfg: dict) -> set:
 VALID_LOCATIONS = _valid_locations(_CFG)
 
 
+def _amp_replacement(cfg: dict) -> str:
+    """How THIS site's route maps "&" in a category slug. Read straight from the
+    site's web/src/lib/blog.ts slugifyCategory so the audit always matches the
+    live route instead of a hardcoded guess: 5 of 6 sites do "&" -> "and"
+    (Property/Dentists/Medical/generalist/agency); Solicitors alone removes it.
+    Defaults to "and" (the majority + the documented route behaviour)."""
+    try:
+        blog_ts = (
+            ROOT / cfg["paths"]["buildDir"] / "src" / "lib" / "blog.ts"
+        ).read_text(encoding="utf-8")
+        if re.search(r'replace\(\s*/&/g\s*,\s*""\s*\)', blog_ts):
+            return ""
+        if re.search(r'replace\(\s*/&/g\s*,\s*"and"\s*\)', blog_ts):
+            return "and"
+    except Exception:
+        pass
+    return "and"
+
+
+_AMP = _amp_replacement(_CFG)
+
+
 def slugify_category(c: str) -> str:
-    # Mirror the Next route's slugifyCategory (web/src/lib/blog.ts): lowercase,
-    # REMOVE "&" (not -> "and"), spaces -> hyphens, strip any non-alphanumeric/
-    # hyphen char (commas, parens, slashes), collapse repeats, trim. Previously
-    # this did `&` -> "and", which disagreed with the route for every category
-    # containing "&" (e.g. "VAT & Compliance"), giving false 404s on solicitors/
-    # dentists. Now matches the route exactly.
+    # Mirror THIS site's route slugifyCategory (web/src/lib/blog.ts): lowercase,
+    # map "&" per the route (_AMP: "and" for 5/6 sites, "" for Solicitors), spaces
+    # -> hyphens, strip any non-alphanumeric/hyphen char, collapse repeats, trim.
+    # Reading _AMP from the route (not hardcoding it) is what stops the cross-site
+    # false-404 regression: a prior hardcode of "" matched Solicitors but broke
+    # Property/Dentists/Medical/generalist (whose route does "&" -> "and").
     c = c.lower()
-    c = c.replace("&", "")
+    c = c.replace("&", _AMP)
     c = re.sub(r"\s+", "-", c)
     c = re.sub(r"[^a-z0-9-]", "", c)
     c = re.sub(r"-{2,}", "-", c)
