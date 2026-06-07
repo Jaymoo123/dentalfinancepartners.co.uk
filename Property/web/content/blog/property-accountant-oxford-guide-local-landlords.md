@@ -10,13 +10,13 @@ metaDescription: "Oxford landlord tax guide: HMO licensing, Section 24, Making T
 altText: "Property accountant reviewing rental accounts for an Oxford landlord with a student HMO portfolio"
 image: ""
 h1: "Property Accountant Oxford: Tax Guide for Local Landlords"
-summary: "Oxford landlords juggle student HMOs, Article 4 areas and rising values. This guide explains Section 24, Making Tax Digital from April 2026, CGT and HMO licensing, and how a specialist property accountant helps you stay compliant and tax efficient."
+summary: "Oxford landlords juggle student HMOs, Article 4 areas and rising values. Here is how Section 24, Making Tax Digital from April 2026, CGT and HMO licensing hit your portfolio, and how a specialist property accountant helps you stay compliant and tax efficient."
 schema: ""
 faqs:
   - question: "Do Oxford landlords need a specialist property accountant rather than a general one?"
     answer: "Many do. Oxford's market is dominated by student HMOs, professional lets and high-value homes, each with different tax treatment. A specialist property accountant understands Section 24 mortgage interest restriction, HMO licensing costs as deductible expenses, the SA105 property pages, Making Tax Digital for Income Tax, and capital gains tax on disposals. A general accountant may file an accurate return but miss the planning that a property focus brings."
   - question: "Will Making Tax Digital affect Oxford landlords from April 2026?"
-    answer: "Yes. Making Tax Digital for Income Tax Self Assessment goes live on 6 April 2026 for landlords and sole traders with qualifying income over £50,000. The threshold falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Qualifying income is gross rental and trading turnover before expenses, so many Oxford landlords with a single high-rent HMO already cross £50,000. Affected landlords must keep digital records and send quarterly updates to HMRC using compatible software."
+    answer: "Yes. Making Tax Digital for Income Tax Self Assessment goes live on 6 April 2026 for landlords and sole traders with qualifying income over £50,000. The threshold falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Qualifying income is gross rental and trading turnover before expenses, so many Oxford landlords with a single high-rent HMO already cross £50,000. If you are caught, you must keep digital records and send quarterly updates to HMRC using compatible software."
   - question: "How does Section 24 affect higher-rate Oxford landlords?"
     answer: "Section 24 (the finance cost restriction) is fully in force. You can no longer deduct mortgage interest from rental profit. Instead you receive a basic-rate (20%) tax credit. Higher and additional-rate Oxford landlords therefore pay tax on a larger profit figure, and the restriction can push some into a higher band. Our Section 24 guide explains the mechanics and the planning routes, including spousal transfers and incorporation."
   - question: "What CGT will I pay when I sell an Oxford rental property?"
@@ -30,12 +30,12 @@ faqs:
   - question: "What are the property income tax rates from April 2027?"
     answer: "Finance Act 2026 enacted separate property income tax rates that apply from 6 April 2027: 22% basic, 42% higher and 47% additional, each set 2 percentage points above the equivalent main rate. This sits alongside the existing Section 24 finance cost credit. A specialist accountant will factor the change into 2027/28 onward planning, including incorporation decisions for higher-rate Oxford landlords."
   - question: "How do property accountants in Oxford usually charge?"
-    answer: "Fee structures vary by portfolio size, the number of properties and whether you need bookkeeping, planning or just a Self Assessment. Rather than quote figures here, we explain the common charging models in our guide on how property accountants cost their services, and a short discovery call will give you a clear picture for your own situation."
+    answer: "Fee structures vary by portfolio size, the number of properties and whether you need bookkeeping, planning or just a Self Assessment. The common charging models are set out in our guide on how property accountants cost their services, and a short discovery call will give you a clear picture for your own situation."
 ---
 
-<p>Oxford's lettings market is unusually concentrated. Two large universities, a teaching hospital cluster and strong demand from professionals around Summertown and Jericho mean many local landlords run student houses in multiple occupation alongside standard buy-to-lets. That mix, layered on top of UK property tax rules that have tightened sharply, makes a specialist <strong>property accountant in Oxford</strong> worth the cost for most portfolios.</p>
+<p>Oxford's lettings market is unusually concentrated. Two large universities, a major teaching hospital and strong demand from professionals around Summertown and Jericho mean many local landlords run student houses in multiple occupation alongside standard buy-to-lets. That mix, layered on top of UK property tax rules that have tightened sharply, makes a specialist <strong>property accountant in Oxford</strong> worth the cost for most portfolios.</p>
 
-<p>This guide covers the tax issues that actually move the needle for Oxford landlords: Section 24, Making Tax Digital from April 2026, capital gains tax, HMO licensing and Article 4, and when incorporation is worth modelling. It also explains what a specialist property accountant does differently from a general practice.</p>
+<p>The issues that actually move the needle for your tax bill here are Section 24, Making Tax Digital from April 2026, capital gains tax, HMO licensing and Article 4, and whether incorporation is worth modelling. Each one is below, alongside what a specialist property accountant does differently from a general practice.</p>
 
 <h2>Why Oxford Landlords Have a Harder Tax Picture</h2>
 
@@ -55,13 +55,13 @@ faqs:
 
 <p>Section 24 is fully in force. You can no longer set mortgage interest against rental income to reduce taxable profit. Instead, HMRC gives you a basic-rate (20%) tax reducer on the finance costs. For a basic-rate landlord the effect is broadly neutral, but for higher and additional-rate Oxford landlords (a large share, given local rents) the result is tax on a higher profit figure, and the inflated profit can tip you into a higher band or erode allowances.</p>
 
-<p>Common responses include reviewing ownership between spouses to use both basic-rate bands, revisiting how borrowing is structured, and modelling whether a company structure makes sense. Our pillar guide on the <a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 mortgage interest restriction</a> sets out the calculation and the planning routes in full.</p>
+<p>Common responses include reviewing ownership between spouses to use both basic-rate bands, revisiting how borrowing is structured, and modelling whether a company structure makes sense. For the full calculation and the planning routes, see our guide to the <a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 mortgage interest restriction</a>.</p>
 
 <h2>Making Tax Digital from April 2026</h2>
 
 <p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) is no longer a future threat. It starts on 6 April 2026 for landlords and sole traders whose qualifying income exceeds £50,000. The threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028, so most Oxford landlords will be inside the regime within two years.</p>
 
-<p>Crucially, qualifying income is measured on gross turnover (rents plus any trading income) before expenses. A single Oxford HMO with utility-inclusive rents can clear £50,000 on its own, so do not assume you are below the line just because your profit is modest.</p>
+<p>Watch the threshold: qualifying income is measured on gross turnover (rents plus any trading income) before expenses. A single Oxford HMO with utility-inclusive rents can clear £50,000 on its own, so do not assume you are below the line just because your profit is modest.</p>
 
 <h3>What MTD Means in Practice</h3>
 
