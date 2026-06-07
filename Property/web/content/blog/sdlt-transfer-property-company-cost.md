@@ -10,7 +10,7 @@ metaDescription: "How SDLT works when you transfer property to your own company:
 altText: "UK property accountant calculating SDLT on a connected-party transfer of buy-to-let property into a limited company"
 image: ""
 h1: "SDLT When You Transfer Property to Your Own Limited Company"
-summary: "Move a rental property into your own company and HMRC charges SDLT on the open-market value, not the price you paid, because you and the company are connected. This guide sets out the 2026/27 bands, the 5% surcharge, the connected-party valuation rule, and which reliefs still work after MDR was abolished."
+summary: "Move a rental property into your own company and HMRC charges SDLT on the open-market value, not the price you paid, because you and the company are connected. Here are the 2026/27 bands, the 5% surcharge, the connected-party valuation rule, and which reliefs still work after MDR was abolished."
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
 reviewedAt: "2026-05-31"
@@ -45,19 +45,19 @@ faqs:
 
 <p>Move a rental property into your own limited company and HMRC does not look at what you paid for it. Because you and the company are connected persons, Stamp Duty Land Tax (SDLT) is charged on the property's open market value at the date of transfer, and the company pays it as if buying an additional residential property on the open market. That single rule, in section 53 of the Finance Act 2003, is what makes incorporating an existing portfolio expensive, and it is the part most landlords underestimate when they model the move.</p>
 
-<p>This guide sets out exactly how the connected-party charge works in 2026/27, what the company pays at each band, the reliefs that survived the 2024 reforms, and the interaction with Capital Gains Tax that decides whether incorporation is worth it at all.</p>
+<p>On a typical buy-to-let that has grown in value, the connected-party charge for 2026/27 turns into a five-figure SDLT bill payable in cash up front, before you have factored in the separate Capital Gains Tax charge on the same transfer. Whether incorporation is worth it at all turns on those two entry costs against the long-run corporation tax saving, so getting the SDLT number right comes first.</p>
 
 <h2>The connected-party rule: SDLT is charged on market value, not what you paid</h2>
 
 <p>When you transfer a property to a company you control, you are not dealing at arm's length. Section 53 FA 2003 deals with this by deeming the chargeable consideration to be not less than the property's market value, regardless of what actually changes hands. You could transfer the property for nil, for £1, or in exchange for shares, and the SDLT result is the same: it is computed on the full open-market value at the effective date.</p>
 
-<p>"Connected" takes its meaning from section 1122 of the Corporation Tax Act 2010. You are connected with a company you control, whether alone or with associates such as a spouse, civil partner or other relatives. So a husband-and-wife company, a family SPV, or a one-person SPV all fall squarely inside the rule. This is the answer to the most common search behind this page, the <strong>SDLT transfer property to limited company connected party</strong> question: the connection is what triggers market-value treatment, and it cannot be sidestepped by pricing the transfer low.</p>
+<p>"Connected" takes its meaning from section 1122 of the Corporation Tax Act 2010. You are connected with a company you control, whether alone or with associates such as a spouse, civil partner or other relatives. So a husband-and-wife company, a family SPV, or a one-person SPV all fall squarely inside the rule. On an <strong>SDLT transfer of property to a limited company, the connected party</strong> status is what triggers market-value treatment, and it cannot be sidestepped by pricing the transfer low.</p>
 
 <p>Three practical consequences follow:</p>
 
 <ul>
 <li>The original purchase price is irrelevant. A flat bought in 2009 for £140,000 and worth £300,000 today is taxed on £300,000.</li>
-<li>For higher-value or unusual properties, you should support the figure with an RICS valuation. HMRC can and does challenge market values that look conveniently low, and the burden of evidencing the figure sits with the taxpayer.</li>
+<li>For higher-value or unusual properties, support the figure with an RICS valuation. HMRC can and does challenge market values that look conveniently low, and the burden of evidencing the figure sits with you.</li>
 <li>The company is the purchaser and the person legally liable for the SDLT, even though the value flows out of your personal estate.</li>
 </ul>
 
@@ -119,10 +119,10 @@ faqs:
 <p>Multiple Dwellings Relief (MDR) was historically the main relief used to soften bulk residential acquisitions and many incorporations. It was abolished by the Finance (No.2) Act 2024 for transactions with an effective date on or after 1 June 2024, with anti-forestalling rules to stop late claims through sub-sales or option arrangements on pre-1-June contracts. If a guide tells you to use MDR on a portfolio transfer today, it is out of date. Note that MDR still exists in Scotland (LBTT) and Wales (LTT), which did not follow the English abolition.</p>
 
 <h3>Genuine partnership incorporation under Schedule 15 FA 2003</h3>
-<p>For an existing portfolio, the one mainstream route to nil or reduced SDLT is incorporating a real letting partnership. Schedule 15 FA 2003 reduces the chargeable consideration by the "sum of the lower proportions", and where the partners transferring the property are the same people who own the company, that sum can reach 100%, taking the chargeable consideration, and the SDLT, to nil. The catch is substance. HMRC expects a genuine, pre-existing partnership with its own SA800 partnership tax returns, partnership accounts and, where mortgaged, joint borrowing. A husband-and-wife co-ownership is not automatically a partnership, and a partnership formed weeks before the transfer invites a challenge under the section 75A anti-avoidance code. We cover the mechanics in detail in our guide to <a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">partnership SDLT relief and the sum of the lower proportions</a>.</p>
+<p>For an existing portfolio, the one mainstream route to nil or reduced SDLT is incorporating a real letting partnership. Schedule 15 FA 2003 reduces the chargeable consideration by the "sum of the lower proportions", and where the partners transferring the property are the same people who own the company, that sum can reach 100%, taking the chargeable consideration, and the SDLT, to nil. The catch is substance. HMRC expects a genuine, pre-existing partnership with its own SA800 partnership tax returns, partnership accounts and, where mortgaged, joint borrowing. A husband-and-wife co-ownership is not automatically a partnership, and a partnership formed weeks before the transfer invites a challenge under the section 75A anti-avoidance code. The mechanics of <a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">partnership SDLT relief and the sum of the lower proportions</a> are worth working through in full before you rely on this route.</p>
 
 <h3>The six-dwellings rule (six or more properties in one transaction)</h3>
-<p>Section 116(7) FA 2003 automatically treats six or more separate dwellings acquired in a single transaction as non-residential property. The non-residential rates apply (0% on the first £150,000, 2% from £150,001 to £250,000, 5% above) and no additional dwellings surcharge is due. This is a statutory deeming rather than a relief you claim, so the buyer simply reports on the non-residential basis. It survived the MDR abolition and is the principal portfolio-friendly route for genuine bulk transfers of six or more dwellings completing together. Whether multiple contracts count as a single transaction depends on whether they are "linked" under section 108 FA 2003, so the structuring of how the transfers complete matters.</p>
+<p>Section 116(7) FA 2003 automatically treats six or more separate dwellings acquired in a single transaction as non-residential property. The non-residential rates apply (0% on the first £150,000, 2% from £150,001 to £250,000, 5% above) and no additional dwellings surcharge is due. This is a statutory deeming rather than a relief you claim, so you simply report on the non-residential basis. It survived the MDR abolition and is the principal portfolio-friendly route for genuine bulk transfers of six or more dwellings completing together. Whether multiple contracts count as a single transaction depends on whether they are "linked" under section 108 FA 2003, so the structuring of how the transfers complete matters.</p>
 
 <h3>Sub-sale relief</h3>
 <p>Sub-sale relief under section 45 FA 2003 can remove SDLT where you are under contract to buy a property and, before completion, transfer the contract to your company so the company completes the original purchase. It is genuinely useful for new acquisitions, but it cannot retrofit an existing portfolio you already own. If you already hold the property, there is no purchase contract left to assign.</p>
@@ -131,14 +131,14 @@ faqs:
 
 <p>Transferring a property to your company is a disposal at market value for Capital Gains Tax, even though no cash changes hands. The personal gain is taxed at 18% (basic rate) or 24% (higher rate) on residential property, after the £3,000 annual exempt amount. On a property that has grown substantially in value, the CGT can dwarf the SDLT.</p>
 
-<p>Section 162 incorporation relief can defer that CGT. It is no longer automatic: for transfers on or after 6 April 2026, Finance Act 2026 requires you to claim the relief, by the first anniversary of the 31 January following the tax year of the transfer. It applies where a genuine business, including a property letting business actively managed as such, transfers as a going concern with all its assets (other than cash) in exchange wholly or partly for shares. The deferred gain is rolled into the base cost of the shares you receive. Two points landlords routinely miss:</p>
+<p>Section 162 incorporation relief can defer that CGT. It is no longer automatic: for transfers on or after 6 April 2026, Finance Act 2026 requires you to claim the relief, by the first anniversary of the 31 January following the tax year of the transfer. It applies where a genuine business, including a property letting business actively managed as such, transfers as a going concern with all its assets (other than cash) in exchange wholly or partly for shares. The deferred gain is rolled into the base cost of the shares you receive. Two points are easy to miss:</p>
 
 <ul>
 <li>Section 162 relieves the CGT but does nothing for the SDLT. The company still pays SDLT on market value. A transfer can therefore be fully CGT-deferred and still carry a £30,000 SDLT charge.</li>
 <li>Whether passive buy-to-let amounts to a "business" for section 162 is a question of fact, turning on the time and activity devoted to running the lettings. The leading authority, Ramsay v HMRC [2013], confirms that sufficiently active management can qualify, but a handful of hands-off lets managed by an agent may not.</li>
 </ul>
 
-<p>The relief also creates a useful by-product: the market value of the property transferred, less any liabilities, becomes a credit on your director's loan account, which you can later draw down tax-free as the company repays it. We unpack both sides of the decision in our guides to <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">section 162 incorporation relief</a> and <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporating without triggering CGT</a>.</p>
+<p>The relief also creates a useful by-product: the market value of the property transferred, less any liabilities, becomes a credit on your director's loan account, which you can later draw down tax-free as the company repays it. Both sides of the decision are set out in full under <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">section 162 incorporation relief</a> and <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporating without triggering CGT</a>.</p>
 
 <h2>Scotland and Wales: LBTT and LTT, not SDLT</h2>
 
@@ -157,9 +157,9 @@ faqs:
 
 <p>The Scottish ADS is particularly punishing on company transfers because it is charged at 8% on the entire price, not on a banded basis. A company taking on a £200,000 Scottish flat pays £16,000 of ADS alone, before standard LBTT. A cross-border portfolio therefore needs each jurisdiction priced separately; you cannot extrapolate an English SDLT figure across the whole holding.</p>
 
-<h2>MTD readiness: a company sidesteps it, an individual does not</h2>
+<h2>MTD readiness: a company sidesteps it, you do not</h2>
 
-<p>Making Tax Digital for Income Tax (MTD for ITSA) is live. It is mandatory for individual landlords with qualifying income above £50,000 from 6 April 2026, above £30,000 from 6 April 2027 and above £20,000 from 6 April 2028. Limited companies sit outside MTD for ITSA entirely; they file an annual CT600 instead. For a landlord whose rental income crosses the MTD threshold, moving the portfolio into a company removes the quarterly-update obligation on that income, which is a genuine, if secondary, reason some landlords incorporate. It does not, of course, change the SDLT entry cost.</p>
+<p>Making Tax Digital for Income Tax (MTD for ITSA) is live. It is mandatory for individual landlords with qualifying income above £50,000 from 6 April 2026, above £30,000 from 6 April 2027 and above £20,000 from 6 April 2028. Limited companies sit outside MTD for ITSA entirely; they file an annual CT600 instead. If your rental income crosses the MTD threshold, moving the portfolio into a company removes the quarterly-update obligation on that income, which is a genuine, if secondary, reason to incorporate. It does not, of course, change the SDLT entry cost.</p>
 
 <h2>So when does the SDLT cost make sense?</h2>
 
