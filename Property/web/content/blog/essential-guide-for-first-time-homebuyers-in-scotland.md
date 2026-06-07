@@ -15,7 +15,7 @@ imageCredit:
   source: "Pexels"
   source_url: "https://www.pexels.com/photo/edinburgh-buildings-1029599/"
 h1: "Essential Guide for First-Time Homebuyers in Scotland: LBTT, FTB Relief, and What to Plan For in 2026/27"
-summary: "Buying your first home in Scotland in 2026/27 means paying Land and Buildings Transaction Tax (LBTT) rather than Stamp Duty Land Tax, claiming the Scottish first-time buyer relief that raises the LBTT nil band from £145,000 to £175,000 (a £600 maximum saving with no upper property-value ceiling), watching out for the Additional Dwelling Supplement at 8% if anyone on the title owns another dwelling anywhere in the world, and filing a Revenue Scotland return within 30 days of completion. This onboarding guide walks the buyer journey from offer to settlement, surfaces the cross-border trap that catches buyers with overseas property, and explains how the Scottish FTB regime differs from the English £500,000 withdrawal threshold and the Welsh no-FTB-relief position."
+summary: "Buying your first home in Scotland in 2026/27 means paying Land and Buildings Transaction Tax (LBTT) rather than Stamp Duty Land Tax, claiming the Scottish first-time buyer relief that raises the LBTT nil band from £145,000 to £175,000 (a £600 maximum saving with no upper property-value ceiling), watching out for the Additional Dwelling Supplement at 8% if anyone on the title owns another dwelling anywhere in the world, and filing a Revenue Scotland return within 30 days of completion. Here is the buyer journey from offer to settlement, the cross-border trap that catches buyers with overseas property, and how the Scottish FTB regime differs from the English £500,000 withdrawal threshold and the Welsh no-FTB-relief position."
 schema: ''
 faqs:
   - question: "What is LBTT and how is it different from Stamp Duty Land Tax?"
@@ -39,7 +39,7 @@ faqs:
   - question: "What happens between offer and settlement, and when is the LBTT calculated?"
     answer: "The Scottish purchase process runs through offer, missives (the contract), conclusion of missives, and settlement (completion and entry). The effective date for LBTT purposes is settlement in most conventional purchases, or the date of substantial performance if earlier (rare on a first-home purchase). The £175,000 FTB nil band and the FTB eligibility conditions are tested at the effective date, not at the offer or missives stage. If your circumstances change between offer and settlement (for example, you become a joint owner of an inherited property), the FTB position can change too."
   - question: "Can I get FTB relief retrospectively if I forgot to claim?"
-    answer: "Yes, within statutory time limits. An LBTT return can be amended within 12 months of the original return under LBTT(S)A 2013 s.83. Beyond that, a repayment claim for overpaid tax must be made within 5 years of the original return due date under Sch 3 para 7. If you completed your Scottish first-home purchase and the return was filed without a FTB relief claim, your solicitor or accountant can amend or claim repayment within those windows. The buyer should retain evidence of FTB eligibility (no prior dwelling ownership anywhere) in case Revenue Scotland queries the claim."
+    answer: "Yes, within statutory time limits. An LBTT return can be amended within 12 months of the original return under LBTT(S)A 2013 s.83. Beyond that, a repayment claim for overpaid tax must be made within 5 years of the original return due date under Sch 3 para 7. If you completed your Scottish first-home purchase and the return was filed without a FTB relief claim, your solicitor or accountant can amend or claim repayment within those windows. Keep your evidence of FTB eligibility (no prior dwelling ownership anywhere) in case Revenue Scotland queries the claim."
 dateModified: "2026-05-26"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
@@ -47,13 +47,13 @@ reviewedAt: "2026-05-26"
 editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream of the existing Scottish LBTT FTB mechanics deep page and the main rates pillar; written for the buyer making their first Scottish home purchase rather than for the adviser walking the statutory test. Surfaces the four facts a Scottish FTB must know (LBTT not SDLT; £145k standard nil rising to £175k FTB; £600 max saving; 30-day Revenue Scotland return) and walks the buyer-milestone timeline. Foregrounds the no-upper-value-cap structural distinctive against England's £500,000 withdrawal threshold, and the overseas-prior-ownership trap that catches returning expatriates."
 ---
 
-<p>Buying your first home in Scotland in 2026/27 puts you inside a property-transfer tax regime with a completely separate rule book from England and Wales. Four facts every Scottish first-time buyer should know before they sign missives: the tax is Land and Buildings Transaction Tax, not Stamp Duty Land Tax; the standard nil-rate band is £145,000, rising to £175,000 if you qualify as a first-time buyer; the maximum saving from first-time buyer relief is £600, with no upper property-value ceiling; and the return to Revenue Scotland is due within 30 days of completion, not 14 days as in England.</p>
+<p>Buying your first home in Scotland in 2026/27 puts you inside a property-transfer tax regime with a completely separate rule book from England and Wales, and getting it wrong (an English calculator, a parent on the title, an unsold flat abroad) can turn a small bill into a five-figure one. Four facts to nail down before you sign missives: the tax is Land and Buildings Transaction Tax, not Stamp Duty Land Tax; the standard nil-rate band is £145,000, rising to £175,000 if you qualify as a first-time buyer; the maximum saving from first-time buyer relief is £600, with no upper property-value ceiling; and the return to Revenue Scotland is due within 30 days of completion, not 14 days as in England.</p>
 
-<p>This onboarding guide walks the Scottish buyer-journey from the moment you start house-hunting to the moment your conveyancer files the return. If you want the technical-test deep-dive instead, the <a href="/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics">Scottish LBTT first-time buyer relief mechanics page</a> covers eligibility tests, claim procedure, and the joint-buyer rule in depth. The <a href="/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide">Scottish LBTT main rates pillar</a> covers the underlying band table that the FTB relief sits on top of, for all residential buyers (not just first-timers).</p>
+<p>What follows takes you from the moment you start house-hunting to the moment your conveyancer files the return. If you want the technical detail, our guide to <a href="/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics">Scottish LBTT first-time buyer relief</a> sets out the eligibility tests, the claim procedure, and the joint-buyer rule in depth, and the underlying band table that the relief sits on top of is in our guide to <a href="/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide">Scottish LBTT rates and bands</a> for all residential buyers, not just first-timers.</p>
 
-<h2>Why LBTT instead of SDLT, the one-paragraph history</h2>
+<h2>Why you pay LBTT in Scotland, not SDLT</h2>
 
-<p>Property-transfer tax in Scotland was devolved under the Scotland Act 2012 and replaced on 1 April 2015 by the Land and Buildings Transaction Tax (Scotland) Act 2013 ("LBTT(S)A 2013"). LBTT is administered by Revenue Scotland (not HMRC), under its own statute, with its own band structure, its own surcharge regime (the Additional Dwelling Supplement, or ADS), its own first-time buyer relief, and its own tribunal route for disputes. SDLT no longer applies anywhere in Scotland. The English and Northern Irish SDLT regime is a different rule book from start to finish, and Scottish first-time buyers should not rely on SDLT guidance, calculators, or rules of thumb pulled from English sources.</p>
+<p>Property-transfer tax in Scotland was devolved under the Scotland Act 2012 and replaced on 1 April 2015 by the Land and Buildings Transaction Tax (Scotland) Act 2013 ("LBTT(S)A 2013"). LBTT is administered by Revenue Scotland (not HMRC), under its own statute, with its own band structure, its own surcharge regime (the Additional Dwelling Supplement, or ADS), its own first-time buyer relief, and its own tribunal route for disputes. SDLT no longer applies anywhere in Scotland. The English and Northern Irish SDLT regime is a different rule book from start to finish, so do not rely on SDLT guidance, calculators, or rules of thumb pulled from English sources.</p>
 
 <h2>Before you make an offer, the four facts that drive your tax</h2>
 
@@ -68,9 +68,9 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <p>Compare this to the equivalents in England, where the standard SDLT nil band is £125,000, the FTB regime gives a £300,000 nil band tapering to nothing at £500,000, and the SDLT return is due within 14 days. And to Wales, where there is no separate first-time buyer regime at all, but the universal Welsh LTT nil band of £225,000 covers most first-home purchases below that price point by default.</p>
 
-<h2>The rate table you actually pay, worked examples</h2>
+<h2>What you actually pay: the LBTT rate table and worked examples</h2>
 
-<p>The main residential LBTT rate table for 2026/27 (purchaser does not own another dwelling), with the FTB nil-band uplift in brackets:</p>
+<p>Here is the main residential LBTT rate table for 2026/27, assuming you do not own another dwelling, with the FTB nil-band uplift in brackets:</p>
 
 <ul>
 <li>£0 to £145,000 (£0 to £175,000 if FTB): 0%</li>
@@ -114,7 +114,7 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <p><strong>Does your partner own (or have they ever owned) a dwelling anywhere?</strong> A partner with a prior London shared-ownership stake, a partner with a current flat in Berlin, a partner with an inherited 10% share in a family home, all disqualify the joint relief. The planning route is the same as for parents: keep the non-qualifying partner off title and use a deposit contribution off-title.</p>
 
-<p><strong>Are you returning to Scotland after owning property abroad?</strong> The worldwide ownership test catches returning expatriates. A UK national who spent ten years in Dubai and owned a small apartment there before relocating back to Scotland and buying their first UK home cannot claim Scottish FTB relief. Worse, if the Dubai property has not been sold by the effective date, ADS at 8% applies on the entire Scottish purchase. Returning-expat buyers should plan the timing of the overseas sale and the Scottish purchase carefully.</p>
+<p><strong>Are you returning to Scotland after owning property abroad?</strong> The worldwide ownership test catches returning expatriates. If you spent ten years in Dubai and owned a small apartment there before relocating back to Scotland to buy your first UK home, you cannot claim Scottish FTB relief. And if the Dubai property has not been sold by the effective date, ADS at 8% applies on the entire Scottish purchase. Plan the timing of the overseas sale and the Scottish purchase carefully.</p>
 
 <h2>Between missives and settlement, what your solicitor is doing</h2>
 
@@ -126,11 +126,11 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <p>The LBTT return is due to Revenue Scotland within 30 days of the effective date under LBTT(S)A 2013 s.29. The 30-day window is double the 14-day SDLT window in England and Northern Ireland but is not a relaxation: late returns attract penalties under LBTT(S)A 2013 Sch 10. Payment of the LBTT (if any) is required by the same deadline; the return cannot be processed and the title cannot be registered until the LBTT is paid or relieved.</p>
 
-<p>If your solicitor filed the return without claiming FTB relief (a common slip where the buyer did not mention prior residential history clearly), the return can be amended within 12 months under LBTT(S)A 2013 s.83. Beyond 12 months, a repayment claim must be made within 5 years of the original return due date.</p>
+<p>If your solicitor filed the return without claiming FTB relief (a common slip where you did not mention your prior residential history clearly), the return can be amended within 12 months under LBTT(S)A 2013 s.83. Beyond 12 months, a repayment claim must be made within 5 years of the original return due date.</p>
 
 <h2>The ADS-and-FTB trap for buyers with another dwelling</h2>
 
-<p>The Additional Dwelling Supplement at 8% (raised from 6% on 5 December 2024) is the structurally most expensive feature of the Scottish LBTT regime and the most common pitfall for buyers who think of themselves as first-time buyers but already own (or are joint-owners of) another dwelling anywhere in the world.</p>
+<p>The Additional Dwelling Supplement at 8% (raised from 6% on 5 December 2024) is the most expensive feature of the Scottish LBTT regime, and the most common trap if you think of yourself as a first-time buyer but already own, or jointly own, another dwelling anywhere in the world.</p>
 
 <p>ADS applies to anyone buying a Scottish residential property who already owns another residential dwelling worth £40,000 or more anywhere in the world at the effective date. The 8% rate is charged on the entire Scottish purchase price, not on a marginal-band basis. If any joint buyer triggers ADS, the whole transaction is caught.</p>
 
@@ -151,7 +151,7 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <h2>How Scottish FTB relief compares to England and Wales</h2>
 
-<p>The cross-jurisdictional table on first-time-buyer treatment across the three property-transfer-tax regimes:</p>
+<p>First-time buyer treatment differs sharply across the three property-transfer-tax regimes:</p>
 
 <ul>
 <li><strong>England and Northern Ireland (SDLT under FA 2003):</strong> FTB nil band of £300,000 (versus the standard £125,000), 5% rate on the slice between £300,001 and £500,000, full withdrawal above £500,000. An English FTB at £400,000 saves £5,000 against the standard SDLT calculation. An English FTB at £600,000 saves nothing.</li>
@@ -161,7 +161,7 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <p>Crossover points worth knowing if you are choosing between locations or comparing offers across the border. At £200,000, a Scottish FTB pays £500, an English FTB pays £0, a Welsh buyer (FTB or not) pays £0. At £300,000, a Scottish FTB pays £2,500, an English FTB pays £0, a Welsh buyer pays £3,750. At £500,000, a Scottish FTB pays £21,750, an English FTB pays £10,000, a Welsh buyer pays £14,750. At £700,000, a Scottish FTB pays £43,750, an English FTB pays £22,500 (no FTB relief at this price), a Welsh buyer pays £32,750.</p>
 
-<p>The Scottish regime is structurally less generous at the low end of the FTB market but more generous (and predictable) at the high end. For cross-jurisdictional context on the Welsh position, see our <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer mechanics page</a>; for the English regime, see the <a href="/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers">SDLT first-time buyer rates page</a>.</p>
+<p>The Scottish regime is less generous at the low end of the first-time buyer market but more generous, and more predictable, at the high end. For the Welsh position, see our guide to <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer relief</a>, and for the English regime our guide to <a href="/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers">SDLT rates for first-time buyers</a>.</p>
 
 <h2>Common mistakes Scottish first-time buyers make</h2>
 
@@ -175,15 +175,15 @@ editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream
 
 <p><strong>Treating the £600 saving as a flat credit.</strong> The saving is a nil-band uplift; at purchase prices below £175,000 the saving is smaller. A £150,000 FTB purchase saves only £100, not £600.</p>
 
-<h2>Where this page fits in the wider Scottish LBTT cluster</h2>
+<h2>Where to read more</h2>
 
-<p>This page is the buyer-journey onboarding layer. Once you have the picture, the deep-dive pages are:</p>
+<p>To go deeper on any one piece:</p>
 
 <ul>
-<li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics">Scottish LBTT first-time buyer relief mechanics page</a> walks the Sch 4A eligibility test, the joint-buyer rule, the intention-to-occupy condition, and the three Scottish worked examples in detail.</li>
-<li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide">Scottish LBTT main rates pillar</a> covers the underlying 2026/27 band table for all residential buyers, not just first-timers.</li>
-<li>The <a href="/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers">Scottish ADS at 8% page</a> covers the additional-dwelling-supplement mechanics that catch buyers with prior or concurrent property.</li>
-<li>For cross-jurisdictional readers, the <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer position page</a> covers the policy-absence Welsh framing.</li>
+<li>For the full Sch 4A eligibility test, the joint-buyer rule, the intention-to-occupy condition, and three Scottish worked examples, see our guide to <a href="/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics">Scottish LBTT first-time buyer relief</a>.</li>
+<li>For the underlying 2026/27 band table that applies to all residential buyers, not just first-timers, see our guide to <a href="/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide">Scottish LBTT rates and bands</a>.</li>
+<li>If you already own (or have ever owned) another property, the surcharge is set out in our guide to the <a href="/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers">Scottish Additional Dwelling Supplement at 8%</a>.</li>
+<li>And for how Wales handles first-time buyers, see our guide to <a href="/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland">Welsh LTT first-time buyer relief</a>.</li>
 </ul>
 
-<p>The Scottish LBTT regime is its own rule book. The £175,000 FTB nil band, the £600 maximum saving with no upper ceiling, the 8% ADS, and the 30-day Revenue Scotland return are the four anchors every first-time Scottish buyer should be able to recite before they sign missives. Get those right and the rest of the conveyancing process is the same as anywhere else in the UK.</p>
+<p>The Scottish LBTT regime is its own rule book. The £175,000 FTB nil band, the £600 maximum saving with no upper ceiling, the 8% ADS, and the 30-day Revenue Scotland return are the four numbers to have straight before you sign missives. Get those right and the rest of the conveyancing process is the same as anywhere else in the UK.</p>
