@@ -34,12 +34,6 @@ export function CalculatorPageResources({
   slug: string;
   pageTitle?: string;
 }) {
-  // KILL-SWITCH: the on-page premium tool/gate rendered badly and is DISABLED
-  // until redesigned. Calculator pages show only the existing calculator. Flip
-  // to true to re-enable. Guides/personalisation/calculators are unaffected.
-  const SHOW_ONPAGE_RESOURCES = false;
-  if (!SHOW_ONPAGE_RESOURCES) return null;
-
   const topic = topicForCalcSlug(slug);
   if (!topic) return null;
 
