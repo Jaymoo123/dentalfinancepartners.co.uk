@@ -24,7 +24,7 @@ faqs:
   - question: "When does Making Tax Digital for Income Tax start for Edinburgh landlords?"
     answer: "Making Tax Digital for Income Tax is now phased in by qualifying income. It applies from 6 April 2026 if your combined self-employment and property income is above £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. In scope, you keep digital records and send quarterly updates using compatible software, then finalise after the tax year. Jointly owned property is tested against your share of gross income, not the property's total. Limited companies are outside MTD for Income Tax and continue to file company tax returns."
   - question: "What changes for property income from April 2027?"
-    answer: "From 6 April 2027 the rest-of-UK property income rates rise by 2 percentage points to 22% basic, 42% higher and 47% additional under the Finance Act 2026. These figures do not apply directly to Scottish taxpayers: the Finance Act 2026 (section 8 and Schedule 2, amending the Scotland Act 1998) provides that property income rates for Scottish taxpayers are set separately by the Scottish Parliament. An Edinburgh landlord should model the Scottish position once the 2027/28 Scottish rates are set, rather than assuming the 22/42/47 figures."
+    answer: "From 6 April 2027 the rest-of-UK property income rates rise by 2 percentage points to 22% basic, 42% higher and 47% additional under the Finance Act 2026. These figures do not apply directly to Scottish taxpayers: the Finance Act 2026 (section 8 and Schedule 2, amending the Scotland Act 1998) provides that property income rates for Scottish taxpayers are set separately by the Scottish Parliament. Model your Scottish position once the 2027/28 Scottish rates are set, rather than assuming the 22/42/47 figures."
   - question: "I run a short-term let in Edinburgh. What do I need to know?"
     answer: "Two things changed the picture. First, the Furnished Holiday Lettings tax regime was abolished from 6 April 2025, so former holiday lets are now taxed as standard residential lettings: Section 24 applies, and the old FHL reliefs (such as full capital allowances and Business Asset Disposal Relief) are no longer available. Second, the whole of the City of Edinburgh is a short-term let control zone, so using a property as a secondary letting generally needs planning permission for change of use as well as a short-term let licence. A specialist can model the post-FHL tax position and flag the compliance steps."
   - question: "How does capital gains tax work when I sell an Edinburgh rental?"
@@ -34,16 +34,16 @@ faqs:
   - question: "What about non-resident landlords who own property in Edinburgh?"
     answer: "Non-resident landlords come under the Non-Resident Landlord Scheme, which can mean tax withheld by your letting agent or tenant unless HMRC approves receipt of rent gross. You may also have double taxation treaty considerations, and non-residents must file a 60-day return for every UK property disposal, regardless of whether tax is due. A specialist coordinates the UK reporting with your home-country position."
   - question: "How do property accountants usually charge?"
-    answer: "Fees vary with portfolio size, structure (personal versus company), and whether you are in scope for Making Tax Digital. Rather than quote numbers here, we explain how property accountants typically structure their fees in a separate guide, and a short discovery call is the quickest way to get a clear picture for your situation. Use the form on this page and we will match you with a specialist who works with Edinburgh landlords."
+    answer: "Fees vary with portfolio size, structure (personal versus company), and whether you are in scope for Making Tax Digital, so a number quoted cold rarely fits your situation. A short discovery call is the quickest way to get a clear picture for what you actually need. Use the form on this page and we will match you with a specialist who works with Edinburgh landlords."
 ---
 
 <p>Owning rental property in Edinburgh means living in two tax systems at once. You deal with devolved Scottish taxes (Scottish income tax bands, Land and Buildings Transaction Tax, and the Additional Dwelling Supplement) and, at the same time, the UK-wide rules that apply everywhere (Section 24, Making Tax Digital for Income Tax, and capital gains tax on residential property). Add Edinburgh's city-wide short-term let control zone and mandatory landlord registration, and the case for a specialist <strong>property accountant in Edinburgh</strong> becomes clear.</p>
 
-<p>This guide explains where Scottish rules diverge from the rest of the UK, what changed for 2026 and 2027, and how a specialist keeps an Edinburgh portfolio compliant and tax-efficient. The lead form on this page matches you with an accountant who works with Scottish landlords day in, day out.</p>
+<p>Get the Scottish side wrong and you can overpay on a purchase, miss a relief, or trip a deadline that a generalist working to English rules never sees coming. The Scottish rules diverge in specific places, several of them changed for 2026 and 2027, and that is where a specialist earns the fee on an Edinburgh portfolio. The lead form on this page matches you with an accountant who works with Scottish landlords day in, day out.</p>
 
 <h2>Why Edinburgh Landlords Need Scotland-Aware Tax Advice</h2>
 
-<p>The single biggest reason is that a general accountant outside Scotland may default to rest-of-UK assumptions that simply do not apply here. The areas where Edinburgh diverges are:</p>
+<p>A general accountant outside Scotland often defaults to rest-of-UK assumptions that simply do not hold here, and you are the one who pays for the gap. The areas where Edinburgh diverges:</p>
 
 <ul>
 <li><strong>Scottish income tax:</strong> rental profit is non-savings income, so it is taxed at Scottish rates. Scotland has six bands (starter, basic, intermediate, higher, advanced, and top) rather than three, and the higher, advanced, and top rates sit above the equivalent rest-of-UK rates. The thresholds also differ. Savings and dividend income, by contrast, stay on UK-wide rates.</li>
@@ -83,7 +83,7 @@ faqs:
 
 <h2>Property Income Changes from April 2027</h2>
 
-<p>From <strong>6 April 2027</strong> the rest-of-UK property income rates rise by 2 percentage points to <strong>22% basic, 42% higher and 47% additional</strong> under the Finance Act 2026. These figures do not apply directly to Scottish taxpayers: the Finance Act 2026 (section 8 and Schedule 2) provides that property income rates for Scottish taxpayers are set separately by the Scottish Parliament. An Edinburgh landlord should model the Scottish position once the 2027/28 Scottish rates are set. We cover the detail in our guide to the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates</a>.</p>
+<p>From <strong>6 April 2027</strong> the rest-of-UK property income rates rise by 2 percentage points to <strong>22% basic, 42% higher and 47% additional</strong> under the Finance Act 2026. These figures do not apply directly to Scottish taxpayers: the Finance Act 2026 (section 8 and Schedule 2) provides that property income rates for Scottish taxpayers are set separately by the Scottish Parliament. Model your Scottish position once the 2027/28 Scottish rates are set, rather than assuming the rest-of-UK figures carry across. Our guide to the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates</a> has the detail.</p>
 
 <h2>Edinburgh Market Segments and Their Tax Quirks</h2>
 
@@ -125,7 +125,7 @@ faqs:
 <li>Non-resident landlord scheme compliance and treaty claims</li>
 </ul>
 
-<p>If you are weighing up whether to engage one, our guides on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> and <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> are good starting points, and for cost expectations see <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">how property accountants charge</a>. If you also hold property in the west, our sibling guide for landlords in <a href="/blog/property-accountant-services/property-accountant-glasgow">Glasgow</a> covers the same Scottish rules from that market's angle.</p>
+<p>If you are weighing up whether to engage one, our guides on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> and <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> are good starting points, and for cost expectations see <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">how property accountants charge</a>. If you also hold property in the west, our guide for landlords in <a href="/blog/property-accountant-services/property-accountant-glasgow">Glasgow</a> covers the same Scottish rules from that market's angle.</p>
 
 <h2>Getting Matched</h2>
 
