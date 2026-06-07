@@ -11,7 +11,7 @@ metaDescription: "Yield vs ROI for UK property: when to use each, how mortgage l
 altText: "UK property investor comparing rental yield against return on investment figures with property documents and a laptop"
 image: ""
 h1: "Rental Yield vs ROI: What's the Difference for UK Property Investors?"
-summary: "Yield and ROI answer two different questions. Yield measures income against property value; ROI measures total return against the cash you actually put in. This guide shows when to use each, how mortgage leverage and cash-on-cash return split the two metrics apart, and how the after-tax picture diverges under Section 24 and the 2027/28 property income tax rates."
+summary: "Yield and ROI answer two different questions. Yield measures income against property value; ROI measures total return against the cash you actually put in. Knowing when to use each, how mortgage leverage and cash-on-cash return split the two metrics apart, and how the after-tax picture diverges under Section 24 and the 2027/28 property income tax rates is what stops you backing the wrong number."
 schema: ""
 faqs:
   - question: "What is the difference between rental yield and ROI?"
@@ -46,7 +46,7 @@ faqs:
 
 <p>Ask two landlords whether a property is a good buy and you will often get two different numbers: one quotes the <strong>rental yield</strong>, the other quotes the <strong>ROI</strong>. Both can be right, because they are not measuring the same thing. Yield measures how hard the property's value works as an income asset. ROI measures how hard the cash you actually invested works, and it can include capital growth as well as income.</p>
 
-<p>This guide is about the comparison itself: when to reach for yield, when to reach for ROI, how mortgage leverage and cash-on-cash return pull the two apart, and how the after-tax picture diverges under Section 24 and the 2027/28 property income tax rates. If you want the step-by-step yield formulas and a costs checklist, those live in our <a href="/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords">rental yield calculator guide</a>; here we focus on choosing and reconciling the two metrics.</p>
+<p>Get the comparison wrong and you can talk yourself into a thin-deposit purchase that looks brilliant on ROI and cannot survive a single void, or pass on a low-yield property that would have built real equity. So the question that matters is when to reach for yield, when to reach for ROI, how mortgage leverage and cash-on-cash return pull the two apart, and how the after-tax picture diverges under Section 24 and the 2027/28 property income tax rates. For the step-by-step yield formulas and a costs checklist, see our <a href="/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords">rental yield calculator guide</a>.</p>
 
 <h2>Rental yield vs ROI: the comparison at a glance</h2>
 
@@ -99,17 +99,17 @@ faqs:
 </tbody>
 </table>
 
-<p>The two rows that do the real work are <em>denominator</em> and <em>sensitive to financing</em>. Yield always divides by the property's value, so it is the same for every buyer. ROI divides by your cash, so it changes the moment leverage enters the picture. Everything else in this guide follows from that single split.</p>
+<p>The two rows that do the real work are <em>denominator</em> and <em>sensitive to financing</em>. Yield always divides by the property's value, so it is the same for every buyer. ROI divides by your cash, so it changes the moment leverage enters the picture. Almost every difference between the two metrics traces back to that single split.</p>
 
 <h2>Yield in one minute</h2>
 
-<p>Yield is the income metric. There are two versions, and you only need the headline of each here because the full method, the expense checklist and the benchmarks all sit on dedicated cluster pages.</p>
+<p>Yield is the income metric, and it comes in two versions. The headline of each is all you need to see how it diverges from ROI.</p>
 
 <p><strong>Gross yield</strong> is (annual rent ÷ property value) × 100. It ignores every cost, so it overstates real returns and is only useful as a quick first-pass filter. A property let at £15,600 a year against a £200,000 value shows a gross yield of 7.8%.</p>
 
 <p><strong>Net yield</strong> is ((annual rent − annual running costs) ÷ property value) × 100. It deducts insurance, maintenance, letting fees, void allowance and so on, giving a realistic income picture. The same property with £4,800 of annual costs shows a net yield of 5.4%.</p>
 
-<p>That is as far as we go on the formulas. For the full walkthrough and a costs checklist use our <a href="/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords">rental yield calculator guide</a>; to sense-check whether your figure is any good, see <a href="/blog/portfolio-management/what-is-good-gross-yield-buy-to-let-property-2026">what counts as a good gross yield in 2026</a> and our <a href="/blog/portfolio-management/property-investment-benchmarks-uk-2026-good-yield">regional yield benchmarks</a>. The rest of this page is about what yield cannot tell you, and where ROI takes over.</p>
+<p>For the full walkthrough and a costs checklist, use our <a href="/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords">rental yield calculator guide</a>. To sense-check whether your figure is any good, see <a href="/blog/portfolio-management/what-is-good-gross-yield-buy-to-let-property-2026">what counts as a good gross yield in 2026</a> and our <a href="/blog/portfolio-management/property-investment-benchmarks-uk-2026-good-yield">regional yield benchmarks</a>. What yield cannot tell you is where ROI takes over.</p>
 
 <h2>Why leverage splits ROI away from yield</h2>
 
@@ -125,7 +125,7 @@ faqs:
 
 <p><strong>Mortgaged buyer.</strong> Same property, but a 25% deposit (£50,000) plus £3,000 of purchase costs, so £53,000 of cash invested, with £100,000-plus borrowed. Say mortgage interest is £6,000 a year. Net income after interest is £10,800 − £6,000 = £4,800. Income-only ROI is (£4,800 ÷ £53,000) × 100, about <strong>9.1%</strong>. The yield is unchanged, but the income-only ROI is far higher because the smaller cash base does the dividing.</p>
 
-<p>That £4,800-against-£53,000 figure is really <strong>cash-on-cash return</strong>: annual pre-tax cash flow divided by total cash invested. It is the income-only sibling of ROI and the metric most active landlords live by, because it answers a question yield cannot: how hard is my deposit working this year? We keep the cash-on-cash and net-income mechanics light here on purpose; the full per-property profit-and-loss method lives in our <a href="/blog/portfolio-management/track-rental-property-profitability-per-property-pl-guide">per-property profit tracking guide</a> and the net-income detail in our <a href="/blog/landlord-tax-essentials/how-to-calculate-net-rental-income-after-all-costs-uk-guide">net rental income guide</a>.</p>
+<p>That £4,800-against-£53,000 figure is really <strong>cash-on-cash return</strong>: annual pre-tax cash flow divided by total cash invested. It is the income-only version of ROI, and the number most active landlords live by, because it answers a question yield cannot: how hard is your deposit working this year? For the full per-property profit-and-loss method, see our <a href="/blog/portfolio-management/track-rental-property-profitability-per-property-pl-guide">per-property profit tracking guide</a>, and for the net-income detail, our <a href="/blog/landlord-tax-essentials/how-to-calculate-net-rental-income-after-all-costs-uk-guide">net rental income guide</a>.</p>
 
 <aside>
 <p><strong>Not sure which number to lead with for your portfolio?</strong> A specialist property accountant can model yield, cash-on-cash and total-return ROI on the same property so you are comparing like with like before you commit. Get in touch to talk through your numbers.</p>
@@ -154,13 +154,13 @@ faqs:
 
 <h2>The after-tax gap: where yield and ROI really diverge</h2>
 
-<p>Every figure so far has been pre-tax, and pre-tax is where most yield-vs-ROI comparisons quietly mislead. Tax does not hit yield and ROI evenly, because it depends on how you own the property and how it is financed. This is the layer competitors almost always skip, and it is where the comparison earns its keep.</p>
+<p>Every figure so far has been pre-tax, and pre-tax is where most yield-vs-ROI comparisons quietly mislead you. Tax does not hit yield and ROI evenly, because the bill depends on how you own the property and how it is financed. This is the layer most headline numbers skip, and it is where the comparison earns its keep.</p>
 
 <h3>Individual ownership and Section 24</h3>
 
-<p>For an individual landlord, <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">rental profit is taxed at your marginal rate</a> (20%, 40% or 45% for 2026/27). The catch is finance costs. Under <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">Section 24</a>, individual landlords can no longer deduct mortgage interest as an expense; instead they receive a basic-rate tax reducer, set at 20% for 2026/27 and given under ITTOIA 2005 s.274AA.</p>
+<p>Own property in your own name and your <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">rental profit is taxed at your marginal rate</a> (20%, 40% or 45% for 2026/27). The catch is finance costs. Under <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">Section 24</a>, you can no longer deduct mortgage interest as an expense; instead you receive a basic-rate tax reducer, set at 20% for 2026/27 and given under ITTOIA 2005 s.274AA.</p>
 
-<p>The effect is sharpest on exactly the geared properties that show the most flattering pre-tax ROI. Consider the mortgaged buyer above with £4,800 of cash flow after £6,000 of interest. For tax, the profit is calculated <em>before</em> deducting that interest as an expense, so the taxable profit is closer to £10,800. A higher-rate landlord pays 40% on £10,800 (£4,320) and receives a 20% reducer on the £6,000 of interest (£1,200), an after-reducer tax bill of about £3,120 against £4,800 of actual cash flow. The pre-tax cash-on-cash return of roughly 9.1% falls to nearer 3.2% after tax. The pre-tax yield barely moves on a tax-adjusted basis, but the leveraged ROI takes the heavier hit, precisely because Section 24 bites hardest where the borrowing is heaviest.</p>
+<p>The effect is sharpest on exactly the geared properties that show the most flattering pre-tax ROI. Take the mortgaged buyer above with £4,800 of cash flow after £6,000 of interest. For tax, the profit is calculated <em>before</em> deducting that interest as an expense, so the taxable profit is closer to £10,800. If you are a higher-rate taxpayer, you pay 40% on £10,800 (£4,320) and receive a 20% reducer on the £6,000 of interest (£1,200), an after-reducer tax bill of about £3,120 against £4,800 of actual cash flow. The pre-tax cash-on-cash return of roughly 9.1% falls to nearer 3.2% after tax. The pre-tax yield barely moves on a tax-adjusted basis, but the leveraged ROI takes the heavier hit, precisely because Section 24 bites hardest where the borrowing is heaviest.</p>
 
 <h3>From April 2027: separate property income tax rates</h3>
 
@@ -168,7 +168,7 @@ faqs:
 
 <h3>Company ownership changes the maths</h3>
 
-<p>Companies are not subject to Section 24, so a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> deducts mortgage interest in full before corporation tax. On a heavily geared property that can lift the after-tax net yield and after-tax ROI relative to higher-rate personal ownership. Corporation tax for 2026/27 is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief in between (an effective rate of roughly 26.5% in that band). The trade-offs are real, though: extra running costs, the tax cost of extracting profit through dividends or salary, and the fact that retained company profit is not cash in your hand. A company can improve the on-paper ROI while leaving your personal spendable return broadly unchanged until you draw the money out, so the structure decision is reader-specific rather than a default.</p>
+<p>Companies are not subject to Section 24, so a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> deducts mortgage interest in full before corporation tax. On a heavily geared property that can lift the after-tax net yield and after-tax ROI relative to higher-rate personal ownership. Corporation tax for 2026/27 is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief in between (an effective rate of roughly 26.5% in that band). The trade-offs are real, though: extra running costs, the tax cost of extracting profit through dividends or salary, and the fact that retained company profit is not cash in your hand. A company can improve the on-paper ROI while leaving your personal spendable return broadly unchanged until you draw the money out, so the right structure depends on your own numbers rather than being a default.</p>
 
 <aside>
 <p><strong>The after-tax comparison is where ownership structure decisions are won or lost.</strong> Modelling personal versus company ownership on your real numbers, with Section 24 and the 2027/28 rates applied, is exactly the work a specialist property accountant does. Talk to us before you restructure.</p>

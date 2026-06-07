@@ -10,15 +10,15 @@ metaDescription: "UK tax residency and domicile primer: FA 2013 Sch 45 SRT casca
 altText: "UK tax residency and domicile primer with statutory residence test cascade and long-term resident test for property investors"
 image: ""
 h1: "UK Tax Residency and Domicile for Property Investors: The Statutory Residence Test, the End of the Domicile Concept for Income and CGT, the New Long-Term Resident Test for IHT, and How Each Drives Your UK Property Tax Position"
-summary: "UK tax residence and UK domicile are two distinct legal concepts. From 6 April 2025, UK tax residence drives income tax and CGT under the Statutory Residence Test at FA 2013 Schedule 45, and substantially drives IHT via the Long-Term Resident test at IHTA 1984 ss.6A-6C. UK domicile no longer drives income tax or CGT and only residually operates for IHT trust mechanics, private international law, and certain DTA contexts. This page walks through the SRT cascade, the LTR test, the split-year cases, and the property-investor angles, then routes you to the deep-dive pages on FIG, TRF, CGT rebasing, and the IHT LTR architecture."
+summary: "UK tax residence and UK domicile are two distinct legal concepts. From 6 April 2025, UK tax residence drives income tax and CGT under the Statutory Residence Test at FA 2013 Schedule 45, and substantially drives IHT via the Long-Term Resident test at IHTA 1984 ss.6A-6C. UK domicile no longer drives income tax or CGT and only residually operates for IHT trust mechanics, private international law, and certain DTA contexts. Work out which side of the SRT cascade and the 10-of-20 LTR test you sit on, claim the split-year case that fits your move, and you control when UK tax bites on your worldwide income, gains and estate."
 schema: ""
 faqs:
   - question: "What is UK tax residence and how is it determined?"
     answer: "UK tax residence is determined by the Statutory Residence Test (SRT) at Finance Act 2013 Schedule 45. Three-stage cascade: (1) automatic non-residence tests, (2) automatic UK residence tests, (3) sufficient ties test. Residence is determined tax year by tax year. Naive 183-day-counting misses the cascade structure and the ties analysis."
   - question: "What are the SRT automatic non-residence tests?"
-    answer: "Three. First, fewer than 16 days in the UK if UK-resident in any of the 3 preceding tax years. Second, fewer than 46 days if not UK-resident in any of the 3 preceding tax years. Third, full-time work overseas with limited UK presence as defined in FA 2013 Sch 45 para 14. Meeting any one of the three makes the individual automatically non-resident for the year."
+    answer: "Three. First, fewer than 16 days in the UK if UK-resident in any of the 3 preceding tax years. Second, fewer than 46 days if not UK-resident in any of the 3 preceding tax years. Third, full-time work overseas with limited UK presence as defined in FA 2013 Sch 45 para 14. Meet any one of the three and you are automatically non-resident for the year."
   - question: "What are the SRT automatic UK residence tests?"
-    answer: "Three. First, 183 or more days in the UK in the tax year. Second, the UK home test (the only home is in the UK, or all homes are UK-based and the individual is present for 91 or more days in the year). Third, full-time work in the UK over a 365-day period crossing the tax year. Meeting any one makes the individual automatically UK-resident."
+    answer: "Three. First, 183 or more days in the UK in the tax year. Second, the UK home test (your only home is in the UK, or all your homes are UK-based and you are present for 91 or more days in the year). Third, full-time work in the UK over a 365-day period crossing the tax year. Meet any one and you are automatically UK-resident."
   - question: "What is the sufficient ties test?"
     answer: "FA 2013 Sch 45 paras 17 to 20. Four ties for arrivers (family, accommodation, work, 90-day) and a fifth tie for leavers (country tie, requiring more days in the UK than in any other single country). The number of ties combined with day-count determines residence per the FA 2013 Sch 45 table. Typically for arrivers: 16 to 45 days needs all 4 ties; 46 to 90 days needs 3 ties; 91 to 120 days needs 2 ties; 121 to 182 days needs 1 tie. The leaver table is harsher."
   - question: "What is split-year treatment and when does it apply?"
@@ -42,45 +42,45 @@ reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: "2026-05-26"
 ---
 
-<p>UK tax residence and UK domicile are two distinct legal concepts. From 6 April 2025, UK tax residence drives income tax and CGT under the Statutory Residence Test at <a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45" rel="nofollow noopener" target="_blank">FA 2013 Schedule 45</a>, and substantially drives IHT via the Long-Term Resident test at <a href="https://www.legislation.gov.uk/ukpga/1984/51/contents" rel="nofollow noopener" target="_blank">IHTA 1984 ss.6A-6C</a>. UK domicile no longer drives income tax or CGT and only residually operates for IHT trust mechanics, private international law, and certain double taxation agreements.</p>
+<p>Get your residence or domicile position wrong and the cost is rarely small: a missed split-year claim can leave a whole year of foreign income inside UK tax, and crossing the 10-year residence line quietly pulls your worldwide estate into UK inheritance tax. Two separate concepts decide all of this, and they no longer work the way most older commentary assumes.</p>
 
-<p>This page is the hub primer for the entire residence-and-domicile cluster. It walks through the SRT cascade, the new LTR test, the split-year Cases, the temporary-non-residence anti-avoidance, the NRL scheme and NRCGT continuity points for UK-property investors, and then routes the reader to the four existing deep-dive pages on FIG, TRF, CGT rebasing, and the IHT LTR architecture. For the historical context on what the remittance basis was and what replaced it, see the companion <a href="/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals">remittance basis page</a>.</p>
+<p>UK tax residence and UK domicile are two distinct legal concepts. From 6 April 2025, UK tax residence drives income tax and CGT under the Statutory Residence Test at <a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45" rel="nofollow noopener" target="_blank">FA 2013 Schedule 45</a>, and substantially drives IHT via the Long-Term Resident test at <a href="https://www.legislation.gov.uk/ukpga/1984/51/contents" rel="nofollow noopener" target="_blank">IHTA 1984 ss.6A-6C</a>. UK domicile no longer drives income tax or CGT and only residually operates for IHT trust mechanics, private international law, and certain double taxation agreements. For what the remittance basis was and what replaced it on 6 April 2025, see the <a href="/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals">remittance basis page</a>.</p>
 
 <h2>Why residence (not domicile) now drives almost everything</h2>
 
-<p>The pre-6-April-2025 framework gave domicile a privileged role: foreign-domiciled UK residents could claim the remittance basis on foreign income and gains, and the deemed-dom 15-of-20 test brought worldwide IHT exposure with a generous lag. From 6 April 2025 that architecture was rewired:</p>
+<p>The pre-6-April-2025 framework gave domicile a privileged role: if you were UK-resident but foreign-domiciled you could claim the remittance basis on foreign income and gains, and the deemed-dom 15-of-20 test brought worldwide IHT exposure with a generous lag. From 6 April 2025 that architecture was rewired:</p>
 
 <ul>
-<li><strong>Income tax and CGT.</strong> The remittance basis was abolished by FA 2025 s.40 and Schedule 9. UK residents are taxed on a worldwide arising basis, subject only to the new 4-year FIG exemption for qualifying new arrivals.</li>
-<li><strong>IHT.</strong> The historic deemed-dom architecture was replaced by the residence-based LTR test under IHTA 1984 ss.6A-6C. Worldwide-IHT exposure now depends on UK-residence pattern, not domicile.</li>
+<li><strong>Income tax and CGT.</strong> The remittance basis was abolished by FA 2025 s.40 and Schedule 9. If you are UK-resident you are taxed on a worldwide arising basis, subject only to the new 4-year FIG exemption for qualifying new arrivals.</li>
+<li><strong>IHT.</strong> The historic deemed-dom architecture was replaced by the residence-based LTR test under IHTA 1984 ss.6A-6C. Worldwide-IHT exposure now depends on your UK-residence pattern, not your domicile.</li>
 <li><strong>Trust attribution.</strong> IHTA 1984 s.48ZA (inserted by FA 2025) gives a residence-based treatment of excluded-property trusts. The settlor's residence status at the date of trust creation drives the treatment, not domicile.</li>
 </ul>
 
-<p>The headline framing is straightforward: residence is now the master concept. Domicile retains residual operation but no longer drives the mainstream UK tax position. Competitor pages still routinely discuss "non-dom status" as if it confers a current UK tax advantage; that framing is out of date.</p>
+<p>Residence is now the master concept. Domicile keeps a residual role but no longer drives your mainstream UK tax position. If anything you read still treats "non-dom status" as a live UK tax advantage in its own right, that framing is out of date.</p>
 
 <h2>The Statutory Residence Test in three stages</h2>
 
-<p>FA 2013 Sch 45 establishes a three-stage cascade. The individual works through the stages in order; the first stage that gives a clear result determines residence for that tax year.</p>
+<p>FA 2013 Sch 45 establishes a three-stage cascade. You work through the stages in order, and the first stage that gives a clear result fixes your residence for that tax year.</p>
 
 <h3>Stage 1: automatic non-residence tests</h3>
 
-<p>If any one of the three automatic non-residence tests is met, the individual is automatically non-resident for the tax year:</p>
+<p>Meet any one of the three automatic non-residence tests and you are automatically non-resident for the tax year:</p>
 
 <ul>
-<li><strong>Test 1 (the leaver test):</strong> fewer than 16 days in the UK in the tax year, AND UK-resident in any of the three preceding tax years.</li>
-<li><strong>Test 2 (the non-leaver test):</strong> fewer than 46 days in the UK in the tax year, AND NOT UK-resident in any of the three preceding tax years.</li>
+<li><strong>Test 1 (the leaver test):</strong> fewer than 16 days in the UK in the tax year, AND you were UK-resident in any of the three preceding tax years.</li>
+<li><strong>Test 2 (the non-leaver test):</strong> fewer than 46 days in the UK in the tax year, AND you were NOT UK-resident in any of the three preceding tax years.</li>
 <li><strong>Test 3 (the full-time-work-abroad test):</strong> full-time work overseas with limited UK presence and limited UK workdays, as defined in detail at Sch 45 para 14.</li>
 </ul>
 
-<p>If none of the automatic non-residence tests is met, the cascade moves to Stage 2.</p>
+<p>If you meet none of these, the cascade moves to Stage 2.</p>
 
 <h3>Stage 2: automatic UK residence tests</h3>
 
-<p>If any one of the three automatic UK residence tests is met, the individual is automatically UK-resident:</p>
+<p>Meet any one of the three automatic UK residence tests and you are automatically UK-resident:</p>
 
 <ul>
 <li><strong>Test 1:</strong> 183 or more days in the UK in the tax year. The simplest and most-common positive case.</li>
-<li><strong>Test 2 (the UK home test):</strong> the only home is in the UK, OR all homes are UK-based and the individual is present in a UK home for 91 or more days in the year.</li>
+<li><strong>Test 2 (the UK home test):</strong> your only home is in the UK, OR all your homes are UK-based and you are present in a UK home for 91 or more days in the year.</li>
 <li><strong>Test 3:</strong> full-time work in the UK over a 365-day period that straddles the tax year, subject to the detailed definition.</li>
 </ul>
 
@@ -88,7 +88,7 @@ reviewedAt: "2026-05-26"
 
 <h3>Stage 3: sufficient ties test</h3>
 
-<p>The ties test combines day-count with the number of UK ties. Four ties are available for arrivers (individuals not UK-resident in any of the three preceding tax years):</p>
+<p>The ties test combines your day-count with the number of UK ties you hold. Four ties apply to arrivers (not UK-resident in any of the three preceding tax years):</p>
 
 <ul>
 <li><strong>Family tie:</strong> spouse, civil partner, or minor child resident in the UK.</li>
@@ -97,7 +97,7 @@ reviewedAt: "2026-05-26"
 <li><strong>90-day tie:</strong> 90 or more days in the UK in either of the two preceding tax years.</li>
 </ul>
 
-<p>Leavers (individuals UK-resident in any of the three preceding tax years) also have a fifth tie:</p>
+<p>Leavers (UK-resident in any of the three preceding tax years) also pick up a fifth tie:</p>
 
 <ul>
 <li><strong>Country tie:</strong> more days in the UK than in any other single country.</li>
@@ -107,7 +107,7 @@ reviewedAt: "2026-05-26"
 
 <h2>Split-year treatment in eight cases</h2>
 
-<p>SRT determines residence on a year-as-a-whole basis. Split-year treatment under Sch 45 Part 3 allows the year to be split into a UK-resident part and a non-resident part where one of eight Cases is met. Each case has detailed conditions; the headline framings are:</p>
+<p>SRT decides residence for the year as a whole. Split-year treatment under Sch 45 Part 3 lets you split the year into a UK-resident part and a non-resident part where one of eight Cases is met. Each case has detailed conditions; in outline they are:</p>
 
 <ul>
 <li><strong>Case 1:</strong> starting full-time work overseas during the year.</li>
@@ -120,52 +120,52 @@ reviewedAt: "2026-05-26"
 <li><strong>Case 8:</strong> starting to have a UK home, in advance of becoming UK-resident under SRT.</li>
 </ul>
 
-<p>Split-year claims are not automatic. The case must be claimed in the self-assessment return for the relevant year. The benefit is significant for arrivers and leavers: income and gains in the non-resident part of the year are not within UK tax (subject to UK-source exceptions, NRL scheme, NRCGT).</p>
+<p>Split-year treatment is not automatic. You have to claim the case on your Self Assessment return for the year, and the payoff is real whether you are arriving or leaving: income and gains in the non-resident part of the year sit outside UK tax (subject to UK-source exceptions, the NRL scheme and NRCGT).</p>
 
 <aside>
-<p>Modelling the SRT cascade and identifying the appropriate split-year Case is decision-grade work. The wrong call costs years of either UK tax exposure on foreign income (where a Case is missed) or compliance pain (where a Case is claimed that does not in fact apply and HMRC successfully challenges).</p>
-<p>Property Tax Partners advises arrivers, leavers, and dual-residence individuals on SRT determination, split-year claims, and the property-tax implications of each scenario. The form at the foot of the page is the route to a structured assessment.</p>
+<p>Working through the SRT cascade and pinning down the right split-year Case is a decision you cannot afford to get wrong. Miss a Case you were entitled to and you carry years of UK tax on foreign income; claim one that does not actually apply and you face the compliance pain when HMRC challenges it and wins.</p>
+<p>Property Tax Partners advises people arriving, leaving, and holding dual residence on SRT determination, split-year claims, and the property tax that follows from each. The form at the foot of the page is the route to a structured assessment.</p>
 </aside>
 
 <h2>The new LTR test for IHT</h2>
 
-<p>The most consequential FA 2025 change for high-net-worth individuals is the IHT reform. The historic deemed-dom 15-of-20 test has been retired. The new test under IHTA 1984 ss.6A-6C is the Long-Term Resident (LTR) test.</p>
+<p>If your estate is sizeable, the IHT reform is the FA 2025 change that matters most to you. The historic deemed-dom 15-of-20 test has been retired. In its place sits the Long-Term Resident (LTR) test under IHTA 1984 ss.6A-6C.</p>
 
 <ul>
-<li><strong>s.6A standard rule:</strong> an individual is long-term UK resident, and therefore within UK IHT on worldwide-situs assets, if UK-resident (under SRT) for at least 10 of the preceding 20 tax years.</li>
-<li><strong>s.6B young-person variation:</strong> a modified test for individuals under 20, reflecting the shorter possible residence history.</li>
-<li><strong>s.6C departure tail:</strong> a person who has been LTR retains LTR status for a tail period after ceasing UK residence, with the length of the tail dependent on residence history. The longer the past residence, the longer the tail.</li>
+<li><strong>s.6A standard rule:</strong> you are long-term UK resident, and so within UK IHT on worldwide-situs assets, if you have been UK-resident (under SRT) for at least 10 of the preceding 20 tax years.</li>
+<li><strong>s.6B young-person variation:</strong> a modified test if you are under 20, reflecting the shorter possible residence history.</li>
+<li><strong>s.6C departure tail:</strong> once you have become LTR you keep LTR status for a tail period after you cease UK residence, and the longer your past residence, the longer that tail runs.</li>
 </ul>
 
-<p>The shift is from a domicile-based test (where domicile of choice was hard to acquire and even harder to shed) to a residence-based test (where the count is mechanical against the SRT). The simplification has consequences in both directions. A high-net-worth arrival with no UK domicile of origin who reaches 10 UK-resident years comes within worldwide IHT exposure. Conversely, a UK-domicile-of-origin individual who has lived abroad for most of the preceding 20 years falls outside the LTR test and outside worldwide IHT exposure.</p>
+<p>The shift is from a domicile-based test (where a domicile of choice was hard to acquire and even harder to shed) to a residence-based test that counts mechanically against the SRT. That cuts both ways. Arrive with no UK domicile of origin and reach 10 UK-resident years and your worldwide estate is in the IHT net. Hold a UK domicile of origin but spend most of the preceding 20 years abroad and you fall outside the LTR test, and outside worldwide IHT exposure.</p>
 
 <h2>Temporary non-residence anti-avoidance</h2>
 
-<p><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/10A" rel="nofollow noopener" target="_blank">TCGA 1992 s.10A</a> is the long-standing anti-avoidance against short-term emigration to crystallise foreign gains. The rule applies where an individual leaves the UK and returns within a defined "temporary period of non-residence" (broadly up to 5 years for most fact patterns). Gains realised on assets held at the date of departure that are realised during the non-resident period are charged to UK CGT in the year of return.</p>
+<p><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/10A" rel="nofollow noopener" target="_blank">TCGA 1992 s.10A</a> is the long-standing anti-avoidance against short-term emigration to crystallise foreign gains. It applies where you leave the UK and then come back within a defined "temporary period of non-residence" (broadly up to 5 years for most fact patterns). Gains you realise during that non-resident period on assets you already held at the date of departure are charged to UK CGT in the year you return.</p>
 
-<p>The s.10A rule does not bite where the non-residence is genuinely long-term (more than 5 years on the standard test). It does bite where the absence was a tax-motivated bracket and the individual returns within the threshold. Planning a departure with an early-return contingency requires explicit modelling of the s.10A trap.</p>
+<p>s.10A does not bite where your non-residence is genuinely long-term (more than 5 years on the standard test). It does bite where the absence was a tax-motivated gap and you come back inside the threshold. So if your departure carries any early-return contingency, model the s.10A trap before you go.</p>
 
 <h2>The property-investor angles</h2>
 
-<p>Four investor-specific points carry across the residence-and-domicile architecture.</p>
+<p>Four points run right across the residence-and-domicile picture for property.</p>
 
 <h3>UK rental income is taxed regardless of residence</h3>
 
-<p>The single most-common drift in popular non-dom commentary is to imply UK rental income could ever be outside UK tax under the remittance basis. It could not. UK-source rental income from UK property has always been taxed on the arising basis, regardless of the landlord's domicile or residence. The FA 2025 reform does not change this.</p>
+<p>Be clear on one thing the looser non-dom commentary tends to blur: your UK rental income could never have sat outside UK tax under the remittance basis. UK-source rental income from UK property has always been taxed on the arising basis, whatever your domicile or residence, and the FA 2025 reform does not change that.</p>
 
-<p>The administrative architecture for non-resident landlords is the Non-Resident Landlord (NRL) scheme under ITA 2007 Part 14 Chapter 5 and <a href="https://www.legislation.gov.uk/uksi/1995/2902/contents" rel="nofollow noopener" target="_blank">SI 1995/2902</a>. The NRL scheme uses a "usual place of abode" test, not the SRT directly. A landlord whose usual place of abode is outside the UK falls within the NRL scheme even if a borderline SRT analysis gives a different result. The scheme requires either tenants or letting agents to withhold UK basic-rate income tax on UK rental payments, unless HMRC has approved the landlord for gross-payment under the NRL1 application.</p>
+<p>If you are non-resident, the machinery is the Non-Resident Landlord (NRL) scheme under ITA 2007 Part 14 Chapter 5 and <a href="https://www.legislation.gov.uk/uksi/1995/2902/contents" rel="nofollow noopener" target="_blank">SI 1995/2902</a>. The NRL scheme runs off a "usual place of abode" test, not the SRT directly, so if your usual place of abode is outside the UK you fall within the scheme even where a borderline SRT analysis points the other way. Under it your tenants or letting agents must withhold UK basic-rate income tax on your rent, unless HMRC has approved you for gross payment on the NRL1 application.</p>
 
 <h3>NRCGT on UK property is unchanged</h3>
 
-<p>TCGA 1992 Sch 4ZZB and the associated NRCGT framework apply UK CGT to non-residents disposing of UK land. The framework operates regardless of domicile. The 60-day NRCGT return is the operative compliance discipline. The FA 2025 reform does not modify NRCGT.</p>
+<p>TCGA 1992 Sch 4ZZB and the wider NRCGT framework apply UK CGT to non-residents who dispose of UK land, and they apply regardless of domicile. If that is you, the 60-day NRCGT return is the deadline to watch, and the FA 2025 reform leaves NRCGT untouched.</p>
 
 <h3>ATED applies to companies regardless of residence</h3>
 
-<p>The Annual Tax on Enveloped Dwellings applies to companies (and certain other enveloped structures) holding UK residential property valued over the relevant threshold. Company residence is irrelevant. The 5-yearly revaluation discipline is the operative compliance point.</p>
+<p>The Annual Tax on Enveloped Dwellings applies to companies (and certain other enveloped structures) holding UK residential property valued over the relevant threshold. Company residence is irrelevant. If you hold property this way, the 5-yearly revaluation is the compliance point to diarise.</p>
 
 <h3>Worldwide asset exposure turns on residence and LTR</h3>
 
-<p>The residence question matters most for the worldwide-asset position. A UK-resident landlord with overseas-property rental income is taxed on that worldwide income (subject to the 4-year FIG window if eligible). A UK-resident with overseas-property capital gains is taxed on those gains on the arising basis (subject to FIG; subject to the narrow CGT rebasing election for 2017-cohort claimants). The LTR test then brings worldwide-situs assets into UK IHT once the 10-of-20 threshold is reached. The investor angle is therefore: every additional year of UK residence has both immediate income / CGT consequences and an LTR-clock consequence for IHT.</p>
+<p>The residence question matters most for your worldwide-asset position. If you are UK-resident with overseas-property rental income, you are taxed on that worldwide income (subject to the 4-year FIG window if eligible). If you have overseas-property capital gains, they are taxed on the arising basis (subject to FIG, and to the narrow CGT rebasing election for 2017-cohort claimants). The LTR test then pulls worldwide-situs assets into UK IHT once you cross the 10-of-20 threshold. So every extra year of UK residence carries both an immediate income and CGT cost and a tick on the LTR clock for IHT.</p>
 
 <h2>What happens if you leave the UK</h2>
 
@@ -173,11 +173,11 @@ reviewedAt: "2026-05-26"
 
 <ol>
 <li><strong>SRT day-count plus ties test for the current tax year.</strong> A split-year claim under one of Cases 1 to 3 may limit UK tax to the pre-departure part of the year.</li>
-<li><strong>NRL scheme "usual place of abode" trigger.</strong> A landlord whose usual place of abode shifts outside the UK comes within the NRL scheme. The test may bite ahead of the SRT result in some scenarios.</li>
-<li><strong>Temporary non-residence s.10A anti-avoidance.</strong> If the absence is short enough that the individual returns within 5 years, gains realised during the absence on pre-departure assets are taxed in the year of return.</li>
+<li><strong>NRL scheme "usual place of abode" trigger.</strong> Once your usual place of abode shifts outside the UK you come within the NRL scheme, and that test can bite ahead of the SRT result in some scenarios.</li>
+<li><strong>Temporary non-residence s.10A anti-avoidance.</strong> Go away for a short enough period that you are back inside 5 years and any gains you realised during the absence on pre-departure assets are taxed in the year you return.</li>
 </ol>
 
-<p>The departure planning question is: are you really leaving? A genuine long-term departure (no return within 5 years; SRT non-residence cleanly established each year) puts foreign-source gains and income outside UK tax. A short-term bracketed departure does not.</p>
+<p>The real departure question is: are you actually leaving? A genuine long-term departure (no return inside 5 years, with SRT non-residence cleanly established each year) puts your foreign-source gains and income outside UK tax. A short, bracketed absence does not.</p>
 
 <h2>What happens if you arrive in the UK</h2>
 
@@ -185,13 +185,13 @@ reviewedAt: "2026-05-26"
 
 <ol>
 <li><strong>Split-year claim under SRT Cases 4 to 8.</strong> Limits UK tax to the post-arrival part of the year.</li>
-<li><strong>FIG regime claim under ITTOIA 2005 s.845A.</strong> 4 years of full foreign-income and gains exemption if the 10-year-prior-non-residence gateway is met. The claim forfeits personal allowance, dividend allowance, and CGT annual exempt amount. Year-by-year modelling.</li>
-<li><strong>IHT LTR clock.</strong> The 10-of-20 test starts ticking from the first UK-resident year. Planning around the 10-year horizon is critical for high-net-worth arrivals, particularly around trust-creation timing (excluded-property trusts created before LTR onset retain protected status under IHTA 1984 s.48ZA).</li>
+<li><strong>FIG regime claim under ITTOIA 2005 s.845A.</strong> 4 years of full foreign-income and gains exemption if you meet the 10-year-prior-non-residence gateway. The claim costs you your personal allowance, dividend allowance, and CGT annual exempt amount, so it needs year-by-year modelling.</li>
+<li><strong>IHT LTR clock.</strong> The 10-of-20 test starts ticking from your first UK-resident year. If your estate is large, planning around that 10-year horizon is critical, particularly the timing of any trust creation (excluded-property trusts set up before LTR onset keep protected status under IHTA 1984 s.48ZA).</li>
 </ol>
 
 <aside>
-<p>For a high-net-worth arriver to the UK with a mix of UK property purchase plans and overseas asset portfolios, the right first step is a holistic position-and-clock review: SRT residence determination; FIG-vs-arising-basis modelling for the 4-year window; LTR clock projection; trust-structure design before LTR onset.</p>
-<p>Property Tax Partners advises new arrivals on this review and the downstream UK property tax planning. Use the form at the foot of the page to start.</p>
+<p>If you are arriving in the UK with property purchase plans and an overseas asset portfolio, the right first step is a single position-and-clock review: SRT residence determination, FIG-versus-arising-basis modelling for the 4-year window, LTR clock projection, and trust-structure design before LTR onset.</p>
+<p>Property Tax Partners advises new arrivals on this review and the UK property tax planning that flows from it. Use the form at the foot of the page to start.</p>
 </aside>
 
 <h2>The residual operation of domicile</h2>
@@ -204,27 +204,27 @@ reviewedAt: "2026-05-26"
 <li><strong>Double taxation agreements.</strong> Treaties that retain domicile language in the residence article (a minority of UK DTAs) continue to apply that language for treaty-purposes residence determination.</li>
 </ul>
 
-<p>For the mainstream UK income tax, CGT, and IHT position of a typical UK-property investor, domicile no longer drives the answer. Residence does.</p>
+<p>For your mainstream UK income tax, CGT and IHT position as a property investor, domicile no longer drives the answer. Residence does.</p>
 
 <h2>Worked examples</h2>
 
 <ol>
-<li><strong>UK national leaving for Dubai 1 September 2026 to take up full-time employment.</strong> SRT Case 1 split-year applies if the conditions are met. Pre-1-September portion of 2026-27 is UK-resident; post-1-September portion is non-resident. Foreign income and gains in the non-resident part are outside UK tax. NRL scheme applies on any UK rental income from the date the usual place of abode shifts. The s.10A temporary non-residence rule will catch pre-departure-asset gains if the individual returns within 5 years.</li>
-<li><strong>US national arriving in the UK 1 March 2026 to take up full-time employment.</strong> SRT Case 5 split-year applies if the conditions are met. Pre-1-March portion is non-resident; post-1-March portion is UK-resident. FIG claim possible for tax years 2025-26 to 2028-29 if the 10-year-prior-non-residence gateway is met. The IHT LTR clock starts ticking from the first UK-resident year.</li>
-<li><strong>UK-resident landlord with £75,000 UK rental income plus £30,000 Spanish rental income.</strong> UK rental taxed at normal arising-basis rates. Spanish rental taxed on the arising basis with Spanish tax credit available under the UK-Spain DTA (foreign tax credit relief). If the landlord is a new arriver within the FIG window and claims FIG for the year, the Spanish rental is exempt that year but the landlord loses personal allowance.</li>
-<li><strong>Non-resident landlord (10 years overseas) with £45,000 UK rental income.</strong> NRL scheme operative; UK rental taxed on the NRL return at normal rates. UK personal allowance may be available under the relevant UK-overseas-country DTA (treaty-dependent). No UK taxation of any foreign-source income.</li>
+<li><strong>UK national leaving for Dubai 1 September 2026 to take up full-time employment.</strong> SRT Case 1 split-year applies if you meet the conditions. The pre-1-September portion of 2026-27 is UK-resident; the post-1-September portion is non-resident. Foreign income and gains in the non-resident part fall outside UK tax. The NRL scheme applies on any UK rental income from the date your usual place of abode shifts. If you then return to the UK within 5 years, the s.10A temporary non-residence rule will catch the gains on your pre-departure assets.</li>
+<li><strong>US national arriving in the UK 1 March 2026 to take up full-time employment.</strong> SRT Case 5 split-year applies if you meet the conditions. The pre-1-March portion is non-resident; the post-1-March portion is UK-resident. A FIG claim is possible for tax years 2025-26 to 2028-29 if you meet the 10-year-prior-non-residence gateway. The IHT LTR clock starts ticking from your first UK-resident year.</li>
+<li><strong>UK-resident landlord with £75,000 UK rental income plus £30,000 Spanish rental income.</strong> Your UK rental is taxed at normal arising-basis rates. The Spanish rental is taxed on the arising basis, with a Spanish tax credit available under the UK-Spain DTA (foreign tax credit relief). If you are a new arriver within the FIG window and claim FIG for the year, the Spanish rental is exempt that year but you lose your personal allowance.</li>
+<li><strong>Non-resident landlord (10 years overseas) with £45,000 UK rental income.</strong> The NRL scheme is operative and your UK rental is taxed on the NRL return at normal rates. Your UK personal allowance may be available under the relevant UK-overseas-country DTA (treaty-dependent). None of your foreign-source income is taxed in the UK.</li>
 </ol>
 
-<h2>Where to read next</h2>
+<h2>Going deeper on the legacy non-dom rules</h2>
 
-<p>This page is the foundational primer. For the operational deep-dives, route to the existing pages:</p>
+<p>If you are working through the transitional rules for the old non-dom regime, these cover the detail:</p>
 
 <ul>
-<li><strong>Historical context on the remittance basis.</strong> The companion <a href="/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals">remittance basis page</a> explains what ended on 6 April 2025 and the architectural map of what replaced it.</li>
-<li><strong>FIG regime for property investors.</strong> The <a href="/blog/non-resident-landlord-tax/non-dom-reform-april-2025-fig-regime-property-investors">FIG operational deep-dive</a> walks through the per-year claim mechanics, the personal-allowance trade-off, and worked examples.</li>
-<li><strong>FIG year-5 cliff planning.</strong> The <a href="/blog/non-resident-landlord-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords">year-5 onwards page</a> covers the move from FIG exemption to full worldwide arising basis.</li>
-<li><strong>TRF Sch 10 designation scenarios.</strong> The <a href="/blog/non-resident-landlord-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms">TRF page</a> walks through the three designation scenarios under Sch 10 para 2.</li>
-<li><strong>CGT rebasing narrow eligibility.</strong> The <a href="/blog/non-resident-landlord-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms">FA 2025 Sch 11 page</a> covers the rebasing election eligibility analysis.</li>
+<li>For what ended on 6 April 2025 and what replaced it, the <a href="/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals">remittance basis page</a>.</li>
+<li>For the per-year FIG claim mechanics, the personal-allowance trade-off and worked examples, the <a href="/blog/non-resident-landlord-tax/non-dom-reform-april-2025-fig-regime-property-investors">FIG regime for property investors</a>.</li>
+<li>For the move from FIG exemption to the full worldwide arising basis, the <a href="/blog/non-resident-landlord-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords">FIG year-5 cliff page</a>.</li>
+<li>For the three designation scenarios under Sch 10 para 2, the <a href="/blog/non-resident-landlord-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms">TRF page</a>.</li>
+<li>For the CGT rebasing election eligibility analysis, the <a href="/blog/non-resident-landlord-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms">FA 2025 Sch 11 page</a>.</li>
 </ul>
 
-<p>If you are a UK-property-owning expat considering departure or return, a new arrival weighing UK property purchase plus tax position, an adviser running residency-and-domicile assessments for property clients, or a trust beneficiary or settlor with UK property in pre-FA-2025 structures, the form at the foot of the page is the route to a structured assessment.</p>
+<p>Whether you are a UK-property-owning expat weighing a departure or return, a new arrival planning a UK purchase alongside your tax position, an adviser running residency and domicile assessments for property clients, or a settlor or beneficiary with UK property held in pre-FA-2025 structures, the form at the foot of the page is the route to a structured assessment.</p>
