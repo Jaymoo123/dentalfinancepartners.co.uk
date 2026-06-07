@@ -22,6 +22,7 @@ import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/li
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
 import { track } from "@/lib/analytics/track";
+import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import {
   resourceForTopic,
@@ -44,6 +45,8 @@ export function ResourceGate({
   topic,
   copy,
   split = false,
+  placement = "calculator",
+  category,
 }: {
   topic: TopicKey;
   copy: GateCopy;
@@ -51,6 +54,10 @@ export function ResourceGate({
    *  default is a single stacked column (preview, then form) for narrow places
    *  like blog posts. */
   split?: boolean;
+  /** Where the gate is surfaced — "calculator" | "blog" | "embed". */
+  placement?: string;
+  /** Blog category slug when placement === "blog". */
+  category?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -58,6 +65,15 @@ export function ResourceGate({
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
   const ft = useFormTracking("resource_gate");
+
+  // Shared event context: which topic, and where the gate is surfaced.
+  const gateBase = { topic, placement, ...(category ? { category } : {}) };
+
+  // Gate impression: fire gate_view the first time the gate scrolls into view —
+  // the denominator for the view -> unlock rate (the gate is often mid-article).
+  const rootRef = useInViewOnce<HTMLElement>(() => {
+    track("gate_view", gateBase);
+  });
 
   useEffect(() => {
     if (typeof window !== "undefined") setSourceUrl(window.location.href);
@@ -121,7 +137,7 @@ export function ResourceGate({
     }
 
     ft.onLead({ source: payload.source, role: "resource" });
-    track("resource_unlocked", { topic });
+    track("resource_unlocked", gateBase);
 
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -166,6 +182,7 @@ export function ResourceGate({
 
   return (
     <section
+      ref={rootRef}
       className="not-prose @container my-12 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
       aria-labelledby="resource-gate-heading"
     >

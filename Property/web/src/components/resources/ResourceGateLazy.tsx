@@ -20,10 +20,18 @@ export function ResourceGateLazy({
   topic,
   copy,
   split = false,
+  placement = "calculator",
+  category,
 }: {
   topic: TopicKey;
   copy: GateCopy;
   split?: boolean;
+  /** Where the gate is surfaced — "calculator" | "blog" | "embed". */
+  placement?: string;
+  /** Blog category slug when placement === "blog". */
+  category?: string;
 }) {
-  return <ResourceGate topic={topic} copy={copy} split={split} />;
+  return (
+    <ResourceGate topic={topic} copy={copy} split={split} placement={placement} category={category} />
+  );
 }

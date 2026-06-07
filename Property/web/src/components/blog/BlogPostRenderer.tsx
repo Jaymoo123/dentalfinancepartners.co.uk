@@ -304,14 +304,21 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     <div dangerouslySetInnerHTML={{ __html: earlySplit.before }} />
 
                     {/* EARLY: the interactive premium tool (value → lifts dwell). */}
-                    {hasPremium ? <PremiumUpgrade topic={topic} /> : null}
+                    {hasPremium ? (
+                      <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                    ) : null}
 
                     {gateSplit && gateSplit.after ? (
                       <>
                         {/* More content between the tool and the gate. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
                         {/* A STEP LATER: the email gate (ask). */}
-                        <ResourceGateLazy topic={topic} copy={gateCopy(topic, post.title)} />
+                        <ResourceGateLazy
+                          topic={topic}
+                          copy={gateCopy(topic, post.title)}
+                          placement="blog"
+                          category={categorySlug}
+                        />
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
                       </>
                     ) : (
@@ -319,7 +326,12 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         {/* No later break: gate goes directly under the tool, then
                             the rest of the article. */}
                         {hasGate ? (
-                          <ResourceGateLazy topic={topic} copy={gateCopy(topic, post.title)} />
+                          <ResourceGateLazy
+                          topic={topic}
+                          copy={gateCopy(topic, post.title)}
+                          placement="blog"
+                          category={categorySlug}
+                        />
                         ) : null}
                         <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
                       </>

@@ -91,6 +91,48 @@ export function getCalculatorConversion(siteKey: string) {
   });
 }
 
+export type CalculatorConversionPlacement = {
+  calculator_slug: string;
+  placement: string;
+  tool_kind: string;
+  viewed: number;
+  computed: number;
+  result_viewed: number;
+  lead_sessions: number;
+  compute_rate: number | null;
+  computed_to_lead_rate: number | null;
+};
+
+/** Tool funnel split by placement (calculator | blog | embed) and tool_kind. */
+export function getCalculatorConversionByPlacement(siteKey: string) {
+  return rest<CalculatorConversionPlacement>("vw_calculator_conversion_placement", {
+    site_key: `eq.${siteKey}`,
+    select: "*",
+    order: "viewed.desc",
+    limit: "100",
+  });
+}
+
+export type ResourceConversion = {
+  topic: string;
+  placement: string;
+  gate_views: number;
+  unlocks: number;
+  lead_sessions: number;
+  view_to_unlock_rate: number | null;
+  unlock_to_lead_rate: number | null;
+};
+
+/** Excel-gate funnel: gate_view -> unlock -> lead, by topic and placement. */
+export function getResourceConversion(siteKey: string) {
+  return rest<ResourceConversion>("vw_resource_conversion", {
+    site_key: `eq.${siteKey}`,
+    select: "*",
+    order: "gate_views.desc",
+    limit: "100",
+  });
+}
+
 export function getTopVisitors(siteKey: string, limit = 500) {
   return rest<VisitorJourney>("vw_visitor_journey", {
     site_key: `eq.${siteKey}`,

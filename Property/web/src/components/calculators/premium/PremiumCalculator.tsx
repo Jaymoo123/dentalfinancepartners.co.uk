@@ -47,6 +47,7 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
 import { track } from "@/lib/analytics/track";
+import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
 
 /* ---------------------------------------------------------------------------
  * Defaults / setup
@@ -407,11 +408,17 @@ function Workings({ result }: { result: PremiumResult }) {
 export function PremiumCalculator({
   config,
   full = false,
+  placement = "calculator",
+  category,
 }: {
   config: PremiumToolConfig;
   /** Calc-page variant: show the comparison chart and a roomier header. The
    *  default (used on blog posts) is more compact and omits the chart. */
   full?: boolean;
+  /** Where the tool is surfaced — "calculator" | "blog" | "embed". */
+  placement?: string;
+  /** Blog category slug when placement === "blog" (for per-category rollups). */
+  category?: string;
 }) {
   const [values, setValues] = useState<CalcValues>(() => defaultValues(config));
   const [rows, setRows] = useState<GridRow[]>(() => initialRows(config));
@@ -423,22 +430,35 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Shared event context: which tool, where, and that this is the premium kind.
+  const base = {
+    calculator_slug: config.id,
+    placement,
+    tool_kind: "premium",
+    ...(category ? { category } : {}),
+  };
+
+  // Honest "viewed": fire calc_view the first time the tool actually scrolls
+  // into view (it is often injected mid-article), not on mount.
+  const rootRef = useInViewOnce<HTMLDivElement>(() => {
+    track("calc_view", base);
+  });
+
   useEffect(() => {
-    track("calc_view", { calculator_slug: config.id, variant: "premium" });
     return () => {
       if (computeTimer.current) clearTimeout(computeTimer.current);
     };
-  }, [config.id]);
+  }, []);
 
   const onInteract = (fieldId: string) => {
-    track("calc_input_change", { calculator_slug: config.id, field_id: fieldId });
+    track("calc_input_change", { ...base, field_id: fieldId });
     if (!interactedRef.current) {
       interactedRef.current = true;
-      track("calc_result_viewed", { calculator_slug: config.id, variant: "premium" });
+      track("calc_result_viewed", base);
     }
     if (computeTimer.current) clearTimeout(computeTimer.current);
     computeTimer.current = setTimeout(() => {
-      track("calc_computed", { calculator_slug: config.id });
+      track("calc_computed", base);
     }, 800);
   };
 
@@ -463,7 +483,10 @@ export function PremiumCalculator({
   const scenarios = result.scenarioResults;
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]">
+    <div
+      ref={rootRef}
+      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
+    >
       {/* Branded top accent */}
       <div className="h-1 bg-gradient-to-r from-emerald-400 to-emerald-600" />
       {/* Header strip */}

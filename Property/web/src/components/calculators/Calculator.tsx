@@ -6,6 +6,7 @@ import { getGenericTool } from "@/lib/calculators/registry";
 import { Field } from "@/components/calculators/fields/Field";
 import { EmbedCta } from "@/components/embed/EmbedCta";
 import { track } from "@/lib/analytics/track";
+import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
 
 function defaultValues(fields: CalcField[]): CalcValues {
   const v: CalcValues = {};
@@ -26,37 +27,41 @@ export function Calculator({
   const tool = getGenericTool(slug);
   const [values, setValues] = useState<CalcValues>(() => (tool ? defaultValues(tool.fields) : {}));
   const interactedRef = useRef(false);
-  const viewedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // calc_view once per resolved tool. The ref makes "exactly once" hold even if
-  // the effect is re-invoked (React StrictMode double-mount / Fast Refresh), so
-  // the view is fired precisely once and uses the SAME slug as calc_computed
-  // below — so the dashboard reconciles views against computes for a tool.
-  // track() buffers this until configureAnalytics() lands, so it can't be lost
-  // to the provider/child effect-ordering race. No-ops without consent.
-  useEffect(() => {
-    if (tool && !viewedRef.current) {
-      viewedRef.current = true;
-      track("calc_view", { calculator_slug: tool.slug, variant });
+  // Where this calculator is surfaced: its own page vs an external embed iframe.
+  const placement = variant === "embed" ? "embed" : "calculator";
+
+  // Honest "viewed": fire calc_view the FIRST time the calculator actually
+  // scrolls into view (not on mount), so a calc the visitor never reaches isn't
+  // counted. Uses the SAME slug as calc_computed so the dashboard reconciles
+  // views against computes. track() buffers until configureAnalytics() lands and
+  // no-ops without consent; the hook fires once.
+  const rootRef = useInViewOnce<HTMLDivElement>(() => {
+    if (tool) {
+      track("calc_view", { calculator_slug: tool.slug, placement, tool_kind: "standard" });
     }
+  });
+
+  // Clear the debounce timer on unmount.
+  useEffect(() => {
     return () => {
       if (computeTimer.current) clearTimeout(computeTimer.current);
     };
-  }, [tool, variant]);
+  }, []);
 
   const set = (id: string, v: number | string | boolean) => {
     setValues((prev) => ({ ...prev, [id]: v }));
     if (!tool) return;
-    track("calc_input_change", { calculator_slug: tool.slug, field_id: id });
+    track("calc_input_change", { calculator_slug: tool.slug, field_id: id, placement, tool_kind: "standard" });
     if (!interactedRef.current) {
       interactedRef.current = true;
-      track("calc_result_viewed", { calculator_slug: tool.slug, variant });
+      track("calc_result_viewed", { calculator_slug: tool.slug, placement, tool_kind: "standard" });
     }
     // Debounced "the user settled on inputs and saw a result".
     if (computeTimer.current) clearTimeout(computeTimer.current);
     computeTimer.current = setTimeout(() => {
-      track("calc_computed", { calculator_slug: tool.slug });
+      track("calc_computed", { calculator_slug: tool.slug, placement, tool_kind: "standard" });
     }, 800);
   };
 
@@ -67,7 +72,7 @@ export function Calculator({
     tone === "warn" ? "text-amber-400" : tone === "good" ? "text-emerald-400" : "text-emerald-400";
 
   return (
-    <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
+    <div ref={rootRef} className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
         <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
           Calculator

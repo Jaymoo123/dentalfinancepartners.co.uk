@@ -30,6 +30,32 @@ export const SURFACE_LABELS: Record<string, string> = {
   next_step: "Next-step",
 };
 
+/**
+ * surface -> WHERE it physically renders (the dashboard "Where" column). Keep in
+ * sync with the surfaces wired in IntentProvider / the Surface union in engine.ts.
+ */
+export const SURFACE_WHERE: Record<string, string> = {
+  sticky_cta: "Bar pinned to the bottom of the screen",
+  hero_cta: "Primary button near the top of the page",
+  deep_scroll_modal: "One-time popup after a deep scroll",
+  returning_bar: "Greeting bar shown on a return visit",
+  next_step: "Card at the end of the article",
+};
+
+/**
+ * rule_id -> the BEHAVIOUR that triggers it (the dashboard "Why it fires"
+ * column). Mirrors the thresholds + escalation ladder in engine.ts (pickOffer /
+ * evaluate). If those thresholds change, update these strings.
+ */
+export const RULE_TRIGGER: Record<string, string> = {
+  topic_cta: "Light browser with a clear topic",
+  engaged_guide: "60%+ scroll or 60s+ engaged",
+  escalate_specialist: "90s+ engaged & 60%+ scroll, not converted",
+  deep_scroll_offer: "Scrolled past 70% of the page",
+  returning_welcome: "A return visit (resumes last topic)",
+  topic_next_step: "Reached the end of the article",
+};
+
 /** Human label for a rule_id (falls back to a tidied form of the raw id). */
 export function ruleLabel(ruleId: string): string {
   return RULE_LABELS[ruleId] ?? prettify(ruleId);
@@ -38,6 +64,16 @@ export function ruleLabel(ruleId: string): string {
 /** Human label for a surface key (falls back to a tidied form of the raw key). */
 export function surfaceLabel(surface: string): string {
   return SURFACE_LABELS[surface] ?? prettify(surface);
+}
+
+/** Where a surface physically renders (or "" if unknown). */
+export function surfaceWhere(surface: string): string {
+  return SURFACE_WHERE[surface] ?? "";
+}
+
+/** The behaviour that triggers a rule (or "" if unknown). */
+export function ruleTrigger(ruleId: string): string {
+  return RULE_TRIGGER[ruleId] ?? "";
 }
 
 function prettify(key: string): string {

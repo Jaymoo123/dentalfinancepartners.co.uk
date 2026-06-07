@@ -10,6 +10,8 @@ import { niche } from "@/config/niche-loader";
 import {
   getFunnelDaily,
   getCalculatorConversion,
+  getCalculatorConversionByPlacement,
+  getResourceConversion,
   getTopVisitors,
   getLeadsForSite,
   getPersonalizationResults,
@@ -17,9 +19,11 @@ import {
   getPersonalizationAB,
   type VisitorJourney,
   type CalculatorConversion,
+  type CalculatorConversionPlacement,
+  type ResourceConversion,
   type PersonalizationAB,
 } from "@/lib/analytics/server/adminData";
-import { ruleLabel, surfaceLabel } from "@/lib/intent/labels";
+import { ruleLabel, surfaceLabel, surfaceWhere, ruleTrigger } from "@/lib/intent/labels";
 import { getTopic } from "@/lib/intent/taxonomy";
 import DashboardTabs from "./DashboardTabs";
 
@@ -356,6 +360,125 @@ function CalculatorPanel({ rows }: { rows: CalcOpportunity[] }) {
   );
 }
 
+const PLACEMENT_LABEL: Record<string, string> = {
+  calculator: "Calc page",
+  blog: "Blog post",
+  embed: "Embed iframe",
+  unknown: "Unknown",
+};
+function placementLabel(p: string): string {
+  return PLACEMENT_LABEL[p] ?? p;
+}
+
+/**
+ * The SAME tool funnel, split by WHERE it was surfaced (calc page / blog / embed
+ * iframe). `viewed` is visibility-gated, so blog embeds are not inflated by
+ * readers who never scroll to the injected tool.
+ */
+function PlacementPanel({ rows }: { rows: CalculatorConversionPlacement[] }) {
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Tool performance by placement</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        The same tool, split by where it was surfaced. <strong>Viewed</strong> counts only when the tool actually
+        scrolled into view, so blog embeds are not inflated by readers who never reach them. Use this to see whether the
+        embedded tool earns its place in a category&apos;s posts.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Tool</th>
+              <th className="px-3 py-2">Placement</th>
+              <th className="px-3 py-2">Kind</th>
+              <th className="px-3 py-2 text-right">Viewed</th>
+              <th className="px-3 py-2 text-right">Computed</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="px-3 py-2">View→Compute</th>
+              <th className="px-3 py-2">Compute→Lead</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={8} className="px-3 py-4 text-center text-slate-400">No placement data yet (lands once the new events accrue).</td></tr>
+            ) : (
+              rows.map((c, i) => (
+                <tr key={`${c.calculator_slug}-${c.placement}-${c.tool_kind}-${i}`} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
+                  <td className="px-3 py-2 text-slate-600">{placementLabel(c.placement)}</td>
+                  <td className="px-3 py-2 text-slate-500">{c.tool_kind}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
+                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
+                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * The email-gated Excel toolkit funnel: saw the gate (a real impression) ->
+ * unlocked (email captured) -> lead, by topic and placement. The impression
+ * denominator is what the slug-only calculator view could never give.
+ */
+function ResourceGatePanel({ rows }: { rows: ResourceConversion[] }) {
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Excel toolkit (gated download) funnel</h2>
+      <p className="text-xs text-slate-500">
+        The email-gated Excel model, by topic and placement: <strong>Saw gate → Unlocked → Lead</strong>. &quot;Saw
+        gate&quot; is a real impression (the gate scrolled into view), so the saw→unlock rate is honest — a high rate
+        means the offer pulls its weight where it is shown.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Topic</th>
+              <th className="px-3 py-2">Placement</th>
+              <th className="px-3 py-2 text-right">Saw gate</th>
+              <th className="px-3 py-2 text-right">Unlocked</th>
+              <th className="px-3 py-2">Saw→Unlock</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No gate data yet (lands once the new gate_view events accrue).</td></tr>
+            ) : (
+              rows.map((r, i) => {
+                const t = getTopic(r.topic);
+                const widthPct = r.view_to_unlock_rate == null ? 0 : Math.min(100, r.view_to_unlock_rate * 100);
+                return (
+                  <tr key={`${r.topic}-${r.placement}-${i}`} className="border-t border-slate-100">
+                    <td className="px-3 py-2 font-medium text-slate-800">{t?.label ?? r.topic}</td>
+                    <td className="px-3 py-2 text-slate-600">{placementLabel(r.placement)}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.gate_views}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.unlocks}</td>
+                    <td className="w-32 px-3 py-2">
+                      <span className="text-slate-700">{pct(r.view_to_unlock_rate)}</span>
+                      <div className="mt-1 h-1.5 rounded bg-slate-100">
+                        <div className="h-1.5 rounded bg-emerald-500" style={{ width: `${widthPct}%` }} />
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono">{r.lead_sessions}</td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 export default async function AdminAnalyticsPage({
   searchParams,
 }: {
@@ -366,16 +489,27 @@ export default async function AdminAnalyticsPage({
   if (!expected || k !== expected) notFound();
 
   const siteKey = niche.content_strategy.source_identifier;
-  const [funnel, calculators, visitors, leads, personalization, experiments, personalizationAB] =
-    await Promise.all([
-      getFunnelDaily(siteKey),
-      getCalculatorConversion(siteKey),
-      getTopVisitors(siteKey),
-      getLeadsForSite(siteKey),
-      getPersonalizationResults(siteKey),
-      getExperimentResults(siteKey),
-      getPersonalizationAB(siteKey),
-    ]);
+  const [
+    funnel,
+    calculators,
+    calcPlacement,
+    resourceGate,
+    visitors,
+    leads,
+    personalization,
+    experiments,
+    personalizationAB,
+  ] = await Promise.all([
+    getFunnelDaily(siteKey),
+    getCalculatorConversion(siteKey),
+    getCalculatorConversionByPlacement(siteKey),
+    getResourceConversion(siteKey),
+    getTopVisitors(siteKey),
+    getLeadsForSite(siteKey),
+    getPersonalizationResults(siteKey),
+    getExperimentResults(siteKey),
+    getPersonalizationAB(siteKey),
+  ]);
 
   // Map each visitor to the lead they became (newest wins), so the visitor
   // table can show who converted even before the lead_id stitch backfills.
@@ -487,6 +621,7 @@ export default async function AdminAnalyticsPage({
   const behaviourSection = (
     <div className="space-y-8">
       <CalculatorPanel rows={calcOpportunities} />
+      <PlacementPanel rows={calcPlacement} />
 
       {/* Visitors */}
       <div>
@@ -544,20 +679,26 @@ export default async function AdminAnalyticsPage({
       {/* Personalisation A/B — front and centre */}
       <PersonalizationABCard ab={personalizationAB} />
 
-      {/* Personalization surface performance */}
+      {/* Excel toolkit (gate) funnel — a key lead surface across placements */}
+      <ResourceGatePanel rows={resourceGate} />
+
+      {/* Offer performance WITHIN the personalised (treatment) arm */}
       <div>
-        <h2 className="text-lg font-bold text-slate-900">Personalisation surfaces</h2>
+        <h2 className="text-lg font-bold text-slate-900">Offer performance (within the personalised arm)</h2>
         <p className="text-xs text-slate-500">
-          How each treatment surface (tool / guide / specialist offer) performs (human-only). The head-to-head lift of
-          control vs treatment is the card above.
+          The card above is the actual test: 25% of visitors get the plain generic site (control), 75% get
+          behaviour-matched offers (treatment). This table breaks down what happens <em>inside</em> that 75% — which
+          individual offers earn a click and a lead. It is <strong>not</strong> another A/B: the alternative for every
+          row is the generic site, measured by the card. <strong>Where</strong> = the on-page slot the offer renders in;{" "}
+          <strong>Why it fires</strong> = the behaviour that triggered it.
         </p>
         <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
               <tr>
-                <th className="px-3 py-2">Surface</th>
-                <th className="px-3 py-2">Rule</th>
-                <th className="px-3 py-2">What&apos;s shown</th>
+                <th className="px-3 py-2">Offer</th>
+                <th className="px-3 py-2">Where</th>
+                <th className="px-3 py-2">Why it fires</th>
                 <th className="px-3 py-2 text-right">Shown</th>
                 <th className="px-3 py-2 text-right">Clicks</th>
                 <th className="px-3 py-2 text-right">CTR</th>
@@ -566,13 +707,21 @@ export default async function AdminAnalyticsPage({
             </thead>
             <tbody>
               {personalization.length === 0 ? (
-                <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No personalization data yet.</td></tr>
+                <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No personalisation data yet (the treatment arm logs these as offers are shown).</td></tr>
               ) : (
                 personalization.map((p, i) => (
-                  <tr key={`${p.surface}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100">
-                    <td className="px-3 py-2 text-slate-700">{surfaceLabel(p.surface)}</td>
-                    <td className="px-3 py-2 text-slate-600">{ruleLabel(p.rule_id)}</td>
-                    <td className="px-3 py-2 text-slate-500">“{personalizationHint(p.rule_id, p.topic)}”</td>
+                  <tr key={`${p.surface}-${p.rule_id}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100 align-top">
+                    <td className="px-3 py-2">
+                      <div className="font-medium text-slate-800">{ruleLabel(p.rule_id)}</div>
+                      <div className="text-xs text-slate-500">
+                        “{personalizationHint(p.rule_id, p.topic)}” · {getTopic(p.topic)?.label ?? p.topic}
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-slate-600">
+                      <div>{surfaceLabel(p.surface)}</div>
+                      <div className="text-xs text-slate-400">{surfaceWhere(p.surface)}</div>
+                    </td>
+                    <td className="px-3 py-2 text-xs text-slate-500">{ruleTrigger(p.rule_id)}</td>
                     <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
                     <td className="px-3 py-2 text-right font-mono">{p.clicked}</td>
                     <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
@@ -588,10 +737,12 @@ export default async function AdminAnalyticsPage({
       {/* Experiments */}
       {experiments.length > 0 && (
         <div>
-          <h2 className="text-lg font-bold text-slate-900">Experiments</h2>
+          <h2 className="text-lg font-bold text-slate-900">Experiments (A/B ledger)</h2>
           <p className="text-xs text-slate-500">
-            All A/B results from first-party events (directional; significance needs volume). The{" "}
-            <code className="rounded bg-slate-100 px-1">personalization</code> rows back the lift card above.
+            The raw A/B ledger (directional; significance needs volume). Right now there is a single experiment —{" "}
+            <code className="rounded bg-slate-100 px-1">personalization</code> (on vs off) — so these rows are exactly
+            the control vs treatment in the card above. New experiments added in{" "}
+            <code className="rounded bg-slate-100 px-1">lib/experiments/registry.ts</code> show up here.
           </p>
           <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
             <table className="w-full text-sm">

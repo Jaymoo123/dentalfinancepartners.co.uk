@@ -57,9 +57,15 @@ const PremiumCalculator = dynamic(
 export function PremiumUpgrade({
   topic,
   full = false,
+  placement = "calculator",
+  category,
 }: {
   topic: TopicKey | null | undefined;
   full?: boolean;
+  /** Where the tool is surfaced — "calculator" | "blog" | "embed". */
+  placement?: string;
+  /** Blog category slug when placement === "blog". */
+  category?: string;
 }) {
   if (!topic) return null;
   const resource = resourceForTopic(topic);
@@ -86,7 +92,7 @@ export function PremiumUpgrade({
         desktop to use it.
       </div>
       <div className="hidden sm:block">
-        <PremiumCalculator config={config} full={full} />
+        <PremiumCalculator config={config} full={full} placement={placement} category={category} />
       </div>
     </section>
   );

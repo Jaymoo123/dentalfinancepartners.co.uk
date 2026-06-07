@@ -35,6 +35,7 @@ export const EVENT_NAMES = [
   "calc_result_viewed",
   "calc_copy",
   "calc_share",
+  "gate_view",
   "resource_unlocked",
   "embed_cta_click",
   "exit_intent_shown",
