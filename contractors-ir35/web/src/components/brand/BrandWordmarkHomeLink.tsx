@@ -13,7 +13,7 @@ export function BrandWordmarkHomeLink({ className = "", size = "header" }: Brand
   return (
     <Link
       href="/"
-      aria-label={`${siteConfig.name} — ${siteConfig.tagline}`}
+      aria-label={`${siteConfig.name} · ${siteConfig.tagline}`}
       className={`group inline-flex items-center gap-2 ${focusRing} ${className}`.trim()}
     >
       <span

@@ -1,5 +1,6 @@
 /* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+@import "tw-animate-css";
 
 /* ============================================================
    DESIGN SYSTEM — Contractor Finance Partners
@@ -129,6 +130,44 @@ body {
 }
 
 /* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-reveal {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.hero-reveal-delay {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+
+.section-label {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ============================================================
    BLOG PROSE
    ============================================================ */
 
@@ -142,6 +181,8 @@ body {
 .prose-blog h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
   font-size: 1.875rem;
   font-weight: 600;
   color: var(--ink);
@@ -220,6 +261,10 @@ body {
   padding: 0.875rem 1rem;
   border-top: 1px solid var(--hairline);
   color: var(--ink-soft);
+}
+
+.prose-blog tr:nth-child(even) {
+  background: var(--surface);
 }
 
 /* ============================================================

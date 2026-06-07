@@ -17,12 +17,14 @@
   "navigation": [
     { "label": "Services", "href": "/services" },
     { "label": "IR35 Status", "href": "/ir35-status" },
+    { "label": "Who we help", "href": "/for" },
     { "label": "Blog", "href": "/blog" },
     { "label": "Contact", "href": "/contact" }
   ],
   "footer_links": [
     { "label": "Services", "href": "/services" },
     { "label": "IR35 Status", "href": "/ir35-status" },
+    { "label": "Who we help", "href": "/for" },
     { "label": "Blog", "href": "/blog" },
     { "label": "About", "href": "/about" },
     { "label": "Contact", "href": "/contact" },
