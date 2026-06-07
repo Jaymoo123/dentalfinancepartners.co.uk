@@ -36,4 +36,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | abolishment-of-multiple-dwelling-relief | done | robotic | 45.3 | 1.1 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | ated-return-amendment-corrections-procedure | done | robotic | 32.3 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | companies-house-emails-directors-for-identity-verification-under-new-rules | done | robotic | 33.1 | 0.7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| hmrcs-nudge-letters-demand-urgent-review-of-gift-hold-over-relief-claim | done | robotic | 44.3 | 11 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
