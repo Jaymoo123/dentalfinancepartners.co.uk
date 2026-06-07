@@ -82,7 +82,31 @@ def _tracker_processed(site: str) -> set[str]:
 
 
 def _is_section24(slug: str) -> bool:
-    return bool(re.search(r"section-?24", slug, re.I))
+    # Section 24 by slug incl. its topical aliases (mortgage interest / finance
+    # cost restriction) - the concurrent agent owns this topic.
+    return bool(re.search(r"section-?24|mortgage[-_ ]?interest|finance[-_ ]?cost", slug, re.I))
+
+
+def _blog_dir(site: str = "property") -> pathlib.Path:
+    p = ROOT / "sites" / f"{site}.json"
+    if p.exists():
+        return ROOT / json.loads(p.read_text(encoding="utf-8"))["paths"]["blogContentDir"]
+    return ROOT / "Property/web/content/blog"
+
+
+def _excluded(site: str, slug: str) -> bool:
+    """Skip Section 24 pages by slug OR category - a concurrent agent owns the
+    'Section 24 & Tax Relief' category, so never humanise those (avoids collisions)."""
+    if _is_section24(slug):
+        return True
+    try:
+        head = (_blog_dir(site) / f"{slug}.md").read_text(encoding="utf-8")[:1500]
+        m = re.search(r'^category:\s*"?(.*?)"?\s*$', head, re.M)
+        if m and "section 24" in m.group(1).lower():
+            return True
+    except Exception:
+        pass
+    return False
 
 
 def build(site: str, min_band: str, days: int) -> list[dict]:
