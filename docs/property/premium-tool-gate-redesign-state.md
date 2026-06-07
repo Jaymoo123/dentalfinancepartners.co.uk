@@ -1,7 +1,9 @@
 # Property — Premium tool + Excel-gate redesign (handoff state)
 
-**Branch:** `property-calculators-and-geo` (LOCAL ONLY — not committed, not deployed).
-**Blocker before prod:** must be merged with the `property-humanise` worktree branch (another agent is doing blog page rewrites there). Do NOT deploy until the user merges and signs off.
+> ✅ **RESOLVED + DEPLOYED 2026-06-07.** Merged with `property-humanise`, committed, and shipped to production (see STATE.md §0.07). The blog-embed kill-switch was flipped on after a live visual sign-off; both calc-page and blog embeds are live across the 6 enabled categories. This doc is retained as the design/gotchas reference.
+
+**Branch:** `property-calculators-and-geo` → merged to `main` and deployed.
+**Blocker (now cleared):** the required merge with the `property-humanise` worktree branch is done.
 **Build:** `npm run build` is production-clean (764/764 static pages, exit 0; only 6 non-blocking ESLint warnings, incl. an unused `setScenario` in `PremiumCalculator.tsx`).
 **Dev server:** run with `npm run dev -- -p 3004` from `Property/web` (it was stopped to run the build).
 
