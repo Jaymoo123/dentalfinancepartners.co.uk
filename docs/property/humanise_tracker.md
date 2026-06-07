@@ -34,4 +34,5 @@ Durable, resumable progress record for the [Humanise Engine](../_engines/HUMANIS
 | commonhold-and-leasehold-reform-bill | done | robotic | 52.8 | 7 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | foreign-tax-credit-uk-property-overseas-landlords | done | robotic | 36.6 | 8.4 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 | abolishment-of-multiple-dwelling-relief | done | robotic | 45.3 | 1.1 | 2 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
+| ated-return-amendment-corrections-procedure | done | robotic | 32.3 | 0 | 1 | (this commit) | 2026-06-06 | voice-only, all 5 checks passed |
 <!-- conductor appends one row per processed page below this line -->
