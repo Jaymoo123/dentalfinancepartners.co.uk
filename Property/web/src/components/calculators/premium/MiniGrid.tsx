@@ -10,11 +10,15 @@
  * Optional debounced localStorage persistence (config.persist) keyed
  * `ptp:grid:<toolId>`, SSR-guarded. Off by default → Phase A adds no storage.
  *
- * The visual style mirrors the existing portfolio calculator (slate cards,
- * emerald accents) so premium tools feel native.
+ * Styled to match the clean shadcn PremiumCalculator surface (rounded cards,
+ * subtle slate fills, compact inputs) so it sits natively inside the "Advanced
+ * options" collapsible rather than reading as a heavy bolted-on block.
  */
 import { useEffect, useRef } from "react";
+import { Plus, X } from "lucide-react";
 import type { GridConfig, GridRow } from "@/lib/calculators/premium/types";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 const STORAGE_PREFIX = "ptp:grid:";
 const PERSIST_DEBOUNCE_MS = 600;
@@ -63,57 +67,59 @@ export function MiniGrid({
   };
 
   return (
-    <div className="space-y-5 sm:space-y-6">
+    <div className="space-y-3">
       {config.heading && (
-        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">{config.heading}</h4>
+        <h4 className="text-sm font-semibold text-slate-700">{config.heading}</h4>
       )}
 
       {rows.map((row, idx) => {
         const nameCol = config.columns.find((c) => c.type === "text");
         const numericCols = config.columns.filter((c) => c.type !== "text");
         return (
-          <div key={row.id} className="border-2 border-slate-200 bg-slate-50 p-6">
-            <div className="flex items-center justify-between mb-4">
+          <div
+            key={row.id}
+            className="rounded-xl border border-slate-200 bg-slate-50/70 p-4"
+          >
+            <div className="mb-3 flex items-center justify-between gap-2">
               {nameCol ? (
                 <input
                   type="text"
                   value={String(row[nameCol.id] ?? "")}
                   onChange={(e) => update(row.id, nameCol.id, e.target.value)}
-                  className="border-0 bg-transparent text-xl font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-1"
+                  className="min-w-0 flex-1 rounded-md bg-transparent px-1 py-0.5 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/30"
                   aria-label={`Row ${idx + 1} name`}
                 />
               ) : (
-                <span className="text-xl font-bold text-slate-900">Row {idx + 1}</span>
+                <span className="text-sm font-semibold text-slate-900">
+                  Row {idx + 1}
+                </span>
               )}
               {rows.length > config.minRows && (
                 <button
                   type="button"
                   onClick={() => remove(row.id)}
-                  className="text-xs font-bold text-red-600 hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 rounded px-2 py-1 uppercase tracking-wider"
+                  className="shrink-0 rounded-md p-1 text-slate-400 transition-colors hover:bg-slate-200/70 hover:text-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-300"
                   aria-label={`Remove row ${idx + 1}`}
                 >
-                  Remove
+                  <X className="h-4 w-4" />
                 </button>
               )}
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-3 sm:grid-cols-3">
               {numericCols.map((col) => {
                 const inputId = `grid-${row.id}-${col.id}`;
                 return (
-                  <div key={col.id}>
-                    <label
-                      htmlFor={inputId}
-                      className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
-                    >
+                  <div key={col.id} className="space-y-1.5">
+                    <Label htmlFor={inputId} className="text-xs text-slate-500">
                       {col.label}
-                    </label>
+                    </Label>
                     {col.type === "select" ? (
                       <select
                         id={inputId}
                         value={String(row[col.id] ?? "")}
                         onChange={(e) => update(row.id, col.id, e.target.value)}
-                        className="w-full border-2 border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                        className="h-9 w-full rounded-md border border-slate-200 bg-white px-2.5 text-sm text-slate-900 transition-colors focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                       >
                         {col.options?.map((o) => (
                           <option key={o.value} value={o.value}>
@@ -122,22 +128,24 @@ export function MiniGrid({
                         ))}
                       </select>
                     ) : (
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1.5">
                         {col.type === "currency" && (
-                          <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
+                          <span className="text-sm text-slate-500">£</span>
                         )}
-                        <input
+                        <Input
                           id={inputId}
                           type="number"
                           inputMode="numeric"
                           min="0"
                           step={col.step ?? (col.type === "currency" ? 1000 : 1)}
                           value={Number(row[col.id] ?? 0)}
-                          onChange={(e) => update(row.id, col.id, Math.max(0, Number(e.target.value)))}
-                          className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                          onChange={(e) =>
+                            update(row.id, col.id, Math.max(0, Number(e.target.value)))
+                          }
+                          className="tabular-nums"
                         />
                         {col.suffix && (
-                          <span className="text-sm font-semibold text-slate-500">{col.suffix}</span>
+                          <span className="text-sm text-slate-500">{col.suffix}</span>
                         )}
                       </div>
                     )}
@@ -153,8 +161,9 @@ export function MiniGrid({
         <button
           type="button"
           onClick={add}
-          className="w-full border-2 border-dashed border-slate-300 bg-slate-50 py-3 sm:py-4 text-sm sm:text-base font-bold text-slate-700 transition-colors hover:border-emerald-600 hover:bg-emerald-50 hover:text-emerald-700 min-h-[44px]"
+          className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-dashed border-slate-300 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:border-emerald-400 hover:bg-emerald-50/60 hover:text-emerald-700"
         >
+          <Plus className="h-4 w-4" />
           {config.addLabel}
         </button>
       )}

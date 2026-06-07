@@ -54,9 +54,9 @@ export function CalculatorPageResources({
           Get the full {label} model and guide
         </p>
       </div>
-      {hasPremium ? <PremiumUpgrade topic={topic} /> : null}
+      {hasPremium ? <PremiumUpgrade topic={topic} full /> : null}
       {hasGate ? (
-        <ResourceGateLazy topic={topic} copy={gateCopy(topic, pageTitle)} />
+        <ResourceGateLazy topic={topic} copy={gateCopy(topic, pageTitle)} split />
       ) : null}
     </div>
   );

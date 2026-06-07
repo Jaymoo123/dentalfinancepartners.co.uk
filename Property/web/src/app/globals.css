@@ -243,7 +243,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--slate-900);
 }
 
-.prose-blog table {
+/* These article-table rules must NOT leak into embedded `.not-prose` components
+   (e.g. the Excel-grid preview), whose own utility classes would otherwise lose
+   on specificity. `:not(.not-prose *)` exempts anything inside a not-prose
+   subtree; normal blog tables are unaffected. */
+.prose-blog table:not(.not-prose *) {
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -252,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9375rem;
 }
 
-.prose-blog th {
+.prose-blog th:not(.not-prose *) {
   background: var(--slate-900);
   color: white;
   padding: 0.75rem 1rem;
@@ -263,12 +267,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
 }
 
-.prose-blog td {
+.prose-blog td:not(.not-prose *) {
   padding: 0.75rem 1rem;
   border-top: 1px solid var(--border);
 }
 
-.prose-blog tr:nth-child(even) {
+.prose-blog tr:nth-child(even):not(.not-prose *) {
   background: var(--slate-50);
 }
 

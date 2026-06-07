@@ -25,24 +25,26 @@ function ToolLoading() {
   // signals the interactive tool is loading rather than rendering nothing.
   return (
     <div
-      className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10"
+      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
       style={{ minHeight: 480 }}
       aria-busy="true"
     >
-      <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-3">
-        Premium tool
+      <div className="h-1 bg-gradient-to-r from-emerald-400 to-emerald-600" />
+      <div className="border-b border-slate-100 bg-slate-50/60 px-5 py-4 sm:px-7 sm:py-5">
+        <div className="h-5 w-2/3 animate-pulse rounded bg-slate-200" />
+        <div className="mt-2 h-3.5 w-5/6 animate-pulse rounded bg-slate-100" />
       </div>
-      <div className="h-6 w-2/3 rounded bg-slate-100 animate-pulse" />
-      <div className="mt-3 h-4 w-5/6 rounded bg-slate-100 animate-pulse" />
-      <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
-        <div className="space-y-4">
-          <div className="h-12 rounded bg-slate-100 animate-pulse" />
-          <div className="h-12 rounded bg-slate-100 animate-pulse" />
-          <div className="h-12 rounded bg-slate-100 animate-pulse" />
+      <div className="grid gap-6 p-5 sm:p-7 lg:grid-cols-2">
+        <div className="space-y-5">
+          <div className="h-12 animate-pulse rounded-lg bg-slate-100" />
+          <div className="h-12 animate-pulse rounded-lg bg-slate-100" />
+          <div className="h-12 animate-pulse rounded-lg bg-slate-100" />
         </div>
-        <div className="h-64 rounded bg-slate-100 animate-pulse" />
+        <div className="space-y-4">
+          <div className="h-24 animate-pulse rounded-xl bg-slate-100" />
+          <div className="h-32 animate-pulse rounded-xl bg-slate-100" />
+        </div>
       </div>
-      <p className="mt-6 text-sm text-slate-500">Loading the interactive tool…</p>
     </div>
   );
 }
@@ -52,7 +54,13 @@ const PremiumCalculator = dynamic(
   { ssr: false, loading: () => <ToolLoading /> },
 );
 
-export function PremiumUpgrade({ topic }: { topic: TopicKey | null | undefined }) {
+export function PremiumUpgrade({
+  topic,
+  full = false,
+}: {
+  topic: TopicKey | null | undefined;
+  full?: boolean;
+}) {
   if (!topic) return null;
   const resource = resourceForTopic(topic);
   const config = getPremiumTool(resource?.toolId);
@@ -71,7 +79,15 @@ export function PremiumUpgrade({ topic }: { topic: TopicKey | null | undefined }
       <h2 id={`premium-tool-${topic}`} className="sr-only">
         Free {label} tool
       </h2>
-      <PremiumCalculator config={config} />
+      {/* The interactive tool is desktop-only; on mobile show a short prompt
+          instead of a cramped, hard-to-use widget. */}
+      <div className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-6 text-center text-sm text-slate-600 sm:hidden">
+        Our interactive {label} tool is built for a larger screen. Open this page on a
+        desktop to use it.
+      </div>
+      <div className="hidden sm:block">
+        <PremiumCalculator config={config} full={full} />
+      </div>
     </section>
   );
 }

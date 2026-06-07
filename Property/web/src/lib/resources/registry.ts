@@ -78,9 +78,9 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
       label: "Section 24 landlord guide",
       enabled: true,
     },
-    magnetTitle: "The Section 24 landlord toolkit",
+    magnetTitle: "Get the Section 24 Excel toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Drop your email below and we'll send you the template.",
   },
   incorporation: {
     topic: "incorporation",
@@ -97,7 +97,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The landlord incorporation toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   "capital-gains": {
     topic: "capital-gains",
@@ -114,7 +114,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The property CGT toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   "landlord-essentials": {
     topic: "landlord-essentials",
@@ -131,7 +131,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The landlord tax essentials toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   "stamp-duty": {
     topic: "stamp-duty",
@@ -148,7 +148,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The property stamp duty toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   mtd: {
     topic: "mtd",
@@ -165,7 +165,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The Making Tax Digital toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   // Non-flagship topics: registered for completeness so resourceForTopic() is
   // total over TopicKey, but with no assets and all flags off. Flip on / add
@@ -177,7 +177,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "The portfolio management toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   "non-resident": {
     topic: "non-resident",
@@ -186,7 +186,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "The non-resident landlord toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   "property-types": {
     topic: "property-types",
@@ -195,7 +195,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "The specialist property tax toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
   services: {
     topic: "services",
@@ -204,7 +204,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "The property accountant toolkit",
     magnetBlurbTemplate:
-      "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both, plus a copy of the download links.",
+      "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
 };
 

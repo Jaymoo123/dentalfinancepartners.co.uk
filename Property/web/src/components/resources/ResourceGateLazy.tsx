@@ -16,6 +16,14 @@ import { ResourceGate } from "@/components/resources/ResourceGate";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import type { GateCopy } from "@/lib/resources/copy";
 
-export function ResourceGateLazy({ topic, copy }: { topic: TopicKey; copy: GateCopy }) {
-  return <ResourceGate topic={topic} copy={copy} />;
+export function ResourceGateLazy({
+  topic,
+  copy,
+  split = false,
+}: {
+  topic: TopicKey;
+  copy: GateCopy;
+  split?: boolean;
+}) {
+  return <ResourceGate topic={topic} copy={copy} split={split} />;
 }

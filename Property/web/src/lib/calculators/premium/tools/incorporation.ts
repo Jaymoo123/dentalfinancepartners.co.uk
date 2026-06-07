@@ -173,12 +173,16 @@ export const incorporationPremiumTool: PremiumToolConfig = {
   title: "Stay personal vs incorporate: cost and break-even calculator",
   intro:
     "Weigh the upfront cost of moving a property into a limited company (Capital Gains Tax + Stamp Duty) against the annual tax saving, and see how many years it takes to break even.",
+  // All inputs are shown in order; PremiumCalculator caps the inputs panel height
+  // and scrolls it on the compact (blog) layout, so a long list never runs tall.
   fields: [
     {
       id: "propertyValue",
       label: "Current property value",
       type: "currency",
       default: 300000,
+      min: 0,
+      max: 2000000,
       step: 10000,
       help: "Market value transferred into the company (drives both CGT and SDLT).",
     },
@@ -187,6 +191,8 @@ export const incorporationPremiumTool: PremiumToolConfig = {
       label: "Original purchase price",
       type: "currency",
       default: 200000,
+      min: 0,
+      max: 2000000,
       step: 10000,
       help: "Your base cost. The gain is roughly today's value minus this.",
     },
@@ -195,6 +201,8 @@ export const incorporationPremiumTool: PremiumToolConfig = {
       label: "Annual rental income",
       type: "currency",
       default: 24000,
+      min: 0,
+      max: 150000,
       step: 1000,
       help: "Gross rents for the year.",
     },
@@ -203,6 +211,8 @@ export const incorporationPremiumTool: PremiumToolConfig = {
       label: "Annual mortgage interest",
       type: "currency",
       default: 9000,
+      min: 0,
+      max: 100000,
       step: 1000,
       help: "Mortgage interest plus other finance costs (restricted personally under Section 24).",
     },
@@ -211,6 +221,8 @@ export const incorporationPremiumTool: PremiumToolConfig = {
       label: "Other running costs",
       type: "currency",
       default: 3000,
+      min: 0,
+      max: 60000,
       step: 500,
       help: "Allowable non-finance costs (repairs, agent fees, insurance, etc).",
     },

@@ -40,7 +40,7 @@ export function gateCopy(
   const subject = pageTitle?.trim() || label;
   const blurbTemplate =
     resource?.magnetBlurbTemplate ??
-    "Get the working Excel model and the written guide for {label}. Swap your email and we'll send both.";
+    "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.";
 
   return {
     heading: override?.heading?.trim() || magnetTitle,

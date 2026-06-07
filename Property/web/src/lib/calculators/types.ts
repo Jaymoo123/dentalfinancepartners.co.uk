@@ -17,6 +17,12 @@ export interface CalcField {
   options?: { value: string; label: string }[];
   help?: string;
   step?: number;
+  /** slider lower bound (premium renderer). Falls back to a type default. */
+  min?: number;
+  /** slider upper bound (premium renderer). Falls back to a type default. */
+  max?: number;
+  /** if true, this field is tucked into the "Advanced options" section. */
+  advanced?: boolean;
   /** small suffix shown after a number input, e.g. "%" or "miles" */
   suffix?: string;
 }

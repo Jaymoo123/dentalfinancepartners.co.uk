@@ -84,16 +84,16 @@ function compute(ctx: PremiumComputeContext) {
 
   return {
     headline: {
-      label: companyLower ? "A company pays less tax here" : "An individual pays less tax here",
+      label: "Estimated tax difference",
       value: gbp(diff),
-      sub: companyLower ? "Lower tax in a company, per year" : "Lower tax personally, per year",
+      sub: companyLower ? "a year lower through a company" : "a year lower held personally",
       tone: (companyLower ? "warn" : "good") as "warn" | "good",
     },
     // Side-by-side scenario columns: Individual (S24) vs Company.
     scenarioResults: [
       {
         id: "individual",
-        label: "You (individual, Section 24)",
+        label: "Personal (Section 24)",
         best: !companyLower,
         headline: { label: "Income tax / year", value: gbp(res.s24Tax) },
         rows: [
@@ -106,7 +106,7 @@ function compute(ctx: PremiumComputeContext) {
       },
       {
         id: "company",
-        label: "A company (outside Section 24)",
+        label: "Limited company",
         best: companyLower,
         headline: { label: "Corporation Tax / year", value: gbp(res.companyTax) },
         rows: [
@@ -147,28 +147,33 @@ export const section24PremiumTool: PremiumToolConfig = {
   topic: "section-24",
   title: "Section 24: personal vs company calculator",
   intro:
-    "See your income tax and net profit as an individual under the Section 24 restriction versus through a limited company, with the difference. Add your whole portfolio to model the combined impact.",
+    "Compare your tax and net profit holding property personally versus through a limited company.",
   fields: [
     {
       id: "rentalIncome",
       label: "Annual rental income",
       type: "currency",
       default: 50000,
-      help: "Gross rents for the year (used unless you add properties in the grid below).",
+      min: 0,
+      max: 200000,
     },
     {
       id: "mortgageInterest",
       label: "Annual mortgage interest",
       type: "currency",
       default: 20000,
-      help: "Mortgage interest plus other allowable finance costs.",
+      min: 0,
+      max: 120000,
     },
     {
       id: "otherExpenses",
       label: "Other running costs",
       type: "currency",
       default: 8000,
-      help: "Allowable non-finance costs (repairs, agent fees, insurance, etc).",
+      min: 0,
+      max: 60000,
+      advanced: true,
+      help: "Repairs, agent fees, insurance, etc.",
     },
     {
       id: "taxBand",
@@ -183,7 +188,8 @@ export const section24PremiumTool: PremiumToolConfig = {
       type: "select",
       default: "2026-27",
       options: YEAR_OPTIONS,
-      help: "The finance-cost credit rises from 20% (2026/27) to 22% from 2027/28 (FA 2026).",
+      advanced: true,
+      help: "Credit rises to 22% from 2027/28 (FA 2026).",
     },
   ],
   grid: {
@@ -213,8 +219,8 @@ export const section24PremiumTool: PremiumToolConfig = {
     valueFormat: "currency",
     valueAxisLabel: "£ per year",
     series: [
-      { dataKey: "individual", label: "Individual (Section 24)", color: "#f59e0b" },
-      { dataKey: "company", label: "Company", color: "#10b981" },
+      { dataKey: "individual", label: "Personal", color: "#64748b" },
+      { dataKey: "company", label: "Company", color: "#059669" },
     ],
   },
   explainer: {

@@ -30,15 +30,28 @@ import {
   hasEnabledResource,
 } from "@/lib/resources/registry";
 import type { GateCopy } from "@/lib/resources/copy";
+import { ExcelPreview } from "@/components/resources/ExcelPreview";
+import { cn } from "@/lib/utils";
 
 type Status = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
+  "mt-1 w-full min-h-11 touch-manipulation rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors";
 
-export function ResourceGate({ topic, copy }: { topic: TopicKey; copy: GateCopy }) {
+export function ResourceGate({
+  topic,
+  copy,
+  split = false,
+}: {
+  topic: TopicKey;
+  copy: GateCopy;
+  /** side-by-side preview + form when the container is wide (calc page); the
+   *  default is a single stacked column (preview, then form) for narrow places
+   *  like blog posts. */
+  split?: boolean;
+}) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
@@ -153,16 +166,36 @@ export function ResourceGate({ topic, copy }: { topic: TopicKey; copy: GateCopy 
 
   return (
     <section
-      className="my-12 border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8"
+      className="not-prose @container my-12 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
       aria-labelledby="resource-gate-heading"
     >
-      <h3 id="resource-gate-heading" className="text-xl font-bold text-slate-900 sm:text-2xl">
-        {copy.heading}
-      </h3>
-      <p className="mt-2 text-sm text-slate-700 leading-relaxed">{copy.blurb}</p>
+      {/* Branded top accent */}
+      <div className="h-1 bg-gradient-to-r from-emerald-400 to-emerald-600" />
 
-      {status === "success" ? (
-        <div role="status" className="mt-5 rounded-lg border-2 border-emerald-200 bg-emerald-50 p-5">
+      {/* Header */}
+      <div className="border-b border-slate-200 bg-slate-50/70 px-5 py-2 sm:px-6 sm:py-2.5">
+        <h3 id="resource-gate-heading" className="text-lg font-bold text-slate-900 sm:text-xl">
+          {copy.heading}
+        </h3>
+        <p className="mt-1 text-sm text-slate-500">{copy.blurb}</p>
+      </div>
+
+      <div className={cn("grid", split && "@3xl:grid-cols-[1.1fr_0.9fr]")}>
+        {/* Left: the proof — a preview of the real model. Hidden on mobile
+            (the wide grid doesn't fit a phone), leaving just the email form. */}
+        <div className="hidden items-center p-4 sm:flex sm:p-6">
+          <ExcelPreview topic={topic} />
+        </div>
+
+        {/* Right: the value + capture (or, after success, the unlocked downloads) */}
+        <div
+          className={cn(
+            "flex flex-col justify-center border-slate-200 bg-slate-50 p-4 sm:border-t sm:p-6",
+            split && "@3xl:border-l @3xl:border-t-0",
+          )}
+        >
+          {status === "success" ? (
+        <div role="status" className="rounded-xl border border-emerald-200 bg-emerald-50 p-5">
           <p className="text-sm font-semibold text-emerald-900">
             You&apos;re in. Your downloads are ready below, and we&apos;ve emailed you a copy of the links.
           </p>
@@ -187,7 +220,8 @@ export function ResourceGate({ topic, copy }: { topic: TopicKey; copy: GateCopy 
           </div>
         </div>
       ) : (
-        <form
+        <>
+          <form
           onSubmit={onSubmit}
           onFocusCapture={(e) => {
             const t = e.target as HTMLElement & { name?: string };
@@ -197,7 +231,7 @@ export function ResourceGate({ topic, copy }: { topic: TopicKey; copy: GateCopy 
             const t = e.target as HTMLElement & { name?: string; value?: string };
             if (t?.name) ft.onFieldBlur(t.name, Boolean(t.value && t.value.trim()));
           }}
-          className="mt-5 space-y-4"
+          className="space-y-4"
           noValidate
           aria-busy={status === "loading"}
         >
@@ -283,7 +317,13 @@ export function ResourceGate({ topic, copy }: { topic: TopicKey; copy: GateCopy 
             {status === "loading" ? "Unlocking..." : "Email me the downloads"}
           </button>
         </form>
+          <p className="mt-4 text-xs leading-relaxed text-slate-400">
+            Instant access on this page, and we&apos;ll email you the links too. No spam.
+          </p>
+        </>
       )}
+        </div>
+      </div>
     </section>
   );
 }

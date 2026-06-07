@@ -139,26 +139,26 @@ export const landlordEssentialsPremiumTool: PremiumToolConfig = {
   title: "Landlord rental profit & income tax calculator",
   intro:
     "Work out your taxable rental profit and the income tax on it, with the £1,000 property allowance, the Section 24 mortgage-interest credit and your tax band all handled. Add several properties to see your whole portfolio at once.",
+  // All scalar inputs are shown in order; PremiumCalculator caps the inputs panel
+  // height and scrolls it on the compact (blog) layout. The multi-property grid
+  // stays in its own collapsible below.
   fields: [
     {
       id: "rentalIncome",
       label: "Annual rental income",
       type: "currency",
       default: 18000,
+      min: 0,
+      max: 150000,
       help: "Gross rents for the year (used as one property unless you add rows in the grid below).",
-    },
-    {
-      id: "expenses",
-      label: "Allowable running costs",
-      type: "currency",
-      default: 3000,
-      help: "Repairs, letting/agent fees, insurance, ground rent, accountancy. NOT mortgage interest, and NOT capital improvements.",
     },
     {
       id: "mortgageInterest",
       label: "Annual mortgage interest",
       type: "currency",
       default: 6000,
+      min: 0,
+      max: 80000,
       help: "Mortgage interest plus other allowable finance costs. Restricted under Section 24 (treated as a credit, not a deduction).",
     },
     {
@@ -166,15 +166,24 @@ export const landlordEssentialsPremiumTool: PremiumToolConfig = {
       label: "Your other taxable income",
       type: "currency",
       default: 40000,
+      min: 0,
+      max: 200000,
       help: "Salary, pension and other taxable income before the rentals. We add the rental profit on top to find the right tax band.",
+    },
+    {
+      id: "expenses",
+      label: "Allowable running costs",
+      type: "currency",
+      default: 3000,
+      min: 0,
+      max: 60000,      help: "Repairs, letting/agent fees, insurance, ground rent, accountancy. NOT mortgage interest, and NOT capital improvements.",
     },
     {
       id: "year",
       label: "Tax year",
       type: "select",
       default: "2026-27",
-      options: YEAR_OPTIONS,
-      help: "From 2027/28 property income in England, Wales & NI is taxed at 22/42/47 and the Section 24 credit rises to 22% (FA 2026).",
+      options: YEAR_OPTIONS,      help: "From 2027/28 property income in England, Wales & NI is taxed at 22/42/47 and the Section 24 credit rises to 22% (FA 2026).",
     },
   ],
   grid: {
