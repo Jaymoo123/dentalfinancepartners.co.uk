@@ -170,11 +170,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const topic = topicForBlogSlug(categorySlug);
   const hasPremium = topic ? hasPremiumTool(resourceForTopic(topic)?.toolId) : false;
   const hasGate = topic ? hasEnabledResource(topic) : false;
-  // KILL-SWITCH: the on-page premium tool/gate module rendered badly ("wedged
-  // onto the page") and is DISABLED until redesigned. Blogs fall back to the
-  // original InlineMiniLeadForm. Guides, personalisation, the registries and the
-  // calculators are untouched. Flip to true to re-enable once redesigned.
-  const SHOW_ONPAGE_RESOURCES = false;
+  // The on-page premium tool + Excel gate were redesigned (shadcn) to render
+  // cleanly in the narrow blog column, and are ENABLED. Set to false to fall
+  // back to the original InlineMiniLeadForm. Guides, personalisation, the
+  // registries and the calculators are unaffected either way.
+  const SHOW_ONPAGE_RESOURCES = true;
   const showPremiumIslands = SHOW_ONPAGE_RESOURCES && !!topic && (hasPremium || hasGate);
 
   // Tiered, EARLY placement of the resource module:
