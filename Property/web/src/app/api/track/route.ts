@@ -16,7 +16,7 @@
  */
 import { NextResponse, type NextRequest } from "next/server";
 import { isKnownEvent, INTERACTION_EVENTS, LIMITS } from "@/lib/analytics/types";
-import { detectBot, parseUa } from "@/lib/analytics/server/bots";
+import { detectBot, parseUa, verifyBotId } from "@/lib/analytics/server/bots";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
@@ -84,6 +84,7 @@ function buildSession(
   ctx: {
     isBot: boolean;
     botReason: string | null;
+    botidVerified: boolean | null;
     country: string | null;
     city: string | null;
     region: string | null;
@@ -140,7 +141,7 @@ function buildSession(
     consent_state: str(first._consent_state) ?? "granted",
     is_bot: ctx.isBot,
     bot_reason: ctx.botReason,
-    botid_verified: null,
+    botid_verified: ctx.botidVerified,
     human_confirmed: humanConfirmed,
     event_count: group.length,
     engaged_ms: Math.round(engagedMs),
@@ -182,7 +183,15 @@ export async function POST(request: NextRequest) {
   if (events.length === 0) return NO_CONTENT;
 
   const ua = request.headers.get("user-agent");
-  const { isBot, reason } = detectBot(ua);
+  const heuristic = detectBot(ua);
+  // BotID hardens the verdict: it can ADD a flag the UA heuristic missed and
+  // populates botid_verified. Fail-open (null off-Vercel/unconfigured) so the
+  // heuristic alone still governs. Skip the call when the heuristic already
+  // flagged a bot — no need to spend it confirming the obvious.
+  const botid = heuristic.isBot ? null : await verifyBotId();
+  const isBot = heuristic.isBot || botid?.isBot === true;
+  const reason = heuristic.reason ?? (botid?.isBot ? "botid" : null);
+  const botidVerified = botid ? botid.verified : null;
   const { uaFamily, osFamily } = parseUa(ua);
   const country = request.headers.get("x-vercel-ip-country"); // edge geo; never raw IP
   const city = request.headers.get("x-vercel-ip-city");
@@ -205,6 +214,7 @@ export async function POST(request: NextRequest) {
         const session = buildSession(group, {
           isBot,
           botReason: reason,
+          botidVerified,
           country,
           city,
           region,

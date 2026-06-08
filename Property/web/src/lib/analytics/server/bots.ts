@@ -26,12 +26,43 @@ export function detectBot(ua: string | null): BotVerdict {
   return { isBot: false, reason: null };
 }
 
-/* ---- INTEGRATION POINT: Vercel BotID -------------------------------------
- * To add platform-grade verification, install @vercel/botid and call
- * checkBotId() here, merging its verdict (e.g. reason: "botid"). Left as a
- * heuristic-only check until the dependency is enabled so this builds/runs with
- * no extra setup. The Python reclassifier remains the daily backstop either way.
+/* ---- Vercel BotID (platform-grade verification) --------------------------
+ * Layered ON TOP of the heuristic: a positive BotID verdict can ADD a bot flag
+ * the UA check missed, and its human verdict populates `botid_verified`. It is
+ * intentionally fail-open — off-Vercel, unconfigured, or on error it returns
+ * null and the heuristic alone governs, so ingest never breaks.
+ *
+ * Caveat: /api/track arrives via navigator.sendBeacon, which can't carry BotID's
+ * client challenge, so this runs in basic (signal-only) mode — it hardens the
+ * denominator at the margin rather than giving deep per-request proof. Deep mode
+ * would require routing the action through a BotIdClient-instrumented fetch
+ * (the lead form is the candidate, deferred). The Python reclassifier remains
+ * the daily backstop regardless.
  * -------------------------------------------------------------------------- */
+
+/** Tri-state human verdict from BotID: true=human, false=bot, null=unknown. */
+export interface BotIdResult {
+  /** BotID is confident this is an automated client. */
+  isBot: boolean;
+  /** true human / false bot / null unknown — maps straight to botid_verified. */
+  verified: boolean | null;
+}
+
+/**
+ * Platform-grade verification via Vercel BotID. Fail-open: any error (not on
+ * Vercel, product not enabled, etc.) returns null so the caller falls back to
+ * the heuristic. Keeps the hot path safe.
+ */
+export async function verifyBotId(): Promise<BotIdResult | null> {
+  try {
+    const { checkBotId } = await import("botid/server");
+    const v = await checkBotId();
+    const verified = v.isHuman ? true : v.isBot ? false : null;
+    return { isBot: v.isBot === true, verified };
+  } catch {
+    return null;
+  }
+}
 
 /** Very small UA → family parser (coarse cohorting only). */
 export function parseUa(ua: string | null): { uaFamily: string; osFamily: string } {
