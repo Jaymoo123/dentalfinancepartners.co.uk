@@ -43,6 +43,7 @@ export const EVENT_NAMES = [
   "personalization_clicked",
   "personalization_dismissed",
   "support_opened",
+  "web_vital", // real-user Core Web Vital sample (passive; props: metric/value/rating)
 ] as const;
 
 export type EventName = (typeof EVENT_NAMES)[number];

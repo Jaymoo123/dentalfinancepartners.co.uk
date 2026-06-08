@@ -10,6 +10,7 @@ import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -89,6 +90,8 @@ export default function RootLayout({
             clarityProjectId={process.env.NEXT_PUBLIC_CLARITY_ID}
           />
         </ConsentProvider>
+        {/* Vercel Speed Insights: anonymous, cookieless real-user Core Web Vitals. */}
+        <SpeedInsights />
       </body>
     </html>
   );

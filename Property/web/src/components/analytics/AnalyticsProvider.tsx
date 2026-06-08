@@ -17,10 +17,11 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { configureAnalytics, track } from "@/lib/analytics/track";
 import { installAutoCapture, resetForNavigation } from "@/lib/analytics/autoCapture";
-import { isNewSession } from "@/lib/analytics/ids";
+import { isNewSession, getVisitorId } from "@/lib/analytics/ids";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 import { recordEntryTopic, recordTopicVisit, bumpVisits, isReturning } from "@/lib/intent/session";
 import { useConsent } from "./ConsentProvider";
+import { WebVitals } from "./WebVitals";
 
 type AnalyticsProviderProps = {
   siteKey: string;
@@ -110,7 +111,22 @@ export function AnalyticsProvider({ siteKey, children }: AnalyticsProviderProps)
     if (isEntry) props.entry_topic = topic ?? "";
     props.visit_class = isReturning() ? "returning" : "new";
     track("page_view", props);
+
+    // Tag the Microsoft Clarity session with our own cohorts so replays/heatmaps
+    // are filterable (e.g. watch the rage-click sessions for a topic). visitor_id
+    // is a random id, not PII. No-op when Clarity isn't loaded.
+    const w = window as unknown as { clarity?: (...args: unknown[]) => void };
+    if (typeof w.clarity === "function") {
+      w.clarity("set", "visitor_id", getVisitorId() || "");
+      w.clarity("set", "visit_class", isReturning() ? "returning" : "new");
+      if (topic) w.clarity("set", "topic", topic);
+    }
   }, [pathname, granted]);
 
-  return <>{children}</>;
+  return (
+    <>
+      {granted && <WebVitals />}
+      {children}
+    </>
+  );
 }

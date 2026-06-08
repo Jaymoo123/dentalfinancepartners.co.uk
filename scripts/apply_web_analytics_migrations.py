@@ -40,6 +40,7 @@ MIGRATIONS = [
     "20260608000002_cta_friction_and_timeseries_geo.sql",
     "20260608000003_dashboard_trackers.sql",
     "20260608000004_experiment_results_unnest.sql",
+    "20260608000005_session_geo_city_region_tz.sql",
 ]
 
 

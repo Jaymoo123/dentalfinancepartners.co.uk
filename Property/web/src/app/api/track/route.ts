@@ -81,7 +81,16 @@ function sanitiseEvents(raw: unknown): RawEvent[] {
 /** Build one session-aggregate payload from a group of events (all one session). */
 function buildSession(
   group: RawEvent[],
-  ctx: { isBot: boolean; botReason: string | null; country: string | null; uaFamily: string; osFamily: string },
+  ctx: {
+    isBot: boolean;
+    botReason: string | null;
+    country: string | null;
+    city: string | null;
+    region: string | null;
+    timezone: string | null;
+    uaFamily: string;
+    osFamily: string;
+  },
 ) {
   const first = group[0];
   const pageView = group.find((e) => e.event_name === "page_view");
@@ -122,6 +131,9 @@ function buildSession(
     ua_family: ctx.uaFamily,
     os_family: ctx.osFamily,
     country: ctx.country,
+    city: ctx.city,
+    region: ctx.region,
+    timezone: ctx.timezone,
     is_embed: first.is_embed === true,
     embed_slug: str(first._embed_slug) ?? null,
     embed_referrer_host: null,
@@ -173,6 +185,9 @@ export async function POST(request: NextRequest) {
   const { isBot, reason } = detectBot(ua);
   const { uaFamily, osFamily } = parseUa(ua);
   const country = request.headers.get("x-vercel-ip-country"); // edge geo; never raw IP
+  const city = request.headers.get("x-vercel-ip-city");
+  const region = request.headers.get("x-vercel-ip-country-region");
+  const timezone = request.headers.get("x-vercel-ip-timezone");
 
   // Tag each event with the bot verdict, then group by session.
   const groups = new Map<string, RawEvent[]>();
@@ -191,6 +206,9 @@ export async function POST(request: NextRequest) {
           isBot,
           botReason: reason,
           country,
+          city,
+          region,
+          timezone,
           uaFamily,
           osFamily,
         });
