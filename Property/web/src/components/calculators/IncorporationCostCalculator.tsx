@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { PageResultCta } from "@/components/calculators/PageResultCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { computeIncorporation } from "@/lib/incorporation";
 
 export function IncorporationCostCalculator({
@@ -191,7 +191,7 @@ export function IncorporationCostCalculator({
       {variant === "embed" ? (
         <EmbedCta campaign="incorporation-cost-calculator" />
       ) : resultCta ? (
-        <PageResultCta campaign="incorporation-cost-calculator" />
+        <CalcResultCta campaign="incorporation-cost-calculator" />
       ) : null}
     </div>
   );

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { PageResultCta } from "@/components/calculators/PageResultCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { computeSection24, type TaxBand } from "@/lib/section24";
 
 export function Section24Calculator({
@@ -152,7 +152,7 @@ export function Section24Calculator({
       {variant === "embed" ? (
         <EmbedCta campaign="section-24-calculator" />
       ) : resultCta ? (
-        <PageResultCta campaign="section-24-calculator" />
+        <CalcResultCta campaign="section-24-calculator" />
       ) : null}
     </div>
   );

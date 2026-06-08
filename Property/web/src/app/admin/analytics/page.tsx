@@ -18,7 +18,7 @@ import {
   getLeadsForSite,
   getPersonalizationResults,
   getExperimentResults,
-  getPersonalizationAB,
+  getExperimentArms,
   getCountryOptions,
   getFormFieldDropoff,
   getCtaPerformance,
@@ -31,7 +31,7 @@ import {
   type CalculatorConversion,
   type CalculatorConversionPlacement,
   type ResourceConversion,
-  type PersonalizationAB,
+  type ExperimentArms,
   type PersonalizationResult,
   type ExperimentResult,
   type FormFieldDropoff,
@@ -41,6 +41,7 @@ import {
   type ClientError,
 } from "@/lib/analytics/server/adminData";
 import { ruleLabel, surfaceLabel, surfaceWhere, ruleTrigger } from "@/lib/intent/labels";
+import { experimentMeta, runningExperiments, type ExperimentMeta } from "@/lib/experiments/registry";
 import { ctaLabel, isDismissCta } from "@/lib/analytics/ctaLabels";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
@@ -184,8 +185,8 @@ function Detail({
 
 const AB_MIN_SESSIONS = 100;
 
-function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
-  const { control, treatment } = ab;
+function ExperimentCard({ meta, arms }: { meta: ExperimentMeta; arms: ExperimentArms }) {
+  const { control, treatment } = arms;
   const hasBoth = !!control && !!treatment;
   const cRate = control?.conversion_rate ?? 0;
   const tRate = treatment?.conversion_rate ?? 0;
@@ -212,17 +213,16 @@ function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
     headline = "Waiting for both arms to log sessions";
     headlineClass = "text-slate-500";
   } else if (!enough) {
-    headline = "Not enough data yet — directional only (need ~100+ sessions per arm)";
+    headline = "Not enough data yet, directional only (need ~100+ sessions per arm)";
     headlineClass = "text-amber-700";
   } else if (relLift == null) {
-    headline = "Control has no conversions yet — lift not computable";
+    headline = "Control has no conversions yet, lift not computable";
     headlineClass = "text-slate-500";
   } else {
     const sign = relLift >= 0 ? "+" : "";
     const dir = relLift >= 0 ? "vs" : "below";
     headline = (
       <>
-        Personalisation:{" "}
         <span className={relLift >= 0 ? "text-emerald-700" : "text-rose-700"}>
           {sign}
           {(relLift * 100).toFixed(0)}% conversions
@@ -235,43 +235,37 @@ function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
   return (
     <div className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-xs font-semibold uppercase tracking-wider text-emerald-800">
-          Personalisation A/B — control vs treatment
-        </h3>
+        <h3 className="text-sm font-bold text-emerald-900">{meta.label}</h3>
         {enough && sig && (
           <span
             className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${
               sig.significant ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-600"
             }`}
           >
-            {sig.significant ? "Statistically significant (95%)" : "Not yet significant (95%)"}
+            {sig.significant ? "Significant (95%)" : "Not yet significant"}
           </span>
         )}
       </div>
 
-      <p className={`mt-2 text-xl font-bold ${headlineClass}`}>{headline}</p>
+      <p className={`mt-1 text-xl font-bold ${headlineClass}`}>{headline}</p>
 
       <div className="mt-4 grid grid-cols-2 gap-3">
         <div className="rounded-lg border border-slate-200 bg-white p-3">
-          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Control (generic)</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Control</div>
           <div className="mt-1 text-2xl font-bold text-slate-900">{pct(control?.conversion_rate)}</div>
-          <div className="mt-0.5 text-xs text-slate-500">
-            {cSessions} sessions · {control?.converted_sessions ?? 0} converted
-          </div>
+          <div className="mt-0.5 text-xs text-slate-500">{cSessions} sessions · {control?.converted_sessions ?? 0} converted</div>
+          <div className="mt-1 text-[11px] text-slate-400">{meta.controlDesc}</div>
         </div>
         <div className="rounded-lg border border-emerald-300 bg-white p-3">
-          <div className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Treatment (personalised)</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Treatment</div>
           <div className="mt-1 text-2xl font-bold text-slate-900">{pct(treatment?.conversion_rate)}</div>
-          <div className="mt-0.5 text-xs text-slate-500">
-            {tSessions} sessions · {treatment?.converted_sessions ?? 0} converted
-          </div>
+          <div className="mt-0.5 text-xs text-slate-500">{tSessions} sessions · {treatment?.converted_sessions ?? 0} converted</div>
+          <div className="mt-1 text-[11px] text-emerald-700/70">{meta.treatmentDesc}</div>
         </div>
       </div>
 
       <p className="mt-3 text-xs text-slate-500">
-        Control (~25%) gets the plain generic site; treatment (~75%) gets behaviour-driven offers. Relative lift =
-        (treatment − control) ÷ control. Honest by design: figures stay directional until each arm has ~
-        {AB_MIN_SESSIONS}+ sessions.
+        Relative lift = (treatment vs control) ÷ control. Directional until each arm has ~{AB_MIN_SESSIONS}+ sessions.
         {enough && sig && !sig.significant && " The current gap could still be noise."}
       </p>
     </div>
@@ -855,9 +849,9 @@ function OfferPerformancePanel({ rows }: { rows: PersonalizationResult[] }) {
   );
 }
 
-function experimentOneLiner(ab: PersonalizationAB): string {
-  const c = ab.control;
-  const t = ab.treatment;
+function experimentOneLiner(arms: ExperimentArms | undefined): string {
+  const c = arms?.control;
+  const t = arms?.treatment;
   if (!c || !t) return "Personalisation A/B: waiting for both arms to log sessions.";
   const cRate = c.conversion_rate ?? 0;
   const tRate = t.conversion_rate ?? 0;
@@ -895,7 +889,7 @@ export default async function AdminAnalyticsPage({
     leads,
     personalization,
     experiments,
-    personalizationAB,
+    experimentArms,
     countryOptions,
     ctaPerformance,
     formDropoff,
@@ -913,7 +907,7 @@ export default async function AdminAnalyticsPage({
     getLeadsForSite(siteKey),
     getPersonalizationResults(siteKey),
     getExperimentResults(siteKey),
-    getPersonalizationAB(siteKey),
+    getExperimentArms(siteKey),
     getCountryOptions(siteKey),
     getCtaPerformance(siteKey, countryFilter),
     getFormFieldDropoff(siteKey, countryFilter),
@@ -1015,7 +1009,7 @@ export default async function AdminAnalyticsPage({
       </div>
 
       <div className="mt-4 rounded-lg border border-emerald-200 bg-emerald-50/40 px-3 py-2 text-xs text-emerald-900">
-        {experimentOneLiner(personalizationAB)} <span className="text-emerald-700">See the Experiments tab.</span>
+        {experimentOneLiner(experimentArms.personalization)} <span className="text-emerald-700">See the Experiments tab.</span>
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
@@ -1064,7 +1058,22 @@ export default async function AdminAnalyticsPage({
 
   const experimentsSection = (
     <div className="space-y-8">
-      <PersonalizationABCard ab={personalizationAB} />
+      <div>
+        <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
+        <p className="mt-1 text-xs text-slate-500">
+          Each running experiment, control (current) vs treatment (new), updating as data accrues. Lift and significance
+          are honest: directional until each arm has ~{AB_MIN_SESSIONS}+ sessions.
+        </p>
+        <div className="mt-3 space-y-4">
+          {runningExperiments().map((e) => (
+            <ExperimentCard
+              key={e.key}
+              meta={experimentMeta(e.key)}
+              arms={experimentArms[e.key] ?? { control: null, treatment: null }}
+            />
+          ))}
+        </div>
+      </div>
       <ExperimentLedger experiments={experiments} />
       <OfferPerformancePanel rows={personalization} />
     </div>

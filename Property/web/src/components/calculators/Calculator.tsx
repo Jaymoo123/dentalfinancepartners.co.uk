@@ -5,7 +5,7 @@ import type { CalcField, CalcValues } from "@/lib/calculators/types";
 import { getGenericTool } from "@/lib/calculators/registry";
 import { Field } from "@/components/calculators/fields/Field";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { PageResultCta } from "@/components/calculators/PageResultCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { track } from "@/lib/analytics/track";
 import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
 
@@ -147,7 +147,7 @@ export function Calculator({
       {variant === "embed" ? (
         <EmbedCta campaign={tool.slug} label={tool.ctaLabel} />
       ) : resultCta ? (
-        <PageResultCta campaign={tool.slug} label={tool.ctaLabel} />
+        <CalcResultCta campaign={tool.slug} label={tool.ctaLabel} />
       ) : null}
     </div>
   );

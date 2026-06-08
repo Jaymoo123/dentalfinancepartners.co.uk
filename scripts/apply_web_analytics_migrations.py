@@ -38,6 +38,8 @@ MIGRATIONS = [
     "20260607000001_calc_gate_placement_views.sql",
     "20260608000001_funnel_v2_and_geo_views.sql",
     "20260608000002_cta_friction_and_timeseries_geo.sql",
+    "20260608000003_dashboard_trackers.sql",
+    "20260608000004_experiment_results_unnest.sql",
 ]
 
 

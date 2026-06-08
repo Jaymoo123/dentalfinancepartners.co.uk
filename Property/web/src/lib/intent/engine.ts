@@ -6,12 +6,11 @@
  *
  * Substantive offers (not just a copy swap): every action now carries a matched
  * ASSET (an `offer`) chosen from BEHAVIOUR + intent, pointing at a real live
- * resource — the topic's interactive calculator (/calculators/<slug>), its gated
- * guide + Excel (/resources/<topic>), or a specialist (/contact). The surfaces
- * render the offer (title + blurb + reason + button to offer.href).
+ * resource: the topic's interactive calculator (/calculators/<slug>) or a free
+ * specialist review (/contact). The surfaces render the offer (title + blurb +
+ * reason + button to offer.href).
  */
 import { getTopic, type TopicKey } from "./taxonomy";
-import { resourceForTopic, isGuideEnabled } from "@/lib/resources/registry";
 
 export type Surface =
   | "hero_cta"
@@ -66,11 +65,6 @@ const ENGAGED_GUIDE_MS = 60_000; // engaged reader -> offer the full guide
 const SCROLL_ESCALATE_PCT = 60; // "deep into the page" threshold
 const SCROLL_MODAL_PCT = 70; // deep-scroll modal trigger
 
-/** True if the topic has a published, gated guide at /resources/<topic>. */
-function hasGuide(topicKey: TopicKey): boolean {
-  return isGuideEnabled(resourceForTopic(topicKey));
-}
-
 /** Build the "tool" offer (the topic's interactive calculator). */
 function toolOffer(topicKey: TopicKey): IntentOffer | null {
   const t = getTopic(topicKey);
@@ -85,20 +79,18 @@ function toolOffer(topicKey: TopicKey): IntentOffer | null {
   };
 }
 
-/** Build the "guide" offer (the gated guide + Excel at /resources/<topic>). */
-function guideOffer(
+/** Build the "review" offer (a free, no-obligation review, routed via /contact). */
+function reviewOffer(
   topicKey: TopicKey,
-  reason = "You're deep into this — here's the complete guide + Excel",
+  reason = "You've spent real time on this, a quick review will confirm where you stand",
 ): IntentOffer | null {
-  if (!hasGuide(topicKey)) return null;
   const t = getTopic(topicKey);
   if (!t) return null;
-  const label = t.label.toLowerCase();
   return {
-    kind: "guide",
-    title: `The complete ${label} guide`,
-    blurb: `Get the full ${label} model + worked examples (free).`,
-    href: `/resources/${topicKey}`,
+    kind: "specialist",
+    title: t.ctaCopy,
+    blurb: "A free, no-obligation review of your position with a property tax specialist.",
+    href: "/contact",
     reason,
   };
 }
@@ -112,7 +104,7 @@ function specialistOffer(topicKey: TopicKey): IntentOffer {
     title: `Speak to a ${label} specialist`,
     blurb: "Get your specific position checked by a property tax specialist.",
     href: "/contact",
-    reason: "You've spent real time here — a specialist can confirm your position",
+    reason: "You've spent real time here, a specialist can confirm your position",
   };
 }
 
@@ -120,7 +112,7 @@ function specialistOffer(topicKey: TopicKey): IntentOffer {
  * Behaviour + intent -> the single best offer for this visitor on this topic.
  * Escalation ladder (most-engaged first):
  *  - deeply engaged & unconverted  -> specialist
- *  - engaged reader                -> the full guide + Excel (if published)
+ *  - engaged reader                -> a free review
  *  - light browser                 -> the interactive tool
  * Falls back down the ladder when the richer asset doesn't exist for the topic.
  */
@@ -134,10 +126,10 @@ function pickOffer(topicKey: TopicKey, ctx: IntentContext): IntentOffer | null {
     return specialistOffer(topicKey);
   }
   if (engagedReader) {
-    return guideOffer(topicKey) ?? toolOffer(topicKey) ?? specialistOffer(topicKey);
+    return reviewOffer(topicKey) ?? toolOffer(topicKey) ?? specialistOffer(topicKey);
   }
-  // Light browser: the interactive tool (fall back to guide, then specialist).
-  return toolOffer(topicKey) ?? guideOffer(topicKey) ?? specialistOffer(topicKey);
+  // Light browser: the interactive tool (fall back to a review, then specialist).
+  return toolOffer(topicKey) ?? reviewOffer(topicKey) ?? specialistOffer(topicKey);
 }
 
 function build(
@@ -204,14 +196,14 @@ export function evaluate(surface: Surface, ctx: IntentContext): IntentAction | n
 
     case "returning_bar": {
       if (ctx.converted || !ctx.returning) return null;
-      // Resume their last topic — point them at its guide (the deepest asset)
-      // so a return visit picks up where they left off, not back at square one.
+      // Resume their last topic with a free review, so a return visit picks up
+      // where they left off rather than back at square one.
       const resume = ctx.lastTopic ?? ctx.entryTopic;
       if (!resume) return null;
       const offer =
-        guideOffer(
+        reviewOffer(
           resume,
-          "Pick up where you left off — the full guide + Excel",
+          "Pick up where you left off, get your position reviewed",
         ) ??
         toolOffer(resume) ??
         specialistOffer(resume);

@@ -361,6 +361,44 @@ export async function getPersonalizationAB(siteKey: string): Promise<Personaliza
   };
 }
 
+export type ExperimentArm = {
+  sessions: number;
+  cta_clicks: number;
+  form_starts: number;
+  converted_sessions: number;
+  conversion_rate: number | null;
+};
+
+export type ExperimentArms = { control: ExperimentArm | null; treatment: ExperimentArm | null };
+
+/**
+ * All experiments grouped by key into control/treatment arms (the live A/B
+ * ledger). vw_experiment_results now returns one row per `key:variant` (unnested
+ * from the comma-separated props.exp), so every running experiment lights up
+ * here automatically.
+ */
+export async function getExperimentArms(siteKey: string): Promise<Record<string, ExperimentArms>> {
+  const rows = await getExperimentResults(siteKey);
+  const out: Record<string, ExperimentArms> = {};
+  for (const r of rows) {
+    const idx = r.exp.indexOf(":");
+    if (idx < 0) continue;
+    const key = r.exp.slice(0, idx);
+    const variant = r.exp.slice(idx + 1);
+    if (!out[key]) out[key] = { control: null, treatment: null };
+    const arm: ExperimentArm = {
+      sessions: r.sessions,
+      cta_clicks: r.cta_clicks,
+      form_starts: r.form_starts,
+      converted_sessions: r.converted_sessions,
+      conversion_rate: r.conversion_rate,
+    };
+    if (variant === "control") out[key].control = arm;
+    else if (variant === "treatment") out[key].treatment = arm;
+  }
+  return out;
+}
+
 export type TimePoint = {
   bucket: string;
   sessions: number;

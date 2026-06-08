@@ -25,7 +25,7 @@ import {
 import { hasPremiumTool } from "@/lib/calculators/premium/registry";
 import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
-import { ResourceGateLazy } from "@/components/resources/ResourceGateLazy";
+import { GateOrForm } from "@/components/resources/GateOrForm";
 
 export function CalculatorPageResources({
   slug,
@@ -56,7 +56,7 @@ export function CalculatorPageResources({
       </div>
       {hasPremium ? <PremiumUpgrade topic={topic} full placement="calculator" /> : null}
       {hasGate ? (
-        <ResourceGateLazy
+        <GateOrForm
           topic={topic}
           copy={gateCopy(topic, pageTitle)}
           split

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { PageResultCta } from "@/components/calculators/PageResultCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 
 export function MTDCheckerCalculator({
   variant = "page",
@@ -144,7 +144,7 @@ export function MTDCheckerCalculator({
       {variant === "embed" ? (
         <EmbedCta campaign="mtd-checker" />
       ) : resultCta ? (
-        <PageResultCta campaign="mtd-checker" />
+        <CalcResultCta campaign="mtd-checker" />
       ) : null}
     </div>
   );

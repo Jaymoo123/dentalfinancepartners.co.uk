@@ -8,7 +8,6 @@ import { niche } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
-import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { extractHeadings } from "@/lib/markdown-utils";
@@ -18,7 +17,7 @@ import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
 import { hasPremiumTool } from "@/lib/calculators/premium/registry";
 import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
-import { ResourceGateLazy } from "@/components/resources/ResourceGateLazy";
+import { GateOrForm } from "@/components/resources/GateOrForm";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -313,7 +312,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         {/* More content between the tool and the gate. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
                         {/* A STEP LATER: the email gate (ask). */}
-                        <ResourceGateLazy
+                        <GateOrForm
                           topic={topic}
                           copy={gateCopy(topic, post.title)}
                           placement="blog"
@@ -326,7 +325,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         {/* No later break: gate goes directly under the tool, then
                             the rest of the article. */}
                         {hasGate ? (
-                          <ResourceGateLazy
+                          <GateOrForm
                           topic={topic}
                           copy={gateCopy(topic, post.title)}
                           placement="blog"
@@ -461,7 +460,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         secondary="Free 20-minute call with a property tax specialist"
         buttonLabel="Talk to a specialist"
       />
-      <ExitIntentModal topic={post.category} />
+      {/* ExitIntentModal is mounted globally (app/layout.tsx); it self-gates to
+          blog + calculator routes, so no per-page mount is needed here. */}
     </>
   );
 }

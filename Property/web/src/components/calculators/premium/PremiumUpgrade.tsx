@@ -19,6 +19,7 @@ import type { TopicKey } from "@/lib/intent/taxonomy";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { resourceForTopic } from "@/lib/resources/registry";
 import { getPremiumTool } from "@/lib/calculators/premium/registry";
+import { MobileToolSlot } from "@/components/calculators/premium/MobileToolSlot";
 
 function ToolLoading() {
   // Sized, visible reserved-height placeholder: keeps the layout stable and
@@ -85,11 +86,10 @@ export function PremiumUpgrade({
       <h2 id={`premium-tool-${topic}`} className="sr-only">
         Free {label} tool
       </h2>
-      {/* The interactive tool is desktop-only; on mobile show a short prompt
-          instead of a cramped, hard-to-use widget. */}
-      <div className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-6 text-center text-sm text-slate-600 sm:hidden">
-        Our interactive {label} tool is built for a larger screen. Open this page on a
-        desktop to use it.
+      {/* The interactive tool is desktop-only; on mobile the slot runs the
+          mobile_tool_capture experiment (prompt vs a converting capture). */}
+      <div className="sm:hidden">
+        <MobileToolSlot topic={topic} label={label} />
       </div>
       <div className="hidden sm:block">
         <PremiumCalculator config={config} full={full} placement={placement} category={category} />

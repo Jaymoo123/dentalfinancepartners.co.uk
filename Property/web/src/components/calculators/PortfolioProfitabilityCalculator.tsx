@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { PageResultCta } from "@/components/calculators/PageResultCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 
 interface Property {
   id: string;
@@ -232,7 +232,7 @@ export function PortfolioProfitabilityCalculator({
       {variant === "embed" ? (
         <EmbedCta campaign="portfolio-profitability-calculator" />
       ) : resultCta ? (
-        <PageResultCta campaign="portfolio-profitability-calculator" />
+        <CalcResultCta campaign="portfolio-profitability-calculator" />
       ) : null}
     </div>
   );

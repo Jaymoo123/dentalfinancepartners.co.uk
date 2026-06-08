@@ -9,6 +9,7 @@ import { IntentProvider } from "@/components/intent/IntentProvider";
 import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { SpecialistWidget } from "@/components/support/SpecialistWidget";
+import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -78,6 +79,8 @@ export default function RootLayout({
               <ReturningBar />
               <DeepScrollModal />
               <SpecialistWidget />
+              {/* Self-gates to blog + calculator routes; desktop + mobile triggers. */}
+              <ExitIntentModal />
             </IntentProvider>
           </AnalyticsProvider>
           {/* GA4 + Microsoft Clarity load only after consent is granted. */}
