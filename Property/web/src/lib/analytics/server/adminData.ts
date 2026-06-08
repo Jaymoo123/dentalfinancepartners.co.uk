@@ -688,3 +688,65 @@ export async function getVisitsToConversion(siteKey: string, country?: string) {
     (r) => r,
   ).sort((a, b) => a.visits_bucket - b.visits_bucket);
 }
+
+export type LeadIntent = {
+  intent_category: string;
+  leads: number;
+  avg_quality: number | null;
+  high_value: number;
+};
+
+/** Lead-intent mix (Phase 4): which categories leads fall into + their value. */
+export async function getLeadIntentMix(siteKey: string): Promise<LeadIntent[]> {
+  const rows = await rest<LeadIntent>("vw_lead_intent_mix", {
+    site_key: `eq.${siteKey}`,
+    select: "intent_category,leads,avg_quality,high_value",
+    order: "leads.desc",
+    limit: "100",
+  });
+  return rows.map((r) => ({
+    intent_category: r.intent_category,
+    leads: n(r.leads),
+    avg_quality: r.avg_quality == null ? null : Number(r.avg_quality),
+    high_value: n(r.high_value),
+  }));
+}
+
+export type SubscriberHealth = { status: string; subscribers: number };
+
+/** Nurture list health: subscriber counts by status. */
+export async function getSubscriberHealth(siteKey: string): Promise<SubscriberHealth[]> {
+  const rows = await rest<SubscriberHealth>("vw_subscriber_health", {
+    site_key: `eq.${siteKey}`,
+    select: "status,subscribers",
+    limit: "20",
+  });
+  return rows.map((r) => ({ status: r.status, subscribers: n(r.subscribers) }));
+}
+
+export type NurtureStepRow = {
+  sequence: string;
+  step: number;
+  sent: number;
+  opened: number;
+  clicked: number;
+  bounced: number;
+};
+
+/** Nurture drip funnel: sent/opened/clicked/bounced per step. */
+export async function getNurtureFunnel(siteKey: string): Promise<NurtureStepRow[]> {
+  const rows = await rest<NurtureStepRow>("vw_nurture_step_funnel", {
+    site_key: `eq.${siteKey}`,
+    select: "sequence,step,sent,opened,clicked,bounced",
+    order: "step.asc",
+    limit: "100",
+  });
+  return rows.map((r) => ({
+    sequence: r.sequence,
+    step: n(r.step),
+    sent: n(r.sent),
+    opened: n(r.opened),
+    clicked: n(r.clicked),
+    bounced: n(r.bounced),
+  }));
+}

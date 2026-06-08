@@ -42,6 +42,22 @@ Add these:
 | `NURTURE_WEBHOOK_SECRET` | a long random string | authenticates the Resend webhook (carried in the URL). |
 | `NURTURE_FROM_EMAIL` | `updates@propertytaxpartners.co.uk` (default) | marketing from-address. Must be on a Resend-verified domain. `propertytaxpartners.co.uk` is already verified (leads@ works), so `updates@` on the same domain needs no extra DNS. |
 | `NURTURE_FROM_NAME` | `Property Tax Partners` (default) | sender display name. |
+| `NURTURE_REPLY_TO` | `hello@propertytaxpartners.co.uk` (default) | where subscriber **replies** land. Forward this to your own inbox. |
+
+### Email routing (who gets what)
+
+This is deliberate and kept separate from the lead pipeline:
+
+- **Nurture / welcome emails** go **to the subscriber only** (no CC). Replies go to
+  `NURTURE_REPLY_TO` (the hello@ inbox you forward to yourself), **never the
+  partner firm**. Subscribing writes to the `subscribers` table, which does **not**
+  fire the lead-notification trigger, so an opt-in never emails anyone internally.
+- **The partner firm (Reflex) is CC'd only on genuine lead enquiries** (the
+  existing `/api/leads/notify` flow, `leads` table). That is the intended handoff
+  and is untouched by the nurture engine.
+
+So: set the hello@ (and `updates@`) forwarding to **your** inbox. The partner only
+ever sees real leads, not subscribers.
 
 Generate a secret: `openssl rand -hex 24` (or any random 30+ char string).
 
@@ -86,8 +102,11 @@ with email **forwarding** (no mailbox needed) at the DNS level. Simplest route:
 - **PII lockdown.** `subscribers` (holds emails) has RLS enabled with **no
   policies** — only the service role (server routes + dashboard) can read it.
   The anon key cannot.
-- **Dormant by default.** Empty list + cron disabled (no `CRON_SECRET`) = no
-  activity. Sending only begins once real opt-ins exist and the env is set.
+- **Send-dormant by default.** With no `CRON_SECRET` set, **no email is sent at
+  all**: the cron refuses to run, and the subscribe form records the opt-in but
+  skips the immediate welcome. Setting `CRON_SECRET` is your explicit "go": after
+  it, the next cron run sends each opted-in subscriber's pending step (starting at
+  the welcome). So opt-ins are never lost, and nothing mails until you enable it.
 
 ## Test it (after the env is set)
 

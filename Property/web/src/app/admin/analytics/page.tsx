@@ -29,6 +29,9 @@ import {
   getTimeseries,
   getChannelConversion,
   getVisitsToConversion,
+  getLeadIntentMix,
+  getSubscriberHealth,
+  getNurtureFunnel,
   type VisitorJourney,
   type CalculatorConversion,
   type CalculatorConversionPlacement,
@@ -43,6 +46,9 @@ import {
   type ClientError,
   type ChannelConversion,
   type VisitsBucket,
+  type LeadIntent,
+  type SubscriberHealth,
+  type NurtureStepRow,
 } from "@/lib/analytics/server/adminData";
 import { ruleLabel, surfaceLabel, surfaceWhere, ruleTrigger } from "@/lib/intent/labels";
 import { experimentMeta, runningExperiments, type ExperimentMeta } from "@/lib/experiments/registry";
@@ -1001,6 +1007,137 @@ function VisitsToConversionPanel({ rows }: { rows: VisitsBucket[] }) {
   );
 }
 
+const INTENT_LABEL: Record<string, string> = {
+  incorporation: "Incorporation",
+  section24: "Section 24",
+  cgt: "Capital gains",
+  portfolio_structuring: "Portfolio structuring",
+  mtd: "Making Tax Digital",
+  non_resident: "Non-resident",
+  accountancy_services: "Accountancy services",
+  general_info: "General info",
+  other: "Other",
+  unclassified: "Unclassified",
+};
+
+/** Lead-intent mix — what leads actually want, classified by Opus + a value score. */
+function LeadIntentPanel({ rows }: { rows: LeadIntent[] }) {
+  const total = rows.reduce((a, r) => a + r.leads, 0);
+  const maxLeads = Math.max(1, ...rows.map((r) => r.leads));
+  const highValue = rows.reduce((a, r) => a + r.high_value, 0);
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">What leads actually want</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        Each enquiry classified by Opus into an intent + a value score (1-5). Confirms whether{" "}
+        <strong>incorporation / structuring</strong> is the real demand, and surfaces the{" "}
+        <strong>high-value</strong> ones (score 4+) to prioritise. {total > 0 ? `${highValue} of ${total} are high-value.` : ""}
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Intent</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="px-3 py-2 text-right">Avg quality</th>
+              <th className="px-3 py-2 text-right">High-value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {total === 0 ? (
+              <tr><td colSpan={4} className="px-3 py-4 text-center text-slate-400">No classified leads yet (enrichment runs on new leads once the AI Gateway is enabled).</td></tr>
+            ) : (
+              rows.map((r) => {
+                const widthPct = (r.leads / maxLeads) * 100;
+                const hot = r.intent_category === "incorporation" || r.intent_category === "portfolio_structuring";
+                return (
+                  <tr key={r.intent_category} className={`border-t border-slate-100 ${hot ? "bg-emerald-50/40" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">{INTENT_LABEL[r.intent_category] ?? r.intent_category}</td>
+                    <td className="w-1/3 px-3 py-2 text-right">
+                      <div className="flex items-center justify-end gap-2">
+                        <div className="hidden h-1.5 w-24 rounded bg-slate-100 sm:block">
+                          <div className={`h-1.5 rounded ${hot ? "bg-emerald-500" : "bg-sky-400"}`} style={{ width: `${widthPct}%` }} />
+                        </div>
+                        <span className="font-mono">{r.leads}</span>
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono text-slate-700">{r.avg_quality == null ? "—" : r.avg_quality.toFixed(1)}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.high_value || ""}</td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+/** Nurture engine — list health + the drip funnel (opens/clicks per step). */
+function NurturePanel({ health, funnel }: { health: SubscriberHealth[]; funnel: NurtureStepRow[] }) {
+  const by = (s: string) => health.find((h) => h.status === s)?.subscribers ?? 0;
+  const active = by("active");
+  const totalSubs = health.reduce((a, h) => a + h.subscribers, 0);
+  const sent = funnel.reduce((a, r) => a + r.sent, 0);
+  const opened = funnel.reduce((a, r) => a + r.opened, 0);
+  const clicked = funnel.reduce((a, r) => a + r.clicked, 0);
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Nurture engine</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        The marketing opt-in list (separate from leads, own consent) and the drip funnel. Brings returning
+        visitors back, the only ones who convert. {totalSubs === 0 ? "No subscribers yet." : ""}
+      </p>
+      <div className="mt-3 grid grid-cols-3 gap-3">
+        <div className="rounded-xl border border-slate-200 bg-white p-3">
+          <div className="text-xs text-slate-500">Active</div>
+          <div className="mt-0.5 text-xl font-bold text-emerald-700">{active}</div>
+        </div>
+        <div className="rounded-xl border border-slate-200 bg-white p-3">
+          <div className="text-xs text-slate-500">Unsubscribed</div>
+          <div className="mt-0.5 text-xl font-bold text-slate-700">{by("unsubscribed")}</div>
+        </div>
+        <div className="rounded-xl border border-slate-200 bg-white p-3">
+          <div className="text-xs text-slate-500">Bounced / complained</div>
+          <div className="mt-0.5 text-xl font-bold text-slate-700">{by("bounced") + by("complained")}</div>
+        </div>
+      </div>
+      {sent > 0 && (
+        <p className="mt-3 text-xs text-slate-500">
+          {sent} emails sent · {opened} opened ({pct(opened / sent)}) · {clicked} clicked ({pct(clicked / sent)})
+        </p>
+      )}
+      {funnel.length > 0 && (
+        <Detail summary={`Drip funnel by step (${funnel.length})`}>
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Step</th>
+                <th className="px-3 py-2 text-right">Sent</th>
+                <th className="px-3 py-2 text-right">Opened</th>
+                <th className="px-3 py-2 text-right">Clicked</th>
+                <th className="px-3 py-2 text-right">Bounced</th>
+              </tr>
+            </thead>
+            <tbody>
+              {funnel.map((r) => (
+                <tr key={`${r.sequence}-${r.step}`} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">Step {r.step}</td>
+                  <td className="px-3 py-2 text-right font-mono">{r.sent}</td>
+                  <td className="px-3 py-2 text-right font-mono">{r.opened}</td>
+                  <td className="px-3 py-2 text-right font-mono">{r.clicked}</td>
+                  <td className="px-3 py-2 text-right font-mono text-slate-500">{r.bounced || ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Detail>
+      )}
+    </div>
+  );
+}
+
 function experimentOneLiner(arms: ExperimentArms | undefined): string {
   const c = arms?.control;
   const t = arms?.treatment;
@@ -1052,6 +1189,9 @@ export default async function AdminAnalyticsPage({
     tsDaily,
     channelConversion,
     visitsToConversion,
+    leadIntentMix,
+    subscriberHealth,
+    nurtureFunnel,
   ] = await Promise.all([
     getFunnelDaily(siteKey, countryFilter),
     getCalculatorConversion(siteKey, countryFilter),
@@ -1072,6 +1212,9 @@ export default async function AdminAnalyticsPage({
     getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
     getChannelConversion(siteKey, countryFilter),
     getVisitsToConversion(siteKey, countryFilter),
+    getLeadIntentMix(siteKey),
+    getSubscriberHealth(siteKey),
+    getNurtureFunnel(siteKey),
   ]);
 
   const leadByVisitor = new Map<string, (typeof leads)[number]>();
@@ -1252,6 +1395,8 @@ export default async function AdminAnalyticsPage({
 
   const conversionSection = (
     <div className="space-y-8">
+      <LeadIntentPanel rows={leadIntentMix} />
+      <NurturePanel health={subscriberHealth} funnel={nurtureFunnel} />
       <CtaPerformancePanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />
       <ResourceGatePanel rows={resourceGate} />

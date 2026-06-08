@@ -29,6 +29,12 @@ function marketingFrom(): string {
   return `${name} <${email}>`;
 }
 
+// Where subscriber REPLIES go. Defaults to the hello@ inbox (which you forward to
+// your own inbox), NOT the partner firm — nurture is our list, not a lead handoff.
+function marketingReplyTo(): string {
+  return process.env.NURTURE_REPLY_TO || "hello@propertytaxpartners.co.uk";
+}
+
 export function unsubscribeUrl(token: string): string {
   return `${SITE}/api/unsubscribe?token=${encodeURIComponent(token)}`;
 }
@@ -55,6 +61,7 @@ async function sendNurtureStep(sub: NurtureSubscriber, step: number): Promise<St
     const { data, error } = await getResend().emails.send({
       from: marketingFrom(),
       to: sub.email,
+      replyTo: marketingReplyTo(),
       subject,
       html,
       text,

@@ -118,12 +118,17 @@ export async function POST(req: NextRequest) {
     { onConflict: "subscriber_id,sequence" },
   );
 
-  // Welcome now + advance to step 1. Best-effort: a send hiccup never fails the
-  // opt-in (they are subscribed; the cron will retry step 0).
-  try {
-    await processStep({ id: sub.id, email, unsubscribe_token: sub.unsubscribe_token }, 0);
-  } catch (err) {
-    console.error("[subscribe] welcome send failed", err);
+  // Welcome now + advance to step 1 — but ONLY once nurture sending is enabled
+  // (CRON_SECRET set = the operator has done the Phase 3 setup and signed off on
+  // sending). Until then we still record the opt-in (no lost subscribers); the
+  // cron sends step 0 on the first run after it is enabled. This keeps the engine
+  // send-dormant by default (no marketing email goes out before sign-off).
+  if (process.env.CRON_SECRET) {
+    try {
+      await processStep({ id: sub.id, email, unsubscribe_token: sub.unsubscribe_token }, 0);
+    } catch (err) {
+      console.error("[subscribe] welcome send failed", err);
+    }
   }
 
   return NextResponse.json({ ok: true });
