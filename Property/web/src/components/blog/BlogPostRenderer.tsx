@@ -18,6 +18,7 @@ import { hasPremiumTool } from "@/lib/calculators/premium/registry";
 import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
+import { SubscribeForm } from "@/components/forms/SubscribeForm";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -443,6 +444,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </ul>
                 </section>
               ) : null}
+
+              {/* Softer net for engaged readers who reached the end without
+                  enquiring: a low-commitment opt-in to the nurture drip. Its own
+                  marketing consent + one-click unsubscribe (separate from leads). */}
+              <SubscribeForm source="blog_footer" />
             </div>
 
             <aside className="hidden lg:block">
