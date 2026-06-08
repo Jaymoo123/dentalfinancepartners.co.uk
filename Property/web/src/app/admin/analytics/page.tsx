@@ -27,6 +27,8 @@ import {
   getClientErrors,
   getEventDaily,
   getTimeseries,
+  getChannelConversion,
+  getVisitsToConversion,
   type VisitorJourney,
   type CalculatorConversion,
   type CalculatorConversionPlacement,
@@ -39,6 +41,8 @@ import {
   type SectionAction,
   type UxFriction,
   type ClientError,
+  type ChannelConversion,
+  type VisitsBucket,
 } from "@/lib/analytics/server/adminData";
 import { ruleLabel, surfaceLabel, surfaceWhere, ruleTrigger } from "@/lib/intent/labels";
 import { experimentMeta, runningExperiments, type ExperimentMeta } from "@/lib/experiments/registry";
@@ -849,6 +853,154 @@ function OfferPerformancePanel({ rows }: { rows: PersonalizationResult[] }) {
   );
 }
 
+const CHANNEL_LABEL: Record<string, string> = {
+  ai: "AI engines",
+  search: "Search engines",
+  social: "Social",
+  internal: "Returning / internal",
+  referral: "Other referral",
+  direct: "Direct",
+};
+
+/** Channel VALUE: which channels convert vs which just flood with tire-kickers. */
+function ChannelValuePanel({ rows }: { rows: ChannelConversion[] }) {
+  const byChannel = new Map<string, { sessions: number; leads: number }>();
+  for (const r of rows) {
+    const c = byChannel.get(r.channel) || { sessions: 0, leads: 0 };
+    c.sessions += r.sessions;
+    c.leads += r.leads;
+    byChannel.set(r.channel, c);
+  }
+  const channels = Array.from(byChannel.entries())
+    .map(([channel, v]) => ({ channel, ...v, cr: v.sessions > 0 ? v.leads / v.sessions : 0 }))
+    .sort((a, b) => b.sessions - a.sessions);
+  const maxSessions = Math.max(1, ...channels.map((c) => c.sessions));
+  const hosts = rows.slice(0, 20);
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Acquisition by value</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        Channels by what they <strong>convert</strong>, not just their volume. A channel with lots of sessions and no
+        leads is tire-kickers; <strong>direct + returning</strong> are where conversions come from, and{" "}
+        <strong>AI engines</strong> are an emerging, converting-capable front door worth feeding.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Channel</th>
+              <th className="px-3 py-2 text-right">Sessions</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="px-3 py-2">Conversion</th>
+            </tr>
+          </thead>
+          <tbody>
+            {channels.length === 0 ? (
+              <tr><td colSpan={4} className="px-3 py-4 text-center text-slate-400">No channel data yet.</td></tr>
+            ) : (
+              channels.map((c) => {
+                const widthPct = (c.sessions / maxSessions) * 100;
+                const flood = c.sessions >= 20 && c.leads === 0;
+                return (
+                  <tr key={c.channel} className={`border-t border-slate-100 ${c.channel === "ai" ? "bg-sky-50/40" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">{CHANNEL_LABEL[c.channel] ?? c.channel}</td>
+                    <td className="w-1/3 px-3 py-2 text-right">
+                      <div className="flex items-center justify-end gap-2">
+                        <div className="hidden h-1.5 w-24 rounded bg-slate-100 sm:block">
+                          <div className={`h-1.5 rounded ${flood ? "bg-amber-400" : "bg-emerald-500"}`} style={{ width: `${widthPct}%` }} />
+                        </div>
+                        <span className="font-mono">{c.sessions}</span>
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono">{c.leads}</td>
+                    <td className="px-3 py-2">
+                      <span className={flood ? "font-semibold text-amber-700" : "text-slate-700"}>{pct(c.cr)}</span>
+                      {flood && <span className="ml-1 text-[11px] text-amber-600">flood, 0 leads</span>}
+                    </td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+      <Detail summary={`Top referrers by host (${hosts.length})`}>
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Referrer</th>
+              <th className="px-3 py-2">Channel</th>
+              <th className="px-3 py-2 text-right">Sessions</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+            </tr>
+          </thead>
+          <tbody>
+            {hosts.map((r, i) => (
+              <tr key={`${r.referrer_host}-${i}`} className="border-t border-slate-100">
+                <td className="px-3 py-2 font-mono text-xs text-slate-600">{r.referrer_host}</td>
+                <td className="px-3 py-2 text-slate-500">{CHANNEL_LABEL[r.channel] ?? r.channel}</td>
+                <td className="px-3 py-2 text-right font-mono">{r.sessions}</td>
+                <td className="px-3 py-2 text-right font-mono">{r.leads}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </Detail>
+    </div>
+  );
+}
+
+/** Visits-to-conversion histogram — the multi-visit reality, made visible. */
+function VisitsToConversionPanel({ rows }: { rows: VisitsBucket[] }) {
+  const maxV = Math.max(1, ...rows.map((r) => r.visitors));
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Visits to conversion</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        How many visits a visitor makes before converting. Conversion concentrates in <strong>returning</strong>{" "}
+        visitors; first visits rarely convert. This is the case for a nurture loop that brings people back.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Visits</th>
+              <th className="px-3 py-2 text-right">Visitors</th>
+              <th className="px-3 py-2 text-right">Converted</th>
+              <th className="px-3 py-2">Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={4} className="px-3 py-4 text-center text-slate-400">No visitor data yet.</td></tr>
+            ) : (
+              rows.map((r) => {
+                const cr = r.visitors > 0 ? r.converted_visitors / r.visitors : 0;
+                const widthPct = (r.visitors / maxV) * 100;
+                return (
+                  <tr key={r.visits_bucket} className={`border-t border-slate-100 ${r.converted_visitors > 0 ? "bg-emerald-50/40" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">{r.visits_bucket >= 6 ? "6+" : r.visits_bucket}</td>
+                    <td className="w-1/3 px-3 py-2 text-right">
+                      <div className="flex items-center justify-end gap-2">
+                        <div className="hidden h-1.5 w-24 rounded bg-slate-100 sm:block">
+                          <div className="h-1.5 rounded bg-sky-400" style={{ width: `${widthPct}%` }} />
+                        </div>
+                        <span className="font-mono">{r.visitors}</span>
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono">{r.converted_visitors}</td>
+                    <td className="px-3 py-2 text-slate-700">{pct(cr)}</td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function experimentOneLiner(arms: ExperimentArms | undefined): string {
   const c = arms?.control;
   const t = arms?.treatment;
@@ -898,6 +1050,8 @@ export default async function AdminAnalyticsPage({
     clientErrors,
     errorsDaily,
     tsDaily,
+    channelConversion,
+    visitsToConversion,
   ] = await Promise.all([
     getFunnelDaily(siteKey, countryFilter),
     getCalculatorConversion(siteKey, countryFilter),
@@ -916,6 +1070,8 @@ export default async function AdminAnalyticsPage({
     getClientErrors(siteKey, countryFilter),
     getEventDaily(siteKey, "client_error", isoOf(from14), isoOf(now), countryFilter),
     getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
+    getChannelConversion(siteKey, countryFilter),
+    getVisitsToConversion(siteKey, countryFilter),
   ]);
 
   const leadByVisitor = new Map<string, (typeof leads)[number]>();
@@ -1050,6 +1206,13 @@ export default async function AdminAnalyticsPage({
         <Breakdown title="Device" rows={tally(visitors, "device_type")} />
         <Breakdown title="Country" rows={tally(visitors, "country")} />
         <Breakdown title="New vs returning" rows={newVsReturning} />
+      </div>
+
+      <div className="mt-8">
+        <ChannelValuePanel rows={channelConversion} />
+      </div>
+      <div className="mt-8">
+        <VisitsToConversionPanel rows={visitsToConversion} />
       </div>
     </div>
   );

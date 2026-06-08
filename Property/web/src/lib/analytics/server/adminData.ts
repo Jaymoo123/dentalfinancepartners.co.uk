@@ -640,3 +640,51 @@ export async function getUxFriction(siteKey: string, country?: string) {
       b.rage_clicks + b.dead_clicks + b.client_errors - (a.rage_clicks + a.dead_clicks + a.client_errors),
   );
 }
+
+export type ChannelConversion = {
+  channel: string;
+  referrer_host: string;
+  sessions: number;
+  leads: number;
+  conversion_rate: number | null;
+};
+
+/** Channel VALUE: per (channel, referrer_host) sessions/leads/CR, biggest first. */
+export async function getChannelConversion(siteKey: string, country?: string) {
+  const rows = await rest<ChannelConversion & { country: string }>(
+    "vw_channel_conversion_geo",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "sessions.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<ChannelConversion & { country: string }>(
+    rows,
+    (r) => `${r.channel}|${r.referrer_host}`,
+    ["sessions", "leads"],
+    (r) => ({ ...r, conversion_rate: rate(n(r.leads), n(r.sessions)) }),
+  ).sort((a, b) => b.sessions - a.sessions);
+}
+
+export type VisitsBucket = {
+  visits_bucket: number;
+  visitors: number;
+  converted_visitors: number;
+};
+
+/** Visitor session-count histogram vs conversion (the multi-visit reality). */
+export async function getVisitsToConversion(siteKey: string, country?: string) {
+  const rows = await rest<VisitsBucket & { country: string }>(
+    "vw_visits_to_conversion",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "visits_bucket.asc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<VisitsBucket & { country: string }>(
+    rows,
+    (r) => String(r.visits_bucket),
+    ["visitors", "converted_visitors"],
+    (r) => r,
+  ).sort((a, b) => a.visits_bucket - b.visits_bucket);
+}
