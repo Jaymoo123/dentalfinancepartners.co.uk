@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
+import { PageResultCta } from "@/components/calculators/PageResultCta";
 
 interface Property {
   id: string;
@@ -11,7 +12,13 @@ interface Property {
   otherExpenses: number;
 }
 
-export function PortfolioProfitabilityCalculator({ variant = "page" }: { variant?: "page" | "embed" }) {
+export function PortfolioProfitabilityCalculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const nextId = useRef(3);
   const [properties, setProperties] = useState<Property[]>([
     { id: "1", name: "Property 1", rentalIncome: 18000, mortgageInterest: 7200, otherExpenses: 3000 },
@@ -222,7 +229,11 @@ export function PortfolioProfitabilityCalculator({ variant = "page" }: { variant
           </p>
         </div>
       </div>
-      {variant === "embed" && <EmbedCta campaign="portfolio-profitability-calculator" />}
+      {variant === "embed" ? (
+        <EmbedCta campaign="portfolio-profitability-calculator" />
+      ) : resultCta ? (
+        <PageResultCta campaign="portfolio-profitability-calculator" />
+      ) : null}
     </div>
   );
 }

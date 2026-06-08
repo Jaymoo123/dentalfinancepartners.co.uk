@@ -98,10 +98,14 @@ function onClick(e: MouseEvent): void {
 
   const cta = target.closest("[data-cta]");
   if (cta) {
+    // goal marks where the CTA routes (e.g. "form" = heads to the lead form), so
+    // the funnel can count form-bound CTAs distinctly from dismiss/tool clicks.
+    const goal = cta.getAttribute("data-cta-goal");
     track("cta_click", {
       cta_id: cta.getAttribute("data-cta") || "",
       cta_label: nearestText(cta),
       placement: cta.getAttribute("data-cta-placement") || nearestSection(cta),
+      ...(goal ? { goal } : {}),
     });
     return;
   }

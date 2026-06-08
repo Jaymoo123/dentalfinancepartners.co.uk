@@ -35,6 +35,9 @@ MIGRATIONS = [
     "20260606000004_experiments.sql",
     "20260606000005_timeseries.sql",
     "20260606000006_bot_score.sql",
+    "20260607000001_calc_gate_placement_views.sql",
+    "20260608000001_funnel_v2_and_geo_views.sql",
+    "20260608000002_cta_friction_and_timeseries_geo.sql",
 ]
 
 

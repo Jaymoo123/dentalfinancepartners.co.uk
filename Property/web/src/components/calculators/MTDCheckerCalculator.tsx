@@ -2,8 +2,15 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
+import { PageResultCta } from "@/components/calculators/PageResultCta";
 
-export function MTDCheckerCalculator({ variant = "page" }: { variant?: "page" | "embed" }) {
+export function MTDCheckerCalculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const [rentalIncome, setRentalIncome] = useState(35000);
   const [selfEmploymentIncome, setSelfEmploymentIncome] = useState(20000);
   const [otherIncome, setOtherIncome] = useState(0);
@@ -134,7 +141,11 @@ export function MTDCheckerCalculator({ variant = "page" }: { variant?: "page" | 
           </div>
         </div>
       </div>
-      {variant === "embed" && <EmbedCta campaign="mtd-checker" />}
+      {variant === "embed" ? (
+        <EmbedCta campaign="mtd-checker" />
+      ) : resultCta ? (
+        <PageResultCta campaign="mtd-checker" />
+      ) : null}
     </div>
   );
 }

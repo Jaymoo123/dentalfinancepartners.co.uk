@@ -23,13 +23,60 @@ async function rest<T>(path: string, params: Record<string, string>): Promise<T[
   return (await res.json()) as T[];
 }
 
+/**
+ * Country slice. The dashboard defaults to "GB" so headline rates reflect the
+ * real UK audience; pass undefined (or "ALL" upstream) for every country. The
+ * *_geo views carry a `country` column (COALESCE'd to 'XX' for legacy NULL-geo
+ * rows), so this is a plain PostgREST eq filter.
+ */
+function withCountry(
+  params: Record<string, string>,
+  country?: string,
+): Record<string, string> {
+  if (country && country !== "ALL") params.country = `eq.${country}`;
+  return params;
+}
+
+/**
+ * Collapse country-dimensioned rows back to one row per natural key. With a
+ * concrete country selected there is already one row per key (a no-op); under
+ * "All countries" the *_geo views return one row per (key, country), so we sum
+ * the raw counts and let the caller recompute any rates from the summed totals.
+ */
+function aggregateRows<T extends Record<string, unknown>>(
+  rows: T[],
+  keyOf: (r: T) => string,
+  sumFields: (keyof T)[],
+  finalize: (summed: T) => T,
+): T[] {
+  const map = new Map<string, T>();
+  for (const r of rows) {
+    const k = keyOf(r);
+    const cur = map.get(k);
+    if (!cur) {
+      map.set(k, { ...r });
+    } else {
+      const acc = cur as Record<string, unknown>;
+      for (const f of sumFields) {
+        const key = f as string;
+        acc[key] = (Number(acc[key]) || 0) + (Number((r as Record<string, unknown>)[key]) || 0);
+      }
+    }
+  }
+  return Array.from(map.values()).map(finalize);
+}
+
+const n = (v: unknown): number => Number(v) || 0;
+const rate = (num: number, den: number): number | null =>
+  den > 0 ? num / den : null;
+
 export type FunnelDay = {
   date: string;
+  country: string;
   sessions: number;
   engaged_sessions: number;
-  page_views: number;
-  calc_sessions: number;
-  cta_sessions: number;
+  calc_sessions: number; // BRANCH off engaged (not a mainline step)
+  form_cta_sessions: number; // mainline: clicked a form-bound CTA (or reached a later stage)
   form_start_sessions: number;
   converted_sessions: number;
 };
@@ -73,22 +120,40 @@ export type VisitorEvent = {
   props: Record<string, unknown>;
 };
 
-export function getFunnelDaily(siteKey: string) {
-  return rest<FunnelDay>("vw_web_funnel_daily", {
-    site_key: `eq.${siteKey}`,
-    select: "*",
-    order: "date.desc",
-    limit: "30",
-  });
+/**
+ * TRUE nested funnel (vw_web_funnel_daily_v2): each mainline stage is a strict
+ * subset of the one above. Returns daily rows (one per date, or per date+country
+ * under "All"); the dashboard sums them into stage totals. Limit is generous so
+ * an "All countries" window (≤30 days × many countries) is never truncated.
+ */
+export function getFunnelDaily(siteKey: string, country?: string) {
+  return rest<FunnelDay>(
+    "vw_web_funnel_daily_v2",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "date.desc", limit: "2000" },
+      country,
+    ),
+  );
 }
 
-export function getCalculatorConversion(siteKey: string) {
-  return rest<CalculatorConversion>("vw_calculator_conversion", {
-    site_key: `eq.${siteKey}`,
-    select: "*",
-    order: "computed.desc",
-    limit: "50",
-  });
+export async function getCalculatorConversion(siteKey: string, country?: string) {
+  const rows = await rest<CalculatorConversion & { country: string }>(
+    "vw_calculator_conversion_geo",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "computed.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<CalculatorConversion & { country: string }>(
+    rows,
+    (r) => r.calculator_slug,
+    ["viewed", "computed", "result_viewed", "embed_cta_clicks", "lead_sessions"],
+    (r) => ({
+      ...r,
+      compute_rate: rate(n(r.computed), n(r.viewed)),
+      computed_to_lead_rate: rate(n(r.lead_sessions), n(r.computed)),
+    }),
+  );
 }
 
 export type CalculatorConversionPlacement = {
@@ -104,13 +169,27 @@ export type CalculatorConversionPlacement = {
 };
 
 /** Tool funnel split by placement (calculator | blog | embed) and tool_kind. */
-export function getCalculatorConversionByPlacement(siteKey: string) {
-  return rest<CalculatorConversionPlacement>("vw_calculator_conversion_placement", {
-    site_key: `eq.${siteKey}`,
-    select: "*",
-    order: "viewed.desc",
-    limit: "100",
-  });
+export async function getCalculatorConversionByPlacement(
+  siteKey: string,
+  country?: string,
+) {
+  const rows = await rest<CalculatorConversionPlacement & { country: string }>(
+    "vw_calculator_conversion_placement_geo",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "viewed.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<CalculatorConversionPlacement & { country: string }>(
+    rows,
+    (r) => `${r.calculator_slug}|${r.placement}|${r.tool_kind}`,
+    ["viewed", "computed", "result_viewed", "lead_sessions"],
+    (r) => ({
+      ...r,
+      compute_rate: rate(n(r.computed), n(r.viewed)),
+      computed_to_lead_rate: rate(n(r.lead_sessions), n(r.computed)),
+    }),
+  );
 }
 
 export type ResourceConversion = {
@@ -133,13 +212,19 @@ export function getResourceConversion(siteKey: string) {
   });
 }
 
-export function getTopVisitors(siteKey: string, limit = 500) {
-  return rest<VisitorJourney>("vw_visitor_journey", {
-    site_key: `eq.${siteKey}`,
-    select: "*",
-    order: "last_seen.desc",
-    limit: String(limit),
-  });
+export function getTopVisitors(siteKey: string, limit = 500, country?: string) {
+  return rest<VisitorJourney>(
+    "vw_visitor_journey",
+    withCountry(
+      {
+        site_key: `eq.${siteKey}`,
+        select: "*",
+        order: "last_seen.desc",
+        limit: String(limit),
+      },
+      country,
+    ),
+  );
 }
 
 export function getVisitorJourney(siteKey: string, visitorId: string) {
@@ -289,13 +374,16 @@ export function getTimeseries(
   bucket: "15 minutes" | "1 hour" | "1 day",
   fromISO: string,
   toISO: string,
+  country?: string,
 ) {
-  return rest<TimePoint>("rpc/web_timeseries", {
+  const params: Record<string, string> = {
     p_site_key: siteKey,
     p_bucket: bucket,
     p_from: fromISO,
     p_to: toISO,
-  });
+  };
+  if (country && country !== "ALL") params.p_country = country;
+  return rest<TimePoint>("rpc/web_timeseries", params);
 }
 
 /** A page of leads (newest first) for the paginated leads sub-page. */
@@ -307,4 +395,210 @@ export function getLeadsPage(siteKey: string, offset: number, limit: number) {
     offset: String(offset),
     limit: String(limit),
   });
+}
+
+// ===========================================================================
+// Country slicer + previously-dark panels (form-field drop-off, per-CTA
+// performance, content section engagement, UX friction). All read the *_geo
+// views and collapse to one row per natural key so "All countries" sums while a
+// concrete country (default GB) is a clean one-row-per-key passthrough.
+// ===========================================================================
+
+/** Distinct countries seen for this site, for the dashboard country selector. */
+export async function getCountryOptions(siteKey: string): Promise<string[]> {
+  const rows = await rest<{ country: string | null }>("vw_visitor_journey", {
+    site_key: `eq.${siteKey}`,
+    select: "country",
+  });
+  return Array.from(
+    new Set(rows.map((r) => r.country).filter((c): c is string => !!c)),
+  ).sort();
+}
+
+export type FormFieldDropoff = {
+  form_id: string;
+  field: string;
+  focuses: number;
+  abandons: number;
+  errors: number;
+  abandon_rate: number | null;
+};
+
+/** Where users abandon the lead form, field by field (highest-abandon first). */
+export async function getFormFieldDropoff(siteKey: string, country?: string) {
+  const rows = await rest<FormFieldDropoff & { country: string }>(
+    "vw_form_field_dropoff_geo",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "abandons.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<FormFieldDropoff & { country: string }>(
+    rows,
+    (r) => `${r.form_id}|${r.field}`,
+    ["focuses", "abandons", "errors"],
+    (r) => ({ ...r, abandon_rate: rate(n(r.abandons), n(r.focuses)) }),
+  ).sort((a, b) => b.abandons - a.abandons);
+}
+
+export type CtaPerformance = {
+  cta_id: string;
+  goal: string | null;
+  clicks: number;
+  click_sessions: number;
+  form_start_sessions: number;
+  lead_sessions: number;
+  click_to_form_rate: number | null;
+};
+
+/** Which CTAs drive form starts vs dead-end (most-clicked first). */
+export async function getCtaPerformance(siteKey: string, country?: string) {
+  const rows = await rest<CtaPerformance & { country: string }>(
+    "vw_cta_performance",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "clicks.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<CtaPerformance & { country: string }>(
+    rows,
+    (r) => r.cta_id,
+    ["clicks", "click_sessions", "form_start_sessions", "lead_sessions"],
+    (r) => ({
+      ...r,
+      click_to_form_rate: rate(n(r.form_start_sessions), n(r.click_sessions)),
+    }),
+  ).sort((a, b) => b.clicks - a.clicks);
+}
+
+export type SectionEngagement = {
+  page_path: string;
+  section_id: string;
+  section_text: string | null;
+  views: number;
+  sessions: number;
+};
+
+/** Which article sections actually get read (most-read first). */
+export async function getSectionEngagement(siteKey: string, country?: string) {
+  const rows = await rest<SectionEngagement & { country: string }>(
+    "vw_section_engagement_geo",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "sessions.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<SectionEngagement & { country: string }>(
+    rows,
+    (r) => `${r.page_path}|${r.section_id}`,
+    ["views", "sessions"],
+    (r) => r,
+  ).sort((a, b) => b.sessions - a.sessions);
+}
+
+export type DailyPoint = { bucket: string; count: number; sessions: number };
+
+/**
+ * Daily count + sessions for ONE event over a window (web_event_daily RPC).
+ * Drives the dashboard sparklines (errors/day, etc.). Days with no events are
+ * absent — the caller densifies into a continuous series.
+ */
+export function getEventDaily(
+  siteKey: string,
+  eventName: string,
+  fromISO: string,
+  toISO: string,
+  country?: string,
+) {
+  const params: Record<string, string> = {
+    p_site_key: siteKey,
+    p_event_name: eventName,
+    p_from: fromISO,
+    p_to: toISO,
+  };
+  if (country && country !== "ALL") params.p_country = country;
+  return rest<DailyPoint>("rpc/web_event_daily", params);
+}
+
+export type ClientError = {
+  message: string;
+  source: string | null;
+  line: string | null;
+  kind: string;
+  count: number;
+  sessions: number;
+  example_page: string | null;
+  last_seen: string;
+};
+
+/** JS errors grouped by message (actionable list), most frequent first. */
+export async function getClientErrors(siteKey: string, country?: string) {
+  const rows = await rest<ClientError & { country: string }>(
+    "vw_client_errors",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "count.desc", limit: "500" },
+      country,
+    ),
+  );
+  return aggregateRows<ClientError & { country: string }>(
+    rows,
+    (r) => `${r.message}|${r.source}|${r.line}|${r.kind}`,
+    ["count", "sessions"],
+    (r) => r,
+  ).sort((a, b) => b.count - a.count);
+}
+
+export type SectionAction = {
+  page_path: string;
+  section_id: string;
+  section_text: string | null;
+  read_sessions: number;
+  acted_sessions: number;
+  converted_sessions: number;
+};
+
+/** Per section: read -> acted (clicked a CTA / started a form) -> converted. */
+export async function getSectionActions(siteKey: string, country?: string) {
+  const rows = await rest<SectionAction & { country: string }>(
+    "vw_section_action",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "read_sessions.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<SectionAction & { country: string }>(
+    rows,
+    (r) => `${r.page_path}|${r.section_id}`,
+    ["read_sessions", "acted_sessions", "converted_sessions"],
+    (r) => r,
+  ).sort((a, b) => b.read_sessions - a.read_sessions);
+}
+
+export type UxFriction = {
+  page_path: string;
+  rage_clicks: number;
+  dead_clicks: number;
+  client_errors: number;
+  exit_intent_shown: number;
+  friction_sessions: number;
+};
+
+/** Rage/dead clicks, JS errors and exit-intent by page (worst first). */
+export async function getUxFriction(siteKey: string, country?: string) {
+  const rows = await rest<UxFriction & { country: string }>(
+    "vw_ux_friction",
+    withCountry(
+      { site_key: `eq.${siteKey}`, select: "*", order: "rage_clicks.desc", limit: "1000" },
+      country,
+    ),
+  );
+  return aggregateRows<UxFriction & { country: string }>(
+    rows,
+    (r) => r.page_path,
+    ["rage_clicks", "dead_clicks", "client_errors", "exit_intent_shown", "friction_sessions"],
+    (r) => r,
+  ).sort(
+    (a, b) =>
+      b.rage_clicks + b.dead_clicks + b.client_errors - (a.rage_clicks + a.dead_clicks + a.client_errors),
+  );
 }

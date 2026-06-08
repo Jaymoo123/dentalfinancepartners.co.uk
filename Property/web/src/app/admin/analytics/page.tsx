@@ -1,11 +1,13 @@
 /**
- * Internal analytics console — overview.
+ * Internal analytics console — glance-first.
  *
  * Gated by ?k=<ADMIN_DASHBOARD_KEY>. Wrong/missing key 404s. Server-rendered
- * with the service role, never indexed.
+ * with the service role, never indexed. Every panel leads with a snapshot
+ * (headline + sparkline + status); itemized tables collapse into dropdowns.
  */
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 import { niche } from "@/config/niche-loader";
 import {
   getFunnelDaily,
@@ -17,15 +19,36 @@ import {
   getPersonalizationResults,
   getExperimentResults,
   getPersonalizationAB,
+  getCountryOptions,
+  getFormFieldDropoff,
+  getCtaPerformance,
+  getSectionActions,
+  getUxFriction,
+  getClientErrors,
+  getEventDaily,
+  getTimeseries,
   type VisitorJourney,
   type CalculatorConversion,
   type CalculatorConversionPlacement,
   type ResourceConversion,
   type PersonalizationAB,
+  type PersonalizationResult,
+  type ExperimentResult,
+  type FormFieldDropoff,
+  type CtaPerformance,
+  type SectionAction,
+  type UxFriction,
+  type ClientError,
 } from "@/lib/analytics/server/adminData";
 import { ruleLabel, surfaceLabel, surfaceWhere, ruleTrigger } from "@/lib/intent/labels";
+import { ctaLabel, isDismissCta } from "@/lib/analytics/ctaLabels";
 import { getTopic } from "@/lib/intent/taxonomy";
+import { deriveTopic } from "@/lib/intent/deriveTopic";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { SnapshotCard } from "@/components/admin/SnapshotCard";
 import DashboardTabs from "./DashboardTabs";
+import CountrySelect from "./CountrySelect";
+import VisitorsTable, { type VisitorRow } from "./VisitorsTable";
 
 export const dynamic = "force-dynamic";
 export const metadata = { robots: { index: false, follow: false } };
@@ -55,11 +78,35 @@ function tally(rows: VisitorJourney[], key: keyof VisitorJourney): Array<[string
   return Array.from(m.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
 }
 
-/**
- * A short, representative copy string for what a given rule + topic actually
- * shows the visitor — derived from the canonical taxonomy so the user can see
- * roughly what each personalisation surface displays.
- */
+/** Build a continuous last-`days` series from sparse daily rows (oldest→newest). */
+function densify<T>(rows: T[], days: number, valueOf: (r: T) => number, dateKey: keyof T): number[] {
+  const byDate = new Map<string, number>();
+  for (const r of rows) {
+    const raw = r[dateKey];
+    if (raw == null) continue;
+    const day = String(raw).slice(0, 10);
+    byDate.set(day, (byDate.get(day) || 0) + valueOf(r));
+  }
+  const out: number[] = [];
+  const today = Date.now();
+  for (let i = days - 1; i >= 0; i--) {
+    const day = new Date(today - i * 86400000).toISOString().slice(0, 10);
+    out.push(byDate.get(day) || 0);
+  }
+  return out;
+}
+
+/** Fractional change of the recent half of a series vs the prior half. */
+function deltaVsPrior(series: number[]): number | null {
+  const n = series.length;
+  if (n < 4) return null;
+  const half = Math.floor(n / 2);
+  const prior = series.slice(0, n - half).reduce((a, b) => a + b, 0);
+  const recent = series.slice(n - half).reduce((a, b) => a + b, 0);
+  if (prior === 0) return null;
+  return (recent - prior) / prior;
+}
+
 function personalizationHint(ruleId: string, topicKey: string): string {
   const topic = getTopic(topicKey);
   if (!topic) return "—";
@@ -71,10 +118,6 @@ function personalizationHint(ruleId: string, topicKey: string): string {
       return `The complete ${label} guide (+ Excel)`;
     case "returning_welcome":
       return `Pick up where you left off — ${label}`;
-    case "topic_cta":
-    case "deep_scroll_offer":
-    case "topic_next_step":
-      return topic.ctaCopy;
     default:
       return topic.ctaCopy;
   }
@@ -116,16 +159,31 @@ function Breakdown({ title, rows }: { title: string; rows: Array<[string, number
   );
 }
 
-/**
- * The minimum sessions PER ARM before we trust an A/B number. Below this we show
- * a "directional only" state instead of a confident lift figure.
- */
+/** A "Show detail" disclosure used to keep itemized tables out of the glance. */
+function Detail({
+  summary,
+  children,
+  defaultOpen = false,
+}: {
+  summary: string;
+  children: React.ReactNode;
+  defaultOpen?: boolean;
+}) {
+  return (
+    <Collapsible defaultOpen={defaultOpen} className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <CollapsibleTrigger className="group flex w-full items-center justify-between gap-2 px-4 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:text-slate-900">
+        {summary}
+        <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-data-[state=open]:rotate-180" />
+      </CollapsibleTrigger>
+      <CollapsibleContent>
+        <div className="overflow-x-auto border-t border-slate-100">{children}</div>
+      </CollapsibleContent>
+    </Collapsible>
+  );
+}
+
 const AB_MIN_SESSIONS = 100;
 
-/**
- * Prominent personalisation A/B head-to-head card. Honest about significance:
- * if either arm is below AB_MIN_SESSIONS we say so rather than quoting a lift.
- */
 function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
   const { control, treatment } = ab;
   const hasBoth = !!control && !!treatment;
@@ -134,10 +192,8 @@ function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
   const cSessions = control?.sessions ?? 0;
   const tSessions = treatment?.sessions ?? 0;
   const enough = hasBoth && cSessions >= AB_MIN_SESSIONS && tSessions >= AB_MIN_SESSIONS;
-
   const relLift = cRate > 0 ? (tRate - cRate) / cRate : null;
 
-  // Two-proportion z-test (bonus): only meaningful once both arms have volume.
   let sig: { z: number; significant: boolean } | null = null;
   if (hasBoth && cSessions > 0 && tSessions > 0) {
     const cConv = control!.converted_sessions;
@@ -150,7 +206,6 @@ function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
     }
   }
 
-  // Headline: signal vs honest not-enough-data.
   let headline: React.ReactNode;
   let headlineClass = "text-slate-900";
   if (!hasBoth) {
@@ -167,10 +222,14 @@ function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
     const dir = relLift >= 0 ? "vs" : "below";
     headline = (
       <>
-        Personalisation: <span className={relLift >= 0 ? "text-emerald-700" : "text-rose-700"}>{sign}{(relLift * 100).toFixed(0)}% conversions</span> {dir} control
+        Personalisation:{" "}
+        <span className={relLift >= 0 ? "text-emerald-700" : "text-rose-700"}>
+          {sign}
+          {(relLift * 100).toFixed(0)}% conversions
+        </span>{" "}
+        {dir} control
       </>
     );
-    headlineClass = "text-slate-900";
   }
 
   return (
@@ -219,65 +278,31 @@ function PersonalizationABCard({ ab }: { ab: PersonalizationAB }) {
   );
 }
 
-/**
- * Per-calculator opportunity scoring. We surface the weaker of the two funnel
- * steps (view→compute, compute→lead) and rank by traffic × how bad that step is,
- * so the biggest fixable losses float to the top.
- */
-type CalcOpportunity = CalculatorConversion & {
-  weakStep: "compute" | "lead" | null;
-  weakRate: number | null;
-  opportunityScore: number;
-  needsAttention: boolean;
-};
+// ── Calculators ────────────────────────────────────────────────────────────
 
-// Below these rates a step is "weak" enough to flag (given enough traffic).
-const WEAK_COMPUTE_RATE = 0.4; // < 40% of viewers actually compute
-const WEAK_LEAD_RATE = 0.05; // < 5% of computers become a lead
-const MIN_TRAFFIC_TO_FLAG = 20; // ignore tiny-sample noise
+const WEAK_COMPUTE_RATE = 0.4;
+const WEAK_LEAD_RATE = 0.05;
+const MIN_TRAFFIC_TO_FLAG = 20;
+
+type CalcOpportunity = CalculatorConversion & { needsAttention: boolean; opportunityScore: number };
 
 function scoreCalculators(rows: CalculatorConversion[]): CalcOpportunity[] {
-  const scored: CalcOpportunity[] = rows.map((c) => {
-    const compute = c.compute_rate;
-    const lead = c.computed_to_lead_rate;
-    const hasTraffic = c.viewed >= MIN_TRAFFIC_TO_FLAG;
+  return rows
+    .map((c) => {
+      const hasTraffic = c.viewed >= MIN_TRAFFIC_TO_FLAG;
+      const computeGap = c.compute_rate != null ? Math.max(0, WEAK_COMPUTE_RATE - c.compute_rate) : 0;
+      const leadGap = c.computed_to_lead_rate != null ? Math.max(0, WEAK_LEAD_RATE - c.computed_to_lead_rate) : 0;
+      const score = Math.max(computeGap * c.viewed, leadGap * c.computed);
+      return { ...c, needsAttention: hasTraffic && score > 0, opportunityScore: hasTraffic ? score : 0 };
+    })
+    .sort((a, b) => b.opportunityScore - a.opportunityScore || b.viewed - a.viewed);
+}
 
-    // Estimate sessions "lost" at each step to compare apples to apples.
-    // view→compute loss is measured against viewers; compute→lead against computers.
-    const computeGap = compute != null ? Math.max(0, WEAK_COMPUTE_RATE - compute) : 0;
-    const leadGap = lead != null ? Math.max(0, WEAK_LEAD_RATE - lead) : 0;
-    const computeLoss = computeGap * c.viewed;
-    const leadLoss = leadGap * c.computed;
-
-    let weakStep: "compute" | "lead" | null = null;
-    let weakRate: number | null = null;
-    let opportunityScore = 0;
-    if (hasTraffic && (computeLoss > 0 || leadLoss > 0)) {
-      if (computeLoss >= leadLoss) {
-        weakStep = "compute";
-        weakRate = compute;
-        opportunityScore = computeLoss;
-      } else {
-        weakStep = "lead";
-        weakRate = lead;
-        opportunityScore = leadLoss;
-      }
-    }
-
-    return {
-      ...c,
-      weakStep,
-      weakRate,
-      opportunityScore,
-      needsAttention: weakStep != null,
-    };
-  });
-
-  // Opportunities first (by score), then the rest by traffic.
-  return scored.sort((a, b) => {
-    if (b.opportunityScore !== a.opportunityScore) return b.opportunityScore - a.opportunityScore;
-    return b.viewed - a.viewed;
-  });
+function needsAttention(viewed: number, compute: number | null, lead: number | null): null | "compute" | "lead" {
+  if (viewed < MIN_TRAFFIC_TO_FLAG) return null;
+  if (compute != null && compute < WEAK_COMPUTE_RATE) return "compute";
+  if (lead != null && lead < WEAK_LEAD_RATE) return "lead";
+  return null;
 }
 
 function CalcStepBar({ rate, kind }: { rate: number | null; kind: "compute" | "lead" }) {
@@ -288,74 +313,8 @@ function CalcStepBar({ rate, kind }: { rate: number | null; kind: "compute" | "l
     <div>
       <span className={isWeak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(rate)}</span>
       <div className="mt-1 h-1.5 rounded bg-slate-100">
-        <div
-          className={`h-1.5 rounded ${isWeak ? "bg-rose-400" : "bg-emerald-500"}`}
-          style={{ width: `${widthPct}%` }}
-        />
+        <div className={`h-1.5 rounded ${isWeak ? "bg-rose-400" : "bg-emerald-500"}`} style={{ width: `${widthPct}%` }} />
       </div>
-    </div>
-  );
-}
-
-function CalculatorPanel({ rows }: { rows: CalcOpportunity[] }) {
-  return (
-    <div>
-      <h2 className="text-lg font-bold text-slate-900">Calculator drop-off & opportunities</h2>
-      <p className="mt-1 text-xs text-slate-500">
-        Funnel per tool: <strong>Viewed → Computed → Lead</strong>. Rows with decent traffic but a weak step are flagged
-        and sorted to the top (biggest traffic × worst rate first). A weak <em>view→compute</em> means people open it
-        but don&apos;t finish; a weak <em>compute→lead</em> means they get a result but don&apos;t convert.
-      </p>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table className="w-full text-sm">
-          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-            <tr>
-              <th className="px-3 py-2">Calculator</th>
-              <th className="px-3 py-2 text-right">Viewed</th>
-              <th className="px-3 py-2 text-right">Computed</th>
-              <th className="px-3 py-2 text-right">Leads</th>
-              <th className="px-3 py-2">View→Compute</th>
-              <th className="px-3 py-2">Compute→Lead</th>
-              <th className="px-3 py-2">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.length === 0 ? (
-              <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No calculator data yet.</td></tr>
-            ) : (
-              rows.map((c) => (
-                <tr
-                  key={c.calculator_slug}
-                  className={`border-t border-slate-100 ${c.needsAttention ? "bg-amber-50/50" : ""}`}
-                >
-                  <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
-                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
-                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
-                  <td className="px-3 py-2">
-                    {c.needsAttention ? (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold text-amber-800">
-                        Needs attention
-                        <span className="font-normal text-amber-700">
-                          ({c.weakStep === "compute" ? "low compute" : "low convert"})
-                        </span>
-                      </span>
-                    ) : (
-                      <span className="text-xs text-slate-400">—</span>
-                    )}
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
-      <p className="mt-2 text-xs text-slate-400">
-        Note: <code className="rounded bg-slate-100 px-1">calc_view</code> was recently fixed, so very old rows may
-        under-count views (and inflate their compute rate). Treat low-traffic tools with caution.
-      </p>
     </div>
   );
 }
@@ -370,104 +329,359 @@ function placementLabel(p: string): string {
   return PLACEMENT_LABEL[p] ?? p;
 }
 
-/**
- * The SAME tool funnel, split by WHERE it was surfaced (calc page / blog / embed
- * iframe). `viewed` is visibility-gated, so blog embeds are not inflated by
- * readers who never scroll to the injected tool.
- */
-function PlacementPanel({ rows }: { rows: CalculatorConversionPlacement[] }) {
+function CalculatorsPanel({
+  placement,
+  agg,
+  attentionCount,
+  computesSeries,
+}: {
+  placement: CalculatorConversionPlacement[];
+  agg: { viewed: number; computed: number; leads: number };
+  attentionCount: number;
+  computesSeries: number[];
+}) {
+  const overallCompute = agg.viewed > 0 ? agg.computed / agg.viewed : null;
+  const overallLead = agg.computed > 0 ? agg.leads / agg.computed : null;
+  const rows = [...placement].sort((a, b) => b.viewed - a.viewed);
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Tool performance by placement</h2>
+      <h2 className="text-lg font-bold text-slate-900">Calculators</h2>
       <p className="mt-1 text-xs text-slate-500">
-        The same tool, split by where it was surfaced. <strong>Viewed</strong> counts only when the tool actually
-        scrolled into view, so blog embeds are not inflated by readers who never reach them. Use this to see whether the
-        embedded tool earns its place in a category&apos;s posts.
+        Tool funnel: <strong>Viewed → Computed → Lead</strong>.{" "}
+        <em>Viewed</em> = the tool scrolled into the viewport once (an impression, not an interaction and not just
+        engagement). On a blog a reader who scrolls the tool into view counts even without touching it — which deflates
+        blog compute-rates. The detail splits each tool by where it&apos;s shown so you can tell the /blog render from the
+        /calculators page.
       </p>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <Kpi label="Tools" value={String(rows.length)} sub={`${attentionCount} need attention`} />
+        <Kpi label="View→Compute" value={pct(overallCompute)} sub={`${agg.computed} of ${agg.viewed}`} />
+        <Kpi label="Compute→Lead" value={pct(overallLead)} sub={`${agg.leads} tool-driven leads`} />
+        <SnapshotCard label="Computes / day" value={String(computesSeries.reduce((a, b) => a + b, 0))} series={computesSeries} delta={deltaVsPrior(computesSeries)} accent="sky" sub="last 14 days" />
+      </div>
+      <Detail summary={`Per-tool detail by placement (${rows.length})`}>
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
             <tr>
               <th className="px-3 py-2">Tool</th>
-              <th className="px-3 py-2">Placement</th>
-              <th className="px-3 py-2">Kind</th>
+              <th className="px-3 py-2">Where</th>
+              <th className="hidden px-3 py-2 sm:table-cell">Kind</th>
               <th className="px-3 py-2 text-right">Viewed</th>
               <th className="px-3 py-2 text-right">Computed</th>
-              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">Leads</th>
               <th className="px-3 py-2">View→Compute</th>
-              <th className="px-3 py-2">Compute→Lead</th>
+              <th className="hidden px-3 py-2 lg:table-cell">Compute→Lead</th>
             </tr>
           </thead>
           <tbody>
             {rows.length === 0 ? (
-              <tr><td colSpan={8} className="px-3 py-4 text-center text-slate-400">No placement data yet (lands once the new events accrue).</td></tr>
+              <tr><td colSpan={8} className="px-3 py-4 text-center text-slate-400">No calculator data yet.</td></tr>
             ) : (
-              rows.map((c, i) => (
-                <tr key={`${c.calculator_slug}-${c.placement}-${c.tool_kind}-${i}`} className="border-t border-slate-100">
-                  <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
-                  <td className="px-3 py-2 text-slate-600">{placementLabel(c.placement)}</td>
-                  <td className="px-3 py-2 text-slate-500">{c.tool_kind}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
-                  <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
-                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
-                  <td className="w-32 px-3 py-2"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
-                </tr>
-              ))
+              rows.map((c, i) => {
+                const weak = needsAttention(c.viewed, c.compute_rate, c.computed_to_lead_rate);
+                return (
+                  <tr key={`${c.calculator_slug}-${c.placement}-${c.tool_kind}-${i}`} className={`border-t border-slate-100 ${weak ? "bg-amber-50/50" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">
+                      {c.calculator_slug}
+                      {weak && <span className="ml-2 rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-semibold text-amber-800">{weak === "compute" ? "low compute" : "low convert"}</span>}
+                    </td>
+                    <td className="px-3 py-2 text-slate-600">{placementLabel(c.placement)}</td>
+                    <td className="hidden px-3 py-2 text-slate-500 sm:table-cell">{c.tool_kind}</td>
+                    <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
+                    <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
+                    <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{c.lead_sessions}</td>
+                    <td className="w-28 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
+                    <td className="hidden w-28 px-3 py-2 lg:table-cell"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
+                  </tr>
+                );
+              })
             )}
           </tbody>
         </table>
-      </div>
+      </Detail>
     </div>
   );
 }
 
-/**
- * The email-gated Excel toolkit funnel: saw the gate (a real impression) ->
- * unlocked (email captured) -> lead, by topic and placement. The impression
- * denominator is what the slug-only calculator view could never give.
- */
-function ResourceGatePanel({ rows }: { rows: ResourceConversion[] }) {
+// ── Content engagement (section → action) ───────────────────────────────────
+
+function shortPage(p: string): string {
+  return p.replace(/^\/blog\//, "").replace(/\/$/, "");
+}
+
+function ContentEngagementPanel({ rows }: { rows: SectionAction[] }) {
+  const top = rows.slice(0, 8);
+  const rest = rows.slice(8);
+  const renderRows = (list: SectionAction[]) =>
+    list.map((r, i) => {
+      const actRate = r.read_sessions > 0 ? r.acted_sessions / r.read_sessions : 0;
+      return (
+        <tr key={`${r.page_path}-${r.section_id}-${i}`} className="border-t border-slate-100">
+          <td className="px-3 py-2 text-slate-700">{r.section_text || r.section_id}</td>
+          <td className="hidden px-3 py-2 font-mono text-xs text-slate-500 sm:table-cell" title={r.page_path}>{shortPage(r.page_path)}</td>
+          <td className="px-3 py-2 text-right font-mono">{r.read_sessions}</td>
+          <td className="px-3 py-2 text-right font-mono">
+            {r.acted_sessions}
+            <span className="ml-1 text-xs text-slate-400">({(actRate * 100).toFixed(0)}%)</span>
+          </td>
+          <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{r.converted_sessions}</td>
+        </tr>
+      );
+    });
+  const Head = () => (
+    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+      <tr>
+        <th className="px-3 py-2">Section</th>
+        <th className="hidden px-3 py-2 sm:table-cell">Page</th>
+        <th className="px-3 py-2 text-right">Read by</th>
+        <th className="px-3 py-2 text-right">→ Acted after</th>
+        <th className="hidden px-3 py-2 text-right sm:table-cell">→ Converted</th>
+      </tr>
+    </thead>
+  );
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Excel toolkit (gated download) funnel</h2>
+      <h2 className="text-lg font-bold text-slate-900">Content engagement</h2>
       <p className="text-xs text-slate-500">
-        The email-gated Excel model, by topic and placement: <strong>Saw gate → Unlocked → Lead</strong>. &quot;Saw
-        gate&quot; is a real impression (the gate scrolled into view), so the saw→unlock rate is honest — a high rate
-        means the offer pulls its weight where it is shown.
+        Per section: how many sessions <strong>read</strong> it (≥50% visible for ≥2s), and of those how many then{" "}
+        <strong>took an action</strong> (clicked a CTA or started the form) afterwards, and converted. Correlational —
+        reading then acting isn&apos;t proof the section caused it, but a high act-rate marks where attention turns into
+        intent. Top {top.length} by reads.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <Head />
+          <tbody>
+            {top.length === 0 ? (
+              <tr><td colSpan={5} className="px-3 py-4 text-center text-slate-400">No section data yet.</td></tr>
+            ) : (
+              renderRows(top)
+            )}
+          </tbody>
+        </table>
+      </div>
+      {rest.length > 0 && (
+        <Detail summary={`Show ${rest.length} more sections`}>
+          <table className="w-full text-sm">
+            <Head />
+            <tbody>{renderRows(rest)}</tbody>
+          </table>
+        </Detail>
+      )}
+    </div>
+  );
+}
+
+// ── Errors / friction ───────────────────────────────────────────────────────
+
+function ErrorsPanel({
+  errors,
+  errorsSeries,
+  friction,
+}: {
+  errors: ClientError[];
+  errorsSeries: number[];
+  friction: UxFriction[];
+}) {
+  const totalErrors = errorsSeries.reduce((a, b) => a + b, 0);
+  const today = errorsSeries[errorsSeries.length - 1] ?? 0;
+  const fr = friction.reduce(
+    (a, r) => ({ rage: a.rage + r.rage_clicks, dead: a.dead + r.dead_clicks, exit: a.exit + r.exit_intent_shown }),
+    { rage: 0, dead: 0, exit: 0 },
+  );
+  const top = errors.slice(0, 8);
+  const rest = errors.slice(8);
+  const renderRows = (list: ClientError[]) =>
+    list.map((e, i) => (
+      <tr key={`${e.message}-${e.source}-${e.line}-${i}`} className="border-t border-slate-100 align-top">
+        <td className="px-3 py-2 text-slate-800">
+          <span className="break-words font-mono text-xs">{e.message}</span>
+          {(e.source || e.line) && (
+            <div className="mt-0.5 truncate text-[11px] text-slate-400" title={`${e.source ?? ""}:${e.line ?? ""}`}>
+              {shortPage(e.source ?? "")}{e.line ? `:${e.line}` : ""}
+            </div>
+          )}
+        </td>
+        <td className="hidden px-3 py-2 text-xs text-slate-500 sm:table-cell">{e.kind}</td>
+        <td className="px-3 py-2 text-right font-mono">{e.count}</td>
+        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{e.sessions}</td>
+        <td className="hidden px-3 py-2 font-mono text-[11px] text-slate-500 lg:table-cell" title={e.example_page ?? ""}>{shortPage(e.example_page ?? "")}</td>
+        <td className="px-3 py-2 text-right text-xs text-slate-500">{e.last_seen ? ago(e.last_seen) : "—"}</td>
+      </tr>
+    ));
+  const Head = () => (
+    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+      <tr>
+        <th className="px-3 py-2">Error</th>
+        <th className="hidden px-3 py-2 sm:table-cell">Kind</th>
+        <th className="px-3 py-2 text-right">Count</th>
+        <th className="hidden px-3 py-2 text-right sm:table-cell">Sessions</th>
+        <th className="hidden px-3 py-2 lg:table-cell">Example page</th>
+        <th className="px-3 py-2 text-right">Last seen</th>
+      </tr>
+    </thead>
+  );
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Errors &amp; friction</h2>
+      <p className="text-xs text-slate-500">
+        JS errors grouped by message (debuggable, not a URL dump), plus a rage/dead-click and exit-intent line. A clean
+        site shows a flat, near-zero error trend.
+      </p>
+      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <SnapshotCard
+          label="JS errors / day"
+          value={String(today)}
+          sub={`${totalErrors} in 14 days`}
+          series={errorsSeries}
+          delta={deltaVsPrior(errorsSeries)}
+          invertDelta
+          accent="rose"
+          status={today > 0 ? "warn" : "ok"}
+        />
+        <Kpi label="Rage clicks" value={String(fr.rage)} sub="rapid repeat clicks" />
+        <Kpi label="Dead clicks" value={String(fr.dead)} sub="clicks that did nothing" />
+        <Kpi label="Exit-intent shown" value={String(fr.exit)} sub="leave-intent popups" />
+      </div>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <Head />
+          <tbody>
+            {top.length === 0 ? (
+              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No JS errors logged — clean.</td></tr>
+            ) : (
+              renderRows(top)
+            )}
+          </tbody>
+        </table>
+      </div>
+      {rest.length > 0 && (
+        <Detail summary={`Show ${rest.length} more error types`}>
+          <table className="w-full text-sm">
+            <Head />
+            <tbody>{renderRows(rest)}</tbody>
+          </table>
+        </Detail>
+      )}
+    </div>
+  );
+}
+
+// ── CTA performance ─────────────────────────────────────────────────────────
+
+function CtaRows({ rows }: { rows: CtaPerformance[] }) {
+  return (
+    <table className="w-full text-sm">
+      <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+        <tr>
+          <th className="px-3 py-2">CTA</th>
+          <th className="px-3 py-2 text-right">Clicks</th>
+          <th className="px-3 py-2 text-right">Sessions</th>
+          <th className="hidden px-3 py-2 text-right sm:table-cell">→ Form starts</th>
+          <th className="px-3 py-2">Click→Form</th>
+          <th className="hidden px-3 py-2 text-right sm:table-cell">Leads</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.length === 0 ? (
+          <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">None yet.</td></tr>
+        ) : (
+          rows.map((c) => {
+            const lbl = ctaLabel(c.cta_id);
+            const isForm = c.goal === "form";
+            const weak = isForm && (c.click_to_form_rate ?? 0) < 0.1;
+            const widthPct = c.click_to_form_rate == null ? 0 : Math.min(100, c.click_to_form_rate * 100);
+            return (
+              <tr key={c.cta_id} className={`border-t border-slate-100 ${weak ? "bg-rose-50/50" : ""}`}>
+                <td className="px-3 py-2">
+                  <div className="font-medium text-slate-800">{lbl.name}</div>
+                  <div className="text-[11px] text-slate-400">{lbl.where}</div>
+                </td>
+                <td className="px-3 py-2 text-right font-mono">{c.clicks}</td>
+                <td className="px-3 py-2 text-right font-mono">{c.click_sessions}</td>
+                <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{c.form_start_sessions}</td>
+                <td className="w-28 px-3 py-2">
+                  <span className={weak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(c.click_to_form_rate)}</span>
+                  <div className="mt-1 h-1.5 rounded bg-slate-100">
+                    <div className={`h-1.5 rounded ${weak ? "bg-rose-400" : "bg-emerald-500"}`} style={{ width: `${widthPct}%` }} />
+                  </div>
+                </td>
+                <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{c.lead_sessions}</td>
+              </tr>
+            );
+          })
+        )}
+      </tbody>
+    </table>
+  );
+}
+
+function CtaPerformancePanel({ rows }: { rows: CtaPerformance[] }) {
+  const formCtas = rows.filter((c) => c.goal === "form").sort((a, b) => b.clicks - a.clicks);
+  const others = rows.filter((c) => c.goal !== "form").sort((a, b) => Number(isDismissCta(a.cta_id)) - Number(isDismissCta(b.cta_id)) || b.clicks - a.clicks);
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">CTA performance</h2>
+      <p className="text-xs text-slate-500">
+        <strong>Sessions</strong> = distinct sessions that clicked this CTA. <strong>Click→Form</strong> = of those, how
+        many then started the lead form. Form-bound CTAs are what should reach the form; a low rate there is a leak. The
+        funnel&apos;s &quot;Clicked a form CTA&quot; stage counts <em>distinct sessions</em>, so a session clicking two
+        form CTAs appears in two rows here but once in the funnel — that&apos;s why the totals differ.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <div className="border-b border-slate-100 bg-emerald-50/40 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-emerald-800">
+          Form-bound CTAs
+        </div>
+        <CtaRows rows={formCtas} />
+      </div>
+      <Detail summary={`Other CTAs & dismissals (${others.length})`}>
+        <CtaRows rows={others} />
+      </Detail>
+    </div>
+  );
+}
+
+/** Where users abandon the lead form, field by field (highest abandon first). */
+function FormDropoffPanel({ rows }: { rows: FormFieldDropoff[] }) {
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Form-field drop-off</h2>
+      <p className="text-xs text-slate-500">
+        Of people who focused each field, how many left without finishing. A high abandon rate is where the lead form
+        loses people — the field to simplify, make optional, or move later.
       </p>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
             <tr>
-              <th className="px-3 py-2">Topic</th>
-              <th className="px-3 py-2">Placement</th>
-              <th className="px-3 py-2 text-right">Saw gate</th>
-              <th className="px-3 py-2 text-right">Unlocked</th>
-              <th className="px-3 py-2">Saw→Unlock</th>
-              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="hidden px-3 py-2 sm:table-cell">Form</th>
+              <th className="px-3 py-2">Field</th>
+              <th className="px-3 py-2 text-right">Focused</th>
+              <th className="px-3 py-2 text-right">Abandoned</th>
+              <th className="px-3 py-2">Abandon rate</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">Errors</th>
             </tr>
           </thead>
           <tbody>
             {rows.length === 0 ? (
-              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No gate data yet (lands once the new gate_view events accrue).</td></tr>
+              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No form-field data yet.</td></tr>
             ) : (
               rows.map((r, i) => {
-                const t = getTopic(r.topic);
-                const widthPct = r.view_to_unlock_rate == null ? 0 : Math.min(100, r.view_to_unlock_rate * 100);
+                const weak = (r.abandon_rate ?? 0) >= 0.3;
+                const widthPct = r.abandon_rate == null ? 0 : Math.min(100, r.abandon_rate * 100);
                 return (
-                  <tr key={`${r.topic}-${r.placement}-${i}`} className="border-t border-slate-100">
-                    <td className="px-3 py-2 font-medium text-slate-800">{t?.label ?? r.topic}</td>
-                    <td className="px-3 py-2 text-slate-600">{placementLabel(r.placement)}</td>
-                    <td className="px-3 py-2 text-right font-mono">{r.gate_views}</td>
-                    <td className="px-3 py-2 text-right font-mono">{r.unlocks}</td>
-                    <td className="w-32 px-3 py-2">
-                      <span className="text-slate-700">{pct(r.view_to_unlock_rate)}</span>
+                  <tr key={`${r.form_id}-${r.field}-${i}`} className={`border-t border-slate-100 ${weak ? "bg-rose-50/50" : ""}`}>
+                    <td className="hidden px-3 py-2 font-mono text-xs text-slate-500 sm:table-cell">{r.form_id || "—"}</td>
+                    <td className="px-3 py-2 font-medium text-slate-800">{r.field}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.focuses}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.abandons}</td>
+                    <td className="w-28 px-3 py-2">
+                      <span className={weak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(r.abandon_rate)}</span>
                       <div className="mt-1 h-1.5 rounded bg-slate-100">
-                        <div className="h-1.5 rounded bg-emerald-500" style={{ width: `${widthPct}%` }} />
+                        <div className={`h-1.5 rounded ${weak ? "bg-rose-400" : "bg-amber-400"}`} style={{ width: `${widthPct}%` }} />
                       </div>
                     </td>
-                    <td className="px-3 py-2 text-right font-mono">{r.lead_sessions}</td>
+                    <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{r.errors}</td>
                   </tr>
                 );
               })
@@ -479,14 +693,197 @@ function ResourceGatePanel({ rows }: { rows: ResourceConversion[] }) {
   );
 }
 
+/** Excel gate funnel — collapsed by default, flagged when it underperforms. */
+function ResourceGatePanel({ rows }: { rows: ResourceConversion[] }) {
+  const totals = rows.reduce((a, r) => ({ views: a.views + r.gate_views, unlocks: a.unlocks + r.unlocks, leads: a.leads + r.lead_sessions }), { views: 0, unlocks: 0, leads: 0 });
+  const rate = totals.views > 0 ? totals.unlocks / totals.views : null;
+  const underperforming = totals.views >= 20 && (rate ?? 0) < 0.05;
+  return (
+    <div>
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-lg font-bold text-slate-900">Excel toolkit (gated download)</h2>
+        {underperforming && (
+          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold text-amber-800">
+            Underperforming — consider a form block instead
+          </span>
+        )}
+      </div>
+      <p className="text-xs text-slate-500">
+        Saw gate → Unlocked (email) → Lead. Overall saw→unlock: <strong>{pct(rate)}</strong> ({totals.unlocks} of{" "}
+        {totals.views}). {underperforming && "Few visitors want the download here — a direct lead-form block may convert better (logged as a recommendation)."}
+      </p>
+      <Detail summary="Show gate detail by topic & placement">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Topic</th>
+              <th className="hidden px-3 py-2 sm:table-cell">Placement</th>
+              <th className="px-3 py-2 text-right">Saw gate</th>
+              <th className="px-3 py-2 text-right">Unlocked</th>
+              <th className="px-3 py-2">Saw→Unlock</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">Leads</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No gate data yet.</td></tr>
+            ) : (
+              rows.map((r, i) => {
+                const t = getTopic(r.topic);
+                const widthPct = r.view_to_unlock_rate == null ? 0 : Math.min(100, r.view_to_unlock_rate * 100);
+                return (
+                  <tr key={`${r.topic}-${r.placement}-${i}`} className="border-t border-slate-100">
+                    <td className="px-3 py-2 font-medium text-slate-800">{t?.label ?? r.topic}</td>
+                    <td className="hidden px-3 py-2 text-slate-600 sm:table-cell">{placementLabel(r.placement)}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.gate_views}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.unlocks}</td>
+                    <td className="w-28 px-3 py-2">
+                      <span className="text-slate-700">{pct(r.view_to_unlock_rate)}</span>
+                      <div className="mt-1 h-1.5 rounded bg-slate-100">
+                        <div className="h-1.5 rounded bg-emerald-500" style={{ width: `${widthPct}%` }} />
+                      </div>
+                    </td>
+                    <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{r.lead_sessions}</td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </Detail>
+    </div>
+  );
+}
+
+// ── Experiments tab pieces ──────────────────────────────────────────────────
+
+function ExperimentLedger({ experiments }: { experiments: ExperimentResult[] }) {
+  if (experiments.length === 0) return null;
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Experiments (A/B ledger)</h2>
+      <p className="text-xs text-slate-500">
+        The raw ledger (directional; significance needs volume). New experiments registered in{" "}
+        <code className="rounded bg-slate-100 px-1">lib/experiments/registry.ts</code> appear here.
+      </p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Experiment : variant</th>
+              <th className="px-3 py-2 text-right">Sessions</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">CTA clicks</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">Form starts</th>
+              <th className="px-3 py-2 text-right">Conversion</th>
+            </tr>
+          </thead>
+          <tbody>
+            {experiments.map((x) => (
+              <tr key={x.exp} className="border-t border-slate-100">
+                <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
+                <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
+                <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.cta_clicks}</td>
+                <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.form_starts}</td>
+                <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function OfferPerformancePanel({ rows }: { rows: PersonalizationResult[] }) {
+  const agg = rows.reduce(
+    (a, r) => ({ shown: a.shown + r.shown, clicked: a.clicked + r.clicked, leads: a.leads + r.converted_sessions }),
+    { shown: 0, clicked: 0, leads: 0 },
+  );
+  const ctr = agg.shown > 0 ? agg.clicked / agg.shown : null;
+  const lead = agg.shown > 0 ? agg.leads / agg.shown : null;
+  const best = [...rows].sort((a, b) => (b.click_rate ?? 0) - (a.click_rate ?? 0))[0];
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Offer performance (personalised arm)</h2>
+      <p className="text-xs text-slate-500">
+        What happens <em>inside</em> the treatment arm — which behaviour-matched offers earn a click and a lead. Not a
+        second A/B (every row&apos;s alternative is the generic site, measured by the card above).
+      </p>
+      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <Kpi label="Offers shown" value={String(agg.shown)} />
+        <Kpi label="Overall CTR" value={pct(ctr)} sub={`${agg.clicked} clicks`} />
+        <Kpi label="Shown→Lead" value={pct(lead)} sub={`${agg.leads} leads`} />
+        <Kpi label="Best offer (CTR)" value={best ? pct(best.click_rate) : "—"} sub={best ? ruleLabel(best.rule_id) : ""} />
+      </div>
+      <Detail summary={`Show all ${rows.length} offers`}>
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Offer</th>
+              <th className="hidden px-3 py-2 sm:table-cell">Where</th>
+              <th className="hidden px-3 py-2 lg:table-cell">Why it fires</th>
+              <th className="px-3 py-2 text-right">Shown</th>
+              <th className="px-3 py-2 text-right">CTR</th>
+              <th className="px-3 py-2 text-right">Shown→Lead</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No personalisation data yet.</td></tr>
+            ) : (
+              rows.map((p, i) => (
+                <tr key={`${p.surface}-${p.rule_id}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100 align-top">
+                  <td className="px-3 py-2">
+                    <div className="font-medium text-slate-800">{ruleLabel(p.rule_id)}</div>
+                    <div className="text-xs text-slate-500">“{personalizationHint(p.rule_id, p.topic)}” · {getTopic(p.topic)?.label ?? p.topic}</div>
+                  </td>
+                  <td className="hidden px-3 py-2 text-slate-600 sm:table-cell">
+                    <div>{surfaceLabel(p.surface)}</div>
+                    <div className="text-xs text-slate-400">{surfaceWhere(p.surface)}</div>
+                  </td>
+                  <td className="hidden px-3 py-2 text-xs text-slate-500 lg:table-cell">{ruleTrigger(p.rule_id)}</td>
+                  <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
+                  <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
+                  <td className="px-3 py-2 text-right">{pct(p.shown_to_lead_rate)}</td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </Detail>
+    </div>
+  );
+}
+
+function experimentOneLiner(ab: PersonalizationAB): string {
+  const c = ab.control;
+  const t = ab.treatment;
+  if (!c || !t) return "Personalisation A/B: waiting for both arms to log sessions.";
+  const cRate = c.conversion_rate ?? 0;
+  const tRate = t.conversion_rate ?? 0;
+  const lift = cRate > 0 ? (tRate - cRate) / cRate : null;
+  if (lift == null) return `Personalisation A/B: ${c.sessions + t.sessions} sessions, control has no conversions yet.`;
+  const sign = lift >= 0 ? "+" : "";
+  return `Personalisation A/B: ${sign}${(lift * 100).toFixed(0)}% conversions vs control (${c.sessions + t.sessions} sessions).`;
+}
+
 export default async function AdminAnalyticsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ k?: string }>;
+  searchParams: Promise<{ k?: string; country?: string }>;
 }) {
-  const { k } = await searchParams;
+  const { k, country: countryParam } = await searchParams;
   const expected = process.env.ADMIN_DASHBOARD_KEY;
   if (!expected || k !== expected) notFound();
+
+  const country = countryParam || "GB";
+  const countryFilter = country === "ALL" ? undefined : country;
+  const qs = `k=${expected}&country=${country}`;
+
+  const now = new Date();
+  const isoOf = (d: Date) => d.toISOString();
+  const from30 = new Date(now.getTime() - 30 * 86400000);
+  const from14 = new Date(now.getTime() - 14 * 86400000);
 
   const siteKey = niche.content_strategy.source_identifier;
   const [
@@ -499,20 +896,34 @@ export default async function AdminAnalyticsPage({
     personalization,
     experiments,
     personalizationAB,
+    countryOptions,
+    ctaPerformance,
+    formDropoff,
+    sectionActions,
+    uxFriction,
+    clientErrors,
+    errorsDaily,
+    tsDaily,
   ] = await Promise.all([
-    getFunnelDaily(siteKey),
-    getCalculatorConversion(siteKey),
-    getCalculatorConversionByPlacement(siteKey),
+    getFunnelDaily(siteKey, countryFilter),
+    getCalculatorConversion(siteKey, countryFilter),
+    getCalculatorConversionByPlacement(siteKey, countryFilter),
     getResourceConversion(siteKey),
-    getTopVisitors(siteKey),
+    getTopVisitors(siteKey, 500, countryFilter),
     getLeadsForSite(siteKey),
     getPersonalizationResults(siteKey),
     getExperimentResults(siteKey),
     getPersonalizationAB(siteKey),
+    getCountryOptions(siteKey),
+    getCtaPerformance(siteKey, countryFilter),
+    getFormFieldDropoff(siteKey, countryFilter),
+    getSectionActions(siteKey, countryFilter),
+    getUxFriction(siteKey, countryFilter),
+    getClientErrors(siteKey, countryFilter),
+    getEventDaily(siteKey, "client_error", isoOf(from14), isoOf(now), countryFilter),
+    getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
   ]);
 
-  // Map each visitor to the lead they became (newest wins), so the visitor
-  // table can show who converted even before the lead_id stitch backfills.
   const leadByVisitor = new Map<string, (typeof leads)[number]>();
   for (const l of leads) {
     if (l.visitor_id && !leadByVisitor.has(l.visitor_id)) leadByVisitor.set(l.visitor_id, l);
@@ -534,80 +945,111 @@ export default async function AdminAnalyticsPage({
       sessions: a.sessions + d.sessions,
       engaged: a.engaged + d.engaged_sessions,
       calc: a.calc + d.calc_sessions,
-      cta: a.cta + d.cta_sessions,
+      formCta: a.formCta + d.form_cta_sessions,
       form: a.form + d.form_start_sessions,
       converted: a.converted + d.converted_sessions,
     }),
-    { sessions: 0, engaged: 0, calc: 0, cta: 0, form: 0, converted: 0 },
+    { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
   );
   const convRate = totals.sessions > 0 ? totals.converted / totals.sessions : 0;
-  const avgEngaged =
-    visitors.length > 0
-      ? visitors.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / visitors.length
-      : 0;
+  const avgEngaged = visitors.length > 0 ? visitors.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / visitors.length : 0;
+  const funnelDays = new Set(funnel.map((d) => d.date)).size;
 
-  const stages: Array<[string, number]> = [
-    ["Sessions", totals.sessions],
-    ["Engaged", totals.engaged],
-    ["Used calculator", totals.calc],
-    ["Clicked CTA", totals.cta],
-    ["Started form", totals.form],
-    ["Converted", totals.converted],
+  // Health sparklines (last 14 days).
+  const sessionsSeries = densify(tsDaily, 14, (r) => r.sessions, "bucket");
+  const leadsSeries = densify(tsDaily, 14, (r) => r.leads, "bucket");
+  const engagedSeries = densify(funnel, 14, (r) => r.engaged_sessions, "date");
+  const convertedSeries = densify(funnel, 14, (r) => r.converted_sessions, "date");
+  const errorsSeries = densify(errorsDaily, 14, (r) => r.count, "bucket");
+  const computesSeries = densify(funnel, 14, (r) => r.calc_sessions, "date");
+
+  type FunnelRow = { label: string; n: number; denom: number; denomLabel: string; branch?: boolean };
+  const funnelRows: FunnelRow[] = [
+    { label: "Sessions", n: totals.sessions, denom: totals.sessions, denomLabel: "" },
+    { label: "Engaged", n: totals.engaged, denom: totals.sessions, denomLabel: "of sessions" },
+    { label: "↳ Used calculator", n: totals.calc, denom: totals.engaged, denomLabel: "of engaged", branch: true },
+    { label: "Clicked a form CTA", n: totals.formCta, denom: totals.engaged, denomLabel: "of engaged" },
+    { label: "Started form", n: totals.form, denom: totals.formCta, denomLabel: "of form-CTA" },
+    { label: "Submitted", n: totals.converted, denom: totals.form, denomLabel: "of form starts" },
   ];
 
-  const calcOpportunities = scoreCalculators(calculators);
+  const calcAgg = calculators.reduce(
+    (a, c) => ({ viewed: a.viewed + c.viewed, computed: a.computed + c.computed, leads: a.leads + c.lead_sessions }),
+    { viewed: 0, computed: 0, leads: 0 },
+  );
+  const calcAttention = scoreCalculators(calculators).filter((c) => c.needsAttention).length;
 
-  // ── Section nodes (server-rendered, passed to the client tab switcher) ──
+  // Serializable, admin-only visitor rows for the client filter/table.
+  const visitorRows: VisitorRow[] = visitors.map((v) => {
+    const lead = leadByVisitor.get(v.visitor_id) || null;
+    const entry = v.entry_paths?.[0] || "";
+    const topic = entry ? getTopic(deriveTopic(entry)) : null;
+    return {
+      visitor_id: v.visitor_id,
+      last_seen: v.last_seen,
+      total_sessions: v.total_sessions,
+      page_views: v.page_views,
+      engaged_ms: v.total_engaged_ms || 0,
+      max_scroll_pct: v.max_scroll_pct || 0,
+      cta_clicks: v.cta_clicks || 0,
+      device: v.device_type,
+      country: v.country,
+      source: v.referrer_host || v.utm_source || "direct",
+      topic: topic?.label ?? null,
+      converted: !!(v.converted || lead),
+      lead_name: lead?.full_name ?? null,
+      lead_email: lead?.email ?? null,
+      lead_role: lead?.role ?? null,
+    };
+  });
+
+  // ── Tab section nodes ──
 
   const overviewSection = (
     <div>
-      {/* KPIs */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Kpi label="Visitors" value={String(visitors.length)} sub="most recent 500" />
-        <Kpi label="Sessions" value={String(totals.sessions)} sub={`last ${funnel.length} days`} />
-        <Kpi label="Conversion rate" value={pct(convRate)} sub={`${totals.converted} leads`} />
-        <Kpi label="Avg engaged" value={secs(avgEngaged)} sub="per visitor" />
+        <SnapshotCard label="Sessions / day" value={String(totals.sessions)} sub={`last ${funnelDays} days`} series={sessionsSeries} delta={deltaVsPrior(sessionsSeries)} accent="sky" />
+        <SnapshotCard label="Leads / day" value={String(totals.converted)} sub="conversions" series={leadsSeries} delta={deltaVsPrior(leadsSeries)} accent="emerald" />
+        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${visitors.length} visitors`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
+        <SnapshotCard label="Engaged / day" value={secs(avgEngaged)} sub="avg per visitor" series={engagedSeries} delta={deltaVsPrior(engagedSeries)} accent="slate" />
       </div>
-      <p className="mt-2 text-xs text-slate-500">
-        Visitors = unique people · Sessions = visits (reset after 30 min idle).
-      </p>
 
-      {/* Funnel */}
+      <div className="mt-4 rounded-lg border border-emerald-200 bg-emerald-50/40 px-3 py-2 text-xs text-emerald-900">
+        {experimentOneLiner(personalizationAB)} <span className="text-emerald-700">See the Experiments tab.</span>
+      </div>
+
       <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        A true funnel: each mainline stage is a subset of the one above. <strong>Clicked a form CTA</strong> counts only
+        CTAs that point at the lead form (dismiss/close buttons and tool links don&apos;t count). <strong>Used
+        calculator</strong> is a side-branch off Engaged, not a step toward the form.
+      </p>
       <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <tbody>
-            {stages.map(([label, n], i) => {
-              const prev = i > 0 ? stages[i - 1][1] : n;
-              const rate = prev > 0 ? n / prev : 0;
+            {funnelRows.map((r) => {
+              const rate = r.denom > 0 ? r.n / r.denom : 0;
+              const barPct = totals.sessions > 0 ? (r.n / totals.sessions) * 100 : 0;
               return (
-                <tr key={label} className="border-b border-slate-100 last:border-0">
-                  <td className="px-4 py-2.5 font-semibold text-slate-800">{label}</td>
-                  <td className="px-4 py-2.5 text-right font-mono text-slate-900">{n}</td>
-                  <td className="w-1/3 px-4 py-2.5">
+                <tr key={r.label} className={`border-b border-slate-100 last:border-0 ${r.branch ? "bg-slate-50/60" : ""}`}>
+                  <td className={`px-4 py-2.5 ${r.branch ? "pl-6 font-normal text-slate-500 sm:pl-8" : "font-semibold text-slate-800"}`}>{r.label}</td>
+                  <td className="px-4 py-2.5 text-right font-mono text-slate-900">{r.n}</td>
+                  <td className="hidden w-1/3 px-4 py-2.5 sm:table-cell">
                     <div className="h-2 rounded bg-slate-100">
-                      <div className="h-2 rounded bg-emerald-500" style={{ width: `${stages[0][1] > 0 ? (n / stages[0][1]) * 100 : 0}%` }} />
+                      <div className={`h-2 rounded ${r.branch ? "bg-sky-400" : "bg-emerald-500"}`} style={{ width: `${barPct}%` }} />
                     </div>
                   </td>
-                  <td className="px-4 py-2.5 text-right text-xs text-slate-500">
-                    {i === 0 ? "" : `${(rate * 100).toFixed(0)}% of prev`}
-                  </td>
+                  <td className="px-4 py-2.5 text-right text-xs text-slate-500">{r.denomLabel ? `${(rate * 100).toFixed(0)}% ${r.denomLabel}` : ""}</td>
                 </tr>
               );
             })}
           </tbody>
         </table>
       </div>
-    </div>
-  );
 
-  const acquisitionSection = (
-    <div>
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
+      <div className="mt-8 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-lg font-bold text-slate-900">How people arrive</h2>
-        <Link href={`/admin/analytics/trends?k=${expected}`} className="text-xs text-emerald-700 underline">
-          View trends →
-        </Link>
+        <Link href={`/admin/analytics/trends?${qs}`} className="text-xs text-emerald-700 underline">View trends →</Link>
       </div>
       <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Breakdown title="Traffic source" rows={tally(visitors, "referrer_host")} />
@@ -618,179 +1060,49 @@ export default async function AdminAnalyticsPage({
     </div>
   );
 
+  const visitorsSection = <VisitorsTable rows={visitorRows} adminKey={expected} country={country} />;
+
+  const experimentsSection = (
+    <div className="space-y-8">
+      <PersonalizationABCard ab={personalizationAB} />
+      <ExperimentLedger experiments={experiments} />
+      <OfferPerformancePanel rows={personalization} />
+    </div>
+  );
+
   const behaviourSection = (
     <div className="space-y-8">
-      <CalculatorPanel rows={calcOpportunities} />
-      <PlacementPanel rows={calcPlacement} />
-
-      {/* Visitors */}
-      <div>
-        <h2 className="text-lg font-bold text-slate-900">Visitors</h2>
-        <p className="text-xs text-slate-500">Click any visitor to see everything they did.</p>
-        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-          <table className="w-full text-sm">
-            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-              <tr>
-                <th className="px-3 py-2">Visitor</th>
-                <th className="px-3 py-2">Last seen</th>
-                <th className="px-3 py-2 text-right">Visits</th>
-                <th className="px-3 py-2 text-right">Pages</th>
-                <th className="px-3 py-2 text-right">Engaged</th>
-                <th className="px-3 py-2">Device</th>
-                <th className="px-3 py-2">Country</th>
-                <th className="px-3 py-2">Source</th>
-                <th className="px-3 py-2 text-center">Lead</th>
-              </tr>
-            </thead>
-            <tbody>
-              {visitors.length === 0 ? (
-                <tr><td colSpan={9} className="px-3 py-4 text-center text-slate-400">No visitors yet.</td></tr>
-              ) : (
-                visitors.map((v) => {
-                  const lead = leadByVisitor.get(v.visitor_id);
-                  return (
-                  <tr key={v.visitor_id} className={`border-t border-slate-100 ${v.converted || lead ? "bg-emerald-50/40" : ""}`}>
-                    <td className="px-3 py-2">
-                      <Link href={`/admin/analytics/visitor/${v.visitor_id}?k=${expected}`} className="font-mono text-emerald-700 underline">
-                        {v.visitor_id.slice(0, 14)}…
-                      </Link>
-                    </td>
-                    <td className="px-3 py-2 text-slate-500">{ago(v.last_seen)}</td>
-                    <td className="px-3 py-2 text-right font-mono">{v.total_sessions}</td>
-                    <td className="px-3 py-2 text-right font-mono">{v.page_views}</td>
-                    <td className="px-3 py-2 text-right font-mono">{secs(v.total_engaged_ms || 0)}</td>
-                    <td className="px-3 py-2 text-slate-600">{v.device_type || "—"}</td>
-                    <td className="px-3 py-2 text-slate-600">{v.country || "—"}</td>
-                    <td className="px-3 py-2 text-slate-600">{v.referrer_host || v.utm_source || "direct"}</td>
-                    <td className="px-3 py-2 text-xs text-emerald-800">{lead ? (lead.full_name || lead.email || "✅") : v.converted ? "✅" : ""}</td>
-                  </tr>
-                  );
-                })
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <CalculatorsPanel placement={calcPlacement} agg={calcAgg} attentionCount={calcAttention} computesSeries={computesSeries} />
+      <ContentEngagementPanel rows={sectionActions} />
+      <ErrorsPanel errors={clientErrors} errorsSeries={errorsSeries} friction={uxFriction} />
     </div>
   );
 
   const conversionSection = (
     <div className="space-y-8">
-      {/* Personalisation A/B — front and centre */}
-      <PersonalizationABCard ab={personalizationAB} />
-
-      {/* Excel toolkit (gate) funnel — a key lead surface across placements */}
+      <CtaPerformancePanel rows={ctaPerformance} />
+      <FormDropoffPanel rows={formDropoff} />
       <ResourceGatePanel rows={resourceGate} />
-
-      {/* Offer performance WITHIN the personalised (treatment) arm */}
-      <div>
-        <h2 className="text-lg font-bold text-slate-900">Offer performance (within the personalised arm)</h2>
-        <p className="text-xs text-slate-500">
-          The card above is the actual test: 25% of visitors get the plain generic site (control), 75% get
-          behaviour-matched offers (treatment). This table breaks down what happens <em>inside</em> that 75% — which
-          individual offers earn a click and a lead. It is <strong>not</strong> another A/B: the alternative for every
-          row is the generic site, measured by the card. <strong>Where</strong> = the on-page slot the offer renders in;{" "}
-          <strong>Why it fires</strong> = the behaviour that triggered it.
-        </p>
-        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-          <table className="w-full text-sm">
-            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-              <tr>
-                <th className="px-3 py-2">Offer</th>
-                <th className="px-3 py-2">Where</th>
-                <th className="px-3 py-2">Why it fires</th>
-                <th className="px-3 py-2 text-right">Shown</th>
-                <th className="px-3 py-2 text-right">Clicks</th>
-                <th className="px-3 py-2 text-right">CTR</th>
-                <th className="px-3 py-2 text-right">Shown→Lead</th>
-              </tr>
-            </thead>
-            <tbody>
-              {personalization.length === 0 ? (
-                <tr><td colSpan={7} className="px-3 py-4 text-center text-slate-400">No personalisation data yet (the treatment arm logs these as offers are shown).</td></tr>
-              ) : (
-                personalization.map((p, i) => (
-                  <tr key={`${p.surface}-${p.rule_id}-${p.topic}-${p.variant}-${i}`} className="border-t border-slate-100 align-top">
-                    <td className="px-3 py-2">
-                      <div className="font-medium text-slate-800">{ruleLabel(p.rule_id)}</div>
-                      <div className="text-xs text-slate-500">
-                        “{personalizationHint(p.rule_id, p.topic)}” · {getTopic(p.topic)?.label ?? p.topic}
-                      </div>
-                    </td>
-                    <td className="px-3 py-2 text-slate-600">
-                      <div>{surfaceLabel(p.surface)}</div>
-                      <div className="text-xs text-slate-400">{surfaceWhere(p.surface)}</div>
-                    </td>
-                    <td className="px-3 py-2 text-xs text-slate-500">{ruleTrigger(p.rule_id)}</td>
-                    <td className="px-3 py-2 text-right font-mono">{p.shown}</td>
-                    <td className="px-3 py-2 text-right font-mono">{p.clicked}</td>
-                    <td className="px-3 py-2 text-right">{pct(p.click_rate)}</td>
-                    <td className="px-3 py-2 text-right">{pct(p.shown_to_lead_rate)}</td>
-                  </tr>
-                ))
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* Experiments */}
-      {experiments.length > 0 && (
-        <div>
-          <h2 className="text-lg font-bold text-slate-900">Experiments (A/B ledger)</h2>
-          <p className="text-xs text-slate-500">
-            The raw A/B ledger (directional; significance needs volume). Right now there is a single experiment —{" "}
-            <code className="rounded bg-slate-100 px-1">personalization</code> (on vs off) — so these rows are exactly
-            the control vs treatment in the card above. New experiments added in{" "}
-            <code className="rounded bg-slate-100 px-1">lib/experiments/registry.ts</code> show up here.
-          </p>
-          <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                <tr>
-                  <th className="px-3 py-2">Experiment : variant</th>
-                  <th className="px-3 py-2 text-right">Sessions</th>
-                  <th className="px-3 py-2 text-right">CTA clicks</th>
-                  <th className="px-3 py-2 text-right">Form starts</th>
-                  <th className="px-3 py-2 text-right">Conversion</th>
-                </tr>
-              </thead>
-              <tbody>
-                {experiments.map((x) => (
-                  <tr key={x.exp} className="border-t border-slate-100">
-                    <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
-                    <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
-                    <td className="px-3 py-2 text-right font-mono">{x.cta_clicks}</td>
-                    <td className="px-3 py-2 text-right font-mono">{x.form_starts}</td>
-                    <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
-
-      <Link href={`/admin/analytics/leads?k=${expected}`} className="inline-block text-xs text-emerald-700 underline">
-        View all leads →
-      </Link>
+      <Link href={`/admin/analytics/leads?${qs}`} className="inline-block text-xs text-emerald-700 underline">View all leads →</Link>
     </div>
   );
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10">
+    <div className="mx-auto max-w-6xl px-3 py-6 sm:px-4 sm:py-10">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="text-2xl font-bold text-slate-900">Analytics — {siteKey}</h1>
-        <div className="flex items-center gap-4 text-xs">
-          <Link href={`/admin/analytics/trends?k=${expected}`} className="text-emerald-700 underline">Trends</Link>
-          <Link href={`/admin/analytics/leads?k=${expected}`} className="text-emerald-700 underline">All leads</Link>
+        <h1 className="text-2xl font-bold text-slate-900">Analytics</h1>
+        <div className="flex flex-wrap items-center gap-3 text-xs sm:gap-4">
+          <CountrySelect value={country} options={countryOptions} adminKey={expected} />
+          <Link href={`/admin/analytics/trends?${qs}`} className="text-emerald-700 underline">Trends</Link>
+          <Link href={`/admin/analytics/leads?${qs}`} className="text-emerald-700 underline">All leads</Link>
           <span className="text-slate-500">Human-only · live</span>
         </div>
       </div>
 
       <DashboardTabs
         overview={overviewSection}
-        acquisition={acquisitionSection}
+        visitors={visitorsSection}
+        experiments={experimentsSection}
         behaviour={behaviourSection}
         conversion={conversionSection}
       />

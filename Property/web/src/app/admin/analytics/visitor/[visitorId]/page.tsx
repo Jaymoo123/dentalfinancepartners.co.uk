@@ -133,6 +133,27 @@ export default async function VisitorTimelinePage({
   });
   const maxEng = Math.max(1, ...sessionEngagement);
 
+  // Per-visitor mini-funnel — the same nested-funnel logic as the global view,
+  // for this one person (downstream stage implies all upstream stages).
+  const usedCalc = (counts.get("calc_computed") || 0) > 0;
+  const clickedFormCta = events.some((e) => e.event_name === "cta_click" && e.props?.goal === "form");
+  const startedForm = (counts.get("form_start") || 0) > 0 || (counts.get("form_submit") || 0) > 0;
+  const isConverted = !!lead || !!journey?.converted;
+  const isEngaged = (journey?.total_engaged_ms ?? 0) >= 10000;
+  const fConverted = isConverted;
+  const fFormStart = startedForm || fConverted;
+  const fFormCta = clickedFormCta || fFormStart;
+  const fCalc = usedCalc;
+  const fEngaged = isEngaged || fFormCta || fCalc;
+  const miniFunnel: Array<{ label: string; reached: boolean; branch?: boolean }> = [
+    { label: "Visited", reached: true },
+    { label: "Engaged", reached: fEngaged },
+    { label: "Used calc", reached: fCalc, branch: true },
+    { label: "Form CTA", reached: fFormCta },
+    { label: "Form start", reached: fFormStart },
+    { label: "Submitted", reached: fConverted },
+  ];
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
       <Link href={`/admin/analytics?k=${expected}`} className="text-sm text-emerald-700 underline">← All visitors</Link>
@@ -194,6 +215,31 @@ export default async function VisitorTimelinePage({
             ))}
           </div>
         )}
+      </div>
+
+      {/* Per-visitor funnel — mirrors the global nested funnel for this person */}
+      <div className="mt-3 rounded-xl border border-slate-200 bg-white p-4">
+        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">This visitor&apos;s funnel</h3>
+        <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs">
+          {miniFunnel.map((s, i) => (
+            <span key={s.label} className="flex items-center gap-1.5">
+              {i > 0 && !s.branch && <span className="text-slate-300">→</span>}
+              <span
+                className={`rounded-full px-2.5 py-1 font-semibold ${
+                  s.reached
+                    ? s.branch
+                      ? "bg-sky-100 text-sky-700"
+                      : "bg-emerald-100 text-emerald-800"
+                    : "bg-slate-100 text-slate-400"
+                }`}
+              >
+                {s.branch ? "↳ " : ""}
+                {s.label}
+                {s.reached ? " ✓" : ""}
+              </span>
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Every measure */}

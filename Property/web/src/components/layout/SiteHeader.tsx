@@ -88,6 +88,7 @@ export function SiteHeader() {
             href="/contact"
             data-cta="header_book"
             data-cta-placement="header"
+            data-cta-goal="form"
             className={`${btnPrimary} hidden min-h-10 min-w-0 px-6 py-2 text-sm sm:inline-flex`}
           >
             Book consultation
@@ -167,6 +168,7 @@ export function SiteHeader() {
                 href="/contact"
                 data-cta="header_book_mobile"
                 data-cta-placement="mobile_menu"
+                data-cta-goal="form"
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
               >

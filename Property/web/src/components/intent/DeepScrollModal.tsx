@@ -105,6 +105,7 @@ export function DeepScrollModal() {
           <Link
             href={offer.href}
             data-cta="deep_scroll_modal"
+            data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
             onClick={() => {
               trackPersonalization("clicked", action);
               setOpen(false);

@@ -1,45 +1,51 @@
 "use client";
 
 /**
- * Client tab switcher for the analytics overview. Mirrors VisitorTabs: receives
+ * Client tab switcher for the analytics console. Mirrors VisitorTabs: receives
  * fully server-rendered section nodes and just toggles which one is visible, so
  * no data/PII crosses into the client bundle — only React element trees.
+ *
+ * The tab bar scrolls horizontally on narrow screens (5 tabs never fit at 375px).
  */
 import { useState } from "react";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-type TabKey = "overview" | "acquisition" | "behaviour" | "conversion";
+type TabKey = "overview" | "visitors" | "experiments" | "behaviour" | "conversion";
 
 const TABS: Array<{ key: TabKey; label: string }> = [
   { key: "overview", label: "Overview" },
-  { key: "acquisition", label: "Acquisition" },
+  { key: "visitors", label: "Visitors" },
+  { key: "experiments", label: "Experiments" },
   { key: "behaviour", label: "Behaviour" },
   { key: "conversion", label: "Conversion" },
 ];
 
 export default function DashboardTabs({
   overview,
-  acquisition,
+  visitors,
+  experiments,
   behaviour,
   conversion,
 }: {
   overview: ReactNode;
-  acquisition: ReactNode;
+  visitors: ReactNode;
+  experiments: ReactNode;
   behaviour: ReactNode;
   conversion: ReactNode;
 }) {
   const [tab, setTab] = useState<TabKey>("overview");
   const panels: Record<TabKey, ReactNode> = {
     overview,
-    acquisition,
+    visitors,
+    experiments,
     behaviour,
     conversion,
   };
 
   return (
     <div className="mt-6">
-      <div className="flex flex-wrap items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 p-1 text-sm">
+      <div className="flex flex-nowrap items-center gap-1 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 p-1 text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {TABS.map((t) => (
           <TabButton key={t.key} active={tab === t.key} onClick={() => setTab(t.key)}>
             {t.label}
@@ -66,7 +72,7 @@ function TabButton({
       type="button"
       onClick={onClick}
       className={cn(
-        "rounded-md px-4 py-1.5 font-semibold transition-colors",
+        "shrink-0 whitespace-nowrap rounded-md px-3 py-1.5 font-semibold transition-colors sm:px-4",
         active ? "bg-white text-slate-900 shadow-sm" : "text-slate-500 hover:text-slate-800",
       )}
     >

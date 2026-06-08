@@ -24,31 +24,48 @@ const when = (iso: string) =>
 export default async function LeadsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ k?: string; page?: string }>;
+  searchParams: Promise<{ k?: string; page?: string; country?: string }>;
 }) {
-  const { k, page } = await searchParams;
+  const { k, page, country: countryParam } = await searchParams;
   const expected = process.env.ADMIN_DASHBOARD_KEY;
   if (!expected || k !== expected) notFound();
 
   const siteKey = niche.content_strategy.source_identifier;
+  const country = countryParam || "GB";
+  const countryFilter = country === "ALL" ? undefined : country;
+  const qsBase = `k=${expected}&country=${country}`;
   const pageNum = Math.max(0, parseInt(page || "0", 10) || 0);
-  const [leads, visitors] = await Promise.all([
+  // Fetch visitors across ALL countries so we can read each lead's geo; leads
+  // carry no country of their own (the leads table has no geo column).
+  const [allLeads, visitors] = await Promise.all([
     getLeadsPage(siteKey, pageNum * PAGE, PAGE),
     getTopVisitors(siteKey, 1000),
   ]);
   const jByVisitor = new Map(visitors.map((v) => [v.visitor_id, v] as const));
-  const hasNext = leads.length === PAGE;
+  // Conservative geo filter: hide a lead only when its visitor is positively
+  // known to be from another country. Leads with unknown geo are always shown,
+  // so a real lead is never hidden just because we can't locate it.
+  const leads = countryFilter
+    ? allLeads.filter((l) => {
+        const j = l.visitor_id ? jByVisitor.get(l.visitor_id) : undefined;
+        return !j?.country || j.country === countryFilter;
+      })
+    : allLeads;
+  const hasNext = allLeads.length === PAGE;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10">
       <div className="flex items-baseline justify-between">
         <h1 className="text-2xl font-bold text-slate-900">Leads — {siteKey}</h1>
-        <Link href={`/admin/analytics?k=${expected}`} className="text-sm text-emerald-700 underline">
+        <Link href={`/admin/analytics?${qsBase}`} className="text-sm text-emerald-700 underline">
           ← Overview
         </Link>
       </div>
       <p className="mt-1 text-xs text-slate-500">
         Newest first, {PAGE} per page, enriched with each lead&apos;s journey.
+        {countryFilter
+          ? ` Showing ${countryFilter} + unlocated leads (leads positively from other countries are hidden).`
+          : " Showing all countries."}
       </p>
 
       <div className="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white">
@@ -116,7 +133,7 @@ export default async function LeadsPage({
 
       <div className="mt-4 flex items-center justify-between text-sm">
         {pageNum > 0 ? (
-          <Link href={`/admin/analytics/leads?k=${expected}&page=${pageNum - 1}`} className="text-emerald-700 underline">
+          <Link href={`/admin/analytics/leads?${qsBase}&page=${pageNum - 1}`} className="text-emerald-700 underline">
             ← Newer
           </Link>
         ) : (
@@ -124,7 +141,7 @@ export default async function LeadsPage({
         )}
         <span className="text-xs text-slate-500">Page {pageNum + 1}</span>
         {hasNext ? (
-          <Link href={`/admin/analytics/leads?k=${expected}&page=${pageNum + 1}`} className="text-emerald-700 underline">
+          <Link href={`/admin/analytics/leads?${qsBase}&page=${pageNum + 1}`} className="text-emerald-700 underline">
             Older →
           </Link>
         ) : (

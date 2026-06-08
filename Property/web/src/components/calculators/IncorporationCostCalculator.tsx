@@ -2,9 +2,16 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
+import { PageResultCta } from "@/components/calculators/PageResultCta";
 import { computeIncorporation } from "@/lib/incorporation";
 
-export function IncorporationCostCalculator({ variant = "page" }: { variant?: "page" | "embed" }) {
+export function IncorporationCostCalculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const [propertyValue, setPropertyValue] = useState(300000);
   const [purchasePrice, setPurchasePrice] = useState(200000);
   const [annualRentalIncome, setAnnualRentalIncome] = useState(24000);
@@ -181,7 +188,11 @@ export function IncorporationCostCalculator({ variant = "page" }: { variant?: "p
           </div>
         </div>
       </div>
-      {variant === "embed" && <EmbedCta campaign="incorporation-cost-calculator" />}
+      {variant === "embed" ? (
+        <EmbedCta campaign="incorporation-cost-calculator" />
+      ) : resultCta ? (
+        <PageResultCta campaign="incorporation-cost-calculator" />
+      ) : null}
     </div>
   );
 }

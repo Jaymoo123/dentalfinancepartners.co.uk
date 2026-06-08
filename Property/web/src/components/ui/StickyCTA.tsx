@@ -89,6 +89,7 @@ export function StickyCTA({
             href={ctaHref}
             data-cta="sticky_cta"
             data-cta-placement="sticky"
+            data-cta-goal={ctaHref.startsWith("/contact") ? "form" : undefined}
             onClick={() => action && trackPersonalization("clicked", action)}
             className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
           >

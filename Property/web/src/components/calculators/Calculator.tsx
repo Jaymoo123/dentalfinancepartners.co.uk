@@ -5,6 +5,7 @@ import type { CalcField, CalcValues } from "@/lib/calculators/types";
 import { getGenericTool } from "@/lib/calculators/registry";
 import { Field } from "@/components/calculators/fields/Field";
 import { EmbedCta } from "@/components/embed/EmbedCta";
+import { PageResultCta } from "@/components/calculators/PageResultCta";
 import { track } from "@/lib/analytics/track";
 import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
 
@@ -17,9 +18,11 @@ function defaultValues(fields: CalcField[]): CalcValues {
 export function Calculator({
   slug,
   variant = "page",
+  resultCta = false,
 }: {
   slug: string;
   variant?: "page" | "embed";
+  resultCta?: boolean;
 }) {
   // Resolved synchronously from a static registry, so `tool` is never briefly
   // undefined for a valid slug: it's the same stable reference on every render,
@@ -141,7 +144,11 @@ export function Calculator({
         </div>
       </div>
 
-      {variant === "embed" && <EmbedCta campaign={tool.slug} label={tool.ctaLabel} />}
+      {variant === "embed" ? (
+        <EmbedCta campaign={tool.slug} label={tool.ctaLabel} />
+      ) : resultCta ? (
+        <PageResultCta campaign={tool.slug} label={tool.ctaLabel} />
+      ) : null}
     </div>
   );
 }

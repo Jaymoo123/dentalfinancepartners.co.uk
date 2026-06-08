@@ -560,6 +560,24 @@ export function PremiumCalculator({
           <Workings result={result} />
         </div>
       </div>
+
+      {/* Blog placement: the tool otherwise dead-ends (its only lead path is the
+          email Excel gate placed further down the article). Add a form-bound CTA
+          so a reader who just saw their numbers can go straight to a specialist.
+          data-cta-goal="form" feeds the funnel's form-CTA stage + vw_cta_performance. */}
+      {placement === "blog" && (
+        <div className="border-t border-slate-200 bg-white px-5 py-4 sm:px-7">
+          <a
+            href="/contact"
+            data-cta={`calc_result_${config.id}`}
+            data-cta-placement="calc_result"
+            data-cta-goal="form"
+            className="inline-flex w-full items-center justify-center rounded-lg bg-emerald-600 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-emerald-700"
+          >
+            Get a specialist to check your numbers →
+          </a>
+        </div>
+      )}
     </div>
   );
 }

@@ -46,6 +46,7 @@ export function ReturningBar() {
           <Link
             href={offer.href}
             data-cta="returning_bar"
+            data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
             onClick={() => trackPersonalization("clicked", action)}
             className="rounded bg-white px-3 py-1.5 font-semibold text-emerald-900 hover:bg-emerald-50"
           >

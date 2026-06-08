@@ -2,9 +2,16 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
+import { PageResultCta } from "@/components/calculators/PageResultCta";
 import { computeSection24, type TaxBand } from "@/lib/section24";
 
-export function Section24Calculator({ variant = "page" }: { variant?: "page" | "embed" }) {
+export function Section24Calculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const [rentalIncome, setRentalIncome] = useState(50000);
   const [mortgageInterest, setMortgageInterest] = useState(20000);
   const [otherExpenses, setOtherExpenses] = useState(8000);
@@ -142,7 +149,11 @@ export function Section24Calculator({ variant = "page" }: { variant?: "page" | "
           </div>
         </div>
       </div>
-      {variant === "embed" && <EmbedCta campaign="section-24-calculator" />}
+      {variant === "embed" ? (
+        <EmbedCta campaign="section-24-calculator" />
+      ) : resultCta ? (
+        <PageResultCta campaign="section-24-calculator" />
+      ) : null}
     </div>
   );
 }

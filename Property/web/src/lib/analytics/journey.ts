@@ -51,7 +51,9 @@ export function humanise(e: VisitorEvent): string {
     case "engagement_time":
       return "Engaged";
     case "cta_click":
-      return `Clicked ${quote(str(p.cta_label) || str(p.cta_id)) || "a CTA"}`;
+      return `Clicked ${quote(str(p.cta_label) || str(p.cta_id)) || "a CTA"}${
+        p.goal === "form" ? " (heads to the lead form)" : ""
+      }`;
     case "element_click": {
       const text = str(p.nearest_text).trim();
       if (text) return `Clicked ${quote(text)}`;
@@ -91,6 +93,12 @@ export function humanise(e: VisitorEvent): string {
       return `✅ Converted — submitted ${str(p.form_id) || "the form"}`;
     case "exit_intent_shown":
       return "Was shown an exit-intent offer";
+    case "gate_view":
+      return `Saw the ${str(p.topic) || "download"} gate`;
+    case "resource_unlocked":
+      return `🔓 Unlocked the ${str(p.topic) || "download"} (gave their email)`;
+    case "support_opened":
+      return "Opened the specialist question widget";
     case "personalization_shown":
       return `Shown a ${str(p.label) || ruleLabel(str(p.rule_id))}${p.content ? `: ${quote(p.content)}` : ""}`;
     case "personalization_clicked":
@@ -234,13 +242,16 @@ export function buildStory(events: VisitorEvent[]): StorySession[] {
       for (const e of evts) if (isEngagement(e)) totalEngagedMs += engagedMs(e) || 15000;
     }
 
-    // Opening line: first page_view (or first event) of the session.
+    // Opening line: first page_view (or first event) of the session, with where
+    // they came from (utm source wins; else referrer host; else "direct").
     const firstView = evts.find((e) => e.event_name === "page_view") || evts[0];
     const firstName = str(firstView.props?.page_title) || str(firstView.page_path) || "the site";
+    const src = str(firstView.props?.utm_source) || str(firstView.props?.referrer_host);
+    const from = src ? ` from ${src}` : "";
     lines.push({
       kind: "open",
       ts: firstView.ts,
-      text: `Arrived on ${quote(firstName)} at ${clockTime(firstView.ts)}`,
+      text: `Arrived on ${quote(firstName)}${from} at ${clockTime(firstView.ts)}`,
     });
 
     // Walk events, collapsing engagement runs + personalisation pairs + close noise.
