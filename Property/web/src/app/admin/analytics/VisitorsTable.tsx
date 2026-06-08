@@ -29,7 +29,7 @@ export type VisitorRow = {
 
 function secs(ms: number): string {
   const s = Math.round(ms / 1000);
-  return s < 60 ? `${s}s` : `${Math.floor(s / 60)}m`;
+  return s < 60 ? `${s}s` : `${Math.floor(s / 60)}m ${s % 60}s`;
 }
 function ago(iso: string): string {
   const mins = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
@@ -144,7 +144,7 @@ export default function VisitorsTable({
               <th className="hidden px-3 py-2 sm:table-cell">Topic</th>
               <th className="px-3 py-2">Last seen</th>
               <th className="px-3 py-2 text-right">Visits</th>
-              <th className="hidden px-3 py-2 text-right sm:table-cell">Pages</th>
+              <th className="px-3 py-2 text-right">Pages</th>
               <th className="px-3 py-2 text-right">Engaged</th>
               <th className="hidden px-3 py-2 text-right lg:table-cell">Scroll</th>
               <th className="hidden px-3 py-2 text-right lg:table-cell">CTAs</th>
@@ -173,7 +173,7 @@ export default function VisitorsTable({
                   <td className="hidden px-3 py-2 text-slate-600 sm:table-cell">{v.topic || "—"}</td>
                   <td className="px-3 py-2 text-slate-500">{ago(v.last_seen)}</td>
                   <td className="px-3 py-2 text-right font-mono">{v.total_sessions}</td>
-                  <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{v.page_views}</td>
+                  <td className="px-3 py-2 text-right font-mono">{v.page_views}</td>
                   <td className="px-3 py-2 text-right font-mono">{secs(v.engaged_ms)}</td>
                   <td className="hidden px-3 py-2 text-right font-mono lg:table-cell">{v.max_scroll_pct}%</td>
                   <td className="hidden px-3 py-2 text-right font-mono lg:table-cell">{v.cta_clicks}</td>

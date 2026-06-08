@@ -16,7 +16,7 @@ export const metadata = { robots: { index: false, follow: false } };
 const PAGE = 100;
 const secs = (ms: number) => {
   const s = Math.round((ms || 0) / 1000);
-  return s < 60 ? `${s}s` : `${Math.floor(s / 60)}m`;
+  return s < 60 ? `${s}s` : `${Math.floor(s / 60)}m ${s % 60}s`;
 };
 const when = (iso: string) =>
   new Date(iso).toLocaleString("en-GB", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" });
