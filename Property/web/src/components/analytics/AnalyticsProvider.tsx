@@ -119,6 +119,7 @@ export function AnalyticsProvider({ siteKey, children }: AnalyticsProviderProps)
     if (typeof w.clarity === "function") {
       w.clarity("set", "visitor_id", getVisitorId() || "");
       w.clarity("set", "visit_class", isReturning() ? "returning" : "new");
+      w.clarity("set", "device", deviceType());
       if (topic) w.clarity("set", "topic", topic);
     }
   }, [pathname, granted]);

@@ -87,6 +87,40 @@ function scrubProps(props: EventProps): EventProps {
   return out;
 }
 
+/**
+ * Bridge a few high-signal first-party events into Microsoft Clarity (when it is
+ * loaded — i.e. the visitor hasn't opted out and a project id is set). `event`
+ * surfaces them as Clarity Smart Events (Filters/Dashboard/Copilot); `upgrade`
+ * prioritises the session for replay, which matters at low traffic where
+ * Clarity would otherwise sample away the rare conversion-relevant sessions.
+ * Fired through the global queue init() installs, so it buffers safely and adds
+ * no import/timing coupling.
+ */
+const CLARITY_EVENTS: ReadonlySet<string> = new Set([
+  "calc_computed",
+  "calc_result_viewed",
+  "form_start",
+  "form_submit",
+  "lead_submitted",
+  "resource_unlocked",
+  "rage_click",
+  "exit_intent_shown",
+  "subscribe_submitted",
+  "experiment_action",
+]);
+const CLARITY_UPGRADE: ReadonlySet<string> = new Set([
+  "form_start",
+  "lead_submitted",
+  "rage_click",
+]);
+
+function forwardToClarity(eventName: string): void {
+  const w = window as unknown as { clarity?: (...args: unknown[]) => void };
+  if (typeof w.clarity !== "function") return;
+  if (CLARITY_EVENTS.has(eventName)) w.clarity("event", eventName);
+  if (CLARITY_UPGRADE.has(eventName)) w.clarity("upgrade", eventName);
+}
+
 function currentPath(): { path: string; query: string } {
   if (typeof window === "undefined") return { path: "", query: "" };
   return {
@@ -147,6 +181,7 @@ export function track(eventName: EventName, props: EventProps = {}): void {
   };
 
   queue.push(event);
+  forwardToClarity(eventName);
 
   if (queue.length >= LIMITS.FLUSH_AT_EVENTS) {
     flush();
