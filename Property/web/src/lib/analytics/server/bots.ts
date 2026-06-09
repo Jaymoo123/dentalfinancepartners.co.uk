@@ -52,6 +52,13 @@ export interface BotIdResult {
  * Platform-grade verification via Vercel BotID. Fail-open: any error (not on
  * Vercel, product not enabled, etc.) returns null so the caller falls back to
  * the heuristic. Keeps the hot path safe.
+ *
+ * ⚠️ DO NOT call this on /api/track or any other navigator.sendBeacon endpoint.
+ * sendBeacon cannot carry BotID's client challenge, so checkBotId() returns
+ * isBot=true for EVERY such request — when wired into ingest on 2026-06-08 it
+ * false-flagged 100% of real visitors as bots and blanked the dashboard. Only
+ * use it behind a BotIdClient-instrumented action (e.g. the lead form), where a
+ * real challenge is present and "bot" is meaningful.
  */
 export async function verifyBotId(): Promise<BotIdResult | null> {
   try {

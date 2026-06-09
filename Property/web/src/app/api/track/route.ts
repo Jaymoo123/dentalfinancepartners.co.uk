@@ -4,7 +4,9 @@
  * Browsers sendBeacon() a batch of events here (same-origin, so it works inside
  * embed iframes and dodges most ad-blocker lists). This route:
  *   1. validates the batch (event-name allowlist + size caps),
- *   2. bot-filters server-side (heuristics now; Vercel BotID is a drop-in),
+ *   2. bot-filters server-side (UA heuristic only; Vercel BotID must NOT be
+ *      used here — sendBeacon carries no client challenge so it flags all real
+ *      visitors as bots; see bots.ts),
  *   3. derives country from the edge geo header and NEVER stores raw IP,
  *   4. aggregates the batch into one session upsert + an event insert, and
  *   5. writes via the service role through the ingest_web_events RPC, which
@@ -16,7 +18,7 @@
  */
 import { NextResponse, type NextRequest } from "next/server";
 import { isKnownEvent, INTERACTION_EVENTS, LIMITS } from "@/lib/analytics/types";
-import { detectBot, parseUa, verifyBotId } from "@/lib/analytics/server/bots";
+import { detectBot, parseUa } from "@/lib/analytics/server/bots";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
@@ -184,14 +186,17 @@ export async function POST(request: NextRequest) {
 
   const ua = request.headers.get("user-agent");
   const heuristic = detectBot(ua);
-  // BotID hardens the verdict: it can ADD a flag the UA heuristic missed and
-  // populates botid_verified. Fail-open (null off-Vercel/unconfigured) so the
-  // heuristic alone still governs. Skip the call when the heuristic already
-  // flagged a bot — no need to spend it confirming the obvious.
-  const botid = heuristic.isBot ? null : await verifyBotId();
-  const isBot = heuristic.isBot || botid?.isBot === true;
-  const reason = heuristic.reason ?? (botid?.isBot ? "botid" : null);
-  const botidVerified = botid ? botid.verified : null;
+  // Vercel BotID is intentionally NOT consulted here. /api/track is hit via
+  // navigator.sendBeacon, which carries no BotID client challenge, so a
+  // server-side checkBotId() classifies EVERY such request as a bot
+  // (isBot=true) — it false-flagged 100% of real visitors when wired in on
+  // 2026-06-08 (62 genuine sessions hidden from the dashboard in ~12h). The UA
+  // heuristic alone governs ingest; BotID belongs on a client-instrumented
+  // action (the lead form is the candidate), never on sendBeacon. The daily
+  // Python reclassifier stays the backstop for bots the heuristic misses.
+  const isBot = heuristic.isBot;
+  const reason = heuristic.reason;
+  const botidVerified: boolean | null = null;
   const { uaFamily, osFamily } = parseUa(ua);
   const country = request.headers.get("x-vercel-ip-country"); // edge geo; never raw IP
   const city = request.headers.get("x-vercel-ip-city");
