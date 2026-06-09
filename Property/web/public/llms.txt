@@ -11,6 +11,11 @@ Property Tax Partners is a UK accountancy practice focused exclusively on reside
 - [Capital gains tax on property — complete UK guide](https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk): CGT rates, reliefs, and the 60-day reporting rule for property disposals.
 - [UK property tax rates 2026/27 — reference](https://www.propertytaxpartners.co.uk/property-tax-rates): Every current property tax rate in one place (SDLT/LBTT/LTT, CGT, income tax and Section 24, corporation and dividend tax, allowances, MTD thresholds).
 
+## Original research and data
+Faceless, sourced data built from official open sources. Free to cite with attribution to Property Tax Partners.
+- [UK Landlord Tax Index](https://www.propertytaxpartners.co.uk/research/landlord-tax-index): Monthly buy-to-let limited-company incorporations (Companies House, SIC codes 68100/68201/68209/68320) set against UK house prices (HM Land Registry). As of mid-2026, new SIC-68209 landlord companies were up about 3.5x (around +249%) versus 2016, with roughly 94,000 property companies incorporated across the four codes in the trailing 12 months. Driven by the Section 24 mortgage-interest restriction, which companies are not subject to. Downloadable CSV at /research/landlord-tax-index/data.
+- [Research and data index](https://www.propertytaxpartners.co.uk/research): All Property Tax Partners original data reports.
+
 ## Free calculators and tools
 - [All property tax calculators](https://www.propertytaxpartners.co.uk/calculators): Hub for the five free interactive tools below.
 - [Stamp Duty (SDLT) calculator](https://www.propertytaxpartners.co.uk/calculators/stamp-duty-calculator): SDLT for England & NI, including the 5% additional-dwelling surcharge, first-time-buyer relief, and the 2% non-resident surcharge.

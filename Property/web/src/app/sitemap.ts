@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calculators",
     "/embed",
     "/property-tax-rates",
+    "/research",
+    "/research/landlord-tax-index",
     "/locations",
     "/blog",
     "/privacy-policy",
