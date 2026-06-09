@@ -212,7 +212,12 @@ function ExperimentCard({
   arms: ExperimentArms;
   funnel?: ExperimentFunnelArms;
 }) {
-  if (meta.primary && funnel) return <BuildingBlockCard meta={meta} funnel={funnel} />;
+  // Route on the presence of a primary metric, NOT on whether funnel data has
+  // arrived yet — the building-block card shows its own "awaiting exposure"
+  // empty state, so the 5 CRO tests adopt the new card from day one.
+  if (meta.primary) {
+    return <BuildingBlockCard meta={meta} funnel={funnel ?? { control: null, treatment: null }} />;
+  }
   return <ConversionExperimentCard meta={meta} arms={arms} />;
 }
 
