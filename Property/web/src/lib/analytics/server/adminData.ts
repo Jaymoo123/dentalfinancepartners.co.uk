@@ -399,6 +399,63 @@ export async function getExperimentArms(siteKey: string): Promise<Record<string,
   return out;
 }
 
+export type ExperimentFunnelArm = {
+  /** Distinct sessions that saw the experiment surface (the denominator). */
+  exposed: number;
+  /** Distinct sessions that took the building-block step (the numerator). */
+  acted: number;
+  /** Of acted, how many captured a phone number (lead_form_length guardrail). */
+  acted_with_phone: number;
+  /** Of exposed, how many became a lead (secondary outcome). */
+  converted: number;
+};
+export type ExperimentFunnelArms = {
+  control: ExperimentFunnelArm | null;
+  treatment: ExperimentFunnelArm | null;
+};
+
+type ExperimentFunnelRow = {
+  exp: string;
+  exposed_sessions: number;
+  acted_sessions: number;
+  acted_with_phone_sessions: number;
+  converted_sessions: number;
+};
+
+/**
+ * Building-block funnel per experiment arm (vw_experiment_funnel): exposed →
+ * acted, scoped to the people who actually saw each surface, with conversion as
+ * a secondary outcome. Grouped by key into control/treatment like
+ * getExperimentArms. Experiments with no funnel rows simply return empty arms
+ * (the card then shows the not-enough-data state).
+ */
+export async function getExperimentFunnel(
+  siteKey: string,
+): Promise<Record<string, ExperimentFunnelArms>> {
+  const rows = await rest<ExperimentFunnelRow>("vw_experiment_funnel", {
+    site_key: `eq.${siteKey}`,
+    select: "*",
+    limit: "200",
+  });
+  const out: Record<string, ExperimentFunnelArms> = {};
+  for (const r of rows) {
+    const idx = r.exp.indexOf(":");
+    if (idx < 0) continue;
+    const key = r.exp.slice(0, idx);
+    const variant = r.exp.slice(idx + 1);
+    if (!out[key]) out[key] = { control: null, treatment: null };
+    const arm: ExperimentFunnelArm = {
+      exposed: n(r.exposed_sessions),
+      acted: n(r.acted_sessions),
+      acted_with_phone: n(r.acted_with_phone_sessions),
+      converted: n(r.converted_sessions),
+    };
+    if (variant === "control") out[key].control = arm;
+    else if (variant === "treatment") out[key].treatment = arm;
+  }
+  return out;
+}
+
 export type TimePoint = {
   bucket: string;
   sessions: number;

@@ -8,13 +8,15 @@
  * honeypot-protected, and fully stitched to the first-party journey
  * (visitor_id/session_id) so it fires form_start / form_submit / lead_submitted.
  */
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
 import { useExperiment } from "@/components/experiments/useExperiment";
+import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
+import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 
 type Status = "idle" | "loading" | "success" | "error";
 export type MiniCaptureFields = "email_phone" | "email";
@@ -33,6 +35,8 @@ export function MiniCapture({
   successText = "Thanks. We'll be in touch within 24 hours.",
   fields,
   className = "my-8 rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8",
+  experimentKey,
+  exposeOnView = true,
 }: {
   /** Surface id for analytics (form tracking + GA label), e.g. "calc_result". */
   formId: string;
@@ -47,6 +51,13 @@ export function MiniCapture({
   /** Force the field set; otherwise the lead_form_length experiment decides. */
   fields?: MiniCaptureFields;
   className?: string;
+  /** Parent A/B experiment this capture is the treatment arm of (e.g.
+   *  "calc_result_capture"). Drives experiment_view (on scroll-into-view) +
+   *  experiment_action (on first field focus = engaged the capture). */
+  experimentKey?: string;
+  /** Set false when the parent surface already fires the exposure itself (e.g.
+   *  the exit-intent modal fires it once on open for both arms). */
+  exposeOnView?: boolean;
 }) {
   const lenVariant = useExperiment("lead_form_length");
   const effFields: MiniCaptureFields = fields ?? (lenVariant === "treatment" ? "email" : "email_phone");
@@ -58,6 +69,21 @@ export function MiniCapture({
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
   const ft = useFormTracking(formId);
+
+  // Building-block funnel: exposure on scroll-into-view (the parent surface,
+  // unless it fires its own), and the proximal "engaged the capture" action on
+  // first field focus. The form is itself the lead_form_length surface, so it
+  // also marks that experiment's exposure (started) here + completion on submit.
+  const startedExpRef = useRef(false);
+  const expRef = useInViewOnce<HTMLElement>(() => {
+    if (experimentKey && exposeOnView) trackExperimentView(experimentKey, formId);
+  });
+  const markStarted = useCallback(() => {
+    if (startedExpRef.current) return;
+    startedExpRef.current = true;
+    if (experimentKey) trackExperimentAction(experimentKey, formId);
+    trackExperimentView("lead_form_length", formId); // started a capture
+  }, [experimentKey, formId]);
 
   useEffect(() => {
     if (typeof window !== "undefined") setSourceUrl(window.location.href);
@@ -89,6 +115,7 @@ export function MiniCapture({
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
+    ft.onSubmit(wantPhone ? 2 : 1); // passed validation, about to POST
 
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -124,6 +151,9 @@ export function MiniCapture({
     }
 
     ft.onLead({ source: payload.source, role: formId });
+    // lead_form_length building block: completed the capture. has_phone is the
+    // quality guardrail (email-only treatment captures no callable number).
+    trackExperimentAction("lead_form_length", formId, { has_phone: wantPhone });
 
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -136,7 +166,7 @@ export function MiniCapture({
   }
 
   return (
-    <section className={className} aria-labelledby={`${formId}-heading`}>
+    <section ref={expRef} className={className} aria-labelledby={`${formId}-heading`}>
       <h3 id={`${formId}-heading`} className="text-xl font-bold text-slate-900 sm:text-2xl">
         {heading}
       </h3>
@@ -151,7 +181,10 @@ export function MiniCapture({
           onSubmit={onSubmit}
           onFocusCapture={(e) => {
             const t = e.target as HTMLElement & { name?: string };
-            if (t?.name) ft.onFieldFocus(t.name);
+            if (t?.name) {
+              ft.onFieldFocus(t.name);
+              markStarted();
+            }
           }}
           onBlurCapture={(e) => {
             const t = e.target as HTMLElement & { name?: string; value?: string };

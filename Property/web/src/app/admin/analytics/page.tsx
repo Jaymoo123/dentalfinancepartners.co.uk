@@ -19,6 +19,7 @@ import {
   getPersonalizationResults,
   getExperimentResults,
   getExperimentArms,
+  getExperimentFunnel,
   getCountryOptions,
   getFormFieldDropoff,
   getCtaPerformance,
@@ -37,6 +38,7 @@ import {
   type CalculatorConversionPlacement,
   type ResourceConversion,
   type ExperimentArms,
+  type ExperimentFunnelArms,
   type PersonalizationResult,
   type ExperimentResult,
   type FormFieldDropoff,
@@ -194,8 +196,127 @@ function Detail({
 }
 
 const AB_MIN_SESSIONS = 100;
+const MIN_EXPOSED = 50;
 
-function ExperimentCard({ meta, arms }: { meta: ExperimentMeta; arms: ExperimentArms }) {
+/**
+ * Dispatcher: the 5 CRO tests declare a `primary` building-block metric and are
+ * scored on the exposure-scoped funnel (acted ÷ exposed) with conversion as a
+ * secondary check. Personalisation (no surface exposure) keeps the conversion card.
+ */
+function ExperimentCard({
+  meta,
+  arms,
+  funnel,
+}: {
+  meta: ExperimentMeta;
+  arms: ExperimentArms;
+  funnel?: ExperimentFunnelArms;
+}) {
+  if (meta.primary && funnel) return <BuildingBlockCard meta={meta} funnel={funnel} />;
+  return <ConversionExperimentCard meta={meta} arms={arms} />;
+}
+
+/** Scores a test on the proximal step it actually moves, over only the visitors
+ *  who saw the surface. Leads + (for lead_form_length) callable-lead rate are
+ *  shown as secondary guardrails. */
+function BuildingBlockCard({ meta, funnel }: { meta: ExperimentMeta; funnel: ExperimentFunnelArms }) {
+  const primary = meta.primary!;
+  const { control, treatment } = funnel;
+  const hasBoth = !!control && !!treatment;
+  const cExp = control?.exposed ?? 0;
+  const tExp = treatment?.exposed ?? 0;
+  const cAct = control?.acted ?? 0;
+  const tAct = treatment?.acted ?? 0;
+  const cRate = cExp > 0 ? cAct / cExp : 0;
+  const tRate = tExp > 0 ? tAct / tExp : 0;
+  const enough = hasBoth && cExp >= MIN_EXPOSED && tExp >= MIN_EXPOSED;
+  const relLift = cRate > 0 ? (tRate - cRate) / cRate : null;
+
+  let significant: boolean | null = null;
+  if (hasBoth && cExp > 0 && tExp > 0) {
+    const pPool = (cAct + tAct) / (cExp + tExp);
+    const se = Math.sqrt(pPool * (1 - pPool) * (1 / cExp + 1 / tExp));
+    if (se > 0) significant = Math.abs((tRate - cRate) / se) >= 1.96;
+  }
+
+  const cConv = cExp > 0 ? control!.converted / cExp : null;
+  const tConv = tExp > 0 ? treatment!.converted / tExp : null;
+  const guard = primary.guardrail;
+  const cPhone = guard ? (cAct > 0 ? control!.acted_with_phone / cAct : null) : null;
+  const tPhone = guard ? (tAct > 0 ? treatment!.acted_with_phone / tAct : null) : null;
+
+  let headline: React.ReactNode;
+  let headlineClass = "text-slate-900";
+  if (!hasBoth) {
+    headline = "Waiting for both arms to be seen";
+    headlineClass = "text-slate-500";
+  } else if (!enough) {
+    headline = `Not enough exposure yet, directional only (need ~${MIN_EXPOSED}+ per arm)`;
+    headlineClass = "text-amber-700";
+  } else if (relLift == null) {
+    headline = "Control has no actions yet, lift not computable";
+    headlineClass = "text-slate-500";
+  } else {
+    const sign = relLift >= 0 ? "+" : "";
+    headline = (
+      <>
+        <span className={relLift >= 0 ? "text-emerald-700" : "text-rose-700"}>
+          {sign}
+          {(relLift * 100).toFixed(0)}%
+        </span>{" "}
+        {primary.metricLabel.toLowerCase()} vs control
+      </>
+    );
+  }
+
+  return (
+    <div className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="text-sm font-bold text-emerald-900">{meta.label}</h3>
+        {enough && significant != null && (
+          <span
+            className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${
+              significant ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-600"
+            }`}
+          >
+            {significant ? "Significant (95%)" : "Not yet significant"}
+          </span>
+        )}
+      </div>
+
+      <p className={`mt-1 text-xl font-bold ${headlineClass}`}>{headline}</p>
+      <p className="mt-0.5 text-xs font-medium text-slate-500">
+        {primary.metricLabel}: {primary.actionLabel} ÷ {primary.exposureLabel}
+      </p>
+
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        <div className="rounded-lg border border-slate-200 bg-white p-3">
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Control</div>
+          <div className="mt-1 text-2xl font-bold text-slate-900">{pct(cExp > 0 ? cRate : null)}</div>
+          <div className="mt-0.5 text-xs text-slate-500">{cExp} {primary.exposureLabel} · {cAct} acted</div>
+          <div className="mt-1 text-[11px] text-slate-400">Leads (of exposed): {pct(cConv)}</div>
+          {guard && <div className="mt-0.5 text-[11px] text-slate-400">{guard.label}: {pct(cPhone)}</div>}
+          <div className="mt-1 text-[11px] text-slate-400">{meta.controlDesc}</div>
+        </div>
+        <div className="rounded-lg border border-emerald-300 bg-white p-3">
+          <div className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Treatment</div>
+          <div className="mt-1 text-2xl font-bold text-slate-900">{pct(tExp > 0 ? tRate : null)}</div>
+          <div className="mt-0.5 text-xs text-slate-500">{tExp} {primary.exposureLabel} · {tAct} acted</div>
+          <div className="mt-1 text-[11px] text-slate-400">Leads (of exposed): {pct(tConv)}</div>
+          {guard && <div className="mt-0.5 text-[11px] text-emerald-700/70">{guard.label}: {pct(tPhone)}</div>}
+          <div className="mt-1 text-[11px] text-emerald-700/70">{meta.treatmentDesc}</div>
+        </div>
+      </div>
+
+      <p className="mt-3 text-xs text-slate-500">
+        Building block (more frequent than a lead, so it reads sooner). Leads shown as a secondary check; directional until each arm has ~{MIN_EXPOSED}+ exposures.
+        {enough && significant === false && " The current gap could still be noise."}
+      </p>
+    </div>
+  );
+}
+
+function ConversionExperimentCard({ meta, arms }: { meta: ExperimentMeta; arms: ExperimentArms }) {
   const { control, treatment } = arms;
   const hasBoth = !!control && !!treatment;
   const cRate = control?.conversion_rate ?? 0;
@@ -1179,6 +1300,7 @@ export default async function AdminAnalyticsPage({
     personalization,
     experiments,
     experimentArms,
+    experimentFunnel,
     countryOptions,
     ctaPerformance,
     formDropoff,
@@ -1202,6 +1324,7 @@ export default async function AdminAnalyticsPage({
     getPersonalizationResults(siteKey),
     getExperimentResults(siteKey),
     getExperimentArms(siteKey),
+    getExperimentFunnel(siteKey),
     getCountryOptions(siteKey),
     getCtaPerformance(siteKey, countryFilter),
     getFormFieldDropoff(siteKey, countryFilter),
@@ -1376,6 +1499,7 @@ export default async function AdminAnalyticsPage({
               key={e.key}
               meta={experimentMeta(e.key)}
               arms={experimentArms[e.key] ?? { control: null, treatment: null }}
+              funnel={experimentFunnel[e.key]}
             />
           ))}
         </div>

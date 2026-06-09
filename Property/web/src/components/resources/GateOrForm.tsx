@@ -33,6 +33,7 @@ export function GateOrForm({
     return (
       <MiniCapture
         formId="resource_block"
+        experimentKey="gate_to_form"
         messagePrefix={`[Resource block: ${topic}]`}
         heading={t?.ctaCopy || "Get a free review of your situation"}
         blurb="Skip the spreadsheet. Tell us about your situation and a specialist will review your position and the next sensible step, with no obligation."

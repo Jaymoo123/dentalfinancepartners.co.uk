@@ -46,6 +46,8 @@ export const EVENT_NAMES = [
   "web_vital", // real-user Core Web Vital sample (passive; props: metric/value/rating)
   "subscribe_view", // nurture opt-in form became visible
   "subscribe_submitted", // nurture opt-in succeeded (marketing consent given)
+  "experiment_view", // A/B surface was actually seen (funnel denominator; props: experiment, surface)
+  "experiment_action", // building-block step taken on an A/B surface (funnel numerator; props: experiment, surface, has_phone?)
 ] as const;
 
 export type EventName = (typeof EVENT_NAMES)[number];
@@ -87,6 +89,7 @@ export const INTERACTION_EVENTS: ReadonlySet<string> = new Set([
   "personalization_clicked",
   "support_opened",
   "subscribe_submitted",
+  "experiment_action",
 ]);
 
 /** Free-form, JSON-serialisable event payload. Values are scrubbed of PII. */

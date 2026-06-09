@@ -65,8 +65,28 @@ export const EXPERIMENTS: Experiment[] = [
 /**
  * Human metadata for the Experiments dashboard (the per-experiment A/B ledger).
  * label = what the test is; controlDesc/treatmentDesc = what each arm does.
+ *
+ * `primary` declares the proximal "building block" this test is scored on, read
+ * from vw_experiment_funnel (acted ÷ exposed). Its PRESENCE routes the dashboard
+ * card to the building-block view; its absence (personalization, a whole-
+ * experience test with no single surface) keeps the conversion-only card.
  */
-export type ExperimentMeta = { label: string; controlDesc: string; treatmentDesc: string };
+export type ExperimentPrimary = {
+  /** Headline metric name, e.g. "Engaged the result capture". */
+  metricLabel: string;
+  /** What "exposed" means here, e.g. "saw the result CTA". */
+  exposureLabel: string;
+  /** What "acted" means here, e.g. "started a capture / clicked the CTA". */
+  actionLabel: string;
+  /** Optional quality guardrail (lead_form_length: callable-lead rate). */
+  guardrail?: { label: string };
+};
+export type ExperimentMeta = {
+  label: string;
+  controlDesc: string;
+  treatmentDesc: string;
+  primary?: ExperimentPrimary;
+};
 
 export const EXPERIMENT_META: Record<string, ExperimentMeta> = {
   personalization: {
@@ -78,26 +98,52 @@ export const EXPERIMENT_META: Record<string, ExperimentMeta> = {
     label: "Calculator result capture",
     controlDesc: "Current trailing CTA link to /contact",
     treatmentDesc: "Dramatised result + inline email/phone capture",
+    primary: {
+      metricLabel: "Engaged the result",
+      exposureLabel: "saw the result CTA",
+      actionLabel: "started a capture / clicked the CTA",
+    },
   },
   exit_intent_offer: {
     label: "Exit-intent offer",
     controlDesc: "Current email-only 'free review' modal",
     treatmentDesc: "Topic-aware offer with email + phone capture",
+    primary: {
+      metricLabel: "Engaged the offer",
+      exposureLabel: "shown the modal",
+      actionLabel: "started the form",
+    },
   },
   gate_to_form: {
     label: "Resource block: gate vs form",
     controlDesc: "Email-gated Excel download",
     treatmentDesc: "Topic-aware 'free review' form block",
+    primary: {
+      metricLabel: "Engaged the block",
+      exposureLabel: "saw the block",
+      actionLabel: "started the gate / form",
+    },
   },
   mobile_tool_capture: {
     label: "Mobile tool slot",
     controlDesc: "'Open on desktop' dead-end prompt",
     treatmentDesc: "Capture (send your numbers / we'll call you)",
+    primary: {
+      metricLabel: "Engaged the slot",
+      exposureLabel: "saw the slot",
+      actionLabel: "started the capture",
+    },
   },
   lead_form_length: {
     label: "Capture length",
     controlDesc: "Email + phone + optional note",
     treatmentDesc: "Email only",
+    primary: {
+      metricLabel: "Form completion rate",
+      exposureLabel: "started the form",
+      actionLabel: "completed the form",
+      guardrail: { label: "Callable leads (phone captured)" },
+    },
   },
 };
 

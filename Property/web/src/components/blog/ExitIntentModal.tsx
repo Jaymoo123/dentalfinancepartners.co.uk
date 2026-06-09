@@ -8,7 +8,7 @@
  * offer: control = today's email-only "free review"; treatment = a topic-aware
  * offer with email + phone (MiniCapture). Reach + trigger apply to both arms.
  */
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
@@ -21,6 +21,7 @@ import { setActiveExperiment } from "@/lib/experiments/active";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { MiniCapture } from "@/components/forms/MiniCapture";
+import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -62,9 +63,15 @@ export function ExitIntentModal() {
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
   const ft = useFormTracking("exit_intent_form");
+  const startedExpRef = useRef(false);
 
   useEffect(() => {
-    if (open) track("exit_intent_shown", { topic: topicKey || "" });
+    if (open) {
+      track("exit_intent_shown", { topic: topicKey || "" });
+      // exit_intent_offer exposure, fired once per shown modal for BOTH arms
+      // (the treatment MiniCapture suppresses its own to avoid double-counting).
+      trackExperimentView("exit_intent_offer", "exit_intent");
+    }
   }, [open, topicKey]);
 
   // Arm the trigger (desktop mouseleave OR mobile leave-style scroll), once,
@@ -212,6 +219,8 @@ export function ExitIntentModal() {
         {treatment ? (
           <MiniCapture
             formId="exit_intent"
+            experimentKey="exit_intent_offer"
+            exposeOnView={false}
             messagePrefix={`[Exit intent${topicKey ? ` (${topicKey})` : ""}]`}
             heading={heading}
             blurb="Tell us where to reach you and a specialist will review your position and the next sensible step, with no obligation."
@@ -236,7 +245,13 @@ export function ExitIntentModal() {
                 onSubmit={onSubmit}
                 onFocusCapture={(e) => {
                   const t = e.target;
-                  if (t instanceof HTMLInputElement && t.name) ft.onFieldFocus(t.name);
+                  if (t instanceof HTMLInputElement && t.name) {
+                    ft.onFieldFocus(t.name);
+                    if (!startedExpRef.current) {
+                      startedExpRef.current = true;
+                      trackExperimentAction("exit_intent_offer", "exit_intent"); // engaged the offer
+                    }
+                  }
                 }}
                 onBlurCapture={(e) => {
                   const t = e.target;

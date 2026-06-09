@@ -16,9 +16,13 @@ import { assignVariant } from "@/lib/experiments/assign";
 import { setActiveExperiment } from "@/lib/experiments/active";
 import { MiniCapture } from "@/components/forms/MiniCapture";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
+import { useExperimentInView } from "@/lib/experiments/exposure";
 
 export function MobileToolSlot({ topic, label }: { topic: TopicKey; label: string }) {
   const [variant, setVariant] = useState<string | null>(null);
+  // Control-arm exposure (the dead-end prompt). Treatment is instrumented inside
+  // MiniCapture. Only fires when the prompt actually scrolls into view on mobile.
+  const controlRef = useExperimentInView<HTMLDivElement>("mobile_tool_capture", "mobile_tool");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -35,6 +39,7 @@ export function MobileToolSlot({ topic, label }: { topic: TopicKey; label: strin
     return (
       <MiniCapture
         formId="mobile_tool"
+        experimentKey="mobile_tool_capture"
         messagePrefix={`[Mobile tool: ${topic}]`}
         heading={t?.ctaCopy || `Get your ${label} figure`}
         blurb="Our interactive tool is built for a larger screen. Tell us your numbers and a specialist will send your figure and the next sensible step, with no obligation."
@@ -45,7 +50,7 @@ export function MobileToolSlot({ topic, label }: { topic: TopicKey; label: strin
   }
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-6 text-center text-sm text-slate-600">
+    <div ref={controlRef} className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-6 text-center text-sm text-slate-600">
       Our interactive {label} tool is built for a larger screen. Open this page on a desktop to use it.
     </div>
   );

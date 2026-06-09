@@ -44,6 +44,7 @@ MIGRATIONS = [
     "20260608000006_channel_and_visits_views.sql",
     "20260608000007_nurture_engine.sql",
     "20260608000008_lead_enrichment.sql",
+    "20260609000001_experiment_funnel.sql",
 ]
 
 
