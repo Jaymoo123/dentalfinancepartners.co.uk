@@ -35,6 +35,79 @@ export function clockTime(iso: string): string {
   return new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 }
 
+// --- Core Web Vitals (real-user performance) ---------------------------------
+// web_vital events are passive performance samples (no human action), so they
+// are SUPPRESSED from the story/activity timelines and surfaced as a dedicated
+// "performance they experienced" panel instead. props: metric/value/rating
+// (value is ms for timings; CLS is stored ×1000 so it stays a clean integer).
+
+const VITAL_META: Record<string, { label: string }> = {
+  LCP: { label: "Main content load (LCP)" },
+  INP: { label: "Responsiveness (INP)" },
+  CLS: { label: "Visual stability (CLS)" },
+  FCP: { label: "First paint (FCP)" },
+  TTFB: { label: "Server response (TTFB)" },
+};
+
+const RATING_ORDER: Record<string, number> = { good: 0, "needs-improvement": 1, poor: 2 };
+
+/** Format a stored vital value for humans (CLS is stored ×1000, others are ms). */
+export function formatVital(metric: string, value: number): string {
+  if (metric === "CLS") return (value / 1000).toFixed(2);
+  if (value >= 1000) return `${(value / 1000).toFixed(1)}s`;
+  return `${Math.round(value)}ms`;
+}
+
+export type VitalRow = { metric: string; label: string; display: string; rating: string };
+export type VitalsSummary = {
+  /** Overall plain-English verdict from the worst metric, or null if no samples. */
+  verdict: "Fast" | "OK" | "Slow" | null;
+  rows: VitalRow[];
+  /** How many page loads contributed samples (rough: distinct page_paths seen). */
+  pageLoads: number;
+};
+
+/**
+ * Collapse a visitor's web_vital samples into one row per metric. The WORST
+ * sample wins (the slowest experience is what actually hurts them), and the
+ * overall verdict is driven by the worst rating across all metrics.
+ */
+export function summariseVitals(events: VisitorEvent[]): VitalsSummary {
+  const worst = new Map<string, { value: number; rating: string }>();
+  const pages = new Set<string>();
+  for (const e of events) {
+    if (e.event_name !== "web_vital") continue;
+    const metric = str(e.props?.metric);
+    if (!metric) continue;
+    if (e.page_path) pages.add(e.page_path);
+    const value = Number(e.props?.value ?? 0) || 0;
+    const rating = str(e.props?.rating) || "good";
+    const cur = worst.get(metric);
+    const rank = RATING_ORDER[rating] ?? 0;
+    const curRank = cur ? RATING_ORDER[cur.rating] ?? 0 : -1;
+    if (!cur || rank > curRank || (rank === curRank && value > cur.value)) {
+      worst.set(metric, { value, rating });
+    }
+  }
+  if (worst.size === 0) return { verdict: null, rows: [], pageLoads: 0 };
+
+  let worstRank = 0;
+  const rows: VitalRow[] = [];
+  for (const metric of ["LCP", "INP", "CLS", "FCP", "TTFB"]) {
+    const s = worst.get(metric);
+    if (!s) continue;
+    worstRank = Math.max(worstRank, RATING_ORDER[s.rating] ?? 0);
+    rows.push({
+      metric,
+      label: VITAL_META[metric]?.label || metric,
+      display: formatVital(metric, s.value),
+      rating: s.rating,
+    });
+  }
+  const verdict = worstRank === 0 ? "Fast" : worstRank === 1 ? "OK" : "Slow";
+  return { verdict, rows, pageLoads: Math.max(1, pages.size) };
+}
+
 /**
  * One readable line for a single event. Falls back to a tidied event name so a
  * brand-new event type never renders as a raw key with no context.
@@ -111,6 +184,14 @@ export function humanise(e: VisitorEvent): string {
       return `Clicked ${quote(str(p.nearest_text) || str(p.selector)) || "something"} that did nothing`;
     case "client_error":
       return `Hit a page error${p.message ? `: ${str(p.message)}` : ""}`;
+    case "subscribe_view":
+      return "Saw the newsletter sign-up";
+    case "subscribe_submitted":
+      return "📩 Subscribed to the newsletter (opted in)";
+    case "web_vital":
+      // Normally suppressed from the timelines (shown in the perf panel); this
+      // keeps a sane line if it is ever rendered directly.
+      return `Performance: ${str(p.metric)} ${formatVital(str(p.metric), Number(p.value ?? 0) || 0)} (${str(p.rating) || "good"})`;
     default:
       return prettifyEventName(e.event_name);
   }
@@ -145,6 +226,11 @@ export function buildActivityRows(events: VisitorEvent[]): ActivityRow[] {
   let i = 0;
   while (i < events.length) {
     const e = events[i];
+    if (e.event_name === "web_vital") {
+      // Passive performance sample — surfaced in the dedicated perf panel, not here.
+      i++;
+      continue;
+    }
     if (isEngagement(e)) {
       // Merge the run of consecutive engagement pings.
       let ms = 0;
@@ -259,6 +345,12 @@ export function buildStory(events: VisitorEvent[]): StorySession[] {
     let openedFirst = false;
     while (i < evts.length) {
       const e = evts[i];
+
+      // Passive performance sample — surfaced in the perf panel, never the story.
+      if (e.event_name === "web_vital") {
+        i++;
+        continue;
+      }
 
       // Skip the opening page_view we already used (only the first one).
       if (!openedFirst && e === firstView && e.event_name === "page_view") {
