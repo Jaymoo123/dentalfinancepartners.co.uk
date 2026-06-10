@@ -11,7 +11,8 @@
     "./lib/supabase-client": "./lib/supabase-client.ts",
     "./lib/local-business-schema": "./lib/local-business-schema.ts",
     "./components/ui/layout-utils": "./components/ui/layout-utils.ts",
-    "./lib/niche-config": "./lib/niche-config.ts"
+    "./lib/niche-config": "./lib/niche-config.ts",
+    "./lib/security-headers": "./lib/security-headers.ts"
   },
   "scripts": {
     "test": "vitest run"
