@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "UK tax, structure and finance articles grouped by where you are in the business lifecycle: starting, running, scaling or exiting.",
   alternates: { canonical: `${siteConfig.url}/blog/stage` },
+  robots: { index: false, follow: true },
 };
 
 const STAGES = [
