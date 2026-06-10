@@ -6,6 +6,7 @@ import { CITIES } from "@/app/locations/[slug]/data";
 import { GLOSSARY } from "@/app/glossary/[slug]/data";
 import { GUIDES } from "@/app/guides/[slug]/data";
 import { TEAM } from "@/app/team/[slug]/data";
+import { allTools } from "@/lib/tools/registry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -22,13 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/fundamentals",
     "/calculators",
-    "/calculators/salary-dividend-optimiser",
-    "/calculators/take-home-pay-calculator",
-    "/calculators/employer-ni-calculator",
-    "/calculators/pension-contribution-optimiser",
-    "/calculators/rd-tax-credit-estimator",
-    "/calculators/badr-cgt-calculator",
-    "/calculators/vat-scheme-comparator",
+    ...allTools().map((t) => `/calculators/${t.slug}`),
     "/locations",
     "/glossary",
     "/uk-tax-rates",
