@@ -11,6 +11,13 @@
  *        calc_copy / calc_share all fire from this renderer with the tool slug
  *        and variant carried as props.
  *
+ * RSC BOUNDARY (do not re-learn this per site): `tool` carries a compute
+ * FUNCTION, so a Server Component page must NOT pass it as a prop — React
+ * cannot serialize functions across the server→client boundary and the build
+ * fails at prerender. Server pages pass only the SLUG to a site-local
+ * "use client" wrapper that resolves the tool from the site's own registry
+ * (see generalist `components/tools/CalculatorClient.tsx` for the pattern).
+ *
  * Styling uses canonical CSS tokens (--brand-primary, --ink, etc.) so the
  * component renders correctly across all site brands without per-site forks.
  */

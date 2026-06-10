@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { Calculator as CalcIcon } from "lucide-react";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
-import { Calculator } from "@accounting-network/web-shared/tools/components/Calculator";
+import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
 import Link from "next/link";
 
@@ -86,7 +86,8 @@ export default async function CalculatorPage({
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <Calculator tool={tool} variant="page" />
+            {/* slug only — the function-bearing tool config resolves client-side */}
+            <CalculatorClient slug={slug} variant="page" />
 
             {tool.explainer && (
               <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">

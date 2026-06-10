@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { Calculator } from "@accounting-network/web-shared/tools/components/Calculator";
+import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { EmbedAutoResize } from "@accounting-network/web-shared/tools/embed/EmbedAutoResize";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
 
@@ -26,7 +26,8 @@ export default async function EmbedPage({
   return (
     <div className="p-4" style={{ minHeight: tool.embedHeight }}>
       <EmbedAutoResize messageType="hd-embed-height" />
-      <Calculator tool={tool} variant="embed" />
+      {/* slug only — the function-bearing tool config resolves client-side */}
+      <CalculatorClient slug={slug} variant="embed" />
     </div>
   );
 }
