@@ -125,6 +125,7 @@ export function SiteHeader() {
           <Link
             href="/contact"
             className={`${btnPrimary} hidden min-h-10 px-5 py-2 text-xs sm:inline-flex`}
+            data-cta="header_nav_primary" data-cta-goal="contact" data-cta-placement="header"
           >
             Book a free call
           </Link>
@@ -218,6 +219,7 @@ export function SiteHeader() {
                 href="/contact"
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
+                data-cta="header_mobile_primary" data-cta-goal="contact" data-cta-placement="header_mobile"
               >
                 Book a free call
               </Link>

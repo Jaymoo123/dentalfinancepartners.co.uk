@@ -139,7 +139,7 @@
     ],
     "supabase_table": "blog_topics",
     "site_key": "generalist",
-    "source_identifier": "general"
+    "source_identifier": "generalist"
   },
   "seo": {
     "locale": "en-GB",

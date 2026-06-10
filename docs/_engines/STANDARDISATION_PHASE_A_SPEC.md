@@ -1,5 +1,15 @@
 # Standardisation — Phase A build spec (GAP-7 shared hardening + GAP-1 analytics SDK)
 
+**GAP-1 — ACCEPTED (2026-06-10, manager verification incl. live-store checks) with one locked decision REVISED:**
+
+**D2 REVISED (user-approved 2026-06-10): canonical key is `"generalist"`, not `"general"`.** Live verification surfaced what static checks could not: `web_sessions.site_key` is FK-constrained to the `sites` registry, and `'general'` was not in it — every ingest failed FK (swallowed correctly as 204s). The D2-time premise ("analytics tables are unconstrained text") was the manager's error. Data census was one-sided: `'generalist'` = sites registry + 289 blog_topics rows + optimisation-engine CHECKs + python pipeline constant; `'general'` = leads CHECK + 1 lead row. **The D2 hard gate WORKED**: key frozen before first write meant the FK rejected everything — zero rows ever landed under the wrong key, no split data.
+- Applied: config `site_key`/`source_identifier` → `"generalist"`; track route now reads the key FROM CONFIG (its hardcoded `"general"` literal was itself a PF-07 anti-pattern); migration `20260610000001_add_generalist_to_leads_source.sql` applied to prod via Management API (CHECK gains `'generalist'`, keeps `'general'` transitional per the agency precedent; 1 historical lead row updated — verified `source=generalist count=1`); README updated.
+- **Live Verify results (dev server + prod Supabase, 2026-06-10):** AN-03 ✓ (invented event → 204, zero rows) · AN-06 ✓ (bot UA → `is_bot:true/ua_pattern`; human page_view-only → `human_confirmed:false`; interaction → `true`; all responses identical 204s) · foreign-site-key drop ✓ (`site_key:"property"` batch → no row) · AN-07 ✓ (anon RPC → 42501; nuance: denial comes from table grants, not function-EXECUTE revoke — net protection holds, mechanism differs from migration comment) · AN-08 ✓ (anon SELECT → 42501; partitions verified at migration level) · AN-05 schema-half ✓ (no IP column) · 87/87 unit tests reproduced · generalist tsc/build green post-revision.
+- **DEPLOY GATE (REQUIRED, operator sign-off blocked without it):** the ~5-minute manual browser pass MUST be run before generalist's production deploy — specifically **AN-01's opt-out toggle stopping beacons live**, the only layer that physically proves the consent mechanism works, tied to the open legitimate-interest compliance item. Also in the pass: AN-02 (ids in devtools), AN-04 (pagehide beacon + cold-load first event), AN-05 client-half (scrubProps in a real page), LD-03/LD-05 (real form submit: honeypot + stitched lead). All covered at unit-suite + code-review level; the browser pass is the gate, not a nicety.
+- **PROD TEST ROWS — OPEN CLEANUP ITEM:** verification wrote marked rows to the production store: `web_sessions`/`web_events` with `session_id` matching `s_mgrtest*`, `visitor_id` `v_mgrtest_2026`, `page_path` `/mgr-verify` (site_key `generalist`). Status: **IN PLACE, deliberately retained**. Cleanup trigger: delete during GAP-3 console acceptance (once real traffic exists and the dashboard no longer benefits from known sample rows); SQL: `DELETE FROM web_events WHERE visitor_id = 'v_mgrtest_2026'; DELETE FROM web_sessions WHERE visitor_id = 'v_mgrtest_2026';`. Until then they are filterable by the naming convention.
+
+**GAP-1 ROLLOUT PRECONDITION — ALL FUTURE SITES (record of the corrected premise):** analytics tables are NOT free-text-keyed — `web_sessions.site_key` is **FK-constrained to the `sites` registry**, and the dashboards/engine tables join on the same keyspace. Before ANY site's track route goes live: (1) the site's canonical key MUST have a row in the `sites` registry; (2) the same key MUST pass the `leads.source` CHECK; (3) the key MUST match the keyspace of the site's existing `blog_topics`/engine rows. Verify all three against the LIVE database, not the migration files (the deployed schema can differ — AN-07's grant nuance proved it). This is a known precondition for the Dentists/Medical/Solicitors/digital-agency rollouts, not a discovery to re-make.
+
 **Status:** EXECUTING — both sections APPROVED (ratifications: Vitest; hand-rolled validator conditional on error legibility / zod fallback; SEC-02 documented-exception confirmed original to the frozen standard, verdict capped at partial). D-decisions resolved: D1 opt-out posture ADOPTED (see compliance item below) · D2 canonical key `"general"` — **hard ordering gate: key frozen in config before the track route's first write** · D3 no GA4, first-party only — LOCKED.
 
 ## Execution log
@@ -66,6 +76,29 @@
 - Review items 2 (SEC-02 revisit on rendering-model change) and 3 (legitimate-interest compliance vetting before GAP-1 rollout beyond generalist) remain OPEN on the program board, correctly documented.
 - Generalist audit verdict flips now earned: PF-02 → pass · PF-04 → pass · CT-02 → pass · SEC-02 → documented-exception partial · ED-01 → partial (package-level suite live).
 
+**GAP-7 MERGED to main (2026-06-10).** PR #1 merge-committed; **post-merge CI run on MAIN (27279515850) GREEN end-to-end** — all 6 site builds + web-shared + python (verified on the main ref itself, not assumed from PR-green). Branch `phase-a-analytics-sdk` created off post-merge main for GAP-1. Housekeeping noted for some later CI touch: GitHub deprecation warnings for Node 20 runners on checkout/setup actions (forced to Node 24 from 2026-06-16 — informational, not blocking).
+
+**GAP-1 Stage 1 — DONE (2026-06-10, commit `7851c9a9` on `phase-a-analytics-sdk`).**
+- 29 files created in `packages/web-shared/analytics/*`: types, init, consent, ids, track, autoCapture, visitMemory, experiments/{active,registry,assign}, server/{bots,createTrackHandler}, react/{AnalyticsProvider,ConsentProvider,ConsentBanner,ConsentedScripts,Clarity,WebVitals,GoogleAnalytics,useFormTracking} + index barrel + 55-test suite.
+- Three Property couplings broken: `deriveTopic` via `getSdkConfig()?.deriveTopic`; `readablePageTitle` strips `getSdkConfig()?.siteName`; `noTrackPrefixes` from init/props not hardcoded. Property files copied as source material, never edited.
+- `createTrackHandler` factory adds foreign-site-key drop (`if (site_key !== expectedSiteKey) continue`). `legacyPrefix` one-time migration (consent-denied + visitor_id ONLY; session not migrated). Optional peer deps (@microsoft/clarity, botid, web-vitals) dynamic-import fail-open.
+- 55/55 tests GREEN; all 6 site builds GREEN with SDK present but 0 consumers — **no-accidental-coupling proof confirmed**.
+- Gate 2.8.1 CLOSED (gate in spec §103): autoCapture imports ONLY `./track` + `./types` — verified before lift.
+
+**GAP-1 D2 gate — DONE (2026-06-10, commit `414a4bdc` — standalone commit BEFORE any track route existed).**
+- `generalist/niche.config.json` line 141: `"site_key": "generalist"` → `"site_key": "general"`. Committed before `generalist/web/src/app/api/track/route.ts` existed in the branch. D2 ordering gate satisfied: key frozen before the first row could ever write.
+
+**GAP-1 Stage 2 — DONE (2026-06-10, commit `f4f0d94e` on `phase-a-analytics-sdk`).**
+- Step 1: `.env.local.example` updated — notes SUPABASE_SERVICE_ROLE_KEY serves analytics ingest.
+- Step 2 (layout.tsx): ConsentProvider + AnalyticsProvider (siteKey "general", storagePrefix "hd", posture "opt-out", noTrackPrefixes ["/admin"]) + ConsentedScripts replace old GoogleAnalytics head tag (D3 satisfied — no GA id added).
+- Step 3 (api/track/route.ts): 5-line `createTrackHandler({ siteKey: "general" })` wrapper with SEC-04/SEC-08 comment.
+- Step 4 (LeadForm.tsx): `useFormTracking("lead_form")` wired (LD-02); `company_url` honeypot silent-drop (LD-03); `visitor_id`/`session_id` in payload (LD-05); `onFieldFocus`/`onFieldBlur` on all 5 fields; `onError` per field post-validate; `onSubmit`/`onLead` in submit path; SEC-08 rationale comment.
+- Step 5 (SignupForm.tsx): `subscribe_view` on mount + `subscribe_submitted` after success.
+- Step 6 (CTASection.tsx, SiteHeader.tsx): `data-cta` + `data-cta-goal` + `data-cta-placement` on nav CTA (desktop + mobile) and CTASection primary/secondary links.
+- Build: generalist GREEN; 55/55 SDK tests GREEN.
+- **Static Verify lines passed:** AN-03 (two track() calls, both allowlisted names); AN-05 (no IP column in analytics migrations); AN-09 (gtag pushes outward only, no third-party reads into own tables); PF-07 (only "generalist" literals are valuation type unions, not site_key paths); leads.source CHECK accepts "general" (migration 20260517010000).
+- **Browser-level Verify lines (AN-01/02/04/06/07/08) pending:** require local server + Supabase key. Run before manager acceptance: start `npm run dev --workspace generalist/web`, exercise each Verify line verbatim from §2.6, mark any test rows `closed` in Supabase (do not delete).
+
 ## Per-workstream execution handoffs (Sonnet) — W4b → W1 → W2 → W3, sequential on `phase-a-shared-hardening`
 
 Common rules for every brief: read this spec's workstream section + the cited evidence files FIRST · Property/ is READ-ONLY (no file under `Property/` may change; exceptions need manager approval BEFORE the edit) · one commit per workstream at tested-green (local lint/tsc/test/build for touched sites) · CI green on the PR is part of done · update this spec's execution log in the same commit · STOP conditions are hard stops: report back, do not improvise past them.
@@ -96,7 +129,26 @@ Common rules for every brief: read this spec's workstream section + the cited ev
 - **HARD GATE:** enforcement (wiring `assertFrontmatter` into a site's `blog.ts` and deleting its silent defaults) lands ONLY for sites whose pre-flight is clean. Sites with violations: STOP after the report — backfill is a separate, manager-approved sweep (per-citation judgment rules apply). Do not "fix" content frontmatter yourself.
 - **Acceptance:** suite green · pre-flight reports committed · for each clean site adopted: CT-02 Verify (strip `date` from one post → build fails naming file+field → restore) · adopted sites build green.
 
-**Next after W1–W3:** Section 2 (GAP-1 SDK) handoff — drafted by manager after GAP-7 merges, incorporating the autoCapture import audit (2.8.1).
+### Brief GAP-1 — First-party analytics SDK + generalist composition *(branch `phase-a-analytics-sdk`, off post-GAP-7 main)*
+
+**Gate 2.8.1 CLOSED (manager audit, 2026-06-10):** `Property/web/src/lib/analytics/autoCapture.ts` imports ONLY `./track` and `./types` — no intent coupling, no site strings, no storage keys. Lift verbatim. Three consequences for the build: (a) `client_error` is emitted by autoCapture and MUST be in the shared types allowlist; (b) export `getMaxScrollPct()`/`getEngagedMs()` from the SDK — the Phase B intent engine consumes them (dependency direction: intent reads SDK, never the reverse); (c) CTA classification rides `data-cta`/`data-track`/`data-section` attributes — generalist's components must carry them to be counted (part of Stage 2).
+
+**Two stages, two commits, strictly ordered.**
+
+**Stage 1 — SDK extraction into `packages/web-shared/analytics/*` (no site behaviour changes):**
+- Execute extraction map 2.1 exactly; init contract 2.2 (`storagePrefix` frozen-at-adoption; `legacyPrefix` one-time read-old-write-new for consent-`denied` + visitor id ONLY); track-route factory 2.3 (preserve Property route semantics verbatim + the foreign-site-key drop); optional peer deps 2.4 (`botid`, `@microsoft/clarity`, `web-vitals` — dynamic import, fail-open, consumer builds clean without them).
+- Property files are COPIED as source material, never edited or moved. Property keeps its local SDK copy (known divergence window; do not "tidy" it).
+- Tests per 2.7 at birth (consent posture matrix · id mint/idle-roll/legacyPrefix matrix · scrubProps · sanitiseEvents incl. foreign-key drop · bot fixtures · buildSession aggregation · experiment stamping).
+- **Stage 1 acceptance:** web-shared suite green with the new modules · all 6 site builds green in CI (SDK exists, nothing consumes it yet — proves no accidental coupling).
+- **STOP if:** any lifted module needs an import outside the 2.1 map · the untangle would change any event's semantics or name · Property's current `types.ts` allowlist disagrees with what the dashboard views expect (that's a data-contract question for the manager).
+
+**Stage 2 — generalist composition (per 2.5, decisions already resolved):**
+- **HARD GATE FIRST (D2):** set `content_strategy.site_key: "general"` in `generalist/niche.config.json` and grep the site for any other key literal — this lands BEFORE the track route file exists in the branch. The key is frozen before the first row can ever write.
+- D1: posture `"opt-out"`, documented in the consent init. D3: **no GA id — do not add one**, and delete the local `GoogleAnalytics.tsx` mount in favour of the shared consent-gated components.
+- Steps 1–8 of section 2.5 in order: env contract (+ `.env.local.example` update per PF-05) · layout providers (`siteKey: "general"`, `siteName: "Holloway Davies"`, `storagePrefix: "hd"`, no `legacyPrefix` — no prior keys) · track route wrapper · LeadForm (useFormTracking + `company_url` honeypot + visitor/session stitching) · SignupForm subscribe events · `data-cta` attributes on the primary CTAs so autoCapture classifies them · SEC-08 rationale comments at each write surface · **calculator `calc_*` instrumentation explicitly NOT attempted (GAP-2)**.
+- **Stage 2 acceptance:** the AN-01..09 Verify lines in section 2.6 VERBATIM, plus the riding flips (LD-02/03/05, SEC-08, PF-07 — their Verify lines). Note: browser-level checks write a handful of test rows to the production Supabase (the same way Property's pipeline was validated) — submit test leads with an obvious name and mark them `closed`; do not delete data.
+- **Deployment is OUT OF SCOPE** — local-first; production deploy of generalist needs explicit operator sign-off (estate rule).
+- **STOP if:** the shared `leads.source` CHECK rejects `"general"` (it should not — live generalist leads already use it; verify, don't assume) · any acceptance Verify line fails in a way that implicates Property's reference implementation (report, don't patch Property).
 
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL, frozen — Verify lines are the acceptance criteria here) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` (Part 3 clusters) · repo state as of 2026-06-10 post-Phase-0.
 **Guardrails:** Property is READ-ONLY (its code is lifted as source material, never edited in place — Property *adoption* of shared modules is a separately-approved step). Tag repo before the phase branch. Commit only at tested-green.

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { track } from "@accounting-network/web-shared/analytics/track";
 
 type Variant = "card" | "inline" | "minimal";
 
@@ -30,6 +31,11 @@ export function SignupForm({
   const [error, setError] = useState<string | null>(null);
   const [mode, setMode] = useState<"confirm-required" | "collect-only" | null>(null);
 
+  // AN-05: emit subscribe_view once when the form mounts (impression-level signal)
+  useEffect(() => {
+    track("subscribe_view", { source });
+  }, [source]);
+
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (state === "submitting") return;
@@ -55,6 +61,7 @@ export function SignupForm({
       }
       const j = await res.json().catch(() => ({}));
       setMode(j?.mode === "collect-only" ? "collect-only" : "confirm-required");
+      track("subscribe_submitted", { source });
       setState("ok");
       setEmail("");
     } catch (err) {

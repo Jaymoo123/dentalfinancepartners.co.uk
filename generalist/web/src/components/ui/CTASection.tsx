@@ -38,10 +38,10 @@ export function CTASection({
         {description}
       </p>
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        <Link href={primaryHref} className={`${btnPrimary} w-full min-w-0 sm:w-auto`}>
+        <Link href={primaryHref} className={`${btnPrimary} w-full min-w-0 sm:w-auto`} data-cta="cta_section_primary" data-cta-goal="contact" data-cta-placement="cta_section">
           {primaryLabel}
         </Link>
-        <Link href={secondaryHref} className={`${btnSecondary} w-full min-w-0 sm:w-auto`}>
+        <Link href={secondaryHref} className={`${btnSecondary} w-full min-w-0 sm:w-auto`} data-cta="cta_section_secondary" data-cta-placement="cta_section">
           {secondaryLabel}
         </Link>
       </div>
