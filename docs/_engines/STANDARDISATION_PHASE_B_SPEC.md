@@ -5,6 +5,14 @@
 ## Execution log
 *(appended per cluster, same convention as Phase A)*
 
+**GAP-8 COMPLETE (Sonnet, 2026-06-10)**
+- D1 `79fea93a` — shared schema library (19 parameterised builders, `SiteSchemaOpts`, `ArticleInput`, `BreadcrumbItem`, Property-compat `reviewedBy`/`reviewerCredentials`) + content module (`markdown-utils`, `ReadingProgress`, `TableOfContents`, `buildFeedRoute`, `buildLlmsFullRoute`) + deprecation re-export for `lib/local-business-schema.ts` + gray-matter peer dep. 127 tests green, 0 consumers at commit.
+- D2 `e0cae860` — generalist re-points: adapter `src/lib/schema.ts` (getSiteOpts pre-binding, person builders local, legacy string wrappers preserved); schema/ subdir deleted (22 files); 3 reader apparatus files deleted; 5 consumers re-pointed; feed.xml + llms-full.txt routes use factories. TypeScript clean, build green.
+- D3 (this commit) — RSS + llms-full.txt factories adopted on Dentists/Medical/Solicitors (new routes) + digital-agency (re-pointed). All 4 sites TypeScript clean + build green. 127 tests passing.
+- **Acceptance checks run:** CT-05 grep: only `contact/page.tsx` has inline `"@context"` — pre-existing ContactPage one-off, not changed by GAP-8. CT-04 pending manager review (TOC anchor links, no apparatus markup in source files — source deletion is the proof). JSON-LD regression: no undefined leakage verified by `hasNoUndefined` test helper across all builder types; TypeScript structural check confirms output shapes. RSS/llms: all 5 site builds render the routes (static output verified).
+- **STOP conditions not triggered:** Property builder signatures covered (reviewedBy/reviewerCredentials as optional fields, identical output when absent); no reader-apparatus DOM changes beyond import-path rewrite; no subscriber/webhook code touched; no DB changes.
+- **Next:** GAP-2 tool platform (branch `phase-b-tool-platform`) after this PR merges to main.
+
 **OPERATOR GATE — deploy DONE (operator, 2026-06-10) + AN-01 browser pass PASSED (manager, automated, 2026-06-10).**
 - Deploy happened ahead of the browser pass (gate sequencing inverted by the operator — recorded, no harm: the pass was then run against the LIVE site, which is the stronger test). Live verification first confirmed the deploy carried GAP-1: `/api/track` live (204), old GA tag gone, prod ingest lands rows (Vercel env has the service key), first real `human_confirmed` session at 18:30 UTC.
 - **AN-01 gate executed via real browser engine** (headless system Edge, `scripts/an01_browser_pass.mjs` — reusable per site: `node scripts/an01_browser_pass.mjs <url> <prefix>`): beacons fire on interaction (1+) · ids minted under `hd_` prefix, random-shaped · **consent `denied` → 0 beacons on further interaction, live, no reload** · key cleared → beacons resume (2). ALL GREEN. The compliance-relevant mechanism is physically proven on production.
