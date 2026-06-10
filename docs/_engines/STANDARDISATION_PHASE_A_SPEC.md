@@ -68,6 +68,27 @@
 
 **GAP-7 MERGED to main (2026-06-10).** PR #1 merge-committed; **post-merge CI run on MAIN (27279515850) GREEN end-to-end** — all 6 site builds + web-shared + python (verified on the main ref itself, not assumed from PR-green). Branch `phase-a-analytics-sdk` created off post-merge main for GAP-1. Housekeeping noted for some later CI touch: GitHub deprecation warnings for Node 20 runners on checkout/setup actions (forced to Node 24 from 2026-06-16 — informational, not blocking).
 
+**GAP-1 Stage 1 — DONE (2026-06-10, commit `7851c9a9` on `phase-a-analytics-sdk`).**
+- 29 files created in `packages/web-shared/analytics/*`: types, init, consent, ids, track, autoCapture, visitMemory, experiments/{active,registry,assign}, server/{bots,createTrackHandler}, react/{AnalyticsProvider,ConsentProvider,ConsentBanner,ConsentedScripts,Clarity,WebVitals,GoogleAnalytics,useFormTracking} + index barrel + 55-test suite.
+- Three Property couplings broken: `deriveTopic` via `getSdkConfig()?.deriveTopic`; `readablePageTitle` strips `getSdkConfig()?.siteName`; `noTrackPrefixes` from init/props not hardcoded. Property files copied as source material, never edited.
+- `createTrackHandler` factory adds foreign-site-key drop (`if (site_key !== expectedSiteKey) continue`). `legacyPrefix` one-time migration (consent-denied + visitor_id ONLY; session not migrated). Optional peer deps (@microsoft/clarity, botid, web-vitals) dynamic-import fail-open.
+- 55/55 tests GREEN; all 6 site builds GREEN with SDK present but 0 consumers — **no-accidental-coupling proof confirmed**.
+- Gate 2.8.1 CLOSED (gate in spec §103): autoCapture imports ONLY `./track` + `./types` — verified before lift.
+
+**GAP-1 D2 gate — DONE (2026-06-10, commit `414a4bdc` — standalone commit BEFORE any track route existed).**
+- `generalist/niche.config.json` line 141: `"site_key": "generalist"` → `"site_key": "general"`. Committed before `generalist/web/src/app/api/track/route.ts` existed in the branch. D2 ordering gate satisfied: key frozen before the first row could ever write.
+
+**GAP-1 Stage 2 — DONE (2026-06-10, commit `f4f0d94e` on `phase-a-analytics-sdk`).**
+- Step 1: `.env.local.example` updated — notes SUPABASE_SERVICE_ROLE_KEY serves analytics ingest.
+- Step 2 (layout.tsx): ConsentProvider + AnalyticsProvider (siteKey "general", storagePrefix "hd", posture "opt-out", noTrackPrefixes ["/admin"]) + ConsentedScripts replace old GoogleAnalytics head tag (D3 satisfied — no GA id added).
+- Step 3 (api/track/route.ts): 5-line `createTrackHandler({ siteKey: "general" })` wrapper with SEC-04/SEC-08 comment.
+- Step 4 (LeadForm.tsx): `useFormTracking("lead_form")` wired (LD-02); `company_url` honeypot silent-drop (LD-03); `visitor_id`/`session_id` in payload (LD-05); `onFieldFocus`/`onFieldBlur` on all 5 fields; `onError` per field post-validate; `onSubmit`/`onLead` in submit path; SEC-08 rationale comment.
+- Step 5 (SignupForm.tsx): `subscribe_view` on mount + `subscribe_submitted` after success.
+- Step 6 (CTASection.tsx, SiteHeader.tsx): `data-cta` + `data-cta-goal` + `data-cta-placement` on nav CTA (desktop + mobile) and CTASection primary/secondary links.
+- Build: generalist GREEN; 55/55 SDK tests GREEN.
+- **Static Verify lines passed:** AN-03 (two track() calls, both allowlisted names); AN-05 (no IP column in analytics migrations); AN-09 (gtag pushes outward only, no third-party reads into own tables); PF-07 (only "generalist" literals are valuation type unions, not site_key paths); leads.source CHECK accepts "general" (migration 20260517010000).
+- **Browser-level Verify lines (AN-01/02/04/06/07/08) pending:** require local server + Supabase key. Run before manager acceptance: start `npm run dev --workspace generalist/web`, exercise each Verify line verbatim from §2.6, mark any test rows `closed` in Supabase (do not delete).
+
 ## Per-workstream execution handoffs (Sonnet) — W4b → W1 → W2 → W3, sequential on `phase-a-shared-hardening`
 
 Common rules for every brief: read this spec's workstream section + the cited evidence files FIRST · Property/ is READ-ONLY (no file under `Property/` may change; exceptions need manager approval BEFORE the edit) · one commit per workstream at tested-green (local lint/tsc/test/build for touched sites) · CI green on the PR is part of done · update this spec's execution log in the same commit · STOP conditions are hard stops: report back, do not improvise past them.
