@@ -1,4 +1,4 @@
-name: CI - Build & Lint
+﻿name: CI - Build & Lint
 
 # Workspace-correct CI (Phase A / W4a rewrite, 2026-06-10).
 # This repo is an npm-workspaces monorepo with ONE root package-lock.json.
@@ -13,7 +13,7 @@ name: CI - Build & Lint
 # `npm run test --if-present` is a green no-op until W4b lands suites.
 #
 # Excluded (deliberately): contractors-ir35 (scaffold; empty config, not yet
-# buildable — add a matrix entry when it launches).
+# buildable â€” add a matrix entry when it launches).
 
 on:
   pull_request:
@@ -44,10 +44,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20'
           cache: 'npm'
@@ -81,10 +81,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20'
           cache: 'npm'
@@ -103,10 +103,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
