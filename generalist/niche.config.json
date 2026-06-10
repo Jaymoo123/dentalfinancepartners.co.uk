@@ -138,8 +138,8 @@
       "Director Pay and Dividends"
     ],
     "supabase_table": "blog_topics",
-    "site_key": "general",
-    "source_identifier": "general"
+    "site_key": "generalist",
+    "source_identifier": "generalist"
   },
   "seo": {
     "locale": "en-GB",

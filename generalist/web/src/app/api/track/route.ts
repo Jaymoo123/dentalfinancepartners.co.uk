@@ -9,9 +9,14 @@
  * Always returns 204 so bots get no signal.
  */
 import { createTrackHandler } from "@accounting-network/web-shared/analytics/server/createTrackHandler";
+import { niche } from "@/config/niche-loader";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
 export const dynamic = "force-dynamic";
 
-export const POST = createTrackHandler({ siteKey: "general" });
+// Site key from config, never a literal (PF-07). D2 revised 2026-06-10:
+// canonical key is "generalist" — it is the sites-registry key that
+// web_sessions.site_key is FK-constrained to, and the keyspace of
+// blog_topics + the optimisation-engine tables.
+export const POST = createTrackHandler({ siteKey: niche.content_strategy.site_key });

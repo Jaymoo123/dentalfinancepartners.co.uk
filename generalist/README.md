@@ -1,4 +1,4 @@
-# Holloway Davies
+﻿# Holloway Davies
 
 UK generalist accountancy lead-gen site. ICAEW chartered accountants for limited companies, contractors, sole traders, partnerships and small businesses. National coverage, fixed fees.
 
@@ -8,12 +8,12 @@ Production: https://www.hollowaydavies.co.uk
 
 ```
 generalist/
-├── web/                Next.js 15 App Router site (Vercel deploy root)
-├── pipeline/           Python content + SEO automation (DeepSeek, Supabase, Pexels, IndexNow)
-├── scripts/            One-off Node/Python helpers (brand assets, PDF templates, illustrations)
-├── seo-research/       Keyword + competitor research outputs (CSVs, briefs)
-├── supabase/           Per-niche SQL: newsletter_subscribers, blog_topics_generalist
-└── niche.config.json   Brand, nav, footer, lead form schema (loaded at runtime by web/)
+â”œâ”€â”€ web/                Next.js 15 App Router site (Vercel deploy root)
+â”œâ”€â”€ pipeline/           Python content + SEO automation (DeepSeek, Supabase, Pexels, IndexNow)
+â”œâ”€â”€ scripts/            One-off Node/Python helpers (brand assets, PDF templates, illustrations)
+â”œâ”€â”€ seo-research/       Keyword + competitor research outputs (CSVs, briefs)
+â”œâ”€â”€ supabase/           Per-niche SQL: newsletter_subscribers, blog_topics_generalist
+â””â”€â”€ niche.config.json   Brand, nav, footer, lead form schema (loaded at runtime by web/)
 ```
 
 ## Web app
@@ -27,10 +27,10 @@ npm run build    # production build
 
 Required env vars in `web/.env.local`:
 
-- `NEXT_PUBLIC_SITE_URL` — canonical domain (no trailing slash)
-- `NEXT_PUBLIC_SUPABASE_URL` + `NEXT_PUBLIC_SUPABASE_ANON_KEY` — lead form writes
-- `SUPABASE_SERVICE_ROLE_KEY` — newsletter subscriber writes (server-side only)
-- `RESEND_*` — optional; if absent, newsletter signups are stored as `confirmed` directly
+- `NEXT_PUBLIC_SITE_URL` â€” canonical domain (no trailing slash)
+- `NEXT_PUBLIC_SUPABASE_URL` + `NEXT_PUBLIC_SUPABASE_ANON_KEY` â€” lead form writes
+- `SUPABASE_SERVICE_ROLE_KEY` â€” newsletter subscriber writes (server-side only)
+- `RESEND_*` â€” optional; if absent, newsletter signups are stored as `confirmed` directly
 
 ## Content pipeline
 
@@ -53,7 +53,7 @@ City pages, glossary, guides, industry verticals and comparison pages each have 
 
 ## Lead form
 
-Posts to Supabase `leads` table with `source: "general"`. The leads table has a CHECK constraint that must include `'general'` in its allowlist (see `supabase/` migrations).
+Posts to Supabase `leads` table with `source: "generalist"` (the canonical site key, D2 revised 2026-06-10; legacy `'general'` remains CHECK-valid for in-flight compatibility — see `supabase/migrations/20260610000001`).
 
 ## Deployment
 
