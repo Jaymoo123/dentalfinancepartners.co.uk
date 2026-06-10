@@ -10,7 +10,7 @@ metaDescription: "Step-by-step UK rental income tax calculation for 2026/27: ban
 altText: "UK landlord calculating rental income tax on laptop with property documents and calculator"
 image: ""
 h1: "How Much Tax Do I Pay on UK Rental Income? 2026/27 Calculation Walkthrough"
-summary: "UK rental income tax in 2026/27 is calculated by adding rental profit (before finance costs) to your other income and applying the standard income tax bands of 20%, 40%, and 45%, then deducting a 20% basic-rate credit for residential finance costs under Section 24. The effective rate on rental cash profit varies dramatically with leverage: from around 20% for a cash-buyer basic-rate landlord to over 50% for a heavily-geared higher-rate landlord. This page walks through the calculation step by step with four worked landlord profiles. The wider rate detail is in our income-tax-rates-for-landlords pillar guide."
+summary: "UK rental income tax in 2026/27 is calculated by adding rental profit (before finance costs) to your other income and applying the standard income tax bands of 20%, 40%, and 45%, then deducting a 20% basic-rate credit for residential finance costs under Section 24. Your effective rate on rental cash profit varies dramatically with leverage: from around 20% if you bought in cash and pay basic rate, to over 50% if you are heavily geared and pay higher rate. Four worked profiles take you through the calculation step by step. For the wider rate detail, see our income tax rates for landlords guide."
 schema: ""
 faqs:
   - question: "What rate of tax do I pay on UK rental income in 2026/27?"
@@ -24,28 +24,28 @@ faqs:
   - question: "Does the £1,000 property allowance reduce my tax bill?"
     answer: "Yes, if your gross rental receipts are above £1,000. You can either deduct the £1,000 property allowance (no other expenses allowed) or claim full actual allowable expenses (no £1,000 allowance). Pick whichever produces the lower taxable amount. The allowance wins when actual expenses (other than finance costs, which sit separately under Section 24) are less than £1,000. The allowance is automatic and does not require a return where gross rents are £1,000 or less and there is no other reason to file."
   - question: "How does the Section 24 mortgage interest credit work in the calculation?"
-    answer: "After your full income tax bill is calculated using rental profit before deducting mortgage interest, a credit equal to 20% of residential finance costs is applied. The credit is capped at the lowest of: total finance costs, total property profits for the year, or adjusted total income above the personal allowance (ITTOIA 2005 s.274A). Excess unrelieved finance costs are carried forward to future years. For most landlords with regular income, the cap does not bite and the full 20% credit applies."
+    answer: "After your full income tax bill is calculated using rental profit before deducting mortgage interest, a credit equal to 20% of residential finance costs is applied. The credit is capped at the lowest of: total finance costs, total property profits for the year, or adjusted total income above the personal allowance (ITTOIA 2005 s.274A). Excess unrelieved finance costs are carried forward to future years. If your income is regular, the cap usually does not bite and you get the full 20% credit."
   - question: "Why is my effective rate on rental income higher than 20% or 40% if I have a mortgage?"
-    answer: "Because mortgage interest is not deducted from the rental profit before tax bands are applied. The full rent (less only non-finance expenses) is added to your other income to determine which band you fall in, and the 20% credit on the interest is a flat amount applied later. For a higher-rate landlord, the effective rate on cash profit (rent minus interest minus other expenses) can be 50% or more, because tax is being charged on a notional profit higher than the actual cash profit, with only a 20% credit offsetting the difference."
+    answer: "Because mortgage interest is not deducted from the rental profit before tax bands are applied. The full rent (less only non-finance expenses) is added to your other income to determine which band you fall in, and the 20% credit on the interest is a flat amount applied later. If you pay higher rate, your effective rate on cash profit (rent minus interest minus other expenses) can be 50% or more, because tax is charged on a notional profit higher than the cash you actually keep, with only a 20% credit offsetting the difference."
   - question: "Are CGT and income tax separate when I sell?"
     answer: "Yes. Income tax applies year by year to rental profit. Capital Gains Tax applies on disposal to the gain on sale. CGT rates on residential property are 18% (basic-rate band remaining) and 24% (higher-rate band) since 30 October 2024, with a £3,000 annual exempt amount. CGT must be reported and paid within 60 days of completion through the HMRC UK Property service, separately from income tax. The two taxes are calculated independently."
   - question: "Do I pay income tax on the same income twice if I incorporate?"
-    answer: "Profits taxed inside a limited company at 19-25% corporation tax are then subject to dividend tax on extraction at 10.75% basic, 35.75% higher, or 39.35% additional rate (above the £500 dividend allowance). The combined effective rate on extracted profit (corporation tax plus dividend tax) is typically 28%-48% depending on the landlord's personal band, which can be higher or lower than personal income tax on rental profit depending on leverage. Profits retained inside the company are taxed at corporation tax only (no dividend tax until extraction)."
+    answer: "Profits taxed inside a limited company at 19-25% corporation tax are then subject to dividend tax on extraction at 10.75% basic, 35.75% higher, or 39.35% additional rate (above the £500 dividend allowance). The combined effective rate on extracted profit (corporation tax plus dividend tax) is typically 28%-48% depending on your personal band, which can be higher or lower than personal income tax on rental profit depending on leverage. Profits retained inside the company are taxed at corporation tax only (no dividend tax until extraction)."
   - question: "How is rental income from jointly-owned property taxed?"
     answer: "Property held jointly by spouses or civil partners has a default 50/50 income split for tax (ITA 2007 s.836), regardless of actual beneficial ownership. To override the default with the actual beneficial split (typically to push more rental profit to the lower-earning spouse), you need a declaration of trust and a Form 17 election filed with HMRC within 60 days of signing. Non-spouse joint owners are taxed in proportion to their actual beneficial ownership directly without need for a Form 17 election."
   - question: "When does MTD for ITSA change how I report rental income?"
     answer: "MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000. The threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. For landlords in MTD, the year-end Self Assessment return is replaced by four quarterly digital updates plus a Final Declaration by 31 January after the tax year. The tax calculation is exactly the same as under traditional Self Assessment; only the reporting frequency and software requirements change. Limited companies are outside MTD for ITSA."
   - question: "What's the biggest single lever to reduce my rental income tax bill legally?"
-    answer: "For a higher-rate landlord with a basic-rate or non-taxpayer spouse, a Form 17 election routing rental profit to the lower-earning spouse usually saves £1,500-£3,000 a year with zero ongoing cost. For a higher-rate landlord with material mortgage interest and no spouse to split with, incorporation into a limited company eliminates Section 24 entirely and typically saves £8,000-£15,000 a year, though the SDLT cost of incorporating must be modelled against the recurring saving. Beyond those two structural moves, the largest single year-on-year lever is correct application of the £1,000 property allowance vs actual expenses choice and claiming the full replacement-of-domestic-items relief in furnished lets."
+    answer: "If you pay higher rate and have a basic-rate or non-taxpayer spouse, a Form 17 election routing rental profit to the lower-earning spouse usually saves £1,500-£3,000 a year with zero ongoing cost. If you pay higher rate, carry material mortgage interest, and have no spouse to split with, incorporation into a limited company eliminates Section 24 entirely and typically saves £8,000-£15,000 a year, though you must model the SDLT cost of incorporating against the recurring saving. Beyond those two structural moves, the largest single year-on-year lever is getting the £1,000 property allowance vs actual expenses choice right and claiming the full replacement-of-domestic-items relief on furnished lets."
   - question: "Do I need an accountant to calculate my rental income tax?"
     answer: "For a single mortgage-free property with simple income, DIY filing through the HMRC online portal is reasonable. The HMRC online return handles Section 24 mechanics automatically. Use a specialist if you have three or more leveraged properties, a portfolio approaching the MTD threshold, joint ownership where a Form 17 election is or could be in play, a disposal in the year (60-day CGT computation), or carry-forward unrelieved finance costs accumulating year by year. The fee is typically recouped in tax saved or penalties avoided within the first year."
 ---
 
-<p>UK rental income tax in 2026/27 is calculated by adding rental profit to your other income and applying the standard income tax bands (20%, 40%, 45%), then deducting a 20% basic-rate credit for residential finance costs under Section 24. Mortgage interest is <em>not</em> deducted from rental profit; it sits separately as the credit. This produces the counterintuitive result that the effective rate on rental cash profit can run well above the headline 20% or 40% rate for geared landlords.</p>
+<p>If you let property and pay higher-rate tax with a mortgage on it, the rate you actually pay on the cash you keep is almost certainly not the 40% you would guess. In a heavily geared year it can swallow nearly all of your rental profit. The reason is that your mortgage interest is <em>not</em> deducted from rental profit before the tax bands apply; it sits separately as a 20% credit under Section 24. Tax is charged on a profit figure higher than the cash you really banked, with only a flat 20% credit set against the gap. Four worked landlord profiles below show exactly how that plays out, pound for pound.</p>
 
-<p>This page is the step-by-step calculation walkthrough. The rate detail and pillar policy sits in our <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords 2026/27</a> guide. The Section 24 mechanics in depth are in our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>. The £3,000 CGT annual exempt amount on disposal sits in our <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">CGT AEA guide</a>. Here we focus on the calculation walkthrough with four worked landlord profiles.</p>
+<p>For the full rate detail, see our <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords 2026/27</a> guide; for Section 24 in depth, our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>; and for the £3,000 CGT annual exempt amount when you sell, our <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">CGT AEA guide</a>.</p>
 
-<h2>The Six-Step Calculation</h2>
+<h2>How is tax on rental income worked out, step by step?</h2>
 
 <ol>
 <li><strong>Sum gross rental receipts</strong> across all UK properties (one figure for the whole portfolio).</li>
@@ -56,7 +56,7 @@ faqs:
 <li><strong>Deduct the Section 24 credit</strong>: 20% of residential finance costs, capped at the lowest of finance costs, property profits, or adjusted total income above the personal allowance.</li>
 </ol>
 
-<h2>The 2026/27 Income Tax Bands</h2>
+<h2>What are the 2026/27 income tax bands and rates?</h2>
 
 <table>
 <thead>
@@ -70,7 +70,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The personal allowance tapers at the rate of £1 reduction for every £2 of income above £100,000, fully eliminated by £125,140. Bands have been frozen since 2021/22 and the freeze runs to 2027/28 under current legislation. Separate property income tax rates of <strong>22%, 42%, and 47%</strong> were announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026), taking effect from 6 April 2027; for 2026/27 the rates above apply to property income alongside other income.</p>
+<p>Your personal allowance tapers by £1 for every £2 of income above £100,000, and is gone entirely by £125,140. The bands have been frozen since 2021/22 and the freeze runs to 2027/28 under current legislation. Separate property income tax rates of <strong>22%, 42%, and 47%</strong> were announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026), taking effect from 6 April 2027. For 2026/27, the rates above apply to your property income alongside everything else you earn.</p>
 
 <h2>Worked Example 1: Basic-Rate Cash-Buyer Landlord</h2>
 
@@ -95,7 +95,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Cash-buyer basic-rate landlords face the simplest case: 20% on net rental profit, full stop. Section 24 is irrelevant where there is no mortgage interest.</p>
+<p>If you bought in cash and pay basic rate, this is the simplest case: 20% on net rental profit, full stop. With no mortgage interest, Section 24 never touches you.</p>
 
 <h2>Worked Example 2: Higher-Rate Cash-Buyer Landlord</h2>
 
@@ -115,7 +115,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Higher-rate cash-buyer landlords pay 40% flat on rental profit. The annual difference vs the basic-rate version of the same property is £1,520. This is the simplest illustration of the marginal-rate problem.</p>
+<p>If you pay higher rate but own outright, you pay 40% flat on rental profit. The annual difference against the basic-rate version of the same flat is £1,520 and comes purely from your own marginal rate. This is what your marginal rate alone does, before any mortgage enters the picture.</p>
 
 <h2>Worked Example 3: Basic-Rate Geared Landlord</h2>
 
@@ -139,7 +139,7 @@ faqs:
 </tbody>
 </table>
 
-<p>For a basic-rate landlord, Section 24 produces a neutral 20% effective rate on cash profit: the 20% credit exactly offsets the 20% income tax that would otherwise apply to the interest portion. This is the design intent of the legislation: basic-rate landlords are unaffected.</p>
+<p>While you stay within the basic-rate band, Section 24 leaves you with a neutral 20% effective rate on cash profit: the 20% credit exactly offsets the 20% income tax that would otherwise fall on the interest. That is the design intent of the legislation, so as long as all your income keeps you in the basic-rate band, you are unaffected. The catch is that the £7,600 of rental profit counts towards that band, so a rise in rents or other income can tip you over £50,270 and into David's position.</p>
 
 <h2>Worked Example 4: Higher-Rate Geared Landlord</h2>
 
@@ -160,42 +160,42 @@ faqs:
 </tbody>
 </table>
 
-<p>This is the headline Section 24 problem. The higher-rate landlord on the same cash profit as the basic-rate landlord pays £1,520 more in tax (£1,948 vs £428), an effective rate of 91% on the small cash profit that remained after expenses and interest. The mechanism is that the 40% income tax is charged on the full £7,600 (rent less non-finance expenses) but the credit relief is only 20%, leaving 20% of £5,460 = £1,092 of interest effectively un-relieved at the higher band.</p>
+<p>This is the Section 24 problem that drove the headlines, and if you are geared and pay higher rate, it is your number. On the exact same cash profit as Carla, David pays £1,520 more tax (£1,948 against £428): an effective rate of 91% on the slim cash profit left after expenses and interest. The mechanism is simple once you see it. 40% income tax is charged on the full £7,600 (rent less non-finance expenses), but the credit relieves only 20%, so 20% of £5,460 = £1,092 of your interest goes effectively un-relieved at the higher band.</p>
 
 <aside>
-<p>Higher-rate landlord and the effective rate calculation above looks familiar?</p>
-<p>The example above is not a corner case, it is the standard reality for any higher-rate landlord with material gearing. The structural fix is either Form 17 (if you have a basic-rate spouse) or limited company incorporation (which removes Section 24 entirely). We model both alternatives against your portfolio. Scroll to the form to book a free 20-minute review.</p>
+<p>Does David's effective rate look uncomfortably like your own?</p>
+<p>It is not a corner case. It is the standard reality if you pay higher rate and carry material gearing. The structural fix is either Form 17 (if you have a basic-rate spouse) or limited company incorporation, which removes Section 24 entirely. We model both against your portfolio. Scroll to the form to book a free 20-minute review.</p>
 </aside>
 
-<h2>The £1,000 Property Allowance Choice</h2>
+<h2>Should you take the £1,000 property allowance or claim actual expenses?</h2>
 
-<p>Where gross rental receipts exceed £1,000, you choose between two methods:</p>
+<p>Where your gross rental receipts exceed £1,000, you choose between two methods:</p>
 
 <ul>
 <li><strong>Method A (property allowance):</strong> deduct £1,000 from gross rents, pay tax on the rest, no other expenses allowed.</li>
 <li><strong>Method B (actual expenses):</strong> claim all actual allowable expenses, no £1,000 allowance.</li>
 </ul>
 
-<p>Method A wins when total non-finance expenses are less than £1,000 (rare for landlords with anything more than a single low-maintenance property). Method B wins almost everywhere else. The choice is annual, not permanent, so you can flex year by year. The allowance cannot be combined with Rent a Room relief on the same income.</p>
+<p>Method A wins when your total non-finance expenses come to less than £1,000, which is rare once you own anything beyond a single low-maintenance flat. Method B wins almost everywhere else. The choice is annual rather than permanent, so you can switch year by year as your costs change. You cannot combine the allowance with Rent a Room relief on the same income.</p>
 
-<h2>The Personal Allowance Taper at £100,000</h2>
+<h2>How does the personal allowance taper at £100,000 hit rental income?</h2>
 
-<p>For landlords whose adjusted net income (broadly: total taxable income from all sources) exceeds £100,000, the £12,570 personal allowance starts to taper. The mechanic: £1 of personal allowance is withdrawn for every £2 of adjusted net income above £100,000. By £125,140 the allowance is fully eliminated.</p>
+<p>Once your adjusted net income (broadly, total taxable income from all sources) tops £100,000, your £12,570 personal allowance starts to taper. For every £2 above £100,000 you lose £1 of allowance, and by £125,140 it is gone entirely.</p>
 
-<p>For a landlord whose other income is in the £80,000-£90,000 range, adding rental income can push them into the taper, creating a marginal rate of 60% on that band of income (40% income tax on the £1, plus 40% recovered tax on the £0.50 of personal allowance lost = 60% effective on the marginal pound). This is one of the most punishing zones in the UK tax code for landlords, and pension contributions to keep adjusted net income below £100,000 are often the highest-return planning move.</p>
+<p>If your other income already sits in the £80,000-£90,000 range, adding rental profit can push you into the taper and create a 60% marginal rate on that slice of income (40% income tax on the marginal £1, plus 40% recovered tax on the £0.50 of personal allowance you lose = 60% on the marginal pound). This is one of the most punishing zones in the UK tax code. A pension contribution that keeps your adjusted net income below £100,000 is often the highest-return move you can make.</p>
 
-<h2>Joint-Ownership and Form 17 Income Split</h2>
+<h2>How is rental income taxed on a jointly-owned property?</h2>
 
-<p>Property held jointly by spouses or civil partners has a default 50/50 income split for tax (ITA 2007 s.836), regardless of actual beneficial ownership. To override the default, you need:</p>
+<p>Property held jointly by spouses or civil partners has a default 50/50 income split for tax (ITA 2007 s.836), regardless of who actually owns what. To override the default, you need:</p>
 
 <ol>
 <li>A <strong>declaration of trust</strong> establishing the actual beneficial ownership (e.g. 99/1 in favour of the lower-earning spouse).</li>
 <li><strong>Form 17</strong> filed with HMRC within 60 days of signing, declaring the income split exactly matches the beneficial split.</li>
 </ol>
 
-<p>The election takes effect from the date Form 17 is filed (not retrospectively). For a couple with one higher-rate and one basic-rate spouse, Form 17 typically saves £1,500-£3,000 a year on a modest portfolio at zero ongoing cost. This is the highest-return single tax-planning move available to most landlord couples.</p>
+<p>The election takes effect from the date you file Form 17, not retrospectively. If one of you pays higher rate and the other basic rate, Form 17 typically saves £1,500-£3,000 a year on a modest portfolio at zero ongoing cost. For most landlord couples, it is the single highest-return planning move on the table.</p>
 
-<h2>Adding It Up: Comparing the Four Profiles</h2>
+<h2>How much tax do landlords pay? The four profiles side by side</h2>
 
 <table>
 <thead>
@@ -216,9 +216,9 @@ faqs:
 <p>We produce the four-line calculation above for your actual rents, interest, and personal tax position, plus the side-by-side comparison against the limited-company alternative if it might be relevant. The output is a one-page recommendation. Scroll to the form below to book a fixed-fee review.</p>
 </aside>
 
-<h2>What Counts Towards Other Income</h2>
+<h2>What other income gets added to your rental profit?</h2>
 
-<p>Rental income is added to:</p>
+<p>Your rental income is added to:</p>
 
 <ul>
 <li>Employment income (gross of personal pension contributions, where the contribution is via salary sacrifice or relief-at-source, treatment varies).</li>
@@ -229,11 +229,11 @@ faqs:
 <li>Other untaxed income (cryptoasset profits, hobby income above the £1,000 trading allowance, royalties).</li>
 </ul>
 
-<p>The combined total determines which tax bands apply. Rental profit is treated as "non-savings, non-dividend income" alongside employment and self-employment income, so it sits in the standard ordering at the bottom of the income stack.</p>
+<p>The combined total determines which tax bands apply. Your rental profit is treated as "non-savings, non-dividend income" alongside employment and self-employment income, so it sits in the standard ordering at the bottom of the income stack.</p>
 
-<h2>MTD for ITSA: How the Reporting Changes</h2>
+<h2>Does MTD for ITSA change how much tax you pay?</h2>
 
-<p>The income tax <em>calculation</em> does not change under MTD. What changes is the <em>reporting cycle</em>. From 6 April 2026 sole-trader landlords above £50,000 of qualifying income submit:</p>
+<p>MTD does not change the income tax <em>calculation</em>. It changes the <em>reporting cycle</em>. From 6 April 2026, if you are a sole-trader landlord with qualifying income above £50,000, you submit:</p>
 
 <ul>
 <li>Quarterly digital updates: 7 August (Q1), 7 November (Q2), 7 February (Q3), 7 May (Q4).</li>
@@ -242,18 +242,18 @@ faqs:
 
 <p>The Final Declaration replaces the traditional Self Assessment SA100 for those in MTD. Threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Sign-up checker: <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
-<h2>The Incorporation Alternative</h2>
+<h2>Could a limited company cut your rental income tax?</h2>
 
-<p>For higher-rate landlords with material mortgage interest where the effective rate above is biting, the structural fix is incorporation. A limited company pays corporation tax at 19% on profits up to £50,000, 25% above £250,000, with marginal-relief rates in between, and is not subject to Section 24. The SDLT cost of transferring the existing portfolio (5% additional-dwellings surcharge applied at market value under FA 2003 s.53) is the main offsetting cost, modelled in our <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation guide</a>.</p>
+<p>If you pay higher rate, carry material mortgage interest, and David's effective rate is biting on your portfolio, the structural fix is incorporation. A limited company pays corporation tax at 19% on profits up to £50,000 and 25% above £250,000, with marginal-relief rates in between, and is not subject to Section 24. The main offsetting cost is the SDLT on transferring your existing portfolio (the 5% additional-dwellings surcharge applied at market value under FA 2003 s.53), modelled in our <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation guide</a>.</p>
 
-<h2>Common Mistakes That Inflate the Tax Bill</h2>
+<h2>The mistakes that quietly inflate your rental income tax bill</h2>
 
 <ul>
 <li><strong>Entering mortgage interest in the general expenses box instead of the Section 24 box</strong>, attempting a full deduction that fails compliance checks.</li>
 <li><strong>Claiming capital improvements as repairs</strong>, missing the boundary set out in HMRC's PIM2020.</li>
 <li><strong>Forgetting replacement-of-domestic-items relief</strong> on like-for-like furniture and white goods replacements (ITTOIA 2005 s.311A).</li>
 <li><strong>Using the default 50/50 spousal split when Form 17 would route more profit to a lower-band spouse.</strong></li>
-<li><strong>Ignoring the personal allowance taper</strong> at £100,000, where rental income tips the landlord into the 60% effective marginal zone.</li>
+<li><strong>Ignoring the personal allowance taper</strong> at £100,000, where rental income tips you into the 60% effective marginal zone.</li>
 <li><strong>Not tracking carry-forward of unrelieved finance costs</strong> under ITTOIA 2005 s.274A when the three-way cap on the Section 24 credit bites.</li>
 </ul>
 

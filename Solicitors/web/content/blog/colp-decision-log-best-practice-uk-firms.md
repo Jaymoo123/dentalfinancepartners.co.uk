@@ -11,6 +11,12 @@ altText: "COLP compliance officer reviewing SRA decision log at a UK law firm de
 image: ""
 h1: "How Should a COLP Maintain a Decision Log for SRA Compliance?"
 summary: "A COLP decision log is the backbone of SRA compliance evidence. This guide explains what to record, how often, and what the SRA expects to see during a firm visit. Practical templates and worked examples for UK law firms."
+keyTakeaways:
+  - "A COLP decision log is the primary contemporaneous evidence that the firm considered and resolved compliance issues properly."
+  - "The SRA does not prescribe a format, but each entry needs the date, issue, options considered, decision, rationale and action items."
+  - "Record decisions even where the COLP decides not to report a breach, because that judgement can still be scrutinised later."
+  - "Update the log as decisions are made rather than batching at month-end, and have the management body review it at least quarterly."
+  - "If you have never kept a log, start now and add clearly marked retrospective entries, since the SRA prefers late recording to none."
 schema: ""
 faqs:
   - question: "Does the SRA require a specific format for the COLP decision log?"

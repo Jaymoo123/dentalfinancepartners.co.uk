@@ -1,0 +1,26 @@
+wave: 2
+buckets:
+  A:
+    label: "Bucket A — VAT in a dental practice (HP §6)"
+    picks:
+      - { id: A1, slug: "dental-practice-vat-partial-exemption-input-recovery", label: "Partial exemption: recovering input VAT in a mixed NHS and private dental practice" }
+      - { id: A2, slug: "dental-laboratory-prostheses-vat-treatment-uk", label: "VAT on dental laboratory work, dentures and prostheses" }
+      - { id: A3, slug: "capital-goods-scheme-dental-practice-refurbishment-vat", label: "The capital goods scheme on a dental practice refurbishment or property" }
+      - { id: A4, slug: "dental-practice-vat-deregistration-mostly-nhs", label: "VAT deregistration when a dental practice income becomes mostly exempt" }
+      - { id: A5, slug: "cosmetic-vs-therapeutic-dental-vat-principal-purpose", label: "Cosmetic vs therapeutic: the principal-purpose VAT test for Botox, fillers and whitening" }
+  B:
+    label: "Bucket B — Capital allowances, fit-out and premises (HP §7)"
+    picks:
+      - { id: B1, slug: "dental-surgery-fit-out-capital-allowances-pool-split", label: "Surgery fit-out: splitting capital allowances between the main-rate and special-rate pools" }
+      - { id: B2, slug: "s198-election-dental-practice-purchase-fixtures", label: "The s198 fixtures election on a dental practice purchase, and how to negotiate its value" }
+      - { id: B3, slug: "dental-equipment-finance-lease-vs-buy-capital-allowances", label: "Equipment finance for dentists: lease vs hire purchase vs buy, and the capital allowances" }
+      - { id: B4, slug: "structures-buildings-allowance-dental-practice-premises", label: "Structures and Buildings Allowance on dental practice premises" }
+      - { id: B5, slug: "aia-year-end-timing-dental-equipment-purchase", label: "Timing a year-end equipment purchase to use the Annual Investment Allowance" }
+  C:
+    label: "Bucket C — NHS pension depth for high earners (HP §2)"
+    picks:
+      - { id: C1, slug: "nhs-pension-scheme-pays-election-dentists", label: "Scheme Pays for dentists: settling an annual allowance charge from the NHS pension" }
+      - { id: C2, slug: "incorporated-dental-principal-nhs-pension-pensionability", label: "Can an incorporated dental principal still pension NHS-derived profit?" }
+      - { id: C3, slug: "nhs-pension-annual-allowance-nhs-plus-private-sipp-aggregation", label: "Modelling your annual allowance across NHS pension growth and a private SIPP" }
+      - { id: C4, slug: "nhs-pension-partial-retirement-dentists-tax", label: "Partial retirement: drawing your NHS pension while still working as a dentist" }
+      - { id: C5, slug: "taking-nhs-pension-early-dentists-tax-impact", label: "Taking the NHS pension early: the actuarial reduction and the tax impact for dentists" }

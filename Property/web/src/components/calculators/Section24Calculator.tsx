@@ -1,30 +1,27 @@
 "use client";
 
 import { useState } from "react";
+import { EmbedCta } from "@/components/embed/EmbedCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
+import { computeSection24, type TaxBand } from "@/lib/section24";
 
-export function Section24Calculator() {
+export function Section24Calculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const [rentalIncome, setRentalIncome] = useState(50000);
   const [mortgageInterest, setMortgageInterest] = useState(20000);
   const [otherExpenses, setOtherExpenses] = useState(8000);
-  const [taxBand, setTaxBand] = useState<"basic" | "higher" | "additional">("higher");
+  const [taxBand, setTaxBand] = useState<TaxBand>("higher");
 
-  const taxRates = {
-    basic: 0.20,
-    higher: 0.40,
-    additional: 0.45,
-  };
-
-  const netProfit = rentalIncome - otherExpenses;
-  const taxableProfit = netProfit - mortgageInterest;
-  
-  const oldSystemTax = taxableProfit * taxRates[taxBand];
-  
-  const section24TaxableProfit = netProfit;
-  const section24TaxBeforeCredit = section24TaxableProfit * taxRates[taxBand];
-  const section24TaxCredit = mortgageInterest * 0.20;
-  const section24Tax = section24TaxBeforeCredit - section24TaxCredit;
-  
-  const extraTax = section24Tax - oldSystemTax;
+  // Single source of truth for the math (shared with the premium tool + xlsx).
+  const r = computeSection24({ rentalIncome, mortgageInterest, otherExpenses, taxBand });
+  const oldSystemTax = r.oldSystemTax;
+  const section24Tax = r.s24Tax;
+  const extraTax = r.extraTax;
   const extraTaxPerMonth = extraTax / 12;
 
   return (
@@ -152,6 +149,11 @@ export function Section24Calculator() {
           </div>
         </div>
       </div>
+      {variant === "embed" ? (
+        <EmbedCta campaign="section-24-calculator" />
+      ) : resultCta ? (
+        <CalcResultCta campaign="section-24-calculator" />
+      ) : null}
     </div>
   );
 }

@@ -41,6 +41,7 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import json
 import pathlib
 import sys
 import time
@@ -50,7 +51,31 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from optimisation_engine.competitor._db import _sql
 
-BLOG = pathlib.Path("Property/web/content/blog")
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+
+
+def _arg_site() -> str:
+    """--site <key> selects which site's corpus + GSC/monitored rows to read
+    (default property for back-compat). Resolved at import time so BLOG/SITE are
+    module-level, matching scripts/track2_link_audit.py + scripts/predeploy_gate.py."""
+    if "--site" in sys.argv:
+        i = sys.argv.index("--site")
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    return "property"
+
+
+def _blog_dir(site: str) -> pathlib.Path:
+    """Resolve the site's blog content dir from sites/<site>.json (default Property)."""
+    p = ROOT / "sites" / f"{site}.json"
+    if p.exists():
+        cfg = json.loads(p.read_text(encoding="utf-8"))
+        return ROOT / cfg["paths"]["blogContentDir"]
+    return ROOT / "Property/web/content/blog"
+
+
+SITE = _arg_site()
+BLOG = _blog_dir(SITE)
 SUSTAIN_FLOOR = 50        # spike-discounted impressions below which a page is not a protected asset
                           # (kept permissive so marginal pages still collapse - micro-optimisation)
 MIN_WEEKS = 3             # must appear in >= this many distinct weeks to count as a sustained ranker
@@ -74,7 +99,7 @@ def gsc(slug: str) -> dict:
         SELECT page_url, date_trunc('week', date)::date AS wk,
                SUM(impressions) AS impr, SUM(clicks) AS clk, SUM(position*impressions) AS pw
         FROM gsc_query_data
-        WHERE site_key='property'
+        WHERE site_key='{SITE}'
           AND (page_url ILIKE '%/{slug}' OR page_url ILIKE '%/{slug}/')
           AND date > now() - interval '90 days'
         GROUP BY page_url, wk;
@@ -110,7 +135,7 @@ def monitored(slug: str):
     """Active monitored-page status + days since rewrite (None if not monitored)."""
     rows = _sql_retry(f"""
         SELECT rewrite_date, monitor_until, rewrite_type, status
-        FROM monitored_pages WHERE site_key='property' AND slug='{slug}' LIMIT 1;
+        FROM monitored_pages WHERE site_key='{SITE}' AND slug='{slug}' LIMIT 1;
     """)
     if not rows:
         return None
@@ -199,6 +224,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Block reversed-equity / mid-recovery redirect collapses.")
     ap.add_argument("--source", required=True, help="slug being collapsed away")
     ap.add_argument("--canonical", required=True, help="slug it would 301 into")
+    ap.add_argument("--site", default="property",
+                    help="site_key + corpus (resolved at import via sites/<site>.json; default property)")
     a = ap.parse_args()
 
     src, can = enrich(a.source), enrich(a.canonical)

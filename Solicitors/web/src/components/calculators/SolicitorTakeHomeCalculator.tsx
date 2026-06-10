@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const PERSONAL_ALLOWANCE = 12570;
@@ -153,7 +154,7 @@ export function SolicitorTakeHomeCalculator() {
           The headline tax efficiency of Ltd over partnership/LLP is smaller than commonly believed at 2025/26 rates. The real reasons to incorporate (retained earnings for reinvestment, multiple shareholders, share-sale-friendly future exit, BADR on shares) usually outweigh the headline tax saving — which itself is modest.
         </p>
         <p className="mt-3">
-          For senior solicitors making the equity-vs-fee-share decision, see the <a href="/solicitor-guides/fee-share-vs-equity-partner" className="text-[var(--primary)] underline">fee-share vs equity partner</a> pillar guide.
+          For senior solicitors making the equity-vs-fee-share decision, see the <Link href="/solicitor-guides/fee-share-vs-equity-partner" className="text-[var(--primary)] underline">fee-share vs equity partner</Link> pillar guide.
         </p>
       </div>
     </div>

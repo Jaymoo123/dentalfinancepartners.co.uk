@@ -11,6 +11,12 @@ altText: "Conveyancing solicitor reviewing financial controls and client account
 image: ""
 h1: "How Does a Conveyancing Solicitor Build Financial Controls for Undertaking Risk and Exchange?"
 summary: "A practical guide for conveyancing solicitors on building financial controls to manage undertaking risk, exchange controls, and completion handling within a law firm. Covers SRA Accounts Rules compliance, client account reconciliation, and practical workflows to reduce error and fraud."
+keyTakeaways:
+  - "Conveyancing financial controls sit in three layers (preventive, detective, corrective) across undertakings, exchange, and completion."
+  - "Record every undertaking in a single firm-wide register, ban oral undertakings, and require dual authority for sums over £50,000 or any lender undertaking."
+  - "Never exchange or complete on unverified funds: require cleared deposit money in the client account before exchange."
+  - "Rule 8.3 sets a five-weekly reconciliation minimum, but high-volume conveyancing firms should reconcile weekly or daily using bank feeds."
+  - "Require dual authority for any CHAPS payment over £10,000 as a basic fraud and misdirection control."
 schema: ""
 faqs:
   - question: "What is the most common undertaking risk in conveyancing?"

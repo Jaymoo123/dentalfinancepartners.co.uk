@@ -10,6 +10,12 @@ metaDescription: "How UK LLPs tax non-UK-resident members 2025/26. UK source pro
 altText: "Non-UK-resident member reviewing UK LLP tax obligations"
 h1: "UK LLP Tax for Non-Resident Members 2025/26"
 summary: "Non-UK-resident members of UK LLPs are taxed in the UK on their share of UK-source partnership profit. Double tax treaty relief usually prevents double taxation. The LLP files SA800 covering all members; each non-resident member files a non-resident SA showing their UK-taxed share."
+keyTakeaways:
+  - "Non-UK-resident LLP members are UK-taxed only on their share of UK-source partnership profit, not on non-UK-source work."
+  - "The LLP stays tax-transparent and files one SA800; each non-resident member then files a personal SA with SA104S and SA109."
+  - "Double tax treaty relief, by exemption or credit, usually prevents the same profit being taxed in two countries."
+  - "If a non-resident member habitually concludes contracts abroad, the LLP risks a permanent establishment and local corporate tax."
+  - "Non-residents are typically exempt from UK Class 4 NI on their UK-source profit, subject to a specific claim on the non-resident SA."
 faqs:
   - question: "Are non-UK-resident members of a UK LLP taxed in the UK?"
     answer: "Yes, on their share of UK-source partnership profit. The LLP itself remains tax-transparent — each member is taxed personally on their share. For a non-UK-resident member, the UK taxing right covers profit arising from UK-source activities (UK clients, UK matters, UK property work, etc.). Income from non-UK clients on non-UK matters typically isn't UK-taxed in the hands of a non-resident member. The split depends on the LLP's specific work and the non-resident's domicile status."

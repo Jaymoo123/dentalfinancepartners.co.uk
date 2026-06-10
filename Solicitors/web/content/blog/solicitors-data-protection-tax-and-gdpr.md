@@ -11,6 +11,12 @@ altText: "Solicitor reviewing GDPR data protection documents in a law firm offic
 image: ""
 h1: "Can a Law Firm Claim Tax Relief on GDPR Compliance Costs?"
 summary: "GDPR compliance costs are generally tax-deductible for law firms as a trade expense, but the treatment depends on whether the cost is revenue or capital in nature. We explain the distinction for solicitors and what records a COFA should keep."
+keyTakeaways:
+  - "GDPR training, software subscriptions, data audits, and policy drafting are revenue expenses, fully deductible in the year incurred."
+  - "IT hardware bought for GDPR compliance is capital, claimed via capital allowances at 18% or 6%, or in full through the AIA up to £1 million."
+  - "ICO fines for data breaches are never deductible, but remedial costs such as a cybersecurity consultant generally are."
+  - "An external DPO service fee is fully deductible revenue expenditure; an internal DPO or COFA salary is already a trade expense."
+  - "The COFA should keep itemised invoices, contracts, and capital expenditure records to support every deduction against HMRC challenge."
 schema: ""
 faqs:
   - question: "Can a law firm claim tax relief on GDPR training for solicitors?"

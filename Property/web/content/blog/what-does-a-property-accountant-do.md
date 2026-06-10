@@ -59,6 +59,8 @@ faqs:
 
 <p>A property accountant handles the tax and accounting work that arises from owning, letting and eventually disposing of UK property. The work overlaps with general accountancy but the technical depth on property-specific rules (Section 24, SDLT including the 5% additional dwellings surcharge, the 60-day CGT regime, MTD for Income Tax, ATED, section 162 incorporation relief) is what distinguishes a specialist from a generalist.</p>
 
+<p>If you are ready to engage one rather than read about the role, see our main <a href="/">property accountants</a> page for UK-wide Section 24, MTD, and incorporation advice.</p>
+
 <p>This page sets out what the work actually involves, the deliverables in a typical engagement, when professional input adds real value, and how to evaluate options.</p>
 
 <h2>The core deliverables</h2>

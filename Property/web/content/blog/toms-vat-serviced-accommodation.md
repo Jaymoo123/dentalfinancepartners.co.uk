@@ -51,20 +51,18 @@ reviewedAt: "2026-05-22"
 editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question for serviced-accommodation businesses. The 2024 Upper Tribunal reversal materially narrowed TOMS-eligibility for the dominant long-lease-and-short-let model."
 ---
 
-<p>The Tour Operators' Margin Scheme has been a structural pillar of how serviced-accommodation operators in the UK manage VAT for at least a decade. By taxing the operator's margin rather than the full sale price, TOMS could turn a £1.2m gross-revenue business into a £300,000 VATable turnover for registration and output-tax purposes. For operators with thin margins, the difference between paying 20% VAT on the margin and 20% VAT on the gross was the difference between a viable business and a loss-making one.</p>
+<p>If you run a serviced-accommodation business, VAT is usually the single largest tax line in your P&L, and the Tour Operators' Margin Scheme is what has kept it manageable for a decade. By taxing your margin rather than your full sale price, TOMS could turn a £1.2m gross-revenue business into a £300,000 VATable turnover for registration and output-tax purposes. On thin margins, the difference between paying 20% VAT on the margin and 20% VAT on the gross is the difference between a viable business and a loss-making one.</p>
 
-<p>In March 2024, the Upper Tribunal in Sonder Europe Ltd v HMRC reversed the First-tier Tribunal and held that the most common operating model (taking long leases from residential landlords, furnishing and branding the units, and on-selling short-stay nights to travellers) does not qualify for TOMS. The decision did not abolish TOMS for serviced accommodation, but it narrowed it sharply: only operators that genuinely buy in and on-sell short-stay room nights without material alteration remain within the scheme.</p>
-
-<p>This page covers what TOMS is, the operating-model test the Upper Tribunal applied, the financial impact of falling outside, and the routes that still work post-Sonder.</p>
+<p>In March 2024, the Upper Tribunal in Sonder Europe Ltd v HMRC reversed the First-tier Tribunal and held that the most common operating model (taking long leases from residential landlords, furnishing and branding the units, and on-selling short-stay nights to travellers) does not qualify for TOMS. The decision did not abolish TOMS for serviced accommodation, but it narrowed it sharply: only operators that genuinely buy in and on-sell short-stay room nights without material alteration remain within the scheme. If your model is the long-lease-and-short-let one, your historical TOMS treatment is now at risk, and the cost of getting it wrong runs to six figures a year.</p>
 
 <h2>What TOMS Is and How It Works</h2>
 
 <p>TOMS sits in section 53 of the Value Added Tax Act 1994 and is detailed in HMRC's VAT Notice 709/5. It is a special scheme for businesses that buy in travel-type services from third parties (transport, accommodation, sightseeing, ancillary services) and resell them to travellers without material alteration.</p>
 
-<p>Under TOMS:</p>
+<p>When you fall within it:</p>
 
 <ul>
-  <li>The operator's <strong>relevant turnover</strong> is the margin (sale price minus the cost of bought-in services), not the gross sales.</li>
+  <li>Your <strong>relevant turnover</strong> is the margin (sale price minus the cost of bought-in services), not your gross sales.</li>
   <li>Output VAT is calculated on the margin at the standard rate.</li>
   <li>Input VAT on the bought-in services is <strong>not recoverable</strong> (it is reflected in the margin calculation).</li>
   <li>The £90,000 VAT registration threshold is tested against the margin figure, not against gross sales.</li>
@@ -79,7 +77,7 @@ editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question fo
 <ol>
   <li>The supply must be of <strong>designated travel services</strong>: accommodation, transport, restaurant meals, or sightseeing/excursion services.</li>
   <li>The supply must be made for the <strong>benefit of travellers</strong>. Travellers includes business travellers and corporate clients booking for their staff.</li>
-  <li>The supplies must be <strong>bought in from third parties</strong>, not self-provided. And the operator must not have <strong>materially altered or further processed</strong> them before resale.</li>
+  <li>The supplies must be <strong>bought in from third parties</strong>, not self-provided, and you must not have <strong>materially altered or further processed</strong> them before resale.</li>
 </ol>
 
 <p>The third condition is where Sonder fell over. The Upper Tribunal's analysis was that Sonder had not just on-sold a bought-in service; it had used the bought-in service as an input into a different supply.</p>
@@ -123,16 +121,16 @@ editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question fo
 
 <h2>The Financial Impact of Falling Outside TOMS</h2>
 
-<p>Consider a serviced-accommodation operator with the following profile:</p>
+<p>Suppose your business looks like this:</p>
 
 <ul>
   <li>Gross short-stay revenue: £1.2m per year.</li>
   <li>Rent paid to landlords on long leases: £900,000 per year (typically exempt from VAT because the landlords have not opted to tax residential property).</li>
   <li>Operating costs (cleaning, utilities, marketing, staff): £200,000 per year.</li>
-  <li>Operator's margin: £100,000.</li>
+  <li>Your margin: £100,000.</li>
 </ul>
 
-<p>Under TOMS, the relevant turnover for registration is the margin (£300,000 on the bought-in services calculation, computed in line with TOMS-specific rules). Output VAT is around £50,000 a year on the margin. Input VAT on operating costs is not separately recoverable; it is reflected in the margin.</p>
+<p>Under TOMS, your relevant turnover for registration is the margin (£300,000 on the bought-in services calculation, computed in line with TOMS-specific rules). Output VAT is around £50,000 a year on the margin. Input VAT on operating costs is not separately recoverable; it is reflected in the margin.</p>
 
 <p>Outside TOMS:</p>
 
@@ -143,7 +141,7 @@ editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question fo
   <li>Net VAT cost: roughly £210,000 a year.</li>
 </ul>
 
-<p>The £160,000 a year swing (£210,000 standard minus £50,000 TOMS) is enough to make the difference between a sustainable operating margin and a loss-making business. Operators have responded in three principal ways: passing the VAT through in nightly rates (the easiest in strong-demand locations), renegotiating landlord rents downward (slow and lease-dependent), or restructuring to bring properties into the operator's ownership so the supply chain changes.</p>
+<p>That £160,000 a year swing (£210,000 standard minus £50,000 TOMS) is enough to turn a sustainable operating margin into a loss. There are three realistic responses: pass the VAT through in your nightly rates (easiest in strong-demand locations), renegotiate landlord rents downward (slow and lease-dependent), or restructure to bring properties into your own ownership so the supply chain changes.</p>
 
 <h2>Operating Models That Still Qualify After Sonder</h2>
 
@@ -163,7 +161,7 @@ editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question fo
 
 <h3>Long-Lease-and-Short-Let (Sonder Pattern)</h3>
 
-<p>The Sonder model: taking long leases from landlords, furnishing and branding, and on-selling short-stay nights. After the Upper Tribunal decision, this falls outside TOMS. The operator makes a standard-rated supply at full sale price, registers and accounts for VAT on the gross.</p>
+<p>The Sonder model: taking long leases from landlords, furnishing and branding, and on-selling short-stay nights. After the Upper Tribunal decision, this falls outside TOMS. If this is you, you make a standard-rated supply at full sale price, and you register and account for VAT on the gross.</p>
 
 <h3>Direct-Owned Serviced Accommodation</h3>
 
@@ -175,20 +173,20 @@ editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question fo
 
 <h2>What Operators Should Do Now</h2>
 
-<p>For an existing operator that has been applying TOMS, the post-Sonder response sequence is:</p>
+<p>If you have been applying TOMS, work through this in order:</p>
 
 <ol>
-  <li><strong>Review the operating model</strong> against the Upper Tribunal's reasoning. The dispositive question is whether the supply on-sold is the same supply as the one bought in. A long lease into short-stay is the paradigmatic now-outside case.</li>
-  <li><strong>Identify the four-year window</strong> for HMRC enquiry on historical TOMS returns. Voluntary disclosure of the TOMS-no-longer-applies position carries lower inaccuracy penalties than waiting for an HMRC challenge.</li>
-  <li><strong>Model the standard-VAT position prospectively</strong>, including pricing options and the impact on landlord-rent negotiations.</li>
-  <li><strong>Consider structural alternatives</strong>: VAT grouping with the landlord SPV (where feasible), direct ownership, or genuinely buy-in-and-resell remodelling.</li>
-  <li><strong>Document the analysis</strong>: HMRC compliance activity on serviced-accommodation VAT has increased materially since the Upper Tribunal decision, and contemporaneous analysis is the principal defence on inaccuracy-penalty exposure.</li>
+  <li><strong>Review your operating model</strong> against the Upper Tribunal's reasoning. The dispositive question is whether the supply you on-sell is the same supply you bought in. A long lease into short-stay is the paradigmatic now-outside case.</li>
+  <li><strong>Identify the four-year window</strong> for HMRC enquiry on your historical TOMS returns. Voluntarily disclosing that TOMS no longer applies carries lower inaccuracy penalties than waiting for an HMRC challenge.</li>
+  <li><strong>Model the standard-VAT position prospectively</strong>, including your pricing options and the impact on landlord-rent negotiations.</li>
+  <li><strong>Consider structural alternatives</strong>: VAT grouping with the landlord SPV (where feasible), direct ownership, or genuinely remodelling as buy-in-and-resell.</li>
+  <li><strong>Document your analysis</strong>. HMRC compliance activity on serviced-accommodation VAT has increased materially since the Upper Tribunal decision, and contemporaneous analysis is your principal defence against an inaccuracy penalty.</li>
 </ol>
 
-<p>For a new entrant designing a serviced-accommodation business in 2026, the VAT structuring choice is much more constrained than it was pre-Sonder. The long-lease-and-short-let model now carries a near-certain standard-VAT outcome, and the financial model has to absorb that from day one rather than relying on TOMS to keep the VAT burden manageable.</p>
+<p>If you are designing a serviced-accommodation business in 2026, your VAT structuring choice is much more constrained than it was pre-Sonder. The long-lease-and-short-let model now carries a near-certain standard-VAT outcome, so your financial model has to absorb that from day one rather than relying on TOMS to keep the VAT burden manageable.</p>
 
 <h2>How VAT Sits Alongside the Wider Property-Tax Position</h2>
 
-<p>Serviced accommodation operators have a complex direct-tax position as well. The April 2025 abolition of the Furnished Holiday Letting regime removed historical income-tax and CGT advantages that some operators had relied on. The VAT position covered on this page sits alongside the income-tax position covered in <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords in 2026/27</a> and the corporation-tax position covered in <a href="/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27">corporation tax rates for property companies in 2026/27</a> for operators trading through a Ltd Co structure.</p>
+<p>Your direct-tax position is just as involved. The April 2025 abolition of the Furnished Holiday Letting regime removed income-tax and CGT advantages that many operators had relied on, so your VAT planning has to sit alongside your <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords in 2026/27</a> and, if you trade through a limited company, your <a href="/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27">corporation tax rates for property companies in 2026/27</a>.</p>
 
-<p>VAT is rarely the dominant tax cost for an owner-occupier landlord, but for serviced-accommodation operators it is structurally the largest tax line in the P&L. Getting it wrong after Sonder is materially more expensive than getting it right.</p>
+<p>For a buy-to-let landlord VAT is rarely the dominant tax cost, but for a serviced-accommodation business it is usually the largest line in the P&L. After Sonder, getting it wrong is far more expensive than getting it right, and the safest move is to have your operating model and your historical returns reviewed before HMRC does it for you. If you want a second pair of eyes on where your supply chain falls, we can help.</p>

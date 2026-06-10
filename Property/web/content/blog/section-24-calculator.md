@@ -1,214 +1,197 @@
 ---
-title: "Section 24 Calculator: Calculate Your Tax Impact"
+title: "Section 24 Calculator: Work Out Your Landlord Tax Cost"
 slug: "section-24-calculator"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-calculator"
 date: "2026-04-01"
+dateModified: "2026-06-01"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Tax Adviser (CTA), Landlord Tax Specialist"
+reviewedAt: "2026-06-01"
 metaTitle: "Section 24 Calculator: Work Out Your Landlord Tax Cost"
-metaDescription: "Calculate your Section 24 cost step by step with worked examples. A higher-rate landlord with £15k mortgage interest pays ~£3,000 extra tax per year."
-altText: "UK landlord using Section 24 calculator on laptop to calculate mortgage interest tax relief"
+metaDescription: "Use a Section 24 calculator to work out your real mortgage interest tax cost for 2026/27, worked examples, the 22% reducer from 2027 and ways to cut it."
+altText: "UK landlord using a Section 24 calculator on a laptop to work out the mortgage interest tax relief restriction on buy-to-let income"
 image: ""
-h1: "Section 24 Calculator: Calculate Your Tax Impact"
-summary: "Calculate exactly how Section 24 mortgage interest restrictions impact your property tax bill with our comprehensive calculator guide."
+h1: "Section 24 Calculator: How to Work Out Your Real Tax Cost"
+summary: "A Section 24 calculator turns the mortgage interest restriction into a single number: the extra tax you pay because finance costs no longer come off rental profit. This guide shows what figures to gather, how the basic-rate tax reducer and its three-part cap work, and reads the result for basic-rate, higher-rate and additional-rate landlords. It includes worked examples (including the landlord pushed into the higher-rate band and a £100k portfolio), the move to a 22% reducer and separate 22/42/47 property rates from 6 April 2027, MTD for Income Tax readiness, and the routes that genuinely reduce the cost: incorporation, spousal income splitting and pension contributions."
 schema: ""
+howToSteps:
+  - name: "Gather your rental income and expenses"
+    text: "Pull together gross rents from every UK residential let, every allowable expense except mortgage interest (letting fees, repairs, insurance, ground rent, safety certificates), and your total mortgage and loan interest for the year. A Section 24 calculator is only as accurate as these figures, so use actual numbers from your records, not estimates."
+  - name: "Enter your other income to set your tax band"
+    text: "Add your salary, pension, dividends and other income so the calculator can stack rental profit on top and find your marginal rate. Section 24's bite depends entirely on whether you are a basic, higher or additional-rate taxpayer once rental profit is included."
+  - name: "Let the calculator find your taxable rental profit before finance costs"
+    text: "The calculator deducts your non-finance expenses from rent but leaves mortgage interest in the figure. This larger profit is what is taxed, which is the heart of the Section 24 change."
+  - name: "Apply the basic-rate tax reducer and its cap"
+    text: "The calculator works out the tax reducer as the basic rate (20% for 2026/27, 22% from 6 April 2027) of your finance costs, then caps it at the lower of three figures so it never exceeds the tax actually due on your property profits or your income above the personal allowance."
+  - name: "Read the extra tax and the effective rate"
+    text: "The output you want is the gap between tax under the old full-deduction rules and tax under Section 24. That gap is your annual Section 24 cost. Check the effective rate on property income too, since a higher-rate landlord often pays well above 40% once the lost relief is counted."
 faqs:
+  - question: "What is a Section 24 calculator and what does it work out?"
+    answer: "A Section 24 calculator works out the extra income tax you pay because mortgage interest is no longer deducted from rental profit. It takes your rents, your non-finance expenses, your total mortgage interest and your other income, calculates tax on the higher profit figure, then subtracts a basic-rate tax reducer (20% of finance costs for 2026/27, 22% from 6 April 2027). The headline number is the difference between that result and what you would have paid under the pre-2017 full-deduction rules. Because Section 24 and the old mortgage interest tax relief calculation are now the same exercise for individual landlords, a mortgage interest tax relief calculator and a Section 24 calculator produce the same answer."
   - question: "How accurate are online Section 24 calculators?"
-    answer: "Online Section 24 calculators provide reasonable estimates for straightforward BTL portfolios but have limitations. They typically use simplified assumptions and may not account for all allowable expenses, complex income structures, or tax planning opportunities. For portfolios over £500,000 or complex situations, professional calculations usually provide more accurate results."
-  - question: "What information do I need to use a Section 24 calculator effectively?"
-    answer: "You'll need your gross rental income, all allowable expenses (excluding mortgage interest), total mortgage interest payments, and details of your other income to determine your tax band. Having accurate figures from your property accounts rather than estimates will give you more reliable results."
-  - question: "Can a Section 24 calculator help me decide whether to incorporate?"
-    answer: "Basic Section 24 calculators show your current tax position but don't typically model incorporation scenarios. To properly compare personal ownership versus company structures, you need more sophisticated analysis that considers corporation tax rates, dividend tax, and the administrative costs of running a company."
-  - question: "How often should I recalculate my Section 24 tax impact?"
-    answer: "You should recalculate whenever there are significant changes to your portfolio, such as buying or selling properties, major changes in rental income, or shifts in mortgage interest rates. Many landlords find it useful to run calculations annually during tax planning season and when considering new property investments."
+    answer: "For a straightforward buy-to-let portfolio held personally, a good calculator is accurate to the pound, because the rules are arithmetic. Accuracy breaks down where the inputs are wrong (estimated rather than actual expenses), where income sits near a band threshold so the marginal rate is uncertain, where the three-part cap restricts relief, or where mixed structures are involved (some property in a company, some held jointly with a spouse on an unequal split). For those cases the number is a useful starting point but should be checked against a full Self Assessment computation."
+  - question: "What information do I need to use a Section 24 calculator?"
+    answer: "Five things: gross rental income from all residential lets; allowable expenses excluding mortgage interest; total mortgage and loan interest paid; your other income (salary, pension, dividends) to fix your tax band; and your available personal allowance. Use figures from your actual records. If you co-own with a spouse, enter only your share of income and interest, set by the ownership split or a Form 17 election."
   - question: "Does Section 24 affect basic rate taxpayers?"
-    answer: "Section 24 can affect basic rate taxpayers if it pushes them into the higher rate tax band. Even if you remain at 20%, the restriction means you can't reduce your rental income by the full mortgage interest amount, potentially increasing your overall tax bill."
-  - question: "What mortgage interest counts for Section 24 calculations?"
-    answer: "All interest on loans secured against buy-to-let properties counts, including purchase mortgages, remortgages, and additional borrowing for property improvements. Only the interest portion applies — capital repayments don't count for Section 24 restrictions."
-  - question: "Can I avoid Section 24 costs entirely?"
-    answer: "Individual landlords cannot avoid Section 24 restrictions. However, properties owned through limited companies aren't subject to Section 24, as companies can still deduct mortgage interest as a business expense. This is why many landlords consider incorporation as a long-term strategy."
-  - question: "Will Section 24 rules change in 2026?"
-    answer: "No changes to Section 24 are announced for 2026/27. The 20% relief limit remains in place for individual landlords. However, Making Tax Digital for Income Tax Property starts in April 2026, requiring quarterly digital reporting for landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)."
+    answer: "Often not at all, but sometimes yes. If your total income including rental profit stays inside the basic-rate band, the 20% reducer matches the 20% you would have saved by deducting interest, so there is no extra cost. The problem is that Section 24 adds the full rent (not rent minus interest) to your income, which can push a basic-rate landlord into the higher-rate band. At that point you pay 40% on the income above the threshold but still only get a 20% reducer on your interest, so the restriction starts to bite even though you thought of yourself as a basic-rate taxpayer."
+  - question: "Can Section 24 push me into the higher rate band?"
+    answer: "Yes, and this is the most common nasty surprise. Because the full rent is added to your income before any interest relief, a landlord whose real economic profit is modest can be taxed as if they earn far more. A teacher on £42,000 with £14,000 of rent and £10,000 of mortgage interest has a real profit of only a few thousand pounds but is taxed on the full rent on top of salary, tipping income over £50,270 into the higher-rate band. Our guide on whether Section 24 can push you into higher-rate tax works through this in detail."
+  - question: "How much does Section 24 cost a higher rate taxpayer?"
+    answer: "For a higher-rate landlord the rough cost is 20% of finance costs: you lose the difference between 40% relief (old rules) and the 20% reducer. On £20,000 of mortgage interest that is around £4,000 a year. For an additional-rate (45%) landlord the gap is 25%, so the same £20,000 of interest costs about £5,000 a year. These are indicative; the exact figure depends on where your income sits and whether the three-part cap restricts the reducer."
+  - question: "How is the Section 24 tax credit capped?"
+    answer: "The reducer is the lower of three figures: the basic rate applied to your finance costs for the year, the basic rate applied to your property profits before any finance cost deduction, and the basic rate applied to your adjusted total income above the personal allowance. The basic rate is 20% for 2026/27 and 22% from 6 April 2027. Where the property-profit or income limb is smaller, your relief is restricted that year and the unrelieved finance costs carry forward indefinitely. For the full mechanics, see our step-by-step guide to calculating the Section 24 tax credit."
+  - question: "What mortgage interest counts for a Section 24 calculation?"
+    answer: "Interest on loans secured against residential buy-to-let property, including purchase mortgages, remortgages, further advances used in the rental business, and incidental costs of obtaining finance such as broker and arrangement fees. Only the interest portion of a repayment mortgage counts; the capital element does not. On an interest-only mortgage the entire monthly payment is interest, so the whole payment is a finance cost subject to the restriction, which is one reason interest-only landlords feel Section 24 most sharply."
+  - question: "Does Section 24 apply to interest-only buy-to-let mortgages?"
+    answer: "Yes, and harder than to repayment loans. With interest-only, every pound you pay the lender is interest, so 100% of the payment is a finance cost restricted to the basic-rate reducer. With a repayment mortgage, part of each payment is capital (which was never deductible anyway), so a smaller slice is caught by Section 24. Switching from interest-only to repayment does not remove the restriction, it simply changes the mix of capital and interest in your payments."
+  - question: "Can I avoid or reduce Section 24 costs?"
+    answer: "Individual landlords cannot opt out of Section 24, but several routes legitimately reduce its impact. Holding property through a limited company takes it outside Section 24 entirely, because companies deduct interest in full before corporation tax, though incorporation triggers CGT and SDLT to weigh first. Splitting income with a lower-rate spouse, making personal pension contributions to extend your basic-rate band, and timing capital expenditure can all pull income back below the higher-rate threshold. There is no single trick; the right mix depends on your figures."
+  - question: "How does incorporation compare with staying personal under Section 24?"
+    answer: "A company is not subject to Section 24, so it deducts mortgage interest in full and pays corporation tax (19% on profits up to £50,000, 25% above £250,000, with marginal relief between) on the lower profit. Personally, you are taxed on profit before interest with only a basic-rate reducer. The company route wins most clearly for higher-rate landlords with large interest bills who reinvest profits. Set against that are the one-off CGT and SDLT costs of transferring property in, plus extra ongoing administration. Our buy-to-let limited company guide and incorporation calculations set out how to weigh both sides."
+  - question: "Will Section 24 be reversed or repealed?"
+    answer: "There is no announced reversal. Section 24 is fully in force and the government has not proposed repealing it. The one confirmed change runs the other way and helps slightly: from 6 April 2027 the basic-rate reducer rises from 20% to 22%, tracking the new 22% basic rate for property income in England, Wales and Northern Ireland. Planning on the basis that Section 24 disappears would be unwise; planning around it is the realistic position."
+  - question: "What changes for Section 24 in April 2027?"
+    answer: "From 6 April 2027, property income in England, Wales and Northern Ireland is taxed at separate rates of 22% basic, 42% higher and 47% additional (Finance Act 2026, Royal Assent 18 March 2026), and the Section 24 reducer rises in step to 22%. Crucially, because the reducer (22%) matches the basic property rate (22%), no new wedge opens for basic-rate landlords. Higher and additional-rate landlords see relief improve from 20% to 22%, but the gap to their 42% or 47% rate is essentially unchanged. Only Scotland is outside these rates; Scottish taxpayers pay Holyrood-set rates on property income."
+  - question: "Do I still need to think about Section 24 once MTD for Income Tax starts?"
+    answer: "Yes. Making Tax Digital for Income Tax is live and changes how you report, not how the tax is calculated. From 6 April 2026 landlords with qualifying income over £50,000 keep digital records and file quarterly updates; the threshold falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. The Section 24 reducer is still applied at the final declaration stage, so the restriction is unchanged. What MTD does mean is that your finance cost figures need to be accurate and digital throughout the year, which makes running a Section 24 calculation a routine rather than an annual scramble."
 ---
 
-<p>Section 24 has fundamentally changed how landlords calculate their tax bills. A <strong>section 24 calculator</strong> helps you understand exactly how mortgage interest restrictions affect your property income tax, but knowing how to use one properly is crucial for accurate results.</p>
+<p>A <strong>section 24 calculator</strong> answers one question: how much more tax do you pay because mortgage interest no longer comes off your rental profit? Everything else (the worked examples, the band checks, the planning routes) hangs off that single number. This guide shows you which figures to feed in, how to read the result, and what to do once you can see the size of the cost.</p>
 
-<p><strong>Want instant results?</strong> Use our <a href="/calculators">free interactive Section 24 calculator</a> to model your specific situation, then return here to understand what the numbers mean for your portfolio.</p>
+<p>If you want the figures first, our <a href="/calculators">interactive property tax calculators</a> let you model your own portfolio, then come back here to understand what the output means and where it can be misleading.</p>
 
-<p>This guide explains what information you need, how the calculations work, and what the results mean for your property portfolio.</p>
+<h2>What a Section 24 calculator actually measures</h2>
 
-<h2>How Section 24 Calculations Work</h2>
+<p>Before 2017, a landlord deducted mortgage interest from rent and paid tax on the difference. Since the full restriction took effect in 2020/21, individual landlords no longer do that. Instead the calculator does three things: it taxes your rental profit <em>before</em> deducting interest, then gives back a tax reducer worth the basic rate of your finance costs, capped so it never exceeds the tax genuinely due. A <strong>mortgage interest tax relief calculator</strong> and a Section 24 calculator are therefore the same tool for individuals: the old phrase survives, but the calculation behind it is the post-2017 one.</p>
 
-<p>The calculation process involves several steps that any reliable section 24 calculator should follow. You may have searched for a <strong>mortgage interest tax relief calculator</strong>. It's important to know that since the introduction of Section 24, these two terms refer to the same calculation for individual landlords. Before 2017, a mortgage interest tax relief calculator would simply deduct your full mortgage interest from your rental income. Today, a <strong>Section 24 calculator</strong> performs the newer, more complex calculation.</p>
+<p>The reducer is a <strong>tax credit, not a deduction</strong>. That distinction is the whole story. A deduction comes off your income at your top rate; the reducer comes off your tax bill at the basic rate only. For a basic-rate landlord those are equal and nothing is lost. For a higher or additional-rate landlord they are not, and the difference is the <strong>section 24 cost</strong> the calculator exists to show you.</p>
 
-<h3>Step 1: Calculate Adjusted Profit</h3>
-<p>Instead of deducting mortgage interest from rental income, you now calculate profit as: Rental Income - All Other Allowable Expenses (excluding mortgage interest). This gives you your "gross" rental profit before the Section 24 restrictions apply.</p>
+<h2>The five figures you need before you start</h2>
 
-<h3>Step 2: Determine Tax Liability</h3>
-<p>This adjusted profit gets added to your other income to determine your tax liability at the appropriate rates (20%, 40%, or 45%). This is crucial because Section 24's impact varies dramatically depending on whether you're a basic rate, higher rate, or additional rate taxpayer.</p>
+<p>A calculator is only as good as its inputs. Gather these for the tax year, using real numbers from your records rather than estimates:</p>
 
-<h3>Step 3: Apply Tax Credit</h3>
-<p>You then receive a tax credit worth 20% of your mortgage interest payments, which reduces your overall tax bill. The relief works as a tax credit, not a deduction from rental income. This means it reduces your tax bill pound-for-pound, but only at the basic rate.</p>
-
-<p>A landlord with £25,000 rental income, £15,000 mortgage interest, and £5,000 other expenses would have:</p>
 <ul>
-<li>Adjusted profit: £20,000 (£25,000 - £5,000)</li>
-<li>Tax credit available: £3,000 (20% × £15,000)</li>
+<li><strong>Gross rental income</strong> from every UK residential let, before any costs.</li>
+<li><strong>Allowable expenses excluding finance costs</strong>: letting agent fees, repairs and maintenance (not improvements), buildings and landlord insurance, ground rent, service charges, safety certificates, accountancy.</li>
+<li><strong>Total mortgage and loan interest</strong> on residential lettings, plus incidental costs of obtaining finance such as broker and arrangement fees. On an interest-only mortgage this is the whole payment.</li>
+<li><strong>Your other income</strong>: salary, pension, dividends, savings interest. This fixes your tax band once rental profit is stacked on top.</li>
+<li><strong>Your personal allowance</strong>, and whether it is tapered (it falls by £1 for every £2 of income over £100,000, gone entirely at £125,140).</li>
 </ul>
 
-<h2>Information You Need for Accurate Calculations</h2>
+<p>If you co-own with a spouse, enter only <strong>your share</strong> of income and interest. For jointly held property the default split is 50/50; a <a href="/blog/section-24-and-tax-relief/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision">Form 17 election</a> changes that to your true beneficial ownership.</p>
 
-<p>Before using any <strong>section 24 calculator</strong>, gather these key figures for each tax year:</p>
+<h2>How the calculation runs, step by step</h2>
 
-<h3>Rental Income Details</h3>
+<h3>Step 1: taxable rental profit, before finance costs</h3>
+<p>Rents minus all non-finance expenses. Mortgage interest stays in this figure. This larger profit is what the tax bands are applied to, which is exactly why Section 24 can inflate the income HMRC sees.</p>
+
+<h3>Step 2: tax on that profit at your marginal rate</h3>
+<p>The profit is added to your other income and taxed in band order. For 2026/27 the bands are 20%, 40% and 45%. This is where the calculator decides whether you are effectively a basic, higher or additional-rate landlord.</p>
+
+<h3>Step 3: the basic-rate tax reducer</h3>
+<p>You receive a tax reducer worth the basic rate of your finance costs: <strong>20% for 2026/27</strong>. On £15,000 of interest that is a £3,000 reduction to your tax bill, no more, whatever your top rate.</p>
+
+<h3>Step 4: the three-part cap</h3>
+<p>The reducer is then limited to the lower of three figures, all at the basic rate: your finance costs, your property profits before finance costs, and your income above the personal allowance. Where a lower limb bites, the unrelieved interest <strong>carries forward indefinitely</strong>. Our <a href="/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step">step-by-step guide to the Section 24 tax credit</a> works the cap in full, including loss and carry-forward cases.</p>
+
+<h3>Step 5: read the cost</h3>
+<p>The number that matters is the gap between tax under the old full-deduction rules and tax under Section 24. That gap is your annual cost. A quick sense-check: for a higher-rate landlord it is roughly 20% of finance costs; for an additional-rate landlord, roughly 25%.</p>
+
+<h2>Worked examples: what the calculator shows for each taxpayer</h2>
+
+<p>Section 24 lands differently depending on where your income sits. These examples use 2026/27 rates and the £12,570 personal allowance, £50,270 higher-rate threshold.</p>
+
+<h3>Example 1: the higher-rate landlord</h3>
+<p>Priya earns £45,000 from employment and owns three flats producing £25,000 rent, with £15,000 mortgage interest and £4,000 of other expenses.</p>
 <ul>
-<li>Gross rental income from all BTL properties</li>
-<li>Any other property income (ground rent, service charges)</li>
-<li>Rental income from furnished holiday lets (if applicable)</li>
+<li>Taxable rental profit before finance costs: £25,000 − £4,000 = <strong>£21,000</strong></li>
+<li>Total income: £45,000 + £21,000 = £66,000, so the top slice is higher rate</li>
+<li>Tax reducer: 20% × £15,000 = <strong>£3,000</strong></li>
+<li>Old rules would have given 40% relief on the £15,000 interest = £6,000</li>
+<li><strong>Annual Section 24 cost: £6,000 − £3,000 = £3,000</strong></li>
 </ul>
+<p>Priya's real profit is modest, but she is taxed on £21,000 of property income and only claws back relief at 20%.</p>
 
-<h3>Allowable Expenses</h3>
+<h3>Example 2: pushed into the higher-rate band</h3>
+<p>Tom earns £42,000 as a teacher and lets one former family home for £14,000 rent, with £10,000 interest and £2,000 expenses. His real economic profit is only about £2,000.</p>
 <ul>
-<li>Property management fees and letting agent costs</li>
-<li>Repairs and maintenance (not improvements)</li>
-<li>Insurance premiums for buildings and landlord cover</li>
-<li>Legal and professional fees</li>
-<li>Safety certificates and compliance costs</li>
+<li>Taxable rental profit before finance costs: £14,000 − £2,000 = <strong>£12,000</strong></li>
+<li>Total income: £42,000 + £12,000 = £54,000, so £3,730 sits above the £50,270 threshold and is taxed at 40%</li>
+<li>Tax reducer: 20% × £10,000 = £2,000</li>
 </ul>
+<p>Tom thought of himself as a basic-rate taxpayer. Section 24 added his full rent to income, tipped part of it into the higher-rate band, and capped his interest relief at 20%. This is the single most common Section 24 trap, and we cover it fully in <a href="/blog/section-24-and-tax-relief/can-section-24-push-higher-rate-tax">can Section 24 push you into higher-rate tax</a>.</p>
 
-<h3>Mortgage Interest Information</h3>
+<h3>Example 3: the £100k rental portfolio</h3>
+<p>A landlord with £100,000 gross rent, £45,000 mortgage interest and £20,000 of other expenses, plus a small salary, is firmly in the higher-rate band on property income alone.</p>
 <ul>
-<li>Total mortgage interest paid on BTL loans</li>
-<li>Any loan arrangement fees that qualify</li>
-<li>Interest on loans for property improvements</li>
+<li>Taxable rental profit before finance costs: £100,000 − £20,000 = <strong>£80,000</strong></li>
+<li>Tax reducer: 20% × £45,000 = £9,000</li>
+<li>Old rules would have given 40% relief = £18,000</li>
+<li><strong>Annual Section 24 cost: around £9,000</strong></li>
 </ul>
+<p>At this scale the restriction compounds: roughly £9,000 a year is close to £90,000 across a decade. That is the level at which incorporation usually earns a serious look. Our <a href="/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio">£100k rental income case study</a> models this portfolio in depth.</p>
 
-<h3>Personal Tax Information</h3>
+<h3>Example 4: the basic-rate landlord (no cost)</h3>
+<p>Maria has no other income and lets two properties for £18,000 rent, with £6,000 interest and £3,000 expenses. Profit before interest is £15,000, well inside the basic-rate band. Her 20% reducer exactly matches the 20% she would have saved by deducting interest, so her <strong>Section 24 cost is nil</strong>. Section 24 is not a universal penalty; it is a higher-rate one.</p>
+
+<h2>Reading the result: effective rate and cash flow</h2>
+
+<p>Two outputs matter beyond the headline cost. The <strong>effective tax rate</strong> on property income tells the real story: a higher-rate landlord with heavy interest can pay an effective rate well above 40% on economic profit, because tax is charged on profit before interest while relief comes back at only 20%. The <strong>cash flow impact</strong> matters because Section 24 tax is paid from after-tax cash that mortgage interest has already eaten into. A portfolio that looks profitable on paper can run a cash deficit once the Section 24 bill lands, particularly for interest-only borrowers in a higher-rate band.</p>
+
+<h2>What changes from 6 April 2027</h2>
+
+<p>From 6 April 2027, property income in England, Wales and Northern Ireland is taxed at <strong>separate rates of 22% basic, 42% higher and 47% additional</strong>, enacted by Finance Act 2026 (Royal Assent 18 March 2026). The Section 24 reducer rises in step to <strong>22%</strong>, tracking the new basic rate.</p>
+
+<p>The important point, and one many landlords get wrong, is that this opens <strong>no new wedge</strong>. Because the reducer (22%) matches the basic property rate (22%), a basic-rate landlord is no worse off. A higher-rate landlord's relief improves from 20% to 22%, but the gap to their 42% rate is essentially the same as today's 40% versus 20% gap. Only Scotland sits outside these rates, with Holyrood-set rates on property income. A good calculator should let you toggle to 2027/28 to see the small relief uplift, but do not expect it to change your structural decision.</p>
+
+<table>
+<thead>
+<tr><th>Feature</th><th>2026/27</th><th>2027/28 onwards</th></tr>
+</thead>
+<tbody>
+<tr><td>Property income rates (England, Wales, NI)</td><td>20% / 40% / 45%</td><td>22% / 42% / 47%</td></tr>
+<tr><td>Section 24 finance cost reducer</td><td>20% of finance costs</td><td>22% of finance costs</td></tr>
+<tr><td>Basic-rate landlord new wedge?</td><td>None</td><td>None (reducer tracks the 22% rate)</td></tr>
+<tr><td>Higher-rate relief gap</td><td>20pp (40 − 20)</td><td>20pp (42 − 22)</td></tr>
+<tr><td>Additional-rate relief gap</td><td>25pp (45 − 20)</td><td>25pp (47 − 22)</td></tr>
+</tbody>
+</table>
+
+<h2>What the calculator cannot do: the planning routes</h2>
+
+<p>A calculator shows the cost. It will not tell you which structure fits your figures. Once you can see the number, these are the routes that genuinely reduce it.</p>
+
+<h3>Limited company versus staying personal</h3>
+<p>A company is not subject to Section 24. It deducts mortgage interest in full and pays corporation tax on the lower profit (19% up to £50,000, 25% above £250,000, marginal relief between). For a higher-rate landlord with a large interest bill who reinvests profits, the company route often wins outright. The catch is the cost of getting property in: transferring from personal to company is a disposal for CGT (residential gains at 18% and 24%) and a purchase for SDLT, so the one-off bill can be substantial. Weigh both sides with our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> before committing.</p>
+
+<h3>Spousal income splitting</h3>
+<p>If one spouse pays tax at a lower rate, shifting rental income towards them reduces the overall bill. For jointly owned property a Form 17 election moves the split from the automatic 50/50 to true beneficial shares. This works best where the lower-earning spouse has spare basic-rate band, and it is one of the few moves that needs no company and no SDLT.</p>
+
+<h3>Pension contributions</h3>
+<p>A personal pension contribution extends your basic-rate band by the gross amount paid in. For a landlord whose property profit has tipped them just into higher-rate tax, a well-judged contribution can pull that income back below the threshold, restoring the position where the 20% reducer matches the rate on the income. It also builds retirement savings, so the relief works twice. See our note on <a href="/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning">Section 24 and pension contributions</a> for how to size this.</p>
+
+<h3>Timing capital expenditure</h3>
+<p>Large allowable revenue costs (a significant repair, for example) reduce rental profit in the year they fall. Timing them into a high-income year can keep total income below a band threshold, indirectly softening the Section 24 effect on that year's marginal income.</p>
+
+<h2>MTD for Income Tax: the reporting backdrop</h2>
+
+<p>Making Tax Digital for Income Tax is now live and changes how you report rental income, not how Section 24 is calculated. From 6 April 2026, landlords with qualifying income over <strong>£50,000</strong> must keep digital records and file quarterly updates; the threshold falls to <strong>£30,000</strong> from 6 April 2027 and <strong>£20,000</strong> from 6 April 2028. The Section 24 reducer is applied at the final declaration, so the restriction is unchanged, but your finance cost figures now need to be accurate and digital all year. In practice that makes running a Section 24 calculation a quarterly habit rather than a January panic. If you are getting set up, see <a href="/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide">how to register for MTD as a landlord</a>.</p>
+
+<h2>When the number warrants advice</h2>
+
+<p>A calculator is enough for a clean, personally held portfolio. Bring in a specialist where the figures get tangled: income hovering around a band threshold, a possible incorporation, property transfers between spouses, significant capital gains alongside rental income, or a mixed portfolio split across personal and company ownership. In those cases a single calculator number can hide more than it reveals, and the right structure can change the answer materially. Our overview of <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> sets out where that judgement adds value.</p>
+
+<h2>The bottom line</h2>
+
+<p>Section 24 remains fully in force, and for higher and additional-rate landlords it is a real, recurring cost: roughly 20% to 25% of your finance costs every year, compounding over the life of the portfolio. A calculator turns that into a figure you can act on. The 2027 move to a 22% reducer helps a little and opens no new basic-rate wedge, but it does not change the structural decision. Use the number to ask the right next question: stay personal, split with a spouse, contribute to a pension, or incorporate? The figure is the start of that conversation, not the end of it.</p>
+
+<h2>Related reading</h2>
 <ul>
-<li>Your other income (salary, pensions, investments)</li>
-<li>Current tax band (basic, higher, additional rate)</li>
-<li>Personal allowance available</li>
-</ul>
-
-<h2>Understanding Your Calculator Results</h2>
-
-<p>When you run calculations using a <strong>section 24 calculator</strong>, focus on these key metrics:</p>
-
-<h3>Effective Tax Rate</h3>
-<p>This shows your real tax rate after accounting for the 20% credit. Higher and additional rate taxpayers typically see their effective rate on property income increase significantly.</p>
-
-<h3>Cash Flow Impact</h3>
-<p>The calculator should show how the tax changes affect your monthly or annual cash flow. This helps with budgeting and investment planning.</p>
-
-<h3>Break-Even Analysis</h3>
-<p>Some calculators show the rental yield you need to maintain positive cash flow after the additional tax burden.</p>
-
-<h2>Common Calculator Limitations</h2>
-
-<p>Most online section 24 calculators have limitations you should understand:</p>
-
-<ul>
-<li><strong>Simplified assumptions:</strong> They may not account for all allowable expenses or complex income structures</li>
-<li><strong>Static calculations:</strong> They don't model changes in interest rates or rental income over time</li>
-<li><strong>Portfolio complexity:</strong> Basic calculators struggle with mixed portfolios (BTL, FHL, commercial)</li>
-<li><strong>Tax planning opportunities:</strong> They don't suggest mitigation strategies like incorporation</li>
-</ul>
-
-<p>For portfolios worth over £500,000 or complex situations, professional advice often provides more accurate projections than standard calculators.</p>
-
-<h2>Practical Section 24 Calculation Examples</h2>
-
-<p>Working out your annual Section 24 cost requires gathering specific figures from your property portfolio. Here's a systematic approach with examples.</p>
-
-<h3>Example 1: Basic Calculation</h3>
-<p>Consider Sarah, who owns three buy-to-let properties generating £45,000 annual rental income. Her expenses break down as follows:</p>
-<ul>
-<li>Mortgage interest: £18,000</li>
-<li>Repairs and maintenance: £4,000</li>
-<li>Insurance and other costs: £3,000</li>
-<li>Other income (salary): £35,000</li>
-</ul>
-<p>Under the old system, Sarah's taxable rental income would have been £20,000 (£45,000 - £25,000 total expenses). Combined with her salary, her total taxable income was £55,000, putting her in the higher rate band.</p>
-<p>Under Section 24, her taxable rental income becomes £38,000 (£45,000 - £7,000 non-mortgage expenses). Her total taxable income rises to £73,000, firmly in the higher rate band.</p>
-<p>Sarah's Section 24 annual cost: (40% - 20%) × £18,000 = £3,600</p>
-
-<h3>Example 2: 2026/27 Calculation</h3>
-<p>A landlord with three BTL properties has:</p>
-<ul>
-<li>Annual rental income: £48,000</li>
-<li>Mortgage interest: £18,000</li>
-<li>Other expenses: £8,000</li>
-<li>Employment income: £45,000</li>
-</ul>
-<p>Under Section 24, the calculation works like this:</p>
-<p><strong>Step 1:</strong> Calculate taxable rental profit<br>
-Rental income (£48,000) minus non-finance expenses (£8,000) = £40,000</p>
-<p><strong>Step 2:</strong> Add to total income<br>
-Employment income (£45,000) + rental profit (£40,000) = £85,000 total income</p>
-<p><strong>Step 3:</strong> Calculate tax relief<br>
-Mortgage interest (£18,000) × 20% = £3,600 tax credit</p>
-<p>Without Section 24, this landlord would have deducted the full £18,000 mortgage interest, paying higher-rate tax on £67,000 instead of £85,000. The difference creates an additional tax burden of approximately £3,600 annually.</p>
-
-<h2>Impact of Section 24 on Different Taxpayers</h2>
-
-<p>Section 24 relief affects landlords differently depending on their tax position. Under Section 24, mortgage interest relief is capped at 20% of your allowable finance costs. This applies to individual landlords only — <a href="/incorporation">limited companies</a> can still deduct mortgage interest as a business expense before calculating corporation tax.</p>
-
-<h3>Basic Rate Taxpayers</h3>
-<p>If your total income (including rental profits) stays within the basic rate band, Section 24 has minimal impact. You effectively get the same relief as before — 20% of your mortgage interest.</p>
-
-<h3>Higher Rate Taxpayers</h3>
-<p>This is where Section 24 bites hardest. Higher-rate taxpayers lose the benefit of 40% relief on mortgage interest, receiving only 20% instead. For a landlord with £20,000 annual mortgage interest, this represents a £4,000 annual tax increase.</p>
-
-<h3>Additional Rate Taxpayers</h3>
-<p>The impact is even more severe for additional rate taxpayers (45% band). The same £20,000 mortgage interest now provides £4,000 relief instead of £9,000 — a £5,000 annual increase in tax liability.</p>
-
-<h2>Strategies to Mitigate Section 24 Costs</h2>
-
-<p>Once you know your annual Section 24 cost, you can make informed decisions about your portfolio. The key is understanding that Section 24 costs aren't just a one-off calculation — they compound year after year. A £3,000 annual cost becomes £30,000 over a decade, making it worth serious consideration in your long-term planning.</p>
-
-<h3>Spousal Income Splitting</h3>
-<p>Transfer properties to a spouse in a lower tax band to reduce the overall Section 24 impact. This works best when one spouse has significantly lower income than the other.</p>
-
-<h3>Company Incorporation</h3>
-<p>Moving your property portfolio into a limited company eliminates Section 24 restrictions entirely. <a href="/incorporation">Company incorporation</a> allows full mortgage interest deduction, though it introduces corporation tax (19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between) and other considerations. Compare your current tax position with running properties through a limited company structure. This often makes sense for portfolios generating significant profits.</p>
-
-<h3>Timing Capital Expenditure</h3>
-<p>Large capital expenses can be timed to reduce rental profits in high-income years, minimising the Section 24 impact when combined with other income sources.</p>
-
-<h3>Alternative Structures</h3>
-<p>Explore options like pension SIPPs, joint ownership arrangements, or <a href="/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions">furnished holiday lets</a> (which have different tax rules) or commercial property investments that aren't subject to Section 24.</p>
-
-<h2>When to Consider Professional Advice</h2>
-<p>Section 24 calculations can become complex when combined with multiple income sources, capital gains, and family tax planning. Consider specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property tax advice</a> if:</p>
-<ul>
-<li>Your total income fluctuates around tax band thresholds</li>
-<li>You're considering incorporation or property transfers</li>
-<li>You have significant capital gains alongside rental income</li>
-<li>You're planning major property portfolio changes</li>
-</ul>
-<p>A property tax specialist can model different scenarios using professional <a href="/calculators">calculation tools</a> to show the long-term impact of various strategies. For complex situations involving multiple properties or significant mortgage interest payments, speaking with a property tax specialist can help you understand all available options and their long-term implications.</p>
-
-<h2>Planning for 2026/27 and Beyond</h2>
-<p>Section 24 isn't changing for 2026/27, but other factors will affect your tax position:</p>
-<p><strong>Making Tax Digital:</strong> From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compliant software and file quarterly updates. This won't change Section 24 relief calculations but requires more detailed record-keeping.</p>
-<p><strong>Tax Band Changes:</strong> Keep track of personal allowance and tax band thresholds, as these affect whether Section 24 pushes you into higher tax brackets.</p>
-<p><strong>Interest Rate Environment:</strong> Rising mortgage rates increase your finance costs but remember — you only get 20% relief on the additional interest under Section 24.</p>
-<p>The key is using calculator results as a starting point for broader tax planning conversations with <a href="/services">qualified property tax specialists</a>.</p>
-
-<h2>Getting Accurate Results and Next Steps</h2>
-<p>To ensure your section 24 calculator gives meaningful results:</p>
-<ul>
-<li>Use actual figures from your accounts, not estimates</li>
-<li>Include all allowable expenses, not just the obvious ones</li>
-<li>Consider your total income picture, not just property</li>
-<li>Run multiple scenarios with different rental income and interest rate assumptions</li>
-</ul>
-<p>Remember that Section 24 calculations can be complex, particularly for larger portfolios or unusual circumstances. While online calculators provide useful estimates, they're no substitute for professional advice tailored to your specific situation.</p>
-<p>The bottom line is that Section 24 relief in 2026 remains limited to 20% of your mortgage interest and finance costs. For many landlords, particularly higher-rate taxpayers, this represents a significant ongoing tax cost compared to the pre-2017 position. The key is understanding exactly how Section 24 affects your specific situation and exploring legitimate strategies to minimise its impact.</p>
-
-<h2>Related Reading</h2>
-<ul>
-<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
-<li><a href="/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio">Section 24 Case Study: £100k Rental Income Portfolio</a></li>
-<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-calculator">Rental Income Tax Calculator: Work Out Your Tax</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 tax relief for landlords: complete guide</a></li>
+<li><a href="/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step">How to calculate your Section 24 tax credit, step by step</a></li>
+<li><a href="/blog/section-24-and-tax-relief/can-section-24-push-higher-rate-tax">Can Section 24 push you into the higher-rate band?</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio">Section 24 case study: £100k rental income portfolio</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-calculator">Rental income tax calculator: work out your tax</a></li>
 </ul>

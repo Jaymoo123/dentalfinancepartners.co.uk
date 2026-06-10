@@ -5,142 +5,193 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Should I Incorporate My Buy-to-Let Portfolio in 2026?"
-metaDescription: "Major property tax changes from April 2027 make incorporation timing critical. Complete analysis of when to incorporate BTL portfolios in 2026."
-altText: "UK landlord reviewing incorporation documents with calculator and property portfolio papers on desk"
+metaTitle: "Should I Incorporate My Buy-to-Let in 2026? Decision Guide"
+metaDescription: "Should you incorporate your buy-to-let in 2026? Weigh Section 24, the April 2027 rates, the CGT and SDLT cost of transfer, and MTD before deciding."
+altText: "UK landlord comparing personal ownership and limited company structure for a buy-to-let portfolio"
 image: ""
 h1: "Should I Incorporate My Buy-to-Let Portfolio in 2026?"
-summary: "With property income tax rates increasing to 22%/42%/47% from April 2027, incorporation timing has become critical. This guide analyses when incorporation makes sense in 2026."
+summary: "Incorporation is a permanent restructuring, not a tax switch you can flip back. This guide weighs the April 2027 property income rates, Section 24, the CGT and SDLT cost of transfer, and MTD against the corporation tax case, so you can judge whether a company is right for your portfolio in 2026."
 schema: ""
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-05-31"
+dateModified: "2026-05-31"
 faqs:
-  - question: "What rental profit level makes incorporation worthwhile in 2026?"
-    answer: "Generally, incorporation becomes financially beneficial for landlords with rental profits above £20,000-£25,000 annually, especially if you're a higher rate taxpayer. With property tax rates increasing to 42% for higher rate taxpayers from April 2027 (versus 19% corporation tax), the savings become substantial. However, you must factor in additional company running costs of £1,000-£3,000 annually and any CGT on property transfers."
-  - question: "Can I transfer existing BTL properties to a company without paying CGT?"
-    answer: "No, transferring properties to a company triggers capital gains tax based on current market value, even if no money changes hands. This creates an immediate tax liability that you must weigh against future corporation tax savings. The only exception is incorporation relief, which has very restrictive conditions that most BTL portfolios don't meet."
-  - question: "Will I pay higher mortgage rates if I incorporate my portfolio?"
-    answer: "Yes, commercial BTL mortgages for limited companies typically carry rates 0.5-1% higher than personal BTL mortgages, and most lenders require personal guarantees. However, companies can deduct 100% of mortgage interest against rental income, while individual landlords are restricted to 20% tax relief under Section 24 rules. For higher rate taxpayers, the full tax deduction often outweighs the higher borrowing costs."
-  - question: "Should I incorporate before or after the April 2027 property tax changes?"
-    answer: "Incorporating in 2026 (before April 2027) is generally preferable as it allows you to plan under current tax rules and potentially time any property transfers more favourably. Once the higher property tax rates take effect from April 2027, the benefits of incorporation increase, but you'll have less flexibility for timing transfers and may face higher overall costs."
+  - question: "Should I incorporate my buy-to-let portfolio in 2026?"
+    answer: "It depends on three things: whether you are taxed at the higher or additional rate on rental profit, how much of your income is eaten by mortgage interest under Section 24, and whether you can transfer the properties without a large capital gains tax and SDLT bill. A higher-rate landlord with heavily mortgaged properties and a long holding horizon has the strongest case. A basic-rate landlord with little or no borrowing usually has the weakest case, because the corporation tax advantage is small and the cost of getting money back out of the company can cancel it out."
+  - question: "At what rental profit does incorporation start to make sense?"
+    answer: "There is no fixed threshold, because the answer turns on your marginal tax rate and your borrowing, not the headline profit. A higher-rate landlord with significant mortgage interest can benefit at a lower profit level than a basic-rate landlord with no mortgage. The honest test is not a profit figure but whether the recurring corporation tax position, after the cost of extracting cash, beats your personal position by enough to justify the one-off transfer cost and ongoing company administration."
+  - question: "Can I transfer my existing properties into a company without paying capital gains tax?"
+    answer: "Transferring a property to your own company is a disposal at market value for CGT, even though no money changes hands, because you and the company are connected persons. The gain is taxed at 18% or 24% on residential property. The main relief is Section 162 incorporation relief (TCGA 1992 s.162), which can defer the gain where a genuine property business (not passive investment) is transferred as a going concern wholly or partly for shares. Whether your activity qualifies as a business is a question of fact, tested against the Ramsay v HMRC principle, and is the single most important point to get advice on before you transfer anything."
+  - question: "Does incorporation avoid the April 2027 property income tax rates?"
+    answer: "Yes, in the sense that a company does not pay income tax at all. From 6 April 2027 individual landlords in England, Wales and Northern Ireland pay property income tax at 22% (basic), 42% (higher) and 47% (additional) under Finance Act 2026. A company instead pays corporation tax (19% on profits up to £50,000, 25% above £250,000, with marginal relief between). The catch is that money taken out of the company as salary or dividends is taxed again in your hands, so the comparison is never company rate versus personal rate alone."
+  - question: "Will the Section 24 mortgage interest restriction still hurt me if I incorporate?"
+    answer: "No. Section 24 only restricts individuals. A company deducts 100% of its mortgage interest as a normal business expense before corporation tax. This is the single biggest driver behind incorporation for landlords with high borrowing, because Section 24 currently gives individuals only a 20% basic-rate tax reducer on finance costs (rising to 22% from 6 April 2027 in step with the new basic property rate, so no new wedge opens)."
+  - question: "Do limited company buy-to-let mortgages cost more than personal ones?"
+    answer: "Commercial buy-to-let lending to a limited company is typically priced above equivalent personal lending and lenders usually require personal guarantees from the directors. You should treat that higher finance cost as a real offset against the tax case. For a heavily geared higher-rate landlord, full interest deductibility inside the company often still outweighs it; for a lightly geared basic-rate landlord it frequently does not."
+  - question: "Will I have to pay stamp duty land tax when I move properties into a company?"
+    answer: "Usually yes. A transfer to your company is a land transaction at market value, and a company buying residential property pays the 5% additional-dwellings surcharge on top of standard SDLT rates (FA 2003 Sch 4ZA, surcharge increased to 5% from 31 October 2024). Companies acquiring dwellings worth more than £500,000 can also fall within the 17% flat charge and the Annual Tax on Enveloped Dwellings regime unless a relief such as the property-rental-business relief applies. SDLT is often the cost that decides the question, so it must be modelled, not assumed away."
+  - question: "Is there any way to incorporate without triggering CGT and SDLT?"
+    answer: "CGT can be deferred using Section 162 incorporation relief where you genuinely run a property business and transfer it as a going concern for shares. SDLT is harder: there is a narrow relief for transfers from a partnership to a company (FA 2003 Sch 15) where connected-partnership conditions are met, which is why landlords with a long-standing genuine partnership sometimes have a route that a sole owner does not. These reliefs are fact-sensitive and frequently challenged, so they should never be relied on without specific advice. See our guide on how to incorporate a rental property without CGT for the detail."
+  - question: "What are the ongoing obligations of running a property company?"
+    answer: "A company files annual accounts and a corporation tax return (CT600) with HMRC, a confirmation statement with Companies House, and keeps statutory registers. Directors have legal duties under the Companies Act 2006. None of this is optional, and it is recurring work every year for as long as the company exists, which is why a marginal tax saving rarely justifies incorporation on its own."
+  - question: "Does Making Tax Digital change the incorporation decision?"
+    answer: "Indirectly. Making Tax Digital for Income Tax is now live for individual landlords: from 6 April 2026 if your gross property and self-employment income exceeds £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. Companies are outside MTD for Income Tax entirely. MTD is not a reason on its own to incorporate, but if you were going to incorporate anyway, doing so removes you from the MTD ITSA quarterly cycle for that income."
+  - question: "Is it better to incorporate before or after April 2027?"
+    answer: "The April 2027 rates do not create a transfer deadline, because incorporation relief and the CGT and SDLT cost are the same on either side of that date. What changes is the size of the recurring advantage: from 2027/28 the gap between a higher or additional-rate individual and a company widens, so the ongoing case strengthens. There is no penalty for incorporating later, and rushing a transfer to beat a date you do not need to beat is how landlords end up with an avoidable CGT and SDLT bill."
+  - question: "Should I keep my existing properties personal and buy new ones through a company?"
+    answer: "This hybrid approach is common and often sensible. It avoids any CGT and SDLT on the properties you already hold while letting every future purchase enjoy full interest relief and corporation tax rates. The trade-off is running two structures and two sets of records, but for many landlords it captures most of the benefit of incorporation without the cost and risk of transferring a built-up portfolio."
+  - question: "Can I just transfer properties to my spouse instead of incorporating?"
+    answer: "Sometimes. Transfers between spouses and civil partners are made on a no-gain, no-loss basis for CGT (TCGA 1992 s.58), so moving a share of a property to a lower-earning spouse can rebalance rental income into a lower tax band without the cost of incorporation. It only helps if there is genuine spare basic-rate band to use, and it does not remove Section 24, so it is a complement to the incorporation analysis rather than a substitute for it."
+howToSteps:
+  - name: "Work out your true marginal position"
+    text: "Calculate your rental profit after the Section 24 add-back, and confirm whether that pushes you into the higher (42% from April 2027) or additional (47%) property income band. The higher your marginal rate and the larger your mortgage interest, the stronger the incorporation case."
+  - name: "Price the one-off cost of transfer"
+    text: "Model the capital gains tax at 18% or 24% on the latent gain in each property and the SDLT, including the 5% additional-dwellings surcharge, that the company would pay on the market value. Check whether Section 162 incorporation relief can defer the CGT."
+  - name: "Model the recurring company position"
+    text: "Compare corporation tax on retained profit against your personal property income tax, then add the tax on extracting cash as salary or dividends. Incorporation only wins where the after-extraction company position beats your personal position by a meaningful margin."
+  - name: "Factor in finance and administration"
+    text: "Add the higher cost of limited-company mortgages and the recurring cost of accounts, CT600 filing and confirmation statements. These offsets decide many borderline cases."
+  - name: "Choose the structure and take advice before transferring"
+    text: "Decide between full incorporation, a hybrid (keep existing personal, buy new through a company) or no change. Because the transfer is largely irreversible and the reliefs are fact-sensitive, confirm the plan with a property tax specialist before you move a single property."
 ---
 
-<p>The decision to <strong>incorporate buy to let portfolio 2026</strong> has become increasingly urgent with major tax changes taking effect from April 2027. Property investors now face a narrow window to optimise their tax position before property income tax rates increase significantly.</p>
+<p>Incorporation is the one buy-to-let decision you cannot easily undo. Once properties sit inside a company, taking them back out is a second taxable disposal, so getting it wrong is expensive in both directions. The question is not whether companies pay less tax than individuals (often they do), it is whether that recurring advantage is large enough to justify the one-off cost of getting your portfolio in, and the ongoing cost of running the company afterwards.</p>
 
-<p>From April 2027, property income will be taxed at separate rates of 22% for basic rate taxpayers, 42% for higher rate, and 47% for additional rate taxpayers. This represents a substantial increase from current general income tax rates and makes the incorporation decision more complex than ever.</p>
+<p>Two things have made this question sharper for 2026. First, Section 24 has been fully in force for years now, so most leveraged higher-rate landlords already feel the squeeze of losing full mortgage interest relief. Second, Finance Act 2026 introduced separate property income tax rates from 6 April 2027 that sit above the old income tax rates for higher and additional-rate taxpayers. Both push in the same direction: they widen the gap between holding property personally and holding it through a company. That does not make incorporation right for everyone, but it does mean the decision is worth modelling properly rather than dismissing.</p>
 
-<h2>Key Tax Changes Affecting Incorporation Decisions</h2>
+<h2>What actually changes when you incorporate</h2>
 
-<p>The landscape for UK property investors is shifting dramatically. <strong>Section 24 restrictions</strong> already limit mortgage interest relief to 20%, and the upcoming property tax rate changes add another layer of complexity.</p>
-
-<p>Currently, rental income is taxed alongside other income at 20%, 40%, and 45%. But from April 2027, property income specifically will face rates of 22%, 42%, and 47%. This means a higher rate taxpayer with £30,000 rental profit will pay £12,600 in tax (42%) instead of £12,000 (40%) under current rules.</p>
-
-<p>Companies, however, continue to benefit from corporation tax rates of 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between. The tax differential between personal ownership and company ownership is widening significantly.</p>
-
-<h2>Incorporation vs Personal Ownership: Complete Comparison</h2>
-
-<p>Understanding <strong>incorporation vs personal ownership</strong> requires looking beyond just tax rates. Here's a comprehensive comparison:</p>
-
-<h3>Tax Treatment</h3>
+<p>Stripped of jargon, incorporation swaps one tax system for another. As an individual you pay income tax on rental profit and capital gains tax when you sell. As a company you pay corporation tax on profit and corporation tax on gains, then a second layer of personal tax whenever you take money out. Three differences do the heavy lifting in almost every case.</p>
 
 <ul>
-<li><strong>Personal ownership:</strong> Property income taxed at 22%/42%/47% from April 2027</li>
-<li><strong>Company ownership:</strong> Corporation tax at 19%/25% on profits</li>
-<li><strong>Mortgage interest:</strong> Full deduction for companies, 20% tax credit for individuals</li>
-<li><strong>Capital gains:</strong> 18%/24% for individuals, corporation tax rates for companies</li>
+<li><strong>Mortgage interest.</strong> A company deducts 100% of its loan interest before corporation tax. An individual gets only a Section 24 basic-rate tax reducer on finance costs (20% for 2026/27, rising to 22% from 6 April 2027). For a heavily geared landlord this is usually the single largest factor.</li>
+<li><strong>Tax rate on profit.</strong> A company pays corporation tax at 19% on profits up to £50,000 and 25% above £250,000, with marginal relief tapering between the two. An individual pays property income tax, which from 6 April 2027 is 22%, 42% or 47% depending on band.</li>
+<li><strong>Getting the money out.</strong> Profit left inside a company is taxed once. Profit you draw as dividends or salary is taxed again personally. Incorporation suits landlords who want to retain and reinvest profit far more than those who need to live off the rent.</li>
 </ul>
 
-<h3>Administrative Requirements</h3>
+<p>That last point is the one landlords most often miss. The corporation tax rate looks attractive in isolation, but it is only the first of two layers. The real comparison is your personal tax bill today against corporation tax plus the personal tax on extraction. Our <a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">limited company versus personal ownership comparison</a> works through that two-layer maths in detail.</p>
 
-<p>Companies face additional compliance burdens including annual accounts filing, confirmation statements, and potentially more complex tax returns. These costs typically range from £1,000-£3,000 annually for professional services.</p>
+<h2>How the April 2027 property income tax rates affect the decision</h2>
 
-<p>However, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026 mean all significant landlords will face increased record-keeping obligations regardless of structure.</p>
+<p>From 6 April 2027, property income for individuals in England, Wales and Northern Ireland is taxed at its own rates: 22% at basic, 42% at higher and 47% at additional rate. These are enacted law under Finance Act 2026 (Royal Assent 18 March 2026), not a proposal, and only Scotland is outside the new rates (Scottish taxpayers pay Holyrood-set rates on property income). For higher-rate landlords this is a two percentage point increase on rental profit (40% to 42%); for additional-rate landlords it is also two points (45% to 47%).</p>
 
-<h3>Financing Considerations</h3>
+<p>It is important to be precise about what does <em>not</em> change, because this is widely misreported. The Section 24 finance-cost reducer rises in step, from 20% to 22%, so a basic-rate landlord sees no new wedge between the rate on their rent and the relief on their interest. The change bites on higher and additional-rate landlords, whose relief stays far below their headline rate. A company is unaffected by all of this, because it never enters the property income tax system in the first place. That widening gap is the core of the "incorporate in 2026" argument, and it is genuine, but it is a reason to model carefully, not a reason to rush. The rates apply to ongoing rental profit, so they reward incorporation that is already in place; they do not impose a deadline on the transfer itself.</p>
 
-<p>Buy-to-let mortgages for companies often carry higher interest rates and require personal guarantees. However, the full tax deductibility of interest in companies (compared to the 20% Section 24 restriction for individuals) can offset these additional costs for many investors.</p>
+<p>For the underlying rules and worked figures behind the new bands, see our guide to the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates for landlords</a>.</p>
 
-<h2>Portfolio Size Analysis: When Incorporation Makes Sense</h2>
+<h2>Personal ownership versus a limited company: the side-by-side</h2>
 
-<p>The decision point for <strong>when to incorporate BTL</strong> depends heavily on your portfolio size and rental profits. Here's how different scenarios typically work:</p>
+<p>The table below sets out the practical differences. None of these factors decides the question alone; incorporation is a balance of all of them against your circumstances.</p>
 
-<p>For landlords with small portfolios (1-3 properties) and rental profits under £20,000 annually, incorporation may not be worthwhile due to additional compliance costs and complexity. The tax savings often don't justify the administrative burden. Consider a landlord with one BTL property generating £12,000 annual profit. Under the new property tax rates from 2027, they'd pay £2,640 tax (22% basic rate). In a company, they'd pay £2,280 corporation tax (19%), saving just £360 annually.</p>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Personal ownership</th>
+<th>Limited company</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax on rental profit</td>
+<td>Property income tax: 22% / 42% / 47% from 6 April 2027</td>
+<td>Corporation tax: 19% up to 50k, 25% above 250k, marginal relief between</td>
+</tr>
+<tr>
+<td>Mortgage interest relief</td>
+<td>Restricted under Section 24 to a basic-rate reducer (20%, rising to 22% from April 2027)</td>
+<td>Fully deductible as a business expense</td>
+</tr>
+<tr>
+<td>Getting profit into your pocket</td>
+<td>Already yours after income tax</td>
+<td>Second layer of tax on dividends or salary when extracted</td>
+</tr>
+<tr>
+<td>Cost of moving the portfolio in</td>
+<td>Not applicable (you already hold personally)</td>
+<td>CGT at 18% / 24% on the gain and SDLT including the 5% surcharge, unless reliefs apply</td>
+</tr>
+<tr>
+<td>Capital gains on a future sale</td>
+<td>CGT at 18% / 24%, with the £3,000 annual exempt amount</td>
+<td>Corporation tax on the gain; no annual exempt amount</td>
+</tr>
+<tr>
+<td>Mortgage availability and pricing</td>
+<td>Wider lender choice, generally lower rates</td>
+<td>Narrower commercial market, usually higher rates and personal guarantees</td>
+</tr>
+<tr>
+<td>Making Tax Digital for Income Tax</td>
+<td>In scope once gross income crosses the threshold</td>
+<td>Outside MTD for Income Tax entirely</td>
+</tr>
+<tr>
+<td>Ongoing administration</td>
+<td>Self-assessment return</td>
+<td>Annual accounts, CT600, confirmation statement, director duties</td>
+</tr>
+</tbody>
+</table>
 
-<p>For medium portfolios (4-8 properties) with rental profits between £20,000-£60,000, incorporation typically starts making financial sense. Landlords often see meaningful tax savings, especially if they're higher rate taxpayers. A landlord with £35,000 rental profit would pay £14,700 in property tax (42% higher rate from 2027) but only £6,650 corporation tax (19%), saving £8,050 annually. Even after additional company costs, the net saving is substantial.</p>
+<h2>The cost of getting in: CGT on transfer</h2>
 
-<p>Larger portfolios (9+ properties) almost always benefit from incorporation, particularly with the upcoming tax rate changes. The administrative costs become proportionally smaller, while tax savings increase significantly.</p>
+<p>This is where most incorporation plans either succeed or quietly fall apart. When you move a property into your own company, HMRC treats it as a disposal at market value, even though you receive no cash, because you and the company are connected persons. The latent gain (today's value less your original cost and allowable improvements) is chargeable to capital gains tax at 18% for any part falling in your basic-rate band and 24% above it, with the £3,000 annual exempt amount available once.</p>
 
-<h2>Property Transfer Costs and CGT Implications</h2>
+<p>Consider a landlord who bought a flat for £200,000, now worth £300,000. The £100,000 gain, after the £3,000 exemption, leaves £97,000 chargeable. For a higher-rate taxpayer at 24%, that is a real CGT cost on a transfer where no money has actually changed hands. Multiply that across a portfolio and the upfront bill can dwarf several years of corporation tax advantage. This is why incorporation is so often the right answer for newly acquired or low-gain portfolios and the wrong answer for long-held, pregnant-with-gain ones.</p>
 
-<p>Transferring properties to a company triggers capital gains tax based on market value, not purchase price. This can create significant upfront costs that need to be weighed against future tax savings.</p>
+<p>The principal relief is <strong>Section 162 incorporation relief</strong> (TCGA 1992 s.162). Where you transfer a genuine business as a going concern, wholly or partly in exchange for shares, the gain is rolled into the base cost of those shares rather than taxed now. The decisive word is "business". Passive buy-to-let investment is not automatically a business; HMRC expects evidence of substantial, active management, and the threshold from <em>Ramsay v HMRC</em> is the reference point. A part-time landlord with two lightly managed flats is unlikely to qualify; a landlord running a multi-property portfolio with significant weekly hours and systems has a stronger case. Because the relief is fact-sensitive and frequently scrutinised, it should never be assumed. Our guide on how to <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporate a rental property without CGT</a> sets out the conditions, and the mechanics of valuing and reporting the transfer are covered in our note on <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">calculating CGT on a transfer to a limited company</a>.</p>
 
-<p>For example, if you bought a property for £200,000 and it's now worth £300,000, transferring to a company creates a £100,000 capital gain. At 24% higher rate CGT (minus the £3,000 annual exemption), you'd pay £23,280 in tax.</p>
+<h2>The other cost of getting in: SDLT</h2>
 
-<p>The key is calculating whether annual corporation tax savings justify this upfront cost. Our <a href="/calculators">incorporation calculators</a> can help model these scenarios.</p>
+<p>Capital gains tax is only half the entry bill. A transfer of residential property to your company is also a land transaction, and the company pays stamp duty land tax on the market value. Because a company is treated as owning additional dwellings, the 5% additional-dwellings surcharge applies on top of the standard residential rates (FA 2003 Sch 4ZA, surcharge raised to 5% from 31 October 2024). For higher-value dwellings there is a further trap: a company acquiring a single dwelling worth more than £500,000 can fall within the 17% flat rate and the Annual Tax on Enveloped Dwellings (ATED), unless a relief such as the property-rental-business relief applies and is properly claimed.</p>
 
-<h2>2026 Incorporation Timeline and Strategy</h2>
+<p>SDLT, unlike CGT, has no equivalent of Section 162 relief for a sole owner. The one meaningful exception is a transfer from a genuine partnership to a connected company, where the partnership SDLT provisions in FA 2003 Sch 15 can reduce or remove the charge if the connected-partner conditions are met. This is precisely why landlords who have run a long-standing, properly constituted property partnership sometimes have an incorporation route that a sole owner simply does not. It is also an area HMRC examines closely, so the partnership must be real and predate any incorporation plan, not assembled to manufacture the relief.</p>
 
-<p>If you're considering incorporation, 2026 presents specific timing opportunities and challenges:</p>
+<p>Take CGT and SDLT together and the practical rule is simple: the cheaper it is to get the portfolio into the company, the better incorporation looks. A landlord with low gains and a route to partnership SDLT relief is in a very different position from one transferring decades-old, heavily appreciated properties as a sole owner.</p>
 
-<p><strong>Before April 2026:</strong> Incorporating before the current tax year ends (5 April 2026) allows one final year under current property tax rules. This can be advantageous for timing any property transfers or restructuring.</p>
+<h2>Who incorporation tends to suit (and who it does not)</h2>
 
-<p><strong>April 2026 to April 2027:</strong> This 12-month window is critical. You'll operate under current property tax rates for rental income but know that significant increases are coming. It's an ideal time for incorporation planning and implementation.</p>
+<p>It is more useful to think in terms of profile than portfolio size, because two landlords with the same number of properties can land on opposite answers depending on their borrowing and tax band.</p>
 
-<p><strong>Post-April 2027:</strong> Once the new property tax rates take effect, the benefits of incorporation become even more pronounced. However, you'll have missed the planning window and may face higher CGT on any property transfers.</p>
+<p><strong>The strong case.</strong> A higher or additional-rate taxpayer, with significant mortgage interest hit by Section 24, who intends to hold for the long term and reinvest profit rather than draw it out, and whose properties carry modest latent gains or can use Section 162 and partnership SDLT relief. Here the full interest deduction, the corporation tax rate and the ability to retain profit compound year after year, while the entry cost stays manageable.</p>
 
-<h2>Mortgage and Financing Restructuring</h2>
+<p><strong>The weak case.</strong> A basic-rate taxpayer with little or no borrowing, who relies on the rental income to live, holding long-owned properties with large pregnant gains as a sole owner. The corporation tax advantage is thin, Section 24 barely affects them, the cost of extracting cash erodes what little benefit exists, and the CGT and SDLT entry bill can be ruinous. For this landlord, doing nothing is frequently the right and cheapest answer.</p>
 
-<p>Most residential BTL mortgages cannot be transferred to companies. You'll typically need to:</p>
+<p>Most real portfolios sit between these poles, which is exactly why a generic threshold ("incorporate above X profit") is misleading. Our deeper treatment of <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">when to incorporate a property portfolio</a> works through the timing trade-offs in more detail.</p>
 
-<ul>
-<li>Remortgage properties in the company name</li>
-<li>Accept potentially higher interest rates</li>
-<li>Provide personal guarantees</li>
-<li>Meet lender criteria for limited company lending</li>
-</ul>
+<h2>Alternatives worth weighing first</h2>
 
-<p>However, the full tax deductibility of mortgage interest for companies (compared to the 20% Section 24 restriction for individuals) often compensates for higher borrowing costs.</p>
+<p>Incorporation is not binary, and it is rarely the only lever.</p>
 
-<h2>Alternative Structures to Consider</h2>
+<h3>The hybrid: keep what you own, buy new through a company</h3>
 
-<p>Pure incorporation isn't the only option. Consider these alternatives:</p>
+<p>Leaving your existing properties in personal ownership while routing every future purchase through a company avoids any CGT or SDLT on the portfolio you already hold, yet still gives full interest relief and corporation tax treatment on new acquisitions. For landlords still growing a portfolio, this captures most of the upside without the entry cost. The price is running two structures and two sets of records.</p>
 
-<h3>Mixed Portfolios</h3>
+<h3>Rebalancing with a spouse</h3>
 
-<p>Keep existing properties personally owned and buy new properties through a company. This avoids CGT on transfers while optimising future purchases.</p>
+<p>Transfers between spouses and civil partners are made on a no-gain, no-loss basis for CGT (TCGA 1992 s.58). Moving a share of a property to a lower-earning spouse can shift rental profit into unused basic-rate band, easing the personal tax bill without any company. It only helps where there is genuine spare band, it does not remove Section 24, and a Form 17 election is needed to depart from the 50/50 default for jointly held property. Treat it as a complement to, not a replacement for, the incorporation question.</p>
 
-<h3>Joint Ownership Strategies</h3>
+<h3>Doing nothing, deliberately</h3>
 
-<p>Transferring properties to a lower-earning spouse can sometimes achieve tax savings without incorporation, though this has limitations and risks.</p>
+<p>For many basic-rate landlords with low gearing, the honest professional answer is to stay personal. The administrative simplicity, the annual exempt amount on a future sale, and the absence of an extraction layer can outweigh a small corporation tax saving. "No change" is a legitimate, often correct, recommendation.</p>
 
-<h3>Pension Property Investment</h3>
+<h2>Mortgages, lending and the financing reality</h2>
 
-<p>Self-Invested Personal Pensions (SIPPs) can hold commercial property and some residential property types, offering significant tax advantages for the right circumstances.</p>
+<p>Most personal residential buy-to-let mortgages cannot simply be assigned to a company. Incorporation in practice means remortgaging each property in the company's name, on commercial limited-company terms. That market is narrower than the personal one, generally priced higher, and lenders almost always require personal guarantees from the directors. The full deductibility of company interest often still wins for a leveraged higher-rate landlord, but the higher headline rate is a real cost that belongs in the model, not a footnote. For a lightly geared basic-rate landlord, the extra finance cost can be the factor that tips the decision against incorporating at all.</p>
 
-<h2>Professional Advice and Implementation</h2>
+<h2>Making Tax Digital and the compliance angle</h2>
 
-<p>Given the complexity and the approaching tax changes, professional advice is essential. The decision involves multiple factors including:</p>
+<p>Making Tax Digital for Income Tax (MTD for ITSA) is now live for individual landlords on a staged basis: mandatory from 6 April 2026 where gross property and self-employment income exceeds £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. In scope, it means digital record-keeping and quarterly updates to HMRC rather than a single annual return. Companies are outside MTD for ITSA entirely; they file an annual CT600 instead.</p>
 
-<ul>
-<li>Your current and projected income levels</li>
-<li>Property values and potential CGT liabilities</li>
-<li>Mortgage arrangements and lending requirements</li>
-<li>Long-term investment and exit strategies</li>
-<li>Administrative capacity and costs</li>
-</ul>
+<p>MTD is not, on its own, a reason to incorporate, and treating it as one is a mistake. But if the wider analysis already points towards a company, leaving the MTD ITSA quarterly cycle is a genuine secondary benefit. If you are staying personal, our guide to the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadlines</a> explains what compliance looks like.</p>
 
-<p>A qualified <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model various scenarios and help you understand the financial implications specific to your situation.</p>
+<h2>How to approach the decision in 2026</h2>
 
-<h2>Making the Decision: Key Questions to Ask</h2>
+<p>The right sequence is the same for every landlord, even though the answer differs. Work out your true marginal position after the Section 24 add-back. Price the one-off CGT and SDLT cost of moving the portfolio in, and test whether Section 162 and any partnership SDLT relief realistically apply to you. Model the recurring company position, including the tax on extracting cash, against your personal position. Then layer in finance costs and the ongoing administration. Only if the after-extraction company position beats your personal one by a clear margin does incorporation earn its place.</p>
 
-<p>Before deciding whether to incorporate your BTL portfolio in 2026, ask yourself:</p>
+<p>One worked example from our own client base illustrates the trap. An anonymised four-property landlord, all bought within the last few years and heavily mortgaged, found the recurring corporation tax case compelling on paper. The deciding factor turned out to be SDLT: because the properties had risen sharply since purchase, the surcharge on their current market value made full transfer uneconomic in a single year. The recommendation was a hybrid, keeping the existing four personal and incorporating new purchases, which captured the forward benefit without the prohibitive entry bill. The lesson is that the headline tax comparison rarely decides the case on its own; the entry cost does.</p>
 
-<ul>
-<li>What are my annual rental profits, and how will they be taxed under the new rates from April 2027?</li>
-<li>Can I afford the upfront CGT costs of transferring properties to a company?</li>
-<li>Will the administrative burden and costs of running a company be manageable?</li>
-<li>How do higher corporate mortgage rates affect my financing costs?</li>
-<li>What are my long-term plans for the portfolio?</li>
-</ul>
-
-<p>The answers will help determine whether incorporation makes financial sense for your specific circumstances.</p>
-
-<p>For most portfolios generating significant profits, the tax advantages of incorporation are becoming increasingly compelling, especially with the property tax rate increases from April 2027. However, the decision requires careful analysis of your individual situation and professional guidance to implement effectively.</p>
+<p>Because the transfer is largely irreversible, the reliefs are fact-sensitive, and the SDLT and CGT consequences are unforgiving of mistakes, this is a decision to confirm with a specialist before you move a single property. A <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">clear view of your CGT exposure</a> and an honest read of whether your activity is a business for Section 162 purposes are the two foundations everything else rests on.</p>

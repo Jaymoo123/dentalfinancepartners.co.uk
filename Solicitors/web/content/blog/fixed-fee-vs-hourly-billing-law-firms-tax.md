@@ -11,6 +11,12 @@ altText: "UK law firm partner reviewing billing model options at desk with calcu
 image: ""
 h1: "Fixed Fee vs Hourly Billing for Law Firms: Which Model Suits Your Practice?"
 summary: "A practical comparison of fixed fee and hourly billing models for UK law firms, covering VAT timing, profit recognition, and cashflow implications for solicitors and partners."
+keyTakeaways:
+  - "Under hourly billing the VAT point is the invoice date, but on an advance fixed fee VAT falls due on the date of receipt."
+  - "Both models recognise revenue on an earnings basis under FRS 102, with WIP valued at the lower of cost and net realisable value."
+  - "Partners are taxed on their share of accounting profit, not drawings, so staged fixed fees can mean tax before cash is received."
+  - "Treating advance fixed fees as available profit is a common error, since the cash is owed to HMRC and to the client."
+  - "Staging fixed fee invoices in tranches aligns VAT receipts with work progress and reduces deferred income on the balance sheet."
 schema: ""
 faqs:
   - question: "Can a law firm use both fixed fee and hourly billing on the same matter?"

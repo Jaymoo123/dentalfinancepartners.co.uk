@@ -14,24 +14,42 @@ const slugs = A.slugs || []
 const depth = A.depth || 'full'   // 'full' = gold-reference depth; 'refresh' = de-leak/de-stale/local-depth, lighter
 const cluster = A.cluster || 'CityService'
 const briefDir = A.briefDir || ''   // if set, the writer reads <briefDir>/<slug>.md + .corrections.md as its plan
+const site = A.site || 'property'
+
+// Per-site config. The .wf.js runtime has NO filesystem access, so this is an
+// explicit map mirroring sites/<site>.json (blogContentDir / vercel.productionDomain
+// / paths.housePositions). The site's house_positions doc is the AUTHORITATIVE
+// ground-truth for every rate/statute/framing - there are NO hardcoded tax facts
+// in this workflow (that was the property-only leak). To onboard a new site, add an
+// entry here from its sites/<site>.json + house_positions path.
+const SITES = {
+  property: { blogDir: 'Property/web/content/blog', domain: 'propertytaxpartners.co.uk',
+              hp: 'docs/property/house_positions.md', adviser: 'UK property tax accountant' },
+  dentists: { blogDir: 'Dentists/web/content/blog', domain: 'www.dentalfinancepartners.co.uk',
+              hp: 'docs/dentists/house_positions.md', adviser: 'UK dental practice and associate tax accountant' },
+}
+const cfg = SITES[site]
+if (!cfg) throw new Error(`track2_rewrite_writer: unknown site '${site}'. Add a SITES entry (blogDir/domain/hp/adviser from sites/${site}.json) before running the rewrite engine for it.`)
+
 if (!slugs.length) { log('No slugs in args.slugs'); return [] }
-log(`Rewrite-writer: ${slugs.length} page(s), depth=${depth}, cluster=${cluster}`)
+log(`Rewrite-writer: ${slugs.length} page(s), site=${site}, depth=${depth}, cluster=${cluster}`)
 
 const HARD = `
 HARD RULES (non-negotiable):
 - Blog BODY is RAW HTML (<h2>,<h3>,<p>,<ul><li>,<table>). NEVER markdown (## or - render literally). FAQs go in frontmatter faqs: [{question,answer}]. Preserve the frontmatter slug, category, and structure; you may improve metaTitle (~60 chars) / metaDescription (~155) / h1 / summary.
-- NO pricing, fees, fee-ranges, hourly rates, "save thousands", percentages-of-rent-as-fee. The site is a lead-gen handoff: no pricing anywhere. Strip any that exist.
+- NO pricing, fees, fee-ranges, hourly rates, "save thousands", percentages-of-rent-as-fee, service-fee figures. The site is a lead-gen handoff: no pricing anywhere. Strip any that exist.
 - NO em-dashes (use commas, parentheses, full stops, middle dots).
-- CURRENT FACTS ONLY: MTD-for-ITSA is LIVE (6 Apr 2026 at GBP50k, 6 Apr 2027 at GBP30k, 6 Apr 2028 at GBP20k). Section 24 is fully in force (20% basic-rate credit). FHL regime ABOLISHED 6 Apr 2025. CGT residential 18%/24% (FA 2024, unified s.1H). FA 2026 enacted the 2027 separate property-income rates (22/42/47) - state as enacted, not speculative; they apply to England, WALES and Northern Ireland (only Scotland is carved out for 2027/28). NEVER write "England + NI only" or "Wales/Scotland and Wales set their own property rates" for 2027/28 (that is the pervasive STALE error - the Welsh self-setting power is a future FA 2026 s.8/Sch 2 power NOT in force for 2027/28); and the Section 24 reducer RISES to 22% in step so NO new basic-rate wedge opens. CGT AEA GBP3,000. Verify any statute you cite against legislation.gov.uk at write time (Bill-vs-enacted discipline).
-- Anonymised social proof only; no real client names; no invented statistics. Local/city specifics must be verifiable (e.g. Scotland = LBTT + ADS; Wales = LTT; Article 4 HMO directions exist in named areas) - do NOT fabricate local figures.
+- GROUND TRUTH: ${cfg.hp} is the AUTHORITATIVE source for EVERY rate, threshold, statute citation and framing on this site. Cite it by section (§N / §N.A). Every tax figure, rate, threshold and statutory citation on the page MUST match ${cfg.hp}; if the existing page contradicts a locked position, FLAG it in your return (do NOT silently re-frame, and do NOT edit ${cfg.hp}).
+- VERIFY AT SOURCE, distrust your prior: WebFetch legislation.gov.uk for EVERY statute/section/Finance Act you cite and confirm its operative wording supports the claim (URL liveness alone is insufficient) and, for a Finance Act, its Royal Assent. CRITICAL: do NOT rely on your training prior for any rate/threshold that may have changed recently (post-cutoff or a recent Finance Act); that is exactly where the model defaults to the OLD value. Confirm every such figure against ${cfg.hp} or primary source, and for anything changed in the last ~18 months corroborate against a second source (the GOV.UK measure/policy paper or the relevant HMRC manual), not legislation.gov.uk alone (its revised view can lag).
+- Anonymised social proof only; no real client names; no invented statistics or fabricated local/sector figures.
 - EDITORIAL STANDARD: write like a genuine senior adviser, not generic AI. NO filler ('in today's ever-changing landscape', 'it is important to note'), NO empty throat-clearing intros or restate-only conclusions, NO listicle-in-prose ('three things. First... Second...') as a crutch, NO hedging that says nothing, and do NOT recycle the same phrase across sections. Lead with specifics and a clear point of view; every sentence must earn its place.
-- Add 2-4 genuine internal links to relevant live pages. Keep the lead-capture intent (the LeadForm auto-injects; do not add fake CTAs with pricing).
-REQUIRED READING (durable context; do not restate): docs/property/house_positions.md (cite §N.M only if real), docs/competitor_rewrite_playbook.md, briefs/property/track2/trial/birmingham-property-accountant.md (city REWRITE reference + F-1 pricing-fix), briefs/property/track2/trial/cgt-rates-property-2026-27-current-rates-explained.md (gold-reference depth).
+- Add 2-4 genuine internal links to relevant live pages in ${cfg.blogDir} (verify each target's /blog/<category>/ by reading the target file's frontmatter category; a wrong category 404s because routes use dynamicParams=false). Keep the lead-capture intent (the LeadForm auto-injects; do not add fake CTAs with pricing).
+REQUIRED READING (durable context; do not restate): ${cfg.hp} (the locked ground-truth; cite §N only if real). If a briefDir is supplied, prefer its per-page brief + corrections, but re-verify every statute at source regardless.
 `
 
 const DEPTH_NOTE = depth === 'full'
-  ? `DEPTH = FULL gold-reference rewrite. For a city page: ~2,200-3,200 words, genuine local specificity (named sub-markets/boroughs, regional tax nuances, local landlord context), a Section 24 worked example, an SDLT/LBTT/LTT additional-dwelling note, CGT-on-disposal, MTD readiness, 10-14 FAQs, internal links. For an info/topic page: comprehensive, intent-matched, deeper than the strongest competitor on the primary query.`
-  : `DEPTH = REFRESH (lighter). The page is currently invisible/low-traffic; do NOT bloat to gold-reference length. Priorities, in order: (1) STRIP all pricing/fees, (2) FIX every stale fact (MTD/Section 24/FHL/CGT rates/2027 rates per the hard rules), (3) add genuine local/topic specificity where the page is generic boilerplate, (4) tighten structure + metaTitle/description for CTR, (5) ensure 2-4 internal links and 6-10 FAQs. Aim ~1,400-2,000 words.`
+  ? `DEPTH = FULL gold-reference rewrite: comprehensive, intent-matched, deeper than the strongest competitor on the primary query. ~2,000-3,000 words where the topic warrants it, with worked examples (every figure grounded in ${cfg.hp}), at least one comparison <table> where options/rates/bands are compared, 8-14 FAQs reusing the proven query demand, and genuine internal links. Add real local/sector specificity only where verifiable; never fabricate figures.`
+  : `DEPTH = REFRESH (lighter de-stale). The page is currently invisible/low-traffic; do NOT bloat. Priorities in order: (1) STRIP all pricing/fees, (2) FIX every stale fact against ${cfg.hp} and primary source (rates, thresholds, statute citations, year-tags), (3) add genuine specificity where the page is generic boilerplate, (4) tighten structure + metaTitle/description for CTR, (5) ensure 2-4 internal links and 6-10 FAQs. Aim ~1,400-2,200 words.`
 
 // Minimal return on purpose: the rewrite agent does a large in-place edit, so forcing a
 // big structured audit afterwards causes "completed without calling StructuredOutput".
@@ -69,7 +87,7 @@ const VERIFY_SCHEMA = {
     statutes_ok: { type: 'boolean' },
     pricing_clean: { type: 'boolean' },
     em_dash_clean: { type: 'boolean' },
-    facts_current: { type: 'boolean', description: 'MTD/Section 24/FHL/CGT/2027 all stated correctly' },
+    facts_current: { type: 'boolean', description: 'every rate/threshold/year-tag/statute matches the site house_positions and primary source (no stale figures)' },
     cannibalisation_ok: { type: 'boolean', description: 'Still distinct from sibling/canonical pages (no new cannibalisation introduced)' },
     html_valid: { type: 'boolean' },
     query_coverage: { type: 'object', additionalProperties: false, required: ['covered_pct', 'missing', 'natural'],
@@ -89,15 +107,15 @@ const VERIFY_SCHEMA = {
 const results = await pipeline(
   slugs,
   (slug) => agent(
-    `You are the Track 2 REWRITE-WRITER for the legacy page "${slug}" (cluster ${cluster}) on propertytaxpartners.co.uk. Rewrite the live page in place.
+    `You are the Track 2 REWRITE-WRITER for the legacy page "${slug}" (cluster ${cluster}) on ${cfg.domain}. Rewrite the live page in place.
 ${HARD}
 ${DEPTH_NOTE}
 Steps:
 ${briefDir ? `0. PLAN (read FIRST if present): \`${briefDir}/${slug}.md\` is your verified rewrite brief - follow its gap-mode diagnosis, section-by-section content plan, target word count, statute spine, competitor depth benchmark, and internal-link targets. ALSO read \`${briefDir}/${slug}.corrections.md\` if present and PREFER its statute corrections over anything in the brief (the brief's statute spine may carry adversarially-flagged miscites). If neither file exists, proceed from the data pull below. Regardless: independently re-verify EVERY statute you cite at legislation.gov.uk at write time and trust legislation.gov.uk over the brief.` : `0. NO BRIEF: treat target_queries[] from the data pull (step 1) as your authoritative coverage target set and the competitor_depth[] word/section/faq counts as your depth benchmark. Enumerate and weave every target_queries[] item with the same rigor a brief would demand.`}
-1. Run \`python -m optimisation_engine.track2.pull_page_data --slug ${slug} --json\` for GSC queries (what it should target), GA4 engagement (where users engage/bounce, if any), competitor signals, and the parsed content map. This prints \`target_queries[]\` (EVERY proven GSC+Bing demand query, deduped and sorted by impressions descending) and an \`adjacent[]\` opportunity list - these are your coverage targets.
-2. Read Property/web/content/blog/${slug}.md in full (frontmatter + body).
-3. Rewrite the .md IN PLACE per the depth note and every hard rule: target the primary + secondary queries the GSC data shows, fix all stale facts, strip all pricing, add genuine specificity, proper HTML body, internal links, FAQs in frontmatter. Use the Write/Edit tools on Property/web/content/blog/${slug}.md.
-4. ON-PAGE SEO (best-practice; REWRITE-ONLY, never collapse): weave EVERY target_queries[] item naturally and ONCE, prioritised by impressions - highest-impression queries belong in the metaTitle / h1 / an early H2; mid-impression in H2s and FAQs; long-tail in FAQs and body prose. NEVER repeat a query to satisfy a checker: a separate stage judges naturalness and stuffing (repeated or list-dumped queries) FAILS it. metaTitle <=60 chars, leading with the primary (highest-impression) query plus a CTR hook; metaDescription <=155 chars; h1 query-aligned to the primary intent; phrase H2s as the user's actual question/intent where natural; 8-14 FAQs that reuse the long-tail target_queries[] (and competitor PAA from the data pull) VERBATIM where natural. E-E-A-T + freshness: set reviewedBy + reviewerCredentials + reviewedAt and dateModified BOTH to TODAY'S date in YYYY-MM-DD (run \`date +%Y-%m-%d\` first to get it; do NOT hardcode a date) in frontmatter, but PRESERVE the original \`date\` field; use a REAL reviewer per docs/property/house_positions.md - never invent a name or credentials. If the page is step-by-step / "how to", add a \`howToSteps: [{name, text}]\` list to frontmatter (this auto-emits HowTo schema). Add 3-6 internal links to REAL sibling slugs.
+1. Run \`python -m optimisation_engine.track2.pull_page_data --slug ${slug} --site ${site} --json\` for GSC queries (what it should target), GA4 engagement (where users engage/bounce, if any), competitor signals, and the parsed content map. This prints \`target_queries[]\` (EVERY proven GSC+Bing demand query, deduped and sorted by impressions descending) and an \`adjacent[]\` opportunity list - these are your coverage targets.
+2. Read ${cfg.blogDir}/${slug}.md in full (frontmatter + body).
+3. Rewrite the .md IN PLACE per the depth note and every hard rule: target the primary + secondary queries the GSC data shows, fix all stale facts, strip all pricing, add genuine specificity, proper HTML body, internal links, FAQs in frontmatter. Use the Write/Edit tools on ${cfg.blogDir}/${slug}.md.
+4. ON-PAGE SEO (best-practice; REWRITE-ONLY, never collapse): weave EVERY target_queries[] item naturally and ONCE, prioritised by impressions - highest-impression queries belong in the metaTitle / h1 / an early H2; mid-impression in H2s and FAQs; long-tail in FAQs and body prose. NEVER repeat a query to satisfy a checker: a separate stage judges naturalness and stuffing (repeated or list-dumped queries) FAILS it. metaTitle <=60 chars, leading with the primary (highest-impression) query plus a CTR hook; metaDescription <=155 chars; h1 query-aligned to the primary intent; phrase H2s as the user's actual question/intent where natural; 8-14 FAQs that reuse the long-tail target_queries[] (and competitor PAA from the data pull) VERBATIM where natural. E-E-A-T + freshness: set reviewedBy + reviewerCredentials + reviewedAt and dateModified BOTH to TODAY'S date in YYYY-MM-DD (run \`date +%Y-%m-%d\` first to get it; do NOT hardcode a date) in frontmatter, but PRESERVE the original \`date\` field; use a REAL reviewer per ${cfg.hp} - never invent a name or credentials. If the page is step-by-step / "how to", add a \`howToSteps: [{name, text}]\` list to frontmatter (this auto-emits HowTo schema). Add 3-6 internal links to REAL sibling slugs.
    TABLES (important): if the page compares options (anything "vs", "or", "which is better", structures/wrappers/regimes, or a decision between routes) it MUST include at least one clear side-by-side comparison \`<table>\` (thead + tbody); pages built around rates/bands/thresholds/deadlines or several worked figures should use a \`<table>\` where it makes the data scannable. The site styles \`.prose-blog table/th/td\`, so tables render cleanly, and a well-structured comparison table is the format Google lifts into featured snippets. Use a table only where it genuinely structures side-by-side or reference data (never as filler), keep it plain HTML (no inline styles/classes), and put no pricing/fees in it.
 IMPORTANT: after you have SAVED the file, your final action is to return ONLY {slug, words_after, done:true}. Keep this return tiny so it is never truncated; the verify stage reads the saved file for the real audit. If you could not finish the rewrite, return done:false with a one-line note.`,
     { label: `rewrite:${slug}`, phase: 'Rewrite', schema: REWRITE_SCHEMA }
@@ -110,11 +128,11 @@ IMPORTANT: after you have SAVED the file, your final action is to return ONLY {s
   // This is the WS-D root-cause fix wired into the legacy-rewrite path (the
   // net-new generator already does this in content_pipeline).
   (prev) => agent(
-    `Deterministic normalisation for the just-rewritten page Property/web/content/blog/${prev.slug}.md.
+    `Deterministic normalisation for the just-rewritten page ${cfg.blogDir}/${prev.slug}.md.
 Run EXACTLY these two commands IN ORDER (both are deterministic; do NOT hand-edit):
-  1. python scripts/frontmatter_lint.py --fix Property/web/content/blog/${prev.slug}.md
+  1. python scripts/frontmatter_lint.py --fix ${cfg.blogDir}/${prev.slug}.md
      (quotes free-text frontmatter values so an unquoted colon-space e.g. "rates 2026/27: main pool" cannot break the YAML build - this is a systematic writer defect; ALWAYS run it)
-  2. python optimisation_engine/blog_generator/slug_resolver.py --fix Property/web/content/blog/${prev.slug}.md
+  2. python optimisation_engine/blog_generator/slug_resolver.py --fix ${cfg.blogDir}/${prev.slug}.md
      (rewrites every internal /blog link to the one real category for the slug the writer chose, collapses known 301 hops, and LEAVES any link to a nonexistent page - printing it as UNRESOLVED)
 The scripts are the source of truth. Then report what it printed: canonicalised = true if it said it canonicalised the file, and unresolved = the exact list of any "UNRESOLVED" hrefs (empty array if none). Any UNRESOLVED entry means the writer linked to a page that does not exist - it must be repointed, so report each verbatim.`,
     { label: `normalise:${prev.slug}`, phase: 'Normalise', schema: NORMALISE_SCHEMA }
@@ -127,27 +145,27 @@ The scripts are the source of truth. Then report what it printed: canonicalised 
   // field, never repeats, and re-runs the deterministic check. This is the
   // ranking-grade gate the verify stage reports against.
   (prev) => agent(
-    `Deterministic query-coverage check for the just-rewritten page Property/web/content/blog/${prev.slug}.md.
-Run \`python scripts/track2_query_coverage.py --slug ${prev.slug} --json\`.
+    `Deterministic query-coverage check for the just-rewritten page ${cfg.blogDir}/${prev.slug}.md.
+Run \`python scripts/track2_query_coverage.py --slug ${prev.slug} --site ${site} --json\`.
 - If it returns passed:true -> return {slug:"${prev.slug}", passed:true, repaired:false, coverage_score:<its coverage_score>, missing:[]}.
 - If it returns passed:false -> it lists missing_queries[] (proven GSC+Bing demand NOT served) and, per query, a \`where\` hint (meta / H2 / FAQ / body) for where it should go. WEAVE-REPAIR, MAX TWICE:
-    a. Edit Property/web/content/blog/${prev.slug}.md to place EACH missing query naturally in the indicated field (metaTitle/metaDescription/H2/FAQ/body), ONCE each. Break NO HARD RULE (no pricing, no em-dashes, current facts, valid HTML, real reviewer). Do NOT repeat a query or dump a bare list - a separate stage fails stuffing.
-    b. After editing, run \`python scripts/frontmatter_lint.py --fix Property/web/content/blog/${prev.slug}.md\` then RE-RUN \`python scripts/track2_query_coverage.py --slug ${prev.slug} --json\`.
+    a. Edit ${cfg.blogDir}/${prev.slug}.md to place EACH missing query naturally in the indicated field (metaTitle/metaDescription/H2/FAQ/body), ONCE each. Break NO HARD RULE (no pricing, no em-dashes, current facts, valid HTML, real reviewer). Do NOT repeat a query or dump a bare list - a separate stage fails stuffing.
+    b. After editing, run \`python scripts/frontmatter_lint.py --fix ${cfg.blogDir}/${prev.slug}.md\` then RE-RUN \`python scripts/track2_query_coverage.py --slug ${prev.slug} --site ${site} --json\`.
     c. Repeat (a)-(b) at most twice total. After at most 2 repairs, return the FINAL deterministic result.
 Return {slug:"${prev.slug}", passed:<final passed>, repaired:<true if you edited the file>, coverage_score:<final coverage_score>, missing:<final missing_queries as a list of query strings>}.`,
     { label: `coverage:${prev.slug}`, phase: 'Coverage', schema: COVERAGE_SCHEMA }
   ).then(cv => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, coverage: cv })),
 
   (prev) => agent(
-    `You are the adversarial VERIFY stage for the rewritten page Property/web/content/blog/${prev.slug}.md. Default skeptical.
+    `You are the adversarial VERIFY stage for the rewritten page ${cfg.blogDir}/${prev.slug}.md. Default skeptical.
 The deterministic Normalise stage reported these UNRESOLVED (invented) links that still need repointing: [${(prev.normalise && prev.normalise.unresolved || []).join(', ') || 'none'}]. If that list is non-empty, set html_valid:false and add each to flags.
 The deterministic Coverage stage returned: passed=${prev.coverage && prev.coverage.passed}, coverage_score=${prev.coverage && prev.coverage.coverage_score}, missing=[${(prev.coverage && prev.coverage.missing || []).join(', ') || 'none'}]. TRUST those numbers - do not recompute coverage. Populate query_coverage from them: covered_pct = the coverage_score (as a percentage), missing = that missing list; you ONLY judge query_coverage.natural - set it false if any target query is STUFFED (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
 Read the file (post-rewrite). Check:
 1. STATUTES: every statute/section cited - WebFetch legislation.gov.uk to confirm it exists, says what the page claims, and (for any Finance Act) its Royal Assent (Bill-vs-enacted).
 2. PRICING: NO fees/fee-ranges/hourly rates/percentage-of-rent fees anywhere (legitimate tax figures like the GBP3,000 CGT allowance or SDLT bands are fine).
 3. EM-DASHES: none.
-4. FACTS CURRENT: MTD live (Apr 2026 GBP50k / 2027 GBP30k / 2028 GBP20k), Section 24 in force, FHL abolished Apr 2025, CGT 18/24 unified, FA 2026 2027 rates stated as enacted. Flag any stale framing.
-5. CANNIBALISATION: Grep Property/web/content/blog - the rewrite must not duplicate a stronger sibling/canonical's intent (no new cannibalisation).
+4. FACTS CURRENT: every rate, threshold, year-tag and statute on the page matches ${cfg.hp} (the locked ground-truth) and primary source. Flag any figure that contradicts ${cfg.hp}, any stale framing, or any recently-changed rate you could not confirm at primary source (do not trust the page's prior figure or your own training prior).
+5. CANNIBALISATION: Grep ${cfg.blogDir} - the rewrite must not duplicate a stronger sibling/canonical's intent (no new cannibalisation).
 6. HTML valid (no leaked markdown, frontmatter intact).
 7. META: set meta_ok = (metaTitle is <=60 chars) AND (metaDescription is <=155 chars) AND (h1 is aligned to the primary query intent). Count the characters.
 8. E-E-A-T: set eeat_ok = (reviewedBy AND reviewerCredentials AND reviewedAt AND dateModified are all present in frontmatter).

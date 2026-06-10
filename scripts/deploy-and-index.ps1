@@ -82,23 +82,23 @@ Write-Host ""
 #    (the recurring Track-2 defect class). Em-dash / pricing surface as warnings;
 #    run `python scripts/predeploy_gate.py --strict` to enforce those too.
 Write-Step "0/6 Pre-deploy content gate"
-if ($Site -eq 'property') {
-    $gateArgs = @('scripts/predeploy_gate.py')
-    if ($QaBatch) { $gateArgs += @('--qa-batch', $QaBatch) }
-    if ($DryRun) {
-        Write-Warn "Would run: python $($gateArgs -join ' ')"
-    } else {
-        Push-Location $accountingRoot
-        python @gateArgs
-        $gateExit = $LASTEXITCODE
-        Pop-Location
-        if ($gateExit -ne 0) {
-            Write-Fail "Pre-deploy gate failed (broken links / known-bad QA pages). Fix before deploying."
-        }
-        Write-OK "Pre-deploy gate passed"
-    }
+# Site-parameterised: predeploy_gate.py + track2_link_audit.py + frontmatter_lint.py
+# all resolve the corpus + routes from sites/<site>.json via --site. The internal
+# /blog link floor (0 HARD 404 repo-wide) is the load-bearing check for net-new
+# pages (dynamicParams=false makes a wrong-category link 404 silently).
+$gateArgs = @('scripts/predeploy_gate.py', '--site', $Site)
+if ($QaBatch) { $gateArgs += @('--qa-batch', $QaBatch) }
+if ($DryRun) {
+    Write-Warn "Would run: python $($gateArgs -join ' ')"
 } else {
-    Write-Warn "Pre-deploy gate is Property-only; skipping for '$Site'"
+    Push-Location $accountingRoot
+    python @gateArgs
+    $gateExit = $LASTEXITCODE
+    Pop-Location
+    if ($gateExit -ne 0) {
+        Write-Fail "Pre-deploy gate failed (broken links / known-bad QA pages). Fix before deploying."
+    }
+    Write-OK "Pre-deploy gate passed"
 }
 Write-Host ""
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
@@ -18,12 +19,16 @@ type BlogPostRendererProps = {
 
 function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
+  if (Number.isNaN(d.getTime())) return "";
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
 /**
- * Renders posts produced by the Python pipeline (`02_blog_generator.py` → `03_content_parser.py` → `09_md_exporter.py`).
- * Expected shape: frontmatter fields + HTML body in the Markdown file; optional `schema` JSON-LD string from `05_schema_builder.py`.
+ * Renders a blog post with a full-bleed hero (image with a navy-scrim, or a
+ * navy gradient fallback when no image is set), a published/updated date line,
+ * an optional "Key takeaways" block (falls back to the summary), the HTML body,
+ * FAQs, author aside, lead CTA and related articles. Brand tokens only — no
+ * hardcoded colours — so it stays on-brand with the rest of the site.
  */
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);
@@ -32,64 +37,155 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
 
+  const takeaways =
+    post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
+  const showUpdated = post.updatedDate && post.updatedDate !== post.date;
+  const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
+
   return (
     <>
       <ReadingProgress />
-      <article className="bg-white py-12 sm:py-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: jsonLd }}
-        />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
 
+      <section className="relative h-[420px] sm:h-[480px] lg:h-[520px] overflow-hidden">
+        {post.image ? (
+          <Image
+            src={post.image}
+            alt={post.altText || post.title}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover scale-105 blur-[2px]"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-[var(--navy)] via-[var(--navy-soft)] to-[var(--navy-muted)]" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy)]/95 via-[var(--navy)]/70 to-[var(--navy)]/40" />
+        <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
+          <div className="max-w-4xl">
+            <Breadcrumb
+              variant="light"
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Blog", href: "/blog" },
+                { label: post.category, href: `/blog/${categorySlug}` },
+                { label: post.title },
+              ]}
+            />
+            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[var(--gold)]">
+              {post.category}
+            </p>
+            <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
+              {post.h1}
+            </h1>
+            <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/70">
+              {readTime > 0 && <span>{readTime} min read</span>}
+              {post.date && (
+                <>
+                  {readTime > 0 ? <span aria-hidden>·</span> : null}
+                  <time dateTime={post.date}>Published {formatUkDate(post.date)}</time>
+                </>
+              )}
+              {showUpdated && (
+                <>
+                  <span aria-hidden>·</span>
+                  <time dateTime={post.updatedDate}>Updated {formatUkDate(post.updatedDate!)}</time>
+                </>
+              )}
+            </p>
+          </div>
+        </div>
+        {post.imageCredit?.photographer ? (
+          <p className="absolute bottom-2 right-3 z-10 text-[10px] text-white/50">
+            Photo:{" "}
+            {post.imageCredit.photographerUrl ? (
+              <a
+                href={post.imageCredit.photographerUrl}
+                target="_blank"
+                rel="noopener nofollow"
+                className="underline hover:text-white/80"
+              >
+                {post.imageCredit.photographer}
+              </a>
+            ) : (
+              post.imageCredit.photographer
+            )}
+            {post.imageCredit.source ? (
+              <>
+                {" / "}
+                {post.imageCredit.sourceUrl ? (
+                  <a
+                    href={post.imageCredit.sourceUrl}
+                    target="_blank"
+                    rel="noopener nofollow"
+                    className="underline hover:text-white/80"
+                  >
+                    {post.imageCredit.source}
+                  </a>
+                ) : (
+                  post.imageCredit.source
+                )}
+              </>
+            ) : null}
+          </p>
+        ) : null}
+      </section>
+
+      <article className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-12">
             <div className="max-w-4xl">
-              <Breadcrumb
-                items={[
-                  { label: "Home", href: "/" },
-                  { label: "Blog", href: "/blog" },
-                  { label: post.category, href: `/blog/${categorySlug}` },
-                  { label: post.title },
-                ]}
-              />
-              <header className="border-l-4 border-[var(--primary)] bg-[var(--surface)] p-8 mt-6">
-                <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent)]">
-                  {post.category}
-                </p>
-                <h1 className="mt-3 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl md:text-5xl">
-                  {post.h1}
-                </h1>
-                <div className="mt-3 flex items-center gap-3 text-sm text-[var(--muted)]">
-                  {post.date && (
-                    <time dateTime={post.date}>{formatUkDate(post.date)}</time>
-                  )}
-                  {post.author && (
-                    <>
-                      <span>•</span>
-                      <span>{post.author}</span>
-                    </>
-                  )}
-                  <span>•</span>
-                  <span>{readTime} min read</span>
-                </div>
-                {post.summary ? (
-                  <p className="mt-4 text-lg text-[var(--ink-soft)] leading-relaxed">{post.summary}</p>
+              <div className="mb-8 pb-8 border-b border-[var(--border)]">
+                {post.author ? (
+                  <p className="text-sm font-semibold text-[var(--ink)]">{post.author}</p>
                 ) : null}
-              </header>
+                {verified ? (
+                  <p className="mt-2 flex items-start gap-2 text-xs text-[var(--muted)]">
+                    <svg
+                      className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gold)]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>
+                      Figures checked against primary sources (HMRC, legislation.gov.uk, NHS BSA) in {verified}.
+                    </span>
+                  </p>
+                ) : null}
+              </div>
+
+              {takeaways ? (
+                <section
+                  className="not-prose rounded-lg border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6"
+                  aria-label="Key takeaways"
+                >
+                  <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">
+                    Key takeaways
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {takeaways.map((t, i) => (
+                      <li key={i} className="flex items-start gap-2 text-[var(--ink-soft)]">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
+                        <span className="text-base leading-relaxed">{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : post.summary ? (
+                <p className="text-lg text-[var(--ink-soft)] leading-relaxed border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6">
+                  {post.summary}
+                </p>
+              ) : null}
 
               <div className="lg:hidden mt-8">
                 <TableOfContents headings={headings} />
               </div>
-
-              {post.image ? (
-                <img
-                  src={post.image}
-                  alt={post.altText || post.title}
-                  className="mt-10 w-full border-2 border-[var(--border)] object-cover shadow-sm"
-                  width={1200}
-                  height={630}
-                />
-              ) : null}
 
               <div
                 className="article-body prose-blog mt-10"

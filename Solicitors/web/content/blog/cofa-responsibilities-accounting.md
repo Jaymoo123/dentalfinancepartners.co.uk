@@ -13,7 +13,12 @@ altText: "Professional UK solicitor reviewing financial documents and compliance
 image: ""
 h1: "COFA Responsibilities for Accounting: A Complete Guide for UK Law Firms"
 summary: "COFAs face significant accounting responsibilities under SRA regulations, from client money oversight to financial controls. Understanding these duties is crucial for compliance and avoiding regulatory issues."
-schema: ""
+keyTakeaways:
+  - "COFA accounting duties cannot be delegated: you can outsource the bookkeeping, but you remain personally responsible for SRA Accounts Rules compliance and oversight."
+  - "Client account reconciliations must be completed by the 5th working day of the following month and personally reviewed by the COFA."
+  - "Keep client money rigorously segregated in designated client accounts and used only for its intended purpose, with supporting documentation for every transaction."
+  - "Maintain client ledger cards, bank records and reconciliations for at least six years after the matter concludes, available for SRA inspection."
+  - "Complete the annual SRA compliance certificate honestly; false certification can lead to serious disciplinary action."
 faqs:
   - question: "What are the key accounting duties of a COFA?"
     answer: "COFAs must oversee client money management, ensure monthly reconciliations are completed by the 5th working day, implement financial controls, maintain proper records, and complete annual compliance certificates. These responsibilities cannot be delegated and require direct COFA involvement even if external accountants are used."

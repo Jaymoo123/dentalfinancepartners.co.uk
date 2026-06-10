@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing law firm acquisition finance documents with a l
 image: ""
 h1: "How Do UK Solicitors Finance a Law Firm Acquisition?"
 summary: "A practical guide for UK solicitors on financing a law firm acquisition. Covers bank lending, asset finance, vendor financing, and the SRA compliance requirements that apply when borrowing to buy a practice."
+keyTakeaways:
+  - "Bank lending for a law firm typically covers 60 to 70% of the price and needs a debt service coverage ratio of at least 1.25x."
+  - "A lender must never take a charge over the client account, and the COFA should refuse any attempt to do so."
+  - "Vendor financing often splits the price 50/50, with deferred consideration repaid over 3 to 7 years at 4 to 8% interest."
+  - "Deferred consideration is still a capital gain in the year of disposal, with BADR at 14% in 2025/26 rising to 18% from 6 April 2026."
+  - "Interest on a loan to buy a partnership capital interest is deductible against profits under ITA 2007 s.398."
 schema: ""
 faqs:
   - question: "Can I use a personal loan to buy a law firm?"

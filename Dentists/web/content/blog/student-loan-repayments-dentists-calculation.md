@@ -3,208 +3,149 @@ title: "Student Loan Repayments for Dentists: How They Are Calculated"
 slug: "student-loan-repayments-dentists-calculation"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/student-loan-repayments-dentists-calculation"
 date: "2026-03-28"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
-metaTitle: "Student Loan Repayments for Dentists: Calculation Guide"
-metaDescription: "You pay 9% of income above the threshold — but which plan applies to you? Plan 1, Plan 2, and postgraduate loan calculations for UK dentists."
+metaTitle: "Student Loan Repayments for Dentists: 2026/27 Calculation"
+metaDescription: "How dentist student loan repayments are calculated for 2026/27: Plan 1, 2, 4, 5 and postgraduate thresholds, plus PAYE versus Self Assessment for associates."
 altText: "UK dentist reviewing student loan repayment calculations on laptop"
-image: ""
+image: "https://images.pexels.com/photos/8962473/pexels-photo-8962473.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/an-individual-tax-form-on-the-table-8962473/"
 h1: "Student Loan Repayments for Dentists: How They Are Calculated"
-summary: "Many UK dentists carry significant student debt from their training. Understanding how repayments are calculated helps with financial planning and tax efficiency."
+summary: "Many UK dentists carry significant student debt from their training. Understanding how repayments are calculated, and which plan and threshold apply for 2026/27, helps with financial planning and cash flow."
+keyTakeaways:
+  - "Undergraduate plans charge 9% of income above the threshold (Plan 1 £26,900, Plan 2 £29,385, Plan 4 £33,795, Plan 5 £25,000) for 2026/27."
+  - "A postgraduate loan runs alongside an undergraduate plan, charging a separate 6% above its £21,000 threshold on the same income."
+  - "Self-employed dentists pay through Self Assessment as one annual figure, not spread monthly, and it is excluded from payments on account."
+  - "Multiple PAYE employers each apply the threshold separately, so combined high income can underpay through the year and create a Self Assessment balancing amount."
+  - "Write-off is 25 years for Plan 1, 30 years for Plan 2 and postgraduate, and 40 years for Plan 5 (courses from 1 August 2023)."
 schema: ""
 faqs:
   - question: "How much will I pay in student loan repayments as a UK dentist?"
-    answer: "Your repayment depends on your total annual income. On Plan 2 loans, you pay 9% of income above £27,295 (2024/25 threshold). For example, earning £60,000 means paying 9% of £32,705 = £2,943 annually. Higher earners pay proportionally more — someone earning £80,000 pays £4,743 per year."
-  - question: "Do student loan repayments reduce if I contribute to a pension?"
-    answer: "Yes, pension contributions reduce your taxable income for student loan purposes. If you earn £70,000 and contribute £10,000 to your pension, your student loan is calculated on £60,000 instead. This saves you £900 annually in student loan repayments (9% of £10,000), plus income tax and National Insurance relief."
+    answer: "Your repayment depends on your total annual income and your plan. On Plan 2 (2026/27 threshold £29,385) you pay 9% of income above the threshold. Earning £60,000 means paying 9% of £30,615, which is roughly £2,755 a year. Higher earners pay proportionally more, because the 9% applies to every pound above the threshold."
+  - question: "Do pension contributions reduce my student loan repayments?"
+    answer: "It depends on how the contribution is made. For an employed dentist, only a net-pay or salary-sacrifice workplace pension reduces the pay figure your employer uses for the student loan deduction. A relief-at-source personal pension does not reduce the PAYE deduction. For a self-employed dentist, gross personal pension contributions do not reduce the profit used in the Self Assessment student loan calculation, although an employer contribution from your own company does reduce company profit and your salary."
   - question: "How are student loans calculated for self-employed dentists?"
-    answer: "Self-employed dentists pay student loan repayments through Self Assessment based on total annual profits. You pay 9% of income above the threshold (£27,295 for Plan 2). The amount is added to your tax bill and paid in two instalments. Many dentists need to budget carefully as this creates large lump-sum payments rather than monthly deductions."
+    answer: "Self-employed dentists pay through Self Assessment, based on total income for the year. The same plan rate applies (9% above the undergraduate threshold, 6% above the postgraduate threshold). The amount is added to your tax bill, and unlike PAYE it is collected as part of the larger Self Assessment payment rather than spread monthly, so it needs budgeting for."
   - question: "What happens if I work at multiple dental practices?"
-    answer: "HMRC calculates student loan repayments on your total income from all sources. If you work at multiple practices, some as PAYE and some self-employed, you report everything on Self Assessment. You might over-pay through PAYE deductions if each employer uses the full threshold, potentially creating a refund situation that gets resolved through your tax return."
-  - question: "Can I reduce my student loan repayments through tax planning?"
-    answer: "Yes, pension contributions and legitimate business expenses reduce your taxable income for student loan purposes. An associate contributing £10,000 to their pension saves £900 per year in student loan repayments while building retirement savings."
-  - question: "Should I pay off my dental student loans early?"
-    answer: "This depends on your circumstances. If you're likely to pay off the full amount anyway and current interest rates are high, early repayment might make sense. However, the income-contingent nature and eventual write-off provide valuable insurance against future income drops."
-  - question: "How do student loans work if I'm self-employed as a dentist?"
-    answer: "Self-employed dentists pay student loan repayments through Self Assessment based on total taxable income. You'll need to calculate the liability yourself and pay it alongside your income tax and National Insurance. The same percentage rates apply as for employed dentists."
+    answer: "Each PAYE employer applies the threshold separately, so individually each may deduct little or nothing. If your combined income is well above the threshold, you can underpay through the year and face a balancing student loan amount through Self Assessment. Mixed PAYE and self-employed income is always reconciled on the tax return against total income."
+  - question: "When is a dentist's student loan written off?"
+    answer: "It depends on the plan. Plan 1 is generally written off 25 years after the first April you were due to repay, Plan 2 and the postgraduate loan after 30 years, and Plan 5 (courses started on or after 1 August 2023) after 40 years. After write-off any remaining balance is cancelled regardless of how much was repaid."
+  - question: "Should I pay off my dental student loan early?"
+    answer: "This depends on your circumstances. If you are very likely to clear the full balance anyway and the interest rate is high, voluntary overpayment can save interest. If you may never repay the full amount before write-off, the income-contingent design (repayments fall if income falls, and stop in a low-earning year) has real value. Model both before deciding."
+  - question: "Can I have two student loans running at once as a dentist?"
+    answer: "Yes. A postgraduate loan runs alongside an undergraduate plan. You pay 9% above the undergraduate threshold and a separate 6% above the £21,000 postgraduate threshold, so a dentist with both can have two deductions running at the same time on the same income."
 ---
 
-<p>Most UK dentists graduate with substantial student debt — often £50,000 to £80,000 or more after five years of dental school. Understanding how your student loan repayments are calculated is crucial for financial planning, especially when your income fluctuates between associate work, private practice, and NHS contracts.</p>
+<p>Most UK dentists qualify with substantial student debt, often a five-figure or low six-figure balance after five years of dental school plus any foundation or postgraduate study. How your repayments are actually calculated matters for planning, because the figure changes with your plan, your total income for the year, and whether that income reaches you through PAYE or through Self Assessment. This guide sets out the current 2026/27 thresholds, the calculation for an employed dentist versus a self-employed associate, what happens with multiple income sources or a high-earning year, and when the loan is finally written off.</p>
 
-<h2>Types of Student Loans for Dentists</h2>
-<p>Most UK dentists will have a combination of undergraduate and postgraduate loans. Understanding which type you have determines how much you'll repay and when.</p>
+<h2>Which plan you are on, and the 2026/27 thresholds</h2>
 
-<h3>Plan 1 Loans (Pre-2012)</h3>
+<p>The plan is set by when and where you started your course, not by how much you owe. You repay a fixed percentage of income above a threshold, and that threshold is reviewed every April, so the year matters. The figures below are the thresholds and rates that apply for the <strong>2026/27 tax year</strong>, taken from the GOV.UK student loan deduction tables and the official terms and conditions.</p>
 
-<p>If you started your dental degree before September 2012, you'll have Plan 1 loans. These have a 9% repayment rate on income above £22,015 (2024/25) and are written off after 25 years.</p>
+<table>
+<thead>
+<tr><th>Plan</th><th>Who is on it</th><th>2026/27 annual threshold</th><th>Rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Plan 1</td><td>Started before 1 September 2012 (England and Wales)</td><td>£26,900</td><td>9%</td></tr>
+<tr><td>Plan 2</td><td>Started 1 September 2012 to 31 July 2023 (England and Wales)</td><td>£29,385</td><td>9%</td></tr>
+<tr><td>Plan 4</td><td>Scottish students</td><td>£33,795</td><td>9%</td></tr>
+<tr><td>Plan 5</td><td>Course started on or after 1 August 2023 (England)</td><td>£25,000</td><td>9%</td></tr>
+<tr><td>Postgraduate Loan</td><td>Master's or doctoral loan</td><td>£21,000</td><td>6%</td></tr>
+</tbody>
+</table>
 
-<h3>Plan 2 Loans (Post-2012)</h3>
+<p>Three points decide most dentists' situation. First, the rate is <strong>9%</strong> of income above the threshold on every undergraduate plan, and <strong>6%</strong> on the postgraduate loan. Second, the postgraduate loan runs <strong>alongside</strong> an undergraduate plan, so a dentist with both pays two separate deductions on the same income. Third, you only repay on income above the threshold, so a quieter year automatically reduces what you pay, and a year below the threshold means nothing is due at all.</p>
 
-<p>Most current dentists have Plan 2 loans with a 9% repayment rate on income above £27,295 (2024/25). These loans are written off after 30 years from the April after graduation.</p>
+<p>Most dentists currently in practice are on Plan 2, though the cohort qualifying from courses that began on or after 1 August 2023 will be on Plan 5. Dentists who studied in Scotland are on Plan 4. If you are unsure, your annual statement from the Student Loans Company confirms the plan, and getting it right is the single most important step in any calculation.</p>
 
-<h3>Postgraduate Loans</h3>
+<h2>How the calculation works for an employed dentist (PAYE)</h2>
 
-<p>Many dentists also have postgraduate loans (up to £11,836 for 2024/25 starters) with a 6% repayment rate on income above £21,000. These run alongside your other loan repayments.</p>
+<p>If you are a salaried or PAYE dentist, for example during foundation training or in a salaried community or hospital post, your employer deducts the student loan through payroll alongside income tax and National Insurance. The deduction is worked out on each pay period against the matching slice of the threshold, not on your annual income in one go, which is why it appears as a steady amount each month.</p>
 
-<h2>How Student Loan Repayment is Calculated for Dentists</h2>
-
-<p>The calculation depends on your employment status and total annual income. Here are the most common scenarios for UK dentists:</p>
-
-<h3>NHS Associate Dentists</h3>
-
-<p>As an NHS associate earning a salary, your employer deducts student loan repayments through PAYE alongside income tax and National Insurance. For example, if you earn £45,000 annually:</p>
-
-<ul>
-<li>Income above threshold: £45,000 - £27,295 = £17,705</li>
-<li>Annual repayment: £17,705 × 9% = £1,593</li>
-<li>Monthly deduction: £1,593 ÷ 12 = £133</li>
-</ul>
-
-<h3>Self-Employed Dentists and Mixed Income</h3>
-
-<p>Many dentists work as associates with mixed NHS and private income, or run their own practices. In these cases, student loan repayments are calculated on your total annual income and collected through Self Assessment.</p>
-
-<p>If you earn £70,000 from a mix of associate work and private income:</p>
+<p>Take a Plan 2 dentist earning £45,000 in 2026/27. Across the year the calculation is:</p>
 
 <ul>
-<li>Income above threshold: £70,000 - £27,295 = £42,705</li>
-<li>Annual repayment: £42,705 × 9% = £3,843</li>
+<li>Income above threshold: £45,000 minus £29,385 equals £15,615</li>
+<li>Annual repayment: £15,615 times 9% equals £1,405</li>
+<li>Roughly £117 a month through payroll</li>
 </ul>
 
-<p>This amount would be added to your Self Assessment tax bill and paid in instalments through payments on account. Understanding this helps with cash flow planning — many dentists are caught off-guard by large student loan bills at Self Assessment time.</p>
+<p>The PAYE route is the simplest case because the deduction is automatic and roughly self-correcting across the year. The complication arises when PAYE is not the whole picture, which for many associates it is not.</p>
 
-<h2>Tax Planning Strategies</h2>
-<p>Smart tax planning can significantly reduce your dentist student loan repayment burden, especially if you're likely to pay off the full amount anyway.</p>
+<h2>How it works for a self-employed dentist (Self Assessment)</h2>
 
-<h3>Pension Contributions</h3>
+<p>Most associates and locums are self-employed (status turns on the substance of the arrangement, not the label on the contract). A self-employed dentist does not have a payroll deduction. Instead, the student loan repayment is <strong>calculated on the tax return and collected through Self Assessment</strong>, based on total income for the year. The same plan rate applies, so the headline arithmetic is identical, but the timing and the base are different.</p>
 
-<p>Pension contributions reduce your taxable income for student loan purposes. An associate earning £80,000 who contributes £10,000 to their pension will pay student loans on £70,000 instead of £80,000.</p>
-
-<p>This saves £900 per year in student loan repayments (9% of £10,000) while also providing tax relief and building your retirement fund.</p>
-
-<h3>Income Timing</h3>
-
-<p>If you're self-employed, you have some control over when income is recognised. Delaying invoicing until after your accounting year-end can push income into the following tax year.</p>
-
-<p>This strategy works particularly well if you're expecting lower earnings in future years or approaching the loan write-off date.</p>
-
-<h3>Expense Management</h3>
-
-<p>Legitimate business expenses reduce your taxable profit, which in turn reduces your student loan liability. Common dental expenses include:</p>
+<p>Take a self-employed Plan 2 associate with £70,000 of taxable income for 2026/27:</p>
 
 <ul>
-<li>Professional development courses and conferences</li>
-<li>Medical defence organisation fees</li>
-<li>Equipment and instrument purchases</li>
-<li>Professional insurance premiums</li>
-<li>Vehicle expenses for work travel</li>
+<li>Income above threshold: £70,000 minus £29,385 equals £40,615</li>
+<li>Annual repayment: £40,615 times 9% equals £3,655</li>
 </ul>
 
-<h2>Common Issues for Dental Practices</h2>
+<p>That £3,655 is added to the income tax and Class 4 National Insurance on the same return. Two practical consequences follow. First, it lands as a single annual figure rather than twelve small deductions, so it needs setting aside through the year rather than being quietly handled by payroll. Second, the student loan element is calculated on the balancing figure for the year and is <strong>not</strong> itself spread across payments on account in the way the income tax is, so the cash-flow shape is different again. Building this into the same discipline you use for the rest of your tax bill avoids the unwelcome surprise. Our guide to <a href="/blog/associate-tax/payment-on-account-uk-dentists-guide">payments on account for dentists</a> covers how the wider Self Assessment payment timetable works.</p>
 
-<p>Several specific situations affect how dentists calculate and manage their student loan repayments:</p>
+<h2>A worked example with both loans running</h2>
 
-<h3>Multiple Income Sources</h3>
+<p>Many dentists hold both an undergraduate plan and a postgraduate loan. Suppose a self-employed associate on Plan 2 with a postgraduate loan has £70,000 of income in 2026/27. The two run independently:</p>
 
-<p>Many dentists work across multiple practices or combine employed and self-employed work. HMRC requires you to report all income for student loan calculation purposes. Your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment</a> should include:</p>
+<table>
+<thead>
+<tr><th>Loan</th><th>Threshold</th><th>Income above threshold</th><th>Rate</th><th>Annual repayment</th></tr>
+</thead>
+<tbody>
+<tr><td>Plan 2</td><td>£29,385</td><td>£40,615</td><td>9%</td><td>£3,655</td></tr>
+<tr><td>Postgraduate</td><td>£21,000</td><td>£49,000</td><td>6%</td><td>£2,940</td></tr>
+<tr><td><strong>Combined</strong></td><td></td><td></td><td></td><td><strong>£6,595</strong></td></tr>
+</tbody>
+</table>
 
-<ul>
-<li>PAYE income from employed positions</li>
-<li>Self-employed earnings from associate work</li>
-<li>Practice profits if you own a dental business</li>
-<li>Any other taxable income</li>
-</ul>
+<p>The two thresholds are applied separately to the same income, and the two repayments simply add together. At this income level the combined student loan deduction sits on top of income tax and National Insurance, which is why dentists carrying both loans should treat the student loan as a distinct line in their annual budgeting rather than rounding it into the tax estimate.</p>
 
-<h3>Irregular Income Patterns</h3>
+<h2>Multiple income sources and a high-earning year</h2>
 
-<p>Dental income often varies significantly month to month, especially for associates working on commission or practice owners with seasonal fluctuations. If you have irregular income, you might:</p>
+<p>A common dental pattern is several income streams at once, for example an associate also doing salaried sessions, or a practice owner drawing from the business as well as taking PAYE work. The treatment depends on the mix.</p>
 
-<ul>
-<li>Under-pay student loans during busy periods (if relying on PAYE deductions)</li>
-<li>Face large catch-up payments at Self Assessment</li>
-<li>Need to make voluntary payments to avoid interest accumulation</li>
-</ul>
+<p>Where you have <strong>multiple PAYE employments</strong>, each employer applies the threshold separately to the pay it processes. If neither job alone is far above the threshold, the deductions can be small, yet your combined income may be well over it. The shortfall is picked up through Self Assessment, where the calculation runs on your <strong>total</strong> income. The same reconciliation happens where you have a mix of PAYE and self-employed income: the return totals everything, applies the threshold once to the combined figure, and credits the student loan already deducted through PAYE, leaving a balancing amount to pay (or, occasionally, a small overpayment to resolve).</p>
 
-<h3>Practice Ownership and Student Loans</h3>
+<p>A <strong>high-earning year</strong>, for example a strong private year or a one-off uplift, increases the repayment in direct proportion, because 9% (or 6%) applies to every extra pound above the threshold with no upper cap. This is worth anticipating in cash-flow terms, but it does not change the principle that you only ever repay a percentage of income above the threshold.</p>
 
-<p>If you own a dental practice, your student loan repayments are calculated on your total taxable income, including salary, dividends, and other extractions from the business. This requires careful planning around <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> to manage your overall tax efficiency.</p>
+<h2>Does pension or expense planning change the figure?</h2>
 
-<h2>Record Keeping and Compliance</h2>
+<p>The honest answer is "sometimes, and it depends how", which is more nuanced than the common shortcut that "pension contributions cut your student loan". For an <strong>employed</strong> dentist, only a workplace pension run on a <strong>net-pay or salary-sacrifice</strong> basis reduces the pay figure used for the student loan deduction. A <strong>relief-at-source personal pension</strong> (where you pay from net pay and the provider reclaims basic-rate relief) does <strong>not</strong> reduce the PAYE student loan deduction.</p>
 
-<p>Accurate record-keeping is essential for managing student loan repayments effectively. You should maintain:</p>
+<p>For a <strong>self-employed</strong> dentist, the student loan is calculated on taxable profit (plus other income). Allowable business expenses reduce that profit and therefore the base, in the same way they reduce income tax. A personal pension contribution, however, generally does <strong>not</strong> reduce the income figure used for the Self Assessment student loan calculation, even though it attracts income tax relief. The position is different again for an incorporated dentist, where an <strong>employer pension contribution</strong> from the company reduces company profit and the salary on which any PAYE deduction is based. The detail matters, so treat any "pension cuts my student loan" claim with care and check it against your own structure. Our note on <a href="/blog/associate-tax/dentist-pension-contributions-tax-relief-uk">pension tax relief for dentists</a> sets out how the contribution routes differ.</p>
 
-<ul>
-<li>Annual statements from the Student Loans Company</li>
-<li>Records of all repayments made</li>
-<li>Correspondence about repayment rates or thresholds</li>
-<li>Evidence of income from all sources</li>
-</ul>
+<h2>Interest and when the loan is written off</h2>
 
-<p>The Student Loans Company occasionally makes errors in repayment calculations or fails to update records when you change jobs. Regular monitoring helps identify and correct these issues quickly.</p>
+<p>Interest accrues throughout, and the rules differ by plan. Broadly, undergraduate loan interest is linked to inflation (and, for some plans, to income while you are repaying), while the postgraduate loan carries its own rate. Because interest can exceed repayments at lower incomes, a balance can grow rather than shrink for a period, which is central to the early-repayment question below.</p>
 
-<h2>Planning Around Student Loan Repayments</h2>
+<p>Each plan also has a <strong>write-off point</strong>, after which any remaining balance is cancelled:</p>
 
-<p>Understanding your student loan obligations helps with broader financial planning:</p>
+<table>
+<thead>
+<tr><th>Plan</th><th>Typical write-off</th></tr>
+</thead>
+<tbody>
+<tr><td>Plan 1</td><td>25 years after you were first due to repay</td></tr>
+<tr><td>Plan 2</td><td>30 years after the April you were first due to repay</td></tr>
+<tr><td>Plan 4</td><td>Age-based or 30 years, depending on when taken</td></tr>
+<tr><td>Plan 5</td><td>40 years after you were first due to repay</td></tr>
+<tr><td>Postgraduate Loan</td><td>30 years after you were first due to repay</td></tr>
+</tbody>
+</table>
 
-<h3>Cash Flow Management</h3>
+<p>The write-off matters to the early-repayment decision. If you are very likely to clear the balance well before the write-off date and interest is high, voluntary overpayment can save interest overall. If you may never repay the full amount before it is cancelled, overpaying simply hands money to a debt that would have been written off, and the income-contingent design (repayments fall when income falls, and stop entirely below the threshold) carries genuine insurance value. For most dentists the answer turns on projected lifetime earnings, the current interest rate, and what else the money could do, so it is worth modelling rather than deciding on instinct.</p>
 
-<p>If you are self-employed or have mixed income, budget for student loan payments as part of your tax planning. Many dentists find it helpful to set aside the 9% on all income above the threshold throughout the year.</p>
+<h2>Getting the calculation right</h2>
 
-<h3>Career and Income Decisions</h3>
+<p>The mechanics are straightforward once the plan and the income base are correct: a fixed percentage of income above the current threshold, deducted through payroll if you are employed or collected through Self Assessment if you are self-employed, with the tax return reconciling everything against total income. The errors that cost dentists money are upstream of the arithmetic. Using the wrong plan or a stale threshold, forgetting that a postgraduate loan runs alongside, overlooking that several PAYE jobs each apply the threshold separately, or assuming a pension contribution reduces the figure when it does not.</p>
 
-<p>The high effective marginal tax rate from student loans might influence decisions about:</p>
-
-<ul>
-<li>Taking on additional private work</li>
-<li>Timing of practice acquisition</li>
-<li>Salary versus dividend strategies for practice owners</li>
-<li>Pension contribution levels</li>
-</ul>
-
-<h3>Long-term Financial Planning</h3>
-
-<p>Plan 2 loans are written off after 30 years, regardless of the balance remaining. For some high-earning dentists, it may be more cost-effective to make minimum payments rather than attempting early repayment, especially given the opportunity cost of capital.</p>
-
-<p>However, this calculation depends heavily on your individual circumstances, career trajectory, and other financial priorities. Professional advice is often valuable when making these decisions.</p>
-
-<p>Managing student debt alongside the other financial complexities of dental practice requires careful planning and often specialist guidance. If you need help understanding how student loan repayments fit into your overall tax and financial strategy, consider speaking with <a href="/services">dental accounting specialists</a> who understand the unique challenges dentists face.</p>
-
-<h2>Self-Assessment and Student Loans</h2>
-<p>Self-employed dentists and those with mixed income face more complexity. You'll need to calculate and pay your dentist student loan repayment through Self Assessment.</p>
-
-<p>HMRC calculates your liability based on your total taxable income, including:</p>
-
-<ul>
-<li>Self-employment profits from dental work</li>
-<li>Employed income from any associate positions</li>
-<li>Rental income</li>
-<li>Investment income</li>
-<li>Any other taxable income</li>
-</ul>
-
-<p>If you're completing your own <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment as an associate dentist</a>, ensure you've included all income sources when calculating your student loan liability.</p>
-
-<h2>Should You Pay Off Student Loans Early?</h2>
-<p>This depends entirely on your individual circumstances. Consider these factors:</p>
-
-<p><strong>Arguments for early repayment:</strong></p>
-<ul>
-<li>Interest rates are currently high (RPI + 3% for Plan 2 loans while studying, reducing after graduation)</li>
-<li>You're likely to pay off the full amount anyway</li>
-<li>Peace of mind and improved cash flow</li>
-</ul>
-
-<p><strong>Arguments against early repayment:</strong></p>
-<ul>
-<li>Loans are written off after 25-30 years</li>
-<li>Repayments stop if your income falls</li>
-<li>Money might be better invested elsewhere</li>
-<li>The "insurance" value of income-contingent repayments</li>
-</ul>
-
-<h2>Getting Professional Help</h2>
-<p>Dentist student loan repayment intersects with multiple areas of tax planning. The optimal strategy depends on your income level, career plans, other debts, and personal circumstances.</p>
-
-<p>A specialist dental accountant can model different scenarios and help you understand whether aggressive repayment, income smoothing, or other strategies make sense for your situation.</p>
-
-<p>We regularly help dentists navigate these complex calculations and develop tax-efficient strategies that work alongside their broader financial planning.</p>
+<p>If you also complete the rest of your return yourself, our <a href="/blog/associate-tax/dental-associate-self-assessment-step-by-step">step-by-step Self Assessment guide for associates</a> and the wider <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax guide</a> set the student loan in context alongside income tax and National Insurance. Where the position is genuinely complex, for example mixed PAYE and self-employed income, two loans running at once, or an incorporated structure, it is worth getting the calculation checked. If you would like that, our <a href="/services">dental accounting specialists</a> work with dentists on exactly these situations.</p>

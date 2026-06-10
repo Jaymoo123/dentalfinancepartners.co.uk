@@ -5,20 +5,28 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/pro
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
-metaTitle: "PII Tax Deductible Solicitor: Are Premiums an Allowable Expense?"
-metaDescription: "Are PII premiums tax deductible for a solicitor? Yes, professional indemnity insurance is an allowable expense. We explain the rules for UK law firms and partnerships."
+metaTitle: "Is PII Tax Deductible for a Solicitor? Allowable Expense Rules"
+metaDescription: "PII premiums are a fully allowable trading expense for UK solicitors, deducted at firm or company level and exempt from VAT. We explain where the deduction sits and how run-off cover is treated."
 altText: "Solicitor reviewing professional indemnity insurance documents in a modern law firm office"
 image: ""
 h1: "Is Professional Indemnity Insurance Tax Deductible for a Solicitor?"
-summary: "Professional indemnity insurance (PII) premiums are a fully tax-deductible trade expense for UK solicitors, whether you are a sole practitioner, an LLP member, or a limited company director. The cost of MTC cover, top-up layers, and run-off cover all qualify as allowable expenses. This article explains the rules, the common pitfalls, and how to treat PII in your firm's accounts."
+summary: "Professional indemnity insurance (PII) premiums are a fully tax-deductible trading expense for UK solicitors, whether you are a sole practitioner, an LLP member, or a limited company director. The deduction is taken at firm level for a partnership or LLP and at company level for a company. The premium is exempt from VAT, so there is no input tax to reclaim, and run-off cover bought on cessation is deductible too. This article explains where the deduction sits, how run-off is handled, and the common pitfalls."
+keyTakeaways:
+  - "PII premiums are fully deductible as a trading expense under the wholly and exclusively test in ITTOIA 2005 section 34, taken at firm level for partnerships and LLPs and at company level for companies."
+  - "The SRA minimum cover is £3 million per claim for recognised or licensed bodies (LLPs, companies, ABSs) and £2 million per claim for sole practitioners and traditional partnerships."
+  - "PII premiums are exempt from VAT under VATA 1994 Schedule 9 Group 2, so there is no input VAT to reclaim even for a VAT-registered firm."
+  - "Run-off cover, required for six years after cessation, is deductible, with timing depending on whether the firm or a former partner pays the premium."
+  - "Locum and consultant solicitors can claim their own PII against income, either on self-assessment as a sole trader or against corporation tax through a personal service company."
 schema: ""
 faqs:
   - question: "Can a sole practitioner solicitor claim PII as a tax deduction?"
-    answer: "Yes. A sole practitioner solicitor can claim the full cost of their professional indemnity insurance as an allowable expense on their self-assessment tax return. The premium is deducted from their professional income before tax is calculated. This includes the MTC cover and any additional top-up layers. Keep the invoice and proof of payment with your tax records."
+    answer: "Yes. A sole practitioner can claim the full cost of their professional indemnity insurance as an allowable expense on their self-assessment tax return. The premium is deducted from professional income before tax is calculated under the wholly and exclusively test in ITTOIA 2005 section 34. This covers the SRA minimum-terms cover and any additional top-up layers. Keep the invoice and proof of payment with your tax records."
+  - question: "What is the SRA minimum level of PII cover for a law firm?"
+    answer: "Under the SRA Minimum Terms and Conditions, the minimum sum insured per claim is three million pounds for a relevant recognised body or relevant licensed body, which covers firms structured as LLPs, companies and Alternative Business Structures (ABSs). For all other firms, meaning sole practitioners and traditional partnerships, the minimum is two million pounds per claim. There is no monetary cap on defence costs, and on cessation a firm must obtain run-off cover for six years. The premium for this cover is fully tax deductible."
   - question: "Is run-off PII cover tax deductible for a retired partner?"
-    answer: "Yes, run-off PII cover is tax deductible for a retired partner, but the timing depends on who pays. If the firm pays the premium before it closes, the deduction is taken in the firm's final accounts. If the partner pays the premium personally after the firm has closed, they can claim the deduction on their personal self-assessment return for the year of payment. HMRC treats run-off cover as a trading expense of the former firm."
+    answer: "Yes, run-off PII cover is tax deductible, but the timing depends on who pays. If the firm pays the premium before it closes, the deduction is taken in the firm's final accounts. If a former partner pays the premium personally after the firm has closed, they can claim the deduction on their personal self-assessment return for the year of payment. HMRC treats run-off cover, which the SRA requires for six years after cessation, as a trading expense of the former firm."
   - question: "Does VAT apply to PII premiums for solicitors?"
-    answer: "No. Professional indemnity insurance premiums are exempt from VAT under UK VAT law. This means that if your firm is VAT-registered, you cannot reclaim VAT on the PII premium. The invoice will show the premium as a net amount with no VAT. This is different from most other business expenses, which carry VAT at 20%. If you are not VAT-registered, the exemption does not affect your tax deduction."
+    answer: "No. Professional indemnity insurance premiums are exempt from VAT as an insurance supply under VATA 1994 Schedule 9 Group 2. This means that even if your firm is VAT-registered, there is no input VAT on the PII premium to reclaim. The invoice shows the premium as a net amount with no VAT added. This is different from most other business costs, which carry VAT at the standard rate. The exemption does not reduce your income tax or corporation tax deduction in any way."
   - question: "Can a locum solicitor claim PII as a tax deduction?"
     answer: "Yes. A locum solicitor who pays their own professional indemnity insurance can claim the premium as an allowable expense. If you are a sole trader locum, you claim it on your self-assessment return under allowable business expenses. If you work through a personal service company (PSC), the company claims the deduction against corporation tax. The premium must be in your name or your company's name and must cover your professional activities."
 ---
@@ -35,7 +43,7 @@ faqs:
 
 <h2>What Types of PII Cover Are Deductible?</h2>
 
-<p>Most solicitors are familiar with the SRA's MTC cover. This is the minimum level of PII that every SRA-regulated firm must hold. The MTC requires a minimum cover of £2 million per claim (or £3 million for sole practitioners and partnerships). The premium for this cover is fully deductible.</p>
+<p>Most solicitors are familiar with the SRA's MTC cover. This is the minimum level of PII that every SRA-regulated firm must hold. The minimum sum insured per claim is £3 million for a relevant recognised body or relevant licensed body, which means firms structured as LLPs, companies and Alternative Business Structures (ABSs), and £2 million per claim for all other firms, meaning sole practitioners and traditional partnerships. There is no monetary cap on defence costs. The premium for this cover is fully deductible whichever minimum applies to your firm.</p>
 
 <p>Beyond the MTC, many firms purchase additional cover. This includes:</p>
 
@@ -46,7 +54,7 @@ faqs:
 <li><strong>Cyber liability extensions</strong> added to the PII policy.</li>
 </ul>
 
-<p>All of these are allowable expenses. The test is simple: is the cost incurred wholly and exclusively for the purposes of the trade? For a solicitor, PII is a regulatory requirement. Without it, you cannot practise. The cost is therefore wholly and exclusively for the trade.</p>
+<p>All of these are allowable expenses. The test is simple, and it comes from ITTOIA 2005 section 34 (the equivalent rule for companies sits in CTA 2009): is the cost incurred wholly and exclusively for the purposes of the trade? For a solicitor, PII is a regulatory requirement. Without it, you cannot practise. The cost is therefore wholly and exclusively for the trade.</p>
 
 <p>There is one nuance. If you have a policy that includes personal cover (for example, cover for activities outside your legal practice, such as acting as a trustee in a personal capacity), you must apportion the premium. The personal element is not deductible. In practice, most solicitors' PII policies cover only professional activities, so this is rarely an issue.</p>
 
@@ -54,7 +62,7 @@ faqs:
 
 <p>For a traditional partnership or an LLP, the PII premium is a deduction from the firm's profit before allocation to partners. This means that the cost is shared among all partners in proportion to their profit shares. It does not matter whether the firm pays the premium in one lump sum or by monthly instalments. The deduction is taken in the accounting period to which the premium relates.</p>
 
-<p>For example, suppose a four-partner firm pays an annual PII premium of £40,000. The firm's profit before PII is £400,000. After deducting the premium, the profit is £360,000. Each partner's share is then calculated from that reduced figure. The partners do not claim the premium individually on their personal tax returns. The deduction happens at the firm level.</p>
+<p>For example, take a four-partner firm. The annual PII premium is deducted from the firm's profit before any allocation, so the profit figure each partner's share is calculated from is already net of the premium. The partners do not claim the premium individually on their personal tax returns. The deduction happens once, at the firm level, and every partner shares in it through a lower allocated profit.</p>
 
 <p>This is straightforward. But there is a common mistake. Some solicitors think that because they are personally liable for claims under the MTC, they can claim the premium personally. That is wrong. The firm pays the premium. The firm deducts it. The partners benefit through lower profit shares.</p>
 
@@ -78,7 +86,7 @@ faqs:
 
 <p>Some locum solicitors make the mistake of relying on the hiring firm's PII. That is risky. The hiring firm's policy may not cover you if a claim arises from your own negligence. You should have your own PII. And if you do, the premium is deductible.</p>
 
-<p>For a locum solicitor paying their own PII, the cost is typically between £1,500 and £5,000 per year, depending on the practice area and claims history. That is a direct reduction in taxable income. It is worth getting right.</p>
+<p>For a locum solicitor paying their own PII, the premium can be a meaningful annual cost, and it varies with practice area and claims history. Whatever the figure, it is a direct reduction in taxable income, so it is worth getting right.</p>
 
 <h2>Common Mistakes Solicitors Make with PII and Tax</h2>
 
@@ -106,9 +114,9 @@ faqs:
 
 <p>For a law firm, PII is a revenue expense. It is recorded in the profit and loss account under "insurance" or "professional indemnity insurance". If the premium covers more than one accounting period (for example, a 12-month policy paid in one lump sum), you should spread the cost over the period it covers using prepayments.</p>
 
-<p>For example, if you pay a £24,000 premium on 1 October 2025 for cover from 1 October 2025 to 30 September 2026, and your accounting year ends on 31 March 2026, you should recognise six months of the cost (£12,000) in the year to 31 March 2026. The remaining £12,000 is a prepayment on the balance sheet.</p>
+<p>For example, if you pay an annual premium on 1 October for cover running to the following 30 September, and your accounting year ends on 31 March, you recognise six months of the cost in the year to 31 March. The other half of the premium sits on the balance sheet as a prepayment and is recognised in the next accounting period, matching the cost to the cover it buys.</p>
 
-<p>This is standard accruals accounting. It ensures that your profit reflects the cost of cover for the period. If you use cash accounting for tax (available to unincorporated firms with turnover under £150,000), you can deduct the full premium in the year of payment. But most law firms use accruals accounting.</p>
+<p>This is standard accruals accounting, and it is what almost every law firm uses. A point of confusion worth clearing up: the cash basis, where you simply deduct what you pay in the year you pay it, is now the default for unincorporated businesses (the old £150,000 turnover entry threshold was removed from 6 April 2024). However, LLPs and partnerships that have a corporate partner are excluded from the cash basis, so in practice law firms prepare accounts on the accruals basis and spread the premium as above. A limited company solicitor always uses accruals accounting and is never on the cash basis.</p>
 
 <h2>What About the SRA Accounts Rules?</h2>
 

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { EmbedCta } from "@/components/embed/EmbedCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 
 interface Property {
   id: string;
@@ -10,7 +12,13 @@ interface Property {
   otherExpenses: number;
 }
 
-export function PortfolioProfitabilityCalculator() {
+export function PortfolioProfitabilityCalculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const nextId = useRef(3);
   const [properties, setProperties] = useState<Property[]>([
     { id: "1", name: "Property 1", rentalIncome: 18000, mortgageInterest: 7200, otherExpenses: 3000 },
@@ -221,6 +229,11 @@ export function PortfolioProfitabilityCalculator() {
           </p>
         </div>
       </div>
+      {variant === "embed" ? (
+        <EmbedCta campaign="portfolio-profitability-calculator" />
+      ) : resultCta ? (
+        <CalcResultCta campaign="portfolio-profitability-calculator" />
+      ) : null}
     </div>
   );
 }

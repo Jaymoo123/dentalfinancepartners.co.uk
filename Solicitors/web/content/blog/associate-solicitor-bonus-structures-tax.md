@@ -11,7 +11,12 @@ altText: "UK solicitor reviewing bonus letter and tax calculation in a law firm 
 image: ""
 h1: "How Are Associate Solicitor Bonuses Taxed? A Guide to Performance Bonus Structures"
 summary: "Associate solicitor bonuses are taxed as earnings under PAYE, but the structure matters for both the firm and the fee-earner. Performance bonuses, deferred awards, and partnership track arrangements each carry distinct tax and cashflow consequences. This guide explains how each type works in practice."
-schema: ""
+keyTakeaways:
+  - "Associate solicitor bonuses are taxed as earnings: PAYE plus employee NI, with employer NI at 15% on the amount above the 5,000 pound threshold (2025/26)."
+  - "A bonus that pushes income above 100,000 pounds tapers the personal allowance at 1 pound for every 2 pounds, creating an effective 60% marginal rate on that slice."
+  - "A partnership track bonus stays a PAYE bonus until the solicitor becomes an equity partner or LLP member; only then does profit share replace it."
+  - "Calling a bonus a profit share does not avoid PAYE: HMRC looks at substance, and the salaried member rules can re-tax a fixed-reward member as an employee."
+  - "A personal or employer pension contribution can soften a large bonus, with employer pension contributions deductible and free of NI."
 faqs:
   - question: "Is an associate solicitor bonus subject to employer NI?"
     answer: "Yes. Any bonus paid to an associate solicitor is treated as earnings for Class 1 National Insurance purposes. The firm must pay employer NI at 15% on the bonus amount above the annual £5,000 threshold (2025/26 rates). There is no exemption for performance bonuses or deferred awards. The employer NI cost is a real expense for the firm and should be factored into the bonus budget."

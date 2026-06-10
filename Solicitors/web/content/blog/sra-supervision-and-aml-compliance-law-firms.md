@@ -11,6 +11,12 @@ altText: "Solicitor reviewing AML compliance documents in a UK law firm office"
 image: ""
 h1: "How Does SRA AML Supervision Affect Solicitors and Their Compliance Obligations?"
 summary: "SRA AML supervision requires every solicitor firm handling client money to comply with the Money Laundering Regulations 2017. This article explains the registration, risk assessment, and reporting obligations that apply to law firms under SRA oversight."
+keyTakeaways:
+  - "Firms carrying out relevant business under the Money Laundering Regulations 2017, including conveyancing and client money work, fall within SRA AML supervision."
+  - "Every in-scope firm must register with the SRA and notify it of any change of nominated officer within 14 days."
+  - "The firm-wide risk assessment must be reviewed at least annually and updated whenever the firm's risk profile changes."
+  - "CDD records must be retained for five years after the business relationship ends, and source of funds must be traced for conveyancing."
+  - "AML breaches can attract fines from a few thousand pounds to over £100,000, with personal liability for the COFA."
 schema: ""
 faqs:
   - question: "Do all solicitor firms need to register for SRA AML supervision?"

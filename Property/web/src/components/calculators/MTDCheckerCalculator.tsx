@@ -1,8 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { EmbedCta } from "@/components/embed/EmbedCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 
-export function MTDCheckerCalculator() {
+export function MTDCheckerCalculator({
+  variant = "page",
+  resultCta = false,
+}: {
+  variant?: "page" | "embed";
+  resultCta?: boolean;
+}) {
   const [rentalIncome, setRentalIncome] = useState(35000);
   const [selfEmploymentIncome, setSelfEmploymentIncome] = useState(20000);
   const [otherIncome, setOtherIncome] = useState(0);
@@ -133,6 +141,11 @@ export function MTDCheckerCalculator() {
           </div>
         </div>
       </div>
+      {variant === "embed" ? (
+        <EmbedCta campaign="mtd-checker" />
+      ) : resultCta ? (
+        <CalcResultCta campaign="mtd-checker" />
+      ) : null}
     </div>
   );
 }

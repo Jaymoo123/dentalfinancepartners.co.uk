@@ -1,69 +1,85 @@
 ---
-title: "How Do Solicitor LLPs File Accounts with Companies House and HMRC?"
+title: "Solicitor LLP Accounts and Companies House Filing Requirements"
 slug: "llp-accounts-and-filing-requirements-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/llp-accounts-and-filing-requirements-uk"
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
-metaTitle: "Solicitor LLP Accounts Filing: Companies House & HMRC Guide"
-metaDescription: "Step-by-step guide for UK solicitor LLPs on filing LLP accounts at Companies House and the LLP tax return (SA800). Deadlines, penalties, and practical tips."
-altText: "Solicitor reviewing LLP accounts and Companies House filing documents in a modern law firm office"
+metaTitle: "Solicitor LLP Accounts: Companies House Filing Requirements"
+metaDescription: "What a UK solicitor LLP must file at Companies House: statutory LLP accounts under the LLP Regulations, audit thresholds, the members' report, deadlines and the separate SA800."
+altText: "Solicitor reviewing LLP statutory accounts and Companies House filing documents in a modern law firm office"
 image: ""
-h1: "How Do Solicitor LLPs File Accounts with Companies House and HMRC?"
-summary: "A practical guide for UK solicitor LLPs on the dual filing requirement: statutory LLP accounts at Companies House and the partnership tax return (SA800) with HMRC. Covers deadlines, content requirements, common mistakes, and how the SRA Accounts Rules interact with your filing obligations."
+h1: "Solicitor LLP Accounts and Companies House Filing Requirements"
+summary: "A practical guide for UK solicitor LLPs on the statutory accounts you must deliver to Companies House. Covers the LLP Regulations that apply Companies Act provisions to an LLP, the content of the accounts, the members' report, size and audit thresholds, filing deadlines and penalties, and how the LLP partnership tax return (SA800) and the SRA accountant's report sit as separate obligations."
+keyTakeaways:
+  - "A solicitor LLP must deliver statutory accounts to Companies House within nine months of its accounting reference date."
+  - "The LLP Regulations 2008 apply most Companies Act 2006 accounting and audit provisions to LLPs, so accounts are public."
+  - "A small LLP (two of: turnover under £15 million, balance sheet under £7.5 million, 50 employees) gets reduced disclosure and audit exemption."
+  - "Late filing penalties run from £150 (under a month) to £1,500 (over six months), and double after a prior late year."
+  - "The Companies House accounts, the HMRC SA800 partnership return and the SRA accountant's report are three separate filings."
 schema: ""
 faqs:
-  - question: "Can a solicitor LLP file abbreviated accounts at Companies House?"
-    answer: "Yes, if the LLP qualifies as small under the Companies Act 2006 thresholds (turnover not over £10.2 million, balance sheet total not over £5.1 million, average employees not over 50). Small LLPs can file a simplified balance sheet and notes, and are exempt from audit unless members request one. However, HMRC will still expect full accounts with the SA800. Filing abbreviated accounts at Companies House does not reduce your obligation to provide HMRC with a complete picture of the LLP's financial position."
-  - question: "What happens if a solicitor LLP misses the SA800 deadline?"
-    answer: "HMRC charges an automatic £100 penalty per partner per month for the first 12 months. For a five-partner LLP, a one-month delay costs £500. After 12 months, HMRC can charge up to 100% of the tax due. The penalty applies to each designated member personally, not just the LLP. If the return is more than 12 months late and HMRC believes the delay was deliberate, they can increase the penalty further. Always file on time, even if the figures are provisional."
-  - question: "Do solicitor LLPs need to file an SA800 if they made no profit?"
-    answer: "Yes. A nil return must be filed with HMRC using form SA800, even if the LLP had no income or made a loss. Failure to file a nil return triggers the same late-filing penalties as a return showing profit. The same applies to Companies House: dormant LLPs must file dormant accounts each year. There is no exemption for inactivity. The LLP remains a registered entity until it is formally dissolved."
-  - question: "How does the SRA Accounts Rules affect the LLP accounts filed at Companies House?"
-    answer: "The SRA Accounts Rules require that client money is held separately from the firm's own money. In the statutory accounts, client account balances must appear as a separate liability on the balance sheet, not netted off against office account assets. The notes to the accounts should disclose the total client money held and confirm compliance with the rules. Your COFA should review the draft accounts to ensure these disclosures are accurate. The annual accountant's report under Rule 12 is filed separately with the SRA, not with Companies House."
+  - question: "Which law makes a solicitor LLP file accounts at Companies House?"
+    answer: "An LLP files accounts because the Limited Liability Partnerships (Accounts and Audit) (Application of Companies Act 2006) Regulations 2008 apply most of the accounting and audit provisions of the Companies Act 2006 to LLPs, with modifications. An LLP has separate legal personality, so Companies House treats it much like a company for filing purposes even though it is tax transparent. The designated members are responsible for preparing and delivering the accounts. This is a regulatory filing under company law, and it is separate from the LLP tax return (form SA800) that goes to HMRC and from the SRA accountant's report that goes to the SRA."
+  - question: "Can a small solicitor LLP file simpler accounts at Companies House?"
+    answer: "Yes, if the LLP qualifies as small under the size thresholds applied to LLPs (turnover not over £15 million, balance sheet total not over £7.5 million, average employees not over 50, meeting two of the three for the relevant periods). A small LLP can prepare accounts under the small LLPs regime and is generally exempt from audit unless members holding at least 10% of the voting rights require one. Note that the abbreviated accounts format was abolished for periods beginning on or after 1 January 2016: a small LLP now prepares full accounts but can file a reduced version (for example, without the profit and loss account) and may use the micro-entity regime if it qualifies. HMRC will still expect a complete set of accounts to support the SA800."
+  - question: "What happens if a solicitor LLP files its Companies House accounts late?"
+    answer: "Companies House applies an automatic late filing penalty that scales with the delay, starting at £150 for accounts up to one month late and rising to £1,500 for accounts more than six months late, and the penalty doubles where the LLP also filed late in the previous year. The penalty is charged to the LLP, but the designated members are personally responsible for ensuring the accounts are delivered on time. Persistent failure to file can lead to the LLP being struck off the register and to prosecution of the designated members, so a missed deadline is treated seriously."
+  - question: "Does a dormant solicitor LLP still have to file accounts?"
+    answer: "Yes. A dormant LLP, one that has had no significant accounting transactions in the period, must still deliver dormant accounts to Companies House each year and must still file a nil partnership tax return (SA800) with HMRC. There is no exemption for inactivity. The LLP remains a registered entity with live filing obligations until it is formally dissolved or struck off the register, so leaving a dormant LLP unfiled simply accrues penalties."
+  - question: "How do the SRA Accounts Rules affect the accounts filed at Companies House?"
+    answer: "The SRA Accounts Rules do not change how you file, but they affect what the accounts show. Client money must appear as a separate liability on the balance sheet and must not be netted off against the firm's own office account. The notes should disclose the total client money held and confirm compliance. Your COFA should review the draft accounts so these disclosures are accurate. Separately, a firm that has held client money usually needs an annual accountant's report under Rule 12, filed with the SRA, not with Companies House. A firm is exempt from that report if all the client money it held was held within an average of £10,000 and a maximum of £250,000 across the period, or if all the client money was money received from the Legal Aid Agency. See our guide to the SRA accountant's report exemption thresholds for the detail."
 ---
 
-<h2>Why Solicitor LLPs Face a Dual Filing Obligation</h2>
+<h2>Why a Solicitor LLP Files Statutory Accounts at Companies House</h2>
 
-<p>If your law firm is structured as a limited liability partnership (LLP), you have two separate but linked filing obligations. You must file statutory accounts with Companies House and a partnership tax return (form SA800) with HMRC. Many solicitor partners find this dual requirement confusing, especially when moving from a general partnership or sole practice.</p>
+<p>If your law firm is structured as a limited liability partnership (LLP), it has its own filing footprint at Companies House. An LLP is a body corporate with separate legal personality, so although it is tax transparent (the LLP itself pays no corporation tax and each member is taxed personally on their profit share), company law still requires it to prepare and deliver annual statutory accounts to the registrar. This is the obligation many solicitor partners underestimate when they move from a general partnership, where no accounts are filed publicly, to an LLP.</p>
 
-<p>An LLP is a corporate body with separate legal personality. Companies House treats it similarly to a limited company for filing purposes. But for tax, an LLP is transparent: the LLP itself pays no corporation tax. Each member is taxed on their share of the profits at their personal rates. This hybrid status creates the dual filing requirement.</p>
+<p>This guide focuses on that Companies House obligation: what the LLP Regulations require, what goes into the accounts, which size and audit rules apply, the deadlines and penalties, and the members' report. It also makes clear where two other filings sit, because they are commonly confused with the Companies House accounts: the LLP partnership tax return (form SA800) that goes to HMRC, and the SRA accountant's report that goes to the Solicitors Regulation Authority. Those are separate obligations, dealt with briefly at the end. It assumes you are already familiar with the <a href="/services/sra-accounts-rules">SRA Accounts Rules</a> and the role of your COFA.</p>
 
-<p>This guide explains what a solicitor LLP must file, by when, and how to avoid common penalties. It assumes you are already familiar with the <a href="/services/sra-accounts-rules">SRA Accounts Rules</a> and the role of your COFA.</p>
+<h2>The LLP Regulations: Company Law Applied to Your Firm</h2>
+
+<p>An LLP does not file accounts under the Limited Liability Partnerships Act 2000 alone. The detailed accounting and audit regime comes from the Limited Liability Partnerships (Accounts and Audit) (Application of Companies Act 2006) Regulations 2008, which apply most of the Companies Act 2006 accounting and audit provisions to LLPs, with modifications to fit a partnership structure. In practice this means that almost everything a private limited company must do with its accounts, an LLP must do too, with the language adapted (members rather than directors, a members' report rather than a directors' report).</p>
+
+<p>The consequence for a solicitor LLP is that the accounts you deliver are public documents. Anyone can inspect them on the Companies House register. That makes accuracy, consistency and the correct level of disclosure matter, because errors are visible to clients, lenders, recruits and competitors alike.</p>
 
 <h2>What Must a Solicitor LLP File at Companies House?</h2>
 
-<p>Every LLP registered in England and Wales must deliver annual accounts to Companies House. These are separate from any management accounts you prepare internally or the tax return you file with HMRC.</p>
+<p>Every LLP registered in England and Wales must deliver annual accounts to Companies House. These are separate from any management accounts you prepare internally and from the tax return you file with HMRC.</p>
 
-<h3>Content of LLP Accounts for Companies House</h3>
+<h3>Content of the LLP Accounts</h3>
 
-<p>The accounts must include:</p>
+<p>A full set of LLP accounts includes:</p>
 
 <ul>
 <li>A balance sheet signed by a designated member, showing the LLP's name and the date it was signed.</li>
 <li>A profit and loss account (income statement).</li>
-<li>Notes to the accounts, including accounting policies.</li>
-<li>A members' report (similar to a directors' report for a limited company).</li>
-<li>An auditor's report if the LLP is not exempt from audit (see below).</li>
+<li>Notes to the accounts, including the accounting policies adopted.</li>
+<li>A members' report (the LLP equivalent of a directors' report).</li>
+<li>An auditor's report, where the LLP is not exempt from audit (see below).</li>
 </ul>
 
-<p>The accounts must be prepared in accordance with UK GAAP. Most solicitor LLPs use FRS 102, though smaller firms may use FRS 105 (the micro-entities regime) if they meet the size thresholds. FRS 105 is simpler but restricts what you can disclose and may not suit firms with complex profit-sharing arrangements.</p>
+<p>The accounts must be prepared under UK GAAP. Most solicitor LLPs report under FRS 102, the financial reporting standard for UK and Ireland entities. Smaller firms may be able to use FRS 105 (the micro-entities regime) if they meet the size limits, but FRS 105 is restrictive: it permits very limited disclosure and may not suit a firm with layered profit-sharing arrangements or significant work in progress, so most law firms above the smallest tier stay on FRS 102.</p>
 
-<h3>Size Thresholds and Filing Options</h3>
+<h3>The Members' Report and Members' Interests</h3>
 
-<p>Your filing obligations depend on your LLP's size. The current thresholds (for periods beginning on or after 1 January 2024) are:</p>
+<p>One feature that distinguishes LLP accounts from a small company's accounts is the treatment of members' interests. The accounts and the members' report deal with amounts due to and from members, the policy for sharing profits and any subscribed or unsubscribed capital, and they distinguish between members' capital classified as equity and amounts classified as a liability (for example, automatic profit allocations that the LLP cannot avoid paying out). For a law firm with a mix of equity members and fixed-share members, getting this presentation right matters: it affects how the balance sheet reads to a bank or a prospective lateral partner reviewing the firm.</p>
+
+<h3>Size Thresholds and the Audit Position</h3>
+
+<p>What an LLP must file, and whether it needs an audit, depends on its size. The size limits are applied to LLPs by the same regime that applies the Companies Act provisions. To qualify as small, an LLP must meet two of these three limits: turnover not over £15 million, balance sheet total not over £7.5 million, and an average of not more than 50 employees. A micro-entity LLP sits below much lower limits again.</p>
 
 <ul>
-<li><strong>Micro-entity:</strong> Turnover not over £632,000, balance sheet total not over £316,000, average employees not over 10.</li>
-<li><strong>Small:</strong> Turnover not over £10.2 million, balance sheet total not over £5.1 million, average employees not over 50.</li>
-<li><strong>Medium:</strong> Turnover not over £36 million, balance sheet total not over £18 million, average employees not over 250.</li>
+<li><strong>Small LLP:</strong> can prepare accounts under the small LLPs regime, with reduced disclosure, and can deliver a filleted set (for example, omitting the profit and loss account) to Companies House.</li>
+<li><strong>Micro-entity LLP:</strong> can use the micro-entity regime, with the lightest disclosure, if it meets the micro limits.</li>
+<li><strong>Audit:</strong> a small LLP is generally exempt from audit, but members holding at least 10% of the voting rights can require one, and some lenders or insurers insist on audited figures.</li>
 </ul>
 
-<p>Small LLPs can file abbreviated accounts (a simpler balance sheet and notes) and are exempt from audit unless members holding at least 10% of the voting rights request one. Micro-entities have even lighter requirements. But many solicitor LLPs choose to file full accounts anyway, especially if they have bank covenants or institutional lenders who want full disclosure.</p>
+<p>A point of history worth noting: the old abbreviated accounts format was abolished for accounting periods beginning on or after 1 January 2016. A small LLP today prepares a full set of small-regime accounts and then chooses how much of it to file. Many solicitor LLPs that qualify as small still choose to file fuller accounts, particularly where they have bank covenants or institutional lenders who expect to see the profit and loss account.</p>
 
-<h3>Deadline for Companies House Filing</h3>
+<h3>Deadline and Penalties for Companies House Filing</h3>
 
-<p>The deadline is nine months after the LLP's accounting reference date (the end of its financial year). For a 30 April year end, the deadline is 31 January the following year. Late filing penalties are automatic and scale with the delay:</p>
+<p>The deadline to deliver the accounts is nine months after the LLP's accounting reference date (the end of its financial year). For a 30 April year end, the accounts are due by 31 January the following year. Late filing penalties are automatic and scale with the delay:</p>
 
 <ul>
 <li>Up to 1 month late: £150</li>
@@ -72,77 +88,48 @@ faqs:
 <li>More than 6 months late: £1,500</li>
 </ul>
 
-<p>These penalties double for LLPs that were late in the previous year. They apply to the LLP itself, not individual members, but the designated members are personally responsible for ensuring filing happens.</p>
+<p>These penalties double for an LLP that also filed late in the previous year. The penalty is charged to the LLP itself, not to individual members, but the designated members are personally responsible for ensuring the accounts are delivered. Persistent default can lead to the LLP being struck off the register and to action against the designated members, so a missed Companies House deadline is not a trivial matter.</p>
 
-<h2>What Must a Solicitor LLP File with HMRC?</h2>
+<h2>The Tax Filing Is Separate: the SA800</h2>
 
-<p>Alongside the Companies House accounts, the LLP must file a partnership tax return on form SA800. This is separate from each member's personal self-assessment tax return (SA100 or SA200).</p>
+<p>Because an LLP is tax transparent, its Companies House filing does not deal with tax. The LLP must also file a partnership tax return on form SA800 with HMRC. The SA800 reports the LLP's total taxable profit or loss and allocates it among the members; the LLP itself pays no tax, and each member then reports their share on their own self-assessment return.</p>
 
-<h3>The SA800 Partnership Tax Return</h3>
+<p>The Companies House accounts and the SA800 must be consistent. The profit in the SA800 should reconcile to the profit in the statutory accounts, adjusted only for tax-specific items such as disallowable expenses and capital allowances. A common slip is treating them as the same filing: they are not. They go to different registries, on different forms, and the SA800 follows the tax year (6 April to 5 April), so a firm with a non-March year end has to apportion accounting-period profits across tax years. Many solicitor LLPs use a 31 March or 5 April year end precisely to keep that apportionment simple. For the mechanics of the partnership return and the deadlines, see our guide to the <a href="/blog/practice-accounting/llp-tax-return-deadline-uk-2025-26">LLP tax return and deadlines</a>.</p>
 
-<p>The SA800 reports the LLP's total taxable profits or losses for the tax year (6 April to 5 April). It does not calculate tax payable: the LLP itself pays no tax. Instead, it allocates the profits among the members, and each member reports their share on their personal tax return.</p>
+<h2>The SRA Accountant's Report Is Separate Too</h2>
 
-<p>The SA800 must include:</p>
+<p>The SRA Accounts Rules do not dictate how you file your LLP accounts, but they affect what those accounts show. Client money must be presented as a separate liability on the balance sheet and must not be netted off against the firm's own office account. The notes should disclose the total client money held and confirm compliance with the rules, and your COFA should review the draft accounts so these disclosures are accurate. Netting client balances against an office overdraft is a recurring error and is not permitted: client money must appear as a separate liability, not as part of the firm's own funds.</p>
 
-<ul>
-<li>The partnership statement (pages 1 to 4 of the form), showing total profits and how they are allocated.</li>
-<li>A full set of accounts or a three-line account summary (turnover, cost of sales, net profit) if the LLP qualifies as small or micro.</li>
-<li>Supplementary pages if the LLP has certain types of income (e.g., property income, foreign income, or capital gains).</li>
-</ul>
-
-<p>Most solicitor LLPs will need to submit a full set of accounts with the SA800, even if they filed abbreviated accounts at Companies House. HMRC wants to see the full picture, including work in progress (WIP), debtors, and creditors.</p>
-
-<h3>Deadline for the SA800</h3>
-
-<p>The SA800 deadline is 31 January following the end of the tax year. For the 2025/26 tax year (6 April 2025 to 5 April 2026), the deadline is 31 January 2027. If you file online, you have until 31 January. Paper filing must be done by 31 October after the tax year end.</p>
-
-<p>Late filing penalties for the SA800 start at £100 per partner per month, capped at 12 months. If the return is more than 12 months late, HMRC can charge up to 100% of the tax due. These penalties apply to each designated member personally, not just the LLP.</p>
-
-<h2>How Do the Two Filings Interact?</h2>
-
-<p>The Companies House accounts and the SA800 must be consistent. The profit figure in the SA800 should match the profit in the statutory accounts, adjusted only for tax-specific items (e.g., disallowable expenses, capital allowances).</p>
-
-<p>A common mistake is filing the Companies House accounts on a different accounting period to the SA800. For example, if your LLP has a 30 April year end, the Companies House accounts cover the year to 30 April 2025. But the SA800 for 2025/26 covers the period 6 April 2025 to 5 April 2026. You need to apportion the LLP's profits between the two tax years. This is done by taking the profit for the 12 months to 30 April 2025 and allocating it across the 2024/25 and 2025/26 tax years using a time apportionment (or by agreement with HMRC if you use a different basis).</p>
-
-<p>Most solicitor LLPs use a 31 March or 5 April year end to simplify this. If your year end is 31 March, the Companies House accounts and the SA800 cover almost the same period, making the apportionment straightforward.</p>
-
-<h2>What About the SRA Accounts Rules?</h2>
-
-<p>The SRA Accounts Rules do not directly dictate how you file your LLP accounts. But they do affect what appears in them. Your client account balances must be shown separately from your office account on the balance sheet. The notes to the accounts should disclose the total client money held and confirm that the firm has complied with the rules.</p>
-
-<p>Your COFA should review the draft accounts to ensure the client money disclosures are accurate. A common error is netting off client account balances against office account overdrafts, which is not permitted under the SRA Accounts Rules. The accounts must show client money as a separate liability, not as part of the firm's own funds.</p>
-
-<p>If your firm holds client money, you will also need an annual accountant's report under Rule 12 of the SRA Accounts Rules. This is filed separately with the SRA, not with Companies House or HMRC. The accountant's report confirms that your firm has complied with the rules during the period. Exemptions apply if you held no more than £10,000 client money at any time and the average balance did not exceed £250.</p>
+<p>A firm that has held client money during the period normally also has to obtain an annual accountant's report under Rule 12 of the SRA Accounts Rules. This is a distinct filing: it goes to the SRA, not to Companies House or HMRC, and it confirms that the firm complied with the rules during the period. A firm is exempt from obtaining the report if all the client money it held was held within an average of £10,000 and a maximum of £250,000 across the accounting period, or if all the client money received in the period was money received from the Legal Aid Agency. For the exemption conditions in full, see our guide to the <a href="/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds">SRA accountant's report exemption thresholds</a>.</p>
 
 <h2>Common Mistakes and How to Avoid Them</h2>
 
-<h3>Mistake 1: Filing the Wrong Version of Accounts</h3>
-<p>Some solicitor LLPs file abbreviated accounts at Companies House but then submit full accounts to HMRC. This is fine as long as the underlying figures are consistent. But if the abbreviated accounts omit key items (e.g., WIP or goodwill), the SA800 must still include them. Do not file abbreviated accounts with HMRC unless you are sure HMRC will accept them. Most HMRC officers expect full accounts.</p>
+<h3>Mistake 1: Treating the Companies House Filing and the Tax Return as One</h3>
+<p>The statutory accounts at Companies House and the SA800 at HMRC are different obligations with different deadlines. Partners often focus on the Companies House accounts and overlook the SA800, or assume that filing one satisfies the other. Diarise both, and reconcile the profit figures so the two filings tell a consistent story.</p>
 
-<h3>Mistake 2: Missing the SA800 Deadline</h3>
-<p>The SA800 deadline is often overlooked because partners focus on the Companies House filing. Remember that the SA800 penalty applies per partner, per month. For a five-partner LLP, a two-month delay costs £1,000 in penalties. Set a calendar reminder for 31 January each year.</p>
+<h3>Mistake 2: Filing the Wrong Level of Accounts</h3>
+<p>A small LLP can file a filleted set at Companies House, but the figures still have to be complete and internally consistent, and HMRC will expect a full set of accounts to support the SA800. Make sure that any reduced filing does not omit items, such as work in progress or members' balances, that the firm still needs to account for elsewhere.</p>
 
-<h3>Mistake 3: Incorrect Profit Allocation</h3>
-<p>The SA800 must show how profits are allocated among members. If your LLP uses a complex profit-sharing model (e.g., salaried members, fixed-share partners, and equity partners), the allocation must reflect the actual legal entitlement under the LLP agreement. HMRC can challenge allocations that appear artificial. Use the <a href="/calculators/llp-profit-share-allocation">LLP profit share allocation calculator</a> to model your allocations before filing.</p>
+<h3>Mistake 3: Mis-stating Members' Interests</h3>
+<p>The split between members' equity and members' debt, and the disclosure of amounts due to and from members, is one of the more technical parts of an LLP balance sheet. Getting it wrong can misstate the firm's net asset position. Where the firm has fixed-share members, salaried members or any automatic profit allocation, take advice on the classification before the accounts are signed.</p>
 
-<h3>Mistake 4: Forgetting to File a Nil Return</h3>
-<p>If your LLP made no profit or had no activity in a period, you must still file a nil SA800. Failure to do so triggers the same penalties as a late return. The same applies to Companies House: dormant LLPs must file dormant accounts each year.</p>
+<h3>Mistake 4: Forgetting the Dormant or Nil Filing</h3>
+<p>If the LLP had no significant transactions in the period it must still deliver dormant accounts to Companies House and a nil SA800 to HMRC. Inactivity does not switch off the filing obligations; only formal dissolution does.</p>
 
-<h2>Practical Steps for Your Solicitor LLP</h2>
+<h2>A Filing Checklist for Your Solicitor LLP</h2>
 
-<p>Here is a checklist for each filing cycle:</p>
+<p>Here is a practical sequence for each filing cycle:</p>
 
 <ol>
-<li>Agree the accounting reference date with your accountant. A 31 March year end simplifies tax apportionment.</li>
-<li>Prepare management accounts and agree the profit allocation among members before the year end.</li>
-<li>Draft the statutory accounts in accordance with UK GAAP, including client money disclosures.</li>
-<li>File the accounts at Companies House within nine months of the year end.</li>
-<li>Prepare the SA800 using the same profit figure, adjusted for tax items.</li>
-<li>File the SA800 by 31 January following the tax year end.</li>
-<li>Ensure each member files their personal tax return (SA100 or SA200) by the same 31 January deadline, reporting their share of LLP profits.</li>
-<li>Arrange the annual accountant's report under the SRA Accounts Rules if your firm holds client money.</li>
+<li>Confirm the accounting reference date. A 31 March year end simplifies the later tax apportionment.</li>
+<li>Prepare the statutory accounts under UK GAAP (FRS 102, or FRS 105 if the firm qualifies and the format suits), including the client money disclosures and the members' interests note.</li>
+<li>Establish the firm's size category to confirm whether audit applies and how much you can fillet from the filed accounts.</li>
+<li>Have a designated member sign the balance sheet and the members' report.</li>
+<li>Deliver the accounts to Companies House within nine months of the year end.</li>
+<li>Prepare the SA800 from the same accounts, adjusted for tax items, and file it with HMRC, so each member can then report their profit share on their own return.</li>
+<li>If the firm held client money, arrange the annual accountant's report under the SRA Accounts Rules (unless an exemption applies) and file it with the SRA.</li>
 </ol>
 
-<p>If you are unsure about any step, speak to a legal-sector-specialist accountant. The rules are not optional, and the penalties for getting them wrong can be significant for both the LLP and its members.</p>
+<p>If you are unsure about any step, particularly the members' interests presentation or the interaction between the three filings, speak to a legal-sector-specialist accountant. The obligations are not optional, and the consequences of getting them wrong fall on the LLP and on its designated members personally.</p>
 
-<p>For more guidance on LLP structures, read our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">comparison of partnership vs LLP for solicitors</a>. If you are considering a merger or acquisition, see our <a href="/solicitor-guides/post-merger-integration">post-merger integration guide</a>.</p>
+<p>For more on LLP structures, read our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">comparison of partnership and LLP for solicitors</a>. If you are considering a merger or acquisition, see our <a href="/solicitor-guides/post-merger-integration">post-merger integration guide</a>.</p>

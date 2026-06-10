@@ -1,93 +1,134 @@
 ---
-title: How Do BTL Mortgages Work for UK Landlords in 2025/26?
+title: "How Do BTL Mortgages Work for UK Landlords in 2025/26?"
 slug: btl-mortgage
 canonical: https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/btl-mortgage
 date: '2026-05-19'
-author: Property Tax Partners Editorial Team
+author: "Property Tax Partners Editorial Team"
 category: Landlord Tax Essentials
-metaTitle: 'BTL Mortgage Advice: Rates, Rules & Tax Impact for Landlords'
-metaDescription: BTL mortgage rules, affordability tests, and Section 24 impact for UK landlords. How to structure buy-to-let borrowing efficiently.
-altText: UK landlord reviewing BTL mortgage documents at a desk with a calculator and property portfolio notes
+metaTitle: 'BTL Mortgage Tax Relief: Section 24 Rules for Landlords'
+metaDescription: "How BTL mortgage tax relief works under Section 24, why personal landlords get a 20% credit not a deduction, and how limited company borrowing differs."
+altText: "UK landlord reviewing BTL mortgage documents at a desk with a calculator and property portfolio notes"
 image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'BTL Mortgage Advice for UK Landlords: What You Need to Know'
-summary: A practical guide to buy-to-let mortgages for UK landlords. Covers current rates, affordability rules introduced in 2016, and how Section 24 affects interest relief. Includes tips on choosing between personal and limited company borrowing.
+h1: 'BTL Mortgage Tax Relief for UK Landlords: How It Actually Works'
+summary: "A working guide to buy-to-let mortgage tax for UK landlords. Why personal owners get a Section 24 basic-rate credit rather than a deduction, how limited company borrowing differs, the interest-only versus repayment question, and what MTD for Income Tax means for your interest records."
 schema: ''
 faqs:
-- question: How have BTL mortgage rates changed in recent years?
-  answer: BTL mortgage rates climbed sharply from around 2.5% in June 2021 to roughly 5.8% by June 2023, before easing somewhat. Rates remain materially above the pre-2022 environment. Always check current lender comparisons rather than relying on a single quoted figure, as rates move with Bank of England base rate and lender appetite. Compare the total cost over the fixed term, including arrangement fees, not just the headline rate.
-- question: Can I claim BTL mortgage interest as a tax deduction?
-  answer: Not directly if you hold the property in your personal name. Since April 2020, Section 24 restricts mortgage interest relief to a basic rate tax credit of 20%. You cannot deduct the interest from your rental income before calculating tax. If you hold the property through a limited company, the company can deduct the full interest against its rental income before corporation tax.
-- question: What deposit do I need for a BTL mortgage?
-  answer: Most lenders require a minimum deposit of 25% of the property's value. Some specialist lenders may accept 20%, but this is less common and usually comes with higher interest rates. A larger deposit (30% or more) typically secures better rates. The exact requirement depends on the lender, the property type, and your personal financial profile.
-- question: How does Making Tax Digital affect my BTL mortgage records?
-  answer: From April 2026, if your gross property income exceeds £50,000, you must keep digital records of all income and expenses, including mortgage interest payments. You will submit quarterly updates to HMRC. Accurate tracking of interest paid is essential because the Section 24 tax credit is based on actual interest paid in the tax year. Using accounting software that links to your mortgage statements can simplify compliance.
-dateModified: '2026-05-19'
-sourcesVerifiedAt: '2026-05-19'
+- question: "Can landlords claim mortgage interest as a tax deduction?"
+  answer: "Not if you own the property in your personal name. Since 6 April 2020, Section 24 has fully replaced the old deduction with a basic-rate (20%) tax reducer. You add back the full finance cost when working out taxable rental profit, then HMRC knocks 20% of the interest off your final tax bill as a credit. A company landlord is different: a limited company deducts the full interest from rental income before corporation tax, because Section 24 is an income-tax rule and does not apply to companies."
+- question: "Is BTL mortgage interest tax deductible in 2026?"
+  answer: "For a personal landlord, the interest is not deductible from profit. You instead receive a 20% basic-rate tax reducer for 2026/27. From 6 April 2027, Finance Act 2026 sets a separate property basic rate of 22% and the reducer rises to 22% in step, so a basic-rate landlord sees no new wedge. For a limited company, the interest remains fully deductible against rental income before corporation tax."
+- question: "Does Section 24 apply to interest-only BTL mortgages?"
+  answer: "Yes. Section 24 restricts the tax relief on the interest element regardless of whether the mortgage is interest-only or repayment. On a repayment mortgage only the interest part of each payment is a finance cost, and the capital repayment is never an allowable expense. Interest-only borrowing maximises the finance cost in the relief calculation, which is exactly the figure Section 24 caps at the basic rate."
+- question: "Are mortgage arrangement and broker fees tax deductible for landlords?"
+  answer: "Loan arrangement fees, broker fees, and other costs of getting BTL finance are finance costs, so they fall inside the Section 24 restriction alongside the interest. A personal landlord cannot deduct them from profit; they go into the figure that attracts the 20% (22% from 2027/28) basic-rate reducer. A limited company deducts these finance costs in full against rental income before corporation tax."
+- question: "Can I deduct mortgage interest if I let through a limited company?"
+  answer: "Yes. Section 24 does not apply to companies, so a limited company (commonly an SPV) deducts the full mortgage interest from rental income before paying corporation tax. That is the core tax reason higher-rate and additional-rate landlords model incorporation. The trade-offs sit elsewhere: extracting profit attracts further tax, and moving existing personally held property into a company can crystallise CGT and an SDLT charge."
+- question: "Is mortgage interest on a holiday let still tax deductible?"
+  answer: "No longer on favourable terms. The Furnished Holiday Lettings regime was abolished from 6 April 2025, so a short-let property is now treated as an ordinary UK property business. That means the same Section 24 finance-cost restriction applies to a personally held holiday let as to any other residential let: a basic-rate tax reducer, not a deduction. The old FHL advantage of full interest deductibility has gone."
+- question: "How does Section 24 affect higher-rate taxpayer landlords?"
+  answer: "This is where the restriction bites. Because the relief is capped at the basic rate while your rental profit is taxed at 40% or 45%, you carry a finance-cost wedge of 20 percentage points (40 minus 20) or 25 points (45 minus 20). Adding back the interest can also inflate your total income enough to tip you into a higher band, restrict your personal allowance, or trigger the High Income Child Benefit Charge."
+- question: "What is the difference between a repayment and an interest-only BTL mortgage for tax?"
+  answer: "Tax relief is identical on the interest in both cases: it is restricted to the basic-rate reducer for a personal landlord and fully deductible for a company. The difference is cash flow and capital. A repayment mortgage reduces the loan over time but only the interest slice each month is a finance cost. Interest-only keeps monthly cost lower and the full payment is a finance cost, but you repay nothing off the balance."
+- question: "Do I have to keep digital records of my mortgage interest under MTD?"
+  answer: "Yes, once you are within Making Tax Digital for Income Tax. MTD is live from 6 April 2026 for landlords with gross property income over GBP 50,000, then 6 April 2027 at GBP 30,000 and 6 April 2028 at GBP 20,000. You keep digital records of rental income and expenses, including interest paid, and send quarterly updates. Accurate interest figures matter because the Section 24 reducer is based on actual interest paid in the year."
+- question: "Does releasing equity by remortgaging a BTL change my tax position?"
+  answer: "It can. Interest on borrowing up to the value of the property when it first entered your letting business is normally relievable as a finance cost, subject to Section 24. Drawing extra equity for genuine business purposes can still qualify, but borrowing for non-business use is not relievable. Remortgaging does not itself trigger CGT, because there is no disposal, but it raises your finance cost and your Section 24 calculation."
+- question: "How is profit on selling a BTL property taxed?"
+  answer: "A gain on selling a residential investment property is a capital gain, charged at 18% within your basic-rate band and 24% above it (the 24% higher residential rate introduced by Finance (No.2) Act 2024). You deduct the annual exempt amount, GBP 3,000, before tax. The mortgage balance does not reduce the gain: CGT is on the rise in value, not on your equity. A UK residential property gain must be reported and the tax paid within 60 days of completion."
+dateModified: '2026-05-31'
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: '2026-05-31'
+sourcesVerifiedAt: '2026-05-31'
 sourceDomains:
-- bankofengland.co.uk
-- icaew.com
-- themortgageworks.co.uk
+- gov.uk
+- legislation.gov.uk
 imageCredit:
   photographer: Jakub Zerdzicki
   photographer_url: https://www.pexels.com/@jakubzerdzicki
   source: Pexels
   source_url: https://www.pexels.com/photo/real-estate-investment-concept-with-keys-and-money-30139610/
 ---
-<p>If you are a UK landlord or considering becoming one, understanding how a <strong>BTL mortgage</strong> works is essential. The buy-to-let mortgage market is distinct from residential lending, with different affordability tests, interest rates, and tax implications. This guide explains the key factors you need to know for the 2025/26 tax year and beyond.</p>
+<p>The hardest part of a buy-to-let mortgage is rarely the borrowing, it is the tax. If you hold the property in your own name, Section 24 means you no longer deduct mortgage interest from your rental profit at all. You can run a property at a thin margin and still owe more tax than the cash you actually took home. <strong>BTL mortgage tax relief</strong> works one way for a personal landlord in 2025/26 and a completely different way through a limited company, and the same set of rules governs interest-only borrowing, equity release, holiday lets and a future sale.</p>
 
-<h2>What Is a BTL Mortgage?</h2>
-<p>A buy-to-let (BTL) mortgage is a loan secured against a property that you intend to rent out, rather than live in. Lenders assess these applications based on the expected rental income, not just your personal earnings. The BTL market is substantial: about 45% of private renters live in a home with a BTL mortgage, and the total outstanding debt in this sector is around £300 billion, representing about 18% of the overall mortgage market <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>Unlike a residential mortgage, lenders typically require a larger deposit, often 25% or more of the property's value. Interest rates also tend to be higher, reflecting the perceived additional risk. For historical context, the average two-year fixed-rate BTL mortgage stood at around 5.89% in June 2023, with the average five-year fixed rate at 5.76% <sup><a href="#ref-2" id="cite-2">[2]</a></sup>, having climbed from around 2.5% in June 2021 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. For live rates, use a broker or a comparison site rather than relying on quoted historical figures.</p>
+<h2>Can landlords claim BTL mortgage interest as a tax deduction?</h2>
+<p>If you hold the property personally, no. This is the single point that catches most people out, so it is worth being exact. Before 2017, you deducted mortgage interest from rental income as a normal business expense, and your taxable profit was the figure after interest. Section 24 of the Finance (No.2) Act 2015 phased that out between 2017/18 and 2019/20, and from 6 April 2020 it has applied in full.</p>
+<p>The mechanics now work in two steps. First, you calculate your taxable rental profit <em>without</em> deducting any finance costs, so the interest is effectively added back. Second, HMRC gives you a tax reducer worth 20% of the finance cost, applied against your final tax bill. The interest never reduces your taxable profit; it only generates a basic-rate credit at the end. For most landlords that is the difference between a manageable bill and an uncomfortable one. Our <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24 and tax relief</a> takes the calculation apart in full, and <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step">how to calculate the Section 24 tax credit step by step</a> walks through the arithmetic.</p>
+<p>The reducer is capped. It is the lower of 20% of the finance costs, 20% of your rental profit, and 20% of your income above the personal allowance. Where the cap bites, unused finance costs carry forward to future years. This matters for landlords with large interest bills relative to profit, which is increasingly common when borrowing is interest-only.</p>
 
-<h2>How Affordability Rules Affect Your BTL Mortgage</h2>
-<p>In 2016, the Prudential Regulation Authority introduced specific affordability requirements for BTL mortgages <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. These rules mean lenders must stress-test your application to ensure the rental income covers the mortgage payments even if interest rates rise. Typically, lenders require the monthly rent to be at least 125% to 145% of the mortgage payment, calculated at a notional interest rate (often 5.5% to 6%).</p>
-<p>This stress test is a key reason why some landlords find it harder to secure finance today than a decade ago. Between 2000 and 2008, the outstanding BTL mortgage stock grew from £9 billion to £140 billion, but since 2015, annual growth has averaged around 5%, compared to 8.5% between 2008 and 2015 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The tighter rules have slowed the market's expansion.</p>
-<p>If you are looking to expand your portfolio, you need to check that your rental income meets these thresholds. A property accountant can help you model the numbers. For a full overview of how we support landlords, see our <a href="/services">property accountant services</a>.</p>
+<h2>Why a company landlord gets full mortgage interest relief</h2>
+<p>Section 24 is an income-tax rule. It does not touch companies. A limited company that owns rental property (usually a special purpose vehicle, or SPV) deducts the full mortgage interest from its rental income before working out corporation tax, exactly as the old pre-2017 personal regime worked. That single structural fact is why incorporation is now on the table for so many higher-rate landlords.</p>
+<p>Here is the core difference, as a tax comparison only. It says nothing about mortgage pricing, because company BTL lending and personal BTL lending are different products and live terms move constantly.</p>
+<table>
+<thead>
+<tr><th>Feature</th><th>Personal landlord</th><th>Limited company (SPV)</th></tr>
+</thead>
+<tbody>
+<tr><td>Mortgage interest treatment</td><td>Added back to profit; 20% basic-rate reducer (22% from 2027/28)</td><td>Fully deducted before corporation tax</td></tr>
+<tr><td>Tax on rental profit</td><td>Income tax at 20%, 40% or 45% (22/42/47 from 2027/28)</td><td>Corporation tax: 19% small profits rate, 25% main rate, marginal band between</td></tr>
+<tr><td>Effect on personal allowance and child benefit</td><td>Added-back interest inflates total income, can trigger tapering and the HICBC</td><td>Profit stays in the company until extracted</td></tr>
+<tr><td>Extracting cash</td><td>Profit is already yours after tax</td><td>Dividend or salary, taxed again on the way out</td></tr>
+<tr><td>Moving existing property in</td><td>Not applicable</td><td>Potential CGT on disposal and SDLT on acquisition by the company</td></tr>
+</tbody>
+</table>
+<p>The corporation tax rates are the standard ones: a 19% small profits rate up to GBP 50,000 of profit, a 25% main rate above GBP 250,000, and marginal relief tapering between the two (CTA 2010 Part 3A). Whether incorporation actually wins for you depends on your marginal income tax rate, how much of the profit you need to draw out, and the one-off cost of getting personal property into the company. Our <a href="https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> models that properly, and <a href="https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options">buy-to-let limited company mortgage options</a> covers the company borrowing angle specifically.</p>
 
-<h2>BTL Mortgage Rates: Recent Trends and What to Expect</h2>
-<p>The BTL interest rate environment has shifted materially over the last few years. The average BTL mortgage rate moved from around 2.5% in June 2021 to roughly 3.5% by June 2022, and onward to approximately 5.8% by June 2023 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. That climb compressed margins for highly leveraged landlords and made stress-testing a more demanding exercise.</p>
-<p>Product availability also tightened sharply through that period: the number of BTL mortgage products on the market fell from 2,500 in June 2022 to 1,200 in June 2023 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The market has settled since then, but rates remain meaningfully above the pre-2022 environment. Specific deals (rates, fees, criteria) change frequently. Check current lender comparison sites or speak to a broker for live numbers rather than relying on any quoted figure, including ones in this article. Lenders also reserve the right to change or withdraw products at any time <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
-<p>When comparing deals, remember that mortgages are secured on your property. You could lose your property if you do not keep up payments on your mortgage <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. Always factor in potential rate rises when planning your finances.</p>
+<h2>Interest-only versus repayment: does it change the tax?</h2>
+<p>The relief on the interest is the same either way, but the two structures behave very differently in your Section 24 calculation and your cash flow.</p>
+<p>On a repayment mortgage, each monthly payment is part interest and part capital. Only the interest slice is a finance cost. The capital repayment is never an allowable expense, because you are paying down a debt, not incurring a cost of letting. As the balance falls, the interest portion shrinks year by year, so your finance cost (and the size of the Section 24 reducer) naturally declines over the term.</p>
+<p>On an interest-only mortgage, the whole payment is interest, so the entire monthly cost is a finance cost in the relief calculation. Cash flow is lighter, but you repay nothing off the loan, and if you are a higher-rate taxpayer the finance-cost wedge that Section 24 leaves stays at its maximum for the life of the loan. That is the heart of the planning question: interest-only maximises the figure that only attracts a basic-rate reducer. <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-interest-only-mortgage-tax-planning">Section 24 and interest-only mortgage tax planning</a> goes deeper on it.</p>
+<table>
+<thead>
+<tr><th>Question</th><th>Interest-only</th><th>Repayment</th></tr>
+</thead>
+<tbody>
+<tr><td>What counts as a finance cost?</td><td>The whole monthly payment</td><td>Only the interest portion of each payment</td></tr>
+<tr><td>Capital paid down?</td><td>None over the term</td><td>Yes, balance falls each year</td></tr>
+<tr><td>Section 24 reducer over time</td><td>Stays at maximum</td><td>Declines as interest portion shrinks</td></tr>
+<tr><td>Monthly cash demand</td><td>Lower</td><td>Higher</td></tr>
+</tbody>
+</table>
 
-<h2>Section 24 and the Tax Impact of BTL Mortgage Interest</h2>
-<p>One of the most significant tax changes affecting BTL landlords is Section 24 of the Finance (No.2) Act 2015. Since April 2020, you can no longer deduct your mortgage interest costs from your rental income before calculating tax. Instead, you receive a basic rate tax credit (20%) on the interest paid.</p>
-<p>This means higher-rate and additional-rate taxpayers face a larger tax bill on their rental profits, even if those profits are lower due to high mortgage costs. For example, a landlord earning £60,000 in total income with £15,000 of BTL mortgage interest will pay more tax than before Section 24 was fully implemented. For a detailed explanation, read our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24 and tax relief</a>.</p>
-<p>If you are a basic rate taxpayer, the impact is neutral because the 20% tax credit matches the relief you would have received. But if your rental income pushes you into the higher rate band, the restriction bites hard. This is one reason many landlords consider incorporating into a limited company, where mortgage interest remains fully deductible against corporation tax. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> explains the pros and cons.</p>
+<h2>What about arrangement fees, broker fees and setup costs?</h2>
+<p>Loan arrangement fees, valuation fees charged by the lender, broker fees, and other costs of arranging the borrowing are finance costs in their own right. That means they follow the interest into the Section 24 restriction. A personal landlord does not deduct them from profit; they join the finance-cost total that attracts the basic-rate reducer. A company deducts them in full before corporation tax, in the same way as the interest.</p>
+<p>This is a common error in landlord self-assessment returns: arrangement and broker fees are entered as ordinary expenses and deducted from profit, when they should sit in the finance-costs box. If you are unsure which costs are finance costs and which are genuine running expenses (letting agent fees, repairs, insurance, and the like, which remain fully deductible), our piece on <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide">finance costs and Section 24</a> sets out the boundary.</p>
 
-<h2>Should You Take a BTL Mortgage in Your Personal Name or a Limited Company?</h2>
-<p>This is one of the most common questions we hear. The answer depends on your individual circumstances, including your income level, portfolio size, and long-term plans.</p>
-<p>If you hold a BTL mortgage in your personal name, you are subject to Section 24 restrictions on interest relief. You also pay income tax on rental profits at your marginal rate (20%, 40%, or 45%). However, you benefit from the annual CGT exemption (£3,000 in 2025/26) and principal private residence relief if you ever sell a property you lived in.</p>
-<p>If you hold the mortgage through a limited company (an SPV), the company can deduct the full mortgage interest against its rental income before paying corporation tax (19% or 25%). This can be significantly more tax-efficient for higher-rate taxpayers. However, you will need a commercial BTL mortgage, which often has slightly higher rates and arrangement fees. You also face additional costs: company formation, annual accounts, and potential dividend tax when extracting profits. Our <a href="/incorporation">incorporation page</a> covers the process in more detail.</p>
-<p>For most landlords with three or more properties, incorporation is worth modelling. But it is not a one-size-fits-all solution. Speak to a specialist property accountant before making the switch.</p>
+<h2>How Section 24 hits higher-rate landlords (a worked example)</h2>
+<p>The figures below are illustrative and use round numbers to show the mechanism, not a quote of anyone's actual position. Say your employment plus rental income puts you firmly in the higher-rate band, and your portfolio produces GBP 30,000 of rent and GBP 15,000 of mortgage interest.</p>
+<p>Under the old pre-2017 rules, your taxable rental profit would have been GBP 30,000 minus GBP 15,000, so GBP 15,000, taxed at 40%, giving a GBP 6,000 tax bill on the rent.</p>
+<p>Under Section 24 today, the interest is added back. Your taxable rental profit is the full GBP 30,000, taxed at 40%, so GBP 12,000. You then receive a basic-rate reducer of 20% of the GBP 15,000 interest, which is GBP 3,000. The net tax on the rent is GBP 12,000 minus GBP 3,000, so GBP 9,000. The same property and the same cash interest now produce GBP 3,000 more tax than under the old rules. That GBP 3,000 is the 20-percentage-point wedge (40% rate against 20% relief) applied to the GBP 15,000 of interest.</p>
+<p>There is a second, quieter effect. Adding the GBP 15,000 of interest back into your total income can push you over the GBP 100,000 personal allowance taper, over the GBP 60,000 child benefit threshold, or from the basic into the higher band. The headline reducer is only half the story; the knock-on effect on your allowances often costs more. <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">Section 24 for higher-rate taxpayers</a> covers those interactions.</p>
 
-<h2>How Making Tax Digital (MTD) Affects Your BTL Mortgage Record-Keeping</h2>
-<p>From April 2026, Making Tax Digital for Income Tax becomes mandatory for landlords with gross property income over £50,000. This threshold drops to £30,000 from April 2027 and £20,000 from April 2028. You will need to keep digital records of your rental income and expenses, including mortgage interest payments, and submit quarterly updates to HMRC.</p>
-<p>If you have a BTL mortgage, you must track the interest paid each quarter accurately. This is because the Section 24 tax credit is calculated based on the actual interest paid in the tax year, not an estimate. Using accounting software that integrates with your mortgage statements can save time and reduce errors. For more on preparing for this change, read our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadline guide</a>.</p>
+<h2>What changes for landlords from April 2027?</h2>
+<p>There is a widespread but wrong belief that the Section 24 reducer is frozen at 20% forever. It is not. Finance Act 2026 received Royal Assent on 18 March 2026 and introduced separate property income tax rates from 6 April 2027: a property basic rate of 22%, a higher rate of 42%, and an additional rate of 47%. These apply to property income in England, Wales and Northern Ireland; only Scotland is carved out, where Holyrood sets the rates.</p>
+<p>The Section 24 reducer rises to 22% in step with the new basic rate. A basic-rate landlord therefore sees no new wedge open: property income is taxed at 22% and the reducer is 22%, so the two still match. A higher-rate landlord's reducer improves slightly, from 20% to 22%, while the property income rate moves from 40% to 42%, so the finance-cost wedge stays at the same 20 percentage points as today. The change is not the disaster some commentary suggests, but it is not nothing either, and the planning logic for higher-rate landlords does not reverse. <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-2027-tax-year-planning-landlords">Section 24 and 2027 tax-year planning</a> sets out the detail.</p>
 
-<h2>What Happens If You Remortgage or Switch Your BTL Mortgage?</h2>
-<p>Remortgaging a BTL property is common when an initial fixed-rate deal ends. You can switch to a new product with the same lender or move to a different one. The process is similar to a residential remortgage, but lenders will reassess affordability based on current rental income and interest rates.</p>
-<p>When you remortgage, you may be able to release equity from the property. This can be used to fund a deposit on another BTL property or for other investments. However, releasing equity increases your loan-to-value ratio, which may push you into a higher interest rate bracket. It also increases your monthly mortgage costs, which affects your net rental profit and tax position.</p>
-<p>If you are considering remortgaging, factor in any early repayment charges on your existing deal. Also, remember that you can only secure your rate once you have submitted your mortgage application and paid any upfront fees <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. Rates can change at any time, so act promptly once you find a suitable deal.</p>
+<h2>Holiday lets: the FHL advantage has gone</h2>
+<p>If your borrowing funds a short-let or holiday property, the rules changed under your feet. The Furnished Holiday Lettings regime was abolished from 6 April 2025. Until then, an FHL was treated more like a trade, and one of its prized features was full deductibility of mortgage interest, outside Section 24. That advantage no longer exists.</p>
+<p>From 6 April 2025, a personally held holiday let is an ordinary UK property business, and the same Section 24 restriction applies to its mortgage interest as to any standard buy-to-let: a basic-rate reducer, not a deduction. The abolition also removed the FHL capital allowances treatment and its CGT reliefs. If you bought into short lets partly for the old interest treatment, that part of the case is gone. Our guide on the <a href="https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know">abolition of Furnished Holiday Lettings</a> covers what individual owners need to do.</p>
 
-<h2>Common Mistakes Landlords Make with BTL Mortgages</h2>
-<p>We see several recurring errors when landlords arrange their BTL mortgages:</p>
+<h2>Remortgaging and releasing equity</h2>
+<p>Remortgaging a BTL when a fixed deal ends is routine, and it does not by itself create a tax charge, because you have not disposed of anything. What changes is your finance cost, and therefore your Section 24 figures. Interest on borrowing up to the value of the property when it first entered your letting business is generally a relievable finance cost (still restricted to the basic rate for a personal landlord). If you draw out extra equity, the interest on the additional borrowing is only relievable to the extent it is used for the property business. Borrowing extra to fund non-business spending breaks the link, and that interest is not relievable.</p>
+<p>This is a frequent source of error: landlords assume all interest on a remortgaged loan is relievable, when relief follows the purpose of the borrowing, not the security. If you are planning to release equity to fund another deposit, model the Section 24 impact first. <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-remortgaging-btl-property-tax-implications">Remortgaging a BTL and the tax implications</a> goes through the detail.</p>
+
+<h2>When you sell: capital gains tax on a BTL</h2>
+<p>A profit on selling a residential investment property is a capital gain, not income. For 2025/26 the residential CGT rates are 18% on gains falling within your remaining basic-rate band and 24% on gains above it (the 24% higher residential rate introduced by Finance (No.2) Act 2024). You deduct the annual exempt amount of GBP 3,000 before charging tax. A UK residential property gain must be reported to HMRC and the tax paid within 60 days of completion.</p>
+<p>One point trips up almost every leveraged landlord: the mortgage does not reduce the gain. CGT is charged on the increase in the property's value, less acquisition cost and allowable improvements, not on the equity you walk away with. A property bought with a small deposit and sold years later can produce a large taxable gain even though the net cash after redeeming the mortgage feels modest. Plan disposals around this, not around your loan balance.</p>
+
+<h2>Making Tax Digital and your interest records</h2>
+<p>Making Tax Digital for Income Tax is live. From 6 April 2026 it applies to landlords with gross property income over GBP 50,000; the threshold drops to GBP 30,000 from 6 April 2027 and GBP 20,000 from 6 April 2028. Within MTD you must keep digital records of rental income and expenses, including mortgage interest, and submit quarterly updates to HMRC through compatible software.</p>
+<p>For a BTL landlord the discipline that matters most is the interest figure. The Section 24 reducer is based on actual interest paid in the tax year, so estimates and round numbers will not do. Software that pulls from your mortgage statements removes the guesswork and keeps the quarterly updates clean. Start before you are forced to: the landlords who struggle are the ones who try to reconstruct a year of interest the week before a deadline. Our <a href="https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadline guide</a> sets out what to put in place.</p>
+
+<h2>Common mistakes landlords make with BTL mortgage tax</h2>
 <ul>
-<li><strong>Not stress-testing at higher rates.</strong> Even if you secure a low rate now, ensure the rental income covers payments at 6% or 7%. This protects you if rates rise again.</li>
-<li><strong>Ignoring Section 24 when choosing a product.</strong> Higher-rate taxpayers should consider interest-only mortgages with caution, as the tax relief restriction can make them less attractive.</li>
-<li><strong>Overlooking arrangement fees.</strong> A low headline rate may come with a high fee. Calculate the total cost over the fixed term, not just the monthly payment.</li>
-<li><strong>Failing to plan for MTD.</strong> From April 2026, you need digital records. Start using software now to avoid a last-minute scramble.</li>
-<li><strong>Not seeking professional advice.</strong> A property accountant can help you model different scenarios and choose the most tax-efficient structure. See our guide on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> for tips.</li>
+<li><strong>Deducting interest from profit.</strong> The most common error. A personal landlord cannot deduct interest; it is added back and only generates a basic-rate reducer.</li>
+<li><strong>Treating arrangement and broker fees as ordinary expenses.</strong> They are finance costs, so they sit inside the Section 24 restriction, not in the general expenses box.</li>
+<li><strong>Assuming a holiday let still gets full interest relief.</strong> The FHL regime ended on 6 April 2025; short lets now follow standard Section 24 rules.</li>
+<li><strong>Claiming relief on all remortgage interest.</strong> Relief follows the purpose of the borrowing. Interest on equity drawn for non-business use is not relievable.</li>
+<li><strong>Ignoring the allowance knock-on.</strong> Added-back interest can taper your personal allowance or trigger the High Income Child Benefit Charge, often costing more than the headline wedge.</li>
+<li><strong>Leaving MTD interest records to the last minute.</strong> The reducer needs accurate interest paid; set up digital records early.</li>
 </ul>
 
-<h2>Key Takeaways for UK Landlords</h2>
-<p>BTL mortgages remain a core part of the UK rental market, with about £300 billion of outstanding debt <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The combination of higher interest rates compared to the pre-2022 environment, tighter affordability rules, and Section 24 tax restrictions means you need to plan carefully. While rates have eased from the June 2023 peak <sup><a href="#ref-2" id="cite-2">[2]</a></sup>, returning to the 2.5% levels of 2021 <sup><a href="#ref-2" id="cite-2">[2]</a></sup> looks unlikely in the near term. Always use a current lender comparison or broker for live rates rather than quoted historical figures.</p>
-<p>If you are a landlord with an existing BTL mortgage, review your current deal at least six months before it ends. Compare products from multiple lenders, including specialist BTL providers. If you are a new landlord, ensure your rental income comfortably exceeds the lender's stress test. And always consider the tax implications, both now and after the MTD changes take effect.</p>
-<p>For personalised advice on your BTL mortgage strategy and how it interacts with your overall tax position, <a href="/contact">contact our team</a>. We help landlords across the UK, from London to Manchester, structure their finances efficiently.</p>
-
-<h2>Sources</h2>
-<ol>
-  <li id="ref-1"><strong>bankofengland.co.uk</strong>: <a href="https://www.bankofengland.co.uk/quarterly-bulletin/2023/2023/the-buy-to-let-sector-and-financial-stability" rel="noopener noreferrer">The buy-to-let sector and financial stability | Bank of England</a></li>
-  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/viewpoints-on-the-news/2023/jul-2023/why-the-mortgage-market-may-now-be-out-of-reach-for-many" rel="noopener noreferrer">Why the mortgage market may now be out of reach for many | ICAEW</a></li>
-  <li id="ref-3"><strong>themortgageworks.co.uk</strong>: <a href="https://www.themortgageworks.co.uk/our-mortgages/buy-to-let-mortgage-rates" rel="noopener noreferrer">Buy to Let Mortgage Rates</a></li>
-</ol>
-
+<h2>Getting the structure right</h2>
+<p>The tax tail should not wag the investment dog, but with BTL borrowing the tax is large enough to change the answer on whether a property works at all. The questions worth settling early are: personal name or company, interest-only or repayment, and how any future equity release or sale will be taxed. None of these has a single right answer; they depend on your marginal rate, your portfolio size, and what you want the income to do.</p>
+<p>If you want those numbers modelled against your actual position, including whether incorporation would genuinely improve your finance-cost relief, <a href="https://www.propertytaxpartners.co.uk/contact">speak to our team</a>. We work with landlords across the UK and structure BTL finance around the tax, not in spite of it.</p>

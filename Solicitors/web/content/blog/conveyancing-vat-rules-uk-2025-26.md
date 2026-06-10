@@ -5,148 +5,113 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/conveya
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
-metaTitle: "Conveyancing VAT Rules for UK Solicitors 2025/26"
-metaDescription: "UK conveyancing solicitors: understand VAT on conveyancing fees, disbursements, and Land Registry costs. Practical rules for 2025/26 with worked examples."
-altText: "UK solicitor reviewing conveyancing VAT rules at a desk with legal documents and calculator"
+metaTitle: "Conveyancing VAT: Searches, Land Registry & SDLT 2025/26"
+metaDescription: "How VAT applies across a conveyancing matter: your fee, searches after Brabners, Land Registry registration, the tax paid for the client, and CHAPS. UK 2025/26."
+altText: "UK conveyancing solicitor reviewing the VAT treatment of searches, Land Registry fees and SDLT for a property matter"
 image: ""
 h1: "How Does VAT Apply to Conveyancing Fees for UK Solicitors in 2025/26?"
-summary: "Conveyancing services provided by UK solicitors are standard-rated for VAT at 20%. This article explains how VAT applies to conveyancing fees, the treatment of disbursements such as Land Registry fees and search costs, and common pitfalls for law firms in 2025/26."
+summary: "Conveyancing legal services are standard-rated for VAT at 20%. This guide works through the VAT treatment of a conveyancing matter end to end in 2025/26: your firm's fee, property searches (and why most are not disbursements after Brabners), HM Land Registry registration fees, the property transaction tax paid for the client, and CHAPS recharges."
+keyTakeaways:
+  - "Conveyancing legal services are standard-rated for VAT at 20%, with no exemption for residential work."
+  - "After Brabners and Revenue and Customs Brief 6 (2020), a search you read and advise on is part of your taxable supply, not a VAT-free disbursement."
+  - "HM Land Registry registration fees and the property transaction tax paid for the client (SDLT, LBTT or LTT) are clean disbursements with no VAT added."
+  - "CHAPS and telegraphic-transfer fees are standard-rated recharges because the bank supplies your firm, not the client."
+  - "You cannot reclaim input VAT on a search and also bill it as a VAT-free disbursement; the two positions are inconsistent."
 schema: ""
 faqs:
-  - question: "Do I charge VAT on Land Registry fees when recharging to my client?"
-    answer: "No. Land Registry fees are a genuine disbursement because the Land Registry does not charge VAT and the supply is to your client, not to your firm. You recharge the exact amount to your client with no VAT added, provided the invoice is addressed to the client or you clearly identify it as a disbursement on your invoice. Keep the Land Registry invoice as evidence."
-  - question: "Is a CHAPS bank transfer fee a disbursement for VAT purposes?"
-    answer: "Generally no. HMRC's view is that the bank's supply of the CHAPS transfer is to your firm, not to your client. When you recharge the fee to your client, it is a standard-rated supply. You must add 20% VAT on the recharge. The only exception is if the bank invoices the client directly, which is rare in practice. Most firms should treat CHAPS fees as standard-rated recharges."
-  - question: "Can I reclaim VAT on search fees paid to third-party providers?"
-    answer: "Yes, if the search provider invoices your firm and you pay the VAT, you can reclaim that input VAT on your VAT return, provided the search is used for your taxable legal services. However, if you recharge the search cost to your client, the treatment depends on whether it is a genuine disbursement. If the search provider invoices your client directly, you do not reclaim VAT and simply pass the cost through. If you pay the search provider and recharge, you must add VAT on the recharge to the client."
-  - question: "What happens if I accidentally undercharge VAT on a conveyancing invoice?"
-    answer: "You must correct the error. If the error is below £10,000 (net), you can adjust it on your next VAT return. For larger errors, you must notify HMRC using form VAT652. You should also issue a credit note to the client and a corrected invoice showing the correct VAT. Failing to correct errors can lead to penalties and interest charges. If you are unsure, speak to a solicitor accountant for guidance."
+  - question: "Are property search fees a VAT-free disbursement in conveyancing?"
+    answer: "Usually no. A search fee only qualifies as a disbursement if it is passed straight through to the client unused and meets all of HMRC's disbursement conditions. In most conveyancing files the firm reads the search, interprets the result and reports on it to the client, so the search becomes part of the firm's own taxable legal supply and 20% VAT applies. This follows Brabners LLP v HMRC and HMRC's Revenue and Customs Brief 6 (2020), which withdrew the earlier concession that had let firms treat postal search fees as disbursements (withdrawn from 1 December 2020). Treat searches as standard-rated unless you genuinely add nothing to them."
+  - question: "Do I charge VAT on HM Land Registry fees when recharging them to my client?"
+    answer: "No. An HM Land Registry registration fee paid for your client is a genuine disbursement. The Registry does not charge VAT, the supply is to your client, and you recharge the exact amount with no VAT added. Show it separately on the invoice and keep the Registry receipt as evidence. The same clean-disbursement treatment applies to the property transaction tax you pay for the client and to court fees."
+  - question: "Is a CHAPS or telegraphic-transfer fee a disbursement for VAT purposes?"
+    answer: "No. HMRC's view is that the bank supplies the CHAPS or telegraphic transfer to your firm, not to your client. When you recharge the fee it is a standard-rated supply, so you add 20% VAT on the recharge. This is the case even though you are moving the client's money, because the banking service is supplied to you. Treat CHAPS and telegraphic-transfer fees as standard-rated recharges."
+  - question: "Is the tax I pay for the client (SDLT, LBTT or LTT) a disbursement?"
+    answer: "Yes. The property transaction tax you pay to the relevant authority on the client's behalf is a genuine disbursement and carries no VAT. In England and Northern Ireland this is Stamp Duty Land Tax, in Scotland it is Land and Buildings Transaction Tax, and in Wales it is Land Transaction Tax. You pass on the exact amount and identify it clearly on the client invoice. The figure itself is calculated under that jurisdiction's bands and surcharges, not under VAT rules."
+  - question: "Can I reclaim the input VAT on searches my firm pays for?"
+    answer: "Yes. Where a search provider invoices your firm and charges VAT, and you use that search to deliver your taxable conveyancing service, you reclaim the input VAT on your return in the normal way. Because the search has become part of your own taxable supply, you then charge output VAT when you bill the client for it. You do not get to reclaim the input VAT and also treat the recharge as a VAT-free disbursement; the two positions are inconsistent."
 ---
 
-<p>If you are a UK solicitor handling residential or commercial conveyancing, VAT on your fees is a routine part of the transaction. But the rules around what is standard-rated, what is exempt, and how disbursements are treated can create confusion. Getting it wrong means either underpaying HMRC or overcharging your client and having to correct it later.</p>
+<p>If you handle residential or commercial conveyancing, VAT touches almost every line on the completion statement. Your fee, the searches, the Land Registry, the tax paid for the client and the bank transfer are each treated differently, and the area that most often trips firms up is searches. The treatment changed after the Brabners case, and a position that looked safe for years is now wrong on most files.</p>
 
-<p>This article explains how VAT applies to conveyancing fees for UK solicitors in the 2025/26 tax year, with practical examples and guidance on disbursements, Land Registry fees, and common compliance issues.</p>
+<p>This guide walks through the VAT treatment of a conveyancing matter from end to end in the 2025/26 tax year: the firm's own fee, property searches, HM Land Registry registration, the property transaction tax paid for the client, and CHAPS recharges. For the general law on what makes a payment a disbursement, including HMRC's full set of conditions, see our companion guide on the <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">VAT treatment of disbursements for UK law firms</a>. This page focuses on how those rules play out in a conveyancing file specifically.</p>
 
 <h2>Are Conveyancing Fees Subject to VAT?</h2>
 
-<p>Yes. Legal services provided by a solicitor, including conveyancing, are standard-rated for VAT at 20%. This applies whether you are acting for a buyer, seller, landlord, or tenant in a property transaction. There is no exemption for residential conveyancing, despite some clients assuming otherwise.</p>
+<p>Yes. Legal services provided by a solicitor, including conveyancing, are standard-rated for VAT at 20%. This applies whether you act for a buyer, seller, landlord or tenant, and whether the matter is residential or commercial. There is no exemption for residential conveyancing, despite what some clients assume.</p>
 
-<p>If your firm is VAT-registered (which it will be if your taxable turnover exceeds the VAT threshold of £90,000, or if you have voluntarily registered), you must charge 20% VAT on your conveyancing fees. This includes:</p>
+<p>If your firm is VAT-registered (which it will be once taxable turnover exceeds the registration threshold, or if you have registered voluntarily), you charge 20% VAT on your conveyancing fee. The harder question is what else on the bill rides with that fee as part of your taxable supply, and what genuinely sits outside the scope of VAT as a disbursement.</p>
 
-<ul>
-<li>Your professional fee for the conveyancing work.</li>
-<li>Disbursements that are part of your service (discussed below).</li>
-<li>Any additional charges such as bank transfer fees, postage, or photocopying (unless they are genuine disbursements).</li>
-</ul>
+<h2>Disbursement or Part of Your Supply?</h2>
 
-<p><strong>Example:</strong> Your firm charges a fixed fee of £1,500 for a standard residential purchase. You invoice the client £1,500 plus £300 VAT = £1,800 total. You then account for the £300 VAT to HMRC on your quarterly return.</p>
+<p>A cost you pay on a client's matter falls into one of two camps. It is either a <strong>genuine disbursement</strong>, where you act as a pure agent paying a third party that supplies the client directly, in which case it is outside the scope of VAT and you recharge the exact amount with no VAT added. Or it is <strong>part of your own taxable supply</strong>, in which case it is standard-rated and you add 20% VAT when you recharge it, even if you label it a disbursement on the bill.</p>
 
-<h2>What About Disbursements and VAT?</h2>
+<p>The line is drawn by HMRC's disbursement conditions. The key ones for conveyancing are that the client, not you, received and used the supply, that it was the client's responsibility to pay for it, and that the cost is genuinely additional to your own service rather than something you consumed in order to advise. We set out the full conditions and the documentation HMRC expects in the <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements guide</a>. The rest of this article applies that test to each cost on a typical conveyancing file.</p>
 
-<p>Disbursements are costs you pay on behalf of your client. The VAT treatment depends on whether the disbursement is a <strong>genuine disbursement</strong> (where you act as a pure agent) or a <strong>recharge of your own costs</strong> (where the supply is part of your legal service).</p>
+<h2>Property Searches: Why Most Are Not Disbursements</h2>
 
-<h3>Genuine Disbursements (Outside the Scope of VAT)</h3>
+<p>Local authority, drainage, environmental and similar searches were, for a long time, routinely treated as VAT-free disbursements. That position is no longer safe. In <strong>Brabners LLP v HMRC [2017] UKFTT 0666 (TC)</strong> the tribunal held that where a firm obtains a search, reviews the result and uses it to advise the client, the search is consumed in delivering the firm's own legal service. It is not passed through untouched to the client, so it is part of the firm's taxable supply and carries VAT.</p>
 
-<p>If you pay a third party on your client's behalf and the client is the true recipient of the supply, you can treat this as a disbursement outside the scope of VAT. You do not add VAT when recharging it to the client. The third party's invoice should be addressed to the client (or you can reissue it clearly showing it is a disbursement).</p>
+<p>HMRC then withdrew the long-standing concession that had let firms treat postal search fees as disbursements. That withdrawal took effect from <strong>1 December 2020</strong> under <strong>Revenue and Customs Brief 6 (2020)</strong>. Since then there is no general shortcut: an online search and a postal search are judged the same way, on the substance of what the firm does with the result.</p>
 
-<p>Common genuine disbursements in conveyancing include:</p>
+<p>In practice this means:</p>
 
 <ul>
-<li><strong>Land Registry fees</strong> for registering the transfer or charge.</li>
-<li><strong>Search fees</strong> (local authority, drainage, environmental, etc.) where the search provider invoices the client directly or you pay as agent.</li>
-<li><strong>Stamp Duty Land Tax (SDLT)</strong> paid to HMRC on the client's behalf.</li>
-<li><strong>Bank transfer fees</strong> for CHAPS payments, if the bank charges the client directly.</li>
+<li>If you obtain a search, <strong>read it, interpret it and report on it</strong> to the client, the search fee is part of your standard-rated supply. Add 20% VAT when you recharge it.</li>
+<li>A search fee is a disbursement <strong>only</strong> where it is genuinely passed through unused and every disbursement condition is met, for example where the search result is handed to the client without your firm interpreting or relying on it in your advice. On most residential and commercial files that is not what happens.</li>
 </ul>
 
-<p><strong>Example:</strong> You pay a £50 Land Registry fee on behalf of your client. The Land Registry invoice is addressed to your client. You recharge £50 to the client with no VAT added. Your invoice shows: "Disbursement: Land Registry fee £50 (no VAT)."</p>
+<p><strong>Worked position:</strong> on a standard residential purchase you order a local authority search, review what it reveals about the property and flag the points your client needs to know. Because you have used and interpreted the search to advise, it forms part of your taxable supply. You recharge it with 20% VAT added, and you reclaim the input VAT the search provider charged your firm. Treating the same search as a VAT-free disbursement while also reclaiming the input VAT on it is inconsistent, and it is exactly the pattern HMRC looks for on review.</p>
 
-<h3>Recharges of Your Own Costs (Standard-Rated)</h3>
+<h2>HM Land Registry Fees</h2>
 
-<p>If you incur a cost as part of delivering your legal service, even if you call it a "disbursement," it is a standard-rated supply. You must charge VAT on the recharge. Common examples include:</p>
+<p>An <strong>HM Land Registry registration fee</strong> paid to register the transfer or the charge is a clean disbursement. The Registry does not charge VAT on it, the supply is to your client, and you recharge the exact amount with no VAT added. Unlike a search, a registration fee is not something your firm consumes to form its advice; it is a fee for an act done for the client. Show it separately on the bill and keep the Registry receipt.</p>
+
+<p>If you combine the registration fee with your own fee on a single invoice, you must clearly separate the disbursement from your standard-rated services. HMRC expects clear itemisation. A single line reading "total fees including disbursements" is not enough to support the VAT treatment.</p>
+
+<h2>The Property Transaction Tax You Pay for the Client</h2>
+
+<p>The transaction tax you pay to the tax authority on the client's behalf is a genuine disbursement and carries no VAT. It is the client's liability, you pay it as their agent, and you pass on the exact amount. Which tax applies depends on where the property is:</p>
 
 <ul>
-<li><strong>Bank transfer fees</strong> where your firm pays the bank and recharges the client (the bank's supply is to you, not the client).</li>
-<li><strong>Photocopying, postage, and courier charges</strong> that are part of your overheads.</li>
-<li><strong>Online search fees</strong> where you subscribe to a search provider and then recharge individual searches to clients.</li>
+<li><strong>England and Northern Ireland: Stamp Duty Land Tax (SDLT).</strong> The standard residential nil-rate band is <strong>£125,000</strong> from 1 April 2025 (it is no longer £250,000). The surcharge for additional dwellings is <strong>5%</strong> on top of the standard rates, in force from 31 October 2024.</li>
+<li><strong>Scotland: Land and Buildings Transaction Tax (LBTT).</strong> The Additional Dwelling Supplement is <strong>8%</strong> from 5 December 2024.</li>
+<li><strong>Wales: Land Transaction Tax (LTT).</strong> The higher residential rates open at <strong>5%</strong> from 11 December 2024.</li>
 </ul>
 
-<p><strong>Example:</strong> Your firm pays a £25 CHAPS fee to your bank for transferring the purchase funds. The bank's invoice is to your firm. You recharge £25 to the client. You must add VAT: £25 plus £5 VAT = £30 total. Your invoice shows: "Bank transfer fee £25 plus VAT £5."</p>
+<p>None of this affects the VAT treatment of the payment itself; the tax is outside the scope of VAT however it is calculated. What matters for VAT is that you identify the payment clearly as a disbursement on the client invoice and pass on the precise amount. Court fees, where a conveyancing dispute reaches that point, are treated the same way as a clean disbursement.</p>
 
-<h2>Land Registry Fees and VAT</h2>
+<h2>CHAPS and Telegraphic-Transfer Fees</h2>
 
-<p>Land Registry fees are a common point of confusion. The Land Registry itself does not charge VAT on its fees. When you pay a Land Registry fee on behalf of your client, it is a genuine disbursement. You recharge the exact amount to the client with no VAT added, provided the invoice is addressed to the client or you clearly identify it as a disbursement.</p>
+<p>A <strong>CHAPS or telegraphic-transfer fee</strong> is a standard-rated recharge, not a disbursement. The bank supplies the transfer service to your firm, not to your client, so when you recharge the fee you add 20% VAT. This holds even though you are moving the client's purchase or completion monies, because the banking service is supplied to you. Treating CHAPS as a VAT-free disbursement is one of the most common errors HMRC finds on conveyancing files, and it is the mirror image of the search problem: in both cases the test is who the third party actually supplies.</p>
 
-<p><strong>Key point:</strong> If you combine the Land Registry fee with your own fee on a single invoice, you must clearly separate the disbursement from your standard-rated services. HMRC expects clear itemisation. A single line "Total fees including disbursements £X" is not sufficient.</p>
-
-<h2>VAT on Conveyancing Fees: Common Pitfalls for Solicitors</h2>
-
-<p>Here are the most frequent errors we see in law firm VAT returns:</p>
+<h2>Common Pitfalls on a Conveyancing File</h2>
 
 <ul>
-<li><strong>Treating all disbursements as VAT-free.</strong> Only genuine disbursements where the client is the true recipient qualify. Recharges of your own costs are standard-rated.</li>
-<li><strong>Failing to charge VAT on bank transfer fees.</strong> Many firms treat CHAPS fees as disbursements. HMRC's view is that the bank's supply is to the firm, not the client, so VAT must be added on recharge.</li>
-<li><strong>Not separating disbursements on invoices.</strong> A single lump sum for "fees and disbursements" risks HMRC challenging the VAT treatment. Itemise clearly.</li>
-<li><strong>Overlooking VAT on referral fees.</strong> If you pay a referral fee to an introducer (e.g., an estate agent), the introducer's invoice will include VAT. You can reclaim that VAT if you are VAT-registered, but you must also account for output VAT on your own fee to the client.</li>
-<li><strong>Incorrectly treating SDLT as a disbursement.</strong> SDLT is a genuine disbursement (no VAT), but you must ensure the payment is clearly identified as such on your client invoice.</li>
+<li><strong>Treating searches as VAT-free disbursements.</strong> After Brabners and Brief 6 (2020), a search you read and advise on is part of your taxable supply. Add VAT on the recharge.</li>
+<li><strong>Reclaiming input VAT on searches while billing them as disbursements.</strong> You cannot have it both ways. If you reclaim the input VAT, the recharge must carry output VAT.</li>
+<li><strong>Treating CHAPS as a disbursement.</strong> The bank supplies your firm, so the recharge is standard-rated.</li>
+<li><strong>Misidentifying the transaction tax.</strong> The tax paid for the client is a clean disbursement, but it must be SDLT, LBTT or LTT depending on where the property sits, and clearly flagged as a disbursement on the bill.</li>
+<li><strong>Lumping fees and disbursements together.</strong> A single combined line invites HMRC to challenge the whole VAT treatment. Itemise.</li>
 </ul>
 
-<h2>Partial Exemption and Conveyancing Firms</h2>
+<h2>Commercial Conveyancing and the Option to Tax</h2>
 
-<p>Most conveyancing is standard-rated, so partial exemption is rarely an issue for pure conveyancing practices. However, if your firm also handles exempt supplies such as arranging insurance or certain property finance work, you may need to consider partial exemption rules. The standard method is to apportion input VAT based on the value of taxable versus exempt supplies. If your exempt supplies are de minimis (less than £7,500 per year and less than 50% of total supplies), you can reclaim all input VAT.</p>
+<p>Commercial conveyancing is standard-rated for VAT in the same way as residential work. The added wrinkle is the property itself: a seller may have opted to tax a commercial building, so the purchase price carries VAT. As the buyer's solicitor you advise the client on whether VAT applies to the price and how it interacts with their own VAT position. Your fee, the searches you interpret, and the CHAPS recharge are treated exactly as above; the option to tax sits on the transaction, not on your supply. A VAT-registered client using the property for taxable business purposes can usually recover the VAT on your fees as input tax.</p>
 
-<p>If you are unsure about partial exemption, speak to a <a href="/services/solicitor-accountants">solicitor accountant</a> who understands the nuances of legal practice VAT.</p>
+<h2>Partial Exemption</h2>
 
-<h2>VAT on Commercial Conveyancing</h2>
+<p>Pure conveyancing is standard-rated, so partial exemption rarely bites. It can arise if the firm also makes exempt supplies, for example arranging insurance or certain property finance. Input VAT is then apportioned between taxable and exempt activity under the standard method, subject to the de minimis allowances. If your firm has a mixed supply profile, take advice rather than assuming all input VAT is recoverable.</p>
 
-<p>Commercial conveyancing is also standard-rated for VAT. However, the transaction itself may involve VAT options. For example, the seller may have opted to tax a commercial property, meaning the sale price is subject to VAT. As the buyer's solicitor, you need to advise your client on whether VAT applies to the purchase price and ensure your own fee is correctly treated.</p>
+<h2>Record Keeping</h2>
 
-<p>If you are acting for a VAT-registered client, they can reclaim the VAT on your fees as input tax, provided the property is used for taxable business purposes. This is a standard part of the transaction and should not cause issues if documented correctly.</p>
+<p>For every matter, keep the third-party documentation, your itemised client invoice, and the bank records showing what you paid out. The evidence has to do two jobs: it must support that a clean disbursement (the Registry fee, the transaction tax, a court fee) was genuinely incurred for the client and passed on at cost, and it must support that you charged VAT where the cost (searches, CHAPS) formed part of your own supply. If HMRC reviews the file, that paper trail is what stands behind the numbers.</p>
 
-<h2>Practical Example: A Typical Residential Purchase</h2>
+<p>For the wider compliance picture, see our <a href="/services/cofa-compliance-support">COFA compliance support</a> page, which covers VAT record keeping alongside the SRA Accounts Rules.</p>
 
-<p>Your firm handles a standard residential purchase for a client. The transaction involves:</p>
+<h2>What Changed for 2025/26</h2>
 
-<ul>
-<li>Your professional fee: £1,500</li>
-<li>Land Registry fee: £50 (genuine disbursement, no VAT)</li>
-<li>Local authority search: £100 (genuine disbursement, no VAT)</li>
-<li>CHAPS bank transfer fee: £25 (recharge, standard-rated)</li>
-<li>SDLT: £2,500 (genuine disbursement, no VAT)</li>
-</ul>
-
-<p>Your invoice to the client should show:</p>
-
-<ul>
-<li>Professional fee: £1,500 plus VAT £300 = £1,800</li>
-<li>CHAPS fee: £25 plus VAT £5 = £30</li>
-<li>Disbursements (no VAT): Land Registry £50, search £100, SDLT £2,500 = £2,650</li>
-<li>Total due: £1,800 + £30 + £2,650 = £4,480</li>
-</ul>
-
-<p>You account for £305 output VAT to HMRC (£300 on the fee + £5 on the CHAPS fee). The disbursements are outside the scope of VAT.</p>
-
-<h2>Record Keeping for VAT on Conveyancing</h2>
-
-<p>HMRC expects you to keep clear records supporting your VAT treatment of disbursements. For each transaction, retain:</p>
-
-<ul>
-<li>The third-party invoice showing the supply is to your client (or evidence that you paid as agent).</li>
-<li>A copy of your client invoice showing the itemised breakdown.</li>
-<li>Bank statements showing the payment to the third party.</li>
-</ul>
-
-<p>If HMRC queries your VAT return, you need to demonstrate that each disbursement was genuinely incurred on the client's behalf. Poor record keeping can lead to assessments and penalties.</p>
-
-<p>For more on compliance, see our <a href="/services/cofa-compliance-support">COFA compliance support</a> page, which covers VAT record keeping as part of broader regulatory obligations.</p>
-
-<h2>Changes in 2025/26 Affecting Conveyancing VAT</h2>
-
-<p>The VAT threshold remains at £90,000 for 2025/26. Making Tax Digital (MTD) for VAT is already mandatory for all VAT-registered businesses, so your firm must use compatible software for VAT returns. From April 2026, MTD for Income Tax will apply to self-employed solicitors with income over £50,000, which may affect sole practitioners and partners in LLPs.</p>
-
-<p>There are no major changes to the VAT treatment of conveyancing fees in 2025/26. The rules remain as set out above. However, HMRC continues to focus on disbursement treatment in legal services. We recommend reviewing your invoicing practices annually to ensure compliance.</p>
+<p>The substantive VAT rules for conveyancing are settled: the Brabners position on searches and Brief 6 (2020) continue to govern, and the search and CHAPS treatments described above are unchanged. Making Tax Digital for VAT remains mandatory for all VAT-registered firms, so returns must run through compatible software. From April 2026, Making Tax Digital for Income Tax begins to apply to sole practitioners and partners over the relevant income threshold, which is a record-keeping change rather than a change to how conveyancing VAT works. The point that still catches firms out is not new for the year: it is the search treatment, and the annual review job is to make sure the firm has actually applied it.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>VAT on conveyancing fees is straightforward once you understand the distinction between genuine disbursements and recharges of your own costs. The key is clear invoicing and good record keeping. If you are unsure about any aspect of your firm's VAT compliance, speak to a <a href="/services/solicitor-accountants">solicitor accountant</a> who specialises in legal practice VAT.</p>
-
-<p>For further reading, see our guide on <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials</a>, which covers client account handling alongside VAT considerations, or our <a href="/calculators">calculators</a> page for tools to estimate VAT liabilities on typical conveyancing transactions.</p>
+<p>Conveyancing VAT comes down to one question repeated across the file: did the firm consume this to deliver its advice, or did it simply pay a third party for the client. Searches and CHAPS are the firm's supply and carry VAT. The Land Registry registration fee, the transaction tax paid for the client and court fees are clean disbursements that do not. Get the itemisation and the evidence right and the rest follows. For the underlying law on disbursements, see our <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements VAT guide</a>; for client account handling on a conveyancing matter, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials</a> guide. If any part of your firm's VAT treatment is unclear, speak to a <a href="/services/solicitor-accountants">solicitor accountant</a> who works with legal practices.</p>

@@ -3,6 +3,7 @@ title: What Do Dentist Accountants Do That General Accountants Cannot?
 slug: dentist-accountants
 canonical: https://www.dentalfinancepartners.co.uk/blog/specialist-services/dentist-accountants
 date: '2026-05-19'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Specialist Services
 metaTitle: 'Dentist Accountants: Specialist Tax & Accounting for UK'
@@ -11,6 +12,12 @@ altText: UK dental practice reception area with dentist and accountant reviewing
 image: https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Do Dentist Accountants Do That General Accountants Cannot?
 summary: Dentist accountants specialise in the tax and accounting rules that apply only to dental professionals. They understand NHS contract mechanics, associate self-employment status, practice goodwill valuation, and VAT exemptions on dental treatment. A general accountant may not know these areas exist.
+keyTakeaways:
+  - "NHS contracts pay via Units of Dental Activity, with the England average roughly £25 to £35 per UDA, while Scotland uses the item-of-service Statement of Dental Remuneration instead."
+  - "Dental treatment is VAT-exempt under VATA 1994 Schedule 9 Group 7, but cosmetic-only work counts toward the £90,000 VAT threshold and Making Tax Digital for Income Tax starts from 6 April 2026 above £50,000."
+  - "Dental plant and machinery attracts 100% relief under the Annual Investment Allowance of £1,000,000 for 2026/27, and a Section 198 election (CAA 2001) transfers fixtures allowances when buying a practice."
+  - "Goodwill acquired post-1 April 2019 attracts 6.5% per year amortisation relief under Finance Act 2019, while goodwill bought between 8 July 2015 and 31 March 2019 generally has none."
+  - "Corporation tax runs at 19% up to £50,000 and 25% above £250,000 with marginal relief between, and the dividend allowance is £500 for 2026/27."
 schema: ''
 faqs:
 - question: Can a general accountant handle a dental practice's tax return?
@@ -81,7 +88,7 @@ imageCredit:
 
 <h2>Capital Allowances on Dental Equipment</h2>
 
-<p>Dental practices invest heavily in chairs, lights, compressors, suction units, autoclaves, X-ray machines, and OPG units. These all qualify as plant and machinery and can attract 100% relief under the Annual Investment Allowance (AIA), which stands at £1,000,000 for 2025/26. Cars and buildings do not qualify for AIA.</p>
+<p>Dental practices invest heavily in chairs, lights, compressors, suction units, autoclaves, X-ray machines, and OPG units. These all qualify as plant and machinery and can attract 100% relief under the Annual Investment Allowance (AIA), which stands at £1,000,000 for 2026/27. Cars and buildings do not qualify for AIA.</p>
 
 <p>When buying a practice with existing fixtures, a specialist accountant will ensure a Section 198 election under CAA 2001 is made to transfer capital allowance claims from the seller to the buyer. Without this election, the buyer loses the right to claim allowances on those fixtures. A general accountant may not know this election exists.</p>
 
@@ -97,7 +104,7 @@ imageCredit:
 
 <h2>Profit Extraction for Practice Owners</h2>
 
-<p>Practice owners operating through a limited company face a choice: take income as salary, dividends, or a mix. The tax treatment differs significantly. Corporation tax rates are 19% for profits up to £50,000 and 25% for profits above £250,000, with marginal relief in between. Dividend tax rates are 8.75% for basic rate, 33.75% for higher rate, and 39.35% for additional rate taxpayers. The dividend allowance is £500 for 2025/26.</p>
+<p>Practice owners operating through a limited company face a choice: take income as salary, dividends, or a mix. The tax treatment differs significantly. Corporation tax rates are 19% for profits up to £50,000 and 25% for profits above £250,000, with marginal relief in between. Dividend tax rates are 10.75% for basic rate, 35.75% for higher rate, and 39.35% for additional rate taxpayers. The dividend allowance is £500 for 2026/27.</p>
 
 <p>A dentist accountant will model the optimal extraction strategy based on your total income, spouse employment arrangements, and pension contribution plans. They will also know that spouse employment in a dental practice must be at a genuine market rate for genuine work to be deductible. HMRC commonly challenges spouse salaries that are not commercially justified.</p>
 

@@ -1,8 +1,14 @@
-"""Pull all Supabase data for a single property page slug.
+"""Pull all Supabase data for a single page slug on any site.
 
 Usage:
-    python -m optimisation_engine.track2.pull_page_data --slug <slug>
-    python -m optimisation_engine.track2.pull_page_data --slug <slug> --json
+    python -m optimisation_engine.track2.pull_page_data --slug <slug> [--site <key>]
+    python -m optimisation_engine.track2.pull_page_data --slug <slug> --site dentists --json
+
+`--site` selects the site_key for every GSC/Bing/GA4/competitor/page_content_map
+table query (default `property` for back-compatibility). The reusable
+`build_target_queries(slug, days, site)` and `build_adjacent(slug, seed_terms, site)`
+helpers take the same `site` argument so the coverage checker and the data dump
+never disagree on the target site.
 
 Pulls (read-only):
     - gsc_query_data (top 25 queries by impressions, 90d)
@@ -56,7 +62,7 @@ _SEED_STOP = {
 }
 
 
-def _gsc_query_rows(slug: str, days: int = 90) -> list[dict]:
+def _gsc_query_rows(slug: str, days: int = 90, site: str = "property") -> list[dict]:
     """Top GSC queries for the page (same SQL as the §1 human block)."""
     url_like = f"%{slug}%"
     return _sql(f"""
@@ -64,7 +70,7 @@ def _gsc_query_rows(slug: str, days: int = 90) -> list[dict]:
                ROUND(AVG(position)::numeric, 2) AS avg_position,
                ROUND((SUM(clicks)::numeric / NULLIF(SUM(impressions),0) * 100), 2) AS ctr_pct
         FROM gsc_query_data
-        WHERE site_key='property' AND page_url ILIKE '{url_like}'
+        WHERE site_key='{site}' AND page_url ILIKE '{url_like}'
           AND date > now() - interval '{days} days'
         GROUP BY query
         ORDER BY 2 DESC
@@ -72,7 +78,7 @@ def _gsc_query_rows(slug: str, days: int = 90) -> list[dict]:
     """)
 
 
-def _bing_query_rows(slug: str) -> list[dict]:
+def _bing_query_rows(slug: str, site: str = "property") -> list[dict]:
     """Top Bing queries for the page (same SQL as the §1b human block)."""
     url_like = f"%{slug}%"
     return _sql(f"""
@@ -80,15 +86,15 @@ def _bing_query_rows(slug: str) -> list[dict]:
                ROUND(AVG(position)::numeric, 1) AS avg_position,
                ROUND((SUM(clicks)::numeric / NULLIF(SUM(impressions),0) * 100), 2) AS ctr_pct
         FROM bing_query_data
-        WHERE site_key='property' AND page_url ILIKE '{url_like}'
-          AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key='property')
+        WHERE site_key='{site}' AND page_url ILIKE '{url_like}'
+          AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key='{site}')
         GROUP BY query
         ORDER BY 2 DESC
         LIMIT 25;
     """)
 
 
-def build_target_queries(slug: str, days: int = 90) -> list[dict]:
+def build_target_queries(slug: str, days: int = 90, site: str = "property") -> list[dict]:
     """Merge GSC + Bing demand into one deduped target-query list.
 
     Dedup key is the lowercased+stripped query string. Impressions are summed
@@ -119,11 +125,11 @@ def build_target_queries(slug: str, days: int = 90) -> list[dict]:
                     m["source"] = "both"
 
     try:
-        _ingest(_gsc_query_rows(slug, days), "gsc")
+        _ingest(_gsc_query_rows(slug, days, site), "gsc")
     except Exception as exc:  # noqa: BLE001 - best effort, never crash the gate
         print(f"  [build_target_queries] GSC pull failed: {exc}", file=sys.stderr)
     try:
-        _ingest(_bing_query_rows(slug), "bing")
+        _ingest(_bing_query_rows(slug, site), "bing")
     except Exception as exc:  # noqa: BLE001
         print(f"  [build_target_queries] Bing pull failed: {exc}", file=sys.stderr)
 
@@ -141,7 +147,7 @@ def _seed_terms_from(slug: str) -> list[str]:
     return [p for p in parts if len(p) > 2 and p not in _SEED_STOP]
 
 
-def build_adjacent(slug: str, seed_terms) -> list[dict]:
+def build_adjacent(slug: str, seed_terms, site: str = "property") -> list[dict]:
     """Pull adjacent keyword ideas from FREE / CACHED sources only.
 
     NO live paid API call. Every source is wrapped in try/except so a missing
@@ -190,7 +196,7 @@ def build_adjacent(slug: str, seed_terms) -> list[dict]:
         rows = _sql(f"""
             SELECT primary_query
             FROM competitor_gap_reports
-            WHERE site_key='property' AND our_page_url ILIKE '{url_like}'
+            WHERE site_key='{site}' AND our_page_url ILIKE '{url_like}'
               AND primary_query IS NOT NULL;
         """)
         for r in rows:
@@ -213,7 +219,7 @@ def build_adjacent(slug: str, seed_terms) -> list[dict]:
                 CASE WHEN jsonb_typeof(bt.secondary_keywords) = 'array'
                      THEN bt.secondary_keywords ELSE '[]'::jsonb END
             ) AS sk(kw) ON TRUE
-            WHERE bt.site_key='property'
+            WHERE bt.site_key='{site}'
               AND ({_ilike_clause('bt.primary_keyword')}
                    OR {_ilike_clause('bt.topic')})
             LIMIT 60;
@@ -229,7 +235,7 @@ def build_adjacent(slug: str, seed_terms) -> list[dict]:
         rows = _sql(f"""
             SELECT related_keyword, search_volume
             FROM dataforseo_keyword_data
-            WHERE site_key='property'
+            WHERE site_key='{site}'
               AND related_keyword IS NOT NULL
               AND {_ilike_clause('related_keyword')}
             LIMIT 25;
@@ -251,7 +257,7 @@ def _seed_terms_for_adjacent(slug: str, gsc_rows: list[dict], bing_rows: list[di
     return [slug.replace("-", " ")]
 
 
-def pull_json(slug: str, days: int = 90) -> dict:
+def pull_json(slug: str, days: int = 90, site: str = "property") -> dict:
     """Assemble the full machine-readable payload for one slug.
 
     Reuses the same SELECTs as the human ``pull()`` report. Every section is
@@ -268,7 +274,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
             return default
 
     # --- GSC ---------------------------------------------------------------
-    gsc_rows = _safe(lambda: _gsc_query_rows(slug, days), [])
+    gsc_rows = _safe(lambda: _gsc_query_rows(slug, days, site), [])
     gsc = [
         {
             "query": r.get("query"),
@@ -281,7 +287,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
     ]
 
     # --- Bing --------------------------------------------------------------
-    bing_rows = _safe(lambda: _bing_query_rows(slug), [])
+    bing_rows = _safe(lambda: _bing_query_rows(slug, site), [])
     bing = [
         {
             "query": r.get("query"),
@@ -303,7 +309,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
                    ROUND(AVG(average_session_duration)::numeric, 1) AS avg_duration_s,
                    SUM(conversions) AS conversions
             FROM ga4_page_data
-            WHERE site_key='property' AND page_path ILIKE '{url_like}'
+            WHERE site_key='{site}' AND page_path ILIKE '{url_like}'
               AND date > now() - interval '{days} days';
         """)
         if not rows or rows[0].get("sessions") is None:
@@ -326,7 +332,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
             SELECT cp.position, cp.url, cp.domain, cp.title
             FROM competitor_pages cp
             JOIN competitor_serps cs ON cs.id = cp.serp_id
-            WHERE cs.site_key='property' AND cs.our_page_url ILIKE '{url_like}'
+            WHERE cs.site_key='{site}' AND cs.our_page_url ILIKE '{url_like}'
             ORDER BY cs.fetch_date DESC, cp.position ASC
             LIMIT 20;
         """)
@@ -347,7 +353,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
             FROM page_content_map pcm
             JOIN competitor_pages cp ON cp.url = pcm.page_url
             JOIN competitor_serps cs ON cs.id = cp.serp_id
-            WHERE cs.site_key='property' AND cs.our_page_url ILIKE '{url_like}'
+            WHERE cs.site_key='{site}' AND cs.our_page_url ILIKE '{url_like}'
             GROUP BY pcm.page_url, pcm.word_count, pcm.sections, pcm.faqs
             ORDER BY pcm.word_count DESC NULLS LAST
             LIMIT 10;
@@ -367,7 +373,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
                    jsonb_array_length(COALESCE(sections, '[]'::jsonb)) AS section_count,
                    jsonb_array_length(COALESCE(faqs, '[]'::jsonb)) AS faq_count
             FROM page_content_map
-            WHERE site_key='property' AND is_our_page=true AND page_url ILIKE '{url_like}'
+            WHERE site_key='{site}' AND is_our_page=true AND page_url ILIKE '{url_like}'
             ORDER BY fetch_date DESC
             LIMIT 1;
         """)
@@ -391,7 +397,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
             SELECT primary_query, priority_score,
                    our_word_count, competitor_avg_word_count
             FROM competitor_gap_reports
-            WHERE site_key='property' AND our_page_url ILIKE '{url_like}'
+            WHERE site_key='{site}' AND our_page_url ILIKE '{url_like}'
             ORDER BY priority_score DESC NULLS LAST
             LIMIT 1;
         """)
@@ -408,9 +414,9 @@ def pull_json(slug: str, days: int = 90) -> dict:
     gap_report = _safe(_gap_report, None)
 
     # --- adjacent + target_queries -----------------------------------------
-    target_queries = build_target_queries(slug, days)
+    target_queries = build_target_queries(slug, days, site)
     seed_terms = _seed_terms_for_adjacent(slug, gsc_rows, bing_rows)
-    adjacent = _safe(lambda: build_adjacent(slug, seed_terms), [])
+    adjacent = _safe(lambda: build_adjacent(slug, seed_terms, site), [])
 
     return {
         "slug": slug,
@@ -426,7 +432,7 @@ def pull_json(slug: str, days: int = 90) -> dict:
     }
 
 
-def pull(slug: str, days: int = 90) -> None:
+def pull(slug: str, days: int = 90, site: str = "property") -> None:
     url_like = f"%{slug}%"
 
     _section(f"1. GSC query_data - top queries by impressions ({days}d)")
@@ -435,7 +441,7 @@ def pull(slug: str, days: int = 90) -> None:
                ROUND(AVG(position)::numeric, 2) AS avg_position,
                ROUND((SUM(clicks)::numeric / NULLIF(SUM(impressions),0) * 100), 2) AS ctr_pct
         FROM gsc_query_data
-        WHERE site_key='property' AND page_url ILIKE '{url_like}'
+        WHERE site_key='{site}' AND page_url ILIKE '{url_like}'
           AND date > now() - interval '{days} days'
         GROUP BY query
         ORDER BY 2 DESC
@@ -462,8 +468,8 @@ def pull(slug: str, days: int = 90) -> None:
                ROUND(AVG(position)::numeric, 1) AS avg_position,
                ROUND((SUM(clicks)::numeric / NULLIF(SUM(impressions),0) * 100), 2) AS ctr_pct
         FROM bing_query_data
-        WHERE site_key='property' AND page_url ILIKE '{url_like}'
-          AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key='property')
+        WHERE site_key='{site}' AND page_url ILIKE '{url_like}'
+          AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key='{site}')
         GROUP BY query
         ORDER BY 2 DESC
         LIMIT 25;
@@ -488,7 +494,7 @@ def pull(slug: str, days: int = 90) -> None:
                ROUND(AVG(average_session_duration)::numeric, 1) AS avg_duration_s,
                SUM(conversions) AS conversions
         FROM ga4_page_data
-        WHERE site_key='property' AND page_path ILIKE '{url_like}'
+        WHERE site_key='{site}' AND page_path ILIKE '{url_like}'
           AND date > now() - interval '{days} days'
         GROUP BY page_path;
     """)
@@ -512,7 +518,7 @@ def pull(slug: str, days: int = 90) -> None:
         SELECT cs.query, cs.our_position, cs.fetch_date,
                (SELECT COUNT(*) FROM competitor_pages WHERE serp_id = cs.id) AS competitor_count
         FROM competitor_serps cs
-        WHERE cs.site_key='property' AND cs.our_page_url ILIKE '{url_like}'
+        WHERE cs.site_key='{site}' AND cs.our_page_url ILIKE '{url_like}'
         ORDER BY cs.fetch_date DESC
         LIMIT 10;
     """)
@@ -529,7 +535,7 @@ def pull(slug: str, days: int = 90) -> None:
         SELECT cp.position, cp.url, cp.domain, cp.title
         FROM competitor_pages cp
         JOIN competitor_serps cs ON cs.id = cp.serp_id
-        WHERE cs.site_key='property' AND cs.our_page_url ILIKE '{url_like}'
+        WHERE cs.site_key='{site}' AND cs.our_page_url ILIKE '{url_like}'
         ORDER BY cs.fetch_date DESC, cp.position ASC
         LIMIT 20;
     """)
@@ -544,7 +550,7 @@ def pull(slug: str, days: int = 90) -> None:
                jsonb_array_length(COALESCE(sections, '[]'::jsonb)) AS section_count,
                jsonb_array_length(COALESCE(faqs, '[]'::jsonb)) AS faq_count
         FROM page_content_map
-        WHERE site_key='property' AND is_our_page=true AND page_url ILIKE '{url_like}'
+        WHERE site_key='{site}' AND is_our_page=true AND page_url ILIKE '{url_like}'
         ORDER BY fetch_date DESC
         LIMIT 3;
     """)
@@ -568,7 +574,7 @@ def pull(slug: str, days: int = 90) -> None:
         FROM page_content_map pcm
         JOIN competitor_pages cp ON cp.url = pcm.page_url
         JOIN competitor_serps cs ON cs.id = cp.serp_id
-        WHERE cs.site_key='property' AND cs.our_page_url ILIKE '{url_like}'
+        WHERE cs.site_key='{site}' AND cs.our_page_url ILIKE '{url_like}'
         GROUP BY pcm.page_url, pcm.word_count, pcm.sections, pcm.faqs
         ORDER BY pcm.word_count DESC NULLS LAST
         LIMIT 10;
@@ -589,7 +595,7 @@ def pull(slug: str, days: int = 90) -> None:
                our_faq_count, competitor_avg_faq_count,
                priority_score, status
         FROM competitor_gap_reports
-        WHERE site_key='property' AND our_page_url ILIKE '{url_like}'
+        WHERE site_key='{site}' AND our_page_url ILIKE '{url_like}'
         LIMIT 3;
     """)
     if not rows:
@@ -603,11 +609,11 @@ def pull(slug: str, days: int = 90) -> None:
 
     _section("8. Adjacent keyword opportunity (FREE/CACHED sources only - no paid API)")
     # Seed from the top GSC query, else top Bing query, else the slug words.
-    gsc_top = _gsc_query_rows(slug, days)
-    bing_top = _bing_query_rows(slug)
+    gsc_top = _gsc_query_rows(slug, days, site)
+    bing_top = _bing_query_rows(slug, site)
     seeds = _seed_terms_for_adjacent(slug, gsc_top, bing_top)
     print(f"  seed terms: {seeds}")
-    adj = build_adjacent(slug, seeds)
+    adj = build_adjacent(slug, seeds, site)
     if not adj:
         print("  (no adjacent keyword ideas from gap reports / blog_topics / cached dataforseo)")
     for a in adj:
@@ -620,9 +626,15 @@ def pull(slug: str, days: int = 90) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Pull Supabase data for one property page slug (Track 2 brief Stage 2 input)."
+        description="Pull Supabase data for one page slug on any site (Track 2 brief Stage 2 input). "
+                    "Pass --site <key> (default property)."
     )
     parser.add_argument("--slug", required=True, help="Page slug (filename without .md)")
+    parser.add_argument(
+        "--site",
+        default="property",
+        help="site_key for the GSC/Bing/GA4/competitor tables (default property)",
+    )
     parser.add_argument(
         "--days",
         type=int,
@@ -636,9 +648,9 @@ def main() -> int:
     )
     args = parser.parse_args()
     if args.json:
-        print(json.dumps(pull_json(args.slug, days=args.days), indent=2))
+        print(json.dumps(pull_json(args.slug, days=args.days, site=args.site), indent=2))
     else:
-        pull(args.slug, days=args.days)
+        pull(args.slug, days=args.days, site=args.site)
     return 0
 
 

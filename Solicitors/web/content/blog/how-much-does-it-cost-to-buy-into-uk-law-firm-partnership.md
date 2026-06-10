@@ -10,6 +10,12 @@ metaDescription: "What it costs to buy into a UK law firm partnership 2025/26. C
 altText: "Newly-promoted equity partner reviewing buy-in capital documents"
 h1: "How Much Does It Cost to Buy Into a UK Law Firm Partnership in 2025/26?"
 summary: "Capital buy-in to a UK law firm partnership in 2025/26 typically ranges from £15,000 at small high-street firms to £300,000+ at Magic Circle firms. Most equity partner buy-ins sit in £50,000-£200,000. Loan-financed buy-ins attract qualifying loan interest relief; capital returns at exit."
+keyTakeaways:
+  - "Equity partner buy-ins range from £15,000 at high-street firms to £300,000 or more at Magic Circle firms, most sitting in £50,000 to £200,000."
+  - "The capital contribution itself is not tax-deductible, but interest on a loan to fund it is deductible under ITA 2007 s.398."
+  - "Fixed-share members often set capital just above 25% of disguised salary to break Condition C of the salaried member rules."
+  - "Capital is usually returned over 1 to 3 years after a partner leaves, with the timing set by the partnership agreement."
+  - "True capital accounts share goodwill appreciation at exit, while notional capital accounts return only the contributed amount."
 faqs:
   - question: "Do I have to buy into a UK law firm partnership?"
     answer: "Yes if you want to be an equity partner. The capital contribution is the partner's ownership stake in the firm. Salaried partners and fixed-share partners may or may not be required to contribute capital; equity partners almost always are. The amount is set in the partnership or LLP agreement. The capital sits on the partner's capital account, earns interest at a rate set in the agreement, and is returned (often phased over 1-3 years) when the partner leaves."

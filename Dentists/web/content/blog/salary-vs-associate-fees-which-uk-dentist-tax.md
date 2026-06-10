@@ -3,164 +3,196 @@ title: "Salary vs Associate Fees: Which UK Dentist Tax Structure Works Best for 
 slug: "salary-vs-associate-fees-which-uk-dentist-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/salary-vs-associate-fees-which-uk-dentist-tax"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
-metaTitle: "Salary vs Associate Fees: UK Dentist Tax Structure Guide 2025/26"
-metaDescription: "Compare PAYE salary vs self-employed associate fees for UK dentists. Tax rates, NI, pension impact, and real examples for 2025/26."
+metaTitle: "Salary vs Associate Fees: UK Dentist Tax Guide 2026/27"
+metaDescription: "Employed salary vs self-employed associate fees for UK dentists: tax, NIC, NHS pension, employment rights and status risk under 2026/27 rules."
 altText: "UK dentist reviewing associate agreement and salary offer documents at a practice desk"
-image: ""
+image: "https://images.pexels.com/photos/7654426/pexels-photo-7654426.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-paper-money-7654426/"
 h1: "Salary vs Associate Fees: Which UK Dentist Tax Structure Works Best for You?"
-summary: "A comparison of the two main income structures for UK dentists: salaried employment (PAYE) and self-employed associate fees. Covers tax rates, National Insurance, pension contributions, and practical considerations for 2025/26."
+summary: "A comparison of the two main ways a UK dentist can be paid: an employed salary through PAYE, or self-employed associate fees through Self Assessment. Covers National Insurance, the NHS Pension, employment rights, status risk and who actually decides, under 2026/27 rules."
+keyTakeaways:
+  - "An employed dentist pays employee Class 1 NIC at 8% then 2%, while the practice pays employer NIC at 15% above the secondary threshold; a self-employed associate pays Class 4 at 6% then 2% with no employer NIC."
+  - "A salaried associate is an NHS Pension officer pensionable on payroll salary, whereas a self-employed associate is a practitioner pensionable on net NHS-derived income."
+  - "Self-employed associates deduct costs on the wider wholly and exclusively test, while employees face the stricter wholly, exclusively and necessarily test that rules out most single-workplace travel."
+  - "Employment status turns on the substance of the arrangement, not the contract label, so HMRC can recategorise an associate as an employee and seek back PAYE and employer NIC."
+  - "On NHS engagements through a personal service company, where the client is medium or large the off-payroll rules place the IR35 decision with the practice, not the dentist."
 schema: ""
 faqs:
-  - question: "Can a salaried associate claim expenses like indemnity and GDC fees?"
-    answer: "Yes, but the rules are stricter than for self-employed associates. Salaried associates can claim expenses that are \"wholly, exclusively, and necessarily\" incurred in performing their duties. If you pay your own indemnity or GDC fees because the practice does not cover them, you can claim them. However, if the practice pays these costs, you cannot claim them yourself. Travel to your main practice is generally not allowable for salaried associates, unlike self-employed associates who can claim travel between multiple practices."
+  - question: "Is a dental associate employed or self-employed?"
+    answer: "Most UK dental associates are self-employed for tax purposes, but that status is decided by the substance of the working arrangement, not by the words in the contract. HMRC weighs control, personal service and the right to send a substitute, mutuality of obligation, financial risk and how integrated you are into the practice. The BDA model associate agreement is drafted to support self-employed status and is useful evidence, but it is not a guarantee. A genuinely autonomous associate with their own indemnity and a fee-split arrangement usually passes; a rostered, fully practice-supplied role with no autonomy carries real status risk."
+  - question: "Do salaried dentists and self-employed associates pay different National Insurance?"
+    answer: "Yes. An employed dentist pays employee Class 1 National Insurance at 8% on earnings above the primary threshold and 2% above the upper earnings limit, and the practice also pays employer (secondary Class 1) National Insurance at 15% above the secondary threshold. A self-employed associate pays Class 4 National Insurance at 6% between the lower and upper profit limits and 2% above, through Self Assessment, with no employer National Insurance for the practice. The separate weekly Class 2 charge no longer applies to self-employed people whose profits are above the small profits threshold."
   - question: "Does working as a self-employed associate affect my NHS Pension?"
-    answer: "Yes, significantly. Self-employed associates can still join the NHS Pension Scheme, but they must opt in separately and arrange contributions themselves. The practice does not pay the employer contribution (20.68% of pensionable pay for the 2015 scheme). This means you lose that employer contribution entirely. Over a career, this could amount to hundreds of thousands of pounds in lost pension value. If NHS Pension membership is a priority, a salaried role is usually more beneficial."
-  - question: "What happens if HMRC decides I am actually an employee, not self-employed?"
-    answer: "HMRC can reclassify you as an employee and demand back taxes, National Insurance, and penalties for up to 6 years. The practice may also face employer NI liabilities. This risk is higher if you work exclusively for one practice, use their equipment, follow their appointment book, and have no right to send a substitute. To reduce risk, work at multiple practices, set your own hours, bear financial risk (e.g., lab fees), and ensure your contract reflects the actual working practice."
-  - question: "Which structure gives me more take-home pay on the same gross income?"
-    answer: "For the same gross income, a salaried associate typically takes home more because they pay lower National Insurance (8% employee NI vs 6% Class 4 NI plus the abolition of Class 2). However, self-employed associates can claim more business expenses, which reduces their taxable profit. The real comparison depends on your expense levels and whether the practice offers a higher gross fee to self-employed associates to compensate for the lack of employer NI cost. Use the Associate Take-Home Calculator to model your specific numbers."
+    answer: "It changes how you are treated in the scheme. A self-employed associate is a practitioner, pensionable on net NHS-derived income, and is responsible for ensuring the right forms and contributions flow through. A salaried associate is an officer, pensionable on the salary the practice pays through payroll. Both routes can build NHS Pension benefits, but the basis of the calculation differs, so it is worth checking the projected accrual on each offer rather than assuming they are equivalent."
+  - question: "What happens if HMRC decides a self-employed associate is really an employee?"
+    answer: "HMRC can recategorise the relationship and seek the income tax and National Insurance that should have been operated through PAYE, with interest and possible penalties, and the practice can be left carrying employer National Insurance. The risk is higher where the associate works exclusively at one practice, follows the practice diary, uses only practice-supplied resources and has no genuine right to send a substitute. Aligning the written contract with how the work is actually carried out, and keeping evidence of autonomy and financial risk, is the practical defence."
+  - question: "Which structure leaves a dentist with more take-home pay?"
+    answer: "There is no fixed answer because the two routes are rarely offered on the same terms. An employed associate carries the lower headline National Insurance and gains statutory employment rights, while the practice carries an extra 15% employer National Insurance cost on the salary. A self-employed associate carries no employer National Insurance for the practice and can deduct a wider range of genuine business expenses, which is partly why fee-split offers are often pitched at a higher gross. The right comparison models each specific offer net of tax, National Insurance, expenses and pension, rather than comparing headline rates."
 ---
 
 <h2>Should You Take a Salary or Work as a Self-Employed Associate?</h2>
 
-<p>Every UK dentist faces this choice at some point. Foundation dentists start on a salaried PAYE contract with automatic NHS Pension enrolment. After foundation training, the path splits. You can take a salaried associate position (employed by the practice) or a self-employed associate role (fee split arrangement). The tax and NI treatment differs significantly between the two, and the right answer depends on your personal circumstances, risk appetite, and long-term plans.</p>
+<p>Almost every UK dentist faces this decision. Foundation dentists begin on a salaried PAYE contract with automatic NHS Pension enrolment. After foundation training the path forks. You can take a salaried associate position, where the practice employs you, or a self-employed associate role, where you are paid a share of fees and run your own tax affairs. The tax and National Insurance treatment differs, the pension basis differs, and the non-financial trade-offs differ. The right answer depends on your circumstances, your appetite for risk, and your longer-term plans.</p>
 
-<p>This article compares the <strong>dentist tax structure</strong> for both routes using 2025/26 rates. It uses real examples to show the net income difference, the pension implications, and the non-financial factors that matter. The goal is to help you decide which structure fits your situation, not to recommend one over the other for everyone.</p>
+<p>This article compares the two routes for a UK dentist under <strong>2026/27</strong> rules. The aim is to help you weigh the choice, not to push one structure on everyone. It focuses on how each route works, who carries which cost, and what you are giving up or gaining, rather than on any particular pay figure. For a deeper walk through the legal status test, see our guide to the <a href="/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status">dental associate employment status question</a>.</p>
 
 <h2>How the Two Structures Work</h2>
 
 <h3>Salaried Associate (PAYE)</h3>
-<p>A salaried associate is an employee of the dental practice. The practice deducts income tax and employee National Insurance through PAYE before paying you. The practice also pays employer NI at 15% on earnings above £5,000 per year (2025/26 rate). You receive a payslip, a P60 at year end, and have employment rights including holiday pay, sick pay, and maternity/paternity leave. Your NHS Pension contributions are deducted automatically by the practice.</p>
+<p>A salaried associate is an employee of the dental practice. The practice operates PAYE, deducting income tax and employee National Insurance before paying you, and pays employer (secondary Class 1) National Insurance on top of your salary. You receive a payslip and a year-end P60, and you have statutory employment rights including holiday pay, statutory sick pay and family leave. Your NHS Pension contributions are handled through payroll, and in scheme terms you are treated as an officer, pensionable on the salary the practice pays.</p>
 
 <h3>Self-Employed Associate (Fee Split)</h3>
-<p>A self-employed associate invoices the practice for their share of fees. You handle your own tax and NI through Self Assessment. You pay Class 4 NI at 6% on profits between £12,570 and £50,270, and 2% above that. Class 2 NI was abolished from April 2024. You have no employer NI cost for the practice. You have no statutory employment rights. Your NHS Pension contributions are your responsibility to arrange and pay, though the practice may handle the deduction as an agent.</p>
+<p>A self-employed associate invoices the practice for an agreed share of fees and reports the income as trading profit through Self Assessment. You pay your own income tax and Class 4 National Insurance, the practice pays no employer National Insurance on your earnings, and you have no statutory employment rights. You arrange your own professional indemnity, and you are responsible for your own NHS Pension position as a practitioner, pensionable on net NHS-derived income, even where the practice helps with the paperwork.</p>
 
-<h2>Tax and NI Comparison for 2025/26</h2>
+<h2>Tax and National Insurance Under 2026/27 Rules</h2>
 
-<p>The headline difference is employer NI. A practice paying a salaried associate must add 15% employer NI on top of the salary. For a self-employed associate, the practice pays nothing beyond the fee split. This makes self-employed associates cheaper for the practice, which is why most private and mixed practices prefer this model.</p>
+<p>Both routes run through the same income tax bands. The differences sit in National Insurance and in who carries each cost.</p>
 
-<p>For the dentist, the comparison looks like this on a gross income of £80,000:</p>
+<p>An employed dentist pays employee Class 1 National Insurance at <strong>8%</strong> on earnings above the primary threshold (broadly the personal allowance level) and <strong>2%</strong> above the upper earnings limit. Separately, the practice pays employer (secondary Class 1) National Insurance at <strong>15%</strong> on salary above the secondary threshold. That employer cost is real money for the practice, even though it never appears on your payslip.</p>
 
-<h3>Example 1: Salaried Associate on £80,000</h3>
-<ul>
-<li>Gross salary: £80,000</li>
-<li>Personal allowance: £12,570</li>
-<li>Basic rate tax (20% on £37,700): £7,540</li>
-<li>Higher rate tax (40% on £29,730): £11,892</li>
-<li>Total income tax: £19,432</li>
-<li>Employee NI (8% on £37,700 + 2% on £29,730): £3,011 + £595 = £3,606</li>
-<li>Net take-home pay: £80,000 - £19,432 - £3,606 = £56,962</li>
-<li>Employer NI cost to practice: 15% on £75,000 (£80,000 - £5,000 threshold) = £11,250</li>
-<li>Total cost to practice: £80,000 + £11,250 = £91,250</li>
-</ul>
+<p>A self-employed associate pays Class 4 National Insurance at <strong>6%</strong> on profits between the lower and upper profit limits and <strong>2%</strong> above the upper limit, settled through Self Assessment. There is no employer National Insurance for the practice on a self-employed associate. The old weekly <strong>Class 2</strong> flat charge no longer applies to self-employed people whose profits are above the small profits threshold; you are treated as having paid it, so do not budget for a separate weekly Class 2 bill.</p>
 
-<h3>Example 2: Self-Employed Associate on £80,000 Gross Fees</h3>
-<ul>
-<li>Gross fees: £80,000</li>
-<li>Allowable expenses (estimate 10% for lab, materials, CPD, indemnity, travel): £8,000</li>
-<li>Net profit: £72,000</li>
-<li>Personal allowance: £12,570</li>
-<li>Basic rate tax (20% on £37,700): £7,540</li>
-<li>Higher rate tax (40% on £21,730): £8,692</li>
-<li>Total income tax: £16,232</li>
-<li>Class 4 NI (6% on £37,700 + 2% on £21,730): £2,262 + £435 = £2,697</li>
-<li>Net take-home pay: £72,000 - £16,232 - £2,697 = £53,071</li>
-<li>No employer NI cost to practice</li>
-<li>Total cost to practice: £80,000 (fee split)</li>
-</ul>
+<p>The headline pattern is that the employed route carries lower personal National Insurance for the dentist but adds a 15% employer National Insurance cost for the practice, while the self-employed route removes that employer cost entirely. This is one reason fee-split offers are often pitched at a higher gross than an equivalent salary, and why most private and mixed practices favour the self-employed model.</p>
 
-<p>The self-employed associate takes home about £3,891 less than the salaried associate on the same gross income. But the practice saves £11,250 in employer NI. This is why many practices offer a higher gross fee to self-employed associates to make the arrangement attractive.</p>
+<h3>Side-by-Side Comparison</h3>
 
-<h2>NHS Pension Implications</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Salaried associate (PAYE)</th>
+<th>Self-employed associate (fees)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax route</td>
+<td>PAYE, deducted at source</td>
+<td>Self Assessment, paid in arrears with payments on account</td>
+</tr>
+<tr>
+<td>Your National Insurance</td>
+<td>Employee Class 1: 8%, then 2% above the upper earnings limit</td>
+<td>Class 4: 6%, then 2% above the upper profit limit</td>
+</tr>
+<tr>
+<td>Class 2 National Insurance</td>
+<td>Not applicable</td>
+<td>No separate weekly charge above the small profits threshold</td>
+</tr>
+<tr>
+<td>Employer National Insurance</td>
+<td>Practice pays 15% above the secondary threshold</td>
+<td>None payable by the practice</td>
+</tr>
+<tr>
+<td>Employment rights</td>
+<td>Statutory rights apply (sick, holiday, family leave, notice)</td>
+<td>No statutory employment rights</td>
+</tr>
+<tr>
+<td>NHS Pension basis</td>
+<td>Officer, pensionable on payroll salary</td>
+<td>Practitioner, pensionable on net NHS-derived income</td>
+</tr>
+<tr>
+<td>Expenses</td>
+<td>Strict "wholly, exclusively and necessarily" test</td>
+<td>Wider "wholly and exclusively" trading test</td>
+</tr>
+<tr>
+<td>Indemnity and admin</td>
+<td>Often arranged or contributed by the practice</td>
+<td>Arranged and funded by the associate</td>
+</tr>
+<tr>
+<td>Who decides the status</td>
+<td>Genuine employment</td>
+<td>Substance of the arrangement, tested by HMRC</td>
+</tr>
+</tbody>
+</table>
 
-<p>The <strong>associate vs employee</strong> decision has major consequences for your NHS Pension. Salaried associates are automatically enrolled and the practice deducts contributions. Self-employed associates must opt in separately and arrange contributions themselves. The employer contribution (currently 20.68% of pensionable pay for the 2015 scheme) is paid by the practice for salaried associates. For self-employed associates, the practice does not pay employer contributions. You only get the member contribution (your own money) building up in the scheme.</p>
+<h2>NHS Pension: Officer vs Practitioner</h2>
 
-<p>This is a significant difference. On £80,000 pensionable earnings, the employer contribution would be £16,544 per year. A self-employed associate loses that entirely. Over a 30-year career, that could mean £500,000 less in pension value before investment growth. If NHS Pension membership is important to you, a salaried role may be the better choice despite the lower headline fee.</p>
+<p>The employed-versus-self-employed choice also changes how you sit in the NHS Pension Scheme. A salaried associate is treated as an <strong>officer</strong>, pensionable on the salary the practice pays through payroll, with contributions handled for you. A self-employed associate is treated as a <strong>practitioner</strong>, pensionable on net NHS-derived income, and is responsible for making sure the correct estimates, certificates and contributions flow through.</p>
+
+<p>Both routes accrue benefits in the 2015 career-average scheme, where active members build pension at a set fraction of each year's pensionable earnings. The practical point is that the basis of the calculation is different, so two offers that look similar on paper can build pension differently. Before signing, it is worth asking the practice how your NHS Pension will be handled and checking the projected accrual rather than assuming the two routes are equivalent. If you later consider trading through a limited company, the picture changes again, because the way an incorporated dentist can pension drawn income is more restrictive than many expect.</p>
 
 <h2>Expenses and Deductions</h2>
 
-<p>Self-employed associates can claim a wider range of business expenses than salaried associates. Typical allowable expenses include:</p>
+<p>Self-employed associates can deduct a wider range of business costs than employed associates, because the trading test is "wholly and exclusively" for the business. Typical allowable costs include:</p>
 <ul>
-<li>Indemnity insurance (MDU, Dental Protection, MDDUS)</li>
-<li>CPD courses and travel</li>
-<li>Professional subscriptions (GDC, BDA, local dental committee)</li>
-<li>Surgery rent if you pay it separately</li>
-<li>Lab fees and materials if you bear the cost</li>
-<li>Use of home as office (limited)</li>
-<li>Travel between practices if you work at multiple sites</li>
+<li>Professional indemnity (for example Dental Protection, MDU or MDDUS)</li>
+<li>The GDC annual retention fee and relevant specialist-register fees</li>
+<li>Approved professional subscriptions and dental journals</li>
+<li>CPD that maintains your current skills</li>
+<li>Loupes and instruments (usually relieved through capital allowances)</li>
+<li>Mileage between practices where you work at more than one site</li>
+<li>A reasonable apportionment for use of home, phone and internet, plus accountancy fees</li>
 </ul>
 
-<p>Salaried associates can only claim expenses that are "wholly, exclusively, and necessarily" incurred in the performance of their duties. This is a stricter test. Most salaried associates cannot claim travel to their main practice, indemnity (if the practice pays it), or GDC fees (if the practice pays them). If you pay these costs yourself as a salaried associate, you can claim them, but the bar is higher.</p>
+<p>Employed associates face a stricter test: an expense must be incurred "wholly, exclusively and necessarily" in performing the duties of the job. In practice that rules out most travel to a single main workplace, and it usually means you cannot separately claim indemnity or GDC fees the practice already pays. Where you genuinely fund those costs yourself as an employee, a claim can be possible, but the bar is higher than for a self-employed associate.</p>
 
 <h2>Employment Rights and Risk</h2>
 
-<p>Salaried associates have statutory employment rights. These include:</p>
-<ul>
-<li>Statutory Sick Pay (SSP) from day 4 of illness</li>
-<li>Statutory Maternity, Paternity, and Adoption Pay</li>
-<li>Holiday pay (5.6 weeks per year)</li>
-<li>Notice period (statutory minimum or contractual)</li>
-<li>Protection from unfair dismissal (after 2 years)</li>
-<li>Employer liability insurance cover</li>
-</ul>
+<p>A salaried associate carries the protection of statutory employment rights, which typically include statutory sick pay, statutory maternity, paternity and adoption pay, paid annual leave, a notice period, and (after qualifying service) protection from unfair dismissal. A self-employed associate has none of these by default. If you cannot work, you earn nothing unless you have arranged your own income protection, and there is no statutory family pay to fall back on.</p>
 
-<p>Self-employed associates have none of these. If you are sick and cannot work, you earn nothing. If you take maternity leave, you receive no statutory pay unless you have voluntarily paid Class 2 NI (abolished) or made other arrangements. You must arrange your own income protection insurance and critical illness cover. The trade-off is greater flexibility: you can choose your hours, work at multiple practices, and have more control over your schedule.</p>
+<p>The trade-off is autonomy. A self-employed associate can usually choose their hours, work across more than one practice, and exercise genuine clinical and commercial control. That control is not just a lifestyle benefit; it is also part of what supports the self-employed status in the first place, which leads to the question of who actually decides that status.</p>
 
-<h2>IR35 and Status Considerations</h2>
+<h2>Who Decides the Status, and Why It Matters</h2>
 
-<p>HMRC and employment tribunals look at the actual working relationship, not the contract label. The BDA's model associate agreement does not guarantee self-employed status. Tribunals consider control, substitution, mutuality of obligation, financial risk, and integration into the practice. If you work exclusively for one practice, use their equipment, follow their appointment book, and have no right to send a substitute, HMRC may argue you are a disguised employee.</p>
+<p>You do not simply choose to be self-employed by signing a contract that says so. HMRC and the tribunals look at the <strong>substance</strong> of the working relationship, not the label. They weigh established factors: the degree of control over how, when and where you work; whether you must provide personal service or can send a substitute; mutuality of obligation; the financial risk you carry; and how integrated you are into the practice. No single factor is decisive; the overall picture governs.</p>
 
-<p>This matters because if HMRC reclassifies you as an employee, they can demand back taxes, NI, and penalties. The practice may also face employer NI liabilities. The risk is higher for associates who work full-time at a single practice with minimal autonomy. If you work across multiple practices, set your own hours, and bear financial risk (e.g., paying lab fees), your self-employed status is more defensible.</p>
+<p>The dental model usually supports self-employment, because associates often have clinical autonomy, their own indemnity and loupes, and a fee-split that carries genuine financial risk. The BDA model associate agreement is drafted to reinforce that, and it is good evidence, but it does not on its own guarantee the status. A rostered associate who works only at one practice, follows the practice diary, uses only practice-supplied resources and cannot send a substitute is more exposed.</p>
+
+<p>If HMRC recategorises a self-employed associate as an employee, it can seek the PAYE income tax and National Insurance that should have been operated, together with interest and possible penalties, and the practice can be left with the employer National Insurance. The defence is to make sure the written terms match how the work is really done, and to keep evidence of autonomy and financial risk. We cover the warning signs in detail in our guide to <a href="/blog/associate-tax/when-hmrc-may-challenge-associate-self-employment">when HMRC may challenge associate self-employment</a>.</p>
+
+<h3>A Note on Limited Companies and IR35</h3>
+
+<p>Some dentists provide their services through a personal service company. On NHS engagements, where the engaging client is medium or large (which most NHS practices and dental groups are), the off-payroll working rules put the IR35 status decision with the client, not with the dentist. Inside-IR35, the fee-payer operates PAYE and National Insurance before paying the company, which removes much of the tax efficiency people associate with incorporating. This is a separate decision from the simple salary-versus-fees choice, and it deserves its own analysis before you set up a company.</p>
 
 <h2>Which Structure Suits Which Dentist?</h2>
 
-<h3>Salaried Associate Suits You If:</h3>
+<h3>A Salaried Role May Suit You If:</h3>
 <ul>
-<li>You value predictable income and employment rights</li>
-<li>NHS Pension membership is a priority</li>
-<li>You want automatic tax deductions and less admin</li>
-<li>You are risk-averse and want sick pay and holiday pay</li>
-<li>You work mainly NHS and the practice offers a salaried model</li>
+<li>You value predictable income and statutory employment rights</li>
+<li>You prefer tax handled at source and lighter personal admin</li>
+<li>Sick pay, paid leave and family leave matter to your circumstances</li>
+<li>You work mainly NHS and the practice offers a genuine salaried model</li>
 </ul>
 
-<h3>Self-Employed Associate Suits You If:</h3>
+<h3>A Self-Employed Role May Suit You If:</h3>
 <ul>
-<li>You want higher gross fees (practices can afford to pay more without employer NI)</li>
-<li>You work at multiple practices and value flexibility</li>
-<li>You have significant business expenses to offset</li>
-<li>You are comfortable managing your own tax and NI through Self Assessment</li>
-<li>You have income protection and other insurance in place</li>
+<li>You value flexibility and the ability to work across more than one practice</li>
+<li>You are comfortable running your own Self Assessment and budgeting for tax</li>
+<li>You have genuine business expenses to set against your income</li>
+<li>You carry, and are comfortable carrying, real financial risk and your own indemnity and income protection</li>
 </ul>
 
-<h2>Real-World Decision: A Worked Example</h2>
+<h2>How to Compare Two Offers</h2>
 
-<p>Consider Dr Patel, a foundation dentist finishing training in 2025. She has two offers:</p>
-<ul>
-<li>Offer A: Salaried associate at £65,000 with NHS Pension, 28 days holiday, sick pay</li>
-<li>Offer B: Self-employed associate at 50% fee split, projected gross £90,000, no benefits, must arrange own pension</li>
-</ul>
-
-<p>On the surface, Offer B looks better. But after expenses (say £9,000), the net profit is £81,000. Tax and NI take about £19,500, leaving £61,500. No employer pension contribution. Offer A gives £65,000 less tax and NI of about £14,500, leaving £50,500, plus employer pension contributions worth £13,442 per year. Over 10 years, Offer A's pension value (employer contributions plus growth) could exceed £200,000. Dr Patel needs to decide whether the extra £11,000 annual take-home from Offer B is worth losing the pension and employment rights.</p>
-
-<p>There is no universal answer. It depends on her age, health, family plans, and long-term career goals. A dental-specialist accountant can model both scenarios with her specific numbers.</p>
-
-<h2>Practical Steps to Decide</h2>
+<p>Because the two routes are rarely offered on identical terms, comparing headline rates is misleading. A salary and a fee-split that look similar can land very differently once you account for employer National Insurance, the wider expense deductions available to the self-employed, the cost of arranging your own indemnity and cover, and the way each route accrues NHS Pension. The only reliable comparison is a net one, built on the specific terms in front of you.</p>
 
 <ol>
-<li>Get both offers in writing with all terms specified</li>
-<li>Use the <a href="/calculators/associate-take-home-calculator">Associate Take-Home Calculator</a> to compare net income</li>
-<li>Check the NHS Pension implications with NHSBSA or a specialist adviser</li>
-<li>Review your employment status risk with a dental accountant</li>
-<li>Consider your personal circumstances: do you need sick pay? maternity cover? flexibility?</li>
-<li>Speak to a <a href="/services/associate-tax">dental associate tax specialist</a> before signing any agreement</li>
+<li>Get both offers in writing with all terms specified, including who pays indemnity and how the NHS Pension is handled</li>
+<li>Model each offer net of income tax, National Insurance, genuine expenses and pension, not on headline pay</li>
+<li>Check the NHS Pension treatment on each route, officer or practitioner, and the projected accrual</li>
+<li>Stress-test the self-employed status against how the work is really done, using the status factors above</li>
+<li>Weigh your personal circumstances: do you need sick pay, family cover, or flexibility across sites?</li>
+<li>Take advice from a dental-specialist accountant before signing either agreement</li>
 </ol>
 
 <h2>Summary</h2>
 
-<p>The <strong>PAYE vs Self Assessment</strong> decision for UK dentists is not just about tax rates. It involves employer NI, NHS Pension contributions, employment rights, expense deductibility, and status risk. A salaried associate typically takes home more from the same gross income due to lower NI, but the practice pays more. A self-employed associate can negotiate a higher gross fee because the practice saves employer NI, but loses employment rights and employer pension contributions.</p>
+<p>The choice between an employed salary and self-employed associate fees is about far more than a tax rate. It brings in employee National Insurance at 8% versus Class 4 at 6%, the practice's 15% employer National Insurance on a salary, the officer-versus-practitioner NHS Pension basis, the breadth of allowable expenses, the presence or absence of statutory employment rights, and the question of who actually decides your status. An employed dentist carries lower personal National Insurance and gains employment protections; a self-employed associate carries no employer cost for the practice, can deduct more, and trades security for flexibility and control.</p>
 
-<p>For most dentists, the right choice depends on whether you value security and pension or flexibility and higher immediate income. There is no one-size-fits-all answer. Model your specific numbers, consider your personal circumstances, and take professional advice before committing to either structure.</p>
-
-<p>For a detailed review of your situation, <a href="/services/dental-accountants">book a consultation with a dental-specialist accountant</a> who understands the nuances of the <strong>dentist tax structure</strong> in 2025/26.</p>
+<p>There is no universal right answer. The sensible approach is to model each specific offer net of all of these factors, weigh the non-financial trade-offs against your own circumstances, and take professional advice before committing. For the full picture of how associate income is taxed, see our <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax guide</a>, and for a review of your own situation, <a href="/services/dental-accountants">book a consultation with a dental-specialist accountant</a> who understands the choice in detail.</p>

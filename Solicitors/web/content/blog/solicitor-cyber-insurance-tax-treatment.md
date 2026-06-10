@@ -11,6 +11,12 @@ altText: "Solicitor reviewing cyber insurance policy documents in a modern law f
 image: ""
 h1: "Is Cyber Insurance an Allowable Expense for a Solicitor Law Firm?"
 summary: "Cyber insurance premiums are generally an allowable expense for a solicitor law firm, provided the policy covers the firm's trade risks. This guide explains the tax position, the SRA's expectations on cyber cover, and how to treat the cost in your accounts."
+keyTakeaways:
+  - "Cyber insurance premiums are generally allowable under the wholly and exclusively rule (ITA 2007 s.34 / CTA 2009 s.54) where the policy covers the firm's trade risks."
+  - "Premiums are usually exempt from VAT under the insurance exemption, though separately itemised VAT-rated services within the policy may attract VAT at 20%."
+  - "The SRA does not name cyber insurance but its Code of Conduct (paragraph 3.2) and client money duties effectively expect firms to hold it."
+  - "Spread the premium over the policy period on the accruals basis, paid from the firm's business account and never from client account."
+  - "A partner cannot claim a personal deduction for firm cyber cover; the firm must pay and deduct it against its profits."
 schema: ""
 faqs:
   - question: "Is cyber insurance tax deductible for a solicitor law firm?"

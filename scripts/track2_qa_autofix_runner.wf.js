@@ -13,8 +13,20 @@ const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
 const slugs = A.slugs || []
 const batch = A.batch || 'unnamed'
 const maxRounds = (typeof A.maxRounds === 'number' && A.maxRounds >= 0) ? A.maxRounds : 2
+const site = A.site || 'property'
+
+// Per-site config (no fs access in the .wf.js runtime; mirrors sites/<site>.json).
+// The site's house_positions doc is the authoritative ground-truth; there are NO
+// hardcoded tax facts in the QA/fix prompts. Add an entry to onboard a new site.
+const SITES = {
+  property: { blogDir: 'Property/web/content/blog', domain: 'propertytaxpartners.co.uk', hp: 'docs/property/house_positions.md', adviser: 'UK property tax accountant' },
+  dentists: { blogDir: 'Dentists/web/content/blog', domain: 'www.dentalfinancepartners.co.uk', hp: 'docs/dentists/house_positions.md', adviser: 'UK dental practice and associate tax accountant' },
+}
+const cfg = SITES[site]
+if (!cfg) throw new Error(`track2_qa_autofix_runner: unknown site '${site}'. Add a SITES entry (blogDir/domain/hp/adviser from sites/${site}.json) first.`)
+
 if (!slugs.length) { log('No slugs in args.slugs'); return { batch, total: 0, all_clear: 0, escalated: 0, pages: [] } }
-log(`QA-autofix runner: ${slugs.length} page(s), batch=${batch}, maxRounds=${maxRounds}`)
+log(`QA-autofix runner: ${slugs.length} page(s), site=${site}, batch=${batch}, maxRounds=${maxRounds}`)
 
 // ---------------------------------------------------------------------------
 // QA SCHEMA - COPIED VERBATIM from scripts/track2_independent_qa.wf.js.
@@ -29,7 +41,7 @@ const SCHEMA = {
   properties: {
     slug: { type: 'string' },
     signoff: { type: 'string', enum: ['sign-off', 'minor-issues', 'blocking-issues'],
-      description: 'sign-off = a UK property accountant would publish this as-is; minor-issues = publish but tidy; blocking-issues = do not leave live' },
+      description: 'sign-off = a qualified sector tax accountant would publish this as-is; minor-issues = publish but tidy; blocking-issues = do not leave live' },
     issues: { type: 'array', items: { type: 'object', additionalProperties: false,
       required: ['severity', 'type', 'detail'],
       properties: {
@@ -53,7 +65,7 @@ const SCHEMA = {
       items: { type: 'object', additionalProperties: false,
         required: ['citation', 'exists', 'content_supports_claim', 'royal_assent_ok'],
         properties: {
-          citation: { type: 'string', description: 'e.g. "ITTOIA 2005 s.272A" or "Finance Act 2026 s.7"' },
+          citation: { type: 'string', description: 'e.g. "CTA 2010 s.455" or "Finance Act 2026 s.4"' },
           exists: { type: 'boolean', description: 'the section/Act exists at legislation.gov.uk' },
           content_supports_claim: { type: 'boolean', description: 'its operative wording actually supports what the page asserts (not just that the URL resolves)' },
           royal_assent_ok: { type: 'boolean', description: 'for a Finance Act: RA date verified and consistent with the page framing (enacted vs draft). true (NA) for non-FA cites.' } } } },
@@ -73,7 +85,7 @@ const SCHEMA = {
     eeat_present: { type: 'boolean', description: 'reviewedBy + reviewerCredentials + reviewedAt all present in frontmatter' },
     schema_valid: { type: 'boolean', description: 'rendered JSON-LD valid + complete: FAQPage iff faqs, HowTo iff howToSteps' },
     strengths: { type: 'string', description: 'what is genuinely good' },
-    expert_plausible: { type: 'boolean', description: 'Would a qualified UK property tax accountant find nothing embarrassing or wrong here?' },
+    expert_plausible: { type: 'boolean', description: 'Would a qualified UK tax accountant for this sector find nothing embarrassing or wrong here?' },
     all_clear: { type: 'boolean', description: 'THE DEPLOY-GATE SIGNAL. TRUE only if ALL hold: no blocking issues AND every arithmetic_recomputed.agrees===true AND every statute_checks entry has exists && content_supports_claim && royal_assent_ok AND links_resolve===true. If any fails, all_clear MUST be false.' },
   },
 }
@@ -82,17 +94,17 @@ const SCHEMA = {
 // scripts/track2_independent_qa.wf.js (only the literal slug interpolation differs,
 // which is identical templating). Returns the prompt for a given slug.
 const qaPrompt = (slug) =>
-  `You are an INDEPENDENT senior UK property tax accountant (ATT/CTA level) doing a final sign-off review of a live page on a client lead-gen site, before deciding whether it can stay published. You did NOT write it and you are skeptical: your job is to find anything wrong, not to confirm it is fine. This is a DIFFERENT lens from the original drafting QA, do not assume prior checks were correct, re-derive.
+  `You are an INDEPENDENT senior ${cfg.adviser} (ATT/CTA level) doing a final sign-off review of a live page on a client lead-gen site, before deciding whether it can stay published. You did NOT write it and you are skeptical: your job is to find anything wrong, not to confirm it is fine. This is a DIFFERENT lens from the original drafting QA, do not assume prior checks were correct, re-derive.
 
-Read Property/web/content/blog/${slug}.md (frontmatter + body). Then judge it as a publishing reviewer. TWO of these are NON-NEGOTIABLE and must be done by RE-DERIVATION, not by reading-and-nodding (this is exactly where the previous QA failed: it judged plausibility and let backwards arithmetic and unenacted-statute framing ship):
+Read ${cfg.blogDir}/${slug}.md (frontmatter + body). The AUTHORITATIVE ground-truth for every rate, threshold, statute and framing on this site is ${cfg.hp}; cross-check the page against it and flag any contradiction. Then judge it as a publishing reviewer. TWO of these are NON-NEGOTIABLE and must be done by RE-DERIVATION, not by reading-and-nodding (this is exactly where the previous QA failed: it judged plausibility and let backwards arithmetic and unenacted-statute framing ship):
 
-1. ARITHMETIC (re-derive, do NOT trust the page): find EVERY worked example and numeric claim. Recompute each one yourself from first principles and record it in arithmetic_recomputed[] with the page's figure, your figure, and whether they agree. Watch the known trap: the April-2027 Section 24 reducer RISES to 22% in step (FA 2026 Sch 1), so a basic-rate landlord gets NO new wedge and the higher/additional wedge is 20pp/25pp - the "credit stays at 20%, wedge widens" framing is BACKWARDS. The 2027/28 reducer = 22% x (lower of finance costs / profit-before-finance-costs / income above PA).
-2. STATUTE (WebFetch each, verify substance + Royal Assent): for EVERY statute/section/Finance Act cited, WebFetch legislation.gov.uk and record it in statute_checks[]: does the section exist, does its operative wording actually support the page's claim (not just that the URL loads - F-8: TCGA 1992 s.4 was gutted by amendment while the URL stayed live), and for any Finance Act is the Royal Assent date verified and consistent with the framing (FA 2026 received RA 18 March 2026 - "draft / awaiting Royal Assent" is now STALE). Section 24 lives in ITTOIA 2005 ss.272A/274A (NOT ITA 2007). Catch Scotland devolution mistakes: the 2027 property rates (22/42/47) apply to England, Wales AND Northern Ireland - ONLY Scotland is carved out for 2027-28 (the FA 2026 s.8/Sch 2 Welsh power is a FUTURE enabling power, not in force for 2027-28). So "England + NI only" / "excluding Wales" is STALE and WRONG; flag a page that carves Wales out of the 2027 rates, and do NOT flag a page that correctly includes Wales. SECONDARY-SOURCE RULE (mandatory for any figure/rate changed in the last ~18 months - anything tied to FA 2025/FA 2026 or dated 2025/2026, e.g. the 14% main-pool WDA, the 40% FYA, the 2027 property rates, APR/BPR caps, dividend rates): legislation.gov.uk's "Latest available (revised)" view can LAG in applying an enacted amendment and silently serve the OLD text (sometimes with a "changes not yet applied" note). So you MUST corroborate every recently-changed figure against a SECOND source - the GOV.UK measure/policy paper or the relevant HMRC manual - and only set content_supports_claim=true if BOTH agree; note the secondary source in the citation string. A single-source legislation.gov.uk PASS on a recently-changed figure is NOT sufficient.
+1. ARITHMETIC (re-derive, do NOT trust the page): find EVERY worked example and numeric claim. Recompute each one yourself from first principles and record it in arithmetic_recomputed[] with the page's figure, your figure, and whether they agree. Do NOT trust the page's figure OR your own training prior for any recently-changed rate (the model defaults to the OLD value for anything changed post-cutoff or by a recent Finance Act); confirm against ${cfg.hp} or primary source.
+2. STATUTE (WebFetch each, verify substance + Royal Assent): for EVERY statute/section/Finance Act cited, WebFetch legislation.gov.uk and record it in statute_checks[]: does the section exist, does its operative wording actually support the page's claim (not just that the URL loads, a section can be gutted by a later amendment while the URL stays live), and for any Finance Act is the Royal Assent date verified and consistent with the framing (enacted vs draft). CROSS-CHECK every rate/threshold/figure and every statutory citation against ${cfg.hp} (this site's locked ground-truth) and flag any page figure or citation that contradicts it. SECONDARY-SOURCE RULE (mandatory for any figure/rate changed in the last ~18 months, anything tied to a recent Finance Act or dated 2025/2026): legislation.gov.uk's "Latest available (revised)" view can LAG in applying an enacted amendment and silently serve the OLD text (sometimes with a "changes not yet applied" note). So you MUST corroborate every recently-changed figure against a SECOND source, the GOV.UK measure/policy paper or the relevant HMRC manual, and only set content_supports_claim=true if BOTH agree; note the secondary source in the citation string. A single-source legislation.gov.uk PASS on a recently-changed figure is NOT sufficient.
 3. PRICING/COMPLIANCE: ANY firm fee figures, fee ranges, hourly rates, or percentage-of-rent fees = blocking (lead-gen model bans on-site pricing). Legitimate tax figures (£3,000 AEA, SDLT bands, MTD thresholds) are fine.
 4. LINKS: confirm every internal /blog link resolves (set links_resolve). The deterministic auditor is scripts/track2_link_audit.py - a correct slug under the wrong category 404s.
 5. WRITING QUALITY: expert, specific, human (not generic AI filler)? Any em-dashes? Leaked markup / broken HTML? Does local/topic specificity ring true?
 6. CANNIBALISATION: does it duplicate a stronger sibling?
-7. QUERY COVERAGE: run \`python scripts/track2_query_coverage.py --slug ${slug} --json\`. TRUST its numbers - record high_demand_covered_pct from it and set uncovered_high_demand to its missing_queries[] entries where impr>=50 ("GSC/Bing queries with impr>=gate NOT served"). You ONLY judge query_coverage.natural: set natural=false if target queries are stuffed (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
+7. QUERY COVERAGE: run \`python scripts/track2_query_coverage.py --slug ${slug} --site ${site} --json\`. TRUST its numbers - record high_demand_covered_pct from it and set uncovered_high_demand to its missing_queries[] entries where impr>=50 ("GSC/Bing queries with impr>=gate NOT served"). You ONLY judge query_coverage.natural: set natural=false if target queries are stuffed (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
 8. META: count metaTitle and metaDescription characters into meta_quality.title_len / desc_len; set meta_quality.ok = (title_len<=60 AND desc_len<=155).
 9. E-E-A-T: set eeat_present = (reviewedBy AND reviewerCredentials AND reviewedAt are all present in frontmatter).
 10. SCHEMA: set schema_valid = the rendered JSON-LD is valid AND complete - FAQPage present iff faqs exist, HowTo present iff howToSteps exist.
@@ -121,7 +133,7 @@ const EDITORIAL_SCHEMA = { type:'object', additionalProperties:false, required:[
 // The editorial reviewer prompt - a DISTINCT persona (commissioning editor, NOT a
 // fact-checker). It polishes prose only and never touches tax substance.
 const editorPrompt = (slug) =>
-  `You are a senior commissioning editor for a UK property-tax firm's blog. You are NOT a fact-checker (a separate reviewer handles facts, statutes and arithmetic - do NOT re-check those). Judge ONLY the writing quality of Property/web/content/blog/${slug}.md: is it genuinely expert and human, or generic AI content? Read it, then flag with the EXACT offending text: (1) AI-filler / generic phrasing (e.g. 'in today's ever-changing landscape', 'it is important to note', 'navigating the complexities', empty throat-clearing intros, conclusions that merely restate); (2) repetition (a phrase/word/idea recycled across sections - quote each); (3) hedging / waffle (over-qualified sentences that say nothing); (4) listicle-in-prose tells ('three things. First... Second... Third...') used formulaically; (5) weak structure (sections that do not earn their place); (6) readability (sentences too long or dense); (7) voice (does it carry a real adviser's point of view and concrete specificity, or is it bland and generic?). House voice: confident, specific, plain UK English, NO em-dashes, no on-page pricing, a lead-gen handoff tone. GRADE the page: strong / adequate / weak. 'adequate' is the publishable bar; reserve 'weak' for genuinely generic, filler-heavy, hedged or templated writing with no real expert substance. Set reads_human=false if it reads as generic AI. For each issue give type + the exact offending text (detail) + a concrete suggested_fix that PRESERVES every fact, figure and citation (you are polishing prose, never changing tax substance). Be a tough but fair editor.`
+  `You are a senior commissioning editor for a ${cfg.adviser} firm's blog. You are NOT a fact-checker (a separate reviewer handles facts, statutes and arithmetic - do NOT re-check those). Judge ONLY the writing quality of ${cfg.blogDir}/${slug}.md: is it genuinely expert and human, or generic AI content? Read it, then flag with the EXACT offending text: (1) AI-filler / generic phrasing (e.g. 'in today's ever-changing landscape', 'it is important to note', 'navigating the complexities', empty throat-clearing intros, conclusions that merely restate); (2) repetition (a phrase/word/idea recycled across sections - quote each); (3) hedging / waffle (over-qualified sentences that say nothing); (4) listicle-in-prose tells ('three things. First... Second... Third...') used formulaically; (5) weak structure (sections that do not earn their place); (6) readability (sentences too long or dense); (7) voice (does it carry a real adviser's point of view and concrete specificity, or is it bland and generic?). House voice: confident, specific, plain UK English, NO em-dashes, no on-page pricing, a lead-gen handoff tone. GRADE the page: strong / adequate / weak. 'adequate' is the publishable bar; reserve 'weak' for genuinely generic, filler-heavy, hedged or templated writing with no real expert substance. Set reads_human=false if it reads as generic AI. For each issue give type + the exact offending text (detail) + a concrete suggested_fix that PRESERVES every fact, figure and citation (you are polishing prose, never changing tax substance). Be a tough but fair editor.`
 
 // ---------------------------------------------------------------------------
 // derived_all_clear - MIRRORS qa_verdict.py _derive_all_clear EXACTLY, in JS,
@@ -206,7 +218,7 @@ function collectFailing(v) {
 // CLASSIFY each failing item FIXABLE vs ESCALATE.
 // ESCALATE (never auto-fix) if ANY of:
 //   - the issue text/detail indicates a statute or figure that CONTRADICTS the
-//     locked ground truth in docs/property/house_positions.md (a manager judgment call);
+//     locked ground truth in the site's house_positions doc (a manager judgment call);
 //   - the QA gave no concrete correct value/citation to apply;
 //   - it is the SAME unresolved issue a prior round already tried to fix (no progress);
 //   - round === maxRounds (out of rounds).
@@ -245,7 +257,7 @@ function classifyItem(item, round, priorAttempted) {
 // The auto-fix agent prompt: apply ONLY the QA-prescribed corrections, surgically,
 // re-verifying every statute fix at legislation.gov.uk before applying.
 const fixPrompt = (slug, fixable) =>
-  `You are the Track 2 QA-AUTOFIX stage for the already-rewritten page Property/web/content/blog/${slug}.md on propertytaxpartners.co.uk. An independent QA reviewer flagged the issues below and prescribed a correction for each. Apply ONLY these corrections, surgically. Do NOT rewrite the page and MUST NOT change anything the QA did not flag.
+  `You are the Track 2 QA-AUTOFIX stage for the already-rewritten page ${cfg.blogDir}/${slug}.md on ${cfg.domain}. An independent QA reviewer flagged the issues below and prescribed a correction for each. Apply ONLY these corrections, surgically. Do NOT rewrite the page and MUST NOT change anything the QA did not flag.
 
 QA-FLAGGED ISSUES + PRESCRIBED CORRECTIONS (apply each, nothing else):
 ${fixable.map((f, i) => `  ${i + 1}. [${f.subtype}] ${f.text}\n     prescribed fix: ${f.prescribed}`).join('\n')}
@@ -259,8 +271,8 @@ RULES:
 - TABLE FIX: if a missing comparison table was flagged on a comparison page, add one plain-HTML side-by-side <table> (thead+tbody), no inline styles, no pricing.
 - EDITORIAL FIX: for any [editorial] item, the fix is a SURGICAL PROSE EDIT per the suggested_fix - cut filler, vary repetition, tighten hedging, improve flow - while PRESERVING every fact, figure, statute citation and worked example exactly (the factual QA re-runs after, so any drift will be caught). Do not add new claims.
 After applying the edits, run EXACTLY these two deterministic commands IN ORDER (do NOT hand-edit what they fix):
-  1. python scripts/frontmatter_lint.py --fix Property/web/content/blog/${slug}.md
-  2. python optimisation_engine/blog_generator/slug_resolver.py --fix Property/web/content/blog/${slug}.md
+  1. python scripts/frontmatter_lint.py --fix ${cfg.blogDir}/${slug}.md
+  2. python optimisation_engine/blog_generator/slug_resolver.py --fix ${cfg.blogDir}/${slug}.md
 Then return ONLY {slug, applied:[short strings of what you changed], could_not_apply:[short strings of any prescribed fix you could NOT safely apply, each with why]}. Keep it tiny.`
 
 const FIX_SCHEMA = {

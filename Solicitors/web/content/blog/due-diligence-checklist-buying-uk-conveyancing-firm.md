@@ -11,6 +11,12 @@ altText: "Solicitor reviewing conveyancing files and due diligence documents at 
 image: ""
 h1: "How to Run a Due Diligence Checklist When Buying a UK Conveyancing Law Firm"
 summary: "Buying a conveyancing firm requires more than a multiple of profit. You need to check the quality of the client matter pipeline, the reliability of referral sources, and the firm's SRA compliance history. This guide gives you a practical due diligence checklist for solicitors and law firm partners."
+keyTakeaways:
+  - "Referral source concentration is the biggest risk, so any single source above 30% of revenue makes the firm fragile."
+  - "Conveyancing firms typically sell at 2 to 3 times normalised profit, adjusted for above-market owner pay and one-offs."
+  - "Check the last three accountant's reports for qualifications and confirm client account reconciliations run every five weeks."
+  - "Review open and completed files for stale matters, AML source-of-funds checks, and the firm's complaint history."
+  - "Confirm a COFA and COLP are in place and budget to retain key fee-earners and referral partners after completion."
 schema: ""
 faqs:
   - question: "What is the most important due diligence check when buying a conveyancing firm?"

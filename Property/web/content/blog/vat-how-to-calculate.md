@@ -1,155 +1,156 @@
 ---
-title: 'VAT: How to Calculate It for Your Property Business'
+title: 'How to Calculate VAT: Formulas, Rates and Worked Examples'
 slug: vat-how-to-calculate
 canonical: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/vat-how-to-calculate
 date: '2026-05-19'
-author: Property Tax Partners Editorial Team
+author: "Property Tax Partners Editorial Team"
 category: Property Accountant Services
-metaTitle: 'VAT: How to Calculate It for Your Property Business'
-metaDescription: Learn how to calculate VAT for your property business. Includes standard and reduced rate formulas, examples, and registration rules for UK landlords.
-altText: UK property accountant calculating VAT on a laptop with a calculator and property documents on a desk
+metaTitle: 'How to Calculate VAT: Formulas, Rates and Examples (2026)'
+metaDescription: "How to calculate VAT step by step: the add-on (x1.2) and back-out (/1.2) formulas, the 20% and 5% rates, VAT on rent, and the £90,000 threshold."
+altText: "UK property accountant calculating VAT on a laptop with a calculator and property documents on a desk"
 image: https://images.pexels.com/photos/27920274/pexels-photo-27920274.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'VAT: How to Calculate It for Your Property Business'
-summary: A practical guide to calculating VAT for UK property businesses. Covers standard and reduced rate formulas, registration thresholds, and how to handle VAT on rental income and expenses.
+h1: 'How to Calculate VAT: The Formulas and Rates Explained'
+summary: "A practical guide to calculating VAT: the add-on and back-out formulas, the 20%, 5% and zero rates and where each applies, VAT on residential and commercial rent, the trade-by-trade approach, and the £90,000 registration threshold. For the deeper commercial-property recovery questions (option to tax, partial exemption, developer reclaim) it points to our commercial property VAT guide."
 schema: ''
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedAt: '2026-06-02'
+howToSteps:
+- name: "Find the VAT on a net price"
+  text: "Multiply the price excluding VAT by the rate as a decimal. At the standard 20% rate, VAT equals the net price multiplied by 0.20. A £500 net repair carries £100 of VAT."
+- name: "Find the gross (VAT-inclusive) price"
+  text: "Multiply the net price by 1.2 for the 20% rate, or by 1.05 for the 5% reduced rate. A £500 net repair becomes £600 gross at 20%."
+- name: "Back the VAT out of a gross price"
+  text: "Divide the VAT-inclusive total by 1.2 to get the net amount, then subtract to find the VAT. A £600 gross invoice is £500 net plus £100 VAT (£600 divided by 1.2 equals £500)."
+- name: "Work out what you owe HMRC"
+  text: "Add up the VAT you charged customers (output VAT) and subtract the VAT you paid on costs that relate to taxable supplies (input VAT). The difference is paid to, or reclaimed from, HMRC on your VAT return."
 faqs:
-- question: What is the current VAT registration threshold for UK property businesses?
-  answer: The VAT registration threshold is £90,000 in any rolling 12-month period, according to gov.uk guidance. If your VAT taxable turnover exceeds this amount, you must register for VAT. You can also choose to register voluntarily if your turnover is below £90,000, which can be beneficial if you incur significant VAT on your costs and want to reclaim it.
-- question: How do I calculate VAT at 20% on a property expense?
-  answer: To calculate the price including 20% VAT, multiply the price excluding VAT by 1.2. For example, if a repair costs £500 excluding VAT, the total including VAT is £500 x 1.2 = £600. To find the price excluding VAT from a total including VAT, divide by 1.2. For instance, if you paid £600 including VAT, the price excluding VAT is £600 ÷ 1.2 = £500.
-- question: Can I reclaim VAT on expenses for my residential rental property?
-  answer: Generally, no. Residential property rentals are exempt from VAT, meaning you cannot reclaim VAT on expenses related to that property. If you also have a VAT-registered business, you need to apportion your input VAT between exempt and taxable supplies. For commercial property, you can opt to tax the property, which allows you to charge VAT on rent and reclaim VAT on related costs.
-- question: What is the reduced rate of VAT and when does it apply to property?
-  answer: The reduced rate of VAT is 5%. It applies to certain supplies, including domestic fuel and power, and some residential property renovations under the reduced rate scheme. To calculate the price including 5% VAT, multiply the price excluding VAT by 1.05. For example, if work costs £4,000 excluding VAT, the total including VAT is £4,000 x 1.05 = £4,200.
-dateModified: '2026-05-19'
-sourcesVerifiedAt: '2026-05-19'
+- question: "How do I calculate VAT for a commercial property business?"
+  answer: "Start by confirming whether your income is taxable for VAT. Commercial rent is exempt by default, so you only charge VAT once you have opted to tax. After that, take the net rent and multiply by 1.2 to add 20% VAT. To find the VAT alone, multiply the net figure by 0.20. To back VAT out of a VAT-inclusive total, divide by 1.2. Your VAT bill for the period is the VAT you charged tenants (output VAT) minus the VAT you paid on related costs (input VAT)."
+- question: "How do I calculate VAT at 20% on a property expense?"
+  answer: "To add 20% VAT, multiply the net price by 1.2. A £500 repair excluding VAT becomes £500 x 1.2 = £600 including VAT, with £100 of VAT. To strip VAT out of a gross total, divide by 1.2. So £600 including VAT is £600 / 1.2 = £500 net, leaving £100 of recoverable VAT if it relates to a taxable supply."
+- question: "Is there VAT on rental income?"
+  answer: "Residential rent is exempt from VAT, so you do not charge it and you cannot reclaim VAT on costs tied to that letting. Commercial rent is also exempt by default, but you can opt to tax the building. Once you opt to tax, you charge 20% VAT on the rent and can reclaim VAT on related costs such as refurbishment and professional fees."
+- question: "How do I calculate VAT for a commercial landlord business?"
+  answer: "If you have not opted to tax, the answer is simple: commercial rent is exempt, so there is no VAT to charge or reclaim. If you have opted to tax, charge 20% on the rent (net rent x 1.2 gives the gross), record that as output VAT, then deduct the input VAT on costs that relate to the opted property. The net of those two figures is what you pay HMRC each quarter."
+- question: "What is the VAT registration threshold for a property business?"
+  answer: "You must register when your VAT taxable turnover exceeds £90,000 in any rolling 12-month period, or when you expect to breach it within the next 30 days. Exempt residential rent does not count towards this figure. Opted-to-tax commercial rent, developer sales and construction services generally do."
+- question: "Can I reclaim VAT on expenses for a residential rental property?"
+  answer: "Generally no. Residential letting is an exempt supply, so the VAT on its running costs is irreversibly yours to bear. The main exceptions sit outside ordinary letting: certain new-build and qualifying conversion work can be zero-rated or reduced-rated, and the DIY housebuilders scheme can refund VAT on a self-build or qualifying conversion."
+- question: "What is the reduced rate of VAT and when does it apply to property?"
+  answer: "The reduced rate is 5%. In property it most often applies to the renovation of a dwelling that has been empty for two years or more, the conversion of a building into a different number of dwellings (for example a house into flats), and domestic fuel and power. To add 5% VAT, multiply the net price by 1.05: £4,000 of qualifying work becomes £4,200, with £200 of VAT."
+- question: "How do I work out the VAT to pay HMRC on my return?"
+  answer: "Total your output VAT (the VAT you charged on taxable supplies such as opted-to-tax rent or developer sales) and your input VAT (the VAT on costs relating to those taxable supplies). If output VAT is higher, you pay the difference to HMRC. If input VAT is higher, for example during a development before any sales, you reclaim the difference."
+- question: "Do I charge VAT when I sell a commercial property?"
+  answer: "It depends on the building and whether you have opted to tax. The sale of a new commercial building (under three years old) is standard-rated at 20%. An older commercial property is exempt unless you have opted to tax, in which case the sale is standard-rated. If the property is let and sold to a buyer who continues the rental business, the deal may qualify as a transfer of a going concern and fall outside the scope of VAT entirely."
+- question: "Is the sale of a new-build home subject to VAT?"
+  answer: "The first grant of a major interest in a new dwelling by the person constructing it is zero-rated. You do not charge VAT to the buyer, but because the sale is taxable at 0% you can still reclaim the VAT on construction costs and most related professional fees. This is a key reason developers of new homes are usually better registered for VAT than not."
+- question: "How do I calculate VAT for a trade such as plumbing, catering or a shop?"
+  answer: "The arithmetic is identical whatever the trade. Add VAT by multiplying the net price by 1.2 at the standard rate; back it out by dividing the gross by 1.2. What changes between a plumber, a caterer, a baker and a shop is the rate that applies to each supply (some food is zero-rated, hot takeaway food is standard-rated, and certain construction work is reduced-rated), and whether the business has crossed the £90,000 registration threshold."
+- question: "Do I have to keep VAT records digitally?"
+  answer: "Yes. Making Tax Digital for VAT applies to all VAT-registered businesses. You must keep digital records and file returns using compatible software. Records, including VAT invoices issued and received, must be kept for at least six years."
+dateModified: '2026-06-02'
+sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
-- accaglobal.com
-- aka.hmrc.gov.uk
 - gov.uk
+- legislation.gov.uk
 imageCredit:
   photographer: Jakub Zerdzicki
   photographer_url: https://www.pexels.com/@jakubzerdzicki
   source: Pexels
   source_url: https://www.pexels.com/photo/real-estate-business-finance-background-template-calculator-door-key-27920274/
 ---
-<p>Value Added Tax (VAT) is a tax on the supply of goods and services in the UK. For property businesses, understanding how to calculate VAT correctly is essential to avoid overpaying or underpaying HMRC. This guide explains the core calculation methods, registration rules, and practical examples relevant to landlords, property developers, and investors.</p>
+<p>VAT arithmetic is simple. The hard part for a property business is deciding whether a supply carries VAT at all, and at which rate, before you reach for a calculator. Get the rate and the liability right and the maths is two multiplications. Get them wrong and you either hand HMRC money you did not owe or miss a registration that triggers penalties. So you need both halves: the formulas you can rely on, and the property-specific rules that decide when to use them.</p>
 
-<h2>What Is VAT and When Does It Apply to Property?</h2>
-<p>VAT is a consumption tax that applies to most goods and services in the UK. Businesses have to register for VAT if their VAT taxable turnover is more than £90,000 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. You can also choose to register voluntarily if your turnover is below this threshold <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>For property businesses, VAT applies differently depending on the type of property and the nature of the supply. Residential property rentals are generally exempt from VAT, meaning you do not charge VAT on rent and cannot reclaim VAT on related expenses. Commercial property rentals, however, can be subject to VAT, and you may have the option to elect to waive exemption (known as opting to tax).</p>
-<p>If you are a VAT-registered business, you must include VAT in the price of all goods and services at the correct rate <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. You also need to report the amount of VAT you charged your customers and the amount of VAT you paid to other businesses by sending a VAT return to HMRC, usually every 3 months <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-
-<h2>How to Calculate VAT: The Core Formulas</h2>
-<p>The VAT you pay is usually the difference between any VAT you have paid to other businesses and the VAT you have charged your customers <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. If you have charged more VAT than you have paid, you must pay the difference to HMRC <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-<p>There are three main VAT rates in the UK: standard (20%), reduced (5%), and zero (0%). The standard rate applies to most goods and services, including many property-related supplies like construction work on new commercial buildings. The reduced rate applies to certain items like domestic fuel and power, and some residential property renovations. The zero rate applies to new-build residential properties and certain other supplies.</p>
-
-<h3>Calculating VAT at the Standard Rate (20%)</h3>
-<p>To work out a price that includes the standard rate of VAT (currently 20%), multiply the price excluding VAT by 1.2 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-<p><strong>Example:</strong> You are a property developer selling a commercial unit for £100,000 excluding VAT. To find the price including VAT: £100,000 x 1.2 = £120,000. The VAT amount is £20,000.</p>
-<p>To work out a price that excludes the standard rate of VAT, divide the price including VAT by 1.2 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-<p><strong>Example:</strong> You bought a table for your office and the total price including 20% VAT was £180. 180 ÷ 1.20 = 150. The price excluding VAT is £150. The amount you can claim back is the difference between the two numbers, £30 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-
-<h3>Calculating VAT at the Reduced Rate (5%)</h3>
-<p>To work out a price that includes the reduced rate of VAT (currently 5%), multiply the price excluding VAT by 1.05 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-<p><strong>Example:</strong> You are a landlord installing a new heating system in a residential property that qualifies for the reduced rate. The cost of the work is £4,000 excluding VAT. 4,000 x 1.05 = 4,200. The price including VAT is £4,200, and the VAT amount is £200.</p>
-
-<h3>Calculating VAT at the Zero Rate (0%)</h3>
-<p>Zero-rated supplies are still taxable for VAT purposes, but at 0%. This means you do not charge VAT to your customers, but you can still reclaim VAT on your related costs. For property businesses, zero-rating commonly applies to the sale of new-build residential properties and certain construction services.</p>
-<p>The 0% VAT rate on export sales is a 'preferential rate' <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. For exports to an EEU country, the time period for submission of the VAT return and documentary package to confirm 0% VAT rate is within 180 days from the date when goods have been shipped for export by the seller <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. For export outside of EEU, the time period for submission of the VAT return and documentary package to confirm 0% VAT rate is within 180 days from the date when goods have been cleared for export by the customs authorities <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
-
-<h2>VAT Registration for Property Businesses</h2>
-<p>You must register for VAT if your VAT taxable turnover exceeds £90,000 in any rolling 12-month period <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. For property businesses, this typically applies to:</p>
+<h2>How to calculate VAT: the two formulas you actually need</h2>
+<p>There are only two operations. You either add VAT to a price that excludes it, or you strip VAT out of a price that includes it.</p>
+<p><strong>To add VAT</strong>, multiply the net (VAT-exclusive) price by the rate as a multiplier. The standard rate of 20% means multiply by 1.2. The reduced rate of 5% means multiply by 1.05.</p>
+<p><strong>To back VAT out</strong> of a gross (VAT-inclusive) price, divide by the same multiplier. Divide by 1.2 for a 20% inclusive price; divide by 1.05 for a 5% inclusive price. The VAT element is then the difference between the gross figure and the net figure you have just found.</p>
+<p>A worked pair using a £500 repair on a commercial unit:</p>
 <ul>
-<li>Commercial property rentals where you have opted to tax</li>
-<li>Property development and construction services</li>
-<li>Sale of new-build residential properties</li>
-<li>Serviced accommodation and holiday lets (post-FHL abolition rules apply)</li>
+<li><strong>Adding 20%:</strong> £500 x 1.2 = £600. The VAT is £100.</li>
+<li><strong>Backing out 20%:</strong> if the invoice total is £600, then £600 / 1.2 = £500 net, so the VAT is £100.</li>
 </ul>
-<p>If your turnover is below £90,000, you can still choose to register voluntarily <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This can be beneficial if you incur significant VAT on your costs and want to reclaim it. However, voluntary registration also means you must charge VAT on your supplies, which may make your prices less competitive.</p>
+<p>A common shortcut for the VAT element of a 20%-inclusive total is to divide by 6 (because the VAT is one-fifth of the net, which is one-sixth of the gross). £600 / 6 = £100. For a 5%-inclusive total, divide by 21. These shortcuts are handy, but the multiply-and-divide method above always works and is harder to misremember.</p>
 
-<h2>VAT on Property Income and Expenses</h2>
-<p>Understanding how VAT applies to your specific property income and expenses is critical. Here are common scenarios:</p>
+<h3>The three VAT rates and where they bite in property</h3>
+<p>The UK has three positive rates plus exemption, and the distinction between the zero rate and exemption matters enormously to a property business because it decides whether you can reclaim input VAT.</p>
+<table>
+<thead>
+<tr><th>Rate / status</th><th>Multiplier</th><th>Typical property example</th><th>Can you reclaim related input VAT?</th></tr>
+</thead>
+<tbody>
+<tr><td>Standard 20%</td><td>x 1.2</td><td>Opted-to-tax commercial rent; sale of a new commercial building; most repairs and professional fees</td><td>Yes</td></tr>
+<tr><td>Reduced 5%</td><td>x 1.05</td><td>Renovation of a dwelling empty for 2+ years; converting a house into flats; domestic fuel and power</td><td>Yes</td></tr>
+<tr><td>Zero 0%</td><td>x 1 (no VAT charged)</td><td>First sale of a new-build dwelling by the developer; some new-build construction services</td><td>Yes</td></tr>
+<tr><td>Exempt</td><td>No VAT</td><td>Residential rent; commercial rent where no option to tax has been made</td><td>No</td></tr>
+</tbody>
+</table>
+<p>Zero-rated and exempt both mean no VAT lands on the customer, but only the zero rate lets you recover the VAT on your costs. That single difference is why a new-homes developer wants its sales to be zero-rated, and why a residential landlord cannot claw back the VAT on a refurbishment.</p>
 
-<h3>Residential Rental Income</h3>
-<p>Residential property rentals are generally exempt from VAT. This means you do not charge VAT on rent, and you cannot reclaim VAT on expenses related to that property. If you also have a VAT-registered business, you need to apportion your input VAT between exempt and taxable supplies.</p>
+<h2>Is there VAT on rental income?</h2>
+<p>For residential property the answer is a flat no. Letting a dwelling is an exempt supply, so you neither charge VAT on the rent nor reclaim VAT on the costs of that letting. The VAT on a new boiler, a managing agent's fee or a redecoration is a real cost you bear, with no route to recovery.</p>
+<p>Commercial property is exempt too, by default, but here you have a choice. You can make an <strong>option to tax</strong> (sometimes called electing to waive exemption) over a specific building. Once that option is in place, the rent becomes standard-rated: you charge 20% VAT on the rent and you can reclaim the VAT on costs that relate to that property. The trade-off is that some tenants, particularly VAT-exempt businesses such as certain financial or healthcare occupiers, cannot recover the VAT you charge them, so it becomes a real cost that can soften your rent negotiations.</p>
+<p>Serviced accommodation and short-term holiday lets sit differently again. They are a standard-rated supply of holiday accommodation, not an exempt residential let, so once turnover crosses the threshold the operator must register and charge VAT on the nightly rate. This is now a pure VAT question rather than a furnished-holiday-let income-tax question: the FHL income-tax and capital-gains regime was abolished from 6 April 2025, but the VAT treatment of holiday accommodation as a taxable supply is unchanged.</p>
 
-<h3>Commercial Property Rentals</h3>
-<p>Commercial property rentals are also generally exempt, but you can choose to opt to tax the property. This makes the rental income taxable for VAT purposes, allowing you to charge VAT on rent and reclaim VAT on related costs. This is often beneficial if you have significant VAT on refurbishment or maintenance costs.</p>
-
-<h3>Property Development</h3>
-<p>Property development is generally a taxable supply for VAT purposes. If you are developing new-build residential properties, the sale is usually zero-rated, meaning you do not charge VAT but can reclaim VAT on your construction costs. For commercial developments, the sale is standard-rated unless the property is sold as a going concern.</p>
-
-<h3>Expenses and Input VAT</h3>
-<p>As a VAT-registered business, you can reclaim VAT on most business expenses, including:</p>
+<h2>Worked example: VAT on an opted commercial let</h2>
+<p>Bring the formula and the liability rules together and your quarter looks like this. Suppose you have opted to tax an office and let it for £50,000 a year net.</p>
 <ul>
-<li>Professional fees (accountants, solicitors, surveyors)</li>
-<li>Construction and refurbishment costs</li>
-<li>Office supplies and equipment</li>
-<li>Marketing and advertising</li>
+<li><strong>Output VAT on rent:</strong> £50,000 x 1.2 = £60,000 charged to the tenant, of which £10,000 is VAT you owe HMRC.</li>
+<li><strong>Input VAT on costs:</strong> you spend £5,000 net on repairs to that office, plus £1,000 VAT. Because the building is opted to tax, that £1,000 is recoverable.</li>
+<li><strong>Net VAT due for the period:</strong> £10,000 output minus £1,000 input = £9,000 paid to HMRC.</li>
 </ul>
-<p>However, you cannot reclaim VAT on expenses that relate to exempt supplies, such as residential rental income. If you have mixed-use supplies, you need to use a partial exemption method to calculate the recoverable input VAT.</p>
+<p>The principle scales to any commercial-property scenario: total the output VAT on your taxable supplies, total the input VAT on costs that relate to those taxable supplies, and pay or reclaim the difference. Where you hold a mix of opted and non-opted (or residential) property, the input VAT has to be split. That is partial exemption, and it has its own section further down. For the fuller commercial-property picture, including the option-to-tax decision, partial exemption methods and developer input-tax recovery, see our guide to <a href="/blog/property-types-and-specialist-tax/vat-calculator">calculating VAT for a commercial property business</a>.</p>
 
-<h2>Practical Examples for Property Landlords</h2>
-<p>Let us look at two common scenarios to illustrate how VAT calculations work in practice.</p>
+<h3>What about VAT for a plumber, caterer, shop or other trade?</h3>
+<p>Whether you are a plumber, a contractor, a restaurant, a baker, a window-cleaning round or a shop, the calculation never changes: multiply net by 1.2 to add standard-rate VAT, divide gross by 1.2 to take it out. Two things differ by trade. First, the rate that attaches to each supply, because the rules are not uniform: most food sold for home preparation is zero-rated, hot takeaway food is standard-rated, and certain residential construction work is reduced-rated at 5%. Second, whether you have crossed the £90,000 registration threshold and must therefore charge VAT at all. For a property business the same logic applies through the lens of opting to tax and the residential-versus-commercial split.</p>
 
-<h3>Example 1: Commercial Landlord Opting to Tax</h3>
-<p>Sarah owns a commercial property in Manchester that she rents to a retail business. She has opted to tax the property. Her annual rent is £50,000 excluding VAT. She charges her tenant £50,000 x 1.2 = £60,000 including VAT. She must account for £10,000 VAT to HMRC on her VAT return.</p>
-<p>Sarah also spends £5,000 on repairs, plus £1,000 VAT (20%). She can reclaim the £1,000 input VAT. Her net VAT payment to HMRC is £10,000 (output) - £1,000 (input) = £9,000.</p>
-
-<h3>Example 2: Property Developer Building New Homes</h3>
-<p>James is a property developer building five new houses in Birmingham. The construction costs are £800,000 plus VAT. His builder charges him £800,000 x 1.2 = £960,000. James can reclaim the £160,000 VAT on his VAT return because the sale of the new houses will be zero-rated.</p>
-<p>When James sells each house for £300,000, the sale is zero-rated. He does not charge VAT to the buyer, but he must still report the sale on his VAT return. He can continue to reclaim VAT on his construction and professional costs.</p>
-
-<h2>VAT Returns and Record Keeping</h2>
-<p>As a VAT-registered business, you must submit VAT returns to HMRC, usually every 3 months <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The return summarises your output VAT (VAT you charged customers) and input VAT (VAT you paid to suppliers). The difference is what you owe or are owed by HMRC.</p>
-<p>Making Tax Digital (MTD) for VAT is mandatory for all VAT-registered businesses. You must use compatible software to keep digital records and submit your VAT returns. For landlords, MTD for Income Tax is also coming, with mandatory compliance from April 2026 for those with gross property income over £50,000. You can read more about this in our guide on <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords</a>.</p>
-<p>Proper record keeping is essential. You must keep records of all sales and purchases, including VAT invoices, for at least 6 years. This includes:</p>
+<h2>VAT registration for property businesses</h2>
+<p>You must register for VAT when your VAT taxable turnover exceeds £90,000 in any rolling 12-month period, or when you expect to exceed it in the next 30 days alone. Exempt residential rent does not count towards that £90,000. What does count includes:</p>
 <ul>
-<li>VAT invoices you issue and receive</li>
-<li>Self-billing agreements</li>
-<li>Import and export documents</li>
-<li>Credit notes and debit notes</li>
+<li>Rent from commercial property you have opted to tax</li>
+<li>Income from property development and construction services</li>
+<li>Proceeds from selling new-build residential property (zero-rated, but still taxable turnover)</li>
+<li>Serviced accommodation and holiday-let income</li>
 </ul>
+<p>If you are below £90,000 you can register voluntarily. If you are a developer about to incur large amounts of recoverable VAT on construction, early voluntary registration is often the right call: it lets you reclaim input VAT before any sales income arrives. If you are a small commercial landlord whose tenants cannot recover VAT, voluntary registration may simply make your space less attractive without any offsetting benefit. The decision is property-specific, and it is one we walk clients through alongside the wider <a href="https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/commercial-property-tax-landlords-rates-reliefs-allowances">commercial property tax rules</a>.</p>
 
-<h2>Common VAT Mistakes Property Businesses Make</h2>
-<p>Here are some frequent errors to avoid:</p>
+<h2>Opting to tax: the lever that decides VAT recovery</h2>
+<p>The option to tax is the single most consequential VAT decision you make as a commercial landlord. It applies to a specific building (or part of one), lasts 20 years before it can be revoked, and must be notified to HMRC, usually within 30 days of the decision. Once made, it turns an exempt building into a taxable one for as long as you hold it.</p>
+<p>The upside is full recovery of input VAT on that property: refurbishment, fit-out, professional fees and ongoing repairs all become reclaimable. The downside is the VAT you must then add to the rent, which is dead cost to a tenant who cannot recover it. The numbers usually favour opting where you face a heavy, VAT-bearing refurbishment and your tenants are themselves VAT-registered businesses that can recover the charge.</p>
+<p>Two traps recur. Splitting a single property business artificially across separate entities to keep each below the registration threshold is challenged by HMRC as a single taxable person, a point examined in our note on <a href="https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/artificial-separation-and-vat-key-insights-from-cases">artificial separation and VAT</a>. And selling an opted, tenanted property can qualify as a transfer of a going concern (TOGC) that falls outside the scope of VAT, but only if the buyer also opts to tax before completion. Miss that and a TOGC that should have carried no VAT can attract 20% on the whole price.</p>
+
+<h2>VAT in property development and construction</h2>
+<p>Development is where the rates do the most work. The first sale (the first grant of a major interest) of a new dwelling by the person who built it is zero-rated. You charge the buyer no VAT, yet because the supply is taxable at 0% you reclaim the VAT on construction costs and qualifying professional fees. Build five houses with £800,000 of construction costs plus £160,000 VAT, and that £160,000 is recoverable on the VAT return even though each onward sale carries no VAT.</p>
+<p>Commercial new-builds are different: the sale of a new commercial building (broadly, one less than three years old) is standard-rated at 20%, while an older commercial building is exempt unless opted to tax. Conversions occupy the middle ground, where the 5% reduced rate frequently applies, for example converting a house into flats or a commercial building into dwellings, and a conversion that changes the number of dwellings can even allow a developer's onward sale to be zero-rated.</p>
+<p>Two further mechanisms shape your cashflow as a developer. The <strong>domestic reverse charge</strong> shifts the responsibility for accounting for VAT on most construction services from the subcontractor to the customer, which removes VAT from a long chain of sub-contractor invoices, explained in <a href="https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords">the domestic reverse charge for construction</a>. And the <a href="https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/diy-housebuilders-vat-refund-scheme">DIY housebuilders scheme</a> lets a private individual building or qualifying-converting their own home recover the VAT they could not otherwise reclaim, because they are not in business.</p>
+
+<h2>Partial exemption: when input VAT has to be split</h2>
+<p>Many property businesses make both taxable and exempt supplies, say you hold one opted commercial unit and one residential flat. You can recover input VAT on costs attributable to the taxable side, none on costs attributable to the exempt side, and a proportion of the overheads that serve both (accountancy, software, general office costs). That proportion is found using a partial exemption method, the standard one being the ratio of taxable turnover to total turnover. There is a de minimis limit below which small amounts of exempt input VAT can still be recovered in full, but once exempt input VAT becomes material the apportionment has to be done properly each quarter and reviewed annually. This is the part of property VAT that most often goes wrong, and the part where an error compounds over years.</p>
+
+<h2>VAT returns, Making Tax Digital and records</h2>
+<p>VAT-registered businesses file returns, usually quarterly, summarising output VAT against input VAT. Making Tax Digital for VAT applies to all VAT-registered businesses: you must keep digital records and submit returns through compatible software, and keep VAT invoices issued and received for at least six years.</p>
+<p>A separate timetable now bites on landlords' income tax. Making Tax Digital for Income Tax is live and being phased in by income level: from 6 April 2026 for sole traders and landlords with gross income over £50,000, from 6 April 2027 at over £30,000, and from 6 April 2028 at over £20,000. It is distinct from MTD for VAT, but a property business will increasingly be inside both. Our guide on <a href="https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords</a> sets out the income-tax deadlines, and our review of the <a href="https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">best MTD software for landlords</a> compares the tools that handle both.</p>
+
+<h2>Common VAT mistakes property businesses make</h2>
 <ul>
-<li><strong>Not registering on time:</strong> If your turnover exceeds £90,000, you must register within 30 days of the end of the month when the threshold was exceeded.</li>
-<li><strong>Incorrect rate application:</strong> Applying the wrong VAT rate to supplies, especially for mixed-use properties or renovation work.</li>
-<li><strong>Failing to opt to tax:</strong> Missing the opportunity to opt to tax commercial property, which can result in lost VAT recovery.</li>
-<li><strong>Poor partial exemption calculations:</strong> Not correctly apportioning input VAT between exempt and taxable supplies.</li>
+<li><strong>Registering late.</strong> Once turnover breaches £90,000 you have 30 days from the end of that month to register. Backdated VAT plus penalties on missed registrations is a frequent and avoidable cost.</li>
+<li><strong>Confusing exempt with zero-rated.</strong> Both mean no VAT on the customer, but only zero-rating preserves input VAT recovery. Treating an exempt residential let as if it allowed recovery leads to over-claimed VAT and an assessment.</li>
+<li><strong>Forgetting to opt, or opting without thinking it through.</strong> Missing the option to tax can strand the VAT on a major refurbishment; opting carelessly can load unrecoverable VAT onto a tenant and depress the rent.</li>
+<li><strong>Botched partial exemption.</strong> Recovering the full input VAT on overheads that partly serve exempt lets is one of HMRC's most reliable enquiry findings.</li>
+<li><strong>Treating a TOGC as a normal sale (or vice versa).</strong> Getting the going-concern conditions wrong on a tenanted-property sale can add 20% to a price that should have carried none.</li>
 </ul>
-<p>If you are unsure about any aspect of VAT for your property business, it is wise to speak to a specialist. Our team at Property Tax Partners can help. You can learn more about <a href="/services">our services</a> or <a href="/contact">contact us</a> for advice tailored to your situation.</p>
 
-<h2>VAT and Property Development: Special Considerations</h2>
-<p>Property development involves several VAT nuances. If you are developing a mix of residential and commercial properties, you need to apportion costs carefully. The sale of new-build residential properties is zero-rated, while commercial sales are standard-rated. This affects how you reclaim VAT on construction costs.</p>
-<p>For property developers, the option to tax can be complex. If you opt to tax a commercial property and later sell it, the sale is standard-rated. However, if you sell the property as a going concern (TOGC), the sale may be outside the scope of VAT. Professional advice is essential here.</p>
-<p>If you are considering incorporating your property business, VAT implications can also arise. Our guide on <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a> covers some of these considerations.</p>
+<h2>VAT does not change your income tax position</h2>
+<p>VAT and the income tax on your rental profits are separate systems. Charging VAT on opted commercial rent has no bearing on the Section 24 finance-cost restriction, which limits relief on residential mortgage interest to a 20% basic-rate tax credit. Nor does it change how property income will be taxed under the separate property-income rates that Finance Act 2026 has enacted for 2027/28, which apply across England, Wales and Northern Ireland (only Scotland sets its own). If you want the income-tax side, start with our <a href="https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24</a> and the wider <a href="https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax guide</a>.</p>
 
-<h2>VAT on Property Services and Professional Fees</h2>
-<p>Professional fees for property businesses, such as accountant fees, legal fees, and surveyor fees, are generally standard-rated for VAT. If you are VAT-registered and the fees relate to your taxable supplies, you can reclaim the VAT.</p>
-<p>For example, if you pay a property accountant £2,000 plus £400 VAT, you can reclaim the £400 if you are VAT-registered and the fees relate to your taxable property business. You can read more about what a property accountant does in our article on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a>.</p>
-
-<h2>VAT and Non-Resident Landlords</h2>
-<p>Non-resident landlords face additional VAT considerations. If you own UK property and are VAT-registered, you must comply with UK VAT rules. The Non-Resident Landlord (NRL) scheme affects how rental income is taxed, but VAT registration is separate.</p>
-<p>If you are a non-resident landlord with commercial property and have opted to tax, you must charge VAT on rent and submit UK VAT returns. You may also need to consider the Register of Overseas Entities requirements if you own property through a company.</p>
-
-<h2>Getting Professional Help with VAT Calculations</h2>
-<p>VAT for property businesses can be complex, especially when dealing with mixed-use properties, partial exemption, or development projects. A specialist property accountant can help you:</p>
-<ul>
-<li>Determine whether you need to register for VAT</li>
-<li>Calculate VAT correctly on your supplies and purchases</li>
-<li>Optimise your VAT position through options like opting to tax</li>
-<li>Ensure compliance with MTD and record-keeping requirements</li>
-</ul>
-<p>At Property Tax Partners, we specialise in property tax and accounting. Our team can guide you through VAT calculations and ensure you are not paying more than necessary. You can find out more about <a href="/about">who we are</a> and how we can help.</p>
-<p>For a deeper understanding of how VAT interacts with other property taxes, you may find our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24 tax relief</a> useful, as well as our overview of <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax in the UK</a>.</p>
+<h2>Where the calculation gets genuinely difficult</h2>
+<p>The two-formula arithmetic covers most day-to-day invoices. The difficulty in property VAT lies in classification: deciding whether a supply is standard, reduced, zero-rated or exempt, whether an option to tax helps or harms, whether a sale is a TOGC, and how to split input VAT under partial exemption. Those decisions turn on the specific building, the tenant mix and the timing, and a wrong call tends to surface years later in an HMRC enquiry. If your business spans commercial lettings, conversions or development, it is worth getting the VAT structure reviewed before the figures are locked in. You can read more about <a href="https://www.propertytaxpartners.co.uk/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a>, or get in touch for advice tailored to your portfolio.</p>
 
 <h2>Sources</h2>
 <ol>
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/how-vat-works" rel="noopener noreferrer">How VAT works: Overview - GOV.UK</a></li>
-  <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/vat/managing/charging/charging.htm" rel="noopener noreferrer">Charge, reclaim and record VAT - GOV.UK</a></li>
-  <li id="ref-3"><strong>accaglobal.com</strong>: <a href="https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f6/technical-articles/vat-calculation.html" rel="noopener noreferrer">The VAT calculation for export of goods | ACCA Global</a></li>
+  <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/rates-of-vat-on-different-goods-and-services" rel="noopener noreferrer">VAT rates on different goods and services - GOV.UK</a></li>
+  <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/vat-registration/when-to-register" rel="noopener noreferrer">VAT registration: when to register - GOV.UK</a></li>
+  <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/government/publications/vat-notice-742a-opting-to-tax-land-and-buildings" rel="noopener noreferrer">VAT Notice 742A: opting to tax land and buildings - GOV.UK</a></li>
 </ol>
-

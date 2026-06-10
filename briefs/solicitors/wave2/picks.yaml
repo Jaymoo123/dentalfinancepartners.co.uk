@@ -1,0 +1,102 @@
+wave: 2
+# Wave 2 = first FULL net-new wave for Solicitors (24 pages, 6 clusters), scaling
+# up from the 9-page proving wave. Picks curated by the conductor from a 30-pick
+# sub-agent proposal: dropped 6 flagged as likely twins of Wave 1 or the mature
+# corpus (current-vs-capital account, IHT-boundary, trust-accounting-guide twin,
+# completion/CHAPS, Rule-3.3-breach, status-test, buy-in-funding). Biased to the
+# corpus's THIN areas: probate/private-client, legal aid & costs, conveyancing
+# edge cases, TPMA/mixed-money SRA mechanics, tax-bill funding/levies, and a small
+# structure cluster. Each label carries the closest existing page to differentiate
+# from + the HP gap to lock at the gate.
+
+buckets:
+  A:
+    label: "Bucket A - Probate & private-client practice finance. Category: SRA Compliance & Trust Accounting"
+    picks:
+      - id: A1
+        slug: "probate-estate-administration-client-account-sra"
+        label: "Estate-administration money under the SRA client-account regime (PR funds, sale proceeds, distribution). HP §5. Differs from client-money-accounting-solicitors (probate-specific). HP-GAP: PR/estate money as client money"
+      - id: A2
+        slug: "vat-on-probate-and-estate-administration-fees"
+        label: "VAT on probate/estate-admin fees; which estate outlays (probate registry fee, s.27 Trustee Act notices) are genuine disbursements under the eight conditions. HP §6. Differs from disbursements-vat-treatment (probate matter type)"
+      - id: A3
+        slug: "residual-client-balances-clearing-unclaimed-money-sra"
+        label: "Unclaimed/residual client balances: SRA withdrawal rules, the prescribed-circumstances route + de-minimis, charity donation, records. HP §5. Differs from handling-client-money-interest (disposal not interest). HP-GAP: residual-balance withdrawal route"
+      - id: A4
+        slug: "attorney-and-deputyship-receipts-accounting-solicitors"
+        label: "Money handled as attorney/deputy or on an LPA matter: client-money status, OPG supervision interaction, fee VAT. HP §5, §6. Differs from client-money-accounting (attorney/deputy sub-type). HP-GAP: attorney/deputy receipts"
+      - id: A5
+        slug: "solicitor-acting-as-executor-or-trustee-fees-tax"
+        label: "Firm acting AS executor/trustee: professional-charging-clause remuneration, the tax/VAT of those fees, conflict with client-money rules. HP §5, §6. Net-new (firm-as-fiduciary, not adviser). HP-GAP: professional executor/trustee remuneration"
+  B:
+    label: "Bucket B - Legal aid & costs practice finance. Category: VAT & Compliance"
+    picks:
+      - id: B1
+        slug: "legal-aid-laa-work-vat-and-cash-flow"
+        label: "VAT on LAA (legal aid) work + the cash-flow lag of LAA billing / payments on account; tax point on legal-aid bills. HP §6, §6.D, §4. Differs from law-firm-cash-flow-management (LAA-specific). HP-GAP: legal-aid VAT/billing"
+      - id: B2
+        slug: "inter-partes-costs-recovery-vat-treatment-law-firms"
+        label: "VAT on recovered (party-and-party) costs; receiving party's VAT status; interaction with the firm's output VAT. HP §6, §6.D. Differs from counsel-fees-vat (recovered costs not counsel). HP-GAP: inter-partes/recovered-costs VAT"
+      - id: B3
+        slug: "conditional-fee-agreement-cfa-success-fee-accounting-tax"
+        label: "CFA success-fee accounting + VAT: when the tax point / revenue arises on a contingent (no-win-no-fee) matter; WIP recognition. HP §6.D, §4. Differs from wip-valuation-method (contingent-fee WIP). HP-GAP: CFA contingent revenue recognition"
+      - id: B4
+        slug: "damages-based-agreement-dba-accounting-tax-law-firms"
+        label: "DBA (% of damages) accounting: revenue recognition, VAT, DBA Regulations 2013 cap interaction with billing. HP §6.D, §4. Differs from B3 (DBA % not uplift). HP-GAP: DBA revenue recognition + DBA Regs 2013"
+      - id: B5
+        slug: "disbursement-and-litigation-funding-cash-flow-tax"
+        label: "Matter-level disbursement/litigation funding products: cash-flow role, deductibility of funding fees, VAT + SRA treatment of funded disbursements, ATE interaction. HP §4, §6. Differs from solicitor-practice-finance-options (matter-level not firm lending)"
+  C:
+    label: "Bucket C - Conveyancing edge cases & property-tax mechanics. Category: Conveyancing Compliance"
+    picks:
+      - id: C1
+        slug: "abortive-conveyancing-transactions-vat-and-wip"
+        label: "Failed/aborted transactions: VAT on abortive-cost charges, WIP write-off, disbursements already incurred, abortive-fee billing. HP §6, §6.D, §4. Differs from conveyancing-vat-rules (abortive event)"
+      - id: C2
+        slug: "sdlt-refund-and-overpayment-claims-conveyancers"
+        label: "SDLT overpayment/refund claims the firm handles (higher-rate surcharge refund on replacing a main residence; amended returns); 12-month / 4-year windows. HP §7, §6. Differs from sdlt-calculation (refund process not the calc)"
+      - id: C3
+        slug: "conveyancing-referral-fees-sra-transparency-and-vat"
+        label: "Referral-fee accounting: SRA Transparency Rules disclosure, VAT on referral fees paid/received, introducer arrangements, LASPO PI ban context. HP §6, §1. Differs from fee-structure-for-residential-conveyancing. HP-GAP: referral fees + SRA Transparency Rules"
+      - id: C4
+        slug: "non-resident-and-corporate-buyer-sdlt-for-conveyancers"
+        label: "Conveyancer advising non-resident (2% surcharge) + company buyers (higher-rate, ATED interaction); the firm's role + fee. HP §7, §6. Differs from sdlt-calculation (buyer-type sub-scenario)"
+  D:
+    label: "Bucket D - TPMA, mixed money & SRA account mechanics. Category: SRA Compliance & Trust Accounting"
+    picks:
+      - id: D1
+        slug: "third-party-managed-accounts-tpma-for-law-firms"
+        label: "TPMA as an alternative to a client account: how it works, SRA Rule 4.2 authorisation, no-client-account firms. HP §5. Differs from office-account-vs-client-account (third structure). HP-GAP: TPMA / SRA Rule 4.2"
+      - id: D2
+        slug: "mixed-money-receipts-splitting-office-and-client"
+        label: "Receipts part client / part office money (fees + disbursements + costs in one payment): the 14-day split rule, allocation discipline. HP §5. Differs from office-account-vs-client-account (the splitting procedure)"
+      - id: D3
+        slug: "dormant-and-suspense-client-ledger-balances-management"
+        label: "Suspense ledgers, unidentified receipts, dormant matter balances: SRA expectation, reconciliation treatment, clean-up before an accountant's report. HP §5. Differs from solicitor-client-account-reconciliation (suspense sub-problem)"
+      - id: D4
+        slug: "running-a-law-firm-without-a-client-account-model"
+        label: "Operating client-account-free (TPMA + direct-to-third-party): the SRA accountant's-report exemption, VAT/disbursement implications, who it suits. HP §5 Rule 12.2, §6. Differs from D1 (strategic decision vs the product). Pair-differentiate from D1"
+  E:
+    label: "Bucket E - Funding the tax bill, staffing levies & PII finance. Category: Practice Finance & Cash Flow"
+    picks:
+      - id: E1
+        slug: "tax-loans-for-law-firm-partners-funding-the-bill"
+        label: "Tax-loan / fee-funding products to smooth the 31 Jan / 31 Jul payments on account, especially post-basis-period-reform transition years. HP §4, §3, §2. Differs from wave1 partner-tax-reserving (borrowing not saving)"
+      - id: E2
+        slug: "apprenticeship-levy-and-solicitor-apprenticeships-law-firms"
+        label: "Apprenticeship levy (0.5% over £3m paybill), solicitor/SQE apprenticeship funding, the £15k allowance, levy transfer. HP §3, §10. Differs from sqe-training-costs (levy mechanism). HP-GAP: apprenticeship levy figures"
+      - id: E3
+        slug: "secondment-of-solicitors-vat-and-tax-treatment"
+        label: "Seconding fee-earners (to clients / between firms): VAT on secondment charges, the staff-hire concession, PAYE/who employs, recharge mechanics. HP §6, §3. HP-GAP: secondment / supply-of-staff VAT"
+      - id: E4
+        slug: "financing-pii-premiums-tax-treatment-of-premium-finance"
+        label: "Financing the annual PII premium (premium-finance products), renewal cash-flow timing, deductibility of the premium + the finance cost. HP §10, §4. Differs from pii-renewal-cycle (financing not the cycle)"
+  F:
+    label: "Bucket F - Structure & corporate sub-mechanisms. Category: Structure & Incorporation"
+    picks:
+      - id: F1
+        slug: "law-firm-demerger-and-partner-team-moves-tax-sra"
+        label: "Tax/SRA on a partner team lateral move or firm demerger/split: WIP + goodwill apportionment, client-transfer consent, capital settlement. HP §9, §5, §2. Differs from merging-two-uk-law-firms (the reverse: a split)"
+      - id: F2
+        slug: "service-company-structure-for-law-firms-tax-vat"
+        label: "A separate service company (staff/premises/IT recharged to the LLP at arm's length): VAT on intra-entity recharges, mixed-membership interaction, why firms use it. HP §2.B, §6, §3. Differs from wave1 corporate-member (cost-recharge entity not profit-share member)"

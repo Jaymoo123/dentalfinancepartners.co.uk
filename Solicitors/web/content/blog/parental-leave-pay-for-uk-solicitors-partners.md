@@ -11,6 +11,12 @@ altText: "UK solicitor partner reviewing parental leave pay and tax documents in
 image: ""
 h1: "How Do UK Solicitor Partners Handle Parental Leave Pay and Tax in an LLP?"
 summary: "A guide for UK solicitor partners in LLPs on how parental leave pay is taxed, how drawings during maternity leave interact with partnership profit shares, and the key differences between employee SMP and partner parental leave arrangements."
+keyTakeaways:
+  - "Statutory Maternity Pay is for employees only, so a self-employed LLP partner cannot claim SMP and relies on the partnership agreement instead."
+  - "Parental leave drawings are advances against the profit share, taxed via self-assessment with no PAYE, employer NI or SMP involved."
+  - "A partner is taxed on the full allocated profit share, so drawings above a reduced share create an overpayment the partner must repay."
+  - "The partnership deed should set out any profit-share reduction during leave, capital account treatment and how long leave can last."
+  - "Pension contributions during leave attract relief up to 100% of relevant earnings, capped at £60,000 (or less if the tapered allowance applies)."
 schema: ""
 faqs:
   - question: "Can a solicitor partner claim SMP from their LLP?"

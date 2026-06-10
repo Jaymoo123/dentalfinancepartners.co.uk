@@ -1,152 +1,175 @@
 ---
-title: "Asset Sale vs Share Sale for a UK Law Firm: Which Structure Works Best for Solicitors?"
+title: "Asset Sale vs Share Sale for a UK Law Firm: Who Can Do Which, and the Tax Difference"
 slug: "asset-sale-vs-share-sale-uk-law-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/asset-sale-vs-share-sale-uk-law-firm"
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
-metaTitle: "Asset Sale vs Share Sale UK Law Firm: Solicitor Seller CGT Guide"
-metaDescription: "Compare asset sale vs share sale for a UK law firm. Understand buyer preference, seller CGT, and SRA implications for solicitors selling their practice."
+metaTitle: "Asset Sale vs Share Sale: UK Law Firm Seller CGT and BADR Guide"
+metaDescription: "Asset sale vs share sale for a UK law firm: a partnership or LLP can only do an asset sale, a company an ABS can do a share sale. Seller CGT, BADR, TOGC explained."
 altText: "Two UK solicitors reviewing a law firm sale agreement at a meeting table with documents and a calculator"
 image: ""
-h1: "Asset Sale vs Share Sale for a UK Law Firm: Which Structure Works Best for Solicitors?"
-summary: "A comparison of asset sale and share sale structures for UK law firms, explaining how each affects seller CGT, buyer preference, and ongoing SRA compliance for solicitors."
-schema: ""
+h1: "Asset Sale vs Share Sale for a UK Law Firm: Who Can Do Which, and the Tax Difference"
+summary: "A practical comparison of asset sale and share sale structures for UK law firms. A partnership or LLP has no shares and can only do an asset sale, while an incorporated firm or ABS can do a share sale. Covers seller CGT, BADR date bands, the goodwill versus WIP split, TOGC, and when to incorporate first."
+keyTakeaways:
+  - "Your firm's structure decides the route: a partnership or LLP has no shares and can only do an asset sale, while a company or ABS can do either."
+  - "In an asset sale, goodwill is taxed as a capital gain (CGT, with BADR) but WIP and debtors are trading income, taxed at income tax rates plus Class 4 NIC."
+  - "BADR rates rise on a schedule: 14% for disposals between 6 April 2025 and 5 April 2026, then 18% from 6 April 2026, so completion timing matters."
+  - "BADR has a lifetime limit of 1 million pounds per individual; standard CGT above it is 18% within the basic band and 24% above."
+  - "An asset sale can qualify as a TOGC with no VAT, while a share sale is outside the scope of VAT; confirm the VAT position before completion."
 faqs:
-  - question: "Can a solicitor sell their partnership interest as a share sale?"
-    answer: "No. A partnership or LLP does not have shares. The sale of a partner's interest is structured as an asset sale, where the buyer purchases the partner's share of the firm's assets and goodwill. The partner's capital account is settled, and the partner retires from the firm. For incorporated law firms (ABSs), a share sale is possible because the firm has shares to transfer."
-  - question: "What happens to client files in an asset sale of a law firm?"
-    answer: "Client files cannot be transferred without the client's consent. The buyer must contact each client, explain the change, and obtain written agreement to continue the matter. If a client does not consent, the seller must return the files to the client or arrange for another solicitor to take over. This process is governed by the SRA Code of Conduct and can take several weeks to complete."
-  - question: "Does BADR apply to both asset sales and share sales of law firms?"
-    answer: "Yes, BADR can apply to both structures, provided the conditions are met. For an asset sale, the seller must have been a partner or LLP member for at least two years, and the asset must be used in the trade. For a share sale, the seller must have held at least 5% of the shares and voting rights for two years, and the company must be a trading company. The lifetime limit is £1 million of gains per individual."
-  - question: "How does the SRA treat a change of ownership in a share sale of an ABS?"
-    answer: "The buyer must notify the SRA of the change in control. The SRA will assess whether the new owners are fit and proper, considering their financial position, criminal record, and regulatory history. The SRA may impose conditions on the authorisation or refuse the change if concerns arise. This process can take several months and requires legal advice to ensure compliance."
+  - question: "Can a solicitor sell their partnership or LLP interest as a share sale?"
+    answer: "No. A partnership or LLP has no shares, so there is nothing to transfer as a share sale. A partner or member exit is structured as an asset or business sale: the buyer acquires that person's share of the firm's goodwill, work in progress, debtors and fixed assets, and the partner's capital account is settled on retirement. A share sale is only possible where the firm is incorporated as a limited company or an Alternative Business Structure (ABS), because only a company has shares to sell. If you want a share sale route open in future, the practice usually has to be incorporated first, which is a separate planning step."
+  - question: "What are the Business Asset Disposal Relief rates for selling a law firm?"
+    answer: "Business Asset Disposal Relief (BADR) applies a reduced rate of Capital Gains Tax on qualifying gains, up to a lifetime limit of 1 million pounds per individual. The rate was 10% for disposals up to 5 April 2025, is 14% for disposals between 6 April 2025 and 5 April 2026, and rises to 18% for disposals from 6 April 2026. Because the rate steps up on 6 April 2026, completion timing can change the tax on a sale, so the date of disposal needs to be planned, not assumed."
+  - question: "Is goodwill taxed differently from work in progress when a law firm is sold?"
+    answer: "Yes, and the agreement must split them. Goodwill is a capital asset, so a partner's gain on goodwill is charged to Capital Gains Tax and can qualify for BADR. Work in progress and debtors are trading income, taxed at income tax rates plus Class 4 National Insurance when they are billed or sold as a trading receipt, with no BADR. If the sale agreement does not clearly separate the capital element (goodwill, fixed assets) from the income element (WIP, debtors), the seller risks more of the proceeds being taxed as income at higher rates than necessary."
+  - question: "Does an asset sale of a law firm attract VAT?"
+    answer: "A sale of the firm's business and assets as a going concern can qualify as a Transfer of a Going Concern (TOGC), in which case it is treated as neither a supply of goods nor services and no VAT is charged, provided the conditions are met (broadly, the buyer is or becomes VAT registered, carries on the same kind of business, and there is no significant break in trading). A share sale is outside the scope of VAT because shares are being sold, not the business itself. Both routes need VAT advice before completion, because getting a TOGC wrong can create an unexpected VAT charge on the goodwill."
 ---
 
-<h2>Why the Sale Structure Matters for Solicitors</h2>
+<h2>The First Question Is Not Asset or Share, It Is What Structure You Are</h2>
 
-<p>When you sell a UK law firm, the transaction structure determines how much tax you pay, what liabilities the buyer inherits, and how the SRA handles the change of ownership. The two main options are an asset sale and a share sale. Each has distinct consequences for the seller, the buyer, and the firm's ongoing regulatory status.</p>
+<p>When a UK law firm changes hands, people reach quickly for the asset sale versus share sale comparison. For a solicitor, the more useful starting point is simpler: your firm's legal structure decides which routes are even available to you.</p>
 
-<p>This article explains the differences for solicitors and law firm partners. It focuses on the tax treatment, buyer preference, and practical SRA considerations. If you are planning an exit, you need to understand which structure aligns with your goals before you begin negotiations.</p>
+<p>A partnership or an LLP has no shares. There is no share capital to transfer, so a share sale is impossible by definition. The only way to sell a partnership or LLP practice is an asset sale, also called a business sale, where the buyer acquires the firm's goodwill, work in progress, debtors and fixed assets, and each departing partner's capital account is settled. A share sale becomes an option only when the firm is incorporated as a limited company or an Alternative Business Structure (ABS), because only a company has shares.</p>
 
-<p>For a broader overview of practice valuation methods, see our <a href="/services/practice-valuation">practice valuation services page</a>.</p>
+<p>So the real comparison runs along these lines. If you are a partnership or LLP, you are choosing how to run an asset sale well. If you are incorporated, you are choosing between an asset sale and a share sale, and weighing the tax and buyer-appetite trade-offs between them. If you are a partnership or LLP but want the share sale route open later, you are really asking whether to incorporate first. This article works through all three.</p>
 
-<h2>What Is an Asset Sale for a Law Firm?</h2>
+<p>For how the firm itself is valued before any of this, see our <a href="/blog/practice-succession-sale/law-firm-valuation-guide-uk-solicitors">law firm valuation guide</a> and our <a href="/services/practice-valuation">practice valuation service</a>.</p>
 
-<p>In an asset sale, the buyer purchases individual assets and liabilities of the law firm. The selling entity (whether a partnership, LLP, or limited company) retains ownership of the legal entity itself. After the sale, the seller typically winds down the entity or dissolves it.</p>
+<h2>What an Asset Sale Is for a Law Firm</h2>
 
-<p>Typical assets sold include:</p>
+<p>In an asset sale the buyer purchases the individual assets and selected liabilities of the firm, not the legal entity. The selling entity (partnership, LLP or company) keeps its own legal identity, and after completion the seller usually winds it down. For a partnership or LLP this is the only available structure.</p>
+
+<p>Assets typically transferred include:</p>
 <ul>
-<li>Goodwill (the firm's reputation, client relationships, and referral network)</li>
+<li>Goodwill: the firm's reputation, client relationships and referral network</li>
 <li>Work in progress (WIP) and unbilled disbursements</li>
-<li>Fixed assets such as office furniture, IT equipment, and leasehold improvements</li>
+<li>Trade debtors (in some deals; often retained and collected by the seller instead)</li>
+<li>Fixed assets such as office furniture, IT equipment and leasehold improvements</li>
 <li>Contracts with suppliers and service providers</li>
-<li>Client files and ongoing matters (subject to client consent under SRA rules)</li>
+<li>Client files and ongoing matters, subject to client consent under SRA rules</li>
 </ul>
 
-<p>Liabilities are usually excluded unless specifically agreed. The buyer does not inherit historic debts, tax liabilities, or professional negligence claims from before the sale date. This is a key advantage for buyers.</p>
+<p>Liabilities stay with the seller unless specifically taken on. The buyer does not automatically inherit historic debts, prior tax liabilities or pre-completion professional negligence claims. That clean break is the main reason buyers tend to prefer asset deals.</p>
 
-<h3>Tax Treatment for the Seller in an Asset Sale</h3>
+<h3>Seller Tax in an Asset Sale: Split Capital From Income</h3>
 
-<p>For a seller who is a solicitor partner in a partnership or LLP, the disposal of goodwill and other capital assets triggers a capital gain. The gain is subject to Capital Gains Tax (CGT) at the seller's marginal rate. In 2025/26, the CGT rates for individuals are 18% (basic rate) and 24% (higher rate).</p>
+<p>For a solicitor selling a partnership or LLP interest, the single most important point is that the proceeds are not all taxed the same way.</p>
 
-<p>Business Asset Disposal Relief (BADR) may apply. BADR reduces the CGT rate to 14% in 2025/26, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains. To qualify, the seller must have been a partner or LLP member for at least two years before the sale. The asset must be used in the trade.</p>
+<p><strong>Goodwill is a capital asset.</strong> The gain on goodwill is charged to Capital Gains Tax (CGT), not income tax, and goes on the capital gains pages. On most law firm sales goodwill is the largest single asset, so its treatment drives the overall tax bill.</p>
 
-<p>For a solicitor selling their practice as a going concern, goodwill is typically the largest capital asset. BADR can save tens of thousands of pounds in tax. However, the relief is limited per individual, so partners in a multi-partner firm must allocate the £1 million limit carefully.</p>
+<p><strong>WIP and debtors are trading income.</strong> When unbilled time and outstanding bills are sold or billed as a trading receipt, they are taxed at income tax rates plus Class 4 National Insurance, not at CGT rates, and they do not qualify for BADR. This matters because income tax can reach 40% or 45% at the margin, well above the CGT rates.</p>
 
-<p>WIP and debtors are usually treated as trading receipts, taxed as income at the seller's marginal rate. This can create a higher tax charge on those elements compared to goodwill.</p>
+<p>The practical consequence is that the sale agreement must split the consideration clearly between goodwill and fixed assets (capital) and WIP and debtors (income). A vague single price invites HMRC to tax more of the deal as income than the seller intended. For the detail on each element, see our <a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale">goodwill tax treatment guide</a> and our <a href="/blog/practice-sale-succession/wip-treatment-on-law-firm-sale">guide to WIP on a law firm sale</a>.</p>
 
-<h3>Buyer Preference in an Asset Sale</h3>
+<h3>Standard CGT Rates and the Annual Exempt Amount</h3>
 
-<p>Buyers generally prefer asset sales. The main reason is that the buyer acquires a clean entity with no inherited liabilities. The buyer can also obtain capital allowances on fixed assets and amortise goodwill for tax purposes.</p>
+<p>Where BADR does not apply, an individual's capital gain (including a gain on goodwill) is taxed at <strong>18% within the basic-rate band and 24% above it</strong>. These rates have applied to all chargeable assets since 30 October 2024, when the former 10% and 20% rates on non-residential assets were raised. The annual exempt amount is <strong>£3,000</strong> for 2025/26 (and 2026/27), so only a small slice of any sale gain is tax free.</p>
 
-<p>Under current rules, goodwill acquired after 1 April 2019 qualifies for amortisation at 6.5% per year on a straight-line basis. This provides a tax deduction for the buyer over approximately 15 years. For a buyer paying £500,000 for goodwill, the annual deduction is £32,500, reducing taxable profits by that amount each year.</p>
+<h3>Business Asset Disposal Relief on an Asset Sale</h3>
 
-<p>However, the buyer cannot amortise goodwill acquired between 8 July 2015 and 31 March 2019. If the seller acquired the firm in that window and is now selling, the buyer should check the acquisition date carefully.</p>
+<p>BADR reduces the CGT rate on qualifying gains, up to a <strong>lifetime limit of £1 million per individual</strong>. The rate is on a rising schedule, so the date of disposal matters:</p>
+<ul>
+<li><strong>10%</strong> for disposals up to 5 April 2025</li>
+<li><strong>14%</strong> for disposals between 6 April 2025 and 5 April 2026</li>
+<li><strong>18%</strong> for disposals from 6 April 2026</li>
+</ul>
 
-<h2>What Is a Share Sale for a Law Firm?</h2>
+<p>For an asset sale, the qualifying test is that you are a genuine partner or LLP member disposing of the whole or part of the business, and you have carried on the trade throughout the two-year period ending on the date of disposal. A member who has been caught by the salaried member rules may struggle to show a genuine BADR-qualifying interest, so a fixed-share or salaried partner should check their position rather than assume the relief is available.</p>
 
-<p>In a share sale, the buyer purchases the shares of the company that owns the law firm. The legal entity itself continues unchanged. The buyer steps into the shoes of the previous shareholders. This structure is only available if the firm is incorporated as a limited company, including an Alternative Business Structure (ABS) regulated by the SRA.</p>
+<p>Because the rate steps from 14% to 18% on 6 April 2026, completion timing is now a live planning lever. A sale that completes in late 2025/26 rather than early 2026/27 can carry a materially lower BADR rate on the same gain, all else being equal.</p>
 
-<p>For partnerships and LLPs, a share sale is not possible because those structures have no shares. The members' interests are sold through a change in membership or a dissolution and reformation. In practice, most law firm sales involving partnerships or LLPs use an asset sale structure.</p>
+<h3>Buyer Tax in an Asset Sale</h3>
 
-<h3>Tax Treatment for the Seller in a Share Sale</h3>
+<p>Buyers like asset sales partly for the tax position. The buyer can claim capital allowances on qualifying fixed assets and, where the goodwill is acquired from a genuinely unconnected seller as part of a business that also includes qualifying intellectual property, may obtain fixed-rate relief on goodwill acquired on or after 1 April 2019 (subject to the statutory cap). There is no relief on goodwill that was acquired in the window 8 July 2015 to 31 March 2019, so the acquisition history is worth checking.</p>
 
-<p>For a solicitor selling shares in their law firm limited company, the disposal is a capital gain. The gain is the difference between the sale proceeds and the original cost of the shares. CGT applies at the same rates as for an asset sale: 18% or 24% in 2025/26.</p>
+<p>One trap deserves a flag. Where partners transfer their existing practice into their own new company (a self-incorporation), the goodwill is acquired from a related party, and the buyer-company relief on that goodwill is generally fully restricted. So a firm that incorporates itself should not assume the new company gets a goodwill deduction. That is different from a true third-party buyer, who may qualify.</p>
 
-<p>BADR is also available for share sales, provided the seller has held at least 5% of the shares and voting rights for two years, and the company is a trading company. Most incorporated law firms meet this test. The £1 million lifetime limit applies here too.</p>
+<h2>What a Share Sale Is for a Law Firm</h2>
 
-<p>One key difference: in a share sale, there is no separate tax charge on WIP or debtors. The buyer acquires the company with all its assets and liabilities intact. The seller pays CGT on the entire gain, not a mix of income and capital tax.</p>
+<p>In a share sale the buyer purchases the shares of the company that owns the firm. The company carries on unchanged, and the buyer simply steps into the shoes of the previous shareholders. This route exists only where the firm is incorporated as a limited company or an ABS regulated by the SRA. For a partnership or LLP it is not available, because there are no shares to sell.</p>
 
-<h3>Buyer Preference in a Share Sale</h3>
+<h3>Seller Tax in a Share Sale</h3>
 
-<p>Buyers are often less enthusiastic about share sales. The buyer inherits all historic liabilities, including tax debts, professional negligence claims, and any SRA compliance breaches. Due diligence must be thorough, and the buyer typically requires extensive warranties and indemnities from the seller.</p>
+<p>For a solicitor selling shares in their law firm company, the disposal is a single capital gain: sale proceeds less the original cost of the shares. CGT applies at the same standard rates as elsewhere, <strong>18% or 24%</strong>, with BADR available on qualifying gains at the date-banded rates above.</p>
 
-<p>For a law firm, the SRA's rules on change of control apply. The buyer must notify the SRA of any change in ownership or control of an ABS. The SRA may impose conditions or refuse the change if the buyer does not meet the fit and proper test. This adds regulatory risk to the transaction.</p>
+<p>For a share sale the BADR conditions are tighter than for an asset sale. Throughout the two-year period ending on disposal you must have held <strong>at least 5% of the ordinary share capital and at least 5% of the voting rights</strong>, been an <strong>officer or employee</strong> of the company, and been entitled to <strong>at least 5% of the economic value</strong> (broadly, profits available for distribution and the proceeds on a sale of the whole company). Most genuine owner-managers of a small incorporated firm meet this, but a thin or non-voting shareholding can fail it, so the share register and articles need checking well before a sale.</p>
 
-<p>Additionally, the buyer cannot obtain capital allowances on fixed assets in a share sale because the company already owns them. Goodwill amortisation is also not available because the goodwill is already on the company's balance sheet. The buyer's tax deductions are limited to the existing asset base.</p>
+<p>One structural advantage of a share sale is that there is no separate income tax charge on WIP or debtors. The buyer acquires the company with its assets and liabilities intact, so the whole gain is taxed as capital rather than split between capital and income. For a firm with large lock-up (high WIP and debtor days), that can reduce the seller's overall tax compared with an asset sale, where the WIP element is taxed as income.</p>
 
-<h2>Comparing the Two Structures: Key Factors for Solicitors</h2>
+<h3>Buyer Tax and Risk in a Share Sale</h3>
 
-<h3>Seller CGT and Overall Tax Position</h3>
+<p>Buyers are usually warier of share sales. The buyer inherits the company's entire history: tax debts, pre-completion negligence claims, employment liabilities and any regulatory issues. Diligence has to be thorough, and the buyer will normally want extensive warranties and indemnities, and often a retention or earn-out, to manage that risk. The buyer also gets no fresh capital allowances or goodwill relief, because the company already owns its assets and the goodwill is already on its balance sheet.</p>
 
-<p>For a solicitor selling a partnership or LLP interest, an asset sale is the only practical option. The seller pays CGT on goodwill and other capital assets, with BADR available. WIP and debtors are taxed as income, which can push the seller into a higher tax bracket.</p>
+<p>For a regulated firm there is a further layer. On a change of control of a recognised body or ABS, the SRA must be notified and will assess whether the incoming owners and managers are fit and proper. That approval can take time and can delay or condition completion, which adds execution risk a buyer prices in.</p>
 
-<p>For a solicitor selling shares in an incorporated firm, a share sale gives a single CGT charge on the entire gain. This can be simpler and may result in a lower overall tax bill if the firm has significant WIP and debtors. However, the buyer may demand a lower price to compensate for the inherited risks.</p>
+<h2>Comparing the Two: What Actually Drives the Decision</h2>
 
-<p>In both cases, the £1 million BADR limit is per individual. Partners in a multi-partner firm should plan the allocation of the relief to maximise tax savings. For example, if four partners each sell their share of a £2 million goodwill asset, each has a gain of £500,000, all within the BADR limit. If the goodwill is £5 million, each partner has a gain of £1.25 million, and the excess over £1 million is taxed at the full CGT rate.</p>
+<h3>Your Structure Comes First</h3>
 
-<h3>Buyer Preference and Negotiating Power</h3>
+<p>The honest comparison is constrained by what you already are. A partnership or LLP simply cannot do a share sale, so for the great majority of law firms the live question is how to structure a clean asset sale, not asset versus share at all. Only an incorporated firm genuinely has both routes open, and even then buyer appetite often pushes toward an asset deal.</p>
 
-<p>Buyers almost always prefer asset sales. The clean break from historic liabilities is a strong incentive. In a competitive sale process, a seller offering an asset sale may achieve a higher price than one insisting on a share sale.</p>
+<h3>Seller Tax Position</h3>
 
-<p>If the seller insists on a share sale, the buyer will typically reduce the purchase price to reflect the risk. The buyer may also require a retention or earn-out structure, where part of the price is paid later subject to the firm's performance or the absence of claims.</p>
+<p>For a partnership or LLP asset sale, you pay CGT on goodwill and fixed assets (with BADR where it applies) and income tax plus Class 4 NIC on WIP and debtors. For an incorporated firm, a share sale gives a single CGT charge on the whole gain, which can be simpler and, for a firm with significant WIP, lighter overall. But the buyer may pay less for a share deal to reflect the inherited risk, so a tax saving on paper can be offset by a lower headline price.</p>
 
-<p>For a law firm buyer, the SRA's regulatory oversight adds another layer. The buyer must demonstrate that the firm's COLP and COFA arrangements remain compliant after the sale. If the seller's COFA has been lax, the buyer may inherit compliance issues. Our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can help buyers assess and address these risks.</p>
+<p>In every case the £1 million BADR limit is per individual. In a multi-partner firm the partners should plan how the relief is used across the group. If each partner's qualifying gain sits within their own £1 million limit, the whole gain can attract the BADR rate; gains above the limit, or gains that do not qualify, fall back to the standard 18% or 24%.</p>
+
+<h3>Buyer Appetite and Negotiating Power</h3>
+
+<p>Buyers generally favour asset sales for the clean break from historic liabilities, and in a competitive process a seller who can offer an asset deal may secure a stronger price than one insisting on a share sale. Where a share sale is the seller's preference, expect the buyer to seek a price adjustment, robust warranties, and a deferred or earn-out element tied to performance or the absence of claims.</p>
+
+<p>For a law firm there is an extra dimension: the buyer will want comfort that the firm's compliance, including its COLP and COFA arrangements, holds up after completion. Weak finance compliance discovered in diligence can dent both price and certainty. Our <a href="/services/cofa-compliance-support">COFA compliance support</a> can help either side assess and tidy this before a deal.</p>
 
 <h3>SRA and Regulatory Implications</h3>
 
-<p>The SRA's rules on change of ownership apply differently depending on the structure. In an asset sale, the buyer must apply for a new SRA authorisation or notify the SRA of a material change if the buyer already holds a licence. The seller's firm is wound down and its SRA authorisation is cancelled.</p>
+<p>The regulatory path differs by structure. In an asset sale the buyer relies on its own SRA authorisation (or applies for one or notifies a material change), and the seller's entity is wound down and its authorisation cancelled. In a share sale of a recognised body or ABS, the SRA must be notified of the change of control and will run its fit-and-proper assessment of the new owners. For a partnership or LLP, a partner simply retiring and being bought out is a change in membership rather than a sale of the firm, and the firm continues; that is usually framed as a retirement, with its own tax treatment. Our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership versus LLP guide</a> covers the membership mechanics.</p>
 
-<p>In a share sale of an ABS, the buyer must notify the SRA of the change in control. The SRA will assess whether the new owners are fit and proper. This can delay the transaction and add costs for legal and compliance advice.</p>
+<h2>When to Incorporate First</h2>
 
-<p>For partnerships and LLPs, a change in membership (such as a partner retiring and a new partner joining) is not a sale of the entity itself. The firm continues, but the departing partner's share is bought out. This is often structured as a retirement or resignation rather than a sale, with different tax consequences. See our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP guide</a> for more detail.</p>
+<p>If you run a partnership or LLP and want the option of a future share sale, or you simply expect a share sale to suit a planned buyer, the practice has to be incorporated first. That is a deliberate step with its own tax consequences, not an afterthought at sale.</p>
 
-<h2>Practical Example: A Two-Partner Law Firm Sale</h2>
+<p>The usual relief is <strong>incorporation relief under TCGA 1992 section 162</strong>. Where the whole business is transferred as a going concern to a company wholly or partly in exchange for shares, the gain on the transferred assets (including goodwill) can be deferred and rolled into the base cost of the new shares, rather than crystallising on incorporation. Taking cash out instead of shares restricts the relief in proportion. Incorporating this way can set up a later share sale that accesses BADR on the shares.</p>
 
-<p>Consider a two-partner law firm structured as a partnership. The firm has goodwill valued at £800,000, WIP of £150,000, and fixed assets worth £50,000. The partners each own 50%.</p>
+<p>Two cautions. First, on a self-incorporation the company generally gets no goodwill relief, because the goodwill comes from a related party (covered above), so do not double-count a buyer-side deduction that will not exist. Second, incorporation must satisfy SRA authorisation: a company or ABS needs the right recognised-body or licensed-body status, so the regulatory route has to be planned alongside the tax. Our guides on <a href="/blog/structure-incorporation/llp-conversion-tax-guide-uk-law-firms">converting an LLP to a company</a> and <a href="/blog/structure-incorporation/should-a-law-firm-incorporate-2026-dividend-rise">whether to incorporate ahead of the 2026 dividend changes</a> go deeper.</p>
 
-<p>In an asset sale, each partner's share of the goodwill is £400,000. Assuming BADR applies, the CGT at 14% is £56,000 per partner. The WIP of £75,000 per partner is taxed as income at 40%, giving a tax bill of £30,000 per partner. Total tax per partner: £86,000. Total tax for both: £172,000.</p>
+<h2>Worked Comparison: A Two-Partner Firm</h2>
 
-<p>If the same firm were incorporated and sold via a share sale, the total consideration might be £1 million (goodwill £800,000, WIP £150,000, fixed assets £50,000). Each partner's share is £500,000. With BADR, the CGT is £70,000 per partner. Total tax for both: £140,000. The share sale saves £32,000 in tax, but the buyer may offer a lower price due to inherited risks.</p>
+<p>The figures below are an illustration only, not advice on any particular firm. Take a two-partner practice carried on as a partnership, with goodwill valued at £800,000, WIP of £150,000 and fixed assets of £50,000, owned equally.</p>
 
-<p>This example shows why the structure matters. The seller must weigh the tax saving against the buyer's willingness to pay. A good accountant will model both scenarios before you enter negotiations.</p>
+<p><strong>As an asset sale.</strong> Each partner's share of goodwill is £400,000. Assuming BADR applies at the 14% rate (a disposal in 2025/26), the CGT on goodwill is around £56,000 per partner. Each partner's £75,000 share of WIP is taxed as income; at a 40% marginal rate that is around £30,000 per partner. That points to roughly £86,000 of tax per partner on these elements, before reliefs and the annual exempt amount are applied.</p>
+
+<p><strong>As a share sale, if the firm were incorporated.</strong> Suppose the same business were sold for £1 million of shares. Each partner's gain is broadly £500,000, all taxed as capital. With BADR at 14% that is around £70,000 per partner, with no separate income charge on WIP. On these illustrative numbers the share route looks lighter on tax, but the buyer may discount the price for the risks they inherit, which can erase the apparent saving.</p>
+
+<p>The point of the example is not the precise numbers, which depend on base cost, the date of disposal (the 6 April 2026 step to 18% BADR), each partner's BADR history and the income split. The point is that the right structure is the one you model before negotiations, not after.</p>
 
 <h2>Other Considerations for Solicitors</h2>
 
 <h3>Professional Indemnity Insurance</h3>
 
-<p>In an asset sale, the seller remains liable for PII claims arising from work done before the sale. The seller must maintain run-off cover for at least six years after ceasing practice. The buyer's PII policy covers work done after the sale. In a share sale, the company's PII policy continues, and the buyer inherits the run-off risk. This can affect the buyer's premium. See our <a href="/solicitor-guides/professional-indemnity-tax-treatment">PII tax treatment guide</a> for more.</p>
+<p>In an asset sale the seller stays liable for claims arising from pre-completion work and must carry run-off cover for at least six years after ceasing practice; the buyer's policy covers post-completion work. In a share sale the company's policy continues and the buyer inherits the run-off exposure, which can affect their premium and is a diligence focus. Our <a href="/solicitor-guides/professional-indemnity-tax-treatment">PII tax treatment guide</a> has more.</p>
 
 <h3>Client Consent and Confidentiality</h3>
 
-<p>Under the SRA Accounts Rules and the SRA Code of Conduct, client files cannot be transferred without client consent. In an asset sale, the buyer must contact each client and obtain their agreement to continue the matter. This can be time-consuming and may result in some clients choosing another firm. In a share sale, the firm continues, so client consent is not required for the sale itself, though ongoing matters still require client instructions.</p>
+<p>Under the SRA Code of Conduct and the Accounts Rules, client files and client-account balances cannot simply be transferred without client consent. In an asset sale the buyer has to contact each client to agree to take over the matter, which takes time and can lose some clients. In a share sale the firm continues unchanged, so the sale itself does not require client consent, although ongoing matters still need client instructions.</p>
 
-<h3>VAT Implications</h3>
+<h3>VAT: TOGC on an Asset Sale, Out of Scope on a Share Sale</h3>
 
-<p>An asset sale of a law firm as a going concern may qualify as a Transfer of a Going Concern (TOGC) for VAT purposes. If the conditions are met, no VAT is charged on the sale. The buyer must be VAT-registered and intend to carry on the same type of business. A share sale is outside the scope of VAT. Both structures need careful VAT advice to avoid unexpected charges.</p>
+<p>A sale of the firm's business and assets as a going concern can qualify as a <strong>Transfer of a Going Concern (TOGC)</strong>, in which case it is treated as neither a supply of goods nor services and no VAT is charged, provided the conditions are met: broadly, the buyer is or becomes VAT registered, intends to carry on the same kind of business, and there is no significant break in trading. Get the conditions wrong and VAT can land on the goodwill. A <strong>share sale is outside the scope of VAT</strong>, because shares, not the business, are changing hands. Either way, confirm the VAT position before completion.</p>
 
-<h2>Which Structure Should You Choose?</h2>
+<h2>Which Route Should You Choose?</h2>
 
-<p>There is no single right answer. The best structure depends on:</p>
+<p>There is no single answer, but the order of questions is reliable:</p>
 <ul>
-<li>Whether the firm is a partnership, LLP, or limited company</li>
-<li>The size and nature of the firm's assets and liabilities</li>
-<li>The buyer's preference and negotiating position</li>
-<li>The seller's CGT position and available reliefs</li>
-<li>The SRA's regulatory requirements</li>
+<li>What are you now? A partnership or LLP can only do an asset sale; a company or ABS can do either.</li>
+<li>If you are unincorporated but want a share sale later, do you incorporate first (section 162), and does the SRA route work?</li>
+<li>How is the consideration split between capital (goodwill, fixed assets) and income (WIP, debtors)?</li>
+<li>Where does each partner sit on BADR (the £1 million limit, the two-year and ownership conditions, and the date band on the disposal)?</li>
+<li>What will the buyer actually accept, and how does the regulatory change-of-control process affect timing?</li>
 </ul>
 
-<p>For most partnership and LLP firms, an asset sale is the only viable option. For incorporated firms, a share sale may be possible but is often less attractive to buyers. The seller should enter negotiations with a clear understanding of the tax and regulatory consequences of each structure.</p>
+<p>For most partnership and LLP firms, a well-structured asset sale is the route, and the work is in the agreement and the tax split. For incorporated firms, a share sale is available but often needs a price or risk adjustment to land. Our <a href="/blog/practice-succession-sale/solicitor-practice-sale-guide">solicitor practice sale guide</a> walks through the full process.</p>
 
-<p>If you are considering selling your law firm, speak to a legal-sector-specialist accountant. They can model the tax outcomes, advise on BADR eligibility, and help you negotiate the best structure for your circumstances. Contact us through our <a href="/contact">contact page</a> or book a <a href="/free-firm-health-check">free firm health check</a> to start the conversation.</p>
+<p>If you are weighing a sale or succession, speak to a legal-sector accountant who can model both structures, test BADR eligibility and the timing of disposal, and get the capital and income split right before you negotiate. Contact us through our <a href="/contact">contact page</a> or book a <a href="/free-firm-health-check">free firm health check</a> to start.</p>

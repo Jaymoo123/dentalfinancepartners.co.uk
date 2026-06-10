@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -34,43 +35,11 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mb-10 pb-10 border-b border-slate-100/20 mt-12">
-          <h2 className="text-lg font-semibold text-white mb-4">Our Specialist Accounting Services</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <a
-              href="https://www.accountsforlawyers.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
-            >
-              <h3 className="font-semibold text-white">Accounts for Lawyers</h3>
-              <p className="mt-1 text-sm text-white/70">Specialist accounting for solicitors & law firms</p>
-            </a>
-            <a
-              href="https://www.dentalfinancepartners.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
-            >
-              <h3 className="font-semibold text-white">Dental Finance Partners</h3>
-              <p className="mt-1 text-sm text-white/70">Specialist accounting for dental practices</p>
-            </a>
-            <a
-              href="https://www.medicalaccountantsuk.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
-            >
-              <h3 className="font-semibold text-white">Medical Accountants UK</h3>
-              <p className="mt-1 text-sm text-white/70">Specialist accounting for medical professionals</p>
-            </a>
-          </div>
-        </div>
-        
-        <div className="mt-10 pt-6 border-t border-slate-700">
+        <div className="mt-10 pt-6 border-t border-slate-700 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs leading-relaxed text-slate-400">
             © {year} {siteConfig.legalName}. Registered in England and Wales.
           </p>
+          <ConsentToggle className="text-xs text-slate-400 underline hover:text-emerald-400 hover:no-underline" />
         </div>
       </div>
     </footer>

@@ -18,6 +18,10 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      // Root-level diagnostic/utility scripts (CJS require, not app code).
+      // Read-only exception #1 (deliberate): CI-enabling, non-behavioural,
+      // scopes out non-app scripts. Approved 2026-06-10.
+      "*.js",
     ],
   },
 ];

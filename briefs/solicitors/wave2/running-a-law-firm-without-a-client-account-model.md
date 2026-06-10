@@ -1,0 +1,94 @@
+# Page brief: running-a-law-firm-without-a-client-account-model
+
+> You are an Opus 4.8 sub-agent writing ONE net-new blog post for "Accounts for Lawyers" (www.accountsforlawyers.co.uk), a lead-gen site for UK law-firm accountancy. Every SRA rule number and threshold below is pre-verified at PRIMARY SOURCE (sra.org.uk Accounts Rules + SRA guidance) on 2026-06-03 and locked in `docs/solicitors/house_positions.md` §5 and §6. The two most important correctness points: (1) the accountant's-report TRIGGER is **Rule 12.1** ("if you have... held or received client money") so a firm that holds NO client money in the period does not need a report; the SEPARATE small-balance exemption is **Rule 12.2** (average not exceeding £10,000 AND maximum not exceeding £250,000), do NOT conflate the two; (2) the average is £10,000 and the maximum is £250,000 (do NOT write "average £250" or any £250 figure, that error exists in the legacy corpus). This is the STRATEGIC no-client-account decision page; the "what a TPMA is + Rule 11" mechanics live in the SIBLING D1 page, route there. No em-dashes (commas, parentheses, full stops, middle dots only). No pricing, no client names, anonymised social proof only. England and Wales / SRA scope only. Date-tag every figure.
+
+## Page identity
+
+- **Slug**: `running-a-law-firm-without-a-client-account-model`
+- **Category**: SRA Compliance & Trust Accounting
+- **Canonical**: `https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/running-a-law-firm-without-a-client-account-model`
+- **Content file**: `Solicitors/web/content/blog/running-a-law-firm-without-a-client-account-model.md`
+- **Cluster**: Wave 2, Cluster D (TPMA, mixed money & SRA account mechanics)
+
+## Target query / intent
+
+- Primary: "law firm without a client account" / "running a law firm with no client money" / "do I need a client account solicitors" / "no client account model law firm"
+- Secondary: "avoid accountant's report no client money", "client-account-free law firm", "TPMA instead of client account", "Rule 12 no client money report", "stop holding client money", "Compensation Fund contribution no client account"
+- Intent: a firm owner, managing partner or new-firm founder making the STRATEGIC decision whether to operate client-account-free (using a TPMA and/or paying third parties directly), who wants the full case: how you avoid holding client money, the accountant's-report consequence (Rule 12.1 trigger / Rule 12.2 exemption), the VAT and disbursement implications of paying things directly, who it suits and who it does not. This is the decision page; the TPMA product mechanics and Rule 11 conditions are the D1 sibling, route there.
+
+## The honest thesis (lead and hold)
+
+A growing number of firms, especially new and lower-volume practices, choose NOT to operate a client account at all. They route transactional money through a TPMA (Rule 11, see the D1 sibling) and pay third parties (counsel, court fees, search providers, SDLT) directly or via the client, so the firm never holds or receives client money. The big regulatory prize is that if you hold no client money in an accounting period, the **Rule 12.1** trigger for an accountant's report is not met, so no report is required (and the firm avoids the Compensation Fund contribution tied to holding client money). That is distinct from the **Rule 12.2** small-balance exemption (average not exceeding £10,000 AND maximum not exceeding £250,000), which is for firms that DO hold a little client money. The page must lay out the model honestly: how you actually avoid holding client money, the report and cost consequences, the VAT/disbursement mechanics of paying things directly (the eight conditions still decide disbursement treatment), and a clear-eyed "who it suits / who it does not". The reader should leave able to decide, then come to us. Strategic, decision-grade, not a TPMA product explainer (that is D1).
+
+## H2 outline (aim 9-12 sections, ~3,000-3,500 words)
+
+1. **The client-account-free model: what it means** · plain framing: a firm that does not hold or receive client money, achieved by (a) routing transactional funds through a TPMA (Rule 11) and (b) paying third parties directly or having the client pay them. Contrast with the traditional client-account firm. Signpost the D1 TPMA page for the product mechanics; this page is the decision.
+2. **How you actually avoid holding client money** · the two levers in detail. (i) TPMA: the FCA-authorised provider holds the money in escrow, so it is not client money under Rule 2.1 (cross-link D1). (ii) Direct payment: the firm bills and is paid only its own (office) money, while disbursements are paid by the client directly or arranged so the firm is a pure conduit. The aim is that nothing meets the Rule 2.1 "held or received by you" gateway.
+3. **The headline prize: no accountant's report (Rule 12.1)** · the core payoff, stated precisely. Rule 12.1 requires a report only if you "have, at any time during an accounting period, held or received client money" (or operated a joint account / a client's own account as signatory). A firm that genuinely holds NO client money in the period does not meet the trigger, so no report is required. Quote Rule 12.1 verbatim. Be precise that this is the TRIGGER not being met, a different thing from the Rule 12.2 exemption.
+4. **Do not confuse it with the Rule 12.2 small-balance exemption** · the correctness section the legacy corpus gets wrong. Rule 12.2 exempts a firm that DOES hold client money but only in small balances: the statement/passbook balance does not exceed an **average of £10,000 AND a maximum of £250,000** (or the equivalent in foreign currency). Quote Rule 12.2 verbatim. State emphatically: average £10,000, maximum £250,000 (NOT "average £250"). So there are two distinct ways to avoid a report: hold no client money at all (Rule 12.1 trigger not met, the no-client-account model), OR hold only small balances within the Rule 12.2 limits. Cross-link the existing report-threshold pages.
+5. **The Compensation Fund and cost angle** · holding client money carries a Compensation Fund contribution and the cost/effort of the annual accountant's report and the client-account compliance machinery (reconciliations, residual balances, the Rule 3.3 risk). A no-client-money firm sheds much of this. Frame as a genuine but not unlimited saving (the TPMA provider charges transaction fees, so model it). Keep figures generic (no pricing).
+6. **The VAT and disbursement implications of paying things directly** · the tax payload, the part competitors miss. If the firm no longer pays disbursements through a client account, the VAT treatment of those third-party costs still turns on the **eight conditions** (VAT Notice 700 section 25.1.1, §6): a payment is a true disbursement (outside VAT) only if the firm acted as the client's agent, the client received/used and was responsible for the supply, it is separately itemised, recovered at the exact amount, and clearly additional to the firm's own supply. Paying directly or via the client can make the conduit position cleaner, but the Brabners principle still applies (a search fee the firm USES in its advice is part of the firm's taxable supply, §6.A). Court fees, Land Registry registration fees and SDLT/LBTT/LTT remain the clean disbursements. Cross-link the disbursements/VAT pages.
+7. **Where the firm still has obligations** · honesty section. The firm still owes Code of Conduct duties to safeguard client assets; if it EVER holds client money in a period (even briefly, even once), the Rule 12.1 trigger is met for that period and a report is needed on that money; a TPMA still carries the Rule 11 conditions (cross-link D1). The model is "hold no client money", not "ignore the rules".
+8. **Who the no-client-account model suits** · new firms avoiding client-account set-up and the report cost from day one; lower-volume or specialist practices (advisory, advocacy, some litigation) that rarely need to hold funds; firms wanting to de-risk and cut compliance overhead. Anonymised social-proof framing allowed (no client names).
+9. **Who it does not suit (and the friction points)** · firms holding long-term funds (some probate, trust, deputyship and estate money is awkward to route through a TPMA, cross-link the probate/attorney siblings); high-volume conveyancing where TPMA transaction fees mount; firms whose clients or lenders expect a traditional client account; situations where holding money briefly is unavoidable (which re-triggers Rule 12.1). Give a balanced verdict.
+10. **Making the decision and the transition** · a short decision framework (matter mix, volume, fund-holding need, cost model, client/lender expectations) and the practical transition steps (select an FCA-authorised TPMA provider, restructure billing and disbursement flows, notify the SRA, document that no client money is held). Inline CTA to lead form (segment: firm deciding whether to go client-account-free / new-firm structuring / accountant's-report cost review).
+11. **FAQ** (frontmatter, 10-14 Qs).
+
+## VERIFIED ANCHOR BLOCK (quote/paraphrase only from this; verified at primary source 2026-06-03)
+
+- **Accountant's-report TRIGGER: SRA Accounts Rules 2019, Rule 12.1** (https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/). Verbatim: *"If you have, at any time during an accounting period, held or received client money, or operated a joint account or a client's own account as signatory, you must: (a) obtain an accountant's report for that accounting period within six months of the end of the period..."* KEY: a firm that holds NO client money in the period does not meet this trigger, so no report is required.
+- **Small-balance EXEMPTION (distinct from the trigger): Rule 12.2** verbatim: *"You are not required to obtain an accountant's report if... in the accounting period, the statement or passbook balance of client money you have held or received does not exceed: (i) an average of £10,000; and (ii) a maximum of £250,000, or the equivalent in foreign currency."* CONFIRMED: average **£10,000** AND maximum **£250,000**. Do NOT write "average £250" or any £250 figure (a known legacy-corpus error). NOTE: Rule 12.2 also has a Legal Aid Agency limb (where all client money is from the LAA), mention only briefly.
+- **Client money definition (the gateway you must NOT meet): Rule 2.1**, four limbs, all conditional on the money being "held or received by you" (§5). The no-client-account model is built on never satisfying "held or received".
+- **TPMA route: Rule 11** ("Third party managed accounts") + the SRA Glossary FCA-authorised-payment-institution / escrow definition (§5, full detail on the D1 sibling). SRA guidance: *"Money held in a TPMA does not fall under the definition of client money in the SRA Accounts Rules... as it is not held or received by you."*
+- **VAT disbursement test: the eight conditions, VAT Notice 700 section 25.1.1 / HMRC VTAXPER39000** (§6): agent of the client; client received/used the supply; client responsible for paying the third party; client authorised the payment; client knew a third party would supply; separately itemised; recover only the exact amount; clearly additional to the firm's own supply. Clean disbursements: court/tribunal fees, Land Registry registration fees, SDLT/LBTT/LTT paid for the client. (§6).
+- **Brabners principle: *Brabners LLP v HMRC* [2017] UKFTT 0666 (TC)** (§6.A): a search fee the firm USES/interprets in its own advice is part of the firm's standard-rated supply, not a disbursement. Still applies even if the firm pays it directly.
+- **Banking-facility prohibition: Rule 3.3** (§5) - a risk the no-client-account model removes entirely.
+
+## Worked-example sketches (illustrative only; label as not advice; no real figures presented as a quote)
+
+1. **The new firm that never opens a client account.** A start-up practice routes transactional money through an FCA-authorised TPMA from day one and pays court fees and SDLT for clients as a clean conduit. It holds no client money, so the Rule 12.1 report trigger is never met, and it avoids the report cost and the Compensation Fund contribution tied to holding client money. Caption: "no client money held means no Rule 12.1 trigger, model the TPMA fees against the report and compliance saving."
+2. **The Rule 12.1 vs Rule 12.2 distinction.** Firm A holds zero client money all year (no report, Rule 12.1 not triggered). Firm B holds small client balances averaging well under £10,000 and never above £250,000 (report exempt under Rule 12.2). Show that both avoid a report but by different mechanisms, and that Firm B is still bound by the full client-account rules on the money it holds. Caption: "two routes to no report: hold none (12.1), or hold a little within the limits (12.2, average £10,000 / max £250,000)."
+3. **The disbursement-VAT check when paying directly.** A client-account-free firm pays a property search fee and uses the result in its report to the client. Despite paying it directly, Brabners means it is part of the firm's taxable supply (VAT applies), while the Land Registry registration fee paid as a pure conduit is a clean disbursement. Caption: "no client account does not change the eight-conditions / Brabners test, the use of the cost still decides the VAT."
+
+## FAQ seeds (write 10-14, answers 40-90 words)
+
+1. Can a law firm operate without a client account?
+2. Do I need an accountant's report if I hold no client money? (answer: no, the Rule 12.1 trigger is not met)
+3. What is the difference between not holding client money and the Rule 12.2 exemption?
+4. What are the Rule 12.2 exemption limits? (answer: average not exceeding £10,000 AND maximum not exceeding £250,000)
+5. How do I avoid holding client money? (TPMA + direct payment of third parties)
+6. Do I save the Compensation Fund contribution if I do not hold client money?
+7. Does going client-account-free change the VAT treatment of disbursements? (answer: no, the eight conditions and Brabners still decide it)
+8. What happens if I hold client money just once in the year? (answer: the Rule 12.1 trigger is met for that period, a report is needed)
+9. Is the no-client-account model suitable for conveyancing?
+10. Is it suitable for probate, trust or deputyship work? (route to the probate/attorney siblings)
+11. How does a TPMA fit into the no-client-account model? (route to the D1 TPMA page)
+12. Do I still have duties to safeguard client money if I do not hold it?
+13. How do I tell the SRA I do not hold client money?
+14. Will going client-account-free actually save my firm money?
+
+## Suggested internal links (slugs)
+
+Sibling new (Cluster D): `third-party-managed-accounts-tpma-for-law-firms` (the TPMA product + Rule 11, the KEY pairing: D1 = what + the rule, this = the decision), `mixed-money-receipts-splitting-office-and-client`, `dormant-and-suspense-client-ledger-balances-management` (problems the model avoids).
+Sibling new (Cluster A): `residual-client-balances-clearing-unclaimed-money-sra`, `probate-estate-administration-client-account-sra`, `attorney-and-deputyship-receipts-accounting-solicitors` (the fund-holding matter types that resist the model).
+Existing SRA report pages: `when-is-an-sra-accountants-report-required`, `sra-accountants-report-exemption-thresholds`, `how-to-prepare-for-sra-accountants-report`, `sra-accounts-rules-explained-for-uk-solicitors`.
+Existing VAT/disbursement pages: `disbursements-vat-treatment-uk-law-firms`, `conveyancing-vat-rules-uk-2025-26`, `vat-on-legal-services`.
+Existing client-money: `what-counts-as-client-money-uk-solicitors`, `office-account-vs-client-account-differences`, `common-sra-accounts-rules-breaches-and-how-to-fix`.
+
+## External authority links to favour
+
+- SRA Accounts Rules 2019 (Rule 12): https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/
+- SRA guidance "Do I need to operate a client account?": https://www.sra.org.uk/solicitors/guidance/operate-client-account/
+- SRA guidance "Third-party managed accounts": https://www.sra.org.uk/solicitors/guidance/third-party-managed-accounts/
+- HMRC VAT Notice 700 section 25 (disbursements): https://www.gov.uk/guidance/vat-guide-notice-700
+
+## How this DIFFERENTIATES from the nearest existing page and from D1
+
+From existing pages: no current solicitors page treats the strategic decision to operate client-account-free, nor distinguishes the Rule 12.1 trigger from the Rule 12.2 exemption (the legacy report-threshold pages cover only 12.2 and some carry the wrong £250 figure, flagged for rewrite). From the D1 sibling: D1 (`third-party-managed-accounts-tpma-for-law-firms`) explains WHAT a TPMA is and the Rule 11 conditions (the product and the rule). THIS page is the firm-level STRATEGIC decision to hold no client money at all, its accountant's-report consequence (Rule 12.1 not triggered), the Compensation Fund and VAT/disbursement implications, and the who-it-suits analysis. D1 = the tool; D4 = the decision and its report/cost/VAT consequences. They cross-link tightly but do not overlap.
+
+## Competitor-evidence notes (verified live 2026-06-03)
+
+- Shieldpay, "Why UK Law Firms No Longer Need to Hold Client Money," https://www.shieldpay.com/blog/why-uk-law-firms-no-longer-need-to-hold-client-money, and "Starting a new law firm? Take running a client account off the to-do list," https://www.legalfutures.co.uk/associate-news/starting-a-new-law-firm-take-running-a-client-account-off-the-to-do-list · live, HTTP 200 · vendor-led; makes the no-report / no-Compensation-Fund saving case and confirms TPMA money is not client money, but does not cleanly separate the Rule 12.1 trigger from the Rule 12.2 exemption or treat the VAT/disbursement consequence. Our edge: precise on Rule 12.1 vs 12.2 (with the correct £10,000 / £250,000 figures) AND the eight-conditions/Brabners VAT angle, neutral and decision-grade.
+- Legal Futures, "Cost of regulation would 'drop like a stone' with no client account," https://www.legalfutures.co.uk/latest-news/cost-of-regulation-would-drop-like-a-stone-with-no-client-account · live · independent corroboration of the cost-saving thesis and live SRA-level debate about the future of client accounts (a strong topicality hook).
+- SRA, "Do I need to operate a client account?," https://www.sra.org.uk/solicitors/guidance/operate-client-account/ · primary-source guidance, the authority we cite for the decision framing.
+- Teal Compliance, "The Future of Client Accounts | Should Law Firms Move to TPMAs?," https://tealcompliance.com/future-of-client-accounts-should-law-firms-move-to-tpmas/ · live · decision-focused compliance-consultancy piece, closest competitor to this page's angle; our statute-cited Rule 12.1/12.2 precision and the VAT layer differentiate.

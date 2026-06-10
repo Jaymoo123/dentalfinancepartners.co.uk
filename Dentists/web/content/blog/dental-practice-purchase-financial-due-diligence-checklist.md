@@ -3,14 +3,27 @@ title: "How Do You Run Financial Due Diligence on a Dental Practice Purchase?"
 slug: "dental-practice-purchase-financial-due-diligence-checklist"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-purchase-financial-due-diligence-checklist"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "Dental Practice Purchase: Financial Due Diligence Checklist"
 metaDescription: "Step-by-step guide to financial due diligence on a dental practice purchase. Covers seller accounts, goodwill, UDA analysis, VAT, and pension risks. UK dentist focused."
 altText: "Dental practice purchase financial due diligence checklist documents on desk"
-image: ""
+image: "https://images.pexels.com/photos/6863330/pexels-photo-6863330.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Nataliya Vaitkevich"
+  photographerUrl: "https://www.pexels.com/@n-voitkevich"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-filing-tax-documents-6863330/"
 h1: "How Do You Run Financial Due Diligence on a Dental Practice Purchase?"
 summary: "A practical guide to financial due diligence for UK dentists buying a practice. Covers what to check in the seller’s accounts, how to verify UDA values and goodwill, and where hidden liabilities often sit. Written for practice buyers, not general business owners."
+keyTakeaways:
+  - "Review at least three full years of accounts plus current-year management accounts, and verify UDA values directly with NHS England rather than relying on the seller's word."
+  - "Associate fee splits typically run 40 to 55 percent of gross fees, and self-employment status turns on HMRC's tests, not a BDA model agreement."
+  - "Goodwill is usually 60 to 80 percent of the price, with company amortisation relief at 6.5 percent only for qualifying goodwill acquired after 1 April 2019."
+  - "The VAT registration threshold is 90,000 pounds (raised from 85,000 on 1 April 2024), and cosmetic treatment without a medical purpose can be standard-rated."
+  - "Buying a practice with existing fixtures needs a CAA 2001 s.198 election to agree their value, or allowances on them may be lost; AIA is 1,000,000 pounds."
 schema: ""
 faqs:
   - question: "What is the most common mistake dentists make during due diligence on a practice purchase?"
@@ -29,7 +42,7 @@ faqs:
 
 <p>For a UK dental practice purchase, due diligence covers the seller's accounts, tax returns, NHS contract performance, associate agreements, equipment ownership, property lease terms, and pension liabilities. Missing a single item can cost you tens of thousands of pounds after completion.</p>
 
-<p>This guide sets out a practical checklist for financial due diligence on a dental practice. It is written for practice buyers, not generalist business owners. Every section uses UK dental facts and figures for the 2025/26 tax year.</p>
+<p>This guide sets out a practical checklist for financial due diligence on a dental practice. It is written for practice buyers, not generalist business owners. Every section uses UK dental facts and figures for the 2026/27 tax year.</p>
 
 <h2>Why Dental Practice Due Diligence Differs from a Standard Business Purchase</h2>
 
@@ -51,7 +64,7 @@ faqs:
 <p>Associate fee splits typically range from 40% to 55% of gross fees. Check that the seller's accounts reflect the actual split paid, not a standard assumption. If associates are treated as self-employed, verify that the working arrangements match self-employment status under HMRC's tests: control, substitution, mutuality of obligation, financial risk, and integration. A BDA model associate agreement does not guarantee self-employment status. HMRC and tribunals look at the facts, not the paperwork.</p>
 
 <h3>Staff Costs</h3>
-<p>Review payroll records for all employed staff. Check that employer NI (15% on earnings above £5,000 per year in 2025/26) and pension contributions are correctly accounted for. Spouse employment is a common area where HMRC challenges deductions. The spouse must be paid a genuine market rate for genuine work.</p>
+<p>Review payroll records for all employed staff. Check that employer NI (15% on earnings above £5,000 per year in 2026/27) and pension contributions are correctly accounted for. Spouse employment is a common area where HMRC challenges deductions. The spouse must be paid a genuine market rate for genuine work.</p>
 
 <h3>Other Overheads</h3>
 <p>Look for large or unusual expenses: lab fees, materials, rent, rates, insurance, CPD costs, and professional subscriptions. Compare these to industry benchmarks. A practice with lab fees significantly above the norm may have a high proportion of laboratory-intensive private work, which affects both profitability and VAT treatment.</p>
@@ -105,7 +118,7 @@ faqs:
 <p>If the practice is VAT-registered and makes both exempt (dental treatment) and standard-rated (some cosmetic) supplies, it falls into partial exemption. This limits the amount of input VAT the practice can reclaim. Review the seller's partial exemption method and check whether HMRC has raised any queries.</p>
 
 <h3>Corporation Tax and Dividend Planning</h3>
-<p>If you buy the practice through a limited company, corporation tax rates apply: 19% for profits up to £50,000, 25% for profits above £250,000, with marginal relief in between. Dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate), with a £500 dividend allowance for 2025/26. Your profit extraction strategy should be modelled before you complete the purchase.</p>
+<p>If you buy the practice through a limited company, corporation tax rates apply: 19% for profits up to £50,000, 25% for profits above £250,000, with marginal relief in between. Dividend tax rates are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate), with a £500 dividend allowance for 2026/27. Your profit extraction strategy should be modelled before you complete the purchase.</p>
 
 <h2>6. Hidden Liabilities and Post-Completion Risks</h2>
 
@@ -143,6 +156,6 @@ faqs:
 
 <p>For a downloadable version of this checklist, see our <a href="/dental-guides/practice-purchase-financial-due-diligence">Practice Purchase Financial Due Diligence Guide</a>. You can also use our <a href="/calculators/practice-valuation-calculator">Practice Valuation Calculator</a> to test different assumptions about UDA values, goodwill multiples, and EBITDA adjustments.</p>
 
-<p>Every practice is different. The figures and rules in this article are general guidance for the 2025/26 tax year. Your specific situation may require different treatment. Speak to a dental-specialist accountant before committing to any purchase.</p>
+<p>Every practice is different. The figures and rules in this article are general guidance for the 2026/27 tax year. Your specific situation may require different treatment. Speak to a dental-specialist accountant before committing to any purchase.</p>
 
 <p>Our team at <a href="/services/dental-accountants">Dental Finance Partners</a> works exclusively with UK dentists. We can review the seller's accounts, model the tax implications of different purchase structures, and help you negotiate from a position of knowledge. <a href="/contact">Contact us</a> for an initial discussion.</p>

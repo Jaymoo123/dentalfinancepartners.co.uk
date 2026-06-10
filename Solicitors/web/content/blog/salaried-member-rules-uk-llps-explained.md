@@ -11,6 +11,12 @@ altText: "UK law firm LLP partner reviewing salaried member rules documentation 
 image: ""
 h1: "How Do the Salaried Member Rules (FA 2014) Affect UK Law Firm LLP Partners?"
 summary: "The FA 2014 salaried member rules can reclassify an LLP partner as an employee for tax purposes if all three conditions (disguised salary, limited influence, insufficient capital) are met. This guide explains each condition, the risks for law firms, and how to structure profit-sharing to avoid unintended PAYE liabilities."
+keyTakeaways:
+  - "An LLP member is treated as an employee for tax only if all three conditions (A, B and C) are met, so failing any one preserves self-employed status."
+  - "Condition A is met if at least 80% of the member's total reward is disguised salary that does not vary with the LLP's profits."
+  - "Condition C is met if the member's capital contribution is less than 25% of their disguised salary, and it only applies where Condition A is also met."
+  - "If the rules apply, the firm must operate PAYE plus employer NIC at 15% (2025/26) on earnings above £5,000, with interest and penalties of up to 30% for past years."
+  - "Each member's status should be reviewed at the start of each tax year and whenever profit share, capital, or voting rights change."
 schema: ""
 faqs:
   - question: "Can a salaried partner in a law firm LLP ever be genuinely self-employed for tax purposes?"

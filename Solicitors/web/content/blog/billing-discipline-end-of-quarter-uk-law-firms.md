@@ -11,7 +11,12 @@ altText: "UK law firm partner reviewing billing reports and WIP schedule at desk
 image: ""
 h1: "How Can a Law Firm Improve Billing Discipline Before Quarter End?"
 summary: "A practical guide for UK law firms on tightening billing discipline before quarter end, covering WIP conversion, cash collection strategies, and partner accountability. Includes real examples for equity partners, COFAs, and fee-earners."
-schema: ""
+keyTakeaways:
+  - "Billing discipline is about converting recorded value into cash, not just sending invoices faster; unbilled WIP makes partnership profit theoretical rather than real."
+  - "Record time within 24 hours and run a 15-minute weekly WIP review with the partner, fee-earner and accounts team to catch matters ready to bill."
+  - "Separate billing from collection: the fee-earner raises the bill, the accounts team chases it, with clear escalation triggers from day 0 to day 60."
+  - "A reasonable starting target is 80% of WIP billed within 30 days and 90% of billed amounts collected within 60 days."
+  - "Poor billing can breach the SRA Accounts Rules, for example holding client money too long or using it to fund cash flow (Rule 4.3)."
 faqs:
   - question: "How often should a law firm review its WIP for billing purposes?"
     answer: "A law firm should review its WIP at least weekly. A 15-minute weekly review meeting involving the supervising partner, fee-earner, and accounts team can identify matters ready for billing. This prevents WIP from accumulating and reduces the quarter end scramble. For firms with high volumes of low-value matters, daily WIP reviews may be appropriate. The key is consistency, not frequency. A weekly review that is actually done is better than a monthly review that is skipped."

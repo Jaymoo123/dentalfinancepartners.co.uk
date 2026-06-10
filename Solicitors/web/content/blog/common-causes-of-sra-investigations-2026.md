@@ -11,6 +11,12 @@ altText: "Solicitor reviewing SRA investigation documents at a law firm desk"
 image: ""
 h1: "What Are the Most Common Causes of SRA Investigations for Solicitors in 2026?"
 summary: "SRA investigations often start with client money breaches, inadequate COFA oversight, or failure to report reportable matters. This guide explains the top triggers and how to avoid them."
+keyTakeaways:
+  - "Client money breaches are the single most common trigger for an SRA investigation, including mixing money and missing the five-weekly reconciliation."
+  - "Any breach of the SRA Accounts Rules is a reportable matter, and failing to report can attract a separate fine on top of the breach itself."
+  - "A COFA can be investigated and fined personally for weak oversight, such as signing off reconciliations without reviewing them."
+  - "Rule 8.3 requires the client account to be reconciled at least every five weeks, and overdrawn client accounts are a serious breach."
+  - "Regular internal audits, staff training, and prompt self-reporting are the most effective ways to reduce investigation risk."
 schema: ""
 faqs:
   - question: "What is the most common cause of an SRA investigation?"

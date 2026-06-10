@@ -57,7 +57,15 @@ import unicodedata
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-BLOG_DIR = ROOT / "Property" / "web" / "content" / "blog"
+
+
+def _blog_dir(site: str = "property") -> pathlib.Path:
+    """Resolve the site's blog content dir from sites/<site>.json (default Property)."""
+    p = ROOT / "sites" / f"{site}.json"
+    if p.exists():
+        cfg = json.loads(p.read_text(encoding="utf-8"))
+        return ROOT / cfg["paths"]["blogContentDir"]
+    return ROOT / "Property" / "web" / "content" / "blog"
 
 # Allow `python scripts/track2_query_coverage.py ...` to import the engine
 # package (the repo root is not on sys.path when run as a standalone script).
@@ -242,12 +250,12 @@ def _extract_h2s(body: str) -> list[str]:
     return [_html_to_text(m) for m in re.findall(r"<h2\b[^>]*>(.*?)</h2>", body, flags=re.I | re.S)]
 
 
-def load_page_fields(slug: str) -> dict[str, str]:
-    """Parse Property/web/content/blog/<slug>.md into the matching fields dict.
+def load_page_fields(slug: str, site: str = "property") -> dict[str, str]:
+    """Parse the site's <slug>.md into the matching fields dict.
 
     fields = {metaTitle, metaDescription, h1, h2s (joined), faqs (q+a joined), body}.
     """
-    path = BLOG_DIR / f"{slug}.md"
+    path = _blog_dir(site) / f"{slug}.md"
     if not path.exists():
         raise FileNotFoundError(f"blog page not found: {path}")
     raw = path.read_text(encoding="utf-8")
@@ -284,9 +292,9 @@ def _load_from_data(data_path: str) -> tuple[list[dict], list[dict]]:
     return payload.get("target_queries") or [], payload.get("adjacent") or []
 
 
-def _load_from_db(slug: str, want_adjacent: bool) -> tuple[list[dict], list[dict]]:
+def _load_from_db(slug: str, want_adjacent: bool, site: str = "property") -> tuple[list[dict], list[dict]]:
     from optimisation_engine.track2.pull_page_data import build_target_queries
-    targets = build_target_queries(slug)
+    targets = build_target_queries(slug, site=site)
     adjacent: list[dict] = []
     if want_adjacent:
         from optimisation_engine.track2.pull_page_data import (
@@ -295,7 +303,7 @@ def _load_from_db(slug: str, want_adjacent: bool) -> tuple[list[dict], list[dict
         )
         # Seed from top target query (gsc preferred), else slug words.
         seeds = [targets[0]["query"]] if targets else [slug.replace("-", " ")]
-        adjacent = build_adjacent(slug, seeds)
+        adjacent = build_adjacent(slug, seeds, site)
         _ = _seed_terms_for_adjacent  # imported for parity; seeds derived above
     return targets, adjacent
 
@@ -525,6 +533,8 @@ def main() -> int:
         description="Deterministic query-coverage floor for Track 2 blog rewrites."
     )
     ap.add_argument("--slug", help="Page slug (filename without .md)")
+    ap.add_argument("--site", default="property",
+                    help="site_key + corpus (resolves blog dir from sites/<site>.json; default property)")
     ap.add_argument("--json", action="store_true", help="Emit JSON result only.")
     ap.add_argument("--data", help="Read target_queries/adjacent from a pull_page_data JSON dump.")
     ap.add_argument("--gate-impr", type=int, default=50,
@@ -549,9 +559,9 @@ def main() -> int:
         if not args.adjacent:
             adjacent = []  # do not consider adjacent unless asked
     else:
-        targets, adjacent = _load_from_db(args.slug, args.adjacent)
+        targets, adjacent = _load_from_db(args.slug, args.adjacent, args.site)
 
-    fields = load_page_fields(args.slug)
+    fields = load_page_fields(args.slug, args.site)
     res = evaluate(args.slug, targets, adjacent, fields, args.gate_impr, args.gate_bar)
 
     if args.json:

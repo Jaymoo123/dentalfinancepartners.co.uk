@@ -1,0 +1,194 @@
+# Property Opportunity Register (FINAL) — 2026-06-04
+
+**Full-corpus pass — every slug processed, no cap.**
+
+```
+91,789 clean candidate slugs (from 6,385 new competitor domains, 5 search engines)
+   -> dedupe via embedding + clustering
+   463 canonical topic cores  +  71,787 one-offs (single-competitor / niche / noise)
+   -> adjudicate all 463 cores vs our 686 live pages
+   86 net-new (pre-dedupe)  +  ~340 already-covered / off-mission
+   -> union with sample pass, deduped  =  67 net-new + 40 expand-existing
+```
+
+Net-new is concentrated in BRAND-BREADTH (operations, deposits, mistakes/myths, buying, finance, customer-decision); technical tax is confirmed saturated. `n` = distinct competitors converging on the topic (confidence/priority signal); `imp` = GSC+Bing demand.
+
+## NET-NEW (67) — ranked by competitor-convergence + demand
+
+- NRL1 form: how to register as a non-resident landlord to receive rent without tax deducted  [~399 imp] — _Non-Resident & Overseas Landlord (UK Property)_
+  - Single highest-demand gap in the whole audit (nrl1 form alone = 156 imp). The existing scheme guide explains the scheme but does not target the form. New landlord-facing NRL1 how-to: where to find it, online vs paper, individual vs company/joint, where to send, how to check approval is still valid, NRL2 (company)/NRL3 (joint) variants. Highest priority.
+- Common Landlord Tax Mistakes That Trigger an HMRC Enquiry  [**282 competitors**, ~3 imp] — _Mistakes, Myths & Pitfalls_
+  - Warmth round-up: the 10 most common rental-tax mistakes (under-declaring deposits/retained rent, wrong capital-vs-revenue split, missing the s24 restriction, claiming pre-letting costs incorrectly, forgetting jointly-owned splits) and the behaviours that draw HMRC attention. Internal-link out to nudge-letter playbook, Let Property Campaign, discovery-assessment pages.
+- Landlord Tax Myths Debunked (What You've Been Told That Is Wrong)  [**282 competitors**, ~3 imp] — _Mistakes, Myths & Pitfalls_
+  - Myth-vs-reality format covering the most repeated landlord tax myths. Pair the spouse/CGT myth (gift of money vs gift of asset, no-gain-no-loss interspousal transfer) with mortgage-interest, rent-a-room, and 'cash rent is invisible' myths. Strong internal linking to s24, CGT-spouse-transfer, and Let Property Campaign pages.
+- Buying a property with tenants in situ: UK landlord guide  [**94 competitors**, ~1 imp] — _Landlord Operations & Lettings Management_
+  - Buyer-side operational + tax guide: inheriting an existing AST, deposit re-protection on transfer, rent review limits, SDLT/CGT base cost, due-diligence checklist. No live page covers the buy-tenanted intent.
+- SDLT for limited companies buying residential property (connected-party / market-value rule)  [**43 competitors**, ~15 imp] — _Stamp Duty Land Tax (SDLT)_
+  - Dedicated company-purchase SDLT page: s.53 market-value charge on connected-party transfers, the flat higher-rate (3%/5%) every company purchase attracts regardless of first/replacement, ATED 17% interaction over Â£500k, and the partnership-incorporation relief escape route. Closest page covers double-charge framing only, not the company rate table.
+- Gifts out of surplus income IHT exemption for landlords  [**35 competitors**, ~5 imp] — _Inheritance Tax & Estate Planning_
+  - Net-new: no existing surplus/normal-expenditure-out-of-income page. Frame for landlords gifting rental SURPLUS income (not capital) IHT-free with no 7-year wait; IHT403 schedule + expenditure log. High-value adjacency to the 7-year gifting cluster we already own.
+- Buying property at auction: tax, SDLT timing and completion deadlines for investors  [**37 competitors**] — _Buying, Selling & Conveyancing_
+  - Auction-specific tax/finance guide for landlords: SDLT due on hammer-price plus premium, 28-day completion vs mortgage timing, surcharge applicability, treating refurb auction lots as trading vs investment. Distinct tax hook, no current page.
+- Tenant screening and referencing for UK landlords  [**35 competitors**] — _Landlord Operations & Lettings Management_
+  - No live page on screening/referencing. UK-framed guide: referencing process, affordability ratios, right-to-rent, guarantors. Strong competitor convergence and genuine gap.
+- Tenancy deposit protection schemes: a landlord's guide  [**32 competitors**] — _Tenancy Deposits_
+  - No live page on the statutory deposit-protection regime. UK guide: which scheme, 30-day deadline, prescribed information, non-compliance penalties (1-3x deposit) and the S21/possession knock-on. Strong competitor convergence, clear gap.
+- Is a buy-to-let a good investment? First rental property starter guide (tax-led)  [**31 competitors**] — _Getting Started & Becoming a Landlord_
+  - A genuine getting-started pillar is missing: an evergreen first buy-to-let guide framed around the tax decisions a beginner faces (SDLT 5% surcharge, personal vs SPV, Section 24 mortgage-interest restriction, yield/cash-flow, MTD ITSA). The existing first-time-landlord page is narrow tax-return detail; this is the top-of-funnel investor entry point with the highest competitor convergence (31). Net-new pillar.
+- HMRC inheritance tax investigations and valuation scrutiny  [**24 competitors**] — _Inheritance Tax & Estate Planning_
+  - Net-new: no compliance/enquiry page. Angle: HMRC clamps on IHT property valuations, what triggers an enquiry on a portfolio estate, executor evidence pack. Rising-receipts narrative is the hook but the durable page is the valuation-scrutiny how-to.
+- HMO mortgages for UK landlords  [**20 competitors**] — _Mortgages & Property Finance_
+  - Net-new HMO-mortgage explainer with the tax angle: how HMO mortgage interest is restricted under Section 24 for individuals vs deductible in an SPV, ICR/stress differences for HMOs, and why HMO investors often hold in a company. Links to hmo-tax-guide and buy-to-let-limited-company-mortgage-options. Strong: high n, clear net-new, tax angle exists.
+- Mould, damp and pests: landlord vs tenant responsibility  [**20 competitors**] — _Landlord Operations & Lettings Management_
+  - No live page on the mould/damp/pest responsibility split (Awaab's Law / Decent Homes hook). UK responsibility-allocation guide plus repair-cost tax treatment. Genuine gap with solid demand.
+- Landlord and Tenant Act 1985 s11 / LTA 1954 explained  [**20 competitors**] — _Landlord Operations & Lettings Management_
+  - No page explaining statutory repairing obligations (LTA 1985 s11) for residential landlords. Narrow but durable reference-intent gap; pair the legal duty with repair-cost deductibility. Hold as lower-priority net-new.
+- Expat / non-resident UK buy-to-let mortgages  [**17 competitors**] — _Mortgages & Property Finance_
+  - Net-new expat-BTL-mortgage piece bridging finance to tax: getting a UK BTL mortgage as a non-resident, then the Non-Resident Landlord Scheme withholding, Section 24 relief still applying, and self-assessment obligations. Ties NRL pages to a finance entry point. Strong: high n, distinct intent, deep tax hook.
+- Do I need an accountant as a landlord (when to hire one)  [**16 competitors**] — _Choosing, Switching & Needing a Property Accountant_
+  - Bottom-of-funnel decision page: 'Do I need a property accountant as a landlord?' â€” DIY vs accountant by portfolio size, MTD trigger, incorporation/Section 24 complexity, cost-vs-saving. Pairs with how-much-cost + how-to-choose to complete the hiring journey. Strong commercial/lead-gen intent.
+- Self-employed / rental income evidence for a mortgage  [**16 competitors**] — _Mortgages & Property Finance_
+  - Net-new piece on how lenders evidence self-employed/landlord income (SA302, tax year overviews, net vs gross profit, retained company profit) and the tax-return practicalities that flow from it. Natural cross-sell to accounts/SA filing. Moderate: solid n, genuine tax/accounting hook.
+- Marriage allowance for landlord couples  [**15 competitors**] — _Landlord Income Tax & Rental Profit_
+  - Narrow landlord lens: when a basic-rate-spouse landlord couple can transfer 10% personal allowance, interaction with Section 24 tax credit and rental income splitting; eligibility checker framing. NOT a generic marriage-allowance explainer.
+- Rental Expenses Landlords Forget to Claim (Overlooked Allowable Deductions)  [**15 competitors**] — _Allowable Expenses & Repairs vs Improvements_
+  - Warmth-led 'expenses you're probably not claiming' angle distinct from the existing complete-list reference page. Hub-link to pre-letting-expenses, mortgage-arrangement-fees, replacement-domestic-items, claim-home-office pages. This captures the 'overlooked deductions' demand the off-mission US listicles target, reframed for UK landlords.
+- What a landlord can lawfully deduct from a deposit  [**15 competitors**] — _Tenancy Deposits_
+  - No live page on deposit deductions. UK guide: lawful deduction categories, fair wear and tear, evidence/inventory, scheme adjudication, and tax treatment of retained deposit. Solid gap; could pair with the deposit-protection page or stand alone.
+- Normal Wear and Tear vs Tenant Damage: Tax and Deposit Treatment  [**14 competitors**] — _Allowable Expenses & Repairs vs Improvements_
+  - UK landlord guide to fair wear and tear vs damage: deposit-deduction rules (TDS/inventory), whether you can still claim repairs after recovering from a tenant/deposit, and where the now-abolished wear-and-tear allowance left landlords (replacement-of-domestic-items only). Link to repairs and replacement-domestic-items pages.
+- Renting out a home on a residential mortgage (consent to let)  [**13 competitors**] — _Mortgages & Property Finance_
+  - Net-new consent-to-let explainer with the tax transition: consent to let vs switching to BTL, when rental income becomes taxable, accidental-landlord obligations (self-assessment, Section 24), and Airbnb/letting on a residential mortgage. Links accidental-landlord and airbnb-tax pages. Solid: clear net-new, strong tax bridge.
+- Gifted deposits and the tax angle (IHT / CGT)  [**13 competitors**] — _Mortgages & Property Finance_
+  - Net-new gifted-deposit piece favouring the tax angle: gifted deposit letters and lender rules, then the IHT side (PET, 7-year rule, gift with reservation if parents retain benefit) and CGT where the gift is of property/equity rather than cash. Bridges mortgage intent to our IHT/gifting cluster. Solid: distinct intent, deep tax hook.
+- Limited Company BTL Mortgages: Rates, Director Lending and the Tax Trade-off  [~12 imp] — _Mortgages & Property Finance_
+  - The tax hook is the whole point: companies still deduct mortgage interest in full (Section 24 does not bite), director loans and intercompany interest treatment, arrangement-fee deductibility under corporation tax, and the higher SPV mortgage rates as the trade-off. Sits between the mortgage adjacency and incorporation pages; cross-link the incorporation cluster.
+- Are Mortgage Arrangement Fees and Broker Fees Tax Deductible for Landlords?  [~12 imp] — _Mortgages & Property Finance_
+  - Tight, high-intent tax question. Clarify that arrangement/broker fees are finance costs caught by the same Section 24 restriction (20% credit, not full deduction) for individuals, but fully deductible for companies. Could alternatively be folded into the Section 24 page; stands alone because the fee-specific queries are distinct long-tail. Cross-link Section 24 and the allowable-expenses cluster.
+- Can a first-time buyer get a buy-to-let mortgage  [**11 competitors**] — _Mortgages & Property Finance_
+  - Net-new piece on FTB doing BTL: lender restrictions, and the tax angle that buying a BTL forfeits first-time-buyer SDLT relief and exposes the 5% additional-property surcharge, plus Section 24 on the rental income. Bridges to first-time-buyer-relief and sdlt-buy-to-let-surcharge pages. Moderate.
+- Are accountancy and professional fees tax deductible against rental income?  [~7 imp] — _Cost, Fees & 'Is It Worth It'_
+  - Plain-English landlord guide: which professional fees are revenue-deductible vs capital (accountant, tax return prep, financial advice, letting agent, legal). VAT page is adjacent but is about VAT recovery on commercial property, not income-tax deductibility for residential landlords; genuinely net-new intent.
+- How to legitimately reduce CGT on a rental property (and what doesn't work)  [~6 imp] — _Mistakes, Myths & Pitfalls_
+  - High-intent legitimate-planning page: inter-spouse transfer before sale, timing across tax years, PRR/lettings-relief boundaries, offsetting losses, why no-CGT 'schemes' fail. Strong demand and no close existing page. Cross-link to any CGT-on-property hub. Net-new, high priority.
+- Rent-a-room and MTD  [~6 imp] — _MTD, Record-Keeping & Landlord Software_
+  - Short, focused page: does rent-a-room relief income count toward the MTD qualifying-income test, with worked numbers. Low-competition long-tail.
+- Tax on Remortgaging a Rental Property: Releasing Equity and the Capital-Withdrawal Trap  [~6 imp] — _Mortgages & Property Finance_
+  - Strong tax hook and genuinely uncovered. Lead on: is the interest on the increased borrowing deductible, the HMRC 'capital you can withdraw tax-free' rule (capital account vs value-when-first-let), and whether released equity is itself taxable (it is not income, but interest relief is capped). Cross-link Section 24 page; differentiate from it on the equity-release/refinance angle.
+- Business rates relief on empty commercial property: cutting the empty-rates bill  [**5 competitors**] — _Council Tax, Business Rates & Local Charges_
+  - Dedicated empty-rates page for commercial landlords: the void exemption periods (3 months / 6 months for industrial), small business rate relief, charity occupation and legitimate mitigation. Existing page is a broad overview only; this is a distinct high-intent sub-topic with a clear cost/tax hook.
+- Reduced 5% VAT on renovating an empty residential property  [**2 competitors**] — _Council Tax, Business Rates & Local Charges_
+  - The empty-home (2-year) reduced 5% VAT relief on renovation/conversion works is a distinct VAT relief from the commercial conversion and DIY housebuilder pages we already have. Strong tax hook, clearly within mission, no current page covers the empty-dwelling rule. Net-new.
+- VAT registration for a property SPV: when residential vs commercial companies must (or shouldn't) register  [~1 imp] — _Incorporation & Company vs Personal Ownership_
+  - Distinct technical lane not in the 35 existing pages: residential lettings are VAT-exempt (no recovery), commercial can opt to tax. Clarify when an SPV must/should register and the input-VAT recovery consequences. Genuine gap.
+- When Is the CGT Disposal Date: Exchange vs Completion  [~1 imp] — _Buying, Selling & Conveyancing_
+  - Pure tax, tight and answerable: disposal date is the exchange (unconditional contract) date, not completion - decisive for which tax year and the 60-day CGT reporting clock. Only demand row in the whole bundle maps here. Could be a sharp short post or an FAQ folded into the CGT pillar. Verify the CGT pillar does not already answer this before building standalone.
+- Is a property accountant worth it for a landlord? ROI of professional advice vs DIY  [long-tail] — _Cost, Fees & 'Is It Worth It'_
+  - ROI framing distinct from the price page: worked examples of tax a specialist saves a typical 1-3 property landlord (S24, finance-cost relief, allowable expenses missed, CGT planning) vs the annual fee; a 'is it worth it for me' decision matrix by portfolio size. Cross-link to the cost page.
+- Why use a specialist property accountant (vs a generalist / high-street accountant)  [long-tail] — _Choosing, Switching & Needing a Property Accountant_
+  - Brand-differentiator page: 'specialist property accountant vs generalist' â€” concrete examples of property-specific reliefs/traps a generalist misses (S24, incorporation relief, ATED, CGT on lets, FHL abolition). 'What does a property accountant do' explains the role, not the specialist-vs-generalist choice; net-new and strongly on-brand.
+- Holiday Let Business Rates vs Council Tax: Self-Catering Rules and Relief Changes  [long-tail] — _Furnished Holiday Lets & Short-Term Lets_
+  - Genuine gap: business rates vs council tax is a non-income-tax cost question and survives FHL abolition (the VOA occupancy thresholds are separate from the abolished income-tax regime). Single comprehensive UK guide covering the 70/140-day self-catering test, small business rates relief, and the direction of travel on relief removal. Keep England-led with a Scotland note.
+- HMRC Targeting Undeclared Holiday-Let and Airbnb Income: Compliance and Disclosure  [long-tail] — _Furnished Holiday Lets & Short-Term Lets_
+  - On-mission compliance gap: HMRC's Let Property Campaign and platform data-sharing (Airbnb/booking sites now report to HMRC, plus the new short-let registration database) targeting undeclared holiday-let income. One disclosure-focused guide. Survives abolition because it is about declaring income, not the FHL regime.
+- Accidental Landlords: Your Tax Position When You Didn't Plan to Let  [long-tail] — _Getting Started & Becoming a Landlord_
+  - Distinct intent and audience from the planned first-time landlord: an accidental-landlord tax guide. Strong CGT angle (PRR/private residence relief where they previously lived there), declaring income, and the registration trap. Clear net-new beginner page with a reuse hook to PRR/CGT pages.
+- How to Set Up for Tax as a New Landlord: Personal Name vs Limited Company  [long-tail] — _Getting Started & Becoming a Landlord_
+  - Beginner-stage structure decision framed for someone who has not bought yet: personal ownership vs limited company at the outset, with the tax trade-offs (Section 24, corporation tax, extracting profit, SDLT). Lighter and more decision-led than any incorporation deep-dive; links out to those. Verify the brand has no existing 'personal vs company' page before building (likely sits in Landlord Income Tax / structuring) to avoid cannibalisation.
+- Bookkeeping and Record-Keeping Basics for New Landlords  [long-tail] — _Getting Started & Becoming a Landlord_
+  - Practical record-keeping primer for the first tax return: what to track, cash vs accruals basis, allowable expense categories, and getting ready for MTD. On-mission and supports the firm's bookkeeping function, but lower priority than the two core tax-onboarding pages. Bundle the many near-duplicate competitor 'getting-started' accounting posts into one page.
+- Does rental income count as earned/relevant income (pension contributions, allowances)  [long-tail] — _Landlord Income Tax & Rental Profit_
+  - Definitive answer that rental profit is unearned income, what that blocks (pension relief beyond Â£3,600, NI), and the FHL/property-business carve-outs.
+- National Insurance on rental income for landlords  [long-tail] — _Landlord Income Tax & Rental Profit_
+  - When NI does and does not apply to rental income, the trading-vs-investment line, and the FHL position.
+- Family investment companies vs trusts for property  [long-tail] — _Property Portfolio Strategy & Tax-Efficient Structuring_
+  - Decision page: FIC vs discretionary trust for a property portfolio (control, IHT, income tax, set-up cost), pointing at the existing trust-mechanics pages. Genuine gap at the decision level.
+- Bare trusts for children / minor-owned property  [long-tail] — _Property Portfolio Strategy & Tax-Efficient Structuring_
+  - Focused page on bare trusts for children holding rental property (income tax on the child, settlements anti-avoidance, CGT/IHT). Modest but clear gap.
+- Reducing IHT on property by leaving a gift to charity (the 36% reduced rate)  [long-tail] — _Inheritance Tax & Estate Planning_
+  - No existing page covers the charitable-legacy 36% reduced-rate mechanic and the 10%-of-baseline-estate test for a property estate. Discrete technical gap. Lower priority (no measured demand).
+- Using a life insurance policy in trust to cover an inheritance tax bill on property  [long-tail] — _Inheritance Tax & Estate Planning_
+  - Funding the bill (life policy in trust, paying IHT before probate on an illiquid property estate) is not addressed by the existing reliefs/gifting pages. Genuine planning gap, but no measured demand so low priority.
+- HMRC Interest Rates on Late and Early Tax Payments: Current Rates and What They Cost Landlords  [long-tail] — _Mortgages & Property Finance_
+  - Single evergreen 'current HMRC interest rates' reference page (base rate + 2.5% late / base - 1% repayment, with the FA 2025 late-payment surcharge), kept updated, that absorbs the ~25 dated competitor news posts. Real tax hook, low writing cost, strong evergreen consolidation. No demand rows attached (queries are all rate-relief, not HMRC-interest), so demand is competitor-inferred; keep priority modest.
+- Specialist BTL Mortgages: HMOs, MUFBs, Commercial and Non-Standard Construction  [long-tail] — _Mortgages & Property Finance_
+  - One overview of specialist-asset finance, with the tax angle bolted on where natural (HMO Article 4/SDLT, semi-commercial 'mixed-use' SDLT rate, commercial VAT). Mostly partner/referral content - flag as such; the local HMO-mortgage-in-<town> slugs are pure lead-gen noise and are dropped. Keep one canonical page, not a town matrix.
+- Selling an Inherited or Probate Property: Process and Tax  [long-tail] — _Buying, Selling & Conveyancing_
+  - Real tax hook: probate-value CGT uplift, the gain only on the rise since death, the estate vs beneficiary disposal choice, and IHT interaction. Process content is the conveyancing adjacency wrapper; the tax is the differentiator. Cross-link IHT and CGT pillars.
+- Selling at Auction or Fast-for-Cash: When It Makes Sense and the Tax on the Proceeds  [long-tail] — _Buying, Selling & Conveyancing_
+  - Thin tax hook (CGT on disposal, exchange-vs-completion date for the disposal year). Mostly adjacency/partner content. Could merge with the auction-buying topic into one 'auctions for landlords' page to avoid two thin posts. Lower priority.
+- Selling Property on Divorce or Separation: Timing and the CGT Window  [long-tail] — _Buying, Selling & Conveyancing_
+  - Strong, underserved tax hook: the extended no-gain/no-loss transfer window between spouses (to end of 3rd tax year after separation / unlimited if part of a formal agreement, per FA 2023) and PRR on the departing spouse's interest. Single competitor slug but high tax value and zero cannibalisation. Cross-link CGT and PRR.
+- Electrical Safety (EICR) Obligations for Landlords  [long-tail] — _Landlord Operations & Lettings Management_
+  - We have a gas-safety page but no electrical (EICR) equivalent despite it being a parallel statutory duty (Electrical Safety Standards 2020, 5-yearly inspection). Mirror the gas-safety page structure; note deductibility of inspection costs. Completes the landlord safety-compliance set.
+- Smoke and Carbon Monoxide Alarm Rules for Landlords  [long-tail] — _Landlord Operations & Lettings Management_
+  - Short compliance explainer on the Smoke and Carbon Monoxide Alarm (England) Regulations as amended 2022, HMO specifics, and where it sits in the let-checklist. Pairs with gas/electrical safety to form a 'landlord safety compliance' cluster.
+- Landlord Right of Entry and Access: Notice Rules and Tenant Privacy  [long-tail] — _Landlord Operations & Lettings Management_
+  - Concise UK guide: 24-hour written notice, quiet enjoyment, when access is permitted (repairs, inspections, viewings), and the risk of harassment/illegal-entry claims. No current page owns this. Low tax content but high operational search intent and brand-breadth fit.
+- Difficult Tenants, Noise and Anti-Social Behaviour: A Landlord's Guide  [long-tail] — _Landlord Operations & Lettings Management_
+  - Practical guide to ASB, noise complaints, landlord liability for tenant behaviour, and dispute resolution routes. Top-of-funnel brand warmth; light tax angle (legal/management costs deductibility).
+- Penalties for Failing to Protect a Deposit (and the Section 21 Block)  [long-tail] — _Tenancy Deposits_
+  - The 'what goes wrong' companion to the cornerstone: 1-3x deposit penalty, inability to rely on section 21 until returned/protected, leading case law, and how RRA changes interact. High-fear, high-share landlord intent.
+- Deposit Disputes and Adjudication: How the Scheme Process Works  [long-tail] — _Tenancy Deposits_
+  - Walk through the free scheme adjudication / ADR process, the burden of proof on the landlord, inventory and check-in/check-out evidence, and how to avoid disputes. Operational companion to the deductions page.
+- Deposit Cap, Holding Deposits and the Tenant Fees Act 2019  [long-tail] — _Tenancy Deposits_
+  - Tenant Fees Act 2019: 5-week cap (6 weeks if rent >Â£50k), holding deposit one week max, what is and isn't a permitted payment, top-ups after a rent increase. UK-specific; strips out the US-state noise entirely.
+- How Deposits Are Treated for Tax: Are Tenancy Deposits Income?  [long-tail] — _Tenancy Deposits_
+  - THE brand-differentiating deposit page: a protected deposit is not income while held, but a retained deduction (for arrears/damage) becomes taxable rental income in the year retained. Covers accounting treatment, interest, and the MTD record angle. No competitor pairs deposits with UK tax correctly â€” strong moat.
+- The UK Budget and Property Tax: What Each Budget Means for Landlords  [long-tail] — _Tax Policy & Budget Commentary_
+  - Evergreen spine page 'How the Budget affects landlords' structured by tax head (SDLT, mortgage interest / Section 24, CGT, income tax, IHT), with a dated 'Latest Budget at a glance' block refreshed at each fiscal event. Becomes the canonical hub that timely commentary posts link up to.
+- Capital Gains Tax in the Budget: How CGT Changes Hit Property Sellers  [long-tail] — _Tax Policy & Budget Commentary_
+  - Evergreen explainer of how Budgets typically move CGT for residential property (rate bands, annual exempt amount erosion, 60-day reporting), with planning levers before disposal. Cross-link to the main CGT-on-property category page rather than duplicating mechanics.
+- Capital Allowances Reform: What the Changes Mean for Landlords  [long-tail] — _Tax Policy & Budget Commentary_
+  - Evergreen 'capital allowances for property' explainer leading with why residential landlords were excluded from super-deduction, then current regime including FA 2026 changes (WDA 18%->14%, new 40% FYA, special rate 6%). Ground in the FA 2026 capital-allowances facts already in memory.
+- Council Tax on Empty and Void Rental Properties: Liability, Premiums and How to Reduce It  [long-tail] — _Council Tax, Business Rates & Local Charges_
+  - Net-new technical reference: council tax on empty/void rentals, the 100%-200% empty-homes premium and timing, renovation/probate exemptions. Our reduce-void-periods page is operational (minimising voids), not the council-tax-liability explainer, so this is a distinct intent. Cross-link the two.
+- Who Pays Council Tax on a Rental Property: Landlord or Tenant?  [long-tail] — _Council Tax, Business Rates & Local Charges_
+  - Likely partly served by property-business-rates-council-tax-landlords; verify that page actually answers the landlord-vs-tenant liability question. If it only covers business rates vs council tax generally, build this as a focused 'who pays' explainer; otherwise expand that page. Treating as net-new pending page check, but flag possible merge.
+- De-enveloping a company-held dwelling: should you take property out of the corporate wrapper?  [long-tail] — _ATED & Enveloped / High-Value Residential_
+  - NET-NEW: the de-enveloping decision is named in the category definition and is the one genuine gap. Decision-framework page: ongoing ATED cost vs the SDLT/CGT/ATED-related CGT cost of extracting the dwelling to an individual, when de-enveloping makes sense, and the unwinding steps. Demand is low (no direct query) so priority is modest, but it completes the category and serves a high-value advisory audience.
+- Holding commercial property in a SIPP/SSAS pension  [long-tail] — _Commercial & Mixed-Use Property Tax_
+  - NET-NEW: SIPP/SSAS commercial property purchase is a distinct, on-mission, high-value advisory intent not covered anywhere in the corpus: tax-free rent into the pension, no CGT on disposal inside the wrapper, in-specie contributions, residential exclusion, borrowing limits. Strong fit for an investor/landlord brand. No measured demand in this small bundle, but evergreen high-intent topic.
+
+## EXPAND-EXISTING (40) — deepen a live page
+
+- 60-day CGT reporting and payment deadline for UK residential property  → `cgt-payment-deadlines-property-sales-2026`
+- NRL2 / NRL3 / NRL8 and the agent/tenant side: who files what under the non-resident landlord scheme  → `nrl-scheme-letting-agents-quarterly-returns-mechanics`
+- Evicting a tenant in England and Wales: the possession process  → `renters-rights-act-possession-grounds-reform-section-8-landlords`
+- Buying a leasehold flat: short leases, ground rent and the SDLT/cost checks  → `lease-extension-vs-freehold-purchase.md`
+- Tenant not paying rent: what UK landlords can do  → `are-rent-arrears-skyrocketing-and-squeezing-landlords`
+- MTD for non-resident landlords â€” when does it apply
+- MTD for landlords with mixed / multiple income sources  → `mtd-itsa-qualifying-income-test-gross-vs-net / mtd-quarterly-reporting-landlords-step-by-step-guide`
+- IHT receipts hitting record highs / threshold freeze  → `residence-nil-rate-band-frozen`
+- Income-tax threshold freeze / fiscal drag impact on landlords  → `section-24-personal-allowance-60-percent-tax-rate-landlords`
+- Does Your Airbnb / Short-Let Still Get FHL Tax Treatment After April 2025?  → `furnished-holiday-let-tax-rules-exemptions; serviced-accommodation-vs-buy-to-let-tax-comparison-2026; airbnb-tax-uk-short-term-rental-income-taxed (abolition + SA comparison covered; the specific 'did-my-Airbnb-qualify, now-what' eligibility-transition angle is thin)`
+- Returning the deposit at end of tenancy (timing and disputes)
+- How to set up a property SPV: step-by-step (formation, SIC code, costs)  → `how-to-set-up-property-investment-company-uk-guide`
+- Are buy-to-let mortgage and loan-finance fees tax deductible? (arrangement, booking, product, refinancing fees)  → `mortgage-arrangement-fees-deductible-landlord`
+- HMRC Crackdown on Landlord Tax: Are You at Risk?  → `let-property-campaign-why-voluntary-disclosure-makes-sense + hmrcs-otm-letters-campaign-directed-at-ated-avoidance (disclosure routes covered; the 'crackdown awareness / am-I-at-risk' framing is not)`
+- Ground rent and leasehold reform: what it means for long leaseholders  → `commonhold-and-leasehold-reform-bill.md`
+- Verifying tenant income / proof of income for screening
+- Landlord vs tenant repair responsibility (who pays for repairs)  → `what-repairs-can-landlords-deduct-from-rental-income`
+- Tenant breaking a lease early / tenant won't leave after lease ends  → `renters-rights-act-section-21-abolition-landlord-operational-mechanics`
+- How to find and keep good tenants
+- Deposit deductions for cleaning and damage
+- Deductibility of accountancy / landlord-accountant fees against rental income
+- OFF-MISSION: Tenant eviction solicitors / Scotland & Wales eviction news  → `renters-rights-act-possession-grounds-reform-section-8-landlords`
+- How much can a landlord raise the rent (UK rent-increase rules)  → `renters-rights-act-rent-increase-section-13-tribunal-route`
+- Furnished holiday let / Airbnb income tax return treatment  → `abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know`
+- Refurbishing and Future-Proofing a Rental: Low-Maintenance and Tax-Smart Upgrades  → `capital-vs-revenue-expenditure-landlord-uk / what-repairs-can-landlords-deduct-from-rental-income`
+- OFF-MISSION: Evicting using specific possession grounds (ground 1-15 series)  → `renters-rights-act-possession-grounds-reform-section-8-landlords`
+- Multiple dwellings relief (MDR) abolition and what replaced it  → `sdlt-six-dwellings-non-residential-election (England MDR abolition implicit; explicit England MDR-abolition page absent â€” closest direct is welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition)`
+- What happens if you don't declare CGT on a property sale: HMRC's CGT-on-property campaign, nudge letters and penalties  → `cgt-payment-deadlines-property-sales-2026 (owns the 60-day deadline) + penalties-not-declaring-rental-income-hmrc + let-property-campaign-* cluster (income-focused, not CGT)`
+- Section 24 mitigation strategies for individual landlords (raising rents, deed of trust/beneficial-interest split, simple partnership, repairs offset, sell-or-hold)  → `section-24-vs-incorporation-which-saves-more-tax (incorporation route only) + section-24-joint-property-ownership-tax-split (deed-of-trust split) + section-24-pension-contributions-tax-planning + section-24-interest-only-mortgage-tax-planning`
+- The hidden and ongoing costs of owning a buy-to-let / rental property  → `how-to-calculate-net-rental-income-after-all-costs-uk-guide`
+- Property tax avoidance schemes HMRC targets: what to steer clear of  → `sdlt-refund-scams-how-to-avoid`
+- Selling a Former Holiday Let: BADR, Rollover and Hold-over Relief After FHL Abolition  → `rollover-relief-property-landlords`
+- Switching From Buy-to-Let to Short-Term/Holiday Letting: Tax Implications After FHL Abolition  → `serviced-accommodation-tax-fhl-abolition-april-2025`
+- Mileage allowance for landlords (AMAP / property business travel)  → `landlord-tax-deductions-uk-2026-complete-list / what-repairs-can-landlords-deduct-from-rental-income`
+- Tax on low-rental-income / loss-making lets (relief for rental losses)  → `how-to-calculate-net-rental-income-after-all-costs-uk-guide`
+- Scaling / expanding a buy-to-let portfolio (tax-aware growth strategy)  → `property-portfolio-review-checklist-landlords-2026 / multi-property-landlord-tax-planning-strategies-5-plus-properties (income-tax cat)`
+- Selling / exiting a property portfolio tax-efficiently  → `property-portfolio-review-checklist-landlords-2026 (CGT-on-disposal lives in the CGT category)`
+- Rent Arrears and Late-Paying Tenants: A Landlord's Action Plan  → `are-rent-arrears-skyrocketing-and-squeezing-landlords`
+- Council Tax Revaluation and Banding Reform: What It Could Mean for Landlords  → `is-increasing-council-tax-damaging-the-housing-market`
+- Buying commercial / semi-commercial property: the tax checklist (SDLT non-residential rate, VAT, capital allowances, structure)  → `commercial-property-tax-landlords-rates-reliefs-allowances`

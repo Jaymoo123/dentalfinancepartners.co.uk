@@ -10,6 +10,12 @@ altText: "UK law firm partners reviewing LLP conversion tax documentation and fi
 image: ""
 h1: "LLP Conversion Tax: Essential Guide for UK Law Firms"
 summary: "Converting your law firm partnership to an LLP triggers specific tax consequences that require careful planning. Understanding the capital gains, income tax and stamp duty implications is essential for a successful conversion."
+keyTakeaways:
+  - "Conversion is a deemed disposal of each partner's share, creating a potential capital gains tax charge on goodwill."
+  - "Incorporation relief under Section 162 TCGA 1992 can defer the gain by rolling it into the new LLP interest."
+  - "Work in progress transfers at market value, so any excess over book value (such as £40,000 above £100,000 cost) is taxed as income."
+  - "Transferring firm-owned premises to the LLP can trigger SDLT, and the partnership's VAT registration cannot transfer."
+  - "Elections such as incorporation relief have strict deadlines, typically 31 January after the conversion tax year."
 schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/structure-incorporation/llp-conversion-tax-guide-uk-law-firms"
 faqs:

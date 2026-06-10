@@ -24,19 +24,32 @@ if ROOT not in sys.path:
 from agents.utils.gsc_client_oauth import GSCClient  # noqa: E402
 
 from optimisation_engine.config import (  # noqa: E402
-    SUPABASE_KEY,
-    SUPABASE_URL,
     get_site,
 )
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv(os.path.join(ROOT, ".env"))
+except ImportError:
+    pass
 
-def _supabase_headers(prefer: str = "resolution=merge-duplicates,return=minimal") -> dict[str, str]:
-    return {
-        "apikey": SUPABASE_KEY,
-        "Authorization": f"Bearer {SUPABASE_KEY}",
-        "Content-Type": "application/json",
-        "Prefer": prefer,
-    }
+SUPABASE_ACCESS_TOKEN: str = os.getenv("SUPABASE_ACCESS_TOKEN", "")
+PROJECT_REF = "dhlxwmvmkrfnmcgjbntk"
+MGMT_URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
+
+
+def _mgmt_sql(query: str) -> None:
+    r = httpx.post(
+        MGMT_URL,
+        headers={"Authorization": f"Bearer {SUPABASE_ACCESS_TOKEN}", "Content-Type": "application/json"},
+        json={"query": query},
+        timeout=60.0,
+    )
+    r.raise_for_status()
+
+
+def _esc(v: str) -> str:
+    return str(v).replace("'", "''")
 
 
 class GSCQueryFetcher:
@@ -88,47 +101,51 @@ class GSCQueryFetcher:
         return self._upsert(rows)
 
     def _upsert(self, rows: Iterable[dict]) -> int:
-        records: list[dict] = []
+        records: list[tuple] = []
         for row in rows:
             keys = row.get("keys", [])
             if len(keys) < 3:
                 continue
             page_url, query, date_str = keys[0], keys[1], keys[2]
-            records.append(
-                {
-                    "site_key": self.site_key,
-                    "page_url": page_url,
-                    "query": query,
-                    "date": date_str,
-                    "impressions": row.get("impressions", 0),
-                    "clicks": row.get("clicks", 0),
-                    "ctr": float(row.get("ctr", 0)),
-                    "position": float(row.get("position", 0)),
-                }
-            )
+            records.append((
+                page_url,
+                query,
+                date_str,
+                int(row.get("impressions", 0)),
+                int(row.get("clicks", 0)),
+                float(row.get("ctr", 0)),
+                float(row.get("position", 0)),
+            ))
 
         if not records:
             return 0
 
-        # PostgREST batch upsert. The UNIQUE(site_key, page_url, query, date)
-        # constraint plus Prefer: resolution=merge-duplicates makes this safe
-        # to re-run within the same day without bloat.
-        url = f"{SUPABASE_URL}/rest/v1/gsc_query_data"
-        # Insert in chunks of 1000 to keep request size reasonable
         inserted = 0
-        for i in range(0, len(records), 1000):
-            chunk = records[i : i + 1000]
-            r = httpx.post(
-                url,
-                headers={**_supabase_headers(), "Prefer": "resolution=merge-duplicates,return=minimal"},
-                json=chunk,
-                timeout=60.0,
+        chunk_size = 500
+        for i in range(0, len(records), chunk_size):
+            chunk = records[i: i + chunk_size]
+            values = ", ".join(
+                f"('{_esc(self.site_key)}', '{_esc(page_url)}', '{_esc(query)}', "
+                f"'{date_str}', {impressions}, {clicks}, {ctr}, {position})"
+                for page_url, query, date_str, impressions, clicks, ctr, position in chunk
             )
-            if r.status_code >= 300:
-                print(f"[GSC-Q] {self.site_key} upsert chunk {i} failed: {r.status_code} {r.text[:200]}")
-                continue
-            inserted += len(chunk)
-        print(f"[GSC-Q] {self.site_key} upserted {inserted} rows")
+            sql = f"""
+                INSERT INTO gsc_query_data
+                    (site_key, page_url, query, date, impressions, clicks, ctr, position)
+                VALUES {values}
+                ON CONFLICT (site_key, page_url, query, date) DO UPDATE SET
+                    impressions = EXCLUDED.impressions,
+                    clicks      = EXCLUDED.clicks,
+                    ctr         = EXCLUDED.ctr,
+                    position    = EXCLUDED.position
+            """
+            try:
+                _mgmt_sql(sql)
+                inserted += len(chunk)
+            except Exception as exc:
+                print(f"[GSC-Q] {self.site_key} chunk {i} upsert failed: {exc}")
+
+        print(f"[GSC-Q] {self.site_key} upserted {inserted} rows to gsc_query_data")
         return inserted
 
 

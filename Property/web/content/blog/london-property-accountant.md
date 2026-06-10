@@ -5,12 +5,12 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Specialist Accountant London: BTL Tax Help 2026"
+metaTitle: "London Property Accountant: BTL Tax Help for Landlords 2026"
 metaDescription: "What a specialist London property accountant does: Section 24, SDLT, ATED, MTD software, CGT, incorporation, and inheritance tax. Free 20-minute review."
 altText: "Professional London property accountant reviewing rental property tax returns and financial documents"
 image: ""
 h1: "Buy-to-Let Accountant London: Tax Planning for Landlords and Investors"
-summary: "A specialist buy-to-let accountant in London helps higher-rate landlords navigate the 5% SDLT additional-dwellings surcharge (raised from 3% on 31 October 2024), the Section 24 finance-cost restriction, ATED on company-held high-value flats, the MTD for ITSA quarterly cycle that went live on 6 April 2026, and the post-Autumn-2024 CGT rates of 18% and 24% on residential disposals. This guide walks through each in turn with worked figures sized to the central-London market and explains when a portfolio investor benefits from specialist advice."
+summary: "A specialist buy-to-let accountant in London helps higher-rate landlords with the 5% SDLT additional-dwellings surcharge (raised from 3% on 31 October 2024), the Section 24 finance-cost restriction, ATED on company-held high-value flats, the MTD for ITSA quarterly cycle that went live on 6 April 2026, and the post-Autumn-2024 CGT rates of 18% and 24% on residential disposals. Each is worked through with figures sized to the central-London market, alongside when a portfolio investor is better off with specialist advice."
 schema: ""
 faqs:
   - question: "Can I offset mortgage interest against my buy-to-let rental income in London?"
@@ -30,52 +30,52 @@ faqs:
   - question: "Do I need a London-based accountant for my London buy-to-lets?"
     answer: "Not strictly. Tax legislation is national, so a specialist property accountant anywhere in the UK can advise on Section 24, SDLT, CGT, and incorporation. What matters is property-tax specialism, not postcode. London-specific value comes in three areas: knowledge of borough-level selective and additional HMO licensing (which varies sharply between, say, Tower Hamlets and Richmond), familiarity with the leasehold and service-charge structures of major central-London developments, and pricing benchmarks calibrated to the London letting market for FRS 102 fair-value disclosures in limited companies."
   - question: "Are non-resident London landlords taxed differently?"
-    answer: "Yes. Non-UK resident landlords must operate under the Non-Resident Landlord Scheme (NRLS): either the letting agent withholds 20% basic-rate tax on the net rents and remits it to HMRC, or the landlord registers (form NRL1 for individuals, NRL2 for companies) and receives rents gross. UK rental profits are taxed at UK rates regardless of residency. Non-residents also pay an additional 2% SDLT surcharge on purchases and must report any UK residential property disposal within 60 days under the UK Property CGT service, even where no UK income tax return is otherwise required."
+    answer: "Yes. Non-UK resident landlords must operate under the Non-Resident Landlord Scheme (NRLS): either the letting agent withholds 20% basic-rate tax on the net rents and remits it to HMRC, or you register (form NRL1 for individuals, NRL2 for companies) and receive rents gross. UK rental profits are taxed at UK rates regardless of residency. Non-residents also pay an additional 2% SDLT surcharge on purchases and must report any UK residential property disposal within 60 days under the UK Property CGT service, even where no UK income tax return is otherwise required."
   - question: "How does the abolition of the Furnished Holiday Lettings regime affect London short lets?"
     answer: "The FHL regime was abolished on 6 April 2025. From that date, qualifying-FHL properties are treated as ordinary residential lettings: no more capital allowances on furnishings (only the replacement-of-domestic-items relief), no more pensionable trading income, no more business asset disposal relief on sale, and Section 24 applies to mortgage interest. Many London Airbnb-style operators in zones 1-2 were affected. If you previously held FHL property, the transition rules in Finance Act 2025 cover the unwinding of pooled capital allowances and any carried-forward FHL losses."
   - question: "Do London landlords face borough-level licensing costs that affect tax?"
     answer: "Yes. Most central and inner London boroughs run additional or selective licensing schemes. Tower Hamlets, Newham, Brent, Croydon, Hackney, Waltham Forest, and Southwark all have wide-area schemes. Licensing fees, typically £500-£1,500 per property for five years, are revenue expenses for tax purposes and deductible against rental income. Failing to obtain a required licence is a strict-liability offence under the Housing Act 2004 (criminal conviction plus rent repayment order of up to 2 years for the tenant), and HMRC will not allow loss relief for fines or penalties."
   - question: "When should I switch property accountants?"
     answer: "Switch if your current adviser has not modelled your post-Section-24 personal vs limited company position, has not raised MTD for ITSA registration before April 2026 (or April 2027 once the £30,000 threshold bites), still talks about a 3% SDLT surcharge (which became 5% on 31 October 2024) or a £6,000 CGT annual exempt amount (which became £3,000 in 2024/25), or treats your portfolio as four separate tax returns rather than a single planning unit. London portfolios above £1.5m of gross value almost always justify a specialist adviser over a high-street generalist."
-  - question: "What is the difference between a property specialist accountant and a general accountant?"
+  - question: "What is the difference between a London property accountant and a general accountant?"
     answer: "A general accountant handles a broad mix of clients and knows the basics of Self Assessment and corporation tax, but rarely works inside the rules that govern rental income. A property specialist accountant works exclusively with landlords, developers, and investors, so Section 24, capital gains on disposals, ATED, the Non-Resident Landlord Scheme, and the personal-versus-limited-company decision are core competence. The practical difference shows up in three places: a generalist may still treat mortgage interest as a deductible expense, may miss the 60-day CGT reporting window, and rarely models incorporation, whereas a specialist gets all three right by default."
   - question: "What qualifications should a property specialist accountant in London have?"
     answer: "Look for membership of a recognised professional body, such as the Association of Taxation Technicians (ATT), Chartered Tax Adviser (CTA), the Institute of Chartered Accountants in England and Wales (ICAEW), or the Association of Chartered Certified Accountants (ACCA). Subscriptions to bodies on HMRC's approved list (List 3) are tax-deductible for the adviser, so a genuine specialist keeps their qualifications current. Beyond the letters after their name, ask how much of their practice is property-focused and what types of property they handle, since a true specialist deals with buy-to-let, HMO, commercial, and development clients day in and day out."
   - question: "Do I need a property accountant if I only have one London rental property?"
-    answer: "Often, yes. The canonical advice on this page is sized to large portfolios, but the core rules apply to a single property too. If even one mortgaged London flat clears the MTD for ITSA qualifying-income threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028), you must keep digital records and file quarterly. The Section 24 finance-cost restriction and the eventual 60-day CGT filing on disposal apply regardless of portfolio size. A property accountant ensures you claim every allowable expense and meet each deadline, which on a single London property frequently saves more than the engagement costs."
+    answer: "Often, yes. The big-portfolio figures get the attention, but the core rules apply to a single property too. If even one mortgaged London flat clears the MTD for ITSA qualifying-income threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028), you must keep digital records and file quarterly. The Section 24 finance-cost restriction and the eventual 60-day CGT filing on disposal apply regardless of portfolio size. A property accountant ensures you claim every allowable expense and meet each deadline, which on a single London property frequently saves more than the engagement costs."
   - question: "What cloud accounting software do property accountants use for landlords?"
     answer: "Most specialist property accountants run client portfolios on cloud accounting software such as Xero, QuickBooks, or FreeAgent, with an online client portal for document sharing, digital receipt capture, and real-time rental reporting property by property. The important point for 2026 is that the software must be on HMRC's list of MTD-for-ITSA compatible products, because sole-trader landlords above the qualifying-income threshold now keep digital records and file quarterly updates through it rather than through a manual spreadsheet at year end. A specialist will map each property's rent account to the correct MTD categories at set-up so the quarterly submissions reconcile cleanly."
   - question: "Do property accountants handle commercial and mixed-use London property too?"
-    answer: "A genuine property specialist (sometimes searched for as a real estate accountant or commercial property accountant) deals with the full range, not just residential buy-to-let. That includes commercial lettings, mixed-use buildings, commercial-to-residential conversions, and development clients, each of which carries different VAT, capital allowances, and SDLT treatment from a standard residential let. London's stock is unusually mixed, so a specialist who works across buy-to-let, HMO, commercial, and development is better placed than a generalist or a purely residential adviser to model a portfolio that spans several property types."
+    answer: "A genuine property specialist (sometimes searched for as a real-estate accountant or commercial property accountant) deals with the full range, not just residential buy-to-let. That includes commercial lettings, mixed-use buildings, commercial-to-residential conversions, and development clients, each carrying different VAT, capital allowances, and SDLT treatment from a standard residential let. London's stock is unusually mixed, so a specialist who works across buy-to-let, HMO, commercial, and development is better placed than a generalist or a purely residential adviser to model a portfolio that spans several property types."
 ---
 
-<p>London buy-to-let is the most heavily taxed corner of the UK residential market in 2026/27. The 5% additional-dwellings SDLT surcharge (raised from 3% on 31 October 2024) hits every purchase. Section 24 has reduced higher-rate landlords' mortgage interest relief to a flat 20% basic-rate credit since 6 April 2020. Making Tax Digital for Income Tax (MTD for ITSA) went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000, and the threshold drops to £30,000 in 2027 and £20,000 in 2028. Annual Tax on Enveloped Dwellings (ATED) applies to company-held high-value flats. The post-Autumn-2024 CGT rates of 18% and 24% bite on disposal. A specialist <strong>buy-to-let accountant in London</strong> exists to convert that pile of rules into a coherent plan for a specific portfolio.</p>
+<p>London buy-to-let is the most heavily taxed corner of the UK residential market in 2026/27. The 5% additional-dwellings SDLT surcharge (raised from 3% on 31 October 2024) hits every purchase. Section 24 has reduced higher-rate landlords' mortgage interest relief to a flat 20% basic-rate credit since 6 April 2020. Making Tax Digital for Income Tax (MTD for ITSA) went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000, and the threshold drops to £30,000 in 2027 and £20,000 in 2028. Annual Tax on Enveloped Dwellings (ATED) applies to company-held high-value flats. The post-Autumn-2024 CGT rates of 18% and 24% bite on disposal. A specialist <strong>buy-to-let accountant in London</strong> turns that pile of rules into a coherent plan for your portfolio.</p>
 
-<p>This page sets out the issues that actually matter for London landlords and investors in 2026/27 with worked figures sized to the central-London market. It is the investor-focused companion to our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a London property accountant</a> guide.</p>
+<p>Below are the issues that actually move the numbers for London landlords and investors in 2026/27, with worked figures sized to the central-London market. If you are still choosing an adviser, our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a London property accountant</a> guide takes you through it. If your property sits outside the capital, our <a href="/">property accountants</a> page covers UK-wide Section 24, MTD, and incorporation.</p>
 
 <h2>Why London Buy-to-Let Is Taxed Differently in Practice</h2>
 
 <p>Tax law is national. The way it lands in London is local. Three structural features push the average London buy-to-let into a different tax position than the same gross rent would face in, say, Wolverhampton or Swansea.</p>
 
 <ul>
-<li><strong>Average purchase price.</strong> An entry-level Zone 3 one-bed flat at around £400,000 attracts the 5% additional-dwellings surcharge from the first pound, plus standard SDLT, so the buyer hits £30,000 of total SDLT before they have collected a month's rent.</li>
-<li><strong>Higher leverage and lower gross yields.</strong> Central London gross yields of 3.5% to 4.5% on a 75% LTV mortgage mean the interest line is a huge fraction of rent. Under Section 24 that fraction now sits above the line, dragging the headline taxable rental profit up well above true cash profit.</li>
-<li><strong>Bigger gains, smaller AEA.</strong> A 10-year-held Zone 2 flat carrying a £200,000 capital gain has been a routine reality for London investors. The CGT annual exempt amount fell from £12,300 to £6,000 in 2023/24 and to £3,000 from 2024/25, so almost the entire gain is now in charge.</li>
+<li><strong>Average purchase price.</strong> An entry-level Zone 3 one-bed flat at around £400,000 attracts the 5% additional-dwellings surcharge from the first pound, plus standard SDLT, so you hit £30,000 of total SDLT before you have collected a month's rent.</li>
+<li><strong>Higher leverage and lower gross yields.</strong> Central London gross yields of 3.5% to 4.5% on a 75% LTV mortgage mean the interest line is a huge fraction of rent. Under Section 24 that fraction now sits above the line, dragging your headline taxable rental profit up well above your true cash profit.</li>
+<li><strong>Bigger gains, smaller AEA.</strong> A 10-year-held Zone 2 flat carrying a £200,000 capital gain is a routine reality in London. The CGT annual exempt amount fell from £12,300 to £6,000 in 2023/24 and to £3,000 from 2024/25, so almost the entire gain is now in charge.</li>
 </ul>
 
-<p>Each of these creates a planning lever, and each is a place where a specialist saves more in tax than the fee they charge.</p>
+<p>Each of these is a planning lever, and each is a place where a specialist saves you more in tax than the fee they charge.</p>
 
-<h2>Property Specialist Accountant vs High-Street Generalist</h2>
+<h2>London Property Accountant vs High-Street Generalist</h2>
 
-<p>The phrase people search for most is <strong>property specialist accountant</strong>, and the contrast with a high-street generalist is the whole reason the search exists. A general practice accountant handles a broad mix of clients, from cafes to consultancies, and knows the basics of Self Assessment and corporation tax. They rarely live inside the rules that govern rental income, which is exactly where a property accountant specialist earns their keep.</p>
+<p>The phrase people search for most is <strong>property specialist accountant</strong>, and the contrast with a high-street generalist is the whole reason the search exists. A general practice accountant handles a broad mix of clients, from cafes to consultancies, and knows the basics of Self Assessment and corporation tax. They rarely live inside the rules that govern rental income, which is where a property accountant specialist earns their keep, and where the gap costs you money.</p>
 
 <ul>
 <li><strong>Section 24 awareness.</strong> A generalist may still treat mortgage interest as a deductible expense. A property specialist knows finance costs have been outside the rental computation since 6 April 2020 and only generate a 20% basic-rate credit, and they build the higher headline profit, personal-allowance taper, and child-benefit charge interactions into the plan.</li>
 <li><strong>CGT on disposal.</strong> A generalist may miss the 60-day UK Property reporting window entirely. A specialist drafts the computation from the exchange paperwork, applies any private-residence or letting relief, and files within window.</li>
-<li><strong>Structure advice.</strong> A generalist rarely models personal ownership against a limited company or special purpose vehicle. A specialist runs the incorporation arithmetic, including the SDLT and CGT cost of transferring properties in, before recommending anything.</li>
+<li><strong>Structure advice.</strong> A generalist rarely models personal ownership against a limited company or special purpose vehicle. A specialist runs the incorporation arithmetic, including the SDLT and CGT cost of transferring your properties in, before recommending anything.</li>
 </ul>
 
-<p>In short, a property specialist accountant works exclusively with landlords, developers, and investors, so rental income, capital gains on property disposals, and the tax of different ownership structures are core competence rather than an occasional sideline.</p>
+<p>A property specialist works only with landlords, developers, and investors, so rental income, capital gains on property disposals, and the tax of different ownership structures are core competence, not an occasional sideline.</p>
 
 <h2>Section 24 for Higher-Rate London Landlords (Worked Example)</h2>
 
@@ -83,7 +83,7 @@ faqs:
 
 <h3>A typical Zone 2 portfolio</h3>
 
-<p>Consider a 45-year-old higher-rate London landlord, employed PAYE on £85,000, with three flats in Wandsworth.</p>
+<p>Say you are 45, a higher-rate taxpayer employed on PAYE of £85,000, with three flats in Wandsworth.</p>
 
 <table>
 <thead>
@@ -100,7 +100,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The same cash position now produces £7,000 more income tax. The higher taxable profit also drags this landlord further over the £100,000 personal allowance taper threshold, costing a further £2,500-£3,000 of effective tax on their PAYE income. Section 24 is the trigger for most London incorporation decisions, but it is not automatically the right answer. The mechanics are set out in our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>.</p>
+<p>The same cash position now produces £7,000 more income tax. The higher taxable profit also drags you further over the £100,000 personal allowance taper threshold, costing a further £2,500-£3,000 of effective tax on your PAYE income. Section 24 is the trigger for most London incorporation decisions, though it is not automatically the right answer. For the full mechanics, see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>.</p>
 
 <aside>
 <p>Higher-rate London landlord and not sure whether to incorporate?</p>
@@ -151,7 +151,7 @@ faqs:
 <li>A modest three-property portfolio in Walthamstow, Croydon, or Wood Green will sit above the £50,000 (2026) threshold from day one.</li>
 </ul>
 
-<p>The practical consequences for landlords already in MTD from 6 April 2026 are quarterly updates due 7 August (Q1), 7 November (Q2), 7 February (Q3), and 7 May (Q4), with a Final Declaration by 31 January following the tax year. We covered software choice in our <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">best MTD software for landlords 2026</a> guide.</p>
+<p>If you are already in MTD from 6 April 2026, your quarterly updates are due 7 August (Q1), 7 November (Q2), 7 February (Q3), and 7 May (Q4), with a Final Declaration by 31 January following the tax year. For which software to use, see our <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">best MTD software for landlords 2026</a> guide.</p>
 
 <h2>ATED on Company-Held London Property</h2>
 
@@ -175,9 +175,9 @@ faqs:
 
 <h2>Capital Gains Tax on London Disposals</h2>
 
-<p>The residential CGT higher rate fell from 28% to 24% with effect from 6 April 2024 (Finance (No.2) Act 2024); the lower rate stayed at 18%. The annual exempt amount stayed at £3,000 for 2026/27. So a higher-rate London landlord disposing of a £400,000-purchase Zone 2 flat for £700,000 in 2026/27, after £15,000 of qualifying improvement costs and £8,000 of disposal costs (legal, agent), has a gain of £277,000, taxable on £274,000 at 24% = £65,760.</p>
+<p>The residential CGT higher rate fell from 28% to 24% with effect from 6 April 2024 (Finance (No.2) Act 2024); the lower rate stayed at 18%. The annual exempt amount stayed at £3,000 for 2026/27. So if you are a higher-rate taxpayer selling a £400,000-purchase Zone 2 flat for £700,000 in 2026/27, after £15,000 of qualifying improvement costs and £8,000 of disposal costs (legal, agent), your gain is £277,000, taxable on £274,000 at 24% = £65,760.</p>
 
-<p>The most-missed mechanic is the <strong>60-day reporting and payment window</strong> introduced by Schedule 2 to the Finance Act 2019 (the original 30-day window was extended to 60 days by the Finance Act 2022 for completions on or after 27 October 2021): the disposal must be reported and the tax paid within 60 days of completion through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>, separately from the Self Assessment return. Penalties under Schedule 55 FA 2009 start at £100, rise to £300 after six months, and continue rising. Daily penalties can apply in egregious cases. We have rewritten the disposal mechanics in detail in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT on UK residential property sale</a> guide.</p>
+<p>The most-missed mechanic is the <strong>60-day reporting and payment window</strong> introduced by Schedule 2 to the Finance Act 2019 (the original 30-day window was extended to 60 days by the Finance Act 2022 for completions on or after 27 October 2021): the disposal must be reported and the tax paid within 60 days of completion through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>, separately from the Self Assessment return. Penalties under Schedule 55 FA 2009 start at £100, rise to £300 after six months, and continue rising. Daily penalties can apply in egregious cases. For the disposal mechanics step by step, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT on UK residential property sale</a> guide.</p>
 
 <aside>
 <p>About to exchange on a London buy-to-let sale?</p>
@@ -186,16 +186,16 @@ faqs:
 
 <h2>Incorporation: When the Limited-Company Route Wins for London Landlords</h2>
 
-<p>The incorporation question is the central planning decision for a London portfolio. The arithmetic usually favours a limited company when:</p>
+<p>This is the central planning decision for a London portfolio. The arithmetic usually favours a limited company when:</p>
 
 <ul>
-<li>The landlord is a higher-rate or additional-rate taxpayer.</li>
-<li>The portfolio has meaningful mortgage interest (the line where Section 24 bites hardest).</li>
-<li>Profits are being retained to acquire further properties, not drawn for living costs.</li>
-<li>The landlord intends to hold for at least five to seven years (long enough for the corporation-tax saving to outweigh the SDLT and CGT cost of transferring existing properties in).</li>
+<li>You are a higher-rate or additional-rate taxpayer.</li>
+<li>Your portfolio carries meaningful mortgage interest (the line where Section 24 bites hardest).</li>
+<li>You are retaining profits to acquire further properties, not drawing them for living costs.</li>
+<li>You intend to hold for at least five to seven years (long enough for the corporation-tax saving to outweigh the SDLT and CGT cost of transferring existing properties in).</li>
 </ul>
 
-<p>The pillar guide on the structure mechanics is <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">our BTL limited company guide</a>. For London-specific transfer-in planning, three points matter:</p>
+<p>For how the structure works end to end, see our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company guide</a>. For London-specific transfer-in planning, three points matter:</p>
 
 <ol>
 <li><strong>SDLT on transfer in.</strong> A sale-and-purchase between you and your wholly-owned company is treated for SDLT as a transaction at market value (FA 2003 s.53), which means the full 5% additional-dwellings surcharge plus standard rates applies. On a £1m portfolio that is £93,750 of SDLT before any tax saving has accrued.</li>
@@ -205,14 +205,14 @@ faqs:
 
 <h2>Non-Resident Landlords with London Property</h2>
 
-<p>A significant share of central-London buy-to-let is held by non-UK residents. The Non-Resident Landlord Scheme requires either:</p>
+<p>A significant share of central-London buy-to-let is held by non-UK residents. If that is you, the Non-Resident Landlord Scheme requires either:</p>
 
 <ul>
-<li>The letting agent (or tenant if no agent) to withhold 20% basic-rate tax from net rents and pay it to HMRC quarterly; or</li>
-<li>The landlord to register via <strong>form NRL1</strong> (individuals) or <strong>NRL2</strong> (companies) and receive rents gross, with tax settled through annual Self Assessment.</li>
+<li>Your letting agent (or the tenant, if you have no agent) to withhold 20% basic-rate tax from net rents and pay it to HMRC quarterly; or</li>
+<li>You to register via <strong>form NRL1</strong> (individuals) or <strong>NRL2</strong> (companies) and receive rents gross, with tax settled through annual Self Assessment.</li>
 </ul>
 
-<p>UK rental profits are taxed at UK rates regardless of residency, and most non-resident landlords are better off in the gross-payment scheme. CGT on disposal is reportable within 60 days under the same UK Property CGT service that UK residents use. The 2% non-resident SDLT surcharge applies on purchases. We cover the mechanics in our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord tax guide</a>.</p>
+<p>UK rental profits are taxed at UK rates regardless of residency, and most non-resident landlords are better off in the gross-payment scheme. CGT on disposal is reportable within 60 days under the same UK Property CGT service that UK residents use, and the 2% non-resident SDLT surcharge applies on purchases. For the full detail, see our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord tax guide</a>.</p>
 
 <h2>Borough-Level Licensing in London (Tax Treatment)</h2>
 
@@ -228,12 +228,12 @@ faqs:
 
 <h2>What a Property Accountant Actually Does Day to Day</h2>
 
-<p>Before the high-value planning, there is a core annual job that every <strong>property accountant</strong> performs for a landlord, and it is the part most people picture when they search for an <strong>accountant for property</strong>. The day-to-day services are:</p>
+<p>Before the high-value planning, there is a core annual job that every <strong>property accountant</strong> does for you, and it is the part most people picture when they search for an <strong>accountant for property</strong>. The day-to-day services are:</p>
 
 <ul>
 <li><strong>Tax return preparation.</strong> Preparing and filing the Self Assessment return with the SA105 property pages (or the CT600 and statutory accounts where the portfolio sits in a limited company), so rental income, the Section 24 finance-cost credit, and any disposals are reported correctly.</li>
 <li><strong>Bookkeeping.</strong> Recording rent received and costs paid across the year, property by property, which also lays the digital-records foundation that MTD for ITSA now requires.</li>
-<li><strong>Allowable-expense capture.</strong> Making sure every deductible cost is claimed (letting agent fees, repairs as distinct from improvements, insurance, ground rent and service charges, gas safety and EICR certification, accountancy fees, and replacement of domestic items), since missed expenses are the most common reason a landlord overpays.</li>
+<li><strong>Allowable-expense capture.</strong> Making sure every deductible cost is claimed (letting agent fees, repairs as distinct from improvements, insurance, ground rent and service charges, gas safety and EICR certification, accountancy fees, and replacement of domestic items), since missed expenses are the most common reason you overpay.</li>
 <li><strong>CGT computations.</strong> Calculating the gain on a sale, applying the annual exempt amount and any reliefs, and handling the 60-day UK Property filing.</li>
 </ul>
 
@@ -259,7 +259,7 @@ faqs:
 <li><strong>ICAEW</strong> (Institute of Chartered Accountants in England and Wales) or <strong>ACCA</strong> (Association of Chartered Certified Accountants) for the accountancy side.</li>
 </ul>
 
-<p>Membership of an HMRC-approved professional body is also useful to the adviser themselves and worth knowing as a landlord: subscriptions to bodies on HMRC's approved list (List 3) are tax-deductible, so a genuine specialist keeps their qualifications current as a matter of course. Ask, too, how much of their practice is property-focused and what mix of clients they hold (buy-to-let, HMO, commercial, development), because a true specialist lives and breathes property tax rather than treating it as a sideline.</p>
+<p>Membership of an HMRC-approved professional body is worth knowing about: subscriptions to bodies on HMRC's approved list (List 3) are tax-deductible, so a genuine specialist keeps their qualifications current as a matter of course. Ask, too, how much of their practice is property-focused and what mix of clients they hold (buy-to-let, HMO, commercial, development), because a true specialist lives and breathes property tax rather than treating it as a sideline.</p>
 
 <p>Then put the technical questions to any candidate London property accountant:</p>
 
@@ -271,15 +271,15 @@ faqs:
 <li>Do you model partnership incorporation relief for SDLT-free transfer into a limited company where applicable? (Should be a confident yes for a genuine portfolio specialist.)</li>
 </ul>
 
-<p>Anyone unable to answer those without checking is not the right adviser for a serious London buy-to-let portfolio. The longer companion piece is our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">guide to finding the best property accountant in London</a>, which walks through the selection process in full.</p>
+<p>Anyone unable to answer those without checking is not the right adviser for a serious London buy-to-let portfolio. For the selection process in full, see our <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">guide to finding the best property accountant in London</a>.</p>
 
-<p>One more point, because the canonical case above is pitched at large portfolios: specialist advice is not only for £1.5m-plus investors. Even a single mortgaged London flat that clears the MTD for ITSA threshold and sits inside the Section 24 finance-cost restriction benefits from a property accountant, because the quarterly digital filing, the 20% credit mechanics, and the eventual CGT on disposal all apply just as much to one property as to ten.</p>
+<p>The worked figures above are pitched at large portfolios, but specialist advice is not only for £1.5m-plus investors. Even a single mortgaged London flat that clears the MTD for ITSA threshold and sits inside the Section 24 finance-cost restriction benefits from a property accountant, because the quarterly digital filing, the 20% credit mechanics, and the eventual CGT on disposal apply just as much to one property as to ten.</p>
 
 <h2>Cloud Accounting, Client Portals, and MTD-Compatible Software</h2>
 
-<p>The arrival of Making Tax Digital for Income Tax has turned software from a back-office convenience into a compliance requirement. From 6 April 2026, a sole-trader London landlord over the qualifying-income threshold keeps digital records and files quarterly through MTD-compatible software, not through a year-end spreadsheet. That changes how a modern property accountant works with you day to day.</p>
+<p>Making Tax Digital for Income Tax has turned software from a back-office convenience into a compliance requirement. From 6 April 2026, if you are a sole-trader landlord over the qualifying-income threshold you keep digital records and file quarterly through MTD-compatible software, not through a year-end spreadsheet. That changes how a modern property accountant works with you day to day.</p>
 
-<p>Most specialist practices now run client portfolios on cloud accounting software, typically <strong>Xero, QuickBooks, or FreeAgent</strong>, with an online client portal layered on top for secure document sharing, digital receipt and record capture, and real-time rental reporting property by property. For a London landlord juggling several flats across different boroughs (and often several letting agents), the practical benefit is that rent received, costs paid, and the documents behind them sit in one place rather than in a shoebox reconciled once a year.</p>
+<p>Most specialist practices now run client portfolios on cloud accounting software, typically <strong>Xero, QuickBooks, or FreeAgent</strong>, with an online client portal layered on top for secure document sharing, digital receipt and record capture, and real-time rental reporting property by property. If you are juggling several flats across different boroughs (and often several letting agents), the benefit is that rent received, costs paid, and the documents behind them sit in one place rather than in a shoebox reconciled once a year.</p>
 
 <p>Three points are worth checking when an adviser describes their systems:</p>
 
@@ -289,11 +289,11 @@ faqs:
 <li><strong>Digital record capture.</strong> An online portal with receipt capture means the EICR certificate, the service-charge demand, and the letting-agent statement are captured as they arrive, which is exactly the digital-records discipline MTD now requires.</li>
 </ul>
 
-<p>We set out how to compare the products themselves, and which ones are confirmed on HMRC's compatible list, in our <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">best MTD software for landlords 2026</a> guide.</p>
+<p>For how the products compare, and which ones are confirmed on HMRC's compatible list, see our <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">best MTD software for landlords 2026</a> guide.</p>
 
 <h2>Inheritance Tax and Succession Planning for a London Portfolio</h2>
 
-<p>A central-London buy-to-let portfolio is often the largest asset a family owns, and it is fully exposed to inheritance tax. Residential lets do not qualify for Business Property Relief (HMRC treats letting as an investment activity rather than a trade), so a portfolio sits in the estate at full market value and faces the 40% rate above the available nil-rate bands. With London values where they are, that exposure is substantial and is the one tax a landlord cannot simply file their way out of at the last minute.</p>
+<p>A central-London buy-to-let portfolio is often the largest asset a family owns, and it is fully exposed to inheritance tax. Residential lets do not qualify for Business Property Relief (HMRC treats letting as an investment activity rather than a trade), so the portfolio sits in your estate at full market value and faces the 40% rate above the available nil-rate bands. With London values where they are, that exposure is substantial, and it is the one tax you cannot simply file your way out of at the last minute.</p>
 
 <p>The planning levers a specialist will model are long-term and need to start years before they are needed:</p>
 
@@ -303,7 +303,7 @@ faqs:
 <li><strong>Share-gifting via a company.</strong> Where a portfolio is already held in (or is being moved into) a limited company, gifting shares to the next generation over time is administratively cleaner than transferring individual titles, and it dovetails with the incorporation analysis set out in our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a>.</li>
 </ul>
 
-<p>None of these is a default answer. The right route depends on the landlord's age, whether profits are being drawn or retained, and how the portfolio is held now, which is exactly why succession planning belongs in the same conversation as the incorporation and CGT modelling above rather than being bolted on at the end.</p>
+<p>None of these is a default answer. The right route depends on your age, whether you are drawing or retaining profits, and how the portfolio is held now, which is why succession planning belongs in the same conversation as the incorporation and CGT modelling above rather than being bolted on at the end.</p>
 
 <h2>Related Reading</h2>
 

@@ -3,99 +3,117 @@ title: "Laboratory Costs in Dental Accounts: A UK Guide"
 slug: "laboratory-costs-dental-accounts-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"
 date: "2026-03-28"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
-metaTitle: "Laboratory Costs in Dental Accounts | UK Dentist Guide"
-metaDescription: "Lab costs typically make up 8–15% of practice turnover. Cost of sales vs overhead classification, VAT recovery, and what your accounts should show."
+metaTitle: "Lab Costs in Dental Accounts | UK Dentist Guide"
+metaDescription: "How lab fees sit in your accounts, the VAT nuance on prostheses, lab cost as a percentage of revenue, and the control levers that protect your margin."
 altText: "UK dental practice laboratory invoice and accounting ledger showing cost of sales classification"
-image: ""
+image: "https://images.pexels.com/photos/8297016/pexels-photo-8297016.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-holding-a-calculator-and-pen-8297016/"
 h1: "Laboratory Costs in Dental Accounts: How to Account for Lab Expenses"
-summary: "Laboratory costs are often one of the largest expenses in dental practice accounts. Understanding how to account for them correctly affects your tax liability and business reporting."
+summary: "Laboratory costs are often one of the largest variable expenses in dental practice accounts. Classifying them correctly, understanding the VAT position, and tracking lab cost as a percentage of revenue all feed straight into your margin and your tax position."
+keyTakeaways:
+  - "Laboratory fees commonly run at roughly 8% to 15% of turnover, sitting higher for prosthetic, implant or cosmetic caseloads."
+  - "Lab fees tied to patient treatment belong in cost of sales so gross profit reflects the true return, while in-house maintenance and admin stay in overheads."
+  - "Supply of dental prostheses by a registered dentist, DCP or dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7."
+  - "Standard-rated lab VAT is usually unrecoverable for an exempt dental practice, so the VAT-inclusive figure becomes the real cost of the work."
+  - "Who bears the lab cost on associate work is set by the agreement, commonly deducted before the fee split so both parties share it in proportion."
 schema: ""
 faqs:
-  - question: "Should laboratory costs be treated as cost of sales or expenses?"
-    answer: "Laboratory costs for patient-specific treatments should typically be classified as cost of sales, not general expenses. This gives you accurate gross profit margins and better matches costs with related revenue. General lab expenses like equipment maintenance remain as practice overheads."
-  - question: "Can I recover VAT on laboratory costs for NHS work?"
-    answer: "Yes, if your practice is VAT registered, you can typically recover VAT on laboratory costs even for NHS treatments. The lab expense is an input cost to your business, and NHS exemption doesn't prevent VAT recovery on practice expenses."
-  - question: "When should I record laboratory costs in my accounts?"
-    answer: "This depends on your accounting method. Cash basis practices record costs when paying the invoice. Accruals basis practices record costs when receiving the lab work. Practices over £150,000 turnover must use accruals basis."
-  - question: "What percentage of turnover should laboratory costs represent?"
-    answer: "Laboratory costs typically represent 8-15% of practice turnover, varying by treatment mix. Higher percentages might indicate pricing issues, while very low percentages could suggest limited lab-based treatment offerings. Regular monitoring helps with benchmarking and pricing decisions."
+  - question: "Should laboratory costs be treated as cost of sales or general expenses?"
+    answer: "Lab fees tied to specific patient treatments are best classified as a direct cost of sales, so they sit against the revenue they generate and give you a true gross margin. General lab-related costs, such as in-house equipment maintenance or models used for practice administration, stay in overheads. The split matters because cost of sales drives your gross profit, while overheads only affect net profit."
+  - question: "Can a dental practice reclaim the VAT on laboratory fees?"
+    answer: "It depends on two things: whether your practice is VAT registered, and how your laboratory's supply is treated. The supply of dental prostheses (crowns, bridges, dentures) by a registered dentist, dental care professional or registered dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7. Where your lab is appropriately registered, its supply to you is exempt and there is no VAT to reclaim. Where the lab is not so registered, the work may be standard rated, and because dental care is itself exempt, an exempt practice generally cannot reclaim that input VAT, so it becomes a genuine cost. Always check how your own laboratory invoices."
+  - question: "What percentage of revenue should laboratory costs be?"
+    answer: "Lab costs commonly run at roughly 8 to 15 percent of turnover, varying heavily with treatment mix. A heavily prosthetic, implant or cosmetic caseload sits at the higher end, while a check-up and hygiene heavy book sits lower. The figure matters less in isolation than as a trend you monitor against your fee schedule, so a rising percentage with flat fees signals a margin leak."
+  - question: "Who pays the lab bill on associate work?"
+    answer: "That is set by the associate agreement. The common position is that lab fees on an associate's work are deducted before the fee split is applied, so the associate and the practice share the cost in proportion to the split. Some agreements pass the full lab cost to the associate. The arrangement should be explicit in the contract, because it changes both parties' real take-home and how the cost lands in the accounts."
 ---
 
-<p>Laboratory costs typically represent 8-15% of practice turnover, making them one of your largest expense categories. How you account for these <strong>laboratory expenses</strong> affects both your tax position and the accuracy of your business reporting.</p>
+<p>Laboratory fees are usually one of the largest variable costs in a dental practice, often running at something like 8 to 15 percent of turnover depending on how prosthetic your caseload is. They are a normal, allowable revenue cost, but how you classify them, how you handle the VAT, and how closely you track them as a percentage of revenue all feed directly into your margin and your tax position.</p>
 
-<p>Many practice owners treat all <strong>lab costs</strong> as general expenses, but this approach can distort your true profit margins and create compliance issues with your accountant.</p>
+<p>This guide covers where lab fees sit in the accounts, the VAT nuance that catches a lot of practices out, the lab cost percentage as a working KPI, and the practical levers you can pull to keep the cost under control.</p>
 
-<h2>Laboratory Costs as Cost of Sales</h2>
+<h2>Lab fees are an allowable revenue cost</h2>
 
-<p>In most cases, <strong>laboratory costs</strong> should be classified as cost of sales rather than general practice expenses. This applies when the lab work directly relates to patient treatment you've invoiced.</p>
+<p>Lab fees paid to an external laboratory for patient work are a straightforward allowable expense for tax purposes. They are revenue in nature, not capital, so the full cost reduces taxable profit in the period it relates to. There is no special relief to claim and no capital allowances question for ordinary external lab work, it is simply a trading cost like materials or staff.</p>
 
-<p>Cost of sales treatment means these expenses are matched against the revenue from the specific treatments. For example, if you charge a patient £400 for a crown and pay the <strong>dental lab</strong> £120, that lab cost becomes part of your cost of sales for that treatment.</p>
+<p>The interesting decisions are about presentation rather than allowability: where in the profit and loss account the cost belongs, and how you read it once it is there.</p>
 
-<p>This matching principle gives you clearer gross profit margins and helps with pricing decisions. Your gross profit should reflect the true profitability after direct treatment costs.</p>
+<h2>Cost of sales, not a general overhead</h2>
 
-<h2>When Lab Costs Are General Expenses</h2>
+<p>The most useful way to present external lab fees is as a direct cost of sales, sitting immediately below revenue, rather than buried among general overheads further down the page. The reason is the matching principle: a lab fee is incurred to deliver a specific, invoiced treatment, so it belongs against the revenue from that treatment.</p>
 
-<p>Some <strong>laboratory expenses</strong> don't relate to specific patient treatments and should remain as general expenses:</p>
+<p>Put it in cost of sales and your gross profit reflects the true return after the direct cost of delivering the work. That is the number you actually use to judge whether your fee schedule covers the work behind it. Bury the same fee in overheads and your gross profit looks artificially healthy while your net profit quietly absorbs the hit, which makes pricing problems much harder to spot.</p>
 
-<ul>
-<li>Equipment repairs and maintenance at your lab</li>
-<li>Lab consumables used for practice management (models, trays)</li>
-<li>Training courses at laboratory facilities</li>
-<li>Lab equipment depreciation if you have an in-house facility</li>
-</ul>
+<p>A small subset of lab-related spending is genuinely an overhead and stays out of cost of sales: maintenance on an in-house facility, consumables used for practice administration rather than patient work, and depreciation on any in-house lab equipment. The line to hold is simple: cost of sales tracks revenue, overheads do not.</p>
 
-<p>The distinction matters because cost of sales affects your gross profit calculation, while general expenses impact your net profit after all overheads.</p>
+<table>
+  <thead>
+    <tr><th>Cost</th><th>Where it belongs</th><th>Why</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>External lab fee for a patient crown, bridge or denture</td><td>Cost of sales</td><td>Directly tied to invoiced treatment revenue</td></tr>
+    <tr><td>In-house lab consumables for patient work</td><td>Cost of sales (or materials)</td><td>Consumed to deliver chargeable treatment</td></tr>
+    <tr><td>In-house lab equipment maintenance</td><td>Overhead</td><td>Running cost of the practice, not a single treatment</td></tr>
+    <tr><td>In-house lab equipment (the asset itself)</td><td>Capitalised, then depreciated</td><td>Capital item written down over its life, with capital allowances on the tax side</td></tr>
+    <tr><td>Technician salary in an in-house lab</td><td>Staff costs</td><td>An employment cost, not a cost of sales line</td></tr>
+  </tbody>
+</table>
 
-<h2>Record Keeping for Lab Expenses</h2>
+<h2>The VAT nuance on dental laboratory work</h2>
 
-<p>Proper records for <strong>laboratory expenses</strong> should include:</p>
+<p>This is where lab costs are widely misunderstood, so it is worth getting precisely right. Dental care provided by a registered dentist is VAT exempt. Crucially, so is the supply of dental prostheses. Under VATA 1994 Schedule 9 Group 7, the supply of dental prostheses such as crowns, bridges and dentures by a person on the dentists' register, a registered dental care professional, or a registered dental technician is exempt from VAT.</p>
 
-<ul>
-<li>Original lab invoices with VAT breakdown</li>
-<li>Patient reference numbers linking lab work to treatments</li>
-<li>Delivery notes confirming receipt of work</li>
-<li>Payment records showing when invoices were settled</li>
-</ul>
-
-<p>Many practices use practice management software to link lab costs directly to patient records. This creates an audit trail and helps with cost analysis by treatment type.</p>
-
-<h2>Managing Laboratory Costs Effectively</h2>
-
-<p>Understanding your <strong>lab costs</strong> as a percentage of revenue helps with benchmarking and pricing. Most practices should see lab costs between 8-15% of turnover, varying by treatment mix.</p>
-
-<p>Higher percentages might indicate pricing issues, while very low percentages could suggest you're not offering enough lab-based treatments.</p>
-
-<p>Regular review of lab invoices helps identify billing errors and ensures you're getting value for money. Some practices negotiate monthly payment terms or volume discounts with their preferred laboratories.</p>
-
-<h2>Year-End Considerations</h2>
-
-<p>At year-end, ensure all <strong>laboratory costs</strong> for work delivered are included in your accounts, even if invoices arrive after your accounting date. This prevents profit distortion across accounting periods.</p>
-
-<p>For significant outstanding lab work, your accountant may need to accrue estimated costs to match them with related patient revenue.</p>
-
-<p>If you're considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisition financial due diligence</a>, accurate lab cost accounting becomes crucial for potential buyers assessing your true profit margins.</p>
-
-<h2>VAT Treatment of Laboratory Costs</h2>
-
-<p>VAT on dental laboratory costs requires careful handling. Dental treatment itself is VAT-exempt, but the lab work you purchase is a standard-rated input. If your practice is VAT registered — typically because you offer facial aesthetics or other taxable services — you can recover VAT on lab costs through your VAT return.</p>
-
-<p>Practices that aren't VAT registered absorb the VAT as part of the cost. This makes the gross lab invoice the relevant figure for your accounts. When comparing costs between labs, always compare VAT-inclusive prices if you can't reclaim.</p>
-
-<p>For practices with mixed NHS and private work, ensure your accountant applies the correct partial exemption method if you're VAT registered. This determines what proportion of input VAT on shared costs (including lab work) you can recover.</p>
-
-<h2>Choosing Between In-House and External Labs</h2>
-
-<p>Some practices invest in in-house laboratory facilities, particularly for same-day restorations using CAD/CAM technology. The accounting treatment differs significantly from external lab costs:</p>
+<p>What that means for the bill from your laboratory depends on your lab's own status:</p>
 
 <ul>
-<li><strong>Equipment</strong> — capitalised and depreciated, with capital allowances claimed over the asset's life.</li>
-<li><strong>Materials</strong> — treated as consumables and expensed when used.</li>
-<li><strong>Technician salaries</strong> — staff costs, not cost of sales.</li>
-<li><strong>Maintenance</strong> — general practice expenses.</li>
+<li><strong>Where the laboratory or technician is appropriately registered</strong>, the supply of the prosthesis to you can itself be exempt. There is then no VAT on the invoice to worry about and nothing to reclaim.</li>
+<li><strong>Where the supplier is not so registered</strong>, a commercial laboratory's work may instead be standard rated. The status of a commercial lab can vary, so you cannot assume one treatment for every supplier.</li>
 </ul>
 
-<p>The financial case for in-house lab work depends on volume. Practices producing 15+ units per week often break even compared to external costs, with higher volumes generating clear savings. Below that threshold, external labs usually offer better value.</p>
+<p>The sting is in what happens when a lab charges you standard-rated VAT. Because your own dental care supplies are exempt, your practice generally makes no taxable supplies to set that input VAT against, so you usually cannot reclaim it. The VAT then sticks to you as a true, unrecoverable cost, and the VAT-inclusive figure is the real cost of the work. This is the opposite of the common assumption that a VAT-registered dental practice simply reclaims VAT on its lab bills.</p>
 
-<p>Laboratory cost accounting might seem straightforward, but proper classification and timing can significantly impact your financial reporting and tax position. When in doubt, speak to a specialist dental accountant who understands the nuances of practice-specific expenses.</p>
+<p>There is a narrow exception. A practice that also makes taxable supplies, typically purely cosmetic treatment such as tooth whitening or facial aesthetics, is partially exempt and may recover the slice of input VAT attributable to that taxable activity. Even then, lab work for exempt dental treatment remains irrecoverable, and any shared input VAT is split under a partial exemption calculation.</p>
+
+<p>The practical takeaway is to check how your own laboratory treats its supplies and look at the actual invoices. If a lab is charging you standard-rated VAT that you cannot reclaim, that VAT is part of the cost you should be comparing and controlling, not a recoverable add-on. When in doubt, confirm the position with your accountant before assuming either treatment.</p>
+
+<h2>Lab cost as a percentage of revenue: a working KPI</h2>
+
+<p>Lab cost as a percentage of revenue is one of the cleaner KPIs in a dental practice because it is a direct, mechanical relationship: every prosthetic treatment you invoice carries a lab cost behind it. Tracked over time, the ratio tells you whether your fees are keeping pace with what the lab charges you.</p>
+
+<p>Most practices land somewhere around 8 to 15 percent of turnover, but the band is wide and mix-driven rather than a target in itself. A book heavy with implants, complex restorative work and cosmetic cases will sit at the upper end and beyond, while a practice dominated by examinations, hygiene and routine NHS bands will sit lower. The number on its own says little. The trend says everything.</p>
+
+<p>Read the movement, not the snapshot. A creeping percentage against a static fee schedule means lab prices have risen and your fees have not followed, so margin is leaking on every unit. An unusually low percentage is not automatically good either, it can simply mean you refer most lab-based work elsewhere and are leaving higher-margin treatment on the table. Either way, the ratio is most useful reviewed monthly or quarterly alongside your gross margin, which is one reason it pays to understand <a href="/blog/practice-accounting/reading-dental-practice-profit-loss-account-uk">how to read a dental practice profit and loss account</a> and see how the lab line drives the gross profit figure above it.</p>
+
+<h2>Control levers: managing the materials and lab mix</h2>
+
+<p>Lab cost is one of the more controllable lines in the accounts, because you influence both the price you pay and the volume of work you send out. The levers fall into a few groups.</p>
+
+<h3>Digital workflow</h3>
+
+<p>Intraoral scanning and digital impressions reduce remakes from poor physical impressions, and remakes are pure cost with no offsetting fee. Digital workflows can also open up more competitive lab options, including remote labs, because the file travels instantly rather than a physical impression being couriered. The trade-off is the upfront investment in the scanner, which is a capital decision with its own allowances, so weigh it against your actual prosthetic volume rather than buying on enthusiasm.</p>
+
+<h3>Lab selection and the materials mix</h3>
+
+<p>The choice of laboratory and the materials you specify drive most of the cost. Consolidating work with one or two trusted labs can earn better terms and more consistent quality, which itself cuts remakes. Matching the material to the clinical need rather than defaulting to the premium option on every case keeps the average cost down without compromising care. Reviewing lab invoices regularly also catches billing errors and scope creep before they become the norm. And, as covered above, factor in whether a given lab's VAT treatment leaves you with irrecoverable VAT, because that changes the true comparison between suppliers.</p>
+
+<h3>Who bears the cost in associate splits</h3>
+
+<p>On associate work, the lab fee has to land somewhere, and the associate agreement should say exactly where. The common arrangement is to deduct the lab fee before applying the percentage split, so both the practice and the associate share the cost in line with the split. Some agreements instead pass the full lab cost to the associate. Either is workable, but it must be explicit in the contract, because it materially changes the associate's real earnings and how the cost flows through the practice accounts. An unclear or unspoken arrangement is a recurring source of friction and disputes.</p>
+
+<h2>In-house versus external labs</h2>
+
+<p>Some practices bring lab work in-house, often alongside same-day CAD/CAM restorations. The accounting changes shape entirely. The equipment is capitalised and depreciated, with capital allowances claimed on the tax side. Materials are consumables expensed as used. A technician's pay is a staff cost, and maintenance is an overhead. None of that is cost of sales in the way an external invoice is.</p>
+
+<p>The decision is driven by volume. Above a meaningful throughput of units, an in-house facility can beat external fees once the equipment is paid down. Below that, external labs almost always offer better value once you account for the equipment, the technician and the running costs. The in-house lab line also interacts with your wider cost base, so it is worth viewing through the same lens as your other fixed costs, which is the focus of our guide to <a href="/blog/practice-finance/dental-practice-overhead-costs-management-control">dental practice overhead costs management and control</a>.</p>
+
+<h2>The bottom line</h2>
+
+<p>Lab fees are an allowable revenue cost, but treating them as just another bill leaves money on the table. Classify them as cost of sales so your gross margin tells the truth. Check your laboratory's VAT treatment, because standard-rated lab work is usually an unrecoverable cost for an exempt practice rather than reclaimable VAT. Track the lab cost percentage as a trend against your fees. And use the control levers, digital workflow, lab and materials selection, and clear associate terms, to protect the margin. If you are unsure how the VAT position or the classification applies to your own practice, a specialist dental accountant can confirm the treatment that fits your setup.</p>

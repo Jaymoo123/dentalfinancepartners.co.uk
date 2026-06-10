@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing financial documents and cash flow projections f
 image: ""
 h1: "Solicitor Practice Working Capital: Managing Cash Flow in UK Law Firms"
 summary: "Working capital management is crucial for law firm sustainability. This guide covers calculation methods, optimisation strategies, and practical solutions for maintaining healthy cash flow."
+keyTakeaways:
+  - "A healthy law firm working capital ratio is 1.5 to 2.0, meaning £1.50 to £2.00 of current assets per £1 of current liabilities."
+  - "Client money held in trust must never be included in working capital calculations under the SRA Accounts Rules."
+  - "Target work in progress below 25% of annual turnover and an average debtor collection period under 60 days."
+  - "Interim billing, upfront retainers, and payment on account convert lock-up into cash faster and ease the working capital cycle."
+  - "Prepare rolling 13-week cash flow forecasts, including partner drawings and tax payments, to avoid sudden cash shortfalls."
 schema: ""
 faqs:
   - question: "What is a healthy working capital ratio for a solicitor practice?"

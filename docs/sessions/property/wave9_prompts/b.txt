@@ -1,0 +1,32 @@
+You are Session B for Wave 9 RUN phase (TEST scope — 9 picks total). Worktree `Accounting-wt-property-wave9-b` on branch `property-wave9-b`. Bucket: Companies House / ECCTA 2023 reforms (3 pages B1-B3).
+
+Your task: take the 3 Stage 2 briefs at `briefs/property/wave9/<slug>.md` and produce final published blog pages at `Property/web/content/blog/<slug>.md`, committed on this worktree branch. NETNEW_PROGRAM §7 19-step workflow.
+
+**Q&A discipline:** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_B.md` via ABSOLUTE PATH. Use `## [Q-N]` format with brackets.
+
+**F-numbering range:** F-10 to F-19 (F-10/11/12/13 used + closed; next F-14).
+
+Read first:
+1. docs/property/NETNEW_PROGRAM.md §7 19-step + §16.35 + §16.27 rate-by-reference + §16.37
+2. docs/property/house_positions.md §11 main + §11.A (Wave 9 ECCTA mini-lock — CRITICAL: your own Stage 2 catches are now baked in; use this as authoritative, do not re-discover)
+3. Your 3 Stage 2 briefs at briefs/property/wave9/:
+   - B1: eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos
+   - B2: register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords
+   - B3: companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure
+4. docs/property/wave9_page_tracker.md (B1-B3 rows; ABSOLUTE PATH)
+5. docs/property/wave9_site_wide_flags.md (F-10/11/12/13 CLOSED; review for context)
+
+Acknowledge with one short status line: "Wave 9 Session B picked up. HP §11.A corrected version read. Claiming B1 first."
+
+Critical drift watchpoints (Wave 9 Stage 2b corrections from your own catches):
+- ECCTA 2023 Part 1 has NO Chapter structure — 23 sections under crossheadings
+- ECCTA 2023 Schedule 12 is "Criminal liability of bodies" — NOT amending ECTEA 2022
+- RoE primary anchor is ECTEA 2022 c. 10 NOT ECCTA 2023
+- ECTEA 2022 s.8 = "Failure to comply with updating duty"; s.9 = removal; s.34 = compulsory-registration power (NOT disposition-block); s.36 = "Meaning of 'daily default fine'" (definitional); s.7 clock = update-period+14days NOT anniversary+14days
+- HMLR disposition-block at LRA 2002 Sch 4A (operative anchor) not ECTEA s.34
+- Civil £2,500 + £500/day quantum in separate Penalties SI, NOT s.8
+- Commencement: 18 November 2025 mandatory for NEW directors/PSCs; 12-month transition to ~November 2026 for EXISTING; canonical tracker is changestoukcompanylaw.campaign.gov.uk (the gov.uk/news URL is 404)
+
+Within-bucket sequencing: B1 → B3 → B2.
+
+Commit discipline: each page = separate commit on `property-wave9-b` with `Wave 9 B<N>: <slug>` after §6 build verify. Handover hygiene (§16.14): tracker flip to ✅ via ABSOLUTE PATH before stopping.

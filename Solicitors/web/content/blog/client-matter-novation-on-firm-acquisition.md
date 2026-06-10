@@ -11,7 +11,12 @@ altText: "Solicitor reviewing client matter novation documents during a law firm
 image: ""
 h1: "How Do Solicitors Handle Client Matter Novation on a Law Firm Acquisition?"
 summary: "When a solicitor buys a law firm, each client matter must be formally novated to the new entity. This guide explains the SRA requirements, the client consent process, and how to document the transfer correctly."
-schema: ""
+keyTakeaways:
+  - "Novation, not assignment, transfers a client retainer to the new firm; without it the old firm stays liable and the new firm has no right to charge or act."
+  - "The SRA requires informed, written consent for each matter transferred; you cannot assume consent, even from long-standing clients."
+  - "Use a written tripartite novation agreement signed by the old firm, the new firm and the client; an oral agreement or email exchange is not enough."
+  - "Client money must move from the old firm's client account to the new firm's and be recorded as a transfer from the old firm, not a new client receipt."
+  - "WIP is typically sold to the new firm: the old firm is taxed on the disposal as trading profit, and the new firm recognises income when the work is billed."
 faqs:
   - question: "Do I need client consent for every matter when buying a law firm?"
     answer: "Yes. The SRA Code of Conduct requires informed client consent for each matter transferred. You cannot assume consent, even for long-standing clients. Each client must receive a written explanation of the transfer and sign a consent form. If a client does not respond, you should treat the matter as terminated and return the file and any money held. The only exception is for matters that have been concluded and where no client money remains, but even then, it is best practice to obtain consent to hold the file."

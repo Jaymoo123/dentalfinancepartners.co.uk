@@ -11,7 +11,12 @@ altText: "Chartered legal executive reviewing CILEX fee invoice at a solicitor's
 image: ""
 h1: "Can a Chartered Legal Executive Claim CILEX Fees as Tax Deductible?"
 summary: "CILEX membership fees and exam costs are typically tax deductible for employed solicitors and legal executives. The rules depend on whether the cost is incurred as an employee or as a self-employed locum solicitor."
-schema: ""
+keyTakeaways:
+  - "Annual CILEX membership fees are almost always deductible for an employed legal executive, because membership is a condition of holding the title and doing the work."
+  - "Employees face the strict wholly, exclusively and necessarily test (ITA 2007, s.336); voluntary exams not required by the job are unlikely to qualify."
+  - "Self-employed locums use the wholly and exclusively test (s.34), so membership and CPD are deductible, but exam fees for a new qualification are capital and denied."
+  - "If the firm pays CILEX fees directly to the institute there is no benefit-in-kind; a reimbursement is taxable earnings but usually matched by a deduction."
+  - "CILEX fees must be paid from the business account, never the client account, since paying staff professional fees from client money breaches Rule 4.3."
 faqs:
   - question: "Can I claim CILEX exam fees if my employer does not require them?"
     answer: "If your employer does not require the CILEX exam, the deduction is harder to justify for an employee. HMRC applies the \"necessarily\" test, meaning the expense must be a condition of your employment. Voluntary exams are unlikely to pass this test. For self-employed locums, the test is \"wholly and exclusively\" for the trade, but exam fees for a new qualification are still treated as capital, not revenue, so the deduction is denied. In both cases, the safest approach is to check with a specialist accountant."

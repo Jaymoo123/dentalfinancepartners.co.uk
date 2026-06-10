@@ -39,7 +39,12 @@ export async function GET(req: NextRequest) {
       const unsubscribeUrl = `${base}/api/newsletter/unsubscribe/${encodeURIComponent(
         mintToken(sub.email, "unsubscribe"),
       )}`;
+      // Claim first: advance the step before calling Resend so concurrent cron
+      // runs or a crash between send and advance cannot double-emit.
+      let claimed = false;
       try {
+        await advanceWelcomeStep(sub.email, step.step);
+        claimed = true;
         await getResend().emails.send({
           from: getFromAddress(),
           replyTo: getReplyTo(),
@@ -51,10 +56,13 @@ export async function GET(req: NextRequest) {
             "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
           },
         });
-        await advanceWelcomeStep(sub.email, step.step);
         sent++;
       } catch (err) {
         console.error(`cron/welcome step ${step.step}`, err);
+        if (claimed) {
+          // Release the claim so the next run retries this subscriber.
+          await advanceWelcomeStep(sub.email, i).catch(() => {});
+        }
       }
     }
     stats[`step_${step.step}`] = sent;

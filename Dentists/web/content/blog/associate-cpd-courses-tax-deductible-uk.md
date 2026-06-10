@@ -3,141 +3,125 @@ title: "Are CPD Courses Tax Deductible for UK Dentists? A Guide to Allowable Tra
 slug: "associate-cpd-courses-tax-deductible-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-cpd-courses-tax-deductible-uk"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
-metaTitle: "CPD Tax Deductible for UK Dentists: Allowable Training Expenses Guide"
-metaDescription: "Can UK dentists claim CPD course costs as a tax deduction? Yes, if the training maintains or improves skills for your current role. Here is what HMRC allows and what it does not."
-altText: "Dentist reviewing CPD course brochure in a UK dental practice"
-image: ""
+metaTitle: "Are CPD Courses Tax Deductible for UK Dentists?"
+metaDescription: "When an associate dentist can deduct CPD course fees (maintaining current skills) versus a new skill that counts as capital. ECPD, travel and examples."
+altText: "Associate dentist reviewing CPD course notes in a UK dental practice"
+image: "https://images.pexels.com/photos/17065743/pexels-photo-17065743.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/documents-17065743/"
 h1: "Are CPD Courses Tax Deductible for UK Dentists? A Guide to Allowable Training Expenses"
-summary: "Most CPD costs for UK dentists are tax deductible if the training maintains or improves skills needed in your current role. The key distinction is between updating existing skills (allowable) and acquiring new ones for a different career (not allowable). This guide covers what associates, principals, and locum dentists can claim."
+summary: "CPD is deductible where it maintains or updates the skills you already use in your current trade. Where a course gives you a genuinely new skill or qualification you did not offer before, the cost can be capital in nature and not a revenue deduction. This guide explains that dividing line, the borderline cases associates hit (implant, orthodontic and facial-aesthetics courses, diplomas and an MSc), the GDC enhanced CPD requirement, and how travel and materials follow the same character as the course."
+keyTakeaways:
+  - "CPD that maintains or updates a skill you already use is a revenue deduction under ITTOIA 2005 s.34, while training giving a genuinely new skill is capital and not deductible."
+  - "Counting towards the GDC enhanced CPD (ECPD) record does not make a course deductible, because ECPD is a regulatory test and deductibility is a separate tax test."
+  - "Implant, orthodontic and facial aesthetics courses are revenue if you already offer the treatment, but capital if the course lets you start offering it for the first time."
+  - "The GDC annual retention fee is deductible, but restoration fees and CPD shortfall penalties are not, because they arise from non-compliance rather than the trade."
+  - "Travel and materials take the same character as the course, with allowable mileage at 55p per mile for the first 10,000 business miles from 6 April 2026 (up from 45p), then 25p."
 schema: ""
 faqs:
-  - question: "Can a locum dentist claim CPD costs through a limited company?"
-    answer: "Yes, if the limited company is the entity that pays for the CPD and the training is directly relevant to the dental services the company provides. The company deducts the cost against its corporation tax liability. However, HMRC may challenge if the course is not clearly for the company's business. Keep evidence that the CPD maintains or improves skills needed for the company's contracts. If you are caught by IR35 (inside-IR35), the company cannot claim these costs because the deemed employment income rules treat you as an employee for tax purposes."
-  - question: "Are CPD costs for dental nurses and hygienists tax deductible for a practice owner?"
-    answer: "Yes. CPD costs for employed dental nurses, hygienists, and therapists are fully deductible as a business expense, provided the training relates to their role and is required for GDC registration or practice standards. This includes course fees, travel, and accommodation if the course is outside the practice. If the staff member is self-employed (e.g. a hygienist renting a surgery), they claim the costs themselves, not the practice."
-  - question: "Can I claim CPD costs if I am a foundation dentist (DFT)?"
-    answer: "Foundation dentists are salaried employees, typically with the NHS or a practice. Your employer usually covers mandatory CPD costs. If you pay for additional CPD yourself and are not reimbursed, you can claim the cost as a deduction against your employment income on your Self Assessment tax return. However, the deduction is limited to the extent that the training is necessary for your current role, not for future career progression. Keep receipts and a note of why the course was relevant to your DFT role."
-  - question: "What happens if HMRC disallows my CPD claim?"
-    answer: "If HMRC disallows a CPD expense, you will owe additional tax plus interest and possibly penalties. Common reasons for disallowance include: the training was for a new career, you were reimbursed by your employer, or you did not keep adequate records. If you receive a HMRC enquiry, you can appeal. A dental-specialist accountant can help you prepare a robust response with evidence that the training was wholly and exclusively for your current dental role. Prevention is better: keep clear records and get professional advice before claiming large or borderline costs."
+  - question: "Is the GDC enhanced CPD requirement itself relevant to whether a course is deductible?"
+    answer: "The GDC enhanced CPD (ECPD) scheme sets out how much verifiable CPD you must complete and record, but it does not decide the tax treatment of any single course. HMRC applies its own test under ITTOIA 2005 s.34: the cost is deductible if the activity is wholly and exclusively to maintain or update the skills you already use in your current trade. A course can count towards your ECPD hours and still be capital for tax if it gives you a genuinely new skill you did not previously offer. So treat the two questions separately: ECPD is a regulatory record, deductibility is a tax test."
+  - question: "Are the GDC annual retention fee and CPD shortfall penalties deductible?"
+    answer: "The GDC annual retention fee is an allowable expense for a self-employed associate, because keeping your name on the register is wholly and exclusively for your trade. A GDC restoration fee (paid to get back on the register after removal) and any CPD shortfall penalty are not allowable, because they arise from a personal or regulatory failure rather than the ordinary running of the trade. Keep the retention fee in your expenses and exclude restoration and penalty charges."
+  - question: "I am a GDP taking an implant course so I can start placing implants. Is it deductible?"
+    answer: "This is the classic borderline. If you already place implants and the course updates your technique or covers new materials and protocols, it maintains an existing skill and is a revenue deduction. If you have never placed implants and the course is what enables you to start offering implant treatment, then it is giving you a genuinely new skill, which points to capital rather than a revenue expense. The facts decide it, so keep evidence of what you offered before the course and how the activity related to your current work."
+  - question: "Does an MSc or a long diploma get treated differently from a one-day course?"
+    answer: "The length of the course does not change the test, but a multi-year MSc or a substantial diploma is more likely to deliver a new qualification or specialism, which pushes it towards capital. A short update course in something you already do is far more likely to be revenue. With a long qualification, HMRC looks at whether it maintains your current trade or equips you for a different or expanded one, so document your working pattern throughout and take advice before claiming a large qualification cost."
+  - question: "If a course is capital rather than revenue, do I get any relief at all?"
+    answer: "Not as a revenue deduction against your trading profit, which is the relief most associates are claiming. Training that gives you a new skill or qualification is generally not plant or machinery either, so it does not usually attract capital allowances. The practical result is that genuinely new-skill training is often not relievable through your trade at all, which is exactly why the revenue-versus-capital line matters before you book. Speak to a dental-specialist accountant on borderline courses rather than assuming the cost is deductible."
 ---
 
-<h2>Can You Claim CPD Costs as a Tax Deduction?</h2>
+<h2>The one question that decides whether your CPD is deductible</h2>
 
-<p>Yes, in most cases. The General Dental Council (GDC) requires every registered <strong>dentist</strong> to complete 100 hours of verifiable <strong>CPD</strong> over a five-year cycle. Because this is a regulatory requirement for practising, the cost of courses, travel, and materials is generally an allowable expense against your taxable income.</p>
+<p>For a self-employed associate, the test for a <strong>CPD course</strong> is not whether it counts towards your General Dental Council hours. It is the ordinary trading-expense test in <strong>ITTOIA 2005 s.34</strong>: the cost is deductible only if it is incurred <strong>wholly and exclusively</strong> for your trade. HMRC reads that, for training, as a single dividing line.</p>
 
-<p>HMRC's test is straightforward: is the training undertaken to maintain or improve the skills and knowledge you need in your current role? If the answer is yes, the cost is deductible. If the training qualifies you for a new profession or a fundamentally different role, it is not.</p>
+<p>If a course <strong>maintains or updates a skill you already use</strong> in your current dental work, the fee is a <strong>revenue expense</strong> and you deduct it from your trading income. If a course gives you a <strong>genuinely new skill or qualification</strong>, a service you did not previously offer, HMRC treats it as <strong>capital in nature</strong>, and a capital cost is not a revenue deduction. This is the single most common error dentists make with training costs, so it is worth getting right before you book, not after HMRC asks.</p>
 
-<p>This distinction matters for all UK dentists, whether you are a self-employed associate, a practice owner, or a locum. The rules are the same for sole traders and limited company directors, though the mechanics differ slightly.</p>
+<p>HMRC sets out this approach in its Business Income Manual (the BIM35660 and BIM42526 area on training costs for the self-employed). The principle is old and well established: you can deduct the cost of keeping your existing professional skills current, but the cost of acquiring a new income-earning capability is capital and falls outside s.34.</p>
 
-<h2>What CPD Costs Are Allowable?</h2>
+<h2>Maintaining a skill versus acquiring a new one</h2>
 
-<p>HMRC accepts a wide range of <strong>training expenses</strong> as long as they relate to your current dental role. The following are typically deductible:</p>
+<p>Most routine CPD an associate does is squarely on the revenue side. Verifiable update courses, clinical refreshers, mandatory topics, and conferences that keep you current in the dentistry you already practise all maintain existing skills. The cost, including the associated travel and materials, is deductible against your self-employed income.</p>
 
-<ul>
-<li><strong>Course fees</strong> for verifiable CPD events, conferences, and workshops run by recognised providers (e.g. BDA, FGDP, dental schools, private training organisations).</li>
-<li><strong>Travel and accommodation</strong> if the course is outside your normal place of work. This includes train fares, mileage, hotel stays, and meals (but not subsistence if you are not away overnight).</li>
-<li><strong>Online course subscriptions</strong> and e-learning modules, including the cost of a reliable internet connection if you work from home.</li>
-<li><strong>Books, journals, and reference materials</strong> that support your CPD activity, provided they are directly relevant to dentistry.</li>
-<li><strong>Exam and assessment fees</strong> for post-graduate qualifications that enhance your current practice (e.g. MJDF, MFDS, postgraduate certificates in restorative dentistry or implantology).</li>
-<li><strong>Indemnity insurance</strong> (MDU, Dental Protection, MDDUS) is a separate allowable expense, but it is worth noting because many CPD courses are organised by these bodies and the membership fee itself is deductible.</li>
-</ul>
+<p>The capital side is narrower but it is where the real money is. A course that lets you start offering a treatment you have never offered, or that leads to a formal new qualification or specialism, is not maintaining your current trade. It is expanding or changing it, and the cost of acquiring that new capability is capital. The fact that the course also counts towards your CPD record does not rescue the deduction.</p>
 
-<p>For a self-employed associate or locum, these costs are deducted from your gross fee income on your Self Assessment tax return. For a practice owner, they are an expense of the practice. For a salaried dentist (including foundation dentists), the costs are deductible against employment income, but only if you are not reimbursed by your employer.</p>
+<p>A useful way to frame it: ask what you could do the day before the course that you could not do the day after. If the answer is "the same things, done better or more safely", that is maintenance and it is revenue. If the answer is "a treatment or service I simply did not provide before", that points to a new skill and capital.</p>
 
-<h3>Travel Costs for CPD: What HMRC Allows</h3>
+<h2>The borderline courses dentists actually hit</h2>
 
-<p>If you travel to a CPD event that is not at your normal practice location, you can claim the cost of travel. For self-employed dentists, this includes mileage at HMRC's approved rates (45p per mile for the first 10,000 business miles, then 25p per mile). For employed dentists, you can claim the difference between what your employer reimburses and the HMRC approved mileage rate, if your employer does not cover the full cost.</p>
-
-<p>Parking fees, congestion charges, and tolls are also allowable. If you stay overnight, the cost of a hotel and reasonable evening meal is deductible. HMRC does not allow the cost of a meal if you are not away overnight, unless it is part of a conference package.</p>
-
-<h2>What CPD Costs Are NOT Allowable?</h2>
-
-<p>The boundary is where training takes you into a new profession or a fundamentally different role. HMRC will disallow costs for:</p>
+<p>The hard cases cluster around a handful of courses, because each one can sit on either side of the line depending on what you already do.</p>
 
 <ul>
-<li><strong>Courses that qualify you for a completely new career</strong> outside dentistry, such as a law degree, accountancy qualification, or business management MBA (unless the MBA is directly relevant to running your dental practice).</li>
-<li><strong>Training that is not related to your current role.</strong> For example, a dentist taking a course in veterinary dentistry would struggle to justify it as an allowable expense.</li>
-<li><strong>Courses that are primarily for personal interest or leisure</strong>, even if they have some tangential connection to dentistry.</li>
-<li><strong>CPD costs that your employer has already reimbursed.</strong> You cannot claim the same expense twice.</li>
+<li><strong>Implant courses.</strong> If you already place implants, a course on a new system, material or protocol updates an existing skill and is revenue. If you have never placed implants and the course is what enables you to start, then it gives you a new skill and points to capital.</li>
+<li><strong>Orthodontic courses.</strong> An update for a GDP who already provides short-term or aligner orthodontics is revenue. A course that takes a general dentist into providing orthodontics for the first time is the acquisition of a new skill.</li>
+<li><strong>Facial aesthetics courses.</strong> Adding facial aesthetics is one of the clearest "new service" cases, because it is usually a service the dentist did not previously offer at all. A first facial-aesthetics qualification therefore tends to look capital, while later updates once it is part of your routine practice look revenue.</li>
+<li><strong>Diplomas and an MSc.</strong> The length of the qualification does not decide the test, but a substantial diploma or a multi-year MSc is more likely to deliver a new qualification or specialism. The longer and more formal the award, the more carefully it has to be justified as maintaining your current trade rather than building a new or expanded one.</li>
 </ul>
 
-<p>A grey area is post-graduate qualifications that could lead to a specialism. If you are a general dental practitioner and you enrol in a three-year MSc in Orthodontics, the first year may be allowable if you are still working as a GDP. Once you move into a specialist training post, the later years may not be deductible against your general practice income because the training is for a new role. HMRC looks at the facts of each case, so keep records of your working pattern during the training period.</p>
+<h2>Worked examples of the borderline</h2>
 
-<h2>How Associates and Locums Should Record CPD Costs</h2>
+<p>The following are anonymised and illustrative. They show how the same type of course lands differently depending on the dentist's existing trade. No figures are given, because the character of the cost, not its size, decides the treatment.</p>
 
-<p>If you are a self-employed associate or locum dentist, you should keep a separate log of all CPD-related expenditure. This includes:</p>
+<p><strong>Associate A, a GDP who already restores implants.</strong> She books a two-day course on a newer implant system she is considering adopting. She already places and restores implants as part of her routine work, so the course updates an existing skill. The fee, plus mileage to the temporary course venue and the course materials, is a revenue deduction against her trading income.</p>
+
+<p><strong>Associate B, a GDP who has never placed an implant.</strong> He books a structured implant programme specifically so he can begin offering implant placement. Before the course he did not provide that treatment, and the course is what enables the new service. This points to a new skill, so the cost is capital in nature and not a revenue deduction, even though it counts towards his CPD record. The travel and materials follow the same capital character.</p>
+
+<p><strong>Associate C, moving from GDP into a specialism via an MSc.</strong> She enrols on a multi-year MSc while still working as a general associate. The early stages, where the content genuinely supports the general dentistry she is doing day to day, are easier to defend as maintaining her current trade. As the qualification carries her into a distinct specialist role she was not performing before, the later cost looks like acquiring a new qualification and tips towards capital. Because the facts shift over the course of the programme, she keeps a clear record of her working pattern throughout and takes advice before claiming the qualification cost.</p>
+
+<h2>Deductible versus not: a quick reference</h2>
+
+<table>
+<thead>
+<tr><th>Item</th><th>Usual treatment for a self-employed associate</th></tr>
+</thead>
+<tbody>
+<tr><td>Update or refresher course in dentistry you already practise</td><td>Deductible (revenue): maintains an existing skill</td></tr>
+<tr><td>Mandatory and recommended CPD topics for your current work</td><td>Deductible (revenue)</td></tr>
+<tr><td>Conference or workshop relevant to your current trade</td><td>Deductible (revenue)</td></tr>
+<tr><td>Verifiable online CPD and e-learning in your current field</td><td>Deductible (revenue)</td></tr>
+<tr><td>Course that lets you start a treatment you never offered before</td><td>Not a revenue deduction: capital (new skill)</td></tr>
+<tr><td>First facial-aesthetics qualification (new service)</td><td>Not a revenue deduction: capital (new skill)</td></tr>
+<tr><td>MSc, diploma or training leading to a new specialism</td><td>Typically capital: new qualification, take advice</td></tr>
+<tr><td>GDC annual retention fee</td><td>Deductible (revenue)</td></tr>
+<tr><td>GDC restoration fee or CPD shortfall penalty</td><td>Not deductible</td></tr>
+<tr><td>Travel and materials for a deductible course</td><td>Deductible: follows the revenue character of the course</td></tr>
+<tr><td>Travel and materials for a capital (new-skill) course</td><td>Not a revenue deduction: follows the capital character</td></tr>
+</tbody>
+</table>
+
+<h2>The GDC enhanced CPD requirement</h2>
+
+<p>Every registered dentist must meet the GDC's enhanced CPD (<strong>ECPD</strong>) requirement, which sets the amount of verifiable CPD you complete over your cycle, requires it to be relevant to your field of practice, and asks you to keep records and a personal development plan. ECPD is a regulatory obligation, and the discipline it imposes is one reason associates accumulate genuine training costs in the first place.</p>
+
+<p>It is important to separate the two questions, though. Meeting your ECPD hours does not by itself make a course deductible, and a course can count towards your ECPD record and still be capital for tax if it delivers a new skill. ECPD answers "have I done enough verifiable CPD?". The s.34 test answers "is this particular cost a revenue expense of my current trade?". You need both, and they are not the same question.</p>
+
+<p>The related regulatory fees follow the §8 position. The <strong>GDC annual retention fee</strong>, the cost of keeping your name on the register so you can trade, is deductible. A <strong>restoration fee</strong> to get back on the register, and any <strong>CPD shortfall penalty</strong>, are not deductible, because they stem from a personal or regulatory lapse rather than the ordinary running of the practice.</p>
+
+<h2>Travel and materials follow the course</h2>
+
+<p>The associated costs of a course do not have a tax character of their own. They take the same revenue or capital character as the course they relate to. Travel to a deductible update course, and the materials for it, are revenue and come off your trading income. Travel and materials for a new-skill course that is capital are capital too, and are not a revenue deduction.</p>
+
+<p>Where travel is allowable, the normal self-employed rules apply. Mileage is claimed at HMRC's approved rates of <strong>55p per mile for the first 10,000 business miles in the tax year (from 6 April 2026, up from 45p) and 25p per mile thereafter</strong>. The journey has to be to a genuine <strong>temporary</strong> workplace, such as a course venue you do not ordinarily attend. Ordinary commuting, including the trip from home to a regular place of work, is not deductible. Keep a simple mileage log with the date, destination, purpose and miles, and keep receipts for fares, parking and any overnight stay tied to a deductible course.</p>
+
+<h2>How to keep yourself on the right side of the line</h2>
 
 <ul>
-<li>Receipts for course fees, with the course name, date, and provider.</li>
-<li>Travel receipts (train tickets, parking, hotel bills).</li>
-<li>Mileage logs if you drive to courses.</li>
-<li>Subscription receipts for online CPD platforms and dental journals.</li>
+<li><strong>Decide character before you book.</strong> Ask whether the course maintains a skill you already use or gives you a new one, and note your reasoning at the time.</li>
+<li><strong>Record what you offered beforehand.</strong> For a borderline course, evidence of the treatments you already provided is the best support that it maintained an existing skill.</li>
+<li><strong>Keep the regulatory fees clean.</strong> Claim the GDC retention fee, and keep restoration fees and any shortfall penalty out of your expenses.</li>
+<li><strong>Match travel and materials to the course.</strong> Only deduct travel and materials where the course itself is revenue, and apply the 55p/25p mileage rule to genuine temporary workplaces.</li>
+<li><strong>Get advice on a large qualification.</strong> Before claiming an MSc, a diploma or a first qualification in a new service, take dental-specialist advice on whether it is revenue or capital.</li>
 </ul>
 
-<p>You then enter the total as an expense on your Self Assessment tax return. If you use a limited company (common for locums), the company pays the costs and deducts them against its corporation tax liability. The company must be able to demonstrate the training benefits the business, not you personally.</p>
+<h2>Where this sits in your wider expenses</h2>
 
-<p>For associates working under a fee-share agreement, the CPD costs are typically borne by you personally and claimed against your self-employed income. If your practice covers some CPD costs as part of your agreement, you cannot also claim those costs yourself.</p>
+<p>CPD is one line in a much longer list of allowable associate costs, from indemnity and professional subscriptions to motor, home-office and accountancy. For the full picture of what an associate can claim, see our guide to <a href="/blog/associate-tax/associate-dentist-allowable-expenses-uk-2025-26">allowable expenses for associate dentists</a>, and for how those deductions fit into your Self Assessment and overall position, read the <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax guide</a>.</p>
 
-<p>For a detailed breakdown of what associates can and cannot claim, see our <a href="/dental-guides/associate-tax-survival-guide">Associate Tax Survival Guide</a>.</p>
-
-<h2>How Practice Owners Should Handle CPD Costs</h2>
-
-<p>If you own a dental practice, CPD costs for yourself and your associate dentists are treated differently depending on who pays.</p>
-
-<p><strong>Your own CPD:</strong> As a practice owner (sole trader, partnership, or director), your CPD costs are an allowable business expense. The practice pays the fees, and they reduce your taxable profit.</p>
-
-<p><strong>CPD for associates:</strong> If you pay for an associate's CPD course, it is an allowable expense for the practice. However, if the associate is self-employed, the payment may be treated as a benefit in kind if it is not wholly and exclusively for the practice's business. In practice, most dental practices cover mandatory CPD for associates as a business expense, and HMRC generally accepts this because it maintains the clinical standards of the practice. But you should have a clear written policy and ensure the associate is not also claiming the same cost personally.</p>
-
-<p><strong>CPD for employed staff:</strong> Costs for dental nurses, hygienists, and reception staff are fully deductible as long as the training relates to their role. This includes GDC-registered professionals' mandatory CPD.</p>
-
-<p>For more on structuring practice expenses efficiently, see our <a href="/services/practice-accounting">Practice Accounting</a> services page.</p>
-
-<h2>CPD and the NHS Pension: What to Watch For</h2>
-
-<p>One nuance that catches out some dentists is the interaction between CPD costs and NHS Pension Scheme contributions. If you are a self-employed associate, your CPD costs reduce your net profit, which in turn reduces your NHS Pension Scheme contributions (calculated on your net profit). This is fine, but you need to be aware that lower pensionable earnings now mean a lower pension later.</p>
-
-<p>For salaried dentists (including foundation dentists), CPD costs are usually covered by the employer. If you pay for your own CPD and are not reimbursed, you can claim the cost against your employment income, but it does not affect your pensionable pay, which is based on your salary.</p>
-
-<p>For more on how NHS Pension contributions interact with your tax position, see our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials for Dentists</a> guide.</p>
-
-<h2>VAT on CPD Courses: A Quick Note</h2>
-
-<p>Most CPD courses provided by dental organisations (BDA, FGDP, private training companies) are standard-rated for VAT. This means the course fee includes 20% VAT. As a self-employed dentist or practice owner, you can reclaim this VAT if you are VAT-registered and the course is for business purposes. If you are not VAT-registered, the VAT is simply part of the cost and is deductible as an expense (you cannot reclaim it separately).</p>
-
-<p>If you are a limited company locum and VAT-registered, you can reclaim VAT on CPD costs, but you must ensure the course is for the company's business, not your personal development. HMRC may challenge this if the course is not directly relevant to the services your company provides.</p>
-
-<h2>Practical Tips for Maximising Your CPD Tax Deduction</h2>
-
-<ul>
-<li><strong>Keep a dedicated CPD expense folder</strong> with all receipts, invoices, and certificates. HMRC can ask for evidence up to six years after the tax year.</li>
-<li><strong>Use a mileage app</strong> to log journeys to CPD events. A simple spreadsheet with date, destination, purpose, and mileage is sufficient.</li>
-<li><strong>Plan your CPD year</strong> to align with your tax year (6 April to 5 April). If you are close to the end of the tax year and have unused CPD budget, booking a course before 5 April can reduce your tax bill for that year.</li>
-<li><strong>Consider group bookings.</strong> If you and several associates attend the same course, the practice may be able to negotiate a discount, and the cost is still fully deductible.</li>
-<li><strong>Check if your indemnity provider offers free CPD.</strong> Many do, and these are still deductible as part of your indemnity subscription.</li>
-</ul>
-
-<p>For a personalised calculation of how CPD costs affect your tax position, use our <a href="/calculators/associate-take-home-calculator">Associate Take Home Calculator</a>.</p>
-
-<h2>Common Questions About CPD Tax Deductibility</h2>
-
-<p><strong>Can I claim CPD costs if I am on maternity leave?</strong><br>
-Yes, if you are still registered with the GDC and the CPD maintains your skills for when you return to practice. The costs are deductible against any dental income you have in that tax year.</p>
-
-<p><strong>What if I do not complete my CPD hours?</strong><br>
-The cost of courses you attended is still deductible, even if you did not complete the full 100-hour cycle. HMRC does not require you to meet the GDC target for the expense to be allowable.</p>
-
-<p><strong>Can I claim CPD costs for courses taken abroad?</strong><br>
-Yes, if the course is directly relevant to your UK dental practice. You can claim travel, accommodation, and course fees. Keep evidence that the course was not a holiday with incidental learning.</p>
-
-<p><strong>Are online CPD subscriptions allowable?</strong><br>
-Yes. The cost of subscriptions to online CPD platforms (e.g. Dental Update, FGDP e-learning) is fully deductible.</p>
-
-<h2>Final Thoughts: Get Advice Specific to Your Situation</h2>
-
-<p>CPD costs are one of the most straightforward deductions for UK dentists, but the rules are not always black and white. If you are undertaking a significant post-graduate qualification, working through a limited company, or have a complex employment structure, the tax treatment can vary.</p>
-
-<p>The safest approach is to keep detailed records and speak to a dental-specialist accountant who understands the nuances of HMRC's guidance on training expenses. At Dental Finance Partners, we work exclusively with UK dentists and can help you structure your CPD spending to maximise tax efficiency while staying within HMRC's rules.</p>
-
-<p>Contact us for a <a href="/free-practice-health-check">free practice health check</a> to review your current tax position and identify any missed deductions.</p>
+<p>The revenue-versus-capital line on training is one of the easiest places to get a CPD claim wrong, and the cost of a disallowed deduction is tax, interest and possibly a penalty. At Dental Finance Partners we work exclusively with UK dentists and can review your CPD and training spend before you commit to a borderline course. Contact us for a <a href="/free-practice-health-check">free practice health check</a> to make sure your training costs are claimed correctly.</p>

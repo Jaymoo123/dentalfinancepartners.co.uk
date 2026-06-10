@@ -58,7 +58,7 @@ export function SiteFooter() {
             &copy; {year} {siteConfig.legalName}. Registered in England and Wales.
           </p>
           <p className="text-xs text-neutral-500">
-            Specialist contractor accountants. Editorial content only — book a call for advice specific to your situation.
+            Specialist contractor accountants. Editorial content only. Book a call for advice specific to your situation.
           </p>
         </div>
       </div>

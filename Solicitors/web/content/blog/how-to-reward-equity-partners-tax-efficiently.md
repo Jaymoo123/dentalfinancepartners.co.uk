@@ -11,6 +11,12 @@ altText: "UK law firm equity partner reviewing profit allocation documents with 
 image: ""
 h1: "How to Reward Equity Partners in a Law Firm LLP Tax Efficiently"
 summary: "A practical guide for law firm LLPs on structuring equity partner reward packages tax efficiently. Covers profit allocation methods, additional benefits, and common pitfalls for solicitors."
+keyTakeaways:
+  - "Equity partners are self-employed for tax, so the firm operates no PAYE or employer NI on their profit allocation."
+  - "Partners are taxed on allocated profit, not drawings: an allocation of £100,000 is taxed even if only £60,000 is drawn."
+  - "Most additional benefits, such as private medical insurance, are better structured as profit allocations than as employee-style perks."
+  - "The FA 2014 Salaried Member Rules can deem a partner an employee if all three conditions (disguised salary, limited influence, low capital) are met."
+  - "Review each partner's position and the LLP agreement annually so allocations reflect real contribution and avoid anti-avoidance challenge."
 schema: ""
 faqs:
   - question: "Can an equity partner in a law firm LLP receive a salary?"

@@ -3,114 +3,141 @@ title: "What Is a UDA Value and How Does It Affect Your NHS Contract?"
 slug: "uda-value-explained-for-uk-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "UDA Value Explained: NHS Contract Rates for UK Dentists"
-metaDescription: "Understand UDA value, how it is calculated, and what it means for your NHS contract. A practical guide for UK dentists on UDA rates and financial planning."
+metaTitle: "UDA Value Explained: How Your NHS Contract Rate Is Set"
+metaDescription: "What a UDA value is, why there is no national rate, how the 2006 baseline set yours, and how to find the per-UDA value in your own NHS dental contract."
 altText: "UK dentist reviewing NHS contract documents with UDA value details"
-image: ""
+image: "https://images.pexels.com/photos/305566/pexels-photo-305566.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Daniel Frank"
+  photographerUrl: "https://www.pexels.com/@fr3nks"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/dental-tool-set-305566/"
 h1: "What Is a UDA Value and How Does It Affect Your NHS Contract?"
-summary: "UDA value is the payment per Unit of Dental Activity in your NHS contract. It varies by region and contract, typically between £15 and £45. Understanding your UDA rate is essential for practice profitability and associate agreements."
+summary: "A UDA value is the per-unit price your specific NHS contract pays for dental activity. There is no national rate. This guide explains where your value came from (the 2006 baseline), the typical range, how the treatment bands convert to UDAs, and how to find and read your own contract figure."
+keyTakeaways:
+  - "There is no national UDA value, as each English GDS or PDS contract carries its own rate, set at the 2006 baseline and uplifted since."
+  - "Find your per-UDA value by dividing the annual contract value by the contracted UDA target (for example £200,000 over 8,000 UDAs equals £25.00)."
+  - "England values run roughly £15 to over £45, with most clustering between £25 and £35, while Scotland uses no UDAs at all."
+  - "Treatment bands convert at fixed units: Band 1 is 1 UDA, Band 2 is 3 UDAs, Band 3 is 12 UDAs, and urgent is 1.2 UDAs."
+  - "Patient charges count towards, not on top of, the contract value, so adding them as extra income overstates NHS earnings."
 schema: ""
 faqs:
   - question: "What is the average UDA value in the UK?"
-    answer: "There is no single average UDA value for the UK. In England, UDA rates typically range from £15 to £45 per unit, with many contracts falling between £25 and £35. Wales uses a different contract structure with its own unit values. Scotland does not use UDAs at all, operating under the Statement of Dental Remuneration (SDR) system. The exact rate depends on your contract, region, and historical negotiation."
-  - question: "How do I calculate my UDA value?"
-    answer: "To calculate your UDA value, divide the total annual NHS contract value by the total number of UDAs you are contracted to deliver. For example, if your contract is worth £200,000 per year and your UDA target is 8,000, your UDA value is £25.00. This is a simplified calculation; your contract may include additional allowances or adjustments that affect the effective rate."
+    answer: "There is no national or average UDA value, and quoting one is misleading. Each English GDS or PDS contract carries its own per-UDA value, set individually at the 2006 baseline and uplifted since. England values run roughly from £15 to over £45 per unit, with most clustering between £25 and £35. The only figure that matters for your finances is the per-UDA value written into your own contract. Wales runs its own contract reform with different units, and Scotland does not use UDAs at all (it pays on the item-of-service Statement of Dental Remuneration)."
+  - question: "How do I find my UDA value?"
+    answer: "Divide your total annual NHS contract value by your contracted annual UDA target. If the contract is worth £200,000 a year for 8,000 UDAs, the per-UDA value is £25.00. Both figures appear in your contract schedule and on your NHS statements. You did not set this rate by negotiation: it was fixed at the 2006 baseline from the practice's historic test-year fees and uplifted annually, so two practices on the same street can hold very different values."
   - question: "Can a practice owner increase their UDA value?"
-    answer: "Increasing a UDA value is difficult in practice. NHS contracts are typically fixed for the contract term, and renegotiation is rare unless there is a significant change in circumstances. Some contracts include inflationary uplifts, but many do not. Practice owners often focus on managing costs and increasing private income to improve overall profitability rather than trying to increase the UDA rate."
+    answer: "Rarely. The per-UDA value is baked into the contract and is not routinely renegotiated. Annual uplifts are applied centrally and do not always keep pace with cost inflation. Most owners treat the value as fixed and improve overall profitability by managing the cost of delivering each UDA, refining their band mix, and developing private and plan income alongside the NHS work."
   - question: "How does UDA value affect associate pay?"
-    answer: "Associate pay is often calculated as a percentage of the UDA value, typically 40% to 55%. If the UDA value is £30 and the associate's fee split is 50%, they earn £15 per UDA. A higher UDA value means higher associate income for the same amount of clinical work. Associates should know the UDA value of the contract they work under to ensure their fee split is fair."
+    answer: "Most associate agreements pay a share of the contract's per-UDA value, commonly in the 40% to 55% range, sometimes net of an agreed lab and materials deduction. On a £30 UDA value at a 50% split that is £15 per UDA before tax and expenses. Because the value differs by contract, an associate should always confirm the per-UDA value of the specific contract they work under before signing, not rely on a national figure."
 ---
 
-<h2>What Is a UDA Value?</h2>
+<h2>What a UDA value actually is</h2>
 
-<p>A UDA value is the monetary amount paid to a dental practice for each Unit of Dental Activity completed under an NHS contract. The term "UDA" stands for Unit of Dental Activity, which is the basic measure of NHS dental treatment in England and Wales. Each course of treatment is assigned a specific number of UDAs depending on its complexity, from a simple examination (1 UDA) to a more complex procedure such as a crown or bridge (up to 12 UDAs).</p>
+<p>A UDA value is the amount your NHS contract pays for each Unit of Dental Activity (UDA) you deliver. The UDA is the currency of NHS dentistry in England, Wales and Northern Ireland: every course of NHS treatment is converted into a fixed number of UDAs, and the contract pays a set price for each one. Scotland is the exception. It does not use UDAs at all, paying instead on an item-of-service basis under the Statement of Dental Remuneration (SDR).</p>
 
-<p>The UDA value is the price per unit that the practice receives from NHS England (or the equivalent body in Wales) for delivering that activity. It is not a fixed national figure. Each practice negotiates its own UDA rate as part of its NHS contract, and these rates can vary significantly by region, by practice, and even by contract type.</p>
+<p>The single most important fact about the UDA value is the one most often stated wrongly: there is no national UDA value. There is no published rate that applies to every practice, and any source that quotes "the UK UDA rate" as a single number is simplifying something that is genuinely contract-specific. Two practices a mile apart can hold materially different per-UDA values on otherwise similar contracts. The only figure that governs your income is the per-UDA value written into your own contract.</p>
 
-<p>For UK dentists, understanding your UDA value is fundamental to practice financial planning. Whether you are a practice owner managing an NHS contract or an associate working under a fee-per-UDA arrangement, the UDA rate directly affects your income and the viability of your practice.</p>
+<p>For practice owners, associates and locums alike, that figure is the starting point for almost every financial decision you make around NHS work: whether a contract is worth holding, what an associate split is really worth, and how the NHS side of a mixed practice contributes to profit.</p>
 
-<h2>How Is a UDA Value Calculated?</h2>
+<h2>Why there is no national rate: the 2006 baseline</h2>
 
-<p>There is no single formula for calculating a UDA value. The rate is determined when the NHS contract is awarded or renegotiated. Historically, UDA values were set based on historical activity levels and the practice's previous gross fees, adjusted for inflation and local commissioning priorities.</p>
+<p>The current contract framework dates to the 2006 NHS dental reforms, which introduced UDAs and replaced the old fee-per-item system. Crucially, each practice's per-UDA value was not negotiated and was not set to a national tariff. It was calculated from that practice's own historic position. Broadly, the contract value was based on the practice's gross NHS fees in a reference test year, and the UDA target was derived from its historic activity. Dividing one by the other produced a starting per-UDA value unique to that practice, which has been uplifted (not reset) each year since.</p>
 
-<p>In practice, the calculation works backwards. The total annual contract value (the gross fee the practice receives for NHS work) is divided by the total number of UDAs the practice is contracted to deliver. For example:</p>
+<p>That history is why the values are so uneven. A practice that happened to bill more per course of treatment in the test year locked in a higher value and has carried it forward ever since. The figure reflects a snapshot from nearly two decades ago, not current effort, current costs, or current need in the area. It is also why "increasing your UDA value" is so difficult: there is no live negotiation to win, only the annual central uplift applied to the figure you inherited.</p>
+
+<p>In practical terms, England values run roughly from £15 at the low end to over £45 at the high end, with the large majority clustering between £25 and £35. Treat those as a market context range only. Use the actual value in your contract for any calculation that matters, because where your figure sits inside that spread changes the entire economics of your NHS commitment.</p>
+
+<h2>How treatment bands convert into UDAs</h2>
+
+<p>You earn UDAs by completing courses of treatment, and each course is assigned a fixed number of units according to its clinical band, not the time it takes or the number of items within it. The conversion is national and fixed, so the only variable in your income is your own per-UDA value.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Course of treatment</th>
+      <th>UDAs earned</th>
+      <th>Typical examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Band 1</td>
+      <td>1 UDA</td>
+      <td>Examination, diagnosis, X-rays, scale and polish, preventive advice</td>
+    </tr>
+    <tr>
+      <td>Band 2</td>
+      <td>3 UDAs</td>
+      <td>Fillings, extractions, root canal treatment</td>
+    </tr>
+    <tr>
+      <td>Band 3</td>
+      <td>12 UDAs</td>
+      <td>Crowns, dentures, bridges</td>
+    </tr>
+    <tr>
+      <td>Urgent</td>
+      <td>1.2 UDAs</td>
+      <td>Emergency course of treatment, pain relief</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The jump from 3 UDAs for a Band 2 to 12 UDAs for a Band 3 is the reason your band mix drives delivery so heavily. A single Band 3 course is worth the same number of units as four Band 2 courses, even though the chair time and lab cost behind it are very different. Two practices on identical per-UDA values can post very different effective hourly economics purely because of the type of work each one does. For a deeper look at how the bands behave and where the financial traps sit, see <a href="/blog/nhs-contracts/band-1-band-2-band-3-uda-treatment-explained">how the NHS treatment bands affect your UDA income</a>.</p>
+
+<h2>How to find your own UDA value</h2>
+
+<p>If you are a practice owner, the two numbers you need are both in your contract documentation and on your NHS schedule: the total annual contract value and the contracted annual UDA target. Divide the first by the second and you have your per-UDA value. For example:</p>
 
 <ul>
-<li>Annual contract value: £200,000</li>
-<li>Total contracted UDAs: 8,000</li>
-<li>UDA value: £200,000 ÷ 8,000 = £25.00 per UDA</li>
+  <li>Annual contract value: £200,000</li>
+  <li>Contracted annual UDAs: 8,000</li>
+  <li>Per-UDA value: £200,000 ÷ 8,000 = £25.00</li>
 </ul>
 
-<p>This is a simplified example. In reality, the contract value may include adjustments for seniority payments, maternity leave, or other allowances. But the core principle remains: the UDA value is the contract value divided by the UDA target.</p>
+<p>That is the headline figure, though your contract may also carry seniority payments, parental-leave cover or other allowances that nudge the effective rate. The core arithmetic, contract value divided by UDA target, is the right starting point every time. You can run the same calculation, and test how a different value or target changes your position, with our <a href="/calculators/uda-value">UDA value calculator</a>.</p>
 
-<p>It is important to note that UDA values vary widely. In England, the average UDA rate is often quoted between £25 and £35, but individual contracts can range from as low as £15 per UDA in some areas to over £45 in others. Wales uses a different contract structure with its own unit values, and Scotland operates under the Statement of Dental Remuneration (SDR) system, which does not use UDAs at all.</p>
+<p>If you are an associate, the per-UDA value you are paid a share of is the value of the contract you deliver against, and your principal can tell you what it is. A well-drafted associate agreement states the per-UDA value (or the exact money-per-UDA) explicitly. If yours does not, it is entirely reasonable to ask, because that single figure underpins your income. Never accept a national average as a substitute for the contract's real value.</p>
 
-<h2>Why Does UDA Value Matter for UK Dentists?</h2>
+<h2>Why the value matters for practice finances</h2>
 
-<p>Your UDA value determines the financial health of your NHS contract. A higher UDA rate means more income for the same amount of clinical work. Conversely, a low UDA rate can make it difficult to cover practice overheads and pay associates a fair fee.</p>
+<p>Your per-UDA value is only half the picture. Profitability is the value minus the cost of delivering each unit. Staff salaries, premises, materials, lab fees and equipment all sit on the cost side, and on lower-value contracts the margin can be thin. The discipline is to know your cost per UDA and compare it directly with your value: if a contract pays £28 a unit and costs you £20 a unit to deliver, the £8 gap is what funds everything else, and a few pounds of cost movement either way changes the answer materially.</p>
 
-<p>For practice owners, the UDA value is a key metric when assessing whether to take on or renew an NHS contract. It also affects the valuation of the practice. When you sell a dental practice, the goodwill value is often linked to the profitability of the NHS contract, which in turn depends on the UDA rate. Practices with higher UDA values tend to command higher multiples.</p>
+<p>A point that catches many owners out is how patient charges interact with the contract. The NHS patient charge a patient pays for their band of treatment does not sit on top of your contract value. It counts towards it. The commissioner's payment is reduced by the patient charges you collect, so collecting charges does not add income. It changes who funds the same contract value. Building a model that adds patient charges on top of the UDA payments will overstate NHS income, sometimes badly.</p>
 
-<p>For associates, the UDA rate determines your fee split. Most associate agreements are structured as a percentage of the UDA value, typically 40% to 55% depending on the practice's overheads and whether the associate pays for lab fees and materials. If your UDA value is £30 and your fee split is 50%, you earn £15 per UDA before tax and expenses. Understanding your UDA calculation is therefore essential for negotiating your associate contract.</p>
+<p>One piece of good news on the tax side: NHS dental care is exempt from VAT under the health and welfare provisions (VATA 1994 Schedule 9 Group 7), so your UDA income is not reduced by VAT. That exemption is also why a practice can fall outside VAT registration on its NHS work even at significant turnover. The watch-item is the purely cosmetic, non-therapeutic private work (such as some facial aesthetics and whitening) that can be standard-rated and is assessed separately. NHS UDA income itself is clean of VAT.</p>
 
-<p>For locum dentists, the UDA rate affects the daily or per-UDA rate you can charge. Practices with higher UDA values can afford to pay locums more, while those with lower rates may struggle to cover locum costs.</p>
+<h2>What the value means for associates and locums</h2>
 
-<h2>How to Check Your UDA Value</h2>
+<p>For associates, the per-UDA value sets the ceiling for your pay. Most agreements pay a percentage of the contract's value, commonly between 40% and 55%, with the exact split reflecting whether the practice carries lab fees, materials and nurse support. At a £30 value and a 50% split you receive £15 per UDA before tax and expenses; deliver 2,000 UDAs in a year and that is £30,000 gross from NHS work. Two factors decide whether that is a good deal: the value behind the percentage, and the UDA target you are committing to. A high target against a modest value can mean a lower effective rate than the headline split suggests, so weigh both together. You can model your position after tax and costs with our <a href="/calculators/associate-take-home">associate take-home calculator</a>.</p>
 
-<p>Your UDA value should be stated in your NHS contract documentation. If you are a practice owner, the contract will specify the total annual contract value and the UDA target. Dividing the former by the latter gives your UDA rate.</p>
+<p>For locums, the same logic flows through to daily and per-UDA rates. A practice on a higher-value contract has more room to pay, while a low-value contract constrains what any locum arrangement can sustain. Again, the contract's real value, not a national average, is what determines the room.</p>
 
-<p>If you are an associate, your practice owner should be able to tell you the UDA value for the contract you work under. Some associate agreements explicitly state the UDA rate used for calculating your fee. If yours does not, ask for it. It is reasonable to know the rate that underpins your income.</p>
+<h2>The value, clawback and your delivery target</h2>
 
-<p>You can also use our <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a> to estimate your rate based on your contract details. This tool is useful for checking whether your contract is financially viable or for comparing different contract offers.</p>
+<p>The per-UDA value works alongside a delivery target, and the two together create the financial pressure points in an NHS contract. You are paid in smooth monthly instalments across the year against your target, and at year-end your actual delivery is reconciled against it. Fall short by too much and the commissioner recovers the payment for activity you did not deliver. That recovery is what dentists mean by clawback, and the per-UDA value is the price tag on every undelivered unit. The mechanics of the carry-forward tolerance and the clawback threshold are set out in our guide to <a href="/blog/nhs-contracts/nhs-dental-contract-clawback-explained">how NHS dental contract clawback works</a>.</p>
 
-<h2>UDA Value and Practice Profitability</h2>
+<p>The practical takeaway is to track UDA delivery against target every month rather than discovering a shortfall at year-end. A higher per-UDA value raises both the reward for hitting target and the cost of missing it, which is one more reason to know your figure precisely.</p>
 
-<p>The UDA value is only one part of the profitability equation. You also need to consider the cost of delivering each UDA. Overheads such as staff salaries, rent, materials, lab fees, and equipment depreciation all eat into the margin.</p>
+<h2>Value, contract type and region</h2>
 
-<p>For example, if your UDA value is £28 and your cost per UDA is £20, you make £8 profit per UDA. If you deliver 6,000 UDAs per year, that is £48,000 profit from the NHS contract before tax. If your cost per UDA is £25, the profit drops to £18,000. Understanding your cost base is as important as knowing your UDA rate.</p>
+<p>Your per-UDA value also interacts with the type of NHS contract you hold. The standard, open-ended contract is the General Dental Services (GDS) contract, with Personal Dental Services (PDS) and other arrangements covering more specialised or time-limited work. The contract type affects how the value sits within the wider agreement and what happens on a sale or transfer. For how the contract families differ, see our comparison of <a href="/blog/nhs-contracts/gds-vs-pds-vs-ods-contracts-dentists">GDS, PDS and ODS NHS dental contracts</a>.</p>
 
-<p>Practice owners should regularly review their UDA value against their cost per UDA. If the margin is too thin, you may need to renegotiate the contract, reduce costs, or increase private income to cross-subsidise the NHS work.</p>
+<p>Because every value traces back to a practice-specific 2006 baseline, the spread across the country is wide and is not a published regional tariff. The pattern of variation, and what it means when you are valuing or buying a practice, is covered in our piece on <a href="/blog/nhs-contracts/how-uda-rates-vary-by-region-uk">how UDA rates vary by region across the UK</a>. The headline rule holds throughout: do not plan on a regional average, plan on the contract in front of you.</p>
 
-<p>For more detailed guidance on practice financial planning, see our <a href="/dental-guides/nhs-contract-essentials-for-dentists">NHS contract essentials guide</a>.</p>
-
-<h2>UDA Value and Associate Agreements</h2>
-
-<p>Associate dentists often work on a fee-per-UDA basis. The typical arrangement is a percentage of the UDA value, with the associate receiving a set amount for each UDA they complete. The percentage varies depending on whether the practice provides materials, lab fees, and nurse support.</p>
-
-<p>A common associate fee split is 50% of the UDA value. If the UDA value is £30, the associate earns £15 per UDA. If the associate completes 2,000 UDAs per year, that is £30,000 gross income from NHS work before tax and expenses.</p>
-
-<p>Some associate agreements use a "net fee" model where the associate receives a fixed fee per UDA regardless of the practice's UDA value. This is less common but can be simpler for budgeting. Either way, knowing the UDA value helps you assess whether the fee is fair.</p>
-
-<p>Associates should also consider the UDA target. If you are expected to deliver a high number of UDAs in a short time, the effective hourly rate may be lower than it appears. Use our <a href="/calculators/associate-take-home-calculator">associate take-home calculator</a> to estimate your net income after tax and expenses.</p>
-
-<h2>UDA Value and Practice Sale</h2>
-
-<p>When selling a dental practice, the UDA value is a critical factor in the valuation. Buyers assess the profitability of the NHS contract by looking at the UDA rate and the cost structure. A practice with a high UDA value and low overheads is more attractive and will command a higher goodwill multiple.</p>
-
-<p>Goodwill valuation methods typically use an earnings-based approach, applying a multiple to the adjusted EBITDA (earnings before interest, tax, depreciation, and amortisation). The UDA value directly affects EBITDA. A £5 increase in UDA value on a 6,000-UDA contract adds £30,000 to EBITDA. At a multiple of 1.0x, that is £30,000 more in goodwill value.</p>
-
-<p>For more on this topic, see our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a> and our <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a>.</p>
-
-<h2>Common Questions About UDA Values</h2>
-
-<p><strong>Can UDA values be renegotiated?</strong> In theory, yes, but in practice it is difficult. NHS contracts are typically fixed for the duration of the agreement, which can be several years. Renegotiation may be possible if there is a significant change in circumstances, such as a merger or a change in the local commissioning landscape. Most practice owners accept the UDA value as given and focus on managing costs.</p>
-
-<p><strong>Do UDA values increase with inflation?</strong> Not automatically. Some contracts include inflationary uplifts, but many do not. The NHS contract value may be reviewed periodically, but the UDA rate is not indexed to inflation in the same way as private fees. This means that over time, the real value of the UDA can fall if costs rise faster than the contract value.</p>
-
-<p><strong>How do UDA values differ between England and Wales?</strong> Wales uses a different contract structure with its own unit values. The Welsh contract is based on a "banded" system similar to England but with different band values and activity targets. The principles are the same, but the specific rates and rules differ. If you work across borders, you need to understand the contract in each jurisdiction.</p>
-
-<p><strong>What happens if I do not meet my UDA target?</strong> Failure to meet the UDA target can result in clawback of funding. The NHS may reduce the contract value for the following year or require repayment of overpaid fees. It is essential to monitor your UDA delivery throughout the year and adjust your appointment scheduling accordingly.</p>
-
-<h2>Practical Steps for Dentists</h2>
+<h2>Practical steps for dentists</h2>
 
 <ol>
-<li><strong>Know your UDA value.</strong> Check your contract or ask your practice owner. Write it down and use it for financial planning.</li>
-<li><strong>Calculate your cost per UDA.</strong> Add up all practice overheads and divide by the number of UDAs delivered. Compare this to your UDA value to see your margin.</li>
-<li><strong>Review your associate fee split.</strong> If you are an associate, ensure your fee per UDA is fair relative to the practice's UDA value and overheads.</li>
-<li><strong>Plan for UDA delivery.</strong> Monitor your UDA count monthly to avoid falling short of the target.</li>
-<li><strong>Consider private income.</strong> If your UDA value is low, look for opportunities to increase private work to improve overall profitability.</li>
+  <li><strong>Find your real per-UDA value.</strong> Divide your contract value by your UDA target, or ask your principal for the figure if you are an associate. Write it down and use it in every NHS calculation.</li>
+  <li><strong>Work out your cost per UDA.</strong> Total your delivery costs and divide by the UDAs you deliver. The gap between value and cost is your true NHS margin.</li>
+  <li><strong>Model patient charges correctly.</strong> Remember charges count towards, not on top of, your contract value, so do not double-count them as extra income.</li>
+  <li><strong>Track delivery monthly.</strong> Compare cumulative UDAs against target through the year to stay clear of the clawback threshold.</li>
+  <li><strong>Review your band mix and your splits.</strong> Understand how Band 1, 2, 3 and urgent courses convert, and check any associate split against the contract's actual value.</li>
 </ol>
 
-<p>For tailored advice on your specific situation, speak to a dental-specialist accountant. We at <a href="/services/dental-accountants">Dental Finance Partners</a> work exclusively with UK dentists and understand the nuances of NHS contracts and UDA calculations. Contact us for a free initial consultation.</p>
+<p>The per-UDA value is the foundation of NHS dental finances, and almost every common mistake comes from treating it as a national figure rather than a contract-specific one. For tailored advice on your own contract, splits or practice numbers, speak to a dentist-only specialist. We at <a href="/services/dental-accountants">Dental Finance Partners</a> work exclusively with UK dentists and can review your position in a free initial conversation.</p>

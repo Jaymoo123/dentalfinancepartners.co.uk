@@ -3,217 +3,211 @@ title: "Locum Dentist Ltd Company vs Self-Employed: Which Tax Structure Works Be
 slug: "locum-dentist-ltd-company-vs-self-employed"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-ltd-company-vs-self-employed"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Locum Tax"
-metaTitle: "Locum Dentist Ltd Company vs Self-Employed: Tax Comparison 2025/26"
-metaDescription: "Compare tax, NI, pension and IR35 implications for locum dentists using a limited company (PSC) versus self-employed sole trader. 2025/26 rates and worked examples."
+metaTitle: "Locum Dentist: Ltd Company vs Self-Employed (2026/27)"
+metaDescription: "Limited company (PSC) or sole trader for a locum dentist? IR35, the 2026/27 extraction maths, NHS pension and admin compared, with a worked example."
 altText: "UK locum dentist reviewing tax paperwork for limited company and self-employed comparison"
-image: ""
+image: "https://images.pexels.com/photos/8297031/pexels-photo-8297031.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-in-long-sleeve-shirt-holding-a-calculator-8297031/"
 h1: "Locum Dentist Ltd Company vs Self-Employed: Which Tax Structure Works Best?"
-summary: "For locum dentists, the choice between operating through a limited company (PSC) and remaining self-employed as a sole trader depends on fee income, IR35 status, NHS pension access, and long-term profit extraction plans. This guide compares both structures with 2025/26 tax rates and worked examples."
+summary: "For locum dentists, the choice between operating through a limited company (PSC) and remaining self-employed as a sole trader turns on IR35 status, the profit-extraction maths, NHS pension access, and admin. This guide leads with the 2026/27 position and shows why the higher 2026/27 dividend rates and employer National Insurance have narrowed the company advantage."
+keyTakeaways:
+  - "On 2026/27 figures a sole trader on £80,000 net profit pays about £22,289 in tax and NIC, versus about £24,988 via a company before accountancy and payroll costs."
+  - "The higher 2026/27 dividend rates of 10.75% and 35.75% plus 15% employer NIC have removed the company's small advantage at typical locum profit levels."
+  - "Dividends are not pensionable, so an incorporated associate-style locum on a £5,000 salary plus dividends builds NHS pension only on the £5,000."
+  - "A company on £75,000 of profit pays corporation tax with marginal relief at about 21.5%, not a flat 19%, with the marginal relief fraction at 3/200."
+  - "An overdrawn director's loan triggers a section 455 charge at the dividend upper rate (35.75% on loans from 6 April 2026), a trap a sole trader cannot make."
 schema: ""
 faqs:
   - question: "Can a locum dentist use a limited company and still stay in the NHS Pension Scheme?"
-    answer: "No. The NHS Pension Scheme requires you to be an individual practitioner, not a company. If you operate through a limited company, you cannot join the scheme as a locum. You would need to be employed directly by a practice (or an NHS body) to access the NHS Pension as a limited company dentist. This is often the deciding factor for locum dentists who value the guaranteed, index-linked pension benefits over potential tax savings."
-  - question: "What is the IR35 risk for a locum dentist using a PSC?"
-    answer: "Since 6 April 2021, when a medium or large practice engages your limited company, the practice determines your IR35 status. If they decide you are inside IR35, they must deduct PAYE and National Insurance from the fees paid to your company. Locum dentists working for multiple practices with genuine substitution rights and no direct control by the practice are more likely to be outside IR35. The BDA model associate agreement does not guarantee self-employed status. HMRC looks at actual working practice, not paperwork."
+    answer: "Generally no for an incorporated associate-style locum. NHS pension accrual on the practitioner basis is built on net NHS-derived income, and dividends are not pensionable. If you incorporate and pay yourself a small salary plus dividends, only the salary is treated as pensionable officer pay, so the dividend portion builds no NHS pension. A sole trader locum can pension their NHS-derived income on the practitioner basis. This is often the deciding point, because the 2015 CARE scheme gives a guaranteed, index-linked benefit (1/54th accrual, revalued at CPI plus 1.5% while active) that is hard to replicate privately."
+  - question: "Who decides my IR35 status as a locum dentist using a PSC?"
+    answer: "Since 6 April 2021, where the engaging client is medium or large (most NHS practices and dental groups are), the client, not your company, determines your IR35 status under Chapter 10, Part 2 of ITEPA 2003. The client must issue a Status Determination Statement with reasons. If they decide you are inside IR35, the fee-payer operates PAYE and National Insurance before paying your company, so the money arrives net and salary-plus-dividend extraction of that income is not available. You can challenge a determination through the 45-day client-led disagreement process. A locum across several practices may hold a mix of inside and outside determinations."
   - question: "Is a limited company more tax-efficient for a locum dentist earning £80,000?"
-    answer: "At £80,000 net fees, the tax difference between a sole trader and a limited company is minimal. In our worked example, the sole trader paid £22,289 in total tax and NI, while the limited company route (salary plus dividends) paid £22,386. The limited company adds compliance costs of £1,500-£3,000 per year. For most locum dentists earning under £100,000, the sole trader structure is simpler and cheaper. The limited company advantage grows at higher profit levels, especially above £100,000."
+    answer: "Not on the 2026/27 figures. In the worked example below, a sole trader on £80,000 of net profit pays about £22,289 in income tax and Class 4 National Insurance. The company route (a £5,000 salary plus dividends), once corporation tax with marginal relief and the 2026/27 dividend rates of 10.75% and 35.75% are applied correctly, comes to about £24,988 before any accountancy and payroll costs. The 2026/27 dividend rise and the 15% employer National Insurance have removed the small advantage the company route used to show at this level. The picture can shift at much higher profits, where retaining earnings in the company defers personal tax."
   - question: "What expenses can a locum dentist claim through a limited company?"
-    answer: "A limited company locum dentist can claim the same core expenses as a sole trader: indemnity insurance (MDU, Dental Protection, MDDUS), CPD costs, GDC registration, professional subscriptions, travel between practices, equipment, and practice-related insurance. The company can also claim employer pension contributions (which are not P11D-reportable) and employer NI on salary. However, if you are inside IR35, the allowable expenses are more restricted. Always keep receipts and maintain a clear business purpose for each expense."
+    answer: "Broadly the same core costs as a sole trader, where they are incurred wholly and exclusively for the work: professional indemnity (Dental Protection, MDU, MDDUS), the GDC annual retention fee (restoration and penalty fees are not allowable), List 3 professional subscriptions, genuinely relevant CPD, instruments and loupes (usually via capital allowances), travel between practices (home to first practice is non-deductible commuting), and accountancy fees. A company can also make employer pension contributions, which are deductible for corporation tax on a paid basis and carry no National Insurance. If an engagement is inside IR35, the deductions available against that income are far more restricted."
 ---
 
 <h2>Should You Run Your Locum Work Through a Limited Company?</h2>
 
-<p>Many locum dentists ask whether they should operate through a limited company (often called a personal service company or PSC) or stay self-employed as a sole trader. The answer depends on your fee income, how many practices you work for, your IR35 status, and whether you want to remain in the NHS Pension Scheme.</p>
+<p>Many locum dentists ask whether to operate through a limited company (often called a personal service company, or PSC) or to stay self-employed as a sole trader. The honest answer is that the structure follows the facts: your IR35 status on each engagement, your profit level, whether you want to keep accruing NHS pension, and how much admin you are willing to carry.</p>
 
-<p>This guide compares both structures using 2025/26 tax rates and real worked examples. It covers income tax, National Insurance, pension access, IR35 risk, and practical administration. The aim is to help you decide which structure fits your locum work pattern.</p>
+<p>This guide leads with the 2026/27 position, because two recent changes matter. From 6 April 2026 the dividend ordinary and upper rates rose, and the employer National Insurance regime tightened from 6 April 2025. Both narrow the case for incorporation at typical locum profit levels. We walk IR35 first (it is the threshold question), then the extraction maths with a corrected worked example, then admin and the pension point.</p>
 
-<p>Every locum dentist's situation is different. The figures below are for illustration. You should take specific advice from a <a href="/services/locum-dentist-tax">dental-specialist accountant</a> before changing your business structure.</p>
+<p>Every locum dentist's situation is different and the figures below are for illustration. Take specific advice from a <a href="/services/locum-dentist-tax">dental-specialist accountant</a> before changing your structure.</p>
+
+<h2>IR35 Comes First: The Threshold Question</h2>
+
+<p>Before any tax comparison, settle your IR35 position, because it can remove the company's advantage entirely. Since 6 April 2021, where the engaging client is medium or large (most NHS practices and dental groups are), the client, not your PSC, determines your IR35 status under Chapter 10, Part 2 of the Income Tax (Earnings and Pensions) Act 2003 (ITEPA 2003). The client must issue a Status Determination Statement (SDS) with reasons, taking reasonable care.</p>
+
+<p>If the client decides your engagement is <strong>inside IR35</strong>, the fee-payer deducts PAYE and National Insurance from the fees before paying your company. The money reaches the company net of tax, so the salary-and-dividend extraction that makes a PSC attractive is simply not available on that income. You end up taxed broadly like an employee, but with company admin on top and no employment rights.</p>
+
+<p>If the engagement is <strong>outside IR35</strong>, the fee-payer pays gross and your company extracts profit in the normal way. A locum working across several practices may genuinely hold a mix: some engagements inside, some outside.</p>
+
+<p>You are more likely to be outside IR35 where you:</p>
+
+<ul>
+<li>Work for several practices rather than one</li>
+<li>Have a genuine right of substitution</li>
+<li>Are not under the practice's day-to-day control over how and when you work</li>
+<li>Bear real financial risk (you invoice for work done and carry your own indemnity and CPD)</li>
+</ul>
+
+<p>If you work mainly for one practice that controls your schedule and methods, HMRC may argue you are an employee in all but name. A model associate-style agreement is supportive evidence, not a shield: HMRC and tribunals look at the actual working practice, not the paperwork. You can challenge an SDS through the 45-day client-led disagreement process. For the detail on NHS engagements, see <a href="/blog/locum-tax/ir35-locum-dentists-nhs-engagements">IR35 for locum dentists on NHS engagements</a>. Where a practice insists on an umbrella rather than your own company, our note on <a href="/blog/locum-tax/umbrella-companies-for-locum-dentists-uk-tax">umbrella companies for locum dentists</a> covers the tax effect.</p>
 
 <h2>How Locum Dentists Are Taxed: Sole Trader vs Limited Company</h2>
 
-<p>As a self-employed locum dentist (sole trader), you pay income tax and Class 4 National Insurance on your profits. Your tax return is straightforward. You report your fees minus allowable expenses on the self-employment pages of your Self Assessment.</p>
+<p>As a self-employed locum (sole trader), you pay income tax and Class 4 National Insurance on your profits. You report fees minus allowable expenses on the self-employment pages of your Self Assessment. One layer of tax, one return.</p>
 
-<p>As a locum dentist operating through a limited company, the company pays corporation tax on its profits. You then extract the money as salary, dividends, or a combination. This creates two layers of tax: corporation tax on company profits, then income tax and dividend tax on what you take personally.</p>
+<p>As a locum through a limited company, the company pays corporation tax on its profits first. You then extract money as salary, dividends, or a mix, which is taxed again in your hands. Two layers: corporation tax on company profit, then income tax on salary and dividend tax on dividends. Done well this can be efficient at higher profits, but on the 2026/27 figures the gap at typical locum levels has closed.</p>
 
-<p>The limited company structure can be more tax-efficient at higher profit levels, but it comes with extra compliance costs, filing requirements, and IR35 risk. It also affects your NHS Pension Scheme access.</p>
+<h3>Sole Trader: The Rates That Apply</h3>
 
-<h3>Sole Trader Tax in 2025/26</h3>
-
-<p>If you are self-employed as a locum dentist, your tax calculation for 2025/26 works like this:</p>
+<p>Income tax bands and self-employed National Insurance are unchanged for 2026/27 from 2025/26:</p>
 
 <ul>
-<li>You pay income tax at 20% (basic rate) on profits between £12,571 and £50,270</li>
-<li>You pay income tax at 40% (higher rate) on profits between £50,271 and £125,140</li>
-<li>You pay Class 4 National Insurance at 6% on profits between £12,570 and £50,270, and 2% above that</li>
-<li>Class 2 National Insurance was abolished from April 2024</li>
-<li>Your personal allowance is £12,570, tapered by £1 for every £2 of income above £100,000</li>
+<li>Personal allowance £12,570, tapered by £1 for every £2 of income above £100,000</li>
+<li>Basic rate 20% on income from £12,571 to £50,270</li>
+<li>Higher rate 40% from £50,271 to £125,140; additional rate 45% above £125,140</li>
+<li>Class 4 National Insurance 6% on profits from £12,570 to £50,270, then 2% above</li>
+<li>Class 2 National Insurance was abolished from 6 April 2024; profits above the small-profits threshold still bank a state-pension year</li>
 </ul>
 
-<p><strong>Worked example: Sole trader locum earning £80,000 net fees after expenses</strong></p>
+<h3>Limited Company: The Rates That Apply</h3>
+
+<p>For a company, corporation tax is banded and not flat:</p>
 
 <ul>
-<li>Personal allowance: £12,570 (tax-free)</li>
-<li>Basic rate band: £37,700 at 20% = £7,540 tax</li>
-<li>Higher rate band: £29,730 at 40% = £11,892 tax</li>
-<li>Total income tax: £19,432</li>
-<li>Class 4 NI: £37,700 at 6% = £2,262, plus £29,730 at 2% = £595. Total NI: £2,857</li>
-<li>Total tax and NI: £22,289</li>
-<li>Net take-home: £57,711</li>
+<li>19% small-profits rate on profits up to £50,000</li>
+<li>25% main rate on profits above £250,000</li>
+<li>Between £50,000 and £250,000, marginal relief applies, giving an effective rate of about 26.5% on the slice in that band (the marginal relief fraction is 3/200). A company on £75,000 of profit does not pay a flat 19%</li>
 </ul>
 
-<h3>Limited Company Tax in 2025/26</h3>
-
-<p>If you operate through a limited company, the company pays corporation tax on its profits. For 2025/26:</p>
+<p>You then extract the after-tax profit. Salary is deductible for the company but draws income tax and National Insurance personally and, above the employer threshold, employer National Insurance for the company. Dividends are paid from post-tax profit and carry dividend tax:</p>
 
 <ul>
-<li>Corporation tax is 19% on profits up to £50,000</li>
-<li>Corporation tax is 25% on profits above £250,000</li>
-<li>Marginal relief applies between £50,000 and £250,000</li>
-<li>You then extract profits as salary (subject to PAYE and employer/employee NI) or dividends (subject to dividend tax)</li>
+<li><strong>From 6 April 2026 (2026/27, Finance Act 2026 s.4):</strong> ordinary 10.75%, upper 35.75%, additional 39.35%, dividend allowance £500</li>
+<li><strong>2025/26 (for context):</strong> ordinary 8.75%, upper 33.75%, additional 39.35%, dividend allowance £500</li>
 </ul>
 
-<p><strong>Worked example: Limited company locum earning £80,000 net fees after expenses</strong></p>
+<p>On the employer side, the company pays employer (secondary) National Insurance at 15% on salary above the secondary threshold, which fell to £5,000 a year from 6 April 2025. A company whose only employee is a single director cannot claim the Employment Allowance, which is why one-director locum companies often set the director's salary at the £5,000 secondary threshold: it incurs no employer National Insurance and is still deductible for corporation tax. Setting salary at or above the Lower Earnings Limit (£6,708 for 2026/27) is what banks a qualifying year for the state pension, so some directors run a slightly higher salary to protect that, accepting a small employer National Insurance cost. The detail of the salary-versus-dividend mix is in <a href="/blog/locum-tax/paying-yourself-from-locum-ltd-company-2025-26">paying yourself from a locum limited company</a>.</p>
 
-<p>Assume you take a salary of £12,570 (personal allowance) and dividends of the remaining profit after corporation tax.</p>
+<h2>Worked Example: £80,000 of Net Profit at 2026/27 Rates</h2>
+
+<p>Take a locum with £80,000 of profit after expenses and compare the two routes on the same income, using current 2026/27 rates. The company example assumes a £5,000 director's salary (the secondary threshold, so no employer National Insurance) with the rest extracted as dividends.</p>
+
+<p><strong>Route A: Sole trader, £80,000 net profit</strong></p>
 
 <ul>
-<li>Company profit: £80,000</li>
-<li>Salary: £12,570 (no tax or NI if within personal allowance; employer NI applies above £5,000 threshold)</li>
-<li>Employer NI on salary: 15% on £7,570 = £1,136</li>
-<li>Corporation tax: 19% on (£80,000 - £12,570 - £1,136) = 19% on £66,294 = £12,596</li>
-<li>Profit after tax: £66,294 - £12,596 = £53,698 available for dividends</li>
-<li>Dividend allowance: £500 (tax-free)</li>
-<li>Dividend tax: £500 at 0%, then £37,200 at 8.75% = £3,255, then £15,998 at 33.75% = £5,399</li>
-<li>Total dividend tax: £8,654</li>
-<li>Total tax (company + personal): £12,596 + £1,136 + £8,654 = £22,386</li>
-<li>Net take-home: £80,000 - £22,386 = £57,614</li>
+<li>Personal allowance £12,570 (tax-free)</li>
+<li>Basic rate: £37,700 at 20% = £7,540</li>
+<li>Higher rate: £29,730 at 40% = £11,892</li>
+<li>Income tax total: £19,432</li>
+<li>Class 4 National Insurance: £37,700 at 6% = £2,262, plus £29,730 at 2% = £595. Total £2,857</li>
+<li><strong>Total tax and National Insurance: £22,289.</strong> Net take-home about £57,711</li>
 </ul>
 
-<p>In this example, the total tax bill is almost identical to the sole trader route. The limited company structure does not automatically save tax at this profit level. The advantage comes at higher profit levels or when you can retain profits in the company to defer personal tax.</p>
-
-<h2>IR35 and the Locum PSC</h2>
-
-<p>The biggest risk for a locum dentist using a limited company is IR35. Since 6 April 2021, when a medium or large practice engages your limited company, the practice (not you) decides your IR35 status. If they determine you are inside IR35, the practice must deduct PAYE and National Insurance from the fees they pay your company, as if you were an employee.</p>
-
-<p>If you are inside IR35, the tax advantage of the limited company largely disappears. You end up paying broadly the same tax as an employee, but with extra administration and no employment rights.</p>
-
-<p>Locum dentists working through a PSC are more likely to be outside IR35 if they:</p>
+<p><strong>Route B: Limited company, £80,000 profit, £5,000 salary plus dividends</strong></p>
 
 <ul>
-<li>Work for multiple practices (not just one)</li>
-<li>Have a genuine right of substitution (you can send another dentist in your place)</li>
-<li>Are not under the practice's direct control over how and when you work</li>
-<li>Bear financial risk (you invoice for work done, you cover your own indemnity and CPD)</li>
+<li>Salary £5,000: no income tax or employee National Insurance (within the personal allowance and at the secondary threshold), and no employer National Insurance</li>
+<li>Profit chargeable to corporation tax: £80,000 less the £5,000 deductible salary = £75,000</li>
+<li>Corporation tax with marginal relief: (£75,000 at 25% = £18,750), less marginal relief of (£250,000 minus £75,000) at 3/200 = £2,625, giving <strong>£16,125</strong> (an effective 21.5% on £75,000, not 19%)</li>
+<li>Profit after corporation tax, available as dividends: £75,000 less £16,125 = £58,875</li>
+<li>Personal allowance left after the £5,000 salary: £7,570 of dividends covered tax-free</li>
+<li>Dividend allowance: next £500 at 0%</li>
+<li>Ordinary-rate dividends: £37,200 at 10.75% = £3,999</li>
+<li>Upper-rate dividends: the remaining £13,605 at 35.75% = £4,864</li>
+<li>Dividend tax total: £8,863</li>
+<li><strong>Total tax (corporation tax £16,125 plus dividend tax £8,863): £24,988.</strong> Net take-home about £55,012</li>
 </ul>
 
-<p>If you work mainly for one practice and they control your schedule and methods, HMRC may argue you are an employee in all but name. The BDA model associate agreement does not guarantee self-employed status. HMRC and tribunals look at the actual working practice, not the paperwork.</p>
+<p>Side by side at 2026/27 rates, on £80,000 of profit:</p>
 
-<p>If you are inside IR35, the tax comparison changes completely. The limited company offers little benefit, and the sole trader route may be simpler and cheaper.</p>
+<table>
+<thead>
+<tr><th>Item</th><th>Sole trader</th><th>Limited company (£5,000 salary plus dividends)</th></tr>
+</thead>
+<tbody>
+<tr><td>Income tax</td><td>£19,432</td><td>£0 (salary within allowance)</td></tr>
+<tr><td>National Insurance</td><td>£2,857 (Class 4)</td><td>£0 (employer and employee)</td></tr>
+<tr><td>Corporation tax (marginal relief)</td><td>n/a</td><td>£16,125</td></tr>
+<tr><td>Dividend tax</td><td>n/a</td><td>£8,863</td></tr>
+<tr><td><strong>Total tax and National Insurance</strong></td><td><strong>£22,289</strong></td><td><strong>£24,988</strong></td></tr>
+<tr><td><strong>Net take-home</strong></td><td><strong>about £57,711</strong></td><td><strong>about £55,012</strong></td></tr>
+</tbody>
+</table>
 
-<h2>NHS Pension Scheme Access</h2>
+<p>On the 2026/27 figures the sole trader is ahead by roughly £2,700 at this profit level, before you add the company's accountancy and payroll costs. That is a reversal of the old position, where the two routes were close to neutral at £80,000. Two things drove the change: the dividend rates rose from 6 April 2026 (ordinary 8.75% to 10.75%, upper 33.75% to 35.75%), and a company on £75,000 of profit pays corporation tax with marginal relief at about 21.5%, not a flat 19%. Comparisons that assume 19% across the board, or that still use the old dividend rates, overstate the company's case.</p>
 
-<p>This is often the deciding factor for locum dentists. If you are a sole trader locum dentist, you can join the NHS Pension Scheme as a locum. You pay contributions based on your NHS locum income, and you build up pension benefits in the 2015 CARE scheme.</p>
+<h2>NHS Pension: Often the Deciding Point</h2>
 
-<p>If you operate through a limited company, you cannot join the NHS Pension Scheme as a locum. The scheme requires you to be an individual practitioner, not a company. You would need to be employed directly by a practice (or by an NHS body) to access the NHS Pension as a limited company dentist.</p>
+<p>For many locums this outweighs the tax line. A sole trader locum pensions their NHS-derived income on the practitioner basis and accrues in the 2015 CARE scheme, at 1/54th of pensionable earnings each year, revalued while active at CPI plus 1.5%. It is a guaranteed, index-linked benefit that is difficult to recreate with private investment.</p>
 
-<p>For many locum dentists, the NHS Pension benefits are more valuable than the tax savings from a limited company. The 2015 CARE scheme provides a guaranteed, index-linked pension that is hard to replicate with private investments. If you plan to stay in the NHS Pension, the sole trader structure is usually the better choice.</p>
+<p>The catch with incorporation is that <strong>dividends are not pensionable</strong>. An incorporated associate-style locum is treated as an officer: only the PAYE salary counts as pensionable pay. Pay yourself a £5,000 salary plus dividends and your pensionable pay is £5,000, so the dividend slice builds no NHS pension. Over a ten to fifteen year run to retirement, that lost accrual can dwarf any annual tax difference. (Whether an incorporated contract-holding principal can still pension NHS-derived profit through the practitioner mechanism is genuinely contested and case-specific; confirm your own position with NHSBSA rather than assuming it either way.) If keeping NHS pension accrual matters to you, the sole trader route usually wins on this point alone.</p>
 
-<h2>Administration and Compliance Costs</h2>
+<h2>Administration and Compliance</h2>
 
-<p>A limited company requires more paperwork than being a sole trader. You must:</p>
+<p>A company is more work than a sole trade. You must:</p>
 
 <ul>
 <li>File annual accounts with Companies House</li>
 <li>File a corporation tax return with HMRC</li>
-<li>Run a payroll (even if you are the only employee)</li>
-<li>Submit RTI (Real Time Information) reports each pay period</li>
-<li>Maintain statutory registers and hold annual board meetings</li>
-<li>Prepare personal Self Assessment returns for dividend and salary income</li>
+<li>Run a payroll and submit Real Time Information each pay period, even as the only employee</li>
+<li>Maintain statutory registers</li>
+<li>Still file a personal Self Assessment for your salary and dividends</li>
 </ul>
 
-<p>Accountancy fees for a limited company locum dentist are typically £1,500-£3,000 per year, compared to £500-£1,000 for a sole trader. You also need to consider the cost of payroll software or a bookkeeper.</p>
+<p>The sole trader route is one Self Assessment return a year, with no company accounts, no payroll, and no corporation tax return. Note also that Making Tax Digital for Income Tax mandates digital records and quarterly updates for sole traders with qualifying income above £50,000 from 6 April 2026, so most full-time locums are in scope; companies are not (Making Tax Digital applies to income tax, not corporation tax). Set the company's running costs against any tax difference, which, on the example above, currently runs the wrong way for the company at £80,000.</p>
 
-<p>The sole trader route is simpler. You file one Self Assessment return each year. No company accounts, no payroll, no corporation tax return. For locum dentists earning under £80,000-£100,000, the extra compliance cost of a limited company often outweighs any tax saving.</p>
+<h2>Beware the Overdrawn Director's Loan</h2>
 
-<h2>Profit Extraction and Timing</h2>
+<p>One company-only trap catches locums who draw money through the year and tidy it up at the year-end. A dental company is a close company, so an overdrawn director's loan account triggers a section 455 charge: the company pays corporation tax at the dividend upper rate on the loan still outstanding nine months and one day after the period-end. That rate is 33.75% on loans made in 2025/26 and 35.75% on loans made on or after 6 April 2026. The charge is repayable once the loan is cleared, but the refund is itself deferred, so it is a real cash-flow cost. A sole trader simply cannot make this mistake: the business money is already your money.</p>
 
-<p>One advantage of the limited company is that you can control when you extract profits. If you have a high-income year, you can leave profits in the company and take them in a lower-income year. This can smooth your tax bill and keep you in lower tax bands.</p>
+<h2>Profit Extraction, Timing and Higher Earners</h2>
 
-<p>For example, if you earn £120,000 in one year as a locum dentist, as a sole trader you lose your personal allowance (tapered above £100,000) and pay 40% and 45% tax on most of your income. With a limited company, you could leave £40,000 in the company and take only £80,000 as salary and dividends. The retained profits are taxed at 19% corporation tax now, and you can extract them later when your income is lower.</p>
+<p>The company's genuine advantage is control over timing. If you have a high-income year, you can leave profit in the company taxed at corporation tax now and extract it in a lower-income year, smoothing your personal tax. At £120,000, for instance, a sole trader loses the personal allowance (tapered above £100,000) and pays higher-rate tax across most of the income; a company lets you draw, say, £80,000 personally and retain the rest for a leaner year or for reinvestment. Retained profit can also fund buying into a practice or partnership later.</p>
 
-<p>This deferral can be valuable, but it only works if you have lower-income years ahead. If you plan to build up a practice or buy into a partnership, the retained profits can fund your investment.</p>
+<p>This only helps if lower-income years are genuinely coming, or if you have a reinvestment plan. As a pure annual tax exercise at typical locum profits, the 2026/27 dividend rates and the marginal-relief corporation tax mean incorporation no longer produces a reliable saving. For a side-by-side on the employment status itself rather than the structure, see <a href="/blog/associate-tax/locum-vs-associate-tax-treatment-uk-dentists">locum versus associate tax treatment</a>.</p>
 
-<h2>When a Limited Company Makes Sense for a Locum Dentist</h2>
-
-<p>A limited company structure is more likely to be beneficial if:</p>
+<h2>When a Limited Company Can Still Make Sense</h2>
 
 <ul>
-<li>Your locum fee income exceeds £100,000 per year</li>
-<li>You work for multiple practices and are clearly outside IR35</li>
-<li>You do not need NHS Pension Scheme access (or you have alternative pension arrangements)</li>
-<li>You want to retain profits in the company for future investment</li>
-<li>You plan to build up retained profits and eventually extract them via a capital distribution (which may qualify for lower CGT rates)</li>
+<li>Your profit is well above the typical level, so retaining earnings and timing extraction is worth real money</li>
+<li>You are clearly outside IR35 across your engagements</li>
+<li>You do not need to keep accruing NHS pension, or you have planned alternatives</li>
+<li>You want to retain profit for reinvestment, such as buying into a practice</li>
+<li>You plan to build retained profit and extract it on a future winding-up, where a capital distribution may be taxed at capital gains rates rather than as a dividend</li>
 </ul>
-
-<p>If you fall into this category, a limited company can reduce your overall tax burden, especially at higher income levels where the sole trader faces 40% income tax plus 2% NI on profits above £50,270.</p>
 
 <h2>When Sole Trader Is the Better Choice</h2>
 
-<p>Staying self-employed as a sole trader is usually better if:</p>
-
 <ul>
-<li>Your locum fee income is under £80,000-£100,000</li>
-<li>You want to remain in the NHS Pension Scheme</li>
+<li>Your profit is at a typical locum level, where the example above shows the sole trader ahead</li>
+<li>You want to keep accruing NHS pension on the practitioner basis</li>
 <li>You work mainly for one practice and could be caught by IR35</li>
-<li>You prefer simplicity and lower accountancy fees</li>
-<li>You do not need to retain profits in a company</li>
+<li>You prefer one annual return and lower running costs</li>
+<li>You have no need to retain profit in a company</li>
 </ul>
 
-<p>For most locum dentists earning under £80,000, the sole trader route is simpler, cheaper, and gives access to the NHS Pension. The limited company adds complexity without a meaningful tax saving at this level.</p>
+<h2>Switching Structure</h2>
 
-<h2>Making the Switch: Sole Trader to Limited Company</h2>
+<p>If you move from sole trader to company, you register the company at Companies House, register it for corporation tax, open a business bank account, transfer any assets, and tell HMRC the self-employment has ceased. Transferring a business into a company can trigger capital gains tax, though incorporation relief under TCGA 1992 s.162 can defer the gain where you transfer the whole business as a going concern wholly or partly for shares. Moving back the other way means closing the company and extracting any retained profit, which carries its own dividend or capital gains tax. Either direction repays careful planning with your accountant.</p>
 
-<p>If you decide to move from sole trader to limited company, you need to:</p>
+<h2>VAT for Locum Dentists</h2>
 
-<ul>
-<li>Register a new company at Companies House</li>
-<li>Register for corporation tax with HMRC</li>
-<li>Set up a business bank account</li>
-<li>Transfer any assets (equipment, goodwill) to the company</li>
-<li>Notify HMRC that your self-employment has ceased</li>
-<li>Consider whether you need to register for VAT (if your fees exceed £90,000)</li>
-</ul>
+<p>Dental care provided by a registrant is exempt from VAT under VATA 1994 Schedule 9 Group 7, whether you trade as a sole trader or a company, so you do not charge VAT on locum fees for dental treatment. Purely cosmetic work with no therapeutic purpose (for example tooth whitening, or facial aesthetics for cosmetic reasons) can be standard-rated, and if your taxable (non-exempt) turnover exceeds £90,000 you must register for VAT. Exempt dental income does not count towards that threshold. This is a borderline area HMRC scrutinises, so take advice if it applies to you.</p>
 
-<p>Transferring assets to the company can trigger capital gains tax. Section 162 incorporation relief (TCGA 1992 s.162) can defer CGT if you transfer your entire unincorporated business to a company in exchange for shares. This is a complex area and you should take advice from a <a href="/services/dental-accountants">dental-specialist accountant</a> before proceeding.</p>
+<h2>Summary</h2>
 
-<h2>Making the Switch: Limited Company to Sole Trader</h2>
+<p>For most locum dentists at typical profit levels, the sole trader structure is the better fit on the 2026/27 figures: it keeps NHS pension accrual on the practitioner basis, costs less to run, and carries no IR35 or director's-loan risk. The worked example shows the company route now costing more at £80,000 once you apply the higher 2026/27 dividend rates and corporation tax with marginal relief, before any company running costs.</p>
 
-<p>If you are already operating through a limited company and want to move back to sole trader, you need to:</p>
-
-<ul>
-<li>Close the company (strike off or liquidate)</li>
-<li>Extract any retained profits (subject to tax on distribution)</li>
-<li>Notify HMRC that the company has ceased trading</li>
-<li>Register as self-employed with HMRC</li>
-<li>Transfer any assets back to your personal name (may trigger CGT)</li>
-</ul>
-
-<p>Closing a company with retained profits can trigger dividend tax or capital gains tax on the distribution. If the company has significant retained profits, the tax bill can be substantial. Plan the exit carefully with your accountant.</p>
-
-<h2>VAT Considerations for Locum Dentists</h2>
-
-<p>Dental treatment provided by a registered dental professional is exempt from VAT under VATA 1994 Schedule 9 Group 7. This applies whether you are a sole trader or a limited company. You do not charge VAT on your locum fees for dental treatment.</p>
-
-<p>However, if you also provide purely cosmetic services (such as tooth whitening without a medical purpose), those services may be standard-rated for VAT. If your total VAT-able income exceeds £90,000, you must register for VAT. This is a borderline area and HMRC scrutinises cosmetic claims. Take advice from a <a href="/services/locum-dentist-tax">locum dentist tax specialist</a> if this applies to you.</p>
-
-<h2>Summary: Which Structure for Your Locum Work?</h2>
-
-<p>For the majority of locum dentists, the sole trader structure is the better choice. It gives you access to the NHS Pension Scheme, keeps compliance costs low, and avoids IR35 risk. The tax saving from a limited company is marginal at income levels below £100,000 and can be wiped out by IR35 determinations.</p>
-
-<p>A limited company can work well for high-earning locum dentists who are clearly outside IR35 and do not need the NHS Pension. But it requires careful planning, higher accountancy fees, and ongoing compliance.</p>
-
-<p>Before making a decision, run the numbers for your specific income level and work pattern. Use our <a href="/calculators/locum-cost-benefit-calculator">locum cost benefit calculator</a> to compare take-home pay under each structure. Then speak to a <a href="/services/dental-accountants">dental-specialist accountant</a> who understands locum tax, IR35, and the NHS Pension Scheme.</p>
-
-<p>The right structure depends on your facts. There is no one-size-fits-all answer. But with the right advice, you can choose the structure that keeps more of your fees in your pocket while staying compliant.</p>
+<p>A company still earns its place for clearly-outside-IR35 locums at much higher profits who value retaining and timing earnings and do not need NHS pension accrual. The right answer depends on your numbers and your work pattern, so settle your IR35 position first, then run the maths for your own income before speaking to a <a href="/services/dental-accountants">dental-specialist accountant</a> who understands locum tax, IR35 and the NHS Pension Scheme.</p>

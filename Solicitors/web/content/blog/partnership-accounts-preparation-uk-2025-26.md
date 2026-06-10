@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing partnership accounts and partner statements at 
 image: ""
 h1: "How Do UK Solicitors Prepare Partnership Accounts for 2025/26?"
 summary: "A step-by-step guide for UK solicitors and law firm partners on preparing partnership accounts for the 2025/26 tax year. Covers the partnership tax return (SA800), partner statements, profit allocation, and common pitfalls for both general partnerships and LLPs."
+keyTakeaways:
+  - "The partnership files an SA800 by 31 January 2027 for 2025/26; it pays no tax, and each partner is taxed individually on their allocated share."
+  - "Accounting profit is adjusted for tax, adding back depreciation and client entertaining, with capital allowances claimed and AIA at £1,000,000."
+  - "Fixed-share LLP members meeting all three Salaried Member conditions are taxed as employees, so PAYE and NIC apply to their drawings."
+  - "Under FRS 102, unbilled work in progress must be valued and included; undervaluing WIP understates profit and distorts partner shares."
+  - "Drawings are advances against profit share, so overdrawing creates a loan to the partner that must be repaid or adjusted next year."
 schema: ""
 faqs:
   - question: "What is the difference between a partnership tax return and a partner's personal tax return?"

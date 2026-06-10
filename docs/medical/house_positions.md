@@ -1,116 +1,281 @@
-# Medical site — house positions
+# Medical house positions (locked figures and framings)
 
-Locked by the manager (orchestrator session) on 2026-05-21 before sessions A/B/C launch. These are the positions every rewrite must use. Avoids the inter-session disagreement we hit on Property's 22/42/47% question.
+Locked by the orchestrator on 2026-06-03 before the medical (UK doctors, GPs and consultants) net-new and rewrite sessions launch. These are the positions every Medical net-new page and every Medical rewrite must use, cited by section number (`§N` / `§N.A`). Correctness is paramount: a wrong statute or rate here re-seeds the error into every citing page. Every figure below was verified at primary source on 2026-06-03 (see the Verification log) unless explicitly flagged `> VERIFY`.
 
-These are deliberate, defensible positions. If you (Session A/B/C) hit a factual issue with one of them while rewriting, **append a flag** to `docs/medical_site_wide_flags.md` with the contradicting source. Do not unilaterally re-frame; the orchestrator will reconcile.
+This site is unusually close to the Dentists site: the **same NHS Pension Scheme**, the same self-employed-associate / locum / principal structures, the same FA 2026 changes and the same CGT, corporation-tax, dividend and capital-allowance machinery. Where a position maps from Dentists it has still been re-verified here. The genuine medical divergences (NHS GP goodwill cannot be sold, GMS/PMS/Global Sum instead of UDAs, GP pension certification by Type 1/Type 2/locum forms, the GMC and NHS England Performers List instead of the GDC, CNSGP indemnity, and the larger premises feature) are flagged in the relevant sections.
 
----
+If a session hits a factual conflict between a competitor source and a house position, **append a flag** to the wave's `site_wide_flags` (do not unilaterally re-frame). The orchestrator reconciles at the HP-lock review gate.
 
-## 1. Locum doctor IR35 / off-payroll working (post-April-2024)
-
-**House position:** The off-payroll working rules (IR35) apply to locum doctor engagements where the locum supplies their services through an intermediary (typically a personal service company) to a public-sector or medium/large private-sector hirer. From 6 April 2017 for public-sector hirers (which covers NHS Trusts) and from 6 April 2021 for medium/large private-sector hirers, the hirer is responsible for determining IR35 status and the fee-payer is responsible for deducting PAYE/NICs where status is "inside IR35".
-
-**The April 2024 change**: the off-payroll working rules were amended so that HMRC can offset taxes the worker and intermediary have already paid against the deemed employer's PAYE liability — preventing double taxation that previously made compliance settlements punitive. This does NOT change who decides status, who pays, or which engagements are caught.
-
-**For locum doctors:**
-- A locum working PSC → NHS Trust: NHS Trust determines status. Where inside IR35, the agency or NHS Trust deducts tax before paying the PSC. The locum's PSC receives net of PAYE/NICs.
-- A locum working PSC → small private practice (a "small company" under Companies Act 2006 thresholds): the OLD rules apply — the locum's PSC is responsible for determining status.
-- A locum working PSC → agency → NHS Trust: the chain is treated as off-payroll; the agency is usually the fee-payer.
-- A locum working as a sole trader (no PSC): IR35 does not apply (no intermediary). HMRC may still challenge employment status, but the route is "employed-vs-self-employed", not IR35.
-
-**Umbrella companies and the 2026 reforms:** The Finance Act 2024 announced umbrella company regulation reforms, with HMRC taking joint and several liability for unpaid PAYE from non-compliant umbrellas (consultation closed 2024; legislation expected in Finance Act 2025/2026). Frame as "the regulatory direction is towards holding umbrellas and the labour-supply chain accountable" without specifying enacted dates that aren't in primary legislation yet.
-
-**Do not write:** "IR35 was abolished", "IR35 doesn't apply to NHS work", "the off-payroll rules were repealed". These are wrong.
+No em-dashes anywhere (commas, parentheses, full stops, middle dots only). Every locked figure carries its effective date and, where it matters, its devolved or UK-wide scope.
 
 ---
 
-## 2. NHS pension — annual allowance, scheme pays, tapered allowance
+## Verification log
 
-**House position 2026/27 figures:**
-- Standard annual allowance: **£60,000** (unchanged from 2023/24).
-- Tapered annual allowance: applies where adjusted income exceeds **£260,000** AND threshold income exceeds **£200,000**. AA tapers by £1 for every £2 of adjusted income above £260,000, with a floor at **£10,000** (so AA floor remains £10,000 — restored from the £4,000 floor that applied 2020/21–2022/23).
-- Money Purchase Annual Allowance (MPAA): **£10,000** (raised from £4,000 in April 2023).
-- Lifetime allowance (LTA): **abolished from 6 April 2024**. Replaced by:
-  - Lump Sum Allowance (LSA): **£268,275** lifetime cap on tax-free lump sum
-  - Lump Sum and Death Benefit Allowance (LSDBA): **£1,073,100**
+Primary-source / authoritative URLs fetched or searched on 2026-06-03 and what each confirmed:
 
-**Scheme Pays for NHS Pension:**
-- Mandatory Scheme Pays: available when the AA charge exceeds £2,000 AND the pension input amount in the NHS scheme alone exceeds the standard AA. Election deadline: 31 July of the year following the year the AA charge crystallised (eg. an AA charge for 2025/26 must elect Scheme Pays by 31 July 2027).
-- Voluntary Scheme Pays: NHS scheme allows voluntary Scheme Pays for charges that don't meet the mandatory test. Election deadline differs by scheme section.
+- **NHS GP goodwill prohibition (current instrument)**: https://www.legislation.gov.uk/uksi/2019/251/made · The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251), in force **1 April 2019**, **revoked SI 2004/906** (with saved transitionals); reg 4(1) prohibits a GMS/PMS/APMS provider (and any person on their behalf) selling the goodwill of a medical practice, and reg 4(3) blocks selling company shares whose value includes practice goodwill. Applies to providers with registered patient lists in England.
+- **NHS GP goodwill prohibition (original instrument + 2004 date)**: https://www.legislation.gov.uk/uksi/2004/906/contents/made · The Primary Medical Services (Sale of Goodwill and Restrictions on Sub-contracting) Regulations 2004 (SI 2004/906), reg 3 "Prohibition on the sale of goodwill in certain primary medical services practices"; this is the instrument that first prohibited NHS GP goodwill sales **from 1 April 2004** (now revoked and re-enacted by SI 2019/251).
+- **VAT medical-care exemption (statute)**: https://www.legislation.gov.uk/ukpga/1994/23/schedule/9 (Sch 9 Group 7, Items 1 to 3) · exempts the supply of services by a person registered or enrolled on the listed medical/health registers (Item 1 registered medical practitioners; Item 2 other registered health professionals / persons supervised by them).
+- **VAT medical-care exemption (principal-purpose test)**: https://www.gov.uk/hmrc-internal-manuals/vat-health/vathlt2010 · two-part test: (1) service within the professional's registered field, (2) **primary purpose is the protection, maintenance or restoration of health**; medico-legal / third-party-decision reports and administrative services with no care element are **standard-rated**.
+- **VAT registration threshold + 30-day rule**: https://www.gov.uk/register-for-vat/when-to-register and https://www.gov.uk/vat-registration/when-to-register · **£90,000** taxable turnover; register within 30 days of the month-end in which the threshold is crossed.
+- **NHS Pension Scheme sections**: NHSBSA / NHS Employers (https://www.nhsemployers.org/articles/comparing-different-sections-nhs-pension-scheme) · **1995** section 1/80th + 3x lump sum, NPA 60; **2008** section 1/60th, NPA 65; **2015** CARE **1/54th** of pensionable earnings, NPA = State Pension Age (or 65 if later); all active members in the 2015 scheme **from 1 April 2022**.
+- **McCloud remedy**: NHSBSA / NHS Employers (https://www.nhsemployers.org/articles/mccloud-remedy) · remedy period **1 April 2015 to 31 March 2022**; rollback to legacy (1995/2008) **from 1 October 2023**; **deferred choice** (Deferred Choice Underpin) at retirement; statutory deadline for the retrospective remedy set by the Public Service Pensions and Judicial Offices Act 2022.
+- **GP pension certification machinery**: PCSE (NHS England) · Type 1 GP/non-GP partners complete the **Annual Certificate of Pensionable Profits**; Type 2 salaried GPs complete the **Type 2 self-assessment** (submitted a year in arrears); freelance GP locums pension via **Locum forms A and B** via PCSE; no end-of-year certificate for locums but the correct contribution tier must be paid.
+- **Scheme Pays (statute)**: https://www.legislation.gov.uk/ukpga/2004/12/section/237B · FA 2004 s.237B, scheme-administrator joint-and-several liability for the annual allowance charge where the charge **exceeds £2,000 AND** the pension input amount exceeds the annual allowance; in force, amended through FA 2025.
+- **Pension annual allowance + taper + MPAA**: https://www.gov.uk/tax-on-your-private-pension/annual-allowance · **£60,000**; taper where threshold income > £200,000 AND adjusted income > £260,000; MPAA exists for flexibly-accessed DC pensions.
+- **Lifetime allowance abolition**: https://www.gov.uk/government/publications/abolition-of-the-lifetime-allowance-from-6-april-2024 · LTA **abolished from 6 April 2024**.
+- **LSA / LSDBA values**: gov.uk / MoneyHelper / Royal London corroboration · **Lump Sum Allowance £268,275**; **Lump Sum and Death Benefit Allowance £1,073,100** (replacing the LTA from 6 April 2024).
+- **BADR rate + schedule**: https://www.gov.uk/business-asset-disposal-relief · **10%** to 5 Apr 2025; **14%** 6 Apr 2025 to 5 Apr 2026; **18%** from 6 Apr 2026; 2-year qualifying period.
+- **s.162 incorporation relief**: https://www.legislation.gov.uk/ukpga/1992/12/section/162 · TCGA 1992 s.162 roll-over (incorporation) relief on transfer of a business as a going concern for shares; in force (note: amended by FA 2026 s.39 to subsections (1) and a new (6)).
+- **Dividend tax 2026/27**: https://www.gov.uk/tax-on-dividends · ordinary **10.75%**, upper **35.75%**, additional **39.35%** (unchanged), allowance **£500**, from 6 Apr 2026 (the 2025/26 rates were 8.75% / 33.75% / 39.35%).
+- **Finance Act 2026 identity + sections**: https://www.legislation.gov.uk/ukpga/2026/11/contents/enacted · **Finance Act 2026 (c. 11)**; **s.4** dividend ordinary/upper rate increase (2026-27); **s.28** main-rate WDA; **s.29** 40% FYA; **s.39** amends TCGA 1992 incorporation relief.
+- **FA 2026 s.28 main-rate WDA**: https://www.legislation.gov.uk/ukpga/2026/11/section/28/enacted · in CAA 2001 s.56 "for '18%' substitute '14%'", from **1 April 2026 (CT) / 6 April 2026 (IT)**, with a time-apportioned hybrid rate for straddling periods.
+- **FA 2026 s.29 40% FYA**: https://www.legislation.gov.uk/ukpga/2026/11/section/29/enacted · **40%** first-year allowance on main-rate plant or machinery that is **unused and not second-hand**, expenditure incurred **on or after 1 January 2026**.
+- **Corporation tax rates**: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax · small profits **19%** (≤£50,000), main **25%** (>£250,000), marginal relief between with standard fraction 3/200 (FY2025 and FY2026).
+- **AIA**: https://www.gov.uk/capital-allowances/annual-investment-allowance · **£1,000,000** (from 1 Jan 2019), 100% relief on qualifying plant and machinery, cars excluded.
+- **Class 4 NIC + Class 2 reform**: https://www.gov.uk/self-employed-national-insurance-rates · Class 4 **6%** (£12,570 to £50,270), **2%** above; Class 2 no longer a required payment (treated as paid where profits at/above the Small Profits Threshold) from **6 Apr 2024**.
+- **Employer secondary Class 1 NIC + Employment Allowance**: gov.uk / professional corroboration · employer NIC **15%** above the **£5,000** secondary threshold from 6 Apr 2025; **Employment Allowance £10,500** (not for single-director companies).
+- **MTD for Income Tax**: https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax · **£50k → 6 Apr 2026**, **£30k → 6 Apr 2027**, **£20k → 6 Apr 2028**; partnerships deferred (no confirmed date); limited companies out.
+- **CNSGP (GP indemnity)**: NHS Resolution (https://resolution.nhs.uk/services/claims-management/clinical-schemes/general-practice-indemnity/clinical-negligence-scheme-for-general-practice/) · Clinical Negligence Scheme for General Practice, from **1 April 2019**, state indemnity for NHS general-practice clinical negligence in England; does NOT cover non-clinical, regulatory or privately-funded work.
+- **GMS contract funding (Global Sum / Carr-Hill / QOF / PCN-DES / ARRS)**: NHS England "Implementing the 2025/26 GP Contract" + GMS Statement of Financial Entitlements (gov.uk) · core funding via the **Global Sum** weighted by the **Carr-Hill formula**, plus **QOF**, enhanced services and **Network Contract DES** (ARRS) funding.
+- **NHS England Performers List**: The National Health Service (Performers Lists) (England) Regulations 2013 (SI 2013/335) · a GP may not perform NHS primary medical services in England unless on the national Performers List (in addition to GMC registration).
+- **GMC retention fee (deductibility anchor, not a locked £)**: GMC fees regulations (https://www.gmc-uk.org/registration-and-licensing/managing-your-registration/fees-and-funding/fees-for-doctors) · annual retention fee payable to maintain registration (around £433 for 2025; the deductible status, not the exact fee, is the locked point).
 
-**McCloud (Public Service Pensions Remedy):** Pensionable service from 1 April 2015 to 31 March 2022 is treated as having been in the pre-2015 (1995 or 2008 section) scheme by default, with the member able to elect at retirement to have that service treated as 2015 scheme service if it produces a better outcome. Pension savings statements for the remedy period (PSS2 statements) have been issued. AA charges already paid in respect of remedy-period service can be rolled into the at-retirement reconciliation. Frame as: "members had/have until 31 January 2027 to submit any Digital Remedy Service related claim to HMRC for compensation of overpaid tax."
+Count of primary-source / authoritative URLs fetched or searched: **26** (legislation.gov.uk Acts/SIs, gov.uk rates and HMRC manuals, NHSBSA/NHS Employers, NHS England/PCSE, NHS Resolution, and GMC primary, with professional corroboration only for figures already cross-checked against primary).
 
-**Do not write:** "Lifetime allowance is £1,073,100", "annual allowance is £40,000", "tapered AA floor is £4,000". These are out of date.
-
----
-
-## 3. Making Tax Digital for ITSA — applicability to medical professionals
-
-**House position:**
-- MTD for ITSA went live on **6 April 2026** for sole-trader landlords and self-employed individuals (including sole-trader locum doctors) with **qualifying income above £50,000**.
-- Threshold drops to **£30,000 from 6 April 2027** and **£20,000 from 6 April 2028**.
-- **Limited companies are outside MTD for ITSA entirely.** A locum trading through a PSC is NOT in MTD for ITSA. They file annual CT600 corporation tax returns.
-- **General partnerships are deferred.** Partnerships with all-individual members were originally expected to join in April 2027; the latest HMRC roadmap defers to a date to be confirmed. Treat as "MTD for partnerships expected in a later phase, no confirmed date as of May 2026."
-- **GP partnerships:** A GP practice operating as a general partnership is a partnership for tax purposes. Partners receive a partnership tax return (SA800) statement of their share, then enter it on their personal SA100. Partnership-level MTD is deferred (see above); the personal SA100 still flows through MTD-for-ITSA where the partner's other qualifying income (eg private practice as a sole trader) exceeds the threshold.
-- **Salaried GPs (employees of the practice via PAYE)** are not in MTD for ITSA from their employment income. Private earnings on top (locum days, expert witness, media) bring them in if those exceed the threshold.
-
-**Do not write:** "MTD for ITSA threshold is £10,000". "MTD applies to limited companies." "MTD applies to GP partners from April 2026."
-
----
-
-## 4. GP partner vs salaried GP vs locum — income tax framing
-
-**House position:**
-- **GP partner:** self-employed for tax purposes. Profits flow through partnership SA800 → personal SA105 (other partnership pages) → SA100. NIC class 4 + class 2 (where applicable, though class 2 was effectively abolished for the self-employed earning above the small profits threshold from 6 April 2024 — the "class 2 voluntary" route remains for those below the threshold or wishing to maintain state pension contributions).
-- **Salaried GP:** employed by the practice via PAYE. Income tax + class 1 employee NICs deducted at source. Subject to NHS Pension scheme (1995, 2008 or 2015 section as appropriate).
-- **Locum (sole trader, no PSC):** self-employed. SA103 self-employment pages. Income tax + class 4 NICs.
-- **Locum (PSC):** see Section 1. Inside-IR35 engagements → caught by off-payroll, fee-payer deducts. Outside-IR35 → PSC pays corporation tax, locum extracts via salary + dividend.
-
-**On the 2027 income tax rate question:** there is **no medical-specific separate income tax rate change** announced for April 2027 (unlike Property where a 2% surcharge on rental income was announced). For 2026/27 and 2027/28 (until/unless a Finance Act provides otherwise), use the standard UK income tax rates: 0/20/40/45% with the personal allowance taper at £100k–£125,140.
+**HP-lock gate extensions (2026-06-03, Wave 1 conductor verification).** Re-verified at primary source before the Wave 1 net-new clusters launch: **(§4) SI 2019/251** confirmed at https://www.legislation.gov.uk/uksi/2019/251/made (reg **4(1)** prohibits a GMS/PMS/APMS performer/provider, or anyone on their behalf, selling the goodwill of a medical practice; reg **6(1)** revokes the 2004 Regs SI 2004/906). **(§4/§5) FA 2026 s.39** confirmed at https://www.legislation.gov.uk/ukpga/2026/11/section/39/enacted: for transfers of a business **on or after 6 April 2026**, TCGA 1992 s.162 incorporation relief is **no longer automatic, it must be claimed** (by one year after the 31 January following the tax year of transfer) and **s.162A (the election to disapply s.162) is omitted**. §4 updated accordingly. No conflict found in the §2.A McCloud, §2.D Scheme Pays, §2.E partial-retirement or §4 premises (notional/cost rent, last-man-standing) positions for the Wave 1 clusters.
 
 ---
 
-## 5. NHS Pension — McCloud and the "Digital Remedy Service"
+## 1. Employment status of doctors (locked, 2026-06-03)
 
-**House position:** The Public Service Pensions Remedy (McCloud) has applied to NHS Pension members since the legislation completed in 2022. Members with service in the remedy period (1 April 2015 to 31 March 2022) had:
-- Service rolled back to the pre-2015 (1995/2008) section by default on 1 October 2023.
-- At retirement, an election option to take that service as 2015 scheme service if it gives a better outcome.
-- A Digital Remedy Service launched by NHS Pensions during 2024 to allow members to access their remediable service statements and submit relevant tax claims through HMRC.
+**Position.** A doctor's tax status follows the **substance of the working arrangement, not the label**, and the four common medical structures sit differently:
+- **GP partner**: self-employed. The partnership files an **SA800**; each partner's share flows to the **partnership pages (SA104)** of their personal return and is taxed as trading income with **Class 4 NIC** (see §8). Partners are taxed on their **profit share, not their drawings**.
+- **Salaried GP**: an **employee** of the practice, taxed under **PAYE with Class 1 NIC** deducted at source, and an active NHS Pension member.
+- **GP locum**: usually a **sole trader (SA103)** or, less commonly, operates through a **personal service company (PSC)** (see §1.A for the off-payroll consequences). A sole-trader locum has no intermediary, so IR35 does not apply (status is judged on the employed-vs-self-employed factors instead).
+- **Hospital consultant**: an **employee of the NHS** (PAYE, Class 1, NHS pension) who may also do **private work** as a sole trader, partnership or company. Only the NHS employment is pensionable (see §2.C).
 
-Frame all McCloud guidance as **mandatory remedy is complete; the in-retirement election and any HMRC reconciliation are the live elements**. Do not write "McCloud is upcoming" or "the remedy will apply from April 2026" — both wrong.
+Status rests on the established case-law factors (control, personal service / substitution, mutuality of obligation, financial risk, integration); no single factor is decisive. HMRC applies these via the **Check Employment Status for Tax (CEST)** tool and the Employment Status Manual.
 
----
+- **Statutory / authority hooks:** there is no single statutory "self-employment" test; status rests on case-law factors derived from *Ready Mixed Concrete (South East) Ltd v Minister of Pensions* [1968] 2 QB 497 and later employment-status case law. Partnership taxation under the **Income Tax (Trading and Other Income) Act 2005** and partnership-return machinery under the **Taxes Management Act 1970**.
+- **HMRC manual anchors:** **ESM0500+** (employment status, the irreducible minimum and the factors); CEST guidance at ESM11000+.
+- **Practical writing rule for sessions:** lead with "substance over paperwork". Map each of the four roles to its return (partner SA800 to SA104; salaried PAYE; locum SA103 or PSC; consultant PAYE plus private-work return). State that a GP partner is taxed on profit share, not drawings. Do NOT cite a fixed statutory section as the status test (there isn't one). Cross-ref §1.A for PSC locums, §4 (partnership capital), §2.C (consultant private work not pensionable).
 
-## 6. GP partnership profit sharing and goodwill
+### 1.A IR35 / off-payroll for locum doctors through a PSC (locked, 2026-06-03)
 
-**House position:**
-- GP partnership profits are allocated per the partnership deed (which may differ from equity / capital shares). Profit allocation can include "prior shares" (eg. dispensing fees, premises ownership return) before the residual is split.
-- **Goodwill in NHS GMS / PMS practices:** sale of NHS goodwill has been **prohibited since 1 April 2004** under the Primary Care Trusts (NHS) regulations and the corresponding 2004 GMS contract. Existing partners can buy and sell shares in the partnership and in physical practice assets, but cannot sell NHS goodwill. Private practice goodwill remains transferable.
-- **Premises**: many practices own their premises through a separate partnership or LLP outside the GP partnership itself. Notional rent / cost rent / improvement grant treatment varies; treat as a specialist area requiring practice-specific advice.
+**Position.** A locum doctor operating through a **personal service company (PSC)** is within the off-payroll / IR35 framework. Who decides status depends on the hirer:
+- **Public-sector hirers (NHS Trusts, NHS bodies)**: from **6 April 2017** the public-sector hirer (or, in a chain, the agency as fee-payer) **determines status** and operates PAYE/NIC on inside-IR35 engagements.
+- **Medium or large private-sector hirers** (private hospitals, large clinics): from **6 April 2021** the hirer determines status, issues a **Status Determination Statement (SDS)** with reasons, and the fee-payer deducts.
+- **Small private-sector clients** (within the Companies Act 2006 "small company" thresholds): the **old rule** survives, the **PSC itself decides** its IR35 status and accounts for any deemed payment.
 
----
+Inside IR35, the fee-payer pays the PSC net of PAYE/NIC, so tax-efficient salary/dividend extraction of that income is not available; outside IR35, the PSC is paid gross and extracts normally. A locum across several hirers can hold a mix of inside and outside determinations. The **April 2024 PAYE-offset change** lets HMRC set off taxes the worker and PSC have already paid against the deemed employer's PAYE liability (removing the old double-counting in settlements); it does **not** change who decides status, who pays, or which engagements are caught.
 
-## 7. Things to flag (do NOT decide unilaterally)
-
-If you find any of the following while writing, **append to `docs/medical_site_wide_flags.md`** and continue:
-- Pages that recommend tax planning specific to a named NHS Trust or a specific umbrella company by name (we have not verified those organisations).
-- Pages that cite specific £ figures for "average locum daily rate" or "typical GP partner profit share" that imply we have proprietary data we don't have.
-- Pages that recommend a specific accounting software product by name without disclosure (we are an accounting firm, not a software reseller, and product recommendations are a separate decision).
-- Pages where the slug itself contains an out-of-date figure (eg. an LTA-referenced slug).
-- Cannibalisation between two pages on the same topic where neither has a clearly stronger differentiation.
+- **Statutory hooks:** the original intermediaries legislation (IR35) is **Chapter 8, Part 2, Income Tax (Earnings and Pensions) Act 2003 (ITEPA 2003)**; the client-led off-payroll rules are **Chapter 10, Part 2 ITEPA 2003** (public sector from 6 Apr 2017, medium/large private from 6 Apr 2021). https://www.legislation.gov.uk/ukpga/2003/1
+- **HMRC manual anchors:** **ESM10000+** (off-payroll working / IR35).
+- **Practical writing rule for sessions:** state that for NHS Trust work the **SDS sits with the Trust/fee-payer, not the locum**; the locum can challenge within the client-led disagreement process. Distinguish the three hirer types (public from 2017, medium/large private from 2021, small private = PSC decides). Frame the April 2024 change as a set-off mechanic only. Do NOT write "IR35 was abolished", "IR35 doesn't apply to NHS work", "the off-payroll rules were repealed", or "the locum always decides their own status". Cross-ref §5 (whether the PSC route still earns its overhead), §2.C (PSC dividend income is not pensionable).
 
 ---
 
-## 8. Universal "no" list (apply on every page)
+## 2. NHS Pension Scheme for doctors (locked, 2026-06-03)
 
-- No em-dashes anywhere (commas, parentheses, full stops, middle dots).
-- No "£10,000 MTD threshold" (it's £50k from 6 Apr 2026).
-- No lifetime allowance £1,073,100 (abolished from 6 Apr 2024; use LSA £268,275 / LSDBA £1,073,100 as the replacement framework).
-- No "Class 2 NIC mandatory" for self-employed above the small profits threshold (effectively abolished from 6 Apr 2024).
-- No "IR35 has been abolished" or "off-payroll repealed" — wrong.
-- No "McCloud remedy is coming" — it's already in force.
-- No real client names. Anonymised personas only.
+**Position.** Doctors are in the **same NHS Pension Scheme** as dentists, a defined-benefit scheme in three sections. **1995 section** (final salary, 1/80th accrual + automatic 3x lump sum, normal pension age 60, closed to new entrants from 1 Apr 2008). **2008 section** (final salary, 1/60th, no automatic lump sum, NPA 65). **2015 section** (Career Average Revalued Earnings / CARE, **1/54th** of each year's pensionable earnings, active revaluation **CPI + 1.5%**, NPA linked to State Pension Age, or 65 if later). From **1 April 2022 all active members accrue in the 2015 section** regardless of prior protection (the McCloud change, see §2.A).
+
+- **Statutory hooks:** the schemes are made under the **Superannuation Act 1972** (1995/2008) and the **Public Service Pensions Act 2013** (2015 scheme); current rules in the NHS Pension Scheme Regulations (SI 2015/94 for the 2015 scheme). Scheme administration: NHS Business Services Authority (NHSBSA).
+- **Authority anchors:** NHSBSA member guides; NHS Employers "comparing the different sections of the NHS Pension Scheme".
+- **Practical writing rule for sessions:** anchor "everyone accrues in the 2015 section from 1 Apr 2022"; describe 1995/2008 only as legacy/historic service with a final-salary link. Use 1/54th and CPI+1.5% exactly. Do NOT describe the 2015 scheme as final salary (it is CARE). Cross-ref §2.A (McCloud), §2.B (annual allowance), §2.C (GP certification + incorporation trap).
+
+### 2.A McCloud remedy (locked, 2026-06-03)
+
+**Position.** The 2015 transitional protections were held age-discriminatory (*McCloud / Sargeant*). The remedy: service in the **remedy period 1 April 2015 to 31 March 2022** for eligible members was **rolled back into the legacy section (1995 or 2008) from 1 October 2023**, with a **deferred choice at retirement** (the Deferred Choice Underpin) between legacy and 2015 terms for that period. Eligibility: a member who **joined the scheme on or before 31 March 2012 and was an active member on 1 April 2015**. The mandatory (retrospective) remedy is complete; the live elements are the **in-retirement election** and any **annual-allowance / tax reconciliation** via the **NHS Digital Remedy Service** and HMRC. Frame McCloud as generally neutral-to-positive for the individual (they get the better of two options).
+
+- **Statutory hooks:** **Public Service Pensions and Judicial Offices Act 2022** (the McCloud remedy primary legislation); remedy regulations made thereunder. https://www.legislation.gov.uk/ukpga/2022/7
+- **Authority anchors:** NHSBSA "Public Service Pensions Remedy (McCloud remedy)"; "Rollback of remedy period service"; NHS Digital Remedy Service.
+- **Practical writing rule for sessions:** state the remedy period dates exactly (1 Apr 2015 to 31 Mar 2022), the rollback from 1 Oct 2023, and that the benefit choice is made **at retirement**, not now. Do NOT write "McCloud is coming" or "the remedy applies from April 2026" (both wrong), and do NOT tell members to make the choice now or imply a general election deadline before retirement. Note the Digital Remedy Service / HMRC route for tax reconciliation. Cross-ref §2.B.
+
+### 2.B Annual allowance, tapering, MPAA and the LTA replacement (locked, 2026-06-03)
+
+**Position.** The pension **annual allowance is £60,000** (2025/26). It **tapers** where **threshold income exceeds £200,000 AND adjusted income exceeds £260,000**, reducing by £1 for every £2 of adjusted income above £260,000, down to a **minimum of £10,000**. For DB schemes the measure is the **pension input amount** (capitalised growth), not contributions paid. Unused annual allowance can be **carried forward from the previous three tax years** (current year used first). The **money purchase annual allowance (MPAA) is £10,000** (relevant where DC AVCs are flexibly accessed). The **lifetime allowance was abolished from 6 April 2024** and replaced by the **Lump Sum Allowance (LSA) £268,275** (cap on tax-free pension lump sums) and the **Lump Sum and Death Benefit Allowance (LSDBA) £1,073,100**. High-earning doctors with significant pensionable service (especially consultants and GP partners crossing the taper) can breach the AA and face a charge at marginal rate; **Scheme Pays** (see §2.D) can settle it.
+
+- **Statutory hooks:** **Finance Act 2004** Part 4 (annual allowance, ss.227 to 228ZA; tapered annual allowance s.228ZA; carry-forward; Scheme Pays s.237B / s.237BA); LTA abolition and the LSA/LSDBA framework introduced by Finance Act 2024.
+- **HMRC manual anchors:** **PTM050000+** (annual allowance); **PTM056000+** (tapered annual allowance); **PTM057000+** (Scheme Pays); **PTM170000+** (lump sum allowances post-LTA).
+- **Practical writing rule for sessions:** use £60,000 / £200,000 threshold income / £260,000 adjusted income / £10,000 floor / £10,000 MPAA exactly, each tagged 2025/26. Emphasise that pension growth (input amount), not contributions, is measured. Do NOT use the old £40,000 allowance, the pre-2023 £240,000 adjusted-income threshold, the old £4,000 taper floor, or a £4,000 MPAA. Do NOT state a lifetime allowance of £1,073,100 (it is abolished; use LSA £268,275 / LSDBA £1,073,100 as the replacement framework). Cross-ref §2.D (Scheme Pays), §5 (incorporation).
+
+### 2.C Pensionable pay, GP certification and the incorporation trap (locked, 2026-06-03)
+
+**Position (the key medical divergence from the dentists doc).** The NHS pension distinguishes **practitioners** from **officers**, and the GP certification machinery is specific to medicine:
+- **Type 1 medical practitioner** (a GP provider / partner, GMS/PMS contract-holder): pensionable earnings derive from net NHS-derived profit; the partner completes the **Annual Certificate of Pensionable Profits** (Type 1) each year via PCSE, including any locum or solo income.
+- **Type 2 medical practitioner** (a salaried GP, and freelance/solo GP work): completes the **Type 2 self-assessment** form (submitted a year in arrears) so the correct tiered contribution is recorded.
+- **Freelance GP locums** pension their income via **GP Locum forms A and B** and pay over via the Solo / PCSE route; they do not file an end-of-year certificate but must ensure the correct contribution tier is paid.
+
+**The incorporation pension trap.** A **limited company cannot hold a GMS/PMS contract**, and **income routed through a company is not NHS-pensionable**. So private-practice or locum income taken as **dividends loses NHS accrual entirely**. For a **hospital consultant**, only the **NHS employment is pensionable**; private work (sole trader, partnership or company) is **never** pensionable. State plainly: **dividends are not pensionable**. Always pair any incorporation tax saving with the pension-accrual loss. **AVCs / Added Pension:** Money Purchase AVCs (a separate DC pot) and Added Pension (extra DB accrual in-scheme) attract income-tax relief subject to the annual allowance.
+
+- **Statutory hooks:** NHS Pension Scheme Regulations (practitioner vs officer definitions, pensionable-pay rules, tiered contributions); tax relief under Finance Act 2004 Part 4.
+- **Authority anchors:** NHSBSA practitioner/officer guidance; **PCSE** Type 1 Annual Certificate, Type 2 self-assessment, and Locum A/B guidance; BMA "the NHS pension scheme as a sessional GP".
+- **Practical writing rule for sessions:** this is the single most important cross-link to the incorporation decision. Name the right form for the role (Type 1 certificate for partners, Type 2 self-assessment for salaried GPs, Locum A/B for freelance locums). State that a company cannot hold a GMS/PMS contract and that **company income / dividends are not pensionable**. For a consultant, say only the NHS post is pensionable. Always model both the tax saving and the pension-accrual loss, never the saving alone. Do NOT imply incorporation is pension-neutral, and do NOT use the dental "incorporated provider can pension up to the NPE ceiling" framing here (that is a dental-contract concept, not a GP one). Cross-ref §5, §2.D.
+
+### 2.D Scheme Pays mechanics (locked, 2026-06-03)
+
+**Position.** Where an annual allowance charge arises, **Scheme Pays** lets the NHS scheme settle it for a permanent reduction in benefits. **Mandatory Scheme Pays** is available where the charge **exceeds £2,000 AND** the pension input amount in the NHS scheme alone exceeds the **standard £60,000** annual allowance (a charge driven only by the taper below £60k is voluntary-only). The **election deadline is 31 July** in the year following the year the charge crystallised (so a 2025/26 charge must be elected by 31 July 2027), per FA 2004 s.237BA, with an extended limb where the scheme notifies a revised input amount late. The reduction is applied via scheme-set (NHSBSA/GAD) factors. No election once all benefits are taken.
+
+- **Statutory hooks:** FA 2004 **s.237B** (Scheme Pays liability), **s.237BA** (deadline). https://www.legislation.gov.uk/ukpga/2004/12/section/237B
+- **HMRC manual anchors:** **PTM056400+**.
+- **Practical writing rule for sessions:** distinguish mandatory (charge > £2,000 AND scheme input > £60k) from voluntary Scheme Pays; state the 31 July deadline with the worked example (2025/26 charge to 31 July 2027). Cross-ref §2.B.
+
+### 2.E Partial and early retirement (locked, 2026-06-03)
+
+**Position.** **Partial (flexible) retirement** (all sections from **1 October 2023**): a member can draw **20% to 100%** of accrued benefits in up to two events while continuing to work and **re-accrue in the 2015 scheme**, provided pensionable pay or commitment reduces by **at least 10% for the first 12 months**. **Early retirement** before normal pension age (minimum pension age **55**; NPAs 60 (1995) / 65 (2008) / State Pension Age (2015)) applies a **permanent actuarial reduction** (NHSBSA/GAD-set factors, do NOT lock a fixed percentage as GAD revises them); **ERRBO** (Early Retirement Reduction Buy Out, 2015 scheme) can buy out part of the reduction.
+
+- **Authority anchors:** NHSBSA partial-retirement and early-retirement factor guidance (factor tables are NHSBSA/GAD-set).
+- **Practical writing rule for sessions:** state partial retirement from 1 Oct 2023, the 20-100% range and the 10% reduction condition. For early retirement lock the PRINCIPLE (permanent actuarial reduction) and point to the NHSBSA factor table; do NOT lock a fixed % reduction. Cross-ref §2.A, §2.B.
 
 ---
 
-This file is **read once at the start of each session** and then referenced as a tie-breaker. If a competitor page contradicts a house position, the house position wins — the competitor is wrong (or out of date) and you should not transcribe their figure into ours.
+## 3. NHS GP contracts and practice income (locked, 2026-06-03)
+
+**Position (the medical analogue of the dentists UDA section, but DOCTORS DO NOT USE UDAs).** NHS primary medical care in England is delivered under three contract types: **GMS** (General Medical Services, nationally negotiated, governed by the **Statement of Financial Entitlements**), **PMS** (Personal Medical Services, locally agreed) and **APMS** (Alternative Provider Medical Services). Core practice funding is the **Global Sum**, a per-patient payment **weighted by the Carr-Hill formula** (registered list size adjusted for age, sex, morbidity, list turnover and geography to give weighted patients), **plus QOF** (the Quality and Outcomes Framework, a voluntary points-based quality scheme), **enhanced services**, and **PCN / Network Contract DES** funding (including the Additional Roles Reimbursement Scheme, ARRS). **Dispensing practices** also earn dispensing income. **Partner income is a profit share** (drawings taken against anticipated profit, trued up at year-end), not a salary. There is **no single national per-patient value**; the Global Sum and QOF point value are uplifted each year (for example the QOF point value was uprated for 2025/26).
+
+- **Statutory / authority hooks:** the **National Health Service (General Medical Services Contracts) Regulations 2015** (SI 2015/1862) and the GMS **Statement of Financial Entitlements Directions** (gov.uk); NHS England "Implementing the 2025/26 GP Contract"; the BMA General Practitioners Committee (GPC).
+- **Practical writing rule for sessions:** always say "there is no single national per-patient value; figures are weighted and uplifted annually". Use GMS/PMS/APMS, Global Sum, Carr-Hill, QOF, enhanced services and PCN/ARRS, and **never UDAs or dental bands** (those are dental concepts). Keep specific £ figures hedged and date-tagged to 2025/26. State that partner income is profit share, not salary. Do NOT cite a single national Global Sum value as fixed. Cross-ref §4 (sale / partner entry-exit), §6 (VAT on NHS vs private), §2.C (pensioning the profit).
+
+> VERIFY: the precise per-weighted-patient Global Sum amount and the current QOF point value (these uplift annually and vary by index). Sessions should frame them as "uplifted for 2025/26, confirm the current figure in the Statement of Financial Entitlements" rather than asserting a single number.
+
+---
+
+## 4. Practice sale, goodwill, premises and CGT (locked, 2026-06-03)
+
+**Position (CRITICAL medical divergence).** Unlike a dental practice, **the sale of NHS goodwill has been prohibited since 1 April 2004** for GMS/PMS (and now APMS) practices. The prohibition is currently in **The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)**, in force from 1 April 2019, which **revoked and re-enacted** the original **2004 Regulations (SI 2004/906)** that first imposed the ban from 1 April 2004. A GP (or anyone on their behalf) **cannot sell the goodwill of an NHS medical practice**, and cannot sell company shares whose value includes that goodwill. So the **dentist-style "sell your NHS goodwill and claim BADR" playbook does NOT translate to GPs.**
+
+**What actually changes hands** on a partner's entry or exit, or on a practice transaction, is:
+- a share of the partnership's **tangible assets** (equipment, fixtures, working capital) and any **owned premises**;
+- **partnership capital accounts** (a buy-in pays for the incoming partner's share of net assets; a buy-out returns the outgoing partner's capital);
+- for any **private / non-NHS work**, transferable **private goodwill** (this is the only goodwill a GP can sell).
+
+**Premises** are a bigger feature for GPs than for dentists. Premises are often held in a **separate property partnership or LLP** outside the medical partnership; income support comes via **notional rent** (owner-occupiers, current-market-rent basis assessed by the District Valuer), **cost rent** (the legacy borrowing-based scheme, closed to new schemes, converting to notional rent on mortgage redemption) or **improvement grants**, under the **NHS (General Medical Services) Premises Costs Directions 2024** (in force 10 May 2024, replacing the 2013 Directions; verified at the HP-lock gate 2026-06-03). Notional-rent amounts are property-specific and District-Valuer-assessed, so do NOT lock a figure. The **"last man standing" risk** (a single remaining partner left holding the whole premises liability and lease) is a real planning point. Capital-account and premises-share valuation, not goodwill, drives the numbers.
+
+**Business Asset Disposal Relief (BADR)** applies only to a **private practice disposal** or a **share sale of an incorporated private practice**, never to NHS goodwill (which cannot be sold). Rate: **10%** to 5 Apr 2025; **14%** 6 Apr 2025 to 5 Apr 2026; **18%** from 6 Apr 2026; **£1m lifetime limit** per individual; conditions held throughout the **2-year period to disposal** (trading business/company; for a share sale, **5% of ordinary share capital and 5% of voting rights** plus **officer or employee** status and 5% economic entitlement).
+
+**s.162 incorporation relief** (TCGA 1992 s.162) defers CGT on transfer of a **private practice** as a going concern to a company **wholly or partly for shares**. **FA 2026 s.39 (verified at primary source at the HP-lock gate, 2026-06-03)** changes s.162 for transfers **on or after 6 April 2026**: the relief is **no longer automatic**, it must be **claimed** (the claim, with the required information, by one year after the 31 January following the tax year of the transfer), and the old **s.162A election to disapply s.162 is removed** (relief is now opt-in by claim rather than automatic-with-an-opt-out). For transfers before 6 April 2026 the old automatic basis still applies. **Disposal timing**: the CGT date of disposal is the **contract date** where unconditional (TCGA 1992 s.28(1)); a contract conditional on a third-party consent is dated when the condition is met (s.28(2)), which is the lever for the 6 Apr 2026 BADR step.
+
+- **Statutory hooks:** **The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)** https://www.legislation.gov.uk/uksi/2019/251/made (revoking **SI 2004/906** https://www.legislation.gov.uk/uksi/2004/906/contents/made ); TCGA 1992 **s.169H to s.169S** (BADR) https://www.legislation.gov.uk/ukpga/1992/12 ; TCGA 1992 **s.162** (incorporation relief, amended by FA 2026 s.39) https://www.legislation.gov.uk/ukpga/1992/12/section/162 ; TCGA 1992 **s.28** (time of disposal).
+- **HMRC manual anchors:** **CG63950+** (Business Asset Disposal Relief); **CG65700+** (s.162 incorporation relief); **CG14250+** (time of disposal, contracts).
+- **Practical writing rule for sessions:** state up front that **NHS GP goodwill cannot be sold** (since 1 April 2004; current instrument SI 2019/251), so a GP transaction is about tangibles, premises and capital accounts (plus any private goodwill), not NHS goodwill. State the BADR rate **with its exact date band** every time and confine it to private-practice / private-company disposals. Treat premises (notional/cost rent, last-man-standing, separate property partnership) as a specialist area needing practice-specific advice. Do NOT write that a GP can "sell their goodwill and claim BADR" on the NHS practice, and do NOT transcribe a dental goodwill-multiple playbook onto a GP practice. Cross-ref §5 (incorporation of private work), §7 (capital allowances on tangibles in the split).
+
+---
+
+## 5. Profit extraction and incorporation (locked, 2026-06-03)
+
+**Position.** Incorporation is a **private-practice / private-work decision only**: a limited company **cannot hold an NHS GMS/PMS contract** and company income is **not NHS-pensionable** (see §2.C). The relevant population is consultants' and GPs' **private income** (insurance medicals, medico-legal, occupational health, cosmetic, self-pay clinics) and **PSC locum work that is outside IR35** (§1.A). Structures: sole trader / partnership / **LLP** (members taxed personally, with limited liability) / **limited company** (corporation tax on profits, extraction via salary + dividend).
+
+**Corporation tax:** **19%** small-profits (profits ≤ £50,000), **25%** main (> £250,000), **marginal relief** tapering between (standard fraction 3/200, FY2025 and FY2026). The effective marginal rate in the £50k to £250k band is ~26.5%.
+
+**Dividend tax:**
+- 2025/26: ordinary **8.75%**, upper **33.75%**, additional **39.35%**; **dividend allowance £500**.
+- From **6 April 2026** (FA 2026 s.4): ordinary **10.75%**, upper **35.75%**, additional **39.35%** unchanged; allowance **£500**. Tag the year on every dividend figure.
+
+**Personal income tax / NIC (2025/26):** personal allowance £12,570 (tapered above £100,000); basic 20% to £50,270; higher 40% to £125,140; additional 45% above. **Class 4 NIC 6%** (£12,570 to £50,270) then **2%**.
+
+**Employer cost of salary (limited company):** the company pays **employer (secondary Class 1) NIC at 15%** on salary above the **£5,000 secondary threshold** (from 6 April 2025). The **Employment Allowance is £10,500** but is **not available to a company whose only employee is a single director**, which is why one-director medical companies often set salary at or near the secondary threshold (a genuinely employed spouse on market-rate pay can change that). **Employer pension contributions** are a tax-efficient route: **deductible for corporation tax on a paid basis** (FA 2004 s.196, wholly and exclusively), with no NIC, subject to the §2.B annual allowance and carry-forward.
+
+**Director's loan / s.455:** a medical company is a **close company**, so an **overdrawn director's loan** triggers a **s.455 charge** at the dividend upper rate on the balance outstanding **9 months and 1 day** after the period-end: **33.75% on loans made in 2025/26**, **35.75% on loans made on or after 6 April 2026** (tracking the FA 2026 dividend upper rate). The charge is temporary, repaid under **s.458** once the loan is cleared, but the relief is **deferred** to 9 months and 1 day after the end of the accounting period of repayment (4-year claim window).
+
+**Headline point:** at 2025/26 rates the pure tax saving from incorporating private work is modest at typical profit levels, and the **2026/27 dividend-rate rise narrows it further**; the real drivers are managing the **annual-allowance taper** (routing private income outside pensionable pay), retained earnings, family-shareholder planning and asset protection. Always pair the comparison with the **NHS-pension-accrual loss** (§2.C).
+
+- **Statutory hooks:** CTA 2010 Part 3 (small-profits rate and marginal relief, ss.18 to 19); ITTOIA 2005 Part 4 Ch 3 (dividends); ITA 2007 s.8 (dividend rates, amended by FA 2026 s.4); SSCBA 1992 s.15 (Class 4); CTA 2010 s.455 / s.458 (loans to participators) https://www.legislation.gov.uk/ukpga/2010/4/section/455 ; FA 2004 s.196 (employer pension deduction).
+- **HMRC manual anchors:** dividends BIM/CTM; **CTM61500+** (loans to participators); spouse-wages deductibility **BIM37700+** (wages wholly and exclusively for the trade and commensurate with work done).
+- **Practical writing rule for sessions:** never state a dividend rate without its tax-year tag; from 6 Apr 2026 use 10.75% / 35.75%. State explicitly that incorporation applies to **private work only** (a company cannot hold an NHS contract and company income is not pensionable). Always pair the tax comparison with the pension-accrual loss (§2.C). State the s.455 rate **with its date band** and that s.458 relief is deferred, not instant. Do NOT present incorporation as a clear tax win at typical private-income levels in 2025/26. Cross-ref §2.C, §4, §1.A.
+
+---
+
+## 6. VAT for medical professionals (locked, 2026-06-03)
+
+**Position.** The supply of **medical care by a registered medical practitioner** (and by other registered health professionals) is **exempt** from VAT under **VATA 1994 Schedule 9 Group 7 Item 1** (Item 2 and the related items cover other registered professionals and persons supervised by them). The exemption turns on the **principal purpose** of the supply being the **protection, maintenance or restoration of health** of the individual, and the service falling within the professional's registered field. **NHS GMS/PMS income is outside the scope of VAT**; exempt and outside-the-scope income do not count towards the registration threshold.
+
+**Standard-rated watch-items** (no, or insufficient, therapeutic purpose):
+- **purely cosmetic / aesthetic procedures** with no therapeutic purpose (cosmetic Botox/fillers, some aesthetic clinic work);
+- **medico-legal and expert-witness reports** and other services whose primary purpose is to enable a **third party to make a decision** (these are taxable even though a doctor provides them);
+- some **occupational-health** services and certain certification/administrative services with no care element.
+
+**Registration threshold £90,000** of **taxable (non-exempt) turnover only**; **deregistration threshold £88,000**. A practitioner with both exempt and taxable supplies operates **partial exemption**: exempt input VAT is recoverable only if it passes the **de minimis** test (average **£625 per month / £7,500 per year AND no more than 50% of total input VAT**).
+
+- **Statutory hooks:** **VATA 1994 Schedule 9 Group 7** (health and welfare; Item 1 registered medical practitioners) https://www.legislation.gov.uk/ukpga/1994/23/schedule/9 ; registration / deregistration in **VATA 1994 Schedule 1**; partial exemption in the VAT Regulations 1995 (SI 1995/2518) regs 99 to 110.
+- **HMRC manual anchors:** **VATHLT2000+** (VAT: health; the medical-care / principal-purpose test, VATHLT2010 doctors); partial exemption **PE21500+**.
+- **Practical writing rule for sessions:** lead with "medical care by a registered practitioner is VAT-exempt under Sch 9 Group 7 where the principal purpose is the protection, maintenance or restoration of health". Frame cosmetic-only work, medico-legal/expert-witness reports and some occupational health as the watch-items that can be standard-rated. Use the **£90,000** registration / **£88,000** deregistration thresholds and note they count **non-exempt** turnover only. Do NOT say "all medical income is exempt" without the cosmetic / medico-legal carve-out. Do NOT say "private medical services are standard-rated by default" (the default for genuine private medical care is exempt). Do NOT use the old £85,000 threshold for current advice. Cross-ref §5, §10 (medico-legal as private-work income), §6.A (dispensing practices).
+
+### 6.A Dispensing-practice drug VAT (locked, 2026-06-03, HP-lock gate, Wave 2 C1)
+
+**Position.** The VAT on drugs in a **dispensing GP practice** has three limbs (verified at primary source: HMRC Revenue and Customs Brief 2 (2020), VAT Notice 701/57, VATHLT6020). **Dispensed NHS prescription drugs** (qualifying goods dispensed to an individual for their personal use on the prescription of an appropriate practitioner, meeting the five RCB 2 (2020) conditions) are **ZERO-RATED** under **VATA 1994 Schedule 8 Group 12 Item 1**, NOT exempt. Because the supply is zero-rated rather than exempt, the practice can **recover the input VAT** on those drugs, which is why dispensing practices commonly register for VAT voluntarily. Drugs **personally administered** by the doctor during treatment (most vaccines and injections) are **exempt** under Sch 9 Group 7 (no input recovery). **Private-prescription** drugs are **standard-rated**.
+
+- **Statutory hooks:** **VATA 1994 Schedule 8 Group 12 Item 1** (zero-rate, dispensing); Schedule 9 Group 7 (administered drugs, exempt). https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157
+- **HMRC manual anchors:** **VATHLT6000+** (drugs, medicines, aids); RCB 2 (2020).
+- **Practical writing rule for sessions:** for a dispensing practice say dispensed NHS prescription drugs are **zero-rated (Sch 8 Group 12), not exempt**, so input VAT is recoverable; administered drugs are exempt; private-prescription drugs standard-rated. Do NOT call dispensed NHS drugs "exempt" (that loses the input-VAT recovery). Do NOT lock Drug Tariff prices or dispensing fees (they uplift). Cross-ref §3 (dispensing income), §6.
+
+---
+
+## 7. Capital allowances (locked, 2026-06-03)
+
+**Position.** **Annual Investment Allowance (AIA) £1,000,000** per year (permanent), giving 100% first-year relief on qualifying plant and machinery, which covers most clinical and consulting equipment (diagnostic kit, IT, consulting-room furniture, instruments) and excludes cars. A **practice / clinic fit-out** splits between **general plant and machinery** (main-rate pool, writing-down allowance **18%, reducing to 14% from 1 April 2026 (CT) / 6 April 2026 (IT) per FA 2026 s.28, see §7.A**) and **integral features / fixtures** (special-rate pool, **6%** WDA, unchanged) such as electrical, water, heating and ventilation systems; AIA is best directed at the special-rate (6%) items first. On a **premises purchase including fixtures**, a **CAA 2001 s.198 election** fixes the value attributed to fixtures between seller and buyer (joint election, **2-year time limit** under s.201); missing it forfeits the buyer's fixtures allowances. A new **40% first-year allowance** applies to **new (unused, not second-hand)** main-rate plant from **1 January 2026** (FA 2026 s.29, excludes cars). **Full expensing** (100% FYA on new main-rate plant) is companies-only.
+
+- **Statutory hooks:** **CAA 2001** s.38A and s.51A (AIA); s.56 (main-rate WDA: 18% reducing to 14% per FA 2026 s.28); s.104A to s.104D (special-rate pool, 6%, integral features); **FA 2026 s.28** https://www.legislation.gov.uk/ukpga/2026/11/section/28/enacted and **s.29** https://www.legislation.gov.uk/ukpga/2026/11/section/29/enacted ; **s.198 / s.199** (fixtures apportionment election), **s.201** (2-year limit), **s.187A** (fixed-value + pooling).
+- **HMRC manual anchors:** **CA23080+** (AIA); **CA22300+** (integral features); **CA26800+** (fixtures elections, s.198/s.199).
+- **Practical writing rule for sessions:** use AIA £1m; the main-rate WDA is **18% reducing to 14% from April 2026** (date-tag it, FA 2026 s.28), special rate 6%. For a NEW main-rate asset, compare AIA (100%) with the 40% FYA. On a premises purchase, always flag the s.198 election and its 2-year deadline (a common, preventable loss). Full expensing is companies-only. Do NOT claim AIA on cars. Do NOT state a flat 18% WDA for periods after April 2026. Cross-ref §4 (price split between tangibles and any private goodwill), §5.
+
+### 7.A FA 2026 capital-allowance changes (locked, 2026-06-03)
+
+**Position.** (1) The **main-rate writing-down allowance falls from 18% to 14%** for relief from **1 April 2026 (corporation tax) / 6 April 2026 (income tax)** (FA 2026 **s.28**, amending CAA 2001 s.56); a chargeable or basis period straddling the date uses a **hybrid (time-apportioned) rate** (the FA 2026 formula). The **special-rate pool stays 6%**. (2) A new **40% first-year allowance** on new main-rate plant and machinery applies from **1 January 2026** (FA 2026 **s.29**), to both companies and unincorporated businesses, **new (unused, not second-hand) only**, excluding cars. **Full expensing** (companies only, 100% on new main-rate, 50% on new special-rate) remains. **AIA £1m is unchanged** and is usually still the first port of call for unincorporated practices and for mixed or second-hand spend.
+
+- **Statutory hooks:** FA 2026 **s.28** (WDA 18% to 14%), **s.29** (40% FYA); CAA 2001 (full expensing s.45S etc.).
+- **Practical writing rule for sessions:** date-tag the main-rate WDA every time (18% to Mar/Apr 2026, then 14%). For a NEW main-rate asset, compare AIA (100%) vs the 40% FYA (which leaves the balance in the pool). Do NOT state a flat 18% WDA for periods after April 2026.
+
+---
+
+## 8. Expenses, self-assessment and NIC for doctors (locked, 2026-06-03)
+
+**Position.** Allowable expenses (wholly and exclusively for the trade/profession): **medical indemnity** (MDU, MPS or MDDUS subscriptions) is deductible. Note the **Clinical Negligence Scheme for General Practice (CNSGP)**, from **1 April 2019**, provides **state indemnity for NHS general-practice clinical negligence in England at no subscription**, so a GP's own paid indemnity is now largely for **private / non-NHS clinical work and non-clinical or regulatory matters** (a genuinely medical-specific nuance). Also allowable: the **GMC annual retention fee** and Royal College / specialty membership fees and **BMA** subscription where on HMRC's approved **List 3**; **CPD** genuinely relevant to current practice; **instruments and equipment** (usually via capital allowances / AIA); **motor between sites** (home-to-first-site is non-deductible commuting; **HMRC mileage 55p/mile first 10,000 business miles for 2026/27 (rose from 45p on 6 Apr 2026), 25p thereafter**); **home-office** apportionment; **phone/internet** apportionment; **accountancy fees**; business bank charges and business-loan interest.
+
+**NIC:** **Class 2 is no longer a required payment from 6 April 2024** (self-employed with profits at/above the Small Profits Threshold are treated as having paid and keep state-pension entitlement; those below can pay voluntary Class 2). **Class 4: 6%** on profits £12,570 to £50,270, **2%** above £50,270 (2025/26). **Payments on account:** two interim payments (31 January and 31 July) each 50% of the prior year's liability, where the prior bill exceeded £1,000 and less than 80% was collected at source.
+
+- **Statutory hooks:** ITTOIA 2005 s.34 (wholly and exclusively); mileage via **ITEPA 2003 ss.229 to 236** / approved mileage rates; SSCBA 1992 s.11 (Class 2) as amended by the National Insurance Contributions Act 2024 (Class 2 reform); SSCBA 1992 s.15 (Class 4); TMA 1970 s.59A (payments on account).
+- **HMRC manual anchors:** **BIM37000+** (wholly and exclusively); **BIM47800+** (use of home); subscriptions **EIM32900+** / List 3; mileage **EIM31200+**.
+- **Practical writing rule for sessions:** state the GMC retention fee, indemnity, BMA and relevant Royal College/specialty fees are deductible. Surface the **CNSGP nuance**: NHS GP clinical negligence is state-indemnified from 1 Apr 2019, so own indemnity is mainly for private/non-clinical/regulatory cover (do NOT tell an NHS GP they must personally insure NHS clinical negligence). Use 55p/25p mileage (the first-10k rate rose from 45p to 55p on 6 Apr 2026, 2026/27) and the home-to-first-site commuting rule. State plainly that **Class 2 is no longer payable from 6 Apr 2024** for profits above the small-profits threshold (do NOT tell a self-employed doctor to pay a weekly Class 2 charge). Use Class 4 6%/2% (do NOT use the old 9% Class 4 main rate). Cross-ref §7 (equipment via AIA), §9 (MTD), §10 (regulator fees).
+
+---
+
+## 9. MTD for Income Tax Self Assessment (locked, 2026-06-03)
+
+**Position.** Making Tax Digital for Income Tax (MTD for ITSA) mandates digital records and quarterly updates for sole traders and landlords by **qualifying income** (gross trading + property income), phased: **£50,000 from 6 April 2026**; **£30,000 from 6 April 2027**; **£20,000 from 6 April 2028**. Qualifying income is tested on the relevant prior year's Self Assessment return. **Limited companies are out** (MTD for ITSA is income tax, not corporation tax), so a locum trading through a PSC is not in MTD for ITSA. **General partnerships are deferred** with **no confirmed date**, so a GP partnership is not yet mandated at partnership level; a partner's **personal** return still flows through MTD where their own qualifying income (for example sole-trader private work) exceeds the threshold. **Salaried GPs** are not brought in by employment income alone, but private earnings on top (locum sessions, expert-witness, media) can bring them in. **Most full-time locums and unincorporated private GPs exceed £50,000 and are in scope from 6 April 2026.**
+
+- **Statutory hooks:** **Finance (No. 2) Act 2017 Sch A1 / s.60** (MTD framework) and the Income Tax (Digital Requirements) Regulations 2021 (SI 2021/1076) as amended (thresholds and dates).
+- **Authority anchors:** https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax
+- **Practical writing rule for sessions:** use £50k/6-Apr-2026, £30k/6-Apr-2027, £20k/6-Apr-2028 exactly; note the threshold is gross qualifying income, tested on the prior year. State most full-time locums and unincorporated private GPs are caught from April 2026. Do NOT say MTD applies to limited companies, do NOT say it applies to GP partnerships from April 2026 (partnerships are deferred, no confirmed date), and do NOT use a £10,000 threshold. Cross-ref §8, §1 (PSC out of MTD).
+
+---
+
+## 10. Regulatory context: GMC, Performers List and CQC (locked, 2026-06-03)
+
+**Position (kept light, tax-relevant only).** The **General Medical Council (GMC)** regulates doctors under the **Medical Act 1983**: mandatory registration and licence to practise, revalidation, and an **annual retention fee** (the **GMC retention fee is tax-deductible**; restoration and penalty fees are not, see §8). To do **NHS primary medical care** in England a GP must also be on the **NHS England national Performers List** (National Health Service (Performers Lists) (England) Regulations 2013, SI 2013/335), in addition to GMC registration. **GP practices in England** must be registered with and are inspected by the **Care Quality Commission (CQC)** under the **Health and Social Care Act 2008** and the Regulated Activities Regulations 2014; CQC registration/inspection history is a standard transaction due-diligence item and CQC registration fees are an allowable business expense. Indemnity is provided by the **MDU / MPS / MDDUS** for private and non-clinical matters and by **CNSGP** for NHS GP clinical negligence (see §8).
+
+- **Statutory hooks:** **Medical Act 1983** (GMC registration and licence to practise) https://www.legislation.gov.uk/ukpga/1983/54 ; **The National Health Service (Performers Lists) (England) Regulations 2013** (SI 2013/335) https://www.legislation.gov.uk/uksi/2013/335 ; **Health and Social Care Act 2008** and the **Health and Social Care Act 2008 (Regulated Activities) Regulations 2014** (CQC registration) https://www.legislation.gov.uk/ukpga/2008/14 .
+- **HMRC manual anchors:** GMC fee deductibility via List 3 / **EIM32900+**.
+- **Practical writing rule for sessions:** keep this factual and tax-relevant only (deductibility of GMC/CQC fees, the Performers List as a prerequisite for NHS work, DD relevance of CQC history). The regulator is the **GMC under the Medical Act 1983, not the GDC / Dentists Act 1984**. Do NOT give clinical, fitness-to-practise or revalidation advice. Cross-ref §1 (status), §4 (DD on a transaction), §8 (fee deductibility).
+
+---
+
+## Citations index (Acts and instruments cited above)
+
+- **ITEPA 2003:** Part 2 Ch 8 (IR35) and Ch 10 (off-payroll: public sector 6 Apr 2017, medium/large private 6 Apr 2021); ss.229 to 236 (mileage).
+- **TCGA 1992:** s.162 (incorporation relief, amended by FA 2026 s.39); ss.169H to 169S (BADR); s.28 (time of disposal: unconditional = contract date, conditional = condition satisfied).
+- **CTA 2010:** Part 3, ss.18 to 19 (small-profits rate, marginal relief); s.455 / s.458 (loans to participators, charge and deferred relief).
+- **ITA 2007:** s.8 (dividend rates, amended by Finance Act 2026 (c. 11) s.4).
+- **ITTOIA 2005:** Part 4 Ch 3 (dividends); s.34 (wholly and exclusively); partnership trading income.
+- **VATA 1994:** Schedule 9 Group 7 (medical-care exemption; Item 1 registered medical practitioners, Item 2 other registered health professionals / supervised persons); Schedule 8 Group 12 Item 1 (zero-rate for dispensed prescription drugs, §6.A); Schedule 1 (registration £90k / deregistration £88k); partial exemption in VAT Regs 1995 (SI 1995/2518) regs 99 to 110.
+- **CAA 2001:** s.38A / s.51A (AIA, apportionment); s.56 (main-rate WDA 18% to 14%, per FA 2026 s.28); ss.104A to 104D (special-rate 6%, integral features); s.187A (fixed-value + pooling); s.198 / s.199 / s.201 (fixtures election, 2-year limit); full expensing.
+- **Finance Act 2004:** Part 4 (annual allowance ss.227 to 228ZA, taper s.228ZA, 3-year carry-forward); **s.237B / s.237BA** (Scheme Pays, 31 July deadline); s.196 (employer pension contribution CT deduction, paid basis).
+- **Finance Act 2024:** LTA abolition from 6 Apr 2024; Lump Sum Allowance £268,275 / Lump Sum and Death Benefit Allowance £1,073,100.
+- **SSCBA 1992:** s.11 (Class 2, reformed from 6 Apr 2024 by the National Insurance Contributions Act 2024); s.15 (Class 4 6%/2%); secondary Class 1 (employer NIC 15% above the £5,000 secondary threshold from 6 Apr 2025; Employment Allowance £10,500, restricted for single-director companies).
+- **TMA 1970:** s.59A (payments on account); partnership return (SA800) machinery.
+- **Finance (No. 2) Act 2017:** MTD for ITSA framework; SI 2021/1076 (Digital Requirements Regs).
+- **Pensions:** Superannuation Act 1972 (1995/2008 sections); Public Service Pensions Act 2013 (2015 scheme); SI 2015/94 (2015 scheme regulations); Public Service Pensions and Judicial Offices Act 2022 (McCloud remedy).
+- **NHS primary care contracts and goodwill:** National Health Service (General Medical Services Contracts) Regulations 2015 (SI 2015/1862); GMS Statement of Financial Entitlements Directions; The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251), revoking SI 2004/906 (NHS goodwill sale prohibited since 1 April 2004).
+- **Regulatory:** Medical Act 1983 (GMC); National Health Service (Performers Lists) (England) Regulations 2013 (SI 2013/335); Health and Social Care Act 2008 + Regulated Activities Regs 2014 (CQC); Clinical Negligence Scheme for General Practice (CNSGP, NHS Resolution, from 1 April 2019).
+- **Finance Act 2026 (c. 11):** Royal Assent 18 March 2026; s.4 dividend rate increase (2026-27); s.28 main-rate WDA 18% to 14% (1 Apr / 6 Apr 2026); s.29 40% first-year allowance (from 1 Jan 2026); s.39 amends TCGA 1992 incorporation relief.

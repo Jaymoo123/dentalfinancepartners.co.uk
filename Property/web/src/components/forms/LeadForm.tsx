@@ -5,6 +5,8 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@/components/analytics/useFormTracking";
+import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
 
 const fieldClass =
   "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
@@ -33,6 +35,8 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
+  const [consent, setConsent] = useState(false);
+  const ft = useFormTracking("lead_form");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -41,6 +45,8 @@ export function LeadForm({
   }, []);
 
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
+
+  const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -67,6 +73,8 @@ export function LeadForm({
       errs.message = "Add a sentence or two if you have a specific question.";
     }
 
+    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
+
     return errs;
   }, []);
 
@@ -75,9 +83,15 @@ export function LeadForm({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Honeypot: only bots fill this hidden field. Silently drop.
+    if (String(data.get("company_url") || "").trim() !== "") return;
     const errs = validate(data);
     setFieldErrors(errs);
-    if (Object.keys(errs).length > 0) return;
+    if (Object.keys(errs).length > 0) {
+      for (const [field, kind] of Object.entries(errs)) ft.onError(field, kind ? "validation" : "validation");
+      return;
+    }
+    ft.onSubmit(Object.keys(data).length);
 
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -98,6 +112,12 @@ export function LeadForm({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
+      consent_given: consent,
+      consent_text: consentText,
+      consent_at: new Date().toISOString(),
+      // Stitch this lead to its anonymous first-party journey (no-op if untracked).
+      visitor_id: getVisitorId() || undefined,
+      session_id: getSessionId() || undefined,
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);
@@ -105,8 +125,12 @@ export function LeadForm({
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again or email us directly.");
+      ft.onError("form", "server");
       return;
     }
+
+    // First-party conversion event (system of record), stitched to the journey.
+    ft.onLead({ source: payload.source, role: payload.role });
 
     // Track conversion in Google Analytics
     if (typeof window !== "undefined" && "gtag" in window) {
@@ -122,6 +146,7 @@ export function LeadForm({
 
     setStatus("success");
     form.reset();
+    setConsent(false);
 
     if (redirectOnSuccess) {
       setTimeout(() => {
@@ -131,8 +156,23 @@ export function LeadForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" noValidate aria-busy={status === "loading"}>
+    <form
+      onSubmit={onSubmit}
+      onFocusCapture={(e) => {
+        const t = e.target as HTMLElement & { name?: string };
+        if (t?.name) ft.onFieldFocus(t.name);
+      }}
+      onBlurCapture={(e) => {
+        const t = e.target as HTMLElement & { name?: string; value?: string };
+        if (t?.name) ft.onFieldBlur(t.name, Boolean(t.value && t.value.trim()));
+      }}
+      className="space-y-5"
+      noValidate
+      aria-busy={status === "loading"}
+    >
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
+      {/* Honeypot: off-screen, hidden from humans; only bots fill it. */}
+      <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
 
       <div>
         <label htmlFor="role" className="block text-sm font-semibold text-slate-900">
@@ -252,6 +292,33 @@ export function LeadForm({
         )}
       </div>
 
+      <div>
+        <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-slate-600">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-0.5 h-4 w-4 shrink-0 accent-emerald-600"
+            aria-invalid={!!fieldErrors.consent}
+            aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
+          />
+          <span>
+            I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our{" "}
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
+              Privacy Policy
+            </a>
+            .
+          </span>
+        </label>
+        {fieldErrors.consent && (
+          <p id="consent-error" className="mt-1.5 text-xs font-medium text-red-600">
+            {fieldErrors.consent}
+          </p>
+        )}
+      </div>
+
       {errorMessage && (
         <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
           <p className="text-sm font-medium text-red-800">{errorMessage}</p>
@@ -268,14 +335,14 @@ export function LeadForm({
 
       <button
         type="submit"
-        disabled={status === "loading" || status === "success"}
+        disabled={status === "loading" || status === "success" || !consent}
         className={`${btnPrimary} w-full`}
       >
         {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : submitLabel}
       </button>
 
       <p className="text-xs leading-relaxed text-slate-500">
-        We respond within 24 hours. Your details are stored securely and never shared.
+        We respond within 24 hours and store your details securely.
       </p>
     </form>
   );

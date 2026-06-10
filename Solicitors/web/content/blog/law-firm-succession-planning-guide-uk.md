@@ -11,6 +11,12 @@ altText: "UK solicitors discussing law firm succession planning documents and pa
 image: ""
 h1: "Law Firm Succession Planning: A Complete Guide for UK Legal Practices"
 summary: "Law firm succession planning requires careful consideration of partnership structures, goodwill valuation, tax implications, and SRA compliance. Getting it right protects both retiring partners and the continuing practice."
+keyTakeaways:
+  - "Start succession planning 5 to 7 years before your intended exit to build value, develop partners and structure tax efficiently."
+  - "Goodwill payments to departing partners are usually subject to income tax and National Insurance, potentially exceeding 40 percent of value."
+  - "Goodwill is commonly valued at 0.5 to 2 times annual distributable profits, with commercial work attracting higher multiples than legal aid."
+  - "Run-off professional indemnity insurance is mandatory for six years after retirement or practice closure."
+  - "Spreading goodwill payments across several tax years and using pension contributions can manage the income tax liability."
 schema: ""
 faqs:
   - question: "How is law firm goodwill typically valued?"

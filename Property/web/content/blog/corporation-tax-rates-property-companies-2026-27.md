@@ -5,73 +5,132 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Corporation Tax Rates for Property Companies 2026/27"
-metaDescription: "Corporation tax rates for property companies 2026/27: 19% small profits rate vs 25% main rate. Reliefs, marginal rate, and when incorporation saves tax."
-altText: "UK property company director reviewing corporation tax rates and reliefs documentation for 2026/27"
+metaTitle: "Corporation Tax Rates Property Companies 2026/27 (19% & 25%)"
+metaDescription: "Corporation tax for property companies in 2026/27: 19% to £50k, 25% above £250k, 26.5% marginal band, plus when a limited company beats personal ownership."
+altText: "UK property company director reviewing corporation tax rates, marginal relief and incorporation decisions for 2026/27"
 image: ""
-h1: "Corporation Tax Rates for Property Companies 2026/27: Complete Guide"
-summary: "Property companies pay corporation tax at 19% on profits up to £50,000 (small profits rate), 25% on profits above £250,000 (main rate), with marginal relief tapering between. The marginal rate creates additional complexity for portfolio landlords."
+dateModified: "2026-05-31"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-05-31"
+h1: "Corporation Tax Rates for Property Companies in 2026/27"
+summary: "A property company pays corporation tax at 19% on profits up to £50,000, 25% above £250,000, and an effective 26.5% on the slice in between. That headline is the easy part. The decision that actually matters is whether moving a portfolio into a company beats holding it personally once Section 24, dividend tax, CGT on incorporation and SDLT are all in the same calculation."
 schema: ""
 faqs:
   - question: "What is the corporation tax rate for property companies in 2026/27?"
-    answer: "Property companies pay corporation tax at 19% on profits up to £50,000 (small profits rate) and 25% on profits above £250,000 (main rate). Between £50,000 and £250,000 profits, a marginal rate of 26.5% applies to phase out the small profits rate benefit."
+    answer: "A property company pays 19% (the small profits rate) on taxable profits up to £50,000 and 25% (the main rate) on profits of £250,000 or more. On the slice of profit between £50,000 and £250,000, marginal relief produces an effective rate of 26.5%, which gradually claws back the benefit of the small profits rate. These limits are divided by the number of associated companies, so two connected companies each hit the 19% ceiling at £25,000 of profit."
+  - question: "Is a property company taxed differently from a normal trading company?"
+    answer: "The rates are identical: 19%, 25% and the 26.5% marginal band apply to all UK companies. The catch specific to property is the close investment-holding company (CIHC) rule in CTA 2010 s.18N. A company whose only purpose is holding investments is denied the small profits rate entirely and pays 25% on every pound of profit. Most buy-to-let SPVs are not CIHCs, because letting property to unconnected tenants is a qualifying purpose that takes the company out of the CIHC charge, but a company that mainly holds cash, shares or property let to connected persons can fall inside it."
+  - question: "Does Section 24 apply to a property company?"
+    answer: "No. Section 24 (the finance-cost restriction enacted by s.24 Finance (No.2) Act 2015, with its operative provisions at ITTOIA 2005 ss.272A and 274A) is an income-tax rule and only bites on individuals. A company deducts its mortgage interest in full as a business expense before arriving at taxable profit. This is the single biggest reason higher-rate and additional-rate landlords look at incorporation: the same mortgage interest that is restricted to a 20% tax credit in personal hands is a full deduction inside a company."
   - question: "How does corporation tax compare to personal income tax for landlords?"
-    answer: "Corporation tax at 19% is typically lower than personal income tax rates of 20%, 40%, or 45% for landlords. From April 2027, separate property income tax rates of 22%, 42%, and 47% will apply, making incorporation even more attractive for higher-rate taxpayers."
-  - question: "Can property companies claim mortgage interest relief without Section 24 restrictions?"
-    answer: "Yes, property companies can deduct mortgage interest as a business expense without Section 24 restrictions. This provides a significant advantage over personal ownership, where mortgage interest relief is capped at 20% as a tax credit rather than a full deduction."
-  - question: "What happens to profits retained in a property company?"
-    answer: "Retained profits in property companies face only corporation tax (19% or 25%) with no immediate personal tax charge. However, if profits are later distributed as dividends, shareholders pay dividend tax at 10.75%, 35.75%, or 39.35% depending on their income level."
+    answer: "For 2026/27 an individual landlord pays income tax on rental profit at 20%, 40% or 45%, with mortgage interest restricted by Section 24 to a 20% basic-rate credit. A company pays 19% or 25% with interest fully deductible. From 6 April 2027 the comparison sharpens: separate property income rates of 22%, 42% and 47% take effect (enacted by Finance Act 2026, applying in England, Wales and Northern Ireland; Scotland is excluded). The company rate does not move, so the gap for higher and additional-rate landlords widens."
+  - question: "Do I pay tax twice if I take money out of a property company?"
+    answer: "There are two layers, but it is not strictly double taxation on the same income. The company pays corporation tax on its profit. When you then extract retained profit as a dividend you pay dividend tax at 10.75%, 35.75% or 39.35% (after the £500 dividend allowance), on the post-corporation-tax amount. The combined cost of corporation tax plus dividend tax is what you compare against personal income tax, not corporation tax alone. Profit left inside the company to repay debt or buy more property is only taxed once, at the corporation tax rate."
+  - question: "What is the 26.5% marginal rate and when does it apply?"
+    answer: "Between £50,000 and £250,000 of profit, marginal relief tapers the small profits rate away. Mechanically the company is charged 25% on all its profit and then given relief equal to 3/200 of the difference between £250,000 and its profit. The effect on each extra pound earned in that band is a 26.5% marginal cost, which is higher than both the 19% floor and the 25% ceiling. It is the price of phasing out the small profits rate, and it matters for portfolio companies sitting in the middle of the band."
+  - question: "Will incorporating my portfolio trigger capital gains tax and stamp duty?"
+    answer: "Transferring personally owned property into a company is a disposal at market value for CGT and an acquisition by the company for SDLT, so both can arise. Section 162 incorporation relief can defer the CGT where you transfer a genuine property business (not a passive single let) as a going concern wholly or partly for shares; whether your letting amounts to a business is a question of fact and degree following Ramsay v HMRC [2013]. SDLT is the harder problem because there is no general relief, although a genuine pre-existing letting partnership may reduce the chargeable consideration under FA 2003 Schedule 15. Both points need advice before you move anything."
+  - question: "Can I avoid CGT and SDLT when I incorporate?"
+    answer: "You cannot simply switch them off, and any scheme that promises CGT-free or stamp-duty-free incorporation as a product should be treated with caution. Section 162 can defer (not eliminate) the gain where you transfer a qualifying property business for shares, and a real letting partnership can reduce SDLT under FA 2003 Schedule 15, but HMRC scrutinises partnerships set up shortly before incorporation under the s.75A anti-avoidance rule. The base cost question matters too: the company inherits the value at transfer, so a deferred gain can resurface later."
+  - question: "Is one company or multiple SPVs better for a property portfolio?"
+    answer: "There is no single answer, and the corporation tax limits are part of the trade-off. The £50,000 and £250,000 limits are shared (divided) across associated companies, so splitting a portfolio into several SPVs does not multiply the small profits rate band. Multiple SPVs are usually chosen for non-tax reasons: ring-fencing lender security, separating development from investment, or planning a clean sale of one tranche. A single company is simpler and cheaper to run. The right structure depends on lending, succession plans and exit strategy, not on the headline rate alone."
+  - question: "What is a director's loan account and why does it matter in a property company?"
+    answer: "When you incorporate, the value you transfer in (over and above any share capital) often sits as a credit on your director's loan account, money the company owes you. You can draw that balance back tax-free as a repayment of the loan, which is usually the most efficient first route for taking money out. The trap is the reverse: if you overdraw the account so the company lends you money, an unpaid balance nine months after the year-end triggers a s.455 charge at 35.75% for loans made on or after 6 April 2026, refundable once you repay."
+  - question: "Are property companies inside Making Tax Digital?"
+    answer: "No. Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) applies to individuals, not companies. It is live from 6 April 2026 for landlords with qualifying income above £50,000, dropping to £30,000 from April 2027 and £20,000 from April 2028. A limited company is outside MTD for ITSA entirely and continues to file an annual CT600 corporation tax return. For some landlords sitting just above the MTD threshold, the simpler corporate reporting regime is a genuine secondary reason to look at incorporation."
+  - question: "When does a property company file and pay its corporation tax?"
+    answer: "A company files its CT600 return within 12 months of the end of its accounting period, but the tax is due earlier: nine months and one day after the period end. So a company with a 31 March 2026 year-end pays its corporation tax by 1 January 2027 and files by 31 March 2027. Companies with profits over £1.5 million (reduced by associated companies) pay in quarterly instalments instead. Late payment carries interest and, for the return, escalating penalties."
+  - question: "Does retaining profit in the company save tax?"
+    answer: "It defers personal tax rather than removing it. Profit kept in the company is taxed once at 19% or 25% and can be reinvested into more property or used to pay down borrowing without any further charge. Personal tax only arises when you extract the money as salary or dividends. For landlords building a portfolio who do not need the cash personally, this rolling-up effect is one of the strongest arguments for the corporate route. For landlords who need every pound of rent to live on, the second layer of dividend tax erodes much of the headline advantage."
 ---
 
-<p>Property companies face corporation tax rates of 19% on small profits and 25% on larger profits in 2026/27. Understanding these <strong>corporation tax property companies 2026</strong> rates is crucial for landlords considering incorporation or managing existing property companies.</p>
-<p>This guide covers the current corporation tax structure, reliefs available to property companies, and how these rates compare to personal tax on rental income — especially important given the separate property income tax rates launching in April 2027.</p>
+<p>The corporation tax rate for a property company in 2026/27 is 19% on profits up to £50,000 and 25% on profits above £250,000, with an effective 26.5% rate on the slice between. That is the question most people arrive with, and it is answered in a sentence. The harder and more valuable question is the one underneath it: does putting a buy-to-let portfolio inside a company actually leave you better off once Section 24, dividend tax, capital gains tax on the transfer and stamp duty are all in the same calculation?</p>
+<p>This guide gives the rates and the marginal relief mechanics first, then does the work the rate table cannot: it compares the company route against personal ownership with a worked Section 24 example, sets out the capital gains and stamp duty costs of moving property in, and explains the structuring choices (single company versus multiple SPVs, director's loan extraction) that decide whether incorporation pays.</p>
 
-<h2>Corporation Tax Rates 2026/27</h2>
-<p>Property companies pay corporation tax on their taxable profits using the same rates as other UK companies. The system operates with two main rates and a marginal rate mechanism.</p>
-<h3>Small Profits Rate: 19%</h3>
-<p>The <strong>19% small profits rate</strong> applies to company profits up to £50,000. For most small property companies, this represents the effective rate on all their taxable income. A property company with three buy-to-let properties generating £40,000 annual profit would pay £7,600 corporation tax (19% of £40,000). This rate applies regardless of whether profits are retained in the company or distributed.</p>
-<h3>Main Rate: 25%</h3>
-<p>The 25% main rate applies to profits above £250,000. This affects larger property portfolios or companies with significant development activities. A property company with £300,000 profits pays corporation tax via the marginal relief formula: 25% on the full £300,000 (£75,000) less marginal relief, producing an effective rate that gradually rises from 19% to 25% across the £50,000-£250,000 band before reaching the headline 25% above £250,000.</p>
-<h3>Marginal Rate Mechanism</h3>
-<p>Between £50,000 and £250,000 profits, companies face a marginal rate of 26.5%. This mechanism gradually phases out the benefit of the small profits rate. The marginal rate calculation adds 1/400 of the profit band (£200,000) to the basic corporation tax liability. This effectively creates a 26.5% rate on profits between these thresholds.</p>
+<h2>Corporation tax rates for property companies in 2026/27</h2>
+<p>A property company is taxed on its profits at exactly the same rates as any other UK company. There is no special property rate. What is specific to property is one anti-avoidance rule, the close investment-holding company charge, covered further down. The three rates for the financial year from 1 April 2026 are unchanged from 2025/26.</p>
 
-<h2>Corporation Tax vs Personal Tax for Landlords</h2>
-<p>Comparing <strong>corporation tax rates landlord</strong> options with personal tax becomes complex, especially with property income tax changes from April 2027.</p>
-<h3>Personal and Property Income Tax Rates</h3>
-<p>For 2026/27, individual landlords pay income tax at 20%, 40%, or 45% on rental profits, plus National Insurance on employment income. Crucially, Section 24 restrictions limit mortgage interest relief to a 20% tax credit. A higher-rate taxpayer with £50,000 rental profit pays 40% income tax (£20,000) compared to a property company's 19% corporation tax (£9,500) — a £10,500 annual saving.</p>
-<p>From April 2027, separate property income tax rates will apply: 22% basic rate, 42% higher rate, and 47% additional rate. This makes incorporation even more attractive for many landlords. The same £50,000 rental profit would face 42% property income tax (£21,000) from April 2027, compared to 19% corporation tax (£9,500) — an £11,500 annual difference.</p>
+<table>
+<thead>
+<tr><th>Taxable profit</th><th>Rate applied</th><th>How it works</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to £50,000</td><td>19% (small profits rate)</td><td>The effective rate for most small property companies on all their profit.</td></tr>
+<tr><td>£50,001 to £250,000</td><td>26.5% effective (marginal band)</td><td>Marginal relief tapers away the small profits rate, so each extra pound in this band costs 26.5%.</td></tr>
+<tr><td>£250,000 and above</td><td>25% (main rate)</td><td>The headline rate applies to the whole profit once it exceeds £250,000.</td></tr>
+</tbody>
+</table>
 
-<h2>Available Reliefs and Deductions for Property Companies</h2>
-<p>Property companies can claim various reliefs and deductions when calculating their corporation tax liability, offering advantages over personal ownership.</p>
-<h3>Property Business Expenses</h3>
-<p>Companies can deduct all legitimate property business expenses, including mortgage interest without Section 24 restrictions. A property company with £100,000 rental income and £30,000 mortgage interest pays corporation tax on £70,000 profit (assuming other expenses). An individual landlord faces Section 24 restrictions on the same mortgage interest.</p>
-<h3>Capital Allowances</h3>
-<p>Property companies can claim capital allowances on qualifying assets like boilers, kitchens, and commercial property fixtures. The Annual Investment Allowance provides 100% first-year relief on qualifying expenditure up to £1 million. A company spending £20,000 on new boilers across its portfolio can claim immediate tax relief, reducing corporation tax by £3,800 (19% of £20,000).</p>
-<h3>Losses and Group Relief</h3>
-<p>Companies can carry forward trading losses indefinitely and set them against future profits. Group relief allows losses to be surrendered between connected companies. This flexibility proves valuable for property developers or companies with mixed property activities, allowing losses from development projects to offset rental income.</p>
+<h3>The £50,000 small profits rate</h3>
+<p>A company with three buy-to-let properties producing £40,000 of taxable profit pays corporation tax at 19% on the whole amount. This rate applies whether the profit is kept in the company or paid out, and it is well below the 40% an individual higher-rate landlord would face on the same figure. For the large majority of single-property and small-portfolio companies, 19% is simply the rate, and the marginal mechanics never come into play.</p>
 
-<h2>Extracting Profits: Dividend Tax and Strategy</h2>
-<p>Property companies typically distribute profits as dividends, which carry additional tax implications for shareholders.</p>
-<h3>Dividend Tax Rates</h3>
-<p>For 2026/27, dividends face tax at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) after a £500 annual dividend allowance. This creates a combined tax cost when added to corporation tax. £50,000 company profit generates £40,500 after corporation tax (19%). If distributed as dividends to a higher-rate taxpayer, this creates additional tax of £14,479 (35.75% of £40,500), resulting in net income of £26,021.</p>
-<h3>Retained Profits Strategy</h3>
-<p>Many property companies retain profits to avoid immediate dividend tax, using retained earnings to fund portfolio expansion or reduce borrowings. This strategy defers personal tax while building company equity. However, retained profits may face additional scrutiny under close company rules or benefit-in-kind regulations if used inappropriately.</p>
+<h3>The £250,000 main rate and the 26.5% marginal band</h3>
+<p>Profit above £250,000 is taxed at 25% across the board. The interesting part is the band in between. The current marginal relief regime sits in Part 3A of the Corporation Tax Act 2010: the company is charged at 25% and then given relief equal to the standard fraction (currently 3/200, set by Parliament under s.18) multiplied by the amount its profit falls short of £250,000. The arithmetic produces a 26.5% marginal cost on profit between the two limits, higher than either the floor or the ceiling. A portfolio company sitting at £150,000 of profit is paying an effective blended rate somewhere above 19% but well under 25%, and every additional pound it earns up to £250,000 is taxed at that 26.5% margin.</p>
+<p>One detail catches people out: the £50,000 and £250,000 limits are divided by the number of associated companies. Two connected property companies do not each get the full band; they share it. That is one of the reasons the multiple-SPV question, dealt with later, is not a free way to multiply the small profits rate.</p>
 
-<h2>Administrative and Compliance Requirements</h2>
-<p>Property companies must comply with corporation tax filing and payment obligations.</p>
-<h3>Corporation Tax Returns</h3>
-<p>Companies must file CT600 returns within 12 months of their accounting period end. Most property companies adopt 31 March year-ends to align with the tax year. Returns require detailed profit and loss accounts, balance sheets, and corporation tax computations. Professional preparation is typically essential given the complexity.</p>
-<h3>Payment Deadlines</h3>
-<p>Corporation tax is due nine months and one day after the accounting period end. Large companies (profits over £1.5 million) must pay quarterly instalments. A company with a 31 March 2026 year-end must pay corporation tax by 1 January 2027. Late payment incurs interest charges and potential penalties.</p>
+<h3>The close investment-holding company trap</h3>
+<p>A close investment-holding company (CIHC) under CTA 2010 s.18N is denied the small profits rate altogether and pays 25% on every pound, with no 19% band and no marginal relief. The good news for most landlords is that letting property to unconnected tenants is a qualifying purpose that takes a company out of CIHC status, so a standard buy-to-let SPV is usually safe. The risk arises where the company mainly holds cash, shares, or property let to connected persons. If you are setting up a structure that looks more like an investment vehicle than a letting business, the CIHC point needs checking on the facts before you assume the 19% rate is available.</p>
 
-<h2>When Incorporation is Favourable</h2>
-<p>Several scenarios make property company structures particularly attractive from a tax perspective.</p>
-<h3>Higher-Rate Taxpayers</h3>
-<p>Landlords paying 40% or 45% income tax typically benefit from incorporation, especially when considering Section 24 restrictions on personal ownership. The <strong>19% small profits rate</strong> provides immediate savings compared to personal rates, with additional flexibility around timing of distributions.</p>
-<h3>Large Portfolios and Property Development</h3>
-<p>Substantial property portfolios often generate profits exceeding personal tax thresholds, making corporate structures more efficient despite the 25% main rate on higher profits. Portfolio landlords can also benefit from group structures, allowing losses and reliefs to be optimised across multiple companies.</p>
-<p>Companies engaged in property development face different tax rules, with potential trading income treatment and enhanced capital allowances availability. Development companies can also benefit from Entrepreneurs' Relief (now Business Asset Disposal Relief) on eventual disposal of the company shares.</p>
+<h2>Company versus personal ownership: the comparison that matters</h2>
+<p>The rate table tells you what a company pays. It does not tell you whether you should use one. For that you have to put the corporate route next to personal ownership with all the moving parts in view. The decisive factor for most landlords is Section 24.</p>
 
-<h2>Professional Advice and Planning</h2>
-<p>Corporation tax planning for property companies requires specialist knowledge of both corporate tax rules and property-specific legislation. Consider consulting a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> who understands the interaction between corporation tax rates, property income rules, and dividend planning strategies.</p>
-<p>The decision to incorporate should factor in not just current tax rates, but also the upcoming property income tax changes and your long-term property investment strategy. Professional advice ensures you understand both the immediate tax implications and future planning opportunities.</p>
+<h3>Why Section 24 drives the decision</h3>
+<p>Section 24 (the finance-cost restriction enacted by s.24 Finance (No.2) Act 2015, sitting in ITTOIA 2005 ss.272A and 274A) restricts an individual landlord's mortgage interest to a 20% basic-rate tax credit rather than a full deduction. It is fully in force; the phase-in finished years ago. A company is not subject to Section 24, because it is an income-tax rule that only applies to individuals. Inside a company, mortgage interest is an ordinary business expense deducted in full before profit is calculated. For a geared higher-rate landlord, that single difference often outweighs everything else. Our guide on <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">claiming mortgage interest under Section 24</a> sets out the personal-ownership position in detail.</p>
+
+<h3>A worked Section 24 example</h3>
+<p>Take a higher-rate landlord with £60,000 of rental income, £25,000 of mortgage interest and £5,000 of other allowable costs.</p>
+<p><strong>Held personally.</strong> The £25,000 interest is not deducted from income. Taxable rental profit is £55,000 (£60,000 less £5,000 of other costs), taxed at 40% giving £22,000, then reduced by a Section 24 credit of 20% of the £25,000 interest, which is £5,000. The income tax bill is £17,000.</p>
+<p><strong>Held in a company.</strong> All costs including the £25,000 interest are deducted, so taxable profit is £30,000. Corporation tax at 19% is £5,700. If the landlord leaves that profit in the company to repay debt or buy another property, the comparison stops there: £5,700 against £17,000. If instead the landlord extracts the post-tax profit as a dividend, dividend tax at 35.75% (after the £500 allowance) adds roughly £8,508.50, taking the combined cost to around £14,208.50, still below the £17,000 personal figure but by a far smaller margin.</p>
+<p>The example shows the real lesson: the corporate advantage is largest for geared, higher-rate landlords who reinvest rather than draw the cash. For an ungeared landlord on the basic rate who needs the income to live on, the two layers of tax can wipe the advantage out.</p>
+
+<h3>How April 2027 changes the maths</h3>
+<p>From 6 April 2027 the UK introduces separate property income tax rates of 22% basic, 42% higher and 47% additional, enacted by Finance Act 2026 (ss.6-7, Royal Assent 18 March 2026) and applying to property income in England, Wales and Northern Ireland. Only Scotland is carved out, where Holyrood sets property income rates. In step with this, the Section 24 finance-cost reducer rises from 20% to 22%, so it continues to match the basic rate and no new wedge opens for basic-rate landlords. For higher and additional-rate landlords the rate on rental profit climbs by two points while the company rate stays at 19% or 25%, widening the gap that already favours incorporation. We cover the detail in our guide to the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates for landlords</a>.</p>
+
+<table>
+<thead>
+<tr><th>Feature</th><th>Personal ownership 2026/27</th><th>Limited company 2026/27</th></tr>
+</thead>
+<tbody>
+<tr><td>Rate on rental profit</td><td>20% / 40% / 45% (22% / 42% / 47% from April 2027)</td><td>19% to £50k, 25% above £250k</td></tr>
+<tr><td>Mortgage interest relief</td><td>Restricted to 20% credit (22% from April 2027)</td><td>Full deduction, no Section 24</td></tr>
+<tr><td>Tax on extracting cash</td><td>None (you already own it)</td><td>Dividend tax 10.75% / 35.75% / 39.35% on top</td></tr>
+<tr><td>Reinvesting profit</td><td>Taxed at marginal rate first</td><td>Only corporation tax, then reinvest</td></tr>
+<tr><td>Reporting regime</td><td>MTD for ITSA where qualifying income over the threshold</td><td>Annual CT600, outside MTD for ITSA</td></tr>
+</tbody>
+</table>
+
+<h2>The cost of moving property into a company</h2>
+<p>The comparison above assumes the property is already inside the company. Getting it there from personal ownership is where incorporation can become expensive, because the transfer is a disposal for capital gains tax and a purchase for stamp duty land tax. These costs are upfront and real, and they are why incorporation is a decision to model carefully rather than a default.</p>
+
+<h3>Capital gains tax and Section 162 relief</h3>
+<p>Transferring a property you own personally into your company is a disposal at market value, so any gain since you bought it is in charge to CGT at 18% or 24% (after the annual exempt amount of £3,000). Section 162 incorporation relief can defer that gain where you transfer the whole of a property business as a going concern, wholly or partly in exchange for shares. The crucial word is business: a portfolio under active management is more likely to qualify than a single passive let, and the threshold follows Ramsay v HMRC [2013]. Relief defers rather than cancels the gain; it rolls into the base cost of the shares you receive. Our dedicated guide to <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">Section 162 incorporation relief for property landlords</a> walks through the conditions and the business test, and the wider position sits in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a>.</p>
+
+<h3>Stamp duty land tax on incorporation</h3>
+<p>SDLT is the harder cost to mitigate. When the company acquires the property it pays SDLT on the market value, including the 5% additional dwellings surcharge that applies to companies buying residential property, and there is no general incorporation relief that switches it off. The one genuine route to reduce the charge is FA 2003 Schedule 15, which can reduce the chargeable consideration to nil where the portfolio is already held in a real, pre-existing letting partnership with its own returns, accounting and joint borrowing. HMRC scrutinises this heavily and will attack a partnership created shortly before incorporation as a contrivance under the s.75A anti-avoidance rule. In Scotland the equivalent is Land and Buildings Transaction Tax with an 8% Additional Dwelling Supplement; in Wales it is Land Transaction Tax with its own higher-rate band structure. None of these can be assumed away, which is why the SDLT bill often decides whether incorporation makes sense at all.</p>
+
+<h2>Extracting profit from a property company</h2>
+<p>Money inside a company is not money in your pocket. How you get it out, and at what cost, is half the incorporation question. There are three main routes and the order you use them in matters.</p>
+
+<h3>Director's loan account first</h3>
+<p>When you incorporate, the value you transfer in above any share capital usually sits as a credit on your director's loan account: money the company owes you. You can draw that balance back as a repayment of the loan, entirely free of personal tax, which is normally the most efficient first route for taking cash out. A landlord with a substantial incorporation credit can live off loan repayments for several years before dividends become necessary. The reverse position is the trap to watch: if you overdraw the account so the company is lending you money, an amount still unpaid nine months after the year-end triggers a s.455 charge at 35.75% (for loans made on or after 6 April 2026), refundable when you repay. Our guide to the <a href="/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics">director's loan account mechanics in a property company</a> covers this in full.</p>
+
+<h3>Dividends and the second layer of tax</h3>
+<p>Once any loan account credit is exhausted, dividends are the usual extraction route. For 2026/27, dividends are taxed at 10.75% (basic rate), 35.75% (higher rate) or 39.35% (additional rate) after a £500 dividend allowance. This is the second layer that the headline corporation tax rate hides. The combined cost of 19% corporation tax plus 35.75% dividend tax on the remainder is what a higher-rate landlord should compare against personal income tax, not the 19% alone. Splitting dividends across spouses using separate share classes can use both sets of allowances and lower bands, a standard design covered in our guide to <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a>.</p>
+
+<h3>Retaining profit to grow the portfolio</h3>
+<p>The strongest case for a company is the landlord who does not need the rent personally. Profit retained in the company is taxed once, at 19% or 25%, and can be reinvested into more property or used to pay down borrowing with no further charge until it is eventually extracted. This rolling-up effect, combined with full interest relief, is what makes the corporate route compelling for portfolio builders and far weaker for landlords drawing every pound to live on.</p>
+
+<h2>Reliefs and deductions inside a property company</h2>
+<p>A company calculates its taxable profit after deducting its allowable costs, and on this front it has more room than an individual landlord.</p>
+<p>Mortgage and finance costs are deducted in full, with no Section 24 restriction. Ordinary running costs, letting agent fees, repairs, insurance and professional fees come off in the usual way. Capital allowances are available on qualifying plant and machinery, and the Annual Investment Allowance gives 100% relief on qualifying expenditure in the year it is incurred. Trading and property losses can be carried forward against future profits, and group relief allows losses to be surrendered between connected companies, which is useful where a structure mixes development activity with long-term lets. A point worth flagging: most of the structure of a residential let does not qualify for capital allowances, so the headline allowance is more relevant to commercial property and communal plant than to a standard buy-to-let.</p>
+
+<h2>Single company or multiple SPVs?</h2>
+<p>Landlords building a portfolio often ask whether to run everything through one company or to use several special purpose vehicles. The corporation tax limits push against the instinct to split: the £50,000 and £250,000 thresholds are shared across associated companies, so three SPVs do not each get their own 19% band. If the only goal is the small profits rate, splitting achieves nothing and adds cost.</p>
+<p>The real reasons to use multiple SPVs are structural rather than rate-driven. Lenders often want each financing ring-fenced in its own company. Separating development projects from long-term holds keeps trading and investment activity cleanly apart. Planning a future sale of one tranche of properties is far simpler when that tranche already sits in its own company whose shares can be sold. Against all of that, a single company is cheaper to administer, simpler to file for, and easier to extract from. The right answer depends on your lending, your succession plans and your eventual exit, and it is rarely decided by the tax rate alone.</p>
+
+<h2>Filing, payment and compliance</h2>
+<p>A property company must file a CT600 corporation tax return within 12 months of its accounting period end, but the tax falls due earlier, nine months and one day after that period end. A company with a 31 March 2026 year-end therefore pays its corporation tax by 1 January 2027 and files the return by 31 March 2027. Companies with profits over £1.5 million (reduced by the number of associated companies) pay in quarterly instalments instead of a single payment. Late payment attracts interest, and a late return carries escalating penalties. Note that a company is outside Making Tax Digital for Income Tax Self Assessment entirely; MTD for ITSA applies to individual landlords above the qualifying-income threshold, while the company continues with annual corporate reporting.</p>
+
+<h2>Getting the decision right</h2>
+<p>The 19% and 25% rates are the headline, but they are the least of the work. Incorporation pays where a geared, higher or additional-rate landlord retains profit to grow a portfolio, because full interest relief and the corporate rate compound in their favour, especially from April 2027 as personal property rates rise to 22%, 42% and 47% while the company rate holds. It pays far less, and can cost more, where a basic-rate or ungeared landlord needs the rent to live on and faces a second layer of dividend tax, plus the upfront CGT and SDLT of moving property in. The figures in this guide are a framework, not a recommendation; the right answer turns on your gearing, your marginal rate, your plans for the cash and the latent gains in the properties you would transfer. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model the specific numbers before you commit to a structure that is expensive to unwind.</p>

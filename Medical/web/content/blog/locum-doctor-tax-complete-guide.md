@@ -6,113 +6,125 @@ date: "2026-04-01"
 author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Tax Guide 2026/27 | Medical Accountants UK"
-metaDescription: "Locum doctors face IR35, self-assessment, and complex expense rules. Tax structures, allowable claims, and planning strategies to maximise take-home pay."
+metaDescription: "Complete 2026/27 tax guide for UK locum doctors: sole trader vs limited company, self-assessment, Class 4 NIC at 6%, expenses, 55p mileage and NHS pension."
 altText: "UK locum doctor reviewing tax documents and calculator on desk"
 image: ""
 h1: "Locum Doctor Tax Complete Guide: Everything You Need to Know"
-summary: "A comprehensive guide covering everything UK locum doctors need to know about tax compliance, from IR35 rules to expense claims and record keeping requirements."
+summary: "A complete 2026/27 guide for UK locum doctors covering how you are taxed, sole trader versus limited company, self-assessment, Class 4 National Insurance, allowable expenses including mileage, and keeping your NHS pension via Locum forms A and B."
 schema: ""
 faqs:
   - question: "Do I need to register for self-assessment as a locum doctor?"
-    answer: "Yes, most locum doctors need to register for self-assessment, even if working through agencies. You must register if you have untaxed income over £1,000, work through a limited company, or have expenses to claim. Register by 5 October following your first tax year of locum work to avoid penalties."
-  - question: "Can I claim travel expenses between different hospitals?"
-    answer: "Yes, you can claim travel costs between different client sites on the same day, but not regular home-to-work travel. Keep detailed mileage records showing dates, destinations, and business purpose. You can claim 45p per mile for the first 10,000 business miles annually."
-  - question: "What's the difference between being inside and outside IR35?"
-    answer: "Inside IR35 means you pay tax and National Insurance like an employee but without employment benefits. Outside IR35 allows you to use dividend extraction and other tax planning strategies through your limited company. Most NHS locum roles are likely inside IR35 due to the controlled nature of medical work."
-  - question: "Should I use a limited company or work as a sole trader?"
-    answer: "This depends on your IR35 status and earnings level. Limited companies offer more tax planning opportunities when outside IR35 but require more administration. Sole trader status is simpler but offers less tax efficiency. Seek advice based on your specific circumstances and expected income levels."
+    answer: "If you work as a sole trader locum (the most common route) you must register for self-assessment once your gross self-employed income passes the £1,000 trading allowance. Register by 5 October following the end of your first tax year of locum work to avoid a failure-to-notify penalty. If you work only through a recruitment agency or NHS staff bank under PAYE you may not need to register, but you still file a return if you have other untaxed income or expenses to claim. See our locum self-assessment filing guide for the step-by-step process."
+  - question: "How much National Insurance do locum doctors pay in 2026/27?"
+    answer: "A sole trader locum pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270, then 2% on profits above £50,270 (2026/27). Class 2 National Insurance is no longer a separate required payment from 6 April 2024: if your profits are at or above the small profits threshold you are treated as having paid it and keep your state pension record, so there is no weekly Class 2 charge to budget for."
+  - question: "What can I claim back as expenses as a locum doctor?"
+    answer: "Allowable expenses are those incurred wholly and exclusively for your locum work: medical indemnity, your GMC retention fee, relevant Royal College and BMA subscriptions on HMRC's List 3, CPD relevant to current practice, equipment, a proportion of home-office and phone costs, accountancy fees and business travel between sites. For business mileage in your own car you can claim 55p per mile for the first 10,000 business miles in 2026/27, then 25p thereafter. Home to your first site of the day is ordinary commuting and is not allowable."
+  - question: "Should I work as a sole trader or set up a limited company?"
+    answer: "For most locums starting out, sole trader status is simpler and avoids the cost and admin of a company. A limited company can offer some tax flexibility for genuinely outside-IR35 private and locum work, but the 2026/27 dividend rate rise narrows the saving, and crucially company income and dividends are NOT NHS-pensionable, so you lose pension accrual. The right answer depends on your IR35 position, your income level and how much you value the NHS pension. See our dedicated limited company guide before deciding."
+  - question: "Can I still build an NHS pension as a freelance locum?"
+    answer: "Yes. Freelance GP locums can pension their NHS locum income by completing GP Locum forms A and B and paying contributions via the PCSE / Solo route, provided the work is for an eligible NHS body. The key trap is incorporation: if you route locum income through a limited company and take it as dividends, that income is not NHS-pensionable and earns no NHS pension accrual at all. Our NHS pension for locums guide explains forms A and B in detail."
 ---
 
-<p>Working as a locum doctor in the UK brings unique tax challenges that permanent NHS staff never face. This <strong>locum doctor tax complete guide</strong> covers everything from IR35 compliance to expense claims, helping you navigate the complex tax rules that apply to medical professionals working on a contract basis.</p>
+<p>Working as a locum doctor in the UK gives you flexibility that permanent NHS staff never have, but it also makes you responsible for your own tax, National Insurance and pension. This <strong>locum doctor tax complete guide</strong> is the overview: how you are taxed for 2026/27, whether to work as a sole trader or through a limited company, what you can claim, and how to keep building your NHS pension. Where a topic deserves its own deep dive (IR35, expenses, self-assessment filing, limited companies, NHS pension forms) we link you to the detailed guide rather than repeat it here.</p>
 
-<p>Whether you're a newly qualified doctor considering locum work or an experienced locum looking to optimise your tax position, understanding these rules is essential for both compliance and maximising your take-home pay.</p>
+<p>Whether you are a newly qualified doctor taking on your first locum sessions or an experienced GP or hospital locum reviewing your set-up, getting the structure right protects both your compliance and your take-home pay. This is general information, not personal advice.</p>
 
-<h2>Employment Structures for Locum Doctors</h2>
+<h2>How locum doctors are taxed in the UK</h2>
 
-<p>Locum doctors typically work through one of three structures, each with different tax implications.</p>
+<p>Your tax treatment follows the substance of how you actually work, not the label on your invoice. Locum doctors usually fall into one of three set-ups, each taxed differently.</p>
 
-<h3>Direct Employment (Bank/Agency Staff)</h3>
+<h3>Agency or NHS staff bank (PAYE employee)</h3>
 
-<p>When working through NHS staff banks or recruitment agencies as an employee, tax is straightforward. The bank or agency operates PAYE, deducting income tax and National Insurance from your gross pay.</p>
+<p>When you work through an NHS staff bank or a recruitment agency as an employee, tax is the simplest. The bank or agency operates PAYE, deducting income tax and Class 1 National Insurance from your gross pay, and you receive a P60 at year end. You can claim only limited employment expenses, and you do not get the planning flexibility of self-employment. Many locums also encounter umbrella companies in agency chains; if that applies to you, read our guide to <a href="/blog/locum-doctor-umbrella-company-2026-reforms">locum doctor umbrella companies and the 2026 reforms</a>.</p>
 
-<p>You receive a P60 at year-end and can claim limited expenses through your self-assessment return. However, you miss out on the potential tax benefits of contracting.</p>
+<h3>Sole trader (self-employment)</h3>
 
-<h3>Sole Trader/Self-Employment</h3>
+<p>The most common route for a genuinely freelance locum is to work as a sole trader, invoicing the practice or trust directly. You report your profit on the self-employment pages (SA103) of your self-assessment return and pay income tax plus Class 4 National Insurance on those profits. There is no intermediary company, so the IR35 / off-payroll rules do not apply to a sole trader: your status is judged on the employed-versus-self-employed factors (control, personal service, mutuality, financial risk, integration) instead. The trade-off is unlimited personal liability and doing your own bookkeeping, but for most locums the simplicity wins.</p>
 
-<p>Some locum doctors work as sole traders, invoicing clients directly. This structure works for those genuinely outside IR35, but carries unlimited personal liability.</p>
+<h3>Personal service company (PSC)</h3>
 
-<p>You pay income tax and Class 2/Class 4 National Insurance on profits, with Class 4 NI capped at £4,189 for 2025/26. The simplicity makes this attractive for lower-earning locums or those just starting out.</p>
+<p>Some established locums work through their own <a href="/blog/locum-doctor-limited-company-pros-and-cons">limited company</a>, also called a personal service company. A company is a separate legal person that pays corporation tax on its profits, and you extract money as a mix of salary and dividends. This route only makes sense for private or locum work that is genuinely <strong>outside IR35</strong>, and it carries a significant catch for doctors: company income is not NHS-pensionable (covered below). Because a PSC sits inside the off-payroll framework, the next section matters a great deal.</p>
 
-<h3>Limited Company Structure</h3>
+<h2>IR35 and off-payroll: who decides your status</h2>
 
-<p>Most established locum doctors use a <a href="/blog/locum-doctor-limited-company-pros-and-cons">limited company</a> for contracting. This offers the greatest tax efficiency when outside <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35</a>, but requires more administration.</p>
-
-<p>You take a small salary (typically £12,570 to maximise NI efficiency) and extract remaining profits as dividends. This can save significant tax compared to employment, particularly for higher earners.</p>
-
-<h2>Tax Planning Strategies</h2>
-
-<p>Effective tax planning can significantly impact your net income as a locum doctor. Here are key strategies to consider.</p>
-
-<h3>Pension Contributions</h3>
-
-<p>Pension contributions remain one of the most effective ways to reduce your tax bill. You can contribute up to 100% of relevant earnings or £60,000 annually (2025/26), whichever is lower.</p>
-
-<p>Locum doctors often miss out on <a href="/nhs-pension">NHS pension</a> benefits, making personal pension planning even more critical. Consider whether to maintain voluntary NHS pension contributions or invest in private arrangements.</p>
-
-<h3>Timing of Income</h3>
-
-<p>If using a limited company, you have flexibility over when to extract profits. Consider:</p>
+<p>If you work through a PSC, the off-payroll rules decide whether your engagement is treated like employment for tax. The crucial point for doctors is that for most NHS work, <strong>you do not decide your own status</strong>:</p>
 
 <ul>
-<li>Deferring dividends to manage tax brackets</li>
-<li>Accelerating income before tax rate changes</li>
-<li>Spreading income across family members (where appropriate)</li>
-<li>Using dividend allowances efficiently</li>
+<li><strong>NHS trusts and other public-sector hirers</strong> determine your status and, where you are inside IR35, the trust or the agency in the chain operates PAYE and National Insurance on that income (the rules for public-sector engagers have applied since 6 April 2017).</li>
+<li><strong>Medium and large private hirers</strong> (for example larger private hospitals and clinics) determine status, issue a Status Determination Statement with reasons, and the fee-payer deducts tax (since 6 April 2021).</li>
+<li><strong>Small private clients</strong> (within the Companies Act small-company thresholds) are the exception: there your PSC still decides its own IR35 status.</li>
 </ul>
 
-<h3>Expense Timing</h3>
+<p>Inside IR35, the income is taxed close to employment and the salary-plus-dividend planning is not available on it. Outside IR35, your company is paid gross and you extract normally. A locum working across several hirers can hold a mix of inside and outside determinations. To be clear on a common myth: IR35 has <strong>not</strong> been abolished and the off-payroll rules have not been repealed; the April 2024 change was only a set-off mechanic that lets HMRC offset tax already paid against a deemed employer liability. For the full picture, read <a href="/blog/locum-doctor-ir35-what-you-need-to-know">locum doctor IR35: what you need to know</a>.</p>
 
-<p>Time allowable expenses to maximise tax relief. For example, pay annual subscriptions and equipment purchases before your accounting year-end to claim relief in the current year.</p>
+<h2>Sole trader vs limited company: the real comparison</h2>
 
-<h2>Record Keeping Requirements</h2>
+<p>The sole-trader-versus-company question is the one most locums ask, and the honest 2026/27 answer is that the tax saving from incorporating is narrower than it used to be, and for doctors it comes with a pension cost.</p>
 
-<p>Proper record keeping is essential for locum doctors, both for tax compliance and to support expense claims.</p>
+<p>A limited company pays <strong>corporation tax</strong> at 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief tapering between (an effective rate of about 26.5% in the £50,000 to £250,000 band, FY2025 and FY2026). You then extract profit as salary and dividends. <strong>Dividend tax</strong> rose from 6 April 2026: the ordinary rate is now 10.75%, the upper rate 35.75% and the additional rate 39.35% (unchanged), with a £500 dividend allowance (2026/27). For comparison, the 2025/26 dividend rates were 8.75% / 33.75% / 39.35%. That increase narrows the headline gap between dividends and self-employed profits taxed at income tax plus 6% / 2% Class 4 National Insurance.</p>
 
-<h3>Essential Records to Maintain</h3>
+<p>The decisive factor for doctors is the NHS pension. A limited company <strong>cannot</strong> hold an NHS contract, and income routed through a company and paid out as dividends is <strong>not NHS-pensionable</strong>. So any corporation-tax saving on locum income taken through a PSC has to be set against the loss of NHS pension accrual on that income, which for many doctors is the more valuable benefit. Never look at the tax saving alone. Our <a href="/blog/locum-doctor-limited-company-pros-and-cons">limited company pros and cons</a> guide works through both sides of that trade-off in full.</p>
+
+<h2>Self-assessment and National Insurance for 2026/27</h2>
+
+<p>As a sole trader locum you report your income through self-assessment. If your gross self-employed income exceeds the £1,000 trading allowance you must register, by 5 October following the end of your first tax year of locum work, then file your return and pay by 31 January. Where your tax bill is large enough you also make payments on account on 31 January and 31 July, each 50% of the previous year's liability.</p>
+
+<p>On the National Insurance side for 2026/27:</p>
 
 <ul>
-<li>All invoices and contracts</li>
-<li>Bank statements and payment records</li>
-<li>Expense receipts and documentation</li>
-<li>Mileage logs with business journey details</li>
-<li>Professional qualification certificates</li>
-<li>Insurance documents</li>
+<li><strong>Class 4 National Insurance</strong> is charged at <strong>6%</strong> on profits between £12,570 and £50,270, then <strong>2%</strong> on profits above £50,270. (The old 9% main Class 4 rate fell to 6% from 6 April 2024.)</li>
+<li><strong>Class 2 National Insurance</strong> is no longer a separate required payment from 6 April 2024. If your profits are at or above the small profits threshold you are treated as having paid it and keep your state pension entitlement, so there is no weekly Class 2 charge. Doctors with very low profits can still pay voluntary Class 2 to protect their record.</li>
 </ul>
 
-<h3>Digital Record Keeping</h3>
+<p>For the full filing walk-through, including first-year overlap and the trading allowance, see our <a href="/blog/locum-doctor-self-assessment-filing-guide">locum doctor self-assessment filing guide</a>.</p>
 
-<p>From April 2026, Making Tax Digital rules will likely extend to more businesses. Start using cloud-based accounting software now to stay ahead of requirements and simplify your bookkeeping.</p>
+<h2>Making Tax Digital: what changes for locums</h2>
 
-<p>Popular options for medical professionals include Xero, QuickBooks, and FreeAgent. These integrate with banking and can automatically categorise common medical expenses.</p>
+<p>Making Tax Digital for Income Tax (MTD for ITSA) brings in digital records and quarterly updates for sole traders, phased by qualifying income: <strong>£50,000 from 6 April 2026</strong>, then £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Qualifying income is your gross trading (and property) income, tested on the relevant prior year's return. Most full-time sole-trader locums exceed £50,000 and are therefore in scope from 6 April 2026, so it is worth moving to cloud bookkeeping now. Note that limited companies are out of MTD for ITSA (it is an income-tax regime), so a locum trading through a PSC is not brought in by it. The old £10,000 threshold no longer applies.</p>
 
-<h2>Getting Professional Help</h2>
+<h2>Allowable expenses for locum doctors</h2>
 
-<p>The complexity of locum doctor taxation often justifies professional assistance. A specialist medical accountant can help you:</p>
+<p>You pay tax on profit, not turnover, so claiming every expense incurred wholly and exclusively for your locum work directly reduces your bill. Common allowable costs include:</p>
 
 <ul>
-<li>Structure your affairs tax-efficiently</li>
-<li>Navigate IR35 determinations</li>
-<li>Maximise allowable expense claims</li>
-<li>Plan for major purchases or career changes</li>
-<li>Handle HMRC enquiries if they arise</li>
+<li><strong>Medical indemnity</strong> (MDU, MPS or MDDUS). Note that NHS GP clinical negligence in England is covered at no subscription by the Clinical Negligence Scheme for General Practice (CNSGP) from 1 April 2019, so your own paid indemnity is mainly for private, non-clinical and regulatory cover.</li>
+<li>Your <strong>GMC annual retention fee</strong>, plus relevant Royal College, specialty and BMA subscriptions on HMRC's approved List 3.</li>
+<li><strong>CPD</strong> genuinely relevant to your current practice, and equipment (usually relieved through capital allowances).</li>
+<li><strong>Business mileage</strong> in your own car at <strong>55p per mile for the first 10,000 business miles in 2026/27, then 25p per mile</strong> (the rate rose from 45p on 6 April 2026). Travel between sites on the same day is allowable; home to your first site of the day is ordinary commuting and is not.</li>
+<li>A reasonable proportion of <strong>home-office</strong>, phone and internet costs, plus accountancy fees and business bank charges.</li>
 </ul>
 
-<h2>Related Reading</h2>
+<p>Keep contemporaneous records: invoices, bank statements, receipts, a mileage log and your subscription confirmations. Our <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum doctor expenses guide</a> sets out the full claimable list with the rules behind each one.</p>
 
-- <a href="/blog/locum-doctor-expenses-what-you-can-claim">Locum Doctor Expenses: What You Can Claim</a>
-- <a href="/blog/locum-doctor-self-assessment-filing-guide">Locum Doctor Self Assessment Filing Guide</a>
-- <a href="/blog/nhs-pension-for-locums-form-a-form-b">NHS Pension for Locums: Form A and Form B Guide</a>
+<h2>Keeping your NHS pension as a locum</h2>
 
-<p>This <strong>locum doctor tax complete guide</strong> covers the essentials, but every locum's situation is unique. Consider seeking advice from accountants who specialise in working with medical professionals and understand the specific challenges you face.</p>
+<p>One of the biggest mistakes freelance locums make is dropping out of the NHS Pension Scheme by accident. The scheme is a valuable defined-benefit arrangement: all active members now accrue in the 2015 CARE section (1/54th of pensionable earnings each year). The annual allowance, the cap on tax-favoured pension growth, is <strong>£60,000</strong> for 2026/27, tapering for the highest earners where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a minimum of £10,000.</p>
 
-<p>For personalised guidance on your locum doctor tax situation, <a href="/contact">speak to our specialist medical accountants</a> who work exclusively with UK healthcare professionals.</p>
+<p>As a freelance GP locum you pension your eligible NHS locum income by completing <strong>GP Locum forms A and B</strong> and paying contributions through the PCSE / Solo route, making sure you are on the correct tiered contribution. You do not file an end-of-year certificate as a locum, but you must pay the right tier. The incorporation trap bears repeating: route that income through a company and take it as dividends, and it earns <strong>no NHS pension accrual</strong> at all. For the practical mechanics, read our guide to <a href="/blog/nhs-pension-for-locums-form-a-form-b">NHS pension for locums: forms A and B</a>.</p>
+
+<h2>Do most locums need to worry about VAT?</h2>
+
+<p>Generally no. The supply of medical care by a registered doctor is exempt from VAT where the principal purpose is the protection, maintenance or restoration of the patient's health, so most clinical locum work does not count towards VAT registration. You only register if your <strong>taxable (non-exempt)</strong> turnover passes <strong>£90,000</strong> (the threshold since 1 April 2024, up from £85,000). The work that can be standard-rated, and therefore counts towards that threshold, is purely cosmetic or aesthetic treatment with no therapeutic purpose, and medico-legal or expert-witness reports prepared so a third party can make a decision. If you take on that kind of private work alongside clinical locum sessions, it is worth checking your position.</p>
+
+<h2>Getting professional help</h2>
+
+<p>The mix of self-assessment, IR35, NHS pension forms and the sole-trader-versus-company decision is exactly where a specialist medical accountant earns their keep. A good one will:</p>
+
+<ul>
+<li>Structure your locum work tax-efficiently while protecting your NHS pension accrual</li>
+<li>Help you read your IR35 determinations across multiple hirers</li>
+<li>Make sure you claim every allowable expense and the right mileage</li>
+<li>Get you ready for Making Tax Digital and handle any HMRC enquiry</li>
+</ul>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/locum-doctor-ir35-what-you-need-to-know">Locum Doctor IR35: What You Need to Know</a></li>
+<li><a href="/blog/locum-doctor-limited-company-pros-and-cons">Locum Doctor Limited Company: Pros and Cons</a></li>
+<li><a href="/blog/locum-doctor-expenses-what-you-can-claim">Locum Doctor Expenses: What You Can Claim</a></li>
+<li><a href="/blog/locum-doctor-self-assessment-filing-guide">Locum Doctor Self Assessment Filing Guide</a></li>
+<li><a href="/blog/nhs-pension-for-locums-form-a-form-b">NHS Pension for Locums: Forms A and B Guide</a></li>
+</ul>
+
+<p>This <strong>locum doctor tax complete guide</strong> covers the essentials, but every locum's situation is different, and the right structure depends on your IR35 position, your income and how you value the NHS pension. For guidance tailored to your circumstances, <a href="/contact">speak to our specialist medical accountants</a> who work exclusively with UK healthcare professionals.</p>

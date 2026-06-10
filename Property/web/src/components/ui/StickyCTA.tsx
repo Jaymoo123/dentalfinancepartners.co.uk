@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "./layout-utils";
 import { niche } from "@/config/niche-loader";
+import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
 
 type StickyCTAProps = {
   href?: string;
@@ -20,6 +21,8 @@ export function StickyCTA({
 }: StickyCTAProps = {}) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const action = useIntent("sticky_cta");
+  const shownRef = useRef(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,11 +38,31 @@ export function StickyCTA({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [dismissed]);
 
+  // Log a personalization impression the first time a tailored sticky shows.
+  useEffect(() => {
+    if (visible && action && !shownRef.current) {
+      shownRef.current = true;
+      trackPersonalization("shown", action);
+    }
+  }, [visible, action]);
+
   if (dismissed) return null;
 
-  const primaryText = primary ?? niche.cta.sticky_primary;
-  const secondaryText = secondary ?? niche.cta.sticky_secondary;
-  const button = buttonLabel ?? niche.cta.sticky_button;
+  // Substantive, behaviour-matched offer (in-place swap, no layout shift). The
+  // offer points at a REAL asset — the topic's calculator, its gated guide +
+  // Excel, or a specialist. Falls back to the generic niche CTA when the page has
+  // no topic (or the visitor is in the control arm, where action is null).
+  const offer = action?.offer ?? null;
+  const ctaHref = offer ? offer.href : href;
+  const primaryText = offer ? offer.title : (primary ?? niche.cta.sticky_primary);
+  const secondaryText = offer ? offer.blurb : (secondary ?? niche.cta.sticky_secondary);
+  const button = offer
+    ? offer.kind === "tool"
+      ? "Open the calculator"
+      : offer.kind === "guide"
+        ? "Get the free guide"
+        : "Talk to a specialist"
+    : (buttonLabel ?? niche.cta.sticky_button);
 
   return (
     <div
@@ -49,6 +72,11 @@ export function StickyCTA({
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-4 px-4 py-3 sm:py-4 sm:px-6 lg:px-8">
         <div className="min-w-0 flex-1 border-l-2 border-emerald-600 pl-3 sm:pl-4">
+          {offer && (
+            <p className="mb-0.5 hidden text-[11px] font-semibold uppercase tracking-wide text-emerald-400 sm:block">
+              {offer.reason}
+            </p>
+          )}
           <p className="text-xs sm:text-sm font-bold text-white lg:text-base">
             {primaryText}
           </p>
@@ -57,11 +85,20 @@ export function StickyCTA({
           </p>
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
-          <Link href={href} className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}>
+          <Link
+            href={ctaHref}
+            data-cta="sticky_cta"
+            data-cta-placement="sticky"
+            data-cta-goal={ctaHref.startsWith("/contact") ? "form" : undefined}
+            onClick={() => action && trackPersonalization("clicked", action)}
+            className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
+          >
             {button}
           </Link>
           <button
             onClick={() => setDismissed(true)}
+            data-cta="sticky_cta_close"
+            data-cta-placement="sticky"
             className="flex h-11 w-11 items-center justify-center text-slate-400 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-slate-900 rounded-lg flex-shrink-0"
             aria-label="Dismiss"
             type="button"

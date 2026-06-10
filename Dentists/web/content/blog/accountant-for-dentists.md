@@ -3,6 +3,7 @@ title: What Does a Specialist Accountant for Dentists Do That a General Accounta
 slug: accountant-for-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/specialist-services/accountant-for-dentists
 date: '2026-05-19'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Specialist Services
 metaTitle: 'Accountant for Dentists: Specialist Tax & Accounting'
@@ -11,6 +12,12 @@ altText: UK dentist reviewing financial documents with a specialist dental accou
 image: https://images.pexels.com/photos/7654131/pexels-photo-7654131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Does a Specialist Accountant for Dentists Do That a General Accountant Cannot?
 summary: A specialist accountant for dentists understands NHS pension scheme sections, UDA contract variations, goodwill amortisation rules, and VAT exemptions on dental treatment. General accountants often miss these dental-specific tax reliefs and compliance requirements.
+keyTakeaways:
+  - "The NHS Pension Scheme has three sections (1995, 2008 and 2015 CARE), and the McCloud remedy lets members choose scheme rules for service between 1 April 2015 and 31 March 2022."
+  - "Goodwill acquired through a company after 1 April 2019 attracts fixed-rate tax relief at 6.5% per year, while goodwill bought between 8 July 2015 and 31 March 2019 generally gets none."
+  - "Business Asset Disposal Relief is 18% for 2026/27 (up from 14% to 5 April 2026), with a £1 million lifetime limit and a 5% shareholding plus two-year officer or employee test."
+  - "Dental treatment is VAT-exempt under VATA 1994 Schedule 9 Group 7, but cosmetic work without a medical purpose can be standard-rated and registration is required above £90,000 of taxable supplies."
+  - "MTD for Income Tax is mandatory from 6 April 2026 for sole traders with gross income over £50,000, dropping to £30,000 in 2027, with points-based late-submission penalties of £200."
 schema: ''
 faqs:
 - question: What is the difference between a general accountant and a specialist accountant for dentists?
@@ -37,13 +44,13 @@ imageCredit:
 
 <p>Dentists in the UK face a set of tax and accounting rules that do not apply to most other small business owners. NHS pension scheme sections, UDA contract values that vary by region, goodwill amortisation rules that changed in 2019, and VAT exemptions that depend on the medical purpose of treatment all create complexity that a general accountant may not recognise. A specialist <a href="/services/dental-accountants">accountant for dentists</a> works with these rules day in, day out. The difference is not just about knowing the right tax codes. It is about structuring your practice finances to keep more of what you earn, while staying compliant with HMRC and NHS contract requirements.</p>
 
-<p>This article explains the specific areas where a dental-specialist accountant adds value that a general practitioner accountant cannot. We cover NHS pension planning, UDA contract accounting, goodwill tax relief on practice purchase, VAT on mixed NHS and private income, associate self-employment status, and the upcoming Making Tax Digital for Income Tax requirements. Each section includes worked examples with real figures from the 2025/26 tax year.</p>
+<p>This article explains the specific areas where a dental-specialist accountant adds value that a general practitioner accountant cannot. We cover NHS pension planning, UDA contract accounting, goodwill tax relief on practice purchase, VAT on mixed NHS and private income, associate self-employment status, and the upcoming Making Tax Digital for Income Tax requirements. Each section includes worked examples with real figures from the 2026/27 tax year.</p>
 
 <h2>NHS Pension Scheme: Three Sections and the McCloud Remedy</h2>
 
 <p>The NHS Pension Scheme is not a single scheme. Three sections exist: the 1995 section (closed to new members), the 2008 section (also closed), and the 2015 CARE section (current). Many established dentists still hold benefits in the 1995 or 2008 sections. The McCloud remedy means that members who had benefits in legacy schemes between 1 April 2015 and 31 March 2022 can choose at retirement which scheme rules apply to that remedy period. A general accountant may not know these rules exist. A specialist <a href="/services/associate-tax">accountant for dentists</a> will factor the McCloud choice into your retirement planning and annual allowance calculations.</p>
 
-<p>The annual allowance for pension contributions in 2025/26 is £60,000, but the tapered annual allowance can reduce this to as low as £10,000 for high earners (adjusted income over £260,000). For dentists with significant NHS pension growth plus private practice income, the taper often bites. A specialist accountant calculates the pension input amount correctly, which requires understanding how the 2015 CARE scheme revalues benefits each year. Getting this wrong can trigger an unexpected annual allowance tax charge of up to 45% on the excess.</p>
+<p>The annual allowance for pension contributions in 2026/27 is £60,000, but the tapered annual allowance can reduce this to as low as £10,000 for high earners (adjusted income over £260,000). For dentists with significant NHS pension growth plus private practice income, the taper often bites. A specialist accountant calculates the pension input amount correctly, which requires understanding how the 2015 CARE scheme revalues benefits each year. Getting this wrong can trigger an unexpected annual allowance tax charge of up to 45% on the excess.</p>
 
 <h2>UDA Contract Values: Not a Single National Figure</h2>
 
@@ -57,7 +64,7 @@ imageCredit:
 
 <p>Example: You buy a practice for £500,000, of which £350,000 is goodwill. At 6.5% per year, the annual tax deduction is £22,750. Over 15 years, that is £341,250 in total deductions against corporation tax. At the 19% small profits rate, that saves £64,837.50 in tax. If your accountant misses this, you lose that saving. A specialist <a href="/services/practice-valuation">accountant for dentists</a> will ensure the purchase agreement allocates the price correctly between goodwill, fixtures, and property to maximise relief.</p>
 
-<p>For sellers, the interaction with Business Asset Disposal Relief (BADR) is critical. BADR applies at 14% for 2025/26, rising to 18% from 6 April 2026. The lifetime limit is £1 million. A specialist accountant structures the sale to qualify for BADR, which requires the practice to be a trading business and the seller to hold at least 5% of shares and be an employee or officer for two years before disposal. General accountants often miss the trading status test for mixed NHS-private practices.</p>
+<p>For sellers, the interaction with Business Asset Disposal Relief (BADR) is critical. BADR applies at 18% for 2026/27 (it was 14% up to 5 April 2026). The lifetime limit is £1 million. A specialist accountant structures the sale to qualify for BADR, which requires the practice to be a trading business and the seller to hold at least 5% of shares and be an employee or officer for two years before disposal. General accountants often miss the trading status test for mixed NHS-private practices.</p>
 
 <h2>VAT on Dental Treatment: Exempt or Standard-Rated?</h2>
 
@@ -93,11 +100,11 @@ imageCredit:
 
 <p>Dental practice valuations use EBITDA multiples that vary by NHS/private mix and region. Private practices typically command higher multiples than NHS-heavy practices. The typical range is 0.6 to 1.4 times adjusted EBITDA. Rule-of-thumb methods use 25% to 60% of fee income depending on the practice type. A general accountant may apply a generic small business multiple, which undervalues or overvalues the practice. A specialist <a href="/calculators/practice-valuation-calculator">accountant for dentists</a> will use dental-specific valuation methods and benchmark against recent sales in your region.</p>
 
-<p>For sellers, the valuation directly affects the CGT calculation. With BADR at 14% for 2025/26 and rising to 18% in 2026/27, timing the sale matters. A specialist accountant will model the tax outcome under different sale dates and structures (share sale vs asset sale) to minimise the tax bill. General accountants may not consider the BADR rate change or the interaction with the annual exempt amount of £3,000.</p>
+<p>For sellers, the valuation directly affects the CGT calculation. With BADR at 18% for 2026/27 (14% applied up to 5 April 2026), timing the sale matters. A specialist accountant will model the tax outcome under different sale dates and structures (share sale vs asset sale) to minimise the tax bill. General accountants may not consider the BADR rate change or the interaction with the annual exempt amount of £3,000.</p>
 
 <h2>Profit Extraction: Dividend Tax vs Salary</h2>
 
-<p>For practice owners operating through a limited company, the choice between salary and dividends affects both tax and NI. In 2025/26, the dividend allowance is £500. Dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). Employer NI is 15% on earnings above £5,000 per year. The Employment Allowance of £10,500 can offset employer NI for the first employee, but not for directors of a single-director company. A specialist <a href="/calculators/practice-profit-extraction-calculator">accountant for dentists</a> will model the optimal salary-dividend mix for your specific circumstances, considering your NHS pension contributions and personal allowance position.</p>
+<p>For practice owners operating through a limited company, the choice between salary and dividends affects both tax and NI. In 2026/27, the dividend allowance is £500. Dividend tax rates are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate). Employer NI is 15% on earnings above £5,000 per year. The Employment Allowance of £10,500 can offset employer NI for the first employee, but not for directors of a single-director company. A specialist <a href="/calculators/practice-profit-extraction-calculator">accountant for dentists</a> will model the optimal salary-dividend mix for your specific circumstances, considering your NHS pension contributions and personal allowance position.</p>
 
 <p>Example: A practice owner with £120,000 profit before tax. Taking a salary of £12,570 (personal allowance) avoids income tax but incurs employer NI of £1,135.50 (15% on £7,570). Taking the rest as dividends of £107,430 incurs dividend tax of £8,750 (basic rate band) plus £19,289 (higher rate band) = £28,039 total. Total tax and NI: £29,174.50. A different mix could reduce this, but the optimal depends on your pension position and other income. A specialist accountant runs these scenarios for you.</p>
 

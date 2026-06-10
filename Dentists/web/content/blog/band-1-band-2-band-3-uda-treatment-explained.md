@@ -1,126 +1,152 @@
 ---
-title: "How Do NHS Treatment Bands (Band 1, Band 2, Band 3) Affect Your UDA Income and Practice Finances?"
+title: "NHS Dental Treatment Bands Explained: Band 1, Band 2, Band 3, UDAs and Patient Charges (2026/27)"
 slug: "band-1-band-2-band-3-uda-treatment-explained"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/band-1-band-2-band-3-uda-treatment-explained"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "NHS Treatment Bands 1, 2, 3: UDA Impact for UK Dentists"
-metaDescription: "Understand how NHS treatment bands 1, 2, and 3 map to UDA values, affect associate income, and influence practice profitability. Practical examples for 2025/26."
+metaTitle: "NHS Dental Bands 1, 2, 3: UDAs and Charges 2026/27"
+metaDescription: "What each NHS dental band covers, the UDAs it earns, and the current 2026/27 patient charge. Plus the urgent band and how charges feed the contract."
 altText: "UK dentist reviewing NHS treatment band codes on a computer screen in a dental practice"
-image: ""
-h1: "How Do NHS Treatment Bands (Band 1, Band 2, Band 3) Affect Your UDA Income and Practice Finances?"
-summary: "NHS treatment bands (1, 2, and 3) determine patient charges and how UDAs are allocated to courses of treatment. The band a dentist assigns directly affects the practice's UDA delivery rate and the associate's fee-split income. This article explains the mechanics, the common pitfalls, and the financial implications for both associates and principals."
+image: "https://images.pexels.com/photos/4270379/pexels-photo-4270379.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Cedric Fauntleroy"
+  photographerUrl: "https://www.pexels.com/@cedric-fauntleroy"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-dentist-is-talking-to-her-patient-in-the-clinic-4270379/"
+h1: "NHS Dental Treatment Bands Explained: What Each Band Covers, the UDAs It Earns, and the Current Patient Charge"
+summary: "NHS dental care in England is grouped into three treatment bands plus an urgent band. Each band has a defined clinical scope, a fixed number of Units of Dental Activity (UDAs), and a set patient charge that uplifts every April. This article sets out what each band covers, the UDAs it earns, and the current 2026/27 patient charge, with the key point that patient charges count towards your contract value rather than sitting on top of it."
+keyTakeaways:
+  - "England uses three treatment bands plus urgent care, banded to the most complex item delivered, and has not adopted the Welsh Band 2 sub-banding (2a, 2b, 2c)."
+  - "A completed course earns Band 1 = 1 UDA, Band 2 = 3 UDAs, Band 3 = 12 UDAs and urgent care = 1.2 UDAs (some contracts use 1.0), fixed separately from the patient charge."
+  - "From 1 April 2026 the England patient charges are Band 1 £27.90, Band 2 £76.60, Band 3 £332.10 and urgent £27.90, up roughly 1.7% on the 2025/26 rates."
+  - "Patient charges count towards your contract value rather than sitting on top of it, so collecting more charges does not increase total NHS income for a given course."
+  - "There is no national UDA value, so each band's pound figure comes from multiplying its UDAs by your own contract's per-UDA rate, typically in the mid-twenties to mid-thirties."
 schema: ""
 faqs:
-  - question: "What is the difference between a treatment band and a UDA band?"
-    answer: "A treatment band (1, 2, or 3) determines the patient charge and the scope of care. A UDA band determines how many UDAs the practice receives for completing that course of treatment. Band 1 = 1 UDA, Band 2 = 3 UDAs, Band 3 = 12 UDAs. The two are linked but not interchangeable. The patient charge is collected by the practice; the UDA value is paid by the NHS."
-  - question: "Can a Band 3 treatment be coded as Band 2 to save UDAs?"
-    answer: "No. Coding a Band 3 treatment as Band 2 is incorrect and constitutes a false claim. The NHSBSA audits claims and can claw back UDAs plus impose penalties. If a crown, bridge, or denture is provided, the treatment must be coded as Band 3 regardless of whether the lab work was done privately or in-house. Always code to the highest band that applies."
-  - question: "How does the band mix affect my associate income?"
-    answer: "If you are paid a percentage of your NHS-generated income, the band mix directly determines your earnings. A Band 3 course generates 12 UDAs versus 1 for Band 1. If your practice's UDA value is £30, a Band 3 course generates £360 of contract income versus £30 for a Band 1. Your fee split applies to that income. Associates on a flat per-UDA rate are less affected by band mix."
-  - question: "Is urgent care (Band 4) the same as Band 1 for UDA purposes?"
-    answer: "No. Urgent care (Band 4) typically generates 1.2 UDAs per course of treatment, compared to 1.0 for Band 1. The patient charge is the same (£26.80), but the UDA allocation is higher. However, some contracts use 1.0 UDA for urgent care. Check your practice's contract schedule. Urgent care also has different rules about course completion and cannot be combined with a full course of treatment claim."
+  - question: "What are the NHS dental treatment bands in England?"
+    answer: "There are three treatment bands plus an urgent band. Band 1 covers examination, diagnosis and prevention. Band 2 covers Band 1 plus further treatment such as fillings, root canals and extractions. Band 3 covers Bands 1 and 2 plus laboratory items such as crowns, bridges and dentures. Urgent care is a separate band covering emergency relief of pain or symptoms. England keeps these three main bands and has not introduced the Band 2 sub-banding (2a, 2b, 2c) used in Wales."
+  - question: "How much does each NHS dental band cost the patient in 2026/27?"
+    answer: "From 1 April 2026 the patient charges in England are Band 1 £27.90, Band 2 £76.60 and Band 3 £332.10. Urgent care is charged at the same rate as Band 1, £27.90. These charges rose by around 1.7% from the 2025/26 figures and uplift again each April, so always check the current rate. Exempt patients pay nothing."
+  - question: "How many UDAs does each band earn?"
+    answer: "Under the General Dental Services contract in England a completed course of treatment earns Band 1 = 1 UDA, Band 2 = 3 UDAs, Band 3 = 12 UDAs, and urgent care = 1.2 UDAs (some contracts use 1.0 UDA for urgent care, so check your schedule). The UDA count is fixed by the band, separate from the patient charge."
+  - question: "Does the patient charge add to my NHS income?"
+    answer: "No. NHS dental patient charges count towards your contract value. They do not sit on top of it. The patient charge you collect is offset against the money the NHS pays for your contract, so it is not extra income. Exempt patients pay no charge, and the NHS funds that element of the contract instead. This is why your real per-UDA economics depend on your contract value, not on the patient charge."
+  - question: "Is there a national UDA value that tells me what each band is worth in pounds?"
+    answer: "No. There is no national UDA value. Each contract carries its own per-UDA value, set from a 2006 baseline and uplifted annually, typically clustering around the mid-twenties to mid-thirties of pounds per UDA. To turn a band into a pound figure you multiply its UDAs by your own contract's UDA value, not a national rate."
 ---
 
-<h2>What Are NHS Treatment Bands 1, 2, and 3?</h2>
+<h2>What are the NHS dental treatment bands?</h2>
 
-<p>NHS dental treatment in England is categorised into three bands based on the complexity and scope of care provided. These bands determine the maximum patient charge and, critically, how the practice records the activity for UDA (Unit of Dental Activity) purposes. Understanding the distinction between patient charge bands and UDA bands is essential for any dentist working with an NHS contract.</p>
+<p>NHS dental care in England is grouped into three treatment bands, with a separate band for urgent care. Each band defines the clinical scope of a course of treatment, the patient charge for that course, and the number of Units of Dental Activity (UDAs) the practice records when the course is complete. Getting the band right matters clinically, but it also drives the practice's UDA delivery and, for associates, their income.</p>
 
-<p>Band 1 covers an examination, diagnosis, and advice. It includes taking radiographs, scaling and polishing if needed, and providing a treatment plan. The patient charge for Band 1 in 2025/26 is £26.80.</p>
+<p>The band is set by the most complex item delivered in the course of treatment, not by how many items there are. A single filling and a full mouth of fillings are both Band 2. A course that includes one crown is Band 3, even if everything else in it was Band 1 or Band 2 work. You charge and record one band per completed course of treatment.</p>
 
-<p>Band 2 covers all Band 1 treatment plus any further treatment such as fillings, root canal work, and extractions. The patient charge is £73.50. Band 3 covers all Band 1 and Band 2 treatment plus laboratory-fabricated items like crowns, bridges, and dentures. The patient charge is £319.10.</p>
+<p>England keeps three main bands. It has not adopted the Band 2 sub-banding (Band 2a, 2b and 2c) introduced in Wales under that nation's separate contract reform, so if you work in England you band to 1, 2, 3 or urgent only. The figures below are for England.</p>
 
-<p>There is also a Band 4 charge for urgent care (including out-of-hours), but this is a separate category and not a treatment band in the same sense. The urgent care charge is £26.80 and covers only the relief of pain or symptoms. It does not entitle the patient to a full course of treatment.</p>
+<h2>The bands at a glance (2026/27)</h2>
 
-<h2>How Do Treatment Bands Map to UDA Values?</h2>
+<p>The table sets out, for each band, the typical clinical scope, the UDAs a completed course earns, and the current patient charge from 1 April 2026.</p>
 
-<p>This is where many associates and practice owners get confused. The patient charge band and the UDA band are not the same thing. The NHS contract allocates UDAs to courses of treatment based on the band of treatment provided, not the patient charge.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Band</th>
+      <th>Example treatments covered</th>
+      <th>UDAs per completed course</th>
+      <th>Patient charge (from 1 April 2026)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Band 1</strong></td>
+      <td>Examination, diagnosis and advice, radiographs, scale and polish if needed, preventive care such as fluoride varnish, treatment planning</td>
+      <td>1 UDA</td>
+      <td>£27.90</td>
+    </tr>
+    <tr>
+      <td><strong>Band 2</strong></td>
+      <td>All Band 1 care plus further treatment: fillings, root canal treatment, extractions, periodontal (gum) treatment</td>
+      <td>3 UDAs</td>
+      <td>£76.60</td>
+    </tr>
+    <tr>
+      <td><strong>Band 3</strong></td>
+      <td>All Band 1 and Band 2 care plus laboratory-made items: crowns, bridges, dentures</td>
+      <td>12 UDAs</td>
+      <td>£332.10</td>
+    </tr>
+    <tr>
+      <td><strong>Urgent</strong></td>
+      <td>Emergency relief of pain or symptoms only, not a full course of treatment</td>
+      <td>1.2 UDAs (some contracts use 1.0)</td>
+      <td>£27.90</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Under the General Dental Services (GDS) contract in England, each completed course of treatment (CoT) is assigned a UDA value as follows:</p>
+<p>Patient charges uplift every April, so date-check them before quoting. The figures above are the England charges from 1 April 2026. They rose by roughly 1.7% from the 2025/26 rates (Band 1 was £27.40, Band 2 £75.30, Band 3 £326.70). Always use the current year's charge, because patients and inspectors will hold you to the published rate.</p>
 
-<ul>
-<li><strong>Band 1 CoT:</strong> 1 UDA</li>
-<li><strong>Band 2 CoT:</strong> 3 UDAs</li>
-<li><strong>Band 3 CoT:</strong> 12 UDAs</li>
-<li><strong>Urgent treatment (Band 4):</strong> 1.2 UDAs (in most contracts, though some contracts use 1 UDA)</li>
-</ul>
+<h2>Band 1: examination, diagnosis and prevention</h2>
 
-<p>So a single Band 3 course of treatment generates 12 UDAs. If your practice's UDA value is £30, that single crown or denture course generates £360 of contract income. A Band 1 examination generates just £30 at the same UDA value.</p>
+<p>Band 1 covers a check-up and the routine preventive care that goes with it. That includes the clinical examination, diagnosis and advice, any radiographs the dentist judges necessary, a scale and polish where needed, application of fluoride varnish, and a written treatment plan. It is the entry point to NHS care, and for most patients the most common course they will have.</p>
 
-<p>The patient charge is collected by the practice and retained (partially or fully depending on the contract type). The UDA value is the amount the NHS pays the practice per UDA delivered. The two are separate income streams.</p>
+<p>A completed Band 1 course earns 1 UDA. The patient charge from 1 April 2026 is £27.90. Because Band 1 earns a single UDA, a practice that delivers a high proportion of Band 1 courses needs strong patient throughput to meet its annual UDA target, since each course contributes only one unit towards it.</p>
 
-<h2>Why the Band Mix Matters for Associate Income</h2>
+<h2>Band 2: routine treatment</h2>
 
-<p>For associates paid on a fee-split basis, the band mix directly determines your earnings. Most associate agreements define a percentage split of gross fees collected from private work, but for NHS work the split is usually based on UDAs delivered or a fixed sessional rate.</p>
+<p>Band 2 covers everything in Band 1 plus the bulk of routine restorative and surgical treatment that does not need laboratory work. That means fillings, root canal treatment, extractions and periodontal (gum) treatment, alongside the examination and preventive care that sit underneath every course.</p>
 
-<p>Consider two associates working in the same practice with a UDA value of £32. Associate A delivers 200 Band 1 courses (200 UDAs), 150 Band 2 courses (450 UDAs), and 50 Band 3 courses (600 UDAs). Total UDAs delivered: 1,250. Total NHS contract income generated: £40,000.</p>
+<p>A completed Band 2 course earns 3 UDAs, and the patient charge from 1 April 2026 is £76.60. Note that the patient pays the single Band 2 charge once for the whole course, no matter how many fillings or extractions it contains. One filling and ten fillings are both one Band 2 course at one charge and 3 UDAs, provided they fall within the same course of treatment.</p>
 
-<p>Associate B delivers 400 Band 1 courses (400 UDAs), 100 Band 2 courses (300 UDAs), and 20 Band 3 courses (240 UDAs). Total UDAs: 940. Total NHS contract income: £30,080.</p>
+<h2>Band 3: laboratory-made items</h2>
 
-<p>If both associates are paid a 50% fee split on their NHS-generated income, Associate A earns £20,000 and Associate B earns £15,040 from the same number of patient visits. The difference is entirely driven by the band mix of treatment provided.</p>
+<p>Band 3 is the most complex band and covers everything in Bands 1 and 2 plus any item that requires laboratory fabrication: crowns, bridges and dentures. The defining feature is the lab item. If a course includes a crown, bridge or denture, it is a Band 3 course, regardless of how the lab work was arranged.</p>
 
-<p>Associates should check their contract to see how NHS income is attributed. Some contracts pay a flat rate per UDA delivered, which removes the band-mix variable. Others pay a percentage of the practice's UDA value for each UDA you complete. Understanding this is critical for <a href="/services/associate-tax">associate tax planning</a> and income forecasting.</p>
+<p>A completed Band 3 course earns 12 UDAs, the largest single allocation, and the patient charge from 1 April 2026 is £332.10. The 12-UDA allocation reflects the clinical complexity and chair time, but Band 3 courses also carry the laboratory cost, which the practice meets out of its contract income. The headline UDA figure is high, but the net margin per UDA depends on lab bills, materials and the time the course takes. For how UDAs translate into pounds at your own contract's rate, see our guide to <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">UDA value explained for UK dentists</a>.</p>
 
-<h2>Band Mix and Practice Profitability</h2>
+<h2>The urgent band</h2>
 
-<p>For practice owners, the band mix is a key driver of profitability. A practice that delivers mostly Band 1 examinations will have a lower average UDA yield per patient than a practice that delivers a higher proportion of Band 2 and Band 3 treatments.</p>
+<p>Urgent care is a separate band, not a fourth tier of routine treatment. It covers emergency care to relieve pain or symptoms, for example a temporary dressing, an emergency extraction, or treatment of an acute infection. It does not include a full examination, a full treatment plan, or a complete course of routine care.</p>
 
-<p>However, Band 3 treatments also carry higher laboratory costs and chair time. A crown may generate 12 UDAs, but if the lab bill is £150 and the appointment takes 90 minutes, the net margin per UDA may be lower than a Band 1 examination that takes 15 minutes with zero lab costs.</p>
+<p>A course of urgent treatment typically earns 1.2 UDAs, slightly more than a Band 1 course, although some contracts use 1.0 UDA, so check your contract schedule. The patient charge is the same as Band 1, £27.90 from 1 April 2026. Importantly, urgent care and routine care are separate claims. A patient who attends in pain for urgent treatment and later returns for a full course of treatment should have two claims, one urgent and one for the routine band that follows. Folding both into a single routine claim understates activity and risks a clawback if the contract is reviewed.</p>
 
-<p>Principals should model their practice's band mix against their cost base. A practice with a high Band 3 proportion needs efficient lab management and good material cost control. A practice with a high Band 1 proportion needs high patient throughput to meet UDA targets.</p>
+<h2>Treatment bands and UDA values are not the same thing</h2>
 
-<p>If you are buying a practice, the historic band mix is a critical due diligence item. A practice that appears to have a high UDA value per contract may actually have poor profitability if the band mix is skewed toward low-margin treatments. Our <a href="/dental-guides/practice-purchase-financial-due-diligence">practice purchase due diligence guide</a> covers this in detail.</p>
+<p>This is the point that most often causes confusion. The patient charge band and the UDA allocation are linked, but they are different measures of the same course of treatment. The patient charge is what the patient pays. The UDA allocation is the activity the NHS records for that course. The band sets both, but they are not interchangeable, and the pound value of the UDAs depends on your contract, not on the patient charge.</p>
 
-<h2>Common Pitfalls with Treatment Band Coding</h2>
+<p>There is no national UDA value. Each GDS or PDS contract carries its own per-UDA value, set from a 2006 baseline and uplifted annually, with England values typically clustering in the mid-twenties to mid-thirties of pounds per UDA. To convert a band into a pound figure for your practice you multiply its UDAs by your own contract's UDA value. At a contract value of £30 per UDA, a Band 3 course is worth £360 of contract activity (12 UDAs) and a Band 1 course is worth £30 (1 UDA). At a contract value of £28, the same courses are worth £336 and £28. The band fixes the UDAs; your contract fixes the pounds.</p>
 
-<p>Incorrect coding of treatment bands is one of the most common causes of UDA clawback and contract disputes. The NHS Business Services Authority (NHSBSA) audits claims and can recover UDAs if treatments are coded to the wrong band.</p>
+<h2>Patient charges count towards the contract, not on top of it</h2>
 
-<p>Typical errors include:</p>
+<p>A frequent misunderstanding is that the patient charge is extra income earned alongside the contract payment. It is not. NHS dental patient charges count towards your contract value. They do not sit on top of it. The charge you collect from a paying patient is offset against the money the NHS pays for your contract, so collecting more patient charges does not, in itself, increase total NHS income from a given course of treatment.</p>
 
-<ul>
-<li>Coding a Band 2 treatment as Band 1 (e.g., a filling without recording the examination separately).</li>
-<li>Coding a Band 3 treatment as Band 2 (e.g., a crown coded as a filling because the lab work was done privately).</li>
-<li>Failing to complete a course of treatment before claiming the UDAs.</li>
-<li>Claiming UDAs for treatment that was not actually provided.</li>
-</ul>
+<p>Exempt patients (for example children, and adults on qualifying benefits) pay nothing. Where a patient is exempt, the NHS funds that element of the contract instead, so the practice is not out of pocket on the charge itself, but it also does not gain extra income from a paying patient versus an exempt one for the same band of work. The practical consequence is that your real economics rest on your contract's UDA value and your band mix, not on how many patients pay the charge.</p>
 
-<p>Each of these errors can result in a clawback of UDAs at the practice's contract value. If your practice has a UDA value of £35 and you incorrectly code 50 Band 3 courses as Band 2, you lose 450 UDAs (50 x 9 UDA difference) worth £15,750.</p>
+<p>Patient charges still matter operationally. You must collect the correct charge for the band delivered, account for it accurately, and apply exemptions correctly, because charge and exemption errors are a common source of contract queries. But treat the charge as a contribution to the contract value, never as separate revenue.</p>
 
-<p>Associates should also be aware that if the practice is audited and UDAs are clawed back, the associate may be asked to repay fee-split income already received. This risk should be addressed in the associate agreement.</p>
+<h2>Why the band mix drives practice economics</h2>
 
-<h2>Band 4 Urgent Treatment and UDAs</h2>
+<p>Because each band earns a fixed number of UDAs, the mix of bands a practice delivers determines how quickly it meets its annual UDA target and how its income compares to its cost base. A practice weighted towards Band 1 examinations meets its target through volume, with low per-course UDAs but also low per-course cost. A practice weighted towards Band 3 meets its target faster on UDAs per course, but carries higher lab and chair-time costs against those UDAs.</p>
 
-<p>Band 4 urgent treatment is a separate category. It covers emergency care to relieve pain or symptoms. It does not include a full examination or treatment plan. The patient charge is £26.80 (same as Band 1), but the UDA allocation is typically 1.2 UDAs per course of treatment.</p>
+<p>For associates paid on a UDA or fee-split basis, the band mix feeds directly into income, because the same number of appointments can produce very different UDA totals depending on the complexity delivered. For principals, the band mix is a core profitability lever and a key due-diligence point when buying a practice, because a high headline contract value can mask thin margins if the mix is skewed towards low-margin work. Modelling band mix against your cost base, and tracking UDA delivery against target through the year, is how you avoid a year-end surprise. For how under-delivery is reconciled and recovered, see our guide to <a href="/blog/nhs-contracts/nhs-dental-contract-clawback-explained">NHS dental contract clawback explained</a>.</p>
 
-<p>Some contracts use 1 UDA for urgent care. Check your practice's contract schedule. The difference may seem small, but if your practice delivers 500 urgent courses per year, the difference between 1.0 and 1.2 UDAs per course is 100 UDAs worth £3,000 at a £30 UDA value.</p>
+<h2>Banding accuracy and clawback risk</h2>
 
-<p>Urgent care is also subject to different rules about course completion. A patient who attends for urgent care and then returns for a full course of treatment should have two separate claims: one for the urgent care (Band 4) and one for the full course (Band 1, 2, or 3). Coding both as a single Band 1 course is incorrect and risks clawback.</p>
+<p>Banding to the wrong tier is a common cause of contract disputes and recovery. The rule is to band to the most complex item in the course of treatment. A course containing a crown, bridge or denture is Band 3, even if the lab work is arranged privately or in-house. Coding such a course as Band 2 understates both the patient charge and the activity, and is treated as an incorrect claim. Equally, a course of fillings recorded as Band 1, or urgent and routine care merged into one claim, can trigger recovery on review.</p>
 
-<h2>Tax Implications of Treatment Band Income</h2>
+<p>Accurate banding protects the patient charge you collect, the UDAs you record, and your defensibility if the contract is reviewed. Invest in clear banding rules for your clinical and reception teams, and reconcile what you band against what you deliver. The cost of a banding error is rarely a single course; it is the pattern across a year multiplied by your contract value.</p>
 
-<p>The income generated from UDAs, whether through a practice or as an associate, is subject to income tax and National Insurance in the usual way. There is no special tax treatment for NHS income versus private income.</p>
+<h2>Tax treatment of band income</h2>
 
-<p>For associates, the key tax consideration is whether you are treated as self-employed or employed by HMRC. The band mix of your treatment does not change this status, but the way you are paid (fee split versus sessional rate) can be a factor in the employment status test.</p>
+<p>Income from NHS courses of treatment, whether earned as a practice or as an associate, is taxed in the normal way. There is no special tax band for NHS work versus private work, and the treatment band you assign does not change the income-tax or National Insurance position. The supply of NHS dental care is exempt from VAT, so patient charges and contract income do not carry VAT, although a mixed practice with cosmetic-only work has separate VAT considerations on the private side.</p>
 
-<p>For practice owners, the UDA income is part of the practice's trading profit. The band mix affects profitability, which in turn affects the practice's valuation. A practice with a high proportion of Band 3 treatments may have higher goodwill value if the profit margin is good, but lower value if the lab costs erode margins.</p>
-
-<p>If you are extracting profits from a limited company practice, the band mix affects the distributable profit. Our <a href="/dental-guides/practice-profit-extraction-partnership-vs-ltd">practice profit extraction guide</a> explains how to structure drawings and dividends efficiently.</p>
-
-<h2>Practical Steps for Associates and Principals</h2>
-
-<p>For associates, ask your practice for a breakdown of your UDA delivery by band. This will help you understand your income drivers and identify whether you are being paid fairly for complex treatments. If your contract pays a flat rate per UDA, the band mix is less relevant to your income. If you are on a percentage fee split, the band mix is everything.</p>
-
-<p>For principals, review your practice's band mix quarterly. Compare it to previous years and to local averages. A shift toward more Band 1 treatments may indicate that patients are declining complex care, or that your clinicians are referring out complex cases. Either way, it affects your bottom line.</p>
-
-<p>If you are planning to sell your practice, the band mix will be a key factor in the valuation. A practice with a stable, profitable band mix will command a higher multiple than one with erratic or declining complexity. Our <a href="/services/practice-valuation">practice valuation service</a> can help you understand how your band mix affects your sale price.</p>
-
-<p>Finally, ensure your coding is accurate. Invest in training for your clinicians and reception staff. A single coding error can cost thousands in clawback. The NHSBSA audit process is rigorous, and ignorance of the rules is not a defence.</p>
+<p>What the band mix does affect is the size and shape of the profit you are taxed on. A profitable, stable band mix supports a higher trading profit and, on sale, a stronger valuation. So while banding is a clinical and contractual decision, its financial consequences flow through to your tax position and your eventual exit.</p>
 
 <h2>Summary</h2>
 
-<p>NHS treatment bands 1, 2, and 3 are not just about patient charges. They determine how UDAs are allocated, which directly affects associate income and practice profitability. Understanding the mapping between treatment bands and UDAs, and managing your band mix strategically, is essential for financial success under an NHS contract.</p>
+<p>NHS dental treatment bands are more than patient-charge tiers. Each band fixes a clinical scope, a UDA allocation (Band 1 = 1 UDA, Band 2 = 3 UDAs, Band 3 = 12 UDAs, urgent = 1.2 UDAs) and a patient charge that uplifts every April. From 1 April 2026 the England charges are Band 1 £27.90, Band 2 £76.60, Band 3 £332.10 and urgent £27.90. Crucially, those charges count towards your contract value rather than adding to it, and the pound value of each band's UDAs depends on your own contract, not a national rate. Band accurately, track delivery against target, and model your band mix against your costs, because the mix is what really drives your NHS economics.</p>
 
-<p>If you are unsure how your band mix affects your tax position or practice valuation, speak to a dental-specialist accountant. The rules are specific to NHS dentistry, and generalist advice may miss important nuances.</p>
-
-<p>For a deeper dive into NHS contract mechanics, see our <a href="/dental-guides/nhs-contract-essentials-for-dentists">NHS contract essentials guide</a>. For help calculating your UDA value and band mix impact, try our <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a>.</p>
+<p>If you are unsure how your band mix affects your contract delivery, your profit or your practice valuation, speak to a dental-specialist accountant, because the rules are specific to NHS dentistry and generalist advice can miss the detail that matters.</p>

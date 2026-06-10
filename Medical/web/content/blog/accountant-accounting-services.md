@@ -5,141 +5,107 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-accounting-se
 date: "2026-04-01"
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
-metaTitle: "Accounting Services for Doctors | Medical Accountants UK"
-metaDescription: "UK doctors need accountants who understand NHS pensions, partnership tax, and IR35. How specialist medical accounting differs from high-street firms."
-altText: "Professional accountant working with medical client on tax planning and NHS pension calculations"
+metaTitle: "Medical Accounting Services for Doctors UK | Overview"
+metaDescription: "What specialist medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, for 2026/27."
+altText: "Specialist medical accountant reviewing NHS pension and partnership tax figures with a doctor"
 image: ""
-h1: "Accountant Accounting Services for Medical Professionals"
-summary: "Medical professionals need specialist accountant accounting services to navigate complex tax rules, NHS pension regulations, and profession-specific compliance requirements."
+h1: "Medical Accounting Services for Doctors: A Complete Overview"
+summary: "An overview of the accounting services UK doctors, GPs and consultants actually need, from NHS pension annual allowance work to partnership tax, locum IR35 and private income, with the 2026/27 figures that matter and links to the right specialist guide for your situation."
 schema: ""
 faqs:
-  - question: "What makes accountant accounting services different for medical professionals?"
-    answer: "Medical professionals need specialist accountant accounting services because they face unique challenges including NHS pension annual allowance calculations, complex income structures from multiple sources, IR35 compliance for locums, and profession-specific expenses like GMC fees and indemnity costs. Generic accountants typically lack the expertise to handle these medical-specific requirements effectively."
-  - question: "How much do professional accountant accounting services cost for doctors?"
-    answer: "Costs vary depending on complexity, but specialist accountant accounting services for medical professionals typically range from £1,500-£5,000 annually for employed doctors, and £3,000-£8,000+ for GP partners. The investment often pays for itself through tax savings, compliance assurance, and time saved on administrative tasks."
-  - question: "Do I need specialist accountant accounting services if I'm a salaried GP?"
-    answer: "Even salaried GPs can benefit from specialist accountant accounting services, particularly if you have private income, locum work, or are approaching NHS pension annual allowance limits. Specialist advice helps optimize tax efficiency across all income sources and ensures proper pension planning to avoid unexpected tax charges."
+  - question: "What do medical accounting services actually cover?"
+    answer: "Specialist medical accounting services cover the things a general accountant rarely sees: NHS Pension annual allowance and tapered allowance calculations, GP partnership accounts and profit-share tax, salaried GP and consultant private income, locum status (IR35 for a personal service company, or sole-trader self assessment), profession-specific expenses such as GMC fees and indemnity, and VAT treatment of private versus medico-legal work. The aim is to keep you compliant while planning tax across every income source you hold."
+  - question: "Do I need a specialist medical accountant if I am a salaried GP?"
+    answer: "Often yes, even on PAYE. A salaried GP with any locum sessions, private clinics, expert-witness work or media income usually needs help with self assessment and with NHS Pension annual allowance, where pension growth (not contributions paid) is measured against the £60,000 allowance for 2025/26. A specialist also checks whether you are heading towards the tapered annual allowance, which begins where threshold income exceeds £200,000 and adjusted income exceeds £260,000 (2025/26)."
+  - question: "How are GP partners, salaried GPs and locums taxed differently?"
+    answer: "A GP partner is self-employed and taxed on their profit share (not drawings); the partnership files an SA800 and the share flows to the partner's own return with Class 4 NIC at 6% on profits from £12,570 to £50,270, then 2% above (2025/26). A salaried GP is an employee taxed under PAYE. A locum is usually a sole trader filing self assessment, or sometimes works through a personal service company, in which case IR35 / off-payroll rules apply (these have not been abolished)."
+  - question: "Can a GP incorporate to save tax?"
+    answer: "Only for private work. A limited company cannot hold an NHS GMS or PMS contract, and company income and dividends are not NHS-pensionable, so any incorporation tax saving has to be weighed against the loss of NHS pension accrual. The case has also narrowed because dividend tax rises to 10.75% ordinary and 35.75% upper from 6 April 2026 (additional rate stays 39.35%), with a £500 dividend allowance. We always model the tax saving and the pension loss together."
+  - question: "What 2026/27 tax changes affect doctors most?"
+    answer: "The main ones: dividend rates rise to 10.75% / 35.75% (additional 39.35% unchanged) from 6 April 2026; HMRC mileage rises to 55p for the first 10,000 business miles (then 25p) from 6 April 2026; the main-rate capital allowances writing-down allowance falls from 18% to 14%; and Making Tax Digital for Income Tax begins from 6 April 2026 for sole-trader and landlord income over £50,000, which catches most full-time locums and unincorporated private GPs."
 ---
 
-<p>Medical professionals face unique financial challenges that require specialist <strong>accountant accounting services</strong>. From GP partnership tax rules to NHS pension annual allowance calculations, generic high street accountants often lack the expertise to handle medical-specific issues effectively.</p>
+<p>Doctors, GPs and consultants need an accountant who understands how the NHS, the NHS Pension Scheme and HMRC interact, not just one who can file a tax return. This overview sets out what specialist <strong>medical accounting services</strong> cover, how the numbers differ by role, and where to go next for the detail on your exact situation. It is general information, not advice, and the firm works only with medical clients.</p>
 
-<p>The complexity of medical income structures, professional expenses, and regulatory requirements means you need an accountant who understands both taxation and the medical profession. This guide explains what to look for in specialist <strong>accountant accounting services</strong> for medical professionals.</p>
+<p>Your income may come from several places at once: an NHS contract or salary, GP partnership profits, locum sessions, private clinics and medico-legal work. Each has its own tax rules. A general high-street accountant rarely sees NHS Pension annual allowance work, GMS contract income or the prohibition on selling NHS goodwill, which is exactly where a specialist earns their place.</p>
 
-<h2>Why Medical Professionals Need Specialist Accountant Accounting Services</h2>
+<h2>Why doctors need specialist medical accounting services</h2>
 
-<p>Medical professionals operate in a complex financial environment that differs significantly from other professions. Your income may come from multiple sources — NHS contracts, private practice, locum work, and medico-legal activities. Each has different tax implications and compliance requirements.</p>
-
-<p>Generic accountants typically struggle with medical-specific issues such as:</p>
+<p>Medical finances sit on rules that simply do not arise for most other clients. The same accountant who serves a local trade business will not, day to day, deal with:</p>
 
 <ul>
-<li>NHS pension annual allowance calculations and tapered allowance thresholds</li>
-<li><a href="/blog/gp-partnership-tax-complete-guide">GP partnership profit sharing</a> and basis period reform changes</li>
-<li>IR35 compliance for locum doctors and complex employment structures</li>
-<li>Mixed NHS and private income allocation strategies</li>
-<li>Professional expense claims (GMC, indemnity, BMA, CPD costs)</li>
+<li>NHS Pension <strong>annual allowance</strong> and <strong>tapered allowance</strong> calculations, where the measure for a defined-benefit scheme is the capitalised growth in your pension (the pension input amount), not the contributions paid in;</li>
+<li>GP <strong>partnership accounts</strong>, profit-share allocation and partner buy-in and buy-out via capital accounts;</li>
+<li><strong>IR35 / off-payroll</strong> status for a locum trading through a personal service company (the rules apply, they have not been abolished or repealed);</li>
+<li>splitting <strong>NHS and private income</strong> cleanly, including the VAT line between exempt medical care and standard-rated medico-legal or cosmetic work;</li>
+<li>profession-specific expenses: GMC retention fee, MDU / MPS / MDDUS indemnity, BMA and Royal College subscriptions, and CPD relevant to current practice.</li>
 </ul>
 
-<p>Specialist <strong>accountant accounting services</strong> for medical professionals understand these nuances and can provide tailored advice that protects your financial position while ensuring full compliance.</p>
+<p>Getting any of these wrong is expensive. An overlooked annual allowance charge, a missed Scheme Pays election or an incorporation that quietly stops your NHS pension accruing can cost far more than a year of fees.</p>
 
-<h2>Core Services for GP Partners</h2>
+<h2>Services for GP partners</h2>
 
-<p>GP partners face particularly complex accounting requirements due to partnership structures and NHS contract changes. Professional <strong>accountant accounting services</strong> should include:</p>
+<p>GP partners carry the most complex set of requirements, because they combine self-employment, an NHS contract and (often) practice premises. Core work here includes:</p>
 
-<p><strong>Partnership Accounting:</strong> Preparing partnership accounts that accurately reflect profit shares, capital contributions, and drawings. This includes managing the transition under basis period reform rules from 2024/25 onwards.</p>
+<p><strong>Partnership accounts and tax.</strong> Preparing accounts that fairly reflect profit shares, capital contributions and drawings, then filing the partnership return (SA800) with each partner's share flowing to their own return. A partner is taxed on <strong>profit share, not drawings</strong>, and pays <strong>Class 4 NIC at 6% on profits from £12,570 to £50,270, then 2% above</strong> (2025/26). Class 2 is no longer a required payment for profits at or above the small profits threshold (from 6 April 2024), so no weekly Class 2 charge applies.</p>
 
-<p><strong>Personal Tax Returns:</strong> Completing SA800 partnership supplements and personal returns, ensuring optimal tax efficiency across both NHS and private income streams.</p>
+<p><strong>NHS contract income.</strong> Practice funding comes through the <strong>Global Sum</strong> (weighted by the Carr-Hill formula), <strong>QOF</strong>, enhanced services and <strong>PCN / Network Contract DES</strong> funding (including ARRS), not through any single national per-patient figure. Our <a href="/blog/how-gms-funding-works-global-sum-carr-hill-explained">guide to how GMS funding works</a> and the <a href="/blog/qof-income-gp-practice-accounting-explained">QOF income guide</a> cover the mechanics.</p>
 
-<p><strong>NHS Pension Planning:</strong> Calculating annual allowance usage, managing tapered allowance implications for high earners (those with threshold income over £200k), and planning pension contributions to avoid tax charges.</p>
+<p><strong>NHS Pension certification.</strong> A partner is a Type 1 practitioner and completes the <strong>Annual Certificate of Pensionable Profits</strong> each year via PCSE, so the right tiered contribution is recorded against net NHS-derived profit.</p>
 
-<p>For example, a GP partner earning £120,000 with £15,000 pension growth needs careful planning if they also have private income that could trigger tapered allowance rules.</p>
+<p>For the full partner picture, including basis-period and entry-exit points, see our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> and the <a href="/blog/gp-partnership-profit-sharing-tax-planning">profit-sharing tax planning guide</a>.</p>
 
-<h2>Services for Salaried GPs and Consultants</h2>
+<h2>Services for salaried GPs and consultants</h2>
 
-<p>While employed doctors have simpler structures than partners, they still benefit from specialist <strong>accountant accounting services</strong>:</p>
+<p>Employed doctors are on PAYE for their main role, but rarely have a simple tax position once private work appears. Typical work:</p>
 
-<p><strong>Private Income Planning:</strong> Managing tax on private practice income, locum work, and other professional activities alongside salaried employment.</p>
+<p><strong>Self assessment across income sources.</strong> Bringing together PAYE income with private practice, locum sessions and medico-legal fees, so nothing is missed and reliefs are claimed correctly.</p>
 
-<p><strong>Pension Optimization:</strong> Maximizing pension contributions within annual allowance limits, particularly important for consultants with high earnings who may face tapered allowance restrictions.</p>
+<p><strong>NHS Pension annual allowance.</strong> Monitoring pension growth against the <strong>£60,000</strong> annual allowance (2025/26) and watching for the <strong>tapered allowance</strong>, which bites where <strong>threshold income exceeds £200,000 and adjusted income exceeds £260,000</strong>, reducing the allowance by £1 for every £2 over £260,000 down to a £10,000 floor. Consultants and high-earning GPs are most exposed. Where a charge arises, a <strong>Scheme Pays</strong> election can settle it; see our <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays deadlines guide</a> and the <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance guide</a>.</p>
 
-<p><strong>Incorporation Advice:</strong> Evaluating whether incorporating private practice activities could reduce tax liabilities, taking into account IR35 rules and professional considerations.</p>
+<p>A salaried GP weighing up the partnership route can compare the two positions in our <a href="/blog/gp-partner-vs-salaried-gp-tax-comparison">GP partner versus salaried GP tax comparison</a>.</p>
 
-<p>A consultant earning £180,000 from the NHS plus £40,000 private income needs different strategies compared to a salaried GP with occasional locum work.</p>
+<h2>Services for locum doctors</h2>
 
-<h2>Locum Doctor Services</h2>
+<p>Locums need clarity on <strong>status</strong> before anything else, because it drives how their income is taxed:</p>
 
-<p>Locum doctors face unique challenges around employment status and tax compliance. Specialist <strong>accountant accounting services</strong> must address:</p>
+<p><strong>Sole trader or personal service company.</strong> A sole-trader locum files self assessment (SA103) and has no intermediary, so IR35 does not apply; status is judged on the employed-versus-self-employed factors. A locum working through a <strong>personal service company</strong> is inside the off-payroll framework: for NHS Trust work the Trust (or the agency as fee-payer) issues the status determination, not the locum. Our <a href="/blog/locum-doctor-ir35-what-you-need-to-know">locum IR35 guide</a> and <a href="/blog/locum-doctor-limited-company-pros-and-cons">limited company pros and cons</a> set out the choice.</p>
 
-<p><strong>IR35 Compliance:</strong> Determining employment status for tax purposes and ensuring proper compliance with off-payroll working rules.</p>
+<p><strong>Expenses and mileage.</strong> Claiming legitimate costs (indemnity for private and non-clinical work, professional fees, equipment via capital allowances, and travel between sites). HMRC's approved mileage rate is <strong>55p per mile for the first 10,000 business miles in 2026/27 (it rose from 45p on 6 April 2026), then 25p</strong>; home to first site is non-deductible commuting. See the <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum expenses guide</a>.</p>
 
-<p><strong>Business Structure Advice:</strong> Whether to operate as a sole trader, through a personal service company, or via an umbrella company, each option has different tax and administrative implications.</p>
+<p><strong>NHS pension as a locum.</strong> Freelance GP locums pension their income via <strong>Locum forms A and B</strong> through the PCSE / Solo route; see <a href="/blog/nhs-pension-for-locums-form-a-form-b">pensioning locum income</a>.</p>
 
-<p><strong>Expense Claims:</strong> Maximizing legitimate business expense claims including travel, accommodation, professional fees, and equipment costs.</p>
+<h2>NHS pension and tax planning, joined up</h2>
 
-<h2>NHS Pension and Tax Planning Integration</h2>
+<p>The single most valuable thing a medical accountant does is connect your tax position to your NHS Pension. That means tracking pension input against the <strong>£60,000</strong> allowance (2025/26), spotting the taper early, advising on <strong>Scheme Pays</strong> where a charge arises (a 2025/26 charge must be elected by 31 July 2027), and timing income to reduce the impact of the tapered allowance. The lifetime allowance was <strong>abolished from 6 April 2024</strong> and replaced by the Lump Sum Allowance (£268,275) and the Lump Sum and Death Benefit Allowance (£1,073,100), so planning now centres on the annual allowance and lump-sum limits rather than a lifetime cap. The 2023 increase in the standard annual allowance from £40,000 to £60,000 is the historical change behind today's figures.</p>
 
-<p>One of the most valuable aspects of specialist <strong>accountant accounting services</strong> is integrated NHS pension and tax planning. This involves:</p>
+<h2>Incorporation and private work</h2>
 
-<p><strong>Annual Allowance Management:</strong> Monitoring pension growth against the £60,000 standard annual allowance (or reduced allowance for high earners under tapered allowance rules).</p>
+<p>Doctors regularly ask whether incorporating saves tax. The honest answer for medical clients is "only for private work, and only sometimes". A limited company <strong>cannot hold an NHS GMS or PMS contract</strong>, and company income and dividends are <strong>not NHS-pensionable</strong>, so any tax saving has to be set against lost pension accrual. The case has narrowed further because dividend tax rises from <strong>8.75% / 33.75% (2025/26) to 10.75% / 35.75% from 6 April 2026</strong> (additional rate stays 39.35%, with a £500 allowance). The real drivers are usually managing the annual-allowance taper, retained earnings and family planning, not a headline tax cut. We model the saving and the pension loss together; see our <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP limited company guide</a> and the <a href="/blog/medical-practice-incorporation-step-by-step">incorporation step-by-step guide</a>.</p>
 
-<p><strong>Scheme Pays Elections:</strong> Advising on when to use NHS scheme pays to settle annual allowance tax charges, and the long-term implications of this choice.</p>
+<h2>VAT, capital allowances and goodwill: the medical specifics</h2>
 
-<p><strong>Income Smoothing:</strong> Planning income timing to minimize tapered annual allowance impact, particularly relevant for those with variable private income.</p>
+<p><strong>VAT.</strong> Medical care by a registered practitioner is exempt where the principal purpose is the protection, maintenance or restoration of health. Cosmetic-only work and medico-legal or expert-witness reports can be standard-rated. The registration threshold is <strong>£90,000</strong> of non-exempt turnover (deregistration £88,000), counting taxable supplies only. See our <a href="/blog/gp-vat-registration">GP VAT registration guide</a> and the <a href="/blog/private-practice-tax-nhs-and-private-income">private income guide</a>.</p>
 
-<p>For detailed NHS pension planning, consider our specialist <a href="/nhs-pension">NHS pension services</a> which complement our core accounting offering.</p>
+<p><strong>Capital allowances.</strong> The Annual Investment Allowance is £1,000,000 (100% relief on qualifying plant and machinery). The main-rate writing-down allowance falls from <strong>18% to 14% from 1 April 2026 (corporation tax) / 6 April 2026 (income tax)</strong>, with the special-rate pool unchanged at 6%; a new 40% first-year allowance applies to new, unused main-rate plant from 1 January 2026.</p>
 
-<h2>Compliance and Professional Requirements</h2>
+<p><strong>Goodwill.</strong> A crucial point that catches general accountants out: <strong>NHS GP goodwill cannot be sold</strong> (prohibited since 1 April 2004, currently under SI 2019/251), so the dental-style "sell your goodwill and claim relief" approach does not apply to an NHS practice. A GP transaction is about tangible assets, premises and capital accounts, plus any private goodwill. Business Asset Disposal Relief applies only to a private-practice disposal and runs at <strong>18% for a disposal on or after 6 April 2026</strong> (it was 14% from 6 April 2025 to 5 April 2026, and 10% before that). The CGT annual exempt amount is <strong>£3,000</strong> (2025/26). See <a href="/blog/can-gp-practice-goodwill-be-sold-nhs-rules">whether GP goodwill can be sold</a> and <a href="/blog/selling-private-medical-practice-cgt-badr">selling a private medical practice</a>.</p>
 
-<p>Medical professionals must maintain various registrations and meet ongoing compliance obligations. Quality <strong>accountant accounting services</strong> help ensure:</p>
+<h2>Compliance, deadlines and Making Tax Digital</h2>
 
-<p><strong>Professional Expense Optimization:</strong> Properly claiming GMC registration fees, professional indemnity costs (MDU/MPS), BMA membership, and CPD expenses.</p>
+<p>Specialist services keep all of your obligations on track: self assessment and partnership filing deadlines, payments on account, and correct expense claims for GMC fees, indemnity, BMA and Royal College subscriptions and CPD. From <strong>6 April 2026, Making Tax Digital for Income Tax</strong> begins for sole-trader and landlord income over <strong>£50,000</strong> (then £30,000 from April 2027 and £20,000 from April 2028). That catches most full-time locums and unincorporated private GPs. Limited companies are out of MTD for Income Tax, and general partnerships are deferred with no confirmed date. See our <a href="/blog/locum-doctor-self-assessment-filing-guide">self assessment filing guide</a> and <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a>.</p>
 
-<p><strong>Record Keeping:</strong> Maintaining appropriate records for both tax compliance and professional regulatory requirements.</p>
+<h2>Choosing the right provider</h2>
 
-<p><strong>Deadline Management:</strong> Meeting all tax filing deadlines, partnership return requirements, and other compliance obligations.</p>
+<p>When you compare <strong>medical accounting services</strong>, look for genuine medical specialisation (real experience with GP partnerships, NHS Pension annual allowance work and locum status), qualified staff, a service range that reaches from compliance to planning, and a proactive approach that flags changes such as the 2026/27 dividend and mileage updates before they cost you. To see how we work, visit our <a href="/services">services page</a> or try our <a href="/calculators">tax calculators</a>.</p>
 
-<h2>Technology and Efficiency</h2>
-
-<p>Modern <strong>accountant accounting services</strong> should leverage technology to improve efficiency and accuracy:</p>
+<h2>Related reading</h2>
 
 <ul>
-<li>Cloud-based accounting software for real-time financial monitoring</li>
-<li>Automated expense categorization and receipt management</li>
-<li>Integration with practice management systems where applicable</li>
-<li>Online portals for secure document sharing and communication</li>
+<li><a href="/blog/gp-accountant-services-complete-guide">GP accountant services: complete guide</a></li>
+<li><a href="/blog/gp-accountant">GP accountant hub</a></li>
+<li><a href="/blog/gp-tax-advice">GP tax advice: essential tax planning</a></li>
+<li><a href="/blog/private-practice-tax-nhs-and-private-income">Tax on NHS and private income</a></li>
 </ul>
 
-<p>This technology focus reduces administrative burden while improving accuracy and compliance.</p>
-
-<h2>Choosing the Right Service Provider</h2>
-
-<p>When selecting <strong>accountant accounting services</strong>, medical professionals should look for:</p>
-
-<p><strong>Medical Specialization:</strong> Proven experience working with doctors, understanding of medical career structures, and knowledge of profession-specific tax rules.</p>
-
-<p><strong>Qualified Staff:</strong> Chartered or certified accountants with relevant medical sector experience and ongoing professional development.</p>
-
-<p><strong>Comprehensive Service Range:</strong> Ability to handle everything from basic compliance to complex tax planning and business advisory services.</p>
-
-<p><strong>Proactive Approach:</strong> Regular communication about tax changes, opportunities for tax savings, and strategic planning advice.</p>
-
-<p>To learn more about our comprehensive approach, visit our <a href="/services">services page</a> or use our <a href="/calculators">tax calculators</a> to understand potential planning opportunities.</p>
-
-<h2>Cost Considerations and Value</h2>
-
-<p>Professional <strong>accountant accounting services</strong> represent an investment rather than just a cost. The value comes from:</p>
-
-<ul>
-<li>Tax savings that often exceed professional fees</li>
-<li>Time saved on administrative tasks</li>
-<li>Peace of mind from proper compliance</li>
-<li>Strategic advice that supports career and financial planning</li>
-</ul>
-
-<p>For busy medical professionals, the combination of expertise and time savings makes specialist services a worthwhile investment.</p>
-
-<h2>Related Reading</h2>
-
-- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
-- <a href="/blog/gp-tax-advice">GP Tax Advice: Essential Tax Planning</a>
-
-<p>The right <strong>accountant accounting services</strong> provider becomes a long-term partner in your financial success, adapting their advice as your career progresses and tax rules evolve.</p>
+<p>The right <strong>medical accounting services</strong> provider becomes a long-term partner, adapting their advice as your career moves from salaried post to partnership, private practice or retirement, and as the tax rules change around you.</p>

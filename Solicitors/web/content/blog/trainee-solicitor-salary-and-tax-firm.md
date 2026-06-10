@@ -11,6 +11,12 @@ altText: "UK law firm office with a trainee solicitor and supervising partner re
 image: ""
 h1: "How Is a Trainee Solicitor Salary Taxed Under PAYE and What Exemptions Apply?"
 summary: "Trainee solicitors on a training contract are employees for tax purposes, so their salary is processed through PAYE. This article explains the tax treatment, employer NI costs, and the National Minimum Wage exemption that applies to qualifying trainees. It also covers common pitfalls firms face when setting trainee pay."
+keyTakeaways:
+  - "A trainee solicitor on a training contract is an employee, so their salary goes through PAYE; treating them as self-employed risks HMRC reclassification."
+  - "Employer Class 1 NI for 2025/26 is 15% on earnings above £5,000, adding around £3,750 to the cost of a £30,000 trainee."
+  - "The NMW exemption can apply for the first 12 months of a qualifying training contract, but the firm must document the contract and course enrolment."
+  - "Most trainees use tax code 1257L, giving the full £12,570 personal allowance spread across the tax year."
+  - "Trainee salary, employer NI, and pension contributions are all deductible against the firm's taxable profits."
 schema: ""
 faqs:
   - question: "Can a trainee solicitor be paid less than the National Minimum Wage?"

@@ -1,0 +1,20 @@
+wave: 1
+buckets:
+  A:
+    label: "Bucket A — Practice sale and exit tax (HP §4)"
+    picks:
+      - { id: A1, slug: "selling-dental-practice-badr-rate-rise-2026-timing", label: "Selling a dental practice around the 6 April 2026 BADR rise (14% to 18%): timing the disposal" }
+      - { id: A2, slug: "dental-practice-sale-goodwill-equipment-price-apportionment", label: "Apportioning the sale price between goodwill and equipment: the tax that turns on it" }
+      - { id: A3, slug: "dental-practice-sale-earn-out-deferred-consideration-cgt", label: "Earn-outs and deferred consideration on a dental practice sale: CGT treatment" }
+  B:
+    label: "Bucket B — Incorporation decision post-FA-2026 (HP §5, §2.C)"
+    picks:
+      - { id: B1, slug: "dental-incorporation-still-worth-it-2026-dividend-rise", label: "Is incorporating a dental practice still worth it after the 2026/27 dividend rate rise?" }
+      - { id: B2, slug: "dental-company-salary-dividend-split-2026-27", label: "The optimal salary and dividend split for a dental limited company in 2026/27" }
+      - { id: B3, slug: "nhs-pension-incorporation-trap-dentists-lost-accrual", label: "The incorporation pension trap: why dividends are not pensionable for dentists" }
+  C:
+    label: "Bucket C — Profit extraction mechanics for owners (HP §5)"
+    picks:
+      - { id: C1, slug: "employing-spouse-dental-practice-market-rate-tax", label: "Employing your spouse in the dental practice: the market-rate rule and the tax saving" }
+      - { id: C2, slug: "directors-loan-account-dental-company-overdrawn-tax", label: "The director's loan account in a dental company: overdrawn-account tax traps (s455)" }
+      - { id: C3, slug: "employer-pension-contributions-dental-company-profit-extraction", label: "Employer pension contributions as a profit-extraction route for dental company owners" }

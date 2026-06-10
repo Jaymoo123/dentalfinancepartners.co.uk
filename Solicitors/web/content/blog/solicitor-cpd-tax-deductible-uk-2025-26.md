@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing CPD course options on a laptop in a law firm of
 image: ""
 h1: "Can a Solicitor Claim CPD Costs as a Tax Deductible Expense in 2025/26?"
 summary: "Solicitors can typically claim CPD costs as a tax deductible expense if the training maintains or improves existing knowledge and skills relevant to their current practice. The rules differ for employed solicitors, partners, and locums. We explain the HMRC position and common pitfalls."
+keyTakeaways:
+  - "Most solicitor CPD is deductible where it maintains or improves competence in your current role, but not where it starts a new trade or profession."
+  - "Employed solicitors face the stricter wholly, exclusively and necessarily test in s.336 ITEPA 2003, claimed under employment expenses if not reimbursed."
+  - "Equity and fixed-share partners deduct CPD under the more generous wholly and exclusively trade test in s.34 ITTOIA 2005."
+  - "The SRA practising certificate fee is also deductible as a regulatory expense, treated the same way as CPD costs."
+  - "Keep receipts and a relevance note, and retain records for at least 22 months after the tax year, so until at least February 2028 for 2025/26."
 schema: ""
 faqs:
   - question: "Can I claim CPD costs if my employer pays for them?"

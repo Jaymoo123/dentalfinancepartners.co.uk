@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing retirement tax planning documents with a legal-
 image: ""
 h1: "How Should a Solicitor Plan Their Tax Position When Retiring from an LLP?"
 summary: "Retiring from a law firm LLP triggers several tax events: final profit share, goodwill disposal, and any deferred consideration. This guide explains how solicitors can structure their exit to minimise CGT and income tax, covering BADR, earn-outs, and the timing of retirement."
+keyTakeaways:
+  - "Business Asset Disposal Relief charges CGT on goodwill at 14% in 2025/26, rising to 18% from 6 April 2026, on the first £1 million of lifetime gains."
+  - "BADR requires at least two years as an LLP member and that the goodwill is sold as a capital sum, not linked to future profits."
+  - "Profit-linked earn-outs are taxed as income at up to 45% plus NIC, so fix a capital price with instalments instead."
+  - "Time retirement to the start of a tax year so the final profit share and goodwill receipt fall in different years and avoid the £125,140 additional-rate trap."
+  - "Capital account loan interest relief under ITA 2007 s.398 stops on retirement, so repay or restructure the loan before you exit."
 schema: ""
 faqs:
   - question: "Can a solicitor claim BADR on goodwill when retiring from an LLP?"

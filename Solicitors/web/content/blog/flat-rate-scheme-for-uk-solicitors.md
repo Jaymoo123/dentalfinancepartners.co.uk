@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing VAT Flat Rate Scheme paperwork at a modern law 
 image: ""
 h1: "Is the Flat Rate Scheme Right for Your Law Firm? A VAT Guide for UK Solicitors"
 summary: "The Flat Rate Scheme (FRS) can simplify VAT for law firms, but it is not always the best choice. This guide explains how FRS works for solicitors, the low cost trader test, and when standard VAT accounting may save you more money."
+keyTakeaways:
+  - "The standard FRS flat rate for legal services is 14.5% of gross VAT-inclusive turnover, dropping to 12% for a low cost trader."
+  - "You are a low cost trader if VAT-inclusive spend on goods is under 2% of turnover, or under £1,000 a year."
+  - "To join FRS your VAT-exclusive turnover must be £150,000 or less, and you must leave once it exceeds £230,000 including VAT."
+  - "Under FRS you cannot reclaim input VAT except on individual capital assets costing more than £2,000 including VAT."
+  - "Firms with high rent, IT, or professional costs usually pay less net VAT under standard accounting than under FRS."
 schema: ""
 faqs:
   - question: "Can a solicitor use the Flat Rate Scheme if their turnover exceeds £150,000?"

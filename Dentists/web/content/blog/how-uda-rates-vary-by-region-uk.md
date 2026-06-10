@@ -3,110 +3,128 @@ title: "How Do UDA Rates Vary by Region Across the UK?"
 slug: "how-uda-rates-vary-by-region-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/how-uda-rates-vary-by-region-uk"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "UDA Rates by Region: How NHS Dental Contract Values Differ Across the UK"
-metaDescription: "UDA rates vary significantly by region, from £15 to £45+ per unit. Understand how NHS dental contract values differ in England, Wales, Scotland, and Northern Ireland."
-altText: "Map of the UK showing regional variation in NHS UDA rates for dental practices"
-image: ""
+metaTitle: "Why UDA Values Vary by Region Across the UK"
+metaDescription: "There is no national UDA value. Learn why the per-UDA figure varies area by area in England, plus how Scotland, Wales and Northern Ireland differ."
+altText: "Map of the UK showing how NHS dental UDA values vary by contract and area"
+image: "https://images.pexels.com/photos/5355863/pexels-photo-5355863.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/dental-facility-5355863/"
 h1: "How Do UDA Rates Vary by Region Across the UK?"
-summary: "UDA rates are not fixed nationally. They vary by individual contract, region, and country within the UK. Understanding these regional differences is essential for practice valuation, associate negotiations, and financial planning."
+summary: "There is no published regional UDA rate card. Each contract's per-UDA value was set from its own 2006 baseline and uplifted annually, so the figure varies area by area in England. Scotland uses a different system entirely, and Wales and Northern Ireland run their own contract paths."
+keyTakeaways:
+  - "There is no national UDA value and no published regional rate card; each per-UDA value descends from a practice-specific 2006 baseline, uplifted annually."
+  - "Across England per-UDA values run roughly from the mid teens to over £40 per unit, with most contracts clustering in a middle band."
+  - "Scotland does not use UDAs at all, paying NHS dental work under the item-of-service Statement of Dental Remuneration (SDR)."
+  - "Wales and Northern Ireland use UDA-style activity contracts but run their own terms and reform paths separate from England."
+  - "The only reliable figure is your own contract value divided by your contracted UDA target, so any quoted regional average should be treated with caution."
 schema: ""
 faqs:
-  - question: "What is the average UDA rate in England?"
-    answer: "The average UDA rate in England is approximately £25 to £35 per unit, but this varies significantly by region. London and the South East typically see rates of £30 to £45, while the North of England often ranges from £18 to £30. Individual contracts can fall outside these ranges depending on historical values and local commissioning decisions."
-  - question: "Do UDA rates in Wales differ from England?"
-    answer: "Yes, UDA rates in Wales are generally lower than in England, typically ranging from £18 to £28 per UDA. The Welsh Government has also introduced additional quality requirements and is pursuing a reform programme that may eventually replace UDAs with a capitation-based model. Associates in Wales should factor in the lower UDA rate when negotiating fee splits."
-  - question: "How do UDA rates in Northern Ireland compare to the rest of the UK?"
-    answer: "UDA rates in Northern Ireland are typically the lowest in the UK, ranging from £16 to £25 per UDA. The Health and Social Care Board sets these rates based on available commissioning budgets. Many practices in Northern Ireland supplement NHS income with private work to offset the lower UDA values. A contract reform pilot is testing alternative payment models."
-  - question: "Does Scotland use UDAs for NHS dental payments?"
-    answer: "No, Scotland does not use UDAs. The Scottish Government operates the Statement of Dental Remuneration (SDR), which pays item-of-service fees for each treatment provided. This means Scottish NHS dentists are paid per filling, extraction, or scale and polish, rather than per course of treatment. The SDR system is currently under review with potential reforms on the horizon."
+  - question: "Is there a national UDA value or a regional rate card?"
+    answer: "No. There is no national UDA value and no published regional tariff that sets a UDA figure by area. Each contract's per-UDA value was set individually from its own 2006 baseline (the practice's historic test-year fees divided by its contracted UDAs) and uplifted annually since. That is why two practices a few miles apart can hold very different per-UDA values, and why the figure appears to vary by region even though no regional rate card exists."
+  - question: "What is the broad range of UDA values in England?"
+    answer: "Across England the per-UDA value runs roughly from the mid teens to over forty pounds, with most contracts clustering in a middle band. We do not quote area-specific figures because there is no official regional tariff to quote. The only reliable figure is the one on your own contract, found by dividing your annual contract value by your contracted UDA target."
+  - question: "Does Scotland use UDAs?"
+    answer: "No. Scotland does not use UDAs at all. NHS dental work in Scotland is paid under the item-of-service Statement of Dental Remuneration (SDR), which pays a defined fee for each treatment item rather than a payment per Unit of Dental Activity. Because the mechanism is completely different, UDA comparisons do not carry across the border. See our guide to the Scottish SDR for how that system works."
+  - question: "How do Wales and Northern Ireland fit in?"
+    answer: "Wales and Northern Ireland both use UDA-style activity contracts but run their own contract terms and reform programmes separate from England, so the rules, requirements and uplift histories differ. Wales in particular has been moving along its own reform path. As in England, the per-contract value rests on a historic baseline rather than a published regional rate, so check the value stated on the specific contract."
 ---
 
-<h2>What Is a UDA and Why Do Rates Vary?</h2>
+<p>It is one of the most common questions we hear from practice owners and associates: what is the UDA rate in my area, and how does it compare with the rest of the country? The honest answer surprises people. There is no national UDA value, and there is no official regional rate card that sets a UDA figure by area. The variation you see is real, but it is a product of history rather than a published tariff. This guide explains why the per-UDA value differs across the UK, what the broad England picture looks like, and how the four nations diverge.</p>
 
-<p>A UDA (Unit of Dental Activity) is the basic measure of NHS dental treatment in England and Wales. Each course of treatment earns a set number of UDAs depending on its band (Band 1 = 1 UDA, Band 2 = 3 UDAs, Band 3 = 12 UDAs). The practice receives a fixed payment per UDA delivered, up to its contracted annual total.</p>
+<h2>Why There Is No National UDA Value</h2>
 
-<p>The critical point for any <strong>NHS dental</strong> practice owner or associate is that there is no single national UDA rate. Each contract is individually negotiated with NHS England (or the equivalent body in Wales and Northern Ireland). Scotland uses a different system entirely, the Statement of Dental Remuneration (SDR), which pays item-of-service fees rather than UDAs.</p>
+<p>A UDA, or Unit of Dental Activity, is the basic measure of NHS dental treatment in England, Wales and Northern Ireland. Each course of treatment earns a set number of units: a Band 1 course (examination, advice, scale and polish) is worth 1 UDA, a Band 2 course (fillings, extractions, root treatment) is worth 3 UDAs, a Band 3 course (crowns, dentures, bridges) is worth 12 UDAs, and an urgent course is worth 1.2 UDAs. The practice is paid a fixed amount for each UDA it delivers, up to its contracted annual target.</p>
 
-<p>UDA rates typically range from around £15 to £45 per unit, with the average in England falling between £25 and £35. The variation depends on factors including the local commissioning team's budget, the historical basis of the contract, the practice's location, and whether the contract was issued under the 2006 or the newer 2018 prototype arrangements.</p>
+<p>The figure that varies is the value attached to a single UDA, and the reason it varies sits in how the contracts were created. When the current UDA system began in 2006, each practice's per-UDA value was set from its own baseline: the practice's historic test-year NHS fees were divided by the number of UDAs it was contracted to deliver. A practice that had earned more in the reference period, or had agreed a particular UDA target, ended up with a different per-UDA value from the practice down the road. Those individual baselines were then carried forward and uplifted annually. There was never a single national price, and there was never a step where regions were given a published rate.</p>
 
-<h2>How UDA Rates Vary Within England</h2>
+<p>That is the crucial point for anyone benchmarking. Because every value descends from a practice-specific 2006 starting point, the per-UDA figure varies contract by contract and, when you look at enough contracts in one area, area by area. It does not vary because a commissioner publishes a London rate, a Midlands rate and a northern rate. The pattern is an artefact of thousands of historic baselines, not a tariff you can look up.</p>
 
-<p>England accounts for the majority of NHS dental contracts, and the <strong>regional</strong> variation here is substantial. A practice in a high-cost area such as London or the South East may command a UDA rate of £35 to £45, while a similar contract in the North West or Yorkshire might be valued at £20 to £30 per UDA.</p>
+<h2>The Broad England Picture</h2>
 
-<p>This variation is not arbitrary. It reflects historical contract values set when the UDA system was introduced in 2006, plus subsequent adjustments for inflation (or lack thereof). Many contracts have not been revalued in line with practice costs, meaning the real value of a UDA has fallen significantly since 2006. The British Dental Association estimates that NHS dental contract values have lost around 30% of their real-world purchasing power over that period.</p>
+<p>Across England, per-UDA values run from roughly the mid teens to over forty pounds per unit, with the large majority of contracts clustering in a middle band. We deliberately frame this as a wide range rather than a set of area figures, because quoting a precise number for a region would imply a rate card that does not exist. Two practices in the same town, holding contracts that began from different historic baselines, can sit at opposite ends of that range.</p>
 
-<p>For a practice owner, this means two identical practices delivering the same number of UDAs could have very different incomes depending on where they are located. A practice in central London delivering 5,000 UDAs at £40 each generates £200,000 in NHS income. A practice in the North East delivering the same 5,000 UDAs at £22 each generates only £110,000. The cost base (staff salaries, premises, materials) does not vary proportionally.</p>
+<p>What does drive the spread? Several legacy factors compound. The historic test-year fees baked into the 2006 baseline differ from practice to practice. The contracted UDA target chosen at the outset affects the resulting per-unit figure. Annual uplifts have not always kept pace with practice cost inflation, so contracts that started lower have tended to stay relatively low in real terms. Local commissioning history and any subsequent contract changes add further variation. None of this is a regional price list. It is the accumulated effect of how each contract was built and maintained.</p>
 
-<h3>UDA England: Key Regional Patterns</h3>
+<p>For owners, this means a contract with a higher per-UDA value carries a more valuable NHS income stream, which feeds directly into how a practice is valued on sale. For associates, the per-UDA value of the specific practice you join shapes the gross fee income your clinical activity can generate. In both cases the number that matters is the one on the actual contract, not a regional average that was never officially defined. To understand how that value is calculated and read off your own contract, see our guide to <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">what a UDA value is and how it affects your NHS contract</a>.</p>
 
-<p>Looking at <strong>UDA England</strong> more closely, the following broad patterns emerge:</p>
+<h2>How the Four Nations Differ</h2>
 
-<ul>
-<li><strong>London and the South East:</strong> Typically £30 to £45 per UDA. Higher premises costs and staff wages partly justify the premium, but the gap between UDA value and practice costs is still narrowing.</li>
-<li><strong>South West:</strong> £25 to £35 per UDA. Moderate variation depending on whether the practice is in a city or a rural area.</li>
-<li><strong>Midlands:</strong> £22 to £32 per UDA. Some of the tightest margins, particularly in areas with lower historical contract values.</li>
-<li><strong>North of England (Yorkshire, North West, North East):</strong> £18 to £30 per UDA. The lowest band in England, reflecting historically lower commissioning budgets.</li>
-<li><strong>East of England:</strong> £25 to £35 per UDA. Similar to the South West in range.</li>
-</ul>
+<p>The phrase "across the UK" hides a major structural divide. England, Wales and Northern Ireland all use UDA-style activity contracts, but each runs its own contract terms and reform programme. Scotland does not use UDAs at all. The table below sets out the four systems at a glance.</p>
 
-<p>These are broad averages. Individual contracts can fall outside these ranges. Some prototype contracts under the NHS dental reform programme have tested higher UDA values (up to £50 in some cases) but these remain the exception.</p>
+<table>
+<thead>
+<tr>
+<th>Nation</th>
+<th>Payment mechanism</th>
+<th>How the per-unit value is set</th>
+<th>Reform position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>England</td>
+<td>Units of Dental Activity (UDAs)</td>
+<td>Per-contract value from a 2006 baseline (historic fees divided by contracted UDAs), uplifted annually; no national or regional rate</td>
+<td>Incremental change, with the UDA mechanism continuing alongside phased reform</td>
+</tr>
+<tr>
+<td>Wales</td>
+<td>UDA-style activity contract, Welsh terms</td>
+<td>Per-contract value on a historic baseline, under Welsh contract rules and requirements</td>
+<td>On its own reform path, distinct from England</td>
+</tr>
+<tr>
+<td>Northern Ireland</td>
+<td>UDA-style activity contract, Northern Ireland terms</td>
+<td>Per-contract value on a historic baseline, under Northern Ireland arrangements</td>
+<td>Own contract and reform path, separate from England</td>
+</tr>
+<tr>
+<td>Scotland</td>
+<td>Item-of-service Statement of Dental Remuneration (SDR)</td>
+<td>Defined fee per treatment item; no UDAs and no per-UDA value at all</td>
+<td>Reviewed under Scottish arrangements, separate from the UDA nations</td>
+</tr>
+</tbody>
+</table>
 
-<h2>UDA Wales: A Different System</h2>
+<h3>England</h3>
 
-<p>Wales operates a similar UDA-based system to England, but with its own contract variations. <strong>UDA Wales</strong> rates tend to be lower on average than England, typically ranging from £18 to £28 per UDA. The Welsh Government has pursued a different reform path, including the introduction of the Dental Access Programme and a greater emphasis on capitation-based payments for children.</p>
+<p>England holds the large majority of NHS dental contracts and is the setting most people mean when they ask about UDA rates. The structure is as described above: a per-UDA value descended from each practice's 2006 baseline, uplifted annually, with no published regional figure. Reform in England has been incremental rather than wholesale, and the UDA mechanism remains the working basis of NHS dental payment. The sensible planning assumption is to price any decision on the contract as it stands today, not on assumed reform changes.</p>
 
-<p>Welsh UDA contracts often include additional quality requirements, such as the need to meet certain access targets or provide specific preventive care. This can make the effective UDA value lower when the additional administrative and clinical time is factored in. For associates working in Wales, the lower UDA rate combined with similar fee splits (typically 40-50%) means take-home pay is often below that of English counterparts.</p>
+<h3>Wales</h3>
 
-<p>Practice owners in Wales should also be aware that the Welsh Government has signalled a move away from the UDA model entirely over the longer term. The current contract reform programme, "Improving Oral Health and Dental Services in Wales," proposes a shift toward a more preventive, capitation-based model. This could fundamentally change practice valuations and associate arrangements in the coming years.</p>
+<p>Wales uses a UDA-style activity contract but operates under its own contract terms, requirements and uplift history, and it has been pursuing a reform programme separate from England. That means a Welsh contract is not directly comparable with an English one even where both express their value in UDAs, because the surrounding requirements differ. The per-contract value still rests on a historic baseline rather than a published regional rate. For how the Welsh path is developing, see our guide to <a href="/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026">NHS dental contract reform in Wales</a>.</p>
 
-<h2>UDA Northern Ireland: A Unique Position</h2>
+<h3>Northern Ireland</h3>
 
-<p><strong>UDA Northern Ireland</strong> operates under its own Health and Social Care Board (HSCB) arrangements. The UDA system in Northern Ireland is similar in structure to England and Wales, but the rates are generally lower, typically ranging from £16 to £25 per UDA. The lower rates reflect the smaller commissioning budget and the different cost structure of dental practices in the region.</p>
+<p>Northern Ireland also operates a UDA-style activity contract under its own arrangements, separate from England, with its own terms and reform direction. As elsewhere in the UDA nations, the value attached to a contract reflects a historic baseline, not a regional tariff. Anyone weighing up a Northern Ireland contract should look at the value stated on that specific contract and the local terms that govern it, rather than reading across from English figures.</p>
 
-<p>Northern Ireland also has a higher proportion of NHS-to-private mix than some English regions. Many practices in Northern Ireland operate with a significant private element to supplement the lower NHS UDA income. For associates, this can mean a lower guaranteed NHS income but greater opportunity for private fee income.</p>
+<h3>Scotland</h3>
 
-<p>The HSCB has been running a dental contract reform pilot in Northern Ireland since 2019, testing a capitation-based model similar to the Scottish SDR. If rolled out nationally, this would replace the UDA system entirely. Practice owners in Northern Ireland should factor this uncertainty into their long-term financial planning.</p>
+<p>Scotland is the outlier. It does not use UDAs at all. NHS dental work in Scotland is paid under the item-of-service Statement of Dental Remuneration, the SDR, which sets a defined fee for each treatment item delivered rather than a payment per Unit of Dental Activity. Because the entire mechanism is different, there is no Scottish UDA value to compare, and UDA benchmarking simply does not apply north of the border. If you are moving between systems or assessing a Scottish practice, read our explainer on the <a href="/blog/nhs-contracts/scotland-statement-of-dental-remuneration-explained">Scottish Statement of Dental Remuneration</a> for how the item-of-service model works in practice.</p>
 
-<h2>Scotland: No UDAs at All</h2>
+<h2>What "Varies by Region" Really Means</h2>
 
-<p>Scotland does not use UDAs. Instead, the Scottish Government operates the Statement of Dental Remuneration (SDR), which pays item-of-service fees for each treatment provided. This means Scottish NHS dentists are paid per filling, per extraction, per scale and polish, and so on, rather than per course of treatment.</p>
+<p>It is worth being precise about the language, because loose talk about regional rates leads people to chase a number that was never published. The variation is genuine, and you will see clusters when you look across enough contracts in one part of the country. But the cause is the legacy of practice-specific 2006 baselines and uneven annual uplifts, not an official decision to pay one region more than another. There is no rate card to request, no regional tariff to quote in an associate negotiation, and no published figure to put into a valuation as the "going rate" for your area.</p>
 
-<p>The SDR system generally produces higher gross fees per patient than the UDA system in England, but it also requires more detailed clinical recording and claims processing. For practice owners, the SDR model can be more profitable for high-volume, treatment-heavy practices, but less so for practices focused on prevention and low-intervention care.</p>
+<p>This matters in three practical situations. When valuing or buying a practice, the per-UDA value of that exact contract is a key input into the goodwill assessment, and it should be read off the contract rather than estimated from a regional average. When negotiating an associate split, the figure to anchor on is the practice's own per-UDA value, not a headline area number. And when planning the finances of an existing practice, the contract value divided by the contracted UDA target gives the only figure that genuinely applies to you.</p>
 
-<p>For associates in Scotland, the fee-per-item model means income is more directly linked to clinical activity. There is no fixed UDA target to hit, but there is also no guaranteed minimum income from NHS work. The Scottish system is currently under review, with proposals to move toward a capitation-based model similar to the Welsh reforms.</p>
+<h2>How to Find the Figure That Actually Applies to You</h2>
 
-<h2>Why Regional UDA Variation Matters for Your Practice</h2>
+<p>Your per-UDA value is determined by your own NHS contract. To work it out, divide your total annual contract value by your contracted UDA target. That gives the per-unit figure that descends from your practice's baseline, and it is the only one worth benchmarking against because it is the only one that is real for your contract. Treat any quoted regional average with caution: it may describe a loose cluster, but it is not an official rate and it will not match your contract.</p>
 
-<p>The <strong>regional</strong> variation in UDA rates has direct consequences for practice valuation, associate recruitment, and financial planning. A practice with a high UDA rate is worth more on the open market because its NHS income stream is more valuable. When valuing a practice, a buyer will look at the UDA rate as a key factor in determining the goodwill multiple.</p>
+<p>Because the variation is structural and legacy-driven, the figure on your contract is also unlikely to move easily. Values are largely fixed for the contract term, and meaningful change tends to come through reform rather than ad hoc revaluation. That is why most owners focus on understanding and managing the contract they hold, and on the wider mix of NHS and private work, rather than expecting the per-UDA value itself to be lifted.</p>
 
-<p>For associates, the UDA rate determines the gross fee income they can generate. An associate working in a practice with a £40 UDA rate can earn significantly more than one working in a practice with a £20 UDA rate, even if both deliver the same number of UDAs. This is why associates often gravitate toward practices in higher-UDA regions, even if the fee split is slightly lower.</p>
+<h2>Where to Take This Next</h2>
 
-<p>For practice owners, understanding your local UDA rate is essential for benchmarking your contract against similar practices. If your UDA rate is below the regional average, you may have grounds to negotiate a revaluation with your commissioner, particularly if you can demonstrate that the contract is no longer financially viable.</p>
+<p>The takeaway is straightforward. There is no national UDA value and no regional rate card. The per-UDA figure varies area by area in England because each contract was built from its own 2006 baseline and uplifted annually, while Scotland sits outside the UDA system altogether under the SDR, and Wales and Northern Ireland run their own contract and reform paths. For any financial decision, the figure that counts is the one on the specific contract in front of you.</p>
 
-<h2>How to Find Your UDA Rate and Benchmark It</h2>
-
-<p>Your UDA rate is stated in your NHS dental contract, which is issued by your local NHS England area team (or equivalent in Wales/Northern Ireland). The rate is calculated by dividing your total annual contract value by your contracted UDA target. For example, a contract worth £150,000 per year with a target of 5,000 UDAs gives a UDA rate of £30.</p>
-
-<p>To benchmark your UDA rate against similar practices, you can use the <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a> on our site. This tool allows you to input your contract value and UDA target and compare the resulting rate against regional averages. You can also speak to your local dental committee or the BDA for regional data.</p>
-
-<p>If you are considering buying a practice, the UDA rate is one of the first numbers you should check. A practice with a low UDA rate may be a poor investment unless it has significant private income or a very efficient cost structure. Our <a href="/services/practice-valuation">practice valuation service</a> includes a detailed analysis of UDA rates and contract terms as part of the due diligence process.</p>
-
-<h2>Practical Steps for Associates and Locums</h2>
-
-<p>If you are an associate or locum dentist, the UDA rate of the practice you work in directly affects your income. Before accepting a position, ask the practice owner for the UDA rate and the total contracted UDAs. This allows you to calculate your potential gross fee income and compare it to other opportunities.</p>
-
-<p>For example, an associate working 4 days per week in a practice with a £30 UDA rate and delivering 2,000 UDAs per year generates £60,000 in gross NHS fees. At a 45% fee split, that is £27,000 in associate income from NHS work alone, before private fees. The same associate working in a practice with a £20 UDA rate and delivering the same 2,000 UDAs generates only £40,000 in gross fees, or £18,000 at 45%.</p>
-
-<p>Our <a href="/calculators/associate-take-home-calculator">associate take-home calculator</a> can help you model different UDA rates and fee splits to find the best opportunity. For locums, the <a href="/services/locum-dentist-tax">locum dentist tax guidance</a> on our site covers how to handle income from multiple practices with different UDA rates.</p>
-
-<h2>What the Future Holds for UDA Rates</h2>
-
-<p>The NHS dental contract reform programme is ongoing in all four UK nations. In England, the prototype contracts tested between 2015 and 2020 have led to the development of a new "dental contract" that would replace UDAs with a capitation-based system. However, full implementation has been delayed multiple times, and the current government has not committed to a timeline.</p>
-
-<p>In Wales and Northern Ireland, similar reforms are in progress. Scotland's SDR system is also under review. The direction of travel is clear: away from activity-based UDA payments and toward capitation or blended models that reward prevention and access. This will fundamentally change how practices are valued and how associates are paid.</p>
-
-<p>For now, UDA rates remain the dominant NHS payment mechanism in England, Wales, and Northern Ireland. Understanding your local rate and how it compares regionally is essential for making informed financial decisions about your practice or career.</p>
-
-<p>If you need help interpreting your UDA contract, benchmarking your rate, or planning for contract reform, speak to a dental-specialist accountant. Our team at Dental Finance Partners works exclusively with UK dentists and understands the <strong>regional</strong> nuances of NHS contracts. <a href="/services/dental-accountants">Contact us</a> for a confidential discussion about your situation.</p>
+<p>If you are benchmarking a contract, valuing a practice, negotiating an associate split, or weighing up a move between nations, it pays to work from the real contract value rather than a notional area rate. Our team works exclusively with UK dentists and understands how these contracts behave across the four nations. <a href="/services/dental-accountants">Contact us</a> for a confidential discussion about your contract and what its UDA value means for your plans.</p>

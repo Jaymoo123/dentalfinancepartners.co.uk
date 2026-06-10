@@ -69,7 +69,7 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     description: post.metaDescription,
     image: imageUrl,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updatedDate || post.date,
     author: {
       "@type": "Person" as const,
       name: `${siteConfig.name} Editorial Team`,

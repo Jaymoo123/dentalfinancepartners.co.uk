@@ -13,6 +13,12 @@ altText: "UK solicitor reviewing business expense receipts and tax documents at 
 image: ""
 h1: "Solicitor Expenses Claims: Complete Tax Relief Guide for UK Legal Practices"
 summary: "UK solicitors can claim significant tax relief on legitimate business expenses, but the rules are complex and mistakes costly. Understanding what qualifies and proper record-keeping is essential."
+keyTakeaways:
+  - "An expense is allowable only where it is incurred wholly and exclusively for business, with mixed-use items claimed at the business proportion."
+  - "SRA fees, professional indemnity insurance, CPD, business travel and office costs are core allowable claims for solicitors."
+  - "Business mileage is claimable at 45p per mile for the first 10,000 miles and 25p thereafter for 2025/26, supported by a detailed log."
+  - "Client entertainment is not allowable, and the Annual Investment Allowance lets most practices expense up to £1 million of equipment."
+  - "Keep records for at least six years, and prepare for Making Tax Digital for Income Tax from April 2026 with digital record-keeping."
 schema: ""
 faqs:
   - question: "How should I keep records for solicitor expense claims?"
@@ -22,7 +28,7 @@ faqs:
   - question: "Can I claim my home office expenses as a solicitor?"
     answer: "Yes, if you regularly work from home. You can use HMRC's simplified rates (£6-£26 per week depending on usage) or claim actual costs proportioned by business use. For the actual costs method, you'll need detailed records showing how you calculated the business proportion of household expenses like utilities and council tax."
   - question: "Do LLP members pay different tax on professional fees than partnerships?"
-    answer: "Currently, LLP members are taxed similarly to traditional partnership members - as self-employed individuals paying income tax and Class 2/Class 4 National Insurance. However, potential changes from the 2026 Budget may introduce employer National Insurance for LLP members, significantly affecting net receipts."
+    answer: "No. An LLP is tax-transparent under ITTOIA 2005 s.863, so LLP members are taxed like traditional partnership members: as self-employed individuals paying income tax and Class 4 National Insurance on their profit share. Class 2 National Insurance liability was removed from 6 April 2024. The only route to employer National Insurance on a member is the salaried member rules (ITTOIA 2005 ss.863A to 863G), which re-classify a member as an employee for tax only where all three conditions are met: at least 80% of their reward is disguised salary, they lack significant influence over the LLP, and their capital is less than 25% of that disguised salary. Fail any one and the member stays self-employed."
   - question: "What documentation do I need to support solicitor expense claims?"
     answer: "Keep receipts, invoices, bank statements, and records showing the business purpose for each expense. For travel, maintain mileage logs with dates, destinations and purposes. With Making Tax Digital extending to Income Tax from April 2026, digital record-keeping is becoming essential for most practices."
   - question: "Can solicitors claim mileage for court visits and client meetings?"
@@ -213,7 +219,7 @@ faqs:
 
 <p>Under the accruals basis, work in progress (unbilled time and costs) is generally included in taxable income. This means you may pay tax on fees before receiving payment from clients.</p>
 
-<p>For a practice with £100,000 of unbilled time at year-end, this could result in additional tax of approximately £28,000-£45,000 depending on the marginal tax rate.</p>
+<p>A meaningful balance of unbilled time at year-end can therefore accelerate tax into the current year, even though the cash has not yet arrived. The effect depends on your marginal rate and the size of the work-in-progress balance, which is why managing lock-up (work-in-progress days plus debtor days) matters for cash flow as well as profit.</p>
 
 <h2>Compliance and Record Retention</h2>
 <p>HMRC can enquire into tax returns up to four years after submission (longer if significant errors are suspected). Keep all supporting documentation for solicitor expenses claims for at least six years.</p>
@@ -355,9 +361,9 @@ faqs:
 
 <h3>Sole Practitioners and Self-Employed Solicitors</h3>
 
-<p>As a sole practitioner, your professional fees are treated as trading income subject to income tax and Class 2 and Class 4 National Insurance contributions. You'll typically pay tax through the self-assessment system, with payments due by 31 January following the tax year end.</p>
+<p>As a sole practitioner, your professional fees are treated as trading income subject to income tax and Class 4 National Insurance contributions. Class 2 National Insurance liability was removed from 6 April 2024: a sole practitioner with profits at or above the Small Profits Threshold is now treated as having paid it and keeps state pension entitlement, so it is no longer a separate charge. You pay tax through the self-assessment system, typically with payments on account due by 31 January and 31 July.</p>
 
-<p>For example, a sole practitioner earning £80,000 in professional fees during 2024/25 would pay approximately £22,432 in income tax and National Insurance (assuming no other income or significant allowable expenses).</p>
+<p>For 2025/26, Class 4 National Insurance is charged at 6% on profits between £12,570 and £50,270, then 2% on profits above that. Income tax applies at the usual self-assessment rates after deducting your allowable expenses, so claiming every legitimate expense directly reduces both the income tax and the Class 4 charge on your profit.</p>
 
 <p>Key considerations for sole practitioners include:</p>
 <ul>
@@ -369,7 +375,7 @@ faqs:
 
 <h3>Traditional Partnership Members</h3>
 
-<p>In traditional partnerships, professional fees flow through to individual partners as trading income. Each partner is effectively self-employed for tax purposes, paying income tax and Class 2 and Class 4 National Insurance on their profit share.</p>
+<p>In traditional partnerships, professional fees flow through to individual partners as trading income. Each partner is effectively self-employed for tax purposes, paying income tax and Class 4 National Insurance on their allocated profit share (not on their drawings). Class 2 National Insurance liability was removed from 6 April 2024, so the live charge for 2025/26 is Class 4 at 6% on profits between £12,570 and £50,270, then 2% above.</p>
 
 <p>The Basis Period Reform, which took effect from 2024/25, means partnerships now align their accounting periods with the tax year (6 April to 5 April). This affects how solicitor professional fees tax is calculated and when payments are due.</p>
 
@@ -383,9 +389,9 @@ faqs:
 
 <h3>LLP Members</h3>
 
-<p>LLP members are generally treated as self-employed for tax purposes, similar to traditional partnership members. However, there's ongoing uncertainty about potential changes to National Insurance treatment for LLP members.</p>
+<p>LLP members are treated as self-employed for tax purposes, similar to traditional partnership members. Under ITTOIA 2005 s.863 an LLP is tax-transparent, so each member is taxed on their allocated profit share through self-assessment, paying income tax and Class 4 National Insurance, with the same expense deductions available against that share.</p>
 
-<p>The 2026 Budget may introduce employer National Insurance contributions for LLP members, which would significantly impact the net receipt of professional fees. This could add approximately 13.8% to the effective tax rate on professional fees above the employment allowance threshold.</p>
+<p>The one situation that brings employer National Insurance into play is the salaried member rules in ITTOIA 2005 ss.863A to 863G. A member is re-classified as an employee for tax (so PAYE and employer National Insurance apply to their reward) only where all three conditions are met: at least 80% of their reward is disguised salary (Condition A), they do not have significant influence over the affairs of the LLP (Condition B), and their capital contribution is less than 25% of that disguised salary (Condition C). Fail any one condition and the member remains self-employed. In practice this catches fixed-share and salaried members rather than full-equity partners, whose reward genuinely varies with firm profits. There is no general employer National Insurance charge on an ordinary LLP member's profit share.</p>
 
 <h2>Allowable Deductions Against Professional Fees</h2>
 <p>Legitimate business expenses can be deducted before calculating taxable profit on professional fees. Common deductions for solicitors include:</p>

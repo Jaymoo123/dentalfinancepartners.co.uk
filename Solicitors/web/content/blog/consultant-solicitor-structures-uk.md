@@ -5,31 +5,41 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/consul
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
-metaTitle: "Consultant Solicitor Structure UK | Tax & Compliance Guide"
-metaDescription: "How UK law firms use consultant solicitor structures, fee share models, and locum solicitor arrangements. Tax, IR35, and SRA compliance explained."
-altText: "Consultant solicitor meeting with law firm partners in a modern UK office discussing fee share agreement terms."
+metaTitle: "Consultant Solicitor Structures UK | Tax, IR35 & SRA Guide"
+metaDescription: "The four ways a consultant solicitor can operate in the UK: self-employed, PSC limited company, umbrella and fee share. Tax, dividend rates, NIC, IR35 and SRA compliance for 2025/26 and from 6 April 2026."
+altText: "Consultant solicitor reviewing a fee share agreement with law firm partners in a modern UK office."
 image: ""
-h1: "How Does a Consultant Solicitor Structure Work for UK Law Firms?"
-summary: "A consultant solicitor structure allows law firms to engage experienced fee-earners without a traditional partnership or employment arrangement. This guide covers the common models, including fee share, umbrella consultant, and limited company consultant, and explains the tax and regulatory implications for both the firm and the consultant."
+h1: "Consultant Solicitor Structures: How They Work and How Each Is Taxed"
+summary: "A consultant solicitor can operate in four main ways: as a self-employed sole trader, through a personal service company, through an umbrella company, or as a fee share consultant. This guide explains how each structure works, how it is taxed (including the dividend rates for 2025/26 and the increases from 6 April 2026, and the Class 4 NIC position), where IR35 and off-payroll working bite, and what the SRA requires of the firm and the consultant."
+keyTakeaways:
+  - "A consultant solicitor can operate as a sole trader, through a personal service company, through an umbrella, or on a fee share, each taxed differently."
+  - "For 2025/26 dividends are taxed at 8.75%, 33.75% and 39.35%; from 6 April 2026 the ordinary rate rises to 10.75% and the upper rate to 35.75%."
+  - "Where the engaging firm is medium or large, it determines IR35 status and issues a Status Determination Statement; if it is small, the consultant's company decides."
+  - "Under the SRA Accounts Rules a consultant cannot hold client money in their own account; it must sit in the firm's client account run by its COFA."
+  - "A sole trader pays Class 4 NIC at 6% between £12,570 and £50,270 then 2% above, with Class 2 NIC no longer payable."
 schema: ""
 faqs:
   - question: "Can a consultant solicitor hold client money in their own account?"
     answer: "No. Under the SRA Accounts Rules, only the firm's client account can hold client money. A consultant solicitor working through a limited company or as a sole trader cannot maintain a separate client account for the firm's clients. All client money must be held in the firm's designated client account, managed by the firm's COFA. The consultant must ensure that any client funds they receive are promptly paid into the firm's client account. This rule applies regardless of the consultant's fee share arrangement or legal structure."
-  - question: "What happens if HMRC decides a consultant solicitor is inside IR35?"
-    answer: "If HMRC determines that the consultant solicitor would be an employee for tax purposes, the firm becomes liable for unpaid PAYE, employee NI, and employer NI on all fees paid to the consultant's intermediary. The firm must also pay interest and potentially penalties. The consultant may face a separate enquiry into their personal tax returns. To avoid this, firms should conduct a proper status determination for each engagement and document the reasoning. If the determination is outside IR35, the firm should ensure the working practices match the contractual terms."
+  - question: "Who decides a consultant solicitor's IR35 status, and what happens if it is inside IR35?"
+    answer: "It depends on the size of the engaging firm. From 6 April 2021, where the firm is medium or large under the Companies Act 2006 size test (broadly, meeting two of: turnover over £10.2m, balance sheet over £5.1m, more than 50 employees), the firm, not the consultant's personal service company, determines status and must issue a Status Determination Statement. If the firm is small, the original IR35 rules apply and the consultant's company decides its own status. Where the engagement is inside IR35 and the firm is medium or large, the fee-payer operates PAYE and NIC on the fees before paying the company. If a determination is later found to be wrong, the party that should have deducted faces the unpaid PAYE, employee NIC and employer NIC, plus interest and possible penalties. A sole-trader consultant is outside IR35 entirely (it applies only to intermediaries), but the firm must still assess whether the engagement is genuine self-employment."
   - question: "Is a consultant solicitor the same as a locum solicitor?"
     answer: "Not exactly. A locum solicitor typically works on a short-term, temporary basis to cover absences or busy periods. A consultant solicitor often works on a longer-term, ongoing basis and may have a more established relationship with the firm. Both can operate through a limited company or umbrella arrangement. The tax and regulatory principles are similar, but locum engagements are more likely to be inside IR35 because the firm typically exercises greater control over the locum's work. Our <a href=\"/for-locum-solicitors\">locum solicitor guide</a> covers the specific issues for short-term engagements."
+  - question: "How is a consultant solicitor's limited company income taxed in 2025/26 and from 6 April 2026?"
+    answer: "A consultant trading through a limited company pays corporation tax on company profits: 19% where profits are no more than £50,000, 25% where they exceed £250,000, with marginal relief tapering between the two thresholds. The consultant then extracts income as a mix of salary and dividends. For 2025/26 the dividend rates are 8.75% in the basic-rate band, 33.75% in the higher-rate band and 39.35% in the additional-rate band, with a £500 dividend allowance. From 6 April 2026 (Finance Act 2026, section 4) the ordinary rate rises to 10.75% and the upper rate to 35.75%; the additional rate stays at 39.35% and the allowance remains £500. The increase narrows the gap between the company route and self-employment, so the structure should be modelled on current rates rather than assumed to be tax-efficient. None of this applies to fees caught inside IR35, which are taxed as employment income."
   - question: "Can a consultant solicitor become an equity partner later?"
     answer: "Yes, many firms use the consultant solicitor model as a trial period before offering an equity partnership. The consultant can demonstrate their billing capability and cultural fit without the firm committing to a capital contribution or profit share. If both parties agree to move to equity, the consultant typically buys into the partnership by contributing capital, which may be funded through a loan. The transition triggers a disposal of the consultant's goodwill in their fee share arrangement, which may have capital gains tax implications. Professional advice is essential before making the switch."
 ---
 
 <h2>What Is a Consultant Solicitor Structure?</h2>
 
-<p>A consultant solicitor structure is an arrangement where a qualified solicitor works for a law firm on a self-employed basis rather than as an employee or equity partner. The consultant typically handles their own caseload, bills clients directly or through the firm, and receives a share of the fees they generate. The firm provides office space, administrative support, regulatory cover, and professional indemnity insurance.</p>
+<p>A consultant solicitor structure is an arrangement where a qualified solicitor works for a law firm on a self-employed basis rather than as an employee or equity partner. The consultant typically handles their own caseload, bills clients through the firm, and receives a share of the fees they generate. The firm provides office space, administrative support, regulatory cover, and professional indemnity insurance.</p>
+
+<p>The phrase covers four distinct operating models, and the difference between them is mostly a tax and contracting difference rather than a regulatory one. A consultant can work as a self-employed sole trader, through their own limited company (a personal service company or PSC), through a third-party umbrella company, or on a fee share basis (which is itself usually delivered through one of the first two). Each model is taxed differently, and IR35 (the off-payroll working rules) reaches some of them and not others. The rest of this guide takes each in turn.</p>
 
 <p>This model has grown significantly in UK law firms over the past decade. It offers flexibility for experienced solicitors who want to control their workload and earnings without taking on the full responsibilities of partnership. For firms, it provides access to skilled fee-earners without the fixed cost of a salary or the long-term commitment of an equity stake.</p>
 
-<p>However, the structure raises important tax, legal, and regulatory questions. HMRC, the SRA, and employment tribunals each look at these arrangements from different angles. Getting the structure wrong can lead to unexpected tax bills, IR35 penalties, or regulatory action.</p>
+<p>However, the structure raises important tax, legal, and regulatory questions. HMRC, the SRA, and employment tribunals each look at these arrangements from different angles. Getting the structure wrong can lead to unexpected tax bills, off-payroll liabilities, or regulatory action.</p>
 
 <h2>Common Consultant Solicitor Models</h2>
 
@@ -45,19 +55,19 @@ faqs:
 
 <p>The umbrella route simplifies compliance for the firm but can be less tax-efficient for the consultant. The umbrella company must operate PAYE, meaning the consultant pays employee and employer NI on the full amount. There is limited scope for dividend extraction or expense claims.</p>
 
-<h3>Limited Company Consultant</h3>
+<h3>Limited Company Consultant (Personal Service Company)</h3>
 
-<p>Many experienced consultant solicitors set up their own limited company. The company enters into a contract with the law firm to provide the solicitor's services. The company invoices the firm, receives the fee share, and the solicitor draws income as a combination of salary and dividends.</p>
+<p>Many experienced consultant solicitors set up their own limited company, often called a personal service company or PSC. The company enters into a contract with the law firm to provide the solicitor's services. The company invoices the firm, receives the fee share, and the solicitor draws income as a combination of salary and dividends.</p>
 
-<p>This structure offers significant tax advantages. The consultant can pay themselves a low salary (up to the NI threshold) and take the rest as dividends, saving up to 13.8% employer NI and 2% employee NI. The company can also claim expenses for home office use, professional subscriptions, CPD costs, and equipment.</p>
+<p>Where the engagement sits outside IR35, this structure can be tax-efficient. The consultant can pay themselves a modest salary and take further income as dividends, deferring extraction to control the timing of personal tax. The company can also deduct genuine business expenses such as professional subscriptions, CPD costs, and equipment. The advantage is narrower than it once was: employer (secondary Class 1) National Insurance is 15% on salary above the £5,000 secondary threshold from 6 April 2025, and the dividend rates rise from 6 April 2026 (see the tax section below), so the PSC route should be modelled on current rates rather than assumed to win.</p>
 
-<p>However, the limited company model carries the highest IR35 risk. If HMRC determines that the consultant would be an employee if engaged directly, the firm becomes liable for unpaid tax and NI under the off-payroll working rules (Chapter 10, ITEPA 2003).</p>
+<p>The PSC model also carries the highest off-payroll risk. If the engagement is inside IR35 and the engaging firm is medium or large, the firm (as fee-payer) must operate PAYE and NIC on the fees before paying the company, under the off-payroll working rules (Chapter 10, Part 2, ITEPA 2003). If the firm is small, the consultant's own company decides its status under the original IR35 rules (Chapter 8). The IR35 section below sets out who determines status.</p>
 
 <h2>IR35 and the Consultant Solicitor</h2>
 
-<p>IR35 is the single biggest tax risk for consultant solicitor arrangements. The off-payroll working rules apply to medium and large law firms engaging consultants through an intermediary, typically a limited company or umbrella company.</p>
+<p>IR35 is the single biggest tax risk for consultant solicitor arrangements that run through an intermediary (typically a limited company or, in some cases, an umbrella). Who applies the rules depends on the size of the engaging firm.</p>
 
-<p>Under the rules, the firm must determine whether the consultant would be an employee for tax purposes if engaged directly. If the answer is yes, the firm must deduct PAYE and NI from the fees paid to the intermediary. The firm also pays the employer NI and the Apprenticeship Levy if applicable.</p>
+<p>From 6 April 2021, where the engaging firm is medium or large under the Companies Act 2006 size test (broadly, meeting two of: turnover over £10.2m, balance sheet over £5.1m, more than 50 employees), the firm, not the consultant's company, determines status and must issue a Status Determination Statement (SDS). If the consultant is found to be inside IR35, the fee-payer deducts PAYE and NIC from the fees before paying the intermediary, and the firm also pays the employer NIC and the Apprenticeship Levy where applicable. Where the engaging firm is small, the rules differ: the consultant's own company decides its status under the original IR35 (Chapter 8, Part 2, ITEPA 2003), and the firm pays the company gross. A sole-trader consultant is outside IR35 altogether, because the rules apply only to intermediaries, though the firm must still satisfy itself that the engagement is genuine self-employment.</p>
 
 <p>HMRC looks at three key factors when assessing IR35 status:</p>
 
@@ -69,7 +79,7 @@ faqs:
 
 <p>If the consultant works exclusively for one firm, uses firm equipment, follows firm procedures, and cannot send a substitute, HMRC is likely to argue IR35 applies. The firm should conduct a status determination for each engagement and provide a Status Determination Statement (SDS) to the consultant.</p>
 
-<p>We cover this in more detail in our <a href="/for-locum-solicitors">guide for locum solicitors</a>, which includes practical steps for managing IR35 compliance.</p>
+<p>We cover this in more detail in our <a href="/for-locum-solicitors">guide for locum solicitors</a> and in our post on the <a href="/blog/locum-solicitor-tax/locum-solicitor-ir35-rules-2025-26">IR35 rules for locum solicitors</a>, which set out practical steps for managing off-payroll compliance.</p>
 
 <h2>SRA Regulatory Considerations</h2>
 
@@ -93,12 +103,12 @@ faqs:
 <p>The tax treatment depends on the legal structure chosen:</p>
 
 <ul>
-<li><strong>Sole trader.</strong> The consultant reports fee share income on their self-assessment tax return. They pay income tax at their marginal rate and Class 4 NIC at 6% on profits between £12,570 and £50,270, then 2% above. They can claim allowable expenses such as professional subscriptions, CPD, travel, and a proportion of home costs.</li>
-<li><strong>Limited company.</strong> The company pays corporation tax at 19% to 25% on retained profits. The consultant draws a salary (subject to PAYE and NI) and dividends (taxed at 8.75% basic, 33.75% higher, 39.35% additional). The dividend allowance is £500 for 2025/26.</li>
-<li><strong>Umbrella company.</strong> The consultant receives a salary subject to PAYE, employee NI, and employer NI. No dividend extraction is possible. This is the least tax-efficient option for high earners.</li>
+<li><strong>Sole trader.</strong> The consultant reports fee share income on their self-assessment tax return. They pay income tax at their marginal rate and Class 4 NIC at 6% on profits between £12,570 and £50,270, then 2% above (2025/26). Class 2 NIC is no longer a payable weekly charge: liability was removed from 6 April 2024, so a self-employed consultant with profits at or above the Small Profits Threshold is treated as having paid and keeps their state-pension entitlement without paying it. They can claim allowable expenses such as professional subscriptions, CPD, travel, and a proportion of home costs.</li>
+<li><strong>Limited company (PSC).</strong> The company pays corporation tax at 19% on profits up to £50,000 and 25% on profits over £250,000, with marginal relief between those thresholds. The consultant draws a salary (subject to PAYE and NIC) and dividends. For 2025/26 dividends are taxed at 8.75% (basic-rate band), 33.75% (higher-rate band) and 39.35% (additional-rate band), with a £500 dividend allowance. From 6 April 2026 (Finance Act 2026, section 4) the ordinary rate rises to 10.75% and the upper rate to 35.75%; the additional rate stays at 39.35% and the allowance remains £500. This route only delivers a saving where the engagement is outside IR35.</li>
+<li><strong>Umbrella company.</strong> The consultant receives a salary subject to PAYE, employee NIC, and employer NIC. No dividend extraction is possible. This is the least tax-efficient option for high earners, but it removes the IR35 question because the umbrella operates full PAYE.</li>
 </ul>
 
-<p>For a consultant earning £100,000 through a limited company, the tax saving compared to an umbrella arrangement can be £10,000 to £15,000 per year, depending on dividend timing and personal circumstances.</p>
+<p>The gap between the PSC route and an umbrella or inside-IR35 arrangement depends on dividend timing, salary level, and personal circumstances, and it has narrowed with the 15% employer NIC threshold from 6 April 2025 and the dividend increase from 6 April 2026. It should be modelled on current rates for the specific consultant rather than assumed.</p>
 
 <h3>For the Firm</h3>
 
@@ -124,7 +134,7 @@ faqs:
 <li><strong>Voting and control.</strong> Equity partners have voting rights on firm decisions. Consultants have no say in firm management.</li>
 </ul>
 
-<p>For a solicitor billing £200,000 per year, a consultant fee share of 70% (£140,000) may leave them better off after tax than an equity partner earning a £150,000 profit share but contributing capital and bearing risk. However, the equity partner builds capital value in the firm and may benefit from a practice sale. Our <a href="/calculators/fee-share-vs-equity-partner">fee share vs equity partner calculator</a> can help you model the numbers for your situation.</p>
+<p>For a solicitor billing £200,000 per year, a consultant fee share of 70% (£140,000) may leave them better off after tax than an equity partner earning a £150,000 profit share but contributing capital and bearing risk. However, the equity partner builds capital value in the firm and may benefit from a practice sale. Our <a href="/calculators/partnership-vs-llp-take-home">partnership take-home calculator</a> can help you model the numbers for your situation.</p>
 
 <h2>Practical Steps for Setting Up a Consultant Solicitor Structure</h2>
 
@@ -168,6 +178,6 @@ faqs:
 
 <p>The consultant solicitor structure offers genuine flexibility for both firms and fee-earners, but it requires careful planning. The tax, regulatory, and legal risks are real, and they vary depending on the specific facts of each arrangement. A structure that works for one solicitor may fail for another if the working practices differ.</p>
 
-<p>If you are considering this route, take advice from a legal-sector-specialist accountant who understands both the tax rules and the SRA requirements. The cost of getting it wrong, whether through an HMRC enquiry or an SRA investigation, far outweighs the professional fees for proper setup.</p>
+<p>If you are considering this route, take advice from a legal-sector-specialist accountant who understands both the tax rules and the SRA requirements. The cost of getting it wrong, whether through an HMRC enquiry or an SRA investigation, far outweighs the time spent setting the arrangement up properly.</p>
 
-<p>For more detailed guidance, see our <a href="/solicitor-guides/fee-share-vs-equity-partner">fee share vs equity partner guide</a> and our <a href="/services/solicitor-accountants">solicitor accountants service page</a>. We also offer a <a href="/free-firm-health-check">free firm health check</a> that includes a review of your consultant arrangements.</p>
+<p>For more detailed guidance, see our <a href="/for-partners">guidance for partners and consultants</a> and our <a href="/services/solicitor-accountants">solicitor accountants service page</a>. We also offer a <a href="/free-firm-health-check">free firm health check</a> that includes a review of your consultant arrangements.</p>

@@ -15,7 +15,7 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/34341342/
 h1: "ATED Rates 2026/27: The Bands, the Charges, and Worked Examples by Tier"
-summary: "The 2026/27 ATED bands and annual charges, with three to four worked examples in each of the six bands, mid-year acquisition day-apportionment maths, a 2025/26 to 2026/27 delta table, and a step-by-step Pre-Return Banding Check walk-through for boundary cases. Numeric reference companion to the strategic overview and the operational pillar."
+summary: "The 2026/27 ATED bands and annual charges, with three to four worked examples in each of the six bands, mid-year acquisition day-apportionment maths, a 2025/26 to 2026/27 delta table, and a step-by-step Pre-Return Banding Check walk-through for boundary cases."
 schema: ""
 faqs:
   - question: "What are the ATED bands and annual charges for 2026/27 at a glance?"
@@ -31,7 +31,7 @@ faqs:
   - question: "What if the dwelling is newly built?"
     answer: "For a newly-built dwelling acquired before completion, the ATED return is due within 90 days of the earlier of the completion date or the first occupation date, rather than the standard 30-day post-acquisition rule. The longer window reflects the genuine ambiguity in pinning the ATED-relevant chargeable date for a property under construction. Once the 90-day window closes, the day-apportionment rule above applies in the normal way."
   - question: "We claim Property Rental Business Relief every year. Does the band still matter?"
-    answer: "Yes, indirectly. The relief reduces the chargeable amount to nil, but the return itself reports the dwelling's band and value, and HMRC's enquiry trigger for low-confidence relief claims is partly driven by band-level data. A claim-only return for a £4.95m dwelling in the £2m to £5m band sits in a different enquiry-risk profile from a £3.05m dwelling in the same band, even though the relief reduces both to a nil charge. Strategic boards model the band as the headline-figure indicator of exposure if relief is ever lost."
+    answer: "Yes, indirectly. The relief reduces the chargeable amount to nil, but the return itself reports the dwelling's band and value, and HMRC's enquiry trigger for low-confidence relief claims is partly driven by band-level data. A claim-only return for a £4.95m dwelling in the £2m to £5m band sits in a different enquiry-risk profile from a £3.05m dwelling in the same band, even though the relief reduces both to a nil charge. Treat the band as your headline-figure indicator of the exposure you would carry if relief were ever lost."
   - question: "How are the bands indexed each year?"
     answer: "Each year, HMRC applies the Consumer Prices Index for the year ended in the September before the chargeable period, rounded to the nearest £50 per the published convention. The 2026/27 figures reflect CPI for the year ended September 2025. The next-year (2027/28) charges will be published in November 2026 once the September 2026 CPI is known. The band thresholds themselves (£500k, £1m, £2m, £5m, £10m, £20m) are fixed in primary legislation and do not move with CPI."
   - question: "When is the next five-yearly revaluation, and what should we model now?"
@@ -43,15 +43,17 @@ faqs:
   - question: "Where does HMRC publish the next-year ATED bands?"
     answer: "Two places. The HMRC Technical Guidance on ATED (gov.uk publication) is updated each November with the next-year figures. The HMRC ATED Manual is updated shortly after with the same figures embedded in the chargeable-amount commentary. The gov.uk 'Annual Tax on Enveloped Dwellings, the Basics' guidance page also reflects the current and next-year figures."
   - question: "The pillar guide already has the band table. What does this page add?"
-    answer: "Depth on the worked examples. The pillar carries the band table as part of a complete operational walkthrough of who pays, the reliefs, the return, and the penalties. This page sits one level deeper on the rates themselves: three to four worked examples in each band, mid-year acquisition apportionment maths, the year-on-year delta, the PRBC walkthrough, and the substantial-acquisition trigger. Read this page when you need the number; read the pillar when you need the full regime context."
+    answer: "Depth on the numbers. The complete guide sets out the whole regime: who pays, the reliefs, the return, and the penalties. The rates are worked through here in detail, with three to four worked examples in each band, the mid-year acquisition apportionment maths, the year-on-year delta, the PRBC walkthrough, and the substantial-acquisition trigger. Use this when you need the figure for a specific dwelling; read the complete guide when you need the full regime context."
 dateModified: "2026-05-22"
 reviewedBy: "ICAEW Qualified Senior Reviewer"
 reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
 reviewedAt: "2026-05-22"
-editorialNote: "Numeric reference companion to the operational pillar (`ated-complete-guide-2026-27`) and the strategic overview (`ated-overview-companies-holding-uk-residential-property-2026-27`). The pillar carries the regime context; this page sits one level deeper on the rates themselves with worked examples by band, day-apportionment maths, and the PRBC walkthrough."
+editorialNote: "Rates-level reference for ATED 2026/27: worked examples by band, day-apportionment maths for mid-year acquisitions, the year-on-year delta, and the Pre-Return Banding Check walkthrough. Related: ated-complete-guide-2026-27 (full regime) and ated-overview-companies-holding-uk-residential-property-2026-27 (who is in scope)."
 ---
 
-<p>The 2026/27 ATED bands took effect on 1 April 2026 and apply through to 31 March 2027. Six bands, six annual charges, indexed by the Consumer Prices Index for the year ended September 2025, with the band thresholds themselves (£500,000, £1m, £2m, £5m, £10m, £20m) fixed in primary legislation. This page is the numeric reference: the table, the worked examples in each band, the day-apportionment maths for mid-year acquisitions, the Pre-Return Banding Check route for boundary cases, and the year-on-year delta against 2025/26. For chargeable-persons positioning, see the <a href="/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27">ATED strategic overview</a>; for the full regime walkthrough, see the <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">2026/27 pillar guide</a>.</p>
+<p>If a company, partnership with a corporate member, or other non-natural person holds a UK residential dwelling worth more than £500,000, ATED is a flat annual bill that lands whether or not the property earns a penny. The charge is set by band, and the bands are unforgiving at the edges: a dwelling valued at £2,000,001 costs you £32,200 a year, while one valued at £1,999,999 sits a band lower at £9,450 a year with no taper in between. Get the band wrong, or miss the return, and you are exposed on a figure that repeats every single year.</p>
+
+<p>The 2026/27 ATED bands took effect on 1 April 2026 and apply through to 31 March 2027. There are six bands and six annual charges, indexed by the Consumer Prices Index for the year ended September 2025, with the band thresholds themselves (£500,000, £1m, £2m, £5m, £10m, £20m) fixed in primary legislation. To check whether you are caught by the regime at all, see the <a href="/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27">ATED overview for companies</a>; for the full regime (valuation rules, every relief, the return, penalties), see the <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">complete 2026/27 ATED guide</a>. Everything else below is the rate detail: the table, a worked example in every band, the day-apportionment maths for a mid-year acquisition, the Pre-Return Banding Check route for boundary cases, and the year-on-year delta against 2025/26.</p>
 
 <h2>2026/27 Bands and Annual Charges at a Glance</h2>
 
@@ -73,11 +75,11 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
   </tbody>
 </table>
 
-<p>Three operational points sit underneath the table. First, the value tested is the open-market value at the most recent five-yearly revaluation date (currently 1 April 2022) or the acquisition date if the dwelling was bought after that. Second, the charge is a flat per-band amount, not a marginal-rate calculation; a dwelling valued at £2,000,001 attracts the £32,200 band 3 charge, while one at £1,999,999 attracts the £9,450 band 2 charge, with no slice or taper between them. Third, the bands are per dwelling, not per portfolio. A company holding multiple sub-threshold dwellings is outside ATED entirely; the same company holding one supra-threshold dwelling is in scope only for that dwelling.</p>
+<p>Three points decide which charge applies to you. The value tested is the open-market value at the most recent five-yearly revaluation date (currently 1 April 2022), or the acquisition date if you bought the dwelling after that. The charge is a flat per-band amount, not a marginal-rate calculation, so the band 3 figure of £32,200 applies in full to a £2,000,001 dwelling while a £1,999,999 dwelling stays in band 2 on the lower £9,450 charge, with no slice or taper between the two. And the bands are tested per dwelling, not per portfolio: hold a clutch of sub-threshold dwellings and you are outside ATED entirely, but hold one dwelling above its band threshold and you are in scope for that dwelling alone.</p>
 
 <h2>How the Annual Charge Is Indexed: The CPI Mechanic</h2>
 
-<p>Section 99 Finance Act 2013 indexes the chargeable amounts by the Consumer Prices Index for the year ended in the September before the chargeable period. The 2026/27 figures reflect CPI for the year ended September 2025; the 2027/28 figures will reflect CPI for the year ended September 2026 and will be published by HMRC in November 2026. The band thresholds themselves are fixed and do not move with CPI; only the chargeable amounts at each band change year on year.</p>
+<p>Your charge climbs a little every year even if nothing about your property changes, because Section 99 Finance Act 2013 indexes the chargeable amounts by the Consumer Prices Index for the year ended in the September before the chargeable period. The 2026/27 figures reflect CPI for the year ended September 2025; the 2027/28 figures will reflect CPI for the year ended September 2026 and will be published by HMRC in November 2026. The band thresholds themselves are fixed and do not move with CPI; only the chargeable amounts at each band change year on year.</p>
 
 <p>HMRC's published convention rounds the inflated amount to the nearest £50. The 2026/27 uplift is approximately 3.4 per cent across all six bands. In absolute terms:</p>
 
@@ -104,7 +106,7 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
 
 <h2>Worked Examples by Band</h2>
 
-<p>The examples below use anonymised facts that are typical for each band. Each example assumes no ATED relief is available unless stated; where a relief is available, the chargeable amount is reduced to nil (the return is still due).</p>
+<p>Each example below assumes no ATED relief is available unless stated. Where a relief does apply, it reduces the chargeable amount to nil, but you still have to file the return.</p>
 
 <h3>Band 1: £500,001 to £1m, £4,600 Charge</h3>
 
@@ -116,7 +118,7 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
 
 <aside>
 <p>Property in band 1 or 2 with a relief claim in play?</p>
-<p>The claim-only return discipline is where Wave 1 ATED penalty cases at tribunal cluster. We work with portfolio owners and corporate trustees to confirm relief eligibility, document the unconnected-tenant test, and file claim-only returns ahead of the 30 April 2026 deadline.</p>
+<p>The claim-only return is exactly where the early ATED penalty cases at tribunal have concentrated: relief that genuinely applies, but a return filed late or not at all. We work with portfolio owners and corporate trustees to confirm relief eligibility, document the unconnected-tenant test, and file claim-only returns ahead of the 30 April 2026 deadline.</p>
 </aside>
 
 <h3>Band 2: £1m to £2m, £9,450 Charge</h3>
@@ -141,7 +143,7 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
 
 <h3>Band 4: £5m to £10m, £75,450 Charge</h3>
 
-<p><strong>Example 4.1.</strong> A non-resident company holds a £6.8m Mayfair house occupied by family of the ultimate beneficial owner during periodic UK visits. No relief. <em>Net ATED payable: £75,450.</em> The dis-envelope analysis at this value typically points toward direct individual ownership, but the SDLT cost on the dis-envelope itself (£612,000 on a £6.8m residential schedule purchase) is the gating factor in any modelling. The <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">pillar guide</a> walks through the dis-envelope arithmetic.</p>
+<p><strong>Example 4.1.</strong> A non-resident company holds a £6.8m Mayfair house occupied by family of the ultimate beneficial owner during periodic UK visits. No relief. <em>Net ATED payable: £75,450.</em> The dis-envelope analysis at this value usually points toward holding the property directly in your own name, but the SDLT cost on the dis-envelope itself (£612,000 on a £6.8m residential schedule purchase) is the gating factor in any modelling. The <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">complete ATED guide</a> works through the dis-envelope arithmetic in full.</p>
 
 <p><strong>Example 4.2.</strong> A UK Ltd holds a £7.5m Kensington townhouse let to a multinational corporate tenant on commercial terms throughout 2026/27. Property Rental Business Relief applies. The relief discipline at this band is documentary: commercial-rent comparables (Foxtons, Knight Frank rental indices), a tenant due-diligence file evidencing the unconnected status, and a clean tenancy agreement audit trail. <em>Net ATED payable: £0.</em></p>
 
@@ -166,9 +168,9 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
 
 <h2>Mid-Year Acquisitions: The Day-Apportionment Maths</h2>
 
-<p>An acquisition during a chargeable period triggers a separate ATED return within <strong>30 days</strong> of the acquisition date (or <strong>90 days</strong> for a newly-built dwelling, measured from the earlier of completion or first occupation). The return covers the days held in the period and the charge is apportioned by (days held / 365).</p>
+<p>Buy a chargeable dwelling part-way through the year and you do not wait for the next 30 April. The acquisition triggers a separate ATED return within <strong>30 days</strong> of the acquisition date (or <strong>90 days</strong> for a newly-built dwelling, measured from the earlier of completion or first occupation), and that short clock is where mid-year buyers most often slip into a penalty. You pay only for the days you hold the dwelling in the period: the charge is apportioned by (days held / 365).</p>
 
-<p>The arithmetic is unambiguous but worth running carefully. For a £3.2m London townhouse acquired by a Ltd on 1 November 2026 with no relief available:</p>
+<p>The arithmetic is simple once you set it out. For a £3.2m London townhouse acquired by a Ltd on 1 November 2026 with no relief available:</p>
 
 <ul>
   <li>Days held in 2026/27: 1 November 2026 to 31 March 2027 = 151 days.</li>
@@ -186,7 +188,7 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
   <li>Return due: within 30 days of acquisition = 2 March 2027.</li>
 </ul>
 
-<p>For a newly-built dwelling, replace the 30-day rule with the 90-day rule. Acquisition for ATED purposes is measured from the earlier of the date of substantial completion or the date of first occupation, which is a fact-sensitive question where the developer's certification, the building control completion notice, and the actual occupation dates can each be material.</p>
+<p>For a newly-built dwelling, replace the 30-day rule with the 90-day rule. Acquisition for ATED purposes is measured from the earlier of the date of substantial completion or the date of first occupation, which is a fact-sensitive question: the builder's completion certificate, the building control completion notice, and the actual occupation dates can each be the one that fixes your date.</p>
 
 <h2>Pre-Return Banding Check (PRBC) for Boundary Cases</h2>
 
@@ -194,7 +196,7 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
 
 <ol>
   <li><strong>Commission a RICS-registered valuation.</strong> The valuation should be at the relevant valuation date for the band test (1 April 2022 for periods through 2027/28, or the acquisition date if later). Typical fee for a single dwelling: £600 to £1,500 from a major firm.</li>
-  <li><strong>Prepare the PRBC application.</strong> The application identifies the dwelling, sets out the valuation evidence, names the band the taxpayer believes applies, and explains why the boundary question is genuinely open. A clean comparable-evidence file (recent local sales, rental yields, condition factors) materially helps HMRC's review.</li>
+  <li><strong>Prepare the PRBC application.</strong> The application identifies the dwelling, sets out the valuation evidence, names the band you believe applies, and explains why the boundary question is genuinely open. A clean comparable-evidence file (recent local sales, rental yields, condition factors) helps HMRC's review.</li>
   <li><strong>Submit before the return deadline.</strong> PRBC applications go to the ATED Helpline at HMRC, typically by post or secure email per the published process. Submit early; HMRC's review can take 4 to 6 weeks at busy periods.</li>
   <li><strong>HMRC issues a banding confirmation.</strong> The confirmation is non-binding for future chargeable periods but operationally definitive for the period covered, materially reducing enquiry risk on the band selection.</li>
   <li><strong>File the ATED return on the confirmed band.</strong> The return references the PRBC confirmation reference. The 30 April deadline still applies.</li>
@@ -202,9 +204,9 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
 
 <p>PRBC is the right tool for genuine boundary cases. It is not a substitute for a robust valuation in clear-band cases, and HMRC reserves the right to challenge the underlying valuation later if new evidence emerges. The most common PRBC use cases sit at the £2m boundary (where the band jumps from £9,450 to £32,200, a £22,750 annual difference) and the £5m boundary (£32,200 to £75,450, a £43,250 annual difference).</p>
 
-<h2>How This Page Sits Alongside the Pillar and Strategic Overview</h2>
+<h2>Where to Go Next on ATED</h2>
 
-<p>This page is intentionally the rates reference: numbers, worked examples, the apportionment maths, and the PRBC walkthrough. For chargeable-persons positioning (who is in the regime at all), see the <a href="/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27">ATED strategic overview</a>. For the full regime context (valuation rules, every relief, return mechanics, penalties, and the dis-envelope question), see the <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">2026/27 pillar guide</a>. For relief mechanics, see the <a href="/blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics">rental property relief mechanics guide</a>. For penalty discipline if a return is missed, see the <a href="/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics">penalty cascade guide</a>.</p>
+<p>To check whether you are even caught by ATED in the first place, read the <a href="/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27">ATED overview for companies</a>. For the full regime in one place (valuation rules, every relief, the return, penalties and the dis-envelope question), read the <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">complete 2026/27 ATED guide</a>. To get a relief claim right, see how the <a href="/blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics">rental property relief mechanics</a> work in detail. And if a return has already been missed, the <a href="/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics">late-filing penalties guide</a> sets out how the penalties build.</p>
 
 <h2>Authority Sources for the 2026/27 Bands</h2>
 
@@ -216,4 +218,4 @@ editorialNote: "Numeric reference companion to the operational pillar (`ated-com
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns" rel="external">HMRC: ATED Returns Guidance</a> (return deadlines, 30-day and 90-day rules)</li>
 </ul>
 
-<p>The 2025/26 and 2026/27 band figures used throughout this page were independently verified against gov.uk on 22 May 2026 and match Property Tax Partners' locked house position for the regime.</p>
+<p>The 2025/26 and 2026/27 band figures here were independently verified against gov.uk on 22 May 2026 and match Property Tax Partners' settled position on the regime.</p>

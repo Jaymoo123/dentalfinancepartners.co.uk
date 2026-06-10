@@ -1,0 +1,57 @@
+{
+  "site": "medical",
+  "displayName": "Medical Accountants UK",
+
+  "paths": {
+    "repoRoot": "C:/Users/user/Documents/Accounting",
+    "worktreeBase": "C:/Users/user/Documents",
+    "worktreePattern": "Accounting-wt-{site}-{wavekind}{wave}-{bucket}",
+    "branchPattern": "{site}-{wavekind}{wave}-{bucket}",
+    "docsDir": "docs/medical",
+    "briefsDir": "briefs/medical",
+    "sessionsDir": "docs/sessions/medical",
+    "blogContentDir": "Medical/web/content/blog",
+    "blogRoutesDir": "Medical/web/src/app/blog",
+    "buildDir": "Medical/web",
+    "housePositions": "docs/medical/house_positions.md",
+    "netnewProgram": "docs/_engines/NETNEW_PROGRAM.md",
+    "topicPool": "docs/medical/topic_gaps_final.md",
+    "siteConfigJson": "Medical/niche.config.json"
+  },
+
+  "vercel": {
+    "projectJson": "Medical/.vercel/project.json",
+    "projectId": "prj_50vByZ3rqXQQwCUeENUTBbNBB41n",
+    "orgId": "team_XF9WAygZX7SGk9Fo4tOAnihH",
+    "productionDomain": "www.medicalaccounts.co.uk"
+  },
+
+  "wave": {
+    "buckets": ["a", "b", "c"],
+    "bucketsUpper": ["A", "B", "C"],
+    "megaWaveSize": 60,
+    "batchSize": 6,
+    "fRangePerBucket": {
+      "a": "F-1..F-49",
+      "b": "F-50..F-99",
+      "c": "F-100..F-149"
+    },
+    "waveKind": "wave"
+  },
+
+  "indexnow": {
+    "module": "optimisation_engine.indexing.submit_indexnow"
+  },
+
+  "naming": {
+    "launchPromptsFile": "WAVE{wave}_LAUNCH_PROMPTS.md",
+    "startHereFile": "WAVE{wave}_SESSION_{bucketUpper}_START_HERE.md",
+    "trackerFile": "wave{wave}_page_tracker.md",
+    "flagsFile": "wave{wave}_site_wide_flags.md",
+    "qaFile": "wave{wave}_questions_session_{bucketUpper}.md",
+    "discoveryFile": "wave{wave}_discovery_log_session_{bucketUpper}.md",
+    "promptExtractDir": "wave{wave}_prompts",
+    "briefSubdir": "wave{wave}",
+    "cannibCheckFile": "wave{wave}_cannibalisation_check.md"
+  }
+}

@@ -3,120 +3,145 @@ title: "How Do You Manage a UDA Shortfall Before the End of the Financial Year?"
 slug: "managing-uda-shortfall-end-of-financial-year"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/managing-uda-shortfall-end-of-financial-year"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "Managing a UDA Shortfall: End of Year NHS Dental Contract Guide"
-metaDescription: "Practical steps for UK dentists facing a UDA shortfall. Understand clawback risk, UDA recovery options, and year-end planning with your practice accountant."
+metaTitle: "Managing a UDA Shortfall Before Year End: A Dentist Guide"
+metaDescription: "Facing a UDA shortfall before 31 March? How reconciliation works, the 96% clawback line, the 4% carry-forward rule, and the levers to close the gap."
 altText: "Dentist reviewing NHS UDA contract performance data on a tablet in a UK dental practice"
-image: ""
+image: "https://images.pexels.com/photos/5622276/pexels-photo-5622276.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Gustavo Fring"
+  photographerUrl: "https://www.pexels.com/@gustavo-fring"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-person-getting-sterile-dental-equipment-5622276/"
 h1: "How Do You Manage a UDA Shortfall Before the End of the Financial Year?"
-summary: "A UDA shortfall before the financial year end creates clawback risk and financial pressure. This guide explains the practical options for recovery, the contractual rules around underperformance, and how to plan with your accountant to minimise the damage."
+summary: "A UDA shortfall as 31 March approaches is manageable if you act in time. This guide explains how year-end reconciliation works, the 96% clawback line and the 4% carry-forward rule, the practical levers to close a gap, and why monthly tracking beats a year-end scramble."
+keyTakeaways:
+  - "In England, delivering 96% to 100% of contracted UDAs (under-delivery of 4% or less) means the shortfall is carried forward rather than clawed back as cash."
+  - "Delivery below 96% triggers clawback, where the commissioner recovers the overpayment for the activity that was not delivered."
+  - "A carry-forward is a delivery obligation that raises next year's target on the same contract value, not a cash repayment."
+  - "Over-delivery is paid only at the commissioner's discretion (sometimes up to around 102%), so it should never be banked in a financial plan."
+  - "Levers to close a gap include extra clinical sessions, working the recall list, clinically justified higher-band work, and an in-year contract variation where evidenced."
 schema: ""
 faqs:
-  - question: "Can I carry forward unused UDAs to the next contract year?"
-    answer: "Generally, no. NHS dental contracts are annual. UDAs not delivered in the contract year are lost, and the commissioner can claw back the corresponding value. Some commissioners allow a small carry-forward (typically up to 2% of contract value) as part of a remedial plan, but this is discretionary and must be agreed in writing before the year end. Do not assume carry-forward is available without explicit confirmation."
-  - question: "What happens if I exceed my UDA target?"
-    answer: "Exceeding your UDA target does not normally increase your contract value. Most NHS contracts are fixed-sum agreements. Delivering more UDAs than contracted means you have provided additional treatment without additional funding. Some commissioners allow a \"flexibility\" arrangement where up to 2% over-delivery is tolerated without penalty, but you will not be paid extra for it. Over-delivery should be avoided unless you have a specific agreement with the commissioner."
-  - question: "Does a UDA shortfall affect my NHS Pension?"
-    answer: "Yes. Your NHS Pension Scheme contributions are based on your NHS pensionable earnings, which are derived from your contract value. A clawback reduces your pensionable earnings for the year in which the clawback is applied. This can reduce your pension accrual for that year. If you are close to the annual allowance or planning to maximise your pension, a shortfall can have a material impact. Speak to a pension specialist if this applies to you."
-  - question: "Can I use a locum dentist to help recover a UDA shortfall?"
-    answer: "Yes, but the economics must work. A locum typically costs £400-£500 per day plus indemnity. At a UDA rate of £28, the locum needs to deliver around 16-18 UDAs per day to break even. If your UDA rate is lower, the break-even point is higher. Also consider IR35 rules if the locum works through a limited company. Use the locum cost-benefit calculator on this site to model the numbers before committing."
+  - question: "Does a small UDA shortfall get clawed back?"
+    answer: "Not usually. In England, where you deliver between 96% and 100% of your contracted activity (an under-delivery of 4% or less), the shortfall is generally carried forward into the next contractual year rather than recovered as cash. You make up the under-delivered units the following year on the same money. Clawback bites when delivery falls below 96%, at which point the commissioner recovers the overpayment for the activity that was not delivered. The 96% figure is the genuine line, but always confirm the exact terms of your own contract in writing."
+  - question: "What does carry-forward actually mean for next year?"
+    answer: "A carry-forward is a delivery obligation, not a cash repayment. If you land between 96% and 100% this year, the under-delivered units are added to next year's requirement, so next year carries a heavier delivery target on the same contract value. It protects this year's cash but raises the bar for the year ahead, which is why a carry-forward is something your accountant will want noted as a workload point rather than treated as a free pass."
+  - question: "Is over-delivery paid on top of the contract?"
+    answer: "Not reliably. NHS dental contracts are target-based, not piece-rate above target. A commissioner may, at discretion, allow payment for delivery up to around 102% (a small over-delivery tolerance), with higher ceilings in limited pre-approved circumstances, but this is never guaranteed. You should not bank over-delivery income in a financial plan. The sensible aim is to land close to target rather than chase units that may never be paid for."
+  - question: "Can I use a locum to help close a UDA shortfall?"
+    answer: "Sometimes, but the economics have to work. A locum has to deliver enough activity above their daily cost to make additional sessions worthwhile, and the break-even point depends on your specific per-UDA value, which varies by contract. Also consider IR35 if the locum works through a limited company, because for most NHS practices the engaging client determines status. Model the numbers for your own contract before committing, and treat extra capacity as one lever among several rather than an automatic answer."
 ---
 
-<p>If you are an NHS dental practice owner, a UDA shortfall approaching the end of the financial year is one of the most stressful situations you can face. The contract requires you to deliver a specified number of Units of Dental Activity (UDAs) each year. Fall short, and the commissioner can claw back a proportion of your contract value, reducing your income for work you have already done.</p>
+<p>If you hold an NHS dental contract, a UDA shortfall as 31 March approaches is one of the more stressful situations in practice ownership. The contract sets a number of Units of Dental Activity (UDAs) you are expected to deliver across the year. You are paid a smooth monthly amount on the assumption you will hit it, and at year end your delivery is reconciled against the target. Fall far enough short and the commissioner can recover part of what you were paid, which can feel like a retrospective bill for money that has already flowed through the practice.</p>
 
-<p>This article explains the practical steps you can take to manage a UDA shortfall, the rules around UDA recovery, and how to work with your accountant to minimise clawback risk. It is written for practice principals, partners, and associates who hold NHS contracts.</p>
+<p>The good news is that a shortfall is manageable if you understand the rules and act in time. This guide explains how year-end reconciliation works, where the clawback line actually sits, the levers to close a gap, and why monthly tracking keeps the whole thing under control. It applies to NHS contracts in England, Wales and Northern Ireland, the nations that use the UDA mechanism. (Scotland uses a different item-of-service system and does not work on UDAs.)</p>
 
-<h2>What Is a UDA Shortfall and Why Does It Matter?</h2>
+<h2>How year-end reconciliation actually works</h2>
 
-<p>A UDA shortfall occurs when your practice delivers fewer UDAs than the annual contracted total. NHS contracts are typically measured on a 12-month cycle ending on 31 March. If you underperform, the commissioner can apply a financial penalty known as clawback.</p>
+<p>An NHS General Dental Services or Personal Dental Services contract is target-based with smooth monthly payments. You are paid in equal instalments through the year as though delivery is on track, and at year end (with a mid-year review along the way) actual UDA delivery is reconciled against the contracted total. The settlement depends on which side of the 96% line you land.</p>
 
-<p>Clawback is calculated as the proportion of the contract value that corresponds to the shortfall. For example, if your contract is worth £200,000 for 8,000 UDAs (a rate of £25 per UDA) and you deliver only 7,200 UDAs, the shortfall is 800 UDAs. The clawback would be 800 x £25 = £20,000. That is £20,000 of income you have already earned and spent, which must now be repaid.</p>
+<p>This is the most misunderstood point in NHS dental finance. A modest shortfall is not automatically clawed back. In England, where you deliver between 96% and 100% of your contracted activity (an under-delivery of 4% or less), the shortfall is generally carried forward into the next contractual year rather than recovered as cash: you keep this year's money and make up the under-delivered units the following year. Only when delivery drops below 96% does the commissioner recover the overpayment for the activity that was not delivered. That recovery is clawback.</p>
 
-<p>Most NHS contracts include a tolerance band, typically 4% to 6% of the annual UDA target. Underperformance within that band may not trigger clawback. Above the tolerance, the commissioner has discretion to recover funds. The exact rules depend on your local NHS England team (or equivalent in Wales, Scotland, or Northern Ireland).</p>
+<p>So the practical question is not "have I missed target" but "have I missed it by more than 4%". Those are very different positions, and confusing them leads to either needless panic or a false sense of security. The 96% figure is the genuine threshold, but the precise mechanics sit in your contract and with your commissioner, so check the wording for your own agreement.</p>
 
-<h2>Step 1: Identify the Shortfall Early</h2>
+<h2>The reconciliation outcomes at a glance</h2>
 
-<p>The first rule of UDA shortfall management is to know your position before the last quarter. By January each year, you should have a clear picture of your projected year-end UDA count. Waiting until March to discover a shortfall leaves you with few options.</p>
+<p>The table summarises the year-end position for an England GDS or PDS contract. Percentages refer to delivery against your contracted annual UDA target.</p>
 
-<p>Your practice management software should allow you to run a UDA tracker report. Compare actual delivery against the monthly target. If you are behind, calculate the gap and the number of clinical days remaining. This tells you whether recovery is feasible.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Delivery against target</th>
+      <th>What happens at reconciliation</th>
+      <th>Cash impact this year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>96% to 100% (under-delivery of 4% or less)</td>
+      <td>Shortfall is carried forward into next year's requirement</td>
+      <td>None. It is a delivery obligation, not a cash recovery</td>
+    </tr>
+    <tr>
+      <td>Below 96%</td>
+      <td>Commissioner recovers the overpayment for the undelivered activity (clawback)</td>
+      <td>Cash recovery, up to the full annual contract value at the extreme</td>
+    </tr>
+    <tr>
+      <td>100% (on target)</td>
+      <td>Contract delivered, nothing to settle either way</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Over 100%</td>
+      <td>Discretionary tolerance only (payment up to around 102% may be allowed by the commissioner)</td>
+      <td>No guaranteed extra income. Do not bank it</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>If you are an associate working under a principal's contract, you should also track your personal UDA delivery. Many associate agreements specify a target UDA number, and underperformance can affect your fee split or even your contract terms. The <a href="/for-associates">for associates</a> page has more detail on associate-specific contract issues.</p>
+<p>The two outcomes that matter most sit either side of 96%. A carry-forward hits next year's workload; a clawback hits this year's cash. Keeping that distinction clear is the foundation of managing a shortfall well.</p>
 
-<h2>Step 2: Assess Your Recovery Options</h2>
+<h2>Step 1: Know your position before the last quarter</h2>
 
-<p>Once you know the shortfall size, consider the following recovery options. Each has practical and financial implications.</p>
+<p>The first rule of shortfall management is to know where you stand before the final quarter. By the autumn you should have a clear view of your projected year-end UDA count. Leaving the discovery to March leaves you with very few options, because there are not enough clinical days left to recover a meaningful gap.</p>
 
-<h3>Increase Clinical Capacity</h3>
-<p>The most direct solution is to deliver more UDAs in the remaining time. This may mean extending surgery hours, opening on Saturdays, or using locum dentists to cover additional sessions. The cost of a locum must be weighed against the UDA value. If your UDA rate is £28 and a locum costs £450 per day plus indemnity, you need the locum to deliver around 16 UDAs per day just to break even. Use the <a href="/calculators/locum-cost-benefit-calculator">locum cost-benefit calculator</a> to model this.</p>
+<p>Your practice management software should produce a UDA tracker report. Run it monthly and compare actual delivery against the pro-rata target for the point in the year you have reached. If you are behind, work out the size of the gap in UDA terms and the clinical days remaining, because together those tell you whether recovery is realistic. A gap identified in October is a planning problem; the same gap in February is a much harder one. If you work as an associate under a principal's contract, track your personal delivery too, because the clearer your running total, the earlier you can flag a problem so the practice can act as a whole.</p>
 
-<h3>Prioritise High-Value UDA Bands</h3>
-<p>Not all UDAs are equal. Band 2 treatments (e.g., fillings, extractions, root canals) deliver 3 UDAs per course of treatment. Band 3 (crowns, dentures, bridges) delivers 12 UDAs. If your patient list allows, prioritising Band 3 work can close a shortfall faster than Band 1 check-ups. However, you must ensure clinical appropriateness. Delivering unnecessary treatment to hit UDA targets is a breach of GDC standards and could lead to fitness-to-practise proceedings.</p>
+<h2>Step 2: Assess the levers to close the gap</h2>
 
-<h3>Recall Patients Strategically</h3>
-<p>Review your recall list. Patients due for a check-up can be brought forward. Those who have missed appointments can be re-contacted. A focused recall campaign in February and March can generate a meaningful number of Band 1 UDAs quickly. Each Band 1 check-up delivers 1 UDA and typically takes 10-15 minutes of chair time.</p>
+<p>Once you know the size of the shortfall, work through the levers below. Each has practical and clinical implications, and the right mix depends on the time left and the size of the gap.</p>
 
-<h3>Negotiate a Contract Variation</h3>
-<p>In some circumstances, commissioners will agree to a contract variation if the shortfall is caused by factors outside your control: long-term sickness, maternity leave, or a significant drop in patient demand. You must provide evidence. This is not guaranteed and depends on local policy. Start the conversation early; commissioners are less receptive to requests made in March.</p>
+<h3>Add clinical capacity</h3>
+<p>The most direct response is to deliver more UDAs in the time remaining, by extending surgery hours, opening additional sessions, or bringing in a locum. Extra capacity only helps if the activity exists to fill it, so pair any added sessions with a clear list of patients who need treatment. Where a locum is involved, weigh the cost of the sessions against the activity they can realistically deliver for your per-UDA value, and consider IR35 if the locum works through a limited company.</p>
 
-<h2>Step 3: Understand the Clawback Calculation</h2>
+<h3>Work the recall list</h3>
+<p>Review your recall and reminder lists. Patients due for an examination can be brought forward, and those who have lapsed can be re-contacted. A focused recall campaign in the closing months generates activity quickly, because examinations are short on chair time and steady to schedule. This is often the fastest legitimate way to convert spare capacity into delivered units.</p>
 
-<p>The clawback amount is not always a simple pro-rata of the shortfall. Some commissioners apply a sliding scale or consider your performance over a rolling 12-month period. Others look at the contract year in isolation.</p>
+<h3>Use skill mix and band awareness</h3>
+<p>Different courses of treatment carry different UDA weightings, with higher bands worth more units than a routine examination. Where it is clinically appropriate and the need genuinely exists, completing planned higher-band work that is already indicated can close a gap faster than examinations alone. The clinical caveat is absolute: treatment must always be clinically justified, and delivering unnecessary treatment to hit a target breaches professional standards and risks far more than a clawback. Using therapists and hygienists within their scope can also free up dentist time for the work that only a dentist can do.</p>
 
-<p>The key document is your NHS contract terms. Most contracts include a clause on "remedial notice" and "financial recovery". A remedial notice is a formal warning that you are underperforming. It sets a recovery period (often 3-6 months). If you fail to meet the recovery plan, the commissioner can then apply clawback or even terminate the contract.</p>
+<h3>Request an in-year contract variation</h3>
+<p>Where a shortfall is driven by factors outside your control, such as a long-term clinical vacancy, prolonged sickness or maternity leave, or a sustained drop in patient demand, a commissioner may agree an in-year variation. You will need evidence, and nothing is guaranteed, because this turns on local policy. The key is timing: commissioners are far more receptive to a conversation started while there is still time to agree a sensible adjustment than to a request made in the final weeks before reconciliation.</p>
 
-<p>If you receive a remedial notice, take it seriously. Engage with the commissioner, propose a realistic recovery plan, and document everything. A well-structured plan can reduce the risk of immediate clawback.</p>
+<h2>Step 3: If clawback is unavoidable, plan the cash and the tax</h2>
 
-<p>Your accountant should review the clawback calculation before you agree to any repayment. Commissioners sometimes make errors in the arithmetic or apply the wrong tolerance band. A <a href="/services/practice-accounting">practice accountant</a> who understands NHS contracts can spot these errors and challenge them.</p>
+<p>If your projection points below the 96% line with no realistic way to recover, shift focus from clinical recovery to financial planning. A clawback is recovered after the year end, so the practice has to fund it once the year is already closed. Build the expected figure into your cash-flow forecast early, and speak to your commissioner first so there are no surprises on either side. On tax, a clawback reduces taxable trading profit for a sole trader or partnership, and profit chargeable to corporation tax for a company. Timing is the fiddly part, because a recovery can relate to one year's under-delivery but be applied in a later one, creating a mismatch your accountant should handle.</p>
 
-<h2>Step 4: Plan the Financial Impact</h2>
+<p>It is also where carry-forward and clawback diverge. A clawback for delivery below 96% is a cash recovery, accrued as a liability that reduces income at the year end. A carry-forward for delivery between 96% and 100% is not a cash repayment at all. It is a delivery obligation for next year, so it does not hit this year's income, but it does mean next year carries a heavier target on the same contract value. Always separate the two: clawback affects cash, carry-forward affects workload. For more, see our guide to <a href="/blog/nhs-contracts/nhs-dental-contract-clawback-explained">how NHS dental contract clawback works</a>.</p>
 
-<p>If clawback is unavoidable, you need to plan for the cash flow impact. A £20,000 clawback in April (when the contract year ends) means you must find that sum from practice reserves or a facility. If you run a limited company, the clawback is a deductible expense against corporation tax. If you are a sole trader or partnership, it reduces your taxable profit for the year in which it is paid.</p>
+<h2>Step 4: Build the systems that prevent next year's scramble</h2>
 
-<p>Timing matters. If the clawback is applied in the 2025/26 tax year but relates to 2024/25 underperformance, the deduction falls in 2025/26. This can create a mismatch between the income you declared in the earlier year and the expense in the later year. Your accountant should model this to avoid an unexpected tax bill.</p>
+<p>Managing a shortfall reactively is stressful and avoidable. The better answer is to build routines that surface a problem while there is still time to fix it.</p>
 
-<p>Also consider the impact on your NHS Pension Scheme contributions. UDA shortfall reduces your NHS pensionable earnings for the year. If you are close to the annual allowance limit or planning to maximise your pension, a shortfall can reduce your accrual. The <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS pension guide</a> explains how UDA performance affects pensionable pay.</p>
+<h3>Track UDAs every month, not every quarter</h3>
+<p>Run the UDA tracker monthly and compare actual delivery against the pro-rata target. A team that reviews delivery in October has months to adjust the diary, add a session or run a recall push; a team that first looks closely in February has almost none. Monthly tracking is the highest-value habit in NHS contract management, and it costs nothing but discipline. It belongs alongside the other numbers in your <a href="/blog/practice-accounting/dental-practice-management-accounts-metrics-tracking">monthly management accounts</a>, where UDA delivery sits naturally next to income, costs and cash.</p>
 
-<h2>Step 5: Prevent Future Shortfalls</h2>
+<h3>Manage the appointment book and missed appointments</h3>
+<p>Shortfalls often grow quietly out of gaps in the book. Watch your failed-to-attend rate, because every missed appointment is lost chair time and lost activity. A reliable reminder system, with a clear rebooking process, recovers a surprising amount of capacity over a year. Filling the diary efficiently is usually a bigger lever than working longer hours.</p>
 
-<p>Managing a shortfall reactively is stressful. The better approach is to build systems that prevent it from happening in the first place.</p>
+<h3>Monitor associate and team delivery</h3>
+<p>If associates deliver part of the contract, monitor their individual UDA delivery through the year rather than discovering a problem at reconciliation. An associate who is consistently behind may need a schedule change, additional support, or simply an earlier conversation. Set clear expectations in the associate agreement and keep the running totals visible so nobody is surprised in March.</p>
 
-<h3>Monthly UDA Tracking</h3>
-<p>Run a UDA tracker report every month. Compare actual delivery against the pro-rata target. If you are 5% behind in October, you have five months to recover. If you are 5% behind in February, recovery is much harder.</p>
+<h3>Review the contract itself at year end</h3>
+<p>At the end of each contractual year, review delivery with your accountant and identify why any shortfall arose. If a gap reflects a one-off event, plan around it. If patient demand has changed more lastingly, the longer-term question is whether the contract value and UDA target still fit the practice, which is a conversation to have with the commissioner over time.</p>
 
-<h3>Associate Performance Management</h3>
-<p>If you employ associates, their individual UDA delivery should be monitored. Set clear targets in their associate agreements and review performance quarterly. An associate who consistently underdelivers may need additional support or a revised schedule. The <a href="/services/associate-tax">associate tax services</a> page covers the tax implications of associate arrangements, including fee splits and UDA targets.</p>
+<h2>A worked example in UDA terms</h2>
 
-<h3>Patient Flow Management</h3>
-<p>Shortfalls often arise because of gaps in the appointment book. Analyse your DNA (did not attend) rate. If it is above 10%, you are losing UDAs to missed appointments. Implement a reminder system (text, email, phone call) and a clear cancellation policy. Some practices charge for missed private appointments, but NHS patients cannot be charged for missed NHS appointments. Focus on reducing DNAs through better communication.</p>
+<p>Take a practice with a contracted target of 10,000 UDAs for the year. The 96% line sits at 9,600 UDAs, so anything from 9,600 to 10,000 falls in the carry-forward zone, and anything below 9,600 puts the practice into clawback territory. Suppose that by the end of January the tracker shows 7,200 UDAs delivered, against a pro-rata expectation of around 8,300 for ten months in, so the practice is roughly 1,100 behind pace. To finish on target it would need 2,800 UDAs across February and March, well above its normal run-rate; to clear the 9,600 carry-forward line it would need 2,400, demanding but closer to feasible with extra sessions and a recall push.</p>
 
-<h3>Contract Review at Year End</h3>
-<p>At the end of each contract year, review your performance with your accountant. Identify the reasons for any shortfall and agree a plan for the next year. This is also the time to consider whether your contract value and UDA target are appropriate. If patient demand has fallen permanently (e.g., due to demographic change), you may be able to negotiate a lower contract value with a corresponding reduction in UDA target. This is a long-term process, not a quick fix.</p>
+<p>The lesson is in the timing. The same practice running the same tracker in October, perhaps 600 UDAs behind pace, could have spread the recovery across five months instead of two and almost certainly landed in the carry-forward zone without a scramble. The arithmetic does not change; what changes is how many clinical days you give yourself to respond. A UDA's value is set per contract and varies between practices, so a shortfall is best managed in UDA counts and percentages rather than a single assumed rate. Our explainer on the <a href="/blog/nhs-contracts/uda-value-explained-for-uk-dentists">UDA value for UK dentists</a> covers how that figure is set.</p>
 
-<h2>What About UDA Recovery Across Multiple Sites?</h2>
+<h2>When to involve your accountant</h2>
 
-<p>If you own multiple practices with separate NHS contracts, you cannot normally transfer UDAs between contracts. Each contract is a separate legal agreement. However, some commissioners allow a "flexibility" arrangement where a small percentage of UDAs can be moved between contracts within a group. This is rare and must be agreed in advance. Do not assume you can cross-subsidise one contract with another.</p>
-
-<p>If you are considering buying or selling a practice, the UDA delivery history is a critical due diligence item. A practice with a consistent shortfall may have a lower goodwill value because the income stream is at risk. The <a href="/dental-guides/practice-purchase-financial-due-diligence">practice purchase due diligence guide</a> explains how to assess UDA performance during a transaction.</p>
-
-<h2>When to Involve Your Accountant</h2>
-
-<p>Your accountant should be involved in UDA shortfall management from the moment you identify a problem, not after the clawback letter arrives. A dental-specialist accountant can:</p>
-
-<ul>
-<li>Model the financial impact of different recovery scenarios</li>
-<li>Review the clawback calculation for errors</li>
-<li>Advise on the tax treatment of clawback payments</li>
-<li>Help you negotiate with the commissioner</li>
-<li>Plan your cash flow to absorb the impact</li>
-</ul>
-
-<p>If you do not already have an accountant who understands NHS dental contracts, consider switching to one who does. The <a href="/services/dental-accountants">dental accountants</a> page explains the specific expertise you should look for.</p>
+<p>Bring your accountant in from the moment a shortfall looks likely, not after a clawback letter lands. A dental-specialist accountant can model the cash-flow impact of different recovery scenarios, check any clawback figure is calculated correctly and against the right line, advise on the tax treatment and timing, and make sure a carry-forward and a clawback are recorded distinctly. The earlier they see the numbers, the more options remain open.</p>
 
 <h2>Summary</h2>
 
-<p>A UDA shortfall is manageable if you act early. Identify the gap, assess your recovery options, understand the clawback rules, and plan the financial impact. Prevention through monthly tracking and associate performance management is far better than a last-minute scramble in March.</p>
+<p>A UDA shortfall is more manageable than its reputation suggests, provided you act in time. Deliver between 96% and 100% of target and the shortfall is generally carried forward as a delivery obligation rather than recovered as cash; drop below 96% and the commissioner recovers the overpayment for the undelivered activity. Over-delivery is paid only at discretion, so never rely on it. Track delivery monthly, work the recall list and the diary, consider extra capacity and an in-year variation where appropriate, and bring your accountant in early. The practices that avoid a year-end crisis are the ones that watched the number all year and acted while there was still time.</p>
 
-<p>The key numbers to remember for 2025/26: UDA values vary by contract (typically £15 to £45 per UDA), the tolerance band is usually 4-6%, and clawback is calculated on the shortfall above that band. If you face a shortfall, speak to your accountant and your commissioner as soon as possible.</p>
-
-<p>Every practice's situation is different. The guidance in this article is general. For advice tailored to your specific contract and financial position, speak to a dental-specialist accountant.</p>
+<p>Every contract is different, and the precise terms that apply to you sit in your own contract and with your commissioner. For advice tailored to your contract and your financial position, speak to a dental-specialist accountant.</p>

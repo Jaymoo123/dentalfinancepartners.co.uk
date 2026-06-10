@@ -3,6 +3,7 @@ title: What Does a Dental Accountant Do That a General Accountant Cannot?
 slug: dental-accounting
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accounting
 date: '2026-05-19'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting
 metaTitle: 'Dental Accounting: What a Specialist Accountant Does for UK'
@@ -11,6 +12,12 @@ altText: A UK dental practice reception area with a dentist and practice manager
 image: https://images.pexels.com/photos/20843729/pexels-photo-20843729.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Does a Dental Accountant Do That a General Accountant Cannot?
 summary: 'A specialist dental accountant understands the specific financial rules that apply to UK dentists: UDA contract accounting, NHS pension scheme sections, associate self-employment status, goodwill valuation methods, and VAT exemptions on dental treatment. General accountants often miss these details, which can cost you thousands.'
+keyTakeaways:
+  - "England average UDA rates sit between £25 and £35, with individual contracts ranging from £15 to £45, while Scotland uses item-of-service fees under the Statement of Dental Remuneration, not UDAs."
+  - "BADR gives an 18% CGT rate for 2026/27 (14% up to 5 April 2026) with a £1 million lifetime limit, and goodwill acquired by a company after 1 April 2019 attracts relief at 6.5% a year."
+  - "Salary attracts employer NI at 15% on earnings above £5,000 from April 2025, while 2026/27 dividend rates are 10.75%, 35.75% and 39.35% above a £500 allowance."
+  - "MTD for Income Tax becomes mandatory from 6 April 2026 for sole traders and landlords with gross income over £50,000, dropping to £30,000 in 2027."
+  - "Dental treatment is VAT-exempt under VATA 1994 Schedule 9 Group 7, but standard-rated cosmetic turnover over £90,000 triggers registration and partial-exemption calculations."
 schema: ''
 faqs:
 - question: How much does a specialist dental accountant cost in the UK?
@@ -20,7 +27,7 @@ faqs:
 - question: Do I need a dental accountant if I am an associate dentist?
   answer: Yes, especially if you are self-employed. A dental accountant reviews your associate agreement and working arrangements to confirm your self-employment status is defensible under HMRC's tests. They also help you claim the correct expenses, manage your NHS pension contributions within the annual allowance, and prepare for Making Tax Digital. The cost of a specialist accountant is often offset by the tax savings they identify.
 - question: What is the difference between a dental accountant and a general accountant for practice sales?
-  answer: A dental accountant understands goodwill valuation methods specific to dental practices, including EBITDA multiples and percentage-of-fee-income rules of thumb. They know how to structure the sale to qualify for Business Asset Disposal Relief (14% CGT rate in 2025/26) and how to apply Section 162 incorporation relief if you are transferring a sole trade to a company. A general accountant may treat the sale as a standard capital disposal and miss these reliefs.
+  answer: A dental accountant understands goodwill valuation methods specific to dental practices, including EBITDA multiples and percentage-of-fee-income rules of thumb. They know how to structure the sale to qualify for Business Asset Disposal Relief (18% CGT rate in 2026/27) and how to apply Section 162 incorporation relief if you are transferring a sole trade to a company. A general accountant may treat the sale as a standard capital disposal and miss these reliefs.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
@@ -69,7 +76,7 @@ imageCredit:
 
 <h3>Goodwill Valuation and Practice Sale Tax</h3>
 
-<p>Selling a dental practice is a capital disposal, not trading income. Gains are subject to Capital Gains Tax (CGT), not income tax. The rate depends on your total income and whether you qualify for Business Asset Disposal Relief (BADR), which is 14% for 2025/26 and rises to 18% from 6 April 2026. The lifetime limit is £1 million.</p>
+<p>Selling a dental practice is a capital disposal, not trading income. Gains are subject to Capital Gains Tax (CGT), not income tax. The rate depends on your total income and whether you qualify for Business Asset Disposal Relief (BADR), which is 18% for 2026/27, having been 14% up to 5 April 2026. The lifetime limit is £1 million.</p>
 
 <p>Goodwill valuation methods vary by practice type. Private practices typically command higher multiples than NHS-heavy practices. Common methods include earnings-based multiples (0.6 to 1.4 times adjusted EBITDA) and percentage-of-fee-income rules of thumb (25% to 60% depending on the mix). A dental accountant knows which method the market uses in your region and how to present the valuation to HMRC if challenged.</p>
 
@@ -111,7 +118,7 @@ imageCredit:
 
 <h3>Profit Extraction Planning</h3>
 
-<p>Dentists operating through a limited company face a choice: salary, dividends, or a mix. Salary attracts employer NI at 15% on earnings above £5,000 per year (from April 2025). Dividends attract tax at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). The dividend allowance is £500 for 2025/26.</p>
+<p>Dentists operating through a limited company face a choice: salary, dividends, or a mix. Salary attracts employer NI at 15% on earnings above £5,000 per year (from April 2025). Dividends attract tax at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate). The dividend allowance is £500 for 2026/27.</p>
 
 <p>A dental accountant models the optimal split based on your total income, NHS pension contributions, and personal allowance position. For a practice owner drawing £80,000, the difference between an optimised and unoptimised extraction strategy can be £4,000 to £6,000 per year in additional tax.</p>
 

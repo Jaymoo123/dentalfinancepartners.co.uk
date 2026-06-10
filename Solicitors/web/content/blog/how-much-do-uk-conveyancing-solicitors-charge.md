@@ -10,6 +10,12 @@ metaDescription: "UK conveyancing solicitor fees 2025/26. Sale £600-£1,500. Pu
 altText: "UK conveyancing solicitor reviewing residential property transaction documents"
 h1: "How Much Do UK Conveyancing Solicitors Charge in 2025/26?"
 summary: "UK conveyancing solicitor fees in 2025/26 typically range from £600 for a sale to £2,000 for a complex purchase, plus disbursements (searches, Land Registry, SDLT). We break down the realistic ranges by transaction type, region, and what the disbursements actually cover."
+keyTakeaways:
+  - "Conveyancing professional fees in 2025/26 run from about £600 for a sale to £2,000 for a complex purchase, plus VAT."
+  - "Disbursements (searches, Land Registry, identity checks) typically add £270 to £900 on a residential purchase."
+  - "Leasehold conveyancing costs £200 to £600 more than freehold because of lease and management-pack review."
+  - "Conveyancing legal services are standard-rated for VAT at 20 percent, shown net plus VAT on the bill."
+  - "SDLT is the buyer's separate tax: £5,000 on a £350,000 home, £22,500 on the same buy-to-let after the 5 percent surcharge."
 faqs:
   - question: "What's a typical UK conveyancing fee in 2025/26?"
     answer: "For residential conveyancing in 2025/26: sale fees typically £600-£1,500 (lower for leasehold-free freeholds, higher for leasehold or shared ownership). Purchase fees typically £700-£2,000. The fee variance reflects transaction complexity (freehold vs leasehold, mortgage vs cash, residential vs buy-to-let, simple chain vs multi-link chain). Add disbursements of £300-£1,000 (searches, Land Registry, SDLT submission fees) on top of the solicitor's professional fee."
@@ -169,6 +175,6 @@ faqs:
 <li>SDLT calculation review (especially around the additional-dwelling surcharge changes in 2024)</li>
 </ul>
 
-<p>For conveyancing-firm partners and managers, see our <a href="/blog/fee-structure-for-uk-residential-conveyancing-firms">fee structure guide</a> and <a href="/blog/conveyancing-firm-financial-control-strategies">financial controls guide</a>. For SDLT-specific complexity see our <a href="/blog/sdlt-calculation-uk-conveyancing-solicitors">SDLT calculation guide</a>.</p>
+<p>For conveyancing-firm partners and managers, see our <a href="/blog/conveyancing-compliance/fee-structure-for-uk-residential-conveyancing-firms">fee structure guide</a> and <a href="/blog/conveyancing-compliance/conveyancing-firm-financial-control-strategies">financial controls guide</a>. For SDLT-specific complexity see our <a href="/blog/conveyancing-compliance/sdlt-calculation-uk-conveyancing-solicitors">SDLT calculation guide</a>.</p>
 
 <p>If you're a conveyancing firm partner wanting a financial review against industry benchmarks, book a 30-minute scoping call below.</p>

@@ -1,6 +1,6 @@
-You are Stage 1 Sub-Agent for Property Tax Partners MegaWave 1 (rolling architecture, batch M1-A-B1). Working in worktree at `C:\Users\user\Documents\Accounting-wt-property-megawave1-a` on branch `property-megawave1-a`. Your bucket: **Bucket A - SDLT — surcharges and reliefs + Second homes & council tax premium**.
+You are RUN-phase Sub-Agent for Property Tax Partners MegaWave 1 (rolling architecture, batch M1-A-B1). Working in worktree at `C:\Users\user\Documents\Accounting-wt-property-megawave1-a` on branch `property-megawave1-a`. Your bucket: **Bucket A - SDLT — surcharges and reliefs + Second homes & council tax premium**.
 
-This is a **bounded batch** of 6 picks. You are a LEAF AGENT - do NOT spawn sub-agents (no Task / Agent dispatch). Run the Stage 1 seed workflow sequentially on each pick in this batch, commit each, then stop cleanly with the batch-done marker (instructions at end).
+This is a **bounded batch** of 6 picks. You are a LEAF AGENT - do NOT spawn sub-agents. Take the Stage 2 briefs for your batch and produce the final published blog page markdown files, commit each, then stop cleanly with the batch-done marker.
 
 ## Your batch (6 picks)
 
@@ -11,106 +11,64 @@ This is a **bounded batch** of 6 picks. You are a LEAF AGENT - do NOT spawn sub-
 5. `a-complete-guide-to-stamp-duty-refund` - [SDLT — surcharges and reliefs] a-complete-guide-to-stamp-duty-refund
 6. `a-complete-guide-to-stamp-duty-relief-for-probate-properties` - [SDLT — surcharges and reliefs] a-complete-guide-to-stamp-duty-relief-for-probate-properties
 
-## Work autonomously (Bug #7 fix from Wave 9)
+## Work autonomously (Bug #7 fix - non-negotiable)
 
-The acknowledgment line below is your ONLY user-facing pause-point. After acknowledging, immediately claim pick 1, run the full Stage 1 workflow on it, commit, then IMMEDIATELY claim pick 2 - do NOT pause between picks. Do NOT ask "should I proceed?" - proceed. Stop ONLY when: (a) all 6 picks committed + batch-done marker written; (b) you hit a real blocker requiring a Q-N (use bracketed `## [Q-N]` format per Bug #6); (c) a build failure you cannot resolve.
+Acknowledgment line is your ONLY pause. After acking, immediately claim pick 1, run the full 19-step per-page workflow, commit, IMMEDIATELY claim pick 2. Do not pause between pages. Do not ask "should I proceed?" - proceed. Stop only when (a) all 6 pages committed + tracker flipped ✅ + batch-done marker written; (b) real blocker requiring Q-N (use bracketed `## [Q-N]`); (c) unrecoverable build failure.
 
-## Q&A discipline (§16.15 + §16.37 critical)
+## Q&A + flag discipline
 
-When raising a Q to manager, append to `C:\Users\user\Documents\Accounting\docs\property\megawave1_questions_session_A.md` via ABSOLUTE PATH from your worktree. NEVER append to the worktree's relative-path copy. Same discipline for tracker, flags, discovery logs. Manager polls main's path only.
-
-Use `## [Q-N]` heading format with brackets - the §8.3 Q&A watcher regex matches that exact pattern (Bug #6 catch from Wave 9).
-
-## F-numbering range
-
-When raising flags in this bucket, use F-numbers in the range **F-1..F-49** ONLY. Do not use F-numbers outside this range even if next free number sequentially appears available.
+- Q-N: `C:\Users\user\Documents\Accounting\docs\property\megawave1_questions_session_A.md` via ABSOLUTE PATH. Use `## [Q-N]` brackets.
+- Flags: `C:\Users\user\Documents\Accounting\docs\property\megawave1_site_wide_flags.md` via ABSOLUTE PATH. F-numbers in **F-1..F-49** ONLY.
+- Tracker: `C:\Users\user\Documents\Accounting\docs\property\megawave1_page_tracker.md` via ABSOLUTE PATH. Flip row from 🟦 to ✅ on each commit.
 
 ## Read first
 
-1. `C:\Users\user\Documents\Accounting\docs\property\NETNEW_PROGRAM.md` - §0 norms, §4 brief anatomy, §13.2 flag types, §16.18 reasoning-first cannib, §16.35 per-write statute verify, §16.36 Stage 2 brief gate, §16.45 HP-lock drift catches
-2. `C:\Users\user\Documents\Accounting\docs\property\house_positions.md` - sections relevant to your bucket's clusters: §1, §1.A, §1.B, §1.C, §1.D, §1.E, §1.F, §1.G, §1.H, §1.I, §1.J, §15
-3. `C:\Users\user\Documents\Accounting\briefs\property\megawave1\picks.yaml` - this mega-wave's picks (your batch is a subset)
-4. `C:\Users\user\Documents\Accounting\docs\property\megawave1_cannibalisation_check.md` if present - note any partial-overlap picks; differentiation framing required for those at Stage 1 seed time
+1. `C:\Users\user\Documents\Accounting\docs\property\NETNEW_PROGRAM.md` - §7 19-step per-page workflow + §16.35 per-write statute verify + §16.32 within-bucket sequencing + §16.37 absolute-path discipline
+2. `C:\Users\user\Documents\Accounting\docs\property\house_positions.md` - your bucket's HP cluster: §1, §1.A, §1.B, §1.C, §1.D, §1.E, §1.F, §1.G, §1.H, §1.I, §1.J, §15
+3. Your batch's Stage 2 briefs at `C:\Users\user\Documents\Accounting\briefs\property\megawave1/<slug>.md` for each pick
 
-Acknowledge with one short status line: "Stage 1 batch M1-A-B1 picked up. Reading HP + first pick now."
+Acknowledge with: "MegaWave 1 RUN batch M1-A-B1 picked up. Claiming pick 1 now."
 
-## Stage 1 seed brief structure (~800-1200 words per seed; Stage 2 expands)
-
-Emit each seed to `C:\Users\user\Documents\Accounting\briefs\property\megawave1/<slug>.md` (write to main absolute path, NOT worktree relative path - main is the canonical brief location). Structure:
-
-```markdown
----
-slug: <slug>
-category: <category - must match a live route in C:\Users\user\Documents\Accounting\Property\web\src\app\blog>
-intent: <2-3 sentence search intent statement>
----
-
-# <Working title (Stage 2 may refine)>
-
-## Statutory anchor
-- Primary: <Act + section, verbatim verified at write time via WebFetch>
-- Supporting: <other sections / regulations>
-- House position reference: <§X.Y of house_positions.md, or NEW LOCK NEEDED>
-
-## Framing differentiator (anti-templating, anti-cannibalisation)
-<1-2 paragraphs: what makes this page distinct from existing pages on adjacent topics. Cite the closest-existing page from cannib report (if applicable) and explain the angle this page takes that the existing page does not.>
-
-## Key questions this page must answer
-1. ...
-(6-10 questions, each tied to the statutory anchor)
-
-## Manager pre-decisions placeholder
-- Category routing: <confirm or override>
-- Worked-example numbers: <flag any rate-by-reference verification needed>
-- Cross-link targets: <list>
-
-## Stage 2 research target list
-- Competitor pages to fetch (live URLs only - Stage 2 verifies before listing): <2-4 candidates>
-- HMRC manuals to cite: <manual section references>
-- Case-law to ground: <citations>
-
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4]
-
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here]
-```
-
-## Per-write statute verification (§16.35 - critical)
-
-Every statutory citation you place in a seed must be WebFetch-verified against legislation.gov.uk at write time. If uncertain, flag it for Stage 1b drift review rather than guessing. Wave 8 + Wave 9 caught 14 substantive statutory drifts this way - the discipline is non-negotiable.
-
-## Commit discipline (one commit per pick)
+## Per-page workflow (NETNEW_PROGRAM §7 19-step - condensed)
 
 For each pick:
-1. Verify statutes via WebFetch
-2. Write the seed brief to `C:\Users\user\Documents\Accounting\briefs\property\megawave1/<slug>.md`
-3. `git add briefs/property/megawave1/<slug>.md`
-4. `git commit -m "MegaWave 1 Stage 1 A: <slug> seed (M1-A-B1)"`
-5. Flip the tracker row for this pick from ⬜ to ✅ via ABSOLUTE PATH on main: edit `C:\Users\user\Documents\Accounting\docs\property\megawave1_page_tracker.md` in-place. (Stage 1 = ✅ when seed committed; Stage 2 will re-claim for full brief.)
+1. Read the brief at `C:\Users\user\Documents\Accounting\briefs\property\megawave1/<slug>.md` + flip tracker row to 🟦 in-progress
+2. Read HP sections referenced + cannib-companion existing pages
+3. WebFetch every statute citation + every competitor URL (§16.35 / §16.31)
+4. Draft the page body at `C:\Users\user\Documents\Accounting\Property\web\content\blog/<slug>.md` with frontmatter (slug, category, canonical URL, title, metaTitle, metaDescription, faqs[], reviewedBy, sourcesVerifiedAt, schema, editorialNote)
+5. Validate FAQs cover all "key questions" from brief
+6. Run `npm run build` in `C:\Users\user\Documents\Accounting\Property\web` - PASS required
+7. `git add C:\Users\user\Documents\Accounting\Property\web\content\blog/<slug>.md`
+8. `git commit -m "MegaWave 1 A: <slug> (M1-A-B1)"`
+9. Flip tracker row from 🟦 to ✅ via ABSOLUTE PATH; include commit SHA + body word count + FAQ count + brief notes
+10. If discoveries (cross-link gaps, calculator ideas, etc.): log to `C:\Users\user\Documents\Accounting\docs\property\megawave1_discovery_log_session_A.md` via ABSOLUTE PATH
 
-## Batch-done signal (mandatory, after ALL 6 picks committed)
+Anti-templating: after page 3, self-check against pages 1 + 2 - any sentences identical across pages = drift; rewrite.
 
-When all 6 picks in your batch are committed AND tracker shows ✅ for every slug, write a single file:
+## Drift watchpoints (Wave 8 + Wave 9 catches that apply broadly)
 
-`C:\Users\user\Documents\Accounting\briefs\property\megawave1\_signals/batch_M1-A-B1_done.json`
+- **Statutes change**: every rate, every section number, every commencement date - WebFetch at write time. Wave 8 F-3 (RPDT "repealed" was wrong) + Wave 9 F-2 (FA 2025 s.51 not FA 2024 for 5% surcharge) + Wave 9 F-13 (ECTEA s.8/34/36 verbatim headings) all caught here.
+- **HP-lock errors**: conductor mini-locks have been wrong in 7 cases across Waves 8-9. If the brief cites a section that contradicts your write-time WebFetch of legislation.gov.uk, TRUST THE WEBFETCH + flag the HP mismatch.
+- **Bug #3 URL trap**: never invent plausible competitor URLs. If brief's competitor URL is dead at write time, do session-side WebSearch + replace, OR mark `Stage 2 missed; session-side at write time`.
+- **Phased commencement** (ECCTA-style): for any provision with rollout schedule, cross-check legislation.gov.uk + the canonical campaign-page tracker at write time.
 
-containing:
+## Batch-done signal (mandatory)
 
+After all 6 pages committed + tracker ✅:
+
+`C:\Users\user\Documents\Accounting\briefs\property\megawave1\_signals/batch_M1-A-B1_done.json` containing:
 ```json
 {
   "batch_id": "M1-A-B1",
-  "agent_id": "<your wt session name, e.g. MW1-Stage1-A>",
+  "agent_id": "<wt session name>",
   "completed_at": "<ISO timestamp>",
-  "commit_shas": ["<sha1>", "<sha2>", "<sha3>", ...],
-  "slugs_done": ["<slug1>", "<slug2>", "<slug3>", ...]
+  "commit_shas": [...],
+  "slugs_done": [...]
 }
 ```
 
-Then exit cleanly (close the tab or `/exit`). The rolling orchestrator polls for this marker every 30s and dispatches the next batch.
+Then exit cleanly. Rolling orchestrator polls for marker every 30s; next batch dispatches once detected.
 
-## Failure modes
+## Handover hygiene (§16.14 - critical)
 
-- If a brief's statutory anchor is uncertain after WebFetch: write the seed with a flagged `## NEW HP LOCK NEEDED` note + raise an HP-extension flag in `C:\Users\user\Documents\Accounting\docs\property\megawave1_site_wide_flags.md`. Do not block.
-- If a competitor URL is dead (Bug #3 + #5 lesson from Wave 8/9): omit it; mark `Stage 2 must re-source`.
-- If two batches in the same bucket conflict on a tracker row: re-read the tracker before flipping; latest write wins. (Should not happen - rolling is sequential within a bucket lane.)
+If you commit a page but feel context-pressured: FLIP THE TRACKER ROW FIRST (page committed = ✅) before stopping. Then if context runs out, the fresh sub-agent picks up from the right state. Never leave tracker in 🟦 (in-progress) state when stopping - flip to ✅ on commit, OR back to ⬜ via the orchestrator's batch-reclaim if uncommitted.

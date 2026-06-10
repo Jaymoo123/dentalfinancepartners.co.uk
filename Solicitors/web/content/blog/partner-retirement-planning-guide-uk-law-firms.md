@@ -11,6 +11,12 @@ altText: "UK law firm partners discussing retirement planning around boardroom t
 image: ""
 h1: "Partner Retirement Planning: A Complete Guide for UK Law Firms"
 summary: "Partner retirement planning requires careful coordination of tax strategy, pension arrangements, and practice succession. This guide covers the key considerations for law firm partners preparing for retirement."
+keyTakeaways:
+  - "Start partner retirement planning 5 to 10 years out to maximise pension contributions, structure tax efficiently and arrange succession."
+  - "Goodwill is commonly valued at 1 to 3 times annual profit share, so a £200,000 profit share might generate £200,000 to £600,000."
+  - "Fixed annual retirement payments are usually income, while capital distributions for partnership interests may qualify for capital gains treatment."
+  - "The pension annual allowance is £60,000 for 2025/26, tapering toward £10,000 for high earners, with carry-forward of unused allowance available."
+  - "Pension benefits cannot normally be accessed before age 55 (rising to 57 from 2028) without significant tax penalties."
 schema: ""
 faqs:
   - question: "When should I start planning for retirement as a law firm partner?"

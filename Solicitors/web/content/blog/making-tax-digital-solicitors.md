@@ -1,229 +1,175 @@
 ---
-title: "Making Tax Digital for Solicitors: Complete Compliance Guide"
+title: "Making Tax Digital for Solicitors: VAT and Income Tax Explained"
 slug: "making-tax-digital-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/making-tax-digital-solicitors"
 date: "2026-04-01"
 author: "Accounts for Lawyers Editorial Team"
 category: "Sole Practitioner Tax"
-metaTitle: "Making Tax Digital for Solicitors | MTD Guide 2026"
-metaDescription: "MTD for Income Tax hits solicitors from April 2026. VAT, ITSA, and Corporation Tax deadlines, software requirements, and penalties for law firms."
-altText: "UK solicitor working on laptop with Making Tax Digital compliance software for law firm tax obligations"
+metaTitle: "Making Tax Digital for Solicitors | MTD VAT & ITSA Guide"
+metaDescription: "MTD for VAT already applies to every VAT-registered law firm. MTD for Income Tax phases in from April 2026 (£50k), 2027 (£30k) and 2028 (£20k). What solicitors must do."
+altText: "UK solicitor working on a laptop using Making Tax Digital compatible software to keep digital records for a law firm"
 image: ""
 h1: "Making Tax Digital for Solicitors: What You Need to Know"
-summary: "Making Tax Digital affects all UK solicitors through VAT, Income Tax, and Corporation Tax requirements. This guide explains compliance deadlines, software requirements, and practical steps for law firms."
+summary: "Making Tax Digital affects UK solicitors through two regimes: MTD for VAT, which already applies to every VAT-registered firm, and MTD for Income Tax, which phases in from April 2026 by qualifying income. This guide explains who is in scope, when, the digital record and quarterly update rules, and how MTD sits alongside the SRA Accounts Rules."
+keyTakeaways:
+  - "MTD for VAT already applies to every VAT-registered firm regardless of turnover, since the £85,000 trigger was removed in April 2022."
+  - "MTD for Income Tax phases in by qualifying income: over £50,000 from April 2026, over £30,000 from April 2027, and over £20,000 from April 2028."
+  - "It applies to individuals, so each sole practitioner and individual partner is tested on their own qualifying income, not the firm's."
+  - "Incorporated firms pay corporation tax and sit outside MTD for Income Tax, with MTD for Corporation Tax proposed but having no confirmed start date."
+  - "MTD covers your own accounts, not client money, so SRA five-weekly client account reconciliations and separation are unchanged."
 schema: ""
 faqs:
-  - question: "How does MTD for income tax affect SRA Accounts Rules compliance?"
-    answer: "MTD focuses on business accounting rather than client money, so SRA Accounts Rules requirements remain unchanged. However, you must ensure your chosen software maintains proper separation between client money and practice funds, and that digital systems preserve required audit trails for SRA compliance."
-  - question: "What software do solicitors need for MTD compliance?"
-    answer: "You need MTD-compatible accounting software that maintains digital links between systems and properly separates client money for SRA compliance. Popular options include Sage, Xero, and specialist legal practice management systems. The software must connect directly to HMRC for digital submissions."
-  - question: "What happens if I miss a quarterly MTD submission deadline?"
-    answer: "HMRC will impose fixed penalties for late quarterly submissions, similar to current self-assessment penalties. With four quarterly deadlines instead of one annual deadline, the risk of inadvertent penalties increases, making reliable systems and professional support more important."
   - question: "When does Making Tax Digital apply to solicitors?"
-    answer: "MTD for VAT already applies to most law firms with turnover over £85,000. Income Tax MTD starts April 2026 for sole practitioners and partners with business income over £50,000. Corporation Tax MTD begins April 2026 for incorporated firms with turnover exceeding £10.2 million."
-  - question: "What penalties apply for MTD non-compliance?"
-    answer: "MTD penalties are automatic and start from £200 for late VAT submissions, increasing based on your tax liability. Income Tax penalties follow similar structures from April 2026. The digital system is stricter than paper filing, with fewer excuses accepted for late submissions."
-  - question: "Can I still use Excel spreadsheets for my practice accounts under MTD?"
-    answer: "No, MTD for income tax requires compatible software that can maintain digital records and submit quarterly updates to HMRC digitally. Manually maintained Excel spreadsheets don't meet the digital record-keeping requirements, though some MTD software can import Excel data."
-  - question: "Do law firm partners need separate MTD compliance?"
-    answer: "Yes, each partner earning over £30,000 from their profit share needs individual MTD compliance, even though the partnership files its own return. Partners remain personally responsible for their MTD obligations regardless of the partnership structure."
+    answer: "MTD for VAT already applies to every VAT-registered law firm, regardless of turnover. The old £85,000 turnover trigger was removed in April 2022, so all VAT-registered firms keep digital VAT records and file VAT returns through compatible software. MTD for Income Tax then phases in by qualifying income: from 6 April 2026 if your gross trading plus property income is over £50,000, from 6 April 2027 if it is over £30,000, and from 6 April 2028 if it is over £20,000."
   - question: "When does MTD for Income Tax become mandatory for solicitors?"
-    answer: "MTD for Income Tax becomes mandatory from April 2026 for individuals with business or property income over £30,000 annually. This includes most sole practitioners, partners, and LLP members whose income from legal practice exceeds this threshold."
+    answer: "MTD for Income Tax is phased by qualifying income (your gross trading plus property income, before expenses). The first stage starts 6 April 2026 for individuals over £50,000, so most full-time sole practitioners and individual partners are in scope from day one. The threshold then drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. It applies to individuals on their self-assessment income, not to companies."
+  - question: "Does MTD for Income Tax apply to incorporated law firms?"
+    answer: "No. MTD for Income Tax is an income tax regime, so it applies to sole practitioners and to individual partners and LLP members reporting their profit share on self-assessment. An incorporated firm pays corporation tax, which sits outside MTD for Income Tax. MTD for Corporation Tax has been proposed but no start date is confirmed, so there is no current corporation tax MTD obligation. An incorporated firm that is VAT-registered is still inside MTD for VAT."
+  - question: "How does MTD affect SRA Accounts Rules compliance?"
+    answer: "MTD covers your own business accounting and tax filing, not client money, so the SRA Accounts Rules are unchanged. Your software must still keep client money fully separate from office money, support five-weekly client account reconciliations and preserve the audit trail your COFA relies on. Choose a system that satisfies both HMRC digital record-keeping and SRA separation, rather than treating them as a single ledger."
+  - question: "What software do solicitors need for MTD compliance?"
+    answer: "You need software that HMRC recognises for the relevant regime, keeps digital records and maintains digital links between systems so data is not retyped. Options range from cloud accounting packages to legal practice management systems with built-in MTD support. The key test is that the software connects directly to HMRC for VAT returns and, where you are in scope, for Income Tax quarterly updates, while keeping client and office money separate for the SRA."
+  - question: "Can I still use spreadsheets for my practice accounts under MTD?"
+    answer: "A manually kept spreadsheet on its own does not meet the digital record-keeping or digital-link requirements. You can use spreadsheets if they are connected to HMRC through bridging software that preserves digital links from record to submission, but most firms find compatible accounting software simpler and less error-prone, especially given the SRA need to keep client money separate."
+  - question: "Do law firm partners need their own MTD for Income Tax compliance?"
+    answer: "Yes. The partnership or LLP files its own return, but each individual partner or member is taxed on their profit share through self-assessment, so MTD for Income Tax is assessed on each individual by their own qualifying income. A partner whose qualifying income is over £50,000 is in scope from 6 April 2026, over £30,000 from 6 April 2027, and over £20,000 from 6 April 2028. Note that HMRC has confirmed the treatment of partnerships within MTD for Income Tax is being finalised separately, so check current guidance for your firm's start point."
+  - question: "What penalties apply for missing MTD deadlines?"
+    answer: "Late VAT and Income Tax submissions sit within HMRC's points-based late-submission regime: each missed deadline adds a penalty point, and a financial penalty is charged once you reach the points threshold for your filing frequency, with separate late-payment penalties and interest on tax paid late. With quarterly Income Tax updates there are more deadlines than under annual self-assessment, so reliable systems and clear internal ownership of filing dates matter more."
 ---
 
-<p>Making Tax Digital (MTD) is transforming how solicitors and law firms handle their tax obligations. This digital-first approach requires specific software, quarterly reporting, and new record-keeping standards that affect every aspect of legal practice finance.</p>
+<p>Making Tax Digital (MTD) is HMRC's programme to move record-keeping and tax filing into compatible software with digital links from record to return. For solicitors it lands as two separate regimes that are often confused: <strong>MTD for VAT</strong>, which already applies to every VAT-registered firm, and <strong>MTD for Income Tax</strong>, which phases in from April 2026 based on each individual's income. They are different taxes, with different triggers and different start dates.</p>
 
-<p>Whether you're a sole practitioner, law firm partner, or practice manager, understanding MTD requirements is essential for maintaining compliance and avoiding penalties.</p>
+<p>Whether you are a sole practitioner, an individual partner or LLP member, or a practice manager, the first job is to work out which regime you are in and when. This guide sets out both, the record-keeping and quarterly update rules, and how MTD sits alongside the SRA Accounts Rules.</p>
 
-<h2>What is Making Tax Digital for Solicitors?</h2>
+<h2>The two MTD regimes that affect solicitors</h2>
 
-<p>Making Tax Digital is HMRC's initiative to digitise the UK tax system. For solicitors, this means using compatible software to keep digital records and submit returns electronically for VAT, Income Tax, and Corporation Tax.</p>
+<p><strong>MTD for VAT</strong> applies to <strong>every VAT-registered business</strong>. The old £85,000 turnover trigger was removed in April 2022, so a firm being VAT-registered is what puts it in scope, not its turnover. If your firm is registered for VAT it should already be keeping digital VAT records and filing returns through compatible software. (The VAT registration threshold itself is a separate figure: a firm must register once taxable turnover exceeds £90,000, in force from 1 April 2024. Once registered, you are inside MTD for VAT.)</p>
 
-<p>The system replaces traditional paper-based processes with mandatory digital record-keeping and quarterly reporting. This affects how you track client money, manage trust accounts, and report business income.</p>
+<p><strong>MTD for Income Tax</strong> (sometimes called MTD for ITSA) is the bigger change for most practices, and it is phased in by <strong>qualifying income</strong>, meaning your gross trading plus property income before expenses:</p>
 
-<p>MTD operates in phases. VAT came first, Income Tax follows in April 2026, and Corporation Tax requirements begin in April 2026 for larger companies.</p>
-
-<h2>Key MTD Requirements for Solicitors</h2>
-<p>MTD for income tax solicitors involves several new obligations that differ significantly from current self-assessment processes:</p>
-
-<h3>Digital Record Keeping</h3>
-
-<p>You must maintain digital records of all business income and expenses using MTD-compatible software. Paper records and basic spreadsheets that aren't linked to MTD software won't suffice.</p>
-
-<p>For legal practices, this means digitally recording client fees, disbursements, office expenses, professional indemnity insurance, and SRA fees within your chosen software system.</p>
-
-<h3>Quarterly Reporting</h3>
-
-<p>Instead of annual self-assessment, you'll submit quarterly updates to HMRC showing income and expenses for each three-month period. These updates are due by the end of the month following each quarter.</p>
-
-<p>The quarterly periods run: 6 April-5 July, 6 July-5 October, 6 October-5 January, and 6 January-5 April.</p>
-
-<h3>End of Year Declaration</h3>
-
-<p>You'll still need to complete an annual declaration by 31 January, but this becomes a finalisation of the quarterly data rather than a complete self-assessment return.</p>
-
-<h2>Income Tax MTD: April 2026 Start</h2>
-
-<p>Making Tax Digital for Income Tax affects sole practitioners and law firm partners from April 2026. This is the biggest change, impacting how you report partnership drawings, business profits, and personal tax.</p>
-
-<p>Sole practitioners with business income over £50,000 must comply from day one. Partners in traditional partnerships and LLP members will need to report their share of practice profits quarterly.</p>
-
-<p><strong>Income Tax MTD requirements:</strong></p>
 <ul>
-<li>Digital record-keeping for all business income and expenses</li>
-<li>Quarterly reporting to HMRC</li>
-<li>Annual self-assessment continues alongside quarterly reports</li>
-<li>Compatible software for all business records</li>
+<li><strong>From 6 April 2026:</strong> qualifying income over <strong>£50,000</strong></li>
+<li><strong>From 6 April 2027:</strong> qualifying income over <strong>£30,000</strong></li>
+<li><strong>From 6 April 2028:</strong> qualifying income over <strong>£20,000</strong></li>
 </ul>
 
-<p>For a Manchester sole practitioner earning £75,000 annually, this means quarterly reports on practice income, office expenses, professional fees, and other business costs.</p>
+<p>MTD for Income Tax applies to <strong>individuals</strong>: sole practitioners, and individual partners and LLP members reporting their profit share on self-assessment. It does <strong>not</strong> apply to companies, because it is an income tax regime, not corporation tax. There is more on the corporation tax position below.</p>
 
-<h2>Corporation Tax MTD Requirements</h2>
+<h2>What is Making Tax Digital for solicitors?</h2>
 
-<p>Incorporated law firms face Corporation Tax MTD from April 2026, but only if their annual turnover exceeds £10.2 million. Most smaller incorporated practices won't be caught immediately.</p>
+<p>For solicitors, MTD means using compatible software to keep digital records and to send information to HMRC electronically, rather than relying on paper records or a manually maintained spreadsheet. For VAT that has been the position for some years. For Income Tax it brings a new rhythm: quarterly updates during the year, replacing the single annual data-entry exercise.</p>
 
-<p>However, the threshold may reduce over time, so incorporated firms should prepare for eventual compliance. This affects limited companies operating as law firms or holding companies for multiple practices.</p>
+<p>MTD touches how you record fee income, disbursements, office expenses, professional indemnity insurance and SRA fees inside your software. It does <strong>not</strong> change how you handle client money: that remains governed by the SRA Accounts Rules, and client money is never the firm's income (see the SRA section below).</p>
 
-<h2>Compliance Deadlines and Penalties</h2>
+<h2>MTD for Income Tax: who is in scope, and when</h2>
 
-<p>Missing MTD deadlines results in automatic penalties. For VAT, late submission penalties start at £200 and increase based on your VAT liability. Income Tax penalties follow a similar structure from April 2026.</p>
+<p>The threshold that matters is your <strong>qualifying income</strong>, not your profit. A sole practitioner with £55,000 of practice turnover but £30,000 of profit is still over the £50,000 line and is in scope from 6 April 2026. The same gross-income test applies at each later stage.</p>
 
-<p>The penalty system is stricter than traditional paper filing. HMRC expects digital compliance, and technical problems with your software won't excuse late submissions.</p>
+<p>For an anonymised illustration, a sole practitioner billing around £75,000 a year is over the £50,000 threshold and joins from 6 April 2026. A consultant solicitor with a smaller practice billing around £35,000 a year is below £50,000, so does not join in 2026, but is over £30,000 and so comes into scope from 6 April 2027. Working out the exact start date is simply a matter of matching each person's qualifying income to the phased thresholds.</p>
 
-<p><strong>Current deadlines:</strong></p>
+<p><strong>What MTD for Income Tax requires once you are in scope:</strong></p>
 <ul>
-<li>VAT returns: one month and seven days after period end</li>
-<li>Income Tax (from 2026): quarterly reports by specific dates</li>
-<li>Corporation Tax (large companies): 12 months from period end</li>
+<li>Digital records of all business income and expenses, kept in compatible software</li>
+<li>Quarterly updates sent to HMRC during the tax year</li>
+<li>A final declaration after year end that finalises the figures (this replaces the data-entry part of the old self-assessment return)</li>
+<li>Digital links between systems, so data flows without being retyped at any stage</li>
 </ul>
 
-<h2>Practical Steps for Law Firm Compliance</h2>
+<p>Property income counts towards the same qualifying-income test. A solicitor with practice income plus rental income should add both together when checking which threshold applies. For locum and consultant solicitors operating through a personal service company, note that the company's profits sit outside MTD for Income Tax, although the individual's own self-assessment income is tested in the normal way; see our guide to <a href="/blog/locum-solicitor-tax/locum-solicitor-ir35-rules-2025-26">locum solicitor IR35 rules</a> for how the PSC structure interacts with status.</p>
 
-<p>Start by auditing your current systems. Most practices need to upgrade their accounting software or improve integration between different programs.</p>
+<h2>Digital record-keeping</h2>
 
-<p>For partnerships, ensure your profit-sharing arrangements are properly recorded in digital format. The partnership agreement should specify how MTD reporting responsibilities are divided between partners.</p>
+<p>Under both regimes you must keep digital records of the relevant income and expenses in compatible software. For a legal practice that means recording fee income, disbursements, office rent, professional indemnity insurance, SRA fees, professional subscriptions and capital allowances on equipment digitally, with the data captured at source rather than re-keyed from paper at year end.</p>
 
-<p><strong>Implementation checklist:</strong></p>
+<p>Your digital records for MTD for Income Tax should include:</p>
 <ul>
-<li>Review current accounting software compatibility</li>
-<li>Ensure proper client money separation</li>
-<li>Test digital links between systems</li>
-<li>Train staff on new procedures</li>
-<li>Update partnership or LLP agreements if needed</li>
-<li>Plan for increased compliance costs</li>
+<li>All fee income from legal work</li>
+<li>Business expenses including office costs, insurance and professional subscriptions</li>
+<li>Capital allowances on equipment and fixtures</li>
+<li>Where you are VAT-registered, your VAT records under MTD for VAT</li>
 </ul>
 
-<p>Consider seeking specialist advice from accountants experienced with legal practice requirements. The combination of MTD compliance and SRA rules creates unique challenges that generic advice doesn't address.</p>
+<p>A manually kept spreadsheet on its own does not satisfy the digital-link requirement. Spreadsheets can still play a part if they connect to HMRC through bridging software that preserves the links, but most firms find dedicated software simpler, particularly because it can also keep client money separate for the SRA.</p>
 
-<h2>Impact on Different Practice Structures</h2>
+<h2>Quarterly updates under MTD for Income Tax</h2>
 
-<p>Sole practitioners face Income Tax MTD from April 2026, requiring quarterly reporting of practice profits alongside annual self-assessment. This doubles the reporting burden but provides better cash flow visibility.</p>
+<p>Instead of a single annual self-assessment return, in-scope individuals send quarterly updates summarising income and expenses for each period, followed by a final declaration after the tax year ends. The standard quarterly periods run:</p>
+<ul>
+<li>6 April to 5 July</li>
+<li>6 July to 5 October</li>
+<li>6 October to 5 January</li>
+<li>6 January to 5 April</li>
+</ul>
 
-<p>Traditional partnerships must adapt their profit allocation methods for quarterly reporting. Each partner needs individual MTD compliance for their profit share, creating coordination challenges.</p>
+<p>Each update reports the income and expenses for that three-month period. After the year end you confirm the full-year position through a final declaration, which finalises the figures (including any adjustments and reliefs) and settles the tax due. The quarterly updates replace the data-entry burden of the annual return rather than adding a fifth filing on top of it.</p>
 
-<p>LLPs face similar issues to partnerships, with each member reporting their profit share quarterly. The LLP itself may also need Corporation Tax MTD compliance if turnover exceeds thresholds.</p>
+<h2>MTD for VAT: already live for VAT-registered firms</h2>
 
-<p>Incorporated practices already handle Corporation Tax digitally, but larger firms will face additional MTD requirements from April 2026.</p>
+<p>If your firm is VAT-registered, you are already inside MTD for VAT and should be keeping digital VAT records and filing VAT returns through compatible software. There is no turnover floor: it is registration, not turnover, that determines scope.</p>
 
-<h2>Getting Professional Support</h2>
+<p>Legal services are standard-rated for VAT at 20%, and the disbursement-versus-supply distinction is a recurring source of VAT error in conveyancing in particular. MTD does not change those rules, only how the records are kept and the return is filed. For the substantive VAT position see our guides to <a href="/blog/vat-compliance/vat-registration-for-uk-law-firms">VAT registration for law firms</a> and the treatment of <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements and VAT</a>.</p>
 
-<p>Making Tax Digital for solicitors involves complex interactions between tax law, SRA requirements, and practice management. Professional guidance helps avoid costly mistakes and ensures proper implementation.</p>
+<h2>What about Corporation Tax?</h2>
 
-<p>Look for accountants who understand both MTD requirements and legal practice regulations. Generic MTD advice doesn't address client money handling, partnership taxation, or SRA compliance issues.</p>
+<p>There is no corporation tax MTD obligation in force. <strong>MTD for Corporation Tax has been proposed but no start date is confirmed</strong>, so incorporated firms have nothing to file under MTD for Corporation Tax at present. Do not assume a fixed commencement date: HMRC has indicated it will give significant notice, and any mandation would be some way off.</p>
 
-<p>Early preparation reduces implementation stress and helps identify potential problems before deadlines. Consider <a href="/services">specialist accounting support</a> to ensure smooth compliance across all MTD requirements.</p>
+<p>This matters because MTD for Income Tax and MTD for Corporation Tax are often run together in people's minds. An incorporated law firm pays corporation tax and is outside MTD for Income Tax; its individual director-shareholders are tested for MTD for Income Tax only on their own self-assessment income (for example rental income), if any. A VAT-registered company is, separately, already inside MTD for VAT.</p>
+
+<h2>Deadlines and penalties</h2>
+
+<p>VAT returns under MTD are filed on the firm's normal VAT cycle, with payment due one month and seven days after the period end for standard quarterly VAT periods. Under MTD for Income Tax there are quarterly update deadlines through the year plus the final declaration after year end.</p>
+
+<p>Late submissions sit within HMRC's points-based late-submission regime: each missed deadline adds a point, and a financial penalty is charged once you reach the threshold for your filing frequency, with separate late-payment penalties and interest on tax paid late. Because MTD for Income Tax brings more deadlines than annual self-assessment, the practical risk is an inadvertent missed quarter, so clear internal ownership of filing dates is worth more than it was under the old annual cycle.</p>
+
+<h2>How MTD interacts with the SRA Accounts Rules</h2>
+
+<p>MTD governs your own business accounting and tax filing. It does <strong>not</strong> govern client money, which remains governed by the SRA Accounts Rules. Your MTD software, or the wider system around it, must continue to:</p>
+<ul>
+<li>Keep client money fully separate from office (practice) money</li>
+<li>Support reconciliation of the client account, signed off by the COFA or a manager, at least every five weeks</li>
+<li>Preserve the audit trail the SRA expects, alongside the digital records HMRC expects</li>
+</ul>
+
+<p>Client money is not the firm's income, so it never forms part of an MTD income figure. The realistic risk is the reverse: choosing software for HMRC filing that does not cleanly support SRA client account separation. Pick a system that satisfies both, and keep your <a href="/sra-compliance">SRA compliance procedures</a> aligned with how the data flows through it.</p>
+
+<h2>Impact on different practice structures</h2>
+
+<p><strong>Sole practitioners</strong> over the relevant threshold report practice profits through quarterly MTD for Income Tax updates and a final declaration, replacing the old annual data entry. <strong>Individual partners and LLP members</strong> are each tested on their own qualifying income, even though the partnership or LLP files its own return; the firm should make sure each individual knows their start date and has compatible software for their share. <strong>Incorporated firms</strong> are outside MTD for Income Tax (corporation tax), but are inside MTD for VAT if VAT-registered, and should simply note the proposed-but-unconfirmed status of MTD for Corporation Tax.</p>
+
+<p>For the underlying tax treatment of profit shares, see our guide to <a href="/blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms">how LLP members are taxed</a>, and for the individual filing position our <a href="/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide">solicitor self-assessment guide</a>.</p>
+
+<h2>Practical steps to prepare</h2>
+
+<ul>
+<li><strong>Confirm which regime applies and when.</strong> If you are VAT-registered you are already in MTD for VAT. For MTD for Income Tax, match each individual's qualifying income to the £50,000 (2026), £30,000 (2027) and £20,000 (2028) thresholds.</li>
+<li><strong>Check software compatibility.</strong> Verify your accounting or practice management software is HMRC-recognised for the regimes you are in, and that it keeps client and office money separate for the SRA.</li>
+<li><strong>Test digital links.</strong> Make sure data flows between systems without being retyped at any stage, which is the requirement most often missed.</li>
+<li><strong>Assign ownership of deadlines.</strong> With quarterly Income Tax updates, decide who is responsible for each filing date.</li>
+<li><strong>Update partnership or LLP processes.</strong> Ensure each partner's or member's profit share is recorded in a way that supports their individual MTD for Income Tax obligations.</li>
+</ul>
+
+<p>Many firms run their chosen software in parallel for a period before their mandatory start date, so the team is comfortable with quarterly updates before they count.</p>
+
+<h2>MTD software for legal practices</h2>
+
+<p>Compatible options range from cloud accounting packages to legal-specific practice management systems with built-in MTD support. Useful features for a law firm include:</p>
+<ul>
+<li>HMRC recognition for the regimes you are in (VAT and, where relevant, Income Tax)</li>
+<li>Legal-specific expense categories and disbursement handling</li>
+<li>Client and office money separation for the SRA Accounts Rules</li>
+<li>Integration with time recording, billing and case management to avoid duplicate entry</li>
+</ul>
+
+<p>Verify current MTD recognition before committing, since the list of recognised software changes over time. Our <a href="/blog/practice-finance-cash-flow/law-firm-accounting-software-guide-uk-solicitors">law firm accounting software guide</a> compares the main options for solicitors.</p>
+
+<h2>Getting professional support</h2>
+
+<p>MTD for solicitors sits at the intersection of tax filing, software and SRA client-money obligations. The combination is what creates the work: generic MTD advice rarely addresses client money handling, partner-level income testing, or how a legal practice's billing and disbursement flows feed the digital records.</p>
+
+<p>If you would value a second pair of eyes on which regime applies to whom, when each person comes into scope, and whether your current software meets both HMRC and SRA requirements, consider <a href="/services">specialist accounting support for law firms</a>. Early preparation, rather than a last-minute scramble before a quarterly deadline, is what keeps MTD from becoming a problem.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
-<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our wider guide to sole practitioner taxation, self-assessment and digital record-keeping for solicitors.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Sole Practitioner Tax guides →</a></p>
 </div>
-
-<h2>Who Must Comply with MTD for Income Tax</h2>
-<p>MTD for Income Tax applies to individuals with qualifying income over £30,000 annually. For solicitors, this typically includes:</p>
-
-<ul>
-<li><strong>Sole practitioners</strong> with annual practice income exceeding £30,000</li>
-<li><strong>Law firm partners</strong> whose profit share exceeds £30,000</li>
-<li><strong>LLP members</strong> with designated member income over £30,000</li>
-<li><strong>Solicitors with property rental income</strong> above the threshold</li>
-</ul>
-
-<p>The £30,000 threshold applies to gross income, not profit. A sole practitioner with £35,000 turnover but £25,000 profit still needs to comply.</p>
-
-<h2>MTD Software Options for Legal Practices</h2>
-<p>Choosing appropriate software is critical for <strong>MTD for income tax solicitors</strong> compliance. The software must be HMRC-recognised and capable of submitting data directly to HMRC.</p>
-
-<p>Popular options include cloud-based accounting packages like Xero, QuickBooks, and Sage, as well as specialist legal practice management systems with MTD capability.</p>
-
-<p>Consider software that integrates with your existing practice management system to avoid duplicate data entry between client billing and tax compliance systems.</p>
-
-<h2>Preparing for April 2026 Implementation</h2>
-<p>With MTD for income tax solicitors becoming mandatory from April 2026, early preparation is essential:</p>
-
-<ul>
-<li><strong>Evaluate current systems</strong> - Assess whether your existing accounting software is MTD-compatible</li>
-<li><strong>Consider integration</strong> - Look for solutions that work with your practice management system</li>
-<li><strong>Plan training</strong> - Ensure you or your staff understand the new quarterly reporting requirements</li>
-<li><strong>Review processes</strong> - Update your bookkeeping processes to ensure digital compliance</li>
-</ul>
-
-<p>Many solicitors find it helpful to run parallel systems during 2025 to test their chosen software before the mandatory start date.</p>
-
-<h2>Digital Record-Keeping Requirements</h2>
-<p>Under MTD for income tax, solicitors must maintain digital records of all business income and expenses. This means Excel spreadsheets maintained manually won't meet the requirements – you need compatible software that can digitally submit information to HMRC.</p>
-
-<p>Your digital records must include:</p>
-<ul>
-<li>All fee income from legal work</li>
-<li>Business expenses including office rent, insurance, and professional subscriptions</li>
-<li>VAT records if you're VAT registered</li>
-<li>Capital allowances on equipment and fixtures</li>
-</ul>
-
-<p>The software must be able to preserve records digitally and submit quarterly updates without manual intervention at the final step.</p>
-
-<h2>Quarterly Reporting Obligations</h2>
-<p>Instead of completing one annual self-assessment return, MTD for income tax solicitors must submit quarterly updates by specific deadlines:</p>
-<ul>
-<li>6-9 April: Quarter ending 5 April</li>
-<li>6-9 July: Quarter ending 5 July</li>
-<li>6-9 October: Quarter ending 5 October</li>
-<li>6-9 January: Quarter ending 5 January</li>
-</ul>
-
-<p>Each quarterly update reports your practice's income and expenses for the three-month period. You'll still complete an annual End of Period Statement and final declaration, but the quarterly submissions replace much of the annual return process.</p>
-
-<h2>Software and Systems</h2>
-<p>MTD-compatible software for legal practices ranges from basic cloud accounting packages to integrated practice management systems. Key features to consider include:</p>
-
-<p><strong>Essential features:</strong></p>
-<ul>
-<li>HMRC MTD compatibility certification</li>
-<li>Legal-specific expense categories</li>
-<li>Integration with existing case management systems</li>
-<li>VAT handling if you're VAT registered</li>
-</ul>
-
-<p><strong>Advanced features:</strong></p>
-<ul>
-<li>Time recording and billing integration</li>
-<li>Client money accounting separation</li>
-<li>Multi-currency handling for international matters</li>
-<li>Partnership profit allocation tools</li>
-</ul>
-
-<p>Popular options include Xero, QuickBooks Online, and legal-specific systems like Zola Suite or LEAP, though you should verify current MTD compatibility before making decisions.</p>
-
-<h2>SRA Compliance Considerations</h2>
-<p>The transition to digital record-keeping intersects with SRA Accounts Rules compliance in several ways. While MTD for income tax solicitors focuses on business accounting, you must ensure your chosen software maintains the required separation between client money and practice funds.</p>
-
-<p>Key compliance points:</p>
-<ul>
-<li>Client money records remain separate from business accounting</li>
-<li>Digital systems must maintain audit trails for SRA compliance</li>
-<li>Regular reconciliation procedures continue as normal</li>
-<li>COFA responsibilities include overseeing both financial systems</li>
-</ul>
-
-<p>Consider how your MTD software will integrate with existing <a href="/sra-compliance">SRA compliance procedures</a> to avoid creating additional administrative burden.</p>

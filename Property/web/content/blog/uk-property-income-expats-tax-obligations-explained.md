@@ -3,7 +3,10 @@ title: "UK Rental Income Tax for Expats: Your Complete Obligation Map"
 slug: "uk-property-income-expats-tax-obligations-explained"
 canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-06-02"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-06-02"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "UK Rental Income Tax for Expats: Full Obligation Map"
@@ -143,7 +146,7 @@ faqs:
 
 <p>First, <strong>reporting.</strong> Every disposal of UK land by a non-resident must be reported to HMRC within 60 days of completion, whether or not any tax is due, and even where you make a loss. This is non-resident capital gains tax (NRCGT) reporting, and the 60-day clock is strict, with penalties for missing it. Second, <strong>the charge.</strong> Residential gains are taxed at 18% (basic-rate band) or 24% (higher and additional) in 2026/27, after the GBP3,000 annual exempt amount where you would qualify for it if resident.</p>
 
-<p>The relief that softens the charge is rebasing: for residential property you can usually use the 5 April 2015 market value as your base cost (5 April 2019 for non-residential), so only the gain accruing since the property came within the non-resident charge is taxed, not the whole gain since you bought it. The rebasing dates and the 60-day return are covered in our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT selling guide</a> and the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">NRCGT rates and reporting guide</a>; the wider rules sit in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property complete guide</a>.</p>
+<p>The relief that softens the charge is rebasing: for residential property you can usually use the 5 April 2015 market value as your base cost (5 April 2019 for non-residential), so only the gain accruing since the property came within the non-resident charge is taxed, not the whole gain since you bought it. The rebasing dates and the 60-day return are covered in our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">non-resident CGT selling guide</a> and the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">NRCGT rates and reporting guide</a>; the wider rules sit in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property complete guide</a>.</p>
 
 <p>One trap to flag before you time a sale around a planned return home: the temporary non-residence rule. If you sell while non-resident and then resume UK residence within roughly five years, certain gains can be recaptured and treated as accruing in the year you return. The rule now sits in <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/1M">TCGA 1992 s.1M</a> (the modern home of the charge formerly in s.10A, after the Finance Act 2019 rewrite). The period is five years, not four, which is the detail people most often get wrong.</p>
 
@@ -176,7 +179,7 @@ faqs:
 <li><strong>You are unsure whether you are UK resident</strong> &middot; <a href="/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree">SRT decision tree</a></li>
 <li><strong>You file UK self-assessment from abroad</strong> &middot; <a href="/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements">non-resident self-assessment guide</a></li>
 <li><strong>You are taxed in two countries</strong> &middot; <a href="/blog/non-resident-landlord-tax/foreign-tax-credit-uk-property-overseas-landlords">foreign tax credit guide</a></li>
-<li><strong>You are selling your UK property</strong> &middot; <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT selling guide</a> and <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">NRCGT rates and reporting</a></li>
+<li><strong>You are selling your UK property</strong> &middot; <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">non-resident CGT selling guide</a> and <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">NRCGT rates and reporting</a></li>
 <li><strong>You have not actually left the UK yet</strong> &middot; <a href="/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist">12-month pre-departure checklist</a></li>
 </ul>
 

@@ -11,6 +11,12 @@ altText: "UK solicitor partner reviewing profit share allocation documents in a 
 image: ""
 h1: "Salary vs Profit Share: Which Is More Tax Efficient for a UK Solicitor Partner?"
 summary: "A UK solicitor partner considering whether to take a salary or a profit share needs to understand the tax and NI consequences of each route. This guide compares the two structures for equity partners, fixed-share partners, and salaried partners, with worked examples showing the take-home difference."
+keyTakeaways:
+  - "Profit share avoids employer NIC of 15% on earnings above £5,000, which on a £100,000 partner saves the firm around £14,250 a year."
+  - "Partners pay Class 4 NIC at 6% and 2%, lower than employee Class 1 at 8% and 2%, with Class 2 abolished from April 2024."
+  - "For an £80,000 partner, profit share gives roughly £754 more take-home than salary, but the firm's saving from no employer NIC is the larger prize."
+  - "Salaried partners caught by the FA 2014 rules must be paid through PAYE, so a genuine capital contribution of at least 25% of disguised salary or real management rights can preserve self-employed treatment."
+  - "All figures use 2025/26 rates, with the 45% additional rate applying above £125,140."
 schema: ""
 faqs:
   - question: "Can a salaried partner in a law firm be taxed as self-employed?"

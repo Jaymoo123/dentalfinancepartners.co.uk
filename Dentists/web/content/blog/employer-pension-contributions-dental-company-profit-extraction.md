@@ -1,0 +1,153 @@
+---
+title: "Employer Pension Contributions as a Profit-Extraction Route for Dental Company Owners"
+slug: "employer-pension-contributions-dental-company-profit-extraction"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/employer-pension-contributions-dental-company-profit-extraction"
+date: "2026-06-03"
+author: "Dental Finance Partners Editorial Team"
+category: "Practice finance"
+metaTitle: "Employer Pension Contributions for Dental Companies"
+metaDescription: "Employer pension contributions let a dental company extract profit with corporation-tax relief and no NIC. The £60,000 allowance, taper and carry-forward."
+altText: "Dentist reviewing a pension contribution statement with an adviser"
+image: ""
+h1: "Employer Pension Contributions as a Profit-Extraction Route for Dental Company Owners"
+summary: "Employer pension contributions let a dental company move profit into the owner's private pension with corporation-tax relief and no NIC. This is the deep dive on one extraction lever: the paid-basis CT deduction, the £60,000 annual allowance, the high-earner taper, carry-forward, and the all-important interaction with NHS pension growth."
+schema: ""
+faqs:
+  - question: "Can my dental limited company pay into my pension?"
+    answer: "Yes. A dental limited company can make employer pension contributions directly into the owner-director's private pension, such as a SIPP or a workplace personal pension. The company is named as the contributor and pays the money gross into the pension. It is one of the most tax-efficient ways for an incorporated practice owner to move profit out of the company into long-term savings."
+  - question: "Are employer pension contributions tax-deductible for the company?"
+    answer: "Yes, provided they are wholly and exclusively for the trade. Under section 196 of the Finance Act 2004 the contribution is deducted in computing the company's trading profit, so it saves corporation tax at the company's rate (19%, 25%, or an effective marginal rate in between). Crucially, relief is given in the accounting period the contribution is actually paid, not accrued, so the timing of payment matters at the year-end."
+  - question: "Do employer pension contributions attract National Insurance?"
+    answer: "No. An employer pension contribution is not earnings and is not a taxable benefit in the director's hands, so there is no employer NIC and no employee NIC on it. That is a major advantage over salary or a bonus, where the company would pay employer NIC at 15% on earnings above the secondary threshold for 2025/26."
+  - question: "How is a company pension contribution better than a dividend?"
+    answer: "A dividend is paid out of profit that has already borne corporation tax, and is then taxed again in your hands at the dividend rates. An employer pension contribution is deducted before corporation tax and lands in the pension with no income tax and no NIC. The trade-off is access: pension money is locked up until you reach the minimum pension age, whereas a dividend is cash in hand now."
+  - question: "What is the annual allowance for pension contributions?"
+    answer: "The standard annual allowance is £60,000 for 2025/26. It is the total amount of tax-relieved pension input you can have across all your pensions in a tax year, including both your own and employer contributions, and, for a defined-benefit scheme like the NHS, the capitalised growth in your benefits. Contributions above your available allowance trigger an annual-allowance charge at your marginal rate."
+  - question: "Does the annual allowance taper for high-earning dentists?"
+    answer: "Yes. The allowance tapers where your threshold income exceeds £200,000 and your adjusted income exceeds £260,000 (2025/26). It reduces by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. Employer pension contributions count towards adjusted income, so a large company contribution can itself push a high-earning principal further into the taper."
+  - question: "Can I carry forward unused pension allowance?"
+    answer: "Yes. You use the current year's annual allowance first, then you can carry forward unused allowance from the previous 3 tax years, provided you were a member of a registered pension scheme in those years. This lets an owner who has under-contributed make a large one-off employer contribution after a strong year, potentially well above £60,000 in a single year."
+  - question: "Can the company pay more than my salary into my pension?"
+    answer: "Yes. Unlike personal contributions, which are capped by your relevant UK earnings, an employer contribution is not limited to your salary. The company can contribute up to your available annual allowance (including carry-forward) regardless of how small your salary is, which is one reason the company route suits owner-directors who take a low salary and dividends."
+  - question: "Is this the same as the NHS pension scheme?"
+    answer: "No. The NHS Pension Scheme is a separate defined-benefit arrangement based on your pensionable NHS earnings. The employer-contribution route discussed here funds a private defined-contribution pension, such as a SIPP, paid for by your company. The two are different schemes, but they share the same £60,000 annual allowance, so NHS pension growth and company contributions have to be measured together."
+  - question: "I am in the NHS pension already. Can I still make company contributions?"
+    answer: "Yes, but with care. You can run a private pension funded by your company alongside NHS membership, which is often how an incorporated principal rebuilds retirement provision after losing pensionability on the dividend part of their income. The catch is that NHS pension growth and the company contribution share one £60,000 allowance, so you must check your NHS input amount before deciding how much the company can safely contribute."
+  - question: "How does my NHS pension growth affect my annual allowance?"
+    answer: "Your NHS pension input amount, which is the capitalised growth in your NHS benefits over the year rather than the contributions you paid, counts against the same £60,000 allowance as any private contribution. A high-service dentist can have a large NHS input amount that leaves little headroom for a company contribution, so the private contribution has to be sized to the allowance left after NHS growth, not to the company's cash."
+  - question: "When does the company need to pay the contribution to get tax relief this year?"
+    answer: "The contribution must be actually paid before the company's accounting-period end to be deductible in that period. Relief is given on a paid basis under section 196 of the Finance Act 2004, so an accrued or merely committed contribution does not qualify. If you want the deduction in this year's accounts, the money has to leave the company and reach the pension before the year-end."
+  - question: "Can HMRC challenge an employer pension contribution as excessive?"
+    answer: "It can, for an owner-director or close relative. The contribution is deductible only if it is wholly and exclusively for the trade, and HMRC guidance at BIM46035 lets it look at whether the overall remuneration package for a controlling director is commercially justifiable for the work done. In practice, for a working principal taking a modest overall package, an employer pension contribution is rarely challenged, but it should sit within a defensible total reward."
+  - question: "What type of pension does the company pay into?"
+    answer: "Usually a defined-contribution pension that accepts employer contributions, most commonly a self-invested personal pension (SIPP) or a workplace personal pension. The scheme must be a registered pension scheme and the company must be set up as the contributor. It is the private DC pot that complements, rather than replaces, any NHS defined-benefit pension you hold."
+---
+
+<p>Our <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit-extraction guide</a> compares the main ways an incorporated dental practice owner takes money out of the company: salary, dividends, pension contributions and director's loans. This guide does something narrower and deeper. It takes one of those levers, the <strong>employer pension contribution</strong>, and works through exactly why it is so tax-efficient, where its limits bite, and the dental-specific complication that the general guide can only flag in passing: how a company pension contribution interacts with NHS pension growth. If you want the overview, start with the parent guide. If you have already decided to fund a pension through the company and want to do it well, this is the page.</p>
+
+<p>We will not re-survey salary versus dividends here beyond a paragraph of orientation. The focus is the company-pension route on its own terms.</p>
+
+<h2>Why employer pension contributions beat salary and dividend for the right slice of profit</h2>
+
+<p>Set against the other extraction routes, the employer pension contribution has an unusually clean profile. The company pays the contribution <strong>gross</strong>, directly into the director's private pension. There is <strong>no PAYE</strong>, because it is not salary. There is <strong>no NIC</strong>, because it is not earnings or a taxable benefit. And the company gets a <strong>corporation-tax deduction</strong> for it. Compare that with the alternatives. A salary or bonus of the same amount would be deductible too, but it would carry employer NIC at 15% (2025/26) on the part above the secondary threshold, plus income tax and employee NIC in the director's hands. A dividend of the same amount comes out of profit that has already paid corporation tax, and is then taxed again at the dividend rates.</p>
+
+<p>For the slice of profit you do not need as spendable income now, and want to put towards retirement, the pension route wins on tax. The price you pay for that efficiency is access: the money is locked inside the pension until you reach the minimum pension age and then comes out under pension rules. That is the central trade-off, and it is why pension contributions are a lever for the long-term slice of profit, not for the cash you live on.</p>
+
+<h2>The corporation-tax deduction: wholly and exclusively, on a paid basis</h2>
+
+<p>The deduction sits in <strong>section 196 of the Finance Act 2004</strong>. An employer pension contribution is allowed as a deduction in computing the company's trading profit, provided it meets the ordinary <strong>wholly-and-exclusively</strong> test (HMRC's guidance at BIM46035 confirms a contribution is allowable unless there is an identifiable non-trade purpose). The value of the deduction is simply the company's corporation-tax rate applied to the contribution: <strong>19%</strong> at the small-profits rate (profits up to £50,000), <strong>25%</strong> at the main rate (profits over £250,000), and an effective marginal rate in between where marginal relief applies.</p>
+
+<p>The detail that trips owners up is the <strong>paid basis</strong>. Section 196 gives relief in the accounting period in which the contribution is <strong>actually paid</strong>, not accrued. You cannot book a contribution as a year-end provision and claim relief for a payment made later. If you want the deduction in this year's accounts, the money must physically leave the company and reach the pension <strong>before the company's year-end</strong>. That makes pension contributions a year-end planning item: a contribution made on the wrong side of the period-end lands its relief a whole year later.</p>
+
+<h2>No NIC on employer contributions</h2>
+
+<p>The no-NIC point deserves its own emphasis, because it is where the pension route pulls clearly ahead of paying the same value as bonus. An employer pension contribution attracts <strong>neither employer NIC nor employee NIC</strong>. If you instead paid the director an additional bonus, the company would pay <strong>employer (secondary) Class 1 NIC at 15%</strong> (2025/26) on the part above the £5,000 secondary threshold, and the director would pay income tax and employee NIC on the bonus. On a £40,000 bonus, the employer NIC alone is in the region of £5,000 to £6,000 of cost that simply does not arise on a pension contribution of the same size. The NIC saving is one of the largest single reasons the pension route is efficient.</p>
+
+<h2>No income tax in the director's hands on the way in</h2>
+
+<p>The contribution also lands in the pension <strong>untaxed in the director's hands</strong>. Contrast the dividend: a dividend is paid from post-corporation-tax profit and is then taxed again at the dividend rates (8.75% ordinary, 33.75% upper for 2025/26, rising to 10.75% and 35.75% from 6 April 2026). The pension contribution skips both layers on the way in. The deferral is the point. You are not avoiding tax on this money forever; you are moving it into a pension where it grows tax-advantaged and is taxed under pension rules when you draw it, typically with a tax-free element and the rest at your marginal rate in retirement, which for many is lower than during peak earning years.</p>
+
+<h2>The three routes side by side: where the money ends up</h2>
+
+<p>It helps to see the leakage on each route for the same slice of company profit, because the abstract advantages above turn into a concrete gap once you follow £1,000 of pre-extraction profit through to its destination. Take a higher-rate owner and a company paying tax at the 25% main rate (2025/26 throughout), and ask how much of £1,000 of profit reaches its end point under each route.</p>
+
+<ul>
+<li><strong>Employer pension contribution.</strong> The whole £1,000 is deductible, so it is paid gross into the pension and the company saves £250 of corporation tax on it. No NIC, no income tax on the way in. Roughly the full £1,000 lands in the pension, with the CT relief making the net cost to the company about £750. The money is locked until pension age, then drawn with a tax-free element.</li>
+<li><strong>Dividend.</strong> The £1,000 of profit first bears 25% corporation tax, leaving £750 to distribute. The owner then pays the 33.75% upper dividend rate on the £750, which is about £253, leaving roughly <strong>£497</strong> in the owner's hands as spendable cash now.</li>
+<li><strong>Bonus or salary.</strong> The £1,000 is deductible for the company, but the company also pays employer NIC at 15% on it, so to keep the comparison fair the gross bonus the company can afford is smaller; and in the owner's hands a higher-rate taxpayer loses 40% income tax plus 2% employee NIC. After all the layers, the cash reaching the owner is broadly in the same region as the dividend, sometimes a little less once employer NIC is counted, and it is spendable now.</li>
+</ul>
+
+<p>The pattern is clear. For cash you need to spend today, the dividend or salary routes give you usable money, and the pension route does not help because the money is locked away. For the slice of profit you are saving for retirement anyway, the pension route delivers close to the full pound into long-term savings while the other routes deliver around half. That gap, roughly £1,000 into the pension versus around £500 in hand, is the whole case for the route, and it is why pension contributions are sized to the retirement slice of profit, not the living-expenses slice.</p>
+
+<h2>The access trade-off: tax-deferred, not tax-free</h2>
+
+<p>The flip side of every advantage above is access, and it is worth being honest about it rather than glossing over it. Pension money is not available until you reach the <strong>minimum pension age</strong>, and once you draw it, only part comes out tax-free (typically a quarter, subject to the lump-sum allowance), with the balance taxed at your marginal rate in retirement. So the pension route is not a tax-free extraction; it is a <strong>tax-deferred</strong> one, with strings on when and how you get the money back. For a younger owner with mortgage and family costs, locking a large sum away can be the wrong call even though the tax arithmetic favours it. For an owner in their fifties with the practice paying well and retirement in view, the lock-up is far less of a constraint and the tax efficiency is close to a free win. Match the contribution to your stage of life, not just to the available allowance.</p>
+
+<h2>The £60,000 annual allowance</h2>
+
+<p>The headline cap is the <strong>annual allowance</strong>, which is <strong>£60,000 for 2025/26</strong>. It limits the total tax-relieved pension input you can have across all your pensions in a tax year. For a private defined-contribution pension, the input is broadly the gross contribution paid, so a £40,000 employer contribution uses £40,000 of allowance. For a defined-benefit scheme such as the NHS, the input is not the contribution paid but the <strong>capitalised growth</strong> in your benefits over the year, which matters enormously for the aggregation point below.</p>
+
+<p>Go over your available allowance and the excess is subject to an <strong>annual-allowance charge</strong> at your marginal rate, which claws back the relief on the excess. The allowance is therefore the ceiling that sizes a company contribution, and for a dentist it is rarely as simple as "up to £60,000", because of the taper and the NHS interaction.</p>
+
+<h2>Tapering for high earners</h2>
+
+<p>For high-earning principals the allowance <strong>tapers</strong>. The taper applies where <strong>threshold income exceeds £200,000 AND adjusted income exceeds £260,000</strong> (2025/26). Where it applies, the allowance reduces by <strong>£1 for every £2</strong> of adjusted income above £260,000, down to a <strong>minimum of £10,000</strong>.</p>
+
+<p>There is a circularity to watch. <strong>Employer pension contributions count towards adjusted income.</strong> So a large company contribution can itself push a high-earning owner deeper into the taper, shrinking the very allowance the contribution is using. For owners near the thresholds, the contribution has to be modelled, not estimated, because the allowance and the contribution interact.</p>
+
+<h2>Carry-forward of unused allowance</h2>
+
+<p>The allowance is not strictly use-it-or-lose-it. You use the <strong>current year first</strong>, then you can <strong>carry forward unused allowance from the previous 3 tax years</strong>, provided you were a member of a registered pension scheme in each of those years. This is the lever that makes the company route powerful after a strong year. An owner who contributed little while building the practice can stack the current £60,000 on top of three years of unused allowance and make a large one-off employer contribution, potentially well over £60,000 in a single year, all of it relieved.</p>
+
+<h2>The private-pension route versus the NHS scheme</h2>
+
+<p>Here is the dental distinction the general guide can only gesture at. The <strong>NHS Pension Scheme</strong> is a separate, defined-benefit arrangement built on your pensionable NHS earnings. The route in this guide funds a <strong>private, defined-contribution pension</strong>, a SIPP or workplace personal pension, paid for by your company. They are different schemes that complement each other.</p>
+
+<p>Why does this matter so much for an incorporated principal? Because of the pensionability trap covered in our guide to <a href="/blog/nhs-pension/nhs-pension-pensionable-pay-dentists">pensionable pay for dentists</a>: when you incorporate and take a low salary plus dividends, only the salary is pensionable in the NHS scheme, and <strong>dividends are not pensionable</strong>. A principal who moves, say, most of their income into dividends sharply reduces NHS pension accrual. The company pension contribution is the natural way to <strong>rebuild that lost retirement provision</strong>: the dividends that are not pensionable in the NHS scheme can be matched by company contributions into a private pension instead. For many incorporated principals this is the single most important reason to use the route at all.</p>
+
+<h2>The NHS annual-allowance interaction</h2>
+
+<p>The aggregation is where dentists get caught, so it is worth stating carefully. Your <strong>NHS pension input amount</strong> (the capitalised growth in your NHS benefits) and any <strong>private employer contribution</strong> are added together and measured against the <strong>same £60,000 allowance</strong>. They do not each get their own £60,000. A high-service NHS dentist can have a substantial NHS input amount in a year, leaving only a little headroom for a private contribution before the annual-allowance charge bites.</p>
+
+<p>So the order of work is: establish the NHS input amount for the year first, then size the company contribution to the headroom that remains, allowing for any carry-forward. The incorporated principal who lost dividend pensionability cannot simply pour £40,000 into a SIPP without checking NHS growth, because if NHS growth already used most of the allowance, much of that £40,000 would be an excess taxed at the marginal rate. And note that <strong>Scheme Pays</strong>, the facility that lets the NHS scheme settle an annual-allowance charge in exchange for reduced benefits, only deals with the NHS-side charge, not a charge arising on a private contribution. Our guide to the <a href="/blog/nhs-pension/annual-allowance-tapering-nhs-dentists-pension">annual-allowance taper for NHS dentists</a> goes into the high-earner mechanics, and the <a href="/blog/associate-tax/dentist-pension-contributions-tax-relief-uk">pension tax-relief foundations</a> cover the allowance and carry-forward rules in general.</p>
+
+<h2>Worked example A: the no-NIC, CT-relieved extraction</h2>
+
+<p>The company contributes <strong>£40,000</strong> to the owner's SIPP (2025/26 figures). The corporation-tax deduction at the <strong>19% small-profits rate</strong> (profits up to £50,000) saves the company <strong>£7,600</strong> of CT; at the <strong>25% main rate</strong> it saves <strong>£10,000</strong>. There is <strong>no employer NIC</strong>, a saving of roughly £5,000 to £6,000 against paying the same £40,000 as a bonus, and <strong>no income tax</strong> on the director on the way in. Compare extracting the same £40,000 as a dividend: it would come from post-CT profit and be taxed at the <strong>upper dividend rate of 33.75%</strong> (2025/26), roughly £13,500 of dividend tax, leaving the owner with cash now but far less reaching long-term savings. For the retirement slice of profit, the pension route is materially more efficient.</p>
+
+<h2>Worked example B: within the allowance and carry-forward headroom</h2>
+
+<p>An owner has made no pension contributions for the previous three years while building the company, and has been a scheme member throughout. The current-year allowance is <strong>£60,000</strong>, and carry-forward of the three previous years' unused allowance is available on top. After a strong year, the company can make a large one-off employer contribution that draws on the current year and the carried-forward headroom, well above £60,000 if the unused allowance supports it. The CT relief lands in the period the contribution is <strong>paid</strong> (section 196), so the payment must clear before the company's year-end to be relieved this year.</p>
+
+<h2>Worked example C: the taper bites for a high-earning principal</h2>
+
+<p>An owner-director has adjusted income of <strong>£300,000</strong> (2025/26). Adjusted income exceeds £260,000 by £40,000, so the allowance reduces by £1 for every £2, a <strong>£20,000 reduction</strong>, giving a tapered allowance of <strong>£40,000</strong>. A planned £50,000 employer contribution would create a £10,000 excess, taxed at the marginal rate. And because the employer contribution itself counts towards adjusted income, it has to be modelled before it is paid, not estimated afterwards. For owners near the thresholds, the safe contribution is smaller than the company's cash would suggest.</p>
+
+<h2>Worked example D: the NHS-plus-private aggregation trap</h2>
+
+<p>A principal still accruing in the NHS 2015 scheme (1/54th CARE) has an NHS pension input amount of, say, <strong>£45,000</strong> from a year of strong growth. With a standard <strong>£60,000</strong> allowance, only about <strong>£15,000</strong> of headroom remains for a private employer contribution before an annual-allowance charge arises. The incorporated principal who lost dividend pensionability cannot pour £40,000 into a SIPP this year without first checking NHS growth, because £25,000 of it would be an excess taxed at the marginal rate. With carry-forward, the picture might improve, but the NHS input has to be established first. This is the calculation the general guide flags and this page insists you actually run.</p>
+
+<h2>The "excessive remuneration" point for owner-directors</h2>
+
+<p>For a controlling director or a close relative, there is one further check. The contribution is deductible only if it is wholly and exclusively for the trade, and HMRC's guidance at <strong>BIM46035</strong> lets it consider whether the <strong>overall remuneration package</strong> for an owner-director is commercially justifiable for the work done. In practice, a working principal taking a modest total package rarely sees an employer pension contribution challenged, because the contribution is plainly part of rewarding genuine work. The point to take is simply that the contribution should sit within a defensible total reward for the role, not be so large relative to the work that it looks like a distribution of profit dressed as a pension contribution. Keep it commercially justifiable and this is a non-issue.</p>
+
+<h2>Practical timing and mechanics</h2>
+
+<p>A few practical points pull the route together:</p>
+
+<ul>
+<li><strong>Pay before the year-end</strong> to get relief in the current period (section 196, paid basis). A contribution made just after the period-end is relieved a year later.</li>
+<li><strong>One-off versus regular.</strong> Regular monthly contributions smooth cash flow; a one-off after a strong year uses carry-forward. Both are valid.</li>
+<li><strong>Very large contributions.</strong> Exceptionally large one-off contributions, well above the normal annual run-rate, can attract HMRC's spreading rules for relief; size and pattern matter for the biggest payments.</li>
+<li><strong>Scheme setup.</strong> The pension must be a registered scheme that accepts employer contributions, and the company must be named as the contributor, not the individual.</li>
+</ul>
+
+<h2>Where this sits in the annual extraction plan</h2>
+
+<p>The employer pension contribution is one lever, to be sequenced alongside a small salary and dividends in the annual extraction review, not set once and forgotten. As profit moves, as allowance headroom changes with NHS growth, and as the <strong>2026/27 dividend rate rise</strong> (upper rate to 35.75% from 6 April 2026) shifts the relative attraction of dividends, the right contribution changes too. The general <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit-extraction picture</a> and the question of <a href="/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk">how to pay yourself as a practice owner</a> set the context, the <a href="/blog/practice-accounting/corporation-tax-dental-limited-companies-guide">corporation-tax position</a> sets the value of the deduction and the paid-basis timing, and the pension lever fits inside that review each year.</p>
+
+<p>We have seen the route do exactly what it is for. An incorporated principal who had lost dividend pensionability on incorporation rebuilt their retirement provision through company SIPP contributions, sized each year to the annual-allowance headroom left after NHS growth, so the contribution was always relieved and never strayed into an annual-allowance charge. The discipline was in the sequencing: NHS input first, then the company contribution to fit.</p>
+
+<h2>The bottom line</h2>
+
+<p>For the slice of profit an incorporated dental owner wants to put towards retirement rather than spend now, the employer pension contribution is the most tax-efficient extraction route available: a corporation-tax deduction on a paid basis under section 196, no NIC, and no income tax on the way in. Its limits are the £60,000 annual allowance, the taper for high earners, and, uniquely for dentists, the need to aggregate NHS pension growth against the same allowance before deciding how much the company can safely contribute. Used with that discipline, it is how many incorporated principals rebuild the pension provision that incorporation costs them on the dividend side.</p>

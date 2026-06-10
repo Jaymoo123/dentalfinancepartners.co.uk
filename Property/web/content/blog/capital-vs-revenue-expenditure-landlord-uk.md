@@ -3,13 +3,16 @@ title: "Capital vs Revenue Expenditure for UK Landlords: The Repair vs Improveme
 slug: "capital-vs-revenue-expenditure-landlord-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-06-02"
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Tax Adviser (CTA), Landlord Tax Specialist"
+reviewedAt: "2026-06-02"
 category: "Landlord Tax Essentials"
-metaTitle: "Capital vs Revenue Expenditure: Landlord Tax Decision Guide"
-metaDescription: "Is your landlord cost capital or revenue? Use the repair vs improvement test, the four HMRC tests and a clear decision table, with worked examples."
-metaTitle_prev: "Capital vs Revenue: Landlord Tax Examples 2026"
-metaDescription_prev: "Stop guessing which costs you can deduct. See clear capital vs revenue examples for UK landlords and cut your tax bill. Read the worked guide."
+metaTitle: "Capital vs Revenue Expenditure: Property Tax Guide"
+metaDescription: "Is your landlord cost capital or revenue? Apply HMRC's four tests with a clear decision table and worked examples, and know exactly where the relief lands."
+metaTitle_prev: "Capital vs Revenue Expenditure: Landlord Tax Decision Guide"
+metaDescription_prev: "Is your landlord cost capital or revenue? Use the repair vs improvement test, the four HMRC tests and a clear decision table, with worked examples."
 altText: "UK property tax specialist reviewing landlord expenditure classifications on laptop with calculator and property documents"
 image: ""
 h1: "Capital vs Revenue Expenditure for UK Landlords: The Repair vs Improvement Decision Guide"
@@ -42,9 +45,24 @@ faqs:
     answer: "HMRC accepts a reasonable apportionment of mixed expenditure on the facts. A single refurbishment often has a revenue limb (restoring what was there) and a capital limb (genuine improvements). Identify each element, support the split with itemised invoices and a contractor scope of works, and claim the repair element against rental income while adding the improvement element to the CGT base cost. Document the basis of the apportionment in case HMRC asks."
   - question: "How should I document expenses to support my classification?"
     answer: "Keep itemised invoices and receipts with clear descriptions of the work, before-and-after photos, contractor scope-of-works letters explaining what was restored versus improved, and purchase records showing the property's condition when you bought it (surveys, the price paid, marketing particulars). This evidence is what decides the initial-repairs question and supports any apportionment. Records matter more than ever under Making Tax Digital for Income Tax, which is live from 6 April 2026 for landlords with qualifying income above £50,000."
+  - question: "Where do I report capital expenditure if I cannot deduct it from rental income?"
+    answer: "You do not report capital expenditure on the property pages of your Self Assessment return as an expense, because it is not an allowable deduction against rental income. Instead you keep the cost in your records and bring it into the Capital Gains Tax computation when you dispose of the property, as enhancement expenditure under TCGA 1992 section 38(1)(b). In practical terms that means a folder of invoices that may sit unused for years, which is exactly why landlords lose the relief: the paperwork is gone by the time they sell. Log capital spend against each property at the point you incur it."
+howToSteps:
+  - name: "Identify the asset you are working on"
+    text: "Apply the entirety test first. Decide whether the work touches a subsidiary part of a larger asset (the roof, a wall, the heating system) or replaces the whole of that asset. Repairing part of a roof is a repair; renewing the entire roof can be the renewal of the whole and capital."
+  - name: "Compare the work to the modern equivalent of the original"
+    text: "Apply the like-for-like test. Ask what it would cost to replace the original item with a current item of broadly equivalent quality and function. Matching that standard is a repair, even if modern materials are better than the originals. Going beyond it is an improvement."
+  - name: "Ask whether you restored or enhanced"
+    text: "Apply the restoration versus enhancement test. Work that returns the property to its former condition is revenue. Work that adds something new (an extension, an extra bathroom, central heating where none existed) enhances beyond the original and is capital."
+  - name: "Check whether the character of the asset has changed"
+    text: "Apply the character of the asset test. If the nature or function of the asset has changed (a pitched roof made flat, two flats knocked into a house), it is capital even if it looks like a replacement. If the function and character are broadly unchanged, it remains a repair."
+  - name: "Check the purchase context for initial repairs"
+    text: "If you bought the property recently at a price reduced for its poor condition, work needed to make it usable or lettable is capital under the Law Shipping line, not a deductible repair. Review the surveys, marketing particulars and price paid."
+  - name: "Apportion mixed projects and place the relief"
+    text: "Split a project with both limbs into its repair element (deduct against rental income this year) and its improvement element (add to the CGT base cost). Support the split with an itemised invoice and a contractor scope of works, and keep the evidence on file for both treatments."
 ---
 
-<p>The split between <strong>capital and revenue expenditure</strong> is the single decision that drives a UK landlord's tax position on almost every pound spent on a property. Get it right and revenue costs cut your rental profit this year while capital costs reduce your Capital Gains Tax later. Get it wrong and you either overstate your deductions (inviting an HMRC enquiry) or quietly overpay tax by treating a deductible repair as if it were locked away in your base cost.</p>
+<p>Whether a cost is <strong>capital or revenue expenditure</strong> is the single decision that drives a UK landlord's tax position on almost every pound spent on a property. Revenue costs cut your rental profit in the same year. Capital costs cannot touch your rental income at all; they sit in your base cost and reduce Capital Gains Tax when you sell. Classify a deductible repair as capital and you lose the immediate relief. Classify an improvement as a repair and you overstate your deductions, which is exactly the pattern HMRC looks for in an enquiry.</p>
 
 <p>This page is the decision hub for that classification. It gives you the four HMRC tests, a top-of-page decision table, worked examples and the traps that catch landlords most often. Where a topic deserves a deeper dive, such as exactly which repairs are deductible or how improvements feed into a CGT calculation, we link out to the dedicated guide. Read this first, then follow the links to go deeper.</p>
 
@@ -73,13 +91,15 @@ faqs:
 
 <p><strong>Revenue expenditure</strong> covers the cost of running and maintaining a property in its existing condition: routine repairs, redecoration, replacing worn parts like-for-like, agent fees, insurance, and similar running costs. It is deducted from rental income in the same tax year, reducing your taxable property profit. The legal test is the wholly-and-exclusively rule in <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/34" rel="nofollow">ITTOIA 2005 section 34</a>, which applies to property businesses through <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272" rel="nofollow">section 272</a>.</p>
 
-<p><strong>Capital expenditure</strong> is money spent acquiring, extending, improving or enhancing the property beyond its original state. It cannot be deducted from rental income. Instead, qualifying enhancement spending is added to the property's base cost and reduces the gain when you sell, under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/38" rel="nofollow">TCGA 1992 section 38(1)(b)</a>. The relief is real, but it lands years later and at the CGT rate rather than your income tax rate.</p>
+<p><strong>Capital expenditure</strong> is money spent acquiring, extending, improving or enhancing the property beyond its original state. Capital expenditure on a rental property cannot be deducted from rental income. Instead, qualifying enhancement spending is added to the property's base cost and reduces the gain when you sell, under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/38" rel="nofollow">TCGA 1992 section 38(1)(b)</a>. The relief is real, but it lands years later and at the CGT rate rather than your income tax rate.</p>
+
+<p>That contrast is the whole game. The revenue expenditure versus capital expenditure question in the UK is really a timing question: relief now against income, or relief later against a capital gain. The legal labels matter because they decide which return the cost belongs on, and getting the label wrong is rarely neutral.</p>
 
 <p>That timing difference is why the classification matters so much. A £900 boiler repair deducted this year saves income tax now. A £40,000 extension sits in your base cost until disposal and only saves CGT when, and if, you sell at a gain. Misclassifying the repair as capital costs you the immediate relief; misclassifying the extension as a repair overstates your deductions and is exactly the kind of error HMRC looks for.</p>
 
-<h2>The four HMRC tests</h2>
+<h2>How HMRC decides if it is capital or revenue</h2>
 
-<p>HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030" rel="nofollow">Property Income Manual at PIM2030</a> sets out the framework for deciding whether work is a deductible repair or capital improvement. In practice there are four tests, and a cost can be caught by any one of them.</p>
+<p>There is no single rule that settles every case, and the size of the bill does not decide it. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030" rel="nofollow">Property Income Manual at PIM2030</a> sets out the framework an inspector uses to decide whether work on a rental property is a deductible repair or capital improvement. In practice it comes down to four tests, and a cost is capital if it is caught by any one of them. When you are weighing whether expenditure on a property is capital or revenue, run all four rather than stopping at the first that seems to fit.</p>
 
 <h3>1. The like-for-like test</h3>
 <p>Replacing something with a broadly similar item of broadly similar quality is normally a repair. Swapping a worn bathroom suite for a comparable new one is a repair. Replacing it with a luxury spa bathroom is an improvement. The comparison is with a modern equivalent of the original, not with the materials available decades ago.</p>

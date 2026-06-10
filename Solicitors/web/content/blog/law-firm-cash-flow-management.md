@@ -11,6 +11,12 @@ altText: "UK solicitors reviewing financial documents and cash flow charts in mo
 image: ""
 h1: "Law Firm Cash Flow Management: Essential Strategies for UK Legal Practices"
 summary: "Effective cash flow management is critical for UK law firm survival and growth. This guide covers practical strategies to reduce lock-up periods, improve collections, and maintain healthy practice finances."
+keyTakeaways:
+  - "Lock-up commonly averages 60 to 90 days, but disciplined billing and collection can cut it to 30 to 45 days."
+  - "Bill interim monthly rather than at completion, and request money on account for new matters likely to exceed £1,000."
+  - "Hold office account reserves equal to 2 to 3 months of operating expenses to absorb temporary shortfalls."
+  - "Keep client money fully separate from operational forecasts, as the SRA Accounts Rules require, so projections are not distorted."
+  - "Update the rolling 13-week forecast weekly and the 12-month forecast monthly, building in seasonal swings of 20 to 40 percent."
 schema: ""
 faqs:
   - question: "How long should law firm lock-up periods be?"

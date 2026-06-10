@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: niche.seo.search_console_verification.google || undefined,
-    yandex: niche.seo.search_console_verification.yandex || undefined,
+    google: niche.seo.search_console_verification?.google || niche.seo.google_site_verification || undefined,
+    yandex: niche.seo.search_console_verification?.yandex || undefined,
     other: {
-      ...(niche.seo.search_console_verification.bing
+      ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
     },

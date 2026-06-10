@@ -10,6 +10,12 @@ metaDescription: "UK solicitors charge VAT at 20% on legal services. The £90k r
 altText: "UK solicitor reviewing a client invoice with VAT line item"
 h1: "Do UK Solicitors Charge VAT in 2025/26?"
 summary: "Yes. UK solicitors charge VAT at the standard 20% rate on legal services. Legal services are not exempt from VAT. Registration becomes mandatory at £90,000 of taxable turnover. We cover the headline rule, the disbursement nuance, and overseas client treatment."
+keyTakeaways:
+  - "UK legal services are standard-rated for VAT at 20%, with no general exemption for any practice area."
+  - "VAT registration is mandatory once rolling 12-month taxable turnover passes £90,000, with 30 days to notify HMRC."
+  - "Pure disbursements paid as agent sit outside VAT scope, but costs recharged as principal carry 20% VAT."
+  - "B2B supplies to overseas business clients are usually outside UK VAT, but UK property work always carries UK VAT."
+  - "All VAT-registered firms must keep digital records and file quarterly returns under Making Tax Digital."
 faqs:
   - question: "Is VAT charged on solicitor fees in the UK?"
     answer: "Yes. UK legal services including conveyancing, family law, commercial work, and litigation are standard-rated for VAT at 20 percent. The fee on a client's bill is shown net plus VAT separately. There is no general VAT exemption for legal services. Some specific types of work to overseas business clients can be zero-rated under place-of-supply rules, but for the vast majority of UK clients and UK-domiciled matters, full 20 percent VAT applies."
@@ -122,7 +128,7 @@ faqs:
 
 <p>Search fees are the classic borderline. HMRC has historically accepted search fees as disbursements (agent) on conveyancing matters, but the position has tightened with case law. The current safer treatment is to add VAT on search fee recharges unless the search provider invoices the client directly.</p>
 
-<p>For more detail see our dedicated guide on <a href="/blog/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment</a>.</p>
+<p>For more detail see our dedicated guide on <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment</a>.</p>
 
 <h2>Overseas clients and overseas matters</h2>
 

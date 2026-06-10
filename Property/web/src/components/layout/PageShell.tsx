@@ -1,4 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { usePathname } from "next/navigation";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 
@@ -7,6 +10,14 @@ type PageShellProps = {
 };
 
 export function PageShell({ children }: PageShellProps) {
+  const pathname = usePathname();
+
+  // Embeddable widgets (/embed/*) render chrome-free so they sit natively inside
+  // a partner's iframe — no site header, footer, or sticky CTA.
+  if (pathname?.startsWith("/embed")) {
+    return <>{children}</>;
+  }
+
   return (
     <div className="flex min-h-dvh min-w-0 flex-col overflow-x-clip bg-white">
       <a

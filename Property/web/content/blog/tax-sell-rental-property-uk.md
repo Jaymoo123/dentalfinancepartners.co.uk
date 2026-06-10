@@ -45,10 +45,10 @@ faqs:
 ---
 
 <p>When you <strong>sell a rental property in the UK</strong>, the main tax you face is <strong>Capital Gains Tax (CGT)</strong> on the profit, not income tax. This catches a lot of landlords out, because the income tax you paid on rent each year is a separate matter and does not reduce the bill when you sell. CGT applies to the <strong>gain</strong>, broadly the difference between what you sell for and what the property cost you, after deducting your allowable costs and any reliefs.</p>
-<p>There is also a tight reporting clock. If tax is due, a UK resident must report the sale and pay the CGT within <strong>60 days of completion</strong>. This page is the plain-English starting point: it explains the three things that matter (income tax during ownership, CGT on the sale, and the 60-day return), walks through how the gain is worked out, and points you to deeper guides for rates, calculations and deadlines.</p>
+<p>There is also a tight reporting clock. If tax is due and you are a UK resident, you must report the sale and pay the CGT within <strong>60 days of completion</strong>. Get the gain wrong, or miss that window, and you can face a penalty even when the eventual tax is modest. What you actually pay comes down to three things: the income tax you paid on rent during ownership, the CGT on the sale itself, and the 60-day return that carries it to HMRC.</p>
 
 <h2>The three things to understand before you sell</h2>
-<p>Most confusion comes from mixing up taxes that apply at different stages. Selling a rental property touches three separate things. The table below is the one-screen orientation; the rest of this guide expands each row.</p>
+<p>Most of the costly mistakes come from mixing up taxes that fall due at different stages, each with its own deadline. Keep them apart and the rest follows.</p>
 <table>
 <thead>
 <tr><th>Stage</th><th>What it is</th><th>When it applies</th><th>Headline rates (2026/27)</th><th>Deadline</th></tr>
@@ -59,7 +59,7 @@ faqs:
 <tr><td>The 60-day return</td><td>HMRC's UK property disposal return, separate from Self Assessment</td><td>On completion of the sale</td><td>Same 18% / 24% CGT rates</td><td>60 days from completion</td></tr>
 </tbody>
 </table>
-<p>The first row, income tax on rent, stops mattering once you sell. The Section 24 mortgage-interest rules govern how that rental profit is taxed during ownership, and we cover them in our guide to <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">claiming mortgage interest under Section 24</a>. The rest of this page is about the second and third rows: the CGT you pay when you sell, and how to report it.</p>
+<p>The first row, income tax on rent, stops mattering once you sell. The Section 24 mortgage-interest rules govern how that rental profit is taxed during ownership, and you can read how those work in our guide to <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">claiming mortgage interest under Section 24</a>. The CGT on the sale and the 60-day return are where the money and the deadlines actually bite.</p>
 
 <h2>Capital Gains Tax when you sell a rental property</h2>
 <p>For the <strong>2026/27 tax year</strong>, CGT on residential property is charged at:</p>
@@ -68,7 +68,7 @@ faqs:
 <li><strong>24%</strong> on the part that falls into the higher rate band.</li>
 </ul>
 <p>These rates have applied since <strong>30 October 2024</strong> and sit in the Taxation of Chargeable Gains Act 1992 (TCGA 1992 s.1H, with s.1I allocating the gain across your bands). Your rate is not fixed by what you earn from the property; it depends on your <strong>total income plus the gain</strong> in the year of sale. The gain stacks on top of your income, so a gain that starts in the basic rate band can be pushed partly into the higher band and taxed at 24% on that portion.</p>
-<p>Every individual also has an <strong>annual exempt amount (AEA)</strong> of <strong>£3,000</strong> for 2026/27. The first £3,000 of total gains across all your disposals in the year is tax-free. This is a one-line summary; for the full rates and allowances picture see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT rates and allowances guide</a> and the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 rates explained</a>. You can cross-check the headline figures on the government's own <a href="https://www.gov.uk/capital-gains-tax">Capital Gains Tax</a> pages.</p>
+<p>You also have an <strong>annual exempt amount (AEA)</strong> of <strong>£3,000</strong> for 2026/27. The first £3,000 of your total gains across all disposals in the year is tax-free. For the full rates and allowances picture, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT rates and allowances guide</a> and the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 rates explained</a>. You can cross-check the headline figures on the government's own <a href="https://www.gov.uk/capital-gains-tax">Capital Gains Tax</a> pages.</p>
 
 <h3>How the gain is calculated</h3>
 <p>The basic shape of the calculation is straightforward:</p>
@@ -81,7 +81,7 @@ faqs:
 <li><strong>Selling costs:</strong> estate agent fees, conveyancing and any advertising directly linked to the sale.</li>
 </ul>
 <h4>Worked example</h4>
-<p>Take a landlord, let us call her Priya, who sells a buy-to-let flat for £350,000. She bought it for £250,000, paid £8,000 in purchase costs, spent £15,000 on a loft conversion while she owned it, and paid £7,000 in selling costs. Her gain works out as follows:</p>
+<p>Say you sell a buy-to-let flat for £350,000. You bought it for £250,000, paid £8,000 in purchase costs, spent £15,000 on a loft conversion while you owned it, and paid £7,000 in selling costs. Your gain works out as follows:</p>
 <ul>
 <li>Sale price: £350,000</li>
 <li>Less original cost (£250,000) + purchase costs (£8,000) + improvement (£15,000) + selling costs (£7,000) = £280,000</li>
@@ -89,7 +89,7 @@ faqs:
 <li>Less annual exemption: £3,000</li>
 <li>Taxable gain: £67,000</li>
 </ul>
-<p>If the whole of Priya's taxable gain falls in the higher rate band, the CGT is £67,000 × 24% = £16,080. If part of her basic rate band is unused, some of the gain would instead be taxed at 18%, lowering the bill. This is one illustration only. For a full step-by-step walkthrough, including band-stacking and joint ownership, see our <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">step-by-step CGT calculation guide</a> and the <a href="/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide">buy-to-let calculation guide</a>.</p>
+<p>If the whole of that taxable gain falls in the higher rate band, the CGT is £67,000 × 24% = £16,080. If part of your basic rate band is unused, some of the gain would instead be taxed at 18%, lowering the bill. For a full step-by-step walkthrough, including band-stacking and joint ownership, see our <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">step-by-step CGT calculation guide</a> and the <a href="/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide">buy-to-let calculation guide</a>.</p>
 
 <h3>Private Residence Relief if you ever lived there</h3>
 <p>If the property was at some point your only or main home, <strong>Private Residence Relief (PRR)</strong> can remove part of the gain. PRR (TCGA 1992 ss.222–223) exempts the gain for the periods you actually lived there as your main residence, plus the <strong>final 9 months</strong> of ownership, regardless of how the property was used in those last months.</p>
@@ -99,11 +99,11 @@ faqs:
 <p>Lettings Relief used to give up to £40,000 of additional relief on a former home that had been let. That changed on <strong>6 April 2020</strong>. Under TCGA 1992 s.223B (inserted by Finance Act 2020), the relief is now available only where you <strong>shared occupation</strong> of the property with your tenant during the let period. In the common situation where you moved out and then let the whole property, Lettings Relief no longer applies. PRR and the final 9 months can still reduce the gain, but the old £40,000 lettings allowance is off the table for most landlords.</p>
 
 <h3>Using capital losses</h3>
-<p>If you sell a property for less than its base cost you have an <strong>allowable capital loss</strong> rather than a gain. Losses are first set against gains of the same tax year, and any unused balance can be <strong>carried forward indefinitely</strong> against future gains, provided you report the loss to HMRC (there is a time limit for claiming losses, generally four years from the end of the tax year of the loss). If you have unused losses from earlier disposals, they can materially cut the CGT when you sell. Losses are used after the annual exemption is applied in the current year but can be saved and carried forward if not needed.</p>
+<p>If you sell a property for less than its base cost you have an <strong>allowable capital loss</strong> rather than a gain. You set losses first against gains of the same tax year, and you can <strong>carry forward indefinitely</strong> any unused balance against future gains, provided you report the loss to HMRC (there is a time limit for claiming losses, generally four years from the end of the tax year of the loss). Unused losses from earlier disposals can materially cut the CGT when you sell. In the current year, losses come off after the annual exemption, so you do not waste a loss covering a gain the £3,000 exemption would have sheltered anyway.</p>
 
 <h2>Reporting and paying: the 60-day return</h2>
 <p>CGT on UK residential property has its own fast reporting route, separate from Self Assessment. If you are a <strong>UK resident</strong> and there is CGT to pay, you must report the disposal and pay the tax within <strong>60 days of completion</strong> using HMRC's UK property disposal return.</p>
-<p>Two points trip people up. First, if the gain is fully covered by PRR, losses or the annual exemption so that no CGT is due, a UK resident does <strong>not</strong> need to file the 60-day return. Second, the picture is different for non-residents (see below), who must file for every disposal regardless of tax due. Missing the 60-day deadline can trigger penalties even where the eventual tax is small, so the safe approach is to work out the gain early in the sale process. Our guide to <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines on property sales</a> sets out the timing and penalty detail.</p>
+<p>Two points trip people up. First, if the gain is fully covered by PRR, losses or the annual exemption so that no CGT is due, a UK resident does <strong>not</strong> need to file the 60-day return. Second, non-residents face a stricter rule and must file for every disposal regardless of tax due. Missing the 60-day deadline can trigger penalties even where the eventual tax is small, so the safe approach is to work out the gain early in the sale process. Our guide to <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines on property sales</a> sets out the timing and penalty detail.</p>
 <aside>
 <p><strong>Not sure whether you need to file a 60-day return, or how much the gain is?</strong> A specialist property accountant can confirm your position before completion, when there is still time to plan. Get in touch for a free, no-obligation call.</p>
 </aside>
@@ -120,7 +120,7 @@ faqs:
 <li><strong>Reporting:</strong> you must file the 60-day UK property disposal return for <strong>every</strong> UK land disposal, even when no tax is due. This is stricter than the resident rule.</li>
 <li><strong>Rebasing:</strong> the gain is normally measured from the property's market value at <strong>5 April 2015</strong> for residential property (or 5 April 2019 for non-residential land), so only the growth since then is usually taxed. Alternative bases (straight-line apportionment or the whole historic gain) can be elected where they give a better result.</li>
 </ul>
-<p>You may also need to consider any double taxation treaty between the UK and your country of residence, and the temporary non-residence rules, which can recapture gains if you return to the UK within a few years of leaving. We cover that in our guide to <a href="/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property">temporary non-residence and the 5-year CGT recapture</a>.</p>
+<p>You may also need to consider any double taxation treaty between the UK and your country of residence, and the temporary non-residence rules, which can recapture gains if you return to the UK within a few years of leaving. There is more on that in our guide to <a href="/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property">temporary non-residence and the 5-year CGT recapture</a>.</p>
 
 <h2>Planning to reduce the CGT on a sale</h2>
 <p>None of the following is a loophole; each is a recognised feature of the rules. The right combination depends on your circumstances, and some steps must happen before completion to work at all.</p>
@@ -129,7 +129,7 @@ faqs:
 <h3>Transfer a share to your spouse or civil partner</h3>
 <p>Transfers between spouses or civil partners who live together happen on a <strong>no-gain, no-loss</strong> basis under TCGA 1992 s.58. The receiving spouse takes over the original base cost, so the transfer itself triggers no CGT. Done before sale, this lets a couple use <strong>both</strong> annual exemptions and shift more of the gain to whichever spouse has spare basic rate band, so more of it is taxed at 18% rather than 24%. After separation, a 3-year window for no-gain, no-loss treatment applies (extended by Finance (No. 2) Act 2023 s.41), and transfers in line with a court order or formal separation agreement also qualify. Timing and documentation matter, so take advice before transferring.</p>
 <h3>Incorporation before sale</h3>
-<p>Some landlords consider moving a portfolio into a company before selling. CGT on the transfer in can sometimes be deferred under <strong>Section 162 incorporation relief</strong> (TCGA 1992 s.162), but only where the letting activity amounts to a genuine business (HMRC looks for an actively managed portfolio, following the approach in <em>Ramsay v HMRC</em>), and the transfer itself can trigger Stamp Duty Land Tax. Incorporation is rarely a quick fix for a single sale and needs careful modelling. The <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets out when it is worth exploring.</p>
+<p>You might be weighing up moving a portfolio into a company before selling. CGT on the transfer in can sometimes be deferred under <strong>Section 162 incorporation relief</strong> (TCGA 1992 s.162), but only where the letting activity amounts to a genuine business (HMRC looks for an actively managed portfolio, following the approach in <em>Ramsay v HMRC</em>), and the transfer itself can trigger Stamp Duty Land Tax. Incorporation is rarely a quick fix for a single sale and needs careful modelling. The <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets out when it is worth exploring.</p>
 <aside>
 <p><strong>Thinking about timing a sale, a spousal transfer or incorporation?</strong> These only work if they are set up before you complete. A specialist property accountant can model the options against your wider income. Book a free call to talk it through.</p>
 </aside>

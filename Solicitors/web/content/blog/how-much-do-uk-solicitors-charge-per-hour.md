@@ -10,6 +10,12 @@ metaDescription: "UK solicitor hourly rates 2025/26. Magic Circle partners £900
 altText: "UK solicitor reviewing time recording for billable hours"
 h1: "How Much Do UK Solicitors Charge Per Hour in 2025/26?"
 summary: "UK solicitor hourly rates in 2025/26 range from £150 at a regional high-street trainee to £1,500+ at a Magic Circle senior partner. We break down realistic ranges by fee-earner level, region, and practice area — useful for clients budgeting and firms benchmarking."
+keyTakeaways:
+  - "UK solicitor hourly rates in 2025/26 span £150 for a regional trainee to £1,500 or more for a Magic Circle senior partner."
+  - "Associate rates typically sit at 50 to 70 percent of partner rates at the same firm; paralegals at 20 to 40 percent."
+  - "Legal services are standard-rated for VAT at 20 percent, so a £10,000 fee bills as £12,000 including VAT."
+  - "Effective billing is often only 70 to 85 percent of list rate once utilisation, realisation and discounts are applied."
+  - "City rates have risen 5 to 15 percent annually since 2022, driven by salary inflation feeding into billing rates."
 faqs:
   - question: "What's the average UK solicitor hourly rate in 2025/26?"
     answer: "There is no meaningful UK-wide average because the spread is enormous. Realistic rate ranges 2025/26: high-street partner £180-£280, regional mid-market partner £250-£400, City mid-tier partner £450-£700, Silver Circle partner £600-£900, Magic Circle / US firm partner £900-£1,500+. Associate rates typically 50-70 percent of partner rates at the same firm. Paralegal and trainee rates 20-40 percent of partner rates."
@@ -142,7 +148,7 @@ faqs:
 <li>Total due: £12,000</li>
 </ul>
 
-<p>Disbursements (court fees, Land Registry fees, search fees, expert witness fees) are typically itemised separately. Whether VAT applies to a disbursement depends on whether the solicitor is acting as agent (no VAT charged to client by the solicitor) or principal (full VAT applies). This distinction trips up clients and firms alike — we cover the mechanics in our <a href="/blog/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment guide</a>.</p>
+<p>Disbursements (court fees, Land Registry fees, search fees, expert witness fees) are typically itemised separately. Whether VAT applies to a disbursement depends on whether the solicitor is acting as agent (no VAT charged to client by the solicitor) or principal (full VAT applies). This distinction trips up clients and firms alike — we cover the mechanics in our <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment guide</a>.</p>
 
 <p>Overseas business clients in some circumstances can be zero-rated for VAT purposes. Domestic UK clients always pay the full 20 percent.</p>
 

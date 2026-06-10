@@ -3,19 +3,37 @@ title: "Replacement of Domestic Items Relief: A Complete Guide for UK Landlords"
 slug: "replacement-domestic-items-relief-uk-landlords-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-06-02"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
-metaTitle: "Replacement of Domestic Items Relief: Landlord Guide 2026/27"
-metaDescription: "How UK landlords claim Replacement of Domestic Items Relief under ITTOIA 2005 s.311A: the four conditions, like-for-like cap, incidental costs and FHL rule."
+metaTitle: "Domestic Items Relief: UK Landlord Guide 2026/27"
+metaDescription: "How UK landlords claim domestic items relief under ITTOIA 2005 s.311A: the four conditions, like-for-like cap, incidental costs and the FHL rule."
 altText: "UK landlord replacing a washing machine in a let residential property and claiming replacement of domestic items relief"
 image: ""
 h1: "Replacement of Domestic Items Relief: A Complete Guide for UK Landlords"
 summary: "Replacement of Domestic Items Relief lets UK landlords deduct the cost of replacing furniture, appliances, furnishings and kitchenware in a let residential dwelling. It is governed by ITTOIA 2005 s.311A for individuals and CTA 2009 s.250A for companies, and it replaced the 10% wear and tear allowance from April 2016. This guide covers the four statutory conditions, the like-for-like cap, the incidental-cost uplift most landlords miss, the furnished holiday let exclusion, the company route, and how the relief interacts with Section 24."
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-06-02"
 schema: ""
+howToSteps:
+  - name: "Confirm the spend is a genuine replacement"
+    text: "Check that an old domestic item was already provided for the tenant's use and that the new item replaces it and is solely for the tenant. The first time you provide an item is capital and does not qualify, so the relief only starts on the second item."
+  - name: "Confirm the item is a domestic item, not a fixture"
+    text: "Domestic items are loose, moveable items such as furniture, furnishings, household appliances and kitchenware. Boilers, fitted kitchens, fitted bathroom suites and built-in wardrobes are fixtures and are excluded, so they go through the repairs versus improvements test instead."
+  - name: "Take the cost of the new item, capped at like-for-like"
+    text: "Start from the cost of the new item. If you have upgraded rather than replaced like-for-like, cap the figure at what a substantially similar replacement would have cost and disallow the improvement element."
+  - name: "Add the incidental costs of buying, installing and disposing"
+    text: "Increase the deduction by delivery, installation and the cost of disposing of the old item. HMRC's PIM3210 confirms these incidental capital costs are addable, and they are routinely missed."
+  - name: "Deduct any proceeds for the old item"
+    text: "Subtract any sale proceeds or part-exchange allowance received for the old item, however small, to arrive at the final relief figure."
+  - name: "Keep the evidence and record it digitally"
+    text: "Keep purchase receipts, disposal or sale evidence and an inventory of what was first provided. Landlords within Making Tax Digital for Income Tax must keep digital records and file quarterly, so storing receipts in compatible software keeps the claim easy to evidence."
 faqs:
   - question: "Can I claim Replacement of Domestic Items Relief on the first furniture I buy for a rental property?"
     answer: "No. The relief only applies when you replace an existing domestic item. The initial cost of furnishing or equipping a property is capital expenditure and is not deductible under this relief, and the old wear and tear allowance that used to soften that first cost was abolished in April 2016. You can only claim once an item already provided for the tenant's use is replaced."
+  - question: "Where does HMRC explain replacement of domestic items relief?"
+    answer: "HMRC sets out the replacement of domestic items rules in its Property Income Manual at PIM3210, and the underlying law is ITTOIA 2005 s.311A for individuals and CTA 2009 s.250A for companies. The manual confirms the four conditions, the like-for-like cap and the fact that incidental costs of disposal, delivery and installation are added to the claim. If you search for domestic item relief HMRC guidance, PIM3210 read alongside the statute is the authoritative source."
   - question: "Does Replacement of Domestic Items Relief apply to unfurnished lets?"
     answer: "Yes, in part. ITTOIA 2005 s.311A does not require the property to be let furnished. It applies wherever you replace a domestic item that was provided for the tenant's use. So an unfurnished let where the landlord still provides white goods, carpets or curtains can claim the relief when those provided items are replaced. The common belief that the property must be let as furnished is a hangover from the old wear and tear allowance, which did require furnished status."
   - question: "Does the relief apply to commercial property?"
@@ -44,7 +62,7 @@ faqs:
     answer: "The relief itself does not change. What changes is the rates it relieves against. From 6 April 2027, Finance Act 2026 introduces separate rates of income tax on property income of 22% basic, 42% higher and 47% additional (England, Wales and Northern Ireland; Scotland sets its own), and the Section 24 finance cost reducer rises to 22%. Because the relief reduces profit before those rates and before Section 24, it remains a full-marginal-rate deduction."
 ---
 
-<p><strong>Replacement of Domestic Items Relief</strong> lets a UK landlord deduct the cost of replacing furniture, furnishings, appliances and kitchenware provided for a tenant's use in a let residential dwelling. It is a revenue deduction against rental profit, governed by <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/311A" rel="nofollow">ITTOIA 2005 s.311A</a> for individuals and <a href="https://www.legislation.gov.uk/ukpga/2009/4/section/250A" rel="nofollow">CTA 2009 s.250A</a> for companies. It replaced the 10% wear and tear allowance from April 2016, and unlike that allowance it gives relief only when you actually replace something, never on the first time you provide an item.</p>
+<p><strong>Replacement of Domestic Items Relief</strong> (often searched as simply domestic items relief) lets a UK landlord deduct the cost of replacing furniture, furnishings, appliances and kitchenware provided for a tenant's use in a let residential dwelling. It is the tax deduction for replacement items most residential landlords rely on, a revenue deduction against rental profit governed by <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/311A" rel="nofollow">ITTOIA 2005 s.311A</a> for individuals and <a href="https://www.legislation.gov.uk/ukpga/2009/4/section/250A" rel="nofollow">CTA 2009 s.250A</a> for companies. It replaced the 10% wear and tear allowance from April 2016, and unlike that allowance it gives relief only when you actually replace something, never on the first time you provide an item.</p>
 
 <p>This guide sets out the four statutory conditions, what does and does not qualify, the calculation done correctly (including the incidental-cost uplift most landlords miss), the like-for-like cap, the company route, the furnished holiday let position, and how the relief sits alongside Section 24. It is the deep-dive companion to our broader <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">complete list of landlord tax deductions for 2026/27</a>, which covers every expense category at a higher level and defers to this page for the full mechanics.</p>
 
@@ -59,33 +77,34 @@ faqs:
 <li><strong>The property does not have to be let furnished.</strong> s.311A imposes no furnished requirement. It applies whenever you replace a domestic item that was provided for the tenant's use. An unfurnished let where the landlord still supplies white goods, carpets or curtains can claim on replacement of those provided items. The furnished-only idea is a leftover from the repealed wear and tear allowance, which did require furnished status.</li>
 </ul>
 
-<p>HMRC's own guidance is set out in its <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim3210" rel="nofollow">Property Income Manual at PIM3210</a>, which is the authoritative reference for the conditions, the incidental-cost rule and the like-for-like test discussed below.</p>
+<p>The HMRC replacement of domestic items guidance is set out in its <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim3210" rel="nofollow">Property Income Manual at PIM3210</a>, which is the authoritative reference for the conditions, the incidental-cost rule and the like-for-like test discussed below. If you are looking for the official position, that manual page plus the statute itself is what an inspector works from.</p>
 
 <h2>The Four Conditions for the Relief (ITTOIA 2005 s.311A)</h2>
 
 <p>The relief is only available when all four statutory conditions are met. Reading them in order is the cleanest way to test any claim.</p>
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr style="background-color: #f5f5f5;">
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Condition</strong></td>
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>What it requires</strong></td>
+<table>
+<thead>
+<tr><th>Condition</th><th>What it requires</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Condition A</strong></td>
+<td>You carry on a property business in relation to land that consists of or includes a dwelling-house. In short, a residential let. Commercial property and furnished holiday lettings are outside this.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Condition A</strong></td>
-<td style="padding: 10px; border: 1px solid #ddd;">You carry on a property business in relation to land that consists of or includes a dwelling-house. In short, a residential let. Commercial property and furnished holiday lettings are outside this.</td>
+<td><strong>Condition B</strong></td>
+<td>An old domestic item was provided for the tenant's use, you incur expenditure on a new domestic item solely for the tenant's use, the new item replaces the old item, and the old item is no longer available for use in the dwelling.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Condition B</strong></td>
-<td style="padding: 10px; border: 1px solid #ddd;">An old domestic item was provided for the tenant's use, you incur expenditure on a new domestic item solely for the tenant's use, the new item replaces the old item, and the old item is no longer available for use in the dwelling.</td>
+<td><strong>Condition C</strong></td>
+<td>The expenditure is not blocked by the wholly and exclusively rule but would otherwise be blocked by the capital expenditure rule. This is the bar the relief exists to override.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Condition C</strong></td>
-<td style="padding: 10px; border: 1px solid #ddd;">The expenditure is not blocked by the wholly and exclusively rule but would otherwise be blocked by the capital expenditure rule. This is the bar the relief exists to override.</td>
+<td><strong>Condition D</strong></td>
+<td>No capital allowance under CAA 2001 may be claimed on the expenditure. You cannot double up the relief with capital allowances on the same item.</td>
 </tr>
-<tr>
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Condition D</strong></td>
-<td style="padding: 10px; border: 1px solid #ddd;">No capital allowance under CAA 2001 may be claimed on the expenditure. You cannot double up the relief with capital allowances on the same item.</td>
-</tr>
+</tbody>
 </table>
 
 <p>Condition B carries the most weight in practice. It builds in the two defining features of the relief: it is a <strong>replacement</strong> (no relief on first provision), and the old item must genuinely leave the dwelling (sold, scrapped, given away or moved out), not simply be shuffled into a cupboard. The relief is also denied where rent-a-room relief has been claimed on the same accommodation.</p>
@@ -177,27 +196,28 @@ faqs:
 
 <p>Before April 2016, landlords of fully furnished residential property could claim a wear and tear allowance of 10% of net rent, automatically, whether or not they replaced anything. Finance Act 2016 abolished that allowance and introduced s.311A in its place from April 2016.</p>
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr style="background-color: #f5f5f5;">
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Old wear and tear allowance (to April 2016)</strong></td>
-<td style="padding: 10px; border: 1px solid #ddd;"><strong>Replacement of Domestic Items Relief (from April 2016)</strong></td>
+<table>
+<thead>
+<tr><th>Old wear and tear allowance (to April 2016)</th><th>Replacement of Domestic Items Relief (from April 2016)</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat 10% of net rent, claimed automatically</td>
+<td>Actual cost of genuine replacements only</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd;">Flat 10% of net rent, claimed automatically</td>
-<td style="padding: 10px; border: 1px solid #ddd;">Actual cost of genuine replacements only</td>
+<td>Only for fully furnished lets</td>
+<td>Any residential let where a provided item is replaced, furnished or not</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd;">Only for fully furnished lets</td>
-<td style="padding: 10px; border: 1px solid #ddd;">Any residential let where a provided item is replaced, furnished or not</td>
+<td>No receipts required</td>
+<td>Receipts and disposal evidence required</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd;">No receipts required</td>
-<td style="padding: 10px; border: 1px solid #ddd;">Receipts and disposal evidence required</td>
+<td>Claimed even with no replacements</td>
+<td>Only when items are actually replaced</td>
 </tr>
-<tr>
-<td style="padding: 10px; border: 1px solid #ddd;">Claimed even with no replacements</td>
-<td style="padding: 10px; border: 1px solid #ddd;">Only when items are actually replaced</td>
-</tr>
+</tbody>
 </table>
 
 <p>The shift rewards landlords who keep good records and actively maintain a property, and it removed the automatic relief that fully furnished lets used to enjoy in quiet years. In a year with significant replacement spend the new relief is often more generous than the old 10% would have been. In a quiet year it gives nothing, which is why timing and record keeping now matter.</p>

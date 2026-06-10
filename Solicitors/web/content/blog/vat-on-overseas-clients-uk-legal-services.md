@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing a contract with an overseas client, law firm VA
 image: ""
 h1: "How Does VAT Apply to Overseas Clients for a UK Law Firm?"
 summary: "A UK law firm must determine whether VAT applies to overseas clients by applying place of supply rules. The key distinction is whether the client is a business (B2B) or a consumer (B2C), and where the client is established. This guide explains the rules with worked examples for solicitors."
+keyTakeaways:
+  - "VAT on overseas clients turns on the place of supply rules, driven by whether the client is a business (B2B) or a consumer (B2C)."
+  - "For B2B services not relating to land, the place of supply is where the client belongs, so no UK VAT is charged on an overseas business."
+  - "For B2C services, the place of supply is the UK, so 20% VAT applies even when the private client lives abroad."
+  - "Services relating to a specific piece of land are taxed where the land sits, so UK conveyancing always carries 20% UK VAT."
+  - "For a no-VAT B2B treatment, hold evidence of business status such as a VAT or company registration number, verified via VIES for EU clients."
 schema: ""
 faqs:
   - question: "What is the place of supply for a UK solicitor advising a US business on a UK commercial contract?"

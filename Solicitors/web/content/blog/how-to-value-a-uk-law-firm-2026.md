@@ -11,6 +11,12 @@ altText: "UK law firm partner reviewing valuation documents in a modern office m
 image: ""
 h1: "How to Value a UK Law Firm in 2026: A Practical Guide for Solicitors"
 summary: "A clear, practical guide for UK solicitors on how law firm valuation works in 2025/26. Covers profit multiples, goodwill valuation, WIP treatment, and the factors that push a firm's value up or down. Written for partners, firm buyers, and succession planners."
+keyTakeaways:
+  - "The profit multiple method is standard: UK law firm multiples in 2025/26 run from 1.0x to 3.0x normalised maintainable profit."
+  - "Goodwill is usually 60 to 80 percent of value, and practice goodwill commands more than partner-dependent personal goodwill."
+  - "Work in progress is valued separately, typically at a 10 to 20 percent discount, and must not be double-counted in the multiple."
+  - "Goodwill disposal is a capital gain: BADR applies at 14 percent in 2025/26, rising to 18 percent from 6 April 2026, on the first £1 million."
+  - "Buyers claim goodwill amortisation relief at 6.5 percent a year on a straight-line basis for goodwill acquired after 1 April 2019."
 schema: ""
 faqs:
   - question: "What is the typical profit multiple for a UK law firm in 2025/26?"

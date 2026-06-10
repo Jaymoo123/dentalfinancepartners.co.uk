@@ -173,6 +173,14 @@ class BingQueryFetcher:
 
     def _upsert(self, records: Iterable[tuple]) -> int:
         records = list(records)
+        # Dedupe by the unique key (page_url, query) for this snapshot: Bing can
+        # return the same query more than once per page, and a single
+        # INSERT ... ON CONFLICT cannot affect the same row twice (Postgres
+        # 21000). Keep the last occurrence.
+        _seen: dict[tuple, tuple] = {}
+        for _r in records:
+            _seen[(_r[0], _r[1])] = _r
+        records = list(_seen.values())
         inserted = 0
         chunk_size = 500
         for i in range(0, len(records), chunk_size):

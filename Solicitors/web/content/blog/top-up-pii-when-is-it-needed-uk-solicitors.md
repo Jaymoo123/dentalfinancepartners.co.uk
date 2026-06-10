@@ -11,6 +11,12 @@ altText: "UK law firm partner reviewing top-up PII policy documents with solicit
 image: ""
 h1: "Top-Up PII: When Is It Needed for a UK Solicitor or Law Firm?"
 summary: "Top-up professional indemnity insurance (PII) is additional cover beyond the SRA minimum terms. It is typically required when a solicitor or law firm undertakes specialist work, holds large client files, or has a claims history that demands an excess layer. This article explains when top-up PII is needed and how to assess your firm's risk."
+keyTakeaways:
+  - "The SRA minimum PII cover is £2 million per claim for most firms and £3 million for sole practitioners and partnerships."
+  - "Top-up PII sits above the primary layer and responds only once the primary limit is exhausted on a claim."
+  - "High-value conveyancing, commercial litigation, M&A, and large estate work can generate claims well above the primary limit."
+  - "Some lenders and corporate clients contractually require £5 million or more of cover as a condition of acting."
+  - "PII premiums, including top-up cover, are an allowable trade expense deductible against the firm's profits."
 schema: ""
 faqs:
   - question: "Is top-up PII mandatory for UK solicitors?"

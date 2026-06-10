@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing fee earner targets and chargeable hours spreads
 image: ""
 h1: "How to Set Fee Earner Targets for UK Solicitors in a Law Firm"
 summary: "Setting fee earner targets in a UK law firm requires balancing chargeable hours, utilisation rates, and fee realisation. This guide explains how to design targets that align with firm profitability, partner expectations, and SRA compliance. Includes worked examples for equity partners, salaried partners, and assistant solicitors."
+keyTakeaways:
+  - "Realistic chargeable-hours targets run 1,200 to 1,600 a year, with 1,500 to 1,600 for volume conveyancing and 1,200 to 1,350 for litigation."
+  - "Utilisation equals chargeable hours divided by available hours; 70 to 75 percent is typical, and above 85 percent risks burnout."
+  - "Realisation is fees collected over fees billed; aim for 90 to 95 percent, with equity partners targeting 95 percent or more."
+  - "Tailor targets by role: a £50,000 assistant costing about £101,000 needs roughly £157,000 in billed fees for a 30 percent margin."
+  - "Targets must not push fee earners to cut corners on SRA Accounts Rules, AML checks or honest time recording."
 schema: ""
 faqs:
   - question: "What is a realistic chargeable hours target for a UK solicitor?"

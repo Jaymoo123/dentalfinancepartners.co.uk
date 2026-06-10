@@ -20,8 +20,12 @@
       "href": "/services"
     },
     {
-      "label": "NHS Pension",
-      "href": "/nhs-pension"
+      "label": "Guides",
+      "href": "/medical-guides"
+    },
+    {
+      "label": "Free health check",
+      "href": "/free-practice-health-check"
     },
     {
       "label": "About",
@@ -37,6 +41,34 @@
     }
   ],
   "footer_links": [
+    {
+      "label": "For GPs",
+      "href": "/for-gps"
+    },
+    {
+      "label": "For consultants",
+      "href": "/for-consultants"
+    },
+    {
+      "label": "For locum doctors",
+      "href": "/for-locum-doctors"
+    },
+    {
+      "label": "For junior doctors",
+      "href": "/for-junior-doctors"
+    },
+    {
+      "label": "Medical guides",
+      "href": "/medical-guides"
+    },
+    {
+      "label": "NHS pension guide",
+      "href": "/nhs-pension"
+    },
+    {
+      "label": "Calculators",
+      "href": "/calculators"
+    },
     {
       "label": "Locations",
       "href": "/locations"

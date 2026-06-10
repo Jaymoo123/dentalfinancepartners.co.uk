@@ -1,0 +1,24 @@
+wave: 1
+site: medical
+buckets:
+  A:
+    label: "Bucket A: NHS pension beyond the annual-allowance basics (HP §2.A, §2.D, §2.E). Net-new vs the 4 existing AA/taper/charges/locum-forms pages; these cross-link to those rather than repeat them."
+    category: "NHS Pension Planning"
+    picks:
+      - { id: A1, slug: "mccloud-remedy-nhs-pension-doctors-explained", label: "The McCloud remedy and your NHS pension: what doctors need to do at retirement (and what is already done)" }
+      - { id: A2, slug: "nhs-pension-scheme-pays-doctors-deadlines", label: "Scheme Pays for doctors in depth: mandatory versus voluntary, the 31 July election deadline and how it permanently reduces your pension" }
+      - { id: A3, slug: "nhs-pension-partial-retirement-doctors-guide", label: "Partial (flexible) retirement for doctors: drawing 20 to 100 percent of your NHS pension while still working" }
+  B:
+    label: "Bucket B: GP surgery premises and partnership property (HP §4 premises)"
+    category: "GP Practice Management"
+    picks:
+      - { id: B1, slug: "gp-surgery-notional-rent-vs-cost-rent-explained", label: "Notional rent versus cost rent for GP surgery premises: how NHS premises funding is taxed" }
+      - { id: B2, slug: "gp-partnership-last-man-standing-premises-risk", label: "The last man standing problem: GP partnership premises liability and how to manage it" }
+      - { id: B3, slug: "gp-surgery-premises-own-vs-rent-tax-guide", label: "Owning versus renting your GP surgery: the property partnership, SDLT and the tax trade-offs" }
+  C:
+    label: "Bucket C: Practice sale, goodwill and CGT for doctors (HP §4 sale, §5)"
+    category: "GP Tax & Accounts / Private Practice / Incorporation"
+    picks:
+      - { id: C1, slug: "can-gp-practice-goodwill-be-sold-nhs-rules", label: "Can you sell GP practice goodwill? The NHS goodwill-sale ban (since 2004) and what actually transfers" }
+      - { id: C2, slug: "selling-private-medical-practice-cgt-badr", label: "Selling a private medical practice: CGT, Business Asset Disposal Relief and the 6 April 2026 rate rise" }
+      - { id: C3, slug: "incorporation-relief-private-medical-practice-s162", label: "Incorporation relief (section 162) for a private medical practice: deferring CGT and the pension trade-off" }

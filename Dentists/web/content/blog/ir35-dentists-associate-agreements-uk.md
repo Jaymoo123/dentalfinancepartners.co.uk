@@ -3,102 +3,149 @@ title: "IR35 and Dentists: Does It Apply to Associate Agreements?"
 slug: "ir35-dentists-associate-agreements-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dentists-associate-agreements-uk"
 date: "2026-03-28"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
-metaTitle: "IR35 for Dentists: Associate Agreements & Off-Payroll Rules"
-metaDescription: "Many dental associate arrangements fall within IR35 — but not all. Key status tests, contract pitfalls, and what to do if your role is caught."
-altText: "UK dentist reviewing IR35 compliance documents for associate agreement"
-image: ""
+metaTitle: "IR35 & Dental Associate Agreements: Status After April 2023"
+metaDescription: "Since April 2023 a signed associate agreement no longer guarantees self-employment. The clauses that matter, when off-payroll bites, and the HMRC risk."
+altText: "UK dentist reviewing an associate agreement and employment status documents"
+image: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/calculator-and-notepad-placed-on-usa-dollars-stack-4386366/"
 h1: "IR35 and Dentists: Does It Apply to Associate Agreements?"
-summary: "IR35 off-payroll working rules can impact dental associates operating through limited companies. Understanding when these rules apply to associate agreements is crucial for tax compliance."
+summary: "An associate agreement on its own no longer secures self-employed status. This guide explains the post-April-2023 reality, the agreement clauses that genuinely matter, when the off-payroll rules apply to a limited-company associate, and the risk if HMRC reclassifies."
+keyTakeaways:
+  - "HMRC withdrew the ESM4030 concession on 6 April 2023, so status is now decided on ordinary first-principles employment tests rather than the agreement alone."
+  - "HMRC weighs substitution, control, mutuality of obligation, financial risk and integration, with no single factor decisive and the overall picture governing."
+  - "The off-payroll rules apply only where the associate works through a limited company, with medium or large engagers deciding status and operating PAYE on inside-IR35 income."
+  - "Most single-site practices are small under the Companies Act tests, leaving the PSC responsible for status, but many dental groups exceed the thresholds."
+  - "If HMRC reclassifies the engagement, the practice as engager faces back PAYE, employer and employee National Insurance, interest and penalties."
 schema: ""
 faqs:
-  - question: "Does IR35 automatically apply to all dental associates working through limited companies?"
-    answer: "No, IR35 doesn't automatically apply to all dental associates with limited companies. It depends on your actual working relationship with the practice. Associates who work like employees (fixed hours, detailed control, no genuine business risk) are likely caught by IR35, while those operating genuine businesses across multiple practices may fall outside the rules."
-  - question: "Can I avoid IR35 by changing my associate agreement contract terms?"
-    answer: "Simply changing contract terms isn't enough to avoid IR35. HMRC looks at the reality of your working relationship, not just what's written in contracts. You need genuine changes to how you work – real business risk, multiple clients, investment in equipment, and genuine commercial independence – not just different contract wording."
-  - question: "Should I abandon my limited company if my associate work falls within IR35?"
-    answer: "Not necessarily. Even within IR35, limited companies can offer advantages for pension contributions, business expenses, and income timing. The key is understanding your position and planning accordingly. Consider getting specialist advice to evaluate whether your current structure remains beneficial given your specific circumstances."
+  - question: "Does signing a BDA-style associate agreement make me automatically self-employed?"
+    answer: "No. HMRC withdrew the long-standing concession that treated associates under an approved BDA or Dental Practitioners Association agreement as automatically self-employed. From 6 April 2023 status is decided on ordinary first principles, the same employment-status tests applied to everyone else. A well-drafted agreement is useful evidence, but only if your actual working pattern matches what it says."
+  - question: "When do the off-payroll (IR35) rules apply to a dental associate?"
+    answer: "The off-payroll rules apply where you work through your own limited company (a personal service company). If the engaging practice is medium or large, the practice decides your status and operates PAYE on any inside-IR35 income. If the practice is small under the Companies Act size tests, the older Chapter 8 rules apply and your own company is responsible for assessing status. Most single practices are small, but dental groups often are not."
+  - question: "What happens if HMRC decides my associate role is really employment?"
+    answer: "If HMRC reclassifies the engagement, the practice as engager can face back PAYE income tax and both employer and employee National Insurance on past payments, plus interest and possible penalties. The exposure usually sits with the practice rather than the associate, which is why principals increasingly scrutinise how associate arrangements work in practice, not just how they are written."
 ---
 
-<p>IR35 rules have created confusion across many professions, and dentistry is no exception. If you're a dental associate working through a limited company, or considering this structure, understanding when IR35 applies is essential for your tax planning and compliance.</p>
+<p>For years the working assumption in dentistry was simple: sign an approved associate agreement, work to its terms, and you were self-employed for tax. That assumption no longer holds. A signed agreement, however well drafted, is now only the starting point. Whether an associate is genuinely self-employed, caught by the employment-status tests, or working inside the off-payroll rules through a limited company depends on the substance of the arrangement, not the document alone.</p>
 
-<p>The reality is that many dental associate arrangements fall within IR35, but this isn't automatically the case. The key lies in understanding what determines employment status for tax purposes.</p>
+<p>This guide focuses on the agreement and the status question that sits on top of it. It explains what changed in April 2023, the clauses that genuinely carry weight, when the off-payroll (IR35) rules apply to a limited-company associate, and what is at stake if HMRC decides the relationship is really employment.</p>
 
-<h2>What Is IR35 and Why Does It Matter for Dentists?</h2>
+<h2>The April 2023 change: the agreement no longer guarantees self-employment</h2>
 
-<p>IR35, formally known as the off-payroll working rules, determines whether someone working through a limited company should be treated as an employee for tax purposes. If caught by IR35, you pay tax and National Insurance as if you were employed, removing most tax advantages of incorporating.</p>
+<p>HMRC used to operate a special arrangement, set out in its Employment Status Manual at ESM4030, under which an associate dentist working to a standard British Dental Association or Dental Practitioners Association agreement was accepted as self-employed, with earnings taxed as trading income, provided both parties stuck to the contract terms.</p>
 
-<p>For dental associates, this matters because many work through limited companies to benefit from corporation tax rates and dividend taxation. If IR35 applies, these benefits largely disappear.</p>
+<p>That concession was withdrawn with effect from 6 April 2023. ESM4030 now simply directs readers to the general employment-status guidance and to HMRC's Check Employment Status for Tax (CEST) tool. In plain terms, there is no longer any automatic self-employed status for associates. Status is determined on ordinary first principles, the same case-law tests applied to any other worker, by reference to the agreement and to how the associate actually works day to day.</p>
 
-<p>The rules focus on the relationship between you and the dental practice, not just what your contract says. HMRC looks at the reality of how you work, not the legal structure you've chosen.</p>
+<p>This is the single most important point for any associate or principal to absorb. Older guidance and many practice handbooks still imply that the agreement itself secures the position. It does not. HMRC has indicated it does not intend to backdate any change of view to before 6 April 2023 where the practice and associate were correctly following the old ESM4030 approach, but from that date forward everyone is on the general rules.</p>
 
-<h2>Key Factors That Determine IR35 Status for Dental Associates</h2>
+<p>The good news is that the dental model still naturally supports self-employment for most associates. Clinical autonomy, your own indemnity cover, your own loupes and handpieces, and fee-split or per-UDA payment all point towards genuine self-employment. The point is that this now has to be demonstrated through the facts, not assumed from the paperwork.</p>
 
-<h3>Control and Direction</h3>
+<h2>The status factors HMRC weighs</h2>
 
-<p>The most significant factor is who controls how, when, and where you work. If the practice dictates your working hours, specific procedures, and clinical approaches in detail, this suggests employment status.</p>
+<p>There is no single statutory definition of self-employment. Status rests on a body of case law, applied by HMRC through CEST and the Employment Status Manual. No one factor is decisive; HMRC stands back and looks at the overall picture. The table below sets out the main factors and how each tends to present in a dental setting.</p>
 
-<p>However, most dental associate agreements involve some level of practice control due to regulatory and insurance requirements. The question is whether this control goes beyond what's necessary for professional compliance.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Points towards self-employment</th>
+      <th>Points towards employment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Personal service and substitution</td>
+      <td>A genuine, exercisable right to send a suitably qualified locum to cover the work</td>
+      <td>The associate must personally do the work; cover is just holiday arrangement by the practice</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>The associate decides clinical approach, treatment planning and how patients are managed</td>
+      <td>The practice dictates hours, sessions, methods and protocols beyond regulatory necessity</td>
+    </tr>
+    <tr>
+      <td>Mutuality of obligation</td>
+      <td>No obligation on the practice to provide work or on the associate to accept it</td>
+      <td>Guaranteed sessions, set rotas and an expectation that offered work is taken</td>
+    </tr>
+    <tr>
+      <td>Financial risk</td>
+      <td>Income varies with work done; bad debts, lab bills and remakes can fall on the associate</td>
+      <td>Fixed or guaranteed income with no real exposure to loss</td>
+    </tr>
+    <tr>
+      <td>Provision of equipment</td>
+      <td>The associate funds their own indemnity, loupes, instruments and CPD</td>
+      <td>The associate simply uses practice-supplied facilities and materials</td>
+    </tr>
+    <tr>
+      <td>Integration</td>
+      <td>The associate operates as a distinct business, not part of the practice's staffing structure</td>
+      <td>The associate attends staff meetings, follows internal systems and looks like an employee</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3>Substitution Rights</h3>
+<p>A right of substitution that exists only on paper carries little weight. Equally, some practice control is unavoidable in dentistry because of regulatory, indemnity and patient-safety requirements. The question HMRC asks is whether the control goes beyond what professional compliance genuinely requires. Mutuality of obligation, the give-and-take of guaranteed work for guaranteed attendance, is one of the strongest pointers towards employment and is worth examining closely in any associate arrangement.</p>
 
-<p>Can you send someone else to do your work? In most dental associate arrangements, personal service is required due to patient relationships, regulatory requirements, and insurance restrictions. This factor often points toward employment status.</p>
+<h2>Which clauses in the agreement actually matter</h2>
 
-<p>Some associates argue they can arrange temporary cover, but this must be a genuine commercial right, not just holiday arrangements that any employee might make.</p>
+<p>Because status now turns on substance, the agreement earns its keep only where its clauses describe, and the parties then deliver, a genuinely self-employed relationship. A few clauses do real work:</p>
 
-<h3>Financial Risk and Investment</h3>
+<ul>
+  <li><strong>Substitution.</strong> A clause permitting the associate to provide a suitably qualified substitute at their own cost is valuable, but only if it is genuine and capable of being used in practice. A clause hedged so heavily that substitution could never actually happen adds nothing.</li>
+  <li><strong>Control and clinical autonomy.</strong> Wording that leaves clinical judgement and treatment planning to the associate, and limits practice direction to regulatory and quality matters, supports self-employment, provided the practice does not in fact micromanage the work.</li>
+  <li><strong>No mutuality of obligation.</strong> The absence of any guarantee of work, and of any obligation to accept it, is a strong self-employment pointer. Guaranteed minimum sessions pull the other way.</li>
+  <li><strong>Financial risk.</strong> Fee-split or per-UDA payment, with the associate bearing lab fees, remakes and bad debt on private work, evidences genuine risk. A fixed retainer or fully guaranteed income undermines it.</li>
+  <li><strong>Own costs and indemnity.</strong> Confirming that the associate funds their own indemnity, equipment and CPD reinforces that they run a business rather than fill a staff role.</li>
+</ul>
 
-<p>Do you risk your own money or invest in equipment? Most dental associates work with practice-provided equipment and facilities, with guaranteed payment structures based on UDAs or percentage splits.</p>
+<p>None of this works if the day-to-day reality contradicts the document. HMRC and the tribunals look through the wording to what the parties actually do. A polished agreement sitting on top of an employee-like working pattern is a liability, not a shield, because it shows the parties understood the right test and then failed it.</p>
 
-<p>If you're simply turning up to use practice facilities with guaranteed income, this suggests employment. Genuine business risk and investment in your own equipment or premises supports self-employment.</p>
+<h2>When the off-payroll (IR35) rules bite</h2>
 
-<h2>Common Dental Associate Scenarios and IR35 Risk</h2>
+<p>The status discussion above applies where an associate contracts directly as an individual. A separate layer of rules, the off-payroll working rules, applies where the associate works through their own limited company, often called a personal service company or PSC.</p>
 
-<h3>High Risk Arrangements</h3>
+<p>Whether IR35 produces an extra obligation, and on whom, depends on the size of the engaging practice:</p>
 
-<p>Associates working fixed hours, using only practice equipment, with detailed clinical protocols, and guaranteed payment structures typically face high IR35 risk. If you work exclusively for one practice with no genuine business activities elsewhere, this strengthens the employment case.</p>
+<ul>
+  <li><strong>Medium or large engager:</strong> the off-payroll rules in Chapter 10 of Part 2 ITEPA 2003 apply. The end client, the practice, must decide the associate's status, issue a Status Determination Statement setting out the decision and the reasons, and take reasonable care in reaching it. If the role is inside IR35, the fee-payer operates PAYE and National Insurance before paying the company, so the company receives net amounts and the usual salary-plus-dividend extraction is not available on that income.</li>
+  <li><strong>Small engager:</strong> the off-payroll rules do not apply. Instead the older intermediaries legislation (Chapter 8 ITEPA 2003) leaves the PSC itself responsible for assessing its status and accounting for any liability.</li>
+</ul>
 
-<p>Being required to attend practice meetings, follow specific software systems, and work set sessions also indicates employment status for IR35 purposes.</p>
+<p>Whether a practice is small turns on the Companies Act size tests, broadly two of three thresholds for turnover, balance-sheet total and employee numbers. Most single-site practices are small, so their associates' companies remain responsible for their own status. Many dental groups, however, exceed the thresholds and become medium or large, which shifts the decision and the PAYE obligation onto the group. It is worth verifying the engager's size rather than assuming, because the answer changes who carries the risk.</p>
 
-<h3>Lower Risk Arrangements</h3>
+<p>A locum or associate operating across several practices can hold a mixture of determinations: outside IR35 with a small single practice, inside IR35 with a large group, all in the same tax year. There is nothing inconsistent in that; each engagement is assessed on its own facts.</p>
 
-<p>Associates working across multiple practices, investing in their own equipment, setting their own clinical approaches (within regulatory bounds), and bearing genuine commercial risk may fall outside IR35.</p>
+<h2>What is at stake if HMRC reclassifies</h2>
 
-<p>If you market your own services, negotiate terms with multiple practices, and operate as a genuine business rather than a disguised employee, IR35 is less likely to apply.</p>
+<p>The cost of getting status wrong is real and usually lands on the engager. If HMRC decides a supposedly self-employed associate was in substance an employee, or that an inside-IR35 PSC engagement was wrongly treated as outside, the practice can face:</p>
 
-<h2>Practical Steps for IR35 Compliance</h2>
+<ul>
+  <li>back PAYE income tax on past payments;</li>
+  <li>employer and employee National Insurance contributions for the periods in question;</li>
+  <li>interest on the underpaid amounts; and</li>
+  <li>penalties, the level of which depends on whether HMRC regards the error as careless or deliberate, and on whether reasonable care was taken.</li>
+</ul>
 
-<h3>Review Your Working Arrangements</h3>
+<p>Because this exposure sits primarily with the practice rather than the individual, principals have a strong incentive to make sure associate arrangements are genuinely self-employed in substance and properly documented. Associates have their own reasons to care: a reclassification can disrupt years of tax planning and, for a limited-company associate, can strip the expected efficiency out of past income.</p>
 
-<p>Examine your actual working relationship, not just your contract terms. Do you work like an employee in practice, even if your contract suggests otherwise? Document the genuine commercial aspects of your arrangement.</p>
+<h2>Practical protection for both sides</h2>
 
-<p>Consider whether you have real control over how you deliver services, genuine substitution rights, and meaningful financial risk. Be honest about the reality of your working relationship.</p>
+<p>The sensible response to the post-2023 landscape is to align the agreement with reality and keep evidence that the relationship is what it claims to be. That means reviewing how the associate actually works, not just rereading the contract; using CEST as a sense-check while remembering it is only as good as the answers fed into it; and keeping records that show genuine autonomy, real financial risk and the absence of an employee-style obligation.</p>
 
-<h3>Consider Employment vs. Self-Employment</h3>
+<p>For a limited-company associate, confirm the engager's size each year, obtain and retain any Status Determination Statement, and understand the 45-day client-led process for challenging a determination you think is wrong. For a practice, take reasonable care over every determination and document the reasoning behind it.</p>
 
-<p>If your arrangement clearly falls within IR35, consider whether operating through a limited company still makes sense. Sometimes, direct employment or genuine self-employment through a partnership might be more tax-efficient.</p>
+<p>Status sits alongside the wider picture for associates, so it is worth reading this in tandem with our overview of <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax</a>, our explainer on whether <a href="/blog/associate-tax/bda-model-associate-agreement-tax-status">a BDA model agreement guarantees self-employed status</a>, the broader comparison of <a href="/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status">associate versus self-employed status</a>, and our note on <a href="/blog/associate-tax/when-hmrc-may-challenge-associate-self-employment">when HMRC may challenge associate self-employment</a>.</p>
 
-<p>Remember that <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate tax planning</a> involves more than just your employment status – pension contributions, expenses, and timing of income all matter.</p>
+<p>The headline has not really changed for the well-run, genuinely independent associate: most still qualify as self-employed because the dental model supports it. What has changed is that you now have to be able to show it. The agreement is your evidence, not your guarantee, and it only protects you if the way you work matches the way it reads.</p>
 
-<h3>Documentation and Evidence</h3>
-
-<p>Keep records that demonstrate the commercial nature of your arrangement. This might include correspondence about terms, evidence of marketing activities, invoices to multiple practices, and records of business decisions you make independently.</p>
-
-<p>Professional indemnity insurance, membership of professional bodies, and continuing education investments can support your case for genuine self-employment, though they're not decisive factors alone.</p>
-
-<h2>When to Seek Professional Advice</h2>
-
-<p>IR35 determination requires careful analysis of your specific circumstances. The interaction between dental regulation, practice requirements, and tax rules creates complexity that's difficult to navigate alone.</p>
-
-<p>If you're considering incorporation or already operating through a limited company, getting specialist advice on your IR35 status should be a priority. The cost of getting this wrong can be significant, especially if HMRC investigates retrospectively.</p>
-
-<p>Consider seeking advice if you're changing your working arrangements, negotiating new associate agreements, or if HMRC has queried your employment status. Early advice is typically more cost-effective than dealing with compliance issues later.</p>
-
-<h2>The Bigger Picture for Dental Associates</h2>
-
-<p>IR35 is just one element of tax planning for dental associates. Your overall tax efficiency depends on multiple factors, including your total income, other business activities, pension planning, and personal circumstances.</p>
-
-<p>Many associates find that even if caught by IR35, operating through a limited company can still offer advantages for pension contributions, timing of income, and business expense planning. The key is understanding your position and planning accordingly.</p>
-
-<p>Don't let IR35 concerns prevent you from considering legitimate tax planning opportunities. Instead, ensure you understand the rules and structure your affairs appropriately from the outset.</p>
+<p>If you are negotiating a new associate agreement, reviewing an existing one, or weighing up working through a limited company, take advice on your specific facts before HMRC, or a buyer's due-diligence team, raises the question for you.</p>

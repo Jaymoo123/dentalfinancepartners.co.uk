@@ -1,5 +1,20 @@
 name: CI - Build & Lint
 
+# Workspace-correct CI (Phase A / W4a rewrite, 2026-06-10).
+# This repo is an npm-workspaces monorepo with ONE root package-lock.json.
+# The previous workflow ran `npm ci` inside each <Site>/web with
+# cache-dependency-path pointing at per-site lockfiles that do not exist,
+# so every run failed at the install/cache step and the estate had no CI net.
+# Each job now installs the whole workspace from the root lockfile, then
+# lints / type-checks / tests / builds one site in its own directory.
+#
+# PF-04 net: every site job runs on every push/PR, so a breaking change to
+# packages/web-shared fails the consumer builds here.
+# `npm run test --if-present` is a green no-op until W4b lands suites.
+#
+# Excluded (deliberately): contractors-ir35 (scaffold; empty config, not yet
+# buildable — add a matrix entry when it launches).
+
 on:
   pull_request:
     branches: [main]
@@ -7,10 +22,26 @@ on:
     branches: [main]
 
 jobs:
-  test-dentists:
-    name: Test Dentists Build
+  test-sites:
+    name: Build ${{ matrix.site }}
     runs-on: ubuntu-latest
-    
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - site: Dentists
+            url: https://dentalfinancepartners.co.uk
+          - site: Property
+            url: https://propertytaxpartners.co.uk
+          - site: Medical
+            url: https://www.medicalaccountantsuk.co.uk
+          - site: Solicitors
+            url: https://www.accountsforlawyers.co.uk
+          - site: generalist
+            url: https://www.hollowaydavies.co.uk
+          - site: digital-agency
+            url: https://www.agencyfounderfinance.co.uk
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,32 +51,34 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: Dentists/web/package-lock.json
+          cache-dependency-path: package-lock.json
 
-      - name: Install dependencies
-        working-directory: Dentists/web
+      - name: Install workspace
         run: npm ci
 
       - name: Run ESLint
-        working-directory: Dentists/web
+        working-directory: ${{ matrix.site }}/web
         run: npm run lint
 
       - name: Type check
-        working-directory: Dentists/web
+        working-directory: ${{ matrix.site }}/web
         run: npx tsc --noEmit
 
+      - name: Unit tests (if present)
+        working-directory: ${{ matrix.site }}/web
+        run: npm run test --if-present
+
       - name: Build
-        working-directory: Dentists/web
+        working-directory: ${{ matrix.site }}/web
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://dentalfinancepartners.co.uk
+          NEXT_PUBLIC_SITE_URL: ${{ matrix.url }}
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_KEY }}
 
-  test-property:
-    name: Test Property Build
+  test-web-shared:
+    name: Test web-shared package
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -55,102 +88,19 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: Property/web/package-lock.json
+          cache-dependency-path: package-lock.json
 
-      - name: Install dependencies
-        working-directory: Property/web
+      - name: Install workspace
         run: npm ci
 
-      - name: Run ESLint
-        working-directory: Property/web
-        run: npm run lint
-
-      - name: Type check
-        working-directory: Property/web
-        run: npx tsc --noEmit
-
-      - name: Build
-        working-directory: Property/web
-        run: npm run build
-        env:
-          NEXT_PUBLIC_SITE_URL: https://propertytaxpartners.co.uk
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_KEY }}
-
-  test-medical:
-    name: Test Medical Build
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: Medical/web/package-lock.json
-
-      - name: Install dependencies
-        working-directory: Medical/web
-        run: npm ci
-
-      - name: Run ESLint
-        working-directory: Medical/web
-        run: npm run lint
-
-      - name: Type check
-        working-directory: Medical/web
-        run: npx tsc --noEmit
-
-      - name: Build
-        working-directory: Medical/web
-        run: npm run build
-        env:
-          NEXT_PUBLIC_SITE_URL: https://www.medicalaccountantsuk.co.uk
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_KEY }}
-
-  test-solicitors:
-    name: Test Solicitors Build
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: Solicitors/web/package-lock.json
-
-      - name: Install dependencies
-        working-directory: Solicitors/web
-        run: npm ci
-
-      - name: Run ESLint
-        working-directory: Solicitors/web
-        run: npm run lint
-
-      - name: Type check
-        working-directory: Solicitors/web
-        run: npx tsc --noEmit
-
-      - name: Build
-        working-directory: Solicitors/web
-        run: npm run build
-        env:
-          NEXT_PUBLIC_SITE_URL: https://www.accountsforlawyers.co.uk
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_KEY }}
+      # No-op until W4b adds a test script + suite to packages/web-shared.
+      - name: Unit tests (if present)
+        run: npm run test --if-present --workspace packages/web-shared
 
   test-python:
     name: Test Python Agents
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -183,16 +133,14 @@ jobs:
   status-check:
     name: All Tests Passed
     runs-on: ubuntu-latest
-    needs: [test-dentists, test-property, test-medical, test-solicitors, test-python]
+    needs: [test-sites, test-web-shared, test-python]
     if: always()
-    
+
     steps:
       - name: Check test results
         run: |
-          if [ "${{ needs.test-dentists.result }}" != "success" ] || \
-             [ "${{ needs.test-property.result }}" != "success" ] || \
-             [ "${{ needs.test-medical.result }}" != "success" ] || \
-             [ "${{ needs.test-solicitors.result }}" != "success" ] || \
+          if [ "${{ needs.test-sites.result }}" != "success" ] || \
+             [ "${{ needs.test-web-shared.result }}" != "success" ] || \
              [ "${{ needs.test-python.result }}" != "success" ]; then
             echo "One or more test jobs failed"
             exit 1

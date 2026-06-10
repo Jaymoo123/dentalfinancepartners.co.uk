@@ -51,5 +51,25 @@
     "promptExtractDir": "wave{wave}_prompts",
     "briefSubdir": "wave{wave}",
     "cannibCheckFile": "wave{wave}_cannibalisation_check.md"
+  },
+
+  "voice": {
+    "_doc": "Humanise Engine (scripts/voice_scan.py) tuning. See docs/_engines/VOICE_STANDARD.md. abstractNouns = reader-referent nouns where 'you' or a concrete role usually belongs; industryAllowlist = per-noun context tokens that make the noun a legitimate professional term (a hit is skipped when any token appears in the same sentence). Defaults are baked into voice_scan.py; this block is the property-locked override.",
+    "abstractNouns": ["landlord", "taxpayer", "investor", "owner", "individual", "recipient", "claimant", "host", "developer", "operator", "donor", "donee", "buyer", "seller", "vendor", "purchaser", "borrower"],
+    "industryAllowlist": {
+      "operator": ["serviced accommodation", "fhl", "furnished holiday", "holiday let", "aparthotel", "short-term let", "short term let", "management company", "platform", "booking"],
+      "donor": ["gift", "gifted", "iht", "inheritance", "potentially exempt", "pet", "clt", "donee", "trust", "estate", "seven-year", "7-year", "taper", "nil-rate", "nil rate"],
+      "donee": ["gift", "donor", "iht", "inheritance", "trust"],
+      "buyer": ["sdlt", "ltt", "lbtt", "completion", "exchange", "conveyanc", "stamp duty", "first-time", "first time", "purchase", "acquisition"],
+      "seller": ["cgt", "disposal", "completion", "exchange", "conveyanc", "capital gains", "sale", "vendor"],
+      "vendor": ["completion", "exchange", "conveyanc", "sale", "disposal"],
+      "purchaser": ["sdlt", "completion", "conveyanc", "purchase", "acquisition"],
+      "borrower": ["mortgage", "loan", "lender", "interest cover", "ltv", "remortgage"]
+    },
+    "lengthIdeal": {"nonPillar": 2200, "pillar": 3000},
+    "pillarSlugs": [],
+    "weights": {"s1": 0.20, "s2": 0.25, "s3": 0.20, "s4": 0.10, "s5": 0.15, "s6": 0.10},
+    "saturation": {"s1": 8.0, "s2": 3.0, "s3": 3.0, "s4": 3.0, "s5": 6.0},
+    "bands": {"minor": 15, "robotic": 35, "severe": 60, "metaFloorRobotic": 4}
   }
 }

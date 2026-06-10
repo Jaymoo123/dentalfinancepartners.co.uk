@@ -92,6 +92,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${s.name} | Insights | ${siteConfig.name}`,
     description: `UK tax, structure and finance articles for ${s.name.toLowerCase()}. Written by editorial team, reviewed by ICAEW Chartered Accountant.`,
     alternates: { canonical: url },
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${s.name} | Insights | ${siteConfig.name}`,
       description: s.intro,

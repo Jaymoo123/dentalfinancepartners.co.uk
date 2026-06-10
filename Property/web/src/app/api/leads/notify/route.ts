@@ -36,6 +36,9 @@ type LeadRecord = {
   source?: string;
   source_url?: string;
   status?: string;
+  consent_given?: boolean;
+  consent_text?: string;
+  consent_at?: string;
 };
 
 type WebhookPayload = {
@@ -45,21 +48,27 @@ type WebhookPayload = {
   record?: LeadRecord;
 };
 
-// Single source of truth for which columns appear in the email and in what
-// order. To drop a column, delete its line; to rename a label, edit it here.
-const FIELDS: { label: string; get: (r: LeadRecord) => string | undefined }[] = [
-  { label: "Received", get: (r) => formatTimestamp(r.created_at) },
-  { label: "Submitted at", get: (r) => formatTimestamp(r.submitted_at) },
-  { label: "Name", get: (r) => r.full_name },
+// Scalar fields shown in the details table, in order. The lead name, the received
+// timestamp, the free-text message and the lead id are presented separately (header,
+// message block and footer), so they are not listed here. To add, remove or reorder
+// a table row, edit this array; `kind` controls how the value renders.
+//
+// Single source of truth for both the HTML table and the plain-text fallback.
+type DetailField = {
+  label: string;
+  get: (r: LeadRecord) => string | undefined;
+  kind?: "url" | "pill";
+};
+const DETAIL_FIELDS: DetailField[] = [
   { label: "Email", get: (r) => r.email },
   { label: "Phone", get: (r) => r.phone },
   { label: "Role", get: (r) => r.role },
   { label: "Company / practice", get: (r) => r.practice_name },
-  { label: "Message", get: (r) => r.message },
   { label: "Site", get: (r) => prettySource(r.source) },
-  { label: "Submitted from", get: (r) => r.source_url },
-  { label: "Status", get: (r) => r.status },
-  { label: "Lead ID", get: (r) => r.id },
+  { label: "Source page", get: (r) => r.source_url, kind: "url" },
+  { label: "Submitted at", get: (r) => formatTimestamp(r.submitted_at) },
+  { label: "Status", get: (r) => r.status, kind: "pill" },
+  { label: "Consent", get: (r) => (r.consent_given ? "Data-sharing agreed" : undefined) },
 ];
 
 function secretsMatch(provided: string, expected: string): boolean {
@@ -99,39 +108,112 @@ function escapeHtml(value: string): string {
     .replace(/'/g, "&#39;");
 }
 
+// Renders one detail value. Empty values become a muted "Not provided" so the
+// table stays complete without looking unfinished; URLs become a wrapping link
+// and the status renders as a small pill.
+function renderCell(field: DetailField, r: LeadRecord): string {
+  const raw = (field.get(r) ?? "").toString().trim();
+  if (!raw) return `<span style="color:#94a3b8;">Not provided</span>`;
+  if (field.kind === "pill") {
+    return `<span style="display:inline-block;padding:3px 11px;border-radius:999px;background:#f1f5f9;border:1px solid #e2e8f0;color:#334155;font-size:12px;font-weight:700;letter-spacing:0.3px;text-transform:capitalize;">${escapeHtml(raw)}</span>`;
+  }
+  if (field.kind === "url") {
+    return `<a href="${escapeHtml(raw)}" style="color:#334155;text-decoration:underline;word-break:break-all;overflow-wrap:break-word;">${escapeHtml(raw)}</a>`;
+  }
+  return escapeHtml(raw).replace(/\n/g, "<br>");
+}
+
+// Neutral, site-agnostic design: this same template emails leads from every site
+// (the header label and the "Site" row identify which one), so it carries no
+// per-site brand colour. Navy header, white card, slate detail rows; long values
+// wrap inside the card and the message gets its own full-width block.
 function buildHtml(r: LeadRecord): string {
-  const rows = FIELDS.map(({ label, get }) => {
-    const raw = (get(r) ?? "").toString().trim();
-    // Show every column from the leads table; render blanks as "(none)".
-    const value = raw ? escapeHtml(raw).replace(/\n/g, "<br>") : "(none)";
-    return `<tr>
-      <td style="padding:8px 12px;border:1px solid #e2e8f0;background:#f8fafc;font-weight:600;color:#0f172a;white-space:nowrap;vertical-align:top;">${escapeHtml(label)}</td>
-      <td style="padding:8px 12px;border:1px solid #e2e8f0;color:#0f172a;">${value}</td>
-    </tr>`;
-  }).join("");
+  const siteLabel = prettySource(r.source) || "Website";
+  const headerName = (r.full_name ?? "").trim() || "New website enquiry";
+  const received = formatTimestamp(r.created_at);
+  const message = (r.message ?? "").trim();
+
+  const detailRows = DETAIL_FIELDS.map(
+    (field) => `<tr>
+                  <td style="padding:11px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:13px;font-weight:600;vertical-align:top;word-break:break-word;">${escapeHtml(field.label)}</td>
+                  <td style="padding:11px 0 11px 16px;border-bottom:1px solid #f1f5f9;color:#0f172a;font-size:14px;font-weight:500;vertical-align:top;word-break:break-word;overflow-wrap:break-word;">${renderCell(field, r)}</td>
+                </tr>`,
+  ).join("");
+
+  // Always render the message block so the field never silently disappears; an
+  // empty message shows a muted "Not provided" like the other detail fields, so
+  // it is obvious there was no message rather than leaving the reader unsure.
+  const messageCell = message
+    ? escapeHtml(message).replace(/\n/g, "<br>")
+    : `<span style="color:#94a3b8;">Not provided</span>`;
+  const messageBlock = `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Message</p>
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:14px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${messageCell}</td></tr>
+                </table>`;
 
   return `<!doctype html>
-<html>
-  <body style="margin:0;padding:24px;background:#f1f5f9;font-family:Arial,Helvetica,sans-serif;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
-      <tr><td>
-        <h2 style="margin:0 0 4px;color:#0f172a;font-size:18px;">New lead for ${escapeHtml(prettySource(r.source) || "website")}</h2>
-        <p style="margin:0 0 16px;color:#475569;font-size:13px;">Forward this email to Reflex Accounting</p>
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-size:14px;">
-          ${rows}
-        </table>
-      </td></tr>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light only" />
+  </head>
+  <body style="margin:0;padding:0;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#f1f5f9;">New ${escapeHtml(siteLabel)} lead: ${escapeHtml(headerName)}</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;background:#f1f5f9;">
+      <tr>
+        <td align="center" style="padding:24px 16px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:26px 28px;">
+                <p style="margin:0 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">New ${escapeHtml(siteLabel)} lead</p>
+                <h1 style="margin:0;color:#ffffff;font-size:21px;font-weight:700;line-height:1.3;word-break:break-word;">${escapeHtml(headerName)}</h1>
+                ${received ? `<p style="margin:8px 0 0;color:#94a3b8;font-size:13px;">Received ${escapeHtml(received)}</p>` : ""}
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:24px 28px 28px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #0f172a;border-radius:8px;padding:12px 16px;color:#0f172a;font-size:14px;font-weight:600;">Forward this email to Reflex Accounting</td></tr>
+                </table>
+                <p style="margin:24px 0 4px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Lead details</p>
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
+                  <colgroup><col style="width:140px;" /><col /></colgroup>
+                  ${detailRows}
+                </table>
+                ${messageBlock}
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:18px 28px 22px;border-top:1px solid #e2e8f0;background:#ffffff;">
+                <p style="margin:0 0 3px;color:#94a3b8;font-size:12px;word-break:break-word;">Lead ID: ${escapeHtml(r.id || "Not provided")}</p>
+                <p style="margin:0;color:#cbd5e1;font-size:12px;">Automated notification · lead capture system</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
   </body>
 </html>`;
 }
 
 function buildText(r: LeadRecord): string {
-  const lines = FIELDS.map(({ label, get }) => {
-    const raw = (get(r) ?? "").toString().trim();
-    return `${label}: ${raw || "(none)"}`;
-  });
-  return `New lead for ${prettySource(r.source) || "website"}\n\nForward this email to Reflex Accounting\n\n${lines.join("\n")}`;
+  const siteLabel = prettySource(r.source) || "Website";
+  const headerName = (r.full_name ?? "").trim() || "New website enquiry";
+  const received = formatTimestamp(r.created_at);
+  const message = (r.message ?? "").trim();
+
+  const lines: string[] = [`NEW ${siteLabel.toUpperCase()} LEAD`, headerName];
+  if (received) lines.push(`Received ${received}`);
+  lines.push("", "Forward this email to Reflex Accounting", "", "LEAD DETAILS");
+  for (const field of DETAIL_FIELDS) {
+    const raw = (field.get(r) ?? "").toString().trim();
+    lines.push(`${field.label}: ${raw || "Not provided"}`);
+  }
+  lines.push("", "MESSAGE", message || "Not provided");
+  lines.push("", `Lead ID: ${r.id || "Not provided"}`);
+  return lines.join("\n");
 }
 
 // Health probe: confirms the route is deployed and whether env is wired,
@@ -142,6 +224,7 @@ export async function GET() {
     secretSet: Boolean(process.env.LEADS_NOTIFY_SECRET || process.env.LEADS_SYNC_SECRET),
     resendSet: Boolean(process.env.RESEND_API_KEY),
     notifyTo: Boolean(process.env.LEADS_NOTIFY_TO),
+    ccSet: Boolean(process.env.LEADS_NOTIFY_CC),
   });
 }
 
@@ -178,12 +261,19 @@ export async function POST(req: NextRequest) {
   }
 
   const to = process.env.LEADS_NOTIFY_TO || "junaydmoughal@hotmail.co.uk";
+  // Partner firm copied on every lead. Comma-separated list supported via env;
+  // defaults to Reflex Accounting so no new Vercel config is required.
+  const cc = (process.env.LEADS_NOTIFY_CC ?? "ahmadtirmizey@reflexaccounting.co.uk")
+    .split(",")
+    .map((addr) => addr.trim())
+    .filter(Boolean);
   const subject = `New ${prettySource(r.source) || "website"} lead${r.full_name ? `: ${r.full_name}` : ""}`;
 
   try {
     const { error } = await getResend().emails.send({
       from: getFromAddress(),
       to,
+      ...(cc.length ? { cc } : {}),
       subject,
       html: buildHtml(r),
       text: buildText(r),

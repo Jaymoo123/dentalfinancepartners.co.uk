@@ -1,0 +1,45 @@
+wave: 2
+site: medical
+buckets:
+  A:
+    label: "Bucket A: GMS core funding (NHS GP income, HP §3). Clean net-new; no existing GMS-funding page."
+    category: "GP Practice Management"
+    picks:
+      - { id: A1, slug: "how-gms-funding-works-global-sum-carr-hill-explained", label: "How GMS practice funding works: the Global Sum, the Carr-Hill formula and weighted patients" }
+      - { id: A2, slug: "qof-income-gp-practice-accounting-explained", label: "QOF income explained: how the Quality and Outcomes Framework pays your practice and how it is accounted for" }
+      - { id: A3, slug: "enhanced-services-gp-practice-income-tax", label: "Enhanced and locally commissioned services: extra GP practice income and how it is taxed" }
+  B:
+    label: "Bucket B: PCN and ARRS (HP §3). Clean net-new; no existing PCN page."
+    category: "GP Practice Management"
+    picks:
+      - { id: B1, slug: "pcn-funding-network-contract-des-explained", label: "PCN funding explained: the Network Contract DES and how primary care network money flows" }
+      - { id: B2, slug: "arrs-reimbursement-employing-pcn-staff-tax", label: "The Additional Roles Reimbursement Scheme (ARRS): reimbursement, employing PCN staff and the accounting" }
+      - { id: B3, slug: "pcn-clinical-director-payments-tax", label: "PCN clinical director and leadership payments: how they are taxed and whether they are pensionable" }
+  C:
+    label: "Bucket C: Other NHS and practice income (HP §3, with a §6 VAT cross-ref). Net-new."
+    category: "GP Practice Management"
+    picks:
+      - { id: C1, slug: "dispensing-practice-income-accounts-tax", label: "Dispensing practice accounts: how dispensing income works and how it is taxed" }
+      - { id: C2, slug: "gp-practice-private-non-nhs-income-streams", label: "Private and non-NHS income in a GP practice: medicals, reports, travel clinics and minor procedures" }
+      - { id: C3, slug: "gp-practice-income-pcse-statement-reconciliation", label: "Checking your GP practice income: reading PCSE statements and spotting underpayments" }
+  D:
+    label: "Bucket D: Understanding GP partnership accounts (HP §1, §4). Differentiate from the 4 existing TAX-focused partnership pages: this cluster is about reading the ACCOUNTS."
+    category: "GP Tax & Accounts"
+    picks:
+      - { id: D1, slug: "reading-gp-partnership-accounts-current-capital-accounts", label: "How to read GP partnership accounts: current accounts, capital accounts and drawings" }
+      - { id: D2, slug: "gp-partner-drawings-vs-profit-tax-reserving", label: "Drawings versus profit for a GP partner: why they differ and how to reserve for tax" }
+      - { id: D3, slug: "gp-partnership-basis-period-reform-explained", label: "Basis period reform and your GP partnership: the move to the tax year and the transition" }
+  E:
+    label: "Bucket E: Joining a GP partnership (HP §1, §4). Differentiate from becoming-gp-partner-financial-implications (broad) and Wave 1 premises buy-in: this cluster is the capital/parity/DD of joining."
+    category: "GP Tax & Accounts"
+    picks:
+      - { id: E1, slug: "buying-into-gp-partnership-capital-parity-explained", label: "Buying into a GP partnership: the capital buy-in, parity and how the cost is set" }
+      - { id: E2, slug: "gp-partnership-mutual-assessment-period-what-to-check", label: "The mutual assessment period: what to check financially before becoming a GP partner" }
+      - { id: E3, slug: "financing-gp-partnership-buy-in-tax-relief", label: "Financing a GP partnership buy-in: loans, tax relief on the interest and the numbers" }
+  F:
+    label: "Bucket F: Leaving, retiring and mergers (HP §1, §4). Net-new."
+    category: "GP Tax & Accounts"
+    picks:
+      - { id: F1, slug: "retiring-from-gp-partnership-tax-capital-account", label: "Retiring or leaving a GP partnership: your capital account, cessation and the tax" }
+      - { id: F2, slug: "gp-practice-merger-accounts-tax-explained", label: "GP practice mergers: what happens to the accounts, the partners and the tax" }
+      - { id: F3, slug: "gp-expense-sharing-vs-full-partnership", label: "Expense sharing agreements versus a full GP partnership: the difference and the tax treatment" }

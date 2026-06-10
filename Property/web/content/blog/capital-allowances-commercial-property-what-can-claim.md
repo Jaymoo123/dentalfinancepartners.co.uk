@@ -3,7 +3,11 @@ title: "Capital Allowances on Commercial Property: What Can You Claim?"
 slug: "capital-allowances-commercial-property-what-can-claim"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim"
 date: "2026-05-30"
+dateModified: "2026-06-02"
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "ICAEW Qualified Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedAt: "2026-06-02"
 category: "Property Types & Specialist Tax"
 metaTitle: "Commercial Property Capital Allowances 2026: What to Claim"
 metaDescription: "What you can claim on commercial property: plant and machinery, AIA, the 14% WDA from April 2026, SBA at 3%, and the section 198 fixtures election."
@@ -76,9 +80,9 @@ faqs:
 <p>The first job on any commercial purchase is to divide the price into categories, because each gets a different treatment. The legislation works by exclusion and then carve-back:</p>
 
 <ul>
-<li><strong>The building shell (excluded).</strong> CAA 2001 s.21 excludes expenditure on a building from plant and machinery. List A covers walls, floors, ceilings, doors, gates, windows, stairs, mains services, and the shafts that house lifts. This is the structure, not plant.</li>
+<li><strong>The building shell (excluded).</strong> <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/21">CAA 2001 s.21</a> excludes expenditure on a building from plant and machinery. List A covers walls, floors, ceilings, doors, gates, windows, stairs, mains services, and the shafts that house lifts. This is the structure, not plant.</li>
 <li><strong>Structures and works (excluded).</strong> CAA 2001 s.22 excludes structures in List B, such as roads, bridges and retaining walls, and works that alter land. These are not plant either, though some may qualify for SBA instead.</li>
-<li><strong>Integral features (special rate pool, 6%).</strong> CAA 2001 s.33A lists five categories of integral feature: electrical and lighting systems, cold water systems, space or water heating and powered ventilation or air cooling, lifts and escalators, and external solar shading. These go in the special rate pool and are written down at 6%.</li>
+<li><strong>Integral features (special rate pool, 6%).</strong> <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/33A">CAA 2001 s.33A</a> lists five categories of integral feature: electrical and lighting systems, cold water systems, space or water heating and powered ventilation or air cooling, lifts and escalators, and external solar shading. These go in the special rate pool and are written down at 6%. For how the five categories are identified in practice, see our <a href="/blog/property-types-and-specialist-tax/integral-features-capital-allowances">integral features capital allowances guide</a>.</li>
 <li><strong>Remaining plant (main pool, 14%).</strong> Everything that survives the s.21 and s.22 exclusions and is restored as plant by the List C carve-back in s.23, or is plant in its own right, goes in the main pool at 14% from April 2026. Examples in a commercial building include fitted kitchens in catering premises, sanitaryware, fire and security systems, and trade-specific equipment.</li>
 </ul>
 
@@ -98,7 +102,7 @@ faqs:
 
 <h2>Writing-down allowances after AIA</h2>
 
-<p>Where qualifying spend exceeds the AIA cap, or you choose not to use AIA, the balance is written down annually on the reducing balance. From April 2026 the rates are 14% for the main pool and 6% for the special rate pool. The 14% rate was substituted into CAA 2001 s.56 by Finance Act 2026 s.28 (down from 18%) for chargeable periods beginning on or after 1 April 2026 for corporation tax and 6 April 2026 for income tax. A period that straddles the start date uses a hybrid, time-apportioned rate between 18% and 14%. The special rate pool stays at 6% and was not reduced. For the detail, see our <a href="/blog/property-types-and-specialist-tax/writing-down-allowance-rates">writing-down allowance rates guide</a>.</p>
+<p>Where qualifying spend exceeds the AIA cap, or you choose not to use AIA, the balance is written down annually on the reducing balance. From April 2026 the rates are 14% for the main pool and 6% for the special rate pool. The 14% rate was substituted into <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/56">CAA 2001 s.56</a> by Finance Act 2026 s.28 (down from 18%) for chargeable periods beginning on or after 1 April 2026 for corporation tax and 6 April 2026 for income tax. A period that straddles the start date uses a hybrid, time-apportioned rate between 18% and 14%. The special rate pool stays at 6% and was not reduced. For the detail, see our <a href="/blog/property-types-and-specialist-tax/writing-down-allowance-rates">writing-down allowance rates guide</a>.</p>
 
 <h3>Worked example 3: the reducing balance</h3>
 
@@ -117,12 +121,12 @@ faqs:
 
 <h2>Structures and buildings allowance (SBA)</h2>
 
-<p>SBA gives relief on the construction cost of the building itself, the part that plant and machinery allowances cannot reach. The rate is 3% a year on a straight-line basis over an allowance period of 33 and a third years (CAA 2001 s.270AA). The 3% rate (up from the original 2%) was enacted by Finance Act 2020, with effect from 1 April 2020 for corporation tax and 6 April 2020 for income tax. SBA did not change in April 2026; there is no 2.5% rate and no 40-year period.</p>
+<p>SBA gives relief on the construction cost of the building itself, the part that plant and machinery allowances cannot reach. The rate is 3% a year on a straight-line basis over an allowance period of 33 and a third years (<a href="https://www.legislation.gov.uk/ukpga/2001/2/section/270AA">CAA 2001 s.270AA</a>). The 3% rate (up from the original 2%) was enacted by Finance Act 2020, with effect from 1 April 2020 for corporation tax and 6 April 2020 for income tax. SBA did not change in April 2026; there is no 2.5% rate and no 40-year period.</p>
 
 <p>To qualify, construction must have begun on or after 29 October 2018, the expenditure must be on construction, renovation or conversion (not on the land, which is excluded by s.270BG), and the first use after the expenditure must be non-residential. Two gates matter most for a buyer:</p>
 
 <ul>
-<li><strong>The allowance statement (s.270IA).</strong> The qualifying expenditure is treated as nil unless an allowance statement is in place before the current owner first makes a claim (s.270IA(2)). The statement records the building, the earliest construction contract date, the qualifying expenditure, and the date of first non-residential use. When you buy a building part-way through its allowance period, you inherit the remaining period but you cannot claim without the seller's allowance statement, so obtaining it is a due-diligence item.</li>
+<li><strong>The allowance statement (s.270IA).</strong> The qualifying expenditure is treated as nil unless an allowance statement is in place before the current owner first makes a claim (<a href="https://www.legislation.gov.uk/ukpga/2001/2/section/270IA">s.270IA(2)</a>). The statement records the building, the earliest construction contract date, the qualifying expenditure, and the date of first non-residential use. When you buy a building part-way through its allowance period, you inherit the remaining period but you cannot claim without the seller's allowance statement, so obtaining it is a due-diligence item.</li>
 <li><strong>The residential exclusion (s.270CF).</strong> Any part used as a dwelling-house is not in qualifying use, even if it is also used for other purposes (s.270CF(5)). For a shop with a flat above, only the shop construction cost can carry SBA; the flat is excluded entirely.</li>
 </ul>
 
@@ -138,9 +142,9 @@ faqs:
 
 <h3>Gate two: the fixed-value requirement (s.187A)</h3>
 
-<p>Once the pooling gate is passed, the value of the fixtures must be fixed within two years of the purchase. The normal route is a joint section 198 election (CAA 2001 s.198), a written agreement signed by buyer and seller that states the amount allocated to the fixtures, identifies the plant and the property, and gives both parties' tax references. That figure becomes the buyer's qualifying expenditure and the seller's disposal value at the same time. If the value is not fixed in time, s.187A(3) treats the buyer's expenditure as nil. The time limit is two years from the date you acquire the interest (s.201(1)). Where a seller refuses to elect, the buyer can apply to the First-tier Tribunal for a determination, but in practice the negotiated election is the route used.</p>
+<p>Once the pooling gate is passed, the value of the fixtures must be fixed within two years of the purchase. The normal route is a joint section 198 election (<a href="https://www.legislation.gov.uk/ukpga/2001/2/section/198">CAA 2001 s.198</a>), a written agreement signed by buyer and seller that states the amount allocated to the fixtures, identifies the plant and the property, and gives both parties' tax references. That figure becomes the buyer's qualifying expenditure and the seller's disposal value at the same time. If the value is not fixed in time, s.187A treats the buyer's expenditure on those fixtures as nil. The time limit is two years from the date you acquire the interest (s.201(1)). Where a seller refuses to elect, the buyer can apply to the First-tier Tribunal for a determination, but in practice the negotiated election is the route used.</p>
 
-<h3>Worked example 5: the election negotiation</h3>
+<h3>Worked example 4: the election negotiation</h3>
 
 <p>A buyer acquires a commercial unit whose fixtures the seller had pooled at an original cost of 200,000 pounds. The maximum the parties can elect is the lower of that original expenditure and the actual sale price (s.198(3)). The seller wants a low figure (a low disposal value preserves their pool and avoids a balancing charge); the buyer wants a high figure (to maximise their own future allowances). A 1 pound election is legally valid but hands the allowances back to the exchequer; a market-value election protects the buyer's claim but may create a balancing charge for the seller. The right number is negotiated, and the obligation to sign the election within the two-year window should be written into the heads of terms, not left to chance after completion.</p>
 

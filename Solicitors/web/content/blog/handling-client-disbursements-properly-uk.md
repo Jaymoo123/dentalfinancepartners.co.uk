@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing client account ledger entries for disbursements
 image: ""
 h1: "How Should a Solicitor Handle Client Disbursements on the Client Account?"
 summary: "A clear guide for UK solicitors on handling client disbursements correctly under the SRA Accounts Rules. Covers the distinction between disbursement principal and agent, VAT treatment, and practical compliance steps."
+keyTakeaways:
+  - "The principal versus agent test turns on who is legally liable to pay the third party, and it drives both client account and VAT treatment."
+  - "True disbursements paid as agent are outside VAT scope, but costs recharged as principal must carry 20% VAT."
+  - "Court fees and SDLT are paid as agent with no VAT added, a point firms commonly get wrong."
+  - "Client money for disbursements must sit in the client account, reconciled at least every five weeks under Rule 8.3."
+  - "Wrongly treating a recharged cost as a disbursement leaves the firm facing a VAT assessment plus interest and penalties."
 schema: ""
 faqs:
   - question: "What is the difference between a disbursement principal and a disbursement agent for a solicitor?"

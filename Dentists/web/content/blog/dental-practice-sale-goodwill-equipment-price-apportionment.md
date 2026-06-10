@@ -1,0 +1,170 @@
+---
+title: "Splitting a Dental Practice Sale Price Between Goodwill and Equipment: The Tax That Turns on the Line"
+slug: "dental-practice-sale-goodwill-equipment-price-apportionment"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/dental-practice-sale-goodwill-equipment-price-apportionment"
+date: "2026-06-03"
+author: "Dental Finance Partners Editorial Team"
+category: "Goodwill & Practice Sale"
+metaTitle: "Dental Sale: Splitting Price Between Goodwill & Kit"
+metaDescription: "How the goodwill vs equipment split in a dental sale changes the tax. CGT and BADR for the seller, balancing charges and the s.198 fixtures election."
+altText: "A dental surgery with equipment and a sale agreement on the desk"
+image: ""
+h1: "Splitting a Dental Practice Sale Price Between Goodwill and Equipment: The Tax That Turns on the Line"
+summary: "On an asset sale, the agreed price is split between goodwill and tangible equipment, and that line has real tax consequences. Goodwill sits in the CGT and BADR world for the seller, while plant and fixtures move through the capital-allowances system, with balancing charges, AIA and the s.198 election in play. We explain who wins and loses from where the line is drawn."
+schema: ""
+faqs:
+  - question: "Does it matter how we split the price between goodwill and equipment if the total is fixed?"
+    answer: "Yes, on an asset sale it matters a great deal, even when the total is agreed. Goodwill is a capital asset taxed under CGT, where the seller may use Business Asset Disposal Relief at 14% to 5 April 2026 and 18% from 6 April 2026. Equipment runs through the capital-allowances system, where a high allocation can trigger an income-tax balancing charge for the seller and shapes the relief the buyer gets. The same total can produce very different tax for both parties depending on the split."
+  - question: "What is a balancing charge and can selling my dental equipment trigger one?"
+    answer: "A balancing charge is a clawback of capital allowances you previously claimed. If you sell equipment for more than its tax written-down value (up to its original cost), the excess relief is added back and taxed as trading income in the year of sale. So allocating a large slice of the price to equipment you have already written down for tax can create an income-tax charge, taxed at your marginal rate rather than at the lower BADR rate that applies to goodwill."
+  - question: "What is a CAA 2001 s.198 election and do we need one?"
+    answer: "A s.198 election is a joint election between buyer and seller fixing the value attributed to fixtures (items like chairs, X-ray units and integral features that are part of the building) for capital-allowances purposes. On an asset sale that includes fixtures the seller has pooled, you should make one. It binds both sides to a single agreed figure, which is what removes the dispute between the seller's and buyer's opposite preferences and protects the buyer's right to claim allowances."
+  - question: "What happens if we forget to make the s.198 fixtures election?"
+    answer: "If the election is not made in time, the buyer can lose the right to claim capital allowances on those fixtures entirely. On a typical surgery that can be tens of thousands of pounds of relief lost permanently, for the sake of a one-page joint election. It is one of the most common and most preventable losses in a dental practice purchase, so the deadline must be diarised."
+  - question: "How long do we have to make the s.198 election?"
+    answer: "Under CAA 2001 s.201 the election must be made no later than two years after the buyer acquires the qualifying interest in the property. Miss that two-year window and the chance is gone. Because completion is busy and the deadline is far off, it is exactly the sort of item that slips, so diarise it at completion."
+  - question: "Why does the buyer want more allocated to equipment?"
+    answer: "Because tangible plant and machinery can attract the Annual Investment Allowance, giving 100% first-year relief up to £1m, whereas goodwill acquired on or after 1 April 2019 gets only fixed-rate relief at 6.5% a year, and only where the qualifying-IP condition and 6× cap are met. So a pound allocated to qualifying equipment can give the buyer full relief in year one, while a pound allocated to goodwill is relieved slowly, if at all. The buyer therefore usually prefers more weight on equipment."
+  - question: "Why might the seller want more allocated to goodwill?"
+    answer: "Because goodwill is a capital gain, eligible for BADR at 14% to 5 April 2026 and 18% from 6 April 2026 within the £1m lifetime limit, often on a near-zero base cost for self-built goodwill. Equipment the seller has already written down can trigger an income-tax balancing charge if allocated a high value, taxed at the seller's marginal rate. So the seller usually prefers the capital, lower-rate goodwill world over the income-tax world."
+  - question: "Can the buyer claim 100% AIA on dental equipment bought as part of a practice purchase?"
+    answer: "Qualifying plant and machinery bought as part of a practice purchase can attract AIA up to the £1m annual limit, giving 100% relief in year one, covering most surgery equipment such as chairs, X-ray units, autoclaves and compressors. Fixtures within the building need a s.198 election to fix their value. AIA cannot be claimed on cars, and the building structure itself is not plant."
+  - question: "What relief does the buyer get on the goodwill, and is it automatic?"
+    answer: "For goodwill acquired on or after 1 April 2019, a company buyer can claim fixed-rate relief at 6.5% a year on the cost, effectively a 15-year write-down. It is not automatic: the goodwill must be acquired as part of a business acquisition that also includes qualifying intellectual property assets, and the relief is capped at six times the qualifying-IP expenditure. A blanket assumption that any post-April-2019 purchase always gets 6.5% is wrong because of that IP condition."
+  - question: "Can HMRC challenge the goodwill-versus-equipment split we agree?"
+    answer: "Yes. The split must be commercially justifiable and, for the tangibles, supported by a proper valuation. HMRC can reallocate a split that looks tax-motivated rather than commercial, with tax, interest and penalties for both parties. The s.198 fixtures figure should also be consistent with the allocation in the sale agreement. A defensible, professionally valued split is the protection."
+  - question: "Is the split a tax issue on a share sale too, or only an asset sale?"
+    answer: "It is essentially an asset-sale issue. On a share sale the buyer acquires the company, which keeps its assets at their existing tax values, so there is no fresh apportionment of the price between goodwill and plant for the buyer and no s.198 election. The goodwill-versus-equipment tax analysis on this page applies where the trade and assets are sold, not where the shares are sold."
+  - question: "What is the difference between main-rate plant and integral features for capital allowances?"
+    answer: "Main-rate plant and machinery (general surgery equipment) sits in the main pool with an 18% writing-down allowance. Integral features (electrical systems, cold and hot water, heating, air and ventilation) sit in the special-rate pool with a 6% writing-down allowance. AIA can be allocated to either, and is best directed at the slower 6% special-rate items first. So part of what looks like equipment in a fit-out is actually special-rate, which affects how quickly relief is given if AIA runs out."
+  - question: "Does the freehold building qualify for any allowances?"
+    answer: "The land and the building structure do not qualify for plant-and-machinery allowances. Some qualifying construction or premises spend incurred on or after 29 October 2018 may attract the Structures and Buildings Allowance at 3% a year, but that is separate from the plant pools and does not cover the land or the plant already pooled. The fixtures and integral features within the building are the part that runs through capital allowances and the s.198 election."
+  - question: "Should the s.198 figure match the equipment figure in the sale agreement?"
+    answer: "The s.198 figure relates specifically to the fixtures, and it should be consistent with how the sale agreement allocates the price. An inconsistency between the SPA allocation and the s.198 election is exactly the kind of mismatch HMRC looks for. Agree the allocation and the matching s.198 fixtures figure together, as one decision, rather than treating the election as an afterthought."
+---
+
+<p>You have agreed a price for your dental practice. On an asset sale, the work is not over, because that single number has to be split, in the sale agreement, between the <strong>goodwill</strong> and the <strong>tangible assets</strong> (the equipment, fixtures and fit-out). That split is not a piece of accounting housekeeping. It is a tax decision, and the line you draw has direct, and often opposed, consequences for both the seller and the buyer.</p>
+
+<p>This page is not about <em>how much</em> of the price is goodwill. That is the valuation question, and we answer it separately in <a href="/blog/goodwill-and-practice-sale/how-much-of-dental-practice-price-is-goodwill">how much of a dental practice price is goodwill</a> (the short answer is usually 60 to 80%). This page is about the <strong>tax that turns on the apportionment line</strong>: goodwill falls into the capital gains tax and BADR world for the seller, while plant, machinery and fixtures move through the capital-allowances system, with balancing charges, the Annual Investment Allowance and the s.198 fixtures election all in play. Where you put the line decides who wins and who loses, and by how much.</p>
+
+<h2>Why the split is a tax decision, not just an accounting one</h2>
+
+<p>One agreed total price; two entirely different tax worlds. Allocate a pound to goodwill and it is a capital asset: a capital gain for the seller (eligible for BADR), and a slow fixed-rate write-down for a company buyer. Allocate that same pound to equipment and it is a capital-allowances item: potentially an income-tax balancing charge for the seller, but potentially 100% first-year relief for the buyer. Because the two worlds carry different rates and different timing, the same total price produces a different net tax result for both sides depending on where the line sits. That is why the apportionment is negotiated, and why it is worth getting professional input on before signing.</p>
+
+<h2>The two buckets defined for tax</h2>
+
+<p>For tax, the sale assets split broadly into two buckets.</p>
+
+<ul>
+<li><strong>Goodwill and goodwill-like intangibles.</strong> The value of the patient list, reputation, location and the going concern. Treated as a capital asset.</li>
+<li><strong>Tangible plant, machinery, fixtures and integral features.</strong> Within this bucket there is a further split that matters. <strong>Main-rate plant and machinery</strong> includes the loose and installed surgery equipment: chairs, X-ray units, autoclaves, compressors. <strong>Integral features</strong> are the building systems: electrical, cold and hot water, heating, air and ventilation. They are taxed in different capital-allowances pools (18% and 6% respectively), which we come back to below.</li>
+</ul>
+
+<p>The land and the building structure itself are in neither plant bucket. They may attract the Structures and Buildings Allowance, covered later, but they are not plant.</p>
+
+<h2>Seller side, the goodwill slice: CGT and BADR</h2>
+
+<p>For the seller, the goodwill slice is a <strong>capital gain</strong>. With Business Asset Disposal Relief, that gain is taxed at <strong>14% for disposals to 5 April 2026 and 18% from 6 April 2026</strong>, within the £1m lifetime limit per individual. Because dental goodwill is usually <strong>self-built</strong> over years of practice, its base cost for CGT is often near zero, so almost the entire goodwill allocation is gain. The conditions behind that relief are set out in <a href="/blog/goodwill-and-practice-sale/badr-on-dental-practice-sale-2026-uk">BADR on a dental practice sale</a>.</p>
+
+<p>The headline for the split is simple: every pound the seller can legitimately keep in the goodwill slice is a pound taxed in the BADR world (14% or 18%), rather than potentially in the income-tax world that the equipment slice can create. That is the seller's structural preference, and it pulls against the buyer's.</p>
+
+<p>There is a limit to how far that preference can run, though. The £1m lifetime BADR limit is per individual, so a very large goodwill gain that exceeds the seller's remaining £1m is taxed above the limit at the main CGT rate (24% for higher-rate gains on current rules), not at 14% or 18%. So loading more value into goodwill is not free of consequence once the gain passes £1m, although the main CGT rate on the excess (24%) is still usually below the income-tax marginal rate that a balancing charge on equipment can attract (up to 40% or 45%). The timing of the disposal also feeds into the goodwill slice: a goodwill gain disposing on or before 5 April 2026 takes 14%, one disposing from 6 April 2026 takes 18%, which is a separate lever covered in <a href="/blog/goodwill-and-practice-sale/selling-dental-practice-badr-rate-rise-2026-timing">timing a dental practice sale around the 2026 BADR rise</a>.</p>
+
+<h2>Seller side, the equipment slice: balancing charges and balancing allowances</h2>
+
+<p>This is the part the valuation page does not cover, and it is where sellers get caught. If you claimed capital allowances (AIA or writing-down allowances) on your equipment over the years, you have already had tax relief on its cost. When you sell, the tax system reconciles that relief against the sale value:</p>
+
+<ul>
+<li>Sell the equipment for <strong>more than its tax written-down value</strong> (the unrelieved balance), and the excess relief is clawed back as a <strong>balancing charge</strong>, taxed as trading income in the year of sale. The disposal value brought in is capped at the asset's original cost.</li>
+<li>Sell it for <strong>less</strong> than its written-down value and you get a <strong>balancing allowance</strong>, a further deduction.</li>
+</ul>
+
+<p>So a high equipment allocation can create an <strong>income-tax charge</strong> for the seller, taxed at their marginal rate (potentially 40% or 45%), not the 14% or 18% BADR rate. That is the opposite of what the seller wants. The more of the price that lands on already-written-down equipment, the more of a previously-relieved cost is dragged back into income tax now.</p>
+
+<p>The reason the sting can be large is the speed of dental capital allowances. Most surgery equipment is bought with the Annual Investment Allowance giving 100% relief in year one, so the tax written-down value drops to nil almost immediately even though the kit keeps a real second-hand value for years. By the time the practice sells, a chair or X-ray unit may be worth a meaningful sum on the open market but stand at a nil or near-nil tax value, so almost the whole of its allocated sale value (capped at original cost) comes back as a balancing charge. That is why a seller who claimed AIA aggressively in the past can be especially exposed to a high equipment allocation at sale: the faster the original relief, the larger the clawback now. It is also why the equipment slice should be valued and modelled before the split is agreed, not discovered at the tax-return stage.</p>
+
+<h2>The CAA 2001 s.198 fixtures election: the mechanism that fixes the equipment number</h2>
+
+<p>For fixtures, items that are part of the building (integral features, plumbed and wired equipment), the value attributed on a sale is not simply whatever the parties write down. It is fixed by a <strong>joint CAA 2001 s.198 election</strong>: a written election, signed by buyer and seller, stating the value attributed to the fixtures for capital-allowances purposes. It can be set anywhere from £1 up to the seller's original cost (subject to disposal-value caps).</p>
+
+<p>Two things make this election critical:</p>
+
+<ul>
+<li><strong>It binds both sides to one figure.</strong> The seller's disposal value and the buyer's acquisition value for those fixtures are the same number. That single figure is where the buyer's and seller's opposite preferences are reconciled.</li>
+<li><strong>Missing it forfeits the buyer's fixtures allowances entirely.</strong> If no valid election is made, the buyer can be left unable to claim any capital allowances on those fixtures, ever.</li>
+</ul>
+
+<p>The deadline is set by <strong>CAA 2001 s.201</strong>: the election must be made no later than <strong>two years after the buyer acquires the qualifying interest</strong>. This is the single most preventable loss in a dental practice purchase. Worked mechanics for the buyer's equipment claim are in <a href="/blog/capital-allowances-and-equipment/capital-allowances-example-dental-practice">a capital-allowances example for a dental practice</a>.</p>
+
+<p>A practical point that catches sellers and buyers out is that the election should be made <strong>as part of the deal</strong>, not left as a loose end for the accountants to tidy up afterwards. In the rush of completion, with the solicitors focused on the transfer and the warranties, the s.198 election is easy to file under "we will sort that later", and "later" then runs into the two-year wall. The clean approach is to draft the election alongside the sale agreement, agree the fixtures figure at the same table as the rest of the apportionment, and have both parties sign it at or shortly after completion. It costs a single sheet of paper and a short negotiation, and it removes both the risk of forfeiture and the risk of a later dispute over the number, because once it is signed the figure is fixed for both sides and there is nothing left to argue about.</p>
+
+<h2>The buyer side: AIA on equipment versus 6.5% on goodwill</h2>
+
+<p>For the buyer, the two buckets give very different relief.</p>
+
+<ul>
+<li><strong>Equipment</strong> (qualifying plant and machinery) can attract the <strong>Annual Investment Allowance</strong>, giving <strong>100% relief in year one up to the £1m AIA limit</strong>. That covers most surgery equipment.</li>
+<li><strong>Goodwill</strong> acquired on or after 1 April 2019 gets only <strong>fixed-rate relief at 6.5% a year</strong> (effectively a 15-year write-down), and even that is <strong>not automatic</strong>. The goodwill must be acquired as part of a business acquisition that <strong>also includes qualifying intellectual property assets</strong>, and the relief is <strong>capped at six times the qualifying-IP expenditure</strong>. The conditions are explained in <a href="/blog/goodwill-and-practice-sale/goodwill-amortisation-rules-dental-practice-post-2019">goodwill amortisation rules for dental practices post-2019</a>.</li>
+</ul>
+
+<p>So the buyer's instinct is to push value towards equipment, where relief is fast and certain, and away from goodwill, where it is slow and conditional. That is the direct opposite of the seller's instinct.</p>
+
+<h2>Where the interests collide (and where they align)</h2>
+
+<p>Lay the two preferences side by side and the tension is clear:</p>
+
+<ul>
+<li><strong>The seller</strong> wants <strong>more goodwill</strong>, to keep the slice in the 14% or 18% BADR world and to avoid an income-tax balancing charge on over-allocated, already-written-down equipment.</li>
+<li><strong>The buyer</strong> wants <strong>more equipment</strong>, to claim fast 100% AIA rather than slow 6.5% goodwill relief.</li>
+</ul>
+
+<p>The s.198 fixtures election is where that tension is forced to a single number, because the same figure is the seller's disposal value and the buyer's acquisition value, with <strong>equal and opposite effects</strong>. Set the fixtures figure high and the buyer's allowances go up while the seller's balancing charge goes up. Set it low and both reverse. There is no figure that is good for both. That is exactly why it has to be negotiated, valued and documented as one decision, not left to whoever drafts the schedule.</p>
+
+<p>Worked through, the numbers are stark. <em>(BADR 14% to 5 April 2026; AIA £1m; balancing-charge mechanics per CAA 2001.)</em></p>
+
+<p><strong>Example 1, same total, two splits, two buyer outcomes.</strong> A practice is sold (asset sale) for £800,000.</p>
+
+<ul>
+<li>Split A, 80% goodwill / 20% equipment: goodwill £640,000, equipment £160,000. Buyer year-one relief: £160,000 AIA plus 6.5% on £640,000 goodwill (£41,600) = <strong>£201,600</strong>.</li>
+<li>Split B, 65% goodwill / 35% equipment: goodwill £520,000, equipment £280,000. Buyer year-one relief: £280,000 AIA plus 6.5% on £520,000 (£33,800) = <strong>£313,800</strong>.</li>
+</ul>
+
+<p>The buyer is roughly £112,000 of in-year deductions better off under Split B. Their preference is obvious.</p>
+
+<p><strong>Example 2, the seller's balancing-charge sting.</strong> Same practice. The seller had claimed allowances on equipment now standing at a <strong>tax written-down value of £20,000</strong>, with an original cost of £120,000. Under Split B's higher equipment allocation, the disposal value of the plant is capped at the £120,000 original cost: £120,000 disposal value less £20,000 written-down value gives a <strong>£100,000 balancing charge</strong>, taxed as trading income. At a 40% marginal rate that is <strong>£40,000 of income tax</strong>, not the 14% BADR rate. Shift more of the price into goodwill (Split A) and more of the consideration stays in the capital, BADR-rated world. The buyer's preferred split and the seller's preferred split pull in opposite directions, and the s.198 figure is where the tension is resolved.</p>
+
+<p><strong>Example 3, the forgotten election.</strong> Dr Reyes buys a practice with fixtures (chairs, compressor, X-ray) the seller had pooled. The sale agreement allocates £90,000 to those fixtures, but no s.198 election is signed and the two-year window under s.201 lapses. The result: Dr Reyes <strong>cannot claim capital allowances on those fixtures at all</strong>. At a realistic effective relief value of around 25 to 26% over time, that is roughly £22,000 to £23,000 of relief lost permanently, for the sake of a one-page joint election. Diarise the deadline.</p>
+
+<h2>Integral features and the 6% pool</h2>
+
+<p>Not all of the "equipment" allocation moves at the same speed. The <strong>integral features</strong> of a surgery (electrical, cold and hot water, heating, air and ventilation systems) sit in the <strong>special-rate pool</strong> with a <strong>6% writing-down allowance</strong>, while general plant and machinery sits in the main pool at <strong>18%</strong>. Where AIA is available it can be allocated to either, and the sensible default is to direct AIA at the slower 6% special-rate items first, so that they are not left writing down at 6% while faster items could have used the relief. On a surgery fit-out being sold on, a meaningful slice of the tangibles is special-rate, which is why the split inside the equipment bucket matters as well as the goodwill-versus-equipment line.</p>
+
+<h2>SBA and the building fabric</h2>
+
+<p>If the deal includes the freehold, the building structure and land sit outside the plant pools. Qualifying construction or premises spend incurred on or after 29 October 2018 may attract the <strong>Structures and Buildings Allowance at 3% a year</strong>, but the SBA covers the building fabric only. It does not cover the land, and it does not cover the plant already pooled. Keep it distinct: SBA is for the structure, capital allowances are for the plant and fixtures, and goodwill is neither.</p>
+
+<h2>HMRC and artificial allocations</h2>
+
+<p>The freedom to allocate is not a freedom to invent. The split must be <strong>commercially justifiable</strong> and, for the tangibles, supported by a proper professional valuation. HMRC can <strong>reallocate a tax-motivated split</strong>, with tax, interest and penalties for both parties, and an inconsistency between the SPA allocation and the s.198 fixtures figure is exactly the sort of mismatch an enquiry seizes on. The protection is a defensible, valued, internally consistent allocation, agreed by both sides with advice, rather than a number reverse-engineered to suit one party's tax position.</p>
+
+<h2>Asset sale versus share sale changes the whole question</h2>
+
+<p>Everything above is an <strong>asset-sale</strong> analysis. On a <strong>share sale</strong>, the buyer acquires the company, which keeps its assets at their existing tax written-down values. There is no fresh apportionment of the purchase price between goodwill and plant for the buyer, and <strong>no s.198 election</strong>, because no fixtures change ownership at the asset level. So this entire balancing-charge-and-allocation question simply does not arise in the same form on a share sale. Whether your deal is structured as an asset sale or a share sale therefore decides whether any of this applies, which is covered in <a href="/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice">asset sale versus share sale on a dental practice</a>. The wider CGT context on a sale is in <a href="/blog/practice-finance/capital-gains-tax-selling-dental-practice-uk">capital gains tax on selling a dental practice</a>.</p>
+
+<h2>How the split interacts with deferred consideration</h2>
+
+<p>Where part of the price is deferred or tied to performance, the apportionment and the payment structure have to be read together. The goodwill slice is what BADR is measured on, and if any of the goodwill consideration is a genuine earn-out (unascertainable at completion), the right to that future payment is a separate asset valued at sale and taxed again when it pays out, often without BADR on the second event. The equipment slice, by contrast, is generally a fixed, ascertained figure agreed in the schedule and fixed by the s.198 election, so the balancing-charge calculation crystallises at completion regardless of any deferral on the goodwill side. The practical consequence is that the equipment allocation and its s.198 figure should be settled as a fixed completion-day number, while the goodwill consideration may itself be split between up-front and contingent slices with their own CGT timing. The detail of how deferred and contingent proceeds are taxed is in <a href="/blog/goodwill-and-practice-sale/dental-practice-sale-earn-out-deferred-consideration-cgt">earn-outs and deferred consideration on a dental practice sale</a>. For the split itself, the takeaway is to pin down the tangibles number first, because it is the part least suited to being left contingent.</p>
+
+<h2>A practical sequence to get the split right</h2>
+
+<p>For an asset sale, the disciplined order of work is:</p>
+
+<ul>
+<li><strong>Get a tangibles valuation.</strong> A defensible professional value for the equipment and fixtures is the foundation of a split that survives HMRC scrutiny.</li>
+<li><strong>Model the seller's balancing-charge exposure.</strong> Compare the proposed equipment allocation against the tax written-down value of the pooled plant, so the income-tax sting is known before signing, not after.</li>
+<li><strong>Model the buyer's position.</strong> Weigh fast AIA on equipment against slow, conditional 6.5% relief on goodwill, and check the qualifying-IP condition is actually met.</li>
+<li><strong>Agree the SPA allocation and the matching s.198 figure together,</strong> as one decision, consistent with each other and with the valuation.</li>
+<li><strong>Diarise the two-year s.198 deadline</strong> at completion, because it is the item that most often slips and costs the buyer real relief.</li>
+</ul>
+
+<p>We have modelled the goodwill-versus-equipment split on asset sales where the seller faced a balancing charge and the buyer wanted maximum AIA, and agreed a s.198 figure that worked for both within the two-year window. The point is not to win the allocation for one side. It is to set a line that is commercially honest, defensible to HMRC, and consciously chosen, rather than discovered, after the deadline has passed, to have cost one party far more than it needed to.</p>

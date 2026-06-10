@@ -11,6 +11,12 @@ altText: "UK solicitor reviewing WIP valuation report with calculator and law fi
 image: ""
 h1: "How Should a Law Firm Choose Its WIP Valuation Method: Earnings Basis or Billings Basis?"
 summary: "Work in progress (WIP) valuation is a critical accounting decision for any UK law firm. This guide explains the two main methods (earnings basis and billings basis), their tax implications, and how to choose the right approach under FRS 102 for your solicitor practice."
+keyTakeaways:
+  - "The earnings basis values WIP at the proportion of the fee earned to date, recognising profit on unbilled work and taxing income before it is received."
+  - "The billings basis values WIP at the lower of cost and net realisable value, deferring the profit element until a bill is raised."
+  - "Since the Finance Act 2002 most law firms must use the earnings basis for tax, and FRS 102 Section 23 points the same way via stage of completion."
+  - "Switching from earnings basis to billings basis requires HMRC approval and a valid commercial reason, and is treated as a change of accounting policy."
+  - "On £800,000 of unbilled time costing £320,000, the £480,000 gap means around £216,000 more tax at a 45% rate on the earnings basis."
 schema: ""
 faqs:
   - question: "Can a law firm switch from earnings basis to billings basis for WIP valuation?"

@@ -3,161 +3,137 @@ title: "Dental Practice Insurance: Tax Deductible Expenses Guide"
 slug: "dental-practice-insurance-tax-deductible-expenses-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-insurance-tax-deductible-expenses-guide"
 date: "2026-03-30"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Practice Insurance: Which Premiums Are Deductible?"
-metaDescription: "Professional indemnity, buildings cover, employer liability — most dental insurance is fully tax-deductible. What qualifies and what doesn't."
+metaDescription: "Which dental practice insurances are tax deductible: indemnity, public and employers' liability, buildings, business interruption, plus the personal-cover carve-out."
 altText: "UK dental practice insurance documents and calculator showing tax deductible expenses"
-image: ""
+image: "https://images.pexels.com/photos/33175667/pexels-photo-33175667.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-report-33175667/"
 h1: "Dental Practice Insurance: Tax Deductible Expenses Guide"
-summary: "Most dental practice insurance premiums qualify as tax deductible business expenses, including professional indemnity and building cover. Understanding which policies qualify can reduce your tax bill significantly."
+summary: "Most dental practice insurance premiums are allowable revenue deductions where the cover is wholly and exclusively for the practice. This guide sets out which policies qualify, the personal-cover carve-out, the relevant life policy nuance for companies, and why input VAT and IPT cannot be reclaimed in an exempt dental business."
+keyTakeaways:
+  - "Insurance taken out wholly and exclusively for the practice is an allowable revenue deduction under ITTOIA 2005 s.34, deducted in full in the period it relates to."
+  - "Professional indemnity, public and employers' liability, buildings, contents, business interruption, cyber and practice-cover insurance are normally deductible business costs."
+  - "Personal life cover, personal income protection and private medical insurance fail the wholly-and-exclusively test, so they are not trading deductions."
+  - "A company-arranged relevant life policy on a director's life can be a deductible cost outside the pension annual and lifetime allowances when set up correctly."
+  - "Dental care is VAT-exempt under VATA 1994 Schedule 9 Group 7, so input VAT is not recoverable and Insurance Premium Tax is never reclaimable as input VAT."
 schema: ""
 faqs:
-  - question: "Can I claim all dental practice insurance as tax deductible expenses?"
-    answer: "Most dental practice insurance premiums are fully tax deductible, including professional indemnity, building insurance, contents cover, and public liability insurance. However, personal insurance policies like personal life insurance or home insurance cannot be claimed as business expenses."
-  - question: "How do I claim motor insurance for my dental practice?"
-    answer: "You can claim the business use portion of motor insurance if you use your car for practice purposes. Calculate the percentage based on business mileage versus total annual mileage. For example, if 25% of your driving is business use, you can claim 25% of your insurance premium as a deductible expense."
-  - question: "Is professional indemnity insurance fully deductible for dental associates?"
-    answer: "Yes, professional indemnity insurance premiums are fully deductible for dental associates as they're mandatory for practice. This includes standard cover, run-off insurance, and additional coverage for procedures like cosmetic dentistry. The entire annual premium qualifies as a necessary business expense."
+  - question: "Which dental practice insurance premiums are tax deductible?"
+    answer: "Insurance taken out wholly and exclusively for the practice is an allowable revenue deduction under ITTOIA 2005 s.34. That covers professional indemnity from a defence organisation, public liability, employers' liability, buildings and contents, business interruption, equipment, cyber and locum or practice-cover insurance. The premium is deducted in computing trading profit, so it reduces the tax bill of a sole trader, partnership or limited company."
+  - question: "Is personal life insurance a deductible business expense for a dentist?"
+    answer: "Generally no. Personal life cover, ordinary personal income protection and private medical insurance taken for the individual fail the wholly-and-exclusively test, so they are not trading deductions. The one structured exception is a relevant life policy arranged and paid by a limited company on a director's life, which can be a deductible company cost outside the annual or lifetime pension allowances when set up correctly. Take advice before relying on it."
+  - question: "Can a dental practice reclaim VAT on its insurance premiums?"
+    answer: "No. Dental care is exempt from VAT under VATA 1994 Schedule 9 Group 7, so an exempt practice cannot recover input VAT on its costs. Insurance itself is largely exempt from VAT and bears Insurance Premium Tax rather than VAT, and IPT is never recoverable as input VAT. A partially exempt practice with cosmetic-only income recovers only the small share of input VAT attributable to its taxable supplies."
+  - question: "Is professional indemnity insurance deductible for a dental associate?"
+    answer: "Yes. Indemnity or defence-organisation membership is required to practise and is incurred wholly and exclusively for the trade, so a self-employed associate deducts the full subscription against their Self Assessment trading profit. Run-off cover on retiring or changing provider is deductible on the same basis."
   - question: "Is buildings insurance deductible if I own my practice premises?"
-    answer: "Yes, buildings insurance is fully deductible if you own the property and use it for your dental practice. For mixed-use properties, you can only claim the portion that relates to business use."
+    answer: "Yes, where the property is used for the practice the buildings premium is an allowable trading or company expense. For a mixed-use building where you also live on site, only the business proportion is deductible. Apportion it on a fair and consistent basis such as floor area."
 ---
 
-<p><strong>Dental practice insurance</strong> premiums represent a significant cost for most UK practices — often £5,000 to £15,000 annually depending on the number of clinicians and scope of cover. The good news is that most policies qualify as tax-deductible business expenses. Understanding which <strong>insurance for dental practice</strong> costs you can claim against tax — and which you cannot — is essential for managing your practice finances effectively.</p>
+<p><strong>Dental practice insurance</strong> is one of the larger fixed costs a practice carries, and most of it works hard for you twice: once as protection, and again as a deduction that reduces your tax bill. The general rule is straightforward. Insurance taken out <strong>wholly and exclusively for the practice</strong> is an allowable revenue deduction in computing your trading profit, under section 34 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005). The harder questions sit at the edges: which policies are genuinely business cover, how to treat the personal carve-out, the relevant life policy nuance for incorporated practices, and why VAT on insurance is a dead end for a dental business.</p>
 
-<p>This guide covers the main types of insurance UK dental practices need, typical <strong>dental practice insurance cost</strong> ranges, and how to treat each policy for tax purposes. Whether you're a practice owner or considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">buying a practice</a>, getting this right can save you thousands in tax each year.</p>
+<p>This guide walks through the practice insurances dentists typically hold, sets out how each is treated for tax, and gives you a single deductibility table to keep handy. It is general guidance, not advice on your own arrangements, so confirm the position for your structure before you file.</p>
 
-<h2>Professional Indemnity and Liability Insurance for Dentists</h2>
+<h2>The deductibility test: wholly and exclusively for the practice</h2>
 
-<p><strong>Professional liability insurance for dentists</strong> — also known as professional indemnity insurance — is mandatory for all registered dental professionals and represents one of your largest insurance costs. The entire premium is fully tax-deductible as a necessary business expense.</p>
+<p>Every business expense, insurance included, has to clear the same hurdle to be allowable: it must be incurred <strong>wholly and exclusively for the purposes of the trade</strong> (ITTOIA 2005 s.34 for sole traders and partnerships; the equivalent corporation-tax test applies to companies). Insurance premiums are <strong>revenue expenses</strong>, not capital, so a qualifying premium is deducted in full in the period to which it relates rather than written down over time like a piece of equipment.</p>
 
-<p>This applies whether you pay for individual cover or practice-wide policies. Most dental defence organisations charge around £800–£1,500 annually for associates, while practice owners typically pay £2,000–£4,000 depending on their scope of practice.</p>
+<p>Where a policy protects the practice, its premises, its people in their working capacity, its equipment or its income, it passes the test comfortably. Where a policy protects you personally, or your family, or your home, it does not, because the purpose is not exclusively the trade. The interesting cases are mixed policies and policies that look personal but serve a business purpose, and those are where care pays off.</p>
 
-<p>Key points for tax purposes:</p>
-<ul>
-<li>Claim the full annual premium in the year you pay it</li>
-<li>If paying monthly by direct debit, claim each payment as it's made</li>
-<li>Run-off cover when retiring or changing insurers is also deductible</li>
-<li>Additional cover for cosmetic procedures qualifies as a business expense</li>
-</ul>
+<h2>Practice insurances that are normally deductible</h2>
 
-<h2>Building and Contents Insurance</h2>
+<h3>Professional indemnity and defence-organisation cover</h3>
 
-<p>Practice building insurance and contents cover are fully deductible business expenses. This includes standard commercial property insurance covering fire, flood, theft, and other risks.</p>
+<p><strong>Professional indemnity insurance</strong>, more often held as membership of a dental defence organisation such as Dental Protection, the MDU or the MDDUS, is the cornerstone cover for any clinician. It is required to practise and is incurred wholly and exclusively for the trade, so the full subscription is an allowable deduction. A self-employed associate claims it against their trading profit on Self Assessment; a practice or company claims it as a business cost. The same treatment extends to <strong>run-off cover</strong> taken when you retire or switch provider, because it still relates to your professional activity.</p>
 
-<p>For practice owners, this typically costs £2,000-£5,000 annually depending on property value and location. The entire premium qualifies as <strong>dental practice insurance tax deductible</strong> expense.</p>
+<h3>Public liability and employers' liability</h3>
 
-<p>Contents insurance covering dental equipment, computers, and practice furniture is similarly deductible. High-value items like CBCT scanners or CAD/CAM systems may require separate cover, but these premiums are also fully allowable.</p>
+<p><strong>Public liability insurance</strong> covers claims by patients and visitors injured on the premises, and <strong>employers' liability insurance</strong> covers claims by staff. Both are practice costs and both are deductible. Employers' liability is not merely allowable, it is <strong>compulsory</strong> for any practice with employees under the Employers' Liability (Compulsory Insurance) Act 1969, so it is a cost you carry by law as soon as you take on your first team member.</p>
 
-<h3>Mixed-Use Properties</h3>
+<h3>Buildings, contents and equipment</h3>
 
-<p>If you live above your practice, only the business portion of building insurance is deductible. You'll need to apportion costs based on floor space or rateable values. For example, if your practice occupies 70% of the building, you can claim 70% of the insurance premium.</p>
+<p>If you own your premises, <strong>buildings insurance</strong> for the practice is deductible. <strong>Contents insurance</strong> covering practice furniture, computers and stock is deductible, as is dedicated <strong>equipment cover</strong> for higher-value clinical kit such as a CBCT scanner or a CAD/CAM unit. The premium is a revenue cost even though the equipment itself is dealt with through capital allowances; the two run on separate tracks and both can give relief.</p>
 
-<h2>Cyber Liability Insurance</h2>
+<h3>Business interruption</h3>
 
-<p>With increasing cyber threats and GDPR requirements, many practices now carry cyber liability insurance. These premiums are fully deductible business expenses.</p>
+<p><strong>Business interruption insurance</strong> replaces lost income and meets ongoing costs if an insured event, such as a fire or flood, stops the practice trading. Because it protects the trade's income stream, the premium is wholly and exclusively a business expense and is deductible.</p>
 
-<p>Coverage typically includes data breach response costs, regulatory fines, and business interruption from cyber attacks. Annual premiums usually range from £500-£2,000 depending on practice size and cover limits.</p>
+<h3>Cyber and locum or practice cover</h3>
 
-<h2>Business Interruption Insurance</h2>
+<p><strong>Cyber liability insurance</strong> has become a standard practice purchase given patient-data obligations, and the premium is deductible as a business cost. <strong>Locum insurance</strong> and <strong>practice-cover insurance</strong>, which fund a replacement clinician or meet practice costs while a principal is off sick, are deductible where the policy protects the practice and pays into it. The treatment can turn on who is insured and who receives the proceeds, so this is one to confirm against the policy wording: cover that pays the business is on a different footing from a personal income-protection policy that pays you.</p>
 
-<p>Business interruption cover compensates for lost income if your practice cannot operate due to insured events like fire or flood. These premiums are fully <strong>dental practice insurance tax deductible</strong>.</p>
+<h2>What is not a business deduction</h2>
 
-<p>For dental practices, interruption insurance is particularly valuable given the high fixed costs and specialised equipment. Premiums typically cost 0.1-0.3% of the sum insured annually.</p>
-
-<h2>Personal Insurance: What's Not Deductible</h2>
-
-<p>Not all <strong>dental practice insurance</strong> premiums qualify as business expenses. Personal policies are not deductible, including:</p>
+<p>The carve-out is consistent: cover that protects you personally rather than the practice fails the wholly-and-exclusively test. The common non-deductible items are:</p>
 
 <ul>
-<li>Personal life insurance policies</li>
-<li>Personal health insurance (unless required by contract)</li>
-<li>Personal income protection (unless protecting business income)</li>
-<li>Home insurance for residential property</li>
-<li>Personal motor insurance (except business use portion)</li>
+<li><strong>Personal life insurance</strong> on your own life, even where you feel it protects the practice's future</li>
+<li><strong>Personal income protection</strong> that pays you an income during illness or injury, as distinct from business cover that pays the practice</li>
+<li><strong>Private medical insurance</strong> for yourself, which is generally a personal cost (and, if a company pays it for a director or employee, usually a taxable benefit in kind rather than a clean deduction)</li>
+<li><strong>Home and personal motor insurance</strong> for private property and private use</li>
+<li><strong>The personal element of any mixed policy</strong>, where only the genuine business proportion is allowable</li>
 </ul>
 
-<h2>Key Claiming Insurance Correctly</h2>
-<p>To maximize your deductible insurance expenses while staying compliant:</p>
+<p>For a building you both work and live in, apportion the buildings premium between business and private use on a fair, consistent basis such as floor area, and deduct only the business share. The same apportionment logic applies to any policy that straddles practice and personal use.</p>
+
+<h2>The relevant life policy nuance for companies</h2>
+
+<p>There is one structured exception worth knowing if you trade through a <strong>limited company</strong>. A <strong>relevant life policy</strong> is a death-in-service style policy that the company takes out and pays for on the life of a director or employee, with the benefit going to the individual's family or estate. Set up correctly, the premiums can be an allowable company cost (deductible where they are wholly and exclusively for the business as a normal remuneration cost), the payout is normally free of income tax for the individual, and the premiums do not count against the pension annual allowance or lifetime allowance position. It is not a back door to deducting ordinary personal life cover: a relevant life policy has specific conditions on its terms, beneficiaries and structure, and it is only available through a company, not to a sole trader or partnership. Treat it as a planning option to explore with an adviser, not a default.</p>
+
+<h2>Deductibility at a glance</h2>
+
+<p>The table below summarises the typical treatment. Always read it against your own policy wording and structure, because who is insured and who receives any payout can change the answer.</p>
+
+<table>
+<thead>
+<tr><th>Insurance type</th><th>Deductible?</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Professional indemnity / defence organisation</td><td>Yes</td><td>Required to practise; full subscription allowable, including run-off cover</td></tr>
+<tr><td>Public liability</td><td>Yes</td><td>Protects against patient and visitor claims; clear business cost</td></tr>
+<tr><td>Employers' liability</td><td>Yes</td><td>Compulsory once you employ staff (1969 Act); allowable</td></tr>
+<tr><td>Buildings (practice premises)</td><td>Yes</td><td>Apportion if the property is mixed business and residential use</td></tr>
+<tr><td>Contents and equipment</td><td>Yes</td><td>Revenue deduction; the equipment itself runs through capital allowances separately</td></tr>
+<tr><td>Business interruption</td><td>Yes</td><td>Protects the practice income stream; wholly and exclusively for the trade</td></tr>
+<tr><td>Cyber liability</td><td>Yes</td><td>Standard practice purchase; deductible business cost</td></tr>
+<tr><td>Locum / practice cover</td><td>Usually</td><td>Deductible where the policy protects and pays the practice; check who is insured</td></tr>
+<tr><td>Personal life insurance</td><td>No</td><td>Fails wholly and exclusively; see the relevant life policy route for companies</td></tr>
+<tr><td>Relevant life policy (company only)</td><td>Yes, if structured</td><td>Company-paid cover on a director's life; specific conditions apply, take advice</td></tr>
+<tr><td>Personal income protection</td><td>No</td><td>Pays you personally; business cover that pays the practice is treated differently</td></tr>
+<tr><td>Private medical insurance (personal)</td><td>No</td><td>Personal cost; if company-paid, generally a taxable benefit in kind</td></tr>
+<tr><td>Home and personal motor</td><td>No</td><td>Private use; only the genuine business proportion of a mixed policy is allowable</td></tr>
+</tbody>
+</table>
+
+<h2>VAT and Insurance Premium Tax: a dead end for dental</h2>
+
+<p>Two points often get tangled here, so it is worth separating them. First, the supply of <strong>dental care is exempt from VAT</strong> under Schedule 9 Group 7 of the Value Added Tax Act 1994 (VATA 1994), whether NHS-funded or private. An exempt business cannot reclaim input VAT on its costs, so even where a cost did carry VAT, an ordinary dental practice could not recover it. The only practices that recover any input VAT are those with taxable supplies, typically purely cosmetic or aesthetic work with no therapeutic purpose, and they operate <strong>partial exemption</strong>: they recover only the slice of input VAT attributable to those taxable supplies, not the exempt dental side.</p>
+
+<p>Second, insurance is itself <strong>largely exempt from VAT</strong> and instead carries <strong>Insurance Premium Tax (IPT)</strong>. IPT is a separate tax on insurers, not VAT, and it is <strong>never recoverable as input VAT</strong> by anyone. So the IPT element of a premium is simply part of the cost. The practical upshot for a dental practice is clean: you do not reclaim VAT or IPT on insurance, the gross premium is your cost, and that gross premium is what you deduct from profit where the policy is a business one. The only VAT that can ever surface is on related services such as broker or loss-adjuster fees that are standard-rated, and even then an exempt practice cannot recover it, while a partially exempt practice recovers only its taxable-supply share.</p>
+
+<h2>How to claim and what to keep</h2>
+
+<p>Mechanically, deduct qualifying premiums in computing trading profit (sole traders and partnerships report on Self Assessment; a company claims them as expenses reducing its corporation-tax profit). Recognise the cost in the accounting period it relates to under normal accruals accounting, so an annual premium straddling your year-end is apportioned across the two periods rather than dropped wholly into the month you paid it. Keep the records that support the deduction:</p>
 
 <ul>
-<li>Keep all policy documents and payment receipts</li>
-<li>Separate business and personal elements in mixed policies</li>
-<li>Claim premiums in the tax year you pay them, not when the policy period starts</li>
-<li>Consider timing of payments for cash flow and tax purposes</li>
-<li>Review your cover annually — adequate insurance is essential, but over-insurance wastes money</li>
+<li>Policy schedules and renewal documents showing what each policy covers</li>
+<li>Premium invoices and proof of payment</li>
+<li>Your apportionment workings for any mixed business-and-private policy</li>
+<li>A note of who is insured and who receives any payout, for locum, income-protection and life-style policies where that drives the treatment</li>
 </ul>
 
-<p>For complex arrangements or mixed-use situations, speak to a specialist who understands dental practice accounting. The rules can be nuanced, especially for practices with unusual structures or multiple locations.</p>
+<p>Where the practice arrangement is unusual, for example multi-site cover, a relevant life policy, or a locum policy that pays the individual rather than the business, get the treatment confirmed before you file rather than after a query.</p>
 
-<h2>Record Keeping and Claims</h2>
+<h2>Where insurance sits in the wider expense picture</h2>
 
-<p>To claim insurance as a business expense, maintain proper records including:</p>
+<p>Insurance is one line in a much longer list of allowable costs, and it is worth seeing it in context. A self-employed associate's deductions run well beyond indemnity, and the full picture is set out in our guide to <a href="/blog/associate-tax/associate-dentist-allowable-expenses-uk-2025-26">what expenses an associate dentist can claim in the UK</a>. For practice owners, insurance is one of the controllable overhead categories, and managing it alongside staffing, lab and premises costs is covered in our guide to <a href="/blog/practice-finance/dental-practice-overhead-costs-management-control">dental practice overhead costs and how to control them</a>. Reviewing cover annually keeps you adequately protected without paying for duplicated or excess limits, and every pound of genuine business premium continues to earn its deduction.</p>
 
-<ul>
-<li>Insurance certificates and policy schedules</li>
-<li>Premium payment receipts or bank statements</li>
-<li>Details of what each policy covers</li>
-<li>Calculations for mixed-use or apportioned claims</li>
-</ul>
-
-<p>For <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">practice accounting</a> purposes, most insurance premiums are claimed as general expenses. Professional indemnity may be categorised separately given its significance.</p>
-
-<h2>Timing of Claims</h2>
-
-<p>Insurance premiums are generally deductible when paid, not when the policy period begins. If you pay an annual premium in March for cover starting in April, you can claim the full amount in the March year-end.</p>
-
-<p>However, if your accounting year-end falls mid-policy, you may need to apportion the premium across accounting periods. This is more relevant for larger practices with specific accounting requirements.</p>
-
-<h2>VAT Considerations</h2>
-
-<p>Most insurance premiums include Insurance Premium Tax (IPT) rather than VAT, so you cannot reclaim this element. However, some insurance-related services like loss adjusting or legal fees may include VAT that can be reclaimed if your practice is VAT-registered.</p>
-
-<p>Professional fees for insurance advice or broking services typically include VAT that can be reclaimed by VAT-registered practices.</p>
-
-<h2>Getting Professional Advice</h2>
-
-<p>Insurance requirements and tax rules can be complex, particularly for multi-site practices or those with unusual risk profiles. Consider getting advice from specialists who understand dental practice needs.</p>
-
-<p>This is particularly important when <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">acquiring a practice</a>, as you'll need to ensure appropriate cover is in place from day one while maximising available tax reliefs.</p>
-
-<h2>Practice Structure Considerations</h2>
-<p>How you claim insurance tax deductions depends on your practice structure:</p>
-
-<ul>
-<li><strong>Sole traders and partnerships:</strong> Claim insurance premiums directly against income on your Self Assessment return</li>
-<li><strong>Limited companies:</strong> Insurance is a company expense, reducing corporation tax. Directors typically don't face personal tax on insurance benefits</li>
-<li><strong>Associates:</strong> Usually claim as business expenses if paying personally, but check if practice-paid premiums create taxable benefits</li>
-</ul>
-
-<h2>What You Cannot Claim</h2>
-<p>Not all insurance qualifies as a deductible business expense:</p>
-
-<ul>
-<li><strong>Personal life insurance:</strong> Even if you feel it protects your practice's future, personal life cover isn't deductible</li>
-<li><strong>Income protection for personal use:</strong> Cover that pays you personally during illness isn't a business expense</li>
-<li><strong>Private medical insurance:</strong> Generally a taxable benefit if paid by the practice, and not deductible if you pay personally</li>
-<li><strong>Personal elements of mixed policies:</strong> You can only claim the business portion</li>
-</ul>
-
-<h2>Typical Dental Practice Insurance Cost Breakdown</h2>
-
-<p>For a single-surgery practice with one principal and one associate, typical annual <strong>dental practice insurance cost</strong> breaks down roughly as follows:</p>
-
-<ul>
-<li><strong>Professional indemnity:</strong> £2,000–£4,000 per clinician</li>
-<li><strong>Buildings and contents:</strong> £2,000–£5,000</li>
-<li><strong>Employer's liability:</strong> £400–£800</li>
-<li><strong>Public liability:</strong> £300–£600</li>
-<li><strong>Cyber liability:</strong> £500–£2,000</li>
-<li><strong>Business interruption:</strong> £500–£1,500</li>
-</ul>
-
-<p>Total annual <strong>insurance for dental practice</strong> costs typically range from £6,000 to £14,000 — virtually all of which is tax-deductible.</p>
-
-<h2>Planning Your Insurance Strategy</h2>
-<p>Insurance premiums represent a significant expense for most practices, often running to several thousand pounds annually. When planning your <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategy</a>, factor in these costs and their tax relief.</p>
-
-<p>Consider the timing of premium payments, especially for larger policies. Paying in March rather than April could bring forward tax relief by a full year, improving your cash flow.</p>
-
-<p>Regular reviews ensure you're not over-insured (wasting money) or under-insured (risking your practice). Most insurance is essential and deductible, but the amounts should reflect your actual risks and assets.</p>
+<p>If you would like the insurance position checked against your structure, or want to model a relevant life policy through a company, a specialist dental accountant can confirm the treatment and keep your records query-proof.</p>

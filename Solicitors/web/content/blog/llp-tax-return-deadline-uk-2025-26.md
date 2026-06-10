@@ -10,6 +10,12 @@ metaDescription: "UK LLP tax return deadlines 2025/26. SA800 partnership return 
 altText: "UK LLP partners reviewing SA800 partnership tax return filing checklist"
 h1: "UK LLP Tax Return Deadline 2025/26: Dates, Forms, Penalties"
 summary: "UK LLP filing deadlines 2025/26: SA800 partnership return due 31 January following tax year end. LLP accounts at Companies House 9 months after year-end. Each member's personal SA due 31 January. We cover the full filing calendar plus penalties."
+keyTakeaways:
+  - "The SA800 partnership return is due online by 31 January following the tax year (31 January 2027 for 2025/26)."
+  - "LLP accounts must reach Companies House within nine months of the accounting reference date."
+  - "A late SA800 penalises both the LLP and each member, so a 4-member LLP six months late can owe roughly £10,600."
+  - "Each member files their own self-assessment by 31 January and pays via two payments on account (31 January and 31 July)."
+  - "The confirmation statement is due on the incorporation anniversary and costs £34 to file online."
 faqs:
   - question: "What's the SA800 partnership return deadline?"
     answer: "31 January following the end of the tax year. For the 2025/26 tax year (ending 5 April 2026), the SA800 is due by 31 January 2027 for online filing. The paper deadline is earlier at 31 October 2026 — but virtually all LLPs file online. The SA800 shows the LLP's total profit and the allocation between members; each member then includes their share on their personal SA filed by the same 31 January deadline."

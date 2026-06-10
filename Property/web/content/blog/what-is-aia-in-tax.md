@@ -5,8 +5,8 @@ canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/
 date: '2026-05-20'
 author: Property Tax Partners Editorial Team
 category: Section 24 & Tax Relief
-metaTitle: What Is AIA in Tax? AIA for UK Landlords Explained 2026
-metaDescription: What is AIA in tax? How the £1m Annual Investment Allowance works for UK landlords, what qualifies, and why the dwelling-house rule blocks most BTL claims.
+metaTitle: 'What Is AIA in Tax? Does It Apply to Your Buy-to-Let?'
+metaDescription: What is AIA in tax? How the £1m Annual Investment Allowance works for UK landlords, what qualifies, and why the dwelling-house rule blocks most lets.
 altText: UK landlord reviewing Annual Investment Allowance tax relief documents on a desk with calculator and property portfolio notes
 image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Is AIA in Tax? A Guide for UK Landlords and Property Investors
@@ -22,7 +22,11 @@ faqs:
 - question: Can I claim AIA on furniture and white goods for a rental property?
   answer: No. Furniture, furnishings and white goods inside a let dwelling-house do not qualify for AIA because section 35 bars plant and machinery allowances for plant in a dwelling. The correct route is replacement of domestic items relief under ITTOIA 2005 section 311A, which gives a revenue deduction for replacing (not first providing) items such as beds, sofas, carpets, fridges and washing machines in a residential let.
 - question: Does AIA apply to second-hand assets?
-  answer: AIA itself can apply to second-hand qualifying plant and machinery, because the AIA rules do not require the asset to be new. The new-and-unused condition applies to first-year allowances such as full expensing (companies only) and the 40% first-year allowance, not to AIA. The bigger gate for landlords is not whether the asset is new, but whether section 35 blocks the claim because the plant is inside a dwelling-house.
+  answer: Yes. AIA can apply to second-hand qualifying plant and machinery, because the AIA rules do not require the asset to be new. The new-and-unused condition applies to first-year allowances such as full expensing (companies only) and the 40% first-year allowance, not to AIA. The bigger gate for landlords is not whether the asset is new, but whether section 35 blocks the claim because the plant is inside a dwelling-house.
+- question: What are the 2026 AIA and capital allowance changes?
+  answer: The AIA limit itself did not change in 2026. It stays at £1 million a year and is permanent. What changed are the surrounding capital allowance rates. Finance Act 2026 section 28 cut the main pool writing-down allowance from 18% to 14% for chargeable periods from April 2026, and Finance Act 2026 section 29 introduced a new 40% first-year allowance on new and unused main-rate plant and machinery for spend incurred on or after 1 January 2026. The special rate pool, which holds integral features, stays at 6%. None of these changes touches the section 35 dwelling-house bar, so they affect only the commercial, common-parts and business-equipment spend that already qualified.
+- question: What happens if my AIA claim is more than my qualifying expenditure?
+  answer: You can only claim AIA up to the amount you actually spent on qualifying plant and machinery in the period. The £1 million figure is a ceiling, not an entitlement, so if you spent £20,000 your maximum AIA is £20,000, not more. If your accounting software warns that the AIA claimed is greater than the qualifying expenditure, it means the claim has been entered above the spend recorded in the pool, which HMRC will reject. Reduce the claim to the qualifying spend for the period and carry nothing extra forward, because there is nothing extra to carry.
 - question: What is the writing-down allowance rate if I exceed the AIA limit?
   answer: Spend above the £1 million AIA cap, or on assets that do not qualify for AIA, goes into a capital allowances pool and is written down each year on a reducing-balance basis. The main pool rate is 14% from April 2026 (cut from 18% by Finance Act 2026 section 28), and the special rate pool, which holds integral features, stays at 6%.
 - question: Does the dwelling-house rule mean landlords get no capital allowances at all?
@@ -33,16 +37,15 @@ faqs:
   answer: Yes, before the regime was abolished. Until 5 April 2025 for income tax (31 March 2025 for corporation tax), a qualifying furnished holiday let was treated as a trade, so plant and machinery in the property qualified for AIA. Finance Act 2025 Schedule 5 abolished the FHL regime from those dates. Existing capital allowance pools carry forward and continue to be written down, but no new AIA can be claimed on assets in those properties.
 - question: What is the difference between AIA and full expensing?
   answer: Full expensing (CAA 2001 section 45S) is a separate 100% first-year allowance available only to companies, on new and unused main-rate plant and machinery, with no annual cap. AIA gives 100% relief to any qualifying business (individuals, partnerships and companies) up to the £1 million cap and can cover second-hand assets and special-rate items. A company often uses full expensing first and AIA for spend that full expensing cannot reach.
-- question: What is the new 40% first-year allowance?
-  answer: Finance Act 2026 section 29 introduced a 40% first-year allowance on new and unused main-rate plant and machinery for spend incurred on or after 1 January 2026. It excludes cars, second-hand assets and assets for overseas leasing. In practice it is the route for those who cannot use company-only full expensing, such as unincorporated landlords and leasing businesses, but it does not override the section 35 dwelling-house bar.
 - question: How do I claim AIA on my tax return?
   answer: Individual landlords claim AIA in the capital allowances section of the Self Assessment property pages (SA105). Companies claim through the corporation tax return (CT600) and computations. You identify the qualifying spend for the accounting period, claim AIA up to the cap, and keep invoices, dates of purchase and evidence of when each asset was first used in case HMRC reviews the return.
 - question: How does AIA fit with Making Tax Digital for landlords?
   answer: Making Tax Digital for Income Tax is live and phased in by income. It applies from 6 April 2026 to landlords and sole traders with qualifying income over £50,000, from 6 April 2027 over £30,000, and from 6 April 2028 over £20,000. Within MTD you keep digital records and send quarterly updates, then finalise the year. Capital allowances, including any AIA, are dealt with at the final declaration rather than in the quarterly updates.
-- question: Should I get advice before claiming AIA on property?
-  answer: Yes, because the dwelling-house rule, the repairs-versus-capital line and the fixtures rules on commercial purchases are easy to get wrong, and a mistaken claim can trigger an HMRC enquiry. A specialist property accountant can identify what genuinely qualifies, route furnishings to replacement of domestic items relief, and structure claims on commercial or mixed-use property correctly.
 dateModified: '2026-05-30'
-sourcesVerifiedAt: '2026-05-30'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedAt: '2026-06-02'
+sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - legislation.gov.uk
 - gov.uk
@@ -67,7 +70,14 @@ imageCredit:
 <p>The cap is £1 million per 12-month chargeable period. Per <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/51A" rel="nofollow">CAA 2001 section 51A(5)</a>, the maximum allowance is £1,000,000, and that figure was made permanent by Finance (No. 2) Act 2023 section 8 with effect from 1 April 2023. There is no longer a temporary cap and no scheduled fall back to £200,000. You should treat the £1 million figure as the settled, ongoing limit.</p>
 
 <aside>
-<p><strong>Before you assume AIA applies:</strong> the single most important question for a property investor is not "is this plant and machinery?" but "is this plant inside a let dwelling?" If it is, AIA is almost certainly blocked. The next section explains why.</p>
+<p><strong>Does AIA apply to your property?</strong> The deciding question is not "is this plant and machinery?" but "is this plant inside a let dwelling?" A quick read:</p>
+<ul>
+<li>Plant inside a let house or flat (boiler, fitted kitchen, carpets, furniture): <strong>no</strong>, blocked by the dwelling-house rule (use replacement of domestic items relief instead).</li>
+<li>Common parts of a block of flats or HMO (communal boiler, lift, shared lighting): <strong>yes</strong>.</li>
+<li>Commercial or mixed-use non-dwelling space (shop, office, surgery, fit-out): <strong>yes</strong>.</li>
+<li>Cars, or the building shell itself: <strong>no</strong>, both are excluded from AIA outright.</li>
+</ul>
+<p>So most ordinary buy-to-let spend is blocked, and the claims that survive sit in commercial space, common parts and the running of the business. The next section explains the rule that decides it.</p>
 </aside>
 
 <h2>Does AIA Apply to My Buy-to-Let? The Dwelling-House Rule</h2>
@@ -152,7 +162,7 @@ imageCredit:
 
 <ul>
 <li><strong>Full expensing</strong> under <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/45S" rel="nofollow">CAA 2001 section 45S</a> gives companies a 100% first-year allowance on new and unused main-rate plant and machinery, with no annual cap. It is company-only and is not available to individual landlords or partnerships.</li>
-<li><strong>The 40% first-year allowance</strong> introduced by Finance Act 2026 section 29 gives a 40% first-year allowance on new and unused main-rate plant and machinery for spend incurred on or after 1 January 2026. It excludes cars, second-hand assets and assets for overseas leasing. It is the practical route for those who cannot use company-only full expensing, such as unincorporated landlords and leasing businesses.</li>
+<li><strong>The 40% first-year allowance</strong> introduced by Finance Act 2026 section 29 gives a 40% first-year allowance on new and unused main-rate plant and machinery for spend incurred on or after 1 January 2026. It excludes cars, second-hand assets and assets for overseas leasing. It is the practical route for those who cannot use company-only full expensing, such as unincorporated landlords and leasing businesses. Unlike the first-year allowances, AIA itself can cover second-hand qualifying plant, as our guide on <a href="/blog/property-accountant-services/can-you-claim-aia-on-second-hand-assets">claiming AIA on second-hand assets</a> explains.</li>
 <li><strong>Writing-down allowances</strong> apply to spend above the AIA cap, or to assets that do not qualify for a first-year allowance. The main pool rate is 14% from April 2026, cut from 18% by Finance Act 2026 section 28, and the special rate pool (integral features) stays at 6%. Periods straddling the start date use a time-apportioned hybrid rate. See our <a href="/blog/property-types-and-specialist-tax/writing-down-allowance-rates">guide to writing-down allowance rates</a> for the detail.</li>
 </ul>
 

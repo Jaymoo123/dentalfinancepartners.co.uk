@@ -11,7 +11,12 @@ altText: "Solicitor reviewing client account statements and conveyancing files i
 image: ""
 h1: "How Should a Solicitor Handle Client Account Money During a Residential Conveyancing Transaction?"
 summary: "Residential conveyancing generates the highest volume of client account transactions in most law firms. This guide explains the SRA Accounts Rules for deposit handling, exchange, completion, and the five-week reconciliation cycle, with worked examples."
-schema: ""
+keyTakeaways:
+  - "A conveyancing deposit is client money from the moment it is received and must sit in the client account under Rule 3.1; the office account is a breach."
+  - "The deposit stays client money through exchange and only becomes the seller's outright at completion, with each transfer recorded on the client ledger."
+  - "Rule 8.3 requires reconciliation at least every five weeks, comparing the client bank balance to total ledger balances; conveyancing firms should reconcile weekly."
+  - "An overdrawn client account breaches Rule 3.3: notify the COFA immediately, top up from the office account, and investigate the cause."
+  - "Interest under Rule 7.1 is paid when fair; most firms apply a documented de minimis (often 20 or 50 pounds) below which no interest is paid."
 faqs:
   - question: "Can a solicitor hold a conveyancing deposit in the office account before exchange?"
     answer: "No. A conveyancing deposit is client money from the moment it is received. It must be held in a client account under Rule 3.1 of the SRA Accounts Rules. Holding it in the office account, even temporarily, is a breach. The only exception is if the client gives you express written authority to hold it in the office account, which is rare and not recommended."

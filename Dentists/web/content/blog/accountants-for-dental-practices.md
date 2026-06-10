@@ -3,6 +3,7 @@ title: What Do Accountants for Dental Practices Actually Do?
 slug: accountants-for-dental-practices
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/accountants-for-dental-practices
 date: '2026-05-20'
+updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting
 metaTitle: 'Accountants for Dental Practices: What They Do & Why You'
@@ -11,6 +12,12 @@ altText: Dental practice owner reviewing financial accounts with a specialist de
 image: https://images.pexels.com/photos/8962467/pexels-photo-8962467.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Do Accountants for Dental Practices Actually Do?
 summary: A specialist dental accountant does more than file your tax return. They understand UDA values, NHS pension rules, practice goodwill valuation, and the specific tax treatments that apply to dental associates, principals, and locums. This article explains the core services you should expect and why generalist accountants often miss dental-specific opportunities.
+keyTakeaways:
+  - "Goodwill is typically 60 to 80% of a practice purchase price, valued at roughly 0.6 to 1.4 times adjusted EBITDA or 25 to 60% of fee income depending on NHS/private mix."
+  - "Company goodwill acquired after 1 April 2019 attracts tax relief at 6.5% per year, but goodwill bought between 8 July 2015 and 31 March 2019 generally attracts none."
+  - "Corporation tax for 2026/27 is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between, alongside dividend rates of 10.75%, 35.75% and 39.35%."
+  - "The Self Assessment online deadline for 2026/27 is 31 January 2028, with Payments on Account triggered once the tax bill exceeds £1,000."
+  - "Dental treatment is VAT-exempt under VATA 1994 Schedule 9 Group 7, with the registration threshold at £90,000 (raised from £85,000 on 1 April 2024) and the AIA at £1,000,000."
 schema: ''
 faqs:
 - question: How much do accountants for dental practices charge?
@@ -46,7 +53,7 @@ imageCredit:
 
 <h3>Self Assessment and Tax Planning</h3>
 
-<p>Every self-employed dentist must file a Self Assessment return by 31 January following the end of the tax year. For 2025/26, the online deadline is 31 January 2027. A dental accountant ensures that all allowable expenses are claimed, including GDC registration, indemnity insurance, CPD costs, and professional subscriptions to HMRC-approved bodies <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. They also manage Payments on Account, which kick in when your tax bill exceeds £1,000.</p>
+<p>Every self-employed dentist must file a Self Assessment return by 31 January following the end of the tax year. For 2026/27, the online deadline is 31 January 2028. A dental accountant ensures that all allowable expenses are claimed, including GDC registration, indemnity insurance, CPD costs, and professional subscriptions to HMRC-approved bodies <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. They also manage Payments on Account, which kick in when your tax bill exceeds £1,000.</p>
 
 <p>For associates working across multiple practices, mileage claims and travel expenses need careful handling. The <a href="/services/associate-tax">associate tax</a> rules around home-to-work travel are strict, and a specialist will know the difference between a permanent workplace and a temporary one.</p>
 
@@ -72,7 +79,7 @@ imageCredit:
 
 <p>In 2006 the law changed to allow dental practices to be operated as Dental Bodies Corporate <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. Since then, many practices have incorporated. However, very few dental practice owners think it is worthwhile operating through a limited company due to concerns about risk <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. Starting in 2014 with George Osborne's changes, incorporation tax rules on goodwill sale, amortisation, and dividend tax credit have steadily eroded tax advantages <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
-<p>Corporation tax rates for 2025/26 are 19% for small profits (up to £50,000) and 25% for profits above £250,000, with marginal relief in between. A dental accountant will model whether incorporation still makes sense for your specific circumstances, considering the dividend allowance of £500 and dividend tax rates of 8.75% (basic), 33.75% (higher), and 39.35% (additional).</p>
+<p>Corporation tax rates for 2026/27 are 19% for small profits (up to £50,000) and 25% for profits above £250,000, with marginal relief in between. A dental accountant will model whether incorporation still makes sense for your specific circumstances, considering the dividend allowance of £500 and dividend tax rates of 10.75% (basic), 35.75% (higher), and 39.35% (additional).</p>
 
 <h3>Capital Allowances and Equipment</h3>
 

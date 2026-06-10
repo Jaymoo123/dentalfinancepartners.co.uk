@@ -3,162 +3,159 @@ title: "Can Goodwill Stripping Reduce Your Dental Practice Tax Bill Before a Sal
 slug: "goodwill-stripping-dental-practice-pre-sale-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/goodwill-stripping-dental-practice-pre-sale-uk"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
-metaTitle: "Goodwill Stripping for Dental Practice Pre-Sale Tax Planning | DFP"
-metaDescription: "Goodwill stripping can reduce CGT on a dental practice sale, but HMRC rules are strict. Learn how pre-sale value engineering works and what risks to avoid."
+metaTitle: "Goodwill Stripping Before a Dental Practice Sale | DFP"
+metaDescription: "A pre-sale dividend usually costs a dentist more once CGT, dividend tax and TAAR risk are netted off, versus selling clean. The 2026/27 numbers worked."
 altText: "Dental practice principal reviewing pre-sale financial documents with accountant in a UK dental surgery"
-image: ""
+image: "https://images.pexels.com/photos/7680681/pexels-photo-7680681.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/receipts-and-documents-on-top-of-a-desk-7680681/"
 h1: "Can Goodwill Stripping Reduce Your Dental Practice Tax Bill Before a Sale?"
-summary: "Goodwill stripping is a pre-sale tax planning technique that extracts value from a dental practice before disposal, reducing the taxable gain on goodwill. Done correctly, it can lower your CGT bill. Done incorrectly, it triggers HMRC anti-avoidance rules. This guide explains how it works, what HMRC looks for, and when to use it."
+summary: "Goodwill stripping means pulling cash out of your dental company as a dividend just before you sell, hoping to shrink the capital gain. Once you net the dividend tax against the capital gains tax you avoid, and add the anti-avoidance risk, it usually costs more than selling clean and claiming Business Asset Disposal Relief. This guide works the 2026/27 numbers."
+keyTakeaways:
+  - "A qualifying share sale within the Business Asset Disposal Relief lifetime limit is taxed at 18% in 2026/27 (rising from 14% on 6 April 2026), versus the dividend upper rate of 35.75%."
+  - "Stripping value as a pre-sale dividend swaps an 18% BADR charge for a 35.75% dividend charge, so it usually costs more, before any anti-avoidance risk."
+  - "A pre-sale dividend risks counteraction under the transactions in securities rules (ITA 2007 Part 13), the distributions TAAR and value shifting (TCGA 1992 s.29 to s.34)."
+  - "Employer pension contributions are deductible on a paid basis under Finance Act 2004 s.196, carry no National Insurance and are not distributions, so the anti-avoidance rules do not reach them."
+  - "Pension funding before a sale is subject to the £60,000 annual allowance plus three-year carry-forward, and is the most defensible pre-sale extraction route for an incorporated principal."
 schema: ""
 faqs:
-  - question: "What is the difference between goodwill stripping and pre-sale value engineering?"
-    answer: "Goodwill stripping is a subset of pre-sale value engineering. Value engineering covers all steps to maximise the sale price and minimise tax, including EBITDA optimisation, balance sheet cleaning, capital allowance reviews, and sale structure planning. Goodwill stripping specifically targets the goodwill value by extracting retained profits before disposal, reducing the capital gain. Both must be done with commercial justification to avoid HMRC challenge."
+  - question: "Does paying a big dividend before selling my dental practice save tax?"
+    answer: "Usually not. A pre-sale dividend is taxed at the dividend upper rate (35.75% in 2026/27, 33.75% in 2025/26) on the cash you extract. The gain it removes from the sale would otherwise have been taxed at the Business Asset Disposal Relief rate of just 18% (2026/27, 14% to 5 April 2026) if the £1m lifetime limit is available. Swapping an 18% charge for a 35.75% charge on the same money goes the wrong way. The arithmetic only changes if BADR is unavailable, but even then the dividend route is rarely the winner."
   - question: "Can I strip goodwill from my dental practice if I am a sole trader?"
-    answer: "No. Goodwill stripping works through a company structure because it involves extracting retained profits as dividends or pension contributions. Sole traders and partnerships do not have a separate legal entity with retained profits. If you are a sole trader, your goodwill is part of your personal capital gain on sale. You can still use pension contributions to reduce your overall tax bill, but the mechanics are different."
-  - question: "How long before a sale should I start goodwill stripping?"
-    answer: "At least 12-24 months before the planned sale date. HMRC looks at the connection between the extraction and the sale. The longer the gap, the harder it is for HMRC to argue the extraction was part of the sale arrangement. A 24-month gap is significantly safer than a 6-month gap. Start planning 2-3 years out to allow time for multiple extraction events (e.g., pension contributions over two tax years)."
-  - question: "Will HMRC automatically challenge a pre-sale dividend?"
-    answer: "Not automatically, but the risk is real. HMRC's Transaction in Securities (TAAR) rules target arrangements where a person receives a tax advantage from a distribution connected with a sale. If you pay a large dividend within 12 months of selling, HMRC is likely to enquire. The defence is to show the dividend was part of a genuine ongoing profit extraction strategy, not a one-off avoidance scheme. Pension contributions carry lower risk because they are not \"distributions\" for TAAR purposes."
+    answer: "No. The technique relies on a company structure, because it involves extracting retained profits as dividends or pension contributions. Sole traders and partnerships have no separate legal entity holding retained profits, so their goodwill forms part of the personal capital gain on sale. A sole trader can still use employer pension contributions after incorporating, but the mechanics are different."
+  - question: "Will HMRC challenge a large dividend paid just before a sale?"
+    answer: "It can. The transactions in securities rules (ITA 2007 Part 13) and the company-distributions targeted anti-avoidance rule can recharacterise a distribution that is really part of a sale arrangement, taxing it as income with a counteraction. A large dividend paid within months of exchange, funded so as to shrink the sale price, is the textbook target. A dividend that is part of a genuine, long-running extraction pattern is far easier to defend. Employer pension contributions are not distributions, so they sit outside these rules."
+  - question: "What is a cleaner way to extract value before selling a dental practice?"
+    answer: "Employer pension contributions. They are deductible for corporation tax on a paid basis (Finance Act 2004 s.196), carry no National Insurance, and are not distributions, so the transactions in securities rules do not bite. They reduce company profit (and therefore future value) without the dividend tax charge, subject to the £60,000 annual allowance and three-year carry-forward. For an incorporated principal nearing retirement they are usually the most defensible pre-sale extraction route."
 ---
 
-<h2>What Is Goodwill Stripping in a Dental Practice Context?</h2>
+<h2>What goodwill stripping actually is</h2>
 
-<p>Goodwill stripping is the process of extracting value from a dental practice <strong>before</strong> a sale, so that the proceeds are taxed as income or dividends rather than as a capital gain. The goal is to reduce the overall tax bill, because income tax rates (up to 45%) can be lower than CGT rates (up to 24%) in certain circumstances, or because the extracted value benefits from lower corporate tax rates before distribution.</p>
+<p>Goodwill stripping means pulling cash out of your dental company <strong>before</strong> you sell, so that some of the value leaves as a dividend (taxed as income) rather than staying inside the price and being taxed as a capital gain. The hope is that shrinking the sale price shrinks the taxable gain, and that the overall bill comes down.</p>
 
-<p>For a dental practice owner, this typically means paying yourself or your family members a bonus, dividend, or pension contribution in the year or two before the sale, funded by the practice's retained profits. The effect is to reduce the company's net asset value and, critically, the value of goodwill that would otherwise be taxed as a capital gain on disposal.</p>
+<p>For most incorporated principals it does the opposite. The reason is the rate gap. A capital gain on a qualifying share sale, within the Business Asset Disposal Relief lifetime limit, is taxed at <strong>18% (2026/27, rising from 14% on 6 April 2026)</strong>. A dividend taken to extract the same money is taxed at the <strong>dividend upper rate of 35.75% (2026/27, up from 33.75% in 2025/26)</strong>, or 39.35% in the additional band. Moving money from an 18% charge to a 35.75% charge is a tax increase, not a saving, before you even reach the anti-avoidance risk.</p>
 
-<p>HMRC scrutinises goodwill stripping closely. If the extraction is linked to the sale (for example, a large dividend paid six months before exchange), it can be recharacterised as part of the sale proceeds and taxed as a capital gain. The key is timing and commercial justification.</p>
+<p>This guide sets out the case against the technique, works the current 2026/27 numbers, and explains the one extraction route (employer pension contributions) that is genuinely cleaner.</p>
 
-<h2>How Does Goodwill Stripping Work in Practice?</h2>
+<h2>Why the rate gap usually defeats the strip</h2>
 
-<p>Consider a dental practice company with the following simplified balance sheet:</p>
+<p>Take a dental company with a simplified balance sheet:</p>
 
 <ul>
-<li>Net assets (excluding goodwill): £200,000 (cash, equipment, debtors less creditors)</li>
+<li>Net assets excluding goodwill: £200,000 (cash, equipment, debtors less creditors)</li>
 <li>Goodwill: £600,000</li>
-<li>Total net assets: £800,000</li>
+<li>Total: £800,000</li>
+<li>Original share base cost: £100,000</li>
 </ul>
 
-<p>If you sell the company for £800,000, your capital gain is roughly £800,000 less your base cost (say £100,000 for shares originally subscribed). At 24% CGT (higher rate, 2025/26), that's £168,000 tax. At 14% BADR, it's £98,000.</p>
+<p><strong>Sell clean.</strong> The share sale realises £800,000. The gain is £800,000 less the £100,000 base cost, that is £700,000. After the £3,000 annual exempt amount the chargeable gain is £697,000. At the BADR rate of <strong>18% (2026/27)</strong>, and assuming the £1m lifetime limit is available, the capital gains tax is <strong>£125,460</strong>.</p>
 
-<p>Now suppose in the year before sale, you extract £200,000 as a dividend. The company's net assets drop to £600,000. The sale price falls to £600,000 (assuming the buyer values the business on net assets plus goodwill). Your capital gain is now £500,000. At 24% CGT, that's £120,000 tax. The dividend is taxed at 33.75% (higher rate) = £67,500. Total tax: £187,500. That is <strong>higher</strong> than the original £168,000.</p>
+<p><strong>Strip first.</strong> Now suppose you pay yourself a £200,000 dividend out of the company's already-taxed retained profits the year before, dropping the net assets (and so the price a buyer pays) to £600,000. The gain is now £600,000 less £100,000, that is £500,000, less the £3,000 annual exempt amount, so £497,000 chargeable. BADR at 18% is <strong>£89,460</strong>. But the £200,000 dividend, after the £500 dividend allowance, is taxed on £199,500 at the upper rate of <strong>35.75% (2026/27)</strong>, which is <strong>£71,321</strong>. Total tax is £89,460 plus £71,321, that is <strong>£160,781</strong>.</p>
 
-<p>But if you extract the £200,000 as a pension contribution (tax-free in the company, tax-free for you up to the annual allowance), the company saves corporation tax at 19-25% on the contribution. The gain reduces by £200,000, saving £48,000 CGT. The pension contribution itself costs the company nothing net after corporation tax relief. Total tax saved: roughly £48,000.</p>
+<p>Stripping turned a £125,460 bill into a £160,781 bill, around £35,000 worse, and that is before HMRC looks at the dividend at all. The retained profits were already taxed inside the company at corporation tax (19% to 25%); the dividend then layers a second, higher charge on top of money that would have come out at 18% had it stayed in the price.</p>
 
-<p>The arithmetic depends entirely on the extraction method, your personal tax position, and the timing relative to the sale.</p>
+<h2>Worked example: a single-principal practice</h2>
 
-<h2>What HMRC Looks For: The Anti-Avoidance Risks</h2>
-
-<p>HMRC has several tools to attack goodwill stripping:</p>
+<p>Consider an incorporated single-handed mixed NHS and private practice. The principal plans to sell in 2027, so the current 2026/27 rates apply. The figures are:</p>
 
 <ul>
-<li><strong>Transaction in securities (TAAR)</strong> under ITA 2007 Part 13. If you extract value from a company in a way that gives you a tax advantage (e.g., dividend instead of capital gain), and the extraction is connected with a sale, HMRC can recharacterise the dividend as a capital distribution.</li>
-<li><strong>GAAR (General Anti-Abuse Rule)</strong> applies if the arrangement is "abusive" and the main purpose is tax avoidance.</li>
-<li><strong>Transfer pricing</strong> rules if you extract value to a connected party (e.g., a spouse) at non-commercial rates.</li>
-<li><strong>Value shifting</strong> provisions in TCGA 1992 s.29-34 can reallocate gains if value is shifted out of shares before disposal.</li>
+<li>Normalised EBITDA: £180,000</li>
+<li>Goodwill at 1.0x EBITDA: £180,000</li>
+<li>Net assets excluding goodwill: £120,000</li>
+<li>Total share value: £300,000</li>
+<li>Original share base cost: £10,000</li>
 </ul>
 
-<p>HMRC's guidance in the Business Income Manual (BIM) makes clear that pre-sale dividend stripping is a known avoidance area. They will look at the timing, the amount, and whether the extraction was planned before the sale was contemplated.</p>
+<p>Three routes, all computed at 2026/27 rates with the £3,000 annual exempt amount and BADR at 18% within the lifetime limit.</p>
 
-<h2>When Goodwill Stripping Makes Sense for a Dental Practice</h2>
+<p><strong>Option A, sell clean.</strong> Price £300,000. Gain £300,000 less £10,000 base cost, that is £290,000, less £3,000 exempt amount, so £287,000 chargeable. BADR 18% is <strong>£51,660</strong>. Cash kept after tax: <strong>£248,340</strong>.</p>
 
-<p>Goodwill stripping is most defensible when:</p>
+<p><strong>Option B, employer pension contribution.</strong> The company pays a £60,000 employer pension contribution from trading profit before sale. It is deductible for corporation tax (Finance Act 2004 s.196), so at the 25% marginal rate the company's tax falls by <strong>£15,000</strong>. No dividend tax and no National Insurance arise, because a pension contribution is neither a distribution nor pay. The £60,000 lands in the pension within the £60,000 annual allowance. The principal still sells the company and claims BADR on the (slightly lower) value, and has moved £60,000 into a pension wrapper without the dividend charge. This route does not convert capital into income, so the anti-avoidance rules below do not engage.</p>
+
+<p><strong>Option C, dividend strip.</strong> The principal pays a £100,000 dividend the year before, then sells. The price drops to £200,000. The gain is £200,000 less £10,000, that is £190,000, less £3,000, so £187,000 chargeable. BADR 18% is <strong>£33,660</strong>. The £100,000 dividend, after the £500 allowance, is taxed on £99,500 at the 35.75% upper rate, that is <strong>£35,571</strong>. Total tax £33,660 plus £35,571, that is <strong>£69,231</strong>. Cash kept after tax: <strong>£230,769</strong>.</p>
+
+<table>
+<thead>
+<tr><th>Route (2026/27 rates)</th><th>Capital gains tax</th><th>Dividend tax</th><th>Total tax</th><th>Cash kept</th><th>Anti-avoidance risk</th></tr>
+</thead>
+<tbody>
+<tr><td>A. Sell clean (BADR 18%)</td><td>£51,660</td><td>none</td><td>£51,660</td><td>£248,340</td><td>none</td></tr>
+<tr><td>B. Employer pension contribution</td><td>£51,660 on the sale, less £15,000 corporation tax relief on the contribution</td><td>none</td><td>lower than A net of the relief</td><td>£248,340 plus £60,000 in a pension</td><td>none</td></tr>
+<tr><td>C. Dividend strip (£100k out, then sell)</td><td>£33,660</td><td>£35,571</td><td>£69,231</td><td>£230,769</td><td>high (TAAR)</td></tr>
+</tbody>
+</table>
+
+<p>Option C, the actual stripping route, leaves the principal roughly £17,500 worse off in cash than selling clean, and exposed to a counteraction on the dividend. Option B keeps the full clean-sale position and adds £60,000 of pension while reducing corporation tax. The dividend strip is the only route that both costs more and invites a challenge.</p>
+
+<h2>The anti-avoidance risk on a pre-sale dividend</h2>
+
+<p>The numbers above already make the strip lose on tax alone. HMRC has several tools that can make it worse:</p>
 
 <ul>
-<li>The extraction is part of a <strong>genuine ongoing profit extraction strategy</strong>, not a one-off pre-sale event. If you have historically paid yourself regular dividends or pension contributions, a larger one in the final year is easier to justify.</li>
-<li>The extraction is funded by <strong>trading profits</strong>, not by borrowing or by selling assets. HMRC is more suspicious if the company takes out a loan to pay a dividend just before sale.</li>
-<li>The extraction is <strong>commercially justified</strong>. For example, you need to fund a pension because you are retiring, or you have a genuine need for cash (e.g., school fees, house purchase).</li>
-<li>The <strong>timing gap</strong> between extraction and sale is at least 12-24 months. The longer the gap, the harder it is for HMRC to argue the extraction was part of the sale arrangement.</li>
+<li><strong>Transactions in securities (ITA 2007 Part 13).</strong> These rules let HMRC counteract a tax advantage where a person receives value from a company in a form (such as a dividend) connected with a sale or reconstruction. A large distribution paid shortly before a share sale, structured so as to reduce what the buyer pays, is the classic target. The counteraction recharacterises the advantage and taxes it as income with interest.</li>
+<li><strong>The company-distributions targeted anti-avoidance rule (TAAR).</strong> This sits alongside and targets arrangements whose main purpose, or one of whose main purposes, is to obtain a tax advantage by taking value out in capital or distribution form around a winding-up or sale.</li>
+<li><strong>Value shifting (TCGA 1992 s.29 to s.34).</strong> Where value is shifted out of shares before disposal, these provisions can reallocate the gain so the stripped value is brought back into the capital computation.</li>
+<li><strong>Transfer pricing or the settlements rules</strong> if value is routed to a connected party, such as a spouse, on non-commercial terms.</li>
 </ul>
 
-<p>A common approach for dental practice owners is to maximise pension contributions in the 2-3 years before sale. The annual allowance is £60,000 (2025/26), and unused allowances from the previous three years can be carried forward. A principal aged 55+ could potentially contribute £200,000+ into a pension over two years, extracting that value from the company tax-efficiently while reducing the goodwill gain.</p>
+<p>The defence to a transactions-in-securities or TAAR challenge is to show the distribution was a genuine, established feature of how the practice was run, not a one-off engineered around the sale. A principal who has paid regular dividends for years has a far stronger position than one who pays a single large dividend six months before exchange. The closer the dividend sits to the sale, and the more clearly it was sized to shrink the price, the weaker the position.</p>
 
-<h2>Pre-Sale Value Engineering vs Goodwill Stripping</h2>
+<h2>Why employer pension contributions are different</h2>
 
-<p>Pre-sale value engineering is a broader concept than goodwill stripping. It includes:</p>
+<p>The one pre-sale extraction route that is both cheaper and lower risk is the employer pension contribution. It works because:</p>
 
 <ul>
-<li>Reviewing the practice's cost base to maximise EBITDA, which increases the sale multiple.</li>
-<li>Ensuring all capital allowances have been claimed correctly (e.g., on dental chairs, X-ray equipment, compressors).</li>
-<li>Cleaning up the balance sheet: paying off director loans, settling inter-company balances, and removing personal assets.</li>
-<li>Structuring the sale to qualify for BADR (14% in 2025/26, rising to 18% from April 2026).</li>
-<li>Considering whether to sell shares or assets, and the tax implications for both seller and buyer.</li>
+<li>It is <strong>deductible for corporation tax on a paid basis</strong> under Finance Act 2004 s.196, so it reduces the company's tax bill rather than adding a personal charge.</li>
+<li>It carries <strong>no National Insurance</strong>, unlike salary or bonus.</li>
+<li>It is <strong>not a distribution</strong>, so the transactions in securities rules and the distributions TAAR do not reach it.</li>
 </ul>
 
-<p>Goodwill stripping is one element of pre-sale value engineering, but it must be integrated into a wider plan. A standalone stripping exercise without proper commercial rationale is a red flag for HMRC.</p>
+<p>It is subject to the <strong>£60,000 annual allowance</strong> (tapered for high earners where threshold income exceeds £200,000 and adjusted income exceeds £260,000), with <strong>unused allowance carried forward from the previous three tax years</strong>. A principal aged 55 or over, with carry-forward headroom, can move a substantial sum into a pension across two or three years before sale, removing it from the company's value through a deductible cost rather than a taxed dividend.</p>
 
-<p>For a full walkthrough of the sale process, see our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a>.</p>
+<p>One caution specific to dentists: a pension contribution into a private scheme is not the same as NHS Pension accrual. If you are an incorporated principal, your <strong>dividends are already non-pensionable</strong> in the NHS scheme, and salary set low to manage employer NIC limits your officer-route accrual. Pension funding before a sale should be planned alongside, not instead of, your NHS position. For the wider trade-offs of taking value as salary versus dividend, see how a dental company is structured for extraction.</p>
 
-<h2>Worked Example: Goodwill Stripping for a Single-Principal Practice</h2>
+<h2>When stripping is occasionally defensible (and when it never is)</h2>
 
-<p><strong>Scenario:</strong> Dr Patel owns a single-handed NHS/private mixed practice through a limited company. She plans to sell in 2027. The practice has:</p>
+<p>A pre-sale dividend is least bad, and most defensible, in narrow circumstances:</p>
 
 <ul>
-<li>Annual EBITDA: £180,000</li>
-<li>Goodwill valued at 1.0x EBITDA = £180,000</li>
-<li>Net assets (excluding goodwill): £120,000</li>
-<li>Share base cost: £10,000</li>
+<li>The extraction is part of a <strong>genuine, long-running profit-extraction pattern</strong>, not a one-off event timed to the sale.</li>
+<li>The <strong>timing gap</strong> between extraction and sale is wide, ideally 24 months or more, weakening any argument that the two were a single arrangement.</li>
+<li>BADR is <strong>unavailable or exhausted</strong>, so the gain would be taxed at the main CGT rate of 18% (basic band) or 24% (higher band) rather than 14% or 18%. Even here the dividend upper rate of 35.75% is higher than 24%, so the dividend route still rarely wins.</li>
 </ul>
 
-<p><strong>Option A: No stripping.</strong> Sale price £300,000. Gain £290,000. BADR at 14% = £40,600 tax. Net proceeds £259,400.</p>
-
-<p><strong>Option B: Pension stripping.</strong> In 2025/26 and 2026/27, Dr Patel contributes £60,000 each year into her pension (total £120,000). The company saves corporation tax at 19% on each contribution (£11,400 per year). The sale price drops to £180,000 (goodwill £60,000 + net assets £120,000). Gain £170,000. BADR at 14% = £23,800. Total tax saved on sale: £16,800. Plus corporation tax saved on pension contributions: £22,800. Total benefit: £39,600.</p>
-
-<p><strong>Option C: Dividend stripping (risky).</strong> Dr Patel pays a £100,000 dividend in 2025/26, then sells in 2026/27. Sale price drops to £200,000. Gain £190,000. Dividend taxed at 33.75% = £33,750. CGT at 14% = £26,600. Total tax: £60,350. Worse than Option A (£40,600). HMRC may also challenge the dividend under TAAR.</p>
-
-<p>Option B (pension stripping) is the most tax-efficient and the most defensible, provided the pension contributions are within the annual allowance and are commercially justified by Dr Patel's retirement plans.</p>
-
-<h2>What About Goodwill on a Practice Purchase?</h2>
-
-<p>Goodwill stripping is a pre-sale technique. But if you are buying a dental practice, you need to understand how goodwill is treated for tax in your company. Acquired goodwill (post-1 April 2019) qualifies for tax relief at 6.5% per year under the Finance Act 2019 rules. This relief is valuable and should be factored into your acquisition structure.</p>
-
-<p>For more on this, see our guide on <a href="/dental-guides/practice-purchase-financial-due-diligence">practice purchase financial due diligence</a>.</p>
-
-<h2>Common Mistakes and How to Avoid Them</h2>
+<p>It is almost never sensible where:</p>
 
 <ul>
-<li><strong>Stripping too close to the sale.</strong> HMRC will assume the extraction was part of the sale arrangement. Aim for at least 12 months gap, ideally 24+ months.</li>
-<li><strong>Using dividends instead of pensions.</strong> Dividends are taxed at 33.75% (higher rate) and trigger TAAR risk. Pensions are tax-free in the company and for the individual, and are harder for HMRC to challenge if they are part of a genuine retirement plan.</li>
-<li><strong>Ignoring BADR eligibility.</strong> BADR gives a 14% CGT rate (2025/26) on the first £1m of qualifying gains. If you strip too much value, you may waste BADR headroom. The optimal strategy is to extract value up to the point where the remaining gain fits within the BADR limit.</li>
-<li><strong>Not documenting the commercial rationale.</strong> HMRC will ask why you extracted the value. If you cannot show a genuine business or personal reason (e.g., retirement funding, debt repayment, school fees), the arrangement looks like avoidance.</li>
-<li><strong>Stripping from a company that has no retained profits.</strong> A dividend paid from capital (not distributable reserves) is unlawful under company law and may be treated as a capital distribution by HMRC.</li>
+<li>BADR is available, because you would be swapping an 18% charge for a 35.75% one.</li>
+<li>The dividend is paid close to the sale and sized to shrink the price, because that is exactly what the anti-avoidance rules counteract.</li>
+<li>The company has no distributable reserves: a dividend paid out of capital is unlawful under company law and can be treated as a capital distribution.</li>
+<li>You are a sole trader or partnership, because there is no company and no retained profit to extract this way.</li>
 </ul>
 
-<h2>Is Goodwill Stripping Right for Your Dental Practice?</h2>
+<h2>The cleaner alternative: structure for BADR and sell clean</h2>
 
-<p>Goodwill stripping is not a one-size-fits-all technique. It works best for principals who:</p>
+<p>For most principals the better plan is the opposite of stripping: keep value inside the company, make sure the share sale qualifies for Business Asset Disposal Relief, and pay 18% on the gain (14% if you complete an unconditional exchange on or before 5 April 2026). BADR needs the conditions met throughout the two years to disposal, so it rewards early planning rather than last-minute extraction. For the relief itself and the rate timing, see our guide to <a href="/blog/goodwill-and-practice-sale/badr-on-dental-practice-sale-2026-uk">BADR on a dental practice sale</a> and the detail of <a href="/blog/practice-finance/business-asset-disposal-relief-dentists-what-qualifies">what qualifies for Business Asset Disposal Relief</a>.</p>
 
-<ul>
-<li>Have a clear retirement timeline (2-5 years out).</li>
-<li>Have unused pension annual allowance headroom.</li>
-<li>Are selling a company (not a sole trade or partnership).</li>
-<li>Have a practice with significant retained profits that can be extracted without borrowing.</li>
-</ul>
+<p>The choice of sale structure also drives the result. A share sale keeps the gain in the seller's hands and is the usual route to BADR; an asset sale leaves the gain inside the company and adds a second layer of tax on extraction. We compare the two in <a href="/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice">asset sale versus share sale for a dental practice</a>. And because the size of the goodwill gain depends on how much of the price is goodwill in the first place, it is worth understanding <a href="/blog/goodwill-and-practice-sale/how-much-of-dental-practice-price-is-goodwill">how much of a dental practice price is goodwill</a> before you model any of this.</p>
 
-<p>It is less suitable for:</p>
-
-<ul>
-<li>Principals selling within 12 months (too little time to create a defensible gap).</li>
-<li>Practices with low retained profits (nothing to extract).</li>
-<li>Principals who have already used their BADR lifetime limit.</li>
-<li>Sole traders or partnerships (goodwill stripping works through a company structure).</li>
-</ul>
-
-<p>If you are considering a sale, start planning at least 2-3 years in advance. A well-timed pension contribution strategy, combined with proper documentation of commercial rationale, is the most robust approach.</p>
-
-<p>For a detailed analysis of your specific situation, speak to a <a href="/services/dental-accountants">dental-specialist accountant</a> who understands both the tax rules and the dental practice market.</p>
-
-<h2>Next Steps: Pre-Sale Planning Checklist</h2>
+<h2>A pre-sale planning checklist</h2>
 
 <ol>
-<li>Confirm your sale timeline (target date).</li>
-<li>Review your company's retained profits and distributable reserves.</li>
-<li>Check your pension annual allowance and carry-forward position.</li>
-<li>Assess BADR eligibility and headroom.</li>
-<li>Document your commercial rationale for any pre-sale extraction.</li>
-<li>Engage a dental-specialist accountant at least 2 years before the planned sale.</li>
+<li>Confirm your target sale date and whether an unconditional exchange before 6 April 2026 is realistic (it fixes BADR at 14%).</li>
+<li>Check BADR eligibility and how much of your £1m lifetime limit remains.</li>
+<li>Review distributable reserves before assuming any dividend is even lawful.</li>
+<li>Model the clean sale at 18% (or 14%) BADR as the baseline before considering any extraction.</li>
+<li>Where extraction is wanted, test employer pension contributions first, sized to your annual allowance plus carry-forward.</li>
+<li>If a dividend is still on the table, document the long-running extraction pattern and leave the widest possible gap to the sale.</li>
+<li>Engage a dental-specialist accountant at least two years before the planned sale.</li>
 </ol>
 
-<p>Our <a href="/services/practice-valuation">practice valuation service</a> can help you model the tax impact of different extraction strategies before you commit.</p>
+<p>The headline is simple: for an incorporated principal with BADR available, stripping value out as a pre-sale dividend almost always costs more once the dividend tax is set against the capital gains tax it avoids, and it adds an anti-avoidance risk that a clean sale does not carry.</p>

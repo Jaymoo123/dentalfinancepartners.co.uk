@@ -3,153 +3,170 @@ title: "Locum Dentist Day Rate vs Percentage: Which Pays More After Tax?"
 slug: "locum-dentist-day-rate-vs-percentage-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-day-rate-vs-percentage-tax"
 date: "2026-05-18"
+updatedDate: "2026-06-03"
+sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "Locum Tax"
-metaTitle: "Locum Dentist Day Rate vs Percentage: Tax Impact Comparison"
-metaDescription: "Compare locum dentist day rate vs percentage fee structures. See how per diem locum and percentage locum arrangements affect your net income after tax and NI."
+metaTitle: "Locum Dentist Day Rate vs Percentage: Tax Compared"
+metaDescription: "Day rate vs percentage for a UK locum dentist: how each pay structure affects tax, NIC, expenses and risk in 2026/27. Both are self-employed income."
 altText: "UK locum dentist comparing day rate and percentage fee options on a laptop in a dental practice"
-image: ""
+image: "https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
 h1: "Locum Dentist Day Rate vs Percentage: Which Pays More After Tax?"
-summary: "A comparison of day rate and percentage fee structures for locum dentists in the UK. We work through real numbers to show which arrangement leaves more in your pocket after tax, NI, and pension contributions."
+summary: "How a UK locum dentist's pay structure, a fixed day rate or a percentage of fees generated, affects tax, National Insurance, expense treatment and financial risk in 2026/27. Both are trading income for a self-employed locum, so the structure shapes income volatility and who carries lab and material costs rather than the tax mechanism itself."
+keyTakeaways:
+  - "Both a day rate and a percentage are self-employed trading income, so the pay structure changes income volatility and cost-bearing, not the tax mechanism."
+  - "Class 4 National Insurance is 6% on profits between £12,570 and £50,270 then 2% above, and Class 2 was abolished from 6 April 2024."
+  - "Mileage between practices is claimed at 55p per mile for the first 10,000 business miles from 6 April 2026 (up from 45p), then 25p, but home to first practice is non-deductible commuting."
+  - "A percentage deal often deducts lab fees, materials and bad debts before the split, passing more cost and collection risk to the locum than a day rate does."
+  - "IR35 bites only when trading through a personal service company, where a medium or large practice issues a Status Determination Statement under Chapter 10, Part 2 ITEPA 2003."
 schema: ""
 faqs:
-  - question: "Is a day rate locum arrangement always better than a percentage locum for NHS work?"
-    answer: "Not always, but often. For NHS practices with UDA values below £30, a day rate of £400-£500 typically pays more than a 50% split, unless you can consistently deliver 20+ UDAs per day. For high UDA values (£35+), percentage can be competitive. Run the numbers for each specific practice using our locum cost benefit calculator."
-  - question: "How does IR35 affect locum dentists on day rate vs percentage?"
-    answer: "IR35 applies if you work through a limited company. Since April 2021, medium and large practices must determine your IR35 status. Both day rate and percentage arrangements can be inside IR35 if the practice controls your hours, location, and methods. Inside IR35 means PAYE deductions at source, reducing your net income. Genuinely self-employed locums (sole traders) are not affected by IR35."
-  - question: "Can I claim expenses as a locum dentist on a day rate?"
-    answer: "Yes. Whether you are on a day rate or percentage, you can deduct allowable business expenses from your self-employed income. These include indemnity insurance, GDC registration, CPD courses, travel between practices, professional subscriptions, equipment, and a proportion of home office costs if you do admin from home. Keep receipts and a mileage log."
-  - question: "What is a typical day rate for a locum dentist in the UK in 2025/26?"
-    answer: "Day rates vary by region and practice type. Typical ranges are £350-£450 for NHS-only days, £450-£600 for mixed NHS/private days, and £500-£700 for private-only days. London and the South East command higher rates. Specialist locums (orthodontics, oral surgery) can earn £600-£1,000 per day. Always negotiate based on the practice's fee income, not just regional averages."
+  - question: "Does a day rate or a percentage arrangement change how a locum dentist is taxed?"
+    answer: "No. If you are genuinely self-employed, both a fixed day rate and a percentage of fees generated are trading income reported on the same Self Assessment return. You pay income tax at your marginal rate and Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above that. Class 2 National Insurance was abolished from 6 April 2024, so there is no weekly charge. The pay structure affects how variable your income is and who bears lab and material costs, not the tax mechanism."
+  - question: "How does IR35 affect a locum dentist on a day rate or a percentage?"
+    answer: "IR35 only bites if you trade through a personal service company. Since 6 April 2021, where the engaging practice is medium or large, the practice (not you) determines your status and must issue a Status Determination Statement with reasons under Chapter 10, Part 2 of ITEPA 2003. An inside-IR35 determination means PAYE and NIC are deducted before your company is paid, regardless of whether the underlying deal is a day rate or a percentage. A genuinely self-employed sole-trader locum is outside the off-payroll regime entirely."
+  - question: "Can I claim the same expenses on a day rate as on a percentage?"
+    answer: "Yes. Allowable expenses depend on your self-employed status, not your fee structure. You can deduct professional indemnity, the GDC annual retention fee (restoration fees are not allowable), approved List 3 subscriptions, CPD relevant to current practice, and instruments or loupes through the Annual Investment Allowance. Mileage between practices is claimed at 55p per mile for the first 10,000 business miles (from 6 April 2026, up from 45p) and 25p after that, but home to your first practice of the day is non-deductible commuting. A percentage deal may simply leave fewer lab and material costs on your side of the line."
+  - question: "Does a percentage arrangement create more risk for the locum?"
+    answer: "Often, yes. A day rate is a fixed amount per session, so your gross income is predictable. A percentage of fees generated rises and falls with the day's activity, quiet lists, cancellations and the practice's collection of private fees. A percentage deal may also pass some lab or material costs to you before the split, which reduces your taxable profit but increases the variability of your net position. The tax treatment is identical either way; what changes is volatility and who carries which costs."
 ---
 
-<h2>Locum Dentist Day Rate vs Percentage: The Core Question</h2>
+<h2>Day Rate vs Percentage: The Real Question for a Locum Dentist</h2>
 
-<p>If you work as a <strong>locum dentist</strong> in the UK, you have probably been offered work on two different bases: a fixed <strong>day rate</strong> (sometimes called a per diem locum) or a <strong>percentage locum</strong> arrangement where you take a share of the fees you generate. Which one pays better?</p>
+<p>If you work as a <strong>locum dentist</strong> in the UK, you have probably been offered work on two different bases: a fixed <strong>day rate</strong> (sometimes called a per diem locum) or a <strong>percentage locum</strong> arrangement, where you take an agreed share of the fees you generate. The question most locums ask is which one leaves more in their pocket after tax.</p>
 
-<p>The short answer is that it depends on the practice's UDA value, private fee levels, and your own tax position. But the longer answer matters more. A higher headline rate can leave you worse off after tax, National Insurance, and pension contributions if you do not structure your working arrangements correctly. This article compares the two models with worked examples so you can decide which suits your circumstances.</p>
+<p>The honest answer is that the pay structure itself does not change how you are taxed. For a genuinely self-employed locum, both a day rate and a percentage are <strong>trading income</strong> taxed in exactly the same way. What the structure does change is the <strong>volatility of your gross income</strong>, <strong>who bears lab and material costs</strong>, and the <strong>financial risk</strong> you carry. This article walks through how each model interacts with tax, National Insurance, expenses and risk for the 2026/27 tax year, so you can judge an offer on its substance rather than its headline.</p>
 
-<h2>How Day Rate Locum Arrangements Work</h2>
+<h2>Both Structures Are Trading Income</h2>
 
-<p>A <strong>day rate</strong> (per diem locum) is a fixed fee paid per session or per day, regardless of how much treatment you complete. Typical day rates for locum dentists in England in 2025/26 range from £350 to £600 per day, depending on location, NHS vs private mix, and experience. Some practices offer £450 for an NHS-only day and £550+ for mixed or private-only sessions.</p>
+<p>This is the point that surprises most people. Whether a practice pays you a set amount per session or a slice of the fees you bring in, a self-employed locum reports the lot as <strong>self-employed trading income</strong> on the same Self Assessment return. There is no separate tax regime for fixed fees versus variable fees, and HMRC does not treat a percentage of fees more or less favourably than a day rate.</p>
 
-<p>The advantage is predictability. You know exactly what you will earn each day. The disadvantage is that if you are efficient and generate high fee income, the practice keeps the upside. You are paid for your time, not your output.</p>
+<p>So the comparison is not really day rate tax versus percentage tax. It is gross income under one structure versus gross income under the other, run through identical tax and National Insurance rules, after the expenses each structure leaves you to bear. Get the gross-income and cost picture right and the tax follows automatically.</p>
 
-<h3>Tax Treatment of Day Rate Income</h3>
+<h3>How a Day Rate Works</h3>
 
-<p>If you are genuinely self-employed (the typical locum arrangement), day rate income is treated as trading income. You report it on your Self Assessment tax return under sole trader or partnership income. You pay Class 4 National Insurance at 6% on profits between £12,570 and £50,270, and 2% above that. Class 2 NI was abolished from April 2024.</p>
+<p>A day rate (per diem) is a fixed fee paid per session or per day, regardless of how much treatment you complete or what those treatments are worth. The attraction is predictability: you know what each booked day is worth before you arrive. The trade-off is that the upside on a busy, high-value day stays with the practice, because you are paid for your time rather than your output. A day rate also tends to leave lab and material costs with the practice, since you are not taking a cut of the fee those costs relate to.</p>
 
-<p>If you work through a limited company (personal service company or PSC), the practice may need to apply IR35 rules. Since April 2021, medium and large practices must determine your IR35 status. If they deem you inside IR35, the practice deducts PAYE and employer NI before paying your company. This can significantly reduce your net take-home compared to a genuine self-employed arrangement.</p>
+<h3>How a Percentage Works</h3>
 
-<h2>How Percentage Locum Arrangements Work</h2>
+<p>A percentage locum arrangement pays you an agreed share of the fees you generate. For NHS work that is a share linked to the activity you deliver against the practice's contract; for private work it is a share of the fees charged and collected. The attraction is that your income scales with productivity, so an efficient clinician on a busy list can do well. The trade-offs are variability and risk: quiet lists, cancellations and slow private collection all reduce your share, and many percentage deals deduct lab fees, materials or bad debts <em>before</em> calculating your slice. That means you effectively carry part of those costs, which is something a day rate insulates you from.</p>
 
-<p>A <strong>percentage locum</strong> arrangement pays you a share of the fees you generate. Typical splits range from 40% to 55% of gross fees collected. For NHS work, this means a percentage of the UDA value delivered. For private work, it is a percentage of the fees charged and collected.</p>
+<h2>Tax and National Insurance: Identical Under Both</h2>
 
-<p>The advantage is that your income scales with your productivity. If you work quickly and generate high fee income, you earn more. The disadvantage is variability. Quiet days or slow patients mean lower income. You also bear the risk of non-collection if the practice does not collect private fees promptly.</p>
+<p>Because both structures produce self-employed trading income, the tax and National Insurance treatment is the same for each. The mechanism that matters is the same whichever offer you take.</p>
 
-<h3>Tax Treatment of Percentage Income</h3>
-
-<p>Tax treatment is the same as for day rate income if you are self-employed. The key difference is that your income is variable, which can affect your Payment on Account calculations and cashflow. If you have a bumper month, HMRC expects half of the tax on that income by 31 January and the other half by 31 July following the tax year end.</p>
-
-<p>Percentage locum income is also subject to the same Class 4 NI rules. There is no special tax treatment for percentage-based fees versus fixed fees. The tax system treats both as self-employed trading income.</p>
-
-<h2>Worked Example: Day Rate vs Percentage for an NHS Locum</h2>
-
-<p>Let us compare two scenarios for a locum dentist working in an NHS practice in England. Assume the practice UDA value is £28 per UDA (a common mid-range figure). The locum completes 12 UDAs per day on average.</p>
-
-<p><strong>Scenario A: Day rate of £450 per day</strong></p>
 <ul>
-<li>Annual income (200 days): £90,000</li>
-<li>Self-employed expenses (indemnity, CPD, travel, equipment): £8,000</li>
-<li>Net profit: £82,000</li>
-<li>Income tax (2025/26): £12,570 personal allowance, then £37,700 at 20% = £7,540, then £31,730 at 40% = £12,692. Total tax: £20,232</li>
-<li>Class 4 NI: £37,700 at 6% = £2,262, then £31,730 at 2% = £635. Total NI: £2,897</li>
-<li>Net take-home: £82,000 - £20,232 - £2,897 = <strong>£58,871</strong></li>
+<li><strong>Income tax</strong> is charged on your taxable profit (gross income less allowable expenses) at your marginal rate: 20% in the basic-rate band, 40% in the higher-rate band and 45% above the additional-rate threshold, with the £12,570 personal allowance tapering away once income passes £100,000.</li>
+<li><strong>Class 4 National Insurance</strong> is charged at <strong>6% on profits between £12,570 and £50,270</strong>, then <strong>2% above £50,270</strong>.</li>
+<li><strong>Class 2 National Insurance was abolished from 6 April 2024</strong>. There is no longer a weekly flat-rate charge for self-employed locums above the small-profits threshold, who are still treated as having paid for state-pension and benefit purposes.</li>
 </ul>
 
-<p><strong>Scenario B: Percentage locum at 50% of UDA value</strong></p>
+<p>Because nothing is deducted at source for a self-employed locum, you settle the bill through Self Assessment. Where the prior year's liability exceeds £1,000 and less than 80% was collected at source, HMRC also requires <strong>payments on account</strong>: two interim payments due on 31 January and 31 July, each broadly half of the previous year's liability. A percentage arrangement, with its swings between busy and quiet periods, makes those instalments and your cash-flow planning more demanding than a steady day rate does, but it does not change the rates you pay.</p>
+
+<h2>Where the Structures Genuinely Differ</h2>
+
+<p>The differences that actually move your net position are about income volatility, cost-bearing and risk, not the tax rules. The table below summarises them.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Day rate (per diem)</th>
+      <th>Percentage of fees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tax status of income</td>
+      <td>Self-employed trading income</td>
+      <td>Self-employed trading income</td>
+    </tr>
+    <tr>
+      <td>Income tax</td>
+      <td>Marginal rate (20% / 40% / 45%)</td>
+      <td>Marginal rate (20% / 40% / 45%)</td>
+    </tr>
+    <tr>
+      <td>National Insurance</td>
+      <td>Class 4 (6% then 2%); no Class 2</td>
+      <td>Class 4 (6% then 2%); no Class 2</td>
+    </tr>
+    <tr>
+      <td>Gross income predictability</td>
+      <td>High: fixed per session</td>
+      <td>Variable: rises and falls with activity</td>
+    </tr>
+    <tr>
+      <td>Reward for high output</td>
+      <td>Upside stays with the practice</td>
+      <td>You share the upside on busy days</td>
+    </tr>
+    <tr>
+      <td>Lab and material costs</td>
+      <td>Usually borne by the practice</td>
+      <td>Often deducted before your split</td>
+    </tr>
+    <tr>
+      <td>Collection / bad-debt risk</td>
+      <td>Carried by the practice</td>
+      <td>Frequently shared by you</td>
+    </tr>
+    <tr>
+      <td>Cash-flow and payments on account</td>
+      <td>Easier to forecast</td>
+      <td>Harder to forecast across the year</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Read that way, the choice is a risk-and-reward decision. A day rate buys certainty and pushes cost and collection risk onto the practice. A percentage offers a share of the upside in exchange for accepting variability and, frequently, a slice of the lab, material and bad-debt risk. Neither is more tax-efficient in the abstract; the better deal is simply the one that produces the higher taxable profit for your way of working, after the costs each structure leaves with you.</p>
+
+<h2>Expenses: Driven by Status, Not Structure</h2>
+
+<p>Allowable expenses follow from being self-employed, not from how the fee is calculated. Under either structure you can deduct costs incurred wholly and exclusively for your locum work, including:</p>
+
 <ul>
-<li>Daily UDA value generated: 12 UDAs x £28 = £336</li>
-<li>Locum share at 50%: £168 per day</li>
-<li>Annual income (200 days): £33,600</li>
-<li>Self-employed expenses: £8,000</li>
-<li>Net profit: £25,600</li>
-<li>Income tax: £12,570 personal allowance, then £13,030 at 20% = £2,606</li>
-<li>Class 4 NI: £13,030 at 6% = £782</li>
-<li>Net take-home: £25,600 - £2,606 - £782 = <strong>£22,212</strong></li>
+<li><strong>Professional indemnity</strong> with a defence organisation or equivalent insurer.</li>
+<li>The <strong>GDC annual retention fee</strong> and specialist-register fees. Note that <strong>restoration fees and any CPD-shortfall penalties are not allowable</strong>.</li>
+<li><strong>Professional subscriptions</strong> on HMRC's approved List 3, such as relevant professional bodies and journals.</li>
+<li><strong>CPD</strong> that maintains or updates skills for your current practice, though training that creates a genuinely new qualification can be capital rather than revenue.</li>
+<li><strong>Instruments and loupes</strong>, normally relieved through capital allowances and the Annual Investment Allowance rather than as a straight revenue deduction.</li>
+<li><strong>Mileage between practices</strong> at HMRC's approved rates of <strong>55p per mile for the first 10,000 business miles (from 6 April 2026, up from 45p) and 25p thereafter</strong>. Travel from home to your first practice of the day is ordinary commuting and is <strong>not</strong> deductible.</li>
 </ul>
 
-<p>In this example, the day rate locum earns significantly more. But the comparison is not fair unless we adjust for productivity. If the locum completes 20 UDAs per day instead of 12, the percentage arrangement becomes more attractive.</p>
+<p>The one structural twist is cost allocation. A percentage deal that deducts lab fees and materials before your split has effectively removed those costs from your figures already, so you would not also claim them; a day rate that leaves those costs with the practice never puts them on your tax return in the first place. Either way, keep clean records and a mileage log. For the full mechanics of putting this on a return, see our <a href="/blog/locum-tax/locum-dentist-tax-return-step-by-step-uk">step-by-step locum dentist tax return guide</a>.</p>
 
-<p><strong>Scenario C: Percentage locum at 50%, 20 UDAs per day</strong></p>
+<h2>IR35 Applies Only If You Trade Through a Company</h2>
+
+<p>One area where the wrong assumption can cost real money is IR35, and it has nothing to do with whether your deal is a day rate or a percentage. <strong>The off-payroll rules only engage if you provide your services through a personal service company (PSC).</strong> A genuinely self-employed sole-trader locum is outside the regime altogether.</p>
+
+<p>If you do work through a company, the position since <strong>6 April 2021</strong> is that, where the engaging practice is <strong>medium or large</strong> (most NHS practices and dental groups are), the <strong>practice, not you, determines your status</strong> and must issue a <strong>Status Determination Statement (SDS)</strong> with reasons, taking reasonable care. This sits in <strong>Chapter 10, Part 2 of ITEPA 2003</strong>. If a practice determines an engagement <strong>inside IR35</strong>, the fee-payer operates PAYE and NIC before paying your company, so the tax-efficient salary-and-dividend extraction normally associated with a company is not available on that income. The determination attaches to the engagement, so a locum across several practices may hold a mix of inside and outside positions at once, and that mix is independent of whether each deal is structured as a day rate or a percentage.</p>
+
+<p>You can challenge a determination you disagree with through the client-led <strong>disagreement process</strong>, which gives the practice 45 days to respond with its reasons. If you extract through a company, remember that company profits taken as dividends are taxed for <strong>2026/27</strong> at <strong>10.75% (ordinary rate), 35.75% (upper rate) and 39.35% (additional rate)</strong>, after the £500 dividend allowance, which is a further reason an inside-IR35 finding hurts: it removes the dividend route on that income entirely. For the wider trading-personally-versus-company decision, see <a href="/blog/locum-tax/locum-dentist-ltd-company-vs-self-employed">locum dentist limited company vs self-employed</a>.</p>
+
+<h2>How to Compare an Offer in Practice</h2>
+
+<p>Because the tax mechanism is fixed, comparing a day rate offer with a percentage offer is really about forecasting the gross income each will produce for the way you actually work, then subtracting the costs each leaves with you.</p>
+
 <ul>
-<li>Daily UDA value generated: 20 x £28 = £560</li>
-<li>Locum share: £280 per day</li>
-<li>Annual income (200 days): £56,000</li>
-<li>Net profit after expenses: £48,000</li>
-<li>Income tax: £12,570 at 0%, then £35,430 at 20% = £7,086</li>
-<li>Class 4 NI: £35,430 at 6% = £2,126</li>
-<li>Net take-home: £48,000 - £7,086 - £2,126 = <strong>£38,788</strong></li>
+<li><strong>For a day rate</strong>, ask what activity the practice expects from the session and what the booked list typically looks like. A fixed amount is attractive when lists are unpredictable, when private collection is slow, or when you value certainty over upside.</li>
+<li><strong>For a percentage</strong>, ask for recent gross fee figures for the chair you would cover, and clarify exactly which deductions come off before your split: lab fees, materials and bad debts are the common ones. A percentage rewards a busy, efficient list but exposes you to quiet days and collection risk.</li>
+<li><strong>Consider a hybrid</strong>. Some locums negotiate a base session fee plus a share above an agreed activity threshold, blending the downside protection of a day rate with the upside of a percentage. Tax treatment is unchanged: it is all self-employed trading income.</li>
 </ul>
 
-<p>At 20 UDAs per day, the percentage locum earns £38,788 net, still less than the day rate locum's £58,871. The day rate wins on pure numbers in this NHS example because the UDA value is relatively low. But if the UDA value were higher, say £40 per UDA, the picture changes.</p>
+<p>Whichever you choose, set aside a realistic slice of every payment for income tax and Class 4 National Insurance, register for Self Assessment if you have not already, and plan for the 31 January and 31 July payment dates. A percentage deal needs a larger cash buffer because the swings are wider.</p>
 
-<p><strong>Scenario D: Percentage locum at 50%, 20 UDAs per day, £40 UDA value</strong></p>
-<ul>
-<li>Daily UDA value generated: 20 x £40 = £800</li>
-<li>Locum share: £400 per day</li>
-<li>Annual income (200 days): £80,000</li>
-<li>Net profit after expenses: £72,000</li>
-<li>Income tax: £12,570 at 0%, then £37,700 at 20% = £7,540, then £21,730 at 40% = £8,692. Total: £16,232</li>
-<li>Class 4 NI: £37,700 at 6% = £2,262, then £21,730 at 2% = £435. Total: £2,697</li>
-<li>Net take-home: £72,000 - £16,232 - £2,697 = <strong>£53,071</strong></li>
-</ul>
+<h2>Where This Sits Alongside the Bigger Decisions</h2>
 
-<p>Now the percentage locum earns £53,071 net, much closer to the day rate figure. If you can consistently achieve high UDA output in a high-value contract, percentage can be competitive.</p>
+<p>Day rate versus percentage is a narrower question than it first appears, because both sit inside the same self-employed tax framework. The decisions that move your tax position further are about your <strong>role and structure</strong>, not your fee basis. If you are weighing locum work against an associate position, see how the two roles compare in our guide to <a href="/blog/associate-tax/locum-vs-associate-tax-treatment-uk-dentists">locum dentist vs associate tax treatment</a>. If you are choosing between employed salary and self-employed fees, our comparison of <a href="/blog/associate-tax/salary-vs-associate-fees-which-uk-dentist-tax">salary vs associate fees</a> works through the trade-offs.</p>
 
-<h2>Private Practice: Where Percentage Can Outperform Day Rate</h2>
+<h2>Conclusion: It Is About Risk, Not the Tax Rate</h2>
 
-<p>Private dental fees are typically higher per unit of time than NHS UDA values. A private hygienist appointment might generate £80-£120 in 30 minutes. A private examination and treatment plan might generate £150-£250. If you work in a private practice with high fee levels, a percentage locum arrangement can easily beat a fixed day rate.</p>
+<p>There is no universal winner between a day rate and a percentage, but there is a clear way to think about it. The tax and National Insurance treatment is identical: both are self-employed trading income, taxed at your marginal rate with Class 4 National Insurance at 6% then 2%, and no Class 2 charge since April 2024. What differs is volatility, who carries lab, material and collection costs, and how predictable your cash flow is. A day rate buys certainty; a percentage offers a share of the upside in return for accepting risk.</p>
 
-<p>Consider a private practice where you see 8 patients per day at an average fee of £180. Total daily fee income is £1,440. At a 50% split, you earn £720 per day. Compare that to a typical private day rate of £500-£600. The percentage arrangement pays more.</p>
-
-<p>Private practice also tends to have lower overheads per patient for the locum. You typically do not need to provide materials or lab work (those are usually covered by the practice or deducted before the split). Your expenses remain similar: indemnity, CPD, travel, and equipment.</p>
-
-<h2>Key Factors That Determine Which Is Better</h2>
-
-<h3>UDA Value and Contract Type</h3>
-<p>If you work in an NHS practice with a low UDA value (under £25), a day rate is almost always better unless you can consistently deliver 25+ UDAs per day. For high UDA values (£35+), percentage becomes viable. Check the practice's UDA value using our <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a> before negotiating.</p>
-
-<h3>Your Efficiency and Speed</h3>
-<p>If you are a fast worker who can complete treatment quickly without compromising quality, percentage arrangements reward you. If you prefer a steady pace and predictable income, day rate is safer. Be honest with yourself about your typical output.</p>
-
-<h3>Practice Collection Risk</h3>
-<p>With a percentage locum, you share the risk of non-payment. If a private patient does not pay, you do not get your share. Some practices deduct bad debts from your split. Day rate eliminates this risk. Check the practice's payment terms and collection history before agreeing to a percentage deal.</p>
-
-<h3>IR35 and Your Business Structure</h3>
-<p>If you operate through a limited company, IR35 can affect both arrangements. A day rate contract with a practice that treats you as inside IR35 means PAYE deductions at source. A percentage arrangement may also be inside IR35 if the practice controls how you work. Our <a href="/services/locum-dentist-tax">locum dentist tax page</a> covers this in more detail.</p>
-
-<h3>Expense Deductibility</h3>
-<p>Both day rate and percentage locum income allow you to deduct legitimate business expenses. These include indemnity insurance, GDC registration, CPD courses, travel between practices, professional subscriptions, and equipment. The key is to keep clear records. If you use a car for multiple practices, mileage claims are straightforward. See our guide on <a href="/dental-guides/associate-tax-survival-guide">associate tax survival guide</a> for a full list of allowable expenses.</p>
-
-<h2>Negotiation Tips for Locum Dentists</h2>
-
-<p>When a practice offers you a day rate, ask what their typical UDA value is and what output they expect. If they say "around 12 UDAs per day" and the UDA value is £30, you can calculate that the practice is keeping £360 per day while paying you £450. That is a good deal for you.</p>
-
-<p>When offered a percentage, ask for the gross fee income figures for the last three months. If the practice cannot provide them, be cautious. Also clarify what deductions come before your split: lab fees, materials, and bad debts are common deductions. Get the agreement in writing.</p>
-
-<p>Consider a hybrid arrangement. Some locums negotiate a base day rate plus a bonus percentage above a certain threshold. For example, £350 per day plus 50% of all fees above £700 generated. This gives you downside protection and upside potential.</p>
-
-<h2>Tax Planning for Locum Dentists</h2>
-
-<p>Whichever fee structure you choose, tax planning is essential. Locum dentists often face large tax bills because they do not have PAYE deductions. Set aside 25-30% of each payment for tax and NI. Make sure you register for Self Assessment if you have not already. The online filing deadline is 31 January following the tax year end.</p>
-
-<p>If your income varies significantly between years, consider using a limited company to smooth your tax liability. But be aware of IR35. Many locums find that being genuinely self-employed (sole trader) is simpler and more tax-efficient for lower to mid-range incomes. Our <a href="/services/dental-accountants">dental accountants</a> can help you model both scenarios.</p>
-
-<h2>Conclusion: Which Should You Choose?</h2>
-
-<p>There is no universal answer. For most NHS locums, a day rate of £450+ is better than a 50% split on a typical UDA value of £25-£30. For private locums, percentage arrangements often win because fee levels are higher. For locums who work fast in high-value NHS contracts, percentage can match or beat day rate.</p>
-
-<p>The best approach is to run the numbers for each specific opportunity. Use our <a href="/calculators/locum-cost-benefit-calculator">locum cost benefit calculator</a> to compare day rate and percentage offers side by side. Factor in your expenses, your efficiency, and the practice's fee structure. And always speak to a dental-specialist accountant before committing to a long-term arrangement.</p>
-
-<p>If you are unsure which structure suits your circumstances, <a href="/contact">contact us</a> for a free initial discussion. We work with locum dentists across the UK and can help you optimise your income and tax position.</p>
+<p>The best approach is to forecast the gross income and the costs each structure leaves with you, then judge the offer on substance. If you want help modelling a specific opportunity or reviewing how IR35 applies to a company engagement, <a href="/contact">contact us</a> for an initial discussion. We work with locum dentists across the UK and can help you read an offer correctly before you commit.</p>
