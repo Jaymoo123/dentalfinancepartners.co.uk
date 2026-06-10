@@ -12,6 +12,9 @@
     "./lib/local-business-schema": "./lib/local-business-schema.ts",
     "./components/ui/layout-utils": "./components/ui/layout-utils.ts"
   },
+  "scripts": {
+    "test": "vitest run"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
