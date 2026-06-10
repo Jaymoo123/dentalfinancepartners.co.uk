@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
-import { addHeadingIds } from "./markdown-utils";
+import { addHeadingIds } from "@accounting-network/web-shared/content/markdown-utils";
 
 const fundamentalsDirectory = path.join(process.cwd(), "content", "fundamentals");
 

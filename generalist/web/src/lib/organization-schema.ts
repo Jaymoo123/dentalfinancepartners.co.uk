@@ -5,7 +5,7 @@
  * This file preserves the legacy `buildOrganizationJsonLd()` so the
  * homepage and any other call-sites keep working unchanged.
  */
-import { buildOrganization } from "./schema/organization";
+import { buildOrganization } from "@/lib/schema";
 
 export function buildOrganizationJsonLd() {
   return buildOrganization();
