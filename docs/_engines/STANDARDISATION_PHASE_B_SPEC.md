@@ -1,6 +1,9 @@
 # Standardisation — Phase B build spec (GAP-8 fold-ups → GAP-2 tool platform → operator gate → GAP-3 console)
 
-**Status:** PLANNING — pending user review. No execution until approved.
+**Status:** EXECUTING — approved 2026-06-10. GAP-8 handed to Sonnet first; GAP-2 after GAP-8 merges; GAP-3 blocked on the operator gate's readiness query.
+
+## Execution log
+*(appended per cluster, same convention as Phase A)*
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL, frozen — Verify lines are acceptance) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` (Part 3) · `docs/_engines/STANDARDISATION_PHASE_A_SPEC.md` (execution log: rollout preconditions, deploy gate, test-row cleanup item) · main as of Phase A close (2026-06-10).
 **Guardrails (carried from Phase A, two strengthened):** Property is READ-ONLY, copy-never-edit · one branch per cluster, commit at tested-green, post-merge CI on the MAIN ref is the close-out tick · **live-DB verification over migration-file assumptions** (the D2 lesson — every schema/view/constraint claim is checked against the deployed database before code relies on it) · **deployment is out of scope of every brief** — it exists only as the explicit operator gate below.
 
