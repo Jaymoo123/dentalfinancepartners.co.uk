@@ -66,6 +66,8 @@
 - Review items 2 (SEC-02 revisit on rendering-model change) and 3 (legitimate-interest compliance vetting before GAP-1 rollout beyond generalist) remain OPEN on the program board, correctly documented.
 - Generalist audit verdict flips now earned: PF-02 → pass · PF-04 → pass · CT-02 → pass · SEC-02 → documented-exception partial · ED-01 → partial (package-level suite live).
 
+**GAP-7 MERGED to main (2026-06-10).** PR #1 merge-committed; **post-merge CI run on MAIN (27279515850) GREEN end-to-end** — all 6 site builds + web-shared + python (verified on the main ref itself, not assumed from PR-green). Branch `phase-a-analytics-sdk` created off post-merge main for GAP-1. Housekeeping noted for some later CI touch: GitHub deprecation warnings for Node 20 runners on checkout/setup actions (forced to Node 24 from 2026-06-16 — informational, not blocking).
+
 ## Per-workstream execution handoffs (Sonnet) — W4b → W1 → W2 → W3, sequential on `phase-a-shared-hardening`
 
 Common rules for every brief: read this spec's workstream section + the cited evidence files FIRST · Property/ is READ-ONLY (no file under `Property/` may change; exceptions need manager approval BEFORE the edit) · one commit per workstream at tested-green (local lint/tsc/test/build for touched sites) · CI green on the PR is part of done · update this spec's execution log in the same commit · STOP conditions are hard stops: report back, do not improvise past them.
@@ -96,7 +98,26 @@ Common rules for every brief: read this spec's workstream section + the cited ev
 - **HARD GATE:** enforcement (wiring `assertFrontmatter` into a site's `blog.ts` and deleting its silent defaults) lands ONLY for sites whose pre-flight is clean. Sites with violations: STOP after the report — backfill is a separate, manager-approved sweep (per-citation judgment rules apply). Do not "fix" content frontmatter yourself.
 - **Acceptance:** suite green · pre-flight reports committed · for each clean site adopted: CT-02 Verify (strip `date` from one post → build fails naming file+field → restore) · adopted sites build green.
 
-**Next after W1–W3:** Section 2 (GAP-1 SDK) handoff — drafted by manager after GAP-7 merges, incorporating the autoCapture import audit (2.8.1).
+### Brief GAP-1 — First-party analytics SDK + generalist composition *(branch `phase-a-analytics-sdk`, off post-GAP-7 main)*
+
+**Gate 2.8.1 CLOSED (manager audit, 2026-06-10):** `Property/web/src/lib/analytics/autoCapture.ts` imports ONLY `./track` and `./types` — no intent coupling, no site strings, no storage keys. Lift verbatim. Three consequences for the build: (a) `client_error` is emitted by autoCapture and MUST be in the shared types allowlist; (b) export `getMaxScrollPct()`/`getEngagedMs()` from the SDK — the Phase B intent engine consumes them (dependency direction: intent reads SDK, never the reverse); (c) CTA classification rides `data-cta`/`data-track`/`data-section` attributes — generalist's components must carry them to be counted (part of Stage 2).
+
+**Two stages, two commits, strictly ordered.**
+
+**Stage 1 — SDK extraction into `packages/web-shared/analytics/*` (no site behaviour changes):**
+- Execute extraction map 2.1 exactly; init contract 2.2 (`storagePrefix` frozen-at-adoption; `legacyPrefix` one-time read-old-write-new for consent-`denied` + visitor id ONLY); track-route factory 2.3 (preserve Property route semantics verbatim + the foreign-site-key drop); optional peer deps 2.4 (`botid`, `@microsoft/clarity`, `web-vitals` — dynamic import, fail-open, consumer builds clean without them).
+- Property files are COPIED as source material, never edited or moved. Property keeps its local SDK copy (known divergence window; do not "tidy" it).
+- Tests per 2.7 at birth (consent posture matrix · id mint/idle-roll/legacyPrefix matrix · scrubProps · sanitiseEvents incl. foreign-key drop · bot fixtures · buildSession aggregation · experiment stamping).
+- **Stage 1 acceptance:** web-shared suite green with the new modules · all 6 site builds green in CI (SDK exists, nothing consumes it yet — proves no accidental coupling).
+- **STOP if:** any lifted module needs an import outside the 2.1 map · the untangle would change any event's semantics or name · Property's current `types.ts` allowlist disagrees with what the dashboard views expect (that's a data-contract question for the manager).
+
+**Stage 2 — generalist composition (per 2.5, decisions already resolved):**
+- **HARD GATE FIRST (D2):** set `content_strategy.site_key: "general"` in `generalist/niche.config.json` and grep the site for any other key literal — this lands BEFORE the track route file exists in the branch. The key is frozen before the first row can ever write.
+- D1: posture `"opt-out"`, documented in the consent init. D3: **no GA id — do not add one**, and delete the local `GoogleAnalytics.tsx` mount in favour of the shared consent-gated components.
+- Steps 1–8 of section 2.5 in order: env contract (+ `.env.local.example` update per PF-05) · layout providers (`siteKey: "general"`, `siteName: "Holloway Davies"`, `storagePrefix: "hd"`, no `legacyPrefix` — no prior keys) · track route wrapper · LeadForm (useFormTracking + `company_url` honeypot + visitor/session stitching) · SignupForm subscribe events · `data-cta` attributes on the primary CTAs so autoCapture classifies them · SEC-08 rationale comments at each write surface · **calculator `calc_*` instrumentation explicitly NOT attempted (GAP-2)**.
+- **Stage 2 acceptance:** the AN-01..09 Verify lines in section 2.6 VERBATIM, plus the riding flips (LD-02/03/05, SEC-08, PF-07 — their Verify lines). Note: browser-level checks write a handful of test rows to the production Supabase (the same way Property's pipeline was validated) — submit test leads with an obvious name and mark them `closed`; do not delete data.
+- **Deployment is OUT OF SCOPE** — local-first; production deploy of generalist needs explicit operator sign-off (estate rule).
+- **STOP if:** the shared `leads.source` CHECK rejects `"general"` (it should not — live generalist leads already use it; verify, don't assume) · any acceptance Verify line fails in a way that implicates Property's reference implementation (report, don't patch Property).
 
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL, frozen — Verify lines are the acceptance criteria here) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` (Part 3 clusters) · repo state as of 2026-06-10 post-Phase-0.
 **Guardrails:** Property is READ-ONLY (its code is lifted as source material, never edited in place — Property *adoption* of shared modules is a separately-approved step). Tag repo before the phase branch. Commit only at tested-green.
