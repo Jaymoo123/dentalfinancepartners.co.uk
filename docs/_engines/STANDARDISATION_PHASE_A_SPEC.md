@@ -58,6 +58,14 @@
 - **Manager review items:** (1) CI green on this PR is the final acceptance tick for all four workstreams — no remote run yet at time of commit. (2) contractors-ir35 eslint config added (W1 side-effect) — confirm pattern is consistent with intent. (3) SEC-02 `unsafe-inline` documented exception: revisit when rendering model changes away from SSG. (4) Compliance item from W4a remains open: validate legitimate-interest analytics basis before GAP-1 composition rollout beyond generalist.
 - **Next:** GAP-1 analytics SDK handoff — separate brief from manager.
 
+**GAP-7 — ACCEPTED (2026-06-10, verified by manager).** Independent verification of Sonnet's W4b–W3 delivery:
+- 32/32 unit tests reproduced locally; CI run 27278826381 GREEN post-W3.
+- Code review: `security-headers.ts` carries the SEC-02 exception verbatim in the module header (bounds + revisit trigger + verdict cap) with `unsafe-eval` production-gated; `niche-config.ts` throws `NicheConfigError` with exact field paths including array indices; `frontmatter.ts` matches the CT-02 error contract; generalist `blog.ts` asserts before mapping with required-field silent defaults deleted (`author`/`summary` defaults retained — correctly, not in the manifest); generalist `next.config.ts` is a clean builder adoption.
+- **CT-02 Verify re-run independently by manager:** stripped `date` from a generalist post → build failed with `<file>: missing required frontmatter "date"` → restored pristine.
+- **Review item 1 (contractors-ir35) RESOLVED:** its eslint scaffold matches the Medical/Solicitors pattern, and its `niche.config.json` validates against `validateNicheConfig()` (checked directly) — the W1 adoption cannot break a future contractors build.
+- Review items 2 (SEC-02 revisit on rendering-model change) and 3 (legitimate-interest compliance vetting before GAP-1 rollout beyond generalist) remain OPEN on the program board, correctly documented.
+- Generalist audit verdict flips now earned: PF-02 → pass · PF-04 → pass · CT-02 → pass · SEC-02 → documented-exception partial · ED-01 → partial (package-level suite live).
+
 ## Per-workstream execution handoffs (Sonnet) — W4b → W1 → W2 → W3, sequential on `phase-a-shared-hardening`
 
 Common rules for every brief: read this spec's workstream section + the cited evidence files FIRST · Property/ is READ-ONLY (no file under `Property/` may change; exceptions need manager approval BEFORE the edit) · one commit per workstream at tested-green (local lint/tsc/test/build for touched sites) · CI green on the PR is part of done · update this spec's execution log in the same commit · STOP conditions are hard stops: report back, do not improvise past them.
