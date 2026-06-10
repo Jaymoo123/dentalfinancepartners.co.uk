@@ -1,6 +1,24 @@
 # Standardisation — Phase A build spec (GAP-7 shared hardening + GAP-1 analytics SDK)
 
-**Status:** PLANNING — Section 1 (GAP-7) APPROVED (with ratifications: Vitest; hand-rolled validator conditional on error legibility; SEC-02 documented-exception confirmed original to the frozen standard). Section 2 (GAP-1) drafted, pending review.
+**Status:** EXECUTING — both sections APPROVED (ratifications: Vitest; hand-rolled validator conditional on error legibility / zod fallback; SEC-02 documented-exception confirmed original to the frozen standard, verdict capped at partial). D-decisions resolved: D1 opt-out posture ADOPTED (see compliance item below) · D2 canonical key `"general"` — **hard ordering gate: key frozen in config before the track route's first write** · D3 no GA4, first-party only — LOCKED.
+
+## Execution log
+
+**W4a — DONE (2026-06-10, branch `phase-a-shared-hardening`, tag `pre-phase-a` marks the baseline).**
+- Finding that reshaped the workstream: the repo is a single-lockfile npm workspace; the old workflow's per-site `npm ci`/`cache-dependency-path` referenced lockfiles that don't exist, so **every CI run had been failing at install since at least 2026-05-20** (verified via `gh run list`) — the estate had no CI net at all, and digital-agency is tracked in THIS repo (the "separate repo" note in MULTI_SITE_INFRASTRUCTURE.md is stale).
+- Rewritten workspace-correct: root `npm ci`, fail-fast-off matrix over 6 sites (generalist + digital-agency newly covered), `npm run test --if-present` per site, `test-web-shared` job, status-check updated. contractors-ir35 excluded (scaffold), documented in the workflow header.
+- Side fix shipped with it: generalist + digital-agency `eslint.config.mjs` had flat-config `ignores` combined with `rules` (only global when standalone) so `.next/` output got linted. **Dentists/Medical/Solicitors likely carry the same bug** — harmless in CI (lint runs before build on a fresh checkout) but fix at next touch; Property's copy untouched (read-only).
+- Tested-green locally: generalist lint 0 / tsc 0 / build 0 (671 pages); digital-agency lint 0 / tsc 0 / build 0; web-shared `--if-present` no-op green. **Remote CI run pending a push/PR of this branch** — first green run on GitHub is the final W4a acceptance tick.
+
+**W4a CI run 1 result (2026-06-10, run 27274755102) — RED: 3/6 site builds failed.**
+- ✓ Dentists, generalist, digital-agency, test-web-shared, test-python all green.
+- ✗ **Property:** `@typescript-eslint/no-require-imports` on 6 root-level diagnostic scripts (`analyze_age.js`, `check_date_distribution.js`, `check_links.js`, `check_old_files.js`, `count_all_broken.js`, `sample_by_period.js`). Fix: `"*.js"` ignores entry in `Property/web/eslint.config.mjs` — **Read-only exception #1 (deliberate): Property eslint ignores entry for root diagnostic scripts — CI-enabling, non-behavioural, scopes out non-app scripts. Approved 2026-06-10.**
+  - Combined-ignores bug audit (while in the file): Property's `ignores` IS a standalone object (only key); it does NOT have the bug. No fix needed.
+- ✗ **Medical / Solicitors:** `ESLint couldn't find an eslint.config.(js|mjs|cjs) file` — these sites have NO flat config at all (W4a assumed they had the combined-ignores bug variant; they have nothing). Fix: add minimal `eslint.config.mjs` matching Dentists (approved alongside Property fix).
+
+**D1 condition (estate posture provenance) — answered:** Property's posture IS deliberate and documented in code (`lib/analytics/consent.ts`: "Decision (updated 2026-06-05): track by DEFAULT (legitimate-interest posture)", with revert path) — it is not an accident. But **no evidence exists in-repo of a legal/compliance vetting of legitimate interest as the analytics basis**, and Property is today the only site running it. Per the user's condition this is logged as an **estate-wide compliance item: validate the legitimate-interest analytics basis (PECR/UK GDPR analytics-cookie guidance) before or alongside GAP-1 composition rollout beyond generalist**. Generalist adopts the uniform posture; the item stays open on the program board, not silently inherited.
+
+**Next:** W1/W2/W3 build workstreams — paused for per-workstream execution handoff planning (Sonnet).
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL, frozen — Verify lines are the acceptance criteria here) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` (Part 3 clusters) · repo state as of 2026-06-10 post-Phase-0.
 **Guardrails:** Property is READ-ONLY (its code is lifted as source material, never edited in place — Property *adoption* of shared modules is a separately-approved step). Tag repo before the phase branch. Commit only at tested-green.
 **Phase 0 verified done:** EN-05 interim claim guard (`generalist .../newsletter-drip/route.ts:42-66`, advance-then-release), `/blog/stage/*` noindexed, robots/.env hygiene. GA4 id deliberately left empty — generalist stays dark until GAP-1 lands.
