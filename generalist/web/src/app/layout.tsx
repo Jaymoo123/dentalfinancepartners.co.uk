@@ -3,7 +3,9 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
+import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
+import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -69,11 +71,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
       <body className="antialiased font-sans">
-        <PageShell>{children}</PageShell>
+        {/*
+         * AN-01 (opt-out posture): track by default under legitimate interest.
+         * Visitor can opt out via the "Do not track me" footer link.
+         * D3: no GA id — first-party Supabase is the system of record at adoption;
+         * operator wires GA separately if wanted (ConsentedScripts renders nothing
+         * for an empty/invalid measurementId).
+         * SEC-08: analytics writes flow through /api/track (server-side service-role
+         * only); ConsentProvider guards client-side consent state.
+         */}
+        <ConsentProvider>
+          <AnalyticsProvider
+            siteKey={niche.content_strategy.site_key}
+            siteName={niche.display_name}
+            storagePrefix="hd"
+            posture="opt-out"
+            noTrackPrefixes={["/admin"]}
+          >
+            <ConsentedScripts />
+            <PageShell>{children}</PageShell>
+          </AnalyticsProvider>
+        </ConsentProvider>
       </body>
     </html>
   );
