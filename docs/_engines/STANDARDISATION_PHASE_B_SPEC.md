@@ -4,6 +4,12 @@
 
 ## Execution log
 *(appended per cluster, same convention as Phase A)*
+
+**OPERATOR GATE — deploy DONE (operator, 2026-06-10) + AN-01 browser pass PASSED (manager, automated, 2026-06-10).**
+- Deploy happened ahead of the browser pass (gate sequencing inverted by the operator — recorded, no harm: the pass was then run against the LIVE site, which is the stronger test). Live verification first confirmed the deploy carried GAP-1: `/api/track` live (204), old GA tag gone, prod ingest lands rows (Vercel env has the service key), first real `human_confirmed` session at 18:30 UTC.
+- **AN-01 gate executed via real browser engine** (headless system Edge, `scripts/an01_browser_pass.mjs` — reusable per site: `node scripts/an01_browser_pass.mjs <url> <prefix>`): beacons fire on interaction (1+) · ids minted under `hd_` prefix, random-shaped · **consent `denied` → 0 beacons on further interaction, live, no reload** · key cleared → beacons resume (2). ALL GREEN. The compliance-relevant mechanism is physically proven on production.
+- Outstanding from the gate's optional list: LD-03/LD-05 via a real form submit — NOT run, deliberately: a live lead insert fires the notify chain INCLUDING the partner CC (email_routing rule). Needs operator's call: either accept one obviously-named test lead reaching the partner inbox, or verify on the next genuine lead's row (it will carry visitor/session ids if stitching works). AN-05 client-half remains unit-covered.
+- **ACCRUAL WINDOW OPEN as of 2026-06-10** — day-14 review 2026-06-24; readiness query in the gate section. Headless-pass visitor (`v_215c9e4b…`) and `s_mgrtest_prod1` noted alongside the existing test-row cleanup item.
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL, frozen — Verify lines are acceptance) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` (Part 3) · `docs/_engines/STANDARDISATION_PHASE_A_SPEC.md` (execution log: rollout preconditions, deploy gate, test-row cleanup item) · main as of Phase A close (2026-06-10).
 **Guardrails (carried from Phase A, two strengthened):** Property is READ-ONLY, copy-never-edit · one branch per cluster, commit at tested-green, post-merge CI on the MAIN ref is the close-out tick · **live-DB verification over migration-file assumptions** (the D2 lesson — every schema/view/constraint claim is checked against the deployed database before code relies on it) · **deployment is out of scope of every brief** — it exists only as the explicit operator gate below.
 
