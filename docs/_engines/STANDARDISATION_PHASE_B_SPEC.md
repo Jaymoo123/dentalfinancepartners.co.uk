@@ -13,6 +13,12 @@
 - **STOP conditions not triggered:** Property builder signatures covered (reviewedBy/reviewerCredentials as optional fields, identical output when absent); no reader-apparatus DOM changes beyond import-path rewrite; no subscriber/webhook code touched; no DB changes.
 - **Next:** GAP-2 tool platform (branch `phase-b-tool-platform`) after this PR merges to main.
 
+**GAP-8 — ACCEPTED (2026-06-10, manager verification).**
+- 127/127 tests reproduced · diff review clean (D2 deletes 1,210 lines of duplicated schema/apparatus for 254 of adapter; adopter routes are pure factory + per-site posts lib).
+- **JSON-LD byte-regression PASSED via live-vs-local diff** (live site still served the pre-GAP-8 build — used as baseline): blog post, calculator, glossary pages all BYTE-IDENTICAL structured data (3.6KB/2.9KB/0.8KB compared). The cluster's highest-stakes invariant holds.
+- **CT-04 verified** (the item left pending): every `href="#…"` anchor on the built post resolves to an element id, identical live vs local; apparatus renders from shared components; generalist's local copies deleted (source absence is the proof).
+- CT-05 note carried: `contact/page.tsx` has one pre-existing inline `"@context"` (ContactPage one-off, predates GAP-8) — cleanup candidate at next touch, not a GAP-8 finding.
+
 **OPERATOR GATE — deploy DONE (operator, 2026-06-10) + AN-01 browser pass PASSED (manager, automated, 2026-06-10).**
 - Deploy happened ahead of the browser pass (gate sequencing inverted by the operator — recorded, no harm: the pass was then run against the LIVE site, which is the stronger test). Live verification first confirmed the deploy carried GAP-1: `/api/track` live (204), old GA tag gone, prod ingest lands rows (Vercel env has the service key), first real `human_confirmed` session at 18:30 UTC.
 - **AN-01 gate executed via real browser engine** (headless system Edge, `scripts/an01_browser_pass.mjs` — reusable per site: `node scripts/an01_browser_pass.mjs <url> <prefix>`): beacons fire on interaction (1+) · ids minted under `hd_` prefix, random-shaped · **consent `denied` → 0 beacons on further interaction, live, no reload** · key cleared → beacons resume (2). ALL GREEN. The compliance-relevant mechanism is physically proven on production.
