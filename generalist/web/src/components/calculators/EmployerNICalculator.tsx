@@ -138,7 +138,7 @@ export function EmployerNICalculator() {
               className="mt-1 h-4 w-4 accent-orange-600"
             />
             <span className="text-sm text-slate-700">
-              <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£5,000 off employer NI). Requires at least two employees on the payroll, single-director-only companies do not qualify.
+              <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£10,500 off employer NI for 2025/26). Requires at least two employees on the payroll, single-director-only companies do not qualify.
             </span>
           </label>
           <label className="flex items-start gap-3">

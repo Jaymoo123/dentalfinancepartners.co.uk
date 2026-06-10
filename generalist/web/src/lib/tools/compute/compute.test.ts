@@ -9,12 +9,13 @@
  * A failing test here means the extract DIVERGED from the old component —
  * stop and report; do NOT silently fix (the old figure may itself be wrong).
  *
- * FINDINGS RECORDED HERE (see inline STALE-FIGURES NOTEs):
- *   1. take-home-pay: Plan 1/2/4 student loan thresholds are 2024/25 values.
- *   2. rd-credit: intensive threshold 40% + 27% rate (old component); uk-tax-rates
- *      records ERIS threshold at 30% + 14.5% payable (different scheme).
- *   3. employer-ni: component label reads "£5,000" for Employment Allowance but
- *      the canonical 2025/26 value (uk-tax-rates.ts) is £10,500.
+ * FINDINGS RESOLVED 2026-06-10 (user-approved post-GAP-2 correction — goldens
+ * below updated DELIBERATELY, not silently):
+ *   1. take-home-pay: Plan 1/2/4 SL thresholds now 2025/26 (26065/28470/32745).
+ *   2. rd-credit: threshold 30%; ERIS intensive branch 1.86×14.5% payable
+ *      (no CT haircut); merged RDEC branch unchanged.
+ *   3. employer-ni: page label corrected to £10,500 (compute already read the
+ *      canonical uk-tax-rates value).
  */
 
 import { describe, it, expect } from "vitest";
@@ -33,10 +34,8 @@ import { calcEmployerNIFleet } from "./employer-ni";
 const r2 = (n: number) => Math.round(n * 100) / 100;
 
 // ---------------------------------------------------------------------------
-// 1. Take-Home Pay
-//    STALE-FIGURES NOTE: plan1/2/4 thresholds below are 2024/25 values in the
-//    old component (24990/27295/31395). 2025/26 uk-tax-rates values are
-//    26065/28470/32745. The tests pass against the OLD values intentionally.
+// 1. Take-Home Pay (plan1/2/4 thresholds = 2025/26: 26065/28470/32745,
+//    corrected 2026-06-10)
 // ---------------------------------------------------------------------------
 describe("take-home-pay compute", () => {
   it("salary=45000 no pension no SL → net 35919.60", () => {
@@ -60,16 +59,16 @@ describe("take-home-pay compute", () => {
     expect(r.personalAllowance).toBe(12570);
   });
 
-  it("salary=60000 plan2 SL (old threshold 27295) → correct deductions", () => {
+  it("salary=60000 plan2 SL (2025/26 threshold 28470) → correct deductions", () => {
     // Income tax: basic(37700*0.20=7540) + higher(9730*0.40=3892) = 11432
     // NI: 37700*0.08 + 9730*0.02 = 3016 + 194.60 = 3210.60
-    // SL plan2: (60000-27295)*0.09 = 32705*0.09 = 2943.45
-    // Net = 60000 - 11432 - 3210.60 - 2943.45 = 42413.95
+    // SL plan2: (60000-28470)*0.09 = 31530*0.09 = 2837.70
+    // Net = 60000 - 11432 - 3210.60 - 2837.70 = 42519.70
     const r = calcTakeHomePay(60000, 0, "plan2");
     expect(r2(r.incomeTax)).toBe(11432);
     expect(r2(r.ni)).toBe(3210.60);
-    expect(r2(r.studentLoan)).toBe(2943.45);
-    expect(r2(r.net)).toBe(42413.95);
+    expect(r2(r.studentLoan)).toBe(2837.70);
+    expect(r2(r.net)).toBe(42519.70);
   });
 
   it("pension sacrifice reduces income-tax base but not NI base", () => {
@@ -199,14 +198,14 @@ describe("pension compute", () => {
 
 // ---------------------------------------------------------------------------
 // 4. R&D Tax Credit Estimator
-//    STALE-FIGURES NOTE: uses RD_INTENSIVE_THRESHOLD=40% and RD_INTENSIVE_RATE=27%
-//    (old component). uk-tax-rates records ERIS at 30% + 14.5% payable.
-//    These are different schemes; old component is a "directional estimate."
+//    CORRECTED 2026-06-10 (user-approved): threshold 30% (from 1 Apr 2024);
+//    intensive branch = ERIS, 1.86 × 14.5% ≈ 26.97p/£, payable (no CT haircut);
+//    standard branch = merged RDEC 20% taxable (net 15p/£), unchanged.
 // ---------------------------------------------------------------------------
 describe("rd-credit compute", () => {
-  it("default inputs (old defaults) → 20% credit, not intensive", () => {
+  it("default inputs → 20% merged-scheme credit, not intensive", () => {
     // qualifying = 120000 + 40000*0.65 + 15000 + 25000 = 186000
-    // intensity = 186000/800000 = 0.2325 < 0.40 → not intensive
+    // intensity = 186000/800000 = 0.2325 < 0.30 → not intensive
     // grossCredit = 186000*0.20 = 37200; netBenefit = 37200*0.75 = 27900
     const r = calcRDCredit(800000, 120000, 40000, 15000, 25000);
     expect(r.qualifying).toBe(186000);
@@ -217,15 +216,23 @@ describe("rd-credit compute", () => {
     expect(r.netBenefit).toBe(27900);
   });
 
-  it("R&D-intensive case (>= 40% threshold) → 27% rate", () => {
+  it("R&D-intensive case (>= 30% threshold) → ERIS effective ~26.97%, no CT haircut", () => {
     // qualifying = 100000 + 30000*0.65 + 10000 + 10000 = 139500
-    // intensity = 139500/200000 = 0.6975 >= 0.40
-    // grossCredit = 139500*0.27 = 37665; netBenefit = 37665*0.75 = 28248.75
+    // intensity = 139500/200000 = 0.6975 >= 0.30
+    // creditRate = 1.86 * 0.145 = 0.2697
+    // grossCredit = 139500*0.2697 = 37623.15; netBenefit = grossCredit (payable, not taxable)
     const r = calcRDCredit(200000, 100000, 30000, 10000, 10000);
     expect(r.isIntensive).toBe(true);
-    expect(r.creditRate).toBe(0.27);
-    expect(r2(r.grossCredit)).toBe(37665);
-    expect(r2(r.netBenefit)).toBe(28248.75);
+    expect(r.creditRate).toBeCloseTo(0.2697, 4);
+    expect(r2(r.grossCredit)).toBe(37623.15);
+    expect(r2(r.netBenefit)).toBe(37623.15);
+  });
+
+  it("intensity between 30% and 40% now qualifies (old 40% threshold excluded it)", () => {
+    // staff=35000, total=100000 → qualifying=35000, intensity=0.35
+    const r = calcRDCredit(100000, 35000, 0, 0, 0);
+    expect(r.isIntensive).toBe(true);
+    expect(r.creditRate).toBeCloseTo(0.2697, 4);
   });
 
   it("subcontractor cost haircut: only 65% is qualifying", () => {
@@ -340,8 +347,8 @@ describe("vat-scheme compute", () => {
 
 // ---------------------------------------------------------------------------
 // 7. Employer NI / Cost-to-Hire (bespoke tool — compute still tested)
-//    STALE-LABEL NOTE: EmployerNICalculator.tsx label says "£5,000 off employer NI"
-//    but uk-tax-rates.ts employmentAllowance = £10,500 for 2025/26.
+//    Label corrected to £10,500 on 2026-06-10; compute always read the
+//    canonical uk-tax-rates value.
 // ---------------------------------------------------------------------------
 describe("employer-ni compute", () => {
   const seeds = [
