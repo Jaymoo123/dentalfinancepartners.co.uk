@@ -23,6 +23,41 @@
 - Fix-commit review (manager): Property diff is exactly the approved exception #1 (4-line ignores entry, documented in-place; Sonnet also confirmed Property's ignores object was already standalone — no combined-ignores bug). Medical/Solicitors had NO flat config at all (not the predicted bug variant); Dentists-pattern configs added. Solicitors `<a>`→`<Link>` is a genuine pre-existing internal-link bug, surfaced by CI working for the first time — destination unchanged, correct fix.
 - **PF-04 deliberate-break test PASSED (local equivalent, 2026-06-10):** renamed the `submitLead` export in `packages/web-shared/lib/supabase-client.ts` → `tsc -p generalist/web` failed with TS2305 naming the missing member → reverted, green. CI runs these exact commands per site, so the net demonstrably catches a breaking shared-package change.
 
+**W4b — DONE (2026-06-10, commit on `phase-a-shared-hardening`).**
+- No STOP condition hit. Vitest 2.1.9 handles ESM + TS natively; no Babel/transform gymnastics required.
+- Delivered: `vitest` devDep in root `package.json`; `"test": "vitest run"` script + `vitest.config.ts` + exports map for `lib/niche-config`, `lib/security-headers`, `lib/frontmatter` in `packages/web-shared/package.json`; seed test `lib/supabase-client.test.ts` (6 assertions). `npm run test --workspace packages/web-shared` → green.
+- CI: `--if-present` no-ops on site jobs until W1–W3 suites land; `test-web-shared` job now runs real tests (suite grows with every W1–W3 module).
+
+**W1 — DONE (2026-06-10, commit on `phase-a-shared-hardening`).**
+- No STOP condition. Superset reconciliation found two naming differences: (a) `navigation.children` present in some sites, absent in others — added as optional array; (b) `seo.google_site_verification` (string) vs `seo.search_console_verification` (object with google/bing/yandex/naver/pinterest keys) — both kept optional in superset (no two sites use the same key with different types).
+- Delivered: `packages/web-shared/lib/niche-config.ts` — canonical `NicheConfig` interface + hand-rolled `validateNicheConfig()` using `asObj()`/`requireNonEmpty()`/`requireArray()` helpers; throws `NicheConfigError` naming exact field path (e.g. `niche.config.json: missing required field "contact.email"`). 6 unit tests (valid + 5 malformed cases each naming the exact path) — all green.
+- Adopted in all 6 non-Property sites: `*/web/src/config/niche-loader.ts` rewritten to import `validateNicheConfig` from `@accounting-network/web-shared/lib/niche-config`. Local type files `src/types/niche-config.ts` in Dentists/generalist/digital-agency deleted (0 imports confirmed).
+- Side fix: generalist/digital-agency/contractors-ir35 `layout.tsx` accessed `niche.seo.search_console_verification` without optional chaining after it became `?` in the superset type — fixed with `?.` on all access sites in those 3 files. `contractors-ir35/web/eslint.config.mjs` scaffolded (was missing, matching Medical/Solicitors pattern).
+- **PF-02 Verify PASSED:** deleted `domain` from `generalist/niche.config.json` → `npm run build --workspace generalist/web` failed with `NicheConfigError: niche.config.json: missing required field "domain"` → restored.
+- All 6 touched sites: lint 0 errors / tsc 0 errors / build green.
+
+**W2 — DONE (2026-06-10, commit on `phase-a-shared-hardening`).**
+- No STOP condition. All 5 adopting sites share GA + Supabase sources; no site-specific sources that couldn't be expressed by existing opts. Property excluded (read-only).
+- Delivered: `packages/web-shared/lib/security-headers.ts` — `buildSecurityHeaders(opts)` with full SEC-01 8-header baseline (HSTS preload, X-Frame-Options DENY, CSP, X-Content-Type-Options, Referrer-Policy, Permissions-Policy); `unsafe-eval` only when `NODE_ENV !== "production"`; `unsafe-inline` kept with SEC-02 documented-exception comment in module header; `embedPrefix` two-block pattern (used by Property, exercised by tests, no Phase A adopter uses it). 19 unit tests (baseline, HSTS, XFO, prod/dev eval difference, opts toggles, embed two-block) — all green.
+- Adopted in 5 sites: generalist, Dentists, Medical, Solicitors, digital-agency `next.config.ts` each import `buildSecurityHeaders` and return `buildSecurityHeaders({ ga: true, supabase: true })`. Solicitors preserved its `redirects()` function.
+- **SEC-01 Verify PASSED:** `buildSecurityHeaders({})` returns 8 headers including `Strict-Transport-Security` with `preload` and `X-Frame-Options: DENY`. **SEC-03 Verify PASSED:** `NODE_ENV=production` build output contains no `unsafe-eval`. SEC-02 verdict: PARTIAL (documented exception — `unsafe-inline` kept; SSG/Next.js constraint; revisit trigger noted in module).
+- All 5 touched sites: lint 0 errors / tsc 0 errors / build green.
+
+**W3 — DONE (2026-06-10, commit on `phase-a-shared-hardening`).**
+- No STOP condition. Pre-flight scan: ALL 6 corpora CLEAN (generalist 0/366, Dentists 0/204, Medical 0/73, Solicitors 0/183, digital-agency 0/306, contractors-ir35 0/0). All 6 enforcement-eligible.
+- Delivered: `packages/web-shared/lib/frontmatter.ts` — `assertFrontmatter(data, manifest, filePath)` + `STANDARD_MANIFEST` ([slug, title, date (isoDate), category, metaDescription]); throws `"<filePath>: missing required frontmatter \"<field>\""`. 5 unit tests (valid, missing field, bad date, empty string, ISO-with-time) — green. Pre-flight reports at `docs/<site>/frontmatter_preflight_2026-06.md` for all 6 sites. `scripts/frontmatter_preflight.py` (read-only scanner, no content edits).
+- Adopted in all 5 wirable sites (contractors-ir35 has 0 posts but also adopted): all 5 `*/web/src/lib/blog.ts` import `assertFrontmatter`+`STANDARD_MANIFEST` and call `assertFrontmatter` before casting frontmatter; `?? ""` fallbacks replaced with `!` assertions on required fields; `h1: fm.h1 ?? fm.title!` (non-null assertion required because TypeScript doesn't flow-narrow through the runtime throw).
+- **CT-02 Verify PASSED (generalist):** set `date: ""` in `accountant-cost-limited-company-2025-26.md` → `npm run build --workspace generalist/web` failed with `Error: C:\...\accountant-cost-limited-company-2025-26.md: missing required frontmatter "date"` → restored.
+- All 5 touched sites: lint 0 errors / tsc 0 errors.
+
+**GAP-7 FINAL SUMMARY (2026-06-10).**
+- W4b: DONE. Vitest harness live; web-shared test suite grows from seed (1 test) through W1–W3 to 32 unit tests covering validator, header builder, and frontmatter asserter.
+- W1: DONE. `NicheConfig` canonical superset + `validateNicheConfig` validator wired into all 6 non-Property sites. PF-02 build-time gate confirmed. Hand-rolled walker met error-clarity gate (no zod fallback needed).
+- W2: DONE. `buildSecurityHeaders` wired into 5 sites. SEC-01 baseline confirmed, SEC-02 documented-exception verdict PARTIAL (pre-existing constraint, documented in-module), SEC-03 (no `unsafe-eval` in production) confirmed.
+- W3: DONE. `assertFrontmatter` wired into 5 sites (all 6 corpora CLEAN → all enforcement-eligible; contractors-ir35 adopted at 0 posts). CT-02 build-time gate confirmed.
+- **Manager review items:** (1) CI green on this PR is the final acceptance tick for all four workstreams — no remote run yet at time of commit. (2) contractors-ir35 eslint config added (W1 side-effect) — confirm pattern is consistent with intent. (3) SEC-02 `unsafe-inline` documented exception: revisit when rendering model changes away from SSG. (4) Compliance item from W4a remains open: validate legitimate-interest analytics basis before GAP-1 composition rollout beyond generalist.
+- **Next:** GAP-1 analytics SDK handoff — separate brief from manager.
+
 ## Per-workstream execution handoffs (Sonnet) — W4b → W1 → W2 → W3, sequential on `phase-a-shared-hardening`
 
 Common rules for every brief: read this spec's workstream section + the cited evidence files FIRST · Property/ is READ-ONLY (no file under `Property/` may change; exceptions need manager approval BEFORE the edit) · one commit per workstream at tested-green (local lint/tsc/test/build for touched sites) · CI green on the PR is part of done · update this spec's execution log in the same commit · STOP conditions are hard stops: report back, do not improvise past them.

@@ -3,34 +3,33 @@ import path from "path";
 import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
 import { addHeadingIds } from "./markdown-utils";
+import { assertFrontmatter, STANDARD_MANIFEST } from "@accounting-network/web-shared/lib/frontmatter";
 
 const postsDirectory = path.join(process.cwd(), "content", "blog");
 
 function parsePostFile(filePath: string): BlogPost {
   const raw = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(raw);
+  // CT-02: throws naming file + field if any required frontmatter is missing.
+  assertFrontmatter(data as Record<string, unknown>, STANDARD_MANIFEST, filePath);
   const fm = data as Partial<BlogFrontmatter>;
-
-  if (!fm.slug || !fm.title) {
-    throw new Error(`Invalid blog frontmatter in ${filePath}`);
-  }
 
   const contentWithIds = addHeadingIds(content.trim());
 
   return {
-    title: fm.title,
-    slug: fm.slug,
-    date: fm.date ?? "",
+    title: fm.title!,
+    slug: fm.slug!,
+    date: fm.date!,
     updatedDate: fm.updatedDate,
     author: fm.author ?? "",
     authorSlug: fm.authorSlug,
-    category: fm.category ?? "General",
-    metaTitle: fm.metaTitle ?? fm.title,
-    metaDescription: fm.metaDescription ?? "",
+    category: fm.category!,
+    metaTitle: fm.metaTitle ?? fm.title!,
+    metaDescription: fm.metaDescription!,
     altText: fm.altText,
     image: fm.image,
     imageCredit: fm.imageCredit,
-    h1: fm.h1 ?? fm.title,
+    h1: fm.h1 ?? fm.title!,
     summary: fm.summary ?? "",
     keyTakeaways: fm.keyTakeaways,
     sourcesVerifiedAt: fm.sourcesVerifiedAt,
