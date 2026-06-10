@@ -40,7 +40,13 @@
     "./analytics/react/Clarity": "./analytics/react/Clarity.tsx",
     "./analytics/react/WebVitals": "./analytics/react/WebVitals.tsx",
     "./analytics/react/AnalyticsProvider": "./analytics/react/AnalyticsProvider.tsx",
-    "./analytics/react/useFormTracking": "./analytics/react/useFormTracking.ts"
+    "./analytics/react/useFormTracking": "./analytics/react/useFormTracking.ts",
+    "./schema": "./schema/index.ts",
+    "./content/markdown-utils": "./content/markdown-utils.ts",
+    "./content/TableOfContents": "./content/TableOfContents.tsx",
+    "./content/ReadingProgress": "./content/ReadingProgress.tsx",
+    "./content/feed": "./content/feed.ts",
+    "./content/llmsFull": "./content/llmsFull.ts"
   },
   "optionalPeerDependencies": {
     "@microsoft/clarity": ">=1",
@@ -53,7 +59,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "next": ">=14"
+    "next": ">=14",
+    "gray-matter": ">=4"
   },
   "license": "UNLICENSED"
 }

@@ -1,18 +1,18 @@
 /**
- * Composable JSON-LD schema builders for Holloway Davies.
+ * Composable JSON-LD schema builders — shared across all niche sites.
  *
- * Each builder returns a typed plain object that can be:
- *   - serialised inline via `serialize()` for `dangerouslySetInnerHTML`
- *   - rendered via the `<JsonLd data={...} />` component
- *   - composed into arrays (multi-type pages: Article + FAQPage + Breadcrumb)
+ * Every builder is parameterised via SiteSchemaOpts so no builder imports
+ * from any site's @/config/*. Callers construct SiteSchemaOpts once from
+ * their own siteConfig and pass it through.
  *
  * Pattern:
  *
- *   import { JsonLd, buildBlogPosting, buildBreadcrumb, buildFaqPage } from "@/lib/schema";
+ *   import { JsonLd, buildBlogPosting, buildBreadcrumb, buildFaqPage } from
+ *     "@accounting-network/web-shared/schema";
  *
  *   const data = [
- *     buildBreadcrumb(crumbs),
- *     buildBlogPosting(post, path),
+ *     buildBreadcrumb(crumbs, opts),
+ *     buildBlogPosting(post, path, opts, author),
  *     ...(post.faqs ? [buildFaqPage(post.faqs)!] : []),
  *   ];
  *

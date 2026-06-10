@@ -1,29 +1,25 @@
-import { siteConfig } from "@/config/site";
 import { referencedOrganization } from "./organization";
-import type { SchemaThing } from "./types";
+import type { SchemaThing, SiteSchemaOpts } from "./types";
 
 export type ServiceInput = {
   name: string;
   description: string;
-  /** Canonical URL of the service page, absolute or path-only */
   url: string;
-  /** e.g. "Tax planning", "Bookkeeping", "R&D tax credits". Free-text. */
   serviceType?: string;
-  /** "United Kingdom" or list of cities */
   areaServed?: string | string[];
-  /** Optional list of inclusions / sub-services */
   hasOfferCatalog?: { name: string; items: string[] };
-  /** Audience the service is built for */
   audience?: string;
 };
 
 /**
- * Service schema for commercial pages (e.g. /services/accounting-for-agencies,
- * /agencies/marketing-agencies, /r-and-d-credits). Always associates with
- * the canonical Organization as `provider`.
+ * Service schema for commercial pages. Always associates with the canonical
+ * Organization as `provider`.
  */
-export function buildService(input: ServiceInput): SchemaThing {
-  const url = input.url.startsWith("http") ? input.url : `${siteConfig.url}${input.url}`;
+export function buildService(
+  input: ServiceInput,
+  opts: SiteSchemaOpts,
+): SchemaThing {
+  const url = input.url.startsWith("http") ? input.url : `${opts.siteUrl}${input.url}`;
 
   const out: SchemaThing = {
     "@context": "https://schema.org",
@@ -32,15 +28,10 @@ export function buildService(input: ServiceInput): SchemaThing {
     name: input.name,
     description: input.description,
     url,
-    provider: referencedOrganization(),
+    provider: referencedOrganization(opts),
     ...(input.serviceType ? { serviceType: input.serviceType } : {}),
     ...(input.audience
-      ? {
-          audience: {
-            "@type": "Audience",
-            audienceType: input.audience,
-          },
-        }
+      ? { audience: { "@type": "Audience", audienceType: input.audience } }
       : {}),
   };
 
@@ -60,10 +51,7 @@ export function buildService(input: ServiceInput): SchemaThing {
       itemListElement: input.hasOfferCatalog.items.map((label, i) => ({
         "@type": "Offer",
         position: i + 1,
-        itemOffered: {
-          "@type": "Service",
-          name: label,
-        },
+        itemOffered: { "@type": "Service", name: label },
       })),
     };
   }

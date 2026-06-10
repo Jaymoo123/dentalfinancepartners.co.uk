@@ -1,10 +1,8 @@
-import { siteConfig } from "@/config/site";
-import type { SchemaThing } from "./types";
+import type { SchemaThing, SiteSchemaOpts } from "./types";
 
 export type HowToStep = {
   name: string;
   text: string;
-  /** Optional URL to a specific section */
   url?: string;
 };
 
@@ -21,8 +19,11 @@ export type HowToInput = {
  * HowTo schema for step-by-step pages. Useful for calculator usage guides
  * or "how to claim X" walkthroughs.
  */
-export function buildHowTo(input: HowToInput): SchemaThing {
-  const url = `${siteConfig.url}${input.path}`;
+export function buildHowTo(
+  input: HowToInput,
+  opts: SiteSchemaOpts,
+): SchemaThing {
+  const url = `${opts.siteUrl}${input.path}`;
   return {
     "@context": "https://schema.org",
     "@type": "HowTo",

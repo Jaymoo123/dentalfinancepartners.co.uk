@@ -1,3 +1,8 @@
+/**
+ * Pure HTML post-processing helpers for server-side rendered Markdown content.
+ * No site dependencies — safe to import from any site's content pipeline.
+ */
+
 export function addHeadingIds(html: string): string {
   const headingRegex = /<(h[23])>(.*?)<\/\1>/gi;
   let counter = 0;
@@ -5,12 +10,13 @@ export function addHeadingIds(html: string): string {
 
   return html.replace(headingRegex, (match, tag, content) => {
     const text = content.replace(/<[^>]*>/g, "");
-    const baseId = text
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, "")
-      .replace(/\s+/g, "-")
-      .replace(/-+/g, "-")
-      .replace(/^-|-$/g, "") || `heading-${counter++}`;
+    const baseId =
+      text
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "") || `heading-${counter++}`;
 
     let uniqueId = baseId;
     let suffix = 2;
@@ -23,7 +29,9 @@ export function addHeadingIds(html: string): string {
   });
 }
 
-export function extractHeadings(html: string): Array<{ id: string; text: string; level: number }> {
+export function extractHeadings(
+  html: string,
+): Array<{ id: string; text: string; level: number }> {
   const headingRegex = /<h([23])\s+id="([^"]+)">(.*?)<\/h\1>/gi;
   const headings: Array<{ id: string; text: string; level: number }> = [];
   let match;

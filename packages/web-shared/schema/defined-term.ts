@@ -1,23 +1,21 @@
-import { siteConfig } from "@/config/site";
-import type { SchemaThing } from "./types";
+import type { SchemaThing, SiteSchemaOpts } from "./types";
 
 export type DefinedTermInput = {
-  /** Slug of the term, used in the @id */
   slug: string;
-  /** The term being defined */
   term: string;
-  /** Short definition (1-3 sentences) */
   definition: string;
-  /** Optional subject classification, e.g. "UK tax", "Accounting" */
   inDefinedTermSet?: string;
 };
 
 /**
  * DefinedTerm schema for individual glossary entries.
  */
-export function buildDefinedTerm(input: DefinedTermInput): SchemaThing {
-  const url = `${siteConfig.url}/glossary/${input.slug}`;
-  const setUrl = `${siteConfig.url}/glossary`;
+export function buildDefinedTerm(
+  input: DefinedTermInput,
+  opts: SiteSchemaOpts,
+): SchemaThing {
+  const url = `${opts.siteUrl}/glossary/${input.slug}`;
+  const setUrl = `${opts.siteUrl}/glossary`;
   return {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
@@ -34,21 +32,23 @@ export function buildDefinedTerm(input: DefinedTermInput): SchemaThing {
  */
 export function buildDefinedTermSet(
   terms: { slug: string; term: string }[],
+  opts: SiteSchemaOpts,
+  setName: string,
+  setDescription: string,
 ): SchemaThing {
-  const url = `${siteConfig.url}/glossary`;
+  const url = `${opts.siteUrl}/glossary`;
   return {
     "@context": "https://schema.org",
     "@type": "DefinedTermSet",
     "@id": `${url}#termset`,
-    name: "Holloway Davies Glossary",
-    description:
-      "Plain-English definitions of UK business tax, finance, and accounting terms.",
+    name: setName,
+    description: setDescription,
     url,
     inLanguage: "en-GB",
     hasDefinedTerm: terms.map((t) => ({
       "@type": "DefinedTerm",
       name: t.term,
-      url: `${siteConfig.url}/glossary/${t.slug}`,
+      url: `${opts.siteUrl}/glossary/${t.slug}`,
     })),
   };
 }

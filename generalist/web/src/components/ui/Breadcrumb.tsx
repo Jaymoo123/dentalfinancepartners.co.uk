@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { focusRing } from "./layout-utils";
-import { buildBreadcrumb } from "@/lib/schema/breadcrumb";
-import { serialize } from "@/lib/schema/serialize";
+import { buildBreadcrumb, serialize } from "@/lib/schema";
 
 export type BreadcrumbItem = {
   label: string;

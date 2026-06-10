@@ -1,66 +1,8 @@
 /**
- * Local Business JSON-LD Schema Generator
- * For location-specific landing pages
+ * @deprecated Import from "@accounting-network/web-shared/schema" instead.
+ * Use buildAccountingService(input, opts) for the parameterised builder.
+ * This re-export is kept for backward compatibility with existing location
+ * page consumers (Dentists/Solicitors/Medical/Property).
  */
-
-interface LocalBusinessConfig {
-  name: string;
-  legalName: string;
-  description: string;
-  url: string;
-  logo: string;
-  email: string;
-  phone: string;
-  areaServed: string;
-  city: string;
-  organizationType: string;
-}
-
-export function buildLocalBusinessJsonLd(config: LocalBusinessConfig): string {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": config.organizationType,
-    "name": `${config.name} - ${config.city}`,
-    "legalName": config.legalName,
-    "description": config.description,
-    "url": config.url,
-    "logo": config.logo,
-    "image": config.logo,
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": config.city,
-      "addressCountry": "GB"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": config.city,
-      "containedInPlace": {
-        "@type": "Country",
-        "name": "United Kingdom"
-      }
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": config.phone,
-      "email": config.email,
-      "contactType": "customer service",
-      "areaServed": "GB",
-      "availableLanguage": ["English"]
-    },
-    "priceRange": "££",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  };
-
-  return JSON.stringify(schema);
-}
+export { buildLocalBusinessJsonLd } from "../schema/local-business";
+export type { LocalBusinessConfig } from "../schema/local-business";

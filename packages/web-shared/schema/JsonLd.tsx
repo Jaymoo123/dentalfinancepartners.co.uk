@@ -5,7 +5,7 @@ import type { SchemaThing } from "./types";
 /**
  * Drop-in React component for embedding JSON-LD.
  *
- *   <JsonLd data={buildBlogPosting(post)} />
+ *   <JsonLd data={buildBlogPosting(post, path, opts, author)} />
  *   <JsonLd data={[breadcrumb, article, faqPage]} />
  */
 export function JsonLd({ data }: { data: SchemaThing | SchemaThing[] }) {

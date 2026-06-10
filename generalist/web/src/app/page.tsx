@@ -3,7 +3,7 @@ import Link from "next/link";
 import { btnPrimary, btnSecondary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
-import { buildFaqPage } from "@/lib/schema/faq-page";
+import { buildFaqPage } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { SignupForm } from "@/components/newsletter/SignupForm";
 import { ArrowRight } from "lucide-react";
