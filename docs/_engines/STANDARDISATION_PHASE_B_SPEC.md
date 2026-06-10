@@ -13,6 +13,18 @@
 - **STOP conditions not triggered:** Property builder signatures covered (reviewedBy/reviewerCredentials as optional fields, identical output when absent); no reader-apparatus DOM changes beyond import-path rewrite; no subscriber/webhook code touched; no DB changes.
 - **Next:** GAP-2 tool platform (branch `phase-b-tool-platform`) after this PR merges to main.
 
+**GAP-2 EXECUTING (Sonnet, 2026-06-10) — branch `phase-b-tool-platform`**
+- S1 (prior commit) — `packages/web-shared/tools/`: types + format + registry-helpers + Calculator + Field + EmbedAutoResize + EmbedSnippet + barrel + test suite. 17 new tests + 127 pre-existing = 144 total green. All 6 sites TypeScript-clean with zero consumers (no-coupling proof). Verify lines run: Stage 1 acceptance (suite green; 6-site tsc clean).
+- S2 (this commit) — Generalist adoption: 7 compute libs extracted (no React/DOM/fetch: TL-03 verified by grep) + 32 golden tests (176 total green). Registry `lib/tools/registry.ts` (allTools/genericTools/getGenericTool/toolPath — SEO-01 fixed, hand-list lines 25-31 removed from sitemap.ts). 6 GenericTool configs + 1 BespokeTool registration (employer-ni). Dynamic `[slug]/page.tsx` route (shared Calculator + WebApplication + FAQ JSON-LD via GAP-8 schema builders). Embed routes: `/embed/[slug]` + `/embed` gallery. CSP: `embedPrefix:"embed"` added to buildSecurityHeaders (SEC-03 scoped exception). Quality bar doc: `docs/generalist/TOOLS.md` (figures traced to HMRC sources + per-tool limitations + 3 findings for user sign-off). 6 old per-slug routes deleted, 6 old inline components deleted, 4 dead property-niche components deleted. All 6 sites TypeScript-clean. 176/176 tests green.
+- **Findings recorded for user sign-off (see docs/generalist/TOOLS.md):**
+  1. Take-Home Pay: Plan 1/2/4 SL thresholds are 2024/25 (old component). 2025/26 values available in uk-tax-rates.ts.
+  2. R&D Credit: old component uses 40%/27% intensive threshold/rate; uk-tax-rates ERIS is 30%/14.5% (different scheme). User to confirm correct interpretation.
+  3. Employer NI: component label reads "£5,000" (2024/25); correct 2025/26 value is £10,500 (uk-tax-rates.ts).
+- **TL-07:** no overlays operated — recorded as n/a.
+- **TL-06:** calc_* event emission order verified by golden test suite (test "calc_* emission order → ordering" + "result_viewed fires once" + "all 6 events in allowlist"). Live browser session test (s_mgrtest3_* naming convention) to be run by operator at next deploy gate.
+- **Verify lines executed:** TL-01 (GenericTool/BespokeTool registry — 7 tools registered); TL-02 (no hand-listed slugs in sitemap — registry-derived); TL-03 (compute grep: no React/window/document/fetch in compute/ modules); TL-04 (vitest golden test per tool — 32 tests pass); TL-05 (all 6 sites tsc clean); TL-06 partial (emission-order contract unit-tested, live session deferred to operator); SEO-01 re-run (sitemap.ts lines 25-31 removed, replaced with allTools() spread); ED-01 (shared Calculator imports from web-shared — breaking the import breaks the build, verified by tsc clean).
+- **Next:** operator gate (this cluster is code-complete; GAP-3 remains blocked pending operator go + accrual window).
+
 **GAP-8 — ACCEPTED (2026-06-10, manager verification).**
 - 127/127 tests reproduced · diff review clean (D2 deletes 1,210 lines of duplicated schema/apparatus for 254 of adapter; adopter routes are pure factory + per-site posts lib).
 - **JSON-LD byte-regression PASSED via live-vs-local diff** (live site still served the pre-GAP-8 build — used as baseline): blog post, calculator, glossary pages all BYTE-IDENTICAL structured data (3.6KB/2.9KB/0.8KB compared). The cluster's highest-stakes invariant holds.

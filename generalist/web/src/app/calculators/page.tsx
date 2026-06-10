@@ -4,6 +4,7 @@ import { Calculator, ArrowRight } from "lucide-react";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { allTools } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
   title: `Free UK Tax Calculators for Business Owners | ${siteConfig.name}`,
@@ -18,59 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-const calculators = [
-  {
-    slug: "salary-dividend-optimiser",
-    title: "Salary & Dividend Optimiser",
-    description:
-      "Stop guessing the split. Drop your profit in and see exactly how much salary versus dividend leaves the most cash in your pocket at 2025/26 rates.",
-    available: true,
-  },
-  {
-    slug: "rd-tax-credit-estimator",
-    title: "R&D Tax Credit Estimator",
-    description:
-      "Plug in your qualifying spend and see your indicative claim under the merged scheme, plus what the R&D-intensive enhanced rate would unlock if you qualify.",
-    available: true,
-  },
-  {
-    slug: "badr-cgt-calculator",
-    title: "BADR CGT Calculator",
-    description:
-      "See your post-relief CGT on a business sale, your remaining lifetime allowance, and what the 6 April 2026 rate jump from 14% to 18% costs if you slip into the next tax year.",
-    available: true,
-  },
-  {
-    slug: "vat-scheme-comparator",
-    title: "VAT Scheme Comparator",
-    description:
-      "Most service businesses leave money on the table picking VAT schemes by instinct. Run your numbers and find out whether Flat Rate beats Standard, and whether Limited Cost Trader forces you to 16.5%.",
-    available: true,
-  },
-  {
-    slug: "pension-contribution-optimiser",
-    title: "Pension Contribution Optimiser",
-    description:
-      "For owner-managed Ltds, pension is usually the cheapest way out of retained profit. See the corporation tax saved, the net cost, and the headroom against the £60,000 annual allowance taper.",
-    available: true,
-  },
-  {
-    slug: "take-home-pay-calculator",
-    title: "Take-Home Pay Calculator",
-    description:
-      "Gross salary in, annual, monthly and weekly net out. Handles 2025/26 income tax bands, employee NI, all four student loan plans and salary-sacrifice pension contributions in one go.",
-    available: true,
-  },
-  {
-    slug: "employer-ni-calculator",
-    title: "Employer NI & Cost-to-Hire",
-    description:
-      "Hiring is never as cheap as the offer letter. See the full annual cost across your payroll with employer NI at 15%, the Employment Allowance offset, and the 3% pension contribution on qualifying earnings.",
-    available: true,
-  },
-];
-
 export default function CalculatorsIndexPage() {
+  const calculators = allTools();
+
   return (
     <>
       <section className="bg-slate-900 py-16 sm:py-20">
@@ -110,9 +61,9 @@ export default function CalculatorsIndexPage() {
                   <Calculator className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-orange-700 transition-colors">
-                  {c.title}
+                  {c.name}
                 </h2>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">{c.description}</p>
+                <p className="mt-3 text-sm text-slate-600 leading-relaxed">{c.oneLiner}</p>
                 <div className="mt-5 flex items-center text-orange-600 font-semibold text-sm">
                   Open calculator
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
