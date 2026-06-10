@@ -18,7 +18,43 @@
 
 **D1 condition (estate posture provenance) — answered:** Property's posture IS deliberate and documented in code (`lib/analytics/consent.ts`: "Decision (updated 2026-06-05): track by DEFAULT (legitimate-interest posture)", with revert path) — it is not an accident. But **no evidence exists in-repo of a legal/compliance vetting of legitimate interest as the analytics basis**, and Property is today the only site running it. Per the user's condition this is logged as an **estate-wide compliance item: validate the legitimate-interest analytics basis (PECR/UK GDPR analytics-cookie guidance) before or alongside GAP-1 composition rollout beyond generalist**. Generalist adopts the uniform posture; the item stays open on the program board, not silently inherited.
 
-**Next:** W1/W2/W3 build workstreams — paused for per-workstream execution handoff planning (Sonnet).
+**W4a — ACCEPTED (2026-06-10, verified by manager).**
+- CI run 27275869736 GREEN: all 6 site builds + web-shared + python jobs pass (runs 1–3 red, fixed by Sonnet commits `b4d7e34c`/`b376884c`/`54d921e8`).
+- Fix-commit review (manager): Property diff is exactly the approved exception #1 (4-line ignores entry, documented in-place; Sonnet also confirmed Property's ignores object was already standalone — no combined-ignores bug). Medical/Solicitors had NO flat config at all (not the predicted bug variant); Dentists-pattern configs added. Solicitors `<a>`→`<Link>` is a genuine pre-existing internal-link bug, surfaced by CI working for the first time — destination unchanged, correct fix.
+- **PF-04 deliberate-break test PASSED (local equivalent, 2026-06-10):** renamed the `submitLead` export in `packages/web-shared/lib/supabase-client.ts` → `tsc -p generalist/web` failed with TS2305 naming the missing member → reverted, green. CI runs these exact commands per site, so the net demonstrably catches a breaking shared-package change.
+
+## Per-workstream execution handoffs (Sonnet) — W4b → W1 → W2 → W3, sequential on `phase-a-shared-hardening`
+
+Common rules for every brief: read this spec's workstream section + the cited evidence files FIRST · Property/ is READ-ONLY (no file under `Property/` may change; exceptions need manager approval BEFORE the edit) · one commit per workstream at tested-green (local lint/tsc/test/build for touched sites) · CI green on the PR is part of done · update this spec's execution log in the same commit · STOP conditions are hard stops: report back, do not improvise past them.
+
+### Brief W4b — Vitest harness
+- **Build:** root devDep `vitest`; `packages/web-shared/vitest.config.ts`; `"test": "vitest run"` script in `packages/web-shared/package.json` (the CI `--if-present` step then becomes real); one seed test file (e.g. trivial spec for `lib/supabase-client.ts` payload type guards) proving the harness runs TS directly.
+- **Acceptance:** `npm run test --workspace packages/web-shared` green locally and in CI; a deliberately failing assertion fails the run (then remove it).
+- **STOP if:** vitest needs Babel/transform gymnastics with the workspace setup — report, don't hack.
+
+### Brief W1 — Config validator (`PF-02`)
+- **Pre-flight (deliverable 1):** diff all 7 sites' `NicheConfig` interfaces in `*/web/src/config/niche-loader.ts`; produce the canonical superset (required core per spec §W1; everything site-specific optional) as a short reconciliation table in the commit message or a `docs/_engines/` appendix.
+- **Build (deliverable 2):** `packages/web-shared/lib/niche-config.ts` — canonical interface + `validateNicheConfig(json: unknown): NicheConfig`, hand-rolled walker, throws one clear error naming the exact field path.
+- **Tests (deliverable 3, the ratified gate):** the five malformed-config classes — missing top-level field · missing nested field (`contact.email`) · wrong type (`navigation` as object) · empty-string required field · malformed array entry (`role_options[1]` missing `label`) — each asserting the error message names the field path. **If error clarity can't match zod here, switch to zod and say so.**
+- **Adopt (deliverable 4):** rewrite 6 loaders (Dentists, Medical, Solicitors, generalist, digital-agency, contractors-ir35) to the 3-line wrapper; delete local interfaces. NOT Property.
+- **Acceptance:** unit suite green · all 6 sites build green · PF-02 Verify executed on generalist (delete `domain` from `generalist/niche.config.json` → build fails naming the field → restore).
+- **STOP if:** two sites use the same field name with different meanings/types in a way the superset can't express — that's a data-model decision for the manager, not a coercion.
+
+### Brief W2 — Security header builder (`SEC-01/02/03`)
+- **Build:** `packages/web-shared/lib/security-headers.ts` per spec §W2 — full SEC-01 baseline; `'unsafe-eval'` emitted ONLY when `NODE_ENV !== "production"`; `'unsafe-inline'` kept with the bounding documentation IN the module header (SSG constraint; framework inline runtime + GA bootstrap; revisit trigger: rendering-model change); per-site third-party sources via opts; `embedPrefix` support reproducing Property's two-block pattern (used by no Phase A adopter, exercised by tests).
+- **Tests:** snapshot/structural suite — baseline set complete; prod vs dev CSP differ exactly by `unsafe-eval`; embed variant only when `embedPrefix` set; opts toggle their sources.
+- **Adopt:** 5 sites' `next.config.ts` (NOT Property): replace inline header blocks with the builder call, opts matching each site's current real usage (all: `ga: true, supabase: true` — verify per site before assuming).
+- **Acceptance:** suite green · 5 sites build green · runtime spot-check on generalist (`next start` + curl `/`): all SEC-01 headers present, CSP has no `unsafe-eval` · SEC-02 verdict recorded as documented-exception **partial** (never pass).
+- **STOP if:** any site's current CSP carries an extra source the opts can't express — add the opt, don't special-case in the site.
+
+### Brief W3 — Frontmatter validation (`CT-02`) — pre-flight first, enforcement GATED
+- **Build:** `packages/web-shared/lib/frontmatter.ts` — `assertFrontmatter(data, manifest, filePath)` per spec §W3, + unit suite (missing field, bad date shape, empty string, clean pass).
+- **Pre-flight (read-only):** `scripts/frontmatter_preflight.py` (or .ts) scanning all 6 sites' corpora against the proposed manifest (`slug, title, date, category, metaDescription` required); per-site violation report to `docs/<site>/frontmatter_preflight_2026-06.md`.
+- **HARD GATE:** enforcement (wiring `assertFrontmatter` into a site's `blog.ts` and deleting its silent defaults) lands ONLY for sites whose pre-flight is clean. Sites with violations: STOP after the report — backfill is a separate, manager-approved sweep (per-citation judgment rules apply). Do not "fix" content frontmatter yourself.
+- **Acceptance:** suite green · pre-flight reports committed · for each clean site adopted: CT-02 Verify (strip `date` from one post → build fails naming file+field → restore) · adopted sites build green.
+
+**Next after W1–W3:** Section 2 (GAP-1 SDK) handoff — drafted by manager after GAP-7 merges, incorporating the autoCapture import audit (2.8.1).
+
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL, frozen — Verify lines are the acceptance criteria here) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` (Part 3 clusters) · repo state as of 2026-06-10 post-Phase-0.
 **Guardrails:** Property is READ-ONLY (its code is lifted as source material, never edited in place — Property *adoption* of shared modules is a separately-approved step). Tag repo before the phase branch. Commit only at tested-green.
 **Phase 0 verified done:** EN-05 interim claim guard (`generalist .../newsletter-drip/route.ts:42-66`, advance-then-release), `/blog/stage/*` noindexed, robots/.env hygiene. GA4 id deliberately left empty — generalist stays dark until GAP-1 lands.
