@@ -13,7 +13,7 @@ export const rdCreditTool: GenericTool = {
   metaDescription:
     "Free R&D tax credit calculator for UK companies under the merged RDEC scheme. Estimates gross credit, net benefit, and whether the R&D-intensive rate applies. 2025/26.",
   intro:
-    "The 2024 merged R&D scheme gives a 20% above-the-line credit on qualifying expenditure, rising to 27% for R&D-intensive companies whose qualifying spend is 40% or more of total outgoings. Enter your spend categories and see your indicative credit and net benefit after corporation tax.",
+    "The 2024 merged R&D scheme gives a 20% above-the-line credit on qualifying expenditure. Loss-making R&D-intensive companies, where qualifying spend is 30% or more of total expenditure, can instead claim enhanced support (ERIS) worth roughly 27p per £1 of qualifying spend. Enter your spend categories and see your indicative credit and net benefit.",
   fields: [
     {
       id: "totalExpenditure",
@@ -98,7 +98,7 @@ export const rdCreditTool: GenericTool = {
     heading: "How the merged R&D scheme works",
     paragraphs: [
       "Since 1 April 2024 most UK companies use the merged scheme, which replaced both the old RDEC and the SME scheme. You claim a 20% above-the-line credit on qualifying expenditure. Because it's above-the-line, it reduces your taxable profit first — the net cash benefit after 25% corporation tax is typically around 15p per qualifying pound.",
-      "R&D-intensive companies (where qualifying R&D spend is 40% or more of total expenditure) can claim at 27% instead. The calculator tests this automatically.",
+      "Loss-making R&D-intensive companies (where qualifying R&D spend is 30% or more of total expenditure) can instead use enhanced R&D intensive support (ERIS): an 86% enhanced deduction surrendered for a 14.5% payable credit, worth roughly 27p per qualifying pound — and because the credit is payable rather than taxable, there is no corporation tax haircut. The calculator tests the intensity ratio automatically.",
     ],
   },
   faqs: [

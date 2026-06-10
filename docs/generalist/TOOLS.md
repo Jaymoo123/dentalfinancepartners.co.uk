@@ -12,7 +12,7 @@ All canonical rates (`UK_TAX_RATES` in `generalist/web/src/lib/uk-tax-rates.ts`)
 | Take-Home Pay Calculator | `lib/tools/compute/take-home-pay.ts` | Inline constants — STALE SL thresholds (see below) |
 | Employer NI & Cost-to-Hire | `lib/tools/compute/employer-ni.ts` | `uk-tax-rates.ts` |
 | Pension Contribution Optimiser | `lib/tools/compute/pension.ts` | Inline constants — all match `uk-tax-rates.ts` 2025/26 |
-| R&D Tax Credit Estimator | `lib/tools/compute/rd-credit.ts` | Inline constants — STALE intensive threshold (see below) |
+| R&D Tax Credit Estimator | `lib/tools/compute/rd-credit.ts` | Inline constants — 30% ERIS threshold, corrected 2026-06-10 (see below) |
 | BADR CGT Calculator | `lib/tools/compute/badr-cgt.ts` | Inline constants — all match `uk-tax-rates.ts` 2025/26 |
 | VAT Scheme Comparator | `lib/tools/compute/vat-scheme.ts` | Inline constants — all match `uk-tax-rates.ts` 2025/26 |
 
@@ -24,40 +24,31 @@ HMRC primary sources:
 - R&D merged scheme: https://www.gov.uk/government/publications/research-and-development-tax-relief-reform
 
 
-## Findings requiring user sign-off (GAP-2 golden-test gate)
+## Findings from the GAP-2 golden-test gate — ALL RESOLVED (user-approved 2026-06-10)
 
-### FINDING 1 — Take-Home Pay: stale student loan thresholds
+### FINDING 1 — Take-Home Pay: stale student loan thresholds — RESOLVED
 
-The old `TakeHomePayCalculator.tsx` used 2024/25 student loan thresholds. The compute lib was extracted faithfully to pass the golden test.
+Plan 1/2/4 thresholds updated to 2025/26 in `lib/tools/compute/take-home-pay.ts` (golden tests updated deliberately):
 
-| Plan | Old component | `uk-tax-rates.ts` 2025/26 | Status |
-|------|--------------|--------------------------|--------|
-| Plan 1 | 24,990 | 26,065 | **STALE** |
-| Plan 2 | 27,295 | 28,470 | **STALE** |
-| Plan 4 | 31,395 | 32,745 | **STALE** |
-| Plan 5 | 25,000 | 25,000 | OK |
-| Postgraduate | 21,000 | 21,000 | OK |
+| Plan | Old (2024/25) | Now (2025/26) |
+|------|--------------|---------------|
+| Plan 1 | 24,990 | **26,065** |
+| Plan 2 | 27,295 | **28,470** |
+| Plan 4 | 31,395 | **32,745** |
+| Plan 5 | 25,000 | 25,000 (unchanged) |
+| Postgraduate | 21,000 | 21,000 (unchanged) |
 
-**Action required:** User must confirm whether to update plan 1/2/4 thresholds to 2025/26 values in `lib/tools/compute/take-home-pay.ts`.
+Source: GOV.UK student loan repayment thresholds 2025/26 (mirrored in `uk-tax-rates.ts`).
 
-### FINDING 2 — R&D Credit Estimator: intensive threshold and rate
+### FINDING 2 — R&D Credit Estimator — RESOLVED (option 2 adopted)
 
-The old component uses a 40% intensive threshold and a 27% intensive rate. The `uk-tax-rates.ts` file records the ERIS (Enhanced R&D Intensive Support) scheme at 30% threshold and 14.5% payable credit rate — but this is a different scheme (for loss-making SMEs only).
+`lib/tools/compute/rd-credit.ts` now models: intensity threshold **30%** (accounting periods from 1 April 2024); intensive branch = **ERIS** (86% enhanced deduction × 14.5% payable credit ≈ 26.97p per qualifying £, payable so **no CT haircut**); standard branch = merged RDEC 20% taxable (net ~15p/£, unchanged). Page copy (intro, explainer, FAQ) updated to describe ERIS accurately. Directional-estimate disclaimer retained — real claims depend on loss position, PAYE cap, grant and connected-party rules.
 
-For the merged RDEC scheme, HMRC has not published a separate intensive credit rate. The old component carried a "directional estimate" disclaimer. Possible actions:
-1. Accept the current directional model (40%/27%) as-is with the existing disclaimer.
-2. Update to use the ERIS figures (30%/14.5% payable) for loss-making SMEs and 20% for profitable companies.
-3. Remove the intensive distinction and use 20% flat.
+Source: HMRC merged scheme + ERIS guidance (CIRD; gov.uk R&D tax relief reform pages).
 
-**Action required:** User must confirm the correct interpretation before the intensive branch is changed.
+### FINDING 3 — Employer NI label — RESOLVED
 
-### FINDING 3 — Employer NI component: stale label text
-
-The `EmployerNICalculator.tsx` UI label reads "£5,000 off employer NI" — the 2024/25 Employment Allowance. The canonical 2025/26 value (from `uk-tax-rates.ts`) is £10,500. The compute lib (`employer-ni.ts`) uses the correct £10,500 from `uk-tax-rates.ts`.
-
-The stale label is in `generalist/web/src/app/calculators/employer-ni-calculator/page.tsx` (the bespoke route) — specifically the label text "£5,000 off employer NI" and the related explainer paragraph text in the bespoke component itself.
-
-**Action required:** Update the bespoke EmployerNICalculator component label and any page copy that references the old £5,000 figure.
+`EmployerNICalculator.tsx` label now reads "£10,500 off employer NI for 2025/26". The compute lib always read the canonical `uk-tax-rates.ts` value; this was label-only.
 
 
 ## Per-tool limitation notes
