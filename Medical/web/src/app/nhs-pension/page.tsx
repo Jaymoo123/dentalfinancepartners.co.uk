@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { NHSPensionCalculator } from "@/components/calculators/NHSPensionCalculator";
+import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { CTASection } from "@/components/ui/CTASection";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -164,7 +164,7 @@ export default function NHSPensionPage() {
             </p>
           </div>
           <div className="max-w-5xl mx-auto">
-            <NHSPensionCalculator />
+            <CalculatorClient slug="nhs-pension-annual-allowance" />
           </div>
         </div>
       </section>
