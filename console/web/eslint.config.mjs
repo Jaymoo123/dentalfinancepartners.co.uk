@@ -10,6 +10,18 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // Global ignores: in flat config, `ignores` is project-wide only when it is
+  // the SOLE key in its own config object (the W4a lesson — without this the
+  // generated next-env.d.ts and .next/ build output get linted).
+  {
+    ignores: [
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      "build/**",
+      "next-env.d.ts",
+    ],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
