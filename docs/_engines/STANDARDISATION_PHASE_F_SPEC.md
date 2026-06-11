@@ -1,6 +1,10 @@
 # Standardisation — Phase F: Property adoption (the donor comes onto the grid)
 
-**Status:** EXECUTING — opened 2026-06-11 on user go ("let's move on to the property adoption as long as it's safe"). Safety is the design constraint: **three small clusters, each with its own branch, PR, deploy, live battery, and instant rollback point.** Property's READ-ONLY rule is hereby lifted ONLY within this phase's explicit scope; everything not named below stays untouched.
+**Status:** CLOSED 2026-06-11. All three clusters merged + deployed + live-verified same day (F1 PR #16, F2 PR #17, F3 PR #19; post-merge main CI green each). Property — the donor and revenue site — is fully on the shared machinery with 95 tests guarding it (from zero), visitor continuity intact, embeds proven live from a third-party page, and its five latent nurture defects dead by construction.
+
+**F3 DEPLOY BATTERY (manager, 2026-06-11) — ALL GREEN:** pages 200 · lead pipeline alive (notify 401) · track 204 · SEC-05 proven live (events 503 without webhook secret, send 401 without CRON_SECRET = dormant posture confirmed in prod) · subscribe validates (400 without consent) · **user-reported CTA contrast defect fixed and re-probed live** (blog-page calculator CTA was emerald-on-emerald because `.prose-blog a` outspecified `.text-white`; fixed via `:not([data-cta])` exemption; post-deploy computed colour rgb(255,255,255) on emerald). NURTURE_FROM_*/TOKEN_SECRET set in Vercel; CRON_SECRET + NURTURE_WEBHOOK_SECRET deliberately absent (parked with the estate newsletter posture).
+
+**Status history:** EXECUTING — opened 2026-06-11 on user go ("let's move on to the property adoption as long as it's safe"). Safety is the design constraint: **three small clusters, each with its own branch, PR, deploy, live battery, and instant rollback point.** Property's READ-ONLY rule is hereby lifted ONLY within this phase's explicit scope; everything not named below stays untouched.
 
 ## Execution log
 *(appended per cluster)*
