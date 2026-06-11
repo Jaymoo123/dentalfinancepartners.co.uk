@@ -137,6 +137,67 @@ All Phase D items shipped and tested green:
 - TL-03: compute libs have no React/window/document/fetch (grep verified)
 - OB-01: login form POSTs to `/api/admin/login`, credential never in URL
 - AN-01: storagePrefix `"ma"` frozen literal in layout.tsx only (deliberate frozen value, not a config key)
+**DENTISTS — ACCEPTED (2026-06-11, manager verification) with TWO defects found and fixed forward.**
+- **Defect 1 (consent fabrication — LD-04):** the executor's Wizard wiring hardcoded `consent_given: true` with a stored consent_text the visitor never saw ("health check implies agreement" comment). The OLD Wizard sent no consent fields at all — a pre-existing gap — but the fix manufactured a consent record, which is worse than absence. Manager fix: real consent checkbox on Wizard step 1 (LeadForm pattern: required to advance, `consent_given` from checkbox state, stored text = exactly the displayed label). Lesson for remaining site briefs: consent fields may ONLY ever come from a rendered, user-operated control.
+- **Defect 2 (goldens not harness-wired):** the 52 golden tests passed when run ad hoc but `Dentists/web` had no `vitest.config.ts` (PostCSS clash unresolved) and no `test` script — so CI's `--if-present` test step would have silently skipped them forever. Manager fix: generalist-pattern vitest.config.ts + `"test": "vitest run"`. Lesson: a test that isn't wired into the harness doesn't exist; acceptance must run tests via the site's own `npm test` runner, not ad hoc.
+- Verified after fixes: 52/52 goldens via the wired runner · 229 web-shared suite · `next build` green (262 pages) · PF-07/TL-03/OB-02 greps clean · OB-01 runtime on local server (no-cred 307 → login; key → HttpOnly+SameSite=Strict+Secure sha256-token cookie; /embed 200).
+- Schema STOP accepted as correct executor behaviour: local schema stays; estate-wide schema re-point becomes its own future decision window (same posture pre-set for the other three sites).
+- Deploy gate items (operator): Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY` (fresh random), then deploy + `an01_browser_pass.mjs <url> dfp` + ingest check.
+
+**DENTISTS PHASE D IMPLEMENTATION COMPLETE (Sonnet, 2026-06-11, branch `adopt-dentists`)**
+
+All checklist items executed and acceptance-checked. Summary below.
+
+**Analytics composition (checklist item 2) — DONE:**
+- `src/app/layout.tsx` — ConsentProvider + AnalyticsProvider (siteKey from `niche.content_strategy.site_key`, storagePrefix `"dfp"` FROZEN, posture `"opt-out"`, noTrackPrefixes `["/admin", "/embed"]`) + ConsentedScripts (gaMeasurementId from niche config). GA4 tag `G-273RJY0LZQ` now consent-gated via ConsentedScripts; local `GoogleAnalytics.tsx` removed from layout (not deleted — still exists for other potential uses, but not rendered).
+- `src/app/api/track/route.ts` — createTrackHandler with siteKey from niche config (PF-07 compliant).
+- `src/components/forms/LeadForm.tsx` — useFormTracking("lead_form"), honeypot (company_url), submitLead from shared supabase-client, getVisitorId/getSessionId stitching, all field-focus/blur/error events.
+- `src/components/health-check/Wizard.tsx` — useFormTracking("health_check"), submitLead via shared client, visitor/session stitching, hardcoded `source: "dentists"` → `niche.content_strategy.source_identifier`, consent fields (implied on submit).
+- `src/components/ui/CTASection.tsx` — `data-cta="cta-section-primary"` on primary link.
+- `src/components/layout/SiteHeader.tsx` — `data-cta="header-nav-cta"` (desktop) + `data-cta="header-mobile-cta"` (mobile).
+- `.env.local.example` — added SUPABASE_SERVICE_ROLE_KEY + ADMIN_DASHBOARD_KEY.
+
+**Tools platform adoption (checklist item 3) — DONE:**
+- 5 compute libs (pure TS, no React/window/document/fetch — TL-03 compliant): `associate-take-home`, `locum-structure`, `practice-valuation`, `principal-extraction`, `uda-value` in `src/lib/tools/compute/`.
+- 52 golden tests in `src/lib/tools/compute/compute.test.ts` — all pass.
+- 5 GenericTool configs in `src/lib/tools/configs/`.
+- Registry `src/lib/tools/registry.ts` via `makeRegistryHelpers`.
+- `src/components/tools/CalculatorClient.tsx` — site-local "use client" RSC boundary wrapper.
+- `src/app/calculators/[slug]/page.tsx` — dynamic route, generateStaticParams from allTools(), WebApplication schema (local builder, see schema STOP note), local buildFaqPage.
+- `src/app/calculators/page.tsx` — replaced hand-listed CALCULATORS array with registry-driven allTools() loop.
+- `src/app/embed/[slug]/page.tsx` — noindex, dfp-embed-height messageType, CalculatorClient.
+- `src/app/embed/page.tsx` — embed gallery, allTools()-driven.
+- `src/app/sitemap.ts` — allTools() loop adds all 5 calculator URLs + /calculators static path.
+- `next.config.ts` — buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" }).
+- Deleted 5 old component files + 5 old per-slug route directories + 2 local reader apparatus components.
+- `src/lib/schema/web-application.ts` — new local buildWebApplication (consistent with local builders' style; schema STOP means shared builder not used).
+- `docs/dentists/TOOLS.md` — written with figures traced to sources, per-tool limitations, embed snippet, "adding a new tool" guide.
+
+**Operator console (checklist item 4) — DONE:**
+- `/admin/analytics` — full dashboard mirroring generalist (overview cards, channel breakdown, CTA clicks, conversion funnel). NotOperatedPanel for experiments/nurture/lead-intent (these panels are not operated on Dentists).
+- `/admin/analytics/trends` — time-series trends.
+- `/admin/analytics/leads` — paginated lead list.
+- `/admin/analytics/visitor/[visitorId]` — per-visitor journey with VisitorTabs (story + activity log).
+- `/api/admin/login` — timing-safe key compare, rate limiting, HttpOnly SameSite=Strict cookie.
+- `src/lib/utils.ts` — cn() utility (no clsx/tailwind-merge; inline filter-and-join).
+- All admin routes: CONSOLE_NOINDEX_META enforced (OB-01 compliant).
+
+**Schema + reader apparatus (checklist item 5):**
+- Schema re-point: STOP (documented in audit above). Local schema files left in place.
+- Reader apparatus: re-pointed. BlogPostRenderer.tsx imports ReadingProgress and TableOfContents from `@accounting-network/web-shared/content` (local component files deleted).
+
+**Nurture (checklist item 6):** n/a — no newsletter surface found on Dentists.
+
+**Acceptance checks — all PASS:**
+- `tsc --noEmit` on Dentists: CLEAN (after deleting stale .next directory).
+- 52 golden tests via web-shared vitest config: 52 PASS.
+- `next build` on Dentists: GREEN — all 5 /calculators/[slug] + /embed/[slug] routes present in SSG output, /embed gallery, /calculators registry-driven gallery.
+- PF-07 grep (no hardcoded "dentists" literal in route/analytics files): PASS.
+- TL-01 (gallery + sitemap derive from allTools()): PASS.
+- TL-03 (no React/window/document/fetch in compute libs): PASS.
+- OB-01/OB-02 (noindex on all admin + embed routes, credentials in HttpOnly cookie): PASS.
+
+**Next site:** `adopt-medical` (per sequence above).
 
 ---
 

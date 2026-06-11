@@ -2,8 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
+import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
+import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -18,8 +21,6 @@ const cormorant = Cormorant_Garamond({
 });
 
 const siteUrl = siteConfig.url;
-
-import { niche } from "@/config/niche-loader";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -69,13 +70,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
       >
-        <PageShell>{children}</PageShell>
+        {/*
+         * AN-01 (opt-out posture): track by default under legitimate interest.
+         * Visitor can opt out via the "Do not track me" footer link.
+         * storagePrefix "dfp" FROZEN (Phase D adoption 2026-06-11).
+         * PF-07: siteKey sourced from niche config, never a literal.
+         * ConsentedScripts gates GA4 behind consent state and replaces the
+         * prior inline <GoogleAnalytics> tag (GA id: G-273RJY0LZQ).
+         */}
+        <ConsentProvider>
+          <AnalyticsProvider
+            siteKey={niche.content_strategy.site_key}
+            siteName={niche.display_name}
+            storagePrefix="dfp"
+            posture="opt-out"
+            noTrackPrefixes={["/admin", "/embed"]}
+          >
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <PageShell>{children}</PageShell>
+          </AnalyticsProvider>
+        </ConsentProvider>
       </body>
     </html>
   );
