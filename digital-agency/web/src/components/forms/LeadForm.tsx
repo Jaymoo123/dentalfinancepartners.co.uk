@@ -5,6 +5,8 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 const fieldClass =
   "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/25 transition-colors";
@@ -44,6 +46,9 @@ export function LeadForm({
     }
   }, []);
 
+  // AN-01: form lifecycle tracking — no field values captured, only field names + outcome.
+  const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } = useFormTracking("lead_form");
+
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
@@ -81,9 +86,23 @@ export function LeadForm({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
+
+    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field.
+    if (String(data.get("company_url") || "").trim()) return;
+
     const errs = validate(data);
     setFieldErrors(errs);
-    if (Object.keys(errs).length > 0) return;
+    if (Object.keys(errs).length > 0) {
+      for (const [field] of Object.entries(errs)) {
+        const kind =
+          field === "email" ? "invalid_email"
+          : field === "phone" ? "invalid_phone"
+          : field === "message" ? "too_short"
+          : "required";
+        onError(field, kind);
+      }
+      return;
+    }
 
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -94,6 +113,14 @@ export function LeadForm({
     }
 
     setStatus("loading");
+
+    // AN-01: emit form_submit with count of completed fields.
+    const completedCount =
+      (["fullName", "email", "phone", "role", "message"] as const)
+        .filter((f) => String(data.get(f) || "").trim()).length + (consent ? 1 : 0);
+    trackFormSubmit(completedCount);
+
+    // LD-05: stitch visitor + session ids so each lead row links to its analytics events.
     const payload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
@@ -106,6 +133,8 @@ export function LeadForm({
       consent_given: consent,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
+      visitor_id: getVisitorId() ?? undefined,
+      session_id: getSessionId() ?? undefined,
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);
@@ -116,19 +145,9 @@ export function LeadForm({
       return;
     }
 
-    // Track conversion in Google Analytics
-    if (typeof window !== "undefined" && "gtag" in window) {
-      const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
-      if (gtag) {
-        gtag("event", "generate_lead", {
-          event_category: "engagement",
-          event_label: `${niche.niche_id}_${payload.role}`,
-          value: 1,
-        });
-      }
-    }
-
     setStatus("success");
+    // AN-01: fire first-party lead event (replaces direct gtag conversion call).
+    onLead({ role: payload.role });
     form.reset();
     setConsent(false);
 
@@ -141,7 +160,12 @@ export function LeadForm({
 
   return (
     <form onSubmit={onSubmit} className="space-y-5" noValidate aria-busy={status === "loading"}>
-      <input type="hidden" name="sourceUrl" value={sourceUrl} />
+      <input type="hidden" name="sourceUrl" value={sourceUrl} readOnly />
+      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
+        <label htmlFor="company_url">Company website (leave blank)</label>
+        <input id="company_url" type="text" name="company_url" tabIndex={-1} autoComplete="off" />
+      </div>
 
       <div>
         <label htmlFor="role" className="block text-sm font-semibold text-slate-900">
@@ -155,6 +179,8 @@ export function LeadForm({
           className={fieldClass}
           aria-invalid={!!fieldErrors.role}
           aria-describedby={fieldErrors.role ? "role-error" : undefined}
+          onFocus={() => onFieldFocus("role")}
+          onBlur={(e) => onFieldBlur("role", !!e.target.value)}
         >
           <option value="">Select...</option>
           {niche.lead_form.role_options.map((opt) => (
@@ -185,6 +211,8 @@ export function LeadForm({
           className={fieldClass}
           aria-invalid={!!fieldErrors.fullName}
           aria-describedby={fieldErrors.fullName ? "fullName-error" : undefined}
+          onFocus={() => onFieldFocus("fullName")}
+          onBlur={(e) => onFieldBlur("fullName", !!e.target.value)}
         />
         {fieldErrors.fullName && (
           <p id="fullName-error" className="mt-1.5 text-xs font-medium text-red-600">
@@ -209,6 +237,8 @@ export function LeadForm({
             className={fieldClass}
             aria-invalid={!!fieldErrors.email}
             aria-describedby={fieldErrors.email ? "email-error" : undefined}
+            onFocus={() => onFieldFocus("email")}
+            onBlur={(e) => onFieldBlur("email", !!e.target.value, e.target.value.length)}
           />
           {fieldErrors.email && (
             <p id="email-error" className="mt-1.5 text-xs font-medium text-red-600">
@@ -232,6 +262,8 @@ export function LeadForm({
             className={fieldClass}
             aria-invalid={!!fieldErrors.phone}
             aria-describedby={fieldErrors.phone ? "phone-error" : undefined}
+            onFocus={() => onFieldFocus("phone")}
+            onBlur={(e) => onFieldBlur("phone", !!e.target.value)}
           />
           {fieldErrors.phone && (
             <p id="phone-error" className="mt-1.5 text-xs font-medium text-red-600">
@@ -254,6 +286,8 @@ export function LeadForm({
           className={fieldClass}
           aria-invalid={!!fieldErrors.message}
           aria-describedby={fieldErrors.message ? "message-error" : undefined}
+          onFocus={() => onFieldFocus("message")}
+          onBlur={(e) => onFieldBlur("message", !!e.target.value)}
         />
         {fieldErrors.message && (
           <p id="message-error" className="mt-1.5 text-xs font-medium text-red-600">

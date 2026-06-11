@@ -3,6 +3,9 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
+import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
+import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -80,7 +83,27 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
-        <PageShell>{children}</PageShell>
+        {/*
+         * AN-01 (opt-out posture): track by default under legitimate interest.
+         * Visitor can opt out via the "Do not track me" footer link.
+         * GA4 tag retained alongside first-party analytics per Phase D spec
+         * (keep-or-drop-GA4 is a separate later call — do not remove GA4 here).
+         * SEC-08: analytics writes flow through /api/track (server-side
+         * service-role only); ConsentProvider guards client-side consent state.
+         * storagePrefix "aff" is FROZEN at adoption per Phase D frozen table.
+         */}
+        <ConsentProvider>
+          <AnalyticsProvider
+            siteKey={niche.content_strategy.site_key}
+            siteName={niche.display_name}
+            storagePrefix="aff"
+            posture="opt-out"
+            noTrackPrefixes={["/admin", "/embed"]}
+          >
+            <ConsentedScripts />
+            <PageShell>{children}</PageShell>
+          </AnalyticsProvider>
+        </ConsentProvider>
       </body>
     </html>
   );

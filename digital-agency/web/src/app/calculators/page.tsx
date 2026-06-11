@@ -1,14 +1,22 @@
+/**
+ * Calculators gallery page.
+ *
+ * TL-01: derives entirely from allTools() — no hand-listed arrays.
+ * SEO-01: adding a new tool to the registry automatically surfaces it here
+ * and in the sitemap.
+ */
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Calculator, ArrowRight } from "lucide-react";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { allTools } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
   title: `Free Calculators for Agency Founders | ${siteConfig.name}`,
   description:
-    "Free tax and finance calculators for UK agency founders. Salary vs dividend optimiser using 2025/26 rates. Built by ICAEW qualified accountants.",
+    "Free tax and finance calculators for UK agency founders. Salary vs dividend, R&D credits, agency valuation, BADR CGT and more. 2025/26 rates. No sign-up.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
     title: "Free Calculators for Agency Founders",
@@ -18,66 +26,9 @@ export const metadata: Metadata = {
   },
 };
 
-const calculators = [
-  {
-    slug: "salary-dividend-optimiser",
-    title: "Salary & Dividend Optimiser",
-    description:
-      "Find the most tax-efficient mix of salary and dividends for a UK limited company agency director. Uses 2025/26 rates and thresholds.",
-    available: true,
-  },
-  {
-    slug: "rd-tax-credit-estimator",
-    title: "R&D Tax Credit Estimator",
-    description:
-      "Directional estimate of your R&D tax credit under HMRC's post-April 2023 merged scheme, including the R&D-intensive enhanced rate.",
-    available: true,
-  },
-  {
-    slug: "agency-valuation",
-    title: "Agency Valuation Calculator",
-    description:
-      "EBITDA × multiple model with adjustments for retainer revenue, client concentration and founder dependency. What is your agency worth?",
-    available: true,
-  },
-  {
-    slug: "badr-cgt-calculator",
-    title: "BADR CGT Calculator",
-    description:
-      "Work out your CGT bill on an agency sale under Business Asset Disposal Relief. Models the 2025/26 14% rate and 2026/27 18% rate.",
-    available: true,
-  },
-  {
-    slug: "vat-scheme-comparator",
-    title: "VAT Scheme Comparator",
-    description:
-      "Compare Standard VAT against the Flat Rate Scheme. Includes the Limited Cost Trader test that catches most agencies out.",
-    available: true,
-  },
-  {
-    slug: "pension-contribution-optimiser",
-    title: "Pension Contribution Optimiser",
-    description:
-      "Model employer pension contributions from your limited company. Corp tax saving, real cost, and the advantage over taking it as a dividend.",
-    available: true,
-  },
-  {
-    slug: "take-home-pay-calculator",
-    title: "Take-Home Pay Calculator",
-    description:
-      "Standard UK PAYE salary calculator. 2025/26 income tax, NI, student loan plans and salary-sacrifice pension. Annual, monthly and weekly net.",
-    available: true,
-  },
-  {
-    slug: "employer-ni-calculator",
-    title: "Employer NI & Cost-to-Hire",
-    description:
-      "Total annual cost of your agency team. Employer NI at 13.8%, Employment Allowance and minimum auto-enrolment pension across multiple roles.",
-    available: true,
-  },
-];
-
 export default function CalculatorsIndexPage() {
+  const tools = allTools();
+
   return (
     <>
       <section className="bg-slate-900 py-16 sm:py-20">
@@ -107,19 +58,20 @@ export default function CalculatorsIndexPage() {
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-6xl mx-auto grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {calculators.map((c) => (
+            {tools.map((t) => (
               <Link
-                key={c.slug}
-                href={`/calculators/${c.slug}`}
+                key={t.slug}
+                href={`/calculators/${t.slug}`}
+                data-cta={`calculator-gallery-${t.slug}`}
                 className="group block bg-slate-50 border border-slate-200 p-6 sm:p-8 hover:bg-white hover:border-indigo-600 hover:shadow-md transition-all"
               >
                 <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-indigo-500 to-indigo-700 shadow-sm">
                   <Calculator className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">
-                  {c.title}
+                  {t.name}
                 </h2>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">{c.description}</p>
+                <p className="mt-3 text-sm text-slate-600 leading-relaxed">{t.oneLiner}</p>
                 <div className="mt-5 flex items-center text-indigo-600 font-semibold text-sm">
                   Open calculator
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

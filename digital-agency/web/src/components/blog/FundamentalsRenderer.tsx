@@ -6,8 +6,8 @@ import { buildArticleJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
-import { TableOfContents } from "@/components/blog/TableOfContents";
-import { ReadingProgress } from "@/components/blog/ReadingProgress";
+import { TableOfContents } from "@accounting-network/web-shared/content/TableOfContents";
+import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 

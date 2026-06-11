@@ -7,6 +7,7 @@ import { GLOSSARY } from "@/app/glossary/[slug]/data";
 import { STORIES } from "@/app/founder-stories/[slug]/data";
 import { GUIDES } from "@/app/guides/[slug]/data";
 import { TEAM } from "@/app/team/[slug]/data";
+import { allTools } from "@/lib/tools/registry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -53,14 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/fundamentals",
     "/calculators",
-    "/calculators/salary-dividend-optimiser",
-    "/calculators/take-home-pay-calculator",
-    "/calculators/employer-ni-calculator",
-    "/calculators/pension-contribution-optimiser",
-    "/calculators/rd-tax-credit-estimator",
-    "/calculators/agency-valuation",
-    "/calculators/badr-cgt-calculator",
-    "/calculators/vat-scheme-comparator",
     "/locations",
     "/glossary",
     "/founder-stories",
@@ -91,6 +84,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: hreflang(url),
     };
   });
+
+  // TL-01: tool pages derived from registry — no hard-listed slugs.
+  for (const t of allTools()) {
+    const url = `${base}/calculators/${t.slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.75,
+      alternates: hreflang(url),
+    });
+  }
 
   const categories = getAllCategories();
   for (const cat of categories) {
