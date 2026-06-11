@@ -91,12 +91,23 @@ SELECT
   END                                                 AS status,
   -- consent: treat confirmation as consent given. confirmed subscribers
   -- explicitly clicked the opt-in link, so consent_given = true is correct.
+  -- (Manager review 2026-06-11: consent_text must describe what actually
+  -- happened — a pending subscriber never confirmed, so the text must not
+  -- claim confirmation. Status-aware text below.)
   (ns.status = 'confirmed')                           AS consent_given,
-  'Confirmed subscription to The Director''s Brief newsletter at hollowaydavies.co.uk.'
-                                                      AS consent_text,
+  CASE WHEN ns.status = 'confirmed' THEN
+    'Confirmed subscription to The Director''s Brief newsletter at hollowaydavies.co.uk.'
+  ELSE
+    'Requested subscription to The Director''s Brief newsletter at hollowaydavies.co.uk; double opt-in confirmation pending at migration time (legacy newsletter_subscribers row, migrated 2026-06-11).'
+  END                                                 AS consent_text,
   COALESCE(ns.confirmed_at, ns.subscribed_at)         AS consent_at,
   ns.confirmed_at                                     AS confirmed_at,
-  ns.agency_type                                      AS entry_topic,
+  -- entry_topic: agency_type when present, else the signup page slug from
+  -- source_url (manager review: preserves the only otherwise-lost signal on
+  -- the live row — the blog post the exit-intent fired on).
+  COALESCE(ns.agency_type,
+           NULLIF(regexp_replace(ns.source_url, '^.*/', ''), ''))
+                                                      AS entry_topic,
   ns.source                                           AS source,
   ns.subscribed_at                                    AS created_at,
   now()                                               AS updated_at

@@ -13,6 +13,14 @@
 
 **GAP-6 — DECISION RECORDED (user, 2026-06-11): option (a), documentation-only.** "For GAP-6 just document it." No factory-lift (that half touches Property files — stays behind Property's READ-ONLY rule), no consumer move. Deliverable: `docs/_engines/CENTRAL_LEAD_PIPELINE.md` naming the dependency, routes, env vars, blast radius, and the re-point path if (b) is ever chosen. LD-07 note resolved as documented-explicit; LD-08 per-site enrichment policy unblocked.
 
+**GAP-5 — ACCEPTED (2026-06-11, manager verification).**
+- 229/229 tests reproduced · generalist `next build` re-run by manager: green, all 5 nurture routes dynamic · claim-before-send spot-checked in source (`onConflict subscriber_id,sequence,step` + `ignoreDuplicates`, empty-claim → duplicate skip, release-on-failure) · EN-04 gate spot-checked (`cronArmed` short-circuit, zero sends unarmed).
+- **PF-07/EN-06 greps re-run independently:** zero hardcoded site-key or site-URL literals in engine or generalist routes (one doc-comment example in config.ts, not code).
+- **Schema migration `20260612000001` applied to prod** (confirmed_at + status CHECK gains 'pending'; table was empty so the CHECK swap was zero-risk). Recorded in schema_migrations.
+- **Data migration `20260612000002` reviewed, AMENDED, applied:** manager pre-flight found the live row's flagged fields all NULL (resend_contact_id, metadata, agency_type — every partial-loss concern moot). Two accuracy amendments before apply: (1) consent_text is status-aware — the pending subscriber's row must not claim a confirmation that never happened (LD-09 is about accurate consent records); (2) entry_topic falls back to the source_url slug, preserving the only otherwise-lost signal. Verified landed: 1 row, status pending, consent_given false, entry_topic `rti-submission-zero-salary-director`, nurture_state step 0 paused, next_send_at NULL. ON CONFLICT target `(site_key, lower(email))` confirmed against the live unique index before apply.
+- **Probe row deleted** from `newsletter_subscribers` (legacy tables retained read-only per constraint; their writer code is deleted in the re-point commit — dedup proof held).
+- **Operator notes:** the migrated subscriber is pending and was never sent a confirm link by the old (dormant) engine — if/when the engine is armed, the operator decides whether to send a fresh confirmation; engine stays DORMANT (no CRON_SECRET on generalist); before any deploy, `NURTURE_FROM_EMAIL`/`NURTURE_FROM_NAME`/`NURTURE_REPLY_TO` + `NURTURE_WEBHOOK_SECRET` need Vercel env values and the Resend webhook URL re-points to `/api/nurture/events`.
+
 ### GAP-5 execution — 2026-06-12
 
 **Executor:** Claude Sonnet 4.6 (phase-c-nurture branch, from spec commit 0a628e94)
