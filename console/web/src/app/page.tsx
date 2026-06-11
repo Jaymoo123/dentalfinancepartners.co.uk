@@ -214,7 +214,7 @@ export default async function EstatePage() {
         <p className="mt-1 text-xs text-slate-500">
           All sites combined. Stages are sequential subsets.
         </p>
-        <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
             <tbody>
               {[
