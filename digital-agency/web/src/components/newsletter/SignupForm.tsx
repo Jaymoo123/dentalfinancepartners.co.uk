@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { AGENCY_NEWSLETTER_CONSENT_TEXT } from "@/config/nurture-consent";
 
 type Variant = "card" | "inline" | "minimal";
 
@@ -35,10 +37,20 @@ export function SignupForm({
 }: Props) {
   const [email, setEmail] = useState("");
   const [agencyType, setAgencyType] = useState("");
+  // LD-09: marketing consent is its own user-operated checkbox. The stored
+  // consent_text is exactly the label rendered next to it — never inferred,
+  // never hardcoded-true.
+  const [consent, setConsent] = useState(false);
   // Honeypot, humans never fill this; bots typically do. Filled => silent reject.
   const [website, setWebsite] = useState("");
   const [state, setState] = useState<"idle" | "submitting" | "ok" | "err">("idle");
   const [error, setError] = useState<string | null>(null);
+  const [mode, setMode] = useState<"confirm-required" | "recorded" | null>(null);
+
+  // AN-05: emit subscribe_view once when the form mounts (impression-level signal)
+  useEffect(() => {
+    track("subscribe_view", { source });
+  }, [source]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -48,26 +60,36 @@ export function SignupForm({
       setState("ok");
       return;
     }
+    if (!consent) {
+      setState("err");
+      setError("Please tick the consent box so we can email you the Tax Brief.");
+      return;
+    }
     setState("submitting");
     setError(null);
     try {
-      const res = await fetch("/api/newsletter/subscribe", {
+      const res = await fetch("/api/nurture/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
-          agencyType: agencyType || undefined,
+          consent,
+          consent_text: AGENCY_NEWSLETTER_CONSENT_TEXT,
+          topic: agencyType || undefined,
           source,
-          sourceUrl: typeof window !== "undefined" ? window.location.href : undefined,
         }),
       });
       if (!res.ok) {
         const j = await res.json().catch(() => ({}));
         throw new Error(j?.error || "Subscription failed");
       }
+      const j = await res.json().catch(() => ({}));
+      setMode(j?.mode === "confirm-required" ? "confirm-required" : "recorded");
+      track("subscribe_submitted", { source });
       setState("ok");
       setEmail("");
       setAgencyType("");
+      setConsent(false);
     } catch (err) {
       setState("err");
       setError(err instanceof Error ? err.message : "Something went wrong");
@@ -82,10 +104,15 @@ export function SignupForm({
         : "";
 
   if (state === "ok") {
+    const headline = mode === "recorded" ? "You're on the list." : "Thanks. Almost done.";
+    const bodyText =
+      mode === "recorded"
+        ? "We'll email you when the next edition goes out."
+        : successMessage;
     return (
       <div className={containerClass} role="status" aria-live="polite">
-        <p className="font-semibold text-slate-900">Thanks. Almost done.</p>
-        <p className="mt-1 text-sm text-slate-700">{successMessage}</p>
+        <p className="font-semibold text-slate-900">{headline}</p>
+        <p className="mt-1 text-sm text-slate-700">{bodyText}</p>
       </div>
     );
   }
@@ -153,6 +180,22 @@ export function SignupForm({
           {state === "submitting" ? "Subscribing…" : ctaLabel}
         </button>
       </div>
+      {/* LD-09: required, user-operated marketing-consent checkbox. The label
+          text below IS the stored consent_text — keep them identical. */}
+      <label
+        htmlFor={`newsletter-consent-${source}`}
+        className="mt-3 flex items-start gap-2 text-xs text-slate-600"
+      >
+        <input
+          id={`newsletter-consent-${source}`}
+          type="checkbox"
+          required
+          checked={consent}
+          onChange={(e) => setConsent(e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+        />
+        <span>{AGENCY_NEWSLETTER_CONSENT_TEXT}</span>
+      </label>
       {state === "err" && (
         <p className="mt-2 text-sm text-red-600" role="alert">
           {error}

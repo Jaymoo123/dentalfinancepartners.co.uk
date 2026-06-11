@@ -9,6 +9,44 @@
 ## Execution log
 *(appended per site, same convention as Phases A/B/C)*
 
+**AGENCY — MID-FLIGHT SCOPE CORRECTION ACKNOWLEDGED + NEWSLETTER RE-POINT COMPLETE (Sonnet, 2026-06-11, branch `adopt-agency`).**
+
+Manager relay received mid-adoption: live Vercel env evidence (RESEND_API_KEY/FROM_EMAIL/FROM_NAME/REPLY_TO, RESEND_WEBHOOK_SECRET, RESEND_AUDIENCE_ID, NEWSLETTER_TOKEN_SECRET, CRON_SECRET all set) contradicts the brief's "likely NO newsletter" assumption — digital-agency runs the lineage-PARENT newsletter fork, ARMED live. Scope revised from "record n/a" to the full GAP-5 adoption pattern. Executed:
+
+**1. Surface audit (recorded):**
+- API routes (old fork): `api/newsletter/subscribe`, `api/newsletter/confirm/[token]`, `api/newsletter/unsubscribe/[token]` (GET+POST RFC 8058), `api/resend/webhook` (Svix-verified, wrote bounced/complained to `newsletter_subscribers`), `api/cron/newsletter-drip` (Bearer CRON_SECRET, daily).
+- Libs: `lib/newsletter/subscribers.ts` (REST against legacy `newsletter_subscribers` — keyless, no site column, no consent columns), `lib/newsletter/tokens.ts` (HMAC tokens, NEWSLETTER_TOKEN_SECRET), `lib/resend.ts` (RESEND_FROM_* identity WITH hardcoded fallbacks — EN-06 anti-pattern; also serves health-check emails, so kept for that).
+- Emails: `emails/ConfirmEmail.tsx`, `emails/WelcomeEmail.tsx`, `emails/content/welcome-series.ts` (5-step drip: days 0/2/5/9/14, "James, Agency Founder Finance"), `EmailLayout.tsx` (shared with health-check — kept).
+- Signup surfaces: `components/newsletter/SignupForm.tsx` (used by ExitIntentModal, InlinePrompt, StickyCard, SiteFooter, PageShell, /newsletter page, homepage, BlogPostRenderer). **LD-09 violation found: no consent checkbox, no consent fields on the payload.**
+- Cron wiring: `vercel.json` cron `/api/cron/newsletter-drip` @ `0 7 * * *`.
+- Pages: `/newsletter`, `/newsletter/confirmed`, `/newsletter/unsubscribed` (kept — same redirect contract + error reasons as the shared engine).
+
+**2. EN-05 DEFECT CONFIRMED in the old fork (noted per relay):** both the confirm route (welcome send → separate `advanceWelcomeStep`) and the drip cron (`emails.send` THEN advance) were send-then-advance — a failed advance after a successful send re-sent the same step next run (double-email). Agency's copy was NEVER interim-patched (unlike generalist's Phase 0 patch). The shared engine's claim-before-send (`nurture_sends` unique-claim, release-on-provider-failure) removes the class.
+
+**3. Re-point executed (GAP-5 pattern, mirroring generalist):** 5 routes `api/nurture/{subscribe, confirm/[token], unsubscribe, send, events}`; `src/config/nurture.ts` (siteKey from `niche.content_strategy.site_key` — PF-07; sequence `agency_welcome`; 5 steps carried VERBATIM from the old welcome-series copy; old cumulative 0/2/5/9/14-day cadence preserved as after-previous-step delayDays 0/2/3/4/5); `src/config/nurture-consent.ts` (single consent-text source shared by form + config); `src/lib/nurture-provider.ts`. Old fork files deleted in the same commit (dedup proof). `vercel.json` cron re-pointed to `/api/nurture/send` (schedule kept). `robots.ts` disallow `/api/newsletter/` → `/api/nurture/`. `getAudienceId()` removed from `lib/resend.ts` (shared engine does not manage Resend Audiences; RESEND_AUDIENCE_ID retired). Drip "preview" (preheader) text is the one content field with no NurtureStep equivalent — dropped, recorded here.
+
+**4. LD-09 fix:** SignupForm now renders a real, required, user-operated marketing-consent checkbox in ALL variants; stored `consent_text` = exactly the rendered label (one constant, `nurture-consent.ts`); `consent: true` only from checkbox state; shared engine rejects `consent !== true` (400). Also added AN-05 `subscribe_view`/`subscribe_submitted` events (generalist parity). NOTE for manager: generalist's own SignupForm sends `consent: true` without a rendered checkbox (its consent_text is not displayed to the visitor) — agency now exceeds it; generalist may want the same checkbox back-port.
+
+**5. ENV MAPPING (manager handles actual env changes; what the new code reads):**
+| Old fork env (live on Vercel) | Shared engine env | Note |
+|---|---|---|
+| RESEND_API_KEY | RESEND_API_KEY | unchanged; also still used by health-check emails |
+| RESEND_FROM_EMAIL | NURTURE_FROM_EMAIL | RESEND_FROM_* stays in service for health-check delivery (lib/resend.ts) |
+| RESEND_FROM_NAME | NURTURE_FROM_NAME | as above |
+| RESEND_REPLY_TO | NURTURE_REPLY_TO | as above |
+| RESEND_WEBHOOK_SECRET | NURTURE_WEBHOOK_SECRET | Resend dashboard endpoint must be re-pointed to `/api/nurture/events` (new whsec_) |
+| NEWSLETTER_TOKEN_SECRET | NURTURE_TOKEN_SECRET | rotation invalidates in-flight confirm/unsubscribe links minted by the old fork |
+| RESEND_AUDIENCE_ID | (retired) | shared engine does not manage Resend Audiences/Contacts |
+| CRON_SECRET | CRON_SECRET | same name — THE arming switch (see below) |
+
+**6. ARMING POSTURE (operator gate, NOT decided in code):** composition is posture-neutral; the engine reads CRON_SECRET at runtime (EN-04). Agency is currently armed-live on the old fork. At deploy the manager/operator decides: carry CRON_SECRET over (stays armed — cron sends due steps) or withhold it (goes dormant — opt-ins recorded, `/api/nurture/send` 401s, zero emails). EN-06 also requires NURTURE_FROM_EMAIL/NAME/REPLY_TO set or every nurture route 503s.
+
+**7. Data migration:** `supabase/migrations/20260612000003_agency_newsletter_to_subscribers_data_migration.sql` WRITTEN, NOT RUN — modelled on 20260612000002 incl. the status-aware consent_text amendment; site_key 'agency', sequence 'agency_welcome', agency_type→entry_topic, welcome_step_sent→nurture_state mapping. Live `newsletter_subscribers` holds ZERO agency rows (manager-verified) so the file is a no-op guard for the record; header documents the discriminator caveat (legacy table is shared with generalist and has no site column; agency rows identified by source_url domain) and the ordering interaction with the generalist migration (which claims ALL non-probe rows).
+
+**Acceptance on this scope:** `tsc --noEmit` clean (after stale-.next purge — the known lesson) · 28/28 goldens via the site's wired runner · `next build` green, all 5 `/api/nurture/*` routes in output, zero references to deleted fork modules (grep) · PF-07 grep clean on nurture code (site key only from niche config) · old fork deleted in the same commit as the re-point.
+
+---
+
 **DENTISTS AUDIT (Sonnet, 2026-06-11, branch `adopt-dentists`) — first log entry, pre-implementation.**
 
 **Calculator inventory (5 tools, all site-specific dental calculators):**

@@ -5,7 +5,7 @@
   "framework": "nextjs",
   "crons": [
     {
-      "path": "/api/cron/newsletter-drip",
+      "path": "/api/nurture/send",
       "schedule": "0 7 * * *"
     }
   ]
