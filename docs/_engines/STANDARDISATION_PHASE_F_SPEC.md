@@ -157,10 +157,85 @@ All callers of `setActiveExperiment` re-pointed from local `@/lib/experiments/ac
 - Tool pages keep LOCAL schema builders (WebApplication JSON-LD byte-stable); embed routes keep the `ptp` message prefix their existing embed consumers expect (embeds are deployed on third-party pages — the resize message contract is FROZEN; breaking it breaks live embeds silently: treat as a STOP surface).
 - TL-01/02/03/05/06 verify lines re-run on Property.
 
-### F3 — nurture re-point *(branch `property-adopt-3`, after F2 merges + deploys clean)*
-- `api/subscribe` + `api/nurture/*` + `lib/nurture/*` → shared engine composed with Property's config (its sequence content carried verbatim; UTM/from-identity from env). Fixes by construction: PF-07 literal, EN-06 hardcoded fallbacks, SEC-05 plain `===`.
-- Stays DORMANT: no CRON_SECRET (current state preserved). Env before deploy: NURTURE_FROM_*/REPLY_TO (Property identity), fresh NURTURE_TOKEN_SECRET; NURTURE_WEBHOOK_SECRET unset (events 503 per SEC-05 — same parked posture as agency; Resend re-point is the same parked user item).
-- 0 subscribers → no data migration.
+### F3 — nurture re-point — COMPLETE 2026-06-11 (branch `property-adopt-3`)
+
+**Executor:** Claude Sonnet (claude-sonnet-4-6). All items executed + acceptance-checked green.
+
+**Audit findings (committed as this log entry):**
+
+1. **Routes found:** `api/subscribe` (subscribe), `api/nurture/send` (cron), `api/nurture/events` (webhook), `api/unsubscribe` (old UUID-token unsubscribe). Missing from the engine standard: `api/nurture/subscribe`, `api/nurture/confirm/[token]`, `api/nurture/unsubscribe`.
+2. **PF-07:** `const SITE_KEY = "property"` literal in `api/subscribe/route.ts` line 21. Eliminated.
+3. **EN-06:** `NURTURE_FROM_NAME` and `NURTURE_FROM_EMAIL` had hardcoded fallback strings in `lib/nurture/send.ts`. Eliminated. `requireEnv` throws if absent.
+4. **SEC-05 (events):** Old `api/nurture/events` used plain `=== secret` comparison, no Svix. Replaced with `verifyResendWebhook` (timing-safe, replay-protected).
+5. **SEC-05 (send):** Old `api/nurture/send` plain `=== secret`. Replaced with `timingSafeEqual` + padded buffers.
+6. **SEC-05 (unsubscribe):** Old `api/unsubscribe` used raw UUID token (no HMAC, no expiry). Replaced with HMAC-signed token via `verifyNurtureToken`.
+7. **LD-09 FOUND AND FIXED:** `CONSENT_TEXT` in SubscribeForm said "I understand these are general information..." but the visible label rendered "These are general information... See our Privacy Policy." (word difference + missing Privacy Policy clause). Fixed: `CONSENT_TEXT` now byte-identical to the rendered label. `defaultConsentText` in config matches too. The LD-09 test catches any future drift.
+8. **vercel.json:** Already pointed at `/api/nurture/send`. No change needed.
+
+**Sequence mapping (old delayDays -> engine after-previous-step semantics):**
+| Step | Key | Old cumulative day | delayDays (after prev) |
+|------|-----|--------------------|------------------------|
+| 0 | welcome | 0 | 0 |
+| 1 | section24 | 3 | 3 |
+| 2 | incorporation | 8 | 5 |
+| 3 | cgt | 14 | 6 |
+| 4 | allowances_mileage | 21 | 7 |
+
+Note: the old `lib/nurture/sequence.ts` already used after-previous-step semantics for `delayDays`. The engine semantics are identical. No schedule change.
+
+**Env mapping (manager must set at deploy gate):**
+
+| Old env name | New env name | Notes |
+|---|---|---|
+| `NURTURE_FROM_NAME` | `NURTURE_FROM_NAME` | Same name; was a fallback default, now required |
+| `NURTURE_FROM_EMAIL` | `NURTURE_FROM_EMAIL` | Same name; was a fallback default, now required |
+| `NURTURE_REPLY_TO` | `NURTURE_REPLY_TO` | Same name; was a fallback default, now required |
+| `NURTURE_WEBHOOK_SECRET` | `NURTURE_WEBHOOK_SECRET` | Same name; now Svix whsec_ format required |
+| (none) | `NURTURE_TOKEN_SECRET` | New: 32+ char secret for HMAC tokens; if unset = single opt-in mode |
+| `CRON_SECRET` | `CRON_SECRET` | Unchanged; unset = dormant (no emails leave) |
+
+Suggested values for the deploy gate: NURTURE_FROM_NAME="Property Tax Partners", NURTURE_FROM_EMAIL="updates@propertytaxpartners.co.uk", NURTURE_REPLY_TO="hello@propertytaxpartners.co.uk". Generate NURTURE_TOKEN_SECRET with `openssl rand -hex 32`.
+
+**Files created:**
+- `Property/web/src/config/nurture.ts` (Property NurtureConfig + 5 buildBody step functions)
+- `Property/web/src/lib/nurture-provider.ts` (Resend EmailProvider adapter)
+- `Property/web/src/app/api/nurture/subscribe/route.ts` (shared handleSubscribe)
+- `Property/web/src/app/api/nurture/confirm/[token]/route.ts` (HMAC token + confirmSubscriber)
+- `Property/web/src/app/api/nurture/unsubscribe/route.ts` (HMAC token + unsubscribeByEmail, RFC 8058)
+- `Property/web/src/tests/nurture-f3.test.ts` (19 acceptance tests)
+
+**Files replaced (same path, new content):**
+- `Property/web/src/app/api/nurture/send/route.ts` (timing-safe compare, shared runNurtureCron)
+- `Property/web/src/app/api/nurture/events/route.ts` (Svix verifyResendWebhook, SEC-05)
+- `Property/web/src/app/api/subscribe/route.ts` (thin proxy to /api/nurture/subscribe)
+
+**Files deleted:**
+- `Property/web/src/lib/nurture/send.ts` (fork orchestration)
+- `Property/web/src/lib/nurture/sequence.ts` (fork sequence content; content carried verbatim into config/nurture.ts)
+- `Property/web/src/app/api/unsubscribe/route.ts` (old UUID-token unsubscribe; replaced by /api/nurture/unsubscribe with HMAC)
+
+**Modified:**
+- `Property/web/src/components/forms/SubscribeForm.tsx`: fetch re-pointed to `/api/nurture/subscribe`; `CONSENT_TEXT` fixed to match visible label (LD-09)
+
+**No STOPs triggered.** 0 subscribers in prod, dormant cron, no data migration. Lead pipeline untouched.
+
+**Acceptance (all green):**
+- `npx vitest run` (Property/web): 95/95 (5 niche-config + 71 goldens + 19 nurture-f3)
+- web-shared suite: 254/254
+- `tsc --noEmit` (6 sites + console): zero errors
+- `next build` (Property): green, 767 pages
+- PF-07 grep: clean
+- Fork module refs grep: clean
+- SEC-05: events route returns 503 when NURTURE_WEBHOOK_SECRET unset (code verified); send route returns 401 when CRON_SECRET unset (timing-safe compare, code verified)
+
+**Deferred to manager:** Nothing deferred. No STOPs triggered. Manager to: set NURTURE_FROM_NAME, NURTURE_FROM_EMAIL, NURTURE_REPLY_TO, NURTURE_TOKEN_SECRET in Vercel env (NURTURE_WEBHOOK_SECRET intentionally NOT set = parked posture). Then verify + merge branch, run deploy gate (lead-pipeline probe 401/405, key pages 200, consent checkbox present on subscribe form, `api/nurture/subscribe` POST with valid body returns `{ok:true}`).
+
+---
+
+*(original cluster brief, for reference)*
+- `api/subscribe` + `api/nurture/*` + `lib/nurture/*` to shared engine composed with Property's config (its sequence content carried verbatim; UTM/from-identity from env). Fixes by construction: PF-07 literal, EN-06 hardcoded fallbacks, SEC-05 plain `===`.
+- Stays DORMANT: no CRON_SECRET (current state preserved). Env before deploy: NURTURE_FROM_*/REPLY_TO (Property identity), fresh NURTURE_TOKEN_SECRET; NURTURE_WEBHOOK_SECRET unset (events 503 per SEC-05 -- same parked posture as agency; Resend re-point is the same parked user item).
+- 0 subscribers -> no data migration.
 
 ## Per-cluster deploy gate (manager)
 Deploy → live battery: `an01_browser_pass.mjs <url> ptp` · key pages 200 (home, a blog post, a tool page, /calculators) · **lead-pipeline probe: `api/leads/notify` returns 401/405 (NOT 404)** · embeds 200 + resize message intact (F2) · one golden figure spot-checked against the live page (F2) · structured-data byte-diff on one tool + one blog page vs pre-deploy capture (F1/F2) · ingest: property sessions still landing. Any failure → `vercel rollback`, investigate on the branch.

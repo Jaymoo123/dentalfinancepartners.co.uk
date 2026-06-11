@@ -6,7 +6,7 @@
  * a low-friction email-only subscribe with its OWN marketing consent + unsubscribe
  * promise, shown to engaged visitors (e.g. the end of a blog post).
  *
- * Posts to /api/subscribe (service-role write to the RLS-locked subscribers table).
+ * Posts to /api/nurture/subscribe (shared engine, service-role write to the RLS-locked subscribers table).
  * Fires first-party subscribe_view / subscribe_submitted so the opt-in funnel is
  * measurable. Honeypot-protected. Copy carries no em-dashes (house rule).
  */
@@ -19,8 +19,13 @@ import { deriveTopic } from "@/lib/intent/deriveTopic";
 type Status = "idle" | "loading" | "success" | "error";
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// LD-09: this text must be byte-identical to the visible label rendered below.
+// The label reads exactly: "Yes, email me free property tax updates from
+// Property Tax Partners. These are general information, not advice, and I can
+// unsubscribe at any time. See our Privacy Policy."
+// Any edit to the visible label must be mirrored here.
 const CONSENT_TEXT =
-  "Yes, email me free property tax updates from Property Tax Partners. I understand these are general information, not advice, and I can unsubscribe at any time.";
+  "Yes, email me free property tax updates from Property Tax Partners. These are general information, not advice, and I can unsubscribe at any time. See our Privacy Policy.";
 
 export function SubscribeForm({
   source = "subscribe_form",
@@ -71,7 +76,7 @@ export function SubscribeForm({
       setStatus("loading");
       const topic = deriveTopic(pathname || "") || "";
       try {
-        const res = await fetch("/api/subscribe", {
+        const res = await fetch("/api/nurture/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
