@@ -19,15 +19,23 @@ export type ConsentState = "undecided" | "granted" | "denied";
 type Listener = (state: ConsentState) => void;
 const listeners = new Set<Listener>();
 
-/** Storage key derived from the site's storagePrefix (frozen at adoption). */
-function consentKey(): string {
-  return `${getSdkConfig()?.storagePrefix ?? "sdk"}_consent`;
+/**
+ * Storage key derived from the site's storagePrefix (frozen at adoption).
+ * Null before initAnalytics: consent must never be read from or written to a
+ * fallback-prefixed key (the visitor's real choice lives under the site
+ * prefix; a fallback read would miss a stored "denied").
+ */
+function consentKey(): string | null {
+  const p = getSdkConfig()?.storagePrefix;
+  return p ? `${p}_consent` : null;
 }
 
 function read(): ConsentState {
   if (typeof window === "undefined") return "undecided";
+  const key = consentKey();
+  if (!key) return "undecided"; // pre-config: undecided, never a fallback key
   try {
-    const v = window.localStorage.getItem(consentKey());
+    const v = window.localStorage.getItem(key);
     if (v === "granted" || v === "denied") return v;
   } catch {
     /* storage blocked */
@@ -64,8 +72,11 @@ export function hasOptedOut(): boolean {
 /** Persist a decision and notify subscribers (banner accept/reject). */
 export function setConsent(state: Exclude<ConsentState, "undecided">): void {
   if (typeof window === "undefined") return;
+  const key = consentKey();
   try {
-    window.localStorage.setItem(consentKey(), state);
+    if (key) window.localStorage.setItem(key, state);
+    // pre-config (key null): in-memory only via listeners; render-phase init
+    // makes this branch unreachable in real composition.
   } catch {
     /* storage blocked — state stays in-memory for this page only */
   }

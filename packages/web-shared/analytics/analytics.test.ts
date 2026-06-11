@@ -560,3 +560,37 @@ describe("experiments stamping", () => {
     expect(getExperiment("anything")).toBeNull();
   });
 });
+
+describe("pre-config identity hardening (the F1/G1 assignment race, 2026-06-11)", () => {
+  beforeEach(() => {
+    setupBrowserMocks();
+    _resetSdkConfig();
+  });
+  afterEach(() => teardownBrowserMocks());
+
+  it("getVisitorId returns empty before initAnalytics and mints NOTHING", async () => {
+    const { getVisitorId } = await import("./ids");
+    expect(getVisitorId()).toBe("");
+    expect(window.localStorage.length).toBe(0); // no sdk_/null_ fallback keys
+  });
+
+  it("getSessionId returns empty before initAnalytics and mints NOTHING", async () => {
+    const { getSessionId } = await import("./ids");
+    expect(getSessionId()).toBe("");
+    expect(window.sessionStorage.length).toBe(0);
+  });
+
+  it("consent reads undecided pre-config and never touches a fallback key", async () => {
+    const { getConsent } = await import("./consent");
+    window.localStorage.setItem("sdk_consent", "denied"); // a stale fallback key must be ignored
+    expect(getConsent()).toBe("undecided");
+  });
+
+  it("after initAnalytics the same calls mint under the configured prefix", async () => {
+    const { getVisitorId, getSessionId } = await import("./ids");
+    initAnalytics({ siteKey: "test", siteName: "Test", storagePrefix: "t", posture: "opt-out" });
+    expect(getVisitorId()).toMatch(/^v_/);
+    expect(window.localStorage.getItem("t_vid")).toBe(getVisitorId());
+    expect(getSessionId()).toMatch(/^s_/);
+  });
+});
