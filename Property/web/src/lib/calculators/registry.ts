@@ -1,4 +1,5 @@
 import type { Tool, GenericTool } from "./types";
+import { makeRegistryHelpers } from "@accounting-network/web-shared/tools/registry-helpers";
 import { capitalGainsTaxCalculator } from "./tools/capital-gains-tax-calculator";
 import { rentalIncomeTaxCalculator } from "./tools/rental-income-tax-calculator";
 import { rentalYieldCalculator } from "./tools/rental-yield-calculator";
@@ -17,6 +18,10 @@ import { propertyAllowanceChecker } from "./tools/property-allowance-checker";
  * are rendered by <Calculator> via the dynamic /calculators/[slug] route. The
  * gallery, sitemap and navigation read this single registry, so adding a tool is
  * one import + one array entry.
+ *
+ * Registry helpers (allTools / genericTools / getGenericTool / toolPath) are now
+ * provided by makeRegistryHelpers from the shared package, fulfilling TL-01.
+ * The TOOLS export stays local (Property's own fleet) — the shared factory wraps it.
  *
  * Quality bar: every figure traces to docs/property/house_positions.md or HMRC.
  * No pricing/fees, no thin duplicates, honest disclaimers in each `note`.
@@ -85,18 +90,6 @@ const GENERIC: GenericTool[] = [
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];
 
-export function allTools(): Tool[] {
-  return TOOLS;
-}
-
-export function genericTools(): GenericTool[] {
-  return GENERIC;
-}
-
-export function getGenericTool(slug: string): GenericTool | undefined {
-  return GENERIC.find((t) => t.slug === slug);
-}
-
-export function toolPath(slug: string): string {
-  return `/calculators/${slug}`;
-}
+// Shared registry helpers — same contract as the previous hand-written functions.
+const { allTools, genericTools, getGenericTool, toolPath } = makeRegistryHelpers(TOOLS);
+export { allTools, genericTools, getGenericTool, toolPath };

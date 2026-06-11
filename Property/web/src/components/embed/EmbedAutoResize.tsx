@@ -1,28 +1,21 @@
 "use client";
 
-import { useEffect } from "react";
-
 /**
- * Posts the document height to the parent window so an embedding iframe can
- * resize to fit the content (it grows when, e.g., a relief warning appears).
- * The parent listens for { type: "ptp-embed-height", height } — see the embed
- * snippet given to partners.
+ * Property-scoped EmbedAutoResize wrapper.
+ *
+ * The message type "ptp-embed-height" is FROZEN — third-party partner pages
+ * that embed our calculators listen for exactly this string. Changing it would
+ * silently break live embeds on external sites. The shared component is
+ * composed with the frozen type; the call sites stay prop-free.
+ *
+ * Embed contract diff (F2 STOP check):
+ *   Local (pre-F2):  window.parent.postMessage({ type: "ptp-embed-height", height }, "*")
+ *   Shared:          window.parent.postMessage({ type: messageType, height }, "*")
+ *   Composition:     <SharedEmbedAutoResize messageType="ptp-embed-height" />
+ *   Verdict:         IDENTICAL wire format — STOP condition NOT triggered.
  */
-export function EmbedAutoResize() {
-  useEffect(() => {
-    const post = () => {
-      const height = Math.ceil(document.documentElement.scrollHeight);
-      window.parent?.postMessage({ type: "ptp-embed-height", height }, "*");
-    };
-    post();
-    const ro = new ResizeObserver(post);
-    ro.observe(document.body);
-    window.addEventListener("load", post);
-    return () => {
-      ro.disconnect();
-      window.removeEventListener("load", post);
-    };
-  }, []);
+import { EmbedAutoResize as SharedEmbedAutoResize } from "@accounting-network/web-shared/tools/embed/EmbedAutoResize";
 
-  return null;
+export function EmbedAutoResize() {
+  return <SharedEmbedAutoResize messageType="ptp-embed-height" />;
 }

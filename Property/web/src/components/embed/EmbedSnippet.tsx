@@ -1,41 +1,8 @@
-"use client";
-
-import { useState } from "react";
-
 /**
- * Renders a copy-paste code snippet with a "Copy" button, used on the self-serve
- * embed gallery (/embed) so partner sites can grab an iframe snippet in one click.
+ * Re-export the shared EmbedSnippet.
+ *
+ * The shared component is API-identical to the local ancestor; it uses
+ * --brand-primary CSS token for the Copy button (emerald-600 on Property via
+ * the site's CSS variable, so the rendered colour is identical).
  */
-export function EmbedSnippet({ code, label }: { code: string; label?: string }) {
-  const [copied, setCopied] = useState(false);
-
-  const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(code);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Clipboard API unavailable (e.g. insecure context) — user can select the
-      // text manually; we deliberately do not throw.
-    }
-  };
-
-  return (
-    <div className="relative">
-      {label && (
-        <div className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-500">{label}</div>
-      )}
-      <pre className="overflow-x-auto rounded-lg bg-slate-900 p-4 pr-20 text-xs leading-relaxed text-slate-100">
-        <code>{code}</code>
-      </pre>
-      <button
-        type="button"
-        onClick={copy}
-        className="absolute right-3 top-3 rounded bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white transition-colors hover:bg-emerald-700"
-        aria-label="Copy code to clipboard"
-      >
-        {copied ? "Copied" : "Copy"}
-      </button>
-    </div>
-  );
-}
+export { EmbedSnippet } from "@accounting-network/web-shared/tools/embed/EmbedSnippet";
