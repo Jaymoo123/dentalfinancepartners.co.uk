@@ -6,7 +6,7 @@
  * writes "denied" to localStorage, which the SDK and GA/Clarity honour live.
  */
 import { useEffect, useState } from "react";
-import { getConsent, setConsent, type ConsentState } from "@/lib/analytics/consent";
+import { getConsent, setConsent, type ConsentState } from "@accounting-network/web-shared/analytics/consent";
 
 export function ConsentToggle({ className = "" }: { className?: string }) {
   const [state, setState] = useState<ConsentState>("undecided");

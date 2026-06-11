@@ -6,8 +6,8 @@ import { getGenericTool } from "@/lib/calculators/registry";
 import { Field } from "@/components/calculators/fields/Field";
 import { EmbedCta } from "@/components/embed/EmbedCta";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
-import { track } from "@/lib/analytics/track";
-import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 
 function defaultValues(fields: CalcField[]): CalcValues {
   const v: CalcValues = {};

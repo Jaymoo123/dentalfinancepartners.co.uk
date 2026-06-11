@@ -8,8 +8,8 @@
  * Carries NO field values, only field names + outcome — no PII.
  */
 import { useCallback, useRef } from "react";
-import { track } from "@/lib/analytics/track";
-import { setConverted } from "@/lib/intent/session";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { setConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 
 export function useFormTracking(formId: string) {
   const startedRef = useRef(false);

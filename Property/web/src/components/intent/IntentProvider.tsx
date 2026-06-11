@@ -14,16 +14,16 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useConsent } from "../analytics/ConsentProvider";
-import { track } from "@/lib/analytics/track";
+import { track } from "@accounting-network/web-shared/analytics/track";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
-import { getEntryTopic, getLastTopic, isReturning, isConverted } from "@/lib/intent/session";
-import { getMaxScrollPct, getEngagedMs } from "@/lib/analytics/autoCapture";
+import { getEntryTopic, getLastTopic, isReturning, isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
+import { getMaxScrollPct, getEngagedMs } from "@accounting-network/web-shared/analytics/autoCapture";
 import { evaluate, type IntentAction, type IntentContext, type Surface } from "@/lib/intent/engine";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import { ruleLabel } from "@/lib/intent/labels";
-import { getVisitorId } from "@/lib/analytics/ids";
+import { getVisitorId } from "@accounting-network/web-shared/analytics/ids";
 import { assignVariant } from "@/lib/experiments/assign";
-import { setActiveExperiment } from "@/lib/experiments/active";
+import { setActiveExperiment } from "@accounting-network/web-shared/analytics/experiments/active";
 
 /** The personalization A/B: control gets the plain generic experience. */
 const PERSONALIZATION_EXP = "personalization";

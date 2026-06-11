@@ -20,9 +20,9 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
-import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
-import { track } from "@/lib/analytics/track";
-import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import {
@@ -116,11 +116,10 @@ export function ResourceGate({
     const email = String(data.get("email") || "").trim();
     const magnetTitle = resource?.magnetTitle ?? "resource";
     const payload = {
-      full_name: "—",
+      full_name: "",
       email,
       phone: "",
       role: "resource",
-      practice_name: "—",
       message: `[Resource: ${topic}] ${magnetTitle}`,
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl,

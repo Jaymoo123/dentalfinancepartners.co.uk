@@ -46,8 +46,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
-import { track } from "@/lib/analytics/track";
-import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 
 /* ---------------------------------------------------------------------------

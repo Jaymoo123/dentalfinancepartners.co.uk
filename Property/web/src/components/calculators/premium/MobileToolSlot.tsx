@@ -11,9 +11,9 @@
  * visitors (who never see this) would dilute the experiment's denominator.
  */
 import { useEffect, useState } from "react";
-import { getVisitorId } from "@/lib/analytics/ids";
+import { getVisitorId } from "@accounting-network/web-shared/analytics/ids";
 import { assignVariant } from "@/lib/experiments/assign";
-import { setActiveExperiment } from "@/lib/experiments/active";
+import { setActiveExperiment } from "@accounting-network/web-shared/analytics/experiments/active";
 import { MiniCapture } from "@/components/forms/MiniCapture";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
 import { useExperimentInView } from "@/lib/experiments/exposure";

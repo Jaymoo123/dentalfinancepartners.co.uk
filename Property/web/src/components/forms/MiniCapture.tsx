@@ -13,9 +13,9 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
-import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { useExperiment } from "@/components/experiments/useExperiment";
-import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
+import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -126,11 +126,10 @@ export function MiniCapture({
     setStatus("loading");
     const note = String(data.get("note") || "").trim();
     const payload = {
-      full_name: "—",
+      full_name: "",
       email: String(data.get("email") || "").trim(),
       phone: wantPhone ? String(data.get("phone") || "").trim() : "",
       role,
-      practice_name: "—",
       message: `${messagePrefix}${note ? `: ${note}` : ""}`,
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl,

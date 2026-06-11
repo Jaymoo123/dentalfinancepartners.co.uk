@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getVisitorId } from "@/lib/analytics/ids";
+import { getVisitorId } from "@accounting-network/web-shared/analytics/ids";
 import { assignVariant } from "@/lib/experiments/assign";
-import { setActiveExperiment } from "@/lib/experiments/active";
+import { setActiveExperiment } from "@accounting-network/web-shared/analytics/experiments/active";
 
 /**
  * QA / preview override: `?ab=key:variant[,key2:variant2]` in the URL forces a

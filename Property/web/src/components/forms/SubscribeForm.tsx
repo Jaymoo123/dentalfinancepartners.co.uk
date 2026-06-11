@@ -12,8 +12,8 @@
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { track } from "@/lib/analytics/track";
-import { getVisitorId } from "@/lib/analytics/ids";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { getVisitorId } from "@accounting-network/web-shared/analytics/ids";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 
 type Status = "idle" | "loading" | "success" | "error";
