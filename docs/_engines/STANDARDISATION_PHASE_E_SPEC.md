@@ -111,5 +111,44 @@ packages/web-shared/console/   gains an ADDITIVE estate module:
 
 **Manager-owned (not in the brief):** Vercel project creation + env + deploy + live OB-03 verification + the per-site-console retirement decision (deferred, user's call later).
 
+### Experiments parity restoration -- 2026-06-11 (Sonnet, branch console-experiments-parity)
+
+Gap: the unified console experiments tab showed only a flat results table. Property's deleted admin console had a rich card view: BuildingBlockCard (exposure-scoped funnel, acted/exposed) for the 5 CRO tests + ConversionCard (conversion-only) for personalisation, significance badge, "awaiting exposure" empty state.
+
+**Work done:**
+
+1. `packages/web-shared/console/adminData.ts` (additive):
+   - New types: `ExperimentArm`, `ExperimentArms`, `ExperimentFunnelArm`, `ExperimentFunnelArms`, `ExperimentFunnelRow` (exported).
+   - New pure parsing functions: `parseExperimentArms(rows)`, `parseExperimentFunnel(rows)` (exported for testing, logic identical to recovered Property implementation).
+   - New async functions: `getExperimentArms(siteKey)`, `getExperimentFunnel(siteKey)` (site-agnostic, read vw_experiment_results + vw_experiment_funnel, no SQL).
+   - Nothing existing modified.
+
+2. `packages/web-shared/console/components/experimentMetaTypes.ts` (new):
+   - `ExperimentPrimary` + `ExperimentMeta` types -- shared so `ExperimentCards.tsx` can import them without creating a dependency on any site-local registry.
+
+3. `packages/web-shared/console/components/ExperimentCards.tsx` (new, "use client"):
+   - `ExperimentCard` dispatcher (routes on `meta.primary` presence), `BuildingBlockCard`, `ConversionCard`.
+   - Site-agnostic: depends only on shared types + adminData types, no Property imports.
+   - Placed in web-shared (not console-app-local) because the card rendering logic is data-model-agnostic and could be reused if experiments spread to other sites.
+
+4. `console/web/src/config/experimentMeta.ts` (new):
+   - Data-only copy of Property's `EXPERIMENT_META` + `getExperimentMeta(key)` (fallback for unknown ids).
+   - Header comment names `Property/web/src/lib/experiments/registry.ts` as source of truth; accepted documented duplication.
+   - Unknown ids: `getExperimentMeta` returns a title-cased label + generic control/treatment so no data is ever hidden.
+
+5. `console/web/src/app/site/[siteKey]/page.tsx`:
+   - Imports `getExperimentArms`, `getExperimentFunnel`, `ExperimentArms`, `ExperimentFunnelArms`, `ExperimentCard`, `getExperimentMeta`.
+   - Capability-conditional fetch of arms + funnel (only when `caps.experiments`).
+   - Experiment keys derived from union of arms + funnel maps (catches unknown ids from new experiments not yet in meta config).
+   - experimentsSection replaced: `Live A/B tests` heading + `ExperimentCard` per key + secondary raw ledger table below.
+
+6. `packages/web-shared/package.json`: exports added for `ExperimentCards` + `experimentMetaTypes`.
+
+**Tests added:**
+- web-shared `console.test.ts`: +20 tests (10 `parseExperimentArms` + 10 `parseExperimentFunnel`): control/treatment slot placement, conversion_rate preservation, partial arm (null treatment), malformed exp row (no colon), empty input, unknown-id graceful-no-throw (the meta-fallback test).
+- console/web `console.test.ts`: +9 tests (`getExperimentMeta`): known id label/desc, primary present for building-block tests, primary absent for personalisation, guardrail present for lead_form_length, unknown-id fallback (no throw, generic labels, title-case), all EXPERIMENT_META entries have required fields.
+
+**Results:** web-shared 267 tests passing (+20 from 247); console/web 22 tests passing (+9 from 13). console/web `next build` green. tsc Property/web + console/web clean.
+
 ## Sequencing note
 After this phase: Property adoption window (its local console can then be DELETED rather than upgraded — one of the reasons this phase goes first), then estate-wide experiments. Newsletter remains PARKED per user (2026-06-11): revisit when signups/traffic warrant; Resend webhook re-point + generalist NURTURE_* env stay open-but-parked.

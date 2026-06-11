@@ -14,6 +14,7 @@
 
 import { describe, it, expect } from "vitest";
 import { getSiteCapabilities } from "../config/capabilities";
+import { getExperimentMeta, EXPERIMENT_META } from "../config/experimentMeta";
 import type { SiteRegistryEntry } from "@accounting-network/web-shared/console/estateData";
 import {
   verifyConsoleKey,
@@ -150,6 +151,57 @@ describe("consoleAuth reuse", () => {
     const consoleCookie = sharedCookie.replace("Path=/admin/analytics", "Path=/");
     expect(consoleCookie).toContain("Path=/");
     expect(consoleCookie).not.toContain("Path=/admin/analytics");
+  });
+});
+
+// ── experimentMeta config ──────────────────────────────────────────────────
+
+describe("getExperimentMeta", () => {
+  it("returns correct label for known experiment id", () => {
+    const meta = getExperimentMeta("calc_result_capture");
+    expect(meta.label).toBe("Calculator result capture");
+    expect(meta.controlDesc).toContain("trailing CTA");
+    expect(meta.treatmentDesc).toContain("Dramatised result");
+  });
+
+  it("returns primary metric for building-block experiments", () => {
+    const meta = getExperimentMeta("exit_intent_offer");
+    expect(meta.primary).toBeDefined();
+    expect(meta.primary?.metricLabel).toBe("Engaged the offer");
+    expect(meta.primary?.exposureLabel).toBe("shown the modal");
+  });
+
+  it("personalisation has no primary (conversion-card, not building-block)", () => {
+    const meta = getExperimentMeta("personalization");
+    expect(meta.primary).toBeUndefined();
+  });
+
+  it("lead_form_length has a guardrail on primary", () => {
+    const meta = getExperimentMeta("lead_form_length");
+    expect(meta.primary?.guardrail).toBeDefined();
+    expect(meta.primary?.guardrail?.label).toContain("Callable leads");
+  });
+
+  it("returns a graceful fallback for an unknown experiment id", () => {
+    const meta = getExperimentMeta("some_future_experiment_id");
+    // Should not throw, label should be derived from the id
+    expect(meta.label).toBeTruthy();
+    expect(meta.controlDesc).toBe("Control");
+    expect(meta.treatmentDesc).toBe("Treatment");
+    expect(meta.primary).toBeUndefined();
+  });
+
+  it("fallback label title-cases the key", () => {
+    const meta = getExperimentMeta("my_new_test");
+    expect(meta.label).toBe("My New Test");
+  });
+
+  it("all known entries in EXPERIMENT_META have label, controlDesc, treatmentDesc", () => {
+    for (const [key, meta] of Object.entries(EXPERIMENT_META)) {
+      expect(meta.label, `${key}.label`).toBeTruthy();
+      expect(meta.controlDesc, `${key}.controlDesc`).toBeTruthy();
+      expect(meta.treatmentDesc, `${key}.treatmentDesc`).toBeTruthy();
+    }
   });
 });
 
