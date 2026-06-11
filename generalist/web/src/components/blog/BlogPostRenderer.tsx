@@ -12,6 +12,7 @@ import { extractHeadings } from "@accounting-network/web-shared/content/markdown
 import { calculateReadTime } from "@/lib/blog";
 import { InlinePrompt } from "@/components/newsletter/InlinePrompt";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { CalcPromoCard } from "@/components/blog/CalcPromoCard";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -188,6 +189,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               <div className="lg:hidden mt-8">
                 <TableOfContents headings={headings} />
               </div>
+
+              {/* calc_promo_inline experiment -- client leaf; null first paint (SSR + first render)
+                  so no above-the-fold layout shift. Treatment inserts the card here after hydration,
+                  between the intro section and the article prose. */}
+              <CalcPromoCard />
 
               <div
                 className="article-body prose-blog mt-10"

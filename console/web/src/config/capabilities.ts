@@ -4,8 +4,9 @@
  * Drives which panels render "not operated on this site" vs full data.
  * Data, not code branches: add a site here when it onboards a new system.
  *
- * Current state (2026-06-11):
+ * Current state (2026-06-11, updated G2):
  *   - property: full stack (experiments, nurture, lead-intent, personalisation)
+ *   - generalist: experiments (calc_promo_inline starter)
  *   - digital-agency: nurture only
  *   - all others: analytics + leads only
  */
@@ -34,6 +35,12 @@ const CAPABILITY_MAP: Record<string, SiteCapabilities> = {
     nurture: true,
     leadIntent: true,
     personalisation: true,
+  },
+  generalist: {
+    experiments: true,
+    nurture: false,
+    leadIntent: false,
+    personalisation: false,
   },
   "digital-agency": {
     experiments: false,
