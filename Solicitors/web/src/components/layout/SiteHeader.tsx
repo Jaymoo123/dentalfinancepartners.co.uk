@@ -86,6 +86,7 @@ export function SiteHeader() {
         <div className="flex shrink-0 items-center gap-2">
           <Link
             href="/contact"
+            data-cta="header-book-call"
             className="hidden min-h-11 min-w-0 px-5 sm:inline-flex md:min-h-12 items-center justify-center rounded-full border-2 border-[var(--primary)] bg-white text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
           >
             Book a call
@@ -163,6 +164,7 @@ export function SiteHeader() {
             <div className="border-t border-[var(--border)] p-3">
               <Link
                 href="/contact"
+                data-cta="mobile-menu-book-call"
                 className="w-full inline-flex items-center justify-center rounded-full border-2 border-[var(--primary)] bg-white px-6 py-3 text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
                 onClick={() => setOpen(false)}
               >

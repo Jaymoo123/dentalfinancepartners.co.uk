@@ -252,3 +252,87 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 - `web_sessions` → `started_at`/`last_seen_at` (NO created_at) · `web_events` → `ts` · `leads` status CHECK: new/contacted/qualified/converted/archived.
 - All four site keys exist in `sites` registry + leads CHECK. Track-route FK will reject any unregistered key (the Phase A hard gate — protective, not a bug).
 - The vw_* views are site_key-parameterised (Phase B audit) — consoles work per-site with zero view changes.
+
+---
+
+**SOLICITORS — ACCEPTED (2026-06-11, manager verification).**
+- 30/30 goldens via the site's wired runner · `next build` green (247 pages) · PF-07/TL-03/OB-02 greps re-run independently: clean · Wizard step-6 consent checkbox verified real (`consent_given: a.consent`, label-matched) — both binding lessons held.
+- 6 calculators on the platform (take-home, FA2014 salaried member, LLP profit share, firm valuation, SRA client account reserve, indemnity premium) + embeds + registry-driven gallery/sitemap; TOOLS.md figures traced.
+- Schema STOP posture carried; reader apparatus re-pointed (DOM-identical).
+- Deploy gate (operator): Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY`, deploy, `an01_browser_pass.mjs <url> afl`, ingest check.
+
+**SOLICITORS AUDIT (Sonnet, 2026-06-11, branch `adopt-solicitors`) — first log entry, pre-implementation.**
+
+**Calculator inventory (6 tools, all solicitor-specific):**
+1. `SolicitorTakeHomeCalculator` — route `/calculators/partnership-vs-llp-take-home`, component `src/components/calculators/SolicitorTakeHomeCalculator.tsx`. Maths: three-structure comparison (sole trader / partnership / LLP all tax-transparent, plus Ltd with CT+dividend). 2025/26 HMRC bands. No React in compute path.
+2. `FA2014SalariedMemberCalculator` — route `/calculators/fa-2014-salaried-member`. Maths: three-condition statutory test (FA 2014 s.863A-863G ITTOIA). No time-sensitive rate constants.
+3. `LlpProfitShareCalculator` — route `/calculators/llp-profit-share-allocation`. Maths: four allocation methods (equal / points / two-tier / fixed-share-plus-equity). No tax rates — partnership-agreement maths.
+4. `LawFirmValuationCalculator` — route `/calculators/law-firm-valuation`. Maths: goodwill multiples (4 firm types) + region/demand adjustments. Indicative 2025/26 market ranges.
+5. `SraReserveCalculator` — route `/calculators/sra-client-account-reserve`. Maths: operational risk-management reserve sizing. SRA Rule 12.2 de minimis flag. No time-sensitive UK tax rates.
+6. `IndemnityPremiumCalculator` — route `/calculators/indemnity-premium-estimator`. Maths: PII premium estimate (base rate + claims multiplier + cover level + size penalty). Indicative 2025/26 PII market rates.
+
+Gallery: `/calculators/page.tsx` has hand-listed CALCULATORS array — NOT registry-derived (SEO-01 miss; fixed by tools adoption).
+Sitemap: `/app/sitemap.ts` does NOT include calculator routes (another SEO-01 gap; fixed by adoption).
+
+**Newsletter surfaces:** None. No subscribe form, no newsletter route, no Resend calls anywhere in Solicitors. Nurture = n/a.
+
+**GA4 tag location:** `src/app/layout.tsx` — inline `<Script>` with `niche.seo.google_analytics_id` in `<head>`. Tag retained.
+
+**Local schema copies:** `src/lib/schema/` (JsonLd.tsx + local types) + `src/lib/schema.ts` (blog posting + breadcrumb + og-image). **STOP — same posture as Dentists/Medical: schema re-point deferred.** Additive re-exports added above existing local builders: `JsonLd`, `buildFaqPage`, `buildWebApplication` (site-opts wrapper) from shared.
+
+**Local reader apparatus:** `src/components/blog/ReadingProgress.tsx` and `src/components/blog/TableOfContents.tsx` — local copies. Re-pointed to shared and deleted in this adoption.
+
+**LeadForm gaps:** No useFormTracking, no honeypot, no visitor/session stitching, direct gtag calls. Fixed in this adoption.
+
+**Wizard gaps:** No first-party event wiring, no real consent checkbox (LD-04 — hardcoded consent fields absent). Fixed in this adoption with real checkbox on step 6, canAdvance gate, submit disabled until consent.
+
+**data-cta attributes:** CTASection and SiteHeader had no `data-cta` attributes. Added in this adoption.
+
+**PF-07 check:** `niche.config.json` `site_key: "solicitors"`, `source_identifier: "solicitors"` — correct. Wizard had `source: "solicitors"` hardcoded — replaced with `niche.content_strategy.source_identifier`.
+
+**SCHEMA RE-POINT STOP (same posture as Dentists):** local schema builders left in place. Additive re-exports added to `src/lib/schema.ts` (JsonLd, buildFaqPage, buildWebApplication wrapper). No JSON-LD output changes on existing pages.
+
+**SOLICITORS PHASE D IMPLEMENTATION COMPLETE (Sonnet, 2026-06-11, branch `adopt-solicitors`)**
+
+All checklist items executed. Summary below.
+
+**Analytics composition (checklist item 2) — DONE:**
+- `src/app/layout.tsx` — ConsentProvider + AnalyticsProvider (siteKey from `niche.content_strategy.site_key`, storagePrefix `"afl"` FROZEN, posture `"opt-out"`, noTrackPrefixes `["/admin", "/embed"]`) + ConsentedScripts. GA4 retained in `<head>`.
+- `src/app/api/track/route.ts` — createTrackHandler with siteKey from niche config (PF-07 compliant).
+- `src/components/forms/LeadForm.tsx` — useFormTracking("lead_form"), honeypot (company_url), submitLead from shared supabase-client, visitor/session stitching, all field-focus/blur/error events.
+- `src/components/health-check/Wizard.tsx` — useFormTracking("health_check_wizard"), submitLead via shared client, visitor/session stitching, real consent checkbox (LD-04), canAdvance gate on step 6, submit disabled until consent, source from niche config (PF-07).
+- `src/components/ui/CTASection.tsx` — `data-cta="cta-section-primary"` and `"cta-section-secondary"`.
+- `src/components/layout/SiteHeader.tsx` — `data-cta="header-book-call"` (desktop) + `data-cta="mobile-menu-book-call"` (mobile).
+- `.env.local.example` — full PF-05 set; nurture n/a documented; storagePrefix "afl" FROZEN noted.
+
+**Tools platform adoption (checklist item 3) — DONE:**
+- 6 compute libs (pure TS, TL-03 compliant): `solicitor-take-home`, `fa2014-salaried-member`, `llp-profit-share`, `law-firm-valuation`, `sra-client-account-reserve`, `indemnity-premium` in `src/lib/tools/compute/`.
+- 30 golden tests in `src/lib/tools/compute/solicitors-tools.test.ts` — all pass.
+- 6 GenericTool configs in `src/lib/tools/configs/`.
+- Registry `src/lib/tools/registry.ts` via `makeRegistryHelpers`.
+- `src/components/tools/CalculatorClient.tsx` — site-local "use client" RSC boundary wrapper.
+- `src/app/calculators/[slug]/page.tsx` — dynamic route, generateStaticParams from allTools().
+- `src/app/calculators/page.tsx` — replaced hand-listed CALCULATORS array with registry-driven allTools() loop.
+- `src/app/embed/[slug]/page.tsx` — noindex, `afl-embed-height` messageType, CalculatorClient.
+- `src/app/embed/page.tsx` — embed gallery, allTools()-driven.
+- `src/app/sitemap.ts` — allTools() loop adds all 6 calculator URLs + /calculators static path.
+- `next.config.ts` — buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" }).
+- `src/lib/utils.ts` — cn() utility (no clsx/tailwind-merge).
+- Deleted 6 old per-slug routes and 6 old component files.
+- `docs/solicitors/TOOLS.md` — written with all 6 tools, figures traced to sources, limitations, embed snippet.
+
+**Operator console (checklist item 4) — DONE:**
+- `/admin/analytics` — full dashboard (overview funnel, channel breakdown, CTA performance, form drop-off, errors/friction, visits-to-conversion). NotOperatedPanel for experiments, personalisation, nurture (all n/a for Solicitors).
+- `/admin/analytics/trends` — time-series at 15min/1hr/daily granularities.
+- `/admin/analytics/leads` — paginated lead list with journey enrichment.
+- `/admin/analytics/visitor/[visitorId]` — per-visitor journey with VisitorTabs (story + activity log).
+- `/api/admin/login` — timing-safe key compare, rate limiting (10 failures/10 min per IP), HttpOnly SameSite=Strict cookie.
+- All admin routes: CONSOLE_NOINDEX_META enforced (OB-01 compliant).
+
+**Schema + reader apparatus (checklist item 5):**
+- Schema re-point: STOP (same posture as Dentists). Local schema builders left in place. Additive re-exports only (JsonLd, buildFaqPage, buildWebApplication wrapper via getSiteOpts()).
+- Reader apparatus: re-pointed. BlogPostRenderer.tsx imports ReadingProgress and TableOfContents from `@accounting-network/web-shared/content`; local files deleted.
+
+**Nurture (checklist item 6):** n/a — no newsletter surface found on Solicitors.
+
+**Next site:** `adopt-agency` (digital-agency, storagePrefix `aff`).
