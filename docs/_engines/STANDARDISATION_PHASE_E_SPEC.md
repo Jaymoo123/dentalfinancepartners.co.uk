@@ -48,6 +48,17 @@
 - vw_web_vitals_summary: no STOP needed -- rest() returns [] gracefully if view absent.
 - Manager-owned: Vercel project creation, env vars, deploy, live OB-03 verification.
 
+### Manager acceptance — 2026-06-11
+
+**PHASE E BUILD — ACCEPTED (manager verification).**
+- 254 + 15 tests reproduced via both runners · console `next build` reproduced green.
+- **`vw_web_vitals_summary` gap closed properly:** the view did not exist live (graceful-[] fallback was correct executor behaviour); manager created it additively (migration `20260612000004`, applied + recorded) — per-event projection (web_vital, 28d, non-bot) matching the estateData contract; verified returning real rows (dentists/generalist metrics).
+- **OB-01 verified at RUNTIME** (built server on :3460 against the PROD store): no-cred → 307 /login · `X-Robots-Tag: noindex, nofollow` on responses · login → HttpOnly+SameSite=Strict+Secure sha256-token cookie (Path=/).
+- **Estate overview verified against LIVE data, one login:** all 6 sites in the comparison table (Property 900 sessions / 510 human / 5 leads / 0.6% vs the rest), estate totals (942 sessions, 5 leads, 0.5%), estate funnel (942 → 532 engaged, 56%), channels/errors/latest-leads panels rendering. Agency correctly shows "-" (its only recent session was the deleted AN-01 test row). OB-03's estate questions are answerable from the home page alone.
+- `/site/property` renders the full per-site dashboard from Property's live data — Property covered with zero Property code touched.
+- OB-02: only query-layer files touch the store; view names elsewhere are user-visible data-provenance captions (accepted pattern).
+- Remaining (manager): Vercel project + env + deploy + post-deploy re-check.
+
 ## Design decisions (manager, 2026-06-11)
 
 1. **A new internal app, not a mount on any site.** Workspace `console/web` (Next.js, App Router), deployed as its own Vercel project. It READS the shared store; it ships zero public pages, zero SEO surface, zero tracking of its own. **No live site's code is touched in this phase** — the per-site `/admin/analytics` consoles stay exactly as they are (retirement is a later cleanup decision, not this phase).
