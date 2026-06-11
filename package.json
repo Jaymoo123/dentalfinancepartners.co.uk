@@ -14,7 +14,8 @@
     "Solicitors/web",
     "generalist/web",
     "digital-agency/web",
-    "contractors-ir35/web"
+    "contractors-ir35/web",
+    "console/web"
   ],
   "engines": {
     "node": ">=20"

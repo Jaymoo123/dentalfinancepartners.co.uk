@@ -57,6 +57,7 @@
     "./tools/embed/EmbedSnippet": "./tools/embed/EmbedSnippet.tsx",
     "./console": "./console/index.ts",
     "./console/adminData": "./console/adminData.ts",
+    "./console/estateData": "./console/estateData.ts",
     "./console/consoleAuth": "./console/consoleAuth.ts",
     "./console/journey": "./console/journey.ts",
     "./console/components/Sparkline": "./console/components/Sparkline.tsx",

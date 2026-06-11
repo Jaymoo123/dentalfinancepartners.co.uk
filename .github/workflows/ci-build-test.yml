@@ -41,6 +41,8 @@ jobs:
             url: https://www.hollowaydavies.co.uk
           - site: digital-agency
             url: https://www.agencyfounderfinance.co.uk
+          - site: console
+            url: https://console.internal
 
     steps:
       - name: Checkout code
