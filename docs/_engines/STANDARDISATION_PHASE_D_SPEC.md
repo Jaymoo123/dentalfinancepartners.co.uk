@@ -255,6 +255,12 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 
 ---
 
+**SOLICITORS — ACCEPTED (2026-06-11, manager verification).**
+- 30/30 goldens via the site's wired runner · `next build` green (247 pages) · PF-07/TL-03/OB-02 greps re-run independently: clean · Wizard step-6 consent checkbox verified real (`consent_given: a.consent`, label-matched) — both binding lessons held.
+- 6 calculators on the platform (take-home, FA2014 salaried member, LLP profit share, firm valuation, SRA client account reserve, indemnity premium) + embeds + registry-driven gallery/sitemap; TOOLS.md figures traced.
+- Schema STOP posture carried; reader apparatus re-pointed (DOM-identical).
+- Deploy gate (operator): Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY`, deploy, `an01_browser_pass.mjs <url> afl`, ingest check.
+
 **SOLICITORS AUDIT (Sonnet, 2026-06-11, branch `adopt-solicitors`) — first log entry, pre-implementation.**
 
 **Calculator inventory (6 tools, all solicitor-specific):**
