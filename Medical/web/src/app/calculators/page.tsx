@@ -1,84 +1,70 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import { NHSPensionCalculator } from "@/components/calculators/NHSPensionCalculator";
-import { LocumTaxCalculator } from "@/components/calculators/LocumTaxCalculator";
-import { IncorporationCalculator } from "@/components/calculators/IncorporationCalculator";
-import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
+import { Calculator, ArrowRight } from "lucide-react";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { allTools } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
   title: "Free Medical Tax Calculators | NHS Pension, Locum Tax & Incorporation",
   description:
-    "3 free calculators for UK doctors: NHS pension annual allowance & tapered allowance, locum doctor tax calculator, private practice incorporation comparison. Current 2025/26 & 2026/27 tax rates. Instant results.",
+    "3 free calculators for UK doctors: NHS pension annual allowance and tapered allowance, locum doctor tax calculator, private practice incorporation comparison. Current 2025/26 and 2026/27 tax rates. Instant results.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
     title: "Free Medical Tax Calculators for UK Doctors",
-    description: "Calculate NHS pension allowance, locum tax, and incorporation savings. 2025/26 & 2026/27 rates.",
+    description:
+      "Calculate NHS pension allowance, locum tax, and incorporation savings. 2025/26 and 2026/27 rates.",
     url: `${siteConfig.url}/calculators`,
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Medical Tax Calculators for UK Doctors",
-    description: "Calculate NHS pension allowance, locum tax, and incorporation savings. 2025/26 & 2026/27 rates.",
-  },
 };
 
-export default function CalculatorsPage() {
+export default function CalculatorsIndexPage() {
+  const calculators = allTools();
+
   return (
     <>
-      <section className="relative h-[300px] sm:h-[350px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=2000&q=85"
-          alt="Medical professionals"
-          fill
-          className="object-cover brightness-75"
-        />
-        <div className="absolute inset-0 bg-[var(--navy)]/85" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+      <section className="bg-[var(--navy)] py-16 sm:py-20">
+        <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <h1 className="text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
+            <div className="inline-flex items-center gap-2 bg-[var(--copper)] px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+              <Calculator className="h-3.5 w-3.5" />
+              Free tools
+            </div>
+            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               Medical tax calculators for UK doctors
             </h1>
-            <p className="mt-4 sm:mt-6 text-base sm:text-xl leading-relaxed text-white">
+            <p className="mt-4 text-lg text-white/80 leading-relaxed">
               Free calculators built by specialist medical accountants. Work out your NHS pension annual allowance,
-              locum tax liability, and private practice incorporation savings.
+              locum tax liability, and private practice incorporation savings. No email gate, no sign-up.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="space-y-12 sm:space-y-16">
-            <div id="nhs-pension">
-              <NHSPensionCalculator />
-            </div>
-
-            <div id="locum-tax">
-              <LocumTaxCalculator />
-            </div>
-
-            <div id="incorporation">
-              <IncorporationCalculator />
-            </div>
-          </div>
-
-          <div className="mt-12 sm:mt-16 bg-[var(--navy)] p-6 sm:p-10 text-center text-white">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
-              Need help interpreting your results?
-            </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-slate-200 max-w-3xl mx-auto">
-              These calculators provide simplified estimates. For a full analysis of your specific situation —
-              including NHS pension planning, locum tax optimization, or private practice incorporation feasibility — speak to one
-              of our medical accountants.
-            </p>
-            <div className="mt-6 sm:mt-8">
-              <Link href="/contact" className={`${btnPrimary} bg-[var(--copper)] border-[var(--copper-strong)] text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}>
-                Book free consultation
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {calculators.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/calculators/${c.slug}`}
+                className="group block bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-xl hover:bg-white hover:border-[var(--copper)] hover:shadow-md transition-all"
+                data-cta={`calculator-gallery-${c.slug}`}
+              >
+                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-[var(--copper)] to-[var(--navy)] rounded-lg shadow-sm">
+                  <Calculator className="h-6 w-6 text-white" />
+                </div>
+                <h2 className="mt-5 text-xl font-bold text-[var(--ink)] group-hover:text-[var(--copper)] transition-colors">
+                  {c.name}
+                </h2>
+                <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">{c.oneLiner}</p>
+                <div className="mt-5 flex items-center text-[var(--copper)] font-semibold text-sm">
+                  Open calculator
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </div>
               </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>
