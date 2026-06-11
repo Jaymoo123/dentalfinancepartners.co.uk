@@ -22,6 +22,10 @@ import type {
   Role,
   UdaBand,
 } from "@/lib/health-check/types";
+import { niche } from "@/config/niche-loader";
+import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 type Answers = {
   name: string;
@@ -39,7 +43,10 @@ type Answers = {
   goodwillPlans: GoodwillPlans | "";
   accountantSatisfaction: AccountantSatisfaction | "";
   topConcern: string;
+  consent: boolean;
 };
+
+const CONSENT_TEXT = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our Privacy Policy.`;
 
 const INITIAL: Answers = {
   name: "",
@@ -57,6 +64,7 @@ const INITIAL: Answers = {
   goodwillPlans: "",
   accountantSatisfaction: "",
   topConcern: "",
+  consent: false,
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -79,10 +87,10 @@ export function HealthCheckWizard() {
     [step, totalSteps],
   );
 
-  const supabaseUrl =
-    typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
-  const supabaseKey =
-    typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
+  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
+
+  // AN-02: wizard lifecycle tracking
+  const { onSubmit: trackFormSubmit, onLead } = useFormTracking("health_check");
 
   function update<K extends keyof Answers>(key: K, value: Answers[K]) {
     setA((prev) => ({ ...prev, [key]: value }));
@@ -93,6 +101,7 @@ export function HealthCheckWizard() {
     if (step === 1) {
       if (!a.name.trim()) return "Add your name";
       if (!EMAIL_RE.test(a.email)) return "Valid email is required";
+      if (!a.consent) return "Please tick the consent box so we can respond to you";
       return null;
     }
     if (step === 2) {
@@ -193,34 +202,41 @@ export function HealthCheckWizard() {
           (validatedAnswers.topConcern
             ? `Top concern: ${validatedAnswers.topConcern}`
             : ""),
-        source: "dentists",
+        // PF-07: source from niche config, never a literal
+        source: niche.content_strategy.source_identifier,
         source_url:
           typeof window !== "undefined"
             ? window.location.href
             : "/free-practice-health-check",
         submitted_at: new Date().toISOString(),
+        // LD-04: real consent state from the step-1 checkbox; the stored text is
+        // exactly what the visitor saw next to it.
+        consent_given: a.consent,
+        consent_text: CONSENT_TEXT,
+        consent_at: new Date().toISOString(),
+        // LD-05: stitch visitor + session ids
+        visitor_id: getVisitorId() ?? undefined,
+        session_id: getSessionId() ?? undefined,
       };
 
-      try {
-        await fetch(`${supabaseUrl}/rest/v1/leads`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            apikey: supabaseKey,
-            Authorization: `Bearer ${supabaseKey}`,
-            Prefer: "return=minimal",
-          },
-          body: JSON.stringify(leadPayload),
-        });
+      // LD-02: emit form_submit
+      trackFormSubmit(6);
 
-        if (typeof window !== "undefined" && "gtag" in window) {
-          const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
-          if (gtag) {
-            gtag("event", "generate_lead", {
-              event_category: "engagement",
-              event_label: "dentists_health_check",
-              value: 1,
-            });
+      try {
+        const result = await submitLead(leadPayload, supabaseUrl, supabaseKey);
+
+        if (result.success) {
+          onLead({ role: validatedAnswers.role });
+
+          if (typeof window !== "undefined" && "gtag" in window) {
+            const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
+            if (gtag) {
+              gtag("event", "generate_lead", {
+                event_category: "engagement",
+                event_label: `${niche.niche_id}_health_check`,
+                value: 1,
+              });
+            }
           }
         }
       } catch (err) {
@@ -431,6 +447,15 @@ function Step1({
           placeholder="e.g. High Street Dental"
         />
       </div>
+      <label className="flex items-start gap-2 text-sm text-[var(--muted)]">
+        <input
+          type="checkbox"
+          checked={a.consent}
+          onChange={(e) => update("consent", e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--gold)]"
+        />
+        <span>{CONSENT_TEXT}</span>
+      </label>
     </>
   );
 }

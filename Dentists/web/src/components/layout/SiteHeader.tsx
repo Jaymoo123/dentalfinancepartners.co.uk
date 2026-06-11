@@ -87,6 +87,7 @@ export function SiteHeader() {
           <Link
             href="/contact"
             className={`${btnPrimary} hidden min-h-11 min-w-0 px-4 sm:inline-flex md:min-h-12`}
+            data-cta="header-nav-cta"
           >
             Book a call
           </Link>
@@ -165,6 +166,7 @@ export function SiteHeader() {
                 href="/contact"
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
+                data-cta="header-mobile-cta"
               >
                 Book a call
               </Link>
