@@ -150,5 +150,28 @@ Gap: the unified console experiments tab showed only a flat results table. Prope
 
 **Results:** web-shared 267 tests passing (+20 from 247); console/web 22 tests passing (+9 from 13). console/web `next build` green. tsc Property/web + console/web clean.
 
+### Trends parity restoration -- 2026-06-11 (Sonnet, branch console-experiments-parity, SCOPE ADDITION acknowledged)
+
+Manager scope addition (second parity gap, same recovery motion as the experiments work): the unified console's trend charts were static Sparklines; Property's deleted admin console had an interactive recharts TrendChart (cursor-tracking points, hover tooltips), removed in the same F1 commit.
+
+**Work done:**
+
+1. `console/web/src/components/TrendChart.tsx` (new, "use client"):
+   - Recovered from pre-F1 ref `e403f749~1` (`Property/web/src/components/admin/TrendChart.tsx`) and ported console-app-local per the brief (NOT web-shared).
+   - Port adaptations, documented in the header comment: Property's original depended on its shadcn `ui/card` + `ui/chart` wrappers, the `cn` util (clsx + tailwind-merge) and shadcn theme CSS vars (`--chart-1`/`--chart-2`), none of which exist in the console app. Rather than importing that whole surface, the port is SELF-CONTAINED: plain recharts primitives, a local tooltip-content component visually equivalent to the shadcn one, literal hex colours (emerald #059669 sessions/events, indigo #4f46e5 leads -- Property's original mapping), and the console's existing slate/white card styling. All recovered logic preserved verbatim: en-GB formatters per granularity (tick + long tooltip header), total/peak header, empty state, tick thinning, gradient fill, cursor + activeDot interactivity, accessibilityLayer. Gradient id via React.useId (fixes the original's duplicate-svg-id quirk when two charts share a metric).
+   - `formatBucket`/`formatBucketLong` exported for tests.
+
+2. `console/web/src/app/site/[siteKey]/trends/page.tsx`:
+   - Static Sparkline `TrendSection` blocks replaced with `TrendChart`; layout restored to the old Property trends page (8 charts incl. the 7-day hourly view the static page had dropped). Sparklines KEPT on the overview cards (at-a-glance is fine there; the dedicated trends page is the interactive view).
+   - RSC discipline: data fetched server-side via `getTimeseries`, serialisable `TimePoint[]` + a `formatType` STRING passed into the client chart (the established lesson, carried in both file headers).
+
+3. `console/web/package.json`: `recharts ^3.8.0` added (matches Property's pinned version so the recovered component API is exact). console-web dependency ONLY -- web-shared untouched by this addition.
+
+**Bundle impact (internal tool, accepted per brief):** `/site/[siteKey]/trends` first-load JS 106 kB -> 212 kB (route chunk 106 kB = recharts). All other routes unchanged (103-110 kB).
+
+**Tests added:** `console/web/src/tests/trendchart.test.ts` (+5): header label/total/peak from fixture series, recharts container renders from fixture series (recharts 3 paints SVG on hydration; SSR carries the sized wrapper), metric switch recomputes totals from the same serialisable rows, explicit empty state, en-GB formatter behaviour per granularity.
+
+**Results:** console/web 27 tests passing (+5 from 22); web-shared 267 still passing; console/web `next build` green with trends page rendering the chart route chunk.
+
 ## Sequencing note
 After this phase: Property adoption window (its local console can then be DELETED rather than upgraded — one of the reasons this phase goes first), then estate-wide experiments. Newsletter remains PARKED per user (2026-06-11): revisit when signups/traffic warrant; Resend webhook re-point + generalist NURTURE_* env stay open-but-parked.
