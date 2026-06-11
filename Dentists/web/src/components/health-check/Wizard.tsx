@@ -43,7 +43,10 @@ type Answers = {
   goodwillPlans: GoodwillPlans | "";
   accountantSatisfaction: AccountantSatisfaction | "";
   topConcern: string;
+  consent: boolean;
 };
+
+const CONSENT_TEXT = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our Privacy Policy.`;
 
 const INITIAL: Answers = {
   name: "",
@@ -61,6 +64,7 @@ const INITIAL: Answers = {
   goodwillPlans: "",
   accountantSatisfaction: "",
   topConcern: "",
+  consent: false,
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -97,6 +101,7 @@ export function HealthCheckWizard() {
     if (step === 1) {
       if (!a.name.trim()) return "Add your name";
       if (!EMAIL_RE.test(a.email)) return "Valid email is required";
+      if (!a.consent) return "Please tick the consent box so we can respond to you";
       return null;
     }
     if (step === 2) {
@@ -204,9 +209,10 @@ export function HealthCheckWizard() {
             ? window.location.href
             : "/free-practice-health-check",
         submitted_at: new Date().toISOString(),
-        // Consent: health check implies agreement to be contacted (no separate checkbox on the wizard)
-        consent_given: true,
-        consent_text: `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice.`,
+        // LD-04: real consent state from the step-1 checkbox; the stored text is
+        // exactly what the visitor saw next to it.
+        consent_given: a.consent,
+        consent_text: CONSENT_TEXT,
         consent_at: new Date().toISOString(),
         // LD-05: stitch visitor + session ids
         visitor_id: getVisitorId() ?? undefined,
@@ -441,6 +447,15 @@ function Step1({
           placeholder="e.g. High Street Dental"
         />
       </div>
+      <label className="flex items-start gap-2 text-sm text-[var(--muted)]">
+        <input
+          type="checkbox"
+          checked={a.consent}
+          onChange={(e) => update("consent", e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--gold)]"
+        />
+        <span>{CONSENT_TEXT}</span>
+      </label>
     </>
   );
 }

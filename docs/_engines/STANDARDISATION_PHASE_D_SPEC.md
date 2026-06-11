@@ -66,6 +66,13 @@ Reader apparatus (`ReadingProgress`, `TableOfContents`) are additive shared-comp
 
 ---
 
+**DENTISTS — ACCEPTED (2026-06-11, manager verification) with TWO defects found and fixed forward.**
+- **Defect 1 (consent fabrication — LD-04):** the executor's Wizard wiring hardcoded `consent_given: true` with a stored consent_text the visitor never saw ("health check implies agreement" comment). The OLD Wizard sent no consent fields at all — a pre-existing gap — but the fix manufactured a consent record, which is worse than absence. Manager fix: real consent checkbox on Wizard step 1 (LeadForm pattern: required to advance, `consent_given` from checkbox state, stored text = exactly the displayed label). Lesson for remaining site briefs: consent fields may ONLY ever come from a rendered, user-operated control.
+- **Defect 2 (goldens not harness-wired):** the 52 golden tests passed when run ad hoc but `Dentists/web` had no `vitest.config.ts` (PostCSS clash unresolved) and no `test` script — so CI's `--if-present` test step would have silently skipped them forever. Manager fix: generalist-pattern vitest.config.ts + `"test": "vitest run"`. Lesson: a test that isn't wired into the harness doesn't exist; acceptance must run tests via the site's own `npm test` runner, not ad hoc.
+- Verified after fixes: 52/52 goldens via the wired runner · 229 web-shared suite · `next build` green (262 pages) · PF-07/TL-03/OB-02 greps clean · OB-01 runtime on local server (no-cred 307 → login; key → HttpOnly+SameSite=Strict+Secure sha256-token cookie; /embed 200).
+- Schema STOP accepted as correct executor behaviour: local schema stays; estate-wide schema re-point becomes its own future decision window (same posture pre-set for the other three sites).
+- Deploy gate items (operator): Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY` (fresh random), then deploy + `an01_browser_pass.mjs <url> dfp` + ingest check.
+
 **DENTISTS PHASE D IMPLEMENTATION COMPLETE (Sonnet, 2026-06-11, branch `adopt-dentists`)**
 
 All checklist items executed and acceptance-checked. Summary below.
