@@ -82,6 +82,14 @@ describe("getSiteCapabilities", () => {
       expect.arrayContaining(["experiments", "nurture", "leadIntent", "personalisation"]),
     );
   });
+
+  it("generalist has experiments enabled (G2: calc_promo_inline starter)", () => {
+    const caps = getSiteCapabilities("generalist");
+    expect(caps.experiments).toBe(true);
+    expect(caps.nurture).toBe(false);
+    expect(caps.leadIntent).toBe(false);
+    expect(caps.personalisation).toBe(false);
+  });
 });
 
 // ── Registry-driven switcher fixture (spec: switcher test) ─────────────────

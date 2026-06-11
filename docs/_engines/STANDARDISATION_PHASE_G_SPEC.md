@@ -4,6 +4,36 @@
 
 ## Execution log
 
+### G2 -- 2026-06-11 (branch experiments-g2, executor Sonnet)
+
+**Generalist starter experiment `calc_promo_inline`:**
+- Registry entry in `packages/web-shared/experiments/registries/generalist.ts`: key `calc_promo_inline`, 50/50 control/treatment, status running, full meta with label/controlDesc/treatmentDesc/primary (metricLabel/exposureLabel/actionLabel). Hypothesis: 69% of sessions engage but ~0% reach /calculators; an inline promo card after the first content sections will lift calculator visits. Primary building-block metric: promo CTA click (experiment_action) / scroll-past (experiment_view). Minimum-exposure note in registry comment (~120 per arm to detect 50% relative lift on 30% baseline).
+- Generalist hook composition: `generalist/web/src/lib/experiments.ts` exporting `useExperiment = makeUseExperiment(generalistRegistry)` (two-line composition, mirrors Property shim pattern).
+- Component `generalist/web/src/components/blog/CalcPromoCard.tsx` ("use client"): design-system-native (off-white #fafaf7 bg, ink text, orange #f97316 accent, btnPrimary token). Copy: kicker "Free tool", heading "Check your numbers in 60 seconds", one-sentence body, CTA "Try the calculators" linking /calculators with data-cta="calc_promo_inline" + data-cta-placement="blog_inline" + data-cta-goal="calculator". Dual exposure wired via two useExperimentInView calls (treatment ref on card, control ref on invisible zero-height anchor div) -- both arms record experiment_view when position scrolls into view. trackExperimentAction fires on CTA click (treatment arm only).
+- Mount: injected in BlogPostRenderer between the mobile TOC and the article body prose div -- structurally after the intro/takeaways material, before the main prose. Client leaf (null first paint = invisible anchor, no above-the-fold layout shift).
+- Other four sites (dentists/medical/solicitors/digital-agency): no experiments, no composition wiring -- n/a recorded per spec.
+
+**Console capability map:** `console/web/src/config/capabilities.ts` -- generalist experiments: true added.
+
+**`docs/_engines/EXPERIMENTS.md`** (honesty doc): how to add (registry + 2-line composition + UI branch + capability map + QA override smoke-test); QA override format `?ab=key:variant`; reading results (z-test assumptions, minimum-exposure table 8 rows by baseline/lift combination, building-block vs conversion rationale); per-site traffic table (property ~900, generalist ~35, others <10); the rule (hypothesis + primary metric or no ship); G1 contamination window note.
+
+**Test results:**
+- web-shared: 297 passed (293 pre-G2 + 4 new: generalist 1-running-exp, 50/50 shape, primary-meta block, deterministic bucketing sample)
+- generalist: 33 passed (unchanged -- no new compute tests needed)
+- console: 28 passed (27 pre-G2 + 1 new: generalist experiments capability true)
+
+**Build results:**
+- generalist `next build`: green (compiled successfully, warnings only -- pre-existing)
+- console `next build`: green
+
+**TypeScript:** all 7 sites + console tsc clean (0 errors)
+
+**Acceptance greps:**
+- PF-07: clean (no stray experimentMeta imports outside the shim)
+- No content/markdown blog files touched (BlogPostRenderer.tsx is a component, not a content file)
+
+**STOPs / deferred:** none. The card mount point is between the mobile TOC and the article body (before the prose starts). For treatment arm, the card appears right above the prose after hydration -- "after the intro section", within acceptable structural bounds. Alternative "mid-prose" injection (splitting the HTML blob) was deferred as out-of-scope for the light-touch constraint; the chosen point is structurally stable and below the fold.
+
 ### G1 -- 2026-06-11 (branch experiments-g1, executor Sonnet)
 
 **Golden continuity suite: 64 triples, all PASS.**

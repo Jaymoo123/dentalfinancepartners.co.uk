@@ -353,10 +353,61 @@ describe("registry map completeness", () => {
     }
   });
 
-  it("empty registries (non-property) have zero experiments", () => {
-    const emptyKeys = ["generalist", "dentists", "medical", "solicitors", "digital-agency"];
+  it("empty registries (sites with no experiments yet) have zero experiments", () => {
+    const emptyKeys = ["dentists", "medical", "solicitors", "digital-agency"];
     for (const key of emptyKeys) {
       expect(siteRegistries[key].experiments).toHaveLength(0);
     }
+  });
+
+  // ── G2: generalist registry shape ──────────────────────────────────────────
+
+  it("generalist registry has 1 running experiment (calc_promo_inline)", () => {
+    const running = siteRegistries.generalist.experiments.filter(
+      (e) => e.status === "running",
+    );
+    expect(running).toHaveLength(1);
+    expect(running[0].key).toBe("calc_promo_inline");
+  });
+
+  it("generalist calc_promo_inline is 50/50", () => {
+    const exp = siteRegistries.generalist.experiments.find(
+      (e) => e.key === "calc_promo_inline",
+    )!;
+    expect(exp.variants).toHaveLength(2);
+    const control = exp.variants.find((v) => v.id === "control");
+    const treatment = exp.variants.find((v) => v.id === "treatment");
+    expect(control?.weight).toBe(50);
+    expect(treatment?.weight).toBe(50);
+  });
+
+  it("generalist registry meta has a primary block for calc_promo_inline", () => {
+    const meta = siteRegistries.generalist.meta["calc_promo_inline"];
+    expect(meta).toBeDefined();
+    expect(meta.label).toBeTruthy();
+    expect(meta.controlDesc).toBeTruthy();
+    expect(meta.treatmentDesc).toBeTruthy();
+    expect(meta.primary).toBeDefined();
+    expect(meta.primary?.metricLabel).toBeTruthy();
+    expect(meta.primary?.exposureLabel).toBeTruthy();
+    expect(meta.primary?.actionLabel).toBeTruthy();
+  });
+
+  it("generalist calc_promo_inline assigns deterministically (50/50 sample)", () => {
+    const exp = siteRegistries.generalist.experiments.find(
+      (e) => e.key === "calc_promo_inline",
+    )!;
+    let control = 0;
+    let treatment = 0;
+    for (let i = 0; i < 1000; i++) {
+      const v = assignVariant(`v_gen_${i}`, exp);
+      if (v === "control") control++;
+      if (v === "treatment") treatment++;
+    }
+    // Loose 50/50 bounds (3 sigma from exact 500)
+    expect(control).toBeGreaterThan(350);
+    expect(control).toBeLessThan(650);
+    expect(treatment).toBeGreaterThan(350);
+    expect(treatment).toBeLessThan(650);
   });
 });
