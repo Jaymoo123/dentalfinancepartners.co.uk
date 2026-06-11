@@ -25,6 +25,11 @@ export interface LeadSubmission {
   // builds and other sites are unaffected.
   visitor_id?: string;
   session_id?: string;
+  // Niche-specific or form-specific qualifiers that do not map to a universal
+  // column. Serialised as JSONB on the leads row. Must be omitted (not null) when
+  // no extras are present. The database column is added by a manager-run migration;
+  // the payload passes it through when present.
+  extras?: Record<string, unknown>;
 }
 
 export async function submitLead(

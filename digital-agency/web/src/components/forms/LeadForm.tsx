@@ -99,7 +99,6 @@ export function LeadForm({
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      practice_name: "",
       message: String(data.get("message") || "").trim(),
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
