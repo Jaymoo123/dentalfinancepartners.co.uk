@@ -174,3 +174,59 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 - `web_sessions` → `started_at`/`last_seen_at` (NO created_at) · `web_events` → `ts` · `leads` status CHECK: new/contacted/qualified/converted/archived.
 - All four site keys exist in `sites` registry + leads CHECK. Track-route FK will reject any unregistered key (the Phase A hard gate — protective, not a bug).
 - The vw_* views are site_key-parameterised (Phase B audit) — consoles work per-site with zero view changes.
+
+---
+
+**AGENCY AUDIT (Sonnet, 2026-06-11, branch `adopt-agency`) — COMPLETE. Both commits green.**
+
+**Calculator inventory (8 tools):**
+1. `SalaryDividendOptimiser` — salary/dividend split optimiser. Uses 2025/26 dividend tax rates (8.75%/33.75%/39.35%) and CT 25%. No stale figures.
+2. `RdTaxCreditEstimator` — R&D tax credit estimator. SME scheme rates. No stale figures.
+3. `AgencyValuationCalculator` — agency business valuation (EBITDA multiples). No stale figures.
+4. `BadrCgtCalculator` — BADR capital gains tax. 10% BADR rate, 18%/24% standard CGT rates (post April 2024). Rates correct.
+5. `VatSchemeComparator` — flat-rate vs standard VAT comparison. Static percentages; no stale figures.
+6. `PensionContributionOptimiser` — pension contribution tax saving. 2025/26 rates. No stale figures.
+7. `TakeHomePayCalculator` — PAYE take-home with student loan plans. **STALE-FIGURE STOP APPLIED:** plan1/plan2/plan4 thresholds were 2024/25 values (24,990/27,295/31,395). Golden tests pinned to OLD values first (commit `906e1fca`). Stale-figure correction in separate commit `b1bba488` — 2025/26 values 26,065/28,470/32,745 with derivations. Both commits on branch.
+8. `EmployerNiCalculator` — employer NI calculation. 2025/26 secondary threshold £5,000, 15% rate post April 2025. Rates correct.
+
+**Newsletter surface:** Present (`/newsletter` subscribe form). Double opt-in: confirmation email IS the consent — no consent checkbox needed on subscribe. No GAP-5 action required.
+
+**GA4 tag:** `niche.seo.google_analytics_id` is empty in niche config. No GA4 active on Agency. No ConsentedScripts GA4 argument passed.
+
+**Layout:** RSC, no providers before this branch. ConsentProvider + AnalyticsProvider added (storagePrefix `"aff"` FROZEN per spec, posture `"opt-out"`, noTrackPrefixes `["/admin", "/embed"]`).
+
+**Local schema copies:** LEFT IN PLACE per pre-resolved schema re-point STOP. Output would diverge from shared builders; no re-point.
+
+**Local reader apparatus:**
+- `src/components/blog/ReadingProgress.tsx` and `TableOfContents.tsx` — DOM-identical to shared. Re-pointed to `@accounting-network/web-shared/content`; local copies deleted.
+- BlogPostRenderer.tsx and FundamentalsRenderer.tsx imports updated.
+
+**LeadForm event-wiring:** `useFormTracking`, honeypot `company_url`, visitor/session stitching, field focus/blur/error tracking all wired.
+
+**Health-check wizard (Wizard.tsx):** Step 6 has real rendered consent checkbox (LD-04). `CONSENT_TEXT` constant equals displayed label exactly. `consentGiven` state initialised `false` (never hardcoded). `canAdvance()` blocks at step 6 without consent. POST body includes `consent_given`, `consent_at`, `consent_text`.
+
+**data-cta:** CTASection primary/secondary (`cta-section-primary`/`cta-section-secondary`), SiteHeader desktop nav (`nav-desktop-cta`), SiteHeader mobile nav (`nav-mobile-cta`).
+
+**Scope executed:**
+- Analytics SDK composition: YES. ConsentProvider + AnalyticsProvider + `/api/track` + LeadForm wiring + Wizard consent + data-cta + env example.
+- Tools platform (8 calculators): YES. Pure compute libs (TL-03 clean) + 28 golden tests + GenericTool configs + CalculatorClient RSC boundary + registry + `/calculators/[slug]` static pages + `/embed/[slug]` + `/embed` gallery + sitemap from `allTools()` + old per-slug directories deleted.
+- Console `/admin/analytics`: YES. Full dashboard + trends + leads + visitor timeline. `checkAuth.ts`, `VisitorTabs.tsx`, `/api/admin/login` rate-limited with timing-safe key compare.
+- Schema re-point: STOP (pre-resolved per spec). Local builders left in place.
+- Reader apparatus re-point: YES (DOM-identical). Both components deleted and re-pointed to shared.
+- Nurture: newsletter exists but double opt-in = no re-point needed; n/a for GAP-5.
+
+**Acceptance checks — all PASS:**
+- 28/28 golden tests via `npx vitest run` from `digital-agency/web`
+- `npx tsc --noEmit` clean
+- `next build` GREEN (467 pages, 0 errors)
+- PF-07: no `"agency"` literals in route/analytics files; site key always from `niche.content_strategy.site_key`
+- TL-01: gallery and sitemap derive from `allTools()` only — no hand-listed slugs
+- TL-03: compute libs have no React/window/document/fetch
+- OB-01/OB-02: CONSOLE_NOINDEX_META on all admin pages; credentials via HttpOnly SameSite=Strict cookie
+- LD-04: Wizard consent fields from real rendered user-operated checkbox only; `consent_given` never hardcoded
+
+**Commits on branch:**
+- `906e1fca` — "Phase D: adopt analytics SDK, tools platform + admin console on agency site"
+- `b1bba488` — "Stale-figure fix: student loan thresholds to 2025/26 SLC values"
+
+**Deploy gate (operator):** Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY` (fresh random), deploy, `node scripts/an01_browser_pass.mjs <url> aff`, console login check, ingest check (agency rows in web_sessions).
