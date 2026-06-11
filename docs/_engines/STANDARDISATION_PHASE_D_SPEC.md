@@ -66,6 +66,84 @@ Reader apparatus (`ReadingProgress`, `TableOfContents`) are additive shared-comp
 
 ---
 
+**MEDICAL — ACCEPTED (2026-06-11, manager verification).**
+- 19/19 goldens via the site's wired runner (vitest.config + test script present — the dentists lesson, applied mid-flight via manager relay) · `next build` green (125 pages) · PF-07/TL-03/OB-02 greps clean · wizard consent checkbox verified real and label-matched (the LD-04 relay landed: executor found and fixed the same fabrication risk pre-emptively).
+- **LIVE BUG FOUND BY EXECUTOR (user-facing):** the health-check wizard POSTed to `/api/leads`, which does not exist on Medical — live wizard submissions have been silently lost (errors swallowed). Fixed: shared `submitLead()` path with full contract + consent trio + stitching. **Deploying Medical promptly is the remedy for live lead loss.**
+- **STALE-FIGURE CORRECTION applied by manager (user-approved figures, same family as generalist PR #6):** locum calculator SL thresholds 2024/25 → 2025/26 (plan1 26,065 / plan2 28,470 / plan4 32,745); goldens deliberately updated with derivations; TOOLS.md notice marked RESOLVED. Plan-4 mislabel ("postgraduate") already fixed in the new config.
+- Merge of dentists main resolved one spec-log conflict (both-keep). Schema STOP posture carried (local builders stay).
+- Deploy gate (operator): Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY`, deploy, `an01_browser_pass.mjs <url> ma`, ingest check.
+
+**MEDICAL AUDIT (Sonnet, 2026-06-11, branch `adopt-medical`) — first log entry, pre-implementation.**
+
+**Calculator inventory (3 tools):**
+1. `LocumTaxCalculator` — `src/components/calculators/LocumTaxCalculator.tsx`. Maths: gross income minus expenses and pension contributions, income tax (PA/basic 20%/higher 40%/additional 45%), Class 4 NI (6% on £12,570-£50,270, 2% above), student loan (plan1/plan2/plan4 thresholds 24,990/27,295/31,395). STALE-FIGURE STOP FINDING: student loan thresholds are 2024/25 values (plan1 24,990, plan2 27,295, plan4 31,395) — 2025/26 values are 26,065/28,470/32,745. Golden tests pinned to the OLD values first; correction is a deliberate post-extraction update with user notification (per spec golden-test STOP rule). Also: plan4 is labelled "postgraduate" in the UI but the threshold value and rate (9%) match Plan 4 (Scottish), not the Postgraduate loan (6% above £21,000). Minor label issue recorded.
+2. `NHSPensionCalculator` — `src/components/calculators/NHSPensionCalculator.tsx`. Maths: tapered annual allowance (threshold income £200k, adjusted income £260k; standard allowance £60k, min £10k; tapering £1 for every £2 adjusted income above £260k). No date-sensitive rates; thresholds are the 2023 restored values, not stale. No golden-test STOP condition.
+3. `IncorporationCalculator` — `src/components/calculators/IncorporationCalculator.tsx`. Maths: sole trader vs Ltd for private practice income. Uses dividend tax rates 10.75%/35.75%/39.35% and CT 25%. File comment: "2026/27 using updated dividend tax rates" — rates are correct for 2026/27. No STOP condition.
+
+Gallery page: `/calculators/page.tsx` hand-embeds all 3 components directly — NOT registry-derived (SEO-01 miss; fixed by adoption).
+Sitemap: does NOT include calculator routes (gap; fixed by adoption).
+FLAT routing: Medical blog uses FLAT slugs (`/blog/{slug}` not `/blog/{category}/{slug}`). Sitemap already generates flat URLs correctly. Shared nested-slug tooling false-positives possible — use `scripts/medical_flat_link_audit.py`, never slug_resolver --fix.
+
+**Newsletter surfaces:** None. Nurture = n/a.
+
+**GA4 tag:** `src/app/layout.tsx` line 73, local `GoogleAnalytics.tsx` component. KEPT per spec.
+
+**Layout:** RSC, no providers. ConsentProvider + AnalyticsProvider to be added (storagePrefix `"ma"`, posture `"opt-out"`, noTrackPrefixes `["/admin"]`).
+
+**Local schema copies:**
+- `src/lib/schema.ts` — buildBreadcrumbJsonLd, buildOgImageUrl, buildBlogPostingJsonLd. Differs from shared builders (no @id, string author vs structured Person, no speakable). **STOP: LEFT IN PLACE.**
+- `src/lib/organization-schema.ts` — buildOrganizationJsonLd. LEFT IN PLACE.
+
+**Local reader apparatus:**
+- `src/components/blog/ReadingProgress.tsx` — DOM-IDENTICAL to shared. Will re-point.
+- `src/components/blog/TableOfContents.tsx` — DOM-identical logic; shared version imports focusRing from `@accounting-network/web-shared/components/ui/layout-utils` vs local `@/components/ui/layout-utils`. Same exported value; will re-point.
+
+**LeadForm event-wiring gaps:** No `useFormTracking`, no `company_url` honeypot, no visitor/session stitching, fires gtag directly. Will be fixed.
+
+**Health-check wizard:** `MedicalHealthCheckWizard.tsx` POSTs to `/api/leads` which does NOT exist in Medical. Wizard silently swallows POST errors. Form events + visitor/session stitching will be added, but the missing `/api/leads` route is a pre-existing gap NOT caused by this branch and NOT fixed here (separate production concern).
+
+**data-cta:** CTASection.tsx and SiteHeader.tsx CTAs have no data-cta attributes. Will be added.
+
+**SCHEMA RE-POINT STOP (pre-resolved per spec):** local schema builders LEFT IN PLACE. No re-point.
+
+**Scope for this branch:**
+- Analytics SDK composition: YES.
+- Tools platform (3 calculators): YES. STALE-FIGURE STOP on LocumTax student loan thresholds (golden tests pin OLD values; deliberate correction in same commit with user notification).
+- Console `/admin/analytics`: YES.
+- Schema re-point: STOP. Deferred to manager.
+- Reader apparatus re-point: YES (DOM-identical).
+- Nurture: n/a.
+
+**MEDICAL — MID-FLIGHT GUARDRAIL UPDATE ACKNOWLEDGED (Sonnet, 2026-06-11, branch `adopt-medical`).** Two defects found in the dentists adoption were relayed by the manager; both checked and resolved on Medical:
+
+1. **LD-04 consent (hard rule).** Audit of every lead-submitting surface on Medical found exactly two: `LeadForm.tsx` (already compliant — real required checkbox, `consent_given` from checkbox state, stored `consent_text` = the rendered label) and `MedicalHealthCheckWizard.tsx` (**violation**: no consent checkbox, no consent fields on the payload). Fixed in the wizard following the LeadForm/dentists-Wizard pattern: real user-operated checkbox on step 6 (the contact-details step), required by `canProceed()` so the wizard cannot submit without it, `consent_given` from checkbox state, `CONSENT_TEXT` constant = exactly the label rendered next to the checkbox, `consent_at` at submission. Nothing hardcoded, nothing inferred.
+   - Consequential fix: the wizard previously POSTed to `/api/leads`, which does not exist on Medical (leads were silently lost — flagged in the audit above as "not fixed here"). Storing consent requires a working submission path, so the wizard now submits via the shared `submitLead()` (`web-shared/lib/supabase-client`, same path as the dentists wizard) with the full `LeadSubmission` contract: `full_name`/`email`/`phone`/`role`/`message`, `source` from `niche.content_strategy.source_identifier` (PF-07), `source_url`, `submitted_at`, consent trio, `visitor_id`/`session_id` (LD-05). `onLead` now fires only on confirmed success. This supersedes the earlier "missing `/api/leads` not fixed here" note — the gap is closed by routing around it, not by adding the route.
+
+2. **Test harness wiring.** `Medical/web/vitest.config.ts` created (copy of generalist's, including the `css: { postcss: { plugins: [] } }` PostCSS-clash workaround); `"test": "vitest run"` added to `Medical/web/package.json`. Goldens executed via the site's own runner from `Medical/web`: `npx vitest run` → **1 file, 19/19 tests passed** (`src/lib/tools/compute/medical-tools.test.ts`: 8 LocumTax + 6 NHSPension + 5 Incorporation, including the two ED-01 guard tests).
+
+Also fixed while verifying (tsc was red on the in-flight tools work): tool configs drifted from the shared `CalcField`/`CalcResult` contract (`hint:` → `help:`, headline tone `"neutral"` → `"default"`); `Medical/web/src/lib/schema.ts` now wraps the shared two-arg `buildWebApplication` in a site-bound one-arg wrapper (generalist pattern, `getSiteOpts()`); Medical `Breadcrumb` gained the `variant="light"` prop (dentists pattern, copper hover) used by the calculator hero. `npx tsc --noEmit` clean, eslint clean on all touched files, goldens re-run green after the changes.
+
+**MEDICAL — IMPLEMENTATION COMPLETE (Sonnet, 2026-06-11, commit f930f5c1, branch `adopt-medical`).**
+
+All Phase D items shipped and tested green:
+
+- **Analytics SDK (AN-01/SEC-08):** ConsentProvider + AnalyticsProvider + ConsentedScripts in layout. storagePrefix `"ma"` FROZEN. `/api/track` via `createTrackHandler`. LeadForm fully wired (LD-02/03/04/05): honeypot `company_url`, field focus/blur/error tracking, `trackFormSubmit`, visitor/session stitching, `onLead` replacing direct gtag. MedicalHealthCheckWizard: `useFormTracking("health_check_wizard")`, `trackFormSubmit(TOTAL_STEPS)`, visitor/session stitching, `onLead` on confirmed success.
+- **data-cta:** CTASection primary (`cta-section-primary`), SiteHeader desktop nav (`nav-book-call`), SiteHeader mobile nav (`mobile-nav-book-call`), calculator gallery cards (`calculator-gallery-{slug}`), `/calculators/[slug]` page bottom CTA (`calculator-page-cta`).
+- **Tools platform (3 calculators):** Pure compute libs in `src/lib/tools/compute/` (TL-03 clean). 19 golden tests GREEN. GenericTool configs + CalculatorClient RSC boundary + registry. `/calculators` gallery from `allTools()`. `/calculators/[slug]` static pages. `/embed/[slug]` + `/embed` gallery. `embedPrefix: "embed"` in CSP. `/nhs-pension` inline calculator re-pointed to CalculatorClient. Old calculator components deleted. Sitemap entries from registry. `docs/medical/TOOLS.md` written with all figures traced to sources.
+- **STALE-FIGURE USER NOTIFICATION:** Locum tax student loan thresholds in compute lib are 2024/25 values (plan1=24,990, plan2=27,295, plan4=31,395). Correct 2025/26 values are 26,065/28,470/32,745 (SLC 2025). Golden tests are pinned to OLD values deliberately per spec. Deliberate correction must be a separate named commit.
+- **Console (OB-01/02):** `/admin/analytics` (main dashboard), `/admin/analytics/login`, `/admin/analytics/trends`, `/admin/analytics/leads`, `/admin/analytics/visitor/[visitorId]`. `checkAuth.ts` + `VisitorTabs.tsx`. `/api/admin/login` route. Not-operated panels: A/B experiments, personalisation, nurture (no newsletter surface = n/a), lead-intent enrichment.
+- **Reader apparatus (STD-04):** ReadingProgress and TableOfContents re-pointed to shared (DOM-identical confirmed).
+- **Env example (PF-05):** `Medical/web/.env.local.example` written.
+- **Schema re-point:** STOP confirmed. Local builders left in place. Re-exports of `JsonLd`, `buildWebApplication`, `buildFaqPage` added to `src/lib/schema.ts` for tool pages (additive, no change to existing blog/breadcrumb outputs).
+
+**Acceptance checks:**
+- `next build` GREEN (125 routes, 0 errors, warnings pre-existing)
+- `npx tsc --noEmit` clean
+- 19/19 golden tests pass (`npx vitest run` from `Medical/web`)
+- PF-07: no `"medical"` literals in admin/analytics code; site key always from `niche.content_strategy.site_key`
+- TL-03: compute libs have no React/window/document/fetch (grep verified)
+- OB-01: login form POSTs to `/api/admin/login`, credential never in URL
+- AN-01: storagePrefix `"ma"` frozen literal in layout.tsx only (deliberate frozen value, not a config key)
 **DENTISTS — ACCEPTED (2026-06-11, manager verification) with TWO defects found and fixed forward.**
 - **Defect 1 (consent fabrication — LD-04):** the executor's Wizard wiring hardcoded `consent_given: true` with a stored consent_text the visitor never saw ("health check implies agreement" comment). The OLD Wizard sent no consent fields at all — a pre-existing gap — but the fix manufactured a consent record, which is worse than absence. Manager fix: real consent checkbox on Wizard step 1 (LeadForm pattern: required to advance, `consent_given` from checkbox state, stored text = exactly the displayed label). Lesson for remaining site briefs: consent fields may ONLY ever come from a rendered, user-operated control.
 - **Defect 2 (goldens not harness-wired):** the 52 golden tests passed when run ad hoc but `Dentists/web` had no `vitest.config.ts` (PostCSS clash unresolved) and no `test` script — so CI's `--if-present` test step would have silently skipped them forever. Manager fix: generalist-pattern vitest.config.ts + `"test": "vitest run"`. Lesson: a test that isn't wired into the harness doesn't exist; acceptance must run tests via the site's own `npm test` runner, not ad hoc.
