@@ -1,6 +1,10 @@
 # Standardisation — Phase D: estate rollout (Dentists → Medical → Solicitors → digital-agency)
 
-**Status:** EXECUTING — opened 2026-06-11 on user go ("roll the machinery out to all of the other sites... put sonnet to work").
+**Status:** CLOSED 2026-06-11 — all four sites adopted, merged (PRs #10-#13, post-merge main CI green each), DEPLOYED to production, and live-verified the same day.
+
+**DEPLOY ROUND + LIVE VERIFICATION (manager, 2026-06-11).** Env via API: ADMIN_DASHBOARD_KEY (fresh, sensitive) all 4 + SUPABASE_SERVICE_ROLE_KEY (from Supabase Management API /api-keys — Vercel sensitive values are unreadable, this is the canonical re-fetch path) on dentists/medical/solicitors + NURTURE_FROM_*/REPLY_TO (identity strings recovered from old-fork fallbacks) + fresh NURTURE_TOKEN_SECRET (zero in-flight tokens) on agency. NURTURE_WEBHOOK_SECRET deliberately UNSET — events route 503s per SEC-05 until the operator re-points the Resend dashboard endpoint to /api/nurture/events and supplies the new whsec_ (OPEN operator item). Agency stays ARMED (CRON_SECRET retained — status quo, zero subscribers). Deploys: medical first (live lead-loss remedy), then dentists/solicitors/agency. Live battery ALL GREEN per site: an01_browser_pass (beacons fire · ids under dfp/ma/afl/aff · opt-out stops beacons live · resume after clear) · console no-cred 307 + key→session cookie · ingest verified: ALL SIX site_keys landing fresh sessions in the shared store. The 4 AN-01 test sessions deleted (88 events, 4 sessions) — store stays real-traffic-only.
+
+**Status history:** EXECUTING — opened 2026-06-11 on user go ("roll the machinery out to all of the other sites... put sonnet to work").
 
 **The phase in one line:** the four remaining sites adopt the shared machinery generalist proved in Phases A-C — analytics SDK, tools platform, operator console, schema/reader apparatus — by composition against `packages/web-shared`, one site per branch, strictly sequential.
 
