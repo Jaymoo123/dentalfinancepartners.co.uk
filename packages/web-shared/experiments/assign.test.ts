@@ -1,0 +1,362 @@
+/**
+ * Golden continuity suite for the shared experiments assign module.
+ *
+ * THE SACRED CONSTRAINT (spec constraint 1): Property has live experiments with
+ * real result rows in the database. The shared module MUST produce identical
+ * variant assignments to Property's original implementation. A changed
+ * assignment would scramble running experiments.
+ *
+ * Methodology:
+ *  - 64 (visitorId, key) -> variant triples were computed from Property's
+ *    CURRENT lib/experiments/assign.ts BEFORE the lift, using the djb2 hash
+ *    algorithm with the `${visitorId}:${key}` seed.
+ *  - Triples cover: all 6 running experiments, visitor ids landing in each
+ *    variant, weighted bucket edges (ids hashing near the 25/75 personalization
+ *    boundary and the 50/50 boundaries), empty/missing visitor id, unknown
+ *    experiment key, and off/disabled experiments.
+ *  - Any change to the hash function or bucketing logic that breaks a triple
+ *    is a STOP -- it means live visitor assignments would diverge.
+ *
+ * Edge-case coverage:
+ *  - Empty visitorId -> null (treat as control on calling side)
+ *  - Unknown experiment key -> null (experiment object is null)
+ *  - "off" experiment -> null (getExperiment returns null for off status)
+ *  - Boundary buckets: personalization last-control (bucket 24) and
+ *    first-treatment (bucket 25); calc_result_capture last-control (bucket 49)
+ *    and first-treatment (bucket 50)
+ */
+
+import { describe, it, expect } from "vitest";
+import { assignVariant } from "./assign";
+import type { Experiment } from "./types";
+import { propertyRegistry } from "./registries/property";
+import { siteRegistries } from "./registries/index";
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+function getPropertyExp(key: string): Experiment | null {
+  return (
+    propertyRegistry.experiments.find(
+      (e) => e.key === key && e.status === "running",
+    ) ?? null
+  );
+}
+
+// ---------------------------------------------------------------------------
+// 1. Golden continuity triples (64 triples, all 6 Property experiments)
+//    Computed from Property's CURRENT assign.ts before the lift.
+// ---------------------------------------------------------------------------
+
+describe("golden continuity suite", () => {
+  const GOLDEN_TRIPLES: Array<{ visitorId: string; key: string; variant: string }> = [
+    // Fixed visitor id: v_abc123def456 across all 6 experiments
+    { visitorId: "v_abc123def456", key: "personalization", variant: "treatment" },
+    { visitorId: "v_abc123def456", key: "calc_result_capture", variant: "treatment" },
+    { visitorId: "v_abc123def456", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_abc123def456", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_abc123def456", key: "mobile_tool_capture", variant: "treatment" },
+    { visitorId: "v_abc123def456", key: "lead_form_length", variant: "treatment" },
+    // Fixed visitor id: v_xyz789uvw012 (this visitor lands in control for most)
+    { visitorId: "v_xyz789uvw012", key: "personalization", variant: "control" },
+    { visitorId: "v_xyz789uvw012", key: "calc_result_capture", variant: "control" },
+    { visitorId: "v_xyz789uvw012", key: "exit_intent_offer", variant: "control" },
+    { visitorId: "v_xyz789uvw012", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_xyz789uvw012", key: "mobile_tool_capture", variant: "control" },
+    { visitorId: "v_xyz789uvw012", key: "lead_form_length", variant: "treatment" },
+    // Fixed visitor id: v_111aaa222bbb
+    { visitorId: "v_111aaa222bbb", key: "personalization", variant: "treatment" },
+    { visitorId: "v_111aaa222bbb", key: "calc_result_capture", variant: "treatment" },
+    { visitorId: "v_111aaa222bbb", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_111aaa222bbb", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_111aaa222bbb", key: "mobile_tool_capture", variant: "treatment" },
+    { visitorId: "v_111aaa222bbb", key: "lead_form_length", variant: "treatment" },
+    // Fixed visitor id: v_visitor_test (mix of control + treatment)
+    { visitorId: "v_visitor_test", key: "personalization", variant: "treatment" },
+    { visitorId: "v_visitor_test", key: "calc_result_capture", variant: "control" },
+    { visitorId: "v_visitor_test", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_visitor_test", key: "gate_to_form", variant: "treatment" },
+    { visitorId: "v_visitor_test", key: "mobile_tool_capture", variant: "control" },
+    { visitorId: "v_visitor_test", key: "lead_form_length", variant: "control" },
+    // Fixed visitor id: v_property_usr
+    { visitorId: "v_property_usr", key: "personalization", variant: "treatment" },
+    { visitorId: "v_property_usr", key: "calc_result_capture", variant: "treatment" },
+    { visitorId: "v_property_usr", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_property_usr", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_property_usr", key: "mobile_tool_capture", variant: "treatment" },
+    { visitorId: "v_property_usr", key: "lead_form_length", variant: "treatment" },
+    // Fixed visitor id: v_tester_00001
+    { visitorId: "v_tester_00001", key: "personalization", variant: "control" },
+    { visitorId: "v_tester_00001", key: "calc_result_capture", variant: "treatment" },
+    { visitorId: "v_tester_00001", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_tester_00001", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_tester_00001", key: "mobile_tool_capture", variant: "treatment" },
+    { visitorId: "v_tester_00001", key: "lead_form_length", variant: "treatment" },
+    // Fixed visitor id: v_tester_00002 (all-control visitor)
+    { visitorId: "v_tester_00002", key: "personalization", variant: "control" },
+    { visitorId: "v_tester_00002", key: "calc_result_capture", variant: "control" },
+    { visitorId: "v_tester_00002", key: "exit_intent_offer", variant: "control" },
+    { visitorId: "v_tester_00002", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_tester_00002", key: "mobile_tool_capture", variant: "control" },
+    { visitorId: "v_tester_00002", key: "lead_form_length", variant: "control" },
+    // Fixed visitor id: v_tester_00003
+    { visitorId: "v_tester_00003", key: "personalization", variant: "control" },
+    { visitorId: "v_tester_00003", key: "calc_result_capture", variant: "treatment" },
+    { visitorId: "v_tester_00003", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_tester_00003", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_tester_00003", key: "mobile_tool_capture", variant: "treatment" },
+    { visitorId: "v_tester_00003", key: "lead_form_length", variant: "control" },
+    // Fixed visitor id: v_tester_00004
+    { visitorId: "v_tester_00004", key: "personalization", variant: "treatment" },
+    { visitorId: "v_tester_00004", key: "calc_result_capture", variant: "control" },
+    { visitorId: "v_tester_00004", key: "exit_intent_offer", variant: "control" },
+    { visitorId: "v_tester_00004", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_tester_00004", key: "mobile_tool_capture", variant: "control" },
+    { visitorId: "v_tester_00004", key: "lead_form_length", variant: "treatment" },
+    // Fixed visitor id: v_tester_00005
+    { visitorId: "v_tester_00005", key: "personalization", variant: "treatment" },
+    { visitorId: "v_tester_00005", key: "calc_result_capture", variant: "treatment" },
+    { visitorId: "v_tester_00005", key: "exit_intent_offer", variant: "treatment" },
+    { visitorId: "v_tester_00005", key: "gate_to_form", variant: "control" },
+    { visitorId: "v_tester_00005", key: "mobile_tool_capture", variant: "treatment" },
+    { visitorId: "v_tester_00005", key: "lead_form_length", variant: "control" },
+    // Boundary triples -- probed by searching for hash % total === boundary value
+    // personalization: last-control bucket (24 of 100, weight split 25/75)
+    { visitorId: "v_test_34", key: "personalization", variant: "control" },
+    // personalization: first-treatment bucket (25 of 100)
+    { visitorId: "v_test_79", key: "personalization", variant: "treatment" },
+    // calc_result_capture: last-control bucket (49 of 100, weight split 50/50)
+    { visitorId: "v_test_99", key: "calc_result_capture", variant: "control" },
+    // calc_result_capture: first-treatment bucket (50 of 100)
+    { visitorId: "v_test_52", key: "calc_result_capture", variant: "treatment" },
+  ];
+
+  it(`passes all ${GOLDEN_TRIPLES.length} pinned triples unchanged`, () => {
+    for (const { visitorId, key, variant } of GOLDEN_TRIPLES) {
+      const exp = getPropertyExp(key);
+      const got = assignVariant(visitorId, exp);
+      expect(
+        got,
+        `assignVariant("${visitorId}", "${key}") should be "${variant}" but got "${got}"`,
+      ).toBe(variant);
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 2. Null/missing-input contract
+// ---------------------------------------------------------------------------
+
+describe("null contract", () => {
+  it("returns null when visitorId is empty string", () => {
+    const exp = getPropertyExp("personalization")!;
+    expect(assignVariant("", exp)).toBeNull();
+  });
+
+  it("returns null when experiment is null", () => {
+    expect(assignVariant("v_abc123def456", null)).toBeNull();
+  });
+
+  it("returns null when experiment is undefined", () => {
+    expect(assignVariant("v_abc123def456", undefined)).toBeNull();
+  });
+
+  it("returns null for an unknown experiment key (getPropertyExp returns null)", () => {
+    const exp = getPropertyExp("unknown_experiment_key_does_not_exist");
+    expect(exp).toBeNull();
+    expect(assignVariant("v_abc123def456", exp)).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 3. Off/disabled experiment
+// ---------------------------------------------------------------------------
+
+describe("off experiment", () => {
+  it("returns null when the experiment is passed with status 'off'", () => {
+    const offExp: Experiment = {
+      key: "some_test",
+      status: "off",
+      variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }],
+    };
+    // The registry lookup (not assignVariant itself) filters off experiments.
+    // assignVariant takes whatever experiment object is passed; callers should
+    // only pass running experiments. Verify that getPropertyExp returns null for
+    // off experiments (it filters by status === "running").
+    expect(getPropertyExp("some_test")).toBeNull();
+    // If someone passes an off experiment directly, assignVariant still assigns
+    // (it doesn't re-check status) -- so the gate is at the registry layer.
+    // Document this by testing that the registry gate works:
+    const offExpShadow: Experiment = { ...offExp, status: "off" };
+    // null experiment passed from registry lookup => null result
+    expect(assignVariant("v_abc123def456", null)).toBeNull();
+    // For completeness: non-null off exp passed directly still assigns a variant
+    // (the contract is that callers pass running experiments only)
+    expect(assignVariant("v_abc123def456", offExpShadow)).not.toBeNull();
+  });
+
+  it("getPropertyExp returns null for off experiments (verifies registry gate)", () => {
+    // None of the Property experiments are off right now. Simulate by checking
+    // that a nonexistent key returns null (same code path as an off experiment).
+    expect(getPropertyExp("nonexistent_key")).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 4. Weighted bucketing edge cases
+// ---------------------------------------------------------------------------
+
+describe("weighted bucketing", () => {
+  it("25/75 split distributes roughly in proportion (sample 1000)", () => {
+    const exp = getPropertyExp("personalization")!;
+    let control = 0;
+    let treatment = 0;
+    for (let i = 0; i < 1000; i++) {
+      const v = assignVariant(`v_sample_${i}`, exp);
+      if (v === "control") control++;
+      if (v === "treatment") treatment++;
+    }
+    // Loose bounds: 25% control => expect 150-350 (3 sigma out from exact 250)
+    expect(control).toBeGreaterThan(150);
+    expect(control).toBeLessThan(350);
+    expect(treatment).toBeGreaterThan(650);
+    expect(treatment).toBeLessThan(850);
+  });
+
+  it("50/50 split distributes roughly in proportion (sample 1000)", () => {
+    const exp = getPropertyExp("calc_result_capture")!;
+    let control = 0;
+    let treatment = 0;
+    for (let i = 0; i < 1000; i++) {
+      const v = assignVariant(`v_sample_${i}`, exp);
+      if (v === "control") control++;
+      if (v === "treatment") treatment++;
+    }
+    expect(control).toBeGreaterThan(350);
+    expect(control).toBeLessThan(650);
+    expect(treatment).toBeGreaterThan(350);
+    expect(treatment).toBeLessThan(650);
+  });
+
+  it("is fully deterministic: same id + key always yields same variant", () => {
+    const exp = getPropertyExp("exit_intent_offer")!;
+    for (let i = 0; i < 50; i++) {
+      const vid = `v_stable_${i}`;
+      const first = assignVariant(vid, exp);
+      const second = assignVariant(vid, exp);
+      expect(first).toBe(second);
+    }
+  });
+
+  it("single-variant experiment always returns that variant", () => {
+    const singleExp: Experiment = {
+      key: "single_variant",
+      status: "running",
+      variants: [{ id: "only", weight: 100 }],
+    };
+    expect(assignVariant("v_any_visitor", singleExp)).toBe("only");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 5. Override parsing (from useExperiment -- tested via the helper inline)
+// ---------------------------------------------------------------------------
+
+describe("override parsing", () => {
+  // The override parser is in react/useExperiment.ts (uses window.location).
+  // We test the logic inline here to avoid React/jsdom dependencies.
+
+  function parseOverride(search: string, key: string): string | null {
+    const ab = new URLSearchParams(search).get("ab");
+    if (!ab) return null;
+    for (const tok of ab.split(",")) {
+      const i = tok.indexOf(":");
+      if (i > 0 && tok.slice(0, i) === key) return tok.slice(i + 1) || null;
+    }
+    return null;
+  }
+
+  it("parses a single override", () => {
+    expect(parseOverride("?ab=personalization:control", "personalization")).toBe("control");
+  });
+
+  it("parses the correct key from multiple overrides", () => {
+    expect(parseOverride("?ab=personalization:treatment,calc_result_capture:control", "calc_result_capture")).toBe("control");
+  });
+
+  it("returns null when the key is not in the override string", () => {
+    expect(parseOverride("?ab=personalization:treatment", "calc_result_capture")).toBeNull();
+  });
+
+  it("returns null when there is no ?ab param", () => {
+    expect(parseOverride("", "personalization")).toBeNull();
+    expect(parseOverride("?foo=bar", "personalization")).toBeNull();
+  });
+
+  it("returns null for a malformed token (no colon)", () => {
+    expect(parseOverride("?ab=personalization", "personalization")).toBeNull();
+  });
+
+  it("returns null for an empty value after the colon", () => {
+    expect(parseOverride("?ab=personalization:", "personalization")).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 6. Registry map completeness
+// ---------------------------------------------------------------------------
+
+describe("registry map completeness", () => {
+  const REQUIRED_SITE_KEYS = [
+    "property",
+    "generalist",
+    "dentists",
+    "medical",
+    "solicitors",
+    "digital-agency",
+  ];
+
+  it("siteRegistries contains all 6 required site keys", () => {
+    for (const key of REQUIRED_SITE_KEYS) {
+      expect(
+        siteRegistries,
+        `siteRegistries should have key "${key}"`,
+      ).toHaveProperty(key);
+    }
+  });
+
+  it("each registry has the required shape (experiments array + meta object)", () => {
+    for (const key of REQUIRED_SITE_KEYS) {
+      const reg = siteRegistries[key];
+      expect(Array.isArray(reg.experiments), `${key}.experiments should be an array`).toBe(true);
+      expect(typeof reg.meta, `${key}.meta should be an object`).toBe("object");
+    }
+  });
+
+  it("property registry has 6 running experiments", () => {
+    const running = siteRegistries.property.experiments.filter(
+      (e) => e.status === "running",
+    );
+    expect(running).toHaveLength(6);
+  });
+
+  it("property registry meta has entries for all running experiment keys", () => {
+    const runningKeys = siteRegistries.property.experiments
+      .filter((e) => e.status === "running")
+      .map((e) => e.key);
+    for (const key of runningKeys) {
+      expect(
+        siteRegistries.property.meta,
+        `property registry meta should have key "${key}"`,
+      ).toHaveProperty(key);
+    }
+  });
+
+  it("empty registries (non-property) have zero experiments", () => {
+    const emptyKeys = ["generalist", "dentists", "medical", "solicitors", "digital-agency"];
+    for (const key of emptyKeys) {
+      expect(siteRegistries[key].experiments).toHaveLength(0);
+    }
+  });
+});

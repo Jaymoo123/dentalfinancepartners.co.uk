@@ -55,7 +55,7 @@ import {
   type ExperimentFunnelArms,
 } from "@accounting-network/web-shared/console/adminData";
 import { ExperimentCard } from "@accounting-network/web-shared/console/components/ExperimentCards";
-import { getExperimentMeta } from "@/config/experimentMeta";
+import { getExperimentMeta } from "@accounting-network/web-shared/experiments/registries";
 import {
   getSitesRegistry,
 } from "@accounting-network/web-shared/console/estateData";
@@ -711,7 +711,7 @@ export default async function SitePage({
                 {experimentKeys.map((key) => (
                   <ExperimentCard
                     key={key}
-                    meta={getExperimentMeta(key)}
+                    meta={getExperimentMeta(siteKey, key)}
                     arms={experimentArms[key] ?? { control: null, treatment: null }}
                     funnel={experimentFunnel[key]}
                   />

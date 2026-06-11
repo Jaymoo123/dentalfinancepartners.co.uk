@@ -1,40 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { getVisitorId } from "@accounting-network/web-shared/analytics/ids";
-import { assignVariant } from "@/lib/experiments/assign";
-import { setActiveExperiment } from "@accounting-network/web-shared/analytics/experiments/active";
+/**
+ * Property useExperiment hook -- re-export shim.
+ *
+ * Composes the shared factory with the Property registry and exports
+ * `useExperiment` under the same name, preserving the existing API.
+ *
+ * Source of truth: packages/web-shared/experiments/react/useExperiment.ts
+ */
+import { makeUseExperiment } from "@accounting-network/web-shared/experiments/react/useExperiment";
+import { propertyRegistry } from "@accounting-network/web-shared/experiments/registries/property";
 
 /**
- * QA / preview override: `?ab=key:variant[,key2:variant2]` in the URL forces a
- * variant for that experiment, so you can preview a treatment without waiting to
- * be bucketed into it. Only affects the current visitor's own session.
+ * Assign + register the variant for a Property experiment. Returns null (control)
+ * on the server and first client render to avoid hydration mismatch, then the
+ * stable variant after mount. Branch on the return value to vary the UI; exposure
+ * is stamped onto every analytics event automatically.
  */
-function overrideFor(key: string): string | null {
-  if (typeof window === "undefined") return null;
-  const ab = new URLSearchParams(window.location.search).get("ab");
-  if (!ab) return null;
-  for (const tok of ab.split(",")) {
-    const i = tok.indexOf(":");
-    if (i > 0 && tok.slice(0, i) === key) return tok.slice(i + 1) || null;
-  }
-  return null;
-}
-
-/**
- * Assign + register the variant for an experiment. Returns null (control) on the
- * server and first client render to avoid hydration mismatch, then the stable
- * variant after mount. Branch on the return value to vary the UI; exposure is
- * stamped onto every analytics event automatically.
- */
-export function useExperiment(key: string): string | null {
-  const [variant, setVariant] = useState<string | null>(null);
-  useEffect(() => {
-    const v = overrideFor(key) ?? assignVariant(getVisitorId() || "", key);
-    if (v) {
-      setActiveExperiment(key, v);
-      setVariant(v);
-    }
-  }, [key]);
-  return variant;
-}
+export const useExperiment = makeUseExperiment(propertyRegistry);

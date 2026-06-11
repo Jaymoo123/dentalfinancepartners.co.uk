@@ -1,11 +1,16 @@
+/**
+ * Property experiment assignment -- re-export shim.
+ *
+ * Preserves the original `assignVariant(visitorId, key)` signature that
+ * Property components rely on (key is a string, registry lookup is internal).
+ * Delegates to the shared pure `assignVariant` + the Property registry.
+ *
+ * Source of truth: packages/web-shared/experiments/assign.ts
+ */
+import {
+  assignVariant as _sharedAssign,
+} from "@accounting-network/web-shared/experiments/assign";
 import { getExperiment } from "./registry";
-
-/** djb2 string hash -> unsigned 32-bit. Stable across server + client. */
-function hash(s: string): number {
-  let h = 5381;
-  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
-  return h;
-}
 
 /**
  * Deterministic variant for a visitor + experiment. Same (visitor_id, key)
@@ -14,12 +19,5 @@ function hash(s: string): number {
  */
 export function assignVariant(visitorId: string, key: string): string | null {
   const exp = getExperiment(key);
-  if (!exp || !visitorId) return null;
-  const total = exp.variants.reduce((a, v) => a + v.weight, 0) || 1;
-  let bucket = hash(`${visitorId}:${key}`) % total;
-  for (const v of exp.variants) {
-    if (bucket < v.weight) return v.id;
-    bucket -= v.weight;
-  }
-  return exp.variants[0]?.id ?? null;
+  return _sharedAssign(visitorId, exp);
 }

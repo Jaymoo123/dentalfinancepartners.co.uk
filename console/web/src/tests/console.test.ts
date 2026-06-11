@@ -14,7 +14,12 @@
 
 import { describe, it, expect } from "vitest";
 import { getSiteCapabilities } from "../config/capabilities";
-import { getExperimentMeta, EXPERIMENT_META } from "../config/experimentMeta";
+import { getExperimentMeta as _getExperimentMetaForSite, siteRegistries } from "@accounting-network/web-shared/experiments/registries";
+
+// The console tests exercise Property experiment meta (the one site with real data).
+// Wrap the two-arg shared function to match the single-arg contract the tests expect.
+function getExperimentMeta(key: string) { return _getExperimentMetaForSite("property", key); }
+const EXPERIMENT_META = siteRegistries.property.meta;
 import type { SiteRegistryEntry } from "@accounting-network/web-shared/console/estateData";
 import {
   verifyConsoleKey,
