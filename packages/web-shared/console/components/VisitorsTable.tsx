@@ -51,10 +51,12 @@ type Filter = "all" | "converted" | "returning";
 type Sort = "recent" | "engaged" | "visits";
 
 function Stat({ label, value }: { label: string; value: string }) {
+  // Matches SnapshotCard's spacing/type scale so the four visitor stats sit on
+  // the same visual grid as every other dashboard card.
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-3">
+    <div className="rounded-xl border border-slate-200 bg-white p-4">
       <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">{label}</div>
-      <div className="mt-0.5 text-xl font-bold text-slate-900">{value}</div>
+      <div className="mt-1 text-2xl font-bold text-slate-900">{value}</div>
     </div>
   );
 }

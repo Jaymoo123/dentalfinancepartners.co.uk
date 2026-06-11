@@ -203,6 +203,7 @@ function CalculatorsPanel({ placement }: { placement: CalculatorConversionPlacem
         <p className="mt-3 text-sm text-slate-400">No calculator data yet.</p>
       ) : (
         <Detail summary={`Per-tool detail by placement (${rows.length})`}>
+          <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
               <tr>
@@ -229,6 +230,7 @@ function CalculatorsPanel({ placement }: { placement: CalculatorConversionPlacem
               ))}
             </tbody>
           </table>
+          </div>
         </Detail>
       )}
     </div>
@@ -625,7 +627,7 @@ export default async function SitePage({
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
-      <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <tbody>
             {funnelRows.map((r) => {
