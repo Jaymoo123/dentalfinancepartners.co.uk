@@ -46,13 +46,15 @@ export function SignupForm({
     setState("submitting");
     setError(null);
     try {
-      const res = await fetch("/api/newsletter/subscribe", {
+      const res = await fetch("/api/nurture/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
+          consent: true,
+          consent_text:
+            "I agree to receive accounting and tax updates by email from Holloway Davies.",
           source,
-          sourceUrl: typeof window !== "undefined" ? window.location.href : undefined,
         }),
       });
       if (!res.ok) {
