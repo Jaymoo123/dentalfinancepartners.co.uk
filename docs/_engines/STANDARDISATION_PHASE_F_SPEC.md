@@ -59,6 +59,10 @@ All callers of `setActiveExperiment` re-pointed from local `@/lib/experiments/ac
 
 **Deferred to manager:** Nothing deferred. No STOPs triggered. Manager to: verify + merge branch, run deploy gate (per spec), confirm live sessions still landing in Supabase before opening F2.
 
+**F1 + F2 DEPLOYED + LIVE-VERIFIED (manager, 2026-06-11).**
+- F1 (merged PR #16, CI 10/10): deploy battery green — pages 200, `api/leads/notify` 401 (alive), track 204, an01 pass on ptp prefix (opt-out stops beacons live), property ingest confirmed, test session cleaned. Strays note: parallel console work left uncommitted duplicates of its own committed changes in the main tree — verified byte-identical to the branch versions and discarded.
+- F2 (merged PR #17, CI 10/10): deploy battery green — calculator + embed pages 200, JSON-LD block types match local build (WebApplication + BreadcrumbList), **embed FROZEN contract proven on PROD from a genuine third-party HTTP page** (`scripts/f2_http_harness.mjs` + `f2_direct_probe.mjs`: parent received `{type:"ptp-embed-height",height}` ×2; the first file://-host harness failure was a harness artifact — file:// parents are unreliable for iframe message tests, use the HTTP harness). 71 goldens now guard the fleet; zero stale figures found (Property constants all current incl. 2027/28 22% reducer note).
+
 ## Why this is safe (the user's condition, answered)
 
 - **Visitor continuity verified pre-flight (manager, 2026-06-11):** the shared SDK with `storagePrefix: "ptp"` produces byte-identical localStorage keys (`ptp_vid`/`ptp_sid`/`ptp_sid_ts`/`ptp_consent`) to Property's local `lib/analytics/ids.ts`. Returning visitors keep identity + consent with zero migration. No `legacyPrefix` needed.
