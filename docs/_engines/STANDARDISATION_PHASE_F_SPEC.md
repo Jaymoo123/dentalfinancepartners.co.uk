@@ -71,6 +71,72 @@ All callers of `setActiveExperiment` re-pointed from local `@/lib/experiments/ac
 
 **Live-DB / env facts (manager-verified 2026-06-11):** Property Vercel env: SUPABASE keys + ADMIN_DASHBOARD_KEY + LEADS_NOTIFY_SECRET + RESEND_API_KEY + NEXT_PUBLIC_CLARITY_ID + SITE_URL (+ oversized-fallback bypass). No CRON_SECRET, no NURTURE_*. Project: `property-tax-partners` (prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU, rootDirectory `Property/web`, workspace-root installCommand).
 
+### F2 — tools platform — COMPLETE 2026-06-11 (branch `property-adopt-2`)
+
+**Executor:** Claude Sonnet (claude-sonnet-4-6). Full re-point executed + all acceptance checks green.
+
+**Fleet audit:**
+- 16 tools total: 5 bespoke + 11 generic (all generic: config-driven, no bespoke component)
+- 6 premium tools registered separately in `lib/calculators/premium/registry.ts` (bespoke kind, surfaced as client islands only; not in main fleet registry)
+- Gallery, sitemap, embed gallery all derive from `allTools()` -- TL-01 confirmed
+
+**Embed contract (STOP check):**
+- Local `EmbedAutoResize` pre-F2: `postMessage({ type: "ptp-embed-height", height }, "*")` (hardcoded, no props)
+- Shared `EmbedAutoResize`: `postMessage({ type: messageType, height }, "*")` (prop-driven)
+- Composition: `<SharedEmbedAutoResize messageType="ptp-embed-height" />` inside a local shim
+- Verdict: IDENTICAL wire format. Third-party embed listeners unaffected. **STOP NOT triggered.**
+
+**Golden tests written (before re-pointing):**
+71 tests across 13 suites pinning current compute outputs:
+- Registry contract (9): 16 total tools, 5 bespoke, 11 generic, all slugs present
+- Format helpers (2): gbp/pct formatting
+- CGT compute (7): gain=108000, AEA=3000, headline=£25,184, effective rate 20-25%
+- Rental income tax (5): profit=15000, headline=£4,800, take-home=£4,200; note confirms 22%/2027-28 (FA 2026 ground truth)
+- Rental yield (4): gross 6.0%, net 4.4%, monthly £917
+- BTL cashflow (3): £350/mo, £4,200/yr, tone=good
+- LBTT Scotland (5): main=£2,100, ADS=£20,000 (8%), total=£22,100
+- LTT Wales (4): higher rates £14,950, main rates £1,500
+- FTB SDLT (4): £2,500 with relief, £7,500 standard, £5,000 saving; relief withdrawn above £500k
+- Corporation Tax (5): £5,700 (19%) at £30k; boundary/marginal cases
+- Dividend Tax (2): all basic-band, £1,706 tax
+- Rent-a-Room (3): scheme £600 beats normal £2,800
+- Property Allowance (4): allowance £600 beats actual £760; covers at £1,000
+- Stale-figure sentinels (8): AEA £3,000, SDLT 5%, LBTT ADS 8%, CT 19%/25%
+
+**No stale figures found.** All ground truths match locked constants in lib/*.ts.
+
+**Re-points executed:**
+- `lib/calculators/types.ts` -- re-export from shared types (shim, keeps all downstream working)
+- `lib/calculators/format.ts` -- re-export from shared format (shim)
+- `lib/calculators/registry.ts` -- adopts `makeRegistryHelpers` from shared (TL-01); TOOLS array stays local
+- `components/calculators/fields/Field.tsx` -- re-export from shared Field
+- `components/embed/EmbedAutoResize.tsx` -- composes shared with frozen `messageType="ptp-embed-height"`
+- `components/embed/EmbedSnippet.tsx` -- re-export from shared
+- `components/calculators/CalculatorClient.tsx` (NEW) -- RSC boundary wrapper; resolves tool from local registry, passes GenericTool to shared Calculator
+- `app/calculators/[slug]/page.tsx` -- `<Calculator slug>` replaced with `<CalculatorClient slug>`
+- `app/embed/[slug]/page.tsx` -- same
+
+**Deleted:** `components/calculators/Calculator.tsx` (zero remaining importers after re-point)
+
+**TL-01:** gallery/sitemap/embed gallery all call `allTools()` from local registry -- confirmed unchanged post re-point.
+**TL-03:** No inline tax compute in components; all compute lives in pure `lib/*.ts` files.
+**TL-06:** Generic tools: `CalculatorClient -> shared Calculator -> track()` (one path). Premium tools: `PremiumCalculator -> track()` (separate path). No double-emit.
+**JSON-LD (STOP check):** `buildCalculatorJsonLd` and `buildFaqPageJsonLd` stay in local `lib/calculator-schema.ts` and `lib/faq-page-schema.ts`. Tool-page structured data unchanged. STOP not triggered.
+**Premium tier:** `components/calculators/premium/` exceeds the shared GenericTool contract (has sliders, charts, scenario comparison, mini-grid). Registered as bespoke (kind:"bespoke") in the main fleet. Premium compute still lives in pure `lib/*.ts` (section24, sdltScenarios, etc.). No STOP.
+
+**Acceptance (all green):**
+- `npx vitest run` (Property/web): 76/76 (5 niche-config + 71 goldens)
+- web-shared suite: 254/254
+- `tsc --noEmit` (7 sites): zero errors
+- `next build` (Property): green, 767 pages (matches F1 baseline)
+- TL-01 grep: confirmed
+- TL-03 grep: confirmed (no tax rates in components)
+- TL-06 parity: confirmed
+- Zero remaining imports of deleted Calculator.tsx: confirmed
+- Embed contract diff: documented, STOP not triggered
+
+**Deferred to manager:** Nothing deferred. No STOPs triggered. Manager to: verify + merge branch, run deploy gate (embed battery + embed resize message spot-check + JSON-LD diff on one tool page), confirm lead-pipeline probe returns 401/405.
+
 ## Clusters
 
 ### F1 — plumbing *(branch `property-adopt-1`)*
