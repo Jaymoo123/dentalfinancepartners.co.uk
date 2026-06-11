@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Calculator } from "@/components/calculators/Calculator";
+import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -77,7 +77,7 @@ export default async function CalculatorToolPage({ params }: Props) {
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
-            <Calculator slug={tool.slug} variant="page" />
+            <CalculatorClient slug={tool.slug} variant="page" />
             <CalculatorPageResources slug={tool.slug} pageTitle={tool.name} />
           </div>
         </div>

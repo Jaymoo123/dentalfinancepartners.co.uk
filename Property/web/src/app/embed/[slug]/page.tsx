@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Calculator } from "@/components/calculators/Calculator";
+import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { EmbedAutoResize } from "@/components/embed/EmbedAutoResize";
 import { siteConfig } from "@/config/site";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
@@ -34,7 +34,7 @@ export default async function CalculatorEmbedPage({ params }: Props) {
 
   return (
     <div className="bg-white p-3 sm:p-4">
-      <Calculator slug={tool.slug} variant="embed" />
+      <CalculatorClient slug={tool.slug} variant="embed" />
       <div className="mt-3 text-center">
         <a
           href={`${siteConfig.url}/calculators/${tool.slug}?utm_source=partner-embed&utm_medium=iframe&utm_campaign=${tool.slug}`}
