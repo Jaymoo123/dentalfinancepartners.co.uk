@@ -1,9 +1,18 @@
 # Standardisation — Phase B build spec (GAP-8 fold-ups → GAP-2 tool platform → operator gate → GAP-3 console)
 
-**Status:** EXECUTING — approved 2026-06-10. GAP-8 handed to Sonnet first; GAP-2 after GAP-8 merges; GAP-3 blocked on the operator gate's readiness query.
+**Status:** CLOSED 2026-06-11. All four clusters merged to main (GAP-8 PR #4, GAP-2 PR #5 + stale-figure PR #6, GAP-3 PR #7); generalist deployed to prod with the console live; post-deploy OB lines run; Phase A test-row cleanup executed.
 
 ## Execution log
 *(appended per cluster, same convention as Phase A)*
+
+**PHASE B CLOSE-OUT (manager, 2026-06-11).** PR #7 merged; post-merge main CI GREEN (run 27343533574). `ADMIN_DASHBOARD_KEY` set in Vercel env by user; generalist deployed `vercel deploy --prod` (env-var project override workflow).
+- **OB-01 verified on PRODUCTION:** no-cred → 307 login · login page noindex · correct key → HttpOnly+SameSite=Strict+Secure sha256-token cookie · authed 200.
+- **OB-03 answered from the live dashboard alone** (partial-by-accrual as logged): 13 sessions / last 2 days · funnel drop-off = engaged→calculator (9 engaged, 0 calc users) · top channel = search (8 sessions, 0 conversions yet) · top tool by lead rate = none yet (no calc usage). Panels render real rows, not zeros-as-data.
+- **OB-05 verified end-to-end on PROD** (`scripts/gap3_ob05_error.mjs`, headless Edge): real uncaught error → beacon → `client_error` row → grouped in `vw_client_errors` → renders on the live dashboard. Note: the headless session was flagged `is_bot=true` by the classifier (a pass for the bot net); the event was un-flagged to prove view grouping, then deleted with the roster. Error message arrives as "Script error." (browser cross-origin sanitisation of injected-script throws — capture itself is correct). Field-level abandonment: view live + parameterised, empty until real form interactions (partial-by-accrual).
+- **OB-06 verified on PROD:** the OB-05 session landed `web_vital` rows carrying metric name + value (LCP/CLS/TTFB/FCP); 199 generalist web_vital rows at check.
+- **OB-04 DEFERRED, not failed:** generalist's only lead (2026-06-02) predates analytics (2026-06-10) — no journey can exist. Verifies on the next genuine lead's row.
+- **TEST-ROW CLEANUP EXECUTED (the Phase A open item):** deleted 55 events + 6 sessions for `v_mgrtest_2026`, `v_215c9e4b65d946e88c4474dcce3fccf5`, `v_ec3588f1adb842c78131eaac4ca4a7a3`, `v_32018aaff7d24cf2bc6ea89c28edb1d9` (today's OB-05 visitor) + `s_mgrtest*`. Post-delete: 0 rows remain on all three checks. Prod store now contains ONLY real traffic.
+- **Carried-open items (not Phase B blockers):** legitimate-interest compliance vetting still gates SDK rollout beyond generalist · LD-03/LD-05 real-form check verifies on next genuine lead (avoids partner-CC test email) · SEC-02 revisit on rendering-model change · experiments/personalisation/nurture/lead-intent are deliberate not-operated states on generalist — future cross-site rollout decision, estate-wide in one pass.
 
 **GAP-8 COMPLETE (Sonnet, 2026-06-10)**
 - D1 `79fea93a` — shared schema library (19 parameterised builders, `SiteSchemaOpts`, `ArticleInput`, `BreadcrumbItem`, Property-compat `reviewedBy`/`reviewerCredentials`) + content module (`markdown-utils`, `ReadingProgress`, `TableOfContents`, `buildFeedRoute`, `buildLlmsFullRoute`) + deprecation re-export for `lib/local-business-schema.ts` + gray-matter peer dep. 127 tests green, 0 consumers at commit.
