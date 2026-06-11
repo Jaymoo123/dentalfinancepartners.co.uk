@@ -3,12 +3,9 @@
  * Pure compute, no React, no window/document/fetch. TL-03 clean.
  * 2025/26 rates.
  *
- * STALE-FIGURE NOTICE (per golden-test STOP rule):
- * Student loan thresholds below are the values from the existing component
- * (plan1=24,990, plan2=27,295, plan4=31,395). These are 2024/25 values.
- * 2025/26 correct values are: plan1=26,065, plan2=28,470, plan4=32,745 (SLC 2025).
- * Golden tests are pinned to the OLD values. A deliberate correction commit
- * must follow with explicit user notification.
+ * Student loan thresholds are 2025/26 SLC values:
+ * plan1=26,065, plan2=28,470, plan4=32,745.
+ * Source: Student Loans Company thresholds effective 6 April 2025.
  */
 
 const PERSONAL_ALLOWANCE = 12570;
@@ -24,12 +21,12 @@ const INCOME_ADDITIONAL = 0.45;
 
 export type StudentLoanPlan = "none" | "plan1" | "plan2" | "plan4" | "plan5" | "pg";
 
-/** NOTE: plan1/plan2/plan4 thresholds are 2024/25 values — see STALE-FIGURE NOTICE above. */
+/** 2025/26 SLC thresholds (effective 6 April 2025). */
 const SL_THRESHOLDS: Record<StudentLoanPlan, { threshold: number; rate: number }> = {
   none: { threshold: 0, rate: 0 },
-  plan1: { threshold: 24990, rate: 0.09 },
-  plan2: { threshold: 27295, rate: 0.09 },
-  plan4: { threshold: 31395, rate: 0.09 },
+  plan1: { threshold: 26065, rate: 0.09 },
+  plan2: { threshold: 28470, rate: 0.09 },
+  plan4: { threshold: 32745, rate: 0.09 },
   plan5: { threshold: 25000, rate: 0.09 },
   pg: { threshold: 21000, rate: 0.06 },
 };

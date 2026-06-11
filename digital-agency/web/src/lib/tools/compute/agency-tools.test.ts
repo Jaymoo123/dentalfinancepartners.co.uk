@@ -1,13 +1,11 @@
 /**
  * Golden tests for agency calculator compute libs.
  *
- * Pinned to the outputs of the ORIGINAL component logic.
+ * Pinned to the outputs of the current component logic.
  * Any deviation = a change to be reviewed explicitly, not silently fixed.
  *
- * STALE-FIGURE NOTICE: TakeHomePay student loan thresholds (plan1=24,990,
- * plan2=27,295, plan4=31,395) are 2024/25 values. Correct 2025/26 values
- * are 26,065/28,470/32,745. These tests are deliberately pinned to the OLD
- * values. Correction must be a separate named commit with user notification.
+ * Student loan thresholds updated to 2025/26 SLC values in a deliberate
+ * correction commit: plan1=26,065, plan2=28,470, plan4=32,745.
  *
  * Run: npx vitest run (from digital-agency/web/)
  */
@@ -290,12 +288,12 @@ describe("calcTakeHomePay", () => {
     expect(out.incomeTax).toBe(0);
   });
 
-  it("plan2 student loan threshold is 27295 (PINNED 2024/25 value)", () => {
-    // Threshold 27295 — 2024/25 value deliberately pinned
-    const below = calcTakeHomePay({ salary: 27295, pensionPercent: 0, plan: "plan2" });
+  it("plan2 student loan threshold is 28470 (2025/26 SLC value)", () => {
+    // Threshold 28470 — 2025/26 SLC value
+    const below = calcTakeHomePay({ salary: 28470, pensionPercent: 0, plan: "plan2" });
     expect(below.studentLoan).toBeCloseTo(0, 0);
-    const above = calcTakeHomePay({ salary: 37295, pensionPercent: 0, plan: "plan2" });
-    // 37295 - 27295 = 10000 * 0.09 = 900
+    const above = calcTakeHomePay({ salary: 38470, pensionPercent: 0, plan: "plan2" });
+    // 38470 - 28470 = 10000 * 0.09 = 900
     expect(above.studentLoan).toBeCloseTo(900, 0);
   });
 
