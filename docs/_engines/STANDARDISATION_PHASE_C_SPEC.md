@@ -5,6 +5,39 @@
 ## Execution log
 *(appended per cluster, same convention as Phases A/B)*
 
+### GAP-4 execution — 2026-06-11
+
+**Executor:** Claude Sonnet 4.6 (phase-c-extras branch, from spec commit 59ebb2d0)
+
+**Contract location:** `packages/web-shared/lib/supabase-client.ts` — `LeadSubmission` interface. The shared type already existed; no promotion was needed. Added `extras?: Record<string, unknown>` as an optional field with a doc-comment explaining the omit-not-null invariant.
+
+**Files touched:**
+- `packages/web-shared/lib/supabase-client.ts` — added `extras` field to `LeadSubmission`
+- `packages/web-shared/lib/supabase-client.test.ts` — added 6 new tests (GAP-4 contract suite)
+- `generalist/web/src/components/forms/LeadForm.tsx` — removed `practice_name: ""` filler (omitted entirely)
+- `digital-agency/web/src/components/forms/LeadForm.tsx` — removed `practice_name: ""` filler (omitted entirely)
+- `contractors-ir35/web/src/components/forms/LeadForm.tsx` — removed `practice_name: ""` filler (omitted entirely)
+- `Dentists/web/src/components/forms/LeadForm.tsx` — replaced `practice_name: ... || "—"` sentinel with conditional spread (omit when empty)
+- `Medical/web/src/components/forms/LeadForm.tsx` — replaced `practice_name: ... || "—"` sentinel with conditional spread (omit when empty)
+- `Solicitors/web/src/components/forms/LeadForm.tsx` — replaced `practice_name: ... || "—"` sentinel with conditional spread (omit when empty)
+- `Dentists/web/src/components/health-check/Wizard.tsx` — replaced `practice_name: ... || "—"` sentinel with conditional spread (omit when empty)
+- `Solicitors/web/src/components/health-check/Wizard.tsx` — replaced `practice_name: ... || "—"` sentinel with conditional spread (omit when empty)
+- `docs/_engines/STANDARDISATION_PHASE_C_SPEC.md` — this log entry
+
+**Property:** READ-ONLY — not touched. Its `"—"` sentinels (LeadForm, MiniCapture, InlineMiniLeadForm, ExitIntentModal, ResourceGate, SpecialistWidget) remain in place. Retirement deferred to Property's own adoption window per spec.
+
+**Filler patterns found and resolved:**
+- `practice_name: ""` — generalist, digital-agency, contractors-ir35. No form field for practice name exists on these sites. Fix: key omitted from payload entirely.
+- `practice_name: String(data.get("practiceName") || "").trim() || "—"` — Dentists/Medical/Solicitors LeadForm. Hidden input always `value=""`, so value was always `"—"`. Fix: conditional spread, key absent when no real value.
+- `practice_name: validatedAnswers.practiceName || "—"` / `validatedAnswers.firmName || "—"` — Dentists/Solicitors Wizards. Real field collected in wizard steps; fix: conditional spread, key absent when empty string.
+
+**Tests:** 192 existing + 6 new = 198 total. All green. New suite: `LeadSubmission contract — extras field (GAP-4)` in `packages/web-shared/lib/supabase-client.test.ts` covering: type round-trip without extras, type round-trip with extras, extras serialises when present, extras absent (not null) when omitted, extras accepts nested values, serialised payload has no "extras" key when not provided.
+
+**tsc clean:** generalist, Dentists, Medical, Solicitors, digital-agency, Property — all zero errors.
+**next build green:** generalist (primary gate), digital-agency (imports changed type).
+
+**Nothing smelled like a STOP.** The `extras` column does not exist in the database yet (manager applies after code is green). The payload passes `extras` through via `JSON.stringify` in `submitLead` — no changes needed to the function body. No non-nullable column, no default, no backfill, no breaking change to any required field. Property compiled against the additive type change without modification.
+
 **Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` (v1-FINAL frozen — Verify lines verbatim below) · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` Part 3 (GAP-4/5/6 definitions, GAP-8 fold-up rows assigned to GAP-5) · main as of Phase B close (3515dea6).
 
 **Live-DB recon (manager, 2026-06-11 — the D2 discipline, all claims checked against prod):**

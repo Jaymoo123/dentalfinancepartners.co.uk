@@ -171,7 +171,9 @@ export function HealthCheckWizard() {
         email: validatedAnswers.email,
         phone: "—",
         role: validatedAnswers.role,
-        practice_name: validatedAnswers.firmName || "—",
+        ...(validatedAnswers.firmName
+          ? { practice_name: validatedAnswers.firmName }
+          : {}),
         message:
           `Firm health check submission\n` +
           `Role: ${validatedAnswers.role}\n` +
