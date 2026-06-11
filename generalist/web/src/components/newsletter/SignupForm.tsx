@@ -5,6 +5,11 @@ import { track } from "@accounting-network/web-shared/analytics/track";
 
 type Variant = "card" | "inline" | "minimal";
 
+// Must match config/nurture.ts defaultConsentText; this exact string is rendered
+// next to the checkbox and stored on the subscriber row (LD-09).
+const NEWSLETTER_CONSENT_TEXT =
+  "I agree to receive accounting and tax updates by email from Holloway Davies.";
+
 type Props = {
   variant?: Variant;
   source: string;
@@ -30,6 +35,8 @@ export function SignupForm({
   const [state, setState] = useState<"idle" | "submitting" | "ok" | "err">("idle");
   const [error, setError] = useState<string | null>(null);
   const [mode, setMode] = useState<"confirm-required" | "collect-only" | null>(null);
+  // LD-09: marketing consent comes only from this rendered, user-operated checkbox.
+  const [consent, setConsent] = useState(false);
 
   // AN-05: emit subscribe_view once when the form mounts (impression-level signal)
   useEffect(() => {
@@ -51,9 +58,8 @@ export function SignupForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
-          consent: true,
-          consent_text:
-            "I agree to receive accounting and tax updates by email from Holloway Davies.",
+          consent,
+          consent_text: NEWSLETTER_CONSENT_TEXT,
           source,
         }),
       });
@@ -136,6 +142,20 @@ export function SignupForm({
           {state === "submitting" ? "Subscribing..." : ctaLabel}
         </button>
       </div>
+      <label
+        htmlFor={`newsletter-consent-${source}`}
+        className="mt-3 flex items-start gap-2 text-xs leading-relaxed text-neutral-500"
+      >
+        <input
+          id={`newsletter-consent-${source}`}
+          type="checkbox"
+          required
+          checked={consent}
+          onChange={(e) => setConsent(e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 border-neutral-300 accent-orange-500"
+        />
+        <span>{NEWSLETTER_CONSENT_TEXT}</span>
+      </label>
       {state === "err" && (
         <p className="mt-3 text-sm text-red-600" role="alert">
           {error}

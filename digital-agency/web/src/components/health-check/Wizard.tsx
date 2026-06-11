@@ -1,5 +1,11 @@
 "use client";
 
+// LD-04: consent fields come ONLY from a real rendered user-operated checkbox.
+// CONSENT_TEXT must equal the visible label text exactly.
+// LD-04: This text must match the visible rendered label in Step6 exactly.
+const CONSENT_TEXT =
+  "I agree that Agency Founder Finance may use the information I have provided to generate this report and contact me about relevant services. I have read the privacy policy.";
+
 import { useMemo, useState } from "react";
 import {
   AGENCY_TYPE_OPTIONS,
@@ -65,6 +71,8 @@ type Result = {
 export function HealthCheckWizard() {
   const [step, setStep] = useState(1);
   const [a, setA] = useState<Answers>(INITIAL);
+  // LD-04: consent state — drives checkbox; never pre-set to true.
+  const [consentGiven, setConsentGiven] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<Result | null>(null);
@@ -110,6 +118,11 @@ export function HealthCheckWizard() {
       if (!a.exitHorizon) return "Pick an exit horizon";
       return null;
     }
+    // Step 6 (review + consent): consent checkbox must be ticked before submit.
+    if (step === 6) {
+      if (!consentGiven) return "Please tick the consent box to continue";
+      return null;
+    }
     return null;
   }
 
@@ -139,7 +152,14 @@ export function HealthCheckWizard() {
       const res = await fetch("/api/health-check/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(a),
+        // LD-04: consent_given comes from real checkbox state; consent_at is the
+        // moment of form submission; consent_text must match the visible label.
+        body: JSON.stringify({
+          ...a,
+          consent_given: consentGiven,
+          consent_at: new Date().toISOString(),
+          consent_text: CONSENT_TEXT,
+        }),
       });
       if (!res.ok) {
         const j = await res.json().catch(() => ({}));
@@ -226,7 +246,13 @@ export function HealthCheckWizard() {
         {step === 3 && <Step3 a={a} update={update} />}
         {step === 4 && <Step4 a={a} update={update} />}
         {step === 5 && <Step5 a={a} update={update} toggleInternational={toggleInternational} />}
-        {step === 6 && <Step6 a={a} />}
+        {step === 6 && (
+          <Step6
+            a={a}
+            consentGiven={consentGiven}
+            onConsentChange={setConsentGiven}
+          />
+        )}
       </div>
 
       {error && (
@@ -517,7 +543,15 @@ function Step5({
   );
 }
 
-function Step6({ a }: { a: Answers }) {
+function Step6({
+  a,
+  consentGiven,
+  onConsentChange,
+}: {
+  a: Answers;
+  consentGiven: boolean;
+  onConsentChange: (v: boolean) => void;
+}) {
   return (
     <>
       <h3 className="text-xl font-bold text-slate-900">Review</h3>
@@ -567,6 +601,26 @@ function Step6({ a }: { a: Answers }) {
           value={EXIT_OPTIONS.find((o) => o.value === a.exitHorizon)?.label || ""}
         />
       </dl>
+
+      {/* LD-04: real user-operated consent checkbox — required to submit. */}
+      <label className="mt-6 flex cursor-pointer items-start gap-3 rounded-md border border-slate-200 bg-slate-50 p-4">
+        <input
+          type="checkbox"
+          checked={consentGiven}
+          onChange={(e) => onConsentChange(e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 text-indigo-600"
+          aria-required="true"
+        />
+        <span className="text-sm text-slate-700">
+          {/* CONSENT_TEXT must equal the text rendered here exactly. */}
+          I agree that Agency Founder Finance may use the information I have provided to generate
+          this report and contact me about relevant services. I have read the{" "}
+          <a href="/privacy-policy" className="underline text-indigo-600" target="_blank" rel="noopener noreferrer">
+            privacy policy
+          </a>
+          .
+        </span>
+      </label>
     </>
   );
 }

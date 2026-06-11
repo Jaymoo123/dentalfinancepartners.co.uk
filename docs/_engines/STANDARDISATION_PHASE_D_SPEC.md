@@ -9,6 +9,44 @@
 ## Execution log
 *(appended per site, same convention as Phases A/B/C)*
 
+**AGENCY — MID-FLIGHT SCOPE CORRECTION ACKNOWLEDGED + NEWSLETTER RE-POINT COMPLETE (Sonnet, 2026-06-11, branch `adopt-agency`).**
+
+Manager relay received mid-adoption: live Vercel env evidence (RESEND_API_KEY/FROM_EMAIL/FROM_NAME/REPLY_TO, RESEND_WEBHOOK_SECRET, RESEND_AUDIENCE_ID, NEWSLETTER_TOKEN_SECRET, CRON_SECRET all set) contradicts the brief's "likely NO newsletter" assumption — digital-agency runs the lineage-PARENT newsletter fork, ARMED live. Scope revised from "record n/a" to the full GAP-5 adoption pattern. Executed:
+
+**1. Surface audit (recorded):**
+- API routes (old fork): `api/newsletter/subscribe`, `api/newsletter/confirm/[token]`, `api/newsletter/unsubscribe/[token]` (GET+POST RFC 8058), `api/resend/webhook` (Svix-verified, wrote bounced/complained to `newsletter_subscribers`), `api/cron/newsletter-drip` (Bearer CRON_SECRET, daily).
+- Libs: `lib/newsletter/subscribers.ts` (REST against legacy `newsletter_subscribers` — keyless, no site column, no consent columns), `lib/newsletter/tokens.ts` (HMAC tokens, NEWSLETTER_TOKEN_SECRET), `lib/resend.ts` (RESEND_FROM_* identity WITH hardcoded fallbacks — EN-06 anti-pattern; also serves health-check emails, so kept for that).
+- Emails: `emails/ConfirmEmail.tsx`, `emails/WelcomeEmail.tsx`, `emails/content/welcome-series.ts` (5-step drip: days 0/2/5/9/14, "James, Agency Founder Finance"), `EmailLayout.tsx` (shared with health-check — kept).
+- Signup surfaces: `components/newsletter/SignupForm.tsx` (used by ExitIntentModal, InlinePrompt, StickyCard, SiteFooter, PageShell, /newsletter page, homepage, BlogPostRenderer). **LD-09 violation found: no consent checkbox, no consent fields on the payload.**
+- Cron wiring: `vercel.json` cron `/api/cron/newsletter-drip` @ `0 7 * * *`.
+- Pages: `/newsletter`, `/newsletter/confirmed`, `/newsletter/unsubscribed` (kept — same redirect contract + error reasons as the shared engine).
+
+**2. EN-05 DEFECT CONFIRMED in the old fork (noted per relay):** both the confirm route (welcome send → separate `advanceWelcomeStep`) and the drip cron (`emails.send` THEN advance) were send-then-advance — a failed advance after a successful send re-sent the same step next run (double-email). Agency's copy was NEVER interim-patched (unlike generalist's Phase 0 patch). The shared engine's claim-before-send (`nurture_sends` unique-claim, release-on-provider-failure) removes the class.
+
+**3. Re-point executed (GAP-5 pattern, mirroring generalist):** 5 routes `api/nurture/{subscribe, confirm/[token], unsubscribe, send, events}`; `src/config/nurture.ts` (siteKey from `niche.content_strategy.site_key` — PF-07; sequence `agency_welcome`; 5 steps carried VERBATIM from the old welcome-series copy; old cumulative 0/2/5/9/14-day cadence preserved as after-previous-step delayDays 0/2/3/4/5); `src/config/nurture-consent.ts` (single consent-text source shared by form + config); `src/lib/nurture-provider.ts`. Old fork files deleted in the same commit (dedup proof). `vercel.json` cron re-pointed to `/api/nurture/send` (schedule kept). `robots.ts` disallow `/api/newsletter/` → `/api/nurture/`. `getAudienceId()` removed from `lib/resend.ts` (shared engine does not manage Resend Audiences; RESEND_AUDIENCE_ID retired). Drip "preview" (preheader) text is the one content field with no NurtureStep equivalent — dropped, recorded here.
+
+**4. LD-09 fix:** SignupForm now renders a real, required, user-operated marketing-consent checkbox in ALL variants; stored `consent_text` = exactly the rendered label (one constant, `nurture-consent.ts`); `consent: true` only from checkbox state; shared engine rejects `consent !== true` (400). Also added AN-05 `subscribe_view`/`subscribe_submitted` events (generalist parity). NOTE for manager: generalist's own SignupForm sends `consent: true` without a rendered checkbox (its consent_text is not displayed to the visitor) — agency now exceeds it; generalist may want the same checkbox back-port.
+
+**5. ENV MAPPING (manager handles actual env changes; what the new code reads):**
+| Old fork env (live on Vercel) | Shared engine env | Note |
+|---|---|---|
+| RESEND_API_KEY | RESEND_API_KEY | unchanged; also still used by health-check emails |
+| RESEND_FROM_EMAIL | NURTURE_FROM_EMAIL | RESEND_FROM_* stays in service for health-check delivery (lib/resend.ts) |
+| RESEND_FROM_NAME | NURTURE_FROM_NAME | as above |
+| RESEND_REPLY_TO | NURTURE_REPLY_TO | as above |
+| RESEND_WEBHOOK_SECRET | NURTURE_WEBHOOK_SECRET | Resend dashboard endpoint must be re-pointed to `/api/nurture/events` (new whsec_) |
+| NEWSLETTER_TOKEN_SECRET | NURTURE_TOKEN_SECRET | rotation invalidates in-flight confirm/unsubscribe links minted by the old fork |
+| RESEND_AUDIENCE_ID | (retired) | shared engine does not manage Resend Audiences/Contacts |
+| CRON_SECRET | CRON_SECRET | same name — THE arming switch (see below) |
+
+**6. ARMING POSTURE (operator gate, NOT decided in code):** composition is posture-neutral; the engine reads CRON_SECRET at runtime (EN-04). Agency is currently armed-live on the old fork. At deploy the manager/operator decides: carry CRON_SECRET over (stays armed — cron sends due steps) or withhold it (goes dormant — opt-ins recorded, `/api/nurture/send` 401s, zero emails). EN-06 also requires NURTURE_FROM_EMAIL/NAME/REPLY_TO set or every nurture route 503s.
+
+**7. Data migration:** `supabase/migrations/20260612000003_agency_newsletter_to_subscribers_data_migration.sql` WRITTEN, NOT RUN — modelled on 20260612000002 incl. the status-aware consent_text amendment; site_key 'agency', sequence 'agency_welcome', agency_type→entry_topic, welcome_step_sent→nurture_state mapping. Live `newsletter_subscribers` holds ZERO agency rows (manager-verified) so the file is a no-op guard for the record; header documents the discriminator caveat (legacy table is shared with generalist and has no site column; agency rows identified by source_url domain) and the ordering interaction with the generalist migration (which claims ALL non-probe rows).
+
+**Acceptance on this scope:** `tsc --noEmit` clean (after stale-.next purge — the known lesson) · 28/28 goldens via the site's wired runner · `next build` green, all 5 `/api/nurture/*` routes in output, zero references to deleted fork modules (grep) · PF-07 grep clean on nurture code (site key only from niche config) · old fork deleted in the same commit as the re-point.
+
+---
+
 **DENTISTS AUDIT (Sonnet, 2026-06-11, branch `adopt-dentists`) — first log entry, pre-implementation.**
 
 **Calculator inventory (5 tools, all site-specific dental calculators):**
@@ -255,6 +293,66 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 
 ---
 
+**AGENCY — ACCEPTED (2026-06-11, manager verification).**
+- 28/28 goldens via the site's wired runner · `next build` green (464 pages) · consent-fabrication grep clean (no `consent: true` literals; all consent from checkbox state) · PF-07/TL-03/OB-02 hits only inside explanatory panel text — clean.
+- **Newsletter scope correction held:** the brief's "likely no newsletter" was wrong (live Vercel env carries a full ARMED Resend stack); mid-flight relay re-scoped to the GAP-5 re-point. Old fork (with the never-patched EN-05 send-then-advance double-email defect in BOTH confirm route and cron) deleted; shared engine composed posture-neutral. **Deploy decision for operator: carry CRON_SECRET over (stays armed) or withhold it (goes dormant). Env mapping required at deploy: RESEND_FROM_*/REPLY_TO → NURTURE_* (RESEND_* names stay for health-check emails), RESEND_WEBHOOK_SECRET → NURTURE_WEBHOOK_SECRET + Resend dashboard endpoint → /api/nurture/events, NEWSLETTER_TOKEN_SECRET → NURTURE_TOKEN_SECRET (rotation kills in-flight confirm links), RESEND_AUDIENCE_ID retired.**
+- Agency data migration file written as no-op guard (zero live agency rows verified); legacy-table ordering caveat documented.
+- **Generalist LD-09 back-port included on this branch (manager):** generalist's SignupForm sent `consent: true` with a consent_text the visitor never saw — the agency executor's finding. Fixed: rendered required checkbox, consent from state, stored text = the exact rendered label (matches config defaultConsentText). Generalist rebuild green (676 pages).
+- Deploy gate (operator): Vercel env `ADMIN_DASHBOARD_KEY` (has service-role already) + the NURTURE_* mapping above + arming decision, deploy, `an01_browser_pass.mjs <url> aff`, ingest check.
+
+**AGENCY AUDIT (Sonnet, 2026-06-11, branch `adopt-agency`) — COMPLETE. Both commits green.**
+
+**Calculator inventory (8 tools):**
+1. `SalaryDividendOptimiser` — salary/dividend split optimiser. Uses 2025/26 dividend tax rates (8.75%/33.75%/39.35%) and CT 25%. No stale figures.
+2. `RdTaxCreditEstimator` — R&D tax credit estimator. SME scheme rates. No stale figures.
+3. `AgencyValuationCalculator` — agency business valuation (EBITDA multiples). No stale figures.
+4. `BadrCgtCalculator` — BADR capital gains tax. 10% BADR rate, 18%/24% standard CGT rates (post April 2024). Rates correct.
+5. `VatSchemeComparator` — flat-rate vs standard VAT comparison. Static percentages; no stale figures.
+6. `PensionContributionOptimiser` — pension contribution tax saving. 2025/26 rates. No stale figures.
+7. `TakeHomePayCalculator` — PAYE take-home with student loan plans. **STALE-FIGURE STOP APPLIED:** plan1/plan2/plan4 thresholds were 2024/25 values (24,990/27,295/31,395). Golden tests pinned to OLD values first (commit `906e1fca`). Stale-figure correction in separate commit `b1bba488` — 2025/26 values 26,065/28,470/32,745 with derivations. Both commits on branch.
+8. `EmployerNiCalculator` — employer NI calculation. 2025/26 secondary threshold £5,000, 15% rate post April 2025. Rates correct.
+
+**Newsletter surface:** Present (`/newsletter` subscribe form). Double opt-in: confirmation email IS the consent — no consent checkbox needed on subscribe. No GAP-5 action required. **[SUPERSEDED by manager mid-flight scope correction — see the AGENCY NEWSLETTER RE-POINT entry at the top of this log: full GAP-5 re-point executed in commit f031476d, incl. LD-09 consent checkbox (a confirmation click proves the address, it does not store the disclosure text the visitor accepted).]**
+
+**GA4 tag:** `niche.seo.google_analytics_id` is empty in niche config. No GA4 active on Agency. No ConsentedScripts GA4 argument passed.
+
+**Layout:** RSC, no providers before this branch. ConsentProvider + AnalyticsProvider added (storagePrefix `"aff"` FROZEN per spec, posture `"opt-out"`, noTrackPrefixes `["/admin", "/embed"]`).
+
+**Local schema copies:** LEFT IN PLACE per pre-resolved schema re-point STOP. Output would diverge from shared builders; no re-point.
+
+**Local reader apparatus:**
+- `src/components/blog/ReadingProgress.tsx` and `TableOfContents.tsx` — DOM-identical to shared. Re-pointed to `@accounting-network/web-shared/content`; local copies deleted.
+- BlogPostRenderer.tsx and FundamentalsRenderer.tsx imports updated.
+
+**LeadForm event-wiring:** `useFormTracking`, honeypot `company_url`, visitor/session stitching, field focus/blur/error tracking all wired.
+
+**Health-check wizard (Wizard.tsx):** Step 6 has real rendered consent checkbox (LD-04). `CONSENT_TEXT` constant equals displayed label exactly. `consentGiven` state initialised `false` (never hardcoded). `canAdvance()` blocks at step 6 without consent. POST body includes `consent_given`, `consent_at`, `consent_text`.
+
+**data-cta:** CTASection primary/secondary (`cta-section-primary`/`cta-section-secondary`), SiteHeader desktop nav (`nav-desktop-cta`), SiteHeader mobile nav (`nav-mobile-cta`).
+
+**Scope executed:**
+- Analytics SDK composition: YES. ConsentProvider + AnalyticsProvider + `/api/track` + LeadForm wiring + Wizard consent + data-cta + env example.
+- Tools platform (8 calculators): YES. Pure compute libs (TL-03 clean) + 28 golden tests + GenericTool configs + CalculatorClient RSC boundary + registry + `/calculators/[slug]` static pages + `/embed/[slug]` + `/embed` gallery + sitemap from `allTools()` + old per-slug directories deleted.
+- Console `/admin/analytics`: YES. Full dashboard + trends + leads + visitor timeline. `checkAuth.ts`, `VisitorTabs.tsx`, `/api/admin/login` rate-limited with timing-safe key compare.
+- Schema re-point: STOP (pre-resolved per spec). Local builders left in place.
+- Reader apparatus re-point: YES (DOM-identical). Both components deleted and re-pointed to shared.
+- Nurture: ~~newsletter exists but double opt-in = no re-point needed; n/a for GAP-5~~ **SUPERSEDED** — manager scope correction (live armed env evidence): full GAP-5 re-point executed, commit f031476d. See top-of-log entry.
+
+**Acceptance checks — all PASS:**
+- 28/28 golden tests via `npx vitest run` from `digital-agency/web`
+- `npx tsc --noEmit` clean
+- `next build` GREEN (467 pages, 0 errors)
+- PF-07: no `"agency"` literals in route/analytics files; site key always from `niche.content_strategy.site_key`
+- TL-01: gallery and sitemap derive from `allTools()` only — no hand-listed slugs
+- TL-03: compute libs have no React/window/document/fetch
+- OB-01/OB-02: CONSOLE_NOINDEX_META on all admin pages; credentials via HttpOnly SameSite=Strict cookie
+- LD-04: Wizard consent fields from real rendered user-operated checkbox only; `consent_given` never hardcoded
+
+**Commits on branch:**
+- `906e1fca` — "Phase D: adopt analytics SDK, tools platform + admin console on agency site"
+- `b1bba488` — "Stale-figure fix: student loan thresholds to 2025/26 SLC values"
+
+**Deploy gate (operator):** Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY` (fresh random), deploy, `node scripts/an01_browser_pass.mjs <url> aff`, console login check, ingest check (agency rows in web_sessions).
 **SOLICITORS — ACCEPTED (2026-06-11, manager verification).**
 - 30/30 goldens via the site's wired runner · `next build` green (247 pages) · PF-07/TL-03/OB-02 greps re-run independently: clean · Wizard step-6 consent checkbox verified real (`consent_given: a.consent`, label-matched) — both binding lessons held.
 - 6 calculators on the platform (take-home, FA2014 salaried member, LLP profit share, firm valuation, SRA client account reserve, indemnity premium) + embeds + registry-driven gallery/sitemap; TOOLS.md figures traced.
