@@ -63,7 +63,15 @@
     "./console/components/SnapshotCard": "./console/components/SnapshotCard.tsx",
     "./console/components/DashboardTabs": "./console/components/DashboardTabs.tsx",
     "./console/components/CountrySelect": "./console/components/CountrySelect.tsx",
-    "./console/components/VisitorsTable": "./console/components/VisitorsTable.tsx"
+    "./console/components/VisitorsTable": "./console/components/VisitorsTable.tsx",
+    "./nurture": "./nurture/index.ts",
+    "./nurture/tokens": "./nurture/tokens.ts",
+    "./nurture/config": "./nurture/config.ts",
+    "./nurture/admin": "./nurture/admin.ts",
+    "./nurture/send": "./nurture/send.ts",
+    "./nurture/subscribe": "./nurture/subscribe.ts",
+    "./nurture/webhook": "./nurture/webhook.ts",
+    "./nurture/cron": "./nurture/cron.ts"
   },
   "optionalPeerDependencies": {
     "@microsoft/clarity": ">=1",

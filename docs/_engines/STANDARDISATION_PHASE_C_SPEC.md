@@ -13,6 +13,65 @@
 
 **GAP-6 — DECISION RECORDED (user, 2026-06-11): option (a), documentation-only.** "For GAP-6 just document it." No factory-lift (that half touches Property files — stays behind Property's READ-ONLY rule), no consumer move. Deliverable: `docs/_engines/CENTRAL_LEAD_PIPELINE.md` naming the dependency, routes, env vars, blast radius, and the re-point path if (b) is ever chosen. LD-07 note resolved as documented-explicit; LD-08 per-site enrichment policy unblocked.
 
+### GAP-5 execution — 2026-06-12
+
+**Executor:** Claude Sonnet 4.6 (phase-c-nurture branch, from spec commit 0a628e94)
+
+**Module layout:** `packages/web-shared/nurture/` — 7 files + test + index:
+- `tokens.ts` — stateless HMAC double-opt-in tokens (lifted from generalist/lib/newsletter/tokens.ts)
+- `config.ts` — NurtureConfig + NurtureStep interfaces; requireEnv guard
+- `admin.ts` — service-role Supabase REST helper (pattern lifted from Property/lib/supabase/admin.ts)
+- `send.ts` — claim-before-send idempotent step sender + EmailProvider interface
+- `subscribe.ts` — handleSubscribe / confirmSubscriber / unsubscribeByEmail factories
+- `webhook.ts` — Svix-verified Resend events handler (lifted from generalist/api/resend/webhook)
+- `cron.ts` — runNurtureCron batch runner
+- `index.ts` — package re-exports
+- `nurture.test.ts` — 31 new tests
+
+**Generalist adoption (Stage 2):**
+- New routes: `api/nurture/subscribe`, `api/nurture/confirm/[token]`, `api/nurture/unsubscribe`, `api/nurture/events`, `api/nurture/send`
+- New config: `config/nurture.ts` (buildGeneralistNurtureConfig — siteKey="generalist", EN-04 dormant posture documented)
+- New provider adapter: `lib/nurture-provider.ts`
+- Old fork code DELETED: `lib/newsletter/tokens.ts`, `lib/newsletter/subscribers.ts`, `api/newsletter/*` (subscribe/confirm/unsubscribe routes), `api/resend/webhook/route.ts`, `api/cron/newsletter-drip/route.ts`
+- SignupForm.tsx re-pointed to `/api/nurture/subscribe`
+- vercel.json cron re-pointed to `/api/nurture/send`
+- robots.ts updated to disallow `/api/nurture/`
+- `.env.local.example` updated with new env vars + EN-04 dormancy gate documentation
+
+**Migrations written (manager-applies, NOT auto-run):**
+- `supabase/migrations/20260612000001_subscribers_double_optin_fields.sql` — adds `confirmed_at` column + extends status CHECK to include 'pending' (double-opt-in support)
+- `supabase/migrations/20260612000002_generalist_newsletter_to_subscribers_data_migration.sql` — migrates the 1 real row from newsletter_subscribers to subscribers (probe@example.invalid excluded); MANAGER REVIEW REQUIRED; partial-loss fields documented (see below)
+
+**Property:** READ-ONLY — zero bytes written. Property's own subscribe/nurture/events routes remain untouched. Its adoption of the shared engine is a separately-approved future window.
+
+**Anti-patterns fixed:**
+- PF-07: no `const SITE_KEY = "property"` literal — siteKey comes from NurtureConfig, set in per-site config loader
+- EN-06: no hardcoded from-identity or site-URL fallbacks — requireEnv throws, engine refuses to operate
+- SEC-05: every cron/webhook route returns 503 when its secret is unconfigured; Svix timing-safe comparison replaces plain-secret check
+- LD-09: subscriber consent (consent_given/text/at) captured from subscribe request body, never inferred from lead or analytics consent
+
+**Tests:** 198 existing + 31 new = 229 total. All green. Test suites: nurture tokens (8), EN-05 idempotency (3), EN-04 dormancy (2), LD-09 consent (3), EN-06 headers+bounce (4), SEC-05 secret guards (3), Svix webhook (3), PF-07 grep (1), confirmSubscriber/unsubscribeByEmail (2), + 2 suite setup tests.
+
+**tsc clean:** generalist, Dentists, Medical, Solicitors, digital-agency, Property — all zero errors.
+**next build green:** generalist (primary gate) — clean build.
+
+**Partial-loss fields in data migration (STOP-flag for manager):**
+The following newsletter_subscribers columns have no direct target in subscribers:
+- `source_url` — historical analytics only; dropped. Low impact.
+- `unsubscribed_at` — NULL for an active subscriber; no operational loss.
+- `resend_contact_id` — Resend Audiences link lost. Impact: medium if Audiences used. Manager should verify before running migration.
+- `metadata jsonb` — unknown content. Manager should SELECT metadata before running.
+- `agency_type` — mapped to `entry_topic` (closest available column).
+The mapping is NOT lossless for all fields. Manager must inspect the live row and decide whether to add columns to subscribers before running. The migration file has SELECT queries to run first.
+
+**Nothing smelled like a hard STOP.** The double-opt-in `confirmed_at` + `pending` status fields required a migration (20260612000001); filed for manager application. The generalist data migration (20260612000002) has the partial-loss concerns documented above for manager decision — not an improvisation.
+
+**PF-07 Verify:** `grep -rn "SITE_KEY\|const.*siteKey" packages/web-shared/nurture/` — zero hits in engine files (only a test comment). `grep -rn "property\|generalist" packages/web-shared/nurture/*.ts` — zero hits outside test fixture (siteKey="generalist" lives in generalist/web/src/config/nurture.ts only).
+
+**EN-04 Verify:** generalist composes dormant. `CRON_SECRET` is documented-unset in .env.local.example (commented out line). `runNurtureCron` returns `{processed:0, sent:0}` when `cronArmed=false`. No email leaves until operator explicitly sets CRON_SECRET and restarts.
+
+**Inputs:** `docs/_engines/PROPERTY-CAPABILITY-STANDARD.md` · `docs/generalist/CAPABILITY_AUDIT_2026-06.md` Part 3 (GAP-5/8) · Phase C spec (this document) · GAP-4 acceptance log above.
+
 ### GAP-4 execution — 2026-06-11
 
 **Executor:** Claude Sonnet 4.6 (phase-c-extras branch, from spec commit 59ebb2d0)
