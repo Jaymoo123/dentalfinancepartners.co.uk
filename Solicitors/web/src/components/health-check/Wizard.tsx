@@ -22,6 +22,13 @@ import type {
   PracticeArea,
   Role,
 } from "@/lib/health-check/types";
+import { niche } from "@/config/niche-loader";
+import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+
+// LD-04: must be exactly the disclosure rendered next to the step-6 checkbox.
+const CONSENT_TEXT = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our Privacy Policy.`;
 
 type Answers = {
   name: string;
@@ -39,6 +46,8 @@ type Answers = {
   exitHorizon: ExitHorizon | "";
   accountantSatisfaction: AccountantSatisfaction | "";
   topConcern: string;
+  // LD-04: consent is part of the Answers state so Step6 can bind it via update().
+  consent: boolean;
 };
 
 const INITIAL: Answers = {
@@ -57,6 +66,7 @@ const INITIAL: Answers = {
   exitHorizon: "",
   accountantSatisfaction: "",
   topConcern: "",
+  consent: false,
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -76,8 +86,8 @@ export function HealthCheckWizard() {
   const totalSteps = 6;
   const progress = useMemo(() => Math.round((step / totalSteps) * 100), [step, totalSteps]);
 
-  const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
-  const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
+  // SEC-08: wizard lifecycle tracking — no field values captured, only step + outcome.
+  const { onSubmit: trackFormSubmit, onLead } = useFormTracking("health_check_wizard");
 
   function update<K extends keyof Answers>(key: K, value: Answers[K]) {
     setA((prev) => ({ ...prev, [key]: value }));
@@ -107,6 +117,11 @@ export function HealthCheckWizard() {
     if (step === 5) {
       if (!a.exitHorizon) return "Pick a sale / buy horizon";
       if (!a.accountantSatisfaction) return "Pick your accountant position";
+      return null;
+    }
+    // LD-04: the consent checkbox is required before the wizard can submit.
+    if (step === 6) {
+      if (!a.consent) return "Please tick the box to agree before generating your report.";
       return null;
     }
     return null;
@@ -161,6 +176,10 @@ export function HealthCheckWizard() {
       info: opportunities.filter((o) => o.severity === "info").length,
     };
 
+    // LD-02: emit form_submit (step count = questionnaire steps completed)
+    trackFormSubmit(totalSteps);
+
+    const { supabaseUrl, supabaseKey } = getSupabaseConfig();
     if (supabaseUrl && supabaseKey) {
       const summary = opportunities
         .slice(0, 5)
@@ -187,35 +206,28 @@ export function HealthCheckWizard() {
           `Accountant: ${validatedAnswers.accountantSatisfaction}\n\n` +
           `Top opportunities (${opportunities.length}):\n${summary}\n\n` +
           (validatedAnswers.topConcern ? `Top concern: ${validatedAnswers.topConcern}` : ""),
-        source: "solicitors",
+        // PF-07: source from niche config, never a literal
+        source: niche.content_strategy.source_identifier,
         source_url: typeof window !== "undefined" ? window.location.href : "/free-firm-health-check",
         submitted_at: new Date().toISOString(),
+        // LD-04: real consent state from the step-6 checkbox; the stored text is
+        // exactly what the visitor saw next to it.
+        consent_given: a.consent,
+        consent_text: CONSENT_TEXT,
+        consent_at: new Date().toISOString(),
+        // LD-05: stitch visitor + session ids so this lead links to its analytics events
+        visitor_id: getVisitorId() ?? undefined,
+        session_id: getSessionId() ?? undefined,
       };
 
       try {
-        await fetch(`${supabaseUrl}/rest/v1/leads`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            apikey: supabaseKey,
-            Authorization: `Bearer ${supabaseKey}`,
-            Prefer: "return=minimal",
-          },
-          body: JSON.stringify(leadPayload),
-        });
-
-        if (typeof window !== "undefined" && "gtag" in window) {
-          const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
-          if (gtag) {
-            gtag("event", "generate_lead", {
-              event_category: "engagement",
-              event_label: "solicitors_firm_health_check",
-              value: 1,
-            });
-          }
+        const submitResult = await submitLead(leadPayload, supabaseUrl, supabaseKey);
+        if (submitResult.success) {
+          // First-party lead event only after a confirmed submission.
+          onLead({ role: validatedAnswers.role });
         }
-      } catch (err) {
-        console.error("Firm health check submission error:", err);
+      } catch {
+        // Non-critical: show findings regardless of submission status
       }
     }
 
@@ -314,7 +326,7 @@ export function HealthCheckWizard() {
         {step === 3 && <Step3 a={a} update={update} />}
         {step === 4 && <Step4 a={a} update={update} />}
         {step === 5 && <Step5 a={a} update={update} />}
-        {step === 6 && <Step6 a={a} />}
+        {step === 6 && <Step6 a={a} update={update} />}
       </div>
 
       {error && (
@@ -342,7 +354,7 @@ export function HealthCheckWizard() {
           <button
             type="button"
             onClick={submit}
-            disabled={submitting}
+            disabled={submitting || !a.consent}
             className="min-h-12 rounded-full bg-[var(--primary)] px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--primary-soft)] disabled:opacity-60"
           >
             {submitting ? "Generating report…" : "Get my firm health check"}
@@ -501,7 +513,7 @@ function Step5({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
   );
 }
 
-function Step6({ a }: { a: Answers }) {
+function Step6({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
       <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Review</h3>
@@ -521,6 +533,24 @@ function Step6({ a }: { a: Answers }) {
         <ReviewRow label="COFA in place" value={a.cofaInPlace ? "Yes" : "No"} />
         <ReviewRow label="Exit horizon" value={EXIT_OPTIONS.find((o) => o.value === a.exitHorizon)?.label || ""} />
       </dl>
+      {/* LD-04: real, user-operated consent checkbox; CONSENT_TEXT mirrors this label exactly. */}
+      <label htmlFor="hc-consent" className="mt-4 flex cursor-pointer items-start gap-3 text-xs leading-relaxed text-[var(--muted)]">
+        <input
+          id="hc-consent"
+          name="consent"
+          type="checkbox"
+          checked={a.consent}
+          onChange={(e) => update("consent", e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--primary)]"
+        />
+        <span>
+          I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our{" "}
+          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--primary)] underline">
+            Privacy Policy
+          </a>
+          .
+        </span>
+      </label>
     </>
   );
 }

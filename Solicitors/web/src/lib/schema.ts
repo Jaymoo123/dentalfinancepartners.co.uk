@@ -2,6 +2,41 @@ import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
 
+// Re-export shared builders used by calculator and tool pages (additive — no
+// local builder output changes; local blog/organisation builders remain local).
+export {
+  JsonLd,
+  buildFaqPage,
+  type SchemaThing,
+  type WebApplicationInput,
+  type FaqEntry,
+} from "@accounting-network/web-shared/schema";
+
+import {
+  buildWebApplication as _buildWebApplication,
+  type SchemaThing,
+  type SiteSchemaOpts,
+  type WebApplicationInput,
+} from "@accounting-network/web-shared/schema";
+
+function getSiteOpts(): SiteSchemaOpts {
+  return {
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
+    legalName: siteConfig.legalName,
+    description: siteConfig.description,
+    tagline: siteConfig.tagline,
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
+    email: siteConfig.contact.email,
+    phone: siteConfig.contact.phone,
+  };
+}
+
+/** Site-bound wrapper so calculator/tool pages call the shared builder with one argument. */
+export function buildWebApplication(input: WebApplicationInput): SchemaThing {
+  return _buildWebApplication(input, getSiteOpts());
+}
+
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   return JSON.stringify({
     "@context": "https://schema.org",

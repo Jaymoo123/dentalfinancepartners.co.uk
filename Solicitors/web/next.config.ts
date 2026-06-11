@@ -30,7 +30,9 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
-    return buildSecurityHeaders({ ga: true, supabase: true });
+    // embedPrefix: "embed" adds frame-ancestors exception for /embed/* pages
+    // so partner sites can iframe our calculators.
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 
