@@ -1,6 +1,10 @@
 # Standardisation — Phase G: estate-wide experiments rollout
 
-**Status:** EXECUTING — opened 2026-06-11 on user go ("let's do the experiments rollout, comprehensively and to a very high standard"). The last program item.
+**Status:** CLOSED 2026-06-11. G1 + G2 merged and deployed; the program's final phase. Two real bugs found and fixed by live probes that unit tests and builds could not see: (1) the F1 SDK init race (assignment on throwaway ids — render-phase init fix, PR #21), (2) the useInViewOnce mount-time element capture (exposure never fired for late-mounting experiment surfaces — callback-ref fix, PR #23).
+
+**G2 — ACCEPTED + DEPLOYED + LIVE-VERIFIED (manager, 2026-06-11).** PR #22 merged (CI 10/10 re-checked); generalist + console deployed; then the live exposure probe found the useInViewOnce bug → hotfix PR #23 → generalist + Property redeployed. Final live verification: treatment renders the promo card and control renders nothing (same visitor, ?ab override) · **`experiment_view` rows landed in the prod store for BOTH arms** (control via incremental-scroll probe — instant jump-scroll past a zero-height anchor never intersects; human scrolling does; probe scripts in scripts/g2_*.mjs) · all probe visitors deleted (77 events, 7 sessions). calc_promo_inline is LIVE and accruing. EXPERIMENTS.md published.
+
+**Status history:** EXECUTING — opened 2026-06-11 on user go ("let's do the experiments rollout, comprehensively and to a very high standard"). The last program item.
 
 ## Execution log
 
