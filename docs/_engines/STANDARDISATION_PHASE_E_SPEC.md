@@ -1,6 +1,8 @@
 # Standardisation — Phase E: dashboard reconciliation (unified estate console)
 
-**Status:** EXECUTING — opened 2026-06-11 on user go ("spec the dashboard reconciliation and put sonnet to work"). User intent: "move every single dashboard — or at least the data — into a single consolidated site so I don't have to [visit] 6 separate site pages."
+**Status:** CLOSED 2026-06-11. Merged (PR #14, post-merge main CI green run 27364472392 — 10 jobs incl. the new Build console). DEPLOYED: Vercel project `estate-console` (prj_6GGcP8azGfURciTo2YKr9XD3ft2U, rootDirectory console/web, Property-pattern workspace install), production at https://estate-console.vercel.app. Live verification: no-cred 307 → /login · X-Robots-Tag noindex · login → HttpOnly+SameSite=Strict+Secure cookie · authenticated estate overview serving LIVE data (943 sessions 7d, all 6 sites). One CI defect fixed forward: console eslint flat-config lacked the W4a global-ignores block (generated next-env.d.ts got linted). ADMIN_DASHBOARD_KEY (console-specific) given to user. Per-site console retirement deferred (user decision later).
+
+**Status history:** EXECUTING — opened 2026-06-11 on user go ("spec the dashboard reconciliation and put sonnet to work"). User intent: "move every single dashboard — or at least the data — into a single consolidated site so I don't have to [visit] 6 separate site pages."
 
 ## Execution log
 
