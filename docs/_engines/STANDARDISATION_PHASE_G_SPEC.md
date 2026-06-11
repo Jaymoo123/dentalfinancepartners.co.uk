@@ -49,6 +49,14 @@ file was touched. Coverage: all 6 running Property experiments x 10 fixed visito
 
 **Acceptance greps:** no console source imports of deleted experimentMeta config; Property experiment files are shims (correct); no other site has experiment imports to re-point.
 
+### G1 — ACCEPTED + DEPLOYED (manager, 2026-06-11) — and the live probe caught a real bug
+
+- G1 merged (PR #20, CI 10/10 re-checked at merge). Property + console deployed.
+- **LIVE CONTINUITY PROBE FAILED on first run — correctly.** Golden visitor `v_tester_00001` was assigned treatment/treatment on prod where the goldens say control/control. Root cause was NOT the lifted maths (unit goldens green; the shared module reproduces assignments exactly): **the F1 SDK composition had a pre-config identity race** — React runs child effects before parent effects, so experiment-assigning components called `getVisitorId()` before `initAnalytics` set the `ptp` prefix; the SDK minted throwaway ids under its `sdk` fallback prefix and arms were assigned against an identity that never matches the events. Window: F1 deploy → hotfix (same day, hours; low-double-digit Property sessions affected — recorded for anyone reading that period's experiment data).
+- **Hotfix (PR #21):** idempotent render-phase `initAnalytics` in the shared provider (render precedes ALL descendant effects) + `ids.ts`/`consent.ts` refuse fallback keys pre-config (return empty/undecided, never mint, never read a fallback consent). 4 regression tests pin it (293 web-shared total).
+- **Re-probe after hotfix deploy: golden visitor assigned control/control on prod — EXACT golden match.** Test visitor rows deleted (16 events, 2 sessions).
+- Lesson recorded: unit goldens prove the maths; only a live identity-seeded probe proves the composition. Both are now part of the experiments deploy gate.
+
 ## What "high standard" means here (the design constraints)
 
 1. **Assignment continuity is sacred.** Property has live experiments with 12 result rows. The shared module must produce IDENTICAL variant assignments to Property's current code: same djb2 hash, same `${visitorId}:${key}` seed, same weighted bucketing. **Golden tests pin real (visitorId, key) → variant triples computed from the current implementation BEFORE the lift**; a changed assignment is a STOP — it would scramble running experiments.
