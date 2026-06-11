@@ -86,7 +86,20 @@ export function AnalyticsProvider({
   const granted = state !== "denied" && !noTrack;
   const firstViewRef = useRef(true);
 
-  // Init SDK + install auto-capture unless opted out.
+  // Config MUST land before any child's useEffect runs. React runs effects
+  // child-first, so configuring inside this provider's own effect created a
+  // window where a child (e.g. an experiment-assigning component) called
+  // getVisitorId() pre-config and minted a throwaway id under the fallback
+  // prefix - decoupling experiment assignment from the real visitor identity
+  // (found live on Property, 2026-06-11). Lazy render-phase init is idempotent
+  // and runs before ALL effects, closing the race for every descendant.
+  const initedRef = useRef(false);
+  if (typeof window !== "undefined" && !initedRef.current) {
+    initAnalytics({ siteKey, siteName, storagePrefix, legacyPrefix, posture, noTrackPrefixes, deriveTopic });
+    initedRef.current = true;
+  }
+
+  // Install auto-capture + start ingest unless opted out.
   useEffect(() => {
     if (!granted) return;
     initAnalytics({ siteKey, siteName, storagePrefix, legacyPrefix, posture, noTrackPrefixes, deriveTopic });

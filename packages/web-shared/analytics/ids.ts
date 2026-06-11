@@ -15,8 +15,15 @@
 import { LIMITS } from "./types";
 import { getSdkConfig } from "./init";
 
-function prefix(): string {
-  return getSdkConfig()?.storagePrefix ?? "sdk";
+/**
+ * Storage prefix from the SDK config. Returns null when initAnalytics has not
+ * run yet: identity helpers must NOT mint ids under a fallback prefix - a
+ * pre-config caller would bind state (e.g. an experiment assignment) to a
+ * throwaway identity that never matches the real one on events. Callers treat
+ * "" as "no identity yet" (assignVariant -> null -> control, no registration).
+ */
+function prefix(): string | null {
+  return getSdkConfig()?.storagePrefix ?? null;
 }
 
 function visitorKey(): string { return `${prefix()}_vid`; }
@@ -90,9 +97,10 @@ export function _resetMigration(): void {
   _migrated = false;
 }
 
-/** Stable per-visitor id, minted once and persisted. */
+/** Stable per-visitor id, minted once and persisted. Empty until initAnalytics. */
 export function getVisitorId(): string {
   if (typeof window === "undefined") return "";
+  if (prefix() === null) return ""; // pre-config: no identity, never mint
   runLegacyMigration();
   const ls = window.localStorage;
   let id = safeGet(ls, visitorKey());
@@ -109,6 +117,7 @@ export function getVisitorId(): string {
  */
 export function getSessionId(): string {
   if (typeof window === "undefined") return "";
+  if (prefix() === null) return ""; // pre-config: no identity, never mint
   const ss = window.sessionStorage;
   const now = Date.now();
   const lastTs = Number(safeGet(ss, sessionTsKey()) || 0);
