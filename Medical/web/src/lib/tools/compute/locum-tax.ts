@@ -6,12 +6,10 @@
  *
  * Tax year: 2025/26.
  *
- * STALE-FIGURE NOTE: student loan thresholds in this file reproduce the OLD
- * component's values (plan1 24,990 / plan2 27,295 / plan4 31,395) which are
- * 2024/25 figures. This is intentional — golden tests are pinned to these
- * values first (per spec golden-test STOP rule). The deliberate correction to
- * 2025/26 values (26,065 / 28,470 / 32,745) will land as a separate approved
- * update with golden tests intentionally updated.
+ * Student loan thresholds are the 2025/26 values (26,065 / 28,470 / 32,745).
+ * History: the OLD component carried 2024/25 values; the extraction pinned them
+ * first per the golden-test STOP rule, then this deliberate user-approved
+ * correction landed 2026-06-11 with golden tests intentionally updated.
  */
 
 export type StudentLoanPlan = "plan1" | "plan2" | "plan4" | "none";
@@ -40,12 +38,13 @@ const HIGHER_RATE_LIMIT = 125140;
 const NI_LOWER_LIMIT = 12570;
 const NI_UPPER_LIMIT = 50270;
 
-// Student loan thresholds — 2024/25 values (OLD component faithfully reproduced)
-// STALE: 2025/26 values are plan1=26,065 plan2=27,295 plan4=32,745
+// Student loan thresholds — 2025/26 values (deliberate correction 2026-06-11,
+// user-approved figures; the old component carried 2024/25 values, recorded in
+// the Phase D spec as a stale-figure finding).
 const STUDENT_LOAN_THRESHOLDS: Record<StudentLoanPlan, number> = {
-  plan1: 24990,
-  plan2: 27295,
-  plan4: 31395,
+  plan1: 26065,
+  plan2: 28470,
+  plan4: 32745,
   none: Infinity,
 };
 

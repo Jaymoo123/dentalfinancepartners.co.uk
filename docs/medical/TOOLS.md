@@ -50,20 +50,17 @@ Compute lib: `Medical/web/src/lib/tools/compute/locum-tax.ts`
 | Class 4 NI main rate | 6% | FA 2024, s.2 (reduced from 9% from 6 Apr 2024) |
 | Class 4 NI upper rate | 2% | NIC Regulations 2025/26 |
 
-**STALE-FIGURE NOTICE — student loan thresholds:**
-The compute lib faithfully reproduces values from the OLD inline calculator components.
-These values are 2024/25 thresholds, not 2025/26:
+**STALE-FIGURE NOTICE — student loan thresholds: RESOLVED 2026-06-11.**
+The old inline component carried 2024/25 thresholds; the extraction pinned them
+first (golden-test STOP rule), then the deliberate user-approved correction to
+2025/26 values landed with golden tests intentionally updated:
 
-| Plan | Compute lib value | Correct 2025/26 value | Source |
-|------|-------------------|----------------------|--------|
+| Plan | Old (2024/25) | Current (2025/26) | Source |
+|------|---------------|-------------------|--------|
 | Plan 1 | £24,990 | £26,065 | SLC threshold notice 2025 |
 | Plan 2 | £27,295 | £28,470 | SLC threshold notice 2025 |
 | Plan 4 (Scotland) | £31,395 | £32,745 | SLC threshold notice 2025 |
-| Postgrad (PGL) | £21,000 | £21,000 | Unchanged |
-
-**Action required**: Correct to 2025/26 values and update golden tests deliberately.
-This is a user-visible finding; deliberate correction must be a separate named commit.
-See golden test file header comment in `Medical/web/src/lib/tools/compute/medical-tools.test.ts`.
+| Postgrad (PGL) | £21,000 (not offered as an option) | £21,000 | Unchanged |
 
 ### Private Practice Incorporation Calculator
 

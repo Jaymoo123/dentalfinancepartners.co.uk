@@ -66,6 +66,13 @@ Reader apparatus (`ReadingProgress`, `TableOfContents`) are additive shared-comp
 
 ---
 
+**MEDICAL — ACCEPTED (2026-06-11, manager verification).**
+- 19/19 goldens via the site's wired runner (vitest.config + test script present — the dentists lesson, applied mid-flight via manager relay) · `next build` green (125 pages) · PF-07/TL-03/OB-02 greps clean · wizard consent checkbox verified real and label-matched (the LD-04 relay landed: executor found and fixed the same fabrication risk pre-emptively).
+- **LIVE BUG FOUND BY EXECUTOR (user-facing):** the health-check wizard POSTed to `/api/leads`, which does not exist on Medical — live wizard submissions have been silently lost (errors swallowed). Fixed: shared `submitLead()` path with full contract + consent trio + stitching. **Deploying Medical promptly is the remedy for live lead loss.**
+- **STALE-FIGURE CORRECTION applied by manager (user-approved figures, same family as generalist PR #6):** locum calculator SL thresholds 2024/25 → 2025/26 (plan1 26,065 / plan2 28,470 / plan4 32,745); goldens deliberately updated with derivations; TOOLS.md notice marked RESOLVED. Plan-4 mislabel ("postgraduate") already fixed in the new config.
+- Merge of dentists main resolved one spec-log conflict (both-keep). Schema STOP posture carried (local builders stay).
+- Deploy gate (operator): Vercel env `SUPABASE_SERVICE_ROLE_KEY` + `ADMIN_DASHBOARD_KEY`, deploy, `an01_browser_pass.mjs <url> ma`, ingest check.
+
 **MEDICAL AUDIT (Sonnet, 2026-06-11, branch `adopt-medical`) — first log entry, pre-implementation.**
 
 **Calculator inventory (3 tools):**

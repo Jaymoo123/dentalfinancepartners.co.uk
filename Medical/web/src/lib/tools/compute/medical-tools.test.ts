@@ -4,12 +4,13 @@
  * All values are pinned to the OLD component outputs (pre-extraction).
  * Any mismatch means the extraction changed behaviour — that is a STOP.
  *
- * STALE-FIGURE NOTES (recorded, not silently fixed):
- * - LocumTax: student loan thresholds are 2024/25 values (plan1=24,990
- *   plan2=27,295 plan4=31,395). 2025/26 values are 26,065/28,470/32,745.
- *   The correction is deferred to a deliberate approved update.
- * - LocumTax plan4 label in old UI reads "postgraduate" but threshold/rate
- *   matches Scottish Plan 4 (not PG loan at 6%/£21k).
+ * STALE-FIGURE NOTES (resolved):
+ * - LocumTax student loan thresholds: extraction pinned the OLD 2024/25 values
+ *   (24,990/27,295/31,395); the three SL tests below were then deliberately
+ *   updated to the user-approved 2025/26 values (26,065/28,470/32,745) on
+ *   2026-06-11, with derivations in each test.
+ * - LocumTax plan4 label in old UI read "postgraduate" but threshold/rate
+ *   matches Scottish Plan 4 — fixed in the new config ("Plan 4 (Scotland)").
  */
 
 import { describe, it, expect } from "vitest";
@@ -39,24 +40,24 @@ describe("calcLocumTax — golden tests (pinned to OLD component outputs)", () =
   });
 
   it("plan2 student loan: gross=80000 expenses=5000 pension=10000", () => {
-    // netIncome = 65000; threshold plan2 = 27295 (2024/25 OLD value)
-    // SL = (65000 - 27295) * 0.09 = 37705 * 0.09 = 3393.45
+    // netIncome = 65000; threshold plan2 = 28470 (2025/26, deliberate correction 2026-06-11)
+    // SL = (65000 - 28470) * 0.09 = 36530 * 0.09 = 3287.70
     const r = calcLocumTax({ grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "plan2" });
-    expect(r.studentLoanRepayment).toBeCloseTo(3393.45, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(3287.7, 1);
   });
 
   it("plan1 student loan: gross=60000 expenses=3000 pension=5000", () => {
-    // netIncome = 52000; threshold plan1 = 24990 (2024/25 OLD value)
-    // SL = (52000 - 24990) * 0.09 = 27010 * 0.09 = 2430.9
+    // netIncome = 52000; threshold plan1 = 26065 (2025/26, deliberate correction 2026-06-11)
+    // SL = (52000 - 26065) * 0.09 = 25935 * 0.09 = 2334.15
     const r = calcLocumTax({ grossIncome: 60000, expenses: 3000, pensionContributions: 5000, studentLoanPlan: "plan1" });
-    expect(r.studentLoanRepayment).toBeCloseTo(2430.9, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(2334.15, 1);
   });
 
   it("plan4 student loan: gross=70000 expenses=4000 pension=8000", () => {
-    // netIncome = 58000; threshold plan4 = 31395 (2024/25 OLD value)
-    // SL = (58000 - 31395) * 0.09 = 26605 * 0.09 = 2394.45
+    // netIncome = 58000; threshold plan4 = 32745 (2025/26, deliberate correction 2026-06-11)
+    // SL = (58000 - 32745) * 0.09 = 25255 * 0.09 = 2272.95
     const r = calcLocumTax({ grossIncome: 70000, expenses: 4000, pensionContributions: 8000, studentLoanPlan: "plan4" });
-    expect(r.studentLoanRepayment).toBeCloseTo(2394.45, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(2272.95, 1);
   });
 
   it("income below personal allowance: no income tax", () => {
