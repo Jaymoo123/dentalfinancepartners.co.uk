@@ -8,6 +8,8 @@
  *     against fixture rows (no HTTP — rest() is mockable via env var absence).
  *   - Journey utilities: humanise, buildActivityRows, buildStory, summariseVitals
  *     against fixture events.
+ *   - Experiment arm/funnel parsing: getExperimentArms + getExperimentFunnel
+ *     grouping logic against fixture rows (no HTTP).
  */
 
 import { describe, it, expect } from "vitest";
@@ -19,7 +21,11 @@ import {
   clearSessionCookie,
   CONSOLE_COOKIE_NAME,
 } from "./consoleAuth";
-import type { VisitorEvent } from "./adminData";
+import type { VisitorEvent, ExperimentResult, ExperimentFunnelRow } from "./adminData";
+import {
+  parseExperimentArms,
+  parseExperimentFunnel,
+} from "./adminData";
 import {
   humanise,
   buildActivityRows,
@@ -340,5 +346,130 @@ describe("buildStory", () => {
 
   it("returns empty array for no events", () => {
     expect(buildStory([])).toHaveLength(0);
+  });
+});
+
+// ── parseExperimentArms tests ─────────────────────────────────────────────
+
+describe("parseExperimentArms", () => {
+  const fixtureRows: ExperimentResult[] = [
+    { exp: "calc_result_capture:control",   sessions: 120, cta_clicks: 30, form_starts: 18, converted_sessions: 6, conversion_rate: 0.05 },
+    { exp: "calc_result_capture:treatment", sessions: 115, cta_clicks: 42, form_starts: 29, converted_sessions: 11, conversion_rate: 0.096 },
+    { exp: "exit_intent_offer:control",     sessions: 200, cta_clicks: 10, form_starts: 8,  converted_sessions: 4, conversion_rate: 0.02 },
+    { exp: "exit_intent_offer:treatment",   sessions: 195, cta_clicks: 22, form_starts: 18, converted_sessions: 9, conversion_rate: 0.046 },
+  ];
+
+  it("returns a key per experiment id", () => {
+    const result = parseExperimentArms(fixtureRows);
+    expect(Object.keys(result)).toContain("calc_result_capture");
+    expect(Object.keys(result)).toContain("exit_intent_offer");
+    expect(Object.keys(result)).toHaveLength(2);
+  });
+
+  it("places control and treatment on the correct slots", () => {
+    const result = parseExperimentArms(fixtureRows);
+    expect(result.calc_result_capture.control?.sessions).toBe(120);
+    expect(result.calc_result_capture.treatment?.sessions).toBe(115);
+  });
+
+  it("preserves conversion_rate on each arm", () => {
+    const result = parseExperimentArms(fixtureRows);
+    expect(result.exit_intent_offer.control?.conversion_rate).toBeCloseTo(0.02);
+    expect(result.exit_intent_offer.treatment?.conversion_rate).toBeCloseTo(0.046);
+  });
+
+  it("returns null arms for experiments with only one variant present", () => {
+    const partial: ExperimentResult[] = [
+      { exp: "my_test:control", sessions: 50, cta_clicks: 5, form_starts: 3, converted_sessions: 1, conversion_rate: 0.02 },
+    ];
+    const result = parseExperimentArms(partial);
+    expect(result.my_test.control).not.toBeNull();
+    expect(result.my_test.treatment).toBeNull();
+  });
+
+  it("skips rows without a colon separator (malformed exp field)", () => {
+    const withBad: ExperimentResult[] = [
+      { exp: "no_colon_here", sessions: 99, cta_clicks: 0, form_starts: 0, converted_sessions: 0, conversion_rate: null },
+      { exp: "good_exp:control", sessions: 10, cta_clicks: 1, form_starts: 1, converted_sessions: 0, conversion_rate: 0 },
+    ];
+    const result = parseExperimentArms(withBad);
+    expect(Object.keys(result)).not.toContain("no_colon_here");
+    expect(Object.keys(result)).toContain("good_exp");
+  });
+
+  it("returns an empty map for empty input", () => {
+    expect(parseExperimentArms([])).toEqual({});
+  });
+
+  it("handles an unknown experiment id gracefully (no error thrown)", () => {
+    const rows: ExperimentResult[] = [
+      { exp: "brand_new_unknown_id:control",   sessions: 5, cta_clicks: 0, form_starts: 0, converted_sessions: 0, conversion_rate: null },
+      { exp: "brand_new_unknown_id:treatment", sessions: 5, cta_clicks: 0, form_starts: 0, converted_sessions: 0, conversion_rate: null },
+    ];
+    expect(() => parseExperimentArms(rows)).not.toThrow();
+    const result = parseExperimentArms(rows);
+    expect(result.brand_new_unknown_id).toBeDefined();
+    expect(result.brand_new_unknown_id.control).not.toBeNull();
+    expect(result.brand_new_unknown_id.treatment).not.toBeNull();
+  });
+});
+
+// ── parseExperimentFunnel tests ───────────────────────────────────────────
+
+describe("parseExperimentFunnel", () => {
+  const fixtureRows: ExperimentFunnelRow[] = [
+    { exp: "calc_result_capture:control",   exposed_sessions: 100, acted_sessions: 12, acted_with_phone_sessions: 8, converted_sessions: 5 },
+    { exp: "calc_result_capture:treatment", exposed_sessions: 98,  acted_sessions: 28, acted_with_phone_sessions: 19, converted_sessions: 10 },
+    { exp: "lead_form_length:control",      exposed_sessions: 80,  acted_sessions: 60, acted_with_phone_sessions: 55, converted_sessions: 7 },
+    { exp: "lead_form_length:treatment",    exposed_sessions: 85,  acted_sessions: 72, acted_with_phone_sessions: 10, converted_sessions: 8 },
+  ];
+
+  it("returns a key per experiment id", () => {
+    const result = parseExperimentFunnel(fixtureRows);
+    expect(Object.keys(result)).toContain("calc_result_capture");
+    expect(Object.keys(result)).toContain("lead_form_length");
+    expect(Object.keys(result)).toHaveLength(2);
+  });
+
+  it("maps exposed, acted, acted_with_phone and converted on each arm", () => {
+    const result = parseExperimentFunnel(fixtureRows);
+    const ctrl = result.calc_result_capture.control;
+    expect(ctrl?.exposed).toBe(100);
+    expect(ctrl?.acted).toBe(12);
+    expect(ctrl?.acted_with_phone).toBe(8);
+    expect(ctrl?.converted).toBe(5);
+    const trt = result.calc_result_capture.treatment;
+    expect(trt?.exposed).toBe(98);
+    expect(trt?.acted).toBe(28);
+  });
+
+  it("places guardrail (acted_with_phone) correctly on lead_form_length", () => {
+    const result = parseExperimentFunnel(fixtureRows);
+    expect(result.lead_form_length.control?.acted_with_phone).toBe(55);
+    expect(result.lead_form_length.treatment?.acted_with_phone).toBe(10);
+  });
+
+  it("skips rows without a colon in exp field", () => {
+    const bad: ExperimentFunnelRow[] = [
+      { exp: "malformed", exposed_sessions: 10, acted_sessions: 5, acted_with_phone_sessions: 0, converted_sessions: 0 },
+    ];
+    expect(parseExperimentFunnel(bad)).toEqual({});
+  });
+
+  it("returns empty map for empty input", () => {
+    expect(parseExperimentFunnel([])).toEqual({});
+  });
+
+  it("handles an unknown experiment id (funnel fallback test)", () => {
+    // Unknown ids arriving from the DB must not crash -- the card will show the
+    // not-enough-data state (both arms null initially) or the fallback meta label.
+    const rows: ExperimentFunnelRow[] = [
+      { exp: "future_experiment:control",   exposed_sessions: 20, acted_sessions: 5, acted_with_phone_sessions: 0, converted_sessions: 1 },
+      { exp: "future_experiment:treatment", exposed_sessions: 22, acted_sessions: 9, acted_with_phone_sessions: 0, converted_sessions: 2 },
+    ];
+    expect(() => parseExperimentFunnel(rows)).not.toThrow();
+    const result = parseExperimentFunnel(rows);
+    expect(result.future_experiment.control?.exposed).toBe(20);
+    expect(result.future_experiment.treatment?.exposed).toBe(22);
   });
 });

@@ -37,6 +37,8 @@ import {
   getChannelConversion,
   getVisitsToConversion,
   getExperimentResults,
+  getExperimentArms,
+  getExperimentFunnel,
   getPersonalizationResults,
   getNurtureFunnel,
   getLeadIntentMix,
@@ -48,7 +50,12 @@ import {
   type ChannelConversion,
   type VisitsBucket,
   type FormFieldDropoff,
+  type ExperimentResult,
+  type ExperimentArms,
+  type ExperimentFunnelArms,
 } from "@accounting-network/web-shared/console/adminData";
+import { ExperimentCard } from "@accounting-network/web-shared/console/components/ExperimentCards";
+import { getExperimentMeta } from "@/config/experimentMeta";
 import {
   getSitesRegistry,
 } from "@accounting-network/web-shared/console/estateData";
@@ -608,8 +615,10 @@ export default async function SitePage({
   const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
 
   // Capability-conditional data fetches (only fetch if capability is on)
-  const [experimentResults, personalisationResults, nurtureFunnel, leadIntent] = await Promise.all([
-    caps.experiments ? getExperimentResults(siteKey) : Promise.resolve([]),
+  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent] = await Promise.all([
+    caps.experiments ? getExperimentResults(siteKey) : Promise.resolve([] as ExperimentResult[]),
+    caps.experiments ? getExperimentArms(siteKey) : Promise.resolve({} as Record<string, ExperimentArms>),
+    caps.experiments ? getExperimentFunnel(siteKey) : Promise.resolve({} as Record<string, ExperimentFunnelArms>),
     caps.personalisation ? getPersonalizationResults(siteKey) : Promise.resolve([]),
     caps.nurture ? getNurtureFunnel(siteKey) : Promise.resolve([]),
     caps.leadIntent ? getLeadIntentMix(siteKey) : Promise.resolve([]),
@@ -675,37 +684,74 @@ export default async function SitePage({
     />
   );
 
-  // Experiments tab -- capability-conditional
+  // Derive which experiment keys have data (for the card loop).
+  // All keys from both arms + funnel, deduplicated, so unknown ids also show.
+  const experimentKeys = Array.from(
+    new Set([
+      ...Object.keys(experimentArms),
+      ...Object.keys(experimentFunnel),
+    ]),
+  );
+
+  // Experiments tab -- capability-conditional, rich card view
   const experimentsSection = (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {caps.experiments ? (
         experimentResults.length === 0 ? (
           <p className="text-sm text-slate-400">No experiment results yet.</p>
         ) : (
-          <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                <tr>
-                  <th className="px-3 py-2">Experiment</th>
-                  <th className="px-3 py-2 text-right">Sessions</th>
-                  <th className="px-3 py-2 text-right">CTA clicks</th>
-                  <th className="px-3 py-2 text-right">Converted</th>
-                  <th className="px-3 py-2">Conv. rate</th>
-                </tr>
-              </thead>
-              <tbody>
-                {experimentResults.map((e) => (
-                  <tr key={e.exp} className="border-t border-slate-100">
-                    <td className="px-3 py-2 font-medium text-slate-800">{e.exp}</td>
-                    <td className="px-3 py-2 text-right font-mono">{e.sessions}</td>
-                    <td className="px-3 py-2 text-right font-mono">{e.cta_clicks}</td>
-                    <td className="px-3 py-2 text-right font-mono">{e.converted_sessions}</td>
-                    <td className="px-3 py-2 text-slate-700">{pct(e.conversion_rate)}</td>
-                  </tr>
+          <>
+            <div>
+              <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
+              <p className="mt-1 text-xs text-slate-500">
+                Each running experiment, control (current) vs treatment (new), updating as data accrues. Lift and
+                significance are honest: directional until each arm has enough sessions.
+              </p>
+              <div className="mt-3 space-y-4">
+                {experimentKeys.map((key) => (
+                  <ExperimentCard
+                    key={key}
+                    meta={getExperimentMeta(key)}
+                    arms={experimentArms[key] ?? { control: null, treatment: null }}
+                    funnel={experimentFunnel[key]}
+                  />
                 ))}
-              </tbody>
-            </table>
-          </div>
+              </div>
+            </div>
+
+            {/* Secondary: raw all-results ledger */}
+            <div>
+              <h2 className="text-lg font-bold text-slate-900">All results (raw ledger)</h2>
+              <p className="mt-1 text-xs text-slate-500">
+                Flat view of every experiment:variant row from vw_experiment_results. New experiments appear here
+                automatically as events accrue.
+              </p>
+              <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="w-full text-sm">
+                  <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+                    <tr>
+                      <th className="px-3 py-2">Experiment : variant</th>
+                      <th className="px-3 py-2 text-right">Sessions</th>
+                      <th className="hidden px-3 py-2 text-right sm:table-cell">CTA clicks</th>
+                      <th className="hidden px-3 py-2 text-right sm:table-cell">Form starts</th>
+                      <th className="px-3 py-2 text-right">Conversion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {experimentResults.map((x) => (
+                      <tr key={x.exp} className="border-t border-slate-100">
+                        <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
+                        <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
+                        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.cta_clicks}</td>
+                        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.form_starts}</td>
+                        <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </>
         )
       ) : (
         <NotOperatedPanel

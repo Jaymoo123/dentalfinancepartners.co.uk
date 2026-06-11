@@ -65,6 +65,8 @@
     "./console/components/DashboardTabs": "./console/components/DashboardTabs.tsx",
     "./console/components/CountrySelect": "./console/components/CountrySelect.tsx",
     "./console/components/VisitorsTable": "./console/components/VisitorsTable.tsx",
+    "./console/components/ExperimentCards": "./console/components/ExperimentCards.tsx",
+    "./console/components/experimentMetaTypes": "./console/components/experimentMetaTypes.ts",
     "./nurture": "./nurture/index.ts",
     "./nurture/tokens": "./nurture/tokens.ts",
     "./nurture/config": "./nurture/config.ts",
