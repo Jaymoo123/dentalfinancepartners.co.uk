@@ -293,6 +293,13 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 
 ---
 
+**AGENCY — ACCEPTED (2026-06-11, manager verification).**
+- 28/28 goldens via the site's wired runner · `next build` green (464 pages) · consent-fabrication grep clean (no `consent: true` literals; all consent from checkbox state) · PF-07/TL-03/OB-02 hits only inside explanatory panel text — clean.
+- **Newsletter scope correction held:** the brief's "likely no newsletter" was wrong (live Vercel env carries a full ARMED Resend stack); mid-flight relay re-scoped to the GAP-5 re-point. Old fork (with the never-patched EN-05 send-then-advance double-email defect in BOTH confirm route and cron) deleted; shared engine composed posture-neutral. **Deploy decision for operator: carry CRON_SECRET over (stays armed) or withhold it (goes dormant). Env mapping required at deploy: RESEND_FROM_*/REPLY_TO → NURTURE_* (RESEND_* names stay for health-check emails), RESEND_WEBHOOK_SECRET → NURTURE_WEBHOOK_SECRET + Resend dashboard endpoint → /api/nurture/events, NEWSLETTER_TOKEN_SECRET → NURTURE_TOKEN_SECRET (rotation kills in-flight confirm links), RESEND_AUDIENCE_ID retired.**
+- Agency data migration file written as no-op guard (zero live agency rows verified); legacy-table ordering caveat documented.
+- **Generalist LD-09 back-port included on this branch (manager):** generalist's SignupForm sent `consent: true` with a consent_text the visitor never saw — the agency executor's finding. Fixed: rendered required checkbox, consent from state, stored text = the exact rendered label (matches config defaultConsentText). Generalist rebuild green (676 pages).
+- Deploy gate (operator): Vercel env `ADMIN_DASHBOARD_KEY` (has service-role already) + the NURTURE_* mapping above + arming decision, deploy, `an01_browser_pass.mjs <url> aff`, ingest check.
+
 **AGENCY AUDIT (Sonnet, 2026-06-11, branch `adopt-agency`) — COMPLETE. Both commits green.**
 
 **Calculator inventory (8 tools):**
