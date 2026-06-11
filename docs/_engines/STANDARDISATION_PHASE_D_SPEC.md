@@ -227,7 +227,7 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 7. `TakeHomePayCalculator` — PAYE take-home with student loan plans. **STALE-FIGURE STOP APPLIED:** plan1/plan2/plan4 thresholds were 2024/25 values (24,990/27,295/31,395). Golden tests pinned to OLD values first (commit `906e1fca`). Stale-figure correction in separate commit `b1bba488` — 2025/26 values 26,065/28,470/32,745 with derivations. Both commits on branch.
 8. `EmployerNiCalculator` — employer NI calculation. 2025/26 secondary threshold £5,000, 15% rate post April 2025. Rates correct.
 
-**Newsletter surface:** Present (`/newsletter` subscribe form). Double opt-in: confirmation email IS the consent — no consent checkbox needed on subscribe. No GAP-5 action required.
+**Newsletter surface:** Present (`/newsletter` subscribe form). Double opt-in: confirmation email IS the consent — no consent checkbox needed on subscribe. No GAP-5 action required. **[SUPERSEDED by manager mid-flight scope correction — see the AGENCY NEWSLETTER RE-POINT entry at the top of this log: full GAP-5 re-point executed in commit f031476d, incl. LD-09 consent checkbox (a confirmation click proves the address, it does not store the disclosure text the visitor accepted).]**
 
 **GA4 tag:** `niche.seo.google_analytics_id` is empty in niche config. No GA4 active on Agency. No ConsentedScripts GA4 argument passed.
 
@@ -251,7 +251,7 @@ Each site's brief = run this list, compose against the SHARED packages, delete t
 - Console `/admin/analytics`: YES. Full dashboard + trends + leads + visitor timeline. `checkAuth.ts`, `VisitorTabs.tsx`, `/api/admin/login` rate-limited with timing-safe key compare.
 - Schema re-point: STOP (pre-resolved per spec). Local builders left in place.
 - Reader apparatus re-point: YES (DOM-identical). Both components deleted and re-pointed to shared.
-- Nurture: newsletter exists but double opt-in = no re-point needed; n/a for GAP-5.
+- Nurture: ~~newsletter exists but double opt-in = no re-point needed; n/a for GAP-5~~ **SUPERSEDED** — manager scope correction (live armed env evidence): full GAP-5 re-point executed, commit f031476d. See top-of-log entry.
 
 **Acceptance checks — all PASS:**
 - 28/28 golden tests via `npx vitest run` from `digital-agency/web`

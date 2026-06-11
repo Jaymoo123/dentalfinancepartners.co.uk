@@ -778,7 +778,7 @@ export default async function AdminAnalyticsPage({
       />
       <NotOperatedPanel
         feature="Nurture engine (newsletter)"
-        reason="Agency has a newsletter surface (/newsletter). The drip nurture engine (Resend sequences, Phase 5) has not yet been wired up. When enabled, subscriber sequences will appear here."
+        reason="Agency operates a newsletter (/newsletter) on the shared nurture engine (GAP-5 composition: /api/nurture/* routes, agency_welcome sequence, subscribers table site_key 'agency'). Sending is armed or dormant by CRON_SECRET at deploy (EN-04). Subscriber-health panels (vw_subscriber_health, vw_nurture_step_funnel) are not yet mounted here."
       />
       <CtaPerformancePanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />
