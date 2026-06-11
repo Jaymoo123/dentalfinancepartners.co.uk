@@ -107,6 +107,37 @@ FLAT routing: Medical blog uses FLAT slugs (`/blog/{slug}` not `/blog/{category}
 - Reader apparatus re-point: YES (DOM-identical).
 - Nurture: n/a.
 
+**MEDICAL — MID-FLIGHT GUARDRAIL UPDATE ACKNOWLEDGED (Sonnet, 2026-06-11, branch `adopt-medical`).** Two defects found in the dentists adoption were relayed by the manager; both checked and resolved on Medical:
+
+1. **LD-04 consent (hard rule).** Audit of every lead-submitting surface on Medical found exactly two: `LeadForm.tsx` (already compliant — real required checkbox, `consent_given` from checkbox state, stored `consent_text` = the rendered label) and `MedicalHealthCheckWizard.tsx` (**violation**: no consent checkbox, no consent fields on the payload). Fixed in the wizard following the LeadForm/dentists-Wizard pattern: real user-operated checkbox on step 6 (the contact-details step), required by `canProceed()` so the wizard cannot submit without it, `consent_given` from checkbox state, `CONSENT_TEXT` constant = exactly the label rendered next to the checkbox, `consent_at` at submission. Nothing hardcoded, nothing inferred.
+   - Consequential fix: the wizard previously POSTed to `/api/leads`, which does not exist on Medical (leads were silently lost — flagged in the audit above as "not fixed here"). Storing consent requires a working submission path, so the wizard now submits via the shared `submitLead()` (`web-shared/lib/supabase-client`, same path as the dentists wizard) with the full `LeadSubmission` contract: `full_name`/`email`/`phone`/`role`/`message`, `source` from `niche.content_strategy.source_identifier` (PF-07), `source_url`, `submitted_at`, consent trio, `visitor_id`/`session_id` (LD-05). `onLead` now fires only on confirmed success. This supersedes the earlier "missing `/api/leads` not fixed here" note — the gap is closed by routing around it, not by adding the route.
+
+2. **Test harness wiring.** `Medical/web/vitest.config.ts` created (copy of generalist's, including the `css: { postcss: { plugins: [] } }` PostCSS-clash workaround); `"test": "vitest run"` added to `Medical/web/package.json`. Goldens executed via the site's own runner from `Medical/web`: `npx vitest run` → **1 file, 19/19 tests passed** (`src/lib/tools/compute/medical-tools.test.ts`: 8 LocumTax + 6 NHSPension + 5 Incorporation, including the two ED-01 guard tests).
+
+Also fixed while verifying (tsc was red on the in-flight tools work): tool configs drifted from the shared `CalcField`/`CalcResult` contract (`hint:` → `help:`, headline tone `"neutral"` → `"default"`); `Medical/web/src/lib/schema.ts` now wraps the shared two-arg `buildWebApplication` in a site-bound one-arg wrapper (generalist pattern, `getSiteOpts()`); Medical `Breadcrumb` gained the `variant="light"` prop (dentists pattern, copper hover) used by the calculator hero. `npx tsc --noEmit` clean, eslint clean on all touched files, goldens re-run green after the changes.
+
+**MEDICAL — IMPLEMENTATION COMPLETE (Sonnet, 2026-06-11, commit f930f5c1, branch `adopt-medical`).**
+
+All Phase D items shipped and tested green:
+
+- **Analytics SDK (AN-01/SEC-08):** ConsentProvider + AnalyticsProvider + ConsentedScripts in layout. storagePrefix `"ma"` FROZEN. `/api/track` via `createTrackHandler`. LeadForm fully wired (LD-02/03/04/05): honeypot `company_url`, field focus/blur/error tracking, `trackFormSubmit`, visitor/session stitching, `onLead` replacing direct gtag. MedicalHealthCheckWizard: `useFormTracking("health_check_wizard")`, `trackFormSubmit(TOTAL_STEPS)`, visitor/session stitching, `onLead` on confirmed success.
+- **data-cta:** CTASection primary (`cta-section-primary`), SiteHeader desktop nav (`nav-book-call`), SiteHeader mobile nav (`mobile-nav-book-call`), calculator gallery cards (`calculator-gallery-{slug}`), `/calculators/[slug]` page bottom CTA (`calculator-page-cta`).
+- **Tools platform (3 calculators):** Pure compute libs in `src/lib/tools/compute/` (TL-03 clean). 19 golden tests GREEN. GenericTool configs + CalculatorClient RSC boundary + registry. `/calculators` gallery from `allTools()`. `/calculators/[slug]` static pages. `/embed/[slug]` + `/embed` gallery. `embedPrefix: "embed"` in CSP. `/nhs-pension` inline calculator re-pointed to CalculatorClient. Old calculator components deleted. Sitemap entries from registry. `docs/medical/TOOLS.md` written with all figures traced to sources.
+- **STALE-FIGURE USER NOTIFICATION:** Locum tax student loan thresholds in compute lib are 2024/25 values (plan1=24,990, plan2=27,295, plan4=31,395). Correct 2025/26 values are 26,065/28,470/32,745 (SLC 2025). Golden tests are pinned to OLD values deliberately per spec. Deliberate correction must be a separate named commit.
+- **Console (OB-01/02):** `/admin/analytics` (main dashboard), `/admin/analytics/login`, `/admin/analytics/trends`, `/admin/analytics/leads`, `/admin/analytics/visitor/[visitorId]`. `checkAuth.ts` + `VisitorTabs.tsx`. `/api/admin/login` route. Not-operated panels: A/B experiments, personalisation, nurture (no newsletter surface = n/a), lead-intent enrichment.
+- **Reader apparatus (STD-04):** ReadingProgress and TableOfContents re-pointed to shared (DOM-identical confirmed).
+- **Env example (PF-05):** `Medical/web/.env.local.example` written.
+- **Schema re-point:** STOP confirmed. Local builders left in place. Re-exports of `JsonLd`, `buildWebApplication`, `buildFaqPage` added to `src/lib/schema.ts` for tool pages (additive, no change to existing blog/breadcrumb outputs).
+
+**Acceptance checks:**
+- `next build` GREEN (125 routes, 0 errors, warnings pre-existing)
+- `npx tsc --noEmit` clean
+- 19/19 golden tests pass (`npx vitest run` from `Medical/web`)
+- PF-07: no `"medical"` literals in admin/analytics code; site key always from `niche.content_strategy.site_key`
+- TL-03: compute libs have no React/window/document/fetch (grep verified)
+- OB-01: login form POSTs to `/api/admin/login`, credential never in URL
+- AN-01: storagePrefix `"ma"` frozen literal in layout.tsx only (deliberate frozen value, not a config key)
+
 ---
 
 ## Sequence & branches
