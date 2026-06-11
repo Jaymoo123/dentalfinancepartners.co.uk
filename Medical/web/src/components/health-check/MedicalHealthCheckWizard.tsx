@@ -4,6 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, ChevronRight, AlertTriangle, Info } from "lucide-react";
 import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
+import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 type Role = "gp-partner" | "salaried-gp" | "consultant" | "locum" | "junior" | "";
 type PensionStatus = "not-enrolled" | "enrolled-fine" | "concerned-aa" | "received-charge" | "";
@@ -26,6 +30,9 @@ type Finding = {
   title: string;
   body: string;
 };
+
+// LD-04: must be exactly the disclosure rendered next to the step-6 checkbox.
+const CONSENT_TEXT = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our Privacy Policy.`;
 
 function deriveFindings(answers: Answers): Finding[] {
   const findings: Finding[] = [];
@@ -176,6 +183,7 @@ function RadioOption({ value, current, onChange, children }: {
 
 export function MedicalHealthCheckWizard() {
   const [step, setStep] = useState(1);
+  const [started, setStarted] = useState(false);
   const [answers, setAnswers] = useState<Answers>({
     role: "",
     pensionStatus: "",
@@ -188,6 +196,11 @@ export function MedicalHealthCheckWizard() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [findings, setFindings] = useState<Finding[]>([]);
+  // LD-04: consent only ever comes from this rendered, user-operated checkbox.
+  const [consent, setConsent] = useState(false);
+
+  // SEC-08: wizard lifecycle tracking — no field values captured, only step + outcome.
+  const { onSubmit: trackFormSubmit, onLead } = useFormTracking("health_check_wizard");
 
   const canProceed = () => {
     if (step === 1) return answers.role !== "";
@@ -195,7 +208,8 @@ export function MedicalHealthCheckWizard() {
     if (step === 3) return answers.privatePractice !== "";
     if (step === 4) return answers.incomeLevel !== "";
     if (step === 5) return answers.currentAccountant !== "";
-    if (step === 6) return answers.name.trim() !== "" && answers.email.includes("@");
+    // LD-04: the consent checkbox is required before the wizard can submit.
+    if (step === 6) return answers.name.trim() !== "" && answers.email.includes("@") && consent;
     return false;
   };
 
@@ -204,20 +218,43 @@ export function MedicalHealthCheckWizard() {
     const derived = deriveFindings(answers);
     setFindings(derived);
 
-    try {
-      await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: answers.name,
-          email: answers.email,
-          message: `Medical health check: role=${answers.role}, pension=${answers.pensionStatus}, private=${answers.privatePractice}, income=${answers.incomeLevel}, accountant=${answers.currentAccountant}. Findings: ${derived.map((f) => f.title).join("; ")}`,
-          source: "medical",
-          lead_type: "health-check",
-        }),
-      });
-    } catch {
-      // Non-critical: show findings regardless of submission status
+    // LD-02: emit form_submit (step count = completed questionnaire steps)
+    trackFormSubmit(TOTAL_STEPS);
+
+    const { supabaseUrl, supabaseKey } = getSupabaseConfig();
+    if (supabaseUrl && supabaseKey) {
+      const payload = {
+        full_name: answers.name.trim(),
+        email: answers.email.trim().toLowerCase(),
+        phone: "—",
+        role: answers.role,
+        message: `Medical health check: role=${answers.role}, pension=${answers.pensionStatus}, private=${answers.privatePractice}, income=${answers.incomeLevel}, accountant=${answers.currentAccountant}. Findings: ${derived.map((f) => f.title).join("; ")}`,
+        // PF-07: source from niche config, never a literal
+        source: niche.content_strategy.source_identifier,
+        source_url:
+          typeof window !== "undefined"
+            ? window.location.href
+            : "/free-practice-health-check",
+        submitted_at: new Date().toISOString(),
+        // LD-04: real consent state from the step-6 checkbox; the stored text is
+        // exactly what the visitor saw next to it.
+        consent_given: consent,
+        consent_text: CONSENT_TEXT,
+        consent_at: new Date().toISOString(),
+        // LD-05: stitch visitor + session ids so the wizard lead links to analytics events
+        visitor_id: getVisitorId() ?? undefined,
+        session_id: getSessionId() ?? undefined,
+      };
+
+      try {
+        const result = await submitLead(payload, supabaseUrl, supabaseKey);
+        if (result.success) {
+          // First-party lead event only after a confirmed submission.
+          onLead({ role: answers.role });
+        }
+      } catch {
+        // Non-critical: show findings regardless of submission status
+      }
     }
 
     setSubmitting(false);
@@ -281,11 +318,11 @@ export function MedicalHealthCheckWizard() {
           <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">What is your primary role?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Select the option that best describes your current position.</p>
           <div className="mt-6 space-y-3">
-            <RadioOption value="gp-partner" current={answers.role} onChange={(v) => setAnswers({ ...answers, role: v as Role })}>GP Partner</RadioOption>
-            <RadioOption value="salaried-gp" current={answers.role} onChange={(v) => setAnswers({ ...answers, role: v as Role })}>Salaried GP</RadioOption>
-            <RadioOption value="consultant" current={answers.role} onChange={(v) => setAnswers({ ...answers, role: v as Role })}>Hospital Consultant</RadioOption>
-            <RadioOption value="locum" current={answers.role} onChange={(v) => setAnswers({ ...answers, role: v as Role })}>Locum Doctor</RadioOption>
-            <RadioOption value="junior" current={answers.role} onChange={(v) => setAnswers({ ...answers, role: v as Role })}>Junior Doctor (Foundation to Registrar)</RadioOption>
+            <RadioOption value="gp-partner" current={answers.role} onChange={(v) => { if (!started) { setStarted(true); } setAnswers({ ...answers, role: v as Role }); }}>GP Partner</RadioOption>
+            <RadioOption value="salaried-gp" current={answers.role} onChange={(v) => { if (!started) { setStarted(true); } setAnswers({ ...answers, role: v as Role }); }}>Salaried GP</RadioOption>
+            <RadioOption value="consultant" current={answers.role} onChange={(v) => { if (!started) { setStarted(true); } setAnswers({ ...answers, role: v as Role }); }}>Hospital Consultant</RadioOption>
+            <RadioOption value="locum" current={answers.role} onChange={(v) => { if (!started) { setStarted(true); } setAnswers({ ...answers, role: v as Role }); }}>Locum Doctor</RadioOption>
+            <RadioOption value="junior" current={answers.role} onChange={(v) => { if (!started) { setStarted(true); } setAnswers({ ...answers, role: v as Role }); }}>Junior Doctor (Foundation to Registrar)</RadioOption>
           </div>
         </div>
       )}
@@ -367,6 +404,24 @@ export function MedicalHealthCheckWizard() {
                 className="w-full min-h-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--ink)] transition-all focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/20"
               />
             </div>
+            {/* LD-04: real, user-operated consent checkbox; CONSENT_TEXT mirrors this label exactly. */}
+            <label htmlFor="hc-consent" className="flex items-start gap-3 text-xs leading-relaxed text-[var(--muted)]">
+              <input
+                id="hc-consent"
+                name="consent"
+                type="checkbox"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--copper)]"
+              />
+              <span>
+                I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our{" "}
+                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--copper)] underline">
+                  Privacy Policy
+                </a>
+                .
+              </span>
+            </label>
             <p className="text-xs text-[var(--muted)]">
               We follow up once with the report. No marketing sequences. Unsubscribe at any time.
             </p>

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
+import { allTools } from "@/lib/tools/registry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/locations",
     "/blog",
+    "/calculators",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
@@ -65,6 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: post.date ? new Date(post.date) : new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Calculator tool pages
+  for (const tool of allTools().filter((t) => t.kind === "generic")) {
+    const url = `${base}/calculators/${tool.slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.75,
       alternates: hreflang(url),
     });
   }
