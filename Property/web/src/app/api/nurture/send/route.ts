@@ -1,70 +1,71 @@
 /**
- * Nurture drip scheduler — driven by Vercel Cron (see vercel.json).
+ * Property nurture drip scheduler, driven by Vercel Cron (see vercel.json).
  *
- * Reads the nurture_state rows that are due (active, next_send_at <= now) with an
- * active subscriber, sends each due step via Resend, and advances the schedule.
- * Idempotent per step (see lib/nurture/send). Refuses to run unless CRON_SECRET
- * is set and matches, so it can never be triggered anonymously.
+ * Delegates to the shared runNurtureCron engine, which uses claim-before-send
+ * idempotency (EN-05) and skips all sends when cronArmed=false (EN-04).
+ *
+ * vercel.json cron: { "path": "/api/nurture/send", "schedule": "0 9 * * *" }
+ *
+ * EN-04 dormancy: CRON_SECRET unset -> returns 401 (cannot authorize). This
+ * is the "dormant" posture: the endpoint exists but is unreachable without
+ * the secret. No email leaves until CRON_SECRET is set.
+ *
+ * SEC-05:
+ *   - Returns 503 when Supabase is unconfigured.
+ *   - Returns 401 when CRON_SECRET is unset (cannot authorize).
+ *   - Timing-safe comparison for the bearer token.
  */
+
 import { NextResponse, type NextRequest } from "next/server";
-import { adminConfigured, adminSelect } from "@/lib/supabase/admin";
-import { processStep } from "@/lib/nurture/send";
-import { NURTURE_SEQUENCE_NAME } from "@/lib/nurture/sequence";
+import { timingSafeEqual } from "crypto";
+import { adminConfigured } from "@accounting-network/web-shared/nurture/admin";
+import { runNurtureCron } from "@accounting-network/web-shared/nurture/cron";
+import { buildPropertyNurtureConfig } from "@/config/nurture";
+import { buildResendProvider } from "@/lib/nurture-provider";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
 export const dynamic = "force-dynamic";
 
-const BATCH = 50;
-
 function authorized(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
-  if (!secret) return false; // unconfigured = refuse (never send anonymously)
-  // Vercel Cron sends Authorization: Bearer <CRON_SECRET>.
-  if (req.headers.get("authorization") === `Bearer ${secret}`) return true;
-  // Manual trigger for testing.
-  return new URL(req.url).searchParams.get("key") === secret;
+  // SEC-05: if secret is unset, refuse.
+  if (!secret) return false;
+
+  // Timing-safe comparison (SEC-05).
+  const authHeader = req.headers.get("authorization") ?? "";
+  const expected = `Bearer ${secret}`;
+  try {
+    const a = Buffer.from(authHeader.padEnd(512, "\0"), "utf8");
+    const b = Buffer.from(expected.padEnd(512, "\0"), "utf8");
+    if (a.length !== b.length) return false;
+    return timingSafeEqual(a, b);
+  } catch {
+    return false;
+  }
 }
 
-type DueRow = {
-  subscriber_id: string;
-  step: number;
-  subscribers: { id: string; email: string; unsubscribe_token: string; status: string } | null;
-};
-
 async function run(req: NextRequest): Promise<NextResponse> {
-  if (!adminConfigured()) return NextResponse.json({ ok: false, error: "not_configured" }, { status: 503 });
-  if (!authorized(req)) return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
-
-  const nowIso = new Date().toISOString();
-  const due = await adminSelect<DueRow>("nurture_state", {
-    select: "subscriber_id,step,subscribers!inner(id,email,unsubscribe_token,status)",
-    sequence: `eq.${NURTURE_SEQUENCE_NAME}`,
-    status: "eq.active",
-    next_send_at: `lte.${nowIso}`,
-    "subscribers.status": "eq.active",
-    order: "next_send_at.asc",
-    limit: String(BATCH),
-  });
-
-  let processed = 0;
-  let sent = 0;
-  for (const row of due.data) {
-    const s = row.subscribers;
-    if (!s) continue;
-    processed++;
-    try {
-      const ok = await processStep(
-        { id: s.id, email: s.email, unsubscribe_token: s.unsubscribe_token },
-        row.step,
-      );
-      if (ok) sent++;
-    } catch (err) {
-      console.error("[nurture/send] step failed", err);
-    }
+  if (!adminConfigured()) {
+    return NextResponse.json({ ok: false, error: "not_configured" }, { status: 503 });
+  }
+  if (!authorized(req)) {
+    return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
   }
 
-  return NextResponse.json({ ok: true, processed, sent });
+  let config;
+  try {
+    config = buildPropertyNurtureConfig();
+  } catch (err) {
+    console.error("[nurture/send] config error (EN-06)", err);
+    return NextResponse.json({ ok: false, error: "config_error" }, { status: 503 });
+  }
+
+  const provider = buildResendProvider();
+  const cronArmed = Boolean(process.env.CRON_SECRET);
+
+  const result = await runNurtureCron(config, provider, cronArmed);
+  return NextResponse.json({ ok: true, ...result });
 }
 
 export async function GET(req: NextRequest) {
