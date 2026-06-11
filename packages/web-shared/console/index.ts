@@ -9,6 +9,9 @@
 // Server-only data access layer (parameterised by siteKey).
 export * from "./adminData";
 
+// Estate-level (cross-site) data access layer (additive, server-only).
+export * from "./estateData";
+
 // Auth utilities (Node crypto — server only).
 export * from "./consoleAuth";
 
