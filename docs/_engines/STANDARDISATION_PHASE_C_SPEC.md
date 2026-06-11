@@ -5,6 +5,14 @@
 ## Execution log
 *(appended per cluster, same convention as Phases A/B)*
 
+**GAP-4 — ACCEPTED (2026-06-11, manager verification).**
+- 198/198 tests reproduced. Diff review clean: contract field optional + doc-commented; sentinel fixes use conditional spread (key absent, never null/"—"); `practice_name` confirmed nullable in live DB so omission is safe.
+- **Migration applied to prod by manager** (`20260611000003_leads_extras_jsonb.sql` — nullable JSONB, no default, no backfill; recorded in schema_migrations). Live `leads` count 29 before/after.
+- **Prod column proof (trigger-skipped):** `session_replication_role = replica` insert with nested extras → JSONB round-trip byte-faithful (`{"nested":{"n":1},"qualifier":"works"}`) → row deleted, zero notify/enrich/stitch triggers fired, zero emails. Two recon facts logged: leads `status` CHECK allows only new/contacted/qualified/converted/archived (no 'closed' — earlier specs' "test leads marked closed" wording is unimplementable verbatim); data-modifying CTEs can't delete a row inserted in the same statement (snapshot rule) — delete-as-second-statement.
+- **LD-06 Verify re-run independently:** migration chain shows nullable JSONB extras ✓ · submit type carries it ✓ · no site migration adds niche columns ✓ · sentinel grep across all six non-Property sites: zero hits ✓ (Property's six sentinel components recorded, deferred to its adoption window).
+
+**GAP-6 — DECISION RECORDED (user, 2026-06-11): option (a), documentation-only.** "For GAP-6 just document it." No factory-lift (that half touches Property files — stays behind Property's READ-ONLY rule), no consumer move. Deliverable: `docs/_engines/CENTRAL_LEAD_PIPELINE.md` naming the dependency, routes, env vars, blast radius, and the re-point path if (b) is ever chosen. LD-07 note resolved as documented-explicit; LD-08 per-site enrichment policy unblocked.
+
 ### GAP-4 execution — 2026-06-11
 
 **Executor:** Claude Sonnet 4.6 (phase-c-extras branch, from spec commit 59ebb2d0)
