@@ -1,6 +1,6 @@
 # Standardisation — Phase C build spec (GAP-4 extras → GAP-5 nurture convergence → GAP-6 pipeline decision)
 
-**Status:** EXECUTING — opened 2026-06-11 on user go ("let's move on to Phase C"). The three high-blast-radius clusters: each touches the shared Supabase contract every site converges on. One branch per cluster, strictly sequential, nullable-additive only.
+**Status:** CLOSED 2026-06-11. All three clusters resolved same-day: GAP-4 merged (PR #8, post-merge main CI green run 27347183563), GAP-6 decision (a) documentation-only recorded (`docs/_engines/CENTRAL_LEAD_PIPELINE.md`), GAP-5 merged (PR #9, post-merge main CI green run 27348715404). All four migrations applied to prod + recorded. Generalist deploy precondition before its NEXT deploy: `NURTURE_FROM_EMAIL`/`NURTURE_FROM_NAME`/`NURTURE_REPLY_TO` + `NURTURE_WEBHOOK_SECRET` in Vercel env, Resend webhook URL re-pointed to `/api/nurture/events` — without these the new subscribe route refuses (by design, EN-06). Engine dormant until the operator arms `CRON_SECRET`.
 
 ## Execution log
 *(appended per cluster, same convention as Phases A/B)*
