@@ -3,7 +3,50 @@
 **Status:** EXECUTING — opened 2026-06-11 on user go ("spec the dashboard reconciliation and put sonnet to work"). User intent: "move every single dashboard — or at least the data — into a single consolidated site so I don't have to [visit] 6 separate site pages."
 
 ## Execution log
-*(appended per stage, same convention as prior phases)*
+
+### Stage 1 -- 2026-06-11 (Sonnet, branch phase-e-unified-console, commit de2c24a0)
+- `packages/web-shared/console/estateData.ts`: 9 exported async functions:
+  `getSitesRegistry`, `getActiveSites`, `getEstateOverview(days=7)`,
+  `getEstateFunnel(days=28)`, `getEstateChannels`, `getEstateErrors`,
+  `getEstateVitals`, `getEstateLatestLeads(limit=50)`, `getEstateTopTools`.
+  Reads: `sites`, `vw_web_funnel_daily_v2`, `leads`, `vw_channel_conversion_geo`,
+  `vw_client_errors`, `vw_web_vitals_summary` (graceful [] if absent),
+  `vw_calculator_conversion_geo`. No SQL/migrations. Additive only.
+- `console/estateData.test.ts`: 25 tests (type shapes, no-cred graceful returns,
+  pure aggregation logic, registry-driven fixture row proof).
+- `console/index.ts`: barrel addition for estateData.
+- `package.json` exports: `./console/estateData` added.
+- Suite: 254 passing (was 229, +25).
+
+### Stage 2 -- 2026-06-11 (Sonnet, branch phase-e-unified-console)
+- `console/web` app created as a workspace member.
+- Routes: `/` (estate overview), `/login`, `/api/login`, `/site/[siteKey]`,
+  `/site/[siteKey]/trends`, `/site/[siteKey]/leads`,
+  `/site/[siteKey]/visitor/[visitorId]`.
+- `src/config/capabilities.ts`: per-site capability map (property=full,
+  digital-agency=nurture, all others=defaults).
+- `src/lib/checkAuth.ts`: reuses `consoleAuth` exactly (no new auth design).
+- `src/components/SiteSwitcher.tsx`: registry-driven client component.
+- `next.config.ts`: `X-Robots-Tag: noindex` header on `/(.*)`; `transpilePackages`.
+- `vitest.config.ts` + `"test"` script from day one (Phase D lesson).
+- `src/tests/console.test.ts`: 15 tests (capabilities, registry-driven fixture,
+  auth reuse, OB-01 design, cookie path override).
+- `package.json` (root): `console/web` added to workspaces.
+- `.github/workflows/ci-build-test.yml`: console matrix entry added.
+
+### Acceptance outcomes (2026-06-11)
+- OB-01: CONSOLE_NOINDEX_META on every route + X-Robots-Tag header in next.config.ts.
+  No NEXT_PUBLIC_* in app source (server-only). auth gate on every route (redirect /login).
+  Cookie built via shared consoleAuth with HttpOnly + SameSite=Strict; Path=/ override.
+- OB-02: grep of console/web/src finds no vw_*/table references outside query layer
+  (comment strings only). All data access via estateData.ts / adminData.ts.
+- Switcher test: fixture row test in console.test.ts and estateData.test.ts.
+- Suite: web-shared 254 passing; console/web 15 passing.
+- tsc: all 6 sites + console/web clean (no errors).
+- next build: console/web green (0 errors, 0 warnings post-fix).
+- CI entry added (manager to verify on PR).
+- vw_web_vitals_summary: no STOP needed -- rest() returns [] gracefully if view absent.
+- Manager-owned: Vercel project creation, env vars, deploy, live OB-03 verification.
 
 ## Design decisions (manager, 2026-06-11)
 
