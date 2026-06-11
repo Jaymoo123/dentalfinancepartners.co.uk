@@ -54,7 +54,16 @@
     "./tools/components/Calculator": "./tools/components/Calculator.tsx",
     "./tools/components/Field": "./tools/components/Field.tsx",
     "./tools/embed/EmbedAutoResize": "./tools/embed/EmbedAutoResize.tsx",
-    "./tools/embed/EmbedSnippet": "./tools/embed/EmbedSnippet.tsx"
+    "./tools/embed/EmbedSnippet": "./tools/embed/EmbedSnippet.tsx",
+    "./console": "./console/index.ts",
+    "./console/adminData": "./console/adminData.ts",
+    "./console/consoleAuth": "./console/consoleAuth.ts",
+    "./console/journey": "./console/journey.ts",
+    "./console/components/Sparkline": "./console/components/Sparkline.tsx",
+    "./console/components/SnapshotCard": "./console/components/SnapshotCard.tsx",
+    "./console/components/DashboardTabs": "./console/components/DashboardTabs.tsx",
+    "./console/components/CountrySelect": "./console/components/CountrySelect.tsx",
+    "./console/components/VisitorsTable": "./console/components/VisitorsTable.tsx"
   },
   "optionalPeerDependencies": {
     "@microsoft/clarity": ">=1",
