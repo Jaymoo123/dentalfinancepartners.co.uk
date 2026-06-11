@@ -3,7 +3,51 @@
 **Status:** EXECUTING — opened 2026-06-11 on user go ("let's do the experiments rollout, comprehensively and to a very high standard"). The last program item.
 
 ## Execution log
-*(appended per cluster)*
+
+### G1 -- 2026-06-11 (branch experiments-g1, executor Sonnet)
+
+**Golden continuity suite: 64 triples, all PASS.**
+Triples were computed programmatically from Property's CURRENT `assign.ts` before any
+file was touched. Coverage: all 6 running Property experiments x 10 fixed visitor ids
+(60 triples) + 4 boundary triples probed by searching for hash % total at the 24/25
+(personalization 25/75 split) and 49/50 (50/50 split) bucket edges.
+
+**New module layout (`packages/web-shared/experiments/`):**
+- `types.ts` -- Variant, Experiment, ExperimentMeta, ExperimentPrimary, SiteExperimentRegistry
+- `assign.ts` -- pure `assignVariant(visitorId, experiment)`, registry-decoupled
+- `registries/property.ts` -- Property data VERBATIM (6 experiments + full meta)
+- `registries/{generalist,dentists,medical,solicitors,agency}.ts` -- empty, typed
+- `registries/index.ts` -- `siteRegistries: Record<string, SiteExperimentRegistry>` + `getExperimentMeta(siteKey, key)`
+- `react/useExperiment.ts` -- `makeUseExperiment(registry)` factory; ?ab= override + null-until-mounted verbatim
+- `react/exposure.ts` -- trackExperimentView, trackExperimentAction, useExperimentInView
+- `assign.test.ts` -- 64 golden triples + bucketing edges + override parsing + null contract + registry-map completeness (22 tests total)
+- package.json updated with all export-map entries
+
+**`packages/web-shared/console/components/experimentMetaTypes.ts`** -- converted to deprecation re-export from `experiments/types.ts`; all existing imports continue to resolve.
+
+**Property re-point (4 files, zero behaviour change):**
+- `lib/experiments/registry.ts` -- re-exports types + data from shared registries/property
+- `lib/experiments/assign.ts` -- thin adapter preserving `(visitorId, key)` string signature
+- `components/experiments/useExperiment.ts` -- `makeUseExperiment(propertyRegistry)` composition
+- `lib/experiments/exposure.ts` -- direct re-export of shared react/exposure.ts
+
+**Console de-dup:**
+- `console/web/src/config/experimentMeta.ts` DELETED
+- `console/web/src/app/site/[siteKey]/page.tsx` now reads meta via `getExperimentMeta(siteKey, key)` from shared registries/index
+- `console/web/src/tests/console.test.ts` updated to import from shared (wrapper + EXPERIMENT_META alias)
+
+**Test results:**
+- web-shared: 289 passed (267 original + 22 new golden suite)
+- Property: 95 passed (unchanged)
+- console: 27 passed (unchanged)
+
+**Build results:**
+- Property `next build`: green, 767 pages
+- console `next build`: green
+
+**TypeScript:** all 7 sites + console tsc clean (0 errors)
+
+**Acceptance greps:** no console source imports of deleted experimentMeta config; Property experiment files are shims (correct); no other site has experiment imports to re-point.
 
 ## What "high standard" means here (the design constraints)
 
