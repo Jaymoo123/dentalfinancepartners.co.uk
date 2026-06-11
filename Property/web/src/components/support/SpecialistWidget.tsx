@@ -10,8 +10,8 @@ import { useRef, useState } from "react";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
-import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
-import { track } from "@/lib/analytics/track";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { track } from "@accounting-network/web-shared/analytics/track";
 import { useIntentContext } from "@/components/intent/IntentProvider";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { faqForTopic } from "@/lib/support/faq";
@@ -74,11 +74,10 @@ export function SpecialistWidget() {
     setStatus("loading");
     const topicTag = topic ? ` (${topic.key})` : "";
     const payload = {
-      full_name: "—",
+      full_name: "",
       email,
       phone: "",
       role: "Other",
-      practice_name: "—",
       message: `[Specialist question${topicTag}] ${question || "No detail provided"}`,
       source: niche.content_strategy.source_identifier,
       source_url: typeof window !== "undefined" ? window.location.href : "",

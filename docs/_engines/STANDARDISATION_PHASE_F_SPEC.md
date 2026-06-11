@@ -5,6 +5,60 @@
 ## Execution log
 *(appended per cluster)*
 
+### F1 — plumbing — COMPLETE 2026-06-11 (branch `property-adopt-1`)
+
+**Executor:** Claude Sonnet (claude-sonnet-4-6). All 6 items executed + acceptance-checked green.
+
+**Event-parity diff (STOP check, F1 item 1):**
+Ran a line-by-line comparison of Property's local `lib/analytics/*.ts` against the shared SDK before deletion.
+- EVENT_NAMES (31 events): identical.
+- INTERACTION_EVENTS set: identical.
+- autoCapture event list: identical.
+- client_error / web_vital capture: both present in shared SDK.
+- calc_* events: present in shared SDK.
+- Consent key with `storagePrefix:"ptp"` = `ptp_consent`: byte-identical to local hardcoded key.
+- visitor/session keys `ptp_vid`/`ptp_sid` with `storagePrefix:"ptp"`: byte-identical to local hardcoded keys.
+- `journey.ts` (admin-only CTA labels/journeys): used only in deleted console pages — no event surface loss.
+- `ctaLabels.ts`, `adminData.ts`, `bots.ts`: likewise admin-console-only, safely deleted with the console.
+- **No STOP conditions triggered.** Shared SDK is a superset of Property's local event surface.
+
+**LD-04 consent check:**
+All 6 forms verified. Consent state in every form flows from a rendered `<input type="checkbox">` element with `useState(false)` default. No auto-consent, no STOP.
+
+**Singleton fix applied:**
+All callers of `setActiveExperiment` re-pointed from local `@/lib/experiments/active` to `@accounting-network/web-shared/analytics/experiments/active`. This ensures experiment assignment is read by the shared `track.ts`'s own module instance so experiment tags stamp correctly on events.
+
+**RSC boundary fix:**
+`layout.tsx` passes only serializable props (`siteKey`, `siteName`) to the local `"use client"` wrapper `components/analytics/AnalyticsProvider.tsx`. The wrapper imports `deriveTopic` in the client bundle and forwards it to the shared `SharedAnalyticsProvider`. This avoids the "Functions cannot be passed directly to Client Components" RSC error.
+
+**Items executed:**
+
+1. **Analytics SDK composition** — Shared providers (`ConsentProvider`, `ConsentedScripts`) composed in `layout.tsx`. Local `"use client"` wrapper handles RSC boundary for `deriveTopic`. `/api/track` replaced with `createTrackHandler` factory (site key from config). All 14+ components re-pointed to shared SDK imports. Local `lib/analytics/*` (8 files + server/ subdir) deleted after parity confirmed.
+
+2. **W2 security headers** — `next.config.ts` replaced inline CSP blocks with `buildSecurityHeaders({ ga: true, supabase: true, clarity: true, embedPrefix: "embed" })`.
+
+3. **W3 frontmatter validation** — `lib/blog.ts` now calls `assertFrontmatter(data, STANDARD_MANIFEST, filePath)`. Non-null assertions added for type narrowing (`fm.title!`, `fm.slug!`, etc.).
+
+4. **GAP-4 sentinel retirement** — Removed all `"—"` filler strings from 6 forms. `full_name: ""` (empty string) used where `LeadSubmission.full_name` is required by type; `practice_name` removed entirely (optional key). Consent logic untouched.
+
+5. **Local console deleted** — `app/admin/analytics/**` (8 files), `components/admin/**` (3 files) deleted. No external nav links to the console existed (verified by grep). OB-01 `?k=` auth surface gone by deletion.
+
+6. **Test harness** — `Property/web/vitest.config.ts` created with PostCSS workaround + `@` path alias. `"test": "vitest run"` added to `package.json`. 5-test niche-config smoke test created at `src/tests/niche-config.test.ts`.
+
+**Acceptance checks (all green):**
+- `npx vitest run` (Property/web): 5 tests pass.
+- web-shared suite: all green (pre-existing generalist failure unrelated to F1).
+- `tsc --noEmit` across all 7 sites + console: zero errors.
+- `next build` (Property): green, 767 pages generated.
+- Grep for local analytics imports (`from.*lib/analytics`): clean.
+- Grep for site-key literals (PF-07): clean.
+
+**Files changed:** `Property/web/next.config.ts`, `Property/web/package.json`, `Property/web/vitest.config.ts` (new), `Property/web/src/app/layout.tsx`, `Property/web/src/app/api/track/route.ts`, `Property/web/src/lib/blog.ts`, `Property/web/src/lib/experiments/exposure.ts`, `Property/web/src/components/analytics/AnalyticsProvider.tsx`, `Property/web/src/components/analytics/ConsentProvider.tsx` (shim), `Property/web/src/components/analytics/ConsentedScripts.tsx` (shim), `Property/web/src/components/analytics/WebVitals.tsx` (shim), `Property/web/src/components/analytics/ConsentToggle.tsx`, `Property/web/src/components/analytics/useFormTracking.ts`, `Property/web/src/components/blog/ExitIntentModal.tsx`, `Property/web/src/components/blog/InlineMiniLeadForm.tsx`, `Property/web/src/components/calculators/Calculator.tsx`, `Property/web/src/components/calculators/premium/MobileToolSlot.tsx`, `Property/web/src/components/calculators/premium/PremiumCalculator.tsx`, `Property/web/src/components/experiments/useExperiment.ts`, `Property/web/src/components/forms/LeadForm.tsx`, `Property/web/src/components/forms/MiniCapture.tsx`, `Property/web/src/components/forms/SubscribeForm.tsx`, `Property/web/src/components/intent/IntentProvider.tsx`, `Property/web/src/components/resources/ResourceGate.tsx`, `Property/web/src/components/support/SpecialistWidget.tsx`, `Property/web/src/tests/niche-config.test.ts` (new).
+
+**Files deleted:** `Property/web/src/lib/analytics/autoCapture.ts`, `consent.ts`, `ctaLabels.ts`, `ids.ts`, `journey.ts`, `track.ts`, `types.ts`, `useInViewOnce.ts`, `server/adminData.ts`, `server/bots.ts`; `Property/web/src/app/admin/analytics/page.tsx`, `leads/page.tsx`, `trends/page.tsx`, `visitor/[visitorId]/page.tsx`, `visitor/[visitorId]/VisitorTabs.tsx`, `VisitorsTable.tsx`, `DashboardTabs.tsx`, `CountrySelect.tsx`; `Property/web/src/components/admin/TrendChart.tsx`, `SnapshotCard.tsx`, `Sparkline.tsx`.
+
+**Deferred to manager:** Nothing deferred. No STOPs triggered. Manager to: verify + merge branch, run deploy gate (per spec), confirm live sessions still landing in Supabase before opening F2.
+
 ## Why this is safe (the user's condition, answered)
 
 - **Visitor continuity verified pre-flight (manager, 2026-06-11):** the shared SDK with `storagePrefix: "ptp"` produces byte-identical localStorage keys (`ptp_vid`/`ptp_sid`/`ptp_sid_ts`/`ptp_consent`) to Property's local `lib/analytics/ids.ts`. Returning visitors keep identity + consent with zero migration. No `legacyPrefix` needed.

@@ -20,8 +20,8 @@
  * B2B volume. Measuring the step it directly moves, over only the people who saw
  * it, gives a readable signal weeks earlier. Conversion stays a secondary guardrail.
  */
-import { track } from "@/lib/analytics/track";
-import { useInViewOnce } from "@/lib/analytics/useInViewOnce";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 
 /** Fire the "saw the surface" event for an experiment arm (the denominator). */
 export function trackExperimentView(experiment: string, surface: string): void {

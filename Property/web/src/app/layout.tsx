@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { ConsentProvider } from "@/components/analytics/ConsentProvider";
-import { ConsentedScripts } from "@/components/analytics/ConsentedScripts";
+import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
+import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { IntentProvider } from "@/components/intent/IntentProvider";
 import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
@@ -73,8 +73,23 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
+        {/*
+         * AN-01 (opt-out posture): track by default under legitimate interest.
+         * Visitor can opt out via the "Do not track me" footer link.
+         * storagePrefix "ptp" is FROZEN: continuity for returning visitors
+         * who already have ptp_vid / ptp_sid / ptp_consent in localStorage.
+         * SEC-08: analytics writes flow through /api/track (server-side service-role
+         * only); ConsentProvider guards client-side consent state.
+         */}
         <ConsentProvider>
-          <AnalyticsProvider siteKey={niche.content_strategy.source_identifier}>
+          <AnalyticsProvider
+            siteKey={niche.content_strategy.source_identifier}
+            siteName={niche.display_name}
+          >
+            <ConsentedScripts
+              gaMeasurementId={niche.seo.google_analytics_id}
+              clarityProjectId={process.env.NEXT_PUBLIC_CLARITY_ID}
+            />
             <IntentProvider>
               <PageShell>{children}</PageShell>
               <ReturningBar />
@@ -84,11 +99,6 @@ export default function RootLayout({
               <ExitIntentModal />
             </IntentProvider>
           </AnalyticsProvider>
-          {/* GA4 + Microsoft Clarity load only after consent is granted. */}
-          <ConsentedScripts
-            gaMeasurementId={niche.seo.google_analytics_id}
-            clarityProjectId={process.env.NEXT_PUBLIC_CLARITY_ID}
-          />
         </ConsentProvider>
         {/* Vercel Speed Insights: anonymous, cookieless real-user Core Web Vitals. */}
         <SpeedInsights />

@@ -14,10 +14,10 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
-import { track } from "@/lib/analytics/track";
-import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { assignVariant } from "@/lib/experiments/assign";
-import { setActiveExperiment } from "@/lib/experiments/active";
+import { setActiveExperiment } from "@accounting-network/web-shared/analytics/experiments/active";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { MiniCapture } from "@/components/forms/MiniCapture";
@@ -155,11 +155,10 @@ export function ExitIntentModal() {
     setStatus("loading");
     const topicTag = topicKey ? ` (${topicKey})` : "";
     const payload = {
-      full_name: "—",
+      full_name: "",
       email: String(data.get("email") || "").trim(),
       phone: "",
       role: "Other",
-      practice_name: "—",
       message: `[Exit intent${topicTag}] Email-only capture`,
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl,

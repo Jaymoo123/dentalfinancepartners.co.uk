@@ -5,7 +5,7 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
-import { getVisitorId, getSessionId } from "@/lib/analytics/ids";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -60,11 +60,10 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
     const situation = String(data.get("situation") || "").trim();
     const topicTag = topic ? ` (${topic})` : "";
     const payload = {
-      full_name: "—",
+      full_name: "",
       email: String(data.get("email") || "").trim(),
       phone: "",
       role: "Other",
-      practice_name: "—",
       message: `[Inline mini-form${topicTag}] ${situation || "No detail provided"}`,
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl,
