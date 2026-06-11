@@ -31,6 +31,9 @@ export type { FaqInput } from "./faq-page";
 export { buildCollectionPage } from "./collection-page";
 export type { CollectionPageInput } from "./collection-page";
 
+export { buildWebApplication } from "./web-application";
+export type { WebApplicationInput } from "./web-application";
+
 // Re-export the pre-existing single-file builders
 export { buildOrganizationJsonLd } from "@/lib/organization-schema";
 export { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";

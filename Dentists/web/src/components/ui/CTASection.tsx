@@ -42,7 +42,7 @@ export function CTASection({
         {description}
       </p>
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        <Link href={primaryHref} className={`${btnPrimary} w-full min-w-0 sm:w-auto`}>
+        <Link href={primaryHref} className={`${btnPrimary} w-full min-w-0 sm:w-auto`} data-cta="cta-section-primary">
           {primaryLabel}
         </Link>
         <Link href={secondaryHref} className={`${btnSecondary} w-full min-w-0 sm:w-auto`}>

@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
-    return buildSecurityHeaders({ ga: true, supabase: true });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 
