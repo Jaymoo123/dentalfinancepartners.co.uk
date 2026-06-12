@@ -1,33 +1,41 @@
 ---
-title: "What Does an Accountant for Plumbers Actually Do? (UK Tax Guide 2025/26)"
-slug: "accountant-for-plumbers-uk"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Plumbers UK: Tax & Compliance Guide 2025/26"
-metaDescription: "Find out what a specialist accountant for plumbers does: CIS, VAT, payroll, tax planning. Practical guide for UK plumbing businesses in 2025/26."
-altText: "UK plumber reviewing paperwork with a qualified accountant in a modern office, Birmingham"
-image: "/blog/accountant-for-plumbers-uk.jpg"
+title: What Does an Accountant for Plumbers Actually Do? (UK Tax Guide 2025/26)
+slug: accountant-for-plumbers-uk
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: 'Accountant for Plumbers UK: CIS, VAT and Tax Support'
+metaDescription: A specialist plumbers accountant reclaims the 20% CIS tax deducted from your payments, sorts VAT and payroll, and plans your tax. Keep more of your money.
+altText: UK plumber reviewing paperwork with a qualified accountant in a modern office, Birmingham
+image: /blog/accountant-for-plumbers-uk.jpg
 imageCredit:
-  photographer: "Tara Winstead"
-  photographerUrl: "https://www.pexels.com/@tara-winstead"
-  sourceUrl: "https://www.pexels.com/photo/black-and-gray-calculator-on-white-printer-paper-7111489/"
-  source: "Pexels"
-h1: "What Does an Accountant for Plumbers Actually Do?"
-summary: "A specialist accountant for plumbers handles CIS deductions, VAT registration, payroll for your team, and year-end tax returns. This guide covers exactly what you need and what it costs."
-schema: ""
+  photographer: Tara Winstead
+  photographerUrl: https://www.pexels.com/@tara-winstead
+  sourceUrl: https://www.pexels.com/photo/black-and-gray-calculator-on-white-printer-paper-7111489/
+  source: Pexels
+h1: What Does an Accountant for Plumbers Actually Do?
+summary: A specialist accountant for plumbers handles CIS deductions, VAT registration, payroll for your team, and year-end tax returns. This guide covers exactly what you need and what it costs.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Does an Accountant for Plumbers Actually Do? (UK Tax Guide 2025/26)","description":"A specialist plumbers accountant reclaims the 20% CIS tax deducted from your payments, sorts VAT and payroll, and plans your tax. Keep more of your money.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-for-plumbers-uk.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"What Does an Accountant for Plumbers Actually Do? (UK Tax Guide 2025/26)","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need a specialist accountant for plumbers, or will any accountant do?","acceptedAnswer":{"@type":"Answer","text":"Any qualified accountant can file your tax return. But a specialist accountant for plumbers will understand CIS deductions, the Flat Rate VAT scheme for construction, and the specific capital allowances for vans and tools. If you work in CIS at all, a specialist saves you time and money."}},{"@type":"Question","name":"How much does an accountant for plumbers cost per month?","acceptedAnswer":{"@type":"Answer","text":"For a sole trader plumber with CIS and VAT, expect £100 to £180 per month. A limited company with CIS, VAT, and payroll runs £150 to £300 per month. Most firms offer fixed monthly fees that include bookkeeping, VAT returns,
+  and year-end accounts."}},{"@type":"Question","name":"Can an accountant help me claim back CIS deductions?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your accountant reconciles the CIS deductions shown on your contractor statements against HMRC''s records, then claims the over-deducted amount back on your self assessment or corporation tax return. This is a standard part of what a plumbing accountant does."}},{"@type":"Question","name":"Should I register for VAT as a plumber?","acceptedAnswer":{"@type":"Answer","text":"If your rolling 12-month turnover exceeds £90,000, you must register. Below that, voluntary registration can be beneficial if you spend heavily on materials and can reclaim input VAT. Your accountant will model both scenarios to find the best option for your business."}}]}]}'
 faqs:
-  - question: "Do I need a specialist accountant for plumbers, or will any accountant do?"
-    answer: "Any qualified accountant can file your tax return. But a specialist accountant for plumbers will understand CIS deductions, the Flat Rate VAT scheme for construction, and the specific capital allowances for vans and tools. If you work in CIS at all, a specialist saves you time and money."
-  - question: "How much does an accountant for plumbers cost per month?"
-    answer: "For a sole trader plumber with CIS and VAT, expect £100 to £180 per month. A limited company with CIS, VAT, and payroll runs £150 to £300 per month. Most firms offer fixed monthly fees that include bookkeeping, VAT returns, and year-end accounts."
-  - question: "Can an accountant help me claim back CIS deductions?"
-    answer: "Yes. Your accountant reconciles the CIS deductions shown on your contractor statements against HMRC's records, then claims the over-deducted amount back on your self assessment or corporation tax return. This is a standard part of what a plumbing accountant does."
-  - question: "Should I register for VAT as a plumber?"
-    answer: "If your rolling 12-month turnover exceeds £90,000, you must register. Below that, voluntary registration can be beneficial if you spend heavily on materials and can reclaim input VAT. Your accountant will model both scenarios to find the best option for your business."
+- question: Do I need a specialist accountant for plumbers, or will any accountant do?
+  answer: Any qualified accountant can file your tax return. But a specialist accountant for plumbers will understand CIS deductions, the Flat Rate VAT scheme for construction, and the specific capital allowances for vans and tools. If you work in CIS at all, a specialist saves you time and money.
+- question: How much does an accountant for plumbers cost per month?
+  answer: For a sole trader plumber with CIS and VAT, expect £100 to £180 per month. A limited company with CIS, VAT, and payroll runs £150 to £300 per month. Most firms offer fixed monthly fees that include bookkeeping, VAT returns, and year-end accounts.
+- question: Can an accountant help me claim back CIS deductions?
+  answer: Yes. Your accountant reconciles the CIS deductions shown on your contractor statements against HMRC's records, then claims the over-deducted amount back on your self assessment or corporation tax return. This is a standard part of what a plumbing accountant does.
+- question: Should I register for VAT as a plumber?
+  answer: If your rolling 12-month turnover exceeds £90,000, you must register. Below that, voluntary registration can be beneficial if you spend heavily on materials and can reclaim input VAT. Your accountant will model both scenarios to find the best option for your business.
+metaTitle_prev: 'Accountant for Plumbers UK: Tax & Compliance Guide 2025/26'
+metaDescription_prev: 'Find out what a specialist accountant for plumbers does: CIS, VAT, payroll, tax planning. Practical guide for UK plumbing businesses in 2025/26.'
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>Why Plumbing Businesses Need Specialist Accounting</h2>
 
 <p>Plumbing businesses face a set of tax and compliance rules that most other trades don't. The Construction Industry Scheme (CIS) alone creates a layer of admin that can trip up even experienced business owners. If you're a plumber running your own business in 2025/26, getting the tax side wrong can cost you thousands in penalties and lost cash flow.</p>

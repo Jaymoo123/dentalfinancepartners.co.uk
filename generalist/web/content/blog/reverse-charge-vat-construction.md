@@ -1,33 +1,41 @@
 ---
-title: "Reverse Charge VAT Construction: A Practical Guide for UK Contractors and Subcontractors"
-slug: "reverse-charge-vat-construction"
-canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/reverse-charge-vat-construction"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "VAT and Making Tax Digital"
-metaTitle: "Reverse Charge VAT Construction: Guide for UK Contractors"
-metaDescription: "How the reverse charge VAT construction rules work for UK contractors and subcontractors. Covers CIS, invoicing, and common pitfalls. Practical guidance"
-altText: "UK construction contractor reviewing a VAT reverse charge invoice on a tablet at a building site in Manchester"
-image: "/blog/reverse-charge-vat-construction.jpg"
+title: 'Reverse Charge VAT Construction: A Practical Guide for UK Contractors and Subcontractors'
+slug: reverse-charge-vat-construction
+canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/reverse-charge-vat-construction
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: VAT and Making Tax Digital
+metaTitle: 'Reverse Charge VAT in Construction: How to Invoice It'
+metaDescription: Under the construction reverse charge, your invoice shows £0 VAT and the contractor accounts for it instead. Use the right invoice wording. Avoid errors.
+altText: UK construction contractor reviewing a VAT reverse charge invoice on a tablet at a building site in Manchester
+image: /blog/reverse-charge-vat-construction.jpg
 imageCredit:
-  photographer: "Mukhtar Shuaib Mukhtar"
-  photographerUrl: "https://www.pexels.com/@akoonie"
-  sourceUrl: "https://www.pexels.com/photo/construction-workers-building-with-bamboo-scaffolding-29438558/"
-  source: "Pexels"
-h1: "Reverse Charge VAT Construction: A Practical Guide for UK Contractors and Subcontractors"
-summary: "The domestic reverse charge for construction services shifts VAT responsibility from subcontractor to contractor. If you work in the building trade through a limited company, partnership, or as a sole trader, these rules affect how you invoice, what you charge, and how you file your VAT return. This guide explains who it applies to, what changes on your invoices, and how to avoid the most common mistakes."
-schema: ""
+  photographer: Mukhtar Shuaib Mukhtar
+  photographerUrl: https://www.pexels.com/@akoonie
+  sourceUrl: https://www.pexels.com/photo/construction-workers-building-with-bamboo-scaffolding-29438558/
+  source: Pexels
+h1: 'Reverse Charge VAT Construction: A Practical Guide for UK Contractors and Subcontractors'
+summary: The domestic reverse charge for construction services shifts VAT responsibility from subcontractor to contractor. If you work in the building trade through a limited company, partnership, or as a sole trader, these rules affect how you invoice, what you charge, and how you file your VAT return. This guide explains who it applies to, what changes on your invoices, and how to avoid the most common mistakes.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Reverse Charge VAT Construction: A Practical Guide for UK Contractors and Subcontractors","description":"Under the construction reverse charge, your invoice shows £0 VAT and the contractor accounts for it instead. Use the right invoice wording. Avoid errors.","url":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/reverse-charge-vat-construction","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/reverse-charge-vat-construction"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/reverse-charge-vat-construction.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"VAT and Making Tax Digital","item":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital"},{"@type":"ListItem","position":3,"name":"Reverse Charge VAT Construction: A Practical Guide for UK Contractors and Subcontractors","item":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/reverse-charge-vat-construction"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the reverse charge apply to materials only?","acceptedAnswer":{"@type":"Answer","text":"No. The reverse charge only applies to construction services as defined by HMRC. If you supply materials alone with no labour attached, the supply is standard-rated. You charge VAT as normal. If materials are supplied as part of a construction contract that includes labour, the reverse charge applies to the whole supply."}},{"@type":"Question","name":"What happens if I apply the reverse charge to an end user by mistake?","acceptedAnswer":{"@type":"Answer","text":"You must correct the error. The end user cannot reclaim the notional VAT because they never paid it. You need to issue a credit note and a new invoice with VAT charged at the correct rate. If
+  the error is large, submit a VAT652 form to HMRC. You owe the VAT plus interest from the original due date."}},{"@type":"Question","name":"Does the reverse charge affect my CIS deductions?","acceptedAnswer":{"@type":"Answer","text":"No. The reverse charge changes the VAT treatment only. CIS deductions are calculated on the gross payment excluding VAT. You must still verify subcontractors, deduct the correct CIS percentage, and file your monthly CIS300 return. The two schemes run independently."}},{"@type":"Question","name":"Can I use the reverse charge if my customer is not VAT-registered?","acceptedAnswer":{"@type":"Answer","text":"No. The reverse charge only applies when both parties are VAT-registered. If your customer is not VAT-registered, you must charge VAT at the normal rate. Applying the reverse charge to a non-VAT-registered customer means you owe the VAT even though you did not charge it. Always verify the customer''s VAT registration number before issuing a reverse charge invoice."}}]}]}'
 faqs:
-  - question: "Does the reverse charge apply to materials only?"
-    answer: "No. The reverse charge only applies to construction services as defined by HMRC. If you supply materials alone with no labour attached, the supply is standard-rated. You charge VAT as normal. If materials are supplied as part of a construction contract that includes labour, the reverse charge applies to the whole supply."
-  - question: "What happens if I apply the reverse charge to an end user by mistake?"
-    answer: "You must correct the error. The end user cannot reclaim the notional VAT because they never paid it. You need to issue a credit note and a new invoice with VAT charged at the correct rate. If the error is large, submit a VAT652 form to HMRC. You owe the VAT plus interest from the original due date."
-  - question: "Does the reverse charge affect my CIS deductions?"
-    answer: "No. The reverse charge changes the VAT treatment only. CIS deductions are calculated on the gross payment excluding VAT. You must still verify subcontractors, deduct the correct CIS percentage, and file your monthly CIS300 return. The two schemes run independently."
-  - question: "Can I use the reverse charge if my customer is not VAT-registered?"
-    answer: "No. The reverse charge only applies when both parties are VAT-registered. If your customer is not VAT-registered, you must charge VAT at the normal rate. Applying the reverse charge to a non-VAT-registered customer means you owe the VAT even though you did not charge it. Always verify the customer's VAT registration number before issuing a reverse charge invoice."
+- question: Does the reverse charge apply to materials only?
+  answer: No. The reverse charge only applies to construction services as defined by HMRC. If you supply materials alone with no labour attached, the supply is standard-rated. You charge VAT as normal. If materials are supplied as part of a construction contract that includes labour, the reverse charge applies to the whole supply.
+- question: What happens if I apply the reverse charge to an end user by mistake?
+  answer: You must correct the error. The end user cannot reclaim the notional VAT because they never paid it. You need to issue a credit note and a new invoice with VAT charged at the correct rate. If the error is large, submit a VAT652 form to HMRC. You owe the VAT plus interest from the original due date.
+- question: Does the reverse charge affect my CIS deductions?
+  answer: No. The reverse charge changes the VAT treatment only. CIS deductions are calculated on the gross payment excluding VAT. You must still verify subcontractors, deduct the correct CIS percentage, and file your monthly CIS300 return. The two schemes run independently.
+- question: Can I use the reverse charge if my customer is not VAT-registered?
+  answer: No. The reverse charge only applies when both parties are VAT-registered. If your customer is not VAT-registered, you must charge VAT at the normal rate. Applying the reverse charge to a non-VAT-registered customer means you owe the VAT even though you did not charge it. Always verify the customer's VAT registration number before issuing a reverse charge invoice.
+metaTitle_prev: 'Reverse Charge VAT Construction: Guide for UK Contractors'
+metaDescription_prev: How the reverse charge VAT construction rules work for UK contractors and subcontractors. Covers CIS, invoicing, and common pitfalls. Practical guidance
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Is the Reverse Charge for Construction Services?</h2>
 
 <p>The domestic reverse charge for construction services was introduced on 1 March 2021. It changes who pays VAT to HMRC on most building contracts between VAT-registered businesses. Under normal VAT rules, a subcontractor charges VAT on their invoice, collects it from the contractor, and pays it to HMRC. Under the reverse charge, the subcontractor issues an invoice showing zero VAT charged. The contractor accounts for the VAT on their own VAT return instead.</p>

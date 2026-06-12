@@ -1,33 +1,41 @@
 ---
-title: "What Is the VAT Threshold for 2025/26 and When Must You Register?"
-slug: "vat-threshold-2025-26"
-canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "VAT and Making Tax Digital"
-metaTitle: "VAT Threshold 2025/26: When You Must Register & What It"
-metaDescription: "The VAT threshold for 2025/26 is £90,000. If your taxable turnover exceeds this in a rolling 12-month period, you must register within 30 days. Here's how"
-altText: "UK accountant reviewing VAT threshold figures on a laptop with calculator and paperwork on a desk in a modern office"
-image: "/blog/vat-threshold-2025-26.jpg"
+title: What Is the VAT Threshold for 2025/26 and When Must You Register?
+slug: vat-threshold-2025-26
+canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: VAT and Making Tax Digital
+metaTitle: 'VAT Threshold 2025/26: The £90,000 Registration Line'
+metaDescription: The VAT registration threshold for 2025/26 is £90,000 of taxable turnover over a rolling 12-month period. Cross it and you must register. Check your total.
+altText: UK accountant reviewing VAT threshold figures on a laptop with calculator and paperwork on a desk in a modern office
+image: /blog/vat-threshold-2025-26.jpg
 imageCredit:
-  photographer: "Viridiana Rivera"
-  photographerUrl: "https://www.pexels.com/@viridianaor"
-  sourceUrl: "https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/"
-  source: "Pexels"
-h1: "What Is the VAT Threshold for 2025/26 and When Must You Register?"
-summary: "The VAT registration threshold for 2025/26 remains at £90,000. If your taxable turnover exceeds this in any rolling 12-month period, you must notify HMRC within 30 days. This guide covers exactly when you need to register, how to calculate your turnover, and what happens if you go over."
-schema: ""
+  photographer: Viridiana Rivera
+  photographerUrl: https://www.pexels.com/@viridianaor
+  sourceUrl: https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/
+  source: Pexels
+h1: What Is the VAT Threshold for 2025/26 and When Must You Register?
+summary: The VAT registration threshold for 2025/26 remains at £90,000. If your taxable turnover exceeds this in any rolling 12-month period, you must notify HMRC within 30 days. This guide covers exactly when you need to register, how to calculate your turnover, and what happens if you go over.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Is the VAT Threshold for 2025/26 and When Must You Register?","description":"The VAT registration threshold for 2025/26 is £90,000 of taxable turnover over a rolling 12-month period. Cross it and you must register. Check your total.","url":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/vat-threshold-2025-26.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"VAT and Making Tax Digital","item":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital"},{"@type":"ListItem","position":3,"name":"What Is the VAT Threshold for 2025/26 and When Must You Register?","item":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the VAT threshold for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The VAT registration threshold for 2025/26 is £90,000 in taxable turnover over a rolling 12-month period. This figure has been frozen since 1 April 2024, when it increased from £85,000. If your turnover exceeds this at any point, you must register within 30 days."}},{"@type":"Question","name":"Do I need to register for VAT if my turnover is under £90,000?","acceptedAnswer":{"@type":"Answer","text":"No, you are not legally required to register if your turnover is below £90,000. However, you can register voluntarily. This makes sense if most of your customers are VAT-registered businesses (they can reclaim the VAT) or if you have significant VAT-inclusive costs you want to reclaim. Run the numbers with your accountant
+  first."}},{"@type":"Question","name":"What happens if I go over the VAT threshold and do not register?","acceptedAnswer":{"@type":"Answer","text":"HMRC will backdate your registration to the correct date and charge you the VAT you should have charged from that point. You will have to pay that VAT out of your own pocket if you did not invoice for it. You will also face penalties starting at 30% of the VAT due, plus interest. It is not a situation you want to be in."}},{"@type":"Question","name":"How is the rolling 12-month test calculated?","acceptedAnswer":{"@type":"Answer","text":"At the end of each month, add up your taxable turnover for that month and the previous 11 months. If the total exceeds £90,000, you must register within 30 days. The effective date of registration is the first day of the month in which you exceeded the threshold. This is why you should check your rolling total every month, not just at year-end."}}]}]}'
 faqs:
-  - question: "What is the VAT threshold for 2025/26?"
-    answer: "The VAT registration threshold for 2025/26 is £90,000 in taxable turnover over a rolling 12-month period. This figure has been frozen since 1 April 2024, when it increased from £85,000. If your turnover exceeds this at any point, you must register within 30 days."
-  - question: "Do I need to register for VAT if my turnover is under £90,000?"
-    answer: "No, you are not legally required to register if your turnover is below £90,000. However, you can register voluntarily. This makes sense if most of your customers are VAT-registered businesses (they can reclaim the VAT) or if you have significant VAT-inclusive costs you want to reclaim. Run the numbers with your accountant first."
-  - question: "What happens if I go over the VAT threshold and do not register?"
-    answer: "HMRC will backdate your registration to the correct date and charge you the VAT you should have charged from that point. You will have to pay that VAT out of your own pocket if you did not invoice for it. You will also face penalties starting at 30% of the VAT due, plus interest. It is not a situation you want to be in."
-  - question: "How is the rolling 12-month test calculated?"
-    answer: "At the end of each month, add up your taxable turnover for that month and the previous 11 months. If the total exceeds £90,000, you must register within 30 days. The effective date of registration is the first day of the month in which you exceeded the threshold. This is why you should check your rolling total every month, not just at year-end."
+- question: What is the VAT threshold for 2025/26?
+  answer: The VAT registration threshold for 2025/26 is £90,000 in taxable turnover over a rolling 12-month period. This figure has been frozen since 1 April 2024, when it increased from £85,000. If your turnover exceeds this at any point, you must register within 30 days.
+- question: Do I need to register for VAT if my turnover is under £90,000?
+  answer: No, you are not legally required to register if your turnover is below £90,000. However, you can register voluntarily. This makes sense if most of your customers are VAT-registered businesses (they can reclaim the VAT) or if you have significant VAT-inclusive costs you want to reclaim. Run the numbers with your accountant first.
+- question: What happens if I go over the VAT threshold and do not register?
+  answer: HMRC will backdate your registration to the correct date and charge you the VAT you should have charged from that point. You will have to pay that VAT out of your own pocket if you did not invoice for it. You will also face penalties starting at 30% of the VAT due, plus interest. It is not a situation you want to be in.
+- question: How is the rolling 12-month test calculated?
+  answer: At the end of each month, add up your taxable turnover for that month and the previous 11 months. If the total exceeds £90,000, you must register within 30 days. The effective date of registration is the first day of the month in which you exceeded the threshold. This is why you should check your rolling total every month, not just at year-end.
+metaTitle_prev: 'VAT Threshold 2025/26: When You Must Register & What It'
+metaDescription_prev: The VAT threshold for 2025/26 is £90,000. If your taxable turnover exceeds this in a rolling 12-month period, you must register within 30 days. Here's how
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The VAT threshold for 2025/26 is £90,000. That is the same figure it has been since 1 April 2024, when it increased from £85,000. If your taxable turnover exceeds £90,000 in any rolling 12-month period, you are legally required to register for VAT with HMRC.</p>
 
 <p>This is not a fixed tax year limit. It is a rolling test. You could go over the vat threshold 2025 26 in March, register in April, and your effective date of registration would be backdated to the start of the month you exceeded it. That catches a lot of business owners out.</p>

@@ -1,33 +1,41 @@
 ---
-title: "What a VAT Accountant Does When HMRC Opens a Compliance Check"
-slug: "what-a-vat-accountant-does-hmrc-compliance-check"
-canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/what-a-vat-accountant-does-hmrc-compliance-check"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "VAT and Making Tax Digital"
-metaTitle: "VAT Accountant: What Happens in an HMRC Compliance Check"
-metaDescription: "An HMRC VAT compliance check is not an audit. Here is exactly what a VAT accountant does to gather evidence, prepare submissions, and respond to HMRC"
-altText: "VAT accountant reviewing HMRC compliance check correspondence in a Manchester office"
-image: "/blog/what-a-vat-accountant-does-hmrc-compliance-check.jpg"
+title: What a VAT Accountant Does When HMRC Opens a Compliance Check
+slug: what-a-vat-accountant-does-hmrc-compliance-check
+canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/what-a-vat-accountant-does-hmrc-compliance-check
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: VAT and Making Tax Digital
+metaTitle: What a VAT Accountant Does in an HMRC Compliance Check
+metaDescription: HMRC opened a VAT compliance check? See how an accountant gathers evidence and responds inside the 30-day deadline to keep penalties down. Act early.
+altText: VAT accountant reviewing HMRC compliance check correspondence in a Manchester office
+image: /blog/what-a-vat-accountant-does-hmrc-compliance-check.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/a-person-examining-a-document-8296977/"
-  source: "Pexels"
-h1: "What a VAT Accountant Does When HMRC Opens a Compliance Check"
-summary: "HMRC opens thousands of VAT compliance checks each year. A specialist VAT accountant handles the evidence gathering, correspondence, and representation so you can keep running your business. Here is exactly what happens behind the scenes."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/a-person-examining-a-document-8296977/
+  source: Pexels
+h1: What a VAT Accountant Does When HMRC Opens a Compliance Check
+summary: HMRC opens thousands of VAT compliance checks each year. A specialist VAT accountant handles the evidence gathering, correspondence, and representation so you can keep running your business. Here is exactly what happens behind the scenes.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What a VAT Accountant Does When HMRC Opens a Compliance Check","description":"HMRC opened a VAT compliance check? See how an accountant gathers evidence and responds inside the 30-day deadline to keep penalties down. Act early.","url":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/what-a-vat-accountant-does-hmrc-compliance-check","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/what-a-vat-accountant-does-hmrc-compliance-check"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/what-a-vat-accountant-does-hmrc-compliance-check.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"VAT and Making Tax Digital","item":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital"},{"@type":"ListItem","position":3,"name":"What a VAT Accountant Does When HMRC Opens a Compliance Check","item":"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/what-a-vat-accountant-does-hmrc-compliance-check"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Will HMRC always visit my premises during a VAT compliance check?","acceptedAnswer":{"@type":"Answer","text":"No. Most VAT compliance checks are desk based. HMRC sends a letter asking for specific records and you respond by post or through their online portal. A visit happens only when HMRC needs to see your physical accounting system or when the issues are complex enough to warrant an on-site inspection."}},{"@type":"Question","name":"Can I handle a VAT compliance check myself without an accountant?","acceptedAnswer":{"@type":"Answer","text":"You can, but it is not recommended. HMRC officers are trained to spot errors and ask pointed follow-up questions. A mistake in your response can lead to higher penalties or a wider
+  check. An accountant knows what HMRC is looking for and how to present your case in the best possible light."}},{"@type":"Question","name":"What happens if HMRC finds an error in my VAT returns?","acceptedAnswer":{"@type":"Answer","text":"HMRC will issue an assessment for the underpaid VAT plus interest from the date the VAT should have been paid. They may also apply a penalty depending on the behaviour that caused the error. Your accountant can negotiate the penalty level and arrange a payment plan if needed."}},{"@type":"Question","name":"How much does a VAT accountant charge to handle a compliance check?","acceptedAnswer":{"@type":"Answer","text":"Fees vary depending on the complexity of the check and the volume of records involved. A straightforward desk check might cost a few hundred pounds. A complex check with a visit and multiple queries can run into the thousands. Most accountants will give you a fixed fee quote once they see the HMRC letter."}}]}]}'
 faqs:
-  - question: "Will HMRC always visit my premises during a VAT compliance check?"
-    answer: "No. Most VAT compliance checks are desk based. HMRC sends a letter asking for specific records and you respond by post or through their online portal. A visit happens only when HMRC needs to see your physical accounting system or when the issues are complex enough to warrant an on-site inspection."
-  - question: "Can I handle a VAT compliance check myself without an accountant?"
-    answer: "You can, but it is not recommended. HMRC officers are trained to spot errors and ask pointed follow-up questions. A mistake in your response can lead to higher penalties or a wider check. An accountant knows what HMRC is looking for and how to present your case in the best possible light."
-  - question: "What happens if HMRC finds an error in my VAT returns?"
-    answer: "HMRC will issue an assessment for the underpaid VAT plus interest from the date the VAT should have been paid. They may also apply a penalty depending on the behaviour that caused the error. Your accountant can negotiate the penalty level and arrange a payment plan if needed."
-  - question: "How much does a VAT accountant charge to handle a compliance check?"
-    answer: "Fees vary depending on the complexity of the check and the volume of records involved. A straightforward desk check might cost a few hundred pounds. A complex check with a visit and multiple queries can run into the thousands. Most accountants will give you a fixed fee quote once they see the HMRC letter."
+- question: Will HMRC always visit my premises during a VAT compliance check?
+  answer: No. Most VAT compliance checks are desk based. HMRC sends a letter asking for specific records and you respond by post or through their online portal. A visit happens only when HMRC needs to see your physical accounting system or when the issues are complex enough to warrant an on-site inspection.
+- question: Can I handle a VAT compliance check myself without an accountant?
+  answer: You can, but it is not recommended. HMRC officers are trained to spot errors and ask pointed follow-up questions. A mistake in your response can lead to higher penalties or a wider check. An accountant knows what HMRC is looking for and how to present your case in the best possible light.
+- question: What happens if HMRC finds an error in my VAT returns?
+  answer: HMRC will issue an assessment for the underpaid VAT plus interest from the date the VAT should have been paid. They may also apply a penalty depending on the behaviour that caused the error. Your accountant can negotiate the penalty level and arrange a payment plan if needed.
+- question: How much does a VAT accountant charge to handle a compliance check?
+  answer: Fees vary depending on the complexity of the check and the volume of records involved. A straightforward desk check might cost a few hundred pounds. A complex check with a visit and multiple queries can run into the thousands. Most accountants will give you a fixed fee quote once they see the HMRC letter.
+metaTitle_prev: 'VAT Accountant: What Happens in an HMRC Compliance Check'
+metaDescription_prev: An HMRC VAT compliance check is not an audit. Here is exactly what a VAT accountant does to gather evidence, prepare submissions, and respond to HMRC
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>HMRC VAT Compliance Checks Are Not Audits</h2>
 
 <p>Let's clear that up first. HMRC does not call them audits. They call them compliance checks. The difference matters because a compliance check is usually narrower in scope. HMRC picks a specific period, a specific return, or a specific area of your VAT affairs and asks you to justify it.</p>

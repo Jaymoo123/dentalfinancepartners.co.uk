@@ -5,13 +5,15 @@ canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/uk-tax-brac
 date: '2026-05-20'
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
-metaTitle: 'UK Tax Bracket 2025/26: Rates, Thresholds & Allowances'
-metaDescription: 'UK tax bracket rates for 2025/26: income tax, corporation tax, dividend tax, NI, CGT and VAT thresholds. Practical guidance for business owners.'
+metaTitle: UK Tax Bands and Sole Trader Rates for 2025/26 Year
+metaDescription: See where your income falls across the 2025/26 tax bands as a sole trader or director. The tax-free personal allowance is £12,570. Plan your pay.
 altText: UK tax bracket rates and thresholds chart for 2025/26 tax year
 image: https://images.pexels.com/photos/7821673/pexels-photo-7821673.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'UK Tax Brackets 2025/26: Rates, Thresholds and Allowances'
 summary: A clear breakdown of the UK tax brackets for 2025/26 covering income tax, corporation tax, dividend tax, National Insurance, capital gains tax and VAT. Includes practical examples for limited company directors, sole traders and contractors.
-schema: ''
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"UK Tax Brackets 2025/26: Rates, Thresholds and Allowances","description":"See where your income falls across the 2025/26 tax bands as a sole trader or director. The tax-free personal allowance is £12,570. Plan your pay.","url":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/uk-tax-brackets","datePublished":"2026-05-20","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/uk-tax-brackets"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7821673/pexels-photo-7821673.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Limited Company Tax","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax"},{"@type":"ListItem","position":3,"name":"UK Tax Brackets 2025/26: Rates, Thresholds and Allowances","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/uk-tax-brackets"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the personal allowance for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The standard Personal Allowance for 2025/26 is £12,570, according to gov.uk guidance. You pay no income tax on income up to this amount. If your adjusted net income exceeds £100,000, your allowance reduces by £1 for every £2 of income above that threshold. Once your income reaches £125,140, your Personal Allowance is zero."}},{"@type":"Question","name":"What are the dividend tax rates for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The dividend allowance for 2025/26 is £500. Dividends within this allowance are tax-free. Above that, basic rate taxpayers pay 8.75%, higher rate taxpayers pay 33.75%, and additional rate taxpayers pay 39.35%. These rates apply to dividend income above the £500 allowance."}},{"@type":"Question","name":"What
+  is the corporation tax rate for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The small profits rate is 19% on profits up to £50,000. The main rate is 25% on profits above £250,000. Marginal relief applies between £50,000 and £250,000, gradually increasing the effective rate from 19% to 25%. If your company has associated companies, the thresholds are divided accordingly."}},{"@type":"Question","name":"What is the VAT registration threshold for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The VAT registration threshold is £90,000 in a rolling 12-month period. Once your turnover exceeds this, you must register for VAT. The deregistration threshold is £88,000. Many businesses register voluntarily before hitting the threshold, especially if they deal mainly with VAT-registered customers."}}]}]}'
 faqs:
 - question: What is the personal allowance for 2025/26?
   answer: The standard Personal Allowance for 2025/26 is £12,570, according to gov.uk guidance. You pay no income tax on income up to this amount. If your adjusted net income exceeds £100,000, your allowance reduces by £1 for every £2 of income above that threshold. Once your income reaches £125,140, your Personal Allowance is zero.
@@ -21,7 +23,7 @@ faqs:
   answer: The small profits rate is 19% on profits up to £50,000. The main rate is 25% on profits above £250,000. Marginal relief applies between £50,000 and £250,000, gradually increasing the effective rate from 19% to 25%. If your company has associated companies, the thresholds are divided accordingly.
 - question: What is the VAT registration threshold for 2025/26?
   answer: The VAT registration threshold is £90,000 in a rolling 12-month period. Once your turnover exceeds this, you must register for VAT. The deregistration threshold is £88,000. Many businesses register voluntarily before hitting the threshold, especially if they deal mainly with VAT-registered customers.
-dateModified: '2026-05-20'
+dateModified: '2026-06-12'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
 - gov.uk
@@ -30,6 +32,12 @@ imageCredit:
   photographer_url: https://www.pexels.com/@rdne
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-shot-of-a-document-through-a-magnifying-glass-7821673/
+metaTitle_prev: 'UK Tax Bracket 2025/26: Rates, Thresholds & Allowances'
+metaDescription_prev: 'UK tax bracket rates for 2025/26: income tax, corporation tax, dividend tax, NI, CGT and VAT thresholds. Practical guidance for business owners.'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <h2>What Are the UK Tax Brackets for 2025/26?</h2>
 

@@ -1,33 +1,41 @@
 ---
-title: "Gifting Shares to a Family Member Before Selling Your Company: What Happens to Your CGT Bill?"
-slug: "gifting-shares-family-member-cgt"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gifting-shares-family-member-cgt"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "Gift Shares to Family: CGT Holdover Relief Explained for UK"
-metaDescription: "Gifting shares to a spouse or child before selling your company can trigger CGT. Holdover relief may defer the tax. We explain the rules, the risks"
-altText: "UK business owner and accountant reviewing share transfer documents in a Manchester office"
-image: "/blog/gifting-shares-family-member-cgt.jpg"
+title: 'Gifting Shares to a Family Member Before Selling Your Company: What Happens to Your CGT Bill?'
+slug: gifting-shares-family-member-cgt
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gifting-shares-family-member-cgt
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: 'Gifting Shares to a Spouse or Child: CGT and Holdover'
+metaDescription: Gift shares before a sale and the spouse exemption means no CGT on the transfer, while gifts to children can use holdover relief to defer the gain.
+altText: UK business owner and accountant reviewing share transfer documents in a Manchester office
+image: /blog/gifting-shares-family-member-cgt.jpg
 imageCredit:
-  photographer: "Yan Krukau"
-  photographerUrl: "https://www.pexels.com/@yankrukov"
-  sourceUrl: "https://www.pexels.com/photo/person-holding-a-gift-8819767/"
-  source: "Pexels"
-h1: "Gifting Shares to a Family Member Before Selling Your Company: What Happens to Your CGT Bill?"
-summary: "Gifting shares to a family member before selling your company is a common planning tactic. But it can trigger an immediate CGT bill unless holdover relief applies. We explain the rules for spouses, children, and the interaction with Business Asset Disposal Relief."
-schema: ""
+  photographer: Yan Krukau
+  photographerUrl: https://www.pexels.com/@yankrukov
+  sourceUrl: https://www.pexels.com/photo/person-holding-a-gift-8819767/
+  source: Pexels
+h1: 'Gifting Shares to a Family Member Before Selling Your Company: What Happens to Your CGT Bill?'
+summary: Gifting shares to a family member before selling your company is a common planning tactic. But it can trigger an immediate CGT bill unless holdover relief applies. We explain the rules for spouses, children, and the interaction with Business Asset Disposal Relief.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Gifting Shares to a Family Member Before Selling Your Company: What Happens to Your CGT Bill?","description":"Gift shares before a sale and the spouse exemption means no CGT on the transfer, while gifts to children can use holdover relief to defer the gain.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gifting-shares-family-member-cgt","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gifting-shares-family-member-cgt"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/gifting-shares-family-member-cgt.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"Gifting Shares to a Family Member Before Selling Your Company: What Happens to Your CGT Bill?","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gifting-shares-family-member-cgt"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I gift shares to my spouse and then sell the company in the same tax year?","acceptedAnswer":{"@type":"Answer","text":"Yes, and the spouse exemption means no CGT arises on the gift itself. The gain is deferred to the spouse, who pays CGT on the sale at their own rates. However, if the gift is made very shortly before the sale and HMRC considers it a pre-ordained transaction, they may challenge the arrangement under the Ramsay principle. A gap of at least a few months between the gift and the sale is safer."}},{"@type":"Question","name":"What is holdover relief and when should I use it?","acceptedAnswer":{"@type":"Answer","text":"Holdover relief under TCGA 1992, s.165 defers the CGT gain when you gift shares to a family member (other than a spouse).
+  You and the recipient make a joint claim, and the gain is held over until the recipient sells the shares. Use it when you want to avoid paying CGT before you receive cash from the sale, or when the recipient is likely to be a basic rate taxpayer at the time of the future sale."}},{"@type":"Question","name":"Does gifting shares to a child affect my Business Asset Disposal Relief?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you gift shares to a child and claim holdover relief, the child inherits your two-year holding period for BADR purposes. They can use their own £1 million BADR lifetime limit on the gain when they sell. If you do not claim holdover relief, you use your BADR allowance at the point of the gift, and the child gets a market value base cost and their own BADR allowance for the future sale."}},{"@type":"Question","name":"What happens if I gift shares to a non-UK resident family member?","acceptedAnswer":{"@type":"Answer","text":"Holdover relief is not available for gifts to non-UK residents. You trigger a CGT charge at the point of the gift, based on the market value of the shares. The recipient may then sell the shares free of UK CGT if they remain non-resident and the shares are not in a property-rich company. This can be a legitimate strategy, but it requires careful advice to avoid unexpected tax charges."}}]}]}'
 faqs:
-  - question: "Can I gift shares to my spouse and then sell the company in the same tax year?"
-    answer: "Yes, and the spouse exemption means no CGT arises on the gift itself. The gain is deferred to the spouse, who pays CGT on the sale at their own rates. However, if the gift is made very shortly before the sale and HMRC considers it a pre-ordained transaction, they may challenge the arrangement under the Ramsay principle. A gap of at least a few months between the gift and the sale is safer."
-  - question: "What is holdover relief and when should I use it?"
-    answer: "Holdover relief under TCGA 1992, s.165 defers the CGT gain when you gift shares to a family member (other than a spouse). You and the recipient make a joint claim, and the gain is held over until the recipient sells the shares. Use it when you want to avoid paying CGT before you receive cash from the sale, or when the recipient is likely to be a basic rate taxpayer at the time of the future sale."
-  - question: "Does gifting shares to a child affect my Business Asset Disposal Relief?"
-    answer: "Yes. If you gift shares to a child and claim holdover relief, the child inherits your two-year holding period for BADR purposes. They can use their own £1 million BADR lifetime limit on the gain when they sell. If you do not claim holdover relief, you use your BADR allowance at the point of the gift, and the child gets a market value base cost and their own BADR allowance for the future sale."
-  - question: "What happens if I gift shares to a non-UK resident family member?"
-    answer: "Holdover relief is not available for gifts to non-UK residents. You trigger a CGT charge at the point of the gift, based on the market value of the shares. The recipient may then sell the shares free of UK CGT if they remain non-resident and the shares are not in a property-rich company. This can be a legitimate strategy, but it requires careful advice to avoid unexpected tax charges."
+- question: Can I gift shares to my spouse and then sell the company in the same tax year?
+  answer: Yes, and the spouse exemption means no CGT arises on the gift itself. The gain is deferred to the spouse, who pays CGT on the sale at their own rates. However, if the gift is made very shortly before the sale and HMRC considers it a pre-ordained transaction, they may challenge the arrangement under the Ramsay principle. A gap of at least a few months between the gift and the sale is safer.
+- question: What is holdover relief and when should I use it?
+  answer: Holdover relief under TCGA 1992, s.165 defers the CGT gain when you gift shares to a family member (other than a spouse). You and the recipient make a joint claim, and the gain is held over until the recipient sells the shares. Use it when you want to avoid paying CGT before you receive cash from the sale, or when the recipient is likely to be a basic rate taxpayer at the time of the future sale.
+- question: Does gifting shares to a child affect my Business Asset Disposal Relief?
+  answer: Yes. If you gift shares to a child and claim holdover relief, the child inherits your two-year holding period for BADR purposes. They can use their own £1 million BADR lifetime limit on the gain when they sell. If you do not claim holdover relief, you use your BADR allowance at the point of the gift, and the child gets a market value base cost and their own BADR allowance for the future sale.
+- question: What happens if I gift shares to a non-UK resident family member?
+  answer: Holdover relief is not available for gifts to non-UK residents. You trigger a CGT charge at the point of the gift, based on the market value of the shares. The recipient may then sell the shares free of UK CGT if they remain non-resident and the shares are not in a property-rich company. This can be a legitimate strategy, but it requires careful advice to avoid unexpected tax charges.
+metaTitle_prev: 'Gift Shares to Family: CGT Holdover Relief Explained for UK'
+metaDescription_prev: Gifting shares to a spouse or child before selling your company can trigger CGT. Holdover relief may defer the tax. We explain the rules, the risks
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>Can You Gift Shares to a Family Member Before Selling Your Company?</h2>
 
 <p>Yes, you can. And many business owners consider it. The logic is straightforward: if you gift shares to your spouse or adult children before a sale, the capital gain is spread across multiple people, each with their own annual exempt amount (£3,000 for 2025/26) and their own tax bands. In theory, the total CGT bill falls.</p>

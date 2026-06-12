@@ -1,33 +1,41 @@
 ---
-title: "What Does an Accountant for OnlyFans Creators Do? Tax, IR35, and Structuring Your Business"
-slug: "accountant-for-onlyfans-creators-uk"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for OnlyFans Creators UK: Tax & Business"
-metaDescription: "OnlyFans creators face unique UK tax rules on subscriptions, tips, and PPV. Our ICAEW accountants explain IR35, VAT, expenses, and limited company options."
-altText: "UK OnlyFans creator reviewing tax records with an ICAEW qualified accountant in a modern office setting"
-image: "/blog/accountant-for-onlyfans-creators-uk.jpg"
+title: What Does an Accountant for OnlyFans Creators Do? Tax, IR35, and Structuring Your Business
+slug: accountant-for-onlyfans-creators-uk
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: 'Accountant for OnlyFans Creators UK: Tax and VAT Rules'
+metaDescription: OnlyFans income is taxable trading income. Register for self assessment, and once turnover passes £90,000 you must register for VAT. Stay compliant.
+altText: UK OnlyFans creator reviewing tax records with an ICAEW qualified accountant in a modern office setting
+image: /blog/accountant-for-onlyfans-creators-uk.jpg
 imageCredit:
-  photographer: "Tara Winstead"
-  photographerUrl: "https://www.pexels.com/@tara-winstead"
-  sourceUrl: "https://www.pexels.com/photo/black-and-gray-calculator-on-white-printer-paper-7111489/"
-  source: "Pexels"
-h1: "Accountant for OnlyFans Creators UK: Tax, IR35, and Structuring Your Business"
-summary: "UK OnlyFans creators face specific tax rules around self-employment, IR35, VAT, and allowable expenses. Our ICAEW qualified team explains how to structure your content business, what you can claim, and when a limited company makes sense. Practical guidance for creators at every level."
-schema: ""
+  photographer: Tara Winstead
+  photographerUrl: https://www.pexels.com/@tara-winstead
+  sourceUrl: https://www.pexels.com/photo/black-and-gray-calculator-on-white-printer-paper-7111489/
+  source: Pexels
+h1: 'Accountant for OnlyFans Creators UK: Tax, IR35, and Structuring Your Business'
+summary: UK OnlyFans creators face specific tax rules around self-employment, IR35, VAT, and allowable expenses. Our ICAEW qualified team explains how to structure your content business, what you can claim, and when a limited company makes sense. Practical guidance for creators at every level.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Does an Accountant for OnlyFans Creators Do? Tax, IR35, and Structuring Your Business","description":"OnlyFans income is taxable trading income. Register for self assessment, and once turnover passes £90,000 you must register for VAT. Stay compliant.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-for-onlyfans-creators-uk.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"What Does an Accountant for OnlyFans Creators Do? Tax, IR35, and Structuring Your Business","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to register for self assessment if I earn from OnlyFans?","acceptedAnswer":{"@type":"Answer","text":"Yes. OnlyFans income is trading income and must be declared to HMRC. Register for self assessment by 5 October following the tax year you started earning. File your SA100 return with SA103 self-employment pages by 31 January. HMRC receives data from payment platforms, so they will know if you do not declare."}},{"@type":"Question","name":"Can I claim my camera and lighting as a business expense?","acceptedAnswer":{"@type":"Answer","text":"Yes, if they are used wholly and exclusively for your content business. If you also use the equipment personally, claim only the business proportion. For example,
+  a £1,000 camera used 70% for content means you claim £700. Keep receipts and a usage log to justify your percentage."}},{"@type":"Question","name":"Should I set up a limited company for my OnlyFans business?","acceptedAnswer":{"@type":"Answer","text":"It depends on your profit level and how much you need to draw. A limited company works best if you are earning over £100,000 and reinvesting profits. If you are taking everything out, sole trader is often simpler and cheaper. An accountant should model both scenarios before you incorporate."}},{"@type":"Question","name":"Does IR35 apply to OnlyFans creators?","acceptedAnswer":{"@type":"Answer","text":"Typically no, if you create content independently and set your own prices. IR35 can apply if you work through an agency or management company that controls your schedule and provides equipment. If you are approached by an agency, ask for a Status Determination Statement before signing anything."}}]}]}'
 faqs:
-  - question: "Do I need to register for self assessment if I earn from OnlyFans?"
-    answer: "Yes. OnlyFans income is trading income and must be declared to HMRC. Register for self assessment by 5 October following the tax year you started earning. File your SA100 return with SA103 self-employment pages by 31 January. HMRC receives data from payment platforms, so they will know if you do not declare."
-  - question: "Can I claim my camera and lighting as a business expense?"
-    answer: "Yes, if they are used wholly and exclusively for your content business. If you also use the equipment personally, claim only the business proportion. For example, a £1,000 camera used 70% for content means you claim £700. Keep receipts and a usage log to justify your percentage."
-  - question: "Should I set up a limited company for my OnlyFans business?"
-    answer: "It depends on your profit level and how much you need to draw. A limited company works best if you are earning over £100,000 and reinvesting profits. If you are taking everything out, sole trader is often simpler and cheaper. An accountant should model both scenarios before you incorporate."
-  - question: "Does IR35 apply to OnlyFans creators?"
-    answer: "Typically no, if you create content independently and set your own prices. IR35 can apply if you work through an agency or management company that controls your schedule and provides equipment. If you are approached by an agency, ask for a Status Determination Statement before signing anything."
+- question: Do I need to register for self assessment if I earn from OnlyFans?
+  answer: Yes. OnlyFans income is trading income and must be declared to HMRC. Register for self assessment by 5 October following the tax year you started earning. File your SA100 return with SA103 self-employment pages by 31 January. HMRC receives data from payment platforms, so they will know if you do not declare.
+- question: Can I claim my camera and lighting as a business expense?
+  answer: Yes, if they are used wholly and exclusively for your content business. If you also use the equipment personally, claim only the business proportion. For example, a £1,000 camera used 70% for content means you claim £700. Keep receipts and a usage log to justify your percentage.
+- question: Should I set up a limited company for my OnlyFans business?
+  answer: It depends on your profit level and how much you need to draw. A limited company works best if you are earning over £100,000 and reinvesting profits. If you are taking everything out, sole trader is often simpler and cheaper. An accountant should model both scenarios before you incorporate.
+- question: Does IR35 apply to OnlyFans creators?
+  answer: Typically no, if you create content independently and set your own prices. IR35 can apply if you work through an agency or management company that controls your schedule and provides equipment. If you are approached by an agency, ask for a Status Determination Statement before signing anything.
+metaTitle_prev: 'Accountant for OnlyFans Creators UK: Tax & Business'
+metaDescription_prev: OnlyFans creators face unique UK tax rules on subscriptions, tips, and PPV. Our ICAEW accountants explain IR35, VAT, expenses, and limited company options.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>OnlyFans is not a hobby. If you earn money through subscriptions, tips, pay-per-view messages, or custom content, HMRC expects you to declare it. The question is not whether you pay tax. It is how much, and whether you are paying more than you need to.</p>
 
 <p>An <strong>accountant for OnlyFans creators</strong> does not just file your self assessment. They help you choose the right business structure, identify genuine allowable expenses, manage VAT registration if your turnover hits the threshold, and navigate the tricky area of IR35 if you work with agencies or management companies. Our ICAEW qualified team at Holloway Davies works with creators across the UK, from Manchester to Brighton, and we see the same issues come up repeatedly.</p>

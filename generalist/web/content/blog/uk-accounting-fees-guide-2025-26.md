@@ -1,27 +1,34 @@
 ---
-title: "What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees"
-slug: "uk-accounting-fees-guide-2025-26"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "UK Accounting Fees 2025/26: What Accountants Charge"
-metaDescription: "Accounting fees for UK businesses in 2025/26 range from £50/month for sole traders to £500+/month for Ltd companies. See what you should pay by business"
-altText: "UK accountant reviewing financial documents in a modern Manchester office with a laptop and calculator on the desk"
-image: "/blog/uk-accounting-fees-guide-2025-26.jpg"
+title: What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees
+slug: uk-accounting-fees-guide-2025-26
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: 'UK Accounting Fees 2025/26: What You Should Be Paying'
+metaDescription: See what UK accountants charge by business type in 2025/26. Monthly fees run from £50 to £500 depending on structure and service level. Compare your costs.
+altText: UK accountant reviewing financial documents in a modern Manchester office with a laptop and calculator on the desk
+image: /blog/uk-accounting-fees-guide-2025-26.jpg
 imageCredit:
-  photographer: "Tara Winstead"
-  photographerUrl: "https://www.pexels.com/@tara-winstead"
-  sourceUrl: "https://www.pexels.com/photo/red-text-on-white-background-7111482/"
-  source: "Pexels"
-h1: "What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees"
-summary: "A practical breakdown of what UK accountants charge in 2025/26, by business type, location, and service scope. Includes real numbers for sole traders, limited companies, contractors, and partnerships, plus what drives the differences in fee accounting."
-schema: ""
+  photographer: Tara Winstead
+  photographerUrl: https://www.pexels.com/@tara-winstead
+  sourceUrl: https://www.pexels.com/photo/red-text-on-white-background-7111482/
+  source: Pexels
+h1: What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees
+summary: A practical breakdown of what UK accountants charge in 2025/26, by business type, location, and service scope. Includes real numbers for sole traders, limited companies, contractors, and partnerships, plus what drives the differences in fee accounting.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees","description":"See what UK accountants charge by business type in 2025/26. Monthly fees run from £50 to £500 depending on structure and service level. Compare your costs.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-accounting-fees-guide-2025-26.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the average accounting fee for a limited company in the UK in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"For a standard limited company with turnover under"}}]}]}'
 faqs:
-  - question: "What is the average accounting fee for a limited company in the UK in 2025/26?"
-    answer: "For a standard limited company with turnover under"
+- question: What is the average accounting fee for a limited company in the UK in 2025/26?
+  answer: For a standard limited company with turnover under
+metaTitle_prev: 'UK Accounting Fees 2025/26: What Accountants Charge'
+metaDescription_prev: Accounting fees for UK businesses in 2025/26 range from £50/month for sole traders to £500+/month for Ltd companies. See what you should pay by business
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you run a UK business and you are wondering what you should be paying for an accountant in 2025/26, the honest answer is: it depends on what you need. A sole trader filing a straightforward tax return pays a very different fee to a limited company director with payroll, VAT, and quarterly management accounts.</p>
 
 <p>This guide covers what UK accountants charge by business type, what drives the differences, and what you should expect for your money. We are ICAEW qualified accountants ourselves, so these are real numbers from the market, not estimates from a directory.</p>

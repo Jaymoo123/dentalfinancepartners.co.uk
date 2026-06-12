@@ -1,33 +1,41 @@
 ---
-title: "Do Delivery Drivers in the UK Need a Specialist Accountant?"
-slug: "accountant-for-delivery-drivers-uk"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-delivery-drivers-uk"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Delivery Drivers UK | Specialist Support"
-metaDescription: "Do delivery drivers need a specialist accountant? We cover IR35, VAT, mileage claims, and MTD for couriers. Practical guidance for your 2025/26 returns."
-altText: "A delivery driver in a branded van checking a smartphone app outside a terraced house in Manchester, UK."
-image: "/blog/accountant-for-delivery-drivers-uk.jpg"
+title: Do Delivery Drivers in the UK Need a Specialist Accountant?
+slug: accountant-for-delivery-drivers-uk
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-delivery-drivers-uk
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: Accountant for Delivery Drivers and Couriers in the UK
+metaDescription: Couriers and delivery drivers can claim 55p a mile for the first 10,000 business miles. A specialist accountant also handles IR35, VAT and MTD.
+altText: A delivery driver in a branded van checking a smartphone app outside a terraced house in Manchester, UK.
+image: /blog/accountant-for-delivery-drivers-uk.jpg
 imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  sourceUrl: "https://www.pexels.com/photo/grayscale-photo-of-delivery-man-writing-on-a-paper-on-top-of-carton-6169138/"
-  source: "Pexels"
-h1: "Do Delivery Drivers in the UK Need a Specialist Accountant?"
-summary: "Delivery drivers face unique tax challenges: IR35, VAT registration, mileage claims, and Making Tax Digital. This guide explains what a specialist accountant for delivery drivers can do for you, whether you are a sole trader, limited company contractor, or partnership."
-schema: ""
+  photographer: Tima Miroshnichenko
+  photographerUrl: https://www.pexels.com/@tima-miroshnichenko
+  sourceUrl: https://www.pexels.com/photo/grayscale-photo-of-delivery-man-writing-on-a-paper-on-top-of-carton-6169138/
+  source: Pexels
+h1: Do Delivery Drivers in the UK Need a Specialist Accountant?
+summary: 'Delivery drivers face unique tax challenges: IR35, VAT registration, mileage claims, and Making Tax Digital. This guide explains what a specialist accountant for delivery drivers can do for you, whether you are a sole trader, limited company contractor, or partnership.'
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Do Delivery Drivers in the UK Need a Specialist Accountant?","description":"Couriers and delivery drivers can claim 55p a mile for the first 10,000 business miles. A specialist accountant also handles IR35, VAT and MTD.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-delivery-drivers-uk","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-delivery-drivers-uk"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-for-delivery-drivers-uk.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"Do Delivery Drivers in the UK Need a Specialist Accountant?","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-delivery-drivers-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to register for VAT as a delivery driver?","acceptedAnswer":{"@type":"Answer","text":"Only if your turnover exceeds £90,000 in a rolling 12-month period. But many drivers register voluntarily to reclaim VAT on vehicle costs. A specialist accountant can tell you whether voluntary registration is worth it for your situation."}},{"@type":"Question","name":"Can I claim mileage on my personal car for deliveries?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can claim 55p per mile for the first 10,000 business miles (the rate from 6 April 2026), then 25p per mile. If you use a company vehicle, you claim actual costs instead. Your accountant will help you choose the best method."}},{"@type":"Question","name":"What happens if HMRC investigates
+  my IR35 status?","acceptedAnswer":{"@type":"Answer","text":"If you are found to be inside IR35, your limited company must pay the tax and NI that an employer would have paid. That can be a significant bill. A specialist accountant will review your contracts and working practices to minimise the risk before HMRC opens an enquiry."}},{"@type":"Question","name":"Do I need to use MTD software as a delivery driver?","acceptedAnswer":{"@type":"Answer","text":"From April 2026, if your qualifying income is over £50,000, yes. From April 2027, if over £30,000. From April 2028, if over £20,000. Most delivery drivers will be affected within the next few years. Your accountant should set you up with MTD-compatible software and handle the quarterly submissions."}}]}]}'
 faqs:
-  - question: "Do I need to register for VAT as a delivery driver?"
-    answer: "Only if your turnover exceeds £90,000 in a rolling 12-month period. But many drivers register voluntarily to reclaim VAT on vehicle costs. A specialist accountant can tell you whether voluntary registration is worth it for your situation."
-  - question: "Can I claim mileage on my personal car for deliveries?"
-    answer: "Yes. You can claim 45p per mile for the first 10,000 business miles, then 25p per mile. If you use a company vehicle, you claim actual costs instead. Your accountant will help you choose the best method."
-  - question: "What happens if HMRC investigates my IR35 status?"
-    answer: "If you are found to be inside IR35, your limited company must pay the tax and NI that an employer would have paid. That can be a significant bill. A specialist accountant will review your contracts and working practices to minimise the risk before HMRC opens an enquiry."
-  - question: "Do I need to use MTD software as a delivery driver?"
-    answer: "From April 2026, if your qualifying income is over £50,000, yes. From April 2027, if over £30,000. From April 2028, if over £20,000. Most delivery drivers will be affected within the next few years. Your accountant should set you up with MTD-compatible software and handle the quarterly submissions."
+- question: Do I need to register for VAT as a delivery driver?
+  answer: Only if your turnover exceeds £90,000 in a rolling 12-month period. But many drivers register voluntarily to reclaim VAT on vehicle costs. A specialist accountant can tell you whether voluntary registration is worth it for your situation.
+- question: Can I claim mileage on my personal car for deliveries?
+  answer: Yes. You can claim 55p per mile for the first 10,000 business miles (the rate from 6 April 2026), then 25p per mile. If you use a company vehicle, you claim actual costs instead. Your accountant will help you choose the best method.
+- question: What happens if HMRC investigates my IR35 status?
+  answer: If you are found to be inside IR35, your limited company must pay the tax and NI that an employer would have paid. That can be a significant bill. A specialist accountant will review your contracts and working practices to minimise the risk before HMRC opens an enquiry.
+- question: Do I need to use MTD software as a delivery driver?
+  answer: From April 2026, if your qualifying income is over £50,000, yes. From April 2027, if over £30,000. From April 2028, if over £20,000. Most delivery drivers will be affected within the next few years. Your accountant should set you up with MTD-compatible software and handle the quarterly submissions.
+metaTitle_prev: Accountant for Delivery Drivers UK | Specialist Support
+metaDescription_prev: Do delivery drivers need a specialist accountant? We cover IR35, VAT, mileage claims, and MTD for couriers. Practical guidance for your 2025/26 returns.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>Why Delivery Drivers Need More Than a General Accountant</h2>
 
 <p>Delivery driving is not one single trade. You might be a sole trader doing courier runs in your own car for Amazon Flex or Stuart. You could be a limited company contractor driving for DPD or Hermes on an ongoing contract. Or you might run a small fleet of vans with a few other drivers under your own partnership or limited company.</p>
@@ -65,11 +73,11 @@ faqs:
 
 <h2>Mileage Claims: What You Can and Cannot Claim</h2>
 
-<p>If you use your own vehicle for deliveries, you can claim mileage allowance. HMRC's approved mileage allowance payment (AMAP) rates are 45p per mile for the first 10,000 business miles in a tax year, and 25p per mile thereafter. For motorcycles, it is 24p per mile. For bicycles, 20p per mile.</p>
+<p>If you use your own vehicle for deliveries, you can claim mileage allowance. HMRC's approved mileage allowance payment (AMAP) rates are 55p per mile for the first 10,000 business miles in a tax year (up from 45p on 6 April 2026), and 25p per mile thereafter. For motorcycles, it is 24p per mile. For bicycles, 20p per mile.</p>
 
 <p>You cannot claim AMAP if you use a company vehicle. But you can claim the actual costs of running the vehicle, including fuel, insurance, maintenance, and depreciation. This is where a specialist accountant for delivery drivers adds real value. They will work out which method gives you the bigger deduction.</p>
 
-<p>For limited company drivers, the rules are different. If you use your own vehicle for company deliveries, the company can pay you a mileage allowance of up to 45p per mile tax-free. Any payment above that is taxable as earnings. If the company owns the van, you can claim capital allowances on the purchase price, but you cannot claim mileage. You claim the actual costs instead.</p>
+<p>For limited company drivers, the rules are different. If you use your own vehicle for company deliveries, the company can pay you a mileage allowance of up to 55p per mile tax-free. Any payment above that is taxable as earnings. If the company owns the van, you can claim capital allowances on the purchase price, but you cannot claim mileage. You claim the actual costs instead.</p>
 
 <h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
 
@@ -124,7 +132,7 @@ faqs:
 Only if your turnover exceeds £90,000 in a rolling 12-month period. But many drivers register voluntarily to reclaim VAT on vehicle costs. A specialist accountant can tell you whether voluntary registration is worth it for your situation.</p>
 
 <p><strong>Can I claim mileage on my personal car for deliveries?</strong><br>
-Yes. You can claim 45p per mile for the first 10,000 business miles, then 25p per mile. If you use a company vehicle, you claim actual costs instead. Your accountant will help you choose the best method.</p>
+Yes. You can claim 55p per mile for the first 10,000 business miles (the rate from 6 April 2026), then 25p per mile. If you use a company vehicle, you claim actual costs instead. Your accountant will help you choose the best method.</p>
 
 <p><strong>What happens if HMRC investigates my IR35 status?</strong><br>
 If you are found to be inside IR35, your limited company must pay the tax and NI that an employer would have paid. That can be a significant bill. A specialist accountant will review your contracts and working practices to minimise the risk before HMRC opens an enquiry.</p>

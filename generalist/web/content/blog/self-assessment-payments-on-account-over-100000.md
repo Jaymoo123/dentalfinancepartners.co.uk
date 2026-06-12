@@ -1,33 +1,41 @@
 ---
-title: "What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need To Make Payments On Account?"
-slug: "self-assessment-payments-on-account-over-100000"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-payments-on-account-over-100000"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Self Assessment Payments on Account Over £100k: What to Do"
-metaDescription: "Your tax bill is over £100,000 and HMRC demands payments on account. Here is how the system works, when you can reduce them, and what to do next."
-altText: "UK accountant reviewing Self Assessment tax return and payments on account schedule for a client with a six-figure tax bill"
-image: "/blog/self-assessment-payments-on-account-over-100000.jpg"
+title: What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need To Make Payments On Account?
+slug: self-assessment-payments-on-account-over-100000
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-payments-on-account-over-100000
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: Self Assessment Payments on Account Over £100,000 UK
+metaDescription: A six-figure Self Assessment bill still triggers two payments on account, each half of last year's tax. Reduce them with form SA303 if income has dropped.
+altText: UK accountant reviewing Self Assessment tax return and payments on account schedule for a client with a six-figure tax bill
+image: /blog/self-assessment-payments-on-account-over-100000.jpg
 imageCredit:
-  photographer: "Brett Jordan"
-  photographerUrl: "https://www.pexels.com/@brettjordan"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-white-background-10394996/"
-  source: "Pexels"
-h1: "What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need To Make Payments On Account?"
-summary: "If your Self Assessment tax bill exceeds £100,000, HMRC will still require payments on account unless the tax on your SA302 is below £1,000 or more than 80% of your tax was already deducted at source. Here is how the system works, when you can reduce them, and what to do next."
-schema: ""
+  photographer: Brett Jordan
+  photographerUrl: https://www.pexels.com/@brettjordan
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-white-background-10394996/
+  source: Pexels
+h1: What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need To Make Payments On Account?
+summary: If your Self Assessment tax bill exceeds £100,000, HMRC will still require payments on account unless the tax on your SA302 is below £1,000 or more than 80% of your tax was already deducted at source. Here is how the system works, when you can reduce them, and what to do next.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need To Make Payments On Account?","description":"A six-figure Self Assessment bill still triggers two payments on account, each half of last year''s tax. Reduce them with form SA303 if income has dropped.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-payments-on-account-over-100000","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation
+  tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-payments-on-account-over-100000"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/self-assessment-payments-on-account-over-100000.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need To Make Payments On Account?","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-payments-on-account-over-100000"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I reduce my payments on account if my income drops below £100,000?","acceptedAnswer":{"@type":"Answer","text":"Yes. If your income for the current year is lower than the previous year, you can reduce your payments on account using form SA303 or online through your HMRC account. Just be careful: if you reduce them and your actual tax bill ends up higher, HMRC charges interest on the underpaid amount at 7.25% (as of early 2025)."}},{"@type":"Question","name":"What happens if I cannot afford my payments on account?","acceptedAnswer":{"@type":"Answer","text":"Contact HMRC''s Time
+  to Pay team immediately. They can agree a payment plan. For debts over £100,000, you will need to speak to the specialist team and provide income and expenditure details. Do not ignore the due dates. Late payment penalties start at 5% after 30 days and can reach 15% after 12 months."}},{"@type":"Question","name":"Do limited company directors need to make payments on account?","acceptedAnswer":{"@type":"Answer","text":"Only if your tax bill (net of tax deducted at source) exceeds £1,000. For directors drawing salary through PAYE and taking dividends, the dividend tax is not deducted at source. If your dividend tax bill exceeds £1,000, you will need to make payments on account. The same rules apply as for sole traders."}},{"@type":"Question","name":"How do payments on account work with capital gains tax?","acceptedAnswer":{"@type":"Answer","text":"Capital gains tax is included in your Self Assessment tax bill. If your total tax bill (including CGT) exceeds £1,000, payments on account apply. But capital gains can be lumpy. If you sell a property one year and owe £80,000 in CGT, then sell nothing the next year, you should reduce your payments on account for the following year to avoid overpaying."}}]}]}'
 faqs:
-  - question: "Can I reduce my payments on account if my income drops below £100,000?"
-    answer: "Yes. If your income for the current year is lower than the previous year, you can reduce your payments on account using form SA303 or online through your HMRC account. Just be careful: if you reduce them and your actual tax bill ends up higher, HMRC charges interest on the underpaid amount at 7.25% (as of early 2025)."
-  - question: "What happens if I cannot afford my payments on account?"
-    answer: "Contact HMRC's Time to Pay team immediately. They can agree a payment plan. For debts over £100,000, you will need to speak to the specialist team and provide income and expenditure details. Do not ignore the due dates. Late payment penalties start at 5% after 30 days and can reach 15% after 12 months."
-  - question: "Do limited company directors need to make payments on account?"
-    answer: "Only if your tax bill (net of tax deducted at source) exceeds £1,000. For directors drawing salary through PAYE and taking dividends, the dividend tax is not deducted at source. If your dividend tax bill exceeds £1,000, you will need to make payments on account. The same rules apply as for sole traders."
-  - question: "How do payments on account work with capital gains tax?"
-    answer: "Capital gains tax is included in your Self Assessment tax bill. If your total tax bill (including CGT) exceeds £1,000, payments on account apply. But capital gains can be lumpy. If you sell a property one year and owe £80,000 in CGT, then sell nothing the next year, you should reduce your payments on account for the following year to avoid overpaying."
+- question: Can I reduce my payments on account if my income drops below £100,000?
+  answer: 'Yes. If your income for the current year is lower than the previous year, you can reduce your payments on account using form SA303 or online through your HMRC account. Just be careful: if you reduce them and your actual tax bill ends up higher, HMRC charges interest on the underpaid amount at 7.25% (as of early 2025).'
+- question: What happens if I cannot afford my payments on account?
+  answer: Contact HMRC's Time to Pay team immediately. They can agree a payment plan. For debts over £100,000, you will need to speak to the specialist team and provide income and expenditure details. Do not ignore the due dates. Late payment penalties start at 5% after 30 days and can reach 15% after 12 months.
+- question: Do limited company directors need to make payments on account?
+  answer: Only if your tax bill (net of tax deducted at source) exceeds £1,000. For directors drawing salary through PAYE and taking dividends, the dividend tax is not deducted at source. If your dividend tax bill exceeds £1,000, you will need to make payments on account. The same rules apply as for sole traders.
+- question: How do payments on account work with capital gains tax?
+  answer: Capital gains tax is included in your Self Assessment tax bill. If your total tax bill (including CGT) exceeds £1,000, payments on account apply. But capital gains can be lumpy. If you sell a property one year and owe £80,000 in CGT, then sell nothing the next year, you should reduce your payments on account for the following year to avoid overpaying.
+metaTitle_prev: 'Self Assessment Payments on Account Over £100k: What to Do'
+metaDescription_prev: Your tax bill is over £100,000 and HMRC demands payments on account. Here is how the system works, when you can reduce them, and what to do next.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Are Payments on Account?</h2>
 <p>Payments on account are advance payments towards your next year's Self Assessment tax bill. HMRC asks for them when your tax bill (excluding any tax already deducted at source, like PAYE) is over £1,000. Each payment is half of your previous year's tax bill.</p>
 <p>If your 2024/25 tax bill was £120,000, HMRC will ask for two payments on account for 2025/26: £60,000 by 31 January 2026 and £60,000 by 31 July 2026. Then the balancing payment for 2025/26 is due by 31 January 2027.</p>

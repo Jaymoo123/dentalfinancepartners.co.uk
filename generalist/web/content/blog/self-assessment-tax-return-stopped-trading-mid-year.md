@@ -1,33 +1,41 @@
 ---
-title: "How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?"
-slug: "self-assessment-tax-return-stopped-trading-mid-year"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Self Assessment Tax Return Guide for Stopping Trading"
-metaDescription: "Filing a self assessment after stopping trading? Use cessation rules, overlap relief, and final-year accounting. Practical guide for UK business owners."
-altText: "UK business owner reviewing self assessment paperwork at a desk in a home office, with a calculator and tax forms visible."
-image: "/blog/self-assessment-tax-return-stopped-trading-mid-year.jpg"
+title: How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?
+slug: self-assessment-tax-return-stopped-trading-mid-year
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: 'Self Assessment When You Stop Trading Mid-Year: Cessation'
+metaDescription: Stopped trading mid-year? Your final return uses cessation basis periods and overlap relief, with a £100 penalty if you file late. Get the numbers right.
+altText: UK business owner reviewing self assessment paperwork at a desk in a home office, with a calculator and tax forms visible.
+image: /blog/self-assessment-tax-return-stopped-trading-mid-year.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863332/"
-  source: "Pexels"
-h1: "How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?"
-summary: "Stopping your business mid-year changes how you file your self assessment. You need cessation rules, overlap relief, and a final accounting period. This guide walks through each step so you get the numbers right."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-documents-on-the-table-6863332/
+  source: Pexels
+h1: How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?
+summary: Stopping your business mid-year changes how you file your self assessment. You need cessation rules, overlap relief, and a final accounting period. This guide walks through each step so you get the numbers right.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?","description":"Stopped trading mid-year? Your final return uses cessation basis periods and overlap relief, with a £100 penalty if you file late. Get the numbers right.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
+  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/self-assessment-tax-return-stopped-trading-mid-year.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is overlap relief and how do I claim it on my final return?","acceptedAnswer":{"@type":"Answer","text":"Overlap relief deducts profits that were taxed twice: once in your first year of trading and again in your final year. You claim it by entering the overlap profit figure in the relevant box on your SA103 self-employment pages (box 66 on the 2024/25 form). If you do not know your overlap figure, HMRC can provide it from their records."}},{"@type":"Question","name":"Do I need to file a self assessment if I stopped trading and had no profit?","acceptedAnswer":{"@type":"Answer","text":"Yes. You must file
+  a return for any tax year in which you were self-employed, even if your profit was zero. HMRC needs to see the cessation. If you do not file, they may assume you are still trading and send you reminders. File a nil return with the ceased box ticked."}},{"@type":"Question","name":"Can I use cash basis for my final year if I used accruals before?","acceptedAnswer":{"@type":"Answer","text":"Yes. HMRC allows you to switch to cash basis for the final period. This means you include income when you receive it, not when you invoice it. It can simplify your final return, especially if you have unpaid invoices. Any amounts received after cessation are not trading income."}},{"@type":"Question","name":"What happens to my capital allowances when I stop trading?","acceptedAnswer":{"@type":"Answer","text":"You must do a balancing adjustment. HMRC treats it as a deemed disposal of your business assets at market value. If the disposal value is less than the tax written-down value, you get a balancing allowance (deductible). If it is more, you get a balancing charge (taxable). You cannot continue claiming writing-down allowances after cessation."}}]}]}'
 faqs:
-  - question: "What is overlap relief and how do I claim it on my final return?"
-    answer: "Overlap relief deducts profits that were taxed twice: once in your first year of trading and again in your final year. You claim it by entering the overlap profit figure in the relevant box on your SA103 self-employment pages (box 66 on the 2024/25 form). If you do not know your overlap figure, HMRC can provide it from their records."
-  - question: "Do I need to file a self assessment if I stopped trading and had no profit?"
-    answer: "Yes. You must file a return for any tax year in which you were self-employed, even if your profit was zero. HMRC needs to see the cessation. If you do not file, they may assume you are still trading and send you reminders. File a nil return with the ceased box ticked."
-  - question: "Can I use cash basis for my final year if I used accruals before?"
-    answer: "Yes. HMRC allows you to switch to cash basis for the final period. This means you include income when you receive it, not when you invoice it. It can simplify your final return, especially if you have unpaid invoices. Any amounts received after cessation are not trading income."
-  - question: "What happens to my capital allowances when I stop trading?"
-    answer: "You must do a balancing adjustment. HMRC treats it as a deemed disposal of your business assets at market value. If the disposal value is less than the tax written-down value, you get a balancing allowance (deductible). If it is more, you get a balancing charge (taxable). You cannot continue claiming writing-down allowances after cessation."
+- question: What is overlap relief and how do I claim it on my final return?
+  answer: 'Overlap relief deducts profits that were taxed twice: once in your first year of trading and again in your final year. You claim it by entering the overlap profit figure in the relevant box on your SA103 self-employment pages (box 66 on the 2024/25 form). If you do not know your overlap figure, HMRC can provide it from their records.'
+- question: Do I need to file a self assessment if I stopped trading and had no profit?
+  answer: Yes. You must file a return for any tax year in which you were self-employed, even if your profit was zero. HMRC needs to see the cessation. If you do not file, they may assume you are still trading and send you reminders. File a nil return with the ceased box ticked.
+- question: Can I use cash basis for my final year if I used accruals before?
+  answer: Yes. HMRC allows you to switch to cash basis for the final period. This means you include income when you receive it, not when you invoice it. It can simplify your final return, especially if you have unpaid invoices. Any amounts received after cessation are not trading income.
+- question: What happens to my capital allowances when I stop trading?
+  answer: You must do a balancing adjustment. HMRC treats it as a deemed disposal of your business assets at market value. If the disposal value is less than the tax written-down value, you get a balancing allowance (deductible). If it is more, you get a balancing charge (taxable). You cannot continue claiming writing-down allowances after cessation.
+metaTitle_prev: Self Assessment Tax Return Guide for Stopping Trading
+metaDescription_prev: Filing a self assessment after stopping trading? Use cessation rules, overlap relief, and final-year accounting. Practical guide for UK business owners.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Changes When You Stop Trading Mid-Year</h2>
 
 <p>Most self assessment guides assume you traded for a full tax year. That is the standard case. But if you stopped your business partway through the year, the rules shift. You are not just filing a shorter version of the same return. HMRC treats your final period differently.</p>

@@ -1,33 +1,41 @@
 ---
-title: "Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limited Companies?"
-slug: "xero-vs-freeagent-uk-limited-companies"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/xero-vs-freeagent-uk-limited-companies"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "Xero vs FreeAgent: Which Is Better For UK Limited Companies?"
-metaDescription: "Xero vs FreeAgent for UK limited companies. We compare pricing, features, MTD, payroll, and which one saves you more time and money."
-altText: "Two monitors side by side showing Xero and FreeAgent accounting software dashboards in a UK office setting"
-image: "/blog/xero-vs-freeagent-uk-limited-companies.jpg"
+title: 'Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limited Companies?'
+slug: xero-vs-freeagent-uk-limited-companies
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/xero-vs-freeagent-uk-limited-companies
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: FreeAgent vs Xero for UK Limited Companies Compared
+metaDescription: Choose between FreeAgent and Xero for your limited company. FreeAgent is a flat £12.50 a month with payroll and CT600 filing built in. See which one fits.
+altText: Two monitors side by side showing Xero and FreeAgent accounting software dashboards in a UK office setting
+image: /blog/xero-vs-freeagent-uk-limited-companies.jpg
 imageCredit:
-  photographer: "Donald Martinez"
-  photographerUrl: "https://www.pexels.com/@donald-martinez-1951590"
-  sourceUrl: "https://www.pexels.com/photo/clouds-in-the-blue-sky-8648191/"
-  source: "Pexels"
-h1: "Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limited Companies?"
-summary: "Choosing between Xero and FreeAgent for your UK limited company? We compare pricing, features, Making Tax Digital compliance, payroll integration, and which one actually saves you time and money. Here is the straight answer based on real use."
-schema: ""
+  photographer: Donald Martinez
+  photographerUrl: https://www.pexels.com/@donald-martinez-1951590
+  sourceUrl: https://www.pexels.com/photo/clouds-in-the-blue-sky-8648191/
+  source: Pexels
+h1: 'Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limited Companies?'
+summary: Choosing between Xero and FreeAgent for your UK limited company? We compare pricing, features, Making Tax Digital compliance, payroll integration, and which one actually saves you time and money. Here is the straight answer based on real use.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limited Companies?","description":"Choose between FreeAgent and Xero for your limited company. FreeAgent is a flat £12.50 a month with payroll and CT600 filing built in. See which one fits.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/xero-vs-freeagent-uk-limited-companies","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/xero-vs-freeagent-uk-limited-companies"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/xero-vs-freeagent-uk-limited-companies.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limited Companies?","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/xero-vs-freeagent-uk-limited-companies"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I use FreeAgent if I do not bank with NatWest or RBS?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can subscribe directly to FreeAgent for £12.50 per month. You do not need a specific bank account. The free offer through NatWest, RBS, Ulster Bank, and Mettle is a bonus, not a requirement."}},{"@type":"Question","name":"Does Xero support Making Tax Digital for corporation tax?","acceptedAnswer":{"@type":"Answer","text":"Not directly. Xero can produce the trial balance and financial statements, but you cannot file the CT600 corporation tax return from within Xero. You will need to export the data and file through your accountant or use a separate filing tool. FreeAgent includes CT600 filing as standard."}},{"@type":"Question","name":"Can
+  my accountant access both Xero and FreeAgent?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most accountants, including Holloway Davies, work with both platforms. Both give your accountant login access with specific permissions. If your accountant has a strong preference for one platform, it is worth considering their recommendation because it will make your year-end process smoother."}},{"@type":"Question","name":"Which software is better for a contractor working through their own limited company?","acceptedAnswer":{"@type":"Answer","text":"FreeAgent is the better choice for most contractors. It is simpler, cheaper, and the tax engine helps you plan your salary and dividends. The built-in IR35 tools also help you assess your contracts. Xero is overkill for a one-person company."}}]}]}'
 faqs:
-  - question: "Can I use FreeAgent if I do not bank with NatWest or RBS?"
-    answer: "Yes. You can subscribe directly to FreeAgent for £12.50 per month. You do not need a specific bank account. The free offer through NatWest, RBS, Ulster Bank, and Mettle is a bonus, not a requirement."
-  - question: "Does Xero support Making Tax Digital for corporation tax?"
-    answer: "Not directly. Xero can produce the trial balance and financial statements, but you cannot file the CT600 corporation tax return from within Xero. You will need to export the data and file through your accountant or use a separate filing tool. FreeAgent includes CT600 filing as standard."
-  - question: "Can my accountant access both Xero and FreeAgent?"
-    answer: "Yes. Most accountants, including Holloway Davies, work with both platforms. Both give your accountant login access with specific permissions. If your accountant has a strong preference for one platform, it is worth considering their recommendation because it will make your year-end process smoother."
-  - question: "Which software is better for a contractor working through their own limited company?"
-    answer: "FreeAgent is the better choice for most contractors. It is simpler, cheaper, and the tax engine helps you plan your salary and dividends. The built-in IR35 tools also help you assess your contracts. Xero is overkill for a one-person company."
+- question: Can I use FreeAgent if I do not bank with NatWest or RBS?
+  answer: Yes. You can subscribe directly to FreeAgent for £12.50 per month. You do not need a specific bank account. The free offer through NatWest, RBS, Ulster Bank, and Mettle is a bonus, not a requirement.
+- question: Does Xero support Making Tax Digital for corporation tax?
+  answer: Not directly. Xero can produce the trial balance and financial statements, but you cannot file the CT600 corporation tax return from within Xero. You will need to export the data and file through your accountant or use a separate filing tool. FreeAgent includes CT600 filing as standard.
+- question: Can my accountant access both Xero and FreeAgent?
+  answer: Yes. Most accountants, including Holloway Davies, work with both platforms. Both give your accountant login access with specific permissions. If your accountant has a strong preference for one platform, it is worth considering their recommendation because it will make your year-end process smoother.
+- question: Which software is better for a contractor working through their own limited company?
+  answer: FreeAgent is the better choice for most contractors. It is simpler, cheaper, and the tax engine helps you plan your salary and dividends. The built-in IR35 tools also help you assess your contracts. Xero is overkill for a one-person company.
+metaTitle_prev: 'Xero vs FreeAgent: Which Is Better For UK Limited Companies?'
+metaDescription_prev: Xero vs FreeAgent for UK limited companies. We compare pricing, features, MTD, payroll, and which one saves you more time and money.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you run a UK limited company and you are choosing cloud accounting software, the decision usually comes down to two names: Xero and FreeAgent. Both are solid platforms. Both handle the core tasks like invoicing, bank feeds, VAT returns, and payroll. But they are built for different users, and picking the wrong one will cost you time every single week.</p>
 
 <p>We are ICAEW qualified accountants at Holloway Davies. We work with limited companies across every sector from a 4-employee software consultancy in Manchester turning over £420,000 to a husband-and-wife Ltd company running a Birmingham café. We have seen both platforms in action. Here is the direct comparison.</p>

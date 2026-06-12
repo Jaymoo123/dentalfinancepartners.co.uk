@@ -39,21 +39,21 @@ TSX-routed routes. Meta changes for these pages require direct TSX/JSX edits.
 | `https://www.hollowaydavies.co.uk/locations/cannock` | 11 | 0 | accountant for builders cannock |
 | `https://www.hollowaydavies.co.uk/calculators/employer-ni-calculator` | 10 | 0 | employer national insurance calculator |
 | `https://www.hollowaydavies.co.uk/locations/mansfield` | 10 | 0 | tax planning mansfield |
-| `https://www.hollowaydavies.co.uk/r-and-d-credits` | 9 | 0 | r&d tax credits for engineering firms |
 | `https://www.hollowaydavies.co.uk/locations/burnley` | 9 | 0 | corporation tax return burnley |
+| `https://www.hollowaydavies.co.uk/r-and-d-credits` | 9 | 0 | r&d tax credits for engineering firms |
 | `https://www.hollowaydavies.co.uk/locations/colchester` | 9 | 0 | corporate finance colchester |
 | `https://www.hollowaydavies.co.uk/locations/cardiff` | 8 | 0 | business tax help cardiff |
 | `https://www.hollowaydavies.co.uk/locations/brighton` | 8 | 0 | tax return services in brighton |
-| `https://www.hollowaydavies.co.uk/glossary/capital-gains-tax` | 7 | 0 | business capital gains tax |
-| `https://www.hollowaydavies.co.uk/about` | 7 | 0 | telephone number |
-| `https://www.hollowaydavies.co.uk/locations/sutton` | 7 | 0 | accountant for retail shops sutton |
 | `https://www.hollowaydavies.co.uk/locations/shrewsbury` | 7 | 0 | small business accountants shrewsbury |
 | `https://www.hollowaydavies.co.uk/` | 7 | 0 | llewelyn davies accountants |
-| `https://www.hollowaydavies.co.uk/blog/incorporation-and-structure` | 7 | 0 | incorporation accounting |
+| `https://www.hollowaydavies.co.uk/locations/warrington` | 7 | 0 | company tax accountants warrington |
+| `https://www.hollowaydavies.co.uk/locations/sutton` | 7 | 0 | accountant for retail shops sutton |
 | `https://www.hollowaydavies.co.uk/locations/swansea` | 7 | 0 | company tax accountant swansea |
 | `https://www.hollowaydavies.co.uk/locations/falmouth` | 7 | 0 | accountants falmouth |
+| `https://www.hollowaydavies.co.uk/blog/incorporation-and-structure` | 7 | 0 | incorporation accounting |
+| `https://www.hollowaydavies.co.uk/about` | 7 | 0 | telephone number |
 | `https://www.hollowaydavies.co.uk/locations/oxford` | 7 | 0 | accountants for limited companies oxford |
-| `https://www.hollowaydavies.co.uk/locations/warrington` | 7 | 0 | company tax accountants warrington |
+| `https://www.hollowaydavies.co.uk/glossary/capital-gains-tax` | 7 | 0 | business capital gains tax |
 
 ## 2. High-impression queries not reflected in page title
 
@@ -63,7 +63,6 @@ contains none of the query's content tokens (light token check).
 | Page | Query | Impressions | Current metaTitle |
 |---|---|---|---|
 | `p11d-benefits-in-kind-explained` | p11d | 63 | P11D Benefits In Kind Explained / UK Employer Guide 2025/26 |
-| `accountant-for-vets-uk` | veterinary accountants | 54 | Accountant for Vets UK: Specialist Tax & Business Advice |
 
 ## 3. Worklist pages with apparent intent mismatch
 
@@ -72,7 +71,7 @@ tokens with the current metaTitle. These are strong candidates for rewrite.
 
 | Slug | Score | Dominant query | Current metaTitle |
 |---|---|---|---|
-| `accountant-for-vets-uk` | 2.6 | veterinary accountants | Accountant for Vets UK: Specialist Tax & Business Advice |
+| `accountant-for-delivery-drivers-uk` | 0.1 | accounting for courier | Accountant for Delivery Drivers UK / Specialist Support |
 
 ---
 

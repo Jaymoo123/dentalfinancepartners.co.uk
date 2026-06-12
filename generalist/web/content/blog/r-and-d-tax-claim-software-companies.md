@@ -1,33 +1,41 @@
 ---
-title: "Which R&D Tax Claim Software Companies Should UK Businesses Actually Use?"
-slug: "r-and-d-tax-claim-software-companies"
-canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-claim-software-companies"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "R&D Tax Credits"
-metaTitle: "R&D Tax Claim Software Companies: Which Ones Work"
-metaDescription: "Compare the top R&D tax claim software companies for UK businesses. See which platforms handle technical narratives, cost calculations and HMRC compliance."
-altText: "Accountant reviewing R&D tax claim software on a laptop in a modern UK office"
-image: "/blog/r-and-d-tax-claim-software-companies.jpg"
+title: Which R&D Tax Claim Software Companies Should UK Businesses Actually Use?
+slug: r-and-d-tax-claim-software-companies
+canonical: https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-claim-software-companies
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: R&D Tax Credits
+metaTitle: 'R&D Tax Claim Software vs Accountant: UK Comparison'
+metaDescription: Compare R&D tax claim platforms for UK businesses. Most charge 10% to 25% of the claim value, so a qualified accountant is often cheaper. See which fits.
+altText: Accountant reviewing R&D tax claim software on a laptop in a modern UK office
+image: /blog/r-and-d-tax-claim-software-companies.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-season-6863255/"
-  source: "Pexels"
-h1: "Which R&D Tax Claim Software Companies Should UK Businesses Actually Use?"
-summary: "A practical guide to R&D tax claim software companies for UK businesses. We compare the main platforms, explain what each does well, and highlight where professional input still matters."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-season-6863255/
+  source: Pexels
+h1: Which R&D Tax Claim Software Companies Should UK Businesses Actually Use?
+summary: A practical guide to R&D tax claim software companies for UK businesses. We compare the main platforms, explain what each does well, and highlight where professional input still matters.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Which R&D Tax Claim Software Companies Should UK Businesses Actually Use?","description":"Compare R&D tax claim platforms for UK businesses. Most charge 10% to 25% of the claim value, so a qualified accountant is often cheaper. See which fits.","url":"https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-claim-software-companies","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-claim-software-companies"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/r-and-d-tax-claim-software-companies.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"R&D Tax Credits","item":"https://www.hollowaydavies.co.uk/blog/r&d-tax-credits"},{"@type":"ListItem","position":3,"name":"Which R&D Tax Claim Software Companies Should UK Businesses Actually Use?","item":"https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-claim-software-companies"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I use R&D tax claim software without an accountant?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can use software to prepare the technical narrative and cost calculation. But you still need a qualified accountant to file the CT600 corporation tax return that includes the claim. The software companies typically do not file your full return."}},{"@type":"Question","name":"How much do R&D tax claim software companies charge?","acceptedAnswer":{"@type":"Answer","text":"Most charge between 10% and 25% of the claim value, with minimum fees from £500 to £1,500. Some offer fixed fees for smaller claims. Always ask for a full breakdown of fees before agreeing to use a platform."}},{"@type":"Question","name":"Will HMRC accept a software-generated R&D claim?","acceptedAnswer":{"@type":"Answer","text":"HMRC
+  will accept a software-generated claim if the technical narrative is specific to your project and the cost calculation is accurate. Generic or template-driven narratives are increasingly rejected. HMRC has stepped up compliance checks since 2023."}},{"@type":"Question","name":"What is the difference between R&D tax claim software and an R&D tax credit specialist?","acceptedAnswer":{"@type":"Answer","text":"Software provides a platform to prepare your claim. A specialist provides a human advisor who reviews your projects, writes the narrative, and calculates costs. Some software companies also offer advisor-led services. The main difference is the level of human input and the cost."}}]}]}'
 faqs:
-  - question: "Can I use R&D tax claim software without an accountant?"
-    answer: "Yes, you can use software to prepare the technical narrative and cost calculation. But you still need a qualified accountant to file the CT600 corporation tax return that includes the claim. The software companies typically do not file your full return."
-  - question: "How much do R&D tax claim software companies charge?"
-    answer: "Most charge between 10% and 25% of the claim value, with minimum fees from £500 to £1,500. Some offer fixed fees for smaller claims. Always ask for a full breakdown of fees before agreeing to use a platform."
-  - question: "Will HMRC accept a software-generated R&D claim?"
-    answer: "HMRC will accept a software-generated claim if the technical narrative is specific to your project and the cost calculation is accurate. Generic or template-driven narratives are increasingly rejected. HMRC has stepped up compliance checks since 2023."
-  - question: "What is the difference between R&D tax claim software and an R&D tax credit specialist?"
-    answer: "Software provides a platform to prepare your claim. A specialist provides a human advisor who reviews your projects, writes the narrative, and calculates costs. Some software companies also offer advisor-led services. The main difference is the level of human input and the cost."
+- question: Can I use R&D tax claim software without an accountant?
+  answer: Yes, you can use software to prepare the technical narrative and cost calculation. But you still need a qualified accountant to file the CT600 corporation tax return that includes the claim. The software companies typically do not file your full return.
+- question: How much do R&D tax claim software companies charge?
+  answer: Most charge between 10% and 25% of the claim value, with minimum fees from £500 to £1,500. Some offer fixed fees for smaller claims. Always ask for a full breakdown of fees before agreeing to use a platform.
+- question: Will HMRC accept a software-generated R&D claim?
+  answer: HMRC will accept a software-generated claim if the technical narrative is specific to your project and the cost calculation is accurate. Generic or template-driven narratives are increasingly rejected. HMRC has stepped up compliance checks since 2023.
+- question: What is the difference between R&D tax claim software and an R&D tax credit specialist?
+  answer: Software provides a platform to prepare your claim. A specialist provides a human advisor who reviews your projects, writes the narrative, and calculates costs. Some software companies also offer advisor-led services. The main difference is the level of human input and the cost.
+metaTitle_prev: 'R&D Tax Claim Software Companies: Which Ones Work'
+metaDescription_prev: Compare the top R&D tax claim software companies for UK businesses. See which platforms handle technical narratives, cost calculations and HMRC compliance.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>R&D Tax Claim Software Companies: A Buyer's Guide for UK Businesses</h2>
 
 <p>If you have spent time researching R&D tax credits, you will have come across the growing number of <strong>r&d tax claim software companies</strong> offering to handle your claim. Some promise a fully automated process. Others claim to maximise your qualifying expenditure. A few simply connect you with a specialist who does the work manually.</p>

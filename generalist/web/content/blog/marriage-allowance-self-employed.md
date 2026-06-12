@@ -1,33 +1,41 @@
 ---
-title: "How to Claim the Marriage Allowance as a Self Employed Person"
-slug: "marriage-allowance-self-employed"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/marriage-allowance-self-employed"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Marriage Allowance Self Employed: Claim Your £1,260 Tax"
-metaDescription: "Marriage allowance self employed guide. If you earn under £12,570 and your spouse pays 20% tax, you could transfer £1,260 of your allowance. Claim it"
-altText: "Self employed sole trader working on a laptop at a kitchen table with a calculator and tax documents nearby"
-image: "/blog/marriage-allowance-self-employed.jpg"
+title: How to Claim the Marriage Allowance as a Self Employed Person
+slug: marriage-allowance-self-employed
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/marriage-allowance-self-employed
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: 'Marriage Allowance for the Self Employed: £252 a Year'
+metaDescription: Earn below the personal allowance as a sole trader and your spouse pays basic rate tax? Transfer £1,260 of it to cut their bill. Backdate four years.
+altText: Self employed sole trader working on a laptop at a kitchen table with a calculator and tax documents nearby
+image: /blog/marriage-allowance-self-employed.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/a-person-sitting-a-wooden-table-with-a-notepad-and-laptop-using-a-calculator-6963847/"
-  source: "Pexels"
-h1: "How to Claim the Marriage Allowance as a Self Employed Person"
-summary: "If you're self employed and your personal income is below the £12,570 tax-free threshold, you can transfer up to £1,260 of your unused personal allowance to your spouse or civil partner. This reduces their tax bill by up to £252 per year. Here's exactly how to claim it and who qualifies."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/a-person-sitting-a-wooden-table-with-a-notepad-and-laptop-using-a-calculator-6963847/
+  source: Pexels
+h1: How to Claim the Marriage Allowance as a Self Employed Person
+summary: If you're self employed and your personal income is below the £12,570 tax-free threshold, you can transfer up to £1,260 of your unused personal allowance to your spouse or civil partner. This reduces their tax bill by up to £252 per year. Here's exactly how to claim it and who qualifies.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Claim the Marriage Allowance as a Self Employed Person","description":"Earn below the personal allowance as a sole trader and your spouse pays basic rate tax? Transfer £1,260 of it to cut their bill. Backdate four years.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/marriage-allowance-self-employed","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/marriage-allowance-self-employed"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/marriage-allowance-self-employed.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"How to Claim the Marriage Allowance as a Self Employed Person","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/marriage-allowance-self-employed"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim the marriage allowance if my self employed income varies month to month?","acceptedAnswer":{"@type":"Answer","text":"Yes. The allowance is assessed per tax year based on your total net profit for that year, not your monthly income. If your net profit for the full year is below £12,570, you qualify regardless of monthly fluctuations. If you start the year expecting low income but end up earning more, you can cancel the transfer at any time without penalty."}},{"@type":"Question","name":"What happens if my spouse is also self employed and earns above the basic rate band?","acceptedAnswer":{"@type":"Answer","text":"If your spouse''s taxable income exceeds £50,270, they become a higher rate taxpayer. The marriage allowance only works if
+  the receiving partner is a basic rate taxpayer (income between £12,571 and £50,270). If their income is above that, you cannot transfer the allowance to them. You would need to check if your own income qualifies you to receive a transfer from them instead."}},{"@type":"Question","name":"Can I backdate my marriage allowance claim if I was self employed in previous years?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can backdate the claim for up to four previous tax years. If you apply now, you can claim for the current year plus the four prior years. HMRC will calculate the total refund and issue it as a tax code adjustment or cheque. You''ll need to confirm your net profit for each of those years was below £12,570."}},{"@type":"Question","name":"Do I need to include the marriage allowance on my self assessment tax return?","acceptedAnswer":{"@type":"Answer","text":"No. The marriage allowance is handled through a tax code adjustment by HMRC, not through your self assessment return. When you file your SA100 or SA103, the reduced personal allowance is already factored into your tax code. You don''t need to enter any additional information about the transfer on your return."}}]}]}'
 faqs:
-  - question: "Can I claim the marriage allowance if my self employed income varies month to month?"
-    answer: "Yes. The allowance is assessed per tax year based on your total net profit for that year, not your monthly income. If your net profit for the full year is below £12,570, you qualify regardless of monthly fluctuations. If you start the year expecting low income but end up earning more, you can cancel the transfer at any time without penalty."
-  - question: "What happens if my spouse is also self employed and earns above the basic rate band?"
-    answer: "If your spouse's taxable income exceeds £50,270, they become a higher rate taxpayer. The marriage allowance only works if the receiving partner is a basic rate taxpayer (income between £12,571 and £50,270). If their income is above that, you cannot transfer the allowance to them. You would need to check if your own income qualifies you to receive a transfer from them instead."
-  - question: "Can I backdate my marriage allowance claim if I was self employed in previous years?"
-    answer: "Yes, you can backdate the claim for up to four previous tax years. If you apply now, you can claim for the current year plus the four prior years. HMRC will calculate the total refund and issue it as a tax code adjustment or cheque. You'll need to confirm your net profit for each of those years was below £12,570."
-  - question: "Do I need to include the marriage allowance on my self assessment tax return?"
-    answer: "No. The marriage allowance is handled through a tax code adjustment by HMRC, not through your self assessment return. When you file your SA100 or SA103, the reduced personal allowance is already factored into your tax code. You don't need to enter any additional information about the transfer on your return."
+- question: Can I claim the marriage allowance if my self employed income varies month to month?
+  answer: Yes. The allowance is assessed per tax year based on your total net profit for that year, not your monthly income. If your net profit for the full year is below £12,570, you qualify regardless of monthly fluctuations. If you start the year expecting low income but end up earning more, you can cancel the transfer at any time without penalty.
+- question: What happens if my spouse is also self employed and earns above the basic rate band?
+  answer: If your spouse's taxable income exceeds £50,270, they become a higher rate taxpayer. The marriage allowance only works if the receiving partner is a basic rate taxpayer (income between £12,571 and £50,270). If their income is above that, you cannot transfer the allowance to them. You would need to check if your own income qualifies you to receive a transfer from them instead.
+- question: Can I backdate my marriage allowance claim if I was self employed in previous years?
+  answer: Yes, you can backdate the claim for up to four previous tax years. If you apply now, you can claim for the current year plus the four prior years. HMRC will calculate the total refund and issue it as a tax code adjustment or cheque. You'll need to confirm your net profit for each of those years was below £12,570.
+- question: Do I need to include the marriage allowance on my self assessment tax return?
+  answer: No. The marriage allowance is handled through a tax code adjustment by HMRC, not through your self assessment return. When you file your SA100 or SA103, the reduced personal allowance is already factored into your tax code. You don't need to enter any additional information about the transfer on your return.
+metaTitle_prev: 'Marriage Allowance Self Employed: Claim Your £1,260 Tax'
+metaDescription_prev: Marriage allowance self employed guide. If you earn under £12,570 and your spouse pays 20% tax, you could transfer £1,260 of your allowance. Claim it
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you're self employed and your taxable income is below the personal allowance of £12,570, you might be missing out on a straightforward tax break worth up to £252 per year. It's called the Marriage Allowance, and it lets you transfer up to £1,260 of your unused personal allowance to your spouse or civil partner.</p>
 
 <p>This is one of the most underclaimed reliefs in the UK tax system. HMRC estimates that over 2 million eligible couples don't claim it. Many of them are self employed people who assume their income fluctuates too much to qualify. That's often wrong.</p>
