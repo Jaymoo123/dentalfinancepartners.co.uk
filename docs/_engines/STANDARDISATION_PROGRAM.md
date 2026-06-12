@@ -20,6 +20,19 @@
 
 **Load-bearing oddity:** Property's deployment hosts the lead notify/enrich pipeline for ALL six sites — see `CENTRAL_LEAD_PIPELINE.md` before touching Property's deploys or `api/leads/**`.
 
+## Per-site content/SEO state (one STATE.md per site — the single per-site record)
+
+| Site | State doc | Quick orientation |
+|---|---|---|
+| Property | `docs/property/STATE.md` | net-new CLOSED (420 live) + Track-2 rewrite COMPLETE/deployed 2026-06-02; topic coverage SATURATED; posture = mature then optimise |
+| Dentists | `docs/dentists/STATE.md` | structural parity done; net-new waves 1-4 (54 pages, verify commit state in doc); SERP meta batch 1 (35) 2026-06-12 |
+| Medical | `docs/medical/STATE.md` | Track-2 rewrite + waves 1-2 deployed; FLAT blog routing (use `scripts/medical_flat_link_audit.py`); SERP meta batch 1 (18) 2026-06-12 |
+| Solicitors | `docs/solicitors/STATE.md` | Track-2 complete; wave 1 written; slugify/link-audit caveats IN DOC — read before link work; SERP meta batch 1 (35) 2026-06-12 |
+| Generalist | `docs/generalist/STATE.md` | 322 posts + cities + templates; SERP meta batch 1+tail (61) + CS01/AMAP factual fixes 2026-06-12 |
+| Agency | `docs/agency/STATE.md` | youngest data (828 impr/0 clicks at 2026-06-12); SERP meta batch 1 (30) 2026-06-12 |
+
+Cross-site optimisation engines: `docs/_engines/SERP_META_PROGRAM.md` (query-driven meta, monthly cadence), `REWRITE_PROGRAM.md`, `NETNEW_PROGRAM.md`, `HUMANISE_PROGRAM.md`, `ENGINE_MAP_AND_ONBOARDING.md` (which engines run where + onboarding). Per-site content-gap registers: `docs/<site>/opportunity_register_meta_<date>.md`.
+
 ## The record (read in this order if you need depth)
 
 1. `PROPERTY-CAPABILITY-STANDARD.md` — the frozen 71-capability standard everything was audited against.
