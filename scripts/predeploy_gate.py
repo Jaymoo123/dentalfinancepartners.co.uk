@@ -198,8 +198,25 @@ def check_pricing():
 
 
 def _sha(slug):
-    p = BLOG / f"{slug}.md"
-    return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
+    """sha256 of slug's .md under the current SITE's BLOG dir. Searches
+    recursively so category-subdir corpora (e.g. solicitors) are handled."""
+    matches = list(BLOG.rglob(f"{slug}.md"))
+    if not matches:
+        return None
+    return hashlib.sha256(matches[0].read_bytes()).hexdigest()
+
+
+def _parse_pending_key(key: str) -> tuple[str, str]:
+    """Parse a pending_qa.json key into (site, slug).
+
+    Keys written by qa_verdict.py:
+      - bare slug  (e.g. "capital-allowances-on-vans")  -> property entry (back-compat)
+      - "site:slug" (e.g. "generalist:capital-allowances-on-vans") -> non-property entry
+    """
+    if ":" in key:
+        site_part, slug_part = key.split(":", 1)
+        return site_part, slug_part
+    return "property", key
 
 
 def check_qa():
@@ -219,6 +236,10 @@ def check_qa():
     PENDING (always): any freshly-rewritten page marked pending by
     `qa_verdict.py pending` and not yet cleared by a passing `record` blocks the
     deploy - so a rewrite cannot ship without the deterministic QA that clears it.
+
+    Key format in pending_qa.json: bare slug = property (back-compat), else
+    "site:slug". The gate only enforces entries that belong to the current --site
+    so that a generalist pending entry cannot block a property deploy and vice versa.
     """
     # Pending-QA blocks regardless of flags or verdict-cache presence.
     pend_file = CACHE / "pending_qa.json"
@@ -227,8 +248,15 @@ def check_qa():
             pend = json.loads(pend_file.read_text(encoding="utf-8"))
         except Exception:
             pend = {}
-        still = [f"{s} (batch {i.get('batch')})" for s, i in pend.items()
-                 if _sha(s) is not None and _sha(s) == i.get("sha256")]
+        still = []
+        for key, info in pend.items():
+            entry_site, slug = _parse_pending_key(key)
+            # Only enforce entries that belong to the current --site deploy.
+            if entry_site != SITE:
+                continue
+            h = _sha(slug)
+            if h is not None and h == info.get("sha256"):
+                still.append(f"{slug} (batch {info.get('batch')})")
         if still:
             failures.append(f"QA gate: {len(still)} rewritten page(s) awaiting "
                             "independent QA - run the QA workflow then "

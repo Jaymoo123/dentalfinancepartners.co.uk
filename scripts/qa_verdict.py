@@ -15,11 +15,13 @@ Usage
 1. Right after a rewrite batch, mark its pages pending (the gate then blocks any
    deploy until each passes QA - closes the "rewrite ships without QA" gap):
 
-    python scripts/qa_verdict.py pending --batch <name> --slugs <slug> [<slug> ...]
+    python scripts/qa_verdict.py pending --site <site> --batch <name> --slugs <slug> [<slug> ...]
+
+   --site defaults to 'property' for backward compatibility.
 
 2. Run the independent-QA workflow, save its return value to a JSON file, then:
 
-    python scripts/qa_verdict.py record --batch <name> --verdicts <return.json>
+    python scripts/qa_verdict.py record --site <site> --batch <name> --verdicts <return.json>
 
 `<return.json>` may be the workflow's whole return ({"summary":..,"pages":[..]})
 or just the list of per-slug verdicts. all_clear is DERIVED from each verdict's
@@ -30,6 +32,15 @@ mark. Writes optimisation_engine/.cache/qa_verdict_<name>.json.
 
 The gate (scripts/predeploy_gate.py check_qa) enforces all of this; this script
 only records/marks. See `check_qa()` in the gate for the enforcement rules.
+
+Pending key format
+------------------
+  property slugs  ->  bare slug key  (e.g. "capital-allowances-on-vans")
+  all other sites ->  "site:slug"    (e.g. "generalist:capital-allowances-on-vans")
+
+This keeps backward compatibility: existing property entries in pending_qa.json
+are bare keys and the gate already handles them correctly. The predeploy_gate
+was updated in parallel to parse "site:slug" keys for non-property entries.
 """
 from __future__ import annotations
 
@@ -41,14 +52,41 @@ import re
 import time
 
 ROOT = pathlib.Path(".")
-BLOG = ROOT / "Property/web/content/blog"
 CACHE = ROOT / "optimisation_engine/.cache"
 PENDING = CACHE / "pending_qa.json"
 
+# Maps site key -> relative path from repo root to the blog content directory.
+SITE_BLOGS: dict[str, str] = {
+    "property":   "Property/web/content/blog",
+    "dentists":   "Dentists/web/content/blog",
+    "medical":    "Medical/web/content/blog",
+    "solicitors": "Solicitors/web/content/blog",
+    "generalist": "generalist/web/content/blog",
+    "agency":     "digital-agency/web/content/blog",
+}
 
-def sha256_of(slug: str) -> str | None:
-    p = BLOG / f"{slug}.md"
-    return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
+
+def _blog_dir(site: str) -> pathlib.Path:
+    key = site.lower()
+    if key not in SITE_BLOGS:
+        raise SystemExit(
+            f"Unknown --site '{site}'. Valid values: {', '.join(SITE_BLOGS)}")
+    return ROOT / SITE_BLOGS[key]
+
+
+def _pending_key(site: str, slug: str) -> str:
+    """Pending-file key: bare slug for property (back-compat), 'site:slug' otherwise."""
+    return slug if site.lower() == "property" else f"{site.lower()}:{slug}"
+
+
+def sha256_of(slug: str, site: str = "property") -> str | None:
+    """sha256 of the slug's .md file. Searches recursively so category-subdir
+    corpora (e.g. solicitors) are handled correctly."""
+    blog = _blog_dir(site)
+    matches = list(blog.rglob(f"{slug}.md"))
+    if not matches:
+        return None
+    return hashlib.sha256(matches[0].read_bytes()).hexdigest()
 
 
 _STATUTE_RE = re.compile(
@@ -57,12 +95,13 @@ _STATUTE_RE = re.compile(
     r"TMA\s*1970|VATA\s*1994|\bs\.?\s?\d+[A-Z]{0,3}\b|\bsection\s+\d+", re.I)
 
 
-def _md_statute_citations(slug: str) -> int:
+def _md_statute_citations(slug: str, site: str = "property") -> int:
     """How many statute/section references the live .md actually makes."""
-    p = BLOG / f"{slug}.md"
-    if not p.exists():
+    blog = _blog_dir(site)
+    matches = list(blog.rglob(f"{slug}.md"))
+    if not matches:
         return 0
-    return len(_STATUTE_RE.findall(p.read_text(encoding="utf-8")))
+    return len(_STATUTE_RE.findall(matches[0].read_text(encoding="utf-8")))
 
 
 def _derive_all_clear(v) -> bool:
@@ -104,7 +143,7 @@ def _derive_all_clear(v) -> bool:
     return derived and reported
 
 
-def _rows(data):
+def _rows(data, site: str = "property"):
     """Accept the workflow's whole return or a bare list of verdicts."""
     if isinstance(data, dict) and "pages" in data:
         data = data["pages"]
@@ -123,7 +162,7 @@ def _rows(data):
         # but came back with NO statute_checks was not actually verified - it
         # cannot be all_clear. Threshold 3 to ignore an incidental "s.1" mention.
         n_checks = len(v.get("statute_checks") or [])
-        if ac and n_checks == 0 and _md_statute_citations(v["slug"]) >= 3:
+        if ac and n_checks == 0 and _md_statute_citations(v["slug"], site) >= 3:
             ac = False
             blocking = blocking + [{
                 "severity": "blocking", "type": "statute",
@@ -173,20 +212,25 @@ def _save_pending(d: dict) -> None:
     PENDING.write_text(json.dumps(d, indent=2), encoding="utf-8")
 
 
-def _clear_pending(clean: dict) -> int:
-    """Drop slugs that are now QA'd-clean (all_clear) with a matching hash from
-    the pending-QA list. `clean` is {slug: {sha256, ...}}."""
+def _clear_pending(clean: dict, site: str = "property") -> int:
+    """Drop entries that are now QA'd-clean (all_clear) with a matching hash from
+    the pending-QA list. `clean` is {slug: {sha256, ...}}.
+
+    For property, the key is the bare slug. For other sites the key is
+    'site:slug'. Both are checked so that a record run for a non-property site
+    does not accidentally clear a same-named property entry."""
     pend = _load_pending()
     cleared = 0
-    for slug in list(pend):
-        if slug in clean and clean[slug]["sha256"] == sha256_of(slug):
-            del pend[slug]
+    for slug, rec in clean.items():
+        key = _pending_key(site, slug)
+        if key in pend and pend[key].get("sha256") == sha256_of(slug, site):
+            del pend[key]
             cleared += 1
     _save_pending(pend)
     return cleared
 
 
-def pending(batch: str, slugs) -> None:
+def pending(batch: str, slugs, site: str = "property") -> None:
     """Mark freshly-rewritten slugs as awaiting independent QA, keyed to their
     current hash. The gate BLOCKS while any pending slug is still live unchanged
     - so a rewrite cannot deploy without the deterministic QA that clears it
@@ -195,26 +239,28 @@ def pending(batch: str, slugs) -> None:
     pend = _load_pending()
     marked = []
     for slug in slugs:
-        h = sha256_of(slug)
+        h = sha256_of(slug, site)
         if h is None:
-            print(f"  WARNING: no .md for '{slug}' - not marked pending")
+            print(f"  WARNING: no .md for '{slug}' (site={site}) - not marked pending")
             continue
-        pend[slug] = {"batch": batch, "sha256": h}
+        key = _pending_key(site, slug)
+        pend[key] = {"batch": batch, "sha256": h, "site": site}
         marked.append(slug)
     _save_pending(pend)
-    print(f"qa_verdict: marked {len(marked)} slug(s) pending-QA for batch '{batch}'")
+    print(f"qa_verdict: marked {len(marked)}/{len(list(slugs) if not isinstance(slugs, list) else slugs)} "
+          f"slug(s) pending-QA for batch '{batch}' (site={site})")
     print("  the pre-deploy gate will BLOCK until each passes independent QA "
           "and is cleared by `qa_verdict.py record`.")
 
 
-def record(batch: str, verdicts_path: str) -> None:
+def record(batch: str, verdicts_path: str, site: str = "property") -> None:
     data = json.loads(pathlib.Path(verdicts_path).read_text(encoding="utf-8"))
-    rows = _rows(data)
+    rows = _rows(data, site)
     if not rows:
         raise SystemExit("No verdicts found in the JSON.")
     slugs, missing, overridden = {}, [], []
     for r in rows:
-        h = sha256_of(r["slug"])
+        h = sha256_of(r["slug"], site)
         if h is None:
             missing.append(r["slug"])
             continue
@@ -225,9 +271,9 @@ def record(batch: str, verdicts_path: str) -> None:
     CACHE.mkdir(parents=True, exist_ok=True)
     out = CACHE / f"qa_verdict_{batch}.json"
     out.write_text(json.dumps(
-        {"batch": batch, "ts": time.time(), "slugs": slugs}, indent=2),
+        {"batch": batch, "site": site, "ts": time.time(), "slugs": slugs}, indent=2),
         encoding="utf-8")
-    print(f"qa_verdict: recorded {len(slugs)} slug(s) for batch '{batch}' -> {out}")
+    print(f"qa_verdict: recorded {len(slugs)} slug(s) for batch '{batch}' (site={site}) -> {out}")
     if overridden:
         print(f"  NOTE: {len(overridden)} slug(s) self-reported all_clear but the "
               "deterministic derivation OVERRODE to not-clear (failing "
@@ -235,7 +281,7 @@ def record(batch: str, verdicts_path: str) -> None:
     if missing:
         print(f"  WARNING: {len(missing)} slug(s) had no .md file (skipped): "
               f"{', '.join(missing)}")
-    cleared = _clear_pending({s: v for s, v in slugs.items() if v["all_clear"]})
+    cleared = _clear_pending({s: v for s, v in slugs.items() if v["all_clear"]}, site)
     if cleared:
         print(f"  cleared {cleared} slug(s) from the pending-QA list")
     not_clear = [s for s, v in slugs.items() if not v["all_clear"]]
@@ -246,19 +292,20 @@ def record(batch: str, verdicts_path: str) -> None:
         print("  all recorded slugs are all_clear")
 
 
-def coverage(batch: str, slugs) -> None:
+def coverage(batch: str, slugs, site: str = "property") -> None:
     """Run the deterministic query-coverage check per slug and write a coverage
     manifest keyed to each .md's sha256. Exit code 2 from the coverage script is
     a real gate-fail RESULT (not an error): passed=False is recorded."""
     import subprocess
     out_slugs: dict = {}
     for slug in slugs:
-        h = sha256_of(slug)
+        h = sha256_of(slug, site)
         if h is None:
-            print(f"  WARNING: no .md for '{slug}' - skipped")
+            print(f"  WARNING: no .md for '{slug}' (site={site}) - skipped")
             continue
         proc = subprocess.run(
-            ["python", "scripts/track2_query_coverage.py", "--slug", slug, "--json"],
+            ["python", "scripts/track2_query_coverage.py",
+             "--slug", slug, "--site", site, "--json"],
             capture_output=True, text=True)
         # exit 0 = pass/invisible, exit 2 = gate-fail; both emit JSON on stdout.
         if proc.returncode not in (0, 2):
@@ -281,7 +328,7 @@ def coverage(batch: str, slugs) -> None:
     CACHE.mkdir(parents=True, exist_ok=True)
     out = CACHE / f"coverage_{batch}.json"
     out.write_text(json.dumps(
-        {"batch": batch, "ts": time.time(), "slugs": out_slugs}, indent=2),
+        {"batch": batch, "site": site, "ts": time.time(), "slugs": out_slugs}, indent=2),
         encoding="utf-8")
     passed = sum(1 for v in out_slugs.values() if v["passed"])
     print(f"qa_verdict coverage: {passed}/{len(out_slugs)} slug(s) passed -> {out}")
@@ -291,24 +338,50 @@ def coverage(batch: str, slugs) -> None:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Record + track independent-QA verdicts for the pre-deploy gate.")
+    ap = argparse.ArgumentParser(
+        description="Record + track independent-QA verdicts for the pre-deploy gate.")
+    ap.add_argument(
+        "--site", default="property",
+        help=(f"site corpus to operate on (default: property). "
+              f"Valid: {', '.join(SITE_BLOGS)}"))
     sub = ap.add_subparsers(dest="cmd", required=True)
-    r = sub.add_parser("record", help="write a verdict cache file from a QA-workflow return")
-    r.add_argument("--batch", required=True, help="batch name (used in the cache filename)")
-    r.add_argument("--verdicts", required=True, help="path to the QA workflow return JSON")
-    p = sub.add_parser("pending", help="mark freshly-rewritten slugs as awaiting QA (gate blocks until cleared)")
+
+    r = sub.add_parser("record",
+                       help="write a verdict cache file from a QA-workflow return")
+    r.add_argument("--batch", required=True,
+                   help="batch name (used in the cache filename)")
+    r.add_argument("--verdicts", required=True,
+                   help="path to the QA workflow return JSON")
+    r.add_argument("--site", default=None,
+                   help="override top-level --site for this subcommand")
+
+    p = sub.add_parser("pending",
+                       help="mark freshly-rewritten slugs as awaiting QA (gate blocks until cleared)")
     p.add_argument("--batch", required=True, help="batch name")
     p.add_argument("--slugs", required=True, nargs="+", help="slugs just rewritten")
-    cov = sub.add_parser("coverage", help="run the deterministic query-coverage check per slug and write a coverage manifest")
-    cov.add_argument("--batch", required=True, help="batch name (used in the manifest filename)")
-    cov.add_argument("--slugs", required=True, nargs="+", help="slugs to check coverage for")
+    p.add_argument("--site", default=None,
+                   help="override top-level --site for this subcommand")
+
+    cov = sub.add_parser(
+        "coverage",
+        help="run the deterministic query-coverage check per slug and write a coverage manifest")
+    cov.add_argument("--batch", required=True,
+                     help="batch name (used in the manifest filename)")
+    cov.add_argument("--slugs", required=True, nargs="+",
+                     help="slugs to check coverage for")
+    cov.add_argument("--site", default=None,
+                     help="override top-level --site for this subcommand")
+
     a = ap.parse_args()
+    # Sub-command --site overrides top-level --site if provided.
+    site = (a.site or "property").lower()
+
     if a.cmd == "record":
-        record(a.batch, a.verdicts)
+        record(a.batch, a.verdicts, site)
     elif a.cmd == "pending":
-        pending(a.batch, a.slugs)
+        pending(a.batch, a.slugs, site)
     elif a.cmd == "coverage":
-        coverage(a.batch, a.slugs)
+        coverage(a.batch, a.slugs, site)
 
 
 if __name__ == "__main__":
