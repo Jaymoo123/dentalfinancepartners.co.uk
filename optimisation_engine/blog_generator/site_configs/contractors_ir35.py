@@ -22,8 +22,9 @@ _POST_CATEGORIES = [
 
 # Slugs that will exist after the first content batch. Used for internal linking.
 _INTERNAL_LINK_SLUGS = [
-    "ir35-explained",
-    "inside-vs-outside-ir35",
+    "what-is-ir35",
+    "inside-ir35",
+    "outside-ir35",
     "how-to-use-cest",
     "sds-status-determination-statement",
     "limited-company-vs-umbrella-contractor",
