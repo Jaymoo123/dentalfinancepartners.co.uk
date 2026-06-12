@@ -1,28 +1,31 @@
 ---
-title: "Medical Professional Expenses: What Is Claimable for UK Doctors"
-slug: "medical-professional-expenses-what-is-claimable"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "Medical Expenses"
-metaTitle: "Medical Professional Expenses: What Can Doctors Claim 2026/27"
-metaDescription: "What UK doctors can claim against tax in 2026/27: GMC fee, MDU/MPS indemnity, List 3 subscriptions, CPD, equipment and 55p mileage. GP, consultant and locum guide."
-altText: "UK medical professional reviewing claimable expenses including stethoscope, calculator and tax documents"
-image: ""
-h1: "Medical Professional Expenses: What Can UK Doctors Claim Against Tax?"
-summary: "UK doctors can claim a wide range of tax-deductible expenses, including the GMC retention fee, medical indemnity, List 3 professional subscriptions, CPD, equipment and business mileage at 55p per mile in 2026/27. How you claim depends on whether you are a GP partner, salaried GP, consultant or locum. This guide is general information, not advice."
-schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/medical-professional-expenses-what-is-claimable"
+title: 'Medical Professional Expenses: What Is Claimable for UK Doctors'
+slug: medical-professional-expenses-what-is-claimable
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: Medical Expenses
+metaTitle: 'Medical Professional Expenses: What Doctors Can Claim'
+metaDescription: 'What UK doctors claim against tax: the GMC fee and List 3 subscriptions, indemnity, CPD, equipment and 55p mileage for the first 10,000 miles. Claim it.'
+altText: UK medical professional reviewing claimable expenses including stethoscope, calculator and tax documents
+image: ''
+h1: 'Medical Professional Expenses: What Can UK Doctors Claim Against Tax?'
+summary: UK doctors can claim a wide range of tax-deductible expenses, including the GMC retention fee, medical indemnity, List 3 professional subscriptions, CPD, equipment and business mileage at 55p per mile in 2026/27. How you claim depends on whether you are a GP partner, salaried GP, consultant or locum. This guide is general information, not advice.
+schema: ''
+canonical: https://www.medicalaccountantsuk.co.uk/blog/medical-professional-expenses-what-is-claimable
 faqs:
-  - question: "Can I claim my GMC retention fee against tax?"
-    answer: "Yes. The GMC annual retention fee is on HMRC's approved List 3, so it is tax-deductible for all UK doctors who pay it to keep their licence to practise. Royal College and specialty memberships and your BMA subscription are also deductible where they appear on List 3. Restoration fees and any penalty fees are not deductible. GP partners include these in the practice accounts, while salaried doctors, consultants and locums claim them on the relevant part of their self-assessment return."
-  - question: "What is the mileage rate doctors can claim in 2026/27?"
-    answer: "HMRC's approved mileage allowance payment (AMAP) rate rose to 55p per business mile for the first 10,000 miles from 6 April 2026, then 25p per mile thereafter (2026/27). You can claim mileage for travel between work sites, home visits and travel to temporary workplaces, but ordinary commuting from home to a permanent workplace is not claimable. Keep a mileage log showing the date, destination and business purpose of each journey."
-  - question: "Is medical indemnity tax-deductible, and do NHS GPs still need their own cover?"
-    answer: "Subscriptions to a medical defence organisation (MDU, MPS or MDDUS) are deductible. Since 1 April 2019, NHS general-practice clinical negligence in England is covered by the state-backed Clinical Negligence Scheme for General Practice (CNSGP) at no subscription, so a GP's own paid indemnity is now mainly for private or non-NHS clinical work and for non-clinical or regulatory matters such as GMC investigations. You do not need to personally insure NHS clinical negligence, but most doctors still hold their own cover for the matters CNSGP does not reach."
-  - question: "How do I claim expenses as a salaried GP, GP partner, consultant or locum?"
-    answer: "A salaried GP or consultant claims allowable employment expenses through the employment pages of self-assessment (subscriptions on List 3 are the most common). A GP partner's expenses go into the practice accounts and reduce the profit share. A locum claims on the self-employment pages (SA103), or, if trading through a limited company, as company expenses against corporation tax. From 6 April 2026, most full-time locums and unincorporated private GPs with qualifying income over £50,000 also fall within Making Tax Digital for Income Tax, so digital records matter more than ever."
+- question: Can I claim my GMC retention fee against tax?
+  answer: Yes. The GMC annual retention fee is on HMRC's approved List 3, so it is tax-deductible for all UK doctors who pay it to keep their licence to practise. Royal College and specialty memberships and your BMA subscription are also deductible where they appear on List 3. Restoration fees and any penalty fees are not deductible. GP partners include these in the practice accounts, while salaried doctors, consultants and locums claim them on the relevant part of their self-assessment return.
+- question: What is the mileage rate doctors can claim in 2026/27?
+  answer: HMRC's approved mileage allowance payment (AMAP) rate rose to 55p per business mile for the first 10,000 miles from 6 April 2026, then 25p per mile thereafter (2026/27). You can claim mileage for travel between work sites, home visits and travel to temporary workplaces, but ordinary commuting from home to a permanent workplace is not claimable. Keep a mileage log showing the date, destination and business purpose of each journey.
+- question: Is medical indemnity tax-deductible, and do NHS GPs still need their own cover?
+  answer: Subscriptions to a medical defence organisation (MDU, MPS or MDDUS) are deductible. Since 1 April 2019, NHS general-practice clinical negligence in England is covered by the state-backed Clinical Negligence Scheme for General Practice (CNSGP) at no subscription, so a GP's own paid indemnity is now mainly for private or non-NHS clinical work and for non-clinical or regulatory matters such as GMC investigations. You do not need to personally insure NHS clinical negligence, but most doctors still hold their own cover for the matters CNSGP does not reach.
+- question: How do I claim expenses as a salaried GP, GP partner, consultant or locum?
+  answer: A salaried GP or consultant claims allowable employment expenses through the employment pages of self-assessment (subscriptions on List 3 are the most common). A GP partner's expenses go into the practice accounts and reduce the profit share. A locum claims on the self-employment pages (SA103), or, if trading through a limited company, as company expenses against corporation tax. From 6 April 2026, most full-time locums and unincorporated private GPs with qualifying income over £50,000 also fall within Making Tax Digital for Income Tax, so digital records matter more than ever.
+metaTitle_prev: 'Medical Professional Expenses: What Can Doctors Claim 2026/27'
+metaDescription_prev: 'What UK doctors can claim against tax in 2026/27: GMC fee, MDU/MPS indemnity, List 3 subscriptions, CPD, equipment and 55p mileage. GP, consultant and locum guide.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Knowing exactly <strong>what medical professionals can claim against tax</strong> is one of the simplest ways UK doctors reduce a tax bill legally. Whether you are a GP partner, a salaried GP, a hospital consultant or a locum, the principle is the same: an expense is allowable only where it is incurred <strong>wholly and exclusively</strong> for your profession (ITTOIA 2005 s.34 for the self-employed, or the stricter employment test for the employed). It must be necessary for your work and not something you would have paid for personally.</p>
 
 <p>This is the broad overview of claimable expenses for all UK doctors. If you want a role-specific deep dive, we link out below to our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a> and our <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum doctor expenses guide</a> rather than repeating them here.</p>

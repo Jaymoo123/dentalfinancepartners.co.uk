@@ -1,30 +1,33 @@
 ---
-title: "GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals"
-slug: "gp-pension-contributions-tax-relief"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-pension-contributions-tax-relief"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "NHS Pension Planning"
-metaTitle: "GP Pension Contributions Tax Relief 2026/27 | Medical Accountants UK"
-metaDescription: "How NHS pension contributions get tax relief for GPs: the 2026/27 tiered employee rates, net pay relief, AVCs and Added Pension, and the £60,000 annual allowance."
-altText: "UK GP reviewing pension contribution documents and tax relief calculations"
-image: ""
-h1: "GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals"
-summary: "How tax relief on NHS pension contributions works for GPs in 2026/27: the tiered employee rates, automatic net pay relief, topping up with AVCs or Added Pension, and where the £60,000 annual allowance fits in."
-schema: ""
+title: 'GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals'
+slug: gp-pension-contributions-tax-relief
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-pension-contributions-tax-relief
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: NHS Pension Planning
+metaTitle: 'GP Pension Contributions: NHS Tiers and Tax Relief'
+metaDescription: How GP NHS pension contributions get tax relief through net pay, with 2026/27 tiers from 5.2% to 12.5% set by your pensionable pay. Claim it in full.
+altText: UK GP reviewing pension contribution documents and tax relief calculations
+image: ''
+h1: 'GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals'
+summary: 'How tax relief on NHS pension contributions works for GPs in 2026/27: the tiered employee rates, automatic net pay relief, topping up with AVCs or Added Pension, and where the £60,000 annual allowance fits in.'
+schema: ''
 faqs:
-  - question: "How do GP pension contributions get tax relief?"
-    answer: "NHS Pension Scheme employee contributions are deducted from your pensionable pay before income tax is worked out, which is called the net pay arrangement. Because you never pay tax on the contributed amount, you get relief automatically at your marginal rate, so a higher-rate GP effectively gets 40% relief and an additional-rate GP 45%, with no separate claim needed for the main scheme contribution."
-  - question: "What are the NHS pension contribution rates for GPs in 2026/27?"
-    answer: "From 1 April 2026 the scheme uses six tiers based on your pensionable pay: 5.2% up to £13,259, 6.5% to £28,854, 8.3% to £35,155, 9.8% to £52,778, 10.7% to £67,668, and 12.5% on pay of £67,669 and above. A GP partner pays the tier set by their pensionable profit, a salaried GP by their pensionable salary, and a freelance locum by the income pensioned through Locum forms A and B."
-  - question: "What is the pension annual allowance for GPs in 2026/27?"
-    answer: "The standard annual allowance is £60,000 (2026/27). For defined-benefit schemes such as the NHS scheme, what counts towards it is the pension input amount (the growth in your benefits), not the cash contributions you pay in. The allowance tapers for high earners where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a floor of £10,000."
-  - question: "Can GP partners top up the NHS pension and still get tax relief?"
-    answer: "Yes. You can buy Added Pension (extra defined-benefit accrual inside the scheme) or pay Money Purchase Additional Voluntary Contributions into a separate defined-contribution pot. Both attract income tax relief, but both count towards your £60,000 annual allowance, so a GP near the taper should model the input amount before topping up."
-  - question: "Does taking private income as dividends affect my NHS pension?"
-    answer: "Yes, and it is a common trap. A limited company cannot hold an NHS GMS or PMS contract, and any income routed through a company and taken as dividends is not NHS-pensionable. So incorporating private work can cut tax but stops that income building NHS pension. Always weigh the tax saving against the lost pension accrual before incorporating."
+- question: How do GP pension contributions get tax relief?
+  answer: NHS Pension Scheme employee contributions are deducted from your pensionable pay before income tax is worked out, which is called the net pay arrangement. Because you never pay tax on the contributed amount, you get relief automatically at your marginal rate, so a higher-rate GP effectively gets 40% relief and an additional-rate GP 45%, with no separate claim needed for the main scheme contribution.
+- question: What are the NHS pension contribution rates for GPs in 2026/27?
+  answer: 'From 1 April 2026 the scheme uses six tiers based on your pensionable pay: 5.2% up to £13,259, 6.5% to £28,854, 8.3% to £35,155, 9.8% to £52,778, 10.7% to £67,668, and 12.5% on pay of £67,669 and above. A GP partner pays the tier set by their pensionable profit, a salaried GP by their pensionable salary, and a freelance locum by the income pensioned through Locum forms A and B.'
+- question: What is the pension annual allowance for GPs in 2026/27?
+  answer: The standard annual allowance is £60,000 (2026/27). For defined-benefit schemes such as the NHS scheme, what counts towards it is the pension input amount (the growth in your benefits), not the cash contributions you pay in. The allowance tapers for high earners where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a floor of £10,000.
+- question: Can GP partners top up the NHS pension and still get tax relief?
+  answer: Yes. You can buy Added Pension (extra defined-benefit accrual inside the scheme) or pay Money Purchase Additional Voluntary Contributions into a separate defined-contribution pot. Both attract income tax relief, but both count towards your £60,000 annual allowance, so a GP near the taper should model the input amount before topping up.
+- question: Does taking private income as dividends affect my NHS pension?
+  answer: Yes, and it is a common trap. A limited company cannot hold an NHS GMS or PMS contract, and any income routed through a company and taken as dividends is not NHS-pensionable. So incorporating private work can cut tax but stops that income building NHS pension. Always weigh the tax saving against the lost pension accrual before incorporating.
+metaTitle_prev: GP Pension Contributions Tax Relief 2026/27 | Medical Accountants UK
+metaDescription_prev: 'How NHS pension contributions get tax relief for GPs: the 2026/27 tiered employee rates, net pay relief, AVCs and Added Pension, and the £60,000 annual allowance.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>For most GPs the NHS Pension Scheme is the single largest tax relief they will ever receive, yet it is also the one most often misunderstood. This guide explains how <strong>GP pension contributions tax relief</strong> actually works in the 2026/27 tax year: the tiered employee rates, why relief is automatic through the net pay arrangement, how to top up with Added Pension or AVCs, and where the annual allowance starts to bite for higher-earning partners.</p>
 
 <p>It is general information for UK doctors, not personal advice. The NHS pension interacts with your income tax, your contract type and any private work in ways that are very GP-specific, so the worked detail belongs with a specialist medical accountant.</p>

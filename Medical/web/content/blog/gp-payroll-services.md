@@ -1,32 +1,35 @@
 ---
-title: "GP Payroll Services: Complete Guide for Medical Practices"
-slug: "gp-payroll-services"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-payroll-services"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "GP Practice Management"
-metaTitle: "GP Practice Payroll Services | PAYE, RTI & NHS Pension UK"
-metaDescription: "GP practice payroll done right: PAYE and RTI for practice staff, auto-enrolment alongside the NHS pension, and employer NIC at 15% above the £5,000 threshold (2026/27)."
-altText: "Medical practice team reviewing payroll documents and employee records"
-image: ""
-h1: "GP Payroll Services: Complete Guide for Medical Practices"
-summary: "What GP practice payroll actually involves: PAYE and RTI for practice staff, workplace pension auto-enrolment alongside the NHS Pension Scheme, employer secondary NIC at 15% above the £5,000 threshold (2026/27), and where partners and locums sit outside payroll."
-schema: ""
+title: 'GP Payroll Services: Complete Guide for Medical Practices'
+slug: gp-payroll-services
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-payroll-services
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: GP Practice Management
+metaTitle: 'GP Practice Payroll: PAYE, RTI and the NHS Pension'
+metaDescription: 'Run GP practice payroll right: PAYE and RTI for staff, NHS pension alongside auto-enrolment, and employer NIC at 15% above £5,000. Avoid costly errors.'
+altText: Medical practice team reviewing payroll documents and employee records
+image: ''
+h1: 'GP Payroll Services: Complete Guide for Medical Practices'
+summary: 'What GP practice payroll actually involves: PAYE and RTI for practice staff, workplace pension auto-enrolment alongside the NHS Pension Scheme, employer secondary NIC at 15% above the £5,000 threshold (2026/27), and where partners and locums sit outside payroll.'
+schema: ''
 faqs:
-  - question: "Does a GP practice run partners through payroll?"
-    answer: "No. GP partners are self-employed and taxed on their profit share, not on drawings, so they sit outside PAYE entirely. The partnership files an SA800 and each partner's share flows to the partnership pages of their own Self Assessment return with Class 4 NIC. Payroll covers your employed staff: salaried GPs, practice nurses, healthcare assistants, reception and management. See our GP partnership tax guide for how partner profit and drawings are handled."
-  - question: "How does NHS pension fit with practice payroll?"
-    answer: "Salaried GPs and most employed practice staff are active members of the NHS Pension Scheme (2015 CARE section, 1/54th accrual). Employee contributions are tiered by pensionable pay and the employer contribution is set centrally, deducted through payroll and reported to PCSE. Staff who are not eligible for or have opted out of the NHS scheme must instead be assessed for workplace pension auto-enrolment. Payroll has to handle both correctly so nobody is double-enrolled or missed."
-  - question: "Do GP practices still have to run auto-enrolment if staff are in the NHS pension?"
-    answer: "Yes, for anyone not in the NHS scheme. The NHS Pension Scheme is a qualifying scheme for auto-enrolment, so members already satisfy the duty. But staff who are ineligible for the NHS scheme, or who opt out of it, must be assessed for a separate workplace pension. Auto-enrolment minimums are 8% of qualifying earnings in total (at least 3% from the employer), on earnings between £6,240 and £50,270 a year (2026/27)."
-  - question: "How much employer National Insurance does a GP practice pay on staff?"
-    answer: "Employer (secondary Class 1) NIC is 15% on earnings above the £5,000 secondary threshold for 2026/27. The Employment Allowance of £10,500 can reduce a practice's employer NIC bill, and most GP partnerships qualify because they employ several people (it is not available where the only employee is a single company director, which is rarely the position for a practice)."
-  - question: "What are the penalties if a GP practice files RTI late?"
-    answer: "HMRC charges a monthly late-filing penalty based on the number of employees in the PAYE scheme: £100 for 1 to 9 employees, £200 for 10 to 49, £300 for 50 to 249 and £400 for 250 or more, for each month a Full Payment Submission is late (one unpenalised late filing is allowed per tax year). Most GP practices fall in the £100 to £300 bands. Interest and further charges can apply to late-paid PAYE and NIC."
-  - question: "How are locum GPs treated in practice payroll?"
-    answer: "It depends on the engagement. A freelance locum trading as a sole trader is paid gross and is not on your payroll, but you should keep evidence of their self-employed status. A locum working through a limited company is within the off-payroll (IR35) framework, and because a GP partnership is usually a small employer the company itself decides its IR35 status. A genuinely salaried locum on a contract of employment goes through PAYE like any other employee. Our locum IR35 guide explains who decides status."
+- question: Does a GP practice run partners through payroll?
+  answer: 'No. GP partners are self-employed and taxed on their profit share, not on drawings, so they sit outside PAYE entirely. The partnership files an SA800 and each partner''s share flows to the partnership pages of their own Self Assessment return with Class 4 NIC. Payroll covers your employed staff: salaried GPs, practice nurses, healthcare assistants, reception and management. See our GP partnership tax guide for how partner profit and drawings are handled.'
+- question: How does NHS pension fit with practice payroll?
+  answer: Salaried GPs and most employed practice staff are active members of the NHS Pension Scheme (2015 CARE section, 1/54th accrual). Employee contributions are tiered by pensionable pay and the employer contribution is set centrally, deducted through payroll and reported to PCSE. Staff who are not eligible for or have opted out of the NHS scheme must instead be assessed for workplace pension auto-enrolment. Payroll has to handle both correctly so nobody is double-enrolled or missed.
+- question: Do GP practices still have to run auto-enrolment if staff are in the NHS pension?
+  answer: Yes, for anyone not in the NHS scheme. The NHS Pension Scheme is a qualifying scheme for auto-enrolment, so members already satisfy the duty. But staff who are ineligible for the NHS scheme, or who opt out of it, must be assessed for a separate workplace pension. Auto-enrolment minimums are 8% of qualifying earnings in total (at least 3% from the employer), on earnings between £6,240 and £50,270 a year (2026/27).
+- question: How much employer National Insurance does a GP practice pay on staff?
+  answer: Employer (secondary Class 1) NIC is 15% on earnings above the £5,000 secondary threshold for 2026/27. The Employment Allowance of £10,500 can reduce a practice's employer NIC bill, and most GP partnerships qualify because they employ several people (it is not available where the only employee is a single company director, which is rarely the position for a practice).
+- question: What are the penalties if a GP practice files RTI late?
+  answer: 'HMRC charges a monthly late-filing penalty based on the number of employees in the PAYE scheme: £100 for 1 to 9 employees, £200 for 10 to 49, £300 for 50 to 249 and £400 for 250 or more, for each month a Full Payment Submission is late (one unpenalised late filing is allowed per tax year). Most GP practices fall in the £100 to £300 bands. Interest and further charges can apply to late-paid PAYE and NIC.'
+- question: How are locum GPs treated in practice payroll?
+  answer: It depends on the engagement. A freelance locum trading as a sole trader is paid gross and is not on your payroll, but you should keep evidence of their self-employed status. A locum working through a limited company is within the off-payroll (IR35) framework, and because a GP partnership is usually a small employer the company itself decides its IR35 status. A genuinely salaried locum on a contract of employment goes through PAYE like any other employee. Our locum IR35 guide explains who decides status.
+metaTitle_prev: GP Practice Payroll Services | PAYE, RTI & NHS Pension UK
+metaDescription_prev: 'GP practice payroll done right: PAYE and RTI for practice staff, auto-enrolment alongside the NHS pension, and employer NIC at 15% above the £5,000 threshold (2026/27).'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Running payroll for a GP practice is not the same as running payroll for a typical small business. You are juggling PAYE and Real Time Information for practice staff, the NHS Pension Scheme alongside separate workplace pension auto-enrolment, employer National Insurance, and a workforce that mixes employees, self-employed partners and locums who each sit in a different tax box. This guide sets out what GP practice payroll actually involves in 2026/27 and where the common mistakes are.</p>
 
 <p>If you want the wider picture of practice finances rather than payroll specifically, start with our <a href="/blog/gp-accounting-guide">GP accounting guide</a>, then come back here for the payroll detail.</p>

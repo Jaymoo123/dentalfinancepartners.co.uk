@@ -1,32 +1,35 @@
 ---
-title: "GP Tax Deductions Complete List 2026: What You Can and Cannot Claim"
-slug: "gp-tax-deductions-complete-list-2026"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "GP Tax & Accounts"
-metaTitle: "GP Tax Deductions 2026/27: Full List of Allowable Claims"
-metaDescription: "GMC fees, indemnity, CPD, mileage, home office. The complete list of allowable tax deductions for GP partners, salaried GPs and locums in 2026/27."
-altText: "UK GP reviewing tax deduction paperwork and receipts for 2026 tax return"
-image: ""
-h1: "GP Tax Deductions Complete List 2026: What You Can and Cannot Claim"
-summary: "Comprehensive breakdown of allowable tax deductions for GPs in 2026/27, covering professional fees, indemnity, CPD, mileage, home office and equipment, with notes for partners, salaried GPs and locums."
-schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-tax-deductions-complete-list-2026"
+title: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
+slug: gp-tax-deductions-complete-list-2026
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: GP Tax & Accounts
+metaTitle: 'GP Tax Deductions 2026/27: GMC Fee, Indemnity, Mileage'
+metaDescription: 'Claim every allowable GP expense for 2026/27: GMC fee, indemnity, CPD, home office and mileage at 55p for the first 10,000 miles. Cut your tax bill.'
+altText: UK GP reviewing tax deduction paperwork and receipts for 2026 tax return
+image: ''
+h1: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
+summary: Comprehensive breakdown of allowable tax deductions for GPs in 2026/27, covering professional fees, indemnity, CPD, mileage, home office and equipment, with notes for partners, salaried GPs and locums.
+schema: ''
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-tax-deductions-complete-list-2026
 faqs:
-  - question: "How much can I claim for using my car for GP home visits in 2026/27?"
-    answer: "For 2026/27, HMRC's approved mileage rate is 55p per mile for the first 10,000 business miles in the tax year, then 25p per mile thereafter (the first-10,000 rate rose from 45p to 55p from 6 April 2026). This covers home visits, travel between practice sites and journeys to hospital clinics. You cannot claim for ordinary commuting from home to your regular surgery. Keep a mileage log showing the date, destination, distance and business purpose of every trip."
-  - question: "Can I claim tax relief on my GMC registration and medical indemnity fees?"
-    answer: "Yes. The GMC annual retention fee is tax deductible, as are your medical defence subscriptions (MDU, MPS or MDDUS), BMA membership and Royal College or specialty fees that appear on HMRC's approved List 3. Restoration fees and fitness-to-practise penalty fees are not deductible. Note that since 1 April 2019 NHS GP clinical negligence in England is covered by the state-backed Clinical Negligence Scheme for General Practice, so your own paid indemnity is now mainly for private, non-clinical and regulatory cover."
-  - question: "What can GP partners claim that salaried GPs cannot?"
-    answer: "GP partners are self-employed and claim a wide range of practice costs through the partnership, including premises, staff wages, equipment, accountancy and business travel, with each partner taxed on their profit share. Salaried GPs are employees taxed under PAYE and can only claim a narrow set of personal professional expenses (GMC fee, indemnity, List 3 subscriptions, relevant CPD and qualifying business travel beyond ordinary commuting) where the cost is incurred wholly, exclusively and necessarily in performing the job and is not reimbursed."
-  - question: "Do self-employed GPs and locums still pay Class 2 National Insurance?"
-    answer: "From 6 April 2024 Class 2 National Insurance is no longer a required payment. Self-employed GPs and locums with profits at or above the Small Profits Threshold are treated as having paid it and keep their state-pension entitlement, so there is no weekly Class 2 charge to budget for. Class 4 National Insurance applies at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27."
-  - question: "Can GPs claim for working from home?"
-    answer: "Yes, where you genuinely carry out work at home (admin, on-call triage, CPD or remote consulting). You can use HMRC's simplified flat rate or apportion actual household running costs by the proportion of your home and time used for work. Salaried GPs face tighter rules and should check whether the employer reimburses or provides facilities. Our home office guide sets out both methods in detail."
-  - question: "Can I claim for stethoscopes, instruments and other equipment?"
-    answer: "Yes. Clinical instruments and equipment you buy for your work (diagnostic kit, IT, consulting-room furniture) are claimed through capital allowances rather than as a running cost. The Annual Investment Allowance gives 100% relief on up to £1,000,000 of qualifying plant and machinery each year, which comfortably covers normal equipment spend. Cars are excluded from the Annual Investment Allowance and are handled under separate rules."
+- question: How much can I claim for using my car for GP home visits in 2026/27?
+  answer: For 2026/27, HMRC's approved mileage rate is 55p per mile for the first 10,000 business miles in the tax year, then 25p per mile thereafter (the first-10,000 rate rose from 45p to 55p from 6 April 2026). This covers home visits, travel between practice sites and journeys to hospital clinics. You cannot claim for ordinary commuting from home to your regular surgery. Keep a mileage log showing the date, destination, distance and business purpose of every trip.
+- question: Can I claim tax relief on my GMC registration and medical indemnity fees?
+  answer: Yes. The GMC annual retention fee is tax deductible, as are your medical defence subscriptions (MDU, MPS or MDDUS), BMA membership and Royal College or specialty fees that appear on HMRC's approved List 3. Restoration fees and fitness-to-practise penalty fees are not deductible. Note that since 1 April 2019 NHS GP clinical negligence in England is covered by the state-backed Clinical Negligence Scheme for General Practice, so your own paid indemnity is now mainly for private, non-clinical and regulatory cover.
+- question: What can GP partners claim that salaried GPs cannot?
+  answer: GP partners are self-employed and claim a wide range of practice costs through the partnership, including premises, staff wages, equipment, accountancy and business travel, with each partner taxed on their profit share. Salaried GPs are employees taxed under PAYE and can only claim a narrow set of personal professional expenses (GMC fee, indemnity, List 3 subscriptions, relevant CPD and qualifying business travel beyond ordinary commuting) where the cost is incurred wholly, exclusively and necessarily in performing the job and is not reimbursed.
+- question: Do self-employed GPs and locums still pay Class 2 National Insurance?
+  answer: From 6 April 2024 Class 2 National Insurance is no longer a required payment. Self-employed GPs and locums with profits at or above the Small Profits Threshold are treated as having paid it and keep their state-pension entitlement, so there is no weekly Class 2 charge to budget for. Class 4 National Insurance applies at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27.
+- question: Can GPs claim for working from home?
+  answer: Yes, where you genuinely carry out work at home (admin, on-call triage, CPD or remote consulting). You can use HMRC's simplified flat rate or apportion actual household running costs by the proportion of your home and time used for work. Salaried GPs face tighter rules and should check whether the employer reimburses or provides facilities. Our home office guide sets out both methods in detail.
+- question: Can I claim for stethoscopes, instruments and other equipment?
+  answer: Yes. Clinical instruments and equipment you buy for your work (diagnostic kit, IT, consulting-room furniture) are claimed through capital allowances rather than as a running cost. The Annual Investment Allowance gives 100% relief on up to £1,000,000 of qualifying plant and machinery each year, which comfortably covers normal equipment spend. Cars are excluded from the Annual Investment Allowance and are handled under separate rules.
+metaTitle_prev: 'GP Tax Deductions 2026/27: Full List of Allowable Claims'
+metaDescription_prev: GMC fees, indemnity, CPD, mileage, home office. The complete list of allowable tax deductions for GP partners, salaried GPs and locums in 2026/27.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Knowing exactly what you can claim is one of the simplest ways to bring down your tax bill as a doctor. This <strong>GP tax deductions complete list for 2026/27</strong> sets out every expense you can legitimately claim against your medical income, whether you are a GP partner, a salaried GP or a locum, with the current rates and the rules that decide who can claim what.</p>
 
 <p>The headline test for the self-employed is that a cost must be incurred <strong>wholly and exclusively</strong> for your profession. For salaried GPs the bar is tighter: the cost must be incurred <strong>wholly, exclusively and necessarily</strong> in carrying out the duties of the employment, and must not have been reimbursed. We flag where the two diverge throughout.</p>

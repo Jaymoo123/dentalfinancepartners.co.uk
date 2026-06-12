@@ -1,32 +1,35 @@
 ---
-title: "GP VAT Registration: Complete Guide for UK Medical Practices"
-slug: "gp-vat-registration"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-vat-registration"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "GP Practice Management"
-metaTitle: "GP VAT Registration 2026/27: Threshold & Exemptions"
-metaDescription: "Is there VAT on private medical care? Mostly no. When a GP practice must register, the £90,000 threshold, NHS exemption and cosmetic carve-outs, explained."
-altText: "UK GP practice VAT registration paperwork on desk with calculator and medical stethoscope"
-image: ""
-h1: "GP VAT Registration: When and How to Register Your Medical Practice"
-summary: "When a GP practice must register for VAT, why most NHS and private medical care is exempt, the £90,000 threshold, the cosmetic and medico-legal carve-outs, and how partial exemption works for mixed-income practices."
-schema: ""
+title: 'GP VAT Registration: Complete Guide for UK Medical Practices'
+slug: gp-vat-registration
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-vat-registration
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: GP Practice Management
+metaTitle: Medical VAT Exemption and GP VAT Registration Rules
+metaDescription: Why most NHS and private medical care is VAT exempt, and when a GP practice must register once taxable turnover passes £90,000. Sort each stream.
+altText: UK GP practice VAT registration paperwork on desk with calculator and medical stethoscope
+image: ''
+h1: 'GP VAT Registration: When and How to Register Your Medical Practice'
+summary: When a GP practice must register for VAT, why most NHS and private medical care is exempt, the £90,000 threshold, the cosmetic and medico-legal carve-outs, and how partial exemption works for mixed-income practices.
+schema: ''
 faqs:
-  - question: "Does an NHS GP practice need a VAT registration number?"
-    answer: "Usually not. NHS GMS and PMS income is outside the scope of VAT, and genuine medical care by a registered practitioner is VAT exempt, so neither counts towards the registration threshold. A practice only needs to register if its taxable (non-exempt) turnover, for example purely cosmetic work, medico-legal reports or some administrative and occupational-health services, exceeds £90,000 in a rolling 12-month period. Many wholly NHS or wholly clinical practices never reach that point and so never need a VAT number."
-  - question: "Is there VAT on private medical care?"
-    answer: "Generally no. Private medical care is exempt from VAT in the same way as NHS care, under VATA 1994 Schedule 9 Group 7, provided the principal purpose of the service is the protection, maintenance or restoration of the patient's health and it falls within the doctor's registered field. So a private consultation, diagnosis or treatment is normally exempt, not standard-rated. The exception is work with no therapeutic purpose, such as purely cosmetic procedures or a report written for a third party to make a decision."
-  - question: "When must a GP practice register for VAT?"
-    answer: "A practice must register when its taxable (non-exempt) turnover exceeds the £90,000 threshold (from 1 April 2024) over any rolling 12-month period, or when it expects to exceed £90,000 in the next 30 days alone. Exempt medical care and outside-the-scope NHS income are excluded from that test. You must register within 30 days of the end of the month in which you crossed the threshold."
-  - question: "Is NHS GP income VATable, and what about subscriptions, room hire and occupational health?"
-    answer: "NHS GMS and PMS funding (Global Sum, QOF and enhanced services) is outside the scope of VAT, so it is never VATable and never counts towards the threshold. Other income is judged on its nature: room hire is usually exempt as a licence to occupy land (though an option to tax can change that), training or subscription income with no care element can be standard-rated, and occupational-health work is mixed, the clinical care element can be exempt while reports and certification for an employer's decision are standard-rated."
-  - question: "Is cosmetic work VATable for a doctor?"
-    answer: "It depends on purpose. A cosmetic or aesthetic procedure carried out purely for appearance, with no therapeutic purpose, is standard-rated at 20%. The same procedure carried out to protect, maintain or restore health (for example reconstruction after illness or injury) can be exempt. HMRC looks at the principal purpose of each supply, so a clinic doing both must split its income and may need to register once the cosmetic element passes £90,000."
-  - question: "Can I recover VAT on practice expenses, and what is partial exemption?"
-    answer: "Only if you are VAT registered, and only on costs linked to taxable (non-exempt) supplies. A practice with both exempt and taxable income is partially exempt: VAT on costs used for exempt supplies is recoverable only if it passes the de minimis test (on average no more than £625 a month or £7,500 a year, and no more than 50% of total input VAT). Above those limits the exempt-related input VAT is not recoverable, which is why registering rarely pays for a mainly exempt practice."
+- question: Does an NHS GP practice need a VAT registration number?
+  answer: Usually not. NHS GMS and PMS income is outside the scope of VAT, and genuine medical care by a registered practitioner is VAT exempt, so neither counts towards the registration threshold. A practice only needs to register if its taxable (non-exempt) turnover, for example purely cosmetic work, medico-legal reports or some administrative and occupational-health services, exceeds £90,000 in a rolling 12-month period. Many wholly NHS or wholly clinical practices never reach that point and so never need a VAT number.
+- question: Is there VAT on private medical care?
+  answer: Generally no. Private medical care is exempt from VAT in the same way as NHS care, under VATA 1994 Schedule 9 Group 7, provided the principal purpose of the service is the protection, maintenance or restoration of the patient's health and it falls within the doctor's registered field. So a private consultation, diagnosis or treatment is normally exempt, not standard-rated. The exception is work with no therapeutic purpose, such as purely cosmetic procedures or a report written for a third party to make a decision.
+- question: When must a GP practice register for VAT?
+  answer: A practice must register when its taxable (non-exempt) turnover exceeds the £90,000 threshold (from 1 April 2024) over any rolling 12-month period, or when it expects to exceed £90,000 in the next 30 days alone. Exempt medical care and outside-the-scope NHS income are excluded from that test. You must register within 30 days of the end of the month in which you crossed the threshold.
+- question: Is NHS GP income VATable, and what about subscriptions, room hire and occupational health?
+  answer: 'NHS GMS and PMS funding (Global Sum, QOF and enhanced services) is outside the scope of VAT, so it is never VATable and never counts towards the threshold. Other income is judged on its nature: room hire is usually exempt as a licence to occupy land (though an option to tax can change that), training or subscription income with no care element can be standard-rated, and occupational-health work is mixed, the clinical care element can be exempt while reports and certification for an employer''s decision are standard-rated.'
+- question: Is cosmetic work VATable for a doctor?
+  answer: It depends on purpose. A cosmetic or aesthetic procedure carried out purely for appearance, with no therapeutic purpose, is standard-rated at 20%. The same procedure carried out to protect, maintain or restore health (for example reconstruction after illness or injury) can be exempt. HMRC looks at the principal purpose of each supply, so a clinic doing both must split its income and may need to register once the cosmetic element passes £90,000.
+- question: Can I recover VAT on practice expenses, and what is partial exemption?
+  answer: 'Only if you are VAT registered, and only on costs linked to taxable (non-exempt) supplies. A practice with both exempt and taxable income is partially exempt: VAT on costs used for exempt supplies is recoverable only if it passes the de minimis test (on average no more than £625 a month or £7,500 a year, and no more than 50% of total input VAT). Above those limits the exempt-related input VAT is not recoverable, which is why registering rarely pays for a mainly exempt practice.'
+metaTitle_prev: 'GP VAT Registration 2026/27: Threshold & Exemptions'
+metaDescription_prev: Is there VAT on private medical care? Mostly no. When a GP practice must register, the £90,000 threshold, NHS exemption and cosmetic carve-outs, explained.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>For most GP practices the honest answer is reassuring: <strong>genuine medical care is exempt from VAT, and NHS GMS or PMS income is outside the scope of VAT altogether</strong>, so neither counts towards the registration threshold. A practice only has to think about registering when its <strong>taxable (non-exempt) turnover</strong>, things like purely cosmetic work, medico-legal reports, or some administrative and occupational-health services, climbs past <strong>£90,000</strong> in a rolling 12-month period. Many wholly NHS or wholly clinical practices never get close.</p>
 
 <p>The complications come from mixed income. A practice that blends NHS funding, private clinical care, cosmetic treatments, room hire and occupational-health contracts has to sort each income stream into the right VAT box, and only one of those boxes (taxable supplies) moves you towards registration. This guide explains where the lines fall, when registration is genuinely triggered, and how partial exemption affects what you can recover. It is general information, not advice for your specific practice.</p>

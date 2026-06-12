@@ -1,32 +1,35 @@
 ---
-title: "Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process"
-slug: "locum-doctor-self-assessment-filing-guide"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "Locum Tax"
-metaTitle: "Locum Doctor Self Assessment 2026/27 | Step-by-Step Filing"
-metaDescription: "How a locum doctor files self assessment in 2026/27: SA103, deadlines, payments on account and MTD from April 2026. Step-by-step for UK locum GPs and consultants."
-altText: "UK locum doctor reviewing self assessment tax forms and documents on desk"
-image: ""
-h1: "Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process"
-summary: "Step-by-step guide to filing self assessment as a locum doctor in 2026/27. Covers the SA103 self-employment pages, the 31 January deadline, payments on account, Class 4 NIC at 6% and Making Tax Digital from April 2026."
-schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-self-assessment-filing-guide"
+title: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
+slug: locum-doctor-self-assessment-filing-guide
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: Locum Tax
+metaTitle: 'Locum Doctor Self Assessment: Step-by-Step Filing UK'
+metaDescription: 'File your locum doctor self assessment right: the SA103 pages, the 31 January deadline, payments on account and MTD from April 2026. Beat the penalty.'
+altText: UK locum doctor reviewing self assessment tax forms and documents on desk
+image: ''
+h1: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
+summary: Step-by-step guide to filing self assessment as a locum doctor in 2026/27. Covers the SA103 self-employment pages, the 31 January deadline, payments on account, Class 4 NIC at 6% and Making Tax Digital from April 2026.
+schema: ''
+canonical: https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-self-assessment-filing-guide
 faqs:
-  - question: "When is the self assessment deadline for a locum doctor in 2026/27?"
-    answer: "If you file online, your return for the 2025/26 tax year (6 April 2025 to 5 April 2026) is due by 31 January 2027, and any tax owed is also due that day. Paper returns have an earlier deadline of 31 October 2026. If you also make payments on account, the second instalment falls on 31 July. To register for the first time you must tell HMRC by 5 October following the end of the tax year you need to report."
-  - question: "Which self assessment pages does a locum doctor complete?"
-    answer: "A freelance locum is normally a sole trader, so you complete the main SA100 return plus the self-employment pages (SA103S short version, or SA103F if turnover is higher or accounts are more complex). You report your locum income and allowable expenses there. Add the employment pages (SA102) for any salaried or PAYE sessions, and other pages for rental income, savings or dividends. A locum trading through a personal service company reports differently, because the company files its own accounts and you take salary and dividends from it."
-  - question: "Do I have to make payments on account, and how do they work?"
-    answer: "If your self assessment bill for a year is more than £1,000, and less than 80% of your tax was collected at source, HMRC asks for payments on account towards the next year. Each instalment is half of the current year's liability, paid on 31 January and 31 July. They are advance payments, not extra tax, and are reconciled against your actual bill when you file. You can apply to reduce them if your income has genuinely fallen, but underestimating can trigger interest."
-  - question: "Does Making Tax Digital apply to locum doctors from April 2026?"
-    answer: "Making Tax Digital for Income Tax began on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028. Qualifying income is gross trading plus property income, tested on your prior-year return. Most full-time locums exceed £50,000, so they keep digital records and send quarterly updates from 2026/27. Limited companies are outside this regime, and general partnerships are deferred with no confirmed date."
-  - question: "How does IR35 affect a locum doctor's self assessment?"
-    answer: "IR35 (the off-payroll rules) only applies if you work through a personal service company. A sole-trader locum has no intermediary, so IR35 does not apply and status is judged on the usual employed-versus-self-employed factors. If you do use a company, the hirer normally decides your status: an NHS Trust or other public body decides for its engagements, and so does a medium or large private hospital, while a small private client leaves the decision with your company. IR35 has not been abolished, so check the determination for each contract."
-  - question: "What is the late filing penalty if I miss the locum self assessment deadline?"
-    answer: "Missing the online deadline triggers an automatic £100 penalty even if you owe no tax. After three months HMRC can add £10 a day, with further penalties at six and twelve months, plus interest and late-payment penalties on any unpaid tax. Filing one day late costs the same £100 as filing two months late, so submit early and pay what you owe by 31 January."
+- question: When is the self assessment deadline for a locum doctor in 2026/27?
+  answer: If you file online, your return for the 2025/26 tax year (6 April 2025 to 5 April 2026) is due by 31 January 2027, and any tax owed is also due that day. Paper returns have an earlier deadline of 31 October 2026. If you also make payments on account, the second instalment falls on 31 July. To register for the first time you must tell HMRC by 5 October following the end of the tax year you need to report.
+- question: Which self assessment pages does a locum doctor complete?
+  answer: A freelance locum is normally a sole trader, so you complete the main SA100 return plus the self-employment pages (SA103S short version, or SA103F if turnover is higher or accounts are more complex). You report your locum income and allowable expenses there. Add the employment pages (SA102) for any salaried or PAYE sessions, and other pages for rental income, savings or dividends. A locum trading through a personal service company reports differently, because the company files its own accounts and you take salary and dividends from it.
+- question: Do I have to make payments on account, and how do they work?
+  answer: If your self assessment bill for a year is more than £1,000, and less than 80% of your tax was collected at source, HMRC asks for payments on account towards the next year. Each instalment is half of the current year's liability, paid on 31 January and 31 July. They are advance payments, not extra tax, and are reconciled against your actual bill when you file. You can apply to reduce them if your income has genuinely fallen, but underestimating can trigger interest.
+- question: Does Making Tax Digital apply to locum doctors from April 2026?
+  answer: Making Tax Digital for Income Tax began on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028. Qualifying income is gross trading plus property income, tested on your prior-year return. Most full-time locums exceed £50,000, so they keep digital records and send quarterly updates from 2026/27. Limited companies are outside this regime, and general partnerships are deferred with no confirmed date.
+- question: How does IR35 affect a locum doctor's self assessment?
+  answer: 'IR35 (the off-payroll rules) only applies if you work through a personal service company. A sole-trader locum has no intermediary, so IR35 does not apply and status is judged on the usual employed-versus-self-employed factors. If you do use a company, the hirer normally decides your status: an NHS Trust or other public body decides for its engagements, and so does a medium or large private hospital, while a small private client leaves the decision with your company. IR35 has not been abolished, so check the determination for each contract.'
+- question: What is the late filing penalty if I miss the locum self assessment deadline?
+  answer: Missing the online deadline triggers an automatic £100 penalty even if you owe no tax. After three months HMRC can add £10 a day, with further penalties at six and twelve months, plus interest and late-payment penalties on any unpaid tax. Filing one day late costs the same £100 as filing two months late, so submit early and pay what you owe by 31 January.
+metaTitle_prev: Locum Doctor Self Assessment 2026/27 | Step-by-Step Filing
+metaDescription_prev: 'How a locum doctor files self assessment in 2026/27: SA103, deadlines, payments on account and MTD from April 2026. Step-by-step for UK locum GPs and consultants.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Filing self assessment as a locum doctor is its own annual job, separate from simply earning the money. This <strong>locum doctor self assessment filing guide</strong> walks through the practical mechanics for 2026/27, from registering with HMRC and gathering records to completing the right pages, working out payments on account, and getting ready for Making Tax Digital. It is general information for UK locum GPs and consultants, not personal tax advice.</p>
 
 <p>If you want the wider picture of how locum tax works, read our <a href="/blog/locum-doctor-tax-complete-guide">locum doctor tax complete guide</a> first. This page is the step-by-step filing companion: what to put where, by when. For the detail of what you can deduct, see the <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum doctor expenses guide</a> rather than duplicating it here.</p>

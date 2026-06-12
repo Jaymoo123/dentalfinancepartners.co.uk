@@ -1,32 +1,35 @@
 ---
-title: "GP Accounting: Essential Guide for UK General Practitioners"
-slug: "gp-accounting-guide"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "GP Practice Management"
-metaTitle: "GP Accounting Guide | Medical Practice Tax & Finance"
-metaDescription: "How GP practice accounts work: the SA800 partnership, profit share vs drawings, NHS income (Global Sum, QOF, PCN), pensions, expenses, MTD and year-end tax."
-altText: "UK GP reviewing financial documents and accounting records at medical practice"
-image: ""
-h1: "GP Accounting: Complete Guide for UK General Practitioners"
-summary: "A complete GP accounting guide covering the SA800 partnership structure, drawings versus profit share, NHS income streams, NHS pension on the accounts, expenses, year-end tax and MTD for UK general practitioners."
-schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accounting-guide"
+title: 'GP Accounting: Essential Guide for UK General Practitioners'
+slug: gp-accounting-guide
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: GP Practice Management
+metaTitle: 'GP Practice Accountant Guide: SA800, NHS Income, Tax'
+metaDescription: 'How GP practice accounts work: the SA800 partnership return, profit share vs drawings, NHS income and Class 4 NIC at 6%. Get the structure right.'
+altText: UK GP reviewing financial documents and accounting records at medical practice
+image: ''
+h1: 'GP Accounting: Complete Guide for UK General Practitioners'
+summary: A complete GP accounting guide covering the SA800 partnership structure, drawings versus profit share, NHS income streams, NHS pension on the accounts, expenses, year-end tax and MTD for UK general practitioners.
+schema: ''
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-accounting-guide
 faqs:
-  - question: "Do GP partnerships file company accounts?"
-    answer: "No. A GP partnership is not a limited company, so it does not file accounts at Companies House. The practice prepares annual partnership accounts, then files a partnership return (SA800) with HMRC showing total practice income, allowable expenses and how the profit is split. Each partner reports their own share on the partnership pages (SA104) of their personal Self Assessment return and pays income tax and Class 4 National Insurance on it."
-  - question: "What is the difference between a GP partner's drawings and their profit share?"
-    answer: "Drawings are the monthly amounts a partner physically takes from the practice bank account during the year. Profit share is the partner's actual slice of the practice profit for the year, fixed at the year end under the partnership agreement. A GP partner is taxed on their profit share, not on their drawings. Drawings are simply payments on account against the eventual share, trued up once the accounts are finalised."
-  - question: "How is NHS income recognised in GP practice accounts?"
-    answer: "Core funding comes through the GMS, PMS or APMS contract, principally the Global Sum (a per-patient payment weighted by the Carr-Hill formula), plus QOF (Quality and Outcomes Framework) achievement, enhanced services and PCN or Network Contract DES funding such as ARRS. Dispensing practices also record dispensing income. There is no single national per-patient figure: the values are weighted and uplifted each year, which is why accruals at the year end matter."
-  - question: "How does the NHS pension appear in GP accounts?"
-    answer: "Employer and employee superannuation deductions are taken from practice income through PCSE before the practice nets down to distributable profit, so pension is woven through the accounts rather than sitting only on a payslip. Type 1 partners certify their pensionable profit each year on the Annual Certificate of Pensionable Profits. High practice profits can push pensionable income into annual allowance territory, so the accounts feed directly into pension planning."
-  - question: "Does a GP partnership have to follow Making Tax Digital from April 2026?"
-    answer: "Not at partnership level. General partnerships are deferred from Making Tax Digital for Income Tax with no confirmed start date, so a GP partnership is not mandated in April 2026. However, an individual partner with other self-employed income (for example private or locum work) above the qualifying income thresholds can be brought in on their personal return: £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028."
-  - question: "When should a GP practice use a specialist medical accountant?"
-    answer: "Whenever NHS-specific machinery is involved, which for most practices is all the time. A specialist medical accountant understands GMS, PMS and APMS income, profit allocation between partners, superannuation and the Type 1 and Type 2 certificates, the annual allowance taper that affects high-earning GPs, and premises arrangements such as notional rent. These areas are where a general high-street accountant most often gets a GP practice wrong."
+- question: Do GP partnerships file company accounts?
+  answer: No. A GP partnership is not a limited company, so it does not file accounts at Companies House. The practice prepares annual partnership accounts, then files a partnership return (SA800) with HMRC showing total practice income, allowable expenses and how the profit is split. Each partner reports their own share on the partnership pages (SA104) of their personal Self Assessment return and pays income tax and Class 4 National Insurance on it.
+- question: What is the difference between a GP partner's drawings and their profit share?
+  answer: Drawings are the monthly amounts a partner physically takes from the practice bank account during the year. Profit share is the partner's actual slice of the practice profit for the year, fixed at the year end under the partnership agreement. A GP partner is taxed on their profit share, not on their drawings. Drawings are simply payments on account against the eventual share, trued up once the accounts are finalised.
+- question: How is NHS income recognised in GP practice accounts?
+  answer: 'Core funding comes through the GMS, PMS or APMS contract, principally the Global Sum (a per-patient payment weighted by the Carr-Hill formula), plus QOF (Quality and Outcomes Framework) achievement, enhanced services and PCN or Network Contract DES funding such as ARRS. Dispensing practices also record dispensing income. There is no single national per-patient figure: the values are weighted and uplifted each year, which is why accruals at the year end matter.'
+- question: How does the NHS pension appear in GP accounts?
+  answer: Employer and employee superannuation deductions are taken from practice income through PCSE before the practice nets down to distributable profit, so pension is woven through the accounts rather than sitting only on a payslip. Type 1 partners certify their pensionable profit each year on the Annual Certificate of Pensionable Profits. High practice profits can push pensionable income into annual allowance territory, so the accounts feed directly into pension planning.
+- question: Does a GP partnership have to follow Making Tax Digital from April 2026?
+  answer: 'Not at partnership level. General partnerships are deferred from Making Tax Digital for Income Tax with no confirmed start date, so a GP partnership is not mandated in April 2026. However, an individual partner with other self-employed income (for example private or locum work) above the qualifying income thresholds can be brought in on their personal return: £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028.'
+- question: When should a GP practice use a specialist medical accountant?
+  answer: Whenever NHS-specific machinery is involved, which for most practices is all the time. A specialist medical accountant understands GMS, PMS and APMS income, profit allocation between partners, superannuation and the Type 1 and Type 2 certificates, the annual allowance taper that affects high-earning GPs, and premises arrangements such as notional rent. These areas are where a general high-street accountant most often gets a GP practice wrong.
+metaTitle_prev: GP Accounting Guide | Medical Practice Tax & Finance
+metaDescription_prev: 'How GP practice accounts work: the SA800 partnership, profit share vs drawings, NHS income (Global Sum, QOF, PCN), pensions, expenses, MTD and year-end tax.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>GP practice accounting sits apart from ordinary small-business bookkeeping. The income arrives through NHS contracts that no other sector uses, the profit is split between partners under an agreement rather than paid as wages, and the NHS pension is woven through the accounts before anyone takes a penny home. Get the structure right and the tax, the pension and the partner relationships all run smoothly. Get it wrong and partners pay tax on the wrong figure, miss pension deadlines or fall out over who earned what.</p>
 
 <p>This guide explains how GP practice accounts actually work: the partnership and SA800 structure, the difference between drawings and profit share, the NHS income streams, how superannuation lands on the accounts, allowable expenses, the year-end and tax cycle, Making Tax Digital, and when a specialist medical accountant earns their place. It is general information, not personal tax advice.</p>

@@ -1,32 +1,35 @@
 ---
-title: "NHS Pension Annual Allowance Complete Guide for Medical Professionals"
-slug: "nhs-pension-annual-allowance-complete-guide"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-annual-allowance-complete-guide"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "NHS Pension Planning"
-metaTitle: "NHS Pension Annual Allowance 2025/26: Limits & Tax"
-metaDescription: "The £60,000 annual allowance tapers to £10,000 for high earners. How NHS pension growth (input amount) is measured, the taper, carry forward and Scheme Pays."
-altText: "UK medical professional reviewing NHS pension annual allowance documentation"
-image: ""
-h1: "NHS Pension Annual Allowance: Complete Guide for UK Medical Professionals"
-summary: "The NHS pension annual allowance limits how much your pension can grow tax free each year. For a defined benefit scheme the test is the growth in your benefits (the pension input amount), not the contributions you pay, which is why high earning doctors are caught even though they never chose to over-contribute."
-schema: ""
+title: NHS Pension Annual Allowance Complete Guide for Medical Professionals
+slug: nhs-pension-annual-allowance-complete-guide
+canonical: https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-annual-allowance-complete-guide
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: NHS Pension Planning
+metaTitle: 'NHS Pension Annual Allowance: How to Work Yours Out'
+metaDescription: 'Work out your NHS pension annual allowance: the £60,000 limit, how defined-benefit growth is measured, the taper and Scheme Pays. Plan, do not panic.'
+altText: UK medical professional reviewing NHS pension annual allowance documentation
+image: ''
+h1: 'NHS Pension Annual Allowance: Complete Guide for UK Medical Professionals'
+summary: The NHS pension annual allowance limits how much your pension can grow tax free each year. For a defined benefit scheme the test is the growth in your benefits (the pension input amount), not the contributions you pay, which is why high earning doctors are caught even though they never chose to over-contribute.
+schema: ''
 faqs:
-  - question: "What is the NHS pension annual allowance for 2025/26?"
-    answer: "The standard annual allowance is £60,000 for 2025/26. It tapers for high earners where threshold income is over £200,000 and adjusted income is over £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. The money purchase annual allowance, which applies if you have flexibly accessed a defined contribution pot, is £10,000."
-  - question: "How do I work out my NHS pension annual allowance usage?"
-    answer: "For the NHS defined benefit scheme you measure the pension input amount, which is the growth in your benefits over the year, not the contributions you pay. The closing value of your annual pension is multiplied by 16 (plus any separate lump sum for 1995 section service multiplied by 1), the opening value is uplifted by inflation, and the difference is your input amount. NHS Business Services Authority issues a pension savings statement showing the figure, though it usually arrives well into the following tax year."
-  - question: "What happens if I exceed the NHS pension annual allowance?"
-    answer: "The excess is added to your taxable income and charged at your marginal rate (20%, 40% or 45%), after any carry forward of unused allowance from the previous three tax years is applied. You either pay the charge through self assessment or, in many cases, ask the scheme to pay it for you under Scheme Pays in exchange for a permanent reduction in your pension."
-  - question: "Can I carry forward unused NHS pension annual allowance?"
-    answer: "Yes. You use the current year's allowance first, then unused allowance from the previous three tax years, oldest year first. You must have been a member of a registered pension scheme in each year you carry forward from. Because NHS pension growth swings with pay rises and promotions, carry forward often absorbs a one off spike entirely."
-  - question: "Has the lifetime allowance been abolished?"
-    answer: "Yes. The lifetime allowance was abolished from 6 April 2024 and replaced by two new limits: the Lump Sum Allowance of £268,275, which caps the tax free pension lump sums you can take, and the Lump Sum and Death Benefit Allowance of £1,073,100. There is no longer a lifetime allowance charge, but the annual allowance still applies every year."
-  - question: "Do high earning doctors have to pay annual allowance charges out of pocket?"
-    answer: "Not necessarily. Where the charge exceeds £2,000 and the growth in your NHS benefits alone exceeds the standard £60,000 allowance, you can require the scheme to pay the charge under mandatory Scheme Pays. A charge driven only by the taper below £60,000 can still be settled through voluntary Scheme Pays if the scheme offers it. Either way the charge is met from your future pension rather than your current cash."
+- question: What is the NHS pension annual allowance for 2025/26?
+  answer: The standard annual allowance is £60,000 for 2025/26. It tapers for high earners where threshold income is over £200,000 and adjusted income is over £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. The money purchase annual allowance, which applies if you have flexibly accessed a defined contribution pot, is £10,000.
+- question: How do I work out my NHS pension annual allowance usage?
+  answer: For the NHS defined benefit scheme you measure the pension input amount, which is the growth in your benefits over the year, not the contributions you pay. The closing value of your annual pension is multiplied by 16 (plus any separate lump sum for 1995 section service multiplied by 1), the opening value is uplifted by inflation, and the difference is your input amount. NHS Business Services Authority issues a pension savings statement showing the figure, though it usually arrives well into the following tax year.
+- question: What happens if I exceed the NHS pension annual allowance?
+  answer: The excess is added to your taxable income and charged at your marginal rate (20%, 40% or 45%), after any carry forward of unused allowance from the previous three tax years is applied. You either pay the charge through self assessment or, in many cases, ask the scheme to pay it for you under Scheme Pays in exchange for a permanent reduction in your pension.
+- question: Can I carry forward unused NHS pension annual allowance?
+  answer: Yes. You use the current year's allowance first, then unused allowance from the previous three tax years, oldest year first. You must have been a member of a registered pension scheme in each year you carry forward from. Because NHS pension growth swings with pay rises and promotions, carry forward often absorbs a one off spike entirely.
+- question: Has the lifetime allowance been abolished?
+  answer: 'Yes. The lifetime allowance was abolished from 6 April 2024 and replaced by two new limits: the Lump Sum Allowance of £268,275, which caps the tax free pension lump sums you can take, and the Lump Sum and Death Benefit Allowance of £1,073,100. There is no longer a lifetime allowance charge, but the annual allowance still applies every year.'
+- question: Do high earning doctors have to pay annual allowance charges out of pocket?
+  answer: Not necessarily. Where the charge exceeds £2,000 and the growth in your NHS benefits alone exceeds the standard £60,000 allowance, you can require the scheme to pay the charge under mandatory Scheme Pays. A charge driven only by the taper below £60,000 can still be settled through voluntary Scheme Pays if the scheme offers it. Either way the charge is met from your future pension rather than your current cash.
+metaTitle_prev: 'NHS Pension Annual Allowance 2025/26: Limits & Tax'
+metaDescription_prev: The £60,000 annual allowance tapers to £10,000 for high earners. How NHS pension growth (input amount) is measured, the taper, carry forward and Scheme Pays.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The NHS pension annual allowance is one of the most misunderstood tax rules affecting UK medical professionals, and it catches doctors who have done nothing more than work hard and get a pay rise. This <strong>NHS pension annual allowance complete guide</strong> explains what the allowance is, how the growth in a defined benefit pension is actually measured, how the taper works for high earners, and what consultants, GPs and salaried doctors can do about a charge when one arises.</p>
 
 <p>The single most important point comes first. For the NHS scheme, which is a <strong>defined benefit</strong> arrangement, the annual allowance does not test the contributions you pay. It tests the <strong>growth in the value of your benefits</strong>, known as the pension input amount. That is why a consultant who has never made a voluntary contribution can still face a five figure tax charge in a year of promotion or a large pay award.</p>

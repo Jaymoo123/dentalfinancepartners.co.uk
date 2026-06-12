@@ -1,30 +1,33 @@
 ---
-title: "NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors"
-slug: "nhs-pension-tapered-annual-allowance-calculator"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-tapered-annual-allowance-calculator"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "NHS Pension Planning"
-metaTitle: "Tapered Annual Allowance Calculator 2026/27 | NHS Pension"
-metaDescription: "Earning over £200k? Work out your tapered NHS pension allowance step by step. Threshold income, adjusted income, the £1-for-£2 taper and the £10,000 floor (2026/27)."
-altText: "NHS pension calculator showing tapered annual allowance calculations for UK medical professionals"
-image: ""
-h1: "NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors"
-summary: "How to work out your tapered NHS pension annual allowance for 2026/27. We walk through threshold income, adjusted income, the £1-for-£2 reduction and the £10,000 floor, with a worked example for high-earning doctors."
-schema: ""
+title: 'NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors'
+slug: nhs-pension-tapered-annual-allowance-calculator
+canonical: https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-tapered-annual-allowance-calculator
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: NHS Pension Planning
+metaTitle: 'NHS Tapered Annual Allowance: How to Calculate Yours'
+metaDescription: 'Work out your tapered NHS pension allowance step by step: threshold income over £200,000, adjusted income, the taper and the £10,000 floor. Avoid a charge.'
+altText: NHS pension calculator showing tapered annual allowance calculations for UK medical professionals
+image: ''
+h1: 'NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors'
+summary: How to work out your tapered NHS pension annual allowance for 2026/27. We walk through threshold income, adjusted income, the £1-for-£2 reduction and the £10,000 floor, with a worked example for high-earning doctors.
+schema: ''
 faqs:
-  - question: "How do I work out my NHS pension tapered annual allowance for 2026/27?"
-    answer: "First check the two trigger tests. Calculate your threshold income (broadly your total taxable income for 2026/27 less your own gross pension input) and your adjusted income (which adds the value of your NHS employer pension build-up). The taper bites only if threshold income is over £200,000 AND adjusted income is over £260,000. Where both are exceeded, your £60,000 annual allowance reduces by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. Below either trigger, you keep the full £60,000."
-  - question: "What income counts towards the £200,000 and £260,000 thresholds?"
-    answer: "Threshold income captures all your taxable income for the year (NHS salary or clinical excellence awards, private practice income, locum sessions, partnership profit share, rental and investment income), reduced by your own gross pension contributions. Adjusted income starts from that wider total and adds back the value of your pension build-up, including the deemed employer contribution to your NHS scheme (the employer rate is 23.7% of pensionable pay from 1 April 2024). It is the gap between the two measures that decides whether the taper applies."
-  - question: "How much can the taper reduce my annual allowance in 2026/27?"
-    answer: "The standard annual allowance is £60,000 for 2026/27. The taper removes £1 of allowance for every £2 of adjusted income above £260,000, so the allowance is fully tapered to the £10,000 floor once adjusted income reaches £360,000. No doctor is tapered below £10,000, however high their income."
-  - question: "Can I carry forward unused allowance to reduce a taper charge?"
-    answer: "Yes. You can carry forward unused annual allowance from the previous three tax years once you have used the current year first. The carried-forward amount reflects the allowance that applied in each earlier year, so if you were tapered in those years the carried-forward figure is the tapered amount, not the full £60,000. Carry forward can absorb a year of high pension input and avoid a charge entirely."
-  - question: "What happens if my pension growth still exceeds the tapered allowance?"
-    answer: "The excess is taxed at your marginal income tax rate as an annual allowance charge. For an NHS defined benefit member the charge is based on your pension input amount (the capitalised growth shown on your pension savings statement), not on cash contributions. You can often ask the scheme to settle the charge for you using Scheme Pays in return for a permanent reduction in benefits. We cover the charge and Scheme Pays in detail in the linked guides below."
+- question: How do I work out my NHS pension tapered annual allowance for 2026/27?
+  answer: First check the two trigger tests. Calculate your threshold income (broadly your total taxable income for 2026/27 less your own gross pension input) and your adjusted income (which adds the value of your NHS employer pension build-up). The taper bites only if threshold income is over £200,000 AND adjusted income is over £260,000. Where both are exceeded, your £60,000 annual allowance reduces by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. Below either trigger, you keep the full £60,000.
+- question: What income counts towards the £200,000 and £260,000 thresholds?
+  answer: Threshold income captures all your taxable income for the year (NHS salary or clinical excellence awards, private practice income, locum sessions, partnership profit share, rental and investment income), reduced by your own gross pension contributions. Adjusted income starts from that wider total and adds back the value of your pension build-up, including the deemed employer contribution to your NHS scheme (the employer rate is 23.7% of pensionable pay from 1 April 2024). It is the gap between the two measures that decides whether the taper applies.
+- question: How much can the taper reduce my annual allowance in 2026/27?
+  answer: The standard annual allowance is £60,000 for 2026/27. The taper removes £1 of allowance for every £2 of adjusted income above £260,000, so the allowance is fully tapered to the £10,000 floor once adjusted income reaches £360,000. No doctor is tapered below £10,000, however high their income.
+- question: Can I carry forward unused allowance to reduce a taper charge?
+  answer: Yes. You can carry forward unused annual allowance from the previous three tax years once you have used the current year first. The carried-forward amount reflects the allowance that applied in each earlier year, so if you were tapered in those years the carried-forward figure is the tapered amount, not the full £60,000. Carry forward can absorb a year of high pension input and avoid a charge entirely.
+- question: What happens if my pension growth still exceeds the tapered allowance?
+  answer: The excess is taxed at your marginal income tax rate as an annual allowance charge. For an NHS defined benefit member the charge is based on your pension input amount (the capitalised growth shown on your pension savings statement), not on cash contributions. You can often ask the scheme to settle the charge for you using Scheme Pays in return for a permanent reduction in benefits. We cover the charge and Scheme Pays in detail in the linked guides below.
+metaTitle_prev: Tapered Annual Allowance Calculator 2026/27 | NHS Pension
+metaDescription_prev: Earning over £200k? Work out your tapered NHS pension allowance step by step. Threshold income, adjusted income, the £1-for-£2 taper and the £10,000 floor (2026/27).
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are earning over £200,000 and want to know <strong>how to work out your tapered annual allowance</strong>, this page takes you through the calculation step by step for the <strong>2026/27</strong> tax year. The taper is the part of the NHS pension rules that reduces a high-earning doctor's annual allowance below the standard £60,000, and getting the arithmetic wrong is one of the most common causes of an unexpected tax bill for consultants, GP partners and busy locums.</p>
 
 <p>Understanding how the calculation works protects your pension growth and helps you avoid surprises from HMRC. Many doctors only discover they have exceeded their allowance when completing their tax return, often too late to use carry forward or to time income differently. This guide owns the calculation. For the wider rules on charges, Scheme Pays and how the £40,000 allowance rose to £60,000, see the linked guides below.</p>

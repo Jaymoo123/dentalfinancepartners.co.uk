@@ -1,30 +1,33 @@
 ---
-title: "GP Partnership Tax: Complete Guide for 2026/27"
-slug: "gp-partnership-tax-complete-guide"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-tax-complete-guide"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "GP Tax & Accounts"
-metaTitle: "GP Partnership Tax Guide 2026/27 | Medical Accountants UK"
-metaDescription: "How GP partnership profits are taxed in 2026/27: SA800 to SA104, profit share not drawings, Class 4 NIC at 6%, capital accounts, NHS goodwill rules and the NHS pension."
-altText: "GP partners reviewing partnership tax documents and financial statements"
-image: ""
-h1: "GP Partnership Tax: Complete Guide for 2026/27"
-summary: "GP partners are taxed on their profit share, not their drawings, through the partnership return (SA800) and the partnership pages of their personal tax return (SA104). This 2026/27 guide explains how partnership profits flow to tax, Class 4 National Insurance, allowable expenses, capital accounts, the NHS goodwill rules and how partnership profits interact with the NHS pension."
-schema: ""
+title: 'GP Partnership Tax: Complete Guide for 2026/27'
+slug: gp-partnership-tax-complete-guide
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-tax-complete-guide
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: GP Tax & Accounts
+metaTitle: 'GP Partnership Tax Guide 2026/27: Profit Share, NIC'
+metaDescription: 'How GP partnership profit is taxed in 2026/27: SA800 to SA104, taxed on profit share not drawings, Class 4 NIC at 6% over £12,570. Reserve tax early.'
+altText: GP partners reviewing partnership tax documents and financial statements
+image: ''
+h1: 'GP Partnership Tax: Complete Guide for 2026/27'
+summary: GP partners are taxed on their profit share, not their drawings, through the partnership return (SA800) and the partnership pages of their personal tax return (SA104). This 2026/27 guide explains how partnership profits flow to tax, Class 4 National Insurance, allowable expenses, capital accounts, the NHS goodwill rules and how partnership profits interact with the NHS pension.
+schema: ''
 faqs:
-  - question: "How is my GP partnership profit taxed, and is it based on drawings?"
-    answer: "You are taxed on your share of the partnership's taxable profit, not on what you draw. The partnership files a single partnership return (SA800) showing total taxable profit and how it is allocated between partners under your profit sharing agreement. Your allocated share then goes on the partnership pages (SA104) of your own self assessment return and is taxed as self-employed trading income, with Class 4 National Insurance on top. So if the partnership's taxable profit is high but you drew less in cash that year, you are still taxed on your full allocated share."
-  - question: "What National Insurance do GP partners pay in 2026/27?"
-    answer: "As self-employed individuals, GP partners pay Class 4 National Insurance on their profit share at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27 (the main rate fell from 9% to 6% on 6 April 2024). Class 2 National Insurance is no longer a required weekly payment from 6 April 2024: partners with profits at or above the Small Profits Threshold are treated as having paid it for state pension purposes, so there is no separate weekly Class 2 charge to budget for."
-  - question: "Can a GP sell the goodwill of their NHS practice when they retire?"
-    answer: "No. The sale of NHS GP goodwill has been prohibited since 1 April 2004, currently under The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251). A retiring partner cannot sell NHS goodwill or claim Business Asset Disposal Relief on it. What changes hands on entry or exit is the partner's share of tangible assets, any owned premises and the partnership capital account, plus any genuinely private (non-NHS) goodwill, which is the only goodwill a GP can sell."
-  - question: "How do partnership profits affect my NHS pension annual allowance?"
-    answer: "The standard pension annual allowance is £60,000 for 2026/27, measured for a defined-benefit scheme on the growth in your pension (the pension input amount), not contributions paid. It tapers where your threshold income exceeds £200,000 and your adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000 down to a floor of £10,000. A rising profit share can push higher-earning partners into the taper and trigger an annual allowance charge, which Scheme Pays can settle."
-  - question: "Does Making Tax Digital apply to my GP partnership from April 2026?"
-    answer: "Not at partnership level. General partnerships are deferred from Making Tax Digital for Income Tax with no confirmed start date, so a GP partnership is not mandated to keep digital records and file quarterly updates yet. Your own personal position can still be caught: if you have separate sole-trader income (for example private or locum work) with qualifying income above £50,000, you come into MTD for Income Tax from 6 April 2026, with the threshold dropping to £30,000 from April 2027 and £20,000 from April 2028."
+- question: How is my GP partnership profit taxed, and is it based on drawings?
+  answer: You are taxed on your share of the partnership's taxable profit, not on what you draw. The partnership files a single partnership return (SA800) showing total taxable profit and how it is allocated between partners under your profit sharing agreement. Your allocated share then goes on the partnership pages (SA104) of your own self assessment return and is taxed as self-employed trading income, with Class 4 National Insurance on top. So if the partnership's taxable profit is high but you drew less in cash that year, you are still taxed on your full allocated share.
+- question: What National Insurance do GP partners pay in 2026/27?
+  answer: 'As self-employed individuals, GP partners pay Class 4 National Insurance on their profit share at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27 (the main rate fell from 9% to 6% on 6 April 2024). Class 2 National Insurance is no longer a required weekly payment from 6 April 2024: partners with profits at or above the Small Profits Threshold are treated as having paid it for state pension purposes, so there is no separate weekly Class 2 charge to budget for.'
+- question: Can a GP sell the goodwill of their NHS practice when they retire?
+  answer: No. The sale of NHS GP goodwill has been prohibited since 1 April 2004, currently under The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251). A retiring partner cannot sell NHS goodwill or claim Business Asset Disposal Relief on it. What changes hands on entry or exit is the partner's share of tangible assets, any owned premises and the partnership capital account, plus any genuinely private (non-NHS) goodwill, which is the only goodwill a GP can sell.
+- question: How do partnership profits affect my NHS pension annual allowance?
+  answer: The standard pension annual allowance is £60,000 for 2026/27, measured for a defined-benefit scheme on the growth in your pension (the pension input amount), not contributions paid. It tapers where your threshold income exceeds £200,000 and your adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000 down to a floor of £10,000. A rising profit share can push higher-earning partners into the taper and trigger an annual allowance charge, which Scheme Pays can settle.
+- question: Does Making Tax Digital apply to my GP partnership from April 2026?
+  answer: 'Not at partnership level. General partnerships are deferred from Making Tax Digital for Income Tax with no confirmed start date, so a GP partnership is not mandated to keep digital records and file quarterly updates yet. Your own personal position can still be caught: if you have separate sole-trader income (for example private or locum work) with qualifying income above £50,000, you come into MTD for Income Tax from 6 April 2026, with the threshold dropping to £30,000 from April 2027 and £20,000 from April 2028.'
+metaTitle_prev: GP Partnership Tax Guide 2026/27 | Medical Accountants UK
+metaDescription_prev: 'How GP partnership profits are taxed in 2026/27: SA800 to SA104, profit share not drawings, Class 4 NIC at 6%, capital accounts, NHS goodwill rules and the NHS pension.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>GP partnership tax works very differently from a salary. As a partner you are self-employed for tax, and you are taxed on your <strong>share of the practice's taxable profit, not on your drawings</strong>. This <strong>GP partnership tax complete guide</strong> for 2026/27 explains how partnership profits flow through to tax, the returns involved (SA800 and SA104), the National Insurance position, allowable expenses, capital accounts and how it all interacts with the NHS pension.</p>
 
 <p>If you are weighing up whether to join a partnership in the first place, read our guide to the <a href="/blog/becoming-gp-partner-financial-implications">financial implications of becoming a GP partner</a>. If you want to understand how partners agree who gets what, see <a href="/blog/gp-partnership-profit-sharing-tax-planning">GP partnership profit sharing and tax planning</a>. This guide focuses on the tax mechanics that apply once you are a partner.</p>

@@ -1,30 +1,33 @@
 ---
-title: "NHS Pension for Locums: Form A and Form B Guide"
-slug: "nhs-pension-for-locums-form-a-form-b"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-for-locums-form-a-form-b"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "NHS Pension Planning"
-metaTitle: "GP Locum NHS Pension: Forms A and B Explained (2025/26)"
-metaDescription: "How freelance GP locums pension their income via Locum forms A and B through the PCSE Solo route. Deadlines, contribution tiers, and the common mistakes that lose accrual."
-altText: "UK GP locum doctor completing NHS pension Locum form A and form B on a laptop with a stethoscope nearby"
-image: ""
-h1: "NHS Pension for GP Locums: Locum Forms A and B Explained"
-summary: "Freelance GP locums build NHS pension accrual by completing Locum form A and Locum form B and paying contributions through the PCSE Solo route. This guide explains what each form does, the deadlines that protect your accrual, the contribution tiers, and the mistakes that quietly cost locums years of pension."
-schema: ""
+title: 'NHS Pension for Locums: Form A and Form B Guide'
+slug: nhs-pension-for-locums-form-a-form-b
+canonical: https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-for-locums-form-a-form-b
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: NHS Pension Planning
+metaTitle: 'UK GP Locum NHS Pension: Form A and Form B Explained'
+metaDescription: Pension your GP locum income via Locum forms A and B through PCSE Solo, building 1/54th NHS accrual a year. Miss the monthly window and that month is lost.
+altText: UK GP locum doctor completing NHS pension Locum form A and form B on a laptop with a stethoscope nearby
+image: ''
+h1: 'NHS Pension for GP Locums: Locum Forms A and B Explained'
+summary: Freelance GP locums build NHS pension accrual by completing Locum form A and Locum form B and paying contributions through the PCSE Solo route. This guide explains what each form does, the deadlines that protect your accrual, the contribution tiers, and the mistakes that quietly cost locums years of pension.
+schema: ''
 faqs:
-  - question: "What is the difference between Locum form A and Locum form B?"
-    answer: "They are not alternatives, you usually complete both. Locum form A records each individual locum session you do, the practice or board you covered, the dates and the pensionable pay. Locum form B is the monthly summary that totals your form A entries, applies your contribution tier, and is submitted with payment through the PCSE Solo route. Form A is the per-session evidence; form B is the monthly return that pays the contributions over."
-  - question: "What is the deadline for submitting GP locum pension forms?"
-    answer: "You must submit your form B and pay both your employee and the notional employer contributions to PCSE within set time limits after the month the work was done (PCSE publishes the current cut-off, broadly within around 10 weeks of the end of the month of the session). Miss the window and that period of locum income normally cannot be pensioned at all, which is the single most common way locums lose NHS accrual. Treat it as a monthly routine, not a year-end task."
-  - question: "Are GP locums eligible to pension their income in the NHS scheme?"
-    answer: "Yes, if you are a freelance or self-employed GP performing genuine NHS GMS, PMS or APMS work, are on the NHS England national Performers List and registered with the GMC, and complete the Locum A and B forms. Since 1 April 2022 all active members accrue in the 2015 CARE section at 1/54th of pensionable earnings each year. Income routed through a limited company is not NHS-pensionable, so PSC locum dividends build no NHS pension at all."
-  - question: "What contribution rate do GP locums pay in 2025/26?"
-    answer: "Member contributions are tiered by pensionable pay, with the 2025/26 tiers running from 5.2% up to 12.5% depending on your total NHS pensionable income (always confirm the current tier table on the NHSBSA website, as the bands are reviewed), plus a notional employer contribution that you also pay over through form B and reclaim from the engaging practice. Your tier is based on total pensionable earnings across all your NHS work, not each assignment in isolation, so the correct tier matters when you locum for several practices."
-  - question: "Can I pension locum work I did months or years ago?"
-    answer: "Generally no. Unlike Type 1 GP partners (Annual Certificate) and Type 2 salaried GPs (year-in-arrears self-assessment), freelance locums have no end-of-year true-up, so a missed monthly window usually cannot be reopened and that income is lost from the scheme permanently. This is why locums should run forms A and B every month rather than trying to catch up later."
+- question: What is the difference between Locum form A and Locum form B?
+  answer: They are not alternatives, you usually complete both. Locum form A records each individual locum session you do, the practice or board you covered, the dates and the pensionable pay. Locum form B is the monthly summary that totals your form A entries, applies your contribution tier, and is submitted with payment through the PCSE Solo route. Form A is the per-session evidence; form B is the monthly return that pays the contributions over.
+- question: What is the deadline for submitting GP locum pension forms?
+  answer: You must submit your form B and pay both your employee and the notional employer contributions to PCSE within set time limits after the month the work was done (PCSE publishes the current cut-off, broadly within around 10 weeks of the end of the month of the session). Miss the window and that period of locum income normally cannot be pensioned at all, which is the single most common way locums lose NHS accrual. Treat it as a monthly routine, not a year-end task.
+- question: Are GP locums eligible to pension their income in the NHS scheme?
+  answer: Yes, if you are a freelance or self-employed GP performing genuine NHS GMS, PMS or APMS work, are on the NHS England national Performers List and registered with the GMC, and complete the Locum A and B forms. Since 1 April 2022 all active members accrue in the 2015 CARE section at 1/54th of pensionable earnings each year. Income routed through a limited company is not NHS-pensionable, so PSC locum dividends build no NHS pension at all.
+- question: What contribution rate do GP locums pay in 2025/26?
+  answer: Member contributions are tiered by pensionable pay, with the 2025/26 tiers running from 5.2% up to 12.5% depending on your total NHS pensionable income (always confirm the current tier table on the NHSBSA website, as the bands are reviewed), plus a notional employer contribution that you also pay over through form B and reclaim from the engaging practice. Your tier is based on total pensionable earnings across all your NHS work, not each assignment in isolation, so the correct tier matters when you locum for several practices.
+- question: Can I pension locum work I did months or years ago?
+  answer: Generally no. Unlike Type 1 GP partners (Annual Certificate) and Type 2 salaried GPs (year-in-arrears self-assessment), freelance locums have no end-of-year true-up, so a missed monthly window usually cannot be reopened and that income is lost from the scheme permanently. This is why locums should run forms A and B every month rather than trying to catch up later.
+metaTitle_prev: 'GP Locum NHS Pension: Forms A and B Explained (2025/26)'
+metaDescription_prev: How freelance GP locums pension their income via Locum forms A and B through the PCSE Solo route. Deadlines, contribution tiers, and the common mistakes that lose accrual.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you work as a <strong>freelance GP locum</strong>, your NHS pension does not look after itself. Salaried GPs have contributions deducted by the practice and partners are pensioned through the practice accounts, but a self-employed locum has to actively claim their own NHS accrual by completing <strong>Locum form A and Locum form B</strong> and paying the contributions over through the PCSE Solo route. Get the rhythm right and you build defined-benefit pension on every session. Miss the monthly deadline and that income usually cannot be pensioned at all, which is how locums quietly lose years of accrual.</p>
 
 <p>This guide explains what Locum form A and Locum form B actually do, how they fit together with the PCSE Solo system, the deadlines that protect your accrual, how the contribution tiers work, and the mistakes that catch locums out. It is general information for UK GPs, not personal advice.</p>

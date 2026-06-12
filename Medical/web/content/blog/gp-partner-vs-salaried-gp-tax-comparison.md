@@ -1,32 +1,35 @@
 ---
-title: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27"
-slug: "gp-partner-vs-salaried-gp-tax-comparison"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "GP Tax & Accounts"
-metaTitle: "GP Partner vs Salaried GP: Tax & Take-Home Compared 2026/27"
-metaDescription: "GP partner vs salaried GP: profit share vs salary, Class 4 vs Class 1 NIC, Self Assessment vs PAYE, NHS pension and take-home pay compared for 2025/26."
-altText: "UK medical professionals reviewing tax documents comparing GP partner versus salaried GP tax implications"
-image: ""
-h1: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27"
-summary: "Understanding the tax differences between GP partners and salaried GPs is crucial for career decisions and financial planning. This guide breaks down the key tax implications of each role."
-schema: ""
+title: 'GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27'
+slug: gp-partner-vs-salaried-gp-tax-comparison
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: GP Tax & Accounts
+metaTitle: 'GP Partner vs Salaried GP: Tax and Take-Home Compared'
+metaDescription: 'How GP partner and salaried GP pay compare: profit share vs salary, Class 4 NIC at 6% vs Class 1, NHS pension and take-home. Decide on the numbers.'
+altText: UK medical professionals reviewing tax documents comparing GP partner versus salaried GP tax implications
+image: ''
+h1: 'GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27'
+summary: Understanding the tax differences between GP partners and salaried GPs is crucial for career decisions and financial planning. This guide breaks down the key tax implications of each role.
+schema: ''
 faqs:
-  - question: "Is a GP partner self-employed or an employee?"
-    answer: "A GP partner is self-employed. The partnership files a partnership return (SA800) and each partner's share of the profit flows to the partnership pages (SA104) of their personal Self Assessment return. A partner is taxed on their share of the profit, not on the cash they draw. A salaried GP, by contrast, is an employee taxed through PAYE with Class 1 National Insurance deducted at source."
-  - question: "How much National Insurance does a GP partner pay compared with a salaried GP?"
-    answer: "A self-employed GP partner pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 (2025/26 rates). Class 2 is no longer a required payment from 6 April 2024 (it is treated as paid where profits are at or above the small profits threshold). A salaried GP pays Class 1 employee National Insurance, deducted automatically through PAYE."
-  - question: "Do GP partners and salaried GPs both get the NHS Pension?"
-    answer: "Yes. Both are active members of the NHS Pension Scheme and both accrue benefits in the 2015 CARE section. A salaried GP pensions their pay as a Type 2 practitioner; a GP partner pensions their NHS profit share and completes an Annual Certificate of Pensionable Profits as a Type 1 practitioner. Higher earners on either route can be caught by the annual allowance taper."
-  - question: "Is the pension annual allowance £40,000 for high-earning GPs?"
-    answer: "No. The annual allowance is £60,000 for 2025/26. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a floor of £10,000. For the NHS Pension the figure measured is the growth in your benefits (the pension input amount), not the contributions paid."
-  - question: "Does becoming a GP partner always mean paying less tax?"
-    answer: "Not always. A partner pays slightly less National Insurance than a salaried GP at the same income and can claim a broader range of business expenses, but the difference is usually modest and depends on the practice's profitability, your profit share and your expenses. Partnership also brings Self Assessment, payments on account, business records and a share of practice risk. The numbers below are illustrative only."
-  - question: "Who handles the tax return for each route?"
-    answer: "A salaried GP's tax and National Insurance are largely settled through PAYE, though many still file a return to claim professional expenses or report other income. A GP partner must file a personal Self Assessment return every year including the partnership pages, and the partnership itself files an SA800. Partners also make payments on account on 31 January and 31 July where their bill exceeds £1,000."
+- question: Is a GP partner self-employed or an employee?
+  answer: A GP partner is self-employed. The partnership files a partnership return (SA800) and each partner's share of the profit flows to the partnership pages (SA104) of their personal Self Assessment return. A partner is taxed on their share of the profit, not on the cash they draw. A salaried GP, by contrast, is an employee taxed through PAYE with Class 1 National Insurance deducted at source.
+- question: How much National Insurance does a GP partner pay compared with a salaried GP?
+  answer: A self-employed GP partner pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 (2025/26 rates). Class 2 is no longer a required payment from 6 April 2024 (it is treated as paid where profits are at or above the small profits threshold). A salaried GP pays Class 1 employee National Insurance, deducted automatically through PAYE.
+- question: Do GP partners and salaried GPs both get the NHS Pension?
+  answer: Yes. Both are active members of the NHS Pension Scheme and both accrue benefits in the 2015 CARE section. A salaried GP pensions their pay as a Type 2 practitioner; a GP partner pensions their NHS profit share and completes an Annual Certificate of Pensionable Profits as a Type 1 practitioner. Higher earners on either route can be caught by the annual allowance taper.
+- question: Is the pension annual allowance £40,000 for high-earning GPs?
+  answer: No. The annual allowance is £60,000 for 2025/26. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a floor of £10,000. For the NHS Pension the figure measured is the growth in your benefits (the pension input amount), not the contributions paid.
+- question: Does becoming a GP partner always mean paying less tax?
+  answer: Not always. A partner pays slightly less National Insurance than a salaried GP at the same income and can claim a broader range of business expenses, but the difference is usually modest and depends on the practice's profitability, your profit share and your expenses. Partnership also brings Self Assessment, payments on account, business records and a share of practice risk. The numbers below are illustrative only.
+- question: Who handles the tax return for each route?
+  answer: A salaried GP's tax and National Insurance are largely settled through PAYE, though many still file a return to claim professional expenses or report other income. A GP partner must file a personal Self Assessment return every year including the partnership pages, and the partnership itself files an SA800. Partners also make payments on account on 31 January and 31 July where their bill exceeds £1,000.
+metaTitle_prev: 'GP Partner vs Salaried GP: Tax & Take-Home Compared 2026/27'
+metaDescription_prev: 'GP partner vs salaried GP: profit share vs salary, Class 4 vs Class 1 NIC, Self Assessment vs PAYE, NHS pension and take-home pay compared for 2025/26.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The <strong>GP partner vs salaried GP tax comparison</strong> comes down to one thing first: employment status. A partner is self-employed and taxed on a share of practice profit; a salaried GP is an employee taxed through PAYE. That single difference drives how you pay tax, how you pay National Insurance, how you pension your income and how much paperwork lands on your desk. This guide sets the two routes side by side for 2025/26 and 2026/27.</p>
 
 <p>Whether you are weighing a partnership offer or reviewing a salaried role, the figures below are general information rather than personal advice, and the worked examples are illustrative only. For a calculation built on your actual profit share, pay and pension position, speak to a specialist medical accountant.</p>

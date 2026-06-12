@@ -1,30 +1,33 @@
 ---
-title: "GP Limited Company Tax Benefits and Drawbacks: Complete Guide"
-slug: "gp-limited-company-tax-benefits-drawbacks"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-limited-company-tax-benefits-drawbacks"
-date: "2026-04-01"
-author: "Medical Accountants UK Editorial Team"
-category: "Incorporation & Company Structures"
-metaTitle: "GP Limited Company: Tax Benefits & Drawbacks 2026/27"
-metaDescription: "Corporation tax can look cheaper than 40% income tax, but a GP company cannot hold an NHS contract and dividends are not pensionable. An honest 2026/27 breakdown."
-altText: "UK GP weighing the tax benefits and drawbacks of running a limited company with accounts and a calculator"
-image: ""
-h1: "GP Limited Company Tax Benefits and Drawbacks: What You Need to Know"
-summary: "Wondering whether a GP limited company is worth it? This guide weighs the real tax benefits against the NHS pension and contract drawbacks, with 2026/27 dividend and corporation tax figures, so you can decide whether to incorporate."
-schema: ""
+title: 'GP Limited Company Tax Benefits and Drawbacks: Complete Guide'
+slug: gp-limited-company-tax-benefits-drawbacks
+canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-limited-company-tax-benefits-drawbacks
+date: '2026-04-01'
+author: Medical Accountants UK Editorial Team
+category: Incorporation & Company Structures
+metaTitle: 'GP Limited Company: Tax Benefits and Drawbacks 2026/27'
+metaDescription: 'Weigh a GP limited company honestly: corporation tax at 19% on profits up to £50,000 against no NHS contract and no NHS pension on dividends. Model both.'
+altText: UK GP weighing the tax benefits and drawbacks of running a limited company with accounts and a calculator
+image: ''
+h1: 'GP Limited Company Tax Benefits and Drawbacks: What You Need to Know'
+summary: Wondering whether a GP limited company is worth it? This guide weighs the real tax benefits against the NHS pension and contract drawbacks, with 2026/27 dividend and corporation tax figures, so you can decide whether to incorporate.
+schema: ''
 faqs:
-  - question: "What are the main tax benefits of a GP limited company?"
-    answer: "The headline benefits are corporation tax at 19% on profits up to £50,000 (25% above £250,000, with marginal relief between) instead of income tax up to 45%, the ability to retain profits in the company and time their extraction, and dividends taxed below salary. The catch is that these apply to private work only, because a company cannot hold an NHS GMS or PMS contract, and the saving has narrowed for 2026/27 because dividend rates rose to 10.75% and 35.75% from 6 April 2026."
-  - question: "Does a GP limited company affect my NHS pension?"
-    answer: "Yes, and this is usually the decisive drawback. A limited company cannot hold an NHS GMS or PMS contract, and income routed through a company is not NHS-pensionable. So private or locum income you take as dividends earns no NHS pension accrual at all. Any corporation tax saving must always be weighed against that lost defined-benefit accrual, not looked at on its own."
-  - question: "Do IR35 rules apply to a GP limited company?"
-    answer: "They can. A GP working through a personal service company is within the off-payroll framework. For NHS Trust and other public-sector work, the hirer or fee-payer decides status from 6 April 2017, and for medium or large private hirers from 6 April 2021. Where an engagement is inside IR35 the fee deducts PAYE and NIC at source, so the salary and dividend extraction route is not available for that income. IR35 has not been abolished."
-  - question: "Can a GP sell company goodwill and claim Business Asset Disposal Relief?"
-    answer: "Not on the NHS practice. The sale of NHS GP goodwill has been prohibited since 1 April 2004 (now under SI 2019/251), including selling company shares whose value includes that goodwill. Business Asset Disposal Relief can apply to a genuine private-practice disposal, at 18% for a qualifying disposal on or after 6 April 2026 (14% from 6 April 2025 to 5 April 2026, 10% before that), but never to NHS goodwill."
-  - question: "When does GP limited company incorporation actually make sense?"
-    answer: "It tends to suit doctors with substantial private or non-NHS income (medico-legal, occupational health, self-pay clinics) that sits outside the pension anyway, those wanting to retain profits or bring in a genuinely employed family shareholder, and some managing the pension annual allowance taper. Traditional NHS GP partners usually lose more in pension accrual than they save in tax, so for them incorporation of NHS work is not an option and is rarely worthwhile."
+- question: What are the main tax benefits of a GP limited company?
+  answer: The headline benefits are corporation tax at 19% on profits up to £50,000 (25% above £250,000, with marginal relief between) instead of income tax up to 45%, the ability to retain profits in the company and time their extraction, and dividends taxed below salary. The catch is that these apply to private work only, because a company cannot hold an NHS GMS or PMS contract, and the saving has narrowed for 2026/27 because dividend rates rose to 10.75% and 35.75% from 6 April 2026.
+- question: Does a GP limited company affect my NHS pension?
+  answer: Yes, and this is usually the decisive drawback. A limited company cannot hold an NHS GMS or PMS contract, and income routed through a company is not NHS-pensionable. So private or locum income you take as dividends earns no NHS pension accrual at all. Any corporation tax saving must always be weighed against that lost defined-benefit accrual, not looked at on its own.
+- question: Do IR35 rules apply to a GP limited company?
+  answer: They can. A GP working through a personal service company is within the off-payroll framework. For NHS Trust and other public-sector work, the hirer or fee-payer decides status from 6 April 2017, and for medium or large private hirers from 6 April 2021. Where an engagement is inside IR35 the fee deducts PAYE and NIC at source, so the salary and dividend extraction route is not available for that income. IR35 has not been abolished.
+- question: Can a GP sell company goodwill and claim Business Asset Disposal Relief?
+  answer: Not on the NHS practice. The sale of NHS GP goodwill has been prohibited since 1 April 2004 (now under SI 2019/251), including selling company shares whose value includes that goodwill. Business Asset Disposal Relief can apply to a genuine private-practice disposal, at 18% for a qualifying disposal on or after 6 April 2026 (14% from 6 April 2025 to 5 April 2026, 10% before that), but never to NHS goodwill.
+- question: When does GP limited company incorporation actually make sense?
+  answer: It tends to suit doctors with substantial private or non-NHS income (medico-legal, occupational health, self-pay clinics) that sits outside the pension anyway, those wanting to retain profits or bring in a genuinely employed family shareholder, and some managing the pension annual allowance taper. Traditional NHS GP partners usually lose more in pension accrual than they save in tax, so for them incorporation of NHS work is not an option and is rarely worthwhile.
+metaTitle_prev: 'GP Limited Company: Tax Benefits & Drawbacks 2026/27'
+metaDescription_prev: Corporation tax can look cheaper than 40% income tax, but a GP company cannot hold an NHS contract and dividends are not pensionable. An honest 2026/27 breakdown.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Many GPs and consultants ask whether running a limited company would be more tax efficient than staying as a partner, salaried doctor or sole-trader locum. Weighing the <strong>GP limited company tax benefits and drawbacks</strong> properly means looking past the headline corporation tax rate, because for doctors the two biggest factors, the NHS contract and the NHS pension, sit outside the tax arithmetic entirely.</p>
 
 <p>This guide gives an honest 2026/27 picture: what a company can and cannot do for a GP, the current dividend and corporation tax figures, and the pension trap that catches doctors who only look at the tax saving. It is general information, not advice for your situation. For the mechanics of forming the company see our <a href="/blog/medical-practice-incorporation-step-by-step">step-by-step incorporation guide</a>, and for the rates themselves see <a href="/blog/gp-corporation-tax">GP corporation tax explained</a>.</p>

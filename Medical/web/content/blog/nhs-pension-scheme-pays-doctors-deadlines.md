@@ -1,48 +1,51 @@
 ---
-title: "Scheme Pays for Doctors: NHS Pension Annual Allowance Charge Deadlines Explained"
-slug: "nhs-pension-scheme-pays-doctors-deadlines"
-canonical: "https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines"
-date: "2026-06-03"
-author: "Medical Accountants UK Editorial Team"
-category: "NHS Pension Planning"
-metaTitle: "NHS Pension Scheme Pays: Deadlines for Doctors"
-metaDescription: "How NHS Scheme Pays settles an annual allowance charge: the mandatory test (over £2,000 and over £60k input), the 31 July deadline and the benefit reduction."
-altText: "Doctor reviewing an NHS pension savings statement and a Scheme Pays election form"
-image: ""
-h1: "NHS Pension Scheme Pays for Doctors: Deadlines, the Mandatory Test and How It Reduces Your Pension"
-summary: "When a doctor breaches the annual allowance, Scheme Pays lets the NHS pension settle the tax charge in exchange for a permanent reduction in benefits. This guide explains mandatory versus voluntary Scheme Pays, the precise test, the 31 July deadline and how to make and revise an election."
-schema: ""
+title: 'Scheme Pays for Doctors: NHS Pension Annual Allowance Charge Deadlines Explained'
+slug: nhs-pension-scheme-pays-doctors-deadlines
+canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines
+date: '2026-06-03'
+author: Medical Accountants UK Editorial Team
+category: NHS Pension Planning
+metaTitle: 'NHS Pension Scheme Pays for Doctors: Deadlines Guide'
+metaDescription: 'Let the NHS scheme settle your annual allowance charge: the mandatory test, the benefit reduction and the 31 July election deadline. Elect in time.'
+altText: Doctor reviewing an NHS pension savings statement and a Scheme Pays election form
+image: ''
+h1: 'NHS Pension Scheme Pays for Doctors: Deadlines, the Mandatory Test and How It Reduces Your Pension'
+summary: When a doctor breaches the annual allowance, Scheme Pays lets the NHS pension settle the tax charge in exchange for a permanent reduction in benefits. This guide explains mandatory versus voluntary Scheme Pays, the precise test, the 31 July deadline and how to make and revise an election.
+schema: ''
 faqs:
-  - question: "What is Scheme Pays on the NHS pension?"
-    answer: "Scheme Pays is a facility that lets the NHS Pension Scheme settle your annual allowance tax charge for you, in exchange for a permanent reduction in your pension benefits. You are not avoiding or waiving the tax. You are funding it from the pension instead of out of your own cash, and your benefits are reduced by an actuarially equivalent amount."
-  - question: "What is the difference between mandatory and voluntary Scheme Pays?"
-    answer: "Mandatory Scheme Pays is a legal right: where the charge exceeds £2,000 and your NHS scheme pension input exceeds the standard £60,000 annual allowance, the scheme must accept your election for the qualifying part. Voluntary Scheme Pays is offered at the scheme's discretion where those conditions are not met, for example where the charge is driven only by the taper or is £2,000 or less."
-  - question: "When is mandatory Scheme Pays available?"
-    answer: "Mandatory Scheme Pays is available only where both conditions are met at once: your annual allowance charge for the tax year exceeds £2,000, and your pension input amount in the NHS scheme alone exceeds the standard £60,000 annual allowance. If either condition fails, mandatory Scheme Pays does not apply, although voluntary Scheme Pays may still be offered."
-  - question: "What is the £2,000 threshold for Scheme Pays?"
-    answer: "It is the size of the annual allowance charge itself, not the excess over the allowance, that must exceed £2,000 for the mandatory route. So you look at the tax charge produced for the year. If that charge is more than £2,000 and the input test is also met, you have a right to mandatory Scheme Pays for the qualifying portion."
-  - question: "Does the £60,000 test look at the NHS scheme alone or all my pensions?"
-    answer: "The mandatory test looks at the NHS scheme input amount alone, not the total across all your pensions. So if your NHS input is below £60,000, mandatory Scheme Pays is unavailable even if your combined input across several schemes is higher. This is why some doctors with other pension savings find only voluntary Scheme Pays is open to them."
-  - question: "What is the deadline to elect for Scheme Pays?"
-    answer: "The election deadline is 31 July in the year following the year in which the tax year ends. There is an extended limb where the scheme notifies you of a revised pension input amount late, but the standard mandatory deadline is that 31 July date. It is a hard deadline, so it should be diarised well in advance."
-  - question: "My charge is for 2025/26. By when must I elect?"
-    answer: "A 2025/26 charge must be elected by 31 July 2027. The logic is that the 2025/26 tax year ends on 5 April 2026, the year following ends on 5 April 2027, and the deadline is 31 July in that following year, which is 31 July 2027. Working the timeline through avoids the common mistake of assuming it is the July straight after the tax year."
-  - question: "Can the Scheme Pays deadline ever be extended?"
-    answer: "Yes, for the mandatory route. Where the scheme administrator gives you a revised pension input amount so late that the normal deadline would be unfair, the time limit extends to the earlier of three months from that notification or six years from the end of the original tax year. This extended limb is particularly relevant to McCloud-revised historic charges."
-  - question: "Can I still use Scheme Pays if my charge is only because of the taper?"
-    answer: "Not on the mandatory route. If your NHS input is below £60,000 but you have a charge because your tapered allowance is lower, the mandatory conditions are not met, so the charge is voluntary-only. The scheme may still offer voluntary Scheme Pays on its own terms, which matters a great deal for tapered high earners."
-  - question: "How much will Scheme Pays reduce my pension?"
-    answer: "The amount of the charge is deducted and your benefits are permanently reduced using actuarial factors set by NHSBSA and the Government Actuary's Department. The factors depend on your age, your scheme section and the amount, and they are revised from time to time, so there is no fixed percentage to quote. Broadly, the older you are when the reduction takes effect, the larger the proportional impact tends to be."
-  - question: "Can I cancel or change a Scheme Pays election?"
-    answer: "An election can be amended but it cannot be revoked. So if a corrected pension input amount changes your charge, you can revise the election to match, but you cannot simply cancel it and take the tax back into your own hands. This is why it is worth getting the input figure confirmed before you elect."
-  - question: "Do I still need to put the charge on my tax return if the scheme pays it?"
-    answer: "Yes. The annual allowance charge still has to be reported on your Self Assessment return even when the scheme settles it. The return shows both the charge and the amount you have asked the scheme to pay. Leaving it off the return is a common error that creates problems later."
-  - question: "Can I use Scheme Pays after I have retired?"
-    answer: "No. Once you have become actually entitled to all of your benefits under the scheme, you can no longer make a Scheme Pays election. So if you have a likely charge in your final working years, the election needs to be made before you take all your benefits. This is a key sequencing point if you are also planning partial or full retirement."
-  - question: "How does Scheme Pays work with a McCloud-revised charge?"
-    answer: "A McCloud recalculation can change a historic pension input amount and therefore a historic annual allowance charge. Where that revised charge needs settling, it can often be paid through Scheme Pays within the extended deadline that applies when the scheme notifies a revised input amount late. The mechanics of the election are the same, the deadline is the extended one."
+- question: What is Scheme Pays on the NHS pension?
+  answer: Scheme Pays is a facility that lets the NHS Pension Scheme settle your annual allowance tax charge for you, in exchange for a permanent reduction in your pension benefits. You are not avoiding or waiving the tax. You are funding it from the pension instead of out of your own cash, and your benefits are reduced by an actuarially equivalent amount.
+- question: What is the difference between mandatory and voluntary Scheme Pays?
+  answer: 'Mandatory Scheme Pays is a legal right: where the charge exceeds £2,000 and your NHS scheme pension input exceeds the standard £60,000 annual allowance, the scheme must accept your election for the qualifying part. Voluntary Scheme Pays is offered at the scheme''s discretion where those conditions are not met, for example where the charge is driven only by the taper or is £2,000 or less.'
+- question: When is mandatory Scheme Pays available?
+  answer: 'Mandatory Scheme Pays is available only where both conditions are met at once: your annual allowance charge for the tax year exceeds £2,000, and your pension input amount in the NHS scheme alone exceeds the standard £60,000 annual allowance. If either condition fails, mandatory Scheme Pays does not apply, although voluntary Scheme Pays may still be offered.'
+- question: What is the £2,000 threshold for Scheme Pays?
+  answer: It is the size of the annual allowance charge itself, not the excess over the allowance, that must exceed £2,000 for the mandatory route. So you look at the tax charge produced for the year. If that charge is more than £2,000 and the input test is also met, you have a right to mandatory Scheme Pays for the qualifying portion.
+- question: Does the £60,000 test look at the NHS scheme alone or all my pensions?
+  answer: The mandatory test looks at the NHS scheme input amount alone, not the total across all your pensions. So if your NHS input is below £60,000, mandatory Scheme Pays is unavailable even if your combined input across several schemes is higher. This is why some doctors with other pension savings find only voluntary Scheme Pays is open to them.
+- question: What is the deadline to elect for Scheme Pays?
+  answer: The election deadline is 31 July in the year following the year in which the tax year ends. There is an extended limb where the scheme notifies you of a revised pension input amount late, but the standard mandatory deadline is that 31 July date. It is a hard deadline, so it should be diarised well in advance.
+- question: My charge is for 2025/26. By when must I elect?
+  answer: A 2025/26 charge must be elected by 31 July 2027. The logic is that the 2025/26 tax year ends on 5 April 2026, the year following ends on 5 April 2027, and the deadline is 31 July in that following year, which is 31 July 2027. Working the timeline through avoids the common mistake of assuming it is the July straight after the tax year.
+- question: Can the Scheme Pays deadline ever be extended?
+  answer: Yes, for the mandatory route. Where the scheme administrator gives you a revised pension input amount so late that the normal deadline would be unfair, the time limit extends to the earlier of three months from that notification or six years from the end of the original tax year. This extended limb is particularly relevant to McCloud-revised historic charges.
+- question: Can I still use Scheme Pays if my charge is only because of the taper?
+  answer: Not on the mandatory route. If your NHS input is below £60,000 but you have a charge because your tapered allowance is lower, the mandatory conditions are not met, so the charge is voluntary-only. The scheme may still offer voluntary Scheme Pays on its own terms, which matters a great deal for tapered high earners.
+- question: How much will Scheme Pays reduce my pension?
+  answer: The amount of the charge is deducted and your benefits are permanently reduced using actuarial factors set by NHSBSA and the Government Actuary's Department. The factors depend on your age, your scheme section and the amount, and they are revised from time to time, so there is no fixed percentage to quote. Broadly, the older you are when the reduction takes effect, the larger the proportional impact tends to be.
+- question: Can I cancel or change a Scheme Pays election?
+  answer: An election can be amended but it cannot be revoked. So if a corrected pension input amount changes your charge, you can revise the election to match, but you cannot simply cancel it and take the tax back into your own hands. This is why it is worth getting the input figure confirmed before you elect.
+- question: Do I still need to put the charge on my tax return if the scheme pays it?
+  answer: Yes. The annual allowance charge still has to be reported on your Self Assessment return even when the scheme settles it. The return shows both the charge and the amount you have asked the scheme to pay. Leaving it off the return is a common error that creates problems later.
+- question: Can I use Scheme Pays after I have retired?
+  answer: No. Once you have become actually entitled to all of your benefits under the scheme, you can no longer make a Scheme Pays election. So if you have a likely charge in your final working years, the election needs to be made before you take all your benefits. This is a key sequencing point if you are also planning partial or full retirement.
+- question: How does Scheme Pays work with a McCloud-revised charge?
+  answer: A McCloud recalculation can change a historic pension input amount and therefore a historic annual allowance charge. Where that revised charge needs settling, it can often be paid through Scheme Pays within the extended deadline that applies when the scheme notifies a revised input amount late. The mechanics of the election are the same, the deadline is the extended one.
+metaTitle_prev: 'NHS Pension Scheme Pays: Deadlines for Doctors'
+metaDescription_prev: 'How NHS Scheme Pays settles an annual allowance charge: the mandatory test (over £2,000 and over £60k input), the 31 July deadline and the benefit reduction.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>When a doctor breaches the annual allowance, the resulting tax charge does not have to be paid out of your own pocket. The NHS Pension Scheme can settle it for you through a facility called Scheme Pays, in exchange for a permanent reduction in your benefits. This is the page that explains how Scheme Pays actually works: the difference between mandatory and voluntary Scheme Pays, the precise numbers test, the hard 31 July deadline with a worked timeline, how the benefit reduction is applied, and how to make and revise an election.</p>
 
 <p>This guide assumes the charge already exists. It does not re-teach how the charge arises or how the £60,000 allowance and the input amount are calculated. For that, start with the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a>, and if your charge comes from the taper, the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered annual allowance guide and calculator</a>. For the wider toolkit of reducing charges in the first place, see <a href="/blog/nhs-pension-tax-charges-how-to-minimize">how to minimise NHS pension tax charges</a>.</p>
