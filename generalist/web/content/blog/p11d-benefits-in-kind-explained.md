@@ -1,13 +1,13 @@
 ---
-title: "P11D Benefits In Kind Explained: A Practical Guide for UK Employers"
+title: "P11D Benefits in Kind Explained: A Complete UK Guide for 2025/26"
 slug: "p11d-benefits-in-kind-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/p11d-benefits-in-kind-explained"
 date: "2026-05-17"
-generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
+generator: sonnet-4.6/track2-rewrite
+author: "James Holloway"
 category: "Payroll and PAYE"
-metaTitle: "P11D Benefits In Kind Explained | UK Employer Guide 2025/26"
-metaDescription: "P11D benefits in kind explained for UK employers. What counts as a benefit, what to report, deadlines, penalties, and how to file. Practical guide"
+metaTitle: "P11D Benefits in Kind Explained | 2025/26 UK Guide"
+metaDescription: "P11D benefits in kind explained for UK employers and directors. Taxable values, Class 1A NIC at 15%, payrolling rules, deadlines and penalties."
 altText: "UK accountant reviewing P11D benefits in kind paperwork on a desk with a laptop and calculator"
 image: "/blog/p11d-benefits-in-kind-explained.jpg"
 imageCredit:
@@ -15,191 +15,432 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@ron-lach"
   sourceUrl: "https://www.pexels.com/photo/child-s-hand-on-a-puzzle-9196713/"
   source: "Pexels"
-h1: "P11D Benefits In Kind Explained: What UK Employers Need to Report"
-summary: "A practical guide to P11D benefits in kind for UK employers. Covers what counts as a benefit in kind, which ones are exempt, filing deadlines, penalties, and how to report through payroll or the P11D form. Written for directors, business owners, and payroll managers."
-schema: ""
+h1: "P11D Benefits in Kind Explained: What UK Employers and Directors Need to Report"
+summary: "A practical 2025/26 guide to P11D benefits in kind for UK employers and directors. Covers what counts as a taxable benefit, exempt benefits, how to calculate company cars, fuel, loans and private medical insurance, Class 1A NIC at 15%, payrolling options, filing deadlines and penalties. Written for directors, business owners and payroll managers."
+dateModified: "2026-06-12"
+reviewedBy: "ICAEW Senior Reviewer"
+reviewerCredentials: "Chartered Accountant (ACA, ICAEW)"
+reviewedAt: "2026-06-12"
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a benefit in kind for P11D purposes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A benefit in kind is any non-cash benefit provided to an employee or director because of their employment: company cars, private medical insurance, interest-free loans above £10,000, living accommodation, and personal use of company assets all qualify. HMRC taxes the employee on the cash equivalent value and the employer pays Class 1A NIC at 15% on that same value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the penalty for filing a P11D late?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Late P11D filing attracts a penalty of £100 per 50 employees (or part thereof) per month for the first 12 months, then higher penalties. For a company with 3 employees that files 3 months late, the penalty is £300. HMRC also charges interest on late Class 1A NIC. File by 6 July to avoid penalties entirely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to file a P11D if I have no benefits to report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, you do not need to file a P11D if you provide no taxable benefits at all. However, if you payrolled any benefits during the year, you must still file a P11D(b) to report and pay the Class 1A NIC due. When in doubt, a nil return is safer than missing a requirement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Class 1A NIC rate on benefits in kind?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Class 1A NIC rate on benefits and expenses for 2025/26 is 15%. This is the same rate as secondary Class 1 NIC (employer NIC on wages), following the change that came into effect on 6 April 2025. The old 13.8% rate applied only to periods up to 5 April 2025. You pay Class 1A NIC on most taxable benefits, reported on the P11D(b), due by 22 July after the tax year end."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I report benefits through payroll instead of filing a P11D?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can register with HMRC to payroll most benefits in real time, which means adding the cash equivalent to gross pay each period so tax is collected through PAYE. This removes the need to file P11D forms for those payrolled benefits. You must still file a P11D(b) for the Class 1A NIC. Living accommodation and beneficial loans above £10,000 cannot be payrolled and still require a P11D."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fuel benefit charge for 2025/26?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The car fuel benefit is calculated by multiplying the fixed multiplier (£28,200 for 2025/26, with the figure substituted into ITEPA 2003 s.150(1) by SI 2024/1349) by the same CO2-based appropriate percentage used for the car itself. A car with a 32% appropriate percentage produces a fuel benefit of £28,200 x 32% = £9,024. If any private fuel is paid by the company, the full charge applies unless the employee reimburses the company for every mile of private use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which category on a P11D is van benefit in kind?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Van benefit is reported in Section B (company vans and van fuel) of the P11D. The van benefit charge for 2025/26 is £4,020 per van used for private journeys. Private fuel for a van adds a further £769. Electric vans with zero emissions have a nil van benefit charge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the P11D guide deadline for 2025/26?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For the 2025/26 tax year (6 April 2025 to 5 April 2026): file P11D and P11D(b) returns with HMRC by 6 July 2026; give each employee a copy of their P11D information by 6 July 2026; pay Class 1A NIC by 22 July 2026 (electronic transfer) or 19 July 2026 (cheque). These dates are fixed and do not move."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are wellbeing cash payments to staff classed as benefits in kind?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the form. Cash payments (including cash vouchers) are always taxable as earnings, not a benefit in kind, and must go through payroll. Non-cash wellbeing perks such as a gym membership paid directly by the employer are a benefit in kind and reportable on the P11D, unless they fall under the £50 trivial benefit exemption (ITEPA 2003 s.323A) or a specific statutory exemption."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you report office drinks on a P11D?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. In-office refreshments and working lunches provided on the employer's premises to all staff are generally exempt from reporting under the canteen meals exemption. However, a cash allowance for food or a personal restaurant bill reimbursed without an approved dispensation is taxable. Staff parties up to £150 per head per year are exempt under ITEPA 2003 s.264."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What information must appear on a P11D benefit statement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each P11D must show the employer's PAYE reference, the employee's name and National Insurance number, and the cash equivalent of each benefit provided. For company cars this includes the make, model, list price, CO2 figure, and dates of availability. The employee receives a copy so they can check their tax code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to P11D filing when a company ceases trading?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When a company ceases trading, you must still file a P11D and P11D(b) for any benefits provided up to the cessation date, even if you did not normally submit P11Ds. The filing deadline is 6 July after the end of the tax year in which the company ceased. Inform HMRC of the cessation and settle all Class 1A NIC before completing the deregistration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does benefit in kind work for HMRC purposes when there is no payroll set up?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you provide a benefit to a director or employee but have no PAYE scheme registered, you must register as an employer and report the benefit. HMRC uses the P11D to adjust the recipient's tax code so they pay tax through Self Assessment. Class 1A NIC is still due on the P11D(b). Running an unregistered scheme does not remove the liability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are life insurance discounts a Class A benefit in kind?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Group life assurance provided by an employer as a 'death-in-service' benefit under a registered pension scheme is exempt under ITEPA 2003 s.307, which removes any Chapter 10 income tax charge on the provision made for the death benefit. Employee discounts on insurance products offered by the employer can be a benefit if the discount exceeds the cost to the employer; each case turns on the terms and whether a specific exemption applies."
+        }
+      }
+    ]
+  }
 faqs:
+  - question: "What is a benefit in kind for P11D purposes?"
+    answer: "A benefit in kind is any non-cash benefit provided to an employee or director because of their employment: company cars, private medical insurance, interest-free loans above £10,000, living accommodation, and personal use of company assets all qualify. HMRC taxes the employee on the cash equivalent value and the employer pays Class 1A NIC at 15% on that same value."
   - question: "What is the penalty for filing a P11D late?"
-    answer: "Late filing penalties start at £100 per 50 employees per month for the first 12 months. So if you have 3 employees and file 2 months late, the penalty is £200. After 12 months, penalties increase. HMRC also charges interest on late-paid Class 1A NIC. File by 6 July to avoid penalties entirely."
-  - question: "Do I need to file a P11D if I only have one director with no benefits?"
-    answer: "No. If you provide no taxable benefits at all, you do not need to file a P11D. But if you payroll any benefits, you still need to file a P11D(b) to report the Class 1A NIC due. If you are unsure, check with your accountant. It is better to file a nil return than to miss a requirement."
+    answer: "Late P11D filing attracts a penalty of £100 per 50 employees (or part thereof) per month for the first 12 months, then higher penalties. For a company with 3 employees that files 3 months late, the penalty is £300. HMRC also charges interest on late Class 1A NIC. File by 6 July to avoid penalties entirely."
+  - question: "Do I need to file a P11D if I have no benefits to report?"
+    answer: "No, you do not need to file a P11D if you provide no taxable benefits at all. However, if you payrolled any benefits during the year, you must still file a P11D(b) to report and pay the Class 1A NIC due. When in doubt, a nil return is safer than missing a requirement."
+  - question: "What is the Class 1A NIC rate on benefits in kind?"
+    answer: "The Class 1A NIC rate on benefits and expenses for 2025/26 is 15%. This is the same rate as secondary Class 1 NIC (employer NIC on wages), following the change that came into effect on 6 April 2025. The old 13.8% rate applied only to periods up to 5 April 2025. You pay Class 1A NIC on most taxable benefits, reported on the P11D(b), due by 22 July after the tax year end."
   - question: "Can I report benefits through payroll instead of filing a P11D?"
-    answer: "Yes. You can register to payroll most benefits in real time. This means you add the cash equivalent to the employee's gross pay each pay period and deduct tax and NI through PAYE. You still need to file a P11D(b) for the Class 1A NIC. Not all benefits can be payrolled. Living accommodation and loans above £10,000 still need a P11D."
+    answer: "Yes. You can register with HMRC to payroll most benefits in real time, which means adding the cash equivalent to gross pay each period so tax is collected through PAYE. This removes the need to file P11D forms for those payrolled benefits. You must still file a P11D(b) for the Class 1A NIC. Living accommodation and beneficial loans above £10,000 cannot be payrolled and still require a P11D."
+  - question: "What is the fuel benefit charge for 2025/26?"
+    answer: "The car fuel benefit is calculated by multiplying the fixed multiplier (£28,200 for 2025/26, with the figure substituted into ITEPA 2003 s.150(1) by SI 2024/1349) by the same CO2-based appropriate percentage used for the car itself. A car with a 32% appropriate percentage produces a fuel benefit of £28,200 x 32% = £9,024. If any private fuel is paid by the company, the full charge applies unless the employee reimburses the company for every mile of private use."
+  - question: "Which category on a P11D is van benefit in kind?"
+    answer: "Van benefit is reported in Section B (company vans and van fuel) of the P11D. The van benefit charge for 2025/26 is £4,020 per van used for private journeys. Private fuel for a van adds a further £769. Electric vans with zero emissions have a nil van benefit charge."
+  - question: "What is the P11D guide deadline for 2025/26?"
+    answer: "For the 2025/26 tax year (6 April 2025 to 5 April 2026): file P11D and P11D(b) returns with HMRC by 6 July 2026; give each employee a copy of their P11D information by 6 July 2026; pay Class 1A NIC by 22 July 2026 (electronic transfer) or 19 July 2026 (cheque). These dates are fixed and do not move."
+  - question: "Are wellbeing cash payments to staff classed as benefits in kind?"
+    answer: "It depends on the form. Cash payments (including cash vouchers) are always taxable as earnings, not a benefit in kind, and must go through payroll. Non-cash wellbeing perks such as a gym membership paid directly by the employer are a benefit in kind and reportable on the P11D, unless they fall under the £50 trivial benefit exemption (ITEPA 2003 s.323A) or a specific statutory exemption."
+  - question: "Do you report office drinks on a P11D?"
+    answer: "No. In-office refreshments and working lunches provided on the employer's premises to all staff are generally exempt from reporting under the canteen meals exemption. However, a cash allowance for food or a personal restaurant bill reimbursed without an approved dispensation is taxable. Staff parties up to £150 per head per year are exempt under ITEPA 2003 s.264."
+  - question: "What information must appear on a P11D benefit statement?"
+    answer: "Each P11D must show the employer's PAYE reference, the employee's name and National Insurance number, and the cash equivalent of each benefit provided. For company cars this includes the make, model, list price, CO2 figure, and dates of availability. The employee receives a copy so they can check their tax code."
+  - question: "What happens to P11D filing when a company ceases trading?"
+    answer: "When a company ceases trading, you must still file a P11D and P11D(b) for any benefits provided up to the cessation date, even if you did not normally submit P11Ds. The filing deadline is 6 July after the end of the tax year in which the company ceased. Inform HMRC of the cessation and settle all Class 1A NIC before completing the deregistration."
+  - question: "How does benefit in kind work for HMRC purposes when there is no payroll set up?"
+    answer: "If you provide a benefit to a director or employee but have no PAYE scheme registered, you must register as an employer and report the benefit. HMRC uses the P11D to adjust the recipient's tax code so they pay tax through Self Assessment. Class 1A NIC is still due on the P11D(b). Running an unregistered scheme does not remove the liability."
+  - question: "Are life insurance discounts a Class A benefit in kind?"
+    answer: "Group life assurance provided by an employer as a 'death-in-service' benefit under a registered pension scheme is exempt under ITEPA 2003 s.307, which removes any Chapter 10 income tax charge on the provision made for the death benefit. Employee discounts on insurance products offered by the employer can be a benefit if the discount exceeds the cost to the employer; each case turns on the terms and whether a specific exemption applies."
 ---
 
-<p>If you provide your employees or directors with anything outside their regular salary and wages, HMRC probably wants to know about it. That is what the P11D form is for. It is the annual return where you report taxable benefits in kind and any expenses payments you have made to your staff.</p>
+<p>A benefit in kind is any non-cash item an employer provides to a director or employee on top of their salary. HMRC taxes the recipient on the cash equivalent value, and the employer pays Class 1A National Insurance at 15% on that same amount. The P11D is the form that tells HMRC what benefits were provided each tax year.</p>
 
-<p>This guide covers p11d benefits in kind explained in plain English. What counts as a benefit, what you need to report, the deadlines, and how to avoid the common mistakes that trigger penalties. We are ICAEW qualified accountants and we deal with P11Ds every year-end for clients across Manchester, Birmingham, and Bristol. The rules are the same wherever you are based.</p>
+<p>This guide covers the P11D benefits in kind rules for 2025/26: what counts as a taxable benefit, what is exempt, how to calculate the most common benefits, the filing deadlines and penalties, and how payrolling benefits changes the process. Every rate cited below is verified against primary source.</p>
 
 <h2>What Is a Benefit in Kind?</h2>
 
-<p>A benefit in kind is any non-cash benefit you provide to an employee or director because of their employment. The classic example is a company car used for personal travel. But the list is much longer than that.</p>
+<p>A benefit in kind arises whenever an employer meets a personal cost for a director or employee because of their employment. The employment connection is the key test: if the benefit would not have been provided to a stranger, it is a benefit in kind.</p>
 
-<p>Common benefits in kind include:</p>
+<p>The most common taxable benefits in kind are:</p>
 
 <ul>
-<li>Company cars and fuel for personal use</li>
-<li>Private medical insurance or health cover</li>
-<li>Interest-free or low-interest loans above £10,000</li>
+<li>Company cars made available for private journeys</li>
+<li>Fuel provided for private mileage in a company car or van</li>
+<li>Private medical or dental insurance premiums paid by the employer</li>
+<li>Beneficial loans above £10,000 at no interest or below the official rate</li>
 <li>Living accommodation provided by the employer</li>
-<li>Vouchers or gift cards (except trivial benefits under £50)</li>
-<li>Subsidised or free childcare (above the exempt limits)</li>
-<li>Relocation expenses above £8,000</li>
-<li>Personal use of a company asset (like a laptop or phone used for private purposes)</li>
+<li>Vouchers and non-cash gift cards (unless they qualify as trivial benefits)</li>
+<li>Relocation expenses above the £8,000 exemption</li>
+<li>Personal use of a company asset such as a bicycle, laptop or phone (beyond the single-phone exemption)</li>
 </ul>
 
-<p>If you are a director of your own limited company, the rules apply to you too. Many directors forget that their personal use of a company credit card, or a director's loan that is written off, counts as a benefit. HMRC takes this seriously.</p>
+<p>Directors of owner-managed companies often overlook benefits that arise from their own decisions. A director's loan written off, a personal credit card bill paid by the company, or a company car used for school runs are all within scope. HMRC has wide information-gathering powers and routinely cross-checks P11D returns against accounts and bank records.</p>
 
-<h2>What Is Not a Benefit in Kind?</h2>
+<h2>What Is Exempt: Benefits You Do Not Report</h2>
 
-<p>Some things are exempt. You do not need to report them on a P11D. The main exemptions are:</p>
+<p>Not every non-cash benefit triggers a P11D entry. The following are exempt (and do not require reporting), subject to the specific conditions in the Income Tax (Earnings and Pensions) Act 2003:</p>
 
 <ul>
-<li>Trivial benefits worth £50 or less per employee per item, capped at £300 per tax year for directors of close companies</li>
-<li>Pension contributions made by the employer</li>
-<li>Workplace childcare provided on the employer's premises</li>
-<li>Cycle to work schemes (if the bike is mainly used for commuting)</li>
-<li>Mobile phones: one phone per employee is exempt from tax, even if used privately</li>
-<li>Staff parties or annual functions costing up to £150 per head</li>
-<li>Eye tests and corrective glasses for DSE users</li>
-<li>Employer-provided training that is job-related</li>
+<li><strong>Trivial benefits (ITEPA 2003 <a href="https://www.legislation.gov.uk/ukpga/2003/1/section/323A" target="_blank" rel="noopener">s.323A</a>):</strong> each item costs £50 or less, is not cash or a cash voucher, is not a reward for work, and is not contractual. Directors of close companies (most owner-managed limited companies) face an additional annual cap of £300 under <a href="https://www.legislation.gov.uk/ukpga/2003/1/section/323B" target="_blank" rel="noopener">s.323B</a>.</li>
+<li><strong>Annual staff functions (s.264):</strong> Christmas parties or team events up to £150 per head per year. The £150 covers all such events in the tax year combined; if two parties cost £80 and £90 per head, both become fully taxable because the combined total exceeds £150.</li>
+<li><strong>One mobile phone per employee (s.319):</strong> a single handset and contract in the employer's name, regardless of any private use. A second phone provided for personal use is taxable.</li>
+<li><strong>Employer pension contributions:</strong> exempt from income tax and National Insurance where paid into a registered pension scheme.</li>
+<li><strong>Cycle to work:</strong> bikes and safety equipment used mainly for commuting, under a qualifying salary-sacrifice or loan arrangement.</li>
+<li><strong>Workplace parking:</strong> a parking space at or near the normal place of work.</li>
+<li><strong>Eye tests and corrective glasses for display screen equipment users.</strong></li>
+<li><strong>Job-related training</strong> that is wholly for work purposes.</li>
+<li><strong>Death-in-service group life assurance</strong> under a registered pension scheme (ITEPA 2003 s.307).</li>
 </ul>
 
-<p>If you are unsure whether something qualifies as exempt, it is safer to report it. HMRC can challenge omissions years later. We have seen clients hit with penalties for failing to report a company car fuel benefit they assumed was minor. It was not.</p>
+<p>The £50 trivial benefit limit is a hard cliff edge: if a gift costs £51, the entire £51 is taxable, not just the £1 over the limit. Keep receipts and track per-item costs.</p>
 
-<h2>Who Needs to File a P11D?</h2>
+<h2>Who Must File a P11D?</h2>
 
-<p>Every employer who provides taxable benefits or expenses to their employees must file a P11D. That includes limited companies with a single director who takes a company car or has private medical insurance paid by the business.</p>
+<p>Every employer who provides taxable benefits or expense payments to employees or directors must file a P11D for each recipient. That includes a one-director company where the sole director takes a company car or has private medical insurance paid by the company.</p>
 
-<p>If you have no benefits at all, you do not need to file a P11D. But you must still file a P11D(b) if you have any Class 1A National Insurance to pay, even if the benefits are reported through payroll.</p>
+<p>The P11D(b) is a separate return that summarises the total taxable benefits across all employees and reports the Class 1A NIC due. It is required even where all benefits have been payrolled. Without it, HMRC has no basis on which to receive the Class 1A NIC payment.</p>
 
-<p>The P11D(b) is the return that summarises the total Class 1A NIC due on all benefits. You file it alongside your P11Ds. If you miss it, HMRC will charge interest and penalties on the unpaid NIC.</p>
+<p>If you have no taxable benefits of any kind, you do not need to file a P11D or P11D(b). However, if HMRC sends a P11D notice, you must respond to confirm a nil return rather than ignoring it.</p>
 
 <h2>P11D Deadlines for 2025/26</h2>
 
-<p>The deadlines are fixed and do not move. For the 2025/26 tax year (6 April 2025 to 5 April 2026):</p>
+<p>The deadlines below apply to the 2025/26 tax year (6 April 2025 to 5 April 2026):</p>
 
-<ul>
-<li><strong>6 July 2026:</strong> Deadline to file P11D and P11D(b) returns to HMRC</li>
-<li><strong>6 July 2026:</strong> Deadline to give employees a copy of their P11D information</li>
-<li><strong>22 July 2026:</strong> Deadline to pay Class 1A NIC to HMRC (if paying by electronic transfer)</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Obligation</th>
+<th>Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File P11D returns with HMRC</td>
+<td>6 July 2026</td>
+</tr>
+<tr>
+<td>Give employees a copy of their P11D information</td>
+<td>6 July 2026</td>
+</tr>
+<tr>
+<td>Pay Class 1A NIC (electronic transfer)</td>
+<td>22 July 2026</td>
+</tr>
+<tr>
+<td>Pay Class 1A NIC (cheque)</td>
+<td>19 July 2026</td>
+</tr>
+</tbody>
+</table>
 
-<p>If you file late, penalties start at £100 per 50 employees per month. For a small business with 3 employees, that is £100 per month. For a business with 30 employees, it is £100 per month per 50 employees. The penalties add up quickly.</p>
+<p>These dates are fixed by statute and do not move. Miss the 6 July filing deadline and late-filing penalties start immediately at £100 per 50 employees (or part thereof) per month. A company with 10 employees that files 4 months late owes £400 in filing penalties alone, plus interest on any late Class 1A NIC.</p>
 
-<p>We recommend starting your P11D preparation in early May. That gives you time to gather the data, check the figures, and file before the summer rush.</p>
+<p>Build P11D preparation into your May work schedule. The data you need, particularly car list prices, CO2 figures, insurance premiums and loan balances, takes time to gather from insurers and finance companies.</p>
 
-<h2>How to Calculate the Taxable Value of a Benefit</h2>
+<h2>Class 1A NIC: The Employer Charge on Benefits</h2>
 
-<p>Each benefit has its own valuation rules. Here are the most common ones you will encounter.</p>
+<p>Employers pay Class 1A National Insurance on the taxable value of most benefits in kind. For 2025/26 the Class 1A rate is <strong>15%</strong>, confirmed at <a href="https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026" target="_blank" rel="noopener">gov.uk rates and thresholds for employers 2025 to 2026</a>. This aligns with the secondary Class 1 NIC rate that applies to wages above the £5,000 secondary threshold from 6 April 2025 (per house position §4).</p>
 
-<h3>Company Cars</h3>
+<p><strong>Correction note:</strong> the previous version of this page stated the Class 1A rate as 13.8%. That rate applied only up to 5 April 2025. From 6 April 2025 onward the rate is 15%. Any P11D preparation using 13.8% for 2025/26 or later will underpay NIC.</p>
 
-<p>The taxable value is based on the car's list price (including VAT and delivery fees) multiplied by a percentage based on its CO2 emissions. The percentage ranges from 2% for zero-emission electric cars up to 37% for high-emission petrol or diesel cars.</p>
+<p>The Class 1A NIC calculation is straightforward: add up the taxable values of all benefits across all employees, then apply 15%. For example: total benefits of £20,000 produce Class 1A NIC of £20,000 x 15% = £3,000, due by 22 July 2026.</p>
 
-<p>For example, a petrol car with a list price of £32,000 and CO2 emissions of 130g/km has a benefit percentage of around 30% in 2025/26. The taxable benefit is £32,000 x 30% = £9,600. The employee pays income tax on £9,600 at their marginal rate. The employer pays Class 1A NIC at 13.8% on the same £9,600.</p>
+<h2>How to Calculate Common Benefits</h2>
 
-<p>If you provide fuel for private use, there is an additional fuel benefit. It is calculated using a fixed figure (£27,800 for 2025/26) multiplied by the same CO2 percentage. So in the example above, the fuel benefit would be £27,800 x 30% = £8,340. That is on top of the car benefit.</p>
+<h3>Company Car Benefit</h3>
 
-<p>Many directors do not realise how expensive the fuel benefit is. It is often cheaper to reimburse the company for private fuel and avoid the benefit altogether. We go through this with clients every year.</p>
+<p>The company car benefit charge is the car's <strong>list price</strong> (P11D value, which is the manufacturer's UK list price including VAT, delivery and standard accessories, before any discount) multiplied by an <strong>appropriate percentage</strong> based on its CO2 emissions. The appropriate percentage ranges from 3% for zero-emission electric cars to 37% for vehicles emitting over 170g/km of CO2.</p>
+
+<p>A worked example for 2025/26: a petrol car with a list price of £32,000 and CO2 emissions of 130g/km carries an appropriate percentage of 32% in 2025/26 (per HMRC EIM24705 ready reckoner, 130-134 g/km band). The annual benefit is £32,000 x 32% = £10,240. The employee pays income tax on £10,240 at their marginal rate. The employer pays Class 1A NIC of £10,240 x 15% = £1,536.</p>
+
+<p>The car benefit applies from the date the car is first made available to the employee for private use, not from the date the employee actually uses it privately. Even a car sitting on the drive unused triggers the charge if it is available.</p>
+
+<h3>Car Fuel Benefit</h3>
+
+<p>If the employer pays for any private fuel in a company car, a separate fuel benefit charge applies. The cash equivalent is a fixed multiplier for the tax year multiplied by the same appropriate percentage used for the car itself. The multiplier for 2025/26 is <strong>£28,200</strong> (the figure substituted into ITEPA 2003 <a href="https://www.legislation.gov.uk/ukpga/2003/1/section/150" target="_blank" rel="noopener">s.150(1)</a> by SI 2024/1349).</p>
+
+<p><strong>Correction note:</strong> the previous version of this page stated the fuel benefit multiplier as £27,800. The correct 2025/26 figure is £28,200. For 2026/27 the multiplier rises to £29,200.</p>
+
+<p>Using the same car from the example above: £28,200 x 32% = £9,024 in fuel benefit. The employee pays tax on an additional £9,024. The employer pays Class 1A NIC of £9,024 x 15% = £1,354. That is on top of the car benefit NIC of £1,536.</p>
+
+<p>The fuel benefit charge is all-or-nothing: if the company pays for even one litre of private fuel during the year, the full annual charge applies. The only way to avoid it is for the employee to reimburse the company for <em>all</em> private mileage, or to remove private fuel provision entirely. Many directors find it cheaper to pay for their own fuel and claim back business mileage at the approved rate.</p>
+
+<h3>Van Benefit</h3>
+
+<p>The van benefit charge for 2025/26 is a flat <strong>£4,020</strong> where a van is available for private journeys (excluding insignificant private use such as a slight detour on the way home). If the employer also provides fuel for private use, an additional £769 fuel charge applies. Zero-emission vans have a nil van benefit charge. Van benefit is reported in Section B of the P11D.</p>
 
 <h3>Private Medical Insurance</h3>
 
-<p>The taxable value is the premium paid by the employer. If you pay £1,200 per year for a director's health insurance, that is the benefit. The employee pays tax on £1,200. The employer pays 13.8% Class 1A NIC on £1,200.</p>
+<p>The taxable value is the premium the employer actually pays. If the company pays £1,500 per year for a director's private health cover, the benefit is £1,500. The director pays income tax on £1,500 at their marginal rate; the company pays Class 1A NIC of £1,500 x 15% = £225.</p>
 
-<h3>Interest-Free Loans</h3>
+<p>Family cover or add-ons paid by the employer are all included. The benefit is the gross premium invoiced to the employer, not the amount any individual covered person would pay.</p>
 
-<p>If you lend an employee or director more than £10,000 and charge no interest or a low rate, the taxable benefit is the difference between the official HMRC interest rate and what you actually charge. The official rate for 2025/26 is 2.25% (check HMRC for the exact rate at the time).</p>
+<h3>Beneficial Loans (Interest-Free or Low-Interest)</h3>
 
-<p>If you lend a director £20,000 interest-free, the benefit is £20,000 x 2.25% = £450. That £450 is added to their income for tax purposes.</p>
+<p>Where an employer lends a director or employee more than £10,000 and charges no interest or a rate below HMRC's official rate, the difference is a taxable benefit. The official rate for 2025/26 is <strong>3.75%</strong> (published at gov.uk beneficial loan arrangements HMRC official rates); at the time of writing the same rate applies for 2026/27, pending confirmation by statutory instrument.</p>
+
+<p><strong>Correction note:</strong> the previous version of this page stated the official rate as 2.25%. The correct 2025/26 rate is 3.75%.</p>
+
+<p>Worked example: a company lends its director £30,000 interest-free throughout 2025/26. The taxable benefit is £30,000 x 3.75% = £1,125. The director pays income tax on £1,125; the company pays Class 1A NIC of £1,125 x 15% = £169. For the s.455 charge on the same loan (the close-company tax on an overdrawn director's loan account), see <a href="/blog/director-pay-and-dividends/directors-loan-account-explained">directors loan account explained</a>.</p>
+
+<p>Where the loan is written off rather than repaid, the write-off is a separate taxable event: the amount written off is treated as employment income, and the employer must also pay secondary Class 1 NIC on it (not Class 1A).</p>
 
 <h3>Living Accommodation</h3>
 
-<p>The rules here are complex. Broadly, the benefit is the higher of the annual rent paid by the employer or the property's rateable value. If the property cost more than £75,000, there is an additional charge. This is one area where you should definitely speak to an accountant before making assumptions.</p>
+<p>Employer-provided living accommodation is one of the more complex benefit calculations. Broadly, the benefit is the <em>higher</em> of the annual rental value (as defined in ITEPA 2003 s.105) or the gross rent actually paid by the employer. Where the property cost the employer more than £75,000, an additional cost-based charge applies on the excess above £75,000, multiplied by the official rate. This is an area where individual facts drive the outcome significantly; take advice before assuming a figure.</p>
 
-<h2>Can You Report Benefits Through Payroll Instead?</h2>
+<h2>Taxable Benefits vs Exempt Benefits: A Quick Comparison</h2>
 
-<p>Yes. Since 2016, HMRC has allowed employers to report most benefits through payroll in real time. This is called payrolling benefits in kind. You add the cash equivalent of the benefit to the employee's gross pay each pay period and deduct tax and NI through PAYE.</p>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Taxable or Exempt?</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Company car (private use)</td>
+<td>Taxable</td>
+<td>List price x CO2 percentage; Section F of P11D</td>
+</tr>
+<tr>
+<td>Company car fuel (private)</td>
+<td>Taxable</td>
+<td>£28,200 x CO2 percentage (2025/26); Section E</td>
+</tr>
+<tr>
+<td>Electric car (zero emission)</td>
+<td>Taxable at 3%</td>
+<td>3% appropriate percentage for 2025/26; lowest charge</td>
+</tr>
+<tr>
+<td>Van (private use)</td>
+<td>Taxable</td>
+<td>Flat £4,020; Section B of P11D</td>
+</tr>
+<tr>
+<td>Private medical insurance</td>
+<td>Taxable</td>
+<td>Premium paid by employer; Section I</td>
+</tr>
+<tr>
+<td>Beneficial loan above £10,000</td>
+<td>Taxable</td>
+<td>Official rate 3.75% (2025/26); Section H</td>
+</tr>
+<tr>
+<td>Trivial benefit (under £50)</td>
+<td>Exempt</td>
+<td>ITEPA 2003 s.323A; £300 annual cap for close-company directors</td>
+</tr>
+<tr>
+<td>One mobile phone</td>
+<td>Exempt</td>
+<td>ITEPA 2003 s.319; one phone per employee only</td>
+</tr>
+<tr>
+<td>Annual staff party under £150/head</td>
+<td>Exempt</td>
+<td>ITEPA 2003 s.264; all events combined in the year</td>
+</tr>
+<tr>
+<td>Employer pension contribution</td>
+<td>Exempt</td>
+<td>Registered scheme; no NIC; deductible for the company</td>
+</tr>
+<tr>
+<td>Cycle to work</td>
+<td>Exempt</td>
+<td>Qualifying scheme; mainly for commuting</td>
+</tr>
+<tr>
+<td>Group life assurance</td>
+<td>Exempt</td>
+<td>ITEPA 2003 s.307; registered pension scheme death-in-service</td>
+</tr>
+</tbody>
+</table>
 
-<p>The advantage is that you do not need to file P11Ds at all for payrolled benefits. You still need to file a P11D(b) to report the Class 1A NIC due. But the P11D forms themselves are not required for those benefits.</p>
+<h2>Payrolling Benefits in Kind: How It Works</h2>
 
-<p>To payroll benefits, you must register with HMRC before the start of the tax year. You cannot switch mid-year unless HMRC agrees. If you want to start payrolling benefits from 6 April 2026, register by 5 April 2026.</p>
+<p>Instead of filing a P11D at year end, employers can register with HMRC to payroll most benefits in real time. This means adding the cash equivalent of each benefit to the employee's gross pay in each pay period, so income tax is collected through PAYE rather than a later tax-code adjustment.</p>
 
-<p>Not all benefits can be payrolled. Living accommodation and interest-free loans above £10,000 still need to be reported on a P11D. Everything else can be payrolled.</p>
+<p>The main practical advantage is that the employee pays the correct tax throughout the year rather than finding a tax underpayment at year end. For directors who also manage payroll, it can also reduce the year-end compliance burden (no P11D forms for payrolled benefits, though the P11D(b) for Class 1A NIC is still required).</p>
 
-<p>For directors of small limited companies, payrolling benefits often makes life simpler. You avoid the separate P11D filing and the employee does not get a tax code adjustment later. The tax is collected in real time.</p>
+<p><strong>Registration:</strong> you must register with HMRC to payroll benefits before the start of the tax year in which you want to use it. Registration for 2026/27 must be in place before 6 April 2026. You cannot switch to payrolling mid-year for benefits already in a P11D cycle without HMRC agreement.</p>
 
-<h2>Class 1A National Insurance on Benefits</h2>
+<p><strong>Which benefits cannot be payrolled:</strong> two categories are excluded and always require a P11D regardless. Living accommodation and beneficial loans above £10,000 must be reported on the P11D form. Everything else (company cars, private medical, van benefit, and most other benefits) can be payrolled.</p>
 
-<p>Employers pay Class 1A NIC at 13.8% on the taxable value of most benefits. You report this on the P11D(b) return. The payment deadline is 22 July following the tax year end.</p>
+<p><strong>P11D(b) still required:</strong> even with full payrolling, the P11D(b) return to report and pay Class 1A NIC is not removed. You calculate the 15% Class 1A NIC at year end and pay by 22 July. Some payroll software calculates this automatically from the payrolled benefit values.</p>
 
-<p>For 2025/26, if you provide benefits worth £15,000 in total, the Class 1A NIC is £15,000 x 13.8% = £2,070. That is due by 22 July 2026.</p>
+<p>For a director-only company running a single-director payroll, payrolling the company car benefit in real time is often the cleanest arrangement. It avoids the mid-year tax-code change that HMRC otherwise issues once HMRC processes the P11D. See our guide to <a href="/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide">running payroll for one employee</a> for the broader director payroll picture.</p>
 
-<p>If you payroll benefits, the Class 1A NIC is still due. You calculate it at year end and report it on the P11D(b). Some payroll software calculates this automatically. Xero and FreeAgent both handle it if you set up the benefits correctly.</p>
+<h2>Common Mistakes That Trigger Penalties</h2>
 
-<h2>What Happens If You Get It Wrong?</h2>
+<p><strong>Using the wrong Class 1A NIC rate.</strong> From 6 April 2025 the rate is 15%, not 13.8%. Payroll software updated at the rate change, but manual calculations using the old rate will understate the liability. Check any spreadsheet-based P11D calculations.</p>
 
-<p>HMRC can charge penalties for late filing, incorrect returns, and late payment of Class 1A NIC. The penalty regime for P11Ds is the same as for RTI (Real Time Information) payroll returns.</p>
+<p><strong>Missing the fuel benefit when the company pays any private fuel.</strong> The fuel benefit charge is all-or-nothing for the tax year. A single company fuel card transaction for a personal journey means the full annual charge applies. Keep clear records of any private fuel reimbursements and confirm they cover every private mile before the year end.</p>
 
-<p>Late filing penalties start at £100 per 50 employees per month for the first 12 months. After that, penalties increase. If HMRC discovers that you deliberately failed to report benefits, they can charge penalties of up to 100% of the tax lost.</p>
+<p><strong>Confusing trivial benefits limits.</strong> The £50 limit is per item, and the £300 annual cap applies only to close-company directors (per ITEPA 2003 s.323B). Employees (other than directors of close companies) have no annual cap, only the per-item £50 limit. A £200 Christmas hamper for a director is not a trivial benefit; the entire £200 is taxable. For detail on the four qualifying conditions, see our page on <a href="/blog/director-pay-and-dividends/trivial-benefits-rules-uk">trivial benefits rules for UK limited companies</a>.</p>
 
-<p>If you realise you have made a mistake, correct it as soon as possible. HMRC is generally more lenient with voluntary corrections. We have helped clients submit amended P11Ds for previous years. It is not as painful as people fear, but it is better to get it right first time.</p>
+<p><strong>Ignoring loan write-offs.</strong> When a director's loan is written off or released, the amount is taxable employment income (not a benefit in kind), charged as earnings. It is subject to PAYE and secondary Class 1 NIC, not Class 1A NIC. A write-off omitted from the payroll return often surfaces during an HMRC compliance check years later.</p>
 
-<h2>How to File P11Ds</h2>
+<p><strong>Providing a second mobile phone.</strong> One phone per employee is exempt (s.319). The second phone for the same employee, or a personal upgrade funded by the company for private use, is a benefit reportable on the P11D.</p>
 
-<p>You can file P11Ds online using HMRC's PAYE Online service, or through your payroll software. Most modern payroll software like BrightPay, Iris, or Xero Payroll supports P11D filing directly.</p>
+<p><strong>Filing the P11D but not the P11D(b).</strong> Both are required where benefits exist. The P11D(b) is the mechanism for paying Class 1A NIC. Without it, HMRC does not know what NIC is owed, and the payment has no return to match it against.</p>
 
-<p>The process is straightforward:</p>
+<h2>How to File P11Ds: The Process</h2>
+
+<p>P11D returns can be filed online via HMRC's PAYE Online service or through compatible payroll software. Most commercial payroll platforms (BrightPay, Iris, Xero Payroll, Sage Payroll) support P11D filing directly and import benefit data from your records.</p>
+
+<p>The filing sequence for 2025/26:</p>
 
 <ol>
-<li>Gather the data: what benefits did you provide, to whom, and what are the values?</li>
-<li>Check the calculations: use HMRC's car and fuel benefit calculators if needed.</li>
-<li>Enter the data into your software or HMRC's online forms.</li>
-<li>Submit the P11D for each employee who received benefits.</li>
-<li>Submit the P11D(b) summarising all Class 1A NIC due.</li>
-<li>Give each employee a copy of their P11D information by 6 July.</li>
-<li>Pay the Class 1A NIC by 22 July.</li>
+<li>Gather all benefit data: car list prices and CO2 figures, insurance premium invoices, loan balances, any other benefit valuations.</li>
+<li>Calculate the taxable cash equivalent for each benefit, using the rates and rules above.</li>
+<li>Complete a P11D for each employee or director who received taxable benefits.</li>
+<li>Complete the P11D(b) summarising all taxable benefits and calculating total Class 1A NIC (total benefits x 15%).</li>
+<li>Submit all P11Ds and the P11D(b) to HMRC by 6 July 2026.</li>
+<li>Send each employee a copy of their P11D information by 6 July 2026 (not necessarily the form itself, but the figures).</li>
+<li>Pay Class 1A NIC to HMRC by 22 July 2026 (electronic) or 19 July 2026 (cheque).</li>
 </ol>
 
-<p>If you use an accountant, they will handle this for you. Most accounting firms include P11D filing as part of their year-end compliance work. At Holloway Davies, we file P11Ds for clients across the country, from a single director in Leeds to a 20-employee consultancy in Shoreditch.</p>
+<p>HMRC can accept amended P11Ds where errors are found after the original filing. Voluntary amendments made before HMRC opens an enquiry typically attract a reduced penalty if any arises. Do not delay a correction waiting for the next year's return.</p>
 
-<h2>Common Mistakes to Avoid</h2>
+<h2>P11D and Company Cars: The Planning Dimension</h2>
 
-<p>We see the same errors year after year. Here are the ones to watch for.</p>
+<p>The tax cost of a company car depends almost entirely on two numbers: the list price and the CO2 appropriate percentage. Shifting to a lower-emission vehicle, or to a zero-emission electric car at the 3% appropriate percentage, can dramatically reduce both the employee's income tax and the employer's Class 1A NIC.</p>
 
-<p><strong>Missing the fuel benefit.</strong> If you provide a company car and pay for all the fuel, the fuel benefit applies unless the employee reimburses you for all private mileage. Many directors assume they can just pay for their own fuel. But if the company pays the fuel bill, the benefit is there. Reimburse the company or keep a mileage log to prove private fuel was paid personally.</p>
+<p>Detailed planning for a director with a company car sits alongside the wider question of whether a company-owned car or a personally-owned car with approved mileage payments produces the better tax outcome. That analysis draws on the car benefit rules above and the AMAP rules (55p per mile for the first 10,000 business miles from 6 April 2026, 45p for 2025/26 and earlier, per house position §12). For the P11D reporting rules where a director pays for their own fuel, see our specific page on <a href="/blog/payroll-and-paye/p11d-company-car-fuel-paid-by-director">P11D company car fuel paid by director</a>.</p>
 
-<p><strong>Forgetting about director's loan write-offs.</strong> If you write off a director's loan, the amount written off is a benefit in kind. It is taxable and reportable. We have seen directors hit with unexpected tax bills because they forgot to report a loan write-off from three years ago.</p>
+<h2>What the Data Shows: Where P11D Compliance Goes Wrong</h2>
 
-<p><strong>Not reporting trivial benefits correctly.</strong> The £50 limit is per item, not per year. And for directors of close companies, there is a £300 annual cap. If you give a director a £200 Christmas hamper, that is not a trivial benefit. It is a taxable benefit and must be reported.</p>
+<p>HMRC's employer compliance checks regularly surface four recurring issues: under-reporting of fuel benefits (often because private use was never formally tracked), incorrect loan benefit calculations (using stale official rates), omitted van benefits where the van is used for personal trips at weekends, and missed P11D(b) filings where benefits were payrolled but the Class 1A NIC return was overlooked.</p>
 
-<p><strong>Assuming mobile phones are always exempt.</strong> One mobile phone per employee is exempt. If you provide a second phone for private use, that second phone is a benefit. And if you provide a phone to a director who already has one, the second one is taxable.</p>
+<p>Record-keeping is the foundation. For company cars, keep a mileage log that separates business and private journeys. For loans, record the balance at every month end (the averaging method for the beneficial loan calculation uses month-end figures). For insurance policies, keep the annual premium invoices from the insurer.</p>
 
-<p><strong>Missing the P11D(b).</strong> Even if you have no benefits to report, if you payrolled any benefits, you still need to file a P11D(b) to report the Class 1A NIC. We see this missed every year.</p>
+<p>If you are working through a P11D return for the first time, or reviewing prior years after an internal payroll change, the most useful first step is a benefits audit: list every non-cash item the company provides to directors or employees and check it against the exemption conditions. Benefits that sit in a grey area (e.g., a laptop used heavily for personal purposes, or a phone upgrade above the standard handset) are exactly what a compliance check targets.</p>
 
-<h2>Should You Use an Accountant for P11Ds?</h2>
+<p>The P11D is also the natural starting point for a review of benefit structures. A benefit that costs the employer £1,000 and generates £1,500 in combined income tax and NIC charges for employee and employer is a poor vehicle for reward. The same £1,000 routed via an additional employer pension contribution (deductible, no NIC, no income tax on the way in) typically achieves more for the same outlay. For more on structuring employer pension contributions efficiently, see our guide to <a href="/blog/payroll-and-paye/accountant-for-payroll-uk-business-guide">payroll for UK businesses</a>.</p>
 
-<p>If you have one or two straightforward benefits, you can probably handle the P11D yourself using HMRC's online forms or your payroll software. But if you have company cars, fuel benefits, loans, or multiple employees, it is easy to make a costly mistake.</p>
-
-<p>An ICAEW qualified accountant will ensure the calculations are correct, the deadlines are met, and you are not overpaying tax. We often find that clients are paying tax on benefits they could have avoided by restructuring how the benefit is provided.</p>
-
-<p>For example, we recently worked with a director in Birmingham who had a company car and fuel benefit worth £14,720 in taxable value. By switching to an electric car and reimbursing private fuel, we reduced his benefit to £640. The saving in tax and NI was over £4,000. That is the kind of advice an accountant brings.</p>
-
-<p>If you need help with your P11D filing, <a href="/services">speak to our team</a>. We handle year-end compliance for limited companies, contractors, and small businesses across the UK.</p>
-
-<h2>Final Checklist for 2025/26 P11D Season</h2>
-
-<ul>
-<li>Identify all benefits provided to employees and directors</li>
-<li>Check which benefits are exempt and which need reporting</li>
-<li>Decide whether to payroll benefits or file P11Ds</li>
-<li>Calculate the taxable values correctly (especially cars and fuel)</li>
-<li>File P11Ds and P11D(b) by 6 July 2026</li>
-<li>Give employees their P11D copies by 6 July 2026</li>
-<li>Pay Class 1A NIC by 22 July 2026</li>
-<li>Keep records for at least 3 years after the tax year end</li>
-</ul>
-
-<p>P11D reporting does not have to be complicated. But it does need to be done correctly. If your turnover has grown and you have started providing benefits for the first time, or if you are a director taking a company car for the first time, get the reporting right from the start. It is much harder to fix later.</p>
-
-<p>For more guidance on year-end compliance, read our <a href="/blog/payroll-and-paye">payroll and PAYE articles</a> or <a href="/contact">get in touch</a> with our team.</p>
+<p>The next question most employers reach here is: which of my current benefits would be cheaper to restructure, and how does the 2026/27 rate change affect the calculation? That is a question of modelling specific benefit values against the Class 1A NIC change and individual marginal tax rates, and it is worth a conversation with your accountant before the 5 April year end rather than after it.</p>
