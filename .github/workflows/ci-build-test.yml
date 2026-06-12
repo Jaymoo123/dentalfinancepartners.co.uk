@@ -11,9 +11,6 @@
 # PF-04 net: every site job runs on every push/PR, so a breaking change to
 # packages/web-shared fails the consumer builds here.
 # `npm run test --if-present` is a green no-op until W4b lands suites.
-#
-# Excluded (deliberately): contractors-ir35 (scaffold; empty config, not yet
-# buildable â€” add a matrix entry when it launches).
 
 on:
   pull_request:
@@ -43,6 +40,8 @@ jobs:
             url: https://www.agencyfounderfinance.co.uk
           - site: console
             url: https://console.internal
+          - site: contractors-ir35
+            url: https://www.contractor-finance-partners.co.uk
 
     steps:
       - name: Checkout code
