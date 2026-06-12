@@ -61,3 +61,55 @@ Target = an already-built site (Dentists / Solicitors / Medical / Generalist): n
 8. **Post-deploy**: register changed pages in `monitored_pages` (`register_monitored_batch.py`, parameterised for the site) + submit IndexNow.
 
 Reference: the Property homepage run (memory `corepage_engine`) is the worked example of steps 2-8.
+
+---
+
+## 5. Model provenance (generator frontmatter)
+
+Every generated or rewritten blog post carries a frontmatter field:
+
+```
+generator: <model>/<pipeline>
+```
+
+### Format
+
+| Example value | Meaning |
+|---|---|
+| `deepseek-chat/consolidated-generator` | Written by consolidated blog generator (DeepSeek) |
+| `opus-4.8/netnew-wave` | Net-new wave page written by Opus 4.8 sub-agent |
+| `opus-4.8/track2-rewrite` | Legacy page rewritten by Track-2 engine (Opus 4.8) |
+| `sonnet-4.6/track2-rewrite` | Legacy page rewritten by Track-2 engine (Sonnet) |
+| `claude/legacy-supabase` | Pre-consolidation Anthropic generation (supabase pipeline) |
+| `deepseek-chat/legacy-bulk` | Pre-consolidation DeepSeek bulk generation |
+
+### Who writes it
+
+| Pipeline | Where set | Value |
+|---|---|---|
+| Consolidated blog generator (`optimisation_engine/blog_generator/`) | `output_writer.py::assemble_frontmatter` — derived from `site_config["llm_model"]` + hardcoded pipeline suffix `/consolidated-generator` | e.g. `deepseek-chat/consolidated-generator` |
+| Track-2 rewrite writer (`scripts/track2_rewrite_writer.wf.js`) | Writer agent prompt HARD RULE — uses `WRITER_MODEL` constant near top of file | e.g. `sonnet-4.6/track2-rewrite` |
+| Net-new wave RUN sub-agent (`templates/rolling/run.tmpl.md`) | Step 4 of per-page workflow instruction | `opus-4.8/netnew-wave` |
+
+### Backfill mapping (for posts without the field)
+
+Era classification lives in `scripts/blog_provenance.py` and caches results under `.cache/provenance/`. Run `--backfill-generator` to see counts; add `--execute` to write files.
+
+| Era | Confidence | generator value assigned |
+|---|---|---|
+| `deepseek` | high | `deepseek-chat/legacy-bulk` |
+| `deepseek` | low | `deepseek-chat/unverified` |
+| `claude-supabase` | high | `claude/legacy-supabase` |
+| `claude-supabase` | low | `unverified/claude-era` |
+| `opus-wave` | any | `opus-4.8/netnew-wave` |
+| `track2-rewritten` | any | `opus-4.8/track2-rewrite` |
+| `ambiguous` / `untracked` | — | skipped (cannot assign) |
+
+Backfill command (dry-run):
+
+```
+python scripts/blog_provenance.py --all --backfill-generator
+python scripts/blog_provenance.py --site medical --backfill-generator
+```
+
+Add `--execute` to apply writes. The script inserts `generator:` after the `date:` line (or at frontmatter end), only when the field is absent. It never touches the body.

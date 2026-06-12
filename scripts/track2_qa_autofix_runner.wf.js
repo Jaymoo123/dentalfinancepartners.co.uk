@@ -37,7 +37,7 @@ const SCHEMA = {
   type: 'object', additionalProperties: false,
   required: ['slug', 'signoff', 'issues', 'strengths', 'expert_plausible',
              'arithmetic_recomputed', 'statute_checks', 'links_resolve',
-             'query_coverage', 'meta_quality', 'eeat_present', 'schema_valid', 'all_clear'],
+             'query_coverage', 'meta_quality', 'eeat_present', 'generator_present', 'schema_valid', 'all_clear'],
   properties: {
     slug: { type: 'string' },
     signoff: { type: 'string', enum: ['sign-off', 'minor-issues', 'blocking-issues'],
@@ -83,6 +83,7 @@ const SCHEMA = {
         desc_len: { type: 'number', description: 'metaDescription character count' },
         ok: { type: 'boolean', description: 'title_len<=60 AND desc_len<=155' } } },
     eeat_present: { type: 'boolean', description: 'reviewedBy + reviewerCredentials + reviewedAt all present in frontmatter' },
+    generator_present: { type: 'boolean', description: 'generator field present in frontmatter (set to <model>/track2-rewrite by the writer; required for model provenance tracking)' },
     schema_valid: { type: 'boolean', description: 'rendered JSON-LD valid + complete: FAQPage iff faqs, HowTo iff howToSteps' },
     strengths: { type: 'string', description: 'what is genuinely good' },
     expert_plausible: { type: 'boolean', description: 'Would a qualified UK tax accountant for this sector find nothing embarrassing or wrong here?' },
@@ -107,6 +108,7 @@ Read ${cfg.blogDir}/${slug}.md (frontmatter + body). The AUTHORITATIVE ground-tr
 7. QUERY COVERAGE: run \`python scripts/track2_query_coverage.py --slug ${slug} --site ${site} --json\`. TRUST its numbers - record high_demand_covered_pct from it and set uncovered_high_demand to its missing_queries[] entries where impr>=50 ("GSC/Bing queries with impr>=gate NOT served"). You ONLY judge query_coverage.natural: set natural=false if target queries are stuffed (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
 8. META: count metaTitle and metaDescription characters into meta_quality.title_len / desc_len; set meta_quality.ok = (title_len<=60 AND desc_len<=155).
 9. E-E-A-T: set eeat_present = (reviewedBy AND reviewerCredentials AND reviewedAt are all present in frontmatter).
+9b. MODEL PROVENANCE: set generator_present = (generator field is present in frontmatter). This is a quality signal only (does not flip all_clear), but its absence should be noted in issues as a minor/other issue so the fix agent can add it.
 10. SCHEMA: set schema_valid = the rendered JSON-LD is valid AND complete - FAQPage present iff faqs exist, HowTo present iff howToSteps exist.
 Note for the gate (qa_verdict derives it, do not fold into your prose all_clear beyond this): uncovered high-demand queries (step 7) and meta overflow (step 8) are BLOCKING; eeat_present / schema_valid are quality signals only.
 

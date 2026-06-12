@@ -16,6 +16,11 @@ const cluster = A.cluster || 'CityService'
 const briefDir = A.briefDir || ''   // if set, the writer reads <briefDir>/<slug>.md + .corrections.md as its plan
 const site = A.site || 'property'
 
+// WRITER_MODEL must match the model this workflow is dispatched with.
+// Update this constant whenever the workflow's model changes so that the
+// generator frontmatter field stays accurate.
+const WRITER_MODEL = 'sonnet-4.6'
+
 // Per-site config. The .wf.js runtime has NO filesystem access, so this is an
 // explicit map mirroring sites/<site>.json (blogContentDir / vercel.productionDomain
 // / paths.housePositions). The site's house_positions doc is the AUTHORITATIVE
@@ -37,6 +42,7 @@ log(`Rewrite-writer: ${slugs.length} page(s), site=${site}, depth=${depth}, clus
 const HARD = `
 HARD RULES (non-negotiable):
 - Blog BODY is RAW HTML (<h2>,<h3>,<p>,<ul><li>,<table>). NEVER markdown (## or - render literally). FAQs go in frontmatter faqs: [{question,answer}]. Preserve the frontmatter slug, category, and structure; you may improve metaTitle (~60 chars) / metaDescription (~155) / h1 / summary.
+- MODEL PROVENANCE: the rewritten file's frontmatter MUST set or update the field: generator: ${WRITER_MODEL}/track2-rewrite. If the field exists, overwrite its value. If it is absent, insert it after the date: line (or at the end of the frontmatter block). Never alter the body based on this field — it is metadata only.
 - NO pricing, fees, fee-ranges, hourly rates, "save thousands", percentages-of-rent-as-fee, service-fee figures. The site is a lead-gen handoff: no pricing anywhere. Strip any that exist.
 - NO em-dashes (use commas, parentheses, full stops, middle dots).
 - GROUND TRUTH: ${cfg.hp} is the AUTHORITATIVE source for EVERY rate, threshold, statute citation and framing on this site. Cite it by section (§N / §N.A). Every tax figure, rate, threshold and statutory citation on the page MUST match ${cfg.hp}; if the existing page contradicts a locked position, FLAG it in your return (do NOT silently re-frame, and do NOT edit ${cfg.hp}).

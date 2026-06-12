@@ -42,6 +42,17 @@ def build_canonical(site_config: dict, slug: str, category_slug: str | None) -> 
     return f"{base}{path}"
 
 
+def _build_generator_tag(site_config: dict) -> str:
+    """Derive the generator frontmatter value from site_config.
+
+    Format: <model>/<pipeline>
+    Uses the concrete model name where available (site_config["llm_model"]),
+    falling back to the provider key (site_config["llm_provider"]).
+    """
+    model = site_config.get("llm_model") or site_config.get("llm_provider") or "unknown"
+    return f"{model}/consolidated-generator"
+
+
 def assemble_frontmatter(
     *,
     site_config: dict,
@@ -75,6 +86,7 @@ def assemble_frontmatter(
         "slug": slug,
         "canonical": canonical,
         "date": today,
+        "generator": _build_generator_tag(site_config),
         "author": site_config["author_name"],
         "category": category,
         "metaTitle": fields.get("meta_title") or fields.get("metaTitle") or "",

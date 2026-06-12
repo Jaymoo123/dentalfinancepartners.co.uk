@@ -30,7 +30,7 @@ For each pick:
 1. Read the brief at `{{briefs_dir}}/<slug>.md` + flip tracker row to 🟦 in-progress
 2. Read HP sections referenced + cannib-companion existing pages
 3. WebFetch every statute citation + every competitor URL (§16.35 / §16.31)
-4. Draft the page body at `{{blog_content_dir}}/<slug>.md` with frontmatter (slug, category, canonical URL, title, metaTitle, metaDescription, faqs[], reviewedBy, sourcesVerifiedAt, schema, editorialNote)
+4. Draft the page body at `{{blog_content_dir}}/<slug>.md` with frontmatter (slug, category, canonical URL, title, metaTitle, metaDescription, faqs[], reviewedBy, sourcesVerifiedAt, schema, editorialNote, generator). MODEL PROVENANCE (non-negotiable): set `generator: opus-4.8/netnew-wave` in the frontmatter of every page you write. Insert it after the `date:` line (or at frontmatter end if date is absent). Never omit it.
 5. Validate FAQs cover all "key questions" from brief
 6. Run `npm run build` in `{{build_dir}}` - PASS required
 7. `git add {{blog_content_dir}}/<slug>.md`

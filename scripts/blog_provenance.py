@@ -947,6 +947,169 @@ def _sanity_checks(all_results: dict[str, list[dict]]) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# Backfill helpers
+# ---------------------------------------------------------------------------
+
+# Mapping from (era, confidence) → generator tag value for backfill.
+# Used by --backfill-generator. Never auto-runs; requires --execute.
+_BACKFILL_GENERATOR_MAP: dict[tuple[str, str], str] = {
+    ("deepseek",       "high"): "deepseek-chat/legacy-bulk",
+    ("deepseek",       "low"):  "deepseek-chat/unverified",
+    ("claude-supabase","high"): "claude/legacy-supabase",
+    ("claude-supabase","low"):  "unverified/claude-era",
+    ("opus-wave",      "high"): "opus-4.8/netnew-wave",
+    ("opus-wave",      "low"):  "opus-4.8/netnew-wave",
+    ("track2-rewritten","high"):"opus-4.8/track2-rewrite",
+    ("track2-rewritten","low"): "opus-4.8/track2-rewrite",
+}
+
+# Era+confidence combos that we do NOT stamp (ambiguous / untracked origin).
+_BACKFILL_SKIP_ERAS = {"ambiguous", "untracked"}
+
+
+def _insert_generator_frontmatter(raw: str, generator_value: str) -> str | None:
+    """Insert `generator: <value>` into the YAML frontmatter block.
+
+    Inserts immediately after the `date:` line. If no `date:` line is found,
+    inserts at the end of the frontmatter block (before the closing ---).
+    Returns the modified text, or None if the file has no valid frontmatter.
+
+    Preserves line endings (CRLF vs LF) detected in the file.
+    Never touches the body.
+    """
+    if not raw.startswith("---"):
+        return None
+    # Detect line ending used in this file
+    linesep = "\r\n" if "\r\n" in raw[:200] else "\n"
+
+    end_idx = raw.find("\n---", 3)
+    if end_idx == -1:
+        return None
+
+    fm_block = raw[3:end_idx]  # frontmatter content (between the two ---)
+    body_rest = raw[end_idx:]   # "\n---\n<body>"
+
+    # Check if generator field already present (any generator: line)
+    if re.search(r"(?m)^generator:", fm_block):
+        return None  # already stamped; do not overwrite during backfill
+
+    lines = fm_block.split("\n")
+
+    # Find the date: line to insert after it
+    insert_after = -1
+    for i, line in enumerate(lines):
+        if re.match(r"^date:", line.strip() if line.startswith(" ") else line):
+            insert_after = i
+            break
+
+    generator_line = f"generator: {generator_value}"
+    if insert_after >= 0:
+        lines.insert(insert_after + 1, generator_line)
+    else:
+        # No date line; append before end of frontmatter
+        # Strip trailing empty lines and add before them
+        lines.append(generator_line)
+
+    new_fm = "\n".join(lines)
+    return "---" + new_fm + body_rest
+
+
+def _backfill_site(
+    site: str,
+    records: list[dict],
+    *,
+    execute: bool,
+    verbose: bool,
+) -> dict[str, int]:
+    """Backfill generator frontmatter for one site.
+
+    Args:
+        site: site key
+        records: provenance records from _process_site()
+        execute: if False, dry-run only (print counts, no file writes)
+        verbose: print per-file actions
+
+    Returns a dict of counts: would_stamp, already_stamped, skipped_era,
+    skipped_no_file, errors, stamped (only non-zero when execute=True).
+    """
+    cfg = SITE_CONFIG[site]
+    content_dir: Path = cfg["content_dir"]
+
+    counts: dict[str, int] = {
+        "would_stamp": 0,
+        "already_stamped": 0,
+        "skipped_era": 0,
+        "skipped_no_file": 0,
+        "errors": 0,
+        "stamped": 0,
+    }
+
+    for rec in records:
+        era = rec.get("era", "")
+        confidence = rec.get("confidence", "low")
+        relpath = rec.get("relpath", "")
+
+        # Skip eras we cannot assign a generator to
+        if era in _BACKFILL_SKIP_ERAS:
+            counts["skipped_era"] += 1
+            continue
+
+        generator_value = _BACKFILL_GENERATOR_MAP.get((era, confidence))
+        if generator_value is None:
+            # Unknown combination — skip safely
+            counts["skipped_era"] += 1
+            continue
+
+        # Resolve absolute path
+        fpath = REPO / relpath
+        if not fpath.exists():
+            counts["skipped_no_file"] += 1
+            continue
+
+        try:
+            raw = fpath.read_text(encoding="utf-8", errors="replace")
+        except Exception as exc:
+            if verbose:
+                print(f"    ERROR reading {relpath}: {exc}")
+            counts["errors"] += 1
+            continue
+
+        # Check if already stamped
+        fm = _parse_frontmatter(raw)
+        if fm.get("generator"):
+            counts["already_stamped"] += 1
+            if verbose:
+                print(f"    SKIP (already stamped): {relpath} => {fm['generator']}")
+            continue
+
+        # Attempt to build modified text
+        new_text = _insert_generator_frontmatter(raw, generator_value)
+        if new_text is None:
+            if verbose:
+                print(f"    SKIP (no valid frontmatter): {relpath}")
+            counts["skipped_no_file"] += 1
+            continue
+
+        counts["would_stamp"] += 1
+        if verbose:
+            print(f"    {'STAMP' if execute else 'would_stamp'}: {relpath} => {generator_value}")
+
+        if execute:
+            try:
+                # Detect original encoding hint (UTF-8 BOM)
+                encoding = "utf-8-sig" if raw.startswith("﻿") else "utf-8"
+                fpath.write_text(new_text, encoding=encoding)
+                counts["stamped"] += 1
+            except Exception as exc:
+                if verbose:
+                    print(f"    ERROR writing {relpath}: {exc}")
+                counts["errors"] += 1
+                counts["would_stamp"] -= 1  # correct the would_stamp count
+
+    return counts
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -956,6 +1119,21 @@ def main() -> None:
     group.add_argument("--site", choices=list(SITE_CONFIG.keys()), help="Single site to process")
     group.add_argument("--all", action="store_true", help="Process all 5 sites")
     parser.add_argument("--verbose", "-v", action="store_true")
+    parser.add_argument(
+        "--backfill-generator",
+        action="store_true",
+        help=(
+            "Backfill generator: frontmatter field from era classification. "
+            "Default is dry-run (prints counts only). Pass --execute to write files. "
+            "Combine with --site or --all."
+        ),
+    )
+    parser.add_argument(
+        "--execute",
+        action="store_true",
+        help="Required to actually write files when --backfill-generator is set. "
+             "Without this flag the backfill prints counts only.",
+    )
     args = parser.parse_args()
 
     sites = list(SITE_CONFIG.keys()) if args.all else [args.site]
@@ -970,6 +1148,40 @@ def main() -> None:
         inventory_paths.append(str(inv_path))
         counts = _era_counts(records)
         print(f"  [{site}] era counts: {counts}")
+
+    # --backfill-generator mode: run after normal classification so we have
+    # fresh era/confidence data. Dry-run unless --execute is passed.
+    if args.backfill_generator:
+        execute = getattr(args, "execute", False)
+        mode_label = "EXECUTE" if execute else "DRY-RUN"
+        print(f"\n=== BACKFILL-GENERATOR ({mode_label}) ===")
+        if execute:
+            print("  Writing generator: fields to frontmatter...")
+        else:
+            print("  Dry-run only. Pass --execute to write files.")
+        print("")
+
+        total_would_stamp = 0
+        total_stamped = 0
+        for site, records in all_results.items():
+            bf_counts = _backfill_site(site, records, execute=execute, verbose=args.verbose)
+            total_would_stamp += bf_counts["would_stamp"]
+            total_stamped += bf_counts["stamped"]
+            print(
+                f"  [{site}] would_stamp={bf_counts['would_stamp']} "
+                f"already_stamped={bf_counts['already_stamped']} "
+                f"skipped_era={bf_counts['skipped_era']} "
+                f"skipped_no_file={bf_counts['skipped_no_file']} "
+                f"errors={bf_counts['errors']}"
+                + (f" stamped={bf_counts['stamped']}" if execute else "")
+            )
+
+        print("")
+        if execute:
+            print(f"  Total stamped: {total_stamped}")
+        else:
+            print(f"  Total would_stamp: {total_would_stamp} (run with --execute to apply)")
+        return
 
     # Summary doc (always written, even for single site — but use all available results)
     if args.all or len(all_results) == len(SITE_CONFIG):
