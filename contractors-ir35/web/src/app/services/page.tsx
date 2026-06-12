@@ -52,7 +52,7 @@ const services = [
     body: [
       "The most tax-efficient split between director salary and dividends changes each year as income tax bands, NIC rates, the dividend allowance and the dividend tax rates shift.",
       "We model the optimal structure for your circumstances each tax year, taking into account your other income sources, your pension contributions, and whether you have a spouse or partner who is also a shareholder.",
-      "For 2024/25 the dividend allowance is £500. Dividend tax rates are 8.75% (basic), 33.75% (higher) and 39.35% (additional). Corporation tax at the small profits rate (19%) applies to profits up to £50,000.",
+      "For 2026/27 the dividend allowance is £500. Dividend tax rates are 10.75% (basic), 35.75% (higher) and 39.35% (additional), following the Finance Act 2026 increases. Corporation tax at the small profits rate (19%) applies to profits up to £50,000.",
     ],
   },
   {

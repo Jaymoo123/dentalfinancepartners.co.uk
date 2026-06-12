@@ -101,7 +101,7 @@ export default function IR35StatusPage() {
                   ["Who pays tax and NI", "PSC pays CT; director pays income tax on salary + dividend tax", "Fee-payer deducts income tax + employee NI before paying PSC"],
                   ["How you receive payment", "Gross fee into PSC, then salary + dividends", "Net of income tax and employee NI deductions"],
                   ["Corporation tax", "Applies to PSC profit in the normal way", "No CT on the deemed payment income"],
-                  ["Dividend tax", "Taxed at 8.75% / 33.75% / 39.35% (2024/25)", "Not applicable (income treated as employment income)"],
+                  ["Dividend tax", "Taxed at 10.75% / 35.75% / 39.35% (2026/27)", "Not applicable (income treated as employment income)"],
                   ["Allowable expenses", "Company expenses deductible in the usual way", "Very limited (travel and subsistence restricted)"],
                   ["Pension contributions", "PSC employer contributions are highly tax-efficient", "Possible but more complex via PAYE arrangements"],
                 ].map(([area, outside, inside], i) => (
@@ -137,7 +137,7 @@ export default function IR35StatusPage() {
             ))}
           </ol>
           <p className="mt-10 text-sm leading-relaxed text-neutral-500 max-w-2xl">
-            Small company exemption: if your end client meets two of the following criteria (turnover below £10.2m, balance sheet below £5.1m, fewer than 50 employees), the old rules still apply and your PSC self-assesses its own IR35 status.
+            Small company exemption: if your end client meets two of the following criteria (turnover not more than £15m, balance sheet not more than £7.5m, fewer than 50 employees, for financial years beginning on or after 6 April 2025), the old rules apply and your PSC self-assesses its own IR35 status. Note the timing lag: a previously medium client cannot fall out of scope before 6 April 2027.
           </p>
         </div>
       </section>

@@ -77,8 +77,9 @@ _HALLUCINATION_ZONES = [
     (
         "Off-payroll rule liability shift timeline: PUBLIC SECTOR shifted to engager from 6 April 2017."
         " PRIVATE SECTOR (medium/large businesses only) from 6 April 2021."
-        " Small businesses (meeting 2 of 3: turnover < £10.2m, balance sheet < £5.1m, < 50 employees)"
-        " remain exempt — the PSC still self-assesses its own IR35 status."
+        " Small businesses (meeting 2 of 3: turnover <= £15m, balance sheet <= £7.5m, < 50 employees,"
+        " thresholds raised for financial years beginning on/after 6 April 2025; earliest a previously"
+        " medium client exits Chapter 10 is 6 April 2027) remain exempt — the PSC still self-assesses."
     ),
     (
         "INSIDE IR35 tax treatment: the FEE-PAYER deducts income tax + employee NICs from the contract"
@@ -98,8 +99,9 @@ _HALLUCINATION_ZONES = [
         " An 'undetermined' CEST result means the tool cannot decide; HMRC has not pre-approved inside."
     ),
     (
-        "Dividend tax rates 2024/25: basic rate band 8.75%, higher rate 33.75%, additional rate 39.35%."
-        " Dividend allowance £500 (reduced from £1,000 in 2023/24 and £2,000 in 2022/23)."
+        "Dividend tax rates 2026/27 (FA 2026 s.4, from 6 April 2026): basic rate band 10.75%,"
+        " higher rate 35.75%, additional rate 39.35% (unchanged). Old rates 8.75%/33.75% apply to"
+        " 2025/26 and earlier only. Dividend allowance £500."
         " ALWAYS label rates with the specific tax year. Do not quote 2022/23 or older rates as current."
     ),
     (
@@ -199,8 +201,8 @@ OUTPUT FORMAT — use exactly these ==markers==:
 ==content==       (full HTML body: <h2>, <p>, <ul>/<ol>, <strong>, <table> only — no <h1>, no inline styles)
 
 CONTENT RULES
-- Use 2024/25 or 2025/26 tax year figures and ALWAYS label them with the year.
-- Dividend tax rates 2024/25: basic 8.75%, higher 33.75%, additional 39.35%. Dividend allowance £500.
+- Use current 2026/27 tax year figures and ALWAYS label them with the year.
+- Dividend tax rates 2026/27: basic 10.75%, higher 35.75%, additional 39.35%. Dividend allowance £500.
 - Corporation tax: 19% on profits up to £50,000 (small profits rate), 25% above £250,000, marginal relief between.
 - Off-payroll rules: public sector April 2017, private sector medium/large April 2021, small companies exempt.
 - Travel expenses: 24-month rule. Ordinary commuting is not allowable once the workplace becomes permanent.
@@ -281,7 +283,7 @@ SITE_CONFIG: dict = {
         "language_cues": [
             "IR35 status", "inside/outside IR35", "off-payroll rules", "CEST tool",
             "deemed employment", "PSC", "fee-payer liability", "SDS", "24-month rule",
-            "dividend tax 8.75%/33.75%", "corporation tax 19%/25%", "MSC legislation",
+            "dividend tax 10.75%/35.75%", "corporation tax 19%/25%", "MSC legislation",
             "£60k pension allowance", "April 2021 private sector", "small company exemption",
         ],
         "preferred_hooks": [

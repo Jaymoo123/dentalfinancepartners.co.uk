@@ -562,7 +562,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Small company exemption and self-assessment",
         body:
-          "Many marketing and creative contractors work with small companies (start-ups, SMEs, boutique agencies) that meet the small company exemption criteria (turnover below £10.2m, balance sheet below £5.1m, fewer than 50 employees). In these cases, the PSC self-assesses its own IR35 status, which is both an opportunity and a responsibility. A clean outside position is likely for genuinely deliverable-based work.",
+          "Many marketing and creative contractors work with small companies (start-ups, SMEs, boutique agencies) that meet the small company exemption criteria (turnover not more than £15m, balance sheet not more than £7.5m, fewer than 50 employees, for financial years beginning on or after 6 April 2025). In these cases, the PSC self-assesses its own IR35 status, which is both an opportunity and a responsibility. A clean outside position is likely for genuinely deliverable-based work.",
       },
       {
         title: "Embedded creative roles in large organisations",
