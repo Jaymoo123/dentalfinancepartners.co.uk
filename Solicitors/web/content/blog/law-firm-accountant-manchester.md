@@ -73,7 +73,7 @@ faqs:
 <p>Key considerations for Manchester partnerships include:</p>
 
 <ul>
-<li>Managing the transition to current year basis taxation</li>
+<li>Managing partnership taxation on the tax-year basis (in force from 2024/25, with transition profits spreading to 2027/28)</li>
 <li>Optimising profit allocation between partners</li>
 <li>Planning for potential NI changes affecting LLP members in 2026</li>
 <li>Ensuring adequate cash reserves for increased tax liabilities</li>

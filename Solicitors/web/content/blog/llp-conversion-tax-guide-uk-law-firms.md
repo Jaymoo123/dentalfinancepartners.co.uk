@@ -6,14 +6,14 @@ generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "LLP Conversion Tax Guide | UK Law Firm Conversion Rules"
-metaDescription: "Converting a partnership to an LLP triggers deemed disposal for CGT. Incorporation relief, WIP taxation, SDLT, and VAT re-registration explained."
+metaDescription: "Converting a partnership to an LLP is usually CGT-neutral under TCGA 1992 s.59A. The tax-transparency rules, WIP, SDLT, and VAT re-registration explained."
 altText: "UK law firm partners reviewing LLP conversion tax documentation and financial statements"
 image: ""
 h1: "LLP Conversion Tax: Essential Guide for UK Law Firms"
 summary: "Converting your law firm partnership to an LLP triggers specific tax consequences that require careful planning. Understanding the capital gains, income tax and stamp duty implications is essential for a successful conversion."
 keyTakeaways:
-  - "Conversion is a deemed disposal of each partner's share, creating a potential capital gains tax charge on goodwill."
-  - "Incorporation relief under Section 162 TCGA 1992 can defer the gain by rolling it into the new LLP interest."
+  - "Converting a general partnership to an LLP is normally NOT a disposal for CGT: TCGA 1992 s.59A treats the LLP as transparent, so each partner is treated as continuing to hold the same fractional interests in the underlying assets."
+  - "Section 162 TCGA 1992 incorporation relief is for transfers to a COMPANY in exchange for shares. It has no role in a partnership-to-LLP conversion, because an LLP issues no shares and is not a company for CGT."
   - "Work in progress transfers at market value, so any excess over book value (such as £40,000 above £100,000 cost) is taxed as income."
   - "Transferring firm-owned premises to the LLP can trigger SDLT, and the partnership's VAT registration cannot transfer."
   - "Elections such as incorporation relief have strict deadlines, typically 31 January after the conversion tax year."
@@ -21,9 +21,9 @@ schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/structure-incorporation/llp-conversion-tax-guide-uk-law-firms"
 faqs:
   - question: "What are the main tax consequences of converting a law firm partnership to an LLP?"
-    answer: "The main tax consequences include potential capital gains tax on deemed disposal of partnership interests, income tax on work in progress transfers, stamp duty land tax on property transfers, and VAT registration changes. However, various reliefs like incorporation relief can defer or eliminate many of these charges when properly planned."
+    answer: "Provided the members and their fractional interests stay the same, the conversion itself is normally tax-neutral: TCGA 1992 s.59A treats the LLP as transparent for CGT, so there is no disposal of the underlying assets, and income tax continuity usually applies to the trade. The practical workstreams are SDLT analysis on any property transfer (partnership reliefs can apply but must be checked), VAT re-registration or transfer of the registration, and re-papering client engagements and bank facilities. Changes in profit shares or members made at the same time CAN create disposals, which is where advice matters."
   - question: "Can capital gains tax be avoided on LLP conversion?"
-    answer: "Capital gains tax can often be deferred (not avoided) using incorporation relief under Section 162 TCGA 1992. This rolls the gain into your LLP interest, so tax is only payable when you eventually dispose of your LLP share. Certain conditions must be met and elections made within required timeframes."
+    answer: "Usually there is no capital gains tax to defer: under TCGA 1992 s.59A an LLP carrying on a business is treated as a partnership, so converting a general partnership to an LLP with unchanged members and shares is not a disposal event. Section 162 incorporation relief is irrelevant here; it applies only when a business is transferred to a company wholly or partly for shares. CGT planning becomes relevant if interests change on conversion or if the firm later incorporates."
   - question: "How does LLP conversion affect work in progress (WIP) taxation?"
     answer: "WIP transfers to the LLP at market value, potentially creating an income tax charge if the market value exceeds the partnership's book value. For example, if WIP is shown at cost of £100,000 but market value is £140,000, the £40,000 difference creates taxable income. Timing elections can spread this charge over several years."
   - question: "What happens to the partnership's VAT registration after LLP conversion?"
@@ -32,15 +32,15 @@ faqs:
 
 <p>Converting your law firm partnership to a Limited Liability Partnership (LLP) involves significant tax considerations that can impact both the practice and individual partners. LLP conversion tax rules require careful planning to avoid unexpected liabilities and optimize the overall tax position.</p>
 
-<p>The conversion process is treated as a deemed disposal for tax purposes, potentially triggering capital gains tax on partnership assets. However, specific reliefs and elections can minimize or defer these charges when properly implemented.</p>
+<p>For capital gains tax the conversion is normally a non-event: TCGA 1992 s.59A treats an LLP carrying on a business with a view to profit as a partnership, so the members are treated as continuing to own the same fractional interests in the underlying assets. No disposal, no deemed disposal, no CGT charge, provided membership and profit shares are unchanged at the point of conversion.</p>
 
 <h2>Capital Gains Tax on LLP Conversion</h2>
 
 <p>When a partnership converts to an LLP, each partner is deemed to dispose of their partnership share and acquire an equivalent interest in the LLP. This creates a potential capital gains tax liability on any increase in value since the partner joined the practice.</p>
 
-<p>For a 3-partner firm with goodwill valued at £300,000, each partner could face a deemed disposal of their one-third share (£100,000). If a partner's original cost base was nil, the entire amount becomes a potential capital gain.</p>
+<p>Take a 3-partner firm with goodwill valued at £300,000. On a straight conversion each partner simply continues to hold a one-third interest in that goodwill through the LLP; no gain crystallises. Contrast a partner whose share changes on conversion (say from one-third to one-half): the change in fractional interests is where a CGT analysis is genuinely needed.</p>
 
-<p><strong>Incorporation Relief</strong> under Section 162 TCGA 1992 can defer this charge. The relief allows partners to transfer their partnership interests to the LLP without an immediate tax charge, provided certain conditions are met. The gain is rolled into the LLP interest, crystallizing only when the member disposes of their LLP share.</p>
+<p><strong>A common confusion to avoid:</strong> Section 162 TCGA 1992 incorporation relief does not apply to an LLP conversion. It defers gains when a business is transferred to a company wholly or partly in exchange for shares; an LLP is not a company for this purpose and issues no shares. Where s.162 does become relevant is a later step, if the LLP eventually incorporates into a limited company, at which point the relief can roll the gain into the shares received.</p>
 
 <h2>Income Tax Considerations</h2>
 

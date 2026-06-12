@@ -21,7 +21,7 @@ schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant-near-me"
 faqs:
   - question: "How much does a solicitor accountant cost?"
-    answer: "Solicitor accountant fees typically range from £2,000-£8,000 annually for sole practitioners and small partnerships, with larger practices paying £10,000+ depending on complexity. Hourly rates range from £150-£400. Always get a detailed quote covering your specific requirements and ask what additional services might incur extra charges."
+    answer: "Fees scale with practice size, client-account activity and the mix of compliance versus advisory work, and pricing models vary between fixed annual fees and time-based billing. Always get a detailed quote covering your specific requirements, itemising SRA Accounts Rules work, tax compliance and advisory support, and ask what additional services might incur extra charges."
   - question: "Do I need a local solicitor accountant or can I work remotely?"
     answer: "While local accountants offer face-to-face meetings, remote specialists often provide deeper legal sector expertise and better technology. Modern cloud-based systems make remote working seamless. Choose based on expertise and service quality rather than location, though some older practices may prefer local support for document handling."
   - question: "What qualifications should a solicitor accountant have?"
@@ -127,9 +127,9 @@ faqs:
 
 <p>Solicitor accountant fees vary significantly based on service level and practice complexity. Typical structures include:</p>
 
-<p><strong>Fixed annual fees</strong> suit most sole practitioners and small partnerships, typically ranging from £2,000-£8,000 annually depending on turnover and complexity.</p>
+<p><strong>Fixed annual fees</strong> suit most sole practitioners and small partnerships, scaling with turnover, client-account activity and complexity, and they make budgeting predictable.</p>
 
-<p><strong>Time-based billing</strong> works for larger practices requiring extensive advisory work, usually charged at £150-£400 per hour depending on seniority and location.</p>
+<p><strong>Time-based billing</strong> works for larger practices requiring extensive advisory work, with rates varying by seniority and location, so agree scope and caps up front.</p>
 
 <p><strong>Retainer arrangements</strong> provide ongoing support with predictable monthly costs, often preferred by growing practices needing regular advice.</p>
 

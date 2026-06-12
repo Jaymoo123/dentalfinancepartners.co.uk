@@ -27,7 +27,7 @@ faqs:
   - question: "How often should Bristol law firms review their accounting arrangements?"
     answer: "Most firms benefit from monthly management accounts and quarterly compliance reviews. However, you should also review your accounting arrangements annually or when facing significant changes like partner movements, practice expansion, or regulatory updates. Regular reviews help identify efficiency improvements and ensure continued compliance."
   - question: "What should Bristol legal practices expect to pay for specialist accounting services?"
-    answer: "Costs vary significantly based on practice size, complexity, and services required. A sole practitioner might pay £2,000-£4,000 annually for comprehensive services, while larger partnerships typically invest £5,000-£15,000+ depending on their needs. The investment usually pays for itself through improved efficiency, compliance assurance, and tax planning benefits."
+    answer: "Costs vary significantly based on practice size, complexity, and services required, and the investment usually pays for itself through improved efficiency, compliance assurance, and tax planning benefits. Rather than anchoring on a headline figure, ask for a detailed written quote that itemises SRA Accounts Rules work, tax compliance, and advisory support so you can compare providers like for like."
 ---
 
 <p>Finding the right <strong>solicitor accountant Bristol</strong> support is crucial for legal practices operating in one of the UK's major commercial centres. Bristol's legal sector includes everything from high-street sole practitioners to large commercial firms, each facing unique accounting challenges that require specialist expertise.</p>

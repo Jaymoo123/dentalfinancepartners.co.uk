@@ -109,7 +109,7 @@ faqs:
 <p>Effective working capital management can reduce external financing needs and improve practice profitability.</p>
 
 <h3>Client Money Management</h3>
-<p>Proper client money handling under <a href="/sra-compliance">SRA Accounts Rules</a> ensures compliance while optimizing interest earnings. Segregated client accounts must earn interest for clients on balances above £500, but practices can negotiate retention percentages with banks.</p>
+<p>Proper client money handling under <a href="/sra-compliance">SRA Accounts Rules</a> ensures compliance while optimizing interest earnings. Rule 7.1 requires firms to account to clients for a fair sum of interest on client money (the 2019 rules set no monetary threshold), and practices can still negotiate their own deposit rates with banks within that duty.</p>
 
 <p>Client money float provides temporary working capital as payments clear, but practices must ensure sufficient liquid funds to meet client money obligations at all times.</p>
 

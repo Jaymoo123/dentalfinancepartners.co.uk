@@ -29,7 +29,7 @@ faqs:
   - question: "What qualifications should the best accountant for solicitors have?"
     answer: "Look for qualified accountants (ACA, ACCA, or CIMA) with demonstrable legal sector experience. More important than basic qualifications is specific knowledge of SRA Accounts Rules, trust accounting, and legal practice taxation. The best solicitor accountants often hold additional certifications in legal sector accounting or regularly attend SRA compliance training."
   - question: "How much should I expect to pay for a specialist solicitor accountant?"
-    answer: "Fees vary based on practice size and complexity, but specialist legal accountants typically charge 10-20% more than generalists. For a sole practitioner, expect £2,000-4,000 annually. Small partnerships might pay £4,000-8,000. However, the additional cost is often offset by better tax planning, compliance support, and reduced risk of regulatory issues."
+    answer: "Fees vary based on practice size, structure and client-account complexity, and specialist legal accountants typically charge more than generalists because the SRA compliance work is real and skilled. The additional cost is often offset by better tax planning, compliance support, and reduced risk of regulatory issues. Rather than anchoring on headline figures, ask for a detailed written quote that itemises SRA Accounts Rules work, tax compliance, and advisory support so you can compare providers like for like."
   - question: "How often should my accountant review my practice finances?"
     answer: "Monthly reconciliations are essential for SRA compliance, but quarterly business reviews are recommended for strategic planning. Your accountant should also conduct annual tax planning sessions and provide regular updates on regulatory changes. More frequent contact may be needed during busy periods or when facing specific challenges."
   - question: "What's the difference between a general accountant and a law firm accountant?"
@@ -263,7 +263,7 @@ faqs:
 
 <p>Expect to pay more than you would for a general business accountant. Specialist legal sector knowledge commands a premium, but this investment typically pays for itself through better compliance and tax planning.</p>
 
-<p>For a typical 3-partner firm with £600k annual turnover, annual accounting fees might range from £4,000 to £8,000 depending on complexity and services included.</p>
+<p>For a typical 3-partner firm, the fee depends on transaction volumes, the size of the client account, and how much advisory work sits on top of compliance, so insist on an itemised quote rather than a headline figure.</p>
 
 <h2>The Importance of Technology Integration</h2>
 <p>Modern solicitor accountants should use cloud-based accounting software that integrates with legal practice management systems. This integration improves accuracy and reduces manual data entry.</p>
@@ -292,9 +292,9 @@ faqs:
 
 <h3>Partnership and LLP Tax Planning</h3>
 
-<p>For partnerships, solicitor accountants manage the transition to current year basis under Basis Period Reform, optimise profit allocations between partners, and plan for the April 2026 Making Tax Digital rollout.</p>
+<p>For partnerships, solicitor accountants manage taxation on the tax-year basis (the regime in force since 2024/25 under basis period reform, with any transition profits spreading to 2027/28), optimise profit allocations between partners, and plan for the April 2026 Making Tax Digital rollout.</p>
 
-<p>They advise on LLP conversion benefits, particularly with the potential 2026 employer NI changes, and structure partner remuneration to minimise overall tax liabilities. A typical 4-partner firm might save £15,000-25,000 annually through proper tax planning.</p>
+<p>They advise on whether an LLP or company structure fits the firm, and structure partner remuneration to minimise overall tax liabilities within the salaried-member rules. For a multi-partner firm the annual savings from proper structuring routinely exceed the specialist fee.</p>
 
 <h3>Sole Practitioner Support</h3>
 

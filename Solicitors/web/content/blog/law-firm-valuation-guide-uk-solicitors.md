@@ -27,7 +27,7 @@ faqs:
 - question: How does client concentration affect law firm valuation?
   answer: High client concentration reduces valuation significantly. If one client represents over 20% of revenue, valuers typically apply discounts due to business risk and potential revenue loss.
 - question: What costs are involved in professional law firm valuation?
-  answer: Professional law firm valuation typically costs £3,000-£10,000 depending on practice size and complexity. This investment often provides significant returns through better sale outcomes and negotiating positions.
+  answer: The cost of a professional law firm valuation depends on practice size, complexity and the purpose of the valuation (sale, partner exit, or dispute). The investment often provides significant returns through better sale outcomes and negotiating positions, so get itemised quotes from valuers with legal-sector experience.
 - question: How much is my solicitor practice worth?
   answer: Practice values typically range from 1-3 times annual net profit, but depend heavily on factors like client concentration, practice area, profitability trends, and market position. A formal valuation from a qualified professional provides the most accurate assessment.
 - question: What factors reduce solicitor practice value?
@@ -122,7 +122,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Qualified valuers bring market knowledge, access to comparable sales data, and credibility with potential buyers. Their reports provide defensible valuation positions for negotiations.</p>
 
-<p>Professional law firm valuation typically costs £3,000-£10,000 depending on practice complexity, but this investment often pays for itself through improved sale outcomes.</p>
+<p>What a professional valuation costs depends on practice complexity and the purpose it must stand up to, but the investment often pays for itself through improved sale outcomes.</p>
 
 <h2>Preparing Your Practice for Valuation</h2>
 <h3>Financial Documentation</h3>
@@ -192,7 +192,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Choose valuers with specific legal sector experience who understand SRA requirements, client money regulations, and the unique risks facing UK law firms. Generic business valuers often miss critical factors that affect legal practice values.</p>
 
-<p>Professional valuations typically cost £2,000-£10,000 depending on practice size and complexity, but provide essential protection in formal transactions or disputes.</p>
+<p>Professional valuations are priced to the size and complexity of the practice and the formality required, and they provide essential protection in formal transactions or disputes.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

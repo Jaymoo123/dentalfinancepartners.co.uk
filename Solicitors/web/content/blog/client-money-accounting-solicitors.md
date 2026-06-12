@@ -6,7 +6,7 @@ generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Client Money Accounting for Solicitors | SRA Rules"
-metaDescription: "Mixing client and practice money triggers SRA intervention. Segregation rules, monthly reconciliation, interest duties, and record-keeping explained."
+metaDescription: "Mixing client and practice money triggers SRA intervention. Segregation rules, five-weekly reconciliation, interest duties, and record-keeping explained."
 altText: "UK solicitor reviewing client money accounting records and SRA compliance documentation"
 image: ""
 h1: "Client Money Accounting for Solicitors: Essential SRA Compliance Guide"
@@ -14,19 +14,19 @@ summary: "Essential guide covering SRA Accounts Rules compliance for client mone
 keyTakeaways:
   - "Client money is any money you hold that does not belong to your firm and must be kept in a separate, designated client account at all times."
   - "Mixing client and practice money breaches the SRA Accounts Rules and can trigger intervention, fines and restriction of your practising certificate."
-  - "Reconcile client accounts monthly, comparing client ledger balances to bank statements and investigating every difference."
-  - "Pay interest on client money over 500 pounds held for more than 8 weeks, at a reasonable rate (typically base rate minus 2%), per your terms of business."
+  - "Reconcile client accounts at least every five weeks (SRA Accounts Rule 8.3), comparing client ledger balances to bank statements and investigating every difference, with COFA or manager sign-off."
+  - "Pay clients a fair sum of interest on client money (SRA Accounts Rule 7.1). The 2019 rules set no monetary threshold or prescribed rate: your written policy defines what is fair."
   - "Keep client cash accounts, ledgers and reconciliation records for at least six years, available for SRA inspection."
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/client-money-accounting-solicitors"
 faqs:
   - question: "What happens if I mix client money with practice money?"
     answer: "Mixing client and practice money breaches SRA Accounts Rules and can result in regulatory action including practice intervention, fines, and restriction of your practising certificate. You must immediately separate the funds and report the breach if material. Even minor mixing requires investigation and correction to prevent future occurrences."
   - question: "How often must I reconcile client money accounts?"
-    answer: "The SRA requires monthly reconciliation of all client money accounts. This involves comparing your client ledger balances with bank statement balances and investigating any differences. You should also perform daily checks on significant transactions and maintain ongoing oversight of client money movements throughout each month."
+    answer: "SRA Accounts Rule 8.3 requires reconciliation of all client money accounts at least every five weeks, signed off by the COFA or a manager. Note that five-weekly is the rule, not monthly: a calendar-month habit can silently breach it in longer months. Compare your client ledger balances with bank statement balances, investigate any differences, and keep oversight of client money movements between reconciliations."
   - question: "Do I need to pay interest on all client money held?"
-    answer: "You must pay interest on client money exceeding £500 held for more than 8 weeks, unless your terms of business specify different arrangements. The rate should be reasonable, typically base rate minus 2%. You're not required to pay interest on smaller amounts or money held for shorter periods, but your client care letters should explain your policy."
+    answer: "SRA Accounts Rule 7.1 requires you to account to clients for a fair sum of interest on client money you hold. The 2019 rules deliberately removed the old prescriptive thresholds, so there is no £500 floor or set rate in the current rules. What is fair depends on the amount and the period held; your terms of business should set out your interest policy, and a written agreement with the client can vary it."
   - question: "What records must I keep for client money accounting?"
-    answer: "You must maintain client cash accounts, client ledger accounts, and records of all receipts and payments. These records must show dates, amounts, client names, matter details, and transaction purposes. All records must be kept for at least six years and be available for SRA inspection. Monthly reconciliation records and annual reports are also required."
+    answer: "You must maintain client cash accounts, client ledger accounts, and records of all receipts and payments. These records must show dates, amounts, client names, matter details, and transaction purposes. All records must be kept for at least six years and be available for SRA inspection. Reconciliation records (at least five-weekly) and, where required, the accountant's report must also be retained."
 ---
 
 <p>Client money accounting for solicitors is governed by strict SRA Accounts Rules that every law firm must follow. These rules protect client funds and ensure proper segregation between client money and practice funds. Getting this wrong can lead to serious regulatory consequences, including SRA intervention.</p>
@@ -72,7 +72,7 @@ faqs:
 <li>A client cash account for each client matter</li>
 <li>A client ledger account for each client</li>
 <li>A record of all receipts and payments</li>
-<li>Monthly reconciliations of client accounts</li>
+<li>Reconciliations of client accounts at least every five weeks (Rule 8.3)</li>
 <li>Annual reconciliations and reports</li>
 </ul>
 
@@ -94,9 +94,9 @@ faqs:
 
 <p>For example, when receiving a £50,000 property deposit, you'd record the client name, property address, date received, paying bank, and the completion date it's being held for.</p>
 
-<h3>Monthly Reconciliation Process</h3>
+<h3>The Five-Weekly Reconciliation Process</h3>
 
-<p>Client money accounting requires monthly reconciliation between your client ledger balances and actual bank balances. This process identifies discrepancies early and ensures accuracy.</p>
+<p>SRA Accounts Rule 8.3 requires a reconciliation between your client ledger balances and actual bank balances at least every five weeks, signed off by the COFA or a manager. Many firms run it monthly out of habit, but five weeks is the regulatory backstop, and a monthly routine can drift past it. This process identifies discrepancies early and ensures accuracy.</p>
 
 <p>The reconciliation should show:</p>
 <ul>
@@ -112,12 +112,11 @@ faqs:
 
 <h3>Interest on Client Money</h3>
 
-<p>You must pay interest to clients when holding their money for extended periods. The current approach requires:</p>
+<p>Under SRA Accounts Rule 7.1 you must account to clients for a fair sum of interest on client money you hold. The 2019 rules removed the old prescriptive formula, so the current approach requires:</p>
 <ul>
-<li>Interest on amounts over £500 held for more than 8 weeks</li>
-<li>Using a reasonable rate (typically base rate minus 2%)</li>
-<li>Clear terms of business explaining your interest policy</li>
-<li>Regular calculation and payment of accrued interest</li>
+<li>A written interest policy that defines what your firm treats as fair, by amount and period held</li>
+<li>Clear terms of business explaining that policy to clients (a written agreement can vary it)</li>
+<li>Regular calculation and payment of accrued interest under the policy</li>
 </ul>
 
 <p>A litigation firm holding £25,000 settlement funds for 3 months would need to calculate and pay interest to the client, even if the amount seems small relative to their practice size.</p>

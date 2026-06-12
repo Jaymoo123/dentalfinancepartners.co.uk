@@ -43,7 +43,7 @@ faqs:
 <h2>Tax Implications of Partner Retirement</h2>
 <p>Partner retirement planning involves several tax considerations that differ significantly from employed retirement scenarios. Partners are taxed on their share of partnership profits in the tax year they arise, not when they receive payment.</p>
 
-<p>Capital gains tax may apply to goodwill payments or other capital distributions. The current CGT rates for 2025/26 are 10% (basic rate) and 20% (higher rate) for business assets, though proposed changes could affect future retirement planning.</p>
+<p>Capital gains tax applies to goodwill payments and other capital distributions. The standard CGT rates are 18% within the basic rate band and 24% above it, applying to all chargeable assets for disposals from 30 October 2024, with a £3,000 annual exempt amount. Business Asset Disposal Relief can reduce the rate on qualifying gains up to the £1m lifetime limit: 14% for disposals between 6 April 2025 and 5 April 2026, rising to 18% from 6 April 2026, so the completion date of a retirement deal materially changes the bill.</p>
 
 <p>Basis Period Reform, implemented from 2024/25, means partners are now taxed on profits arising in the tax year rather than profits of the accounting period ending in that year. This creates potential timing advantages for retirement planning.</p>
 
@@ -59,7 +59,7 @@ faqs:
 
 <p>The annual allowance for pension contributions in 2025/26 is £60,000, but partners with high earnings may face the tapered annual allowance. A partner earning £300,000 annually would have their annual allowance reduced to £10,000, significantly limiting tax-efficient pension contributions.</p>
 
-<p>Many partners benefit from spreading pension contributions across multiple tax years and considering carry-forward rules from previous years. Partners approaching retirement should also consider the lifetime allowance implications, particularly if their pension funds exceed £1.073 million.</p>
+<p>Many partners benefit from spreading pension contributions across multiple tax years and considering carry-forward rules from previous years. Note that the pension lifetime allowance no longer exists: the LTA charge was removed from April 2023 and the allowance fully abolished from 6 April 2024. The figures that now matter are the Lump Sum Allowance of £268,275 (the cap on tax-free lump sums) and the Lump Sum and Death Benefit Allowance of £1,073,100; large funds face no standalone LTA-style charge, but tax-free cash is capped.</p>
 
 <h3>Pension Drawdown vs Annuity Options</h3>
 

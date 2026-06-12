@@ -16,15 +16,15 @@ h1: 'COFA Responsibilities for Accounting: A Complete Guide for UK Law Firms'
 summary: COFAs face significant accounting responsibilities under SRA regulations, from client money oversight to financial controls. Understanding these duties is crucial for compliance and avoiding regulatory issues.
 keyTakeaways:
 - 'COFA accounting duties cannot be delegated: you can outsource the bookkeeping, but you remain personally responsible for SRA Accounts Rules compliance and oversight.'
-- Client account reconciliations must be completed by the 5th working day of the following month and personally reviewed by the COFA.
+- Client account reconciliations must be completed at least every five weeks (SRA Accounts Rule 8.3) and signed off by the COFA or a manager. The rules set no working-day deadline; the five-week cycle is the requirement.
 - Keep client money rigorously segregated in designated client accounts and used only for its intended purpose, with supporting documentation for every transaction.
 - Maintain client ledger cards, bank records and reconciliations for at least six years after the matter concludes, available for SRA inspection.
 - Complete the annual SRA compliance certificate honestly; false certification can lead to serious disciplinary action.
 faqs:
 - question: What are the key accounting duties of a COFA?
-  answer: COFAs must oversee client money management, ensure monthly reconciliations are completed by the 5th working day, implement financial controls, maintain proper records, and complete annual compliance certificates. These responsibilities cannot be delegated and require direct COFA involvement even if external accountants are used.
+  answer: COFAs must oversee client money management, ensure reconciliations are completed at least every five weeks under SRA Accounts Rule 8.3 and sign them off, implement financial controls, maintain proper records, and complete annual compliance certificates. These responsibilities cannot be delegated and require direct COFA involvement even if external accountants are used.
 - question: How often must client account reconciliations be completed?
-  answer: Client account reconciliations must be completed monthly by the 5th working day of the following month. The COFA must personally review these reconciliations and investigate any discrepancies immediately. Missing or late reconciliations are a common trigger for SRA regulatory action.
+  answer: SRA Accounts Rule 8.3 requires client account reconciliations at least every five weeks, signed off by the COFA or a manager. There is no "5th working day" or month-end deadline in the rules; the five-week cycle itself is the obligation, and treating it as monthly can silently breach it in longer months. The COFA must review reconciliations and investigate any discrepancies promptly. Missing or late reconciliations are a common trigger for SRA regulatory action.
 - question: Can a COFA delegate their accounting responsibilities?
   answer: No, COFA responsibilities cannot be delegated. While you can engage external accountants or bookkeepers to perform day-to-day tasks, the COFA remains personally responsible for ensuring compliance with SRA Accounts Rules and maintaining proper oversight of all financial matters.
 - question: What records must a COFA maintain for SRA compliance?
@@ -49,7 +49,7 @@ schema: ''
 
 <h3>Monthly Reconciliations</h3>
 
-<p>COFAs must ensure monthly reconciliations are completed for all client accounts. These reconciliations must be performed by the 5th working day of the following month and reviewed personally by the COFA.</p>
+<p>COFAs must ensure reconciliations are completed for all client accounts at least every five weeks, the cycle set by SRA Accounts Rule 8.3. The rules contain no working-day deadline; what matters is that no more than five weeks passes between reconciliations and that the COFA or a manager signs each one off.</p>
 
 <p>The reconciliation process involves comparing your client ledger balances with bank statements and investigating any discrepancies immediately. Missing reconciliations are a common source of SRA intervention.</p>
 

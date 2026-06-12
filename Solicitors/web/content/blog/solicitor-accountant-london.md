@@ -23,7 +23,7 @@ faqs:
   - question: "What makes a solicitor accountant different from a general accountant?"
     answer: "Solicitor accountants specialise in legal practice requirements including SRA compliance, client money regulations, partnership taxation, and practice-specific issues like lock-up management. General accountants typically lack this specialist knowledge, which can lead to compliance problems or missed opportunities."
   - question: "How much should a London law firm expect to pay for specialist accounting services?"
-    answer: "Costs vary significantly based on practice size and complexity. Small sole practitioners might pay £3,000-£5,000 annually, while larger partnerships could pay £15,000+ for comprehensive services. Fixed fee arrangements are often preferable to hourly billing for ongoing compliance work."
+    answer: "Costs vary significantly based on practice size and complexity. Fixed fee arrangements are often preferable to hourly billing for ongoing compliance work because they make budgeting predictable. Rather than comparing headline figures, ask for a detailed written quote that itemises SRA Accounts Rules work, tax compliance, and advisory support so you can compare providers like for like."
   - question: "Do I need a London-based solicitor accountant or can they work remotely?"
     answer: "While physical location is less important with modern technology, your accountant should understand London's legal market dynamics, local business rates, and banking relationships. Many successful arrangements combine remote working with periodic face-to-face meetings for strategic discussions."
   - question: "When should a law firm consider changing their accountant?"
