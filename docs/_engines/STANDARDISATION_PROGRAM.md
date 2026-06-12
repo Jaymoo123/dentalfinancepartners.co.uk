@@ -56,13 +56,9 @@ Cross-site optimisation engines: `docs/_engines/SERP_META_PROGRAM.md` (query-dri
 - **Per-site console retirement**: redundant since the unified console; deletion is the user's call.
 - **GA4 keep-or-drop** on dentists/medical/solicitors (first-party runs alongside; first-party sees ~4x GA4).
 
-## NEXT: contractors-ir35 launch (the first site BORN on the grid)
+## contractors-ir35 launch — BUILT TO DEPLOY-READY 2026-06-12 (deploy deferred to domain purchase)
 
-State: scaffolded at `contractors-ir35/` — empty niche config, no topic seed, no Vercel project, key `contractors` NOT yet in the `sites` registry or `leads.source` CHECK (verify against the LIVE db, not this doc).
-The path (each step has a proven template now):
-1. Niche config (validator enforces shape) + content strategy + topic seed — the niche/product decisions are the real work.
-2. Register the site key in the live DB FIRST (sites registry + leads CHECK — the track route's FK rejects unregistered keys by design).
-3. Compose the shared machinery (analytics with a fresh frozen prefix, tools, console mount, LeadForm contract) — mirror any Phase D adoption diff, e.g. PR #12 (solicitors).
-4. CI matrix entry + Vercel project (root-dir pattern in the Phase E/F logs) + env set + deploy + the standard live battery.
-5. It appears in the estate console automatically (registry-driven).
-Content programs (net-new waves, rewrite engine) onboard per `ENGINE_MAP_AND_ONBOARDING.md` once the site is live.
+The 7th site was taken from scaffold to deploy-ready in one session: live-DB registration, full machinery composition (prefix `cfp`), petrol/cyan identity pass, 644-topic seed, 15-page proving wave (with the Sonnet-vs-Haiku writing-model bake-off, see `docs/contractors-ir35/BAKEOFF_2026-06.md`), CI entry, and the Vercel project + env (deploy itself waits on the domain, one-go window).
+
+- **Current state + deploy-day runbook: `docs/contractors-ir35/STATE.md`** (single source of truth for this site).
+- **Future site launches: `docs/_engines/SITE_SPINUP.md`** — the reusable end-to-end runbook written from (and battle-tested by) this launch, plus the `scripts/spinup_site_check.py` preflight gap reporter (calibrated all-PASS against Dentists).
