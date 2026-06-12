@@ -1,34 +1,37 @@
 ---
-title: "How Does VAT Apply to Overseas Clients for a UK Law Firm?"
-slug: "vat-on-overseas-clients-uk-legal-services"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/vat-on-overseas-clients-uk-legal-services"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "VAT & Compliance"
-metaTitle: "VAT on Overseas Clients: UK Law Firm Guide (2025/26)"
-metaDescription: "UK solicitor: does VAT apply to overseas clients? Place of supply rules for B2C and B2B overseas legal services explained with worked examples."
-altText: "UK solicitor reviewing a contract with an overseas client, law firm VAT compliance documents visible"
-image: ""
-h1: "How Does VAT Apply to Overseas Clients for a UK Law Firm?"
-summary: "A UK law firm must determine whether VAT applies to overseas clients by applying place of supply rules. The key distinction is whether the client is a business (B2B) or a consumer (B2C), and where the client is established. This guide explains the rules with worked examples for solicitors."
+title: How Does VAT Apply to Overseas Clients for a UK Law Firm?
+slug: vat-on-overseas-clients-uk-legal-services
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/vat-on-overseas-clients-uk-legal-services
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: VAT & Compliance
+metaTitle: 'VAT on Overseas Clients: a UK Law Firm Place-of-Supply'
+metaDescription: Does UK VAT apply to overseas clients? Place of supply rules for B2B and B2C work, with 20% VAT still due on UK conveyancing whoever the client is.
+altText: UK solicitor reviewing a contract with an overseas client, law firm VAT compliance documents visible
+image: ''
+h1: How Does VAT Apply to Overseas Clients for a UK Law Firm?
+summary: A UK law firm must determine whether VAT applies to overseas clients by applying place of supply rules. The key distinction is whether the client is a business (B2B) or a consumer (B2C), and where the client is established. This guide explains the rules with worked examples for solicitors.
 keyTakeaways:
-  - "VAT on overseas clients turns on the place of supply rules, driven by whether the client is a business (B2B) or a consumer (B2C)."
-  - "For B2B services not relating to land, the place of supply is where the client belongs, so no UK VAT is charged on an overseas business."
-  - "For B2C services, the place of supply is the UK, so 20% VAT applies even when the private client lives abroad."
-  - "Services relating to a specific piece of land are taxed where the land sits, so UK conveyancing always carries 20% UK VAT."
-  - "For a no-VAT B2B treatment, hold evidence of business status such as a VAT or company registration number, verified via VIES for EU clients."
-schema: ""
+- VAT on overseas clients turns on the place of supply rules, driven by whether the client is a business (B2B) or a consumer (B2C).
+- For B2B services not relating to land, the place of supply is where the client belongs, so no UK VAT is charged on an overseas business.
+- For B2C services, the place of supply is the UK, so 20% VAT applies even when the private client lives abroad.
+- Services relating to a specific piece of land are taxed where the land sits, so UK conveyancing always carries 20% UK VAT.
+- For a no-VAT B2B treatment, hold evidence of business status such as a VAT or company registration number, verified via VIES for EU clients.
+schema: ''
 faqs:
-  - question: "What is the place of supply for a UK solicitor advising a US business on a UK commercial contract?"
-    answer: "If the advice does not relate to land, the place of supply is where the client belongs (the US). The supply is B2B, so no UK VAT is charged. You must hold evidence of the client's business status, such as a US tax ID or company registration number. If the advice relates to UK land (e.g., a property dispute), the place of supply is the UK and UK VAT applies at 20%."
-  - question: "Do I charge VAT on legal fees for a private client living in France?"
-    answer: "Yes. For a B2C supply (private individual), the place of supply is where your law firm is established (the UK). You must charge 20% UK VAT on your fees, regardless of the client's residence. The only exception is if the service relates to land outside the UK (e.g., advising on a French property purchase), in which case the place of supply is France and no UK VAT is charged."
-  - question: "What evidence do I need to treat an overseas client as B2B for VAT purposes?"
-    answer: "HMRC expects you to hold reasonable commercial evidence. This includes the client's VAT registration number (if any), company registration number, business letterhead, or a signed statement from the client confirming their business status. For EU clients, you should verify the VAT number via the VIES system. For non-EU clients, a tax ID or equivalent is sufficient. Retain this evidence with your VAT records."
-  - question: "Does the land exception apply to all conveyancing work?"
-    answer: "The land exception applies to services that directly relate to a specific piece of land. This includes conveyancing, property litigation, and lease negotiations. However, services that merely touch on land (e.g., general corporate advice about a property-holding company) may not qualify. HMRC's guidance is narrow. If in doubt, seek specialist VAT advice. For conveyancing on UK land, the place of supply is always the UK, even for B2B overseas clients."
+- question: What is the place of supply for a UK solicitor advising a US business on a UK commercial contract?
+  answer: If the advice does not relate to land, the place of supply is where the client belongs (the US). The supply is B2B, so no UK VAT is charged. You must hold evidence of the client's business status, such as a US tax ID or company registration number. If the advice relates to UK land (e.g., a property dispute), the place of supply is the UK and UK VAT applies at 20%.
+- question: Do I charge VAT on legal fees for a private client living in France?
+  answer: Yes. For a B2C supply (private individual), the place of supply is where your law firm is established (the UK). You must charge 20% UK VAT on your fees, regardless of the client's residence. The only exception is if the service relates to land outside the UK (e.g., advising on a French property purchase), in which case the place of supply is France and no UK VAT is charged.
+- question: What evidence do I need to treat an overseas client as B2B for VAT purposes?
+  answer: HMRC expects you to hold reasonable commercial evidence. This includes the client's VAT registration number (if any), company registration number, business letterhead, or a signed statement from the client confirming their business status. For EU clients, you should verify the VAT number via the VIES system. For non-EU clients, a tax ID or equivalent is sufficient. Retain this evidence with your VAT records.
+- question: Does the land exception apply to all conveyancing work?
+  answer: The land exception applies to services that directly relate to a specific piece of land. This includes conveyancing, property litigation, and lease negotiations. However, services that merely touch on land (e.g., general corporate advice about a property-holding company) may not qualify. HMRC's guidance is narrow. If in doubt, seek specialist VAT advice. For conveyancing on UK land, the place of supply is always the UK, even for B2B overseas clients.
+metaTitle_prev: 'VAT on Overseas Clients: UK Law Firm Guide (2025/26)'
+metaDescription_prev: 'UK solicitor: does VAT apply to overseas clients? Place of supply rules for B2C and B2B overseas legal services explained with worked examples.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>Why Place of Supply Matters for Your Law Firm</h2>
 
 <p>If your UK law firm acts for a client based outside the United Kingdom, you cannot simply assume the work is outside the scope of VAT. The tax treatment depends on the place of supply rules set out in UK VAT law (implementing the EU Principal VAT Directive, as retained post-Brexit). Getting this wrong can mean undercharging VAT and facing an HMRC assessment, or overcharging VAT and losing a competitive advantage.</p>

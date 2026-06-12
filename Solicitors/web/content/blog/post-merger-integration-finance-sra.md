@@ -1,34 +1,37 @@
 ---
-title: "How Do Law Firms Handle Post-Merger Integration for SRA Compliance and Finance?"
-slug: "post-merger-integration-finance-sra"
-canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/post-merger-integration-finance-sra"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "Compliance & Risk (COLP / COFA)"
-metaTitle: "Post-Merger Integration SRA Compliance: Law Firm Finance Guide"
-metaDescription: "Practical guide for UK solicitors on post-merger integration for SRA compliance, COLP/COFA transition, client matter migration, and financial consolidation."
-altText: "Two solicitors reviewing merged financial statements and SRA compliance documents in a modern law firm office."
-image: ""
-h1: "How Do Law Firms Handle Post-Merger Integration for SRA Compliance and Finance?"
-summary: "A law firm merger is only the start. The real work begins with integrating SRA accounts, merging client ledgers, aligning COLP and COFA responsibilities, and ensuring the combined practice meets regulatory obligations from day one. This guide covers the financial and compliance steps every solicitor and law firm partner needs."
+title: How Do Law Firms Handle Post-Merger Integration for SRA Compliance and Finance?
+slug: post-merger-integration-finance-sra
+canonical: https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/post-merger-integration-finance-sra
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: Compliance & Risk (COLP / COFA)
+metaTitle: 'Law Firm Post-Merger Integration: SRA and Finance Steps'
+metaDescription: 'Integrate two law firms after a merger: one COLP, one COFA, consolidated client ledgers, and a clean first report. Notify the SRA within 28 days.'
+altText: Two solicitors reviewing merged financial statements and SRA compliance documents in a modern law firm office.
+image: ''
+h1: How Do Law Firms Handle Post-Merger Integration for SRA Compliance and Finance?
+summary: A law firm merger is only the start. The real work begins with integrating SRA accounts, merging client ledgers, aligning COLP and COFA responsibilities, and ensuring the combined practice meets regulatory obligations from day one. This guide covers the financial and compliance steps every solicitor and law firm partner needs.
 keyTakeaways:
-  - "The merged firm must have a single COLP and a single COFA from day one, with outgoing officers resigning their designations through the SRA portal."
-  - "Client matter migration should allow at least two weeks, ending with a full reconciliation where the new client account balance equals the total of all client ledger balances."
-  - "The merger must be notified to the SRA within 28 days of completion as a material change to the firm's structure."
-  - "The merged firm needs a new PII policy covering all work from the merger date, with run-off cover possibly required for the predecessor firms' earlier work."
-  - "A properly executed integration should produce an unqualified first SRA accountant's report, while gaps or errors trigger an SRA referral."
-schema: ""
+- The merged firm must have a single COLP and a single COFA from day one, with outgoing officers resigning their designations through the SRA portal.
+- Client matter migration should allow at least two weeks, ending with a full reconciliation where the new client account balance equals the total of all client ledger balances.
+- The merger must be notified to the SRA within 28 days of completion as a material change to the firm's structure.
+- The merged firm needs a new PII policy covering all work from the merger date, with run-off cover possibly required for the predecessor firms' earlier work.
+- A properly executed integration should produce an unqualified first SRA accountant's report, while gaps or errors trigger an SRA referral.
+schema: ''
 faqs:
-  - question: "What happens to the COLP and COFA roles after a law firm merger?"
-    answer: "The merged firm must have one COLP and one COFA. The SRA does not allow the roles to be split between predecessor firms. You should decide who will hold each role before the merger completes and notify the SRA through the online portal. The outgoing COLP and COFA should resign their designations. Both officers should be involved in the integration planning, particularly the client matter migration and the consolidation of financial systems."
-  - question: "How do you migrate client matters from two firms into one accounting system?"
-    answer: "Start by running a full client ledger reconciliation for each predecessor firm. Resolve any residual balances, unallocated deposits, or uncleared cheques. Map the chart of accounts from each system to the merged firm's system. Test the migration on a sample of matters before doing a full transfer. After migration, run a complete reconciliation of the new client account to ensure the total of all client ledger balances matches the bank balance. Allow at least two weeks for this process."
-  - question: "Do you need a new SRA accountant's report after a merger?"
-    answer: "Yes. The merged firm will need an SRA accountant's report for its first full accounting period from the merger date to the firm's chosen year-end. The reporting accountant will check the client account reconciliation at the merger date, the client matter migration, and the merged firm's ongoing compliance with the SRA Accounts Rules. A properly executed integration should result in an unqualified report."
-  - question: "What happens to the predecessor firms' PII policies after a merger?"
-    answer: "The merged firm must take out a new PII policy that covers all work from the merger date onwards. The predecessor firms' policies may need run-off cover for work done before the merger. Check with your broker whether run-off is required. Notify the merged firm's insurer of the merger; some insurers require prior approval. If the predecessor firms had different renewal dates, consider a short-term policy to align the merged firm's renewal date."
+- question: What happens to the COLP and COFA roles after a law firm merger?
+  answer: The merged firm must have one COLP and one COFA. The SRA does not allow the roles to be split between predecessor firms. You should decide who will hold each role before the merger completes and notify the SRA through the online portal. The outgoing COLP and COFA should resign their designations. Both officers should be involved in the integration planning, particularly the client matter migration and the consolidation of financial systems.
+- question: How do you migrate client matters from two firms into one accounting system?
+  answer: Start by running a full client ledger reconciliation for each predecessor firm. Resolve any residual balances, unallocated deposits, or uncleared cheques. Map the chart of accounts from each system to the merged firm's system. Test the migration on a sample of matters before doing a full transfer. After migration, run a complete reconciliation of the new client account to ensure the total of all client ledger balances matches the bank balance. Allow at least two weeks for this process.
+- question: Do you need a new SRA accountant's report after a merger?
+  answer: Yes. The merged firm will need an SRA accountant's report for its first full accounting period from the merger date to the firm's chosen year-end. The reporting accountant will check the client account reconciliation at the merger date, the client matter migration, and the merged firm's ongoing compliance with the SRA Accounts Rules. A properly executed integration should result in an unqualified report.
+- question: What happens to the predecessor firms' PII policies after a merger?
+  answer: The merged firm must take out a new PII policy that covers all work from the merger date onwards. The predecessor firms' policies may need run-off cover for work done before the merger. Check with your broker whether run-off is required. Notify the merged firm's insurer of the merger; some insurers require prior approval. If the predecessor firms had different renewal dates, consider a short-term policy to align the merged firm's renewal date.
+metaTitle_prev: 'Post-Merger Integration SRA Compliance: Law Firm Finance Guide'
+metaDescription_prev: Practical guide for UK solicitors on post-merger integration for SRA compliance, COLP/COFA transition, client matter migration, and financial consolidation.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Merging two law firms is a significant strategic move. Whether you are combining two high-street conveyancing practices, a niche litigation boutique with a full-service firm, or forming a new LLP from several sole practitioners, the post-merger integration phase is where the deal succeeds or fails.</p>
 
 <p>For solicitors and law firm partners, the financial and regulatory integration is often more complex than the commercial negotiation. The SRA Accounts Rules do not pause for a merger. Client money must remain protected. The COLP and COFA designations must be clear. And the combined firm's accounting systems must produce a single, accurate picture from day one.</p>

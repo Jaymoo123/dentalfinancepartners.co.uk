@@ -1,38 +1,39 @@
 ---
-title: "Solicitor Practice Sale: The Complete UK Process and Tax Guide"
-slug: "solicitor-practice-sale-guide"
-canonical: "https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/solicitor-practice-sale-guide"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "Practice Succession & Sale"
-metaTitle: "Solicitor Practice Sale: Process, Asset vs Share & CGT Guide"
-metaDescription: "How to sell a UK law firm: asset vs share sale, goodwill as capital, WIP as income, SRA consent and CGT with BADR by date band. Step-by-step process guide."
-metaTitle_prev: "Selling a Solicitor Practice: Valuation & Tax Guide"
-metaDescription_prev: "Valuations typically range from 0.8x-1.5x turnover. Sale process, CGT on goodwill, SRA notification requirements, and buyer due diligence explained."
-altText: "UK solicitor reviewing practice sale heads of terms and SRA consent documents at a desk"
-image: ""
-h1: "Solicitor Practice Sale: The Complete UK Process and Tax Guide"
-summary: "Selling a solicitor practice runs through preparation, choosing an asset or share sale, SRA consent and client novation, then the tax heads on goodwill, WIP and debtors. This guide walks the end-to-end process and the tax overview, with specialist links where you need to go deeper."
+title: 'Solicitor Practice Sale: The Complete UK Process and Tax Guide'
+slug: solicitor-practice-sale-guide
+canonical: https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/solicitor-practice-sale-guide
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: Practice Succession & Sale
+metaTitle: 'Solicitor Practice Sale: Process, Structure and CGT'
+metaDescription: 'How to sell a UK law firm: asset versus share sale, goodwill as capital, WIP as income, SRA consent. BADR on qualifying gains is 18% from 6 April 2026.'
+metaTitle_prev: 'Solicitor Practice Sale: Process, Asset vs Share & CGT Guide'
+metaDescription_prev: 'How to sell a UK law firm: asset vs share sale, goodwill as capital, WIP as income, SRA consent and CGT with BADR by date band. Step-by-step process guide.'
+altText: UK solicitor reviewing practice sale heads of terms and SRA consent documents at a desk
+image: ''
+h1: 'Solicitor Practice Sale: The Complete UK Process and Tax Guide'
+summary: Selling a solicitor practice runs through preparation, choosing an asset or share sale, SRA consent and client novation, then the tax heads on goodwill, WIP and debtors. This guide walks the end-to-end process and the tax overview, with specialist links where you need to go deeper.
 keyTakeaways:
-  - "A partnership or LLP can only do an asset sale, while an incorporated firm or licensed ABS can also complete a share sale."
-  - "Goodwill is taxed as a capital gain and can attract Business Asset Disposal Relief up to the £1 million lifetime limit, while WIP and debtors are taxed as income."
-  - "The BADR rate tracks completion date: 10% to 5 April 2025, 14% from 6 April 2025 to 5 April 2026, then 18% from 6 April 2026."
-  - "You do not seek SRA permission to sell, but you must notify the regulator of ownership and authorised-person changes, with clients moving by consent or novation."
-  - "A sale typically takes 6 to 12 months, so allocate consideration clearly between capital and income rather than quoting a single headline figure."
-schema: ""
+- A partnership or LLP can only do an asset sale, while an incorporated firm or licensed ABS can also complete a share sale.
+- Goodwill is taxed as a capital gain and can attract Business Asset Disposal Relief up to the £1 million lifetime limit, while WIP and debtors are taxed as income.
+- 'The BADR rate tracks completion date: 10% to 5 April 2025, 14% from 6 April 2025 to 5 April 2026, then 18% from 6 April 2026.'
+- You do not seek SRA permission to sell, but you must notify the regulator of ownership and authorised-person changes, with clients moving by consent or novation.
+- A sale typically takes 6 to 12 months, so allocate consideration clearly between capital and income rather than quoting a single headline figure.
+schema: ''
 faqs:
-  - question: "How long does it typically take to sell a solicitor practice?"
-    answer: "A solicitor practice sale typically takes 6 to 12 months from initial marketing to completion. That covers 2 to 3 months for preparation and marketing, 2 to 4 months for buyer identification and heads of terms, 4 to 8 weeks for due diligence, and 4 to 6 weeks for legal documentation, SRA notification and completion. Complex structures or a thin buyer market can extend these timelines."
-  - question: "Can a partnership or LLP sell shares, or only an incorporated firm?"
-    answer: "A partnership or LLP has no shares to sell, so it can only complete an asset (business) sale, where goodwill, work in progress, fixtures and client relationships transfer individually. Only an incorporated firm, a limited company or a licensed ABS, can do a share sale, where the buyer acquires the company that owns the practice. If you want to sell shares later, an unincorporated practice can first incorporate, and section 162 incorporation relief can defer the gain on transferring the business into a company."
-  - question: "Do I need SRA approval to sell my practice?"
-    answer: "You do not apply to the SRA for permission to sell, but you must keep the regulator informed of changes in ownership, managers and authorised persons, and the buying entity must hold the right SRA authorisation. Client consent and proper file transfer or novation are essential, and unresolved compliance issues, client account shortfalls or open interventions can stall or collapse a transaction. Confirm the SRA position early in preparation."
-  - question: "What are the main tax implications of selling my practice?"
-    answer: "Sale proceeds split across different tax heads. Goodwill and capital assets are usually chargeable to capital gains tax, where Business Asset Disposal Relief can apply a reduced rate on qualifying gains up to the £1 million lifetime limit. The BADR rate depends on completion date: 10% on disposals up to 5 April 2025, 14% for disposals between 6 April 2025 and 5 April 2026, and 18% from 6 April 2026. Standard CGT rates of 18% and 24% apply where BADR does not. Work in progress and debtors are income, taxed at income tax rates, so the sale agreement should split capital and income elements clearly. Take advice on structure and timing before you sign heads of terms."
-  - question: "Is goodwill taxed differently from work in progress on a practice sale?"
-    answer: "Yes. Goodwill is a capital asset, so it falls within capital gains tax and can qualify for Business Asset Disposal Relief. Work in progress and debtors represent unbilled and billed income of the practice and are taxed as income in the seller's hands. Because the tax treatment differs sharply, the sale agreement should allocate consideration separately between goodwill, WIP, debtors and any tangible assets rather than quoting a single combined figure."
+- question: How long does it typically take to sell a solicitor practice?
+  answer: A solicitor practice sale typically takes 6 to 12 months from initial marketing to completion. That covers 2 to 3 months for preparation and marketing, 2 to 4 months for buyer identification and heads of terms, 4 to 8 weeks for due diligence, and 4 to 6 weeks for legal documentation, SRA notification and completion. Complex structures or a thin buyer market can extend these timelines.
+- question: Can a partnership or LLP sell shares, or only an incorporated firm?
+  answer: A partnership or LLP has no shares to sell, so it can only complete an asset (business) sale, where goodwill, work in progress, fixtures and client relationships transfer individually. Only an incorporated firm, a limited company or a licensed ABS, can do a share sale, where the buyer acquires the company that owns the practice. If you want to sell shares later, an unincorporated practice can first incorporate, and section 162 incorporation relief can defer the gain on transferring the business into a company.
+- question: Do I need SRA approval to sell my practice?
+  answer: You do not apply to the SRA for permission to sell, but you must keep the regulator informed of changes in ownership, managers and authorised persons, and the buying entity must hold the right SRA authorisation. Client consent and proper file transfer or novation are essential, and unresolved compliance issues, client account shortfalls or open interventions can stall or collapse a transaction. Confirm the SRA position early in preparation.
+- question: What are the main tax implications of selling my practice?
+  answer: 'Sale proceeds split across different tax heads. Goodwill and capital assets are usually chargeable to capital gains tax, where Business Asset Disposal Relief can apply a reduced rate on qualifying gains up to the £1 million lifetime limit. The BADR rate depends on completion date: 10% on disposals up to 5 April 2025, 14% for disposals between 6 April 2025 and 5 April 2026, and 18% from 6 April 2026. Standard CGT rates of 18% and 24% apply where BADR does not. Work in progress and debtors are income, taxed at income tax rates, so the sale agreement should split capital and income elements clearly. Take advice on structure and timing before you sign heads of terms.'
+- question: Is goodwill taxed differently from work in progress on a practice sale?
+  answer: Yes. Goodwill is a capital asset, so it falls within capital gains tax and can qualify for Business Asset Disposal Relief. Work in progress and debtors represent unbilled and billed income of the practice and are taxed as income in the seller's hands. Because the tax treatment differs sharply, the sale agreement should allocate consideration separately between goodwill, WIP, debtors and any tangible assets rather than quoting a single combined figure.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>A <strong>solicitor practice sale</strong> is one of the most significant transactions in a legal career. Whether you are a sole practitioner planning retirement or partners exiting an established firm, the process runs through preparation, deal structure, SRA consent and client transfer, then the tax treatment of the proceeds. This guide owns the end-to-end process and gives the tax overview, with links to specialist pages where you need the detail.</p>
 
 <p>The legal services market continues to consolidate, and that drives steady acquisition activity among firms, individual solicitors and licensed providers. Understanding how the sale is structured, what the SRA expects, and how the proceeds are taxed is what protects value and keeps a deal on the rails.</p>

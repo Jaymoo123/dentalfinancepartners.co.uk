@@ -1,54 +1,57 @@
 ---
-title: "Mixed-Money Receipts: Splitting Office and Client Money Under SRA Rule 4.2"
-slug: "mixed-money-receipts-splitting-office-and-client"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/mixed-money-receipts-splitting-office-and-client"
-date: "2026-06-03"
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Compliance & Trust Accounting"
-metaTitle: "Mixed-Money Receipts: SRA Rule 4.2 Splitting Guide"
-metaDescription: "How to split a mixed payment of office and client money under SRA Rule 4.2. Why allocation is prompt (no 14-day rule) and the Rule 4.3 bill-before-transfer."
-altText: "Legal cashier allocating a mixed payment between client account and office account ledgers"
-image: ""
-h1: "Mixed-Money Receipts: Splitting Office and Client Money Under SRA Rule 4.2"
-summary: "A mixed payment is a single receipt that is partly the firm's own (office) money and partly client money. SRA Rule 4.2 requires you to allocate it promptly to the correct account. This guide shows how to classify each part, how to split it compliantly, and the Rule 4.3 discipline that stops you taking your fee before you have billed it. The standard is promptly: there is no fixed 14-day deadline."
+title: 'Mixed-Money Receipts: Splitting Office and Client Money Under SRA Rule 4.2'
+slug: mixed-money-receipts-splitting-office-and-client
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/mixed-money-receipts-splitting-office-and-client
+date: '2026-06-03'
+author: Accounts for Lawyers Editorial Team
+category: SRA Compliance & Trust Accounting
+metaTitle: 'Mixed Money Receipts: Splitting Client and Office Cash'
+metaDescription: 'Split a mixed payment of client and office money under SRA Rule 4.2: allocate it promptly (no 14-day rule) and bill before you transfer your fee.'
+altText: Legal cashier allocating a mixed payment between client account and office account ledgers
+image: ''
+h1: 'Mixed-Money Receipts: Splitting Office and Client Money Under SRA Rule 4.2'
+summary: 'A mixed payment is a single receipt that is partly the firm''s own (office) money and partly client money. SRA Rule 4.2 requires you to allocate it promptly to the correct account. This guide shows how to classify each part, how to split it compliantly, and the Rule 4.3 discipline that stops you taking your fee before you have billed it. The standard is promptly: there is no fixed 14-day deadline.'
 keyTakeaways:
-  - "A mixed payment is one receipt containing both client money and office money, and SRA Rule 4.2 requires you to allocate it promptly to the correct client account or business account."
-  - "Promptly means promptly: Rule 4.2 sets no fixed day-count, and the 14-day rule is a VAT tax-point concept that does not apply here."
-  - "Classify each part of the payment using the Rule 2.1 four-limb client-money test before you move anything."
-  - "Under Rule 4.3 you cannot transfer the firm's costs out of a client account until you have delivered a bill (or other written notification of the costs), and the transfer must be for the specific sum billed."
-  - "The cautious default is to bank the receipt to the client account first and then promptly transfer out the clearly office-money slice, which protects against under-banking client money."
-schema: ""
+- A mixed payment is one receipt containing both client money and office money, and SRA Rule 4.2 requires you to allocate it promptly to the correct client account or business account.
+- 'Promptly means promptly: Rule 4.2 sets no fixed day-count, and the 14-day rule is a VAT tax-point concept that does not apply here.'
+- Classify each part of the payment using the Rule 2.1 four-limb client-money test before you move anything.
+- Under Rule 4.3 you cannot transfer the firm's costs out of a client account until you have delivered a bill (or other written notification of the costs), and the transfer must be for the specific sum billed.
+- The cautious default is to bank the receipt to the client account first and then promptly transfer out the clearly office-money slice, which protects against under-banking client money.
+schema: ''
 faqs:
-  - question: "What is a mixed payment under the SRA Accounts Rules?"
-    answer: "A mixed payment is a single receipt that contains both client money and office money. A common example is a client paying one sum that settles the firm's delivered bill (office money), reimburses a disbursement the firm already paid (office money), covers an unpaid disbursement not yet billed (client money), and tops up money on account of future costs (client money). One payment, two characters. Rule 4.2 requires you to allocate the parts promptly to the correct account."
-  - question: "Which SRA rule governs splitting a mixed receipt?"
-    answer: "Rule 4.2 of the SRA Accounts Rules 2019. It requires you to ensure that you allocate promptly any funds from mixed payments you receive to the correct client account or business account. It works alongside Rule 4.1, which requires you to keep client money separate from the firm's own money, and Rule 4.3, which requires a bill before you transfer the firm's costs out of the client account."
-  - question: "How quickly must I allocate a mixed payment?"
-    answer: "Rule 4.2 says promptly. It does not state a fixed number of days. In practice that means same-day or next-banking-day allocation as your standard discipline, judged on the facts of the receipt. Do not park a mixed payment in suspense and sort it out at month-end, and do not wait for a fixed period before splitting it. Promptly is the standard, and a firm should be able to show that its routine meets it."
-  - question: "Does the 14-day rule apply to splitting mixed money?"
-    answer: "No. The 14-day rule is a VAT tax-point concept, under which the invoice date becomes the tax point where a VAT invoice is issued within 14 days of the basic tax point. It has nothing to do with allocating a mixed receipt. The SRA rule for mixed money is Rule 4.2, and the standard is promptly. Importing a 14-day deadline into the split is a mistake."
-  - question: "Should I bank a mixed payment into the client account or the office account first?"
-    answer: "The cautious default is to bank the whole receipt into the client account first and then promptly transfer the clearly office-money slice out to the business account. That protects against under-banking client money, which is a breach. Where the firm can confidently identify the components on receipt, it can split at the point of banking instead. Either route is acceptable provided the allocation is prompt, to the correct account, and fully recorded."
-  - question: "Can I take my fee out of a mixed payment straight away?"
-    answer: "Only after you have delivered a bill. Rule 4.3 requires that, before you transfer client money from a client account to pay your costs, you give a bill of costs or other written notification of the costs incurred to the client or paying party, and that the transfer is for the specific sum identified in that bill. So you cannot scoop your fee out of a mixed receipt until a bill exists. If you do, that is a Rule 4.3 breach."
-  - question: "What counts as the client-money slice of a mixed payment?"
-    answer: "Apply the Rule 2.1 test to each part. Money on account of costs not yet billed is client money. An unpaid disbursement you are holding before you have delivered a bill is client money. By contrast, fees you have delivered and billed are office money, and reimbursement of a disbursement you already paid from your own funds is office money. See our what counts as client money page for the full four-limb definition you apply to each slice."
-  - question: "Is money on account of costs in a mixed payment client money or office money?"
-    answer: "Money on account of costs that have not yet been billed is client money: it relates to regulated services you have not yet delivered or billed, so it falls within Rule 2.1. It must go into the client account and can only be transferred to the office account once you have delivered a bill for the specific sum, under Rule 4.3. Treating it as office money on receipt is a common under-banking breach."
-  - question: "What happens if I bank a whole mixed payment into the office account?"
-    answer: "If part of the receipt is client money, banking the whole sum into the office account under-banks the client money and breaches Rules 4.1 and 4.2. The fix is to correct it promptly: transfer the client-money slice into the client account without delay, document what happened and why, and assess whether the breach is material enough to record and report. Build a control so it does not recur, because repeated under-banking is exactly what an inspection looks for."
-  - question: "How do I record a mixed-money split on the ledgers?"
-    answer: "Post each component to the correct ledger: the client-money parts to the relevant client ledger, the office-money parts to the office or business ledger. Give each posting a clear narrative, document any transfer between accounts, and ensure the position is visible at the next five-weekly reconciliation under Rule 8.3. Clean, contemporaneous postings are what make a mixed receipt defensible and keep it out of suspense."
-  - question: "What is the difference between Rule 4.2 and Rule 4.3?"
-    answer: "Rule 4.2 is about speed and destination: allocate the parts of a mixed payment promptly to the correct account. Rule 4.3 is about the gate on taking your own costs: before you transfer client money out of the client account to pay your fees, you must have delivered a bill, and the transfer must match the specific sum billed. Rule 4.2 tells you to split promptly; Rule 4.3 tells you that you cannot pull your fee out until a bill exists."
-  - question: "Can leaving a mixed-money slice in the client account breach Rule 3.3?"
-    answer: "It can contribute to a Rule 3.3 risk. Rule 3.3 prohibits using a client account to provide banking facilities, and every movement on the account must relate to delivering regulated services. Leaving client money in the account longer than the matter needs, or running money through it that is not tied to the firm's regulated services, drifts towards that prohibition. Prompt allocation and prompt onward use are part of staying clear of Rule 3.3."
-  - question: "How does a mixed payment show up in the five-weekly reconciliation?"
-    answer: "The Rule 8.3 reconciliation (at least every five weeks, signed off by the COFA or a manager) reconciles the client ledger total, the cash book and the bank statement. A correctly split mixed payment simply reconciles. A badly handled one shows up as an unallocated or suspense balance, or as a client ledger that does not tie out. The reconciliation is the control that surfaces a mixed payment you failed to allocate properly."
-  - question: "Does a TPMA avoid the mixed-money problem?"
-    answer: "Largely, on the money it handles. If the firm routes transactional funds through a third-party managed account under Rule 11, the money is not the firm's client money and does not enter the firm's client account, so the in-account mixed-money split does not arise in the same way. The firm still has to account for its own fees. See our TPMA page for how that route works and its conditions."
+- question: What is a mixed payment under the SRA Accounts Rules?
+  answer: A mixed payment is a single receipt that contains both client money and office money. A common example is a client paying one sum that settles the firm's delivered bill (office money), reimburses a disbursement the firm already paid (office money), covers an unpaid disbursement not yet billed (client money), and tops up money on account of future costs (client money). One payment, two characters. Rule 4.2 requires you to allocate the parts promptly to the correct account.
+- question: Which SRA rule governs splitting a mixed receipt?
+  answer: Rule 4.2 of the SRA Accounts Rules 2019. It requires you to ensure that you allocate promptly any funds from mixed payments you receive to the correct client account or business account. It works alongside Rule 4.1, which requires you to keep client money separate from the firm's own money, and Rule 4.3, which requires a bill before you transfer the firm's costs out of the client account.
+- question: How quickly must I allocate a mixed payment?
+  answer: Rule 4.2 says promptly. It does not state a fixed number of days. In practice that means same-day or next-banking-day allocation as your standard discipline, judged on the facts of the receipt. Do not park a mixed payment in suspense and sort it out at month-end, and do not wait for a fixed period before splitting it. Promptly is the standard, and a firm should be able to show that its routine meets it.
+- question: Does the 14-day rule apply to splitting mixed money?
+  answer: No. The 14-day rule is a VAT tax-point concept, under which the invoice date becomes the tax point where a VAT invoice is issued within 14 days of the basic tax point. It has nothing to do with allocating a mixed receipt. The SRA rule for mixed money is Rule 4.2, and the standard is promptly. Importing a 14-day deadline into the split is a mistake.
+- question: Should I bank a mixed payment into the client account or the office account first?
+  answer: The cautious default is to bank the whole receipt into the client account first and then promptly transfer the clearly office-money slice out to the business account. That protects against under-banking client money, which is a breach. Where the firm can confidently identify the components on receipt, it can split at the point of banking instead. Either route is acceptable provided the allocation is prompt, to the correct account, and fully recorded.
+- question: Can I take my fee out of a mixed payment straight away?
+  answer: Only after you have delivered a bill. Rule 4.3 requires that, before you transfer client money from a client account to pay your costs, you give a bill of costs or other written notification of the costs incurred to the client or paying party, and that the transfer is for the specific sum identified in that bill. So you cannot scoop your fee out of a mixed receipt until a bill exists. If you do, that is a Rule 4.3 breach.
+- question: What counts as the client-money slice of a mixed payment?
+  answer: Apply the Rule 2.1 test to each part. Money on account of costs not yet billed is client money. An unpaid disbursement you are holding before you have delivered a bill is client money. By contrast, fees you have delivered and billed are office money, and reimbursement of a disbursement you already paid from your own funds is office money. See our what counts as client money page for the full four-limb definition you apply to each slice.
+- question: Is money on account of costs in a mixed payment client money or office money?
+  answer: 'Money on account of costs that have not yet been billed is client money: it relates to regulated services you have not yet delivered or billed, so it falls within Rule 2.1. It must go into the client account and can only be transferred to the office account once you have delivered a bill for the specific sum, under Rule 4.3. Treating it as office money on receipt is a common under-banking breach.'
+- question: What happens if I bank a whole mixed payment into the office account?
+  answer: 'If part of the receipt is client money, banking the whole sum into the office account under-banks the client money and breaches Rules 4.1 and 4.2. The fix is to correct it promptly: transfer the client-money slice into the client account without delay, document what happened and why, and assess whether the breach is material enough to record and report. Build a control so it does not recur, because repeated under-banking is exactly what an inspection looks for.'
+- question: How do I record a mixed-money split on the ledgers?
+  answer: 'Post each component to the correct ledger: the client-money parts to the relevant client ledger, the office-money parts to the office or business ledger. Give each posting a clear narrative, document any transfer between accounts, and ensure the position is visible at the next five-weekly reconciliation under Rule 8.3. Clean, contemporaneous postings are what make a mixed receipt defensible and keep it out of suspense.'
+- question: What is the difference between Rule 4.2 and Rule 4.3?
+  answer: 'Rule 4.2 is about speed and destination: allocate the parts of a mixed payment promptly to the correct account. Rule 4.3 is about the gate on taking your own costs: before you transfer client money out of the client account to pay your fees, you must have delivered a bill, and the transfer must match the specific sum billed. Rule 4.2 tells you to split promptly; Rule 4.3 tells you that you cannot pull your fee out until a bill exists.'
+- question: Can leaving a mixed-money slice in the client account breach Rule 3.3?
+  answer: It can contribute to a Rule 3.3 risk. Rule 3.3 prohibits using a client account to provide banking facilities, and every movement on the account must relate to delivering regulated services. Leaving client money in the account longer than the matter needs, or running money through it that is not tied to the firm's regulated services, drifts towards that prohibition. Prompt allocation and prompt onward use are part of staying clear of Rule 3.3.
+- question: How does a mixed payment show up in the five-weekly reconciliation?
+  answer: The Rule 8.3 reconciliation (at least every five weeks, signed off by the COFA or a manager) reconciles the client ledger total, the cash book and the bank statement. A correctly split mixed payment simply reconciles. A badly handled one shows up as an unallocated or suspense balance, or as a client ledger that does not tie out. The reconciliation is the control that surfaces a mixed payment you failed to allocate properly.
+- question: Does a TPMA avoid the mixed-money problem?
+  answer: Largely, on the money it handles. If the firm routes transactional funds through a third-party managed account under Rule 11, the money is not the firm's client money and does not enter the firm's client account, so the in-account mixed-money split does not arise in the same way. The firm still has to account for its own fees. See our TPMA page for how that route works and its conditions.
+metaTitle_prev: 'Mixed-Money Receipts: SRA Rule 4.2 Splitting Guide'
+metaDescription_prev: How to split a mixed payment of office and client money under SRA Rule 4.2. Why allocation is prompt (no 14-day rule) and the Rule 4.3 bill-before-transfer.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What a Mixed Receipt Is, and Why It Trips Firms Up</h2>
 
 <p>A mixed payment is a single receipt that contains both client money and the firm's own (office) money. It is one of the most common day-to-day situations under the SRA Accounts Rules 2019, and one of the easiest to get wrong. The classic trigger is a client who settles everything in one transfer: the firm's delivered bill, reimbursement of a disbursement the firm has already paid from its own funds, an unpaid disbursement the firm is holding before a bill, and a top-up on account of future fees. That is one payment with two different characters, part office money and part client money.</p>

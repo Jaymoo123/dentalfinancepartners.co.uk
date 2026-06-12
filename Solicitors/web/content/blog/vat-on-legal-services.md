@@ -1,36 +1,39 @@
 ---
-title: "VAT on Legal Services: The Rules UK Solicitors Need"
-slug: "vat-on-legal-services"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-on-legal-services"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "VAT & Compliance"
-metaTitle: "VAT on Legal Services: Standard-Rated at 20% Explained"
-metaDescription: "Legal services from a UK solicitor are standard-rated at 20%, with no exemption. Registration at £90,000, disbursements, search fees and MTD for VAT explained."
-altText: "UK solicitor reviewing VAT records and a draft VAT return for a law firm's legal services"
-image: ""
-h1: "VAT on Legal Services: What UK Solicitors Charge and When"
-summary: "Legal services supplied by a UK solicitor are standard-rated for VAT at 20%, with no exemption. This overview covers the 20% rate, when a firm must register, what counts as a taxable supply, how disbursements are treated and what MTD for VAT requires."
+title: 'VAT on Legal Services: The Rules UK Solicitors Need'
+slug: vat-on-legal-services
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-on-legal-services
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: VAT & Compliance
+metaTitle: 'VAT on Legal Fees: Standard-Rated at 20% in the UK'
+metaDescription: Legal services from a UK solicitor are standard-rated for VAT at 20%, with no exemption. When to register, how disbursements work, and what MTD requires.
+altText: UK solicitor reviewing VAT records and a draft VAT return for a law firm's legal services
+image: ''
+h1: 'VAT on Legal Services: What UK Solicitors Charge and When'
+summary: Legal services supplied by a UK solicitor are standard-rated for VAT at 20%, with no exemption. This overview covers the 20% rate, when a firm must register, what counts as a taxable supply, how disbursements are treated and what MTD for VAT requires.
 keyTakeaways:
-  - "Legal services from a UK solicitor are standard-rated at 20% VAT, with no general exemption or zero-rating."
-  - "Registration is mandatory once taxable turnover exceeds £90,000 in any rolling 12-month period; deregistration is possible below £88,000."
-  - "A cost is a VAT-free disbursement only if it meets all eight of HMRC's conditions; court fees, Land Registry fees and property tax are clean examples."
-  - "Following Brabners LLP v HMRC, a search fee the firm interprets in its advice is part of its taxable supply, so VAT applies."
-  - "Making Tax Digital for VAT applies to every registered firm, with registration, not turnover, the trigger."
-schema: ""
+- Legal services from a UK solicitor are standard-rated at 20% VAT, with no general exemption or zero-rating.
+- Registration is mandatory once taxable turnover exceeds £90,000 in any rolling 12-month period; deregistration is possible below £88,000.
+- A cost is a VAT-free disbursement only if it meets all eight of HMRC's conditions; court fees, Land Registry fees and property tax are clean examples.
+- Following Brabners LLP v HMRC, a search fee the firm interprets in its advice is part of its taxable supply, so VAT applies.
+- Making Tax Digital for VAT applies to every registered firm, with registration, not turnover, the trigger.
+schema: ''
 faqs:
-  - question: "Do solicitors charge VAT on legal services?"
-    answer: "Yes, if the firm is VAT-registered. Legal services supplied by a solicitor (advice, conveyancing, litigation, drafting, probate) are standard-rated for VAT at 20%. There is no exemption for legal work in the way there is for health care, so once a firm is registered it adds 20% VAT to its fees."
-  - question: "What is the VAT registration threshold for a law firm?"
-    answer: "A firm must register once its taxable turnover exceeds £90,000 in any rolling 12-month period (the registration threshold from 1 April 2024). It can apply to deregister if taxable turnover falls below £88,000. Many smaller firms also register voluntarily to recover VAT on their costs."
-  - question: "Are disbursements free of VAT?"
-    answer: "Only if the payment meets all eight of HMRC's disbursement conditions, in which case it sits outside the scope of VAT and is recharged with no VAT. Court fees, Land Registry registration fees and property transaction tax paid for the client are the clean examples. If any condition fails, the recharge is part of the firm's standard-rated supply and VAT is added."
-  - question: "Is VAT charged on search fees in conveyancing?"
-    answer: "It depends on how the firm uses the result. Following Brabners LLP v HMRC, a search fee the firm interprets and reports on in its own advice is part of the firm's taxable supply, so VAT applies. A search result passed straight to the client unused can still be a disbursement. The postal-search concession ended on 1 December 2020."
-  - question: "Does Making Tax Digital for VAT apply to solicitors?"
-    answer: "Yes. MTD for VAT applies to all VAT-registered businesses, so every registered law firm must keep digital VAT records and file returns through compatible software. There is no turnover carve-out: registration is the trigger."
+- question: Do solicitors charge VAT on legal services?
+  answer: Yes, if the firm is VAT-registered. Legal services supplied by a solicitor (advice, conveyancing, litigation, drafting, probate) are standard-rated for VAT at 20%. There is no exemption for legal work in the way there is for health care, so once a firm is registered it adds 20% VAT to its fees.
+- question: What is the VAT registration threshold for a law firm?
+  answer: A firm must register once its taxable turnover exceeds £90,000 in any rolling 12-month period (the registration threshold from 1 April 2024). It can apply to deregister if taxable turnover falls below £88,000. Many smaller firms also register voluntarily to recover VAT on their costs.
+- question: Are disbursements free of VAT?
+  answer: Only if the payment meets all eight of HMRC's disbursement conditions, in which case it sits outside the scope of VAT and is recharged with no VAT. Court fees, Land Registry registration fees and property transaction tax paid for the client are the clean examples. If any condition fails, the recharge is part of the firm's standard-rated supply and VAT is added.
+- question: Is VAT charged on search fees in conveyancing?
+  answer: It depends on how the firm uses the result. Following Brabners LLP v HMRC, a search fee the firm interprets and reports on in its own advice is part of the firm's taxable supply, so VAT applies. A search result passed straight to the client unused can still be a disbursement. The postal-search concession ended on 1 December 2020.
+- question: Does Making Tax Digital for VAT apply to solicitors?
+  answer: 'Yes. MTD for VAT applies to all VAT-registered businesses, so every registered law firm must keep digital VAT records and file returns through compatible software. There is no turnover carve-out: registration is the trigger.'
+metaTitle_prev: 'VAT on Legal Services: Standard-Rated at 20% Explained'
+metaDescription_prev: Legal services from a UK solicitor are standard-rated at 20%, with no exemption. Registration at £90,000, disbursements, search fees and MTD for VAT explained.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>VAT on legal services is one of the areas where law firms most often go wrong, usually by assuming a service is exempt when it is not, or by treating a third-party cost as VAT-free when it should carry VAT. The starting point is simpler than most firms expect, and getting it right protects both the firm's margin and its compliance position.</p>
 
 <p>This page is the overview. It sets out the core rule, when a firm has to register, what counts as a taxable supply, how disbursements are handled at a high level and what Making Tax Digital requires. For the deeper detail on disbursements, conveyancing and counsel's fees, we link to dedicated guides as we go.</p>

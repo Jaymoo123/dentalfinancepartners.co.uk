@@ -1,34 +1,37 @@
 ---
-title: "When Is an SRA Accountant's Report Required for a Solicitor Firm?"
-slug: "when-is-an-sra-accountants-report-required"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/when-is-an-sra-accountants-report-required"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "When Is an SRA Accountant's Report Required? Solicitor Firm Triggers"
-metaDescription: "What triggers an SRA accountant's report? Holding any client money in the period is the trigger, unless your firm meets the Rule 12.2 exemption or the Legal Aid route. Deadlines, qualified reports and mid-year loss of exemption explained."
-altText: "Solicitor firm accountant reviewing SRA client money records and compliance documents in a UK law office."
-image: ""
-h1: "When Is an SRA Accountant's Report Required for a Solicitor Firm?"
-summary: "The trigger is simple: if your firm held or received client money at any time during an accounting period, you must obtain an SRA accountant's report, unless you meet the Rule 12.2 exemption or hold only Legal Aid Agency money. This post explains exactly what triggers the obligation, what counts as holding client money, the six-month deadline, and what happens if you lose the exemption part-way through the year."
+title: When Is an SRA Accountant's Report Required for a Solicitor Firm?
+slug: when-is-an-sra-accountants-report-required
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/when-is-an-sra-accountants-report-required
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: When Is an SRA Accountant's Report Required for Firms?
+metaDescription: Holding any client money in the period triggers an SRA accountant's report, unless the Rule 12.2 exemption applies. Obtain it within 6 months of year end.
+altText: Solicitor firm accountant reviewing SRA client money records and compliance documents in a UK law office.
+image: ''
+h1: When Is an SRA Accountant's Report Required for a Solicitor Firm?
+summary: 'The trigger is simple: if your firm held or received client money at any time during an accounting period, you must obtain an SRA accountant''s report, unless you meet the Rule 12.2 exemption or hold only Legal Aid Agency money. This post explains exactly what triggers the obligation, what counts as holding client money, the six-month deadline, and what happens if you lose the exemption part-way through the year.'
 keyTakeaways:
-  - "Under Rule 12.1, holding or receiving client money at any single moment in the accounting period triggers the report obligation, regardless of firm size."
-  - "Rule 12.2 exempts firms where all client money came from the Legal Aid Agency, or the balance averaged £10,000 or less and peaked at £250,000 or less."
-  - "A single completion that pushes the client account above £250,000 for one day loses the low-balance exemption for the entire period."
-  - "A required report must be obtained within six months of the period end (31 October for a 30 April year-end)."
-  - "Only a qualified report, showing client money is or may be at risk, must be delivered to the SRA; an unqualified report is retained on file."
-schema: ""
+- Under Rule 12.1, holding or receiving client money at any single moment in the accounting period triggers the report obligation, regardless of firm size.
+- Rule 12.2 exempts firms where all client money came from the Legal Aid Agency, or the balance averaged £10,000 or less and peaked at £250,000 or less.
+- A single completion that pushes the client account above £250,000 for one day loses the low-balance exemption for the entire period.
+- A required report must be obtained within six months of the period end (31 October for a 30 April year-end).
+- Only a qualified report, showing client money is or may be at risk, must be delivered to the SRA; an unqualified report is retained on file.
+schema: ''
 faqs:
-  - question: "What triggers the requirement for an SRA accountant's report?"
-    answer: "The trigger is holding or receiving client money. Under Rule 12.1 of the SRA Accounts Rules, if your firm held or received client money at any time during an accounting period (or operated a joint account or a client's own account as signatory), you must obtain an accountant's report for that period. Holding client money is the trigger, not the size of your firm or your fee income. The obligation falls away only if your firm meets the Rule 12.2 exemption or held only Legal Aid Agency money in the period."
-  - question: "Can my firm be exempt from the SRA accountant's report?"
-    answer: "Yes. Under Rule 12.2 a firm is exempt if either of two routes applies. Under the Legal Aid route, all of the client money the firm held or received in the period was money received from the Legal Aid Agency. Under the low-balance route, the statement or passbook balance of client money did not exceed an average of £10,000 and a maximum of £250,000 across the accounting period. Both limbs of the low-balance route must be met. For the detailed thresholds and worked examples, see our guide on the SRA accountant's report exemption."
-  - question: "What is the deadline for the SRA accountant's report?"
-    answer: "Where a report is required, it must be obtained within six months of the end of your firm's accounting period. For a 30 April year-end that is 31 October; for a 31 December year-end it is 30 June. A report only has to be delivered to the SRA if it is qualified, meaning it shows a failure to comply with the rules such that client or third-party money is, has been, or is likely to be placed at risk. An unqualified report is obtained and retained, but is not filed with the SRA."
-  - question: "What happens if my firm loses the exemption part-way through the year?"
-    answer: "The exemption is assessed over the whole accounting period. If a single completion pushes the client account above the £250,000 maximum, even for one day, or the average balance ends the period above £10,000, the firm does not qualify for the low-balance route and must obtain a report covering the full period, filed within six months of the period end. There is no partial exemption for the months before the threshold was crossed, which is why the COFA should monitor the running average and the peak balance in-year."
+- question: What triggers the requirement for an SRA accountant's report?
+  answer: The trigger is holding or receiving client money. Under Rule 12.1 of the SRA Accounts Rules, if your firm held or received client money at any time during an accounting period (or operated a joint account or a client's own account as signatory), you must obtain an accountant's report for that period. Holding client money is the trigger, not the size of your firm or your fee income. The obligation falls away only if your firm meets the Rule 12.2 exemption or held only Legal Aid Agency money in the period.
+- question: Can my firm be exempt from the SRA accountant's report?
+  answer: Yes. Under Rule 12.2 a firm is exempt if either of two routes applies. Under the Legal Aid route, all of the client money the firm held or received in the period was money received from the Legal Aid Agency. Under the low-balance route, the statement or passbook balance of client money did not exceed an average of £10,000 and a maximum of £250,000 across the accounting period. Both limbs of the low-balance route must be met. For the detailed thresholds and worked examples, see our guide on the SRA accountant's report exemption.
+- question: What is the deadline for the SRA accountant's report?
+  answer: Where a report is required, it must be obtained within six months of the end of your firm's accounting period. For a 30 April year-end that is 31 October; for a 31 December year-end it is 30 June. A report only has to be delivered to the SRA if it is qualified, meaning it shows a failure to comply with the rules such that client or third-party money is, has been, or is likely to be placed at risk. An unqualified report is obtained and retained, but is not filed with the SRA.
+- question: What happens if my firm loses the exemption part-way through the year?
+  answer: The exemption is assessed over the whole accounting period. If a single completion pushes the client account above the £250,000 maximum, even for one day, or the average balance ends the period above £10,000, the firm does not qualify for the low-balance route and must obtain a report covering the full period, filed within six months of the period end. There is no partial exemption for the months before the threshold was crossed, which is why the COFA should monitor the running average and the peak balance in-year.
+metaTitle_prev: When Is an SRA Accountant's Report Required? Solicitor Firm Triggers
+metaDescription_prev: What triggers an SRA accountant's report? Holding any client money in the period is the trigger, unless your firm meets the Rule 12.2 exemption or the Legal Aid route. Deadlines, qualified reports and mid-year loss of exemption explained.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Is an SRA Accountant's Report?</h2>
 
 <p>An SRA accountant's report is a formal document prepared by an independent qualified accountant. It confirms whether your solicitor firm has complied with the SRA Accounts Rules during the accounting period, focusing on how the firm has handled client money: receipt, holding, payment, recording and reconciliation. It is not a full audit of the firm's accounts.</p>

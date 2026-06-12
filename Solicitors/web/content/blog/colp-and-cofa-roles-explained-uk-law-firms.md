@@ -1,36 +1,39 @@
 ---
-title: "COLP and COFA Roles Explained: A UK Solicitor's Guide to Both Compliance Officers"
-slug: "colp-and-cofa-roles-explained-uk-law-firms"
-canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/colp-and-cofa-roles-explained-uk-law-firms"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "Compliance & Risk (COLP / COFA)"
-metaTitle: "COLP and COFA Roles Explained | UK Law Firm Compliance Officers"
-metaDescription: "What the COLP and COFA do, how the two compliance officer roles split, who can be appointed, and the personal duties each carries under the SRA. Guidance for UK law firm partners."
-altText: "UK law firm COLP and COFA compliance officers reviewing regulatory duties in a professional office setting"
-image: ""
-h1: "COLP and COFA Roles Explained: A UK Solicitor's Guide to Both Compliance Officers"
-summary: "Every SRA-regulated law firm must appoint a COLP (Compliance Officer for Legal Practice) and a COFA (Compliance Officer for Finance and Administration). This guide explains what each role covers, how the responsibilities split between them, who can be appointed, and the personal accountability each officer carries. It is the overview of both roles and the distinction between them."
+title: 'COLP and COFA Roles Explained: A UK Solicitor''s Guide to Both Compliance Officers'
+slug: colp-and-cofa-roles-explained-uk-law-firms
+canonical: https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/colp-and-cofa-roles-explained-uk-law-firms
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: Compliance & Risk (COLP / COFA)
+metaTitle: COLP and COFA Roles Explained for UK Law Firm Partners
+metaDescription: How the COLP and COFA compliance roles split, who can be appointed, and the SRA duties each carries. Notify the SRA of any change within 7 days.
+altText: UK law firm COLP and COFA compliance officers reviewing regulatory duties in a professional office setting
+image: ''
+h1: 'COLP and COFA Roles Explained: A UK Solicitor''s Guide to Both Compliance Officers'
+summary: Every SRA-regulated law firm must appoint a COLP (Compliance Officer for Legal Practice) and a COFA (Compliance Officer for Finance and Administration). This guide explains what each role covers, how the responsibilities split between them, who can be appointed, and the personal accountability each officer carries. It is the overview of both roles and the distinction between them.
 keyTakeaways:
-  - "Every SRA-regulated firm must appoint both a COLP and a COFA, and cannot be authorised without both roles filled."
-  - "The COLP owns overall regulatory compliance (Principles and Codes), while the COFA owns financial compliance under the SRA Accounts Rules and client money."
-  - "The COLP must be a solicitor, registered lawyer or barrister and a manager; the COFA needs sufficient knowledge of the Accounts Rules but need not be a lawyer."
-  - "One person can hold both roles, which is common in sole practices, but larger firms should separate them to avoid concentrating risk."
-  - "Firms must notify the SRA of any change in COLP or COFA within seven days, and both officers can be held personally liable."
-schema: ""
+- Every SRA-regulated firm must appoint both a COLP and a COFA, and cannot be authorised without both roles filled.
+- The COLP owns overall regulatory compliance (Principles and Codes), while the COFA owns financial compliance under the SRA Accounts Rules and client money.
+- The COLP must be a solicitor, registered lawyer or barrister and a manager; the COFA needs sufficient knowledge of the Accounts Rules but need not be a lawyer.
+- One person can hold both roles, which is common in sole practices, but larger firms should separate them to avoid concentrating risk.
+- Firms must notify the SRA of any change in COLP or COFA within seven days, and both officers can be held personally liable.
+schema: ''
 faqs:
-  - question: "What is the difference between a COLP and a COFA?"
-    answer: "The COLP (Compliance Officer for Legal Practice) owns the firm's overall regulatory compliance: the SRA Principles, the Code of Conduct for Firms, reporting of serious breaches, and the firm's wider systems and controls. The COFA (Compliance Officer for Finance and Administration) owns financial compliance, specifically the SRA Accounts Rules and the handling of client money. The two roles overlap because the Accounts Rules sit inside the wider regulatory framework, but the COFA leads on client money and the client account while the COLP leads on everything else. Both are appointed under the SRA Authorisation of Firms Rules, and every SRA-regulated firm must have both."
-  - question: "Can a trainee solicitor be appointed as COLP or COFA?"
-    answer: "No. The COLP must be a solicitor, registered European lawyer, registered foreign lawyer, or barrister, and a manager of the firm. The COFA must be a manager or, in a licensed body, a manager or employee, with sufficient knowledge of the SRA Accounts Rules and the firm's accounting systems. A trainee solicitor is not yet admitted and cannot hold the COLP role. A trainee could support the COFA function under supervision, but the designated COFA must be a qualified individual with the necessary authority within the firm."
-  - question: "Can the same person be both COLP and COFA?"
-    answer: "Yes, in principle. The SRA allows one individual to hold both roles provided they have the knowledge and skills for each. This is common in sole practitioner firms and small partnerships, where the sole practitioner often acts as both. In larger firms it is generally better practice to separate the roles, because the COLP's focus is legal practice compliance and the COFA's focus is financial compliance, and combining them concentrates risk in one person. If one individual holds both, the firm should ensure there is a deputy who can step in and that the person has time to discharge both sets of duties."
-  - question: "What happens if a firm does not appoint a COLP or COFA?"
-    answer: "The SRA will not authorise a firm without a named COLP and COFA. If a firm loses its COLP or COFA and fails to appoint a replacement promptly, the SRA can impose conditions on the firm's authorisation, suspend the firm, or ultimately cancel its authorisation. The firm cannot operate as an SRA-regulated practice without these roles filled. Firms should have a contingency plan, such as a deputy who can step in temporarily, and must notify the SRA of any change in COLP or COFA within seven days."
-  - question: "Can a COLP or COFA be held personally liable for a firm's breach?"
-    answer: "Yes. The SRA can take direct regulatory action against a COLP or COFA who fails to discharge their duties, including a rebuke, a fine, conditions on their practising certificate, or referral to the Solicitors Disciplinary Tribunal. The SRA's approach is outcomes-focused: it will consider whether the individual took reasonable steps to prevent the breach. If they can demonstrate adequate systems and prompt action when issues arose, the SRA is less likely to take action against them personally. The risk is real, and individuals in these roles should ensure they have appropriate support, resources, and authority."
+- question: What is the difference between a COLP and a COFA?
+  answer: 'The COLP (Compliance Officer for Legal Practice) owns the firm''s overall regulatory compliance: the SRA Principles, the Code of Conduct for Firms, reporting of serious breaches, and the firm''s wider systems and controls. The COFA (Compliance Officer for Finance and Administration) owns financial compliance, specifically the SRA Accounts Rules and the handling of client money. The two roles overlap because the Accounts Rules sit inside the wider regulatory framework, but the COFA leads on client money and the client account while the COLP leads on everything else. Both are appointed under the SRA Authorisation of Firms Rules, and every SRA-regulated firm must have both.'
+- question: Can a trainee solicitor be appointed as COLP or COFA?
+  answer: No. The COLP must be a solicitor, registered European lawyer, registered foreign lawyer, or barrister, and a manager of the firm. The COFA must be a manager or, in a licensed body, a manager or employee, with sufficient knowledge of the SRA Accounts Rules and the firm's accounting systems. A trainee solicitor is not yet admitted and cannot hold the COLP role. A trainee could support the COFA function under supervision, but the designated COFA must be a qualified individual with the necessary authority within the firm.
+- question: Can the same person be both COLP and COFA?
+  answer: Yes, in principle. The SRA allows one individual to hold both roles provided they have the knowledge and skills for each. This is common in sole practitioner firms and small partnerships, where the sole practitioner often acts as both. In larger firms it is generally better practice to separate the roles, because the COLP's focus is legal practice compliance and the COFA's focus is financial compliance, and combining them concentrates risk in one person. If one individual holds both, the firm should ensure there is a deputy who can step in and that the person has time to discharge both sets of duties.
+- question: What happens if a firm does not appoint a COLP or COFA?
+  answer: The SRA will not authorise a firm without a named COLP and COFA. If a firm loses its COLP or COFA and fails to appoint a replacement promptly, the SRA can impose conditions on the firm's authorisation, suspend the firm, or ultimately cancel its authorisation. The firm cannot operate as an SRA-regulated practice without these roles filled. Firms should have a contingency plan, such as a deputy who can step in temporarily, and must notify the SRA of any change in COLP or COFA within seven days.
+- question: Can a COLP or COFA be held personally liable for a firm's breach?
+  answer: 'Yes. The SRA can take direct regulatory action against a COLP or COFA who fails to discharge their duties, including a rebuke, a fine, conditions on their practising certificate, or referral to the Solicitors Disciplinary Tribunal. The SRA''s approach is outcomes-focused: it will consider whether the individual took reasonable steps to prevent the breach. If they can demonstrate adequate systems and prompt action when issues arose, the SRA is less likely to take action against them personally. The risk is real, and individuals in these roles should ensure they have appropriate support, resources, and authority.'
+metaTitle_prev: COLP and COFA Roles Explained | UK Law Firm Compliance Officers
+metaDescription_prev: What the COLP and COFA do, how the two compliance officer roles split, who can be appointed, and the personal duties each carries under the SRA. Guidance for UK law firm partners.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Are the COLP and COFA Roles?</h2>
 
 <p>The Solicitors Regulation Authority (SRA) requires every regulated law firm in England and Wales to appoint two designated compliance officers: a Compliance Officer for Legal Practice (COLP) and a Compliance Officer for Finance and Administration (COFA). The appointment is mandatory under the SRA Authorisation of Firms Rules, and a firm cannot be authorised, or remain authorised, without both roles filled by named individuals.</p>

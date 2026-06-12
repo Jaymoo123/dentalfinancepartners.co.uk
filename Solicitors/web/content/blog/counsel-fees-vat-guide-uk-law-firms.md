@@ -1,34 +1,37 @@
 ---
-title: "Counsel's Fees and VAT: The Default Rule for UK Law Firms"
-slug: "counsel-fees-vat-guide-uk-law-firms"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "VAT & Compliance"
-metaTitle: "Counsel's Fees VAT: Supply to the Firm, Not a Disbursement"
-metaDescription: "Counsel's fee is normally a supply to your firm: you recover the input VAT and charge output VAT on your bill. The disbursement exception, the HMRC concession, and overseas counsel explained."
-altText: "UK solicitor reviewing a counsel fee note and considering its VAT treatment in chambers"
-image: ""
-h1: "Counsel's Fees and VAT: The Default Rule for UK Law Firms"
-summary: "Counsel's fee is, in the normal case, a supply to your firm, not a client disbursement. This guide sets out the default treatment (recover the input VAT, charge output VAT on your bill), the narrow disbursement exception, the long-standing HMRC concession, and why you cannot both treat the fee as a disbursement and reclaim the VAT."
+title: 'Counsel''s Fees and VAT: The Default Rule for UK Law Firms'
+slug: counsel-fees-vat-guide-uk-law-firms
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: VAT & Compliance
+metaTitle: 'Counsel''s Fees and VAT: the Default Rule for Firms'
+metaDescription: 'Counsel''s fee is normally a supply to your firm: recover the input VAT and charge 20% output VAT on your bill. The disbursement exception explained.'
+altText: UK solicitor reviewing a counsel fee note and considering its VAT treatment in chambers
+image: ''
+h1: 'Counsel''s Fees and VAT: The Default Rule for UK Law Firms'
+summary: Counsel's fee is, in the normal case, a supply to your firm, not a client disbursement. This guide sets out the default treatment (recover the input VAT, charge output VAT on your bill), the narrow disbursement exception, the long-standing HMRC concession, and why you cannot both treat the fee as a disbursement and reclaim the VAT.
 keyTakeaways:
-  - "In the normal case counsel's fee is a supply to your firm: you recover the input VAT and charge output VAT on your total bill at 20%."
-  - "Counsel's fee is a disbursement only in the rarer case where counsel acts as the client's agent, in the client's name, for example in some direct-access work."
-  - "An HMRC concession lets you re-address counsel's receipted fee note to the client, but only if your firm does not also reclaim the input VAT."
-  - "You cannot both treat the fee as a disbursement and reclaim the VAT; the two routes are mutually exclusive and HMRC will reverse a wrong recovery."
-  - "Instructing counsel established overseas can bring the reverse charge into play, where you account for both output and input VAT on the same amount."
-schema: ""
+- 'In the normal case counsel''s fee is a supply to your firm: you recover the input VAT and charge output VAT on your total bill at 20%.'
+- Counsel's fee is a disbursement only in the rarer case where counsel acts as the client's agent, in the client's name, for example in some direct-access work.
+- An HMRC concession lets you re-address counsel's receipted fee note to the client, but only if your firm does not also reclaim the input VAT.
+- You cannot both treat the fee as a disbursement and reclaim the VAT; the two routes are mutually exclusive and HMRC will reverse a wrong recovery.
+- Instructing counsel established overseas can bring the reverse charge into play, where you account for both output and input VAT on the same amount.
+schema: ''
 faqs:
-  - question: "Is counsel's fee a disbursement or a supply to my firm?"
-    answer: "In the normal case it is a supply to your firm. You instruct counsel on your professional judgement and use their work in making your own onward supply of legal services to the client. That means you recover the input VAT on counsel's fee (if you are VAT registered and making taxable supplies) and you charge output VAT on your total bill, with the counsel element absorbed into your fee. Counsel's fee is a disbursement only in the rarer case where counsel acts as the client's agent, in the client's name and on the client's instruction, for example in some direct-access work."
-  - question: "Can I recover the VAT on counsel's fee?"
-    answer: "Yes, where you treat the fee as a supply to your firm (the normal case) and you are VAT registered and making taxable supplies. You reclaim the VAT on counsel's fee note as input tax on your VAT return, then charge output VAT on your bill to the client. Partial exemption can restrict recovery if your firm makes exempt supplies as well as taxable ones."
-  - question: "What is the HMRC concession for counsel's fees?"
-    answer: "There is a long-standing HMRC concession that lets a solicitor treat counsel's fee as a disbursement by re-addressing counsel's receipted fee note to the client and passing it on with the VAT shown. It applies only where your firm does not also reclaim the input VAT itself. You cannot use the concession to pass the fee to the client as a disbursement and separately recover the VAT through your own return."
-  - question: "How does VAT work when I instruct counsel based overseas?"
-    answer: "Counsel established outside the UK who supplies legal services to your firm can bring the reverse charge into play. Under the reverse charge you account for both the output VAT and the input VAT on the same amount on your VAT return, rather than counsel charging UK VAT. The two entries usually cancel for a fully taxable firm, but you must still record the supply correctly and the value still counts towards your VAT figures."
+- question: Is counsel's fee a disbursement or a supply to my firm?
+  answer: In the normal case it is a supply to your firm. You instruct counsel on your professional judgement and use their work in making your own onward supply of legal services to the client. That means you recover the input VAT on counsel's fee (if you are VAT registered and making taxable supplies) and you charge output VAT on your total bill, with the counsel element absorbed into your fee. Counsel's fee is a disbursement only in the rarer case where counsel acts as the client's agent, in the client's name and on the client's instruction, for example in some direct-access work.
+- question: Can I recover the VAT on counsel's fee?
+  answer: Yes, where you treat the fee as a supply to your firm (the normal case) and you are VAT registered and making taxable supplies. You reclaim the VAT on counsel's fee note as input tax on your VAT return, then charge output VAT on your bill to the client. Partial exemption can restrict recovery if your firm makes exempt supplies as well as taxable ones.
+- question: What is the HMRC concession for counsel's fees?
+  answer: There is a long-standing HMRC concession that lets a solicitor treat counsel's fee as a disbursement by re-addressing counsel's receipted fee note to the client and passing it on with the VAT shown. It applies only where your firm does not also reclaim the input VAT itself. You cannot use the concession to pass the fee to the client as a disbursement and separately recover the VAT through your own return.
+- question: How does VAT work when I instruct counsel based overseas?
+  answer: Counsel established outside the UK who supplies legal services to your firm can bring the reverse charge into play. Under the reverse charge you account for both the output VAT and the input VAT on the same amount on your VAT return, rather than counsel charging UK VAT. The two entries usually cancel for a fully taxable firm, but you must still record the supply correctly and the value still counts towards your VAT figures.
+metaTitle_prev: 'Counsel''s Fees VAT: Supply to the Firm, Not a Disbursement'
+metaDescription_prev: 'Counsel''s fee is normally a supply to your firm: you recover the input VAT and charge output VAT on your bill. The disbursement exception, the HMRC concession, and overseas counsel explained.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>One question decides how counsel's fees are taxed: is the barrister supplying their work to your firm, or to your client? Get the answer right and the VAT follows cleanly. Get it wrong and you either overcharge the client, lose a recovery you were entitled to, or claim a deduction HMRC will later reverse.</p>
 
 <p>This guide sets out the default position for an England and Wales firm, the narrow exception where counsel's fee is a genuine disbursement, the HMRC concession that sits between the two, and the trap of trying to have it both ways. Legal services supplied by a solicitor are standard-rated for VAT at 20%, and that rate carries through to the counsel element of your bill in the normal case.</p>

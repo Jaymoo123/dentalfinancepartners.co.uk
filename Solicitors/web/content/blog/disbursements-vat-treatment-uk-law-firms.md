@@ -1,36 +1,37 @@
 ---
-title: "Disbursements and VAT: the Eight Conditions Every UK Law Firm Must Pass"
-slug: "disbursements-vat-treatment-uk-law-firms"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "VAT & Compliance"
-metaTitle: "Disbursement vs Supply: the 8 VAT Conditions (Brabners)"
-metaDescription: "When is a payment a true disbursement outside VAT, and when is it part of your standard-rated supply? The eight HMRC conditions, Brabners and the search-fee rule."
-metaTitle_prev: "Disbursements VAT Treatment for UK Law Firms | Guide"
-metaDescription_prev: "Court fees and Land Registry searches are true disbursements; expert witness fees aren't. HMRC criteria, documentation, and common billing mistakes."
-altText: "UK solicitor checking which third-party payments are true VAT disbursements and which are standard-rated recharges"
-image: ""
-h1: "Disbursements and VAT: the Eight Conditions Every UK Law Firm Must Pass"
-summary: "A payment your firm makes for a client is a true disbursement, outside the scope of VAT, only if it passes all eight of HMRC's conditions. Fail one and it is part of your standard-rated supply. This guide sets out the test, applies the Brabners decision to search fees, and shows what is and is not a disbursement."
+title: 'Disbursements and VAT: the Eight Conditions Every UK Law Firm Must Pass'
+slug: disbursements-vat-treatment-uk-law-firms
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: VAT & Compliance
+metaTitle: 'VAT on Disbursements: the Eight HMRC Conditions Test'
+metaDescription: Know when a payment is a true disbursement outside VAT and when it is a standard-rated recharge. It qualifies only if all 8 HMRC conditions are met.
+metaTitle_prev: 'Disbursement vs Supply: the 8 VAT Conditions (Brabners)'
+metaDescription_prev: When is a payment a true disbursement outside VAT, and when is it part of your standard-rated supply? The eight HMRC conditions, Brabners and the search-fee rule.
+altText: UK solicitor checking which third-party payments are true VAT disbursements and which are standard-rated recharges
+image: ''
+h1: 'Disbursements and VAT: the Eight Conditions Every UK Law Firm Must Pass'
+summary: A payment your firm makes for a client is a true disbursement, outside the scope of VAT, only if it passes all eight of HMRC's conditions. Fail one and it is part of your standard-rated supply. This guide sets out the test, applies the Brabners decision to search fees, and shows what is and is not a disbursement.
 keyTakeaways:
-  - "A payment is a true disbursement, outside the scope of VAT, only if it passes all eight of HMRC's conditions (VAT Notice 700, section 25.1.1)."
-  - "Fail a single condition and the payment becomes a recharge, part of your standard-rated supply, so you add 20% VAT even if the original cost carried none."
-  - "Court fees, Land Registry registration fees, and SDLT, LBTT or LTT paid for the client are the clean disbursements with no VAT."
-  - "After Brabners and Revenue and Customs Brief 6 (2020), a search you interpret in your advice is part of your taxable supply, not a disbursement."
-  - "CHAPS and bank transfer fees are standard-rated recharges because the bank supplies your firm, not the client."
-schema: ""
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms"
+- A payment is a true disbursement, outside the scope of VAT, only if it passes all eight of HMRC's conditions (VAT Notice 700, section 25.1.1).
+- Fail a single condition and the payment becomes a recharge, part of your standard-rated supply, so you add 20% VAT even if the original cost carried none.
+- Court fees, Land Registry registration fees, and SDLT, LBTT or LTT paid for the client are the clean disbursements with no VAT.
+- After Brabners and Revenue and Customs Brief 6 (2020), a search you interpret in your advice is part of your taxable supply, not a disbursement.
+- CHAPS and bank transfer fees are standard-rated recharges because the bank supplies your firm, not the client.
+schema: ''
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms
 faqs:
-  - question: "What is the difference between a disbursement and a recharge for VAT?"
-    answer: "A true disbursement is a payment you make purely as the client's agent, which passes all eight of HMRC's conditions (VAT Notice 700, section 25.1.1). It sits outside the scope of VAT, so you recover the exact amount with no VAT added. A recharge is any other third-party cost you incur in delivering your own service. It is part of your standard-rated legal supply, so you add 20% VAT when you bill it on, even where the original cost carried no VAT. Failing a single condition turns a would-be disbursement into a recharge."
-  - question: "Are property search fees a disbursement?"
-    answer: "It depends on how you use the result, not on whether the search was obtained by post or electronically. In Brabners LLP v HMRC [2017] UKFTT 0666 (TC) the Tribunal held that search fees a firm interprets and folds into its own report or advice are part of the firm's standard-rated supply, not a disbursement, so VAT is due. If you pass the raw result straight to the client without using it in your advice, and the eight conditions are met, it can still be a disbursement. Revenue and Customs Brief 6 (2020) withdrew the old postal-search concession from 1 December 2020, so the post-versus-electronic distinction no longer decides the point."
-  - question: "Do I add VAT to court fees I pay for a client?"
-    answer: "No. Court and tribunal fees are statutory charges the client is liable for, and where you pay them as a pure conduit they pass the eight conditions and sit outside the scope of VAT. You recover the exact amount with no VAT added. Keep evidence that the fee was the client's liability, that they authorised it, and that it is itemised separately on your bill."
-  - question: "Why are CHAPS and bank transfer fees not disbursements?"
-    answer: "Because the bank supplies that service to your firm, not to your client. When your bank charges you for a CHAPS or telegraphic transfer, you are the customer of that supply, so passing the cost on is a recharge that forms part of your own standard-rated service. You add 20% VAT, regardless of how the bank described the charge. The same logic applies to photocopying, postage and courier costs incurred in running the matter."
+- question: What is the difference between a disbursement and a recharge for VAT?
+  answer: A true disbursement is a payment you make purely as the client's agent, which passes all eight of HMRC's conditions (VAT Notice 700, section 25.1.1). It sits outside the scope of VAT, so you recover the exact amount with no VAT added. A recharge is any other third-party cost you incur in delivering your own service. It is part of your standard-rated legal supply, so you add 20% VAT when you bill it on, even where the original cost carried no VAT. Failing a single condition turns a would-be disbursement into a recharge.
+- question: Are property search fees a disbursement?
+  answer: It depends on how you use the result, not on whether the search was obtained by post or electronically. In Brabners LLP v HMRC [2017] UKFTT 0666 (TC) the Tribunal held that search fees a firm interprets and folds into its own report or advice are part of the firm's standard-rated supply, not a disbursement, so VAT is due. If you pass the raw result straight to the client without using it in your advice, and the eight conditions are met, it can still be a disbursement. Revenue and Customs Brief 6 (2020) withdrew the old postal-search concession from 1 December 2020, so the post-versus-electronic distinction no longer decides the point.
+- question: Do I add VAT to court fees I pay for a client?
+  answer: No. Court and tribunal fees are statutory charges the client is liable for, and where you pay them as a pure conduit they pass the eight conditions and sit outside the scope of VAT. You recover the exact amount with no VAT added. Keep evidence that the fee was the client's liability, that they authorised it, and that it is itemised separately on your bill.
+- question: Why are CHAPS and bank transfer fees not disbursements?
+  answer: Because the bank supplies that service to your firm, not to your client. When your bank charges you for a CHAPS or telegraphic transfer, you are the customer of that supply, so passing the cost on is a recharge that forms part of your own standard-rated service. You add 20% VAT, regardless of how the bank described the charge. The same logic applies to photocopying, postage and courier costs incurred in running the matter.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Few VAT questions catch UK law firms out more often than the line between a <strong>disbursement</strong> and a recharge. Get it right and you pass certain third-party costs to the client cleanly, outside the scope of VAT. Get it wrong and you have under-declared output tax, which HMRC can assess with interest and penalties going back several years. The rules are precise, and one widely repeated assumption, that official searches are automatically VAT-free, has been wrong since 2017.</p>
 
 <p>This guide sets out the test that governs every disbursement decision: HMRC's eight conditions. It then applies that test to the payments a law firm makes most often, including the search fees that the <em>Brabners</em> case put firmly inside the firm's taxable supply. We cover the general principle here. Two companion guides apply it to specific areas: <a href="/blog/vat-compliance/conveyancing-vat-rules-uk-2025-26">conveyancing VAT</a> and <a href="/blog/vat-compliance/vat-on-counsel-fees-uk-solicitors">VAT on counsel's fees</a>.</p>

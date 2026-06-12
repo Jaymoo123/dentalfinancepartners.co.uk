@@ -1,34 +1,37 @@
 ---
-title: "Are SQE Costs Tax Deductible for a Trainee Solicitor or Law Firm?"
-slug: "sqe-training-costs-tax-deductible-trainees"
-canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/sqe-training-costs-tax-deductible-trainees"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "Fee-Earner Tax & Compensation"
-metaTitle: "SQE Costs Tax Deductible for Trainee Solicitors? | UK Guide"
-metaDescription: "Can a trainee solicitor claim SQE fees as a tax deduction? We explain the rules for employees, self-employed locums, and law firms paying training costs."
-altText: "A trainee solicitor reviewing SQE study materials at a desk in a modern UK law firm office."
-image: ""
-h1: "Are SQE Costs Tax Deductible for a Trainee Solicitor or Law Firm?"
-summary: "A practical guide to the tax treatment of SQE costs for trainee solicitors and the law firms that employ them. We explain when fees are deductible for employees, when a firm can claim a corporation tax or partnership deduction, and how the rules differ for self-employed locum solicitors."
+title: Are SQE Costs Tax Deductible for a Trainee Solicitor or Law Firm?
+slug: sqe-training-costs-tax-deductible-trainees
+canonical: https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/sqe-training-costs-tax-deductible-trainees
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: Fee-Earner Tax & Compensation
+metaTitle: Are SQE Costs Tax Deductible? Trainee and Firm Guide
+metaDescription: 'When SQE fees are tax deductible: rarely for an employed trainee, but a firm paying the provider direct claims relief under s.34 CTA 2009. Locum rules too.'
+altText: A trainee solicitor reviewing SQE study materials at a desk in a modern UK law firm office.
+image: ''
+h1: Are SQE Costs Tax Deductible for a Trainee Solicitor or Law Firm?
+summary: A practical guide to the tax treatment of SQE costs for trainee solicitors and the law firms that employ them. We explain when fees are deductible for employees, when a firm can claim a corporation tax or partnership deduction, and how the rules differ for self-employed locum solicitors.
 keyTakeaways:
-  - "SQE costs are generally not deductible for an employed trainee, as they rarely meet the wholly, exclusively, and necessarily test in s.336 ITEPA 2003."
-  - "A law firm can deduct SQE costs as a trading expense under s.34 CTA 2009 when it pays the provider directly."
-  - "Self-employed locum solicitors may claim SQE costs, but HMRC can challenge fees relating to initial qualification as capital in nature."
-  - "If a firm reimburses a trainee's SQE fees, the reimbursement is taxable earnings and must be processed through payroll with PAYE and NIC."
-  - "A firm loan written off on qualification is taxed as earnings in that year, while the firm claims a deduction for the write-off."
-schema: ""
+- SQE costs are generally not deductible for an employed trainee, as they rarely meet the wholly, exclusively, and necessarily test in s.336 ITEPA 2003.
+- A law firm can deduct SQE costs as a trading expense under s.34 CTA 2009 when it pays the provider directly.
+- Self-employed locum solicitors may claim SQE costs, but HMRC can challenge fees relating to initial qualification as capital in nature.
+- If a firm reimburses a trainee's SQE fees, the reimbursement is taxable earnings and must be processed through payroll with PAYE and NIC.
+- A firm loan written off on qualification is taxed as earnings in that year, while the firm claims a deduction for the write-off.
+schema: ''
 faqs:
-  - question: "Can I claim SQE fees on my self-assessment tax return as a trainee solicitor?"
-    answer: "If you are an employed trainee solicitor, you should not claim SQE fees on your self-assessment return unless you are certain the expense meets the \"wholly, exclusively, and necessarily\" test. HMRC rarely accepts this for pre-qualification costs. If you are self-employed as a locum solicitor, you can claim the costs as a trading expense, but HMRC may challenge the deduction if it relates to your initial qualification rather than ongoing competence. Take professional advice before filing."
-  - question: "Does my law firm get tax relief for paying my SQE fees?"
-    answer: "Yes, in most cases. A limited company law firm can deduct SQE costs as a trading expense under section 34 of the Corporation Tax Act 2009. A partnership or LLP deducts the cost before allocating profits to partners. The key is that the firm pays the cost directly to the provider. If the firm reimburses you, the reimbursement is taxable as earnings and must be processed through payroll. For LLPs, structure the payment as a partnership expense allocated to your profit share to avoid benefit-in-kind issues."
-  - question: "Are SQE costs treated differently from other CPD costs for tax purposes?"
-    answer: "Yes. SQE costs are pre-qualification costs. They are treated as capital in nature for a self-employed solicitor and as non-deductible for an employed solicitor. Post-qualification CPD costs are revenue in nature and are more likely to be deductible for both employees and the self-employed, provided they relate to maintaining or improving skills required for the current role. HMRC draws a clear line between the two categories."
-  - question: "What if my firm offers a loan to cover my SQE fees and writes it off on qualification?"
-    answer: "The loan itself is not taxable when advanced. However, when the firm writes off the loan on successful qualification, the written-off amount is treated as earnings in that tax year. The firm must report it through payroll and deduct PAYE and NIC. The firm can claim a corporation tax or partnership deduction for the write-off as a trading expense. Document the loan agreement in writing and ensure the write-off terms are clear from the start."
+- question: Can I claim SQE fees on my self-assessment tax return as a trainee solicitor?
+  answer: If you are an employed trainee solicitor, you should not claim SQE fees on your self-assessment return unless you are certain the expense meets the "wholly, exclusively, and necessarily" test. HMRC rarely accepts this for pre-qualification costs. If you are self-employed as a locum solicitor, you can claim the costs as a trading expense, but HMRC may challenge the deduction if it relates to your initial qualification rather than ongoing competence. Take professional advice before filing.
+- question: Does my law firm get tax relief for paying my SQE fees?
+  answer: Yes, in most cases. A limited company law firm can deduct SQE costs as a trading expense under section 34 of the Corporation Tax Act 2009. A partnership or LLP deducts the cost before allocating profits to partners. The key is that the firm pays the cost directly to the provider. If the firm reimburses you, the reimbursement is taxable as earnings and must be processed through payroll. For LLPs, structure the payment as a partnership expense allocated to your profit share to avoid benefit-in-kind issues.
+- question: Are SQE costs treated differently from other CPD costs for tax purposes?
+  answer: Yes. SQE costs are pre-qualification costs. They are treated as capital in nature for a self-employed solicitor and as non-deductible for an employed solicitor. Post-qualification CPD costs are revenue in nature and are more likely to be deductible for both employees and the self-employed, provided they relate to maintaining or improving skills required for the current role. HMRC draws a clear line between the two categories.
+- question: What if my firm offers a loan to cover my SQE fees and writes it off on qualification?
+  answer: The loan itself is not taxable when advanced. However, when the firm writes off the loan on successful qualification, the written-off amount is treated as earnings in that tax year. The firm must report it through payroll and deduct PAYE and NIC. The firm can claim a corporation tax or partnership deduction for the write-off as a trading expense. Document the loan agreement in writing and ensure the write-off terms are clear from the start.
+metaTitle_prev: SQE Costs Tax Deductible for Trainee Solicitors? | UK Guide
+metaDescription_prev: Can a trainee solicitor claim SQE fees as a tax deduction? We explain the rules for employees, self-employed locums, and law firms paying training costs.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The Solicitors Qualifying Examination (SQE) has become the central route to qualification as a solicitor in England and Wales. For trainee solicitors and the law firms that employ them, the question of whether SQE costs are tax deductible is a practical one with real financial consequences.</p>
 
 <p>This article explains the tax treatment of SQE fees, course costs, and related expenses for both the individual <strong>trainee solicitor</strong> and the law firm. We cover employed trainees, self-employed locum solicitors, and the firm's own position when it funds or reimburses these costs.</p>

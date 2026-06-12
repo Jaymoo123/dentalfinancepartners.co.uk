@@ -1,40 +1,41 @@
 ---
-title: "Sole Practitioner Solicitor Tax: Complete Guide for 2025/26"
-slug: "sole-practitioner-solicitor-tax-guide"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "Sole Practitioner Tax"
-metaTitle: "Sole Practitioner Solicitor Tax 2025/26: Self-Assessment & NIC"
-metaDescription: "Sole practitioner solicitor tax for 2025/26: self-assessment, income tax bands, Class 4 NIC (Class 2 abolished), allowable expenses, payments on account and MTD."
-metaTitle_prev: "Sole Practitioner Solicitor Tax Guide 2026/27"
-metaDescription_prev: "Self-assessment, Class 2 & 4 NICs, allowable expenses, and MTD obligations for sole practitioner solicitors. Plus tax planning strategies."
-altText: "Sole practitioner solicitor reviewing self-assessment and practice accounts at a desk"
-image: ""
-h1: "Sole Practitioner Solicitor Tax: Complete Guide for 2025/26"
-summary: "A current, accurate guide to tax for sole practitioner solicitors: self-assessment, the 2025/26 income tax and National Insurance computation (with Class 2 NIC removed from April 2024), allowable expenses, payments on account, Making Tax Digital for Income Tax, and the point at which incorporation starts to make sense."
+title: 'Sole Practitioner Solicitor Tax: Complete Guide for 2025/26'
+slug: sole-practitioner-solicitor-tax-guide
+canonical: https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: Sole Practitioner Tax
+metaTitle: 'Sole Practitioner Solicitor Tax: Self-Assessment Guide'
+metaDescription: 'Tax for a sole practitioner solicitor: income tax bands, Class 4 NIC, allowable expenses and payments on account. Class 2 NIC was abolished in April 2024.'
+metaTitle_prev: 'Sole Practitioner Solicitor Tax 2025/26: Self-Assessment & NIC'
+metaDescription_prev: 'Sole practitioner solicitor tax for 2025/26: self-assessment, income tax bands, Class 4 NIC (Class 2 abolished), allowable expenses, payments on account and MTD.'
+altText: Sole practitioner solicitor reviewing self-assessment and practice accounts at a desk
+image: ''
+h1: 'Sole Practitioner Solicitor Tax: Complete Guide for 2025/26'
+summary: 'A current, accurate guide to tax for sole practitioner solicitors: self-assessment, the 2025/26 income tax and National Insurance computation (with Class 2 NIC removed from April 2024), allowable expenses, payments on account, Making Tax Digital for Income Tax, and the point at which incorporation starts to make sense.'
 keyTakeaways:
-  - "A sole practitioner pays Class 4 NIC only (6% to £50,270, then 2%), as Class 2 was removed from 6 April 2024 while still counting towards the state pension."
-  - "Income tax for 2025/26 runs at 20%, 40% and 45%, with the personal allowance tapering away between £100,000 and £125,140 of income."
-  - "Making Tax Digital for Income Tax applies from 6 April 2026 for qualifying income above £50,000, falling to £30,000 in 2027 and £20,000 in 2028."
-  - "Self-assessment is due by 31 January, with payments on account on 31 January and 31 July each broadly half of the prior year's liability."
-  - "The Annual Investment Allowance gives 100% relief on qualifying equipment up to £1 million, with the main writing-down rate falling from 18% to 14% from April 2026."
-schema: ""
+- A sole practitioner pays Class 4 NIC only (6% to £50,270, then 2%), as Class 2 was removed from 6 April 2024 while still counting towards the state pension.
+- Income tax for 2025/26 runs at 20%, 40% and 45%, with the personal allowance tapering away between £100,000 and £125,140 of income.
+- Making Tax Digital for Income Tax applies from 6 April 2026 for qualifying income above £50,000, falling to £30,000 in 2027 and £20,000 in 2028.
+- Self-assessment is due by 31 January, with payments on account on 31 January and 31 July each broadly half of the prior year's liability.
+- The Annual Investment Allowance gives 100% relief on qualifying equipment up to £1 million, with the main writing-down rate falling from 18% to 14% from April 2026.
+schema: ''
 faqs:
-  - question: "What tax does a sole practitioner solicitor pay?"
-    answer: "A sole practitioner solicitor is self-employed and pays Income Tax on practice profits at the 2025/26 rates: 20% on income from £12,570 to £50,270, 40% from £50,270 to £125,140, and 45% above £125,140 (the personal allowance tapers away once income passes £100,000 and is gone at £125,140). On top of that, Class 4 National Insurance applies at 6% on profits between £12,570 and £50,270 and 2% on profits above £50,270. Class 2 National Insurance is no longer a separate charge: the liability was removed from 6 April 2024, and a practitioner with profits at or above the small profits threshold is treated as having paid it and keeps state pension entitlement. Unlike an employed solicitor, there are no PAYE deductions at source, so the tax is settled through self-assessment."
-  - question: "Do sole practitioner solicitors still pay Class 2 National Insurance?"
-    answer: "No. From 6 April 2024 the requirement to pay Class 2 National Insurance was removed, so there is no longer any flat weekly Class 2 amount on a sole practitioner's self-assessment calculation. A sole practitioner whose profits are at or above the small profits threshold is automatically treated as having paid Class 2, so the year still counts towards the state pension and other contributory benefits without any contribution being collected. A practitioner whose profits fall below the small profits threshold can choose to pay Class 2 voluntarily to protect that entitlement. Older guidance that still quotes a fixed weekly Class 2 figure is out of date."
-  - question: "What expenses can a sole practitioner solicitor claim?"
-    answer: "A sole practitioner can deduct costs incurred wholly and exclusively for the practice, including office rent and rates, professional indemnity insurance, SRA practising certificate and regulatory fees, legal research subscriptions, continuing professional development, case management software, computer equipment, and business mileage. Home working can be claimed either using HMRC's simplified flat rates or as a fair proportion of actual household costs. Professional membership of bodies such as the Law Society is allowable, while client entertainment and any cost with a personal element follow stricter rules."
-  - question: "When does a sole practitioner solicitor need to comply with Making Tax Digital?"
-    answer: "Making Tax Digital for Income Tax Self Assessment is being phased in by qualifying income (gross trading plus property income). The first threshold is £50,000, which applies from 6 April 2026, so most full-time sole practitioners are in scope from that date. The threshold then falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Being in scope means keeping digital records in compatible software, sending quarterly updates to HMRC, and submitting a final declaration after the tax year, replacing the single annual self-assessment process."
-  - question: "When does a sole practitioner solicitor pay their tax?"
-    answer: "Self-assessment for a tax year (ending 5 April) is filed and the balancing payment is due by the following 31 January. Most sole practitioners also make payments on account: two instalments, each broadly half of the previous year's liability, due on 31 January and 31 July, with any difference settled by the balancing payment the next 31 January. Because the tax is not deducted at source, setting aside a proportion of each month's profit through the year keeps these dates manageable."
-  - question: "When should a sole practitioner solicitor consider incorporating?"
-    answer: "Incorporation becomes worth modelling as profits grow well beyond what the practitioner needs to draw, because retained profit is taxed at the corporation tax rate (19% on profits up to £50,000, 25% above £250,000, with marginal relief between) rather than at personal income tax and Class 4 NIC rates. Set against that are the loss of the sole trader's simplicity, additional accounts and filing obligations, SRA authorisation as a recognised body, and the dividend tax cost of extracting profit, which rose from 6 April 2026. It is a calculation to run on your own numbers rather than a fixed profit figure, and it should be weighed alongside your pension and personal cash needs."
+- question: What tax does a sole practitioner solicitor pay?
+  answer: 'A sole practitioner solicitor is self-employed and pays Income Tax on practice profits at the 2025/26 rates: 20% on income from £12,570 to £50,270, 40% from £50,270 to £125,140, and 45% above £125,140 (the personal allowance tapers away once income passes £100,000 and is gone at £125,140). On top of that, Class 4 National Insurance applies at 6% on profits between £12,570 and £50,270 and 2% on profits above £50,270. Class 2 National Insurance is no longer a separate charge: the liability was removed from 6 April 2024, and a practitioner with profits at or above the small profits threshold is treated as having paid it and keeps state pension entitlement. Unlike an employed solicitor, there are no PAYE deductions at source, so the tax is settled through self-assessment.'
+- question: Do sole practitioner solicitors still pay Class 2 National Insurance?
+  answer: No. From 6 April 2024 the requirement to pay Class 2 National Insurance was removed, so there is no longer any flat weekly Class 2 amount on a sole practitioner's self-assessment calculation. A sole practitioner whose profits are at or above the small profits threshold is automatically treated as having paid Class 2, so the year still counts towards the state pension and other contributory benefits without any contribution being collected. A practitioner whose profits fall below the small profits threshold can choose to pay Class 2 voluntarily to protect that entitlement. Older guidance that still quotes a fixed weekly Class 2 figure is out of date.
+- question: What expenses can a sole practitioner solicitor claim?
+  answer: A sole practitioner can deduct costs incurred wholly and exclusively for the practice, including office rent and rates, professional indemnity insurance, SRA practising certificate and regulatory fees, legal research subscriptions, continuing professional development, case management software, computer equipment, and business mileage. Home working can be claimed either using HMRC's simplified flat rates or as a fair proportion of actual household costs. Professional membership of bodies such as the Law Society is allowable, while client entertainment and any cost with a personal element follow stricter rules.
+- question: When does a sole practitioner solicitor need to comply with Making Tax Digital?
+  answer: Making Tax Digital for Income Tax Self Assessment is being phased in by qualifying income (gross trading plus property income). The first threshold is £50,000, which applies from 6 April 2026, so most full-time sole practitioners are in scope from that date. The threshold then falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Being in scope means keeping digital records in compatible software, sending quarterly updates to HMRC, and submitting a final declaration after the tax year, replacing the single annual self-assessment process.
+- question: When does a sole practitioner solicitor pay their tax?
+  answer: 'Self-assessment for a tax year (ending 5 April) is filed and the balancing payment is due by the following 31 January. Most sole practitioners also make payments on account: two instalments, each broadly half of the previous year''s liability, due on 31 January and 31 July, with any difference settled by the balancing payment the next 31 January. Because the tax is not deducted at source, setting aside a proportion of each month''s profit through the year keeps these dates manageable.'
+- question: When should a sole practitioner solicitor consider incorporating?
+  answer: Incorporation becomes worth modelling as profits grow well beyond what the practitioner needs to draw, because retained profit is taxed at the corporation tax rate (19% on profits up to £50,000, 25% above £250,000, with marginal relief between) rather than at personal income tax and Class 4 NIC rates. Set against that are the loss of the sole trader's simplicity, additional accounts and filing obligations, SRA authorisation as a recognised body, and the dividend tax cost of extracting profit, which rose from 6 April 2026. It is a calculation to run on your own numbers rather than a fixed profit figure, and it should be weighed alongside your pension and personal cash needs.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Running your own practice means you carry the whole of the <strong>sole practitioner solicitor tax</strong> position yourself: there is no payroll deducting tax before you see the money, and no partnership to share the administration. Understanding how the pieces fit together (income tax, National Insurance, allowable expenses, payments on account and Making Tax Digital) is what keeps the practice both compliant and cash-flow stable.</p>
 
 <p>This guide sets out everything a sole practitioner solicitor needs for the 2025/26 tax year and the changes already on the horizon, from the basic self-assessment obligations through to the point at which incorporation starts to make sense. One change worth flagging at the outset: Class 2 National Insurance was removed from 6 April 2024, so any older guidance quoting a flat weekly Class 2 amount is now wrong.</p>

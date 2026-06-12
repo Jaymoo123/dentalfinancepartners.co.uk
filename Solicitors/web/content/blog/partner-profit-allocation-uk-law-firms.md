@@ -1,36 +1,37 @@
 ---
-title: "Partner Profit Allocation in UK Law Firms: How It Works and How It Is Taxed"
-slug: "partner-profit-allocation-uk-law-firms"
-canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "Partnership & LLP Accounting"
-metaTitle: "Partner Profit Allocation in UK Law Firms Explained"
-metaDescription: "How law firms allocate profit (fixed share, equity points, lockstep, merit), why partners are taxed on the allocation not drawings, and the salaried member risk."
-metaTitle_prev: "Partner Profit Allocation: UK Law Firm Examples"
-metaDescription_prev: "See worked examples of equal, capital-based, and performance-based profit allocation. Structure your partnership for tax efficiency and partner retention."
-altText: "UK law firm partners reviewing a profit allocation schedule and partnership accounts"
-image: ""
-h1: "Partner Profit Allocation in UK Law Firms: How It Works and How It Is Taxed"
-summary: "Profit allocation is how a law firm decides each partner's share of the firm's profit: fixed share, equity points, lockstep or merit. The share you are allocated, not the cash you draw, is what you are taxed on, and an allocation that is too fixed can trigger the salaried member rules."
+title: 'Partner Profit Allocation in UK Law Firms: How It Works and How It Is Taxed'
+slug: partner-profit-allocation-uk-law-firms
+canonical: https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: Partnership & LLP Accounting
+metaTitle: Partner Profit Allocation in UK Law Firms Explained
+metaDescription: How law firms allocate profit (lockstep, points, fixed share, merit) and why partners are taxed on the allocation, not drawings. Class 2 NIC ended in 2024.
+metaTitle_prev: Partner Profit Allocation in UK Law Firms Explained
+metaDescription_prev: How law firms allocate profit (fixed share, equity points, lockstep, merit), why partners are taxed on the allocation not drawings, and the salaried member risk.
+altText: UK law firm partners reviewing a profit allocation schedule and partnership accounts
+image: ''
+h1: 'Partner Profit Allocation in UK Law Firms: How It Works and How It Is Taxed'
+summary: 'Profit allocation is how a law firm decides each partner''s share of the firm''s profit: fixed share, equity points, lockstep or merit. The share you are allocated, not the cash you draw, is what you are taxed on, and an allocation that is too fixed can trigger the salaried member rules.'
 keyTakeaways:
-  - "Partners are taxed on their allocated profit share, not the cash they draw, under ITTOIA 2005 s.850, which is the most common partner cash-flow trap."
-  - "Firms build allocations from equal sharing, lockstep, equity points, fixed share or merit, usually blended into a hybrid model that must be documented."
-  - "A genuine LLP member's share carries no employer NI; they pay income tax plus Class 4 NIC, with Class 2 NIC removed from 6 April 2024."
-  - "The salaried member rules treat a member as an employee only if all three conditions (80%+ disguised salary, no significant influence, capital under 25%) are met."
-  - "The usual fix is to make over 20% of reward genuinely profit-dependent, give real influence, or commit capital of at least 25% of disguised salary."
-schema: ""
+- Partners are taxed on their allocated profit share, not the cash they draw, under ITTOIA 2005 s.850, which is the most common partner cash-flow trap.
+- Firms build allocations from equal sharing, lockstep, equity points, fixed share or merit, usually blended into a hybrid model that must be documented.
+- A genuine LLP member's share carries no employer NI; they pay income tax plus Class 4 NIC, with Class 2 NIC removed from 6 April 2024.
+- The salaried member rules treat a member as an employee only if all three conditions (80%+ disguised salary, no significant influence, capital under 25%) are met.
+- The usual fix is to make over 20% of reward genuinely profit-dependent, give real influence, or commit capital of at least 25% of disguised salary.
+schema: ''
 faqs:
-  - question: "Are partners taxed on their profit allocation or on their drawings?"
-    answer: "Partners and LLP members are taxed on their allocated profit share, not on the cash they draw. Under ITTOIA 2005 s.850 the firm's profit is divided between the members by the profit-sharing arrangement, and each member is assessed on that allocated share through self-assessment, whatever they actually withdrew. Drawings are advances against the allocation, so a member who draws less than their share still pays income tax and Class 4 National Insurance on the full allocation. The undrawn balance stays in the firm as working capital. This is the most common partner cash-flow trap: the tax bill follows the share, not the bank transfer."
-  - question: "Does an LLP pay employer National Insurance on a member's profit allocation?"
-    answer: "No. An LLP is tax-transparent and a genuine member is self-employed, so a member's profit allocation carries no employer National Insurance. The member pays income tax and Class 4 NIC on their share (Class 2 NIC was removed from 6 April 2024). Employer NIC and PAYE only arise where the salaried member rules in ITTOIA 2005 ss.863A to 863G re-classify a member as an employee for tax, which happens only if all three of Condition A, B and C are met. A full-equity partner whose reward genuinely varies with firm profit is not caught."
-  - question: "Can a fixed profit share trigger the salaried member rules?"
-    answer: "It can. The salaried member rules catch a member where all three conditions are met: at least 80% of their reward is disguised salary, meaning fixed or varying without reference to the firm's overall profit (Condition A); they have no significant influence over the LLP (Condition B); and their capital contribution is less than 25% of that disguised salary (Condition C). A heavily fixed share, with no real influence and little capital at risk, ticks all three and makes the member an employee for tax. The usual fixes are to make more than 20% of reward genuinely profit-dependent, give the member real influence, or commit capital of at least 25% of the disguised salary."
-  - question: "How do you handle profit allocation when a partner joins or leaves mid-year?"
-    answer: "The partnership or LLP agreement should set out how a joiner or leaver is brought into the allocation. A common approach is to allocate on a time-apportioned basis for the part of the year each partner was in the firm, with any merit or points element pro-rated. Because the tax-year basis applies from 2024/25, the change is reported on the partnership return for the relevant period, and a leaver's allocation up to the date of departure is taxed on them. The agreement should also deal with capital account settlement on exit, which is separate from the profit share."
+- question: Are partners taxed on their profit allocation or on their drawings?
+  answer: 'Partners and LLP members are taxed on their allocated profit share, not on the cash they draw. Under ITTOIA 2005 s.850 the firm''s profit is divided between the members by the profit-sharing arrangement, and each member is assessed on that allocated share through self-assessment, whatever they actually withdrew. Drawings are advances against the allocation, so a member who draws less than their share still pays income tax and Class 4 National Insurance on the full allocation. The undrawn balance stays in the firm as working capital. This is the most common partner cash-flow trap: the tax bill follows the share, not the bank transfer.'
+- question: Does an LLP pay employer National Insurance on a member's profit allocation?
+  answer: No. An LLP is tax-transparent and a genuine member is self-employed, so a member's profit allocation carries no employer National Insurance. The member pays income tax and Class 4 NIC on their share (Class 2 NIC was removed from 6 April 2024). Employer NIC and PAYE only arise where the salaried member rules in ITTOIA 2005 ss.863A to 863G re-classify a member as an employee for tax, which happens only if all three of Condition A, B and C are met. A full-equity partner whose reward genuinely varies with firm profit is not caught.
+- question: Can a fixed profit share trigger the salaried member rules?
+  answer: 'It can. The salaried member rules catch a member where all three conditions are met: at least 80% of their reward is disguised salary, meaning fixed or varying without reference to the firm''s overall profit (Condition A); they have no significant influence over the LLP (Condition B); and their capital contribution is less than 25% of that disguised salary (Condition C). A heavily fixed share, with no real influence and little capital at risk, ticks all three and makes the member an employee for tax. The usual fixes are to make more than 20% of reward genuinely profit-dependent, give the member real influence, or commit capital of at least 25% of the disguised salary.'
+- question: How do you handle profit allocation when a partner joins or leaves mid-year?
+  answer: The partnership or LLP agreement should set out how a joiner or leaver is brought into the allocation. A common approach is to allocate on a time-apportioned basis for the part of the year each partner was in the firm, with any merit or points element pro-rated. Because the tax-year basis applies from 2024/25, the change is reported on the partnership return for the relevant period, and a leaver's allocation up to the date of departure is taxed on them. The agreement should also deal with capital account settlement on exit, which is separate from the profit share.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Partner profit allocation is how a law firm decides each partner's slice of the firm's profit for the year. It sits at the centre of how a firm runs: it sets what each partner earns, it drives partner motivation and retention, and it determines each partner's personal tax bill. Most UK law firms are either traditional partnerships or Limited Liability Partnerships (LLPs), and in both the entity itself pays no corporation tax on trading profit. The profit is allocated out to the partners, and each partner is taxed personally on the share they are allocated.</p>
 
 <p>The single point partners most often get wrong is that you are taxed on your allocation, not on the cash you draw. Get the allocation method and the documentation right and the firm is fair, motivating and compliant. Get it wrong and you create cash-flow shocks, disputes, and in some cases an unintended employment-tax charge. This guide covers the main allocation methods, how the allocation is taxed, and the salaried member risk that a too-fixed share can trigger.</p>

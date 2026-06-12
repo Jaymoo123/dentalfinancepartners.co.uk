@@ -1,34 +1,38 @@
 ---
-title: "How Much Do UK Conveyancing Solicitors Charge in 2025/26?"
-slug: "how-much-do-uk-conveyancing-solicitors-charge"
-canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/how-much-do-uk-conveyancing-solicitors-charge"
-date: "2026-05-19"
-author: "Accounts for Lawyers Editorial Team"
-category: "Conveyancing Compliance"
-metaTitle: "UK Conveyancing Solicitor Fees 2025/26: Real Cost Ranges"
-metaDescription: "UK conveyancing solicitor fees 2025/26. Sale £600-£1,500. Purchase £700-£2,000. Disbursements £300-£1,000. Plus SDLT. Full cost breakdown for buyers and sellers."
-altText: "UK conveyancing solicitor reviewing residential property transaction documents"
-h1: "How Much Do UK Conveyancing Solicitors Charge in 2025/26?"
-summary: "UK conveyancing solicitor fees in 2025/26 typically range from £600 for a sale to £2,000 for a complex purchase, plus disbursements (searches, Land Registry, SDLT). We break down the realistic ranges by transaction type, region, and what the disbursements actually cover."
+title: How Much Do UK Conveyancing Solicitors Charge in 2025/26?
+slug: how-much-do-uk-conveyancing-solicitors-charge
+canonical: https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/how-much-do-uk-conveyancing-solicitors-charge
+date: '2026-05-19'
+author: Accounts for Lawyers Editorial Team
+category: Conveyancing Compliance
+metaTitle: 'UK Conveyancing Solicitor Fees: the Real Cost Ranges'
+metaDescription: 'What UK conveyancing solicitors charge: about £600 for a sale up to £2,000 for a complex purchase, plus disbursements and SDLT. Full cost breakdown.'
+altText: UK conveyancing solicitor reviewing residential property transaction documents
+h1: How Much Do UK Conveyancing Solicitors Charge in 2025/26?
+summary: UK conveyancing solicitor fees in 2025/26 typically range from £600 for a sale to £2,000 for a complex purchase, plus disbursements (searches, Land Registry, SDLT). We break down the realistic ranges by transaction type, region, and what the disbursements actually cover.
 keyTakeaways:
-  - "Conveyancing professional fees in 2025/26 run from about £600 for a sale to £2,000 for a complex purchase, plus VAT."
-  - "Disbursements (searches, Land Registry, identity checks) typically add £270 to £900 on a residential purchase."
-  - "Leasehold conveyancing costs £200 to £600 more than freehold because of lease and management-pack review."
-  - "Conveyancing legal services are standard-rated for VAT at 20 percent, shown net plus VAT on the bill."
-  - "SDLT is the buyer's separate tax: £5,000 on a £350,000 home, £22,500 on the same buy-to-let after the 5 percent surcharge."
+- Conveyancing professional fees in 2025/26 run from about £600 for a sale to £2,000 for a complex purchase, plus VAT.
+- Disbursements (searches, Land Registry, identity checks) typically add £270 to £900 on a residential purchase.
+- Leasehold conveyancing costs £200 to £600 more than freehold because of lease and management-pack review.
+- Conveyancing legal services are standard-rated for VAT at 20 percent, shown net plus VAT on the bill.
+- 'SDLT is the buyer''s separate tax: £5,000 on a £350,000 home, £22,500 on the same buy-to-let after the 5 percent surcharge.'
 faqs:
-  - question: "What's a typical UK conveyancing fee in 2025/26?"
-    answer: "For residential conveyancing in 2025/26: sale fees typically £600-£1,500 (lower for leasehold-free freeholds, higher for leasehold or shared ownership). Purchase fees typically £700-£2,000. The fee variance reflects transaction complexity (freehold vs leasehold, mortgage vs cash, residential vs buy-to-let, simple chain vs multi-link chain). Add disbursements of £300-£1,000 (searches, Land Registry, SDLT submission fees) on top of the solicitor's professional fee."
-  - question: "Why is leasehold conveyancing more expensive?"
-    answer: "Additional work. Leasehold transactions require reviewing the lease (sometimes hundreds of pages), checking ground rent, service charge, and lease length, requesting and reviewing the management pack from the freeholder or managing agent, dealing with the leaseholder consent requirements, and explaining lease-specific obligations to the buyer. Typical leasehold conveyancing fee is £200-£600 higher than the equivalent freehold."
-  - question: "Are conveyancing fees VATable?"
-    answer: "Yes. Conveyancing legal services are standard-rated for VAT at 20 percent. The solicitor's professional fee is shown net plus VAT separately on the bill. Disbursements vary — some are outside VAT scope (Land Registry fees, SDLT, court fees) and some are VATable (search fees recharged from search providers, electronic identity checks)."
-  - function: "Can I negotiate a UK solicitor's conveyancing fee?"
-    answer: "Sometimes, particularly for higher-value transactions. Residential conveyancing is largely fixed-fee at most firms, with published price lists by transaction value band. Negotiation is more common on commercial conveyancing, on multiple-property transactions, and where a buyer is using the same firm across multiple matters. For routine sub-£500,000 residential transactions, the published fee is usually the firm's quoted fee."
-  - question: "What's included in 'disbursements' on a conveyancing matter?"
-    answer: "Disbursements are third-party costs the solicitor pays on the client's behalf. For a residential purchase typically: Land Registry search (£3-£12), Local Authority search (£75-£200), drainage and water search (£40-£80), environmental search (£40-£100), Land Registry application fee (£100-£455 depending on price), SDLT submission fee (often £0 because most solicitors don't charge for SDLT submission separately), electronic identity checks (£10-£30 per party), bankruptcy search (£2). Total disbursements typically £270-£900."
+- question: What's a typical UK conveyancing fee in 2025/26?
+  answer: 'For residential conveyancing in 2025/26: sale fees typically £600-£1,500 (lower for leasehold-free freeholds, higher for leasehold or shared ownership). Purchase fees typically £700-£2,000. The fee variance reflects transaction complexity (freehold vs leasehold, mortgage vs cash, residential vs buy-to-let, simple chain vs multi-link chain). Add disbursements of £300-£1,000 (searches, Land Registry, SDLT submission fees) on top of the solicitor''s professional fee.'
+- question: Why is leasehold conveyancing more expensive?
+  answer: Additional work. Leasehold transactions require reviewing the lease (sometimes hundreds of pages), checking ground rent, service charge, and lease length, requesting and reviewing the management pack from the freeholder or managing agent, dealing with the leaseholder consent requirements, and explaining lease-specific obligations to the buyer. Typical leasehold conveyancing fee is £200-£600 higher than the equivalent freehold.
+- question: Are conveyancing fees VATable?
+  answer: Yes. Conveyancing legal services are standard-rated for VAT at 20 percent. The solicitor's professional fee is shown net plus VAT separately on the bill. Disbursements vary — some are outside VAT scope (Land Registry fees, SDLT, court fees) and some are VATable (search fees recharged from search providers, electronic identity checks).
+- function: Can I negotiate a UK solicitor's conveyancing fee?
+  answer: Sometimes, particularly for higher-value transactions. Residential conveyancing is largely fixed-fee at most firms, with published price lists by transaction value band. Negotiation is more common on commercial conveyancing, on multiple-property transactions, and where a buyer is using the same firm across multiple matters. For routine sub-£500,000 residential transactions, the published fee is usually the firm's quoted fee.
+- question: What's included in 'disbursements' on a conveyancing matter?
+  answer: 'Disbursements are third-party costs the solicitor pays on the client''s behalf. For a residential purchase typically: Land Registry search (£3-£12), Local Authority search (£75-£200), drainage and water search (£40-£80), environmental search (£40-£100), Land Registry application fee (£100-£455 depending on price), SDLT submission fee (often £0 because most solicitors don''t charge for SDLT submission separately), electronic identity checks (£10-£30 per party), bankruptcy search (£2). Total disbursements typically £270-£900.'
+metaTitle_prev: 'UK Conveyancing Solicitor Fees 2025/26: Real Cost Ranges'
+metaDescription_prev: UK conveyancing solicitor fees 2025/26. Sale £600-£1,500. Purchase £700-£2,000. Disbursements £300-£1,000. Plus SDLT. Full cost breakdown for buyers and sellers.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+schema: ''
 ---
-
 <p><strong>UK conveyancing solicitor fees in 2025/26 typically range from £600 for a sale to £2,000 for a complex purchase</strong> — plus disbursements of £300-£1,000 (searches, Land Registry, SDLT submissions) and the buyer's actual Stamp Duty Land Tax liability where applicable. The professional fee variance reflects transaction complexity: freehold vs leasehold, residential vs buy-to-let, mortgage vs cash, chain vs no chain.</p>
 
 <p>This guide gives realistic fee ranges by transaction type, what the disbursements actually cover, and where buyers and sellers can expect to find variance.</p>

@@ -1,36 +1,39 @@
 ---
-title: "Law Firm Goodwill Valuation: How Solicitors' Practices Are Valued (UK)"
-slug: "law-firm-goodwill-valuation"
-canonical: "https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-goodwill-valuation"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "Practice Succession & Sale"
-metaTitle: "Law Firm Goodwill Valuation: How UK Practices Are Valued"
-metaDescription: "How law firm goodwill is valued: normalised EBITDA multiples, fee multiples (0.3 to 1.2x), what drives the multiple, and goodwill's share of the sale price."
-altText: "UK solicitor reviewing law firm goodwill valuation documents with calculator and financial charts on desk"
-image: ""
-h1: "Law Firm Goodwill Valuation: How a Solicitor's Practice Is Valued"
-summary: "Goodwill is usually the largest asset on a law firm sale. This guide explains how it is valued (normalised profit or EBITDA multiples and fee multiples expressed as ranges), what pushes the multiple up or down, and how big a share of the price goodwill typically represents. Tax treatment is covered at a high level, with a link to the dedicated goodwill tax page."
+title: 'Law Firm Goodwill Valuation: How Solicitors'' Practices Are Valued (UK)'
+slug: law-firm-goodwill-valuation
+canonical: https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-goodwill-valuation
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: Practice Succession & Sale
+metaTitle: 'Law Firm Goodwill Valuation: How UK Firms Are Valued'
+metaDescription: 'How law firm goodwill is valued: normalised profit multiples of 1.5 to 4 times, what drives the multiple, and goodwill''s share of the sale price.'
+altText: UK solicitor reviewing law firm goodwill valuation documents with calculator and financial charts on desk
+image: ''
+h1: 'Law Firm Goodwill Valuation: How a Solicitor''s Practice Is Valued'
+summary: Goodwill is usually the largest asset on a law firm sale. This guide explains how it is valued (normalised profit or EBITDA multiples and fee multiples expressed as ranges), what pushes the multiple up or down, and how big a share of the price goodwill typically represents. Tax treatment is covered at a high level, with a link to the dedicated goodwill tax page.
 keyTakeaways:
-  - "Goodwill is usually valued at roughly 1.5 to 4 times normalised profit or EBITDA, or 0.3 to 1.2 times annual gross recurring fees."
-  - "Client transferability is the dominant driver, with retention above 80 percent a year supporting the upper end of the range."
-  - "Normalising profit means replacing owners' drawings with a market salary and stripping out one-off and personal costs."
-  - "Goodwill is a capital asset taxed under CGT, while work in progress and debtors are settled separately as income."
-  - "BADR on qualifying gains is 14 percent to 5 April 2026 and 18 percent from 6 April 2026, up to a £1 million lifetime limit."
-schema: ""
+- Goodwill is usually valued at roughly 1.5 to 4 times normalised profit or EBITDA, or 0.3 to 1.2 times annual gross recurring fees.
+- Client transferability is the dominant driver, with retention above 80 percent a year supporting the upper end of the range.
+- Normalising profit means replacing owners' drawings with a market salary and stripping out one-off and personal costs.
+- Goodwill is a capital asset taxed under CGT, while work in progress and debtors are settled separately as income.
+- BADR on qualifying gains is 14 percent to 5 April 2026 and 18 percent from 6 April 2026, up to a £1 million lifetime limit.
+schema: ''
 faqs:
-  - question: "How is goodwill in a law firm actually valued?"
-    answer: "Two methods dominate. The earnings approach applies a multiple to normalised (adjusted) profit or EBITDA, after stripping out one-off costs and replacing the owners' drawings with a market-rate salary for the work they do. The fee-multiple approach applies a multiple to annual gross recurring fees as a quicker proxy. Both produce ranges rather than a single figure, and a buyer cross-checks one against the other. Asset-based valuation is a floor, used mainly for distressed sales where goodwill is weak."
-  - question: "What is the typical multiple range for law firm goodwill?"
-    answer: "As broad ranges, not promises: roughly 0.3 to 1.2 times annual gross recurring fees, or roughly 1.5 to 4 times normalised net profit or EBITDA. Where a practice sits in the range is driven by how transferable its clients and work are, the practice area, the depth of fee-earners below the owner, and the consistency of profit. Transaction-dependent, owner-reliant practices sit at the bottom; specialised practices with recurring institutional work and a team in place sit higher."
-  - question: "What share of the sale price is goodwill?"
-    answer: "On most law firm sales goodwill is the largest single asset, because a practice's value is mostly its client relationships, reputation and recurring work rather than its desks and computers. Tangible fixed assets are usually modest, while work in progress and debtors are settled separately (and are treated as income, not capital). So goodwill commonly makes up the bulk of the headline price, with the balance being the net assets transferred and the WIP and debtors element handled on its own terms."
-  - question: "Does goodwill on a law firm sale qualify for the 10% Business Asset Disposal Relief rate?"
-    answer: "No, 10% is out of date. Goodwill is a capital asset, so the seller's gain is charged to Capital Gains Tax rather than income tax. Business Asset Disposal Relief can reduce CGT on qualifying gains up to a £1 million lifetime limit per individual, but the rate is 14% for disposals from 6 April 2025 to 5 April 2026 and 18% from 6 April 2026 (it was 10% only up to 5 April 2025). Gains above the £1 million limit, or that do not qualify, are taxed at the standard 18% or 24% individual CGT rates. See our dedicated goodwill tax page for the detail and conditions."
-  - question: "When should a firm get a professional goodwill valuation?"
-    answer: "Get an independent valuation well before any intended sale, merger or partner retirement, and refresh it every two to three years for succession planning. An early valuation gives you time to fix the things that depress the multiple (owner reliance, undocumented client relationships, lumpy income) and to plan the tax position around the BADR date bands. For complex or higher-value practices, use a valuer who knows the legal sector and SRA requirements rather than a generic business broker."
+- question: How is goodwill in a law firm actually valued?
+  answer: Two methods dominate. The earnings approach applies a multiple to normalised (adjusted) profit or EBITDA, after stripping out one-off costs and replacing the owners' drawings with a market-rate salary for the work they do. The fee-multiple approach applies a multiple to annual gross recurring fees as a quicker proxy. Both produce ranges rather than a single figure, and a buyer cross-checks one against the other. Asset-based valuation is a floor, used mainly for distressed sales where goodwill is weak.
+- question: What is the typical multiple range for law firm goodwill?
+  answer: 'As broad ranges, not promises: roughly 0.3 to 1.2 times annual gross recurring fees, or roughly 1.5 to 4 times normalised net profit or EBITDA. Where a practice sits in the range is driven by how transferable its clients and work are, the practice area, the depth of fee-earners below the owner, and the consistency of profit. Transaction-dependent, owner-reliant practices sit at the bottom; specialised practices with recurring institutional work and a team in place sit higher.'
+- question: What share of the sale price is goodwill?
+  answer: On most law firm sales goodwill is the largest single asset, because a practice's value is mostly its client relationships, reputation and recurring work rather than its desks and computers. Tangible fixed assets are usually modest, while work in progress and debtors are settled separately (and are treated as income, not capital). So goodwill commonly makes up the bulk of the headline price, with the balance being the net assets transferred and the WIP and debtors element handled on its own terms.
+- question: Does goodwill on a law firm sale qualify for the 10% Business Asset Disposal Relief rate?
+  answer: No, 10% is out of date. Goodwill is a capital asset, so the seller's gain is charged to Capital Gains Tax rather than income tax. Business Asset Disposal Relief can reduce CGT on qualifying gains up to a £1 million lifetime limit per individual, but the rate is 14% for disposals from 6 April 2025 to 5 April 2026 and 18% from 6 April 2026 (it was 10% only up to 5 April 2025). Gains above the £1 million limit, or that do not qualify, are taxed at the standard 18% or 24% individual CGT rates. See our dedicated goodwill tax page for the detail and conditions.
+- question: When should a firm get a professional goodwill valuation?
+  answer: Get an independent valuation well before any intended sale, merger or partner retirement, and refresh it every two to three years for succession planning. An early valuation gives you time to fix the things that depress the multiple (owner reliance, undocumented client relationships, lumpy income) and to plan the tax position around the BADR date bands. For complex or higher-value practices, use a valuer who knows the legal sector and SRA requirements rather than a generic business broker.
+metaTitle_prev: 'Law Firm Goodwill Valuation: How UK Practices Are Valued'
+metaDescription_prev: 'How law firm goodwill is valued: normalised EBITDA multiples, fee multiples (0.3 to 1.2x), what drives the multiple, and goodwill''s share of the sale price.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Goodwill is almost always the largest single asset when a solicitor's practice changes hands, and it is the part of the price that is hardest to pin down. Whether you are planning retirement, weighing a merger, or bringing in a successor, the question that decides the headline number is simple to ask and hard to answer: what is the goodwill worth? This guide explains how law firm goodwill is actually valued, what drives the multiple up or down, and how large a share of the price it typically represents. The tax treatment is covered at a high level here, with a link to the dedicated tax page for the detail.</p>
 
 <p>Goodwill is the intangible value that sits above a firm's tangible assets: the client relationships, the reputation, the recurring work, and the practice's proven ability to keep generating profit after the current owners step back. Because it is intangible, valuing it is an exercise in judgement supported by numbers, not a line you can read off the balance sheet.</p>

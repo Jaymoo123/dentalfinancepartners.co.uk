@@ -1,30 +1,33 @@
 ---
-title: "COFA Fundamentals: The Compliance Officer for Finance and Administration Role"
-slug: "cofa-fundamentals"
-metaTitle: "COFA Role UK Law Firms 2025/26: SRA Compliance Officer Duties"
-metaDescription: "The COFA role explained for UK law firms. SRA Accounts Rules oversight, reconciliation cycle, breach decision log, materiality calls, new-COFA onboarding."
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-eyebrow: "Pillar guide · Compliance"
-summary: "The full picture of the COFA role: what it actually requires day-to-day, the materiality call between recorded and notified breaches, how the role interacts with the COLP, who can hold it, and the 90-day onboarding playbook for newly-appointed COFAs."
-hero: "Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration. The role is real, not nominal — the SRA can take action against the named individual for failures. New COFAs typically inherit a function quietly running for years; the challenge is understanding what 'good' looks like and where the risks actually sit."
+title: 'COFA Fundamentals: The Compliance Officer for Finance and Administration Role'
+slug: cofa-fundamentals
+metaTitle: 'COFA Role for UK Law Firms: the SRA Duties Explained'
+metaDescription: 'What a COFA actually does: oversee reconciliations, run the breach decision log, and make materiality calls. Notify the SRA of a change within 7 days.'
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+eyebrow: Pillar guide · Compliance
+summary: 'The full picture of the COFA role: what it actually requires day-to-day, the materiality call between recorded and notified breaches, how the role interacts with the COLP, who can hold it, and the 90-day onboarding playbook for newly-appointed COFAs.'
+hero: Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration. The role is real, not nominal — the SRA can take action against the named individual for failures. New COFAs typically inherit a function quietly running for years; the challenge is understanding what 'good' looks like and where the risks actually sit.
 faqs:
-  - question: "Who can be the COFA?"
-    answer: "Any 'fit and proper' person with authority to perform the role. The COFA does not have to be a solicitor (unlike the COLP, who must be). Practice Manager, Finance Director, experienced bookkeeper, or an equity partner are common appointments. For very small firms, the sole-practitioner solicitor often holds both COLP and COFA roles."
-  - question: "What's the difference between COLP and COFA?"
-    answer: "COLP (Compliance Officer for Legal Practice) is accountable to the SRA for the firm's broader regulatory compliance: AML, conflicts, client care, professional conduct. The COLP must be a solicitor. COFA (Compliance Officer for Finance and Administration) is accountable for compliance with the SRA Accounts Rules specifically — client money discipline, reconciliations, accountant's report co-ordination."
-  - question: "What does the COFA actually do day-to-day?"
-    answer: "Oversees (doesn't necessarily perform) the five-weekly reconciliation cycle. Maintains the breach decision log. Makes the materiality call on which breaches need SRA notification. Manages the client money interest policy and its application. Co-ordinates the annual Accountant's Report. Provides regular reports to firm management — typically a monthly written update."
-  - question: "How do I know if a breach is 'material' and needs SRA notification?"
-    answer: "The materiality test depends on context: amount of client money involved, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. Small accidental shortfalls promptly corrected typically aren't material. Anything indicating a control gap, anything involving client money out of the client account longer than a day or two, anything fraud-adjacent — almost always material. The COFA exercises judgement; over-reporting wastes SRA attention, under-reporting risks regulatory action."
-  - question: "What happens at SRA inspection?"
-    answer: "The inspector requests the breach decision log, reconciliation evidence file (samples), client matter ledger extracts, recent client money interest applications, client money interest policy, and any SRA correspondence and the firm's response. The faster and cleaner the response, the better the outcome. Firms whose working file can answer any reasonable request within an hour have the best inspection experiences."
-  - question: "What's the consequence of failing as a COFA?"
-    answer: "The SRA can take action against the named individual. Outcomes range from informal reprimand for minor failures, through formal rebuke and conditions on practice for moderate failures, to strike-off and/or substantial fines for serious or repeated failures. The role is real. Most COFA failures arise from inadequate handover at appointment, not deliberate misconduct."
-ctaTitle: "Get your COFA role onto solid ground"
-ctaBody: "30-minute scoping call. Whether you're newly appointed, inheriting from a departing colleague, or feeling that the function has drifted, we help you bed in the controls."
+- question: Who can be the COFA?
+  answer: Any 'fit and proper' person with authority to perform the role. The COFA does not have to be a solicitor (unlike the COLP, who must be). Practice Manager, Finance Director, experienced bookkeeper, or an equity partner are common appointments. For very small firms, the sole-practitioner solicitor often holds both COLP and COFA roles.
+- question: What's the difference between COLP and COFA?
+  answer: 'COLP (Compliance Officer for Legal Practice) is accountable to the SRA for the firm''s broader regulatory compliance: AML, conflicts, client care, professional conduct. The COLP must be a solicitor. COFA (Compliance Officer for Finance and Administration) is accountable for compliance with the SRA Accounts Rules specifically — client money discipline, reconciliations, accountant''s report co-ordination.'
+- question: What does the COFA actually do day-to-day?
+  answer: Oversees (doesn't necessarily perform) the five-weekly reconciliation cycle. Maintains the breach decision log. Makes the materiality call on which breaches need SRA notification. Manages the client money interest policy and its application. Co-ordinates the annual Accountant's Report. Provides regular reports to firm management — typically a monthly written update.
+- question: How do I know if a breach is 'material' and needs SRA notification?
+  answer: 'The materiality test depends on context: amount of client money involved, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. Small accidental shortfalls promptly corrected typically aren''t material. Anything indicating a control gap, anything involving client money out of the client account longer than a day or two, anything fraud-adjacent — almost always material. The COFA exercises judgement; over-reporting wastes SRA attention, under-reporting risks regulatory action.'
+- question: What happens at SRA inspection?
+  answer: The inspector requests the breach decision log, reconciliation evidence file (samples), client matter ledger extracts, recent client money interest applications, client money interest policy, and any SRA correspondence and the firm's response. The faster and cleaner the response, the better the outcome. Firms whose working file can answer any reasonable request within an hour have the best inspection experiences.
+- question: What's the consequence of failing as a COFA?
+  answer: The SRA can take action against the named individual. Outcomes range from informal reprimand for minor failures, through formal rebuke and conditions on practice for moderate failures, to strike-off and/or substantial fines for serious or repeated failures. The role is real. Most COFA failures arise from inadequate handover at appointment, not deliberate misconduct.
+ctaTitle: Get your COFA role onto solid ground
+ctaBody: 30-minute scoping call. Whether you're newly appointed, inheriting from a departing colleague, or feeling that the function has drifted, we help you bed in the controls.
+metaTitle_prev: 'COFA Role UK Law Firms 2025/26: SRA Compliance Officer Duties'
+metaDescription_prev: The COFA role explained for UK law firms. SRA Accounts Rules oversight, reconciliation cycle, breach decision log, materiality calls, new-COFA onboarding.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p><strong>Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration.</strong> The role is named in the firm's SRA authorisation and the named individual is accountable to the SRA for compliance with the Accounts Rules. The SRA can take action against the named individual for failures.</p>
 
 <p>This guide is the practical picture. We cover what the COFA actually does day-to-day, the relationship with the COLP, the materiality call between recorded and notified breaches, who can hold the role, and a structured 90-day onboarding playbook for newly-appointed COFAs.</p>

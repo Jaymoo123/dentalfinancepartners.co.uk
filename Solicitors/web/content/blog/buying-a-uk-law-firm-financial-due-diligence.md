@@ -1,33 +1,37 @@
 ---
-title: "How to Conduct Financial Due Diligence When Buying a UK Law Firm"
-slug: "buying-a-uk-law-firm-financial-due-diligence"
-canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/buying-a-uk-law-firm-financial-due-diligence"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
-metaTitle: "Buying a UK Law Firm: Financial Due Diligence Guide for Solicitors"
-metaDescription: "Step-by-step guide for solicitors buying a law firm. Covers firm DD checklist, seller accounts review, WIP review, and SRA compliance checks."
-altText: "UK solicitor reviewing law firm financial documents and due diligence checklist in a modern office"
-image: ""
-h1: "How to Conduct Financial Due Diligence When Buying a UK Law Firm"
-summary: "Buying a law firm requires more than a handshake. This guide walks solicitors through the financial due diligence process, from reviewing seller accounts and WIP to checking SRA compliance and partner tax liabilities."
+title: How to Conduct Financial Due Diligence When Buying a UK Law Firm
+slug: buying-a-uk-law-firm-financial-due-diligence
+canonical: https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/buying-a-uk-law-firm-financial-due-diligence
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: Practice Sale & Succession
+metaTitle: 'Buying a UK Law Firm: Financial Due Diligence Guide'
+metaDescription: 'Run financial due diligence before buying a law firm: get at least 3 years of statutory accounts, value WIP conservatively, and review the SRA reports.'
+altText: UK solicitor reviewing law firm financial documents and due diligence checklist in a modern office
+image: ''
+h1: How to Conduct Financial Due Diligence When Buying a UK Law Firm
+summary: Buying a law firm requires more than a handshake. This guide walks solicitors through the financial due diligence process, from reviewing seller accounts and WIP to checking SRA compliance and partner tax liabilities.
 keyTakeaways:
-  - "Request at least three years of full statutory accounts plus current-year management accounts; a single year's figures can hide a firm sliding toward insolvency."
-  - "Value WIP conservatively, discount items over six months old, and check the ratio: WIP above 25% of annual turnover suggests under-billing or dead matters."
-  - "Review the last three SRA accountant's reports and 12 months of client account reconciliations; a history of client account breaches is a major red flag."
-  - "A share purchase inherits the company's historical tax liabilities, while an asset purchase generally does not; structure and warranties matter."
-  - "Discount concentrated earnings: if one client or fee-earner generates over 40% of revenue, the firm is vulnerable, and budget for 10-20% client attrition."
+- Request at least three years of full statutory accounts plus current-year management accounts; a single year's figures can hide a firm sliding toward insolvency.
+- 'Value WIP conservatively, discount items over six months old, and check the ratio: WIP above 25% of annual turnover suggests under-billing or dead matters.'
+- Review the last three SRA accountant's reports and 12 months of client account reconciliations; a history of client account breaches is a major red flag.
+- A share purchase inherits the company's historical tax liabilities, while an asset purchase generally does not; structure and warranties matter.
+- 'Discount concentrated earnings: if one client or fee-earner generates over 40% of revenue, the firm is vulnerable, and budget for 10-20% client attrition.'
 faqs:
-  - question: "What is the most important document to request in a law firm due diligence?"
-    answer: "The most important document is the last three years of full statutory accounts, including the profit and loss, balance sheet, and notes. These accounts show the firm's revenue trends, profit margins, and balance sheet strength. Without them, you cannot assess whether the asking price is fair. Management accounts for the current year are also essential to check for any recent deterioration in performance."
-  - question: "How do I value WIP when buying a law firm?"
-    answer: "WIP should be valued conservatively. Request a detailed WIP schedule showing each matter, the fee-earner, the date of work, and the likelihood of billing. Discount any WIP that is more than six months old or contingent on an uncertain event. A typical approach is to value WIP at 80-90% of the seller's stated value, then apply a further discount for aged items. Always negotiate a WIP write-down in the purchase agreement."
-  - question: "What SRA compliance issues should I check before buying a law firm?"
-    answer: "Check the last three SRA accountant's reports for any qualifications or breaches. Request client account reconciliations for the last 12 months to confirm they were done every five weeks. Look for any correspondence from the SRA about fines or warning notices. Also check that the firm's COFA and COLP are competent and have been in role for a reasonable period. A history of client account breaches is a major red flag."
-  - question: "Can I inherit the seller's tax liabilities when buying a law firm?"
-    answer: "It depends on the structure. If you buy the assets of a limited company, you generally do not inherit the company's tax liabilities. But if you buy the shares, you take on all historical liabilities, including any unpaid corporation tax or VAT. For partnerships and LLPs, you may inherit liabilities if you join as a partner and the partnership agreement makes you jointly liable. Always have a solicitor review the purchase agreement and tax warranties."
+- question: What is the most important document to request in a law firm due diligence?
+  answer: The most important document is the last three years of full statutory accounts, including the profit and loss, balance sheet, and notes. These accounts show the firm's revenue trends, profit margins, and balance sheet strength. Without them, you cannot assess whether the asking price is fair. Management accounts for the current year are also essential to check for any recent deterioration in performance.
+- question: How do I value WIP when buying a law firm?
+  answer: WIP should be valued conservatively. Request a detailed WIP schedule showing each matter, the fee-earner, the date of work, and the likelihood of billing. Discount any WIP that is more than six months old or contingent on an uncertain event. A typical approach is to value WIP at 80-90% of the seller's stated value, then apply a further discount for aged items. Always negotiate a WIP write-down in the purchase agreement.
+- question: What SRA compliance issues should I check before buying a law firm?
+  answer: Check the last three SRA accountant's reports for any qualifications or breaches. Request client account reconciliations for the last 12 months to confirm they were done every five weeks. Look for any correspondence from the SRA about fines or warning notices. Also check that the firm's COFA and COLP are competent and have been in role for a reasonable period. A history of client account breaches is a major red flag.
+- question: Can I inherit the seller's tax liabilities when buying a law firm?
+  answer: It depends on the structure. If you buy the assets of a limited company, you generally do not inherit the company's tax liabilities. But if you buy the shares, you take on all historical liabilities, including any unpaid corporation tax or VAT. For partnerships and LLPs, you may inherit liabilities if you join as a partner and the partnership agreement makes you jointly liable. Always have a solicitor review the purchase agreement and tax warranties.
+metaTitle_prev: 'Buying a UK Law Firm: Financial Due Diligence Guide for Solicitors'
+metaDescription_prev: Step-by-step guide for solicitors buying a law firm. Covers firm DD checklist, seller accounts review, WIP review, and SRA compliance checks.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+schema: ''
 ---
-
 <h2>Why Financial Due Diligence Matters for Solicitors Buying a Firm</h2>
 
 <p>Buying an established law firm can be the fastest route to growing your practice. But the goodwill price tag often masks hidden liabilities. A thorough financial due diligence process is the only way to confirm you are paying a fair price for a solvent, compliant business.</p>

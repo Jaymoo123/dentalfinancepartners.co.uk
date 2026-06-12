@@ -1,34 +1,37 @@
 ---
-title: "How Should a Solicitor Handle Client Disbursements on the Client Account?"
-slug: "handling-client-disbursements-properly-uk"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/handling-client-disbursements-properly-uk"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "Handling Client Disbursements Properly: Solicitor & VAT Rules"
-metaDescription: "UK solicitor guide to client disbursements: SRA client account rules, disbursement principal vs agent, VAT treatment, and practical examples."
-altText: "UK solicitor reviewing client account ledger entries for disbursements at a desk in a law firm office"
-image: ""
-h1: "How Should a Solicitor Handle Client Disbursements on the Client Account?"
-summary: "A clear guide for UK solicitors on handling client disbursements correctly under the SRA Accounts Rules. Covers the distinction between disbursement principal and agent, VAT treatment, and practical compliance steps."
+title: How Should a Solicitor Handle Client Disbursements on the Client Account?
+slug: handling-client-disbursements-properly-uk
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/handling-client-disbursements-properly-uk
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: 'Client Disbursements: SRA Client Account and VAT Rules'
+metaDescription: 'Handle solicitor disbursements right: the principal versus agent test drives the client account and VAT treatment, with 20% VAT on a principal recharge.'
+altText: UK solicitor reviewing client account ledger entries for disbursements at a desk in a law firm office
+image: ''
+h1: How Should a Solicitor Handle Client Disbursements on the Client Account?
+summary: A clear guide for UK solicitors on handling client disbursements correctly under the SRA Accounts Rules. Covers the distinction between disbursement principal and agent, VAT treatment, and practical compliance steps.
 keyTakeaways:
-  - "The principal versus agent test turns on who is legally liable to pay the third party, and it drives both client account and VAT treatment."
-  - "True disbursements paid as agent are outside VAT scope, but costs recharged as principal must carry 20% VAT."
-  - "Court fees and SDLT are paid as agent with no VAT added, a point firms commonly get wrong."
-  - "Client money for disbursements must sit in the client account, reconciled at least every five weeks under Rule 8.3."
-  - "Wrongly treating a recharged cost as a disbursement leaves the firm facing a VAT assessment plus interest and penalties."
-schema: ""
+- The principal versus agent test turns on who is legally liable to pay the third party, and it drives both client account and VAT treatment.
+- True disbursements paid as agent are outside VAT scope, but costs recharged as principal must carry 20% VAT.
+- Court fees and SDLT are paid as agent with no VAT added, a point firms commonly get wrong.
+- Client money for disbursements must sit in the client account, reconciled at least every five weeks under Rule 8.3.
+- Wrongly treating a recharged cost as a disbursement leaves the firm facing a VAT assessment plus interest and penalties.
+schema: ''
 faqs:
-  - question: "What is the difference between a disbursement principal and a disbursement agent for a solicitor?"
-    answer: "A solicitor acts as a disbursement agent when the client is legally liable to pay the third party, and the solicitor pays on the client's behalf. The third party's invoice is addressed to the client. No VAT is added when recharging the client. A solicitor acts as a disbursement principal when the firm is legally liable to pay the third party, and the firm recharges the cost to the client. The third party's invoice is addressed to the firm. VAT at 20% must be added when recharging the client. This distinction is critical for both SRA Accounts Rules compliance and VAT treatment."
-  - question: "Do I add VAT to court fees when recharging a client?"
-    answer: "No. Court fees are exempt from VAT, and the solicitor typically acts as agent when paying them. The court's contract is with the client (the litigant), not the solicitor. You recharge the exact court fee amount to the client with no VAT added. Adding VAT to court fees is a common error that can lead to an HMRC assessment for overpaid VAT if you have incorrectly accounted for it, or underpaid VAT if you have treated a principal payment as a disbursement."
-  - question: "How often must a solicitor reconcile the client account for disbursements?"
-    answer: "Under SRA Accounts Rules Rule 8.3, the client account must be reconciled at least every five weeks. This includes all client money held for disbursements. Each client ledger must clearly show disbursement entries, including the date, amount, payee, and client matter reference. The reconciliation must compare the client account bank balance to the total of all client ledger balances. Disbursements paid from the client account must match the client's authority and the third-party invoice."
-  - question: "What happens if a solicitor incorrectly treats a recharged expense as a disbursement for VAT?"
-    answer: "If HMRC discovers the error, the solicitor faces a VAT assessment for the underpaid VAT, plus interest and late payment penalties. The firm bears the cost because the client has already been recharged without VAT and cannot be re-invoiced retrospectively. The error may also appear in the accountant's report, leading to a qualified report and SRA scrutiny. The COFA should implement corrective procedures immediately, including reviewing all matters in the current and previous VAT periods."
+- question: What is the difference between a disbursement principal and a disbursement agent for a solicitor?
+  answer: A solicitor acts as a disbursement agent when the client is legally liable to pay the third party, and the solicitor pays on the client's behalf. The third party's invoice is addressed to the client. No VAT is added when recharging the client. A solicitor acts as a disbursement principal when the firm is legally liable to pay the third party, and the firm recharges the cost to the client. The third party's invoice is addressed to the firm. VAT at 20% must be added when recharging the client. This distinction is critical for both SRA Accounts Rules compliance and VAT treatment.
+- question: Do I add VAT to court fees when recharging a client?
+  answer: No. Court fees are exempt from VAT, and the solicitor typically acts as agent when paying them. The court's contract is with the client (the litigant), not the solicitor. You recharge the exact court fee amount to the client with no VAT added. Adding VAT to court fees is a common error that can lead to an HMRC assessment for overpaid VAT if you have incorrectly accounted for it, or underpaid VAT if you have treated a principal payment as a disbursement.
+- question: How often must a solicitor reconcile the client account for disbursements?
+  answer: Under SRA Accounts Rules Rule 8.3, the client account must be reconciled at least every five weeks. This includes all client money held for disbursements. Each client ledger must clearly show disbursement entries, including the date, amount, payee, and client matter reference. The reconciliation must compare the client account bank balance to the total of all client ledger balances. Disbursements paid from the client account must match the client's authority and the third-party invoice.
+- question: What happens if a solicitor incorrectly treats a recharged expense as a disbursement for VAT?
+  answer: If HMRC discovers the error, the solicitor faces a VAT assessment for the underpaid VAT, plus interest and late payment penalties. The firm bears the cost because the client has already been recharged without VAT and cannot be re-invoiced retrospectively. The error may also appear in the accountant's report, leading to a qualified report and SRA scrutiny. The COFA should implement corrective procedures immediately, including reviewing all matters in the current and previous VAT periods.
+metaTitle_prev: 'Handling Client Disbursements Properly: Solicitor & VAT Rules'
+metaDescription_prev: 'UK solicitor guide to client disbursements: SRA client account rules, disbursement principal vs agent, VAT treatment, and practical examples.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Every solicitor in private practice handles client disbursements. The question is whether you are handling them correctly under the SRA Accounts Rules and for VAT purposes. Getting this wrong can lead to an accountant's report qualification, a COFA investigation, or a VAT assessment from HMRC.</p>
 
 <p>This article explains the two critical distinctions every solicitor must understand: the difference between acting as a disbursement principal and a disbursement agent, and the correct VAT treatment for each. We use worked examples with specific figures to show how the rules apply in practice.</p>

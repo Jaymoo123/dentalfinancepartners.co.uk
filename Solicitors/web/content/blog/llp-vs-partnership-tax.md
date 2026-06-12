@@ -1,36 +1,39 @@
 ---
-title: "LLP vs Partnership Tax: How the Two Structures Are Taxed for UK Law Firms"
-slug: "llp-vs-partnership-tax"
-canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/llp-vs-partnership-tax"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "Partnership & LLP Accounting"
-metaTitle: "LLP vs Partnership Tax: UK Law Firm Comparison 2025/26"
-metaDescription: "LLP and traditional partnership are both tax-transparent, so members are taxed identically on profit share. The one real tax difference: salaried member rules hit only LLPs."
-altText: "UK solicitors comparing how an LLP and a traditional partnership are taxed at member level"
-image: ""
-h1: "LLP vs Partnership Tax: How the Two Structures Are Taxed for UK Law Firms"
-summary: "At member level, an LLP and a traditional partnership are taxed identically: both are tax-transparent, so each partner or member pays income tax and Class 4 NIC on their allocated profit share, not on drawings. The single genuine tax divergence is the salaried member rules, which apply only to LLPs and can pull a member into PAYE when three conditions are met."
+title: 'LLP vs Partnership Tax: How the Two Structures Are Taxed for UK Law Firms'
+slug: llp-vs-partnership-tax
+canonical: https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/llp-vs-partnership-tax
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: Partnership & LLP Accounting
+metaTitle: 'LLP vs Partnership Tax: a Comparison for UK Law Firms'
+metaDescription: 'An LLP and a traditional partnership are taxed the same at member level. The real difference: salaried member rules (the 80% salary test) hit LLPs only.'
+altText: UK solicitors comparing how an LLP and a traditional partnership are taxed at member level
+image: ''
+h1: 'LLP vs Partnership Tax: How the Two Structures Are Taxed for UK Law Firms'
+summary: 'At member level, an LLP and a traditional partnership are taxed identically: both are tax-transparent, so each partner or member pays income tax and Class 4 NIC on their allocated profit share, not on drawings. The single genuine tax divergence is the salaried member rules, which apply only to LLPs and can pull a member into PAYE when three conditions are met.'
 keyTakeaways:
-  - "An LLP and a traditional partnership are taxed identically at member level, as both are tax-transparent under ITTOIA 2005."
-  - "Each partner pays income tax and Class 4 NIC (6% to £50,270, then 2%) on their allocated profit share, not on drawings."
-  - "The one real tax difference is the salaried member rules, which apply only to LLP members and never to traditional partners."
-  - "Class 2 NIC was abolished from 6 April 2024, so there is no longer a weekly charge for partners to budget for."
-  - "Finance Act 2026 added no employer NIC on members; the 2026 dividend rate rise affects incorporated firms only."
-schema: ""
+- An LLP and a traditional partnership are taxed identically at member level, as both are tax-transparent under ITTOIA 2005.
+- Each partner pays income tax and Class 4 NIC (6% to £50,270, then 2%) on their allocated profit share, not on drawings.
+- The one real tax difference is the salaried member rules, which apply only to LLP members and never to traditional partners.
+- Class 2 NIC was abolished from 6 April 2024, so there is no longer a weekly charge for partners to budget for.
+- Finance Act 2026 added no employer NIC on members; the 2026 dividend rate rise affects incorporated firms only.
+schema: ''
 faqs:
-  - question: "Is an LLP taxed differently from a traditional partnership?"
-    answer: "At member level, no. Both are tax-transparent under ITTOIA 2005: the firm itself pays no income tax or corporation tax on trading profit, and each partner or member is taxed personally as self-employed on their allocated profit share. Both pay income tax plus Class 4 NIC at 6% on profits between 12,570 and 50,270 pounds and 2% above (2025/26). The one structural tax difference is that the salaried member rules can apply to an LLP member but never to a traditional partner."
-  - question: "Are partners taxed on drawings or on profit share?"
-    answer: "On the allocated profit share, not on drawings. Drawings are cash advances against your share, so a partner or member who draws less than their allocation still pays tax on the full allocation (the retained balance is working capital). This applies identically to a traditional partnership and an LLP, because both are tax-transparent. It is the most common partner cash-flow trap."
-  - question: "Do the salaried member rules apply to a traditional partnership?"
-    answer: "No. The salaried member rules (Finance Act 2014, ITTOIA 2005 sections 863A to 863G) apply only to LLP members. They can treat an LLP member as an employee for tax (PAYE and employer NIC on their reward) when all three conditions are met: Condition A (at least 80% disguised salary), Condition B (no significant influence over the LLP), and Condition C (capital contribution under 25% of disguised salary). A traditional partnership has no salaried member equivalent, so a partner there stays self-employed regardless."
-  - question: "Is Class 2 National Insurance still payable by partners?"
-    answer: "No. Class 2 NIC liability was removed from 6 April 2024. A partner or member with profits at or above the Small Profits Threshold is treated as having paid and keeps their state pension entitlement without paying anything; those below can pay Class 2 voluntarily to protect their record. Partners pay Class 4 NIC on their profit share through self-assessment, with payments on account due on 31 January and 31 July."
-  - question: "Will LLP members face employer National Insurance on their profit shares from 2026?"
-    answer: "No. There is no general employer NIC charge on a genuine LLP member's profit share, and Finance Act 2026 did not introduce one. LLP members are self-employed for NIC and pay Class 4. The only route to an employer NIC cost is the salaried member rules, where a member is reclassified as an employee. The 2026 dividend rate change affects incorporated firms (salary and dividend), not transparent partnerships or LLPs."
+- question: Is an LLP taxed differently from a traditional partnership?
+  answer: 'At member level, no. Both are tax-transparent under ITTOIA 2005: the firm itself pays no income tax or corporation tax on trading profit, and each partner or member is taxed personally as self-employed on their allocated profit share. Both pay income tax plus Class 4 NIC at 6% on profits between 12,570 and 50,270 pounds and 2% above (2025/26). The one structural tax difference is that the salaried member rules can apply to an LLP member but never to a traditional partner.'
+- question: Are partners taxed on drawings or on profit share?
+  answer: On the allocated profit share, not on drawings. Drawings are cash advances against your share, so a partner or member who draws less than their allocation still pays tax on the full allocation (the retained balance is working capital). This applies identically to a traditional partnership and an LLP, because both are tax-transparent. It is the most common partner cash-flow trap.
+- question: Do the salaried member rules apply to a traditional partnership?
+  answer: 'No. The salaried member rules (Finance Act 2014, ITTOIA 2005 sections 863A to 863G) apply only to LLP members. They can treat an LLP member as an employee for tax (PAYE and employer NIC on their reward) when all three conditions are met: Condition A (at least 80% disguised salary), Condition B (no significant influence over the LLP), and Condition C (capital contribution under 25% of disguised salary). A traditional partnership has no salaried member equivalent, so a partner there stays self-employed regardless.'
+- question: Is Class 2 National Insurance still payable by partners?
+  answer: No. Class 2 NIC liability was removed from 6 April 2024. A partner or member with profits at or above the Small Profits Threshold is treated as having paid and keeps their state pension entitlement without paying anything; those below can pay Class 2 voluntarily to protect their record. Partners pay Class 4 NIC on their profit share through self-assessment, with payments on account due on 31 January and 31 July.
+- question: Will LLP members face employer National Insurance on their profit shares from 2026?
+  answer: No. There is no general employer NIC charge on a genuine LLP member's profit share, and Finance Act 2026 did not introduce one. LLP members are self-employed for NIC and pay Class 4. The only route to an employer NIC cost is the salaried member rules, where a member is reclassified as an employee. The 2026 dividend rate change affects incorporated firms (salary and dividend), not transparent partnerships or LLPs.
+metaTitle_prev: 'LLP vs Partnership Tax: UK Law Firm Comparison 2025/26'
+metaDescription_prev: 'LLP and traditional partnership are both tax-transparent, so members are taxed identically on profit share. The one real tax difference: salaried member rules hit only LLPs.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>When you weigh up <strong>LLP vs partnership tax</strong> for a law firm, the headline that surprises most partners is that the two structures are taxed the same way at member level. A traditional (general) partnership and a limited liability partnership (LLP) are both <strong>tax-transparent</strong>, so the differences people expect to find on the tax side are mostly not there. The genuine tax divergence is narrow and specific, and this guide isolates it.</p>
 
 <p>This page focuses on the tax comparison between the two transparent structures. For the wider structural decision (liability, Companies House filing, regulatory authorisation) see our <a href="/blog/partnership-llp-structure/llp-vs-traditional-partnership-uk-law-firms">LLP vs traditional partnership structure comparison</a>. For a single-structure deep dive, see the <a href="/blog/partnership-llp-accounting/law-firm-partnership-tax-guide">law firm partnership tax guide</a> and the <a href="/blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms">LLP member taxation guide</a>.</p>

@@ -1,36 +1,39 @@
 ---
-title: "SRA Accounts Rules: The Complete Compliance Guide for UK Law Firms"
-slug: "sra-accounts-rules-compliance-guide"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accounts-rules-compliance-guide"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Compliance & Trust Accounting"
-metaTitle: "SRA Accounts Rules 2019: Complete Compliance Guide | UK Law Firms"
-metaDescription: "A practical walkthrough of the SRA Accounts Rules 2019: client money, the client account, the five-weekly reconciliation, the COFA role, the accountant's report, and common breaches with fixes."
-altText: "UK solicitor reviewing SRA accounts rules compliance documentation at a desk with client ledgers and bank statements"
-image: ""
-h1: "SRA Accounts Rules: The Complete Compliance Guide for UK Law Firms"
-summary: "A practical, rule-by-rule guide to the SRA Accounts Rules 2019 for firms in England and Wales: what counts as client money, how the client account works, the five-weekly reconciliation, the COFA's role, when you need an accountant's report (and when you are exempt), and the breaches inspectors find most often."
+title: 'SRA Accounts Rules: The Complete Compliance Guide for UK Law Firms'
+slug: sra-accounts-rules-compliance-guide
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accounts-rules-compliance-guide
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: SRA Compliance & Trust Accounting
+metaTitle: 'SRA Accounts Rules: the Complete Compliance Guide UK'
+metaDescription: 'A rule-by-rule walk through the SRA Accounts Rules: client money, the client account, the COFA role and the report, with reconciliation every 5 weeks.'
+altText: UK solicitor reviewing SRA accounts rules compliance documentation at a desk with client ledgers and bank statements
+image: ''
+h1: 'SRA Accounts Rules: The Complete Compliance Guide for UK Law Firms'
+summary: 'A practical, rule-by-rule guide to the SRA Accounts Rules 2019 for firms in England and Wales: what counts as client money, how the client account works, the five-weekly reconciliation, the COFA''s role, when you need an accountant''s report (and when you are exempt), and the breaches inspectors find most often.'
 keyTakeaways:
-  - "The SRA Accounts Rules 2019 came into force on 25 November 2019 and apply to every authorised body that holds or receives client money."
-  - "Client money must sit in a separately named client account, kept apart from firm money, with no banking facilities provided (Rules 3, 4 and 3.3)."
-  - "The client account must be reconciled three ways at least every five weeks under Rule 8.3, signed off by the COFA or a manager."
-  - "An accountant's report is due within six months of the period end unless the firm meets the Rule 12.2 exemption (average £10,000 and maximum £250,000, or Legal Aid only)."
-  - "Records must be kept for at least six years, and any client account shortage must be replaced from the firm's own money immediately."
-schema: ""
+- The SRA Accounts Rules 2019 came into force on 25 November 2019 and apply to every authorised body that holds or receives client money.
+- Client money must sit in a separately named client account, kept apart from firm money, with no banking facilities provided (Rules 3, 4 and 3.3).
+- The client account must be reconciled three ways at least every five weeks under Rule 8.3, signed off by the COFA or a manager.
+- An accountant's report is due within six months of the period end unless the firm meets the Rule 12.2 exemption (average £10,000 and maximum £250,000, or Legal Aid only).
+- Records must be kept for at least six years, and any client account shortage must be replaced from the firm's own money immediately.
+schema: ''
 faqs:
-  - question: "What are the SRA Accounts Rules and when did they come into force?"
-    answer: "The SRA Accounts Rules 2019 are the regulatory framework governing how an SRA-regulated firm in England and Wales handles client money. They came into force on 25 November 2019, replacing the longer and more prescriptive 2011 rules with a shorter, principles-based set. Every authorised body that holds or receives client money must comply, whatever its size or structure."
-  - question: "How often must a solicitor reconcile the client account?"
-    answer: "At least every five weeks under Rule 8.3. The reconciliation is a three-way match: the total of the individual client ledger balances must agree with the cash book balance, which must agree with the client bank statement. It must be signed off by the COFA or a manager of the firm, and any difference must be investigated and corrected promptly. Many firms reconcile monthly or weekly to stay comfortably inside the five-week limit."
-  - question: "Does every firm need an accountant's report?"
-    answer: "A firm that has held client money during an accounting period must obtain an accountant's report within six months of the period end (Rule 12.1). A firm is exempt (Rule 12.2) if either all the client money it held was money from the Legal Aid Agency, or the client money balance did not exceed an average of £10,000 and a maximum of £250,000 across the period. The exemption removes the duty to commission an external report; it does not remove the duty to keep records or reconcile every five weeks."
-  - question: "Can client money be used to provide banking facilities?"
-    answer: "No. Rule 3.3 prohibits using a client account to provide banking facilities to clients or third parties. Every payment into, and every transfer or withdrawal from, a client account must relate to the delivery of regulated services you are providing. Passing unconnected funds through the client account, or holding money after the legal work has finished, is one of the breaches the SRA treats most seriously."
-  - question: "What should I do if I find a shortage on the client account?"
-    answer: "Treat it as urgent. Replace the shortage from the firm's own money straight away so client money is not at risk, then investigate the cause, document what happened and what you changed, and assess whether the breach is material and must be reported to the SRA. The expectation is prompt rectification and honest disclosure of anything serious; concealing a shortage almost always makes the regulatory outcome worse."
+- question: What are the SRA Accounts Rules and when did they come into force?
+  answer: The SRA Accounts Rules 2019 are the regulatory framework governing how an SRA-regulated firm in England and Wales handles client money. They came into force on 25 November 2019, replacing the longer and more prescriptive 2011 rules with a shorter, principles-based set. Every authorised body that holds or receives client money must comply, whatever its size or structure.
+- question: How often must a solicitor reconcile the client account?
+  answer: 'At least every five weeks under Rule 8.3. The reconciliation is a three-way match: the total of the individual client ledger balances must agree with the cash book balance, which must agree with the client bank statement. It must be signed off by the COFA or a manager of the firm, and any difference must be investigated and corrected promptly. Many firms reconcile monthly or weekly to stay comfortably inside the five-week limit.'
+- question: Does every firm need an accountant's report?
+  answer: A firm that has held client money during an accounting period must obtain an accountant's report within six months of the period end (Rule 12.1). A firm is exempt (Rule 12.2) if either all the client money it held was money from the Legal Aid Agency, or the client money balance did not exceed an average of £10,000 and a maximum of £250,000 across the period. The exemption removes the duty to commission an external report; it does not remove the duty to keep records or reconcile every five weeks.
+- question: Can client money be used to provide banking facilities?
+  answer: No. Rule 3.3 prohibits using a client account to provide banking facilities to clients or third parties. Every payment into, and every transfer or withdrawal from, a client account must relate to the delivery of regulated services you are providing. Passing unconnected funds through the client account, or holding money after the legal work has finished, is one of the breaches the SRA treats most seriously.
+- question: What should I do if I find a shortage on the client account?
+  answer: Treat it as urgent. Replace the shortage from the firm's own money straight away so client money is not at risk, then investigate the cause, document what happened and what you changed, and assess whether the breach is material and must be reported to the SRA. The expectation is prompt rectification and honest disclosure of anything serious; concealing a shortage almost always makes the regulatory outcome worse.
+metaTitle_prev: 'SRA Accounts Rules 2019: Complete Compliance Guide | UK Law Firms'
+metaDescription_prev: 'A practical walkthrough of the SRA Accounts Rules 2019: client money, the client account, the five-weekly reconciliation, the COFA role, the accountant''s report, and common breaches with fixes.'
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The <strong>SRA Accounts Rules</strong> are the backbone of trust accounting for every law firm in England and Wales. If your firm holds or receives client money, these rules decide how that money is banked, kept separate, reconciled, returned, and reported on. Get them right and they are largely invisible. Get them wrong and you risk a qualified accountant's report, an SRA investigation, and in the worst cases intervention.</p>
 
 <p>This guide is the practical compliance walkthrough: what counts as client money, how the client account works, the five-weekly reconciliation, the COFA's role, when you need an accountant's report (and when you are exempt), and the breaches inspectors find most often. It is written as the hub. Where a topic deserves its own deep dive, we link to the specialist guide rather than repeating it here.</p>

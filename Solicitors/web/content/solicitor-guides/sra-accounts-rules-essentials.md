@@ -1,30 +1,33 @@
 ---
-title: "SRA Accounts Rules Essentials for UK Law Firms"
-slug: "sra-accounts-rules-essentials"
-metaTitle: "SRA Accounts Rules UK 2025/26: Client Money, Reconciliations"
-metaDescription: "The SRA Accounts Rules for UK law firms in plain English. Client money discipline, five-weekly reconciliations, annual accountant's report, de minimis exemption, COFA duties."
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-eyebrow: "Pillar guide · SRA compliance"
-summary: "Everything UK solicitors need to know about the SRA Accounts Rules in 2025/26. Client money handling, the five-weekly reconciliation rhythm (Rule 8.3), the annual Accountant's Report and the de minimis exemption, common breaches, and the COFA's actual role."
-hero: "The SRA Accounts Rules are short on paper but heavy in operation. Every firm holding client money has to run a reconciliation discipline that holds at SRA inspection. This is the practical guide to what the rules actually require, where firms typically slip, and how to keep the regulator's attention away from your firm."
+title: SRA Accounts Rules Essentials for UK Law Firms
+slug: sra-accounts-rules-essentials
+metaTitle: 'SRA Accounts Rules: Client Money and Reconciliations'
+metaDescription: 'What the SRA Accounts Rules require of UK law firms: client money discipline, the report exemption, and reconciliation at least every 5 weeks.'
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+eyebrow: Pillar guide · SRA compliance
+summary: Everything UK solicitors need to know about the SRA Accounts Rules in 2025/26. Client money handling, the five-weekly reconciliation rhythm (Rule 8.3), the annual Accountant's Report and the de minimis exemption, common breaches, and the COFA's actual role.
+hero: The SRA Accounts Rules are short on paper but heavy in operation. Every firm holding client money has to run a reconciliation discipline that holds at SRA inspection. This is the practical guide to what the rules actually require, where firms typically slip, and how to keep the regulator's attention away from your firm.
 faqs:
-  - question: "How often must we reconcile our client account?"
-    answer: "At least every five weeks (Rule 8.3). This is the regulatory maximum interval, not a target. Monthly reconciliation is good practice and gives buffer; five weeks is the cap. The reconciliation must compare the client account ledger total with the bank statement and explain any differences."
-  - question: "When is the de minimis exemption from the annual Accountant's Report available?"
-    answer: "Rule 12.2 of the SRA Accounts Rules: the firm held no more than £10,000 client money at any time during the period AND the average client money balance did not exceed £250. Both conditions must be met. Many small firms qualify but few realise — we routinely review eligibility for firms that have always assumed they need a report."
-  - question: "What happens if we miss the 6-month deadline for the Accountant's Report?"
-    answer: "The SRA treats late filing as a regulatory matter. Short delay (1-2 months) with a reasonable explanation is typically tolerated. Repeat lateness or unexplained delay can trigger a Forensic Investigation referral, which is materially worse. We aim to issue reports 4-6 weeks ahead of the deadline as a routine."
-  - question: "What's the difference between a breach and a 'material breach'?"
-    answer: "All breaches of the Accounts Rules should be recorded in the firm's breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates systemic control failure. Over-reporting wastes SRA attention; under-reporting risks regulatory action. The COFA exercises judgement."
-  - question: "Can a non-solicitor be the COFA?"
-    answer: "Yes. The COFA does not have to be a solicitor. The SRA requires the COFA to be 'fit and proper' and to have the authority to perform the role. Practice Manager, Finance Director, or experienced bookkeeper can be the COFA in many firms. The COLP must be a solicitor."
-  - question: "How should we handle client money interest?"
-    answer: "SRA Accounts Rules require firms to pay client money interest when 'fair'. The test depends on the amount held and the length of time. Small amounts and short holding periods typically don't require interest to be paid. The firm must have a written client money interest policy, accessible to clients, and apply it consistently. Policy that says one thing and practice that does another is a breach."
-ctaTitle: "Get your SRA Accounts Rules onto specialist hands"
-ctaBody: "30-minute scoping call. We confirm whether the de minimis exemption applies, audit your reconciliation rhythm, and quote a fixed fee for the annual Accountant's Report."
+- question: How often must we reconcile our client account?
+  answer: At least every five weeks (Rule 8.3). This is the regulatory maximum interval, not a target. Monthly reconciliation is good practice and gives buffer; five weeks is the cap. The reconciliation must compare the client account ledger total with the bank statement and explain any differences.
+- question: When is the de minimis exemption from the annual Accountant's Report available?
+  answer: 'Rule 12.2 of the SRA Accounts Rules: the firm held no more than £10,000 client money at any time during the period AND the average client money balance did not exceed £250. Both conditions must be met. Many small firms qualify but few realise — we routinely review eligibility for firms that have always assumed they need a report.'
+- question: What happens if we miss the 6-month deadline for the Accountant's Report?
+  answer: The SRA treats late filing as a regulatory matter. Short delay (1-2 months) with a reasonable explanation is typically tolerated. Repeat lateness or unexplained delay can trigger a Forensic Investigation referral, which is materially worse. We aim to issue reports 4-6 weeks ahead of the deadline as a routine.
+- question: What's the difference between a breach and a 'material breach'?
+  answer: 'All breaches of the Accounts Rules should be recorded in the firm''s breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates systemic control failure. Over-reporting wastes SRA attention; under-reporting risks regulatory action. The COFA exercises judgement.'
+- question: Can a non-solicitor be the COFA?
+  answer: Yes. The COFA does not have to be a solicitor. The SRA requires the COFA to be 'fit and proper' and to have the authority to perform the role. Practice Manager, Finance Director, or experienced bookkeeper can be the COFA in many firms. The COLP must be a solicitor.
+- question: How should we handle client money interest?
+  answer: SRA Accounts Rules require firms to pay client money interest when 'fair'. The test depends on the amount held and the length of time. Small amounts and short holding periods typically don't require interest to be paid. The firm must have a written client money interest policy, accessible to clients, and apply it consistently. Policy that says one thing and practice that does another is a breach.
+ctaTitle: Get your SRA Accounts Rules onto specialist hands
+ctaBody: 30-minute scoping call. We confirm whether the de minimis exemption applies, audit your reconciliation rhythm, and quote a fixed fee for the annual Accountant's Report.
+metaTitle_prev: 'SRA Accounts Rules UK 2025/26: Client Money, Reconciliations'
+metaDescription_prev: The SRA Accounts Rules for UK law firms in plain English. Client money discipline, five-weekly reconciliations, annual accountant's report, de minimis exemption, COFA duties.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p><strong>The SRA Accounts Rules are short on paper but heavy in operation.</strong> Every firm holding client money has to run a reconciliation discipline that holds at SRA inspection. The current version of the rules took effect on 25 November 2019 and has been amended several times since. The headline rules are short; the operational discipline is what matters.</p>
 
 <p>This guide is the practical playbook. We cover what the rules actually require, where firms typically slip, the de minimis exemption that many small firms could claim, common breaches we see in practice, and what the COFA's role actually involves.</p>

@@ -1,34 +1,35 @@
 ---
-title: "Solicitor Client Account Reconciliation: Complete Guide for UK Law Firms"
-slug: "solicitor-client-account-reconciliation"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation"
-date: "2026-04-01"
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Compliance & Trust Accounting"
-metaTitle: "Client Money Reconciliation: 3-Way Match Guide"
-metaDescription: "Step-by-step process for solicitor client account reconciliation. Includes the three-way match method and how to resolve discrepancies to pass SRA checks."
-metaTitle_prev: "Solicitor Client Account Reconciliation Guide | UK Law Firms"
-metaDescription_prev: "SRA rules require reconciliation at least every five weeks. Step-by-step process, three-way reconciliation method, and how to resolve discrepancies."
-altText: "UK solicitor reviewing client account reconciliation documents and bank statements for SRA compliance"
-image: ""
-h1: "Solicitor Client Account Reconciliation: Complete Guide for UK Law Firms"
-summary: "Proper client account reconciliation is essential for SRA compliance and protecting client money. This guide covers monthly reconciliation procedures, common issues, and compliance requirements for UK solicitors."
+title: 'Solicitor Client Account Reconciliation: Complete Guide for UK Law Firms'
+slug: solicitor-client-account-reconciliation
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation
+date: '2026-04-01'
+author: Accounts for Lawyers Editorial Team
+category: SRA Compliance & Trust Accounting
+metaTitle: 'Solicitor Client Account Reconciliation: A Full Guide'
+metaDescription: 'Reconcile a solicitor client account: the three-way match of bank, ledger and cash book at least every 5 weeks under the SRA Accounts Rules 2019.'
+metaTitle_prev: 'Client Money Reconciliation: 3-Way Match Guide'
+metaDescription_prev: Step-by-step process for solicitor client account reconciliation. Includes the three-way match method and how to resolve discrepancies to pass SRA checks.
+altText: UK solicitor reviewing client account reconciliation documents and bank statements for SRA compliance
+image: ''
+h1: 'Solicitor Client Account Reconciliation: Complete Guide for UK Law Firms'
+summary: Proper client account reconciliation is essential for SRA compliance and protecting client money. This guide covers monthly reconciliation procedures, common issues, and compliance requirements for UK solicitors.
 keyTakeaways:
-  - "Under the SRA Accounts Rules 2019, firms must reconcile the client account at least every five weeks, though most reconcile monthly."
-  - "The three-way match requires adjusted bank balances, the accounting system balance and total client liabilities to agree, with any variance investigated."
-  - "Reconciliations must be completed by a qualified person, typically a solicitor, COFA or qualified accountant, even where software automates the work."
-  - "Any client money shortfall must be rectified immediately by transferring funds from office to client account, and serious shortfalls may require SRA notification."
-  - "Keep signed reconciliation records, bank statements and investigation notes for at least six years for SRA inspections."
-schema: ""
+- Under the SRA Accounts Rules 2019, firms must reconcile the client account at least every five weeks, though most reconcile monthly.
+- The three-way match requires adjusted bank balances, the accounting system balance and total client liabilities to agree, with any variance investigated.
+- Reconciliations must be completed by a qualified person, typically a solicitor, COFA or qualified accountant, even where software automates the work.
+- Any client money shortfall must be rectified immediately by transferring funds from office to client account, and serious shortfalls may require SRA notification.
+- Keep signed reconciliation records, bank statements and investigation notes for at least six years for SRA inspections.
+schema: ''
 faqs:
-  - question: "How often must solicitors complete client account reconciliation?"
-    answer: "Under SRA Accounts Rules 2019, solicitors must complete client account reconciliation at least every five weeks. However, most firms perform monthly reconciliations for better compliance monitoring and earlier error detection."
-  - question: "Can technology fully automate client account reconciliation?"
-    answer: "While modern legal software can automate much of the reconciliation process through bank feeds and automated reporting, qualified human oversight remains essential. Someone must review results, investigate discrepancies, and approve the final reconciliation for SRA compliance."
-  - question: "What happens if client account reconciliation reveals a shortfall?"
-    answer: "Client money shortfalls must be rectified immediately by transferring funds from the office account to the client account. The firm must investigate the cause of the shortfall and implement controls to prevent recurrence. Serious shortfalls may require SRA notification."
+- question: How often must solicitors complete client account reconciliation?
+  answer: Under SRA Accounts Rules 2019, solicitors must complete client account reconciliation at least every five weeks. However, most firms perform monthly reconciliations for better compliance monitoring and earlier error detection.
+- question: Can technology fully automate client account reconciliation?
+  answer: While modern legal software can automate much of the reconciliation process through bank feeds and automated reporting, qualified human oversight remains essential. Someone must review results, investigate discrepancies, and approve the final reconciliation for SRA compliance.
+- question: What happens if client account reconciliation reveals a shortfall?
+  answer: Client money shortfalls must be rectified immediately by transferring funds from the office account to the client account. The firm must investigate the cause of the shortfall and implement controls to prevent recurrence. Serious shortfalls may require SRA notification.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Solicitor client account reconciliation is a critical monthly process that ensures your firm protects client money and maintains SRA compliance. Every solicitor handling client funds must perform regular reconciliations to verify that client money balances match bank records and accounting systems.</p>
 
 <p>This process goes beyond basic bookkeeping – it's your primary safeguard against client money shortfalls and regulatory breaches that can result in SRA intervention or disciplinary action.</p>

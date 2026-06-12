@@ -1,34 +1,37 @@
 ---
-title: "Is a Paralegal Self-Employed or an Employee for Tax Purposes? A Solicitor's Guide"
-slug: "paralegal-employment-status-and-tax-uk"
-canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/paralegal-employment-status-and-tax-uk"
-date: "2026-05-18"
-author: "Accounts for Lawyers Editorial Team"
-category: "Fee-Earner Tax & Compensation"
-metaTitle: "Paralegal Tax Status: Employee or Self-Employed? UK Solicitor Guide"
-metaDescription: "How HMRC determines paralegal employment status for tax. PAYE vs self-employed. IR35 risks for law firms engaging paralegals. Practical guidance for solicitors."
-altText: "UK paralegal reviewing legal documents in a law firm office, with a solicitor partner in the background"
-image: ""
-h1: "Is a Paralegal Self-Employed or an Employee for Tax Purposes? A Solicitor's Guide"
-summary: "HMRC applies strict tests to determine whether a paralegal is an employee or genuinely self-employed for tax purposes. Getting it wrong can mean unexpected PAYE liabilities, employer NI arrears, and penalties. This guide explains the key factors solicitors must consider when engaging paralegals."
+title: Is a Paralegal Self-Employed or an Employee for Tax Purposes? A Solicitor's Guide
+slug: paralegal-employment-status-and-tax-uk
+canonical: https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/paralegal-employment-status-and-tax-uk
+date: '2026-05-18'
+author: Accounts for Lawyers Editorial Team
+category: Fee-Earner Tax & Compensation
+metaTitle: 'Paralegal Tax Status: Employed or Self-Employed in UK?'
+metaDescription: How HMRC decides whether a paralegal is employed or self-employed, plus the IR35 risk. Reclassification triggers employer NI at 15% on the pay bill.
+altText: UK paralegal reviewing legal documents in a law firm office, with a solicitor partner in the background
+image: ''
+h1: Is a Paralegal Self-Employed or an Employee for Tax Purposes? A Solicitor's Guide
+summary: HMRC applies strict tests to determine whether a paralegal is an employee or genuinely self-employed for tax purposes. Getting it wrong can mean unexpected PAYE liabilities, employer NI arrears, and penalties. This guide explains the key factors solicitors must consider when engaging paralegals.
 keyTakeaways:
-  - "HMRC ignores the 'self-employed' label and judges status on the reality: control, substitution, mutuality, financial risk and integration."
-  - "A reclassified paralegal leaves the firm liable for backdated PAYE, employee NI and employer NI at 15% on earnings above £5,000 a year."
-  - "Penalties can reach 30% of the tax due (more if deliberate), with interest, and the liability can run back up to six years."
-  - "Since April 2021, medium and large firms must determine IR35 status and issue a Status Determination Statement for paralegals working through a PSC."
-  - "The lowest-risk route is to engage paralegals on PAYE, or through a recognised agency that handles PAYE and NI."
-schema: ""
+- 'HMRC ignores the ''self-employed'' label and judges status on the reality: control, substitution, mutuality, financial risk and integration.'
+- A reclassified paralegal leaves the firm liable for backdated PAYE, employee NI and employer NI at 15% on earnings above £5,000 a year.
+- Penalties can reach 30% of the tax due (more if deliberate), with interest, and the liability can run back up to six years.
+- Since April 2021, medium and large firms must determine IR35 status and issue a Status Determination Statement for paralegals working through a PSC.
+- The lowest-risk route is to engage paralegals on PAYE, or through a recognised agency that handles PAYE and NI.
+schema: ''
 faqs:
-  - question: "Can a paralegal be genuinely self-employed in a law firm?"
-    answer: "Yes, but only if the working relationship meets HMRC's tests for self-employment. The paralegal must have control over how and when they work, a genuine right of substitution, bear financial risk, and not be integrated into the firm's business. Many paralegal arrangements fail these tests because the firm exercises too much control and the paralegal works exclusively for one firm. A written contract stating \"self-employed\" is not enough. HMRC looks at the reality of the relationship."
-  - question: "What happens if HMRC reclassifies a paralegal as an employee?"
-    answer: "The firm becomes liable for the unpaid PAYE income tax and employee National Insurance that should have been deducted from the paralegal's payments. The firm must also pay employer NI at 15% on earnings above £5,000 per year. HMRC charges late-payment interest from the original due date and can impose penalties of up to 30% of the tax due. The liability can extend back up to six years, or longer if HMRC considers the error deliberate."
-  - question: "Does IR35 apply to paralegals working through their own limited company?"
-    answer: "Yes. If a paralegal works through a personal service company (PSC), the IR35 intermediaries legislation may apply. Since April 2021, medium and large law firms are responsible for determining the IR35 status of the engagement and issuing a Status Determination Statement. If IR35 applies, the firm must deduct PAYE and NI from the fees paid to the paralegal's company. Most law firms are medium or large under the relevant criteria."
-  - question: "What is the safest way to engage a paralegal for a law firm?"
-    answer: "The safest approach is to engage the paralegal as an employee on PAYE. This avoids all employment status risk and ensures compliance with tax and employment law. If the firm needs flexibility, using a recognised agency that employs the paralegal and handles PAYE is a good alternative. For genuine self-employment, the firm must ensure the relationship reflects real self-employment in practice, not just in the contract. A specialist solicitor accountant can advise on the best structure for your firm."
+- question: Can a paralegal be genuinely self-employed in a law firm?
+  answer: Yes, but only if the working relationship meets HMRC's tests for self-employment. The paralegal must have control over how and when they work, a genuine right of substitution, bear financial risk, and not be integrated into the firm's business. Many paralegal arrangements fail these tests because the firm exercises too much control and the paralegal works exclusively for one firm. A written contract stating "self-employed" is not enough. HMRC looks at the reality of the relationship.
+- question: What happens if HMRC reclassifies a paralegal as an employee?
+  answer: The firm becomes liable for the unpaid PAYE income tax and employee National Insurance that should have been deducted from the paralegal's payments. The firm must also pay employer NI at 15% on earnings above £5,000 per year. HMRC charges late-payment interest from the original due date and can impose penalties of up to 30% of the tax due. The liability can extend back up to six years, or longer if HMRC considers the error deliberate.
+- question: Does IR35 apply to paralegals working through their own limited company?
+  answer: Yes. If a paralegal works through a personal service company (PSC), the IR35 intermediaries legislation may apply. Since April 2021, medium and large law firms are responsible for determining the IR35 status of the engagement and issuing a Status Determination Statement. If IR35 applies, the firm must deduct PAYE and NI from the fees paid to the paralegal's company. Most law firms are medium or large under the relevant criteria.
+- question: What is the safest way to engage a paralegal for a law firm?
+  answer: The safest approach is to engage the paralegal as an employee on PAYE. This avoids all employment status risk and ensures compliance with tax and employment law. If the firm needs flexibility, using a recognised agency that employs the paralegal and handles PAYE is a good alternative. For genuine self-employment, the firm must ensure the relationship reflects real self-employment in practice, not just in the contract. A specialist solicitor accountant can advise on the best structure for your firm.
+metaTitle_prev: 'Paralegal Tax Status: Employee or Self-Employed? UK Solicitor Guide'
+metaDescription_prev: How HMRC determines paralegal employment status for tax. PAYE vs self-employed. IR35 risks for law firms engaging paralegals. Practical guidance for solicitors.
+dateModified: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Paralegals form the backbone of many UK law firms. They handle disclosure, draft witness statements, manage bundles, and conduct initial client interviews. But when a solicitor engages a paralegal, the tax treatment of that engagement is not always straightforward.</p>
 
 <p>HMRC does not accept a firm's label of "self-employed" at face value. It applies a series of tests to determine the true employment status of the paralegal. If HMRC reclassifies a paralegal as an employee, the firm can face backdated PAYE, employer National Insurance contributions, interest, and penalties. The liability can run for several years.</p>
