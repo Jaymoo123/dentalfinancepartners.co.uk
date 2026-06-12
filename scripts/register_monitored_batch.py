@@ -10,12 +10,15 @@ slug, and captures BOTH a Google baseline (trailing 90d GSC) AND a Bing baseline
 than Google, so Bing is the primary regression signal.
 
 Usage:
-  python scripts/register_monitored_batch.py --batch batch4              # dry-run
+  python scripts/register_monitored_batch.py --batch batch4              # dry-run (property)
   python scripts/register_monitored_batch.py --batch batch4 --commit
   python scripts/register_monitored_batch.py --batch batch4 --rewrite-date 2026-05-30 --commit
+  python scripts/register_monitored_batch.py --site dentists --batch batch1 --commit
+  python scripts/register_monitored_batch.py --site medical --slugs a b c --commit
   # or register explicit slugs without a manifest:
   python scripts/register_monitored_batch.py --slugs a b c --commit
 Idempotent: skips slugs already present in monitored_pages for the site.
+--site defaults to 'property' for back-compat.
 """
 from __future__ import annotations
 
@@ -35,6 +38,25 @@ PROJECT_REF = "dhlxwmvmkrfnmcgjbntk"
 TOKEN = os.environ["SUPABASE_ACCESS_TOKEN"]
 URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
 
+# ---------------------------------------------------------------------------
+# Per-site hardcoded fallback map.
+# Used when sites/<site>.json does not exist (generalist, agency) or as a
+# safety net. Sources of truth in priority order:
+#   1. sites/<site>.json  (blogContentDir + productionDomain)
+#   2. This map (derived from the Supabase `sites` table content_dir + domain)
+# Domains verified against the Supabase sites table (field: domain).
+# ---------------------------------------------------------------------------
+_SITE_FALLBACK: dict[str, tuple[str, str]] = {
+    "property":   ("Property/web/content/blog",        "https://www.propertytaxpartners.co.uk"),
+    "dentists":   ("Dentists/web/content/blog",         "https://www.dentalfinancepartners.co.uk"),
+    "medical":    ("Medical/web/content/blog",          "https://www.medicalaccounts.co.uk"),
+    "solicitors": ("Solicitors/web/content/blog",       "https://www.accountsforlawyers.co.uk"),
+    "generalist": ("generalist/web/content/blog",       "https://www.hollowaydavies.co.uk"),
+    # NOTE: Supabase has 'Digital Agency/web/content/blog' but on-disk path is
+    # 'digital-agency/web/content/blog' — we use the correct on-disk path here.
+    "agency":     ("digital-agency/web/content/blog",   "https://www.agencyfounderfinance.co.uk"),
+}
+
 
 def _arg_site() -> str:
     """--site <key> selects the site_key + corpus + production domain (default
@@ -48,15 +70,59 @@ def _arg_site() -> str:
 
 
 def _resolve_site(site: str):
-    """(site_key, blog_dir, prod_domain) from sites/<site>.json (default Property)."""
+    """Return (site_key, blog_dir, prod_domain) for any registered site.
+
+    Resolution order:
+      1. sites/<site>.json  (paths.blogContentDir + vercel.productionDomain)
+      2. _SITE_FALLBACK map (covers generalist + agency which have no sites json)
+      3. Hard default: property (back-compat)
+
+    Raises ValueError for unknown site keys so callers get a clear error
+    rather than silently using property defaults.
+    """
+    # Try sites/<site>.json first (dentists, property, medical, solicitors).
     p = pathlib.Path("sites") / f"{site}.json"
     if p.exists():
         cfg = json.loads(p.read_text(encoding="utf-8"))
-        blog = pathlib.Path(cfg["paths"]["blogContentDir"])
+        blog_raw = cfg["paths"]["blogContentDir"]
+        # Normalise path: 'Digital Agency/...' -> 'digital-agency/...'
+        blog = pathlib.Path(_normalise_content_dir(blog_raw))
         dom = (cfg.get("vercel", {}).get("productionDomain") or "").strip().rstrip("/")
         prod = ("https://" + dom) if (dom and not dom.startswith("http")) else dom
-        return site, blog, (prod or "https://www.propertytaxpartners.co.uk")
-    return "property", pathlib.Path("Property/web/content/blog"), "https://www.propertytaxpartners.co.uk"
+        if prod:
+            return site, blog, prod
+
+    # Fallback map (generalist, agency, and any site whose json is missing).
+    if site in _SITE_FALLBACK:
+        blog_raw, prod = _SITE_FALLBACK[site]
+        return site, pathlib.Path(blog_raw), prod
+
+    # Unknown site — raise so the operator knows what happened.
+    known = list(_SITE_FALLBACK.keys())
+    raise ValueError(
+        f"Unknown site_key {site!r}. Known sites: {known}. "
+        f"Add a sites/{site}.json or extend _SITE_FALLBACK."
+    )
+
+
+def _normalise_content_dir(raw: str) -> str:
+    """Normalise a content dir path string.
+
+    Handles the known discrepancy where sites/agency.json (if it existed) might
+    store 'Digital Agency/...' but the actual on-disk path is 'digital-agency/...'.
+    """
+    # Check as-is first.
+    if pathlib.Path(raw).exists():
+        return raw
+    # Try lowercase + hyphenate first segment.
+    parts = pathlib.Path(raw).parts
+    if parts:
+        normalised_first = parts[0].lower().replace(" ", "-")
+        alt_parts = (normalised_first,) + parts[1:]
+        alt = str(pathlib.Path(*alt_parts))
+        if pathlib.Path(alt).exists():
+            return alt
+    return raw
 
 
 SITE, BLOG_DIR, PROD_DOMAIN = _resolve_site(_arg_site())
