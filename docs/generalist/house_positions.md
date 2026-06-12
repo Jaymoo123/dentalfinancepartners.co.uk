@@ -1,6 +1,6 @@
 # Holloway Davies (generalist) house positions (locked figures and framings)
 
-**Authored 2026-06-12. Status: DRAFT, pending adversarial verification and user lock (NOT yet locked).**
+**Authored 2026-06-12. Status: LOCKED 2026-06-12 (user sign-off).** Adversarial Opus verification passed the same day: 22 of 22 checked positions CONFIRMED at primary source, zero refuted (incl. employer NIC 15%/£5,000, FA 2026 ss.4/28/29 verbatim, BADR schedule, CGT 18%/24%, AMAP 55p, MTD ITSA timeline, R&D merged scheme + ERIS 86%/14.5%). LEL resolved at £6,500/yr for 2025/26 (the dentists HP £6,708 is the stale one, back-patch queued). Residual open item: re-fetch the gov.uk landlord finance-cost page text for §11 ITTOIA s.272A/s.274A wording (figure itself confirmed via FA 2026); Scotland bands remain out of scope until a Scotland-specific page is written.
 
 This is the ground-truth seed for the Holloway Davies generalist site (www.hollowaydavies.co.uk), a UK accountancy site for owner-managed businesses (sole traders, partnerships, limited companies, contractors, landlords). Every future net-new page and every rewrite anchors to these positions, cited by section number (`§N` / `§N.A`). Correctness is paramount: a wrong statute or rate here re-seeds the error into every citing page.
 
