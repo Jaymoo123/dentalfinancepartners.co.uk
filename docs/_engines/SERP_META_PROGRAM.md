@@ -51,7 +51,7 @@ Scope per run is **meta-only**. Content gaps and intent mismatches surfaced by t
 
 ## First-run results log
 
-- **2026-06-12 batch 1**: medical 18, dentists 35, generalist 39 (+1 corrective page rewrite: confirmation-statement-late-penalty page had presented annual-accounts penalty bands as CS01 fines; rewritten against GOV.UK), solicitors 35, agency 30. 175 pages monitored to 2026-09-10. QA caught 11 real issues pre-ship (5 fabrications, 2 misrepresentations/scope, 4 alignment). Yield table at decision time: generalist 58 pages ≥10 impr / dentists 15 / solicitors 23 / medical 13 / agency 9.
+- **2026-06-12 batch 1 + generalist tail**: medical 18, dentists 35, generalist 39+22 (tail extended coverage to every page ≥8 impressions after the top-40 cap was found to cut real demand; cap is now a smell, not a rule), solicitors 35, agency 30 = **179 meta pairs**. Plus corrective content work the QA layer forced: CS01 penalty page fully rewritten (presented annual-accounts penalty bands as CS01 fines; GOV.UK-verified rewrite), employee-mileage-45p page rewritten and director-mileage + delivery-drivers pages back-patched (stale 45p AMAP; 55p from 6 Apr 2026). 197 pages monitored to 2026-09-10. QA caught 13 real issues pre-ship (7 fabrication/staleness, 2 misrepresentation, 4 alignment). Yield at decision time: generalist 58 pages ≥10 impr / dentists 15 / solicitors 23 / medical 13 / agency 9.
 - Read the 28d outcome verdicts from ~2026-07-10 via weekly_run step 5.
 
 ## Per-site onboarding
