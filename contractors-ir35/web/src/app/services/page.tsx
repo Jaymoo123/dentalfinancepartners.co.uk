@@ -10,7 +10,6 @@ import {
   FileCheck,
   Building2,
   Banknote,
-  Calculator,
   Receipt,
   PiggyBank,
   ClipboardList,

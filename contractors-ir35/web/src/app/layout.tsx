@@ -3,7 +3,9 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
+import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
+import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -63,11 +65,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
       <body className="antialiased font-sans">
-        <PageShell>{children}</PageShell>
+        {/*
+         * AN-01 (opt-out posture): track by default under legitimate interest.
+         * Visitor can opt out via the "Do not track me" footer link.
+         * storagePrefix "cfp" FROZEN (Phase 2 adoption 2026-06-12).
+         * PF-07: siteKey sourced from niche config, never a literal.
+         * ConsentedScripts gates GA4 behind consent state.
+         * GA id is currently empty — ConsentedScripts renders nothing when empty.
+         * No legacyPrefix: this site was never live, no prior storage keys.
+         */}
+        <ConsentProvider>
+          <AnalyticsProvider
+            siteKey={niche.content_strategy.site_key}
+            siteName={niche.display_name}
+            storagePrefix="cfp"
+            posture="opt-out"
+            noTrackPrefixes={["/admin", "/embed"]}
+          >
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <PageShell>{children}</PageShell>
+          </AnalyticsProvider>
+        </ConsentProvider>
       </body>
     </html>
   );

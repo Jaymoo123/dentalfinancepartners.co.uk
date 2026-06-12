@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildSecurityHeaders } from "@accounting-network/web-shared/lib/security-headers";
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
 // Repo root is two levels up: contractors-ir35/web -> contractors-ir35 -> Accounting (repo root).
@@ -14,6 +15,9 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "images.pexels.com" },
     ],
+  },
+  async headers() {
+    return buildSecurityHeaders({ ga: true, supabase: true });
   },
 };
 

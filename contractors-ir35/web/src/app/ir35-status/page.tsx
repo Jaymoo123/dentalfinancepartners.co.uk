@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "IR35 Status Review | Inside vs Outside IR35 Explained",

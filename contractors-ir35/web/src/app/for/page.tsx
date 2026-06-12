@@ -59,7 +59,7 @@ export default function ForIndexPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
               <p>
-                The same IR35 tests (control, substitution, mutuality of obligation) apply to every contractor. But how they play out depends entirely on how contracting actually works in your sector. A platform developer embedded in a bank's engineering team faces different exposure than an offshore drilling engineer on a North Sea rotation. A locum solicitor covering maternity leave is in a different position from an interim CFO filling a vacant executive seat.
+                The same IR35 tests (control, substitution, mutuality of obligation) apply to every contractor. But how they play out depends entirely on how contracting actually works in your sector. A platform developer embedded in a bank&apos;s engineering team faces different exposure than an offshore drilling engineer on a North Sea rotation. A locum solicitor covering maternity leave is in a different position from an interim CFO filling a vacant executive seat.
               </p>
               <p>
                 Generalist accountants apply the IR35 rules correctly in theory but miss the sector-specific working practice details that determine whether the position holds in practice. We know those details because we work with contractors across all of these sectors week in, week out.

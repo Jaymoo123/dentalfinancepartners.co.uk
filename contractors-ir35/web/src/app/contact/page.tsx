@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { contentNarrow, siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {

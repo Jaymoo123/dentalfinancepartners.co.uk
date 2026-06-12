@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { contractorTypes } from "@/data/contractor-types";
+import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -26,5 +27,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...contractorTypeRoutes];
+  // Blog: category indexes + individual posts
+  const posts = getAllPosts();
+  const categories = getAllCategories();
+
+  const categoryRoutes: MetadataRoute.Sitemap = categories.map((cat) => ({
+    url: `${base}/blog/${cat.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
+  const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${base}/blog/${getCategorySlug(post)}/${post.slug}`,
+    lastModified: post.updatedDate || post.date,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...contractorTypeRoutes,
+    ...categoryRoutes,
+    ...postRoutes,
+  ];
 }
