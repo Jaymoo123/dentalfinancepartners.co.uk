@@ -3,6 +3,7 @@ title: "Law Firm Succession Planning: A Complete Guide for UK Legal Practices"
 slug: "law-firm-succession-planning-guide-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-succession-planning-guide-uk"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Succession & Sale"
 metaTitle: "Law Firm Succession Planning Guide | UK Legal Practices"
@@ -13,10 +14,10 @@ h1: "Law Firm Succession Planning: A Complete Guide for UK Legal Practices"
 summary: "Law firm succession planning requires careful consideration of partnership structures, goodwill valuation, tax implications, and SRA compliance. Getting it right protects both retiring partners and the continuing practice."
 keyTakeaways:
   - "Start succession planning 5 to 7 years before your intended exit to build value, develop partners and structure tax efficiently."
-  - "Goodwill payments to departing partners are usually subject to income tax and National Insurance, potentially exceeding 40 percent of value."
+  - "Goodwill payments to departing partners are capital gains by default: with BADR, 14% to 5 April 2026 and 18% after, against 18%/24% standard CGT. Only WIP, debtors and deferred profit share are income."
   - "Goodwill is commonly valued at 0.5 to 2 times annual distributable profits, with commercial work attracting higher multiples than legal aid."
   - "Run-off professional indemnity insurance is mandatory for six years after retirement or practice closure."
-  - "Spreading goodwill payments across several tax years and using pension contributions can manage the income tax liability."
+  - "Timing the disposal against the 6 April 2026 BADR rate step, and splitting goodwill (capital) cleanly from WIP and debtors (income) in the retirement deed, are the main tax levers."
 schema: ""
 faqs:
   - question: "How is law firm goodwill typically valued?"
@@ -24,7 +25,7 @@ faqs:
   - question: "What's the difference between partnership and LLP succession planning?"
     answer: "LLP structures offer more flexibility for succession planning than traditional partnerships. LLP members can reduce profit shares gradually, arrange consultant roles, and have limited liability protection. Traditional partnerships face joint and several liability issues and typically require full capital account withdrawal on retirement."
   - question: "What are the main tax implications of law firm succession?"
-    answer: "Goodwill payments to departing partners are typically subject to income tax and National Insurance, potentially creating liabilities exceeding 40% of payment value. Tax planning strategies include staged payments across multiple years, pension contributions, and in some cases achieving capital gains treatment. Professional tax advice is essential."
+    answer: "Goodwill is a capital asset, so a departing partner's goodwill payment is charged to capital gains tax by default, with Business Asset Disposal Relief reducing the rate to 14% (disposals to 5 April 2026) or 18% (from 6 April 2026) on qualifying gains up to the £1m lifetime limit. Income tax and NIC only apply to the elements that are really trading income, such as the partner's share of WIP and debtors or deferred profit share. The retirement deed should split these clearly. Professional tax advice is essential."
   - question: "When should I start planning my solicitor practice exit strategy?"
     answer: "Start planning your exit strategy 5-7 years before your intended retirement or exit date. This timeframe allows for practice improvements, staff development, client relationship strengthening, and tax planning that can significantly enhance your practice value and ensure a smooth transition."
   - question: "Do I need run-off insurance after selling my practice?"
@@ -39,23 +40,23 @@ faqs:
 
 <p>Effective tax planning can save thousands in unnecessary liabilities during succession transitions.</p>
 
-<h3>Income Tax Considerations</h3>
+<h3>Tax Treatment of Goodwill Payments</h3>
 
-<p>Goodwill payments to departing partners are typically subject to income tax and National Insurance. For a partner receiving £500,000 in goodwill, the tax liability could exceed £200,000 at current rates.</p>
+<p>A payment for a departing partner's share of goodwill is a disposal of a capital asset, so the default treatment is capital gains tax, not income tax. With Business Asset Disposal Relief, qualifying gains up to the £1 million lifetime limit are taxed at 14% for disposals between 6 April 2025 and 5 April 2026, rising to 18% from 6 April 2026 (TCGA 1992 ss.169H to 169S; the two-year qualifying period applies). A partner receiving £500,000 for goodwill with full BADR in 2025/26 would pay roughly £69,600 (after the £3,000 annual exempt amount), not the £200,000-plus an income-tax framing would suggest. Gains that do not qualify for BADR, or that exceed the lifetime limit, are taxed at the standard CGT rates of 18% or 24%.</p>
 
-<p>Strategies to manage income tax include:</p>
+<p>Income tax treatment is the exception, not the rule. It applies where a payment is really something other than goodwill: a settlement of the partner's share of work in progress and debtors (trading income, ITTOIA 2005 ss.182 to 185), deferred profit share, or consideration for a restrictive covenant. This is why the retirement deed must clearly split goodwill (capital) from WIP and debtors (income).</p>
+
+<p>Planning levers include:</p>
 
 <ul>
-<li><strong>Staged payments:</strong> Spreading goodwill payments across multiple tax years to utilize lower rate bands</li>
-<li><strong>Pension contributions:</strong> Using departing partner pension allowances to reduce taxable income</li>
-<li><strong>Capital treatment:</strong> In limited circumstances, goodwill payments may qualify for capital gains treatment</li>
+<li><strong>Completion timing:</strong> the BADR rate steps from 14% to 18% on 6 April 2026, so the disposal date materially changes the bill</li>
+<li><strong>Pension contributions:</strong> using the departing partner's available annual allowance against their final-year profit share</li>
+<li><strong>Clear capital/income split:</strong> documenting goodwill separately from WIP and debtors so the capital element is not taxed as income</li>
 </ul>
 
 <h3>Basis Period Reform Impact</h3>
 
-<p>The 2024 Basis Period Reform changes how partnership profits are taxed. For firms with partners retiring in 2024/25 or 2025/26, careful planning around overlap relief and the transition to current year basis taxation is essential.</p>
-
-<p>Partners with significant overlap relief from when they joined the partnership may be able to utilize this relief on retirement, reducing their final year tax liabilities.</p>
+<p>Basis period reform moved partnerships from the old current-year (accounting-period) basis onto the tax-year basis from 2024/25, with 2023/24 as the transition year. Overlap relief was used up in that transition, and any transition profits are spread over five tax years to 2027/28. For a partner retiring now, the planning point is that permanent cessation accelerates any remaining spread transition profits into the cessation year, so the final-year liability needs modelling before the retirement date is fixed.</p>
 
 <h3>Corporation Tax Considerations</h3>
 
@@ -73,7 +74,7 @@ faqs:
 <li>Capital account withdrawal (their share of practice assets)</li>
 <li>Goodwill payment (their share of practice value)</li>
 <li>Potential ongoing liability for partnership debts incurred during their membership</li>
-<li>Income tax on any goodwill payments received</li>
+<li>Capital gains tax on the goodwill element (with BADR where it qualifies), and income tax on any WIP or debtor settlement</li>
 </ul>
 
 <p>The continuing partners must fund these payments while maintaining sufficient working capital. This often requires external financing or extended payment terms.</p>

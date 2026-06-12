@@ -3,6 +3,7 @@ title: "What Is Accountancy Payroll and Does Your UK Business Need a Payroll Acc
 slug: "what-is-accountancy-payroll-uk-business-payroll-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/what-is-accountancy-payroll-uk-business-payroll-accountant"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "What Is Accountancy Payroll? UK Business Payroll Explained"
@@ -23,7 +24,7 @@ faqs:
   - question: "Do I need a payroll accountant if I use payroll software?"
     answer: "Not always. If you have one or two employees and a simple pay structure, software like Xero Payroll or BrightPay can handle the calculations and RTI submissions. But software does not check tax codes for errors, flag missed pension deadlines, or handle HMRC queries. A payroll accountant adds the human oversight that prevents costly mistakes. If you have ever received a penalty from HMRC or the Pensions Regulator, that is a strong sign you need professional support."
   - question: "What are the penalties for late RTI submissions in 2025/26?"
-    answer: "HMRC charges penalties based on the number of employees and how late the submission is. For a business with 10 to 49 employees, a single late submission in a month triggers a £400 penalty. Repeat offences escalate. The only defence is a \"reasonable excuse\" (serious illness, software failure, HMRC system outage). \"I forgot\" does not count. Using a payroll accountant who submits RTI on your behalf eliminates this risk entirely."
+    answer: "HMRC charges penalties based on the number of employees and how late the submission is. For a business with 10 to 49 employees, a single late submission in a month triggers a £200 penalty (£100 for 1 to 9 employees, rising to £400 for the largest employers). Repeat offences escalate. The only defence is a \"reasonable excuse\" (serious illness, software failure, HMRC system outage). \"I forgot\" does not count. Using a payroll accountant who submits RTI on your behalf eliminates this risk entirely."
   - question: "Can a payroll accountant handle pension auto-enrolment for my business?"
     answer: "Yes. A good payroll accountant will set up the pension connection, calculate contributions (both employee and employer), submit contributions to the provider, and manage the re-enrolment cycle every 3 years. They will also handle opt-outs and refunds. The Pensions Regulator fines businesses that fail to comply with auto-enrolment duties. Including pension management in your payroll service avoids those fines entirely."
 ---
@@ -66,7 +67,7 @@ faqs:
 <li>What to do when an employee goes on sick leave (SSP calculations and HMRC notification).</li>
 </ul>
 
-<p>That is where a payroll accountant adds value. We do not just run the numbers. We check the tax codes, flag anomalies, handle HMRC queries, and keep you compliant with pension regulations. The cost of a payroll accountant is typically £20 to £50 per employee per month. The cost of a single HMRC penalty for late RTI submissions is £400 per month for a business with 10 to 49 employees (first offence, escalating). The maths favours professional support.</p>
+<p>That is where a payroll accountant adds value. We do not just run the numbers. We check the tax codes, flag anomalies, handle HMRC queries, and keep you compliant with pension regulations. Set the modest monthly cost of that oversight against the downside: a single late RTI submission triggers a £200 monthly penalty for a business with 10 to 49 employees, and pension compliance fines start at £400. The maths favours professional support.</p>
 
 <h2>What Happens When Payroll Goes Wrong?</h2>
 
@@ -124,17 +125,9 @@ faqs:
 
 <h2>How Much Does a Payroll Accountant Cost?</h2>
 
-<p>Pricing varies by provider and the complexity of your payroll. Typical ranges for 2025/26 are:</p>
+<p>Pricing is usually quoted per payroll run or per employee per month, and the main drivers are headcount, pay frequency (monthly is cheaper to run than weekly), and complexity: student loans, attachment of earnings orders, benefits in kind, and auto-enrolment all add work. A sole director payroll is often bundled into a year-end accounts package, while larger payrolls are typically priced per employee.</p>
 
-<ul>
-<li><strong>Sole director, no employees:</strong> £10 to £20 per month. Often bundled with year-end accounts.</li>
-<li><strong>1 to 5 employees:</strong> £30 to £60 per month.</li>
-<li><strong>6 to 10 employees:</strong> £60 to £120 per month.</li>
-<li><strong>11 to 20 employees:</strong> £120 to £250 per month.</li>
-<li><strong>Above 20 employees:</strong> Negotiable, often £10 to £15 per employee per month.</li>
-</ul>
-
-<p>Some accountants charge a fixed monthly fee that includes payroll plus bookkeeping and year-end accounts. Others charge separately. Always ask what is included: RTI submissions, pension contributions, P60s, P11D(b), and HMRC correspondence should be standard.</p>
+<p>Some accountants charge a fixed monthly fee that includes payroll plus bookkeeping and year-end accounts. Others charge separately. Rather than comparing headline prices, always ask what is included: RTI submissions, pension contributions, P60s, P11D(b), and HMRC correspondence should be standard, and a quote that excludes them is not comparable with one that does not.</p>
 
 <h2>Can You Handle Payroll Yourself With Software?</h2>
 

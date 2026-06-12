@@ -2,6 +2,7 @@
 title: "Solicitor VAT Accounting: A Complete Guide for UK Law Firms"
 slug: "solicitor-vat-accounting-guide"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Solicitor VAT Accounting Guide | UK Law Firm VAT Rules"
@@ -45,9 +46,9 @@ faqs:
 
 <p>Most legal services are standard-rated for VAT at 20%. This includes litigation work, property transactions, commercial advice, and employment law services. The key principle is that if you're providing legal advice or representation, it's typically standard-rated.</p>
 
-<p>However, some specific exemptions apply. Legal aid work is exempt from VAT, as are certain court fees and some insurance-related services. These exemptions can complicate VAT recovery calculations, particularly for mixed practices.</p>
+<p>One persistent myth needs correcting: legal aid work is not exempt from VAT. Work funded by the Legal Aid Agency is a standard-rated taxable supply by the firm, invoiced to the LAA with VAT. Genuinely exempt income for a law firm is narrow (for example certain insurance intermediation), which is why partial exemption is the exception rather than the rule for most practices.</p>
 
-<p>Solicitors must charge VAT on their fees to clients and account for this on their quarterly VAT returns. The timing depends on when payment is received rather than when invoices are issued, under the cash accounting scheme available to most law firms.</p>
+<p>Solicitors must charge VAT on their fees to clients and account for this on their quarterly VAT returns. By default the tax point is invoice-driven (the VAT invoice date, subject to the basic tax point rules in VATA 1994 s.6), not the date the client pays. Accounting on a receipts basis is only permitted if the firm has joined the optional cash accounting scheme, which is available where taxable turnover is not expected to exceed £1.35 million.</p>
 
 <h2>Disbursements and VAT Treatment</h2>
 
@@ -79,7 +80,7 @@ faqs:
 
 <p>Solicitor VAT accounting requires meticulous record-keeping. VAT invoices must contain specific information including the firm's VAT number, client details, and a clear breakdown of services and VAT charged.</p>
 
-<p>Time recording systems need to capture sufficient detail to support VAT treatment decisions. This includes identifying exempt work (like legal aid) and ensuring disbursements are correctly categorized.</p>
+<p>Time recording systems need to capture sufficient detail to support VAT treatment decisions. This includes distinguishing genuine disbursements from recharges and identifying any genuinely exempt income streams (remembering that legal aid work is standard-rated, not exempt).</p>
 
 <p>Many law firms use specialized legal accounting software that integrates time recording, billing, and VAT compliance. This reduces manual errors and ensures consistent treatment across the practice.</p>
 
@@ -103,7 +104,7 @@ faqs:
 
 <p>Several VAT errors occur frequently in legal practices. Incorrect disbursement treatment is probably the most common, followed by timing errors under cash accounting.</p>
 
-<p>Many firms also struggle with partial exemption calculations when they have both standard-rated and exempt income. Legal aid practices particularly need specialist advice on these calculations.</p>
+<p>Many firms also struggle with partial exemption calculations when they have both standard-rated and exempt income, though for most law firms genuinely exempt income is rare. Legal aid work does not create a partial exemption issue, because it is standard-rated.</p>
 
 <p>Input VAT recovery errors are another common issue. Not all business expenses qualify for VAT recovery, and the rules around entertainment, cars, and mobile phones can catch firms out.</p>
 

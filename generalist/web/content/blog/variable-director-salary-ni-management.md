@@ -3,6 +3,7 @@ title: "Can a Director Pay Themselves a Variable Monthly Salary to Manage NI Con
 slug: "variable-director-salary-ni-management"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/variable-director-salary-ni-management"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Variable Director Salary for NI Management | UK Business"
@@ -50,9 +51,9 @@ faqs:
 
 <p>Here is why those numbers matter. Employee NI at 8% kicks in above £12,570. Employer NI at 13.8% kicks in above £9,100. If you set your salary at £12,570 per year, you pay no employee NI. You do pay employer NI on the amount above £9,100, which is £3,470 at 13.8% = £479. But if your company qualifies for the <strong>Employment Allowance</strong> (up to £10,500 in 2025/26), that employer NI is covered by the allowance. The net result is zero NI cost on a £12,570 salary.</p>
 
-<p>For a director running a single-company structure with no other employees, the Employment Allowance typically applies. The company must claim it through its RTI payroll submission. Many directors miss this claim. Do not be one of them.</p>
+<p>The qualification point matters: a company whose only employee paid above the NI secondary threshold is also a director is excluded from the Employment Allowance. So a true one-person company cannot claim it. The allowance is available once there is at least one other employee (or a second director) paid above the threshold. Where the company does qualify, it must claim through its RTI payroll submission. Many eligible companies miss this claim. Do not be one of them.</p>
 
-<p>If your company does not qualify for Employment Allowance (for example, if you are a sole director with no other staff and your company is your only employer), the maths still favours a £12,570 salary. The £479 employer NI is a small price to pay for building a qualifying year towards the State Pension and keeping your salary within the personal allowance.</p>
+<p>If your company does not qualify for Employment Allowance (the common case for a sole director with no other staff), the maths still favours a £12,570 salary. The £479 employer NI is a small price to pay for building a qualifying year towards the State Pension and keeping your salary within the personal allowance.</p>
 
 <h2>Can You Vary the Monthly Amount?</h2>
 

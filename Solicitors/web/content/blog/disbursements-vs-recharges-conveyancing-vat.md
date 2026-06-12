@@ -3,6 +3,7 @@ title: "How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes
 slug: "disbursements-vs-recharges-conveyancing-vat"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/disbursements-vs-recharges-conveyancing-vat"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Conveyancing Disbursements VAT: Solicitor's Guide 2025/26"
@@ -13,7 +14,7 @@ h1: "How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?"
 summary: "A practical guide for UK solicitors on distinguishing agency disbursements from principal disbursements in conveyancing transactions, with worked examples and HMRC compliance requirements."
 keyTakeaways:
   - "An agency disbursement carries no VAT because the supply is to the client; a principal disbursement does, because the solicitor is the customer."
-  - "SDLT, Land Registry fees, and most search fees are agency disbursements with no VAT added on the recharge to the client."
+  - "SDLT and Land Registry registration fees are agency disbursements with no VAT on the recharge. Search fees usually are NOT: after Brabners and R&C Brief 6 (2020), a search the firm uses in its own advice carries VAT."
   - "Panel manager fees, indemnity insurance arranged in the firm's name, courier and photocopying costs are principal recharges that carry 20% VAT."
   - "Itemise every agency disbursement separately on the invoice, or HMRC may treat the whole amount as a principal recharge subject to VAT."
   - "Treating a principal disbursement as agency under-declares output VAT, which HMRC can assess with interest and penalties up to 30% for carelessness."
@@ -55,19 +56,18 @@ faqs:
 
 <p>When these conditions are satisfied, the solicitor does not add VAT to the disbursement on the client invoice. The third-party supplier charges VAT (if applicable) directly to the client, and the client can recover that input tax if they are VAT-registered.</p>
 
-<p><strong>Common conveyancing agency disbursements include:</strong></p>
+<p><strong>Costs that can qualify as agency disbursements include:</strong></p>
 
 <ul>
-<li>Land Registry search fees (LLC1, CON29, OS1)</li>
-<li>Local authority search fees</li>
-<li>Drainage and water search fees</li>
-<li>Environmental search fees</li>
 <li>SDLT (Stamp Duty Land Tax) paid to HMRC</li>
 <li>Land Registry registration fees</li>
-<li>Bank transfer fees for completion</li>
+<li>Bank transfer fees for completion (where the client is responsible for the cost)</li>
+<li>Search fees (LLC1, CON29, OS1, local authority, drainage and water, environmental), but only on a pure pass-through (see the warning below)</li>
 </ul>
 
-<p>In each case, the solicitor is simply passing the cost through to the client. The supply is between the third party and the client. No VAT is added by the solicitor.</p>
+<p><strong>Warning on search fees: they are not automatically disbursements.</strong> In Brabners LLP v HMRC [2017] UKFTT 0666 (TC), the tribunal held that electronic property search fees were not disbursements where the firm used the search results as part and parcel of its own conveyancing advice, and upheld a VAT assessment of £67,776. HMRC's settled position in Revenue and Customs Brief 6 (2020) (which also withdrew the old postal-search concession from 1 December 2020) makes the test functional: if your firm obtains a search and uses or interprets the result in its report or advice to the client, the search cost is a component of your own taxable supply and VAT is due on the recharge. Only a genuine pass-through, where the client receives and uses the search result and the firm merely forwards it without building it into its advice, can still be treated as a disbursement. For most conveyancing retainers, search fees will therefore carry VAT on the recharge.</p>
+
+<p>For the costs that do qualify, the solicitor is simply passing the cost through to the client: the supply is between the third party and the client, and no VAT is added by the solicitor.</p>
 
 <h2>Principal Disbursements: When the Solicitor Is the Customer</h2>
 
@@ -92,7 +92,7 @@ faqs:
 
 <p><strong>Example 1: Agency disbursement</strong></p>
 
-<p>A solicitor pays £30 plus VAT (£36 total) for a local authority search. The search provider invoices the solicitor, but the supply is to the client. The solicitor recharges £36 to the client as a disbursement. No VAT is added by the solicitor. The client sees £36 on the invoice with the label "disbursement: local authority search".</p>
+<p>A solicitor pays £6 for an official copy of the register from the Land Registry on the client's instruction and forwards it to the client without commenting on it. The supply is to the client and the solicitor merely passes the document on. The solicitor recharges £6 to the client as a disbursement, with no VAT added, itemised as "disbursement: Land Registry official copy". Contrast a £30 local authority search the firm obtains and then interprets in its report on title: after Brabners and R&C Brief 6 (2020), that search is part of the firm's own supply, so the recharge carries VAT.</p>
 
 <p><strong>Example 2: Principal disbursement</strong></p>
 
@@ -140,15 +140,15 @@ faqs:
 
 <p><strong>Land Registry fees.</strong> These are statutory fees paid to HM Land Registry. The solicitor acts as agent. No VAT is added.</p>
 
-<p><strong>Search fees.</strong> Most search fees (local authority, environmental, drainage) are agency disbursements because the search provider supplies the report to the client. However, if the solicitor subscribes to a search portal that charges an annual fee and provides unlimited searches, the cost per search may be a principal disbursement because the solicitor contracted for the portal service. Check the terms of your search provider agreement.</p>
+<p><strong>Search fees.</strong> Since Brabners LLP v HMRC [2017] UKFTT 0666 (TC) and Revenue and Customs Brief 6 (2020), the treatment is functional: where the firm obtains a search (local authority, environmental, drainage) and uses or interprets the result in its report on title or advice, the search fee is part of the firm's own taxable supply and the recharge carries VAT. Only a pure pass-through, where the client receives and uses the result and the firm adds no analysis, can still be a disbursement. The old postal-search concession was withdrawn from 1 December 2020, so delivery method no longer matters. Check both your retainer and your search provider agreement.</p>
 
 <h2>Summary of VAT Treatment for Common Conveyancing Costs</h2>
 
 <table>
 <tr><th>Cost Type</th><th>Treatment</th><th>VAT on Recharge?</th></tr>
-<tr><td>Local authority search</td><td>Agency</td><td>No</td></tr>
-<tr><td>Land Registry search</td><td>Agency</td><td>No</td></tr>
-<tr><td>Environmental search</td><td>Agency</td><td>No</td></tr>
+<tr><td>Local authority search</td><td>Principal where used in your advice (Brabners); agency only on pure pass-through</td><td>Usually yes, 20%</td></tr>
+<tr><td>Land Registry search</td><td>Principal where used in your advice; agency only on pure pass-through</td><td>Usually yes, 20%</td></tr>
+<tr><td>Environmental search</td><td>Principal where used in your advice; agency only on pure pass-through</td><td>Usually yes, 20%</td></tr>
 <tr><td>SDLT payment</td><td>Agency</td><td>No</td></tr>
 <tr><td>Land Registry registration fee</td><td>Agency</td><td>No</td></tr>
 <tr><td>Bank transfer fee</td><td>Agency (usually)</td><td>No</td></tr>

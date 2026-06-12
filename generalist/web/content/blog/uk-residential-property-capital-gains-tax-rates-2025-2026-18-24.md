@@ -3,6 +3,7 @@ title: "UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Exp
 slug: "uk-residential-property-capital-gains-tax-rates-2025-2026-18-24"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026-18-24"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "UK residential property capital gains tax rates 2025/26"
@@ -212,7 +213,8 @@ faqs: []
 <li><strong>Missing the 60 day deadline.</strong> This is the most common error. The clock starts from completion, not exchange of contracts. Exchange and completion are often the same day for residential sales, but not always. If they differ, completion is the trigger.</li>
 <li><strong>Forgetting the annual exempt amount.</strong> You deduct £3,000 from your gain before applying the tax rate. Some people calculate tax on the full gain.</li>
 <li><strong>Claiming repairs as improvements.</strong> You can only deduct capital improvements. Repairs and maintenance are not allowable. If you repainted the whole house, that is a repair. If you added an extension, that is an improvement.</li>
-<li><strong>Ignoring the 60 day return for small gains.</strong> If the gain
+<li><strong>Ignoring the 60 day return for small gains.</strong> If the gain is covered by the £3,000 annual exempt amount and no tax is due, a 60 day return is not normally needed. But if any tax is payable, even a small amount, the return and payment are both due within 60 days of completion. Do not assume a small gain means no filing: work the numbers first, then decide.</li>
+</ul>
 
 <h2>Related articles in Exit and Capital Gains</h2>
 <ul>

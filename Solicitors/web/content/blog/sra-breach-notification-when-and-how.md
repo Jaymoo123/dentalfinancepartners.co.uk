@@ -3,6 +3,7 @@ title: "SRA Breach Notification: When and How Must a Solicitor Report a Breach?"
 slug: "sra-breach-notification-when-and-how"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/sra-breach-notification-when-and-how"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "SRA Breach Notification: When & How Solicitors Must Report"
@@ -12,9 +13,9 @@ image: ""
 h1: "SRA Breach Notification: When and How Must a Solicitor Report a Breach?"
 summary: "SRA breach notification is a mandatory compliance duty for solicitors and law firms. This guide explains when a breach must be reported, what counts as material, and how the COLP or COFA should manage the process."
 keyTakeaways:
-  - "Only material breaches must be reported to the SRA, and notification must be made promptly under Accounts Rule 8.5."
+  - "Only serious (material) breaches must be reported to the SRA, and notification must be made promptly. The duty comes from the SRA Codes of Conduct reporting obligations, not from a numbered Accounts Rule."
   - "A breach is material if it involves significant client money, systemic control failure, client loss, dishonesty, or is persistent."
-  - "Serious breaches involving dishonesty or client loss need immediate notification; other material breaches within 7 to 14 days."
+  - "The SRA does not set a deadline in days: it expects notification promptly after discovery, and immediately where dishonesty or client loss is involved."
   - "The COLP and COFA are jointly responsible; in a sole practice the individual solicitor holds both roles."
   - "Failing to report a material breach is itself a serious breach that can lead to fines or tribunal referral."
 schema: ""
@@ -22,7 +23,7 @@ faqs:
   - question: "Do I need to report every client account error to the SRA?"
     answer: "No. Only material breaches must be reported. A minor transposition error in a ledger that is corrected within the five-week reconciliation cycle and does not cause client loss is unlikely to be material. However, you should document all errors in your compliance file. If you are unsure, consult your COFA or a specialist solicitor accountant. The SRA expects firms to use professional judgement, but when in doubt, err on the side of reporting."
   - question: "What is the deadline for making an SRA breach notification?"
-    answer: "The SRA does not set a specific deadline in days, but it expects notification \"promptly\" after discovering the breach. For serious breaches involving dishonesty or significant client loss, notification should be immediate. For other material breaches, within 7 to 14 days is generally acceptable. Delaying notification can be treated as a separate breach of Principle 6. Always document the date of discovery and the date of notification."
+    answer: "The SRA does not set a specific deadline in days: the Codes of Conduct require reporting \"promptly\" after discovering the breach. For serious breaches involving dishonesty or significant client loss, notification should be immediate; for anything else reportable, the safe reading of \"promptly\" is as soon as the firm has established the basic facts, not once its internal investigation is complete. Delaying notification can itself be treated as a regulatory failure. Always document the date of discovery and the date of notification."
   - question: "Can the COFA make the breach notification alone, or must the COLP be involved?"
     answer: "Both the COLP and COFA should be involved. The COFA typically identifies financial breaches under the SRA Accounts Rules, but the COLP has overall responsibility for compliance with the SRA Principles and Code of Conduct. The SRA expects both officers to work together. If only one makes the notification, the other may be found in breach of their own duties. In sole practices, the individual solicitor acts as both COLP and COFA."
   - question: "What happens if I fail to report a material breach?"
@@ -39,9 +40,9 @@ faqs:
 
 <h2>When Does the Duty to Notify Arise?</h2>
 
-<p>The duty to notify the SRA arises under the SRA Principles, specifically Principle 6, which requires firms to "act in a way that maintains the trust the public places in you and in the provision of legal services." More directly, the SRA's Enforcement Strategy and the SRA Accounts Rules impose a specific obligation to report material breaches.</p>
+<p>The duty to notify the SRA arises from the reporting obligations in the SRA Codes of Conduct, which require a firm to report promptly any facts or matters it reasonably believes are capable of amounting to a serious breach of the SRA's regulatory arrangements. There is no numbered Accounts Rule that sets a breach-notification test: the Accounts Rules define the duties (such as the Rule 8.3 five-weekly reconciliation), and the Codes plus the SRA's Enforcement Strategy govern when a failure against them must be reported.</p>
 
-<p>Under the SRA Accounts Rules (Rule 8.5), a firm must notify the SRA promptly if it discovers a breach of the rules that is material. The SRA defines a material breach as one that:</p>
+<p>In practice, the SRA treats a breach as serious (material), and therefore reportable, where it:</p>
 
 <ul>
 <li>Involves a significant amount of client money or property</li>
