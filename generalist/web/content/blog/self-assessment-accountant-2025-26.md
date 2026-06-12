@@ -171,6 +171,6 @@ faqs:
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>
     <li><a href="/blog/sole-trader-and-self-employment/how-to-register-as-self-employed-uk">How To Register As Self Employed UK</a></li>
-    <li><a href="/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide">Self Assessment Tax Return Guide</a></li>
+    <li><a href="/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-multiple-trades-sole-trader">Self Assessment Tax Return Guide</a></li>
 </ul>
 

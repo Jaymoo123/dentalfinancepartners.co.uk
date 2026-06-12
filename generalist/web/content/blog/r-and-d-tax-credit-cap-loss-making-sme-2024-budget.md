@@ -147,7 +147,7 @@ faqs:
 
 <p>If you have a claim outstanding for a pre-April 2024 period, file it as normal. The cap does not apply.</p>
 
-<p>But be aware that HMRC is scrutinising R&D claims more closely across the board. The <a href="/blog/r-and-d-tax-credits">additional information form (AIF)</a> is now mandatory for all claims, and HMRC is rejecting claims that do not meet the technical and accounting requirements. The cap is just one part of a wider crackdown.</p>
+<p>But be aware that HMRC is scrutinising R&D claims more closely across the board. The <a href="/blog/randd-tax-credits">additional information form (AIF)</a> is now mandatory for all claims, and HMRC is rejecting claims that do not meet the technical and accounting requirements. The cap is just one part of a wider crackdown.</p>
 
 <h2>Final Thoughts</h2>
 

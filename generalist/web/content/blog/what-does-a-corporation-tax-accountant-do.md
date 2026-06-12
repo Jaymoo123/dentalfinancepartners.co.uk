@@ -119,6 +119,6 @@ faqs:
 
 <h2>Related articles in Corporation Tax</h2>
 <ul>
-    <li><a href="/blog/corporation-tax/how-does-corporation-tax-work">How Does Corporation Tax Work</a></li>
+    <li><a href="/blog/corporation-tax/how-does-corporation-tax-work-multiple-shareholders">How Does Corporation Tax Work</a></li>
 </ul>
 

@@ -138,6 +138,6 @@ faqs:
 <h2>Related articles in VAT and Making Tax Digital</h2>
 <ul>
     <li><a href="/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline">MTD ITSA April 2026 Deadline</a></li>
-    <li><a href="/blog/vat-and-making-tax-digital/when-to-register-for-vat-uk">When To Register For VAT</a></li>
+    <li><a href="/blog/vat-and-making-tax-digital/when-do-you-need-vat-registration-help-uk-business">When To Register For VAT</a></li>
 </ul>
 

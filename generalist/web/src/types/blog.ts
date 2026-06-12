@@ -43,6 +43,8 @@ export type BlogFrontmatter = {
   schema?: string;
   canonical?: string;
   faqs?: BlogFaq[];
+  /** Optional how-to steps for HowTo JSON-LD schema (each has name + text) */
+  howToSteps?: { name: string; text: string }[];
 };
 
 export type BlogPost = BlogFrontmatter & {

@@ -170,6 +170,6 @@ faqs:
 <h2>Related articles in Exit and Capital Gains</h2>
 <ul>
     <li><a href="/blog/exit-and-capital-gains/uk-cgt-rates-residential-property-2026">UK CGT Rates Residential Property 2026</a></li>
-    <li><a href="/blog/exit-and-capital-gains/trust-accountant-uk-inheritance-tax-planning">Trust Accountant UK</a></li>
+    <li><a href="/blog/limited-company-tax/trust-accountant-uk-inheritance-tax-planning">Trust Accountant UK</a></li>
 </ul>
 

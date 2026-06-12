@@ -159,7 +159,7 @@ faqs:
 
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>
-    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-builders-uk">Accountant For Builders UK</a></li>
+    <li><a href="/blog/limited-company-tax/accountant-for-builders-uk">Accountant For Builders UK</a></li>
     <li><a href="/blog/sole-trader-and-self-employment/accountant-for-tradespeople-uk">Accountant For Tradespeople UK</a></li>
 </ul>
 

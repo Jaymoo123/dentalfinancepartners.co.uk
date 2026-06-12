@@ -125,7 +125,7 @@ faqs:
 
 <p><strong>Claiming for routine problem solving.</strong> If a competent professional in your field could have solved the problem without research, it is not R&D. Failed routine work is still not R&D.</p>
 
-<p><strong>Ignoring the <a href="/blog/r-and-d-tax-credits">R&D tax credits</a> notification requirement.</strong> For accounting periods starting on or after 1 April 2024, you must notify HMRC within 6 months of the period end if you intend to claim. Miss this deadline and the claim is invalid. The notification is made through the CT600 (corporation tax return) and the Additional Information Form (AIF).</p>
+<p><strong>Ignoring the <a href="/blog/randd-tax-credits">R&D tax credits</a> notification requirement.</strong> For accounting periods starting on or after 1 April 2024, you must notify HMRC within 6 months of the period end if you intend to claim. Miss this deadline and the claim is invalid. The notification is made through the CT600 (corporation tax return) and the Additional Information Form (AIF).</p>
 
 <h2>What Happens If HMRC Opens an Enquiry?</h2>
 

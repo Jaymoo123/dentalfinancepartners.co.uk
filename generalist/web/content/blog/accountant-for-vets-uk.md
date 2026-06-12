@@ -210,7 +210,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
-    <li><a href="/blog/limited-company-tax/accountant-for-locum-doctors">Accountant For Locum Doctors UK</a></li>
-    <li><a href="/blog/limited-company-tax/accountant-for-gps-and-doctors">Accountant For GPs And Doctors UK</a></li>
+    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-locum-doctors">Accountant For Locum Doctors UK</a></li>
+    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-gps-and-doctors">Accountant For GPs And Doctors UK</a></li>
 </ul>
 

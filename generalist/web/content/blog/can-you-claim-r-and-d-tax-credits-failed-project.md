@@ -159,4 +159,4 @@ faqs:
 <h3>Can I claim for a project that failed but produced useful data or IP?</h3>
 <p>Yes, absolutely. A failed project that generates patentable data, trade secrets, or technical knowledge has still produced a technological advance. The advance is the knowledge gained, not the product. This is one of the strongest categories of failed-project claims.</p>
 
-<p>For more guidance on R&D claims generally, see our <a href="/blog/r-and-d-tax-credits">R&D tax credits blog section</a>. If you are considering a claim for a failed project, <a href="/contact">contact our team</a> for a preliminary assessment.</p>
+<p>For more guidance on R&D claims generally, see our <a href="/blog/randd-tax-credits">R&D tax credits blog section</a>. If you are considering a claim for a failed project, <a href="/contact">contact our team</a> for a preliminary assessment.</p>

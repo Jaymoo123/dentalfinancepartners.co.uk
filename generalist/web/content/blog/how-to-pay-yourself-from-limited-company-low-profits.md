@@ -144,6 +144,6 @@ faqs:
 <h2>Related articles in Director Pay and Dividends</h2>
 <ul>
     <li><a href="/blog/director-pay-and-dividends/trivial-benefits-rules-uk">Trivial Benefits Rules UK</a></li>
-    <li><a href="/blog/director-pay-and-dividends/what-does-a-director-payroll-service-cover">Director Payroll Service</a></li>
+    <li><a href="/blog/payroll-and-paye/what-does-a-director-payroll-service-cover">Director Payroll Service</a></li>
 </ul>
 

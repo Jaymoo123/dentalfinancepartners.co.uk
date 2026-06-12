@@ -119,7 +119,7 @@ faqs:
 <ul>
 <li><strong>You miss a filing deadline.</strong> Late filing of accounts at Companies House costs £150 (1 month late) up to £1,500 (6+ months late). Late corporation tax payment incurs interest at 7.25% plus penalties.</li>
 <li><strong>You get the tax wrong.</strong> Underpaying corporation tax by £2,000 triggers interest and possibly penalties. Overpaying means you gave HMRC an interest-free loan.</li>
-<li><strong>You miss reliefs.</strong> <a href="/blog/r-and-d-tax-credits">R&D tax credits</a>, capital allowances, trivial benefits, pension contributions. These are easy to miss if you do not know what to look for.</li>
+<li><strong>You miss reliefs.</strong> <a href="/blog/randd-tax-credits">R&D tax credits</a>, capital allowances, trivial benefits, pension contributions. These are easy to miss if you do not know what to look for.</li>
 <li><strong>You trigger a compliance check.</strong> HMRC opens about 300,000 compliance checks per year on small companies. If your return is wrong, even innocently, the cost of dealing with the enquiry can dwarf any accounting fee saving.</li>
 </ul>
 

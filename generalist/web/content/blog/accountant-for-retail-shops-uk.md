@@ -120,6 +120,6 @@ faqs:
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>
     <li><a href="/blog/bookkeeping-and-compliance/accountant-for-pubs-and-bars-uk">Accountant For Pubs And Bars UK</a></li>
-    <li><a href="/blog/bookkeeping-and-compliance/accountant-for-restaurants-and-cafes">Accountant For Restaurants And Cafes</a></li>
+    <li><a href="/blog/vat-and-making-tax-digital/accountant-for-restaurants-and-cafes">Accountant For Restaurants And Cafes</a></li>
 </ul>
 

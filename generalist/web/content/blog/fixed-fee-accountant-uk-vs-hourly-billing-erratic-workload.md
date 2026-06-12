@@ -165,7 +165,7 @@ faqs:
 
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>
-    <li><a href="/blog/bookkeeping-and-compliance/when-do-you-need-property-tax-advisor">Property Tax Advisor</a></li>
-    <li><a href="/blog/bookkeeping-and-compliance/fixed-fee-accountant-uk-year-end-accounts-only">Fixed Fee Accountant UK For A Business That Needs Year-end Accounts Only</a></li>
+    <li><a href="/blog/exit-and-capital-gains/when-do-you-need-property-tax-advisor">Property Tax Advisor</a></li>
+    <li><a href="/blog/limited-company-tax/fixed-fee-accountant-uk-year-end-accounts-only">Fixed Fee Accountant UK For A Business That Needs Year-end Accounts Only</a></li>
 </ul>
 

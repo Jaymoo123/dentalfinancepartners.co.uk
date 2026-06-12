@@ -144,6 +144,6 @@ From April 2026, if your qualifying income is over £50,000, yes. From April 202
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>
     <li><a href="/blog/sole-trader-and-self-employment/accountant-for-uber-drivers">Accountant For Uber And Taxi Drivers UK</a></li>
-    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-landlords-uk-property-investors">Accountant For Landlords And BTL Portfolios UK</a></li>
+    <li><a href="/blog/limited-company-tax/accountant-for-landlords-uk-property-investors">Accountant For Landlords And BTL Portfolios UK</a></li>
 </ul>
 

@@ -204,7 +204,7 @@ faqs:
 
 <h2>Related articles in Director Pay and Dividends</h2>
 <ul>
-    <li><a href="/blog/director-pay-and-dividends/national-insurance-for-directors">National Insurance For Directors</a></li>
-    <li><a href="/blog/director-pay-and-dividends/corporation-tax-and-dividend-tax-uk-directors">Corporation Tax And Dividend Tax</a></li>
+    <li><a href="/blog/payroll-and-paye/national-insurance-for-directors">National Insurance For Directors</a></li>
+    <li><a href="/blog/corporation-tax/corporation-tax-and-dividend-tax-uk-directors">Corporation Tax And Dividend Tax</a></li>
 </ul>
 

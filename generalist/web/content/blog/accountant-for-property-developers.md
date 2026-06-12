@@ -135,7 +135,7 @@ faqs:
 
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
-    <li><a href="/blog/limited-company-tax/accountant-for-medical-professionals">Accountant For Medical Professionals UK</a></li>
+    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-medical-professionals">Accountant For Medical Professionals UK</a></li>
     <li><a href="/blog/limited-company-tax/accountant-for-dentists-uk">Accountant For Dentists UK</a></li>
 </ul>
 

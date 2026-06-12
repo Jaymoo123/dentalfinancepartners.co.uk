@@ -174,6 +174,6 @@ faqs:
 <h2>Related articles in Director Pay and Dividends</h2>
 <ul>
     <li><a href="/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-personal-savings-allowance">Dividend Tax Rates 2025 26 And The Interaction With The Personal Savings Allowance</a></li>
-    <li><a href="/blog/director-pay-and-dividends/corporation-tax-and-dividend-tax-limited-company-director-2025-26">Corporation Tax And Dividend Tax</a></li>
+    <li><a href="/blog/corporation-tax/corporation-tax-and-dividend-tax-limited-company-director-2025-26">Corporation Tax And Dividend Tax</a></li>
 </ul>
 

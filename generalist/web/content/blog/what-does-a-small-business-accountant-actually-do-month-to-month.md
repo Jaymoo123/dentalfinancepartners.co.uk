@@ -126,6 +126,6 @@ faqs:
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>
     <li><a href="/blog/bookkeeping-and-compliance/online-accountant-uk-paper-receipts">Online Accountant UK For A Business That Uses Paper Receipts</a></li>
-    <li><a href="/blog/bookkeeping-and-compliance/what-does-a-property-tax-advisor-do">Property Tax Advisor</a></li>
+    <li><a href="/blog/limited-company-tax/what-does-a-property-tax-advisor-do">Property Tax Advisor</a></li>
 </ul>
 

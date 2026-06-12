@@ -158,4 +158,4 @@ faqs:
 
 <p>We handle R&D enquiries for clients across the UK, from <a href="/locations">our offices in Manchester, London, and Birmingham</a>. If you need support, get in touch.</p>
 
-<p>For a broader overview of R&D tax credits and how they interact with your corporation tax return, see our <a href="/blog/r-and-d-tax-credits">R&D tax credits blog category</a>.</p>
+<p>For a broader overview of R&D tax credits and how they interact with your corporation tax return, see our <a href="/blog/randd-tax-credits">R&D tax credits blog category</a>.</p>

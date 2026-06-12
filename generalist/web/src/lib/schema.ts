@@ -222,14 +222,32 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]): string {
   return serialize(buildBreadcrumb(items));
 }
 
+/** Build a HowTo JSON-LD block when `post.howToSteps` is present. */
+function buildHowToBlock(post: BlogPost, path: string): SchemaThing | null {
+  if (!post.howToSteps?.length) return null;
+  return buildHowTo({
+    name: post.h1,
+    description: post.metaDescription,
+    path,
+    steps: post.howToSteps.map((s) => ({
+      name: s.name,
+      text: s.text,
+    })),
+  });
+}
+
 export function buildBlogPostingJsonLd(post: BlogPost, path: string): string {
   const article = buildBlogPosting(post, path);
   const faq = post.faqs && post.faqs.length ? buildFaqPage(post.faqs) : null;
-  return serialize(faq ? [article, faq] : article);
+  const howTo = buildHowToBlock(post, path);
+  const blocks = [article, faq, howTo].filter(Boolean) as SchemaThing[];
+  return serialize(blocks.length === 1 ? blocks[0] : blocks);
 }
 
 export function buildArticleJsonLd(post: BlogPost, path: string): string {
   const article = buildArticle(post, path);
   const faq = post.faqs && post.faqs.length ? buildFaqPage(post.faqs) : null;
-  return serialize(faq ? [article, faq] : article);
+  const howTo = buildHowToBlock(post, path);
+  const blocks = [article, faq, howTo].filter(Boolean) as SchemaThing[];
+  return serialize(blocks.length === 1 ? blocks[0] : blocks);
 }

@@ -170,6 +170,6 @@ faqs:
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
     <li><a href="/blog/limited-company-tax/ir35-contract-review-service">IR35 Contract Review Service</a></li>
-    <li><a href="/blog/limited-company-tax/ir35-explained">IR35 Explained</a></li>
+    <li><a href="/blog/limited-company-tax/ir35-explained-contractor-separate-limited-company">IR35 Explained</a></li>
 </ul>
 

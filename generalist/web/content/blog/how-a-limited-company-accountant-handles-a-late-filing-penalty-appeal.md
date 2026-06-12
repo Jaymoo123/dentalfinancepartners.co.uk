@@ -144,6 +144,6 @@ A husband-and-wife Ltd company running a Birmingham café gave their bookkeeper 
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
     <li><a href="/blog/limited-company-tax/contractor-accountant-vs-high-street-accountant-for-it-contractors">Contractor Accountant vs High Street Accountant For It Contractors</a></li>
-    <li><a href="/blog/limited-company-tax/when-is-a-limited-company-accountant-not-worth-the-fee">When A Limited Company Accountant Is Not Worth The Fee</a></li>
+    <li><a href="/blog/bookkeeping-and-compliance/when-is-a-limited-company-accountant-not-worth-the-fee">When A Limited Company Accountant Is Not Worth The Fee</a></li>
 </ul>
 

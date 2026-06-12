@@ -129,7 +129,7 @@ faqs:
 
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>
-    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-electricians-uk">Accountant For Electricians UK</a></li>
+    <li><a href="/blog/limited-company-tax/accountant-for-electricians-uk">Accountant For Electricians UK</a></li>
     <li><a href="/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk">Accountant For Plumbers UK</a></li>
 </ul>
 

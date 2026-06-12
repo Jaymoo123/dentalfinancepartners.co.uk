@@ -196,6 +196,6 @@ faqs:
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
     <li><a href="/blog/limited-company-tax/director-loan-write-off-tax-implications">What Are The Tax Implications Of A Director's Loan Written Off By The Company?</a></li>
-    <li><a href="/blog/limited-company-tax/associated-companies-corporation-tax-rate-2025-26">How Does The Associated Companies Rule Affect My Corporation Tax Rate In 2025/26?</a></li>
+    <li><a href="/blog/corporation-tax/associated-companies-corporation-tax-rate-2025-26">How Does The Associated Companies Rule Affect My Corporation Tax Rate In 2025/26?</a></li>
 </ul>
 

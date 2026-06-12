@@ -122,7 +122,7 @@ faqs:
 
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
-    <li><a href="/blog/limited-company-tax/ir35-explained">IR35 Explained</a></li>
-    <li><a href="/blog/limited-company-tax/definitive-guide-choosing-contractor-accountant-uk">Contractor Accountant UK</a></li>
+    <li><a href="/blog/limited-company-tax/ir35-explained-contractor-separate-limited-company">IR35 Explained</a></li>
+    <li>Contractor Accountant UK</li>
 </ul>
 

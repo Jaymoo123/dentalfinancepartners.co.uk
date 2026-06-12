@@ -115,7 +115,7 @@ faqs:
 <h2>What You Do Not Get with These Services</h2>
 <p>All three services have limits. None of them typically include tax planning beyond the basics. None of them automatically review your director's loan account position or advise on dividend strategy unless you ask. None of them proactively flag whether you should register for VAT voluntarily or whether you qualify for R&D tax credits.</p>
 
-<p>If your business is growing, you may outgrow these services. A contractor turning over £60,000 has different needs from a software consultancy in Manchester turning over £420,000 with four employees. At that point, you need a firm that does more than compliance. You need strategic advice on <a href="/blog/corporation-tax">corporation tax planning</a>, <a href="/blog/director-pay-and-dividends">director remuneration</a>, and <a href="/blog/r-and-d-tax-credits">R&D claims</a>.</p>
+<p>If your business is growing, you may outgrow these services. A contractor turning over £60,000 has different needs from a software consultancy in Manchester turning over £420,000 with four employees. At that point, you need a firm that does more than compliance. You need strategic advice on <a href="/blog/corporation-tax">corporation tax planning</a>, <a href="/blog/director-pay-and-dividends">director remuneration</a>, and <a href="/blog/randd-tax-credits">R&D claims</a>.</p>
 
 <p>That is where a firm like Holloway Davies comes in. We are <a href="/about">ICAEW qualified accountants</a> working with businesses of every shape. We do not lock you into proprietary software. We work with Xero, FreeAgent, QuickBooks, and Sage. You get a dedicated accountant who knows your business, plus the software you prefer.</p>
 
