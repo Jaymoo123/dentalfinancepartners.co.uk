@@ -14,7 +14,7 @@ export default function ContactPage() {
     <>
       <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <p className="eyebrow text-teal-400">Get in touch</p>
+          <p className="eyebrow text-cyan-400">Get in touch</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Book a free call.
           </h1>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                   },
                 ].map((step) => (
                   <li key={step.n} className="flex gap-5">
-                    <span className="font-mono text-2xl font-semibold text-teal-600 tabular-nums" aria-hidden>
+                    <span className="font-mono text-2xl font-semibold text-cyan-700 tabular-nums" aria-hidden>
                       {step.n}
                     </span>
                     <div className="min-w-0">
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   Email:{" "}
                   <a
                     href={`mailto:${siteConfig.contact.email}`}
-                    className="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+                    className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900"
                   >
                     {siteConfig.contact.email}
                   </a>

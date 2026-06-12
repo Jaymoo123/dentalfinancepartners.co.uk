@@ -12,7 +12,7 @@ export default function NotFound() {
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Link href="/" className={btnPrimary}>Go to homepage</Link>
-          <Link href="/blog" className="inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-teal-600 underline-offset-4 hover:text-neutral-900">
+          <Link href="/blog" className="inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900">
             Browse IR35 guides
           </Link>
         </div>

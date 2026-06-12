@@ -14,7 +14,7 @@ type BlogListWithSearchProps = {
 type SortOption = "date-desc" | "date-asc" | "title-asc" | "title-desc";
 
 const fieldClass =
-  "border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-teal-600 focus:outline-none";
+  "border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-cyan-700 focus:outline-none";
 
 export function BlogListWithSearch({
   posts,
@@ -138,13 +138,13 @@ export function BlogListWithSearch({
               return (
                 <li key={p.slug}>
                   <article className="border border-neutral-200 bg-[#fafaf7] p-5 sm:p-6 transition-shadow hover:shadow-md">
-                    <p className="text-[11px] font-bold uppercase tracking-wider text-teal-700">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-cyan-800">
                       {p.category}
                     </p>
                     <h2 className="mt-2 text-lg font-semibold text-neutral-900 sm:text-xl">
                       <Link
                         href={`/blog/${p.categorySlug}/${p.slug}`}
-                        className="hover:text-teal-700 transition-colors"
+                        className="hover:text-cyan-800 transition-colors"
                       >
                         {p.title}
                       </Link>
@@ -175,7 +175,7 @@ export function BlogListWithSearch({
                 {currentPage > 1 && (
                   <button
                     onClick={() => setCurrentPage((p) => p - 1)}
-                    className="min-h-[48px] min-w-[100px] px-4 border border-neutral-300 bg-white text-neutral-900 font-medium text-sm transition-colors hover:border-teal-600 hover:bg-teal-50"
+                    className="min-h-[48px] min-w-[100px] px-4 border border-neutral-300 bg-white text-neutral-900 font-medium text-sm transition-colors hover:border-cyan-700 hover:bg-cyan-50"
                   >
                     Previous
                   </button>
@@ -186,7 +186,7 @@ export function BlogListWithSearch({
                 {currentPage < totalPages && (
                   <button
                     onClick={() => setCurrentPage((p) => p + 1)}
-                    className="min-h-[48px] min-w-[100px] px-4 border border-neutral-300 bg-white text-neutral-900 font-medium text-sm transition-colors hover:border-teal-600 hover:bg-teal-50"
+                    className="min-h-[48px] min-w-[100px] px-4 border border-neutral-300 bg-white text-neutral-900 font-medium text-sm transition-colors hover:border-cyan-700 hover:bg-cyan-50"
                   >
                     Next
                   </button>

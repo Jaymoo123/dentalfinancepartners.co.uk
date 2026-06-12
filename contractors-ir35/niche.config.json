@@ -6,7 +6,7 @@
   "tagline": "Specialist accountants for UK contractors and IR35",
   "description": "Contractor Finance Partners. Specialist accountants for UK contractors, PSC directors and IR35-affected workers. IR35 status advice, limited company tax, umbrella vs Ltd comparisons, expenses, dividends and pension planning. Fixed fees, plain English.",
   "brand": {
-    "primary_color": "#0d9488",
+    "primary_color": "#0e7490",
     "logo_path": "/brand/primary-logo.png",
     "publisher_logo_url": "/brand/icon-alt.png"
   },
@@ -71,7 +71,7 @@
       "naver": "",
       "pinterest": ""
     },
-    "theme_color": "#0d9488"
+    "theme_color": "#0e7490"
   },
   "lead_form": {
     "role_label": "I am a...",

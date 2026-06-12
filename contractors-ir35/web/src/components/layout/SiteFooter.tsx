@@ -16,7 +16,7 @@ export function SiteFooter() {
       <div className={`${siteContainerLg} pt-16 pb-10 sm:pt-20 sm:pb-12`}>
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
           <div className="min-w-0">
-            <div className="font-mono text-xs uppercase tracking-widest text-teal-600">
+            <div className="font-mono text-xs uppercase tracking-widest text-cyan-700">
               {siteConfig.legalName}
             </div>
             <div className="mt-3 text-xl font-semibold tracking-tight text-neutral-900">
@@ -28,7 +28,7 @@ export function SiteFooter() {
             <p className="mt-6 text-sm text-neutral-500">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
-                className={`text-teal-700 hover:text-teal-800 underline underline-offset-2 ${focusRing}`}
+                className={`text-cyan-800 hover:text-cyan-900 underline underline-offset-2 ${focusRing}`}
               >
                 {siteConfig.contact.email}
               </a>

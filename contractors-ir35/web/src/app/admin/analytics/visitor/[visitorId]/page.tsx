@@ -150,7 +150,7 @@ export default async function VisitorTimelinePage({
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/admin/analytics" className="text-sm text-teal-700 underline">All visitors</Link>
+      <Link href="/admin/analytics" className="text-sm text-cyan-800 underline">All visitors</Link>
 
       <div className={`mt-3 rounded-xl border p-5 ${isConverted ? "border-emerald-300 bg-emerald-50" : "border-slate-200 bg-white"}`}>
         <div className="flex items-center justify-between gap-3">
@@ -203,7 +203,7 @@ export default async function VisitorTimelinePage({
           </p>
           <div className="flex items-end gap-1" title="Engaged time per session">
             {sessionEngagement.map((ms, i) => (
-              <div key={i} className="w-2 rounded-t bg-teal-500" style={{ height: `${Math.max(3, (ms / maxEng) * 32)}px` }} />
+              <div key={i} className="w-2 rounded-t bg-cyan-600" style={{ height: `${Math.max(3, (ms / maxEng) * 32)}px` }} />
             ))}
           </div>
         </div>

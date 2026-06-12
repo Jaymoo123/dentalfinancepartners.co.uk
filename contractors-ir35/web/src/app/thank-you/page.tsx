@@ -12,7 +12,7 @@ export default function ThankYouPage() {
     <section className="bg-white py-24 sm:py-32">
       <div className={siteContainerLg}>
         <div className="max-w-xl">
-          <span className="inline-block h-1 w-12 bg-teal-600" aria-hidden />
+          <span className="inline-block h-1 w-12 bg-cyan-700" aria-hidden />
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl">
             Thank you.
           </h1>
@@ -28,7 +28,7 @@ export default function ThankYouPage() {
             </Link>
             <Link
               href="/"
-              className="inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-teal-600 underline-offset-4 hover:text-neutral-900"
+              className="inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900"
             >
               Back to home
             </Link>

@@ -136,7 +136,7 @@ function Breakdown({ title, rows }: { title: string; rows: Array<[string, number
                 <span className="font-mono text-slate-500">{n}</span>
               </div>
               <div className="mt-1 h-1.5 rounded bg-slate-100">
-                <div className="h-1.5 rounded bg-teal-500" style={{ width: `${(n / total) * 100}%` }} />
+                <div className="h-1.5 rounded bg-cyan-600" style={{ width: `${(n / total) * 100}%` }} />
               </div>
             </div>
           ))
@@ -279,7 +279,7 @@ function CtaPerformancePanel({ rows }: { rows: CtaPerformance[] }) {
         <td className="w-28 px-3 py-2">
           <span className={weak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(c.click_to_form_rate)}</span>
           <div className="mt-1 h-1.5 rounded bg-slate-100">
-            <div className={`h-1.5 rounded ${weak ? "bg-rose-400" : "bg-teal-500"}`} style={{ width: `${widthPct}%` }} />
+            <div className={`h-1.5 rounded ${weak ? "bg-rose-400" : "bg-cyan-600"}`} style={{ width: `${widthPct}%` }} />
           </div>
         </td>
         <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{c.lead_sessions}</td>
@@ -303,7 +303,7 @@ function CtaPerformancePanel({ rows }: { rows: CtaPerformance[] }) {
       <h2 className="text-lg font-bold text-slate-900">CTA performance</h2>
       <p className="text-xs text-slate-500">Which CTAs drive form starts vs dead-end.</p>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <div className="border-b border-slate-100 bg-teal-50/40 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-teal-800">Form-bound CTAs</div>
+        <div className="border-b border-slate-100 bg-cyan-50/40 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-cyan-900">Form-bound CTAs</div>
         <table className="w-full text-sm"><Head /><tbody>
           {formCtas.length === 0 ? <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">None yet.</td></tr> : renderRows(formCtas)}
         </tbody></table>
@@ -411,7 +411,7 @@ function ChannelValuePanel({ rows }: { rows: ChannelConversion[] }) {
                     <td className="w-1/3 px-3 py-2 text-right">
                       <div className="flex items-center justify-end gap-2">
                         <div className="hidden h-1.5 w-24 rounded bg-slate-100 sm:block">
-                          <div className={`h-1.5 rounded ${flood ? "bg-amber-400" : "bg-teal-500"}`} style={{ width: `${widthPct}%` }} />
+                          <div className={`h-1.5 rounded ${flood ? "bg-amber-400" : "bg-cyan-600"}`} style={{ width: `${widthPct}%` }} />
                         </div>
                         <span className="font-mono">{c.sessions}</span>
                       </div>
@@ -618,7 +618,7 @@ export default async function AdminAnalyticsPage({
                   <td className="px-4 py-2.5 text-right font-mono text-slate-900">{r.n}</td>
                   <td className="hidden w-1/3 px-4 py-2.5 sm:table-cell">
                     <div className="h-2 rounded bg-slate-100">
-                      <div className={`h-2 rounded ${r.branch ? "bg-sky-400" : "bg-teal-500"}`} style={{ width: `${barPct}%` }} />
+                      <div className={`h-2 rounded ${r.branch ? "bg-sky-400" : "bg-cyan-600"}`} style={{ width: `${barPct}%` }} />
                     </div>
                   </td>
                   <td className="px-4 py-2.5 text-right text-xs text-slate-500">{r.denomLabel ? `${(rate * 100).toFixed(0)}% ${r.denomLabel}` : ""}</td>
@@ -631,7 +631,7 @@ export default async function AdminAnalyticsPage({
 
       <div className="mt-8 flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-lg font-bold text-slate-900">How people arrive</h2>
-        <Link href="/admin/analytics/trends" className="text-xs text-teal-700 underline">View trends</Link>
+        <Link href="/admin/analytics/trends" className="text-xs text-cyan-800 underline">View trends</Link>
       </div>
       <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Breakdown title="Traffic source" rows={tally(visitors, "referrer_host")} />
@@ -690,7 +690,7 @@ export default async function AdminAnalyticsPage({
       <CtaPerformancePanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />
       <div>
-        <Link href="/admin/analytics/leads" className="inline-block text-xs text-teal-700 underline">View all leads</Link>
+        <Link href="/admin/analytics/leads" className="inline-block text-xs text-cyan-800 underline">View all leads</Link>
       </div>
     </div>
   );
@@ -701,8 +701,8 @@ export default async function AdminAnalyticsPage({
         <h1 className="text-2xl font-bold text-slate-900">Analytics</h1>
         <div className="flex flex-wrap items-center gap-3 text-xs sm:gap-4">
           <CountrySelect value={country} options={countryOptions} basePath="/admin/analytics" />
-          <Link href="/admin/analytics/trends" className="text-teal-700 underline">Trends</Link>
-          <Link href="/admin/analytics/leads" className="text-teal-700 underline">All leads</Link>
+          <Link href="/admin/analytics/trends" className="text-cyan-800 underline">Trends</Link>
+          <Link href="/admin/analytics/leads" className="text-cyan-800 underline">All leads</Link>
           <span className="text-slate-500">Human-only &middot; live</span>
         </div>
       </div>

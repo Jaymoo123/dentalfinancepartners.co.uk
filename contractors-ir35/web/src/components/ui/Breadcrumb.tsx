@@ -24,8 +24,8 @@ export function Breadcrumb({ items, variant = "default" }: BreadcrumbProps) {
     variant === "light" ? "text-white/70" : "text-neutral-500";
   const linkHover =
     variant === "light"
-      ? "hover:text-teal-300"
-      : "hover:text-teal-700";
+      ? "hover:text-cyan-300"
+      : "hover:text-cyan-800";
   const lastColour =
     variant === "light"
       ? "font-medium text-white"

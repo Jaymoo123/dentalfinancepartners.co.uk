@@ -46,7 +46,7 @@ export default function IR35StatusPage() {
           <div className="section-label mb-6">IR35 status</div>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Inside or outside IR35?
-            <span className="block text-teal-400">Understand your position.</span>
+            <span className="block text-cyan-400">Understand your position.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             IR35 is assessed contract by contract. A single status for all your engagements does not exist. We review your specific contract and how you actually work.
@@ -71,7 +71,7 @@ export default function IR35StatusPage() {
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
             {statusTests.map((test) => (
-              <div key={test.title} className="border-l-2 border-teal-600 pl-6">
+              <div key={test.title} className="border-l-2 border-cyan-700 pl-6">
                 <h3 className="text-xl font-semibold text-neutral-900">{test.title}</h3>
                 <p className="mt-3 text-base leading-relaxed text-neutral-600">{test.body}</p>
               </div>
@@ -92,7 +92,7 @@ export default function IR35StatusPage() {
               <thead>
                 <tr className="bg-neutral-900 text-white">
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Area</th>
-                  <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider text-teal-300 sm:px-6">Outside IR35</th>
+                  <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider text-cyan-300 sm:px-6">Outside IR35</th>
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Inside IR35</th>
                 </tr>
               </thead>
@@ -128,7 +128,7 @@ export default function IR35StatusPage() {
             {timeline.map((item) => (
               <li key={item.date} className="flex gap-6 sm:gap-8">
                 <div className="shrink-0">
-                  <span className="font-mono text-sm font-medium text-teal-600 uppercase tracking-widest">
+                  <span className="font-mono text-sm font-medium text-cyan-700 uppercase tracking-widest">
                     {item.date}
                   </span>
                 </div>
@@ -157,7 +157,7 @@ export default function IR35StatusPage() {
             </Link>
             <Link
               href="/blog"
-              className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-teal-600 underline-offset-4 hover:text-neutral-900 ${focusRing}`}
+              className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900 ${focusRing}`}
             >
               Read our IR35 guides
             </Link>

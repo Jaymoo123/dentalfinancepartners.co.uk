@@ -4,7 +4,7 @@
 
 /* ============================================================
    DESIGN SYSTEM — Contractor Finance Partners
-   Teal accent (#0d9488), off-white surfaces, deep ink type.
+   Petrol-cyan accent (#0e7490) with warm amber highlight, off-white surfaces, deep ink type.
    Geist Sans + Geist Mono. Typographic-first, generous whitespace.
    ============================================================ */
 
@@ -17,10 +17,14 @@
   --ink-whisper: #a3a3a3;
   --hairline: #e5e5e5;
 
-  /* Brand accent (teal family) */
-  --accent: #0d9488;
-  --accent-strong: #0f766e;
-  --accent-whisper: #f0fdfa;
+  /* Brand accent (petrol-cyan family) + amber highlight */
+  --accent: #0e7490;          /* cyan-700 */
+  --accent-strong: #155e75;   /* cyan-800 */
+  --accent-whisper: #ecfeff;  /* cyan-50 */
+
+  /* Warm amber highlight (NEW — CTA emphasis, key numbers, OG) */
+  --highlight: #b45309;         /* amber-700 — AA on white */
+  --highlight-on-dark: #fbbf24; /* amber-400 — AA on dark */
 
   /* Status */
   --destructive: #dc2626;

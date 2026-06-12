@@ -39,7 +39,7 @@ function TrendSection({
       {values.length === 0 ? (
         <div className="mt-3 flex h-16 items-center justify-center rounded-lg border border-dashed border-slate-200 text-xs text-slate-400">No data in this window</div>
       ) : (
-        <div className="mt-3 text-teal-600">
+        <div className="mt-3 text-cyan-700">
           <Sparkline values={values} height={60} />
         </div>
       )}
@@ -77,7 +77,7 @@ export default async function TrendsPage({
     <div className="mx-auto max-w-4xl px-4 py-10">
       <div className="flex items-baseline justify-between">
         <h1 className="text-2xl font-bold text-slate-900">Trends</h1>
-        <Link href="/admin/analytics" className="text-sm text-teal-700 underline">Overview</Link>
+        <Link href="/admin/analytics" className="text-sm text-cyan-800 underline">Overview</Link>
       </div>
       <p className="mt-1 text-xs text-slate-500">Human-only (bots excluded), UTC buckets. Country: {countryFilter ?? "all"}.</p>
 

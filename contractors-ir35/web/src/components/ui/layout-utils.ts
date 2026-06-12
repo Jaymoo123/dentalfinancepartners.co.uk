@@ -12,18 +12,18 @@ export const sectionY = "py-16 sm:py-20 lg:py-28";
 export const sectionYLoose = "py-20 sm:py-28 lg:py-36";
 
 export const focusRing =
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600";
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700";
 
 export const btnPrimary =
-  "inline-flex min-h-12 items-center justify-center bg-teal-600 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-teal-700 active:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600";
+  "inline-flex min-h-12 items-center justify-center bg-cyan-700 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-cyan-800 active:bg-cyan-900 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700";
 
 export const btnOnTeal =
   "inline-flex min-h-12 items-center justify-center bg-neutral-900 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-black active:bg-black disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
 
 export const btnSecondary =
-  "inline-flex min-h-12 items-center justify-center border border-neutral-900 bg-transparent px-7 py-3.5 text-sm font-medium text-neutral-900 tracking-wide transition-colors duration-150 hover:bg-neutral-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600";
+  "inline-flex min-h-12 items-center justify-center border border-neutral-900 bg-transparent px-7 py-3.5 text-sm font-medium text-neutral-900 tracking-wide transition-colors duration-150 hover:bg-neutral-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700";
 
 export const linkArrow =
-  "inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-600";
+  "inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-700";
 
 export const btnOnDark = btnSecondary;

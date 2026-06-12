@@ -9,7 +9,7 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-teal-600 focus:outline-none";
+  "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-cyan-700 focus:outline-none";
 
 const labelClass = "block text-sm font-medium text-neutral-900";
 const errorClass = "mt-2 text-xs text-red-600";
@@ -302,13 +302,13 @@ export function LeadForm({
             name="consent"
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 shrink-0 accent-teal-600"
+            className="mt-0.5 h-4 w-4 shrink-0 accent-cyan-700"
             aria-invalid={!!fieldErrors.consent}
             aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
           />
           <span>
             I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-teal-700 underline">
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-cyan-800 underline">
               Privacy Policy
             </a>
             .
@@ -326,8 +326,8 @@ export function LeadForm({
       )}
 
       {status === "success" && !redirectOnSuccess && (
-        <div role="status" className="border border-teal-200 bg-teal-50 p-4">
-          <p className="text-sm font-medium text-teal-900">
+        <div role="status" className="border border-cyan-200 bg-cyan-50 p-4">
+          <p className="text-sm font-medium text-cyan-900">
             Thanks. We&apos;ll be in touch within 24 hours.
           </p>
         </div>

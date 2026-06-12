@@ -66,7 +66,7 @@ export default async function BlogCategoryPage({ params }: Props) {
               { label: cat.name },
             ]}
           />
-          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-teal-400">
+          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-cyan-400">
             {cat.count} article{cat.count !== 1 ? "s" : ""}
           </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
@@ -88,7 +88,7 @@ export default async function BlogCategoryPage({ params }: Props) {
           />
 
           <div className="mt-12 text-sm text-neutral-500">
-            <Link href="/blog" className="text-teal-700 hover:underline">
+            <Link href="/blog" className="text-cyan-800 hover:underline">
               Back to all articles
             </Link>
           </div>

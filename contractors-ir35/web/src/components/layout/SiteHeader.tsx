@@ -65,7 +65,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium tracking-tight transition-colors ${focusRing} ${
-                  active ? "text-teal-700" : "text-neutral-600 hover:text-neutral-900"
+                  active ? "text-cyan-800" : "text-neutral-600 hover:text-neutral-900"
                 }`}
               >
                 {item.label}
@@ -118,7 +118,7 @@ export function SiteHeader() {
           >
             <div className="flex flex-col gap-3 border-b border-neutral-200 px-5 py-4">
               <div className="flex items-center justify-between gap-2">
-                <p id={`${panelId}-title`} className="font-mono text-xs uppercase tracking-widest text-teal-600">
+                <p id={`${panelId}-title`} className="font-mono text-xs uppercase tracking-widest text-cyan-700">
                   Menu
                 </p>
                 <button
@@ -140,7 +140,7 @@ export function SiteHeader() {
                     <Link
                       href={item.href}
                       className={`block py-3 text-base font-medium ${focusRing} ${
-                        active ? "text-teal-700" : "text-neutral-900 hover:text-teal-700"
+                        active ? "text-cyan-800" : "text-neutral-900 hover:text-cyan-800"
                       }`}
                       onClick={() => setOpen(false)}
                     >

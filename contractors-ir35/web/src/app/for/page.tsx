@@ -34,15 +34,15 @@ export default function ForIndexPage() {
               <Link
                 key={type.slug}
                 href={`/for/${type.slug}`}
-                className="group block bg-white/5 border border-white/10 p-5 sm:p-6 transition-all hover:bg-teal-600/20 hover:border-teal-400/40"
+                className="group block bg-white/5 border border-white/10 p-5 sm:p-6 transition-all hover:bg-cyan-700/20 hover:border-cyan-400/40"
               >
-                <span className="text-base font-bold text-white group-hover:text-teal-300 transition-colors">
+                <span className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
                   {type.title}
                 </span>
                 <p className="mt-2 text-sm text-neutral-400 group-hover:text-neutral-300 transition-colors line-clamp-2">
                   {type.intro.split(".")[0]}.
                 </p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-teal-400 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>

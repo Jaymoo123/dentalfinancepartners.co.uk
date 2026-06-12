@@ -46,7 +46,7 @@ export default function BlogIndexPage() {
               { label: "Blog" },
             ]}
           />
-          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-teal-400">
+          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-cyan-400">
             Contractor guides
           </p>
           <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -67,13 +67,13 @@ export default function BlogIndexPage() {
                 <Link
                   key={cat.slug}
                   href={`/blog/${cat.slug}`}
-                  className="block min-h-[100px] p-5 border border-neutral-200 bg-white transition-all hover:border-teal-600 hover:shadow-md"
+                  className="block min-h-[100px] p-5 border border-neutral-200 bg-white transition-all hover:border-cyan-700 hover:shadow-md"
                 >
                   <h3 className="text-base font-bold text-neutral-900">{cat.name}</h3>
                   <p className="mt-1 text-sm text-neutral-500">
                     {cat.count} article{cat.count !== 1 ? "s" : ""}
                   </p>
-                  <span className="mt-2 inline-flex items-center text-sm font-medium text-teal-700">
+                  <span className="mt-2 inline-flex items-center text-sm font-medium text-cyan-800">
                     View articles
                     <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

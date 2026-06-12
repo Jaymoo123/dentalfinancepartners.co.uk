@@ -44,7 +44,7 @@ export default async function ContractorTypePage({
         <div className={siteContainerLg}>
           <Link
             href="/for"
-            className={`inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-400 uppercase tracking-wider hover:text-teal-400 transition-colors mb-6 ${focusRing}`}
+            className={`inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-400 uppercase tracking-wider hover:text-cyan-400 transition-colors mb-6 ${focusRing}`}
           >
             <ArrowRight className="h-3 w-3 rotate-180" />
             All contractor types
@@ -71,13 +71,13 @@ export default async function ContractorTypePage({
       </section>
 
       {/* Stats bar */}
-      <section className="bg-teal-700 py-8 sm:py-10">
+      <section className="bg-cyan-800 py-8 sm:py-10">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
             {type.stats.map((stat) => (
               <div key={stat.label} className="flex flex-col sm:text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-1 text-xs sm:text-sm font-semibold text-teal-100 uppercase tracking-wider">{stat.label}</div>
+                <div className="mt-1 text-xs sm:text-sm font-semibold text-cyan-100 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -95,7 +95,7 @@ export default async function ContractorTypePage({
             {type.challenges.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-teal-600 bg-neutral-50 p-6 sm:p-8"
+                className="border border-neutral-200 border-l-4 border-l-cyan-700 bg-neutral-50 p-6 sm:p-8"
               >
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
@@ -116,7 +116,7 @@ export default async function ContractorTypePage({
             {type.howWeHelp.map((item) => (
               <div
                 key={item.title}
-                className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-teal-600 hover:shadow-md transition-all"
+                className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-cyan-700 hover:shadow-md transition-all"
               >
                 <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
@@ -124,7 +124,7 @@ export default async function ContractorTypePage({
             ))}
           </div>
           <div className="mt-10">
-            <Link href="/services" className="inline-flex items-center gap-2 text-teal-700 hover:text-teal-800 font-semibold text-sm sm:text-base transition-colors">
+            <Link href="/services" className="inline-flex items-center gap-2 text-cyan-800 hover:text-cyan-900 font-semibold text-sm sm:text-base transition-colors">
               View all services
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -138,7 +138,7 @@ export default async function ContractorTypePage({
           <div className={siteContainerLg}>
             <div className="max-w-3xl mx-auto">
               <figure className="relative bg-white border border-neutral-200 p-8 sm:p-10 shadow-sm">
-                <Quote className="absolute top-6 right-6 h-8 w-8 text-teal-100" aria-hidden />
+                <Quote className="absolute top-6 right-6 h-8 w-8 text-cyan-100" aria-hidden />
                 <blockquote className="text-lg sm:text-xl leading-relaxed text-neutral-800 font-medium pr-10">
                   &ldquo;{type.testimonial.quote}&rdquo;
                 </blockquote>
@@ -168,10 +168,10 @@ export default async function ContractorTypePage({
                     key={faq.question}
                     className="group border border-neutral-200 bg-white"
                   >
-                    <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-teal-700 transition-colors list-none">
+                    <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-cyan-800 transition-colors list-none">
                       <span>{faq.question}</span>
                       <span
-                        className="flex-shrink-0 text-teal-600 transition-transform group-open:rotate-45"
+                        className="flex-shrink-0 text-cyan-700 transition-transform group-open:rotate-45"
                         aria-hidden
                       >
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
@@ -209,7 +209,7 @@ export default async function ContractorTypePage({
                   "Fixed fees, quoted before we start",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">
-                    <div className="h-5 w-5 flex items-center justify-center bg-teal-600 text-white text-xs font-bold flex-shrink-0">✓</div>
+                    <div className="h-5 w-5 flex items-center justify-center bg-cyan-700 text-white text-xs font-bold flex-shrink-0">✓</div>
                     <span className="text-sm sm:text-base">{point}</span>
                   </div>
                 ))}
@@ -237,19 +237,19 @@ export default async function ContractorTypePage({
                 <Link
                   key={t.slug}
                   href={`/for/${t.slug}`}
-                  className="group block border border-neutral-200 bg-white p-4 transition-all hover:border-teal-600 hover:shadow-sm"
+                  className="group block border border-neutral-200 bg-white p-4 transition-all hover:border-cyan-700 hover:shadow-sm"
                 >
-                  <span className="text-sm font-semibold text-neutral-800 group-hover:text-teal-700 transition-colors">
+                  <span className="text-sm font-semibold text-neutral-800 group-hover:text-cyan-800 transition-colors">
                     {t.title}
                   </span>
-                  <ArrowRight className="mt-2 h-3.5 w-3.5 text-neutral-400 group-hover:text-teal-600 group-hover:translate-x-0.5 transition-all" />
+                  <ArrowRight className="mt-2 h-3.5 w-3.5 text-neutral-400 group-hover:text-cyan-700 group-hover:translate-x-0.5 transition-all" />
                 </Link>
               ))}
           </div>
           <div className="mt-5">
             <Link
               href="/for"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-700 hover:text-teal-800 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-800 hover:text-cyan-900 transition-colors"
             >
               See all contractor types
               <ArrowRight className="h-4 w-4" />

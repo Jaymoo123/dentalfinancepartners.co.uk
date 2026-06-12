@@ -53,7 +53,7 @@ export default async function LeadsPage({
     <div className="mx-auto max-w-7xl px-4 py-10">
       <div className="flex items-baseline justify-between">
         <h1 className="text-2xl font-bold text-slate-900">Leads</h1>
-        <Link href="/admin/analytics" className="text-sm text-teal-700 underline">Overview</Link>
+        <Link href="/admin/analytics" className="text-sm text-cyan-800 underline">Overview</Link>
       </div>
       <p className="mt-1 text-xs text-slate-500">
         Newest first, {PAGE} per page.
@@ -99,7 +99,7 @@ export default async function LeadsPage({
                     <td className="px-3 py-2 text-right font-mono">{j ? secs(j.total_engaged_ms) : "-"}</td>
                     <td className="px-3 py-2">
                       {l.visitor_id ? (
-                        <Link href={`/admin/analytics/visitor/${l.visitor_id}`} className="text-teal-700 underline">view</Link>
+                        <Link href={`/admin/analytics/visitor/${l.visitor_id}`} className="text-cyan-800 underline">view</Link>
                       ) : (
                         <span className="text-slate-300">-</span>
                       )}
@@ -114,11 +114,11 @@ export default async function LeadsPage({
 
       <div className="mt-4 flex items-center justify-between text-sm">
         {pageNum > 0 ? (
-          <Link href={`/admin/analytics/leads?country=${country}&page=${pageNum - 1}`} className="text-teal-700 underline">Newer</Link>
+          <Link href={`/admin/analytics/leads?country=${country}&page=${pageNum - 1}`} className="text-cyan-800 underline">Newer</Link>
         ) : <span />}
         <span className="text-xs text-slate-500">Page {pageNum + 1}</span>
         {hasNext ? (
-          <Link href={`/admin/analytics/leads?country=${country}&page=${pageNum + 1}`} className="text-teal-700 underline">Older</Link>
+          <Link href={`/admin/analytics/leads?country=${country}&page=${pageNum + 1}`} className="text-cyan-800 underline">Older</Link>
         ) : <span />}
       </div>
     </div>

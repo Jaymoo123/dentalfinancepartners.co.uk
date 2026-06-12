@@ -166,7 +166,7 @@ export default function HomePage() {
               </div>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 IR35, limited company tax,{" "}
-                <span className="text-teal-400">and contractor finances.</span>
+                <span className="text-cyan-400">and contractor finances.</span>
               </h1>
             </div>
             <div className="hero-reveal-delay">
@@ -185,7 +185,7 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="mt-8 flex items-center gap-2.5 text-sm text-neutral-400">
-                <ShieldCheck className="h-4 w-4 text-teal-400 flex-shrink-0" aria-hidden />
+                <ShieldCheck className="h-4 w-4 text-cyan-400 flex-shrink-0" aria-hidden />
                 <span className="font-medium">Fixed fees. Plain English. No hard sell.</span>
               </div>
             </div>
@@ -194,13 +194,13 @@ export default function HomePage() {
       </section>
 
       {/* Key Stats bar */}
-      <section className="bg-teal-700 py-8 sm:py-10">
+      <section className="bg-cyan-800 py-8 sm:py-10">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {keyStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-teal-100 uppercase tracking-wider">{stat.label}</div>
+                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-cyan-100 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -234,7 +234,7 @@ export default function HomePage() {
                 key={i}
                 className="relative bg-white border border-neutral-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
               >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-teal-200" aria-hidden />
+                <Quote className="absolute top-4 right-4 h-6 w-6 text-cyan-200" aria-hidden />
                 <blockquote className="text-base sm:text-lg leading-relaxed text-neutral-800 font-medium pr-8">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
@@ -258,7 +258,7 @@ export default function HomePage() {
             {painPoints.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-teal-600 bg-neutral-50 p-6 sm:p-8"
+                className="border border-neutral-200 border-l-4 border-l-cyan-700 bg-neutral-50 p-6 sm:p-8"
               >
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
@@ -286,16 +286,16 @@ export default function HomePage() {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className={`group block border border-neutral-200 bg-white p-6 sm:p-8 transition-all hover:border-teal-600 hover:shadow-md ${focusRing}`}
+                  className={`group block border border-neutral-200 bg-white p-6 sm:p-8 transition-all hover:border-cyan-700 hover:shadow-md ${focusRing}`}
                 >
-                  <div className="flex h-14 w-14 items-center justify-center bg-teal-600 mb-4 group-hover:bg-teal-700 transition-colors">
+                  <div className="flex h-14 w-14 items-center justify-center bg-cyan-700 mb-4 group-hover:bg-cyan-800 transition-colors">
                     <Icon className="h-7 w-7 text-white" strokeWidth={1.75} />
                   </div>
-                  <h3 className="text-lg font-bold text-neutral-900 group-hover:text-teal-700 transition-colors">
+                  <h3 className="text-lg font-bold text-neutral-900 group-hover:text-cyan-800 transition-colors">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
-                  <div className="mt-4 flex items-center text-teal-600 font-semibold text-sm">
+                  <div className="mt-4 flex items-center text-cyan-700 font-semibold text-sm">
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -315,7 +315,7 @@ export default function HomePage() {
       <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="inline-block bg-teal-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-block bg-cyan-700 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               Every contractor type
             </div>
             <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
@@ -330,19 +330,19 @@ export default function HomePage() {
               <Link
                 key={type.slug}
                 href={`/for/${type.slug}`}
-                className="group block bg-white/5 border border-white/10 p-4 sm:p-5 transition-all hover:bg-teal-600/20 hover:border-teal-400/40"
+                className="group block bg-white/5 border border-white/10 p-4 sm:p-5 transition-all hover:bg-cyan-700/20 hover:border-cyan-400/40"
               >
-                <span className="text-sm font-semibold text-white group-hover:text-teal-300 transition-colors">
+                <span className="text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors">
                   {type.title}
                 </span>
-                <ArrowRight className="mt-2 h-4 w-4 text-neutral-500 group-hover:text-teal-400 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-2 h-4 w-4 text-neutral-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
           <div className="mt-5">
             <Link
               href="/for"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
             >
               See all contractor types
               <ArrowRight className="h-4 w-4" />
@@ -357,7 +357,7 @@ export default function HomePage() {
           <div className="section-label mb-4">Why specialist matters</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             A generalist accountant handles your compliance.{" "}
-            <span className="text-teal-700">We handle contractor-specific tax.</span>
+            <span className="text-cyan-800">We handle contractor-specific tax.</span>
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
             The rules around IR35, off-payroll working, PSC dividends and contractor expenses are specific enough that a generalist accountant, however competent, will miss things. We see these issues every week across a large contractor client base, so we know where the risks and opportunities are.
@@ -401,13 +401,13 @@ export default function HomePage() {
           fill
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-teal-900/82" />
+        <div className="absolute inset-0 bg-cyan-900/82" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-2xl">
             <h2 className="text-2xl font-bold text-white sm:text-4xl">
               Your accountant should understand how contracting works
             </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-teal-100">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-cyan-100">
               IR35 rules, PSC dividends, the 24-month travel rule, off-payroll working. We see these issues every week, so we know where the risks and opportunities are.
             </p>
           </div>
@@ -416,7 +416,7 @@ export default function HomePage() {
 
       {/* Contact CTA */}
       <section className="relative overflow-hidden bg-neutral-900">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-900/30 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/30 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
         <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
@@ -435,7 +435,7 @@ export default function HomePage() {
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">
-                    <div className="h-12 w-12 flex items-center justify-center bg-teal-600 text-white font-bold text-xl flex-shrink-0">
+                    <div className="h-12 w-12 flex items-center justify-center bg-cyan-700 text-white font-bold text-xl flex-shrink-0">
                       ✓
                     </div>
                     <div>
@@ -467,10 +467,10 @@ export default function HomePage() {
                   key={faq.question}
                   className="group border border-neutral-200 bg-white"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-teal-700 transition-colors list-none">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-cyan-800 transition-colors list-none">
                     <span>{faq.question}</span>
                     <span
-                      className="flex-shrink-0 text-teal-600 transition-transform group-open:rotate-45"
+                      className="flex-shrink-0 text-cyan-700 transition-transform group-open:rotate-45"
                       aria-hidden
                     >
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
@@ -505,7 +505,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/ir35-status"
-                className="inline-flex items-center gap-2 text-teal-700 hover:text-teal-800 font-semibold text-sm sm:text-base transition-colors"
+                className="inline-flex items-center gap-2 text-cyan-800 hover:text-cyan-900 font-semibold text-sm sm:text-base transition-colors"
               >
                 IR35 status explained
                 <ArrowRight className="h-4 w-4" />

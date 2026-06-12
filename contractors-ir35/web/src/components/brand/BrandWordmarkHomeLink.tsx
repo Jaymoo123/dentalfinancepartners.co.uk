@@ -17,12 +17,12 @@ export function BrandWordmarkHomeLink({ className = "", size = "header" }: Brand
       className={`group inline-flex items-center gap-2 ${focusRing} ${className}`.trim()}
     >
       <span
-        className="inline-block h-7 w-7 rounded-sm bg-teal-600"
+        className="inline-block h-7 w-7 rounded-sm bg-cyan-700"
         aria-hidden
         style={{ minWidth: "1.75rem" }}
       />
       <span
-        className={`font-semibold tracking-tight text-neutral-900 transition-colors group-hover:text-teal-700 ${
+        className={`font-semibold tracking-tight text-neutral-900 transition-colors group-hover:text-cyan-800 ${
           isFooter ? "text-base" : "text-sm sm:text-base"
         }`}
       >

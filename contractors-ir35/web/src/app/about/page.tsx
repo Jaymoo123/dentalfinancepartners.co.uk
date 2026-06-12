@@ -13,7 +13,7 @@ export default function AboutPage() {
     <>
       <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <p className="eyebrow text-teal-400">About us</p>
+          <p className="eyebrow text-cyan-400">About us</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             We only work with contractors.
           </h1>

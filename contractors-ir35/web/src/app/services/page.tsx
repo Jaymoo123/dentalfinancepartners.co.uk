@@ -114,10 +114,10 @@ export default function ServicesPage() {
                 <article
                   key={service.id}
                   id={service.id}
-                  className="scroll-mt-24 bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-teal-600 transition-all"
+                  className="scroll-mt-24 bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-cyan-700 transition-all"
                 >
                   <div className="flex items-start gap-4 mb-5">
-                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center bg-teal-600">
+                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center bg-cyan-700">
                       <Icon className="h-7 w-7 text-white" strokeWidth={1.75} />
                     </div>
                     <div>
@@ -156,7 +156,7 @@ export default function ServicesPage() {
             </Link>
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-teal-600 underline-offset-4 hover:text-neutral-900 transition-colors ${focusRing}`}
+              className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900 transition-colors ${focusRing}`}
             >
               Email us directly
             </a>

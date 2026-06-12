@@ -54,9 +54,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
             className="object-cover scale-105 blur-[2px]"
           />
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-teal-800 to-teal-700" />
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-900 via-cyan-800 to-cyan-700" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-teal-950/95 via-teal-900/70 to-teal-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-cyan-950/95 via-cyan-900/70 to-cyan-900/40" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
           <div className="max-w-4xl">
             <Breadcrumb
@@ -68,7 +68,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 { label: post.title },
               ]}
             />
-            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-teal-300">
+            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-cyan-300">
               {post.category}
             </p>
             <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
@@ -138,7 +138,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 {verified ? (
                   <p className="mt-2 flex items-start gap-2 text-xs text-neutral-500">
                     <svg
-                      className="mt-0.5 h-4 w-4 shrink-0 text-teal-600"
+                      className="mt-0.5 h-4 w-4 shrink-0 text-cyan-700"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -155,23 +155,23 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               {takeaways ? (
                 <section
-                  className="not-prose rounded-lg border-l-4 border-teal-600 bg-teal-50 p-6"
+                  className="not-prose rounded-lg border-l-4 border-cyan-700 bg-cyan-50 p-6"
                   aria-label="Key takeaways"
                 >
-                  <p className="text-xs font-bold uppercase tracking-wider text-teal-700">
+                  <p className="text-xs font-bold uppercase tracking-wider text-cyan-800">
                     Key takeaways
                   </p>
                   <ul className="mt-3 space-y-2">
                     {takeaways.map((t, i) => (
                       <li key={i} className="flex items-start gap-2 text-neutral-700">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-teal-500 shrink-0" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-600 shrink-0" />
                         <span className="text-base leading-relaxed">{t}</span>
                       </li>
                     ))}
                   </ul>
                 </section>
               ) : post.summary ? (
-                <p className="text-lg text-neutral-600 leading-relaxed border-l-4 border-teal-600 bg-teal-50 p-6">
+                <p className="text-lg text-neutral-600 leading-relaxed border-l-4 border-cyan-700 bg-cyan-50 p-6">
                   {post.summary}
                 </p>
               ) : null}
@@ -192,7 +192,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </h2>
                   <dl className="space-y-4">
                     {post.faqs.map((faq, i) => (
-                      <div key={i} className="border-l-4 border-teal-600 bg-neutral-50 p-6">
+                      <div key={i} className="border-l-4 border-cyan-700 bg-neutral-50 p-6">
                         <dt className="text-lg font-bold text-neutral-900">{faq.question}</dt>
                         <dd className="mt-3 text-base text-neutral-600 leading-relaxed">{faq.answer}</dd>
                       </div>
@@ -202,23 +202,23 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               ) : null}
 
               <aside className="mt-16 flex gap-5 items-start bg-neutral-50 border border-neutral-200 p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:flex shrink-0 w-14 h-14 rounded-full bg-teal-100 text-teal-700 items-center justify-center">
+                <div className="hidden sm:flex shrink-0 w-14 h-14 rounded-full bg-cyan-100 text-cyan-800 items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-teal-700">About the author</p>
+                  <p className="text-sm font-bold uppercase tracking-wider text-cyan-800">About the author</p>
                   <p className="mt-1 text-lg font-bold text-neutral-900">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-neutral-600 leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-teal-700 hover:underline">
+                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-cyan-800 hover:underline">
                     Learn more about our team
                   </Link>
                 </div>
               </aside>
 
-              <div className="mt-16 border-2 border-teal-200 bg-gradient-to-br from-teal-50 to-white p-8 sm:p-10 rounded-2xl">
-                <h2 className="text-2xl font-bold text-teal-900 sm:text-3xl">
+              <div className="mt-16 border-2 border-cyan-200 bg-gradient-to-br from-cyan-50 to-white p-8 sm:p-10 rounded-2xl">
+                <h2 className="text-2xl font-bold text-cyan-900 sm:text-3xl">
                   {niche.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">
@@ -239,7 +239,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       <li key={r.slug}>
                         <Link
                           href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="block border-l-4 border-neutral-200 bg-neutral-50 p-6 transition-all hover:border-teal-600 hover:bg-white hover:shadow-md"
+                          className="block border-l-4 border-neutral-200 bg-neutral-50 p-6 transition-all hover:border-cyan-700 hover:bg-white hover:shadow-md"
                         >
                           <h3 className="text-lg font-bold text-neutral-900">{r.title}</h3>
                           <p className="mt-2 text-sm text-neutral-500">{r.summary}</p>
