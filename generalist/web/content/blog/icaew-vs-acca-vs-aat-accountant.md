@@ -1,33 +1,41 @@
 ---
-title: "ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For You"
-slug: "icaew-vs-acca-vs-aat-accountant"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/icaew-vs-acca-vs-aat-accountant"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "ICAEW vs ACCA vs AAT Accountant: Which Qualification"
-metaDescription: "ICAEW vs ACCA vs AAT accountant: which qualification do you need? We explain what each means for your business accounts, tax returns, and compliance needs."
-altText: "Professional accountant in a modern UK office reviewing financial documents on a laptop and tablet."
-image: "/blog/icaew-vs-acca-vs-aat-accountant.jpg"
+title: 'ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For You'
+slug: icaew-vs-acca-vs-aat-accountant
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/icaew-vs-acca-vs-aat-accountant
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: 'ICAEW vs ACCA vs AAT: The Difference for UK Businesses'
+metaDescription: See what separates an ICAEW, ACCA and AAT accountant, who can audit and file your CT600, and which qualification your business actually needs.
+altText: Professional accountant in a modern UK office reviewing financial documents on a laptop and tablet.
+image: /blog/icaew-vs-acca-vs-aat-accountant.jpg
 imageCredit:
-  photographer: "Sami  Abdullah"
-  photographerUrl: "https://www.pexels.com/@onbab"
-  sourceUrl: "https://www.pexels.com/photo/wooden-blocks-showing-new-and-old-concept-33705551/"
-  source: "Pexels"
-h1: "ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For You"
-summary: "Choosing between an ICAEW, ACCA or AAT qualified accountant depends on your business type, complexity and budget. We break down what each qualification means for the work they can do, the standards they follow, and how that affects you."
-schema: ""
+  photographer: Sami  Abdullah
+  photographerUrl: https://www.pexels.com/@onbab
+  sourceUrl: https://www.pexels.com/photo/wooden-blocks-showing-new-and-old-concept-33705551/
+  source: Pexels
+h1: 'ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For You'
+summary: Choosing between an ICAEW, ACCA or AAT qualified accountant depends on your business type, complexity and budget. We break down what each qualification means for the work they can do, the standards they follow, and how that affects you.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For You","description":"See what separates an ICAEW, ACCA and AAT accountant, who can audit and file your CT600, and which qualification your business actually needs.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/icaew-vs-acca-vs-aat-accountant","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/icaew-vs-acca-vs-aat-accountant"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/icaew-vs-acca-vs-aat-accountant.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For You","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/icaew-vs-acca-vs-aat-accountant"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can an AAT qualified accountant file my limited company accounts at Companies House?","acceptedAnswer":{"@type":"Answer","text":"Yes, an AAT qualified accountant can prepare and file statutory accounts for a limited company. They can also file the corporation tax return (CT600) with HMRC. However, they cannot carry out a statutory audit. For most small companies that are exempt from audit, this is not an issue. If your company needs an audit, you must use an ICAEW or ACCA qualified auditor."}},{"@type":"Question","name":"Is an ICAEW qualified accountant better than ACCA for a UK business?","acceptedAnswer":{"@type":"Answer","text":"For most UK businesses, ICAEW and ACCA are broadly equivalent in technical ability. ICAEW has a stronger UK focus and is the
+  primary audit regulator. ACCA has more international recognition. The quality of the individual accountant matters more than the letters after their name. Check their experience with your industry and business size before deciding."}},{"@type":"Question","name":"How much more does an ICAEW accountant cost compared to an AAT accountant?","acceptedAnswer":{"@type":"Answer","text":"Typically, an ICAEW accountant charges 50% to 100% more than an AAT accountant for the same compliance work. For a small limited company, expect £1,000 to £4,000 per year for an ICAEW firm versus £500 to £1,200 for an AAT firm. The premium reflects the higher level of training, regulatory oversight, and ability to handle complex tax planning."}},{"@type":"Question","name":"Do I need a chartered accountant for an R&D tax credit claim?","acceptedAnswer":{"@type":"Answer","text":"Technically no, but practically yes. An AAT accountant can prepare the financial calculations, but the technical report and HMRC compliance work benefit from chartered-level expertise. R&D claims are increasingly scrutinised by HMRC, and errors can lead to penalties. An ICAEW or ACCA qualified accountant with R&D experience will handle the claim more robustly and defend it if HMRC queries it."}}]}]}'
 faqs:
-  - question: "Can an AAT qualified accountant file my limited company accounts at Companies House?"
-    answer: "Yes, an AAT qualified accountant can prepare and file statutory accounts for a limited company. They can also file the corporation tax return (CT600) with HMRC. However, they cannot carry out a statutory audit. For most small companies that are exempt from audit, this is not an issue. If your company needs an audit, you must use an ICAEW or ACCA qualified auditor."
-  - question: "Is an ICAEW qualified accountant better than ACCA for a UK business?"
-    answer: "For most UK businesses, ICAEW and ACCA are broadly equivalent in technical ability. ICAEW has a stronger UK focus and is the primary audit regulator. ACCA has more international recognition. The quality of the individual accountant matters more than the letters after their name. Check their experience with your industry and business size before deciding."
-  - question: "How much more does an ICAEW accountant cost compared to an AAT accountant?"
-    answer: "Typically, an ICAEW accountant charges 50% to 100% more than an AAT accountant for the same compliance work. For a small limited company, expect £1,000 to £4,000 per year for an ICAEW firm versus £500 to £1,200 for an AAT firm. The premium reflects the higher level of training, regulatory oversight, and ability to handle complex tax planning."
-  - question: "Do I need a chartered accountant for an R&D tax credit claim?"
-    answer: "Technically no, but practically yes. An AAT accountant can prepare the financial calculations, but the technical report and HMRC compliance work benefit from chartered-level expertise. R&D claims are increasingly scrutinised by HMRC, and errors can lead to penalties. An ICAEW or ACCA qualified accountant with R&D experience will handle the claim more robustly and defend it if HMRC queries it."
+- question: Can an AAT qualified accountant file my limited company accounts at Companies House?
+  answer: Yes, an AAT qualified accountant can prepare and file statutory accounts for a limited company. They can also file the corporation tax return (CT600) with HMRC. However, they cannot carry out a statutory audit. For most small companies that are exempt from audit, this is not an issue. If your company needs an audit, you must use an ICAEW or ACCA qualified auditor.
+- question: Is an ICAEW qualified accountant better than ACCA for a UK business?
+  answer: For most UK businesses, ICAEW and ACCA are broadly equivalent in technical ability. ICAEW has a stronger UK focus and is the primary audit regulator. ACCA has more international recognition. The quality of the individual accountant matters more than the letters after their name. Check their experience with your industry and business size before deciding.
+- question: How much more does an ICAEW accountant cost compared to an AAT accountant?
+  answer: Typically, an ICAEW accountant charges 50% to 100% more than an AAT accountant for the same compliance work. For a small limited company, expect £1,000 to £4,000 per year for an ICAEW firm versus £500 to £1,200 for an AAT firm. The premium reflects the higher level of training, regulatory oversight, and ability to handle complex tax planning.
+- question: Do I need a chartered accountant for an R&D tax credit claim?
+  answer: Technically no, but practically yes. An AAT accountant can prepare the financial calculations, but the technical report and HMRC compliance work benefit from chartered-level expertise. R&D claims are increasingly scrutinised by HMRC, and errors can lead to penalties. An ICAEW or ACCA qualified accountant with R&D experience will handle the claim more robustly and defend it if HMRC queries it.
+metaTitle_prev: 'ICAEW vs ACCA vs AAT Accountant: Which Qualification'
+metaDescription_prev: 'ICAEW vs ACCA vs AAT accountant: which qualification do you need? We explain what each means for your business accounts, tax returns, and compliance needs.'
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Does an Accountant's Qualification Actually Tell You?</h2>
 
 <p>When you search for an accountant, you will see three letters after their name: ACA, ACCA or AAT. These are not interchangeable. Each qualification represents a different level of training, a different scope of work, and a different regulatory body. Understanding the difference between an ICAEW vs ACCA vs AAT accountant helps you choose the right professional for your business without overpaying for services you do not need or hiring someone who cannot handle your tax position.</p>

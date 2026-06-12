@@ -1,33 +1,41 @@
 ---
-title: "Accounting for Service Charges: A UK Business Owner's Guide for 2025/26"
-slug: "accounting-for-service-charges-uk-guide-2025-26"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "Accounting for Service Charges UK Guide 2025/26 | ICAEW"
-metaDescription: "How to account for service charges correctly as a UK business. Covers VAT, corporation tax, leaseholder rules, and common mistakes. Practical guide"
-altText: "UK accountant reviewing service charge accounts and invoices at a desk in a Manchester office"
-image: "/blog/accounting-for-service-charges-uk-guide-2025-26.jpg"
+title: 'Accounting for Service Charges: A UK Business Owner''s Guide for 2025/26'
+slug: accounting-for-service-charges-uk-guide-2025-26
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: 'Accounting for Service Charges UK: VAT and Tax 2025/26'
+metaDescription: 'Account for service charges correctly: cleaning, security and management fees are standard rated at 20% VAT, and the fund is a creditor, not income.'
+altText: UK accountant reviewing service charge accounts and invoices at a desk in a Manchester office
+image: /blog/accounting-for-service-charges-uk-guide-2025-26.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/"
-  source: "Pexels"
-h1: "Accounting for Service Charges: What UK Business Owners Need to Know in 2025/26"
-summary: "A practical guide for UK business owners on accounting for service charges. Covers VAT treatment, corporation tax implications, leaseholder accounting rules, and common pitfalls to avoid in 2025/26."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/
+  source: Pexels
+h1: 'Accounting for Service Charges: What UK Business Owners Need to Know in 2025/26'
+summary: A practical guide for UK business owners on accounting for service charges. Covers VAT treatment, corporation tax implications, leaseholder accounting rules, and common pitfalls to avoid in 2025/26.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Accounting for Service Charges: A UK Business Owner''s Guide for 2025/26","description":"Account for service charges correctly: cleaning, security and management fees are standard rated at 20% VAT, and the fund is a creditor, not income.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accounting-for-service-charges-uk-guide-2025-26.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"Accounting for Service Charges: A UK Business Owner''s Guide for 2025/26","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to charge VAT on service charges for commercial property?","acceptedAnswer":{"@type":"Answer","text":"Yes, in most cases. Cleaning, maintenance, security, and management fees are standard rated at 20%. Building insurance is exempt. If the service charge is part of a single supply of exempt rent (rare for commercial property), no VAT applies. Check your lease wording carefully."}},{"@type":"Question","name":"How should a managing agent account for service charge funds?","acceptedAnswer":{"@type":"Answer","text":"The service charge fund is not your income. Record it as a creditor (liability) on your balance sheet. Only your management fee is income. Payments made on behalf of leaseholders reduce the liability.
+  Do not net off income and costs in your profit and loss account."}},{"@type":"Question","name":"Can I deduct service charges I pay as a tenant for corporation tax?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the property is used for your trade and the charge is wholly and exclusively for business purposes. Deduct the cost in the period the service relates to, using the accrual basis. If you pay in advance, record a prepayment and deduct it later."}},{"@type":"Question","name":"What happens if I incorrectly treat service charges as exempt from VAT?","acceptedAnswer":{"@type":"Answer","text":"HMRC can assess you for the underpaid VAT plus interest and penalties. If you have been undercharging VAT, you may need to issue corrective invoices to tenants. If you have been over recovering input VAT, you will need to repay it. Speak to an accountant promptly to regularise the position."}}]}]}'
 faqs:
-  - question: "Do I need to charge VAT on service charges for commercial property?"
-    answer: "Yes, in most cases. Cleaning, maintenance, security, and management fees are standard rated at 20%. Building insurance is exempt. If the service charge is part of a single supply of exempt rent (rare for commercial property), no VAT applies. Check your lease wording carefully."
-  - question: "How should a managing agent account for service charge funds?"
-    answer: "The service charge fund is not your income. Record it as a creditor (liability) on your balance sheet. Only your management fee is income. Payments made on behalf of leaseholders reduce the liability. Do not net off income and costs in your profit and loss account."
-  - question: "Can I deduct service charges I pay as a tenant for corporation tax?"
-    answer: "Yes, if the property is used for your trade and the charge is wholly and exclusively for business purposes. Deduct the cost in the period the service relates to, using the accrual basis. If you pay in advance, record a prepayment and deduct it later."
-  - question: "What happens if I incorrectly treat service charges as exempt from VAT?"
-    answer: "HMRC can assess you for the underpaid VAT plus interest and penalties. If you have been undercharging VAT, you may need to issue corrective invoices to tenants. If you have been over recovering input VAT, you will need to repay it. Speak to an accountant promptly to regularise the position."
+- question: Do I need to charge VAT on service charges for commercial property?
+  answer: Yes, in most cases. Cleaning, maintenance, security, and management fees are standard rated at 20%. Building insurance is exempt. If the service charge is part of a single supply of exempt rent (rare for commercial property), no VAT applies. Check your lease wording carefully.
+- question: How should a managing agent account for service charge funds?
+  answer: The service charge fund is not your income. Record it as a creditor (liability) on your balance sheet. Only your management fee is income. Payments made on behalf of leaseholders reduce the liability. Do not net off income and costs in your profit and loss account.
+- question: Can I deduct service charges I pay as a tenant for corporation tax?
+  answer: Yes, if the property is used for your trade and the charge is wholly and exclusively for business purposes. Deduct the cost in the period the service relates to, using the accrual basis. If you pay in advance, record a prepayment and deduct it later.
+- question: What happens if I incorrectly treat service charges as exempt from VAT?
+  answer: HMRC can assess you for the underpaid VAT plus interest and penalties. If you have been undercharging VAT, you may need to issue corrective invoices to tenants. If you have been over recovering input VAT, you will need to repay it. Speak to an accountant promptly to regularise the position.
+metaTitle_prev: Accounting for Service Charges UK Guide 2025/26 | ICAEW
+metaDescription_prev: How to account for service charges correctly as a UK business. Covers VAT, corporation tax, leaseholder rules, and common mistakes. Practical guide
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If your business receives or pays service charges, getting the accounting treatment wrong can cost you thousands in VAT penalties, incorrect corporation tax filings, or disputes with tenants or leaseholders. The rules are not straightforward, and they changed in several important ways in recent years.</p>
 
 <p>This guide covers the core principles of <strong>accounting for service charges</strong> for UK businesses in 2025/26. Whether you are a landlord, a property management company, a tenant running a retail unit, or a business that charges service fees to customers, the same fundamental rules apply.</p>

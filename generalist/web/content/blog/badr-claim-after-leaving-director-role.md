@@ -1,33 +1,41 @@
 ---
-title: "Can a Director Claim BADR After Leaving Their Role 2 Years Ago?"
-slug: "badr-claim-after-leaving-director-role"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-claim-after-leaving-director-role"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "BADR Claim After Leaving Director Role: 2 Year Gap Rules"
-metaDescription: "Can you claim Business Asset Disposal Relief if you sold shares 2 years after resigning as director? The 2 year qualifying period condition explained."
-altText: "UK accountant reviewing BADR claim documents for a former director who sold company shares two years after leaving the role"
-image: "/blog/badr-claim-after-leaving-director-role.jpg"
+title: Can a Director Claim BADR After Leaving Their Role 2 Years Ago?
+slug: badr-claim-after-leaving-director-role
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-claim-after-leaving-director-role
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: 'BADR After Resigning as Director: The Qualifying Period'
+metaDescription: Sold shares after leaving the board? BADR needs you to have been an officer or employee for the 12 months ending on the sale to qualify.
+altText: UK accountant reviewing BADR claim documents for a former director who sold company shares two years after leaving the role
+image: /blog/badr-claim-after-leaving-director-role.jpg
 imageCredit:
-  photographer: "Ron Lach"
-  photographerUrl: "https://www.pexels.com/@ron-lach"
-  sourceUrl: "https://www.pexels.com/photo/woman-in-all-black-outfit-standing-in-front-of-director-s-chair-8089650/"
-  source: "Pexels"
-h1: "Can a Director Claim BADR After Leaving Their Role 2 Years Ago?"
-summary: "If you sold your company shares two years after resigning as director, you may still qualify for BADR. The key condition is the qualifying period: you must have been an officer or employee for 2 years ending with the date of disposal. But there are traps around the personal company test and your actual role during those final years."
-schema: ""
+  photographer: Ron Lach
+  photographerUrl: https://www.pexels.com/@ron-lach
+  sourceUrl: https://www.pexels.com/photo/woman-in-all-black-outfit-standing-in-front-of-director-s-chair-8089650/
+  source: Pexels
+h1: Can a Director Claim BADR After Leaving Their Role 2 Years Ago?
+summary: 'If you sold your company shares two years after resigning as director, you may still qualify for BADR. The key condition is the qualifying period: you must have been an officer or employee for 2 years ending with the date of disposal. But there are traps around the personal company test and your actual role during those final years.'
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Can a Director Claim BADR After Leaving Their Role 2 Years Ago?","description":"Sold shares after leaving the board? BADR needs you to have been an officer or employee for the 12 months ending on the sale to qualify.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-claim-after-leaving-director-role","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-claim-after-leaving-director-role"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/badr-claim-after-leaving-director-role.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"Can a Director Claim BADR After Leaving Their Role 2 Years Ago?","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-claim-after-leaving-director-role"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim BADR if I sold my shares 3 years after resigning as director?","acceptedAnswer":{"@type":"Answer","text":"No. BADR requires you to have been an officer or employee of the company during the 12 months (for disposals from 6 April 2025) or 24 months (for earlier disposals) ending with the date of disposal. If you resigned 3 years before selling, you were not a director or employee during that qualifying period. The claim fails regardless of how many shares you held."}},{"@type":"Question","name":"What if I stayed on as an employee after resigning as director?","acceptedAnswer":{"@type":"Answer","text":"If you remained an employee after resigning as director, and you were still employed at the date of disposal, you might still qualify. You need to have
+  been an employee for the full 12 or 24 months ending with the sale. You must also meet the personal company test (5% shares, 5% votes, 5% profits, 5% assets) throughout that period. A genuine employment relationship is required, not a consultancy arrangement."}},{"@type":"Question","name":"Does the 2 year qualifying period for BADR still apply in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"No. For disposals on or after 6 April 2025, the qualifying period was reduced from 24 months to 12 months. If you disposed of shares before 6 April 2025, the old 24-month rule applies. The reduction makes BADR easier to access for current directors, but does not help if you resigned years ago and were not employed during the 12 months before the sale."}},{"@type":"Question","name":"Can I claim BADR on a share buyback after leaving the company?","acceptedAnswer":{"@type":"Answer","text":"A share buyback can qualify for BADR if you meet the standard conditions. You must have been an officer or employee during the qualifying period ending with the buyback. If you left the company before the buyback and were not employed during that period, BADR is not available. The buyback itself does not create a separate route to relief. You would pay CGT at the main rates on any gain."}}]}]}'
 faqs:
-  - question: "Can I claim BADR if I sold my shares 3 years after resigning as director?"
-    answer: "No. BADR requires you to have been an officer or employee of the company during the 12 months (for disposals from 6 April 2025) or 24 months (for earlier disposals) ending with the date of disposal. If you resigned 3 years before selling, you were not a director or employee during that qualifying period. The claim fails regardless of how many shares you held."
-  - question: "What if I stayed on as an employee after resigning as director?"
-    answer: "If you remained an employee after resigning as director, and you were still employed at the date of disposal, you might still qualify. You need to have been an employee for the full 12 or 24 months ending with the sale. You must also meet the personal company test (5% shares, 5% votes, 5% profits, 5% assets) throughout that period. A genuine employment relationship is required, not a consultancy arrangement."
-  - question: "Does the 2 year qualifying period for BADR still apply in 2025/26?"
-    answer: "No. For disposals on or after 6 April 2025, the qualifying period was reduced from 24 months to 12 months. If you disposed of shares before 6 April 2025, the old 24-month rule applies. The reduction makes BADR easier to access for current directors, but does not help if you resigned years ago and were not employed during the 12 months before the sale."
-  - question: "Can I claim BADR on a share buyback after leaving the company?"
-    answer: "A share buyback can qualify for BADR if you meet the standard conditions. You must have been an officer or employee during the qualifying period ending with the buyback. If you left the company before the buyback and were not employed during that period, BADR is not available. The buyback itself does not create a separate route to relief. You would pay CGT at the main rates on any gain."
+- question: Can I claim BADR if I sold my shares 3 years after resigning as director?
+  answer: No. BADR requires you to have been an officer or employee of the company during the 12 months (for disposals from 6 April 2025) or 24 months (for earlier disposals) ending with the date of disposal. If you resigned 3 years before selling, you were not a director or employee during that qualifying period. The claim fails regardless of how many shares you held.
+- question: What if I stayed on as an employee after resigning as director?
+  answer: If you remained an employee after resigning as director, and you were still employed at the date of disposal, you might still qualify. You need to have been an employee for the full 12 or 24 months ending with the sale. You must also meet the personal company test (5% shares, 5% votes, 5% profits, 5% assets) throughout that period. A genuine employment relationship is required, not a consultancy arrangement.
+- question: Does the 2 year qualifying period for BADR still apply in 2025/26?
+  answer: No. For disposals on or after 6 April 2025, the qualifying period was reduced from 24 months to 12 months. If you disposed of shares before 6 April 2025, the old 24-month rule applies. The reduction makes BADR easier to access for current directors, but does not help if you resigned years ago and were not employed during the 12 months before the sale.
+- question: Can I claim BADR on a share buyback after leaving the company?
+  answer: A share buyback can qualify for BADR if you meet the standard conditions. You must have been an officer or employee during the qualifying period ending with the buyback. If you left the company before the buyback and were not employed during that period, BADR is not available. The buyback itself does not create a separate route to relief. You would pay CGT at the main rates on any gain.
+metaTitle_prev: 'BADR Claim After Leaving Director Role: 2 Year Gap Rules'
+metaDescription_prev: Can you claim Business Asset Disposal Relief if you sold shares 2 years after resigning as director? The 2 year qualifying period condition explained.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you resigned as a director of your company and sold your shares two years later, you are right to ask whether you can still claim Business Asset Disposal Relief (BADR). The short answer is: it depends on whether you met the qualifying conditions during the two years before the sale. Many directors assume leaving the role automatically disqualifies them. That is not always correct, but the rules are tighter than most people realise.</p>
 
 <p>BADR (formerly Entrepreneurs' Relief) gives you a reduced Capital Gains Tax rate on the first £1 million of lifetime gains when you sell shares in your personal company. For disposals from 6 April 2025, the BADR rate is 14%. From 6 April 2026 it rises to 18%. Outside BADR, the main CGT rates are 18% (basic rate) and 24% (higher rate) for non-residential assets. The difference matters. On a £500,000 gain, the tax gap between BADR and the higher main rate is £50,000 from 2025/26.</p>

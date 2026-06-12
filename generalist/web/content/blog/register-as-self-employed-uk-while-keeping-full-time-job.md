@@ -1,33 +1,41 @@
 ---
-title: "How to Register as Self Employed UK While Keeping Your Full Time Job"
-slug: "register-as-self-employed-uk-while-keeping-full-time-job"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/register-as-self-employed-uk-while-keeping-full-time-job"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "How to Register as Self Employed UK With a Full Time Job"
-metaDescription: "Register as self employed UK while working full time. We explain the HMRC notification rules, trading allowance, tax returns, and National Insurance"
-altText: "UK accountant working at a desk in a modern office in Manchester's Northern Quarter reviewing self employment registration documents for a side hustle client"
-image: "/blog/register-as-self-employed-uk-while-keeping-full-time-job.jpg"
+title: How to Register as Self Employed UK While Keeping Your Full Time Job
+slug: register-as-self-employed-uk-while-keeping-full-time-job
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/register-as-self-employed-uk-while-keeping-full-time-job
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: Register as Self Employed UK While in a Full-Time Job
+metaDescription: 'Start a side hustle alongside your job: register with HMRC by 5 October, use the £1,000 trading allowance, and file Self Assessment.'
+altText: UK accountant working at a desk in a modern office in Manchester's Northern Quarter reviewing self employment registration documents for a side hustle client
+image: /blog/register-as-self-employed-uk-while-keeping-full-time-job.jpg
 imageCredit:
-  photographer: "Kampus Production"
-  photographerUrl: "https://www.pexels.com/@kampus"
-  sourceUrl: "https://www.pexels.com/photo/woman-standing-among-cardboard-boxes-and-writing-on-a-piece-of-paper-on-a-desk-with-a-laptop-7857557/"
-  source: "Pexels"
-h1: "How to Register as Self Employed UK While Keeping Your Full Time Job"
-summary: "Starting a side hustle alongside your day job? We explain exactly how to register as self employed UK, when you must notify HMRC, and how the trading allowance affects your tax obligations."
-schema: ""
+  photographer: Kampus Production
+  photographerUrl: https://www.pexels.com/@kampus
+  sourceUrl: https://www.pexels.com/photo/woman-standing-among-cardboard-boxes-and-writing-on-a-piece-of-paper-on-a-desk-with-a-laptop-7857557/
+  source: Pexels
+h1: How to Register as Self Employed UK While Keeping Your Full Time Job
+summary: Starting a side hustle alongside your day job? We explain exactly how to register as self employed UK, when you must notify HMRC, and how the trading allowance affects your tax obligations.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Register as Self Employed UK While Keeping Your Full Time Job","description":"Start a side hustle alongside your job: register with HMRC by 5 October, use the £1,000 trading allowance, and file Self Assessment.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/register-as-self-employed-uk-while-keeping-full-time-job","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/register-as-self-employed-uk-while-keeping-full-time-job"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/register-as-self-employed-uk-while-keeping-full-time-job.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"How to Register as Self Employed UK While Keeping Your Full Time Job","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/register-as-self-employed-uk-while-keeping-full-time-job"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I have to register as self employed if my side hustle earns less than £1,000?","acceptedAnswer":{"@type":"Answer","text":"Not if the income is casual and irregular. The £1,000 trading allowance exempts you from tax and registration on small amounts of casual income. But if you are trading in a regular, organised way (buying stock, invoicing, advertising), you should register even if your profit is under £1,000. The trading allowance is not a free pass to trade without HMRC knowing."}},{"@type":"Question","name":"How do I register as self employed UK while working full time?","acceptedAnswer":{"@type":"Answer","text":"You register online through GOV.UK using the Government
+  Gateway. You need your National Insurance number. You will get a Unique Taxpayer Reference (UTR) and then file a Self Assessment tax return each year. The process is the same whether you work full time or not. Register by 5 October after the tax year you started trading."}},{"@type":"Question","name":"Will my side hustle affect my main job tax code?","acceptedAnswer":{"@type":"Answer","text":"It can. If HMRC adjusts your tax code to collect tax on your side hustle income, your main job PAYE code may change. That is normal. Your total tax bill stays the same. It just gets collected through your salary rather than a direct payment. Check your tax code each year to make sure it is correct."}},{"@type":"Question","name":"What National Insurance do I pay on a side hustle if I already pay Class 1 through my job?","acceptedAnswer":{"@type":"Answer","text":"You pay Class 2 (£3.45 per week for 2025/26) if your profits are over £6,725. You pay Class 4 (9% on profits between £12,570 and £50,270) if your profits exceed £12,570. Your day job Class 1 contributions are separate. Both count towards your NI record, but you cannot exceed the maximum for state pension purposes."}}]}]}'
 faqs:
-  - question: "Do I have to register as self employed if my side hustle earns less than £1,000?"
-    answer: "Not if the income is casual and irregular. The £1,000 trading allowance exempts you from tax and registration on small amounts of casual income. But if you are trading in a regular, organised way (buying stock, invoicing, advertising), you should register even if your profit is under £1,000. The trading allowance is not a free pass to trade without HMRC knowing."
-  - question: "How do I register as self employed UK while working full time?"
-    answer: "You register online through GOV.UK using the Government Gateway. You need your National Insurance number. You will get a Unique Taxpayer Reference (UTR) and then file a Self Assessment tax return each year. The process is the same whether you work full time or not. Register by 5 October after the tax year you started trading."
-  - question: "Will my side hustle affect my main job tax code?"
-    answer: "It can. If HMRC adjusts your tax code to collect tax on your side hustle income, your main job PAYE code may change. That is normal. Your total tax bill stays the same. It just gets collected through your salary rather than a direct payment. Check your tax code each year to make sure it is correct."
-  - question: "What National Insurance do I pay on a side hustle if I already pay Class 1 through my job?"
-    answer: "You pay Class 2 (£3.45 per week for 2025/26) if your profits are over £6,725. You pay Class 4 (9% on profits between £12,570 and £50,270) if your profits exceed £12,570. Your day job Class 1 contributions are separate. Both count towards your NI record, but you cannot exceed the maximum for state pension purposes."
+- question: Do I have to register as self employed if my side hustle earns less than £1,000?
+  answer: Not if the income is casual and irregular. The £1,000 trading allowance exempts you from tax and registration on small amounts of casual income. But if you are trading in a regular, organised way (buying stock, invoicing, advertising), you should register even if your profit is under £1,000. The trading allowance is not a free pass to trade without HMRC knowing.
+- question: How do I register as self employed UK while working full time?
+  answer: You register online through GOV.UK using the Government Gateway. You need your National Insurance number. You will get a Unique Taxpayer Reference (UTR) and then file a Self Assessment tax return each year. The process is the same whether you work full time or not. Register by 5 October after the tax year you started trading.
+- question: Will my side hustle affect my main job tax code?
+  answer: It can. If HMRC adjusts your tax code to collect tax on your side hustle income, your main job PAYE code may change. That is normal. Your total tax bill stays the same. It just gets collected through your salary rather than a direct payment. Check your tax code each year to make sure it is correct.
+- question: What National Insurance do I pay on a side hustle if I already pay Class 1 through my job?
+  answer: You pay Class 2 (£3.45 per week for 2025/26) if your profits are over £6,725. You pay Class 4 (9% on profits between £12,570 and £50,270) if your profits exceed £12,570. Your day job Class 1 contributions are separate. Both count towards your NI record, but you cannot exceed the maximum for state pension purposes.
+metaTitle_prev: How to Register as Self Employed UK With a Full Time Job
+metaDescription_prev: Register as self employed UK while working full time. We explain the HMRC notification rules, trading allowance, tax returns, and National Insurance
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>When Does a Side Hustle Become Self Employment?</h2>
 
 <p>You can have a full time job and run a business on the side. Plenty of people do it. A graphic designer working in a Manchester agency who takes freelance projects in the evenings. A teacher in Bristol who sells handmade furniture on Etsy at weekends. A Leeds-based IT contractor who builds websites for local businesses after hours.</p>

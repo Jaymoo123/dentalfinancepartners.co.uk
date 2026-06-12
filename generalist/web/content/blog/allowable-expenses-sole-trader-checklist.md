@@ -1,33 +1,41 @@
 ---
-title: "What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist"
-slug: "allowable-expenses-sole-trader-checklist"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Allowable Expenses Sole Trader: 2025/26 Deductions Checklist"
-metaDescription: "Full list of allowable expenses for sole traders in 2025/26. Covers home office, vehicle, equipment, travel, and software. Real examples with HMRC rules."
-altText: "Sole trader reviewing receipts and invoices on a laptop at a home office desk in Manchester"
-image: "/blog/allowable-expenses-sole-trader-checklist.jpg"
+title: What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist
+slug: allowable-expenses-sole-trader-checklist
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: 'Allowable Expenses for Sole Traders: 2025/26 Checklist'
+metaDescription: 'Claim every allowable expense as a sole trader: home office, vehicle, travel and software. The simplified home-working flat rate caps at £312 a year.'
+altText: Sole trader reviewing receipts and invoices on a laptop at a home office desk in Manchester
+image: /blog/allowable-expenses-sole-trader-checklist.jpg
 imageCredit:
-  photographer: "Viridiana Rivera"
-  photographerUrl: "https://www.pexels.com/@viridianaor"
-  sourceUrl: "https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/"
-  source: "Pexels"
-h1: "What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist"
-summary: "A practical, no-nonsense checklist of allowable expenses for UK sole traders. Covers what you can claim, what you cannot, and how to handle the tricky ones like home office and vehicle costs."
-schema: ""
+  photographer: Viridiana Rivera
+  photographerUrl: https://www.pexels.com/@viridianaor
+  sourceUrl: https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/
+  source: Pexels
+h1: What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist
+summary: A practical, no-nonsense checklist of allowable expenses for UK sole traders. Covers what you can claim, what you cannot, and how to handle the tricky ones like home office and vehicle costs.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist","description":"Claim every allowable expense as a sole trader: home office, vehicle, travel and software. The simplified home-working flat rate caps at £312 a year.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/allowable-expenses-sole-trader-checklist.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim a mobile phone as a sole trader?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you have a separate phone line used exclusively for business, the full cost is allowable. If you use your personal phone for business calls, you can claim a proportion of the line rental plus the full cost of business calls. A flat 20% of the total bill is a common reasonable estimate HMRC accepts, provided your business use is genuine."}},{"@type":"Question","name":"Can I claim coffee and lunch as a sole trader?","acceptedAnswer":{"@type":"Answer","text":"Only if you are travelling for business and away from your normal place of work. A coffee while working from your home office is not allowable. A sandwich
+  bought during a business trip where you are away overnight or for a significant period is allowable under subsistence rules. HMRC''s benchmark rates are £5 breakfast, £5 lunch, £10 dinner when staying away overnight."}},{"@type":"Question","name":"Can I claim my mortgage payments as a sole trader working from home?","acceptedAnswer":{"@type":"Answer","text":"You can claim the interest element of your mortgage, not the capital repayments. You calculate the business proportion based on floor area or the number of rooms used. If your home office is 10% of your house, you claim 10% of the mortgage interest. You cannot claim the capital repayment part."}},{"@type":"Question","name":"What is the difference between simplified expenses and actual costs for a home office?","acceptedAnswer":{"@type":"Answer","text":"Simplified expenses use HMRC''s flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever"}}]}]}'
 faqs:
-  - question: "Can I claim a mobile phone as a sole trader?"
-    answer: "Yes, if you have a separate phone line used exclusively for business, the full cost is allowable. If you use your personal phone for business calls, you can claim a proportion of the line rental plus the full cost of business calls. A flat 20% of the total bill is a common reasonable estimate HMRC accepts, provided your business use is genuine."
-  - question: "Can I claim coffee and lunch as a sole trader?"
-    answer: "Only if you are travelling for business and away from your normal place of work. A coffee while working from your home office is not allowable. A sandwich bought during a business trip where you are away overnight or for a significant period is allowable under subsistence rules. HMRC's benchmark rates are £5 breakfast, £5 lunch, £10 dinner when staying away overnight."
-  - question: "Can I claim my mortgage payments as a sole trader working from home?"
-    answer: "You can claim the interest element of your mortgage, not the capital repayments. You calculate the business proportion based on floor area or the number of rooms used. If your home office is 10% of your house, you claim 10% of the mortgage interest. You cannot claim the capital repayment part."
-  - question: "What is the difference between simplified expenses and actual costs for a home office?"
-    answer: "Simplified expenses use HMRC's flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever"
+- question: Can I claim a mobile phone as a sole trader?
+  answer: Yes, if you have a separate phone line used exclusively for business, the full cost is allowable. If you use your personal phone for business calls, you can claim a proportion of the line rental plus the full cost of business calls. A flat 20% of the total bill is a common reasonable estimate HMRC accepts, provided your business use is genuine.
+- question: Can I claim coffee and lunch as a sole trader?
+  answer: Only if you are travelling for business and away from your normal place of work. A coffee while working from your home office is not allowable. A sandwich bought during a business trip where you are away overnight or for a significant period is allowable under subsistence rules. HMRC's benchmark rates are £5 breakfast, £5 lunch, £10 dinner when staying away overnight.
+- question: Can I claim my mortgage payments as a sole trader working from home?
+  answer: You can claim the interest element of your mortgage, not the capital repayments. You calculate the business proportion based on floor area or the number of rooms used. If your home office is 10% of your house, you claim 10% of the mortgage interest. You cannot claim the capital repayment part.
+- question: What is the difference between simplified expenses and actual costs for a home office?
+  answer: Simplified expenses use HMRC's flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever
+metaTitle_prev: 'Allowable Expenses Sole Trader: 2025/26 Deductions Checklist'
+metaDescription_prev: Full list of allowable expenses for sole traders in 2025/26. Covers home office, vehicle, equipment, travel, and software. Real examples with HMRC rules.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are a sole trader, the difference between a good tax bill and a bad one often comes down to one thing: what you claim. Claim everything you are entitled to and your taxable profit drops. Miss something and you pay tax you did not need to.</p>
 
 <p>This is your 2025/26 checklist of <strong>allowable expenses sole trader</strong> style. It covers every major category, explains the rules in plain English, and flags the traps that trip people up.</p>

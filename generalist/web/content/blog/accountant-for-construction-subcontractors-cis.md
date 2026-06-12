@@ -1,33 +1,41 @@
 ---
-title: "Why Construction Subcontractors Need a Specialist Accountant for CIS"
-slug: "accountant-for-construction-subcontractors-cis"
-canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Payroll and PAYE"
-metaTitle: "Accountant for Construction Subcontractors | CIS Tax"
-metaDescription: "CIS deductions, VAT flat rate, IR35, and more. Our ICAEW accountants help construction subcontractors keep more of what they earn. Get in touch."
-altText: "Construction subcontractor reviewing CIS deduction statement on a tablet at a building site in Manchester"
-image: "/blog/accountant-for-construction-subcontractors-cis.jpg"
+title: Why Construction Subcontractors Need a Specialist Accountant for CIS
+slug: accountant-for-construction-subcontractors-cis
+canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Payroll and PAYE
+metaTitle: CIS Accountant for Construction Subcontractors in the UK
+metaDescription: A CIS accountant reclaims the 20% or 30% tax deducted from your payments, sorts VAT and IR35, and files on time. Keep more of what you earn.
+altText: Construction subcontractor reviewing CIS deduction statement on a tablet at a building site in Manchester
+image: /blog/accountant-for-construction-subcontractors-cis.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-calculator-5921494/"
-  source: "Pexels"
-h1: "Why Construction Subcontractors Need a Specialist Accountant for CIS"
-summary: "Working as a construction subcontractor means dealing with the Construction Industry Scheme (CIS), VAT, and often IR35. A specialist accountant who knows the sector inside out can save you thousands and keep you compliant. Here is what you need to know."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-calculator-5921494/
+  source: Pexels
+h1: Why Construction Subcontractors Need a Specialist Accountant for CIS
+summary: Working as a construction subcontractor means dealing with the Construction Industry Scheme (CIS), VAT, and often IR35. A specialist accountant who knows the sector inside out can save you thousands and keep you compliant. Here is what you need to know.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Why Construction Subcontractors Need a Specialist Accountant for CIS","description":"A CIS accountant reclaims the 20% or 30% tax deducted from your payments, sorts VAT and IR35, and files on time. Keep more of what you earn.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-for-construction-subcontractors-cis.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"Why Construction Subcontractors Need a Specialist Accountant for CIS","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the CIS scheme for construction subcontractors?","acceptedAnswer":{"@type":"Answer","text":"The Construction Industry Scheme (CIS) requires contractors to deduct tax from payments they make to subcontractors. The standard deduction is 20% for registered subcontractors and 30% for unregistered ones. At the end of the tax year, you file a self assessment return to reconcile these deductions against your actual tax bill. If too much was deducted, you claim a refund."}},{"@type":"Question","name":"Do I need a specialist accountant for CIS, or will a general accountant do?","acceptedAnswer":{"@type":"Answer","text":"A general accountant can file your tax return, but a specialist who knows CIS will catch errors in contractor deductions, optimise your VAT
+  position, and ensure you claim every penny of overpaid CIS tax. Construction has specific rules around VAT flat rate, IR35, and allowable expenses that a generalist may miss. The cost difference is small, but the savings can be significant."}},{"@type":"Question","name":"Can I claim back CIS deductions if I am a limited company?","acceptedAnswer":{"@type":"Answer","text":"Yes. If your limited company has had CIS tax deducted by contractors, you claim that deduction against the company''s corporation tax liability. You do this through the company''s self assessment return (CT600). Any overpayment is refunded by HMRC. The process is the same as for a sole trader, but the return is a corporation tax return, not a personal self assessment."}},{"@type":"Question","name":"What happens if I miss the self assessment deadline for claiming a CIS refund?","acceptedAnswer":{"@type":"Answer","text":"If you file your self assessment return late (after 31 January following the end of the tax year), you lose the right to claim your CIS refund for that year. You also incur an automatic £100 penalty. If you are a limited company, the deadline is 12 months after the end of the accounting period. Do not miss it. A good accountant will file your return well before the deadline to avoid this."}}]}]}'
 faqs:
-  - question: "What is the CIS scheme for construction subcontractors?"
-    answer: "The Construction Industry Scheme (CIS) requires contractors to deduct tax from payments they make to subcontractors. The standard deduction is 20% for registered subcontractors and 30% for unregistered ones. At the end of the tax year, you file a self assessment return to reconcile these deductions against your actual tax bill. If too much was deducted, you claim a refund."
-  - question: "Do I need a specialist accountant for CIS, or will a general accountant do?"
-    answer: "A general accountant can file your tax return, but a specialist who knows CIS will catch errors in contractor deductions, optimise your VAT position, and ensure you claim every penny of overpaid CIS tax. Construction has specific rules around VAT flat rate, IR35, and allowable expenses that a generalist may miss. The cost difference is small, but the savings can be significant."
-  - question: "Can I claim back CIS deductions if I am a limited company?"
-    answer: "Yes. If your limited company has had CIS tax deducted by contractors, you claim that deduction against the company's corporation tax liability. You do this through the company's self assessment return (CT600). Any overpayment is refunded by HMRC. The process is the same as for a sole trader, but the return is a corporation tax return, not a personal self assessment."
-  - question: "What happens if I miss the self assessment deadline for claiming a CIS refund?"
-    answer: "If you file your self assessment return late (after 31 January following the end of the tax year), you lose the right to claim your CIS refund for that year. You also incur an automatic £100 penalty. If you are a limited company, the deadline is 12 months after the end of the accounting period. Do not miss it. A good accountant will file your return well before the deadline to avoid this."
+- question: What is the CIS scheme for construction subcontractors?
+  answer: The Construction Industry Scheme (CIS) requires contractors to deduct tax from payments they make to subcontractors. The standard deduction is 20% for registered subcontractors and 30% for unregistered ones. At the end of the tax year, you file a self assessment return to reconcile these deductions against your actual tax bill. If too much was deducted, you claim a refund.
+- question: Do I need a specialist accountant for CIS, or will a general accountant do?
+  answer: A general accountant can file your tax return, but a specialist who knows CIS will catch errors in contractor deductions, optimise your VAT position, and ensure you claim every penny of overpaid CIS tax. Construction has specific rules around VAT flat rate, IR35, and allowable expenses that a generalist may miss. The cost difference is small, but the savings can be significant.
+- question: Can I claim back CIS deductions if I am a limited company?
+  answer: Yes. If your limited company has had CIS tax deducted by contractors, you claim that deduction against the company's corporation tax liability. You do this through the company's self assessment return (CT600). Any overpayment is refunded by HMRC. The process is the same as for a sole trader, but the return is a corporation tax return, not a personal self assessment.
+- question: What happens if I miss the self assessment deadline for claiming a CIS refund?
+  answer: If you file your self assessment return late (after 31 January following the end of the tax year), you lose the right to claim your CIS refund for that year. You also incur an automatic £100 penalty. If you are a limited company, the deadline is 12 months after the end of the accounting period. Do not miss it. A good accountant will file your return well before the deadline to avoid this.
+metaTitle_prev: Accountant for Construction Subcontractors | CIS Tax
+metaDescription_prev: CIS deductions, VAT flat rate, IR35, and more. Our ICAEW accountants help construction subcontractors keep more of what they earn. Get in touch.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Makes Construction Subcontractors Different for Tax Purposes?</h2>
 
 <p>If you work in construction as a subcontractor, your tax situation is not the same as a standard freelancer or limited company director. The Construction Industry Scheme (CIS) changes how payments are handled, how much tax you pay upfront, and how you reclaim overpaid deductions at year end.</p>

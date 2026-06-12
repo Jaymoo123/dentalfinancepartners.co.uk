@@ -1,33 +1,41 @@
 ---
-title: "How To Switch From Sole Trader To Limited Company in 2025/26"
-slug: "how-to-switch-from-sole-trader-to-limited-company"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "How to Switch From Sole Trader to Limited Company: 2025/26"
-metaDescription: "Step-by-step guide on how to switch from sole trader to limited company. Covers incorporation, tax implications, VAT, and what to do with existing"
-altText: "UK business owner reviewing incorporation documents on a desk with a laptop and calculator"
-image: "/blog/how-to-switch-from-sole-trader-to-limited-company.jpg"
+title: How To Switch From Sole Trader To Limited Company in 2025/26
+slug: how-to-switch-from-sole-trader-to-limited-company
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Sole Trader to Limited Company: How to Switch in 2025/26'
+metaDescription: 'Move from sole trader to limited company cleanly: incorporation, contracts, VAT and tax. One worked case saves over £3,300 a year.'
+altText: UK business owner reviewing incorporation documents on a desk with a laptop and calculator
+image: /blog/how-to-switch-from-sole-trader-to-limited-company.jpg
 imageCredit:
-  photographer: "wal_ 172619"
-  photographerUrl: "https://www.pexels.com/@wal_-172619-2156618639"
-  sourceUrl: "https://www.pexels.com/photo/bright-yellow-light-switch-on-textured-wall-36353546/"
-  source: "Pexels"
-h1: "How To Switch From Sole Trader To Limited Company in 2025/26"
-summary: "Thinking of moving from sole trader to limited company? This guide covers the practical steps: registering your new company, transferring contracts, handling VAT, and the tax implications for 2025/26."
-schema: ""
+  photographer: wal_ 172619
+  photographerUrl: https://www.pexels.com/@wal_-172619-2156618639
+  sourceUrl: https://www.pexels.com/photo/bright-yellow-light-switch-on-textured-wall-36353546/
+  source: Pexels
+h1: How To Switch From Sole Trader To Limited Company in 2025/26
+summary: 'Thinking of moving from sole trader to limited company? This guide covers the practical steps: registering your new company, transferring contracts, handling VAT, and the tax implications for 2025/26.'
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How To Switch From Sole Trader To Limited Company in 2025/26","description":"Move from sole trader to limited company cleanly: incorporation, contracts, VAT and tax. One worked case saves over £3,300 a year.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-to-switch-from-sole-trader-to-limited-company.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"How To Switch From Sole Trader To Limited Company in 2025/26","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I switch from sole trader to limited company partway through the tax year?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can incorporate at any point in the tax year. You will need to file a final self assessment return for the period you traded as a sole trader, and the company will file its own corporation tax return for the period from incorporation to its chosen year-end. It adds a bit of admin but is standard practice."}},{"@type":"Question","name":"Do I need a new bank account when I become a limited company?","acceptedAnswer":{"@type":"Answer","text":"Yes, a limited company must have its own business bank account. You cannot use your personal account for company transactions. Open a business current
+  account before you start invoicing through the company. Most banks offer fee-free introductory periods."}},{"@type":"Question","name":"What happens to my VAT registration when I incorporate?","acceptedAnswer":{"@type":"Answer","text":"Your VAT registration is in your personal name as a sole trader. You can transfer it to the company using form VAT484, or cancel it and register the company separately. If you transfer, you keep your VAT number and avoid a gap. If you cancel, you must file a final VAT return and pay any VAT due."}},{"@type":"Question","name":"Do I have to tell my clients I have incorporated?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your contracts as a sole trader are in your personal name. Your limited company is a separate legal entity. You need each client to agree to novate the contract to the company or issue a new one. Do not start invoicing through the company until the client has confirmed the change in writing."}}]}]}'
 faqs:
-  - question: "Can I switch from sole trader to limited company partway through the tax year?"
-    answer: "Yes, you can incorporate at any point in the tax year. You will need to file a final self assessment return for the period you traded as a sole trader, and the company will file its own corporation tax return for the period from incorporation to its chosen year-end. It adds a bit of admin but is standard practice."
-  - question: "Do I need a new bank account when I become a limited company?"
-    answer: "Yes, a limited company must have its own business bank account. You cannot use your personal account for company transactions. Open a business current account before you start invoicing through the company. Most banks offer fee-free introductory periods."
-  - question: "What happens to my VAT registration when I incorporate?"
-    answer: "Your VAT registration is in your personal name as a sole trader. You can transfer it to the company using form VAT484, or cancel it and register the company separately. If you transfer, you keep your VAT number and avoid a gap. If you cancel, you must file a final VAT return and pay any VAT due."
-  - question: "Do I have to tell my clients I have incorporated?"
-    answer: "Yes. Your contracts as a sole trader are in your personal name. Your limited company is a separate legal entity. You need each client to agree to novate the contract to the company or issue a new one. Do not start invoicing through the company until the client has confirmed the change in writing."
+- question: Can I switch from sole trader to limited company partway through the tax year?
+  answer: Yes, you can incorporate at any point in the tax year. You will need to file a final self assessment return for the period you traded as a sole trader, and the company will file its own corporation tax return for the period from incorporation to its chosen year-end. It adds a bit of admin but is standard practice.
+- question: Do I need a new bank account when I become a limited company?
+  answer: Yes, a limited company must have its own business bank account. You cannot use your personal account for company transactions. Open a business current account before you start invoicing through the company. Most banks offer fee-free introductory periods.
+- question: What happens to my VAT registration when I incorporate?
+  answer: Your VAT registration is in your personal name as a sole trader. You can transfer it to the company using form VAT484, or cancel it and register the company separately. If you transfer, you keep your VAT number and avoid a gap. If you cancel, you must file a final VAT return and pay any VAT due.
+- question: Do I have to tell my clients I have incorporated?
+  answer: Yes. Your contracts as a sole trader are in your personal name. Your limited company is a separate legal entity. You need each client to agree to novate the contract to the company or issue a new one. Do not start invoicing through the company until the client has confirmed the change in writing.
+metaTitle_prev: 'How to Switch From Sole Trader to Limited Company: 2025/26'
+metaDescription_prev: Step-by-step guide on how to switch from sole trader to limited company. Covers incorporation, tax implications, VAT, and what to do with existing
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you're asking how to switch from sole trader to limited company, you're likely past the point of wondering whether it's the right move. Your turnover has grown. You're paying more tax than feels fair. Or a client has told you they'd rather contract with a limited company. Whatever the trigger, the switch itself is straightforward. The decisions around <em>when</em> and <em>how</em> to do it cleanly are where most people trip up.</p>
 
 <p>This guide covers the practical steps for 2025/26. We'll walk through incorporation, what happens to your existing contracts, how to handle VAT, and the tax implications of moving from sole trader to limited company. We are ICAEW qualified accountants and work with UK businesses across every sector. The advice below is general. Your specific numbers may point to a different timing or structure. Always run the figures past a qualified accountant before making the leap.</p>

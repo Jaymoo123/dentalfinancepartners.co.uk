@@ -1,33 +1,41 @@
 ---
-title: "What Are the UK Capital Gains Tax Residential Property Rates for 2026?"
-slug: "uk-capital-gains-tax-residential-property-rates-2026"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "UK Capital Gains Tax Residential Property Rates 2026"
-metaDescription: "CGT residential property rates for 2026/27: 18% basic rate, 24% higher rate. 60-day reporting rule. How the rates apply to your sale. Practical worked"
-altText: "UK property owner reviewing Capital Gains Tax residential property rates for 2026 with a calculator and property documents on a desk in a modern UK home office."
-image: "/blog/uk-capital-gains-tax-residential-property-rates-2026.jpg"
+title: What Are the UK Capital Gains Tax Residential Property Rates for 2026?
+slug: uk-capital-gains-tax-residential-property-rates-2026
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: UK Capital Gains Tax on Residential Property Rates 2026
+metaDescription: Selling a buy-to-let or second home in 2026? CGT is 18% and 24% after the annual exemption, while your main home stays exempt.
+altText: UK property owner reviewing Capital Gains Tax residential property rates for 2026 with a calculator and property documents on a desk in a modern UK home office.
+image: /blog/uk-capital-gains-tax-residential-property-rates-2026.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/gold-coins-on-green-surface-6863191/"
-  source: "Pexels"
-h1: "UK Capital Gains Tax Residential Property Rates 2026: What Property Owners Need to Know"
-summary: "Capital Gains Tax on residential property in the UK stands at 18% for basic rate taxpayers and 24% for higher rate taxpayers for 2025/26 and 2026/27. The 60-day reporting window still applies. This article breaks down the rates, how they interact with your overall income, and what you need to report to HMRC."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/gold-coins-on-green-surface-6863191/
+  source: Pexels
+h1: 'UK Capital Gains Tax Residential Property Rates 2026: What Property Owners Need to Know'
+summary: Capital Gains Tax on residential property in the UK stands at 18% for basic rate taxpayers and 24% for higher rate taxpayers for 2025/26 and 2026/27. The 60-day reporting window still applies. This article breaks down the rates, how they interact with your overall income, and what you need to report to HMRC.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Are the UK Capital Gains Tax Residential Property Rates for 2026?","description":"Selling a buy-to-let or second home in 2026? CGT is 18% and 24% after the annual exemption, while your main home stays exempt.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-capital-gains-tax-residential-property-rates-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"What Are the UK Capital Gains Tax Residential Property Rates for 2026?","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the CGT rate on residential property in 2026/27?","acceptedAnswer":{"@type":"Answer","text":"The CGT rate on residential property in 2026/27 is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates have been in place since 30 October 2024. The annual exempt amount is £3,000."}},{"@type":"Question","name":"Do I have to report a property sale to HMRC within 60 days?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you sell a UK residential property that is not your main home, you must report the gain to HMRC within 60 calendar days of completion and pay the tax due. You file the 60-day CGT property return online using your Government Gateway ID and UTR."}},{"@type":"Question","name":"Does
+  Private Residence Relief apply if I rented my home out before selling?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only for the period you lived there plus the final 9 months of ownership. If you rented the property out after moving out, the gain for the rental period is taxable unless Lettings Relief applies. Lettings Relief is capped at £40,000 per owner and only applies where the property was once your main home."}},{"@type":"Question","name":"Can I transfer a property to my spouse to reduce CGT?","acceptedAnswer":{"@type":"Answer","text":"Yes. Transfers between spouses or civil partners are tax-free and treated as a no gain no loss disposal. If your spouse has unused basic rate band, transferring ownership before sale can mean some or all of the gain is taxed at 18% instead of 24%. The transfer must be genuine and unconditional. Speak to an accountant and solicitor before proceeding."}}]}]}'
 faqs:
-  - question: "What is the CGT rate on residential property in 2026/27?"
-    answer: "The CGT rate on residential property in 2026/27 is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates have been in place since 30 October 2024. The annual exempt amount is £3,000."
-  - question: "Do I have to report a property sale to HMRC within 60 days?"
-    answer: "Yes. If you sell a UK residential property that is not your main home, you must report the gain to HMRC within 60 calendar days of completion and pay the tax due. You file the 60-day CGT property return online using your Government Gateway ID and UTR."
-  - question: "Does Private Residence Relief apply if I rented my home out before selling?"
-    answer: "Yes, but only for the period you lived there plus the final 9 months of ownership. If you rented the property out after moving out, the gain for the rental period is taxable unless Lettings Relief applies. Lettings Relief is capped at £40,000 per owner and only applies where the property was once your main home."
-  - question: "Can I transfer a property to my spouse to reduce CGT?"
-    answer: "Yes. Transfers between spouses or civil partners are tax-free and treated as a no gain no loss disposal. If your spouse has unused basic rate band, transferring ownership before sale can mean some or all of the gain is taxed at 18% instead of 24%. The transfer must be genuine and unconditional. Speak to an accountant and solicitor before proceeding."
+- question: What is the CGT rate on residential property in 2026/27?
+  answer: The CGT rate on residential property in 2026/27 is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates have been in place since 30 October 2024. The annual exempt amount is £3,000.
+- question: Do I have to report a property sale to HMRC within 60 days?
+  answer: Yes. If you sell a UK residential property that is not your main home, you must report the gain to HMRC within 60 calendar days of completion and pay the tax due. You file the 60-day CGT property return online using your Government Gateway ID and UTR.
+- question: Does Private Residence Relief apply if I rented my home out before selling?
+  answer: Yes, but only for the period you lived there plus the final 9 months of ownership. If you rented the property out after moving out, the gain for the rental period is taxable unless Lettings Relief applies. Lettings Relief is capped at £40,000 per owner and only applies where the property was once your main home.
+- question: Can I transfer a property to my spouse to reduce CGT?
+  answer: Yes. Transfers between spouses or civil partners are tax-free and treated as a no gain no loss disposal. If your spouse has unused basic rate band, transferring ownership before sale can mean some or all of the gain is taxed at 18% instead of 24%. The transfer must be genuine and unconditional. Speak to an accountant and solicitor before proceeding.
+metaTitle_prev: UK Capital Gains Tax Residential Property Rates 2026
+metaDescription_prev: 'CGT residential property rates for 2026/27: 18% basic rate, 24% higher rate. 60-day reporting rule. How the rates apply to your sale. Practical worked'
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you sell a residential property in the UK that is not your main home, you will owe Capital Gains Tax (CGT) on the profit. The rates for 2025/26 and 2026/27 are unchanged from the rates introduced on 30 October 2024. For basic rate taxpayers, the rate is 18%. For higher and additional rate taxpayers, the rate is 24%.</p>
 
 <p>These rates apply to disposals of UK residential property. They are different from the rates that apply to other assets like shares, business assets, or commercial property. The residential property rates are also separate from Business Asset Disposal Relief (BADR), which has its own rate of 14% for 2025/26 rising to 18% from April 2026.</p>

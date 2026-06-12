@@ -1,31 +1,39 @@
 ---
-title: "Limited Company vs LLP for a Consultant: Which Structure Works Best?"
-slug: "limited-company-vs-llp-consultant"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Limited Company vs LLP for a Consultant: Tax, Risk"
-metaDescription: "Comparing limited company vs LLP for consultants. Tax rates, NI, liability, and admin. Practical guidance for UK consultants choosing a structure."
-altText: "Two UK consultants reviewing a limited company vs LLP comparison on a tablet in a modern office meeting room"
-image: "/blog/limited-company-vs-llp-consultant.jpg"
+title: 'Limited Company vs LLP for a Consultant: Which Structure Works Best?'
+slug: limited-company-vs-llp-consultant
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Limited Company vs LLP for Consultants: Tax and Liability'
+metaDescription: Compare a limited company and an LLP as a consultant. An LLP pays no corporation tax, while a company pays 19% on profits up to £50,000.
+altText: Two UK consultants reviewing a limited company vs LLP comparison on a tablet in a modern office meeting room
+image: /blog/limited-company-vs-llp-consultant.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/"
-  source: "Pexels"
-h1: "Limited Company vs LLP for a Consultant: Which Structure Works Best?"
-summary: "Choosing between a limited company and a limited liability partnership (LLP) for your consulting business depends on your client base, income level, and whether you work alone or with others. This guide compares tax treatment, personal liability, admin burden, and exit options so you can decide."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/
+  source: Pexels
+h1: 'Limited Company vs LLP for a Consultant: Which Structure Works Best?'
+summary: Choosing between a limited company and a limited liability partnership (LLP) for your consulting business depends on your client base, income level, and whether you work alone or with others. This guide compares tax treatment, personal liability, admin burden, and exit options so you can decide.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Limited Company vs LLP for a Consultant: Which Structure Works Best?","description":"Compare a limited company and an LLP as a consultant. An LLP pays no corporation tax, while a company pays 19% on profits up to £50,000.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/limited-company-vs-llp-consultant.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"Limited Company vs LLP for a Consultant: Which Structure Works Best?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can a single person set up an LLP for their consulting business?","acceptedAnswer":{"@type":"Answer","text":"Yes, a single person can be the sole member of an LLP. However, an LLP with only one member is treated as a sole trader for tax purposes. You lose the partnership tax flexibility and still have the admin of filing LLP accounts at Companies House. For a solo consultant, a limited company is usually more tax-efficient than a single-member LLP."}},{"@type":"Question","name":"Do LLPs have to pay corporation tax?","acceptedAnswer":{"@type":"Answer","text":"No. An LLP is transparent for tax purposes. The LLP itself pays no tax. Instead, each member pays income tax and Class 4 National Insurance on their share of the LLP''s profits through self assessment.
+  This is a key difference from a limited company, which pays corporation tax on its profits before dividends are distributed."}},{"@type":"Question","name":"Is an LLP better than a limited company for IR35 protection?","acceptedAnswer":{"@type":"Answer","text":"The off-payroll working rules (IR35) apply to intermediaries, typically limited companies. An LLP is not an intermediary for IR35 purposes, so the rules do not apply. However, HMRC can still challenge an LLP arrangement under the general anti-abuse rule if they believe it is being used to avoid tax. If you are genuinely self-employed and outside IR35, a limited company is usually fine. If you work through a single"}}]}]}'
 faqs:
-  - question: "Can a single person set up an LLP for their consulting business?"
-    answer: "Yes, a single person can be the sole member of an LLP. However, an LLP with only one member is treated as a sole trader for tax purposes. You lose the partnership tax flexibility and still have the admin of filing LLP accounts at Companies House. For a solo consultant, a limited company is usually more tax-efficient than a single-member LLP."
-  - question: "Do LLPs have to pay corporation tax?"
-    answer: "No. An LLP is transparent for tax purposes. The LLP itself pays no tax. Instead, each member pays income tax and Class 4 National Insurance on their share of the LLP's profits through self assessment. This is a key difference from a limited company, which pays corporation tax on its profits before dividends are distributed."
-  - question: "Is an LLP better than a limited company for IR35 protection?"
-    answer: "The off-payroll working rules (IR35) apply to intermediaries, typically limited companies. An LLP is not an intermediary for IR35 purposes, so the rules do not apply. However, HMRC can still challenge an LLP arrangement under the general anti-abuse rule if they believe it is being used to avoid tax. If you are genuinely self-employed and outside IR35, a limited company is usually fine. If you work through a single"
+- question: Can a single person set up an LLP for their consulting business?
+  answer: Yes, a single person can be the sole member of an LLP. However, an LLP with only one member is treated as a sole trader for tax purposes. You lose the partnership tax flexibility and still have the admin of filing LLP accounts at Companies House. For a solo consultant, a limited company is usually more tax-efficient than a single-member LLP.
+- question: Do LLPs have to pay corporation tax?
+  answer: No. An LLP is transparent for tax purposes. The LLP itself pays no tax. Instead, each member pays income tax and Class 4 National Insurance on their share of the LLP's profits through self assessment. This is a key difference from a limited company, which pays corporation tax on its profits before dividends are distributed.
+- question: Is an LLP better than a limited company for IR35 protection?
+  answer: The off-payroll working rules (IR35) apply to intermediaries, typically limited companies. An LLP is not an intermediary for IR35 purposes, so the rules do not apply. However, HMRC can still challenge an LLP arrangement under the general anti-abuse rule if they believe it is being used to avoid tax. If you are genuinely self-employed and outside IR35, a limited company is usually fine. If you work through a single
+metaTitle_prev: 'Limited Company vs LLP for a Consultant: Tax, Risk'
+metaDescription_prev: Comparing limited company vs LLP for consultants. Tax rates, NI, liability, and admin. Practical guidance for UK consultants choosing a structure.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are a consultant working through your own business, the choice between a limited company and a limited liability partnership (LLP) is one of the first big structural decisions you will make. Get it right and you save tax, reduce admin, and protect your personal assets. Get it wrong and you can end up overpaying HMRC or carrying unnecessary compliance risk.</p>
 
 <p>This guide compares the two structures directly. We will look at tax rates, personal liability, National Insurance, profit extraction, and what happens when you want to exit. The <strong>limited company vs LLP consultant</strong> decision is not one-size-fits-all. But by the end of this article you will know which questions to ask your accountant.</p>

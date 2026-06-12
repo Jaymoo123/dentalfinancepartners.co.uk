@@ -1,33 +1,41 @@
 ---
-title: "Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?"
-slug: "accountant-for-startup-pre-incorporation-expenses"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup-pre-incorporation-expenses"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Accountant for Startup: Pre-Incorporation Expenses Tax"
-metaDescription: "Can a limited company claim tax relief on costs incurred before it existed? Yes, but only certain expenses qualify. We explain the rules, the VAT trap"
-altText: "A UK accountant in a modern office reviewing pre-incorporation expense receipts and company formation documents with a client."
-image: "/blog/accountant-for-startup-pre-incorporation-expenses.jpg"
+title: Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?
+slug: accountant-for-startup-pre-incorporation-expenses
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup-pre-incorporation-expenses
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: Startup Tax Relief on Costs Incurred Before Incorporation
+metaDescription: Your new company can claim relief on costs paid before it was formed, if they would have been deductible. Watch the VAT trap on invoices in your name.
+altText: A UK accountant in a modern office reviewing pre-incorporation expense receipts and company formation documents with a client.
+image: /blog/accountant-for-startup-pre-incorporation-expenses.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/gold-round-coins-on-black-textile-6863285/"
-  source: "Pexels"
-h1: "Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?"
-summary: "If you spent money setting up your business before the company was legally formed, those costs are not automatically lost. The rules around pre-incorporation expenses are specific, and getting them wrong means losing tax relief or triggering an unexpected VAT bill. We explain which costs qualify, which do not, and how to handle them correctly."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/gold-round-coins-on-black-textile-6863285/
+  source: Pexels
+h1: Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?
+summary: If you spent money setting up your business before the company was legally formed, those costs are not automatically lost. The rules around pre-incorporation expenses are specific, and getting them wrong means losing tax relief or triggering an unexpected VAT bill. We explain which costs qualify, which do not, and how to handle them correctly.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?","description":"Your new company can claim relief on costs paid before it was formed, if they would have been deductible. Watch the VAT trap on invoices in your name.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup-pre-incorporation-expenses","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup-pre-incorporation-expenses"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-for-startup-pre-incorporation-expenses.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup-pre-incorporation-expenses"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I reclaim VAT on purchases made before my company was registered?","acceptedAnswer":{"@type":"Answer","text":"Generally no. HMRC requires the VAT invoice to be addressed to the company. If the invoice is in your personal name and dated before incorporation, the company cannot reclaim the input tax. The exception is if you acted as agent for the company and can evidence that. In practice, ask the supplier to issue a credit note and re-invoice the company after incorporation."}},{"@type":"Question","name":"Do I need to transfer assets like laptops to the company?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the company will use them. You can either sell the asset to the company at market value
+  (triggering a potential capital gain) or use the S61 CTA 2009 route to claim capital allowances on the original cost. The S61 route is simpler for most startup equipment."}},{"@type":"Question","name":"What happens if I already claimed the expenses as a sole trader?","acceptedAnswer":{"@type":"Answer","text":"You cannot claim the same expense twice. If you deducted it in your sole trader self assessment, the company cannot also claim it. You need to agree a clear transfer date with your accountant so that pre-incorporation costs are allocated to the correct entity."}},{"@type":"Question","name":"Can pre-incorporation costs qualify for R&D tax credits?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the costs relate to qualifying R&D activities that the company later carries on and they were incurred within seven years before incorporation. The claim is more complex and you should seek specialist R&D advice. The costs can also count towards the 30% R&D intensity threshold for the enhanced R&D Intensive Scheme."}}]}]}'
 faqs:
-  - question: "Can I reclaim VAT on purchases made before my company was registered?"
-    answer: "Generally no. HMRC requires the VAT invoice to be addressed to the company. If the invoice is in your personal name and dated before incorporation, the company cannot reclaim the input tax. The exception is if you acted as agent for the company and can evidence that. In practice, ask the supplier to issue a credit note and re-invoice the company after incorporation."
-  - question: "Do I need to transfer assets like laptops to the company?"
-    answer: "Yes, if the company will use them. You can either sell the asset to the company at market value (triggering a potential capital gain) or use the S61 CTA 2009 route to claim capital allowances on the original cost. The S61 route is simpler for most startup equipment."
-  - question: "What happens if I already claimed the expenses as a sole trader?"
-    answer: "You cannot claim the same expense twice. If you deducted it in your sole trader self assessment, the company cannot also claim it. You need to agree a clear transfer date with your accountant so that pre-incorporation costs are allocated to the correct entity."
-  - question: "Can pre-incorporation costs qualify for R&D tax credits?"
-    answer: "Yes, if the costs relate to qualifying R&D activities that the company later carries on and they were incurred within seven years before incorporation. The claim is more complex and you should seek specialist R&D advice. The costs can also count towards the 30% R&D intensity threshold for the enhanced R&D Intensive Scheme."
+- question: Can I reclaim VAT on purchases made before my company was registered?
+  answer: Generally no. HMRC requires the VAT invoice to be addressed to the company. If the invoice is in your personal name and dated before incorporation, the company cannot reclaim the input tax. The exception is if you acted as agent for the company and can evidence that. In practice, ask the supplier to issue a credit note and re-invoice the company after incorporation.
+- question: Do I need to transfer assets like laptops to the company?
+  answer: Yes, if the company will use them. You can either sell the asset to the company at market value (triggering a potential capital gain) or use the S61 CTA 2009 route to claim capital allowances on the original cost. The S61 route is simpler for most startup equipment.
+- question: What happens if I already claimed the expenses as a sole trader?
+  answer: You cannot claim the same expense twice. If you deducted it in your sole trader self assessment, the company cannot also claim it. You need to agree a clear transfer date with your accountant so that pre-incorporation costs are allocated to the correct entity.
+- question: Can pre-incorporation costs qualify for R&D tax credits?
+  answer: Yes, if the costs relate to qualifying R&D activities that the company later carries on and they were incurred within seven years before incorporation. The claim is more complex and you should seek specialist R&D advice. The costs can also count towards the 30% R&D intensity threshold for the enhanced R&D Intensive Scheme.
+metaTitle_prev: 'Accountant for Startup: Pre-Incorporation Expenses Tax'
+metaDescription_prev: Can a limited company claim tax relief on costs incurred before it existed? Yes, but only certain expenses qualify. We explain the rules, the VAT trap
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>You registered the company on 10 June. But you bought the laptop on 20 May. You paid for the domain name on 1 May. You took a train to meet a potential supplier on 15 April, and you bought the URL on 28 March. None of these costs were incurred by the company because the company did not exist yet.</p>
 
 <p>That does not mean the money is lost. The tax rules allow a new company to claim relief on certain costs incurred before incorporation, but the treatment depends on what was spent, who paid, and whether VAT was charged. Get it wrong and you overpay corporation tax, miss a VAT reclaim, or trigger an unnecessary tax charge on the director.</p>

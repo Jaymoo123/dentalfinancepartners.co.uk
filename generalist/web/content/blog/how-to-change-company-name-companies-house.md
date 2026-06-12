@@ -1,33 +1,41 @@
 ---
-title: "How to Change a Company Name with Companies House After Incorporation"
-slug: "how-to-change-company-name-companies-house"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-change-company-name-companies-house"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Change Company Name Companies House: Step by Step Process"
-metaDescription: "Changing your company name with Companies House is straightforward. We explain the process, fees, forms, and timelines for limited companies."
-altText: "UK limited company director reviewing a Companies House name change confirmation letter in a Manchester office"
-image: "/blog/how-to-change-company-name-companies-house.jpg"
+title: How to Change a Company Name with Companies House After Incorporation
+slug: how-to-change-company-name-companies-house
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-change-company-name-companies-house
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Change Company Name at Companies House: Steps and Fee'
+metaDescription: Change your registered company name in five steps. Pass the resolution, file form NM01 online for £8, and it is usually done within 24 hours.
+altText: UK limited company director reviewing a Companies House name change confirmation letter in a Manchester office
+image: /blog/how-to-change-company-name-companies-house.jpg
 imageCredit:
-  photographer: "Oluwaseun Duncan"
-  photographerUrl: "https://www.pexels.com/@duncanoluwaseun"
-  sourceUrl: "https://www.pexels.com/photo/administration-corporate-services-reinsurance-legal-labeled-board-189476/"
-  source: "Pexels"
-h1: "How to Change a Company Name with Companies House After Incorporation"
-summary: "A practical guide to changing your limited company's registered name with Companies House. Covers the required forms, fees, shareholder approval, and what happens after approval."
-schema: ""
+  photographer: Oluwaseun Duncan
+  photographerUrl: https://www.pexels.com/@duncanoluwaseun
+  sourceUrl: https://www.pexels.com/photo/administration-corporate-services-reinsurance-legal-labeled-board-189476/
+  source: Pexels
+h1: How to Change a Company Name with Companies House After Incorporation
+summary: A practical guide to changing your limited company's registered name with Companies House. Covers the required forms, fees, shareholder approval, and what happens after approval.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Change a Company Name with Companies House After Incorporation","description":"Change your registered company name in five steps. Pass the resolution, file form NM01 online for £8, and it is usually done within 24 hours.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-change-company-name-companies-house","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-change-company-name-companies-house"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-to-change-company-name-companies-house.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"How to Change a Company Name with Companies House After Incorporation","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-change-company-name-companies-house"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does it cost to change a company name with Companies House?","acceptedAnswer":{"@type":"Answer","text":"The fee is £8 for online filing and £20 for paper filing. The online route is faster and cheaper. You also need to factor in any costs for updating stationery, bank accounts, and domain names."}},{"@type":"Question","name":"How long does a company name change take?","acceptedAnswer":{"@type":"Answer","text":"Online filings are usually processed within 24 hours. Paper filings take 5 to 10 working days. Once approved, you receive a certificate of incorporation on change of name. The new name is effective from the date on that certificate."}},{"@type":"Question","name":"Do I need shareholder approval to change the company
+  name?","acceptedAnswer":{"@type":"Answer","text":"In most cases, yes. An ordinary resolution requires a simple majority of shareholder votes. If your articles of association give the directors the power to change the name without a shareholder vote, you can skip this step. Most small companies using Model Articles need the resolution."}},{"@type":"Question","name":"Does changing my company name affect my tax or bank accounts?","acceptedAnswer":{"@type":"Answer","text":"No. Your company number, corporation tax reference, VAT number, and PAYE reference all stay the same. HMRC is notified automatically. You will need to update your bank account and accounting software manually. Your bank will want to see the certificate of incorporation on change of name."}}]}]}'
 faqs:
-  - question: "How much does it cost to change a company name with Companies House?"
-    answer: "The fee is £8 for online filing and £20 for paper filing. The online route is faster and cheaper. You also need to factor in any costs for updating stationery, bank accounts, and domain names."
-  - question: "How long does a company name change take?"
-    answer: "Online filings are usually processed within 24 hours. Paper filings take 5 to 10 working days. Once approved, you receive a certificate of incorporation on change of name. The new name is effective from the date on that certificate."
-  - question: "Do I need shareholder approval to change the company name?"
-    answer: "In most cases, yes. An ordinary resolution requires a simple majority of shareholder votes. If your articles of association give the directors the power to change the name without a shareholder vote, you can skip this step. Most small companies using Model Articles need the resolution."
-  - question: "Does changing my company name affect my tax or bank accounts?"
-    answer: "No. Your company number, corporation tax reference, VAT number, and PAYE reference all stay the same. HMRC is notified automatically. You will need to update your bank account and accounting software manually. Your bank will want to see the certificate of incorporation on change of name."
+- question: How much does it cost to change a company name with Companies House?
+  answer: The fee is £8 for online filing and £20 for paper filing. The online route is faster and cheaper. You also need to factor in any costs for updating stationery, bank accounts, and domain names.
+- question: How long does a company name change take?
+  answer: Online filings are usually processed within 24 hours. Paper filings take 5 to 10 working days. Once approved, you receive a certificate of incorporation on change of name. The new name is effective from the date on that certificate.
+- question: Do I need shareholder approval to change the company name?
+  answer: In most cases, yes. An ordinary resolution requires a simple majority of shareholder votes. If your articles of association give the directors the power to change the name without a shareholder vote, you can skip this step. Most small companies using Model Articles need the resolution.
+- question: Does changing my company name affect my tax or bank accounts?
+  answer: No. Your company number, corporation tax reference, VAT number, and PAYE reference all stay the same. HMRC is notified automatically. You will need to update your bank account and accounting software manually. Your bank will want to see the certificate of incorporation on change of name.
+metaTitle_prev: 'Change Company Name Companies House: Step by Step Process'
+metaDescription_prev: Changing your company name with Companies House is straightforward. We explain the process, fees, forms, and timelines for limited companies.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>You incorporated your company as ABC Consulting Ltd. But six months in, your work has shifted from consultancy to software development. ABC Consulting Ltd no longer describes what you do. Or maybe you have just rebranded and need the registered name to match. Whatever the reason, changing your company name with Companies House is a straightforward administrative process. Here is exactly how to do it.</p>
 
 <h2>When You Can Change a Company Name</h2>

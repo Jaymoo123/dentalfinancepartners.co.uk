@@ -1,31 +1,39 @@
 ---
-title: "How Do the New HMRC CGT Reporting Requirements for 2026 Affect Your Property Sale?"
-slug: "hmrc-cgt-reporting-requirements-2026"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/hmrc-cgt-reporting-requirements-2026"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "HMRC CGT Reporting Requirements 2026: Property Sale Guide"
-metaDescription: "New HMRC CGT reporting rules from 6 April 2026 require UK property gains to be reported within 30 days. Our ICAEW accountants explain the changes"
-altText: "ICAEW qualified accountant reviewing HMRC CGT reporting requirements 2026 documents in a Manchester office"
-image: "/blog/hmrc-cgt-reporting-requirements-2026.jpg"
+title: How Do the New HMRC CGT Reporting Requirements for 2026 Affect Your Property Sale?
+slug: hmrc-cgt-reporting-requirements-2026
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/hmrc-cgt-reporting-requirements-2026
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: 'HMRC CGT Reporting Requirements 2026: The 30-Day Rule'
+metaDescription: From 6 April 2026 every UK property sale, including commercial and land, must be reported and paid within 30 days of completion.
+altText: ICAEW qualified accountant reviewing HMRC CGT reporting requirements 2026 documents in a Manchester office
+image: /blog/hmrc-cgt-reporting-requirements-2026.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/wooden-number-blocks-displaying-year-2026-32417524/"
-  source: "Pexels"
-h1: "HMRC CGT Reporting Requirements 2026: What UK Property Sellers Need to Know"
-summary: "From 6 April 2026, HMRC extends the 60-day CGT reporting window for UK residential property to cover all property disposals. Commercial property, land and second homes all fall under the new 30-day rule. Our ICAEW-qualified team explains exactly who is affected and what you must do."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/wooden-number-blocks-displaying-year-2026-32417524/
+  source: Pexels
+h1: 'HMRC CGT Reporting Requirements 2026: What UK Property Sellers Need to Know'
+summary: From 6 April 2026, HMRC extends the 60-day CGT reporting window for UK residential property to cover all property disposals. Commercial property, land and second homes all fall under the new 30-day rule. Our ICAEW-qualified team explains exactly who is affected and what you must do.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do the New HMRC CGT Reporting Requirements for 2026 Affect Your Property Sale?","description":"From 6 April 2026 every UK property sale, including commercial and land, must be reported and paid within 30 days of completion.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/hmrc-cgt-reporting-requirements-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/hmrc-cgt-reporting-requirements-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/hmrc-cgt-reporting-requirements-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"How Do the New HMRC CGT Reporting Requirements for 2026 Affect Your Property Sale?","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/hmrc-cgt-reporting-requirements-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the new CGT reporting deadline for property sales in 2026?","acceptedAnswer":{"@type":"Answer","text":"From 6 April 2026, all UK property disposals by individuals must be reported to HMRC within 30 days of completion. This replaces the old 60-day rule for residential property and extends reporting to commercial property and land for the first time. Payment of the estimated tax is due at the same time."}},{"@type":"Question","name":"Do I need to report a property sale if I make no gain?","acceptedAnswer":{"@type":"Answer","text":"If you make a loss, you do not need to report within 30 days. You can claim the loss on your self assessment return. If the gain is fully covered by the £3,000 annual exempt amount, you may not need to report if the
+  disposal proceeds are under £50,000. Check the exact rules with your accountant."}},{"@type":"Question","name":"What happens if I miss the 30-day CGT reporting deadline?","acceptedAnswer":{"@type":"Answer","text":"HMRC charges a £100 penalty for reports up to 6 months late. From 6 to 12 months late, the penalty is the higher of £300 or 5% of the tax due. Over 12 months, additional penalties apply. HMRC also charges interest on late payments from day 31 after completion at the Bank of England base rate plus"}}]}]}'
 faqs:
-  - question: "What is the new CGT reporting deadline for property sales in 2026?"
-    answer: "From 6 April 2026, all UK property disposals by individuals must be reported to HMRC within 30 days of completion. This replaces the old 60-day rule for residential property and extends reporting to commercial property and land for the first time. Payment of the estimated tax is due at the same time."
-  - question: "Do I need to report a property sale if I make no gain?"
-    answer: "If you make a loss, you do not need to report within 30 days. You can claim the loss on your self assessment return. If the gain is fully covered by the £3,000 annual exempt amount, you may not need to report if the disposal proceeds are under £50,000. Check the exact rules with your accountant."
-  - question: "What happens if I miss the 30-day CGT reporting deadline?"
-    answer: "HMRC charges a £100 penalty for reports up to 6 months late. From 6 to 12 months late, the penalty is the higher of £300 or 5% of the tax due. Over 12 months, additional penalties apply. HMRC also charges interest on late payments from day 31 after completion at the Bank of England base rate plus"
+- question: What is the new CGT reporting deadline for property sales in 2026?
+  answer: From 6 April 2026, all UK property disposals by individuals must be reported to HMRC within 30 days of completion. This replaces the old 60-day rule for residential property and extends reporting to commercial property and land for the first time. Payment of the estimated tax is due at the same time.
+- question: Do I need to report a property sale if I make no gain?
+  answer: If you make a loss, you do not need to report within 30 days. You can claim the loss on your self assessment return. If the gain is fully covered by the £3,000 annual exempt amount, you may not need to report if the disposal proceeds are under £50,000. Check the exact rules with your accountant.
+- question: What happens if I miss the 30-day CGT reporting deadline?
+  answer: HMRC charges a £100 penalty for reports up to 6 months late. From 6 to 12 months late, the penalty is the higher of £300 or 5% of the tax due. Over 12 months, additional penalties apply. HMRC also charges interest on late payments from day 31 after completion at the Bank of England base rate plus
+metaTitle_prev: 'HMRC CGT Reporting Requirements 2026: Property Sale Guide'
+metaDescription_prev: New HMRC CGT reporting rules from 6 April 2026 require UK property gains to be reported within 30 days. Our ICAEW accountants explain the changes
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you sell a property in the UK after 6 April 2026, you will have 30 days to report the gain to HMRC and pay the Capital Gains Tax due. Not 60 days. Not at the end of the tax year. Thirty days from the date of completion.</p>
 
 <p>This is the single biggest change to the <strong>hmrc cgt reporting requirements 2026</strong> that affects property sellers. The previous 60-day window for UK residential property gains is being replaced by a universal 30-day rule that covers all property disposals: residential, commercial, land, and second homes.</p>

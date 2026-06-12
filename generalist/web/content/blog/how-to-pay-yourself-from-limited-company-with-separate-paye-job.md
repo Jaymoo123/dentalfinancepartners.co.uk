@@ -1,27 +1,34 @@
 ---
-title: "How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job"
-slug: "how-to-pay-yourself-from-limited-company-with-separate-paye-job"
-canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Director Pay and Dividends"
-metaTitle: "How to Pay Yourself From a Limited Company With a PAYE Job"
-metaDescription: "Running a limited company alongside a PAYE job? Here is how to pay yourself efficiently, avoid NI traps, and keep your tax code correct. 2025/26 rates."
-altText: "UK business owner reviewing director pay strategy on laptop with calculator and payslip, London office setting"
-image: "/blog/how-to-pay-yourself-from-limited-company-with-separate-paye-job.jpg"
+title: How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job
+slug: how-to-pay-yourself-from-limited-company-with-separate-paye-job
+canonical: https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Director Pay and Dividends
+metaTitle: Pay Yourself From a Limited Company With a PAYE Job
+metaDescription: Got a PAYE job too? The £12,570 salary trick backfires when your allowance is used up, so dividends are usually the better route. 2025/26 numbers.
+altText: UK business owner reviewing director pay strategy on laptop with calculator and payslip, London office setting
+image: /blog/how-to-pay-yourself-from-limited-company-with-separate-paye-job.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-reminder-on-laptop-6863339/"
-  source: "Pexels"
-h1: "How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job"
-summary: "If you run a limited company alongside a full-time PAYE job, the standard director salary strategy can backfire. Your personal allowance may already be used up by your employment, and employer NI on a second salary costs you twice. This guide walks through the actual numbers for 2025/26, covering dividend timing, payroll setup, and tax code adjustments that most generic advice misses."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-reminder-on-laptop-6863339/
+  source: Pexels
+h1: How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job
+summary: If you run a limited company alongside a full-time PAYE job, the standard director salary strategy can backfire. Your personal allowance may already be used up by your employment, and employer NI on a second salary costs you twice. This guide walks through the actual numbers for 2025/26, covering dividend timing, payroll setup, and tax code adjustments that most generic advice misses.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job","description":"Got a PAYE job too? The £12,570 salary trick backfires when your allowance is used up, so dividends are usually the better route. 2025/26 numbers.","url":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
+  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-to-pay-yourself-from-limited-company-with-separate-paye-job.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Director Pay and Dividends","item":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends"},{"@type":"ListItem","position":3,"name":"How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job","item":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I take dividends from my limited company if I already have a full-time job?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus"}}]}]}'
 faqs:
-  - question: "Can I take dividends from my limited company if I already have a full-time job?"
-    answer: "Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus"
+- question: Can I take dividends from my limited company if I already have a full-time job?
+  answer: Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus
+metaTitle_prev: How to Pay Yourself From a Limited Company With a PAYE Job
+metaDescription_prev: Running a limited company alongside a PAYE job? Here is how to pay yourself efficiently, avoid NI traps, and keep your tax code correct. 2025/26 rates.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Most articles about how to pay yourself from a limited company assume you are a full-time director with no other income. That advice is fine if you are a contractor working through your own Ltd full time. But it is actively wrong if you have a separate PAYE job.</p>
 
 <p>If you already earn a salary from an employer, your personal allowance is likely already used up. Your tax code is set against that employment. And the standard director salary strategy (pay yourself £12,570 a year) will trigger unnecessary employer National Insurance and a tax code mess that HMRC takes months to sort out.</p>

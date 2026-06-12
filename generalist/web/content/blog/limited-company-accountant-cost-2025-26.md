@@ -1,33 +1,41 @@
 ---
-title: "How Much Does a Limited Company Accountant Cost in 2025/26?"
-slug: "limited-company-accountant-cost-2025-26"
-canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-cost-2025-26"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Limited Company Tax"
-metaTitle: "Limited Company Accountant Cost 2025/26: Full Pricing Guide"
-metaDescription: "Limited company accountant costs from £60 to £300+ per month in 2025/26. What you get for your money, what affects the price, and how to choose the right"
-altText: "UK accountant reviewing limited company financial documents at a desk in a modern Manchester office"
-image: "/blog/limited-company-accountant-cost-2025-26.jpg"
+title: How Much Does a Limited Company Accountant Cost in 2025/26?
+slug: limited-company-accountant-cost-2025-26
+canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-cost-2025-26
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Limited Company Tax
+metaTitle: 'Limited Company Accountant Cost 2025/26: Fees Explained'
+metaDescription: Limited company accountant fees run from £60 to £300 a month in 2025/26. See what each price tier includes and how to choose the right package.
+altText: UK accountant reviewing limited company financial documents at a desk in a modern Manchester office
+image: /blog/limited-company-accountant-cost-2025-26.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/"
-  source: "Pexels"
-h1: "How Much Does a Limited Company Accountant Cost in 2025/26?"
-summary: "A practical breakdown of what you can expect to pay for a limited company accountant in 2025/26, from basic compliance to full-service packages, and what drives the differences in pricing."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/
+  source: Pexels
+h1: How Much Does a Limited Company Accountant Cost in 2025/26?
+summary: A practical breakdown of what you can expect to pay for a limited company accountant in 2025/26, from basic compliance to full-service packages, and what drives the differences in pricing.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Much Does a Limited Company Accountant Cost in 2025/26?","description":"Limited company accountant fees run from £60 to £300 a month in 2025/26. See what each price tier includes and how to choose the right package.","url":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-cost-2025-26","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-cost-2025-26"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/limited-company-accountant-cost-2025-26.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Limited Company Tax","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax"},{"@type":"ListItem","position":3,"name":"How Much Does a Limited Company Accountant Cost in 2025/26?","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-cost-2025-26"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the average cost of a limited company accountant in the UK?","acceptedAnswer":{"@type":"Answer","text":"The average cost ranges from £60 to £200 per month depending on your turnover, transaction volume, and what services you need. Basic compliance for a simple contractor Ltd starts around £500 per year. A full-service package for a growing business with employees and VAT typically costs £1,500 to £3,000 per year."}},{"@type":"Question","name":"Can I get a limited company accountant for under £50 per month?","acceptedAnswer":{"@type":"Answer","text":"You can find accountants offering packages at £30 to £50 per month, but read the scope carefully. At that price, you are typically getting annual accounts and corporation tax filing only. Bookkeeping, payroll, VAT returns,
+  and tax planning are usually extra. For very simple contractor companies with low turnover, £60 to £80 per month is more realistic for a decent service."}},{"@type":"Question","name":"Does a limited company accountant cost more if I have employees?","acceptedAnswer":{"@type":"Answer","text":"Yes. Payroll adds time for RTI submissions, pension enrolment, and year-end P60s. Most accountants include payroll for one or two directors in their base fee. Additional employees typically add £5 to £15 per person per month. If you have five or more staff, expect the payroll element to push your monthly fee up by £50 to £100."}},{"@type":"Question","name":"What is included in a standard limited company accountancy package?","acceptedAnswer":{"@type":"Answer","text":"A standard monthly package at £100 to £200 per month typically includes bookkeeping (monthly or quarterly), payroll for up to two directors, VAT returns (if registered), annual accounts, corporation tax filing, and confirmation statement submission. It also includes ongoing tax planning advice. Self assessment returns for directors are usually charged separately at £150 to £300 per return."}}]}]}'
 faqs:
-  - question: "What is the average cost of a limited company accountant in the UK?"
-    answer: "The average cost ranges from £60 to £200 per month depending on your turnover, transaction volume, and what services you need. Basic compliance for a simple contractor Ltd starts around £500 per year. A full-service package for a growing business with employees and VAT typically costs £1,500 to £3,000 per year."
-  - question: "Can I get a limited company accountant for under £50 per month?"
-    answer: "You can find accountants offering packages at £30 to £50 per month, but read the scope carefully. At that price, you are typically getting annual accounts and corporation tax filing only. Bookkeeping, payroll, VAT returns, and tax planning are usually extra. For very simple contractor companies with low turnover, £60 to £80 per month is more realistic for a decent service."
-  - question: "Does a limited company accountant cost more if I have employees?"
-    answer: "Yes. Payroll adds time for RTI submissions, pension enrolment, and year-end P60s. Most accountants include payroll for one or two directors in their base fee. Additional employees typically add £5 to £15 per person per month. If you have five or more staff, expect the payroll element to push your monthly fee up by £50 to £100."
-  - question: "What is included in a standard limited company accountancy package?"
-    answer: "A standard monthly package at £100 to £200 per month typically includes bookkeeping (monthly or quarterly), payroll for up to two directors, VAT returns (if registered), annual accounts, corporation tax filing, and confirmation statement submission. It also includes ongoing tax planning advice. Self assessment returns for directors are usually charged separately at £150 to £300 per return."
+- question: What is the average cost of a limited company accountant in the UK?
+  answer: The average cost ranges from £60 to £200 per month depending on your turnover, transaction volume, and what services you need. Basic compliance for a simple contractor Ltd starts around £500 per year. A full-service package for a growing business with employees and VAT typically costs £1,500 to £3,000 per year.
+- question: Can I get a limited company accountant for under £50 per month?
+  answer: You can find accountants offering packages at £30 to £50 per month, but read the scope carefully. At that price, you are typically getting annual accounts and corporation tax filing only. Bookkeeping, payroll, VAT returns, and tax planning are usually extra. For very simple contractor companies with low turnover, £60 to £80 per month is more realistic for a decent service.
+- question: Does a limited company accountant cost more if I have employees?
+  answer: Yes. Payroll adds time for RTI submissions, pension enrolment, and year-end P60s. Most accountants include payroll for one or two directors in their base fee. Additional employees typically add £5 to £15 per person per month. If you have five or more staff, expect the payroll element to push your monthly fee up by £50 to £100.
+- question: What is included in a standard limited company accountancy package?
+  answer: A standard monthly package at £100 to £200 per month typically includes bookkeeping (monthly or quarterly), payroll for up to two directors, VAT returns (if registered), annual accounts, corporation tax filing, and confirmation statement submission. It also includes ongoing tax planning advice. Self assessment returns for directors are usually charged separately at £150 to £300 per return.
+metaTitle_prev: 'Limited Company Accountant Cost 2025/26: Full Pricing Guide'
+metaDescription_prev: Limited company accountant costs from £60 to £300+ per month in 2025/26. What you get for your money, what affects the price, and how to choose the right
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are running a limited company in the UK, you need an accountant. The question is not whether to hire one, but how much it will cost and what you get for your money.</p>
 
 <p>The short answer: <strong>limited company accountant cost</strong> in 2025/26 typically ranges from £60 to £300 per month for a standard service, with annual fees for basic compliance starting around £500 and full-service packages reaching £3,000+ per year.</p>

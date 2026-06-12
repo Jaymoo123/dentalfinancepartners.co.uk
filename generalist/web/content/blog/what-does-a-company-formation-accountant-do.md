@@ -1,33 +1,41 @@
 ---
-title: "What Does a Company Formation Accountant Do for a New Limited Company?"
-slug: "what-does-a-company-formation-accountant-do"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/what-does-a-company-formation-accountant-do"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Company Formation Accountant: What They Do for Your New Ltd"
-metaDescription: "A company formation accountant handles registration, tax setup, and compliance for your new Ltd. Here is what they do and why it matters from day one."
-altText: "A UK company formation accountant meeting a new client in a modern Manchester office with laptops and paperwork on a desk"
-image: "/blog/what-does-a-company-formation-accountant-do.jpg"
+title: What Does a Company Formation Accountant Do for a New Limited Company?
+slug: what-does-a-company-formation-accountant-do
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/what-does-a-company-formation-accountant-do
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: What a Company Formation Accountant Does for a New Ltd
+metaDescription: 'A company formation accountant does more than the £12 Companies House filing: corporation tax registration, PAYE, shares and first-year compliance.'
+altText: A UK company formation accountant meeting a new client in a modern Manchester office with laptops and paperwork on a desk
+image: /blog/what-does-a-company-formation-accountant-do.jpg
 imageCredit:
-  photographer: "Artem Podrez"
-  photographerUrl: "https://www.pexels.com/@artempodrez"
-  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
-  source: "Pexels"
-h1: "What Does a Company Formation Accountant Do for a New Limited Company?"
-summary: "A company formation accountant handles the registration, tax setup, and ongoing compliance for your new limited company. This guide explains exactly what they do, when you need one, and how to choose the right firm for your business."
-schema: ""
+  photographer: Artem Podrez
+  photographerUrl: https://www.pexels.com/@artempodrez
+  sourceUrl: https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/
+  source: Pexels
+h1: What Does a Company Formation Accountant Do for a New Limited Company?
+summary: A company formation accountant handles the registration, tax setup, and ongoing compliance for your new limited company. This guide explains exactly what they do, when you need one, and how to choose the right firm for your business.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Does a Company Formation Accountant Do for a New Limited Company?","description":"A company formation accountant does more than the £12 Companies House filing: corporation tax registration, PAYE, shares and first-year compliance.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/what-does-a-company-formation-accountant-do","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/what-does-a-company-formation-accountant-do"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/what-does-a-company-formation-accountant-do.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"What Does a Company Formation Accountant Do for a New Limited Company?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/what-does-a-company-formation-accountant-do"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I really need a company formation accountant, or can I register my company myself?","acceptedAnswer":{"@type":"Answer","text":"You can register your company yourself through Companies House for £12. But that only gives you a certificate of incorporation. A company formation accountant also registers you for corporation tax, sets up PAYE, advises on share structure, and handles the compliance setup that most new directors miss. For most businesses, the accountant''s fee is small compared to the cost of fixing mistakes later."}},{"@type":"Question","name":"How much does a company formation accountant cost in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"Basic incorporation only costs £30 to £60. A standard formation
+  package (incorporation plus corporation tax registration, PAYE setup, and registered office address) costs £100 to £200. A premium package with tailored articles, shareholder agreements, and initial tax planning costs £200 to £400. Compare what is included before choosing."}},{"@type":"Question","name":"What does a company formation accountant do that Companies House does not?","acceptedAnswer":{"@type":"Answer","text":"Companies House registers your company and issues a certificate of incorporation. That is it. A company formation accountant registers you for corporation tax with HMRC, sets up your PAYE scheme, advises on share structure, drafts your articles of association, registers you for VAT if needed, and provides initial tax planning. They also handle ongoing compliance like filing your confirmation statement and annual accounts."}},{"@type":"Question","name":"When is the best time to hire a company formation accountant?","acceptedAnswer":{"@type":"Answer","text":"The best time is before you incorporate. That way the accountant can advise on the optimal structure for your circumstances and handle the entire setup process correctly. If you are moving from sole trader to limited company, or setting up with multiple directors or shareholders, you definitely want an accountant involved from the start."}}]}]}'
 faqs:
-  - question: "Do I really need a company formation accountant, or can I register my company myself?"
-    answer: "You can register your company yourself through Companies House for £12. But that only gives you a certificate of incorporation. A company formation accountant also registers you for corporation tax, sets up PAYE, advises on share structure, and handles the compliance setup that most new directors miss. For most businesses, the accountant's fee is small compared to the cost of fixing mistakes later."
-  - question: "How much does a company formation accountant cost in 2025/26?"
-    answer: "Basic incorporation only costs £30 to £60. A standard formation package (incorporation plus corporation tax registration, PAYE setup, and registered office address) costs £100 to £200. A premium package with tailored articles, shareholder agreements, and initial tax planning costs £200 to £400. Compare what is included before choosing."
-  - question: "What does a company formation accountant do that Companies House does not?"
-    answer: "Companies House registers your company and issues a certificate of incorporation. That is it. A company formation accountant registers you for corporation tax with HMRC, sets up your PAYE scheme, advises on share structure, drafts your articles of association, registers you for VAT if needed, and provides initial tax planning. They also handle ongoing compliance like filing your confirmation statement and annual accounts."
-  - question: "When is the best time to hire a company formation accountant?"
-    answer: "The best time is before you incorporate. That way the accountant can advise on the optimal structure for your circumstances and handle the entire setup process correctly. If you are moving from sole trader to limited company, or setting up with multiple directors or shareholders, you definitely want an accountant involved from the start."
+- question: Do I really need a company formation accountant, or can I register my company myself?
+  answer: You can register your company yourself through Companies House for £12. But that only gives you a certificate of incorporation. A company formation accountant also registers you for corporation tax, sets up PAYE, advises on share structure, and handles the compliance setup that most new directors miss. For most businesses, the accountant's fee is small compared to the cost of fixing mistakes later.
+- question: How much does a company formation accountant cost in 2025/26?
+  answer: Basic incorporation only costs £30 to £60. A standard formation package (incorporation plus corporation tax registration, PAYE setup, and registered office address) costs £100 to £200. A premium package with tailored articles, shareholder agreements, and initial tax planning costs £200 to £400. Compare what is included before choosing.
+- question: What does a company formation accountant do that Companies House does not?
+  answer: Companies House registers your company and issues a certificate of incorporation. That is it. A company formation accountant registers you for corporation tax with HMRC, sets up your PAYE scheme, advises on share structure, drafts your articles of association, registers you for VAT if needed, and provides initial tax planning. They also handle ongoing compliance like filing your confirmation statement and annual accounts.
+- question: When is the best time to hire a company formation accountant?
+  answer: The best time is before you incorporate. That way the accountant can advise on the optimal structure for your circumstances and handle the entire setup process correctly. If you are moving from sole trader to limited company, or setting up with multiple directors or shareholders, you definitely want an accountant involved from the start.
+metaTitle_prev: 'Company Formation Accountant: What They Do for Your New Ltd'
+metaDescription_prev: A company formation accountant handles registration, tax setup, and compliance for your new Ltd. Here is what they do and why it matters from day one.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are setting up a limited company in the UK, you have probably seen the phrase "company formation accountant" while researching your options. It sounds like a specialist service, but what does it actually cover? And do you really need one, or can you handle the process yourself through Companies House for £12?</p>
 
 <p>The short answer is that you can register a company yourself for the statutory fee. But a company formation accountant does far more than file a single form. They set your company up correctly from a tax perspective, register you with HMRC, advise on share structure, and make sure you do not miss any compliance deadlines in your first year. For most business owners, that is worth the cost.</p>

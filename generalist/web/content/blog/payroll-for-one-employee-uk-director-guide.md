@@ -1,31 +1,39 @@
 ---
-title: "How Do I Run Payroll for One Employee in the UK? A Director's Guide"
-slug: "payroll-for-one-employee-uk-director-guide"
-canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Payroll and PAYE"
-metaTitle: "Payroll for One Employee UK: A Director's Guide (2025/26)"
-metaDescription: "Running payroll for one employee in the UK? We cover RTI, salary levels, software, and deadlines for director-only payroll in 2025/26."
-altText: "A director at a desk in a modern UK office with a laptop open to payroll software, showing a payslip for one employee"
-image: "/blog/payroll-for-one-employee-uk-director-guide.jpg"
+title: How Do I Run Payroll for One Employee in the UK? A Director's Guide
+slug: payroll-for-one-employee-uk-director-guide
+canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Payroll and PAYE
+metaTitle: 'Payroll for One Employee UK: Director-Only Guide 2025/26'
+metaDescription: 'Run director-only payroll right: register as an employer, submit RTI each pay run, and set a £12,570 salary for no income tax or employee NI.'
+altText: A director at a desk in a modern UK office with a laptop open to payroll software, showing a payslip for one employee
+image: /blog/payroll-for-one-employee-uk-director-guide.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/beautiful-young-woman-in-white-long-sleeve-shirt-standing-inside-an-office-8297819/"
-  source: "Pexels"
-h1: "How Do I Run Payroll for One Employee in the UK? A Director's Guide"
-summary: "If you are a director of a limited company with no staff beyond yourself, you still need to run payroll. This guide covers the RTI process, salary planning, software options, and the key deadlines for director-only payroll in 2025/26."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/beautiful-young-woman-in-white-long-sleeve-shirt-standing-inside-an-office-8297819/
+  source: Pexels
+h1: How Do I Run Payroll for One Employee in the UK? A Director's Guide
+summary: If you are a director of a limited company with no staff beyond yourself, you still need to run payroll. This guide covers the RTI process, salary planning, software options, and the key deadlines for director-only payroll in 2025/26.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do I Run Payroll for One Employee in the UK? A Director''s Guide","description":"Run director-only payroll right: register as an employer, submit RTI each pay run, and set a £12,570 salary for no income tax or employee NI.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/payroll-for-one-employee-uk-director-guide.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"How Do I Run Payroll for One Employee in the UK? A Director''s Guide","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I run payroll for myself as the only director without any employees?","acceptedAnswer":{"@type":"Answer","text":"Yes. You must register as an employer with HMRC, use RTI-compliant payroll software, and submit a Full Payment Submission every time you pay yourself. There is no exemption for director-only companies. Even if your salary is below the tax and NI thresholds, you still need to report it."}},{"@type":"Question","name":"What is the best salary for a director in 2025/26 to avoid tax?","acceptedAnswer":{"@type":"Answer","text":"£12,570 per year is the most common efficient salary. It matches the personal allowance and the primary NI threshold, so you pay no income tax and no employee NI. Employer NI on the amount above £9,100 can be covered by the Employment
+  Allowance if your company qualifies. If you want to avoid employer NI entirely without the allowance, set your salary at £9,100."}},{"@type":"Question","name":"What happens if I do not run payroll for myself?","acceptedAnswer":{"@type":"Answer","text":"If you take a salary without running payroll, HMRC will eventually detect the discrepancy through data matching. You face penalties for late or missing RTI submissions, starting at £100 per return and rising. You also lose the corporation tax deduction for the salary. If you take no salary at all, you get no NI credits for that year, which"}}]}]}'
 faqs:
-  - question: "Can I run payroll for myself as the only director without any employees?"
-    answer: "Yes. You must register as an employer with HMRC, use RTI-compliant payroll software, and submit a Full Payment Submission every time you pay yourself. There is no exemption for director-only companies. Even if your salary is below the tax and NI thresholds, you still need to report it."
-  - question: "What is the best salary for a director in 2025/26 to avoid tax?"
-    answer: "£12,570 per year is the most common efficient salary. It matches the personal allowance and the primary NI threshold, so you pay no income tax and no employee NI. Employer NI on the amount above £9,100 can be covered by the Employment Allowance if your company qualifies. If you want to avoid employer NI entirely without the allowance, set your salary at £9,100."
-  - question: "What happens if I do not run payroll for myself?"
-    answer: "If you take a salary without running payroll, HMRC will eventually detect the discrepancy through data matching. You face penalties for late or missing RTI submissions, starting at £100 per return and rising. You also lose the corporation tax deduction for the salary. If you take no salary at all, you get no NI credits for that year, which"
+- question: Can I run payroll for myself as the only director without any employees?
+  answer: Yes. You must register as an employer with HMRC, use RTI-compliant payroll software, and submit a Full Payment Submission every time you pay yourself. There is no exemption for director-only companies. Even if your salary is below the tax and NI thresholds, you still need to report it.
+- question: What is the best salary for a director in 2025/26 to avoid tax?
+  answer: £12,570 per year is the most common efficient salary. It matches the personal allowance and the primary NI threshold, so you pay no income tax and no employee NI. Employer NI on the amount above £9,100 can be covered by the Employment Allowance if your company qualifies. If you want to avoid employer NI entirely without the allowance, set your salary at £9,100.
+- question: What happens if I do not run payroll for myself?
+  answer: If you take a salary without running payroll, HMRC will eventually detect the discrepancy through data matching. You face penalties for late or missing RTI submissions, starting at £100 per return and rising. You also lose the corporation tax deduction for the salary. If you take no salary at all, you get no NI credits for that year, which
+metaTitle_prev: 'Payroll for One Employee UK: A Director''s Guide (2025/26)'
+metaDescription_prev: Running payroll for one employee in the UK? We cover RTI, salary levels, software, and deadlines for director-only payroll in 2025/26.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are the only director of your limited company and have no other employees, you still need a payroll system. Many directors assume that because they are the sole shareholder and director, they can simply take money from the business bank account without reporting it. That is not correct.</p>
 
 <p>Running payroll for one employee in the UK is straightforward once you understand the process. You need to report your salary to HMRC in real time through RTI (Real Time Information), deduct any tax and National Insurance due, and submit the right returns on time. This guide walks through exactly how to do it for the 2025/26 tax year.</p>

@@ -1,33 +1,41 @@
 ---
-title: "How to Correct an Error on a Previously Filed Confirmation Statement"
-slug: "correct-confirmation-statement-error"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/correct-confirmation-statement-error"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "Correct Confirmation Statement Error: UK Companies House"
-metaDescription: "Made a mistake on your confirmation statement? We explain the correction process, forms needed, and when you must file a full update instead."
-altText: "UK accountant reviewing a confirmation statement correction form at a desk in a Manchester office"
-image: "/blog/correct-confirmation-statement-error.jpg"
+title: How to Correct an Error on a Previously Filed Confirmation Statement
+slug: correct-confirmation-statement-error
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/correct-confirmation-statement-error
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: Correct a Confirmation Statement Error at Companies House
+metaDescription: Spotted a mistake on a filed confirmation statement? Minor fixes by letter or form RP02 are free; a replacement CS01 costs £13.
+altText: UK accountant reviewing a confirmation statement correction form at a desk in a Manchester office
+image: /blog/correct-confirmation-statement-error.jpg
 imageCredit:
-  photographer: "KATRIN  BOLOVTSOVA"
-  photographerUrl: "https://www.pexels.com/@ekaterina-bolovtsova"
-  sourceUrl: "https://www.pexels.com/photo/notebook-and-eraser-6192335/"
-  source: "Pexels"
-h1: "How to Correct an Error on a Previously Filed Confirmation Statement"
-summary: "Made a mistake on your confirmation statement? We walk through the correction process, which forms to use, and when you must file a full replacement instead."
-schema: ""
+  photographer: KATRIN  BOLOVTSOVA
+  photographerUrl: https://www.pexels.com/@ekaterina-bolovtsova
+  sourceUrl: https://www.pexels.com/photo/notebook-and-eraser-6192335/
+  source: Pexels
+h1: How to Correct an Error on a Previously Filed Confirmation Statement
+summary: Made a mistake on your confirmation statement? We walk through the correction process, which forms to use, and when you must file a full replacement instead.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Correct an Error on a Previously Filed Confirmation Statement","description":"Spotted a mistake on a filed confirmation statement? Minor fixes by letter or form RP02 are free; a replacement CS01 costs £13.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/correct-confirmation-statement-error","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/correct-confirmation-statement-error"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/correct-confirmation-statement-error.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"How to Correct an Error on a Previously Filed Confirmation Statement","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/correct-confirmation-statement-error"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I correct a confirmation statement error for free?","acceptedAnswer":{"@type":"Answer","text":"Minor errors corrected by writing to Companies House or using form RP02 are free. Substantive errors requiring a new CS01 cost £13, the standard filing fee. There is no reduced fee for corrections."}},{"@type":"Question","name":"How long does Companies House take to correct a confirmation statement error?","acceptedAnswer":{"@type":"Answer","text":"Minor corrections typically take 5 to 10 working days. Substantive corrections filed as a new CS01 are processed within 24 to 48 hours online, though the updated register may take a few days to reflect the change."}},{"@type":"Question","name":"What if I need to correct an error from three years ago?","acceptedAnswer":{"@type":"Answer","text":"Write
+  to Companies House explaining the error and providing evidence. They will assess whether a historical correction is possible. In many cases, it is simpler to ensure your next confirmation statement is correct and let the register update forward from that date."}},{"@type":"Question","name":"Do I need to tell HMRC about a confirmation statement correction?","acceptedAnswer":{"@type":"Answer","text":"No. HMRC does not receive confirmation statement data. However, if the error relates to director details or company address that HMRC holds, you should update HMRC separately through your Government Gateway account or by writing to them."}}]}]}'
 faqs:
-  - question: "Can I correct a confirmation statement error for free?"
-    answer: "Minor errors corrected by writing to Companies House or using form RP02 are free. Substantive errors requiring a new CS01 cost £13, the standard filing fee. There is no reduced fee for corrections."
-  - question: "How long does Companies House take to correct a confirmation statement error?"
-    answer: "Minor corrections typically take 5 to 10 working days. Substantive corrections filed as a new CS01 are processed within 24 to 48 hours online, though the updated register may take a few days to reflect the change."
-  - question: "What if I need to correct an error from three years ago?"
-    answer: "Write to Companies House explaining the error and providing evidence. They will assess whether a historical correction is possible. In many cases, it is simpler to ensure your next confirmation statement is correct and let the register update forward from that date."
-  - question: "Do I need to tell HMRC about a confirmation statement correction?"
-    answer: "No. HMRC does not receive confirmation statement data. However, if the error relates to director details or company address that HMRC holds, you should update HMRC separately through your Government Gateway account or by writing to them."
+- question: Can I correct a confirmation statement error for free?
+  answer: Minor errors corrected by writing to Companies House or using form RP02 are free. Substantive errors requiring a new CS01 cost £13, the standard filing fee. There is no reduced fee for corrections.
+- question: How long does Companies House take to correct a confirmation statement error?
+  answer: Minor corrections typically take 5 to 10 working days. Substantive corrections filed as a new CS01 are processed within 24 to 48 hours online, though the updated register may take a few days to reflect the change.
+- question: What if I need to correct an error from three years ago?
+  answer: Write to Companies House explaining the error and providing evidence. They will assess whether a historical correction is possible. In many cases, it is simpler to ensure your next confirmation statement is correct and let the register update forward from that date.
+- question: Do I need to tell HMRC about a confirmation statement correction?
+  answer: No. HMRC does not receive confirmation statement data. However, if the error relates to director details or company address that HMRC holds, you should update HMRC separately through your Government Gateway account or by writing to them.
+metaTitle_prev: 'Correct Confirmation Statement Error: UK Companies House'
+metaDescription_prev: Made a mistake on your confirmation statement? We explain the correction process, forms needed, and when you must file a full update instead.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>You filed your confirmation statement on time. Then you spotted the error. A director's name is misspelled. A service address is wrong. The SIC code doesn't match your actual trade.</p>
 
 <p>Don't panic. Companies House allows you to correct errors on a previously filed confirmation statement. But the process depends on what type of error it is and how far back it goes.</p>

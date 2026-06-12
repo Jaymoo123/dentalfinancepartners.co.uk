@@ -1,33 +1,41 @@
 ---
-title: "Can I Claim Mileage as a Limited Company Director?"
-slug: "can-i-claim-mileage-limited-company-director"
-canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Limited Company Tax"
-metaTitle: "Can I Claim Mileage as a Limited Company Director? UK Guide"
-metaDescription: "Yes, limited company directors can claim mileage. Use HMRC approved rates, keep a mileage log, and save on corporation tax. Here's how it works in 2025/26."
-altText: "Limited company director in a car consulting with an ICAEW accountant at a desk in a Manchester office"
-image: "/blog/can-i-claim-mileage-limited-company-director.jpg"
+title: Can I Claim Mileage as a Limited Company Director?
+slug: can-i-claim-mileage-limited-company-director
+canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Limited Company Tax
+metaTitle: Can a Limited Company Director Claim Mileage? UK Rules
+metaDescription: Yes, directors can claim 45p a mile for the first 10,000 business miles, then 25p, tax-free, with the company deducting it against corporation tax.
+altText: Limited company director in a car consulting with an ICAEW accountant at a desk in a Manchester office
+image: /blog/can-i-claim-mileage-limited-company-director.jpg
 imageCredit:
-  photographer: "Damir K ."
-  photographerUrl: "https://www.pexels.com/@damir"
-  sourceUrl: "https://www.pexels.com/photo/car-speedometer-display-showing-76-km-h-37072314/"
-  source: "Pexels"
-h1: "Can I Claim Mileage as a Limited Company Director?"
-summary: "Yes, you can claim mileage as a limited company director. Your company can pay you tax-free mileage at HMRC's approved rates, and the company deducts the cost against corporation tax. Here's exactly how it works in 2025/26, including what counts as business travel, the rates to use, and the records you must keep."
-schema: ""
+  photographer: Damir K .
+  photographerUrl: https://www.pexels.com/@damir
+  sourceUrl: https://www.pexels.com/photo/car-speedometer-display-showing-76-km-h-37072314/
+  source: Pexels
+h1: Can I Claim Mileage as a Limited Company Director?
+summary: Yes, you can claim mileage as a limited company director. Your company can pay you tax-free mileage at HMRC's approved rates, and the company deducts the cost against corporation tax. Here's exactly how it works in 2025/26, including what counts as business travel, the rates to use, and the records you must keep.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Can I Claim Mileage as a Limited Company Director?","description":"Yes, directors can claim 45p a mile for the first 10,000 business miles, then 25p, tax-free, with the company deducting it against corporation tax.","url":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/can-i-claim-mileage-limited-company-director.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Limited Company Tax","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax"},{"@type":"ListItem","position":3,"name":"Can I Claim Mileage as a Limited Company Director?","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim mileage for driving from home to my office?","acceptedAnswer":{"@type":"Answer","text":"No. Travel from your home to a permanent workplace is commuting, not business mileage. If your home is your main place of business and you have no other office, then journeys from home to client sites can count as business mileage. But the daily trip from home to a rented office or co-working space you use regularly is private travel."}},{"@type":"Question","name":"What mileage rate can I claim as a director in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"45p per mile for the first 10,000 business miles in a tax year, then 25p per mile thereafter. This applies to cars and vans. Motorcycles are 24p per mile, bicycles 20p per mile. Your company pays you this amount
+  tax-free and deducts it against corporation tax."}},{"@type":"Question","name":"Do I need to keep a mileage log?","acceptedAnswer":{"@type":"Answer","text":"Yes. HMRC requires a contemporaneous record of your business journeys. Your log should show the date, start and end locations, purpose, and miles driven for each trip. Keep it for at least six years. A spreadsheet or a mileage tracking app works well."}},{"@type":"Question","name":"Is it better to use my personal car or buy a car through my company?","acceptedAnswer":{"@type":"Answer","text":"For most directors, using a personal car and claiming 45p per mile is simpler and more tax efficient. A company car works better if you drive very high business mileage (15,000+ miles per year) and choose a low-emission or electric car. Run the numbers for your specific situation before deciding."}}]}]}'
 faqs:
-  - question: "Can I claim mileage for driving from home to my office?"
-    answer: "No. Travel from your home to a permanent workplace is commuting, not business mileage. If your home is your main place of business and you have no other office, then journeys from home to client sites can count as business mileage. But the daily trip from home to a rented office or co-working space you use regularly is private travel."
-  - question: "What mileage rate can I claim as a director in 2025/26?"
-    answer: "45p per mile for the first 10,000 business miles in a tax year, then 25p per mile thereafter. This applies to cars and vans. Motorcycles are 24p per mile, bicycles 20p per mile. Your company pays you this amount tax-free and deducts it against corporation tax."
-  - question: "Do I need to keep a mileage log?"
-    answer: "Yes. HMRC requires a contemporaneous record of your business journeys. Your log should show the date, start and end locations, purpose, and miles driven for each trip. Keep it for at least six years. A spreadsheet or a mileage tracking app works well."
-  - question: "Is it better to use my personal car or buy a car through my company?"
-    answer: "For most directors, using a personal car and claiming 45p per mile is simpler and more tax efficient. A company car works better if you drive very high business mileage (15,000+ miles per year) and choose a low-emission or electric car. Run the numbers for your specific situation before deciding."
+- question: Can I claim mileage for driving from home to my office?
+  answer: No. Travel from your home to a permanent workplace is commuting, not business mileage. If your home is your main place of business and you have no other office, then journeys from home to client sites can count as business mileage. But the daily trip from home to a rented office or co-working space you use regularly is private travel.
+- question: What mileage rate can I claim as a director in 2025/26?
+  answer: 45p per mile for the first 10,000 business miles in a tax year, then 25p per mile thereafter. This applies to cars and vans. Motorcycles are 24p per mile, bicycles 20p per mile. Your company pays you this amount tax-free and deducts it against corporation tax.
+- question: Do I need to keep a mileage log?
+  answer: Yes. HMRC requires a contemporaneous record of your business journeys. Your log should show the date, start and end locations, purpose, and miles driven for each trip. Keep it for at least six years. A spreadsheet or a mileage tracking app works well.
+- question: Is it better to use my personal car or buy a car through my company?
+  answer: For most directors, using a personal car and claiming 45p per mile is simpler and more tax efficient. A company car works better if you drive very high business mileage (15,000+ miles per year) and choose a low-emission or electric car. Run the numbers for your specific situation before deciding.
+metaTitle_prev: Can I Claim Mileage as a Limited Company Director? UK Guide
+metaDescription_prev: Yes, limited company directors can claim mileage. Use HMRC approved rates, keep a mileage log, and save on corporation tax. Here's how it works in 2025/26.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you run your own limited company and use your personal car for business trips, you can claim mileage. The short answer is yes, you can claim mileage as a limited company director. Your company pays you a tax-free mileage allowance, and the company deducts that cost against its corporation tax bill. Done correctly, this is one of the simplest and most tax-efficient ways to handle business travel costs through your company.</p>
 
 <p>But there are rules. Use the wrong rates. Mix personal and business trips without separating them. Skip the mileage log. Any of those mistakes can turn a straightforward claim into an HMRC enquiry. This article covers exactly what counts as business mileage, the rates for 2025/26, how to record it, and what happens when you use a company car instead.</p>

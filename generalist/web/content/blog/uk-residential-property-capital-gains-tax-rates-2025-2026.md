@@ -1,33 +1,41 @@
 ---
-title: "UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained"
-slug: "uk-residential-property-capital-gains-tax-rates-2025-2026"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "UK Residential Property Capital Gains Tax Rates 2025/26"
-metaDescription: "UK residential property CGT rates from 30 Oct 2024: 18% basic rate, 24% higher rate. Includes worked examples, 60-day reporting rules, and BADR changes."
-altText: "UK residential property capital gains tax rates 2025 2026 18% 24% explained on a laptop screen with HMRC calculator open"
-image: "/blog/uk-residential-property-capital-gains-tax-rates-2025-2026.jpg"
+title: 'UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained'
+slug: uk-residential-property-capital-gains-tax-rates-2025-2026
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: 'UK Residential Property CGT Rates 2025/26: 18% and 24%'
+metaDescription: 'Work out CGT on a buy-to-let or second home: 18% basic and 24% higher rate from 30 October 2024, with worked examples and the 60-day reporting rule.'
+altText: UK residential property capital gains tax rates 2025 2026 18% 24% explained on a laptop screen with HMRC calculator open
+image: /blog/uk-residential-property-capital-gains-tax-rates-2025-2026.jpg
 imageCredit:
-  photographer: "Boys in Bristol Photography"
-  photographerUrl: "https://www.pexels.com/@lebele"
-  sourceUrl: "https://www.pexels.com/photo/lawn-in-park-near-terraced-houses-11935240/"
-  source: "Pexels"
-h1: "UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained"
-summary: "From 30 October 2024, the CGT rates for UK residential property are 18% (basic rate) and 24% (higher rate). This guide explains who pays what, how the 60-day reporting rule works, and what the 2025/26 BADR changes mean for property investors."
-schema: ""
+  photographer: Boys in Bristol Photography
+  photographerUrl: https://www.pexels.com/@lebele
+  sourceUrl: https://www.pexels.com/photo/lawn-in-park-near-terraced-houses-11935240/
+  source: Pexels
+h1: 'UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained'
+summary: From 30 October 2024, the CGT rates for UK residential property are 18% (basic rate) and 24% (higher rate). This guide explains who pays what, how the 60-day reporting rule works, and what the 2025/26 BADR changes mean for property investors.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained","description":"Work out CGT on a buy-to-let or second home: 18% basic and 24% higher rate from 30 October 2024, with worked examples and the 60-day reporting rule.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-residential-property-capital-gains-tax-rates-2025-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the CGT rate on residential property in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to gains from UK residential property disposals made after 30 October 2024. The annual exempt amount is £3,000."}},{"@type":"Question","name":"Do I have to pay CGT within 60 days of selling a property?","acceptedAnswer":{"@type":"Answer","text":"Yes. For UK residential property, you must report the gain and pay the tax within 60 days of completion. This is a separate filing from your self assessment return. Missing the deadline triggers penalties and interest."}},{"@type":"Question","name":"Can I
+  avoid CGT by selling my buy-to-let property to my spouse?","acceptedAnswer":{"@type":"Answer","text":"Transfers between spouses or civil partners are exempt from CGT if you are living together. Your spouse takes on your original purchase cost for CGT purposes. When they sell later, the gain is calculated from your original cost. This can help use both annual exempt amounts and basic rate bands, but it does not eliminate the tax entirely."}},{"@type":"Question","name":"Does the 24% rate apply to all gains or just the portion above the basic rate band?","acceptedAnswer":{"@type":"Answer","text":"The 24% rate applies only to the portion of your total income and gains that exceeds the basic rate band (£50,270 in 2025/26). Gains within the basic rate band are taxed at 18%. If your income alone uses up the basic rate band, all your gains are taxed at 24%."}}]}]}'
 faqs:
-  - question: "What is the CGT rate on residential property in 2025/26?"
-    answer: "The rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to gains from UK residential property disposals made after 30 October 2024. The annual exempt amount is £3,000."
-  - question: "Do I have to pay CGT within 60 days of selling a property?"
-    answer: "Yes. For UK residential property, you must report the gain and pay the tax within 60 days of completion. This is a separate filing from your self assessment return. Missing the deadline triggers penalties and interest."
-  - question: "Can I avoid CGT by selling my buy-to-let property to my spouse?"
-    answer: "Transfers between spouses or civil partners are exempt from CGT if you are living together. Your spouse takes on your original purchase cost for CGT purposes. When they sell later, the gain is calculated from your original cost. This can help use both annual exempt amounts and basic rate bands, but it does not eliminate the tax entirely."
-  - question: "Does the 24% rate apply to all gains or just the portion above the basic rate band?"
-    answer: "The 24% rate applies only to the portion of your total income and gains that exceeds the basic rate band (£50,270 in 2025/26). Gains within the basic rate band are taxed at 18%. If your income alone uses up the basic rate band, all your gains are taxed at 24%."
+- question: What is the CGT rate on residential property in 2025/26?
+  answer: The rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to gains from UK residential property disposals made after 30 October 2024. The annual exempt amount is £3,000.
+- question: Do I have to pay CGT within 60 days of selling a property?
+  answer: Yes. For UK residential property, you must report the gain and pay the tax within 60 days of completion. This is a separate filing from your self assessment return. Missing the deadline triggers penalties and interest.
+- question: Can I avoid CGT by selling my buy-to-let property to my spouse?
+  answer: Transfers between spouses or civil partners are exempt from CGT if you are living together. Your spouse takes on your original purchase cost for CGT purposes. When they sell later, the gain is calculated from your original cost. This can help use both annual exempt amounts and basic rate bands, but it does not eliminate the tax entirely.
+- question: Does the 24% rate apply to all gains or just the portion above the basic rate band?
+  answer: The 24% rate applies only to the portion of your total income and gains that exceeds the basic rate band (£50,270 in 2025/26). Gains within the basic rate band are taxed at 18%. If your income alone uses up the basic rate band, all your gains are taxed at 24%.
+metaTitle_prev: UK Residential Property Capital Gains Tax Rates 2025/26
+metaDescription_prev: 'UK residential property CGT rates from 30 Oct 2024: 18% basic rate, 24% higher rate. Includes worked examples, 60-day reporting rules, and BADR changes.'
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you sold a residential property in the UK after 30 October 2024 and made a gain, you are looking at capital gains tax (CGT) rates of 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property, including second homes, buy-to-let properties, and inherited properties that are not your main home.</p>
 
 <p>This is a change from the old rates of 18% and 28% that applied before 30 October 2024. The government cut the higher rate from 28% to 24% in the Autumn Budget 2024. The basic rate stayed at 18%. These rates apply for the 2024/25 tax year (from 30 October 2024 to 5 April 2025) and continue into 2025/26 unless further changes are announced.</p>

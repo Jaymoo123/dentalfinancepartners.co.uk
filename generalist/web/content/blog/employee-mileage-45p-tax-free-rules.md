@@ -1,33 +1,41 @@
 ---
-title: "What Are The Rules For Paying An Employee's Mileage At 45p Per Mile Tax-free?"
-slug: "employee-mileage-45p-tax-free-rules"
-canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/employee-mileage-45p-tax-free-rules"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Payroll and PAYE"
-metaTitle: "Employee mileage 45p tax free: the rules explained"
-metaDescription: "The 45p per mile rate for employee mileage is tax-free up to 10,000 miles. Above that it drops to 25p. Here's how to pay it correctly through payroll."
-altText: "UK business owner reviewing mileage log and fuel receipts at a desk in a Manchester office"
-image: "/blog/employee-mileage-45p-tax-free-rules.jpg"
+title: What Are The Rules For Paying An Employee's Mileage At 45p Per Mile Tax-free?
+slug: employee-mileage-45p-tax-free-rules
+canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/employee-mileage-45p-tax-free-rules
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Payroll and PAYE
+metaTitle: 'The 45p Mileage Rate Explained: Who Pays and the Rules'
+metaDescription: 'Understand the 45p per mile rule: tax-free for the first 10,000 business miles, then 25p, paid through payroll. See how to do it right.'
+altText: UK business owner reviewing mileage log and fuel receipts at a desk in a Manchester office
+image: /blog/employee-mileage-45p-tax-free-rules.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/"
-  source: "Pexels"
-h1: "What Are The Rules For Paying An Employee's Mileage At 45p Per Mile Tax-free?"
-summary: "The 45p per mile tax-free mileage rate applies to the first 10,000 business miles an employee drives in their own car. Above 10,000 miles, the rate drops to 25p per mile. This article explains how to pay it through payroll, what counts as a business journey, and what happens if you pay more or less than the approved amount."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/
+  source: Pexels
+h1: What Are The Rules For Paying An Employee's Mileage At 45p Per Mile Tax-free?
+summary: The 45p per mile tax-free mileage rate applies to the first 10,000 business miles an employee drives in their own car. Above 10,000 miles, the rate drops to 25p per mile. This article explains how to pay it through payroll, what counts as a business journey, and what happens if you pay more or less than the approved amount.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Are The Rules For Paying An Employee''s Mileage At 45p Per Mile Tax-free?","description":"Understand the 45p per mile rule: tax-free for the first 10,000 business miles, then 25p, paid through payroll. See how to do it right.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/employee-mileage-45p-tax-free-rules","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
+  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/employee-mileage-45p-tax-free-rules"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/employee-mileage-45p-tax-free-rules.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"What Are The Rules For Paying An Employee''s Mileage At 45p Per Mile Tax-free?","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/employee-mileage-45p-tax-free-rules"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I pay an employee 45p per mile for a van?","acceptedAnswer":{"@type":"Answer","text":"Yes. The 45p rate applies to cars and vans. The same 10,000 mile threshold applies. If the van is a company van rather than the employee''s own vehicle, the AMAP rate does not apply. You would use the Advisory Fuel Rates instead. For an employee using their own van, the 45p rate is correct."}},{"@type":"Question","name":"What if my employee drives 12,000 business miles in a year?","acceptedAnswer":{"@type":"Answer","text":"You pay 45p per mile for the first 10,000 miles and 25p per mile for the remaining 2,000 miles. Total reimbursement would be £5,000 (10,000 x 45p) plus £500 (2,000 x 25p) = £5,500. All of it is tax-free and NI-free as long as you pay at the approved rates."}},{"@type":"Question","name":"Does
+  the 45p rate include fuel or is it just wear and tear?","acceptedAnswer":{"@type":"Answer","text":"The 45p rate covers everything: fuel, insurance, servicing, tyres, depreciation and road tax. It is not a fuel-only rate. If you pay the 45p rate, the employee cannot also claim separate fuel costs. The rate is designed to cover the total cost of running the vehicle for business journeys."}},{"@type":"Question","name":"What if I pay my employee 50p per mile instead of 45p?","acceptedAnswer":{"@type":"Answer","text":"The first 45p per mile is tax-free. The extra 5p per mile is taxable earnings. You must report it through payroll and deduct PAYE and NI on that excess. You should also include it on the employee''s P60. If you do not, HMRC can assess you for the unpaid tax and NI plus interest and penalties."}}]}]}'
 faqs:
-  - question: "Can I pay an employee 45p per mile for a van?"
-    answer: "Yes. The 45p rate applies to cars and vans. The same 10,000 mile threshold applies. If the van is a company van rather than the employee's own vehicle, the AMAP rate does not apply. You would use the Advisory Fuel Rates instead. For an employee using their own van, the 45p rate is correct."
-  - question: "What if my employee drives 12,000 business miles in a year?"
-    answer: "You pay 45p per mile for the first 10,000 miles and 25p per mile for the remaining 2,000 miles. Total reimbursement would be £5,000 (10,000 x 45p) plus £500 (2,000 x 25p) = £5,500. All of it is tax-free and NI-free as long as you pay at the approved rates."
-  - question: "Does the 45p rate include fuel or is it just wear and tear?"
-    answer: "The 45p rate covers everything: fuel, insurance, servicing, tyres, depreciation and road tax. It is not a fuel-only rate. If you pay the 45p rate, the employee cannot also claim separate fuel costs. The rate is designed to cover the total cost of running the vehicle for business journeys."
-  - question: "What if I pay my employee 50p per mile instead of 45p?"
-    answer: "The first 45p per mile is tax-free. The extra 5p per mile is taxable earnings. You must report it through payroll and deduct PAYE and NI on that excess. You should also include it on the employee's P60. If you do not, HMRC can assess you for the unpaid tax and NI plus interest and penalties."
+- question: Can I pay an employee 45p per mile for a van?
+  answer: Yes. The 45p rate applies to cars and vans. The same 10,000 mile threshold applies. If the van is a company van rather than the employee's own vehicle, the AMAP rate does not apply. You would use the Advisory Fuel Rates instead. For an employee using their own van, the 45p rate is correct.
+- question: What if my employee drives 12,000 business miles in a year?
+  answer: You pay 45p per mile for the first 10,000 miles and 25p per mile for the remaining 2,000 miles. Total reimbursement would be £5,000 (10,000 x 45p) plus £500 (2,000 x 25p) = £5,500. All of it is tax-free and NI-free as long as you pay at the approved rates.
+- question: Does the 45p rate include fuel or is it just wear and tear?
+  answer: 'The 45p rate covers everything: fuel, insurance, servicing, tyres, depreciation and road tax. It is not a fuel-only rate. If you pay the 45p rate, the employee cannot also claim separate fuel costs. The rate is designed to cover the total cost of running the vehicle for business journeys.'
+- question: What if I pay my employee 50p per mile instead of 45p?
+  answer: The first 45p per mile is tax-free. The extra 5p per mile is taxable earnings. You must report it through payroll and deduct PAYE and NI on that excess. You should also include it on the employee's P60. If you do not, HMRC can assess you for the unpaid tax and NI plus interest and penalties.
+metaTitle_prev: 'Employee mileage 45p tax free: the rules explained'
+metaDescription_prev: The 45p per mile rate for employee mileage is tax-free up to 10,000 miles. Above that it drops to 25p. Here's how to pay it correctly through payroll.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>The 45p Mileage Rate: What It Actually Covers</h2>
 
 <p>If you employ someone who uses their own car for work, you can pay them up to 45p per mile without triggering a tax charge or a National Insurance (NI) bill. That's the Approved Mileage Allowance Payment (AMAP) rate set by HMRC. It applies to the first 10,000 business miles in a tax year.</p>

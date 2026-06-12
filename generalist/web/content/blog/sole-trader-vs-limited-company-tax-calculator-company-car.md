@@ -1,33 +1,41 @@
 ---
-title: "Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers"
-slug: "sole-trader-vs-limited-company-tax-calculator-company-car"
-canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/sole-trader-vs-limited-company-tax-calculator-company-car"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Limited Company Tax"
-metaTitle: "Sole Trader vs Limited Company Tax Calculator: Company Car"
-metaDescription: "Most tax calculators ignore benefit-in-kind and fuel scale charges. We show how a company car flips the sole trader vs limited company comparison for UK"
-altText: "UK accountant reviewing sole trader vs limited company tax calculations with a company car parked outside a modern office in Manchester's Northern Quarter"
-image: "/blog/sole-trader-vs-limited-company-tax-calculator-company-car.jpg"
+title: 'Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers'
+slug: sole-trader-vs-limited-company-tax-calculator-company-car
+canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/sole-trader-vs-limited-company-tax-calculator-company-car
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Limited Company Tax
+metaTitle: 'Sole Trader vs Limited Company: How a Company Car Counts'
+metaDescription: Most calculators ignore the company car. See how benefit-in-kind flips the sole trader vs limited company sums, with electric cars at a 2% BIK for 2025/26.
+altText: UK accountant reviewing sole trader vs limited company tax calculations with a company car parked outside a modern office in Manchester's Northern Quarter
+image: /blog/sole-trader-vs-limited-company-tax-calculator-company-car.jpg
 imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  sourceUrl: "https://www.pexels.com/photo/a-man-in-black-suit-sitting-near-the-wooden-table-while-typing-on-laptop-7567312/"
-  source: "Pexels"
-h1: "Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers"
-summary: "Most sole trader vs limited company tax calculators ignore company cars entirely. We show how benefit-in-kind and fuel scale charges affect the real-world comparison for UK business owners."
-schema: ""
+  photographer: Tima Miroshnichenko
+  photographerUrl: https://www.pexels.com/@tima-miroshnichenko
+  sourceUrl: https://www.pexels.com/photo/a-man-in-black-suit-sitting-near-the-wooden-table-while-typing-on-laptop-7567312/
+  source: Pexels
+h1: 'Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers'
+summary: Most sole trader vs limited company tax calculators ignore company cars entirely. We show how benefit-in-kind and fuel scale charges affect the real-world comparison for UK business owners.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers","description":"Most calculators ignore the company car. See how benefit-in-kind flips the sole trader vs limited company sums, with electric cars at a 2% BIK for 2025/26.","url":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/sole-trader-vs-limited-company-tax-calculator-company-car","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
+  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/sole-trader-vs-limited-company-tax-calculator-company-car"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/sole-trader-vs-limited-company-tax-calculator-company-car.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Limited Company Tax","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax"},{"@type":"ListItem","position":3,"name":"Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/sole-trader-vs-limited-company-tax-calculator-company-car"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I have to pay benefit-in-kind tax on a company car if I only use it for business?","acceptedAnswer":{"@type":"Answer","text":"HMRC considers commuting between home and a permanent workplace as personal use. So unless your home is also your workplace (which is rare for limited company directors), you will have some personal use and a BIK charge applies. The only way to avoid BIK entirely is to have no personal use, which is difficult to prove without detailed mileage logs."}},{"@type":"Question","name":"Can I avoid the fuel scale charge by paying for my own fuel?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you reimburse
+  your company for all fuel used for personal journeys at HMRC''s advisory fuel rates, the fuel scale charge does not apply. You must keep mileage records showing business and personal miles. Many directors find this simpler than dealing with the fuel scale charge, especially if personal mileage is low."}},{"@type":"Question","name":"What is the best car to buy through a limited company to minimise tax?","acceptedAnswer":{"@type":"Answer","text":"A fully electric car with 0g/km CO2 has the lowest BIK percentage (2% for 2025/26). That means a £45,000 electric car generates a BIK of just £900. The fuel scale charge is also low. If you need a hybrid, choose one with CO2 emissions below 50g/km and a high electric range (40+ miles) to keep the BIK percentage between 5% and 12%. Avoid high-emission petrol or diesel cars, as their BIK percentages can reach 37%."}},{"@type":"Question","name":"Does the sole trader vs limited company comparison change if I already own the car personally?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you already own the car personally and use it for business as a sole trader, you claim mileage allowance (45p per mile for the first 10,000 business miles, 25p thereafter) rather than capital allowances. As a limited company, you could sell the car to the company, but that triggers a disposal for capital gains purposes and the company would then face BIK charges. The comparison is different and needs separate modelling."}}]}]}'
 faqs:
-  - question: "Do I have to pay benefit-in-kind tax on a company car if I only use it for business?"
-    answer: "HMRC considers commuting between home and a permanent workplace as personal use. So unless your home is also your workplace (which is rare for limited company directors), you will have some personal use and a BIK charge applies. The only way to avoid BIK entirely is to have no personal use, which is difficult to prove without detailed mileage logs."
-  - question: "Can I avoid the fuel scale charge by paying for my own fuel?"
-    answer: "Yes. If you reimburse your company for all fuel used for personal journeys at HMRC's advisory fuel rates, the fuel scale charge does not apply. You must keep mileage records showing business and personal miles. Many directors find this simpler than dealing with the fuel scale charge, especially if personal mileage is low."
-  - question: "What is the best car to buy through a limited company to minimise tax?"
-    answer: "A fully electric car with 0g/km CO2 has the lowest BIK percentage (2% for 2025/26). That means a £45,000 electric car generates a BIK of just £900. The fuel scale charge is also low. If you need a hybrid, choose one with CO2 emissions below 50g/km and a high electric range (40+ miles) to keep the BIK percentage between 5% and 12%. Avoid high-emission petrol or diesel cars, as their BIK percentages can reach 37%."
-  - question: "Does the sole trader vs limited company comparison change if I already own the car personally?"
-    answer: "Yes. If you already own the car personally and use it for business as a sole trader, you claim mileage allowance (45p per mile for the first 10,000 business miles, 25p thereafter) rather than capital allowances. As a limited company, you could sell the car to the company, but that triggers a disposal for capital gains purposes and the company would then face BIK charges. The comparison is different and needs separate modelling."
+- question: Do I have to pay benefit-in-kind tax on a company car if I only use it for business?
+  answer: HMRC considers commuting between home and a permanent workplace as personal use. So unless your home is also your workplace (which is rare for limited company directors), you will have some personal use and a BIK charge applies. The only way to avoid BIK entirely is to have no personal use, which is difficult to prove without detailed mileage logs.
+- question: Can I avoid the fuel scale charge by paying for my own fuel?
+  answer: Yes. If you reimburse your company for all fuel used for personal journeys at HMRC's advisory fuel rates, the fuel scale charge does not apply. You must keep mileage records showing business and personal miles. Many directors find this simpler than dealing with the fuel scale charge, especially if personal mileage is low.
+- question: What is the best car to buy through a limited company to minimise tax?
+  answer: A fully electric car with 0g/km CO2 has the lowest BIK percentage (2% for 2025/26). That means a £45,000 electric car generates a BIK of just £900. The fuel scale charge is also low. If you need a hybrid, choose one with CO2 emissions below 50g/km and a high electric range (40+ miles) to keep the BIK percentage between 5% and 12%. Avoid high-emission petrol or diesel cars, as their BIK percentages can reach 37%.
+- question: Does the sole trader vs limited company comparison change if I already own the car personally?
+  answer: Yes. If you already own the car personally and use it for business as a sole trader, you claim mileage allowance (45p per mile for the first 10,000 business miles, 25p thereafter) rather than capital allowances. As a limited company, you could sell the car to the company, but that triggers a disposal for capital gains purposes and the company would then face BIK charges. The comparison is different and needs separate modelling.
+metaTitle_prev: 'Sole Trader vs Limited Company Tax Calculator: Company Car'
+metaDescription_prev: Most tax calculators ignore benefit-in-kind and fuel scale charges. We show how a company car flips the sole trader vs limited company comparison for UK
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>The Problem with Most Sole Trader vs Limited Company Calculators</h2>
 
 <p>If you search for a "sole trader vs limited company tax calculator" online, you will find dozens of them. Most compare basic income tax and National Insurance rates. A few factor in corporation tax and dividend tax.</p>

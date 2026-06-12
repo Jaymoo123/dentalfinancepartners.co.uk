@@ -1,33 +1,41 @@
 ---
-title: "UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know"
-slug: "uk-capital-gains-tax-rates-residential-property-2026"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026"
-date: "2026-05-17"
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "UK Capital Gains Tax Rates Residential Property 2026: Full"
-metaDescription: "CGT on residential property in 2026: 18% basic rate, 24% higher rate. £3,000 annual exemption gone. 60-day reporting still applies. Full rates"
-altText: "UK residential property with For Sale sign, capital gains tax rates 2026"
-image: "/blog/uk-capital-gains-tax-rates-residential-property-2026.jpg"
+title: 'UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know'
+slug: uk-capital-gains-tax-rates-residential-property-2026
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026
+date: '2026-05-17'
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: 'Capital Gains Tax on Residential Property 2026: Full Rates'
+metaDescription: 'How CGT applies to a residential property sale in 2026: 18% and 24% rates after a £3,000 annual exemption, plus the 60-day reporting rule.'
+altText: UK residential property with For Sale sign, capital gains tax rates 2026
+image: /blog/uk-capital-gains-tax-rates-residential-property-2026.jpg
 imageCredit:
-  photographer: "Monstera Production"
-  photographerUrl: "https://www.pexels.com/@gabby-k"
-  sourceUrl: "https://www.pexels.com/photo/graph-with-increasing-euro-profitable-investment-6289026/"
-  source: "Pexels"
-h1: "UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know"
-summary: "UK capital gains tax rates for residential property in 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. The annual exempt amount has been cut to £3,000. Here is how the rates apply, when you must report, and what reliefs are still available."
-schema: ""
+  photographer: Monstera Production
+  photographerUrl: https://www.pexels.com/@gabby-k
+  sourceUrl: https://www.pexels.com/photo/graph-with-increasing-euro-profitable-investment-6289026/
+  source: Pexels
+h1: 'UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know'
+summary: UK capital gains tax rates for residential property in 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. The annual exempt amount has been cut to £3,000. Here is how the rates apply, when you must report, and what reliefs are still available.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know","description":"How CGT applies to a residential property sale in 2026: 18% and 24% rates after a £3,000 annual exemption, plus the 60-day reporting rule.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
+  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-capital-gains-tax-rates-residential-property-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the capital gains tax rate for residential property in 2026?","acceptedAnswer":{"@type":"Answer","text":"For disposals on or after 30 October 2024, the rate is 18% for basic rate taxpayers and 24% for higher rate and additional rate taxpayers. These rates apply for 2025/26 and 2026/27. The annual exempt amount is £3,000 per individual."}},{"@type":"Question","name":"Do I need to report a property sale within 60 days in 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. The 60-day reporting and payment rule applies to all UK residential property disposals. You must submit a CGT property return and pay the tax
+  within 60 days of completion, even if you file a self assessment return later."}},{"@type":"Question","name":"Can I avoid CGT by selling a property I used to live in?","acceptedAnswer":{"@type":"Answer","text":"Private Residence Relief covers the period you lived in the property as your main home, plus the final 9 months of ownership. The gain on the period you rented it out or left it empty is chargeable. You cannot avoid CGT entirely unless you lived there for the whole ownership period."}},{"@type":"Question","name":"What happens if I miss the 60-day CGT reporting deadline?","acceptedAnswer":{"@type":"Answer","text":"HMRC charges an automatic £100 penalty for the first day late, then £10 per day for up to 90 days. Further penalties apply after 90 days. Interest also accrues on unpaid tax from the original due date. File as soon as you realise you have missed the deadline to minimise penalties."}}]}]}'
 faqs:
-  - question: "What is the capital gains tax rate for residential property in 2026?"
-    answer: "For disposals on or after 30 October 2024, the rate is 18% for basic rate taxpayers and 24% for higher rate and additional rate taxpayers. These rates apply for 2025/26 and 2026/27. The annual exempt amount is £3,000 per individual."
-  - question: "Do I need to report a property sale within 60 days in 2026?"
-    answer: "Yes. The 60-day reporting and payment rule applies to all UK residential property disposals. You must submit a CGT property return and pay the tax within 60 days of completion, even if you file a self assessment return later."
-  - question: "Can I avoid CGT by selling a property I used to live in?"
-    answer: "Private Residence Relief covers the period you lived in the property as your main home, plus the final 9 months of ownership. The gain on the period you rented it out or left it empty is chargeable. You cannot avoid CGT entirely unless you lived there for the whole ownership period."
-  - question: "What happens if I miss the 60-day CGT reporting deadline?"
-    answer: "HMRC charges an automatic £100 penalty for the first day late, then £10 per day for up to 90 days. Further penalties apply after 90 days. Interest also accrues on unpaid tax from the original due date. File as soon as you realise you have missed the deadline to minimise penalties."
+- question: What is the capital gains tax rate for residential property in 2026?
+  answer: For disposals on or after 30 October 2024, the rate is 18% for basic rate taxpayers and 24% for higher rate and additional rate taxpayers. These rates apply for 2025/26 and 2026/27. The annual exempt amount is £3,000 per individual.
+- question: Do I need to report a property sale within 60 days in 2026?
+  answer: Yes. The 60-day reporting and payment rule applies to all UK residential property disposals. You must submit a CGT property return and pay the tax within 60 days of completion, even if you file a self assessment return later.
+- question: Can I avoid CGT by selling a property I used to live in?
+  answer: Private Residence Relief covers the period you lived in the property as your main home, plus the final 9 months of ownership. The gain on the period you rented it out or left it empty is chargeable. You cannot avoid CGT entirely unless you lived there for the whole ownership period.
+- question: What happens if I miss the 60-day CGT reporting deadline?
+  answer: HMRC charges an automatic £100 penalty for the first day late, then £10 per day for up to 90 days. Further penalties apply after 90 days. Interest also accrues on unpaid tax from the original due date. File as soon as you realise you have missed the deadline to minimise penalties.
+metaTitle_prev: 'UK Capital Gains Tax Rates Residential Property 2026: Full'
+metaDescription_prev: 'CGT on residential property in 2026: 18% basic rate, 24% higher rate. £3,000 annual exemption gone. 60-day reporting still applies. Full rates'
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you sell a residential property that is not your main home, you will pay capital gains tax on the profit. The rates changed on 30 October 2024 and are now fixed for 2025/26 and 2026/27. The <strong>uk capital gains tax rates residential property 2026</strong> are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to the chargeable gain after deducting your annual exempt amount, which is £3,000 for 2025/26 and remains at £3,000 for 2026/27.</p>
 
 <p>This article covers the current rates, how they apply to different taxpayers, the reporting rules, and the reliefs that still exist. Whether you are selling a buy-to-let property, a second home, or a property you inherited, the same rates apply. The only exception is your main residence, which qualifies for Private Residence Relief.</p>
