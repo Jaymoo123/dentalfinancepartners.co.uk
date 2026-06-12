@@ -20,3 +20,12 @@
 - Stale BADR 10% spots inside `earn-out-tax-treatment-hmrc-agency-sale` and `selling-agency-tax-implications` bodies (operative statements say 14%, a couple of older in-body mentions still say 10%) — flagged during meta batch 1, queued for the FA-2026 stale-figure sweep.
 - GA4 not configured for this site (first-party analytics runs).
 - Net-new/rewrite content programs: not yet onboarded (see `docs/_engines/ENGINE_MAP_AND_ONBOARDING.md`).
+
+## Blog audit + rewrite program (2026-06-12)
+
+- Provenance: 306 claude-supabase (low confidence; subtree-merge masks true origin). Agency never had a DeepSeek generator.
+- Blind quality audit: corpus sound (1 a_star / 4 acceptable / 1 needs_rewrite). The needs_rewrite page is remittance-basis-dubai: suspect FIG transitional description, queued for review.
+- Rewrite worklist: `docs/agency/rewrite_worklist_2026-06-12.md`. Tier A+B = 3 pages, all in SERP meta cooldown until 2026-06-26. Execution deferred to next cycle when GSC matures (approximately 4 weeks from now). house_positions still to author before any agency wave.
+- Approximately 45 pages carry stale 13.8%/GBP9,100 employer NIC (sweep queued estate-wide).
+- generator: frontmatter field now stamped on all posts and written by all pipelines going forward (see docs/_engines/ENGINE_MAP_AND_ONBOARDING.md section 5).
+- Methodology: docs/deepseek_quality_audit_2026-06-12.md + docs/provenance_summary_2026-06-12.md + docs/_engines/rewrite_gold_patterns.md.

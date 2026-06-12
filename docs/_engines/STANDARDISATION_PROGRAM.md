@@ -33,6 +33,8 @@
 
 Cross-site optimisation engines: `docs/_engines/SERP_META_PROGRAM.md` (query-driven meta, monthly cadence), `REWRITE_PROGRAM.md`, `NETNEW_PROGRAM.md`, `HUMANISE_PROGRAM.md`, `ENGINE_MAP_AND_ONBOARDING.md` (which engines run where + onboarding). Per-site content-gap registers: `docs/<site>/opportunity_register_meta_<date>.md`.
 
+2026-06-12 blog audit + rewrite program: provenance + worklists + quality audit shipped; see `docs/provenance_summary_2026-06-12.md` + `docs/deepseek_quality_audit_2026-06-12.md` + per-site STATE entries.
+
 ## The record (read in this order if you need depth)
 
 1. `PROPERTY-CAPABILITY-STANDARD.md` — the frozen 71-capability standard everything was audited against.

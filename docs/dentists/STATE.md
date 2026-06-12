@@ -62,3 +62,12 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 - Wave 1 surfaced a rewrite-engine backlog (FA-2026 rate-currency staleness: BADR 10% pages, sole-trader-vs-ltd "saves £5k", pre-FA-2026 dividend pages) — see wave1_page_tracker flags F-1..F-4.
 
 - SERP META BATCH 1 (2026-06-12): 35 pages re-titled/re-described from fresh 90d GSC + Bing query data, deployed + IndexNow'd; 90-day regression watch in monitored_pages (to 2026-09-10); engine + methodology in docs/_engines/SERP_META_PROGRAM.md; content-gap follow-ups in docs/dentists/opportunity_register_meta_2026-06-12.md.
+
+## Blog audit + rewrite program (2026-06-12)
+
+- Provenance: 95 deepseek / 55 claude / 54 opus-wave (204 posts total).
+- Blind quality audit: untouched deepseek failed 2/2 (both AIA pages: stale 18% WDA citing the old rate, not the FA 2026 14% WDA); de-staled deepseek passed 3/3 (the 2026-06-03 de-stale held); claude passed 2/3 (dental-group-structure has an SSE-applies-to-dividends error plus no sources, queued for rewrite).
+- Rewrite worklist: `docs/dentists/rewrite_worklist_2026-06-12.md`. Tier A+B = 6 pages (wave DEN-R1) but all 6 are in SERP meta cooldown until 2026-06-26, so wave DEN-R1 starts after that date. Tier C = 88 zero-traction deepseek pages, deferred to a prune/consolidate decision (lean-prune posture per Opus adjudication).
+- Known debt: HP LEL figure 6,708 is stale (verified correct = 6,500 for 2025/26); 2 pages carry stale 13.8%/9,100 employer NIC (sweep queued estate-wide).
+- generator: frontmatter field now stamped on all posts and written by all pipelines going forward (see docs/_engines/ENGINE_MAP_AND_ONBOARDING.md section 5).
+- Methodology: docs/deepseek_quality_audit_2026-06-12.md + docs/provenance_summary_2026-06-12.md + docs/_engines/rewrite_gold_patterns.md.
