@@ -97,10 +97,10 @@ No batch assignment. Monitor for trajectory changes.
 
 | Slug | Era | Score | Impr | Trajectory |
 |------|-----|-------|------|------------|
-| `buying-a-uk-law-firm-financial-due-diligence` | deepseek | 8.6 | 19 | improving |
-| `law-firm-accountant-leeds` | claude-supabase | 1.5 | 3 | trivial |
-| `xero-for-solicitors` | claude-supabase | 1.5 | 3 | stable |
-| `law-firm-valuation-guide-uk-solicitors` | claude-supabase | 1.5 | 5 | trivial |
+| `buying-a-uk-law-firm-financial-due-diligence` | deepseek | 7.4 | 19 | improving |
+| `law-firm-accountant-leeds` | claude-supabase | 1.9 | 3 | trivial |
+| `xero-for-solicitors` | claude-supabase | 1.9 | 3 | stable |
+| `law-firm-valuation-guide-uk-solicitors` | claude-supabase | 1.9 | 5 | trivial |
 | `client-money-accounting-solicitors` | claude-supabase | 0.0 | 0 | trivial |
 | `cofa-responsibilities-accounting` | claude-supabase | 0.0 | 0 | trivial |
 | `law-firm-accountant-manchester` | claude-supabase | 0.0 | 0 | trivial |

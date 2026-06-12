@@ -51,6 +51,13 @@ ERA_FACTOR: dict[str, float] = {
     "claude-supabase": 1.0,
 }
 
+# Per-site overrides (quality-audit adjudication, docs/deepseek_quality_audit_2026-06-12.md):
+# solicitors graded weak in BOTH eras (claude worse), so era must not order that
+# queue; demand does. Both flattened to 1.3.
+ERA_FACTOR_SITE_OVERRIDES: dict[str, dict[str, float]] = {
+    "solicitors": {"deepseek": 1.3, "claude-supabase": 1.3},
+}
+
 TRAJECTORY_FACTOR: dict[str, float] = {
     "declining": 1.5,
     "dormant": 1.3,
@@ -401,10 +408,12 @@ def _rewrite_score(
     dominant_position: float | None,
     trajectory: str,
     era: str,
+    site: str = "",
 ) -> float:
     pf = _position_factor(dominant_position)
     tf = TRAJECTORY_FACTOR.get(trajectory, 1.0)
-    ef = ERA_FACTOR.get(era, 1.0)
+    site_overrides = ERA_FACTOR_SITE_OVERRIDES.get(site, {})
+    ef = site_overrides.get(era, ERA_FACTOR.get(era, 1.0))
     return round(impressions_90d * pf * tf * ef, 3)
 
 
@@ -733,7 +742,7 @@ def build_rewrite_worklist(site: str) -> dict:
             excluded_count += 1
             continue
 
-        score = _rewrite_score(impr, dominant_pos, trajectory, era)
+        score = _rewrite_score(impr, dominant_pos, trajectory, era, site)
 
         # Cooldown annotation: check any of the associated page_urls
         cooldown_until = None
