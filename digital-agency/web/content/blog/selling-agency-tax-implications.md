@@ -1,33 +1,41 @@
 ---
-title: "Selling Your Agency: Tax Implications Every UK Founder Must Know"
-slug: "selling-agency-tax-implications"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Selling Your Agency Tax UK: BADR, CGT & Exit Strategy"
-metaDescription: "Selling your agency? Tax can take 20-40% of your proceeds. We explain BADR, share structures, and how to keep more of your exit value."
-altText: "ICAEW qualified accountant reviewing sale documents with agency founder in London office"
-image: "/blog/selling-agency-tax-implications.jpg"
+title: 'Selling Your Agency: Tax Implications Every UK Founder Must Know'
+slug: selling-agency-tax-implications
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Selling Your Agency: UK Tax, BADR and CGT Explained'
+metaDescription: Plan your agency exit so you keep more of it. BADR cuts CGT to 14% on the first £1m of gains if you qualify. See structures, timing and traps.
+altText: ICAEW qualified accountant reviewing sale documents with agency founder in London office
+image: /blog/selling-agency-tax-implications.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/"
-  source: "Pexels"
-h1: "Selling Your Agency: The Tax Implications Every UK Founder Must Know"
-summary: "Selling your agency is the biggest financial event of your career. Without proper planning, HMRC can take 20-40% of your sale proceeds. This guide covers BADR, share structures, timing, and the specific tax traps that catch agency founders."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/
+  source: Pexels
+h1: 'Selling Your Agency: The Tax Implications Every UK Founder Must Know'
+summary: Selling your agency is the biggest financial event of your career. Without proper planning, HMRC can take 20-40% of your sale proceeds. This guide covers BADR, share structures, timing, and the specific tax traps that catch agency founders.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International tax"]},{"@type":"Article","headline":"Selling Your Agency: Tax Implications Every UK Founder Must Know","description":"Plan your agency exit so you keep more of it. BADR cuts CGT to 14% on the first £1m of gains if you qualify. See structures, timing and traps.","url":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications","datePublished":"2026-05-16","dateModified":"2026-06-12","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International
+  tax"]},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/selling-agency-tax-implications.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"Growth and Exit","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit"},{"@type":"ListItem","position":3,"name":"Selling Your Agency: Tax Implications Every UK Founder Must Know","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the tax rate when selling an agency in the UK?","acceptedAnswer":{"@type":"Answer","text":"The rate depends on whether you qualify for Business Asset Disposal Relief (BADR). If you meet the conditions, you pay 14% on the first £1m of gains. Above that, you pay 20%. If you do not qualify for BADR, you pay 20% on the entire gain. Asset sales are taxed differently and often result in higher effective rates."}},{"@type":"Question","name":"How long must I own my agency shares to qualify for BADR?","acceptedAnswer":{"@type":"Answer","text":"You must hold qualifying shares for at least two years before the date of sale. The shares must give you at least 5% of the ordinary share
+  capital and voting rights, and you must be an employee or director of the company throughout that period. If you restructure your shares, the two-year clock may reset."}},{"@type":"Question","name":"Can I avoid tax by selling my agency from the UAE?","acceptedAnswer":{"@type":"Answer","text":"Non-UK residents generally do not pay UK CGT on share sales, provided the shares are not linked to UK land. However, anti-avoidance rules can claw back gains if you were UK resident in the five years before the sale. You must also pass the Statutory Residence Test to prove non-residence. UAE residents pay no capital gains tax in the UAE, but UK rules still apply to UK assets."}},{"@type":"Question","name":"What happens if the buyer wants an asset sale instead of a share sale?","acceptedAnswer":{"@type":"Answer","text":"An asset sale means the company sells its assets (clients, goodwill, equipment) rather than you selling your shares. The company pays corporation tax on the profit, then you extract the cash via dividends or liquidation. The effective tax rate is often higher than a share sale. If the buyer insists on an asset sale, consider a solvent liquidation (MVL) to get capital treatment on the proceeds."}}]}]}'
 faqs:
-  - question: "What is the tax rate when selling an agency in the UK?"
-    answer: "The rate depends on whether you qualify for Business Asset Disposal Relief (BADR). If you meet the conditions, you pay 14% on the first £1m of gains. Above that, you pay 20%. If you do not qualify for BADR, you pay 20% on the entire gain. Asset sales are taxed differently and often result in higher effective rates."
-  - question: "How long must I own my agency shares to qualify for BADR?"
-    answer: "You must hold qualifying shares for at least two years before the date of sale. The shares must give you at least 5% of the ordinary share capital and voting rights, and you must be an employee or director of the company throughout that period. If you restructure your shares, the two-year clock may reset."
-  - question: "Can I avoid tax by selling my agency from the UAE?"
-    answer: "Non-UK residents generally do not pay UK CGT on share sales, provided the shares are not linked to UK land. However, anti-avoidance rules can claw back gains if you were UK resident in the five years before the sale. You must also pass the Statutory Residence Test to prove non-residence. UAE residents pay no capital gains tax in the UAE, but UK rules still apply to UK assets."
-  - question: "What happens if the buyer wants an asset sale instead of a share sale?"
-    answer: "An asset sale means the company sells its assets (clients, goodwill, equipment) rather than you selling your shares. The company pays corporation tax on the profit, then you extract the cash via dividends or liquidation. The effective tax rate is often higher than a share sale. If the buyer insists on an asset sale, consider a solvent liquidation (MVL) to get capital treatment on the proceeds."
+- question: What is the tax rate when selling an agency in the UK?
+  answer: The rate depends on whether you qualify for Business Asset Disposal Relief (BADR). If you meet the conditions, you pay 14% on the first £1m of gains. Above that, you pay 20%. If you do not qualify for BADR, you pay 20% on the entire gain. Asset sales are taxed differently and often result in higher effective rates.
+- question: How long must I own my agency shares to qualify for BADR?
+  answer: You must hold qualifying shares for at least two years before the date of sale. The shares must give you at least 5% of the ordinary share capital and voting rights, and you must be an employee or director of the company throughout that period. If you restructure your shares, the two-year clock may reset.
+- question: Can I avoid tax by selling my agency from the UAE?
+  answer: Non-UK residents generally do not pay UK CGT on share sales, provided the shares are not linked to UK land. However, anti-avoidance rules can claw back gains if you were UK resident in the five years before the sale. You must also pass the Statutory Residence Test to prove non-residence. UAE residents pay no capital gains tax in the UAE, but UK rules still apply to UK assets.
+- question: What happens if the buyer wants an asset sale instead of a share sale?
+  answer: An asset sale means the company sells its assets (clients, goodwill, equipment) rather than you selling your shares. The company pays corporation tax on the profit, then you extract the cash via dividends or liquidation. The effective tax rate is often higher than a share sale. If the buyer insists on an asset sale, consider a solvent liquidation (MVL) to get capital treatment on the proceeds.
+metaTitle_prev: 'Selling Your Agency Tax UK: BADR, CGT & Exit Strategy'
+metaDescription_prev: Selling your agency? Tax can take 20-40% of your proceeds. We explain BADR, share structures, and how to keep more of your exit value.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you own a marketing, digital, or creative agency in the UK, your exit is likely the single biggest financial event of your career. But the difference between walking away with £1.2 million and walking away with £780,000 often comes down to one thing: how you structured the sale for tax purposes.</p>
 
 <p>This is not a theoretical exercise. The tax you pay on selling your agency depends on share structure, timing, the type of buyer, and whether you qualify for Business Asset Disposal Relief (BADR). Get it right and you keep 90% of your proceeds. Get it wrong and HMRC takes 40%.</p>

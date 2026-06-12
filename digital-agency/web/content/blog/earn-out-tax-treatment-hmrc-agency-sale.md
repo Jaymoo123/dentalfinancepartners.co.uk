@@ -5,8 +5,8 @@ canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-
 date: '2026-05-16'
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
-metaTitle: 'Earn-out tax treatment HMRC agency sale: 2025/26 rules'
-metaDescription: Selling your agency with an earn-out? HMRC taxes it differently depending on structure. We cover capital gains, income treatment, and BADR eligibility
+metaTitle: 'Earn-Out Tax Treatment: HMRC Rules for Agency Sales'
+metaDescription: Get an agency earn-out taxed as capital, not income. Structured wrong, you pay 45% instead of 14% with BADR. See how HMRC decides.
 altText: Two agency founders signing a sale agreement in a London office meeting room, with a calculator and documents on the table
 image: /blog/earn-out-tax-treatment-hmrc-agency-sale.jpg
 imageCredit:
@@ -16,7 +16,8 @@ imageCredit:
   source: Pexels
 h1: What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?
 summary: Selling your agency with an earn-out is common, but HMRC treats the deferred consideration differently depending on how the deal is structured. This article covers the tax treatment of earn-outs under current HMRC rules, including capital gains vs income, BADR eligibility, and how to structure the deal to minimise your tax bill.
-schema: ''
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International tax"]},{"@type":"Article","headline":"What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?","description":"Get an agency earn-out taxed as capital, not income. Structured wrong, you pay 45% instead of 14% with BADR. See how HMRC decides.","url":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale","datePublished":"2026-05-16","dateModified":"2026-06-12","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate
+  tax","International tax"]},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/earn-out-tax-treatment-hmrc-agency-sale.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"Growth and Exit","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit"},{"@type":"ListItem","position":3,"name":"What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"}]}]}'
 faqs: []
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
@@ -26,6 +27,13 @@ keyTakeaways:
 - Income tax on earn-outs can reach 45% plus 2% Class 4 National Insurance, or 13.8% Employer NI if paid via employment.
 - To qualify for BADR on an earn-out, you must have held at least 5% of shares and been an officer or employee for two years before the sale.
 - 'HMRC examines the substance of the earn-out: if conditional on your personal performance, it is likely treated as income, not capital.'
+metaTitle_prev: 'Earn-out tax treatment HMRC agency sale: 2025/26 rules'
+metaDescription_prev: Selling your agency with an earn-out? HMRC taxes it differently depending on structure. We cover capital gains, income treatment, and BADR eligibility
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <h2>The Earn-Out: A Common Feature of Agency Sales</h2>
 

@@ -1,33 +1,41 @@
 ---
-title: "What Counts as a UK Day Under the Statutory Residence Test for Agency Founders?"
-slug: "what-counts-as-a-uk-day-statutory-residence-test-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Day Counting for the Statutory Residence Test: Agency"
-metaDescription: "HMRC’s statutory residence test day counting rules are the most common tripwire for agency founders leaving the UK. Here’s what counts as a UK day"
-altText: "Agency founder reviewing flight itinerary and calendar at desk in London office, calculating UK days for statutory residence test"
-image: "/blog/what-counts-as-a-uk-day-statutory-residence-test-agency-founders.jpg"
+title: What Counts as a UK Day Under the Statutory Residence Test for Agency Founders?
+slug: what-counts-as-a-uk-day-statutory-residence-test-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: What Counts as a UK Day? The Statutory Residence Test
+metaDescription: One miscounted midnight can make you UK tax resident. Recently UK-resident founders get 46 days under the automatic overseas test. Count every UK day.
+altText: Agency founder reviewing flight itinerary and calendar at desk in London office, calculating UK days for statutory residence test
+image: /blog/what-counts-as-a-uk-day-statutory-residence-test-agency-founders.jpg
 imageCredit:
-  photographer: "Black  ice"
-  photographerUrl: "https://www.pexels.com/@black-ice-551383"
-  sourceUrl: "https://www.pexels.com/photo/lots-of-numbers-1314543/"
-  source: "Pexels"
-h1: "What Counts as a UK Day Under the Statutory Residence Test for Agency Founders?"
-summary: "If you are an agency founder planning to leave the UK for Dubai or another jurisdiction, understanding what HMRC counts as a UK day is the single most common point of confusion and error. This guide explains the statutory residence test day counting rules in plain English, with real examples for agency founders."
-schema: ""
+  photographer: Black  ice
+  photographerUrl: https://www.pexels.com/@black-ice-551383
+  sourceUrl: https://www.pexels.com/photo/lots-of-numbers-1314543/
+  source: Pexels
+h1: What Counts as a UK Day Under the Statutory Residence Test for Agency Founders?
+summary: If you are an agency founder planning to leave the UK for Dubai or another jurisdiction, understanding what HMRC counts as a UK day is the single most common point of confusion and error. This guide explains the statutory residence test day counting rules in plain English, with real examples for agency founders.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International tax"]},{"@type":"Article","headline":"What Counts as a UK Day Under the Statutory Residence Test for Agency Founders?","description":"One miscounted midnight can make you UK tax resident. Recently UK-resident founders get 46 days under the automatic overseas test. Count every UK day.","url":"https://www.agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders","datePublished":"2026-05-16","dateModified":"2026-06-12","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant
+  (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International tax"]},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/what-counts-as-a-uk-day-statutory-residence-test-agency-founders.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"International Agencies","item":"https://www.agencyfounderfinance.co.uk/blog/international-agencies"},{"@type":"ListItem","position":3,"name":"What Counts as a UK Day Under the Statutory Residence Test for Agency Founders?","item":"https://www.agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between a UK day and a midnight under the statutory residence test?","acceptedAnswer":{"@type":"Answer","text":"Under the current rules, a UK day is defined as being present in the UK at midnight. So a UK day and a midnight are effectively the same thing. If you are in the UK at any point during a day and you are still there at midnight, that whole day counts. Even if you arrive at 11pm and leave at 5am, you have spent two midnights and therefore
+  two UK days."}},{"@type":"Question","name":"Can I spend 45 days in the UK and still be non-resident?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you were UK resident in any of the previous three tax years, you can spend up to 45 days in the UK without triggering automatic UK residence under the automatic overseas test. But you must also pass the sufficient ties test. If you keep a UK home or have strong family ties, you may become resident even with fewer than 46 days. The 45-day threshold is a safe harbour only if you have no other UK ties."}},{"@type":"Question","name":"Does a flight connection at Heathrow count as a UK day?","acceptedAnswer":{"@type":"Answer","text":"No, if you are in the UK solely for the purpose of transiting from one country to another and you leave the same day, that day does not count as a UK day under the transit exception. However, if you stay overnight in a hotel and are present at midnight, it counts. The transit exception is very narrow. It does not cover a layover where you leave the airport or stay overnight."}},{"@type":"Question","name":"What happens if I accidentally spend 47 days in the UK?","acceptedAnswer":{"@type":"Answer","text":"If you spend 47 days in the UK and you were UK resident in any of the previous three tax years, you fail the automatic overseas test. You then move to the sufficient ties test. If you have any UK ties (family, accommodation, work, or presence ties), you will likely be UK resident for the entire tax year. That means your worldwide income for that year is subject to UK tax. It is a costly mistake."}}]}]}'
 faqs:
-  - question: "What is the difference between a UK day and a midnight under the statutory residence test?"
-    answer: "Under the current rules, a UK day is defined as being present in the UK at midnight. So a UK day and a midnight are effectively the same thing. If you are in the UK at any point during a day and you are still there at midnight, that whole day counts. Even if you arrive at 11pm and leave at 5am, you have spent two midnights and therefore two UK days."
-  - question: "Can I spend 45 days in the UK and still be non-resident?"
-    answer: "Yes, if you were UK resident in any of the previous three tax years, you can spend up to 45 days in the UK without triggering automatic UK residence under the automatic overseas test. But you must also pass the sufficient ties test. If you keep a UK home or have strong family ties, you may become resident even with fewer than 46 days. The 45-day threshold is a safe harbour only if you have no other UK ties."
-  - question: "Does a flight connection at Heathrow count as a UK day?"
-    answer: "No, if you are in the UK solely for the purpose of transiting from one country to another and you leave the same day, that day does not count as a UK day under the transit exception. However, if you stay overnight in a hotel and are present at midnight, it counts. The transit exception is very narrow. It does not cover a layover where you leave the airport or stay overnight."
-  - question: "What happens if I accidentally spend 47 days in the UK?"
-    answer: "If you spend 47 days in the UK and you were UK resident in any of the previous three tax years, you fail the automatic overseas test. You then move to the sufficient ties test. If you have any UK ties (family, accommodation, work, or presence ties), you will likely be UK resident for the entire tax year. That means your worldwide income for that year is subject to UK tax. It is a costly mistake."
+- question: What is the difference between a UK day and a midnight under the statutory residence test?
+  answer: Under the current rules, a UK day is defined as being present in the UK at midnight. So a UK day and a midnight are effectively the same thing. If you are in the UK at any point during a day and you are still there at midnight, that whole day counts. Even if you arrive at 11pm and leave at 5am, you have spent two midnights and therefore two UK days.
+- question: Can I spend 45 days in the UK and still be non-resident?
+  answer: Yes, if you were UK resident in any of the previous three tax years, you can spend up to 45 days in the UK without triggering automatic UK residence under the automatic overseas test. But you must also pass the sufficient ties test. If you keep a UK home or have strong family ties, you may become resident even with fewer than 46 days. The 45-day threshold is a safe harbour only if you have no other UK ties.
+- question: Does a flight connection at Heathrow count as a UK day?
+  answer: No, if you are in the UK solely for the purpose of transiting from one country to another and you leave the same day, that day does not count as a UK day under the transit exception. However, if you stay overnight in a hotel and are present at midnight, it counts. The transit exception is very narrow. It does not cover a layover where you leave the airport or stay overnight.
+- question: What happens if I accidentally spend 47 days in the UK?
+  answer: If you spend 47 days in the UK and you were UK resident in any of the previous three tax years, you fail the automatic overseas test. You then move to the sufficient ties test. If you have any UK ties (family, accommodation, work, or presence ties), you will likely be UK resident for the entire tax year. That means your worldwide income for that year is subject to UK tax. It is a costly mistake.
+metaTitle_prev: 'UK Day Counting for the Statutory Residence Test: Agency'
+metaDescription_prev: HMRC’s statutory residence test day counting rules are the most common tripwire for agency founders leaving the UK. Here’s what counts as a UK day
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you are an agency founder planning to leave the UK for Dubai or another jurisdiction, the single most common point of confusion and error is what HMRC counts as a UK day. Get this wrong, and your carefully planned exit date shifts by months. Get it right, and you save tens of thousands in tax.</p>
 
 <p>The <strong>statutory residence test day counting</strong> rules are set out in Schedule 45 of the Finance Act 2013. They are not optional guidance. They are law. And they catch out more agency founders than almost any other rule in the non-dom or non-resident playbook.</p>
