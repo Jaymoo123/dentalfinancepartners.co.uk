@@ -18,6 +18,14 @@ Ground truth for what resolves:
 HARD = 404 (no file, or wrong category, or unknown flat slug, or unknown city).
 SOFT = resolves via a 301 hop (works, but a direct link is cleaner; a 301 that
        points back to the SAME page is a self-loop worth removing).
+
+FLAT ROUTING MODE (--flat or --site medical):
+  Some sites (Medical) use FLAT blog routing: /blog/<slug> (two segments).
+  A three-segment /blog/<category>/<slug> link does NOT exist on those sites and
+  404s. Pass --flat (or --site medical which auto-enables flat mode) to switch
+  the auditor into flat-routing validation. In flat mode the nested classify logic
+  is replaced by the same model used in scripts/medical_flat_link_audit.py
+  (which remains the dedicated flat auditor; this --flat flag is additive).
 """
 import json
 import re
@@ -37,6 +45,12 @@ def _arg_site() -> str:
 
 
 SITE = _arg_site()
+
+# FLAT routing mode: auto-enable for known flat-routed sites (medical), or via --flat flag.
+# Flat sites serve posts at /blog/<slug> (2 segments). A 3-segment /blog/<cat>/<slug>
+# does not exist and 404s. This mirrors scripts/medical_flat_link_audit.py logic.
+_FLAT_SITES = {"medical"}
+FLAT = ("--flat" in sys.argv) or (SITE in _FLAT_SITES)
 
 
 def _load_site_cfg(site: str) -> dict:
@@ -142,7 +156,41 @@ for f in BLOG.glob("*.md"):
     slug_to_filecat[slug] = cat
 
 
+def classify_flat(path: str):
+    """Flat-routing classifier (medical and any FLAT site).
+    Posts live at /blog/<slug> (two segments). A three-segment
+    /blog/<cat>/<slug> path does NOT exist and is a HARD 404.
+    Mirrors the logic in scripts/medical_flat_link_audit.py (which remains
+    the dedicated flat auditor; this function is the inline equivalent for
+    when --flat / --site <flat-site> is passed to this shared auditor).
+    """
+    p = path.split("#")[0].split("?")[0].rstrip("/")
+    parts = [x for x in p.strip("/").split("/") if x]
+    if not parts:
+        return ("ok", "root")
+    if parts[0] == "locations" and len(parts) == 2:
+        city = parts[1]
+        if city in VALID_LOCATIONS:
+            return ("ok", "location")
+        return ("HARD", f"location-404 (/locations/{city})")
+    if parts[0] == "blog":
+        if len(parts) == 1:
+            return ("ok", "blog-index")
+        if len(parts) == 2:
+            x = parts[1]
+            if x in valid_slugs:
+                return ("ok", "post")
+            if x in valid_categories:
+                return ("ok", "category-index")
+            return ("HARD", f"no-post-or-category (/blog/{x})")
+        # 3+ segments: no nested post route on flat sites
+        return ("HARD", f"nested-not-routed (flat site: /blog/{'/'.join(parts[1:])})")
+    return ("other", path)
+
+
 def classify(path: str, source_slug: str):
+    if FLAT:
+        return classify_flat(path)
     p = path.split("#")[0].split("?")[0].rstrip("/")
     parts = [x for x in p.strip("/").split("/") if x]
     if not parts:

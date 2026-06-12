@@ -19,8 +19,12 @@ const site = A.site || 'property'
 // The site's house_positions doc is the authoritative ground-truth; there are NO
 // hardcoded tax facts in the QA/fix prompts. Add an entry to onboard a new site.
 const SITES = {
-  property: { blogDir: 'Property/web/content/blog', domain: 'propertytaxpartners.co.uk', hp: 'docs/property/house_positions.md', adviser: 'UK property tax accountant' },
-  dentists: { blogDir: 'Dentists/web/content/blog', domain: 'www.dentalfinancepartners.co.uk', hp: 'docs/dentists/house_positions.md', adviser: 'UK dental practice and associate tax accountant' },
+  property:   { blogDir: 'Property/web/content/blog',       domain: 'propertytaxpartners.co.uk',        hp: 'docs/property/house_positions.md',   adviser: 'UK property tax accountant' },
+  dentists:   { blogDir: 'Dentists/web/content/blog',       domain: 'www.dentalfinancepartners.co.uk',   hp: 'docs/dentists/house_positions.md',   adviser: 'UK dental practice and associate tax accountant' },
+  solicitors: { blogDir: 'Solicitors/web/content/blog',     domain: 'www.accountsforlawyers.co.uk',      hp: 'docs/solicitors/house_positions.md', adviser: 'UK solicitor and law-firm accountant' },
+  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccountantsuk.co.uk',    hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
+  generalist: { blogDir: 'generalist/web/content/blog',     domain: 'www.hollowaydavies.co.uk',          hp: 'docs/generalist/house_positions.md', adviser: 'UK general practice accountant for owner-managed businesses' },
+  agency:     { blogDir: 'digital-agency/web/content/blog', domain: 'www.agencyfounderfinance.co.uk',    hp: 'docs/agency/house_positions.md',     adviser: 'UK accountant for digital and creative agency founders' },
 }
 const cfg = SITES[site]
 if (!cfg) throw new Error(`track2_qa_autofix_runner: unknown site '${site}'. Add a SITES entry (blogDir/domain/hp/adviser from sites/${site}.json) first.`)
@@ -102,7 +106,9 @@ Read ${cfg.blogDir}/${slug}.md (frontmatter + body). The AUTHORITATIVE ground-tr
 1. ARITHMETIC (re-derive, do NOT trust the page): find EVERY worked example and numeric claim. Recompute each one yourself from first principles and record it in arithmetic_recomputed[] with the page's figure, your figure, and whether they agree. Do NOT trust the page's figure OR your own training prior for any recently-changed rate (the model defaults to the OLD value for anything changed post-cutoff or by a recent Finance Act); confirm against ${cfg.hp} or primary source.
 2. STATUTE (WebFetch each, verify substance + Royal Assent): for EVERY statute/section/Finance Act cited, WebFetch legislation.gov.uk and record it in statute_checks[]: does the section exist, does its operative wording actually support the page's claim (not just that the URL loads, a section can be gutted by a later amendment while the URL stays live), and for any Finance Act is the Royal Assent date verified and consistent with the framing (enacted vs draft). CROSS-CHECK every rate/threshold/figure and every statutory citation against ${cfg.hp} (this site's locked ground-truth) and flag any page figure or citation that contradicts it. SECONDARY-SOURCE RULE (mandatory for any figure/rate changed in the last ~18 months, anything tied to a recent Finance Act or dated 2025/2026): legislation.gov.uk's "Latest available (revised)" view can LAG in applying an enacted amendment and silently serve the OLD text (sometimes with a "changes not yet applied" note). So you MUST corroborate every recently-changed figure against a SECOND source, the GOV.UK measure/policy paper or the relevant HMRC manual, and only set content_supports_claim=true if BOTH agree; note the secondary source in the citation string. A single-source legislation.gov.uk PASS on a recently-changed figure is NOT sufficient.
 3. PRICING/COMPLIANCE: ANY firm fee figures, fee ranges, hourly rates, or percentage-of-rent fees = blocking (lead-gen model bans on-site pricing). Legitimate tax figures (£3,000 AEA, SDLT bands, MTD thresholds) are fine.
-4. LINKS: confirm every internal /blog link resolves (set links_resolve). The deterministic auditor is scripts/track2_link_audit.py - a correct slug under the wrong category 404s.
+4. LINKS: confirm every internal /blog link resolves (set links_resolve). ${cfg.flatBlog
+    ? 'FLAT routing: links must be /blog/<slug> (two segments). Any /blog/<category>/<slug> three-segment link is a HARD 404. Use scripts/medical_flat_link_audit.py (or scripts/track2_link_audit.py --site ' + site + ' with awareness that it models nested routing — prefer the flat auditor for medical).'
+    : 'The deterministic auditor is scripts/track2_link_audit.py - a correct slug under the wrong category 404s.'}
 5. WRITING QUALITY: expert, specific, human (not generic AI filler)? Any em-dashes? Leaked markup / broken HTML? Does local/topic specificity ring true?
 6. CANNIBALISATION: does it duplicate a stronger sibling?
 7. QUERY COVERAGE: run \`python scripts/track2_query_coverage.py --slug ${slug} --site ${site} --json\`. TRUST its numbers - record high_demand_covered_pct from it and set uncovered_high_demand to its missing_queries[] entries where impr>=50 ("GSC/Bing queries with impr>=gate NOT served"). You ONLY judge query_coverage.natural: set natural=false if target queries are stuffed (repeated to game a checker) or dumped as a bare list rather than woven into prose/headings/FAQs.
@@ -317,7 +323,7 @@ async function processPage(slug) {
     // (1) QA agent - verbatim independent-QA reviewer prompt + SCHEMA.
     verdict = await agent(
       qaPrompt(slug),
-      { label: round === 0 ? `qa:${slug}` : `reqa:${slug}`, phase: 'QA', schema: SCHEMA }
+      { label: round === 0 ? `qa:${slug}` : `reqa:${slug}`, phase: 'QA', schema: SCHEMA, model: 'sonnet' }
     ).catch(() => null)
     if (!verdict) { // QA itself failed -> escalate, nothing to record reliably
       result = { slug, all_clear: false, rounds: round, signoff: 'blocking-issues',
@@ -328,7 +334,7 @@ async function processPage(slug) {
     // (1b) EDITORIAL agent - a SEPARATE writing-quality reviewer (distinct from
     // the factual QA above). Merge its result onto verdict.editorial before
     // deriveAllClear / persisting. Null-safe default = pass (adequate / human).
-    const ed = await agent(editorPrompt(slug), { label: `editorial:${slug}`, phase: 'Editorial', schema: EDITORIAL_SCHEMA }).catch(() => null)
+    const ed = await agent(editorPrompt(slug), { label: `editorial:${slug}`, phase: 'Editorial', schema: EDITORIAL_SCHEMA, model: 'sonnet' }).catch(() => null)
     verdict.editorial = ed || { grade: 'adequate', reads_human: true, issues: [] }
 
     // (2) Derive all_clear in JS (mirror of qa_verdict.py), AND-ed with reported flag.
@@ -354,7 +360,7 @@ async function processPage(slug) {
     const fixList = fixable.map(c => c.item)
     const fixRes = await agent(
       fixPrompt(slug, fixList),
-      { label: `fix:${slug}`, phase: 'Fix', schema: FIX_SCHEMA }
+      { label: `fix:${slug}`, phase: 'Fix', schema: FIX_SCHEMA, model: 'sonnet' }
     ).catch(() => null)
 
     // If the fix agent returned NOTHING at all, it cannot proceed -> escalate-exit
@@ -401,7 +407,7 @@ async function processPage(slug) {
 
 JSON to write:
 ${JSON.stringify(result.verdict, null, 2)}`,
-    { label: `record:${slug}`, phase: 'Record', schema: RECORD_SCHEMA }
+    { label: `record:${slug}`, phase: 'Record', schema: RECORD_SCHEMA, model: 'sonnet' }
   ).catch(() => null)
 
   return result

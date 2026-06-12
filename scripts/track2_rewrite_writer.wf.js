@@ -28,10 +28,19 @@ const WRITER_MODEL = 'sonnet-4.6'
 // in this workflow (that was the property-only leak). To onboard a new site, add an
 // entry here from its sites/<site>.json + house_positions path.
 const SITES = {
-  property: { blogDir: 'Property/web/content/blog', domain: 'propertytaxpartners.co.uk',
-              hp: 'docs/property/house_positions.md', adviser: 'UK property tax accountant' },
-  dentists: { blogDir: 'Dentists/web/content/blog', domain: 'www.dentalfinancepartners.co.uk',
-              hp: 'docs/dentists/house_positions.md', adviser: 'UK dental practice and associate tax accountant' },
+  property:   { blogDir: 'Property/web/content/blog',       domain: 'propertytaxpartners.co.uk',
+                hp: 'docs/property/house_positions.md',      adviser: 'UK property tax accountant' },
+  dentists:   { blogDir: 'Dentists/web/content/blog',       domain: 'www.dentalfinancepartners.co.uk',
+                hp: 'docs/dentists/house_positions.md',      adviser: 'UK dental practice and associate tax accountant' },
+  solicitors: { blogDir: 'Solicitors/web/content/blog',     domain: 'www.accountsforlawyers.co.uk',
+                hp: 'docs/solicitors/house_positions.md',    adviser: 'UK solicitor and law-firm accountant' },
+  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccountantsuk.co.uk',
+                hp: 'docs/medical/house_positions.md',       adviser: 'UK medical professional and GP practice accountant',
+                flatBlog: true },
+  generalist: { blogDir: 'generalist/web/content/blog',     domain: 'www.hollowaydavies.co.uk',
+                hp: 'docs/generalist/house_positions.md',    adviser: 'UK general practice accountant for owner-managed businesses' },
+  agency:     { blogDir: 'digital-agency/web/content/blog', domain: 'www.agencyfounderfinance.co.uk',
+                hp: 'docs/agency/house_positions.md',        adviser: 'UK accountant for digital and creative agency founders' },
 }
 const cfg = SITES[site]
 if (!cfg) throw new Error(`track2_rewrite_writer: unknown site '${site}'. Add a SITES entry (blogDir/domain/hp/adviser from sites/${site}.json) before running the rewrite engine for it.`)
@@ -49,7 +58,11 @@ HARD RULES (non-negotiable):
 - VERIFY AT SOURCE, distrust your prior: WebFetch legislation.gov.uk for EVERY statute/section/Finance Act you cite and confirm its operative wording supports the claim (URL liveness alone is insufficient) and, for a Finance Act, its Royal Assent. CRITICAL: do NOT rely on your training prior for any rate/threshold that may have changed recently (post-cutoff or a recent Finance Act); that is exactly where the model defaults to the OLD value. Confirm every such figure against ${cfg.hp} or primary source, and for anything changed in the last ~18 months corroborate against a second source (the GOV.UK measure/policy paper or the relevant HMRC manual), not legislation.gov.uk alone (its revised view can lag).
 - Anonymised social proof only; no real client names; no invented statistics or fabricated local/sector figures.
 - EDITORIAL STANDARD: write like a genuine senior adviser, not generic AI. NO filler ('in today's ever-changing landscape', 'it is important to note'), NO empty throat-clearing intros or restate-only conclusions, NO listicle-in-prose ('three things. First... Second...') as a crutch, NO hedging that says nothing, and do NOT recycle the same phrase across sections. Lead with specifics and a clear point of view; every sentence must earn its place.
-- Add 2-4 genuine internal links to relevant live pages in ${cfg.blogDir} (verify each target's /blog/<category>/ by reading the target file's frontmatter category; a wrong category 404s because routes use dynamicParams=false). Keep the lead-capture intent (the LeadForm auto-injects; do not add fake CTAs with pricing).
+- GOLD PATTERNS (docs/_engines/rewrite_gold_patterns.md; distilled from pages with verified position lifts): (1) if the H1 poses a yes/no question, the first sentence answers it (yes/no plus the key distinguishing condition) before any context; (2) every rate or threshold is written with its operative date band ('14% from 1 April 2026, reduced from 18%'), never as a bare number, naming the Finance Act + section where enacted; (3) every statute citation appears as a live hyperlink to legislation.gov.uk or gov.uk in the body AT THE POINT the claim is made, not only in a sources list; (4) worked examples show EVERY arithmetic step in body prose (intermediate totals, band-stacking splits, final figure in plain English), a formula without a numeric walkthrough does not count; (5) each FAQ answer fully resolves its question with the relevant rate/statute/deadline in the answer itself, never 'see above'; (6) the final section is NOT a summary: it poses the reader's most likely follow-on question and links the sibling page that answers it, or names a concrete next step.
+- ANTI-PATTERNS (the structural signatures of pre-rewrite underperformers; all prohibited): keyword-stuffed bold repeats of the primary query phrase across sections; source-driven digressions (leading with historical or legislative background before the current rule); generic listicle framing ('N things to know about X').
+- ${cfg.flatBlog
+    ? `Add 2-4 genuine internal links to relevant live pages in ${cfg.blogDir}. FLAT routing: links MUST use /blog/<slug> (two segments only). NEVER add a category segment (/blog/<category>/<slug> does not exist on this site and will 404). Verify the target slug exists by reading the target file's frontmatter slug field.`
+    : `Add 2-4 genuine internal links to relevant live pages in ${cfg.blogDir} (verify each target's /blog/<category>/ by reading the target file's frontmatter category; a wrong category 404s because routes use dynamicParams=false).`} Keep the lead-capture intent (the LeadForm auto-injects; do not add fake CTAs with pricing).
 REQUIRED READING (durable context; do not restate): ${cfg.hp} (the locked ground-truth; cite §N only if real). If a briefDir is supplied, prefer its per-page brief + corrections, but re-verify every statute at source regardless.
 `
 
@@ -121,10 +134,13 @@ ${briefDir ? `0. PLAN (read FIRST if present): \`${briefDir}/${slug}.md\` is you
 1. Run \`python -m optimisation_engine.track2.pull_page_data --slug ${slug} --site ${site} --json\` for GSC queries (what it should target), GA4 engagement (where users engage/bounce, if any), competitor signals, and the parsed content map. This prints \`target_queries[]\` (EVERY proven GSC+Bing demand query, deduped and sorted by impressions descending) and an \`adjacent[]\` opportunity list - these are your coverage targets.
 2. Read ${cfg.blogDir}/${slug}.md in full (frontmatter + body).
 3. Rewrite the .md IN PLACE per the depth note and every hard rule: target the primary + secondary queries the GSC data shows, fix all stale facts, strip all pricing, add genuine specificity, proper HTML body, internal links, FAQs in frontmatter. Use the Write/Edit tools on ${cfg.blogDir}/${slug}.md.
-4. ON-PAGE SEO (best-practice; REWRITE-ONLY, never collapse): weave EVERY target_queries[] item naturally and ONCE, prioritised by impressions - highest-impression queries belong in the metaTitle / h1 / an early H2; mid-impression in H2s and FAQs; long-tail in FAQs and body prose. NEVER repeat a query to satisfy a checker: a separate stage judges naturalness and stuffing (repeated or list-dumped queries) FAILS it. metaTitle <=60 chars, leading with the primary (highest-impression) query plus a CTR hook; metaDescription <=155 chars; h1 query-aligned to the primary intent; phrase H2s as the user's actual question/intent where natural; 8-14 FAQs that reuse the long-tail target_queries[] (and competitor PAA from the data pull) VERBATIM where natural. E-E-A-T + freshness: set reviewedBy + reviewerCredentials + reviewedAt and dateModified BOTH to TODAY'S date in YYYY-MM-DD (run \`date +%Y-%m-%d\` first to get it; do NOT hardcode a date) in frontmatter, but PRESERVE the original \`date\` field; use a REAL reviewer per ${cfg.hp} - never invent a name or credentials. If the page is step-by-step / "how to", add a \`howToSteps: [{name, text}]\` list to frontmatter (this auto-emits HowTo schema). Add 3-6 internal links to REAL sibling slugs.
+4. ON-PAGE SEO (best-practice; REWRITE-ONLY, never collapse): weave EVERY target_queries[] item naturally and ONCE, prioritised by impressions - highest-impression queries belong in the metaTitle / h1 / an early H2; mid-impression in H2s and FAQs; long-tail in FAQs and body prose. NEVER repeat a query to satisfy a checker: a separate stage judges naturalness and stuffing (repeated or list-dumped queries) FAILS it. metaTitle <=60 chars, leading with the primary (highest-impression) query plus a CTR hook; metaDescription <=155 chars; h1 query-aligned to the primary intent; phrase H2s as the user's actual question/intent where natural; 8-14 FAQs that reuse the long-tail target_queries[] (and competitor PAA from the data pull) VERBATIM where natural. E-E-A-T + freshness: set reviewedBy + reviewerCredentials + reviewedAt and dateModified BOTH to TODAY'S date in YYYY-MM-DD (run \`date +%Y-%m-%d\` first to get it; do NOT hardcode a date) in frontmatter, but PRESERVE the original \`date\` field; use a REAL reviewer per ${cfg.hp} - never invent a name or credentials. If the page is step-by-step / "how to", add a \`howToSteps: [{name, text}]\` list to frontmatter (this auto-emits HowTo schema). ${cfg.flatBlog
+    ? 'Add 3-6 internal links to REAL sibling slugs using FLAT /blog/<slug> only (no category segment).'
+    : 'Add 3-6 internal links to REAL sibling slugs using nested /blog/<category>/<slug>.'}
+
    TABLES (important): if the page compares options (anything "vs", "or", "which is better", structures/wrappers/regimes, or a decision between routes) it MUST include at least one clear side-by-side comparison \`<table>\` (thead + tbody); pages built around rates/bands/thresholds/deadlines or several worked figures should use a \`<table>\` where it makes the data scannable. The site styles \`.prose-blog table/th/td\`, so tables render cleanly, and a well-structured comparison table is the format Google lifts into featured snippets. Use a table only where it genuinely structures side-by-side or reference data (never as filler), keep it plain HTML (no inline styles/classes), and put no pricing/fees in it.
 IMPORTANT: after you have SAVED the file, your final action is to return ONLY {slug, words_after, done:true}. Keep this return tiny so it is never truncated; the verify stage reads the saved file for the real audit. If you could not finish the rewrite, return done:false with a one-line note.`,
-    { label: `rewrite:${slug}`, phase: 'Rewrite', schema: REWRITE_SCHEMA }
+    { label: `rewrite:${slug}`, phase: 'Rewrite', schema: REWRITE_SCHEMA, model: 'sonnet' }
   ).then(rw => ({ slug, rewrite: rw })),
 
   // Stage 2 - deterministic link canonicalisation (NOT an LLM judgement). The
@@ -141,7 +157,7 @@ Run EXACTLY these two commands IN ORDER (both are deterministic; do NOT hand-edi
   2. python optimisation_engine/blog_generator/slug_resolver.py --fix ${cfg.blogDir}/${prev.slug}.md
      (rewrites every internal /blog link to the one real category for the slug the writer chose, collapses known 301 hops, and LEAVES any link to a nonexistent page - printing it as UNRESOLVED)
 The scripts are the source of truth. Then report what it printed: canonicalised = true if it said it canonicalised the file, and unresolved = the exact list of any "UNRESOLVED" hrefs (empty array if none). Any UNRESOLVED entry means the writer linked to a page that does not exist - it must be repointed, so report each verbatim.`,
-    { label: `normalise:${prev.slug}`, phase: 'Normalise', schema: NORMALISE_SCHEMA }
+    { label: `normalise:${prev.slug}`, phase: 'Normalise', schema: NORMALISE_SCHEMA, model: 'sonnet' }
   ).then(nz => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: nz })),
 
   // Stage 3 - DETERMINISTIC query-coverage check + bounded weave-repair. The
@@ -159,7 +175,7 @@ Run \`python scripts/track2_query_coverage.py --slug ${prev.slug} --site ${site}
     b. After editing, run \`python scripts/frontmatter_lint.py --fix ${cfg.blogDir}/${prev.slug}.md\` then RE-RUN \`python scripts/track2_query_coverage.py --slug ${prev.slug} --site ${site} --json\`.
     c. Repeat (a)-(b) at most twice total. After at most 2 repairs, return the FINAL deterministic result.
 Return {slug:"${prev.slug}", passed:<final passed>, repaired:<true if you edited the file>, coverage_score:<final coverage_score>, missing:<final missing_queries as a list of query strings>}.`,
-    { label: `coverage:${prev.slug}`, phase: 'Coverage', schema: COVERAGE_SCHEMA }
+    { label: `coverage:${prev.slug}`, phase: 'Coverage', schema: COVERAGE_SCHEMA, model: 'sonnet' }
   ).then(cv => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, coverage: cv })),
 
   (prev) => agent(
@@ -178,7 +194,7 @@ Read the file (post-rewrite). Check:
 9. SCHEMA: set schema_ok = the page emits the richest VALID schema - FAQPage present iff faqs exist, HowTo present iff howToSteps exist (no schema asserting content the page lacks, and none missing where the content exists).
 10. TABLES (structure backstop): if this page compares options (vs / or / which-is-better / structures / wrappers / regimes / routes) and contains NO <table>, add a flag "MISSING COMPARISON TABLE - add a side-by-side comparison table" (non-blocking, surfaced for the manager to act on).
 Return the structured verdict. verdict = pass ONLY if statutes_ok AND pricing_clean AND em_dash_clean AND facts_current AND cannibalisation_ok AND html_valid. The meta_ok / eeat_ok / schema_ok / query_coverage fields are REPORTED for the deterministic gate to act on; they do NOT themselves flip verdict to fail (the deterministic coverage gate, not this stage, blocks on coverage).`,
-    { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA }
+    { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA, model: 'sonnet' }
   ).then(v => ({ slug: prev.slug, rewrite: prev.rewrite, normalise: prev.normalise, coverage: prev.coverage, verify: v }))
 )
 

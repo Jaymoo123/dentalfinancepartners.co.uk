@@ -8,11 +8,27 @@ export const meta = {
   ],
 }
 
-// args = { slugs: ["..."], cluster: "CityService" }  (tolerate string-encoded args)
+// args = { slugs: ["..."], cluster: "CityService", site: "property" }  (tolerate string-encoded args)
 const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
 const slugs = A.slugs || []
 const cluster = A.cluster || 'unknown'
-const briefDir = A.briefDir || 'briefs/property/track2/batch3'
+const site = A.site || 'property'
+
+// Per-site config (no fs access in the .wf.js runtime; mirrors sites/<site>.json).
+// The site's house_positions doc is the authoritative ground-truth; there are NO
+// hardcoded tax facts in the engine prompts. Add an entry to onboard a new site.
+const SITES = {
+  property:   { blogDir: 'Property/web/content/blog',       domain: 'propertytaxpartners.co.uk',        hp: 'docs/property/house_positions.md',   adviser: 'UK property tax accountant' },
+  dentists:   { blogDir: 'Dentists/web/content/blog',       domain: 'www.dentalfinancepartners.co.uk',   hp: 'docs/dentists/house_positions.md',   adviser: 'UK dental practice and associate tax accountant' },
+  solicitors: { blogDir: 'Solicitors/web/content/blog',     domain: 'www.accountsforlawyers.co.uk',      hp: 'docs/solicitors/house_positions.md', adviser: 'UK solicitor and law-firm accountant' },
+  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccountantsuk.co.uk',    hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
+  generalist: { blogDir: 'generalist/web/content/blog',     domain: 'www.hollowaydavies.co.uk',          hp: 'docs/generalist/house_positions.md', adviser: 'UK general practice accountant for owner-managed businesses' },
+  agency:     { blogDir: 'digital-agency/web/content/blog', domain: 'www.agencyfounderfinance.co.uk',    hp: 'docs/agency/house_positions.md',     adviser: 'UK accountant for digital and creative agency founders' },
+}
+const cfg = SITES[site]
+if (!cfg) throw new Error(`track2_rewrite_engine: unknown site '${site}'. Add a SITES entry (blogDir/domain/hp/adviser from sites/${site}.json) before running the engine for it.`)
+
+const briefDir = A.briefDir || `briefs/${site}/track2/batch1`
 // Standing user rule (2026-05-30): REWRITE-ONLY, never collapse. The engine must
 // not emit a redirect-collapse. Pass rewriteOnly:false to re-enable collapse.
 const REWRITE_ONLY = A.rewriteOnly !== false
@@ -93,7 +109,7 @@ Draft a complete gold-reference rewrite brief matching the depth and 15-section 
 Obey every HARD RULE (no pricing, no em-dashes, anonymised proof).
 WRITE the brief to ${briefDir}/${prev.slug}.md (create the directory if needed via the Write tool path).
 Return a JSON object with: { "brief_path": "${briefDir}/${prev.slug}.md", "statute_citations": ["TCGA 1992 s.222", ...], "word_target": <number>, "summary": "<3-sentence summary of the rewrite approach>" }.`,
-  { label: `brief:${prev.slug}`, phase: 'Brief', schema: BRIEF_SCHEMA }
+  { label: `brief:${prev.slug}`, phase: 'Brief', schema: BRIEF_SCHEMA, model: 'opus' }
 ).then(b => ({ ...prev, brief: b, brief_path: b.brief_path }))
 
 const results = await pipeline(
@@ -113,7 +129,7 @@ Do this:
 4. Find the top 2-4 competitor URLs ranking for the primary query (WebFetch a Google/Bing search or known specialist competitor sites; confirm each URL is live).
 5. Identify stale facts / statute risks / pricing-leak in the current page.
 Return the structured diagnosis. Be decisive on rewrite vs redirect-collapse and give a competitor-benchmarked target word count.`,
-    { label: `diagnose:${slug}`, phase: 'Diagnose', schema: DIAGNOSE_SCHEMA }
+    { label: `diagnose:${slug}`, phase: 'Diagnose', schema: DIAGNOSE_SCHEMA, model: 'opus' }
   ).then(d => ({ slug, diagnosis: d })),
 
   // Stage 2 — Equity guard (for collapses) then Brief.
@@ -134,7 +150,7 @@ Return the structured diagnosis. Be decisive on rewrite vs redirect-collapse and
 Run EXACTLY this command and report what it prints:
   python scripts/track2_collapse_guard.py --source ${prev.slug} --canonical ${d.redirect_canonical}
 Return: verdict = the printed VERDICT (ALLOW or REVERSED) verbatim; source_metrics + canonical_metrics = the two printed metric lines; reason = the printed reason(s). The guard is AUTHORITATIVE: REVERSED means collapsing would bury a stronger page and it must be REWRITTEN instead. Do not second-guess it.`,
-        { label: `guard:${prev.slug}`, phase: 'Diagnose', schema: GUARD_SCHEMA }
+        { label: `guard:${prev.slug}`, phase: 'Diagnose', schema: GUARD_SCHEMA, model: 'opus' }
       ).then(g => {
         if (g.verdict === 'REVERSED') {
           log(`${prev.slug}: collapse -> ${d.redirect_canonical} BLOCKED by equity guard (${g.reason}); FLIPPING to REWRITE`)
@@ -155,7 +171,7 @@ Return: verdict = the printed VERDICT (ALLOW or REVERSED) verbatim; source_metri
       return agent(
         `You are the Track 2 VERIFY stage for "${prev.slug}", which DIAGNOSE marked as redirect-collapse into "${prev.diagnosis.redirect_canonical}".
 Adversarially check: does a genuinely stronger canonical exist for this intent in Property/web/content/blog? Grep to confirm the canonical exists and is stronger (more impressions / better position / deeper). Confirm collapsing loses no unique ranking equity. Return the verdict.`,
-        { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA }
+        { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA, model: 'opus' }
       ).then(v => ({ ...prev, verify: v }))
     }
     return agent(
@@ -166,7 +182,7 @@ Your job is to REFUTE, default to skeptical:
 3. PRICING-LEAK (Decision E strict): scan the brief for any fee/price figures or fee comparisons. Any => fail that check.
 4. EM-DASHES: scan for em-dashes in proposed copy.
 Return the structured verdict with specific flags. Be precise and cite what you checked.`,
-      { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA }
+      { label: `verify:${prev.slug}`, phase: 'Verify', schema: VERIFY_SCHEMA, model: 'opus' }
     ).then(v => ({ ...prev, verify: v }))
   }
 )
