@@ -242,6 +242,7 @@ SITE_CONFIG: dict = {
     "topic_order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
 
     # --- LLM provider ---------------------------------------------------------
+    # Writing model decided by the 2026-06 bake-off (docs/contractors-ir35/BAKEOFF_2026-06.md); python llm path is not the estate writing pipeline.
     "llm_provider": "deepseek",
     "llm_model": "deepseek-chat",
     "max_tokens": 6500,

@@ -47,12 +47,13 @@ BING_BASE = "https://ssl.bing.com/webmaster/api.svc/json"
 # BWT-verified site URL per site_key (from GetUserSites). Override with --site-url.
 # _resolve_site_url matches by host (www-insensitive), so these need only be close.
 DEFAULT_SITE_URL = {
-    "property": "https://propertytaxpartners.co.uk",
-    "dentists": "https://www.dentalfinancepartners.co.uk",
-    "medical": "https://medicalaccounts.co.uk",
-    "solicitors": "https://accountsforlawyers.co.uk",
-    "generalist": "https://hollowaydavies.co.uk",
-    "agency": "https://agencyfounderfinance.co.uk",
+    "property":         "https://propertytaxpartners.co.uk",
+    "dentists":         "https://www.dentalfinancepartners.co.uk",
+    "medical":          "https://medicalaccounts.co.uk",
+    "solicitors":       "https://accountsforlawyers.co.uk",
+    "generalist":       "https://hollowaydavies.co.uk",
+    "agency":           "https://agencyfounderfinance.co.uk",
+    "contractors-ir35": "https://www.contractor-finance-partners.co.uk",
 }
 
 

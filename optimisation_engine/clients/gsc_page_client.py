@@ -35,12 +35,13 @@ PROJECT_REF = "dhlxwmvmkrfnmcgjbntk"
 MGMT_URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
 
 _SITE_URL_MAP = {
-    "property":   "sc-domain:propertytaxpartners.co.uk",
-    "dentists":   "sc-domain:dentalfinancepartners.co.uk",
-    "medical":    "sc-domain:medicalaccounts.co.uk",
-    "solicitors": "sc-domain:accountsforlawyers.co.uk",
-    "agency":     "sc-domain:agencyfounderfinance.co.uk",
-    "generalist": "sc-domain:hollowaydavies.co.uk",
+    "property":          "sc-domain:propertytaxpartners.co.uk",
+    "dentists":          "sc-domain:dentalfinancepartners.co.uk",
+    "medical":           "sc-domain:medicalaccounts.co.uk",
+    "solicitors":        "sc-domain:accountsforlawyers.co.uk",
+    "agency":            "sc-domain:agencyfounderfinance.co.uk",
+    "generalist":        "sc-domain:hollowaydavies.co.uk",
+    "contractors-ir35":  "sc-domain:contractor-finance-partners.co.uk",
 }
 
 
