@@ -1,43 +1,52 @@
 ---
-title: "How Will the Wales NHS Dental Contract Reform Affect Your Practice in 2026?"
-slug: "wales-nhs-dental-contract-reform-2026"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026"
-date: "2026-05-18"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "NHS Contracts"
-metaTitle: "Wales NHS Dental Contract Reform 2026: What It Means"
-metaDescription: "Wales has reformed its NHS dental contract from April 2026, moving away from UDAs to a needs-based, prevention-led model. What it means for your practice."
-altText: "Dentist reviewing NHS contract documents in a Welsh dental practice"
-image: "https://images.pexels.com/photos/5622276/pexels-photo-5622276.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: How Will the Wales NHS Dental Contract Reform Affect Your Practice in 2026?
+slug: wales-nhs-dental-contract-reform-2026
+canonical: https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026
+date: '2026-05-18'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: NHS Contracts
+metaTitle: 'Wales NHS Dental Contract Reform 2026: What Changes'
+metaDescription: From 1 April 2026 Wales replaces the UDA model with a needs-based, prevention-led contract. What changes for practice income, associate splits and tax.
+altText: Dentist reviewing NHS contract documents in a Welsh dental practice
+image: https://images.pexels.com/photos/5622276/pexels-photo-5622276.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Gustavo Fring"
-  photographerUrl: "https://www.pexels.com/@gustavo-fring"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-person-getting-sterile-dental-equipment-5622276/"
-h1: "How Will the Wales NHS Dental Contract Reform Affect Your Practice in 2026?"
-summary: "Wales has reformed its NHS dental contract from April 2026, moving away from the Units of Dental Activity model towards a needs-based, prevention-led system. The change reshapes how practices are paid, how associate splits work and how you plan tax. Here is what Welsh dentists need to know, with the current detail held at gov.wales."
+  photographer: Gustavo Fring
+  photographerUrl: https://www.pexels.com/@gustavo-fring
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-person-getting-sterile-dental-equipment-5622276/
+h1: How Will the Wales NHS Dental Contract Reform Affect Your Practice in 2026?
+summary: Wales has reformed its NHS dental contract from April 2026, moving away from the Units of Dental Activity model towards a needs-based, prevention-led system. The change reshapes how practices are paid, how associate splits work and how you plan tax. Here is what Welsh dentists need to know, with the current detail held at gov.wales.
 keyTakeaways:
-  - "Wales operates a reformed national NHS dental contract from 1 April 2026, moving away from the UDA model in place since 2006."
-  - "The reform is needs-based and prevention-led, replacing Band 1, 2 and 3 treatments with care packages organised by clinical need and complexity."
-  - "Band 2 sub-banding into 2a, 2b and 2c was an English change from late 2022, not a feature of the new Welsh model."
-  - "Associate splits expressed as a percentage of UDA value generally need renegotiating, while keeping the arrangement consistent with self-employed status."
-  - "NHS dental care stays VAT-exempt under VATA 1994 Schedule 9 Group 7, so the reform does not change the VAT position."
-schema: ""
+- Wales operates a reformed national NHS dental contract from 1 April 2026, moving away from the UDA model in place since 2006.
+- The reform is needs-based and prevention-led, replacing Band 1, 2 and 3 treatments with care packages organised by clinical need and complexity.
+- Band 2 sub-banding into 2a, 2b and 2c was an English change from late 2022, not a feature of the new Welsh model.
+- Associate splits expressed as a percentage of UDA value generally need renegotiating, while keeping the arrangement consistent with self-employed status.
+- NHS dental care stays VAT-exempt under VATA 1994 Schedule 9 Group 7, so the reform does not change the VAT position.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"How Will the Wales NHS Dental Contract Reform Affect Your Practice in 2026?","description":"From 1 April 2026 Wales replaces the UDA model with a needs-based, prevention-led contract. What changes for practice income, associate splits and tax.","url":"https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026","datePublished":"2026-05-18","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners
+  Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/5622276/pexels-photo-5622276.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"NHS Contracts","item":"https://www.dentalfinancepartners.co.uk/blog/nhs-contracts"},{"@type":"ListItem","position":3,"name":"How Will the Wales NHS Dental Contract Reform Affect Your Practice in 2026?","item":"https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When does the new Wales NHS dental contract start?","acceptedAnswer":{"@type":"Answer","text":"The reformed national General Dental Services contract in Wales took effect from 1 April 2026. The Welsh Government confirmed the
+  change in a written statement in February 2026 and laid the supporting regulations ahead of that date. It is described as the first major reform of the dental contract in around 20 years. Because the implementation detail continues to be published, confirm the current position and any transition arrangements at gov.wales and with your health board."}},{"@type":"Question","name":"Does the Wales reform get rid of UDAs?","acceptedAnswer":{"@type":"Answer","text":"Yes. The reform moves away from the Units of Dental Activity model that has been in place since 2006. Instead of paying for volume of activity measured in UDAs, the new model is needs-based and prevention-led, with practices funded to see and recall patients according to their individual oral health risk and need. The detail of how payment is structured is set out by the Welsh Government, so check gov.wales for the current specification."}},{"@type":"Question","name":"Does Wales still use the Band 1, 2 and 3 system?","acceptedAnswer":{"@type":"Answer","text":"Under the reformed Welsh contract the familiar Band 1, 2 and 3 structure is being replaced by a set of care packages organised by clinical need and complexity rather than by treatment band. Note that the Band 2 sub-banding into 2a, 2b and 2c was a change introduced in England in late 2022, not a feature of the new Welsh model. Confirm the current Welsh package structure at gov.wales before relying on it."}},{"@type":"Question","name":"Will the Wales dental reform affect my NHS pension?","acceptedAnswer":{"@type":"Answer","text":"Your NHS pensionable earnings still derive from the NHS income you generate, but the way that income is calculated changes when the funding basis moves away from UDA delivery. For incorporated principals the long-standing point remains: only PAYE salary is pensionable and dividends are not. Associates whose splits were linked to UDA value should confirm with their practice how the new funding flows through to pensionable pay, and
+  check the current position with NHSBSA."}},{"@type":"Question","name":"How will associate fee splits work under the new Welsh contract?","acceptedAnswer":{"@type":"Answer","text":"Associate splits that were expressed as a percentage of UDA value will usually need to be renegotiated, because the practice income is no longer measured in UDAs. The principle is unchanged: an associate is normally self-employed where the substance of the arrangement supports it, and the split should reflect the new funding mechanism fairly. Each practice will agree its own terms. Take advice before signing a revised agreement, and keep the contract consistent with self-employed status."}}]}]}'
 faqs:
-  - question: "When does the new Wales NHS dental contract start?"
-    answer: "The reformed national General Dental Services contract in Wales took effect from 1 April 2026. The Welsh Government confirmed the change in a written statement in February 2026 and laid the supporting regulations ahead of that date. It is described as the first major reform of the dental contract in around 20 years. Because the implementation detail continues to be published, confirm the current position and any transition arrangements at gov.wales and with your health board."
-  - question: "Does the Wales reform get rid of UDAs?"
-    answer: "Yes. The reform moves away from the Units of Dental Activity model that has been in place since 2006. Instead of paying for volume of activity measured in UDAs, the new model is needs-based and prevention-led, with practices funded to see and recall patients according to their individual oral health risk and need. The detail of how payment is structured is set out by the Welsh Government, so check gov.wales for the current specification."
-  - question: "Does Wales still use the Band 1, 2 and 3 system?"
-    answer: "Under the reformed Welsh contract the familiar Band 1, 2 and 3 structure is being replaced by a set of care packages organised by clinical need and complexity rather than by treatment band. Note that the Band 2 sub-banding into 2a, 2b and 2c was a change introduced in England in late 2022, not a feature of the new Welsh model. Confirm the current Welsh package structure at gov.wales before relying on it."
-  - question: "Will the Wales dental reform affect my NHS pension?"
-    answer: "Your NHS pensionable earnings still derive from the NHS income you generate, but the way that income is calculated changes when the funding basis moves away from UDA delivery. For incorporated principals the long-standing point remains: only PAYE salary is pensionable and dividends are not. Associates whose splits were linked to UDA value should confirm with their practice how the new funding flows through to pensionable pay, and check the current position with NHSBSA."
-  - question: "How will associate fee splits work under the new Welsh contract?"
-    answer: "Associate splits that were expressed as a percentage of UDA value will usually need to be renegotiated, because the practice income is no longer measured in UDAs. The principle is unchanged: an associate is normally self-employed where the substance of the arrangement supports it, and the split should reflect the new funding mechanism fairly. Each practice will agree its own terms. Take advice before signing a revised agreement, and keep the contract consistent with self-employed status."
+- question: When does the new Wales NHS dental contract start?
+  answer: The reformed national General Dental Services contract in Wales took effect from 1 April 2026. The Welsh Government confirmed the change in a written statement in February 2026 and laid the supporting regulations ahead of that date. It is described as the first major reform of the dental contract in around 20 years. Because the implementation detail continues to be published, confirm the current position and any transition arrangements at gov.wales and with your health board.
+- question: Does the Wales reform get rid of UDAs?
+  answer: Yes. The reform moves away from the Units of Dental Activity model that has been in place since 2006. Instead of paying for volume of activity measured in UDAs, the new model is needs-based and prevention-led, with practices funded to see and recall patients according to their individual oral health risk and need. The detail of how payment is structured is set out by the Welsh Government, so check gov.wales for the current specification.
+- question: Does Wales still use the Band 1, 2 and 3 system?
+  answer: Under the reformed Welsh contract the familiar Band 1, 2 and 3 structure is being replaced by a set of care packages organised by clinical need and complexity rather than by treatment band. Note that the Band 2 sub-banding into 2a, 2b and 2c was a change introduced in England in late 2022, not a feature of the new Welsh model. Confirm the current Welsh package structure at gov.wales before relying on it.
+- question: Will the Wales dental reform affect my NHS pension?
+  answer: 'Your NHS pensionable earnings still derive from the NHS income you generate, but the way that income is calculated changes when the funding basis moves away from UDA delivery. For incorporated principals the long-standing point remains: only PAYE salary is pensionable and dividends are not. Associates whose splits were linked to UDA value should confirm with their practice how the new funding flows through to pensionable pay, and check the current position with NHSBSA.'
+- question: How will associate fee splits work under the new Welsh contract?
+  answer: 'Associate splits that were expressed as a percentage of UDA value will usually need to be renegotiated, because the practice income is no longer measured in UDAs. The principle is unchanged: an associate is normally self-employed where the substance of the arrangement supports it, and the split should reflect the new funding mechanism fairly. Each practice will agree its own terms. Take advice before signing a revised agreement, and keep the contract consistent with self-employed status.'
+metaTitle_prev: 'Wales NHS Dental Contract Reform 2026: What It Means'
+metaDescription_prev: Wales has reformed its NHS dental contract from April 2026, moving away from UDAs to a needs-based, prevention-led model. What it means for your practice.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What has actually changed in Wales?</h2>
 
 <p>From 1 April 2026 Wales operates a reformed national NHS dental contract. The Welsh Government set out the change in a written statement in February 2026 and laid the supporting regulations ahead of that date, describing it as the first major reform of the dental contract in around 20 years. For practices working under an <strong>NHS contract</strong> in <strong>Wales</strong>, this is the most significant shift in NHS dentistry for a generation.</p>

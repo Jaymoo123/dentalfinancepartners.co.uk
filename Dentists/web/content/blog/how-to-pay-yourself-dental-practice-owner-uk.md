@@ -1,41 +1,50 @@
 ---
-title: "How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide"
-slug: "how-to-pay-yourself-dental-practice-owner-uk"
-date: "2026-03-28"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "Practice finance"
-metaTitle: "How to Pay Yourself as a Dental Practice Owner UK"
-metaDescription: "How a dental practice owner takes salary and dividends in 2026/27: the £5,000 employer NIC threshold, the new 10.75%/35.75% dividend rates, worked example."
-altText: "UK dental practice owner reviewing financial documents and payment strategies"
-image: "https://images.pexels.com/photos/7821686/pexels-photo-7821686.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: 'How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide'
+slug: how-to-pay-yourself-dental-practice-owner-uk
+date: '2026-03-28'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: Practice finance
+metaTitle: 'How to Pay Yourself: Dental Practice Owner UK 2026/27'
+metaDescription: 'Salary or dividends for a dental practice owner in 2026/27: the £5,000 employer NIC threshold, the new 10.75% dividend rate, and a worked example.'
+altText: UK dental practice owner reviewing financial documents and payment strategies
+image: https://images.pexels.com/photos/7821686/pexels-photo-7821686.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-filling-out-a-questionnaire-7821686/"
-h1: "How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide"
-summary: "Learn how to pay yourself as a dental practice owner in 2026/27: the salary level decision for a single director, the new dividend rates, corporation tax with marginal relief, and a worked extraction example, with the NHS pension trap that most guides ignore."
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-person-filling-out-a-questionnaire-7821686/
+h1: 'How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide'
+summary: 'Learn how to pay yourself as a dental practice owner in 2026/27: the salary level decision for a single director, the new dividend rates, corporation tax with marginal relief, and a worked extraction example, with the NHS pension trap that most guides ignore.'
 keyTakeaways:
-  - "For 2026/27 dividend tax rose to 10.75% ordinary, 35.75% upper and 39.35% additional rates (from 8.75% and 33.75%), after the £500 dividend allowance."
-  - "Employer (secondary) NIC is 15% on pay above the £5,000 secondary threshold, and a single-director company cannot claim the Employment Allowance."
-  - "Corporation tax is 19% up to £50,000 and 25% over £250,000, with marginal relief giving an effective rate of about 26.5% on profit between the limits."
-  - "A salary above the £6,708 Lower Earnings Limit secures a qualifying state-pension year, while a salary at £12,570 costs about £1,136 in employer NIC."
-  - "Dividends are not pensionable, so an incorporated NHS dentist taken as an officer accrues 2015 CARE scheme benefits (1/54th of pay) only on PAYE salary."
-schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk"
+- For 2026/27 dividend tax rose to 10.75% ordinary, 35.75% upper and 39.35% additional rates (from 8.75% and 33.75%), after the £500 dividend allowance.
+- Employer (secondary) NIC is 15% on pay above the £5,000 secondary threshold, and a single-director company cannot claim the Employment Allowance.
+- Corporation tax is 19% up to £50,000 and 25% over £250,000, with marginal relief giving an effective rate of about 26.5% on profit between the limits.
+- A salary above the £6,708 Lower Earnings Limit secures a qualifying state-pension year, while a salary at £12,570 costs about £1,136 in employer NIC.
+- Dividends are not pensionable, so an incorporated NHS dentist taken as an officer accrues 2015 CARE scheme benefits (1/54th of pay) only on PAYE salary.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide","description":"Salary or dividends for a dental practice owner in 2026/27: the £5,000 employer NIC threshold, the new 10.75% dividend rate, and a worked example.","url":"https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk","datePublished":"2026-03-28","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance
+  Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7821686/pexels-photo-7821686.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"Practice finance","item":"https://www.dentalfinancepartners.co.uk/blog/practice-finance"},{"@type":"ListItem","position":3,"name":"How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide","item":"https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the most tax-efficient salary for a dental practice owner in 2026/27?","acceptedAnswer":{"@type":"Answer","text":"For a sole-director dental company there are two common settling points.
+  A salary at the £5,000 secondary threshold pays no employer National Insurance at all, while a salary at £12,570 uses the full personal allowance but leaves the company paying 15% employer NIC on the slice between £5,000 and £12,570 (about £1,136). A single director cannot claim the Employment Allowance, which is what makes the lower figure attractive. Keep salary above the £6,708 Lower Earnings Limit either way so the year still counts towards your state pension. A genuinely employed spouse can unlock the Employment Allowance and change the answer."}},{"@type":"Question","name":"Can I pay myself dividends if my practice made a loss?","acceptedAnswer":{"@type":"Answer","text":"No. Dividends can only be paid from accumulated profits after corporation tax. If your practice has no distributable reserves, there are no profits to distribute. Paying a dividend without sufficient reserves is an unlawful distribution that HMRC and your accountant can recharacterise, often as salary or a director''s loan, with the tax consequences that follow. Check the reserves before you declare."}},{"@type":"Question","name":"Are dividends pensionable for an NHS dentist?","acceptedAnswer":{"@type":"Answer","text":"No. Dividends are not pensionable. For an incorporated dentist treated as an officer in the NHS Pension Scheme, only the PAYE salary is pensionable, so switching NHS-derived profit into dividends loses scheme accrual. This is the incorporation pension trap and it must sit alongside any tax comparison. The position for a contract-holding principal is more nuanced and should be confirmed with NHSBSA."}},{"@type":"Question","name":"Do I need board resolutions for dividend payments?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dividends need proper documentation: a board minute declaring the dividend and confirming that sufficient distributable profits exist, plus a dividend voucher. You cannot simply move money from the company account to your personal account and call it a dividend
+  after the fact. Drawings taken ahead of declared profit push the director''s loan account overdrawn, which has its own tax charges."}}]}]}'
+canonical: https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk
 faqs:
-  - question: "What is the most tax-efficient salary for a dental practice owner in 2026/27?"
-    answer: "For a sole-director dental company there are two common settling points. A salary at the £5,000 secondary threshold pays no employer National Insurance at all, while a salary at £12,570 uses the full personal allowance but leaves the company paying 15% employer NIC on the slice between £5,000 and £12,570 (about £1,136). A single director cannot claim the Employment Allowance, which is what makes the lower figure attractive. Keep salary above the £6,708 Lower Earnings Limit either way so the year still counts towards your state pension. A genuinely employed spouse can unlock the Employment Allowance and change the answer."
-  - question: "Can I pay myself dividends if my practice made a loss?"
-    answer: "No. Dividends can only be paid from accumulated profits after corporation tax. If your practice has no distributable reserves, there are no profits to distribute. Paying a dividend without sufficient reserves is an unlawful distribution that HMRC and your accountant can recharacterise, often as salary or a director's loan, with the tax consequences that follow. Check the reserves before you declare."
-  - question: "Are dividends pensionable for an NHS dentist?"
-    answer: "No. Dividends are not pensionable. For an incorporated dentist treated as an officer in the NHS Pension Scheme, only the PAYE salary is pensionable, so switching NHS-derived profit into dividends loses scheme accrual. This is the incorporation pension trap and it must sit alongside any tax comparison. The position for a contract-holding principal is more nuanced and should be confirmed with NHSBSA."
-  - question: "Do I need board resolutions for dividend payments?"
-    answer: "Yes. Dividends need proper documentation: a board minute declaring the dividend and confirming that sufficient distributable profits exist, plus a dividend voucher. You cannot simply move money from the company account to your personal account and call it a dividend after the fact. Drawings taken ahead of declared profit push the director's loan account overdrawn, which has its own tax charges."
+- question: What is the most tax-efficient salary for a dental practice owner in 2026/27?
+  answer: For a sole-director dental company there are two common settling points. A salary at the £5,000 secondary threshold pays no employer National Insurance at all, while a salary at £12,570 uses the full personal allowance but leaves the company paying 15% employer NIC on the slice between £5,000 and £12,570 (about £1,136). A single director cannot claim the Employment Allowance, which is what makes the lower figure attractive. Keep salary above the £6,708 Lower Earnings Limit either way so the year still counts towards your state pension. A genuinely employed spouse can unlock the Employment Allowance and change the answer.
+- question: Can I pay myself dividends if my practice made a loss?
+  answer: No. Dividends can only be paid from accumulated profits after corporation tax. If your practice has no distributable reserves, there are no profits to distribute. Paying a dividend without sufficient reserves is an unlawful distribution that HMRC and your accountant can recharacterise, often as salary or a director's loan, with the tax consequences that follow. Check the reserves before you declare.
+- question: Are dividends pensionable for an NHS dentist?
+  answer: No. Dividends are not pensionable. For an incorporated dentist treated as an officer in the NHS Pension Scheme, only the PAYE salary is pensionable, so switching NHS-derived profit into dividends loses scheme accrual. This is the incorporation pension trap and it must sit alongside any tax comparison. The position for a contract-holding principal is more nuanced and should be confirmed with NHSBSA.
+- question: Do I need board resolutions for dividend payments?
+  answer: 'Yes. Dividends need proper documentation: a board minute declaring the dividend and confirming that sufficient distributable profits exist, plus a dividend voucher. You cannot simply move money from the company account to your personal account and call it a dividend after the fact. Drawings taken ahead of declared profit push the director''s loan account overdrawn, which has its own tax charges.'
+metaTitle_prev: How to Pay Yourself as a Dental Practice Owner UK
+metaDescription_prev: 'How a dental practice owner takes salary and dividends in 2026/27: the £5,000 employer NIC threshold, the new 10.75%/35.75% dividend rates, worked example.'
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Knowing <strong>how to pay yourself as a dental practice owner</strong> is one of the recurring financial decisions of running an incorporated practice. Most owners operate through a limited company, which gives two main routes out of the business: a salary through PAYE and dividends from post-tax profit. The right <strong>dental practice owner salary</strong> is rarely the full amount; it is usually a modest salary topped up with dividends, and the exact split depends on your profit level, your other income and whether you are still building NHS pension.</p>
 
 <p>This page covers the mechanics: how each route is taxed at current rates, where to set the salary for a single-director company, and a worked extraction example at 2026/27 figures. For the deeper optimisation question (the precise split that minimises total tax at a given profit) see our companion guide on the <a href="/blog/practice-finance/dental-company-salary-dividend-split-2026-27">optimal salary and dividend split for 2026/27</a>.</p>

@@ -1,41 +1,47 @@
 ---
-title: "Understanding Goodwill When Buying or Selling a Dental Practice"
-slug: "dental-practice-goodwill-buying-selling"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"
-date: "2026-03-28"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "Buying a practice"
-metaTitle: "Dental Practice Goodwill: How It Is Valued and Taxed"
-metaDescription: "How dental goodwill is valued and exactly how it is taxed on both sides, plus the buyer 6.5% relief and the seller BADR rate stepping up in April 2026."
-metaTitle_prev: "Dental Practice Goodwill: How to Calculate Values"
-metaDescription_prev: "Learn how dental practice goodwill values are calculated using earnings-based methods. Includes a worked example and factors affecting your practice premium."
-altText: "UK dental practice consultation room showing goodwill valuation discussion between dentist and advisor"
-image: "https://images.pexels.com/photos/33175667/pexels-photo-33175667.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: Understanding Goodwill When Buying or Selling a Dental Practice
+slug: dental-practice-goodwill-buying-selling
+canonical: https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling
+date: '2026-03-28'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: Buying a practice
+metaTitle: 'Dental Practice Goodwill: How It Is Valued and Taxed'
+metaDescription: How dental goodwill is valued (usually 60 to 80% of price) and taxed on both sides, with the buyer 6.5% relief and the seller BADR rate up from April 2026.
+metaTitle_prev: 'Dental Practice Goodwill: How It Is Valued and Taxed'
+metaDescription_prev: How dental goodwill is valued and exactly how it is taxed on both sides, plus the buyer 6.5% relief and the seller BADR rate stepping up in April 2026.
+altText: UK dental practice consultation room showing goodwill valuation discussion between dentist and advisor
+image: https://images.pexels.com/photos/33175667/pexels-photo-33175667.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Bia Limova"
-  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-report-33175667/"
-h1: "Understanding Goodwill When Buying or Selling a Dental Practice"
-summary: "Goodwill represents the intangible value of a dental practice beyond its physical assets. Understanding how it's calculated and taxed is crucial for both buyers and sellers."
+  photographer: Bia Limova
+  photographerUrl: https://www.pexels.com/@bia-limova-1908542654
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/financial-analysis-with-calculator-and-report-33175667/
+h1: Understanding Goodwill When Buying or Selling a Dental Practice
+summary: Goodwill represents the intangible value of a dental practice beyond its physical assets. Understanding how it's calculated and taxed is crucial for both buyers and sellers.
 keyTakeaways:
-  - "Goodwill is usually 60 to 80 percent of a dental practice price and is valued on normalised EBITDA times a market multiple, not turnover."
-  - "Company buyers get 6.5 percent fixed-rate relief on goodwill acquired from 1 April 2019, but only with qualifying IP and capped at six times that IP spend."
-  - "Goodwill acquired between 8 July 2015 and 31 March 2019 gets no amortisation relief, so a blanket post-2019 assumption is wrong."
-  - "BADR on a seller's goodwill gain is 14 percent to 5 April 2026 and 18 percent after, up to a 1m lifetime limit, against a 24 percent main CGT rate."
-  - "Asset purchases bring non-residential SDLT (0 percent to 150,000, 2 percent to 250,000, 5 percent above), while share purchases carry 0.5 percent stamp duty on the shares."
-schema: ""
+- Goodwill is usually 60 to 80 percent of a dental practice price and is valued on normalised EBITDA times a market multiple, not turnover.
+- Company buyers get 6.5 percent fixed-rate relief on goodwill acquired from 1 April 2019, but only with qualifying IP and capped at six times that IP spend.
+- Goodwill acquired between 8 July 2015 and 31 March 2019 gets no amortisation relief, so a blanket post-2019 assumption is wrong.
+- BADR on a seller's goodwill gain is 14 percent to 5 April 2026 and 18 percent after, up to a 1m lifetime limit, against a 24 percent main CGT rate.
+- Asset purchases bring non-residential SDLT (0 percent to 150,000, 2 percent to 250,000, 5 percent above), while share purchases carry 0.5 percent stamp duty on the shares.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Understanding Goodwill When Buying or Selling a Dental Practice","description":"How dental goodwill is valued (usually 60 to 80% of price) and taxed on both sides, with the buyer 6.5% relief and the seller BADR rate up from April 2026.","url":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling","datePublished":"2026-03-28","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners
+  Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/33175667/pexels-photo-33175667.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"Buying a practice","item":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice"},{"@type":"ListItem","position":3,"name":"Understanding Goodwill When Buying or Selling a Dental Practice","item":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is dental practice goodwill personal or business goodwill?","acceptedAnswer":{"@type":"Answer","text":"Both can exist in the same practice. Personal goodwill is tied to an individual dentist''s relationships and skill
+  and tends to walk out of the door when that dentist leaves. Free or business goodwill is attached to the practice itself: the location, the systems, the brand and the wider team. Buyers pay most for free goodwill because it transfers, which is why handover periods, restrictive covenants and earn-outs are used to convert personal goodwill into something that stays."}},{"@type":"Question","name":"Can a company buying a dental practice claim tax relief on the goodwill?","acceptedAnswer":{"@type":"Answer","text":"Sometimes, but not automatically. For goodwill acquired on or after 1 April 2019, a company can claim fixed-rate relief of 6.5% a year, but only where the goodwill is bought as part of a business acquisition that also includes qualifying intellectual property, and the relief is capped at six times that qualifying-IP spend. Bare goodwill bought without qualifying IP gets no amortisation relief, and goodwill bought between 8 July 2015 and 31 March 2019 gets none either. A share purchase changes the picture again because the company and its goodwill are bought intact."}},{"@type":"Question","name":"How is Capital Gains Tax charged when I sell my practice goodwill?","acceptedAnswer":{"@type":"Answer","text":"On an asset sale the selling dentist makes a capital gain on the goodwill. Business Asset Disposal Relief can apply a reduced Capital Gains Tax rate on qualifying gains up to a £1 million lifetime limit, provided the two-year and ownership conditions are met. That BADR rate is 14% for disposals up to 5 April 2026 and 18% from 6 April 2026, against a main CGT rate of 24%. The timing of the contract, not completion, fixes which rate applies."}}]}]}'
 faqs:
-  - question: "Is dental practice goodwill personal or business goodwill?"
-    answer: "Both can exist in the same practice. Personal goodwill is tied to an individual dentist's relationships and skill and tends to walk out of the door when that dentist leaves. Free or business goodwill is attached to the practice itself: the location, the systems, the brand and the wider team. Buyers pay most for free goodwill because it transfers, which is why handover periods, restrictive covenants and earn-outs are used to convert personal goodwill into something that stays."
-  - question: "Can a company buying a dental practice claim tax relief on the goodwill?"
-    answer: "Sometimes, but not automatically. For goodwill acquired on or after 1 April 2019, a company can claim fixed-rate relief of 6.5% a year, but only where the goodwill is bought as part of a business acquisition that also includes qualifying intellectual property, and the relief is capped at six times that qualifying-IP spend. Bare goodwill bought without qualifying IP gets no amortisation relief, and goodwill bought between 8 July 2015 and 31 March 2019 gets none either. A share purchase changes the picture again because the company and its goodwill are bought intact."
-  - question: "How is Capital Gains Tax charged when I sell my practice goodwill?"
-    answer: "On an asset sale the selling dentist makes a capital gain on the goodwill. Business Asset Disposal Relief can apply a reduced Capital Gains Tax rate on qualifying gains up to a £1 million lifetime limit, provided the two-year and ownership conditions are met. That BADR rate is 14% for disposals up to 5 April 2026 and 18% from 6 April 2026, against a main CGT rate of 24%. The timing of the contract, not completion, fixes which rate applies."
+- question: Is dental practice goodwill personal or business goodwill?
+  answer: 'Both can exist in the same practice. Personal goodwill is tied to an individual dentist''s relationships and skill and tends to walk out of the door when that dentist leaves. Free or business goodwill is attached to the practice itself: the location, the systems, the brand and the wider team. Buyers pay most for free goodwill because it transfers, which is why handover periods, restrictive covenants and earn-outs are used to convert personal goodwill into something that stays.'
+- question: Can a company buying a dental practice claim tax relief on the goodwill?
+  answer: Sometimes, but not automatically. For goodwill acquired on or after 1 April 2019, a company can claim fixed-rate relief of 6.5% a year, but only where the goodwill is bought as part of a business acquisition that also includes qualifying intellectual property, and the relief is capped at six times that qualifying-IP spend. Bare goodwill bought without qualifying IP gets no amortisation relief, and goodwill bought between 8 July 2015 and 31 March 2019 gets none either. A share purchase changes the picture again because the company and its goodwill are bought intact.
+- question: How is Capital Gains Tax charged when I sell my practice goodwill?
+  answer: On an asset sale the selling dentist makes a capital gain on the goodwill. Business Asset Disposal Relief can apply a reduced Capital Gains Tax rate on qualifying gains up to a £1 million lifetime limit, provided the two-year and ownership conditions are met. That BADR rate is 14% for disposals up to 5 April 2026 and 18% from 6 April 2026, against a main CGT rate of 24%. The timing of the contract, not completion, fixes which rate applies.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>When a dental practice changes hands, goodwill is usually the single largest figure in the deal. It is also the part of the price that is most often misunderstood, because how it is valued, what kind of goodwill it is, and how it is taxed all change depending on whether the practice is sold as a set of assets or as company shares, and whether the buyer is a sole trader or a limited company. This guide stays focused on goodwill itself, leaving the wider mechanics of pricing a whole practice to our separate <a href="/blog/buying-a-practice/dental-practice-valuation-methods-uk">practice valuation methods</a> guide.</p>
 
 <h2>What dental goodwill actually is</h2>

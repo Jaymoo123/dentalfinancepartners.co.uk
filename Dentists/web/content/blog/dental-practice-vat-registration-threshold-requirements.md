@@ -1,39 +1,47 @@
 ---
-title: "Dental Practice VAT Registration: Threshold & Requirements 2026"
-slug: "dental-practice-vat-registration-threshold-requirements"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements"
-date: "2026-04-01"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "VAT & compliance"
-metaTitle: "Dental Practice VAT Registration Threshold 2026 | UK Guide"
-metaDescription: "The VAT threshold is £90,000 for 2026/27. When your dental practice must register, how to monitor turnover, and voluntary registration pros and cons."
-altText: "UK dental practice owner reviewing VAT registration documents at desk"
-image: "https://images.pexels.com/photos/7688995/pexels-photo-7688995.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: 'Dental Practice VAT Registration: Threshold & Requirements 2026'
+slug: dental-practice-vat-registration-threshold-requirements
+canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements
+date: '2026-04-01'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: VAT & compliance
+metaTitle: 'Dental Practice VAT Registration: Threshold 2026/27'
+metaDescription: Most dental care is VAT-exempt, so only standard-rated income counts toward the £90,000 threshold. When your practice must register and how to track it.
+altText: UK dental practice owner reviewing VAT registration documents at desk
+image: https://images.pexels.com/photos/7688995/pexels-photo-7688995.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/income-tax-return-paper-7688995/"
-h1: "Dental Practice VAT Registration: Threshold & Requirements 2026"
-summary: "UK dental practices must register for VAT when turnover exceeds £90,000 over 12 months. Understanding the requirements and timing is crucial for compliance."
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/income-tax-return-paper-7688995/
+h1: 'Dental Practice VAT Registration: Threshold & Requirements 2026'
+summary: UK dental practices must register for VAT when turnover exceeds £90,000 over 12 months. Understanding the requirements and timing is crucial for compliance.
 keyTakeaways:
-  - "The VAT registration threshold is £90,000 for 2026/27 (raised from £85,000 on 1 April 2024), with the deregistration threshold at £88,000."
-  - "Dental care is VAT-exempt under VATA 1994 Schedule 9 Group 7, so exempt clinical income, however large, does not count toward the £90,000 threshold."
-  - "Only standard-rated income such as cosmetic facial aesthetics and tooth whitening counts, measured on a rolling 12-month basis, not by calendar or accounting year."
-  - "Once taxable turnover crosses £90,000 you must register within 30 days of the month-end, with registration effective from the first day of the second month."
-  - "Any registered dental practice is partially exempt, recovering only input VAT attributable to taxable supplies, and must keep VAT records for six years under Making Tax Digital."
-schema: ""
+- The VAT registration threshold is £90,000 for 2026/27 (raised from £85,000 on 1 April 2024), with the deregistration threshold at £88,000.
+- Dental care is VAT-exempt under VATA 1994 Schedule 9 Group 7, so exempt clinical income, however large, does not count toward the £90,000 threshold.
+- Only standard-rated income such as cosmetic facial aesthetics and tooth whitening counts, measured on a rolling 12-month basis, not by calendar or accounting year.
+- Once taxable turnover crosses £90,000 you must register within 30 days of the month-end, with registration effective from the first day of the second month.
+- Any registered dental practice is partially exempt, recovering only input VAT attributable to taxable supplies, and must keep VAT records for six years under Making Tax Digital.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Dental Practice VAT Registration: Threshold & Requirements 2026","description":"Most dental care is VAT-exempt, so only standard-rated income counts toward the £90,000 threshold. When your practice must register and how to track it.","url":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements","datePublished":"2026-04-01","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental
+  Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7688995/pexels-photo-7688995.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"VAT & compliance","item":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance"},{"@type":"ListItem","position":3,"name":"Dental Practice VAT Registration: Threshold & Requirements 2026","item":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does the £90,000 threshold apply when my income is mostly NHS and private dental care?","acceptedAnswer":{"@type":"Answer","text":"Only taxable (non-exempt) turnover
+  counts toward the £90,000 threshold. Most dental treatment, whether NHS-funded or private, is VAT-exempt under VATA 1994 Schedule 9 Group 7 when supplied by a registered dentist or dental care professional. Exempt income does not count toward the threshold. That means a purely clinical practice may never need to register, even with high overall turnover. Only standard-rated income, such as cosmetic facial aesthetics or tooth whitening with no therapeutic purpose, counts toward the £90,000 figure."}},{"@type":"Question","name":"Should I register for VAT voluntarily even if I''m below the threshold?","acceptedAnswer":{"@type":"Answer","text":"Voluntary registration is rarely worthwhile for a dental practice whose income is almost entirely exempt, because you generally cannot reclaim input VAT that relates to making exempt supplies. If you have a meaningful stream of taxable supplies, such as cosmetic treatments, voluntary registration lets you reclaim the related input VAT, but you must then charge VAT on those taxable services and operate partial exemption. Take advice before registering voluntarily, as the exempt nature of dental care changes the usual calculation."}},{"@type":"Question","name":"How should I monitor my practice''s turnover to know when VAT registration is required?","acceptedAnswer":{"@type":"Answer","text":"Monitor your taxable (non-exempt) turnover on a rolling 12-month basis, not by calendar or financial year. Calculate it monthly and include only standard-rated income such as cosmetic facial aesthetics and tooth whitening. Exempt clinical dentistry does not count. Set up automated tracking through your practice management system, because once your taxable turnover crosses £90,000 you must register within 30 days of the end of that month."}}]}]}'
 faqs:
-  - question: "How does the £90,000 threshold apply when my income is mostly NHS and private dental care?"
-    answer: "Only taxable (non-exempt) turnover counts toward the £90,000 threshold. Most dental treatment, whether NHS-funded or private, is VAT-exempt under VATA 1994 Schedule 9 Group 7 when supplied by a registered dentist or dental care professional. Exempt income does not count toward the threshold. That means a purely clinical practice may never need to register, even with high overall turnover. Only standard-rated income, such as cosmetic facial aesthetics or tooth whitening with no therapeutic purpose, counts toward the £90,000 figure."
-  - question: "Should I register for VAT voluntarily even if I'm below the threshold?"
-    answer: "Voluntary registration is rarely worthwhile for a dental practice whose income is almost entirely exempt, because you generally cannot reclaim input VAT that relates to making exempt supplies. If you have a meaningful stream of taxable supplies, such as cosmetic treatments, voluntary registration lets you reclaim the related input VAT, but you must then charge VAT on those taxable services and operate partial exemption. Take advice before registering voluntarily, as the exempt nature of dental care changes the usual calculation."
-  - question: "How should I monitor my practice's turnover to know when VAT registration is required?"
-    answer: "Monitor your taxable (non-exempt) turnover on a rolling 12-month basis, not by calendar or financial year. Calculate it monthly and include only standard-rated income such as cosmetic facial aesthetics and tooth whitening. Exempt clinical dentistry does not count. Set up automated tracking through your practice management system, because once your taxable turnover crosses £90,000 you must register within 30 days of the end of that month."
+- question: How does the £90,000 threshold apply when my income is mostly NHS and private dental care?
+  answer: Only taxable (non-exempt) turnover counts toward the £90,000 threshold. Most dental treatment, whether NHS-funded or private, is VAT-exempt under VATA 1994 Schedule 9 Group 7 when supplied by a registered dentist or dental care professional. Exempt income does not count toward the threshold. That means a purely clinical practice may never need to register, even with high overall turnover. Only standard-rated income, such as cosmetic facial aesthetics or tooth whitening with no therapeutic purpose, counts toward the £90,000 figure.
+- question: Should I register for VAT voluntarily even if I'm below the threshold?
+  answer: Voluntary registration is rarely worthwhile for a dental practice whose income is almost entirely exempt, because you generally cannot reclaim input VAT that relates to making exempt supplies. If you have a meaningful stream of taxable supplies, such as cosmetic treatments, voluntary registration lets you reclaim the related input VAT, but you must then charge VAT on those taxable services and operate partial exemption. Take advice before registering voluntarily, as the exempt nature of dental care changes the usual calculation.
+- question: How should I monitor my practice's turnover to know when VAT registration is required?
+  answer: Monitor your taxable (non-exempt) turnover on a rolling 12-month basis, not by calendar or financial year. Calculate it monthly and include only standard-rated income such as cosmetic facial aesthetics and tooth whitening. Exempt clinical dentistry does not count. Set up automated tracking through your practice management system, because once your taxable turnover crosses £90,000 you must register within 30 days of the end of that month.
+metaTitle_prev: Dental Practice VAT Registration Threshold 2026 | UK Guide
+metaDescription_prev: The VAT threshold is £90,000 for 2026/27. When your dental practice must register, how to monitor turnover, and voluntary registration pros and cons.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Understanding when your dental practice needs VAT registration is critical for staying compliant with HMRC. The rules catch practice owners off guard more often than almost any other tax area, partly because most dental income is exempt from VAT and partly because the threshold only applies to the taxable slice of your turnover. Get the distinction right and you may never need to register at all.</p>
 
 <p>The VAT registration threshold is <strong>£90,000</strong>. It was raised from £85,000 on <strong>1 April 2024</strong> and remains £90,000 for the 2026/27 year. There is no further increase announced. The deregistration threshold is £88,000. The key point for dentists is that only your taxable (non-exempt) turnover counts toward the £90,000 figure, so the headline number tells only part of the story.</p>

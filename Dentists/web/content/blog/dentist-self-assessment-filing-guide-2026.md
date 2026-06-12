@@ -1,45 +1,51 @@
 ---
-title: "Dentist Self Assessment: Complete Filing Guide 2026"
-slug: "dentist-self-assessment-filing-guide-2026"
-date: "2026-03-31"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "Associate tax"
-metaTitle: "Dentist Self Assessment 2026/27: Deadlines, Tax and MTD"
-metaDescription: "How dentists file Self Assessment in 2026/27: income to report, allowable expenses, Class 4 NIC, payments on account, deadlines and MTD from 6 Apr 2026."
-metaTitle_prev: "Dentist Self Assessment: CPD, GDC & travel deductions 2026"
-metaDescription_prev: "Claim CPD, GDC fees, travel and equipment on your 2026 dentist self assessment. Step-by-step guide to maximise deductions and avoid £100 late penalty."
-altText: "UK dentist working on Self Assessment tax return with calculator and dental practice documents"
-image: "https://images.pexels.com/photos/732444/pexels-photo-732444.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: 'Dentist Self Assessment: Complete Filing Guide 2026'
+slug: dentist-self-assessment-filing-guide-2026
+date: '2026-03-31'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: Associate tax
+metaTitle: 'Dentist Self Assessment 2026/27: Deadlines and Tax'
+metaDescription: 'File your dentist Self Assessment for 2026/27 on time: the 31 January online deadline, allowable expenses, Class 4 NIC and the £100 late-filing penalty.'
+metaTitle_prev: 'Dentist Self Assessment 2026/27: Deadlines, Tax and MTD'
+metaDescription_prev: 'How dentists file Self Assessment in 2026/27: income to report, allowable expenses, Class 4 NIC, payments on account, deadlines and MTD from 6 Apr 2026.'
+altText: UK dentist working on Self Assessment tax return with calculator and dental practice documents
+image: https://images.pexels.com/photos/732444/pexels-photo-732444.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Bich Tran"
-  photographerUrl: "https://www.pexels.com/@thngocbich"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/savings-tracker-on-brown-wooden-surface-732444/"
-h1: "Dentist Self Assessment: Complete Filing Guide 2026"
-summary: "Essential guide covering everything UK dentists need to know about filing their Self Assessment tax return, including key deadlines and allowable expenses."
+  photographer: Bich Tran
+  photographerUrl: https://www.pexels.com/@thngocbich
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/savings-tracker-on-brown-wooden-surface-732444/
+h1: 'Dentist Self Assessment: Complete Filing Guide 2026'
+summary: Essential guide covering everything UK dentists need to know about filing their Self Assessment tax return, including key deadlines and allowable expenses.
 keyTakeaways:
-  - "An online return and any balancing payment plus first payment on account are due by 31 January, the second payment on account by 31 July, with paper returns due 31 October."
-  - "Late filing triggers an automatic £100 penalty, then £10 a day after three months (capped at £900), then 5% of tax due or £300 at six and twelve months, even when no tax is owed."
-  - "Class 4 National Insurance is 6% on profits between £12,570 and £50,270 and 2% above, and Class 2 was abolished from 6 April 2024."
-  - "From 6 April 2026 HMRC's approved mileage rate is 55p per mile for the first 10,000 business miles (up from 45p) and 25p thereafter, with home-to-regular-practice commuting never deductible."
-  - "Making Tax Digital for Income Tax applies from 6 April 2026 for qualifying income over £50,000, dropping to £30,000 from April 2027 and £20,000 from April 2028."
-schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026"
+- An online return and any balancing payment plus first payment on account are due by 31 January, the second payment on account by 31 July, with paper returns due 31 October.
+- Late filing triggers an automatic £100 penalty, then £10 a day after three months (capped at £900), then 5% of tax due or £300 at six and twelve months, even when no tax is owed.
+- Class 4 National Insurance is 6% on profits between £12,570 and £50,270 and 2% above, and Class 2 was abolished from 6 April 2024.
+- From 6 April 2026 HMRC's approved mileage rate is 55p per mile for the first 10,000 business miles (up from 45p) and 25p thereafter, with home-to-regular-practice commuting never deductible.
+- Making Tax Digital for Income Tax applies from 6 April 2026 for qualifying income over £50,000, dropping to £30,000 from April 2027 and £20,000 from April 2028.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Dentist Self Assessment: Complete Filing Guide 2026","description":"File your dentist Self Assessment for 2026/27 on time: the 31 January online deadline, allowable expenses, Class 4 NIC and the £100 late-filing penalty.","url":"https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026","datePublished":"2026-03-31","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW
+  Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/732444/pexels-photo-732444.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"Associate tax","item":"https://www.dentalfinancepartners.co.uk/blog/associate-tax"},{"@type":"ListItem","position":3,"name":"Dentist Self Assessment: Complete Filing Guide 2026","item":"https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When is the dentist Self Assessment deadline?","acceptedAnswer":{"@type":"Answer","text":"An online return is due by 31 January after the end of the tax year, which is also when any balancing tax and your first payment on account fall due. A paper return must reach HMRC by 31 October. The second payment on account is due by 31 July. Filing late
+  triggers an automatic £100 penalty even if you owe no tax."}},{"@type":"Question","name":"What expenses can I claim as an associate dentist?","acceptedAnswer":{"@type":"Answer","text":"Allowable costs include indemnity cover, the GDC annual retention fee, professional subscriptions on HMRC''s approved list (such as the BDA), genuinely relevant CPD, loupes and instruments (usually via capital allowances), mileage between practices, a home-office apportionment and accountancy fees. You cannot claim home-to-regular-practice commuting, the GDC restoration fee or anything not wholly and exclusively for the trade."}},{"@type":"Question","name":"Do I need to file Self Assessment if I only work as an associate?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most associate dentists are self-employed for tax, and self-employment income above the £1,000 trading allowance means you must register and file a return. Even an employed or salaried dentist with private, locum or teaching income on the side usually needs to file."}},{"@type":"Question","name":"How much National Insurance do self-employed dentists pay?","acceptedAnswer":{"@type":"Answer","text":"Class 4 NIC is 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2025/26. Class 2 NIC was abolished from 6 April 2024, so associates above the small-profits threshold are treated as having paid and keep their state pension record without a separate weekly charge."}},{"@type":"Question","name":"What happens if I miss the Self Assessment deadline?","acceptedAnswer":{"@type":"Answer","text":"HMRC charges an automatic £100 late-filing penalty, then £10 a day after three months (up to £900), and 5% of the tax due or £300 (whichever is greater) at six and twelve months. Late payment of tax attracts a further 5% at 30 days, six months and twelve months, plus interest from the original due date."}}]}]}'
+canonical: https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026
 faqs:
-  - question: "When is the dentist Self Assessment deadline?"
-    answer: "An online return is due by 31 January after the end of the tax year, which is also when any balancing tax and your first payment on account fall due. A paper return must reach HMRC by 31 October. The second payment on account is due by 31 July. Filing late triggers an automatic £100 penalty even if you owe no tax."
-  - question: "What expenses can I claim as an associate dentist?"
-    answer: "Allowable costs include indemnity cover, the GDC annual retention fee, professional subscriptions on HMRC's approved list (such as the BDA), genuinely relevant CPD, loupes and instruments (usually via capital allowances), mileage between practices, a home-office apportionment and accountancy fees. You cannot claim home-to-regular-practice commuting, the GDC restoration fee or anything not wholly and exclusively for the trade."
-  - question: "Do I need to file Self Assessment if I only work as an associate?"
-    answer: "Yes. Most associate dentists are self-employed for tax, and self-employment income above the £1,000 trading allowance means you must register and file a return. Even an employed or salaried dentist with private, locum or teaching income on the side usually needs to file."
-  - question: "How much National Insurance do self-employed dentists pay?"
-    answer: "Class 4 NIC is 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2025/26. Class 2 NIC was abolished from 6 April 2024, so associates above the small-profits threshold are treated as having paid and keep their state pension record without a separate weekly charge."
-  - question: "What happens if I miss the Self Assessment deadline?"
-    answer: "HMRC charges an automatic £100 late-filing penalty, then £10 a day after three months (up to £900), and 5% of the tax due or £300 (whichever is greater) at six and twelve months. Late payment of tax attracts a further 5% at 30 days, six months and twelve months, plus interest from the original due date."
+- question: When is the dentist Self Assessment deadline?
+  answer: An online return is due by 31 January after the end of the tax year, which is also when any balancing tax and your first payment on account fall due. A paper return must reach HMRC by 31 October. The second payment on account is due by 31 July. Filing late triggers an automatic £100 penalty even if you owe no tax.
+- question: What expenses can I claim as an associate dentist?
+  answer: Allowable costs include indemnity cover, the GDC annual retention fee, professional subscriptions on HMRC's approved list (such as the BDA), genuinely relevant CPD, loupes and instruments (usually via capital allowances), mileage between practices, a home-office apportionment and accountancy fees. You cannot claim home-to-regular-practice commuting, the GDC restoration fee or anything not wholly and exclusively for the trade.
+- question: Do I need to file Self Assessment if I only work as an associate?
+  answer: Yes. Most associate dentists are self-employed for tax, and self-employment income above the £1,000 trading allowance means you must register and file a return. Even an employed or salaried dentist with private, locum or teaching income on the side usually needs to file.
+- question: How much National Insurance do self-employed dentists pay?
+  answer: Class 4 NIC is 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2025/26. Class 2 NIC was abolished from 6 April 2024, so associates above the small-profits threshold are treated as having paid and keep their state pension record without a separate weekly charge.
+- question: What happens if I miss the Self Assessment deadline?
+  answer: HMRC charges an automatic £100 late-filing penalty, then £10 a day after three months (up to £900), and 5% of the tax due or £300 (whichever is greater) at six and twelve months. Late payment of tax attracts a further 5% at 30 days, six months and twelve months, plus interest from the original due date.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Filing your <strong>dentist self assessment</strong> tax return does not need to be overwhelming. Whether you are a self-employed associate, a locum across several practices or an unincorporated principal, understanding what to report, which costs you can deduct and when payment is due keeps you compliant and stops you handing HMRC more than you owe.</p>
 
 <p>This guide covers the whole annual cycle for the current 2026/27 tax year: who has to file, the income to declare, allowable expenses, Class 4 National Insurance, payments on account, the deadline calendar, how to file, and the Making Tax Digital change that lands on 6 April 2026. Registration mechanics (getting your Unique Taxpayer Reference for the first time) are covered in depth on our <a href="/blog/associate-tax/self-assessment-registration-dentist-uk">Self Assessment registration guide for dentists</a>, so this page concentrates on the filing itself.</p>

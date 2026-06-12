@@ -1,41 +1,50 @@
 ---
-title: "Laboratory Costs in Dental Accounts: A UK Guide"
-slug: "laboratory-costs-dental-accounts-uk"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"
-date: "2026-03-28"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "Practice accounting"
-metaTitle: "Lab Costs in Dental Accounts | UK Dentist Guide"
-metaDescription: "How lab fees sit in your accounts, the VAT nuance on prostheses, lab cost as a percentage of revenue, and the control levers that protect your margin."
-altText: "UK dental practice laboratory invoice and accounting ledger showing cost of sales classification"
-image: "https://images.pexels.com/photos/8297016/pexels-photo-8297016.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: 'Laboratory Costs in Dental Accounts: A UK Guide'
+slug: laboratory-costs-dental-accounts-uk
+canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk
+date: '2026-03-28'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: Practice accounting
+metaTitle: 'Lab Costs in Dental Accounts: A Full UK Dentist Guide'
+metaDescription: How lab fees sit in your accounts as cost of sales, the VAT-exempt position on prostheses, and why they run at 8 to 15% of turnover. Protect your margin.
+altText: UK dental practice laboratory invoice and accounting ledger showing cost of sales classification
+image: https://images.pexels.com/photos/8297016/pexels-photo-8297016.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/person-holding-a-calculator-and-pen-8297016/"
-h1: "Laboratory Costs in Dental Accounts: How to Account for Lab Expenses"
-summary: "Laboratory costs are often one of the largest variable expenses in dental practice accounts. Classifying them correctly, understanding the VAT position, and tracking lab cost as a percentage of revenue all feed straight into your margin and your tax position."
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/person-holding-a-calculator-and-pen-8297016/
+h1: 'Laboratory Costs in Dental Accounts: How to Account for Lab Expenses'
+summary: Laboratory costs are often one of the largest variable expenses in dental practice accounts. Classifying them correctly, understanding the VAT position, and tracking lab cost as a percentage of revenue all feed straight into your margin and your tax position.
 keyTakeaways:
-  - "Laboratory fees commonly run at roughly 8% to 15% of turnover, sitting higher for prosthetic, implant or cosmetic caseloads."
-  - "Lab fees tied to patient treatment belong in cost of sales so gross profit reflects the true return, while in-house maintenance and admin stay in overheads."
-  - "Supply of dental prostheses by a registered dentist, DCP or dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7."
-  - "Standard-rated lab VAT is usually unrecoverable for an exempt dental practice, so the VAT-inclusive figure becomes the real cost of the work."
-  - "Who bears the lab cost on associate work is set by the agreement, commonly deducted before the fee split so both parties share it in proportion."
-schema: ""
+- Laboratory fees commonly run at roughly 8% to 15% of turnover, sitting higher for prosthetic, implant or cosmetic caseloads.
+- Lab fees tied to patient treatment belong in cost of sales so gross profit reflects the true return, while in-house maintenance and admin stay in overheads.
+- Supply of dental prostheses by a registered dentist, DCP or dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7.
+- Standard-rated lab VAT is usually unrecoverable for an exempt dental practice, so the VAT-inclusive figure becomes the real cost of the work.
+- Who bears the lab cost on associate work is set by the agreement, commonly deducted before the fee split so both parties share it in proportion.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Laboratory Costs in Dental Accounts: A UK Guide","description":"How lab fees sit in your accounts as cost of sales, the VAT-exempt position on prostheses, and why they run at 8 to 15% of turnover. Protect your margin.","url":"https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk","datePublished":"2026-03-28","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW
+  Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/8297016/pexels-photo-8297016.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"Practice accounting","item":"https://www.dentalfinancepartners.co.uk/blog/practice-accounting"},{"@type":"ListItem","position":3,"name":"Laboratory Costs in Dental Accounts: A UK Guide","item":"https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should laboratory costs be treated as cost of sales or general expenses?","acceptedAnswer":{"@type":"Answer","text":"Lab fees tied to specific patient treatments are best classified as a direct cost of sales, so they sit against the revenue they generate and give you a true gross margin. General lab-related costs, such as in-house
+  equipment maintenance or models used for practice administration, stay in overheads. The split matters because cost of sales drives your gross profit, while overheads only affect net profit."}},{"@type":"Question","name":"Can a dental practice reclaim the VAT on laboratory fees?","acceptedAnswer":{"@type":"Answer","text":"It depends on two things: whether your practice is VAT registered, and how your laboratory''s supply is treated. The supply of dental prostheses (crowns, bridges, dentures) by a registered dentist, dental care professional or registered dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7. Where your lab is appropriately registered, its supply to you is exempt and there is no VAT to reclaim. Where the lab is not so registered, the work may be standard rated, and because dental care is itself exempt, an exempt practice generally cannot reclaim that input VAT, so it becomes a genuine cost. Always check how your own laboratory invoices."}},{"@type":"Question","name":"What percentage of revenue should laboratory costs be?","acceptedAnswer":{"@type":"Answer","text":"Lab costs commonly run at roughly 8 to 15 percent of turnover, varying heavily with treatment mix. A heavily prosthetic, implant or cosmetic caseload sits at the higher end, while a check-up and hygiene heavy book sits lower. The figure matters less in isolation than as a trend you monitor against your fee schedule, so a rising percentage with flat fees signals a margin leak."}},{"@type":"Question","name":"Who pays the lab bill on associate work?","acceptedAnswer":{"@type":"Answer","text":"That is set by the associate agreement. The common position is that lab fees on an associate''s work are deducted before the fee split is applied, so the associate and the practice share the cost in proportion to the split. Some agreements pass the full lab cost to the associate. The arrangement should be explicit in the contract, because it changes both parties'' real take-home and how the cost
+  lands in the accounts."}}]}]}'
 faqs:
-  - question: "Should laboratory costs be treated as cost of sales or general expenses?"
-    answer: "Lab fees tied to specific patient treatments are best classified as a direct cost of sales, so they sit against the revenue they generate and give you a true gross margin. General lab-related costs, such as in-house equipment maintenance or models used for practice administration, stay in overheads. The split matters because cost of sales drives your gross profit, while overheads only affect net profit."
-  - question: "Can a dental practice reclaim the VAT on laboratory fees?"
-    answer: "It depends on two things: whether your practice is VAT registered, and how your laboratory's supply is treated. The supply of dental prostheses (crowns, bridges, dentures) by a registered dentist, dental care professional or registered dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7. Where your lab is appropriately registered, its supply to you is exempt and there is no VAT to reclaim. Where the lab is not so registered, the work may be standard rated, and because dental care is itself exempt, an exempt practice generally cannot reclaim that input VAT, so it becomes a genuine cost. Always check how your own laboratory invoices."
-  - question: "What percentage of revenue should laboratory costs be?"
-    answer: "Lab costs commonly run at roughly 8 to 15 percent of turnover, varying heavily with treatment mix. A heavily prosthetic, implant or cosmetic caseload sits at the higher end, while a check-up and hygiene heavy book sits lower. The figure matters less in isolation than as a trend you monitor against your fee schedule, so a rising percentage with flat fees signals a margin leak."
-  - question: "Who pays the lab bill on associate work?"
-    answer: "That is set by the associate agreement. The common position is that lab fees on an associate's work are deducted before the fee split is applied, so the associate and the practice share the cost in proportion to the split. Some agreements pass the full lab cost to the associate. The arrangement should be explicit in the contract, because it changes both parties' real take-home and how the cost lands in the accounts."
+- question: Should laboratory costs be treated as cost of sales or general expenses?
+  answer: Lab fees tied to specific patient treatments are best classified as a direct cost of sales, so they sit against the revenue they generate and give you a true gross margin. General lab-related costs, such as in-house equipment maintenance or models used for practice administration, stay in overheads. The split matters because cost of sales drives your gross profit, while overheads only affect net profit.
+- question: Can a dental practice reclaim the VAT on laboratory fees?
+  answer: 'It depends on two things: whether your practice is VAT registered, and how your laboratory''s supply is treated. The supply of dental prostheses (crowns, bridges, dentures) by a registered dentist, dental care professional or registered dental technician is VAT exempt under VATA 1994 Schedule 9 Group 7. Where your lab is appropriately registered, its supply to you is exempt and there is no VAT to reclaim. Where the lab is not so registered, the work may be standard rated, and because dental care is itself exempt, an exempt practice generally cannot reclaim that input VAT, so it becomes a genuine cost. Always check how your own laboratory invoices.'
+- question: What percentage of revenue should laboratory costs be?
+  answer: Lab costs commonly run at roughly 8 to 15 percent of turnover, varying heavily with treatment mix. A heavily prosthetic, implant or cosmetic caseload sits at the higher end, while a check-up and hygiene heavy book sits lower. The figure matters less in isolation than as a trend you monitor against your fee schedule, so a rising percentage with flat fees signals a margin leak.
+- question: Who pays the lab bill on associate work?
+  answer: That is set by the associate agreement. The common position is that lab fees on an associate's work are deducted before the fee split is applied, so the associate and the practice share the cost in proportion to the split. Some agreements pass the full lab cost to the associate. The arrangement should be explicit in the contract, because it changes both parties' real take-home and how the cost lands in the accounts.
+metaTitle_prev: Lab Costs in Dental Accounts | UK Dentist Guide
+metaDescription_prev: How lab fees sit in your accounts, the VAT nuance on prostheses, lab cost as a percentage of revenue, and the control levers that protect your margin.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Laboratory fees are usually one of the largest variable costs in a dental practice, often running at something like 8 to 15 percent of turnover depending on how prosthetic your caseload is. They are a normal, allowable revenue cost, but how you classify them, how you handle the VAT, and how closely you track them as a percentage of revenue all feed directly into your margin and your tax position.</p>
 
 <p>This guide covers where lab fees sit in the accounts, the VAT nuance that catches a lot of practices out, the lab cost percentage as a working KPI, and the practical levers you can pull to keep the cost under control.</p>

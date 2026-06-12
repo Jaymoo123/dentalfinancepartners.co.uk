@@ -1,41 +1,50 @@
 ---
-title: "Sole Trader vs Limited Company for Dentists: Which is Right for You?"
-slug: "sole-trader-vs-limited-company-dentists-uk"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"
-date: "2026-03-28"
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "Practice finance"
-metaTitle: "Sole Trader vs Limited Company Dentist | 2026/27 Guide"
-metaDescription: "Should a dentist incorporate? Sole trader vs limited company compared at 2026/27 rates, with the NHS pension trap most guides ignore."
-altText: "UK dentist reviewing business structure documents and tax calculations on desk"
-image: "https://images.pexels.com/photos/7109277/pexels-photo-7109277.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+title: 'Sole Trader vs Limited Company for Dentists: Which is Right for You?'
+slug: sole-trader-vs-limited-company-dentists-uk
+canonical: https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk
+date: '2026-03-28'
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: Practice finance
+metaTitle: 'Sole Trader vs Limited Company: Dentist Guide 2026/27'
+metaDescription: Should a dentist incorporate in 2026/27? The new 10.75% dividend rate narrows the gap, and only PAYE salary stays NHS-pensionable. We compare both routes.
+altText: UK dentist reviewing business structure documents and tax calculations on desk
+image: https://images.pexels.com/photos/7109277/pexels-photo-7109277.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Tiger Lily"
-  photographerUrl: "https://www.pexels.com/@tiger-lily"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/person-holding-white-printed-paper-7109277/"
-h1: "Sole Trader vs Limited Company for Dentists: Which is Right for You?"
-summary: "Choosing between sole trader and limited company status affects your tax bill, your NHS pension accrual, your admin burden and your future flexibility. We break it down for UK dentists at current 2026/27 rates."
+  photographer: Tiger Lily
+  photographerUrl: https://www.pexels.com/@tiger-lily
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/person-holding-white-printed-paper-7109277/
+h1: 'Sole Trader vs Limited Company for Dentists: Which is Right for You?'
+summary: Choosing between sole trader and limited company status affects your tax bill, your NHS pension accrual, your admin burden and your future flexibility. We break it down for UK dentists at current 2026/27 rates.
 keyTakeaways:
-  - "At 2026/27 rates the pure tax gap between sole trader and limited company is small for full-extraction owners, with the dividend rise to 10.75% ordinary and 35.75% upper eroding it further."
-  - "For an incorporated dentist only PAYE salary is pensionable and dividends are not, so an incorporated associate (an officer) loses NHS pension accrual on the dividend slice."
-  - "Corporation tax is 19% up to £50,000 and 25% above £250,000, with marginal relief making the slice between roughly 26.5%; a one-director company cannot claim Employment Allowance."
-  - "Employer NIC rose to 15% with the secondary threshold cut to £5,000 from 6 April 2025, making salary through a company more expensive alongside the dividend rate rise."
-  - "Section 162 incorporation relief (TCGA 1992 s.162) lets a sole trader transfer the whole business to a company for shares while deferring capital gains tax on the transfer."
-schema: ""
+- At 2026/27 rates the pure tax gap between sole trader and limited company is small for full-extraction owners, with the dividend rise to 10.75% ordinary and 35.75% upper eroding it further.
+- For an incorporated dentist only PAYE salary is pensionable and dividends are not, so an incorporated associate (an officer) loses NHS pension accrual on the dividend slice.
+- Corporation tax is 19% up to £50,000 and 25% above £250,000, with marginal relief making the slice between roughly 26.5%; a one-director company cannot claim Employment Allowance.
+- Employer NIC rose to 15% with the secondary threshold cut to £5,000 from 6 April 2025, making salary through a company more expensive alongside the dividend rate rise.
+- Section 162 incorporation relief (TCGA 1992 s.162) lets a sole trader transfer the whole business to a company for shares while deferring capital gains tax on the transfer.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Sole Trader vs Limited Company for Dentists: Which is Right for You?","description":"Should a dentist incorporate in 2026/27? The new 10.75% dividend rate narrows the gap, and only PAYE salary stays NHS-pensionable. We compare both routes.","url":"https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk","datePublished":"2026-03-28","dateModified":"2026-06-12","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance
+  Partners Ltd","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), NASDAL Member","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners Ltd","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":[{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"},{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7109277/pexels-photo-7109277.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"Practice finance","item":"https://www.dentalfinancepartners.co.uk/blog/practice-finance"},{"@type":"ListItem","position":3,"name":"Sole Trader vs Limited Company for Dentists: Which is Right for You?","item":"https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a dentist better off self employed or as a limited company?","acceptedAnswer":{"@type":"Answer","text":"At typical principal and associate profit levels the pure tax difference between sole trader and
+  limited company is small at 2025/26 rates, and the 2026/27 dividend rate rise (ordinary 10.75%, upper 35.75%) narrows it further. For many full-extraction owners it is now close to neutral. The case for incorporating usually rests on retained profits, spouse employment, liability cover and sale planning, not a headline tax saving, and it must always be weighed against lost NHS pension accrual on the dividend portion."}},{"@type":"Question","name":"Does incorporating affect my NHS pension?","acceptedAnswer":{"@type":"Answer","text":"Yes, and it is the most overlooked consequence. For an incorporated dentist taking salary plus dividends, only the PAYE salary is pensionable; dividends are not pensionable. An incorporated associate is treated as an officer, so cutting salary to extract profit as dividends reduces pensionable pay and the accrual that builds. Whether an incorporated contract-holding principal can still pension NHS-derived profit is contested and case-specific, so confirm your own position with NHSBSA before you restructure."}},{"@type":"Question","name":"When should a dentist consider switching from sole trader to limited company?","acceptedAnswer":{"@type":"Answer","text":"The structure question becomes worth modelling once profits are comfortably above the £50,000 small-profits band, you are not drawing all of the profit each year, you want to bring in a genuinely employed spouse, or you are planning expansion or a future sale. None of these is automatic. Model the tax position and the NHS pension position together for your own numbers before deciding."}},{"@type":"Question","name":"Does a limited company really protect my personal assets?","acceptedAnswer":{"@type":"Answer","text":"Generally yes, but the protection has limits. Directors can face personal liability in certain circumstances, and lenders or landlords usually require personal guarantees for significant loans or property leases. Professional indemnity cover (Dental Protection, MDU or MDDUS)
+  remains essential whatever structure you trade through, because it answers clinical claims that the corporate veil does not."}}]}]}'
 faqs:
-  - question: "Is a dentist better off self employed or as a limited company?"
-    answer: "At typical principal and associate profit levels the pure tax difference between sole trader and limited company is small at 2025/26 rates, and the 2026/27 dividend rate rise (ordinary 10.75%, upper 35.75%) narrows it further. For many full-extraction owners it is now close to neutral. The case for incorporating usually rests on retained profits, spouse employment, liability cover and sale planning, not a headline tax saving, and it must always be weighed against lost NHS pension accrual on the dividend portion."
-  - question: "Does incorporating affect my NHS pension?"
-    answer: "Yes, and it is the most overlooked consequence. For an incorporated dentist taking salary plus dividends, only the PAYE salary is pensionable; dividends are not pensionable. An incorporated associate is treated as an officer, so cutting salary to extract profit as dividends reduces pensionable pay and the accrual that builds. Whether an incorporated contract-holding principal can still pension NHS-derived profit is contested and case-specific, so confirm your own position with NHSBSA before you restructure."
-  - question: "When should a dentist consider switching from sole trader to limited company?"
-    answer: "The structure question becomes worth modelling once profits are comfortably above the £50,000 small-profits band, you are not drawing all of the profit each year, you want to bring in a genuinely employed spouse, or you are planning expansion or a future sale. None of these is automatic. Model the tax position and the NHS pension position together for your own numbers before deciding."
-  - question: "Does a limited company really protect my personal assets?"
-    answer: "Generally yes, but the protection has limits. Directors can face personal liability in certain circumstances, and lenders or landlords usually require personal guarantees for significant loans or property leases. Professional indemnity cover (Dental Protection, MDU or MDDUS) remains essential whatever structure you trade through, because it answers clinical claims that the corporate veil does not."
+- question: Is a dentist better off self employed or as a limited company?
+  answer: At typical principal and associate profit levels the pure tax difference between sole trader and limited company is small at 2025/26 rates, and the 2026/27 dividend rate rise (ordinary 10.75%, upper 35.75%) narrows it further. For many full-extraction owners it is now close to neutral. The case for incorporating usually rests on retained profits, spouse employment, liability cover and sale planning, not a headline tax saving, and it must always be weighed against lost NHS pension accrual on the dividend portion.
+- question: Does incorporating affect my NHS pension?
+  answer: Yes, and it is the most overlooked consequence. For an incorporated dentist taking salary plus dividends, only the PAYE salary is pensionable; dividends are not pensionable. An incorporated associate is treated as an officer, so cutting salary to extract profit as dividends reduces pensionable pay and the accrual that builds. Whether an incorporated contract-holding principal can still pension NHS-derived profit is contested and case-specific, so confirm your own position with NHSBSA before you restructure.
+- question: When should a dentist consider switching from sole trader to limited company?
+  answer: The structure question becomes worth modelling once profits are comfortably above the £50,000 small-profits band, you are not drawing all of the profit each year, you want to bring in a genuinely employed spouse, or you are planning expansion or a future sale. None of these is automatic. Model the tax position and the NHS pension position together for your own numbers before deciding.
+- question: Does a limited company really protect my personal assets?
+  answer: Generally yes, but the protection has limits. Directors can face personal liability in certain circumstances, and lenders or landlords usually require personal guarantees for significant loans or property leases. Professional indemnity cover (Dental Protection, MDU or MDDUS) remains essential whatever structure you trade through, because it answers clinical claims that the corporate veil does not.
+metaTitle_prev: Sole Trader vs Limited Company Dentist | 2026/27 Guide
+metaDescription_prev: Should a dentist incorporate? Sole trader vs limited company compared at 2026/27 rates, with the NHS pension trap most guides ignore.
+dateModified: '2026-06-12'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedAt: '2026-06-12'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>One of the most common questions we are asked is whether a <strong>dentist should be self employed or limited company</strong>. The structure you trade through shapes your tax bill, your NHS pension accrual, your admin and your options when you come to expand or sell. The honest answer in 2026/27 is more nuanced than the old rule of thumb, because two recent changes have shifted the maths against incorporation for full-extraction owners.</p>
 
 <p>This guide compares the two structures across tax, administration, liability and future flexibility, rebuilds the worked example at current rates, and flags the NHS pension trap that most generic comparisons leave out. It is the overview. Where a point deserves a deeper dive, we link to the detailed pieces rather than repeat them here.</p>
