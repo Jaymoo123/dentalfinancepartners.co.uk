@@ -60,3 +60,5 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 - RATE-LIMIT NOTE: server-side throttling appears under heavy CONCURRENCY (multiple long conductors + the rewrite + solicitors + medical agents at once). Mitigate: run fewer simultaneous long-runners / space waves out. Recovery-from-interrupt is proven (assess on-disk state via globs + predeploy_gate + build, then complete the remainder).
 - DEPLOY-REVIEW re-verify list (conductor self-gated locks): W3 43.9% NPE; W4 §11.A-C, §13, §13.A.
 - Wave 1 surfaced a rewrite-engine backlog (FA-2026 rate-currency staleness: BADR 10% pages, sole-trader-vs-ltd "saves £5k", pre-FA-2026 dividend pages) — see wave1_page_tracker flags F-1..F-4.
+
+- SERP META BATCH 1 (2026-06-12): 35 pages re-titled/re-described from fresh 90d GSC + Bing query data, deployed + IndexNow'd; 90-day regression watch in monitored_pages (to 2026-09-10); engine + methodology in docs/_engines/SERP_META_PROGRAM.md; content-gap follow-ups in docs/dentists/opportunity_register_meta_2026-06-12.md.
