@@ -3,6 +3,7 @@ title: "Partial Exemption for Dental Practices: Recovering Input VAT in a Mixed 
 slug: "dental-practice-vat-partial-exemption-input-recovery"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-partial-exemption-input-recovery"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Dental Practice VAT Partial Exemption: Input Recovery"

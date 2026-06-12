@@ -3,6 +3,7 @@ title: "How Does Business Asset Disposal Relief Apply to a Dental Practice Sale 
 slug: "badr-on-dental-practice-sale-2026-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/badr-on-dental-practice-sale-2026-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "BADR on Dental Practice Sale 2025/26 | CGT Relief for UK Dentists"

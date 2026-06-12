@@ -3,6 +3,7 @@ title: What Do Dental Accountants Do That General Accountants Cannot?
 slug: dental-accountants
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountants
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting

@@ -3,6 +3,7 @@ title: 'When to Incorporate Your Agency: Recruitment vs Creative, Key Structural
 slug: when-to-incorporate-agency-recruitment-vs-creative
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency-recruitment-vs-creative
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'When to Incorporate an Agency: Recruitment vs Creative'

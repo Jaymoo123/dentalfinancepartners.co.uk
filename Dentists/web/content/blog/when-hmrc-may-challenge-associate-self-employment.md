@@ -3,6 +3,7 @@ title: When Can HMRC Challenge an Associate Dentist’s Self-Employment Status?
 slug: when-hmrc-may-challenge-associate-self-employment
 canonical: https://www.dentalfinancepartners.co.uk/blog/associate-tax/when-hmrc-may-challenge-associate-self-employment
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Associate Tax
 metaTitle: When HMRC Challenges Associate Self-Employment Status

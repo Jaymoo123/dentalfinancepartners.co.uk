@@ -3,6 +3,7 @@ title: What Are The Rules For Paying An Employee's Mileage Tax-free? (45p Is Now
 slug: employee-mileage-45p-tax-free-rules
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/employee-mileage-45p-tax-free-rules
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
 metaTitle: 'Mileage Rate 2026/27: The 45p Rate Rose to 55p Per Mile'

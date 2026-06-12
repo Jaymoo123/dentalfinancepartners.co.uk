@@ -3,6 +3,7 @@ title: 'Agency Accountant vs Bookkeeper: What UK Agency Founders Actually Need'
 slug: agency-accountant-vs-bookkeeper
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-accountant-vs-bookkeeper
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Accountant vs Bookkeeper: What UK Founders Need'

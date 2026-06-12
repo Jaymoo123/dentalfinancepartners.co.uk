@@ -3,6 +3,7 @@ title: "How to Find the Best Accountant for Self Employed Near Me"
 slug: "accountant-for-self-employed-near-me"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-self-employed-near-me"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Self Employed Near Me | UK Business"

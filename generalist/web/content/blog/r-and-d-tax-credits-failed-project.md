@@ -3,6 +3,7 @@ title: "Can a Company Claim R&D Tax Credits for a Failed Project That Never Gene
 slug: "r-and-d-tax-credits-failed-project"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credits-failed-project"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits for Failed Projects: UK Claim Rules"

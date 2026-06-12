@@ -3,6 +3,7 @@ title: "Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Busine
 slug: "fixed-fee-vs-hourly-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Fixed Fee vs Hourly Accountant: Which Is Better Value?"

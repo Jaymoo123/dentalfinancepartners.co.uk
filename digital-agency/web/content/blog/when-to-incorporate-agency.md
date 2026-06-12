@@ -3,6 +3,7 @@ title: When Should a Freelancer Incorporate Their Business Into an Agency?
 slug: when-to-incorporate-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'When to Incorporate Agency: Key Milestones for Freelancers'

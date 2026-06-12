@@ -3,6 +3,7 @@ title: Which Construction Accounting Software Works Best for UK Contractors in 2
 slug: construction-accounting-software-uk-contractors
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/construction-accounting-software-uk-contractors
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'Construction Accounting Software UK: CIS, VAT, Payroll'

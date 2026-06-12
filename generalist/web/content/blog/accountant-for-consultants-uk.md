@@ -3,6 +3,7 @@ title: "Why UK Consultants Need a Specialist Accountant (Not Just Any Accountant
 slug: "accountant-for-consultants-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-consultants-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Consultants UK: IR35, Ltd & Tax Specialist"

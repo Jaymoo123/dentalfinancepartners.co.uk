@@ -3,6 +3,7 @@ title: "What Are the UK CGT Rates on Residential Property in 2026?"
 slug: "uk-cgt-rates-on-residential-property-2026"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-on-residential-property-2026"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "UK CGT Rates on Residential Property 2026: What You Pay Now"

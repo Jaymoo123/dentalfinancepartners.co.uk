@@ -3,6 +3,7 @@ title: "How Does Corporation Tax Work for a Company That Makes a Loss in Year On
 slug: "corporation-tax-loss-year-one"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-loss-year-one"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax for a Loss-Making Company in Year One"

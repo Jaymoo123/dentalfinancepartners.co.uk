@@ -3,6 +3,7 @@ title: "How Are LLP Members Taxed in the UK for 2025/26?"
 slug: "how-llp-members-are-taxed-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/how-llp-members-are-taxed-uk-2025-26"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "How LLP Members Are Taxed UK 2025/26 | Solicitor Guide"

@@ -3,6 +3,7 @@ title: 'Multi-Site Dental Group VAT: Partial Exemption & Cost Sharing'
 slug: multi-site-dental-group-vat-partial-exemption-cost-sharing
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/multi-site-dental-group-vat-partial-exemption-cost-sharing
 date: '2026-05-20'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: VAT & Compliance
 metaTitle: 'Multi-Site Dental Group VAT: Partial Exemption & Cost'

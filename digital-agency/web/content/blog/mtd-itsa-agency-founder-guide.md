@@ -3,6 +3,7 @@ title: 'MTD ITSA for Agency Founders: What Changes and When'
 slug: mtd-itsa-agency-founder-guide
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-agency-founder-guide
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD ITSA Agency Guide: Deadlines, Software, and Next Steps'

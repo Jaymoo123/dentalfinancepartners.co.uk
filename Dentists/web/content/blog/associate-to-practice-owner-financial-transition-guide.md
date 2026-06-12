@@ -3,6 +3,7 @@ title: "Associate to Practice Owner: Complete Financial Transition Guide for UK 
 slug: "associate-to-practice-owner-financial-transition-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/associate-to-practice-owner-financial-transition-guide"
 date: "2026-03-31"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

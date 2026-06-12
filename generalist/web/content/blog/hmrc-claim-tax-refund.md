@@ -3,6 +3,7 @@ title: 'How to Claim a Tax Refund from HMRC: A Practical Guide'
 slug: hmrc-claim-tax-refund
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/hmrc-claim-tax-refund
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: How to Claim a Tax Refund From HMRC and Get Tax Back

@@ -3,6 +3,7 @@ title: 'Inside or Outside IR35 for a Freelance Copywriter: How to Decide'
 slug: inside-outside-ir35-freelance-copywriter-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/inside-outside-ir35-freelance-copywriter-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Inside or Outside IR35 for a Freelance Copywriter: Agency'

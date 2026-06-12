@@ -2,6 +2,7 @@
 title: "Private Dental Practice Tax: Complete Financial Guide"
 slug: "private-dental-practice-tax-complete-financial-guide"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

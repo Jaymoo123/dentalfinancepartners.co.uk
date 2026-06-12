@@ -3,6 +3,7 @@ title: "How Do You File a Tax Return as a Locum Dentist in the UK? A Step-by-Ste
 slug: "locum-dentist-tax-return-step-by-step-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-tax-return-step-by-step-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

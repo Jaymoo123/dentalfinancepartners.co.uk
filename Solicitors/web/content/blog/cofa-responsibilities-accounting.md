@@ -3,6 +3,7 @@ title: 'COFA Responsibilities for Accounting: A Complete Guide for UK Law Firms'
 slug: cofa-responsibilities-accounting
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/cofa-responsibilities-accounting
 date: '2026-04-01'
+generator: claude/legacy-supabase
 author: Accounts for Lawyers Editorial Team
 category: SRA Compliance & Trust Accounting
 metaTitle: COFA Accounting Responsibilities Under the SRA Rules

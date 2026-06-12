@@ -3,6 +3,7 @@ title: "How Does MTD for VAT Apply to a Law Firm? A Compliance Guide for Solicit
 slug: "mtd-for-vat-law-firm-compliance"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/mtd-for-vat-law-firm-compliance"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "MTD for VAT Law Firm Compliance: Solicitor Guide 2025/26"

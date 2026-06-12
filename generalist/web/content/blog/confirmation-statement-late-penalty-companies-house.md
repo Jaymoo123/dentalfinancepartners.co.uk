@@ -3,6 +3,7 @@ title: "Confirmation Statement Late: Is There a Penalty? What Actually Happens"
 slug: "confirmation-statement-late-penalty-companies-house"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/confirmation-statement-late-penalty-companies-house"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Confirmation Statement Late: Penalty and What Happens"

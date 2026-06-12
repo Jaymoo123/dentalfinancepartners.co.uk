@@ -2,6 +2,7 @@
 title: 'Medical Professional Expenses: What Is Claimable for UK Doctors'
 slug: medical-professional-expenses-what-is-claimable
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: Medical Expenses
 metaTitle: 'Medical Professional Expenses: What Doctors Can Claim'

@@ -3,6 +3,7 @@ title: 'Capital Allowances Example: How a UK Dental Practice Claims Tax Relief o
 slug: capital-allowances-example-dental-practice
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/capital-allowances-example-dental-practice
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'Capital Allowances Example: Tax Relief on Dental Equipment'

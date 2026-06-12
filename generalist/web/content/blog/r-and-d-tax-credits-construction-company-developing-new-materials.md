@@ -3,6 +3,7 @@ title: "R&D Tax Credits Explained for a Construction Company Developing New Mate
 slug: "r-and-d-tax-credits-construction-company-developing-new-materials"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credits-construction-company-developing-new-materials"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits Explained for Construction: New Materials"

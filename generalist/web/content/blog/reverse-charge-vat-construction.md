@@ -3,6 +3,7 @@ title: 'Reverse Charge VAT Construction: A Practical Guide for UK Contractors an
 slug: reverse-charge-vat-construction
 canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/reverse-charge-vat-construction
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: VAT and Making Tax Digital
 metaTitle: 'Reverse Charge VAT in Construction: How to Invoice It'

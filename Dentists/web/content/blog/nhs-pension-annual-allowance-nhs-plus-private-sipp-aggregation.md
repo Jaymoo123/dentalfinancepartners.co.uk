@@ -3,6 +3,7 @@ title: "NHS Pension and a SIPP: How Both Count Against Your £60,000 Annual Allo
 slug: "nhs-pension-annual-allowance-nhs-plus-private-sipp-aggregation"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/nhs-pension-annual-allowance-nhs-plus-private-sipp-aggregation"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "NHS Pension Plus SIPP: The Annual Allowance Aggregation"

@@ -3,6 +3,7 @@ title: What Does Incorporation Actually Cost? The Agency Founder's Reality Check
 slug: incorporation-cost-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/incorporation-cost-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Incorporation Cost for Agency Founders: Real Numbers'

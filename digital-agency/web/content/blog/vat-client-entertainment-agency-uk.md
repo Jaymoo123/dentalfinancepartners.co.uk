@@ -3,6 +3,7 @@ title: Can You Claim VAT on Client Meals and Agency Team Entertainment?
 slug: vat-client-entertainment-agency-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-client-entertainment-agency-uk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'VAT on Client Entertainment: Can Agencies Reclaim It?'

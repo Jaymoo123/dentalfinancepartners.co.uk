@@ -3,6 +3,7 @@ title: 'Dubai Relocation for Agency Founders: Why Your UK Business Insurance Pol
 slug: dubai-relocation-insurance-agency-coverage
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-insurance-agency-coverage
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Dubai Relocation Insurance: Why UK Policies Don''t Cover UAE'

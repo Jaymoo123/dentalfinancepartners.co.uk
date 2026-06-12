@@ -3,6 +3,7 @@ title: "Dentist Leaving the UK or Emigrating: The Tax Position and What to Settl
 slug: "dentist-leaving-uk-emigrating-tax-position"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-leaving-uk-emigrating-tax-position"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Dentist Leaving the UK: The Tax Position Explained"

@@ -3,6 +3,7 @@ title: Can I Claim Mileage as a Limited Company Director?
 slug: can-i-claim-mileage-limited-company-director
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: Can a Limited Company Director Claim Mileage? UK Rules

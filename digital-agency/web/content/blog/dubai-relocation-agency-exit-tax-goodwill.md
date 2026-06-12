@@ -3,6 +3,7 @@ title: 'Dubai Relocation for Agency Founders: The Exit Tax on Your Agency''s Goo
 slug: dubai-relocation-agency-exit-tax-goodwill
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-agency-exit-tax-goodwill
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Dubai Relocation: Exit Tax on Your Agency Goodwill'

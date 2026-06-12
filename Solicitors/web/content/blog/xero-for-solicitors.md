@@ -3,6 +3,7 @@ title: "Xero for Solicitors: Complete Setup and Compliance Guide"
 slug: "xero-for-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/xero-for-solicitors"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Xero for Solicitors: Setup Guide & SRA Compliance Tips"

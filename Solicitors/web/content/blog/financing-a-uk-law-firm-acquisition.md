@@ -3,6 +3,7 @@ title: "How Do UK Solicitors Finance a Law Firm Acquisition?"
 slug: "financing-a-uk-law-firm-acquisition"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/financing-a-uk-law-firm-acquisition"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "Financing a UK Law Firm Acquisition: Solicitor's Guide"

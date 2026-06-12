@@ -3,6 +3,7 @@ title: "SDLT Refund and Overpayment Claims: A Conveyancer's Guide to the Time Li
 slug: "sdlt-refund-and-overpayment-claims-conveyancers"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/sdlt-refund-and-overpayment-claims-conveyancers"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "SDLT Refund and Overpayment Claims: Conveyancer Time Limits"

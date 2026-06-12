@@ -3,6 +3,7 @@ title: What Does an Accountant for OnlyFans Creators Do? Tax, IR35, and Structur
 slug: accountant-for-onlyfans-creators-uk
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Accountant for OnlyFans Creators UK: Tax and VAT Rules'

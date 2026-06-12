@@ -3,6 +3,7 @@ title: How to Set Up a Family Investment Company for Your Agency to Save Inherit
 slug: family-investment-company-agency-inheritance-tax
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/family-investment-company-agency-inheritance-tax
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Family Investment Company for Agency Inheritance Tax Savings

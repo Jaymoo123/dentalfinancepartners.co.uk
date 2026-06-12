@@ -3,6 +3,7 @@ title: "Partial (Flexible) Retirement for Doctors: The NHS Pension Guide"
 slug: "nhs-pension-partial-retirement-doctors-guide"
 canonical: "https://www.medicalaccounts.co.uk/blog/nhs-pension-partial-retirement-doctors-guide"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "NHS Pension Planning"
 metaTitle: "NHS Pension Partial Retirement: A Doctor's Guide"

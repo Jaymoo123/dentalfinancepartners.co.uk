@@ -3,6 +3,7 @@ title: "How Do Corporation Tax and Dividend Tax Work Together for UK Directors i
 slug: "corporation-tax-and-dividend-tax-uk-directors"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-and-dividend-tax-uk-directors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax and Dividend Tax: UK Director's Guide"

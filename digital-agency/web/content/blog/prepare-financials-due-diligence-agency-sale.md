@@ -3,6 +3,7 @@ title: How to Prepare Your Agency's Financials for Due Diligence in a Sale Proce
 slug: prepare-financials-due-diligence-agency-sale
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/prepare-financials-due-diligence-agency-sale
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: Prepare Agency Financials for Due Diligence in a Sale

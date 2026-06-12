@@ -3,6 +3,7 @@ title: "Locum Dentist Ltd Company vs Self-Employed: Which Tax Structure Works Be
 slug: "locum-dentist-ltd-company-vs-self-employed"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-ltd-company-vs-self-employed"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

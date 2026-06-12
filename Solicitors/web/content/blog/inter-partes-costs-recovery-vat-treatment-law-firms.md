@@ -3,6 +3,7 @@ title: "Inter-Partes Costs Recovery: VAT Treatment for UK Law Firms"
 slug: "inter-partes-costs-recovery-vat-treatment-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/inter-partes-costs-recovery-vat-treatment-law-firms"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Inter-Partes Costs VAT Treatment: UK Law Firm Guide"

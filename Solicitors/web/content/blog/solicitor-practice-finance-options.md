@@ -2,6 +2,7 @@
 title: "Solicitor Practice Finance Options: A Comprehensive Guide for UK Law Firms"
 slug: "solicitor-practice-finance-options"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Practice Finance: Funding Options for Law Firms"

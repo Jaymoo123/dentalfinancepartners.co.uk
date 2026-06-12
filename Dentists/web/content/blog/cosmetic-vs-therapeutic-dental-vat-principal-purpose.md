@@ -3,6 +3,7 @@ title: "Cosmetic vs Therapeutic Dental VAT: the Principal-Purpose Test"
 slug: "cosmetic-vs-therapeutic-dental-vat-principal-purpose"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/cosmetic-vs-therapeutic-dental-vat-principal-purpose"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & compliance"
 metaTitle: "Cosmetic vs Therapeutic Dental VAT: the Principal Purpose"

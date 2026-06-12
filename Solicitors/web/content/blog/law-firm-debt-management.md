@@ -2,6 +2,7 @@
 title: "Law Firm Debt Management: Essential Strategies for UK Legal Practices"
 slug: "law-firm-debt-management"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Debt Management: UK Legal Practice Guide"

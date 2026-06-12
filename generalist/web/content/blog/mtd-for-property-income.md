@@ -3,6 +3,7 @@ title: "Making Tax Digital for Property Income: What Landlords Need to Know"
 slug: "mtd-for-property-income"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/mtd-for-property-income"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "MTD for Property Income: Landlord Guide 2025/26"

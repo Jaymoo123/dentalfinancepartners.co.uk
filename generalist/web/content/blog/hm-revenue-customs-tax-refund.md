@@ -3,6 +3,7 @@ title: 'How to Claim an HM Revenue & Customs Tax Refund: A Practical Guide'
 slug: hm-revenue-customs-tax-refund
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/hm-revenue-customs-tax-refund
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'HM Revenue & Customs Tax Refund: How to Claim Your Tax Back'

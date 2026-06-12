@@ -3,6 +3,7 @@ title: 'VAT on Legal Services: The Rules UK Solicitors Need'
 slug: vat-on-legal-services
 canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-on-legal-services
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: VAT & Compliance
 metaTitle: 'VAT on Legal Fees: Standard-Rated at 20% in the UK'

@@ -3,6 +3,7 @@ title: "Can a Director Sign Off Company Accounts If They Are Not an ICAEW Member
 slug: "director-sign-off-company-accounts-non-icaew"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/director-sign-off-company-accounts-non-icaew"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Can a Director Sign Off Accounts Without ICAEW Membership?"

@@ -3,6 +3,7 @@ title: "Expense-Sharing Arrangement vs Full Partnership for Dentists: The Financ
 slug: "dental-expense-sharing-vs-partnership-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-expense-sharing-vs-partnership-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Expense-Sharing vs Partnership for Dentists: The Difference"

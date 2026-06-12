@@ -3,6 +3,7 @@ title: "How to Set Fee Earner Targets for UK Solicitors in a Law Firm"
 slug: "how-to-set-fee-earner-targets-uk-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-accounting/how-to-set-fee-earner-targets-uk-law-firms"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
 metaTitle: "How to Set Fee Earner Targets for UK Law Firms | Accounts for Lawyers"

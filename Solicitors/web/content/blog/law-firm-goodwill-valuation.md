@@ -3,6 +3,7 @@ title: 'Law Firm Goodwill Valuation: How Solicitors'' Practices Are Valued (UK)'
 slug: law-firm-goodwill-valuation
 canonical: https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-goodwill-valuation
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Practice Succession & Sale
 metaTitle: 'Law Firm Goodwill Valuation: How UK Firms Are Valued'

@@ -3,6 +3,7 @@ title: How to Restructure Your Agency from a Single Company to a Group Structure
 slug: restructure-agency-group-structure
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/restructure-agency-group-structure
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Agency Group Restructure: Single to Multi-Company Guide'

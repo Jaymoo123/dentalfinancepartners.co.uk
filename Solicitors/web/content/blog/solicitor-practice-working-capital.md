@@ -3,6 +3,7 @@ title: "Solicitor Practice Working Capital: A Complete Guide for UK Law Firms"
 slug: "solicitor-practice-working-capital"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-working-capital"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Practice Working Capital | Cash Flow Guide"

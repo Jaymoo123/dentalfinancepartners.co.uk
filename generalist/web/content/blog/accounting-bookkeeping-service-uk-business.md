@@ -3,6 +3,7 @@ title: "What Does an Accounting Bookkeeping Service Actually Do for Your UK Busi
 slug: "accounting-bookkeeping-service-uk-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-bookkeeping-service-uk-business"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accounting Bookkeeping Service UK: What It Does for Your"

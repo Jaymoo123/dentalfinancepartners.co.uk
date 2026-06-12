@@ -3,6 +3,7 @@ title: 'CEST Tool Limitation for Creative Agency Contractor Engagements: Why HMR
 slug: cest-tool-limitation-creative-agency-contractors
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/cest-tool-limitation-creative-agency-contractors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: CEST Tool Limitation for Creative Agency IR35 Engagements

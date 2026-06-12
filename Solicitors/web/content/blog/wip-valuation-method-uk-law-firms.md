@@ -3,6 +3,7 @@ title: "How Should a Law Firm Choose Its WIP Valuation Method: Earnings Basis or
 slug: "wip-valuation-method-uk-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-accounting/wip-valuation-method-uk-law-firms"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
 metaTitle: "WIP Valuation Method for UK Law Firms: Earnings vs Billings Basis"

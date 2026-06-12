@@ -3,6 +3,7 @@ title: 'Sole Trader vs Limited Company for Agency Founders: The Full Breakdown'
 slug: sole-trader-vs-limited-company-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/sole-trader-vs-limited-company-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Sole Trader vs Limited Company Agency: Which Structure Wins?'

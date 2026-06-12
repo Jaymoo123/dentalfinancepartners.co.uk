@@ -3,6 +3,7 @@ title: Can a UK sole trader agency founder transfer their existing business to a
 slug: transfer-sole-trader-business-to-dubai-free-zone
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-sole-trader-business-to-dubai-free-zone
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Transfer sole trader business to Dubai free zone: what you'

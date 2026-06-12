@@ -3,6 +3,7 @@ title: "Fixed-Share to Equity Partner: How Your Tax Changes on Promotion (UK Law
 slug: "fixed-share-to-equity-partner-promotion-tax-law-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/fixed-share-to-equity-partner-promotion-tax-law-firm"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Fixed-Share to Equity Partner: Tax on Promotion"

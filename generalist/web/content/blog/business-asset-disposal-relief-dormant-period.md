@@ -3,6 +3,7 @@ title: "Can I Claim Business Asset Disposal Relief After a Dormant Period?"
 slug: "business-asset-disposal-relief-dormant-period"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/business-asset-disposal-relief-dormant-period"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Business Asset Disposal Relief Explained for Dormant"

@@ -3,6 +3,7 @@ title: 'Cash Flow in Agencies: Why Profitable Agencies Still Run Out of Money'
 slug: agency-cash-flow-management
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-cash-flow-management
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Cash Flow: Why Profitable Agencies Run Out of Money'

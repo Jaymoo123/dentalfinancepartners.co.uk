@@ -3,6 +3,7 @@ title: "How To Claim Use Of Home As Office: £6 Per Week vs Actual Costs"
 slug: "how-to-claim-use-of-home-as-office"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/how-to-claim-use-of-home-as-office"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "How To Claim Use Of Home As Office: £6 vs Actual Costs"

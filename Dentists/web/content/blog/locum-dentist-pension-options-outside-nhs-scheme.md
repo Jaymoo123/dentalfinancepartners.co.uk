@@ -3,6 +3,7 @@ title: "Pension Options for a Locum Dentist Outside the NHS Scheme"
 slug: "locum-dentist-pension-options-outside-nhs-scheme"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-pension-options-outside-nhs-scheme"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Dentist Pension Options Outside the NHS Scheme"

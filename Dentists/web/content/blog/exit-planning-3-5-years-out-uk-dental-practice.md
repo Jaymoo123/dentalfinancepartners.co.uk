@@ -3,6 +3,7 @@ title: "How Do You Plan a Dental Practice Exit 3-5 Years Before the Sale?"
 slug: "exit-planning-3-5-years-out-uk-dental-practice"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/exit-planning-3-5-years-out-uk-dental-practice"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Dental Practice Exit Planning: 3-5 Year Prep Guide for UK Dentists"

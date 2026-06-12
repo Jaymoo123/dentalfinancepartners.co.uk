@@ -3,6 +3,7 @@ title: 'Capital Allowances on Vans: A Complete UK Guide'
 slug: capital-allowances-on-vans
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowances-on-vans
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Capital Allowances on Vans: How to Claim in 2025/26'

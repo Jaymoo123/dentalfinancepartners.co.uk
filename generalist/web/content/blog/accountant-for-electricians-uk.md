@@ -3,6 +3,7 @@ title: "Why Electrical Contractors Need a Specialist Accountant for Electricians
 slug: "accountant-for-electricians-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-electricians-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Electricians UK: Tax, VAT & Payroll Guide"

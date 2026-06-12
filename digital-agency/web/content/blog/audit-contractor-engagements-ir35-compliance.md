@@ -3,6 +3,7 @@ title: How to Audit Your Agency's Contractor Engagements for IR35 Compliance Bef
 slug: audit-contractor-engagements-ir35-compliance
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/audit-contractor-engagements-ir35-compliance
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Audit Contractor Engagements IR35 Compliance: Agency Guide'

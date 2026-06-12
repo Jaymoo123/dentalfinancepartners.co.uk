@@ -3,6 +3,7 @@ title: What the 2025 CGT Rate Changes Mean for Agency Founders Selling Shares
 slug: cgt-rates-2025-agency-founder-shares
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/cgt-rates-2025-agency-founder-shares
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'CGT 2025: what agency founders must know for share sales'

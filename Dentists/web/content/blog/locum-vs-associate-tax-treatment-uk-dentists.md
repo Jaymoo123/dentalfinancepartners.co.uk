@@ -3,6 +3,7 @@ title: "Locum Dentist vs Associate: How Does the Tax Treatment Differ in 2026/27
 slug: "locum-vs-associate-tax-treatment-uk-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/locum-vs-associate-tax-treatment-uk-dentists"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

@@ -3,6 +3,7 @@ title: "Squat Practice vs Buying an Existing Dental Practice: Which Route Works 
 slug: "squat-vs-existing-practice-purchase-uk-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/squat-vs-existing-practice-purchase-uk-tax"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

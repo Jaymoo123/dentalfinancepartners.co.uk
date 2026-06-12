@@ -3,6 +3,7 @@ title: "Attorney and Deputyship Receipts: Accounting for Solicitors"
 slug: "attorney-and-deputyship-receipts-accounting-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/attorney-and-deputyship-receipts-accounting-solicitors"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Attorney and Deputyship Receipts: Solicitor Accounting"

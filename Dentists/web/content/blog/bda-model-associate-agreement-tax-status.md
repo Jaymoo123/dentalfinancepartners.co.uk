@@ -3,6 +3,7 @@ title: Does the BDA Model Associate Agreement Guarantee Self-Employed Status for
 slug: bda-model-associate-agreement-tax-status
 canonical: https://www.dentalfinancepartners.co.uk/blog/associate-tax/bda-model-associate-agreement-tax-status
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Associate Tax
 metaTitle: BDA Model Associate Agreement and Self-Employed Status

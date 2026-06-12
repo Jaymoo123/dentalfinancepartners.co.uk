@@ -3,6 +3,7 @@ title: "What Does a Shopify Store Owner Need From an Accountant in 2025/26?"
 slug: "accountant-for-shopify-stores"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-for-shopify-stores"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant for Shopify Stores UK: Tax, VAT & Compliance"

@@ -3,6 +3,7 @@ title: 'Full Expensing Capital Allowances: A Complete Guide for UK Businesses'
 slug: full-expensing-capital-allowances
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/full-expensing-capital-allowances
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Full Expensing Capital Allowances: How UK Companies Claim'

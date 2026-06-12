@@ -3,6 +3,7 @@ title: VAT Calculator for UK Dental Practices
 slug: vat-calculator-dental-practice
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-calculator-dental-practice
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: VAT Calculator for Dental Practices | Dental Finance

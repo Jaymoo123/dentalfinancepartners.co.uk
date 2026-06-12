@@ -3,6 +3,7 @@ title: "How Does Section 162 Incorporation Relief Apply When Incorporating a Den
 slug: "section-162-incorporation-relief-dental-practice"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/section-162-incorporation-relief-dental-practice"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "Section 162 Incorporation Relief for Dental Practice Incorporation"

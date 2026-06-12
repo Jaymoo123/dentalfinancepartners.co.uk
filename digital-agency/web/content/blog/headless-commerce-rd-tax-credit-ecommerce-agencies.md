@@ -3,6 +3,7 @@ title: 'Headless Commerce R&D: What Qualifies for E-commerce Agencies'
 slug: headless-commerce-rd-tax-credit-ecommerce-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/headless-commerce-rd-tax-credit-ecommerce-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Headless Commerce R&D Tax Credit: E-commerce Agency Guide'

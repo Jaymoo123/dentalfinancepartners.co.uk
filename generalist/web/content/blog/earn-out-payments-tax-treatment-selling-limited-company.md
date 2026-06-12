@@ -3,6 +3,7 @@ title: "How Are Earn Out Payments Taxed When Selling Your Limited Company?"
 slug: "earn-out-payments-tax-treatment-selling-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/earn-out-payments-tax-treatment-selling-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Earn Out Payments Tax Treatment When Selling a Ltd Company"

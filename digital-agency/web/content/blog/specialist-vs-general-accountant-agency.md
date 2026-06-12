@@ -3,6 +3,7 @@ title: 'Specialist Accountant vs General Accountant: Which One Does Your Agency 
 slug: specialist-vs-general-accountant-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/specialist-vs-general-accountant-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency Accountant vs General: Which Do You Need?'

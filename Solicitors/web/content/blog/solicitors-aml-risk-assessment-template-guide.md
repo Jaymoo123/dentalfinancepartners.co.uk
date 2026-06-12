@@ -3,6 +3,7 @@ title: "How Should a Solicitor Structure an AML Risk Assessment for Their Firm?"
 slug: "solicitors-aml-risk-assessment-template-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/solicitors-aml-risk-assessment-template-guide"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "Solicitor AML Risk Assessment: How to Structure Yours"

@@ -3,6 +3,7 @@ title: How to Use an Employee Ownership Trust to Exit Your Agency Tax-Efficientl
 slug: employee-ownership-trust-agency-exit
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/employee-ownership-trust-agency-exit
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: Sell Your Agency Tax-Free via Employee Ownership Trust

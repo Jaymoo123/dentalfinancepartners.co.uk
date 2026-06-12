@@ -3,6 +3,7 @@ title: How to Report Foreign Income on Your Agency's UK Corporation Tax Return
 slug: report-foreign-income-corporation-tax-return-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/report-foreign-income-corporation-tax-return-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: Report foreign income on your agency's UK corporation tax

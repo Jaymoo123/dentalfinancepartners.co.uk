@@ -3,6 +3,7 @@ title: "Converting a Law Firm to a Limited Company or ABS: Tax and SRA Guide"
 slug: "converting-law-firm-to-limited-company-abs-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/structure-incorporation/converting-law-firm-to-limited-company-abs-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "Converting a Law Firm to a Limited Company or ABS"

@@ -3,6 +3,7 @@ title: "Law Firm Demerger and Partner Team Moves: Tax and SRA Guide"
 slug: "law-firm-demerger-and-partner-team-moves-tax-sra"
 canonical: "https://www.accountsforlawyers.co.uk/blog/structure-incorporation/law-firm-demerger-and-partner-team-moves-tax-sra"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "Law Firm Demerger and Team Moves: Tax and SRA Guide"

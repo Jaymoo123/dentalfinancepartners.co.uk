@@ -3,6 +3,7 @@ title: "Can an Incorporated Dental Principal Still Pension NHS Profit? The Provi
 slug: "incorporated-dental-principal-nhs-pension-pensionability"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/incorporated-dental-principal-nhs-pension-pensionability"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "Incorporated Dental Principal and the NHS Pension"

@@ -3,6 +3,7 @@ title: How to Correct an Error on a Previously Filed Confirmation Statement
 slug: correct-confirmation-statement-error
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/correct-confirmation-statement-error
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: Correct a Confirmation Statement Error at Companies House

@@ -3,6 +3,7 @@ title: "Asset Sale vs Share Sale: Which Structure Is Right for Your Dental Pract
 slug: "asset-sale-vs-share-sale-dental-practice"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

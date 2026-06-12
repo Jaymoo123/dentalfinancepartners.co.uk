@@ -3,6 +3,7 @@ title: What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Che
 slug: allowable-expenses-sole-trader-checklist
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Allowable Expenses for Sole Traders: 2025/26 Checklist'

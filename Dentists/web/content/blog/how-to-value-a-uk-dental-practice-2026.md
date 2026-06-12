@@ -3,6 +3,7 @@ title: "How Do You Value a UK Dental Practice in 2026? A Guide to Goodwill, EBIT
 slug: "how-to-value-a-uk-dental-practice-2026"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/how-to-value-a-uk-dental-practice-2026"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Dental Practice Valuation UK 2026: Goodwill, EBITDA Multiples & Price"

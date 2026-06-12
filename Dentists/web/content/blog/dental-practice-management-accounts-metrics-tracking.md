@@ -2,6 +2,7 @@
 title: "Management Accounts for Dental Practices: Essential Metrics to Track"
 slug: "dental-practice-management-accounts-metrics-tracking"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

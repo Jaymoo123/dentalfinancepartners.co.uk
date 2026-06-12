@@ -3,6 +3,7 @@ title: "Financing a GP Partnership Buy-In: Loans and Qualifying Loan Interest Re
 slug: "financing-gp-partnership-buy-in-tax-relief"
 canonical: "https://www.medicalaccounts.co.uk/blog/financing-gp-partnership-buy-in-tax-relief"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "Financing a GP Partnership Buy-In: Loans & Interest Relief"

@@ -3,6 +3,7 @@ title: 'Capital Allowances on Vans: What UK Agency Founders Need to Know'
 slug: capital-allowances-on-vans
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-on-vans
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Capital Allowances on Vans: Full Guide for UK Agencies'

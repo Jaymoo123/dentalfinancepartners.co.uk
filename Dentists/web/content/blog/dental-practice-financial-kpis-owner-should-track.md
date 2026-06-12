@@ -3,6 +3,7 @@ title: "The Financial KPIs Every Dental Practice Owner Should Track Monthly"
 slug: "dental-practice-financial-kpis-owner-should-track"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-financial-kpis-owner-should-track"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Financial KPIs Every Dental Practice Owner Should Track"

@@ -3,6 +3,7 @@ title: "Timing Your Year-End Equipment Purchase to Use the Annual Investment All
 slug: "aia-year-end-timing-dental-equipment-purchase"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/aia-year-end-timing-dental-equipment-purchase"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Capital Allowances & Equipment"
 metaTitle: "AIA Timing: Year-End Dental Equipment Purchases & Tax"

@@ -3,6 +3,7 @@ title: How to Set Up Your Agency's Chart of Accounts for MTD ITSA Compliance fro
 slug: chart-of-accounts-mtd-itsa-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/chart-of-accounts-mtd-itsa-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: MTD ITSA Chart of Accounts Setup for UK Agencies Now

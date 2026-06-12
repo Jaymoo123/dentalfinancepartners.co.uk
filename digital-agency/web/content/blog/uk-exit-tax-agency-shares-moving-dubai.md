@@ -3,6 +3,7 @@ title: Do I Pay UK Exit Tax on My Agency Shares If I Move to Dubai?
 slug: uk-exit-tax-agency-shares-moving-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-exit-tax-agency-shares-moving-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Exit Tax on Shares: Moving to Dubai with Agency Shares'

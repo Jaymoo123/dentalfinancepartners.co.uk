@@ -3,6 +3,7 @@ title: 'GP VAT Registration: Complete Guide for UK Medical Practices'
 slug: gp-vat-registration
 canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-vat-registration
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: GP Practice Management
 metaTitle: Medical VAT Exemption and GP VAT Registration Rules

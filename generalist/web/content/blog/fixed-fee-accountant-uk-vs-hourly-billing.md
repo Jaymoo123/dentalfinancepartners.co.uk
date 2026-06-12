@@ -3,6 +3,7 @@ title: "Fixed Fee Accountant UK vs Hourly Billing for a Business with Erratic Wo
 slug: "fixed-fee-accountant-uk-vs-hourly-billing"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-accountant-uk-vs-hourly-billing"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Fixed Fee Accountant UK vs Hourly Billing: Erratic Workload"

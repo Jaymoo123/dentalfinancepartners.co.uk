@@ -3,6 +3,7 @@ title: "Making Tax Digital for Solicitors: VAT and Income Tax Explained"
 slug: "making-tax-digital-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/making-tax-digital-solicitors"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Sole Practitioner Tax"
 metaTitle: "Making Tax Digital for Solicitors | MTD VAT & ITSA Guide"

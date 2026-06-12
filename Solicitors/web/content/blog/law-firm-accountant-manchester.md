@@ -3,6 +3,7 @@ title: "Law Firm Accountant Manchester: Specialist Services for Legal Practices"
 slug: "law-firm-accountant-manchester"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-accountant-manchester"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Accountant Manchester | Accounts for Lawyers"

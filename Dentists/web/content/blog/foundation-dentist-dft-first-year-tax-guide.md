@@ -3,6 +3,7 @@ title: 'Foundation Dentist (DFT) First Year: Tax, Pay and the Move to Self-Emplo
 slug: foundation-dentist-dft-first-year-tax-guide
 canonical: https://www.dentalfinancepartners.co.uk/blog/locum-tax/foundation-dentist-dft-first-year-tax-guide
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Dental Finance Partners Editorial Team
 category: Locum Tax
 metaTitle: Foundation Dentist (DFT) First Year Tax Guide for UK

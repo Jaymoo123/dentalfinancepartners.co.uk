@@ -3,6 +3,7 @@ title: What a VAT Accountant Does When HMRC Opens a Compliance Check
 slug: what-a-vat-accountant-does-hmrc-compliance-check
 canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/what-a-vat-accountant-does-hmrc-compliance-check
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: VAT and Making Tax Digital
 metaTitle: What a VAT Accountant Does in an HMRC Compliance Check

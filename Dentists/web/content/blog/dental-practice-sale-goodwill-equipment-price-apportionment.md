@@ -3,6 +3,7 @@ title: 'Splitting a Dental Practice Sale Price Between Goodwill and Equipment: T
 slug: dental-practice-sale-goodwill-equipment-price-apportionment
 canonical: https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/dental-practice-sale-goodwill-equipment-price-apportionment
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Dental Finance Partners Editorial Team
 category: Goodwill & Practice Sale
 metaTitle: 'Dental Sale: Splitting Goodwill and Equipment Price'

@@ -3,6 +3,7 @@ title: Do I Need to Charge VAT on Invoices to UK Clients From My Dubai Agency?
 slug: vat-on-invoices-uk-clients-dubai-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-on-invoices-uk-clients-dubai-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UAE VAT on invoices to UK clients: Dubai agency founder'

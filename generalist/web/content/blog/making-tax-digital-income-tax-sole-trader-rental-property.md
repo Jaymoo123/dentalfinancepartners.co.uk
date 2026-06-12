@@ -3,6 +3,7 @@ title: "How Will Making Tax Digital for Income Tax Affect Sole Traders with Rent
 slug: "making-tax-digital-income-tax-sole-trader-rental-property"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/making-tax-digital-income-tax-sole-trader-rental-property"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Making Tax Digital for Income Tax: Sole Traders with Rental"

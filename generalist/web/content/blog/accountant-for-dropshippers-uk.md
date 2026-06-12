@@ -3,6 +3,7 @@ title: "What Dropshipping Businesses Need from an Accountant in 2025/26"
 slug: "accountant-for-dropshippers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/accountant-for-dropshippers-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Accountant for Dropshippers UK: VAT, Stock & Tax 2025/26"

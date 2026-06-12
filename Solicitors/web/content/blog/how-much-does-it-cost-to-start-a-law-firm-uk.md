@@ -3,6 +3,7 @@ title: "How Much Does It Cost to Start a Law Firm in the UK in 2025/26?"
 slug: "how-much-does-it-cost-to-start-a-law-firm-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-merger/how-much-does-it-cost-to-start-a-law-firm-uk"
 date: "2026-05-19"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Firm Acquisition & Merger"
 metaTitle: "Cost to Start a Law Firm UK 2025/26: SRA + PII + Setup"

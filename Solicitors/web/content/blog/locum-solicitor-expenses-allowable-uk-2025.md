@@ -3,6 +3,7 @@ title: "What Expenses Can a Locum Solicitor Claim in the UK for 2025/26?"
 slug: "locum-solicitor-expenses-allowable-uk-2025"
 canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/locum-solicitor-expenses-allowable-uk-2025"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Locum Solicitor Expenses: Allowable UK Claims 2025/26"

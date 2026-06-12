@@ -3,6 +3,7 @@ title: What Is the Annual Investment Allowance (AIA) in 2025/26?
 slug: aia-allowance
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/aia-allowance
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'AIA Allowance 2025/26: Rates, Limits & How to Claim'

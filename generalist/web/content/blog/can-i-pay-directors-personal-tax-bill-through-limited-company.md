@@ -3,6 +3,7 @@ title: "Can I Pay My Director's Personal Tax Bill Through My Limited Company?"
 slug: "can-i-pay-directors-personal-tax-bill-through-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/can-i-pay-directors-personal-tax-bill-through-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Can I Pay a Director's Personal Tax Bill Through My Ltd"

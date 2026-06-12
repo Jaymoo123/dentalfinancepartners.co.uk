@@ -3,6 +3,7 @@ title: Are SQE Costs Tax Deductible for a Trainee Solicitor or Law Firm?
 slug: sqe-training-costs-tax-deductible-trainees
 canonical: https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/sqe-training-costs-tax-deductible-trainees
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Accounts for Lawyers Editorial Team
 category: Fee-Earner Tax & Compensation
 metaTitle: Are SQE Costs Tax Deductible? Trainee and Firm Guide

@@ -3,6 +3,7 @@ title: What Do Accountants for Dental Practices Actually Do?
 slug: accountants-for-dental-practices
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/accountants-for-dental-practices
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting

@@ -3,6 +3,7 @@ title: "How Do You Normalise EBITDA for a Dental Practice Valuation?"
 slug: "understanding-dental-practice-ebitda-normalisation"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/understanding-dental-practice-ebitda-normalisation"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

@@ -3,6 +3,7 @@ title: "Can an Online Accountant UK Handle a Business That Uses Paper Receipts?"
 slug: "online-accountant-uk-paper-receipts"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/online-accountant-uk-paper-receipts"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Online Accountant UK for Paper Receipt Businesses | UK"

@@ -3,6 +3,7 @@ title: "How Much Corporation Tax Do I Pay? UK Rates and Reliefs for 2025/26"
 slug: "how-much-corporation-tax-do-i-pay"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/how-much-corporation-tax-do-i-pay"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "How Much Corporation Tax Do I Pay? UK Rates 2025/26"

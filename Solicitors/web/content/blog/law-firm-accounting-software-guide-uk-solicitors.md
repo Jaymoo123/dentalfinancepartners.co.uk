@@ -2,6 +2,7 @@
 title: "Law Firm Accounting Software: Essential Guide for UK Solicitors"
 slug: "law-firm-accounting-software-guide-uk-solicitors"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Accounting Software: UK Solicitor Guide 2026"

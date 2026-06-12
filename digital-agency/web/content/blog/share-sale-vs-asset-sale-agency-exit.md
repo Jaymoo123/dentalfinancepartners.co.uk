@@ -3,6 +3,7 @@ title: 'Share Sale vs Asset Sale When Exiting Your Agency: Which One Wins?'
 slug: share-sale-vs-asset-sale-agency-exit
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/share-sale-vs-asset-sale-agency-exit
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Share sale vs asset sale agency exit: which pays more?'

@@ -3,6 +3,7 @@ title: 'Law Firm Valuation: A Complete Guide for UK Solicitors'
 slug: law-firm-valuation-guide-uk-solicitors
 canonical: https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-valuation-guide-uk-solicitors
 date: '2026-04-01'
+generator: claude/legacy-supabase
 author: Accounts for Lawyers Editorial Team
 category: Practice Succession & Sale
 metaTitle: 'Law Firm Valuation: Methods and Multiples for the UK'

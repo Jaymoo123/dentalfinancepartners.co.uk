@@ -3,6 +3,7 @@ title: 'Solicitor Client Account Reconciliation: Complete Guide for UK Law Firms
 slug: solicitor-client-account-reconciliation
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: SRA Compliance & Trust Accounting
 metaTitle: 'Solicitor Client Account Reconciliation: A Full Guide'

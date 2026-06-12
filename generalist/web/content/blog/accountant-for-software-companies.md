@@ -3,6 +3,7 @@ title: "What Does a Software Company Need from an Accountant in 2025/26?"
 slug: "accountant-for-software-companies"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-software-companies"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Software Companies UK | Specialist Support"

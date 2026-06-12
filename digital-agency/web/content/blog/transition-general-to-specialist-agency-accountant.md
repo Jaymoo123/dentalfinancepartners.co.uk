@@ -3,6 +3,7 @@ title: How to Transition from a General Practice Accountant to a Specialist Agen
 slug: transition-general-to-specialist-agency-accountant
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/transition-general-to-specialist-agency-accountant
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Switch from a general practice to a specialist agency

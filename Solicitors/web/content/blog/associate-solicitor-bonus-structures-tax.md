@@ -3,6 +3,7 @@ title: "How Are Associate Solicitor Bonuses Taxed? A Guide to Performance Bonus 
 slug: "associate-solicitor-bonus-structures-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/associate-solicitor-bonus-structures-tax"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Fee-Earner Tax & Compensation"
 metaTitle: "Associate Solicitor Bonus Tax: PAYE, Performance & Partnership Track"

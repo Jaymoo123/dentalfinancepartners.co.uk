@@ -3,6 +3,7 @@ title: How to Use a VAT Calculation Calculator for Your Agency
 slug: vat-calculator
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-calculator
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'VAT Calculation Calculator: A Guide for Agency Founders'

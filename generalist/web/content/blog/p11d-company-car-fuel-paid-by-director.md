@@ -3,6 +3,7 @@ title: "Do I Need To Report A Company Car Benefit On A P11D If The Director Pays
 slug: "p11d-company-car-fuel-paid-by-director"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/p11d-company-car-fuel-paid-by-director"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "P11D company car fuel paid by director: reporting rules"

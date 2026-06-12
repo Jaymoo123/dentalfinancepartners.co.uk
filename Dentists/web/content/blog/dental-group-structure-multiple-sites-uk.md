@@ -2,6 +2,7 @@
 title: "How to Structure a Dental Group Across Multiple Sites"
 slug: "dental-group-structure-multiple-sites-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Dental Group Structure: Multi-Site Setup Guide UK"

@@ -3,6 +3,7 @@ title: What Are the SRA Accounts Rules and How Do They Affect UK Solicitors?
 slug: sra-accounts-rules-explained-for-uk-solicitors
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/sra-accounts-rules-explained-for-uk-solicitors
 date: '2026-05-18'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: SRA Accounts Rules
 metaTitle: Solicitors Accounts Rules Explained for UK Law Firms

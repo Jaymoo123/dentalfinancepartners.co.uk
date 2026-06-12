@@ -3,6 +3,7 @@ title: "What Do UK Business Accounts and Bookkeeping Services Actually Include?"
 slug: "what-do-uk-business-accounts-and-bookkeeping-services-actually-include"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/what-do-uk-business-accounts-and-bookkeeping-services-actually-include"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "UK Business Accounts and Bookkeeping Services: What's"

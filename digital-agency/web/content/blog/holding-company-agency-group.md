@@ -3,6 +3,7 @@ title: Should You Set Up a Holding Company for Your Agency Group?
 slug: holding-company-agency-group
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/holding-company-agency-group
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Holding Company for Agency: Pros, Cons & Setup Tips'

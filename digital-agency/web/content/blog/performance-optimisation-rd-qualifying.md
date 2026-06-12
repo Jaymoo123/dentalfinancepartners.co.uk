@@ -3,6 +3,7 @@ title: 'Performance Optimisation Work: When Does It Qualify for R&D Credits?'
 slug: performance-optimisation-rd-qualifying
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/performance-optimisation-rd-qualifying
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Performance Optimisation R&D Qualifying: A Guide'

@@ -3,6 +3,7 @@ title: "Solicitor Accountant Bristol: Professional Accounting for Legal Practice
 slug: "solicitor-accountant-bristol"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-accountant-bristol"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Solicitor Accountant Bristol | Accounts for Lawyers"

@@ -3,6 +3,7 @@ title: 'UK ISA When Moving Abroad: The 30-Day Rule That Lets You Keep Your Tax-F
 slug: uk-isa-when-moving-abroad-30-day-rule
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-isa-when-moving-abroad-30-day-rule
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK ISA When Moving Abroad: The 30-Day Rule Explained'

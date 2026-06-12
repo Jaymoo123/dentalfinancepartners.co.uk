@@ -3,6 +3,7 @@ title: "How to Transfer a Sole Trader Business to a Limited Company Without Trig
 slug: "transfer-sole-trader-to-limited-company-cgt"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/transfer-sole-trader-to-limited-company-cgt"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Transfer Sole Trader to Limited Company CGT: Avoid the Tax"

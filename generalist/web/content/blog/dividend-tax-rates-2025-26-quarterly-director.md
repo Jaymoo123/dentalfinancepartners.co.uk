@@ -3,6 +3,7 @@ title: "Dividend Tax Rates 2025/26: How to Plan Quarterly Payments as a Director
 slug: "dividend-tax-rates-2025-26-quarterly-director"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-quarterly-director"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Dividend Tax Rates 2025/26: Quarterly Payments Guide"

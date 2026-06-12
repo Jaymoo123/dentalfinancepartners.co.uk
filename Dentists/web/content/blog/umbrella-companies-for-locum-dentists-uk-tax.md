@@ -3,6 +3,7 @@ title: "Are Umbrella Companies a Tax-Efficient Option for Locum Dentists in the 
 slug: "umbrella-companies-for-locum-dentists-uk-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/umbrella-companies-for-locum-dentists-uk-tax"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

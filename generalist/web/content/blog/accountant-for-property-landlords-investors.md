@@ -3,6 +3,7 @@ title: "Why Property Investors and Landlords Need a Specialist Accountant for Pr
 slug: "accountant-for-property-landlords-investors"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-property-landlords-investors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Property: Why Landlords Need Specialist Tax"

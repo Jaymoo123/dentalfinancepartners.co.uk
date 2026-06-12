@@ -3,6 +3,7 @@ title: How to Write a Status Determination Statement for a Web Developer Engagem
 slug: status-determination-statement-web-developer
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/status-determination-statement-web-developer
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Status Determination Statement Web Developer: Template'

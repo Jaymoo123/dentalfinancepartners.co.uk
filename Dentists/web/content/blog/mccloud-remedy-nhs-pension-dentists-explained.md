@@ -3,6 +3,7 @@ title: "How Does the McCloud Remedy Affect Dentists in the NHS Pension Scheme?"
 slug: "mccloud-remedy-nhs-pension-dentists-explained"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/mccloud-remedy-nhs-pension-dentists-explained"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

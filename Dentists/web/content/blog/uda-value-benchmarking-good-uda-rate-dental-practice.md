@@ -3,6 +3,7 @@ title: "UDA Value Benchmarking: What Is a Good Per-UDA Rate, and Why Yours Varie
 slug: "uda-value-benchmarking-good-uda-rate-dental-practice"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-benchmarking-good-uda-rate-dental-practice"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
 metaTitle: "What Is a Good UDA Rate? Benchmarking Your Per-UDA Value"

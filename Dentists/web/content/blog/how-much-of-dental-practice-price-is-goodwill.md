@@ -3,6 +3,7 @@ title: "How Much of a Dental Practice Price Is Goodwill? A Practical Breakdown f
 slug: "how-much-of-dental-practice-price-is-goodwill"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/how-much-of-dental-practice-price-is-goodwill"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

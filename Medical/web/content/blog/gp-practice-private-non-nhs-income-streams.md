@@ -3,6 +3,7 @@ title: "Private and Non-NHS Income in a GP Practice: Streams, Tax and VAT"
 slug: "gp-practice-private-non-nhs-income-streams"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-practice-private-non-nhs-income-streams"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Practice Private and Non-NHS Income: Tax and VAT"

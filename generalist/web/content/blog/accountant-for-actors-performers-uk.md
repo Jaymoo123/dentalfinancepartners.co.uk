@@ -3,6 +3,7 @@ title: "What Should an Actor or Performer Look for in an Accountant in the UK?"
 slug: "accountant-for-actors-performers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-actors-performers-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Actors: UK Specialist for Performers"

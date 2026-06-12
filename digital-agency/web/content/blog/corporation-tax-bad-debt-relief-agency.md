@@ -3,6 +3,7 @@ title: How to Claim Corporation Tax Relief on Bad Debts from Clients Who Don't P
 slug: corporation-tax-bad-debt-relief-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-bad-debt-relief-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Corporation tax agency bad debt relief: how to claim it'

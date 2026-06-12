@@ -3,6 +3,7 @@ title: 'Sole Trader vs Limited Company for Dentists: Which is Right for You?'
 slug: sole-trader-vs-limited-company-dentists-uk
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

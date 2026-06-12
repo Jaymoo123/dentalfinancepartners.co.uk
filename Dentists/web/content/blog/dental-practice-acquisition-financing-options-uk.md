@@ -3,6 +3,7 @@ title: "How Do UK Dentists Secure Acquisition Finance for a Dental Practice Purc
 slug: "dental-practice-acquisition-financing-options-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-acquisition-financing-options-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

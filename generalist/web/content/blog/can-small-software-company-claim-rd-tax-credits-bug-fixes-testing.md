@@ -3,6 +3,7 @@ title: "Can a Small Software Company Claim R&D Tax Credits for Time Spent on Bug
 slug: "can-small-software-company-claim-rd-tax-credits-bug-fixes-testing"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/can-small-software-company-claim-rd-tax-credits-bug-fixes-testing"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D tax credits bug fixes testing: software company"

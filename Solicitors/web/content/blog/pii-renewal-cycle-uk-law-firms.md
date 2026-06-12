@@ -3,6 +3,7 @@ title: "How Should a Solicitor Approach the PII Renewal Cycle for Their Law Firm
 slug: "pii-renewal-cycle-uk-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/pii-renewal-cycle-uk-law-firms"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
 metaTitle: "PII Renewal Cycle for UK Law Firms: A Solicitor's Guide"

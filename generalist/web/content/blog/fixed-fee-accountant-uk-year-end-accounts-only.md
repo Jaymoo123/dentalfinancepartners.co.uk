@@ -3,6 +3,7 @@ title: "Can I Pay a Fixed Fee for Year-End Accounts Only Without a Monthly Packa
 slug: "fixed-fee-accountant-uk-year-end-accounts-only"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/fixed-fee-accountant-uk-year-end-accounts-only"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Fixed Fee Accountant UK for Year-End Accounts Only"

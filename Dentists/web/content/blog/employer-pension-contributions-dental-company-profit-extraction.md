@@ -3,6 +3,7 @@ title: Employer Pension Contributions as a Profit-Extraction Route for Dental Co
 slug: employer-pension-contributions-dental-company-profit-extraction
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-finance/employer-pension-contributions-dental-company-profit-extraction
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Dental Finance Partners Editorial Team
 category: Practice finance
 metaTitle: Employer Pension Contributions for Dental Companies

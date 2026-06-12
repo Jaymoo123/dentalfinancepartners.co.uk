@@ -3,6 +3,7 @@ title: 'UK Taxation Bands 2025/26: Income Tax, NI, and More'
 slug: taxation-bands-uk
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
 metaTitle: UK Tax Bands for Sole Traders and Directors 2025/26

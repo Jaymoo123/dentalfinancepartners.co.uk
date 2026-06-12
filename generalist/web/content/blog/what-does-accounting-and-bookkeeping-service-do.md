@@ -3,6 +3,7 @@ title: "What Does a Professional Accounting and Bookkeeping Service Actually Do 
 slug: "what-does-accounting-and-bookkeeping-service-do"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/what-does-accounting-and-bookkeeping-service-do"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accounting and Bookkeeping Service: What You Actually Get"

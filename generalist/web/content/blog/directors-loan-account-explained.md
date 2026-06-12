@@ -3,6 +3,7 @@ title: "Directors Loan Account Explained: What Every UK Director Needs to Know"
 slug: "directors-loan-account-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/directors-loan-account-explained"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Directors Loan Account Explained for UK Company Directors"

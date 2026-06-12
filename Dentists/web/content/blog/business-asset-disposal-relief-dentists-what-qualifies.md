@@ -2,6 +2,7 @@
 title: "Business Asset Disposal Relief for Dentists: What Qualifies?"
 slug: "business-asset-disposal-relief-dentists-what-qualifies"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

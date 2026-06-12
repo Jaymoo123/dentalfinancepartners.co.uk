@@ -3,6 +3,7 @@ title: "Why Your Church Needs a Specialist Accountant for Churches in the UK"
 slug: "accountant-for-churches-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-for-churches-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant for Churches UK: Specialist Church Accounting"

@@ -3,6 +3,7 @@ title: "How Can a Law Firm Improve Billing Discipline Before Quarter End?"
 slug: "billing-discipline-end-of-quarter-uk-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-accounting/billing-discipline-end-of-quarter-uk-law-firms"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
 metaTitle: "Law Firm Billing Discipline: Quarter End WIP Conversion Tips"

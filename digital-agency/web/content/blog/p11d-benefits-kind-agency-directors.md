@@ -3,6 +3,7 @@ title: 'P11D for Agency Directors: What You Must Report to HMRC Each Year'
 slug: p11d-benefits-kind-agency-directors
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/p11d-benefits-kind-agency-directors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'P11D Agency Director: What to Report as Benefits in Kind'

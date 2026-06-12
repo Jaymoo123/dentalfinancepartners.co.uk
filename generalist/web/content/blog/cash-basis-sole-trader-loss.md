@@ -3,6 +3,7 @@ title: "Can I Use the Cash Basis If My Sole Trader Business Has a Loss?"
 slug: "cash-basis-sole-trader-loss"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/cash-basis-sole-trader-loss"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Cash basis sole trader loss: can you still use it? 2025/26"

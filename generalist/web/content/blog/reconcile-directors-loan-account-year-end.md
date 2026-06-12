@@ -3,6 +3,7 @@ title: "How to Reconcile Your Director's Loan Account Before Year End to Avoid S
 slug: "reconcile-directors-loan-account-year-end"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/reconcile-directors-loan-account-year-end"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Reconcile Director Loan Account Year End: Avoid S455 Tax"

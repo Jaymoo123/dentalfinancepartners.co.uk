@@ -3,6 +3,7 @@ title: 'Management Buyout in an Agency: A Finance Guide for Founders'
 slug: management-buyout-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/management-buyout-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'MBO Agency Finance: Practical Guide for UK Agency Founders'

@@ -3,6 +3,7 @@ title: 'AIA Capital Allowance for Agency Equipment: What You Can Claim'
 slug: aia-capital-allowance-agency-equipment
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/aia-capital-allowance-agency-equipment
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: AIA Capital Allowance on Agency Equipment Explained

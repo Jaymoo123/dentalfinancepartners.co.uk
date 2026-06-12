@@ -3,6 +3,7 @@ title: What is the 90 Day Rule for Leaving the UK and Does It Apply to My Agency
 slug: 90-day-rule-leaving-uk-agency-shareholding
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/90-day-rule-leaving-uk-agency-shareholding
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: '90 Day Rule Leaving UK Shareholding: What Agency Founders'

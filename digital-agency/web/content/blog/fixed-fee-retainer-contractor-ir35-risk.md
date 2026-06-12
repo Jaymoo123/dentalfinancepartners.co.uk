@@ -3,6 +3,7 @@ title: Can You Put a Contractor on a Fixed-Fee Retainer Without Triggering IR35?
 slug: fixed-fee-retainer-contractor-ir35-risk
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/fixed-fee-retainer-contractor-ir35-risk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: IR35 risk of fixed-fee retainers for multi-client

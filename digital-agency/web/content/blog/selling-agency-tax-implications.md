@@ -3,6 +3,7 @@ title: 'Selling Your Agency: Tax Implications Every UK Founder Must Know'
 slug: selling-agency-tax-implications
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Selling Your Agency: UK Tax, BADR and CGT Explained'

@@ -3,6 +3,7 @@ title: "What Are the Dividend Tax Rates for 2025/26 and How Do They Affect You?"
 slug: "dividend-tax-rates-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/dividend-tax-rates-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Dividend Tax Rates 2025/26: Full Guide for UK Business"

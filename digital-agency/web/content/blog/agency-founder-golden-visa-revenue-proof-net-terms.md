@@ -3,6 +3,7 @@ title: Can Net 60 or 90 Payment Terms Block Your Dubai Golden Visa as an Agency 
 slug: agency-founder-golden-visa-revenue-proof-net-terms
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/agency-founder-golden-visa-revenue-proof-net-terms
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: Golden Visa Revenue Proof for Agency Founders on Net 60/90

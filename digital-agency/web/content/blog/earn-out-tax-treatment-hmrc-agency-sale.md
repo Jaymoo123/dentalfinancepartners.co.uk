@@ -3,6 +3,7 @@ title: What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current 
 slug: earn-out-tax-treatment-hmrc-agency-sale
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Earn-Out Tax Treatment: HMRC Rules for Agency Sales'

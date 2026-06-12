@@ -3,6 +3,7 @@ title: "How to Prepare for an SRA Accountant's Report: A Solicitor's Step-by-Ste
 slug: "how-to-prepare-for-sra-accountants-report"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/how-to-prepare-for-sra-accountants-report"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "How to Prepare for an SRA Accountant's Report: Solicitor Guide"

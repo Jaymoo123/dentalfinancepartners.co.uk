@@ -3,6 +3,7 @@ title: "How Does NHS Dental Contract Clawback Work for UK Dentists?"
 slug: "nhs-dental-contract-clawback-explained"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/nhs-dental-contract-clawback-explained"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

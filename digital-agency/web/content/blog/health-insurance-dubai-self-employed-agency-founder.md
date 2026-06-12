@@ -3,6 +3,7 @@ title: How to Get Health Insurance in Dubai as a Self-Employed Agency Founder
 slug: health-insurance-dubai-self-employed-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/health-insurance-dubai-self-employed-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Health Insurance Dubai Self-Employed: A Guide for Agency'

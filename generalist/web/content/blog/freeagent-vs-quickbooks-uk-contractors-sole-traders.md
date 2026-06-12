@@ -3,6 +3,7 @@ title: 'FreeAgent Vs QuickBooks: Best UK Software For Contractors And Sole Trade
 slug: freeagent-vs-quickbooks-uk-contractors-sole-traders
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/freeagent-vs-quickbooks-uk-contractors-sole-traders
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: FreeAgent vs QuickBooks for Contractors and Sole Traders

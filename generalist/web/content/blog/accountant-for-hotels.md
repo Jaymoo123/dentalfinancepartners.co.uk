@@ -3,6 +3,7 @@ title: "What Does a Specialist Accountant for Hotels Do That a General Accountan
 slug: "accountant-for-hotels"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-hotels"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Hotels UK: Specialist Hospitality Accountants"

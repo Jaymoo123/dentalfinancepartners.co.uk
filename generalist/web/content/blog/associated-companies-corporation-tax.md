@@ -3,6 +3,7 @@ title: "What Are Associated Companies and How Do They Affect Your Corporation Ta
 slug: "associated-companies-corporation-tax"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/associated-companies-corporation-tax"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Associated companies corporation tax: how they affect your"

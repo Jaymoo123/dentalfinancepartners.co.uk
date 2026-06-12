@@ -3,6 +3,7 @@ title: 'Locum Dentist Day Rate vs Percentage: Which Pays More After Tax?'
 slug: locum-dentist-day-rate-vs-percentage-tax
 canonical: https://www.dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-day-rate-vs-percentage-tax
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

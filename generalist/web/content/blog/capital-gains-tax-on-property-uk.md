@@ -3,6 +3,7 @@ title: "How is Capital Gains Tax on UK Property Calculated in 2025/26?"
 slug: "capital-gains-tax-on-property-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/capital-gains-tax-on-property-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Capital Gains Tax on UK Property 2025/26: Rates and Rules"

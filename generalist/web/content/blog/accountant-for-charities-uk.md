@@ -3,6 +3,7 @@ title: "What Does a Charity Accountant Do and Does Your UK Charity Need One?"
 slug: "accountant-for-charities-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-for-charities-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant for Charities UK: Compliance, Tax & Audit Support"

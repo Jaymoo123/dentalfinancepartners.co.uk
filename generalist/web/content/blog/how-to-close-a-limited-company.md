@@ -3,6 +3,7 @@ title: "How to Close a Limited Company: Striking Off vs MVL"
 slug: "how-to-close-a-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/how-to-close-a-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "How to Close a Limited Company: Striking Off vs MVL"

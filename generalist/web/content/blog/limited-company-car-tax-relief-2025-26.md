@@ -3,6 +3,7 @@ title: "Can My Limited Company Claim Tax Relief On A Company Car In 2025/26?"
 slug: "limited-company-car-tax-relief-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-car-tax-relief-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Limited Company Car Tax Relief 2025/26: What Directors Need"

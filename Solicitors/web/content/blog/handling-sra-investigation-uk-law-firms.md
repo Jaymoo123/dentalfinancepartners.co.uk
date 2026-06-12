@@ -3,6 +3,7 @@ title: "How Should a Law Firm Respond to an SRA Investigation?"
 slug: "handling-sra-investigation-uk-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/handling-sra-investigation-uk-law-firms"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "SRA Investigation: How UK Law Firms Should Respond"

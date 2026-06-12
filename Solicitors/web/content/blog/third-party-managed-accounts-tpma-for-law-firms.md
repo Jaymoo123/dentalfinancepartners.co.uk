@@ -3,6 +3,7 @@ title: "Third-Party Managed Accounts (TPMA) for Law Firms: SRA Rule 11 Explained
 slug: "third-party-managed-accounts-tpma-for-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/third-party-managed-accounts-tpma-for-law-firms"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "TPMA for Law Firms: SRA Rule 11 Explained"

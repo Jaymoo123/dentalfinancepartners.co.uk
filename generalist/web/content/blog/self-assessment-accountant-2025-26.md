@@ -3,6 +3,7 @@ title: "Need a Self Assessment Accountant? Here is What You Should Know for 2025
 slug: "self-assessment-accountant-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-accountant-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Self Assessment Accountant: What UK Business Owners Need"

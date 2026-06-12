@@ -3,6 +3,7 @@ title: What Is the Optimal Debt-to-Equity Ratio for a Small Agency in the UK?
 slug: optimal-debt-equity-ratio-small-agency-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/optimal-debt-equity-ratio-small-agency-uk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Optimal Debt-to-Equity Ratio for UK Small Agencies

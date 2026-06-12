@@ -3,6 +3,7 @@ title: "Contractor Accountant vs High Street Accountant: Which One Fits Your IT 
 slug: "contractor-accountant-vs-high-street-accountant-for-it-contractors"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/contractor-accountant-vs-high-street-accountant-for-it-contractors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Contractor Accountant UK: Specialist vs High Street for IT"

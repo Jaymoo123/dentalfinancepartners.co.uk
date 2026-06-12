@@ -3,6 +3,7 @@ title: "Law Firm Profit Extraction: Tax-Efficient Strategies for UK Legal Practi
 slug: "law-firm-profit-extraction"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-profit-extraction"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Law Firm Profit Extraction: Drawings, Salary & Dividends"

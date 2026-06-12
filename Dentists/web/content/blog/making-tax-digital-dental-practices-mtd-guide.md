@@ -3,6 +3,7 @@ title: 'Making Tax Digital for Dental Practices: Complete MTD Guide'
 slug: making-tax-digital-dental-practices-mtd-guide
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/making-tax-digital-dental-practices-mtd-guide
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

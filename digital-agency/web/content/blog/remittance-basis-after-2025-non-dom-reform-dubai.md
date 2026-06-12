@@ -3,6 +3,7 @@ title: 'Remittance Basis After 2025 Non-Dom Reform: What UK Agency Founders Movi
 slug: remittance-basis-after-2025-non-dom-reform-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/remittance-basis-after-2025-non-dom-reform-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Remittance basis after 2025 non-dom reform: Dubai move guide'

@@ -3,6 +3,7 @@ title: "Salary vs Profit Share: Which Is More Tax Efficient for a UK Solicitor P
 slug: "salary-vs-profit-share-tax-uk-partner-solicitor"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/salary-vs-profit-share-tax-uk-partner-solicitor"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Salary vs Profit Share Tax UK Partner Solicitor | Efficiency Guide"

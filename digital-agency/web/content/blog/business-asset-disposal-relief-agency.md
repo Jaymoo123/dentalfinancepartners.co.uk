@@ -3,6 +3,7 @@ title: How Much Will You Keep When Selling Your Agency? BADR Explained for Found
 slug: business-asset-disposal-relief-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/business-asset-disposal-relief-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR for Agency Founders: Keep More of Your Exit Cash'

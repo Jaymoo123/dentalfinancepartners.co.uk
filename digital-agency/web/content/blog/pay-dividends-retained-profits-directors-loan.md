@@ -3,6 +3,7 @@ title: How to Pay Dividends from Retained Profits Without Creating a Director's 
 slug: pay-dividends-retained-profits-directors-loan
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-dividends-retained-profits-directors-loan
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Pay Dividends from Retained Profits: No Director''s Loan'

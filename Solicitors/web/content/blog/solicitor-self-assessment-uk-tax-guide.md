@@ -3,6 +3,7 @@ title: "Solicitor Self Assessment: The Complete UK Tax Guide for Sole Practition
 slug: "solicitor-self-assessment-uk-tax-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Sole Practitioner Tax"
 metaTitle: "Solicitor Self Assessment Tax Guide 2025/26"

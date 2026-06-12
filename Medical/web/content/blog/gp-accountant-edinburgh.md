@@ -2,6 +2,7 @@
 title: "GP Accountant Edinburgh: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-edinburgh"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Edinburgh | Scottish Tax for GPs 2026/27"

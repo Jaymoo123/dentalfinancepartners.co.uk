@@ -3,6 +3,7 @@ title: "How Does The 2024 Budget Cap On R&D Tax Credits Affect Loss-making SMEs?
 slug: "r-and-d-tax-credit-cap-loss-making-sme-2024-budget"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credit-cap-loss-making-sme-2024-budget"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credit Cap For Loss-making SMEs: 2024 Budget Impact"

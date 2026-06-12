@@ -3,6 +3,7 @@ title: "What Is a Members Voluntary Liquidation and When Should You Use One?"
 slug: "members-voluntary-liquidation-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/members-voluntary-liquidation-explained"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Members Voluntary Liquidation Explained: Tax Efficient Exit"

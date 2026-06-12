@@ -3,6 +3,7 @@ title: "Is Incorporating a Dental Practice Still Worth It After the 2026/27 Divi
 slug: "dental-incorporation-still-worth-it-2026-dividend-rise"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-incorporation-still-worth-it-2026-dividend-rise"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Is Dental Incorporation Still Worth It in 2026/27?"

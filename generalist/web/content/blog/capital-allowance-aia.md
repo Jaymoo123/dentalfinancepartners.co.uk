@@ -3,6 +3,7 @@ title: 'Capital Allowance and the Annual Investment Allowance (AIA): A Guide'
 slug: capital-allowance-aia
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowance-aia
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Capital Allowance AIA: How to Claim 100% Relief on Plant &'

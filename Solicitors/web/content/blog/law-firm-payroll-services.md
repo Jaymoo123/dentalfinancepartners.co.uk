@@ -3,6 +3,7 @@ title: "Law Firm Payroll Services: Complete Guide for UK Legal Practices"
 slug: "law-firm-payroll-services"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-payroll-services"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law firm payroll software: partner draws & compliance"

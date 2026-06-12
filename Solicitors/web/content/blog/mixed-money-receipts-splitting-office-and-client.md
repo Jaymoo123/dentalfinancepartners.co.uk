@@ -3,6 +3,7 @@ title: 'Mixed-Money Receipts: Splitting Office and Client Money Under SRA Rule 4
 slug: mixed-money-receipts-splitting-office-and-client
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/mixed-money-receipts-splitting-office-and-client
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: SRA Compliance & Trust Accounting
 metaTitle: 'Mixed Money Receipts: Splitting Client and Office Cash'

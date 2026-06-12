@@ -3,6 +3,7 @@ title: 'Writing Down Allowance on Cars: A Complete UK Guide'
 slug: writing-down-allowance-cars
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/writing-down-allowance-cars
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Writing Down Allowance Cars: UK Tax Guide 2025/26'

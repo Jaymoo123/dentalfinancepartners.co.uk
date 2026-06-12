@@ -3,6 +3,7 @@ title: Why Your Agency's Net Profit Margin Differs from Your Gross Margin and Ho
 slug: agency-gross-margin-vs-net-profit-margin
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-margin-vs-net-profit-margin
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Gross vs Net Profit Margin: Fix the Gap'

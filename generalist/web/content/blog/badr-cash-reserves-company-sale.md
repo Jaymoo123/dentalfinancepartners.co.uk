@@ -3,6 +3,7 @@ title: "Can You Claim BADR When Your Company Has Large Cash Reserves?"
 slug: "badr-cash-reserves-company-sale"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-cash-reserves-company-sale"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR cash reserves company sale: eligibility"

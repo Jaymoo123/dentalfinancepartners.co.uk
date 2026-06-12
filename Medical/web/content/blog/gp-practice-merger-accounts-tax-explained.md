@@ -3,6 +3,7 @@ title: "GP Practice Mergers: Accounts, Partners and Tax Explained"
 slug: "gp-practice-merger-accounts-tax-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-practice-merger-accounts-tax-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Practice Mergers: Accounts, Partners and the Tax"

@@ -3,6 +3,7 @@ title: How Should a UK Agency Invoice International Clients for VAT?
 slug: invoicing-international-clients-uk-agency-vat
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/invoicing-international-clients-uk-agency-vat
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Agency VAT: Invoicing International Clients Guide'

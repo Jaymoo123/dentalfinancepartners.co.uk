@@ -3,6 +3,7 @@ title: "What Does a Corporation Tax Accountant Do for a UK Limited Company?"
 slug: "what-does-a-corporation-tax-accountant-do"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/what-does-a-corporation-tax-accountant-do"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax Accountant: What They Do for UK Ltd"

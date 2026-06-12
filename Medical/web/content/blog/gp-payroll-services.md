@@ -3,6 +3,7 @@ title: 'GP Payroll Services: Complete Guide for Medical Practices'
 slug: gp-payroll-services
 canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-payroll-services
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: GP Practice Management
 metaTitle: 'GP Practice Payroll: PAYE, RTI and the NHS Pension'

@@ -3,6 +3,7 @@ title: How to Change a Company Name with Companies House After Incorporation
 slug: how-to-change-company-name-companies-house
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-change-company-name-companies-house
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Change Company Name at Companies House: Steps and Fee'

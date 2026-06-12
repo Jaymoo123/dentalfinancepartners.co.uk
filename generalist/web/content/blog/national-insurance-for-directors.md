@@ -3,6 +3,7 @@ title: "National Insurance for Directors: How It Works in 2025/26"
 slug: "national-insurance-for-directors"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/national-insurance-for-directors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "National Insurance for Directors 2025/26: Rules, Rates"

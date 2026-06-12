@@ -3,6 +3,7 @@ title: How to Register a Limited Company UK With a Non-UK Resident Director
 slug: register-limited-company-uk-non-resident-director
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/register-limited-company-uk-non-resident-director
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: Can a Non-UK Resident Be a UK Company Director? Yes

@@ -3,6 +3,7 @@ title: "Dental Practice Bookkeeping and MTD-Readiness: Building Systems That Pas
 slug: "dental-practice-bookkeeping-mtd-readiness-systems"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-bookkeeping-mtd-readiness-systems"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Accounting"
 metaTitle: "Dental Practice Bookkeeping and MTD-Readiness Guide"

@@ -3,6 +3,7 @@ title: "Can an Associate Dentist Claim Mileage When Working at Multiple Practice
 slug: "can-dental-associates-claim-mileage-multiple-practices"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/can-dental-associates-claim-mileage-multiple-practices"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

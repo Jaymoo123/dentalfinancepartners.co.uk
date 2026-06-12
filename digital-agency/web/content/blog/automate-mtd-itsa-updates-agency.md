@@ -3,6 +3,7 @@ title: How to Automate Quarterly MTD ITSA Updates for Your Agency Without an Acc
 slug: automate-mtd-itsa-updates-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/automate-mtd-itsa-updates-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: Automate MTD ITSA quarterly updates for your agency

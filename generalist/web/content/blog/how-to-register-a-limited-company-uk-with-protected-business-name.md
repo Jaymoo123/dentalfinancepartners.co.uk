@@ -3,6 +3,7 @@ title: "How to Register a Limited Company UK With a Protected Business Name"
 slug: "how-to-register-a-limited-company-uk-with-protected-business-name"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-register-a-limited-company-uk-with-protected-business-name"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "How to Register a Limited Company UK with a Protected"

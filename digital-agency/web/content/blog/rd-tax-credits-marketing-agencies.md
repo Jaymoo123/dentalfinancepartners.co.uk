@@ -3,6 +3,7 @@ title: 'R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn''t
 slug: rd-tax-credits-marketing-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-marketing-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credits for Marketing Agencies: What Qualifies'

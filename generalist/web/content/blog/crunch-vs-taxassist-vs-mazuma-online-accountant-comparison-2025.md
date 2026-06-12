@@ -3,6 +3,7 @@ title: "Crunch vs TaxAssist vs Mazuma: Which Online Accountant Is Right for Your
 slug: "crunch-vs-taxassist-vs-mazuma-online-accountant-comparison-2025"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/crunch-vs-taxassist-vs-mazuma-online-accountant-comparison-2025"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Crunch vs TaxAssist vs Mazuma: Online Accountant Comparison"

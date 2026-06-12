@@ -3,6 +3,7 @@ title: "The Newly Qualified Dentist's First Self Assessment and the Payments-on-
 slug: "newly-qualified-dentist-first-self-assessment-payments-on-account"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/newly-qualified-dentist-first-self-assessment-payments-on-account"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Newly Qualified Dentist: First Self Assessment Explained"

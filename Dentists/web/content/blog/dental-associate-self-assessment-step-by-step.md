@@ -3,6 +3,7 @@ title: "How Do You File a Self Assessment Tax Return as a Dental Associate?"
 slug: "dental-associate-self-assessment-step-by-step"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-self-assessment-step-by-step"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Dental Associate Self Assessment: Step-by-Step Filing Guide (2025/26)"

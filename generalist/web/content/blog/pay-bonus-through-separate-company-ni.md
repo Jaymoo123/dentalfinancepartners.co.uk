@@ -3,6 +3,7 @@ title: "Can I Pay An Employee's Bonus Through A Separate Limited Company To Avoi
 slug: "pay-bonus-through-separate-company-ni"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/pay-bonus-through-separate-company-ni"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Pay Bonus Through Separate Company NI: Avoidance Warning"

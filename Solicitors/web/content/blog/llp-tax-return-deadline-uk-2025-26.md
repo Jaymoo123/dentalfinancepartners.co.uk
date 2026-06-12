@@ -3,6 +3,7 @@ title: "UK LLP Tax Return Deadline 2025/26: Dates, Forms, Penalties"
 slug: "llp-tax-return-deadline-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-accounting/llp-tax-return-deadline-uk-2025-26"
 date: "2026-05-19"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
 metaTitle: "UK LLP Tax Return Deadline 2025/26: SA800 + Filing Dates"

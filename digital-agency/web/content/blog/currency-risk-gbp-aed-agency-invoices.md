@@ -3,6 +3,7 @@ title: How to Handle Currency Risk When Invoicing UK Clients in GBP from Your AE
 slug: currency-risk-gbp-aed-agency-invoices
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/currency-risk-gbp-aed-agency-invoices
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Currency Risk GBP AED Agency Invoices: 4 Strategies'

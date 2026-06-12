@@ -3,6 +3,7 @@ title: Can You Claim AIA on Second-Hand Assets for Your Dental Practice?
 slug: can-you-claim-aia-on-second-hand-assets
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/can-you-claim-aia-on-second-hand-assets
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: Can You Claim AIA on Second-Hand Assets? Dental Practice

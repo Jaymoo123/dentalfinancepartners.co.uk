@@ -3,6 +3,7 @@ title: 'MTD ITSA for Agency Founders with Freelance Income: What You Need to Do'
 slug: mtd-itsa-agency-founders-freelance-income
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-agency-founders-freelance-income
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD ITSA for Agency Founders with Freelance Income: Your'

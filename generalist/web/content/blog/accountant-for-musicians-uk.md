@@ -3,6 +3,7 @@ title: "What Does an Accountant for Musicians Actually Do? A UK Guide to Music I
 slug: "accountant-for-musicians-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-musicians-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Musicians UK: Tax, Royalties &amp; Tour"

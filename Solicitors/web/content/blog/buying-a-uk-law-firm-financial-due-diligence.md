@@ -3,6 +3,7 @@ title: How to Conduct Financial Due Diligence When Buying a UK Law Firm
 slug: buying-a-uk-law-firm-financial-due-diligence
 canonical: https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/buying-a-uk-law-firm-financial-due-diligence
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Accounts for Lawyers Editorial Team
 category: Practice Sale & Succession
 metaTitle: 'Buying a UK Law Firm: Financial Due Diligence Guide'

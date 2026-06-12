@@ -3,6 +3,7 @@ title: "How Do You Run Financial Due Diligence on a Dental Practice Purchase?"
 slug: "dental-practice-purchase-financial-due-diligence-checklist"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-purchase-financial-due-diligence-checklist"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

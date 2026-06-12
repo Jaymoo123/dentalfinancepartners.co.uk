@@ -3,6 +3,7 @@ title: "How to Choose an Accountant for AI Startups in the UK"
 slug: "accountant-for-ai-startups"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/accountant-for-ai-startups"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "Accountant for AI Startups UK | R&D Tax Credits & Compliance"

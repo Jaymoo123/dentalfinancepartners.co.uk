@@ -3,6 +3,7 @@ title: "Facial Aesthetics and VAT: What UK Dental Practices Need to Know"
 slug: "facial-aesthetics-vat-uk-dental-practices"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/facial-aesthetics-vat-uk-dental-practices"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

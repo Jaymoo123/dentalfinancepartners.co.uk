@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance for Agency Equipment: 2025/26 Guide'
 slug: annual-investment-allowance-agency-equipment
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-agency-equipment
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Annual Investment Allowance: 2025/26 Agency Equipment Guide'

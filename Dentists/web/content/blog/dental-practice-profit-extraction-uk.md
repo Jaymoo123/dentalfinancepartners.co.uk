@@ -3,6 +3,7 @@ title: "Dental Practice Profit Extraction: Salary, Dividends & Pension Strategie
 slug: "dental-practice-profit-extraction-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-profit-extraction-uk"
 date: "2026-03-01"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

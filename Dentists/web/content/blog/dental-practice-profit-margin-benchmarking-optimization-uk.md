@@ -3,6 +3,7 @@ title: "Dental Practice Profit Margin: UK Benchmarking & Optimisation Guide"
 slug: "dental-practice-profit-margin-benchmarking-optimization-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-profit-margin-benchmarking-optimization-uk"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

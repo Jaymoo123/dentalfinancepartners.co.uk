@@ -3,6 +3,7 @@ title: "How to Prepare a Trial Balance for a Limited Company Filing Abbreviated 
 slug: "trial-balance-abbreviated-accounts"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/trial-balance-abbreviated-accounts"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Trial Balance for Abbreviated Accounts: A UK Ltd Company"

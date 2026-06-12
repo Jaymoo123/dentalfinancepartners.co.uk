@@ -3,6 +3,7 @@ title: Can Your Agency Claim R&D Tax Credits for Custom Klaviyo Flows and Email 
 slug: klaviyo-custom-flow-rd-tax-credits
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/klaviyo-custom-flow-rd-tax-credits
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Klaviyo Custom Flow R&D Tax Credits: Agency Guide'

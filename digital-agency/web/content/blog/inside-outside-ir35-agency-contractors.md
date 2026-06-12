@@ -3,6 +3,7 @@ title: 'Inside vs Outside IR35 for Agency Contractors: What Agency Founders Must
 slug: inside-outside-ir35-agency-contractors
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/inside-outside-ir35-agency-contractors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Inside vs Outside IR35: Agency Contractor Rules'

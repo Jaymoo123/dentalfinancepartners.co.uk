@@ -3,6 +3,7 @@ title: How to Structure a Vendor Loan Note to Defer CGT When Selling Your Agency
 slug: vendor-loan-note-defer-cgt-selling-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/vendor-loan-note-defer-cgt-selling-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Vendor Loan Notes: Defer CGT When Selling Your Agency'

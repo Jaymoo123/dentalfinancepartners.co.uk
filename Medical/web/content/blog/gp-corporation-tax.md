@@ -3,6 +3,7 @@ title: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
 slug: "gp-corporation-tax"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-corporation-tax"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "GP Corporation Tax Rates 2026/27 (19% to 25%) | Medical Accountants UK"

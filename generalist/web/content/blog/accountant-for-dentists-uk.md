@@ -3,6 +3,7 @@ title: "What Does an Accountant for Dentists Actually Do Differently?"
 slug: "accountant-for-dentists-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-dentists-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Dentists UK: What Sets Them Apart?"

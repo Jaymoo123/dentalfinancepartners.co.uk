@@ -3,6 +3,7 @@ title: "What Does an Accountant for Tech Startups Actually Do in the UK?"
 slug: "accountant-for-tech-startups-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/accountant-for-tech-startups-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "Accountant for Tech Startups UK: R&D, SEIS, EIS, and Tax"

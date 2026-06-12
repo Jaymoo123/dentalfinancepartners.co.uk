@@ -3,6 +3,7 @@ title: How to Use a 13-Week Cash Flow Forecast to Avoid Agency Insolvency
 slug: 13-week-cash-flow-forecast-agency-insolvency
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/13-week-cash-flow-forecast-agency-insolvency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 13-Week Cash Flow Forecast to Avoid Agency Insolvency

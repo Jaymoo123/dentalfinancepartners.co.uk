@@ -3,6 +3,7 @@ title: "Creative Industry Tax Reliefs UK: A Complete Guide for Film, TV, Video G
 slug: "creative-industry-tax-reliefs-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/creative-industry-tax-reliefs-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Creative Industry Tax Reliefs UK: Film, TV, Games & Theatre"

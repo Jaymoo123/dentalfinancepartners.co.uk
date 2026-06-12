@@ -3,6 +3,7 @@ title: How to Handle PAYE and Dividends When You Have Multiple Agency Director S
 slug: paye-dividends-multiple-directors-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/paye-dividends-multiple-directors-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'PAYE & Dividends for Multiple Agency Directors: How-To'

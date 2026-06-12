@@ -3,6 +3,7 @@ title: "Partnership Capital Accounts and Profit-Sharing for Incoming and Outgoin
 slug: "dental-partnership-capital-accounts-profit-share-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-partnership-capital-accounts-profit-share-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Dental Partnership Capital Accounts and Profit-Sharing"

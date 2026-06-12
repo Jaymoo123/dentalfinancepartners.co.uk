@@ -3,6 +3,7 @@ title: "Can A Sole Trader Claim Tax Relief On A Course That Improves Their Busin
 slug: "sole-trader-training-course-tax-relief"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/sole-trader-training-course-tax-relief"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Sole Trader Training Course Tax Relief: What You Can Claim"

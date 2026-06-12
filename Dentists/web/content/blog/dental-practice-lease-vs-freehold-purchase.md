@@ -3,6 +3,7 @@ title: "Should You Buy the Freehold or Lease Your Dental Practice Premises?"
 slug: "dental-practice-lease-vs-freehold-purchase"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-lease-vs-freehold-purchase"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "Freehold vs Leasehold Dental Practice: Which Is Better?"

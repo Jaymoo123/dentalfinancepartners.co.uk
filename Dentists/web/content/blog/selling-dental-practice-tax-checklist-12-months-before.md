@@ -3,6 +3,7 @@ title: "How Do You Sell a Dental Practice Without Losing Half to Tax? A 12-Month
 slug: "selling-dental-practice-tax-checklist-12-months-before"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/selling-dental-practice-tax-checklist-12-months-before"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Selling a Dental Practice: Tax Planning Checklist 12 Months Out"

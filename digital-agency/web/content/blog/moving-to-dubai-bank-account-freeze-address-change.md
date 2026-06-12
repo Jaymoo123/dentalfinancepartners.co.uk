@@ -3,6 +3,7 @@ title: 'Moving to Dubai with an Agency: The Bank Account Freeze Risk When You Ch
 slug: moving-to-dubai-bank-account-freeze-address-change
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-bank-account-freeze-address-change
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: Moving to Dubai Bank Account Freeze Address Change Risk

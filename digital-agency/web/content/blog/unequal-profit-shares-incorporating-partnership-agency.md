@@ -3,6 +3,7 @@ title: How to Handle Unequal Profit Shares When Incorporating Your Partnership A
 slug: unequal-profit-shares-incorporating-partnership-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/unequal-profit-shares-incorporating-partnership-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: When to incorporate agency with unequal partner profit

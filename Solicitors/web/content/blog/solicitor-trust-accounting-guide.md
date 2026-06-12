@@ -3,6 +3,7 @@ title: 'Solicitor Trust Accounting: The Practical Guide to Client Money and the 
 slug: solicitor-trust-accounting-guide
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-trust-accounting-guide
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: SRA Compliance & Trust Accounting
 metaTitle: Solicitor Trust Accounting and the SRA Client Account

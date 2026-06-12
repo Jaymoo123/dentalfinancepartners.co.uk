@@ -3,6 +3,7 @@ title: How to Transfer a Sole Trader Agency to a Limited Company Mid-Year Withou
 slug: transfer-sole-trader-to-limited-company-mid-year-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/transfer-sole-trader-to-limited-company-mid-year-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Transfer Sole Trader to Ltd Co Mid-Year: Agency Tax Tips'

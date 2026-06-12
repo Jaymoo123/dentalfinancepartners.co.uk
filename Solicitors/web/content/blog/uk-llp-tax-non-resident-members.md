@@ -3,6 +3,7 @@ title: UK LLP Tax for Non-Resident Members 2025/26
 slug: uk-llp-tax-non-resident-members
 canonical: https://www.accountsforlawyers.co.uk/blog/partnership-llp-structure/uk-llp-tax-non-resident-members
 date: '2026-05-19'
+generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: Partnership & LLP Structure
 metaTitle: 'UK LLP Tax for Non-Resident Members: the Full Guide'

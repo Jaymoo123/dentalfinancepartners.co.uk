@@ -3,6 +3,7 @@ title: "Dental Practice Exit Planning: When to Start and What to Consider"
 slug: "dental-practice-exit-planning-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-exit-planning-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

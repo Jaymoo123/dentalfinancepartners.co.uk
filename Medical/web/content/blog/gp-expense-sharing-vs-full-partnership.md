@@ -3,6 +3,7 @@ title: "Expense Sharing Versus a Full GP Partnership: The Tax Difference"
 slug: "gp-expense-sharing-vs-full-partnership"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-expense-sharing-vs-full-partnership"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "Expense Sharing vs a Full GP Partnership: The Tax"

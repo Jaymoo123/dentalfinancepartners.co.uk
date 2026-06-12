@@ -3,6 +3,7 @@ title: "Can a Director Sign Off Company Accounts If They Are Not an ICAEW Member
 slug: "director-sign-off-accounts-non-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/director-sign-off-accounts-non-accountant"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Director sign off accounts non accountant: what the law says"

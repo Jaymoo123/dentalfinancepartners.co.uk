@@ -3,6 +3,7 @@ title: 'Earn-Out Structures in Agency Acquisitions: The Tax Angles Every Founder
 slug: earn-out-agency-acquisitions-tax
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-agency-acquisitions-tax
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Earn Out Tax in Agency Deals: Key Reliefs & Traps'

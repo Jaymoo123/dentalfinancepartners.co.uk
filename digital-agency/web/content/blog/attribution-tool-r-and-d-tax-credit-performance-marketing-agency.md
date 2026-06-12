@@ -3,6 +3,7 @@ title: Can a Performance Marketing Agency Claim R&D Tax Credits for Attribution 
 slug: attribution-tool-r-and-d-tax-credit-performance-marketing-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/attribution-tool-r-and-d-tax-credit-performance-marketing-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Attribution Tool R&D Tax Credit: Can Agencies Claim?'

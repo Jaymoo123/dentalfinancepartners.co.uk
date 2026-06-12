@@ -3,6 +3,7 @@ title: "How Is WIP Treated on a Law Firm Sale? Why Work in Progress Is Taxed as 
 slug: "wip-treatment-on-law-firm-sale"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/wip-treatment-on-law-firm-sale"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "WIP on a Law Firm Sale: Income, Not Capital | Solicitors"

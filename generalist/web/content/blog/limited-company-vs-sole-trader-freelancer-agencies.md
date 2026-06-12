@@ -3,6 +3,7 @@ title: "Limited Company vs Sole Trader for a Freelancer Who Works Through Agenci
 slug: "limited-company-vs-sole-trader-freelancer-agencies"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-sole-trader-freelancer-agencies"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Limited Company vs Sole Trader for Agency Freelancers | UK"

@@ -3,6 +3,7 @@ title: 'Laboratory Costs in Dental Accounts: A UK Guide'
 slug: laboratory-costs-dental-accounts-uk
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

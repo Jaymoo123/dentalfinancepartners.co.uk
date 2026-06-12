@@ -3,6 +3,7 @@ title: How to Prepare Your Agency's Digital Records for MTD ITSA Starting April 
 slug: prepare-digital-records-mtd-itsa-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/prepare-digital-records-mtd-itsa-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD ITSA 2026: Prepare your agency''s digital records'

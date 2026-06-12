@@ -3,6 +3,7 @@ title: How Much Can You Claim Through the Annual Investment Allowance for Your D
 slug: annual-investment-allowance-dental-practice-2024-25
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/annual-investment-allowance-dental-practice-2024-25
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'Annual Investment Allowance 2024 25: Dental Practice Guide'

@@ -3,6 +3,7 @@ title: How Does Your Agency's Gross Profit Margin Compare to Industry Benchmarks
 slug: agency-gross-profit-margin-benchmarks-by-agency-type
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-profit-margin-benchmarks-by-agency-type
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Agency Gross Profit Margin Benchmarks by Agency Type

@@ -3,6 +3,7 @@ title: How to Write a Status Determination Statement for a Freelance Designer En
 slug: how-to-write-status-determination-statement-freelance-designer-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/how-to-write-status-determination-statement-freelance-designer-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: Write an IR35 Status Determination Statement

@@ -3,6 +3,7 @@ title: 'UK UAE Double Tax Treaty: How Agency Profits Are Taxed When You Work Acr
 slug: uk-uae-double-tax-treaty-agency-profits
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-uae-double-tax-treaty-agency-profits
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK UAE double tax treaty agency profits: what founders must'

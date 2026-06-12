@@ -3,6 +3,7 @@ title: Solicitor LLP Accounts and Companies House Filing Requirements
 slug: llp-accounts-and-filing-requirements-uk
 canonical: https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/llp-accounts-and-filing-requirements-uk
 date: '2026-05-18'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Partnership & LLP Structure
 metaTitle: 'Solicitor LLP Accounts: Companies House Filing Rules'

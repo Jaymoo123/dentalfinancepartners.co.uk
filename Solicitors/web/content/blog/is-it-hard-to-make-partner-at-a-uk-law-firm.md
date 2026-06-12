@@ -3,6 +3,7 @@ title: "Is It Hard to Make Partner at a UK Law Firm in 2025/26?"
 slug: "is-it-hard-to-make-partner-at-a-uk-law-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-structure/is-it-hard-to-make-partner-at-a-uk-law-firm"
 date: "2026-05-19"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Making Partner at a UK Law Firm 2025/26: Real Odds"

@@ -3,6 +3,7 @@ title: "Corporate Dentists and the NHS Pension: Can You Still Build Accrual?"
 slug: "dental-corporate-employees-nhs-pension-access"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/dental-corporate-employees-nhs-pension-access"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

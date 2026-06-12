@@ -3,6 +3,7 @@ title: "What Are the Most Common Causes of SRA Investigations for Solicitors in 
 slug: "common-causes-of-sra-investigations-2026"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/common-causes-of-sra-investigations-2026"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "Common Causes of SRA Investigations for Solicitors in 2026"

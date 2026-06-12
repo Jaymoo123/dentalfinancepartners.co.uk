@@ -3,6 +3,7 @@ title: 'How to Choose an Accountant for Your Agency: A Founder''s Guide'
 slug: how-to-choose-accountant-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-to-choose-accountant-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Choose an Accountant for Your Agency | Expert Guide

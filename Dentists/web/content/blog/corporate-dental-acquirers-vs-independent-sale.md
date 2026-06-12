@@ -3,6 +3,7 @@ title: "Corporate Dental Acquirers vs Independent Sale: Which Path Fits Your Pra
 slug: "corporate-dental-acquirers-vs-independent-sale"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/corporate-dental-acquirers-vs-independent-sale"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

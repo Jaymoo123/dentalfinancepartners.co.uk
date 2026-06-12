@@ -3,6 +3,7 @@ title: "Should I Set Up a Limited Company or Stay a Sole Trader for My Side Hust
 slug: "limited-company-vs-sole-trader-side-hustle"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-sole-trader-side-hustle"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Limited Company vs Sole Trader For A Side Hustle: Tax Guide"

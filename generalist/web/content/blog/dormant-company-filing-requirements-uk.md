@@ -3,6 +3,7 @@ title: What Are The Ongoing Filing Requirements For A Dormant Limited Company In
 slug: dormant-company-filing-requirements-uk
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/dormant-company-filing-requirements-uk
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: 'Dormant Company Filing Requirements UK: What to File'

@@ -3,6 +3,7 @@ title: 'Hiring Your First Associate: What It Costs and How to Structure It'
 slug: hiring-first-associate-costs-structure-uk-dental
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-finance/hiring-first-associate-costs-structure-uk-dental
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

@@ -3,6 +3,7 @@ title: "CFA Success Fee Accounting and Tax: A UK Law Firm Guide"
 slug: "conditional-fee-agreement-cfa-success-fee-accounting-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/conditional-fee-agreement-cfa-success-fee-accounting-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "CFA Success Fee Accounting and Tax: UK Law Firm Guide"

@@ -3,6 +3,7 @@ title: "When an R&D Tax Credit Specialist Refuses Your Claim (And Why That Prote
 slug: "when-an-r-and-d-tax-credit-specialist-refuses-your-claim"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/when-an-r-and-d-tax-credit-specialist-refuses-your-claim"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "When an R&D Tax Credit Specialist Refuses Your Claim"

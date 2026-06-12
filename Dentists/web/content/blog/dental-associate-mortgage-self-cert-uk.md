@@ -3,6 +3,7 @@ title: "Can an Associate Dentist Get a Mortgage Without Three Years of Accounts?
 slug: "dental-associate-mortgage-self-cert-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-mortgage-self-cert-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Associate Dentist Mortgage UK: SA302, Self-Employed & No Accounts"

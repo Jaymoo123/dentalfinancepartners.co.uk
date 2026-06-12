@@ -3,6 +3,7 @@ title: "Basis Period Reform for GP Partnerships: The Tax-Year Basis Explained"
 slug: "gp-partnership-basis-period-reform-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-partnership-basis-period-reform-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "Basis Period Reform for GP Partnerships Explained"

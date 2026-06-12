@@ -3,6 +3,7 @@ title: 'Dubai Golden Visa for UK Citizens: The Revenue Threshold Loophole That L
 slug: dubai-golden-visa-uk-citizens-revenue-threshold-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-golden-visa-uk-citizens-revenue-threshold-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Dubai Golden Visa via Revenue: No Property Required'

@@ -3,6 +3,7 @@ title: "Cash Basis vs Accruals Sole Trader: Which Accounting Method Should You U
 slug: "cash-basis-vs-accruals-sole-trader"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/cash-basis-vs-accruals-sole-trader"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Cash Basis vs Accruals Sole Trader: Which Method to Use"

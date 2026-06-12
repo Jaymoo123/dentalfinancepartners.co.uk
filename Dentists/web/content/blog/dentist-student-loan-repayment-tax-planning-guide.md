@@ -2,6 +2,7 @@
 title: "Dentist Student Loan Repayment: Tax & Planning Guide"
 slug: "dentist-student-loan-repayment-tax-planning-guide"
 date: "2026-04-02"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

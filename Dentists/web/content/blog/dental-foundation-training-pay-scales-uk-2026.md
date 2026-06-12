@@ -3,6 +3,7 @@ title: "What Is the Foundation Dentist Pay Scale in the UK for 2025/26?"
 slug: "dental-foundation-training-pay-scales-uk-2026"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/dental-foundation-training-pay-scales-uk-2026"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
 metaTitle: "Foundation Dentist Pay Scale UK 2025/26 | Dental Finance Partners"

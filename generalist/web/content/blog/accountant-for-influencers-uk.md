@@ -3,6 +3,7 @@ title: "How to Find the Right Accountant for Influencers in the UK"
 slug: "accountant-for-influencers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-influencers-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Influencers UK: Tax & Structure Guide"

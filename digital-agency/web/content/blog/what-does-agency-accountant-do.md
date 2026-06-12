@@ -3,6 +3,7 @@ title: What Does an Agency Accountant Actually Do?
 slug: what-does-agency-accountant-do
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-does-agency-accountant-do
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency Accountant Role: What They Do for UK Founders'

@@ -3,6 +3,7 @@ title: 'Dental Practice Insurance: Tax Deductible Expenses Guide'
 slug: dental-practice-insurance-tax-deductible-expenses-guide
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-insurance-tax-deductible-expenses-guide
 date: '2026-03-30'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

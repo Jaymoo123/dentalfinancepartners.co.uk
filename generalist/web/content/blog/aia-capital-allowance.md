@@ -3,6 +3,7 @@ title: 'AIA Capital Allowance: Claim 100% Tax Relief on Business Assets'
 slug: aia-capital-allowance
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/aia-capital-allowance
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'AIA Capital Allowance: 100% Tax Relief on Business Assets'

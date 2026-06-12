@@ -2,6 +2,7 @@
 title: 'NHS UDA Rates 2026/27: What They Mean for Your Practice Finances'
 slug: nhs-uda-rates-2026-27-practice-finances
 date: '2026-03-28'
+generator: claude/legacy-supabase
 author: Dental Finance Partners Editorial Team
 category: Practice finance
 metaTitle: NHS UDA Rates 2026/27 and Your Practice Finances UK

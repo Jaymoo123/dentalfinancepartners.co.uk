@@ -3,6 +3,7 @@ title: "How To Prepare For An HMRC R&D Enquiry If You Claimed Costs For Subcontr
 slug: "prepare-hmrc-rd-enquiry-subcontracted-developers"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/prepare-hmrc-rd-enquiry-subcontracted-developers"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "HMRC R&D Enquiry: Subcontracted Developer Costs"

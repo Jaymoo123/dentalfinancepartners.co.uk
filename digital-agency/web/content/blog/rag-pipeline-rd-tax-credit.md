@@ -3,6 +3,7 @@ title: 'Building RAG Pipelines: Is It R&D-Qualifying Work?'
 slug: rag-pipeline-rd-tax-credit
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rag-pipeline-rd-tax-credit
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'RAG Pipeline R&D Tax Credit: What Agency Founders Need'

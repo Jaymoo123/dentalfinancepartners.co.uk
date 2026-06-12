@@ -2,6 +2,7 @@
 title: "Locum Doctor Umbrella Company 2026 Reforms: Joint and Several Liability Explained"
 slug: "locum-doctor-umbrella-company-2026-reforms"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Umbrella Company 2026 Reforms | What's Changing"

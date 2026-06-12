@@ -3,6 +3,7 @@ title: "Disbursement and Litigation Funding for UK Law Firms: Cash Flow, Tax and
 slug: "disbursement-and-litigation-funding-cash-flow-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/disbursement-and-litigation-funding-cash-flow-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Disbursement and Litigation Funding: Cash Flow, Tax, VAT"

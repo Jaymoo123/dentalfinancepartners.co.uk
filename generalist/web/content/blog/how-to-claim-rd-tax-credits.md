@@ -3,6 +3,7 @@ title: "How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses"
 slug: "how-to-claim-rd-tax-credits"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "How to Claim R&D Tax Credits: Step-by-Step Guide for UK"

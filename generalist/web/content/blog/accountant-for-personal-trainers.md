@@ -3,6 +3,7 @@ title: "How to Choose an Accountant for Personal Trainers in the UK"
 slug: "accountant-for-personal-trainers"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-personal-trainers"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Personal Trainers UK: Tax & Accounting Guide"

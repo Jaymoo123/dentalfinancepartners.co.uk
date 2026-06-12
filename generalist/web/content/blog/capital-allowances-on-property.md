@@ -3,6 +3,7 @@ title: 'Capital Allowances on Property: A Complete UK Guide'
 slug: capital-allowances-on-property
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowances-on-property
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Capital Allowances on Property: What Qualifies in the UK'

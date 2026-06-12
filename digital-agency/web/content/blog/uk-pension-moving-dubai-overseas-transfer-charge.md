@@ -3,6 +3,7 @@ title: 'UK Pension When Moving to Dubai: The Overseas Transfer Charge That Could
 slug: uk-pension-moving-dubai-overseas-transfer-charge
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-pension-moving-dubai-overseas-transfer-charge
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Pension When Moving to Dubai: 25% Overseas Transfer'

@@ -3,6 +3,7 @@ title: 'Off-Payroll Rules for Agencies Using Recruitment Firms: Who Holds the Li
 slug: off-payroll-rules-recruitment-agency-contractors
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/off-payroll-rules-recruitment-agency-contractors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: Off-Payroll Rules for Agencies Using Recruitment Firms

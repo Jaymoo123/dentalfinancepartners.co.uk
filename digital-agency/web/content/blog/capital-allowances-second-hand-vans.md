@@ -3,6 +3,7 @@ title: 'Capital Allowances on Second Hand Vans for UK Agencies: What You Can Cla
 slug: capital-allowances-second-hand-vans
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-second-hand-vans
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Capital Allowances on Second Hand Vans: Agency Tax Guide'

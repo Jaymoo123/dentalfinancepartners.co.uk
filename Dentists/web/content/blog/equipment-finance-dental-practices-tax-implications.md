@@ -3,6 +3,7 @@ title: "Equipment Finance for Dental Practices: Tax Implications Guide"
 slug: "equipment-finance-dental-practices-tax-implications"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/equipment-finance-dental-practices-tax-implications"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

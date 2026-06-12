@@ -3,6 +3,7 @@ title: "How Does Self-Employment Affect a Solicitor's Mortgage Affordability?"
 slug: "solicitor-mortgage-affordability-self-employed"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/solicitor-mortgage-affordability-self-employed"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Solicitor Mortgage Affordability: Self-Employed & Partner Lending"

@@ -3,6 +3,7 @@ title: "Why Your Restaurant Needs a Specialist Accountant for Restaurants (Not J
 slug: "accountant-for-restaurants-and-cafes"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/accountant-for-restaurants-and-cafes"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Accountant for Restaurants: Specialist Tax & VAT Advice UK"

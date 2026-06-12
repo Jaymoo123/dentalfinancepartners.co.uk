@@ -3,6 +3,7 @@ title: "What Is The Most Tax Efficient Salary And Dividend Split For A Director 
 slug: "tax-efficient-salary-dividend-split-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Tax Efficient Salary Dividend Split 2025 26 | UK Director"

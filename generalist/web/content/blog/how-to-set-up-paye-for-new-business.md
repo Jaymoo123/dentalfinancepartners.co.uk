@@ -3,6 +3,7 @@ title: "How to Set Up PAYE for a New Business in the UK"
 slug: "how-to-set-up-paye-for-new-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/how-to-set-up-paye-for-new-business"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "How to Set Up PAYE for a New Business | Step by Step Guide"

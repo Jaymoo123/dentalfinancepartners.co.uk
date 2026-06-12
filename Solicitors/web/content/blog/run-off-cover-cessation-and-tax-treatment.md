@@ -3,6 +3,7 @@ title: "How Do Solicitors and Law Firms Handle Run-Off Cover Tax Treatment on Ce
 slug: "run-off-cover-cessation-and-tax-treatment"
 canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/run-off-cover-cessation-and-tax-treatment"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
 metaTitle: "Run-Off Cover Tax Treatment for Solicitors & Law Firms"

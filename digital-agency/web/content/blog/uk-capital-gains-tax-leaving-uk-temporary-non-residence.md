@@ -3,6 +3,7 @@ title: 'UK Capital Gains Tax Leaving UK: The 5 Year Rule That Could Cost You'
 slug: uk-capital-gains-tax-leaving-uk-temporary-non-residence
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-leaving-uk-temporary-non-residence
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Capital Gains Tax Leaving UK: 5 Year Temporary'

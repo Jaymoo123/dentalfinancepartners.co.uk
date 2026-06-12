@@ -3,6 +3,7 @@ title: "Should I Register for VAT as an Associate Dentist?"
 slug: "associate-dentist-vat-registration-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/associate-dentist-vat-registration-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

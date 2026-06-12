@@ -3,6 +3,7 @@ title: "Why Searching Accountant for Small Businesses Near Me Is the Right Move"
 slug: "accountant-for-small-businesses-near-me"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-for-small-businesses-near-me"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant for Small Businesses Near Me: Why Local Matters"

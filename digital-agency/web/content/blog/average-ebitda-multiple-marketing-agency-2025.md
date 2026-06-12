@@ -3,6 +3,7 @@ title: What Is the Average EBITDA Multiple for UK Marketing Agencies in 2025?
 slug: average-ebitda-multiple-marketing-agency-2025
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/average-ebitda-multiple-marketing-agency-2025
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Average EBITDA Multiple Marketing Agency 2025: UK Benchmarks'

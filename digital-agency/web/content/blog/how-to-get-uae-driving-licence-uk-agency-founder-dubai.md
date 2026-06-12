@@ -3,6 +3,7 @@ title: How to Get a UAE Driving Licence as a UK Agency Founder Moving to Dubai
 slug: how-to-get-uae-driving-licence-uk-agency-founder-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/how-to-get-uae-driving-licence-uk-agency-founder-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UAE Driving Licence for UK Expat: Exchange Guide for Agency'

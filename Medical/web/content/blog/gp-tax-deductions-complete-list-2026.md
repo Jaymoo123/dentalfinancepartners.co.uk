@@ -2,6 +2,7 @@
 title: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
 slug: gp-tax-deductions-complete-list-2026
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: GP Tax & Accounts
 metaTitle: 'GP Tax Deductions 2026/27: GMC Fee, Indemnity, Mileage'

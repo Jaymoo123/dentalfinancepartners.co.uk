@@ -3,6 +3,7 @@ title: "How Do Corporation Tax and Dividend Tax Work Together for a Limited Comp
 slug: "corporation-tax-and-dividend-tax-limited-company-director-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-and-dividend-tax-limited-company-director-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax and Dividend Tax for Ltd Directors 2025/26"

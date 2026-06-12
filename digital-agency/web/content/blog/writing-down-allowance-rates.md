@@ -3,6 +3,7 @@ title: 'Writing Down Allowance Rates: What UK Agency Founders Need to Know'
 slug: writing-down-allowance-rates
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/writing-down-allowance-rates
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Writing Down Allowance Rates: A Guide for UK Agency Founders'

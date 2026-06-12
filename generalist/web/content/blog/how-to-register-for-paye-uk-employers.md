@@ -3,6 +3,7 @@ title: "How to Register for PAYE: A Step-by-Step Guide for UK Employers"
 slug: "how-to-register-for-paye-uk-employers"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/how-to-register-for-paye-uk-employers"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "How to Register for PAYE: Step-by-Step Guide for UK"

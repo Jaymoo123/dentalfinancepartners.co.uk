@@ -3,6 +3,7 @@ title: 'AIA Capital Allowances for Dental Practices: A Complete Guide'
 slug: aia-capital-allowances-dental-practices
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/aia-capital-allowances-dental-practices
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'AIA Capital Allowances: Complete Guide for Dental Practices'

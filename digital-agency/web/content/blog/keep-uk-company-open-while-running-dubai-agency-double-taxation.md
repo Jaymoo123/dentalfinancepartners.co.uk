@@ -3,6 +3,7 @@ title: Can I Keep My UK Company Open While Running a Dubai Agency Without Trigge
 slug: keep-uk-company-open-while-running-dubai-agency-double-taxation
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/keep-uk-company-open-while-running-dubai-agency-double-taxation
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Keep UK company open while running Dubai agency: double tax'

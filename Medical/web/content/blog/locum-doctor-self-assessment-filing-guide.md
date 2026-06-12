@@ -2,6 +2,7 @@
 title: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
 slug: locum-doctor-self-assessment-filing-guide
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: Locum Tax
 metaTitle: 'Locum Doctor Self Assessment: Step-by-Step Filing UK'

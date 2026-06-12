@@ -3,6 +3,7 @@ title: 'IR35 and Umbrella Companies: What Agency Owners Need to Know Before Hiri
 slug: ir35-umbrella-company-agency-contractors
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-umbrella-company-agency-contractors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'IR35 Umbrella Company Agency Contractors: The Compliance'

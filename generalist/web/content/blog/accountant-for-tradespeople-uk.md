@@ -3,6 +3,7 @@ title: "Why Tradespeople Need a Specialist Accountant (And How to Choose One)"
 slug: "accountant-for-tradespeople-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-tradespeople-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Tradespeople UK | Industry-Specific Tax"

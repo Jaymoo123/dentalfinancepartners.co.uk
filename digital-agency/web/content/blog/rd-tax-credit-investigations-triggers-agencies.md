@@ -3,6 +3,7 @@ title: 'R&D Tax Credit Investigations: What Triggers HMRC Scrutiny for Agencies'
 slug: rd-tax-credit-investigations-triggers-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-investigations-triggers-agencies
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credit Investigations: What Triggers HMRC Scrutiny'

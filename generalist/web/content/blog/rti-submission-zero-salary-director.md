@@ -3,6 +3,7 @@ title: "What Is The Correct RTI Submission For A Director Who Takes No Salary Bu
 slug: "rti-submission-zero-salary-director"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/rti-submission-zero-salary-director"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "RTI submission zero salary director: what to file"

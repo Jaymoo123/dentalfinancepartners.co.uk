@@ -3,6 +3,7 @@ title: "Can a Sole Trader Claim Tax Relief on a Home Office If They Also Have a 
 slug: "sole-trader-home-office-and-co-working-tax-relief"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/sole-trader-home-office-and-co-working-tax-relief"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Sole Trader Home Office and Co-working Space Tax Relief"

@@ -3,6 +3,7 @@ title: What Are the Costs and Timelines for Incorporating an Agency in 2025/26?
 slug: cost-incorporate-agency-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/cost-incorporate-agency-2025-26
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Agency incorporation costs 2025/26: fees & taxes'

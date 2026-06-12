@@ -3,6 +3,7 @@ title: How Will the Wales NHS Dental Contract Reform Affect Your Practice in 202
 slug: wales-nhs-dental-contract-reform-2026
 canonical: https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

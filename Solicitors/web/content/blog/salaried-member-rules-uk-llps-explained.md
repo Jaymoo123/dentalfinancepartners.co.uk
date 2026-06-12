@@ -3,6 +3,7 @@ title: "How Do the Salaried Member Rules (FA 2014) Affect UK Law Firm LLP Partne
 slug: "salaried-member-rules-uk-llps-explained"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/salaried-member-rules-uk-llps-explained"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Salaried Member Rules FA 2014: UK Law Firm LLP Partners"

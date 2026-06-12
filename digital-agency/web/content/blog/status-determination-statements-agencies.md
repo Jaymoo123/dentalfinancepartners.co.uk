@@ -3,6 +3,7 @@ title: What Must an Agency Put in a Status Determination Statement for IR35?
 slug: status-determination-statements-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/status-determination-statements-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'IR35 SDS agency: what to include in a status statement'

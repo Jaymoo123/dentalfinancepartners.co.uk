@@ -3,6 +3,7 @@ title: "What Are the Current LBTT Rates in Scotland for Conveyancing Solicitors 
 slug: "lbtt-rates-scottish-conveyancing-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/lbtt-rates-scottish-conveyancing-firms"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "LBTT Rates Scotland 2025/26 | Progressive Bands and ADS for Solicitors"

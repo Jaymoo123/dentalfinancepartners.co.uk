@@ -3,6 +3,7 @@ title: 'SRA Accounts Rules: The Complete Compliance Guide for UK Law Firms'
 slug: sra-accounts-rules-compliance-guide
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accounts-rules-compliance-guide
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: SRA Compliance & Trust Accounting
 metaTitle: 'SRA Accounts Rules: the Complete Compliance Guide UK'

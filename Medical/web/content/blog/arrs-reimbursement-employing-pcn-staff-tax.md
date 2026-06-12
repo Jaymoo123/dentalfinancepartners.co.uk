@@ -3,6 +3,7 @@ title: "ARRS: Reimbursement, Employing PCN Staff and the Tax"
 slug: "arrs-reimbursement-employing-pcn-staff-tax"
 canonical: "https://www.medicalaccounts.co.uk/blog/arrs-reimbursement-employing-pcn-staff-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "ARRS: Employing PCN Staff, Reimbursement & the Tax"

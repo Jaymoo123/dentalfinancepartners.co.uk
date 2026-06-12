@@ -3,6 +3,7 @@ title: How to Pay Yourself When Your Agency's Income Is Feast or Famine
 slug: pay-yourself-agency-feast-famine-income
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-feast-famine-income
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: How to Pay Yourself From an Agency With Irregular Pay

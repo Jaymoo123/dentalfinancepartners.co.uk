@@ -3,6 +3,7 @@ title: "Why Etsy Sellers Need a Specialist Accountant (and What to Look For)"
 slug: "accountant-for-etsy-sellers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-etsy-sellers-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Etsy Sellers UK: What to Look For"

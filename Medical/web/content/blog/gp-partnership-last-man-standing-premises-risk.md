@@ -3,6 +3,7 @@ title: "Last Man Standing: GP Partnership Premises Risk and How to Manage It"
 slug: "gp-partnership-last-man-standing-premises-risk"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-partnership-last-man-standing-premises-risk"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Last Man Standing: GP Partnership Premises Risk"

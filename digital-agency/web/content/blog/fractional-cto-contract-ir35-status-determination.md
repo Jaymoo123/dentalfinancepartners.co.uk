@@ -3,6 +3,7 @@ title: How to Write a Contract for a Fractional CTO That Passes an IR35 Status D
 slug: fractional-cto-contract-ir35-status-determination
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/fractional-cto-contract-ir35-status-determination
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Fractional CTO IR35 Contract: Status Determination Guide'

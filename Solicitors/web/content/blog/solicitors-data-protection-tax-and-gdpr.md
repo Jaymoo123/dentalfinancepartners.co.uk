@@ -3,6 +3,7 @@ title: "Can a Law Firm Claim Tax Relief on GDPR Compliance Costs?"
 slug: "solicitors-data-protection-tax-and-gdpr"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/solicitors-data-protection-tax-and-gdpr"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "GDPR Tax Relief for Law Firms: Solicitor Data Protection Costs"

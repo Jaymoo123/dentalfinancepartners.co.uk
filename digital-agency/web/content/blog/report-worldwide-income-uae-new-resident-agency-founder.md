@@ -3,6 +3,7 @@ title: How Do I Report My Worldwide Income to the UAE as a New Resident Agency F
 slug: report-worldwide-income-uae-new-resident-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/report-worldwide-income-uae-new-resident-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Report Worldwide Income UAE New Resident: A Founder''s Guide'

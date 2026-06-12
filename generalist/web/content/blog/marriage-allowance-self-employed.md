@@ -3,6 +3,7 @@ title: How to Claim the Marriage Allowance as a Self Employed Person
 slug: marriage-allowance-self-employed
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/marriage-allowance-self-employed
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Marriage Allowance for the Self Employed: £252 a Year'

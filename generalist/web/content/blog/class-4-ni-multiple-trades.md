@@ -3,6 +3,7 @@ title: "How to Calculate Class 4 National Insurance When You Have Multiple Self 
 slug: "class-4-ni-multiple-trades"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/class-4-ni-multiple-trades"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Class 4 NI Multiple Trades: How to Calculate Your Bill"

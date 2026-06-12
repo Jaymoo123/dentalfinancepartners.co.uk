@@ -2,6 +2,7 @@
 title: 'GP Accounting: Essential Guide for UK General Practitioners'
 slug: gp-accounting-guide
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: GP Practice Management
 metaTitle: 'GP Practice Accountant Guide: SA800, NHS Income, Tax'

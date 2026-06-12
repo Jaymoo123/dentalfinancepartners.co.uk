@@ -3,6 +3,7 @@ title: Can You Claim R&D Tax Credits for Custom Software Built for Client Projec
 slug: rd-tax-credits-custom-software-client-projects-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-custom-software-client-projects-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credits for Custom Software: Agency Guide'

@@ -3,6 +3,7 @@ title: How Should UK Agencies Handle VAT on Cross-Border Digital Advertising Ser
 slug: vat-cross-border-digital-advertising-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-cross-border-digital-advertising-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'UK agency VAT on cross-border digital ads: guide'

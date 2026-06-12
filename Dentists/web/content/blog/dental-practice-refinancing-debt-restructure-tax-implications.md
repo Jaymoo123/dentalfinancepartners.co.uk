@@ -3,6 +3,7 @@ title: "Refinancing or Restructuring Dental Practice Debt: the Tax Implications"
 slug: "dental-practice-refinancing-debt-restructure-tax-implications"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-refinancing-debt-restructure-tax-implications"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Refinancing Dental Practice Debt: the Tax Implications"

@@ -3,6 +3,7 @@ title: "How to Handle PAYE for a Director Who Works for Two Companies"
 slug: "paye-for-director-two-companies"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/paye-for-director-two-companies"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "PAYE for a Director With Two Companies: UK Guide 2025/26"

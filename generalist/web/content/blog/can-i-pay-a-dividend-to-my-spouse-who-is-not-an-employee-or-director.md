@@ -3,6 +3,7 @@ title: "Can I Pay a Dividend to My Spouse Who Is Not an Employee or Director?"
 slug: "can-i-pay-a-dividend-to-my-spouse-who-is-not-an-employee-or-director"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/can-i-pay-a-dividend-to-my-spouse-who-is-not-an-employee-or-director"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Dividend to spouse non director: UK rules for limited"

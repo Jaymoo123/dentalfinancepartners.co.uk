@@ -3,6 +3,7 @@ title: 'Capital Allowances on Property: A Guide for UK Agency Founders'
 slug: capital-allowances-on-property
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-on-property
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Capital Allowances on Property: A Guide for Agency Founders'

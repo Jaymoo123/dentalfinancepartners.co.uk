@@ -3,6 +3,7 @@ title: How Does IR35 Apply When Your Agency Engages Freelancers?
 slug: engaging-freelancers-agency-ir35
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/engaging-freelancers-agency-ir35
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'IR35 Freelancers Agency: Compliance Guide for UK Agency'

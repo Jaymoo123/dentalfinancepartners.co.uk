@@ -3,6 +3,7 @@ title: What is the diverted profits tax risk for my Dubai agency if I have UK cl
 slug: diverted-profits-tax-risk-dubai-agency-uk-clients
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/diverted-profits-tax-risk-dubai-agency-uk-clients
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: Diverted profits tax risk for Dubai agencies with UK clients

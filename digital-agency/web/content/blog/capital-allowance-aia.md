@@ -3,6 +3,7 @@ title: 'Capital Allowance and the Annual Investment Allowance (AIA) for UK Agenc
 slug: capital-allowance-aia
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowance-aia
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Capital Allowance AIA: £1M Tax Relief for Agency Equipment'

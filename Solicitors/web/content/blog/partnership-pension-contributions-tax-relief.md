@@ -3,6 +3,7 @@ title: "How Do LLP Partners Claim Tax Relief on Personal Pension Contributions?"
 slug: "partnership-pension-contributions-tax-relief"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/partnership-pension-contributions-tax-relief"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "LLP Partner Pension Tax Relief: How Solicitors Claim It"

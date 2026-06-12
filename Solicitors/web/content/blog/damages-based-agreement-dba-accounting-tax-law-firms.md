@@ -3,6 +3,7 @@ title: "Damages-Based Agreements (DBAs): Accounting, Tax and the VAT-Inclusive C
 slug: "damages-based-agreement-dba-accounting-tax-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/damages-based-agreement-dba-accounting-tax-law-firms"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "DBA Accounting and Tax: The VAT-Inclusive Caps Explained"

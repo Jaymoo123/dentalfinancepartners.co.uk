@@ -3,6 +3,7 @@ title: Can't Pay Dividends Because of Retained Losses? Here's How to Pay Yoursel
 slug: pay-yourself-agency-founder-retained-losses-bonus-instead-dividends
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-founder-retained-losses-bonus-instead-dividends
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Pay yourself agency founder: bonus vs dividends'

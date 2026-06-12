@@ -3,6 +3,7 @@ title: 'Writing Down Allowance on Cars: A Guide for UK Dentists'
 slug: writing-down-allowance-cars-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/writing-down-allowance-cars-dentists
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'Writing Down Allowance Cars: UK Dentist Tax Guide 2025/26'

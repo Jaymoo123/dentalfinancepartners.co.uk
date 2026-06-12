@@ -3,6 +3,7 @@ title: "Associate Dentist Tax Calculator: Calculate Your Tax Liability"
 slug: "associate-dentist-tax-calculator-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-tax-calculator-uk"
 date: "2026-03-31"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Associate Dentist Tax Calculator UK | 2026/27"

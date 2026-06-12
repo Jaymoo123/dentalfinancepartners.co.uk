@@ -3,6 +3,7 @@ title: 'AIA Capital Allowances: What UK Agency Founders Need to Know'
 slug: aia-capital-allowances
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/aia-capital-allowances
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'AIA Capital Allowances: Full Guide for UK Agency Founders'

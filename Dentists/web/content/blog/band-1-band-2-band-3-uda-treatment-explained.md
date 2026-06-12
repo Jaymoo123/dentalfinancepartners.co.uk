@@ -3,6 +3,7 @@ title: 'NHS Dental Treatment Bands Explained: Band 1, Band 2, Band 3, UDAs and P
 slug: band-1-band-2-band-3-uda-treatment-explained
 canonical: https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/band-1-band-2-band-3-uda-treatment-explained
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

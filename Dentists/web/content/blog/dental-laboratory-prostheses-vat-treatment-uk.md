@@ -3,6 +3,7 @@ title: "Dental Laboratory Work and Prostheses: How VAT Actually Applies"
 slug: "dental-laboratory-prostheses-vat-treatment-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-laboratory-prostheses-vat-treatment-uk"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Dental Laboratory & Prostheses VAT Treatment: UK Guide"

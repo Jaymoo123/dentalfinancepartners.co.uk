@@ -3,6 +3,7 @@ title: "UK Pension When Moving to Dubai: The Lifetime Allowance Trap That Still 
 slug: "uk-pension-lifetime-allowance-dubai-pre-2024-transfers"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-pension-lifetime-allowance-dubai-pre-2024-transfers"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "International Agencies"
 metaTitle: "UK Pension Lifetime Allowance Dubai: The Pre-2024 Transfer"

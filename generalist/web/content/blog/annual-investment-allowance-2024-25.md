@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance 2024/25: Rates, Limits and How to Claim'
 slug: annual-investment-allowance-2024-25
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance-2024-25
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Annual Investment Allowance 2024/25: Rates, Limits & How'

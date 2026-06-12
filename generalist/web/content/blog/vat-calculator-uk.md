@@ -3,6 +3,7 @@ title: 'VAT Calculator UK: How to Calculate VAT Correctly for Your Business'
 slug: vat-calculator-uk
 canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-calculator-uk
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: VAT and Making Tax Digital
 metaTitle: 'VAT Calculator UK: How to Calculate VAT Correctly'

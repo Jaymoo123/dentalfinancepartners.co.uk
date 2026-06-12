@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance 2024/25: What UK Agency Founders Need to Kno
 slug: annual-investment-allowance-2024-25
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-2024-25
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Annual Investment Allowance 2024/25: What Agencies Claim'

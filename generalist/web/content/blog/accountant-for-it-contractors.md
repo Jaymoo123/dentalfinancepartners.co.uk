@@ -3,6 +3,7 @@ title: "What Does an Accountant for IT Contractors Actually Do? (2025/26 Guide)"
 slug: "accountant-for-it-contractors"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-it-contractors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for IT Contractors: What You Get in 2025/26"

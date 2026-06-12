@@ -3,6 +3,7 @@ title: "Law Firm Cash Flow Management: A UK Solicitor's Guide to Financial Contr
 slug: "law-firm-cash-flow-management"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-cash-flow-management"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Cash Flow Management: UK Solicitor's Guide 2026"

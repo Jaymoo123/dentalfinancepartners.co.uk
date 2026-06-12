@@ -3,6 +3,7 @@ title: "CIS Accountant UK: How a Specialist Accountant Saves You Time and Tax in
 slug: "cis-accountant-uk-construction"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/cis-accountant-uk-construction"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "CIS Accountant UK: Specialist Support for Construction"

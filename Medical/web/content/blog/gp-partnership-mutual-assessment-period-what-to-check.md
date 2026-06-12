@@ -3,6 +3,7 @@ title: 'The GP Partnership Mutual Assessment Period: Financial Due Diligence Bef
 slug: gp-partnership-mutual-assessment-period-what-to-check
 canonical: https://www.medicalaccounts.co.uk/blog/gp-partnership-mutual-assessment-period-what-to-check
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Medical Accountants UK Editorial Team
 category: GP Tax & Accounts
 metaTitle: 'GP Mutual Assessment Period: Checks Before You Join'

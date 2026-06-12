@@ -3,6 +3,7 @@ title: Understanding Goodwill When Buying or Selling a Dental Practice
 slug: dental-practice-goodwill-buying-selling
 canonical: https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

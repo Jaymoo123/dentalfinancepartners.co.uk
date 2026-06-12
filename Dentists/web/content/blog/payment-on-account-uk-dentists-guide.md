@@ -3,6 +3,7 @@ title: "Payment on Account: What UK Dentists Need to Know"
 slug: "payment-on-account-uk-dentists-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/payment-on-account-uk-dentists-guide"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

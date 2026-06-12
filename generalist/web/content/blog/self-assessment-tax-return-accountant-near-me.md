@@ -3,6 +3,7 @@ title: "Where to Find a Self Assessment Tax Return Accountant Near Me"
 slug: "self-assessment-tax-return-accountant-near-me"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-accountant-near-me"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Self Assessment Tax Return Accountant Near Me: UK Guide"

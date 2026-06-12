@@ -3,6 +3,7 @@ title: "Medical Practice Incorporation Step by Step: Complete Guide for UK Docto
 slug: "medical-practice-incorporation-step-by-step"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/medical-practice-incorporation-step-by-step"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Medical Practice Incorporation: Step-by-Step Guide 2026/27"

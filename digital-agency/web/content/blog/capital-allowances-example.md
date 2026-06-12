@@ -3,6 +3,7 @@ title: 'Capital Allowances Example: How UK Agency Founders Claim Tax Relief on E
 slug: capital-allowances-example
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-example
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Capital Allowances Example: Tax Relief on Agency Equipment'

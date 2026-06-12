@@ -3,6 +3,7 @@ title: How to Set Up a Chart of Accounts for a Digital Agency with Retainers and
 slug: chart-of-accounts-digital-agency-retainer-project-work
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/chart-of-accounts-digital-agency-retainer-project-work
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Chart of accounts for digital agencies: retainer setup'

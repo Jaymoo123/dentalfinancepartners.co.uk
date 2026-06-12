@@ -3,6 +3,7 @@ title: "What Is a Holding Company Structure and How Does It Affect UK Tax?"
 slug: "holding-company-structure-uk-tax"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-structure-uk-tax"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Holding Company Structure UK Tax: A Practical Guide"

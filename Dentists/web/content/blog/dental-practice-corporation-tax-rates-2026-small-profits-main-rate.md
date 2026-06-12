@@ -3,6 +3,7 @@ title: "Dental Practice Corporation Tax Rates 2026: Small Profits Rate vs Main R
 slug: "dental-practice-corporation-tax-rates-2026-small-profits-main-rate"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-corporation-tax-rates-2026-small-profits-main-rate"
 date: "2026-03-29"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Practice Corporation Tax Rates 2026/27"

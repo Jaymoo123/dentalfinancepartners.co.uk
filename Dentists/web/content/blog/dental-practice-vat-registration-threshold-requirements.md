@@ -3,6 +3,7 @@ title: 'Dental Practice VAT Registration: Threshold & Requirements 2026'
 slug: dental-practice-vat-registration-threshold-requirements
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements
 date: '2026-04-01'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

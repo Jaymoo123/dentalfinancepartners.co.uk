@@ -3,6 +3,7 @@ title: "Section 162 Incorporation Relief for a Private Medical Practice (2026 Ru
 slug: "incorporation-relief-private-medical-practice-s162"
 canonical: "https://www.medicalaccounts.co.uk/blog/incorporation-relief-private-medical-practice-s162"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Section 162 Incorporation Relief: Private Practice"

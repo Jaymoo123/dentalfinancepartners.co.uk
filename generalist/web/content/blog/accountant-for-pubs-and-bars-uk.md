@@ -3,6 +3,7 @@ title: "How to Choose the Right Accountant for Pubs and Bars in the UK"
 slug: "accountant-for-pubs-and-bars-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-for-pubs-and-bars-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant for Pubs and Bars UK | Industry Specialist Advice"

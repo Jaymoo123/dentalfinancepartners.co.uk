@@ -3,6 +3,7 @@ title: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
 slug: "locum-solicitor-tax-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/locum-solicitor-tax-uk-2025-26"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Locum Solicitor Tax UK 2025/26: IR35, VAT & Self-Employed Status"

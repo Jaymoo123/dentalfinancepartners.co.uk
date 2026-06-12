@@ -3,6 +3,7 @@ title: "Can a Solicitor Claim CPD Costs as a Tax Deductible Expense in 2025/26?"
 slug: "solicitor-cpd-tax-deductible-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/solicitor-cpd-tax-deductible-uk-2025-26"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Fee-Earner Tax & Compensation"
 metaTitle: "Solicitor CPD Tax Deductible UK 2025/26 | SRA Training Costs"

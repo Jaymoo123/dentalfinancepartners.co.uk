@@ -3,6 +3,7 @@ title: Self Assessment Tax Return Guide for a Sole Trader Running Multiple Trade
 slug: self-assessment-tax-return-guide-sole-trader-multiple-trades
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-sole-trader-multiple-trades
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Self Assessment for Sole Traders With Multiple Trades

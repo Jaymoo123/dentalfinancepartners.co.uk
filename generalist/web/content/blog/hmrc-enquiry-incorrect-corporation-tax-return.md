@@ -3,6 +3,7 @@ title: "What Happens If My Company's Corporation Tax Return Is Incorrect After H
 slug: "hmrc-enquiry-incorrect-corporation-tax-return"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/hmrc-enquiry-incorrect-corporation-tax-return"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "HMRC enquiry incorrect corporation tax return: what happens"

@@ -3,6 +3,7 @@ title: "Capital Gains Tax and Property: What UK Business Owners Need to Know in 
 slug: "capital-gains-tax-and-property-uk-business-owners"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/capital-gains-tax-and-property-uk-business-owners"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Capital Gains Tax and Property: UK Business Owner Guide"

@@ -3,6 +3,7 @@ title: Can an AI Agency Claim R&D Tax Credits for Custom Models, Fine-Tuning and
 slug: r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credits for AI Agencies: Custom Models & Fine-Tuning'

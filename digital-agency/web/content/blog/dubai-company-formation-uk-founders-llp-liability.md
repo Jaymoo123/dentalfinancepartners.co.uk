@@ -3,6 +3,7 @@ title: 'Dubai Company Formation for UK Founders: Why Your UK LLP Structure Might
 slug: dubai-company-formation-uk-founders-llp-liability
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-company-formation-uk-founders-llp-liability
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Dubai Company Formation for UK Founders: UK LLP Risks Under'

@@ -3,6 +3,7 @@ title: "How to File Company Accounts in the UK: A Step-by-Step Guide for Directo
 slug: "how-to-file-company-accounts-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/how-to-file-company-accounts-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "How to File Company Accounts UK: Step-by-Step Director Guide"

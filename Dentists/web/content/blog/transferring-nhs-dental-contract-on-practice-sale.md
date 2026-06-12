@@ -3,6 +3,7 @@ title: "How Do You Transfer an NHS Dental Contract on a Practice Sale?"
 slug: "transferring-nhs-dental-contract-on-practice-sale"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/transferring-nhs-dental-contract-on-practice-sale"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "NHS Dental Contract Transfer on Practice Sale: Key Steps"

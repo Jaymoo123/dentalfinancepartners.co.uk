@@ -3,6 +3,7 @@ title: Is Your Accountant Costing You Growth? Compliance vs Strategic Agency Acc
 slug: compliance-vs-strategic-agency-accountant
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/compliance-vs-strategic-agency-accountant
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency accountant services: compliance vs strategic advice'

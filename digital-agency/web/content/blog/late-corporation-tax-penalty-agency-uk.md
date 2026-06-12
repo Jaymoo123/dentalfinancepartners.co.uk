@@ -3,6 +3,7 @@ title: 'Late Corporation Tax Penalty for Agencies: What You Need to Know to Avoi
 slug: late-corporation-tax-penalty-agency-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/late-corporation-tax-penalty-agency-uk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Agency Late Corp Tax Penalty: Avoid HMRC Fines'

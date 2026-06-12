@@ -3,6 +3,7 @@ title: 'Pension Contributions Through Your Agency: The Founder''s Guide'
 slug: pension-contributions-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/pension-contributions-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Pension Contributions for Agency Founders

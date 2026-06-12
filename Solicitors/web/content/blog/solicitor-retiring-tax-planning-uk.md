@@ -3,6 +3,7 @@ title: "How Should a Solicitor Plan Their Tax Position When Retiring from an LLP
 slug: "solicitor-retiring-tax-planning-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/solicitor-retiring-tax-planning-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "Solicitor Retirement Tax Planning UK | LLP Partner Exit Strategy"

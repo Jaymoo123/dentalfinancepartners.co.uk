@@ -3,6 +3,7 @@ title: What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How
 slug: healthy-net-profit-margin-small-agency-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/healthy-net-profit-margin-small-agency-2025-26
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Healthy net profit margin for a small agency in 2025/26

@@ -3,6 +3,7 @@ title: "What Does a Management Accounting Service Actually Do for Your Business?
 slug: "what-does-a-management-accounting-service-actually-do"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/what-does-a-management-accounting-service-actually-do"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Management Accounting Service: What It Does for UK"

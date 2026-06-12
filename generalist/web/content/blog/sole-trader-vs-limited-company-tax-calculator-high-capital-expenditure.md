@@ -3,6 +3,7 @@ title: "Sole Trader vs Limited Company Tax Calculator For A Business With High C
 slug: "sole-trader-vs-limited-company-tax-calculator-high-capital-expenditure"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/sole-trader-vs-limited-company-tax-calculator-high-capital-expenditure"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Sole Trader vs Limited Company Tax Calculator: High Capital"

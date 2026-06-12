@@ -3,6 +3,7 @@ title: Does My Agency Actually Qualify for R&D Tax Credits? A Founder's Checklis
 slug: agency-rd-tax-credit-eligibility-checklist
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/agency-rd-tax-credit-eligibility-checklist
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Agency R&D Tax Credit Eligibility: A Founder''s Checklist'

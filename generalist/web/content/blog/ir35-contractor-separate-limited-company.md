@@ -3,6 +3,7 @@ title: "How Does IR35 Apply When a Contractor Runs a Separate Limited Company?"
 slug: "ir35-contractor-separate-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/ir35-contractor-separate-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "IR35 Explained: Contractor With a Separate Limited Company"

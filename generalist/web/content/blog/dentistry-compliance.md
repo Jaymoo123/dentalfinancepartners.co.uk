@@ -3,6 +3,7 @@ title: 'Dentistry Compliance: A Complete Guide for UK Dental Practices'
 slug: dentistry-compliance
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/dentistry-compliance
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'Dentistry Compliance: A Guide for UK Dental Practices'

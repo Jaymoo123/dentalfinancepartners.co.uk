@@ -3,6 +3,7 @@ title: "Can an AI Startup Claim R&D Tax Credits in the UK?"
 slug: "can-an-ai-startup-claim-rd-tax-credits-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/can-an-ai-startup-claim-rd-tax-credits-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits for AI Startups: UK Guide 2025/26"

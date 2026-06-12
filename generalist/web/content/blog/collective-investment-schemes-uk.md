@@ -3,6 +3,7 @@ title: What Is a Collective Investment Scheme? A UK Guide for Business Owners
 slug: collective-investment-schemes-uk
 canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/collective-investment-schemes-uk
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'Collective Investment Schemes: UK Guide for Business Owners'

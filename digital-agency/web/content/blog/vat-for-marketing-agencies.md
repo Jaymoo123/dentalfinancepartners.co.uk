@@ -3,6 +3,7 @@ title: 'VAT for Marketing Agencies: Registration, Schemes and What to Charge Cli
 slug: vat-for-marketing-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-for-marketing-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'VAT for Marketing Agencies: Registration and Schemes'

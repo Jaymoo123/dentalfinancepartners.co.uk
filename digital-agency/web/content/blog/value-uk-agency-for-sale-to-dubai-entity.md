@@ -3,6 +3,7 @@ title: How Do I Value My UK Agency for a Potential Sale to a Dubai Entity?
 slug: value-uk-agency-for-sale-to-dubai-entity
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/value-uk-agency-for-sale-to-dubai-entity
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Value UK Agency for Sale to Dubai Entity: A Practical Guide'

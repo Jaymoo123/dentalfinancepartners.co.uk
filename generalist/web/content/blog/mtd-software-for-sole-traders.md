@@ -3,6 +3,7 @@ title: "What MTD Software Do Sole Traders Need for Making Tax Digital for Income
 slug: "mtd-software-for-sole-traders"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/mtd-software-for-sole-traders"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "MTD Software For Sole Traders: What You Need For ITSA"

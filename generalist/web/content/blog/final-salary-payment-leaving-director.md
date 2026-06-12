@@ -3,6 +3,7 @@ title: "How to Process a Final Salary Payment for a Director Leaving the Company
 slug: "final-salary-payment-leaving-director"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/final-salary-payment-leaving-director"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Final salary payment leaving director: payroll termination"

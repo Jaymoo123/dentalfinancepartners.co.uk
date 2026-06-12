@@ -3,6 +3,7 @@ title: "Do UK Solicitors Charge VAT in 2025/26?"
 slug: "do-uk-solicitors-charge-vat"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/do-uk-solicitors-charge-vat"
 date: "2026-05-19"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Do UK Solicitors Charge VAT in 2025/26? Yes, at 20%"

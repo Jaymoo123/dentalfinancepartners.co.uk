@@ -3,6 +3,7 @@ title: "How Does a VAT Accountant Help a Business That Imports Goods From Outsid
 slug: "vat-accountant-importing-goods-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-accountant-importing-goods-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "VAT Accountant for Importing Goods: UK Business Guide"

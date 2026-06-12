@@ -3,6 +3,7 @@ title: What Does a Specialist Accountant for Dentists Do That a General Accounta
 slug: accountant-for-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/specialist-services/accountant-for-dentists
 date: '2026-05-19'
+generator: deepseek-chat/unverified
 updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Specialist Services

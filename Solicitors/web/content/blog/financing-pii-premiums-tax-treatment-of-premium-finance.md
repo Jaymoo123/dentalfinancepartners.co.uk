@@ -3,6 +3,7 @@ title: "Financing PII Premiums: Tax Treatment of Premium Finance for Law Firms"
 slug: "financing-pii-premiums-tax-treatment-of-premium-finance"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/financing-pii-premiums-tax-treatment-of-premium-finance"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Financing PII Premiums: Premium Finance Tax Treatment"

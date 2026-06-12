@@ -3,6 +3,7 @@ title: How Is VAT Handled When Your Agency Subcontracts Freelancers and Invoices
 slug: vat-treatment-subcontracted-freelancer-costs-agency-principal
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-treatment-subcontracted-freelancer-costs-agency-principal
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: VAT on subcontracted freelancer costs when you invoice

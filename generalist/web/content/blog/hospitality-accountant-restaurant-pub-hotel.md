@@ -3,6 +3,7 @@ title: "Why Your Restaurant, Pub or Hotel Needs a Specialist Hospitality Account
 slug: "hospitality-accountant-restaurant-pub-hotel"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/hospitality-accountant-restaurant-pub-hotel"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Hospitality Accountant for Restaurants, Pubs & Hotels | UK"

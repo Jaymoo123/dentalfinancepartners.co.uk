@@ -3,6 +3,7 @@ title: 'Writing Down Allowance Rates for Dental Practices: A Complete Guide'
 slug: writing-down-allowance-rates-dental-practice
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/writing-down-allowance-rates-dental-practice
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'Writing Down Allowance Rates: Dental Practice Guide 2026'

@@ -3,6 +3,7 @@ title: 'Alphabet Share Structure: How It Works for Agency Founders'
 slug: alphabet-share-structure-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/alphabet-share-structure-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Alphabet shares for agency founders: how they work'

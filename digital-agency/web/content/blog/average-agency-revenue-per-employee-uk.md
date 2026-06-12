@@ -3,6 +3,7 @@ title: What Is the Average Agency Revenue Per Employee and How to Improve It
 slug: average-agency-revenue-per-employee-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/average-agency-revenue-per-employee-uk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency revenue per employee: UK benchmark & tips'

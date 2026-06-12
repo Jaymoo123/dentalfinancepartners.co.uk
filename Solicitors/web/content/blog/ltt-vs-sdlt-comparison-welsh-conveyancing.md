@@ -3,6 +3,7 @@ title: "LTT vs SDLT: What Solicitors Handling Wales Conveyancing Must Know"
 slug: "ltt-vs-sdlt-comparison-welsh-conveyancing"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/ltt-vs-sdlt-comparison-welsh-conveyancing"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "LTT vs SDLT for Solicitors: Wales Conveyancing Tax Guide"

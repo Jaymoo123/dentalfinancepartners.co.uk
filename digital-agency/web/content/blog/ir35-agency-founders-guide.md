@@ -3,6 +3,7 @@ title: 'IR35 for Agency Founders: What You Need to Know Before Hiring Contractor
 slug: ir35-agency-founders-guide
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-agency-founders-guide
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'IR35 for Agency Founders: Rules, Risks & Compliance Guide'

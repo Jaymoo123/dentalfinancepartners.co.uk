@@ -3,6 +3,7 @@ title: What Is the Penalty for Not Complying with MTD for Income Tax as an Agenc
 slug: mtd-itsa-penalty-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-penalty-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD ITSA Penalty: What Agency Founders Must Pay'

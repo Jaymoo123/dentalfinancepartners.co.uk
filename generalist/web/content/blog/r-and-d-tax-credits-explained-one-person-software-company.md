@@ -3,6 +3,7 @@ title: "R&D Tax Credits Explained for a One-Person Software Company"
 slug: "r-and-d-tax-credits-explained-one-person-software-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credits-explained-one-person-software-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits Explained: Solo Software Developer Guide"

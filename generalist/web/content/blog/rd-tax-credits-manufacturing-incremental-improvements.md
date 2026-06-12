@@ -3,6 +3,7 @@ title: "Can a Manufacturing Company Claim R&D Tax Credits for Incremental Improv
 slug: "rd-tax-credits-manufacturing-incremental-improvements"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/rd-tax-credits-manufacturing-incremental-improvements"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits for Manufacturing: Incremental Improvements"

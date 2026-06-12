@@ -3,6 +3,7 @@ title: 'VAT: How to Calculate VAT in the UK'
 slug: vat-how-to-calculate
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-how-to-calculate
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: 'VAT: How to Calculate VAT in the UK'

@@ -3,6 +3,7 @@ title: 'UK Tax Brackets 2025/26: Rates, Thresholds and Allowances'
 slug: uk-tax-brackets
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/uk-tax-brackets
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: UK Tax Bands and Sole Trader Rates for 2025/26 Year

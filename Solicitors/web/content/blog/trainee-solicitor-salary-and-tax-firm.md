@@ -3,6 +3,7 @@ title: "How Is a Trainee Solicitor Salary Taxed Under PAYE and What Exemptions A
 slug: "trainee-solicitor-salary-and-tax-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/trainee-and-paralegal-tax/trainee-solicitor-salary-and-tax-firm"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Trainee & Paralegal Tax"
 metaTitle: "Trainee Solicitor Salary Tax: PAYE, NI & NMW Exemption"

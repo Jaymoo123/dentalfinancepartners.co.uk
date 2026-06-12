@@ -3,6 +3,7 @@ title: "How Are Dental Goodwill Valuation Methods Used in UK Practice Sales?"
 slug: "goodwill-valuation-methods-dental-uk-2026"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/goodwill-valuation-methods-dental-uk-2026"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Dental Goodwill Valuation Methods UK 2025/26 | Dental Finance Partners"

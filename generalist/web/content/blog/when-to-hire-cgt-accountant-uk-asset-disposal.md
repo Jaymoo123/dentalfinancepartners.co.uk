@@ -3,6 +3,7 @@ title: "When Should You Hire a CGT Accountant UK for an Asset Disposal?"
 slug: "when-to-hire-cgt-accountant-uk-asset-disposal"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/when-to-hire-cgt-accountant-uk-asset-disposal"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "When to Hire a CGT Accountant UK for Asset Disposal | UKBA"

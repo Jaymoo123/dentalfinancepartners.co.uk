@@ -3,6 +3,7 @@ title: "How to Register as Self Employed UK: The Step by Step Guide for 2025/26"
 slug: "how-to-register-as-self-employed-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/how-to-register-as-self-employed-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "How to Register as Self Employed UK: Step by Step Guide"

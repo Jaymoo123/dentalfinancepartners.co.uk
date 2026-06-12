@@ -3,6 +3,7 @@ title: "Can a Director Claim BADR After Leaving Their Role 2 Years Ago?"
 slug: "can-a-director-claim-badr-after-leaving-role-2-years-ago"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/can-a-director-claim-badr-after-leaving-role-2-years-ago"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR Claim After Leaving Director Role: 2-Year Rule"

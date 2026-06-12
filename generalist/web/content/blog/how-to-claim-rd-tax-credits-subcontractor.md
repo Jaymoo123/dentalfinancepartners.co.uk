@@ -3,6 +3,7 @@ title: "How to Claim R&D Tax Credits When You Used a Subcontractor"
 slug: "how-to-claim-rd-tax-credits-subcontractor"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits-subcontractor"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "How to Claim R&D Tax Credits with a Subcontractor: UK Rules"

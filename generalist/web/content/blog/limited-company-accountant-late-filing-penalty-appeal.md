@@ -3,6 +3,7 @@ title: "Can a Limited Company Accountant Appeal a Late Filing Penalty for You?"
 slug: "limited-company-accountant-late-filing-penalty-appeal"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-late-filing-penalty-appeal"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Late Filing Penalty Appeal: How a Limited Company"

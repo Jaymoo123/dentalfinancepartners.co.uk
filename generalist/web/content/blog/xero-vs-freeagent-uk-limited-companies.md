@@ -3,6 +3,7 @@ title: 'Xero vs FreeAgent: Which Cloud Accounting Software Is Better For UK Limi
 slug: xero-vs-freeagent-uk-limited-companies
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/xero-vs-freeagent-uk-limited-companies
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: FreeAgent vs Xero for UK Limited Companies Compared

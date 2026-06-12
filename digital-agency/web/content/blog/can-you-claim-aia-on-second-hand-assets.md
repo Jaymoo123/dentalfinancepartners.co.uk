@@ -3,6 +3,7 @@ title: Can You Claim AIA on Second-Hand Assets? A Guide for Agency Founders
 slug: can-you-claim-aia-on-second-hand-assets
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/can-you-claim-aia-on-second-hand-assets
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Can You Claim AIA on Second-Hand Assets? UK Guide

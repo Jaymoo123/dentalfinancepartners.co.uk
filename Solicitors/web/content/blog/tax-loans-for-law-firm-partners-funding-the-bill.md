@@ -3,6 +3,7 @@ title: "Tax Loans for Law Firm Partners: Funding the Bill (and the Deductibility
 slug: "tax-loans-for-law-firm-partners-funding-the-bill"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/tax-loans-for-law-firm-partners-funding-the-bill"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Tax Loans for Law Firm Partners: Funding the Bill"

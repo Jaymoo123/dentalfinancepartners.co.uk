@@ -3,6 +3,7 @@ title: "How Much Do Accountant Fees Cost for a Small Business in 2025/26?"
 slug: "accountant-fees-small-business-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-fees-small-business-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant Fees Small Business UK 2025/26 | Cost Guide"

@@ -3,6 +3,7 @@ title: "How Does IR35 Affect Locum Dentists Working for NHS Contractors?"
 slug: "ir35-locum-dentists-nhs-engagements"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/ir35-locum-dentists-nhs-engagements"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Locum Tax"
 metaTitle: "IR35 for Locum Dentists: NHS Contractor Engagements Explained"

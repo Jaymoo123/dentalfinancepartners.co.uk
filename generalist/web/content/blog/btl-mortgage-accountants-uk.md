@@ -3,6 +3,7 @@ title: 'BTL Mortgage Accountants: Tax Planning for UK Landlords'
 slug: btl-mortgage-accountants-uk
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/btl-mortgage-accountants-uk
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: BTL Mortgage Tax Planning for UK Landlords

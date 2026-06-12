@@ -3,6 +3,7 @@ title: "How to Manage Accounts and Payroll for Your UK Business Without the Head
 slug: "accounts-and-payroll-uk-business-guide"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accounts-and-payroll-uk-business-guide"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Accounts and Payroll for UK Businesses: A Practical Guide"

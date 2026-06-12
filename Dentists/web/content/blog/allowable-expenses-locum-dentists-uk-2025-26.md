@@ -3,6 +3,7 @@ title: What Expenses Can a Locum Dentist Claim in the UK for 2025/26?
 slug: allowable-expenses-locum-dentists-uk-2025-26
 canonical: https://www.dentalfinancepartners.co.uk/blog/locum-tax/allowable-expenses-locum-dentists-uk-2025-26
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Locum Tax
 metaTitle: 'Locum Dentist Expenses 2025/26: What You Can Claim'

@@ -3,6 +3,7 @@ title: "What Determines an Accounting Fee in 2025/26? A UK Business Owner's Guid
 slug: "accounting-fee-2025-26-uk-business-guide"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-fee-2025-26-uk-business-guide"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accounting Fee 2025/26: What UK Businesses Pay & Why"

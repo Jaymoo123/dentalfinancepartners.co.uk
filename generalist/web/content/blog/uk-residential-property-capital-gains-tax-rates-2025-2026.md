@@ -3,6 +3,7 @@ title: 'UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Exp
 slug: uk-residential-property-capital-gains-tax-rates-2025-2026
 canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'UK Residential Property CGT Rates 2025/26: 18% and 24%'

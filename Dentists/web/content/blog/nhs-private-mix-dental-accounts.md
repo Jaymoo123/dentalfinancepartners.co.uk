@@ -3,6 +3,7 @@ title: "NHS and private mix: making dental accounts useful"
 slug: "nhs-private-mix-dental-accounts"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/nhs-private-mix-dental-accounts"
 date: "2026-02-18"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

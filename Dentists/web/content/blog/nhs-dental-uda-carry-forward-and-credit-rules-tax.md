@@ -3,6 +3,7 @@ title: "NHS Dental UDA Carry-Forward and Credit Rules, and the Accounting Treatm
 slug: "nhs-dental-uda-carry-forward-and-credit-rules-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/nhs-dental-uda-carry-forward-and-credit-rules-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
 metaTitle: "NHS UDA Carry-Forward and Clawback Rules Explained"

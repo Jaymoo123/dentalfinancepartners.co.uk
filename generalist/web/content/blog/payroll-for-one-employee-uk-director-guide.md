@@ -3,6 +3,7 @@ title: How Do I Run Payroll for One Employee in the UK? A Director's Guide
 slug: payroll-for-one-employee-uk-director-guide
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
 metaTitle: 'Payroll for One Employee UK: Director-Only Guide 2025/26'

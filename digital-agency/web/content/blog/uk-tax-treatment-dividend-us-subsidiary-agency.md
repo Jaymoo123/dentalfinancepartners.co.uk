@@ -3,6 +3,7 @@ title: What Is the UK Tax Treatment of a Dividend from a US Subsidiary of Your A
 slug: uk-tax-treatment-dividend-us-subsidiary-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-tax-treatment-dividend-us-subsidiary-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK tax dividend US subsidiary agency: what you need to know'

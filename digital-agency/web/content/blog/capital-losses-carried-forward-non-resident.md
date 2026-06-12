@@ -3,6 +3,7 @@ title: What Happens to My Carried Forward UK Capital Losses When I Become Non-Re
 slug: capital-losses-carried-forward-non-resident
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/capital-losses-carried-forward-non-resident
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Capital Losses Carried Forward Non-Resident: UK Rules'

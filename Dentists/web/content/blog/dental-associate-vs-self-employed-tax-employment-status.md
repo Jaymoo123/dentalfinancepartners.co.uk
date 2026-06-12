@@ -3,6 +3,7 @@ title: 'Associate vs Self Employed Dentist: Tax & Employment Status Guide'
 slug: dental-associate-vs-self-employed-tax-employment-status
 canonical: https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status
 date: '2026-03-31'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

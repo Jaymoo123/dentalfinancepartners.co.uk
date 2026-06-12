@@ -3,6 +3,7 @@ title: How to Adjust Your Salary and Dividend Split Mid-Year When Your Agency's 
 slug: adjust-salary-dividend-split-mid-year-agency-profit-forecast
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/adjust-salary-dividend-split-mid-year-agency-profit-forecast
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: Adjust your salary dividend split mid-year when profits

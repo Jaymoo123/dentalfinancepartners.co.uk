@@ -3,6 +3,7 @@ title: How Does a UK Agency Founder Get a UAE Residence Visa? The Step-by-Step P
 slug: uae-residence-visa-process-for-uk-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-residence-visa-process-for-uk-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UAE residence visa process for UK founder: step-by-step'

@@ -3,6 +3,7 @@ title: How Should a Law Firm Handle Client Money Interest Under SRA Rule 7?
 slug: handling-client-money-interest-sra-rules
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/handling-client-money-interest-sra-rules
 date: '2026-05-18'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: SRA Accounts Rules
 metaTitle: 'SRA Rule 7: Client Money Interest for UK Law Firms'

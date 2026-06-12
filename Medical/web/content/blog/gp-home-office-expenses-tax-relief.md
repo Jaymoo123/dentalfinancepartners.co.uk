@@ -3,6 +3,7 @@ title: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professio
 slug: "gp-home-office-expenses-tax-relief"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-home-office-expenses-tax-relief"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Home Office Tax Relief 2026/27 | Use of Home, What You Can Claim"

@@ -3,6 +3,7 @@ title: What Do Accountants for Dental Practices Actually Do?
 slug: accountants-for-dental-practices
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountants-for-dental-practices
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: 'Accountants for Dental Practices: What You Need to Know'

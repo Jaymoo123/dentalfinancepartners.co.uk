@@ -3,6 +3,7 @@ title: "How Much Does a Fixed Fee Accountant in the UK Cost in 2025/26?"
 slug: "fixed-fee-accountant-uk-cost-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-accountant-uk-cost-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Fixed Fee Accountant UK Costs 2025/26: What You'll Actually"

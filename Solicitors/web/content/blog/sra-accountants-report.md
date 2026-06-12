@@ -3,6 +3,7 @@ title: "SRA Accountants Report: Essential Guide for Law Firms"
 slug: "sra-accountants-report"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accountants-report"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "SRA Accountants Report: Requirements & Deadlines 2026"

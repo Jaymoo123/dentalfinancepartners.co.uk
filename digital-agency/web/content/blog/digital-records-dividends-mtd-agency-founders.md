@@ -3,6 +3,7 @@ title: 'Digital Records for Dividends Under MTD: What Agency Founders Must Track
 slug: digital-records-dividends-mtd-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/digital-records-dividends-mtd-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD Digital Records for Dividends: Agency Founder Guide'

@@ -3,6 +3,7 @@ title: 'Capital Allowances on Second Hand Vans for UK Dentists: What You Can Cla
 slug: capital-allowances-second-hand-vans
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/capital-allowances-second-hand-vans
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: Capital Allowances on Second Hand Vans for UK Dentists

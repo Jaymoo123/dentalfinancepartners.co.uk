@@ -2,6 +2,7 @@
 title: "Dental Practice Overhead Costs: Management & Control Strategies"
 slug: "dental-practice-overhead-costs-management-control"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

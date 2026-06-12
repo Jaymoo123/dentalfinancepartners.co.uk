@@ -3,6 +3,7 @@ title: How Do Law Firms Handle Post-Merger Integration for SRA Compliance and Fi
 slug: post-merger-integration-finance-sra
 canonical: https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/post-merger-integration-finance-sra
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Accounts for Lawyers Editorial Team
 category: Compliance & Risk (COLP / COFA)
 metaTitle: 'Law Firm Post-Merger Integration: SRA and Finance Steps'

@@ -3,6 +3,7 @@ title: 'Custom Software vs Off-the-Shelf: The R&D Line for Agencies'
 slug: custom-software-vs-off-the-shelf-rd-line-for-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/custom-software-vs-off-the-shelf-rd-line-for-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Custom Software R&D Qualifying Agency: The Line for UK'

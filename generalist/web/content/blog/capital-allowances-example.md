@@ -3,6 +3,7 @@ title: 'Capital Allowances Example: How UK Businesses Claim Tax Relief on Assets
 slug: capital-allowances-example
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowances-example
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Capital Allowances Example: Tax Relief on Business Assets'

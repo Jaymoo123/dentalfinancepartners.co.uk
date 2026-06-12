@@ -3,6 +3,7 @@ title: "Asset Sale vs Share Sale for a UK Law Firm: Who Can Do Which, and the Ta
 slug: "asset-sale-vs-share-sale-uk-law-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/asset-sale-vs-share-sale-uk-law-firm"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "Asset Sale vs Share Sale: UK Law Firm Seller CGT and BADR Guide"

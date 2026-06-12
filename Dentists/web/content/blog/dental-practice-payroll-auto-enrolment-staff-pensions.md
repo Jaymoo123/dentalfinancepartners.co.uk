@@ -3,6 +3,7 @@ title: "Payroll and Auto-Enrolment for Dental Practice Staff: Getting Workplace 
 slug: "dental-practice-payroll-auto-enrolment-staff-pensions"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-payroll-auto-enrolment-staff-pensions"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Accounting"
 metaTitle: "Dental Practice Payroll and Auto-Enrolment Guide"

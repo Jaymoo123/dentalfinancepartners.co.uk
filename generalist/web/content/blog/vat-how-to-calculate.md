@@ -3,6 +3,7 @@ title: 'How to Calculate VAT in the UK: A Practical Guide for Business Owners'
 slug: vat-how-to-calculate
 canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-how-to-calculate
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: VAT and Making Tax Digital
 metaTitle: 'VAT How to Calculate: UK Rates, Formulas & Examples'

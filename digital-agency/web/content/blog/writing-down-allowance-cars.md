@@ -3,6 +3,7 @@ title: 'Writing Down Allowance for Cars: A Guide for UK Agency Founders'
 slug: writing-down-allowance-cars
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/writing-down-allowance-cars
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Writing Down Allowance Cars: UK Agency Founder Tax Guide'

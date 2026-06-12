@@ -3,6 +3,7 @@ title: 'The R&D Intensive SME Test: When Agencies Get the Enhanced 27% Rate'
 slug: r-and-d-intensive-sme-test-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/r-and-d-intensive-sme-test-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Intensive SME Test: Enhanced 27% Rate for Agencies'

@@ -3,6 +3,7 @@ title: "Dentist Pension Contributions: Tax Relief & Annual Allowance Guide"
 slug: "dentist-pension-contributions-tax-relief-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-pension-contributions-tax-relief-uk"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

@@ -3,6 +3,7 @@ title: "How Do Tax and SRA Rules Work When Merging Two UK Law Firms?"
 slug: "merging-two-uk-law-firms-tax-and-sra"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/merging-two-uk-law-firms-tax-and-sra"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "Merging Two UK Law Firms: Tax, SRA and Goodwill"

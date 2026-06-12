@@ -3,6 +3,7 @@ title: How to Value a Creative Agency Based on Recurring Retainer Revenue
 slug: value-creative-agency-revenue-retainers
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/value-creative-agency-revenue-retainers
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Value Creative Agency Retainer Revenue: Exit Guide'

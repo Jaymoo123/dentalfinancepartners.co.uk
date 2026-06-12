@@ -3,6 +3,7 @@ title: "Fixed Fee vs Hourly Billing for Law Firms: Which Model Suits Your Practi
 slug: "fixed-fee-vs-hourly-billing-law-firms-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-accounting/fixed-fee-vs-hourly-billing-law-firms-tax"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
 metaTitle: "Fixed Fee vs Hourly Billing for Law Firms: Tax & Cashflow Guide"

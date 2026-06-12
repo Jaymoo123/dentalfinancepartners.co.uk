@@ -3,6 +3,7 @@ title: "Dental Accountant Manchester: Why Specialist Knowledge Matters"
 slug: "dental-accountant-manchester-specialist-knowledge"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-manchester-specialist-knowledge"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

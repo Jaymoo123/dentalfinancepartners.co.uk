@@ -3,6 +3,7 @@ title: "Can a Director Pay Themselves a Bonus Instead of a Dividend to Avoid Div
 slug: "bonus-vs-dividend-director-tax"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/bonus-vs-dividend-director-tax"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Bonus vs Dividend Director Tax: Which Saves You More"

@@ -3,6 +3,7 @@ title: How to Determine IR35 Status for a Contractor Who Works Through Your Agen
 slug: determine-ir35-status-contractor-limited-company-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/determine-ir35-status-contractor-limited-company-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'IR35 for Agency Founders: Determine Contractor Status'

@@ -3,6 +3,7 @@ title: 'Selling Your Agency: What Happens to Retainer Contracts and the Tax Trea
 slug: selling-your-agency-retainer-contracts-tax-treatment
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-your-agency-retainer-contracts-tax-treatment
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Selling your agency tax guide: retainer contracts and CGT'

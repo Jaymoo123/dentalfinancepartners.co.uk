@@ -3,6 +3,7 @@ title: What Happens If My Self Assessment Tax Bill Is Over £100,000 And I Need 
 slug: self-assessment-payments-on-account-over-100000
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-payments-on-account-over-100000
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Self Assessment Payments on Account Over £100,000 UK

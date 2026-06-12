@@ -3,6 +3,7 @@ title: Does My Dubai Free Zone Agency Need to File a UAE Corporate Tax Return If
 slug: dubai-free-zone-agency-uae-corporate-tax-return-loss
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-agency-uae-corporate-tax-return-loss
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Loss-Making Dubai Free Zone Agency: Tax Return Rules'

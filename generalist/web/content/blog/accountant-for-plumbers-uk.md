@@ -3,6 +3,7 @@ title: What Does an Accountant for Plumbers Actually Do? (UK Tax Guide 2025/26)
 slug: accountant-for-plumbers-uk
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Accountant for Plumbers UK: CIS, VAT and Tax Support'

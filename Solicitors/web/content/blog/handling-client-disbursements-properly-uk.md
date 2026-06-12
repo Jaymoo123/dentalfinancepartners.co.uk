@@ -3,6 +3,7 @@ title: How Should a Solicitor Handle Client Disbursements on the Client Account?
 slug: handling-client-disbursements-properly-uk
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/handling-client-disbursements-properly-uk
 date: '2026-05-18'
+generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: SRA Accounts Rules
 metaTitle: 'Client Disbursements: SRA Client Account and VAT Rules'

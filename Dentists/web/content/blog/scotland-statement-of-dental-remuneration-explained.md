@@ -3,6 +3,7 @@ title: How Does the Statement of Dental Remuneration (SDR) Work for NHS Dental i
 slug: scotland-statement-of-dental-remuneration-explained
 canonical: https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/scotland-statement-of-dental-remuneration-explained
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

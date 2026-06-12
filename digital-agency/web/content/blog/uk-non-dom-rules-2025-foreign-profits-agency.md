@@ -3,6 +3,7 @@ title: 'Non-Dom Rules 2025: The 4-Year Window That Could Save Your Agency''s For
 slug: uk-non-dom-rules-2025-foreign-profits-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-non-dom-rules-2025-foreign-profits-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Non-Dom Rules 2025: Save Agency Foreign Profits from UK Tax'

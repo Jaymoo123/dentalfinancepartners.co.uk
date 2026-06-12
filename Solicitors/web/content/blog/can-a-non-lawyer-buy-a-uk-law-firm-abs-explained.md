@@ -3,6 +3,7 @@ title: "Can a Non-Lawyer Buy a UK Law Firm? ABS Rules Explained 2025/26"
 slug: "can-a-non-lawyer-buy-a-uk-law-firm-abs-explained"
 canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-merger/can-a-non-lawyer-buy-a-uk-law-firm-abs-explained"
 date: "2026-05-19"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Firm Acquisition & Merger"
 metaTitle: "Can a Non-Lawyer Buy a UK Law Firm? ABS Rules 2025/26"

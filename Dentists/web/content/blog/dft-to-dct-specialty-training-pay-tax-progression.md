@@ -3,6 +3,7 @@ title: 'DFT to DCT and Specialty Training: How a Dentist''s Pay and Tax Position
 slug: dft-to-dct-specialty-training-pay-tax-progression
 canonical: https://www.dentalfinancepartners.co.uk/blog/locum-tax/dft-to-dct-specialty-training-pay-tax-progression
 date: '2026-06-04'
+generator: opus-4.8/netnew-wave
 author: Dental Finance Partners Editorial Team
 category: Locum Tax
 metaTitle: 'DFT to DCT and Specialty Training: Pay and Tax Map'

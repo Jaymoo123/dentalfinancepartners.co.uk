@@ -3,6 +3,7 @@ title: What Is the Cost of Living in Dubai for a Single Agency Founder Versus a 
 slug: cost-of-living-dubai-agency-founder-family
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/cost-of-living-dubai-agency-founder-family
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Cost of Living Dubai Agency Founder Family: Real Budget 2025'

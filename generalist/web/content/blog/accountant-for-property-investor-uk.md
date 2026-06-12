@@ -3,6 +3,7 @@ title: "What Does an Accountant for Property Investor UK Do That a General Accou
 slug: "accountant-for-property-investor-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-property-investor-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Property Investor UK: What They Do"

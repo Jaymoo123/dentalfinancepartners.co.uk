@@ -3,6 +3,7 @@ title: "What Are Company Secretarial Services UK and Does Your Business Need The
 slug: "company-secretarial-services-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/company-secretarial-services-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Company Secretarial Services UK: What You Need to Know"

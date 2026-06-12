@@ -3,6 +3,7 @@ title: 'Accountants for Dentists: Specialist Dental Accountants UK'
 slug: accountants-for-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/accountants-for-dentists
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: Accountants for Dentists | Specialist Dental Accountants UK

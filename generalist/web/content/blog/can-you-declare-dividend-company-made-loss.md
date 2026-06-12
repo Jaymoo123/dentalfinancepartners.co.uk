@@ -3,6 +3,7 @@ title: "Can You Declare a Dividend When the Company Has Made a Loss?"
 slug: "can-you-declare-dividend-company-made-loss"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/can-you-declare-dividend-company-made-loss"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Dividend declared from loss: is it legal? UK company rules"

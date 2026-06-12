@@ -3,6 +3,7 @@ title: "Salary vs Associate Fees: Which UK Dentist Tax Structure Works Best for 
 slug: "salary-vs-associate-fees-which-uk-dentist-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/salary-vs-associate-fees-which-uk-dentist-tax"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

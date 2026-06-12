@@ -3,6 +3,7 @@ title: "Annual Investment Allowance Explained: How UK Businesses Claim 100% Tax 
 slug: "annual-investment-allowance-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance-explained"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Annual Investment Allowance Explained: 100% Tax Relief"

@@ -3,6 +3,7 @@ title: How Do the New HMRC CGT Reporting Requirements for 2026 Affect Your Prope
 slug: hmrc-cgt-reporting-requirements-2026
 canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/hmrc-cgt-reporting-requirements-2026
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'HMRC CGT Reporting Requirements 2026: The 30-Day Rule'

@@ -3,6 +3,7 @@ title: Why Construction Subcontractors Need a Specialist Accountant for CIS
 slug: accountant-for-construction-subcontractors-cis
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
 metaTitle: CIS Accountant for Construction Subcontractors in the UK

@@ -3,6 +3,7 @@ title: "How Is Goodwill Taxed When a Law Firm Is Sold? A Solicitor's Guide to Ca
 slug: "goodwill-tax-treatment-law-firm-sale"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/goodwill-tax-treatment-law-firm-sale"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "Goodwill tax on a law firm sale: BADR rate, s.162, CGT"

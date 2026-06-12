@@ -3,6 +3,7 @@ title: What Happens to Costs Incurred Before Your Company Existed? Pre-Incorpora
 slug: pre-incorporation-expenses-accountant-for-startup
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/pre-incorporation-expenses-accountant-for-startup
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Pre-Incorporation Expenses: Claiming Costs After You Form'

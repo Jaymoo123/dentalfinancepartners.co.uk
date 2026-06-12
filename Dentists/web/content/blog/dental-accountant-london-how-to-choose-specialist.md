@@ -3,6 +3,7 @@ title: 'How to Choose a Dental Accountant in London: A Specialist Guide'
 slug: dental-accountant-london-how-to-choose-specialist
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist
 date: '2026-03-28'
+generator: claude/legacy-supabase
 author: Dental Finance Partners Editorial Team
 category: Practice accounting
 metaTitle: 'Dental Accountant London: How to Choose a Specialist'

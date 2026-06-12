@@ -3,6 +3,7 @@ title: What Happens If a Dubai-Based Agency Founder Returns to the UK Within Fiv
 slug: temporary-non-residence-rule-five-years-uk-dubai-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/temporary-non-residence-rule-five-years-uk-dubai-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Temporary Non Residence Rule Five Years: UK Agency Founder'

@@ -3,6 +3,7 @@ title: "How Do You Manage a UDA Shortfall Before the End of the Financial Year?"
 slug: "managing-uda-shortfall-end-of-financial-year"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/managing-uda-shortfall-end-of-financial-year"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

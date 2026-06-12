@@ -3,6 +3,7 @@ title: 'CQC Inspection Costs: Can UK Dentists Claim Them as Tax-Deductible Expen
 slug: cqc-inspection-costs-tax-deductible-expenses-uk-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/cqc-inspection-costs-tax-deductible-expenses-uk-dentists
 date: '2026-03-28'
+generator: claude/legacy-supabase
 author: Dental Finance Partners Editorial Team
 category: VAT & compliance
 metaTitle: 'CQC Inspection Costs: Tax Deductible for Dentists?'

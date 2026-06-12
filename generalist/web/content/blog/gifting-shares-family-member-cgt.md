@@ -3,6 +3,7 @@ title: 'Gifting Shares to a Family Member Before Selling Your Company: What Happ
 slug: gifting-shares-family-member-cgt
 canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gifting-shares-family-member-cgt
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'Gifting Shares to a Spouse or Child: CGT and Holdover'

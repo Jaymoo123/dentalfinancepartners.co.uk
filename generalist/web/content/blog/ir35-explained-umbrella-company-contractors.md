@@ -3,6 +3,7 @@ title: "IR35 Explained For Contractors Working Through an Umbrella Company"
 slug: "ir35-explained-umbrella-company-contractors"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/ir35-explained-umbrella-company-contractors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "IR35 Explained for Umbrella Company Contractors | UK Tax"

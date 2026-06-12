@@ -3,6 +3,7 @@ title: "Can You Claim R&D Tax Credits When Your Project Failed Commercially?"
 slug: "can-you-claim-r-and-d-tax-credits-failed-project"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/can-you-claim-r-and-d-tax-credits-failed-project"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits For Failed Projects: How To Claim"

@@ -2,6 +2,7 @@
 title: "GP Accountant Services: Complete Guide for Medical Professionals"
 slug: "gp-accountant-services-complete-guide"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Services: The Complete Guide (2026/27) | Medical Accountants UK"

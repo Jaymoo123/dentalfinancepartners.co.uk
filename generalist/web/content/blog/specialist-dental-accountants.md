@@ -3,6 +3,7 @@ title: Why UK Dentists Need Specialist Dental Accountants
 slug: specialist-dental-accountants
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/specialist-dental-accountants
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: 'Specialist Dental Accountants for UK Dentists: Why It'

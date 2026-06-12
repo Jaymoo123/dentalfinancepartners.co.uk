@@ -3,6 +3,7 @@ title: "Do I Need a BADR Accountant to Sell My Business at 14% CGT?"
 slug: "badr-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-accountant"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR Accountant: Save 14% CGT on Your Business Sale"

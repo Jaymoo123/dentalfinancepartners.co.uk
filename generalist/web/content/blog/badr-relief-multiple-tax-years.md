@@ -3,6 +3,7 @@ title: "How to Calculate BADR Relief When You Sell Shares Over Multiple Tax Year
 slug: "badr-relief-multiple-tax-years"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-relief-multiple-tax-years"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR Relief Multiple Tax Years: How to Calculate It"

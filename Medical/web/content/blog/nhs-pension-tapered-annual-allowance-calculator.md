@@ -3,6 +3,7 @@ title: 'NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK D
 slug: nhs-pension-tapered-annual-allowance-calculator
 canonical: https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-tapered-annual-allowance-calculator
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
 category: NHS Pension Planning
 metaTitle: 'NHS Tapered Annual Allowance: How to Calculate Yours'

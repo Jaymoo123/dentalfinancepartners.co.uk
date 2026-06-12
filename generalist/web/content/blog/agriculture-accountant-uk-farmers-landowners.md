@@ -3,6 +3,7 @@ title: "What Does an Agriculture Accountant Do for UK Farmers and Landowners?"
 slug: "agriculture-accountant-uk-farmers-landowners"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/agriculture-accountant-uk-farmers-landowners"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Agriculture Accountant UK: Tax Planning for Farmers"

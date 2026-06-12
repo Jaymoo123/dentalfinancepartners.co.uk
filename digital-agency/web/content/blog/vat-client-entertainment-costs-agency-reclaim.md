@@ -3,6 +3,7 @@ title: How to Reclaim VAT on Client Entertainment Costs for Your Agency Without 
 slug: vat-client-entertainment-costs-agency-reclaim
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-client-entertainment-costs-agency-reclaim
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'VAT on client entertainment costs: reclaim rules'

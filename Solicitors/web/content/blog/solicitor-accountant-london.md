@@ -2,6 +2,7 @@
 title: "Finding the Right Solicitor Accountant in London: A Guide for Law Firms"
 slug: "solicitor-accountant-london"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Solicitor Accountant London | Accounts for Lawyers"

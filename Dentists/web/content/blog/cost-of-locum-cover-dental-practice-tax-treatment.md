@@ -3,6 +3,7 @@ title: "The Cost of Locum Cover for a Dental Practice: Budgeting It and the Tax 
 slug: "cost-of-locum-cover-dental-practice-tax-treatment"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/cost-of-locum-cover-dental-practice-tax-treatment"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Cost of Locum Cover for a Dental Practice: The Tax"

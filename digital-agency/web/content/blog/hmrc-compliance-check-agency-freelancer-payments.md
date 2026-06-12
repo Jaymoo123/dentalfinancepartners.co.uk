@@ -3,6 +3,7 @@ title: 'HMRC Compliance Check on Agency Freelancer Payments: What to Do Now'
 slug: hmrc-compliance-check-agency-freelancer-payments
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/hmrc-compliance-check-agency-freelancer-payments
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'HMRC Compliance Check on Freelancer Payments: Agency Guide'

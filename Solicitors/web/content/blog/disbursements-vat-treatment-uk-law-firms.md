@@ -2,6 +2,7 @@
 title: 'Disbursements and VAT: the Eight Conditions Every UK Law Firm Must Pass'
 slug: disbursements-vat-treatment-uk-law-firms
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: VAT & Compliance
 metaTitle: 'VAT on Disbursements: the Eight HMRC Conditions Test'

@@ -3,6 +3,7 @@ title: "Private Practice Tax: Managing NHS and Private Income"
 slug: "private-practice-tax-nhs-and-private-income"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/private-practice-tax-nhs-and-private-income"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Private Practice"
 metaTitle: "NHS Salary Plus Private Practice Income: Tax Guide 2026/27"

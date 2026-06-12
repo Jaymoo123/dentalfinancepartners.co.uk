@@ -3,6 +3,7 @@ title: "Service Company Structure for Law Firms: Tax and VAT"
 slug: "service-company-structure-for-law-firms-tax-vat"
 canonical: "https://www.accountsforlawyers.co.uk/blog/structure-incorporation/service-company-structure-for-law-firms-tax-vat"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "Service Company for Law Firms: Tax and VAT Explained"

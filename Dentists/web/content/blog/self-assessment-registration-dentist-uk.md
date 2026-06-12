@@ -3,6 +3,7 @@ title: Do I Need to Register for Self Assessment as a Dentist?
 slug: self-assessment-registration-dentist-uk
 canonical: https://www.dentalfinancepartners.co.uk/blog/associate-tax/self-assessment-registration-dentist-uk
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

@@ -3,6 +3,7 @@ title: "Enhanced Services Income for GP Practices: DES, LES and the Tax"
 slug: "enhanced-services-gp-practice-income-tax"
 canonical: "https://www.medicalaccounts.co.uk/blog/enhanced-services-gp-practice-income-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Enhanced Services Income for GPs: DES, LES & the Tax"

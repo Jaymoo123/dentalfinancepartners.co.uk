@@ -3,6 +3,7 @@ title: How to Build an Agency Financial Model from Scratch in Excel for Raising 
 slug: build-agency-financial-model-excel-investors
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/build-agency-financial-model-excel-investors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: Build an Agency Financial Model in Excel for Investors

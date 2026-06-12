@@ -3,6 +3,7 @@ title: What Happens If a Director Takes a Dividend Before the Board Meeting Minu
 slug: dividend-before-board-meeting-minutes-signed
 canonical: https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/dividend-before-board-meeting-minutes-signed
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Director Pay and Dividends
 metaTitle: Taking a Dividend Before the Board Minutes Are Signed

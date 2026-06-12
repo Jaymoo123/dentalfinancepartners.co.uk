@@ -3,6 +3,7 @@ title: 'UK Capital Gains Tax Leaving UK: The Exit Charge That Applies to Your Ag
 slug: uk-capital-gains-tax-leaving-uk-exit-charge-options
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-leaving-uk-exit-charge-options
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK CGT exit charge: your agency share options when leaving'

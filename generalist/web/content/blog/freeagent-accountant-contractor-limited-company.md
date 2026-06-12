@@ -3,6 +3,7 @@ title: "Why Use a FreeAgent Accountant for Your Contractor Limited Company?"
 slug: "freeagent-accountant-contractor-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/freeagent-accountant-contractor-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "FreeAgent Accountant for Contractors | UK Business"

@@ -3,6 +3,7 @@ title: "What Counts as Client Money for UK Solicitors? The SRA Definition Explai
 slug: "what-counts-as-client-money-uk-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/what-counts-as-client-money-uk-solicitors"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "What Counts as Client Money? The SRA Rule 2.1 Definition for Solicitors"

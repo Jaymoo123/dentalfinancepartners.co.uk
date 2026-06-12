@@ -2,6 +2,7 @@
 title: 'Dental Practice Software & Accounting: Systems Integration Guide'
 slug: dental-practice-software-accounting-integration
 date: '2026-03-31'
+generator: claude/legacy-supabase
 author: Dental Finance Partners Editorial Team
 category: Practice accounting
 metaTitle: 'Accounting Software for Dental Clinics: Link to Xero'

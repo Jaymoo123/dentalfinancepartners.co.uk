@@ -3,6 +3,7 @@ title: "Top-Up PII: When Is It Needed for a UK Solicitor or Law Firm?"
 slug: "top-up-pii-when-is-it-needed-uk-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/top-up-pii-when-is-it-needed-uk-solicitors"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
 metaTitle: "Top-Up PII for UK Solicitors: When Excess Layer Cover Is Needed"

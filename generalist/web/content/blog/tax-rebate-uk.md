@@ -3,6 +3,7 @@ title: 'How to Claim a Tax Rebate in the UK: What You''re Owed'
 slug: tax-rebate-uk
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/tax-rebate-uk
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Tax Rebate UK: Claim What You''re Owed in 2025/26'

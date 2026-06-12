@@ -3,6 +3,7 @@ title: How Do Dentists Use a VAT Tax Calculator for Their Practice?
 slug: vat-tax-calculator
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/vat-tax-calculator
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: VAT & Compliance
 metaTitle: 'VAT Tax Calculator for Dentists: How It Works'

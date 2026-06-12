@@ -3,6 +3,7 @@ title: 'Full Expensing Capital Allowances: A Guide for UK Agency Founders'
 slug: full-expensing-capital-allowances-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/full-expensing-capital-allowances-agencies
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Full Expensing Capital Allowances: Agency Founder Guide'

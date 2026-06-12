@@ -3,6 +3,7 @@ title: "Do I Need a Specialist Accountant for Medical Professionals? (2025/26 Gu
 slug: "accountant-for-medical-professionals"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-medical-professionals"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Medical Professionals UK | Holloway Davies"

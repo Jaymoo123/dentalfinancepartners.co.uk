@@ -3,6 +3,7 @@ title: How to Migrate Your Agency's Historical Data from Spreadsheets to MTD-Com
 slug: migrate-agency-data-spreadsheets-mtd-software
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/migrate-agency-data-spreadsheets-mtd-software
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'Migrate Agency Data to MTD Software Without Errors: Founder'

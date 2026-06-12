@@ -3,6 +3,7 @@ title: "Employing Your Spouse in the Dental Practice: the Market-Rate Rule and t
 slug: "employing-spouse-dental-practice-market-rate-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/employing-spouse-dental-practice-market-rate-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Employing Your Spouse in a Dental Company: Tax Rules"

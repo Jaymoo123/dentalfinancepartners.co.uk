@@ -3,6 +3,7 @@ title: "What Does a Sole Trader Accountant Do Differently When You Use Cash Acco
 slug: "sole-trader-accountant-cash-accounting"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/sole-trader-accountant-cash-accounting"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Sole Trader Accountant for Cash Accounting: Key Differences"

@@ -3,6 +3,7 @@ title: "How to Value a UK Law Firm in 2026: A Practical Guide for Solicitors"
 slug: "how-to-value-a-uk-law-firm-2026"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/how-to-value-a-uk-law-firm-2026"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "How to Value a UK Law Firm in 2026 | Solicitor Valuation Guide"

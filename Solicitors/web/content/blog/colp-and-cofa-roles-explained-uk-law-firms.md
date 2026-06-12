@@ -3,6 +3,7 @@ title: 'COLP and COFA Roles Explained: A UK Solicitor''s Guide to Both Complianc
 slug: colp-and-cofa-roles-explained-uk-law-firms
 canonical: https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/colp-and-cofa-roles-explained-uk-law-firms
 date: '2026-05-18'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Compliance & Risk (COLP / COFA)
 metaTitle: COLP and COFA Roles Explained for UK Law Firm Partners

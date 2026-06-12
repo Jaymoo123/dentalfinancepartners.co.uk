@@ -3,6 +3,7 @@ title: How Does the Merged R&D Scheme Affect UK Agencies Post-April 2023?
 slug: merged-r-and-d-scheme-agency-2023
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/merged-r-and-d-scheme-agency-2023
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Merged R&D Scheme: What UK Agency Founders Must Know'

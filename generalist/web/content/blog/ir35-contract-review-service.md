@@ -3,6 +3,7 @@ title: "Does Your Contract Need an IR35 Contract Review Service? Here's When to 
 slug: "ir35-contract-review-service"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/ir35-contract-review-service"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "IR35 Contract Review Service | Holloway Davies"

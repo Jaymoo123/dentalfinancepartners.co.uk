@@ -3,6 +3,7 @@ title: How Switching to Retainer Revenue Transforms Agency Cash Flow (And When t
 slug: retainer-revenue-agency-cash-flow-switch
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/retainer-revenue-agency-cash-flow-switch
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Retainer Revenue for Agency Cash Flow: A Practical Guide'

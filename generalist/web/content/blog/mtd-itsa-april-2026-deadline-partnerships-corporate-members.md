@@ -3,6 +3,7 @@ title: "MTD ITSA April 2026 Deadline: What Partnerships With Corporate Members M
 slug: "mtd-itsa-april-2026-deadline-partnerships-corporate-members"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline-partnerships-corporate-members"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "MTD ITSA April 2026 Deadline: Partnerships With Corporate"

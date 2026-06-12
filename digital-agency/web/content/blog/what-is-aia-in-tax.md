@@ -3,6 +3,7 @@ title: What Is AIA in Tax? A Guide for UK Agency Founders
 slug: what-is-aia-in-tax
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/what-is-aia-in-tax
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: What Is AIA in Tax? Annual Investment Allowance Guide

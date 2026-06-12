@@ -3,6 +3,7 @@ title: How To Switch From Sole Trader To Limited Company in 2025/26
 slug: how-to-switch-from-sole-trader-to-limited-company
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Sole Trader to Limited Company: How to Switch in 2025/26'

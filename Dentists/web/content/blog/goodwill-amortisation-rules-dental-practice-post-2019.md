@@ -3,6 +3,7 @@ title: "How Does Goodwill Amortisation Work for a Dental Practice Acquired After
 slug: "goodwill-amortisation-rules-dental-practice-post-2019"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/goodwill-amortisation-rules-dental-practice-post-2019"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Dental Goodwill Amortisation Rules Post-2019 | Tax Relief Rate"

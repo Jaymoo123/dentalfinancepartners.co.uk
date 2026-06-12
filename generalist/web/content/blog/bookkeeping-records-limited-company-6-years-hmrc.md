@@ -3,6 +3,7 @@ title: "What Bookkeeping Records Must a Limited Company Keep for HMRC for 6 Year
 slug: "bookkeeping-records-limited-company-6-years-hmrc"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/bookkeeping-records-limited-company-6-years-hmrc"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Bookkeeping Records: Limited Company 6 Year HMRC Rule"

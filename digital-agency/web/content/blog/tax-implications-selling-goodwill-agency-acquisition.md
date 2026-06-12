@@ -3,6 +3,7 @@ title: What Are the Tax Implications of Selling Goodwill in an Agency Acquisitio
 slug: tax-implications-selling-goodwill-agency-acquisition
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/tax-implications-selling-goodwill-agency-acquisition
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: Tax Implications Selling Goodwill in an Agency Acquisition

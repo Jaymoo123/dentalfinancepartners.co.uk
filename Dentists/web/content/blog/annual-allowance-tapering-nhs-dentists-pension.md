@@ -3,6 +3,7 @@ title: "How Does the Annual Allowance Taper Affect NHS Dentists' Pension Growth?
 slug: "annual-allowance-tapering-nhs-dentists-pension"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/annual-allowance-tapering-nhs-dentists-pension"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

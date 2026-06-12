@@ -3,6 +3,7 @@ title: "How Should a Locum Dentist Pay Themselves from a Limited Company in 2025
 slug: "paying-yourself-from-locum-ltd-company-2025-26"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/locum-tax/paying-yourself-from-locum-ltd-company-2025-26"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Dentist Ltd Company: Salary vs Dividend in 2025/26"

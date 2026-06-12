@@ -3,6 +3,7 @@ title: How Should Your Agency Account for Retainer Prepayments Under UK GAAP?
 slug: retainer-prepayment-accounting-uk-gaap-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/retainer-prepayment-accounting-uk-gaap-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Retainer Prepayment Accounting UK GAAP for Agencies | Guide

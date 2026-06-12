@@ -3,6 +3,7 @@ title: "Can You Claim a Corporation Tax Refund After Your Company Has Closed?"
 slug: "corporation-tax-refund-closed-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-refund-closed-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax Refund Closed Company: Can You Still Claim?"

@@ -3,6 +3,7 @@ title: "Law Firm Drawings vs Profit: Why UK Partners Are Taxed on Their Profit S
 slug: "law-firm-drawings-vs-profit"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-drawings-vs-profit"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Drawings vs Profit Share: Law Firm Partner Tax 2025/26"

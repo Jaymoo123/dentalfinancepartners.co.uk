@@ -3,6 +3,7 @@ title: "Taking Your NHS Pension Early as a Dentist: The Actuarial Reduction and 
 slug: "taking-nhs-pension-early-dentists-tax-impact"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/taking-nhs-pension-early-dentists-tax-impact"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "Taking Your NHS Pension Early: A Dentist's Tax Guide"

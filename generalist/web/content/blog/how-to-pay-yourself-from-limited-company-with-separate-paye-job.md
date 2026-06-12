@@ -3,6 +3,7 @@ title: How to Pay Yourself From a Limited Company When You Have a Separate PAYE 
 slug: how-to-pay-yourself-from-limited-company-with-separate-paye-job
 canonical: https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Director Pay and Dividends
 metaTitle: Pay Yourself From a Limited Company With a PAYE Job

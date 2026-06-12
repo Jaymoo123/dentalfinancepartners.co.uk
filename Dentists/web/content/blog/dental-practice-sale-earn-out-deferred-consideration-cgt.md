@@ -3,6 +3,7 @@ title: "Earn-Outs and Deferred Consideration on a Dental Practice Sale: How Capi
 slug: "dental-practice-sale-earn-out-deferred-consideration-cgt"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/dental-practice-sale-earn-out-deferred-consideration-cgt"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Earn-Outs & Deferred Pay: CGT on a Dental Sale"

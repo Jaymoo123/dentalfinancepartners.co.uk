@@ -3,6 +3,7 @@ title: "How Often Must a Solicitor Reconcile the Client Account? The Five-Week R
 slug: "sra-client-account-reconciliation-frequency"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/sra-client-account-reconciliation-frequency"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "SRA Client Account Reconciliation: The Five-Week Rule (Rule 8.3)"

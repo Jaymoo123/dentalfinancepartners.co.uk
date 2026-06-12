@@ -3,6 +3,7 @@ title: "The Optimal Salary and Dividend Split for a Dental Limited Company in 20
 slug: "dental-company-salary-dividend-split-2026-27"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-company-salary-dividend-split-2026-27"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Dental Company Salary & Dividend Split 2026/27"

@@ -3,6 +3,7 @@ title: How Corporation Tax Works When Your Company Has Multiple Shareholders
 slug: how-corporation-tax-works-multiple-shareholders
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/how-corporation-tax-works-multiple-shareholders
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Corporation Tax With Multiple Shareholders: How It Works'

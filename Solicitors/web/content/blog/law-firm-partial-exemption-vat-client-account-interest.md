@@ -3,6 +3,7 @@ title: "Partial Exemption and Client Account Interest: A VAT Risk for UK Law Fir
 slug: "law-firm-partial-exemption-vat-client-account-interest"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/law-firm-partial-exemption-vat-client-account-interest"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Law Firm Partial Exemption: Client Account Interest VAT"

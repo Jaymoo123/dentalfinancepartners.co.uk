@@ -3,6 +3,7 @@ title: "Payroll Services for Small Business: What You Need to Know"
 slug: "payroll-services-small-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-services-small-business"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Payroll Services for Small Business: UK Guide for Owners"

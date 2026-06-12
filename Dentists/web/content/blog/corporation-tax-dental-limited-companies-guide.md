@@ -3,6 +3,7 @@ title: "Corporation Tax for Dental Limited Companies: A Plain-English Guide"
 slug: "corporation-tax-dental-limited-companies-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/corporation-tax-dental-limited-companies-guide"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Corporation Tax for Dental Companies 2026/27 | UK"

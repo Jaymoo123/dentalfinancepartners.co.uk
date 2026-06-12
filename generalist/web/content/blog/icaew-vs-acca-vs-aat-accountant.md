@@ -3,6 +3,7 @@ title: 'ICAEW vs ACCA vs AAT: What Each UK Accountancy Qualification Means For Y
 slug: icaew-vs-acca-vs-aat-accountant
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/icaew-vs-acca-vs-aat-accountant
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'ICAEW vs ACCA vs AAT: The Difference for UK Businesses'

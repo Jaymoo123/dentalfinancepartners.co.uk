@@ -3,6 +3,7 @@ title: "What Is the Capital Gains Tax Rate on Real Estate Investment Property in
 slug: "capital-gains-tax-rate-real-estate-investment-property"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/capital-gains-tax-rate-real-estate-investment-property"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Capital Gains Tax Rate on Real Estate Investment Property"

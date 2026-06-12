@@ -3,6 +3,7 @@ title: 'Sole Trader Capital Allowances: A Complete Guide for UK Self-Employed'
 slug: sole-trader-capital-allowances
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/sole-trader-capital-allowances
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Sole Trader Capital Allowances: A Complete Guide for 2025/26'

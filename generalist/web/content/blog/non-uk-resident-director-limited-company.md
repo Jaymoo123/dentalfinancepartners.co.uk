@@ -3,6 +3,7 @@ title: "Can I Set Up a Limited Company as a Non-UK Resident Director Living Abro
 slug: "non-uk-resident-director-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/non-uk-resident-director-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Non-UK Resident Director: Can You Set Up a UK Limited"

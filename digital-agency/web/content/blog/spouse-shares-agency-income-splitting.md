@@ -3,6 +3,7 @@ title: Should Your Spouse or Partner Own Shares in Your Agency? A Guide to Incom
 slug: spouse-shares-agency-income-splitting
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/spouse-shares-agency-income-splitting
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Spouse Share Income Splitting: Agency Tax Guide'

@@ -3,6 +3,7 @@ title: 'Invoice Discounting for Agency Cash Flow: How to Bridge Gaps Without Deb
 slug: invoice-discounting-agency-cash-flow-bridge-gaps-without-debt
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/invoice-discounting-agency-cash-flow-bridge-gaps-without-debt
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Invoice Discounting for Agency Cash Flow: No Debt Required'

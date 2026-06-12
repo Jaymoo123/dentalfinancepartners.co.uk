@@ -3,6 +3,7 @@ title: "Checking Your GP Practice Income: PCSE Statements and Reconciliation"
 slug: "gp-practice-income-pcse-statement-reconciliation"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-practice-income-pcse-statement-reconciliation"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Reading and Reconciling Your GP Practice PCSE Statements"

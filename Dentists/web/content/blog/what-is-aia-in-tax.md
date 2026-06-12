@@ -3,6 +3,7 @@ title: What Is AIA in Tax? A Guide for UK Dentists
 slug: what-is-aia-in-tax
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/what-is-aia-in-tax
 date: '2026-05-19'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: What Is AIA in Tax? UK Dentist Guide to £1m Allowance

@@ -3,6 +3,7 @@ title: "What Does a UK Content Creator Need From an Accountant in 2025/26?"
 slug: "accountant-for-content-creators-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-content-creators-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Content Creators UK | Holloway Davies"

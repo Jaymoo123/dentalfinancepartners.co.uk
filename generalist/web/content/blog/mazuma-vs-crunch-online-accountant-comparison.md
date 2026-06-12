@@ -3,6 +3,7 @@ title: "Mazuma vs Crunch: Which Online Accountant Is Right for Your Small Busine
 slug: "mazuma-vs-crunch-online-accountant-comparison"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/mazuma-vs-crunch-online-accountant-comparison"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Mazuma vs Crunch: Online Accountant Comparison for Small UK"

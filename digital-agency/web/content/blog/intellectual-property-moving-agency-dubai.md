@@ -3,6 +3,7 @@ title: What Happens to My UK Agency's Intellectual Property If I Move the Busine
 slug: intellectual-property-moving-agency-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/intellectual-property-moving-agency-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Intellectual property moving agency to Dubai: what you must'

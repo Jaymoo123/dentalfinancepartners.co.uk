@@ -3,6 +3,7 @@ title: "Making Tax Digital Accountant Checklist For The April 2026 Go-live"
 slug: "making-tax-digital-accountant-checklist-april-2026"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/making-tax-digital-accountant-checklist-april-2026"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Making Tax Digital Accountant Checklist For April 2026"

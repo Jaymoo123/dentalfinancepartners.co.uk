@@ -2,6 +2,7 @@
 title: "LLP Conversion Tax: Complete Guide for UK Law Firms"
 slug: "llp-conversion-tax-guide-uk-law-firms"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "LLP Conversion Tax Guide | UK Law Firm Conversion Rules"

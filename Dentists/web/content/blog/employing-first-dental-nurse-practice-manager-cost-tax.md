@@ -3,6 +3,7 @@ title: "Employing Your First Dental Nurse or Practice Manager: The Cost, the Tax
 slug: "employing-first-dental-nurse-practice-manager-cost-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/employing-first-dental-nurse-practice-manager-cost-tax"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Employing Your First Dental Nurse: Cost and Tax"

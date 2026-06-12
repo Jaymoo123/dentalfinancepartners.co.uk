@@ -3,6 +3,7 @@ title: "How Should a COLP Maintain a Decision Log for SRA Compliance?"
 slug: "colp-decision-log-best-practice-uk-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/colp-decision-log-best-practice-uk-firms"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "COLP Decision Log: Best Practice for UK Solicitors | SRA Compliance"

@@ -2,6 +2,7 @@
 title: 'LEAP Accounting Integration: Complete Guide for UK Law Firms'
 slug: leap-accounting-integration-guide
 date: '2026-04-01'
+generator: claude/legacy-supabase
 author: Accounts for Lawyers Editorial Team
 category: Practice Finance & Cash Flow
 metaTitle: 'LEAP Accounting Integration: Sage and Xero Setup Guide'

@@ -3,6 +3,7 @@ title: "How Does VAT Apply to Private Dental Associates?"
 slug: "private-dental-associate-vat-considerations"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/private-dental-associate-vat-considerations"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "VAT for Private Dental Associates: Exempt Supply Rules (2025/26)"

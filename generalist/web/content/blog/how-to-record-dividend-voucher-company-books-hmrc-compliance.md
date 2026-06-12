@@ -3,6 +3,7 @@ title: "How to Record a Dividend Voucher in Your Company Books for HMRC Complian
 slug: "how-to-record-dividend-voucher-company-books-hmrc-compliance"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/how-to-record-dividend-voucher-company-books-hmrc-compliance"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Dividend Voucher Record Keeping: HMRC Compliance for UK Ltds"

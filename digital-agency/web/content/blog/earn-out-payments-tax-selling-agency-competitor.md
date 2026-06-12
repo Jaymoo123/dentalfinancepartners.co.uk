@@ -3,6 +3,7 @@ title: How Are Earn-Out Payments Taxed When You Sell Your Agency to a Competitor
 slug: earn-out-payments-tax-selling-agency-competitor
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-payments-tax-selling-agency-competitor
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Earn-Out Payments Tax When Selling Your Agency: UK Guide'

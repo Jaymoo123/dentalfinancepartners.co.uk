@@ -3,6 +3,7 @@ title: "Working Abroad as a UK Dentist: Tax Residence and the Income Tax Implica
 slug: "dentist-working-abroad-uk-tax-residence-implications"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-working-abroad-uk-tax-residence-implications"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "UK Dentist Working Abroad: Tax Residence Explained"

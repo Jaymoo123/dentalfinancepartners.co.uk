@@ -3,6 +3,7 @@ title: 'What to Do If Your Agency Misses an MTD Filing Deadline: Penalties, Appe
 slug: missed-mtd-filing-deadline-penalties-appeals-mitigation
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/missed-mtd-filing-deadline-penalties-appeals-mitigation
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: Missed an MTD Deadline? Penalties, Appeals, Next Steps

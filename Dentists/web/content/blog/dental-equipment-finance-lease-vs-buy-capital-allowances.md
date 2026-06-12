@@ -3,6 +3,7 @@ title: "Dental Equipment Finance and Tax: Lease vs Hire Purchase vs Outright Pur
 slug: "dental-equipment-finance-lease-vs-buy-capital-allowances"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/dental-equipment-finance-lease-vs-buy-capital-allowances"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Capital Allowances & Equipment"
 metaTitle: "Dental Equipment: Lease vs Hire Purchase vs Buy for Tax"

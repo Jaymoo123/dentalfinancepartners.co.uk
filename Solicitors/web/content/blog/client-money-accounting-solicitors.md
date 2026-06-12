@@ -2,6 +2,7 @@
 title: "Client Money Accounting for Solicitors: SRA Rules & Best Practice"
 slug: "client-money-accounting-solicitors"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Client Money Accounting for Solicitors | SRA Rules"

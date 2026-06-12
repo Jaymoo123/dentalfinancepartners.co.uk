@@ -3,6 +3,7 @@ title: "Why Do Ecommerce Sellers Need a Specialist Accountant?"
 slug: "accountant-for-ecommerce-sellers"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-ecommerce-sellers"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Ecommerce Sellers UK | Ecommerce Accounting"

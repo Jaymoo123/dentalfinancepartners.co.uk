@@ -3,6 +3,7 @@ title: "The McCloud Remedy Explained for Doctors: Your NHS Pension Choice at Ret
 slug: "mccloud-remedy-nhs-pension-doctors-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/mccloud-remedy-nhs-pension-doctors-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "NHS Pension Planning"
 metaTitle: "McCloud Remedy NHS Pension: A Doctor's Guide"

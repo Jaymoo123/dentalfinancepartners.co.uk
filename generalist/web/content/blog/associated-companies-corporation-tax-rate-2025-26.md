@@ -3,6 +3,7 @@ title: "How Does The Associated Companies Rule Affect My Corporation Tax Rate In
 slug: "associated-companies-corporation-tax-rate-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/associated-companies-corporation-tax-rate-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Associated Companies Corporation Tax Rate 2025/26: UK Guide"

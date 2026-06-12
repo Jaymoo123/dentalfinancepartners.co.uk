@@ -3,6 +3,7 @@ title: "Financing a Dental Practice Acquisition: Bank Loans, Terms and Tax"
 slug: "dental-practice-acquisition-bank-loan-financing-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-acquisition-bank-loan-financing-guide"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "Financing a Dental Practice Acquisition: Loans and Tax"

@@ -3,6 +3,7 @@ title: "What Happens To Your CGT Bill If You Gift Shares To A Family Member Befo
 slug: "gift-shares-family-member-cgt"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/gift-shares-family-member-cgt"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Gift shares family member CGT: holdover relief and the tax"

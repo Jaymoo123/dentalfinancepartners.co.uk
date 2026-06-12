@@ -3,6 +3,7 @@ title: 'Moving to Dubai with a UK Agency: The VAT Registration Headache of Dual 
 slug: moving-to-dubai-vat-dual-registration
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-vat-dual-registration
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Moving to Dubai VAT Dual Registration: What Agency Founders'

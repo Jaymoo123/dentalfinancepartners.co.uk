@@ -3,6 +3,7 @@ title: "NHS Pension Scheme Pays for Dentists: Settling an Annual Allowance Charg
 slug: "nhs-pension-scheme-pays-election-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/nhs-pension-scheme-pays-election-dentists"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "NHS Pension Scheme Pays for Dentists: How It Works"

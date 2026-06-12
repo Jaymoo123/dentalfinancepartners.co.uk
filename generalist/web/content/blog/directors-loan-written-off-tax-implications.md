@@ -3,6 +3,7 @@ title: "What Are The Tax Implications Of A Director's Loan Written Off By The Co
 slug: "directors-loan-written-off-tax-implications"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/directors-loan-written-off-tax-implications"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Director Loan Write Off Tax Implications: S455, BIK & CGT"

@@ -3,6 +3,7 @@ title: 'The PAYE-NI Cap on R&D Claims: When It Catches Agencies Out'
 slug: paye-ni-cap-rd-claim-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/paye-ni-cap-rd-claim-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'PAYE-NI Cap on R&D Claims: What Agency Founders Need to Know'

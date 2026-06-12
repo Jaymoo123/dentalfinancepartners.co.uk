@@ -3,6 +3,7 @@ title: 'UAE VAT Registration Threshold: The Supply of Services Trap That Catches
 slug: uae-vat-registration-threshold-single-client-trap
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-vat-registration-threshold-single-client-trap
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UAE VAT Registration Threshold: The Single Client Trap'

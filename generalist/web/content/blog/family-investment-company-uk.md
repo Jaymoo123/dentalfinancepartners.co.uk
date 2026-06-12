@@ -3,6 +3,7 @@ title: "Should You Set Up a Family Investment Company in the UK?"
 slug: "family-investment-company-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/family-investment-company-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Family Investment Company UK: How It Works & When It Fits"

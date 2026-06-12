@@ -3,6 +3,7 @@ title: "What Does a Director Payroll Service Cover for a UK Limited Company Dire
 slug: "what-does-a-director-payroll-service-cover"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/what-does-a-director-payroll-service-cover"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Director Payroll Service: What UK Ltd Directors Need to Know"

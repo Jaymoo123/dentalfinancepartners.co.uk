@@ -3,6 +3,7 @@ title: "Dispensing Practice Income, Accounts and Tax: A Guide for Dispensing GPs
 slug: "dispensing-practice-income-accounts-tax"
 canonical: "https://www.medicalaccounts.co.uk/blog/dispensing-practice-income-accounts-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Dispensing Practice Income, Accounts and Tax Explained"

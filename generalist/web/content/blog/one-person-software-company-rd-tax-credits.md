@@ -3,6 +3,7 @@ title: "Can a One-Person Software Company Claim R&D Tax Credits?"
 slug: "one-person-software-company-rd-tax-credits"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/one-person-software-company-rd-tax-credits"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits Explained for Solo Software Developers"

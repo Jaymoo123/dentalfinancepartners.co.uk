@@ -3,6 +3,7 @@ title: "How to Read a Dental Practice Profit and Loss Account: A UK Dentist's Gu
 slug: "reading-dental-practice-profit-loss-account-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/reading-dental-practice-profit-loss-account-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

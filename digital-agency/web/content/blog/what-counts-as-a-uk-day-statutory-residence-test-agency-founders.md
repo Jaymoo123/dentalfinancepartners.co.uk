@@ -3,6 +3,7 @@ title: What Counts as a UK Day Under the Statutory Residence Test for Agency Fou
 slug: what-counts-as-a-uk-day-statutory-residence-test-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: What Counts as a UK Day? The Statutory Residence Test

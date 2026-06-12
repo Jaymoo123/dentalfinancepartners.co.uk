@@ -3,6 +3,7 @@ title: "How Should a Solicitor Handle Client Account Money During a Residential 
 slug: "client-account-handling-residential-conveyancing"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/client-account-handling-residential-conveyancing"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "Client Account Handling for Residential Conveyancing Solicitors"

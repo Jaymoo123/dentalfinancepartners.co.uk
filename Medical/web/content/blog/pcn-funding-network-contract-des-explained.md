@@ -3,6 +3,7 @@ title: "PCN Funding and the Network Contract DES Explained"
 slug: "pcn-funding-network-contract-des-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/pcn-funding-network-contract-des-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "PCN Funding & the Network Contract DES Explained"

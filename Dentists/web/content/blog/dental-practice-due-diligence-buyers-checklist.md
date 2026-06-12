@@ -3,6 +3,7 @@ title: What Financial Due Diligence Should a Dental Practice Buyer Complete Befo
 slug: dental-practice-due-diligence-buyers-checklist
 canonical: https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-due-diligence-buyers-checklist
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Buying a Practice

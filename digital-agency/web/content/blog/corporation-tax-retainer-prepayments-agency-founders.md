@@ -3,6 +3,7 @@ title: 'Corporation Tax on Retainer Prepayments: What Agency Founders Must Know'
 slug: corporation-tax-retainer-prepayments-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-retainer-prepayments-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Corporation tax agency: retainer prepayments & deferred'

@@ -3,6 +3,7 @@ title: 'Limited Company vs LLP for a Consultant: Which Structure Works Best?'
 slug: limited-company-vs-llp-consultant
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Limited Company vs LLP for Consultants: Tax and Liability'

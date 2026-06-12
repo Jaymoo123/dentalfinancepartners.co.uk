@@ -3,6 +3,7 @@ title: Can I Employ UK Staff Through My Dubai Agency Without Setting Up UK Payro
 slug: employ-uk-staff-through-dubai-agency-payroll
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/employ-uk-staff-through-dubai-agency-payroll
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Employ UK staff through Dubai agency: UK payroll rules'

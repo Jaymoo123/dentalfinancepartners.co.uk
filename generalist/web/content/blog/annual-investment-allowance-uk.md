@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance UK: A Complete Guide for 2025/26'
 slug: annual-investment-allowance-uk
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance-uk
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Annual Investment Allowance UK: Rates, Rules & Examples'

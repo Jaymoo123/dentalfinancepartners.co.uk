@@ -3,6 +3,7 @@ title: "Why Hospitality Businesses Need Specialist Accountants for Hospitality (
 slug: "hospitality-accountants"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/hospitality-accountants"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Hospitality Accountants: Why Your Business Needs Industry"

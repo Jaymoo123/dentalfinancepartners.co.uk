@@ -3,6 +3,7 @@ title: How Do You Apportion Staff Time on R&D for an Agency Claim?
 slug: apportioning-staff-time-rd-agency-claim
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/apportioning-staff-time-rd-agency-claim
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Apportioning Staff Time on R&D for an Agency Claim

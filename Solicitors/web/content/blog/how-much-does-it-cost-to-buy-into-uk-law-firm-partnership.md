@@ -3,6 +3,7 @@ title: "How Much Does It Cost to Buy Into a UK Law Firm Partnership in 2025/26?"
 slug: "how-much-does-it-cost-to-buy-into-uk-law-firm-partnership"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-structure/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership"
 date: "2026-05-19"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Cost to Buy Into a UK Law Firm Partnership 2025/26"

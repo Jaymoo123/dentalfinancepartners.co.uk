@@ -3,6 +3,7 @@ title: "What Is Corporation Tax Marginal Relief and How Does It Work for 2025/26
 slug: "corporation-tax-marginal-relief-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-marginal-relief-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax Marginal Relief 2025/26: How It Works"

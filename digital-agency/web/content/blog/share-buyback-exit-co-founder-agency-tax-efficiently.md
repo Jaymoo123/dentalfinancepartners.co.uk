@@ -3,6 +3,7 @@ title: How to Structure a Share Buyback to Exit a Co-Founder from Your Agency Ta
 slug: share-buyback-exit-co-founder-agency-tax-efficiently
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/share-buyback-exit-co-founder-agency-tax-efficiently
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Share Buyback for Co-Founder Exit: Tax-Efficient Agency UK'

@@ -3,6 +3,7 @@ title: 'The Accountant''s Role in Your Agency''s Exit Planning: What to Expect a
 slug: accountants-role-agency-exit-planning
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/accountants-role-agency-exit-planning
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Agency Exit Planning: The Accountant''s Role and Timing'

@@ -3,6 +3,7 @@ title: "How Do I Calculate Corporation Tax When My Company Has Both Trading And 
 slug: "calculate-corporation-tax-trading-and-investment-income"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/calculate-corporation-tax-trading-and-investment-income"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax on Trading and Investment Income | UK Guide"

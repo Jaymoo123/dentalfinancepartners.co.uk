@@ -3,6 +3,7 @@ title: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies'
 slug: rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK'

@@ -3,6 +3,7 @@ title: "Capital Gains Tax Rates 2025/26: What UK Business Owners Need to Know"
 slug: "capital-gains-tax-rates-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/capital-gains-tax-rates-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Capital Gains Tax Rates 2025/26: Full Guide for UK Business"

@@ -3,6 +3,7 @@ title: "Trivial Benefits and Tax-Efficient Perks for a Dental Team: What You Can
 slug: "trivial-benefits-staff-perks-dental-team-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/trivial-benefits-staff-perks-dental-team-tax"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Trivial Benefits and Tax-Free Perks for Dental Staff"

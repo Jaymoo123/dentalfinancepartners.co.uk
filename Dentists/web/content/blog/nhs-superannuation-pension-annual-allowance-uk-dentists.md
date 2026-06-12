@@ -3,6 +3,7 @@ title: "NHS Superannuation and Your Pension Annual Allowance: Guide for UK Denti
 slug: "nhs-superannuation-pension-annual-allowance-uk-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/nhs-superannuation-pension-annual-allowance-uk-dentists"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "NHS Pension Annual Allowance for Dentists 2026/27"

@@ -3,6 +3,7 @@ title: Can You Claim R&D Tax Credits for Cloud Compute Costs on AWS or GCP?
 slug: rd-claim-cloud-compute-aws-gcp
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-claim-cloud-compute-aws-gcp
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credits on Cloud Compute: AWS and GCP Costs'

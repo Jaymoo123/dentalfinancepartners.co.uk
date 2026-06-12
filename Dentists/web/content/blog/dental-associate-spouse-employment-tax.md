@@ -3,6 +3,7 @@ title: "Can a Dental Associate Employ Their Spouse? Tax Rules and Practical Step
 slug: "dental-associate-spouse-employment-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-spouse-employment-tax"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Dental Associate Employing Spouse: Tax Rules 2025/26"

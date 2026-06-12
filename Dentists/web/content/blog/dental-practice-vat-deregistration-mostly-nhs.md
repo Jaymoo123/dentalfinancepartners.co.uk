@@ -3,6 +3,7 @@ title: "VAT Deregistration for a Mostly-NHS Dental Practice"
 slug: "dental-practice-vat-deregistration-mostly-nhs"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-deregistration-mostly-nhs"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & compliance"
 metaTitle: "Dental Practice VAT Deregistration: Mostly-NHS Exit"

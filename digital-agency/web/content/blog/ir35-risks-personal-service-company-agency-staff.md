@@ -3,6 +3,7 @@ title: 'IR35 Risks of Using a Personal Service Company for Agency Staff: What Yo
 slug: ir35-risks-personal-service-company-agency-staff
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-risks-personal-service-company-agency-staff
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: IR35 Risks Personal Service Company Agency Staff

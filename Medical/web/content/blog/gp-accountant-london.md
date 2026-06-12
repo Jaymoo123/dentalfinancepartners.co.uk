@@ -2,6 +2,7 @@
 title: "GP Accountant in London: Specialist Medical Accounting for Practices and Partners"
 slug: "gp-accountant-london"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant London | Medical Accountants UK"

@@ -3,6 +3,7 @@ title: "PCN Clinical Director Payments: Tax and Pension Explained"
 slug: "pcn-clinical-director-payments-tax"
 canonical: "https://www.medicalaccounts.co.uk/blog/pcn-clinical-director-payments-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "PCN Clinical Director Payments: Tax & Pension"

@@ -3,6 +3,7 @@ title: "R&D Tax Credits for Dental Practices: Eligibility & Claims"
 slug: "dental-practice-rd-tax-credits-eligibility-claims"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-rd-tax-credits-eligibility-claims"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Practice R&D Tax Credits: Eligibility & Claims Guide"

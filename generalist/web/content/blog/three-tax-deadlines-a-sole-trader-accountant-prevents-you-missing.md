@@ -3,6 +3,7 @@ title: "Three Tax Deadlines a Sole Trader Accountant Prevents You Missing"
 slug: "three-tax-deadlines-a-sole-trader-accountant-prevents-you-missing"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/three-tax-deadlines-a-sole-trader-accountant-prevents-you-missing"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Three Tax Deadlines a Sole Trader Accountant Prevents You"

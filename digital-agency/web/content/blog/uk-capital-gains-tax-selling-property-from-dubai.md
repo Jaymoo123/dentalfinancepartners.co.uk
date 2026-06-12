@@ -3,6 +3,7 @@ title: Do I Pay UK Capital Gains Tax on My UK Property If I Sell It While Living
 slug: uk-capital-gains-tax-selling-property-from-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-selling-property-from-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Capital Gains Tax Selling Property from Dubai: What You'

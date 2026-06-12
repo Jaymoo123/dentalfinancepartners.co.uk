@@ -3,6 +3,7 @@ title: 'Why Dentists Need Specialist Accountants: Tax, Structure and Practice Su
 slug: accountants-for-dentists
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountants-for-dentists
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: 'Accountants for Dentists: Specialist Tax & Practice Support'

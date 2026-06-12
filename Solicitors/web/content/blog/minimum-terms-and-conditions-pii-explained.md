@@ -3,6 +3,7 @@ title: "What Are the SRA Minimum Terms and Conditions for Solicitor PII?"
 slug: "minimum-terms-and-conditions-pii-explained"
 canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/minimum-terms-and-conditions-pii-explained"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
 metaTitle: "SRA MTC for Solicitor PII: Minimum Terms & Conditions Explained"

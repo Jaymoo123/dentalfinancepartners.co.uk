@@ -3,6 +3,7 @@ title: "What Does a Pre-Revenue Startup Need From an Accountant for Startup Oper
 slug: "pre-revenue-startup-accountant-investor-funding"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/pre-revenue-startup-accountant-investor-funding"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Pre-Revenue Startup Accountant: Investor Funding & Share"

@@ -3,6 +3,7 @@ title: "Dental Practice Financial Planning: Strategic Management Guide"
 slug: "dental-practice-financial-planning-strategic-management-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-financial-planning-strategic-management-guide"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Dental Practice Financial Planning | UK Strategy Guide"

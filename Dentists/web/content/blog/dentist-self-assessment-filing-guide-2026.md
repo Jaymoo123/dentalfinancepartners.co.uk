@@ -2,6 +2,7 @@
 title: 'Dentist Self Assessment: Complete Filing Guide 2026'
 slug: dentist-self-assessment-filing-guide-2026
 date: '2026-03-31'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

@@ -3,6 +3,7 @@ title: "Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained"
 slug: "accountant-for-uber-drivers"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-uber-drivers"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant For Uber Drivers UK: Tax, VAT & Expenses Guide"

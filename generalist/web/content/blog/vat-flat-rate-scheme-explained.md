@@ -3,6 +3,7 @@ title: "VAT Flat Rate Scheme Explained: Who Saves and Who Loses in 2025/26"
 slug: "vat-flat-rate-scheme-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-flat-rate-scheme-explained"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "VAT Flat Rate Scheme Explained: Who Saves and Who Loses"

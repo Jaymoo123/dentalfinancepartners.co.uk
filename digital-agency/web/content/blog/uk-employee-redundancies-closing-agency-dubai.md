@@ -3,6 +3,7 @@ title: How to Handle UK Employee Redundancies When Closing Your Agency to Move t
 slug: uk-employee-redundancies-closing-agency-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-employee-redundancies-closing-agency-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Employee Redundancies Closing Agency: A Founder''s Guide'

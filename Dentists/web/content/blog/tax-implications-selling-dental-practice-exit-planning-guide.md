@@ -3,6 +3,7 @@ title: What Are the Tax Implications When Selling a Dental Practice? An Exit Pla
 slug: tax-implications-selling-dental-practice-exit-planning-guide
 canonical: https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/tax-implications-selling-dental-practice-exit-planning-guide
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Goodwill & Practice Sale
 metaTitle: 'Selling a Dental Practice: Tax Implications & Exit Planning'

@@ -3,6 +3,7 @@ title: How Much Does an Agency Accountant Cost in 2025/26?
 slug: how-much-agency-accountant-cost
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-much-agency-accountant-cost
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency Accountant Cost 2025/26: UK Pricing Guide'

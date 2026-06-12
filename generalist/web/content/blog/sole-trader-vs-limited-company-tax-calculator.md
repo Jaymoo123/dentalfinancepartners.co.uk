@@ -3,6 +3,7 @@ title: "Sole Trader vs Limited Company Tax Calculator: Which Structure Saves You
 slug: "sole-trader-vs-limited-company-tax-calculator"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/sole-trader-vs-limited-company-tax-calculator"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Sole Trader vs Limited Company Tax Calculator 2025/26"

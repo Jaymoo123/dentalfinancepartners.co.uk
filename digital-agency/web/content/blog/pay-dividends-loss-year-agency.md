@@ -3,6 +3,7 @@ title: Can You Pay Dividends If Your Agency Has Made a Loss in the Current Year?
 slug: pay-dividends-loss-year-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-dividends-loss-year-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: Can You Pay Dividends If Your Agency Made a Loss This Year?

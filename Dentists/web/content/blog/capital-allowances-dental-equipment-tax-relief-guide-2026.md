@@ -3,6 +3,7 @@ title: 'Capital Allowances on Dental Equipment: Tax Relief Guide 2026'
 slug: capital-allowances-dental-equipment-tax-relief-guide-2026
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/capital-allowances-dental-equipment-tax-relief-guide-2026
 date: '2026-04-01'
+generator: claude/legacy-supabase
 author: Dental Finance Partners Editorial Team
 category: Practice accounting
 metaTitle: Capital Allowances on Dental Equipment, UK 2026/27

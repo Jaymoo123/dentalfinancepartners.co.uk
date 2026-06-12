@@ -3,6 +3,7 @@ title: 'Making Tax Digital for Agency Founders: What Changes and When'
 slug: making-tax-digital-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/making-tax-digital-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'Making Tax Digital for Agency Founders: Key Dates & Rules'

@@ -3,6 +3,7 @@ title: How to Use a Taxable Income Calculator for UK Self Assessment
 slug: taxable-income-calculator
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/taxable-income-calculator
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Taxable Income Calculator UK: Work Out Your Tax Bill'

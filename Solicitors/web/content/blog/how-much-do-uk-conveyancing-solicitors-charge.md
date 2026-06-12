@@ -3,6 +3,7 @@ title: How Much Do UK Conveyancing Solicitors Charge in 2025/26?
 slug: how-much-do-uk-conveyancing-solicitors-charge
 canonical: https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/how-much-do-uk-conveyancing-solicitors-charge
 date: '2026-05-19'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Conveyancing Compliance
 metaTitle: 'UK Conveyancing Solicitor Fees: the Real Cost Ranges'

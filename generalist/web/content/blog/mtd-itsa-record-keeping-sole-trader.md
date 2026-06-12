@@ -3,6 +3,7 @@ title: "What Records Must A Sole Trader Keep For HMRC Under MTD ITSA From April 
 slug: "mtd-itsa-record-keeping-sole-trader"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/mtd-itsa-record-keeping-sole-trader"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "MTD ITSA record keeping sole trader: what you must keep"

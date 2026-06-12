@@ -3,6 +3,7 @@ title: "How to Choose an Accountant for Amazon FBA Sellers in the UK"
 slug: "accountant-for-amazon-fba-sellers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/accountant-for-amazon-fba-sellers-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Accountant for Amazon FBA Sellers UK | VAT, Stock & Tax"

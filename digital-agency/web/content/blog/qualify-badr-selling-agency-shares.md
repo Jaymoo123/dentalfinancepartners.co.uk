@@ -3,6 +3,7 @@ title: How to Qualify for BADR When Selling Your Agency Shares
 slug: qualify-badr-selling-agency-shares
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/qualify-badr-selling-agency-shares
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Qualify BADR Selling Agency Shares: 5 Key Rules'

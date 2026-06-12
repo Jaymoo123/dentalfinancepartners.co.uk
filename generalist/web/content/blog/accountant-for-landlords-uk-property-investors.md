@@ -3,6 +3,7 @@ title: "What Does an Accountant for Landlords Actually Do? A Practical Guide for
 slug: "accountant-for-landlords-uk-property-investors"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-landlords-uk-property-investors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Landlords UK: Tax, Compliance & Structuring"

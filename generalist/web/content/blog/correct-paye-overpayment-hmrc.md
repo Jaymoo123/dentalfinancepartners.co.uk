@@ -3,6 +3,7 @@ title: "How Do You Correct a PAYE Overpayment From a Previous Tax Year?"
 slug: "correct-paye-overpayment-hmrc"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/correct-paye-overpayment-hmrc"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Correct PAYE Overpayment HMRC: Step by Step Guide"

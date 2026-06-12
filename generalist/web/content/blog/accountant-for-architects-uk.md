@@ -3,6 +3,7 @@ title: "Accountant for Architects UK: What to Look For and Why It Matters"
 slug: "accountant-for-architects-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-architects-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Architects UK: Specialist Financial Support"

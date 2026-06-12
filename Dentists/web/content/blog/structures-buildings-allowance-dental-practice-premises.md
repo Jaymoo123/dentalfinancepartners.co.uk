@@ -3,6 +3,7 @@ title: "Structures and Buildings Allowance for Dental Practices: 3% a Year on Yo
 slug: "structures-buildings-allowance-dental-practice-premises"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/structures-buildings-allowance-dental-practice-premises"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Capital Allowances & Equipment"
 metaTitle: "Structures and Buildings Allowance for Dental Premises"

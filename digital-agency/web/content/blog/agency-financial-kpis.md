@@ -3,6 +3,7 @@ title: The 8 Financial KPIs Every Agency Founder Should Track Monthly
 slug: agency-financial-kpis
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-financial-kpis
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 8 Financial KPIs Every Agency Founder Must Track

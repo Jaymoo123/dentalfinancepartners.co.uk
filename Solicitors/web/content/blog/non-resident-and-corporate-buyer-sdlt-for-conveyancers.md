@@ -3,6 +3,7 @@ title: "Non-Resident and Corporate Buyer SDLT for Conveyancers"
 slug: "non-resident-and-corporate-buyer-sdlt-for-conveyancers"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/non-resident-and-corporate-buyer-sdlt-for-conveyancers"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "Non-Resident and Corporate Buyer SDLT for Conveyancers"

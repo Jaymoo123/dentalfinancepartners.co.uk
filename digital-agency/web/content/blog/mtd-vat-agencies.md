@@ -3,6 +3,7 @@ title: 'MTD for VAT: What Agency Founders Need to Do Now'
 slug: mtd-vat-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-vat-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD for VAT: Agency Compliance Guide 2025/26'

@@ -3,6 +3,7 @@ title: "How Can a Locum Solicitor Secure a Mortgage on Self-Employed Income?"
 slug: "locum-solicitor-mortgage-options-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/locum-solicitor-mortgage-options-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Locum Solicitor Mortgage: Self-Employed Lending Guide UK"

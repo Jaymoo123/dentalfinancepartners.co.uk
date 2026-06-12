@@ -3,6 +3,7 @@ title: "What Does a Small Business Accountant Actually Do Month to Month?"
 slug: "what-does-a-small-business-accountant-do-month-to-month"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/what-does-a-small-business-accountant-do-month-to-month"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "What a Small Business Accountant Does Month to Month | UK"

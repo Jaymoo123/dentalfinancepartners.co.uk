@@ -3,6 +3,7 @@ title: What Agency Founders Get Wrong About Accrual Accounting and Why It Hurts 
 slug: accrual-accounting-mistakes-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/accrual-accounting-mistakes-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Accrual Accounting Mistakes Agency Founders Make

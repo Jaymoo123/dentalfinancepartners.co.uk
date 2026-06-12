@@ -3,6 +3,7 @@ title: 'UK Tax Bands 2025/26: Income Tax, NI, and Allowances Explained'
 slug: uk-tax-bands
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/uk-tax-bands
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'UK Tax Bands 2025/26: Income Tax, NI & Allowances'

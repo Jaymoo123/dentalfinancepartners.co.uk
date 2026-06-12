@@ -3,6 +3,7 @@ title: "What Does a Marketing Agency Need From an Accountant in the UK?"
 slug: "accountant-for-marketing-agencies-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-marketing-agencies-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Marketing Agencies UK | Industry-Specific"

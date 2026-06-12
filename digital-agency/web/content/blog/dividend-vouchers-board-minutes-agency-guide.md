@@ -3,6 +3,7 @@ title: 'Dividend Vouchers and Board Minutes for Your Agency: A Practical Guide'
 slug: dividend-vouchers-board-minutes-agency-guide
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-vouchers-board-minutes-agency-guide
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: Dividend Vouchers & Board Minutes for Your Agency

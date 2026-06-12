@@ -3,6 +3,7 @@ title: Why Your Agency's Gross Profit Margin Is Lower Than You Think and How to 
 slug: agency-gross-profit-margin-uk-fix
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-profit-margin-uk-fix
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency gross profit margin: why yours is lower & fix'

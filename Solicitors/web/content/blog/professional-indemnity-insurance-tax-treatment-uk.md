@@ -3,6 +3,7 @@ title: "Is Professional Indemnity Insurance Tax Deductible for a Solicitor?"
 slug: "professional-indemnity-insurance-tax-treatment-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/professional-indemnity-insurance-tax-treatment-uk"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
 metaTitle: "Is PII Tax Deductible for a Solicitor? Allowable Expense Rules"

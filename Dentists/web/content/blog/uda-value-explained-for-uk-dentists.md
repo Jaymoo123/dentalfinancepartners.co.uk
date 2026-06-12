@@ -3,6 +3,7 @@ title: What Is a UDA Value and How Does It Affect Your NHS Contract?
 slug: uda-value-explained-for-uk-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

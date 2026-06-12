@@ -3,6 +3,7 @@ title: "What Happens To My Corporation Tax If I Miss The Filing Deadline By One 
 slug: "what-happens-corporation-tax-miss-filing-deadline-one-day"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/what-happens-corporation-tax-miss-filing-deadline-one-day"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Late Corporation Tax Filing Penalty: What Happens If You"

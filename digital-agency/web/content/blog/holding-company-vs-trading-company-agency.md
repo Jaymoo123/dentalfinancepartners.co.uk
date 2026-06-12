@@ -3,6 +3,7 @@ title: 'Holding Company vs Trading Company for Agencies: What''s the Difference?
 slug: holding-company-vs-trading-company-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/holding-company-vs-trading-company-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Holding Company vs Trading Company: Agency Choice'

@@ -3,6 +3,7 @@ title: "How Do UK Solicitors Prepare Partnership Accounts for 2025/26?"
 slug: "partnership-accounts-preparation-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/partnership-accounts-preparation-uk-2025-26"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Partnership Accounts UK 2025/26: A Solicitor's Guide"

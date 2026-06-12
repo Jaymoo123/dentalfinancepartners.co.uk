@@ -3,6 +3,7 @@ title: "Dental Surgery Fit-Out Capital Allowances: Splitting Your Spend Between 
 slug: "dental-surgery-fit-out-capital-allowances-pool-split"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/dental-surgery-fit-out-capital-allowances-pool-split"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Capital Allowances & Equipment"
 metaTitle: "Dental Fit-Out Capital Allowances: Pool Split Explained"

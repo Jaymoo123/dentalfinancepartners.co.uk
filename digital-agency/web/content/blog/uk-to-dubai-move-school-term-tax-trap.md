@@ -3,6 +3,7 @@ title: 'UK to Dubai Move: The School Term Trap That Forces You to Pay UK Tax for
 slug: uk-to-dubai-move-school-term-tax-trap
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-to-dubai-move-school-term-tax-trap
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK to Dubai Move School Term Tax Trap: Avoid Paying'

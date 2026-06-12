@@ -3,6 +3,7 @@ title: What Is the Minimum Office Space Requirement for a Dubai Free Zone Compan
 slug: dubai-free-zone-minimum-office-space-requirement-flexi-desk
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-minimum-office-space-requirement-flexi-desk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Dubai Free Zone Office Space Rules: Flexi Desk Guide'

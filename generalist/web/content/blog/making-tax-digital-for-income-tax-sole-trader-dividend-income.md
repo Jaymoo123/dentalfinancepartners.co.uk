@@ -3,6 +3,7 @@ title: "Making Tax Digital for Income Tax: How It Applies to a Sole Trader With 
 slug: "making-tax-digital-for-income-tax-sole-trader-dividend-income"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/making-tax-digital-for-income-tax-sole-trader-dividend-income"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "MTD ITSA: Sole Trader With Dividend Income Reporting Rules"

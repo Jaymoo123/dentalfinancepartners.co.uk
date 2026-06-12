@@ -3,6 +3,7 @@ title: "What Does an Ecommerce Business Need from an Accountant in 2025/26?"
 slug: "accountant-for-ecommerce-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/accountant-for-ecommerce-business"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Accountant for Ecommerce Business: VAT, Tax & Compliance"

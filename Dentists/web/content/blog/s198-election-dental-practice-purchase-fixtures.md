@@ -3,6 +3,7 @@ title: "The Section 198 Election When You Buy a Dental Practice: Fixtures, the V
 slug: "s198-election-dental-practice-purchase-fixtures"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/s198-election-dental-practice-purchase-fixtures"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Capital Allowances & Equipment"
 metaTitle: "Section 198 Election: Buying a Dental Practice Fixtures"

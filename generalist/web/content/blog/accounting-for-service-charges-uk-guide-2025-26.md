@@ -3,6 +3,7 @@ title: 'Accounting for Service Charges: A UK Business Owner''s Guide for 2025/26
 slug: accounting-for-service-charges-uk-guide-2025-26
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'Accounting for Service Charges UK: VAT and Tax 2025/26'

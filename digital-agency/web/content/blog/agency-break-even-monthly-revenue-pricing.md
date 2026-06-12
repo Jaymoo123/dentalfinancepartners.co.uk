@@ -3,6 +3,7 @@ title: How to Calculate Your Agency's Break-Even Monthly Revenue and Set Pricing
 slug: agency-break-even-monthly-revenue-pricing
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-break-even-monthly-revenue-pricing
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Calculate Your Agency's Break-Even Monthly Revenue | Agency

@@ -3,6 +3,7 @@ title: What Is the Difference Between MTD VAT and MTD ITSA for Agency Founders?
 slug: mtd-vat-vs-mtd-itsa-agency-founder-difference
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-vat-vs-mtd-itsa-agency-founder-difference
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD VAT vs MTD ITSA: Key Differences for Agency Owners'

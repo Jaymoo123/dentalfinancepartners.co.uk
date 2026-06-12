@@ -3,6 +3,7 @@ title: How to Read Your Agency P&L (And What the Numbers Mean)
 slug: how-to-read-agency-pl
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/how-to-read-agency-pl
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'How to Read Your Agency P&L: Finance 101 for Founders'

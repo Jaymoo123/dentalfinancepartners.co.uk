@@ -3,6 +3,7 @@ title: How Much Do UK Solicitors Charge Per Hour in 2025/26?
 slug: how-much-do-uk-solicitors-charge-per-hour
 canonical: https://www.accountsforlawyers.co.uk/blog/practice-accounting/how-much-do-uk-solicitors-charge-per-hour
 date: '2026-05-19'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Practice Accounting
 metaTitle: UK Solicitor Hourly Rates by Firm Type and Seniority

@@ -3,6 +3,7 @@ title: "VAT Registration for Solicitors: When and How to Register Your Legal Pra
 slug: "vat-registration-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-registration-solicitors"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "VAT Registration Solicitors: When to Register Your Law Firm"

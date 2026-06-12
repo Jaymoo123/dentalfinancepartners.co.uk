@@ -3,6 +3,7 @@ title: "UK Dentist Returning From Abroad: Tax Residence, Temporary Non-Residence
 slug: "uk-dentist-returning-from-abroad-tax-residence"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/uk-dentist-returning-from-abroad-tax-residence"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "UK Dentist Returning From Abroad: The Tax Position"

@@ -3,6 +3,7 @@ title: Is a Paralegal Self-Employed or an Employee for Tax Purposes? A Solicitor
 slug: paralegal-employment-status-and-tax-uk
 canonical: https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/paralegal-employment-status-and-tax-uk
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 author: Accounts for Lawyers Editorial Team
 category: Fee-Earner Tax & Compensation
 metaTitle: 'Paralegal Tax Status: Employed or Self-Employed in UK?'

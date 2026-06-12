@@ -3,6 +3,7 @@ title: "How Do Heads of Terms Shape a Dental Practice Purchase?"
 slug: "heads-of-terms-dental-practice-purchase"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/heads-of-terms-dental-practice-purchase"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

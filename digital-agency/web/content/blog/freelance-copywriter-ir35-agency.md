@@ -3,6 +3,7 @@ title: "Does Engaging a Freelance Copywriter Through Your Agency Trigger IR35?"
 slug: "freelance-copywriter-ir35-agency"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/freelance-copywriter-ir35-agency"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "Contractors and IR35"
 metaTitle: "IR35 for Freelance Copywriters: Agency Owner's Guide"

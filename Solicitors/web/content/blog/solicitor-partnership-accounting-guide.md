@@ -2,6 +2,7 @@
 title: "Solicitor Partnership Accounting: Complete Guide for Legal Partnerships"
 slug: "solicitor-partnership-accounting-guide"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Solicitor Partnership Accounting | UK Tax Guide"

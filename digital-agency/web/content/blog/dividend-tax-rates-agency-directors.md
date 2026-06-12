@@ -3,6 +3,7 @@ title: 'Dividend Tax Rates for Agency Directors 2025/26: What You’ll Actually 
 slug: dividend-tax-rates-agency-directors
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-tax-rates-agency-directors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Dividend Tax Rates 2025/26: Agency Director Guide'

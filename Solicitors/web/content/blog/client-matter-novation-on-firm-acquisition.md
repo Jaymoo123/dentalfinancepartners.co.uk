@@ -3,6 +3,7 @@ title: "How Do Solicitors Handle Client Matter Novation on a Law Firm Acquisitio
 slug: "client-matter-novation-on-firm-acquisition"
 canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-and-merger/client-matter-novation-on-firm-acquisition"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Firm Acquisition & Merger"
 metaTitle: "Client Matter Novation on Law Firm Acquisition | Solicitor Guide"

@@ -3,6 +3,7 @@ title: Does Running My Agency from Dubai Create a UK Permanent Establishment for
 slug: uk-permanent-establishment-for-uae-company-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-permanent-establishment-for-uae-company-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: UK Permanent Establishment Risk for Your UAE Company

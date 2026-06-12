@@ -3,6 +3,7 @@ title: How Do Capital Allowances and the Annual Investment Allowance (AIA) Work 
 slug: capital-allowance-aia-dental-practice
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/capital-allowance-aia-dental-practice
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'Capital Allowance AIA: A Guide for UK Dental Practices'

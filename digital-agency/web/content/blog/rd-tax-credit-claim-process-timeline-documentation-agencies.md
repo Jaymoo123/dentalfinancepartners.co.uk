@@ -3,6 +3,7 @@ title: 'R&D Tax Credit Claim Process: Timeline and Documentation for Agencies'
 slug: rd-tax-credit-claim-process-timeline-documentation-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-claim-process-timeline-documentation-agencies
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credit Claim Process: Timeline and Documentation'

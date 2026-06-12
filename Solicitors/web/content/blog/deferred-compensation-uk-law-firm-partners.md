@@ -3,6 +3,7 @@ title: "How Does Deferred Compensation Work for UK Law Firm Partners?"
 slug: "deferred-compensation-uk-law-firm-partners"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/deferred-compensation-uk-law-firm-partners"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Deferred Compensation for UK Law Firm Partners: Tax & Structure"

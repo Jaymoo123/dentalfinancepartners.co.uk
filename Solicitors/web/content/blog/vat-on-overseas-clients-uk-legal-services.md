@@ -3,6 +3,7 @@ title: How Does VAT Apply to Overseas Clients for a UK Law Firm?
 slug: vat-on-overseas-clients-uk-legal-services
 canonical: https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/vat-on-overseas-clients-uk-legal-services
 date: '2026-05-18'
+generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: VAT & Compliance
 metaTitle: 'VAT on Overseas Clients: a UK Law Firm Place-of-Supply'

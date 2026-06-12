@@ -3,6 +3,7 @@ title: 'Bridging Software for MTD: What to Do When Your Agency Accounting Tool I
 slug: bridging-software-mtd-agency-accounting-incompatible
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/bridging-software-mtd-agency-accounting-incompatible
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'Bridging Software MTD Agency Accounting: Your Workaround'

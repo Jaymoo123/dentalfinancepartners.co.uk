@@ -3,6 +3,7 @@ title: Should I Import My UK Car to Dubai or Sell It Before I Move?
 slug: import-uk-car-to-dubai-or-sell
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/import-uk-car-to-dubai-or-sell
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Import UK car to Dubai: process, costs, and tax implications'

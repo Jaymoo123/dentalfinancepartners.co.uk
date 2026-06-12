@@ -3,6 +3,7 @@ title: "Superannuation on NHS Contract Income: How Pensionable Pay Is Calculated
 slug: "superannuation-nhs-contract-income-dentists-pensionable-pay"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/superannuation-nhs-contract-income-dentists-pensionable-pay"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "NHS Contract Pensionable Pay: How NPE Is Calculated"

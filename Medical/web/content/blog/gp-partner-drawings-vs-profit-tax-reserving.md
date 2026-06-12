@@ -3,6 +3,7 @@ title: "Drawings vs Profit for GP Partners: The Cash-Flow Gap and How to Reserve
 slug: "gp-partner-drawings-vs-profit-tax-reserving"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-partner-drawings-vs-profit-tax-reserving"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partner Drawings vs Profit: How to Reserve for Tax"

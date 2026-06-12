@@ -3,6 +3,7 @@ title: "How to Reward Equity Partners in a Law Firm LLP Tax Efficiently"
 slug: "how-to-reward-equity-partners-tax-efficiently"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/how-to-reward-equity-partners-tax-efficiently"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Reward Equity Partners Tax Efficiently: LLP Profit Allocation Guide"

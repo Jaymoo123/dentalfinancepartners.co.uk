@@ -3,6 +3,7 @@ title: "Office Account vs Client Account: What Every UK Solicitor Must Know Abou
 slug: "office-account-vs-client-account-differences"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/office-account-vs-client-account-differences"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "Office Account vs Client Account: SRA Rules for Solicitors"

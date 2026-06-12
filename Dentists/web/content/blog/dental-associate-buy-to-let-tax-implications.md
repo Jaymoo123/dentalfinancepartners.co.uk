@@ -3,6 +3,7 @@ title: "How Does Buy to Let Property Income Affect a Dental Associate’s Tax Po
 slug: "dental-associate-buy-to-let-tax-implications"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-buy-to-let-tax-implications"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Dental Associate Buy to Let Tax: Section 24, NI & Personal Allowance"

@@ -3,6 +3,7 @@ title: 'UK Agency Founder Moving to Dubai: Why Your Retainer Pricing Needs to Ch
 slug: uk-agency-founder-dubai-retainer-pricing-vat-currency-risk
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-retainer-pricing-vat-currency-risk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Agency Founder Dubai Retainer Pricing: VAT & Currency'

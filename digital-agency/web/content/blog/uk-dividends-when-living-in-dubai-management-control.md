@@ -3,6 +3,7 @@ title: 'UK Dividends When Living in Dubai: Why HMRC Can Still Tax Them If Your A
 slug: uk-dividends-when-living-in-dubai-management-control
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-dividends-when-living-in-dubai-management-control
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Dividends When Living in Dubai: Management Control & HMRC'

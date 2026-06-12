@@ -3,6 +3,7 @@ title: "Law Firm Partner Capital Accounts: Tax Treatment Explained (UK)"
 slug: "law-firm-partner-capital-accounts-tax-treatment"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-partner-capital-accounts-tax-treatment"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Partner Capital Accounts: Tax Treatment (UK Law Firm)"

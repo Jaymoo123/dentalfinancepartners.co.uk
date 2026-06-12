@@ -3,6 +3,7 @@ title: "VAT on Legal Aid Work and the LAA Cash-Flow Lag: A Law Firm Guide"
 slug: "legal-aid-laa-work-vat-and-cash-flow"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/legal-aid-laa-work-vat-and-cash-flow"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "VAT on Legal Aid Work and LAA Cash Flow: Law Firm Guide"

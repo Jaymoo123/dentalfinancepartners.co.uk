@@ -3,6 +3,7 @@ title: "Abortive Conveyancing Transactions: VAT and WIP Write-Off for Law Firms"
 slug: "abortive-conveyancing-transactions-vat-and-wip"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/abortive-conveyancing-transactions-vat-and-wip"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "Abortive Conveyancing: VAT and WIP Write-Off for Law Firms"

@@ -3,6 +3,7 @@ title: Can a SaaS Agency Claim R&D Tax Credits for Building Bespoke Software?
 slug: saas-agency-rd-tax-credits-bespoke-software
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/saas-agency-rd-tax-credits-bespoke-software
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credits for SaaS Agencies: Claiming on Bespoke'

@@ -3,6 +3,7 @@ title: 'Salary Sacrifice vs Dividend Waiver: Which Saves More Tax for Agency Fou
 slug: salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Salary Sacrifice vs Dividend Waiver: Tax Saving for Agency'

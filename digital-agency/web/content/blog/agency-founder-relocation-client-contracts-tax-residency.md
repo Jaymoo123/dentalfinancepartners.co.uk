@@ -3,6 +3,7 @@ title: 'Agency Founder Relocation: How to Structure Your UK Client Contracts for
 slug: agency-founder-relocation-client-contracts-tax-residency
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/agency-founder-relocation-client-contracts-tax-residency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Agency Founder Relocation: UK Client Contracts for Dubai'

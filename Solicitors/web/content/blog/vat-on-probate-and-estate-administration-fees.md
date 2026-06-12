@@ -3,6 +3,7 @@ title: "VAT on Probate and Estate Administration Fees: Which Outlays Are Disburs
 slug: "vat-on-probate-and-estate-administration-fees"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/vat-on-probate-and-estate-administration-fees"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "VAT on Probate and Estate Administration Fees Explained"

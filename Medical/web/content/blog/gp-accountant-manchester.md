@@ -3,6 +3,7 @@ title: "GP Accountant Manchester: Specialist Tax & Financial Services for Medica
 slug: "gp-accountant-manchester"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-manchester"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Manchester | Medical Tax Specialists 2026/27"

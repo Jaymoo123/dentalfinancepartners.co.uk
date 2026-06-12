@@ -3,6 +3,7 @@ title: "Option to Tax and the Capital Goods Scheme on Law Firm Premises"
 slug: "option-to-tax-law-firm-premises-capital-goods-scheme"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/option-to-tax-law-firm-premises-capital-goods-scheme"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Option to Tax and Capital Goods Scheme: Law Firm Premises"

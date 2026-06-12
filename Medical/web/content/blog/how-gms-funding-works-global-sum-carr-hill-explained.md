@@ -3,6 +3,7 @@ title: "How GMS Funding Works: Global Sum and the Carr-Hill Formula Explained"
 slug: "how-gms-funding-works-global-sum-carr-hill-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/how-gms-funding-works-global-sum-carr-hill-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GMS Funding Explained: Global Sum & Carr-Hill Formula"

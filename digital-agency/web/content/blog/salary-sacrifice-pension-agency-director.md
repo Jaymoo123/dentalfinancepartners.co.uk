@@ -3,6 +3,7 @@ title: "How to Structure a Salary Sacrifice Pension Scheme Through Your Agency"
 slug: "salary-sacrifice-pension-agency-director"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-sacrifice-pension-agency-director"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "Salary and Dividends"
 metaTitle: "Salary sacrifice pension for agency directors: how-to"

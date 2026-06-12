@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance UK: What Agency Founders Need to Know'
 slug: annual-investment-allowance-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-uk
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Annual Investment Allowance UK: A Guide for Agency Founders'

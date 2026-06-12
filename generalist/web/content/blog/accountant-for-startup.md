@@ -3,6 +3,7 @@ title: "What Does a Startup Founder Need From an Accountant for Startup?"
 slug: "accountant-for-startup"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Accountant for Startup: What Founder Stage Businesses Need"

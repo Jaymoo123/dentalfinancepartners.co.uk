@@ -3,6 +3,7 @@ title: "P11D Benefits In Kind Explained: A Practical Guide for UK Employers"
 slug: "p11d-benefits-in-kind-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/p11d-benefits-in-kind-explained"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "P11D Benefits In Kind Explained | UK Employer Guide 2025/26"

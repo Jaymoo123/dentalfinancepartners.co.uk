@@ -3,6 +3,7 @@ title: "How Does a Consultant Solicitor Structure Work for UK Law Firms?"
 slug: "consultant-solicitor-structures-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/consultant-solicitor-structures-uk"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Consultant Solicitor Structures UK | Tax, IR35 & SRA Guide"

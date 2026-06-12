@@ -3,6 +3,7 @@ title: What MTD-Compatible Software Features Are Essential for an Agency with Mu
 slug: mtd-compatible-software-features-agency-multiple-projects-clients
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-compatible-software-features-agency-multiple-projects-clients
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD-Compatible Software: Essential Features for Agency'

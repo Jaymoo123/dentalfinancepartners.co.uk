@@ -3,6 +3,7 @@ title: "MTD ITSA April 2026 Deadline: What Mixed-Member Partnerships Must Do Now
 slug: "mtd-itsa-april-2026-deadline-mixed-member-partnerships"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline-mixed-member-partnerships"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "MTD ITSA April 2026 deadline for mixed-member partnerships"

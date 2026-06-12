@@ -3,6 +3,7 @@ title: How Does Split Year Treatment Work If I Move to Dubai Mid-Tax Year?
 slug: split-year-treatment-moving-abroad-mid-year
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/split-year-treatment-moving-abroad-mid-year
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Split Year Treatment Moving Abroad Mid Year: UK Tax Guide'

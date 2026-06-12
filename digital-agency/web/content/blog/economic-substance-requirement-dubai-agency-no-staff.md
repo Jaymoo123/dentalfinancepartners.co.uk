@@ -3,6 +3,7 @@ title: Can My Dubai Free Zone Agency Pass the Economic Substance Test With No St
 slug: economic-substance-requirement-dubai-agency-no-staff
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/economic-substance-requirement-dubai-agency-no-staff
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Economic Substance Requirement Dubai Agency No Staff: What'

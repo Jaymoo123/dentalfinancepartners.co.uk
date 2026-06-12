@@ -3,6 +3,7 @@ title: Can I keep my UK agency's Google Ads and Facebook Business accounts if I 
 slug: keep-google-ads-facebook-accounts-moving-to-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/keep-google-ads-facebook-accounts-moving-to-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Keep Google Ads Facebook account moving to Dubai: what UK'

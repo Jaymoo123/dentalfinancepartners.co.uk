@@ -3,6 +3,7 @@ title: What Does a Specialist Accountant for Vets Do for UK Veterinary Practices
 slug: accountant-for-vets-uk
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/accountant-for-vets-uk
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: 'Accountant for Vets: Veterinary Practice Tax and VAT'

@@ -3,6 +3,7 @@ title: "How Does Making Tax Digital for Income Tax Affect a Sole Trader With Div
 slug: "making-tax-digital-income-tax-sole-trader-dividend-income"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/making-tax-digital-income-tax-sole-trader-dividend-income"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Making Tax Digital for Income Tax: Sole Trader"

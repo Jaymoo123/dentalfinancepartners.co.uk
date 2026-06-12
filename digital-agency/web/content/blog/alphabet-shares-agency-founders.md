@@ -3,6 +3,7 @@ title: 'Alphabet Shares for Agency Founders: What They Are and Why You''d Use Th
 slug: alphabet-shares-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/alphabet-shares-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Alphabet shares for agency founders: structure, tax'

@@ -3,6 +3,7 @@ title: What Is the Average Agency Overhead Rate and How Do You Calculate Yours?
 slug: average-agency-overhead-rate-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/average-agency-overhead-rate-uk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Overhead Rate UK: Calculate & Benchmark Yours'

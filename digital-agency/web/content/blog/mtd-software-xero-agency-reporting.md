@@ -3,6 +3,7 @@ title: What MTD-Compatible Software Integrates with Xero for Agency-Specific Rep
 slug: mtd-software-xero-agency-reporting
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-software-xero-agency-reporting
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: MTD Software That Integrates With Xero for Agencies

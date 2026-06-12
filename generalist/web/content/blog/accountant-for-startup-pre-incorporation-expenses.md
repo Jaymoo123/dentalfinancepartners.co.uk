@@ -3,6 +3,7 @@ title: Can My Startup Claim Tax Relief on Costs Incurred Before Incorporation?
 slug: accountant-for-startup-pre-incorporation-expenses
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/accountant-for-startup-pre-incorporation-expenses
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: Startup Tax Relief on Costs Incurred Before Incorporation

@@ -3,6 +3,7 @@ title: "Law Firm Partnership Tax: The Complete UK Guide for Partners"
 slug: "law-firm-partnership-tax-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-partnership-tax-guide"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Law Firm Partnership Tax Guide 2025/26 | UK Legal Partnerships"

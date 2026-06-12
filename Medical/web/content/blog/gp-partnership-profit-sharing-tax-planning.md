@@ -3,6 +3,7 @@ title: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 202
 slug: "gp-partnership-profit-sharing-tax-planning"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-profit-sharing-tax-planning"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Partnership Profit Sharing and Tax Planning 2026/27"

@@ -3,6 +3,7 @@ title: "Can I Reduce My Corporation Tax Bill By Paying A Rent Charge To A Connec
 slug: "rent-charge-connected-company-corporation-tax"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/rent-charge-connected-company-corporation-tax"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Rent charge connected company corporation tax: rules"

@@ -3,6 +3,7 @@ title: "How Does SRA AML Supervision Affect Solicitors and Their Compliance Obli
 slug: "sra-supervision-and-aml-compliance-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/sra-supervision-and-aml-compliance-law-firms"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "SRA AML Supervision for Solicitors: Compliance Obligations Explained"

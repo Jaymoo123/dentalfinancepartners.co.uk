@@ -3,6 +3,7 @@ title: "Solicitor Acting as Executor or Trustee: Fees and Tax"
 slug: "solicitor-acting-as-executor-or-trustee-fees-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-acting-as-executor-or-trustee-fees-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Solicitor as Executor or Trustee: Fees and Tax"

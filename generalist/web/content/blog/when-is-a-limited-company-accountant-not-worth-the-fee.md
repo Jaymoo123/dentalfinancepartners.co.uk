@@ -3,6 +3,7 @@ title: "When Is a Limited Company Accountant Not Worth the Fee?"
 slug: "when-is-a-limited-company-accountant-not-worth-the-fee"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/when-is-a-limited-company-accountant-not-worth-the-fee"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "When a Limited Company Accountant Isn't Worth the Fee"

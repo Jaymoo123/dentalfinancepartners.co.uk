@@ -3,6 +3,7 @@ title: Red Flags Your Agency Accountant Isn't Proactive Enough (And What to Do)
 slug: red-flags-agency-accountant-not-proactive
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/red-flags-agency-accountant-not-proactive
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Red Flags Your Agency Accountant Isn't Proactive (UK Agency

@@ -3,6 +3,7 @@ title: 'HMRC Tax Rebate: Who Can Claim and How to Apply'
 slug: hmrc-tax-rebate
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/hmrc-tax-rebate
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'HMRC Tax Rebate: Who Can Claim and How to Apply'

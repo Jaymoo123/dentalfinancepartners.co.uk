@@ -3,6 +3,7 @@ title: "Can You Declare a Dividend When the Company Has Made a Loss? The Legal R
 slug: "dividend-declared-from-loss-legal-reality"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/dividend-declared-from-loss-legal-reality"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Dividend declared from loss: the legal rules for UK"

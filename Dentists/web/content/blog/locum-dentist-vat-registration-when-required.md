@@ -3,6 +3,7 @@ title: "When Does a Locum Dentist Need to Register for VAT?"
 slug: "locum-dentist-vat-registration-when-required"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/locum-dentist-vat-registration-when-required"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Locum Dentist VAT Registration: When It's Required (2025/26)"

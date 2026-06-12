@@ -3,6 +3,7 @@ title: What Is the VAT Threshold for 2025/26 and When Must You Register?
 slug: vat-threshold-2025-26
 canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: VAT and Making Tax Digital
 metaTitle: 'VAT Threshold 2025/26: The £90,000 Registration Line'

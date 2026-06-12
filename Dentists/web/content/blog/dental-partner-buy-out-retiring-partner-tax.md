@@ -3,6 +3,7 @@ title: "Buying Out a Retiring Dental Partner: Funding the Share and the CGT and 
 slug: "dental-partner-buy-out-retiring-partner-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/dental-partner-buy-out-retiring-partner-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Buying Out a Retiring Dental Partner: Tax and Funding"

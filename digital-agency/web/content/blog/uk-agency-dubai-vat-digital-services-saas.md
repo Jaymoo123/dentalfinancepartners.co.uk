@@ -3,6 +3,7 @@ title: "UK Agency to Dubai: The VAT on Digital Services Trap for SaaS and Course
 slug: "uk-agency-dubai-vat-digital-services-saas"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-dubai-vat-digital-services-saas"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "International Agencies"
 metaTitle: "UK Agency Dubai VAT Digital Services SaaS Trap Explained"

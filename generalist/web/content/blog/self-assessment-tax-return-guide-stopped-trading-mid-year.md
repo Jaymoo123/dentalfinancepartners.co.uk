@@ -3,6 +3,7 @@ title: 'Self Assessment Tax Return Guide: How to File If You Stopped Trading Mid
 slug: self-assessment-tax-return-guide-stopped-trading-mid-year
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-stopped-trading-mid-year
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Self Assessment After Stopping Trading Mid-Year Guide

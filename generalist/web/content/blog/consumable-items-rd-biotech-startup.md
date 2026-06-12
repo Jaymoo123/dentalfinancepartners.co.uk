@@ -3,6 +3,7 @@ title: "What Qualifies As Consumable Items In An R&D Tax Credit Claim For A Biot
 slug: "consumable-items-rd-biotech-startup"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/consumable-items-rd-biotech-startup"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "Consumable items R&D biotech startup: what qualifies"

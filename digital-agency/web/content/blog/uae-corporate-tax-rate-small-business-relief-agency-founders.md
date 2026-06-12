@@ -3,6 +3,7 @@ title: 'UAE Corporate Tax Rate Small Business Relief: What Agency Founders Need 
 slug: uae-corporate-tax-rate-small-business-relief-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-rate-small-business-relief-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: UAE Corporate Tax Rate and Small Business Relief Guide

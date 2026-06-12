@@ -3,6 +3,7 @@ title: How to Forecast Cash Flow for a Creative Agency with Seasonal Client Work
 slug: cash-flow-forecast-creative-agency-uk
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/cash-flow-forecast-creative-agency-uk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Cash flow forecast creative agency: 7 survival steps'

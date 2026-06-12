@@ -3,6 +3,7 @@ title: "Retiring or Leaving a GP Partnership: Capital Account, Cessation and Tax
 slug: "retiring-from-gp-partnership-tax-capital-account"
 canonical: "https://www.medicalaccounts.co.uk/blog/retiring-from-gp-partnership-tax-capital-account"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "Retiring From a GP Partnership: Capital Account & Tax"

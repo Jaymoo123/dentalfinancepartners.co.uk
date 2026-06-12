@@ -3,6 +3,7 @@ title: 'Split Year Treatment: The First Year Trap for Agency Founders Who Travel
 slug: split-year-treatment-uk-agency-founder-client-meetings
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/split-year-treatment-uk-agency-founder-client-meetings
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Split Year Treatment: The First Year Trap for UK Agency'

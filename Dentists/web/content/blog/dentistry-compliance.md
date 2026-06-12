@@ -3,6 +3,7 @@ title: 'Dentistry Compliance: A Complete Guide for UK Dental Practices'
 slug: dentistry-compliance
 canonical: https://www.dentalfinancepartners.co.uk/blog/dentistry-compliance
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: 'Dentistry Compliance: A Guide for UK Dental Practices'

@@ -3,6 +3,7 @@ title: What is the phoenixing risk if I close my UK agency and reopen in Dubai?
 slug: phoenixing-risk-closing-agency-reopening-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/phoenixing-risk-closing-agency-reopening-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Phoenixing risk: closing your UK agency and reopening'

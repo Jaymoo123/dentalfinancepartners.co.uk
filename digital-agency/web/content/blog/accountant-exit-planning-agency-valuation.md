@@ -3,6 +3,7 @@ title: 'Your Accountant''s Role in Exit Planning and Agency Valuation: What to E
 slug: accountant-exit-planning-agency-valuation
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/accountant-exit-planning-agency-valuation
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Accountant Exit Planning Agency Valuation: A Founder''s Guide'

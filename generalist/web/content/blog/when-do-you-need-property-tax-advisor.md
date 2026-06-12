@@ -3,6 +3,7 @@ title: "When Do You Need a Property Tax Advisor for Your UK Business?"
 slug: "when-do-you-need-property-tax-advisor"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/when-do-you-need-property-tax-advisor"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Property Tax Advisor: When Your UK Business Needs One"

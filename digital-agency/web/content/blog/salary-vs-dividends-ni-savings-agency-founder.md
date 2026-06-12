@@ -3,6 +3,7 @@ title: 'Salary vs Dividends for Agency Founders: How Much NI Can You Save?'
 slug: salary-vs-dividends-ni-savings-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-vs-dividends-ni-savings-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'NI Savings Dividends vs Salary Agency: How Much You Save'

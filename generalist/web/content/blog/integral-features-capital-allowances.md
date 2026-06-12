@@ -3,6 +3,7 @@ title: 'Integral Features Capital Allowances: A Complete Guide for UK Property O
 slug: integral-features-capital-allowances
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/integral-features-capital-allowances
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Integral Features Capital Allowances: 25% Special Rate'

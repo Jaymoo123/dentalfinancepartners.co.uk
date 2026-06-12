@@ -3,6 +3,7 @@ title: How Should an Agency Founder Structure Salary, Dividends and Pension Cont
 slug: salary-dividend-split-agency-pension-contributions
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-dividend-split-agency-pension-contributions
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Salary Dividend Split Agency: Pension Strategy for Founders'

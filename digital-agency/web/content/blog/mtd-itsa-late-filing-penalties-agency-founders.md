@@ -3,6 +3,7 @@ title: 'The Penalty Structure for MTD ITSA Late Filing for Agency Founders: What
 slug: mtd-itsa-late-filing-penalties-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-late-filing-penalties-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD ITSA Late Filing Penalties: Agency Founder''s Guide 2025'

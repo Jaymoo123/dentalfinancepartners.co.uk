@@ -3,6 +3,7 @@ title: "When Does a Solicitor Firm Qualify for the SRA Accountant's Report Exemp
 slug: "sra-accountants-report-exemption-thresholds"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "SRA Accountant's Report Exemption: The £10,000 Average and £250,000 Maximum Test"

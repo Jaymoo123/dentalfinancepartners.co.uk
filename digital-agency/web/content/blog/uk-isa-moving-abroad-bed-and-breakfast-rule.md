@@ -3,6 +3,7 @@ title: 'UK ISA When Moving Abroad: The Bed and Breakfast Rule That Blocks You fr
 slug: uk-isa-moving-abroad-bed-and-breakfast-rule
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-isa-moving-abroad-bed-and-breakfast-rule
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK ISA Moving Abroad: Bed and Breakfast Rule Explained'

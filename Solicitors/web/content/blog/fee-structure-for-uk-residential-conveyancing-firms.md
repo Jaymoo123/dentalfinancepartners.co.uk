@@ -3,6 +3,7 @@ title: "How Should a UK Law Firm Structure Its Conveyancing Fee for Clients?"
 slug: "fee-structure-for-uk-residential-conveyancing-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/fee-structure-for-uk-residential-conveyancing-firms"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "Conveyancing Fee Structure for UK Law Firms: Fixed Fee & No Win No Fee"

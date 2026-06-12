@@ -3,6 +3,7 @@ title: "Secondment of Solicitors: VAT and Tax Treatment for UK Law Firms"
 slug: "secondment-of-solicitors-vat-and-tax-treatment"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/secondment-of-solicitors-vat-and-tax-treatment"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Secondment of Solicitors: VAT and Tax Treatment (UK)"

@@ -3,6 +3,7 @@ title: How Do I Handle UK VAT on My Agency's Past Invoices if I Close the UK Ent
 slug: uk-vat-on-past-invoices-closing-entity
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-vat-on-past-invoices-closing-entity
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK VAT on past invoices closing entity: what agency'

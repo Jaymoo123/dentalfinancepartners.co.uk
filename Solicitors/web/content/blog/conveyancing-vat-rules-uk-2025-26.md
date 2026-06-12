@@ -3,6 +3,7 @@ title: "How Does VAT Apply to Conveyancing Fees for UK Solicitors in 2025/26?"
 slug: "conveyancing-vat-rules-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/conveyancing-vat-rules-uk-2025-26"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Conveyancing VAT: Searches, Land Registry & SDLT 2025/26"

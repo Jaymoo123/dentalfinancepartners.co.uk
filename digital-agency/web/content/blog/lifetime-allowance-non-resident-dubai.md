@@ -3,6 +3,7 @@ title: How Does the Lifetime Allowance Affect My UK Pension If I Move to Dubai?
 slug: lifetime-allowance-non-resident-dubai
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/lifetime-allowance-non-resident-dubai
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Lifetime Allowance Non Resident Dubai: UK Pension Rules'

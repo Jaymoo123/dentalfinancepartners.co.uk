@@ -3,6 +3,7 @@ title: How to Incorporate a Partnership Agency Without Triggering a Tax Charge o
 slug: incorporate-partnership-agency-without-goodwill-tax-charge
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/incorporate-partnership-agency-without-goodwill-tax-charge
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: Incorporate a Partnership Agency Without Goodwill Tax Charge

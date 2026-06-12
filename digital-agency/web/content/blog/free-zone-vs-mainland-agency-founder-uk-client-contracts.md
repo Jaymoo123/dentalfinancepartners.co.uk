@@ -3,6 +3,7 @@ title: "Free Zone vs Mainland for Agency Founder: Which Structure Lets You Keep 
 slug: "free-zone-vs-mainland-agency-founder-uk-client-contracts"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/free-zone-vs-mainland-agency-founder-uk-client-contracts"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "International Agencies"
 metaTitle: "Free Zone vs Mainland for Agency Founder: UK Client"

@@ -3,6 +3,7 @@ title: How to Register Your UK Agency for VAT When Invoicing EU Clients Post-Bre
 slug: register-vat-invoicing-eu-clients-agency-post-brexit
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/register-vat-invoicing-eu-clients-agency-post-brexit
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UK Agency VAT Registration: Invoicing EU Clients Post-Brexit'

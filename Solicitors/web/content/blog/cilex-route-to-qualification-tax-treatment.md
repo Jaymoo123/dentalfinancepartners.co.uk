@@ -3,6 +3,7 @@ title: "Can a Chartered Legal Executive Claim CILEX Fees as Tax Deductible?"
 slug: "cilex-route-to-qualification-tax-treatment"
 canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/cilex-route-to-qualification-tax-treatment"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Fee-Earner Tax & Compensation"
 metaTitle: "CILEX Fees Tax Deductible for Solicitors & Legal Executives"

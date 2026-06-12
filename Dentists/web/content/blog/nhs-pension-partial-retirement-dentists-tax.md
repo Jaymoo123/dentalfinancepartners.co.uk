@@ -3,6 +3,7 @@ title: "NHS Pension Partial Retirement for Dentists: Drawing Your Pension While 
 slug: "nhs-pension-partial-retirement-dentists-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/nhs-pension-partial-retirement-dentists-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "NHS Pension Partial Retirement for Dentists: The Tax"

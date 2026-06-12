@@ -3,6 +3,7 @@ title: 'VAT: How to Calculate It for Your UK Agency'
 slug: vat-how-to-calculate
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-how-to-calculate
 date: '2026-05-19'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'VAT: How to Calculate It for Your UK Agency'

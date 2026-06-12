@@ -3,6 +3,7 @@ title: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agen
 slug: side-hustle-to-limited-company-cost-incorporating-agency-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/side-hustle-to-limited-company-cost-incorporating-agency-2025-26
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: Cost of Incorporating a Side Hustle Agency vs Sole Trader

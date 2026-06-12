@@ -3,6 +3,7 @@ title: "Clearing Residual and Unclaimed Client Balances: The SRA Route"
 slug: "residual-client-balances-clearing-unclaimed-money-sra"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/residual-client-balances-clearing-unclaimed-money-sra"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Clearing Residual Client Balances: The SRA £500 Route"

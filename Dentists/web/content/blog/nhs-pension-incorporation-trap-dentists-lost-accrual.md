@@ -3,6 +3,7 @@ title: "The Incorporation Pension Trap: Why Dividends Are Not Pensionable for De
 slug: "nhs-pension-incorporation-trap-dentists-lost-accrual"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/nhs-pension-incorporation-trap-dentists-lost-accrual"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Pension"
 metaTitle: "The NHS Pension Incorporation Trap for Dentists"

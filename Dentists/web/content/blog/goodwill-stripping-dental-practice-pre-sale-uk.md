@@ -3,6 +3,7 @@ title: "Can Goodwill Stripping Reduce Your Dental Practice Tax Bill Before a Sal
 slug: "goodwill-stripping-dental-practice-pre-sale-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/goodwill-stripping-dental-practice-pre-sale-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

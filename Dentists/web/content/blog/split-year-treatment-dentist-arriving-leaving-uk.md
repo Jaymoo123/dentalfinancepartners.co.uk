@@ -3,6 +3,7 @@ title: "Split-Year Treatment for a Dentist Arriving in or Leaving the UK Mid-Yea
 slug: "split-year-treatment-dentist-arriving-leaving-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/split-year-treatment-dentist-arriving-leaving-uk"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Split-Year Treatment for Dentists Moving Mid-Year"

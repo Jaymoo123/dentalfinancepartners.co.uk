@@ -3,6 +3,7 @@ title: "RDEC vs SME R&D Scheme: Which One Applies to Your Company?"
 slug: "rdec-vs-sme-rd-scheme-comparison"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/rdec-vs-sme-rd-scheme-comparison"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "RDEC vs SME R&D Scheme: Key Differences for Notified"

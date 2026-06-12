@@ -3,6 +3,7 @@ title: Full Expensing Capital Allowances for UK Dentists
 slug: full-expensing-capital-allowances-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/full-expensing-capital-allowances-dentists
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: Full Expensing Capital Allowances for Dentists

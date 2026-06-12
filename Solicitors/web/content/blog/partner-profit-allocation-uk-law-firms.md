@@ -3,6 +3,7 @@ title: 'Partner Profit Allocation in UK Law Firms: How It Works and How It Is Ta
 slug: partner-profit-allocation-uk-law-firms
 canonical: https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Partnership & LLP Accounting
 metaTitle: Partner Profit Allocation in UK Law Firms Explained

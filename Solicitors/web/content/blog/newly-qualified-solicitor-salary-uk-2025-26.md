@@ -3,6 +3,7 @@ title: 'Newly Qualified Solicitor Salary UK 2025/26: Full Breakdown by Firm Type
 slug: newly-qualified-solicitor-salary-uk-2025-26
 canonical: https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-compensation/newly-qualified-solicitor-salary-uk-2025-26
 date: '2026-05-19'
+generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: Fee-Earner Tax & Compensation
 metaTitle: Newly Qualified Solicitor Salary in the UK by Firm Type

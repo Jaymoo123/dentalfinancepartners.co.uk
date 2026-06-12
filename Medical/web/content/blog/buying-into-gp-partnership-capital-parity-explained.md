@@ -3,6 +3,7 @@ title: 'Buying Into a GP Partnership: Capital Buy-In and Parity Explained'
 slug: buying-into-gp-partnership-capital-parity-explained
 canonical: https://www.medicalaccounts.co.uk/blog/buying-into-gp-partnership-capital-parity-explained
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Medical Accountants UK Editorial Team
 category: GP Tax & Accounts
 metaTitle: 'Buying Into a GP Partnership: Goodwill and the Buy-In'

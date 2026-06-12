@@ -3,6 +3,7 @@ title: 'MTD for Mixed VAT and Non-VAT Registered Agencies: What You Need to Know
 slug: mtd-mixed-vat-non-vat-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-mixed-vat-non-vat-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Making Tax Digital
 metaTitle: 'MTD for Mixed VAT & Non-VAT Agencies: UK Guide'

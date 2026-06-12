@@ -3,6 +3,7 @@ title: "Selling a Private Medical Practice: CGT and BADR Explained (2026 Rates)"
 slug: "selling-private-medical-practice-cgt-badr"
 canonical: "https://www.medicalaccounts.co.uk/blog/selling-private-medical-practice-cgt-badr"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "Private Practice"
 metaTitle: "Selling a Private Medical Practice: CGT and BADR"

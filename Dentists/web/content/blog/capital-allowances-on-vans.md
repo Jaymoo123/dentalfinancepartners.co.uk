@@ -3,6 +3,7 @@ title: 'Capital Allowances on Vans: What UK Dentists Need to Know'
 slug: capital-allowances-on-vans
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-on-vans
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: 'Capital Allowances on Vans: UK Dentist Guide'

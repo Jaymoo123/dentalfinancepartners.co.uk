@@ -3,6 +3,7 @@ title: "Can You Claim Business Asset Disposal Relief on Shares in a Company with
 slug: "business-asset-disposal-relief-property-investment-subsidiary"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/business-asset-disposal-relief-property-investment-subsidiary"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Business Asset Disposal Relief Explained: Property"

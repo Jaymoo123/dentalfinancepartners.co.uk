@@ -3,6 +3,7 @@ title: "GP Accountant Birmingham: Specialist Medical Accounting Services"
 slug: "gp-accountant-birmingham"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-birmingham"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Birmingham | Medical Accountants UK"

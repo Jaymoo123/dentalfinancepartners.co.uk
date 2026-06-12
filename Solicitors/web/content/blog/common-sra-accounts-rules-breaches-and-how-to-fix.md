@@ -3,6 +3,7 @@ title: "Common SRA Accounts Rules Breaches and How Solicitors Can Fix Them"
 slug: "common-sra-accounts-rules-breaches-and-how-to-fix"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/common-sra-accounts-rules-breaches-and-how-to-fix"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
 metaTitle: "Common SRA Accounts Rules Breaches and How to Fix Them"

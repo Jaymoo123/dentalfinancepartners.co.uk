@@ -3,6 +3,7 @@ title: How to Document R&D Activity in Your Agency Throughout the Year
 slug: document-rd-activity-agency-year-round
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/document-rd-activity-agency-year-round
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Document R&D Activity Agency: A Year-Round Guide'

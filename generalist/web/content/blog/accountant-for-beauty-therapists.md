@@ -3,6 +3,7 @@ title: "Accountant for Beauty Therapists: Tax Planning, Structure and Compliance
 slug: "accountant-for-beauty-therapists"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-beauty-therapists"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Beauty Therapists: Tax, Structure"

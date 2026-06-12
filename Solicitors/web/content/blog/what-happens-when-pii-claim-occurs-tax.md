@@ -3,6 +3,7 @@ title: "What Happens to PII Claim Payments and Reserves for Tax Purposes in a So
 slug: "what-happens-when-pii-claim-occurs-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/professional-indemnity/what-happens-when-pii-claim-occurs-tax"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Professional Indemnity"
 metaTitle: "PII Claim Tax Treatment for Solicitors & Law Firms | UK Guide"

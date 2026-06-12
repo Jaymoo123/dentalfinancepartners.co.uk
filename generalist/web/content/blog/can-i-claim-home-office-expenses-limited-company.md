@@ -3,6 +3,7 @@ title: "Can I Claim Home Office Expenses Through My Limited Company?"
 slug: "can-i-claim-home-office-expenses-limited-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-home-office-expenses-limited-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Can I claim home office expenses limited company? UK rules"

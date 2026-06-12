@@ -3,6 +3,7 @@ title: 'Setting Up PAYE for Your First Agency Employee: A Step-by-Step Guide'
 slug: setting-up-paye-first-agency-hire
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/setting-up-paye-first-agency-hire
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'PAYE agency first employee: step-by-step setup guide'

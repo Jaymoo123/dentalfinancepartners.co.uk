@@ -3,6 +3,7 @@ title: "Do I Need a Making Tax Digital Accountant for MTD ITSA in 2026?"
 slug: "making-tax-digital-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/making-tax-digital-accountant"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Making Tax Digital Accountant | MTD ITSA 2026 UK"

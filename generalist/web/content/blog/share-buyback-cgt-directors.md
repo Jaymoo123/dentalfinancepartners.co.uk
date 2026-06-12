@@ -3,6 +3,7 @@ title: "How to Structure a Share Buyback to Minimise CGT for Remaining Directors
 slug: "share-buyback-cgt-directors"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/share-buyback-cgt-directors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Share Buyback CGT Directors: Minimise Tax on Partial Buyouts"

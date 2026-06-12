@@ -3,6 +3,7 @@ title: "How Much Does It Cost to Buy a UK Law Firm in 2025/26?"
 slug: "how-much-does-it-cost-to-buy-a-uk-law-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-merger/how-much-does-it-cost-to-buy-a-uk-law-firm"
 date: "2026-05-19"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Firm Acquisition & Merger"
 metaTitle: "Cost to Buy a UK Law Firm 2025/26: Real Price Ranges"

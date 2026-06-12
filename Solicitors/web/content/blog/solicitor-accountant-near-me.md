@@ -2,6 +2,7 @@
 title: "How to Find the Right Solicitor Accountant Near You"
 slug: "solicitor-accountant-near-me"
 date: "2026-04-01"
+generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Accountant Near Me | UK Legal Practice Specialists"

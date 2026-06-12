@@ -3,6 +3,7 @@ title: What Are the Trivial Benefits Rules for UK Limited Companies in 2025/26?
 slug: trivial-benefits-rules-uk
 canonical: https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/trivial-benefits-rules-uk
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Director Pay and Dividends
 metaTitle: 'Trivial Benefits: The £50 Director Gift Rule for 2025/26'

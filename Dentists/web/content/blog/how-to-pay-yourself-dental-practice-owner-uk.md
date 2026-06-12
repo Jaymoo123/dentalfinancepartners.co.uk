@@ -2,6 +2,7 @@
 title: 'How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide'
 slug: how-to-pay-yourself-dental-practice-owner-uk
 date: '2026-03-28'
+generator: claude/legacy-supabase
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

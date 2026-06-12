@@ -3,6 +3,7 @@ title: "What Does a Limited Company Accounts Cost in 2025/26? A Practical Breakd
 slug: "limited-company-accounts-cost-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accounts-cost-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Limited Company Accounts Cost 2025/26: UK Pricing Guide"

@@ -3,6 +3,7 @@ title: 'Accounting Software for Marketing Agencies: What Actually Works'
 slug: accounting-software-marketing-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/accounting-software-marketing-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Best Accounting Software for UK Marketing Agencies 2026

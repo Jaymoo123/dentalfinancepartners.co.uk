@@ -3,6 +3,7 @@ title: 'IR35 and Multi-Client Retainers: When a Fixed Fee Puts You at Risk'
 slug: ir35-multi-client-retainers-fixed-fee-risk
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-multi-client-retainers-fixed-fee-risk
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: IR35 Risk of Fixed-Fee Retainers for Multi-Client

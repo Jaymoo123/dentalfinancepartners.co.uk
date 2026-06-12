@@ -3,6 +3,7 @@ title: How to Invoice a UK Client from Your Dubai Agency Without Them Withholdin
 slug: invoice-uk-client-from-dubai-without-withholding-tax
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/invoice-uk-client-from-dubai-without-withholding-tax
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: Invoice UK client from Dubai without withholding tax

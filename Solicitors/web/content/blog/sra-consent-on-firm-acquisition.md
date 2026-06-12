@@ -3,6 +3,7 @@ title: "How Does a Solicitor Obtain SRA Consent When Acquiring a Law Firm?"
 slug: "sra-consent-on-firm-acquisition"
 canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-and-merger/sra-consent-on-firm-acquisition"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Firm Acquisition & Merger"
 metaTitle: "SRA Consent for Law Firm Acquisition: A Solicitor's Guide"

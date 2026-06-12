@@ -3,6 +3,7 @@ title: "BADR 2026 Rate Change: What It Means for UK Business Owners Selling Up"
 slug: "badr-2026-rate-change"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-2026-rate-change"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR 2026 Rate Change: 18% CGT from April 2026"

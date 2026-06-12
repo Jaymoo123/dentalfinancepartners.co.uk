@@ -3,6 +3,7 @@ title: "How to Claim Corporation Tax Relief on a Capital Loss from Selling a Bus
 slug: "corporation-tax-capital-loss-relief"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-capital-loss-relief"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation tax capital loss relief: how to claim it"

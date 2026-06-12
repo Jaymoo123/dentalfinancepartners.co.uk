@@ -3,6 +3,7 @@ title: 'Bespoke Integrations as R&D: When Building Bridges Qualifies'
 slug: bespoke-integrations-rd-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/bespoke-integrations-rd-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Bespoke Integration R&D Agency: Tax Relief for Custom Builds'

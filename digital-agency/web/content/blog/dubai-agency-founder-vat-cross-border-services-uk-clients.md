@@ -3,6 +3,7 @@ title: 'Dubai Agency Founder: How to Handle VAT on Cross-Border Services When Yo
 slug: dubai-agency-founder-vat-cross-border-services-uk-clients
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-founder-vat-cross-border-services-uk-clients
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: VAT on Cross-Border Services for Dubai Agency Founders

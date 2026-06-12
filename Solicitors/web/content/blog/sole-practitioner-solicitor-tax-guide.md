@@ -3,6 +3,7 @@ title: 'Sole Practitioner Solicitor Tax: Complete Guide for 2025/26'
 slug: sole-practitioner-solicitor-tax-guide
 canonical: https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide
 date: '2026-04-01'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Sole Practitioner Tax
 metaTitle: 'Sole Practitioner Solicitor Tax: Self-Assessment Guide'

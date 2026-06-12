@@ -2,6 +2,7 @@
 title: "Solicitor Accountant Cost: What Actually Drives the Price for UK Law Firms"
 slug: "solicitor-accountant-cost"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Accountant Cost: What Drives It (UK Guide 2026)"

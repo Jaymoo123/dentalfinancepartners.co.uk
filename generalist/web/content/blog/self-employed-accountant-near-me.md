@@ -3,6 +3,7 @@ title: "How to Find the Right Self Employed Accountant Near Me in 2025"
 slug: "self-employed-accountant-near-me"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-employed-accountant-near-me"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Self Employed Accountant Near Me: Find the Right Fit in 2025"

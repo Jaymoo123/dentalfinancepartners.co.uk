@@ -3,6 +3,7 @@ title: 'UK Capital Gains Tax Rates for Residential Property in 2026: What Proper
 slug: uk-capital-gains-tax-rates-residential-property-2026
 canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'Capital Gains Tax on Residential Property 2026: Full Rates'

@@ -3,6 +3,7 @@ title: "What is the Difference Between an Accountant and a Bookkeeper for UK Bus
 slug: "difference-between-accountants-and-bookkeepers"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/difference-between-accountants-and-bookkeepers"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Difference Between Accountants and Bookkeepers for UK"

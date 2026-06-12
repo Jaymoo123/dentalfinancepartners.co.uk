@@ -3,6 +3,7 @@ title: "What Does an HR Accountant Do for UK Businesses?"
 slug: "what-does-an-hr-accountant-do"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/what-does-an-hr-accountant-do"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "HR Accountants: What They Do for UK Businesses"

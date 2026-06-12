@@ -3,6 +3,7 @@ title: "GP Accountant Cost: What Drives the Fee for UK Medical Accounting"
 slug: "gp-accountant-cost"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-cost"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Cost UK: What Drives the Fee (2026/27)"

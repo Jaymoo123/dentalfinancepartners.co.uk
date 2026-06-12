@@ -3,6 +3,7 @@ title: Optimal Salary and Dividend Split for Agency Directors 2025/26
 slug: optimal-salary-dividend-split-agency-directors
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/optimal-salary-dividend-split-agency-directors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: Optimal Salary Dividend Split for Directors 2025/26

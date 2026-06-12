@@ -2,6 +2,7 @@
 title: "Will LLP Members Pay Employer NI in 2026? The Real Rules Explained"
 slug: "llp-employer-ni-2026"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "LLP Employer NI 2026: Do Law Firm Members Pay It?"

@@ -3,6 +3,7 @@ title: "How Much Are HMRC Penalties for Late Self Assessment in 2025/26?"
 slug: "hmrc-penalties-self-assessment-late-filing-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/hmrc-penalties-self-assessment-late-filing-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "HMRC Penalties Self Assessment: Late Filing Fines 2025/26"

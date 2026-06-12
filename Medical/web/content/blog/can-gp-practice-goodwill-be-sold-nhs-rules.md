@@ -3,6 +3,7 @@ title: "Can GP Practice Goodwill Be Sold? The NHS Rules (and What Actually Trans
 slug: "can-gp-practice-goodwill-be-sold-nhs-rules"
 canonical: "https://www.medicalaccounts.co.uk/blog/can-gp-practice-goodwill-be-sold-nhs-rules"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "Can You Sell GP Practice Goodwill? The NHS Rules"

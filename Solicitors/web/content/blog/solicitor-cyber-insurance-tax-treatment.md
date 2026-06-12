@@ -3,6 +3,7 @@ title: "Is Cyber Insurance an Allowable Expense for a Solicitor Law Firm?"
 slug: "solicitor-cyber-insurance-tax-treatment"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/solicitor-cyber-insurance-tax-treatment"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Solicitor Cyber Insurance: Tax Treatment & Allowable Expense Guide"

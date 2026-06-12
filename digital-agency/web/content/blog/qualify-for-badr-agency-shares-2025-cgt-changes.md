@@ -3,6 +3,7 @@ title: How to Qualify for BADR When Selling Your Agency Shares After the 2025 CG
 slug: qualify-for-badr-agency-shares-2025-cgt-changes
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/qualify-for-badr-agency-shares-2025-cgt-changes
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR Agency Founders: Qualify Before CGT Rates Rise in 2025'

@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance for UK Dentists: A Complete Guide'
 slug: annual-investment-allowance-uk-dentists
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/annual-investment-allowance-uk-dentists
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'Annual Investment Allowance UK: A Complete Guide'

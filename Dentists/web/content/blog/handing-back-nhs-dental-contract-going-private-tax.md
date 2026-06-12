@@ -3,6 +3,7 @@ title: "Handing Back the NHS Contract and Going Private: the Financial and Tax D
 slug: "handing-back-nhs-dental-contract-going-private-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/handing-back-nhs-dental-contract-going-private-tax"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
 metaTitle: "Handing Back the NHS Contract and Going Private: Tax"

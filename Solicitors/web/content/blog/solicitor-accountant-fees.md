@@ -3,6 +3,7 @@ title: "Solicitor Accountant Fees: What Drives the Cost of Specialist Legal Acco
 slug: "solicitor-accountant-fees"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant-fees"
 date: "2026-04-01"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Accountant Fees: What Drives the Cost (UK Guide)"

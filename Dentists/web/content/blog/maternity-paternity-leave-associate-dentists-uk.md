@@ -3,6 +3,7 @@ title: "Maternity and Paternity Leave for Associate Dentists: What You Need to K
 slug: "maternity-paternity-leave-associate-dentists-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/maternity-paternity-leave-associate-dentists-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Maternity Leave for Associate Dentists | UK Guide"

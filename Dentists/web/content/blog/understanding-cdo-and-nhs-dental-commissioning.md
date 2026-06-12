@@ -3,6 +3,7 @@ title: "How Does NHS Dental Commissioning Work and What Does It Mean for Your Pr
 slug: "understanding-cdo-and-nhs-dental-commissioning"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/understanding-cdo-and-nhs-dental-commissioning"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

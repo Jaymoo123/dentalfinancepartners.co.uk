@@ -3,6 +3,7 @@ title: "How Do I Handle VAT on Cross-Border Services Between My UK and Dubai Age
 slug: "vat-cross-border-services-uk-dubai-agencies"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-cross-border-services-uk-dubai-agencies"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "International Agencies"
 metaTitle: "VAT Cross Border Services UK Dubai: A Guide for Agency"

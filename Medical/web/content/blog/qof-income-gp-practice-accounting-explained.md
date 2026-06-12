@@ -3,6 +3,7 @@ title: "QOF Income for GP Practices: How It Is Paid, Accounted For and Taxed"
 slug: "qof-income-gp-practice-accounting-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/qof-income-gp-practice-accounting-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "QOF Income Explained: How It Pays Your GP Practice"

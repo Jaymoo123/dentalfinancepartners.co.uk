@@ -3,6 +3,7 @@ title: "How Does Ill Health Retirement Work for Dentists in the NHS Pension Sche
 slug: "nhs-pension-ill-health-retirement-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-pension/nhs-pension-ill-health-retirement-dentists"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

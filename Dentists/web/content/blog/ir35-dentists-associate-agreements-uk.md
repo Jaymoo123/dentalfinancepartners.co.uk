@@ -3,6 +3,7 @@ title: "IR35 and Dentists: Does It Apply to Associate Agreements?"
 slug: "ir35-dentists-associate-agreements-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dentists-associate-agreements-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

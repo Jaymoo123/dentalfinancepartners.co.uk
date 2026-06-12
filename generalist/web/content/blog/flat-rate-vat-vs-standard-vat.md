@@ -3,6 +3,7 @@ title: "Flat Rate VAT vs Standard VAT: Which Scheme Should Your UK Business Use?
 slug: "flat-rate-vat-vs-standard-vat"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/flat-rate-vat-vs-standard-vat"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Flat Rate VAT vs Standard VAT: Which Scheme Is Right"

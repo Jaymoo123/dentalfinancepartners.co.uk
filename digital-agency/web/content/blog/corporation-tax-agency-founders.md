@@ -3,6 +3,7 @@ title: 'Corporation Tax for Agency Founders: The Complete 2025/26 Guide'
 slug: corporation-tax-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Corporation Tax for Agency Founders: 2025/26 Guide'

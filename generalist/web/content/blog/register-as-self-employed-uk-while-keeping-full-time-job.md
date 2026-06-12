@@ -3,6 +3,7 @@ title: How to Register as Self Employed UK While Keeping Your Full Time Job
 slug: register-as-self-employed-uk-while-keeping-full-time-job
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/register-as-self-employed-uk-while-keeping-full-time-job
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Register as Self Employed UK While in a Full-Time Job

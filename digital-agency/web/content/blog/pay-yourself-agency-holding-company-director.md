@@ -3,6 +3,7 @@ title: How Do You Pay Yourself When Your Agency Has a Holding Company and You Ar
 slug: pay-yourself-agency-holding-company-director
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-holding-company-director
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Pay yourself agency founder: holding company & director'

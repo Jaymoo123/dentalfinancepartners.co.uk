@@ -3,6 +3,7 @@ title: "Working Capital and Overdraft Finance Options for a Dental Practice"
 slug: "dental-practice-working-capital-overdraft-finance-options"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-working-capital-overdraft-finance-options"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Working Capital and Overdraft Finance for Dentists"

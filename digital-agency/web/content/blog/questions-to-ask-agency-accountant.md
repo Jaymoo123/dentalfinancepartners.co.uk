@@ -3,6 +3,7 @@ title: What Questions Should You Ask Before You Choose an Agency Accountant?
 slug: questions-to-ask-agency-accountant
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/questions-to-ask-agency-accountant
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Agency accountant questions to ask before choosing

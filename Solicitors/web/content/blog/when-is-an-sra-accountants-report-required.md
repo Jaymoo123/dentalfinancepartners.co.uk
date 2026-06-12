@@ -3,6 +3,7 @@ title: When Is an SRA Accountant's Report Required for a Solicitor Firm?
 slug: when-is-an-sra-accountants-report-required
 canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/when-is-an-sra-accountants-report-required
 date: '2026-05-18'
+generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: SRA Accounts Rules
 metaTitle: When Is an SRA Accountant's Report Required for Firms?

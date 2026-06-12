@@ -3,6 +3,7 @@ title: "Business Asset Disposal Relief Explained For A Company With A Dormant Pe
 slug: "business-asset-disposal-relief-dormant-company"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/business-asset-disposal-relief-dormant-company"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Business Asset Disposal Relief: Dormant Period Impact"

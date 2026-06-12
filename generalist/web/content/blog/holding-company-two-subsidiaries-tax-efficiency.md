@@ -3,6 +3,7 @@ title: "How to Structure a Holding Company With Two Trading Subsidiaries for Tax
 slug: "holding-company-two-subsidiaries-tax-efficiency"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-two-subsidiaries-tax-efficiency"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Holding Company Two Subsidiaries Tax Efficiency: UK"

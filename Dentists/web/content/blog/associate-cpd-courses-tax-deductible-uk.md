@@ -3,6 +3,7 @@ title: Are CPD Courses Tax Deductible for UK Dentists? A Guide to Allowable Trai
 slug: associate-cpd-courses-tax-deductible-uk
 canonical: https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-cpd-courses-tax-deductible-uk
 date: '2026-05-18'
+generator: deepseek-chat/legacy-bulk
 updatedDate: '2026-06-03'
 sourcesVerifiedAt: '2026-06-03'
 author: Dental Finance Partners Editorial Team

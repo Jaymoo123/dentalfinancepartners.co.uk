@@ -3,6 +3,7 @@ title: "How Can a Law Firm Employ a Spouse Tax-Efficiently Under the Wholly and 
 slug: "spouse-employment-in-law-firm-tax"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/spouse-employment-in-law-firm-tax"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Spouse Employment in a Law Firm: Tax Rules for Solicitors"

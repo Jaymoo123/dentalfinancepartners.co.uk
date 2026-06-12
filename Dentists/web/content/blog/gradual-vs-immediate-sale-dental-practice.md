@@ -3,6 +3,7 @@ title: "Phased Sale vs Immediate Sale of a Dental Practice: Which Route Fits You
 slug: "gradual-vs-immediate-sale-dental-practice"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/gradual-vs-immediate-sale-dental-practice"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "Phased vs Immediate Dental Practice Sale: Tax & Structuring Guide"

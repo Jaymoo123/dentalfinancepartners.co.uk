@@ -3,6 +3,7 @@ title: "How Does a Sabbatical Affect a Solicitor’s Tax Position?"
 slug: "sabbatical-leave-solicitor-tax-implications"
 canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/sabbatical-leave-solicitor-tax-implications"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Fee-Earner Tax & Compensation"
 metaTitle: "Sabbatical Solicitor Tax: Unpaid Leave, PAYE & Return Guarantee"

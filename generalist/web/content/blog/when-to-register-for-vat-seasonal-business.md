@@ -3,6 +3,7 @@ title: "When Should a Seasonal Business Register for VAT?"
 slug: "when-to-register-for-vat-seasonal-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/when-to-register-for-vat-seasonal-business"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "When to Register for VAT as a Seasonal Business | UK Guide"

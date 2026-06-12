@@ -3,6 +3,7 @@ title: 'The 2-Year Holding Period for BADR: What Agency Founders Need to Know Be
 slug: badr-2-year-holding-period-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/badr-2-year-holding-period-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR 2-Year Holding Period: Agency Founder Exit Guide'

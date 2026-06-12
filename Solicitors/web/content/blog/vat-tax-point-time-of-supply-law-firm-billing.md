@@ -3,6 +3,7 @@ title: "VAT Tax Point and Time of Supply for Law Firm Billing"
 slug: "vat-tax-point-time-of-supply-law-firm-billing"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-tax-point-time-of-supply-law-firm-billing"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "VAT Tax Point and Time of Supply: Law Firm Billing"

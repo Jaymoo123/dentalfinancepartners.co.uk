@@ -3,6 +3,7 @@ title: 'Flat Rate VAT for Agencies: Is It Still Worth It in 2025/26?'
 slug: flat-rate-vat-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/flat-rate-vat-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Flat Rate VAT for Agencies: Worth It in 2025/26?'

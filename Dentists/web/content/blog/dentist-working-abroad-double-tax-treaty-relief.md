@@ -3,6 +3,7 @@ title: "Double-Tax-Treaty Relief for a UK Dentist Working Abroad: Avoiding Being
 slug: "dentist-working-abroad-double-tax-treaty-relief"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-working-abroad-double-tax-treaty-relief"
 date: "2026-06-04"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "Double-Tax-Treaty Relief for Dentists Working Abroad"

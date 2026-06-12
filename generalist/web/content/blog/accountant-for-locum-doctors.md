@@ -3,6 +3,7 @@ title: "Accountant for Locum Doctors: Tax, IR35, and Limited Company Guidance"
 slug: "accountant-for-locum-doctors"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-locum-doctors"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Locum Doctors | Tax, IR35 & Limited Company"

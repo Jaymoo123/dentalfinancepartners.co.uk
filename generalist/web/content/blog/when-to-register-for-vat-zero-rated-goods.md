@@ -3,6 +3,7 @@ title: "When Should You Register for VAT If You Sell Zero-Rated Goods?"
 slug: "when-to-register-for-vat-zero-rated-goods"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/when-to-register-for-vat-zero-rated-goods"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "When to register for VAT: zero-rated goods guide for UK"

@@ -3,6 +3,7 @@ title: "R&D Tax Credits for Software Companies: A Practical Guide for UK Develop
 slug: "r-and-d-tax-credits-for-software-companies"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credits-for-software-companies"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "R&D Tax Credits for Software Companies | UK Developer Guide"

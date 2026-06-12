@@ -3,6 +3,7 @@ title: How to Vet an Accountant's IR35 Experience Before Hiring Them for Your Ag
 slug: vet-accountant-ir35-experience-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/vet-accountant-ir35-experience-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: How to Vet an Accountant's IR35 Experience for Your Agency

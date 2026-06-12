@@ -3,6 +3,7 @@ title: "What Do Accounting Service Charges Cover in 2025/26? A Full Breakdown fo
 slug: "accounting-service-charges-2025-26-breakdown"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-service-charges-2025-26-breakdown"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accounting Service Charges 2025/26: What UK Businesses Pay"

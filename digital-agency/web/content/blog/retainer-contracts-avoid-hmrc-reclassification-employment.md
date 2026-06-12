@@ -3,6 +3,7 @@ title: Can a Client Retainer Deal Get Your Agency Staff Reclassified as Employee
 slug: retainer-contracts-avoid-hmrc-reclassification-employment
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/retainer-contracts-avoid-hmrc-reclassification-employment
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Retainer Contracts and HMRC: Avoid Employee'

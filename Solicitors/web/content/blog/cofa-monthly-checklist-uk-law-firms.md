@@ -3,6 +3,7 @@ title: "What Should a COFA Monthly Checklist Include for UK Law Firms?"
 slug: "cofa-monthly-checklist-uk-law-firms"
 canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/cofa-monthly-checklist-uk-law-firms"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
 metaTitle: "COFA Monthly Checklist UK Law Firms | SRA Compliance Tasks"

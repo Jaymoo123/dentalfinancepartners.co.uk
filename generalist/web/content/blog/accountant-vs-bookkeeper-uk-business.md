@@ -3,6 +3,7 @@ title: "Accountant vs Bookkeeper: Which One Does Your Business Actually Need?"
 slug: "accountant-vs-bookkeeper-uk-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-vs-bookkeeper-uk-business"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant vs Bookkeeper: Which Does Your UK Business Need?"

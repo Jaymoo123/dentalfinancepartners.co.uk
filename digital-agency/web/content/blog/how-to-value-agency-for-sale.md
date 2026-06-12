@@ -3,6 +3,7 @@ title: 'How to Value Your Agency for Sale: A Practical Guide for UK Founders'
 slug: how-to-value-agency-for-sale
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/how-to-value-agency-for-sale
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Agency Valuation UK: Sell Your Agency at Top Price'

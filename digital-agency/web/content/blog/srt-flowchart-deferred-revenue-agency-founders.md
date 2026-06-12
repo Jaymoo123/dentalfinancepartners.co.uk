@@ -3,6 +3,7 @@ title: What the SRT Flowchart Doesn't Tell You About Your Agency's Deferred Reve
 slug: srt-flowchart-deferred-revenue-agency-founders
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/srt-flowchart-deferred-revenue-agency-founders
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Statutory Residence Test: The Deferred Revenue Trap'

@@ -3,6 +3,7 @@ title: How to Handle VAT on a One-Off US Client Project Without Registering for 
 slug: vat-one-off-us-client-project-uk-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-one-off-us-client-project-uk-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'VAT on one-off US client project: UK agency guide'

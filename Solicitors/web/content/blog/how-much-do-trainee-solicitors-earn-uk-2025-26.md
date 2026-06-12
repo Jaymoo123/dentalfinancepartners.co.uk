@@ -3,6 +3,7 @@ title: How Much Do UK Trainee Solicitors Earn in 2025/26?
 slug: how-much-do-trainee-solicitors-earn-uk-2025-26
 canonical: https://www.accountsforlawyers.co.uk/blog/trainee-paralegal-tax/how-much-do-trainee-solicitors-earn-uk-2025-26
 date: '2026-05-19'
+generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: Trainee & Paralegal Tax
 metaTitle: Trainee Solicitor Salary UK by Firm Type and Region

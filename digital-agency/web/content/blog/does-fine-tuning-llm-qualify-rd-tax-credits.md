@@ -3,6 +3,7 @@ title: Does Fine-Tuning an LLM Qualify for R&D Tax Credits?
 slug: does-fine-tuning-llm-qualify-rd-tax-credits
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/does-fine-tuning-llm-qualify-rd-tax-credits
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Does Fine-Tuning an LLM Qualify for R&D Tax Credits?

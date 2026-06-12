@@ -3,6 +3,7 @@ title: 'Dubai Agency Setup: The Visa Sponsorship Problem When You''re the Only E
 slug: dubai-agency-setup-visa-sponsorship-solo-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-setup-visa-sponsorship-solo-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: Dubai Agency Setup and the Solo Founder Visa Problem

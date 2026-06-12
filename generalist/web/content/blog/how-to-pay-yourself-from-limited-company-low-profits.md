@@ -3,6 +3,7 @@ title: "How to Pay Yourself From a Limited Company When Profits Are Low"
 slug: "how-to-pay-yourself-from-limited-company-low-profits"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-low-profits"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "How to Pay Yourself From a Limited Company When Profits"

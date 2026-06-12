@@ -3,6 +3,7 @@ title: "The financial due diligence checklist for practice acquisition"
 slug: "practice-acquisition-financial-due-diligence"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/practice-acquisition-financial-due-diligence"
 date: "2026-03-22"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

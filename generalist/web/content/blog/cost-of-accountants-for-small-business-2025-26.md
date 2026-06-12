@@ -3,6 +3,7 @@ title: "What Do Accountants for Small Business Cost in 2025/26? Full Fee Breakdo
 slug: "cost-of-accountants-for-small-business-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/cost-of-accountants-for-small-business-2025-26"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Cost of Accountants for Small Business 2025/26: Fee"

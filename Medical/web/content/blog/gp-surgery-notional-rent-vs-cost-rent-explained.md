@@ -3,6 +3,7 @@ title: "Notional Rent vs Cost Rent Explained: NHS GP Premises Funding and Tax"
 slug: "gp-surgery-notional-rent-vs-cost-rent-explained"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-surgery-notional-rent-vs-cost-rent-explained"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Notional Rent vs Cost Rent: GP Surgery Premises Guide"

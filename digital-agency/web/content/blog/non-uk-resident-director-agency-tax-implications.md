@@ -3,6 +3,7 @@ title: What Are the Tax Implications of Having a Non-UK Resident Director in You
 slug: non-uk-resident-director-agency-tax-implications
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/non-uk-resident-director-agency-tax-implications
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Non-UK Director Tax: Agency Implications Explained'

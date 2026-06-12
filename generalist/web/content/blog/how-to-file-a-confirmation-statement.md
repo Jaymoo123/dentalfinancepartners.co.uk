@@ -3,6 +3,7 @@ title: "How to File a Confirmation Statement: A Step-by-Step Guide for UK Direct
 slug: "how-to-file-a-confirmation-statement"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/how-to-file-a-confirmation-statement"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "How to file a confirmation statement: step-by-step UK guide"

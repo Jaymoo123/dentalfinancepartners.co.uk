@@ -3,6 +3,7 @@ title: What Is the Dividend Allowance for Agency Directors in 2025/26 and How to
 slug: dividend-allowance-2025-26-agency-directors
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-allowance-2025-26-agency-directors
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Dividend Allowance 2025/26: Agency Directors'' Guide'

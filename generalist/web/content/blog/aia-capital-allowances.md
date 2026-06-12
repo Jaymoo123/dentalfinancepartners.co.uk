@@ -3,6 +3,7 @@ title: 'AIA Capital Allowances: What UK Businesses Need to Know'
 slug: aia-capital-allowances
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/aia-capital-allowances
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'AIA Capital Allowances: Full Guide for UK Businesses'

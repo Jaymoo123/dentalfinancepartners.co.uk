@@ -3,6 +3,7 @@ title: 'Revenue vs Billings for a Recruitment Agency: What’s the Difference?'
 slug: revenue-vs-billings-recruitment-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/revenue-vs-billings-recruitment-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Revenue vs Billings for Recruiters: Key Difference'

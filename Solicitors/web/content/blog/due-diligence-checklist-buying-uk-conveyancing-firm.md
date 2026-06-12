@@ -3,6 +3,7 @@ title: "How to Run a Due Diligence Checklist When Buying a UK Conveyancing Law F
 slug: "due-diligence-checklist-buying-uk-conveyancing-firm"
 canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-and-merger/due-diligence-checklist-buying-uk-conveyancing-firm"
 date: "2026-05-18"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Firm Acquisition & Merger"
 metaTitle: "Buying a Conveyancing Firm: Due Diligence Checklist for Solicitors"

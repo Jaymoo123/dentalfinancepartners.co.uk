@@ -3,6 +3,7 @@ title: "Accounting for Mixed NHS and Private Income in a Dental Practice"
 slug: "accounting-for-mixed-nhs-private-dental-income"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/accounting-for-mixed-nhs-private-dental-income"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Accounting"
 metaTitle: "Accounting for Mixed NHS and Private Dental Income"

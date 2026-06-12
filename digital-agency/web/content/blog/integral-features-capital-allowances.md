@@ -3,6 +3,7 @@ title: 'Integral Features Capital Allowances: A Guide for UK Agency Founders'
 slug: integral-features-capital-allowances
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/integral-features-capital-allowances
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Integral Features Capital Allowances: What Agency Founders'

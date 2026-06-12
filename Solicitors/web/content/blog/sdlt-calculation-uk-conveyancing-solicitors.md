@@ -3,6 +3,7 @@ title: "How Do Conveyancing Solicitors Calculate SDLT for UK Property Transactio
 slug: "sdlt-calculation-uk-conveyancing-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/sdlt-calculation-uk-conveyancing-solicitors"
 date: "2026-05-18"
+generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Conveyancing Compliance"
 metaTitle: "SDLT Calculation UK 2025/26: Guide for Conveyancing Solicitors"

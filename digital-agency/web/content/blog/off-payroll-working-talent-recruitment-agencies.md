@@ -3,6 +3,7 @@ title: 'Off-Payroll Working for Recruitment Agencies: Your Compliance Checklist'
 slug: off-payroll-working-talent-recruitment-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/off-payroll-working-talent-recruitment-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Off-Payroll Working for Recruitment Agencies: Compliance'

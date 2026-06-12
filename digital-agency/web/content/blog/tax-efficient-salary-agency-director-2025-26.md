@@ -3,6 +3,7 @@ title: What Is the Most Tax-Efficient Salary for an Agency Director with No Othe
 slug: tax-efficient-salary-agency-director-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/tax-efficient-salary-agency-director-2025-26
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Agency Director Tax-Efficient Salary 2025/26: Best Rate'

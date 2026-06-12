@@ -3,6 +3,7 @@ title: How to Claim Capital Allowances on Office Fit-Out Costs for Your Agency
 slug: capital-allowances-office-fit-out-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-office-fit-out-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Claim capital allowances on agency office fit-out costs

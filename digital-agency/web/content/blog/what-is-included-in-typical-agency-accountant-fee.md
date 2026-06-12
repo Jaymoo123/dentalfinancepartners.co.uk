@@ -3,6 +3,7 @@ title: "What Is Included in a Typical Agency Accountant Fee and What Is Extra"
 slug: "what-is-included-in-typical-agency-accountant-fee"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-is-included-in-typical-agency-accountant-fee"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "Agency Accountant Services"
 metaTitle: "Agency Accountant Cost: What's Included vs What's Extra"

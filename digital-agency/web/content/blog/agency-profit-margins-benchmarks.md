@@ -3,6 +3,7 @@ title: What Are Normal Agency Profit Margins? Benchmarks for UK Agency Owners
 slug: agency-profit-margins-benchmarks
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-profit-margins-benchmarks
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Profit Margins: UK Benchmarks for 2025'

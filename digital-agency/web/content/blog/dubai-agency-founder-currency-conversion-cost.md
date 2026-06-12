@@ -3,6 +3,7 @@ title: 'Dubai Agency Founder: The Currency Conversion Cost That Eats 3% of Every
 slug: dubai-agency-founder-currency-conversion-cost
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-founder-currency-conversion-cost
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Dubai Agency Founder: The Currency Conversion Cost Eating'

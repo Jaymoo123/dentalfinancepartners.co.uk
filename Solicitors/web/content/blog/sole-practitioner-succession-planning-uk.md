@@ -3,6 +3,7 @@ title: "How Does a Sole Practitioner Solicitor Plan for Succession and Exit?"
 slug: "sole-practitioner-succession-planning-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-succession/sole-practitioner-succession-planning-uk"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Sale & Succession"
 metaTitle: "Sole Practitioner Succession Planning for UK Solicitors"

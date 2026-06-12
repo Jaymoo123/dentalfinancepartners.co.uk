@@ -3,6 +3,7 @@ title: "What Are the Tax Implications of Opting Out of an NHS Dental Contract?"
 slug: "opt-out-of-nhs-dental-contract-tax-implications"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/opt-out-of-nhs-dental-contract-tax-implications"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

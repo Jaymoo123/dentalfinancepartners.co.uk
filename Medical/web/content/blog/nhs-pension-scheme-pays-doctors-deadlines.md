@@ -3,6 +3,7 @@ title: 'Scheme Pays for Doctors: NHS Pension Annual Allowance Charge Deadlines E
 slug: nhs-pension-scheme-pays-doctors-deadlines
 canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines
 date: '2026-06-03'
+generator: opus-4.8/netnew-wave
 author: Medical Accountants UK Editorial Team
 category: NHS Pension Planning
 metaTitle: 'NHS Pension Scheme Pays for Doctors: Deadlines Guide'

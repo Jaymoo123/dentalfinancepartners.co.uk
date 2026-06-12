@@ -3,6 +3,7 @@ title: 'AIA Capital Allowance for Dental Equipment: A Complete Guide'
 slug: aia-capital-allowance-dental-equipment
 canonical: https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/aia-capital-allowance-dental-equipment
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
 metaTitle: 'AIA Capital Allowance: Claim £1m on Dental Equipment'

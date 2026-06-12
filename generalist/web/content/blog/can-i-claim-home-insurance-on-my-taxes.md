@@ -3,6 +3,7 @@ title: "Can I Claim Home Insurance on My Taxes? The Full UK Business Owner's Gui
 slug: "can-i-claim-home-insurance-on-my-taxes"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/can-i-claim-home-insurance-on-my-taxes"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Can I claim home insurance on my taxes? UK business guide"

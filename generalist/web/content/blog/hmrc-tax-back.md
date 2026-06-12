@@ -3,6 +3,7 @@ title: 'HMRC Tax Back: How to Claim a Refund on Overpaid Tax'
 slug: hmrc-tax-back
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/hmrc-tax-back
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'HMRC Tax Back: How to Claim a Refund on Overpaid Tax'

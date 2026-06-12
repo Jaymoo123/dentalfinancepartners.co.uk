@@ -3,6 +3,7 @@ title: "What Your Accountant Needs From You Every Month"
 slug: "what-to-send-accountant-monthly"
 canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/what-to-send-accountant-monthly"
 date: "2026-05-16"
+generator: unverified/claude-era
 author: "Agency Founder Finance Editorial Team"
 category: "Agency Finance Essentials"
 metaTitle: "What Your Accountant Needs From You Every Month"

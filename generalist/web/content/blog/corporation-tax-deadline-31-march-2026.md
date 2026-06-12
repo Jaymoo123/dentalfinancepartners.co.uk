@@ -3,6 +3,7 @@ title: "What Is The Deadline For Filing Corporation Tax If My Company's Year End
 slug: "corporation-tax-deadline-31-march-2026"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-deadline-31-march-2026"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax Deadline 31 March 2026: Key Dates"

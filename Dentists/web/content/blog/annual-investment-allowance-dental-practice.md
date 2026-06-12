@@ -3,6 +3,7 @@ title: 'Annual Investment Allowance for Dental Practices: A Complete Guide'
 slug: annual-investment-allowance-dental-practice
 canonical: https://www.dentalfinancepartners.co.uk/blog/annual-investment-allowance-dental-practice
 date: '2026-05-19'
+generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: General
 metaTitle: Annual Investment Allowance for Dental Practices

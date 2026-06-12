@@ -3,6 +3,7 @@ title: 'Selling UK Property as Non-Resident: The 60-Day Deadline Most Expats Mis
 slug: selling-uk-property-non-resident-60-day-deadline
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/selling-uk-property-non-resident-60-day-deadline
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Selling UK Property as a Non-Resident: 60-Day CGT Rule'

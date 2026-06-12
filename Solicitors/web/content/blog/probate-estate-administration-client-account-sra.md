@@ -3,6 +3,7 @@ title: "Estate Administration Money and the SRA Client Account: A Probate Guide"
 slug: "probate-estate-administration-client-account-sra"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/probate-estate-administration-client-account-sra"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Probate Money and the SRA Client Account: Estate Guide"

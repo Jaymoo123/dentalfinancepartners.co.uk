@@ -3,6 +3,7 @@ title: What to Look for in an Accountant Who Specialises in Creative Agencies
 slug: what-to-look-for-in-an-accountant-specialises-creative-agencies
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-to-look-for-in-an-accountant-specialises-creative-agencies
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: What to Look for in an Accountant Specialises Creative

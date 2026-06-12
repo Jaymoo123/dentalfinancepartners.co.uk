@@ -3,6 +3,7 @@ title: "Financing a Dental Partnership Buy-In: How an Associate Buys Into the Pr
 slug: "dental-partner-buy-in-financing-tax-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-partner-buy-in-financing-tax-guide"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "Dental Partnership Buy-In: Financing and Tax Guide"

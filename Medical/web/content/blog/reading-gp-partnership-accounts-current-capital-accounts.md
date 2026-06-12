@@ -3,6 +3,7 @@ title: "How to Read a Set of GP Partnership Accounts: Current and Capital Accoun
 slug: "reading-gp-partnership-accounts-current-capital-accounts"
 canonical: "https://www.medicalaccounts.co.uk/blog/reading-gp-partnership-accounts-current-capital-accounts"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "How to Read GP Partnership Accounts: A Partner's Guide"

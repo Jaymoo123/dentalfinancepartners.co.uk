@@ -3,6 +3,7 @@ title: What Is the Section 455 Tax Charge on Director's Loans and How Do You Avo
 slug: section-455-tax-charge-directors-loans-agency
 canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/section-455-tax-charge-directors-loans-agency
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Section 455 tax charge on director's loans explained

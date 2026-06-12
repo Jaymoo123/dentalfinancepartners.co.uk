@@ -2,6 +2,7 @@
 title: "Inter-Company Loans and Dividends in UK Dental Groups"
 slug: "inter-company-loans-dividends-dental-groups-uk"
 date: "2026-03-28"
+generator: claude/legacy-supabase
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"

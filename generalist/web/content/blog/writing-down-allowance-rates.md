@@ -3,6 +3,7 @@ title: 'Writing Down Allowance Rates 2025/26: A Complete Guide'
 slug: writing-down-allowance-rates
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/writing-down-allowance-rates
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Writing Down Allowance Rates 2025/26: UK Guide'

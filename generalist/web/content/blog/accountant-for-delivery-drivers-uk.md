@@ -3,6 +3,7 @@ title: Do Delivery Drivers in the UK Need a Specialist Accountant?
 slug: accountant-for-delivery-drivers-uk
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-delivery-drivers-uk
 date: '2026-05-17'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Accountant for Delivery Drivers and Couriers in the UK

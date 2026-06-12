@@ -3,6 +3,7 @@ title: 'Tax Deducted at Source: A Complete Guide for UK Taxpayers'
 slug: tax-deducted-at-source
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/tax-deducted-at-source
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
 metaTitle: 'Tax Deducted at Source: Complete UK Guide for Taxpayers'

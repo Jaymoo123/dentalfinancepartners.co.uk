@@ -3,6 +3,7 @@ title: How to Structure a Management Buyout of Your Agency Without External Fund
 slug: management-buyout-agency-without-funding
 canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/management-buyout-agency-without-funding
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Management buyout agency without funding: how to structure'

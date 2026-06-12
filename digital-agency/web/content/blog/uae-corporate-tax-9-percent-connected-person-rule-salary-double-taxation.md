@@ -3,6 +3,7 @@ title: 'UAE Corporate Tax 9%: The Connected Person Rule That Could Tax Your Agen
 slug: uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation
 canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'UAE Corporate Tax 9%: The Connected Person Rule & Your'

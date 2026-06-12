@@ -3,6 +3,7 @@ title: "Funding a Squat Dental Practice Through the Ramp: Working Capital and th
 slug: "squat-dental-practice-working-capital-ramp-finance"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/squat-dental-practice-working-capital-ramp-finance"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
 metaTitle: "Funding a Squat Dental Practice: Ramp and Loss Relief"

@@ -3,6 +3,7 @@ title: 'How to Pay Yourself as an Agency Founder: Salary vs Dividends'
 slug: how-to-pay-yourself-agency-founder
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/how-to-pay-yourself-agency-founder
 date: '2026-05-16'
+generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Salary vs Dividends: How Agency Founders Pay Themselves'

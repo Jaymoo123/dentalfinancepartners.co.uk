@@ -3,6 +3,7 @@ title: Can You Claim AIA on Second-Hand Assets?
 slug: can-you-claim-aia-on-second-hand-assets
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/can-you-claim-aia-on-second-hand-assets
 date: '2026-05-20'
+generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: Can You Claim AIA on Second-Hand Assets? Yes, Mostly

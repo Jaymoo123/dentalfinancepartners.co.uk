@@ -3,6 +3,7 @@ title: What Does a Specialist Dental Accountant Do That a General Accountant Can
 slug: specialist-dental-accountants
 canonical: https://www.dentalfinancepartners.co.uk/blog/practice-accounting/specialist-dental-accountants
 date: '2026-05-20'
+generator: deepseek-chat/unverified
 updatedDate: "2026-06-03"
 author: Dental Finance Partners Editorial Team
 category: Practice Accounting

@@ -3,6 +3,7 @@ title: "Dental Practice Cash Flow Management and Setting Aside Tax Reserves"
 slug: "dental-practice-cash-flow-management-tax-reserves"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-cash-flow-management-tax-reserves"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice Finance"
 metaTitle: "Dental Practice Cash Flow and Tax Reserves Explained"

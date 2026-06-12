@@ -3,6 +3,7 @@ title: "How Do UK Solicitor Partners Handle Parental Leave Pay and Tax in an LLP
 slug: "parental-leave-pay-for-uk-solicitors-partners"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/parental-leave-pay-for-uk-solicitors-partners"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Structure"
 metaTitle: "Solicitor Partner Parental Leave Tax: LLP Maternity Pay Guide"

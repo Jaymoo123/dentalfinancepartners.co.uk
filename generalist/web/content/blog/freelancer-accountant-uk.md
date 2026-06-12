@@ -3,6 +3,7 @@ title: "What Does a Freelancer Accountant UK Do for Contractors and Small Busine
 slug: "freelancer-accountant-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/freelancer-accountant-uk"
 date: "2026-05-17"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Freelancer Accountant UK: What They Do for Contractors"

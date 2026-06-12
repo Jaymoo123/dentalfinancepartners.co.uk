@@ -3,6 +3,7 @@ title: "Selling a Dental Practice Around the 6 April 2026 BADR Rise: How to Time
 slug: "selling-dental-practice-badr-rate-rise-2026-timing"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/selling-dental-practice-badr-rate-rise-2026-timing"
 date: "2026-06-03"
+generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
 metaTitle: "BADR Rate Rise 2026: Timing a Dental Practice Sale"

@@ -3,6 +3,7 @@ title: "IR35 for Dental Associates: What the 2025/26 Rules Mean for Your Tax Sta
 slug: "ir35-dental-associates-2025-26-rules"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dental-associates-2025-26-rules"
 date: "2026-05-18"
+generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
 metaTitle: "IR35 Dental Associates 2025/26: Tax Status Rules & Off-Payroll Working"
