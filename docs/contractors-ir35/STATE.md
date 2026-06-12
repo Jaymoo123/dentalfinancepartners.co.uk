@@ -1,6 +1,15 @@
 # contractors-ir35 (Contractor Finance Partners) — site state
 
-Last updated 2026-06-12. The 7th estate site, the first BORN on the standardised grid (machinery composed before launch rather than retrofitted). Built to deploy-ready in one session via `docs/_engines/SITE_SPINUP.md` (written from this launch); **NOT YET DEPLOYED — deploy deferred by user to a single window when the domain is purchased.**
+Last updated 2026-06-12 (PM: wave 2 closed, session PAUSED by user). The 7th estate site, the first BORN on the standardised grid (machinery composed before launch rather than retrofitted). Built to deploy-ready in one session via `docs/_engines/SITE_SPINUP.md`; **NOT YET DEPLOYED — deploy deferred by user to a single window when the domain is purchased.**
+
+## ⚡ RESUME HERE (next manager)
+
+The site carries **50 blog pages** (15 wave-1 + 35 wave-2), all through the full QA chain, build green 86/86. Conduct rules: fresh-session manager with this file + the wave tracker as context; batch-triage agent notifications; Sonnet judging panel + deterministic grep sweeps; Opus only for pillars/repairs (model-tiering memory: feedback_no_deepseek_opus_only, Amendments 1-3).
+
+Outstanding, in order:
+1. **Topic bookkeeping (1 command + sign-off):** `python .cache/mark_used_wave2.py --apply` — 169 previewed rows (manager-reviewed 2026-06-12), prod DB write. If `.cache` was cleaned, the script is reproducible from `WAVE2_TRACKER.md`'s pattern list.
+2. **Deploy day** (domain-purchase gated): the runbook below, unchanged. Core pages were money-keyword-optimised (W2-B per `MONEY_KEYWORDS.md` §2, LOCKED).
+3. Post-launch projects parked: calculators fleet (signature IR35 take-home tool first), wave 3 (583 pool topics remain), GSC/GA4 engines, experiments.
 
 ## Identity
 
@@ -28,9 +37,11 @@ Last updated 2026-06-12. The 7th estate site, the first BORN on the standardised
 ## Content
 
 - HP-LOCKED ground truth: `house_positions.md` (17 sections, FA 2026-verified, manager spot-checked at lock). One standing flag: Churchill Knight/Boox MSC litigation undecided (hearings Jun + Nov 2026) — re-check §13 before citing
-- Wave 1 CLOSED 2026-06-12: 15 pages (9 pillars + 6 clusters) + the flagship replacing the fixture post; full QA chain (deterministic validator → 5 blind Opus judges → 2nd-judge re-verification → 4 Opus repairs + manager back-patches); tracker `WAVE1_TRACKER.md`
-- Writing-model bake-off: `BAKEOFF_2026-06.md`. Result: Sonnet qualified for volume (Opus pillars/judging), **Haiku disqualified from content** (5/6 drafts factually unsound). **Volume-model policy OPEN**: user proposed DeepSeek for sandbox-period volume; decision pending (see bake-off doc for the economics evidence)
-- 10 static /for/[type] pages + services/ir35-status landing pages from the original scaffold (petrol-reskinned)
+- Wave 1 CLOSED 2026-06-12: 15 pages; full QA chain; tracker `WAVE1_TRACKER.md`
+- Writing-model bake-off: `BAKEOFF_2026-06.md`. **DECIDED 2026-06-12: Sonnet volume / Opus pillars+judging+repairs / Haiku banned from content; user rejected his own DeepSeek-sandbox idea after the economics.** Cost levers added same day: fresh-session conducting + Sonnet judging panels (see memory feedback_no_deepseek_opus_only Amendment 3)
+- Wave 2 CLOSED 2026-06-12: 35 money-map pages per `MONEY_KEYWORDS.md` §3 (LOCKED); full record + resume checklist in `WAVE2_TRACKER.md`; bookkeeping step pending (see RESUME above)
+- Money-keyword map LOCKED: `MONEY_KEYWORDS.md` (tiered terms → one owning page each; core-page mapping implemented as W2-B; don't-chase list). FA-2026 stale-figure sweep done across static pages + blog config (dividend 10.75/35.75, thresholds £15m/£7.5m)
+- 10 static /for/[type] pages + services/ir35-status landing pages, petrol-reskinned and money-keyword-optimised (ir35-status now reads as the IR35-contract-review service page)
 
 ## DEPLOY DAY RUNBOOK (everything below is the only remaining work)
 

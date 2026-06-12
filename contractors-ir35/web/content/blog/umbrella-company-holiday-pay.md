@@ -158,7 +158,7 @@ faqs:
 
 <p>An umbrella that rolls up holiday pay and then informally discourages or prevents workers from taking leave is in breach of the Working Time Regulations, regardless of what the contract says. You have the right to take 28 days of leave per year. If an umbrella or agency suggests that taking leave will result in the assignment ending or the rate being reduced, that is a serious compliance issue worth raising with ACAS and, depending on the circumstances, reporting to HMRC.</p>
 
-<h2>The avoidance-scheme warning: §17.F applied</h2>
+<h2>The avoidance-scheme warning</h2>
 
 <p>The most dangerous version of the umbrella problem is not a poorly run compliant umbrella: it is an arrangement designed from the start to avoid PAYE by paying workers through mechanisms that are not wages.</p>
 

@@ -64,7 +64,7 @@ export default async function ContractorTypePage({
               href="/ir35-status"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-8 py-3.5 text-base font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
             >
-              IR35 explained
+              IR35 contract review
             </Link>
           </div>
         </div>

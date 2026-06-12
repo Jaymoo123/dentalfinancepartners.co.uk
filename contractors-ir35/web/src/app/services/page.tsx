@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contractor Accountant Services | IR35, Ltd Company Tax, Expenses",
+  title: "Contractor Accountancy Services | IR35 & Ltd Co Tax",
   description:
     "Specialist accounting services for UK contractors. IR35 status reviews, limited company accounts, corporation tax, salary and dividend planning, expenses and pension.",
 };
@@ -72,7 +72,7 @@ const services = [
     label: "Pension Strategy",
     Icon: PiggyBank,
     body: [
-      "Employer pension contributions from your PSC are one of the most tax-efficient tools available to a contractor. They are an allowable business expense (reducing your corporation tax bill) and are exempt from income tax for you as the recipient, up to the annual allowance (£60,000 in 2024/25, or 100% of your relevant UK earnings if lower).",
+      "Employer pension contributions from your PSC are one of the most tax-efficient tools available to a contractor. They are an allowable business expense (reducing your corporation tax bill) and are exempt from income tax for you as the recipient, up to the annual allowance (£60,000 in 2026/27; personal contributions are also capped at 100% of your relevant UK earnings).",
       "Unlike salary sacrifice in an employment context, contributions from a PSC are made as employer contributions directly. We build this into your annual planning so contributions are sized to make best use of the allowance and your carry-forward entitlement.",
     ],
   },
@@ -96,10 +96,10 @@ export default function ServicesPage() {
         <div className={siteContainerLg}>
           <div className="section-label mb-6">What we do</div>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Specialist services for UK contractors.
+            Contractor accountancy services
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            Every service we offer is designed specifically for contractors and PSC directors. We do not offer general accountancy services to non-contractors.
+            Specialist services for UK contractors and PSC directors. Every service we offer is designed specifically for contracting. We do not offer general accountancy services to non-contractors.
           </p>
         </div>
       </section>
@@ -161,6 +161,13 @@ export default function ServicesPage() {
               Email us directly
             </a>
           </div>
+          <p className="mt-10 text-sm text-neutral-500">
+            We work with all types of UK contractors.{" "}
+            <Link href="/for" className="font-medium text-cyan-800 underline underline-offset-4 hover:text-cyan-900 transition-colors">
+              See the sectors we cover
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </>

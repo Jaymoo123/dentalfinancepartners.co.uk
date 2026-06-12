@@ -3,9 +3,9 @@ import Link from "next/link";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
-  title: "IR35 Status Review | Inside vs Outside IR35 Explained",
+  title: "IR35 Contract Review & Status Service | UK",
   description:
-    "Understand your IR35 status. We review your contract and working practices against the three key tests. Plain English advice for UK contractors.",
+    "Professional IR35 contract review for UK contractors. We assess your contract terms and actual working practices against all three tests. Plain English written opinion.",
 };
 
 const statusTests = [
@@ -51,9 +51,54 @@ export default function IR35StatusPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             IR35 is assessed contract by contract. A single status for all your engagements does not exist. We review your specific contract and how you actually work.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
             <Link href="/contact" className={btnPrimary}>
-              Book a free IR35 review
+              Book your IR35 contract review
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* IR35 contract review — service block */}
+      <section className="border-b border-neutral-200 bg-[#fafaf7]">
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <div className="section-label mb-4">The service</div>
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
+            IR35 contract review: what it covers.
+          </h2>
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+            Our IR35 contract review goes beyond running your paperwork through the CEST tool. We look at three things together.
+          </p>
+          <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
+            {[
+              {
+                heading: "Contract terms",
+                body: "We read the written contract for clauses that create employment-type obligations, including direction over how the work is done, restrictions on substitution, and expectations of continued engagement. We flag anything that creates risk and recommend specific wording changes where the position can be improved.",
+              },
+              {
+                heading: "Actual working practices",
+                body: "Contract wording is not enough on its own. HMRC looks at how the engagement works in practice. We discuss how you actually work with your client, including who directs your day-to-day work, whether substitution is genuinely possible, and whether there is an expectation of ongoing work on either side.",
+              },
+              {
+                heading: "The three IR35 tests",
+                body: "We assess control, substitution and mutuality of obligation for your specific engagement. Where the position is borderline, we tell you which test is the weak point and what would need to change in practice (not just on paper) to improve the position.",
+              },
+            ].map((item) => (
+              <div key={item.heading} className="bg-white border border-neutral-200 p-6 sm:p-8 border-t-4 border-t-cyan-700">
+                <h3 className="text-lg font-bold text-neutral-900">{item.heading}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 bg-white border border-neutral-200 p-6 sm:p-8">
+            <h3 className="text-base font-bold text-neutral-900">What you get back</h3>
+            <p className="mt-2 text-sm leading-relaxed text-neutral-600 sm:text-base">
+              A written opinion on your status covering the three tests, a summary of the risk factors identified in your contract and working practices, and specific recommendations on what (if anything) needs to change. For medium and large end clients, we also explain your rights around the Status Determination Statement and the formal disagreement process.
+            </p>
+          </div>
+          <div className="mt-8">
+            <Link href="/contact" className={btnPrimary}>
+              Book your IR35 contract review
             </Link>
           </div>
         </div>
@@ -149,11 +194,11 @@ export default function IR35StatusPage() {
             Not sure where your contract sits?
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-            We review your contract wording and your actual working practices. We give you a clear view of your position and what, if anything, you should change.
+            Book an IR35 contract review. We look at your contract wording and your actual working practices, apply the three tests, and give you a clear written opinion on your position.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/contact" className={btnPrimary}>
-              Book a free IR35 review
+              Book your IR35 contract review
             </Link>
             <Link
               href="/blog"
@@ -162,6 +207,13 @@ export default function IR35StatusPage() {
               Read our IR35 guides
             </Link>
           </div>
+          <p className="mt-10 text-sm text-neutral-500">
+            We cover all contractor sectors.{" "}
+            <Link href="/for" className="font-medium text-cyan-800 underline underline-offset-4 hover:text-cyan-900 transition-colors">
+              See who we help
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </>

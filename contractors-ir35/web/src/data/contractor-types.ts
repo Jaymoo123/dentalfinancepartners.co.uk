@@ -166,7 +166,7 @@ export const contractorTypes: ContractorType[] = [
     slug: "finance-contractors",
     title: "Finance Contractors",
     headline: "Specialist accountants for finance and interim contractors",
-    metaTitle: "Accountants for Finance Contractors | Interim CFO, FD & Analyst Tax Advice",
+    metaTitle: "Accountants for Finance & Interim Contractors | IR35",
     metaDescription:
       "Tax and IR35 advice for UK finance contractors and interim executives. Interim FD, CFO, management accountant and financial analyst PSC planning.",
     intro:
@@ -486,7 +486,7 @@ export const contractorTypes: ContractorType[] = [
     slug: "legal-contractors",
     title: "Legal Contractors",
     headline: "Specialist accountants for locum solicitors and legal contractors",
-    metaTitle: "Accountants for Locum Solicitors & Legal Contractors | IR35 Advice",
+    metaTitle: "Accountants for Locum Solicitors | Legal Contractor IR35",
     metaDescription:
       "Tax and IR35 advice for locum solicitors, contract lawyers and independent legal contractors. PSC accounting, expenses and compliance for legal professionals.",
     intro:
@@ -610,7 +610,7 @@ export const contractorTypes: ContractorType[] = [
     slug: "construction-contractors",
     title: "Construction and Architecture Contractors",
     headline: "Specialist accountants for construction and architecture contractors",
-    metaTitle: "Accountants for Construction Contractors & Architects | IR35 & CIS",
+    metaTitle: "Accountants for Construction Contractors | IR35 & CIS",
     metaDescription:
       "Tax, IR35 and CIS advice for UK construction contractors, architects and quantity surveyors. PSC planning, site expenses and compliance.",
     intro:
