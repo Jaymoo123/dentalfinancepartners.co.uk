@@ -51,85 +51,33 @@ function getPropertyExp(key: string): Experiment | null {
 
 describe("golden continuity suite", () => {
   const GOLDEN_TRIPLES: Array<{ visitorId: string; key: string; variant: string }> = [
-    // Fixed visitor id: v_abc123def456 across all 6 experiments
+    // Pinned for the LIVE experiments only (personalization + exit_intent_offer).
+    // The four CRO capture tests were retired 2026-06-16 (shipped as defaults, or
+    // mooted by mandatory phone), so their continuity no longer matters. These
+    // triples stay byte-identical to the pre-lift values for the live experiments.
     { visitorId: "v_abc123def456", key: "personalization", variant: "treatment" },
-    { visitorId: "v_abc123def456", key: "calc_result_capture", variant: "treatment" },
     { visitorId: "v_abc123def456", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_abc123def456", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_abc123def456", key: "mobile_tool_capture", variant: "treatment" },
-    { visitorId: "v_abc123def456", key: "lead_form_length", variant: "treatment" },
-    // Fixed visitor id: v_xyz789uvw012 (this visitor lands in control for most)
     { visitorId: "v_xyz789uvw012", key: "personalization", variant: "control" },
-    { visitorId: "v_xyz789uvw012", key: "calc_result_capture", variant: "control" },
     { visitorId: "v_xyz789uvw012", key: "exit_intent_offer", variant: "control" },
-    { visitorId: "v_xyz789uvw012", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_xyz789uvw012", key: "mobile_tool_capture", variant: "control" },
-    { visitorId: "v_xyz789uvw012", key: "lead_form_length", variant: "treatment" },
-    // Fixed visitor id: v_111aaa222bbb
     { visitorId: "v_111aaa222bbb", key: "personalization", variant: "treatment" },
-    { visitorId: "v_111aaa222bbb", key: "calc_result_capture", variant: "treatment" },
     { visitorId: "v_111aaa222bbb", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_111aaa222bbb", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_111aaa222bbb", key: "mobile_tool_capture", variant: "treatment" },
-    { visitorId: "v_111aaa222bbb", key: "lead_form_length", variant: "treatment" },
-    // Fixed visitor id: v_visitor_test (mix of control + treatment)
     { visitorId: "v_visitor_test", key: "personalization", variant: "treatment" },
-    { visitorId: "v_visitor_test", key: "calc_result_capture", variant: "control" },
     { visitorId: "v_visitor_test", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_visitor_test", key: "gate_to_form", variant: "treatment" },
-    { visitorId: "v_visitor_test", key: "mobile_tool_capture", variant: "control" },
-    { visitorId: "v_visitor_test", key: "lead_form_length", variant: "control" },
-    // Fixed visitor id: v_property_usr
     { visitorId: "v_property_usr", key: "personalization", variant: "treatment" },
-    { visitorId: "v_property_usr", key: "calc_result_capture", variant: "treatment" },
     { visitorId: "v_property_usr", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_property_usr", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_property_usr", key: "mobile_tool_capture", variant: "treatment" },
-    { visitorId: "v_property_usr", key: "lead_form_length", variant: "treatment" },
-    // Fixed visitor id: v_tester_00001
     { visitorId: "v_tester_00001", key: "personalization", variant: "control" },
-    { visitorId: "v_tester_00001", key: "calc_result_capture", variant: "treatment" },
     { visitorId: "v_tester_00001", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_tester_00001", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_tester_00001", key: "mobile_tool_capture", variant: "treatment" },
-    { visitorId: "v_tester_00001", key: "lead_form_length", variant: "treatment" },
-    // Fixed visitor id: v_tester_00002 (all-control visitor)
     { visitorId: "v_tester_00002", key: "personalization", variant: "control" },
-    { visitorId: "v_tester_00002", key: "calc_result_capture", variant: "control" },
     { visitorId: "v_tester_00002", key: "exit_intent_offer", variant: "control" },
-    { visitorId: "v_tester_00002", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_tester_00002", key: "mobile_tool_capture", variant: "control" },
-    { visitorId: "v_tester_00002", key: "lead_form_length", variant: "control" },
-    // Fixed visitor id: v_tester_00003
     { visitorId: "v_tester_00003", key: "personalization", variant: "control" },
-    { visitorId: "v_tester_00003", key: "calc_result_capture", variant: "treatment" },
     { visitorId: "v_tester_00003", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_tester_00003", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_tester_00003", key: "mobile_tool_capture", variant: "treatment" },
-    { visitorId: "v_tester_00003", key: "lead_form_length", variant: "control" },
-    // Fixed visitor id: v_tester_00004
     { visitorId: "v_tester_00004", key: "personalization", variant: "treatment" },
-    { visitorId: "v_tester_00004", key: "calc_result_capture", variant: "control" },
     { visitorId: "v_tester_00004", key: "exit_intent_offer", variant: "control" },
-    { visitorId: "v_tester_00004", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_tester_00004", key: "mobile_tool_capture", variant: "control" },
-    { visitorId: "v_tester_00004", key: "lead_form_length", variant: "treatment" },
-    // Fixed visitor id: v_tester_00005
     { visitorId: "v_tester_00005", key: "personalization", variant: "treatment" },
-    { visitorId: "v_tester_00005", key: "calc_result_capture", variant: "treatment" },
     { visitorId: "v_tester_00005", key: "exit_intent_offer", variant: "treatment" },
-    { visitorId: "v_tester_00005", key: "gate_to_form", variant: "control" },
-    { visitorId: "v_tester_00005", key: "mobile_tool_capture", variant: "treatment" },
-    { visitorId: "v_tester_00005", key: "lead_form_length", variant: "control" },
-    // Boundary triples -- probed by searching for hash % total === boundary value
-    // personalization: last-control bucket (24 of 100, weight split 25/75)
+    // Boundary triples for the 25/75 personalization split.
     { visitorId: "v_test_34", key: "personalization", variant: "control" },
-    // personalization: first-treatment bucket (25 of 100)
     { visitorId: "v_test_79", key: "personalization", variant: "treatment" },
-    // calc_result_capture: last-control bucket (49 of 100, weight split 50/50)
-    { visitorId: "v_test_99", key: "calc_result_capture", variant: "control" },
-    // calc_result_capture: first-treatment bucket (50 of 100)
-    { visitorId: "v_test_52", key: "calc_result_capture", variant: "treatment" },
   ];
 
   it(`passes all ${GOLDEN_TRIPLES.length} pinned triples unchanged`, () => {
@@ -225,7 +173,7 @@ describe("weighted bucketing", () => {
   });
 
   it("50/50 split distributes roughly in proportion (sample 1000)", () => {
-    const exp = getPropertyExp("calc_result_capture")!;
+    const exp = getPropertyExp("exit_intent_offer")!;
     let control = 0;
     let treatment = 0;
     for (let i = 0; i < 1000; i++) {
@@ -334,11 +282,11 @@ describe("registry map completeness", () => {
     }
   });
 
-  it("property registry has 6 running experiments", () => {
+  it("property registry has 2 running experiments", () => {
     const running = siteRegistries.property.experiments.filter(
       (e) => e.status === "running",
     );
-    expect(running).toHaveLength(6);
+    expect(running).toHaveLength(2);
   });
 
   it("property registry meta has entries for all running experiment keys", () => {

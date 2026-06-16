@@ -94,6 +94,29 @@ function NumberField({
 }) {
   const { min, max, step } = sliderBounds(field);
   const isCurrency = field.type === "currency";
+
+  // The box is backed by local string state so it can be cleared and retyped.
+  // The previous controlled type="number" re-clamped on every keystroke
+  // (Math.max(min, Number(value) || 0)), so a user could never blank the field
+  // to enter their own number — the cause of the input rage-clicks in analytics.
+  const clamp = (n: number) => Math.max(min, Math.min(max, n));
+  const [text, setText] = useState<string>(() => String(Number.isFinite(value) ? value : min));
+  const lastCommitted = useRef<number>(Number.isFinite(value) ? value : min);
+
+  // Resync the box when the value is driven from outside (e.g. the slider).
+  useEffect(() => {
+    if (value !== lastCommitted.current) {
+      lastCommitted.current = value;
+      setText(String(Number.isFinite(value) ? value : min));
+    }
+  }, [value, min]);
+
+  const commit = (n: number) => {
+    const c = clamp(n);
+    lastCommitted.current = c;
+    onChange(c);
+  };
+
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between gap-3">
@@ -104,13 +127,26 @@ function NumberField({
           {isCurrency && <span className="text-sm font-medium text-slate-500">£</span>}
           <Input
             id={`f-${field.id}`}
-            type="number"
-            inputMode="numeric"
-            min={min}
-            step={step}
-            value={Number.isFinite(value) ? value : 0}
-            onChange={(e) => onChange(Math.max(min, Number(e.target.value) || 0))}
-            className="w-28 text-right tabular-nums"
+            type="text"
+            inputMode="decimal"
+            value={text}
+            onChange={(e) => {
+              const raw = e.target.value;
+              // Allow empty + partial numeric entry while typing; commit only a
+              // real number so the result/slider update live, and leave the value
+              // untouched while the box is momentarily empty.
+              if (/^-?\d*\.?\d*$/.test(raw)) {
+                setText(raw);
+                if (raw !== "" && raw !== "-" && raw !== ".") commit(Number(raw));
+              }
+            }}
+            onBlur={() => {
+              const n = text === "" || text === "-" || text === "." ? min : Number(text);
+              const c = clamp(Number.isFinite(n) ? n : min);
+              setText(String(c));
+              commit(c);
+            }}
+            className="h-11 w-28 text-right tabular-nums"
           />
           {field.suffix && (
             <span className="text-sm font-medium text-slate-500">{field.suffix}</span>

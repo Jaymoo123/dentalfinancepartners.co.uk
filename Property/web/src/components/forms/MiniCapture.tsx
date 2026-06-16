@@ -1,12 +1,12 @@
 "use client";
 
 /**
- * Reusable lead capture used across the CRO experiments (calculator result,
- * gate replacement, mobile tool fallback, exit-intent). Collects email + phone +
- * an optional note by default (callable leads); the `lead_form_length` experiment
- * flips it to email-only for the treatment arm. Topic-aware, consent-gated,
- * honeypot-protected, and fully stitched to the first-party journey
- * (visitor_id/session_id) so it fires form_start / form_submit / lead_submitted.
+ * Reusable QUALIFIED lead capture used across the conversion surfaces (calculator
+ * result, resource block, mobile tool, exit-intent, blog inline). Collects name +
+ * phone + email + message, all required, for callable / named / contextful leads
+ * fit for partner handoff. Topic-aware, consent-gated, honeypot-protected, and
+ * fully stitched to the first-party journey (visitor_id/session_id) so it fires
+ * form_start / form_submit / lead_submitted.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
@@ -14,12 +14,10 @@ import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
-import { useExperiment } from "@/components/experiments/useExperiment";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 
 type Status = "idle" | "loading" | "success" | "error";
-export type MiniCaptureFields = "email_phone" | "email";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const inputClass =
@@ -33,7 +31,6 @@ export function MiniCapture({
   blurb,
   submitLabel = "Request a callback",
   successText = "Thanks. We'll be in touch within 24 hours.",
-  fields,
   className = "my-8 rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8",
   experimentKey,
   exposeOnView = true,
@@ -48,21 +45,15 @@ export function MiniCapture({
   blurb: string;
   submitLabel?: string;
   successText?: string;
-  /** Force the field set; otherwise the lead_form_length experiment decides. */
-  fields?: MiniCaptureFields;
   className?: string;
-  /** Parent A/B experiment this capture is the treatment arm of (e.g.
-   *  "calc_result_capture"). Drives experiment_view (on scroll-into-view) +
+  /** Parent A/B experiment this capture belongs to (e.g. "exit_intent_offer").
+   *  Drives experiment_view (on scroll-into-view, unless exposeOnView=false) +
    *  experiment_action (on first field focus = engaged the capture). */
   experimentKey?: string;
   /** Set false when the parent surface already fires the exposure itself (e.g.
    *  the exit-intent modal fires it once on open for both arms). */
   exposeOnView?: boolean;
 }) {
-  const lenVariant = useExperiment("lead_form_length");
-  const effFields: MiniCaptureFields = fields ?? (lenVariant === "treatment" ? "email" : "email_phone");
-  const wantPhone = effFields === "email_phone";
-
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
@@ -70,10 +61,8 @@ export function MiniCapture({
   const [consent, setConsent] = useState(false);
   const ft = useFormTracking(formId);
 
-  // Building-block funnel: exposure on scroll-into-view (the parent surface,
-  // unless it fires its own), and the proximal "engaged the capture" action on
-  // first field focus. The form is itself the lead_form_length surface, so it
-  // also marks that experiment's exposure (started) here + completion on submit.
+  // Building-block funnel: exposure on scroll-into-view (unless the parent fires
+  // its own), and the proximal "engaged the capture" action on first field focus.
   const startedExpRef = useRef(false);
   const expRef = useInViewOnce<HTMLElement>(() => {
     if (experimentKey && exposeOnView) trackExperimentView(experimentKey, formId);
@@ -82,7 +71,6 @@ export function MiniCapture({
     if (startedExpRef.current) return;
     startedExpRef.current = true;
     if (experimentKey) trackExperimentAction(experimentKey, formId);
-    trackExperimentView("lead_form_length", formId); // started a capture
   }, [experimentKey, formId]);
 
   useEffect(() => {
@@ -92,19 +80,16 @@ export function MiniCapture({
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
 
-  const validate = useCallback(
-    (data: FormData) => {
-      const errs: Record<string, string> = {};
-      if (!emailRe.test(String(data.get("email") || "").trim())) errs.email = "Enter a valid email address.";
-      if (wantPhone) {
-        const digits = String(data.get("phone") || "").replace(/\D/g, "");
-        if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
-      }
-      if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
-      return errs;
-    },
-    [wantPhone],
-  );
+  const validate = useCallback((data: FormData) => {
+    const errs: Record<string, string> = {};
+    if (String(data.get("full_name") || "").trim().length < 2) errs.full_name = "Enter your name.";
+    if (!emailRe.test(String(data.get("email") || "").trim())) errs.email = "Enter a valid email address.";
+    const digits = String(data.get("phone") || "").replace(/\D/g, "");
+    if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
+    if (String(data.get("message") || "").trim().length < 10) errs.message = "Tell us a sentence or two about your situation.";
+    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
+    return errs;
+  }, []);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -115,7 +100,7 @@ export function MiniCapture({
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
-    ft.onSubmit(wantPhone ? 2 : 1); // passed validation, about to POST
+    ft.onSubmit(4); // passed validation, about to POST
 
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -124,13 +109,13 @@ export function MiniCapture({
     }
 
     setStatus("loading");
-    const note = String(data.get("note") || "").trim();
+    const userMessage = String(data.get("message") || "").trim();
     const payload = {
-      full_name: "",
+      full_name: String(data.get("full_name") || "").trim(),
       email: String(data.get("email") || "").trim(),
-      phone: wantPhone ? String(data.get("phone") || "").trim() : "",
+      phone: String(data.get("phone") || "").trim(),
       role,
-      message: `${messagePrefix}${note ? `: ${note}` : ""}`,
+      message: `${messagePrefix}: ${userMessage}`,
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl,
       submitted_at: new Date().toISOString(),
@@ -150,9 +135,6 @@ export function MiniCapture({
     }
 
     ft.onLead({ source: payload.source, role: formId });
-    // lead_form_length building block: completed the capture. has_phone is the
-    // quality guardrail (email-only treatment captures no callable number).
-    trackExperimentAction("lead_form_length", formId, { has_phone: wantPhone });
 
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -196,7 +178,23 @@ export function MiniCapture({
           {/* Honeypot */}
           <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
 
-          <div className={`grid gap-4 ${wantPhone ? "sm:grid-cols-2" : ""}`}>
+          <div>
+            <label htmlFor={`${formId}-name`} className="block text-sm font-semibold text-slate-900">Full name</label>
+            <input
+              type="text"
+              id={`${formId}-name`}
+              name="full_name"
+              required
+              autoComplete="name"
+              maxLength={100}
+              placeholder={niche.lead_form.placeholders.name}
+              className={inputClass}
+              aria-invalid={!!fieldErrors.full_name}
+            />
+            {fieldErrors.full_name && <p className="mt-1.5 text-xs font-medium text-red-600">{fieldErrors.full_name}</p>}
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
             <div>
               <label htmlFor={`${formId}-email`} className="block text-sm font-semibold text-slate-900">Email</label>
               <input
@@ -212,30 +210,36 @@ export function MiniCapture({
               />
               {fieldErrors.email && <p className="mt-1.5 text-xs font-medium text-red-600">{fieldErrors.email}</p>}
             </div>
-            {wantPhone && (
-              <div>
-                <label htmlFor={`${formId}-phone`} className="block text-sm font-semibold text-slate-900">Phone</label>
-                <input
-                  type="tel"
-                  id={`${formId}-phone`}
-                  name="phone"
-                  required
-                  autoComplete="tel"
-                  maxLength={20}
-                  placeholder={niche.lead_form.placeholders.phone}
-                  className={inputClass}
-                  aria-invalid={!!fieldErrors.phone}
-                />
-                {fieldErrors.phone && <p className="mt-1.5 text-xs font-medium text-red-600">{fieldErrors.phone}</p>}
-              </div>
-            )}
+            <div>
+              <label htmlFor={`${formId}-phone`} className="block text-sm font-semibold text-slate-900">Phone</label>
+              <input
+                type="tel"
+                id={`${formId}-phone`}
+                name="phone"
+                required
+                autoComplete="tel"
+                maxLength={20}
+                placeholder={niche.lead_form.placeholders.phone}
+                className={inputClass}
+                aria-invalid={!!fieldErrors.phone}
+              />
+              {fieldErrors.phone && <p className="mt-1.5 text-xs font-medium text-red-600">{fieldErrors.phone}</p>}
+            </div>
           </div>
 
           <div>
-            <label htmlFor={`${formId}-note`} className="block text-sm font-semibold text-slate-900">
-              Your situation <span className="font-normal text-slate-500">(optional)</span>
-            </label>
-            <input type="text" id={`${formId}-note`} name="note" maxLength={200} placeholder="A one-line summary helps us help you" className={inputClass} />
+            <label htmlFor={`${formId}-message`} className="block text-sm font-semibold text-slate-900">How can we help?</label>
+            <textarea
+              id={`${formId}-message`}
+              name="message"
+              required
+              rows={3}
+              maxLength={1000}
+              placeholder="A sentence or two about your situation helps us help you"
+              className={inputClass}
+              aria-invalid={!!fieldErrors.message}
+            />
+            {fieldErrors.message && <p className="mt-1.5 text-xs font-medium text-red-600">{fieldErrors.message}</p>}
           </div>
 
           <div>

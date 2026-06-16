@@ -46,7 +46,7 @@ export const propertyRegistry: SiteExperimentRegistry = {
 
     // The calculator result: trailing CTA link (control) vs a dramatised result +
     // inline email/phone capture (treatment). The #1 leak (computes -> ~0 leads).
-    { key: "calc_result_capture", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
+    { key: "calc_result_capture", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // SHIPPED treatment as default (qualified capture); retired as a test 2026-06-16
 
     // Exit-intent offer: current email-only "free review" (control) vs a topic-aware
     // stronger offer with email+phone (treatment). Reach is extended for both arms.
@@ -54,14 +54,14 @@ export const propertyRegistry: SiteExperimentRegistry = {
 
     // The on-page resource block: email-gated Excel download (control) vs a topic-
     // aware "free review" form block (treatment). The gate is dead (50 views, 0 unlocks).
-    { key: "gate_to_form", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
+    { key: "gate_to_form", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // SHIPPED treatment as default (qualified capture); retired as a test 2026-06-16
 
     // Mobile tool slot: "open on desktop" dead-end (control) vs a capture (treatment).
-    { key: "mobile_tool_capture", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
+    { key: "mobile_tool_capture", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // SHIPPED treatment as default (qualified capture); retired as a test 2026-06-16
 
     // Capture length across every new MiniCapture surface: email+phone+note (control)
     // vs email-only (treatment) -- volume vs quality.
-    { key: "lead_form_length", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
+    { key: "lead_form_length", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // RETIRED: phone is now mandatory on every capture 2026-06-16
   ],
 
   meta: {
