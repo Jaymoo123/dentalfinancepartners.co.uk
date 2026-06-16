@@ -28,7 +28,7 @@ import {
 
 import type { TimePoint } from "@accounting-network/web-shared/console/adminData";
 
-type Metric = "sessions" | "humans";
+type Metric = "sessions" | "humans" | "leads";
 
 type Props = {
   data: TimePoint[];
@@ -80,6 +80,14 @@ const HUMANS_COLOR: Record<number, string> = {
   3: "#cbd5e1",
 };
 
+// Indigo for the leads metric.
+const LEADS_COLOR: Record<number, string> = {
+  0: "#4f46e5",
+  1: "#818cf8",
+  2: "#94a3b8",
+  3: "#cbd5e1",
+};
+
 type RowDow = { dow: string; [series: string]: number | string | undefined };
 
 function buildRows(data: TimePoint[], metric: Metric, weeks: number): RowDow[] {
@@ -124,7 +132,7 @@ export function WeeklyOverlayChart({ data, metric, label, weeks = 4 }: Props) {
     return keys;
   }, [rows, weeks]);
 
-  const colorMap = metric === "humans" ? HUMANS_COLOR : SERIES_COLOR;
+  const colorMap = metric === "humans" ? HUMANS_COLOR : metric === "leads" ? LEADS_COLOR : SERIES_COLOR;
 
   if (activeSeries.length === 0) {
     return (

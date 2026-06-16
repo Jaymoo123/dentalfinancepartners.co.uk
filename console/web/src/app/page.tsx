@@ -20,6 +20,9 @@ import type { Metadata } from "next";
 import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
 import { SnapshotCard } from "@accounting-network/web-shared/console/components/SnapshotCard";
 import { Sparkline } from "@accounting-network/web-shared/console/components/Sparkline";
+import { TrendChart } from "@/components/TrendChart";
+import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
+import { CategoryBarChart } from "@/components/CategoryBarChart";
 import {
   getSitesRegistry,
   getEstateOverview,
@@ -28,6 +31,7 @@ import {
   getEstateErrors,
   getEstateLatestLeads,
   getEstateKpis,
+  getEstateTimeseries,
   type SiteKpis,
 } from "@accounting-network/web-shared/console/estateData";
 import { checkAuth } from "@/lib/checkAuth";
@@ -66,16 +70,18 @@ export default async function EstatePage() {
   if (!authed) redirect("/login");
 
   const now = new Date();
-  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll] = await Promise.all([
-    getSitesRegistry(),
-    getEstateOverview(7),
-    getEstateFunnel(28),
-    getEstateChannels(28),
-    getEstateErrors(),
-    getEstateLatestLeads(30),
-    getEstateKpis(new Date(now.getTime() - 7 * 86400_000).toISOString(), now.toISOString()),
-    getEstateKpis(new Date("2000-01-01").toISOString(), now.toISOString()),
-  ]);
+  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll, estate30d] =
+    await Promise.all([
+      getSitesRegistry(),
+      getEstateOverview(7),
+      getEstateFunnel(28),
+      getEstateChannels(28),
+      getEstateErrors(),
+      getEstateLatestLeads(30),
+      getEstateKpis(new Date(now.getTime() - 7 * 86400_000).toISOString(), now.toISOString()),
+      getEstateKpis(new Date("2000-01-01").toISOString(), now.toISOString()),
+      getEstateTimeseries("1 day", new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
+    ]);
 
   // KPI reducer: sum SiteKpis[] into estate totals
   function sumKpis(rows: SiteKpis[]) {
@@ -111,6 +117,13 @@ export default async function EstatePage() {
 
   // Per-site humans map (from 7d KPI data)
   const kpiBySite = new Map(kpi7.map((r) => [r.site_key, r]));
+
+  // Leads by site (all time) for the estate bar chart.
+  const kpiAllBySite = new Map(kpiAll.map((r) => [r.site_key, r]));
+  const leadsBySite = sites
+    .filter((s) => s.active)
+    .map((s) => ({ name: s.display_name, value: kpiAllBySite.get(s.site_key)?.leads_all ?? 0 }))
+    .sort((a, b) => b.value - a.value);
 
   const funnelRate = (num: number, den: number) =>
     den > 0 ? `${((num / den) * 100).toFixed(0)}%` : "-";
@@ -231,8 +244,27 @@ export default async function EstatePage() {
           />
         </div>
 
+        {/* Estate trends */}
+        <h2 className="mt-10 text-lg font-bold text-slate-900">Estate trends (last 30 days)</h2>
+        <p className="mt-1 text-xs text-slate-500">
+          All sites combined. Sessions and visitors are GB-scoped; leads count all countries.
+        </p>
+        <div className="mt-3 grid gap-3 lg:grid-cols-3">
+          <TrendChart data={estate30d} metric="sessions" label="Sessions · daily" formatType="day" />
+          <TrendChart data={estate30d} metric="humans" label="Visitors · daily" formatType="day" />
+          <TrendChart data={estate30d} metric="leads" label="Leads · daily" formatType="day" />
+        </div>
+        <div className="mt-3 grid gap-3 lg:grid-cols-3">
+          <WeeklyOverlayChart data={estate30d} metric="sessions" label="Sessions by weekday (4 weeks)" />
+          <WeeklyOverlayChart data={estate30d} metric="humans" label="Visitors by weekday (4 weeks)" />
+          <WeeklyOverlayChart data={estate30d} metric="leads" label="Leads by weekday (4 weeks)" />
+        </div>
+        <div className="mt-3">
+          <CategoryBarChart label="Leads by site (all time)" data={leadsBySite} color="#059669" valueLabel="Leads" />
+        </div>
+
         {/* Per-site comparison strip */}
-        <h2 className="mt-8 text-lg font-bold text-slate-900">Sites (last 7 days)</h2>
+        <h2 className="mt-10 text-lg font-bold text-slate-900">Sites (last 7 days)</h2>
         <p className="mt-1 text-xs text-slate-500">
           One row per active site (UK / GB audience). Sessions, visitors and conversion are GB-scoped; leads counts all countries.
         </p>

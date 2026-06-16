@@ -11,7 +11,7 @@
  * Server-only: never import into a client component.
  */
 
-import type { SiteKpis } from "./adminData";
+import type { SiteKpis, TimePoint } from "./adminData";
 export type { SiteKpis };
 
 const SUPABASE_URL =
@@ -549,4 +549,24 @@ export async function getEstateKpis(
   country = "GB",
 ): Promise<SiteKpis[]> {
   return rest<SiteKpis>("rpc/estate_kpis", { p_from: fromISO, p_to: toISO, p_country: country });
+}
+
+/**
+ * Estate-wide bucketed series (all sites) for the home-page charts, via the
+ * estate_timeseries() RPC. sessions/humans scoped to country (default GB),
+ * leads all-countries. events is 0-filled so the result is a plain TimePoint[].
+ */
+export async function getEstateTimeseries(
+  bucket: "15 minutes" | "1 hour" | "1 day",
+  fromISO: string,
+  toISO: string,
+  country = "GB",
+): Promise<TimePoint[]> {
+  const rows = await rest<Omit<TimePoint, "events">>("rpc/estate_timeseries", {
+    p_bucket: bucket,
+    p_from: fromISO,
+    p_to: toISO,
+    p_country: country,
+  });
+  return rows.map((r) => ({ ...r, events: 0 }));
 }

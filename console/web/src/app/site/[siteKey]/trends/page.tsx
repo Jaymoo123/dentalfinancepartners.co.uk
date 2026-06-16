@@ -12,16 +12,33 @@ import { redirect, notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
-import { getTimeseries } from "@accounting-network/web-shared/console/adminData";
+import {
+  getTimeseries,
+  getChannelConversion,
+  getFunnelDaily,
+} from "@accounting-network/web-shared/console/adminData";
 import { getSitesRegistry } from "@accounting-network/web-shared/console/estateData";
 import { TrendChart } from "@/components/TrendChart";
 import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
+import { CategoryBarChart } from "@/components/CategoryBarChart";
+import { ConversionRateChart } from "@/components/ConversionRateChart";
+import { FunnelOverTimeChart } from "@/components/FunnelOverTimeChart";
+import { CumulativeChart } from "@/components/CumulativeChart";
 import { checkAuth } from "@/lib/checkAuth";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = CONSOLE_NOINDEX_META;
 
 const isoOf = (d: Date) => d.toISOString();
+
+const CHANNEL_LABEL: Record<string, string> = {
+  ai: "AI engines",
+  search: "Search",
+  social: "Social",
+  internal: "Returning",
+  referral: "Referral",
+  direct: "Direct",
+};
 
 export default async function SiteTrendsPage({
   params,
@@ -47,14 +64,42 @@ export default async function SiteTrendsPage({
   const d7 = new Date(now.getTime() - 7 * 86400_000);
   const d30 = new Date(now.getTime() - 30 * 86400_000);
 
-  const [q15, h24hourly, w7hourly, w7daily, m30daily, m30hourly] = await Promise.all([
-    getTimeseries(siteKey, "15 minutes", isoOf(h24), isoOf(now), countryFilter),
-    getTimeseries(siteKey, "1 hour", isoOf(h24), isoOf(now), countryFilter),
-    getTimeseries(siteKey, "1 hour", isoOf(d7), isoOf(now), countryFilter),
-    getTimeseries(siteKey, "1 day", isoOf(d7), isoOf(now), countryFilter),
-    getTimeseries(siteKey, "1 day", isoOf(d30), isoOf(now), countryFilter),
-    getTimeseries(siteKey, "1 hour", isoOf(d30), isoOf(now), countryFilter),
-  ]);
+  const [q15, h24hourly, w7hourly, w7daily, m30daily, m30hourly, channelRows, funnelRows] =
+    await Promise.all([
+      getTimeseries(siteKey, "15 minutes", isoOf(h24), isoOf(now), countryFilter),
+      getTimeseries(siteKey, "1 hour", isoOf(h24), isoOf(now), countryFilter),
+      getTimeseries(siteKey, "1 hour", isoOf(d7), isoOf(now), countryFilter),
+      getTimeseries(siteKey, "1 day", isoOf(d7), isoOf(now), countryFilter),
+      getTimeseries(siteKey, "1 day", isoOf(d30), isoOf(now), countryFilter),
+      getTimeseries(siteKey, "1 hour", isoOf(d30), isoOf(now), countryFilter),
+      getChannelConversion(siteKey),
+      getFunnelDaily(siteKey, countryFilter),
+    ]);
+
+  // Leads by channel (all countries, attributable/stitched leads), summed per channel.
+  const channelMap = new Map<string, { leads: number; sessions: number }>();
+  for (const r of channelRows) {
+    const cur = channelMap.get(r.channel) ?? { leads: 0, sessions: 0 };
+    cur.leads += r.leads;
+    cur.sessions += r.sessions;
+    channelMap.set(r.channel, cur);
+  }
+  const channelData = Array.from(channelMap.entries())
+    .map(([ch, v]) => ({
+      name: CHANNEL_LABEL[ch] ?? ch,
+      value: v.leads,
+      sub: `${v.sessions.toLocaleString("en-GB")} sessions`,
+    }))
+    .sort((a, b) => b.value - a.value);
+
+  // Funnel over time (GB audience): one point per day.
+  const funnelData = funnelRows.map((r) => ({
+    date: r.date,
+    sessions: r.sessions,
+    engaged_sessions: r.engaged_sessions,
+    form_start_sessions: r.form_start_sessions,
+    converted_sessions: r.converted_sessions,
+  }));
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
@@ -101,6 +146,28 @@ export default async function SiteTrendsPage({
         <TrendChart data={m30daily} metric="leads" label="Leads · daily" formatType="day" />
         <TrendChart data={m30hourly} metric="sessions" label="Sessions · hourly · 30 days" formatType="day" />
         <TrendChart data={m30hourly} metric="humans" label="Visitors · hourly · 30 days" formatType="day" />
+      </div>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Leads</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        All countries (counted from the leads table, so historical and unstitched leads show).
+      </p>
+      <div className="mt-3 space-y-3">
+        <CumulativeChart data={m30daily} metric="leads" label="Cumulative leads · 30 days" formatType="day" />
+        <WeeklyOverlayChart data={m30daily} metric="leads" label="Leads by weekday (last 4 weeks)" />
+        <CategoryBarChart label="Leads by channel (attributable)" data={channelData} color="#4f46e5" valueLabel="Leads" />
+      </div>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion</h2>
+      <p className="mt-1 text-xs text-slate-500">Leads per visitor over time.</p>
+      <div className="mt-3 space-y-3">
+        <ConversionRateChart data={w7daily} label="Conversion rate · daily (7 days)" formatType="day" />
+        <ConversionRateChart data={m30daily} label="Conversion rate · daily (30 days)" formatType="day" />
+      </div>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Funnel over time</h2>
+      <div className="mt-3 space-y-3">
+        <FunnelOverTimeChart data={funnelData} label="Sessions to leads, per day" />
       </div>
     </div>
   );
