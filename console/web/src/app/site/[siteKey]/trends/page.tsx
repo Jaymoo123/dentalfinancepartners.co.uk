@@ -15,6 +15,7 @@ import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/con
 import { getTimeseries } from "@accounting-network/web-shared/console/adminData";
 import { getSitesRegistry } from "@accounting-network/web-shared/console/estateData";
 import { TrendChart } from "@/components/TrendChart";
+import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
 import { checkAuth } from "@/lib/checkAuth";
 
 export const dynamic = "force-dynamic";
@@ -46,12 +47,13 @@ export default async function SiteTrendsPage({
   const d7 = new Date(now.getTime() - 7 * 86400_000);
   const d30 = new Date(now.getTime() - 30 * 86400_000);
 
-  const [q15, h24hourly, w7hourly, w7daily, m30daily] = await Promise.all([
+  const [q15, h24hourly, w7hourly, w7daily, m30daily, m30hourly] = await Promise.all([
     getTimeseries(siteKey, "15 minutes", isoOf(h24), isoOf(now), countryFilter),
     getTimeseries(siteKey, "1 hour", isoOf(h24), isoOf(now), countryFilter),
     getTimeseries(siteKey, "1 hour", isoOf(d7), isoOf(now), countryFilter),
     getTimeseries(siteKey, "1 day", isoOf(d7), isoOf(now), countryFilter),
     getTimeseries(siteKey, "1 day", isoOf(d30), isoOf(now), countryFilter),
+    getTimeseries(siteKey, "1 hour", isoOf(d30), isoOf(now), countryFilter),
   ]);
 
   return (
@@ -72,20 +74,33 @@ export default async function SiteTrendsPage({
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 24 hours</h2>
       <div className="mt-3 space-y-3">
         <TrendChart data={q15} metric="sessions" label="Sessions · 15-minute" formatType="time" />
+        <TrendChart data={q15} metric="humans" label="Visitors · 15-minute" formatType="time" />
         <TrendChart data={h24hourly} metric="sessions" label="Sessions · hourly" formatType="time" />
+        <TrendChart data={h24hourly} metric="humans" label="Visitors · hourly" formatType="time" />
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 7 days</h2>
       <div className="mt-3 space-y-3">
         <TrendChart data={w7hourly} metric="sessions" label="Sessions · hourly" formatType="hour" />
+        <TrendChart data={w7hourly} metric="humans" label="Visitors · hourly" formatType="hour" />
         <TrendChart data={w7daily} metric="sessions" label="Sessions · daily" formatType="day" />
+        <TrendChart data={w7daily} metric="humans" label="Visitors · daily" formatType="day" />
         <TrendChart data={w7daily} metric="leads" label="Leads · daily" formatType="day" />
+      </div>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Week over week</h2>
+      <div className="mt-3 space-y-3">
+        <WeeklyOverlayChart data={m30daily} metric="sessions" label="Sessions by weekday (last 4 weeks)" />
+        <WeeklyOverlayChart data={m30daily} metric="humans" label="Visitors by weekday (last 4 weeks)" />
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 30 days</h2>
       <div className="mt-3 space-y-3">
         <TrendChart data={m30daily} metric="sessions" label="Sessions · daily" formatType="day" />
+        <TrendChart data={m30daily} metric="humans" label="Visitors · daily" formatType="day" />
         <TrendChart data={m30daily} metric="leads" label="Leads · daily" formatType="day" />
+        <TrendChart data={m30hourly} metric="sessions" label="Sessions · hourly · 30 days" formatType="day" />
+        <TrendChart data={m30hourly} metric="humans" label="Visitors · hourly · 30 days" formatType="day" />
       </div>
     </div>
   );

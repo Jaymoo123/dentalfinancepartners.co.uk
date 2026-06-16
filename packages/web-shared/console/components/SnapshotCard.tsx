@@ -31,6 +31,7 @@ export function SnapshotCard({
   status,
   accent = "emerald",
   invertDelta = false,
+  compact = false,
 }: {
   label: string;
   value: string;
@@ -40,6 +41,7 @@ export function SnapshotCard({
   status?: "ok" | "warn" | null;
   accent?: Accent;
   invertDelta?: boolean;
+  compact?: boolean;
 }) {
   let deltaEl: React.ReactNode = null;
   if (delta != null && Number.isFinite(delta)) {
@@ -59,7 +61,7 @@ export function SnapshotCard({
         {status && <span className={`h-2 w-2 rounded-full ${DOT[status]}`} aria-hidden />}
       </div>
       <div className="mt-1 flex items-baseline gap-2">
-        <span className="text-2xl font-bold text-slate-900">{value}</span>
+        <span className={`${compact ? "text-lg" : "text-2xl"} font-bold text-slate-900`}>{value}</span>
         {deltaEl && <span className="text-xs font-semibold">{deltaEl}</span>}
       </div>
       {sub && <div className="mt-0.5 text-xs text-slate-500">{sub}</div>}

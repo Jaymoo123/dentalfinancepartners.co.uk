@@ -27,6 +27,8 @@ import {
   getEstateChannels,
   getEstateErrors,
   getEstateLatestLeads,
+  getEstateKpis,
+  type SiteKpis,
 } from "@accounting-network/web-shared/console/estateData";
 import { checkAuth } from "@/lib/checkAuth";
 import SiteSwitcher from "@/components/SiteSwitcher";
@@ -63,14 +65,34 @@ export default async function EstatePage() {
   const authed = await checkAuth();
   if (!authed) redirect("/login");
 
-  const [sites, overview, funnel, channels, errors, leads] = await Promise.all([
+  const now = new Date();
+  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll] = await Promise.all([
     getSitesRegistry(),
     getEstateOverview(7),
     getEstateFunnel(28),
     getEstateChannels(28),
     getEstateErrors(),
     getEstateLatestLeads(30),
+    getEstateKpis(new Date(now.getTime() - 7 * 86400_000).toISOString(), now.toISOString()),
+    getEstateKpis(new Date("2000-01-01").toISOString(), now.toISOString()),
   ]);
+
+  // KPI reducer: sum SiteKpis[] into estate totals
+  function sumKpis(rows: SiteKpis[]) {
+    return rows.reduce(
+      (acc, r) => ({
+        sessions: acc.sessions + r.sessions,
+        humans: acc.humans + r.humans,
+        new_humans: acc.new_humans + r.new_humans,
+        converted_humans: acc.converted_humans + r.converted_humans,
+        leads_all: acc.leads_all + r.leads_all,
+        leads_uk: acc.leads_uk + r.leads_uk,
+      }),
+      { sessions: 0, humans: 0, new_humans: 0, converted_humans: 0, leads_all: 0, leads_uk: 0 },
+    );
+  }
+  const t7 = sumKpis(kpi7);
+  const tAll = sumKpis(kpiAll);
 
   // Build per-site channel index (best channel by sessions per site)
   const bestChannelBySite = new Map<string, { channel: string; cr: number | null }>();
@@ -84,11 +106,11 @@ export default async function EstatePage() {
     }
   }
 
-  // Estate totals for KPI cards
-  const totalSessions = overview.reduce((a, s) => a + s.sessions, 0);
-  const totalLeads = overview.reduce((a, s) => a + s.leads, 0);
-  const estateConvRate = totalSessions > 0 ? totalLeads / totalSessions : null;
+  // JS error total for the (de-emphasised) errors card
   const totalErrors = errors.reduce((a, e) => a + e.total_errors, 0);
+
+  // Per-site humans map (from 7d KPI data)
+  const kpiBySite = new Map(kpi7.map((r) => [r.site_key, r]));
 
   const funnelRate = (num: number, den: number) =>
     den > 0 ? `${((num / den) * 100).toFixed(0)}%` : "-";
@@ -109,47 +131,121 @@ export default async function EstatePage() {
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-8">
-        {/* Estate KPI strip */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {/* Estate KPI strip — last 7 days */}
+        <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-slate-500">
+          Last 7 days
+        </h2>
+        <div className="grid grid-cols-3 gap-2 lg:grid-cols-6">
           <SnapshotCard
-            label="Estate sessions (7d)"
-            value={totalSessions.toLocaleString("en-GB")}
+            label="Sessions"
+            value={t7.sessions.toLocaleString("en-GB")}
             accent="sky"
+            compact
           />
           <SnapshotCard
-            label="Estate leads (7d)"
-            value={totalLeads.toLocaleString("en-GB")}
+            label="Visitors"
+            value={t7.humans.toLocaleString("en-GB")}
+            sub={`${t7.new_humans.toLocaleString("en-GB")} new`}
             accent="emerald"
+            compact
           />
           <SnapshotCard
-            label="Estate conversion"
-            value={pct(estateConvRate)}
+            label="Leads (UK)"
+            value={String(t7.leads_uk)}
             accent="emerald"
+            compact
           />
+          <SnapshotCard
+            label="Leads (all)"
+            value={String(t7.leads_all)}
+            accent="emerald"
+            compact
+          />
+          <SnapshotCard
+            label="Conv / session"
+            value={pct(t7.sessions > 0 ? t7.leads_uk / t7.sessions : null)}
+            accent="emerald"
+            compact
+          />
+          <SnapshotCard
+            label="Conv / visitor"
+            value={pct(t7.humans > 0 ? t7.converted_humans / t7.humans : null)}
+            sub={`${t7.converted_humans} of ${t7.humans}`}
+            accent="emerald"
+            compact
+          />
+        </div>
+
+        {/* Estate KPI strip — all time */}
+        <h2 className="mb-2 mt-4 text-sm font-semibold uppercase tracking-wider text-slate-500">
+          All time
+        </h2>
+        <div className="grid grid-cols-3 gap-2 lg:grid-cols-6">
+          <SnapshotCard
+            label="Sessions"
+            value={tAll.sessions.toLocaleString("en-GB")}
+            accent="sky"
+            compact
+          />
+          <SnapshotCard
+            label="Visitors"
+            value={tAll.humans.toLocaleString("en-GB")}
+            accent="emerald"
+            compact
+          />
+          <SnapshotCard
+            label="Leads (UK)"
+            value={String(tAll.leads_uk)}
+            accent="emerald"
+            compact
+          />
+          <SnapshotCard
+            label="Leads (all)"
+            value={String(tAll.leads_all)}
+            accent="emerald"
+            compact
+          />
+          <SnapshotCard
+            label="Conv / session"
+            value={pct(tAll.sessions > 0 ? tAll.leads_uk / tAll.sessions : null)}
+            accent="emerald"
+            compact
+          />
+          <SnapshotCard
+            label="Conv / visitor"
+            value={pct(tAll.humans > 0 ? tAll.converted_humans / tAll.humans : null)}
+            sub={`${tAll.converted_humans} of ${tAll.humans}`}
+            accent="emerald"
+            compact
+          />
+        </div>
+
+        {/* JS errors — de-emphasised standalone card */}
+        <div className="mt-3 max-w-xs">
           <SnapshotCard
             label="JS errors (total)"
             value={String(totalErrors)}
             accent="rose"
             status={totalErrors > 0 ? "warn" : "ok"}
+            compact
           />
         </div>
 
         {/* Per-site comparison strip */}
         <h2 className="mt-8 text-lg font-bold text-slate-900">Sites (last 7 days)</h2>
         <p className="mt-1 text-xs text-slate-500">
-          One row per active site. Sessions from vw_web_funnel_daily_v2, leads from leads table.
+          One row per active site (UK / GB audience). Sessions, visitors and conversion are GB-scoped; leads counts all countries.
         </p>
         <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
               <tr>
-                <th className="px-4 py-2.5">Site</th>
-                <th className="px-4 py-2.5 text-right">Sessions</th>
-                <th className="hidden px-4 py-2.5 text-right sm:table-cell">Human</th>
-                <th className="px-4 py-2.5 text-right">Leads</th>
-                <th className="px-4 py-2.5 text-right">Conv.</th>
+                <th className="px-2 py-2.5 sm:px-4">Site</th>
+                <th className="px-2 py-2.5 text-right sm:px-4">Sessions</th>
+                <th className="px-2 py-2.5 text-right sm:px-4">Visitors</th>
+                <th className="px-2 py-2.5 text-right sm:px-4">Leads</th>
+                <th className="px-2 py-2.5 text-right sm:px-4">Conv.</th>
                 <th className="hidden px-4 py-2.5 lg:table-cell">7d trend</th>
-                <th className="px-4 py-2.5"></th>
               </tr>
             </thead>
             <tbody>
@@ -157,29 +253,36 @@ export default async function EstatePage() {
                 .filter((s) => s.active)
                 .map((site) => {
                   const row = overview.find((r) => r.site_key === site.site_key);
+                  const k = kpiBySite.get(site.site_key);
                   const sparkValues = row?.sessions_7d ?? [0, 0, 0, 0, 0, 0, 0];
-                  const hasData = row && row.sessions > 0;
+                  const convRate = k && k.humans > 0 ? k.converted_humans / k.humans : null;
+                  const hasData = !!k && k.sessions > 0;
                   return (
                     <tr
                       key={site.site_key}
                       className="border-t border-slate-100 hover:bg-slate-50/50"
                     >
-                      <td className="px-4 py-3">
-                        <div className="font-semibold text-slate-900">{site.display_name}</div>
+                      <td className="min-w-[160px] px-2 py-3 sm:px-4">
+                        <Link
+                          href={`/site/${site.site_key}`}
+                          className="font-semibold text-slate-900 hover:underline whitespace-nowrap"
+                        >
+                          {site.display_name}
+                        </Link>
                         <div className="text-[11px] text-slate-400">{site.site_key}</div>
                       </td>
-                      <td className="px-4 py-3 text-right font-mono text-slate-700">
-                        {row ? row.sessions.toLocaleString("en-GB") : "-"}
+                      <td className="px-2 py-3 text-right font-mono text-slate-700 sm:px-4">
+                        {k ? k.sessions.toLocaleString("en-GB") : "-"}
                       </td>
-                      <td className="hidden px-4 py-3 text-right font-mono text-slate-500 sm:table-cell">
-                        {row ? row.human_sessions.toLocaleString("en-GB") : "-"}
+                      <td className="px-2 py-3 text-right font-mono text-slate-500 sm:px-4">
+                        {k ? k.humans.toLocaleString("en-GB") : "-"}
                       </td>
-                      <td className="px-4 py-3 text-right font-mono text-emerald-700">
-                        {row ? row.leads : "-"}
+                      <td className="px-2 py-3 text-right font-mono text-emerald-700 sm:px-4">
+                        {k ? k.leads_all : "-"}
                       </td>
-                      <td className="px-4 py-3 text-right">
-                        <span className={hasData && (row?.conversion_rate ?? 0) > 0.02 ? "font-semibold text-emerald-700" : "text-slate-500"}>
-                          {row ? pct(row.conversion_rate) : "-"}
+                      <td className="px-2 py-3 text-right sm:px-4">
+                        <span className={hasData && (convRate ?? 0) > 0.02 ? "font-semibold text-emerald-700" : "text-slate-500"}>
+                          {k ? pct(convRate) : "-"}
                         </span>
                       </td>
                       <td className="hidden w-32 px-4 py-3 lg:table-cell">
@@ -187,20 +290,12 @@ export default async function EstatePage() {
                           <Sparkline values={sparkValues} height={24} />
                         </div>
                       </td>
-                      <td className="px-4 py-3 text-right">
-                        <Link
-                          href={`/site/${site.site_key}`}
-                          className="text-xs text-emerald-700 underline"
-                        >
-                          Open
-                        </Link>
-                      </td>
                     </tr>
                   );
                 })}
               {sites.filter((s) => s.active).length === 0 && (
                 <tr>
-                  <td colSpan={7} className="px-4 py-6 text-center text-slate-400">
+                  <td colSpan={6} className="px-4 py-6 text-center text-slate-400">
                     No active sites registered.
                   </td>
                 </tr>
@@ -283,8 +378,10 @@ export default async function EstatePage() {
                   );
                   return (
                     <tr key={site.site_key} className="border-t border-slate-100">
-                      <td className="px-4 py-2.5 font-medium text-slate-800">
-                        {site.display_name}
+                      <td className="whitespace-nowrap min-w-[160px] px-4 py-2.5 font-medium text-slate-800">
+                        <Link href={`/site/${site.site_key}`} className="hover:underline">
+                          {site.display_name}
+                        </Link>
                       </td>
                       <td className="px-4 py-2.5 text-slate-600">
                         {bestCh ? (CHANNEL_LABEL[bestCh.channel] ?? bestCh.channel) : "-"}
@@ -379,7 +476,11 @@ export default async function EstatePage() {
                   ) : (
                     errors.map((e) => (
                       <tr key={e.site_key} className={`border-t border-slate-100 ${e.total_errors > 0 ? "bg-rose-50/30" : ""}`}>
-                        <td className="px-3 py-2 font-medium text-slate-800">{e.site_key}</td>
+                        <td className="px-3 py-2 font-medium text-slate-800">
+                          <Link href={`/site/${e.site_key}`} className="hover:underline whitespace-nowrap">
+                            {sites.find((s) => s.site_key === e.site_key)?.display_name ?? e.site_key}
+                          </Link>
+                        </td>
                         <td className="px-3 py-2 text-right font-mono text-rose-700">
                           {e.total_errors}
                         </td>

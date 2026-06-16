@@ -11,6 +11,9 @@
  * Server-only: never import into a client component.
  */
 
+import type { SiteKpis } from "./adminData";
+export type { SiteKpis };
+
 const SUPABASE_URL =
   process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
@@ -533,4 +536,17 @@ export async function getEstateTopTools(): Promise<EstateTopTool[]> {
   return Array.from(best.values()).sort((a, b) =>
     a.site_key.localeCompare(b.site_key),
   );
+}
+
+/**
+ * Estate-wide humans-first KPIs over [fromISO, toISO): one row per site from
+ * the estate_kpis() RPC (p_site_key omitted = all sites). The home strip sums
+ * these for the "Last 7 days" and "All time" card rows. Re-uses SiteKpis.
+ */
+export async function getEstateKpis(
+  fromISO: string,
+  toISO: string,
+  country = "GB",
+): Promise<SiteKpis[]> {
+  return rest<SiteKpis>("rpc/estate_kpis", { p_from: fromISO, p_to: toISO, p_country: country });
 }

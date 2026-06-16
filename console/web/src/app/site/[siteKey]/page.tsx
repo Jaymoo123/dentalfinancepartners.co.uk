@@ -42,6 +42,7 @@ import {
   getPersonalizationResults,
   getNurtureFunnel,
   getLeadIntentMix,
+  getSiteKpis,
   type VisitorJourney,
   type CalculatorConversionPlacement,
   type ClientError,
@@ -524,6 +525,7 @@ export default async function SitePage({
     tsDaily,
     channelConversion,
     visitsToConversion,
+    kpi,
   ] = await Promise.all([
     getFunnelDaily(siteKey, countryFilter),
     getCalculatorConversionByPlacement(siteKey, countryFilter),
@@ -539,6 +541,7 @@ export default async function SitePage({
     getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
     getChannelConversion(siteKey, countryFilter),
     getVisitsToConversion(siteKey, countryFilter),
+    getSiteKpis(siteKey, isoOf(from30), isoOf(now), country),
   ]);
 
   const leadByVisitor = new Map<string, (typeof leads)[number]>();
@@ -628,10 +631,12 @@ export default async function SitePage({
 
   const overviewSection = (
     <div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         <SnapshotCard label="Sessions / day" value={String(totals.sessions)} sub={`last ${funnelDays} days`} series={sessionsSeries} delta={deltaVsPrior(sessionsSeries)} accent="sky" />
+        <SnapshotCard label="Visitors" value={String(kpi.humans)} sub={`${kpi.new_humans} new`} accent="emerald" />
+        <SnapshotCard label="Visitor conv." value={pct(kpi.humans > 0 ? kpi.converted_humans / kpi.humans : null)} sub={`${kpi.converted_humans} of ${kpi.humans}`} accent="emerald" />
         <SnapshotCard label="Leads" value={String(totals.converted)} sub="conversions" series={leadsSeries} delta={deltaVsPrior(leadsSeries)} accent="emerald" />
-        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${visitors.length} visitors`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
+        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${totals.converted} of ${totals.sessions} sessions`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
         <SnapshotCard label="Avg engaged" value={secs(avgEngaged)} sub="per visitor" series={engagedSeries} delta={deltaVsPrior(engagedSeries)} accent="slate" />
       </div>
 
@@ -678,6 +683,7 @@ export default async function SitePage({
 
   const visitorsSection = (
     <VisitorsTable
+      totalVisitors={kpi.humans}
       rows={visitorRows}
       country={country}
       visitorBasePath={`/site/${siteKey}/visitor`}

@@ -147,7 +147,7 @@ function BuildingBlockCard({
       </p>
 
       <div className="mt-4 grid grid-cols-2 gap-3">
-        <div className="rounded-lg border border-slate-200 bg-white p-3">
+        <div className="rounded-lg border border-slate-200 bg-white p-4">
           <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Control</div>
           <div className="mt-1 text-2xl font-bold text-slate-900">{pct(cExp > 0 ? cRate : null)}</div>
           <div className="mt-0.5 text-xs text-slate-500">{cExp} {primary.exposureLabel} - {cAct} acted</div>
@@ -155,7 +155,7 @@ function BuildingBlockCard({
           {guard && <div className="mt-0.5 text-[11px] text-slate-400">{guard.label}: {pct(cPhone)}</div>}
           <div className="mt-1 text-[11px] text-slate-400">{meta.controlDesc}</div>
         </div>
-        <div className="rounded-lg border border-emerald-300 bg-white p-3">
+        <div className="rounded-lg border border-emerald-300 bg-white p-4">
           <div className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Treatment</div>
           <div className="mt-1 text-2xl font-bold text-slate-900">{pct(tExp > 0 ? tRate : null)}</div>
           <div className="mt-0.5 text-xs text-slate-500">{tExp} {primary.exposureLabel} - {tAct} acted</div>
@@ -247,7 +247,7 @@ function ConversionCard({
       <p className={`mt-1 text-xl font-bold ${headlineClass}`}>{headline}</p>
 
       <div className="mt-4 grid grid-cols-2 gap-3">
-        <div className="rounded-lg border border-slate-200 bg-white p-3">
+        <div className="rounded-lg border border-slate-200 bg-white p-4">
           <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">Control</div>
           <div className="mt-1 text-2xl font-bold text-slate-900">{pct(control?.conversion_rate)}</div>
           <div className="mt-0.5 text-xs text-slate-500">
@@ -255,7 +255,7 @@ function ConversionCard({
           </div>
           <div className="mt-1 text-[11px] text-slate-400">{meta.controlDesc}</div>
         </div>
-        <div className="rounded-lg border border-emerald-300 bg-white p-3">
+        <div className="rounded-lg border border-emerald-300 bg-white p-4">
           <div className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Treatment</div>
           <div className="mt-1 text-2xl font-bold text-slate-900">{pct(treatment?.conversion_rate)}</div>
           <div className="mt-0.5 text-xs text-slate-500">

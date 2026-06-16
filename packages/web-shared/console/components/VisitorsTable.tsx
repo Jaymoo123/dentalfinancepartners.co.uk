@@ -65,10 +65,13 @@ export default function VisitorsTable({
   rows,
   country,
   visitorBasePath,
+  totalVisitors,
 }: {
   rows: VisitorRow[];
   country: string;
   visitorBasePath: string;
+  /** True (uncapped) distinct-visitor count; rows is only the loaded sample. */
+  totalVisitors?: number;
 }) {
   const [q, setQ] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
@@ -112,7 +115,7 @@ export default function VisitorsTable({
   return (
     <div>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat label="Visitors" value={String(rows.length)} />
+        <Stat label="Visitors" value={(totalVisitors ?? rows.length).toLocaleString("en-GB")} />
         <Stat label="Returning" value={String(returning)} />
         <Stat label="Converted" value={String(converted)} />
         <Stat label="Avg engaged" value={secs(avgEng)} />
@@ -199,7 +202,7 @@ export default function VisitorsTable({
           </tbody>
         </table>
       </div>
-      <p className="mt-2 text-[11px] text-slate-400">Country: {country}. Filters apply to the most-recent 500 visitors.</p>
+      <p className="mt-2 text-[11px] text-slate-400">Country: {country}. List shows the most-recent {rows.length.toLocaleString("en-GB")}{totalVisitors != null && totalVisitors > rows.length ? ` of ${totalVisitors.toLocaleString("en-GB")}` : ""} visitors.</p>
     </div>
   );
 }

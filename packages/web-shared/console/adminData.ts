@@ -219,6 +219,7 @@ export type VisitsBucket = {
 export type TimePoint = {
   bucket: string;
   sessions: number;
+  humans: number;
   events: number;
   leads: number;
 };
@@ -533,6 +534,47 @@ export function getTimeseries(
   };
   if (country && country !== "ALL") params.p_country = country;
   return rest<TimePoint>("rpc/web_timeseries", params);
+}
+
+/** Humans-first KPI row from the estate_kpis() RPC (one site, one window). */
+export type SiteKpis = {
+  site_key: string;
+  sessions: number;
+  humans: number;
+  new_humans: number;
+  converted_humans: number;
+  leads_all: number;
+  leads_uk: number;
+};
+
+/**
+ * Per-site humans-first KPIs over [fromISO, toISO) via estate_kpis().
+ * Returns a zero-filled row when the site has no activity in the window.
+ */
+export async function getSiteKpis(
+  siteKey: string,
+  fromISO: string,
+  toISO: string,
+  country?: string,
+): Promise<SiteKpis> {
+  const params: Record<string, string> = {
+    p_from: fromISO,
+    p_to: toISO,
+    p_site_key: siteKey,
+  };
+  if (country) params.p_country = country;
+  const rows = await rest<SiteKpis>("rpc/estate_kpis", params);
+  return (
+    rows[0] ?? {
+      site_key: siteKey,
+      sessions: 0,
+      humans: 0,
+      new_humans: 0,
+      converted_humans: 0,
+      leads_all: 0,
+      leads_uk: 0,
+    }
+  );
 }
 
 export function getEventDaily(

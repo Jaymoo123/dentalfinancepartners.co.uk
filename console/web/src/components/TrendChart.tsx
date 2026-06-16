@@ -29,7 +29,7 @@ import {
 
 import type { TimePoint } from "@accounting-network/web-shared/console/adminData";
 
-type Metric = "sessions" | "events" | "leads";
+type Metric = "sessions" | "events" | "leads" | "humans";
 type FormatType = "time" | "hour" | "day";
 
 type Props = {
@@ -87,15 +87,17 @@ const METRIC_LABEL: Record<Metric, string> = {
   sessions: "Sessions",
   events: "Events",
   leads: "Leads",
+  humans: "Visitors",
 };
 
-// Leads ride indigo; sessions/events ride emerald (Property's original mapping,
-// with the theme CSS vars replaced by literal hex — the console has no shadcn
-// theme tokens).
+// Leads ride indigo; sessions/events ride emerald; humans ride violet.
+// (Property's original mapping, with the theme CSS vars replaced by literal hex
+// — the console has no shadcn theme tokens.)
 const METRIC_COLOR: Record<Metric, string> = {
   sessions: "#059669",
   events: "#059669",
   leads: "#4f46e5",
+  humans: "#7c3aed",
 };
 
 type ChartPoint = { bucket: string; value: number; tick: string };
