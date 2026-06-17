@@ -1,17 +1,12 @@
 # contractors-ir35 (Contractor Tax Accountants) — site state
 
-Last updated 2026-06-17 (launch build COMMITTED to main; domain connected; deploy is the only remaining gated step). The 7th estate site, the first BORN on the standardised grid (machinery composed before launch rather than retrofitted). Built to deploy-ready via `docs/_engines/SITE_SPINUP.md`; **NOT YET DEPLOYED — the Vercel `--prod` deploy is the single user-enforced gate.**
+Last updated 2026-06-17 (**DEPLOYED + LIVE**). The 7th estate site, the first BORN on the standardised grid (machinery composed before launch rather than retrofitted). Built via `docs/_engines/SITE_SPINUP.md`; **LIVE at https://www.contractortaxaccountants.co.uk** (deployment `dpl_2yVWFsReapZveud5KYwsMj8hfD9W`, 2026-06-17).
 
 ## ⚡ RESUME HERE (next manager)
 
-The full launch build is **done, verified, and committed** (2026-06-17). Everything that can be done pre-deploy is done; the only outstanding work is the deploy itself plus the post-deploy operator battery.
+Launch build committed (`b8856199`) and **DEPLOYED 2026-06-17**. Live verification all green: all key routes 200 (home/calculator/research/glossary/location/blog/robots/sitemap/feed/llms), homepage serves real content (not the 404 trap), sitemap base URL = production domain, security headers present, **analytics ingest confirmed (21 web_events rows under site_key `contractors-ir35` → SERVICE_ROLE env set, /admin/analytics + estate console connected)**, an01 browser-pass ALL GREEN. Pre-deploy: build 153 pages green, vitest 39/39, spinup 12 PASS/0 GAP.
 
-Verified state at commit:
-- **`npm run build` GREEN — 153 static pages**; **`vitest` 39/39 pass** (incl. IR35 take-home goldens: outside £71,821 / inside £69,890)
-- **`spinup_site_check.py contractors-ir35` = 12 PASS / 0 GAP** (incl. `09-vercel-link`; `11-ga4-config` INFO is the expected post-domain operator item)
-- Domain `www.contractortaxaccountants.co.uk` connected to the Vercel project; `NEXT_PUBLIC_SITE_URL` updated in Vercel production env (operator, 2026-06-17)
-
-**Outstanding, in order:** the DEPLOY DAY RUNBOOK below (deploy is gated to the user — do NOT automate `vercel deploy --prod`).
+**Outstanding post-deploy items** (see "Post-deploy" section below): test-lead (Ahmad-protected), GA4, GSC/Bing props + sitemap upload, IndexNow + monitored_pages, real phone.
 
 ## Identity
 
@@ -53,18 +48,26 @@ Verified state at commit:
 - 10 static /for/[type] pages + services/ir35-status landing pages, petrol-reskinned and money-keyword-optimised
 - QA at launch: predeploy_gate PASS; Opus accuracy judge SHIP across calculators/glossary/research (0 critical/high); keyword_placement 50/50; word-count 50/50; meta descriptions ≤165 (residual = brand-suffix title length, acceptable)
 
-## DEPLOY DAY RUNBOOK (the only remaining work)
+## DEPLOY — DONE 2026-06-17 (record + gotchas for the next site)
 
-Already done: Vercel project `contractortaxaccountants` (id `prj_AJhtTBB8SMdKluzfCNvwCCqU1yii`) in the estate team (slug `sitenudge-projects` = team_XF9WAygZX7SGk9Fo4tOAnihH); production env vars set incl. `NEXT_PUBLIC_SITE_URL=https://www.contractortaxaccountants.co.uk` (updated 2026-06-17); domain attached; `.vercel/project.json` linked. ADMIN_DASHBOARD_KEY value: `.cache/cfp_admin_key.txt` (hand to operator, then delete the file).
+Deployed live with `VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH VERCEL_PROJECT_ID=prj_AJhtTBB8SMdKluzfCNvwCCqU1yii vercel deploy --prod --yes` from the **repo root** (the repo-root `.vercel` points at Property, hence the env overrides). Build 43s, deployment `dpl_2yVWFsReapZveud5KYwsMj8hfD9W`, aliased to the production domain.
 
-1. Dashboard (operator, ~20s): project Settings → Build and Deployment → Framework Preset **Next.js**, Root Directory **contractors-ir35/web** (null framework = the estate 404 trap). **Confirm this before deploying.**
-2. Deploy from REPO ROOT with `VERCEL_ORG_ID`/`VERCEL_PROJECT_ID` env override (never from inside the site dir), `vercel deploy --prod`. Local `vercel build` from inside web/ mis-resolves paths (vercel.json installCommand does `cd ../..`) — cloud build with rootDirectory is the proven path. **User-enforced gate — do not automate.**
-3. Live battery: `node scripts/an01_browser_pass.mjs https://www.contractortaxaccountants.co.uk cfp` (opt-out stops beacons) · console auth runtime check (/api/admin/login 303-wrong-key / cookie on right key / authed dashboard renders) · ingest verify (web_events rows site_key='contractors-ir35') · headers probe · feed.xml + llms-full.txt 200s
-4. **Test lead (Ahmad protection)**: before submitting, `ALTER TABLE leads DISABLE TRIGGER leads_to_email_trg; ALTER TABLE leads DISABLE TRIGGER leads_to_enrich_trg;` (keep `stitch_lead_to_session_trg` ON — it is under test). Submit form, verify row + consent fields + stitching, then re-enable both triggers and DELETE the test row. The notify route CCs ahmadtirmizey@reflexaccounting.co.uk on EVERY leads insert (no source filter), hence the trigger window
-5. GA4 property → measurement id → `niche.config.json` seo.google_analytics_id + `optimisation_engine/clients/ga4_config.py` → redeploy. GSC domain property + verification → niche.config + enable in gsc config. Bing import from GSC. **Then upload sitemap (`/sitemap.xml`) in GSC** (operator does this)
-6. IndexNow submit the new URLs; register wave-1 pages in monitored_pages
-7. Set the real phone (currently placeholder `+44 20 0000 0000` in niche.config contact)
-8. `python scripts/spinup_site_check.py contractors-ir35` → expect all-PASS
+**Gotchas hit (this was the FIRST real deploy of a fresh monorepo Vercel project — fix these up-front next time):** the project existed but had never deployed, so its config was incomplete. The CLI's OAuth token is **rejected by the v9 projects settings API** (`invalidToken`), and the CLI has no command for these — so all three had to be toggled in the dashboard (or set with a real `VERCEL_TOKEN`):
+1. Framework Preset `Other` → **Next.js**
+2. Root Directory `.` → **contractors-ir35/web**
+3. **"Include files outside the root directory in the build step" → ON.** Without it, only the rootDir subtree is copied into the build, so the `cd ../.. && npm install` step overshoots to `/` and npm dies with `Tracker "idealTree" already exists` (debug log shows `cwd /`). This is the non-obvious one — the 6 live sites have it on via auto workspace detection, which a fresh API-set project does not trigger.
+
+Env already set: SUPABASE pair, SERVICE_ROLE, ADMIN_DASHBOARD_KEY, `NEXT_PUBLIC_SITE_URL=https://www.contractortaxaccountants.co.uk`. Project still NAMED `contractor-finance-partners` (cosmetic; rename optional). ADMIN_DASHBOARD_KEY value: `.cache/cfp_admin_key.txt` (hand to operator, then delete).
+
+**Live verification done:** routes 200, headers, sitemap domain, an01 browser-pass ALL GREEN, web_events ingest confirmed (21 rows).
+
+## Post-deploy — still open
+
+1. **Test lead (Ahmad protection)**: before submitting, `ALTER TABLE leads DISABLE TRIGGER leads_to_email_trg; ALTER TABLE leads DISABLE TRIGGER leads_to_enrich_trg;` (keep `stitch_lead_to_session_trg` ON — under test). Submit form, verify row + consent fields + stitching, re-enable both triggers, DELETE the test row. Notify route CCs ahmadtirmizey@reflexaccounting.co.uk on EVERY leads insert (no source filter), hence the trigger window
+2. GA4 property → measurement id → `niche.config.json` seo.google_analytics_id + `optimisation_engine/clients/ga4_config.py` → redeploy. GSC domain property + verification → niche.config + enable in gsc config. Bing import from GSC. **Upload sitemap (`/sitemap.xml`) in GSC**
+3. IndexNow submit the new URLs; register wave-1 pages in monitored_pages (Claude can do these)
+4. Set the real phone (placeholder `+44 20 0000 0000` in niche.config contact)
+5. Optional: rename the Vercel project to match the brand; commit held-back shared engine-map registrations with the construction-cis/GEO batch
 
 ## Committed vs uncommitted (2026-06-17)
 
