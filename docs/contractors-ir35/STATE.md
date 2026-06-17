@@ -65,9 +65,10 @@ Env already set: SUPABASE pair, SERVICE_ROLE, ADMIN_DASHBOARD_KEY, `NEXT_PUBLIC_
 
 1. **Test lead (Ahmad protection)**: before submitting, `ALTER TABLE leads DISABLE TRIGGER leads_to_email_trg; ALTER TABLE leads DISABLE TRIGGER leads_to_enrich_trg;` (keep `stitch_lead_to_session_trg` ON — under test). Submit form, verify row + consent fields + stitching, re-enable both triggers, DELETE the test row. Notify route CCs ahmadtirmizey@reflexaccounting.co.uk on EVERY leads insert (no source filter), hence the trigger window
 2. GA4 property → measurement id → `niche.config.json` seo.google_analytics_id + `optimisation_engine/clients/ga4_config.py` → redeploy. GSC domain property + verification → niche.config + enable in gsc config. Bing import from GSC. **Upload sitemap (`/sitemap.xml`) in GSC**
-3. IndexNow submit the new URLs; register wave-1 pages in monitored_pages (Claude can do these)
-4. Set the real phone (placeholder `+44 20 0000 0000` in niche.config contact)
-5. Optional: rename the Vercel project to match the brand; commit held-back shared engine-map registrations with the construction-cis/GEO batch
+3. IndexNow: DONE 2026-06-17 (`python -m optimisation_engine.indexing.submit_indexnow --site contractors-ir35 --from-sitemap` → 136 URLs, HTTP 202). Re-run after content changes.
+4. monitored_pages — **DEFERRED on purpose.** Dry-run 2026-06-17 showed all 15 wave-1 baselines = 0 (no GSC/Bing history yet); the detector freezes the baseline at registration and only alerts on *drops*, so a 0 baseline is inert. Re-run once real rankings exist (~28d post-index, ≈2026-07-15) with: `python scripts/register_monitored_batch.py --site contractors-ir35 --slugs what-is-ir35 inside-ir35 outside-ir35 limited-company-vs-umbrella-contractor psc-limited-company-contractor-tax contractor-expenses-allowable-guide contractor-pension-employer-contributions how-to-choose-contractor-accountant off-payroll-working-rules-private-sector sds-status-determination-statement ir35-small-company-exemption flat-rate-vat-limited-cost-trader travel-expenses-inside-ir35 umbrella-company-holiday-pay contractor-pension-carry-forward --commit`
+5. Set the real phone (placeholder `+44 20 0000 0000` in niche.config contact)
+6. Optional: rename the Vercel project to match the brand; commit held-back shared engine-map registrations with the construction-cis/GEO batch
 
 ## Committed vs uncommitted (2026-06-17)
 
