@@ -1,9 +1,17 @@
 ---
 title: "MSC Legislation: Does It Affect Your Limited Company?"
 slug: msc-legislation-contractors
+primaryKeyword: "MSC legislation"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8204963/pexels-photo-8204963.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A professional consultation session with a couple and a social worker in a modern office environment."
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/social-worker-checking-on-adoptive-parents-8204963/"
 category: Contractor Accounting Basics
 metaTitle: "MSC Legislation for Contractors: What Chapter 9 Means"
 metaDescription: "Chapter 9 ITEPA catches managed service companies without a status test. Understand the MSC definition, debt transfer risk, and the accountancy carve-out."
@@ -197,4 +205,4 @@ faqs:
 
 <p>Third, the accountancy carve-out in s.61B(3) protects genuine professional advice but not a service that crosses into controlling or running the company's financial affairs. The practical risk-management step is to ensure the accountancy relationship is clearly on the advice side of that line, with the contractor making genuine decisions and holding genuine control over their own company.</p>
 
-<p>Questions about IR35 status for a specific engagement are best addressed through a contract and working-practices review. Questions about the structure of your accountancy or administrative arrangements and how they interact with Chapter 9 are worth raising with a specialist directly. <a href="/services">Contractor Finance Partners works with PSC directors</a> across all aspects of contractor tax, including MSC risk, IR35 status and the wider tax picture for a limited company. <a href="/contact">Speak to the team</a> if you want to understand how your current arrangements measure up.</p>
+<p>Questions about IR35 status for a specific engagement are best addressed through a contract and working-practices review. Questions about the structure of your accountancy or administrative arrangements and how they interact with Chapter 9 are worth raising with a specialist directly. <a href="/services">Contractor Tax Accountants works with PSC directors</a> across all aspects of contractor tax, including MSC risk, IR35 status and the wider tax picture for a limited company. <a href="/contact">Speak to the team</a> if you want to understand how your current arrangements measure up.</p>

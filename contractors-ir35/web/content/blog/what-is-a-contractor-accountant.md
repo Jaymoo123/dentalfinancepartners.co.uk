@@ -3,7 +3,14 @@ title: "What Is a Contractor Accountant and Do You Need One?"
 slug: what-is-a-contractor-accountant
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Two professionals analyzing financial documents with a calculator."
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
 category: Contractor Accounting Basics
 metaTitle: "What Is a Contractor Accountant? Do You Need One?"
 metaDescription: "A contractor accountant does far more than file returns. Discover what they handle, why a generalist falls short, and when you genuinely need one."
@@ -143,7 +150,7 @@ faqs:
 
 <h2>Working with a specialist firm</h2>
 
-<p>Contractor Finance Partners works exclusively with UK limited-company contractors, umbrella workers and freelancers. The service covers the full compliance and planning cycle: company setup, payroll, VAT, accounts, corporation tax, Self Assessment and ongoing IR35 and tax-planning advice throughout the year.</p>
+<p>Contractor Tax Accountants works exclusively with UK limited-company contractors, umbrella workers and freelancers. The service covers the full compliance and planning cycle: company setup, payroll, VAT, accounts, corporation tax, Self Assessment and ongoing IR35 and tax-planning advice throughout the year.</p>
 
 <p>If you are setting up for the first time, moving from umbrella to limited company, or not confident your current accountant has the specialist knowledge your contracts require, <a href="/services">our contractor accountancy services</a> explain what is included. You can also <a href="/ir35-status">request an IR35 status review</a> if you have a specific contract or determination to assess.</p>
 

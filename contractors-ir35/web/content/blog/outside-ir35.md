@@ -3,7 +3,14 @@ title: "Outside IR35: How to Protect Your Status"
 slug: outside-ir35
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/12662874/pexels-photo-12662874.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of hands typing on a sleek laptop, ideal for freelance work."
+imageCredit:
+  photographer: "Anna Shvets"
+  photographerUrl: "https://www.pexels.com/@shvetsa"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/laptop-computer-freelancer-web-design-12662874/"
 category: IR35 Status
 metaTitle: "Outside IR35: How to Protect Your Status"
 metaDescription: Discover how to evidence and protect your outside-IR35 status through working practices, contract terms, and status determination.
@@ -192,7 +199,7 @@ faqs:
 
 <p>Outside-IR35 status is not something to guess on. If the engagement involves any of the grey areas above (ambiguous control language, a substitution clause the client might refuse, a mix of autonomy and close oversight), or if you are bidding for a high-value contract where the financial stakes of getting status wrong are serious, commission a professional review. A contractor-specialist accountant can assess your working practices and help you build evidence. A lawyer can review the contract and advise on the risk. The cost is small relative to the cost of getting status wrong.</p>
 
-<p>Contractor Finance Partners can help you assess your status, review your contract terms, and build your outside-IR35 case. We advise on the three tests, help you understand CEST and its limits, and support you in negotiating client agreements that protect your position. <a href="/contact">Contact us</a> to discuss your situation or visit our <a href="/services">services page</a> to learn more about how we support contractors.</p>
+<p>Contractor Tax Accountants can help you assess your status, review your contract terms, and build your outside-IR35 case. We advise on the three tests, help you understand CEST and its limits, and support you in negotiating client agreements that protect your position. <a href="/contact">Contact us</a> to discuss your situation or visit our <a href="/services">services page</a> to learn more about how we support contractors.</p>
 
 <h2>Key Takeaways</h2>
 

@@ -3,7 +3,14 @@ title: "Making Tax Digital for Income Tax: A Contractor's Guide"
 slug: mtd-income-tax-contractors-guide
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8962457/pexels-photo-8962457.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of tax documents with laptop and smartphone on a desk."
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-mobile-phone-near-the-documents-and-laptop-on-the-table-8962457/"
 category: MTD and Compliance
 metaTitle: "MTD for Income Tax: A Contractor's Guide (2026/27)"
 metaDescription: "Making Tax Digital for Income Tax starts at £50,000 from April 2026. Who is in, who is out, and why most PSC contractors are not affected at all."

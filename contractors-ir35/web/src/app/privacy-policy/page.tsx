@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
-export const metadata: Metadata = { title: "Privacy Policy" };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How Contractor Tax Accountants collects, uses and protects your personal data when you enquire, including analytics, data retention and your UK GDPR rights.",
+};
 
 export default function PrivacyPolicyPage() {
   return (

@@ -1,9 +1,17 @@
 ---
 title: "Contractor Mileage Claims: The 55p Rule from April 2026"
 slug: mileage-claims-contractor-limited-company
+primaryKeyword: "mileage claims"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6019124/pexels-photo-6019124.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A busy street lined with parked cars and bustling shops in central London, UK."
+imageCredit:
+  photographer: "Jacek Herbut"
+  photographerUrl: "https://www.pexels.com/@jacek-herbut-3847752"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/cars-parked-on-the-street-6019124/"
 category: Expenses and Deductions
 metaTitle: "Contractor Mileage Claims: The 55p Rule from 2026"
 metaDescription: "The AMAP rate for contractors rose to 55p per mile from 6 April 2026. Understand what counts, what commuting blocks, and what inside IR35 changes."

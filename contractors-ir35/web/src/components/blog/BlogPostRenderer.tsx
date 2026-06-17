@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { buildBlogPostingJsonLd } from "@/lib/schema";
+import { buildBlogPostingJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
@@ -29,6 +29,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const jsonLd =
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
+  const faqJsonLd =
+    post.faqs && post.faqs.length > 0 ? buildFaqJsonLd(post.faqs) : null;
 
   const takeaways =
     post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
@@ -42,6 +44,12 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: faqJsonLd }}
+        />
+      ) : null}
 
       <section className="relative h-[420px] sm:h-[480px] lg:h-[520px] overflow-hidden">
         {post.image ? (
@@ -155,7 +163,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               {takeaways ? (
                 <section
-                  className="not-prose rounded-lg border-l-4 border-cyan-700 bg-cyan-50 p-6"
+                  className="tldr not-prose rounded-lg border-l-4 border-cyan-700 bg-cyan-50 p-6"
                   aria-label="Key takeaways"
                 >
                   <p className="text-xs font-bold uppercase tracking-wider text-cyan-800">
@@ -171,7 +179,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </ul>
                 </section>
               ) : post.summary ? (
-                <p className="text-lg text-neutral-600 leading-relaxed border-l-4 border-cyan-700 bg-cyan-50 p-6">
+                <p className="tldr text-lg text-neutral-600 leading-relaxed border-l-4 border-cyan-700 bg-cyan-50 p-6">
                   {post.summary}
                 </p>
               ) : null}

@@ -3,7 +3,14 @@ title: "Umbrella vs Limited Company: Which is Right for Your Contracting Career"
 slug: limited-company-vs-umbrella-contractor
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6334227/pexels-photo-6334227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Side view of young female remote employee working on netbook at table with assorted fruits and hot drink at home"
+imageCredit:
+  photographer: "Anete Lusina"
+  photographerUrl: "https://www.pexels.com/@anete-lusina"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/freelancer-typing-on-laptop-at-table-with-fresh-fruits-6334227/"
 category: Umbrella vs Limited Company
 metaTitle: "Umbrella vs limited company: choose right for your contract"
 metaDescription: Compare umbrella and PSC structures for contractors. Weigh IR35 status, admin costs, extraction, and the April 2026 reform.

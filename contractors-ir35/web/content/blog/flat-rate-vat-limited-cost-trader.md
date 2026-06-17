@@ -3,7 +3,14 @@ title: Flat Rate VAT and the Limited Cost Trader Rule
 slug: flat-rate-vat-limited-cost-trader
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/5900132/pexels-photo-5900132.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Woman using calculator and receipts at home office desk for finance management."
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/woman-sorting-receipts-at-the-desk-at-home-5900132/"
 category: MTD and Compliance
 metaTitle: Flat Rate VAT and the Limited Cost Trader Rule (2026/27)
 metaDescription: The flat rate VAT scheme and the 16.5% limited cost trader test explained for UK contractors. When FRS saves money, when it doesn't, and how to model it.

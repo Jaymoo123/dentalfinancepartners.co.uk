@@ -3,7 +3,14 @@ title: "VAT Registration for Contractors: When and How to Register"
 slug: contractor-vat-registration-guide
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/5900070/pexels-photo-5900070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Businesswoman showing a receipt during a home office work session, highlighting technology integration."
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/businesswoman-showing-receipt-5900070/"
 category: MTD and Compliance
 metaTitle: "Contractor VAT Registration Guide: Thresholds & Rules"
 metaDescription: "Compulsory at £90,000, deregistration at £88,000 (both frozen). Voluntary registration, rolling 12-month test and MTD for VAT explained for UK contractors."

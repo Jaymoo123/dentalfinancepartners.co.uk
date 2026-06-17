@@ -3,7 +3,14 @@ title: "Claiming Home Office Costs as a Limited Company Contractor"
 slug: home-office-expenses-contractor
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8424478/pexels-photo-8424478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A black coffee mug on an office desk with a blurred laptop in the background."
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-mug-beside-a-laptop-8424478/"
 category: Expenses and Deductions
 metaTitle: "Home Office Expenses for Contractors: PSC Claims Guide"
 metaDescription: "How limited company contractors claim home office costs through a PSC: wholly-and-exclusively rule, flat-rate vs apportionment, what to document."

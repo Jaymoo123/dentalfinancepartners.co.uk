@@ -3,7 +3,14 @@ title: "Umbrella Company Holiday Pay: How It Works and What to Check"
 slug: umbrella-company-holiday-pay
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/30690800/pexels-photo-30690800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Top-down view of an organized desk setup featuring keyboard, camera, notebook, and smartphone for creative planning."
+imageCredit:
+  photographer: "Nathan J Hilton"
+  photographerUrl: "https://www.pexels.com/@nathanjhilton"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/organized-desk-setup-with-technology-and-planner-30690800/"
 category: Umbrella vs Limited Company
 metaTitle: "Umbrella Company Holiday Pay: How It Works (2026)"
 metaDescription: "Umbrella company holiday pay explained: assignment-rate deductions, your KID rights, the April 2026 JSL reform, and avoidance-scheme warning signs to know."

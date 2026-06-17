@@ -3,7 +3,14 @@ title: What Is IR35? The Complete Guide for UK Contractors
 slug: what-is-ir35
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/30535790/pexels-photo-30535790.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Senior businessman speaking on phone at desk in a modern office setting, emphasizing connectivity and professionalism."
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/businessman-on-phone-call-in-modern-office-30535790/"
 category: IR35 Status
 metaTitle: What Is IR35? The Complete UK Contractor Guide
 metaDescription: "What is IR35 explained in plain English: the two regimes (Chapter 8 and Chapter 10), the three status tests, who decides for 2026/27, and what inside means."

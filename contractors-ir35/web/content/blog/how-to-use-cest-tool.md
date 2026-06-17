@@ -1,9 +1,17 @@
 ---
 title: "How to Use HMRC's CEST Tool and What the Result Means"
 slug: how-to-use-cest-tool
+primaryKeyword: "CEST tool"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7993898/pexels-photo-7993898.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Engaged business professionals collaborating in a modern office setting."
+imageCredit:
+  photographer: "Thirdman"
+  photographerUrl: "https://www.pexels.com/@thirdman"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-in-blue-long-sleeve-shirt-sitting-beside-man-in-white-long-sleeve-shirt-7993898/"
 category: IR35 Status
 metaTitle: "How to Use HMRC's CEST Tool: IR35 Results Explained"
 metaDescription: "Step-by-step guide to HMRC's CEST tool (updated April 2025). What the result really means, where it falls short on MOO, and how to build a solid audit trail."

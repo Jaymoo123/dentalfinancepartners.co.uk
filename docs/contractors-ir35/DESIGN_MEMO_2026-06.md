@@ -1,4 +1,4 @@
-# Contractor Finance Partners — brand colour shift design memo
+# Contractor Tax Accountants — brand colour shift design memo
 
 Date: 2026-06-12
 Status: SPEC — ready for an implementing agent. This memo is the source of truth for the colour shift. No site code is changed by this document.

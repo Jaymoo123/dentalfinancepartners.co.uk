@@ -3,7 +3,14 @@ title: "Dividend Tax for Contractors: 2026/27 Rates and Planning"
 slug: dividend-tax-rates-contractors-2026
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8815849/pexels-photo-8815849.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of a hand signing documents with a pen, symbolizing an important business contract."
+imageCredit:
+  photographer: "Kampus Production"
+  photographerUrl: "https://www.pexels.com/@kampus"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-signing-a-contract-8815849/"
 category: Pension and Dividends
 metaTitle: "Dividend Tax for Contractors: 2026/27 Rates Explained"
 metaDescription: "The 2026/27 dividend rates are 10.75%, 35.75% and 39.35% after the FA 2026 rise. See how dividends are taxed, the £500 allowance, and planning options."
@@ -192,7 +199,7 @@ faqs:
 
 <p>Where circumstances change and the 2027/28 income will be materially lower than 2026/27 (for example, if the contractor takes a career break, reduces their dividend or winds up the company), payments on account can be reduced by a claim to HMRC before the relevant deadline. The claim must be made in good faith on a realistic estimate; penalties apply if the reduction claim is excessive and results in underpayment.</p>
 
-<p>The broader contractor compliance picture, including corporation tax filings, accounts and the annual review of extraction strategy, is covered by the <a href="/services">Contractor Finance Partners services page</a>.</p>
+<p>The broader contractor compliance picture, including corporation tax filings, accounts and the annual review of extraction strategy, is covered by the <a href="/services">Contractor Tax Accountants services page</a>.</p>
 
 <h2>What the director salary and dividend split guide covers</h2>
 
@@ -206,4 +213,4 @@ faqs:
 
 <p>For most PSC contractors, the practical focus is on keeping total income within the basic-rate band, using employer pension contributions as a pre-extraction tool, and monitoring the personal-allowance taper if income approaches £100,000.</p>
 
-<p>If you want to review how your current salary and dividend structure holds up against the 2026/27 rates and the frozen thresholds, <a href="/services">our contractor accounting services</a> include an annual extraction review as part of the engagement. Speak to the team at <a href="/contact">Contractor Finance Partners</a> to see where the numbers sit.</p>
+<p>If you want to review how your current salary and dividend structure holds up against the 2026/27 rates and the frozen thresholds, <a href="/services">our contractor accounting services</a> include an annual extraction review as part of the engagement. Speak to the team at <a href="/contact">Contractor Tax Accountants</a> to see where the numbers sit.</p>

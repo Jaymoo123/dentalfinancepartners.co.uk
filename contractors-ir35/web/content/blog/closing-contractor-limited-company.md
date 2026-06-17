@@ -3,7 +3,14 @@ title: "Closing Your Contractor Limited Company: MVL and Strike-Off"
 slug: closing-contractor-limited-company
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/36766672/pexels-photo-36766672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Focused businessman in suit multitasking on phone and laptop in modern office."
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/businessman-working-on-laptop-in-office-setting-36766672/"
 category: Limited Company Tax
 metaTitle: "Closing a Contractor Limited Company: MVL vs Strike-Off"
 metaDescription: "Strike-off or MVL for your contractor PSC? BADR runs at 18% from April 2026. The TAAR four conditions explained, plus s.455 date bands and DLA timing."

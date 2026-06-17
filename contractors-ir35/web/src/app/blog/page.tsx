@@ -9,12 +9,12 @@ import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 export const metadata: Metadata = {
   title: "IR35 and Contractor Tax Blog | Guides and Articles",
   description:
-    "Practical IR35 and contractor tax guides. Off-payroll rules, limited company tax, expenses, dividends, pension planning and more. Written by specialist contractor accountants.",
+    "Practical IR35 and contractor tax guides: off-payroll rules, limited company tax, expenses, dividends and pension planning, from specialist contractor accountants.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: "IR35 and Contractor Tax Blog | Guides and Articles",
     description:
-      "Practical IR35 and contractor tax guides. Off-payroll rules, limited company tax, expenses, dividends, pension planning and more. Written by specialist contractor accountants.",
+      "Practical IR35 and contractor tax guides: off-payroll rules, limited company tax, expenses, dividends and pension planning, from specialist contractor accountants.",
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "IR35 and Contractor Tax Blog | Guides and Articles",
     description:
-      "Practical IR35 and contractor tax guides. Off-payroll rules, limited company tax, expenses, dividends, pension planning and more. Written by specialist contractor accountants.",
+      "Practical IR35 and contractor tax guides: off-payroll rules, limited company tax, expenses, dividends and pension planning, from specialist contractor accountants.",
   },
 };
 

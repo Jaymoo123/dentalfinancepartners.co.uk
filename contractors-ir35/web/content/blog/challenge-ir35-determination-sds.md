@@ -1,9 +1,17 @@
 ---
 title: "How to Challenge an Inside IR35 Determination"
 slug: challenge-ir35-determination-sds
+primaryKeyword: "inside IR35 determination"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6814526/pexels-photo-6814526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Person in business attire signing a document at a wooden table in an office setting."
+imageCredit:
+  photographer: "cottonbro studio"
+  photographerUrl: "https://www.pexels.com/@cottonbro"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-signing-contract-documents-6814526/"
 category: IR35 Status
 metaTitle: "How to Challenge an IR35 Inside Determination (SDS)"
 metaDescription: "Practical guide to challenging an inside IR35 determination: evidence, writing a representation, the 45-day process, and blanket determinations."

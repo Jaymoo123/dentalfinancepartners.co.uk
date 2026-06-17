@@ -3,7 +3,14 @@ title: "Contractor Pension Tax Relief: How PSC Contributions Cut Your Tax"
 slug: contractor-pension-tax-relief
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7545328/pexels-photo-7545328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Elderly woman in pink shirt carefully reading a document indoors."
+imageCredit:
+  photographer: "SHVETS production"
+  photographerUrl: "https://www.pexels.com/@shvets-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/elderly-woman-reading-a-document-7545328/"
 category: Pension and Dividends
 metaTitle: "Contractor Pension Tax Relief: PSC Contributions Explained"
 metaDescription: "How employer pension contributions from your PSC cut corporation tax, avoid NIC on both sides, and escape income tax on receipt. 2026/27 figures."

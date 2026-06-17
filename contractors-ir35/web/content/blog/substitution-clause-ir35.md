@@ -3,7 +3,14 @@ title: "The Substitution Clause and IR35: What It Proves and What It Does Not"
 slug: substitution-clause-ir35
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/20752572/pexels-photo-20752572.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A diverse group of professionals in a business consulting office setting."
+imageCredit:
+  photographer: "Tran Nhu Tuan"
+  photographerUrl: "https://www.pexels.com/@kooldark"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/business-company-staff-in-office-20752572/"
 category: IR35 Status
 metaTitle: "Substitution Clause and IR35: What It Proves"
 metaDescription: "Does a substitution clause keep you outside IR35? Learn what genuine, fettered and sham clauses actually prove at tribunal, and what HMRC looks for."

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
 
-export const metadata: Metadata = { title: "Cookie Policy" };
+export const metadata: Metadata = {
+  title: "Cookie Policy",
+  description:
+    "How Contractor Tax Accountants uses cookies, including essential and Google Analytics cookies, and how UK contractors can control or delete them in the browser.",
+};
 
 export default function CookiePolicyPage() {
   return (

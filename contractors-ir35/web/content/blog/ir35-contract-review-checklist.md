@@ -3,7 +3,14 @@ title: "IR35 Contract Review: What to Check Before You Sign"
 slug: ir35-contract-review-checklist
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8872225/pexels-photo-8872225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Adult hands with jewelry typing on a laptop in a professional indoor environment."
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-using-a-laptop-computer-8872225/"
 category: IR35 Status
 metaTitle: "IR35 Contract Review: What to Check Before You Sign"
 metaDescription: "Clause-by-clause IR35 contract review checklist: substitution, control, MOO, financial risk and working practices. Know what reviewers actually look for."
@@ -45,7 +52,7 @@ faqs:
 
 <p>An IR35 contract review is one of the most useful things a contractor can do before accepting a new engagement, but it is also one of the most misunderstood. The review tells you whether the written terms are consistent with an outside-IR35 position. It does not, by itself, make you outside IR35.</p>
 
-<p>HMRC and tribunals apply the <a href="/blog/ir35-status/what-is-ir35">IR35 status tests</a> to the actual working relationship, not to the document. The Supreme Court confirmed in <em>Professional Game Match Officials Ltd v HMRC</em> [2024] UKSC 29 that even where mutuality of obligation and sufficient control are present, the tribunal must still stand back and assess the whole picture. Working practices over contract wording is not a caveat to the review process; it is its governing principle, and it is the position we take with every client at <a href="/ir35-status">Contractor Finance Partners</a>.</p>
+<p>HMRC and tribunals apply the <a href="/blog/ir35-status/what-is-ir35">IR35 status tests</a> to the actual working relationship, not to the document. The Supreme Court confirmed in <em>Professional Game Match Officials Ltd v HMRC</em> [2024] UKSC 29 that even where mutuality of obligation and sufficient control are present, the tribunal must still stand back and assess the whole picture. Working practices over contract wording is not a caveat to the review process; it is its governing principle, and it is the position we take with every client at <a href="/ir35-status">Contractor Tax Accountants</a>.</p>
 
 <p>That said, a clean, well-drafted contract matters. It removes one avenue of attack, it supports a favourable CEST run, and it demonstrates that you understood the terms of your engagement. This guide covers every clause that carries real weight, in the order a specialist reviewer typically works through them.</p>
 

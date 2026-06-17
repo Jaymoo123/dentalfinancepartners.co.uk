@@ -1,9 +1,17 @@
 ---
 title: How to Choose a Contractor Accountant in the UK
 slug: how-to-choose-contractor-accountant
+primaryKeyword: "contractor accountant"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7654120/pexels-photo-7654120.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A busy office scene with two professionals working on laptops and calculators."
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-and-woman-working-at-the-office-7654120/"
 category: Contractor Accounting Basics
 metaTitle: How to Choose a Contractor Accountant UK | 2026/27
 metaDescription: "What a specialist contractor accountant must cover in 2026/27: IR35 literacy, SDS support, extraction planning, pension strategy and the MSC risk boundary."

@@ -1,0 +1,62 @@
+{
+  "site": "contractors-ir35",
+  "displayName": "Contractor Tax Accountants",
+  "paths": {
+    "repoRoot": "C:/Users/user/Documents/Accounting",
+    "worktreeBase": "C:/Users/user/Documents",
+    "worktreePattern": "Accounting-wt-{site}-{wavekind}{wave}-{bucket}",
+    "branchPattern": "{site}-{wavekind}{wave}-{bucket}",
+    "docsDir": "docs/contractors-ir35",
+    "briefsDir": "briefs/contractors-ir35",
+    "sessionsDir": "docs/sessions/contractors-ir35",
+    "blogContentDir": "contractors-ir35/web/content/blog",
+    "blogRoutesDir": "contractors-ir35/web/src/app/blog",
+    "buildDir": "contractors-ir35/web",
+    "housePositions": "docs/contractors-ir35/house_positions.md",
+    "netnewProgram": "docs/_engines/NETNEW_PROGRAM.md",
+    "siteConfigJson": "contractors-ir35/niche.config.json"
+  },
+  "vercel": {
+    "projectJson": "contractors-ir35/web/.vercel/project.json",
+    "productionDomain": "www.contractortaxaccountants.co.uk"
+  },
+  "indexnow": {
+    "module": "optimisation_engine.indexing.submit_indexnow"
+  },
+  "pillars": [
+    "what-is-ir35",
+    "inside-ir35-take-home-explained",
+    "set-up-limited-company-contractor",
+    "director-salary-dividend-split-guide",
+    "contractor-tax-planning-guide",
+    "mtd-income-tax-contractors-guide",
+    "limited-company-vs-umbrella-contractor",
+    "how-to-choose-contractor-accountant"
+  ],
+  "wave": {
+    "buckets": [
+      "a",
+      "b",
+      "c"
+    ],
+    "bucketsUpper": [
+      "A",
+      "B",
+      "C"
+    ],
+    "megaWaveSize": 60,
+    "batchSize": 6,
+    "waveKind": "wave"
+  },
+  "naming": {
+    "launchPromptsFile": "WAVE{wave}_LAUNCH_PROMPTS.md",
+    "startHereFile": "WAVE{wave}_SESSION_{bucketUpper}_START_HERE.md",
+    "trackerFile": "wave{wave}_page_tracker.md",
+    "flagsFile": "wave{wave}_site_wide_flags.md",
+    "qaFile": "wave{wave}_questions_session_{bucketUpper}.md",
+    "discoveryFile": "wave{wave}_discovery_log_session_{bucketUpper}.md",
+    "promptExtractDir": "wave{wave}_prompts",
+    "briefSubdir": "wave{wave}",
+    "cannibCheckFile": "wave{wave}_cannibalisation_check.md"
+  }
+}

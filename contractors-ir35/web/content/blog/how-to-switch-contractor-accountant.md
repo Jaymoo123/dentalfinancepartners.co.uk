@@ -3,7 +3,14 @@ title: "How to Switch Contractor Accountant: the Step-by-Step Process"
 slug: how-to-switch-contractor-accountant
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6779565/pexels-photo-6779565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Black and white office scene featuring accounting documents, calculator, and laptops."
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-holding-black-pen-writing-on-white-paper-6779565/"
 category: Contractor Accounting Basics
 metaTitle: "How to Switch Contractor Accountant | Step-by-Step Guide"
 metaDescription: "Switching contractor accountant: what to gather, how to time around year-end, what professional clearance covers, and what a good specialist asks for."

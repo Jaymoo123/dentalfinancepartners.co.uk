@@ -3,7 +3,14 @@ title: "How to Set Up a Limited Company for Contracting"
 slug: set-up-limited-company-contractor
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7550304/pexels-photo-7550304.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Two young adults working together on laptops in an office setting, focusing on tasks."
+imageCredit:
+  photographer: "MART  PRODUCTION"
+  photographerUrl: "https://www.pexels.com/@mart-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-busy-man-using-a-laptop-7550304/"
 category: Contractor Accounting Basics
 metaTitle: "How to Set Up a Limited Company for Contracting (2026)"
 metaDescription: "Step-by-step guide to setting up a limited company for contracting in 2026/27: incorporation, tax registrations, bank account, IR35 and first decisions."

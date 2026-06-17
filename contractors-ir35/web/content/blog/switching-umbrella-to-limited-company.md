@@ -3,7 +3,14 @@ title: "Moving from Umbrella to Limited Company: When It Makes Sense"
 slug: switching-umbrella-to-limited-company
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7455908/pexels-photo-7455908.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of a person working on a laptop with graphic design software."
+imageCredit:
+  photographer: "Danik Prihodko"
+  photographerUrl: "https://www.pexels.com/@danikprihodko"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-using-a-laptop-7455908/"
 category: Umbrella vs Limited Company
 metaTitle: "Umbrella to Limited Company: When to Switch | 2026/27"
 metaDescription: "Landed an outside-IR35 contract? Discover the trigger points, practical steps and financial changes when moving from umbrella to PSC in 2026/27."

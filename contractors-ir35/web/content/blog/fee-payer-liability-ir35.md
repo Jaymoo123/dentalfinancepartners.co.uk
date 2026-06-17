@@ -1,9 +1,17 @@
 ---
 title: "Fee-Payer Liability Under IR35: Who Pays if the Status Is Wrong"
 slug: fee-payer-liability-ir35
+primaryKeyword: "fee-payer liability"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7651555/pexels-photo-7651555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Person's hand holding a company invoice on a clipboard with a pen."
+imageCredit:
+  photographer: "Kindel Media"
+  photographerUrl: "https://www.pexels.com/@kindelmedia"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/"
 category: IR35 Status
 metaTitle: "Fee-Payer Liability Under IR35: Who Pays if Wrong"
 metaDescription: "Who is the fee-payer under IR35? When does PAYE liability shift up the chain? Invalid SDS, reasonable care, debt transfer and the 2024 set-off explained."

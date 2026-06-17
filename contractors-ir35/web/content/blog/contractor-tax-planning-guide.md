@@ -3,7 +3,14 @@ title: "Contractor Tax Planning: How to Reduce Your Bill Legally"
 slug: contractor-tax-planning-guide
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6939518/pexels-photo-6939518.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A business workspace setup featuring documents, coffee, and financial elements."
+imageCredit:
+  photographer: "Vlad Deep"
+  photographerUrl: "https://www.pexels.com/@vlad-deep-29415806"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/cup-of-coffee-and-magnifying-glass-on-a-desk-6939518/"
 category: Limited Company Tax
 metaTitle: "Contractor Tax Planning 2026/27: Cut Your Bill Legally"
 metaDescription: "How a UK contractor plans tax legitimately in 2026/27: extraction order, pensions, expenses, timing and exit. The legal levers, not avoidance schemes."

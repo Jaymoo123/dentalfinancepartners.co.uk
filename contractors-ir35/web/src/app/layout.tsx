@@ -8,6 +8,7 @@ import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/reac
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 
 const siteUrl = siteConfig.url;
 
@@ -66,6 +67,16 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="antialiased font-sans">
+        {/* Entity graph (Organization + WebSite) on every page so AI knowledge-graph
+            crawlers resolve the firm as one entity via the shared #organization @id. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}
+        />
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link.

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
-export const metadata: Metadata = { title: "Terms of Use" };
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  description:
+    "The terms of use for the Contractor Tax Accountants website. Our IR35 and contractor tax guides are general information, not a substitute for tailored advice.",
+};
 
 export default function TermsPage() {
   return (

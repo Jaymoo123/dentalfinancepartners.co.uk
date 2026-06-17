@@ -3,7 +3,14 @@ title: Pension Carry Forward for Contractors - The Three-Year Rule and High-Prof
 slug: contractor-pension-carry-forward
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7545279/pexels-photo-7545279.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Elderly man with eyeglasses reviewing documents at a laptop. Indoor setting with natural light."
+imageCredit:
+  photographer: "SHVETS production"
+  photographerUrl: "https://www.pexels.com/@shvets-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/an-elderly-man-looking-at-the-documents-on-the-table-near-his-laptop-7545279/"
 category: Pension and Dividends
 metaTitle: Pension Carry Forward Contractor 2026/27 Guide
 metaDescription: Three-year pension carry-forward lets contractors deploy large one-off employer contributions without an annual-allowance charge. 2026/27 guide.

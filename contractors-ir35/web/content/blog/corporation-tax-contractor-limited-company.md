@@ -3,7 +3,14 @@ title: "Corporation Tax for a Contractor Limited Company: Rates and Relief"
 slug: corporation-tax-contractor-limited-company
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8296974/pexels-photo-8296974.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Hands using a calculator at a desk with documents and folders, ideal for finance or accounting themes."
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-computing-with-a-calculator-8296974/"
 category: Limited Company Tax
 metaTitle: "Corporation Tax for Contractor Limited Companies 2026/27"
 metaDescription: "19%, 25% or the marginal band? How contractor PSCs calculate corporation tax, apply marginal relief, handle associated companies and cut the bill."

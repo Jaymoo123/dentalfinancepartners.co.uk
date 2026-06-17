@@ -1,9 +1,17 @@
 ---
 title: "SIPPs and Pension Schemes for Contractors: Choosing the Right One"
 slug: contractor-pension-schemes-sipp
+primaryKeyword: "pension schemes for contractors"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8441780/pexels-photo-8441780.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A business meeting between an elderly client and a consultant discussing documents at an office table."
+imageCredit:
+  photographer: "Kampus Production"
+  photographerUrl: "https://www.pexels.com/@kampus"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/an-elderly-man-consulting-an-insurance-agent-8441780/"
 category: Pension and Dividends
 metaTitle: "SIPPs and Pension Schemes for Contractors 2026/27"
 metaDescription: "SIPP vs workplace vs personal pension for UK contractors. What each type is, why PSC directors often use SIPPs, and what to weigh before choosing."

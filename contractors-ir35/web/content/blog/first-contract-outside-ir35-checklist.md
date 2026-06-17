@@ -3,7 +3,14 @@ title: "Your First Outside IR35 Contract: a Financial Setup Checklist"
 slug: first-contract-outside-ir35-checklist
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/12662874/pexels-photo-12662874.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of hands typing on a sleek laptop, ideal for freelance work."
+imageCredit:
+  photographer: "Anna Shvets"
+  photographerUrl: "https://www.pexels.com/@shvetsa"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/laptop-computer-freelancer-web-design-12662874/"
 category: Contractor Accounting Basics
 metaTitle: "First Outside IR35 Contract: Financial Setup Checklist"
 metaDescription: "First outside IR35 contract? Checklist: company setup, bank account, VAT decision, contract review, insurances, expenses and pension from day one."

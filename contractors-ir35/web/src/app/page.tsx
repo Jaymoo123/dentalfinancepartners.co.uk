@@ -9,6 +9,7 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { buildFaqJsonLd } from "@/lib/schema";
 import {
   ArrowRight,
   ShieldCheck,
@@ -25,7 +26,7 @@ import { contractorTypes } from "@/data/contractor-types";
 export const metadata: Metadata = {
   title: "Specialist Contractor Accountants | IR35 Advice UK",
   description:
-    "Specialist accountants for UK contractors. IR35 status reviews, limited company tax, umbrella vs Ltd comparisons, expenses and pension planning. Fixed fees, plain English.",
+    "Specialist accountants for UK contractors. IR35 status reviews, limited company tax, umbrella vs Ltd, expenses and pension planning. Fixed fees, plain English.",
   alternates: { canonical: siteConfig.url },
 };
 
@@ -148,6 +149,10 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
+      />
       {/* Hero */}
       <section className="relative flex items-center min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] overflow-hidden">
         <Image

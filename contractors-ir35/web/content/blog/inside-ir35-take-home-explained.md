@@ -3,7 +3,14 @@ title: "Inside IR35 Take-Home Pay: How the Deductions Actually Work"
 slug: inside-ir35-take-home-explained
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/16284693/pexels-photo-16284693.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of hands using a calculator and keyboard in a financial setting, indoors."
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-using-calculator-16284693/"
 category: IR35 Status
 metaTitle: "Inside IR35 Take-Home Pay Explained (2026/27)"
 metaDescription: "How an inside IR35 day rate becomes take-home pay in 2026/27: the deduction order, employer NIC funded from the rate, and worked day-rate examples."

@@ -35,6 +35,10 @@ export type BlogFrontmatter = {
   keyTakeaways?: string[];
   /** Date the figures were last checked against primary sources; renders a trust line. */
   sourcesVerifiedAt?: string;
+  /** Faceless editorial reviewer label (e.g. "Contractor Tax Accountants Editorial Review"). */
+  reviewedBy?: string;
+  /** Reviewer credentials, becomes the reviewer jobTitle in JSON-LD (e.g. "ICAEW-qualified review"). */
+  reviewerCredentials?: string;
   /** Raw JSON-LD string from the schema builder when present */
   schema?: string;
   canonical?: string;

@@ -1,9 +1,17 @@
 ---
 title: "Off-payroll working rules: who determines status and who pays"
 slug: off-payroll-working-rules-private-sector
+primaryKeyword: "off-payroll working rules"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/5900070/pexels-photo-5900070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Businesswoman showing a receipt during a home office work session, highlighting technology integration."
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/businesswoman-showing-receipt-5900070/"
 category: IR35 Status
 metaTitle: "Off-payroll working rules: private sector rules explained"
 metaDescription: "How Chapter 10 off-payroll rules work: status determination, fee-payer PAYE, debt transfer, and the 2024 set-off for private-sector contractors."

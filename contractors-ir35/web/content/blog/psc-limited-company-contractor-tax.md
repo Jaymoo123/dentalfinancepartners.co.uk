@@ -3,7 +3,14 @@ title: "Limited Company Contractor Tax: The Complete Guide"
 slug: psc-limited-company-contractor-tax
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/36766672/pexels-photo-36766672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Focused businessman in suit multitasking on phone and laptop in modern office."
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/businessman-working-on-laptop-in-office-setting-36766672/"
 category: Limited Company Tax
 metaTitle: "Limited Company Contractor Tax: Complete Guide 2026/27"
 metaDescription: "Corporation tax bands, dividend rates, NIC, salary strategy and s.455 rules for PSC directors. All 2026/27 figures, FA 2026 changes included."
@@ -248,4 +255,4 @@ faqs:
 
 <p>The tax position for a limited company contractor in 2026/27 is more complex than in previous years, primarily because the Finance Act 2026 dividend rate increase, the continued threshold freeze, and the employer NIC changes from April 2025 all interact. Getting the extraction strategy right (salary level, dividend timing, pension contributions and loan account management) can make a meaningful difference to the annual tax bill.</p>
 
-<p>If you would like a review of your current structure and extraction strategy for 2026/27, the team at Contractor Finance Partners works exclusively with limited company contractors and PSC directors. You can <a href="/contact">request a call</a> or <a href="/ir35-status">check your IR35 status</a> as a starting point. We also work with contractors across a range of sectors; if you operate in a specialist field, see whether your sector is covered at <a href="/for/it-contractors">/for/it-contractors</a> or the other sector pages.</p>
+<p>If you would like a review of your current structure and extraction strategy for 2026/27, the team at Contractor Tax Accountants works exclusively with limited company contractors and PSC directors. You can <a href="/contact">request a call</a> or <a href="/ir35-status">check your IR35 status</a> as a starting point. We also work with contractors across a range of sectors; if you operate in a specialist field, see whether your sector is covered at <a href="/for/it-contractors">/for/it-contractors</a> or the other sector pages.</p>

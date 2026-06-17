@@ -3,7 +3,14 @@ title: "Training, Subscriptions and Equipment: Allowable Contractor Expenses"
 slug: training-subscriptions-expenses-contractor
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8761533/pexels-photo-8761533.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Professional woman giving a presentation to a diverse group of colleagues in an office."
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-using-a-laptop-8761533/"
 category: Expenses and Deductions
 metaTitle: "Contractor Training & Equipment Expenses: Tax Rules"
 metaDescription: "PSC contractor rules for training costs, professional subscriptions and equipment: AIA, FA 2026 40% first-year allowance, and the wholly-and-exclusively test."

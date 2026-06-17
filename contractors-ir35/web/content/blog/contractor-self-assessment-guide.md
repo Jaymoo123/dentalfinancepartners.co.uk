@@ -3,7 +3,14 @@ title: "Contractor Self Assessment: Deadlines, Payments and What to Include"
 slug: contractor-self-assessment-guide
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8962445/pexels-photo-8962445.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Flat lay of tax documents, smartphone calculator, and laptop for self-employment accounting."
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-smartphone-with-a-calculator-app-over-a-tax-document-8962445/"
 category: MTD and Compliance
 metaTitle: "Contractor Self Assessment Guide: Deadlines & What to Include"
 metaDescription: "PSC directors filing Self Assessment in 2026/27: who must file, what goes on the return (salary, dividends, other income), deadlines and payments on account."

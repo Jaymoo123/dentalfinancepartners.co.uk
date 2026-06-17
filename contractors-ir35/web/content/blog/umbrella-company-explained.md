@@ -3,7 +3,14 @@ title: "Umbrella Companies Explained: How They Work and What They Cost"
 slug: umbrella-company-explained
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6889213/pexels-photo-6889213.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A woman is typing on a laptop at a round black table in a stylish, comfortable room."
+imageCredit:
+  photographer: "cottonbro studio"
+  photographerUrl: "https://www.pexels.com/@cottonbro"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-in-red-long-sleeve-shirt-using-laptop-6889213/"
 category: Umbrella vs Limited Company
 metaTitle: "Umbrella Companies Explained: Pay, Costs and Rights"
 metaDescription: "How umbrella companies turn your assignment rate into net pay, what employer NIC and the margin deduct, what a KID must show, and the April 2026 JSL change."

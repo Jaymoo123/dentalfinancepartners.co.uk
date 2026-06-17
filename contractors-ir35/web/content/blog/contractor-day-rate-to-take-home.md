@@ -1,9 +1,17 @@
 ---
 title: "Day Rate to Take-Home: How to Work Out What You Actually Keep"
 slug: contractor-day-rate-to-take-home
+primaryKeyword: "day rate take-home"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/17065743/pexels-photo-17065743.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Calculator with glasses and folders on an office desk. Perfect for finance and accounting themes."
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/documents-17065743/"
 category: Limited Company Tax
 metaTitle: "Day Rate to Take-Home Pay: What Contractors Actually Keep"
 metaDescription: "Billable-days realism, three IR35 routes and 2026/27 figures. The assumptions behind a day-rate take-home calculation matter as much as the arithmetic."

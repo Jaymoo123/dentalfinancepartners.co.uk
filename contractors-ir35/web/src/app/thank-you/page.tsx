@@ -4,6 +4,8 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
   title: "Thank you | We'll be in touch",
+  description:
+    "Thank you for contacting Contractor Tax Accountants. We have received your enquiry and a specialist contractor accountant will be in touch shortly.",
   robots: { index: false },
 };
 

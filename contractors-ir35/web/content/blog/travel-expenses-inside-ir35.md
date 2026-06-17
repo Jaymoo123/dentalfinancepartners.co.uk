@@ -1,9 +1,17 @@
 ---
 title: Can You Claim Travel Expenses Inside IR35?
 slug: travel-expenses-inside-ir35
+primaryKeyword: "travel inside IR35"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/16124524/pexels-photo-16124524.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Two businessmen in suits walking on Westminster Bridge with Big Ben in the background, London."
+imageCredit:
+  photographer: "Mathias Reding"
+  photographerUrl: "https://www.pexels.com/@matreding"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/elegant-men-walking-on-pavement-on-bridge-16124524/"
 category: Expenses and Deductions
 metaTitle: "Travel expenses inside IR35: what's deductible in 2026"
 metaDescription: Inside IR35 travel rules differ sharply from outside. Home-to-client is rarely deductible. Learn what you can still claim.

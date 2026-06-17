@@ -1,5 +1,5 @@
 /**
- * Contractor Finance Partners analytics console — main dashboard.
+ * Contractor Tax Accountants analytics console — main dashboard.
  *
  * Cookie-gated (OB-01): credential travels in an HttpOnly session cookie, never
  * the URL. Every console route checks the cookie via checkAuth(). noindex on all
@@ -18,6 +18,7 @@ import { niche } from "@/config/niche-loader";
 import {
   getFunnelDaily,
   getTopVisitors,
+  getSiteKpis,
   getLeadsForSite,
   getCountryOptions,
   getFormFieldDropoff,
@@ -512,6 +513,7 @@ export default async function AdminAnalyticsPage({
     tsDaily,
     channelConversion,
     visitsToConversion,
+    kpi,
   ] = await Promise.all([
     getFunnelDaily(siteKey, countryFilter),
     getTopVisitors(siteKey, 500, countryFilter),
@@ -526,6 +528,7 @@ export default async function AdminAnalyticsPage({
     getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
     getChannelConversion(siteKey, countryFilter),
     getVisitsToConversion(siteKey, countryFilter),
+    getSiteKpis(siteKey, isoOf(from30), isoOf(now), country),
   ]);
 
   const leadByVisitor = new Map<string, (typeof leads)[number]>();
@@ -600,7 +603,7 @@ export default async function AdminAnalyticsPage({
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <SnapshotCard label="Sessions / day" value={String(totals.sessions)} sub={`last ${funnelDays} days`} series={sessionsSeries} delta={deltaVsPrior(sessionsSeries)} accent="sky" />
         <SnapshotCard label="Leads / day" value={String(totals.converted)} sub="conversions" series={leadsSeries} delta={deltaVsPrior(leadsSeries)} accent="emerald" />
-        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${visitors.length} visitors`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
+        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${kpi.humans.toLocaleString("en-GB")} visitors`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
         <SnapshotCard label="Engaged / day" value={secs(avgEngaged)} sub="avg per visitor" series={engagedSeries} delta={deltaVsPrior(engagedSeries)} accent="slate" />
       </div>
 
@@ -650,6 +653,7 @@ export default async function AdminAnalyticsPage({
       rows={visitorRows}
       country={country}
       visitorBasePath="/admin/analytics/visitor"
+      totalVisitors={kpi.humans}
     />
   );
 
@@ -657,7 +661,7 @@ export default async function AdminAnalyticsPage({
     <div className="space-y-6">
       <NotOperatedPanel
         feature="A/B experiments"
-        reason="Not operated on this site. Contractor Finance Partners does not currently run A/B tests."
+        reason="Not operated on this site. Contractor Tax Accountants does not currently run A/B tests."
       />
       <NotOperatedPanel
         feature="Personalisation"
@@ -685,7 +689,7 @@ export default async function AdminAnalyticsPage({
       />
       <NotOperatedPanel
         feature="Nurture engine"
-        reason="Not operated on this site. No newsletter surface on Contractor Finance Partners."
+        reason="Not operated on this site. No newsletter surface on Contractor Tax Accountants."
       />
       <CtaPerformancePanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />

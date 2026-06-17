@@ -3,7 +3,14 @@ title: "Inside IR35: What It Means and How It Affects Your Pay"
 slug: inside-ir35
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8872411/pexels-photo-8872411.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Three colleagues engage in a discussion around a vintage desk in a retro office space."
+imageCredit:
+  photographer: "MART  PRODUCTION"
+  photographerUrl: "https://www.pexels.com/@mart-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/three-people-working-in-the-office-8872411/"
 category: IR35 Status
 metaTitle: "Inside IR35: What It Means for Your Pay (2026/27)"
 metaDescription: "Caught inside IR35? This guide covers deemed payment mechanics, take-home impact, what expenses you can still claim, and when an umbrella makes more sense."

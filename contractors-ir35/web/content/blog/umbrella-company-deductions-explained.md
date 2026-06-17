@@ -3,7 +3,14 @@ title: "Umbrella Company Deductions and Pay: Reading Your Payslip"
 slug: umbrella-company-deductions-explained
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/36697262/pexels-photo-36697262.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Casual man using laptop indoors by a window, with camera and plant nearby."
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-working-on-laptop-by-a-sunny-window-36697262/"
 category: Umbrella vs Limited Company
 metaTitle: "Umbrella Company Deductions Explained: Read Your Payslip"
 metaDescription: "Assignment rate to net pay, line by line: employer NIC 15%, Apprenticeship Levy, margin, PAYE and employee NIC. The check every umbrella worker should run."

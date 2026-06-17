@@ -3,7 +3,14 @@ title: "The IR35 small company exemption: 2026 thresholds and timing"
 slug: ir35-small-company-exemption
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/3760613/pexels-photo-3760613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Happy young man in plaid shirt and hardhat showing thumb up standing at table with draw and laptop on white background"
+imageCredit:
+  photographer: "Andrea Piacquadio"
+  photographerUrl: "https://www.pexels.com/@olly"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/laughing-male-constructor-showing-thumb-up-at-working-desk-3760613/"
 category: IR35 Status
 metaTitle: IR35 small company exemption thresholds 2026
 metaDescription: £15m turnover test for Chapter 10 exemption. Timing and two-year rules explained for contractors in 2026/27.

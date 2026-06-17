@@ -3,7 +3,14 @@ title: "What Does a Contractor Accountant Cost? UK Fees Explained"
 slug: contractor-accountant-fees-cost
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Two professionals analyzing financial documents with a calculator."
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
 category: Contractor Accounting Basics
 metaTitle: "Contractor Accountant Fees: UK Cost Guide 2026"
 metaDescription: "What does a contractor accountant cost in the UK? The public market range, what drives the price, what should be included, and false-economy warnings."

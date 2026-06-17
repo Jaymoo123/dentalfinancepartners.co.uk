@@ -3,7 +3,14 @@ title: "The IR35 Status Tests: Control, Substitution and Mutuality"
 slug: ir35-status-tests-explained
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/32341972/pexels-photo-32341972.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Woman in suit using laptop on sofa in bright room, modern lifestyle."
+imageCredit:
+  photographer: "Mert Coşkun"
+  photographerUrl: "https://www.pexels.com/@mertcoskunraw"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/young-professional-working-on-laptop-at-home-32341972/"
 category: IR35 Status
 metaTitle: "IR35 Status Tests Explained: Control, Sub & MOO"
 metaDescription: "A deep-dive into the three IR35 status tests. Understand control in full, and how substitution and MOO link into the whole-picture verdict tribunals reach."

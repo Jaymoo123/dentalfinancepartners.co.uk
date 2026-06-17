@@ -3,7 +3,14 @@ title: "How to Choose a Compliant Umbrella Company in the UK"
 slug: best-umbrella-company-how-to-choose
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/6334227/pexels-photo-6334227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Side view of young female remote employee working on netbook at table with assorted fruits and hot drink at home"
+imageCredit:
+  photographer: "Anete Lusina"
+  photographerUrl: "https://www.pexels.com/@anete-lusina"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/freelancer-typing-on-laptop-at-table-with-fresh-fruits-6334227/"
 category: Umbrella vs Limited Company
 metaTitle: "How to Choose a Compliant Umbrella Company UK"
 metaDescription: "FCSA accreditation, transparent KID checks, the 90%+ take-home red flag and the April 2026 JSL reform: the compliance-led framework for choosing an umbrella."

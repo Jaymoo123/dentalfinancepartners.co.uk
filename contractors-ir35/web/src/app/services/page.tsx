@@ -16,9 +16,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contractor Accountancy Services | IR35 & Ltd Co Tax",
+  title: { absolute: "Contractor Accountancy Services | Contractor Tax Accountants" },
   description:
-    "Specialist accounting services for UK contractors. IR35 status reviews, limited company accounts, corporation tax, salary and dividend planning, expenses and pension.",
+    "Specialist accounting services for UK contractors. IR35 status reviews, limited company accounts, corporation tax, salary and dividend planning and expenses.",
 };
 
 const services = [

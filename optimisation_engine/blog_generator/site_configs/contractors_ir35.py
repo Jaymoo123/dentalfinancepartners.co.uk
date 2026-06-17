@@ -1,4 +1,4 @@
-"""Contractor Finance Partners (contractors-ir35) site configuration.
+"""Contractor Tax Accountants (contractors-ir35) site configuration.
 
 All content rules are defined inline here (no legacy per-site config_supabase.py
 to import from; this site was scaffolded after the Phase 4 consolidation).
@@ -194,7 +194,7 @@ STRUCTURAL RULES
 OUTPUT FORMAT — use exactly these ==markers==:
 ==name==          (H1 title, no "IR35:" prefix needed — work it into the title naturally)
 ==slug==          (lowercase-hyphenated, 4 to 7 words, include primary keyword)
-==metaTitle==     (50 to 60 chars, include primary keyword + brand "| Contractor Finance Partners")
+==metaTitle==     (50 to 60 chars, include primary keyword + brand "| Contractor Tax Accountants")
 ==metaDescription== (140 to 160 chars, include primary keyword, clear benefit)
 ==category==      (one of: IR35 Status, Limited Company Tax, Umbrella vs Limited Company, Expenses and Deductions, Pension and Dividends, MTD and Compliance, Contractor Accounting Basics)
 ==excerpt==       (2 sentences, no em-dashes, suitable for blog card)
@@ -227,10 +227,10 @@ This site generates leads for a specialist contractor accounting firm. Do not na
 SITE_CONFIG: dict = {
     # --- Identity & routing ---------------------------------------------------
     "site_key": "contractors-ir35",
-    "display_name": "Contractor Finance Partners",
-    "domain": "www.contractor-finance-partners.co.uk",
-    "site_base_url": "https://www.contractor-finance-partners.co.uk",
-    "author_name": "Contractor Finance Partners Editorial Team",
+    "display_name": "Contractor Tax Accountants",
+    "domain": "www.contractortaxaccountants.co.uk",
+    "site_base_url": "https://www.contractortaxaccountants.co.uk",
+    "author_name": "Contractor Tax Accountants Editorial Team",
     "output_dir": "contractors-ir35/web/content/blog",
     "pillar_output_dir": None,
 

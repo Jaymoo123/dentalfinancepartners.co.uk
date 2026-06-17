@@ -3,7 +3,14 @@ title: 'Status Determination Statements: Your Rights and the 45-Day Process'
 slug: sds-status-determination-statement
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7876037/pexels-photo-7876037.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Close-up of a person signing a divorce decree on a desk."
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-signing-divorce-documents-7876037/"
 category: IR35 Status
 metaTitle: 'Status Determination Statement: Rights and 45-Day Process'
 metaDescription: What a valid status determination statement must contain, when reasonable care fails, and how the 45-day client-led disagreement process works.

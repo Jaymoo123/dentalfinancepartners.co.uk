@@ -3,9 +3,9 @@ import Link from "next/link";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
-  title: "IR35 Contract Review & Status Service | UK",
+  title: { absolute: "IR35 Contract Review & Status | Contractor Tax Accountants" },
   description:
-    "Professional IR35 contract review for UK contractors. We assess your contract terms and actual working practices against all three tests. Plain English written opinion.",
+    "Professional IR35 contract review for UK contractors. We assess your contract terms and working practices against all three tests. Plain English written opinion.",
 };
 
 const statusTests = [

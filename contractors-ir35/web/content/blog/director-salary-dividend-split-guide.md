@@ -1,9 +1,17 @@
 ---
 title: "Director Salary and Dividend Split for Contractors: The 2026/27 Framework"
 slug: director-salary-dividend-split-guide
+primaryKeyword: "salary and dividend"
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7793118/pexels-photo-7793118.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Professionals analyzing charts and graphs on laptops during a business meeting."
+imageCredit:
+  photographer: "Yan Krukau"
+  photographerUrl: "https://www.pexels.com/@yankrukov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-holding-white-printer-paper-7793118/"
 category: Limited Company Tax
 metaTitle: "Director Salary and Dividend Split 2026/27 | Contractors"
 metaDescription: "How to set the right director salary and dividend split for 2026/27: the Employment Allowance fork, the LEL nuance and why no single salary is optimal."

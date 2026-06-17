@@ -1,17 +1,17 @@
 {
   "niche_id": "contractors-ir35",
-  "display_name": "Contractor Finance Partners",
-  "legal_name": "Contractor Finance Partners Ltd",
-  "domain": "www.contractor-finance-partners.co.uk",
+  "display_name": "Contractor Tax Accountants",
+  "legal_name": "Contractor Tax Accountants Ltd",
+  "domain": "www.contractortaxaccountants.co.uk",
   "tagline": "Specialist accountants for UK contractors and IR35",
-  "description": "Contractor Finance Partners. Specialist accountants for UK contractors, PSC directors and IR35-affected workers. IR35 status advice, limited company tax, umbrella vs Ltd comparisons, expenses, dividends and pension planning. Fixed fees, plain English.",
+  "description": "Contractor Tax Accountants. Specialist accountants for UK contractors, PSC directors and IR35-affected workers. IR35 status advice, limited company tax, umbrella vs Ltd comparisons, expenses, dividends and pension planning. Fixed fees, plain English.",
   "brand": {
     "primary_color": "#0e7490",
     "logo_path": "/brand/primary-logo.png",
     "publisher_logo_url": "/brand/icon-alt.png"
   },
   "contact": {
-    "email": "hello@contractor-finance-partners.co.uk",
+    "email": "hello@contractortaxaccountants.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

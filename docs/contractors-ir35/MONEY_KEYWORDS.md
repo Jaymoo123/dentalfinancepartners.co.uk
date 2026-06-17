@@ -1,4 +1,4 @@
-# Money keyword map — Contractor Finance Partners (contractors-ir35)
+# Money keyword map — Contractor Tax Accountants (contractors-ir35)
 
 Drafted 2026-06-12. **Status: LOCKED by manager 2026-06-12** (three corrections at lock: #24 retitled off the stale 45p AMAP rate, oil-and-gas slug fixed, hard boundary added for the #12/#13/#14 test trio). The §0 ground-truth findings were actioned at lock time: all 7 stale-figure spots (3 static pages, contractor-types.ts, 3 blog-config hallucination-zone/system-prompt lines) corrected to 2026/27 figures; the wave-1 blog corpus was verified already-correct.
 

@@ -3,7 +3,14 @@ title: "Outside IR35 Take-Home Pay: What Your Day Rate Really Leaves You"
 slug: outside-ir35-take-home-explained
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/17065743/pexels-photo-17065743.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Calculator with glasses and folders on an office desk. Perfect for finance and accounting themes."
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/documents-17065743/"
 category: IR35 Status
 metaTitle: "Outside IR35 Take-Home Pay: What Your Day Rate Leaves You"
 metaDescription: "How outside IR35 contractors keep more of a day rate: corporation tax, salary and dividend extraction, and realistic 2026/27 take-home worked examples."

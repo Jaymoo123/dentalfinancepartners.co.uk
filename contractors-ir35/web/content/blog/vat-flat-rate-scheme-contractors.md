@@ -3,7 +3,14 @@ title: "The VAT Flat Rate Scheme for Contractors: Is It Still Worth It?"
 slug: vat-flat-rate-scheme-contractors
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/8872366/pexels-photo-8872366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Retro office scene featuring a typewriter, coins, documents, and stationary on a wooden desk."
+imageCredit:
+  photographer: "MART  PRODUCTION"
+  photographerUrl: "https://www.pexels.com/@mart-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/dollar-bills-and-coins-top-of-documents-8872366/"
 category: MTD and Compliance
 metaTitle: "VAT Flat Rate Scheme for Contractors: Is It Worth It?"
 metaDescription: "Is the VAT flat rate scheme still worth joining for contractors? Decision framework covering the limited-cost trap, when FRS saves money, and when to leave."

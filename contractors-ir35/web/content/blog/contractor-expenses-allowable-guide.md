@@ -3,7 +3,14 @@ title: "Contractor Expenses: What You Can and Cannot Claim"
 slug: contractor-expenses-allowable-guide
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7680744/pexels-photo-7680744.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Businesswoman calculates expenses using receipts and calculator at desk. Ideal for finance, accounting themes."
+imageCredit:
+  photographer: "www.kaboompics.com"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-holding-oink-calculator-7680744/"
 category: Expenses and Deductions
 metaTitle: "Contractor Expenses: What You Can and Cannot Claim"
 metaDescription: "The definitive guide to contractor expenses 2026/27: the 24-month rule, inside-IR35 T&S restrictions, 55p mileage, trivial benefits and the pension lever."

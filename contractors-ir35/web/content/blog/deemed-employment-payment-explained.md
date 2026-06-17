@@ -3,7 +3,14 @@ title: "Deemed Employment Payment: How Your Tax Works Inside IR35"
 slug: deemed-employment-payment-explained
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7580707/pexels-photo-7580707.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "A dedicated businessman in a suit concentrating on work at a modern office desk."
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-in-gray-suit-jacket-sitting-in-front-of-a-computer-7580707/"
 category: IR35 Status
 metaTitle: "Deemed Employment Payment Explained | IR35 Tax Mechanics"
 metaDescription: "Chapter 8 step calculation vs Chapter 10 fee-payer direct payment. The 5% allowance, VAT deduction, employer NIC gross-down and what lands in your PSC."

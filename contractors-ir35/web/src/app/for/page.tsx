@@ -7,7 +7,7 @@ import { contractorTypes } from "@/data/contractor-types";
 export const metadata: Metadata = {
   title: "Contractor Types We Work With | Specialist IR35 Accountants",
   description:
-    "Specialist contractor accounting across every sector. IT, engineering, finance, management consulting, NHS locums, oil and gas, legal, marketing, construction and more.",
+    "Specialist contractor accounting across every sector: IT, engineering, finance, consulting, NHS locums, oil and gas, legal, marketing and construction.",
 };
 
 export default function ForIndexPage() {

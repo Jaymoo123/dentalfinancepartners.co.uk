@@ -3,7 +3,14 @@ title: 'Contractor Pensions: Using Your PSC to Build Retirement Savings'
 slug: contractor-pension-employer-contributions
 date: '2026-06-12'
 updatedDate: '2026-06-12'
-author: Contractor Finance Partners Editorial Team
+author: Contractor Tax Accountants Editorial Team
+image: "https://images.pexels.com/photos/7545281/pexels-photo-7545281.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Elderly man with eyeglasses focused on paperwork at home, using laptop."
+imageCredit:
+  photographer: "SHVETS production"
+  photographerUrl: "https://www.pexels.com/@shvets-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/an-elderly-man-looking-at-the-table-7545281/"
 category: Pension and Dividends
 metaTitle: 'Contractor Pension: Employer Contributions Guide 2026/27'
 metaDescription: 'How a PSC director uses employer pension contributions to extract profit tax efficiently in 2026/27: £60,000 annual allowance, taper, carry-forward and MPAA.'
