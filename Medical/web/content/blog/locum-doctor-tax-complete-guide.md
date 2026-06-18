@@ -1,7 +1,7 @@
----
+﻿---
 title: 'Locum Doctor Tax Complete Guide: Everything You Need to Know'
 slug: locum-doctor-tax-complete-guide
-canonical: https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-tax-complete-guide
+canonical: https://www.medicalaccounts.co.uk/blog/locum-doctor-tax-complete-guide
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team

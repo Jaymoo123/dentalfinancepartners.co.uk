@@ -1,9 +1,9 @@
-# Brief: gp-partner-drawings-vs-profit-tax-reserving
+﻿# Brief: gp-partner-drawings-vs-profit-tax-reserving
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster D (Understanding GP partnership accounts), pick D2
 **Source file (to be created):** `Medical/web/content/blog/gp-partner-drawings-vs-profit-tax-reserving.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-partner-drawings-vs-profit-tax-reserving
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-partner-drawings-vs-profit-tax-reserving
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner self-employed; taxed on profit share not drawings; SA800 to SA104) and §8 (expenses, Class 4 NIC 6%/2%, Class 2 no longer payable, payments on account on 31 January and 31 July), with a light §2.B/§2.C cross-ref for the pension/superannuation reserving point.
 

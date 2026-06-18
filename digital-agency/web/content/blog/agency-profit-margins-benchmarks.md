@@ -80,7 +80,7 @@ keyTakeaways:
 
 <p>Web agencies sit somewhere between product and service. If you have a retainer base for hosting and maintenance, your margin on that revenue is very high (often 80%+). But project work for new builds is capital-intensive and carries risk.</p>
 
-<p>Overall, web agencies see gross margins of 50% to 65% and net margins of 10% to 18%. The variation depends heavily on whether you use in-house developers or freelancers. Freelancers give you flexibility but lower margin. In-house teams give you higher margin if you keep them busy.</p>
+<p>Overall, web agencies see gross margins of 50% to 65% and net margins of 10% to 14%. The variation depends heavily on whether you use in-house developers or freelancers. Freelancers give you flexibility but lower margin. In-house teams give you higher margin if you keep them busy.</p>
 
 <h3>Recruitment Agencies</h3>
 
@@ -138,7 +138,7 @@ keyTakeaways:
 
 <p>Third, renegotiate your supplier contracts. Your web hosting, your phone system, your insurance, all of it is negotiable. Get three quotes for each and switch if you can save 10% or more.</p>
 
-<p>Fourth, look at your director's loan account. If you have borrowed money from the company, you are paying tax on that loan (S455 charge at 33.75% if it is not repaid within nine months of year end). Clear the loan. That tax saving goes straight to your bottom line.</p>
+<p>Fourth, look at your director's loan account. If you have borrowed money from the company, you are paying tax on that loan (S455 charge at 35.75% if it is not repaid within nine months of year end). Clear the loan. That tax saving goes straight to your bottom line.</p>
 
 <h2>When to Worry About Margin</h2>
 

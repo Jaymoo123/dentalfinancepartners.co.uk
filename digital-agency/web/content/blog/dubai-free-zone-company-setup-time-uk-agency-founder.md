@@ -94,7 +94,7 @@ keyTakeaways:
 
 <p>You also need to consider your UK tax position. If you remain UK tax resident, your Dubai company income may still be subject to UK tax. You need to establish non-residency with HMRC by spending fewer than 183 days in the UK per tax year and meeting the sufficient ties test. That is a separate process and takes planning.</p>
 
-<p>For agency founders, the most common structure is a UK holding company owning the Dubai free zone company. This allows you to route dividends tax-efficiently and preserve access to Business Asset Disposal Relief (BADR) on a future sale. The BADR rate is 14% for disposals from April 2025, rising to 18% from April 2026. The £1 million lifetime limit still applies.</p>
+<p>For agency founders, the most common structure is a UK holding company owning the Dubai free zone company. This allows you to route dividends tax-efficiently and preserve access to Business Asset Disposal Relief (BADR) on a future sale. The BADR rate is 18% for disposals from April 2025, rising to 18% from April 2026. The £1 million lifetime limit still applies.</p>
 
 <p>Talk to your accountant before you move. The timing of your residency change affects your UK tax liability for the whole tax year.</p>
 

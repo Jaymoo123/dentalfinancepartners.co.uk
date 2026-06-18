@@ -63,6 +63,7 @@ SITE_BLOGS: dict[str, str] = {
     "solicitors": "Solicitors/web/content/blog",
     "generalist": "generalist/web/content/blog",
     "agency":     "digital-agency/web/content/blog",
+    "construction-cis": "construction-cis/web/content/blog",
 }
 
 

@@ -36,8 +36,8 @@ describe("TL-03 guard: compute libs are environment-free", () => {
 describe("calcSalaryDividend", () => {
   it("profit=120000 with EA: optimal salary near NI threshold", () => {
     const out = calcSalaryDividend({ profitBeforeDirector: 120000, useEmploymentAllowance: true });
-    // With EA, employer NI is free up to £5k, so optimal salary is above £9,100
-    expect(out.optimal.salary).toBeGreaterThan(9100);
+    // With EA (£10,500), employer NI is free up to EA, so optimal salary is above £5,000 secondary threshold
+    expect(out.optimal.salary).toBeGreaterThan(5000);
     expect(out.optimal.netCash).toBeGreaterThan(out.dividendOnly.netCash);
     expect(out.optimal.netCash).toBeGreaterThan(out.salaryOnly.netCash);
   });
@@ -315,11 +315,11 @@ describe("calcEmployerNi", () => {
       useEmploymentAllowance: true,
       includePension: true,
     });
-    // senior NI: (55000-9100)*0.138=6334.2; mid NI: (38000-9100)*0.138=3988.2
-    const rawNi = (55000 - 9100) * 0.138 + (38000 - 9100) * 0.138;
+    // senior NI: (55000-5000)*0.15=7500; mid NI: (38000-5000)*0.15=4950 (2025/26: 15% / £5k threshold)
+    const rawNi = (55000 - 5000) * 0.15 + (38000 - 5000) * 0.15;
     expect(out.niTotal).toBeCloseTo(rawNi, 0);
-    expect(out.eaApplied).toBeCloseTo(Math.min(5000, rawNi), 0);
-    expect(out.niAfterEA).toBeCloseTo(rawNi - 5000, 0);
+    expect(out.eaApplied).toBeCloseTo(Math.min(10500, rawNi), 0);
+    expect(out.niAfterEA).toBeCloseTo(rawNi - 10500, 0);
     expect(out.eaEligibleWarning).toBe(false);
   });
 

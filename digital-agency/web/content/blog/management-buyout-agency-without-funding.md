@@ -22,7 +22,7 @@ faqs:
 - question: Can you do a management buyout with no money down?
   answer: Yes, if the seller is willing to accept deferred consideration paid from future profits. The management team buys the shares now but pays the founder over three to six years from the agency's earnings. No bank loan, no personal cash. The deal is secured by the agency's ongoing profitability.
 - question: How is a management buyout taxed for the founder?
-  answer: The founder pays capital gains tax on the full gain in the year of disposal, even if they receive payment over several years. Business Asset Disposal Relief (BADR) applies at 14% if the shares have been held for at least two years. The tax can be paid in instalments under Section 280 of TCGA 1992, matching the payment schedule.
+  answer: The founder pays capital gains tax on the full gain in the year of disposal, even if they receive payment over several years. Business Asset Disposal Relief (BADR) applies at 18% if the shares have been held for at least two years. The tax can be paid in instalments under Section 280 of TCGA 1992, matching the payment schedule.
 - question: What happens if the agency's profits drop during the buyout period?
   answer: The shareholder agreement should include a deferral mechanism. If EBITDA falls below an agreed threshold, the buyout payment for that year is postponed to a later year. The founder still gets paid eventually, but the agency is not forced into insolvency trying to meet the schedule.
 - question: How long does an unfunded MBO typically take to complete?
@@ -92,13 +92,13 @@ keyTakeaways:
 
 <h2>Tax Planning: What the Founder Needs to Know</h2>
 
-<p>The tax treatment of an unfunded MBO is where most deals come unstuck. The founder wants Business Asset Disposal Relief (BADR) at 14% capital gains tax. But HMRC has strict rules about when that relief applies.</p>
+<p>The tax treatment of an unfunded MBO is where most deals come unstuck. The founder wants Business Asset Disposal Relief (BADR) at 18% capital gains tax. But HMRC has strict rules about when that relief applies.</p>
 
 <p>For BADR to apply, the founder must have held the shares for at least two years and been an officer or employee of the company. That's usually straightforward.</p>
 
 <p>The trickier part is the deferred consideration. If the founder sells all their shares on day one but receives payment over five years, the entire gain is still taxed in the year of disposal. You do not spread the tax bill across the payment period.</p>
 
-<p>That means the founder could face a capital gains tax bill of £72,000 (on a £720k gain at 14% BADR) in the first year, even though they've only received £144k in cash. That creates a cash flow problem.</p>
+<p>That means the founder could face a capital gains tax bill of £72,000 (on a £720k gain at 18% BADR) in the first year, even though they've only received £144k in cash. That creates a cash flow problem.</p>
 
 <p>There are two ways to manage this.</p>
 
@@ -132,7 +132,7 @@ keyTakeaways:
 
 <p>Structure: deferred consideration over six years. £150k per year, with interest at 3.5% on the outstanding balance. Total interest over the term: approximately £94k. Total cost to the management team: £994k.</p>
 
-<p>Tax: Sarah used an instalment election under Section 280. Her CGT bill of £126,000 (14% BADR on £900k) was spread over the same six years. She paid £21k per year, directly matching her cash inflow.</p>
+<p>Tax: Sarah used an instalment election under Section 280. Her CGT bill of £126,000 (18% BADR on £900k) was spread over the same six years. She paid £21k per year, directly matching her cash inflow.</p>
 
 <p>Shareholder agreement: 55% of annual distributable profits allocated to buyout payments. Remaining 45% split between reinvestment and dividends. EBITDA floor of £200k before deferral kicks in.</p>
 

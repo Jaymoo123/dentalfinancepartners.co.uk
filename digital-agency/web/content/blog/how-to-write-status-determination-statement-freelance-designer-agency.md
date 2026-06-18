@@ -171,7 +171,7 @@ keyTakeaways:
 
 <ul>
 <li>Unpaid income tax on the deemed employment payment</li>
-<li>Unpaid employee NI (13.8%) and employer NI</li>
+<li>Unpaid employee NI and employer NI (15%)</li>
 <li>Interest on the late payments</li>
 <li>Potential penalties of up to 100% of the tax due</li>
 </ul>

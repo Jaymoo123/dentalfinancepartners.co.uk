@@ -1,0 +1,6 @@
+GAP-5 acceptance: migrations reviewed/amended/applied, data verified, probe deleted
+
+- consent_text made status-aware (no false confirmation claim on a pending row)
+- entry_topic preserves source_url slug; pre-flight cleared all partial-loss flags
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

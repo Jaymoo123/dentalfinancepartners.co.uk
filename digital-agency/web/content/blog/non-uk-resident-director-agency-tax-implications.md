@@ -60,7 +60,7 @@ keyTakeaways:
 
 <h3>Directors' Loan Account and S455 Tax</h3>
 
-<p>If your non-UK resident director borrows from the company, the same S455 tax charge applies as for any director. If the loan exceeds £10,000 and is not repaid within 9 months of the year end, the company pays 33.75% tax on the outstanding amount. HMRC does not care where the director lives for this purpose. The charge applies.</p>
+<p>If your non-UK resident director borrows from the company, the same S455 tax charge applies as for any director. If the loan exceeds £10,000 and is not repaid within 9 months of the year end, the company pays 35.75% tax on the outstanding amount. HMRC does not care where the director lives for this purpose. The charge applies.</p>
 
 <p>One practical point: enforcing repayment from a non-resident director is harder. If they are based in a jurisdiction with weak enforcement, you may struggle to recover the loan. I have seen agencies write off loans to non-resident directors, triggering a benefit-in-kind charge and potential tax liabilities for the director. Avoid this by keeping the loan account clean.</p>
 
@@ -78,7 +78,7 @@ keyTakeaways:
 
 <h2>National Insurance for Non-UK Resident Directors</h2>
 
-<p>Employer National Insurance at 13.8% applies to earnings above the secondary threshold (£9,100 for 2025/26). If your non-resident director is within UK PAYE, employer NI applies. There is no exemption for non-residents.</p>
+<p>Employer National Insurance at 15% applies to earnings above the secondary threshold (£5,000 for 2025/26). If your non-resident director is within UK PAYE, employer NI applies. There is no exemption for non-residents.</p>
 
 <p>But if the director is outside UK PAYE entirely, no employer NI is due. This can create a tax advantage, but only if the director genuinely performs all duties overseas. HMRC is increasingly scrutinising remote-working directors who claim to be non-UK resident while running a UK agency. If HMRC determines the director is actually UK resident, you face backdated PAYE, NI, and penalties.</p>
 

@@ -178,7 +178,7 @@ keyTakeaways:
 
 <p>If you have been paying yourself through dividends only and have never registered for PAYE, then the steps above apply to you. You must register before your employee's first payday.</p>
 
-<p>Many agency founders in this situation ask whether they should start paying themselves a salary too. The answer depends on your personal tax position. A salary of £12,570 per year is typically tax-efficient because it uses your personal allowance and counts as a qualifying year for state pension. But it also triggers employer NI at 13.8% on anything above the secondary threshold. For a detailed breakdown, read our guide on <a href="/blog/salary-and-dividends">salary and dividends for agency founders</a>.</p>
+<p>Many agency founders in this situation ask whether they should start paying themselves a salary too. The answer depends on your personal tax position. A salary of £12,570 per year is typically tax-efficient because it uses your personal allowance and counts as a qualifying year for state pension. But it also triggers employer NI at 15% on anything above the secondary threshold. For a detailed breakdown, read our guide on <a href="/blog/salary-and-dividends">salary and dividends for agency founders</a>.</p>
 
 <h2>Final Checklist Before Your Employee's First Day</h2>
 

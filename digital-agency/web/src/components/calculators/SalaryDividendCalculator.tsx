@@ -15,9 +15,9 @@ const PERSONAL_ALLOWANCE = 12570;
 const BASIC_RATE_LIMIT = 50270;
 const HIGHER_RATE_LIMIT = 125140;
 const NI_PRIMARY_THRESHOLD = 12570;
-const NI_SECONDARY_THRESHOLD = 9100;
+const NI_SECONDARY_THRESHOLD = 5000;
 const EMPLOYEE_NI_BASIC = 0.08;
-const EMPLOYER_NI = 0.138;
+const EMPLOYER_NI = 0.15;
 const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
@@ -29,7 +29,7 @@ const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;
 const CT_SMALL_RATE = 0.19;
 const CT_MAIN_RATE = 0.25;
-const EMPLOYMENT_ALLOWANCE = 5000; // most agencies qualify; one director only company does NOT, assume yes here
+const EMPLOYMENT_ALLOWANCE = 10500; // most agencies qualify; one director only company does NOT, assume yes here
 
 type Result = {
   salary: number;
@@ -212,7 +212,7 @@ export function SalaryDividendCalculator() {
             className="mt-1 h-4 w-4 accent-indigo-600"
           />
           <label htmlFor="ea" className="text-sm text-slate-700 leading-relaxed">
-            <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£5,000 off employer NI). Most agencies with two or more employees qualify. Single-director companies do not.
+            <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£10,500 off employer NI). Most agencies with two or more employees qualify. Single-director companies do not.
           </label>
         </div>
       </div>

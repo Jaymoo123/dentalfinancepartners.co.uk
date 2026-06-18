@@ -26,7 +26,7 @@ faqs:
 - question: What happens to my UK company's corporation tax if I move to Dubai?
   answer: Your UK company remains UK-resident and pays UK corporation tax on its profits at 19% or 25% depending on profit levels. Moving to Dubai does not change this. The company's residence is determined by where it is centrally managed and controlled. If you are in Dubai making decisions for the UK company, HMRC may argue the company is UAE-resident. But in practice, most founders keep the UK company UK-resident by ensuring UK team members handle day-to-day operations and board meetings happen in the UK.
 - question: Can I take a salary from both my UK company and my Dubai agency?
-  answer: Yes. You can take a salary from both. Your UK salary is subject to UK income tax and National Insurance. Your UAE salary is tax-free in the UAE. But watch your UK tax bands. If your UK salary plus dividends push you into higher rate tax, you pay 40% on salary and 33.75% on dividends. Many founders take the minimum salary from the UK company (£12,570) and a larger salary from the Dubai agency to stay tax-efficient.
+  answer: Yes. You can take a salary from both. Your UK salary is subject to UK income tax and National Insurance. Your UAE salary is tax-free in the UAE. But watch your UK tax bands. If your UK salary plus dividends push you into higher rate tax, you pay 40% on salary and 35.75% on dividends. Many founders take the minimum salary from the UK company (£12,570) and a larger salary from the Dubai agency to stay tax-efficient.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -64,7 +64,7 @@ keyTakeaways:
 <p>Under the treaty, business profits are taxable in the country where the company is resident. If your UK company is UK-resident, its profits are taxed in the UK. If the UK company has a PE in the UAE, the UAE can tax the profits attributable to that PE. The UK then gives double tax relief for the UAE tax paid.</p>
 <p>But the UAE has no corporate income tax. So there is no UAE tax to claim relief against. The result: the UK company pays UK corporation tax on all its profits, regardless of where the work is done. The Dubai agency pays no corporate tax on its own profits (for now). But the Dubai agency's profits are separate from the UK company's profits.</p>
 <p>The double tax treaty also covers dividends, interest, and royalties. If your UK company pays dividends to you as a UAE resident, the UK charges withholding tax. Under the treaty, the withholding rate is typically 0% for individuals holding at least 10% of the shares. But you need to claim this relief through a form DT-Individual or DT-Company.</p>
-<p>Most founders we work with end up in a simple position: the UK company pays UK corporation tax on its own profits. The Dubai agency pays no corporate tax. The founder takes a salary from the Dubai agency and dividends from the UK company. The UK dividends are taxed in the UK (at 8.75%, 33.75%, or 39.35% depending on your tax band). The Dubai salary is taxed in the UAE (at 0%). No double taxation arises, because the two companies are separate legal entities with separate income streams.</p>
+<p>Most founders we work with end up in a simple position: the UK company pays UK corporation tax on its own profits. The Dubai agency pays no corporate tax. The founder takes a salary from the Dubai agency and dividends from the UK company. The UK dividends are taxed in the UK (at 10.75%, 35.75%, or 39.35% depending on your tax band). The Dubai salary is taxed in the UAE (at 0%). No double taxation arises, because the two companies are separate legal entities with separate income streams.</p>
 
 <h2>How to Structure It: A Worked Example</h2>
 <p>Let's use a real scenario. You own a 15-person digital agency in Shoreditch, billing £1.2m per year. You move to Dubai Marina. You set up a new Dubai agency. You keep the UK company open.</p>
@@ -75,20 +75,20 @@ keyTakeaways:
 <li>UK company subcontracts £100k of work to the Dubai agency (at arm's length pricing).</li>
 <li>You take a £12,570 salary from the UK company (up to NI threshold).</li>
 <li>You take a £60,000 salary from the Dubai agency (tax-free in UAE).</li>
-<li>UK company pays you £50,000 in dividends (UK dividend tax at 33.75% if you are a higher rate taxpayer).</li>
+<li>UK company pays you £50,000 in dividends (UK dividend tax at 35.75% if you are a higher rate taxpayer).</li>
 </ul>
 <p>Tax outcome:</p>
 <ul>
 <li>UK company pays 19% corporation tax on £700k profit (after costs) = £133k.</li>
 <li>Dubai agency pays 0% corporate tax on £200k profit.</li>
-<li>Your UK dividend tax: £50,000 at 33.75% = £16,875 (after £500 dividend allowance).</li>
+<li>Your UK dividend tax: £50,000 at 35.75% = £17,875 (after £500 dividend allowance).</li>
 <li>Your UAE salary: £60,000 at 0% = £0.</li>
-<li>Total tax: £149,875 on combined profits of £900k. Effective rate: 16.7%.</li>
+<li>Total tax: £150,875 on combined profits of £900k. Effective rate: 16.8%.</li>
 </ul>
 <p>If you had kept everything in the UK, you would pay 25% corporation tax on £900k = £225k, plus dividend tax on withdrawals. The Dubai structure saves you roughly £75k per year in tax. But only if you manage transfer pricing and PE risk correctly.</p>
 
 <h2>What Happens When You Sell the UK Company?</h2>
-<p>If you sell your UK company while living in Dubai, Business Asset Disposal Relief (BADR) applies. BADR gives you a 14% CGT rate on the first £1m of gains (rising to 18% from April 2026). But you must meet the qualifying conditions: you must be an officer or employee of the company, hold at least 5% of the shares, and have held them for at least 2 years.</p>
+<p>If you sell your UK company while living in Dubai, Business Asset Disposal Relief (BADR) applies. BADR gives you a 18% CGT rate on the first £1m of gains (rising to 18% from April 2026). But you must meet the qualifying conditions: you must be an officer or employee of the company, hold at least 5% of the shares, and have held them for at least 2 years.</p>
 <p>If you are a UAE resident when you sell, the UK still taxes the gain. The UK-UAE double tax treaty allocates taxing rights on capital gains to the country where the company is resident. If the UK company is UK-resident, the UK taxes the gain. You then claim relief in the UAE (which has no CGT, so no double taxation).</p>
 <p>One complication: if you have moved your personal tax residence to the UAE, you might be tempted to argue the gain is not UK-taxable. It is. The UK taxes capital gains on UK-resident companies regardless of where the shareholder lives. The gain is taxed in your hands as an individual, and your residence matters for the rate. If you are non-UK resident, you only pay UK CGT on UK residential property. Shares in a UK company are not UK residential property. So if you are non-UK resident, you pay no UK CGT on the sale. But this only works if you are genuinely non-UK resident (spending fewer than 183 days in the UK per year, and not having a UK home).</p>
 
@@ -100,7 +100,7 @@ keyTakeaways:
 <li><strong>Maintain UK substance.</strong> Keep a UK team, a UK office, and UK client contracts. Do not let the UK company become a shell.</li>
 <li><strong>Watch your personal tax residence.</strong> If you spend more than 183 days in the UK, you are UK resident. That means worldwide income is taxable in the UK. The Dubai structure only works if you are genuinely non-UK resident.</li>
 <li><strong>Use a holding company.</strong> If you own both the UK and Dubai companies through a holding company, you can route dividends cleanly and protect assets. This is especially useful if you plan to sell either company later.</li>
-<li><strong>Review your director's loan account.</strong> If you owe money to the UK company and you are in Dubai, the loan is still taxable. S455 tax at 33.75% applies if the loan is not repaid within 9 months of the year end.</li>
+<li><strong>Review your director's loan account.</strong> If you owe money to the UK company and you are in Dubai, the loan is still taxable. S455 tax at 35.75% applies if the loan is not repaid within 9 months of the year end.</li>
 </ol>
 <p>We work with agency founders who operate in both the UK and UAE. If your contractor mix has changed or you are planning a move, ask your accountant before year-end. The structure needs to be set up before you leave, not after.</p>
 

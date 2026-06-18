@@ -120,11 +120,11 @@ keyTakeaways:
 
 <h3>2. Settle Your Directors' Loan Account</h3>
 
-<p>If you owe money to your UK company, clear it before you leave. A directors' loan account balance at the year-end triggers a Section 455 charge at 33.75%. If you're in Dubai and can't easily access UK funds to repay it, you're stuck.</p>
+<p>If you owe money to your UK company, clear it before you leave. A directors' loan account balance at the year-end triggers a Section 455 charge at 35.75%. If you're in Dubai and can't easily access UK funds to repay it, you're stuck.</p>
 
 <h3>3. Close or Restructure Your UK Company</h3>
 
-<p>If you're winding down your UK agency, consider a Members' Voluntary Liquidation (MVL) to extract retained profits as capital, taxed at 14% (BADR rate for 2025/26) rather than income tax rates. But you need to hold the shares for two years before disposal to qualify for BADR. Plan ahead.</p>
+<p>If you're winding down your UK agency, consider a Members' Voluntary Liquidation (MVL) to extract retained profits as capital, taxed at 18% (BADR rate for 2025/26) rather than income tax rates. But you need to hold the shares for two years before disposal to qualify for BADR. Plan ahead.</p>
 
 <h3>4. File Your Final UK Tax Return</h3>
 

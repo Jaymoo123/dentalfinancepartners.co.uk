@@ -6,7 +6,7 @@
 |------|--------|--------|
 | Property Tax Partners | [propertytaxpartners.co.uk](https://www.propertytaxpartners.co.uk) | `Property/` |
 | Dental Finance Partners | [dentalfinancepartners.co.uk](https://www.dentalfinancepartners.co.uk) | `Dentists/` |
-| Medical Accountants UK | [medicalaccountantsuk.co.uk](https://www.medicalaccountantsuk.co.uk) | `Medical/` |
+| Medical Accountants UK | [medicalaccounts.co.uk](https://www.medicalaccounts.co.uk) | `Medical/` |
 | Accounts for Lawyers | [accountsforlawyers.co.uk](https://www.accountsforlawyers.co.uk) | `Solicitors/` |
 
 ## For AI Agents — Read These First

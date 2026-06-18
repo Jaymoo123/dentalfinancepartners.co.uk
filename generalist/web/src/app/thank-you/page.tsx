@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, btnSecondary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Thank you`,
@@ -25,13 +24,13 @@ export default function ThankYouPage() {
             working day, usually the same day.
           </p>
           <p className="mt-4 text-base leading-relaxed text-neutral-600">
-            Urgent? Call us directly on{" "}
-            <a
-              href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
+            Need to add anything? Send a follow-up through the{" "}
+            <Link
+              href="/contact"
               className="font-medium text-neutral-900 underline underline-offset-4 hover:text-orange-600"
             >
-              {siteConfig.contact.phone}
-            </a>
+              contact form
+            </Link>
             .
           </p>
           <div className="mt-12 flex flex-col gap-3 sm:flex-row">

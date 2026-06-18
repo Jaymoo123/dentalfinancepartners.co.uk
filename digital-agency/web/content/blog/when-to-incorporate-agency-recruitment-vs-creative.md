@@ -56,7 +56,7 @@ keyTakeaways:
 
 <h2>When to Incorporate a Recruitment Agency</h2>
 
-<p>Recruitment agencies face a specific problem that creative agencies do not: IR35. If you place contractors inside IR35, your agency becomes responsible for employer National Insurance (13.8%) and pension contributions. That changes your margin structure completely.</p>
+<p>Recruitment agencies face a specific problem that creative agencies do not: IR35. If you place contractors inside IR35, your agency becomes responsible for employer National Insurance (15%) and pension contributions. That changes your margin structure completely.</p>
 
 <p>Most recruitment agency founders should incorporate from day one. Here is why.</p>
 
@@ -80,7 +80,7 @@ keyTakeaways:
 
 <p>When you eventually sell a recruitment agency, the buyer values your contractor book. A book of 40 contractors on 12-month assignments at £500 per day each has a clear, calculable value. That value sits inside the company. If you are a sole trader, selling that book means selling a business asset personally, which creates a capital gains tax calculation that is less efficient than selling company shares under Business Asset Disposal Relief (BADR).</p>
 
-<p>Incorporating early means you can sell the company shares later and claim BADR at 14% (for disposals from 6 April 2025) CGT on the first £1 million of gain. That is a significant tax saving compared to selling as a sole trader.</p>
+<p>Incorporating early means you can sell the company shares later and claim BADR at 18% (for disposals from 6 April 2025) CGT on the first £1 million of gain. That is a significant tax saving compared to selling as a sole trader.</p>
 
 <h2>When to Incorporate a Creative Agency</h2>
 
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <p>For creative agencies, the right time to incorporate is when your retainer income covers your basic living costs. If you have three retainers at £3,000 per month each, that is £9,000 per month recurring. You know what your base income is. You can plan around it.</p>
 
-<p>At that point, incorporation makes sense because you can pay yourself a salary of £12,570 per year (the NI threshold) and take the rest as dividends. You save the 13.8% employer NI on every pound above that salary.</p>
+<p>At that point, incorporation makes sense because you can pay yourself a salary of £12,570 per year (the NI threshold) and take the rest as dividends. You save the 15% employer NI on every pound above that salary.</p>
 
 <p>Before you have retainer income, incorporation just adds admin complexity with minimal tax benefit.</p>
 
@@ -168,7 +168,7 @@ keyTakeaways:
 
 <p>Recruitment agencies often have large DLA balances because the agency pays contractors weekly but invoices clients monthly. That creates a cash flow gap. Directors sometimes lend personal money to the company to bridge it. That is fine, but document it properly and repay within the rules.</p>
 
-<p>Creative agencies have the opposite problem. Clients pay late, but the agency pays staff monthly. Directors often take money out of the company to cover personal expenses when a big invoice is delayed. That creates an overdrawn DLA. If it exceeds £10,000, it is a taxable benefit. If it is not repaid within nine months of the year end, the company pays S455 tax at 33.75%.</p>
+<p>Creative agencies have the opposite problem. Clients pay late, but the agency pays staff monthly. Directors often take money out of the company to cover personal expenses when a big invoice is delayed. That creates an overdrawn DLA. If it exceeds £10,000, it is a taxable benefit. If it is not repaid within nine months of the year end, the company pays S455 tax at 35.75%.</p>
 
 <p>We see creative agency founders get caught by this regularly. The project finishes, the client pays late, the founder has already drawn the money personally, and the DLA sits overdrawn at year end. That triggers an immediate tax charge and a headache to unwind.</p>
 
@@ -182,7 +182,7 @@ keyTakeaways:
 
 <p>Both can qualify for BADR if the shares have been held for at least two years and you meet the 5% shareholding and officer/employee conditions. But the timing of incorporation affects when that two-year clock starts ticking.</p>
 
-<p>If you incorporate a recruitment agency at £50k turnover, your BADR clock starts then. If you sell five years later at £2m turnover, you pay 14% on the first £1m of gain. That is a £200k+ tax saving compared to selling as a sole trader.</p>
+<p>If you incorporate a recruitment agency at £50k turnover, your BADR clock starts then. If you sell five years later at £2m turnover, you pay 18% on the first £1m of gain. That is a £200k+ tax saving compared to selling as a sole trader.</p>
 
 <p>If you incorporate a creative agency at £50k turnover but it takes three years to build a saleable business, your BADR clock has already been running. That is the advantage of incorporating early enough to qualify, but not so early that you are paying corporation tax on profits you could have taken personally at lower rates.</p>
 

@@ -31,7 +31,7 @@ export function SiteFooter() {
               <p className="mt-1 text-sm text-white/70">Property investor & landlord accounting</p>
             </a>
             <a
-              href="https://www.medicalaccountantsuk.co.uk"
+              href="https://www.medicalaccounts.co.uk"
               target="_blank"
               rel="noopener noreferrer"
               className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
@@ -63,8 +63,11 @@ export function SiteFooter() {
               ))}
             </ul>
             <p className="text-xs leading-relaxed text-slate-400 min-[480px]:text-right">
-              © {year} {siteConfig.legalName}. Registered in England and Wales.
-              <span className="mt-1 block text-slate-500">{siteConfig.domain}</span>
+              {siteConfig.company.legalDisclosure}
+            </p>
+            <p className="text-xs leading-relaxed text-slate-400 min-[480px]:text-right">
+              © {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.{" "}
+              <span className="text-slate-500">{siteConfig.domain}</span>
             </p>
           </div>
         </div>

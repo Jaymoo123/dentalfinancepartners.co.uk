@@ -1,0 +1,300 @@
+{
+  "niche_id": "construction-cis",
+  "display_name": "Trade Tax Specialists",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
+  "domain": "www.tradetaxspecialists.co.uk",
+  "tagline": "Specialist CIS accountants for UK construction trades",
+  "description": "Trade Tax Specialists. Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status applications, sole trader and limited company compliance. The average CIS subcontractor overpays around £2,000 a year. We claim it back, then keep you compliant. Fixed fees, plain English.",
+  "brand": {
+    "primary_color": "#f97316",
+    "logo_path": "/brand/primary-logo.png",
+    "publisher_logo_url": "/brand/icon-alt.png"
+  },
+  "contact": {
+    "email": "hello@tradetaxspecialists.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "CIS Refund",
+      "href": "/cis-refund"
+    },
+    {
+      "label": "Gross Payment Status",
+      "href": "/gross-payment-status"
+    },
+    {
+      "label": "Who we help",
+      "href": "/for"
+    },
+    {
+      "label": "Calculators",
+      "href": "/calculators"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer_links": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "CIS Refund",
+      "href": "/cis-refund"
+    },
+    {
+      "label": "Gross Payment Status",
+      "href": "/gross-payment-status"
+    },
+    {
+      "label": "Who we help",
+      "href": "/for"
+    },
+    {
+      "label": "Calculators",
+      "href": "/calculators"
+    },
+    {
+      "label": "CIS Glossary",
+      "href": "/glossary"
+    },
+    {
+      "label": "Locations",
+      "href": "/locations"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Privacy policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Terms",
+      "href": "/terms"
+    },
+    {
+      "label": "Cookie policy",
+      "href": "/cookie-policy"
+    }
+  ],
+  "locations": [
+    {
+      "slug": "london",
+      "title": "London"
+    },
+    {
+      "slug": "manchester",
+      "title": "Manchester"
+    },
+    {
+      "slug": "birmingham",
+      "title": "Birmingham"
+    },
+    {
+      "slug": "leeds",
+      "title": "Leeds"
+    },
+    {
+      "slug": "bristol",
+      "title": "Bristol"
+    },
+    {
+      "slug": "glasgow",
+      "title": "Glasgow"
+    },
+    {
+      "slug": "edinburgh",
+      "title": "Edinburgh"
+    },
+    {
+      "slug": "sheffield",
+      "title": "Sheffield"
+    },
+    {
+      "slug": "liverpool",
+      "title": "Liverpool"
+    },
+    {
+      "slug": "newcastle",
+      "title": "Newcastle upon Tyne"
+    },
+    {
+      "slug": "belfast",
+      "title": "Belfast"
+    },
+    {
+      "slug": "bradford",
+      "title": "Bradford"
+    },
+    {
+      "slug": "cardiff",
+      "title": "Cardiff"
+    },
+    {
+      "slug": "coventry",
+      "title": "Coventry"
+    },
+    {
+      "slug": "derby",
+      "title": "Derby"
+    },
+    {
+      "slug": "hull",
+      "title": "Hull"
+    },
+    {
+      "slug": "leicester",
+      "title": "Leicester"
+    },
+    {
+      "slug": "nottingham",
+      "title": "Nottingham"
+    },
+    {
+      "slug": "plymouth",
+      "title": "Plymouth"
+    },
+    {
+      "slug": "portsmouth",
+      "title": "Portsmouth"
+    },
+    {
+      "slug": "reading",
+      "title": "Reading"
+    },
+    {
+      "slug": "southampton",
+      "title": "Southampton"
+    },
+    {
+      "slug": "stoke-on-trent",
+      "title": "Stoke-on-Trent"
+    },
+    {
+      "slug": "sunderland",
+      "title": "Sunderland"
+    },
+    {
+      "slug": "wolverhampton",
+      "title": "Wolverhampton"
+    }
+  ],
+  "content_strategy": {
+    "audience": "UK CIS subcontractors, sole traders and limited company directors in construction trades, and main contractors managing CIS returns",
+    "categories": [
+      "CIS Basics",
+      "CIS Compliance",
+      "CIS Refunds",
+      "CIS Advanced",
+      "VAT and MTD",
+      "Expenses",
+      "Limited Company",
+      "Software and Tools"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "construction-cis",
+    "source_identifier": "construction-cis"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Bristol",
+      "Glasgow",
+      "Edinburgh",
+      "Sheffield",
+      "Liverpool",
+      "Newcastle"
+    ],
+    "google_analytics_id": "",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    },
+    "theme_color": "#f97316"
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      {
+        "value": "Sole trader subcontractor (CIS)",
+        "label": "Sole trader subcontractor (CIS)"
+      },
+      {
+        "value": "Limited company subcontractor",
+        "label": "Limited company subcontractor"
+      },
+      {
+        "value": "Main contractor (I pay subcontractors)",
+        "label": "Main contractor (I pay subcontractors)"
+      },
+      {
+        "value": "Just going self-employed in construction",
+        "label": "Just going self-employed in construction"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      }
+    ],
+    "placeholders": {
+      "name": "Jamie Smith",
+      "email": "jamie@yourcompany.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. I think I am owed a CIS refund, or I want to apply for gross payment status..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Check your CIS refund",
+    "sticky_secondary": "Most CIS subcontractors are owed money back. Speak to a specialist.",
+    "sticky_button": "Book a free call"
+  },
+  "blog": {
+    "cta_heading": "Most CIS subcontractors are owed money back.",
+    "cta_body": "The average CIS subcontractor overpays around £2,000 a year in tax deductions. Book a free call with a specialist CIS accountant. We will review your deductions, identify what you are owed, and handle the reclaim. Plain English, no jargon.",
+    "cta_button": "Book a free call"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}

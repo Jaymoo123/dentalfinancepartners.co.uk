@@ -42,7 +42,7 @@ keyTakeaways:
 
 <h2>What Is Income Splitting and Why Agency Founders Do It</h2>
 
-<p>Income splitting means diverting some of your agency's profits to a person who pays a lower tax rate than you do. For a typical agency founder drawing a salary of £12,570 and dividends up to the higher rate threshold, the effective tax rate on additional dividends is 33.75% (higher rate dividend tax). If your spouse has no other income, they can receive dividends up to £50,270 before paying any higher rate tax, and the first £500 of dividends is tax-free.</p>
+<p>Income splitting means diverting some of your agency's profits to a person who pays a lower tax rate than you do. For a typical agency founder drawing a salary of £12,570 and dividends up to the higher rate threshold, the effective tax rate on additional dividends is 35.75% (higher rate dividend tax). If your spouse has no other income, they can receive dividends up to £50,270 before paying any higher rate tax, and the first £500 of dividends is tax-free.</p>
 
 <p>The saving is significant. A married couple where the founder earns £150,000 and the spouse earns nothing could save over £15,000 per year in tax by splitting dividends evenly. That is real money for a growing agency.</p>
 

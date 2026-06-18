@@ -106,6 +106,10 @@ def _coverage_batch_arg():
 QA_BATCH = _qa_batch_arg()
 COVERAGE_BATCH = _coverage_batch_arg()
 
+# Word-count gate is OPT-IN (--word-count flag).  Without it the gate is a
+# silent no-op so existing per-site gates are completely unaffected.
+WORD_COUNT = "--word-count" in sys.argv
+
 failures = []   # HARD - block deploy
 warnings = []   # surfaced, non-blocking unless --strict
 
@@ -147,6 +151,35 @@ def check_frontmatter():
         print("[FAIL] frontmatter: invalid YAML")
         for ln in res.stdout.splitlines():
             if ln.startswith(("FRONTMATTER", "  ")):
+                print("         " + ln.strip())
+
+
+def check_word_count():
+    """Word-count floor gate (OPT-IN via --word-count).  HARD GATE: every post
+    must meet the minimum word count for its kind (cluster 1200, pillar 2000).
+    Gated behind --word-count so existing site gates are not affected until
+    opted in.  Exit non-zero from word_count_gate.py (without --report) = FAIL.
+    """
+    if not WORD_COUNT:
+        return  # silent no-op; existing callers unaffected
+    res = subprocess.run(
+        [sys.executable, "scripts/word_count_gate.py", "--site", SITE],
+        capture_output=True, text=True,
+    )
+    if res.returncode == 0:
+        # Count PASS lines to give a useful summary
+        n = sum(1 for ln in res.stdout.splitlines() if ln.startswith("PASS"))
+        print(f"[ok]   word count: {n} post(s) meet floor")
+    else:
+        m = re.search(r"(\d+) FAIL", res.stdout)
+        n_fail = int(m.group(1)) if m else "?"
+        failures.append(
+            f"Word count: {n_fail} post(s) below minimum floor - run "
+            "`python scripts/word_count_gate.py --site {SITE} --report` for details."
+        )
+        print(f"[FAIL] word count: {n_fail} post(s) below floor")
+        for ln in res.stdout.splitlines():
+            if ln.startswith("FAIL"):
                 print("         " + ln.strip())
 
 
@@ -419,10 +452,12 @@ def main():
           + (f"  [--qa-batch {QA_BATCH}]" if QA_BATCH else "")
           + ("  [--coverage]" if COVERAGE and not COVERAGE_STRICT else "")
           + ("  [--coverage-strict]" if COVERAGE_STRICT else "")
-          + (f"  [--coverage-batch {COVERAGE_BATCH}]" if COVERAGE_BATCH else ""))
+          + (f"  [--coverage-batch {COVERAGE_BATCH}]" if COVERAGE_BATCH else "")
+          + ("  [--word-count]" if WORD_COUNT else ""))
     print("=" * 60)
     check_links()
     check_frontmatter()
+    check_word_count()
     check_em_dashes()
     check_pricing()
     check_qa()

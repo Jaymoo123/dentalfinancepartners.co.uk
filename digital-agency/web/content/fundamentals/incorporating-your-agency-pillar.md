@@ -177,7 +177,7 @@ keyTakeaways:
 <p>The moment you hire your first employee, incorporation becomes the sensible default. You need a PAYE scheme, employer NI, workplace pension. Running payroll as a sole trader is technically possible but practically messy. A limited company makes it clean.</p>
 
 <h3>The Exit Threshold</h3>
-<p>If you ever plan to sell your agency, you need to be incorporated. You cannot sell a sole trader business as a going concern in the same way. A share sale qualifies for Business Asset Disposal Relief (BADR) at 14% CGT on the first £1 million of gains. That's a massive tax advantage. If you're building for exit, incorporate early to start the two-year qualifying period for BADR.</p>
+<p>If you ever plan to sell your agency, you need to be incorporated. You cannot sell a sole trader business as a going concern in the same way. A share sale qualifies for Business Asset Disposal Relief (BADR) at 18% CGT on the first £1 million of gains. That's a massive tax advantage. If you're building for exit, incorporate early to start the two-year qualifying period for BADR.</p>
 
 <h3>Worked Example: Tom's Web Design Agency</h3>
 <p>Tom runs a web design agency from Bristol Harbourside. He's been a sole trader for three years, earning £55,000 profit. He's just signed a £40,000 retainer with a national charity. The charity requires him to be a limited company. He also wants to hire a junior designer. The profit threshold, the client threshold, and the hiring threshold all point to incorporation. He incorporates immediately, transferring his trade and assets into the new company.</p>
@@ -276,7 +276,7 @@ keyTakeaways:
 <p>Incorporation changes everything about your tax position. Here's what you need to know.</p>
 
 <h3>Corporation Tax</h3>
-<p>The company pays corporation tax on its profits. For 2025/26:</p>
+<p>The company pays corporation tax on its profits. For 2026/27:</p>
 <ul>
 <li>19% on profits up to £50,000</li>
 <li>Marginal relief between £50,000 and £250,000 (effective rate ~26.5% in the margin)</li>
@@ -285,10 +285,10 @@ keyTakeaways:
 <p>You must file a CT600 return within 12 months of the year end, and pay the tax within 9 months and 1 day of the year end.</p>
 
 <h3>Salary and Dividends</h3>
-<p>You extract money from the company as salary and dividends. The optimal mix changes each year with tax thresholds. For 2025/26, the typical approach is:</p>
+<p>You extract money from the company as salary and dividends. The optimal mix changes each year with tax thresholds. For 2026/27, the typical approach is:</p>
 <ul>
 <li>Take a salary up to the personal allowance (£12,570) to preserve NI credits and use the personal allowance</li>
-<li>Take the rest as dividends, using the £500 dividend allowance, then paying 8.75% basic rate, 33.75% higher rate, 39.35% additional rate</li>
+<li>Take the rest as dividends, using the £500 dividend allowance, then paying 10.75% basic rate, 35.75% higher rate, 39.35% additional rate</li>
 </ul>
 <p>We cover this in detail in our <a href="/blog/salary-and-dividends">salary and dividends guide</a>.</p>
 

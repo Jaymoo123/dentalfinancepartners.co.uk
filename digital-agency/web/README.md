@@ -249,4 +249,4 @@ Edit `src/config/site.ts` to change:
 
 ## License
 
-Proprietary — Dental Finance Partners Ltd.
+Proprietary — Ashfield Trading Ltd.

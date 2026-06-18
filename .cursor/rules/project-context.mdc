@@ -17,7 +17,7 @@ Post counts are point-in-time (daily pipeline adds posts). Run `python scripts/v
 |------|--------|----------|-----------|--------------|
 | Property Tax Partners | propertytaxpartners.co.uk | property | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /incorporation |
 | Dental Finance Partners | dentalfinancepartners.co.uk | dentists | 2 (London, Manchester) | — |
-| Medical Accountants UK | medicalaccountantsuk.co.uk | medical | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /nhs-pension |
+| Medical Accountants UK | medicalaccounts.co.uk | medical | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /nhs-pension |
 | Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /sra-compliance |
 
 **Shared pages (all 4):** `/`, `/about`, `/services`, `/contact`, `/blog`, `/locations`, `/locations/[slug]`, `/thank-you`, `/privacy-policy`, `/terms`, `/cookie-policy`

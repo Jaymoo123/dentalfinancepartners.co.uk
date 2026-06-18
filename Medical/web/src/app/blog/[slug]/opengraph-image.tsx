@@ -80,7 +80,7 @@ export default async function Image({
               fontWeight: 600,
             }}
           >
-            medicalaccountantsuk.co.uk
+            medicalaccounts.co.uk
           </div>
           <div
             style={{

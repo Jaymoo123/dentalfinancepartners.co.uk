@@ -117,7 +117,7 @@ keyTakeaways:
 
 <p>If you understate revenue by treating contractor pay as a direct cost of sales (which is correct), you need to make sure your gross profit percentage is realistic. HMRC may query a gross profit margin that looks too low for a recruitment agency. If your contract margin is 15%, your gross profit on those contracts should be 15%. If your management accounts show 15% but your tax return shows 5%, HMRC will ask questions.</p>
 
-<p>Directors' loan account issues can also arise from confusing billings and revenue. If you treat the full billing as revenue and take dividends based on that inflated number, you may create a directors' loan account overdrawn balance. That triggers a Section 455 tax charge at 33.75% on the overdrawn amount. It is an expensive mistake.</p>
+<p>Directors' loan account issues can also arise from confusing billings and revenue. If you treat the full billing as revenue and take dividends based on that inflated number, you may create a directors' loan account overdrawn balance. That triggers a Section 455 tax charge at 35.75% on the overdrawn amount. It is an expensive mistake.</p>
 
 <h2>How to Calculate Your Agency's True Revenue</h2>
 

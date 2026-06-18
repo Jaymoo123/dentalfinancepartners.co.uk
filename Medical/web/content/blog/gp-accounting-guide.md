@@ -1,4 +1,4 @@
----
+﻿---
 title: 'GP Accounting: Essential Guide for UK General Practitioners'
 slug: gp-accounting-guide
 date: '2026-04-01'
@@ -12,7 +12,7 @@ image: ''
 h1: 'GP Accounting: Complete Guide for UK General Practitioners'
 summary: A complete GP accounting guide covering the SA800 partnership structure, drawings versus profit share, NHS income streams, NHS pension on the accounts, expenses, year-end tax and MTD for UK general practitioners.
 schema: ''
-canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-accounting-guide
+canonical: https://www.medicalaccounts.co.uk/blog/gp-accounting-guide
 faqs:
 - question: Do GP partnerships file company accounts?
   answer: No. A GP partnership is not a limited company, so it does not file accounts at Companies House. The practice prepares annual partnership accounts, then files a partnership return (SA800) with HMRC showing total practice income, allowable expenses and how the profit is split. Each partner reports their own share on the partnership pages (SA104) of their personal Self Assessment return and pays income tax and Class 4 National Insurance on it.

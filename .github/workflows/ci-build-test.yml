@@ -31,7 +31,7 @@ jobs:
           - site: Property
             url: https://propertytaxpartners.co.uk
           - site: Medical
-            url: https://www.medicalaccountantsuk.co.uk
+            url: https://www.medicalaccounts.co.uk
           - site: Solicitors
             url: https://www.accountsforlawyers.co.uk
           - site: generalist
@@ -41,7 +41,9 @@ jobs:
           - site: console
             url: https://console.internal
           - site: contractors-ir35
-            url: https://www.contractor-finance-partners.co.uk
+            url: https://www.contractortaxaccountants.co.uk
+          - site: construction-cis
+            url: https://www.tradetaxspecialists.co.uk
 
     steps:
       - name: Checkout code

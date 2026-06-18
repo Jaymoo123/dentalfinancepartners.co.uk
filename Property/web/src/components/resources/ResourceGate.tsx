@@ -18,6 +18,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
@@ -86,7 +87,7 @@ export function ResourceGate({
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   const resource = resourceForTopic(topic);
 
-  const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
+  const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -309,8 +310,7 @@ export function ResourceGate({
                 aria-describedby={fieldErrors.consent ? "resource-consent-error" : undefined}
               />
               <span>
-                I agree to my details being shared by {niche.display_name} with specialist partners for the
-                purpose of responding to my enquiry and providing specialist advice. See our{" "}
+                {siteConfig.leadConsentText} See our{" "}
                 <a
                   href="/privacy-policy"
                   target="_blank"

@@ -1,7 +1,20 @@
 {
   "niche_id": "generalist",
   "display_name": "Holloway Davies",
-  "legal_name": "Holloway Davies Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
   "domain": "www.hollowaydavies.co.uk",
   "tagline": "Chartered accountants for UK businesses of every shape",
   "description": "Holloway Davies. ICAEW chartered accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",

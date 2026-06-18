@@ -1,0 +1,6 @@
+GAP-4 acceptance + GAP-6 decision record (documentation-only)
+
+- extras JSONB applied to prod, trigger-skipped round-trip proof, LD-06 greps clean
+- CENTRAL_LEAD_PIPELINE.md: Property = designated central host, health check + re-point path
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

@@ -20,7 +20,7 @@ summary: 'Selling your agency means transferring its most valuable asset: retain
 schema: ''
 faqs:
 - question: Do retainer contracts qualify for Business Asset Disposal Relief (BADR)?
-  answer: They can, but it depends on how they are classified. If the retainer contracts are treated as part of the goodwill of the business, they qualify for BADR at 14% (for disposals from 6 April 2025) CGT. If they are treated as separate assets (like a licence or contractual right), they may not qualify. The key factor is whether the contracts are personal to you or transferable business assets. Standardised company contracts with a team managing the relationship are more likely to qualify.
+  answer: They can, but it depends on how they are classified. If the retainer contracts are treated as part of the goodwill of the business, they qualify for BADR at 18% (for disposals from 6 April 2025) CGT. If they are treated as separate assets (like a licence or contractual right), they may not qualify. The key factor is whether the contracts are personal to you or transferable business assets. Standardised company contracts with a team managing the relationship are more likely to qualify.
 - question: What happens if a retainer contract has a non-assignment clause?
   answer: 'You cannot sell that contract without the client''s consent. You have three options: get written consent before completion, use a novation agreement (client terminates old contract and signs a new one with the buyer), or structure the sale as a share sale where the contracts stay with the company. Most buyers will insist on seeing all contracts before exchange, so check for these clauses early.'
 - question: Do I pay VAT on the sale of retainer contracts?
@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - In an asset sale, retainer contracts are treated as contractual rights, not goodwill, affecting how the purchase price is allocated for tax purposes.
-- Selling via share sale avoids retainer contract renegotiation and lets you pay CGT at 14% with Business Asset Disposal Relief (rising to 18% from 6 April 2026).
+- Selling via share sale avoids retainer contract renegotiation and lets you pay CGT at 18% with Business Asset Disposal Relief (rising to 18% from 6 April 2026).
 - Buyers prefer asset sales to avoid inheriting liabilities, but sellers must understand how each retainer contract's sale proceeds are taxed.
 - Listing retainer contracts individually in the sale agreement allows the buyer to confirm enforceability, check non-assignment clauses, and allocate the purchase price.
 - Most agency sales under £5 million are asset sales, where the buyer selects specific assets including retainer contracts, leaving the seller to liquidate the company.
@@ -52,13 +52,13 @@ keyTakeaways:
 <li><strong>Contractual rights</strong>, specific client agreements with enforceable terms</li>
 </ul>
 
-<p>Retainer contracts fall into the third category, but they are often bundled into goodwill for valuation purposes. This creates a tension. The buyer wants to allocate as much of the purchase price to tangible assets (for capital allowances) and as little to goodwill (which is not deductible). The seller wants the opposite, goodwill attracts Business Asset Disposal Relief (BADR) at 14% CGT, while other asset categories may not.</p>
+<p>Retainer contracts fall into the third category, but they are often bundled into goodwill for valuation purposes. This creates a tension. The buyer wants to allocate as much of the purchase price to tangible assets (for capital allowances) and as little to goodwill (which is not deductible). The seller wants the opposite, goodwill attracts Business Asset Disposal Relief (BADR) at 18% CGT, while other asset categories may not.</p>
 
 <p>If you sell your agency as a share sale, this allocation does not matter. You pay CGT on the gain from the shares, and the buyer inherits the company as-is. But most agency sales under £5 million happen as asset sales, where the buyer picks which assets they want. And retainer contracts are almost always the asset they want most.</p>
 
 <h2>Asset Sale Versus Share Sale: Which One for Your Agency?</h2>
 
-<p>In a <strong>share sale</strong>, the buyer purchases the entire company. All contracts, all liabilities, all tax history. You sell your shares, pay CGT at 14% (if BADR applies) or 24% (if it does not), and walk away. The retainer contracts stay with the company. No renegotiation needed.</p>
+<p>In a <strong>share sale</strong>, the buyer purchases the entire company. All contracts, all liabilities, all tax history. You sell your shares, pay CGT at 18% (if BADR applies) or 24% (if it does not), and walk away. The retainer contracts stay with the company. No renegotiation needed.</p>
 
 <p>In an <strong>asset sale</strong>, the buyer purchases specific assets, the retainer contracts, the brand, the work in progress, the equipment. The company still exists (you still own it), but it has no ongoing business. You then liquidate the company and distribute the proceeds. This is where the tax treatment of retainer contracts gets complicated.</p>
 
@@ -77,7 +77,7 @@ keyTakeaways:
 
 <p>From the buyer's perspective, a retainer contract with 12 months remaining at £5,000 per month is worth £60,000 in guaranteed revenue (assuming no cancellation). They will want that value allocated to a specific asset category, often "customer contracts" or "contractual rights", rather than lumped into goodwill.</p>
 
-<p>From your perspective, the allocation matters because it determines your CGT treatment. If the retainer contracts are treated as goodwill, they qualify for BADR at 14% (for disposals from 6 April 2025). If they are treated as separate assets (like a patent or a licence), they may not qualify for BADR at all, and you pay 20% CGT on that portion.</p>
+<p>From your perspective, the allocation matters because it determines your CGT treatment. If the retainer contracts are treated as goodwill, they qualify for BADR at 18% (for disposals from 6 April 2025). If they are treated as separate assets (like a patent or a licence), they may not qualify for BADR at all, and you pay 20% CGT on that portion.</p>
 
 <h2>The Tax Treatment of Retainer Contract Value</h2>
 
@@ -94,7 +94,7 @@ keyTakeaways:
 
 <p>Total: £600,000.</p>
 
-<p>You assume all £600,000 qualifies for BADR at 14% (for disposals from 6 April 2025). But HMRC may disagree. The £200,000 allocated to retainer contracts could be treated as the sale of "chose in action", a legal term meaning a right to sue for a debt or payment. If HMRC classifies the retainer contracts as separate assets rather than part of the goodwill of the business, that £200,000 may not qualify for BADR.</p>
+<p>You assume all £600,000 qualifies for BADR at 18% (for disposals from 6 April 2025). But HMRC may disagree. The £200,000 allocated to retainer contracts could be treated as the sale of "chose in action", a legal term meaning a right to sue for a debt or payment. If HMRC classifies the retainer contracts as separate assets rather than part of the goodwill of the business, that £200,000 may not qualify for BADR.</p>
 
 <p>The distinction hinges on whether the retainer contracts are "personal to the seller" or "transferable assets of the business." If the contracts are standard terms with no special relationship to you personally, they are likely business assets qualifying for BADR. If the contracts depend on your personal relationship with the client (common in small agencies where the founder is the main contact), HMRC may argue they are personal goodwill, not business goodwill.</p>
 

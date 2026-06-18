@@ -4,7 +4,7 @@ for the same query and compute structured gap reports.
 
 Two-pass process:
   1. Quantitative gaps computed in Python (no LLM needed)
-  2. Content gap identified by DeepSeek from structured section/FAQ data
+  2. Content gap identified by Anthropic Sonnet from structured section/FAQ data
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from optimisation_engine.competitor._db import _arr, _esc, _jsonb, _sql, parse_llm_json
-from optimisation_engine.blog_generator.llm_providers import call_deepseek, LLMError
+from optimisation_engine.blog_generator.llm_providers import call_anthropic, LLMError
 
 
 # ---------------------------------------------------------------------------
@@ -291,16 +291,15 @@ FAQs: {_build_faqs_summary(c2.get('faqs'))}"""
     )
 
     try:
-        result = call_deepseek(
+        result = call_anthropic(
             system_prompt=GAP_SYSTEM,
             user_prompt=prompt,
-            model="deepseek-chat",
+            model="claude-sonnet-4-20250514",
             max_tokens=3000,
             temperature=0.2,
-            json_mode=True,
         )
     except LLMError as exc:
-        print(f"    [gap_analyser] DeepSeek error: {exc}")
+        print(f"    [gap_analyser] LLM error: {exc}")
         return None
 
     parsed = parse_llm_json(result.text, label="gap_analyser")

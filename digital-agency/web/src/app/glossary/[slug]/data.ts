@@ -40,9 +40,9 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>Key financial implications for your agency include:</p>
 <ul>
-<li>You must deduct PAYE income tax and employee National Insurance (12% on earnings between £12,570 and £50,270 for 2025/26) from the contractor's fees</li>
-<li>You must pay employer National Insurance (15% on earnings above £9,100 for 2025/26) and apprenticeship levy (0.5% on pay bills over £3m)</li>
-<li>The contractor loses access to dividend tax rates (8.75% basic rate, 33.75% higher rate) and the £500 dividend allowance</li>
+<li>You must deduct PAYE income tax and employee National Insurance (12% on earnings between £12,570 and £50,270 for 2026/27) from the contractor's fees</li>
+<li>You must pay employer National Insurance (15% on earnings above £5,000 for 2026/27) and apprenticeship levy (0.5% on pay bills over £3m)</li>
+<li>The contractor loses access to dividend tax rates (10.75% basic rate, 35.75% higher rate) and the £500 dividend allowance</li>
 <li>You must provide a status determination statement to the contractor and the next party in the chain</li>
 </ul>
 <p>If you get the determination wrong, HMRC can pursue you for unpaid tax, interest, and penalties. The contractor cannot claim travel and subsistence expenses against inside-IR35 engagements either.</p>
@@ -96,13 +96,13 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     primary_kw: "what is Section 455",
     body: `<p>Section 455 is a tax charge that applies when a close company (typically a small owner-managed agency) makes a loan to a director or shareholder that is not repaid within nine months of the end of the accounting period.</p>
 
-<p>For agency founders, this charge acts as a deterrent against extracting money from your agency as a director's loan rather than through salary or dividends. If you borrow money from your agency and do not repay it within the nine-month window, your agency must pay a tax charge equal to 33.75% of the loan amount (the rate for 2025/26). This charge is not a penalty but a deposit: it is refunded to the agency once the loan is repaid, provided the repayment happens after the nine-month deadline.</p>
+<p>For agency founders, this charge acts as a deterrent against extracting money from your agency as a director's loan rather than through salary or dividends. If you borrow money from your agency and do not repay it within the nine-month window, your agency must pay a tax charge equal to 35.75% of the loan amount (the rate for 2026/27). This charge is not a penalty but a deposit: it is refunded to the agency once the loan is repaid, provided the repayment happens after the nine-month deadline.</p>
 
 <p>Here is how it works in practice for UK agency founders:</p>
 
 <ul>
-<li><strong>Loan creation:</strong> If your agency lends you £20,000 on 1 January 2025, and you have not repaid it by 30 September 2025 (nine months after the end of the accounting period if your year-end is 31 December), the agency must pay £6,750 in Section 455 tax (33.75% of £20,000) by the corporation tax filing deadline.</li>
-<li><strong>Repayment and refund:</strong> If you repay the loan on 1 March 2026, the agency can reclaim the £6,750 from HMRC. The refund is processed as a reduction in the agency's corporation tax liability for the period in which the repayment occurs.</li>
+<li><strong>Loan creation:</strong> If your agency lends you £20,000 on 1 January 2027, and you have not repaid it by 30 September 2027 (nine months after the end of the accounting period if your year-end is 31 December), the agency must pay £7,150 in Section 455 tax (35.75% of £20,000) by the corporation tax filing deadline.</li>
+<li><strong>Repayment and refund:</strong> If you repay the loan on 1 March 2028, the agency can reclaim the £7,150 from HMRC. The refund is processed as a reduction in the agency's corporation tax liability for the period in which the repayment occurs.</li>
 <li><strong>Interest implications:</strong> If the loan is not repaid within the nine-month window, HMRC also charges interest on the unpaid Section 455 tax from the original due date until the date of repayment.</li>
 <li><strong>Exceptions:</strong> Loans of £15,000 or less to a director who works full-time for the agency (and does not own more than 5% of the shares) are exempt from Section 455. Similarly, loans made in the ordinary course of business (e.g., a credit account for expenses) are not caught.</li>
 </ul>
@@ -111,7 +111,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p><strong>When this matters for agency founders</strong></p>
 
-<p>This matters for agency founders because taking a director's loan without planning the repayment timeline can trigger an unexpected 33.75% tax charge on your agency's cash flow, plus interest. Always structure withdrawals as salary or dividends where possible, or ensure any loan is repaid within nine months of your year-end to avoid the charge entirely.</p>`,
+<p>This matters for agency founders because taking a director's loan without planning the repayment timeline can trigger an unexpected 35.75% tax charge on your agency's cash flow, plus interest. Always structure withdrawals as salary or dividends where possible, or ensure any loan is repaid within nine months of your year-end to avoid the charge entirely.</p>`,
   },
   "aia": {
     slug: "aia",
@@ -119,7 +119,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     category: "Tax",
     primary_kw: "what is AIA",
     body: `<p>The Annual Investment Allowance (AIA) is a UK tax relief that lets you deduct the full cost of qualifying plant and machinery from your taxable profits in the year you buy it, rather than spreading the deduction over several years.</p>
-<p>For UK agency founders, the AIA is a powerful tool for reducing corporation tax. If your agency buys equipment like computers, servers, office furniture, software, or even certain fixtures in a leased office, you can claim the full cost against your profits immediately. For the 2025/26 tax year, the AIA limit is £1 million, meaning you can deduct up to £1 million of qualifying capital expenditure in a single accounting period. This is particularly valuable if your agency has a high taxable profit and you need to invest in technology or infrastructure to scale.</p>
+<p>For UK agency founders, the AIA is a powerful tool for reducing corporation tax. If your agency buys equipment like computers, servers, office furniture, software, or even certain fixtures in a leased office, you can claim the full cost against your profits immediately. For the 2026/27 tax year, the AIA limit is £1 million, meaning you can deduct up to £1 million of qualifying capital expenditure in a single accounting period. This is particularly valuable if your agency has a high taxable profit and you need to invest in technology or infrastructure to scale.</p>
 <p>To claim the AIA, you must be a sole trader, a partnership, or a limited company. The relief applies to most plant and machinery, but not to cars, buildings, or assets used for leasing. For agency founders, typical qualifying items include:</p>
 <ul>
 <li>Laptops, monitors, and other IT hardware</li>
@@ -142,7 +142,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>There are two schemes. The <strong>RDEC (Research and Development Expenditure Credit)</strong> scheme is for large companies, but most agencies use the <strong>SME R&D Relief</strong> scheme if they have fewer than 500 employees and turnover under €100 million. Under the SME scheme, you can claim up to 86% of your qualifying R&D costs as an enhanced deduction. For example, if you spend £100,000 on qualifying costs, you can deduct £186,000 from your taxable profits. If your agency is loss-making, you can surrender the loss for a cash payment worth up to 14.5% of the qualifying costs.</p>
 
-<p>Qualifying costs include staff salaries, employer's National Insurance, pension contributions, software licences, cloud computing costs, and subcontractor fees (subject to restrictions). For 2025/26, the rates are unchanged from the previous year. The SME payable credit rate remains 14.5% for loss-making companies, and the RDEC rate is 20% (with a 15% net benefit after tax).</p>
+<p>Qualifying costs include staff salaries, employer's National Insurance, pension contributions, software licences, cloud computing costs, and subcontractor fees (subject to restrictions). For 2026/27, the rates are unchanged from the previous year. The SME payable credit rate remains 14.5% for loss-making companies, and the RDEC rate is 20% (with a 15% net benefit after tax).</p>
 
 <p>Common qualifying agency activities include building a bespoke content management system, developing a proprietary analytics dashboard, creating automated reporting tools, or integrating AI into client campaigns where the outcome is uncertain. Routine website builds using existing templates do not qualify.</p>
 
@@ -164,7 +164,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 <li><strong>Payment timing:</strong> Corporation tax is due nine months and one day after your accounting period ends. For a 31 March year end, payment is due by 1 January the following year.</li>
 <li><strong>Quarterly instalments:</strong> If your annual corporation tax liability exceeds £10,000 (typically profits over £1.5 million), you must pay in quarterly instalments. Most small agencies won't trigger this.</li>
 <li><strong>Allowable deductions:</strong> You can deduct salaries, pension contributions, rent, equipment, software subscriptions, professional fees, and marketing costs. Dividends paid to shareholders are not deductible.</li>
-<li><strong>Capital allowances:</strong> The Annual Investment Allowance (AIA) remains at £1 million for 2025/26, letting you claim 100% relief on most plant and machinery purchases, including computers and office equipment.</li>
+<li><strong>Capital allowances:</strong> The Annual Investment Allowance (AIA) remains at £1 million for 2026/27, letting you claim 100% relief on most plant and machinery purchases, including computers and office equipment.</li>
 <li><strong>Research and Development (R&D):</strong> If your agency develops software, tools, or new processes, you may qualify for R&D tax credits, which can reduce your corporation tax bill or generate a cash repayment.</li>
 </ul>
 <p>When this matters for agency founders: Corporation tax directly affects how much profit you keep to reinvest in growth, pay yourself dividends, or build a cash reserve. Understanding your effective rate helps you forecast tax bills accurately, time large purchases to maximise capital allowances, and decide whether to retain profits or extract them as dividends. With the main rate rising to 25% for profitable agencies, proper planning around salary, dividends, and pension contributions becomes essential to minimise your overall tax burden.</p>`,
@@ -174,13 +174,13 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Personal Allowance",
     category: "Tax",
     primary_kw: "UK personal allowance",
-    body: `<p>Your Personal Allowance is the amount of income you can earn each tax year before you start paying Income Tax. For the 2025/26 tax year, the standard UK personal allowance is £12,570, frozen at this level until April 2028.</p>
+    body: `<p>Your Personal Allowance is the amount of income you can earn each tax year before you start paying Income Tax. For the 2026/27 tax year, the standard UK personal allowance is £12,570, frozen at this level until April 2028.</p>
 
 <p>As an agency founder, your Personal Allowance applies to all your taxable income combined: salary from your limited company, dividends, and any other earnings. This means you can structure your director's remuneration to use the full £12,570 allowance tax-efficiently. A common approach is to pay yourself a salary up to this threshold, which avoids Income Tax and National Insurance contributions (provided it stays below the primary threshold of £242 per week).</p>
 
 <p>However, the Personal Allowance reduces if your adjusted net income exceeds £100,000. For every £2 you earn above £100,000, your allowance drops by £1. So if your total income as an agency founder reaches £125,140, your Personal Allowance is completely removed. This creates an effective marginal tax rate of 60% on income between £100,000 and £125,140, because you lose the allowance and pay higher-rate tax simultaneously. Many agency founders in this bracket consider pension contributions or charitable donations to reduce adjusted net income and restore some or all of their allowance.</p>
 
-<p>Your Personal Allowance is separate from the Dividend Allowance (£500 for 2025/26) and the Capital Gains Tax annual exempt amount (£3,000). It applies to earnings, rental income, and most other income types, but not to savings interest within your Personal Savings Allowance (£1,000 for basic-rate taxpayers, £500 for higher-rate).</p>
+<p>Your Personal Allowance is separate from the Dividend Allowance (£500 for 2026/27) and the Capital Gains Tax annual exempt amount (£3,000). It applies to earnings, rental income, and most other income types, but not to savings interest within your Personal Savings Allowance (£1,000 for basic-rate taxpayers, £500 for higher-rate).</p>
 
 <p>If you are married or in a civil partnership, and one partner earns less than their Personal Allowance, you may be able to transfer up to £1,260 of unused allowance to the higher-earning partner via the Marriage Allowance. This is worth up to £252 in tax relief per year.</p>
 
@@ -191,15 +191,15 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Dividend Allowance",
     category: "Tax",
     primary_kw: "UK dividend allowance",
-    body: `<p>The UK dividend allowance is the amount of dividend income you can receive each tax year without paying any tax on it, currently set at £500 for 2025/26.</p>
+    body: `<p>The UK dividend allowance is the amount of dividend income you can receive each tax year without paying any tax on it, currently set at £500 for 2026/27.</p>
 
-<p>For agency founders who operate through a limited company, dividends are typically the most tax-efficient way to extract profits from your business. The dividend allowance sits on top of your personal allowance (£12,570 for 2025/26), meaning you can receive up to £13,070 in total income before any tax becomes due, provided all of that income is dividends.</p>
+<p>For agency founders who operate through a limited company, dividends are typically the most tax-efficient way to extract profits from your business. The dividend allowance sits on top of your personal allowance (£12,570 for 2026/27), meaning you can receive up to £13,070 in total income before any tax becomes due, provided all of that income is dividends.</p>
 
-<p>Once your dividend income exceeds the £500 allowance, the rate of tax you pay depends on your total income and which Income Tax band you fall into. For 2025/26, the rates are:</p>
+<p>Once your dividend income exceeds the £500 allowance, the rate of tax you pay depends on your total income and which Income Tax band you fall into. For 2026/27, the rates are:</p>
 
 <ul>
-<li><strong>Basic rate taxpayers</strong> (income up to £50,270): 8.75% on dividends above the allowance</li>
-<li><strong>Higher rate taxpayers</strong> (income between £50,271 and £125,140): 33.75%</li>
+<li><strong>Basic rate taxpayers</strong> (income up to £50,270): 10.75% on dividends above the allowance</li>
+<li><strong>Higher rate taxpayers</strong> (income between £50,271 and £125,140): 35.75%</li>
 <li><strong>Additional rate taxpayers</strong> (income over £125,140): 39.35%</li>
 </ul>
 
@@ -253,15 +253,15 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     primary_kw: "UK national insurance explained",
     body: `<p>National Insurance Contributions (NI) are payments made by employees, employers, and the self-employed to fund state benefits, including the State Pension, NHS, and statutory payments like sick pay and maternity leave.</p>
 
-<p>For UK agency founders, NI is a significant employment cost that directly impacts your profit margins and pricing strategy. As an employer, you must pay <strong>Class 1 Secondary NI</strong> on each employee's earnings above the secondary threshold (£9,100 per year for 2025/26). The rate is 13.8% on earnings above this threshold, with no upper limit. This means a salaried employee earning £40,000 costs you an extra £4,258.20 in employer NI alone.</p>
+<p>For UK agency founders, NI is a significant employment cost that directly impacts your profit margins and pricing strategy. As an employer, you must pay <strong>Class 1 Secondary NI</strong> on each employee's earnings above the secondary threshold (£5,000 per year for 2026/27). The rate is 15% on earnings above this threshold, with no upper limit. This means a salaried employee earning £40,000 costs you an extra £4,258.20 in employer NI alone.</p>
 
 <p>Your employees also pay <strong>Class 1 Primary NI</strong> at 8% on earnings between the primary threshold (£12,570) and the upper earnings limit (£50,270), then 2% on anything above that. As an agency founder, you must deduct this through PAYE and report it to HMRC each month via RTI (Real Time Information).</p>
 
-<p>If you operate as a sole trader or through a limited company, your own NI position differs. As a sole trader, you pay <strong>Class 2 NI</strong> at £3.45 per week (2025/26) if your profits exceed £6,725, and <strong>Class 4 NI</strong> at 6% on profits between £12,570 and £50,270, then 2% above that. As a limited company director, you typically pay yourself a salary up to the secondary threshold (£9,100) to avoid employer NI, then take the rest as dividends. This is a common tax planning strategy, but be aware that dividends do not count towards NI contributions, so you may miss out on certain state benefits.</p>
+<p>If you operate as a sole trader or through a limited company, your own NI position differs. As a sole trader, you pay <strong>Class 2 NI</strong> at £3.45 per week (2026/27) if your profits exceed £6,725, and <strong>Class 4 NI</strong> at 6% on profits between £12,570 and £50,270, then 2% above that. As a limited company director, you typically pay yourself a salary up to the secondary threshold (£5,000) to avoid employer NI, then take the rest as dividends. This is a common tax planning strategy, but be aware that dividends do not count towards NI contributions, so you may miss out on certain state benefits.</p>
 
 <p>For agency founders using contractors or freelancers, be careful with <strong>IR35</strong> rules. If HMRC determines a contractor is effectively an employee, you become liable for their employer NI contributions plus penalties. Always check the employment status of your workers.</p>
 
-<p>When this matters for agency founders: NI is your second biggest employment cost after salaries, so structuring pay efficiently (salary up to the NI threshold, dividends above) can save thousands each year. It also affects your pricing: if you charge clients £100 per hour, roughly £13.80 of that goes to employer NI before you see any profit. Always factor NI into your project quotes and cash flow forecasts.</p>`,
+<p>When this matters for agency founders: NI is your second biggest employment cost after salaries, so structuring pay efficiently (salary up to the NI threshold, dividends above) can save thousands each year. It also affects your pricing: if you charge clients £100 per hour, roughly £15.00 of that goes to employer NI before you see any profit. Always factor NI into your project quotes and cash flow forecasts.</p>`,
   },
   "paye": {
     slug: "paye",
@@ -270,11 +270,11 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     primary_kw: "what is PAYE",
     body: `<p>PAYE (Pay As You Earn) is the system HM Revenue & Customs uses to collect Income Tax and National Insurance contributions directly from employees' wages or salaries before they receive them. For UK agency founders, PAYE is the mechanism you must operate whenever you have employees, including yourself if you take a salary from your agency. Under PAYE, you are legally responsible for deducting the correct tax and NI from each employee's pay, reporting those deductions to HMRC in real time, and paying the amounts over to HMRC monthly or quarterly.</p>
 
-<p>When you hire your first employee or pay yourself a salary as a director, you must register as an employer with HMRC and set up a payroll system. Each time you run payroll, you calculate the employee's gross pay, then deduct Income Tax using the tax code HMRC provides (usually based on the personal allowance of £12,570 for 2025/26). You also deduct employee National Insurance at 8% on earnings between £242 and £967 per week, and 2% on anything above £967. As the employer, you must also pay employer National Insurance at 15% on earnings above £175 per week (the secondary threshold). These deductions are reported to HMRC through Real Time Information (RTI) submissions on or before each payday.</p>
+<p>When you hire your first employee or pay yourself a salary as a director, you must register as an employer with HMRC and set up a payroll system. Each time you run payroll, you calculate the employee's gross pay, then deduct Income Tax using the tax code HMRC provides (usually based on the personal allowance of £12,570 for 2026/27). You also deduct employee National Insurance at 8% on earnings between £242 and £967 per week, and 2% on anything above £967. As the employer, you must also pay employer National Insurance at 15% on earnings above £175 per week (the secondary threshold). These deductions are reported to HMRC through Real Time Information (RTI) submissions on or before each payday.</p>
 
 <p>For agency founders, PAYE is particularly important because you cannot simply pay yourself dividends and ignore salary. A small salary (up to the NI threshold) can be tax-efficient because it counts as a deductible business expense and builds your state pension entitlement, while dividends take the bulk of your income. However, if you have other employees, you must operate PAYE correctly for them too, including freelancers or contractors who are deemed employees under IR35 rules. The penalties for failing to operate PAYE correctly can be severe, including fines and HMRC investigations.</p>
 
-<p>When this matters for agency founders: PAYE is non-negotiable from the moment you have any employee, including yourself as a director taking a salary. Getting it wrong can lead to penalties, interest on unpaid tax, and reputational damage with HMRC. If you use an accountant or payroll software, ensure they handle RTI submissions and payment deadlines (usually 22nd of the following month for electronic payments). For most agency founders, a small salary of around £9,100 per year (to avoid employee NI) combined with dividends is the standard tax-efficient approach, but always check your specific circumstances with a qualified accountant.</p>`,
+<p>When this matters for agency founders: PAYE is non-negotiable from the moment you have any employee, including yourself as a director taking a salary. Getting it wrong can lead to penalties, interest on unpaid tax, and reputational damage with HMRC. If you use an accountant or payroll software, ensure they handle RTI submissions and payment deadlines (usually 22nd of the following month for electronic payments). For most agency founders, a small salary of around £5,000 per year (to avoid employee NI) combined with dividends is the standard tax-efficient approach, but always check your specific circumstances with a qualified accountant.</p>`,
   },
   "p11d": {
     slug: "p11d",
@@ -285,9 +285,9 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>For agency founders, the P11D process is a key compliance task that runs alongside payroll. If you provide any benefits to yourself or your staff beyond salary and dividends, you must report them on a P11D form for each employee by 6 July following the end of the tax year. The most common benefits for agency owners include private medical insurance, company cars with personal use, and interest-free loans over £10,000. Even if you are the only director, you still need to submit a P11D for yourself if you receive any reportable benefits.</p>
 
-<p>The form captures the cash equivalent value of each benefit, which HMRC uses to calculate the employee's tax liability. You must also pay Class 1A National Insurance on the value of most benefits at 13.8%, due by 19 July (or 22 July if paying electronically). For example, if you provide a company car with a taxable value of £8,000, the agency pays £1,104 in Class 1A NIC, and you pay income tax on that £8,000 at your marginal rate. Some benefits, like pension contributions and workplace childcare, are exempt from reporting.</p>
+<p>The form captures the cash equivalent value of each benefit, which HMRC uses to calculate the employee's tax liability. You must also pay Class 1A National Insurance on the value of most benefits at 15%, due by 19 July (or 22 July if paying electronically). For example, if you provide a company car with a taxable value of £8,000, the agency pays £1,104 in Class 1A NIC, and you pay income tax on that £8,000 at your marginal rate. Some benefits, like pension contributions and workplace childcare, are exempt from reporting.</p>
 
-<p>For 2025/26, the key figures to remember are: the £10,000 threshold for reporting beneficial loans, the £500 annual limit for trivial benefits (like a birthday gift), and the specific advisory fuel rates for company cars. If you fail to submit P11Ds on time, HMRC charges penalties starting at £100 per 50 employees per month for late returns.</p>
+<p>For 2026/27, the key figures to remember are: the £10,000 threshold for reporting beneficial loans, the £500 annual limit for trivial benefits (like a birthday gift), and the specific advisory fuel rates for company cars. If you fail to submit P11Ds on time, HMRC charges penalties starting at £100 per 50 employees per month for late returns.</p>
 
 <p>Many agency founders choose to avoid P11D reporting altogether by using a "payrolling" arrangement, where benefits are taxed through payroll in real time. This removes the need for a separate P11D submission but requires you to register with HMRC before the start of the tax year.</p>
 
@@ -308,14 +308,14 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 <li><strong>Page 1 (Personal details)</strong> – your name, address, National Insurance number, and contact information.</li>
 <li><strong>Page 2 (Employment)</strong> – income from PAYE employment, including your P60 or P45 figures.</li>
 <li><strong>Page 3 (Self-employment)</strong> – your sole trader profit or loss, calculated from your business accounts. This is where you report agency income if you are not limited by shares.</li>
-<li><strong>Page 4 (Dividends and savings)</strong> – dividend income over the £500 allowance (2025/26) and interest from savings accounts.</li>
-<li><strong>Page 5 (Capital gains)</strong> – gains from selling assets like shares or property, using the annual exempt amount (£3,000 for 2025/26).</li>
+<li><strong>Page 4 (Dividends and savings)</strong> – dividend income over the £500 allowance (2026/27) and interest from savings accounts.</li>
+<li><strong>Page 5 (Capital gains)</strong> – gains from selling assets like shares or property, using the annual exempt amount (£3,000 for 2026/27).</li>
 <li><strong>Page 6 (Tax reliefs)</strong> – pension contributions, charitable donations, and other allowable deductions.</li>
 </ul>
 
 <p>The SA100 is not used for limited companies. If you trade through a limited company, you file a CT600 corporation tax return instead. However, if you take dividends from your agency as a director, you still need an SA100 to report that dividend income personally.</p>
 
-<p>HMRC calculates your tax liability based on the figures you enter. For 2025/26, the personal allowance is £12,570. Income above that is taxed at 20% (basic rate), 40% (higher rate), or 45% (additional rate). Dividends are taxed at 8.75%, 33.75%, or 39.35% depending on your tax band. Capital gains are taxed at 18% (residential property) or 24% (other assets) for higher rate taxpayers.</p>
+<p>HMRC calculates your tax liability based on the figures you enter. For 2026/27, the personal allowance is £12,570. Income above that is taxed at 20% (basic rate), 40% (higher rate), or 45% (additional rate). Dividends are taxed at 10.75%, 35.75%, or 39.35% depending on your tax band. Capital gains are taxed at 18% (residential property) or 24% (other assets) for higher rate taxpayers.</p>
 
 <p>When this matters for agency founders: Filing the SA100 correctly ensures you pay the right amount of tax and avoid penalties. Late filing incurs a £100 automatic fine, with escalating charges after three months. If you are a sole trader agency owner, the SA100 is your primary reporting tool. If you run a limited company, you still need it for personal dividend and capital gains reporting. Getting it right saves you money and stress.</p>`,
   },
@@ -328,7 +328,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>For agency founders who operate through a limited company, the CT600 is your annual tax return to HMRC. It must be submitted online within 12 months of the end of your company's accounting period, though any tax due must be paid within 9 months and 1 day of that period end. The form captures your company's turnover, allowable expenses, capital allowances, and any reliefs or claims, then applies the correct corporation tax rate to work out your final liability.</p>
 
-<p>In 2025/26, the rate depends on your company's profits. If your agency's taxable profits are £50,000 or less, you pay the small profits rate of 19%. Between £50,000 and £250,000, marginal relief gradually increases the effective rate. Above £250,000, the main rate of 25% applies. For many agency founders, especially those drawing a modest salary and taking dividends, profits often fall within the 19% band, making corporation tax relatively straightforward.</p>
+<p>In 2026/27, the rate depends on your company's profits. If your agency's taxable profits are £50,000 or less, you pay the small profits rate of 19%. Between £50,000 and £250,000, marginal relief gradually increases the effective rate. Above £250,000, the main rate of 25% applies. For many agency founders, especially those drawing a modest salary and taking dividends, profits often fall within the 19% band, making corporation tax relatively straightforward.</p>
 
 <p>The CT600 includes supplementary pages if your agency claims R&D tax credits, has complex group structures, or makes certain elections. Most agency founders will file the standard CT600 with no extra schedules. You must also submit your company's statutory accounts and a corporation tax computation alongside the return. HMRC uses the CT600 to check your figures against your filed accounts, so consistency is essential.</p>
 
@@ -347,7 +347,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>For UK agency founders placing contractors or freelancers in construction roles, CIS fundamentally changes how you handle payroll and payments. If your agency engages subcontractors for construction work (including labour-only contracts, repairs, or site preparation), you are likely a deemed contractor under CIS rules. This means you must register with HMRC for CIS, verify every subcontractor before payment, deduct the correct tax rate, and submit monthly CIS returns.</p>
 
-<p>The deduction rates for 2025/26 are: 20% for registered subcontractors who can provide their Unique Taxpayer Reference (UTR) and National Insurance number, and 30% for unregistered subcontractors who cannot verify their status. Gross payment status (where no deduction is made) is available only to subcontractors meeting strict turnover and compliance tests. You must issue a CIS payment statement to each subcontractor within 14 days of the tax month end.</p>
+<p>The deduction rates for 2026/27 are: 20% for registered subcontractors who can provide their Unique Taxpayer Reference (UTR) and National Insurance number, and 30% for unregistered subcontractors who cannot verify their status. Gross payment status (where no deduction is made) is available only to subcontractors meeting strict turnover and compliance tests. You must issue a CIS payment statement to each subcontractor within 14 days of the tax month end.</p>
 
 <p>Key compliance requirements for agency founders include: registering your agency for CIS online or by phone, verifying each subcontractor's status before their first payment (and annually thereafter), deducting the correct amount from each payment (excluding VAT), filing monthly CIS returns by the 14th of the following month, and paying the deducted amounts to HMRC by the 22nd (19th for electronic payments). Failure to register or submit returns on time triggers penalties starting at £100 per 50 subcontractors per month.</p>
 
@@ -362,7 +362,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     primary_kw: "EIS SEIS explained",
     body: `<p>The Enterprise Investment Scheme (EIS) and Seed Enterprise Investment Scheme (SEIS) are UK government tax reliefs designed to encourage individuals to invest in early-stage, unquoted companies by offering significant income tax and capital gains tax reductions.</p>
 
-<p>For agency founders, EIS and SEIS are powerful tools for raising external investment while offering investors a highly tax-efficient proposition. Under SEIS, which targets very early-stage startups, an investor can receive 50% income tax relief on investments of up to £100,000 per tax year (2025/26). For example, if an investor puts £20,000 into your SEIS-eligible agency, they reduce their income tax bill by £10,000. Additionally, any gain on the sale of SEIS shares after three years is exempt from capital gains tax, and investors can defer other capital gains by reinvesting them into SEIS shares.</p>
+<p>For agency founders, EIS and SEIS are powerful tools for raising external investment while offering investors a highly tax-efficient proposition. Under SEIS, which targets very early-stage startups, an investor can receive 50% income tax relief on investments of up to £100,000 per tax year (2026/27). For example, if an investor puts £20,000 into your SEIS-eligible agency, they reduce their income tax bill by £10,000. Additionally, any gain on the sale of SEIS shares after three years is exempt from capital gains tax, and investors can defer other capital gains by reinvesting them into SEIS shares.</p>
 
 <p>EIS applies to slightly more established companies and offers 30% income tax relief on investments of up to £1,000,000 per tax year (or £2,000,000 for knowledge-intensive companies). Like SEIS, EIS shares held for at least three years are free from capital gains tax on disposal. Both schemes also provide loss relief: if the company fails, investors can claim relief against income or capital gains at their marginal rate, reducing their effective risk.</p>
 
@@ -379,11 +379,11 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     primary_kw: "UK capital gains tax",
     body: `<p>Capital Gains Tax (CGT) is a tax on the profit you make when you sell or dispose of an asset that has increased in value, not on the total sale proceeds. For UK agency founders, CGT typically applies when you sell your agency shares, your agency's business assets (like goodwill or equipment), or personal investments such as a second property. The key figure is the gain: your sale price minus what you originally paid for the asset, less any allowable costs like legal fees or improvements.</p>
 
-<p>As an agency founder, the most common CGT event is selling your company shares. If you qualify for Business Asset Disposal Relief (formerly Entrepreneurs' Relief), you pay a reduced rate of 14% on gains up to your lifetime limit of £1 million for the 2025/26 tax year. This rate rises to 18% from 6 April 2026, so if you are considering a sale, timing matters. Without relief, gains from selling your agency shares are taxed at 20% (for higher-rate taxpayers) or 10% (for basic-rate taxpayers, to the extent the gain falls within the basic-rate band).</p>
+<p>As an agency founder, the most common CGT event is selling your company shares. If you qualify for Business Asset Disposal Relief (formerly Entrepreneurs' Relief), you pay a reduced rate of 14% on gains up to your lifetime limit of £1 million for the 2026/27 tax year. This rate rises to 18% from 6 April 2026, so if you are considering a sale, timing matters. Without relief, gains from selling your agency shares are taxed at 20% (for higher-rate taxpayers) or 10% (for basic-rate taxpayers, to the extent the gain falls within the basic-rate band).</p>
 
-<p>You also have an annual exempt amount: for 2025/26, the first £3,000 of gains in a tax year are tax-free. This is down from £6,000 in 2023/24, so it is now much easier to exceed. If you sell agency equipment or a client list, any gain above that allowance is taxable. Losses can be offset against gains in the same year or carried forward, but you must report them to HMRC within four years of the end of the tax year.</p>
+<p>You also have an annual exempt amount: for 2026/27, the first £3,000 of gains in a tax year are tax-free. This is down from £6,000 in 2023/24, so it is now much easier to exceed. If you sell agency equipment or a client list, any gain above that allowance is taxable. Losses can be offset against gains in the same year or carried forward, but you must report them to HMRC within four years of the end of the tax year.</p>
 
-<p>For agency founders who hold personal assets like a buy-to-let property or shares in other companies, the residential property rate is 18% for basic-rate taxpayers and 24% for higher-rate taxpayers (2025/26). This is separate from your agency's trading assets. You must report and pay CGT within 60 days of completing a property sale using HMRC's real-time service.</p>
+<p>For agency founders who hold personal assets like a buy-to-let property or shares in other companies, the residential property rate is 18% for basic-rate taxpayers and 24% for higher-rate taxpayers (2026/27). This is separate from your agency's trading assets. You must report and pay CGT within 60 days of completing a property sale using HMRC's real-time service.</p>
 
 <p><strong>When this matters for agency founders</strong>: When you sell your agency, transfer shares, or dispose of significant business assets, CGT planning can save tens of thousands. The reduced BADR rate, the timing of the rate rise in April 2026, and your annual allowance all directly affect your net proceeds. Always calculate your gain carefully and consider professional advice before any sale.</p>`,
   },
@@ -396,7 +396,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>In practice, you would incorporate two companies: the holding company (often with "Holdings" or "Group" in its name) and the trading agency. The holding company owns 100% of the shares in the trading company. The trading company carries out client work, employs staff, and generates revenue. The holding company receives dividends from the trading company's profits, holds assets like intellectual property or cash reserves, and can make strategic decisions without being exposed to the trading company's liabilities.</p>
 
-<p>For agency founders, the main advantage is tax efficiency and asset protection. When you sell the trading company, you can potentially claim Business Asset Disposal Relief (BADR) at 14% in 2025/26 (rising to 18% from 6 April 2026) on the sale of shares in the holding company, rather than paying higher rates on a direct sale. The holding company can also receive dividends from the trading company tax-free (since both are UK companies), and you can extract profits later through dividends or share buybacks. Additionally, the holding company can accumulate retained profits without triggering personal tax until you distribute them.</p>
+<p>For agency founders, the main advantage is tax efficiency and asset protection. When you sell the trading company, you can potentially claim Business Asset Disposal Relief (BADR) at 14% in 2026/27 (rising to 18% from 6 April 2026) on the sale of shares in the holding company, rather than paying higher rates on a direct sale. The holding company can also receive dividends from the trading company tax-free (since both are UK companies), and you can extract profits later through dividends or share buybacks. Additionally, the holding company can accumulate retained profits without triggering personal tax until you distribute them.</p>
 
 <p>There are practical considerations. You must file separate accounts for each company and comply with Companies House requirements for both entities. The holding company needs at least one director (often you) and a registered office. You should also ensure the holding company has substance, it should hold board meetings, make strategic decisions, and maintain its own bank account, to avoid HMRC challenging the structure as a tax avoidance arrangement.</p>
 
@@ -409,7 +409,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     primary_kw: "what is an SPV",
     body: `<p>An SPV (Special Purpose Vehicle) is a separate legal entity, typically a limited company, created solely to hold specific assets or undertake a particular project, isolating financial risk from the parent company or individual.</p>
 
-<p>For UK agency founders, an SPV is most commonly used when selling your agency. Instead of selling the shares of your trading company directly, you sell the assets of the agency into a newly formed SPV, which a buyer then purchases. This structure can offer significant tax advantages, particularly regarding Entrepreneurs' Relief (now Business Asset Disposal Relief or BADR). By using an SPV, you may qualify for BADR on the sale, which taxes gains at 14% in 2025/26 (rising to 18% from 6 April 2026), rather than the higher rates that could apply to a straightforward share sale. The SPV must be set up before the sale negotiations begin to satisfy HMRC's anti-avoidance rules.</p>
+<p>For UK agency founders, an SPV is most commonly used when selling your agency. Instead of selling the shares of your trading company directly, you sell the assets of the agency into a newly formed SPV, which a buyer then purchases. This structure can offer significant tax advantages, particularly regarding Entrepreneurs' Relief (now Business Asset Disposal Relief or BADR). By using an SPV, you may qualify for BADR on the sale, which taxes gains at 14% in 2026/27 (rising to 18% from 6 April 2026), rather than the higher rates that could apply to a straightforward share sale. The SPV must be set up before the sale negotiations begin to satisfy HMRC's anti-avoidance rules.</p>
 
 <p>Another use is for property investment. If your agency has surplus cash, you might transfer it to an SPV to buy commercial premises. This keeps the property asset separate from the trading company, protecting it from agency creditors and simplifying any future sale of the agency itself. The SPV would pay corporation tax on rental income at 19% (small profits rate) or 25% (main rate), depending on its profits.</p>
 
@@ -419,7 +419,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 <li><strong>Cost and admin:</strong> An SPV requires its own bank account, annual accounts, and Companies House filings. Expect setup costs of around £100-£300 and ongoing compliance costs of £500-£1,000 per year.</li>
 <li><strong>Funding:</strong> The SPV must be capitalised properly. HMRC may challenge it as a sham if it lacks economic substance or is underfunded.</li>
 <li><strong>VAT:</strong> If the SPV's taxable turnover exceeds £90,000 (the VAT threshold from April 2024), it must register for VAT separately from your main agency.</li>
-<li><strong>Dividend tax:</strong> If the SPV pays dividends to you, the personal dividend allowance is £500 for 2025/26, with tax rates of 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</li>
+<li><strong>Dividend tax:</strong> If the SPV pays dividends to you, the personal dividend allowance is £500 for 2026/27, with tax rates of 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate).</li>
 </ul>
 
 <p>When this matters for agency founders: An SPV is most relevant when you are planning to sell your agency, want to ring-fence property or high-risk contracts, or need to isolate a specific project from your main trading company's liabilities. Always take professional advice before setting one up, as HMRC scrutinises SPVs closely for tax avoidance.</p>`,
@@ -456,7 +456,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>Gross margin differs from net profit margin. Net profit margin deducts all operating expenses, including rent, utilities, marketing, and your own salary. Gross margin focuses purely on the efficiency of your service delivery. Improving gross margin often means raising prices, reducing project scope creep, or increasing team utilisation rates.</p>
 
-<p>For UK agencies, the corporation tax rate (19% for profits under £50,000, 25% for profits over £250,000) applies to your net profit, not your gross margin. But a strong gross margin gives you the buffer to absorb tax liabilities, pay dividends (taxed at 8.75% to 39.35% depending on your bracket), and reinvest in growth.</p>
+<p>For UK agencies, the corporation tax rate (19% for profits under £50,000, 25% for profits over £250,000) applies to your net profit, not your gross margin. But a strong gross margin gives you the buffer to absorb tax liabilities, pay dividends (taxed at 10.75% to 39.35% depending on your bracket), and reinvest in growth.</p>
 
 <p><strong>When this matters for agency founders</strong></p>
 <p>Gross margin is the single most important metric for pricing decisions, profitability analysis, and investor conversations. If you are raising prices, hiring new team members, or considering a sale of your agency, gross margin tells you whether your core service model is sustainable. Track it monthly, not annually, and benchmark against the 40-60% target range for UK agencies.</p>`,

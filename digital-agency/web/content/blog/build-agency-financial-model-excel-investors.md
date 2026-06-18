@@ -34,7 +34,7 @@ keyTakeaways:
 - Place all assumptions in a single Inputs tab so investors can stress-test variables like utilisation rate or client churn.
 - Model revenue by type (retainer vs project) and include client churn, seasonality, and delayed payments to reflect real agency operations.
 - Use 12–24 months of actual historical data from your accounting software to ensure your model is grounded in reality.
-- Include headcount by role, salary data with employer NI at 13.8% and pension contributions, and utilisation rates in your assumptions.
+- Include headcount by role, salary data with employer NI at 15% and pension contributions, and utilisation rates in your assumptions.
 ---
 <p>If you are raising investment for your agency, you need a financial model. Not a set of management accounts. Not a three-year plan scribbled on a napkin. A real, working Excel model that an investor can stress-test.</p>
 
@@ -88,7 +88,7 @@ keyTakeaways:
 
 <ul>
 <li>Headcount plan by role (creative, strategy, account management, production, support)</li>
-<li>Average salary by role, including employer NI at 13.8% and pension contributions</li>
+<li>Average salary by role, including employer NI at 15% and pension contributions</li>
 <li>Utilisation rate (billable hours divided by total available hours)</li>
 <li>Average billable rate by role</li>
 <li>Retainer growth rate and churn rate</li>
@@ -122,7 +122,7 @@ keyTakeaways:
 
 <p>Model headcount growth explicitly. Do not use a percentage of revenue. If you plan to hire two midweight creatives in month six and a senior account director in month nine, put those rows in. Investors want to see that you understand the timing of hiring and the lag between hiring and billing.</p>
 
-<p>Include employer NI and pension contributions in your salary calculations. A £45,000 salary actually costs around £52,300 once you add employer NI at 13.8% and a 3% pension contribution. Model the real cost, not the headline salary.</p>
+<p>Include employer NI and pension contributions in your salary calculations. A £45,000 salary actually costs around £53,100 once you add employer NI at 15% and a 3% pension contribution. Model the real cost, not the headline salary.</p>
 
 <h3>Tab 4: Cash Flow</h3>
 
@@ -135,7 +135,7 @@ keyTakeaways:
 <ul>
 <li><strong>VAT</strong>, if you are VAT registered, you collect 20% on invoices and pay it quarterly. Model the timing gap.</li>
 <li><strong>Corporation tax</strong>, due nine months and one day after your year end. If you are growing fast, the tax bill on year one profits lands in year two when you have already spent the cash.</li>
-<li><strong>Directors' loan account</strong>, if you have taken money from the company, model the repayment. S455 tax at 33.75% applies if loans are not repaid within nine months of year end.</li>
+<li><strong>Directors' loan account</strong>, if you have taken money from the company, model the repayment. S455 tax at 35.75% applies if loans are not repaid within nine months of year end.</li>
 <li><strong>Dividend payments</strong>, model these as a separate line. Investors want to see what you plan to take out versus reinvest.</li>
 </ul>
 

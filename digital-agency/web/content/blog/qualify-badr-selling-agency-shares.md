@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/close-up-photo-of-monitor-159888/
   source: Pexels
 h1: How to Qualify for Business Asset Disposal Relief When Selling Your Agency Shares
-summary: Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets you pay 14% Capital Gains Tax instead of 24% when you sell your agency shares (2025/26 rate, rising to 18% from April 2026). But the rules are precise. Miss one condition and you lose the relief entirely. Here is exactly what you need to meet, and the traps that catch agency founders out.
+summary: Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets you pay 18% Capital Gains Tax instead of 24% when you sell your agency shares (2025/26 rate, rising to 18% from April 2026). But the rules are precise. Miss one condition and you lose the relief entirely. Here is exactly what you need to meet, and the traps that catch agency founders out.
 schema: ''
 faqs:
 - question: Can I claim BADR if I sell my agency's assets instead of shares?
@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- BADR reduces Capital Gains Tax to 14% on the first £1m of lifetime gains from selling agency shares in 2025/26, rising to 18% from April 2026.
+- BADR reduces Capital Gains Tax to 18% on the first £1m of lifetime gains from selling agency shares in 2025/26, rising to 18% from April 2026.
 - You must be a director or employee of the agency for at least 12 months before the sale; being a shareholder only does not qualify.
 - You must hold at least 5% of the ordinary share capital and be entitled to 5% of profits, assets on winding up, and sale proceeds.
 - Selling assets rather than shares disqualifies you from BADR; always structure an agency sale as a share sale to claim the relief.
@@ -38,7 +38,7 @@ keyTakeaways:
 ---
 <p>If you own a marketing agency, digital agency, or creative agency and you are thinking about selling your shares, Business Asset Disposal Relief (BADR) is probably the single most valuable tax relief you will ever use.</p>
 
-<p>BADR reduces your Capital Gains Tax (CGT) rate from 20% to 14% on the first £1m of lifetime gains. For an agency founder selling shares worth £800,000, that is a saving of £80,000 compared to the standard rate. On a full £1 million gain, you save £100,000.</p>
+<p>BADR reduces your Capital Gains Tax (CGT) rate from 20% to 18% on the first £1m of lifetime gains. For an agency founder selling shares worth £800,000, that is a saving of £80,000 compared to the standard rate. On a full £1 million gain, you save £100,000.</p>
 
 <p>But here is the problem. HMRC does not hand this relief out easily. The conditions are specific, and agency founders regularly lose BADR because they missed one detail. A share structure change six months before sale. A period of non-compliance on payroll. A director role that was not formally documented.</p>
 

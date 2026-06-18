@@ -26,7 +26,7 @@ faqs:
 - question: Is incorporation worth it for a sole trader agency earning £60k profit?
   answer: Probably not. At £60k profit, the tax saving from incorporation is modest, roughly £1,000-£2,000 per year. But your accountancy fees go up by a similar amount. You also add administrative complexity. Most accountants recommend incorporating once your profit exceeds £80,000-£100,000, or when you need to reinvest significant profits into the business.
 - question: What hidden costs catch agency founders out after incorporation?
-  answer: 'The three biggest are: director''s loan account overdrawn by more than £10,000 (triggers 33.75% S455 tax), IR35 determinations for contractors (adds 14.3% employer costs if inside IR35), and underestimating dividend tax now that the allowance is only £500. Also, many founders forget employer NI on their salary above £9,100, which adds roughly £480 per year at the standard salary level.'
+  answer: 'The three biggest are: director''s loan account overdrawn by more than £10,000 (triggers 35.75% S455 tax), IR35 determinations for contractors (adds 15.5% employer costs if inside IR35), and underestimating dividend tax now that the allowance is only £500. Also, many founders forget employer NI on their salary above £5,000, which adds roughly £1,136 per year at the standard salary level.'
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>Incorporation is not a free upgrade. It is a structural change that shifts how you pay tax, how you report to HMRC, and how you take money out of your business. It also introduces costs you did not have as a sole trader or partnership. Some of those costs are one-off. Some are annual. Some are hidden until your first year-end.</p>
 
-<p>This is the reality check. Here is what incorporation actually costs an agency founder in 2025/26.</p>
+<p>This is the reality check. Here is what incorporation actually costs an agency founder in 2026/27.</p>
 
 <h2>The Setup Costs: What You Pay Before You Trade</h2>
 
@@ -114,7 +114,7 @@ keyTakeaways:
 
 <h3>Corporation tax</h3>
 
-<p>Your limited company pays corporation tax on its profits. For the 2025/26 tax year:</p>
+<p>Your limited company pays corporation tax on its profits. For the 2026/27 tax year:</p>
 <ul>
 <li>19% on profits up to £50,000</li>
 <li>Marginal relief between £50,000 and £250,000</li>
@@ -127,8 +127,8 @@ keyTakeaways:
 
 <p>Dividends are paid from post-tax profits. The company pays corporation tax first, then you pay dividend tax on what you receive:</p>
 <ul>
-<li>8.75% for basic rate taxpayers</li>
-<li>33.75% for higher rate taxpayers</li>
+<li>10.75% for basic rate taxpayers</li>
+<li>35.75% for higher rate taxpayers</li>
 <li>39.35% for additional rate taxpayers</li>
 </ul>
 
@@ -138,7 +138,7 @@ keyTakeaways:
 
 <h3>Employer's National Insurance</h3>
 
-<p>If you pay yourself a salary above the secondary threshold (£9,100 in 2025/26), your company pays 13.8% employer NI on the excess. Most agency founders take a salary of £12,570 (the personal allowance threshold). The employer NI on that is roughly £480 per year.</p>
+<p>If you pay yourself a salary above the secondary threshold (£5,000 in 2026/27), your company pays 15% employer NI on the excess. Most agency founders take a salary of £12,570 (the personal allowance threshold). The employer NI on that is roughly £1,136 per year.</p>
 
 <p>That is a cost you did not have as a sole trader.</p>
 
@@ -148,15 +148,15 @@ keyTakeaways:
 
 <h3>Director's loan account complications</h3>
 
-<p>If you take money from the company that is not salary, dividends, or expenses, it goes into your director's loan account. If that balance is overdrawn by more than £10,000 at any point, the company pays S455 tax at 33.75%. That tax is refundable when you repay the loan, but the cash flow impact can be brutal.</p>
+<p>If you take money from the company that is not salary, dividends, or expenses, it goes into your director's loan account. If that balance is overdrawn by more than £10,000 at any point, the company pays S455 tax at 35.75%. That tax is refundable when you repay the loan, but the cash flow impact can be brutal.</p>
 
 <p>I have seen agency founders take a "temporary" £15,000 draw to cover a personal tax bill, only to trigger a £5,062 S455 charge that they did not budget for.</p>
 
 <h3>IR35 costs for contractors</h3>
 
-<p>If your agency uses contractors, and you are a medium or large agency, you must issue Status Determination Statements (SDS) before engaging them. If HMRC determines the contractor is inside IR35, you owe employer NI and apprenticeship levy on their payments. That adds roughly 14.3% to the cost of every contractor deemed inside IR35.</p>
+<p>If your agency uses contractors, and you are a medium or large agency, you must issue Status Determination Statements (SDS) before engaging them. If HMRC determines the contractor is inside IR35, you owe employer NI and apprenticeship levy on their payments. That adds roughly 15.5% to the cost of every contractor deemed inside IR35.</p>
 
-<p>For a digital agency with five contractors at £400 per day each, an IR35 determination error could cost £14,300 per year in unexpected employer costs.</p>
+<p>For a digital agency with five contractors at £400 per day each, an IR35 determination error could cost £15,500 per year in unexpected employer costs.</p>
 
 <h3>VAT registration and administration</h3>
 
@@ -168,9 +168,9 @@ keyTakeaways:
 
 <p>Here is the practical question: at what point does the cost of incorporation justify itself?</p>
 
-<p>For a sole trader agency founder earning £40,000 profit per year, the tax saving from incorporation is modest. You save the difference between 20% income tax and 19% corporation tax plus 8.75% dividend tax on extracted profits. The saving is maybe £1,000-£2,000 per year. But your accountancy fees go up by £1,000-£2,000. You break even or lose money.</p>
+<p>For a sole trader agency founder earning £40,000 profit per year, the tax saving from incorporation is modest. You save the difference between 20% income tax and 19% corporation tax plus 10.75% dividend tax on extracted profits. The saving is maybe £1,000-£2,000 per year. But your accountancy fees go up by £1,000-£2,000. You break even or lose money.</p>
 
-<p>For an agency founder earning £100,000 profit per year, the numbers shift. As a sole trader, you pay 40% on profits above £50,270. As a limited company, you pay 19% corporation tax and 33.75% dividend tax on extracted profits. The combined rate is roughly 46% on extracted profits above the basic rate band. But you can leave profits in the company and defer extraction. That deferral alone can save thousands per year.</p>
+<p>For an agency founder earning £100,000 profit per year, the numbers shift. As a sole trader, you pay 40% on profits above £50,270. As a limited company, you pay 19% corporation tax and 35.75% dividend tax on extracted profits. The combined rate is roughly 46% on extracted profits above the basic rate band. But you can leave profits in the company and defer extraction. That deferral alone can save thousands per year.</p>
 
 <p>For an agency founder earning £250,000 profit per year, incorporation is almost certainly the right move. The corporation tax rate on retained profits is 25% (above £250k) or marginal relief (between £50k and £250k). The alternative is 45% income tax as a sole trader. The saving on retained profits alone is 20%, £50,000 per year on £250,000 profit.</p>
 
@@ -197,7 +197,7 @@ keyTakeaways:
 
 <p>Total tax and costs: £66,873.</p>
 
-<p>As a sole trader on £180,000 profit: £63,400 income tax and NI (2025/26 rates). Plus accountancy fees of £600. Total: £64,000.</p>
+<p>As a sole trader on £180,000 profit: £63,400 income tax and NI (2026/27 rates). Plus accountancy fees of £600. Total: £64,000.</p>
 
 <p>In this scenario, the founder pays roughly £2,900 more in the limited company structure. But £87,430 stays in the company, available for reinvestment, equipment, hiring, or future extraction at potentially lower rates.</p>
 

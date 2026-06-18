@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - File P11D by 6 July after the tax year ends; for 2025/26, the deadline is 6 July 2026.
-- Private medical insurance paid by your company is a benefit in kind, taxed at your marginal rate with 13.8% Class 1A NI due from the company.
+- Private medical insurance paid by your company is a benefit in kind, taxed at your marginal rate with 15% Class 1A NI due from the company.
 - Company car benefit is based on list price and CO2 emissions; electric cars attract a 2% rate for 2025/26.
 - A directors' loan over £10,000 at any point in the year creates a taxable benefit on the interest saved.
 - Annual staff entertainment is exempt up to £150 per head; exceeding that makes the full amount reportable on P11D.
@@ -49,7 +49,7 @@ keyTakeaways:
 <p>The list is longer than most directors realise. Here are the most common ones that trip up agency founders.</p>
 
 <h3>Private Medical Insurance</h3>
-<p>If your company pays for private medical insurance for you or your family, that's a benefit in kind. The full premium amount goes on the P11D. You pay income tax on it at your marginal rate. The company pays Class 1A National Insurance at 13.8% on the cash equivalent.</p>
+<p>If your company pays for private medical insurance for you or your family, that's a benefit in kind. The full premium amount goes on the P11D. You pay income tax on it at your marginal rate. The company pays Class 1A National Insurance at 15% on the cash equivalent.</p>
 
 <p>Example: your agency pays £2,400 a year for your private medical cover. You're a higher rate taxpayer. You'll owe £960 in income tax on that benefit. The company owes £331.20 in Class 1A NI.</p>
 
@@ -91,7 +91,7 @@ keyTakeaways:
 
 <p>Alongside the P11D for each director or employee, you also need to file a P11D(b). This form calculates the total Class 1A National Insurance the company owes on all the benefits provided. You need to file it by the same 6 July deadline, and pay the NI by 22 July (or 19 July if paying by post).</p>
 
-<p>The Class 1A rate is 13.8% of the cash equivalent of the benefits. So if you provide £10,000 worth of benefits to your directors, the company owes £1,380 in Class 1A NI.</p>
+<p>The Class 1A rate is 15% of the cash equivalent of the benefits. So if you provide £10,000 worth of benefits to your directors, the company owes £1,500 in Class 1A NI.</p>
 
 <h2>How to Report Benefits: P11D or Payroll?</h2>
 

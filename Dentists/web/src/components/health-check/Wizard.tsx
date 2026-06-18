@@ -23,6 +23,7 @@ import type {
   UdaBand,
 } from "@/lib/health-check/types";
 import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
@@ -46,7 +47,7 @@ type Answers = {
   consent: boolean;
 };
 
-const CONSENT_TEXT = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our Privacy Policy.`;
+const CONSENT_TEXT = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
 const INITIAL: Answers = {
   name: "",

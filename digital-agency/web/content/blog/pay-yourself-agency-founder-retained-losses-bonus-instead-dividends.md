@@ -22,9 +22,9 @@ faqs:
 - question: Can I pay myself a dividend if my agency has retained losses?
   answer: No. Under the Companies Act 2006, dividends can only be paid from distributable profits. If your retained earnings figure on the balance sheet is negative, you have no distributable reserves. Paying a dividend in this situation is unlawful and can result in personal liability for the directors. You must use a bonus instead.
 - question: How is a bonus taxed compared to a dividend?
-  answer: A bonus is subject to income tax (20%, 40%, or 45%) and employee National Insurance (8% or 2%), plus employer NI at 13.8%. The company deducts the bonus from its taxable profit, saving corporation tax. A dividend is taxed at 8.75%, 33.75%, or 39.35% with no NI, but the company pays corporation tax on the profits first. The bonus is usually more expensive personally but cheaper for the company overall.
+  answer: A bonus is subject to income tax (20%, 40%, or 45%) and employee National Insurance (8% or 2%), plus employer NI at 15%. The company deducts the bonus from its taxable profit, saving corporation tax. A dividend is taxed at 10.75%, 35.75%, or 39.35% with no NI, but the company pays corporation tax on the profits first. The bonus is usually more expensive personally but cheaper for the company overall.
 - question: What is the most tax-efficient way to pay myself agency founder when retained losses exist?
-  answer: The most efficient approach is usually to take a bonus that keeps your total income within the basic rate band (£50,270 for 2025/26), then switch to dividends once the retained losses are cleared in a future year. If you need more than that, consider timing the bonus just before your year-end to maximise the corporation tax saving. Your accountant can model the exact figures for your situation.
+  answer: The most efficient approach is usually to take a bonus that keeps your total income within the basic rate band (£50,270 for 2026/27), then switch to dividends once the retained losses are cleared in a future year. If you need more than that, consider timing the bonus just before your year-end to maximise the corporation tax saving. Your accountant can model the exact figures for your situation.
 - question: Do I need to report a bonus differently from salary in my payroll?
   answer: No. Bonuses are processed through your regular payroll software (Xero, QuickBooks, FreeAgent) as part of your normal Full Payment Submission to HMRC. The software calculates the income tax and NI automatically. You do need to document the bonus decision in a board minute for your company records, but the reporting process is the same as for your regular salary.
 authorSlug: james-whitfield
@@ -32,13 +32,13 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - If your agency has negative retained earnings, paying dividends is illegal under the Companies Act 2006 and can trigger personal liability.
 - A bonus is the practical alternative when retained losses prevent dividend payments, as it reduces the company's taxable profit.
-- Paying a £60,000 bonus can save around £13,800 in corporation tax at the 25% rate, but incurs income tax, employee NI, and 13.8% employer NI.
-- For 2025/26, the personal tax cost of a bonus includes income tax at your marginal rate and employee NI above the £12,570 threshold.
+- Paying a £60,000 bonus can save around £13,800 in corporation tax at the 25% rate, but incurs income tax, employee NI, and 15% employer NI.
+- For 2026/27, the personal tax cost of a bonus includes income tax at your marginal rate and employee NI above the £12,570 threshold.
 - Unlike dividends, bonuses are not restricted by retained earnings and are deducted from trading profits before corporation tax is calculated.
 ---
 <h2>The Scenario Nobody Talks About</h2>
 
-<p>Most advice on paying yourself as an agency founder assumes your company has retained profits. The standard model is clear: take a salary up to the NI threshold (£12,570 for 2025/26) and draw the rest as dividends to save on National Insurance.</p>
+<p>Most advice on paying yourself as an agency founder assumes your company has retained profits. The standard model is clear: take a salary up to the NI threshold (£12,570 for 2026/27) and draw the rest as dividends to save on National Insurance.</p>
 
 <p>That works perfectly when your profit and loss account shows a positive retained earnings balance. But what happens when it doesn't?</p>
 
@@ -78,15 +78,15 @@ keyTakeaways:
 <li>If you could pay a dividend instead, the company would pay corporation tax on the full £120,000, and you would pay dividend tax on the £60,000 personally.</li>
 </ul>
 
-<p>The bonus saves corporation tax at the company level. The cost is that you pay income tax and employee NI on the bonus personally, and the company pays employer NI of 13.8% on top.</p>
+<p>The bonus saves corporation tax at the company level. The cost is that you pay income tax and employee NI on the bonus personally, and the company pays employer NI of 15% on top.</p>
 
 <h3>The Personal Tax Cost</h3>
 
-<p>Let us run the numbers on that same £60,000 bonus for a higher-rate taxpayer in 2025/26.</p>
+<p>Let us run the numbers on that same £60,000 bonus for a higher-rate taxpayer in 2026/27.</p>
 
 <ul>
 <li>Gross bonus: £60,000</li>
-<li>Employer NI at 13.8%: £8,280 (this is an additional cost to the company, not deducted from your bonus)</li>
+<li>Employer NI at 15%: £9,000 (this is an additional cost to the company, not deducted from your bonus)</li>
 <li>Your income tax at 40%: £24,000</li>
 <li>Your employee NI at 2% (above the upper earnings limit): £1,200</li>
 <li>Net cash in your pocket: £34,800</li>
@@ -95,11 +95,11 @@ keyTakeaways:
 <p>Compare that to a dividend of £60,000 if retained earnings were available:</p>
 
 <ul>
-<li>Dividend tax at 33.75% (higher rate): £20,250</li>
-<li>Net cash in your pocket: £39,750</li>
+<li>Dividend tax at 35.75% (higher rate): £21,450</li>
+<li>Net cash in your pocket: £38,550</li>
 </ul>
 
-<p>The dividend leaves you with £4,950 more personally. But that comparison only works if dividends are legally available. When they are not, the bonus is your only option, and the corporation tax saving partially offsets the personal tax cost.</p>
+<p>The dividend leaves you with £3,750 more personally. But that comparison only works if dividends are legally available. When they are not, the bonus is your only option, and the corporation tax saving partially offsets the personal tax cost.</p>
 
 <h2>Structuring the Bonus to Minimise the Overall Bill</h2>
 
@@ -128,7 +128,7 @@ keyTakeaways:
 
 <h3>Watch the Directors' Loan Account</h3>
 
-<p>If you take money from the company without declaring it as salary or a dividend, it goes into a directors' loan account (DLA). If the DLA is overdrawn (you owe the company money) and is not repaid within nine months of the year-end, the company pays a Section 455 tax charge at 33.75%. That is a penalty you want to avoid.</p>
+<p>If you take money from the company without declaring it as salary or a dividend, it goes into a directors' loan account (DLA). If the DLA is overdrawn (you owe the company money) and is not repaid within nine months of the year-end, the company pays a Section 455 tax charge at 35.75%. That is a penalty you want to avoid.</p>
 
 <p>If you are in the retained-losses situation and need cash quickly, process it as a bonus through payroll rather than taking a director's loan. The payroll route is cleaner and avoids the S455 headache.</p>
 
@@ -166,7 +166,7 @@ keyTakeaways:
 
 <p>There is also the question of pension contributions. Bonuses can be sacrificed into a pension via salary sacrifice, avoiding both income tax and NI. You cannot do that with dividends. If you are building your pension, a bonus routed into a SIPP is highly tax-efficient.</p>
 
-<p>And if you are planning to sell the agency and claim Business Asset Disposal Relief (BADR) at 14% capital gains tax, keeping retained profits in the company rather than distributing them as dividends can increase the value of your shares. That is a longer-term play, but worth considering.</p>
+<p>And if you are planning to sell the agency and claim Business Asset Disposal Relief (BADR) at 18% capital gains tax, keeping retained profits in the company rather than distributing them as dividends can increase the value of your shares. That is a longer-term play, but worth considering.</p>
 
 <h2>Practical Steps: What to Do This Week</h2>
 

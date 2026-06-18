@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR Agency Founders: Qualify Before CGT Rates Rise in 2025'
-metaDescription: Capital Gains Tax rates changed in 2025. Here's exactly how BADR agency founders can still qualify for 14% tax on their exit. Conditions, deadlines
+metaDescription: Capital Gains Tax rates changed in 2025. Here's exactly how BADR agency founders can still qualify for 18% tax on their exit. Conditions, deadlines
 altText: Agency founder reviewing share sale documents with ICAEW accountant in a London office meeting room
 image: /blog/qualify-for-badr-agency-shares-2025-cgt-changes.jpg
 imageCredit:
@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/building-office-industry-writing-12178031/
   source: Pexels
 h1: How to Qualify for BADR When Selling Your Agency Shares After the 2025 CGT Rate Changes
-summary: The 2025 CGT rate changes mean higher tax on most asset sales, but BADR still gives agency founders a 14% rate on the first £1m of gains. This article covers the exact qualifying conditions, the impact of the new rates, and the planning steps you need to take before you sell.
+summary: The 2025 CGT rate changes mean higher tax on most asset sales, but BADR still gives agency founders a 18% rate on the first £1m of gains. This article covers the exact qualifying conditions, the impact of the new rates, and the planning steps you need to take before you sell.
 schema: ''
 faqs:
 - question: What is the BADR lifetime limit for agency founders in 2025?
@@ -30,13 +30,13 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- BADR reduces CGT to 14% on the first £1m of lifetime gains, saving £80,000 per million compared to the 24% main rate for higher rate taxpayers.
+- BADR reduces CGT to 18% on the first £1m of lifetime gains, saving £80,000 per million compared to the 24% main rate for higher rate taxpayers.
 - To qualify for BADR, you must be a director or employee of the agency at the time of disposal, not a silent shareholder or non-executive.
 - You must hold at least 5% of the ordinary share capital, with at least 5% of voting rights and distributable profits, to meet the BADR threshold.
 - The two-year qualifying period starts when you meet all conditions, not when you acquired the shares, so plan your role and shareholding well before sale.
 - If you have already used part of your £1m BADR lifetime limit, track the remaining balance from previous tax returns to calculate your relief.
 ---
-<p>If you own shares in your agency and you are thinking about selling up, the 2025 Capital Gains Tax rate changes have made BADR more valuable than ever. The main rate of CGT on business asset disposals rose from 10% to 18% for most assets in the 2025 Budget. But Business Asset Disposal Relief (BADR) still gives you a 14% rate on the first £1m of lifetime gains. That is a saving of £80,000 per million compared to the new main rate.</p>
+<p>If you own shares in your agency and you are thinking about selling up, the 2025 Capital Gains Tax rate changes have made BADR more valuable than ever. The main rate of CGT on business asset disposals rose from 10% to 18% for most assets in the 2025 Budget. But Business Asset Disposal Relief (BADR) still gives you a 18% rate on the first £1m of lifetime gains. That is a saving of £80,000 per million compared to the new main rate.</p>
 
 <p>For BADR agency founders, the difference between qualifying and missing out is the difference between keeping £900,000 and keeping £820,000 on a million-pound exit. The rules have not changed. But the penalty for getting them wrong just got a lot bigger.</p>
 
@@ -44,11 +44,11 @@ keyTakeaways:
 
 <h2>What BADR Actually Gives You (and What Changed in 2025)</h2>
 
-<p>BADR is the relief that reduces your Capital Gains Tax rate to 14% on qualifying disposals. Before April 2025, the main rate for most business asset disposals was also 10% for basic rate taxpayers and 20% for higher rate taxpayers. The difference was relatively small. That is no longer the case.</p>
+<p>BADR is the relief that reduces your Capital Gains Tax rate to 18% on qualifying disposals. Before April 2025, the main rate for most business asset disposals was also 10% for basic rate taxpayers and 20% for higher rate taxpayers. The difference was relatively small. That is no longer the case.</p>
 
 <p>From the 2025 tax year:</p>
 <ul>
-<li><strong>BADR rate:</strong> 14% on the first £1m of qualifying gains (lifetime limit)</li>
+<li><strong>BADR rate:</strong> 18% on the first £1m of qualifying gains (lifetime limit)</li>
 <li><strong>Main CGT rate for business assets:</strong> 18% (basic rate) and 24% (higher rate)</li>
 </ul>
 

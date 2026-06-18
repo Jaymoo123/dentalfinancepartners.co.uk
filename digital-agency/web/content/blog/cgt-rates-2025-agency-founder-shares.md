@@ -20,7 +20,7 @@ summary: The 2025 Budget increased Capital Gains Tax on share disposals to 18% (
 schema: ''
 faqs:
 - question: Has the Budget changed the CGT rate for Business Asset Disposal Relief?
-  answer: No. BADR is 14% from 6 April 2025 (was 10% before then) on the first £1 million of qualifying lifetime gains. The Budget increased the main CGT rates on share disposals from 10%/20% to 18%/24%. BADR is unchanged.
+  answer: No. The Budget did not change BADR. BADR is 18% from 6 April 2026 (it was 14% in 2025/26, and 10% before April 2025) on the first £1 million of qualifying lifetime gains. The Budget increased the main CGT rates on share disposals from 10%/20% to 18%/24%.
 - question: Can I still use BADR if I sell shares in my agency after the Budget?
   answer: 'Yes, as long as you meet the conditions: at least 5% shareholding, officer or employee of the company, and the shares held for at least 2 years before the disposal. The company must also be a trading company throughout that period.'
 - question: What if I have already used my £1 million BADR allowance?
@@ -31,14 +31,14 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - From 30 October 2024, the lower CGT rate on share disposals rose from 10% to 18% and the higher rate from 20% to 24%.
-- Business Asset Disposal Relief (BADR) is 14% from 6 April 2025, rising to 18% on 6 April 2026, with the £1 million lifetime limit unchanged.
+- Business Asset Disposal Relief (BADR) rose to 18% from 6 April 2026 (it was 14% in 2025/26), with the £1 million lifetime limit unchanged.
 - Most agency founders qualify for BADR if they hold at least 5% shares and voting rights and have been an officer or employee for two years before sale.
 - Once you use your £1 million BADR allowance, all future gains on share disposals are taxed at 18% or 24%.
-- For a £1.5 million agency sale, the new rates increase CGT by roughly £20,000 compared to pre-October 2024 rates.
+- For a £1.5 million agency sale, the current rates increase CGT by roughly £100,000 compared to pre-October 2024 rates.
 ---
 <p>The 2025 Budget changed Capital Gains Tax rates for share disposals. If you own an agency and have been thinking about selling shares, whether a full exit, a partial sale to a new partner, or restructuring before retirement, the numbers you were working to have shifted.</p>
 
-<p>From 30 October 2024, the lower rate of CGT on share disposals rose from 10% to 18%. The higher rate rose from 20% to 24%. Business Asset Disposal Relief (formerly Entrepreneurs' Relief) increased from 10% to 14% on 6 April 2025, and is scheduled to rise again to 18% on 6 April 2026. The £1 million lifetime limit is unchanged.</p>
+<p>From 30 October 2024, the lower rate of CGT on share disposals rose from 10% to 18%. The higher rate rose from 20% to 24%. Business Asset Disposal Relief (formerly Entrepreneurs' Relief) increased from 10% to 14% on 6 April 2025, and rose again to 18% from 6 April 2026. The £1 million lifetime limit is unchanged.</p>
 
 <p>This article explains exactly what changed, how the new <strong>CGT rates 2025 agency founder shares</strong> calculations work, and what you should do if you are planning an exit.</p>
 
@@ -50,7 +50,7 @@ keyTakeaways:
 <tr><th>Scenario</th><th>Before 30 Oct 2024</th><th>From 30 Oct 2024</th></tr>
 <tr><td>Basic rate taxpayer (gains within basic rate band)</td><td>10%</td><td>18%</td></tr>
 <tr><td>Higher rate taxpayer</td><td>20%</td><td>24%</td></tr>
-<tr><td>BADR qualifying gains (up to £1m lifetime)</td><td>10%</td><td>14% (rising to 18% on 6 April 2026)</td></tr>
+<tr><td>BADR qualifying gains (up to £1m lifetime)</td><td>10%</td><td>18% from 6 April 2026 (14% in 2025/26)</td></tr>
 </table>
 
 <p>The basic rate band for CGT purposes still follows your income tax bands. If your total taxable income plus gains keeps you within the £50,270 basic rate threshold, the first slice of your gain is taxed at 18% instead of 10%. Anything above that is at 24% instead of 20%.</p>
@@ -59,7 +59,7 @@ keyTakeaways:
 
 <h2>Business Asset Disposal Relief: Still the Best Deal in Town</h2>
 
-<p>BADR is 14% from 6 April 2025 (was 10% before then) on the first £1 million of qualifying lifetime gains. That has not changed. For most agency founders, this is still the most important relief to plan around.</p>
+<p>BADR is 18% from 6 April 2026 (it was 14% in 2025/26, and 10% before April 2025) on the first £1 million of qualifying lifetime gains. For most agency founders, this is still the most important relief to plan around.</p>
 
 <p>To qualify for BADR on a share sale, you must meet all of the following conditions:</p>
 
@@ -82,16 +82,16 @@ keyTakeaways:
 
 <p><strong>Under the old rates (pre-October 2024):</strong></p>
 <ul>
-<li>First £1m at 14% (BADR): £100,000</li>
+<li>First £1m at 10% (BADR): £100,000</li>
 <li>Remaining £499,900 at 20%: £99,980</li>
 <li>Total CGT: £199,980</li>
 </ul>
 
 <p><strong>Under the new rates:</strong></p>
 <ul>
-<li>First £1m at 14% (BADR): £100,000</li>
+<li>First £1m at 18% (BADR): £180,000</li>
 <li>Remaining £499,900 at 24%: £119,976</li>
-<li>Total CGT: £219,976</li>
+<li>Total CGT: £299,976</li>
 </ul>
 
 <p>That is an extra £19,996 in tax. Painful, but not catastrophic. The key point: BADR still saved Sarah £70,000 compared to paying 24% on the whole gain.</p>
@@ -157,7 +157,7 @@ keyTakeaways:
 
 <ol>
 <li><strong>Check your BADR position.</strong> How much of your £1 million lifetime allowance is unused? If you have never claimed BADR or Entrepreneurs' Relief, you have the full £1 million. If you have, dig out the records.</li>
-<li><strong>Run the numbers at both rates.</strong> Model your exit at 14% (BADR), 18%, and 24%. Know what you will actually pay before you negotiate the sale price.</li>
+<li><strong>Run the numbers at both rates.</strong> Model your exit at 18% (BADR), 18% (basic rate), and 24% (higher rate). Know what you will actually pay before you negotiate the sale price.</li>
 <li><strong>Review your shareholding structure.</strong> Do you hold shares directly, or through a holding company? If directly, is there time to restructure before the sale? If through a holding company, does SSE apply?</li>
 <li><strong>Consider the timing.</strong> If you are close to the 2-year BADR holding period, wait. If you have already held for 2 years, the timing of the sale within a tax year can affect when you pay the tax (by 31 January following the tax year of disposal).</li>
 <li><strong>Speak to your accountant.</strong> Not a generic conversation. A specific, numbers-on-paper meeting about your exit plan. <a href="/contact">Contact us</a> if you want to run through your situation.</li>
@@ -165,7 +165,7 @@ keyTakeaways:
 
 <h2>The Bottom Line</h2>
 
-<p>The 2025 Budget increased CGT rates on share disposals from 10%/20% to 18%/24%. For most agency founders, the practical effect is a 4% increase on gains above the £1 million BADR threshold. BADR is 14% from 6 April 2025, unchanged.</p>
+<p>The 2025 Budget increased CGT rates on share disposals from 10%/20% to 18%/24%. For most agency founders, the practical effect is a 4% increase on gains above the £1 million BADR threshold. BADR is 18% from 6 April 2026 (14% in 2025/26).</p>
 
 <p>This is not a reason to panic or rush an exit. But it is a reason to plan. If you have been thinking about selling shares, the numbers have changed. Run them again. And if you have already used your BADR allowance, the new 24% rate makes alternative structures, holding companies, loan notes, earn-outs, significantly more attractive.</p>
 

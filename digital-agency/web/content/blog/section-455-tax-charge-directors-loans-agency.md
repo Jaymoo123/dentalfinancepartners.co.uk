@@ -16,11 +16,11 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/close-up-photo-of-a-white-paper-using-vintage-typewriter-4584838/
   source: Pexels
 h1: What Is the Section 455 Tax Charge on Director's Loans and How Do You Avoid It?
-summary: Section 455 of the Corporation Tax Act 2010 imposes a 33.75% tax charge on loans from your agency to you that aren't repaid within 9 months of the year end. This guide explains exactly how it works, when it applies, and the practical steps to avoid triggering it. We cover repayment deadlines, formal loan agreements, dividend alternatives, and what happens if HMRC comes calling.
+summary: Section 455 of the Corporation Tax Act 2010 imposes a 35.75% tax charge on loans from your agency to you that aren't repaid within 9 months of the year end. This guide explains exactly how it works, when it applies, and the practical steps to avoid triggering it. We cover repayment deadlines, formal loan agreements, dividend alternatives, and what happens if HMRC comes calling.
 schema: ''
 faqs:
-- question: What is the Section 455 tax charge rate for 2025/26?
-  answer: The Section 455 tax charge rate for 2025/26 is 33.75% of the outstanding loan amount. This matches the higher rate dividend tax band. The charge applies if a director's loan is not repaid within 9 months of the company's year end.
+- question: What is the Section 455 tax charge rate for 2026/27?
+  answer: The Section 455 tax charge rate for 2026/27 is 35.75% of the outstanding loan amount. This matches the higher rate dividend tax band. The charge applies if a director's loan is not repaid within 9 months of the company's year end.
 - question: Can a director's loan be written off instead of repaid?
   answer: Yes, but writing off a director's loan has tax consequences. The written-off amount is treated as a distribution (dividend) for tax purposes, meaning you pay income tax on it at dividend rates. The company can also claim a deduction for the write-off in certain circumstances, but this is complex and usually not beneficial. Speak to your accountant before writing off any loan.
 - question: How do I report a Section 455 charge on my CT600?
@@ -28,7 +28,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Section 455 imposes a 33.75% tax charge on director's loans not repaid within 9 months of the company's year end.
+- Section 455 imposes a 35.75% tax charge on director's loans not repaid within 9 months of the company's year end.
 - The charge is paid by the company, not the director, and is due with the corporation tax payment.
 - A director's loan account records all money taken from the company that isn't salary, dividend, or expense reimbursement.
 - If you repay the loan later, the company can reclaim the Section 455 charge, but the cash is tied up until then.
@@ -36,7 +36,7 @@ keyTakeaways:
 ---
 <p>You've built a successful agency. Turnover is climbing, the team is growing, and you've got cash in the company account. It's tempting to dip into that money for personal use. A new kitchen. A holiday. A deposit on a flat. You take it as a director's loan, planning to sort it out later.</p>
 
-<p>That "later" can cost you 33.75% of the loan amount. Upfront. In cash. Non-refundable in most practical senses.</p>
+<p>That "later" can cost you 35.75% of the loan amount. Upfront. In cash. Non-refundable in most practical senses.</p>
 
 <p>That's the Section 455 tax charge on director's loans. And it catches more agency founders off guard than almost any other compliance trap.</p>
 
@@ -52,17 +52,17 @@ keyTakeaways:
 
 <h2>What Is the Section 455 Tax Charge?</h2>
 
-<p>Section 455 of the Corporation Tax Act 2010 says that if a company makes a loan to a director (or to someone connected with a director, like a spouse or child), and that loan isn't repaid within 9 months of the company's year end, the company must pay a tax charge equal to 33.75% of the outstanding amount.</p>
+<p>Section 455 of the Corporation Tax Act 2010 says that if a company makes a loan to a director (or to someone connected with a director, like a spouse or child), and that loan isn't repaid within 9 months of the company's year end, the company must pay a tax charge equal to 35.75% of the outstanding amount.</p>
 
-<p>For the 2025/26 tax year, that rate matches the higher rate dividend tax band. It's designed to stop directors from extracting profits as tax-free loans instead of paying tax on dividends or salary.</p>
+<p>For the 2026/27 tax year, that rate matches the higher rate dividend tax band. It's designed to stop directors from extracting profits as tax-free loans instead of paying tax on dividends or salary.</p>
 
-<p><strong>Key point:</strong> The charge is on the company, not on you personally. But the company is writing a cheque to HMRC for 33.75% of the loan amount. That's cash out of your agency's account. Cash you could have used for growth, hiring, or equipment.</p>
+<p><strong>Key point:</strong> The charge is on the company, not on you personally. But the company is writing a cheque to HMRC for 35.75% of the loan amount. That's cash out of your agency's account. Cash you could have used for growth, hiring, or equipment.</p>
 
 <h3>A Real Example</h3>
 
-<p>Let's say your digital agency has a 31 March year end. On 1 January 2025, you take a director's loan of £40,000 to put towards a house deposit. You haven't repaid it by 31 December 2025 (9 months after the year end).</p>
+<p>Let's say your digital agency has a 31 March year end. On 1 January 2027, you take a director's loan of £40,000 to put towards a house deposit. You haven't repaid it by 31 December 2027 (9 months after the year end).</p>
 
-<p>Your agency must pay HMRC £13,500 (33.75% of £40,000) as a Section 455 charge. That's due with your corporation tax payment, normally 9 months and 1 day after the year end. So by 1 January 2026, HMRC expects that £13,500.</p>
+<p>Your agency must pay HMRC £14,300 (35.75% of £40,000) as a Section 455 charge. That's due with your corporation tax payment, normally 9 months and 1 day after the year end. So by 1 January 2028, HMRC expects that £14,300.</p>
 
 <p>If you repay the loan later, the company can reclaim the charge. But the cash is gone in the meantime. And reclaiming isn't automatic, you have to submit a claim.</p>
 
@@ -102,7 +102,7 @@ keyTakeaways:
 
 <h3>2. Take Dividends Instead of Loans</h3>
 
-<p>If you have retained profits in the company, declare a dividend rather than taking a loan. Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate) depending on your total income. But you get the £500 dividend allowance first.</p>
+<p>If you have retained profits in the company, declare a dividend rather than taking a loan. Dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) depending on your total income. But you get the £500 dividend allowance first.</p>
 
 <p>For most agency founders, a combination of salary (£12,570) and dividends is the most tax-efficient way to extract profits. Taking a loan instead of a dividend just creates a tax problem later.</p>
 
@@ -115,7 +115,7 @@ keyTakeaways:
 <ul>
 <li>The loan amount</li>
 <li>A repayment schedule</li>
-<li>Interest at HMRC's official rate (currently 2.25% for 2025/26)</li>
+<li>Interest at HMRC's official rate (currently 2.25% for 2026/27)</li>
 <li>A clear repayment date within 9 months of the year end</li>
 </ul>
 
@@ -146,13 +146,13 @@ keyTakeaways:
 
 <h2>What Happens If You Don't Repay?</h2>
 
-<p>If the loan remains outstanding beyond the 9-month window, the company must pay the Section 455 charge. That's 33.75% of the loan amount, due with the corporation tax payment.</p>
+<p>If the loan remains outstanding beyond the 9-month window, the company must pay the Section 455 charge. That's 35.75% of the loan amount, due with the corporation tax payment.</p>
 
 <p>The charge is shown on the CT600 corporation tax return. Your accountant will include it if they know about the loan. If they don't know (because you haven't told them), you're looking at a potential penalty for incorrect returns.</p>
 
 <p>If the loan is later repaid, the company can reclaim the charge. But reclaiming requires a formal claim to HMRC, and the repayment is treated as a credit against the company's corporation tax liability. It's not a cash refund in most cases, it reduces the next tax bill.</p>
 
-<p><strong>Practical reality:</strong> Most agency founders who trigger a Section 455 charge don't repay the loan quickly. The cash is gone. The company pays 33.75% to HMRC. The loan sits on the books. And the charge becomes a permanent cost of extracting the money.</p>
+<p><strong>Practical reality:</strong> Most agency founders who trigger a Section 455 charge don't repay the loan quickly. The cash is gone. The company pays 35.75% to HMRC. The loan sits on the books. And the charge becomes a permanent cost of extracting the money.</p>
 
 <h2>What About Loans to Other Directors or Shareholders?</h2>
 
@@ -198,7 +198,7 @@ keyTakeaways:
 
 <p>If you sell your agency shares and have an outstanding director's loan, the loan is treated as a distribution of profits. That means it's taxed as dividend income, not as capital gains. And it can affect your BADR claim.</p>
 
-<p>If you're planning to sell your agency, clear your DLA before completion. Leaving it outstanding can create a tax bill at dividend rates (up to 39.35%) instead of the 14% BADR rate. That's a significant difference on a six-figure loan.</p>
+<p>If you're planning to sell your agency, clear your DLA before completion. Leaving it outstanding can create a tax bill at dividend rates (up to 39.35%) instead of the 18% BADR rate. That's a significant difference on a six-figure loan.</p>
 
 <p>We cover this in more detail in our guide on <a href="/blog/growth-and-exit">agency exit planning</a>.</p>
 

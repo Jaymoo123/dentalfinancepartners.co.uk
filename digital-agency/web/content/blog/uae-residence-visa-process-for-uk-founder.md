@@ -153,7 +153,7 @@ keyTakeaways:
 
 <p><strong>2. Choosing the wrong free zone.</strong> Some free zones restrict the number of dependents you can sponsor. Others require physical office space that costs more than you need. Research which free zone suits your agency type. For example, <a href="/agencies/digital-agencies">digital agencies</a> often do well in DMCC or DSO. <a href="/agencies/creative-agencies">Creative agencies</a> sometimes prefer Meydan. Ask your consultant which free zone matches your specific business activity.</p>
 
-<p><strong>3. Forgetting about the 9-month rule for directors' loan accounts.</strong> If you have an outstanding directors' loan account in your UK company when you move, and it is not repaid within 9 months of your UK year end, your UK company faces a tax charge of 33.75%. This catches many founders who move assets or take loans before relocating. Plan this with your UK accountant before you leave.</p>
+<p><strong>3. Forgetting about the 9-month rule for directors' loan accounts.</strong> If you have an outstanding directors' loan account in your UK company when you move, and it is not repaid within 9 months of your UK year end, your UK company faces a tax charge of 35.75%. This catches many founders who move assets or take loans before relocating. Plan this with your UK accountant before you leave.</p>
 
 <p>If your agency is a <a href="/agencies/marketing-agencies">marketing agency</a> or <a href="/agencies/advertising-agencies">advertising agency</a> with a retainer-heavy revenue model, your cash flow timing matters here. Do not rush the move if your UK company has unresolved director loans.</p>
 

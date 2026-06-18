@@ -17,7 +17,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
           <div className="min-w-0">
             <div className="font-mono text-xs uppercase tracking-widest text-cyan-700">
-              {siteConfig.legalName}
+              {siteConfig.company.legalName}
             </div>
             <div className="mt-3 text-xl font-semibold tracking-tight text-neutral-900">
               {siteConfig.name}
@@ -26,12 +26,12 @@ export function SiteFooter() {
               {siteConfig.description}
             </p>
             <p className="mt-6 text-sm text-neutral-500">
-              <a
-                href={`mailto:${siteConfig.contact.email}`}
+              <Link
+                href="/contact"
                 className={`text-cyan-800 hover:text-cyan-900 underline underline-offset-2 ${focusRing}`}
               >
-                {siteConfig.contact.email}
-              </a>
+                Contact us
+              </Link>
             </p>
           </div>
 
@@ -53,13 +53,18 @@ export function SiteFooter() {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col gap-2 border-t border-neutral-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-neutral-500">
-            &copy; {year} {siteConfig.legalName}. Registered in England and Wales.
+        <div className="mt-16 border-t border-neutral-200 pt-6 space-y-3">
+          <p className="max-w-3xl text-xs leading-relaxed text-neutral-500">
+            {siteConfig.company.legalDisclosure}
           </p>
-          <p className="text-xs text-neutral-500">
-            Specialist contractor accountants. Editorial content only. Book a call for advice specific to your situation.
-          </p>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs text-neutral-500">
+              &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
+            </p>
+            <p className="text-xs text-neutral-500">
+              Specialist contractor accountants. Editorial content only. Book a call for advice specific to your situation.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

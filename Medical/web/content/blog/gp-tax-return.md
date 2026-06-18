@@ -1,7 +1,7 @@
----
+﻿---
 title: "GP Tax Return: Complete Guide for UK General Practitioners"
 slug: "gp-tax-return"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-tax-return"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-tax-return"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

@@ -7,9 +7,51 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";
 
 type Props = { params: Promise<{ slug: string }> };
+
+/**
+ * City-level AccountingService JSON-LD. Built inline (rather than via the shared
+ * legacy buildLocalBusinessJsonLd shim) so we can omit the telephone/contactPoint:
+ * no public phone is advertised, enquiries are handled via the on-site /contact form.
+ */
+function buildCityLocalBusinessJsonLd(config: {
+  name: string;
+  legalName: string;
+  description: string;
+  url: string;
+  logo: string;
+  city: string;
+  organizationType: string;
+}): string {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": config.organizationType,
+    name: `${config.name} - ${config.city}`,
+    legalName: config.legalName,
+    description: config.description,
+    url: config.url,
+    logo: config.logo,
+    image: config.logo,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: config.city,
+      addressCountry: "GB",
+    },
+    areaServed: {
+      "@type": "City",
+      name: config.city,
+      containedInPlace: { "@type": "Country", name: "United Kingdom" },
+    },
+    priceRange: "££",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  });
+}
 
 export function generateStaticParams() {
   return siteConfig.locations.map((l) => ({ slug: l.slug }));
@@ -167,15 +209,12 @@ export default async function LocationPage({ params }: Props) {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const posts = getAllPosts().slice(0, 5);
 
-  const localBusinessSchema = buildLocalBusinessJsonLd({
+  const localBusinessSchema = buildCityLocalBusinessJsonLd({
     name: siteConfig.name,
     legalName: siteConfig.legalName,
     description: content.intro,
     url: `${siteConfig.url}/locations/${slug}`,
     logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
-    areaServed: content.areas,
     city: cityName,
     organizationType: "AccountingService",
   });

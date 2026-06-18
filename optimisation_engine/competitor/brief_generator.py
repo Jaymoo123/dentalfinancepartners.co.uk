@@ -17,7 +17,7 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from optimisation_engine.competitor._db import _esc, _sql
-from optimisation_engine.blog_generator.llm_providers import call_deepseek, LLMError
+from optimisation_engine.blog_generator.llm_providers import call_anthropic, LLMError
 
 
 # ---------------------------------------------------------------------------
@@ -238,16 +238,16 @@ def _generate_brief(report: dict, our_map: dict | None) -> str | None:
     )
 
     try:
-        result = call_deepseek(
+        result = call_anthropic(
             system_prompt=BRIEF_SYSTEM,
             user_prompt=prompt,
-            model="deepseek-chat",
+            model="claude-sonnet-4-20250514",
             max_tokens=3000,
             temperature=0.3,
         )
         return result.text.strip(), result.cost_usd
     except LLMError as exc:
-        print(f"    [brief_generator] DeepSeek error: {exc}")
+        print(f"    [brief_generator] LLM error: {exc}")
         return None, 0.0
 
 

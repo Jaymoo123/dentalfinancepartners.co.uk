@@ -1,9 +1,9 @@
-# Brief: dispensing-practice-income-accounts-tax
+﻿# Brief: dispensing-practice-income-accounts-tax
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster C (Other NHS and practice income), pick C1
 **Source file (to be created):** `Medical/web/content/blog/dispensing-practice-income-accounts-tax.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/dispensing-practice-income-accounts-tax
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/dispensing-practice-income-accounts-tax
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income; dispensing practices earn dispensing income; partner income is profit share not salary; no single national per-patient value; figures uplift annually) and §6 (VAT for medical professionals; the standard exempt-vs-standard-rated framework, here extended at primary source to the zero-rate for dispensed drugs), with cross-refs to §1 (partner taxed on profit share, not drawings), §2.C (pensioning NHS-derived profit) and §8 (drug purchases, stock, bookkeeping).
 

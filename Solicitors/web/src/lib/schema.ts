@@ -28,7 +28,8 @@ function getSiteOpts(): SiteSchemaOpts {
     tagline: siteConfig.tagline,
     publisherLogoUrl: siteConfig.publisherLogoUrl,
     email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
+    // contact.phone intentionally omitted: the business publishes no public
+    // phone number, so no schema builder should ever emit a `telephone` field.
   };
 }
 

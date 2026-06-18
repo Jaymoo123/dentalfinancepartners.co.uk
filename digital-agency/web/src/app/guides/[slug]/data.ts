@@ -11,12 +11,12 @@ export type Guide = {
 export const GUIDES: Record<string, Guide> = {
   "tax-year-end-checklist": {
     slug: "tax-year-end-checklist",
-    title: "The UK Agency Founder's Tax Year-End Checklist 2025/26",
+    title: "The UK Agency Founder's Tax Year-End Checklist 2026/27",
     teaser: "23 actions to take before 5 April 2026 to optimise your agency's tax position. Covers salary/dividend timing, pension contributions, BADR planning, dividend declarations, and R&D claim preparation.",
     category: "Year-end planning",
     body: `<p>This guide provides a complete, deadline-ordered checklist of 23 specific actions for UK agency founders to complete before the 5 April 2026 tax year-end. It covers every key decision-salary and dividend timing, pension contributions, capital purchases, director's loan repayments, and exit planning-with exact figures and HMRC form references. It is written for founders who run their own limited company agency and want to minimise their personal and corporate tax bills legally, without relying on generic advice.</p>
 
-<h2>1. Understand your 2025/26 tax position now</h2>
+<h2>1. Understand your 2026/27 tax position now</h2>
 
 <p>Before you take any action, you need a clear picture of your current and projected profits, both inside and outside the company. Without this baseline, every decision risks being suboptimal.</p>
 
@@ -24,7 +24,7 @@ export const GUIDES: Record<string, Guide> = {
 <ul>
 <li>Add up all director salary, dividends, and any other income (rental, freelance, savings interest) for the period 6 April 2025 to 5 April 2026.</li>
 <li>Subtract your personal allowance of £12,570 (if your adjusted net income is below £100,000).</li>
-<li>Remember the dividend allowance is now just £500 for 2025/26. Every pound of dividends above that is taxed at your marginal rate.</li>
+<li>Remember the dividend allowance is now just £500 for 2026/27. Every pound of dividends above that is taxed at your marginal rate.</li>
 <li>Check if you are close to the £100,000 threshold where personal allowance starts to taper away (losing £1 of allowance for every £2 of income above £100k).</li>
 </ul>
 
@@ -38,21 +38,21 @@ export const GUIDES: Record<string, Guide> = {
 <h3>1.3 Check your director's loan account (DLA)</h3>
 <ul>
 <li>Pull a trial balance or ask your bookkeeper for the DLA balance as of the last completed month.</li>
-<li>If you owe the company more than £10,000 at any point in the year, the loan is a benefit in kind-you must report it on a P11D and the company pays Class 1A NIC at 13.8%.</li>
-<li>If the loan is still outstanding 9 months after the year-end (i.e., by 1 January 2027 for a 31 March 2026 year-end), the company must pay S455 tax at 33.75% on the outstanding amount.</li>
+<li>If you owe the company more than £10,000 at any point in the year, the loan is a benefit in kind-you must report it on a P11D and the company pays Class 1A NIC at 15%.</li>
+<li>If the loan is still outstanding 9 months after the year-end (i.e., by 1 January 2027 for a 31 March 2026 year-end), the company must pay S455 tax at 35.75% on the outstanding amount.</li>
 <li>Plan to repay any overdrawn DLA before the year-end if possible, or at least before the 9-month deadline.</li>
 </ul>
 
 <h2>2. Salary and dividend timing decisions</h2>
 
-<p>Getting the mix of salary and dividends right is the single most effective way to reduce your combined tax and NI bill. The rules are different for 2025/26, so check the numbers carefully.</p>
+<p>Getting the mix of salary and dividends right is the single most effective way to reduce your combined tax and NI bill. The rules are different for 2026/27, so check the numbers carefully.</p>
 
-<h3>2.1 Set your director's salary for 2025/26</h3>
+<h3>2.1 Set your director's salary for 2026/27</h3>
 <ul>
-<li>The most tax-efficient salary for a director who is also a shareholder is usually the secondary threshold for NI (£9,100 per year for 2025/26) or the qualifying earnings threshold for the state pension (£6,240).</li>
-<li>If you pay yourself £9,100, you avoid employee NI and employer NI, but you still get a qualifying year for state pension purposes.</li>
-<li>If you pay yourself £12,570 (the personal allowance), you pay no income tax but you will incur employer NI on the amount above £9,100.</li>
-<li>For most agency founders, the £9,100 salary is optimal, with the rest taken as dividends.</li>
+<li>The most tax-efficient salary for a director who is also a shareholder is usually the secondary threshold for NI (£5,000 per year for 2026/27) or the qualifying earnings threshold for the state pension (£6,240).</li>
+<li>If you pay yourself £5,000, you avoid employee NI and employer NI, but you still get a qualifying year for state pension purposes.</li>
+<li>If you pay yourself £12,570 (the personal allowance), you pay no income tax but you will incur employer NI on the amount above £5,000.</li>
+<li>For most agency founders, the £5,000 salary is optimal, with the rest taken as dividends.</li>
 <li>Process the salary through your payroll software (Xero, FreeAgent, QuickBooks, or BrightPay) before 5 April 2026.</li>
 </ul>
 
@@ -64,7 +64,7 @@ export const GUIDES: Record<string, Guide> = {
 <li>Prepare a formal dividend voucher for each payment, showing the date, amount, and shareholder name. Keep it in your company records.</li>
 </ul>
 
-<h3>2.3 Understand the dividend tax rates for 2025/26</h3>
+<h3>2.3 Understand the dividend tax rates for 2026/27</h3>
 <table>
 <thead>
 <tr>
@@ -82,12 +82,12 @@ export const GUIDES: Record<string, Guide> = {
 <tr>
 <td>Basic rate</td>
 <td>£12,571 – £50,270</td>
-<td>8.75%</td>
+<td>10.75%</td>
 </tr>
 <tr>
 <td>Higher rate</td>
 <td>£50,271 – £125,140</td>
-<td>33.75%</td>
+<td>35.75%</td>
 </tr>
 <tr>
 <td>Additional rate</td>
@@ -100,18 +100,18 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>2.4 Consider a pre-year-end dividend to use your basic rate band</h3>
 <ul>
-<li>If your total income (salary + dividends + other) is below £50,270, you can pay dividends up to that threshold and pay only 8.75% tax on the amount above the £500 allowance.</li>
+<li>If your total income (salary + dividends + other) is below £50,270, you can pay dividends up to that threshold and pay only 10.75% tax on the amount above the £500 allowance.</li>
 <li>If you are already a higher-rate taxpayer, consider whether it is worth paying a dividend now or retaining profits in the company (which will be taxed at 19-25% corporation tax).</li>
 <li>For many founders, the optimal strategy is to take dividends up to the higher-rate threshold (£50,270) and reinvest the rest in the business or pension.</li>
 </ul>
 
 <h2>3. Pension contributions: the most powerful tax shelter</h2>
 
-<p>Pension contributions remain one of the few ways to get money out of your company tax-free while building personal wealth. The rules for 2025/26 are generous, but you must act before the year-end.</p>
+<p>Pension contributions remain one of the few ways to get money out of your company tax-free while building personal wealth. The rules for 2026/27 are generous, but you must act before the year-end.</p>
 
 <h3>3.1 The annual allowance (AA) is £60,000</h3>
 <ul>
-<li>You can contribute up to £60,000 into your pension in 2025/26 without triggering a tax charge.</li>
+<li>You can contribute up to £60,000 into your pension in 2026/27 without triggering a tax charge.</li>
 <li>This includes both your personal contributions and your company's contributions.</li>
 <li>If you have not used your full allowance from the previous three tax years, you may be able to carry forward unused amounts. Check your total pension input for 2022/23, 2023/24, and 2024/25.</li>
 </ul>
@@ -133,7 +133,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>3.4 Deadline for pension contributions</h3>
 <ul>
-<li>For a company contribution to count for the 2025/26 tax year, the payment must be made by the company before 5 April 2026.</li>
+<li>For a company contribution to count for the 2026/27 tax year, the payment must be made by the company before 5 April 2026.</li>
 <li>For a personal contribution, the payment must reach the pension provider by 5 April 2026.</li>
 <li>Start the process now: contact your pension provider, set up a direct debit or BACS payment, and ensure the money leaves your account before the deadline.</li>
 </ul>
@@ -142,7 +142,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <p>If your agency needs equipment, software, or office improvements, buying before the year-end can reduce your corporation tax bill immediately.</p>
 
-<h3>4.1 The AIA is £1 million for 2025/26</h3>
+<h3>4.1 The AIA is £1 million for 2026/27</h3>
 <ul>
 <li>The Annual Investment Allowance allows you to deduct the full cost of most plant and machinery (including computers, office furniture, servers, and software) from your taxable profits in the year of purchase.</li>
 <li>The limit is £1 million, which covers virtually all agency purchases.</li>
@@ -167,7 +167,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>4.4 Timing is critical</h3>
 <ul>
-<li>To claim AIA in the 2025/26 tax year, the expenditure must be incurred (i.e., the asset must be delivered and the invoice must be dated) on or before 5 April 2026.</li>
+<li>To claim AIA in the 2026/27 tax year, the expenditure must be incurred (i.e., the asset must be delivered and the invoice must be dated) on or before 5 April 2026.</li>
 <li>If you order now but the item arrives in May 2026, it counts for the 2026/27 year.</li>
 <li>Plan your purchases now: if you need new laptops for the team, buy them before April.</li>
 </ul>
@@ -206,7 +206,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>6.1 The S455 charge</h3>
 <ul>
-<li>If you owe your company more than £10,000 at any point in the year, the company must pay S455 tax at 33.75% on the outstanding amount if it is not repaid within 9 months of the year-end.</li>
+<li>If you owe your company more than £10,000 at any point in the year, the company must pay S455 tax at 35.75% on the outstanding amount if it is not repaid within 9 months of the year-end.</li>
 <li>For a company with a 31 March 2026 year-end, the repayment deadline is 1 January 2027.</li>
 <li>The S455 tax is repayable to the company once the loan is repaid, but it ties up cash for months or years.</li>
 </ul>
@@ -222,7 +222,7 @@ export const GUIDES: Record<string, Guide> = {
 <h3>6.3 Reporting requirements</h3>
 <ul>
 <li>If the loan exceeds £10,000 at any point, you must report it on form P11D (benefit in kind).</li>
-<li>The company pays Class 1A NIC at 13.8% on the notional interest benefit.</li>
+<li>The company pays Class 1A NIC at 15% on the notional interest benefit.</li>
 <li>If the loan is written off, the amount becomes a dividend in your hands and is taxed as such.</li>
 </ul>
 
@@ -230,7 +230,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <p>If you are considering selling your agency in the next few years, the decisions you make now can significantly affect your tax bill on exit.</p>
 
-<h3>7.1 BADR basics for 2025/26</h3>
+<h3>7.1 BADR basics for 2026/27</h3>
 <ul>
 <li>BADR (formerly Entrepreneurs' Relief) reduces the CGT rate on qualifying gains to 10% on the first £1 million of lifetime gains.</li>
 <li>The lifetime limit is £1 million (it was reduced from £10 million in 2020 and has not changed since).</li>
@@ -250,7 +250,7 @@ export const GUIDES: Record<string, Guide> = {
 <li>Review your shareholding structure. If you own less than 5%, consider whether you can increase your stake before a sale.</li>
 <li>Ensure the company's activities are predominantly trading. If you have large cash reserves, consider investing them in the business or extracting them as dividends.</li>
 <li>If you are planning to sell within 2 years, start preparing now: clean up the balance sheet, formalise contracts, and ensure all intellectual property is owned by the company.</li>
-<li>Consider using your CGT annual exemption (£3,000 for 2025/26) to sell some shares or assets tax-free this year, if it makes sense strategically.</li>
+<li>Consider using your CGT annual exemption (£3,000 for 2026/27) to sell some shares or assets tax-free this year, if it makes sense strategically.</li>
 </ul>
 
 <h2>8. Use your annual allowances before they expire</h2>
@@ -259,7 +259,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>8.1 ISA allowance: £20,000</h3>
 <ul>
-<li>You can contribute up to £20,000 into an ISA in the 2025/26 tax year.</li>
+<li>You can contribute up to £20,000 into an ISA in the 2026/27 tax year.</li>
 <li>This includes cash ISAs, stocks and shares ISAs, and innovative finance ISAs.</li>
 <li>If you have surplus cash, consider maxing out your ISA before 5 April 2026.</li>
 <li>Remember: ISA growth and withdrawals are tax-free.</li>
@@ -267,7 +267,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>8.2 CGT annual exemption: £3,000</h3>
 <ul>
-<li>You can realise capital gains of up to £3,000 in 2025/26 without paying any CGT.</li>
+<li>You can realise capital gains of up to £3,000 in 2026/27 without paying any CGT.</li>
 <li>If you have investments or assets that have increased in value, consider selling enough to use the exemption.</li>
 <li>This is particularly useful if you have shares in your agency or other companies that you plan to sell eventually.</li>
 <li>You cannot carry forward unused exemption to future years.</li>
@@ -288,7 +288,7 @@ export const GUIDES: Record<string, Guide> = {
   <li><strong>They don’t understand your revenue model.</strong> If your accountant can’t explain how subscription revenue, retainer income, or project-based fees affect your VAT scheme or profit recognition, they’re not equipped for an agency.</li>
   <li><strong>You’re paying for advice you don’t need.</strong> Generalists often push services like payroll for a single director or complex bookkeeping when you could use software like BrightPay or Xero’s payroll module.</li>
   <li><strong>They’re slow to respond during tax season.</strong> If you’re chasing for P11D submissions or CT600 deadlines, your accountant is overwhelmed.</li>
-  <li><strong>They’ve never mentioned R&D tax credits.</strong> Many agencies qualify for R&D relief under the new 2025/26 rules, but a generalist may not spot it.</li>
+  <li><strong>They’ve never mentioned R&D tax credits.</strong> Many agencies qualify for R&D relief under the new 2026/27 rules, but a generalist may not spot it.</li>
   <li><strong>They don’t use modern software.</strong> If they’re still asking for paper receipts or CSV exports from Xero, they’re not working efficiently.</li>
   <li><strong>You’re paying more than you should.</strong> A specialist agency accountant often charges less than a generalist for the same work because they’ve streamlined processes for your industry.</li>
 </ul>
@@ -322,7 +322,7 @@ export const GUIDES: Record<string, Guide> = {
     <tr>
       <td>Tax planning</td>
       <td>Basic dividend vs salary optimisation</td>
-      <td>Understands dividend allowance (£500 for 2025/26), higher rate CGT (24%), and corporation tax thresholds (19% up to £50k, 25% above £250k)</td>
+      <td>Understands dividend allowance (£500 for 2026/27), higher rate CGT (24%), and corporation tax thresholds (19% up to £50k, 25% above £250k)</td>
     </tr>
     <tr>
       <td>R&D claims</td>
@@ -362,7 +362,7 @@ export const GUIDES: Record<string, Guide> = {
   <li>What’s your policy on parallel running? Do you require a handover period?</li>
   <li>How do you charge for ad-hoc advice outside the monthly retainer?</li>
   <li>What’s your approach to corporation tax planning for agencies with profits between £50k and £250k?</li>
-  <li>Do you have experience with the new 2025/26 dividend allowance rules?</li>
+  <li>Do you have experience with the new 2026/27 dividend allowance rules?</li>
 </ol>
 
 <h3>Check their credentials</h3>
@@ -500,7 +500,7 @@ export const GUIDES: Record<string, Guide> = {
   <li><strong>Week 2:</strong> Sign with your chosen firm and initiate the professional clearance process. Gather all authorisation codes (64-8, Government Gateway, VAT, PAYE).</li>
   <li><strong>Week 3:</strong> Back up your accounting software and transfer integrations. Keep your old subscription active for one month.</li>
   <li><strong>Week 4:</strong> Run both accounts in parallel for one month. Reconcile bank statements and VAT returns. Close the old account only when everything matches.</li>
-  <li><strong>After the switch:</strong> Review your new accountant’s performance after three months. Check that they’ve filed your next VAT return on time, provided proactive tax planning (especially around the 2025/26 dividend allowance and corporation tax thresholds), and responded to your queries within 24 hours.</li>
+  <li><strong>After the switch:</strong> Review your new accountant’s performance after three months. Check that they’ve filed your next VAT return on time, provided proactive tax planning (especially around the 2026/27 dividend allowance and corporation tax thresholds), and responded to your queries within 24 hours.</li>
 </ol>
 <p>If you follow this playbook, you’ll have a clean, compliant switch that positions your agency for better financial management in the years ahead.</p>`,
   },
@@ -518,7 +518,7 @@ export const GUIDES: Record<string, Guide> = {
 <ul>
 <li><strong>Leaving the UK:</strong> You must spend fewer than 16 days in the UK per tax year to be non-resident under the automatic overseas test. If you have full-time work abroad, the threshold rises to 91 days, but you must work an average of at least 35 hours per week overseas.</li>
 <li><strong>Mid-year departure:</strong> If you leave partway through a tax year, you count days from 6 April to the date you leave, then from the date you leave to 5 April the following year. HMRC uses the “midnight rule”: you are present in the UK if you are here at midnight. Plan your flights accordingly.</li>
-<li><strong>2025/26 rates:</strong> The personal allowance remains £12,570. If you exceed 15 days in the UK after leaving, you risk being UK-resident for the whole year.</li>
+<li><strong>2026/27 rates:</strong> The personal allowance remains £12,570. If you exceed 15 days in the UK after leaving, you risk being UK-resident for the whole year.</li>
 </ul>
 
 <h3>The Ties Test: What You Must Break</h3>
@@ -566,7 +566,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>Option 3: Close the UK Company (Members’ Voluntary Liquidation)</h3>
 <ul>
-<li><strong>How it works:</strong> You put the company into a members’ voluntary liquidation (MVL). Distributions are treated as capital, not dividends, so you pay Capital Gains Tax at 24% (2025/26 rate for higher-rate taxpayers) instead of dividend tax at up to 39.35%.</li>
+<li><strong>How it works:</strong> You put the company into a members’ voluntary liquidation (MVL). Distributions are treated as capital, not dividends, so you pay Capital Gains Tax at 24% (2026/27 rate for higher-rate taxpayers) instead of dividend tax at up to 39.35%.</li>
 <li><strong>Pros:</strong> Clean break. You can extract retained profits at CGT rates rather than dividend rates. You close your UK tax obligations.</li>
 <li><strong>Cons:</strong> You lose the company structure. If you later need a UK entity, you must incorporate a new one. MVL costs £2,000–£5,000 in professional fees.</li>
 <li><strong>Best for:</strong> Founders who plan to operate solely through a UAE entity and want to crystallise gains before leaving.</li>
@@ -575,7 +575,7 @@ export const GUIDES: Record<string, Guide> = {
 <p><strong>Action:</strong> Decide by month 10 before your move. If you choose MVL, start the process early-it takes 3–6 months.</p>
 
 <h2>3. Asset Disposal Timing: CGT-Efficient Sequencing</h2>
-<p>If you plan to sell assets (shares, property, cryptocurrency) before leaving, you need to sequence disposals to minimise tax. As a UK resident, you pay CGT at 10% (basic rate) or 24% (higher rate) on gains above your annual exempt amount (£3,000 in 2025/26). As a non-resident, you only pay CGT on UK land and property-not on shares or crypto.</p>
+<p>If you plan to sell assets (shares, property, cryptocurrency) before leaving, you need to sequence disposals to minimise tax. As a UK resident, you pay CGT at 10% (basic rate) or 24% (higher rate) on gains above your annual exempt amount (£3,000 in 2026/27). As a non-resident, you only pay CGT on UK land and property-not on shares or crypto.</p>
 
 <ul>
 <li><strong>Sell UK shares before leaving:</strong> If you sell shares in your agency or other companies while UK-resident, you pay CGT. If you wait until after you become non-resident, you pay 0% (unless the shares derive value from UK land).</li>
@@ -587,7 +587,7 @@ export const GUIDES: Record<string, Guide> = {
 <p><strong>Action:</strong> List all assets you plan to dispose of in the next 18 months. Sequence disposals so that UK-resident gains are minimised and non-resident gains are on non-UK assets.</p>
 
 <h2>4. Pension Contributions: Use the £60,000 Annual Allowance</h2>
-<p>Before you leave, you can make pension contributions up to £60,000 per tax year (2025/26) and claim tax relief at your marginal rate. After you become non-resident, you can still contribute to a UK pension, but you won’t get tax relief unless you have UK-source earnings.</p>
+<p>Before you leave, you can make pension contributions up to £60,000 per tax year (2026/27) and claim tax relief at your marginal rate. After you become non-resident, you can still contribute to a UK pension, but you won’t get tax relief unless you have UK-source earnings.</p>
 
 <ul>
 <li><strong>Max out your allowance:</strong> If you have £60,000 of available annual allowance, contribute before you leave. You get 40% or 45% relief depending on your income. This is one of the most tax-efficient moves you can make.</li>
@@ -768,7 +768,7 @@ export const GUIDES: Record<string, Guide> = {
 <ul>
   <li>Register online via HMRC’s website. You’ll need your company’s UTR (Unique Taxpayer Reference), which HMRC sends by post within 10–14 days of incorporation.</li>
   <li>Once registered, you’ll receive a notice to file a Company Tax Return (CT600) within 12 months of your accounting period end.</li>
-  <li>Corporation Tax rates for 2025/26: 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief between £50,000 and £250,000.</li>
+  <li>Corporation Tax rates for 2026/27: 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief between £50,000 and £250,000.</li>
 </ul>
 
 <h3>Register for PAYE if you plan to hire</h3>
@@ -794,17 +794,17 @@ export const GUIDES: Record<string, Guide> = {
 <h2>Week 5–6: Director’s Salary and Payroll Setup</h2>
 
 <h3>Set up your director’s salary</h3>
-<p>The most tax-efficient way to pay yourself as a director is a small salary up to the Personal Allowance threshold, with the rest taken as dividends. For 2025/26, the Personal Allowance is <strong>£12,570</strong>.</p>
+<p>The most tax-efficient way to pay yourself as a director is a small salary up to the Personal Allowance threshold, with the rest taken as dividends. For 2026/27, the Personal Allowance is <strong>£12,570</strong>.</p>
 <ul>
   <li>Set your salary at £12,570 per year (or £1,047.50 per month).</li>
   <li>At this level, you pay no Income Tax (because it’s within the Personal Allowance) and no Employee National Insurance (because it’s below the Primary Threshold of £12,570).</li>
-  <li>However, you <strong>will</strong> pay Employer’s National Insurance at 13.8% on earnings above the Secondary Threshold (£9,100 for 2025/26). So on a salary of £12,570, the employer NI is roughly £480 per year.</li>
-  <li>To avoid employer NI entirely, you could set your salary at £9,100 (the Secondary Threshold), but then you lose some Personal Allowance headroom. Most agency founders prefer the £12,570 salary and accept the small NI cost.</li>
+  <li>However, you <strong>will</strong> pay Employer’s National Insurance at 15% on earnings above the Secondary Threshold (£5,000 for 2026/27). So on a salary of £12,570, the employer NI is roughly £1,136 per year.</li>
+  <li>To avoid employer NI entirely, you could set your salary at £5,000 (the Secondary Threshold), but then you lose some Personal Allowance headroom. Most agency founders prefer the £12,570 salary and accept the small NI cost.</li>
   <li>Payroll software like BrightPay or FreeAgent will calculate the exact figures for you.</li>
 </ul>
 
 <h3>Check Employment Allowance eligibility</h3>
-<p>The Employment Allowance lets eligible employers reduce their employer National Insurance bill by up to <strong>£5,000</strong> per year. For 2025/26, you can claim it if:</p>
+<p>The Employment Allowance lets eligible employers reduce their employer National Insurance bill by up to <strong>£10,500</strong> per year. For 2026/27, you can claim it if:</p>
 <ul>
   <li>Your employer NI bill was less than £100,000 in the previous tax year.</li>
   <li>You’re not a company where the director is the only employee paid above the Secondary Threshold.</li>
@@ -823,8 +823,8 @@ export const GUIDES: Record<string, Guide> = {
 
 <h2>Week 7–8: First Dividend Mechanics</h2>
 
-<h3>Understand dividend tax rates for 2025/26</h3>
-<p>Dividends are taxed at different rates depending on your total income. The dividend allowance for 2025/26 is <strong>£500</strong> (down from £1,000 in 2024/25).</p>
+<h3>Understand dividend tax rates for 2026/27</h3>
+<p>Dividends are taxed at different rates depending on your total income. The dividend allowance for 2026/27 is <strong>£500</strong> (down from £1,000 in 2024/25).</p>
 <table>
   <thead>
     <tr>
@@ -835,11 +835,11 @@ export const GUIDES: Record<string, Guide> = {
   <tbody>
     <tr>
       <td>Basic rate (up to £50,270)</td>
-      <td>8.75%</td>
+      <td>10.75%</td>
     </tr>
     <tr>
       <td>Higher rate (£50,271 to £125,140)</td>
-      <td>33.75%</td>
+      <td>35.75%</td>
     </tr>
     <tr>
       <td>Additional rate (over £125,140)</td>
@@ -847,7 +847,7 @@ export const GUIDES: Record<string, Guide> = {
     </tr>
   </tbody>
 </table>
-<p>Your salary uses up part of your Personal Allowance and basic rate band, so dividends are taxed on top. For example, if you take a £12,570 salary and then £37,700 in dividends, you pay 8.75% on the dividends above the £500 allowance.</p>
+<p>Your salary uses up part of your Personal Allowance and basic rate band, so dividends are taxed on top. For example, if you take a £12,570 salary and then £37,700 in dividends, you pay 10.75% on the dividends above the £500 allowance.</p>
 
 <h3>Hold a board meeting and write minutes</h3>
 <p>Before paying any dividend, the company’s directors must formally approve it. This is a legal requirement under the Companies Act 2006.</p>
@@ -882,7 +882,7 @@ export const GUIDES: Record<string, Guide> = {
 </ul>
 
 <h3>Check R&D credit eligibility</h3>
-<p>If your agency develops new software, tools, or processes, you may be eligible for R&D tax credits. For 2025/26, the rules are:</p>
+<p>If your agency develops new software, tools, or processes, you may be eligible for R&D tax credits. For 2026/27, the rules are:</p>
 <ul>
   <li><strong>R&D Expenditure Credit (RDEC):</strong> For large companies, but also applies to some SMEs that subcontract R&D.</li>
   <li><strong>SME R&D Relief:</strong> If your agency has fewer than 500 employees and turnover under €100M, you can claim up to 86% of qualifying costs (if you’re loss-making) or a 19% payable credit.</li>

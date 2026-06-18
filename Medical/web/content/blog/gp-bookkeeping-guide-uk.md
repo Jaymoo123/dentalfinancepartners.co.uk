@@ -1,7 +1,7 @@
----
+﻿---
 title: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
 slug: "gp-bookkeeping-guide-uk"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-bookkeeping-guide-uk"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-bookkeeping-guide-uk"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

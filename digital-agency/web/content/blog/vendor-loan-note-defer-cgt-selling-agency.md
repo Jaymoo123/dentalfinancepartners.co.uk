@@ -24,9 +24,9 @@ faqs:
 - question: Can I sell my vendor loan note to a third party before it matures?
   answer: Yes, you can sell the loan note, but that triggers a CGT event on the entire remaining gain at that point. You lose the deferral benefit. Selling the loan note also means you realise the gain in the year of sale, potentially pushing you into a higher tax bracket. Most agency founders hold the loan note to maturity to maintain the deferral. If you need cash earlier, consider a discounted sale to a specialist purchaser, but model the tax impact first.
 - question: Does the vendor loan note affect my eligibility for BADR?
-  answer: No, as long as the loan note is issued as consideration for qualifying shares that you have held for at least two years while being an officer or employee. The BADR rate of 14% (for disposals from 6 April 2025) applies to the gain on both the cash and loan note elements. However, if you hold the loan note for more than two years after the sale and are no longer involved in the business, any further gain on the loan note itself may not qualify. In practice, the gain crystallises at sale, so this is rarely an issue.
+  answer: No, as long as the loan note is issued as consideration for qualifying shares that you have held for at least two years while being an officer or employee. The BADR rate of 18% (for disposals from 6 April 2025) applies to the gain on both the cash and loan note elements. However, if you hold the loan note for more than two years after the sale and are no longer involved in the business, any further gain on the loan note itself may not qualify. In practice, the gain crystallises at sale, so this is rarely an issue.
 - question: How is the interest on a vendor loan note taxed?
-  answer: Interest paid on a vendor loan note is taxed as income in the year it is received. It goes on your self-assessment tax return and is subject to your marginal income tax rate (20%, 40%, or 45%). It is not subject to CGT. This means the interest element is less tax-efficient than the capital repayment, which is taxed at 14% or 20% CGT. You can structure the loan note to minimise interest, but the rate must be commercial to avoid HMRC challenge.
+  answer: Interest paid on a vendor loan note is taxed as income in the year it is received. It goes on your self-assessment tax return and is subject to your marginal income tax rate (20%, 40%, or 45%). It is not subject to CGT. This means the interest element is less tax-efficient than the capital repayment, which is taxed at 18% or 20% CGT. You can structure the loan note to minimise interest, but the rate must be commercial to avoid HMRC challenge.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -34,7 +34,7 @@ keyTakeaways:
 - For maximum tax efficiency, structure the loan note as a qualifying corporate bond (QCB), which defers CGT until redemption and exempts gains from tax if held until death.
 - In a typical agency sale, using a QCB loan note for part of the consideration can defer tens of thousands of pounds in CGT, keeping cash in your pocket longer.
 - Interest paid on a vendor loan note is taxable as income in the year it arises, separate from the capital repayment which triggers CGT.
-- Business Asset Disposal Relief (BADR) at 14% (2025/26 rate) applies to the capital gain on each loan note repayment, provided you meet the qualifying conditions.
+- Business Asset Disposal Relief (BADR) at 18% (2025/26 rate) applies to the capital gain on each loan note repayment, provided you meet the qualifying conditions.
 ---
 <p>If you are selling your agency, you probably expect to pay Capital Gains Tax (CGT) on the profit. Most founders plan for that. But what if you could defer some of that tax bill by several years, keeping more cash in your pocket now?</p>
 
@@ -61,15 +61,15 @@ keyTakeaways:
 
 <p>Let us run through a realistic example. You own a 12-person digital agency billing £800k per year. You sell the entire share capital for £1.2 million. Your base cost in the shares is negligible, say £10,000, so your gain is £1.19 million.</p>
 
-<p>If you take all cash on completion, you pay CGT immediately. Assuming you qualify for Business Asset Disposal Relief (BADR) at 14% (2025/26 rate), your tax bill is £166,600. Due within 60 days of completion via the CGT on property and shares reporting service.</p>
+<p>If you take all cash on completion, you pay CGT immediately. Assuming you qualify for Business Asset Disposal Relief (BADR) at 18% (2025/26 rate), your tax bill is £166,600. Due within 60 days of completion via the CGT on property and shares reporting service.</p>
 
 <p>Now, suppose the buyer offers £800,000 cash on completion and a vendor loan note for £400,000, redeemable in four equal annual instalments of £100,000 plus interest. The loan note qualifies as a QCB.</p>
 
 <p>Your CGT position changes dramatically:</p>
 
 <ul>
-<li>On completion: you pay CGT on the £800,000 cash element only. At 14% BADR, that is £112,000 due within 60 days.</li>
-<li>Year 1: you receive £100,000 capital repayment plus interest. You pay CGT at 14% on the £100,000 capital element, £14,000, in your self-assessment return for that year.</li>
+<li>On completion: you pay CGT on the £800,000 cash element only. At 18% BADR, that is £112,000 due within 60 days.</li>
+<li>Year 1: you receive £100,000 capital repayment plus interest. You pay CGT at 18% on the £100,000 capital element, £14,000, in your self-assessment return for that year.</li>
 <li>Years 2, 3, and 4: same again. £14,000 CGT each year.</li>
 </ul>
 
@@ -100,13 +100,13 @@ keyTakeaways:
 
 <p>One trap agency founders often miss: the interest on a vendor loan note is taxable as income, not capital. If the loan note pays 5% interest annually, that interest lands in your personal tax return and is taxed at your marginal income tax rate.</p>
 
-<p>For a higher-rate taxpayer, that means 40% or 45% on the interest. Whereas the capital repayment is taxed at 14% or 20% CGT. The interest element is less tax-efficient, but it is still better than paying all the CGT upfront.</p>
+<p>For a higher-rate taxpayer, that means 40% or 45% on the interest. Whereas the capital repayment is taxed at 18% or 20% CGT. The interest element is less tax-efficient, but it is still better than paying all the CGT upfront.</p>
 
 <p>You can structure the loan note to minimise interest and maximise capital repayment. HMRC will look at the overall arrangement. If the interest rate is artificially low, they may recharacterise the transaction. A commercial rate, typically 2% to 6% above Bank of England base rate, is safe.</p>
 
 <h2>BADR and Vendor Loan Notes: Do They Mix?</h2>
 
-<p>Yes, but carefully. BADR gives you a 14% CGT rate on the first £1 million of qualifying gains. You must hold the shares for at least two years before sale and be an officer or employee of the company.</p>
+<p>Yes, but carefully. BADR gives you a 18% CGT rate on the first £1 million of qualifying gains. You must hold the shares for at least two years before sale and be an officer or employee of the company.</p>
 
 <p>When you receive a vendor loan note as part of the consideration, the gain on that loan note element still qualifies for BADR, provided the original shares qualified. The key is that the loan note must be issued as consideration for the shares, not as a separate arrangement.</p>
 
@@ -166,7 +166,7 @@ keyTakeaways:
 <li><strong>Failing to report the cash element on time.</strong> The 60-day CGT return is mandatory for UK residential property and unlisted shares. Agency shares are unlisted. File the return even if you think the gain is covered by BADR.</li>
 <li><strong>Ignoring the interest tax.</strong> Founders focus on the CGT deferral and forget the interest is taxable at their marginal rate. Budget for it.</li>
 <li><strong>Accepting an unsecured loan note from a weak buyer.</strong> You become a creditor. If the buyer fails, you lose the deferred consideration and still owe the deferred CGT. Yes, HMRC will still collect the tax on the original gain.</li>
-<li><strong>Not modelling the interaction with BADR.</strong> If your total gain exceeds £1 million, the excess is taxed at 24% (the post-October 2024 higher CGT rate). The loan note defers the timing, not the rate. Make sure you understand which part of the gain is at 14% BADR and which at 24% standard.</li>
+<li><strong>Not modelling the interaction with BADR.</strong> If your total gain exceeds £1 million, the excess is taxed at 24% (the post-October 2024 higher CGT rate). The loan note defers the timing, not the rate. Make sure you understand which part of the gain is at 18% BADR and which at 24% standard.</li>
 </ul>
 
 <h2>Is a Vendor Loan Note Right for Your Agency Sale?</h2>

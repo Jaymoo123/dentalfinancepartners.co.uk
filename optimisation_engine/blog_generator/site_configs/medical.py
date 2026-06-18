@@ -50,8 +50,8 @@ _BANNED_PHRASES: list[str] = [
 SITE_CONFIG: dict = {
     "site_key": "medical",
     "display_name": "Medical Accountants UK",
-    "domain": "medicalaccountantsuk.co.uk",
-    "site_base_url": "https://medicalaccountantsuk.co.uk",
+    "domain": "www.medicalaccounts.co.uk",
+    "site_base_url": "https://www.medicalaccounts.co.uk",
     "author_name": "Medical Accountants UK Editorial Team",
     "output_dir": "Medical/web/content/blog",
     "pillar_output_dir": None,
@@ -65,8 +65,8 @@ SITE_CONFIG: dict = {
     "slug_field": "slug",
     "topic_order": "priority.asc,keyword_difficulty.asc.nullslast,created_at.asc",  # was "difficulty"
 
-    "llm_provider": "deepseek",
-    "llm_model": "deepseek-chat",
+    "llm_provider": "anthropic",
+    "llm_model": "claude-sonnet-4-20250514",
     "max_tokens": 6500,
     "temperature": 0.3,
     "verify_with_haiku": True,

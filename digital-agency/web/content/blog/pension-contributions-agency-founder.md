@@ -29,7 +29,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Pension contributions are corporation tax deductible, saving 25% tax on the way in, with no income tax or NI due.
-- The standard annual allowance is £60,000 for 2025/26, but tapers to £10,000 if adjusted income exceeds £260,000.
+- The standard annual allowance is £60,000 for 2026/27, but tapers to £10,000 if adjusted income exceeds £260,000.
 - Drawing taxable pension income triggers the Money Purchase Annual Allowance, limiting further contributions to £10,000 per year.
 - Unused annual allowance from the previous three tax years can be carried forward, allowing contributions above £60,000 in a single year.
 - On £20,000 contributed, the full amount lands in your pension pot, compared to roughly £12,600 take-home from dividends as a higher rate taxpayer.
@@ -46,9 +46,9 @@ keyTakeaways:
 
 <p>You have three main ways to take money out of your agency: salary, dividends, and pension contributions. Here is how they compare on tax.</p>
 
-<p><strong>Salary above £12,570:</strong> You pay income tax (20%, 40%, or 45%) plus employee NI (8% or 2%). Your company pays employer NI at 13.8%. On £20,000 of extra salary, you take home roughly £14,800. The total cost to your agency is about £22,760. Effective tax rate: roughly 35%.</p>
+<p><strong>Salary above £12,570:</strong> You pay income tax (20%, 40%, or 45%) plus employee NI (8% or 2%). Your company pays employer NI at 15%. On £20,000 of extra salary, you take home roughly £14,800. The total cost to your agency is about £22,760. Effective tax rate: roughly 35%.</p>
 
-<p><strong>Dividends:</strong> You pay dividend tax at 8.75%, 33.75%, or 39.35% depending on your income band. The company pays corporation tax at 19-25% on the profit before the dividend is declared. On £20,000 of profit extracted as a dividend, you take home roughly £12,600 if you are a higher rate taxpayer. Effective tax rate: roughly 37%.</p>
+<p><strong>Dividends:</strong> You pay dividend tax at 10.75%, 35.75%, or 39.35% depending on your income band. The company pays corporation tax at 19-25% on the profit before the dividend is declared. On £20,000 of profit extracted as a dividend, you take home roughly £12,600 if you are a higher rate taxpayer. Effective tax rate: roughly 37%.</p>
 
 <p><strong>Pension contribution:</strong> The company pays directly into your pension. It is a corporation tax deductible expense. No income tax. No NI. No dividend tax. On £20,000 contributed to your pension, the full £20,000 lands in your pension pot. The company saves £5,000 in corporation tax (at 25%). Effective tax rate: 0% on the way in.</p>
 
@@ -56,7 +56,7 @@ keyTakeaways:
 
 <h2>The Annual Allowance: How Much Can You Contribute?</h2>
 
-<p>The standard annual allowance is £60,000 for the 2025/26 tax year. That is the total amount that can be paid into all your pensions (yours and any employer contributions) without triggering a tax charge.</p>
+<p>The standard annual allowance is £60,000 for the 2026/27 tax year. That is the total amount that can be paid into all your pensions (yours and any employer contributions) without triggering a tax charge.</p>
 
 <p>But there are two common reductions that affect agency founders.</p>
 
@@ -82,16 +82,16 @@ keyTakeaways:
 
 <p>Sarah runs a 15-person digital agency in Manchester Northern Quarter. Turnover is £1.2m. Profits are around £280,000. She has been paying herself £50,000 in salary and dividends for the last four years and has never made a pension contribution.</p>
 
-<p>In 2025/26, she wants to catch up. Her unused allowances look like this:</p>
+<p>In 2026/27, she wants to catch up. Her unused allowances look like this:</p>
 
 <ul>
 <li>2022/23: £60,000 (used £0)</li>
 <li>2023/24: £60,000 (used £0)</li>
 <li>2024/25: £60,000 (used £0)</li>
-<li>2025/26: £60,000 (current year)</li>
+<li>2026/27: £60,000 (current year)</li>
 </ul>
 
-<p>Total available: £240,000. She can contribute up to £240,000 into her pension in 2025/26, provided she had sufficient UK earnings in each of those years to support the allowance. Since her income was above £60,000 each year, she qualifies.</p>
+<p>Total available: £240,000. She can contribute up to £240,000 into her pension in 2026/27, provided she had sufficient UK earnings in each of those years to support the allowance. Since her income was above £60,000 each year, she qualifies.</p>
 
 <p>She contributes £100,000. The company saves £25,000 in corporation tax (at 25%). The full £100,000 goes into her pension, invested and growing tax-free. She has effectively turned £75,000 of post-tax company profit into £100,000 of retirement savings.</p>
 
@@ -170,7 +170,7 @@ keyTakeaways:
 
 <p>This is a subtle point that matters if you plan to sell your agency.</p>
 
-<p>Pension contributions reduce the company's retained profits. If you are planning to sell the company and claim Business Asset Disposal Relief (14% on the first £1m of gains), lower retained profits mean a lower sale price for the shares. But the pension pot is yours personally, outside the company.</p>
+<p>Pension contributions reduce the company's retained profits. If you are planning to sell the company and claim Business Asset Disposal Relief (18% on the first £1m of gains), lower retained profits mean a lower sale price for the shares. But the pension pot is yours personally, outside the company.</p>
 
 <p>For most founders, this is a net positive. You are moving value from a taxable sale (10% CGT) into a tax-free pension environment. But the timing matters.</p>
 
@@ -194,7 +194,7 @@ keyTakeaways:
 
 <p><strong>Mistake 1: Paying pension from personal account.</strong> You lose the corporation tax relief. Always pay from the company bank account directly into the pension.</p>
 
-<p><strong>Mistake 2: Contributing without checking carry forward.</strong> You might have £180,000 of unused allowance from the last three years. Use it before it expires. The 2022/23 allowance disappears on 5 April 2026.</p>
+<p><strong>Mistake 2: Contributing without checking carry forward.</strong> You might have £180,000 of unused allowance from the last three years. Use it before it expires. The 2023/24 allowance disappears on 5 April 2027.</p>
 
 <p><strong>Mistake 3: Ignoring the money purchase annual allowance.</strong> If you have taken any taxable income from a pension, you are limited to £10,000 per year. Check before contributing.</p>
 
@@ -216,7 +216,7 @@ keyTakeaways:
 
 <p>The numbers are compelling. For a higher rate taxpayer, every £1,000 of pension contribution saves roughly £250 in corporation tax, avoids £337.50 in dividend tax, and grows tax-free. Over 20 years at 5% growth, that £1,000 becomes about £2,650. Tax-free.</p>
 
-<p>Compare that to leaving the £1,000 in the company, paying 25% corporation tax, then extracting it as a dividend and paying 33.75% dividend tax. You end up with about £496 in your pocket. Invested outside a pension, you pay capital gains tax on growth.</p>
+<p>Compare that to leaving the £1,000 in the company, paying 25% corporation tax, then extracting it as a dividend and paying 35.75% dividend tax. You end up with about £496 in your pocket. Invested outside a pension, you pay capital gains tax on growth.</p>
 
 <p>The pension route is roughly 5x more efficient over a 20-year horizon. That is not a small difference. That is the difference between a comfortable retirement and a constrained one.</p>
 

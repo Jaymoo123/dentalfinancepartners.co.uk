@@ -20,7 +20,7 @@ summary: When you sell your agency, the retainer contracts you've built up are o
 schema: ''
 faqs:
 - question: Do I pay CGT on retainer contracts if I sell my agency shares?
-  answer: Yes, if you sell shares, the gain on the entire disposal, including the value attributed to retainer contracts and client relationships, is subject to Capital Gains Tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% on gains up to £1m. Above that, it's 20%. The key is ensuring the entire consideration is treated as capital, not as employment income, particularly if there's an earn-out linked to client retention.
+  answer: Yes, if you sell shares, the gain on the entire disposal, including the value attributed to retainer contracts and client relationships, is subject to Capital Gains Tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 18% on gains up to £1m. Above that, it's 20%. The key is ensuring the entire consideration is treated as capital, not as employment income, particularly if there's an earn-out linked to client retention.
 - question: What happens to client retainer contracts in an asset sale?
   answer: In an asset sale, each retainer contract must be novated to the buyer. Novation requires the client's consent to terminate the existing contract and enter a new one with the buyer's company. If a client refuses, that contract stays with your company. This is why asset sales are less common for retainer-heavy agencies. The practical risk of losing clients during the novation process can reduce the sale price significantly.
 - question: How does deferred income from retainer billing affect my sale proceeds?
@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - In a share sale, retainer contracts stay with the company, avoiding the need to novate each client agreement.
 - Retainer-heavy agencies typically sell for 4-6x EBITDA, compared to 2-4x for project-based agencies.
-- Gains on share sales qualify for Business Asset Disposal Relief at 14% on the first £1m, rising to 18% from 6 April 2026.
+- Gains on share sales qualify for Business Asset Disposal Relief at 18% on the first £1m, rising to 18% from 6 April 2026.
 - Deferred consideration linked to retainer retention may be treated differently by HMRC, potentially as employment income.
 - Asset sales require novating every retainer contract, making them impractical for agencies with large client books.
 ---
@@ -65,7 +65,7 @@ keyTakeaways:
 <li><strong>Loan note or cash.</strong> The form of payment.</li>
 </ul>
 
-<p>Here is where the tax treatment gets specific. In a share sale, the entire gain on disposal of shares is subject to Capital Gains Tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% on gains up to £1m. Above that, it's 20%.</p>
+<p>Here is where the tax treatment gets specific. In a share sale, the entire gain on disposal of shares is subject to Capital Gains Tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 18% on gains up to £1m. Above that, it's 20%.</p>
 
 <p>But if the purchase price includes deferred consideration linked to retainer retention, HMRC may treat that differently. And if the buyer insists on an asset sale for their own tax reasons, the treatment of the retainer contracts changes entirely.</p>
 
@@ -73,11 +73,11 @@ keyTakeaways:
 
 <p>Many agency sales include an earn-out. The buyer pays a chunk upfront, then additional amounts based on the agency hitting certain targets over 12-24 months. For retainer-based agencies, those targets are almost always tied to client retention and revenue.</p>
 
-<p>Here is the tax trap. If the earn-out is structured as additional consideration for the shares, the full amount is capital in nature and qualifies for CGT treatment, including BADR if you meet the conditions. But if the earn-out is structured as a payment for services, or if it's linked to you staying on as a director and generating revenue, HMRC may treat it as employment income. That means income tax at your marginal rate (up to 45%) plus Class 1 National Insurance at 13.8% on the employer side and 2% on the employee side.</p>
+<p>Here is the tax trap. If the earn-out is structured as additional consideration for the shares, the full amount is capital in nature and qualifies for CGT treatment, including BADR if you meet the conditions. But if the earn-out is structured as a payment for services, or if it's linked to you staying on as a director and generating revenue, HMRC may treat it as employment income. That means income tax at your marginal rate (up to 45%) plus Class 1 National Insurance at 15% on the employer side and 2% on the employee side.</p>
 
 <p>Let me give you a real example. A 12-person PR agency in Bristol sold for £1.2m. The deal was structured as £800k upfront for the shares and £400k earn-out over two years, based on retaining at least 80% of the retainer book. The founder stayed on as a consultant for 12 months. HMRC challenged the earn-out, arguing that because the founder was still providing services, the earn-out was remuneration for ongoing work, not consideration for the shares.</p>
 
-<p>The founder ended up paying income tax at 40% plus NI on the earn-out, rather than 14% CGT under BADR. That cost them roughly £120k in extra tax.</p>
+<p>The founder ended up paying income tax at 40% plus NI on the earn-out, rather than 18% CGT under BADR. That cost them roughly £120k in extra tax.</p>
 
 <p><strong>The lesson:</strong> If your sale includes an earn-out linked to retainer retention, get the wording in the share purchase agreement reviewed by an ICAEW qualified accountant before you sign. The distinction between "consideration for shares" and "remuneration for services" is a matter of contract drafting, not just tax law.</p>
 
@@ -85,7 +85,7 @@ keyTakeaways:
 
 <p>In an asset sale, the retainer contracts are sold as part of the goodwill or as a separate intangible asset. Goodwill is the premium that reflects the value of the client relationships, the brand, and the ongoing revenue stream. In an agency context, goodwill and retainer contracts are almost inseparable.</p>
 
-<p>For Capital Gains Tax purposes, goodwill is a chargeable asset. If you sell it personally (as a sole trader or partnership), the gain is subject to CGT at 14% with BADR or 20% otherwise. If you sell it through your company, the company pays corporation tax on the gain at 19% or 25%, and then you extract the proceeds as dividends or a capital distribution.</p>
+<p>For Capital Gains Tax purposes, goodwill is a chargeable asset. If you sell it personally (as a sole trader or partnership), the gain is subject to CGT at 18% with BADR or 20% otherwise. If you sell it through your company, the company pays corporation tax on the gain at 19% or 25%, and then you extract the proceeds as dividends or a capital distribution.</p>
 
 <p>But here is the practical problem. If you sell the retainer contracts as part of an asset sale, you need to novate each contract to the buyer. Novation means the client agrees to terminate the existing contract with your company and enter a new contract with the buyer's company. If even one client refuses, that contract stays with your company and you're left managing a residual business.</p>
 

@@ -34,7 +34,7 @@ keyTakeaways:
 - At £50,000 profit, sole traders face 42% marginal tax (40% income tax plus 2% Class 4 NI), making incorporation worth considering.
 - Through a limited company, you can retain profits to defer higher-rate dividend tax, reducing your overall tax burden.
 - The tax advantage of incorporation depends on retaining profits; drawing all profits may result in higher tax than as a sole trader.
-- For 2025/26, corporation tax is 19% or 25%, dividend tax rates are 8.75%, 33.75%, and 39.35%, and the VAT threshold is £90,000.
+- For 2026/27, corporation tax is 19% or 25%, dividend tax rates are 10.75%, 35.75%, and 39.35%, and the VAT threshold is £90,000.
 ---
 <p>You are billing consistently. Your client list is growing. You have started thinking about hiring someone. And you are wondering: is now the right time to incorporate?</p>
 
@@ -56,7 +56,7 @@ keyTakeaways:
 
 <p>As a sole trader, you pay Income Tax and Class 4 National Insurance on your profits. At £50,270 of profit, you hit the higher rate tax band. Every pound above that is taxed at 40% Income Tax plus 2% Class 4 NI, a combined rate of 42%.</p>
 
-<p>Through a limited company, you can control your income. You take a salary up to the Primary Threshold (£12,570 for 2025/26) and take the rest as dividends. Dividends are taxed at 8.75% for basic rate taxpayers and 33.75% for higher rate taxpayers. But crucially, the company pays Corporation Tax at 19% or 25% on retained profits before those dividends are paid.</p>
+<p>Through a limited company, you can control your income. You take a salary up to the Primary Threshold (£12,570 for 2026/27) and take the rest as dividends. Dividends are taxed at 10.75% for basic rate taxpayers and 35.75% for higher rate taxpayers. But crucially, the company pays Corporation Tax at 19% or 25% on retained profits before those dividends are paid.</p>
 
 <p>Let us run a worked example. Say your freelance business generates £80,000 of profit per year.</p>
 
@@ -73,12 +73,12 @@ Salary: £12,570 (no tax, no NI for employee or employer up to this threshold)<b
 Employer NI: £0 (salary is below Secondary Threshold)<br>
 Corporation Tax on remaining £67,430: 19% = £12,811.70 (assuming profits under £50k, marginal relief applies, this is simplified)<br>
 Available for dividends after CT: £54,618.30<br>
-Dividend tax: first £500 tax-free (allowance), then £54,118.30 at 33.75% = £18,264.93<br>
-Total tax: £12,811.70 + £18,264.93 = £31,076.63</p>
+Dividend tax: first £500 tax-free (allowance), then £54,118.30 at 35.75% = £19,347.29<br>
+Total tax: £12,811.70 + £19,347.29 = £32,158.99</p>
 
 <p>Wait, that looks worse for the company route. And it is, in this simplified scenario, if you take every penny out. The real advantage comes from retaining profits in the company and only drawing what you need.</p>
 
-<p>If you leave £20,000 in the company, your dividend draw drops to £34,618.30. Your dividend tax falls to approximately £11,677. Your total tax becomes £12,811.70 + £11,677 = £24,488.70. That is still higher than the sole trader figure, but you have £20,000 sitting in the company that you can reinvest or draw in a lower-income year.</p>
+<p>If you leave £20,000 in the company, your dividend draw drops to £34,618.30. Your dividend tax falls to approximately £12,376. Your total tax becomes £12,811.70 + £12,376 = £25,187.70. That is still higher than the sole trader figure, but you have £20,000 sitting in the company that you can reinvest or draw in a lower-income year.</p>
 
 <p>The tax benefit of incorporation is not automatic. It depends on how much profit you retain versus draw. For many agency founders, the real advantage is flexibility, not outright tax savings at every income level.</p>
 
@@ -120,7 +120,7 @@ Total tax: £12,811.70 + £18,264.93 = £31,076.63</p>
 
 <p>You cannot sell a sole tradership. You can sell the assets, the goodwill, the client list, but you cannot sell the business as a going concern in the same way you can sell a limited company.</p>
 
-<p>If you have any ambition to exit your agency for a lump sum, you need to be incorporated. Business Asset Disposal Relief (BADR) allows you to pay 14% capital gains tax on qualifying disposals, up to a £1 million lifetime limit. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal.</p>
+<p>If you have any ambition to exit your agency for a lump sum, you need to be incorporated. Business Asset Disposal Relief (BADR) allows you to pay 18% capital gains tax on qualifying disposals, up to a £1 million lifetime limit. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal.</p>
 
 <p>That two-year clock starts ticking from incorporation. If you wait until you are ready to sell to incorporate, you lose the relief. You pay full CGT at 20% (or 24% for residential property) instead of 10%.</p>
 

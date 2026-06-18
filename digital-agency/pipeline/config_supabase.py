@@ -156,7 +156,7 @@ UK TAX CONTEXT (use correct figures for 2025/26):
 - Corporation tax: 19% small profits rate (up to £50k profits), 25% main rate (above £250k), marginal relief applies between £50k-£250k
 - Income tax bands: £0-£12,570 personal allowance, £12,571-£50,270 basic rate 20%, £50,271-£125,140 higher rate 40%, above £125,140 additional rate 45%
 - Dividend tax rates: 8.75% basic, 33.75% higher, 39.35% additional. Annual dividend allowance: £500
-- National Insurance: primary threshold £12,570. Employer NI 13.8% above secondary threshold.
+- National Insurance: primary threshold £12,570. Employer NI 15% above the £5,000 secondary threshold (from 6 April 2025). Employment Allowance £10,500 (single-director companies excluded). The old 13.8% / £9,100 applied only up to 5 April 2025.
 - BADR (Business Asset Disposal Relief): 14% CGT for disposals from 6 April 2025, rising to 18% from 6 April 2026. £1M lifetime limit. Shares must be held 2+ years. Old 10% rate applied to disposals BEFORE 6 April 2025.
 - CGT main rates (non-residential): 18% basic rate, 24% higher rate. These rates apply ABOVE the BADR £1M limit. Old 10%/20% rates applied before 30 October 2024.
 - VAT registration threshold: £90,000 turnover
@@ -302,7 +302,7 @@ UK TAX CONTEXT (2025/26):
 - Corporation tax: 19% small profits (up to £50k), 25% main rate (above £250k), marginal relief £50k-£250k
 - Income tax: £0-£12,570 PA, £12,571-£50,270 basic 20%, £50,271-£125,140 higher 40%, above £125,140 additional 45%
 - Dividend tax: 8.75% basic, 33.75% higher, 39.35% additional. Annual dividend allowance £500.
-- NI: primary threshold £12,570. Employer NI 13.8% above secondary threshold.
+- NI: primary threshold £12,570. Employer NI 15% above the £5,000 secondary threshold (from 6 April 2025). Employment Allowance £10,500 (single-director companies excluded). The old 13.8% / £9,100 applied only up to 5 April 2025.
 - BADR: 14% CGT for disposals from 6 April 2025 (was 10% before then), rising to 18% from 6 April 2026. £1M lifetime limit. 5% shareholding, 2 years held, officer or employee.
 - CGT main rates (non-residential, used above BADR limit): 18% basic, 24% higher (changed 30 October 2024, was 10%/20% previously).
 - VAT registration threshold: £90,000 turnover.

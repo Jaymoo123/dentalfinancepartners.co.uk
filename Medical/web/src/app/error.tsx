@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { btnPrimary, siteContainer } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
 
 export default function Error({
   error,
@@ -61,10 +60,11 @@ export default function Error({
         </div>
 
         <p className="mt-8 text-sm text-[var(--muted)]">
-          Need help? Email us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="font-semibold text-[var(--accent-strong)] hover:text-[var(--accent)]">
-            {siteConfig.contact.email}
-          </a>
+          Need help?{" "}
+          <Link href="/contact" className="font-semibold text-[var(--accent-strong)] hover:text-[var(--accent)]">
+            Contact us
+          </Link>{" "}
+          and we will get back to you.
         </p>
       </div>
     </div>

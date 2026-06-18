@@ -1,0 +1,429 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import Link from "next/link";
+
+import { LeadForm } from "@/components/forms/LeadForm";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
+import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import {
+  AnnualIncorporationsChart,
+  MonthlyIncorporationsChart,
+} from "@/components/research/ConstructionIndexCharts";
+import {
+  fmtNumber,
+  fmtPercent,
+  monthLabel,
+  type ConstructionIndexSnapshot,
+} from "@/lib/research/construction-index";
+import snapshot from "@/data/uk-construction-index.json";
+
+const data = snapshot as unknown as ConstructionIndexSnapshot;
+const { meta, headline, incorporations, construction_output } = data;
+const { decade } = headline;
+const PRIMARY = headline.primary_sic;
+
+const PAGE_PATH = "/research/uk-construction-index";
+
+const HEADLINE_SENTENCE = `New domestic-building companies in the UK rose ${fmtPercent(decade.change_pct, false)} between ${decade.from_year} and ${decade.to_year}`;
+
+export const metadata: Metadata = {
+  title: "UK Construction Index | Construction company incorporation trends | Trade Tax Specialists",
+  description: `${HEADLINE_SENTENCE}. A sourced index of new construction company formations by SIC code, compiled from Companies House open data. Updated ${monthLabel(meta.incorporations_settled_through)}.`,
+  alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
+  openGraph: {
+    title: "UK Construction Index | Trade Tax Specialists",
+    description: `${HEADLINE_SENTENCE}. New construction company formations from Companies House official open data.`,
+    url: `${siteConfig.url}${PAGE_PATH}`,
+    type: "article",
+  },
+};
+
+const faqs = [
+  {
+    question: "What does the UK Construction Index measure?",
+    answer:
+      "It counts new companies incorporated each month under 19 construction Standard Industrial Classification (SIC) codes, drawn from Companies House public records. The headline figure tracks SIC 41202 (construction of domestic buildings) as the primary measure, alongside the deduplicated union of all 19 construction SIC codes as a broader all-construction figure. Counts are gross: companies that have since been dissolved remain on the register, so there is no survivorship bias.",
+  },
+  {
+    question: "Why have construction company formations been rising?",
+    answer:
+      "Several factors drive the long-term upward trend. Growing use of limited companies in the construction trades reflects tax planning (a company can be more tax-efficient than sole-trader status at higher profits), the cash-flow advantage a CIS company has in reclaiming its deductions in-year through the Employer Payment Summary rather than waiting for a Self Assessment refund, and broader sector growth in housebuilding and infrastructure. The post-pandemic surge to 2022 also reflects a general rise in new company formation across the UK economy during the recovery period.",
+  },
+  {
+    question: "Where does this data come from?",
+    answer:
+      "All incorporation counts come from the Companies House Advanced Search API. Companies House is the UK register of companies, operated by His Majesty's Government, and its data is published under the Open Government Licence v3.0. The figures are updated monthly as Companies House releases new records, though the most recent two months are provisional due to indexing lag.",
+  },
+  {
+    question: "What does 'provisional' mean on the chart?",
+    answer:
+      "Companies House indexes very recent incorporations with a short lag of four to six weeks. The two most recent months in the series are therefore provisional: they will be revised upward as late-indexed records are captured. These months are shown with a dashed line on the chart and are excluded from all headline figures and decade comparisons to avoid understating the trend.",
+  },
+  {
+    question: "Am I better off as a CIS contractor operating through a limited company?",
+    answer:
+      "It depends on your income level, whether you hold gross payment status, and how you draw money from the business. Operating through a company can reduce your overall tax bill at higher income levels, but brings compliance obligations including Corporation Tax returns, payroll, and Companies House filings. Our CIS tax calculators let you model your own position, and our team can review your specific circumstances.",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// JSON-LD
+// ---------------------------------------------------------------------------
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "UK Construction Index",
+  description: `${HEADLINE_SENTENCE}, tracked from Companies House open data.`,
+  inLanguage: "en-GB",
+  datePublished: "2026-06-16",
+  dateModified: meta.generated_at,
+  author: {
+    "@type": "Organization",
+    "@id": `${siteConfig.url}#organization`,
+    name: siteConfig.name,
+  },
+  publisher: { "@id": `${siteConfig.url}#organization` },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}${PAGE_PATH}`,
+  },
+};
+
+const datasetSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "UK Construction Index: construction company incorporations by SIC code",
+  description:
+    "Monthly counts of newly incorporated UK construction companies across 19 SIC codes (Companies House), including the deduplicated union across all construction sectors.",
+  inLanguage: "en-GB",
+  license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  creator: {
+    "@type": "Organization",
+    "@id": `${siteConfig.url}#organization`,
+    name: siteConfig.name,
+  },
+  dateModified: meta.generated_at,
+  temporalCoverage: `${incorporations.monthly[0]?.month ?? ""}/${meta.incorporations_settled_through}`,
+  isAccessibleForFree: true,
+  distribution: [
+    {
+      "@type": "DataDownload",
+      encodingFormat: "text/csv",
+      contentUrl: `${siteConfig.url}${PAGE_PATH}/data`,
+    },
+  ],
+  variableMeasured: [
+    "Monthly company incorporations by construction SIC code",
+    "Deduplicated union across all 19 construction SIC codes",
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Presentational helpers
+// ---------------------------------------------------------------------------
+
+function Stat({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
+      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
+      <div className="mt-1 text-sm text-neutral-300">{label}</div>
+    </div>
+  );
+}
+
+function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+  return (
+    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
+      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
+      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+    </section>
+  );
+}
+
+// ---------------------------------------------------------------------------
+
+export default function UKConstructionIndexPage() {
+  const settledThrough = meta.incorporations_settled_through;
+  const lastSettled = headline.last_settled_month;
+  const latestRow = incorporations.monthly.find((m) => m.month === lastSettled);
+
+  const topSics = ["41202", "41201", "41100", "43999", "43390", "43210"];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
+      />
+
+      {/* Hero */}
+      <section className="bg-neutral-900 py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research", href: "/research" },
+              { label: "UK Construction Index" },
+            ]}
+          />
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-orange-400">
+            UK Construction Index
+          </p>
+          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            {HEADLINE_SENTENCE}
+          </h1>
+          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+            A sourced, monthly read on new construction company formations across the UK, drawn from
+            Companies House public records. Covering 19 construction SIC codes from housebuilding to
+            electrical installation. Updated {monthLabel(settledThrough)}.
+          </p>
+
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <Stat
+              value={fmtNumber(headline.all_construction_cos_ttm)}
+              label="construction companies incorporated in the last 12 months"
+            />
+            <Stat
+              value={fmtNumber(headline.domestic_building_cos_ttm)}
+              label={`domestic-building companies (SIC ${PRIMARY}) in the last 12 months`}
+            />
+            <Stat
+              value={fmtPercent(decade.change_pct, false)}
+              label={`more domestic-building companies than in ${decade.from_year}`}
+            />
+            <Stat
+              value={fmtPercent(headline.domestic_building_cos_yoy_pct)}
+              label={`year-on-year change in ${monthLabel(lastSettled)}`}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Body */}
+      <section className="bg-white py-10 sm:py-14">
+        <div className={siteContainerLg}>
+          <div className="max-w-4xl">
+
+            {/* Key findings */}
+            <div className="rounded-2xl border border-orange-500/20 bg-orange-50/60 p-6 sm:p-8">
+              <h2 className="text-lg font-bold text-orange-800">Key findings</h2>
+              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
+                <li>
+                  New domestic-building companies (SIC {PRIMARY}) grew from{" "}
+                  {fmtNumber(decade.from_value)} in {decade.from_year} to{" "}
+                  {fmtNumber(decade.to_value)} in {decade.to_year}, a rise of{" "}
+                  {fmtPercent(decade.change_pct, false)}.
+                </li>
+                <li>
+                  In the 12 months to {monthLabel(settledThrough)},{" "}
+                  {fmtNumber(headline.all_construction_cos_ttm)} UK construction companies were
+                  incorporated across all 19 SIC codes.
+                </li>
+                <li>
+                  Formations peaked in {headline.peak_month.replace("-", " ")} at{" "}
+                  {fmtNumber(headline.peak_value)} domestic-building companies in a single month,
+                  the highest on record.
+                </li>
+                <li>
+                  The all-construction union rose {fmtPercent(decade.union_change_pct, false)} over
+                  the decade, from {fmtNumber(decade.union_from)} to {fmtNumber(decade.union_to)}{" "}
+                  annually, reflecting broad sector growth across building construction, civil
+                  engineering, and specialised trades.
+                </li>
+                <li>
+                  Year-on-year growth in {monthLabel(lastSettled)} was{" "}
+                  {fmtPercent(headline.domestic_building_cos_yoy_pct)} for domestic-building
+                  companies, continuing the recovery from the 2023 to 2024 cooling period.
+                </li>
+              </ul>
+              <p className="mt-4 text-xs text-neutral-500">
+                Source: Companies House Advanced Search API, under the Open Government Licence v3.0.
+                Figures may be cited with attribution to Trade Tax Specialists. The most recent{" "}
+                {meta.provisional_months.length} months of incorporation data are provisional
+                (Companies House indexing lag) and are excluded from the headline figures above.
+              </p>
+            </div>
+
+            <Section id="incorporations" title="Domestic-building company formations by year">
+              <p>
+                Each bar shows the number of new companies incorporated in that calendar year under
+                SIC code {PRIMARY}, {meta.sic_labels[PRIMARY]?.toLowerCase()}. Only complete
+                calendar years are shown. The post-2020 surge reflects the broader rise in company
+                formation during the economic recovery, before a cooling period from 2023.
+              </p>
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <AnnualIncorporationsChart annual={incorporations.annual} sic={PRIMARY} />
+              </div>
+            </Section>
+
+            <Section id="monthly" title="The monthly trend">
+              <p>
+                The same measure shown month by month, from mid-2015 to the present. The long climb
+                to the 2022 peak is visible, followed by a period of consolidation. The dashed tail
+                marks the most recent {meta.provisional_months.length} months, which are provisional
+                because Companies House indexes very recent incorporations with a short lag.
+              </p>
+              {/* ONS construction output is absent (construction_output.available === false); no output chart rendered */}
+              {!construction_output.available && (
+                <p className="text-sm text-neutral-500">
+                  Construction output data (ONS CGBR series) will be added in a future update once
+                  a machine-readable feed is available.
+                </p>
+              )}
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <MonthlyIncorporationsChart
+                  monthly={incorporations.monthly}
+                  sic={PRIMARY}
+                  provisionalMonths={meta.provisional_months}
+                />
+              </div>
+            </Section>
+
+            <Section id="breakdown" title="By construction SIC code">
+              <p>
+                The table below breaks down formations by the six most active SIC codes for{" "}
+                {lastSettled ? monthLabel(lastSettled) : "the latest settled month"}, showing the
+                spread of new company activity across the sector.
+              </p>
+              <div className="not-prose mt-4 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-300 text-left">
+                      <th className="py-2 pr-4 font-bold text-neutral-900">SIC code</th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900">What it covers</th>
+                      <th className="py-2 font-bold text-neutral-900">New companies</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {topSics.map((code) => (
+                      <tr key={code} className="border-b border-neutral-200">
+                        <td className="py-2 pr-4 font-semibold text-neutral-900">{code}</td>
+                        <td className="py-2 pr-4 text-neutral-700">{meta.sic_labels[code]}</td>
+                        <td className="py-2 font-semibold text-neutral-900">
+                          {latestRow ? fmtNumber(Number(latestRow[code])) : "n/a"}
+                        </td>
+                      </tr>
+                    ))}
+                    <tr className="border-b border-neutral-300">
+                      <td className="py-2 pr-4 font-semibold text-orange-700">
+                        All 19 codes (deduplicated)
+                      </td>
+                      <td className="py-2 pr-4 text-neutral-700">
+                        Unique companies across all construction SIC codes
+                      </td>
+                      <td className="py-2 font-bold text-orange-700">
+                        {latestRow ? fmtNumber(Number(latestRow["union"])) : "n/a"}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </Section>
+
+            <Section id="methodology" title="Methodology and sources">
+              <p>
+                <strong>Incorporations.</strong> For each month, we query the Companies House
+                Advanced Search API for companies incorporated under each of the 19 construction SIC
+                codes spanning Division 41 (building construction), Division 42 (civil engineering),
+                and Division 43 (specialised construction activities). The deduplicated union counts
+                each company once even where it registers under multiple construction SIC codes.
+                Counts are gross: a company that has since been dissolved still appears on the
+                register, so the series carries no survivorship bias. The most recent{" "}
+                {meta.provisional_months.length} months are provisional and excluded from headline
+                figures.
+              </p>
+              <p>
+                <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)} (settled
+                data). Data generated {monthLabel(meta.generated_at.slice(0, 7))}.
+              </p>
+              <ul className="not-prose mt-2 space-y-1 text-sm">
+                {meta.sources
+                  .filter((s) => s.status !== "deferred_v2")
+                  .map((s) => (
+                    <li key={s.name}>
+                      <a
+                        href={s.url}
+                        className="font-semibold text-orange-700 hover:text-orange-800"
+                        rel="nofollow"
+                      >
+                        {s.name}
+                      </a>{" "}
+                      <span className="text-neutral-500">({s.publisher})</span>
+                    </li>
+                  ))}
+              </ul>
+              <p className="text-sm">
+                <Link
+                  href={`${PAGE_PATH}/data`}
+                  className="font-semibold text-orange-700 hover:text-orange-800"
+                >
+                  Download the incorporation data (CSV)
+                </Link>
+              </p>
+              <p className="text-sm text-neutral-500">
+                Free to cite and republish with attribution to Trade Tax Specialists. This page is a
+                data summary and does not constitute tax advice on any individual situation.
+              </p>
+            </Section>
+
+            {/* Conversion */}
+            <div className="mt-10 rounded-2xl border-2 border-orange-500/20 bg-gradient-to-br from-orange-50 to-amber-50 p-8 sm:p-10">
+              <h2 className="text-2xl font-bold text-orange-700 sm:text-3xl">
+                Working in construction? See what you could claim back.
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+                The rise in construction companies reflects a broader shift towards limited company
+                working in the sector. Whether you are an established contractor or just setting up,
+                understanding your CIS obligations and entitlements matters. Our calculators help
+                you model your CIS refund and gross payment status eligibility.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+                <Link
+                  href="/calculators/cis-refund-estimator"
+                  className="text-orange-700 hover:text-orange-800"
+                >
+                  CIS refund estimator &rarr;
+                </Link>
+                <Link
+                  href="/calculators/cis-gps-eligibility-checker"
+                  className="text-orange-700 hover:text-orange-800"
+                >
+                  GPS eligibility checker &rarr;
+                </Link>
+              </div>
+              <div className="mt-8">
+                <LeadForm redirectOnSuccess={false} submitLabel="Get a free CIS review" />
+              </div>
+            </div>
+
+            {/* FAQ */}
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+                Frequently asked questions
+              </h2>
+              <div className="mt-6 space-y-6">
+                {faqs.map((f, i) => (
+                  <div key={i}>
+                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
+                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, ArrowRight, BadgeCheck, Phone, Mail } from "lucide-react";
+import { MapPin, ArrowRight, BadgeCheck, Mail } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
@@ -115,14 +115,10 @@ export default function AccountantNearMePage() {
               </p>
               <div className="mt-6 space-y-3 text-slate-200">
                 <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-orange-300" />
-                  <span className="font-semibold">{siteConfig.contact.phone}</span>
-                </div>
-                <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-orange-300" />
-                  <a href={`mailto:${siteConfig.contact.email}`} className="font-semibold underline">
-                    {siteConfig.contact.email}
-                  </a>
+                  <Link href="/contact" className="font-semibold underline">
+                    Contact us
+                  </Link>
                 </div>
               </div>
               <Link href="/contact" className={`${btnPrimary} mt-8`}>

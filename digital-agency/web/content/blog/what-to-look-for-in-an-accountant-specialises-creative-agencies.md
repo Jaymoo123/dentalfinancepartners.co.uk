@@ -119,7 +119,7 @@ keyTakeaways:
 
 <h2>6. They Understand Exit Planning and BADR</h2>
 
-<p>If you are building an agency with the intention of selling it one day, your accountant needs to understand Business Asset Disposal Relief (BADR). This relief lets you pay 14% on the first £1m of qualifying gains, instead of the usual 20%.</p>
+<p>If you are building an agency with the intention of selling it one day, your accountant needs to understand Business Asset Disposal Relief (BADR). This relief lets you pay 18% on the first £1m of qualifying gains, instead of the usual 20%.</p>
 
 <p>But BADR has strict conditions. You must hold at least 5% of the shares and be an officer or employee of the company for at least two years before the sale. The planning needs to start years in advance, not weeks before.</p>
 

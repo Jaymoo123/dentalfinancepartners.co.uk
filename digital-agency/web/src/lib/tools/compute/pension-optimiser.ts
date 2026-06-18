@@ -1,15 +1,15 @@
 /**
  * Pension contribution optimiser for limited company directors.
  * Pure compute, no React, no window/document/fetch. TL-03 clean.
- * 2025/26 rates.
+ * 2025/26 rates; dividend tax rates per FA 2026 (10.75%/35.75%/39.35% from 6 Apr 2026).
  */
 
 const PERSONAL_ALLOWANCE = 12570;
 const BASIC_RATE_LIMIT = 50270;
 const HIGHER_RATE_LIMIT = 125140;
 const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
+const DIVIDEND_BASIC = 0.1075;
+const DIVIDEND_HIGHER = 0.3575;
 const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;

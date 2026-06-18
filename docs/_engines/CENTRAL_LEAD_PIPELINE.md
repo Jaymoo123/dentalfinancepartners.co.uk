@@ -24,7 +24,7 @@ A Google Sheets mirror (`/api/leads/sync`) exists on the same host (built, pendi
 
 - Routes (in `Property/web/src/app/api/leads/{notify,sync,enrich}/route.ts`): authenticate via shared secret with `crypto.timingSafeEqual`, return 503 (refuse, not process) when their secret is unconfigured, fail open per LD-07.
 - Env vars that arm them (Property's Vercel project): the leads webhook secret (shared with the pg_net trigger bodies), `RESEND_API_KEY` (notify), AI Gateway + Companies House keys (enrich), Google service-account creds (sync, pending).
-- Email routing rule: notify CCs the partner on real leads — which is why test leads must never traverse this pipeline (Phase C guardrail: trigger-skipped inserts only).
+- Email routing rule: notify CCs the partner on real leads from every site **except Property** — Property's own leads (`source = "property"`) go to the internal inbox only, no partner CC, and their email omits the "Forward to Reflex" banner. The rule is `Property/web/src/lib/lead-routing.ts` (`resolveLeadCc`), tunable via `LEADS_NOTIFY_CC_EXCLUDE_SOURCES` (defaults to `"property"`); the `GET /api/leads/notify` health probe reports the live `ccExcludeSources`. This is also why test leads must never traverse this pipeline (Phase C guardrail: trigger-skipped inserts only).
 - Enrichment writes to its own `lead_enrichment` table, idempotent on `lead_id` (LD-08) — never mutates the lead row.
 
 ## Health check

@@ -84,7 +84,7 @@ faqs:
 <ul>
 <li>Income tax at the copywriter's marginal rate (20%, 40%, or 45%)</li>
 <li>Employee NI at 8% on earnings above £12,570</li>
-<li>Employer NI at 13.8% on earnings above the secondary threshold</li>
+<li>Employer NI at 15% on earnings above the secondary threshold</li>
 <li>The Apprenticeship Levy if your total pay bill exceeds £3 million</li>
 <li>Interest on late payments, currently 7.25%</li>
 <li>Penalties that can reach 100% of the tax due in serious cases</li>

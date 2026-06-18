@@ -19,6 +19,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";
 import { getResend, getFromAddress } from "@/lib/resend";
+import { resolveLeadCc, ccExcludedSources } from "@/lib/lead-routing";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -127,7 +128,7 @@ function renderCell(field: DetailField, r: LeadRecord): string {
 // (the header label and the "Site" row identify which one), so it carries no
 // per-site brand colour. Navy header, white card, slate detail rows; long values
 // wrap inside the card and the message gets its own full-width block.
-function buildHtml(r: LeadRecord): string {
+function buildHtml(r: LeadRecord, partnerCopied: boolean): string {
   const siteLabel = prettySource(r.source) || "Website";
   const headerName = (r.full_name ?? "").trim() || "New website enquiry";
   const received = formatTimestamp(r.created_at);
@@ -173,10 +174,14 @@ function buildHtml(r: LeadRecord): string {
             </tr>
             <tr>
               <td style="padding:24px 28px 28px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+                ${
+                  partnerCopied
+                    ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
                   <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #0f172a;border-radius:8px;padding:12px 16px;color:#0f172a;font-size:14px;font-weight:600;">Forward this email to Reflex Accounting</td></tr>
-                </table>
-                <p style="margin:24px 0 4px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Lead details</p>
+                </table>`
+                    : ""
+                }
+                <p style="margin:${partnerCopied ? "24px" : "0"} 0 4px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Lead details</p>
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
                   <colgroup><col style="width:140px;" /><col /></colgroup>
                   ${detailRows}
@@ -198,7 +203,7 @@ function buildHtml(r: LeadRecord): string {
 </html>`;
 }
 
-function buildText(r: LeadRecord): string {
+function buildText(r: LeadRecord, partnerCopied: boolean): string {
   const siteLabel = prettySource(r.source) || "Website";
   const headerName = (r.full_name ?? "").trim() || "New website enquiry";
   const received = formatTimestamp(r.created_at);
@@ -206,7 +211,8 @@ function buildText(r: LeadRecord): string {
 
   const lines: string[] = [`NEW ${siteLabel.toUpperCase()} LEAD`, headerName];
   if (received) lines.push(`Received ${received}`);
-  lines.push("", "Forward this email to Reflex Accounting", "", "LEAD DETAILS");
+  if (partnerCopied) lines.push("", "Forward this email to Reflex Accounting");
+  lines.push("", "LEAD DETAILS");
   for (const field of DETAIL_FIELDS) {
     const raw = (field.get(r) ?? "").toString().trim();
     lines.push(`${field.label}: ${raw || "Not provided"}`);
@@ -225,6 +231,8 @@ export async function GET() {
     resendSet: Boolean(process.env.RESEND_API_KEY),
     notifyTo: Boolean(process.env.LEADS_NOTIFY_TO),
     ccSet: Boolean(process.env.LEADS_NOTIFY_CC),
+    // Sites NOT copied to the partner firm (Property by default).
+    ccExcludeSources: ccExcludedSources(),
   });
 }
 
@@ -261,12 +269,12 @@ export async function POST(req: NextRequest) {
   }
 
   const to = process.env.LEADS_NOTIFY_TO || "junaydmoughal@hotmail.co.uk";
-  // Partner firm copied on every lead. Comma-separated list supported via env;
-  // defaults to Reflex Accounting so no new Vercel config is required.
-  const cc = (process.env.LEADS_NOTIFY_CC ?? "ahmadtirmizey@reflexaccounting.co.uk")
-    .split(",")
-    .map((addr) => addr.trim())
-    .filter(Boolean);
+  // Partner firm (Reflex Accounting) is copied on leads from every site EXCEPT
+  // Property's own — Property leads go to the internal inbox only, no partner
+  // CC. The rule lives in resolveLeadCc (LEADS_NOTIFY_CC_EXCLUDE_SOURCES,
+  // defaults to "property"); an empty list here means no CC header is sent.
+  const cc = resolveLeadCc(r.source);
+  const partnerCopied = cc.length > 0;
   const subject = `New ${prettySource(r.source) || "website"} lead${r.full_name ? `: ${r.full_name}` : ""}`;
 
   try {
@@ -275,8 +283,8 @@ export async function POST(req: NextRequest) {
       to,
       ...(cc.length ? { cc } : {}),
       subject,
-      html: buildHtml(r),
-      text: buildText(r),
+      html: buildHtml(r, partnerCopied),
+      text: buildText(r, partnerCopied),
       // No reply-to: the lead's address is never placed in the email headers,
       // so the lead can never be contacted from this notification.
     });

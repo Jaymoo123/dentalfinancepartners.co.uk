@@ -33,7 +33,7 @@ keyTakeaways:
 - A general practice accountant cannot advise on IR35 Status Determination Statements or contractor margin modelling for your agency.
 - Specialist agency accountants provide monthly management accounts with utilisation rates, gross margin by service line, and cash runway.
 - If your accountant cannot answer IR35 questions or issues SDSs late, it is a clear sign you need a specialist.
-- A specialist structures shares and dividends from day one to qualify for Business Asset Disposal Relief at 14% (rising to 18% from 6 April 2026).
+- A specialist structures shares and dividends from day one to qualify for Business Asset Disposal Relief at 18% (rising to 18% from 6 April 2026).
 - Benchmarking data from a specialist shows a healthy digital agency runs at 65–75% utilisation and revenue per head above £80k.
 ---
 <h2>Your Agency Has Outgrown Its Accountant. Now What?</h2>

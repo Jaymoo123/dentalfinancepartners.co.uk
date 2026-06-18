@@ -1,9 +1,9 @@
-# Brief: retiring-from-gp-partnership-tax-capital-account
+﻿# Brief: retiring-from-gp-partnership-tax-capital-account
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster F (Leaving, retiring and mergers), pick F1
 **Source file (to be created):** `Medical/web/content/blog/retiring-from-gp-partnership-tax-capital-account.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/retiring-from-gp-partnership-tax-capital-account
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/retiring-from-gp-partnership-tax-capital-account
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner self-employed; SA800/SA104; taxed on profit share, not drawings; partnership taxation under ITTOIA 2005), §4 (capital accounts; what changes hands; owned premises; NHS goodwill cannot be sold; separate property partnership; last-man-standing), §9 (basis period reform: tax-year basis, overlap relief given in the 2023/24 transition). NHS pension on retirement is a light cross-ref to §2 only.
 

@@ -1,0 +1,8 @@
+Blog byline: stacked First published / Last updated on rewritten posts
+
+Shared BlogPostRenderer change: when dateModified differs from the original
+date, show "First published <date>" + "Last updated <date>" stacked at the
+byline. Never-rewritten pages keep the single-date byline. Schema already
+emitted both datePublished + dateModified; visible dates now match.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>

@@ -15,6 +15,8 @@ import { dentistsRegistry } from "./dentists";
 import { medicalRegistry } from "./medical";
 import { solicitorsRegistry } from "./solicitors";
 import { agencyRegistry } from "./agency";
+import { constructionRegistry } from "./construction";
+import { contractorsRegistry } from "./contractors";
 
 export const siteRegistries: Record<string, SiteExperimentRegistry> = {
   property: propertyRegistry,
@@ -23,6 +25,8 @@ export const siteRegistries: Record<string, SiteExperimentRegistry> = {
   medical: medicalRegistry,
   solicitors: solicitorsRegistry,
   "digital-agency": agencyRegistry,
+  "construction-cis": constructionRegistry,
+  "contractors-ir35": contractorsRegistry,
 };
 
 /**

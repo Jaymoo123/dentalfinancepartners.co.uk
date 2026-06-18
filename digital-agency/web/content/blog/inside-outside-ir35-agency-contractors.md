@@ -20,7 +20,7 @@ summary: The difference between inside and outside IR35 determines who pays the 
 schema: ''
 faqs:
 - question: What is the difference between inside and outside IR35 for agency contractors?
-  answer: Inside IR35 means the contractor is treated as a deemed employee for tax purposes. Your agency must operate PAYE, deduct income tax and NI, and pay employer NI at 13.8%. Outside IR35 means the contractor is genuinely self-employed. Their limited company invoices you, and they handle their own tax. The key difference is who pays the tax and how much the contractor takes home.
+  answer: Inside IR35 means the contractor is treated as a deemed employee for tax purposes. Your agency must operate PAYE, deduct income tax and NI, and pay employer NI at 15%. Outside IR35 means the contractor is genuinely self-employed. Their limited company invoices you, and they handle their own tax. The key difference is who pays the tax and how much the contractor takes home.
 - question: How do I determine if my agency's contractors are inside or outside IR35?
   answer: 'You apply three main tests: substitution (can the contractor send someone else?), control (who decides how and when the work is done?), and mutuality of obligation (is there an ongoing obligation to offer and accept work?). HMRC''s CEST tool can help, but it is not definitive for complex cases. For borderline engagements, get a professional IR35 review.'
 - question: What happens if HMRC decides my agency got the IR35 status wrong?
@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - For outside IR35, your agency pays the gross invoice and the contractor's company handles its own tax; for inside IR35, you must operate PAYE and deduct tax and NI at source.
-- Inside IR35 adds roughly £6,900 per year in employer NI for a contractor earning £50,000, and their take-home pay drops from about £400 to £290 per day.
+- Inside IR35 adds roughly £7,500 per year in employer NI for a contractor earning £50,000, and their take-home pay drops from about £400 to £290 per day.
 - Outside IR35 saves your agency employer NI and payroll admin, but you must issue a Status Determination Statement (SDS) and pass it down the supply chain.
 - HMRC uses tests like control, substitution, and mutuality of obligation to determine IR35 status; getting it wrong can lead to six-figure liabilities for your agency.
 - From 6 April 2026, the capital gains tax rate for Business Asset Disposal Relief rises to 18%, affecting contractors selling their company shares.
@@ -50,7 +50,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Your agency operates PAYE</strong> on the contractor's payments. You deduct income tax and employee NI from each invoice.</li>
-<li><strong>You pay employer NI</strong> at 13.8% on top of the gross amount. This adds roughly £6,900 per year for a contractor earning £50,000.</li>
+<li><strong>You pay employer NI</strong> at 15% on top of the gross amount. This adds roughly £7,500 per year for a contractor earning £50,000.</li>
 <li><strong>You must issue a payslip</strong> and report through RTI (Real Time Information) each month.</li>
 <li><strong>The contractor's take-home pay drops significantly</strong> compared to an outside IR35 arrangement. A contractor billing £500 per day outside IR35 might take home roughly £400. Inside IR35, that same day rate nets to around £290 after all deductions.</li>
 <li><strong>You must include the contractor</strong> in your agency's pension auto-enrolment if they meet the criteria, though most contractors opt out.</li>
@@ -126,7 +126,7 @@ keyTakeaways:
 
 <p>The inside outside IR35 agency decision affects your cash flow and your contractor's willingness to work with you. Outside IR35 contractors typically demand lower day rates because they keep more of their earnings. Inside IR35 contractors need higher rates to compensate for the tax hit. Your agency's gross margin on contractor-delivered projects will differ depending on which status applies.</p>
 
-<p>Factor IR35 status into your project pricing. If you know a contractor is inside IR35, budget for employer NI at 13.8% on top of their rate, plus the administrative cost of running payroll. If they are outside IR35, you avoid those costs but need to ensure your contracts and working practices support the status.</p>
+<p>Factor IR35 status into your project pricing. If you know a contractor is inside IR35, budget for employer NI at 15% on top of their rate, plus the administrative cost of running payroll. If they are outside IR35, you avoid those costs but need to ensure your contracts and working practices support the status.</p>
 
 <p>For agencies planning an exit, contractor status matters. Potential buyers will scrutinise your contractor arrangements during due diligence. A clean IR35 record with proper SDS documentation makes your agency more attractive. A history of treating contractors as outside IR35 without proper evidence is a red flag that can kill a deal or reduce your valuation.</p>
 

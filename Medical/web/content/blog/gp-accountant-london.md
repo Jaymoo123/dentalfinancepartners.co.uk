@@ -1,4 +1,4 @@
----
+﻿---
 title: "GP Accountant in London: Specialist Medical Accounting for Practices and Partners"
 slug: "gp-accountant-london"
 date: "2026-04-01"
@@ -12,7 +12,7 @@ image: ""
 h1: "GP Accountant in London: Specialist Accounting for Practices, Partners and Locums"
 summary: "What a specialist GP accountant in London actually does for practices, partners, salaried GPs and locums, from GMS partnership accounts and the NHS pension annual allowance to self-assessment, VAT and Making Tax Digital, with the 2026/27 figures that matter."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-london"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-london"
 faqs:
   - question: "What does a GP accountant in London actually do?"
     answer: "A specialist GP accountant handles the work a generalist often gets wrong: GMS or PMS partnership accounts and the SA800 partnership return, splitting profit between partners per the partnership agreement, the NHS pension annual certificate (Type 1) or Type 2 self-assessment, monitoring the £60,000 annual allowance and tapering for higher earners (2025/26), self-assessment for each partner, salaried GP or locum, plus VAT, capital allowances and Making Tax Digital readiness. The focus is on a profit share that is taxed correctly and an NHS pension that is certified and reconciled, not just a set of year-end accounts."

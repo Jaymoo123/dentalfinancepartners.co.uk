@@ -11,7 +11,7 @@ Engine: `docs/_engines/REWRITE_PROGRAM.md` (site-agnostic). This doc is the medi
 
 ### Onboarding flags (for the orchestrator / user; not blocking the rewrite)
 - **`gsc_page_client.py::_SITE_URL_MAP` has a typo**: `medical -> sc-domain:medicalaccountants.co.uk` (extra "ant"; real domain is medicalaccounts.co.uk). Only affects the GSC *page* client (not run here). One-line fix when the shared scripts are next touched.
-- **Corpus-wide canonical bug**: all 46 blog `.md` carry `canonical: https://www.medicalaccountantsuk.co.uk/...` — a domain the site is NOT served on (real domain medicalaccounts.co.uk). The `[slug]` route uses `post.canonical` verbatim, so the wrong canonical ships. Locked rule says preserve canonical, so rewrites will NOT change it; fixing the canonical domain across 46 pages is a separate, deliberate SEO decision for the orchestrator.
+- **Corpus-wide canonical bug**: FIXED 2026-06-17 — all 46 blog `.md` canonicals batch-updated from `medicalaccountantsuk.co.uk` to `www.medicalaccounts.co.uk`; config + scripts unified at the same time.
 
 ## STEP 1 — house positions (DONE; superseded-then-corroborated)
 The orchestrator re-locked `house_positions.md` on 2026-06-03 with a comprehensive, primary-source-verified version (10 sections, FA 2026 c.11 section cites, 26 sources). Independent re-verification at gov.uk on 2026-06-03 **corroborated every FA-2026-sensitive figure**: dividends 10.75% / 35.75% / **39.35% (additional UNCHANGED)** allowance £500 (§5); CGT 18/24 + AEA £3,000, **BADR 18% from 6 Apr 2026** (§4); CT 19/25 + 3/200 (§5); employer NIC 15% / ST £5,000 / EA £10,500 (§5), **LEL £6,708** (2026/27); **Class 4 6%** (§8); VAT £90,000 / dereg £88,000 (§6); NHS pension AA £60k / taper £200k+£260k / floor £10k / MPAA £10k / LSA £268,275 / LSDBA £1,073,100 (§2.B); MTD £50k/£30k/£20k (§9). No genuinely contested positions surfaced. Minor: McCloud "31 Jan 2027 claim" framing was not re-verified live this run but is framed conditionally in the HP.
@@ -100,6 +100,6 @@ Harness (reusable): `...workflows/scripts/medical-rewrite-rolling-wf_baf73293-36
 ### Remaining for the human (NOT part of the rewrite)
 - COMMIT: nothing is committed; the 46 changed .md files (+ docs/medical/* + sites/medical.json) await the human's commit/deploy.
 - HP §8 mileage 45p -> 55p: still flagged in site_wide_flags.md for the orchestrator to patch the locked seed.
-- Corpus-wide canonical domain bug (all pages on medicalaccountantsuk.co.uk): preserved per locked rule; needs a deliberate corpus fix.
+- Corpus-wide canonical domain bug: FIXED 2026-06-17 (batch replace to www.medicalaccounts.co.uk).
 - gsc_page_client.py medical map typo (page client only).
 - Shared link tooling is nested-only; parameterise for Medical's flat routing (or migrate to nested) before relying on predeploy_gate's link check.

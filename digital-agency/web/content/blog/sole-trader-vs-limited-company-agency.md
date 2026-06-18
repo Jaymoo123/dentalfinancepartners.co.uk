@@ -22,9 +22,9 @@ faqs: []
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- For agency profits above £60,000, a limited company saves significant tax compared to sole trader status, with savings of £5,600 at £100,000 profit and £23,900 at £200,000 profit in 2025/26.
+- For agency profits above £60,000, a limited company saves significant tax compared to sole trader status, with savings of £5,600 at £100,000 profit and £23,900 at £200,000 profit in 2026/27.
 - Sole traders pay income tax and Class 4 National Insurance on profits, while limited companies pay 19% corporation tax on profits up to £50,000, then extract income via salary and dividends.
-- The tax-efficient extraction method for limited company agency founders is a £12,570 salary and dividends, using the £500 dividend allowance and basic rate dividend tax of 8.75%.
+- The tax-efficient extraction method for limited company agency founders is a £12,570 salary and dividends, using the £500 dividend allowance and basic rate dividend tax of 10.75%.
 - As a sole trader, you are personally liable for business debts and lawsuits, whereas a limited company provides a separate legal entity that protects your personal assets.
 - The effective tax rate at £60,000 profit is 25% for a sole trader and 24.2% for a limited company, but the gap widens sharply as profits increase due to lower corporation tax rates.
 ---
@@ -46,7 +46,7 @@ keyTakeaways:
 
 <h3>Sole Trader Tax</h3>
 
-<p>As a sole trader, you pay income tax and Class 4 National Insurance on your profits. For the 2025/26 tax year:</p>
+<p>As a sole trader, you pay income tax and Class 4 National Insurance on your profits. For the 2026/27 tax year:</p>
 
 <ul>
 <li>Personal allowance: £0 to £12,570 (0%)</li>
@@ -75,7 +75,7 @@ keyTakeaways:
 <ul>
 <li>Salary: £12,570 (no income tax, no employee NI, no employer NI up to this level)</li>
 <li>Remaining profit after salary and employer costs: roughly £35,400 available for dividends</li>
-<li>Dividend tax at basic rate (8.75%): £3,098 (after £500 dividend allowance)</li>
+<li>Dividend tax at basic rate (10.75%): £3,098 (after £500 dividend allowance)</li>
 <li><strong>Total tax: £11,400 corporation tax + £3,098 dividend tax = £14,498</strong></li>
 </ul>
 
@@ -149,7 +149,7 @@ keyTakeaways:
 
 <p>If you ever plan to sell your agency, the limited company structure is almost certainly better.</p>
 
-<p>Business Asset Disposal Relief (BADR) allows you to pay 14% capital gains tax on the sale of your business, rather than the standard 20% or 24%. The lifetime limit is £1 million of gains.</p>
+<p>Business Asset Disposal Relief (BADR) allows you to pay 18% capital gains tax on the sale of your business, rather than the standard 20% or 24%. The lifetime limit is £1 million of gains.</p>
 
 <p>To qualify, you must:</p>
 <ul>
@@ -163,7 +163,7 @@ keyTakeaways:
 <p>If you build an agency worth £500,000 and sell it:</p>
 <ul>
 <li>Sole trader: £500,000 gain at 24% CGT = £120,000 tax</li>
-<li>Limited company (qualifying for BADR): £500,000 gain at 14% = £70,000 tax</li>
+<li>Limited company (qualifying for BADR): £500,000 gain at 18% = £70,000 tax</li>
 <li><strong>Saving: £50,000</strong></li>
 </ul>
 
@@ -229,9 +229,9 @@ keyTakeaways:
 
 <p>If you take more money out of the company than you have put in (through salary, dividends, or expenses), the DLA goes overdrawn. That is a loan from the company to you.</p>
 
-<p>If the loan exceeds £10,000 at any point in the year, it is a taxable benefit. You must report it on a P11D form and pay Class 1A NI at 13.8% on the cash equivalent.</p>
+<p>If the loan exceeds £10,000 at any point in the year, it is a taxable benefit. You must report it on a P11D form and pay Class 1A NI at 15% on the cash equivalent.</p>
 
-<p>If the loan is not repaid within 9 months of the company's year end, the company pays S455 tax at 33.75% on the outstanding amount. You can reclaim this once the loan is repaid, but it ties up cash.</p>
+<p>If the loan is not repaid within 9 months of the company's year end, the company pays S455 tax at 35.75% on the outstanding amount. You can reclaim this once the loan is repaid, but it ties up cash.</p>
 
 <p>Do not treat your company bank account as your personal account. It is not. Keep a clear record of every withdrawal and repayment.</p>
 

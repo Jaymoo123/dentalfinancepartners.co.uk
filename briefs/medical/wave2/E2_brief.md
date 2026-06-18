@@ -1,9 +1,9 @@
-# Brief: gp-partnership-mutual-assessment-period-what-to-check
+﻿# Brief: gp-partnership-mutual-assessment-period-what-to-check
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster E (Joining a GP partnership), pick E2
 **Source file (to be created):** `Medical/web/content/blog/gp-partnership-mutual-assessment-period-what-to-check.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-mutual-assessment-period-what-to-check
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-partnership-mutual-assessment-period-what-to-check
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner is self-employed; taxed on profit share, not drawings; partnership files SA800, partner's share flows to SA104; partnership taxation under ITTOIA 2005) and §4 (what changes hands on entry: tangible assets, premises, capital accounts; NHS goodwill cannot be sold; premises often in a separate property partnership/LLP; notional/cost rent; last-man-standing risk).
 

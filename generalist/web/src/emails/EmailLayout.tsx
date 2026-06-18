@@ -37,9 +37,9 @@ export function EmailLayout({ preview, children, unsubscribeUrl }: Props) {
           <Hr style={hr} />
           <Section style={footer}>
             <Text style={footerText}>
-              Holloway Davies Ltd · ICAEW qualified · Specialist
+              Holloway Davies · ICAEW qualified · Specialist
               accountants for UK limited companies, contractors, sole traders
-              and partnerships.
+              and partnerships. Ashfield Trading Ltd t/a Holloway Davies.
             </Text>
             <Text style={footerText}>
               <Link href="https://www.hollowaydavies.co.uk" style={footerLink}>

@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Recruitment agencies are usually the fee-payer under IR35, making them responsible for operating PAYE and National Insurance on deemed employment income.
 - The client must issue a Status Determination Statement (SDS) before the contractor starts work; the agency must pass this to the contractor and act on it.
-- If the SDS says the contractor is inside IR35, the agency must deduct income tax and employee NI from payments and pay employer NI at 13.8%.
+- If the SDS says the contractor is inside IR35, the agency must deduct income tax and employee NI from payments and pay employer NI at 15%.
 - HMRC has been targeting recruitment agencies with nudge letters and compliance reviews since 2022, with retrospective bills potentially reaching six figures.
 - Blanket determinations that all contractors are outside IR35 are high-risk; agencies must follow the correct legal process for each engagement.
 ---
@@ -71,7 +71,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Receiving the SDS:</strong> The client must give you a Status Determination Statement before the contractor starts work. You must pass this on to the contractor.</li>
-<li><strong>Operating PAYE:</strong> If the SDS says the contractor is inside IR35, you must deduct income tax and employee NI from the payments you make to the contractor's limited company. You also pay employer NI at 13.8%.</li>
+<li><strong>Operating PAYE:</strong> If the SDS says the contractor is inside IR35, you must deduct income tax and employee NI from the payments you make to the contractor's limited company. You also pay employer NI at 15%.</li>
 <li><strong>Reporting to HMRC:</strong> You report these deductions through your regular RTI (Real Time Information) submissions, just like you do for permanent employees.</li>
 <li><strong>Appealing the SDS:</strong> If the client's SDS says the contractor is outside IR35 but you disagree, you can challenge it. However, you must have reasonable grounds for doing so.</li>
 </ul>
@@ -117,7 +117,7 @@ keyTakeaways:
 <li>If the SDS says "inside IR35," set up the contractor on your payroll system</li>
 <li>Deduct income tax and NI from each payment to the contractor's limited company</li>
 <li>Report through RTI on or before the payment date</li>
-<li>Pay employer NI at 13.8% on the deemed employment payment</li>
+<li>Pay employer NI at 15% on the deemed employment payment</li>
 <li>Issue a payslip to the contractor for each payment</li>
 <li>If the working practices change during the engagement, ask the client for a new SDS</li>
 </ul>

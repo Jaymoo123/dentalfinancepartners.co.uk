@@ -18,6 +18,7 @@ const SITES = {
   medical:    { blogDir: 'Medical/web/content/blog',        hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
   generalist: { blogDir: 'generalist/web/content/blog',     hp: 'docs/generalist/house_positions.md', adviser: 'UK general practice accountant for owner-managed businesses' },
   agency:     { blogDir: 'digital-agency/web/content/blog', hp: 'docs/agency/house_positions.md',     adviser: 'UK accountant for digital and creative agency founders' },
+  'construction-cis': { blogDir: 'construction-cis/web/content/blog', hp: 'docs/construction-cis/house_positions.md', adviser: 'UK construction industry and CIS specialist accountant' },
 }
 const cfg = SITES[site]
 if (!cfg) throw new Error(`track2_independent_qa: unknown site '${site}'. Add a SITES entry (blogDir/hp/adviser from sites/${site}.json) first.`)

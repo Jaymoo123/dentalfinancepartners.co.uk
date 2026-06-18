@@ -128,7 +128,7 @@ keyTakeaways:
 
 <p>Most agency founders don't think about exit until someone makes them an offer. By then, it's often too late to structure things tax-efficiently.</p>
 
-<p>Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on qualifying disposals, up to a £1m lifetime limit. But you need to hold the shares for at least two years, and you need to be an officer or employee of the company throughout that period.</p>
+<p>Business Asset Disposal Relief (BADR) gives you a 18% capital gains tax rate on qualifying disposals, up to a £1m lifetime limit. But you need to hold the shares for at least two years, and you need to be an officer or employee of the company throughout that period.</p>
 
 <p>If your accountant hasn't asked about your exit timeline, they're not thinking ahead. A proactive accountant will start the conversation three to five years before you plan to sell. They'll help you structure your shareholding, consider a holding company, and plan for the most tax-efficient exit possible.</p>
 

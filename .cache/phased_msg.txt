@@ -1,0 +1,6 @@
+Phase D spec: estate rollout, site-by-site adoption template
+
+Compliance gate resolved by user (opt-out posture estate-wide). Prefixes frozen:
+dfp/ma/afl/aff. Sequence: dentists -> medical -> solicitors -> agency.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

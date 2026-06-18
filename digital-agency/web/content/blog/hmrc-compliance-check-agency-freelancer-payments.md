@@ -24,7 +24,7 @@ faqs:
 - question: What happens if I cannot find the contracts or invoices HMRC has asked for?
   answer: Tell HMRC immediately that the records are missing and explain why. If you have a reasonable excuse (a server crash, a change of accountant, a fire), HMRC may accept it. If you simply did not keep records, HMRC will estimate the tax due based on the information they have. That estimate will almost certainly be higher than the actual liability. Keeping proper records is a legal requirement, so missing records can lead to penalties on their own.
 - question: Can HMRC force me to pay tax on freelancer payments if the freelancer has already paid tax on that income?
-  answer: Yes, in most cases. HMRC can collect the tax from both sides. If a freelancer should have been treated as an employee, your agency owes employer NI (13.8%) and the apprenticeship levy. The freelancer owes income tax and employee NI on the same payments. HMRC will pursue both. This is why getting the status determination right upfront is so important. Double taxation is a real risk.
+  answer: Yes, in most cases. HMRC can collect the tax from both sides. If a freelancer should have been treated as an employee, your agency owes employer NI (15%) and the apprenticeship levy. The freelancer owes income tax and employee NI on the same payments. HMRC will pursue both. This is why getting the status determination right upfront is so important. Double taxation is a real risk.
 - question: Will HMRC tell my freelancers that I am being investigated?
   answer: HMRC can contact your freelancers as part of their investigation. They often do. They may write to freelancers asking about their working arrangements, their equipment, their right to substitute, and their other clients. This is not a punishment. It is HMRC gathering evidence. But it can damage your relationship with freelancers if they feel implicated. Be upfront with your freelancers if you know HMRC may contact them.
 authorSlug: james-whitfield
@@ -107,7 +107,7 @@ keyTakeaways:
 If the freelancer worked exclusively for you, used your equipment, took direction from your team, and had no real business risk, HMRC will likely argue they should have been on payroll.</p>
 
 <p><strong>2. What tax and NI would have been due?</strong><br>
-If the freelancer was inside IR35, your agency should have operated PAYE on their payments. That means income tax at the employee's rate, employee NI, and employer NI at 13.8%. Plus the apprenticeship levy if your total pay bill exceeds £3m.</p>
+If the freelancer was inside IR35, your agency should have operated PAYE on their payments. That means income tax at the employee's rate, employee NI, and employer NI at 15%. Plus the apprenticeship levy if your total pay bill exceeds £3m.</p>
 
 <p><strong>3. What penalties could apply?</strong><br>
 If HMRC decides you were careless (you should have known but did not check properly), penalties start at 15% of the tax due. If they decide the error was deliberate, penalties start at 30%. If you disclosed the error voluntarily before the check started, penalties reduce significantly.</p>

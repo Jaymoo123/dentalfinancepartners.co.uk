@@ -1,9 +1,9 @@
-# Brief: financing-gp-partnership-buy-in-tax-relief
+﻿# Brief: financing-gp-partnership-buy-in-tax-relief
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster E (Joining a GP partnership), pick E3
 **Source file (to be created):** `Medical/web/content/blog/financing-gp-partnership-buy-in-tax-relief.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/financing-gp-partnership-buy-in-tax-relief
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/financing-gp-partnership-buy-in-tax-relief
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner is self-employed; taxed on profit share, not drawings; partnership taxation under ITTOIA 2005), plus the verified qualifying-loan-interest-relief statute (ITA 2007 ss.383, 398, 399 and the s.24A cap), with a light §4 cross-ref (the buy-in funds a capital-account contribution for net assets and any premises share; NHS goodwill cannot be sold).
 

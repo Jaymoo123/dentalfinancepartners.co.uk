@@ -37,7 +37,7 @@ faqs:
 
 <p>For a <strong>salary sacrifice pension agency director</strong>, this is one of the most straightforward ways to reduce your tax bill while building retirement savings. The savings apply to both you and your company.</p>
 
-<p>Here is the core arithmetic. If you are a higher-rate taxpayer and your agency pays you a £10,000 bonus, you receive roughly £5,700 after tax and NI. If that same £10,000 goes into your pension via salary sacrifice, the full £10,000 lands in your pension. Your agency also saves £1,380 in employer NI. That is £1,380 that stays in the business.</p>
+<p>Here is the core arithmetic. If you are a higher-rate taxpayer and your agency pays you a £10,000 bonus, you receive roughly £5,700 after tax and NI. If that same £10,000 goes into your pension via salary sacrifice, the full £10,000 lands in your pension. Your agency also saves £1,500 in employer NI. That is £1,500 that stays in the business.</p>
 
 <p>Most agency directors we meet at Agency Founder Finance are already taking a small salary and drawing dividends. Salary sacrifice fits neatly alongside that structure.</p>
 
@@ -72,12 +72,12 @@ faqs:
 <p>Let us run a worked example for a 12-person digital agency billing £800,000 per year. The director pays themselves a salary of £12,570 and dividends of £60,000. They want to put an extra £20,000 into their pension.</p>
 
 <p><strong>Option 1: Personal contribution from net income</strong></p>
-<p>The director takes the £20,000 as additional dividend income. After higher-rate dividend tax at 33.75%, they receive £13,250. They pay £6,750 in tax. They then contribute £13,250 to their pension. HMRC adds basic rate tax relief at source, so £16,562 lands in the pension. Total tax cost to the director: £6,750. No saving for the company.</p>
+<p>The director takes the £20,000 as additional dividend income. After higher-rate dividend tax at 35.75%, they receive £13,250. They pay £6,750 in tax. They then contribute £13,250 to their pension. HMRC adds basic rate tax relief at source, so £16,562 lands in the pension. Total tax cost to the director: £6,750. No saving for the company.</p>
 
 <p><strong>Option 2: Salary sacrifice via bonus</strong></p>
-<p>The company pays the director a £20,000 bonus. The director sacrifices it into the pension. The company saves £2,760 in employer NI (13.8% of £20,000). The director pays no income tax or NI on the £20,000. The full £20,000 goes into the pension. The company also saves corporation tax on the bonus plus the employer NI, roughly £5,690 at 25%.</p>
+<p>The company pays the director a £20,000 bonus. The director sacrifices it into the pension. The company saves £3,000 in employer NI (15% of £20,000). The director pays no income tax or NI on the £20,000. The full £20,000 goes into the pension. The company also saves corporation tax on the bonus plus the employer NI, roughly £5,750 at 25%.</p>
 
-<p>The difference is stark. Option 2 puts £3,438 more into the pension and saves the company £2,760 in employer NI plus £5,690 in corporation tax. That is a combined saving of £8,450 versus Option 1.</p>
+<p>The difference is stark. Option 2 puts £3,438 more into the pension and saves the company £3,000 in employer NI plus £5,750 in corporation tax. That is a combined saving of £8,750 versus Option 1.</p>
 
 <p>For a <strong>salary sacrifice pension agency director</strong>, those numbers are hard to ignore.</p>
 
@@ -85,9 +85,9 @@ faqs:
 
 <p>Most directors focus on their own tax savings. They forget about the employer NI saving. But that saving stays in your company. It is additional profit.</p>
 
-<p>Employer NI is 13.8% on earnings above the secondary threshold (£9,100 for 2025/26). If you sacrifice £20,000 of salary, your company saves £2,760. If you sacrifice £50,000, the saving is £6,900.</p>
+<p>Employer NI is 15% on earnings above the secondary threshold (£5,000 for 2025/26). If you sacrifice £20,000 of salary, your company saves £3,000. If you sacrifice £50,000, the saving is £7,500.</p>
 
-<p>Over five years, that adds up. A director sacrificing £20,000 per year saves their agency £13,800 in employer NI alone. That money can fund a new hire, cover software subscriptions, or simply improve the agency's gross margin.</p>
+<p>Over five years, that adds up. A director sacrificing £20,000 per year saves their agency £15,000 in employer NI alone. That money can fund a new hire, cover software subscriptions, or simply improve the agency's gross margin.</p>
 
 <p>Our ICAEW qualified team at Agency Founder Finance regularly sees agency directors who have been paying bonuses for years without considering salary sacrifice. The employer NI they have paid is substantial.</p>
 
@@ -178,7 +178,7 @@ faqs:
 
 <p>Salary sacrifice is not complicated. It requires a contract variation, a pension that accepts employer contributions, and payroll software that handles the deductions. The savings are significant: lower income tax, lower employee NI, lower employer NI, and a corporation tax deduction for the full amount.</p>
 
-<p>For a <strong>salary sacrifice pension agency director</strong>, the typical saving is 13.8% employer NI plus your marginal income tax and NI rate. On a £20,000 contribution, that is roughly £6,000 in total tax saved. Every year.</p>
+<p>For a <strong>salary sacrifice pension agency director</strong>, the typical saving is 15% employer NI plus your marginal income tax and NI rate. On a £20,000 contribution, that is roughly £6,000 in total tax saved. Every year.</p>
 
 <p>If you are not already using salary sacrifice, you are leaving money on the table. Talk to your accountant. Or if you do not have one who understands agency structures, <a href="/contact">get in touch</a>. We will run the numbers for your specific situation.</p>
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CheckCircle2, ChevronRight, AlertTriangle, Info } from "lucide-react";
 import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
@@ -32,7 +33,7 @@ type Finding = {
 };
 
 // LD-04: must be exactly the disclosure rendered next to the step-6 checkbox.
-const CONSENT_TEXT = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our Privacy Policy.`;
+const CONSENT_TEXT = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
 function deriveFindings(answers: Answers): Finding[] {
   const findings: Finding[] = [];
@@ -415,7 +416,7 @@ export function MedicalHealthCheckWizard() {
                 className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--copper)]"
               />
               <span>
-                I agree to my details being shared by {niche.display_name} with specialist partners for the purpose of responding to my health check submission and providing specialist advice. See our{" "}
+                {siteConfig.leadConsentText} See our{" "}
                 <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--copper)] underline">
                   Privacy Policy
                 </a>

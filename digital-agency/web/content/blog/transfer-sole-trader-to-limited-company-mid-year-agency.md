@@ -26,7 +26,7 @@ faqs:
 - question: What happens to my VAT registration when I incorporate mid-year?
   answer: Your sole trader VAT registration doesn’t automatically transfer. You can either transfer the VAT number under a “transfer of a going concern” (TOGC) or cancel the sole trader registration and register the company separately. The TOGC route is cleaner and avoids gaps in VAT coverage. Notify HMRC before incorporation using form VAT1 or by writing to the VAT office.
 - question: How do I avoid the director’s loan account tax charge after incorporation?
-  answer: The director’s loan account (DLA) is created when the company owes you for assets transferred. To avoid the section 455 charge (33.75% on outstanding amounts), either repay the DLA within nine months of the company’s year-end, or structure the initial transfer so the company only takes what it needs. Many agency founders transfer just enough cash to cover operating costs, leaving savings outside the company.
+  answer: The director’s loan account (DLA) is created when the company owes you for assets transferred. To avoid the section 455 charge (35.75% on outstanding amounts), either repay the DLA within nine months of the company’s year-end, or structure the initial transfer so the company only takes what it needs. Many agency founders transfer just enough cash to cover operating costs, leaving savings outside the company.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -77,9 +77,9 @@ keyTakeaways:
 
 <p>This is where most mid-year incorporations go wrong. When you transfer assets from your sole trader business to the company, the company owes you for those assets. That debt sits in a director’s loan account (DLA).</p>
 
-<p>If the company doesn’t repay that loan within nine months of its year-end, you face a section 455 charge: 33.75% of the outstanding amount. That’s not a tax you get back easily. It’s refundable when the loan is repaid, but the cash flow impact can be painful.</p>
+<p>If the company doesn’t repay that loan within nine months of its year-end, you face a section 455 charge: 35.75% of the outstanding amount. That’s not a tax you get back easily. It’s refundable when the loan is repaid, but the cash flow impact can be painful.</p>
 
-<p>Here’s how it plays out in practice. You incorporate on 1 October. You transfer £50,000 of cash and debtors to the company. The company now owes you £50,000. You draw dividends over the next 12 months, totalling £40,000. The DLA reduces to £10,000. If the company’s year-end is 30 September, you have until 30 June (nine months later) to clear that £10,000. If you don’t, the company pays 33.75% on it.</p>
+<p>Here’s how it plays out in practice. You incorporate on 1 October. You transfer £50,000 of cash and debtors to the company. The company now owes you £50,000. You draw dividends over the next 12 months, totalling £40,000. The DLA reduces to £10,000. If the company’s year-end is 30 September, you have until 30 June (nine months later) to clear that £10,000. If you don’t, the company pays 35.75% on it.</p>
 
 <p>The fix is simple. Either repay the DLA within the nine-month window, or structure your initial transfer so the company only takes what it needs, and you retain the rest personally. Many agency founders transfer just enough cash to cover initial operating costs, leaving the bulk of their savings outside the company. That avoids the DLA problem entirely.</p>
 
@@ -103,7 +103,7 @@ keyTakeaways:
 
 <p>The standard model for agency founders is a salary of £12,570 per year (up to the primary NI threshold) and dividends from retained profits. But mid-year incorporation complicates this. You’ve already earned sole trader income in the current tax year. That income uses up your personal allowance and fills your basic rate band.</p>
 
-<p>If you’ve earned £40,000 of sole trader profit by October, your personal allowance is fully used, and you’re already in the basic rate band. Any dividends you take from the company between October and April will be taxed at 8.75% (basic rate) or 33.75% (higher rate), depending on total income.</p>
+<p>If you’ve earned £40,000 of sole trader profit by October, your personal allowance is fully used, and you’re already in the basic rate band. Any dividends you take from the company between October and April will be taxed at 10.75% (basic rate) or 35.75% (higher rate), depending on total income.</p>
 
 <p>This is where many agency founders overpay. They take dividends without checking their cumulative income for the tax year. Then they file a self-assessment return and discover a larger tax bill than expected.</p>
 
@@ -129,7 +129,7 @@ keyTakeaways:
 
 <h2>Step 7: Business Asset Disposal Relief Planning</h2>
 
-<p>If you’re thinking about exit, the timing of incorporation matters for BADR (Business Asset Disposal Relief). BADR gives you a 14% capital gains tax rate on qualifying disposals, up to £1 million of gains. But you must hold the shares for at least two years before disposal.</p>
+<p>If you’re thinking about exit, the timing of incorporation matters for BADR (Business Asset Disposal Relief). BADR gives you a 18% capital gains tax rate on qualifying disposals, up to £1 million of gains. But you must hold the shares for at least two years before disposal.</p>
 
 <p>If you incorporate mid-year, the two-year clock starts on incorporation date. Not on the date you started trading as a sole trader. So if you incorporate in October 2025, you can’t sell the company for a BADR-qualifying gain until October 2027 at the earliest.</p>
 

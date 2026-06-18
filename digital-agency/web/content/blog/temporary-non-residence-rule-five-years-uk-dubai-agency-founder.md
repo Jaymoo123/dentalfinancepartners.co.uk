@@ -120,7 +120,7 @@ keyTakeaways:
 
 <p>The £2 million gain is now treated as arising in the 2029/30 tax year. You owe UK capital gains tax.</p>
 
-<p>Assuming you are a higher rate taxpayer, the CGT rate on carried interest or business asset disposals is 24% (for non-BADR gains) or 14% (if BADR applies and you qualify). If BADR applies, you pay 14% on the first £1 million and 24% on the remaining £1 million. Total tax: £380,000.</p>
+<p>Assuming you are a higher rate taxpayer, the CGT rate on carried interest or business asset disposals is 24% (for non-BADR gains) or 18% (if BADR applies and you qualify). If BADR applies, you pay 18% on the first £1 million and 24% on the remaining £1 million. Total tax: £380,000.</p>
 
 <p>If BADR does not apply, you pay 24% on the full £2 million. Total tax: £480,000.</p>
 
@@ -128,11 +128,11 @@ keyTakeaways:
 
 <h2>What About BADR?</h2>
 
-<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) is available on the first £1 million of qualifying gains. The rate is 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026.</p>
+<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) is available on the first £1 million of qualifying gains. The rate is 18% for disposals from 6 April 2025, rising to 18% from 6 April 2026.</p>
 
 <p>If you are temporarily non-resident and return within five years, you can still claim BADR on the clawed-back gain, provided you met the qualifying conditions at the time of disposal. You need to have held at least 5% of the shares and been an officer or employee for the two years before the sale.</p>
 
-<p>But the rate you pay is the rate in force in the year you return, not the year you sold. So if you sell in 2027 (when the BADR rate might be 14%) but return in 2030 (when the rate is 18%), you pay 18% on the first £1 million.</p>
+<p>But the rate you pay is the rate in force in the year you return, not the year you sold. So if you sell in 2027 (when the BADR rate might be 18%) but return in 2030 (when the rate is 18%), you pay 18% on the first £1 million.</p>
 
 <p>This is another planning point. The timing of your return affects the tax rate applied to the clawed-back gain.</p>
 

@@ -73,7 +73,7 @@ keyTakeaways:
 <h3>Balance Sheet</h3>
 <p>Your balance sheet shows what you own (assets), what you owe (liabilities), and what's left for shareholders (equity). For an agency, the critical items are trade debtors (what clients owe you), trade creditors (what you owe suppliers), and the director's loan account (what you owe the company or it owes you).</p>
 
-<p>A healthy agency balance sheet shows trade debtors turning over in under 45 days, no director's loan overdrawn beyond £10k (or you pay S455 tax at 33.75%), and enough cash to cover at least one VAT quarter.</p>
+<p>A healthy agency balance sheet shows trade debtors turning over in under 45 days, no director's loan overdrawn beyond £10k (or you pay S455 tax at 35.75%), and enough cash to cover at least one VAT quarter.</p>
 
 <h3>Cash Flow Statement</h3>
 <p>This is the one most founders ignore, and the one that matters most. Your cash flow statement shows actual money moving in and out. Profit is an opinion. Cash is a fact. You can have a £100k profit on your P&L and be insolvent because your biggest client hasn't paid.</p>
@@ -128,7 +128,7 @@ keyTakeaways:
 </table>
 
 <h3>How to Calculate Your Real Gross Margin</h3>
-<p>Most agency founders calculate gross margin wrong. They include only freelancer costs and direct expenses. They forget to include the salary of the billable team member, their employer's NI at 13.8%, their pension contribution, their training budget, and the software licence they use to do the work.</p>
+<p>Most agency founders calculate gross margin wrong. They include only freelancer costs and direct expenses. They forget to include the salary of the billable team member, their employer's NI at 15%, their pension contribution, their training budget, and the software licence they use to do the work.</p>
 
 <p>Here's the correct calculation for a typical digital agency project:</p>
 <ul>
@@ -191,7 +191,7 @@ keyTakeaways:
 <p>Tax is not something you deal with in January. It's something you plan for all year. For agency founders operating through a limited company, the structure is relatively tax-efficient, but only if you manage it properly.</p>
 
 <h3>Corporation Tax</h3>
-<p>For the 2025/26 tax year, corporation tax rates are:</p>
+<p>For the 2026/27 tax year, corporation tax rates are:</p>
 <ul>
 <li>19% on profits up to £50,000</li>
 <li>25% on profits above £250,000</li>
@@ -200,9 +200,9 @@ keyTakeaways:
 <p>Most agencies with profits between £50k and £250k pay an effective rate somewhere between 19% and 25%. The key is to plan your profit extraction, salary, dividends, pension contributions, to keep your taxable profit as low as possible while staying within HMRC's rules.</p>
 
 <h3>Salary and Dividends</h3>
-<p>The classic agency founder structure is a small salary (around £12,570 to use your personal allowance) and the rest as dividends. For 2025/26, dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). The dividend allowance is just £500, so almost all dividends are taxable.</p>
+<p>The classic agency founder structure is a small salary (around £12,570 to use your personal allowance) and the rest as dividends. For 2026/27, dividend tax rates are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate). The dividend allowance is just £500, so almost all dividends are taxable.</p>
 
-<p>This structure works well up to about £50,000 of total income. Beyond that, you're paying 33.75% on dividends in the higher rate band. At that point, pension contributions become very attractive, they reduce your corporation tax and grow tax-free. Read more in our <a href="/blog/salary-and-dividends">salary and dividends guide</a>.</p>
+<p>This structure works well up to about £50,000 of total income. Beyond that, you're paying 35.75% on dividends in the higher rate band. At that point, pension contributions become very attractive, they reduce your corporation tax and grow tax-free. Read more in our <a href="/blog/salary-and-dividends">salary and dividends guide</a>.</p>
 
 <h3>VAT</h3>
 <p>If your agency turnover exceeds £90,000, you must register for VAT. Most agencies use the standard scheme (20% on invoices, reclaim input VAT). Some use the flat rate scheme, but be careful: if you're a limited cost trader (most agencies are), your flat rate percentage is 16.5%, which often costs more than standard accounting.</p>
@@ -215,7 +215,7 @@ keyTakeaways:
 <p>Creative agencies doing genuinely novel work, not just applying existing techniques, should investigate this. We've seen claims of £15k-£80k for mid-sized agencies. It's not free money, you need to document the technical uncertainty and the work done to resolve it. But it's worth the effort.</p>
 
 <h3>Business Asset Disposal Relief (BADR)</h3>
-<p>If you sell your agency, you'll pay capital gains tax. BADR gives you a 14% rate on the first £1 million of lifetime gains, compared to the standard 20% CGT rate. To qualify, you need to have been an officer or employee of the company, holding at least 5% of shares, for two years before the sale.</p>
+<p>If you sell your agency, you'll pay capital gains tax. BADR gives you a 18% rate on the first £1 million of lifetime gains, compared to the standard 20% CGT rate. To qualify, you need to have been an officer or employee of the company, holding at least 5% of shares, for two years before the sale.</p>
 
 <p>If you're planning an exit, structure your shareholding now. Don't wait until you're in negotiations. See our <a href="/blog/growth-and-exit">growth and exit guide</a> for more on exit planning.</p>
 
@@ -265,7 +265,7 @@ keyTakeaways:
 <p>The temptation is to hire a senior person because you have a busy few months. Then the project ends, and you're carrying a £70k salary with no billable work. Hire only when you have 12 months of consistent revenue that justifies the headcount. Use freelancers for spikes.</p>
 
 <h3>Mistake 3: Ignoring the Director's Loan Account</h3>
-<p>Taking money from the company when you need it, without proper documentation, creates a director's loan. If the loan exceeds £10,000 and isn't repaid within 9 months of the year end, the company pays S455 tax at 33.75%. And if HMRC decides it's a benefit, you'll owe additional tax and NI. Track every withdrawal. Repay loans before the 9-month deadline.</p>
+<p>Taking money from the company when you need it, without proper documentation, creates a director's loan. If the loan exceeds £10,000 and isn't repaid within 9 months of the year end, the company pays S455 tax at 35.75%. And if HMRC decides it's a benefit, you'll owe additional tax and NI. Track every withdrawal. Repay loans before the 9-month deadline.</p>
 
 <h3>Mistake 4: Not Separating Personal and Business Finances</h3>
 <p>Your company is a separate legal entity. HMRC treats it that way. If you're paying personal expenses from the business account, you're creating a compliance nightmare. Get a separate business bank account, <a href="/contact">we can recommend options</a>, and run everything through it. Your personal spending comes from your salary or dividends, not the company card.</p>
@@ -281,7 +281,7 @@ keyTakeaways:
 <p>The structure you choose at the start affects your tax position for years. Should you be a limited company or a sole trader? What share structure? What class of shares? Who are the directors? Getting this right early saves thousands in restructuring costs later. See our <a href="/blog/incorporation-and-structure">incorporation and structure guide</a>.</p>
 
 <h3>When You Hire Your First Employee</h3>
-<p>Payroll, auto-enrolment, employer's NI, employment allowance, HMRC RTI submissions, the compliance burden multiplies when you hire. An accountant can set up your payroll system and make sure you're claiming the employment allowance (£5,000 per year for most agencies).</p>
+<p>Payroll, auto-enrolment, employer's NI, employment allowance, HMRC RTI submissions, the compliance burden multiplies when you hire. An accountant can set up your payroll system and make sure you're claiming the employment allowance (£10,500 per year for most agencies).</p>
 
 <h3>When You Take on Investment or Debt</h3>
 <p>If you're raising equity or taking a loan, the terms matter enormously. An accountant can model the impact on your cash flow, your tax position, and your exit strategy. Don't sign anything without running the numbers.</p>

@@ -2,9 +2,9 @@
 
 import { useMemo, useState } from "react";
 
-const SECONDARY_THRESHOLD = 9100;
-const EMPLOYER_NI_RATE = 0.138;
-const EMPLOYMENT_ALLOWANCE = 5000;
+const SECONDARY_THRESHOLD = 5000;
+const EMPLOYER_NI_RATE = 0.15;
+const EMPLOYMENT_ALLOWANCE = 10500;
 const PENSION_MIN_QUALIFYING = 6240;
 const PENSION_EMPLOYER_MIN_RATE = 0.03;
 
@@ -132,7 +132,7 @@ export function EmployerNICalculator() {
               className="mt-1 h-4 w-4 accent-indigo-600"
             />
             <span className="text-sm text-slate-700">
-              <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£5,000 off employer NI). Requires at least two employees on the payroll, single-director-only companies do not qualify.
+              <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£10,500 off employer NI). Requires at least two employees on the payroll, single-director-only companies do not qualify.
             </span>
           </label>
           <label className="flex items-start gap-3">

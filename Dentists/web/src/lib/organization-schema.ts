@@ -1,23 +1,34 @@
-﻿import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/config/site";
 
 export function buildOrganizationJsonLd() {
+  const office = siteConfig.company.registeredOffice;
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${siteConfig.url}#organization`,
     name: siteConfig.name,
-    legalName: siteConfig.legalName,
+    // Registered legal entity vs the public-facing trading name (brand).
+    legalName: siteConfig.company.legalName,
+    alternateName: siteConfig.company.tradingName,
+    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
     url: siteConfig.url,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: `${office.line1}, ${office.line2}`,
+      addressLocality: office.city,
+      postalCode: office.postcode,
+      addressCountry: "GB",
+    },
     logo: {
       "@type": "ImageObject",
       url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: siteConfig.contact.phone,
       contactType: "customer service",
       areaServed: "GB",
       availableLanguage: "en",
+      url: `${siteConfig.url}/contact`,
     },
     areaServed: {
       "@type": "Country",

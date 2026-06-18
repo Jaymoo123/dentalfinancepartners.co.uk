@@ -22,7 +22,7 @@ faqs:
 - question: Can a copywriter on a monthly retainer ever be outside IR35?
   answer: It is difficult but possible. The retainer must be structured as a series of separate projects, each with its own scope and fee. The copywriter must have the right to refuse any month's work without penalty. They must also have genuine substitution rights and work for other clients. Most retainers fail these tests and are treated as inside IR35.
 - question: What happens if HMRC decides my copywriter was inside IR35 but I treated them as outside?
-  answer: HMRC will issue a determination that the copywriter was a deemed employee. You will owe the income tax and employee NI that should have been deducted from the copywriter's invoices, plus employer NI at 13.8%, plus interest. If HMRC considers the error careless or deliberate, penalties of 30-100% of the tax due can apply.
+  answer: HMRC will issue a determination that the copywriter was a deemed employee. You will owe the income tax and employee NI that should have been deducted from the copywriter's invoices, plus employer NI at 15%, plus interest. If HMRC considers the error careless or deliberate, penalties of 30-100% of the tax due can apply.
 - question: Do I need to issue an SDS for every copywriter I hire, even for a single small project?
   answer: Yes, if you are a medium or large agency. An SDS is required before the engagement starts for every contractor, regardless of the project size. For a small project, the SDS can be brief, but it must state the conclusion and the reasons. Failing to issue an SDS is a separate compliance failure even if the status determination is correct.
 - question: Can I use the CEST tool to determine IR35 status for my copywriter?

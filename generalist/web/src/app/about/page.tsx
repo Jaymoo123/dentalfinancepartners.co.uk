@@ -169,7 +169,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Found a mistake, an out-of-date figure or an unclear paragraph?{" "}
-                <a href={`mailto:${siteConfig.contact.email}`}>Email the editorial team</a>
+                <Link href="/contact">Contact the editorial team</Link>
                 {" "}and we&rsquo;ll fix it.
               </p>
             </div>

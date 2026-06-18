@@ -21,7 +21,7 @@ This system automates blog content generation, lead management, and SEO optimiza
 **Current Niches:**
 - Dentists (dentalfinancepartners.co.uk)
 - Property/Landlords (propertytaxpartners.co.uk)
-- Medical (medicalaccountantsuk.co.uk)
+- Medical (medicalaccounts.co.uk)
 - Solicitors (accountsforlawyers.co.uk)
 
 **Key Features:**

@@ -49,7 +49,6 @@ export function buildAccountingService(input: LocalBusinessInput): Organization 
       url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     },
     email: siteConfig.contact.email,
-    telephone: siteConfig.contact.phone,
     address,
     areaServed: (input.areaServed || [input.city]).map((c) => ({
       "@type": "City",

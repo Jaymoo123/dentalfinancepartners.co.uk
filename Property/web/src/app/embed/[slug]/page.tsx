@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { EmbedAutoResize } from "@/components/embed/EmbedAutoResize";
+import { EmbedAttribution } from "@accounting-network/web-shared/tools/embed/EmbedAttribution";
 import { siteConfig } from "@/config/site";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 
@@ -35,16 +36,12 @@ export default async function CalculatorEmbedPage({ params }: Props) {
   return (
     <div className="bg-white p-3 sm:p-4">
       <CalculatorClient slug={tool.slug} variant="embed" />
-      <div className="mt-3 text-center">
-        <a
-          href={`${siteConfig.url}/calculators/${tool.slug}?utm_source=partner-embed&utm_medium=iframe&utm_campaign=${tool.slug}`}
-          target="_blank"
-          rel="noopener"
-          className="text-xs text-slate-500 hover:text-emerald-700 transition-colors"
-        >
-          Powered by <span className="font-bold text-slate-700">Property Tax Partners</span> · specialist UK property accountants
-        </a>
-      </div>
+      <EmbedAttribution
+        siteName={siteConfig.name}
+        siteUrl={siteConfig.url}
+        toolSlug={tool.slug}
+        leadCtaLabel="Speak to a property tax specialist"
+      />
       <EmbedAutoResize />
     </div>
   );

@@ -1,0 +1,10 @@
+GAP-3 preconditions: live vw_* audit + 2 view migrations applied to prod
+
+- All 27 vw_* views parameterise by site_key; one hardcode (channel internal
+  classification) fixed via sites-registry domain join, Property output proven
+  byte-identical by same-instant EXCEPT diff.
+- Visits-to-conversion attribution fix: renamed off colliding version, corrected
+  created_at -> started_at (live schema check), applied + recorded.
+- Accrual calendar gate waived by user; generalist at 9 human sessions.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

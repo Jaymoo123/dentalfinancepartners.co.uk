@@ -1,0 +1,9 @@
+Track 2 MTD cluster: 8 ranking-grade rewrites (8/8 all_clear, gate PASS, not deployed)
+
+Full MTD cluster (6 fresh + 2 reversed-collapse pages rewritten, rewrite-only).
+Independent QA-autofix runner: 8/8 all_clear. Fixes this batch: s.354 -> ITA
+2007 s.96 (post-cessation expense relief); FA 2021 Sch 24 vs Sch 26 split;
+SI 2026/336 reg 6 (not 24); TMA 1970 s.12B fifth-anniversary; MTD threshold
+boundary (income must EXCEED 50k). Briefs + manager corrections included.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>

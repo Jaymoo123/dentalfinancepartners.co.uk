@@ -1,7 +1,20 @@
 {
   "niche_id": "medical",
   "display_name": "Medical Accountants UK",
-  "legal_name": "Medical Accountants UK Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
   "domain": "www.medicalaccounts.co.uk",
   "tagline": "Specialist accountants for UK medical professionals",
   "description": "Expert accounting for GPs, consultants and medical practices. NHS pension advice, locum tax planning, private practice incorporation and expense claims.",

@@ -1,7 +1,20 @@
 {
   "niche_id": "property",
   "display_name": "Property Tax Partners",
-  "legal_name": "Property Tax Partners Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": null,
   "domain": "www.propertytaxpartners.co.uk",
   "tagline": "Get your property tax sorted",
   "description": "Specialist property accountants for UK landlords. Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response. Free calculators.",

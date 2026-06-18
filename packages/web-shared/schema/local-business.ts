@@ -87,7 +87,8 @@ export interface LocalBusinessConfig {
   description: string;
   url: string;
   logo: string;
-  email: string;
+  /** Optional: omit when there is no monitored public mailbox to advertise. */
+  email?: string;
   phone: string;
   areaServed: string;
   city: string;
@@ -118,7 +119,7 @@ export function buildLocalBusinessJsonLd(config: LocalBusinessConfig): string {
     contactPoint: {
       "@type": "ContactPoint",
       telephone: config.phone,
-      email: config.email,
+      ...(config.email ? { email: config.email } : {}),
       contactType: "customer service",
       areaServed: "GB",
       availableLanguage: ["English"],

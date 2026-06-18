@@ -116,7 +116,7 @@ keyTakeaways:
 
 <p>This matters more than most agency founders realise. If you take money from your company that isn't salary, dividends, or expense reimbursements, it goes into your director's loan account.</p>
 
-<p>If the balance exceeds £10,000 at any point, it's a taxable benefit. If it's not repaid within nine months of your year-end, the company pays S455 tax at 33.75%. That's a significant cash flow hit.</p>
+<p>If the balance exceeds £10,000 at any point, it's a taxable benefit. If it's not repaid within nine months of your year-end, the company pays S455 tax at 35.75%. That's a significant cash flow hit.</p>
 
 <p>Your MTD software needs to track this properly. Xero and QuickBooks both handle director's loan accounts well, with dedicated reports showing the balance and flagging when it exceeds limits. FreeAgent has a simpler version but it works for most agency setups.</p>
 

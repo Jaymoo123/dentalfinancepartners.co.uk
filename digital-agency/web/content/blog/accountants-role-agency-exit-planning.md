@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Involve your accountant two to three years before selling your agency, not six months, to allow time for meaningful tax planning.
 - Clean up your balance sheet early, including directors' loan accounts and inter-company loans, to avoid due diligence issues and S455 tax charges.
-- Review your share structure at least two years before exit to qualify for Business Asset Disposal Relief (BADR) at 14% (rising to 18% from 6 April 2026).
+- Review your share structure at least two years before exit to qualify for Business Asset Disposal Relief (BADR) at 18% (rising to 18% from 6 April 2026).
 - Prepare a normalised EBITDA calculation that adds back personal expenses and one-off costs, as buyers value agencies on maintainable earnings.
 - For multiple founders, model the tax position individually, as holding shares through a company may disqualify them from BADR.
 ---
@@ -61,11 +61,11 @@ keyTakeaways:
 <li>Shareholder loans with no formal agreement or interest charged</li>
 </ul>
 
-<p>A good accountant will flag these two years out and give you time to resolve them. If you try to fix a £40,000 overdrawn directors' loan account in the month before a sale, you trigger a 33.75% S455 tax charge and create a cash flow problem. Fix it over two years and it is manageable.</p>
+<p>A good accountant will flag these two years out and give you time to resolve them. If you try to fix a £40,000 overdrawn directors' loan account in the month before a sale, you trigger a 35.75% S455 tax charge and create a cash flow problem. Fix it over two years and it is manageable.</p>
 
 <h3>Structuring for BADR</h3>
 
-<p>Business Asset Disposal Relief (BADR) lets you pay 14% capital gains tax on the first £1 million of qualifying gains, rather than the standard 20% rate. That is a saving of £100,000 on a £1 million gain. But the conditions are strict.</p>
+<p>Business Asset Disposal Relief (BADR) lets you pay 18% capital gains tax on the first £1 million of qualifying gains, rather than the standard 20% rate. That is a saving of £100,000 on a £1 million gain. But the conditions are strict.</p>
 
 <p>To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for the two years immediately before the disposal. If your shareholding structure is wrong, or if you have different classes of shares with different rights, you may not qualify.</p>
 

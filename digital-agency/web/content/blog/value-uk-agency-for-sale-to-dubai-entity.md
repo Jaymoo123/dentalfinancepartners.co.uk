@@ -86,7 +86,7 @@ keyTakeaways:
 
 <p>Selling your agency to a Dubai entity triggers UK tax. The key points:</p>
 <ul>
-<li><strong>Capital Gains Tax</strong>, if you sell shares personally, you’ll pay CGT on the gain. The current rate for basic rate taxpayers is 18% (24% for higher rate). If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% for 2025/26, rising to 18% from April 2026. The £1m lifetime limit applies.</li>
+<li><strong>Capital Gains Tax</strong>, if you sell shares personally, you’ll pay CGT on the gain. The current rate for basic rate taxpayers is 18% (24% for higher rate). If you qualify for Business Asset Disposal Relief (BADR), the rate is 18% for 2025/26, rising to 18% from April 2026. The £1m lifetime limit applies.</li>
 <li><strong>Corporation Tax</strong>, if the agency itself sells its trade and assets to the Dubai entity, the gain is subject to corporation tax at 19% or 25%, depending on profit level.</li>
 <li><strong>Stamp Duty</strong>, on share purchases over £1,000, 0.5% stamp duty applies.</li>
 </ul>

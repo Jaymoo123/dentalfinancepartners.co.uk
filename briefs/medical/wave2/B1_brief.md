@@ -1,9 +1,9 @@
-# Brief: pcn-funding-network-contract-des-explained
+﻿# Brief: pcn-funding-network-contract-des-explained
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster B (PCN and ARRS), pick B1
 **Source file (to be created):** `Medical/web/content/blog/pcn-funding-network-contract-des-explained.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/pcn-funding-network-contract-des-explained
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/pcn-funding-network-contract-des-explained
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income; PCN / Network Contract DES funding including ARRS), with cross-refs to §1 (partner taxed on profit share not drawings), §2.C (pensioning NHS-derived profit), §6 (NHS income outside the scope of VAT, light touch) and §8 (PCN payroll, light signpost to B2).
 

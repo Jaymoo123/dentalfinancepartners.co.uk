@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
 slug: locum-doctor-self-assessment-filing-guide
 date: '2026-04-01'
@@ -12,7 +12,7 @@ image: ''
 h1: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
 summary: Step-by-step guide to filing self assessment as a locum doctor in 2026/27. Covers the SA103 self-employment pages, the 31 January deadline, payments on account, Class 4 NIC at 6% and Making Tax Digital from April 2026.
 schema: ''
-canonical: https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-self-assessment-filing-guide
+canonical: https://www.medicalaccounts.co.uk/blog/locum-doctor-self-assessment-filing-guide
 faqs:
 - question: When is the self assessment deadline for a locum doctor in 2026/27?
   answer: If you file online, your return for the 2025/26 tax year (6 April 2025 to 5 April 2026) is due by 31 January 2027, and any tax owed is also due that day. Paper returns have an earlier deadline of 31 October 2026. If you also make payments on account, the second instalment falls on 31 July. To register for the first time you must tell HMRC by 5 October following the end of the tax year you need to report.

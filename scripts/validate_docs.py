@@ -26,7 +26,7 @@ EXPECTED_SITES = {
         "niche_id": "dentists",
     },
     "Medical": {
-        "domain": "medicalaccountantsuk.co.uk",
+        "domain": "medicalaccounts.co.uk",
         "niche_id": "medical",
     },
     "Solicitors": {

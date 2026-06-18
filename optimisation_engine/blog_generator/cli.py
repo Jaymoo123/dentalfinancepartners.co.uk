@@ -19,7 +19,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--site",
         required=True,
-        choices=["dentists", "property", "medical", "solicitors", "agency", "generalist", "contractors-ir35"],
+        choices=["dentists", "property", "medical", "solicitors", "agency", "generalist", "contractors-ir35", "construction-cis"],
         help="Which niche site to generate for.",
     )
     p.add_argument(

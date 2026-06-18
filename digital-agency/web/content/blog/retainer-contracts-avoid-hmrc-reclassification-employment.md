@@ -148,7 +148,7 @@ Talk to the staff member on the retainer. Ask them: who sets your deadlines? Who
 
 <h2>What Happens If HMRC Reclassifies Your Retainer Staff</h2>
 
-<p>The liability is significant. HMRC will assess unpaid income tax and employee NI on the retainer fees paid to your agency for that staff member. They will also assess employer NI at 13.8%. Interest runs from the original due date. Penalties can add 30% or more if HMRC determines the error was due to a lack of reasonable care.</p>
+<p>The liability is significant. HMRC will assess unpaid income tax and employee NI on the retainer fees paid to your agency for that staff member. They will also assess employer NI at 15%. Interest runs from the original due date. Penalties can add 30% or more if HMRC determines the error was due to a lack of reasonable care.</p>
 
 <p>For a retainer that paid £60,000 over two years, the total liability could be £25,000-£30,000 including interest and penalties. If you have five retainers with the same issue, you are looking at £125,000-£150,000.</p>
 

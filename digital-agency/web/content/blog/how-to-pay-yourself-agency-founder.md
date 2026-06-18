@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Salary vs Dividends: How Agency Founders Pay Themselves'
-metaDescription: Salary vs dividends for agency founders in 2025/26. How the tax works, what the numbers look like, and why most founders use both.
+metaDescription: Salary vs dividends for agency founders in 2026/27. How the tax works, what the numbers look like, and why most founders use both.
 altText: Agency founder reviewing salary and dividend options on a laptop in a London office
 image: /blog/how-to-pay-yourself-agency-founder.jpg
 imageCredit:
@@ -16,13 +16,13 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
   source: Pexels
 h1: 'How to Pay Yourself as an Agency Founder: Salary vs Dividends'
-summary: A direct breakdown of salary vs dividends for UK agency founders. We cover the tax mechanics, the 2025/26 rates, and the typical structure that keeps more money in your pocket.
+summary: A direct breakdown of salary vs dividends for UK agency founders. We cover the tax mechanics, the 2026/27 rates, and the typical structure that keeps more money in your pocket.
 schema: ''
 faqs:
 - question: Can I pay myself only dividends and no salary?
   answer: Technically yes, but it is not recommended. Without a salary, you lose your National Insurance contributions, which affects your state pension and benefit entitlements. It also weakens your case for BADR when you sell the agency. Keep the £12,570 salary running. It costs the company nothing in NI and protects your long-term position.
 - question: What happens if I pay dividends when the company has no profit?
-  answer: That is an illegal dividend. HMRC can reclassify it as a directors' loan, and the company will owe Section 455 tax at 33.75% on the amount. You also have to repay the loan. Always check distributable reserves before declaring a dividend. Your accountant should confirm this at each payment.
+  answer: That is an illegal dividend. HMRC can reclassify it as a directors' loan, and the company will owe Section 455 tax at 35.75% on the amount. You also have to repay the loan. Always check distributable reserves before declaring a dividend. Your accountant should confirm this at each payment.
 - question: How often can I pay myself dividends?
   answer: As often as the company has distributable profits. Many founders pay quarterly or monthly. There is no legal limit on frequency. But each dividend must be properly documented with a board minute and voucher. If you pay monthly, you need twelve sets of paperwork. Most founders find quarterly a good balance.
 - question: Does paying dividends affect my mortgage application?
@@ -31,27 +31,27 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Take a salary up to the £12,570 NI threshold to avoid employee and employer National Insurance.
-- Pay yourself the rest as dividends to save 13.8% employer NI and 8% employee NI on earnings above £12,570.
-- The first £500 of dividends is tax-free; dividends within the basic rate band are taxed at 8.75%.
-- Dividends above the basic rate band are taxed at 33.75%, so consider leaving profits in the company to reinvest.
+- Pay yourself the rest as dividends to save 15% employer NI and 8% employee NI on earnings above £12,570.
+- The first £500 of dividends is tax-free; dividends within the basic rate band are taxed at 10.75%.
+- Dividends above the basic rate band are taxed at 35.75%, so consider leaving profits in the company to reinvest.
 - For a £140,000 profit, the salary-and-dividends model saves over £35,000 in tax and NI compared to taking all salary.
 ---
 <p>Every agency founder I meet asks the same question within the first fifteen minutes: "What should I pay myself?"</p>
 
 <p>It is the most common question we get at Agency Founder Finance, and the answer is rarely simple. The right structure depends on your agency's profitability, your personal tax position, and your plans for the business. But there is a standard starting point that works for most limited company agency founders.</p>
 
-<p>You take a small salary up to the National Insurance threshold, then take the rest as dividends. This is the most tax-efficient way to <strong>pay yourself as an agency founder</strong> in the UK. Here is why, and how it works in practice for 2025/26.</p>
+<p>You take a small salary up to the National Insurance threshold, then take the rest as dividends. This is the most tax-efficient way to <strong>pay yourself as an agency founder</strong> in the UK. Here is why, and how it works in practice for 2026/27.</p>
 
 <h2>Why Not Just Take a Salary?</h2>
 <p>If you are a director of your own limited company, you can pay yourself a salary. It is straightforward. You run it through payroll, HMRC gets its PAYE and National Insurance, and you get a payslip.</p>
 
-<p>But salary is expensive. For every £1,000 you pay yourself as salary above the secondary threshold, the company pays 13.8% employer National Insurance. That is £138 on top. You then pay employee NI at 8% on earnings above £12,570, plus income tax at 20%, 40%, or 45% depending on your total income.</p>
+<p>But salary is expensive. For every £1,000 you pay yourself as salary above the secondary threshold, the company pays 15% employer National Insurance. That is £150 on top. You then pay employee NI at 8% on earnings above £12,570, plus income tax at 20%, 40%, or 45% depending on your total income.</p>
 
-<p>Dividends avoid National Insurance entirely. The company pays no NI on dividends. You pay no NI on dividends. There is just dividend tax, which starts at 8.75% for basic rate taxpayers.</p>
+<p>Dividends avoid National Insurance entirely. The company pays no NI on dividends. You pay no NI on dividends. There is just dividend tax, which starts at 10.75% for basic rate taxpayers.</p>
 
 <p>That is the core reason the salary-and-dividends model exists. It saves thousands of pounds in National Insurance every year.</p>
 
-<h2>The Standard Structure for 2025/26</h2>
+<h2>The Standard Structure for 2026/27</h2>
 <p>Here is the typical setup we recommend for a limited company agency founder with profits of, say, £120,000 per year.</p>
 
 <p><strong>Salary: £12,570 per year</strong></p>
@@ -64,10 +64,10 @@ keyTakeaways:
 </ul>
 
 <p><strong>Dividends: up to the basic rate band</strong></p>
-<p>After the salary, you have roughly £37,700 of the basic rate band remaining (the band runs from £12,571 to £50,270). You can take dividends up to that amount. The first £500 of dividends is tax-free (the dividend allowance). The rest is taxed at 8.75%.</p>
+<p>After the salary, you have roughly £37,700 of the basic rate band remaining (the band runs from £12,571 to £50,270). You can take dividends up to that amount. The first £500 of dividends is tax-free (the dividend allowance). The rest is taxed at 10.75%.</p>
 
 <p><strong>Dividends: above the basic rate band</strong></p>
-<p>If you need more than £50,270 in total income, the dividends above that are taxed at 33.75%. Many founders stop at the basic rate threshold and leave the rest in the company, reinvesting it into growth or taking it later in a lower-income year.</p>
+<p>If you need more than £50,270 in total income, the dividends above that are taxed at 35.75%. Many founders stop at the basic rate threshold and leave the rest in the company, reinvesting it into growth or taking it later in a lower-income year.</p>
 
 <h3>Worked Example: A 12-Person Digital Agency Billing £800k</h3>
 <p>Let us run the numbers for a real scenario. Your agency turns over £800,000. After salaries for your team, rent, software, and other costs, the company makes £140,000 profit before your own pay.</p>
@@ -89,8 +89,8 @@ keyTakeaways:
 <li>Employer NI: £0</li>
 <li>Employee NI: £0</li>
 <li>Income tax on salary: £0</li>
-<li>Dividend tax (basic rate portion £37,200 at 8.75%): £3,255</li>
-<li>Dividend tax (higher rate portion £89,730 at 33.75%): £30,284</li>
+<li>Dividend tax (basic rate portion £37,200 at 10.75%): £3,255</li>
+<li>Dividend tax (higher rate portion £89,730 at 35.75%): £30,284</li>
 <li>Your take-home: £106,461</li>
 <li>Total tax: £33,539</li>
 </ul>
@@ -99,12 +99,12 @@ keyTakeaways:
 
 <p>Now, the dividend tax on the higher rate portion is painful. That is why many founders cap their total drawings at the basic rate threshold. They take £50,270 total, pay just £3,255 in dividend tax, and leave the remaining profit in the company.</p>
 
-<h2>Dividend Tax Rates for 2025/26</h2>
+<h2>Dividend Tax Rates for 2026/27</h2>
 <p>Here are the current rates, which apply from April 2025:</p>
 <ul>
 <li>Dividend allowance: £500 (down from £1,000 in 2024/25, and £2,000 before that)</li>
-<li>Basic rate taxpayers: 8.75% on dividends above the allowance</li>
-<li>Higher rate taxpayers: 33.75%</li>
+<li>Basic rate taxpayers: 10.75% on dividends above the allowance</li>
+<li>Higher rate taxpayers: 35.75%</li>
 <li>Additional rate taxpayers: 39.35%</li>
 </ul>
 
@@ -124,7 +124,7 @@ keyTakeaways:
 <h2>How Dividends Work Legally</h2>
 <p>Dividends are not automatic. You cannot just transfer money from the company bank account to your personal account and call it a dividend. There are legal requirements.</p>
 
-<p>The company must have sufficient distributable reserves. These are retained profits from the profit and loss account. If you pay a dividend when the company has no profits, it is an illegal dividend. HMRC can treat it as a directors' loan, and you could face a tax charge at 33.75% under Section 455.</p>
+<p>The company must have sufficient distributable reserves. These are retained profits from the profit and loss account. If you pay a dividend when the company has no profits, it is an illegal dividend. HMRC can treat it as a directors' loan, and you could face a tax charge at 35.75% under Section 455.</p>
 
 <p>You must hold a board meeting (even if you are the only director) and minute the dividend declaration. You issue a dividend voucher to yourself. The voucher shows the date, the amount, and your shareholding. You keep it in the company records.</p>
 
@@ -135,7 +135,7 @@ keyTakeaways:
 <h2>Directors' Loan Account: The Trap to Avoid</h2>
 <p>Many agency founders treat the company bank account as their own. They pay personal bills from the company card, transfer money for a holiday, and sort it out at year-end. This creates a directors' loan account balance.</p>
 
-<p>If the loan exceeds £10,000 at any point, it becomes a benefit in kind. You must report it on a P11D, and the company pays Class 1A NI at 13.8%. If the loan is not repaid within nine months of the year-end, the company pays Section 455 tax at 33.75% on the outstanding amount. That tax is refundable when the loan is repaid, but it ties up cash.</p>
+<p>If the loan exceeds £10,000 at any point, it becomes a benefit in kind. You must report it on a P11D, and the company pays Class 1A NI at 15%. If the loan is not repaid within nine months of the year-end, the company pays Section 455 tax at 35.75% on the outstanding amount. That tax is refundable when the loan is repaid, but it ties up cash.</p>
 
 <p>The simple rule: do not take money from the company unless it is a properly documented salary, dividend, or expense reimbursement. If you need to borrow from the company, speak to your accountant first.</p>
 
@@ -163,7 +163,7 @@ keyTakeaways:
 <p>If any of these apply, run the numbers with your accountant before you make a move. A few hours of planning can save you thousands in tax.</p>
 
 <h2>The Exit Question: BADR and Your Pay Structure</h2>
-<p>If you plan to sell your agency, your pay structure affects your eligibility for Business Asset Disposal Relief (BADR). BADR gives you a 14% capital gains tax rate on the first £1 million of gains, instead of the standard 20%.</p>
+<p>If you plan to sell your agency, your pay structure affects your eligibility for Business Asset Disposal Relief (BADR). BADR gives you a 18% capital gains tax rate on the first £1 million of gains, instead of the standard 20%.</p>
 
 <p>To qualify, you must hold at least 5% of the shares and be an officer or employee of the company for at least two years before the sale. If you have been taking dividends but no salary, HMRC might argue you are not genuinely an employee. The risk is low if you have a formal service contract and a salary on the books, even at £12,570. But if you take no salary at all, it becomes harder to prove you are an employee.</p>
 
@@ -186,9 +186,9 @@ keyTakeaways:
 <h2>The Bottom Line</h2>
 <p>For most limited company agency founders, the optimal structure is a salary of £12,570 per year plus dividends up to the basic rate threshold. That gives you total income of around £50,270, with a tax bill of roughly £3,255. You keep the rest of the profit in the company, reinvesting it into growth or taking it in a lower-income year.</p>
 
-<p>If you need more than £50,270, the dividend tax jumps to 33.75%. That is still better than paying 40% income tax plus NI on a salary, but it is a significant jump. Plan your drawings carefully.</p>
+<p>If you need more than £50,270, the dividend tax jumps to 35.75%. That is still better than paying 40% income tax plus NI on a salary, but it is a significant jump. Plan your drawings carefully.</p>
 
-<p>And always, always document your dividends properly. A dividend voucher, a board minute, and distributable reserves. Without those, HMRC can reclassify your dividends as a directors' loan and hit you with a 33.75% tax charge.</p>
+<p>And always, always document your dividends properly. A dividend voucher, a board minute, and distributable reserves. Without those, HMRC can reclassify your dividends as a directors' loan and hit you with a 35.75% tax charge.</p>
 
 <p>If your agency is growing and you want to <strong>pay yourself as an agency founder</strong> in the most tax-efficient way, speak to an ICAEW qualified accountant who understands agency finances. We work with agency founders every day. We know the numbers, the pitfalls, and the opportunities.</p>
 

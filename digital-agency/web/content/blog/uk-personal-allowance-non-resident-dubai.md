@@ -44,7 +44,7 @@ keyTakeaways:
 
 <h2>The Personal Allowance: A Quick Refresher</h2>
 
-<p>Every UK resident individual gets a personal allowance of £12,570 (2025/26 tax year). This is the amount of income you can earn before you start paying income tax. If you earn £50,000, you pay tax on £37,430, not the full £50,000.</p>
+<p>Every UK resident individual gets a personal allowance of £12,570 (2026/27 tax year). This is the amount of income you can earn before you start paying income tax. If you earn £50,000, you pay tax on £37,430, not the full £50,000.</p>
 
 <p>For non-residents, the rules are different. Generally, non-residents can still claim the personal allowance against their UK-source income. But there are conditions. And the conditions depend on your residence status under the UK-UAE Double Taxation Agreement (DTA).</p>
 
@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p>If she had not claimed the personal allowance, she would pay tax on the full £30,570 at 20%, £6,114. That's a difference of £2,514.</p>
 
-<p>Sarah also receives £50,000 in dividends from her UK agency. Dividends are UK-source income. She has a £500 dividend allowance. The remaining £49,500 is taxed at 8.75% (basic rate) because her total UK income is within the basic rate band. That's £4,331.25 in dividend tax.</p>
+<p>Sarah also receives £50,000 in dividends from her UK agency. Dividends are UK-source income. She has a £500 dividend allowance. The remaining £49,500 is taxed at 10.75% (basic rate) because her total UK income is within the basic rate band. That's £4,331.25 in dividend tax.</p>
 
 <p>Total UK tax: £3,600 + £4,331.25 = £7,931.25.</p>
 

@@ -41,7 +41,8 @@ _SITE_URL_MAP = {
     "solicitors":        "sc-domain:accountsforlawyers.co.uk",
     "agency":            "sc-domain:agencyfounderfinance.co.uk",
     "generalist":        "sc-domain:hollowaydavies.co.uk",
-    "contractors-ir35":  "sc-domain:contractor-finance-partners.co.uk",
+    "contractors-ir35":  "sc-domain:contractortaxaccountants.co.uk",
+    "construction-cis":  "sc-domain:tradetaxspecialists.co.uk",
 }
 
 

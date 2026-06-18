@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Becoming a GP Partner: Complete Guide to Financial Implications'
 slug: becoming-gp-partner-financial-implications
 date: '2026-04-01'
@@ -12,7 +12,7 @@ image: ''
 h1: 'Becoming a GP Partner: Financial Implications You Need to Know'
 summary: Becoming a GP partner brings significant financial changes beyond just income. Understanding the tax, pension, and capital implications is crucial before making the transition.
 schema: ''
-canonical: https://www.medicalaccountantsuk.co.uk/blog/becoming-gp-partner-financial-implications
+canonical: https://www.medicalaccounts.co.uk/blog/becoming-gp-partner-financial-implications
 faqs:
 - question: Am I employed or self-employed once I become a GP partner?
   answer: You become self-employed. The partnership files a single partnership return (SA800), and your share of the profit flows to the partnership pages (SA104) of your own Self Assessment return. You are taxed on your profit share, not on the drawings you actually take, and you pay Class 4 National Insurance rather than employee Class 1. This is a fundamental change from being a salaried GP, who is an employee taxed under PAYE.

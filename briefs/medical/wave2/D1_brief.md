@@ -1,9 +1,9 @@
-# Brief: reading-gp-partnership-accounts-current-capital-accounts
+﻿# Brief: reading-gp-partnership-accounts-current-capital-accounts
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster D (Understanding GP partnership accounts), pick D1
 **Source file (to be created):** `Medical/web/content/blog/reading-gp-partnership-accounts-current-capital-accounts.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/reading-gp-partnership-accounts-current-capital-accounts
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/reading-gp-partnership-accounts-current-capital-accounts
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner is self-employed; partnership files SA800, partner's share flows to SA104; taxed on profit share not drawings; partnership taxation under ITTOIA 2005), with light cross-refs to §4 (capital accounts on entry/exit, NHS goodwill cannot be sold) and §8 (expenses).
 

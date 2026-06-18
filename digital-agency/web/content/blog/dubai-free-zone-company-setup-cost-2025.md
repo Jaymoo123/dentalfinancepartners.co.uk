@@ -192,7 +192,7 @@ keyTakeaways:
 
 <p><strong>2. The substance requirements.</strong> Free zones are cracking down on "shell" companies. If you set up a Dubai company but do all your work from London, you risk losing your 0% tax status. You need a real office, real employees, and real activity in the free zone. This is not optional.</p>
 
-<p><strong>3. The UK exit tax.</strong> If you sell your UK agency company before moving, you may trigger Business Asset Disposal Relief (BADR) at 14% CGT (rising to 18% from April 2026). If you move to Dubai first and then sell, HMRC may still treat the sale as UK-sourced if the company's assets or management are UK-based. Get advice before you move, not after.</p>
+<p><strong>3. The UK exit tax.</strong> If you sell your UK agency company before moving, you may trigger Business Asset Disposal Relief (BADR) at 18% CGT (rising to 18% from April 2026). If you move to Dubai first and then sell, HMRC may still treat the sale as UK-sourced if the company's assets or management are UK-based. Get advice before you move, not after.</p>
 
 <h2>Should You Use a Setup Agent or Do It Yourself?</h2>
 

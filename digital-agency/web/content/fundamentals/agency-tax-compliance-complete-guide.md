@@ -15,10 +15,10 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/tax-planning-6863243/
   source: Pexels
 h1: 'Agency Tax Compliance UK: The Complete Guide for Agency Founders'
-summary: This is the definitive guide to agency tax compliance in the UK for 2025/26. Written by ICAEW-qualified accountants who work exclusively with agency founders, it covers corporation tax, VAT, PAYE, P11D reporting, R&D tax credits, Making Tax Digital, and capital gains planning. You will find specific HMRC forms, real deadlines, and worked examples throughout.
+summary: This is the definitive guide to agency tax compliance in the UK for 2026/27. Written by ICAEW-qualified accountants who work exclusively with agency founders, it covers corporation tax, VAT, PAYE, P11D reporting, R&D tax credits, Making Tax Digital, and capital gains planning. You will find specific HMRC forms, real deadlines, and worked examples throughout.
 schema: ''
 faqs:
-- question: What is the corporation tax rate for a UK agency in 2025/26?
+- question: What is the corporation tax rate for a UK agency in 2026/27?
   answer: The rate depends on your profit. Up to £50,000 profit, you pay 19%. Between £50,001 and £250,000, marginal relief applies with an effective rate of 26.5% on profits in that band. Above £250,000, the rate is 25%. Most agencies fall into the marginal relief band.
 - question: When must I register for VAT as an agency?
   answer: You must register when your taxable turnover exceeds £90,000 in any rolling 12-month period. Many agencies voluntarily register earlier to reclaim VAT on costs. If your clients are VAT-registered businesses, voluntary registration is usually beneficial.
@@ -35,7 +35,7 @@ keyTakeaways:
 - Legitimate corporation tax deductions for agencies include salaries, rent, software, marketing, travel, equipment, and pension contributions.
 - Late corporation tax payment incurs interest at 7.25% from April 2025, and late filing penalties start at £100 and escalate quickly.
 ---
-<p>What does full tax compliance actually look like for a UK agency founder in 2025/26?</p>
+<p>What does full tax compliance actually look like for a UK agency founder in 2026/27?</p>
 
 <p>Not the theory. The reality. The forms you sign. The dates you cannot miss. The numbers that keep HMRC off your back and your agency growing.</p>
 
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <h3>The Registration Threshold</h3>
 
-<p>You must register for VAT when your taxable turnover exceeds £90,000 in any rolling 12-month period. That is the threshold for 2025/26.</p>
+<p>You must register for VAT when your taxable turnover exceeds £90,000 in any rolling 12-month period. That is the threshold for 2026/27.</p>
 
 <p>Many agencies voluntarily register before hitting £90,000. Why? Because if your clients are VAT-registered businesses, they can reclaim the VAT you charge. It costs them nothing. And you reclaim VAT on your own costs, software, equipment, rent, professional fees.</p>
 
@@ -156,7 +156,7 @@ keyTakeaways:
 
 <p>Most agencies use payroll software. BrightPay, Xero Payroll, and FreeAgent are common choices. We recommend BrightPay for agencies with more than five staff. It handles auto-enrolment pensions, P11Ds, and year-end forms cleanly.</p>
 
-<h3>Key Payroll Numbers for 2025/26</h3>
+<h3>Key Payroll Numbers for 2026/27</h3>
 
 <table>
 <thead>
@@ -176,11 +176,11 @@ keyTakeaways:
 </tr>
 <tr>
 <td>Employer NI rate</td>
-<td>13.8% above £9,100 (secondary threshold)</td>
+<td>15% above £5,000 (secondary threshold)</td>
 </tr>
 <tr>
 <td>Employment Allowance</td>
-<td>£5,000 (if eligible)</td>
+<td>£10,500 (if eligible)</td>
 </tr>
 <tr>
 <td>Auto-enrolment minimum</td>
@@ -189,15 +189,15 @@ keyTakeaways:
 </tbody>
 </table>
 
-<p>The Employment Allowance lets you reduce your employer NI bill by up to £5,000. You cannot claim it if you are a director of a one-person company with no other employees. But if you have even one non-director employee, claim it.</p>
+<p>The Employment Allowance lets you reduce your employer NI bill by up to £10,500. You cannot claim it if you are a director of a one-person company with no other employees. But if you have even one non-director employee, claim it.</p>
 
 <h3>Director Payroll: The Optimal Strategy</h3>
 
-<p>Most agency founders pay themselves a small salary and take the rest as dividends. The classic structure: £12,570 salary (no income tax, no employee NI, but employer NI applies above £9,100).</p>
+<p>Most agency founders pay themselves a small salary and take the rest as dividends. The classic structure: £12,570 salary (no income tax, no employee NI, but employer NI applies above £5,000).</p>
 
-<p>If you pay yourself £12,570, your employer NI is roughly £479. That is the cost of accessing the personal allowance.</p>
+<p>If you pay yourself £12,570, your employer NI is roughly £1,136. That is the cost of accessing the personal allowance.</p>
 
-<p>Dividends above that attract dividend tax at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). The annual dividend allowance is £500 for 2025/26.</p>
+<p>Dividends above that attract dividend tax at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate). The annual dividend allowance is £500 for 2026/27.</p>
 
 <p>We cover this in detail in our <a href="/blog/salary-and-dividends">salary and dividends guide</a>.</p>
 
@@ -222,7 +222,7 @@ keyTakeaways:
 
 <h3>Deadline and Penalties</h3>
 
-<p>P11D forms are due by 6 July after the tax year end. So for 2025/26, the deadline is 6 July 2026.</p>
+<p>P11D forms are due by 6 July after the tax year end. So for 2026/27, the deadline is 6 July 2026.</p>
 
 <p>Class 1A NI on the benefits is due by 19 July (or 22 July if paid electronically).</p>
 
@@ -279,7 +279,7 @@ keyTakeaways:
 
 <h3>Business Asset Disposal Relief (BADR)</h3>
 
-<p>Formerly Entrepreneurs' Relief, BADR reduces CGT to 14% on qualifying disposals. The lifetime limit is £1 million of gains.</p>
+<p>Formerly Entrepreneurs' Relief, BADR reduces CGT to 18% on qualifying disposals. The lifetime limit is £1 million of gains.</p>
 
 <p>To qualify, you must have held at least 5% of the shares and voting rights, and been an officer or employee of the company, for at least two years before the sale.</p>
 
@@ -289,9 +289,9 @@ keyTakeaways:
 
 <h3>Directors' Loan Accounts</h3>
 
-<p>If you owe your company more than £10,000 at any point in the year, and do not repay it within nine months of the year end, HMRC charges Section 455 tax at 33.75%. This is a tax on the company, not you personally.</p>
+<p>If you owe your company more than £10,000 at any point in the year, and do not repay it within nine months of the year end, HMRC charges Section 455 tax at 35.75%. This is a tax on the company, not you personally.</p>
 
-<p>Many agency founders fall into this trap. You take a director's loan to cover a personal expense. You intend to repay it. But the year end passes, and suddenly the company owes 33.75% of the loan amount to HMRC.</p>
+<p>Many agency founders fall into this trap. You take a director's loan to cover a personal expense. You intend to repay it. But the year end passes, and suddenly the company owes 35.75% of the loan amount to HMRC.</p>
 
 <p>Repay the loan within nine months and the S455 charge is refunded. But the cash flow disruption is real.</p>
 

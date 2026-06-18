@@ -91,7 +91,7 @@ keyTakeaways:
 <ul>
 <li>Backdated income tax at the contractor's marginal rate (likely 40% or 45%)</li>
 <li>Backdated employee NICs at 8% (the post-6 April 2024 main rate)</li>
-<li>Backdated employer NICs at 13.8%</li>
+<li>Backdated employer NICs at 15%</li>
 <li>Interest on the late payments</li>
 <li>Potential penalties of up to 30% of the total underpayment</li>
 </ul>

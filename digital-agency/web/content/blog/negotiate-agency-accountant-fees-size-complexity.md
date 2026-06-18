@@ -146,7 +146,7 @@ Includes: group structures, consolidated accounts, exit planning, BADR structuri
 
 <p><strong>Year-end accounts and filing.</strong> Your statutory accounts must be filed at Companies House and HMRC. This is the core service. Do not try to do this yourself unless you have accounting experience.</p>
 
-<p><strong>Exit planning if you are within 3-5 years of selling.</strong> If you plan to sell your agency, the structure decisions you make now determine whether you pay 14% CGT under BADR or 24% standard CGT. A good accountant saves you tens of thousands. Do not cut this.</p>
+<p><strong>Exit planning if you are within 3-5 years of selling.</strong> If you plan to sell your agency, the structure decisions you make now determine whether you pay 18% CGT under BADR or 24% standard CGT. A good accountant saves you tens of thousands. Do not cut this.</p>
 
 <h2>When to Switch Firms Instead of Negotiating</h2>
 

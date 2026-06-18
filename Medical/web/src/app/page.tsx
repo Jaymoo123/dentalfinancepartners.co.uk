@@ -437,8 +437,8 @@ export default function HomePage() {
                 <Link href="/contact" className={`${btnPrimary}`}>
                   Book your free consultation
                 </Link>
-                <Link href={`mailto:${siteConfig.contact.email}`} className={btnMailOutline}>
-                  Email us directly
+                <Link href="/contact" className={btnMailOutline}>
+                  Contact us
                 </Link>
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>

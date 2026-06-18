@@ -24,7 +24,7 @@ faqs:
 - question: Can I backdate dividend vouchers if HMRC asks for them?
   answer: No. Backdating documents is dishonest and can be treated as fraud. HMRC can often detect backdated documents through inconsistencies in dates, signatures, or document formatting. If you have missed creating vouchers, speak to your accountant about how to handle the situation properly.
 - question: What happens if I pay a dividend without enough profit in the company?
-  answer: That is an illegal dividend. HMRC can treat it as a director's loan, which triggers a 33.75% S455 tax charge if not repaid within 9 months of the year end. You may also face penalties. Always check your management accounts or ask your accountant before declaring a dividend.
+  answer: That is an illegal dividend. HMRC can treat it as a director's loan, which triggers a 35.75% S455 tax charge if not repaid within 9 months of the year end. You may also face penalties. Always check your management accounts or ask your accountant before declaring a dividend.
 - question: Do I need board minutes if I am the only director and shareholder?
   answer: Yes. Even as a sole director and shareholder, company law requires a formal record of the decision to declare a dividend. The minutes can be brief, but they must exist. They should confirm that the company has sufficient distributable profits and record the resolution to pay the dividend.
 authorSlug: james-whitfield
@@ -120,7 +120,7 @@ keyTakeaways:
 
 <h3>Mistake 2: Dividend Exceeds Available Profits</h3>
 
-<p>A dividend can only be paid from distributable profits. If your agency has a loss-making year, you cannot pay a dividend. If you do, it is an illegal dividend, and HMRC can treat it as a director's loan (which triggers a 33.75% S455 tax charge if not repaid within 9 months of year end).</p>
+<p>A dividend can only be paid from distributable profits. If your agency has a loss-making year, you cannot pay a dividend. If you do, it is an illegal dividend, and HMRC can treat it as a director's loan (which triggers a 35.75% S455 tax charge if not repaid within 9 months of year end).</p>
 
 <p><strong>Fix:</strong> Check your management accounts before declaring a dividend. If profits are tight, speak to your accountant first. We can help you calculate the maximum safe dividend.</p>
 
@@ -172,7 +172,7 @@ keyTakeaways:
 
 <ul>
 <li>Employee NI (8% on earnings between £12,570 and £50,270, 2% above)</li>
-<li>Employer NI (13.8%)</li>
+<li>Employer NI (15%)</li>
 <li>Possibly higher income tax (if the reclassification pushes you into a higher band)</li>
 <li>Interest on late payments</li>
 <li>Penalties</li>
@@ -182,7 +182,7 @@ keyTakeaways:
 
 <h2>What About Directors' Loan Accounts?</h2>
 
-<p>If you take money from the company without proper dividend paperwork, it is not automatically a dividend. It sits in your directors' loan account (DLA). If the balance is overdrawn at year end and exceeds £10,000, the company pays S455 tax at 33.75% on the excess. That tax is refundable when you repay the loan, but it ties up cash for months or years.</p>
+<p>If you take money from the company without proper dividend paperwork, it is not automatically a dividend. It sits in your directors' loan account (DLA). If the balance is overdrawn at year end and exceeds £10,000, the company pays S455 tax at 35.75% on the excess. That tax is refundable when you repay the loan, but it ties up cash for months or years.</p>
 
 <p>Proper dividend vouchers and board minutes prevent this problem. They turn what would be a directors' loan into a legitimate dividend, with no S455 tax and no repayment requirement.</p>
 

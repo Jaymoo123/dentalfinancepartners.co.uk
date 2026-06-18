@@ -55,6 +55,7 @@
     "./tools/components/Field": "./tools/components/Field.tsx",
     "./tools/embed/EmbedAutoResize": "./tools/embed/EmbedAutoResize.tsx",
     "./tools/embed/EmbedSnippet": "./tools/embed/EmbedSnippet.tsx",
+    "./tools/embed/EmbedAttribution": "./tools/embed/EmbedAttribution.tsx",
     "./console": "./console/index.ts",
     "./console/adminData": "./console/adminData.ts",
     "./console/estateData": "./console/estateData.ts",

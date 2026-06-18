@@ -1,0 +1,6 @@
+Phase E spec: unified estate console (dashboard reconciliation)
+
+New internal console/web app reading the shared store; zero live-site code
+touched; registry-driven site list; one login. Newsletter PARKED per user.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

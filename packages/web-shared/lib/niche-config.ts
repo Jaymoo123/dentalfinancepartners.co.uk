@@ -18,6 +18,21 @@ export interface NicheConfig {
   niche_id: string;
   display_name: string;
   legal_name: string;
+  /** Specialist partner firm enquiries are shared with, or null when handled in-house. */
+  partner?: { name: string; privacy_policy_url: string | null } | null;
+  /** Registered-company block. Required for sites that display Companies Act disclosures. */
+  company?: {
+    number: string;
+    place_of_registration: string;
+    registered_office: {
+      line1: string;
+      line2: string;
+      city: string;
+      postcode: string;
+    };
+    vat_number: string | null;
+    enquiry_retention_months: number;
+  };
   domain: string;
   tagline: string;
   description: string;

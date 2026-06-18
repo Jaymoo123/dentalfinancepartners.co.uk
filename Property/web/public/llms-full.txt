@@ -1,16 +1,16 @@
 # Property Tax Partners
 
-> Specialist UK property tax accountants for landlords and property investors. Section 24 planning, Making Tax Digital (MTD) compliance, incorporation analysis, capital gains tax, and portfolio-level management accounting. All tax content reflects 2025/26 UK figures. Fixed fees, 24-hour response, property-only focus.
+> Specialist UK property tax accountants for landlords and property investors. Section 24 planning, Making Tax Digital (MTD) compliance, incorporation analysis, capital gains tax, and portfolio-level management accounting. All tax content reflects 2026/27 UK figures. Fixed fees, 24-hour response, property-only focus.
 
 ## About
 
-Property Tax Partners Ltd provides specialist accounting, tax planning, and compliance services to UK landlords and property investors. We cover the full lifecycle: first-property advisory through to multi-property portfolio restructuring and disposal planning. We focus exclusively on residential and mixed-use property: buy-to-let, HMO, holiday lets, mixed portfolios, and incorporation candidates.
+Property Tax Partners provides specialist accounting, tax planning, and compliance services to UK landlords and property investors. We cover the full lifecycle: first-property advisory through to multi-property portfolio restructuring and disposal planning. We focus exclusively on residential and mixed-use property: buy-to-let, HMO, holiday lets, mixed portfolios, and incorporation candidates.
 
-Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, and Bristol. All tax content is current to 2025/26 UK figures, including:
+Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, and Bristol. All tax content is current to 2026/27 UK figures, including:
 - Section 24 finance-cost restriction at 20% basic-rate tax credit
 - Corporation tax: 19% small-profits rate, 25% main rate, marginal relief between £50,000 and £250,000
 - CGT on residential property: 18% basic rate, 24% higher rate
-- SDLT: standard residential bands plus 3% additional-property surcharge
+- SDLT: standard residential bands plus 5% additional-dwelling surcharge (since 31 October 2024)
 - VAT registration threshold: £90,000 (from 1 April 2024)
 - MTD ITSA staging: April 2026 for £50,000+ combined rental and self-employment income; April 2027 for £30,000+; April 2028 for £20,000+
 - Annual exemption (CGT): £3,000

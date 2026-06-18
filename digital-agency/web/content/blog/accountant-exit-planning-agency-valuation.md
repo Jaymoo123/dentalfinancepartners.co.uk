@@ -85,7 +85,7 @@ keyTakeaways:
 
 <h3>2. Structure Your Shareholding for BADR</h3>
 
-<p>BADR gives you a 14% capital gains tax rate on the first £1 million of gains. Above that, you pay 20% (or 24% from April 2025). To qualify, you must hold at least 5% of the shares, be an officer or employee, and hold the shares for two years.</p>
+<p>BADR gives you a 18% capital gains tax rate on the first £1 million of gains. Above that, you pay 20% (or 24% from April 2025). To qualify, you must hold at least 5% of the shares, be an officer or employee, and hold the shares for two years.</p>
 
 <p>If you have multiple co-founders or shareholders, your accountant needs to check everyone qualifies. If someone does not, you have time to restructure. But that takes planning. You cannot fix a shareholding issue in the month before sale.</p>
 
@@ -144,7 +144,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Waiting until a buyer appears.</strong> By then, you cannot fix client concentration, team dependency, or balance sheet issues. You accept a lower price or walk away.</li>
-<li><strong>Ignoring the director's loan account.</strong> A £30,000 overdrawn DLA can delay a sale by months. HMRC charges S455 tax at 33.75% on loans not repaid within nine months of year end. Clear it early.</li>
+<li><strong>Ignoring the director's loan account.</strong> A £30,000 overdrawn DLA can delay a sale by months. HMRC charges S455 tax at 35.75% on loans not repaid within nine months of year end. Clear it early.</li>
 <li><strong>Assuming your standard accountant can handle exit planning.</strong> Most general practice accountants do not do exit work. They file your tax return and prepare your accounts. Exit planning requires corporate finance knowledge, tax structuring expertise, and deal experience. Ask your accountant directly if they have done this before. If they have not, find a specialist.</li>
 <li><strong>Focusing only on the multiple.</strong> A 5x multiple on a badly structured deal can leave you with less than a 4x multiple on a clean one. Tax structure matters as much as valuation.</li>
 </ul>
@@ -175,7 +175,7 @@ Three years before your intended exit is ideal. This gives you time to improve E
 Most agencies sell for 3x to 6x EBITDA. The multiple depends on recurring revenue percentage, client concentration, gross margin consistency, and team depth. A 70% retainer book with 15+ clients and stable margins will command a higher multiple than a project-heavy agency with two clients.</p>
 
 <p><strong>Should I sell shares or assets when exiting my agency?</strong><br>
-Share sales are usually better for you because you pay capital gains tax at 14% (with BADR) or 20%. Asset sales mean the company pays corporation tax on the gain, then you pay tax again when extracting the proceeds. Your accountant should model both scenarios before you negotiate with a buyer.</p>
+Share sales are usually better for you because you pay capital gains tax at 18% (with BADR) or 20%. Asset sales mean the company pays corporation tax on the gain, then you pay tax again when extracting the proceeds. Your accountant should model both scenarios before you negotiate with a buyer.</p>
 
 <p><strong>Can my existing accountant handle exit planning, or do I need a specialist?</strong><br>
 Most general practice accountants can prepare your annual accounts and tax returns. Exit planning requires corporate finance knowledge, tax structuring expertise, and deal experience. Ask your accountant directly if they have advised on agency sales before. If not, consider a specialist firm that works exclusively with agency founders.</p>

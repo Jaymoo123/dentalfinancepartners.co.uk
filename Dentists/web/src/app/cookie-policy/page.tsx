@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -7,6 +8,12 @@ export const metadata: Metadata = {
   title: "Cookie policy",
   description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
   alternates: { canonical: `${siteConfig.url}/cookie-policy` },
+  openGraph: {
+    title: `Cookie Policy | ${siteConfig.name}`,
+    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+    url: `${siteConfig.url}/cookie-policy`,
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Cookie policy",
@@ -24,17 +31,25 @@ export default function CookiePolicyPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Cookie policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 27 March 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
-          This policy describes how {siteConfig.name} uses cookies and similar technologies on our website. Cookies are small text files stored on your device that help us understand how visitors use our Site and improve your experience.
+          This policy describes how {siteConfig.company.legalName} (trading as {siteConfig.name}) uses cookies and similar technologies on our website. Cookies are small text files stored on your device that help us understand how visitors use our Site and improve your experience.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. What cookies we use</h2>
-        
+
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Essential cookies</h3>
         <p>
           We do not currently use any strictly necessary cookies. Our Site functions without requiring cookies for basic operation.
+        </p>
+
+        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">First-party analytics</h3>
+        <p>
+          We run our own privacy-first analytics so we can understand how visitors use the Site and improve it. To do this we store two random identifiers in your browser (a visitor identifier and a session identifier) and record anonymous interaction events such as pages viewed, scrolling, clicks and form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
+        </p>
+        <p>
+          This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Analytics cookies (Google Analytics)</h3>
@@ -53,7 +68,7 @@ export default function CookiePolicyPage() {
           </li>
         </ul>
         <p>
-          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymized. Data is retained for 14 months.
+          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymised. Data is retained for 14 months.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>
@@ -70,6 +85,11 @@ export default function CookiePolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. How to manage cookies</h2>
         <p>You can control and manage cookies in several ways:</p>
+
+        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">On this site</h3>
+        <p>
+          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics, Google Analytics and session-replay tools. Your choice is stored on your device and takes effect immediately. You can re-enable analytics from the same link.
+        </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Browser settings</h3>
         <p>
@@ -139,10 +159,10 @@ export default function CookiePolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Contact us</h2>
         <p>
-          If you have questions about our use of cookies, please contact us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-            {siteConfig.contact.email}
-          </a>
+          If you have questions about our use of cookies, please contact us via our{" "}
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">
+            contact page
+          </Link>
           .
         </p>
       </div>

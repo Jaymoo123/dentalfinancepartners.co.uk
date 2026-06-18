@@ -1,4 +1,4 @@
----
+﻿---
 title: "GP Accountant Edinburgh: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-edinburgh"
 date: "2026-04-01"
@@ -12,7 +12,7 @@ image: ""
 h1: "GP Accountant Edinburgh: Expert Tax Services for Medical Professionals"
 summary: "Find an experienced GP accountant in Edinburgh who understands GP partnership accounts, NHS pension annual allowance and the Scottish income tax bands that apply to doctors working across Lothian and the rest of Scotland."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-edinburgh"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-edinburgh"
 faqs:
   - question: "What makes a GP accountant different from a regular accountant?"
     answer: "A GP accountant specialises in the things general accountants rarely meet: the NHS Pension Scheme and its annual allowance taper, Type 1 and Type 2 GP pension certification, GP partnership profit shares, Global Sum and QOF income, locum IR35 status, and the Scottish income tax bands that apply to doctors based in Edinburgh. Picking a specialist usually pays for itself through fewer errors and better planning."

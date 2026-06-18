@@ -1,4 +1,4 @@
----
+﻿---
 title: "GP Accountant Sheffield: Specialist Medical Accounting Services"
 slug: "gp-accountant-sheffield"
 date: "2026-04-01"
@@ -12,7 +12,7 @@ image: ""
 h1: "GP Accountant in Sheffield: Specialist Medical Accounting for Local Practices"
 summary: "Sheffield GPs, partners and locums need an accountant who understands GP partnerships, NHS pension annual allowance and medical tax. Here is what a specialist Sheffield GP accountant does and how to choose one for 2026/27."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-sheffield"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-sheffield"
 faqs:
   - question: "What makes a Sheffield GP accountant different from a regular accountant?"
     answer: "A specialist Sheffield GP accountant understands medical practice structures, NHS pension rules and healthcare-specific tax that a high street accountant rarely meets. They work routinely with GMS and PMS partnerships, know how the NHS pension annual allowance and tapered allowance bite on higher-earning partners, and understand how Global Sum, QOF, enhanced services and PCN income flow through to your taxable profit share. They also know the rules that are specific to GPs, such as the fact that NHS GP goodwill cannot be sold."

@@ -1,0 +1,3 @@
+Solicitors acceptance: manager verification clean
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

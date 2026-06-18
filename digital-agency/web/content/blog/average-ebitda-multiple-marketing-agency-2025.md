@@ -26,7 +26,7 @@ faqs:
 - question: Can I sell my agency if I am the only person who runs it?
   answer: You can sell, but the multiple will be low. Buyers will discount heavily if the agency depends on you personally. Start building a management team and delegating client relationships at least two years before you plan to exit. A strong team can add a full multiple point to your valuation.
 - question: What tax relief applies when I sell my agency shares?
-  answer: Business Asset Disposal Relief (BADR) applies to most agency founders selling shares. It gives you 14% on the first £1m of lifetime gains, instead of the standard 20%. You must have held the shares for at least two years and been an officer or employee. Speak to your accountant about whether your share structure qualifies.
+  answer: Business Asset Disposal Relief (BADR) applies to most agency founders selling shares. It gives you 18% on the first £1m of lifetime gains, instead of the standard 20%. You must have held the shares for at least two years and been an officer or employee. Speak to your accountant about whether your share structure qualifies.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -158,7 +158,7 @@ keyTakeaways:
 
 <h2>Tax Planning for Your Exit</h2>
 
-<p>The multiple determines your gross sale price. Tax determines what you keep. For most agency founders selling their shares, <strong>Business Asset Disposal Relief</strong> (BADR) applies. That means capital gains tax at 14% on the first £1m of lifetime gains, rather than the standard 20%.</p>
+<p>The multiple determines your gross sale price. Tax determines what you keep. For most agency founders selling their shares, <strong>Business Asset Disposal Relief</strong> (BADR) applies. That means capital gains tax at 18% on the first £1m of lifetime gains, rather than the standard 20%.</p>
 
 <p>You must have held the shares for at least two years and been an officer or employee of the company. If you are selling assets rather than shares, BADR does not apply and you could face 20% CGT on the full amount.</p>
 

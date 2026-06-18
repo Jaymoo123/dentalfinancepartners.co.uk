@@ -1,9 +1,9 @@
-# Brief: gp-practice-merger-accounts-tax-explained
+﻿# Brief: gp-practice-merger-accounts-tax-explained
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster F (Leaving, retiring and mergers), pick F2
 **Source file (to be created):** `Medical/web/content/blog/gp-practice-merger-accounts-tax-explained.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-practice-merger-accounts-tax-explained
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-practice-merger-accounts-tax-explained
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner self-employed; SA800/SA104; partnership taxation; notional trade per partner), §4 (capital accounts; what changes hands; owned premises; NHS goodwill cannot be sold; separate property partnership; contracts/lists context). NHS contract / list mechanics are §3 cross-ref, light.
 

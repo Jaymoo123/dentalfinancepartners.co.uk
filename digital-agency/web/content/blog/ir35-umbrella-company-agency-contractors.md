@@ -112,7 +112,7 @@ keyTakeaways:
 <ul>
 <li>Income tax (at the contractor's marginal rate)</li>
 <li>Employee NI (at 8% on earnings above the primary threshold)</li>
-<li>Employer NI (at 13.8%)</li>
+<li>Employer NI (at 15%)</li>
 <li>Interest on late payments</li>
 <li>Penalties (up to 100% of the tax due in serious cases)</li>
 </ul>

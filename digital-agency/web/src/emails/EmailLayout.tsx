@@ -37,8 +37,8 @@ export function EmailLayout({ preview, children, unsubscribeUrl }: Props) {
           <Hr style={hr} />
           <Section style={footer}>
             <Text style={footerText}>
-              Agency Founder Finance Ltd · UK & Dubai · Specialist accountants
-              for agency founders.
+              Agency Founder Finance · UK & Dubai · Specialist accountants
+              for agency founders. A trading name of Ashfield Trading Ltd.
             </Text>
             <Text style={footerText}>
               <Link href="https://www.agencyfounderfinance.co.uk" style={footerLink}>

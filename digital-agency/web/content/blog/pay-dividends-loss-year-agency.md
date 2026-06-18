@@ -24,7 +24,7 @@ faqs:
 - question: What happens if I pay an unlawful dividend from a loss-making agency?
   answer: You can be personally liable to repay the full amount to the company. If multiple directors approved it, you are jointly and severally liable. HMRC will still tax it as dividend income. In insolvency, a liquidator can recover unlawful dividends paid up to 2 years prior. Do not take the risk.
 - question: Can I take a directors' loan instead of a dividend if my agency made a loss?
-  answer: Yes. A directors' loan is a lawful way to extract money from a loss-making company. But it is a debt you must repay within 9 months of the year-end, or the company pays a Section 455 tax charge at 33.75%. Loans over £10,000 must be reported on a P11D and are a benefit in kind. Use it as a short-term solution only.
+  answer: Yes. A directors' loan is a lawful way to extract money from a loss-making company. But it is a debt you must repay within 9 months of the year-end, or the company pays a Section 455 tax charge at 35.75%. Loans over £10,000 must be reported on a P11D and are a benefit in kind. Use it as a short-term solution only.
 - question: Do the same dividend rules apply if my agency uses a holding company structure?
   answer: Yes. The same Companies Act rules apply at every level. The holding company can only pay dividends from its own distributable profits, which typically come from subsidiary dividends. If the holding company has made a loss, it cannot pay a dividend regardless of what the subsidiaries have done.
 authorSlug: james-whitfield
@@ -87,10 +87,10 @@ keyTakeaways:
 <h3>Option 1: Take a Salary Instead</h3>
 <p>You can pay yourself a salary even in a loss-making year. Salary is a deductible expense for the company, so it reduces the loss further. But it also triggers PAYE and National Insurance. For a loss-making agency, the tax efficiency argument for salary over dividends is weaker. Still, if you need personal income, it is lawful.</p>
 
-<p>If you are already taking the standard £12,570 salary (up to the NI primary threshold), you could increase it. Just be aware of the employer NI cost at 13.8% and your own income tax at your marginal rate.</p>
+<p>If you are already taking the standard £12,570 salary (up to the NI primary threshold), you could increase it. Just be aware of the employer NI cost at 15% and your own income tax at your marginal rate.</p>
 
 <h3>Option 2: Use a Directors' Loan</h3>
-<p>You can borrow money from your agency as a directors' loan. This is not a dividend. It is a debt you owe the company. You must repay it within 9 months of your year-end, or the company faces a Section 455 tax charge at 33.75% of the outstanding amount.</p>
+<p>You can borrow money from your agency as a directors' loan. This is not a dividend. It is a debt you owe the company. You must repay it within 9 months of your year-end, or the company faces a Section 455 tax charge at 35.75% of the outstanding amount.</p>
 
 <p>Directors' loans over £10,000 must be reported on your P11D and are a benefit in kind. They also affect your personal tax position. This is a short-term solution, not a long-term income strategy.</p>
 

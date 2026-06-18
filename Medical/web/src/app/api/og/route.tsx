@@ -78,7 +78,7 @@ export async function GET(req: NextRequest) {
               color: "#64748b",
             }}
           >
-            medicalaccountantsuk.co.uk
+            medicalaccounts.co.uk
           </span>
         </div>
         <div

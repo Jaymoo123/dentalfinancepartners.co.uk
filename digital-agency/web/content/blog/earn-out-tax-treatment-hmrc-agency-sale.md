@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Earn-Out Tax Treatment: HMRC Rules for Agency Sales'
-metaDescription: Get an agency earn-out taxed as capital, not income. Structured wrong, you pay 45% instead of 14% with BADR. See how HMRC decides.
+metaDescription: Get an agency earn-out taxed as capital, not income. Structured wrong, you pay 45% instead of 18% with BADR. See how HMRC decides.
 altText: Two agency founders signing a sale agreement in a London office meeting room, with a calculator and documents on the table
 image: /blog/earn-out-tax-treatment-hmrc-agency-sale.jpg
 imageCredit:
@@ -17,18 +17,18 @@ imageCredit:
   source: Pexels
 h1: What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?
 summary: Selling your agency with an earn-out is common, but HMRC treats the deferred consideration differently depending on how the deal is structured. This article covers the tax treatment of earn-outs under current HMRC rules, including capital gains vs income, BADR eligibility, and how to structure the deal to minimise your tax bill.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International tax"]},{"@type":"Article","headline":"What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?","description":"Get an agency earn-out taxed as capital, not income. Structured wrong, you pay 45% instead of 14% with BADR. See how HMRC decides.","url":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale","datePublished":"2026-05-16","dateModified":"2026-06-12","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate
-  tax","International tax"]},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance Ltd","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/earn-out-tax-treatment-hmrc-agency-sale.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"Growth and Exit","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit"},{"@type":"ListItem","position":3,"name":"What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"}]}]}'
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate tax","International tax"]},{"@type":"Article","headline":"What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?","description":"Get an agency earn-out taxed as capital, not income. Structured wrong, you pay 45% instead of 18% with BADR. See how HMRC decides.","url":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale","datePublished":"2026-05-16","dateModified":"2026-06-12","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK tax law","Corporate
+  tax","International tax"]},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/earn-out-tax-treatment-hmrc-agency-sale.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"Growth and Exit","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit"},{"@type":"ListItem","position":3,"name":"What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?","item":"https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"}]}]}'
 faqs: []
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - HMRC treats an earn-out as capital gains if it is deferred consideration for shares, but as income if linked to ongoing services or employment.
-- Capital gains tax on earn-outs can be as low as 14% with Business Asset Disposal Relief (BADR), rising to 18% from 6 April 2026.
-- Income tax on earn-outs can reach 45% plus 2% Class 4 National Insurance, or 13.8% Employer NI if paid via employment.
+- Capital gains tax on earn-outs can be as low as 18% with Business Asset Disposal Relief (BADR), rising to 18% from 6 April 2026.
+- Income tax on earn-outs can reach 45% plus 2% Class 4 National Insurance, or 15% Employer NI if paid via employment.
 - To qualify for BADR on an earn-out, you must have held at least 5% of shares and been an officer or employee for two years before the sale.
 - 'HMRC examines the substance of the earn-out: if conditional on your personal performance, it is likely treated as income, not capital.'
-metaTitle_prev: 'Earn-out tax treatment HMRC agency sale: 2025/26 rules'
+metaTitle_prev: 'Earn-out tax treatment HMRC agency sale: 2026/27 rules'
 metaDescription_prev: Selling your agency with an earn-out? HMRC taxes it differently depending on structure. We cover capital gains, income treatment, and BADR eligibility
 dateModified: '2026-06-12'
 reviewedBy: ICAEW Qualified Senior Reviewer
@@ -42,17 +42,17 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>An earn-out is a deferred payment structure where you receive part of the sale price only if the agency hits certain targets after completion. Common targets include revenue growth, profit margins, client retention, or EBITDA milestones. For buyers, it protects them from overpaying if the agency underperforms post-sale. For sellers, it can bridge a valuation gap and access a higher total price.</p>
 
-<p>The tax treatment of an earn-out under HMRC rules is not straightforward. Get the structure wrong and you could pay income tax at 45% instead of capital gains tax at 14% or 20%. That is a difference of tens or hundreds of thousands of pounds.</p>
+<p>The tax treatment of an earn-out under HMRC rules is not straightforward. Get the structure wrong and you could pay income tax at 45% instead of capital gains tax at 18% or 20%. That is a difference of tens or hundreds of thousands of pounds.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see earn-outs in at least half of the agency sales we advise on. This article covers exactly how HMRC treats earn-outs, what the 2025/26 rules say, and how to structure your deal to keep more of the money you have earned.</p>
+<p>As ICAEW qualified accountants working exclusively with agency founders, we see earn-outs in at least half of the agency sales we advise on. This article covers exactly how HMRC treats earn-outs, what the 2026/27 rules say, and how to structure your deal to keep more of the money you have earned.</p>
 
 <h2>How HMRC Classifies Earn-Out Payments: Capital vs Income</h2>
 
 <p>The single most important question for tax purposes is whether HMRC treats the earn-out payment as capital or income. The answer determines the tax rate, the reliefs available, and your net proceeds.</p>
 
-<p><strong>Capital treatment.</strong> If the earn-out is structured as deferred consideration for the sale of shares, the payment is capital in nature. You pay Capital Gains Tax (CGT) on the gain. For most agency founders, the rate is 14% if BADR applies, 24% if it does not. The earn-out payment is added to the proceeds in the year you receive it, and you report it on your Self Assessment tax return (SA100 form).</p>
+<p><strong>Capital treatment.</strong> If the earn-out is structured as deferred consideration for the sale of shares, the payment is capital in nature. You pay Capital Gains Tax (CGT) on the gain. For most agency founders, the rate is 18% if BADR applies, 24% if it does not. The earn-out payment is added to the proceeds in the year you receive it, and you report it on your Self Assessment tax return (SA100 form).</p>
 
-<p><strong>Income treatment.</strong> If the earn-out is structured as a payment for services, consultancy, or ongoing employment, HMRC treats it as income. You pay Income Tax at your marginal rate (up to 45%) plus Class 4 National Insurance at 2%. If the earn-out is paid to you as a director or employee, Employer NI at 13.8% also applies. This is the worst-case scenario for most sellers.</p>
+<p><strong>Income treatment.</strong> If the earn-out is structured as a payment for services, consultancy, or ongoing employment, HMRC treats it as income. You pay Income Tax at your marginal rate (up to 45%) plus Class 4 National Insurance at 2%. If the earn-out is paid to you as a director or employee, Employer NI at 15% also applies. This is the worst-case scenario for most sellers.</p>
 
 <p>HMRC looks at the substance of the arrangement, not just the label. If the earn-out is clearly linked to your ongoing involvement in the business post-sale, they may argue it is income. If it is purely deferred consideration for the shares you sold, it is capital.</p>
 
@@ -66,7 +66,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Here is where it gets specific. If you receive an earn-out payment in a later tax year, HMRC allows you to claim BADR on that payment provided the original disposal qualified. You do not need to re-qualify at the point you receive the earn-out cash. This is a critical point many founders miss.</p>
 
-<p><strong>Example.</strong> You sell your agency in June 2025. You qualify for BADR on the upfront consideration of £800,000. The earn-out is £200,000, payable in June 2027 if the agency hits its revenue targets. When you receive that £200,000 in 2027, you can claim BADR on it, provided the original disposal qualified. The gain is taxed at 14%, not 20%.</p>
+<p><strong>Example.</strong> You sell your agency in June 2025. You qualify for BADR on the upfront consideration of £800,000. The earn-out is £200,000, payable in June 2027 if the agency hits its revenue targets. When you receive that £200,000 in 2027, you can claim BADR on it, provided the original disposal qualified. The gain is taxed at 18%, not 20%.</p>
 
 <p>There is a trap. If the earn-out is structured as a separate contract for services rather than deferred consideration for shares, BADR does not apply. You lose the 10% rate entirely. We have seen buyers push for this structure because it gives them a tax deduction for the earn-out payment. Do not agree to it without understanding the cost to you.</p>
 
@@ -74,7 +74,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>1. Deferred Consideration as a Fixed Amount</h3>
 
-<p>This is the simplest structure. You agree a fixed additional payment, say £150,000, payable in two years. The amount does not depend on performance. HMRC treats this as capital consideration for the shares. You pay CGT at 14% or 24% depending on BADR eligibility.</p>
+<p>This is the simplest structure. You agree a fixed additional payment, say £150,000, payable in two years. The amount does not depend on performance. HMRC treats this as capital consideration for the shares. You pay CGT at 18% or 24% depending on BADR eligibility.</p>
 
 <p>This structure gives you certainty. The downside is that the buyer takes all the risk if the agency underperforms. Many buyers will push for a variable earn-out instead.</p>
 
@@ -110,16 +110,16 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Document your intentions.</strong> Have a clear paper trail showing that the earn-out is part of the sale consideration, not a reward for post-sale services. Board minutes, correspondence, and the SPA should all reflect this.</li>
 </ul>
 
-<h2>Tax Rates for Earn-Out Payments in 2025/26</h2>
+<h2>Tax Rates for Earn-Out Payments in 2026/27</h2>
 
 <p>Here are the rates that apply depending on classification.</p>
 
-<p><strong>Capital treatment (with BADR):</strong> 14% on gains up to £1 million lifetime limit. Above that, 20%.</p>
+<p><strong>Capital treatment (with BADR):</strong> 18% on gains up to £1 million lifetime limit. Above that, 20%.</p>
 <p><strong>Capital treatment (without BADR):</strong> 24% for higher rate taxpayers, 18% for basic rate taxpayers (if within the basic rate band).</p>
 <p><strong>Income treatment (self-employed):</strong> Income Tax at 20%, 40%, or 45% depending on total income. Class 4 NI at 2% on profits above £12,570.</p>
-<p><strong>Income treatment (employed):</strong> Income Tax at marginal rate. Employee NI at 2% on earnings above £12,570. Employer NI at 13.8% (borne by the buyer, but it reduces the amount they are willing to pay).</p>
+<p><strong>Income treatment (employed):</strong> Income Tax at marginal rate. Employee NI at 2% on earnings above £12,570. Employer NI at 15% (borne by the buyer, but it reduces the amount they are willing to pay).</p>
 
-<p>The difference between 10% and 45% is enormous. On a £300,000 earn-out, you keep £270,000 at 14% CGT, or £165,000 at 45% Income Tax. That is £105,000 less in your pocket.</p>
+<p>The difference between 10% and 45% is enormous. On a £300,000 earn-out, you keep £270,000 at 18% CGT, or £165,000 at 45% Income Tax. That is £105,000 less in your pocket.</p>
 
 <h2>What Happens If HMRC Challenges the Earn-Out?</h2>
 
@@ -147,7 +147,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Yes, provided the original share disposal qualified for BADR. You do not need to re-qualify at the point you receive the earn-out. The gain on the earn-out is treated as part of the original disposal and qualifies for the 10% rate, up to the £1 million lifetime limit.</p>
 
 <h3>What happens if the earn-out is paid as a dividend post-sale?</h3>
-<p>If the buyer pays you a dividend instead of deferred consideration, you pay dividend tax at 8.75%, 33.75%, or 39.35% depending on your total income. This is often worse than capital treatment but better than income treatment. However, dividends are only payable if the company has distributable profits, and the buyer may not agree to this structure.</p>
+<p>If the buyer pays you a dividend instead of deferred consideration, you pay dividend tax at 10.75%, 35.75%, or 39.35% depending on your total income. This is often worse than capital treatment but better than income treatment. However, dividends are only payable if the company has distributable profits, and the buyer may not agree to this structure.</p>
 
 <h3>Does HMRC have a specific form for reporting earn-out payments?</h3>
 <p>No separate form exists. You report the earn-out payment on your Self Assessment tax return (SA100). For capital treatment, you complete the Capital Gains pages (SA108). For income treatment, you report it as employment or self-employment income on the relevant pages. Your accountant will handle this as part of your annual return.</p>

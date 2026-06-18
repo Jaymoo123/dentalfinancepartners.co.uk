@@ -1,9 +1,9 @@
-# Brief: gp-partnership-basis-period-reform-explained
+﻿# Brief: gp-partnership-basis-period-reform-explained
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster D (Understanding GP partnership accounts), pick D3
 **Source file (to be created):** `Medical/web/content/blog/gp-partnership-basis-period-reform-explained.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-basis-period-reform-explained
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-partnership-basis-period-reform-explained
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (GP partner self-employed; SA800 to SA104; taxed on profit share not drawings; partnership taxation under ITTOIA 2005) and §9 (MTD timetable; general partnerships deferred), with a light §8 cross-ref (payments on account, the cash-flow impact).
 

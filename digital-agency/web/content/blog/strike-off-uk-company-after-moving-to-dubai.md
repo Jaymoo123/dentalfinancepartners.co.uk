@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Voluntary strike off (DS01, £8) works only if your UK company has no assets, no liabilities, and no retained profits to extract.
-- If your company has over £25,000 in retained profits, a Members' Voluntary Liquidation (MVL) lets you access 14% BADR CGT instead of 33.75% dividend tax.
+- If your company has over £25,000 in retained profits, a Members' Voluntary Liquidation (MVL) lets you access 18% BADR CGT instead of 35.75% dividend tax.
 - 'Before filing DS01, settle all liabilities: final corporation tax, VAT, PAYE, director''s loan accounts, and outstanding invoices.'
 - Novate client contracts to your Dubai entity before striking off, otherwise contracts die with the UK company.
 - HMRC and Companies House have a 3-month objection period; missing it can reinstate the company with penalties.
@@ -52,7 +52,7 @@ keyTakeaways:
 
 <p>Voluntary strike off is the simpler, cheaper route. It costs £8 to file the DS01 with Companies House. You can do it yourself, or your accountant can handle it. It works if your company has no assets left to distribute, no outstanding liabilities, and you don't need to extract retained profits in a tax-efficient way.</p>
 
-<p>An MVL is more formal. You appoint a licensed insolvency practitioner, they wind up the company, and any retained profits are distributed as capital, not dividends. This matters if you have significant retained profits in the company, because an MVL lets you access Business Asset Disposal Relief (BADR) on the distribution, giving you a 14% CGT rate instead of the 33.75% dividend tax you'd pay on an equivalent dividend.</p>
+<p>An MVL is more formal. You appoint a licensed insolvency practitioner, they wind up the company, and any retained profits are distributed as capital, not dividends. This matters if you have significant retained profits in the company, because an MVL lets you access Business Asset Disposal Relief (BADR) on the distribution, giving you a 18% CGT rate instead of the 35.75% dividend tax you'd pay on an equivalent dividend.</p>
 
 <p>If your UK company has more than about £25,000 in retained profits and you're a higher-rate taxpayer, an MVL is usually the better option. If the company is essentially empty, strike off is fine.</p>
 

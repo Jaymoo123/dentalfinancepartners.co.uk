@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Selling shares in your agency qualifies for Business Asset Disposal Relief at 14% on the first £1m of lifetime gains, with 20% on the remainder.
+- Selling shares in your agency qualifies for Business Asset Disposal Relief at 18% on the first £1m of lifetime gains, with 20% on the remainder.
 - In an asset sale, the company pays 19% or 25% corporation tax on the goodwill gain, then you pay dividend tax or further capital gains tax on extraction.
 - Buyers prefer asset sales because they can claim capital allowances or amortisation relief on purchased goodwill, reducing their tax bill.
 - If goodwill is internally generated, its base cost is zero, so the full sale proceeds allocated to goodwill are subject to corporation tax.
@@ -52,7 +52,7 @@ keyTakeaways:
 
 <p>If you sell the shares in your agency company, the buyer acquires everything the company owns. That includes goodwill automatically. You do not extract goodwill separately. You sell your shares, pay capital gains tax on the gain, and walk away.</p>
 
-<p>This is the cleanest structure for the seller. You get Business Asset Disposal Relief (BADR) at 14% on the first £1m of lifetime gains, provided you meet the conditions. Above that, you pay 20% on the rest.</p>
+<p>This is the cleanest structure for the seller. You get Business Asset Disposal Relief (BADR) at 18% on the first £1m of lifetime gains, provided you meet the conditions. Above that, you pay 20% on the rest.</p>
 
 <p>The buyer gets no tax relief on the goodwill because they did not buy it directly. They bought shares. The goodwill stays on the company's balance sheet at its original value. The buyer cannot write it off against their profits.</p>
 
@@ -72,7 +72,7 @@ keyTakeaways:
 
 <p>Your base cost in the shares was £100 (the nominal value when you incorporated). Your gain is £799,900.</p>
 
-<p>You qualify for BADR. You pay 14% on the first £1m of gains. Your tax bill: £79,990. You walk away with £720,010 net.</p>
+<p>You qualify for BADR. You pay 18% on the first £1m of gains. Your tax bill: £79,990. You walk away with £720,010 net.</p>
 
 <p>No corporation tax. No further extraction tax. One charge, done.</p>
 
@@ -84,7 +84,7 @@ keyTakeaways:
 
 <p>Your company pays corporation tax at 19% (assuming profits stay under £50,000 after marginal relief). That is £57,000 in corporation tax on the goodwill gain alone.</p>
 
-<p>The company now has £743,000 left. You want to extract it. If you take it as a dividend, you pay dividend tax at your marginal rate. At higher rate (33.75% on dividends above the allowance), that is roughly £250,000 in dividend tax.</p>
+<p>The company now has £743,000 left. You want to extract it. If you take it as a dividend, you pay dividend tax at your marginal rate. At higher rate (35.75% on dividends above the allowance), that is roughly £250,000 in dividend tax.</p>
 
 <p>Total tax: £57,000 corporation tax plus £250,000 dividend tax equals £307,000. You walk away with £493,000 net.</p>
 
@@ -114,7 +114,7 @@ keyTakeaways:
 
 <p>Instead of extracting the proceeds as dividends, you can liquidate the company after the asset sale. A members' voluntary liquidation (MVL) distributes the remaining cash as a capital distribution, not a dividend.</p>
 
-<p>Capital distributions qualify for capital gains tax treatment. If you qualify for BADR, you pay 14% on the first £1m. That is far better than 33.75% dividend tax.</p>
+<p>Capital distributions qualify for capital gains tax treatment. If you qualify for BADR, you pay 18% on the first £1m. That is far better than 35.75% dividend tax.</p>
 
 <p>But MVLs take time. You need to appoint a liquidator, follow statutory procedures, and wait for the company to be struck off. Buyers rarely want to wait. You need to agree this structure upfront.</p>
 

@@ -1,7 +1,20 @@
 {
   "niche_id": "agency-founder-finance",
   "display_name": "Agency Founder Finance",
-  "legal_name": "Agency Founder Finance Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
   "domain": "www.agencyfounderfinance.co.uk",
   "tagline": "The accountant built for agency founders",
   "description": "Specialist accountants for UK and UAE agency founders. Tax planning, management accounts, incorporation, IR35, and exit strategy for marketing, creative, digital, and all agency types.",

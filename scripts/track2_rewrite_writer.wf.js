@@ -34,7 +34,7 @@ const SITES = {
                 hp: 'docs/dentists/house_positions.md',      adviser: 'UK dental practice and associate tax accountant' },
   solicitors: { blogDir: 'Solicitors/web/content/blog',     domain: 'www.accountsforlawyers.co.uk',
                 hp: 'docs/solicitors/house_positions.md',    adviser: 'UK solicitor and law-firm accountant' },
-  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccountantsuk.co.uk',
+  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccounts.co.uk',
                 hp: 'docs/medical/house_positions.md',       adviser: 'UK medical professional and GP practice accountant',
                 flatBlog: true },
   generalist: { blogDir: 'generalist/web/content/blog',     domain: 'www.hollowaydavies.co.uk',

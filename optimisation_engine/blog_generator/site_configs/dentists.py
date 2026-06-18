@@ -92,11 +92,11 @@ SITE_CONFIG: dict = {
     "topic_order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
 
     # --- LLM provider ------------------------------------------------------
-    "llm_provider": "deepseek",
-    "llm_model": "deepseek-chat",
+    "llm_provider": "anthropic",
+    "llm_model": "claude-sonnet-4-20250514",
     "max_tokens": 6500,
     "temperature": 0.3,
-    "verify_with_haiku": True,  # mitigates DeepSeek hallucination risk
+    "verify_with_haiku": True,
 
     # --- Site-specific content rules --------------------------------------
     "post_categories": list(_POST_CATEGORIES),

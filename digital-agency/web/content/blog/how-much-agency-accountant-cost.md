@@ -103,7 +103,7 @@ keyTakeaways:
 <ul>
 <li><strong>Use accounting software properly</strong>, Xero, QuickBooks, or FreeAgent. If you keep your records clean and reconcile regularly, your accountant spends less time fixing messes. We recommend Xero for most agencies because of its project tracking and reporting capabilities.</li>
 <li><strong>Use receipt capture tools</strong>, Dext or AutoEntry. Scan receipts as you get them, not six months later.</li>
-<li><strong>Keep your director's loan account clean</strong>, If you borrow from the company and repay within 9 months of year-end, you avoid the S455 tax charge at 33.75%. If you don't, your accountant has to file additional returns and calculate the charge. That costs time and money.</li>
+<li><strong>Keep your director's loan account clean</strong>, If you borrow from the company and repay within 9 months of year-end, you avoid the S455 tax charge at 35.75%. If you don't, your accountant has to file additional returns and calculate the charge. That costs time and money.</li>
 <li><strong>Send your paperwork on time</strong>, If you're sending bank statements and invoices in February for a January year-end, your accountant has time to plan. If you send them in March, they're rushing. Rush jobs cost more.</li>
 </ul>
 

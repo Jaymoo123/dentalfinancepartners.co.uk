@@ -54,7 +54,7 @@ keyTakeaways:
 <li>Pay yourself a salary of £12,570 per year (up to the Primary Threshold for NI)</li>
 <li>No employee NI or employer NI on that salary</li>
 <li>Take the rest as dividends, up to the higher rate threshold if needed</li>
-<li>Use your £500 dividend allowance, then pay 8.75% on basic rate dividends</li>
+<li>Use your £500 dividend allowance, then pay 10.75% on basic rate dividends</li>
 </ul>
 
 <p>That works because one person controls the decision. But with two or more directors, you have to answer questions like:</p>
@@ -146,19 +146,19 @@ keyTakeaways:
 <p>James (30%): £42,687 dividend</p>
 <p>Priya (20%): £28,458 dividend</p>
 
-<p><strong>Step 4: Tax on Dividends (2025/26 rates)</strong></p>
+<p><strong>Step 4: Tax on Dividends (2026/27 rates)</strong></p>
 <p>Each director has £500 dividend allowance. After that:</p>
 <ul>
-<li>Sarah: £71,145 dividend + £12,570 salary = £83,715 total income. After personal allowance, £71,145 is taxable. £500 at 0%, then £50,270 - £12,570 = £37,700 at 8.75% = £3,298. Remaining £32,945 at 33.75% = £11,119. Total dividend tax: £14,417.</li>
-<li>James: Same calculation on £42,687 dividend + £12,570 salary = £55,257 total. Taxable dividend: £42,187 after allowance. £37,700 at 8.75% = £3,298. Remaining £4,487 at 33.75% = £1,514. Total: £4,812.</li>
-<li>Priya: £28,458 dividend + £12,570 salary = £41,028 total. All within basic rate band. Taxable dividend: £27,958 after allowance. All at 8.75% = £2,446.</li>
+<li>Sarah: £71,145 dividend + £12,570 salary = £83,715 total income. After personal allowance, £71,145 is taxable. £500 at 0%, then £50,270 - £12,570 = £37,700 at 10.75% = £4,053. Remaining £32,945 at 35.75% = £11,778. Total dividend tax: £15,831.</li>
+<li>James: Same calculation on £42,687 dividend + £12,570 salary = £55,257 total. Taxable dividend: £42,187 after allowance. £37,700 at 10.75% = £4,053. Remaining £4,487 at 35.75% = £1,604. Total: £5,657.</li>
+<li>Priya: £28,458 dividend + £12,570 salary = £41,028 total. All within basic rate band. Taxable dividend: £27,958 after allowance. All at 10.75% = £3,005.</li>
 </ul>
 
 <p><strong>Step 5: Net Take-Home</strong></p>
 <ul>
-<li>Sarah: £83,715 - £14,417 = £69,298</li>
-<li>James: £55,257 - £4,812 = £50,445</li>
-<li>Priya: £41,028 - £2,446 = £38,582</li>
+<li>Sarah: £83,715 - £15,831 = £67,884</li>
+<li>James: £55,257 - £5,657 = £49,600</li>
+<li>Priya: £41,028 - £3,005 = £38,023</li>
 </ul>
 
 <p>This is a clean, tax-efficient structure. Each director gets their salary, dividends follow shareholding, and the company saves corporation tax on the salaries.</p>
@@ -169,7 +169,7 @@ keyTakeaways:
 <p>If one director takes a higher salary than another, make sure there's a commercial reason. Part-time vs full-time. Different roles with different market rates. Document it in board minutes. HMRC can challenge salaries that look like disguised profit extraction rather than genuine remuneration for work done.</p>
 
 <h3>Pitfall 2: Ignoring Directors' Loan Account Balances</h3>
-<p>When multiple directors take different amounts from the company at different times, the directors' loan account (DLA) gets messy fast. If a director takes more than their dividend entitlement, the DLA goes overdrawn. If it stays overdrawn beyond 9 months after year-end, the company pays S455 tax at 33.75% on the outstanding amount.</p>
+<p>When multiple directors take different amounts from the company at different times, the directors' loan account (DLA) gets messy fast. If a director takes more than their dividend entitlement, the DLA goes overdrawn. If it stays overdrawn beyond 9 months after year-end, the company pays S455 tax at 35.75% on the outstanding amount.</p>
 
 <p>Track each director's DLA separately. Use accounting software that gives you a real-time view. Xero's reporting module or FreeAgent's DLA tracker works well for this.</p>
 
@@ -183,7 +183,7 @@ keyTakeaways:
 
 <p>If one director has a spouse with significant income, rental properties, or a side business, their personal tax position changes. They might already be in the higher rate band before any dividends from the agency.</p>
 
-<p>In that case, their dividends from the agency are taxed at 33.75% from the first pound (after the £500 allowance). The other directors on basic rate pay only 8.75%.</p>
+<p>In that case, their dividends from the agency are taxed at 35.75% from the first pound (after the £500 allowance). The other directors on basic rate pay only 10.75%.</p>
 
 <p>There is no way around this through the company structure. Each director's tax liability is personal. You cannot reallocate dividends to a lower-taxed director and then transfer the money privately, that's a settlement issue and HMRC will challenge it.</p>
 

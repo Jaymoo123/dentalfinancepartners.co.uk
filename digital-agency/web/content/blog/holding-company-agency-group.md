@@ -33,7 +33,7 @@ keyTakeaways:
 - A holding company structure protects agency assets like IP and cash reserves from trading subsidiary creditors.
 - Intra-group dividends paid from a subsidiary to a holding company are generally tax-free, avoiding dividend tax.
 - A holding company can loan cash between subsidiaries without triggering personal dividend tax for the founder.
-- Selling shares in the holding company can qualify for Business Asset Disposal Relief at 14% (rising to 18% from 6 April 2026).
+- Selling shares in the holding company can qualify for Business Asset Disposal Relief at 18% (rising to 18% from 6 April 2026).
 - Multiple subsidiaries under a holding company allow separate sales to different buyers, each potentially qualifying for BADR.
 ---
 <h2>What Is a Holding Company Structure for an Agency Group?</h2>
@@ -62,15 +62,15 @@ keyTakeaways:
 
 <p>This matters when you have multiple agencies. Say you own a digital agency and a PR agency. Without a holding company, each pays you dividends personally. You pay dividend tax on both. With a holding company, the PR agency pays dividends to the holding company tax-free. The holding company can then loan cash to the digital agency for expansion without you taking a personal tax hit.</p>
 
-<p>Here is a real example. A Bristol-based agency group with three subsidiaries: a web design agency turning over £420k, a SEO agency turning over £380k, and a content marketing agency turning over £290k. Each paid dividends to the holding company totalling £210,000 across the group in 2024/25. Because those were intra-group dividends, no corporation tax was due. The holding company then used £80,000 to fund a new subsidiary launch. The founder paid zero tax on that movement. Without the holding company, taking that cash out of one company to fund another would have triggered dividend tax at 33.75%.</p>
+<p>Here is a real example. A Bristol-based agency group with three subsidiaries: a web design agency turning over £420k, a SEO agency turning over £380k, and a content marketing agency turning over £290k. Each paid dividends to the holding company totalling £210,000 across the group in 2024/25. Because those were intra-group dividends, no corporation tax was due. The holding company then used £80,000 to fund a new subsidiary launch. The founder paid zero tax on that movement. Without the holding company, taking that cash out of one company to fund another would have triggered dividend tax at 35.75%.</p>
 
 <h3>Exit Flexibility and BADR</h3>
 
-<p>Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on the first £1 million of gains when you sell your company. But BADR has strict conditions. You must hold at least 5% of the shares and be an officer or employee for two years before sale.</p>
+<p>Business Asset Disposal Relief (BADR) gives you a 18% capital gains tax rate on the first £1 million of gains when you sell your company. But BADR has strict conditions. You must hold at least 5% of the shares and be an officer or employee for two years before sale.</p>
 
 <p>A holding company structure can make exit planning cleaner. You can sell shares in the holding company, which gives the buyer control of all subsidiaries. Or you can sell individual subsidiaries to different buyers. Each sale can qualify for BADR if structured correctly.</p>
 
-<p>I worked with a founder who owned two agencies: a creative agency and a recruitment agency. He wanted to sell the recruitment agency to a competitor but keep the creative agency. With a holding company structure, he sold the shares in the recruitment subsidiary. The gain qualified for BADR. The holding company retained the creative agency. Total CGT bill: 14% on £620,000 = £86,800, instead of 24% (£148,800).</p>
+<p>I worked with a founder who owned two agencies: a creative agency and a recruitment agency. He wanted to sell the recruitment agency to a competitor but keep the creative agency. With a holding company structure, he sold the shares in the recruitment subsidiary. The gain qualified for BADR. The holding company retained the creative agency. Total CGT bill: 18% on £620,000 = £86,800, instead of 24% (£148,800).</p>
 
 <h2>When a Holding Company Does Not Make Sense</h2>
 

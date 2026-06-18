@@ -5,26 +5,35 @@ import type { Organization, SchemaThing } from "./types";
 const ORG_ID = `${siteConfig.url}#organization`;
 
 /**
- * Canonical Organization for Agency Founder Finance Ltd. Use as the
+ * Canonical Organization for Agency Founder Finance (Ashfield Trading Ltd). Use as the
  * top-level Organization on the homepage, and as a referenced @id on
  * downstream pages via `referencedOrganization()`.
  */
 export function buildOrganization(): Organization {
+  const office = siteConfig.company.registeredOffice;
   return {
     "@context": "https://schema.org",
     "@type": (niche.seo.organization_type as Organization["@type"]) || "ProfessionalService",
     "@id": ORG_ID,
-    name: siteConfig.legalName,
-    alternateName: siteConfig.name,
+    name: siteConfig.name,
+    // Registered legal entity vs the public-facing trading name (brand).
+    legalName: siteConfig.company.legalName,
+    alternateName: siteConfig.company.tradingName,
+    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
     url: siteConfig.url,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: `${office.line1}, ${office.line2}`,
+      addressLocality: office.city,
+      postalCode: office.postcode,
+      addressCountry: "GB",
+    },
     description: siteConfig.description,
     logo: {
       "@type": "ImageObject",
       url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     },
     image: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    email: siteConfig.contact.email,
-    telephone: siteConfig.contact.phone,
     areaServed: niche.seo.service_areas.map((s) => ({
       "@type": "City",
       name: s,

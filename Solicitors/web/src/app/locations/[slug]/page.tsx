@@ -6,7 +6,7 @@ import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";
+import { buildAccountingService } from "@accounting-network/web-shared/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -165,18 +165,26 @@ export default async function LocationPage({ params }: Props) {
     p.slug.toLowerCase().includes(slug) || p.title.toLowerCase().includes(cityName.toLowerCase())
   );
   
-  const localBusinessSchema = buildLocalBusinessJsonLd({
-    name: siteConfig.name,
-    legalName: siteConfig.legalName,
-    description: siteConfig.description,
-    url: `${siteConfig.url}/locations/${slug}`,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
-    areaServed: content.areas,
-    city: cityName,
-    organizationType: "ProfessionalService",
-  });
+  // No public phone number is published, so phone is intentionally omitted:
+  // the builder then emits no `telephone` field in the LocalBusiness JSON-LD.
+  const localBusinessSchema = JSON.stringify(
+    buildAccountingService(
+      {
+        name: `${siteConfig.name} - ${cityName}`,
+        description: siteConfig.description,
+        url: `${siteConfig.url}/locations/${slug}`,
+        city: cityName,
+        areaServed: [cityName],
+      },
+      {
+        siteUrl: siteConfig.url,
+        siteName: siteConfig.name,
+        legalName: siteConfig.legalName,
+        publisherLogoUrl: siteConfig.publisherLogoUrl,
+        email: siteConfig.contact.email,
+      },
+    ),
+  );
   
   return (
     <>

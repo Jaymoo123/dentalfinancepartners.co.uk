@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
@@ -44,25 +45,14 @@ export default function ContactPage() {
             <h2 className="font-serif text-lg font-semibold text-[var(--ink)]">Get in touch</h2>
             <dl className="mt-6 space-y-5 text-sm">
               <div>
-                <dt className="font-medium text-[var(--ink)]">Email</dt>
+                <dt className="font-medium text-[var(--ink)]">Send a message</dt>
                 <dd className="mt-2">
-                  <a
+                  <Link
                     className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
-                    href={`mailto:${siteConfig.contact.email}`}
+                    href="/contact"
                   >
-                    {siteConfig.contact.email}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="font-medium text-[var(--ink)]">Phone</dt>
-                <dd className="mt-2">
-                  <a
-                    className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
-                    href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
-                  >
-                    {siteConfig.contact.phone}
-                  </a>
+                    Use the form below
+                  </Link>
                 </dd>
               </div>
               <div>

@@ -1,9 +1,9 @@
-# Brief: gp-practice-private-non-nhs-income-streams
+﻿# Brief: gp-practice-private-non-nhs-income-streams
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster C (Other NHS and practice income), pick C2
 **Source file (to be created):** `Medical/web/content/blog/gp-practice-private-non-nhs-income-streams.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-practice-private-non-nhs-income-streams
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-practice-private-non-nhs-income-streams
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income; partner income is profit share, not salary) and §6 (VAT for medical professionals; genuine medical care exempt under VATA 1994 Sch 9 Group 7 on the principal-purpose test; cosmetic-only and medico-legal / expert-witness / third-party-decision reports are STANDARD-RATED; £90,000 registration threshold of taxable turnover only; partial exemption), with cross-refs to §1 (partner taxed on profit share, not drawings) and §2.C (private/non-NHS income is not pensionable).
 

@@ -83,7 +83,7 @@ keyTakeaways:
 <h3>Fully Deductible</h3>
 <ul>
 <li><strong>Staff salaries and bonuses</strong>, including your own director's salary up to the personal allowance (£12,570 for 2025/26)</li>
-<li><strong>Employer's National Insurance</strong>, 13.8% on salaries above the secondary threshold</li>
+<li><strong>Employer's National Insurance</strong>, 15% on salaries above the secondary threshold</li>
 <li><strong>Rent and business rates</strong>, for your agency's office or co-working space</li>
 <li><strong>Software subscriptions</strong>, Xero, QuickBooks, FreeAgent, Dext, Float, Spotlight Reporting, project management tools, design software, CRM platforms</li>
 <li><strong>Professional fees</strong>, accountancy, legal, consultancy</li>
@@ -129,7 +129,7 @@ keyTakeaways:
 
 <h2>Directors' Loan Account: The Trap That Costs You</h2>
 
-<p>If your agency lends you money as a director, that creates a directors' loan account balance. If the loan is over £10,000 or not repaid within 9 months of your year-end, the company faces a Section 455 tax charge at 33.75% of the outstanding amount.</p>
+<p>If your agency lends you money as a director, that creates a directors' loan account balance. If the loan is over £10,000 or not repaid within 9 months of your year-end, the company faces a Section 455 tax charge at 35.75% of the outstanding amount.</p>
 
 <p>This is not a penalty. It is a tax charge that gets refunded when you repay the loan. But it ties up cash in HMRC's hands for months or years. Avoid it by keeping loan accounts in credit or repaying within the 9-month window.</p>
 

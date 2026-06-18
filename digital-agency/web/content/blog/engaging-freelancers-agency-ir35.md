@@ -33,7 +33,7 @@ keyTakeaways:
 - Since April 2021, medium and large agencies must determine IR35 status for freelancers working through their own limited company.
 - If your agency meets two of three criteria (turnover over £10.2m, balance sheet over £5.1m, over 50 employees), you are medium or large and must issue a Status Determination Statement.
 - Small agencies are exempt from making IR35 determinations, but freelancers remain responsible; HMRC can still challenge and pursue the agency for knowingly facilitating avoidance.
-- When a freelancer is inside IR35, you must deduct PAYE income tax and employee NI, pay employer NI at 13.8%, and may need to make pension contributions.
+- When a freelancer is inside IR35, you must deduct PAYE income tax and employee NI, pay employer NI at 15%, and may need to make pension contributions.
 - Engaging a freelancer inside IR35 increases your cost beyond their day rate due to employer NI, and the freelancer receives less net pay, often leading to a higher negotiated rate.
 ---
 <h2>Your Agency, Your Freelancers, and IR35</h2>
@@ -83,7 +83,7 @@ keyTakeaways:
 
 <ul>
 <li>You deduct PAYE income tax and employee National Insurance from the freelancer's payments</li>
-<li>You pay employer National Insurance at 13.8% on top</li>
+<li>You pay employer National Insurance at 15% on top</li>
 <li>You may need to make pension contributions (auto-enrolment rules apply if the freelancer would otherwise be classed as a worker)</li>
 <li>The freelancer cannot draw dividends from their limited company for that engagement; they receive a salary net of tax and NI</li>
 </ul>
@@ -100,7 +100,7 @@ keyTakeaways:
 <li>Process the £450 per day through payroll</li>
 <li>Deduct employee NI (approx £45 per day at 2025/26 rates)</li>
 <li>Deduct income tax (approx £130 per day, assuming basic rate)</li>
-<li>Pay employer NI of 13.8% on top (approx £55 per day)</li>
+<li>Pay employer NI of 15% on top (approx £67 per day)</li>
 <li>Pay the developer the net amount of roughly £275 per day</li>
 </ul>
 

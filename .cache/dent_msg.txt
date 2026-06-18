@@ -1,0 +1,7 @@
+Dentists acceptance: fix consent fabrication + wire goldens into test harness
+
+- Wizard step 1 gains a real required consent checkbox (LD-04); consent_given
+  now reflects user action, stored text matches the displayed label
+- vitest.config.ts + test script added so the 52 golden tests actually run in CI
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

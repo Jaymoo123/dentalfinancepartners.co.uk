@@ -57,7 +57,9 @@ from optimisation_engine.ingestion.ingest_ga4 import run as run_ga4_ingestion  #
 from optimisation_engine.ingestion.ingest_gsc_queries import run as run_gsc_ingestion  # noqa: E402
 from optimisation_engine.ingestion.ingest_gsc_pages import run as run_gsc_pages_ingestion  # noqa: E402
 from optimisation_engine.clients.bing_query_client import (  # noqa: E402
-    BingQueryFetcher, DEFAULT_SITE_URL as BING_SITE_URL,
+    BingQueryFetcher,
+    BingAiPerformanceFetcher,
+    DEFAULT_SITE_URL as BING_SITE_URL,
 )
 
 # ---------------------------------------------------------------------------
@@ -120,6 +122,41 @@ def step_ingest_bing(sites: list[str]) -> dict[str, int]:
             out[s] = BingQueryFetcher(s).fetch_and_store()
         except Exception as exc:
             print(f"  [bing] {s} failed: {type(exc).__name__}: {exc}")
+            out[s] = -1
+    return out
+
+
+def step_ingest_bing_ai(sites: list[str]) -> dict[str, int]:
+    """Fetch Copilot AI Performance report from BWT and write to bing_ai_performance.
+
+    Mirrors step_ingest_bing in structure: resilient per-site, skips sites
+    with no BWT mapping, swallows per-site errors so one failure does not
+    abort the rest of the pipeline.
+
+    Storage: public.bing_ai_performance (one row per site_key / page_url / date).
+    The table must be created via migration before this step can write. If the
+    table does not exist yet, the upsert will error and the site is skipped.
+
+    ASSUMPTION NOTE: BWT GetAiPerformance availability. This step is resilient
+    to a 404 / method-not-found from the API (the fetcher catches and logs the
+    error); it will produce zero rows until the endpoint is live. Use
+    `python -m optimisation_engine.clients.bing_query_client --ai-inspect`
+    to verify the endpoint before the first production run.
+
+    Free (no billing). Run weekly alongside step_ingest_bing.
+    """
+    print("\n" + "=" * 80)
+    print("[Step 1.4] Bing AI Performance ingestion (Copilot citations, free)")
+    print("=" * 80)
+    out: dict[str, int] = {}
+    for s in sites:
+        if s not in BING_SITE_URL:
+            print(f"  Skipping {s}: no BWT site mapping")
+            continue
+        try:
+            out[s] = BingAiPerformanceFetcher(s).fetch_and_store()
+        except Exception as exc:
+            print(f"  [bing-ai] {s} failed: {type(exc).__name__}: {exc}")
             out[s] = -1
     return out
 
@@ -343,6 +380,7 @@ def main() -> None:
     parser.add_argument("--skip-snapshot", action="store_true")
     parser.add_argument("--skip-gsc-pages", action="store_true")
     parser.add_argument("--skip-bing", action="store_true")
+    parser.add_argument("--skip-bing-ai", action="store_true")
     parser.add_argument("--skip-ga4", action="store_true")
     parser.add_argument("--skip-dataforseo", action="store_true")
     parser.add_argument("--dataforseo-dry-run", action="store_true", help="Run DFS planning but do not spend")
@@ -370,6 +408,13 @@ def main() -> None:
         report["bing"] = "skipped"
     else:
         report["bing"] = step_ingest_bing(sites)
+
+    # Step 1.4: Bing AI Performance (Copilot citation counts per page, free)
+    if args.skip_bing_ai:
+        print("\n[Step 1.4] Bing AI Performance ingestion skipped via --skip-bing-ai")
+        report["bing_ai"] = "skipped"
+    else:
+        report["bing_ai"] = step_ingest_bing_ai(sites)
 
     # Step 1.2: GSC page-level (unthresholded) — must run before snapshot
     if args.skip_gsc_pages:

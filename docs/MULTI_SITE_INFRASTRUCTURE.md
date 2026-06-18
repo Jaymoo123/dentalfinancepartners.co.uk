@@ -112,7 +112,7 @@ The active site portfolio as of Phase 0 baseline (2026-05-20).
 |---|---|---|---|---|---|---|---|
 | dentists | Dental Finance Partners | www.dentalfinancepartners.co.uk | `web` | `prj_f3tGDR4zozATcYOSLMmCqO2ZInNV` | 150 | `dentists` | Project name "web" is generic, should be renamed |
 | property | Property Tax Partners | www.propertytaxpartners.co.uk | `property-tax-partners` | `prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU` | 289 | `property` | |
-| medical | Medical Accountants | www.medicalaccounts.co.uk | `medicalaccounts.co.uk` | `prj_50vByZ3rqXQQwCUeENUTBbNBB41n` | 46 | `medical` | **Config drift**: `Medical/niche.config.json` declares `medicalaccountantsuk.co.uk` but production is `medicalaccounts.co.uk`. Lowest post count. Reconcile in Phase 1. |
+| medical | Medical Accountants | www.medicalaccounts.co.uk | `medicalaccounts.co.uk` | `prj_50vByZ3rqXQQwCUeENUTBbNBB41n` | 46 | `medical` | Config drift resolved 2026-06-17: all canonicals, config, scripts now on `medicalaccounts.co.uk`. |
 | solicitors | Accounts For Lawyers | www.accountsforlawyers.co.uk | `solicitors` | `prj_fCtGxawB5DvMonbUtgyOJRJZUzQ9` | 149 | `solicitors` | |
 | generalist | Holloway Davies | www.hollowaydavies.co.uk | `holloway-davies` | `prj_rMK56yY2qcCPTObgwkQjVXQl8yl3` | 366 | `general` | Largest post count, generalist (not niche). James Holloway reviewer byline (per memory). |
 | agency | Agency Founder Finance | www.agencyfounderfinance.co.uk | `agency-founder-finance` | `prj_roTeeTjzABAR7D649dTkq2ta4rQi` | 306 | `agency` | **Lives in its own git repo**: github.com/Jaymoo123/agency-founder-finance. Monorepo unification deferred to Phase 2 prep. **Framework preset = null** in Vercel — risk noted in `~/.claude/projects/.../memory/vercel_framework_preset_404.md`. Verify routes resolve, not just homepage. |
@@ -258,7 +258,7 @@ Both Medical and Solicitors need rows added to `sites` during Phase 1 closeout. 
 
 ```
 medical:    site_key=medical, display_name='Medical Accountants', domain='www.medicalaccounts.co.uk',
-            gsc_property_url='sc-domain:medicalaccountantsuk.co.uk' (mismatched, see config drift note),
+            gsc_property_url='sc-domain:medicalaccounts.co.uk',
             niche='medical', content_dir='Medical/web/content/blog', git_repo_path='Medical/web',
             blog_topics_table='blog_topics_medical', active=True
 solicitors: site_key=solicitors, display_name='Accounts For Lawyers', domain='www.accountsforlawyers.co.uk',
@@ -618,8 +618,8 @@ These items require owner action:
 - [x] ~~Reconcile Medical site domain drift~~ ✅ Done 2026-05-20 — `Medical/niche.config.json`, `Medical/pipeline/config_supabase.py`, `agents/config/gsc_config.py` all updated to `medicalaccounts.co.uk`
 - [x] ~~Populate sites table for medical + solicitors~~ ✅ Done 2026-05-20 — all 6 rows now in registry
 - [ ] **Apply RLS audit RPC migration** (`supabase/migrations/20260520000003_add_rls_audit_rpc.sql`) to prod Supabase via dashboard SQL editor or `npx supabase db push --linked`. Then run `python scripts/phase1_rls_audit.py` to enumerate RLS gaps.
-- [ ] **Re-verify Medical GSC property** on new domain (`sc-domain:medicalaccounts.co.uk`) — old verification was tied to `medicalaccountantsuk.co.uk`. Without this, GSC data won't flow for Medical.
-- [ ] **Decide on Medical blog content** — 48 .md files reference the old `medicalaccountantsuk.co.uk` domain. Options: (a) batch find-replace, (b) re-generate via engine, (c) leave as-is and let new content use correct domain. Recommend (a) for SEO hygiene.
+- [ ] **Re-verify Medical GSC property** on new domain (`sc-domain:medicalaccounts.co.uk`) — old verification was tied to the old domain. Without this, GSC data won't flow for Medical.
+- [x] ~~**Decide on Medical blog content**~~ ✅ Done 2026-06-17 — batch find-replaced all 46 blog .md canonicals + config + scripts to `medicalaccounts.co.uk`.
 - [ ] Optional: commit Digital Agency repo's untracked AIA blog posts + IndexNow key (separate repo)
 - [ ] Optional: investigate Solicitors zero-lead status (Agency + Generalist are <3 days old so expected; Solicitors is older and worth a sub-investigation)
 - [ ] Optional: verify Vercel framework preset on Digital Agency project (`"framework": null` is in project.json; routes other than homepage may 404)

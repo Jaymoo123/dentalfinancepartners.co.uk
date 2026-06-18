@@ -62,8 +62,11 @@ export function SiteFooter() {
                 </li>
               ))}
             </ul>
+            <p className="max-w-md text-xs leading-relaxed text-slate-400 min-[480px]:text-right">
+              {siteConfig.company.legalDisclosure}
+            </p>
             <p className="text-xs leading-relaxed text-slate-400 min-[480px]:text-right">
-              © {year} {siteConfig.legalName}. Registered in England and Wales.
+              © {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
               <span className="mt-1 block text-slate-500">{siteConfig.domain}</span>
             </p>
           </div>

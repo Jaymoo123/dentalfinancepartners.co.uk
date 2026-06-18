@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
@@ -49,25 +49,9 @@ export default function ContactPage() {
             <h2 className="font-serif text-lg font-semibold text-[var(--ink)]">Get in touch</h2>
             <dl className="mt-6 space-y-5 text-sm">
               <div>
-                <dt className="font-medium text-[var(--ink)]">Email</dt>
-                <dd className="mt-2">
-                  <a
-                    className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
-                    href={`mailto:${siteConfig.contact.email}`}
-                  >
-                    {siteConfig.contact.email}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="font-medium text-[var(--ink)]">Phone</dt>
-                <dd className="mt-2">
-                  <a
-                    className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
-                    href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
-                  >
-                    {siteConfig.contact.phone}
-                  </a>
+                <dt className="font-medium text-[var(--ink)]">Enquiries</dt>
+                <dd className="mt-2 text-[var(--ink-soft)]">
+                  Use the form to get in touch and we will respond by phone or email within one working day.
                 </dd>
               </div>
               <div>

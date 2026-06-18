@@ -1,7 +1,7 @@
----
+﻿---
 title: "Accountant Accounting Services for Medical Professionals"
 slug: "accountant-accounting-services"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-accounting-services"
+canonical: "https://www.medicalaccounts.co.uk/blog/accountant-accounting-services"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

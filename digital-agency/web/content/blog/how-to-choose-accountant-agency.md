@@ -82,7 +82,7 @@ keyTakeaways:
 
 <p>The standard model for most agency founders is a salary at the primary NI threshold (£12,570 for 2025/26) plus dividends. That keeps your tax and NI low. But it is not always optimal.</p>
 
-<p>If you have other income, if you are close to the higher rate threshold, or if you are planning an exit, the optimal structure changes. A specialist will model different scenarios for you. They will also manage your directors' loan account properly, avoiding the 33.75% S455 tax charge that hits when loans are not repaid within 9 months of year end.</p>
+<p>If you have other income, if you are close to the higher rate threshold, or if you are planning an exit, the optimal structure changes. A specialist will model different scenarios for you. They will also manage your directors' loan account properly, avoiding the 35.75% S455 tax charge that hits when loans are not repaid within 9 months of year end.</p>
 
 <p>We have a full guide on <a href="/blog/salary-and-dividends">salary and dividends for agency founders</a>.</p>
 
@@ -112,7 +112,7 @@ keyTakeaways:
 
 <h3>What Is Your Experience with Agency Exits?</h3>
 
-<p>If you plan to sell your agency in the next 3-10 years, your accountant needs to understand Business Asset Disposal Relief (BADR). BADR gives you a 14% capital gains tax rate on qualifying disposals, up to a £1 million lifetime limit. To qualify, you need to hold at least 5% of the shares and be an officer or employee of the company for at least 2 years before disposal.</p>
+<p>If you plan to sell your agency in the next 3-10 years, your accountant needs to understand Business Asset Disposal Relief (BADR). BADR gives you a 18% capital gains tax rate on qualifying disposals, up to a £1 million lifetime limit. To qualify, you need to hold at least 5% of the shares and be an officer or employee of the company for at least 2 years before disposal.</p>
 
 <p>A good specialist will help you structure your shareholding, your holding company, and your dividend policy to maximise BADR eligibility. They will also help you prepare your agency for sale by cleaning up your balance sheet, resolving any directors' loan account issues, and ensuring your financial records are audit-ready.</p>
 

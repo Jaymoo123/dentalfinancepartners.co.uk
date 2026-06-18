@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
@@ -53,7 +54,7 @@ export function LeadForm({
 
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
-  const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
+  const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -356,8 +357,7 @@ export function LeadForm({
             aria-describedby={fieldErrors.consent ? "err-consent" : undefined}
           />
           <span>
-            I agree to my details being shared by {niche.display_name} with specialist partners for
-            the purpose of responding to my enquiry and providing specialist advice. See our{" "}
+            {siteConfig.leadConsentText} See our{" "}
             <a
               href="/privacy-policy"
               target="_blank"

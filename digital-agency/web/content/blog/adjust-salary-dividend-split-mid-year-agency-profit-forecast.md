@@ -22,9 +22,9 @@ faqs:
 - question: Can I change my salary mid-year without HMRC raising an issue?
   answer: Yes, you can change your salary at any time. You simply update your payroll software (Xero, FreeAgent, QuickBooks) and issue a new payslip. HMRC does not need prior approval. The change applies from the next payroll run. Just ensure the new salary is still commercially reasonable for your role. Dropping from £50,000 to £12,570 overnight is fine if it reflects your actual duties. Increasing it to £100,000 without a corresponding change in responsibilities might attract HMRC scrutiny.
 - question: What happens if I paid dividends based on a profit forecast that did not materialise?
-  answer: You have paid an illegal dividend. The company must have sufficient distributable profits at the date of declaration. If it did not, the dividend is void. The remedy is to treat the amount as a director's loan. If that loan is not repaid within nine months of the company year-end, you face a section 455 charge at 33.75% on the outstanding balance. Speak to your accountant immediately. They can help you restructure the payments and avoid the penalty.
+  answer: You have paid an illegal dividend. The company must have sufficient distributable profits at the date of declaration. If it did not, the dividend is void. The remedy is to treat the amount as a director's loan. If that loan is not repaid within nine months of the company year-end, you face a section 455 charge at 35.75% on the outstanding balance. Speak to your accountant immediately. They can help you restructure the payments and avoid the penalty.
 - question: Should I take a higher salary instead of dividends if my profit is higher than expected?
-  answer: Usually not. Salary above £12,570 triggers employer NI at 13.8% and employee NI at 8% (or 2% above £50,270). That combined rate of roughly 22% is higher than the 8.75% basic rate dividend tax. However, if you are already in the higher rate band, dividends are taxed at 33.75%. In that case, salary might be comparable if you need the cash. But salary is also subject to PAYE and reduces your company's profit, which lowers corporation tax. Run the numbers both ways before deciding. A 30-minute call with your accountant will clarify the better option.
+  answer: Usually not. Salary above £12,570 triggers employer NI at 15% and employee NI at 8% (or 2% above £50,270). That combined rate of roughly 22% is higher than the 10.75% basic rate dividend tax. However, if you are already in the higher rate band, dividends are taxed at 35.75%. In that case, salary might be comparable if you need the cash. But salary is also subject to PAYE and reduces your company's profit, which lowers corporation tax. Run the numbers both ways before deciding. A 30-minute call with your accountant will clarify the better option.
 - question: How often should I review my salary dividend split?
   answer: At least quarterly, aligned with your management accounts review. If your agency has volatile revenue (project-based rather than retainer), review it monthly. The key trigger is any change in your profit forecast of more than 15-20%. If you win a big retainer or lose a major client, that is the moment to reassess. Do not wait until year-end. By then, the tax position is locked in and any mistakes are harder to fix.
 authorSlug: james-whitfield
@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Adjust your salary and dividend split mid-year when profit forecasts change to avoid overdrawing your director's loan account.
 - Dividends must be paid from realised profits at the time of declaration, not from projected future earnings.
-- For 2025/26, set your salary at £12,570 to stay within the personal allowance and avoid NI above the threshold.
+- For 2026/27, set your salary at £12,570 to stay within the personal allowance and avoid NI above the threshold.
 - At £210,000 profit, corporation tax uses marginal relief with an effective rate of approximately 21.5%.
 - If you overdraw dividends based on an incorrect forecast, you risk a section 455 charge on the overdrawn director's loan account.
 ---
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <h2>Why the Standard Advice Falls Short for Agency Founders</h2>
 
-<p>The textbook advice for a UK limited company director is simple. Take a salary up to the primary NI threshold (£12,570 for 2025/26). Then take the rest as dividends. This keeps your tax and NI combined lower than a full salary would.</p>
+<p>The textbook advice for a UK limited company director is simple. Take a salary up to the primary NI threshold (£12,570 for 2026/27). Then take the rest as dividends. This keeps your tax and NI combined lower than a full salary would.</p>
 
 <p>That works fine if your profit is predictable. But agency revenue is rarely flat. You might start the year expecting £100,000 profit and end up at £160,000. Or you might budget for £200,000 and land at £140,000 because a key retainer client left. The split that was optimal at the start of the year is now either leaving tax on the table or pushing you into an overdrawn director's loan account.</p>
 
@@ -68,9 +68,9 @@ keyTakeaways:
 
 <h2>Personal Tax: The Dividend Allowance and Tax Bands</h2>
 
-<p>For 2025/26, the dividend allowance is £500. That is the amount of dividend income you can receive tax-free. Everything above that is taxed at your marginal dividend rate: 8.75% for basic rate, 33.75% for higher rate, 39.35% for additional rate.</p>
+<p>For 2026/27, the dividend allowance is £500. That is the amount of dividend income you can receive tax-free. Everything above that is taxed at your marginal dividend rate: 10.75% for basic rate, 35.75% for higher rate, 39.35% for additional rate.</p>
 
-<p>Your salary of £12,570 uses your full personal allowance. So every pound of dividend you take is taxable. The first £500 is at 0%. Then the next £37,200 (up to £50,270 total income) is at 8.75%. Then everything from £50,271 to £125,140 is at 33.75%.</p>
+<p>Your salary of £12,570 uses your full personal allowance. So every pound of dividend you take is taxable. The first £500 is at 0%. Then the next £37,200 (up to £50,270 total income) is at 10.75%. Then everything from £50,271 to £125,140 is at 35.75%.</p>
 
 <p>In the example above, if you take the full £152,280 in dividends, your total income is £164,850. That puts you deep into the additional rate band. The tax on those dividends alone would be substantial. You would be better off leaving some profit in the company and taking it in a later year when your income might be lower, or when you are planning an exit and can use Business Asset Disposal Relief (BADR).</p>
 
@@ -80,7 +80,7 @@ keyTakeaways:
 
 <p>This is the most common situation. You budgeted conservatively, then a big project landed. Your profit is now £50,000 higher than expected.</p>
 
-<p>What to do: Review your personal tax position first. If you are already in the higher rate band, taking more dividends means paying 33.75% on them. Compare that to leaving the profit in the company, where it will be taxed at 19-25% corporation tax. If you plan to reinvest that money into the agency (new hires, equipment, marketing), leaving it in the company is usually better. If you need the cash personally, take only what you need and leave the rest.</p>
+<p>What to do: Review your personal tax position first. If you are already in the higher rate band, taking more dividends means paying 35.75% on them. Compare that to leaving the profit in the company, where it will be taxed at 19-25% corporation tax. If you plan to reinvest that money into the agency (new hires, equipment, marketing), leaving it in the company is usually better. If you need the cash personally, take only what you need and leave the rest.</p>
 
 <p>Do not automatically increase your dividend draw just because the profit is there. The tax cost of extracting it may be higher than the benefit.</p>
 
@@ -88,7 +88,7 @@ keyTakeaways:
 
 <p>This is the dangerous one. You paid dividends based on a profit forecast that did not materialise. Now your director's loan account is overdrawn because you took more out of the company than it actually earned.</p>
 
-<p>What to do: Stop taking dividends immediately. Check your management accounts to see your actual retained profit position. If you have overdrawn, you have two options. Repay the excess to the company (as a director's loan repayment) before the company year-end. Or leave it and face a section 455 charge at 33.75% on the overdrawn amount if it is not repaid within nine months of the year-end.</p>
+<p>What to do: Stop taking dividends immediately. Check your management accounts to see your actual retained profit position. If you have overdrawn, you have two options. Repay the excess to the company (as a director's loan repayment) before the company year-end. Or leave it and face a section 455 charge at 35.75% on the overdrawn amount if it is not repaid within nine months of the year-end.</p>
 
 <p>If you cannot repay, speak to your accountant about declaring a formal dividend based on the actual profits available. You may need to adjust the amounts you have already taken and treat the excess as a loan. This is not ideal, but it is fixable.</p>
 
@@ -118,11 +118,11 @@ keyTakeaways:
 
 <p><strong>Paying dividends before the profit is earned.</strong> This is the biggest risk. Dividends must come from realised profits. If you pay a dividend in June based on a forecast for December, and the profit does not arrive, you have an illegal dividend. The remedy is to treat it as a director's loan, but that creates its own tax issues.</p>
 
-<p><strong>Ignoring the director's loan account.</strong> Every pound you take out of the company that is not salary, dividend, or expense reimbursement goes through your director's loan account. If that account goes overdrawn and stays overdrawn past nine months after year-end, you pay 33.75% tax on the balance. This is a common trap for agency founders who use the company bank account like a personal account.</p>
+<p><strong>Ignoring the director's loan account.</strong> Every pound you take out of the company that is not salary, dividend, or expense reimbursement goes through your director's loan account. If that account goes overdrawn and stays overdrawn past nine months after year-end, you pay 35.75% tax on the balance. This is a common trap for agency founders who use the company bank account like a personal account.</p>
 
 <p><strong>Not reviewing the split at least quarterly.</strong> A salary dividend split set in April is a plan, not a contract. Review it every quarter when you look at your management accounts. If the forecast has moved, adjust the dividend draw accordingly.</p>
 
-<p><strong>Forgetting the dividend allowance is only £500.</strong> For 2025/26, you get £500 of tax-free dividends. That is it. Every additional pound is taxed. Do not let the small allowance trick you into thinking dividends are tax-free. They are not, beyond that first £500.</p>
+<p><strong>Forgetting the dividend allowance is only £500.</strong> For 2026/27, you get £500 of tax-free dividends. That is it. Every additional pound is taxed. Do not let the small allowance trick you into thinking dividends are tax-free. They are not, beyond that first £500.</p>
 
 <h2>When to Involve Your Accountant</h2>
 

@@ -32,9 +32,9 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Salary sacrifice shifts income to a spouse by reducing your salary and increasing theirs, keeping total company deduction unchanged.
 - Dividend waiver requires a formal signed document before the dividend is declared; retrospective waivers are not accepted by HMRC.
-- Salary sacrifice below £9,100 avoids employer NI in 2025/26, but you lose state pension and benefit entitlements.
+- Salary sacrifice below £5,000 avoids employer NI in 2026/27, but you lose state pension and benefit entitlements.
 - Dividend waiver allows you to keep your salary for NI credits while moving dividend income to your spouse's lower tax bands.
-- For 2025/26, shifting income via dividend waiver can save up to 33.75% tax if your spouse is a basic rate taxpayer versus your higher rate.
+- For 2026/27, shifting income via dividend waiver can save up to 35.75% tax if your spouse is a basic rate taxpayer versus your higher rate.
 ---
 <p>If your spouse holds shares in your agency, you have a tax planning opportunity that single-director companies don't. You can shift income between you, making use of both personal allowances, both basic rate bands, and both dividend allowances. The question is which method does that most efficiently: salary sacrifice or dividend waiver?</p>
 
@@ -63,7 +63,7 @@ keyTakeaways:
 
 <h3>The Tax Outcome</h3>
 
-<p>On the face of it, this looks clean. Your spouse gets £12,570 of salary, pays no income tax (covered by their personal allowance) and no employee NI (below the primary threshold). The company pays no employer NI either (below the secondary threshold of £9,100 for 2025/26).</p>
+<p>On the face of it, this looks clean. Your spouse gets £12,570 of salary, pays no income tax (covered by their personal allowance) and no employee NI (below the primary threshold). The company still pays the same employer NI as before, £1,135.50 (15% on the £7,570 above the £5,000 secondary threshold for 2026/27), because the total salary is unchanged. The switch simply moves who receives it.</p>
 
 <p>But there's a catch. By reducing your own salary to zero, you lose access to certain state benefits. You won't build up qualifying years for the state pension. And if you need to claim statutory sick pay or maternity/paternity pay, you won't qualify because you have no earnings.</p>
 
@@ -98,17 +98,17 @@ keyTakeaways:
 <p>Here's the worked example:</p>
 
 <ul>
-<li><strong>You:</strong> £50,000 dividends. First £500 covered by dividend allowance. Next £37,500 taxed at 8.75% (basic rate). Remaining £12,000 taxed at 33.75% (higher rate). Total dividend tax: £3,281.25 + £4,050 = £7,331.25.</li>
-<li><strong>Spouse:</strong> £50,000 dividends. Same calculation. Total dividend tax: £7,331.25.</li>
-<li><strong>Combined:</strong> £14,662.50.</li>
+<li><strong>You:</strong> £50,000 dividends. First £500 covered by dividend allowance. Next £37,500 taxed at 10.75% (basic rate). Remaining £12,000 taxed at 35.75% (higher rate). Total dividend tax: £4,031.25 + £4,290 = £8,321.25.</li>
+<li><strong>Spouse:</strong> £50,000 dividends. Same calculation. Total dividend tax: £8,321.25.</li>
+<li><strong>Combined:</strong> £16,642.50.</li>
 </ul>
 
 <p>Now with a waiver of £30,000 from you to your spouse:</p>
 
 <ul>
-<li><strong>You:</strong> £20,000 dividends. First £500 at 0%. Next £19,500 at 8.75%. Total dividend tax: £1,706.25.</li>
-<li><strong>Spouse:</strong> £80,000 dividends. First £500 at 0%. Next £37,500 at 8.75% (£3,281.25). Remaining £42,000 at 33.75% (£14,175). Total dividend tax: £17,456.25.</li>
-<li><strong>Combined:</strong> £19,162.50.</li>
+<li><strong>You:</strong> £20,000 dividends. First £500 at 0%. Next £19,500 at 10.75%. Total dividend tax: £2,096.25.</li>
+<li><strong>Spouse:</strong> £80,000 dividends. First £500 at 0%. Next £37,500 at 10.75% (£4,031.25). Remaining £42,000 at 35.75% (£15,015). Total dividend tax: £19,046.25.</li>
+<li><strong>Combined:</strong> £21,142.50.</li>
 </ul>
 
 <p>That's <strong>worse</strong>, not better. The spouse has moved into the higher rate band because they received too much income. The waiver backfired.</p>
@@ -137,9 +137,9 @@ keyTakeaways:
 <li>Spouse salary rises from £0 to £12,570.</li>
 <li>Remaining £7,430 shifted via increased dividends to spouse.</li>
 <li>Corporation tax: unchanged (total salary deduction same).</li>
-<li>Personal tax: spouse pays no tax on salary (personal allowance covers it). Spouse pays 8.75% on £7,430 dividends = £650.</li>
-<li>Founder saves higher rate tax on £20,000 of dividends they no longer receive: 33.75% of £20,000 = £6,750 saved.</li>
-<li><strong>Net saving: £6,100.</strong></li>
+<li>Personal tax: spouse pays no tax on salary (personal allowance covers it). Spouse pays 10.75% on £7,430 dividends = £799.</li>
+<li>Founder saves higher rate tax on £20,000 of dividends they no longer receive: 35.75% of £20,000 = £7,150 saved.</li>
+<li><strong>Net saving: £6,351.</strong></li>
 <li>Downside: founder loses NI contribution year for state pension.</li>
 </ul>
 
@@ -149,9 +149,9 @@ keyTakeaways:
 <li>Founder waives £20,000 of dividends.</li>
 <li>Spouse receives additional £20,000 in dividends.</li>
 <li>Corporation tax: unchanged (dividends are not deductible anyway).</li>
-<li>Personal tax: spouse now receives £20,000 more in dividends. If spouse has no other income, they pay 8.75% on £19,500 (after £500 allowance) = £1,706.25.</li>
-<li>Founder saves 33.75% on £20,000 = £6,750.</li>
-<li><strong>Net saving: £5,043.75.</strong></li>
+<li>Personal tax: spouse now receives £20,000 more in dividends. If spouse has no other income, they pay 10.75% on £19,500 (after £500 allowance) = £2,096.25.</li>
+<li>Founder saves 35.75% on £20,000 = £7,150.</li>
+<li><strong>Net saving: £5,053.75.</strong></li>
 <li>Downside: none on NI, but requires formal waiver documentation.</li>
 </ul>
 

@@ -103,7 +103,8 @@ function getSiteOpts(): SiteSchemaOpts {
     organizationType: niche.seo.organization_type || "ProfessionalService",
     publisherLogoUrl: siteConfig.publisherLogoUrl,
     email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
+    // contact.phone is intentionally NOT emitted to JSON-LD. No public phone is
+    // published; enquiries go via the on-site /contact form.
     serviceAreas: niche.seo.service_areas,
     knowsAbout: GENERALIST_KNOWS_ABOUT,
   };

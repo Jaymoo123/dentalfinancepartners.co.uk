@@ -1,0 +1,3 @@
+Phase F: F1+F2 deploy batteries recorded (embed contract proven live)
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

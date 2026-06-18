@@ -1,0 +1,3 @@
+Phase E acceptance: vitals view created+applied, runtime OB-01, live estate data verified
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

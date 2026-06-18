@@ -7,7 +7,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: `Contact ${siteConfig.name} | Book Free Consultation`,
-  description: `Contact ${siteConfig.name} for landlord accounting enquiries. Section 24, MTD, incorporation, portfolio management. 24-hour response. Phone, email, or form.`,
+  description: `Contact ${siteConfig.name} for landlord accounting enquiries. Section 24, MTD, incorporation, portfolio management. 24-hour response via our enquiry form.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
@@ -43,7 +43,7 @@ export default function ContactPage() {
             />
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold text-white sm:text-4xl lg:text-6xl">Contact</h1>
             <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
-              New enquiries by form, phone, or email. We aim to reply within one working day.
+              New enquiries by form. We aim to reply within one working day.
             </p>
           </div>
         </div>

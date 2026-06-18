@@ -30,7 +30,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - 'IR35 is the biggest tax risk for agencies: get the determination wrong and you inherit the tax bill and penalties.'
-- A contractor inside IR35 costs the fee-payer around £569 per £500 day once employer NICs and pension are added.
+- A contractor inside IR35 costs the fee-payer around £590 per £500 day once employer NICs and pension are added.
 - The fee-payer (usually your agency) must deduct PAYE, employee NICs, and employer NICs for inside-IR35 contractors.
 - If the end-client fails to issue a correct Status Determination Statement, the liability transfers to your agency as fee-payer.
 - Use HMRC's CEST tool cautiously; it has limitations and does not guarantee protection from HMRC challenges.
@@ -70,14 +70,14 @@ keyTakeaways:
 <ul>
 <li>Deduct PAYE income tax</li>
 <li>Deduct employee NICs (Class 1, currently 8% on earnings above £12,570)</li>
-<li>Pay employer NICs (13.8% on earnings above £9,100)</li>
+<li>Pay employer NICs (15% on earnings above £5,000)</li>
 <li>Pay the Apprenticeship Levy if total pay bills exceed £3M</li>
 <li>Issue a P60 at year end</li>
 </ul>
 
 <p>A contractor outside IR35 is genuinely self-employed. The contractor's PSC invoices your agency, usually without VAT (if below the threshold) or with VAT (if registered). The contractor handles their own tax through salary, dividends, and corporation tax on their PSC's profits.</p>
 
-<p>The difference is material. A contractor billing £500 per day outside IR35 might net around £400 after their PSC's tax costs. Inside IR35, that same £500 per day costs the fee-payer approximately £569 once employer NICs and pension contributions are added. The contractor nets around £320.</p>
+<p>The difference is material. A contractor billing £500 per day outside IR35 might net around £400 after their PSC's tax costs. Inside IR35, that same £500 per day costs the fee-payer approximately £590 once employer NICs and pension contributions are added. The contractor nets around £320.</p>
 
 <h2>When the Off-Payroll Rules Apply to Your Agency</h2>
 
@@ -212,7 +212,7 @@ keyTakeaways:
 
 <p>This is inside IR35. The client should issue an SDS confirming this. If they do not, BrightSpark as the fee-payer is liable.</p>
 
-<p>The cost to BrightSpark: £600 per day plus employer NICs at 13.8% (£82.80) plus pension contribution (3% minimum, £18) = £700.80 per day. Over 130 working days (6 months), that is £91,104. Sarah nets approximately £416 per day after PAYE and employee NICs.</p>
+<p>The cost to BrightSpark: £600 per day plus employer NICs at 15% (£90.00) plus pension contribution (3% minimum, £18) = £708 per day. Over 130 working days (6 months), that is £92,040. Sarah nets approximately £416 per day after PAYE and employee NICs.</p>
 
 <h3>Example 2: Outside IR35, The Specialist Consultant</h3>
 

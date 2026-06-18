@@ -129,7 +129,7 @@ imageCredit:
 
 <p>Total R&D hours: 1,800. Total paid hours: 3,600. Overall R&D proportion: 50%.</p>
 
-<p>The agency calculates total staff costs for these three developers: salaries £120,000, employer NI £13,800, pension contributions £4,800. Total: £138,600. The R&D proportion is 50%, so the qualifying staff cost is £69,300.</p>
+<p>The agency calculates total staff costs for these three developers: salaries £120,000, employer NI £15,750, pension contributions £4,800. Total: £140,550. The R&D proportion is 50%, so the qualifying staff cost is £70,275.</p>
 
 <p>Under the merged RDEC scheme, the agency claims a 20% credit on that £69,300, giving a credit of £13,860 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If the agency is loss-making and meets the intensity condition, they might claim ERIS instead, allowing an extra 86% deduction on qualifying costs <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 

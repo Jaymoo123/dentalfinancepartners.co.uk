@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact | Book a Free Contractor Accountant Call",
@@ -60,19 +59,7 @@ export default function ContactPage() {
               </ol>
 
               <div className="mt-12 border-t border-neutral-200 pt-8">
-                <p className="text-sm font-medium text-neutral-900">Prefer to contact us directly?</p>
-                <p className="mt-2 text-sm text-neutral-600">
-                  Email:{" "}
-                  <a
-                    href={`mailto:${siteConfig.contact.email}`}
-                    className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900"
-                  >
-                    {siteConfig.contact.email}
-                  </a>
-                </p>
-                <p className="mt-1 text-xs text-neutral-500">
-                  All conversations are confidential and carry no obligation.
-                </p>
+                <p className="text-sm font-medium text-neutral-900">All conversations are confidential and carry no obligation.</p>
               </div>
             </div>
 

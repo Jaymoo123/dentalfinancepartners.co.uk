@@ -1,7 +1,7 @@
----
+﻿---
 title: "GP Tax Advice: Essential Tax Planning for UK General Practitioners"
 slug: "gp-tax-advice"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-tax-advice"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-tax-advice"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

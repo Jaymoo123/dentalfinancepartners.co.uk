@@ -45,6 +45,12 @@ MIGRATIONS = [
     "20260608000007_nurture_engine.sql",
     "20260608000008_lead_enrichment.sql",
     "20260609000001_experiment_funnel.sql",
+    # GEO measurement layer (Track B) -- AI/Bing channel granularity, weekly cadence,
+    # first-touch journey fix, dark-AI heuristic, Copilot citation storage.
+    "20260617000001_geo_channel_split.sql",
+    "20260617000002_geo_leads_weekly_and_journey_fix.sql",
+    "20260617000003_vw_probable_ai_direct.sql",
+    "20260617000004_bing_ai_performance_table.sql",
 ]
 
 

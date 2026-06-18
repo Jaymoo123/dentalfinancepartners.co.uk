@@ -6,7 +6,7 @@ import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";
+import { buildAccountingService } from "@accounting-network/web-shared/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -105,18 +105,27 @@ export default async function LocationPage({ params }: Props) {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const posts = getAllPosts().slice(0, 3);
 
-  const localBusinessSchema = buildLocalBusinessJsonLd({
-    name: siteConfig.name,
-    legalName: siteConfig.legalName,
-    description: content.intro,
-    url: `${siteConfig.url}/locations/${slug}`,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
-    areaServed: content.areas,
-    city: cityName,
-    organizationType: "AccountingService",
-  });
+  // Public contact is via the /contact form only, so we deliberately omit
+  // `phone` from the schema opts. With no phone, buildAccountingService emits
+  // no `telephone` field at all.
+  const localBusinessSchema = JSON.stringify(
+    buildAccountingService(
+      {
+        name: siteConfig.name,
+        description: content.intro,
+        url: `${siteConfig.url}/locations/${slug}`,
+        city: cityName,
+        areaServed: [cityName],
+      },
+      {
+        siteUrl: siteConfig.url,
+        siteName: siteConfig.name,
+        legalName: siteConfig.legalName,
+        organizationType: "AccountingService",
+        publisherLogoUrl: siteConfig.publisherLogoUrl,
+      },
+    ),
+  );
 
   return (
     <div className={`${contentNarrow} ${sectionY}`}>

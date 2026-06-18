@@ -26,7 +26,7 @@ faqs:
 - question: Does the exit charge apply if I move to Dubai for less than 5 years?
   answer: Yes, it applies on the day you leave, but it is reversed if you return to the UK within 5 tax years. This is the temporary non-residence rule. If you return within 5 years, the deemed disposal is treated as if it never happened. If you stay away for 6 or more tax years, the exit charge becomes permanent.
 - question: Can I claim Business Asset Disposal Relief on the exit charge?
-  answer: Only if the exit charge applies to shares you already hold, not to unexercised options. BADR requires a disposal of shares in a trading company where you hold at least 5% and have been an officer or employee for 2 years. Options themselves do not qualify for BADR. If you exercise your options and hold the shares before leaving, a subsequent disposal of those shares may qualify for BADR at 14% (2025/26) or 18% (2026/27).
+  answer: Only if the exit charge applies to shares you already hold, not to unexercised options. BADR requires a disposal of shares in a trading company where you hold at least 5% and have been an officer or employee for 2 years. Options themselves do not qualify for BADR. If you exercise your options and hold the shares before leaving, a subsequent disposal of those shares may qualify for BADR at 18% (2025/26) or 18% (2026/27).
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -130,7 +130,7 @@ keyTakeaways:
 
 <h2>What About Business Asset Disposal Relief?</h2>
 
-<p>BADR (formerly Entrepreneurs' Relief) applies at 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains.</p>
+<p>BADR (formerly Entrepreneurs' Relief) applies at 18% for disposals from 6 April 2025, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains.</p>
 
 <p>If you trigger the exit charge on shares in your agency, you may qualify for BADR. The conditions are the same as for a normal disposal: you must hold at least 5% of the shares, be an officer or employee, and have held the shares for at least 2 years.</p>
 

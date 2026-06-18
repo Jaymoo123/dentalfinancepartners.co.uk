@@ -1,9 +1,9 @@
-# Brief: qof-income-gp-practice-accounting-explained
+﻿# Brief: qof-income-gp-practice-accounting-explained
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster A (GMS core funding), pick A2
 **Source file (to be created):** `Medical/web/content/blog/qof-income-gp-practice-accounting-explained.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/qof-income-gp-practice-accounting-explained
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/qof-income-gp-practice-accounting-explained
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income, QOF as a voluntary points-based quality scheme), with cross-refs to §1 (partner taxed on profit share), §8 (self-assessment / accounts treatment of trading income) and §2.C (pensioning the profit).
 

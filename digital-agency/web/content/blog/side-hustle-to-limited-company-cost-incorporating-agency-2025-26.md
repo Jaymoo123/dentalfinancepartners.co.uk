@@ -1,5 +1,5 @@
 ---
-title: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2025/26'
+title: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2026/27'
 slug: side-hustle-to-limited-company-cost-incorporating-agency-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/side-hustle-to-limited-company-cost-incorporating-agency-2025-26
 date: '2026-05-16'
@@ -15,19 +15,19 @@ imageCredit:
   photographerUrl: https://www.pexels.com/@rdne
   sourceUrl: https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/
   source: Pexels
-h1: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2025/26'
+h1: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2026/27'
 summary: Thinking of turning your freelance agency side project into a limited company? This guide walks through the real costs, tax differences, and practical triggers that tell you when incorporation actually makes financial sense for a UK agency founder.
 schema: ''
 faqs:
-- question: What profit level makes incorporation worthwhile for an agency founder in 2025/26?
-  answer: Based on 2025/26 tax rates, incorporation starts to make financial sense once your profit exceeds roughly £80,000. Below that, the tax saving is marginal and may be eaten by higher accountancy fees and the extra admin burden. Above £80,000, the gap widens significantly, and the non-tax benefits (limited liability, reinvestment, exit planning) become real advantages.
+- question: What profit level makes incorporation worthwhile for an agency founder in 2026/27?
+  answer: Based on 2026/27 tax rates, incorporation starts to make financial sense once your profit exceeds roughly £80,000. Below that, the tax saving is marginal and may be eaten by higher accountancy fees and the extra admin burden. Above £80,000, the gap widens significantly, and the non-tax benefits (limited liability, reinvestment, exit planning) become real advantages.
 - question: Do I need to register for VAT when I incorporate my agency?
   answer: Not automatically. You only need to register for VAT if your turnover exceeds £90,000 in a rolling 12-month period. However, many newly incorporated agencies choose to voluntarily register so they can reclaim VAT on their expenses. If you do register, check whether the Flat Rate VAT scheme works for your agency model. Most digital and creative agencies with low goods costs end up on the 16.5% limited cost trader rate, which offers little benefit.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- In 2025/26, corporation tax is 19% on profits up to £50,000, then marginal relief up to 25% at £250,000.
-- Dividend tax rates for 2025/26 are 8.75% (basic), 33.75% (higher), and 39.35% (additional), with a £500 allowance.
+- In 2026/27, corporation tax is 19% on profits up to £50,000, then marginal relief up to 25% at £250,000.
+- Dividend tax rates for 2026/27 are 10.75% (basic), 35.75% (higher), and 39.35% (additional), with a £500 allowance.
 - Accountancy fees typically double from £400-£800 as a sole trader to £1,800-£3,500 for a limited company.
 - Incorporation adds around 20 hours of admin per year, costing agency founders roughly £1,500 in time at £75 per hour.
 - New company directors often face a cash flow trap from paying dividends monthly without setting aside tax due on 31 January.
@@ -36,15 +36,15 @@ keyTakeaways:
 
 <p>The standard advice is simple: incorporate once your profits hit a certain threshold. But that advice misses the real question. The question isn't "when do I save tax?" It's "what does the full cost picture look like for <em>my</em> agency?"</p>
 
-<p>This guide walks through the actual numbers for a side hustle agency founder considering incorporation in 2025/26. We'll cover the tax arithmetic, the hidden costs most guides ignore, and the practical triggers that tell you when it's time to make the switch. As ICAEW qualified accountants working exclusively with agency founders, we see this decision made well and made badly every month.</p>
+<p>This guide walks through the actual numbers for a side hustle agency founder considering incorporation in 2026/27. We'll cover the tax arithmetic, the hidden costs most guides ignore, and the practical triggers that tell you when it's time to make the switch. As ICAEW qualified accountants working exclusively with agency founders, we see this decision made well and made badly every month.</p>
 
-<h2>The Starting Point: Sole Trader vs Limited Company Tax in 2025/26</h2>
+<h2>The Starting Point: Sole Trader vs Limited Company Tax in 2026/27</h2>
 
-<p>Let's get the headline numbers on the table first. For the 2025/26 tax year:</p>
+<p>Let's get the headline numbers on the table first. For the 2026/27 tax year:</p>
 
 <p><strong>Sole trader:</strong> You pay income tax and Class 4 National Insurance on all your profits above the personal allowance. Your tax bill is roughly 20% on profits between £12,571 and £50,270, then 40% on profits between £50,271 and £125,140. Plus Class 4 NIC at 9% on profits between £12,570 and £50,270, then 2% above that.</p>
 
-<p><strong>Limited company:</strong> Your company pays corporation tax on its profits. At 19% for profits up to £50,000, then marginal relief up to £250,000 where the main rate of 25% kicks in. You then pay yourself a salary (typically up to the NI threshold of £12,570) and take the rest as dividends. Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). The dividend allowance is £500.</p>
+<p><strong>Limited company:</strong> Your company pays corporation tax on its profits. At 19% for profits up to £50,000, then marginal relief up to £250,000 where the main rate of 25% kicks in. You then pay yourself a salary (typically up to the NI threshold of £12,570) and take the rest as dividends. Dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate). The dividend allowance is £500.</p>
 
 <p>On paper, the limited company looks cheaper for profits above roughly £30k. But the paper doesn't tell you the full story.</p>
 
@@ -94,7 +94,7 @@ Company profit: £35,000<br>
 Corporation tax at 19%: £6,650<br>
 Available for distribution: £28,350<br>
 Take as salary £12,570 (no tax or NI) and dividends £15,780<br>
-Dividend tax at 8.75% on £15,280 (after £500 allowance): £1,337<br>
+Dividend tax at 10.75% on £15,280 (after £500 allowance): £1,337<br>
 Total tax: £7,987<br>
 Net take-home: £27,013</p>
 
@@ -121,7 +121,7 @@ Corporation tax at 19% on first £50k (£9,500) + marginal relief on £25k (effe
 Available for distribution: £58,875<br>
 Salary: £12,570 (no tax or NI)<br>
 Dividends: £46,305<br>
-Dividend tax at 8.75% on first £37,700 (£3,299) + 33.75% on £8,105 (£2,735) = £6,034<br>
+Dividend tax at 10.75% on first £37,700 (£3,299) + 35.75% on £8,105 (£2,735) = £6,034<br>
 Total tax: £22,159<br>
 Net take-home: £52,841</p>
 
@@ -148,7 +148,7 @@ Corporation tax at 25% on full £150k (marginal relief has tapered out) = £37,5
 Available for distribution: £112,500<br>
 Salary: £12,570<br>
 Dividends: £99,930<br>
-Dividend tax at 8.75% on first £37,700 (£3,299) + 33.75% on next £62,230 (£21,003) = £24,302<br>
+Dividend tax at 10.75% on first £37,700 (£3,299) + 35.75% on next £62,230 (£21,003) = £24,302<br>
 Total tax: £61,802<br>
 Net take-home: £88,198</p>
 
@@ -174,7 +174,7 @@ Net take-home: £88,198</p>
 
 <h3>Exit readiness</h3>
 
-<p>You cannot sell a sole trade in the same way you sell a limited company. If you ever want to exit your agency, having a limited company structure makes the transaction cleaner and more attractive to buyers. And if you hold the shares for at least two years, you qualify for Business Asset Disposal Relief (BADR), which means 14% capital gains tax on the first £1 million of gain.</p>
+<p>You cannot sell a sole trade in the same way you sell a limited company. If you ever want to exit your agency, having a limited company structure makes the transaction cleaner and more attractive to buyers. And if you hold the shares for at least two years, you qualify for Business Asset Disposal Relief (BADR), which means 18% capital gains tax on the first £1 million of gain.</p>
 
 <p>That's a £390k tax saving compared to the 24% residential property rate. It's worth planning for even if your exit is five years away.</p>
 

@@ -187,7 +187,7 @@ keyTakeaways:
 
 <p><strong>Forgetting your own salary.</strong> Many founders do not pay themselves a market rate. If you are taking £24,000 as salary and dividends but could earn £80,000 employed, your break-even is artificially low. Include a realistic salary for yourself in fixed costs.</p>
 
-<p><strong>Ignoring employer NI and pension.</strong> A £40,000 salary costs you closer to £46,000 once you add employer NI at 13.8% and minimum pension contributions at 3%. Use the real cost, not the salary figure.</p>
+<p><strong>Ignoring employer NI and pension.</strong> A £40,000 salary costs you closer to £47,200 once you add employer NI at 15% and minimum pension contributions at 3%. Use the real cost, not the salary figure.</p>
 
 <p><strong>Using annual averages for monthly costs.</strong> Some costs hit quarterly or annually. Spread them across 12 months. Otherwise your break-even number bounces around and you make bad decisions.</p>
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Locum Doctor Umbrella Company 2026 Reforms: Joint and Several Liability Explained"
 slug: "locum-doctor-umbrella-company-2026-reforms"
 date: "2026-04-01"
@@ -12,7 +12,7 @@ image: ""
 h1: "Locum Doctor Umbrella Company 2026 Reforms: What Is Actually Changing"
 summary: "From 6 April 2026 the umbrella reform makes recruitment agencies (and some end clients) jointly and severally liable for an umbrella company's PAYE and National Insurance. We explain what changes for locum doctors, how it differs from the wider umbrella regulation still to come, and how the umbrella, personal service company and agency PAYE routes compare."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-umbrella-company-2026-reforms"
+canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-umbrella-company-2026-reforms"
 faqs:
   - question: "What is the locum doctor umbrella company 2026 reform, in plain terms?"
     answer: "From 6 April 2026, where a locum doctor is paid through an umbrella company, HMRC can recover any PAYE and National Insurance the umbrella fails to account for from others in the labour supply chain. In most placements that means the recruitment agency that contracts with the trust or clinic; where there is no agency, the end client that engages the umbrella directly. This is the joint and several liability (JSL) measure. It is a tax measure about who is on the hook for PAYE, not a licensing scheme."

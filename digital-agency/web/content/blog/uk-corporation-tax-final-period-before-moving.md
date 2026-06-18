@@ -22,7 +22,7 @@ faqs:
 - question: What is the deadline for paying corporation tax on the final period before moving to Dubai?
   answer: The payment deadline is 9 months and 1 day after the end of the shortened accounting period. For example, if your final period ends on 15 September 2025, the tax is due by 16 June 2026. The filing deadline for the CT600 is later (12 months after the period end), but you must pay on time to avoid interest and penalties.
 - question: Can I leave a directors' loan outstanding when my agency becomes non-resident?
-  answer: You can, but it is not advisable. If the loan exceeds £10k and is interest-free, there is a benefit-in-kind to report. If it is not repaid within 9 months of the year end, the company pays S455 tax at 33.75%. The cleanest approach is to repay the loan before the final period ends, so there is no outstanding balance to deal with from the UAE.
+  answer: You can, but it is not advisable. If the loan exceeds £10k and is interest-free, there is a benefit-in-kind to report. If it is not repaid within 9 months of the year end, the company pays S455 tax at 35.75%. The cleanest approach is to repay the loan before the final period ends, so there is no outstanding balance to deal with from the UAE.
 - question: Does my agency need to continue filing UK corporation tax returns after becoming non-resident?
   answer: Not for profits earned from Dubai trading, provided your agency has no UK source of income and no UK permanent establishment. However, if your agency continues to have UK income (for example, from a UK client managed from the UK), that income may still be subject to UK corporation tax. You also need to consider ongoing VAT and PAYE obligations if you have UK employees or UK supplies.
 - question: What happens if I miscalculate the corporation tax due and underpay?
@@ -136,7 +136,7 @@ keyTakeaways:
 
 <ul>
 <li>If the loan is over £10k and interest-free, there is a benefit-in-kind to report on a P11D</li>
-<li>If the loan is not repaid within 9 months of the year end, the company pays S455 tax at 33.75%</li>
+<li>If the loan is not repaid within 9 months of the year end, the company pays S455 tax at 35.75%</li>
 <li>That S455 tax is repayable when the loan is repaid, but only if you claim it</li>
 </ul>
 

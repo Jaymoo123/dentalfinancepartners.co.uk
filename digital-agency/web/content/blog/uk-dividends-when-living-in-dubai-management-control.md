@@ -26,7 +26,7 @@ faqs:
 - question: How does HMRC find out where my agency is managed?
   answer: 'HMRC requests specific evidence during an enquiry: board meeting minutes, records of strategic decisions, bank mandates, director locations, employment contracts, and correspondence patterns. They also use data from Companies House, bank records, and international information-sharing agreements. If the bulk of evidence points to UK management, they will challenge your position.'
 - question: What happens if HMRC reclassifies my dividends as trading income?
-  answer: You owe tax at your marginal UK income tax rate on the full amount. For a higher-rate taxpayer, that is 40% (or 45% for additional rate). You also lose the dividend allowance and the 8.75%/33.75% dividend rates. HMRC will add interest from the original payment date and may charge penalties if they consider the arrangement was not disclosed properly. The total bill can be substantial.
+  answer: You owe tax at your marginal UK income tax rate on the full amount. For a higher-rate taxpayer, that is 40% (or 45% for additional rate). You also lose the dividend allowance and the 10.75%/35.75% dividend rates. HMRC will add interest from the original payment date and may charge penalties if they consider the arrangement was not disclosed properly. The total bill can be substantial.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -111,7 +111,7 @@ keyTakeaways:
 
 <p>Many agency founders decide that moving CMC to Dubai is too difficult or too disruptive to their business. In that case, the honest approach is to keep the company UK-managed and accept that dividends will be taxed in the UK.</p>
 
-<p>You can still benefit from living in Dubai for other reasons: no personal income tax on your salary (if structured properly), no capital gains tax on investments, and a lower cost of living in some areas. But your UK agency dividends will remain subject to UK dividend tax rates: 8.75% for basic rate, 33.75% for higher rate, and 39.35% for additional rate taxpayers.</p>
+<p>You can still benefit from living in Dubai for other reasons: no personal income tax on your salary (if structured properly), no capital gains tax on investments, and a lower cost of living in some areas. But your UK agency dividends will remain subject to UK dividend tax rates: 10.75% for basic rate, 35.75% for higher rate, and 39.35% for additional rate taxpayers.</p>
 
 <p>This is still more tax-efficient than paying yourself entirely through salary. But it is not the zero-tax scenario some online forums promise.</p>
 

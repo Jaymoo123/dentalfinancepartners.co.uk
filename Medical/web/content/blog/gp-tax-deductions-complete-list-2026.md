@@ -1,4 +1,4 @@
----
+﻿---
 title: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
 slug: gp-tax-deductions-complete-list-2026
 date: '2026-04-01'
@@ -12,7 +12,7 @@ image: ''
 h1: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
 summary: Comprehensive breakdown of allowable tax deductions for GPs in 2026/27, covering professional fees, indemnity, CPD, mileage, home office and equipment, with notes for partners, salaried GPs and locums.
 schema: ''
-canonical: https://www.medicalaccountantsuk.co.uk/blog/gp-tax-deductions-complete-list-2026
+canonical: https://www.medicalaccounts.co.uk/blog/gp-tax-deductions-complete-list-2026
 faqs:
 - question: How much can I claim for using my car for GP home visits in 2026/27?
   answer: For 2026/27, HMRC's approved mileage rate is 55p per mile for the first 10,000 business miles in the tax year, then 25p per mile thereafter (the first-10,000 rate rose from 45p to 55p from 6 April 2026). This covers home visits, travel between practice sites and journeys to hospital clinics. You cannot claim for ordinary commuting from home to your regular surgery. Keep a mileage log showing the date, destination, distance and business purpose of every trip.

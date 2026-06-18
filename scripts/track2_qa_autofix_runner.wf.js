@@ -14,6 +14,9 @@ const slugs = A.slugs || []
 const batch = A.batch || 'unnamed'
 const maxRounds = (typeof A.maxRounds === 'number' && A.maxRounds >= 0) ? A.maxRounds : 2
 const site = A.site || 'property'
+// Optional model override for the QA reviewer agents only (editorial/fix/record
+// stay sonnet). Pass qaModel: 'opus' for pillar batches per the model-tiering rule.
+const qaModel = A.qaModel || 'sonnet'
 
 // Per-site config (no fs access in the .wf.js runtime; mirrors sites/<site>.json).
 // The site's house_positions doc is the authoritative ground-truth; there are NO
@@ -22,9 +25,10 @@ const SITES = {
   property:   { blogDir: 'Property/web/content/blog',       domain: 'propertytaxpartners.co.uk',        hp: 'docs/property/house_positions.md',   adviser: 'UK property tax accountant' },
   dentists:   { blogDir: 'Dentists/web/content/blog',       domain: 'www.dentalfinancepartners.co.uk',   hp: 'docs/dentists/house_positions.md',   adviser: 'UK dental practice and associate tax accountant' },
   solicitors: { blogDir: 'Solicitors/web/content/blog',     domain: 'www.accountsforlawyers.co.uk',      hp: 'docs/solicitors/house_positions.md', adviser: 'UK solicitor and law-firm accountant' },
-  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccountantsuk.co.uk',    hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
+  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccounts.co.uk',         hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
   generalist: { blogDir: 'generalist/web/content/blog',     domain: 'www.hollowaydavies.co.uk',          hp: 'docs/generalist/house_positions.md', adviser: 'UK general practice accountant for owner-managed businesses' },
   agency:     { blogDir: 'digital-agency/web/content/blog', domain: 'www.agencyfounderfinance.co.uk',    hp: 'docs/agency/house_positions.md',     adviser: 'UK accountant for digital and creative agency founders' },
+  'construction-cis': { blogDir: 'construction-cis/web/content/blog', domain: 'www.tradetaxspecialists.co.uk', hp: 'docs/construction-cis/house_positions.md', adviser: 'UK construction industry and CIS specialist accountant' },
 }
 const cfg = SITES[site]
 if (!cfg) throw new Error(`track2_qa_autofix_runner: unknown site '${site}'. Add a SITES entry (blogDir/domain/hp/adviser from sites/${site}.json) first.`)
@@ -323,7 +327,7 @@ async function processPage(slug) {
     // (1) QA agent - verbatim independent-QA reviewer prompt + SCHEMA.
     verdict = await agent(
       qaPrompt(slug),
-      { label: round === 0 ? `qa:${slug}` : `reqa:${slug}`, phase: 'QA', schema: SCHEMA, model: 'sonnet' }
+      { label: round === 0 ? `qa:${slug}` : `reqa:${slug}`, phase: 'QA', schema: SCHEMA, model: qaModel }
     ).catch(() => null)
     if (!verdict) { // QA itself failed -> escalate, nothing to record reliably
       result = { slug, all_clear: false, rounds: round, signoff: 'blocking-issues',

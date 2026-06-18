@@ -95,7 +95,7 @@ keyTakeaways:
 
 <p>The UAE does not tax capital gains for individuals. If the property is held in a company, the gain is taxed as corporate income in the UK, and potentially in the UAE if the company is managed from Dubai.</p>
 
-<p>Business Asset Disposal Relief (BADR) does not apply to rental properties held personally. It only applies to qualifying business assets, typically shares in your trading company. If you sell your agency, BADR gives you a 14% CGT rate (rising to 18% from April 2026) on the first £1 million of gains. That is separate from property.</p>
+<p>Business Asset Disposal Relief (BADR) does not apply to rental properties held personally. It only applies to qualifying business assets, typically shares in your trading company. If you sell your agency, BADR gives you a 18% CGT rate (rising to 18% from April 2026) on the first £1 million of gains. That is separate from property.</p>
 
 <h2>Practical Steps Before You Move</h2>
 <p>If you are planning to relocate to Dubai, here is what I would do before you go.</p>

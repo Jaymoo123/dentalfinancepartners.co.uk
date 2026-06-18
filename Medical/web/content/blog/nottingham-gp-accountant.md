@@ -1,4 +1,4 @@
----
+﻿---
 title: "Nottingham GP Accountant: Specialist Tax and Accounting Services"
 slug: "nottingham-gp-accountant"
 date: "2026-04-01"
@@ -12,7 +12,7 @@ image: ""
 h1: "Nottingham GP Accountant: Expert Tax & Accounting for Medical Professionals"
 summary: "Specialist accounting for GPs, consultants, and locum doctors in Nottingham. NHS pension planning, partnership accounts, and medical tax advice for 2026/27."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/nottingham-gp-accountant"
+canonical: "https://www.medicalaccounts.co.uk/blog/nottingham-gp-accountant"
 faqs:
   - question: "What makes a GP accountant different from a high street accountant?"
     answer: "A specialist GP accountant understands the parts of medical taxation a general accountant rarely meets: the NHS Pension Scheme annual allowance (£60,000 for 2025/26, tapered where threshold income exceeds £200,000 and adjusted income exceeds £260,000), the pension input amount on the 2015 CARE section, GP partnership profit allocation on the SA800, Type 1 and Type 2 pension certificates, and the fact that NHS GP goodwill cannot be sold. They follow Finance Act 2026 changes and NHS contract uplifts that a general practice would not track."

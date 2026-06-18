@@ -66,12 +66,12 @@ keyTakeaways:
 
 <ul>
 <li>Salary and dividends from the agency: £120,000 (paid before you leave)</li>
-<li>Capital gain from share sale: £800,000 (assuming BADR at 14% before April 2025, but if the sale completes after April 2025, the rate rises to 18% from April 2026)</li>
+<li>Capital gain from share sale: £800,000 (assuming BADR at 18% before April 2025, but if the sale completes after April 2025, the rate rises to 18% from April 2026)</li>
 <li>Dubai salary from a new role: £80,000</li>
 <li>Investment income from UK property: £15,000</li>
 </ul>
 
-<p>If you are UK-resident for the full 2025/26 tax year, you pay UK tax on all of that. The £80,000 Dubai salary is taxable in the UK. The £15,000 property income is taxable. The £120,000 dividends are taxable at 33.75% above the basic rate band. The capital gain is taxable at 14% or 18% depending on timing.</p>
+<p>If you are UK-resident for the full 2025/26 tax year, you pay UK tax on all of that. The £80,000 Dubai salary is taxable in the UK. The £15,000 property income is taxable. The £120,000 dividends are taxable at 35.75% above the basic rate band. The capital gain is taxable at 18% or 18% depending on timing.</p>
 
 <p>Total UK tax bill: roughly £145,000.</p>
 

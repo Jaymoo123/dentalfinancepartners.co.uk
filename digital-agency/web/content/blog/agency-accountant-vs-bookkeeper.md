@@ -66,7 +66,7 @@ keyTakeaways:
 <p>Here is what we do that a bookkeeper cannot:</p>
 
 <h3>Tax Planning and Compliance</h3>
-<p>Your bookkeeper can submit your VAT return. They cannot tell you whether you should be on the Flat Rate Scheme or standard VAT accounting. They cannot advise on whether your agency qualifies for R&D tax credits on a software development project you did for a client. They cannot structure your director's loan account to avoid the 33.75% S455 tax charge.</p>
+<p>Your bookkeeper can submit your VAT return. They cannot tell you whether you should be on the Flat Rate Scheme or standard VAT accounting. They cannot advise on whether your agency qualifies for R&D tax credits on a software development project you did for a client. They cannot structure your director's loan account to avoid the 35.75% S455 tax charge.</p>
 
 <p>An agency accountant can. We look at your full picture. If your creative agency built a proprietary tool for a client and retained the IP, that is potentially a £40k+ R&D tax credit claim. A bookkeeper would never spot that.</p>
 
@@ -81,7 +81,7 @@ keyTakeaways:
 <p>We produce monthly management accounts for our agency clients. Those accounts include utilisation analysis, gross margin by service line, cash runway projections, and forward-looking tax estimates. A bookkeeper does not do that work.</p>
 
 <h3>Exit Planning and BADR</h3>
-<p>If you plan to sell your agency, Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on the first £1m of gain. But the conditions are strict. You must hold at least 5% of the shares, be an officer or employee, and meet the 2-year holding period. Missing one condition costs you thousands.</p>
+<p>If you plan to sell your agency, Business Asset Disposal Relief (BADR) gives you a 18% capital gains tax rate on the first £1m of gain. But the conditions are strict. You must hold at least 5% of the shares, be an officer or employee, and meet the 2-year holding period. Missing one condition costs you thousands.</p>
 
 <p>We structure agency shareholdings years before a sale to ensure BADR eligibility. A bookkeeper cannot advise on that. They do not have the training or the regulatory scope.</p>
 

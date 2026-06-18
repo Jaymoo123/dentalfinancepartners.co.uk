@@ -26,7 +26,7 @@ faqs:
 - question: How do I calculate gross margin per client?
   answer: Take the total revenue from that client for a period. Subtract all direct costs incurred to serve them (staff hours tracked against that client, freelancer fees, software, subcontracted work). Divide by revenue. That is your client-level gross margin.
 - question: Does gross margin include employer NI and pension costs?
-  answer: Yes. For any delivery staff you include in direct costs, you must include employer NI at 13.8% and pension contributions. These are real costs of employing the person delivering the work.
+  answer: Yes. For any delivery staff you include in direct costs, you must include employer NI at 15% and pension contributions. These are real costs of employing the person delivering the work.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -60,7 +60,7 @@ keyTakeaways:
 
 <p>This is the biggest one. I see agency founders put all staff salaries into a single "wages" line and call everything overhead. That is wrong.</p>
 
-<p>Your delivery team's salaries are direct costs. Account managers, designers, developers, copywriters, strategists, anyone whose time is billed to clients or spent on client work. Their salaries, employer NI at 13.8%, pension contributions, and any bonuses tied to delivery all belong in cost of goods sold.</p>
+<p>Your delivery team's salaries are direct costs. Account managers, designers, developers, copywriters, strategists, anyone whose time is billed to clients or spent on client work. Their salaries, employer NI at 15%, pension contributions, and any bonuses tied to delivery all belong in cost of goods sold.</p>
 
 <p>Your sales team, your finance function, your office manager, your own salary as founder, those are overhead. They exist whether you have client work or not.</p>
 
@@ -185,4 +185,4 @@ keyTakeaways:
 <p>Take the total revenue from that client for a period. Subtract all direct costs incurred to serve them (staff hours tracked against that client, freelancer fees, software, subcontracted work). Divide by revenue. That is your client-level gross margin.</p>
 
 <h3>Does gross margin include employer NI and pension costs?</h3>
-<p>Yes. For any delivery staff you include in direct costs, you must include employer NI at 13.8% and pension contributions. These are real costs of employing the person delivering the work.</p>
+<p>Yes. For any delivery staff you include in direct costs, you must include employer NI at 15% and pension contributions. These are real costs of employing the person delivering the work.</p>

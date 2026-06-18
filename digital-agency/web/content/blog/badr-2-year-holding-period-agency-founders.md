@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/2022-candles-3401897/
   source: Pexels
 h1: 'The 2-Year Holding Period for BADR: What Agency Founders Need to Know Before Selling'
-summary: Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on your agency sale, but only if you've held the shares for two full years. Many founders miss this by months. Here's what you need to plan for.
+summary: Business Asset Disposal Relief (BADR) gives you a 18% capital gains tax rate on your agency sale, but only if you've held the shares for two full years. Many founders miss this by months. Here's what you need to plan for.
 schema: ''
 faqs:
 - question: What is the exact 2-year holding period rule for BADR?
@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- BADR reduces capital gains tax to 14% on the first £1m of lifetime gains when selling shares in your trading company.
+- BADR reduces capital gains tax to 18% on the first £1m of lifetime gains when selling shares in your trading company.
 - You must have held the shares for at least two full calendar years before the disposal date to qualify for BADR.
 - HMRC does not round up the two-year holding period; a sale one day early means the entire gain is taxed at 20%.
 - Incorporating later, restructuring, or issuing new shares to co-founders resets the BADR holding period clock.
@@ -40,13 +40,13 @@ keyTakeaways:
 
 <p>If the answer is less than two years before completion, your 10% tax rate disappears. You're looking at 20% capital gains tax instead. On a £2m sale, that difference is £200,000.</p>
 
-<p>Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, gives you a 14% capital gains tax rate on qualifying disposals. The lifetime limit is £1m of gains. The rules are specific. And the 2-year holding period is the one that catches most agency founders off guard.</p>
+<p>Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, gives you a 18% capital gains tax rate on qualifying disposals. The lifetime limit is £1m of gains. The rules are specific. And the 2-year holding period is the one that catches most agency founders off guard.</p>
 
 <p>Here is exactly what you need to know, the traps that trip people up, and how to plan your exit around them.</p>
 
 <h2>What Is BADR and Why Does It Matter for Agency Founders?</h2>
 
-<p>BADR is a relief that reduces your capital gains tax rate from 20% to 14% when you sell shares in your trading company. For a <a href="/agencies/digital-agencies">digital agency</a> founder selling their shares, this is the single most valuable tax relief available.</p>
+<p>BADR is a relief that reduces your capital gains tax rate from 20% to 18% when you sell shares in your trading company. For a <a href="/agencies/digital-agencies">digital agency</a> founder selling their shares, this is the single most valuable tax relief available.</p>
 
 <p>The relief applies to the first £1m of lifetime gains. Anything above that is taxed at the standard 20% rate. If you're selling a profitable agency with strong recurring revenue, you'll likely hit that £1m cap on your first exit.</p>
 
@@ -130,7 +130,7 @@ keyTakeaways:
 
 <h2>What Happens If You Miss the 2-Year Window</h2>
 
-<p>You pay 20% CGT instead of 10%. On a £1m gain, that is £100,000 extra tax. On a £2m gain, the first £1 million is at 14% (if you have the full allowance) and the second £1 million is at 24%. Total tax: £100k + £200k = £300k instead of £200k.</p>
+<p>You pay 20% CGT instead of 10%. On a £1m gain, that is £100,000 extra tax. On a £2m gain, the first £1 million is at 18% (if you have the full allowance) and the second £1 million is at 24%. Total tax: £100k + £200k = £300k instead of £200k.</p>
 
 <p>There is no grace period. No HMRC discretion. If you are 1 day short, you fail the test.</p>
 

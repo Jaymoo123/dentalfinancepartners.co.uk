@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -33,7 +34,7 @@ export default function CookiePolicyPage() {
       <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 5 June 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
-          This policy describes how {siteConfig.name} uses cookies and similar technologies on our website. Cookies are small text files stored on your device that help us understand how visitors use our Site and improve your experience.
+          This policy describes how {siteConfig.company.legalName} (trading as {siteConfig.name}) uses cookies and similar technologies on our website. Cookies are small text files stored on your device that help us understand how visitors use our Site and improve your experience.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. What cookies we use</h2>
@@ -158,10 +159,10 @@ export default function CookiePolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Contact us</h2>
         <p>
-          If you have questions about our use of cookies, please contact us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-            {siteConfig.contact.email}
-          </a>
+          If you have questions about our use of cookies, please contact us via our{" "}
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">
+            contact page
+          </Link>
           .
         </p>
       </div>

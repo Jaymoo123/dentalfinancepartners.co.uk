@@ -1,22 +1,26 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
+const company = siteConfig.company;
+const partner = siteConfig.partner;
+
 export const metadata: Metadata = {
   title: "Privacy policy",
-  description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
+  description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data on this website. UK GDPR and Data Protection Act 2018 compliant.`,
   alternates: { canonical: `${siteConfig.url}/privacy-policy` },
   openGraph: {
     title: `Privacy Policy | ${siteConfig.name}`,
-    description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
+    description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data on this website. UK GDPR compliant.`,
     url: `${siteConfig.url}/privacy-policy`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy policy",
-    description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
+    description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data. UK GDPR compliant.`,
   },
 };
 
@@ -30,142 +34,140 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 27 March 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
-          This policy explains how {siteConfig.legalName} (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) collects, uses, and protects your personal information when you use {siteConfig.name} (the &quot;Site&quot;). We are committed to protecting your privacy and complying with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+          This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
+          &quot;we&quot;, &quot;us&quot; and &quot;our&quot;, collects, uses and protects your personal information
+          when you use the {siteConfig.name} website (the &quot;Site&quot;). We are committed to protecting your
+          privacy and complying with the UK General Data Protection Regulation (UK GDPR) and the Data Protection
+          Act 2018.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. Data controller</h2>
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. Who we are (data controller)</h2>
         <p>
-          {siteConfig.legalName} is the data controller responsible for your personal data. You can contact us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-            {siteConfig.contact.email}
-          </a>{" "}
-          or by using the contact details on our <a href="/contact" className="text-[var(--accent-strong)] underline">contact page</a>.
+          The data controller responsible for your personal data is {company.legalName}, which trades as{" "}
+          {siteConfig.name}:
+        </p>
+        <ul className="list-disc space-y-2 pl-6">
+          <li><strong>Registered company name:</strong> {company.legalName}</li>
+          <li><strong>Trading name:</strong> {siteConfig.name}</li>
+          <li><strong>Company number:</strong> {company.number} (registered in {company.placeOfRegistration})</li>
+          <li><strong>Registered office:</strong> {company.registeredOfficeLine}</li>
+        </ul>
+        <p>
+          If you have any questions about this policy or wish to exercise your rights, please contact us through our{" "}
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. What information we collect</h2>
-        <p>We may collect the following types of personal information:</p>
+        <p>We collect the following personal information through the Site:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>Contact form submissions:</strong> When you submit an enquiry through our contact form, we collect your full name, email address, phone number, role (e.g., marketing agency, creative agency), message content, and the URL of the page you submitted from.
+            <strong>Enquiry forms:</strong> when you submit an enquiry (including through the form that may appear if
+            you are about to leave a page), we collect your name, email address, phone number, the type of agency you
+            operate, your message, and the page you submitted from.
           </li>
           <li>
-            <strong>Analytics data:</strong> We use Google Analytics to understand how visitors use our Site. This includes your IP address (anonymised), browser type, device type, pages visited, time spent on pages, and referral source. Google Analytics uses cookies to collect this information.
+            <strong>Email sign-ups:</strong> if you subscribe to our updates or download a guide, we collect your email
+            address (and, where relevant, the resource you requested).
           </li>
           <li>
-            <strong>Technical data:</strong> Our hosting provider (Vercel) may log your IP address, browser type, and request data for security and performance purposes.
-          </li>
-        </ul>
-
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. How we use your information</h2>
-        <p>We use your personal information for the following purposes:</p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>Responding to enquiries:</strong> To respond to your contact form submission and arrange an initial consultation (legal basis: legitimate interest in providing services you&apos;ve requested).
+            <strong>Consent records:</strong> when you give consent, we keep a record of the exact wording you agreed to
+            and the date and time you agreed, so we can show that consent was given.
           </li>
           <li>
-            <strong>Improving our Site:</strong> To understand how visitors use our Site and improve its content and functionality (legal basis: legitimate interest in improving our services).
-          </li>
-          <li>
-            <strong>Compliance:</strong> To comply with legal obligations, such as record-keeping requirements for professional services firms.
-          </li>
-        </ul>
-
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. How we store and protect your data</h2>
-        <p>
-          <strong>Contact form submissions</strong> are stored securely in Supabase, a PostgreSQL database service hosted in the EU. Access is restricted to authorised staff only. We retain enquiry data for up to 2 years to maintain a record of client relationships and comply with professional indemnity insurance requirements.
-        </p>
-        <p>
-          <strong>Analytics data</strong> is processed by Google Analytics and retained for 14 months. Google&apos;s data processing is governed by their{" "}
-          <a
-            href="https://policies.google.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-strong)] underline"
-          >
-            privacy policy
-          </a>{" "}
-          and our data processing agreement with Google.
-        </p>
-        <p>
-          <strong>Hosting data</strong> is processed by Vercel Inc. (USA). Vercel is certified under the EU-US Data Privacy Framework. Logs are retained for security purposes only and are not used for marketing.
-        </p>
-
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Third-party services</h2>
-        <p>We use the following third-party services that may process your personal data:</p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>Supabase:</strong> Database and API for contact form submissions (EU-hosted, GDPR-compliant).
-          </li>
-          <li>
-            <strong>Google Analytics:</strong> Website analytics and performance measurement. See our{" "}
-            <a href="/cookie-policy" className="text-[var(--accent-strong)] underline">
-              cookie policy
-            </a>{" "}
-            for details on how to opt out.
-          </li>
-          <li>
-            <strong>Vercel:</strong> Website hosting and content delivery (USA, EU-US Data Privacy Framework certified).
+            <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages viewed,
+            device and browser type, and an approximate country derived from your IP address). Our hosting provider may
+            also log technical request data for security and performance. See our{" "}
+            <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link> for detail.
           </li>
         </ul>
         <p>
-          These third parties are contractually required to protect your data and use it only for the purposes we specify.
+          Providing this information is voluntary. You are not under a statutory or contractual obligation to provide it,
+          but if you do not, we will not be able to respond to your enquiry or send you the updates or resources you have
+          asked for.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">6. Your rights under UK GDPR</h2>
-        <p>You have the following rights regarding your personal data:</p>
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>Right of access:</strong> You can request a copy of the personal data we hold about you.
+            <strong>To respond to your enquiry:</strong>{" "}
+            {partner
+              ? `to deal with your enquiry and to pass it to ${partner.name} so that they can provide the advice you have requested.`
+              : "to deal with your enquiry and provide the advice you have requested."}
           </li>
           <li>
-            <strong>Right to rectification:</strong> You can ask us to correct inaccurate or incomplete data.
+            <strong>To send you updates you asked for:</strong> if you signed up to our email updates, to send you general
+            agency tax and finance information until you unsubscribe.
           </li>
           <li>
-            <strong>Right to erasure:</strong> You can request that we delete your personal data in certain circumstances (e.g., if it&apos;s no longer necessary for the purpose it was collected).
-          </li>
-          <li>
-            <strong>Right to restrict processing:</strong> You can ask us to limit how we use your data in certain situations.
-          </li>
-          <li>
-            <strong>Right to data portability:</strong> You can request a copy of your data in a machine-readable format.
-          </li>
-          <li>
-            <strong>Right to object:</strong> You can object to processing based on legitimate interests, including direct marketing.
+            <strong>To improve and protect the Site:</strong> to understand how the Site is used and to keep it secure and
+            working properly.
           </li>
         </ul>
+
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Our lawful basis</h2>
         <p>
-          To exercise any of these rights, please contact us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-            {siteConfig.contact.email}
-          </a>
-          . We will respond within one month.
+          We rely on your <strong>consent</strong> to process the personal data you provide through our enquiry forms and
+          email sign-ups{partner ? ", and to share your enquiry with our specialist partner firm as described below" : ""}.
+          You can withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
+          processing that took place before you withdrew it.
+        </p>
+        <p>
+          For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>,
+          specifically measuring and improving the Site and keeping it secure and protected against misuse.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">7. Cookies</h2>
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
+        {partner ? (
+          <p>
+            When you submit an enquiry, we share the details you provide with our specialist partner firm,{" "}
+            <strong>{partner.name}</strong>, so that they can respond and provide the advice you asked for. {partner.name}{" "}
+            acts as an <strong>independent data controller</strong> of the information it receives, and its own use of your
+            data is governed by its own privacy policy. We share your enquiry only for the purpose of responding to it.
+          </p>
+        ) : (
+          <p>
+            Your enquiry is handled by us; we do <strong>not</strong> share it with any third-party advisory firm. We use
+            the service providers listed below only as our processors, acting on our instructions.
+          </p>
+        )}
+        <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
+        <ul className="list-disc space-y-2 pl-6">
+          <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
+          <li><strong>Google Analytics:</strong> website analytics and performance measurement.</li>
+          <li><strong>Vercel:</strong> website hosting and content delivery.</li>
+        </ul>
+        <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
+
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">6. How long we keep your information</h2>
         <p>
-          We use cookies for analytics purposes. For full details on what cookies we use and how to manage them, please see our{" "}
-          <a href="/cookie-policy" className="text-[var(--accent-strong)] underline">
-            cookie policy
-          </a>
-          .
+          We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
+          after which it is deleted. If you subscribe to our email updates, we keep your email address until you
+          unsubscribe. Consent records are kept for as long as we hold the related personal data, so that we can
+          demonstrate that consent was given.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">8. International transfers</h2>
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">7. Your rights</h2>
+        <p>Under UK data protection law you have the right to:</p>
+        <ul className="list-disc space-y-2 pl-6">
+          <li><strong>Access</strong> the personal data we hold about you.</li>
+          <li><strong>Rectify</strong> inaccurate or incomplete data.</li>
+          <li><strong>Erase</strong> your data in certain circumstances.</li>
+          <li><strong>Restrict</strong> how we use your data in certain situations.</li>
+          <li><strong>Data portability:</strong> receive a copy of your data in a machine-readable format.</li>
+          <li><strong>Object</strong> to certain processing.</li>
+          <li><strong>Withdraw consent</strong> at any time, where we rely on your consent.</li>
+        </ul>
         <p>
-          Some of our third-party service providers (e.g., Vercel) are based outside the UK and EEA. Where data is transferred internationally, we ensure appropriate safeguards are in place, such as EU-US Data Privacy Framework certification or Standard Contractual Clauses.
+          To exercise any of these rights, please contact us through our{" "}
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>. We will respond
+          within one month.
         </p>
-
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">9. Changes to this policy</h2>
         <p>
-          We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this page shows when it was last revised. We encourage you to review this policy periodically.
-        </p>
-
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">10. Complaints</h2>
-        <p>
-          If you believe we have not handled your personal data properly, you have the right to lodge a complaint with the Information Commissioner&apos;s Office (ICO), the UK&apos;s data protection regulator. You can contact the ICO at{" "}
+          You also have the right to complain to the Information Commissioner&apos;s Office (ICO), the UK&apos;s data
+          protection regulator, at{" "}
           <a
             href="https://ico.org.uk/make-a-complaint/"
             target="_blank"
@@ -174,27 +176,35 @@ export default function PrivacyPolicyPage() {
           >
             ico.org.uk/make-a-complaint
           </a>
-          .
+          . We would, however, welcome the chance to address your concerns first.
+        </p>
+
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">8. Cookies and analytics</h2>
+        <p>
+          We use cookies and similar technologies for analytics, so we can understand how the Site is used and improve it.
+          For full details of what we use and how to manage or opt out, please see our{" "}
+          <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link>.
+        </p>
+
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">9. How we protect your data and international transfers</h2>
+        <p>
+          Form submissions are stored securely and access is restricted to authorised staff only. Some of our service
+          providers (for example, Vercel) are based outside the UK and EEA. Where data is transferred internationally, we
+          rely on appropriate safeguards such as the UK extension to the EU-US Data Privacy Framework or Standard
+          Contractual Clauses.
+        </p>
+
+        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">10. Changes to this policy</h2>
+        <p>
+          We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this page
+          shows when it was last revised. We encourage you to review this policy periodically.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">11. Contact us</h2>
         <p>
-          If you have any questions about this privacy policy or how we handle your data, please contact us:
+          If you have any questions about this privacy policy or how we handle your data, please contact us through our{" "}
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
-        <ul className="list-none space-y-1 pl-0">
-          <li>
-            Email:{" "}
-            <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-              {siteConfig.contact.email}
-            </a>
-          </li>
-          <li>
-            Phone:{" "}
-            <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`} className="text-[var(--accent-strong)] underline">
-              {siteConfig.contact.phone}
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   );

@@ -92,7 +92,7 @@ keyTakeaways:
 
 <p>Capital gains are treated differently. If you sell shares in your agency after you become non-resident, the gain is not taxable in the UK provided you remain non-resident for at least five full tax years. This is the <strong>five-year rule</strong>. If you return within five years, the gain becomes taxable in the year you return.</p>
 
-<p>If you sell before you leave, the gain is taxable in the UK part of the split year. <a href="/blog/growth-and-exit">Business Asset Disposal Relief (BADR)</a> may apply if you meet the conditions, but the rates have changed. From 6 April 2025, BADR is 14%. From 6 April 2026, it rises to 18%. If you are planning an exit around a Dubai move, the timing of the sale and the move needs careful coordination.</p>
+<p>If you sell before you leave, the gain is taxable in the UK part of the split year. <a href="/blog/growth-and-exit">Business Asset Disposal Relief (BADR)</a> may apply if you meet the conditions, but the rates have changed. From 6 April 2025, BADR is 18%. From 6 April 2026, it rises to 18%. If you are planning an exit around a Dubai move, the timing of the sale and the move needs careful coordination.</p>
 
 <h2>What Happens to Your UK Company?</h2>
 

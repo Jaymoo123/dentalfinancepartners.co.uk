@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR for Agency Founders: Keep More of Your Exit Cash'
-metaDescription: Selling your agency? BADR cuts your Capital Gains Tax to 14% on the first £1m of gains. Here's exactly how it works and what you must do to qualify.
+metaDescription: Selling your agency? BADR cuts your Capital Gains Tax to 18% on the first £1m of gains. Here's exactly how it works and what you must do to qualify.
 altText: Agency founder reviewing sale documents with accountant in a modern UK office
 image: /blog/business-asset-disposal-relief-agency.jpg
 imageCredit:
@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/close-up-shot-of-keyboard-buttons-2882650/
   source: Pexels
 h1: How Much Will You Keep When Selling Your Agency? BADR Explained for Founders
-summary: Selling your agency could mean a six-figure tax bill if you get it wrong. Business Asset Disposal Relief (BADR) cuts your Capital Gains Tax to 14% on the first £1m of qualifying gains. Here's exactly how it works and what you need to do before you sell.
+summary: Selling your agency could mean a six-figure tax bill if you get it wrong. Business Asset Disposal Relief (BADR) cuts your Capital Gains Tax to 18% on the first £1m of qualifying gains. Here's exactly how it works and what you need to do before you sell.
 schema: ''
 faqs:
 - question: Can I claim BADR if I sell only part of my agency shares?
@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- BADR reduces Capital Gains Tax to 14% on the first £1m of lifetime gains when selling your agency, compared to the standard 24% rate.
+- BADR reduces Capital Gains Tax to 18% on the first £1m of lifetime gains when selling your agency, compared to the standard 24% rate.
 - To qualify for BADR, you must be a director or employee of the agency for at least 24 months before the sale.
 - You must hold at least 5% of the ordinary share capital, with 5% voting rights and profit entitlement, for the 24 months prior to sale.
 - Your agency must be a trading company, with at least 80% of activities from trading rather than investment, to meet HMRC's definition.
@@ -38,7 +38,7 @@ keyTakeaways:
 ---
 <p>If you've built a digital agency from scratch, the sale is the moment you finally cash in. But the taxman takes a significant cut of that gain unless you plan ahead.</p>
 
-<p>Business Asset Disposal Relief (BADR) is the single most valuable tax relief available when you sell your agency. It reduces your Capital Gains Tax (CGT) rate from 20% to 14% on the first £1m of qualifying gains. For a founder selling a 12-person digital agency billing £800k per year, that difference could easily be £50,000 or more in your pocket rather than HMRC's.</p>
+<p>Business Asset Disposal Relief (BADR) is the single most valuable tax relief available when you sell your agency. It reduces your Capital Gains Tax (CGT) rate from 20% to 18% on the first £1m of qualifying gains. For a founder selling a 12-person digital agency billing £800k per year, that difference could easily be £50,000 or more in your pocket rather than HMRC's.</p>
 
 <p>But BADR isn't automatic. You have to meet specific conditions, and you need to start meeting them well before you begin the sale process. Here's exactly what you need to know as an agency founder.</p>
 
@@ -46,9 +46,9 @@ keyTakeaways:
 
 <p>BADR was previously called Entrepreneurs' Relief. The name changed in 2020, but the core relief stayed the same. It's a relief that reduces the rate of CGT you pay when you sell all or part of your business.</p>
 
-<p>without BADR, you pay 24% CGT on gains from selling shares in your agency (assuming you're a higher rate taxpayer). With BADR, you pay 14% on the first £1m of gains you make in your lifetime. Gains above £1m are taxed at the normal 24% rate.</p>
+<p>without BADR, you pay 24% CGT on gains from selling shares in your agency (assuming you're a higher rate taxpayer). With BADR, you pay 18% on the first £1m of gains you make in your lifetime. Gains above £1m are taxed at the normal 24% rate.</p>
 
-<p>Let's put numbers on it. You sell your agency for £1.5m. Your shares cost you £100 when you set up the company. Your gain is £1,499,900. With BADR, you pay 14% on the first £1m (£100,000) and 20% on the remaining £499,900 (£99,980). Total tax: £199,980. without BADR, you'd pay 24% on the full gain: £299,980. That's a £100,000 difference.</p>
+<p>Let's put numbers on it. You sell your agency for £1.5m. Your shares cost you £100 when you set up the company. Your gain is £1,499,900. With BADR, you pay 18% on the first £1m (£100,000) and 20% on the remaining £499,900 (£99,980). Total tax: £199,980. without BADR, you'd pay 24% on the full gain: £299,980. That's a £100,000 difference.</p>
 
 <p>For most agency founders selling a business worth between £500k and £5m, BADR is the difference between a comfortable retirement and a frustrating one.</p>
 
@@ -92,7 +92,7 @@ keyTakeaways:
 
 <h2>The £1m Lifetime Limit</h2>
 
-<p>BADR applies to the first £1m of qualifying gains you make in your lifetime. It's not per business. If you sell one agency for a £600k gain and later sell another for a £500k gain, the first £1 million is covered at 14%. The remaining £100k is taxed at 20%.</p>
+<p>BADR applies to the first £1m of qualifying gains you make in your lifetime. It's not per business. If you sell one agency for a £600k gain and later sell another for a £500k gain, the first £1 million is covered at 18%. The remaining £100k is taxed at 20%.</p>
 
 <p>If you've already used BADR on a previous business sale, you have less capacity available. Check your previous filings. If you claimed Entrepreneurs' Relief on a sale in 2015, that counts towards the £1m lifetime limit.</p>
 

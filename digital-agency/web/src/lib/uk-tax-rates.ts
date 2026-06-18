@@ -12,7 +12,7 @@ export const UK_TAX_RATES = {
   taxYear: "2025-26",
   taxYearStart: "2025-04-06",
   taxYearEnd: "2026-04-05",
-  lastUpdated: "2026-05-17",
+  lastUpdated: "2026-06-17",
   publisher: {
     name: "Agency Founder Finance",
     url: "https://www.agencyfounderfinance.co.uk",
@@ -31,9 +31,10 @@ export const UK_TAX_RATES = {
   },
   dividendTax: {
     allowance: 500,
-    basicRate: 0.0875,
-    higherRate: 0.3375,
+    basicRate: 0.1075,
+    higherRate: 0.3575,
     additionalRate: 0.3935,
+    note: "FA 2026 s.4: rates increased from 8.75%/33.75%/39.35% to 10.75%/35.75%/39.35% from 6 Apr 2026.",
   },
   incomeTax: {
     personalAllowance: 12570,

@@ -24,7 +24,7 @@ faqs:
 - question: What is deemed disposal and does it apply to my agency shares?
   answer: Deemed disposal is when HMRC treats you as having sold an asset even though you did not. For most agency founders with direct shareholdings in their own trading company, deemed disposal does not apply. It can apply if you transfer shares into a trust, restructure your shareholding, or trigger a capital event within the company itself.
 - question: Can I claim Business Asset Disposal Relief if I sell my shares while non-resident?
-  answer: No. BADR requires you to be UK resident at the time of disposal. If you sell while non-resident, you cannot claim the relief. You either sell while UK resident (and pay 14% or 18% on the first £1 million) or wait five years and pay 0% UK tax on the entire gain.
+  answer: No. BADR requires you to be UK resident at the time of disposal. If you sell while non-resident, you cannot claim the relief. You either sell while UK resident (and pay 18% or 18% on the first £1 million) or wait five years and pay 0% UK tax on the entire gain.
 - question: What records do I need to prove I am non-resident in the UK?
   answer: 'You need evidence of your physical presence in the UAE: flight records, tenancy agreements, utility bills, bank statements showing local spending, and proof of economic activity (employment contract, business registration). HMRC can challenge your residence status years later, so keep records for at least six years after your departure.'
 authorSlug: james-whitfield
@@ -74,9 +74,9 @@ keyTakeaways:
 
 <h2>What About Business Asset Disposal Relief (BADR)?</h2>
 
-<p>If you sell your agency shares while UK resident, you can claim BADR (formerly Entrepreneurs' Relief) on the first £1 million of gains, currently at a 14% CGT rate (rising to 18% from 6 April 2026). But if you sell while non-resident, BADR is not available. The relief requires you to be UK resident at the time of disposal.</p>
+<p>If you sell your agency shares while UK resident, you can claim BADR (formerly Entrepreneurs' Relief) on the first £1 million of gains, currently at a 18% CGT rate (rising to 18% from 6 April 2026). But if you sell while non-resident, BADR is not available. The relief requires you to be UK resident at the time of disposal.</p>
 
-<p>This creates a trade-off. Sell before you leave and pay 14% (or 18% from April 2026) on up to £1 million of gains, with the balance at 24%. Or move to Dubai, wait five years, and pay 0% UK tax on the entire gain. For a founder with a £2 million gain, the difference is significant.</p>
+<p>This creates a trade-off. Sell before you leave and pay 18% (or 18% from April 2026) on up to £1 million of gains, with the balance at 24%. Or move to Dubai, wait five years, and pay 0% UK tax on the entire gain. For a founder with a £2 million gain, the difference is significant.</p>
 
 <p>But remember: if you sell while non-resident within the five-year window, you lose BADR and pay full UK rates anyway. There is no halfway house. You are either UK resident and eligible for BADR, or you are non-resident and outside the UK CGT net entirely (after five years).</p>
 
@@ -99,7 +99,7 @@ keyTakeaways:
 <p>If you hold shares through a trust, a holding company, or an offshore structure, the deemed disposal rules are more likely to apply. A direct shareholding in your trading company is the cleanest structure for a tax-free exit after five years. If your structure is complex, you may need to simplify it before you leave.</p>
 
 <h3>3. Consider Selling Before You Leave</h3>
-<p>If your exit is imminent and you cannot wait five years, selling while UK resident and claiming BADR may be the better option. Work through the numbers with your accountant. A 14% tax bill now may be better than a 24% bill later, or the risk of falling foul of the temporary non-residence rule.</p>
+<p>If your exit is imminent and you cannot wait five years, selling while UK resident and claiming BADR may be the better option. Work through the numbers with your accountant. A 18% tax bill now may be better than a 24% bill later, or the risk of falling foul of the temporary non-residence rule.</p>
 
 <h3>4. Plan Your Return Date</h3>
 <p>If you think you might return to the UK within five years, do not sell your shares during that period. Wait until you are back and UK resident again, then sell and claim BADR if you still qualify. The temporary non-residence rule only applies to disposals made while non-resident.</p>

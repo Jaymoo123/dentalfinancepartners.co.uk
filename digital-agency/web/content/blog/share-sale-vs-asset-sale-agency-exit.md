@@ -22,7 +22,7 @@ faqs: []
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- A share sale qualifies for Business Asset Disposal Relief (BADR) at 14% on the first £1m of gains, rising to 18% from 6 April 2026.
+- A share sale qualifies for Business Asset Disposal Relief (BADR) at 18% on the first £1m of gains, rising to 18% from 6 April 2026.
 - An asset sale leaves the company as a shell; you extract proceeds via a capital distribution, often taxed at 20% above the BADR limit.
 - Buyers typically prefer asset sales to avoid inheriting the company's liabilities, tax history, and employment contracts.
 - On a £1.26m share sale with BADR, the founder keeps over £1.1m after tax, versus a potentially higher tax bill on an asset sale.
@@ -50,7 +50,7 @@ keyTakeaways:
 
 <p>For most agency founders, the shares were acquired at incorporation for a nominal value. Perhaps £100. If you sell for £1 million, your gain is £999,900.</p>
 
-<p>If you qualify for Business Asset Disposal Relief (BADR), formerly known as Entrepreneurs' Relief, you pay 14% on the first £1m of gains. That is a lifetime limit. Above £1 million, you pay 20% (or 24% from April 2025 if the rumoured changes materialise, but we are working with current rates for now).</p>
+<p>If you qualify for Business Asset Disposal Relief (BADR), formerly known as Entrepreneurs' Relief, you pay 18% on the first £1m of gains. That is a lifetime limit. Above £1 million, you pay 20% (or 24% from April 2025 if the rumoured changes materialise, but we are working with current rates for now).</p>
 
 <p>Let us run the numbers on a typical agency exit.</p>
 
@@ -59,7 +59,7 @@ keyTakeaways:
 <p>Under a share sale with full BADR qualification:</p>
 <ul>
 <li>Gain: £1,259,900</li>
-<li>first £1 million at 14%: £100,000 tax</li>
+<li>first £1 million at 18%: £100,000 tax</li>
 <li>Remaining £259,900 at 20%: £51,980 tax</li>
 <li>Total CGT: £151,980</li>
 <li>Net to founder: £1,108,020</li>
@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>When the company sells its assets, it pays Corporation Tax on the gain. The rate is 19% for profits up to £50,000, with marginal relief up to £250,000, and 25% above that. Most agencies selling for a decent sum will hit the 25% rate.</p>
 
-<p>The company then holds the after-tax cash. To get that cash to you personally, you need to extract it. If you take it as a dividend, you pay dividend tax at up to 39.35%. If you wind up the company and claim capital treatment, you can get 14% under BADR on the distribution, but only if you meet the conditions.</p>
+<p>The company then holds the after-tax cash. To get that cash to you personally, you need to extract it. If you take it as a dividend, you pay dividend tax at up to 39.35%. If you wind up the company and claim capital treatment, you can get 18% under BADR on the distribution, but only if you meet the conditions.</p>
 
 <p><strong>Example:</strong> Same agency. Same £1.26 million sale price. But structured as an asset sale.</p>
 
@@ -91,7 +91,7 @@ keyTakeaways:
 <li>Cash left in company: £945,000</li>
 <li>Company wound up, distribution to founder.</li>
 <li>Capital distribution of £945,000. BADR applies (assuming conditions met).</li>
-<li>first £1 million at 14%: £94,500 tax</li>
+<li>first £1 million at 18%: £94,500 tax</li>
 <li>Net to founder: £850,500</li>
 </ul>
 
@@ -191,7 +191,7 @@ keyTakeaways:
 <p><strong>Share sale (full BADR):</strong></p>
 <ul>
 <li>Gain: £1,049,900</li>
-<li>tax at 14%: £104,990</li>
+<li>tax at 18%: £104,990</li>
 <li>Net to founder: £945,010</li>
 </ul>
 
@@ -199,7 +199,7 @@ keyTakeaways:
 <ul>
 <li>Company CT at 25%: £262,500</li>
 <li>Cash in company: £787,500</li>
-<li>Liquidation distribution, BADR at 14% (for disposals from 6 April 2025): £78,750 tax</li>
+<li>Liquidation distribution, BADR at 18% (for disposals from 6 April 2025): £78,750 tax</li>
 <li>Net to founder: £708,750</li>
 </ul>
 
@@ -211,7 +211,7 @@ keyTakeaways:
 <ul>
 <li>Company CT: £301,875</li>
 <li>Cash: £905,625</li>
-<li>Liquidation tax at 14%: £90,562</li>
+<li>Liquidation tax at 18%: £90,562</li>
 <li>Net to founder: £815,063</li>
 </ul>
 

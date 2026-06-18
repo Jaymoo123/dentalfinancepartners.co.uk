@@ -1,7 +1,7 @@
----
+﻿---
 title: "GP Accounting Software: Essential Guide for UK Medical Practices"
 slug: "gp-accounting-software"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accounting-software"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-accounting-software"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

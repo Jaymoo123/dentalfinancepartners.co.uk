@@ -1,6 +1,8 @@
 /**
  * Salary vs dividend optimiser — pure compute, no React, no window/document/fetch.
  * 2025/26 UK tax rates.
+ * Employer NI: 15% / £5,000 secondary threshold / £10,500 EA (from 6 Apr 2025).
+ * Dividend tax: 10.75% / 35.75% / 39.35% (FA 2026, from 6 Apr 2026).
  *
  * TL-03: zero client/server dependencies; safe to import in golden tests or
  * server components without hydration.
@@ -10,21 +12,21 @@ const PERSONAL_ALLOWANCE = 12570;
 const BASIC_RATE_LIMIT = 50270;
 const HIGHER_RATE_LIMIT = 125140;
 const NI_PRIMARY_THRESHOLD = 12570;
-const NI_SECONDARY_THRESHOLD = 9100;
+const NI_SECONDARY_THRESHOLD = 5000;
 const EMPLOYEE_NI_BASIC = 0.08;
-const EMPLOYER_NI = 0.138;
+const EMPLOYER_NI = 0.15;
 const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
 const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
+const DIVIDEND_BASIC = 0.1075;
+const DIVIDEND_HIGHER = 0.3575;
 const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;
 const CT_SMALL_RATE = 0.19;
 const CT_MAIN_RATE = 0.25;
-const EMPLOYMENT_ALLOWANCE = 5000;
+const EMPLOYMENT_ALLOWANCE = 10500;
 
 export type SalaryDividendResult = {
   salary: number;

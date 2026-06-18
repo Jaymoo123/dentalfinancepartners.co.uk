@@ -27,8 +27,8 @@ function getSiteOpts(): SiteSchemaOpts {
     description: siteConfig.description,
     tagline: siteConfig.tagline,
     publisherLogoUrl: siteConfig.publisherLogoUrl,
-    email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
+    // Phone intentionally omitted: the business publishes no public phone, so no
+    // telephone is emitted in any shared schema builder (Organization, etc).
   };
 }
 

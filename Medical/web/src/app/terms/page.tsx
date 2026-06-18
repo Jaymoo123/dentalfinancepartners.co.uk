@@ -25,7 +25,7 @@ export default function TermsPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Terms of use</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 27 March 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           These terms of use govern your access to and use of the {siteConfig.name} website (the &quot;Site&quot;). By accessing or using the Site, you agree to be bound by these terms. If you do not agree, please do not use the Site.
@@ -33,11 +33,9 @@ export default function TermsPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. About us</h2>
         <p>
-          The Site is operated by {siteConfig.legalName}. You can contact us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-            {siteConfig.contact.email}
-          </a>{" "}
-          or by using the details on our{" "}
+          The Site is operated by {siteConfig.company.legalName} (trading as {siteConfig.name}), a company registered in{" "}
+          {siteConfig.company.placeOfRegistration} under company number {siteConfig.company.number}, with its registered
+          office at {siteConfig.company.registeredOfficeLine}. You can contact us via our{" "}
           <Link href="/contact" className="text-[var(--accent-strong)] underline">
             contact page
           </Link>
@@ -125,11 +123,7 @@ export default function TermsPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">13. Contact us</h2>
         <p>
-          Questions about these terms? Contact us at{" "}
-          <a href={`mailto:${siteConfig.contact.email}`} className="text-[var(--accent-strong)] underline">
-            {siteConfig.contact.email}
-          </a>{" "}
-          or via our{" "}
+          Questions about these terms? Contact us via our{" "}
           <Link href="/contact" className="text-[var(--accent-strong)] underline">
             contact page
           </Link>

@@ -82,10 +82,10 @@ keyTakeaways:
 
 <ul>
 <li>Setting your salary at £12,570 to avoid NI while preserving your state pension entitlement</li>
-<li>Taking dividends up to the higher rate threshold (£50,270 total income) to stay in the 8.75% dividend tax band</li>
+<li>Taking dividends up to the higher rate threshold (£50,270 total income) to stay in the 10.75% dividend tax band</li>
 <li>Using pension contributions to reduce corporation tax, a £40k pension contribution saves £7,600 in corporation tax at 19%</li>
 <li>Timing capital purchases to use the £1m Annual Investment Allowance against profitable years</li>
-<li>Structuring your shareholding to qualify for Business Asset Disposal Relief (14% CGT instead of 24%) when you sell</li>
+<li>Structuring your shareholding to qualify for Business Asset Disposal Relief (18% CGT instead of 24%) when you sell</li>
 </ul>
 
 <p>These are not one-size-fits-all. They depend on your agency's profit level, your personal income needs, and your exit timeline. A strategic accountant models the options and recommends the best path.</p>
@@ -148,7 +148,7 @@ keyTakeaways:
 
 <p>Let's put a number on it.</p>
 
-<p>A 10-person creative agency turning over £700k per year with a 55% gross margin and £150k net profit. Without strategic planning, they pay £28,500 in corporation tax (19% on £150k). They take £50k in dividends, paying 8.75%, £4,375. They have no pension contributions, no cash flow forecast, and no exit plan.</p>
+<p>A 10-person creative agency turning over £700k per year with a 55% gross margin and £150k net profit. Without strategic planning, they pay £28,500 in corporation tax (19% on £150k). They take £50k in dividends, paying 10.75%, £4,375. They have no pension contributions, no cash flow forecast, and no exit plan.</p>
 
 <p>With strategic planning, the same agency:</p>
 

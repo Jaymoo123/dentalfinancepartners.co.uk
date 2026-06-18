@@ -1,7 +1,7 @@
----
+﻿---
 title: "Locum Doctor IR35: What You Need to Know"
 slug: "locum-doctor-ir35-what-you-need-to-know"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-ir35-what-you-need-to-know"
+canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-ir35-what-you-need-to-know"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

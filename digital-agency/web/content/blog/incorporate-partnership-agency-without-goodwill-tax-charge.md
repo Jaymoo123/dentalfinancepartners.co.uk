@@ -20,7 +20,7 @@ summary: Moving from a partnership to a limited company can trigger an unexpecte
 schema: ''
 faqs:
 - question: Can I incorporate my agency partnership without paying any tax on goodwill?
-  answer: Yes, if you use incorporation relief. The relief defers the capital gain on the goodwill transfer by reducing the base cost of the shares you receive. You do not pay tax at the point of incorporation. The gain crystallises when you sell the shares later. If you qualify for BADR at that point, the tax rate is 14% rather than 24%.
+  answer: Yes, if you use incorporation relief. The relief defers the capital gain on the goodwill transfer by reducing the base cost of the shares you receive. You do not pay tax at the point of incorporation. The gain crystallises when you sell the shares later. If you qualify for BADR at that point, the tax rate is 18% rather than 24%.
 - question: How is goodwill valued for a marketing agency partnership?
   answer: Goodwill is typically valued using a multiple of maintainable earnings, usually between 1.5 and 3 times adjusted net profit. The exact multiple depends on client concentration, revenue predictability, growth rate, and the agency's reputation. A professional valuation from a qualified accountant or specialist firm is essential. HMRC will challenge unrealistic figures.
 - question: What happens to the partnership's VAT registration when I incorporate?
@@ -178,7 +178,7 @@ keyTakeaways:
 
 <p><strong>Ignoring the partnership agreement.</strong> If your partnership agreement says all assets are owned jointly, you need unanimous consent to transfer them. One partner blocking the incorporation can create serious problems. Get legal agreement before you start the process.</p>
 
-<p><strong>Forgetting about the directors' loan account.</strong> After incorporation, any money you take from the company that is not salary or dividends goes into a directors' loan account. If the balance is overdrawn by more than £10,000 at any point, the company must report it on the P11D and the director pays tax on the benefit. If it is not repaid within 9 months of the year end, the company pays s455 tax at 33.75%.</p>
+<p><strong>Forgetting about the directors' loan account.</strong> After incorporation, any money you take from the company that is not salary or dividends goes into a directors' loan account. If the balance is overdrawn by more than £10,000 at any point, the company must report it on the P11D and the director pays tax on the benefit. If it is not repaid within 9 months of the year end, the company pays s455 tax at 35.75%.</p>
 
 <h2>Is Incorporation Always the Right Move?</h2>
 
@@ -188,7 +188,7 @@ keyTakeaways:
 
 <p>For agencies turning over £200,000 or more, incorporation usually makes sense. The corporation tax rate (19% on profits up to £50k, 25% above £250k) is often lower than the income tax rates the partners pay. And the ability to retain profits in the company for reinvestment is a significant advantage.</p>
 
-<p>If you plan to exit the agency within the next five years, incorporation is almost certainly the right move. BADR gives you a 14% capital gains tax rate on qualifying disposals up to £1 million. Partnerships do not qualify for BADR on the sale of the business itself.</p>
+<p>If you plan to exit the agency within the next five years, incorporation is almost certainly the right move. BADR gives you a 18% capital gains tax rate on qualifying disposals up to £1 million. Partnerships do not qualify for BADR on the sale of the business itself.</p>
 
 <p>But if you plan to run the agency for another 15 years and then pass it to family, the structure needs to be different. There is no one-size-fits-all answer.</p>
 

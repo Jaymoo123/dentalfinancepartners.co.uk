@@ -1,7 +1,20 @@
 {
   "niche_id": "dentists",
   "display_name": "Dental Finance Partners",
-  "legal_name": "Dental Finance Partners Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
   "domain": "www.dentalfinancepartners.co.uk",
   "tagline": "Accounting for UK dentists — nothing else",
   "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions — we only work with dentists.",

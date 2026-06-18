@@ -52,17 +52,26 @@ export function buildOgImageUrl(title: string, category?: string) {
 
 /** Build Organization JSON-LD schema for the site */
 export function buildOrganizationJsonLd() {
+  const office = siteConfig.company.registeredOffice;
   return JSON.stringify({
     "@context": "https://schema.org",
     "@type": ["ProfessionalService", "AccountingService"],
     "@id": `${siteConfig.url}#organization`,
     name: siteConfig.name,
-    legalName: siteConfig.legalName,
+    // Registered legal entity vs the public-facing trading name (brand).
+    legalName: siteConfig.company.legalName,
+    alternateName: siteConfig.company.tradingName,
+    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
     url: siteConfig.url,
     logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     description: siteConfig.description,
-    telephone: siteConfig.contact.phone,
-    email: siteConfig.contact.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: `${office.line1}, ${office.line2}`,
+      addressLocality: office.city,
+      postalCode: office.postcode,
+      addressCountry: "GB",
+    },
     areaServed: AREA_SERVED,
     knowsAbout: KNOWS_ABOUT,
     priceRange: "££",
@@ -177,8 +186,6 @@ export function buildLocalBusinessJsonLd(opts: {
     name: opts.name,
     description: opts.description,
     url: `${siteConfig.url}${opts.url}`,
-    telephone: siteConfig.contact.phone,
-    email: siteConfig.contact.email,
     address: {
       "@type": "PostalAddress",
       addressLocality: opts.city,

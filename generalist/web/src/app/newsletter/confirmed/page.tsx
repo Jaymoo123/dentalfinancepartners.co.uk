@@ -42,11 +42,7 @@ export default async function ConfirmedPage({ searchParams }: Props) {
         minute. After that, expect Thursday morning emails.
       </p>
       <p className="mt-2 text-slate-700">
-        If it doesn&rsquo;t show, check spam or promotions, and add{" "}
-        <code className="rounded bg-slate-100 px-1 py-0.5 text-sm">
-          hello@hollowaydavies.co.uk
-        </code>{" "}
-        to your contacts.
+        If it doesn&rsquo;t show, check your spam or promotions folder and mark it as not spam.
       </p>
       <Link
         href="/"

@@ -19,17 +19,17 @@ summary: Selling your agency is likely the biggest financial event of your life.
 schema: ''
 faqs:
 - question: What is the difference between BADR and Entrepreneurs’ Relief?
-  answer: They are the same relief. Entrepreneurs’ Relief was renamed Business Asset Disposal Relief (BADR) in April 2020. The rules are identical. The £1 million lifetime limit remains, but the rate has risen from 10% to 14% for disposals from 6 April 2025, and is scheduled to rise again to 18% from 6 April 2026. Any gains above the £1 million BADR limit are taxed at 24% (the main higher CGT rate).
+  answer: They are the same relief. Entrepreneurs’ Relief was renamed Business Asset Disposal Relief (BADR) in April 2020. The rules are identical. The £1 million lifetime limit remains, but the rate has risen from 10% to 18% for disposals from 6 April 2025, and is scheduled to rise again to 18% from 6 April 2026. Any gains above the £1 million BADR limit are taxed at 24% (the main higher CGT rate).
 - question: Can I claim BADR if I sell my agency to my management team (MBO)?
   answer: Yes, as long as you meet the qualifying conditions at the point of disposal, 5% shareholding, director or employee, and trading company status for at least two years. The key risk is that HMRC may challenge whether you have genuinely disposed of the shares if you retain a minority stake or continue as a director. Ensure the legal transfer is complete and documented properly.
 - question: How is an earn-out taxed when I sell my agency?
-  answer: It depends on how the earn-out is structured. If it’s additional consideration for your shares (deferred consideration), it’s taxed as a capital gain at 14% (BADR, up to £1m lifetime) or 24% (above the BADR limit). If it’s structured as employment income, for example, a consultancy fee for staying on, it’s taxed as income at up to 45% plus National Insurance. The contract wording is critical. Have your solicitor and accountant review the earn-out clause before signing.
+  answer: It depends on how the earn-out is structured. If it’s additional consideration for your shares (deferred consideration), it’s taxed as a capital gain at 18% (BADR, up to £1m lifetime) or 24% (above the BADR limit). If it’s structured as employment income, for example, a consultancy fee for staying on, it’s taxed as income at up to 45% plus National Insurance. The contract wording is critical. Have your solicitor and accountant review the earn-out clause before signing.
 - question: What happens if I sell my agency as an asset sale rather than a share sale?
   answer: In an asset sale, the company sells its business and pays corporation tax on the gain (19% or 25%). You then extract the remaining cash personally, paying further tax as a dividend or capital distribution. The effective tax rate can exceed 40%. Share sales are almost always more tax-efficient for sellers, especially if you qualify for BADR. Most buyers will accept a share sale if you negotiate it.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Business Asset Disposal Relief reduces CGT to 14% on gains up to £1 million, but you must meet conditions for two years before sale.
+- Business Asset Disposal Relief reduces CGT to 18% on gains up to £1 million, but you must meet conditions for two years before sale.
 - To qualify for BADR, you must hold at least 5% shares and voting rights and be a director or employee for 24 months.
 - If your agency holds significant investment assets like property, HMRC may deny BADR if trading activities fall below 80%.
 - The £1 million BADR lifetime limit applies per individual, not per company, so previous disposals reduce your remaining allowance.
@@ -43,9 +43,9 @@ keyTakeaways:
 
 <h2>Why Most Agency Founders Overpay Tax on Exit</h2>
 
-<p>The default structure for selling a limited company is a share sale. You sell your shares to the buyer. You pay Capital Gains Tax on the gain. Simple. But the difference between paying 14% and 24%, or even 24%, comes down to one thing: whether you qualify for <strong>Business Asset Disposal Relief</strong> (BADR, formerly Entrepreneurs’ Relief).</p>
+<p>The default structure for selling a limited company is a share sale. You sell your shares to the buyer. You pay Capital Gains Tax on the gain. Simple. But the difference between paying 18% and 24%, or even 24%, comes down to one thing: whether you qualify for <strong>Business Asset Disposal Relief</strong> (BADR, formerly Entrepreneurs’ Relief).</p>
 
-<p>BADR reduces your CGT rate to 14% on qualifying gains, up to a lifetime limit of £1 million. Gains above £1 million are taxed at 20% (or 24% for carried interest and some other assets). For a typical agency sale of £2 million, the difference between BADR and no relief is £100,000. That’s not a rounding error. That’s a deposit on a house in Bristol Harbourside.</p>
+<p>BADR reduces your CGT rate to 18% on qualifying gains, up to a lifetime limit of £1 million. Gains above £1 million are taxed at 20% (or 24% for carried interest and some other assets). For a typical agency sale of £2 million, the difference between BADR and no relief is £100,000. That’s not a rounding error. That’s a deposit on a house in Bristol Harbourside.</p>
 
 <p>But BADR isn’t automatic. You must meet specific conditions for at least two years before the sale. And many agency founders fall into traps that disqualify them.</p>
 
@@ -82,14 +82,14 @@ keyTakeaways:
 <p>This tension is the central negotiation in most agency acquisitions. Understanding the tax consequences of each structure is non-negotiable.</p>
 
 <h3>Share Sale, The Seller’s Preference</h3>
-<p>In a share sale, you sell your shares. The company continues unchanged. The buyer inherits all the company’s history, including potential liabilities. You pay CGT on your gain. If you qualify for BADR, that’s 14% on the first £1m.</p>
+<p>In a share sale, you sell your shares. The company continues unchanged. The buyer inherits all the company’s history, including potential liabilities. You pay CGT on your gain. If you qualify for BADR, that’s 18% on the first £1m.</p>
 <p>Corporation tax doesn’t apply. The proceeds are yours personally.</p>
 
 <h3>Asset Sale, The Buyer’s Preference</h3>
 <p>In an asset sale, the company sells its business. The company pays corporation tax on any gain (19% or 25%, depending on profit level). You then extract the remaining cash from the company, usually as a dividend or capital distribution, paying further tax personally.</p>
 <p>Effective tax rates on asset sales can exceed 40% when you layer corporation tax and dividend tax. For a £2 million sale, that’s potentially £800,000 in tax versus £200,000 under BADR.</p>
 
-<p>Most agency sales end up as share sales, but not always. If the buyer insists on an asset sale, you need to structure the deal to minimise the double tax hit. One common approach: the buyer pays a premium for goodwill directly to the company, and you extract the proceeds through a <strong>capital distribution</strong> taxed at 20% (or 14% with BADR on the distribution).</p>
+<p>Most agency sales end up as share sales, but not always. If the buyer insists on an asset sale, you need to structure the deal to minimise the double tax hit. One common approach: the buyer pays a premium for goodwill directly to the company, and you extract the proceeds through a <strong>capital distribution</strong> taxed at 20% (or 18% with BADR on the distribution).</p>
 
 <h3>Hybrid Structures</h3>
 <p>Some deals use a mix. The buyer buys the shares but excludes certain assets (like a property or a specific client contract) which are then sold separately. This requires careful documentation and a clear allocation of value in the sale and purchase agreement.</p>
@@ -101,8 +101,8 @@ keyTakeaways:
 <p>Earn-outs are common in agency acquisitions because the buyer wants to retain the founder for a transition period and protect against client churn. But they create tax complexity.</p>
 
 <h3>Tax Treatment of Earn-Out Payments</h3>
-<p>If the earn-out is structured as additional consideration for the shares, it’s treated as a capital gain in the year you receive it. You pay CGT at your applicable rate (14% or 24%, depending on BADR headroom).</p>
-<p>If the earn-out is structured as employment income, because you’re required to work for the buyer to earn it, it’s taxed as income. That means income tax at up to 45%, plus employee NI at 2%, plus employer NI at 13.8% (which the buyer may deduct from your payment).</p>
+<p>If the earn-out is structured as additional consideration for the shares, it’s treated as a capital gain in the year you receive it. You pay CGT at your applicable rate (18% or 24%, depending on BADR headroom).</p>
+<p>If the earn-out is structured as employment income, because you’re required to work for the buyer to earn it, it’s taxed as income. That means income tax at up to 45%, plus employee NI at 2%, plus employer NI at 15% (which the buyer may deduct from your payment).</p>
 <p>The difference between capital treatment and income treatment on a £500,000 earn-out can be £175,000. The contract wording determines which applies. Your solicitor and accountant must review the earn-out clause before you sign.</p>
 
 <h3>Contingent Consideration and HMRC’s Position</h3>
@@ -293,7 +293,7 @@ keyTakeaways:
 
 <p><strong>Mistake 2: Ignoring the director’s loan.</strong> A founder owes the company £80,000. The buyer insists it’s repaid before completion. The founder doesn’t have the cash. The deal restructures as an asset sale, triggering corporation tax and dividend tax. The effective tax rate triples.</p>
 
-<p><strong>Mistake 3: Accepting an earn-out as employment income.</strong> A founder signs a consultancy agreement for the earn-out period. HMRC treats the payments as income. The founder pays 45% tax plus NI. Had the earn-out been structured as deferred consideration, the rate would have been 14% (BADR).</p>
+<p><strong>Mistake 3: Accepting an earn-out as employment income.</strong> A founder signs a consultancy agreement for the earn-out period. HMRC treats the payments as income. The founder pays 45% tax plus NI. Had the earn-out been structured as deferred consideration, the rate would have been 18% (BADR).</p>
 
 <p><strong>Mistake 4: Failing to get a valuation.</strong> A founder agrees a price based on a verbal offer. HMRC challenges the goodwill valuation. The founder has no independent report to defend the price. The tax bill increases.</p>
 

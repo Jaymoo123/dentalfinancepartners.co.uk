@@ -1,6 +1,6 @@
 /**
  * Employer NI & Cost-to-Hire Calculator — GenericTool config.
- * 2025/26 rates.
+ * 2025/26 rates (employer NI 15% / £5,000 secondary threshold / £10,500 EA from 6 Apr 2025).
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -14,12 +14,12 @@ export const employerNiTool: GenericTool = {
   name: "Employer NI & Cost-to-Hire",
   category: "Tax planning",
   oneLiner:
-    "Total annual cost of your agency team. Employer NI at 13.8%, Employment Allowance and minimum auto-enrolment pension.",
+    "Total annual cost of your agency team. Employer NI at 15%, Employment Allowance and minimum auto-enrolment pension.",
   metaTitle: "Employer NI Calculator 2025/26 | Agency Cost-to-Hire",
   metaDescription:
-    "Free employer NI calculator for UK agencies. Total employment cost including 13.8% NI, Employment Allowance and auto-enrolment pension. 2025/26.",
+    "Free employer NI calculator for UK agencies. Total employment cost including 15% NI, Employment Allowance and auto-enrolment pension. 2025/26.",
   intro:
-    "Calculate the total cost of employing your agency team including employer NI at 13.8%, Employment Allowance (£5,000 off for eligible employers) and minimum auto-enrolment pension contributions.",
+    "Calculate the total cost of employing your agency team including employer NI at 15% (on earnings above the £5,000 secondary threshold), Employment Allowance (£10,500 off for eligible employers) and minimum auto-enrolment pension contributions.",
   embedHeight: 420,
   fields: [
     {
@@ -43,10 +43,10 @@ export const employerNiTool: GenericTool = {
     },
     {
       id: "useEmploymentAllowance",
-      label: "Apply Employment Allowance (£5,000)",
+      label: "Apply Employment Allowance (£10,500)",
       type: "toggle",
       default: true,
-      help: "Eligible if you have 2+ employees and your total NI bill is above £5,000. Single-director companies do not qualify.",
+      help: "Eligible if you have 2+ employees and your total NI bill is above £10,500. Single-director companies do not qualify.",
     },
     {
       id: "includePension",
@@ -93,7 +93,7 @@ export const employerNiTool: GenericTool = {
   explainer: {
     heading: "Employer NI and the Employment Allowance",
     paragraphs: [
-      "Employers pay 13.8% NI on salaries above the secondary threshold (£9,100 in 2025/26). Eligible employers with 2+ employees can offset £5,000 via the Employment Allowance, reducing their NI bill.",
+      "Employers pay 15% NI on earnings above the secondary threshold (£5,000 in 2025/26, reduced from £9,100). Eligible employers with 2+ employees can offset up to £10,500 via the Employment Allowance, reducing their NI bill.",
       "Auto-enrolment minimum employer pension is 3% on qualifying earnings above £6,240.",
     ],
   },

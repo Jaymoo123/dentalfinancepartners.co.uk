@@ -32,7 +32,7 @@ export const TEAM: Record<string, TeamMember> = {
     bio: [
       "James Whitfield is the editorial lead at Agency Founder Finance. He writes and commissions content on UK tax, incorporation, IR35, R&D credits, and the cross-border realities of running an agency from the UK or relocating to the UAE.",
       "Editorial focus is plain-English explanation backed by primary sources, every figure on this site is traceable back to HMRC, Companies House, or equivalent. Concrete advice for a specific agency is delivered via a one-to-one call with a qualified accountant on the Agency Founder Finance team, not via published articles.",
-      "If something on the site is wrong, out of date, or unclear, email hello@agencyfounderfinance.co.uk and the editorial team will fix it.",
+      "If something on the site is wrong, out of date, or unclear, get in touch via the contact page and the editorial team will fix it.",
     ],
     expertise: [
       "UK agency taxation",

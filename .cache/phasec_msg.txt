@@ -1,0 +1,7 @@
+Phase C spec: GAP-4 extras -> GAP-5 nurture convergence -> GAP-6 decision gate
+
+Live-DB recon embedded (trigger URLs, empty shared subscriber stack, 2-row
+legacy migration, staging unusable for rehearsal). Guardrails: additive-nullable
+only, manager-applied SQL, no marketing email, no test leads through prod pipeline.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

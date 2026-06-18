@@ -1,9 +1,9 @@
 """
 Phase 0: Discovery run.
 
-Fetches top competitor pages for a sample of queries and runs DeepSeek
-analysis to surface what the best pages are actually doing — what sections
-they cover, what queries they target, what trust signals they deploy.
+Fetches top competitor pages for a sample of queries and runs Anthropic
+Sonnet analysis to surface what the best pages are actually doing: what
+sections they cover, what queries they target, what trust signals they deploy.
 
 This is a one-time calibration step run manually, not part of the weekly
 pipeline. Run it first on property, review the output, then proceed with
@@ -28,7 +28,7 @@ if ROOT not in sys.path:
 from optimisation_engine.competitor._db import _arr, _esc, _jsonb, _sql, parse_llm_json
 from optimisation_engine.competitor._fetch import fetch_url
 from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
-from optimisation_engine.blog_generator.llm_providers import call_deepseek, LLMError
+from optimisation_engine.blog_generator.llm_providers import call_anthropic, LLMError
 
 
 # ---------------------------------------------------------------------------
@@ -150,16 +150,15 @@ def _call_discovery(query: str, page_text: str, url: str) -> dict | None:
     )
 
     try:
-        result = call_deepseek(
+        result = call_anthropic(
             system_prompt=DISCOVERY_SYSTEM,
             user_prompt=prompt,
-            model="deepseek-chat",
+            model="claude-sonnet-4-20250514",
             max_tokens=4096,
             temperature=0.2,
-            json_mode=True,
         )
     except LLMError as exc:
-        print(f"    [discovery] DeepSeek error for {url[:60]}: {exc}")
+        print(f"    [discovery] LLM error for {url[:60]}: {exc}")
         return None
 
     parsed = parse_llm_json(result.text, label=f"discovery:{url[:40]}")

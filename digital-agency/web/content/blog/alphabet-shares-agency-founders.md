@@ -66,7 +66,7 @@ keyTakeaways:
 <p>An investor taking a minority stake in a 20-person creative agency billing £1.4m might take C shares. Those shares carry a fixed 8% preferential dividend, paid before any dividend on the A or B shares. On a sale, the C shares get their original investment back first, then participate in the remaining proceeds at a reduced rate. The investor gets protection. The founder keeps control.</p>
 
 <h3>3. Preparing for an Exit</h3>
-<p>This is where alphabet shares become most powerful. When you sell your agency, the tax treatment of the sale proceeds depends on the type of shares you hold. Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on qualifying disposals, up to a £1m lifetime limit. But BADR only applies to shares that meet specific conditions, including a minimum 5% shareholding and a two-year holding period.</p>
+<p>This is where alphabet shares become most powerful. When you sell your agency, the tax treatment of the sale proceeds depends on the type of shares you hold. Business Asset Disposal Relief (BADR) gives you a 18% capital gains tax rate on qualifying disposals, up to a £1m lifetime limit. But BADR only applies to shares that meet specific conditions, including a minimum 5% shareholding and a two-year holding period.</p>
 <p>Alphabet shares let you structure ownership so the founder holds shares that qualify for BADR, while other shareholders hold shares that don't need to qualify. You can also use alphabet shares to create a "growth shares" structure, where a new class of shares captures the value created after a specific date, potentially reducing the tax bill on the founder's existing shares.</p>
 <p>For a detailed look at how share structures affect your exit options, see our <a href="/blog/growth-and-exit">growth and exit planning</a> content.</p>
 
@@ -74,7 +74,7 @@ keyTakeaways:
 <p>Alphabet shares are not a tax avoidance scheme. They are a legitimate structuring tool. But the tax treatment matters, and getting it wrong can be expensive.</p>
 
 <h3>Dividend Tax</h3>
-<p>Each shareholder pays tax on dividends they receive, based on their personal income tax band. The dividend tax rates for 2025/26 are 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate. The annual dividend allowance is £500.</p>
+<p>Each shareholder pays tax on dividends they receive, based on their personal income tax band. The dividend tax rates for 2026/27 are 10.75% for basic rate taxpayers, 35.75% for higher rate, and 39.35% for additional rate. The annual dividend allowance is £500.</p>
 <p>Because alphabet shares let you direct dividends to specific shareholders, you can manage the overall tax bill. If the founder is already in the higher rate band and a senior team member has unused basic rate band, you can pay a larger dividend on the team member's shares and a smaller one on the founder's shares. The total dividend paid is the same, but the tax bill is lower.</p>
 <p>HMRC watches this area. If the dividend allocation is not supported by the share rights, or if the share classes have no commercial substance, HMRC can challenge the arrangement under the settlements legislation. The key is that the dividend must be declared in accordance with the rights attached to each class, and those rights must have genuine commercial purpose.</p>
 
@@ -82,7 +82,7 @@ keyTakeaways:
 <p>Dividends are paid from post-tax profits. The company pays corporation tax on its profits at 19% (small profits rate, profits up to £50k) or 25% (main rate, profits above £250k), with marginal relief between £50k and £250k. Then the remaining profits are distributed as dividends. Alphabet shares do not change the corporation tax calculation.</p>
 
 <h3>Capital Gains Tax on Exit</h3>
-<p>When you sell your agency, the capital gains tax treatment depends on the share class you hold. BADR applies at 14% on the first £1m of lifetime gains, with the remainder taxed at 20% (or 24% for residential property). To qualify for BADR on a share disposal, you must hold at least 5% of the company's ordinary share capital and voting rights, and be an officer or employee of the company, for at least two years before the disposal.</p>
+<p>When you sell your agency, the capital gains tax treatment depends on the share class you hold. BADR applies at 18% on the first £1m of lifetime gains, with the remainder taxed at 20% (or 24% for residential property). To qualify for BADR on a share disposal, you must hold at least 5% of the company's ordinary share capital and voting rights, and be an officer or employee of the company, for at least two years before the disposal.</p>
 <p>If you have alphabet shares, each class is assessed separately. Holding 5% of the A shares does not automatically give you BADR on the B shares. The structure needs to be designed with BADR qualification in mind. This is where specialist advice is essential.</p>
 
 <h2>Setting Up Alphabet Shares: The Practical Steps</h2>

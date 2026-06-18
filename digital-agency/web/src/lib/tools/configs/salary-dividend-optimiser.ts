@@ -33,7 +33,7 @@ export const salaryDividendTool: GenericTool = {
     },
     {
       id: "useEmploymentAllowance",
-      label: "Apply Employment Allowance (£5,000 off employer NI)",
+      label: "Apply Employment Allowance (£10,500 off employer NI)",
       type: "toggle",
       default: true,
       help: "Most agencies with 2+ employees qualify. Single-director companies do not.",
@@ -77,7 +77,7 @@ export const salaryDividendTool: GenericTool = {
     {
       question: "What rates does this calculator use?",
       answer:
-        "UK 2025/26 rates. PA £12,570. Basic rate 20% (up to £50,270). Higher rate 40% (up to £125,140). Additional rate 45%. Dividend allowance £500. Dividend rates 8.75% / 33.75% / 39.35%. Employer NI 13.8% above £9,100. Employee NI 8% above £12,570. Corporation tax 19% small profits / 25% main rate.",
+        "UK 2025/26 rates. PA £12,570. Basic rate 20% (up to £50,270). Higher rate 40% (up to £125,140). Additional rate 45%. Dividend allowance £500. Dividend rates 10.75% / 35.75% / 39.35% (FA 2026, from 6 Apr 2026). Employer NI 15% above £5,000 secondary threshold. Employee NI 8% above £12,570. Corporation tax 19% small profits / 25% main rate.",
     },
     {
       question: "Does it cover the marginal corporation tax rate?",

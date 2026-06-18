@@ -1,4 +1,4 @@
----
+﻿---
 title: "GP Accountant Services: Complete Guide for Medical Professionals"
 slug: "gp-accountant-services-complete-guide"
 date: "2026-04-01"
@@ -12,7 +12,7 @@ image: ""
 h1: "GP Accountant Services: Complete Guide for Medical Professionals"
 summary: "A plain-English guide to what a specialist GP and medical accountant does across the full service range, from partnership accounts and NHS pension certificates to tax returns, payroll and incorporation, with links to the detailed guides for each area."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-services-complete-guide"
+canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-services-complete-guide"
 faqs:
   - question: "What does a specialist GP accountant actually do?"
     answer: "A GP accountant covers the full range a medical practice or doctor needs, partnership accounts and the SA800, personal self-assessment, the NHS pension certificates (Type 1 Annual Certificate of Pensionable Profits for partners, Type 2 self-assessment for salaried GPs, Locum forms A and B for freelance locums), payroll and PAYE, VAT where private work applies, and advice on incorporating private work. The difference from a high-street accountant is medical-specific knowledge of GMS, PMS and Global Sum income, the NHS Pension Scheme and the GP certification machinery."

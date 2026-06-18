@@ -148,7 +148,7 @@ keyTakeaways:
 
 <h3>Manage Your Directors' Loan Account</h3>
 
-<p>If you take money from the company that is not salary or dividends, it goes into your directors' loan account. If the balance is over £10,000 at any point, or if it is not repaid within nine months of your year end, you trigger a Section 455 tax charge at 33.75%.</p>
+<p>If you take money from the company that is not salary or dividends, it goes into your directors' loan account. If the balance is over £10,000 at any point, or if it is not repaid within nine months of your year end, you trigger a Section 455 tax charge at 35.75%.</p>
 
 <p>That charge comes straight off net profit. It is a pure margin killer. Keep your directors' loan account in credit or clear it before the nine-month deadline.</p>
 

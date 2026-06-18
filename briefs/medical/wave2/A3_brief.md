@@ -1,9 +1,9 @@
-# Brief: enhanced-services-gp-practice-income-tax
+﻿# Brief: enhanced-services-gp-practice-income-tax
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster A (GMS core funding), pick A3
 **Source file (to be created):** `Medical/web/content/blog/enhanced-services-gp-practice-income-tax.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/enhanced-services-gp-practice-income-tax
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/enhanced-services-gp-practice-income-tax
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income, enhanced services as an income stream beyond core GMS), with cross-refs to §1 (partner taxed on profit share), §8 (trading-income tax / self-assessment) and §6 (VAT: NHS care versus standard-rated work).
 

@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Non-residents selling UK residential property must report and pay capital gains tax within 60 days of completion, with penalties for missing the deadline.
-- For 2025/26, the annual exempt amount for capital gains tax is £3,000, and gains are taxed at 18% within the basic rate band and 24% above.
+- For 2026/27, the annual exempt amount for capital gains tax is £3,000, and gains are taxed at 18% within the basic rate band and 24% above.
 - A non-resident with no UK income and a £150,000 gain would owe approximately £32,263.80 in capital gains tax after the £3,000 allowance.
 - The 60-day reporting window applies to completion date, not exchange date, and must be done via HMRC's non-resident CGT service.
 - Since 6 April 2015, non-UK residents are liable for UK capital gains tax on disposals of UK residential property, with rules tightened further from 6 April 2020.
@@ -52,7 +52,7 @@ keyTakeaways:
 
 <h2>What Rate of CGT Do You Pay as a Non-Resident?</h2>
 
-<p>The rate depends on your total UK income and gains for the tax year. As a non-resident, you are entitled to the same annual exempt amount as UK residents. For 2025/26, that is £3,000. Gains above that are taxed at:</p>
+<p>The rate depends on your total UK income and gains for the tax year. As a non-resident, you are entitled to the same annual exempt amount as UK residents. For 2026/27, that is £3,000. Gains above that are taxed at:</p>
 
 <ul>
 <li><strong>18%</strong> on gains that fall within your basic rate band (£0 to £50,270 of taxable income plus gains)</li>
@@ -131,7 +131,7 @@ keyTakeaways:
 
 <p>But if you are a non-resident company, the same 60-day reporting requirement applies. The company must report the disposal to HMRC within 60 days of completion and pay the corporation tax due.</p>
 
-<p>If you then extract the proceeds from the company as a dividend, you pay dividend tax in the UK at your marginal rate (8.75%, 33.75%, or 39.35% depending on your total income). Or if you are non-resident, you may be able to avoid UK dividend tax by receiving the dividend while non-resident, depending on the treaty. But the company itself cannot avoid the tax on the gain.</p>
+<p>If you then extract the proceeds from the company as a dividend, you pay dividend tax in the UK at your marginal rate (10.75%, 35.75%, or 39.35% depending on your total income). Or if you are non-resident, you may be able to avoid UK dividend tax by receiving the dividend while non-resident, depending on the treaty. But the company itself cannot avoid the tax on the gain.</p>
 
 <p>This is a specialist area. If you hold property through a company, speak to an accountant who understands both UK property tax and non-resident structures.</p>
 

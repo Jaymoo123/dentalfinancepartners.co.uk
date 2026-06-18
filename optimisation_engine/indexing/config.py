@@ -31,8 +31,12 @@ SITE_INDEXNOW_CONFIG: dict[str, dict[str, str]] = {
         "key": "f4fdfbf2cea848168e128a029d31e86b",
     },
     "contractors-ir35": {
-        "host": "www.contractor-finance-partners.co.uk",
+        "host": "www.contractortaxaccountants.co.uk",
         "key": "fc84f134ebf231eaec2e26e2646a4ede",
+    },
+    "construction-cis": {
+        "host": "www.tradetaxspecialists.co.uk",
+        "key": "e23614f9759b971c52b602307ed7522b",
     },
     "medical": {
         "host": "www.medicalaccounts.co.uk",

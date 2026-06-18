@@ -1,0 +1,159 @@
+======================================================================
+HARD 404 ISSUES: 50
+======================================================================
+  [basis-period-reform-law-firms]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [client-money-accounting-solicitors]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [cofa-responsibilities-accounting]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [counsel-fees-vat-guide-uk-law-firms]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [disbursements-vat-treatment-uk-law-firms]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [how-much-do-uk-conveyancing-solicitors-charge]
+     /blog/fee-structure-for-uk-residential-conveyancing-firms
+     -> no-flat-slug (/blog/fee-structure-for-uk-residential-conveyancing-firms)
+  [how-much-do-uk-conveyancing-solicitors-charge]
+     /blog/conveyancing-firm-financial-control-strategies
+     -> no-flat-slug (/blog/conveyancing-firm-financial-control-strategies)
+  [how-much-do-uk-conveyancing-solicitors-charge]
+     /blog/sdlt-calculation-uk-conveyancing-solicitors
+     -> no-flat-slug (/blog/sdlt-calculation-uk-conveyancing-solicitors)
+  [is-it-hard-to-make-partner-at-a-uk-law-firm]
+     /blog/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership
+     -> no-flat-slug (/blog/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership)
+  [is-it-hard-to-make-partner-at-a-uk-law-firm]
+     /blog/how-much-does-it-cost-to-start-a-law-firm-uk
+     -> no-flat-slug (/blog/how-much-does-it-cost-to-start-a-law-firm-uk)
+  [law-firm-accountant-leeds]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-accountant-manchester]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-accounting-services]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-accounting-software-guide-uk-solicitors]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-benchmarking-uk]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-cash-flow-management]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-debt-management]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-drawings-vs-profit]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [law-firm-goodwill-valuation]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [law-firm-lock-up-reduction]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-partnership-tax-guide]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [law-firm-payroll-services]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-profit-extraction]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [law-firm-succession-planning-guide-uk]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [law-firm-valuation-guide-uk-solicitors]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [leap-accounting-integration-guide]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [llp-accounts-and-filing-requirements-uk]
+     /blog/partnership-and-llp-structure/llp-sa800-partnership-tax-return-uk
+     -> NO-FILE (/blog/partnership-and-llp-structure/llp-sa800-partnership-tax-return-uk)
+  [llp-employer-ni-2026]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [llp-member-taxation-guide-uk-law-firms]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [llp-vs-partnership-tax]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [partner-retirement-planning-guide-uk-law-firms]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [partner-retirement-planning-guide-uk-law-firms]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-accountant-birmingham]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-accountant-bristol]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-accountant-fees]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-accountant-london]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-accountant-near-me]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-accountant]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-client-account-reconciliation]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [solicitor-partnership-accounting-guide]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-practice-finance-options]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-practice-management-software]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-practice-sale-guide]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [solicitor-trust-accounting-guide]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [solicitor-vat-accounting-guide]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [sra-accountants-report]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [sra-accounts-rules-compliance-guide]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [vat-on-legal-services]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [vat-registration-solicitors]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [xero-for-solicitors]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+
+======================================================================
+SOFT (301-hop / self-loop) ISSUES: 2
+======================================================================
+  self-loops: 0
+  other 301-hops: 2 (links pointing at a redirect source)

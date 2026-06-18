@@ -1,15 +1,15 @@
 """
 Unified LLM provider wrappers.
 
-Both Anthropic Claude and DeepSeek are supported via a thin Provider interface.
-The per-site config picks which one to use. The user's decision for the
-consolidation is to standardise on DeepSeek across all 6 sites, with an
-optional Haiku-based verification pass for hallucination mitigation.
+Anthropic Claude is the sole approved provider estate-wide (model tiering
+rule 2026-06: Sonnet for blog writing/building, Opus for hardest
+reasoning/briefs). DeepSeek is BANNED; call_llm raises LLMError if
+provider="deepseek" is passed so misconfigured callers fail loudly rather
+than silently calling the banned API.
 
-Anthropic is kept as a viable provider for two reasons:
-  1. The verification pass uses Haiku (Anthropic).
-  2. If DeepSeek-quality regresses on a site, that site can flip provider via
-     its site_config without touching the rest of the codebase.
+call_deepseek is kept as a banned stub (raises LLMError unconditionally) so
+that any stale import elsewhere does not cause an ImportError at module load
+time, but will fail loudly at the call site.
 """
 from __future__ import annotations
 
@@ -31,12 +31,9 @@ class LLMError(RuntimeError):
 
 
 # ---------------------------------------------------------------------------
-# DeepSeek (default for all sites post-consolidation)
+# DeepSeek -- BANNED (stub kept so legacy imports in competitor/* do not
+# raise ImportError at module load time; calling it always raises LLMError)
 # ---------------------------------------------------------------------------
-
-DEEPSEEK_PRICE_PER_M_INPUT_USD = 0.27
-DEEPSEEK_PRICE_PER_M_OUTPUT_USD = 1.10
-
 
 def call_deepseek(
     *,
@@ -47,75 +44,19 @@ def call_deepseek(
     temperature: float = 0.3,
     json_mode: bool = False,
 ) -> LLMResult:
-    """Call DeepSeek chat completions API. OpenAI-compatible shape.
+    """Banned provider stub. DeepSeek is not permitted estate-wide (2026-06).
 
-    Args:
-        json_mode: if True, sets response_format={"type":"json_object"} which
-                   forces DeepSeek to return valid JSON. Use this for any prompt
-                   that expects a structured JSON response. The system prompt must
-                   explicitly mention JSON for this mode to work correctly.
+    Raises LLMError unconditionally so any caller that reaches this path fails
+    loudly instead of silently calling the banned API.
     """
-    import httpx
-
-    api_key = os.getenv("DEEPSEEK_API_KEY", "")
-    if not api_key:
-        raise LLMError("DEEPSEEK_API_KEY env var not set")
-
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "max_tokens": max_tokens,
-        "temperature": temperature,
-    }
-    if json_mode:
-        payload["response_format"] = {"type": "json_object"}
-
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
-
-    try:
-        r = httpx.post(
-            "https://api.deepseek.com/v1/chat/completions",
-            headers=headers,
-            json=payload,
-            timeout=120.0,
-        )
-    except httpx.HTTPError as exc:
-        raise LLMError(f"DeepSeek HTTP error: {exc}") from exc
-
-    if r.status_code >= 400:
-        raise LLMError(f"DeepSeek {r.status_code}: {r.text[:500]}")
-
-    data = r.json()
-    try:
-        text = data["choices"][0]["message"]["content"]
-    except (KeyError, IndexError) as exc:
-        raise LLMError(f"DeepSeek unexpected response shape: {data}") from exc
-
-    usage = data.get("usage", {})
-    input_tokens = usage.get("prompt_tokens", 0)
-    output_tokens = usage.get("completion_tokens", 0)
-    cost = (
-        input_tokens / 1_000_000 * DEEPSEEK_PRICE_PER_M_INPUT_USD
-        + output_tokens / 1_000_000 * DEEPSEEK_PRICE_PER_M_OUTPUT_USD
-    )
-
-    return LLMResult(
-        text=text,
-        input_tokens=input_tokens,
-        output_tokens=output_tokens,
-        cost_usd=cost,
-        model=model,
+    raise LLMError(
+        "DeepSeek is a banned provider (model tiering rule 2026-06). "
+        "Use provider='anthropic' with an approved Claude model."
     )
 
 
 # ---------------------------------------------------------------------------
-# Anthropic (used by Haiku verification pass; also available as backup provider)
+# Anthropic (sole approved provider; Sonnet for generation, Haiku for verify)
 # ---------------------------------------------------------------------------
 
 ANTHROPIC_PRICES_PER_M_USD = {
@@ -177,6 +118,9 @@ def call_anthropic(
 # Provider dispatch by name
 # ---------------------------------------------------------------------------
 
+_BANNED_PROVIDERS = frozenset({"deepseek"})
+
+
 def call_llm(
     *,
     provider: str,
@@ -186,14 +130,15 @@ def call_llm(
     max_tokens: int = 4096,
     temperature: float = 0.3,
 ) -> LLMResult:
-    """Dispatch to the named provider. Used by content_pipeline."""
-    if provider == "deepseek":
-        return call_deepseek(
-            system_prompt=system_prompt,
-            user_prompt=user_prompt,
-            model=model,
-            max_tokens=max_tokens,
-            temperature=temperature,
+    """Dispatch to the named provider. Used by content_pipeline.
+
+    Approved providers: 'anthropic'.
+    Banned providers: 'deepseek' (raises LLMError immediately).
+    """
+    if provider in _BANNED_PROVIDERS:
+        raise LLMError(
+            f"Provider {provider!r} is banned (model tiering rule 2026-06). "
+            "Set llm_provider='anthropic' in the site config."
         )
     if provider == "anthropic":
         return call_anthropic(

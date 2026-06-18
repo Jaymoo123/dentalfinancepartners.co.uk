@@ -22,7 +22,7 @@ faqs:
 - question: Can I get Business Asset Disposal Relief on an earn-out payment?
   answer: Yes, if the earn-out is structured as deferred consideration for your shares and you met the BADR conditions (5% shareholding, officer or employee, two-year holding period) at the date of disposal. The relief applies to the total gain, including the deferred element, even though you receive the cash later. You do not need to re-qualify for BADR on each earn-out payment.
 - question: What happens if HMRC decides my earn-out is employment income?
-  answer: You pay income tax at your marginal rate (40% or 45%) plus Class 1 National Insurance at 2% on each payment. The buyer also pays employer NI at 13.8%. Your net proceeds can be significantly lower than if the earn-out was treated as capital gain. You also lose the ability to use the annual CGT exemption or BADR on those payments.
+  answer: You pay income tax at your marginal rate (40% or 45%) plus Class 1 National Insurance at 2% on each payment. The buyer also pays employer NI at 15%. Your net proceeds can be significantly lower than if the earn-out was treated as capital gain. You also lose the ability to use the annual CGT exemption or BADR on those payments.
 - question: How do I structure an earn-out to avoid income tax treatment?
   answer: Structure the earn-out as deferred consideration for the shares you sold, not as a bonus, consultancy fee, or dividend. Make the earn-out conditional only on the agency's financial performance, not on your continued employment. Use a loan note or contractual right attached to the shares. Get the documentation reviewed by a tax specialist before you sign.
 - question: What is the two-year rule for BADR and how does it affect earn-outs?
@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Earn-out payments structured as deferred consideration for shares attract Capital Gains Tax at 14% with BADR, not income tax at 45%.
+- Earn-out payments structured as deferred consideration for shares attract Capital Gains Tax at 18% with BADR, not income tax at 45%.
 - If HMRC recharacterises your earn-out as employment income, the total tax burden can exceed 50% including income tax and National Insurance.
 - To qualify for BADR on deferred consideration, you must have held at least 5% shares and been an employee for two years by the completion date.
 - Under TCGA 1992 s 280, you can elect to pay CGT on an instalment basis when receiving deferred consideration from an earn-out.
@@ -42,15 +42,15 @@ keyTakeaways:
 
 <p>For agency acquisitions, earn-outs are standard. Buyers want protection against the risk that the founder leaves and the business drops off. You want a higher price than the buyer will pay upfront. An earn-out bridges that gap.</p>
 
-<p>But here is where it gets complicated. The tax treatment of your earn-out payments depends entirely on how the deal is structured. Get it wrong and you could pay 45% income tax on money you thought was a capital gain taxed at 14%. That difference, tens or hundreds of thousands of pounds, matters.</p>
+<p>But here is where it gets complicated. The tax treatment of your earn-out payments depends entirely on how the deal is structured. Get it wrong and you could pay 45% income tax on money you thought was a capital gain taxed at 18%. That difference, tens or hundreds of thousands of pounds, matters.</p>
 
 <h2>The Core Tax Distinction: Capital vs Income</h2>
 
 <p>HMRC looks at earn-out payments and asks one question: is this consideration for the shares you sold, or is it payment for ongoing services you provide after the sale?</p>
 
-<p>If it is consideration for shares, you pay Capital Gains Tax (CGT) on the gain. If you qualify for Business Asset Disposal Relief (BADR), that rate is 14% on the first £1m of lifetime gains. Above that, the standard CGT rate for residential property is 24% and for other assets including shares it is 20%.</p>
+<p>If it is consideration for shares, you pay Capital Gains Tax (CGT) on the gain. If you qualify for Business Asset Disposal Relief (BADR), that rate is 18% on the first £1m of lifetime gains. Above that, the standard CGT rate for residential property is 24% and for other assets including shares it is 20%.</p>
 
-<p>If HMRC recharacterises your earn-out as employment income, you pay income tax at your marginal rate, 40% or 45%, plus Class 1 National Insurance at 2% (employee) and 13.8% (employer). The total tax burden can exceed 50%.</p>
+<p>If HMRC recharacterises your earn-out as employment income, you pay income tax at your marginal rate, 40% or 45%, plus Class 1 National Insurance at 2% (employee) and 15% (employer). The total tax burden can exceed 50%.</p>
 
 <p>This is not a theoretical risk. I have seen it happen to agency founders who signed standard buyer-drafted earn-out agreements without taking separate tax advice.</p>
 
@@ -86,7 +86,7 @@ keyTakeaways:
 <li><strong>Is the earn-out linked to your ongoing employment?</strong> If you must stay employed to receive it, HMRC will argue it is employment income.</li>
 <li><strong>Is the earn-out calculated on your personal performance?</strong> If it depends on your individual billable hours or new business targets, it looks like remuneration.</li>
 <li><strong>Does the buyer have discretion?</strong> If the buyer can reduce or cancel the earn-out at will, it is harder to argue it is fixed consideration for shares.</li>
-<li><strong>Is the earn-out paid as a dividend?</strong> Dividends are distributions of profit, not consideration for shares. They are taxed at dividend rates (8.75%, 33.75%, or 39.35%) but do not qualify for BADR.</li>
+<li><strong>Is the earn-out paid as a dividend?</strong> Dividends are distributions of profit, not consideration for shares. They are taxed at dividend rates (10.75%, 35.75%, or 39.35%) but do not qualify for BADR.</li>
 </ul>
 
 <p>A clean structure looks like this: you sell your shares on day one. The buyer issues a loan note or deferred consideration agreement that pays out on specified dates, conditional only on the agency's financial performance, not on your continued employment. You can leave the business the next day and still receive the earn-out.</p>
@@ -97,11 +97,11 @@ keyTakeaways:
 
 <p><strong>Founder A</strong> sells his 12-person digital agency for £1.2 million. The deal is structured as £700,000 upfront and £500,000 earn-out over three years, based on EBITDA targets. He sells his shares on completion. The earn-out is a contractual right attached to the shares. He resigns as director the same day.</p>
 
-<p>His total gain (after base cost and annual exemption) is £1.15 million. He qualifies for BADR on the full amount because he held the shares for four years. tax at 14%: £115,000. Net proceeds: £1,085,000.</p>
+<p>His total gain (after base cost and annual exemption) is £1.15 million. He qualifies for BADR on the full amount because he held the shares for four years. tax at 18%: £115,000. Net proceeds: £1,085,000.</p>
 
 <p><strong>Founder B</strong> sells a similar agency for the same price. But the buyer requires him to stay as managing director for three years. The earn-out is structured as a bonus: 20% of annual net profit above £200,000. He receives £150,000 in year one, £180,000 in year two, and £170,000 in year three.</p>
 
-<p>HMRC treats the earn-out as employment income. He pays 40% income tax plus 2% NI on each payment. Total tax on the earn-out: approximately £210,000. On the upfront £700,000 share sale, he pays 14% BADR: £70,000. Combined tax: £280,000. Net proceeds: £920,000.</p>
+<p>HMRC treats the earn-out as employment income. He pays 40% income tax plus 2% NI on each payment. Total tax on the earn-out: approximately £210,000. On the upfront £700,000 share sale, he pays 18% BADR: £70,000. Combined tax: £280,000. Net proceeds: £920,000.</p>
 
 <p>Founder B pays £165,000 more tax than Founder A, on the same total deal value. That is the cost of a poorly structured earn-out.</p>
 
@@ -131,7 +131,7 @@ keyTakeaways:
 
 <h2>Employment Taxes on Earn-Outs: The Hidden Risk</h2>
 
-<p>If HMRC successfully argues that your earn-out is employment income, the consequences go beyond your personal tax bill. The buyer (your former agency, now owned by the acquirer) is liable for employer NI at 13.8% on the earn-out payments. They also need to operate PAYE and report the payments on your P60.</p>
+<p>If HMRC successfully argues that your earn-out is employment income, the consequences go beyond your personal tax bill. The buyer (your former agency, now owned by the acquirer) is liable for employer NI at 15% on the earn-out payments. They also need to operate PAYE and report the payments on your P60.</p>
 
 <p>Most buyers will resist this because it increases their costs. But if the earn-out is written as a bonus or profit share linked to your personal performance, they have no choice. HMRC can and does audit these arrangements.</p>
 
@@ -143,7 +143,7 @@ keyTakeaways:
 
 <p>Some buyers propose a dividend earn-out. You retain a small shareholding post-completion. The buyer declares dividends each year, and your share of those dividends forms the earn-out.</p>
 
-<p>On the surface, this looks attractive. Dividends are taxed at lower rates than employment income. You pay 33.75% at the higher rate, compared to 40% income tax plus NI.</p>
+<p>On the surface, this looks attractive. Dividends are taxed at lower rates than employment income. You pay 35.75% at the higher rate, compared to 40% income tax plus NI.</p>
 
 <p>But there are problems. First, dividends do not qualify for BADR. You pay CGT on the share sale at 10% (if eligible) but the dividend earn-out is taxed as dividend income. Second, dividends can only be paid from distributable profits. If the agency has a bad year, there may be no profits to distribute, and you receive nothing, even if the underlying business is performing well on an EBITDA basis.</p>
 
@@ -157,7 +157,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Get tax advice on the draft structure.</strong> Ask your accountant, ideally one who understands agency exits, to review the term sheet. Our ICAEW qualified team at Agency Founder Finance sees these structures regularly and can flag issues early.</li>
-<li><strong>Model the post-tax outcome.</strong> Work out what you actually keep after tax under different earn-out scenarios. Use real numbers, not round figures. A £500,000 earn-out taxed at 14% is £450,000 net. The same earn-out taxed at 42% (40% income tax plus 2% NI) is £290,000. That £160,000 difference is real money.</li>
+<li><strong>Model the post-tax outcome.</strong> Work out what you actually keep after tax under different earn-out scenarios. Use real numbers, not round figures. A £500,000 earn-out taxed at 18% is £450,000 net. The same earn-out taxed at 42% (40% income tax plus 2% NI) is £290,000. That £160,000 difference is real money.</li>
 <li><strong>Negotiate the earn-out terms before you agree the headline price.</strong> Once the price is fixed, buyers have less incentive to improve the structure. Push for capital treatment as part of the initial negotiation.</li>
 <li><strong>Check the two-year BADR holding period.</strong> If you are close to the threshold, delay completion or restructure the deal to qualify.</li>
 <li><strong>Consider a share-for-share exchange.</strong> If the buyer is a company, you can exchange your shares for shares in the acquirer. This defers CGT entirely until you sell the new shares. Earn-outs can be structured within this framework.</li>

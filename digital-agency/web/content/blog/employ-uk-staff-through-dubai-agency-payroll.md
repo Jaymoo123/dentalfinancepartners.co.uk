@@ -33,7 +33,7 @@ keyTakeaways:
 - If your employee lives and works in the UK, you must operate UK payroll regardless of where your company is registered.
 - 'HMRC applies three tests to determine UK payroll obligations: residence, work location, and employer presence.'
 - Employing UK staff can create a UK permanent establishment, exposing your Dubai agency to UK corporation tax.
-- UK employer obligations include registering for PAYE, deducting tax and NI, paying 13.8% employer NI, and auto-enrolment pensions.
+- UK employer obligations include registering for PAYE, deducting tax and NI, paying 15% employer NI, and auto-enrolment pensions.
 - Engaging UK contractors carries IR35 risk if HMRC deems them employees for tax purposes.
 ---
 <h2>The Short Answer: Almost Certainly Not</h2>
@@ -66,7 +66,7 @@ keyTakeaways:
 <ul>
 <li><strong>Register as an employer with HMRC</strong>, you need an employer PAYE reference number</li>
 <li><strong>Operate payroll</strong>, deduct income tax and National Insurance from each payslip</li>
-<li><strong>Pay employer National Insurance</strong>, 13.8% on earnings above the secondary threshold (£9,100 for 2025/26)</li>
+<li><strong>Pay employer National Insurance</strong>, 15% on earnings above the secondary threshold (£5,000 for 2025/26)</li>
 <li><strong>Issue payslips and P60s</strong>, standard UK employment documentation</li>
 <li><strong>Report in real time</strong>, submit Full Payment Submission (FPS) data to HMRC on or before each payday</li>
 <li><strong>Enrol eligible staff in a workplace pension</strong>, auto-enrolment applies, with minimum employer contributions of 3% of qualifying earnings</li>

@@ -60,9 +60,9 @@ keyTakeaways:
 <p>If the answer is "we do your year-end accounts and that's it," you are paying for compliance, not advice. That might be fine at £150 per month. But if you are paying £400+ per month, you should expect cash flow conversations as standard.</p>
 
 <h2>4. "What Is the Optimal Salary and Dividend Split for My Situation?"</h2>
-<p>Every agency founder should know the standard model: take a salary up to the primary NI threshold (£12,570 for 2025/26) and take the rest as dividends. But that is the starting point, not the answer.</p>
+<p>Every agency founder should know the standard model: take a salary up to the primary NI threshold (£12,570 for 2026/27) and take the rest as dividends. But that is the starting point, not the answer.</p>
 <p>The right answer depends on your profit level, whether you have other income, and your long-term plans. If you are a higher-rate taxpayer with £80k of profit, the optimal split is different from someone with £200k of profit who wants to extract every penny.</p>
-<p>Ask your potential accountant to walk through the numbers for your specific situation. They should be able to tell you the dividend tax rates (8.75% basic, 33.75% higher, 39.35% additional) and the £500 dividend allowance without looking it up. They should know that the dividend allowance dropped from £2,000 to £1,000 to £500 over the last two tax years, and understand why that matters for your planning.</p>
+<p>Ask your potential accountant to walk through the numbers for your specific situation. They should be able to tell you the dividend tax rates (10.75% basic, 35.75% higher, 39.35% additional) and the £500 dividend allowance without looking it up. They should know that the dividend allowance dropped from £2,000 to £1,000 to £500 over the last two tax years, and understand why that matters for your planning.</p>
 <p>For more detail on this specific topic, see our guide on <a href="/blog/salary-and-dividends">salary and dividends for agency founders</a>.</p>
 
 <h2>5. "Do You Advise on Agency Structure?"</h2>
@@ -79,7 +79,7 @@ keyTakeaways:
 <h2>6. "How Do You Help Agencies Prepare for Exit?"</h2>
 <p>If you plan to sell your agency one day, your accountant needs to be thinking about that from year one, not year five. The decisions you make about profit extraction, asset ownership, and share structure in the early years can cost you tens of thousands in additional tax when you sell.</p>
 <p>Ask your potential accountant about their experience with agency exits. Have they helped clients through a trade sale? Do they understand how earn-outs work? Can they explain the difference between a share sale and an asset sale from a tax perspective?</p>
-<p>Ask specifically about BADR (Business Asset Disposal Relief). The lifetime limit is £1 million of gains at 14% CGT. To qualify, you must hold at least 5% of the shares and be an officer or employee of the company for at least 2 years before disposal. Your accountant should be able to tell you whether your current structure qualifies, and what changes might jeopardise that relief.</p>
+<p>Ask specifically about BADR (Business Asset Disposal Relief). The lifetime limit is £1 million of gains at 18% CGT. To qualify, you must hold at least 5% of the shares and be an officer or employee of the company for at least 2 years before disposal. Your accountant should be able to tell you whether your current structure qualifies, and what changes might jeopardise that relief.</p>
 <p>We cover this in more detail in our <a href="/blog/growth-and-exit">growth and exit planning articles</a>.</p>
 
 <h2>7. "What Software Do You Recommend and Why?"</h2>

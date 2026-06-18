@@ -44,10 +44,15 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-slate-700">
-          <p className="text-xs leading-relaxed text-slate-400">
-            © {year} {siteConfig.legalName}. Registered in England and Wales.
+        <div className="mt-10 pt-6 border-t border-slate-700 space-y-4">
+          <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
+            {siteConfig.company.legalDisclosure}
           </p>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs leading-relaxed text-slate-400">
+              &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,0 +1,8 @@
+SDK: useInViewOnce as callback ref (exposure fires for late-mounting elements)
+
+Found by the G2 live exposure probe: the effect-based hook looked for its
+element only at component mount, so an experiment surface rendered after
+client-side variant resolution never recorded exposure. Callback ref attaches
+the observer whenever the element appears.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

@@ -22,7 +22,7 @@ export function buildService({
   path,
   serviceType,
   areaServed = "United Kingdom",
-  audience = "UK dentists, dental practice owners and dental associates",
+  audience = "UK solicitors, law firm partners and legal practitioners",
   category = "Accounting Services",
 }: ServiceInput): SchemaThing {
   return {

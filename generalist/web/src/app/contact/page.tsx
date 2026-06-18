@@ -35,17 +35,7 @@ export default function ContactPage() {
       "@type": "Organization",
       "@id": `${siteConfig.url}#organization`,
       name: siteConfig.name,
-      email: siteConfig.contact.email,
-      telephone: siteConfig.contact.phone,
       url: siteConfig.url,
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "customer service",
-        email: siteConfig.contact.email,
-        telephone: siteConfig.contact.phone,
-        areaServed: "GB",
-        availableLanguage: "en",
-      },
     },
   };
 
@@ -94,20 +84,8 @@ export default function ContactPage() {
                 </p>
                 <dl className="space-y-3 text-sm">
                   <div className="grid grid-cols-[5rem_1fr] gap-2">
-                    <dt className="text-neutral-500">Email</dt>
-                    <dd>
-                      <a href={`mailto:${siteConfig.contact.email}`} className="text-neutral-900 hover:text-orange-600 underline underline-offset-4">
-                        {siteConfig.contact.email}
-                      </a>
-                    </dd>
-                  </div>
-                  <div className="grid grid-cols-[5rem_1fr] gap-2">
-                    <dt className="text-neutral-500">Phone</dt>
-                    <dd>
-                      <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`} className="text-neutral-900 hover:text-orange-600 underline underline-offset-4">
-                        {siteConfig.contact.phone}
-                      </a>
-                    </dd>
+                    <dt className="text-neutral-500">Enquiries</dt>
+                    <dd className="text-neutral-900">Use the form on this page and an accountant will reply within one working day.</dd>
                   </div>
                 </dl>
               </div>

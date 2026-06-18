@@ -1,9 +1,9 @@
-# Brief: gp-practice-income-pcse-statement-reconciliation
+﻿# Brief: gp-practice-income-pcse-statement-reconciliation
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster C (Other NHS and practice income), pick C3
 **Source file (to be created):** `Medical/web/content/blog/gp-practice-income-pcse-statement-reconciliation.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-practice-income-pcse-statement-reconciliation
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-practice-income-pcse-statement-reconciliation
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income; core funding via the Global Sum weighted by Carr-Hill, plus QOF, enhanced services and PCN/ARRS; the GMS Statement of Financial Entitlements governs GMS; no single national per-patient value, figures uplift annually; partner income is profit share), with cross-refs to §1 (partner taxed on profit share) and a light §4 cross-ref for premises/notional-rent payments appearing on the statement.
 

@@ -35,11 +35,16 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-slate-700 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs leading-relaxed text-slate-400">
-            © {year} {siteConfig.legalName}. Registered in England and Wales.
+        <div className="mt-10 pt-6 border-t border-slate-700 space-y-4">
+          <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
+            {siteConfig.company.legalDisclosure}
           </p>
-          <ConsentToggle className="text-xs text-slate-400 underline hover:text-emerald-400 hover:no-underline" />
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs leading-relaxed text-slate-400">
+              © {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
+            </p>
+            <ConsentToggle className="text-xs text-slate-400 underline hover:text-emerald-400 hover:no-underline" />
+          </div>
         </div>
       </div>
     </footer>

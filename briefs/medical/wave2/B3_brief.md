@@ -1,9 +1,9 @@
-# Brief: pcn-clinical-director-payments-tax
+﻿# Brief: pcn-clinical-director-payments-tax
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster B (PCN and ARRS), pick B3
 **Source file (to be created):** `Medical/web/content/blog/pcn-clinical-director-payments-tax.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/pcn-clinical-director-payments-tax
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/pcn-clinical-director-payments-tax
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (PCN / Network Contract DES funding; clinical director and leadership funding now within core PCN funding) and §2 (NHS Pension Scheme, including §2.C practitioner vs officer pensionable pay and the rule that company/dividend income is not pensionable), with cross-refs to §1 (employment status follows substance, partner profit share), §1.A (PSC / IR35) and §6 (VAT on management work, light touch).
 

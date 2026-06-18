@@ -31,7 +31,7 @@ keyTakeaways:
 - A UAE free zone company offers zero corporation and personal income tax, but UK tax charges can arise if you remain UK resident.
 - To avoid UK tax on UAE income, you must become non-UK resident, typically by spending fewer than 16 days in the UK per tax year.
 - HMRC requires genuine economic substance in the UAE, including a physical office, local bank account, and active management from the UAE.
-- UK dividend tax rates of 8.75% to 39.35% do not apply if you are non-UK resident and the UAE company is your tax residence.
+- UK dividend tax rates of 10.75% to 39.35% do not apply if you are non-UK resident and the UAE company is your tax residence.
 - The UAE introduced a 9% corporate tax from June 2023, but free zone companies meeting substance conditions may still qualify for 0% tax.
 ---
 <p>If you run a UK agency and your client base is shifting international, or you are spending significant time in the Middle East, a UAE free zone company might be on your radar. The pitch is attractive: zero corporation tax, zero personal income tax, and a base in Dubai or Abu Dhabi that signals credibility to clients in the region.</p>
@@ -67,9 +67,9 @@ keyTakeaways:
 
 <p><strong>Time spent in the UAE.</strong> Some founders already spend three to six months per year in Dubai for lifestyle, family, or health reasons. If you are there that much anyway, structuring your agency around a UAE entity makes practical sense.</p>
 
-<p><strong>Tax efficiency on dividends.</strong> UK dividend tax rates are 8.75% at basic rate, 33.75% at higher rate, and 39.35% at additional rate. If you are taking six-figure dividends from your UK agency, the tax bill is material. A UAE structure removes that layer entirely, provided you are genuinely non-UK resident and operating from the UAE.</p>
+<p><strong>Tax efficiency on dividends.</strong> UK dividend tax rates are 10.75% at basic rate, 35.75% at higher rate, and 39.35% at additional rate. If you are taking six-figure dividends from your UK agency, the tax bill is material. A UAE structure removes that layer entirely, provided you are genuinely non-UK resident and operating from the UAE.</p>
 
-<p><strong>Exit planning.</strong> Selling a UK company triggers capital gains tax at 14% under BADR (up to £1m) or 20% above that. Selling a UAE free zone company can be structured differently, and some founders use a UAE holding company as part of a wider exit strategy.</p>
+<p><strong>Exit planning.</strong> Selling a UK company triggers capital gains tax at 18% under BADR (up to £1m) or 20% above that. Selling a UAE free zone company can be structured differently, and some founders use a UAE holding company as part of a wider exit strategy.</p>
 
 <p>These are legitimate reasons. But they all depend on one thing: that you actually move your tax residence and your agency's management to the UAE. You cannot keep living in Shoreditch, commuting to a WeWork in Soho, and claim your company is run from a flexi-desk in Dubai Internet City. HMRC will see through that.</p>
 

@@ -1,9 +1,9 @@
-# Brief: arrs-reimbursement-employing-pcn-staff-tax
+﻿# Brief: arrs-reimbursement-employing-pcn-staff-tax
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster B (PCN and ARRS), pick B2
 **Source file (to be created):** `Medical/web/content/blog/arrs-reimbursement-employing-pcn-staff-tax.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/arrs-reimbursement-employing-pcn-staff-tax
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/arrs-reimbursement-employing-pcn-staff-tax
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (PCN / Network Contract DES funding including the Additional Roles Reimbursement Scheme, ARRS) and §8 (employing staff, payroll, employer NIC and the Employment Allowance), with cross-refs to §6 (VAT: medical care exemption, the £90,000 registration threshold, partial exemption) and §3 (PCN money is practice/network trading income).
 

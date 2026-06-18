@@ -2,7 +2,7 @@
   "niche_id": "medical",
   "display_name": "Medical Accountants UK",
   "legal_name": "Medical Accountants UK Ltd",
-  "domain": "www.medicalaccountantsuk.co.uk",
+  "domain": "www.medicalaccounts.co.uk",
   "tagline": "Specialist accounting for UK medical professionals",
   "description": "Expert accountants for GPs, consultants, and medical practices. NHS pension advice, locum tax, private practice incorporation, and medical expense claims. Trusted by doctors across the UK.",
   "brand": {
@@ -11,7 +11,7 @@
     "publisher_logo_url": "/og-placeholder.svg"
   },
   "contact": {
-    "email": "hello@medicalaccountantsuk.co.uk",
+    "email": "hello@medicalaccounts.co.uk",
     "phone": "+44 20 7946 0482"
   },
   "navigation": [

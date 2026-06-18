@@ -5,7 +5,6 @@ import {
   focusRing,
   siteContainerLg,
 } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
 import {
   FileCheck,
   Building2,
@@ -154,12 +153,12 @@ export default function ServicesPage() {
             <Link href="/contact" className={btnPrimary}>
               Book a free call
             </Link>
-            <a
-              href={`mailto:${siteConfig.contact.email}`}
+            <Link
+              href="/contact"
               className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900 transition-colors ${focusRing}`}
             >
-              Email us directly
-            </a>
+              Get in touch
+            </Link>
           </div>
           <p className="mt-10 text-sm text-neutral-500">
             We work with all types of UK contractors.{" "}

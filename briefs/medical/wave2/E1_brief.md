@@ -1,9 +1,9 @@
-# Brief: buying-into-gp-partnership-capital-parity-explained
+﻿# Brief: buying-into-gp-partnership-capital-parity-explained
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster E (Joining a GP partnership), pick E1
 **Source file (to be created):** `Medical/web/content/blog/buying-into-gp-partnership-capital-parity-explained.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/buying-into-gp-partnership-capital-parity-explained
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/buying-into-gp-partnership-capital-parity-explained
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §4 (what changes hands on a partner's entry: a share of tangible assets and any owned premises, recorded through the partnership capital accounts; NHS goodwill cannot be sold; premises often in a separate property partnership/LLP; notional/cost rent; last-man-standing), with §1 (GP partner is self-employed; taxed on profit share, not drawings; partnership taxation under ITTOIA 2005).
 

@@ -21,7 +21,7 @@ const SITES = {
   property:   { blogDir: 'Property/web/content/blog',       domain: 'propertytaxpartners.co.uk',        hp: 'docs/property/house_positions.md',   adviser: 'UK property tax accountant' },
   dentists:   { blogDir: 'Dentists/web/content/blog',       domain: 'www.dentalfinancepartners.co.uk',   hp: 'docs/dentists/house_positions.md',   adviser: 'UK dental practice and associate tax accountant' },
   solicitors: { blogDir: 'Solicitors/web/content/blog',     domain: 'www.accountsforlawyers.co.uk',      hp: 'docs/solicitors/house_positions.md', adviser: 'UK solicitor and law-firm accountant' },
-  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccountantsuk.co.uk',    hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
+  medical:    { blogDir: 'Medical/web/content/blog',        domain: 'www.medicalaccounts.co.uk',         hp: 'docs/medical/house_positions.md',    adviser: 'UK medical professional and GP practice accountant', flatBlog: true },
   generalist: { blogDir: 'generalist/web/content/blog',     domain: 'www.hollowaydavies.co.uk',          hp: 'docs/generalist/house_positions.md', adviser: 'UK general practice accountant for owner-managed businesses' },
   agency:     { blogDir: 'digital-agency/web/content/blog', domain: 'www.agencyfounderfinance.co.uk',    hp: 'docs/agency/house_positions.md',     adviser: 'UK accountant for digital and creative agency founders' },
 }

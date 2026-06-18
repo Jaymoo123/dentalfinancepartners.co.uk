@@ -111,7 +111,7 @@ keyTakeaways:
 <p>Your agency’s registered address with Companies House should not be your UK bank’s address. If you are using a UK virtual office, consider whether that is appropriate for your new residence status. HMRC can use your Companies House address as evidence of UK presence.</p>
 
 <h3>5. Review Your Director’s Loan Account</h3>
-<p>If you have an outstanding director’s loan account balance when you leave, HMRC will look at it. If the loan is not repaid within 9 months of your year-end, the company faces a S455 tax charge at 33.75%. More importantly, an outstanding loan can be used as evidence that you still have a financial interest in the UK.</p>
+<p>If you have an outstanding director’s loan account balance when you leave, HMRC will look at it. If the loan is not repaid within 9 months of your year-end, the company faces a S455 tax charge at 35.75%. More importantly, an outstanding loan can be used as evidence that you still have a financial interest in the UK.</p>
 
 <h3>6. Consider a Holding Company Structure</h3>
 <p>If you own multiple agencies or have significant retained profits, a holding company structure can separate your UK trading activities from your non-UK assets. This is a complex area and you need specialist advice, but it can protect your non-UK position. We cover this in more detail on our <a href="/blog/incorporation-and-structure">incorporation and structure page</a>.</p>

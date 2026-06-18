@@ -1,0 +1,3 @@
+Agency acceptance + generalist LD-09 back-port (real consent checkbox on SignupForm)
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

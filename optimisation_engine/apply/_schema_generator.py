@@ -32,7 +32,7 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
     "agency": {
         "organization": {
             "@type": "AccountingService",
-            "name": "Agency Founder Finance Ltd",
+            "name": "Agency Founder Finance",
             "url": "https://www.agencyfounderfinance.co.uk",
             "areaServed": ["United Kingdom", "United Arab Emirates"],
             "knowsAbout": [
@@ -61,7 +61,7 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
     "property": {
         "organization": {
             "@type": "AccountingService",
-            "name": "Property Tax Partners Ltd",
+            "name": "Property Tax Partners",
             "url": "https://www.propertytaxpartners.co.uk",
             "areaServed": "United Kingdom",
             "knowsAbout": [
@@ -90,7 +90,7 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
     "dentists": {
         "organization": {
             "@type": "AccountingService",
-            "name": "Dental Finance Partners Ltd",
+            "name": "Dental Finance Partners",
             "url": "https://www.dentalfinancepartners.co.uk",
             "areaServed": "United Kingdom",
             "knowsAbout": [
@@ -122,7 +122,7 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
     "generalist": {
         "organization": {
             "@type": "AccountingService",
-            "name": "Holloway Davies Ltd",
+            "name": "Holloway Davies",
             "url": "https://www.hollowaydavies.co.uk",
             "areaServed": "United Kingdom",
             "knowsAbout": [

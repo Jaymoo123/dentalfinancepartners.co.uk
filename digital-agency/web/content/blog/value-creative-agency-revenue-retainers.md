@@ -165,7 +165,7 @@ keyTakeaways:
 
 <h2>Tax Implications of Selling Your Agency</h2>
 
-<p>When you sell your agency, you will likely pay Capital Gains Tax on the profit. If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% on the first £1m of lifetime gains. Above that, it's 20%.</p>
+<p>When you sell your agency, you will likely pay Capital Gains Tax on the profit. If you qualify for Business Asset Disposal Relief (BADR), the rate is 18% on the first £1m of lifetime gains. Above that, it's 20%.</p>
 
 <p>To qualify for BADR, you must have held at least 5% of the shares and been an officer or employee of the company for at least 2 years before the sale. If you are planning an exit, structure your shareholding now. Do not wait until the sale is imminent.</p>
 

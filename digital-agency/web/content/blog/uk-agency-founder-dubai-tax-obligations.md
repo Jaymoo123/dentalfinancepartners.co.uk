@@ -84,7 +84,7 @@ keyTakeaways:
 
 <p>But there is a catch. You must actually be a UAE tax resident. That means holding a UAE residence visa, spending enough time in the UAE to meet their residency criteria, and having your "centre of vital interests" there. A UAE residence visa alone is not enough if you spend most of your time travelling or working from the UK.</p>
 
-<p>If HMRC challenges your residency and decides you are still UK-resident, your dividends are taxed at the usual dividend rates: 8.75% basic rate, 33.75% higher rate, 39.35% additional rate. The £500 dividend allowance still applies, but that is a drop in the ocean for most agency profits.</p>
+<p>If HMRC challenges your residency and decides you are still UK-resident, your dividends are taxed at the usual dividend rates: 10.75% basic rate, 35.75% higher rate, 39.35% additional rate. The £500 dividend allowance still applies, but that is a drop in the ocean for most agency profits.</p>
 
 <p>If you take a salary from your UK company while living in Dubai, that salary is subject to UK PAYE and National Insurance, because the work is performed for a UK company. Some founders try to avoid this by paying themselves only in dividends. That works for tax efficiency, but only if you genuinely meet the non-residency tests.</p>
 
@@ -92,7 +92,7 @@ keyTakeaways:
 
 <p>When you move to Dubai, the temptation is to take money out of your UK company as you need it. You might draw funds for personal expenses, a deposit on a Dubai apartment, or school fees. If you do not process those as formal dividends or salary, they sit in a director's loan account.</p>
 
-<p>If your director's loan account is overdrawn by more than £10,000 at any point in the company's financial year, and you do not repay it within nine months of the year end, the company pays Section 455 tax at 33.75%. That is a charge on the company, not on you personally. It is refundable when you repay the loan, but it ties up cash that could be used for agency growth.</p>
+<p>If your director's loan account is overdrawn by more than £10,000 at any point in the company's financial year, and you do not repay it within nine months of the year end, the company pays Section 455 tax at 35.75%. That is a charge on the company, not on you personally. It is refundable when you repay the loan, but it ties up cash that could be used for agency growth.</p>
 
 <p>For a UK agency founder based in Dubai, the director's loan account needs particular attention. If you are taking drawings in Dubai while the company's accounting records are in the UK, it is easy to lose track of the balance. Set up a quarterly review with your accountant. Do not let it drift.</p>
 

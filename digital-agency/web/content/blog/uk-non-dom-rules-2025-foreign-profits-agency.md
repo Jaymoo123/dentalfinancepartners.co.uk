@@ -102,7 +102,7 @@ keyTakeaways:
 
 <h2>The Interaction with Agency Structures and BADR</h2>
 
-<p>There is another layer to consider. If you relocate outside the UK and sell your agency shares later, the UK's Business Asset Disposal Relief (BADR) may still apply. BADR gives a 14% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But the relief requires you to be an officer or employee of the company and hold 5% of the shares for at least 2 years.</p>
+<p>There is another layer to consider. If you relocate outside the UK and sell your agency shares later, the UK's Business Asset Disposal Relief (BADR) may still apply. BADR gives a 18% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But the relief requires you to be an officer or employee of the company and hold 5% of the shares for at least 2 years.</p>
 
 <p>If you leave the UK and become non-resident, you may still qualify for BADR if you meet the conditions at the time of sale. But the interaction between non-residence and BADR is complex. You need to plan the sale timing carefully.</p>
 

@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { EmbedAutoResize } from "@accounting-network/web-shared/tools/embed/EmbedAutoResize";
+import { EmbedAttribution } from "@accounting-network/web-shared/tools/embed/EmbedAttribution";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
+import { siteConfig } from "@/config/site";
 
 export const dynamicParams = false;
 
@@ -28,6 +30,12 @@ export default async function EmbedPage({
       <EmbedAutoResize messageType="hd-embed-height" />
       {/* slug only — the function-bearing tool config resolves client-side */}
       <CalculatorClient slug={slug} variant="embed" />
+      <EmbedAttribution
+        siteName={siteConfig.name}
+        siteUrl={siteConfig.url}
+        toolSlug={slug}
+        leadCtaLabel="Get accounting advice"
+      />
     </div>
   );
 }

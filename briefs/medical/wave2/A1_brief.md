@@ -1,9 +1,9 @@
-# Brief: how-gms-funding-works-global-sum-carr-hill-explained
+﻿# Brief: how-gms-funding-works-global-sum-carr-hill-explained
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster A (GMS core funding), pick A1
 **Source file (to be created):** `Medical/web/content/blog/how-gms-funding-works-global-sum-carr-hill-explained.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/how-gms-funding-works-global-sum-carr-hill-explained
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/how-gms-funding-works-global-sum-carr-hill-explained
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §3 (NHS GP contracts and practice income), with cross-refs to §1 (partner taxed on profit share not drawings), §4 (NHS goodwill cannot be sold), §2.C (pensioning the profit) and §6 (NHS income outside the scope of VAT).
 

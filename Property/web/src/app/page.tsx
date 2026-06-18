@@ -225,8 +225,7 @@ export default function HomePage() {
     url: siteConfig.url,
     logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     image: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    telephone: siteConfig.contact.phone,
-    email: siteConfig.contact.email,
+    // No public telephone advertised: enquiries go via the on-site /contact form.
     areaServed: { "@type": "Country", name: "United Kingdom" },
     priceRange: "££",
     parentOrganization: { "@id": `${siteConfig.url}#organization` },

@@ -166,7 +166,7 @@ VAT collected but not yet paid to HMRC. If you use the Flat Rate Scheme, this ac
 Corporation tax accrued but not yet paid. Your accountant will post journals here at year-end.</p>
 
 <p><strong>2500, Directors' Loan Account</strong><br>
-If you take money from the company that is not salary or dividends, it goes here. Keep this account clean. Loans over £10k or not repaid within 9 months of year-end trigger a 33.75% S455 tax charge.</p>
+If you take money from the company that is not salary or dividends, it goes here. Keep this account clean. Loans over £10k or not repaid within 9 months of year-end trigger a 35.75% S455 tax charge.</p>
 
 <p><strong>3000, Retained Earnings</strong><br>
 Accumulated profits from previous years. This is where your P&L profit lands at year-end.</p>

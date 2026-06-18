@@ -117,7 +117,7 @@ keyTakeaways:
 
 <h2>Protecting BADR in a Group Structure</h2>
 
-<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) gives a 14% capital gains tax rate on qualifying disposals (2025/26 rate, rising to 18% from April 2026), up to a lifetime limit of £1 million. If you restructure into a group, you need to make sure you do not accidentally lose BADR eligibility.</p>
+<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) gives a 18% capital gains tax rate on qualifying disposals (2025/26 rate, rising to 18% from April 2026), up to a lifetime limit of £1 million. If you restructure into a group, you need to make sure you do not accidentally lose BADR eligibility.</p>
 
 <p>The key conditions for BADR on shares in a holding company are:</p>
 
@@ -146,7 +146,7 @@ keyTakeaways:
 
 <h2>Directors' Loan Accounts in a Group</h2>
 
-<p>When you restructure, your directors' loan account (DLA) with the original Opco needs careful handling. If you owe money to Opco personally, that debt may be transferred to Holdco as part of the restructuring. If the debt is over £10k, it triggers a benefit-in-kind charge. If it is not repaid within 9 months of the year end, a S455 tax charge at 33.75% applies.</p>
+<p>When you restructure, your directors' loan account (DLA) with the original Opco needs careful handling. If you owe money to Opco personally, that debt may be transferred to Holdco as part of the restructuring. If the debt is over £10k, it triggers a benefit-in-kind charge. If it is not repaid within 9 months of the year end, a S455 tax charge at 35.75% applies.</p>
 
 <p>The cleanest approach is to clear your DLA before restructuring. If that is not possible, document the transfer of the debt to Holdco and ensure interest is charged at the official HMRC rate (currently 2.25% for 2025/26) to avoid benefit-in-kind issues.</p>
 

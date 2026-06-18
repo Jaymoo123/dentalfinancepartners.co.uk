@@ -22,7 +22,7 @@ faqs:
 - question: What is the difference between alphabet shares and ordinary shares?
   answer: 'Ordinary shares are a single class where every share carries the same rights to dividends, voting, and capital. Alphabet shares are multiple classes (A, B, C, etc.) where each class can have different rights. The key difference is flexibility: alphabet shares let you pay different dividends to different shareholders without changing their percentage ownership.'
 - question: Are alphabet shares tax-efficient for agency founders?
-  answer: Alphabet shares themselves are not a tax avoidance structure. They are a legal way to distribute dividends differently. The tax efficiency comes from using dividends (taxed at 8.75%, 33.75%, or 39.35%) instead of salary (subject to income tax and NI). For key staff, a small number of alphabet shares receiving dividends can save employer NI at 13.8% compared to a bonus. But the structure must have genuine commercial substance, or HMRC may challenge it under settlements legislation.
+  answer: Alphabet shares themselves are not a tax avoidance structure. They are a legal way to distribute dividends differently. The tax efficiency comes from using dividends (taxed at 10.75%, 35.75%, or 39.35%) instead of salary (subject to income tax and NI). For key staff, a small number of alphabet shares receiving dividends can save employer NI at 15% compared to a bonus. But the structure must have genuine commercial substance, or HMRC may challenge it under settlements legislation.
 - question: Can I issue alphabet shares to my spouse or family member?
   answer: Yes, but with caution. If the family member does not work in the business, HMRC may apply the settlements legislation to tax the dividend income on you as the settlor. If the family member works in the agency and the dividend reflects their contribution, the risk is low. Always take specific advice before issuing alphabet shares to a non-working family member.
 - question: Do I need a solicitor to set up alphabet shares?
@@ -84,7 +84,7 @@ keyTakeaways:
 
 <p>The tax treatment of alphabet shares is straightforward in principle but requires care in practice.</p>
 
-<p>Dividends paid on alphabet shares are taxed exactly the same as dividends on ordinary shares. The recipient gets the same dividend tax rates: 8.75% for basic rate taxpayers, 33.75% for higher rate, 39.35% for additional rate. The £500 dividend allowance applies to total dividends across all share classes.</p>
+<p>Dividends paid on alphabet shares are taxed exactly the same as dividends on ordinary shares. The recipient gets the same dividend tax rates: 10.75% for basic rate taxpayers, 35.75% for higher rate, 39.35% for additional rate. The £500 dividend allowance applies to total dividends across all share classes.</p>
 
 <p>The company gets no tax deduction for dividends paid. Dividends are paid from post-tax profits. This is the same for all share classes.</p>
 
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>You have multiple shareholders with different cash needs.</strong> One founder might want to take maximum dividends. Another might prefer to reinvest. Alphabet shares let each class receive a different dividend rate.</li>
-<li><strong>You want to reward key staff with profit-linked dividends.</strong> Instead of a bonus through payroll, you issue a small number of alphabet shares to the employee and pay a dividend linked to performance. This saves employer NI (13.8%) and employee NI (2% above £50,270).</li>
+<li><strong>You want to reward key staff with profit-linked dividends.</strong> Instead of a bonus through payroll, you issue a small number of alphabet shares to the employee and pay a dividend linked to performance. This saves employer NI (15%) and employee NI (2% above £50,270).</li>
 <li><strong>You are bringing in a co-founder or investor who wants a different dividend structure.</strong> Perhaps they want a fixed dividend preference before ordinary shareholders get anything. Alphabet shares can provide that.</li>
 <li><strong>You are planning an exit and want to manage tax efficiently.</strong> Alphabet shares can help with <strong>Business Asset Disposal Relief (BADR)</strong> planning, though the rules are complex and you need specific advice.</li>
 </ul>
@@ -143,7 +143,7 @@ keyTakeaways:
 
 <p>On a sale, each class of shares typically converts into ordinary shares or is redeemed. The sale proceeds are distributed according to the rights attached to each class. This can be used to give certain shareholders a larger share of the sale proceeds without them holding a larger percentage of the company.</p>
 
-<p>For <strong>Business Asset Disposal Relief (BADR)</strong> purposes, alphabet shares held by an individual qualify for the 14% capital gains tax rate, provided the shares meet the qualifying conditions: 5% shareholding, officer or employee of the company, and held for at least two years before disposal. Each class of shares is assessed separately for the 5% test.</p>
+<p>For <strong>Business Asset Disposal Relief (BADR)</strong> purposes, alphabet shares held by an individual qualify for the 18% capital gains tax rate, provided the shares meet the qualifying conditions: 5% shareholding, officer or employee of the company, and held for at least two years before disposal. Each class of shares is assessed separately for the 5% test.</p>
 
 <p>This means an alphabet share structure can allow multiple individuals to qualify for BADR on their respective share classes, even if their overall economic interest in the company is different. But the rules are detailed and fact-specific. If you are planning an exit, talk to your accountant about whether an alphabet share structure helps or hinders your BADR position.</p>
 

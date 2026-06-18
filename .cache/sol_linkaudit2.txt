@@ -1,0 +1,315 @@
+======================================================================
+HARD 404 ISSUES: 102
+======================================================================
+  [client-money-accounting-solicitors]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [cofa-responsibilities-accounting]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/structure-incorporation/llp-conversion-tax-guide-uk-law-firms
+     -> WRONG-CATEGORY (/structure-incorporation/llp-conversion-tax-guide-uk-law-firms); file cat=structure-and-incorporation
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/structure-incorporation/should-a-law-firm-incorporate-2026-dividend-rise
+     -> WRONG-CATEGORY (/structure-incorporation/should-a-law-firm-incorporate-2026-dividend-rise); file cat=structure-and-incorporation
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/firm-acquisition-merger/can-a-non-lawyer-buy-a-uk-law-firm-abs-explained
+     -> WRONG-CATEGORY (/firm-acquisition-merger/can-a-non-lawyer-buy-a-uk-law-firm-abs-explained); file cat=firm-acquisition-and-merger
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale
+     -> WRONG-CATEGORY (/practice-sale-succession/goodwill-tax-treatment-law-firm-sale); file cat=practice-sale-and-succession
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm
+     -> WRONG-CATEGORY (/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm); file cat=practice-sale-and-succession
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/practice-sale-succession/wip-treatment-on-law-firm-sale
+     -> WRONG-CATEGORY (/practice-sale-succession/wip-treatment-on-law-firm-sale); file cat=practice-sale-and-succession
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/vat-compliance/vat-registration-solicitors
+     -> WRONG-CATEGORY (/vat-compliance/vat-registration-solicitors); file cat=vat-and-compliance
+  [converting-law-firm-to-limited-company-abs-tax]
+     /blog/structure-incorporation/corporate-member-llp-law-firm-mixed-membership-rules
+     -> WRONG-CATEGORY (/structure-incorporation/corporate-member-llp-law-firm-mixed-membership-rules); file cat=structure-and-incorporation
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms); file cat=partnership-and-llp-accounting
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/partnership-llp-structure/how-llp-members-are-taxed-uk-2025-26
+     -> WRONG-CATEGORY (/partnership-llp-structure/how-llp-members-are-taxed-uk-2025-26); file cat=partnership-and-llp-structure
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/structure-incorporation/converting-law-firm-to-limited-company-abs-tax
+     -> WRONG-CATEGORY (/structure-incorporation/converting-law-firm-to-limited-company-abs-tax); file cat=structure-and-incorporation
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/structure-incorporation/should-a-law-firm-incorporate-2026-dividend-rise
+     -> WRONG-CATEGORY (/structure-incorporation/should-a-law-firm-incorporate-2026-dividend-rise); file cat=structure-and-incorporation
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/partnership-llp-structure/salaried-member-rules-uk-llps-explained
+     -> WRONG-CATEGORY (/partnership-llp-structure/salaried-member-rules-uk-llps-explained); file cat=partnership-and-llp-structure
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/partner-profit-allocation-uk-law-firms); file cat=partnership-and-llp-accounting
+  [corporate-member-llp-law-firm-mixed-membership-rules]
+     /blog/partnership-llp-structure/llp-profit-extraction-strategies-uk
+     -> WRONG-CATEGORY (/partnership-llp-structure/llp-profit-extraction-strategies-uk); file cat=partnership-and-llp-structure
+  [counsel-fees-vat-guide-uk-law-firms]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-structure/salaried-member-rules-uk-llps-explained
+     -> WRONG-CATEGORY (/partnership-llp-structure/salaried-member-rules-uk-llps-explained); file cat=partnership-and-llp-structure
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-accounting/law-firm-partner-capital-accounts-tax-treatment
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-partner-capital-accounts-tax-treatment); file cat=partnership-and-llp-accounting
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-structure/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership
+     -> WRONG-CATEGORY (/partnership-llp-structure/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership); file cat=partnership-and-llp-structure
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-accounting/law-firm-partner-tax-reserving-payments-on-account
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-partner-tax-reserving-payments-on-account); file cat=partnership-and-llp-accounting
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-accounting/basis-period-reform-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/basis-period-reform-law-firms); file cat=partnership-and-llp-accounting
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms); file cat=partnership-and-llp-accounting
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-accounting/law-firm-drawings-vs-profit
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-drawings-vs-profit); file cat=partnership-and-llp-accounting
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/partner-profit-allocation-uk-law-firms); file cat=partnership-and-llp-accounting
+  [fixed-share-to-equity-partner-promotion-tax-law-firm]
+     /blog/partnership-llp-structure/salary-vs-profit-share-tax-uk-partner-solicitor
+     -> WRONG-CATEGORY (/partnership-llp-structure/salary-vs-profit-share-tax-uk-partner-solicitor); file cat=partnership-and-llp-structure
+  [how-much-do-uk-conveyancing-solicitors-charge]
+     /blog/fee-structure-for-uk-residential-conveyancing-firms
+     -> no-flat-slug (/blog/fee-structure-for-uk-residential-conveyancing-firms)
+  [how-much-do-uk-conveyancing-solicitors-charge]
+     /blog/conveyancing-firm-financial-control-strategies
+     -> no-flat-slug (/blog/conveyancing-firm-financial-control-strategies)
+  [how-much-do-uk-conveyancing-solicitors-charge]
+     /blog/sdlt-calculation-uk-conveyancing-solicitors
+     -> no-flat-slug (/blog/sdlt-calculation-uk-conveyancing-solicitors)
+  [is-it-hard-to-make-partner-at-a-uk-law-firm]
+     /blog/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership
+     -> no-flat-slug (/blog/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership)
+  [is-it-hard-to-make-partner-at-a-uk-law-firm]
+     /blog/how-much-does-it-cost-to-start-a-law-firm-uk
+     -> no-flat-slug (/blog/how-much-does-it-cost-to-start-a-law-firm-uk)
+  [law-firm-accountant-leeds]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-accountant-manchester]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-accounting-services]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-accounting-software-guide-uk-solicitors]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-benchmarking-uk]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-cash-flow-management]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-debt-management]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-drawings-vs-profit]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [law-firm-lock-up-reduction]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-partial-exemption-vat-client-account-interest]
+     /blog/vat-compliance/flat-rate-scheme-for-uk-solicitors
+     -> WRONG-CATEGORY (/vat-compliance/flat-rate-scheme-for-uk-solicitors); file cat=vat-and-compliance
+  [law-firm-partial-exemption-vat-client-account-interest]
+     /blog/vat-compliance/vat-on-legal-services
+     -> WRONG-CATEGORY (/vat-compliance/vat-on-legal-services); file cat=vat-and-compliance
+  [law-firm-partial-exemption-vat-client-account-interest]
+     /blog/vat-compliance/solicitor-vat-accounting-guide
+     -> WRONG-CATEGORY (/vat-compliance/solicitor-vat-accounting-guide); file cat=vat-and-compliance
+  [law-firm-partial-exemption-vat-client-account-interest]
+     /blog/vat-compliance/option-to-tax-law-firm-premises-capital-goods-scheme
+     -> WRONG-CATEGORY (/vat-compliance/option-to-tax-law-firm-premises-capital-goods-scheme); file cat=vat-and-compliance
+  [law-firm-partial-exemption-vat-client-account-interest]
+     /blog/vat-compliance/vat-tax-point-time-of-supply-law-firm-billing
+     -> WRONG-CATEGORY (/vat-compliance/vat-tax-point-time-of-supply-law-firm-billing); file cat=vat-and-compliance
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-accounting/law-firm-drawings-vs-profit
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-drawings-vs-profit); file cat=partnership-and-llp-accounting
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/partner-profit-allocation-uk-law-firms); file cat=partnership-and-llp-accounting
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-structure/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership
+     -> WRONG-CATEGORY (/partnership-llp-structure/how-much-does-it-cost-to-buy-into-uk-law-firm-partnership); file cat=partnership-and-llp-structure
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-structure/salaried-member-rules-uk-llps-explained
+     -> WRONG-CATEGORY (/partnership-llp-structure/salaried-member-rules-uk-llps-explained); file cat=partnership-and-llp-structure
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-accounting/fixed-share-to-equity-partner-promotion-tax-law-firm
+     -> WRONG-CATEGORY (/partnership-llp-accounting/fixed-share-to-equity-partner-promotion-tax-law-firm); file cat=partnership-and-llp-accounting
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-accounting/law-firm-partner-tax-reserving-payments-on-account
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-partner-tax-reserving-payments-on-account); file cat=partnership-and-llp-accounting
+  [law-firm-partner-capital-accounts-tax-treatment]
+     /blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms); file cat=partnership-and-llp-accounting
+  [law-firm-partner-tax-reserving-payments-on-account]
+     /blog/partnership-llp-accounting/fixed-share-to-equity-partner-promotion-tax-law-firm
+     -> WRONG-CATEGORY (/partnership-llp-accounting/fixed-share-to-equity-partner-promotion-tax-law-firm); file cat=partnership-and-llp-accounting
+  [law-firm-partner-tax-reserving-payments-on-account]
+     /blog/partnership-llp-accounting/law-firm-drawings-vs-profit
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-drawings-vs-profit); file cat=partnership-and-llp-accounting
+  [law-firm-partner-tax-reserving-payments-on-account]
+     /blog/partnership-llp-accounting/basis-period-reform-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/basis-period-reform-law-firms); file cat=partnership-and-llp-accounting
+  [law-firm-partner-tax-reserving-payments-on-account]
+     /blog/practice-finance-cash-flow/law-firm-cash-flow-management
+     -> WRONG-CATEGORY (/practice-finance-cash-flow/law-firm-cash-flow-management); file cat=practice-finance-and-cash-flow
+  [law-firm-partner-tax-reserving-payments-on-account]
+     /blog/partnership-llp-accounting/partner-profit-allocation-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/partner-profit-allocation-uk-law-firms); file cat=partnership-and-llp-accounting
+  [law-firm-partner-tax-reserving-payments-on-account]
+     /blog/partnership-llp-accounting/law-firm-partner-capital-accounts-tax-treatment
+     -> WRONG-CATEGORY (/partnership-llp-accounting/law-firm-partner-capital-accounts-tax-treatment); file cat=partnership-and-llp-accounting
+  [law-firm-payroll-services]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [law-firm-succession-planning-guide-uk]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [law-firm-valuation-guide-uk-solicitors]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [leap-accounting-integration-guide]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [llp-employer-ni-2026]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [option-to-tax-law-firm-premises-capital-goods-scheme]
+     /blog/vat-compliance/law-firm-partial-exemption-vat-client-account-interest
+     -> WRONG-CATEGORY (/vat-compliance/law-firm-partial-exemption-vat-client-account-interest); file cat=vat-and-compliance
+  [option-to-tax-law-firm-premises-capital-goods-scheme]
+     /blog/vat-compliance/vat-tax-point-time-of-supply-law-firm-billing
+     -> WRONG-CATEGORY (/vat-compliance/vat-tax-point-time-of-supply-law-firm-billing); file cat=vat-and-compliance
+  [option-to-tax-law-firm-premises-capital-goods-scheme]
+     /blog/vat-compliance/vat-on-legal-services
+     -> WRONG-CATEGORY (/vat-compliance/vat-on-legal-services); file cat=vat-and-compliance
+  [option-to-tax-law-firm-premises-capital-goods-scheme]
+     /blog/vat-compliance/solicitor-vat-accounting-guide
+     -> WRONG-CATEGORY (/vat-compliance/solicitor-vat-accounting-guide); file cat=vat-and-compliance
+  [option-to-tax-law-firm-premises-capital-goods-scheme]
+     /blog/vat-compliance/vat-registration-solicitors
+     -> WRONG-CATEGORY (/vat-compliance/vat-registration-solicitors); file cat=vat-and-compliance
+  [partner-retirement-planning-guide-uk-law-firms]
+     /blog/practice-succession-sale
+     -> no-flat-slug (/blog/practice-succession-sale)
+  [partner-retirement-planning-guide-uk-law-firms]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/partnership-llp-accounting/llp-vs-partnership-tax
+     -> WRONG-CATEGORY (/partnership-llp-accounting/llp-vs-partnership-tax); file cat=partnership-and-llp-accounting
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/partnership-llp-structure/llp-vs-traditional-partnership-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-structure/llp-vs-traditional-partnership-uk-law-firms); file cat=partnership-and-llp-structure
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/structure-incorporation/converting-law-firm-to-limited-company-abs-tax
+     -> WRONG-CATEGORY (/structure-incorporation/converting-law-firm-to-limited-company-abs-tax); file cat=structure-and-incorporation
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms
+     -> WRONG-CATEGORY (/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms); file cat=partnership-and-llp-accounting
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/partnership-llp-structure/llp-profit-extraction-strategies-uk
+     -> WRONG-CATEGORY (/partnership-llp-structure/llp-profit-extraction-strategies-uk); file cat=partnership-and-llp-structure
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/partnership-llp-structure/salaried-member-rules-uk-llps-explained
+     -> WRONG-CATEGORY (/partnership-llp-structure/salaried-member-rules-uk-llps-explained); file cat=partnership-and-llp-structure
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm
+     -> WRONG-CATEGORY (/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm); file cat=practice-sale-and-succession
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale
+     -> WRONG-CATEGORY (/practice-sale-succession/goodwill-tax-treatment-law-firm-sale); file cat=practice-sale-and-succession
+  [should-a-law-firm-incorporate-2026-dividend-rise]
+     /blog/structure-incorporation/corporate-member-llp-law-firm-mixed-membership-rules
+     -> WRONG-CATEGORY (/structure-incorporation/corporate-member-llp-law-firm-mixed-membership-rules); file cat=structure-and-incorporation
+  [solicitor-accountant-birmingham]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-accountant-bristol]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-accountant-fees]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-accountant-london]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-accountant-near-me]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-accountant]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-client-account-reconciliation]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [solicitor-partnership-accounting-guide]
+     /blog/partnership-llp-accounting
+     -> no-flat-slug (/blog/partnership-llp-accounting)
+  [solicitor-practice-finance-options]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-practice-management-software]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+  [solicitor-vat-accounting-guide]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [sra-accountants-report]
+     /blog/sra-compliance-trust-accounting
+     -> no-flat-slug (/blog/sra-compliance-trust-accounting)
+  [vat-on-legal-services]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [vat-registration-solicitors]
+     /blog/vat-compliance
+     -> no-flat-slug (/blog/vat-compliance)
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/sra-compliance-trust-accounting/client-money-accounting-solicitors
+     -> WRONG-CATEGORY (/sra-compliance-trust-accounting/client-money-accounting-solicitors); file cat=sra-compliance-and-trust-accounting
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/vat-compliance/vat-registration-solicitors
+     -> WRONG-CATEGORY (/vat-compliance/vat-registration-solicitors); file cat=vat-and-compliance
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/vat-compliance/vat-on-legal-services
+     -> WRONG-CATEGORY (/vat-compliance/vat-on-legal-services); file cat=vat-and-compliance
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/vat-compliance/do-uk-solicitors-charge-vat
+     -> WRONG-CATEGORY (/vat-compliance/do-uk-solicitors-charge-vat); file cat=vat-and-compliance
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/vat-compliance/solicitor-vat-accounting-guide
+     -> WRONG-CATEGORY (/vat-compliance/solicitor-vat-accounting-guide); file cat=vat-and-compliance
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/vat-compliance/law-firm-partial-exemption-vat-client-account-interest
+     -> WRONG-CATEGORY (/vat-compliance/law-firm-partial-exemption-vat-client-account-interest); file cat=vat-and-compliance
+  [vat-tax-point-time-of-supply-law-firm-billing]
+     /blog/vat-compliance/option-to-tax-law-firm-premises-capital-goods-scheme
+     -> WRONG-CATEGORY (/vat-compliance/option-to-tax-law-firm-premises-capital-goods-scheme); file cat=vat-and-compliance
+  [xero-for-solicitors]
+     /blog/practice-finance-cash-flow
+     -> no-flat-slug (/blog/practice-finance-cash-flow)
+
+======================================================================
+SOFT (301-hop / self-loop) ISSUES: 2
+======================================================================
+  self-loops: 0
+  other 301-hops: 2 (links pointing at a redirect source)

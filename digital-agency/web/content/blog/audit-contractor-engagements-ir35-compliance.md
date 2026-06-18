@@ -144,7 +144,7 @@ keyTakeaways:
 <ol>
 <li>Issue a corrected SDS stating the engagement is inside IR35</li>
 <li>Start operating PAYE and deducting income tax, employee NI, and employer NI from their payments</li>
-<li>Pay employer NI at 13.8% on top of the gross fee</li>
+<li>Pay employer NI at 15% on top of the gross fee</li>
 </ol>
 
 <p>If the contractor has been working with you for months or years and you have been paying them outside IR35, you have a historical liability. You need to calculate the unpaid tax and NI and agree a settlement with HMRC. This is where you need professional help. Do not try to calculate this yourself. The numbers are complex and the penalties can be significant.</p>

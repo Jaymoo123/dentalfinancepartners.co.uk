@@ -1,0 +1,3 @@
+Phase G: G1 accepted + deployed; live probe caught and fixed the SDK init race
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

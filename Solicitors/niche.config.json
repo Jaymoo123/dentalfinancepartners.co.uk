@@ -1,7 +1,20 @@
 {
   "niche_id": "solicitors",
   "display_name": "Accounts for Lawyers",
-  "legal_name": "Accounts for Lawyers Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
   "domain": "www.accountsforlawyers.co.uk",
   "tagline": "Specialist accounting for UK solicitors and law firms",
   "description": "Expert accountants for solicitors, law firms, and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",

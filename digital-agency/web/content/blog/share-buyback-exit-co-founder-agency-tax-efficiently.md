@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - A share buyback can be the cleanest way to exit a co-founder, keeping the agency intact and avoiding external investors.
 - To achieve capital gains treatment, the buyback must meet all HMRC conditions, including a five-year shareholding period and full disposal of the departing founder's interest.
-- Capital treatment allows the leaving founder to pay 14% CGT under Business Asset Disposal Relief, versus 33.75% dividend tax on income treatment.
+- Capital treatment allows the leaving founder to pay 18% CGT under Business Asset Disposal Relief, versus 35.75% dividend tax on income treatment.
 - The departing shareholder must not be connected with the company after the buyback, meaning no employment, directorship, or connection to remaining shareholders.
 - Plan to meet the statutory conditions from the start, as HMRC's extra-statutory concession C16 is discretionary and not a reliable fallback.
 ---
@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>When a co-founder leaves your agency, you have a few options. You can find a third-party buyer for their shares. You can dissolve the company and start again. Or you can have the company buy back the shares itself. That third route, a share buyback, is often the cleanest solution. It keeps the agency intact. It removes the leaving founder's ownership. And it avoids bringing in an external investor you might not want.</p>
 
-<p>But a share buyback has tax traps. Get the paperwork wrong and HMRC treats the payment as a dividend. That means the leaving founder pays income tax on the proceeds, not capital gains tax. The difference is material. A dividend payment to a higher-rate taxpayer is taxed at 33.75%. A capital gain qualifying for Business Asset Disposal Relief (BADR) is taxed at 14%. On a £500,000 buyout, that is a £118,750 difference.</p>
+<p>But a share buyback has tax traps. Get the paperwork wrong and HMRC treats the payment as a dividend. That means the leaving founder pays income tax on the proceeds, not capital gains tax. The difference is material. A dividend payment to a higher-rate taxpayer is taxed at 35.75%. A capital gain qualifying for Business Asset Disposal Relief (BADR) is taxed at 18%. On a £500,000 buyout, that is a £118,750 difference.</p>
 
 <p>This guide covers how to structure a share buyback when <strong>selling agency tax UK</strong> considerations matter most. We are ICAEW qualified accountants who work exclusively with agency founders. We see these scenarios regularly.</p>
 
@@ -48,7 +48,7 @@ keyTakeaways:
 
 <p>HMRC gives you two possible tax treatments for a share buyback. The default is income treatment. That means the payment to the departing shareholder is treated as a distribution, like a dividend. The leaving founder pays dividend tax on it. The agency gets no corporation tax deduction.</p>
 
-<p>The alternative is capital treatment. If you meet specific conditions, the buyback is treated as a disposal of shares. The leaving founder pays capital gains tax (CGT) on the gain. And if they qualify for BADR, that rate is 14% on gains up to £1 million.</p>
+<p>The alternative is capital treatment. If you meet specific conditions, the buyback is treated as a disposal of shares. The leaving founder pays capital gains tax (CGT) on the gain. And if they qualify for BADR, that rate is 18% on gains up to £1 million.</p>
 
 <p>You want capital treatment. Every time. The question is whether you can satisfy HMRC's conditions.</p>
 
@@ -73,9 +73,9 @@ keyTakeaways:
 
 <p>For BADR to apply, the departing founder must have been an officer or employee of the agency for at least two years before the disposal. They must also have held at least 5% of the share capital and voting rights throughout that two-year period.</p>
 
-<p>If they meet those conditions, the gain on their shares is taxed at 14% instead of the normal 20% CGT rate. The lifetime limit is £1 million of gains. Most agency founders selling a minority stake will be well within that limit.</p>
+<p>If they meet those conditions, the gain on their shares is taxed at 18% instead of the normal 20% CGT rate. The lifetime limit is £1 million of gains. Most agency founders selling a minority stake will be well within that limit.</p>
 
-<p>Here is a real example. A co-founder of a 15-person digital agency in Manchester Northern Quarter holds 30% of the shares. They have been a director for four years. The agency is valued at £1.2 million. Their 30% stake is worth £360,000. They originally invested £20,000 for the shares. The gain is £340,000. Under capital treatment with BADR, they pay 14% CGT: £34,000. Under income treatment, they would pay 33.75% dividend tax: £114,750. The difference is £80,750.</p>
+<p>Here is a real example. A co-founder of a 15-person digital agency in Manchester Northern Quarter holds 30% of the shares. They have been a director for four years. The agency is valued at £1.2 million. Their 30% stake is worth £360,000. They originally invested £20,000 for the shares. The gain is £340,000. Under capital treatment with BADR, they pay 18% CGT: £34,000. Under income treatment, they would pay 35.75% dividend tax: £114,750. The difference is £80,750.</p>
 
 <p>That is worth getting right.</p>
 

@@ -31,8 +31,8 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - A specialist agency accountant reviews utilisation rate and gross margin, not just compliance, to help you run a profitable agency.
-- For 2025/26, corporation tax is 19% on profits up to £50,000, with marginal relief up to £250,000, then 25% above that.
-- Directors' loan accounts over £10,000 not cleared within nine months of year-end incur a 33.75% S455 tax charge.
+- For 2026/27, corporation tax is 19% on profits up to £50,000, with marginal relief up to £250,000, then 25% above that.
+- Directors' loan accounts over £10,000 not cleared within nine months of year-end incur a 35.75% S455 tax charge.
 - Set your salary at £12,570 to avoid employee NI and use dividends above that threshold for tax efficiency.
 - Most agencies exceed the £90,000 VAT threshold; your accountant advises on standard or flat rate VAT schemes based on your costs.
 ---
@@ -48,13 +48,13 @@ keyTakeaways:
 
 <h3>Year-End Accounts and Corporation Tax</h3>
 
-<p>Your accountant prepares annual accounts and files them with Companies House. They also file your corporation tax return (the CT600) with HMRC. For the 2025/26 tax year, your agency pays 19% corporation tax on profits up to £50,000, then marginal relief up to £250,000, then 25% on anything above that. A good agency accountant checks whether your profit falls into the marginal relief band and plans accordingly.</p>
+<p>Your accountant prepares annual accounts and files them with Companies House. They also file your corporation tax return (the CT600) with HMRC. For the 2026/27 tax year, your agency pays 19% corporation tax on profits up to £50,000, then marginal relief up to £250,000, then 25% on anything above that. A good agency accountant checks whether your profit falls into the marginal relief band and plans accordingly.</p>
 
-<p>They also review your directors' loan account. If you have taken more than £10,000 from the company, or if the balance is not cleared within nine months of your year end, there is a 33.75% tax charge (S455). That is a common trap for agency founders who treat the company bank account as their own. An agency accountant spots it before it becomes a problem.</p>
+<p>They also review your directors' loan account. If you have taken more than £10,000 from the company, or if the balance is not cleared within nine months of your year end, there is a 35.75% tax charge (S455). That is a common trap for agency founders who treat the company bank account as their own. An agency accountant spots it before it becomes a problem.</p>
 
 <h3>Payroll and RTI</h3>
 
-<p>You need payroll. Even if you only pay yourself. Your accountant runs the payroll, files RTI (Real Time Information) with HMRC each month, and handles your P32 payments. They set your salary at the right level. For most agency founders, that means a salary of £12,570 per year. That is the point where you stop paying employee NI and start paying employer NI. Any salary above that triggers 13.8% employer NI and 8% employee NI. Dividends are more tax efficient above that threshold.</p>
+<p>You need payroll. Even if you only pay yourself. Your accountant runs the payroll, files RTI (Real Time Information) with HMRC each month, and handles your P32 payments. They set your salary at the right level. For most agency founders, that means a salary of £12,570 per year. That is the point where you stop paying employee NI and start paying employer NI. Any salary above that triggers 15% employer NI and 8% employee NI. Dividends are more tax efficient above that threshold.</p>
 
 <p>If you have employees, your accountant also handles P11Ds for benefits in kind. Company cars, private health insurance, gym memberships. All of it needs reporting.</p>
 
@@ -66,7 +66,7 @@ keyTakeaways:
 
 <h3>Personal Tax Returns</h3>
 
-<p>Your accountant files your SA100 (self-assessment) each year. They report your salary, your dividends, and any other income. They also check whether you have unused pension allowances or capital gains to report. If you sell shares in your agency, they handle the CGT calculation and the BADR claim (14% tax rate on qualifying disposals up to £1 million).</p>
+<p>Your accountant files your SA100 (self-assessment) each year. They report your salary, your dividends, and any other income. They also check whether you have unused pension allowances or capital gains to report. If you sell shares in your agency, they handle the CGT calculation and the BADR claim (18% tax rate on qualifying disposals up to £1 million).</p>
 
 <p>That is the compliance work. It is necessary. It is not where the real value lives.</p>
 
@@ -106,13 +106,13 @@ keyTakeaways:
 
 <p>The standard advice for a limited company director is to take a salary of £12,570 and the rest as dividends. That still works for most agency founders. But it is not the whole picture.</p>
 
-<p>If your agency profits are above £50,000, you are in the higher rate tax band. Your dividend tax rate goes from 8.75% to 33.75%. The dividend allowance has dropped to £500 per year. That changes the calculation. An agency accountant models different scenarios. Should you retain profit in the company? Should you pay into a pension instead of taking dividends? Should you bring your spouse onto the payroll if they work in the business?</p>
+<p>If your agency profits are above £50,000, you are in the higher rate tax band. Your dividend tax rate goes from 10.75% to 35.75%. The dividend allowance has dropped to £500 per year. That changes the calculation. An agency accountant models different scenarios. Should you retain profit in the company? Should you pay into a pension instead of taking dividends? Should you bring your spouse onto the payroll if they work in the business?</p>
 
 <p>For a sole trader web designer turning over £65,000, the calculation is different. You pay Class 2 and Class 4 NI on your profits. Incorporation might save you tax, but it adds compliance costs. An agency accountant runs the numbers both ways before you make the switch.</p>
 
 <h2>Exit Planning and BADR</h2>
 
-<p>Most agency founders do not think about exit until someone makes an offer. By then, it is often too late to structure the business tax efficiently. Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on qualifying disposals. The lifetime limit is £1 million. Above that, you pay 20% (or 24% for disposals after April 2025).</p>
+<p>Most agency founders do not think about exit until someone makes an offer. By then, it is often too late to structure the business tax efficiently. Business Asset Disposal Relief (BADR) gives you a 18% capital gains tax rate on qualifying disposals. The lifetime limit is £1 million. Above that, you pay 20% (or 24% for disposals after April 2025).</p>
 
 <p>To qualify, you must hold at least 5% of the shares, be an officer or employee of the company, and hold the shares for at least two years before disposal. An agency accountant checks your share structure early. If you have multiple share classes or investors, you might not qualify. They advise on holding company structures, share reorganisations, and timing.</p>
 

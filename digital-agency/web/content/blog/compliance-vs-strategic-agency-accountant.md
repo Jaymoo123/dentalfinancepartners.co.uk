@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - A compliance-only accountant files your tax return; a strategic agency accountant designs your structure to lower your tax bill.
 - Strategic accountants model the optimal salary and dividends split, considering the £500 dividend allowance and personal tax bands for 2025/26.
-- If you plan to sell your agency, a strategic accountant helps you qualify for Business Asset Disposal Relief at 14% CGT rather than 20%.
+- If you plan to sell your agency, a strategic accountant helps you qualify for Business Asset Disposal Relief at 18% CGT rather than 20%.
 - Strategic accountants provide monthly management accounts with P&L, balance sheet, and cash flow, not just annual compliance filings.
 - For agencies with staff or multiple income streams, compliance-only accounting leaves money on the table and risk undetected.
 ---
@@ -64,7 +64,7 @@ keyTakeaways:
 
 <p>For agency founders, this usually means the salary and dividends model. You take a salary up to the primary NI threshold (£12,570 for 2025/26) and take the rest as dividends. A compliance accountant will set up payroll for this. A strategic accountant will also model the optimal split across the year, considering your dividend allowance (£500 for 2025/26), your personal tax bands, and whether you have other income.</p>
 
-<p>But it goes further. If you own multiple agencies, a strategic accountant will advise on holding company structures. If you are planning to sell, they will help you qualify for Business Asset Disposal Relief (BADR) at 14% CGT rather than 20%. If you have contractors, they will advise on whether IR35 applies and how to structure engagements to avoid retrospective tax bills.</p>
+<p>But it goes further. If you own multiple agencies, a strategic accountant will advise on holding company structures. If you are planning to sell, they will help you qualify for Business Asset Disposal Relief (BADR) at 18% CGT rather than 20%. If you have contractors, they will advise on whether IR35 applies and how to structure engagements to avoid retrospective tax bills.</p>
 
 <p>A compliance accountant reacts to your structure. A strategic accountant designs it.</p>
 
@@ -90,7 +90,7 @@ keyTakeaways:
 
 <p>Every agency founder will exit eventually. You might sell to a trade buyer, pass the business to a management team, or simply wind down. The tax treatment of each option is dramatically different.</p>
 
-<p>BADR (Business Asset Disposal Relief) allows you to pay 14% on the first £1m of gains, rather than 20%. But the conditions are specific. You must hold at least 5% of the shares. You must be an officer or employee of the company. The shares must have been held for at least two years. And the company must be a trading company, not a holding company with significant investment activity.</p>
+<p>BADR (Business Asset Disposal Relief) allows you to pay 18% on the first £1m of gains, rather than 20%. But the conditions are specific. You must hold at least 5% of the shares. You must be an officer or employee of the company. The shares must have been held for at least two years. And the company must be a trading company, not a holding company with significant investment activity.</p>
 
 <p>A compliance accountant will tell you about BADR when you say you are selling. A strategic accountant will structure your shareholding from day one so that you qualify when the time comes. They will also advise on whether a share sale or an asset sale is better for you, and how to negotiate the tax treatment in the sale agreement.</p>
 

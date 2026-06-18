@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, ArrowRight, Phone, Mail } from "lucide-react";
+import { MapPin, ArrowRight, Mail } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
@@ -315,17 +315,13 @@ export default async function CityPage({ params }: Props) {
               </p>
               <div className="mt-6 space-y-3 text-neutral-200">
                 <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-cyan-400" />
-                  <span className="font-semibold">{siteConfig.contact.phone}</span>
-                </div>
-                <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-cyan-400" />
-                  <a
-                    href={`mailto:${siteConfig.contact.email}`}
+                  <Link
+                    href="/contact"
                     className="font-semibold underline hover:text-white transition-colors"
                   >
-                    {siteConfig.contact.email}
-                  </a>
+                    Contact us
+                  </Link>
                 </div>
               </div>
               <Link href="/contact" className={`${btnPrimary} mt-8`}>

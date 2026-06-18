@@ -1,0 +1,6 @@
+Tax figures: correct medical SL thresholds to 2025/26 (deliberate golden update) + acceptance
+
+User-approved values (same family as generalist PR #6): plan1 26,065 / plan2
+28,470 / plan4 32,745. Goldens updated with derivations; TOOLS.md RESOLVED.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

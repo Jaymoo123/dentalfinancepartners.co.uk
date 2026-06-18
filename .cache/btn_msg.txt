@@ -1,0 +1,6 @@
+Property: prose link styling exempts data-cta buttons (green-on-green CTA fix)
+
+User-reported: 'Get a specialist to check your numbers' button on blog calculators
+rendered emerald-on-emerald because .prose-blog a outspecified .text-white.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

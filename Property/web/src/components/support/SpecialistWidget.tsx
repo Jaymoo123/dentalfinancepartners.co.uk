@@ -8,6 +8,7 @@
  */
 import { useRef, useState } from "react";
 import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
 import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
@@ -36,7 +37,7 @@ export function SpecialistWidget() {
   const topic = getTopic(ctx.pageTopic ?? ctx.entryTopic);
   const faqs = faqForTopic(topic?.key ?? null);
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-  const consentText = `I agree to my details being shared by ${niche.display_name} with specialist partners for the purpose of responding to my enquiry and providing specialist advice. See our Privacy Policy.`;
+  const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const onToggle = () => {
     setOpen((v) => {
@@ -155,7 +156,7 @@ export function SpecialistWidget() {
                     className="mt-0.5 h-3.5 w-3.5 shrink-0 accent-emerald-600"
                   />
                   <span>
-                    I agree to my details being shared with specialist partners to respond to my enquiry. See our{" "}
+                    {siteConfig.leadConsentText} See our{" "}
                     <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
                       Privacy Policy
                     </a>

@@ -34,7 +34,7 @@ keyTakeaways:
 - The SDS must include the determination (inside or outside IR35) and the reasons based on the specific facts of the engagement.
 - The four key employment tests are substitution, control, mutuality of obligation, and financial risk; control is the most important factor.
 - A separate SDS is required for each distinct engagement, even with the same contractor, unless working practices remain unchanged.
-- If the contractor is inside IR35, your agency must deduct PAYE and NI and pay employer NI at 13.8%; if outside, pay gross but keep a valid SDS.
+- If the contractor is inside IR35, your agency must deduct PAYE and NI and pay employer NI at 15%; if outside, pay gross but keep a valid SDS.
 ---
 <h2>The SDS Requirement That Catches Most Agencies Out</h2>
 
@@ -56,7 +56,7 @@ keyTakeaways:
 <li><strong>You must do this before the contractor starts work.</strong></li>
 </ul>
 
-<p>If the contractor is inside IR35, you must also deduct PAYE and National Insurance from their payments and pay employer NI at 13.8%. If the contractor is outside IR35, you pay them gross through their limited company, but you must still have a valid SDS on file.</p>
+<p>If the contractor is inside IR35, you must also deduct PAYE and National Insurance from their payments and pay employer NI at 15%. If the contractor is outside IR35, you pay them gross through their limited company, but you must still have a valid SDS on file.</p>
 
 <p>The SDS must be issued for each separate engagement. A single contractor working on three different projects for three different end clients needs three separate SDS documents. A contractor working on a rolling monthly retainer for the same end client can have one SDS that covers the whole engagement, provided the working practices do not change.</p>
 
@@ -148,7 +148,7 @@ keyTakeaways:
 
 <ul>
 <li>The unpaid income tax and employee NI that should have been deducted from payments.</li>
-<li>The employer NI at 13.8% that should have been paid.</li>
+<li>The employer NI at 15% that should have been paid.</li>
 <li>Interest on the late payments.</li>
 <li>Potential penalties, which can be up to 30% of the tax due for careless errors or 100% for deliberate ones.</li>
 </ul>

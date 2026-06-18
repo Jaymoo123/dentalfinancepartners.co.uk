@@ -123,7 +123,7 @@ keyTakeaways:
 
 <ul>
 <li>Deducting income tax and employee NI from each payment</li>
-<li>Paying employer NI at 13.8% on top</li>
+<li>Paying employer NI at 15% on top</li>
 <li>Reporting through RTI (Real Time Information) each month</li>
 <li>Issuing a P60 at year end</li>
 </ul>
@@ -186,7 +186,7 @@ keyTakeaways:
 <p>If HMRC determines they were inside IR35, you owe:</p>
 
 <ul>
-<li>Employer NI at 13.8% on the deemed employment payment: roughly £26,700</li>
+<li>Employer NI at 15% on the deemed employment payment: roughly £31,500</li>
 <li>Interest on late payments at 7.75% per year</li>
 <li>Potential penalties of up to 30% of the tax due</li>
 </ul>

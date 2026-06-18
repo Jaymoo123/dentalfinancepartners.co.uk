@@ -20,25 +20,25 @@ summary: Earn-out payments in agency sales are common, but their tax treatment d
 schema: ''
 faqs:
 - question: Can I get Business Asset Disposal Relief on earn-out payments?
-  answer: Yes, provided the earn-out is structured as deferred consideration for the shares you sold, not as a payment for ongoing services. You must qualify for BADR at the time of the original share sale (holding 5%+ shares for two years, being an officer or employee). The earn-out payments themselves are just deferred consideration for that same disposal, so BADR applies at 14% CGT.
+  answer: Yes, provided the earn-out is structured as deferred consideration for the shares you sold, not as a payment for ongoing services. You must qualify for BADR at the time of the original share sale (holding 5%+ shares for two years, being an officer or employee). The earn-out payments themselves are just deferred consideration for that same disposal, so BADR applies at 18% CGT.
 - question: What happens if HMRC treats my earn-out as income instead of capital?
-  answer: You pay income tax at your marginal rate (up to 45%) plus National Insurance (employee and employer, totalling up to 15.8% on amounts above thresholds). On a £500,000 earn-out, the tax bill could exceed £250,000. Compare that to £50,000 at 14% CGT under BADR. The difference is significant, which is why structuring the earn-out correctly from the start is critical.
+  answer: You pay income tax at your marginal rate (up to 45%) plus National Insurance (employee and employer, totalling up to 17% on amounts above thresholds). On a £500,000 earn-out, the tax bill could exceed £250,000. Compare that to £50,000 at 18% CGT under BADR. The difference is significant, which is why structuring the earn-out correctly from the start is critical.
 - question: Should I sell my agency as a share sale or an asset sale for the best tax treatment on earn-outs?
-  answer: For most agency founders, a share sale is preferable because it allows you to claim BADR on the entire gain (including earn-out payments) at 14% CGT. Asset sales are more common when the buyer wants to avoid inheriting liabilities, but the tax treatment for you is less straightforward. Discuss both options with your accountant and solicitor before agreeing heads of terms.
+  answer: For most agency founders, a share sale is preferable because it allows you to claim BADR on the entire gain (including earn-out payments) at 18% CGT. Asset sales are more common when the buyer wants to avoid inheriting liabilities, but the tax treatment for you is less straightforward. Discuss both options with your accountant and solicitor before agreeing heads of terms.
 - question: What if the earn-out is paid in shares of the buying company?
   answer: You do not pay tax when you receive the shares. You pay capital gains tax when you eventually sell them. The valuation of the shares at receipt is critical for calculating your gain later. If the shares are unquoted, you may need a formal valuation. Loan notes work similarly, with interest taxed as income and the redemption gain as capital. This is specialist territory; get professional advice.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Earn-out payments in a share sale are treated as capital receipts, subject to capital gains tax at up to 20% or 14% with Business Asset Disposal Relief.
+- Earn-out payments in a share sale are treated as capital receipts, subject to capital gains tax at up to 20% or 18% with Business Asset Disposal Relief.
 - To qualify for Business Asset Disposal Relief on earn-out payments, you must meet the 5% shareholding and officer/employee conditions for two years before the sale.
 - In an asset sale, earn-out payments are typically treated as income, taxed at up to 45% plus National Insurance, unless structured as capital consideration.
 - Your solicitor must draft the share purchase agreement so the earn-out is clearly part of the consideration for shares, not a separate payment for services.
-- Business Asset Disposal Relief gives a 14% capital gains tax rate on qualifying disposals up to £1 million, rising to 18% from 6 April 2026.
+- Business Asset Disposal Relief gives a 18% capital gains tax rate on qualifying disposals up to £1 million, rising to 18% from 6 April 2026.
 ---
 <p>You have found a buyer for your agency. The deal is structured as an upfront payment plus an earn-out based on the agency hitting certain revenue or profit targets over the next two to three years. That earn-out could be worth hundreds of thousands of pounds. But how is it taxed?</p>
 
-<p>The answer is not straightforward. The tax treatment of earn-out payments when <strong>selling agency tax UK</strong> planning depends entirely on how the earn-out is structured in the legal documents. Get it right and you pay capital gains tax at 14% (or 20%). Get it wrong and HMRC treats the earn-out as income, taxed at up to 45% plus National Insurance.</p>
+<p>The answer is not straightforward. The tax treatment of earn-out payments when <strong>selling agency tax UK</strong> planning depends entirely on how the earn-out is structured in the legal documents. Get it right and you pay capital gains tax at 18% (or 20%). Get it wrong and HMRC treats the earn-out as income, taxed at up to 45% plus National Insurance.</p>
 
 <p>This article explains the two main structures for earn-outs, how each is taxed, and what you need to discuss with your accountant and solicitor before signing anything.</p>
 
@@ -67,7 +67,7 @@ keyTakeaways:
 
 <p>HMRC's default position is that earn-out payments in a share sale are treated as capital receipts. This means they are subject to capital gains tax, not income tax. The rate depends on your total gains for the tax year and whether you qualify for Business Asset Disposal Relief (BADR).</p>
 
-<p>BADR (formerly Entrepreneurs' Relief) gives you a 14% capital gains tax rate on qualifying disposals, up to a lifetime limit of £1 million. For agency founders, this is the most valuable relief available on an exit. But there are conditions.</p>
+<p>BADR (formerly Entrepreneurs' Relief) gives you a 18% capital gains tax rate on qualifying disposals, up to a lifetime limit of £1 million. For agency founders, this is the most valuable relief available on an exit. But there are conditions.</p>
 
 <p>To qualify for BADR on the earn-out element, you must meet the qualifying conditions at the time of the original disposal. You need to have held at least 5% of the shares and voting rights, and been an officer or employee of the agency, for the two years immediately before the sale completes.</p>
 
@@ -77,7 +77,7 @@ keyTakeaways:
 
 <p>In an asset sale, the buyer purchases the agency's assets: client contracts, goodwill, intellectual property, equipment, and possibly the company name. The company (not you personally) receives the sale proceeds. The company then distributes the money to you as a shareholder, typically through a capital distribution or a dividend.</p>
 
-<p>If the earn-out is paid to the company and then distributed to you, the tax treatment depends on how the distribution is structured. Capital distributions (winding up or share buyback) can qualify for capital gains treatment and potentially BADR. Dividend distributions are taxed at dividend rates (8.75%, 33.75%, or 39.35%).</p>
+<p>If the earn-out is paid to the company and then distributed to you, the tax treatment depends on how the distribution is structured. Capital distributions (winding up or share buyback) can qualify for capital gains treatment and potentially BADR. Dividend distributions are taxed at dividend rates (10.75%, 35.75%, or 39.35%).</p>
 
 <p>Asset sales are less common for agency sales because the buyer typically wants to acquire the company itself to preserve contracts and relationships. But they do happen, particularly when the buyer wants to avoid inheriting the company's liabilities.</p>
 
@@ -87,9 +87,9 @@ keyTakeaways:
 
 <p>HMRC has a specific rule: if you receive a payment that is "earned" by providing services after the sale, it is income, not capital. This is called the "earned income" argument. HMRC uses it aggressively where the earn-out is tied to you staying with the agency and meeting personal performance targets.</p>
 
-<p>For example, if the earn-out says you must remain as Managing Director for three years and the payment is based on your personal billable hours or your own client relationships, HMRC will likely treat the earn-out as employment income. You will pay income tax at up to 45%, plus employee and employer National Insurance (13.8% employer, 2% employee above thresholds).</p>
+<p>For example, if the earn-out says you must remain as Managing Director for three years and the payment is based on your personal billable hours or your own client relationships, HMRC will likely treat the earn-out as employment income. You will pay income tax at up to 45%, plus employee and employer National Insurance (15% employer, 2% employee above thresholds).</p>
 
-<p>Compare that to 14% capital gains tax under BADR. The difference is enormous.</p>
+<p>Compare that to 18% capital gains tax under BADR. The difference is enormous.</p>
 
 <p>On a £500,000 earn-out, the difference between 10% CGT and 45% income tax is £175,000. That is a £175,000 mistake.</p>
 

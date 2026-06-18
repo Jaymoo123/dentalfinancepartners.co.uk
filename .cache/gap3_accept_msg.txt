@@ -1,0 +1,3 @@
+GAP-3 acceptance: manager verification (runtime OB-01, OB-02 grep, build+tests reproduced)
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

@@ -1,9 +1,9 @@
-# Brief: gp-expense-sharing-vs-full-partnership
+﻿# Brief: gp-expense-sharing-vs-full-partnership
 
 **Site:** medical (UK doctors / GPs / consultants)
 **Wave/Cluster:** Wave 2, Cluster F (Leaving, retiring and mergers), pick F3
 **Source file (to be created):** `Medical/web/content/blog/gp-expense-sharing-vs-full-partnership.md`
-**Live URL (when indexed):** https://www.medicalaccountantsuk.co.uk/blog/gp-expense-sharing-vs-full-partnership
+**Live URL (when indexed):** https://www.medicalaccounts.co.uk/blog/gp-expense-sharing-vs-full-partnership
 **Generated:** 2026-06-03
 **Anchored to:** house_positions.md §1 (status follows the substance not the label; a GP partner is self-employed; the partnership files an SA800 and each partner's share flows to the SA104; partners taxed on profit share; partnership taxation under ITTOIA 2005; status rests on the facts).
 

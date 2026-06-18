@@ -16,11 +16,11 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/hands-holding-us-dollar-bills-4968384/
   source: Pexels
 h1: How to Pay Dividends from Retained Profits Without Creating a Director's Loan
-summary: Paying dividends from retained profits should be straightforward, but many agency founders accidentally create a director's loan account problem. Here's how to get it right, avoid the 33.75% S455 tax charge, and keep your accountant happy.
+summary: Paying dividends from retained profits should be straightforward, but many agency founders accidentally create a director's loan account problem. Here's how to get it right, avoid the 35.75% S455 tax charge, and keep your accountant happy.
 schema: ''
 faqs:
 - question: What happens if I pay a dividend when the company has no retained profits?
-  answer: That dividend is illegal. It is treated as a distribution out of capital, and the amount you received becomes an overdrawn director's loan. The company must pay S455 tax at 33.75% if the loan is not repaid within nine months of the year end. You also face potential legal issues if the company becomes insolvent later. Always check retained profits exist before paying any dividend.
+  answer: That dividend is illegal. It is treated as a distribution out of capital, and the amount you received becomes an overdrawn director's loan. The company must pay S455 tax at 35.75% if the loan is not repaid within nine months of the year end. You also face potential legal issues if the company becomes insolvent later. Always check retained profits exist before paying any dividend.
 - question: Can I pay myself a monthly dividend if my agency has retained profits from last year?
   answer: Yes, provided the retained profits from prior periods are sufficient to cover the total dividends you pay this year. If you have £50,000 of retained profits carried forward, you can pay £5,000 per month for ten months even if this year's trading is break-even. Just ensure the cash is actually available in the company bank account before each payment.
 - question: How do I fix an overdrawn director's loan account from a dividend I paid last year?
@@ -32,15 +32,15 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Retained profits are an accounting figure, not cash; paying a dividend without sufficient cash creates an overdrawn director's loan.
 - Before transferring any dividend, you must create a dividend voucher and board minutes approving the payment.
-- If you pay a dividend exceeding available cash, the excess is treated as a director's loan, triggering a 33.75% S455 tax charge if not repaid within nine months.
-- For 2025/26, dividend tax rates are 8.75%, 33.75%, or 39.35% depending on your total income band.
+- If you pay a dividend exceeding available cash, the excess is treated as a director's loan, triggering a 35.75% S455 tax charge if not repaid within nine months.
+- For 2026/27, dividend tax rates are 10.75%, 35.75%, or 39.35% depending on your total income band.
 - The dividend voucher must include the company name, shareholder name, date, amount per share, and total amount, and be created before or on the payment date.
 ---
-<p>If you own an agency limited company, dividends are likely your main route to getting money out of the business. The tax efficiency is well known: you take a small salary up to the National Insurance threshold, then extract the rest as dividends, paying dividend tax at 8.75%, 33.75%, or 39.35% depending on your total income.</p>
+<p>If you own an agency limited company, dividends are likely your main route to getting money out of the business. The tax efficiency is well known: you take a small salary up to the National Insurance threshold, then extract the rest as dividends, paying dividend tax at 10.75%, 35.75%, or 39.35% depending on your total income.</p>
 
 <p>But here is where it goes wrong. You look at your bank balance, see £40,000 sitting there, and think "that's retained profit, I can take it as a dividend." You transfer the money to your personal account. Later, your accountant prepares the year-end accounts and tells you that you have a director's loan account balance of £12,000.</p>
 
-<p>That £12,000 is not a dividend. It is a loan from your company to you. And unless you repay it within nine months of the year end, you trigger a tax charge under Section 455 at 33.75% of the amount. That is £4,050 you did not plan to pay.</p>
+<p>That £12,000 is not a dividend. It is a loan from your company to you. And unless you repay it within nine months of the year end, you trigger a tax charge under Section 455 at 35.75% of the amount. That is £4,050 you did not plan to pay.</p>
 
 <p>This article explains exactly how to pay dividends from retained profits without accidentally creating a director's loan. We will cover the three documents you need before you transfer a penny, the timing rules that catch most founders out, and what to do if you have already made the mistake.</p>
 
@@ -67,7 +67,7 @@ keyTakeaways:
 <li>Your name as the shareholder</li>
 <li>The date of the dividend</li>
 <li>The amount per share and total amount</li>
-<li>The dividend tax credit (for 2025/26, this is effectively built into the dividend tax rates)</li>
+<li>The dividend tax credit (for 2026/27, this is effectively built into the dividend tax rates)</li>
 </ul>
 
 <p>You do not need a specific format. A simple PDF or even an email with these details is sufficient for HMRC. But you must create it before or on the date of payment, not weeks later when your accountant asks for it.</p>
@@ -119,13 +119,13 @@ keyTakeaways:
 <p>If you pay a dividend that exceeds available retained profits, or pay a dividend when the company does not have cash to support it, you create an overdrawn director's loan account. The consequences are:</p>
 
 <ul>
-<li><strong>S455 tax charge:</strong> 33.75% of the overdrawn amount, payable by the company. This is a tax charge, not a loan. You do not get it back unless the loan is repaid.</li>
-<li><strong>Beneficial loan interest:</strong> HMRC charges interest on the loan at the official rate (currently 2.25% for 2025/26). If the company does not charge you that interest, the difference is a benefit in kind, reportable on a P11D, and subject to Class 1A National Insurance at 13.8%.</li>
+<li><strong>S455 tax charge:</strong> 35.75% of the overdrawn amount, payable by the company. This is a tax charge, not a loan. You do not get it back unless the loan is repaid.</li>
+<li><strong>Beneficial loan interest:</strong> HMRC charges interest on the loan at the official rate (currently 2.25% for 2026/27). If the company does not charge you that interest, the difference is a benefit in kind, reportable on a P11D, and subject to Class 1A National Insurance at 15%.</li>
 <li><strong>Corporation tax deduction lost:</strong> If the company had instead paid you a salary, it would get a corporation tax deduction. A director's loan gives no deduction.</li>
 <li><strong>Repayment deadline:</strong> You must repay the loan within nine months of the company's year end to avoid the S455 charge. If your year end is 31 March 2025, you need to repay by 31 December 2025.</li>
 </ul>
 
-<p>If you do not repay within nine months, the company pays the 33.75% S455 tax. When you eventually repay the loan, the company can reclaim that tax. But that means the company has been out of pocket for potentially years.</p>
+<p>If you do not repay within nine months, the company pays the 35.75% S455 tax. When you eventually repay the loan, the company can reclaim that tax. But that means the company has been out of pocket for potentially years.</p>
 
 <h2>How to Fix an Existing Director's Loan</h2>
 
@@ -139,9 +139,9 @@ keyTakeaways:
 
 <h3>Option 2: Formalise the Loan</h3>
 
-<p>If the loan is over £10,000, the company must charge you interest at the HMRC official rate (2.25% for 2025/26). You need a written loan agreement. The company will report the interest as income. You will report the benefit in kind on your personal tax return. This is messy but compliant.</p>
+<p>If the loan is over £10,000, the company must charge you interest at the HMRC official rate (2.25% for 2026/27). You need a written loan agreement. The company will report the interest as income. You will report the benefit in kind on your personal tax return. This is messy but compliant.</p>
 
-<p>The S455 charge still applies unless you repay within nine months of year end. So formalising the loan does not avoid the 33.75% charge. It just makes the arrangement legal.</p>
+<p>The S455 charge still applies unless you repay within nine months of year end. So formalising the loan does not avoid the 35.75% charge. It just makes the arrangement legal.</p>
 
 <h3>Option 3: Declare a Proper Dividend (If Retained Profits Exist)</h3>
 

@@ -37,7 +37,7 @@ SITES = {
         "author": "Dental Finance Partners Editorial Team",
     },
     "Medical": {
-        "domain": "medicalaccountantsuk.co.uk",
+        "domain": "medicalaccounts.co.uk",
         "url_style": "flat",
         "author": "Medical Accountants UK Editorial Team",
     },

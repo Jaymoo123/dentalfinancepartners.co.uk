@@ -1,0 +1,6 @@
+Phase F spec: Property adoption in 3 safe clusters (plumbing, tools, nurture)
+
+Safety pre-flights embedded: ptp key continuity verified, nurture already
+dormant in prod, schema stays local, lead pipeline untouched + probed per deploy.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

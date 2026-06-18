@@ -6,7 +6,7 @@ import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/
 import { siteConfig } from "@/config/site";
 import { getAllPosts } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";
+import { buildAccountingService } from "@accounting-network/web-shared/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -156,18 +156,26 @@ export default async function LocationPage({ params }: Props) {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const posts = getAllPosts().slice(0, 3);
 
-  const jsonLd = buildLocalBusinessJsonLd({
-    name: siteConfig.name,
-    legalName: siteConfig.legalName,
-    description: siteConfig.description,
-    city: cityName,
-    url: `${siteConfig.url}/locations/${slug}`,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    email: siteConfig.contact.email,
-    phone: siteConfig.contact.phone,
-    areaServed: cityName,
-    organizationType: "ProfessionalService",
-  });
+  // AccountingService (LocalBusiness sub-type). Phone is intentionally omitted:
+  // the business publishes no public phone, so no telephone is emitted in JSON-LD.
+  const jsonLd = JSON.stringify(
+    buildAccountingService(
+      {
+        name: siteConfig.name,
+        description: siteConfig.description,
+        city: cityName,
+        url: `${siteConfig.url}/locations/${slug}`,
+        areaServed: [cityName],
+      },
+      {
+        siteUrl: siteConfig.url,
+        siteName: siteConfig.name,
+        legalName: siteConfig.legalName,
+        description: siteConfig.description,
+        publisherLogoUrl: siteConfig.publisherLogoUrl,
+      },
+    ),
+  );
 
   return (
     <>

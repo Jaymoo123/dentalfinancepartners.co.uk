@@ -74,7 +74,7 @@ keyTakeaways:
 
 <p>On paper, Alex has transferred 20% of his share of the goodwill (worth £100,000) to Jordan. HMRC sees this as a disposal by Alex of part of his partnership interest. The consideration is not shares, it's the transfer of value to Jordan. That £100,000 is immediately chargeable to capital gains tax.</p>
 
-<p>If Alex has used his annual exemption (£3,000 for 2025/26) and his full BADR lifetime limit is intact, the tax at 14% would be £10,000. If he has already used his BADR allowance, the rate jumps to 20%, a £20,000 tax bill on day one of the new company.</p>
+<p>If Alex has used his annual exemption (£3,000 for 2025/26) and his full BADR lifetime limit is intact, the tax at 18% would be £10,000. If he has already used his BADR allowance, the rate jumps to 20%, a £20,000 tax bill on day one of the new company.</p>
 
 <p>And that's the best case. If HMRC successfully argues the transfer is earnings, Alex could face income tax at 40% or 45% plus Class 4 National Insurance.</p>
 
@@ -92,7 +92,7 @@ keyTakeaways:
 
 <p>Once the company is up and running, you can restructure the shareholdings. This might involve one partner transferring shares to another, or the company buying back shares, or a new class of shares being created.</p>
 
-<p>The tax treatment of that later restructuring depends on the specifics. A share transfer between individuals is a straightforward disposal for CGT purposes, often at 14% with BADR if the conditions are met. A company share buyback is more complex but can be structured tax-efficiently.</p>
+<p>The tax treatment of that later restructuring depends on the specifics. A share transfer between individuals is a straightforward disposal for CGT purposes, often at 18% with BADR if the conditions are met. A company share buyback is more complex but can be structured tax-efficiently.</p>
 
 <p>The key point: you separate the incorporation from the rebalancing. Each step is clean, documented, and tax transparent.</p>
 

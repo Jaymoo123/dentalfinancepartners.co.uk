@@ -1,7 +1,7 @@
----
+﻿---
 title: "NHS Pension Tax Charges: How to Minimize Your Tax Bill as a Medical Professional"
 slug: "nhs-pension-tax-charges-how-to-minimize"
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-tax-charges-how-to-minimize"
+canonical: "https://www.medicalaccounts.co.uk/blog/nhs-pension-tax-charges-how-to-minimize"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"

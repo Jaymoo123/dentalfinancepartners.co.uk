@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - A management buyout (MBO) lets you sell your agency to your existing leadership team, often using the agency's future profits to fund the purchase.
 - 'MBOs typically involve three funding layers: management equity, bank or lender debt, and vendor finance from the seller.'
-- With the right structure, an MBO can qualify for Business Asset Disposal Relief (BADR), reducing capital gains tax to 14% on the first £1 million of gains.
+- With the right structure, an MBO can qualify for Business Asset Disposal Relief (BADR), reducing capital gains tax to 18% on the first £1 million of gains.
 - Selling via an MBO usually yields a lower price than a trade sale, but offers continuity, control over timing, and preservation of your agency's culture.
 - In a typical MBO, the management team pays a portion upfront, raises debt against future profits, and pays the balance over time through earn-outs or loan notes.
 ---
@@ -58,7 +58,7 @@ keyTakeaways:
 <li><strong>Continuity.</strong> The management team knows the business. Clients stay. Staff stay. The culture does not get stripped out by a corporate buyer.</li>
 <li><strong>Control over timing.</strong> You can agree a transition period that works for you. Six months. A year. Longer if you want to stay on as a non-executive.</li>
 <li><strong>Legacy.</strong> You get to see the people you trained take over and grow the business. For many founders, that matters more than the highest possible price.</li>
-<li><strong>Tax planning.</strong> With the right structure, an MBO can qualify for Business Asset Disposal Relief (BADR), meaning you pay 14% capital gains tax on the first £1 million of gains rather than the standard 20%.</li>
+<li><strong>Tax planning.</strong> With the right structure, an MBO can qualify for Business Asset Disposal Relief (BADR), meaning you pay 18% capital gains tax on the first £1 million of gains rather than the standard 20%.</li>
 </ul>
 
 <p>The trade-off is price. A trade buyer will typically pay more than a management team can afford. You are trading top dollar for continuity and control. For many agency founders, that is a fair exchange.</p>
@@ -92,7 +92,7 @@ keyTakeaways:
 <p>This is where things get specific. The tax treatment of an MBO depends on how the transaction is structured. Get it wrong and you could pay 20% CGT when you could have paid 10%. Or worse, you could trigger an income tax charge on what should be a capital gain.</p>
 
 <h3>Business Asset Disposal Relief (BADR)</h3>
-<p>BADR (formerly Entrepreneurs' Relief) lets you pay 14% CGT on qualifying gains up to £1 million. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal. In an MBO, this is usually straightforward if you are selling your entire shareholding. But if you stay on as a consultant or non-executive, HMRC may argue you have not genuinely disposed of the business. The rules around "associated disposals" are strict. If you plan to stay involved, take advice on whether BADR still applies to your full gain.</p>
+<p>BADR (formerly Entrepreneurs' Relief) lets you pay 18% CGT on qualifying gains up to £1 million. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal. In an MBO, this is usually straightforward if you are selling your entire shareholding. But if you stay on as a consultant or non-executive, HMRC may argue you have not genuinely disposed of the business. The rules around "associated disposals" are strict. If you plan to stay involved, take advice on whether BADR still applies to your full gain.</p>
 
 <h3>Deferred consideration and loan notes</h3>
 <p>If you take part of the price later, you need to decide whether the gain is taxed upfront or as you receive the cash. With a loan note, you can elect to spread the gain over the payment period, which can keep you in a lower tax band. But the rules are technical. A poorly drafted loan note can trigger an immediate tax charge on the full amount, even though you have not received the cash.</p>

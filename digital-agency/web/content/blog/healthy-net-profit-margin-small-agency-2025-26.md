@@ -164,7 +164,7 @@ keyTakeaways:
 
 <p>This is where a good accountant earns their fee. The right structure for your agency can save you thousands in tax each year. That saving goes straight to net profit.</p>
 
-<p>For most small agencies, a limited company structure is the right choice. You pay corporation tax on profits, then take dividends. But there are nuances. If you are planning to exit within five years, you might want to hold shares personally to qualify for Business Asset Disposal Relief (BADR), which gives you a 14% capital gains tax rate on the first £1m of gains. If you are building a group of agencies, a holding company structure might be better.</p>
+<p>For most small agencies, a limited company structure is the right choice. You pay corporation tax on profits, then take dividends. But there are nuances. If you are planning to exit within five years, you might want to hold shares personally to qualify for Business Asset Disposal Relief (BADR), which gives you a 18% capital gains tax rate on the first £1m of gains. If you are building a group of agencies, a holding company structure might be better.</p>
 
 <p>Our <a href="/blog/incorporation-and-structure">incorporation and structure</a> guides cover the options. If you are not sure which structure suits your exit plans, ask your accountant before you make any changes.</p>
 

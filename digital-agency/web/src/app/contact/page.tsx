@@ -8,7 +8,7 @@ import { JsonLd, referencedOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `Contact ${siteConfig.name} | Book Free Consultation`,
-  description: `Contact ${siteConfig.name} for agency accounting enquiries. Tax planning, management accounts, IR35 and incorporation. 24-hour response. Phone, email, or form.`,
+  description: `Contact ${siteConfig.name} for agency accounting enquiries. Tax planning, management accounts, IR35 and incorporation. 24-hour response. Enquire by form or email.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
@@ -39,13 +39,11 @@ export default function ContactPage() {
       "@id": `${siteConfig.url}#organization`,
       name: siteConfig.name,
       email: siteConfig.contact.email,
-      telephone: siteConfig.contact.phone,
       url: siteConfig.url,
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer service",
         email: siteConfig.contact.email,
-        telephone: siteConfig.contact.phone,
         areaServed: "GB",
         availableLanguage: "en",
       },
@@ -73,7 +71,7 @@ export default function ContactPage() {
             />
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold text-white sm:text-4xl lg:text-6xl">Contact</h1>
             <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
-              New enquiries by form, phone, or email. We aim to reply within one working day.
+              New enquiries by form or email. We aim to reply within one working day.
             </p>
           </div>
         </div>

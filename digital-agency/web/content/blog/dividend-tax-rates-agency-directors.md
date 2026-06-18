@@ -1,13 +1,13 @@
 ---
-title: 'Dividend Tax Rates for Agency Directors 2025/26: What You’ll Actually Pay'
+title: 'Dividend Tax Rates for Agency Directors 2026/27: What You’ll Actually Pay'
 slug: dividend-tax-rates-agency-directors
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-tax-rates-agency-directors
 date: '2026-05-16'
 generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
-metaTitle: 'Dividend Tax Rates 2025/26: Agency Director Guide'
-metaDescription: Dividend tax rates for 2025/26 explained for UK agency directors. See the actual tax on £50k, £100k, and £200k dividends. Rates, allowances, and planning.
+metaTitle: 'Dividend Tax Rates 2026/27: Agency Director Guide'
+metaDescription: Dividend tax rates for 2026/27 explained for UK agency directors. See the actual tax on £50k, £100k, and £200k dividends. Rates, allowances, and planning.
 altText: Agency director reviewing dividend tax calculations on a laptop in a modern UK office with spreadsheets visible on screen
 image: /blog/dividend-tax-rates-agency-directors.jpg
 imageCredit:
@@ -15,48 +15,48 @@ imageCredit:
   photographerUrl: https://www.pexels.com/@rdne
   sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821470/
   source: Pexels
-h1: Dividend Tax Rates for Agency Directors 2025/26
-summary: If you run your agency through a limited company, dividends are still the most tax-efficient way to take money out. But the rates changed for 2025/26. Here’s what you’ll actually pay at £50k, £100k, and £200k of dividends, with worked examples.
+h1: Dividend Tax Rates for Agency Directors 2026/27
+summary: If you run your agency through a limited company, dividends are still the most tax-efficient way to take money out. But the rates changed for 2026/27. Here’s what you’ll actually pay at £50k, £100k, and £200k of dividends, with worked examples.
 schema: ''
 faqs:
-- question: What is the dividend tax rate for 2025/26?
-  answer: For 2025/26, the dividend tax rates are 8.75% for basic rate taxpayers, 33.75% for higher rate taxpayers, and 39.35% for additional rate taxpayers. The dividend allowance is £500. These rates apply to dividend income above the allowance.
+- question: What is the dividend tax rate for 2026/27?
+  answer: For 2026/27, the dividend tax rates are 10.75% for basic rate taxpayers, 35.75% for higher rate taxpayers, and 39.35% for additional rate taxpayers. The dividend allowance is £500. These rates apply to dividend income above the allowance.
 - question: How much tax will I pay on £50,000 of dividends as an agency director?
   answer: If you take a £12,570 salary plus £50,000 in dividends, your dividend tax bill is approximately £7,281. That is an effective rate of 14.6% on the dividends. The exact figure depends on your other income and whether you have used your basic rate band.
-- question: Is it better to take dividends or salary in 2025/26?
-  answer: Dividends are still more tax-efficient than salary above the £12,570 threshold. Dividends avoid National Insurance contributions entirely. For a higher rate taxpayer, dividends at 33.75% compare favourably to salary at 40% income tax plus 2% employee NI and 13.8% employer NI. The gap has narrowed but dividends remain the better option.
+- question: Is it better to take dividends or salary in 2026/27?
+  answer: Dividends are still more tax-efficient than salary above the £12,570 threshold. Dividends avoid National Insurance contributions entirely. For a higher rate taxpayer, dividends at 35.75% compare favourably to salary at 40% income tax plus 2% employee NI and 15% employer NI. The gap has narrowed but dividends remain the better option.
 - question: Can I pay dividends to my spouse to reduce tax?
-  answer: Yes, if your spouse is a genuine shareholder in the agency. They have their own personal allowance, dividend allowance, and basic rate band. If they have little other income, they can receive dividends taxed at 0% or 8.75% rather than your higher rate. HMRC may challenge arrangements where shares are held purely for tax avoidance without real ownership, so ensure the shareholding is genuine.
+  answer: Yes, if your spouse is a genuine shareholder in the agency. They have their own personal allowance, dividend allowance, and basic rate band. If they have little other income, they can receive dividends taxed at 0% or 10.75% rather than your higher rate. HMRC may challenge arrangements where shares are held purely for tax avoidance without real ownership, so ensure the shareholding is genuine.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- For 2025/26, the dividend allowance is £500, with tax rates of 8.75% (basic), 33.75% (higher), and 39.35% (additional rate).
-- Taking £50,000 dividends on top of a £12,570 salary results in a total dividend tax of £7,281.25, an effective rate of 14.6%.
+- For 2026/27, the dividend allowance is £500, with tax rates of 10.75% (basic), 35.75% (higher), and 39.35% (additional rate).
+- Taking £50,000 dividends on top of a £12,570 salary results in a total dividend tax of £8,271.25, an effective rate of 16.5%.
 - With £100,000 dividends and £12,570 salary, total income of £112,570 triggers a personal allowance reduction, creating a 60% effective tax trap.
 - Dividends count towards adjusted net income, so exceeding £100,000 reduces your personal allowance by £1 for every £2 of income above that threshold.
-- The basic rate band for 2025/26 is £50,270; any dividend income above this is taxed at higher or additional rates depending on total income.
+- The basic rate band for 2026/27 is £50,270; any dividend income above this is taxed at higher or additional rates depending on total income.
 ---
-<p>If you run your agency through a limited company, dividends are still the most tax-efficient way to take money out of the business. But the rates changed for 2025/26, and the dividend allowance has shrunk again. You need to know exactly what you'll pay before you declare that next dividend.</p>
+<p>If you run your agency through a limited company, dividends are still the most tax-efficient way to take money out of the business. But the rates changed for 2026/27, and the dividend allowance has shrunk again. You need to know exactly what you'll pay before you declare that next dividend.</p>
 
 <p>This is a short, practical post. No fluff. Just the rates, the allowances, and worked examples for agency directors taking dividends at three common levels: £50,000, £100,000, and £200,000. I'll show you the actual tax bill in each case.</p>
 
-<h2>Dividend Tax Rates for 2025/26</h2>
+<h2>Dividend Tax Rates for 2026/27</h2>
 
-<p>For the 2025/26 tax year (6 April 2025 to 5 April 2026), the dividend tax rates are:</p>
+<p>For the 2026/27 tax year (6 April 2026 to 5 April 2027), the dividend tax rates are:</p>
 
 <ul>
-<li><strong>Basic rate taxpayers:</strong> 8.75% on dividend income above the allowance</li>
-<li><strong>Higher rate taxpayers:</strong> 33.75% on dividend income above the allowance</li>
+<li><strong>Basic rate taxpayers:</strong> 10.75% on dividend income above the allowance</li>
+<li><strong>Higher rate taxpayers:</strong> 35.75% on dividend income above the allowance</li>
 <li><strong>Additional rate taxpayers:</strong> 39.35% on dividend income above the allowance</li>
 </ul>
 
 <p>Your tax band is determined by your total taxable income for the year. That includes your salary from the agency, any other employment or self-employment income, rental income, bank interest, and the dividends themselves.</p>
 
-<p>The <strong>dividend allowance</strong> for 2025/26 is £500. That is the amount of dividend income you can receive each year before any tax is due. It is not a nil-rate band in the same way the personal allowance works. It is an allowance that sits within the basic rate band. If you are a higher rate taxpayer, you still get the £500 allowance. It just means the first £500 of dividends is taxed at 0%.</p>
+<p>The <strong>dividend allowance</strong> for 2026/27 is £500. That is the amount of dividend income you can receive each year before any tax is due. It is not a nil-rate band in the same way the personal allowance works. It is an allowance that sits within the basic rate band. If you are a higher rate taxpayer, you still get the £500 allowance. It just means the first £500 of dividends is taxed at 0%.</p>
 
 <h2>The Personal Allowance Trap</h2>
 
-<p>Your personal allowance is £12,570 for 2025/26. But if your total adjusted net income exceeds £100,000, your personal allowance starts to reduce by £1 for every £2 of income above that threshold. Once your income hits £125,140, your personal allowance is gone entirely.</p>
+<p>Your personal allowance is £12,570 for 2026/27. But if your total adjusted net income exceeds £100,000, your personal allowance starts to reduce by £1 for every £2 of income above that threshold. Once your income hits £125,140, your personal allowance is gone entirely.</p>
 
 <p>This matters for agency directors because dividends count towards adjusted net income. If you are taking a salary of £12,570 plus dividends of £100,000, your total income is £112,570. That means your personal allowance is reduced by £6,285 (half of £12,570). You end up paying more tax on your salary and any other income than you might expect.</p>
 
@@ -66,7 +66,7 @@ keyTakeaways:
 
 <p>Let's say you are a typical agency director. You pay yourself a salary of £12,570 (up to the primary NI threshold, so no employee or employer NI due). You then take £50,000 in dividends from your agency's retained profits.</p>
 
-<p>Your total income for the year is £62,570. That puts you in the basic rate band for income tax purposes. But remember: the basic rate band is £50,270 for 2025/26. Your salary of £12,570 uses up £12,570 of that band. The remaining £37,700 of basic rate band is available for your dividends.</p>
+<p>Your total income for the year is £62,570. That puts you in the basic rate band for income tax purposes. But remember: the basic rate band is £50,270 for 2026/27. Your salary of £12,570 uses up £12,570 of that band. The remaining £37,700 of basic rate band is available for your dividends.</p>
 
 <p>Here is the calculation:</p>
 
@@ -74,17 +74,17 @@ keyTakeaways:
 <li>Total dividends: £50,000</li>
 <li>Dividend allowance: £500 taxed at 0%</li>
 <li>Remaining dividends: £49,500</li>
-<li>Of that, £37,700 falls within the basic rate band: taxed at 8.75%</li>
-<li>The remaining £11,800 falls into the higher rate band: taxed at 33.75%</li>
+<li>Of that, £37,700 falls within the basic rate band: taxed at 10.75%</li>
+<li>The remaining £11,800 falls into the higher rate band: taxed at 35.75%</li>
 </ul>
 
 <p>The tax due is:</p>
 
-<p>£37,700 × 8.75% = £3,298.75<br>
-£11,800 × 33.75% = £3,982.50<br>
-<strong>Total dividend tax: £7,281.25</strong></p>
+<p>£37,700 × 10.75% = £4,052.75<br>
+£11,800 × 35.75% = £4,218.50<br>
+<strong>Total dividend tax: £8,271.25</strong></p>
 
-<p>On £50,000 of dividends, you keep £42,718.75 after tax. That is an effective rate of 14.6%. Not bad, but higher than many agency directors expect.</p>
+<p>On £50,000 of dividends, you keep £41,728.75 after tax. That is an effective rate of 16.5%. Not bad, but higher than many agency directors expect.</p>
 
 <h2>Worked Example 2: £100,000 of Dividends</h2>
 
@@ -108,15 +108,15 @@ keyTakeaways:
 <p>Of the £99,500 taxable dividends:</p>
 
 <ul>
-<li>£31,415 falls within the basic rate band: taxed at 8.75% = £2,748.81</li>
-<li>£68,085 falls within the higher rate band: taxed at 33.75% = £22,978.69</li>
+<li>£31,415 falls within the basic rate band: taxed at 10.75% = £3,377.11</li>
+<li>£68,085 falls within the higher rate band: taxed at 35.75% = £24,340.39</li>
 </ul>
 
-<p><strong>Total dividend tax: £25,727.50</strong></p>
+<p><strong>Total dividend tax: £27,717.50</strong></p>
 
-<p>On £100,000 of dividends, you keep £74,272.50 after tax. That is an effective rate of 25.7%.</p>
+<p>On £100,000 of dividends, you keep £72,282.50 after tax. That is an effective rate of 27.7%.</p>
 
-<p>But remember: you also lose part of your personal allowance, which increases the tax on your salary. The total additional tax from the personal allowance reduction is roughly £1,257 (20% of £6,285). So your total extra tax cost from taking £100k in dividends is around £27,000.</p>
+<p>But remember: you also lose part of your personal allowance, which increases the tax on your salary. The total additional tax from the personal allowance reduction is roughly £1,257 (20% of £6,285). So your total extra tax cost from taking £100k in dividends is around £29,000.</p>
 
 <h2>Worked Example 3: £200,000 of Dividends</h2>
 
@@ -137,16 +137,16 @@ keyTakeaways:
 <p>Here is the breakdown:</p>
 
 <ul>
-<li>£37,700 of dividends in the basic rate band: taxed at 8.75% = £3,298.75</li>
-<li>£74,870 of dividends in the higher rate band: taxed at 33.75% = £25,268.63</li>
+<li>£37,700 of dividends in the basic rate band: taxed at 10.75% = £4,052.75</li>
+<li>£74,870 of dividends in the higher rate band: taxed at 35.75% = £26,766.03</li>
 <li>£86,930 of dividends in the additional rate band: taxed at 39.35% = £34,206.96</li>
 </ul>
 
-<p><strong>Total dividend tax: £62,774.34</strong></p>
+<p><strong>Total dividend tax: £65,025.74</strong></p>
 
-<p>On £200,000 of dividends, you keep £137,225.66 after tax. That is an effective rate of 31.4%.</p>
+<p>On £200,000 of dividends, you keep £134,974.26 after tax. That is an effective rate of 32.5%.</p>
 
-<p>Add in the tax on your salary (which is now fully taxable because you have no personal allowance), and your total tax bill is significantly higher. But purely on the dividends, you are paying nearly £63k in tax.</p>
+<p>Add in the tax on your salary (which is now fully taxable because you have no personal allowance), and your total tax bill is significantly higher. But purely on the dividends, you are paying nearly £65k in tax.</p>
 
 <h2>How to Reduce Your Dividend Tax Bill</h2>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <h3>Use Your Spouse's Allowances</h3>
 
-<p>If your spouse or civil partner is a shareholder in the agency, you can pay them dividends. They have their own personal allowance (£12,570), their own dividend allowance (£500), and their own basic rate band. If they have little or no other income, they can receive dividends taxed at 0% or 8.75% rather than your higher rate.</p>
+<p>If your spouse or civil partner is a shareholder in the agency, you can pay them dividends. They have their own personal allowance (£12,570), their own dividend allowance (£500), and their own basic rate band. If they have little or no other income, they can receive dividends taxed at 0% or 10.75% rather than your higher rate.</p>
 
 <p>This only works if the shares are genuinely owned by them. HMRC will challenge arrangements where shares are held purely for tax avoidance without any real ownership or risk. But for most married couples running an agency together, it is straightforward.</p>
 
@@ -168,13 +168,13 @@ keyTakeaways:
 
 <h3>Directors' Loan Account Planning</h3>
 
-<p>If you have loaned money to the company, or the company owes you money through a directors' loan account, you can sometimes repay that loan rather than taking dividends. This avoids dividend tax entirely. But the rules are strict. If the loan account is overdrawn (you owe the company money), there is a tax charge of 33.75% on the outstanding amount at the company's year-end. Speak to your accountant before moving money around.</p>
+<p>If you have loaned money to the company, or the company owes you money through a directors' loan account, you can sometimes repay that loan rather than taking dividends. This avoids dividend tax entirely. But the rules are strict. If the loan account is overdrawn (you owe the company money), there is a tax charge of 35.75% on the outstanding amount at the company's year-end. Speak to your accountant before moving money around.</p>
 
 <h2>What About the Dividend Allowance Reduction?</h2>
 
-<p>The dividend allowance was £2,000 in 2022/23. It dropped to £1,000 in 2023/24, then £500 in 2024/25. For 2025/26, it stays at £500.</p>
+<p>The dividend allowance was £2,000 in 2022/23. It dropped to £1,000 in 2023/24, then £500 in 2024/25. For 2026/27, it stays at £500.</p>
 
-<p>For most agency directors, this change is not material. On £50,000 of dividends, the difference between a £2,000 allowance and a £500 allowance is £131.25 in extra tax (1,500 × 8.75%). It is annoying, but it should not change your dividend strategy.</p>
+<p>For most agency directors, this change is not material. On £50,000 of dividends, the difference between a £2,000 allowance and a £500 allowance is £161.25 in extra tax (1,500 × 10.75%). It is annoying, but it should not change your dividend strategy.</p>
 
 <h2>When to Take Dividends</h2>
 
@@ -186,16 +186,16 @@ keyTakeaways:
 
 <h2>Dividend Tax vs. Salary: The Real Comparison</h2>
 
-<p>For 2025/26, taking dividends is still more tax-efficient than taking additional salary above the £12,570 threshold. Here is why:</p>
+<p>For 2026/27, taking dividends is still more tax-efficient than taking additional salary above the £12,570 threshold. Here is why:</p>
 
 <ul>
-<li>Additional salary above £12,570 incurs employee NI at 8% and employer NI at 13.8%. That is a combined 21.8% before income tax.</li>
-<li>Dividends incur no NI. The tax is 8.75%, 33.75%, or 39.35% depending on your band.</li>
+<li>Additional salary above £12,570 incurs employee NI at 8% and employer NI at 15%. That is a combined 23% before income tax.</li>
+<li>Dividends incur no NI. The tax is 10.75%, 35.75%, or 39.35% depending on your band.</li>
 </ul>
 
-<p>For a basic rate taxpayer, dividends at 8.75% are clearly better than salary at 20% income tax plus 21.8% NI. For a higher rate taxpayer, dividends at 33.75% versus salary at 40% plus 2% employee NI (above £50,270) plus 13.8% employer NI is still a win.</p>
+<p>For a basic rate taxpayer, dividends at 10.75% are clearly better than salary at 20% income tax plus 23% NI. For a higher rate taxpayer, dividends at 35.75% versus salary at 40% plus 2% employee NI (above £50,270) plus 15% employer NI is still a win.</p>
 
-<p>But the gap has narrowed. In 2021/22, the dividend higher rate was 32.5%. Now it is 33.75%. The direction of travel is clear. Dividends are still the better option, but the margin is smaller than it was.</p>
+<p>But the gap has narrowed. In 2021/22, the dividend higher rate was 32.5%. Now it is 35.75%. The direction of travel is clear. Dividends are still the better option, but the margin is smaller than it was.</p>
 
 <h2>What About IR35 Contractors?</h2>
 
@@ -205,7 +205,7 @@ keyTakeaways:
 
 <h2>Final Thought</h2>
 
-<p>The dividend tax rates for 2025/26 are straightforward. The planning around them is not. If you are taking more than £50,000 in dividends, the tax bill starts to bite. If you are above £100,000, the personal allowance trap adds another layer of cost.</p>
+<p>The dividend tax rates for 2026/27 are straightforward. The planning around them is not. If you are taking more than £50,000 in dividends, the tax bill starts to bite. If you are above £100,000, the personal allowance trap adds another layer of cost.</p>
 
 <p>Our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We know the numbers because we see them every day. If your dividend strategy has not been reviewed since the rates changed, now is the time.</p>
 
@@ -214,6 +214,6 @@ keyTakeaways:
 <h2>Related articles in Salary and Dividends</h2>
 <ul>
     <li><a href="/fundamentals/paying-yourself-agency-founder-pillar">Paying Yourself as an Agency Founder: Salary, Dividends and Pension</a></li>
-    <li><a href="/blog/salary-and-dividends/optimal-salary-dividend-split-agency-directors">Optimal Salary and Dividend Split for Agency Directors 2025/26</a></li>
+    <li><a href="/blog/salary-and-dividends/optimal-salary-dividend-split-agency-directors">Optimal Salary and Dividend Split for Agency Directors 2026/27</a></li>
 </ul>
 

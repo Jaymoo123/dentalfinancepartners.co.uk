@@ -71,7 +71,7 @@ keyTakeaways:
 
 <p>Dubai has no capital gains tax. That is the main attraction for many agency founders considering relocation. You sell your shares, pay nothing to the UAE government, and keep the full amount. But the UK temporary non-residence rule means that benefit only sticks if you stay away long enough.</p>
 
-<p>I have seen founders sell their agency for £3 million, move to Dubai for 3 years, and then return to the UK for family reasons. They thought the gain was tax-free. It was not. HMRC assessed the full gain in the year they returned, at 24% CGT (or 14% if BADR applied at the time). That is a £720,000 tax bill they did not plan for.</p>
+<p>I have seen founders sell their agency for £3 million, move to Dubai for 3 years, and then return to the UK for family reasons. They thought the gain was tax-free. It was not. HMRC assessed the full gain in the year they returned, at 24% CGT (or 18% if BADR applied at the time). That is a £720,000 tax bill they did not plan for.</p>
 
 <p>The rule applies regardless of your intentions. You do not need to plan to return for the rule to apply. If you return within 5 years for any reason, the gains are taxable. HMRC does not care why you came back.</p>
 
@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>What About Business Asset Disposal Relief?</h3>
 
-<p>If you sell your agency shares and qualify for Business Asset Disposal Relief (BADR), the CGT rate is 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026. That is still a significant tax charge. Moving to Dubai to avoid it only works if you stay non-resident for 5 complete tax years.</p>
+<p>If you sell your agency shares and qualify for Business Asset Disposal Relief (BADR), the CGT rate is 18% for disposals from 6 April 2025, rising to 18% from 6 April 2026. That is still a significant tax charge. Moving to Dubai to avoid it only works if you stay non-resident for 5 complete tax years.</p>
 
 <p>BADR itself has its own conditions. You need to hold the shares for at least 2 years, and you must be an officer or employee of the company. If you sell after leaving the UK but before the 2 year holding period ends, you lose the relief entirely. That is a separate issue from the temporary non-residence rule, but it compounds the problem.</p>
 

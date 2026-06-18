@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - A holding company owns shares in a trading company but does not trade itself, protecting assets from operational risks.
 - Separating cash and IP into a holding company creates a legal barrier against creditors of the trading company.
-- Selling shares in the holding company rather than the trading company can qualify for Business Asset Disposal Relief at 14% on the first £1m of gains.
+- Selling shares in the holding company rather than the trading company can qualify for Business Asset Disposal Relief at 18% on the first £1m of gains.
 - Holding companies are common for agencies turning over £500k to £5m, not just large PLCs or private equity portfolios.
 - A group structure allows the holding company to receive dividends from the trading company tax-efficiently within the group.
 ---
@@ -66,11 +66,11 @@ keyTakeaways:
 
 <p>This is the reason most agency founders talk to us about holding companies. If you plan to sell your agency, the structure of the sale matters enormously for your tax bill.</p>
 
-<p>Sell the shares in your trading company directly, and you pay Capital Gains Tax on the gain. If you qualify for Business Asset Disposal Relief (BADR), that rate is 14% on the first £1m of lifetime gains. Above that, it is 20%.</p>
+<p>Sell the shares in your trading company directly, and you pay Capital Gains Tax on the gain. If you qualify for Business Asset Disposal Relief (BADR), that rate is 18% on the first £1m of lifetime gains. Above that, it is 20%.</p>
 
-<p>But if your holding company owns the trading company shares, you can sell the holding company instead. That means you sell the shares in the holding company, not the trading company. The trading company continues to trade. The buyer gets the whole group. And you get the 14% BADR rate on the entire gain, provided the holding company meets the qualifying conditions.</p>
+<p>But if your holding company owns the trading company shares, you can sell the holding company instead. That means you sell the shares in the holding company, not the trading company. The trading company continues to trade. The buyer gets the whole group. And you get the 18% BADR rate on the entire gain, provided the holding company meets the qualifying conditions.</p>
 
-<p>There is a second layer to this. If you have built up significant cash reserves in the holding company, those reserves are not subject to a second tax charge on exit. The buyer pays you for the holding company shares. The cash sits in the holding company. You take it as capital, taxed at 14% or 20%, rather than extracting it as dividends at 33.75% before the sale.</p>
+<p>There is a second layer to this. If you have built up significant cash reserves in the holding company, those reserves are not subject to a second tax charge on exit. The buyer pays you for the holding company shares. The cash sits in the holding company. You take it as capital, taxed at 18% or 20%, rather than extracting it as dividends at 35.75% before the sale.</p>
 
 <p>That difference alone can save a six-figure sum on a mid-sized agency exit.</p>
 
@@ -92,9 +92,9 @@ keyTakeaways:
 
 <p>Sarah's current structure: one trading company. Everything sits in that company, cash, IP, client contracts, the lot.</p>
 
-<p>If she sells the shares in that company for £1.5m, her gain is roughly £1.3m after base cost. The first £1m qualifies for BADR at 14% (for disposals from 6 April 2025). The remaining £300k is taxed at 20%. Total CGT: £160k.</p>
+<p>If she sells the shares in that company for £1.5m, her gain is roughly £1.3m after base cost. The first £1m qualifies for BADR at 18% (for disposals from 6 April 2025). The remaining £300k is taxed at 20%. Total CGT: £160k.</p>
 
-<p>If she restructures into a holding company now, the holding company owns the trading company shares. The cash and IP move up to the holding company. When she sells, she sells the holding company shares. The gain is still £1.3m. But now the £180k cash sits in the holding company, not the trading company. The buyer pays for the holding company, which includes that cash. Sarah gets the cash as part of the sale proceeds, taxed at 14% rather than extracting it as dividends at 33.75% beforehand.</p>
+<p>If she restructures into a holding company now, the holding company owns the trading company shares. The cash and IP move up to the holding company. When she sells, she sells the holding company shares. The gain is still £1.3m. But now the £180k cash sits in the holding company, not the trading company. The buyer pays for the holding company, which includes that cash. Sarah gets the cash as part of the sale proceeds, taxed at 18% rather than extracting it as dividends at 35.75% beforehand.</p>
 
 <p>That restructure saves her roughly £42,750 in dividend tax on the cash extraction alone. Plus, the structure gives her creditor protection on the cash and IP in the meantime.</p>
 
@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p><strong>Dividends:</strong> The trading company pays dividends up to the holding company. No tax is due on this intra-group dividend. The holding company then pays dividends to you personally when you need cash. You pay dividend tax at your marginal rate on those personal dividends.</p>
 
-<p><strong>Directors' loan accounts:</strong> If you take money from either company without declaring it as salary or dividends, the directors' loan account rules apply. The £10k threshold and the S455 tax charge at 33.75% still apply. Do not treat the group as one pot of money. Each company is separate.</p>
+<p><strong>Directors' loan accounts:</strong> If you take money from either company without declaring it as salary or dividends, the directors' loan account rules apply. The £10k threshold and the S455 tax charge at 35.75% still apply. Do not treat the group as one pot of money. Each company is separate.</p>
 
 <p><strong>VAT:</strong> The trading company remains VAT-registered as before. The holding company typically does not trade, so it does not register for VAT unless it makes taxable supplies. Most holding companies do not.</p>
 

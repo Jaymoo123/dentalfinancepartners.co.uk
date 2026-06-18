@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Selling a controlling stake (over 50%) to an Employee Ownership Trust qualifies for a complete capital gains tax exemption, not just the 14% BADR rate.
+- Selling a controlling stake (over 50%) to an Employee Ownership Trust qualifies for a complete capital gains tax exemption, not just the 18% BADR rate.
 - The EOT must acquire shares at market value based on an independent valuation to avoid HMRC treating any discount as a distribution or employment income.
 - Deferred consideration paid by the trust over 5–10 years from future profits is entirely tax-free for the founder under the EOT capital gains exemption.
 - Employees benefit collectively through the trust, receiving tax-free profit-sharing bonuses of up to £3,600 per employee per year.
@@ -38,7 +38,7 @@ keyTakeaways:
 ---
 <p>If you own a marketing, digital, or creative agency, you have probably thought about your exit. The standard route is selling to a third party, a competitor, a private equity buyer, or a larger agency group. But there is another option that fewer founders consider, and it comes with a significant tax advantage.</p>
 
-<p>An Employee Ownership Trust (EOT) lets you sell your agency to your employees. And if you structure it correctly, you pay zero capital gains tax on the sale. Not 14% under Business Asset Disposal Relief. Not 20% under the main rate. Zero.</p>
+<p>An Employee Ownership Trust (EOT) lets you sell your agency to your employees. And if you structure it correctly, you pay zero capital gains tax on the sale. Not 18% under Business Asset Disposal Relief. Not 20% under the main rate. Zero.</p>
 
 <p>This article explains how an <strong>employee ownership trust agency exit</strong> works, who qualifies, and whether it is the right move for your business.</p>
 
@@ -93,11 +93,11 @@ keyTakeaways:
 <p>Compare this to a standard trade sale:</p>
 
 <ul>
-<li>Sell to a third party: 14% CGT under Business Asset Disposal Relief (if you qualify), or 24% under the main rate</li>
+<li>Sell to a third party: 18% CGT under Business Asset Disposal Relief (if you qualify), or 24% under the main rate</li>
 <li>Sell to an EOT: 0% CGT</li>
 </ul>
 
-<p>On a £3m agency sale, that is a saving of £420k (at 14%) or £720k (at 24%).</p>
+<p>On a £3m agency sale, that is a saving of £420k (at 18%) or £720k (at 24%).</p>
 
 <p>There is no upper limit on the exemption. Business Asset Disposal Relief has a £1m lifetime limit. The EOT exemption does not. Sell a £10m agency to an EOT, and you pay nothing in capital gains tax.</p>
 
@@ -156,7 +156,7 @@ keyTakeaways:
 
 <table>
 <tr><th>Exit Route</th><th>Sale Proceeds</th><th>CGT Rate</th><th>Tax Due</th><th>Net to Founder</th></tr>
-<tr><td>Trade sale (BADR)</td><td>£1,750,000</td><td>14% (first £1m), 24% (excess)</td><td>£320,000</td><td>£1,430,000</td></tr>
+<tr><td>Trade sale (BADR)</td><td>£1,750,000</td><td>18% (first £1m), 24% (excess)</td><td>£320,000</td><td>£1,430,000</td></tr>
 <tr><td>Trade sale (standard)</td><td>£1,750,000</td><td>24%</td><td>£420,000</td><td>£1,330,000</td></tr>
 <tr><td>EOT sale</td><td>£1,750,000</td><td>0%</td><td>£0</td><td>£1,750,000</td></tr>
 </table>

@@ -26,7 +26,7 @@ faqs:
 - question: Can I sell my agency if I am the main client relationship holder?
   answer: Yes, but the multiple will be lower. Buyers discount heavily when the business depends on one person. To maximise value, delegate client relationships to a team member at least 12 months before you list. Show the buyer that the business can run without you.
 - question: What tax relief is available when selling my agency?
-  answer: Business Asset Disposal Relief (BADR) gives a 14% CGT rate on the first £1m of qualifying gains. You need to have held the shares for at least two years and been an officer or employee of the company. Structure the sale as a share sale, not an asset sale, to qualify. Speak to your accountant before negotiating the deal.
+  answer: Business Asset Disposal Relief (BADR) gives a 18% CGT rate on the first £1m of qualifying gains. You need to have held the shares for at least two years and been an officer or employee of the company. Structure the sale as a share sale, not an asset sale, to qualify. Speak to your accountant before negotiating the deal.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -178,7 +178,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Overvaluing based on turnover</strong>, Revenue does not equal value. Profit and recurring revenue do.</li>
-<li><strong>Ignoring tax structuring</strong>, Selling shares rather than assets can save you tens of thousands in CGT. Business Asset Disposal Relief (BADR) gives you a 14% rate on the first £1m of gains if you qualify. Plan the structure before you negotiate.</li>
+<li><strong>Ignoring tax structuring</strong>, Selling shares rather than assets can save you tens of thousands in CGT. Business Asset Disposal Relief (BADR) gives you a 18% rate on the first £1m of gains if you qualify. Plan the structure before you negotiate.</li>
 <li><strong>Not preparing due diligence materials</strong>, Buyers will ask for three years of accounts, client lists, staff contracts, and supplier agreements. Have them ready. Delays kill momentum.</li>
 <li><strong>Negotiating without professional help</strong>, A good corporate finance advisor or M&A lawyer pays for themselves. Do not go it alone.</li>
 </ul>

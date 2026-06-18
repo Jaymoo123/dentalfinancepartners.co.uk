@@ -1,0 +1,10 @@
+SDK: close the pre-config identity race (render-phase init + no fallback prefix)
+
+Found by the G1 live continuity probe: child effects run before the parent
+provider's init effect, so experiment assignment on Property minted throwaway
+ids under the 'sdk' fallback prefix - decoupling arms from real visitor
+identity since F1's deploy. Fix: idempotent render-phase init (precedes ALL
+descendant effects) + ids/consent refuse fallback keys pre-config. 4
+regression tests pin the behaviour.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

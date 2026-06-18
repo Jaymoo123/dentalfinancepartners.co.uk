@@ -48,6 +48,7 @@ Every site that adopts the analytics SDK gets one frozen storage prefix, set onc
 | digital-agency | `agency` | `aff` |
 | generalist | `generalist` | `hd` |
 | contractors-ir35 | `contractors-ir35` | `cfp` |
+| construction-cis | `construction-cis` | `bfp` |
 
 **For site #8:** pick the next free two-to-three letter prefix (initials of the brand, or a clear niche abbreviation), confirm it is not already in use by grepping all `*/web/src/app/layout.tsx` files, and add it to this table in this doc before writing any code. The prefix is frozen from that moment.
 
