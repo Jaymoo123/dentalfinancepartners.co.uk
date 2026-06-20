@@ -96,3 +96,55 @@ export function buildMultiSiteSeries(
 
   return { series, sessions, visitors, conversion };
 }
+
+/**
+ * Weekly average daily visitors, all-time. Each output point is one ISO week
+ * (Mon-Sun); its value is that week's MEAN visitors per day. Only calendar days
+ * inside the data window count, so the first/last partial weeks aren't diluted,
+ * while genuine zero-traffic mid-period days correctly count as 0. One series;
+ * render with MultiSiteTrendChart. Accepts estate or per-site daily series.
+ */
+export function buildWeeklyAvgVisitors(
+  daily: Array<{ bucket: string; humans: number }>,
+  seriesKey: string,
+  seriesLabel: string,
+  color: string,
+): { series: SeriesMeta[]; points: MultiPoint[] } {
+  const series: SeriesMeta[] = [{ key: seriesKey, label: seriesLabel, color }];
+  if (daily.length === 0) return { series, points: [] };
+
+  const DAY = 86_400_000;
+  const byDay = new Map<number, number>();
+  let minDay = Infinity;
+  let maxDay = -Infinity;
+  for (const r of daily) {
+    const d = new Date(r.bucket);
+    const dayMs = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+    byDay.set(dayMs, (byDay.get(dayMs) ?? 0) + r.humans);
+    if (dayMs < minDay) minDay = dayMs;
+    if (dayMs > maxDay) maxDay = dayMs;
+  }
+
+  // Monday (UTC) of the week containing a given day.
+  const mondayOf = (ms: number) => {
+    const dow = (new Date(ms).getUTCDay() + 6) % 7; // 0 = Mon .. 6 = Sun
+    return ms - dow * DAY;
+  };
+
+  const points: MultiPoint[] = [];
+  for (let weekStart = mondayOf(minDay); weekStart <= mondayOf(maxDay); weekStart += 7 * DAY) {
+    let sum = 0;
+    let days = 0;
+    for (let d = weekStart; d < weekStart + 7 * DAY; d += DAY) {
+      if (d < minDay || d > maxDay) continue; // only days within the data window
+      sum += byDay.get(d) ?? 0;
+      days += 1;
+    }
+    if (days > 0) {
+      const p: MultiPoint = { bucket: new Date(weekStart).toISOString() };
+      p[seriesKey] = Math.round(sum / days);
+      points.push(p);
+    }
+  }
+  return { series, points };
+}

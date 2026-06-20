@@ -25,7 +25,7 @@ import { ConversionRateChart } from "@/components/ConversionRateChart";
 import { FunnelOverTimeChart } from "@/components/FunnelOverTimeChart";
 import { CumulativeChart } from "@/components/CumulativeChart";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
-import { buildMultiSiteSeries } from "@/lib/multiSiteSeries";
+import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
 
 export const dynamic = "force-dynamic";
@@ -65,8 +65,9 @@ export default async function SiteTrendsPage({
   const h24 = new Date(now.getTime() - 24 * 3600_000);
   const d7 = new Date(now.getTime() - 7 * 86400_000);
   const d30 = new Date(now.getTime() - 30 * 86400_000);
+  const allTimeFrom = new Date("2000-01-01");
 
-  const [q15, h24hourly, w7hourly, w7daily, m30daily, m30hourly, channelRows, funnelRows] =
+  const [q15, h24hourly, w7hourly, w7daily, m30daily, m30hourly, channelRows, funnelRows, siteAllDaily] =
     await Promise.all([
       getTimeseries(siteKey, "15 minutes", isoOf(h24), isoOf(now), countryFilter),
       getTimeseries(siteKey, "1 hour", isoOf(h24), isoOf(now), countryFilter),
@@ -76,6 +77,7 @@ export default async function SiteTrendsPage({
       getTimeseries(siteKey, "1 hour", isoOf(d30), isoOf(now), countryFilter),
       getChannelConversion(siteKey),
       getFunnelDaily(siteKey, countryFilter),
+      getTimeseries(siteKey, "1 day", isoOf(allTimeFrom), isoOf(now), countryFilter),
     ]);
 
   // Leads by channel (all countries, attributable/stitched leads), summed per channel.
@@ -109,6 +111,9 @@ export default async function SiteTrendsPage({
     [m30daily],
   );
 
+  // Weekly average daily visitors, all-time (this site).
+  const siteWeekly = buildWeeklyAvgVisitors(siteAllDaily, siteKey, site.display_name, "#059669");
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
       <div className="flex items-baseline justify-between gap-3">
@@ -134,6 +139,19 @@ export default async function SiteTrendsPage({
           label="Conversion (visitors to leads)"
           asPercent
           note="7-day rolling"
+        />
+      </div>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Visitor trend (weekly average)</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        Each point is one week; the value is that week&apos;s average visitors per day. All time.
+      </p>
+      <div className="mt-3 max-w-2xl">
+        <MultiSiteTrendChart
+          data={siteWeekly.points}
+          series={siteWeekly.series}
+          label="Avg daily visitors · per week"
+          note="all time"
         />
       </div>
 

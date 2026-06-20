@@ -39,7 +39,7 @@ import {
 } from "@accounting-network/web-shared/console/estateData";
 import { getTimeseries } from "@accounting-network/web-shared/console/adminData";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
-import { buildMultiSiteSeries } from "@/lib/multiSiteSeries";
+import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
 import SiteSwitcher from "@/components/SiteSwitcher";
 
@@ -102,7 +102,7 @@ export default async function EstatePage() {
   const startOfTodayUTC = new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   );
-  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30] =
+  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily] =
     await Promise.all([
       getSitesRegistry(),
       getEstateOverview(7),
@@ -115,6 +115,7 @@ export default async function EstatePage() {
       getEstateTimeseries("1 day", new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
       getEstateKpis(startOfTodayUTC.toISOString(), now.toISOString()),
       getEstateKpis(new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
+      getEstateTimeseries("1 day", new Date("2000-01-01").toISOString(), now.toISOString()),
     ]);
 
   // KPI reducer: sum SiteKpis[] into estate totals
@@ -181,6 +182,9 @@ export default async function EstatePage() {
     ),
   );
   const cmp = buildMultiSiteSeries(activeSites, perSiteSeries);
+
+  // Weekly average daily visitors, all-time (estate total).
+  const estateWeekly = buildWeeklyAvgVisitors(estateAllDaily, "estate", "Estate", "#059669");
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -252,6 +256,20 @@ export default async function EstatePage() {
             label="Conversion (visitors to leads)"
             asPercent
             note="7-day rolling"
+          />
+        </div>
+
+        {/* Visitor trend — weekly average daily visitors, all time */}
+        <h2 className="mt-10 text-lg font-bold text-slate-900">Visitor trend (weekly average)</h2>
+        <p className="mt-1 text-xs text-slate-500">
+          Each point is one week; the value is that week&apos;s average visitors per day. All time, GB-scoped — a new point lands every week.
+        </p>
+        <div className="mt-3 max-w-2xl">
+          <MultiSiteTrendChart
+            data={estateWeekly.points}
+            series={estateWeekly.series}
+            label="Avg daily visitors · per week"
+            note="all time"
           />
         </div>
 
