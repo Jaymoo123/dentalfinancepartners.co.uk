@@ -60,7 +60,7 @@ export function SnapshotCard({
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-3.5">
       <div className="flex items-center justify-between gap-2">
-        <span className="text-[11px] font-medium uppercase tracking-wide text-slate-400">{label}</span>
+        <span className="min-w-0 truncate text-[11px] font-medium uppercase tracking-wide text-slate-400">{label}</span>
         <span className="flex shrink-0 items-center gap-1.5">
           {tag && (
             <span className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400">

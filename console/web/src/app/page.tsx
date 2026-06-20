@@ -81,7 +81,7 @@ type EstateTotals = {
 /** Estate-total KPIs for one window, each card tagged with the window label. */
 function EstateKpiGrid({ t, windowLabel }: { t: EstateTotals; windowLabel: string }) {
   return (
-    <div className="grid grid-cols-3 gap-2 lg:grid-cols-6">
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
       <SnapshotCard label="Sessions" value={t.sessions.toLocaleString("en-GB")} accent="sky" compact tag={windowLabel} />
       <SnapshotCard label="Visitors" value={t.humans.toLocaleString("en-GB")} sub={`${t.new_humans.toLocaleString("en-GB")} new`} accent="emerald" compact tag={windowLabel} />
       <SnapshotCard label="Leads (UK)" value={String(t.leads_uk)} accent="emerald" compact tag={windowLabel} />
