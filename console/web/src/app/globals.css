@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/*
+ * Shared console components live in the sibling package
+ * `packages/web-shared/console` (SnapshotCard, KpiWindowCarousel, etc.).
+ * Tailwind v4 auto-detects sources only within this app, so without this
+ * @source any class used ONLY in a shared component (e.g. p-3.5, snap-x)
+ * is silently not emitted. Path is relative to this file.
+ */
+@source "../../../../packages/web-shared/console";

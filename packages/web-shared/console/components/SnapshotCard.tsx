@@ -29,6 +29,7 @@ export function SnapshotCard({
   series,
   delta,
   status,
+  tag,
   accent = "emerald",
   invertDelta = false,
   compact = false,
@@ -39,6 +40,8 @@ export function SnapshotCard({
   series?: number[];
   delta?: number | null;
   status?: "ok" | "warn" | null;
+  /** Optional small pill in the card header, e.g. the active time window. */
+  tag?: string;
   accent?: Accent;
   invertDelta?: boolean;
   compact?: boolean;
@@ -55,16 +58,23 @@ export function SnapshotCard({
   }
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4">
+    <div className="rounded-xl border border-slate-200 bg-white p-3.5">
       <div className="flex items-center justify-between gap-2">
-        <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">{label}</span>
-        {status && <span className={`h-2 w-2 rounded-full ${DOT[status]}`} aria-hidden />}
+        <span className="text-[11px] font-medium uppercase tracking-wide text-slate-400">{label}</span>
+        <span className="flex shrink-0 items-center gap-1.5">
+          {tag && (
+            <span className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400">
+              {tag}
+            </span>
+          )}
+          {status && <span className={`h-2 w-2 rounded-full ${DOT[status]}`} aria-hidden />}
+        </span>
       </div>
       <div className="mt-1 flex items-baseline gap-2">
-        <span className={`${compact ? "text-lg" : "text-2xl"} font-bold text-slate-900`}>{value}</span>
-        {deltaEl && <span className="text-xs font-semibold">{deltaEl}</span>}
+        <span className={`${compact ? "text-base" : "text-xl"} font-semibold tracking-tight tabular-nums text-slate-900`}>{value}</span>
+        {deltaEl && <span className="text-[11px] font-medium">{deltaEl}</span>}
       </div>
-      {sub && <div className="mt-0.5 text-xs text-slate-500">{sub}</div>}
+      {sub && <div className="mt-0.5 text-[11px] text-slate-500">{sub}</div>}
       {series && series.length > 0 && (
         <div className={`mt-3 ${ACCENT_TEXT[accent]}`}>
           <Sparkline values={series} height={28} />

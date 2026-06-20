@@ -24,6 +24,8 @@ import { CategoryBarChart } from "@/components/CategoryBarChart";
 import { ConversionRateChart } from "@/components/ConversionRateChart";
 import { FunnelOverTimeChart } from "@/components/FunnelOverTimeChart";
 import { CumulativeChart } from "@/components/CumulativeChart";
+import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
+import { buildMultiSiteSeries } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
 
 export const dynamic = "force-dynamic";
@@ -101,6 +103,12 @@ export default async function SiteTrendsPage({
     converted_sessions: r.converted_sessions,
   }));
 
+  // Single-site version of the estate comparison charts (one line, this site).
+  const siteCmp = buildMultiSiteSeries(
+    [{ site_key: siteKey, display_name: site.display_name }],
+    [m30daily],
+  );
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
       <div className="flex items-baseline justify-between gap-3">
@@ -115,6 +123,19 @@ export default async function SiteTrendsPage({
       <p className="mt-1 text-xs text-slate-500">
         Human-only (bots excluded), UTC buckets. Country: {countryFilter ?? "all"}.
       </p>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Over time (last 30 days)</h2>
+      <div className="mt-3 grid gap-3 lg:grid-cols-3">
+        <MultiSiteTrendChart data={siteCmp.sessions} series={siteCmp.series} label="Daily sessions" />
+        <MultiSiteTrendChart data={siteCmp.visitors} series={siteCmp.series} label="Daily visitors" />
+        <MultiSiteTrendChart
+          data={siteCmp.conversion}
+          series={siteCmp.series}
+          label="Conversion (visitors to leads)"
+          asPercent
+          note="7-day rolling"
+        />
+      </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Last 24 hours</h2>
       <div className="mt-3 space-y-3">

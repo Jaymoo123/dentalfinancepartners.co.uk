@@ -19,6 +19,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
 import { SnapshotCard } from "@accounting-network/web-shared/console/components/SnapshotCard";
+import KpiWindowCarousel, {
+  type KpiPage,
+} from "@accounting-network/web-shared/console/components/KpiWindowCarousel";
 import { Sparkline } from "@accounting-network/web-shared/console/components/Sparkline";
 import { TrendChart } from "@/components/TrendChart";
 import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
@@ -34,6 +37,9 @@ import {
   getEstateTimeseries,
   type SiteKpis,
 } from "@accounting-network/web-shared/console/estateData";
+import { getTimeseries } from "@accounting-network/web-shared/console/adminData";
+import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
+import { buildMultiSiteSeries } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
 import SiteSwitcher from "@/components/SiteSwitcher";
 
@@ -63,6 +69,29 @@ const CHANNEL_LABEL: Record<string, string> = {
   direct: "Direct",
 };
 
+type EstateTotals = {
+  sessions: number;
+  humans: number;
+  new_humans: number;
+  converted_humans: number;
+  leads_all: number;
+  leads_uk: number;
+};
+
+/** Estate-total KPIs for one window, each card tagged with the window label. */
+function EstateKpiGrid({ t, windowLabel }: { t: EstateTotals; windowLabel: string }) {
+  return (
+    <div className="grid grid-cols-3 gap-2 lg:grid-cols-6">
+      <SnapshotCard label="Sessions" value={t.sessions.toLocaleString("en-GB")} accent="sky" compact tag={windowLabel} />
+      <SnapshotCard label="Visitors" value={t.humans.toLocaleString("en-GB")} sub={`${t.new_humans.toLocaleString("en-GB")} new`} accent="emerald" compact tag={windowLabel} />
+      <SnapshotCard label="Leads (UK)" value={String(t.leads_uk)} accent="emerald" compact tag={windowLabel} />
+      <SnapshotCard label="Leads (all)" value={String(t.leads_all)} accent="emerald" compact tag={windowLabel} />
+      <SnapshotCard label="Conv / session" value={pct(t.sessions > 0 ? t.leads_uk / t.sessions : null)} accent="emerald" compact tag={windowLabel} />
+      <SnapshotCard label="Conv / visitor" value={pct(t.humans > 0 ? t.converted_humans / t.humans : null)} sub={`${t.converted_humans} of ${t.humans}`} accent="emerald" compact tag={windowLabel} />
+    </div>
+  );
+}
+
 // ── Page ───────────────────────────────────────────────────────────────────
 
 export default async function EstatePage() {
@@ -70,7 +99,10 @@ export default async function EstatePage() {
   if (!authed) redirect("/login");
 
   const now = new Date();
-  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll, estate30d] =
+  const startOfTodayUTC = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+  );
+  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30] =
     await Promise.all([
       getSitesRegistry(),
       getEstateOverview(7),
@@ -81,6 +113,8 @@ export default async function EstatePage() {
       getEstateKpis(new Date(now.getTime() - 7 * 86400_000).toISOString(), now.toISOString()),
       getEstateKpis(new Date("2000-01-01").toISOString(), now.toISOString()),
       getEstateTimeseries("1 day", new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
+      getEstateKpis(startOfTodayUTC.toISOString(), now.toISOString()),
+      getEstateKpis(new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
     ]);
 
   // KPI reducer: sum SiteKpis[] into estate totals
@@ -99,6 +133,16 @@ export default async function EstatePage() {
   }
   const t7 = sumKpis(kpi7);
   const tAll = sumKpis(kpiAll);
+  const tToday = sumKpis(kpiToday);
+  const t30 = sumKpis(kpi30);
+
+  // Estate KPI windows for the carousel (most granular -> widest).
+  const estateKpiPages: KpiPage[] = [
+    { key: "daily", label: "Daily", meta: "Today (since 00:00 UTC)", node: <EstateKpiGrid t={tToday} windowLabel="Daily" /> },
+    { key: "weekly", label: "Weekly", meta: "Last 7 days", node: <EstateKpiGrid t={t7} windowLabel="Weekly" /> },
+    { key: "monthly", label: "Monthly", meta: "Last 30 days", node: <EstateKpiGrid t={t30} windowLabel="Monthly" /> },
+    { key: "all", label: "All time", meta: "All time", node: <EstateKpiGrid t={tAll} windowLabel="All time" /> },
+  ];
 
   // Build per-site channel index (best channel by sessions per site)
   const bestChannelBySite = new Map<string, { channel: string; cr: number | null }>();
@@ -128,6 +172,16 @@ export default async function EstatePage() {
   const funnelRate = (num: number, den: number) =>
     den > 0 ? `${((num / den) * 100).toFixed(0)}%` : "-";
 
+  // Per-site daily series (30 days) for the estate comparison overlay.
+  const cmpFrom = new Date(now.getTime() - 30 * 86400_000).toISOString();
+  const activeSites = sites.filter((s) => s.active);
+  const perSiteSeries = await Promise.all(
+    activeSites.map((s) =>
+      getTimeseries(s.site_key, "1 day", cmpFrom, now.toISOString(), "GB"),
+    ),
+  );
+  const cmp = buildMultiSiteSeries(activeSites, perSiteSeries);
+
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Chrome */}
@@ -144,94 +198,14 @@ export default async function EstatePage() {
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-8">
-        {/* Estate KPI strip — last 7 days */}
+        {/* Estate KPI windows — swipe Daily -> Weekly -> Monthly -> All time */}
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-slate-500">
-          Last 7 days
+          Estate KPIs
         </h2>
-        <div className="grid grid-cols-3 gap-2 lg:grid-cols-6">
-          <SnapshotCard
-            label="Sessions"
-            value={t7.sessions.toLocaleString("en-GB")}
-            accent="sky"
-            compact
-          />
-          <SnapshotCard
-            label="Visitors"
-            value={t7.humans.toLocaleString("en-GB")}
-            sub={`${t7.new_humans.toLocaleString("en-GB")} new`}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Leads (UK)"
-            value={String(t7.leads_uk)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Leads (all)"
-            value={String(t7.leads_all)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Conv / session"
-            value={pct(t7.sessions > 0 ? t7.leads_uk / t7.sessions : null)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Conv / visitor"
-            value={pct(t7.humans > 0 ? t7.converted_humans / t7.humans : null)}
-            sub={`${t7.converted_humans} of ${t7.humans}`}
-            accent="emerald"
-            compact
-          />
-        </div>
-
-        {/* Estate KPI strip — all time */}
-        <h2 className="mb-2 mt-4 text-sm font-semibold uppercase tracking-wider text-slate-500">
-          All time
-        </h2>
-        <div className="grid grid-cols-3 gap-2 lg:grid-cols-6">
-          <SnapshotCard
-            label="Sessions"
-            value={tAll.sessions.toLocaleString("en-GB")}
-            accent="sky"
-            compact
-          />
-          <SnapshotCard
-            label="Visitors"
-            value={tAll.humans.toLocaleString("en-GB")}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Leads (UK)"
-            value={String(tAll.leads_uk)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Leads (all)"
-            value={String(tAll.leads_all)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Conv / session"
-            value={pct(tAll.sessions > 0 ? tAll.leads_uk / tAll.sessions : null)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Conv / visitor"
-            value={pct(tAll.humans > 0 ? tAll.converted_humans / tAll.humans : null)}
-            sub={`${tAll.converted_humans} of ${tAll.humans}`}
-            accent="emerald"
-            compact
-          />
-        </div>
+        <KpiWindowCarousel
+          pages={estateKpiPages}
+          caption="GB visitors · all-country leads · windows in UTC"
+        />
 
         {/* JS errors — de-emphasised standalone card */}
         <div className="mt-3 max-w-xs">
@@ -261,6 +235,24 @@ export default async function EstatePage() {
         </div>
         <div className="mt-3">
           <CategoryBarChart label="Leads by site (all time)" data={leadsBySite} color="#059669" valueLabel="Leads" />
+        </div>
+
+        {/* Site comparison — one line per site */}
+        <h2 className="mt-10 text-lg font-bold text-slate-900">Site comparison (last 30 days)</h2>
+        <p className="mt-1 text-xs text-slate-500">
+          One line per site. Sessions and visitors are GB-scoped; conversion is a 7-day rolling
+          visitors-to-leads rate (all-country leads).
+        </p>
+        <div className="mt-3 grid gap-3 lg:grid-cols-3">
+          <MultiSiteTrendChart data={cmp.sessions} series={cmp.series} label="Daily sessions" />
+          <MultiSiteTrendChart data={cmp.visitors} series={cmp.series} label="Daily visitors" />
+          <MultiSiteTrendChart
+            data={cmp.conversion}
+            series={cmp.series}
+            label="Conversion (visitors to leads)"
+            asPercent
+            note="7-day rolling"
+          />
         </div>
 
         {/* Per-site comparison strip */}

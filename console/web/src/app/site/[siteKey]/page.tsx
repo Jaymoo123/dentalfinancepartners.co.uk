@@ -17,6 +17,9 @@ import type { Metadata } from "next";
 import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
 import { SnapshotCard } from "@accounting-network/web-shared/console/components/SnapshotCard";
 import DashboardTabs from "@accounting-network/web-shared/console/components/DashboardTabs";
+import KpiWindowCarousel, {
+  type KpiPage,
+} from "@accounting-network/web-shared/console/components/KpiWindowCarousel";
 import CountrySelect from "@accounting-network/web-shared/console/components/CountrySelect";
 import VisitorsTable, {
   type VisitorRow,
@@ -33,7 +36,6 @@ import {
   getUxFriction,
   getClientErrors,
   getEventDaily,
-  getTimeseries,
   getChannelConversion,
   getVisitsToConversion,
   getExperimentResults,
@@ -43,6 +45,7 @@ import {
   getNurtureFunnel,
   getLeadIntentMix,
   getSiteKpis,
+  type SiteKpis,
   type VisitorJourney,
   type CalculatorConversionPlacement,
   type ClientError,
@@ -198,6 +201,33 @@ function CalcStepBar({ rate, kind }: { rate: number | null; kind: "compute" | "l
       <div className="mt-1 h-1.5 rounded bg-slate-100">
         <div className={`h-1.5 rounded ${isWeak ? "bg-rose-400" : "bg-emerald-500"}`} style={{ width: `${widthPct}%` }} />
       </div>
+    </div>
+  );
+}
+
+/** One window's worth of the 6 Overview KPIs, all from a single estate_kpis row. */
+function KpiGrid({
+  kpi,
+  engagedMs,
+  country,
+  windowLabel,
+}: {
+  kpi: SiteKpis;
+  engagedMs: number;
+  country: string;
+  windowLabel: string;
+}) {
+  const leadsForConv = country === "ALL" ? kpi.leads_all : kpi.leads_uk;
+  const sessionConv = kpi.sessions > 0 ? leadsForConv / kpi.sessions : null;
+  const visitorConv = kpi.humans > 0 ? kpi.converted_humans / kpi.humans : null;
+  return (
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <SnapshotCard label="Sessions" value={String(kpi.sessions)} sub="visits" accent="sky" tag={windowLabel} />
+      <SnapshotCard label="Visitors" value={String(kpi.humans)} sub={`${kpi.new_humans} new`} accent="emerald" tag={windowLabel} />
+      <SnapshotCard label="Leads" value={String(kpi.leads_all)} sub={`${kpi.leads_uk} UK`} accent="emerald" tag={windowLabel} />
+      <SnapshotCard label="Visitor conv." value={pct(visitorConv)} sub={`${kpi.converted_humans} of ${kpi.humans}`} accent="emerald" tag={windowLabel} />
+      <SnapshotCard label="Session conv." value={pct(sessionConv)} sub={`${leadsForConv} of ${kpi.sessions} sessions`} accent="emerald" tag={windowLabel} />
+      <SnapshotCard label="Avg engaged" value={secs(engagedMs)} sub="per visitor" accent="slate" tag={windowLabel} />
     </div>
   );
 }
@@ -509,6 +539,11 @@ export default async function SitePage({
   const isoOf = (d: Date) => d.toISOString();
   const from14 = new Date(now.getTime() - 14 * 86400000);
   const from30 = new Date(now.getTime() - 30 * 86400000);
+  const from7 = new Date(now.getTime() - 7 * 86400000);
+  const startOfTodayUTC = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+  );
+  const allTimeFrom = new Date(Date.UTC(2020, 0, 1)); // before any site data
 
   const [
     funnel,
@@ -522,10 +557,12 @@ export default async function SitePage({
     uxFriction,
     clientErrors,
     errorsDaily,
-    tsDaily,
     channelConversion,
     visitsToConversion,
     kpi,
+    kpiToday,
+    kpi7,
+    kpiAll,
   ] = await Promise.all([
     getFunnelDaily(siteKey, countryFilter),
     getCalculatorConversionByPlacement(siteKey, countryFilter),
@@ -538,10 +575,12 @@ export default async function SitePage({
     getUxFriction(siteKey, countryFilter),
     getClientErrors(siteKey, countryFilter),
     getEventDaily(siteKey, "client_error", isoOf(from14), isoOf(now), countryFilter),
-    getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
     getChannelConversion(siteKey, countryFilter),
     getVisitsToConversion(siteKey, countryFilter),
     getSiteKpis(siteKey, isoOf(from30), isoOf(now), country),
+    getSiteKpis(siteKey, isoOf(startOfTodayUTC), isoOf(now), country),
+    getSiteKpis(siteKey, isoOf(from7), isoOf(now), country),
+    getSiteKpis(siteKey, isoOf(allTimeFrom), isoOf(now), country),
   ]);
 
   const leadByVisitor = new Map<string, (typeof leads)[number]>();
@@ -560,18 +599,29 @@ export default async function SitePage({
     }),
     { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
   );
-  const convRate = totals.sessions > 0 ? totals.converted / totals.sessions : 0;
-  const avgEngaged =
-    visitors.length > 0
-      ? visitors.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / visitors.length
-      : 0;
-  const funnelDays = new Set(funnel.map((d) => d.date)).size;
-
-  const sessionsSeries = densify(tsDaily, 14, (r) => r.sessions, "bucket");
-  const leadsSeries = densify(tsDaily, 14, (r) => r.leads, "bucket");
-  const engagedSeries = densify(funnel, 14, (r) => r.engaged_sessions, "date");
-  const convertedSeries = densify(funnel, 14, (r) => r.converted_sessions, "date");
   const errorsSeries = densify(errorsDaily, 14, (r) => r.count, "bucket");
+
+  // Per-window average engaged time (ms), derived from the top-500 visitor set
+  // filtered by last_seen. Exact for short windows; 500-capped for all-time
+  // (same behaviour as before). No DB change needed.
+  const engagedMsForWindow = (fromMs: number): number => {
+    const vs = visitors.filter((v) => new Date(v.last_seen).getTime() >= fromMs);
+    return vs.length
+      ? vs.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / vs.length
+      : 0;
+  };
+
+  // Four explicit time windows, same 6 metrics each (most granular -> widest).
+  const kpiPages: KpiPage[] = [
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <KpiGrid kpi={kpiToday} engagedMs={engagedMsForWindow(startOfTodayUTC.getTime())} country={country} windowLabel="Daily" /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <KpiGrid kpi={kpi7} engagedMs={engagedMsForWindow(from7.getTime())} country={country} windowLabel="Weekly" /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <KpiGrid kpi={kpi} engagedMs={engagedMsForWindow(from30.getTime())} country={country} windowLabel="Monthly" /> },
+    { key: "all", label: "All time", meta: "All time", node: <KpiGrid kpi={kpiAll} engagedMs={engagedMsForWindow(0)} country={country} windowLabel="All time" /> },
+  ];
+  const kpiCaption =
+    country === "ALL"
+      ? "All countries · windows in UTC"
+      : `${country} visitors · all-country leads · windows in UTC`;
 
   const uxTotals = uxFriction.reduce(
     (a, r) => ({ rage: a.rage + r.rage_clicks, dead: a.dead + r.dead_clicks }),
@@ -631,14 +681,7 @@ export default async function SitePage({
 
   const overviewSection = (
     <div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <SnapshotCard label="Sessions / day" value={String(totals.sessions)} sub={`last ${funnelDays} days`} series={sessionsSeries} delta={deltaVsPrior(sessionsSeries)} accent="sky" />
-        <SnapshotCard label="Visitors" value={String(kpi.humans)} sub={`${kpi.new_humans} new`} accent="emerald" />
-        <SnapshotCard label="Visitor conv." value={pct(kpi.humans > 0 ? kpi.converted_humans / kpi.humans : null)} sub={`${kpi.converted_humans} of ${kpi.humans}`} accent="emerald" />
-        <SnapshotCard label="Leads" value={String(totals.converted)} sub="conversions" series={leadsSeries} delta={deltaVsPrior(leadsSeries)} accent="emerald" />
-        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${totals.converted} of ${totals.sessions} sessions`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
-        <SnapshotCard label="Avg engaged" value={secs(avgEngaged)} sub="per visitor" series={engagedSeries} delta={deltaVsPrior(engagedSeries)} accent="slate" />
-      </div>
+      <KpiWindowCarousel pages={kpiPages} caption={kpiCaption} />
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
