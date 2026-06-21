@@ -134,7 +134,7 @@ export function MultiSiteTrendChart({ data, series, label, asPercent = false, no
                 tickLine={false}
                 axisLine={false}
                 tickMargin={4}
-                allowDecimals={false}
+                allowDecimals={asPercent}
                 fontSize={11}
                 tick={{ fill: "#64748b" }}
                 tickFormatter={(v) =>

@@ -37,7 +37,7 @@ import {
   getEstateTimeseries,
   type SiteKpis,
 } from "@accounting-network/web-shared/console/estateData";
-import { getTimeseries } from "@accounting-network/web-shared/console/adminData";
+import { getTimeseries, getFunnelDaily } from "@accounting-network/web-shared/console/adminData";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
@@ -176,12 +176,11 @@ export default async function EstatePage() {
   // Per-site daily series (30 days) for the estate comparison overlay.
   const cmpFrom = new Date(now.getTime() - 30 * 86400_000).toISOString();
   const activeSites = sites.filter((s) => s.active);
-  const perSiteSeries = await Promise.all(
-    activeSites.map((s) =>
-      getTimeseries(s.site_key, "1 day", cmpFrom, now.toISOString(), "GB"),
-    ),
-  );
-  const cmp = buildMultiSiteSeries(activeSites, perSiteSeries);
+  const [perSiteSeries, perSiteFunnel] = await Promise.all([
+    Promise.all(activeSites.map((s) => getTimeseries(s.site_key, "1 day", cmpFrom, now.toISOString(), "GB"))),
+    Promise.all(activeSites.map((s) => getFunnelDaily(s.site_key, "GB"))),
+  ]);
+  const cmp = buildMultiSiteSeries(activeSites, perSiteSeries, perSiteFunnel);
 
   // Weekly average daily visitors, all-time (estate total).
   const estateWeekly = buildWeeklyAvgVisitors(estateAllDaily, "estate", "Estate", "#059669");
@@ -245,7 +244,7 @@ export default async function EstatePage() {
         <h2 className="mt-10 text-lg font-bold text-slate-900">Site comparison (last 30 days)</h2>
         <p className="mt-1 text-xs text-slate-500">
           One line per site. Sessions and visitors are GB-scoped; conversion is a 7-day rolling
-          visitors-to-leads rate (all-country leads).
+          lead conversion rate (converted sessions / sessions).
         </p>
         <div className="mt-3 grid gap-3 lg:grid-cols-3">
           <MultiSiteTrendChart data={cmp.sessions} series={cmp.series} label="Daily sessions" />
@@ -253,9 +252,9 @@ export default async function EstatePage() {
           <MultiSiteTrendChart
             data={cmp.conversion}
             series={cmp.series}
-            label="Conversion (visitors to leads)"
+            label="Lead conversion rate"
             asPercent
-            note="7-day rolling"
+            note="converted sessions / sessions, 7-day rolling"
           />
         </div>
 

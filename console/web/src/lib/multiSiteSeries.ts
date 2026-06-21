@@ -44,6 +44,7 @@ export type MultiSiteSeries = {
 export function buildMultiSiteSeries(
   sites: { site_key: string; display_name: string }[],
   perSite: TimePoint[][],
+  perSiteFunnel: Array<Array<{ date: string; sessions: number; converted_sessions: number }>>,
 ): MultiSiteSeries {
   const series: SeriesMeta[] = sites.map((s, i) => ({
     key: s.site_key,
@@ -63,6 +64,15 @@ export function buildMultiSiteSeries(
     return m;
   });
 
+  // Funnel (GB) indexed by YYYY-MM-DD — drives the bounded conversion rate.
+  const funnelBySite = perSiteFunnel.map((rows) => {
+    const m = new Map<string, { converted_sessions: number; sessions: number }>();
+    for (const r of rows) {
+      m.set(r.date.slice(0, 10), { converted_sessions: r.converted_sessions, sessions: r.sessions });
+    }
+    return m;
+  });
+
   const sessions: MultiPoint[] = [];
   const visitors: MultiPoint[] = [];
   const conversion: MultiPoint[] = [];
@@ -77,16 +87,17 @@ export function buildMultiSiteSeries(
       sPoint[site.site_key] = row?.sessions ?? 0;
       vPoint[site.site_key] = row?.humans ?? 0;
 
-      // 7-day rolling conversion = sum(leads) / sum(humans) over the trailing
-      // window, so a single low-traffic day doesn't spike the ratio.
-      let leadSum = 0;
-      let humanSum = 0;
+      // 7-day rolling conversion = converted sessions / sessions (GB, stitched).
+      // Bounded 0-100% by construction, unlike all-country-leads / GB-visitors
+      // which can exceed 100% on low-traffic days.
+      let convSum = 0;
+      let sessSum = 0;
       for (let k = Math.max(0, bi - (ROLLING_DAYS - 1)); k <= bi; k++) {
-        const r = bySite[si].get(buckets[k]);
-        leadSum += r?.leads ?? 0;
-        humanSum += r?.humans ?? 0;
+        const fr = funnelBySite[si].get(buckets[k].slice(0, 10));
+        convSum += fr?.converted_sessions ?? 0;
+        sessSum += fr?.sessions ?? 0;
       }
-      cPoint[site.site_key] = humanSum > 0 ? leadSum / humanSum : 0;
+      cPoint[site.site_key] = sessSum > 0 ? convSum / sessSum : 0;
     });
 
     sessions.push(sPoint);

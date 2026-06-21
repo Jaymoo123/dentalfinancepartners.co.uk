@@ -109,6 +109,7 @@ export default async function SiteTrendsPage({
   const siteCmp = buildMultiSiteSeries(
     [{ site_key: siteKey, display_name: site.display_name }],
     [m30daily],
+    [funnelRows],
   );
 
   // Weekly average daily visitors, all-time (this site).
@@ -136,9 +137,9 @@ export default async function SiteTrendsPage({
         <MultiSiteTrendChart
           data={siteCmp.conversion}
           series={siteCmp.series}
-          label="Conversion (visitors to leads)"
+          label="Lead conversion rate"
           asPercent
-          note="7-day rolling"
+          note="converted sessions / sessions, 7-day rolling"
         />
       </div>
 
