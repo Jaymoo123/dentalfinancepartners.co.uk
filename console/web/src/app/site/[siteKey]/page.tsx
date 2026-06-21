@@ -209,16 +209,14 @@ function CalcStepBar({ rate, kind }: { rate: number | null; kind: "compute" | "l
 function KpiGrid({
   kpi,
   engagedMs,
-  country,
   windowLabel,
 }: {
   kpi: SiteKpis;
   engagedMs: number;
-  country: string;
   windowLabel: string;
 }) {
-  const leadsForConv = country === "ALL" ? kpi.leads_all : kpi.leads_uk;
-  const sessionConv = kpi.sessions > 0 ? leadsForConv / kpi.sessions : null;
+  const ukSessConv = kpi.sessions > 0 ? kpi.leads_uk / kpi.sessions : null;
+  const allSessConv = kpi.sessions > 0 ? kpi.leads_all / kpi.sessions : null;
   const visitorConv = kpi.humans > 0 ? kpi.converted_humans / kpi.humans : null;
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
@@ -226,7 +224,7 @@ function KpiGrid({
       <SnapshotCard label="Visitors" value={String(kpi.humans)} sub={`${kpi.new_humans} new`} accent="emerald" tag={windowLabel} />
       <SnapshotCard label="Leads" value={String(kpi.leads_all)} sub={`${kpi.leads_uk} UK`} accent="emerald" tag={windowLabel} />
       <SnapshotCard label="Visitor conv." value={pct(visitorConv)} sub={`${kpi.converted_humans} of ${kpi.humans}`} accent="emerald" tag={windowLabel} />
-      <SnapshotCard label="Session conv." value={pct(sessionConv)} sub={`${leadsForConv} of ${kpi.sessions} sessions`} accent="emerald" tag={windowLabel} />
+      <SnapshotCard label="Session conv." value={`${pct(ukSessConv)} / ${pct(allSessConv)}`} sub={`${kpi.leads_uk}/${kpi.leads_all} of ${kpi.sessions} (UK/all)`} accent="emerald" tag={windowLabel} />
       <SnapshotCard label="Avg engaged" value={secs(engagedMs)} sub="per visitor" accent="slate" tag={windowLabel} />
     </div>
   );
@@ -613,10 +611,10 @@ export default async function SitePage({
 
   // Four explicit time windows, same 6 metrics each (most granular -> widest).
   const kpiPages: KpiPage[] = [
-    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <KpiGrid kpi={kpiToday} engagedMs={engagedMsForWindow(startOfTodayUTC.getTime())} country={country} windowLabel="Daily" /> },
-    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <KpiGrid kpi={kpi7} engagedMs={engagedMsForWindow(from7.getTime())} country={country} windowLabel="Weekly" /> },
-    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <KpiGrid kpi={kpi} engagedMs={engagedMsForWindow(from30.getTime())} country={country} windowLabel="Monthly" /> },
-    { key: "all", label: "All time", meta: "All time", node: <KpiGrid kpi={kpiAll} engagedMs={engagedMsForWindow(0)} country={country} windowLabel="All time" /> },
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <KpiGrid kpi={kpiToday} engagedMs={engagedMsForWindow(startOfTodayUTC.getTime())} windowLabel="Daily" /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <KpiGrid kpi={kpi7} engagedMs={engagedMsForWindow(from7.getTime())} windowLabel="Weekly" /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <KpiGrid kpi={kpi} engagedMs={engagedMsForWindow(from30.getTime())} windowLabel="Monthly" /> },
+    { key: "all", label: "All time", meta: "All time", node: <KpiGrid kpi={kpiAll} engagedMs={engagedMsForWindow(0)} windowLabel="All time" /> },
   ];
   const kpiCaption =
     country === "ALL"

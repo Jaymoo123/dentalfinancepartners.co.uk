@@ -86,7 +86,7 @@ function EstateKpiGrid({ t, windowLabel }: { t: EstateTotals; windowLabel: strin
       <SnapshotCard label="Visitors" value={t.humans.toLocaleString("en-GB")} sub={`${t.new_humans.toLocaleString("en-GB")} new`} accent="emerald" compact tag={windowLabel} />
       <SnapshotCard label="Leads (UK)" value={String(t.leads_uk)} accent="emerald" compact tag={windowLabel} />
       <SnapshotCard label="Leads (all)" value={String(t.leads_all)} accent="emerald" compact tag={windowLabel} />
-      <SnapshotCard label="Conv / session" value={pct(t.sessions > 0 ? t.leads_uk / t.sessions : null)} accent="emerald" compact tag={windowLabel} />
+      <SnapshotCard label="Conv / session" value={`${pct(t.sessions > 0 ? t.leads_uk / t.sessions : null)} / ${pct(t.sessions > 0 ? t.leads_all / t.sessions : null)}`} sub="UK / all" accent="emerald" compact tag={windowLabel} />
       <SnapshotCard label="Conv / visitor" value={pct(t.humans > 0 ? t.converted_humans / t.humans : null)} sub={`${t.converted_humans} of ${t.humans}`} accent="emerald" compact tag={windowLabel} />
     </div>
   );
