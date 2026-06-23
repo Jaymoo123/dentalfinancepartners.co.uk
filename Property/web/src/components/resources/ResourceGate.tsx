@@ -87,7 +87,10 @@ export function ResourceGate({
   const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   const resource = resourceForTopic(topic);
 
-  const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
+  // Email-only resource downloads are NOT shared with the partner firm (agreement
+  // Annex B.2), so they use the marketing-consent wording, never the lead
+  // acknowledgement, and keep a tick-to-consent box.
+  const consentText = `${siteConfig.resourceConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -310,7 +313,7 @@ export function ResourceGate({
                 aria-describedby={fieldErrors.consent ? "resource-consent-error" : undefined}
               />
               <span>
-                {siteConfig.leadConsentText} See our{" "}
+                {siteConfig.resourceConsentText} See our{" "}
                 <a
                   href="/privacy-policy"
                   target="_blank"

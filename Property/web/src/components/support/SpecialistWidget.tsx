@@ -27,7 +27,6 @@ export function SpecialistWidget() {
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
-  const [consent, setConsent] = useState(false);
   const openedRef = useRef(false);
   const ft = useFormTracking("specialist_widget");
 
@@ -62,10 +61,6 @@ export function SpecialistWidget() {
       ft.onError("email", "validation");
       return;
     }
-    if (!consent) {
-      setError("Please tick the box to continue.");
-      return;
-    }
     ft.onSubmit(2);
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
@@ -83,7 +78,9 @@ export function SpecialistWidget() {
       source: niche.content_strategy.source_identifier,
       source_url: typeof window !== "undefined" ? window.location.href : "",
       submitted_at: new Date().toISOString(),
-      consent_given: consent,
+      // Legitimate-interests acknowledgement: submitting IS the affirmative act, so
+      // this is always true; consent_text records the exact wording shown (Annex B.1).
+      consent_given: true,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() || undefined,
@@ -98,7 +95,6 @@ export function SpecialistWidget() {
     }
     ft.onLead({ source: payload.source, role: "specialist_widget" });
     setStatus("success");
-    setConsent(false);
   }
 
   return (
@@ -148,25 +144,20 @@ export function SpecialistWidget() {
                 <p className="text-xs font-semibold text-slate-700">Or send a specialist your question:</p>
                 <input type="email" name="email" required placeholder="Your email" autoComplete="email" maxLength={100} className={inputClass} />
                 <textarea name="question" rows={2} maxLength={500} placeholder="Your question (optional)" className={inputClass} />
-                <label className="flex items-start gap-2 text-[11px] leading-relaxed text-slate-500">
-                  <input
-                    type="checkbox"
-                    checked={consent}
-                    onChange={(e) => setConsent(e.target.checked)}
-                    className="mt-0.5 h-3.5 w-3.5 shrink-0 accent-emerald-600"
-                  />
-                  <span>
-                    {siteConfig.leadConsentText} See our{" "}
-                    <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
-                      Privacy Policy
-                    </a>
-                    .
-                  </span>
-                </label>
+                <p className="text-[11px] leading-relaxed text-slate-400">Please do not include sensitive personal information.</p>
+                {/* Data-sharing acknowledgement (legitimate interests, not consent):
+                    submitting is the affirmative act (data-sharing agreement Annex B.1). */}
+                <p className="text-[11px] leading-relaxed text-slate-500">
+                  {siteConfig.leadConsentText} See our{" "}
+                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
                 {error && <p className="text-xs font-medium text-red-600">{error}</p>}
                 <button
                   type="submit"
-                  disabled={status === "loading" || !consent}
+                  disabled={status === "loading"}
                   className="w-full rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}

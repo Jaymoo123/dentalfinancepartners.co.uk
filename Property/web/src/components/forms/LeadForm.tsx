@@ -36,7 +36,6 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
   const ft = useFormTracking("lead_form");
 
   useEffect(() => {
@@ -74,8 +73,6 @@ export function LeadForm({
       errs.message = "Tell us a sentence or two about your situation.";
     }
 
-    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
-
     return errs;
   }, []);
 
@@ -112,7 +109,10 @@ export function LeadForm({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
-      consent_given: consent,
+      // Legitimate-interests acknowledgement: submitting the form IS the affirmative
+      // act, so this is always true; consent_text records the exact wording shown
+      // (data-sharing agreement Annex B.1) as the audit trail.
+      consent_given: true,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
       // Stitch this lead to its anonymous first-party journey (no-op if untracked).
@@ -146,7 +146,6 @@ export function LeadForm({
 
     setStatus("success");
     form.reset();
-    setConsent(false);
 
     if (redirectOnSuccess) {
       setTimeout(() => {
@@ -287,6 +286,7 @@ export function LeadForm({
           aria-invalid={!!fieldErrors.message}
           aria-describedby={fieldErrors.message ? "message-error" : undefined}
         />
+        <p className="mt-1.5 text-xs text-slate-500">Please do not include sensitive personal information.</p>
         {fieldErrors.message && (
           <p id="message-error" className="mt-1.5 text-xs font-medium text-red-600">
             {fieldErrors.message}
@@ -294,32 +294,16 @@ export function LeadForm({
         )}
       </div>
 
-      <div>
-        <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-slate-600">
-          <input
-            type="checkbox"
-            id="consent"
-            name="consent"
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 shrink-0 accent-emerald-600"
-            aria-invalid={!!fieldErrors.consent}
-            aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
-          />
-          <span>
-            {siteConfig.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
-              Privacy Policy
-            </a>
-            .
-          </span>
-        </label>
-        {fieldErrors.consent && (
-          <p id="consent-error" className="mt-1.5 text-xs font-medium text-red-600">
-            {fieldErrors.consent}
-          </p>
-        )}
-      </div>
+      {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
+          the enquiry is the affirmative act, so this is shown as a notice, not a
+          tick-box (data-sharing agreement Annex B.1). */}
+      <p className="text-xs leading-relaxed text-slate-500">
+        {siteConfig.leadConsentText} See our{" "}
+        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
+          Privacy Policy
+        </a>
+        .
+      </p>
 
       {errorMessage && (
         <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
@@ -337,7 +321,7 @@ export function LeadForm({
 
       <button
         type="submit"
-        disabled={status === "loading" || status === "success" || !consent}
+        disabled={status === "loading" || status === "success"}
         className={`${btnPrimary} w-full`}
       >
         {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : submitLabel}

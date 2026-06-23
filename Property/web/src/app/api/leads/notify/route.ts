@@ -19,7 +19,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";
 import { getResend, getFromAddress } from "@/lib/resend";
-import { resolveLeadCc, ccExcludedSources } from "@/lib/lead-routing";
+import { resolveLeadCc, resolveLeadTo, ccExcludedSources } from "@/lib/lead-routing";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -69,7 +69,7 @@ const DETAIL_FIELDS: DetailField[] = [
   { label: "Source page", get: (r) => r.source_url, kind: "url" },
   { label: "Submitted at", get: (r) => formatTimestamp(r.submitted_at) },
   { label: "Status", get: (r) => r.status, kind: "pill" },
-  { label: "Consent", get: (r) => (r.consent_given ? "Data-sharing agreed" : undefined) },
+  { label: "Data sharing", get: (r) => (r.consent_given ? "Confirmed at submission" : undefined) },
 ];
 
 function secretsMatch(provided: string, expected: string): boolean {
@@ -152,6 +152,17 @@ function buildHtml(r: LeadRecord, partnerCopied: boolean): string {
                   <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:14px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${messageCell}</td></tr>
                 </table>`;
 
+  // The exact data-sharing wording the enquirer was shown at submission (the
+  // acknowledgement under legitimate interests, or the consent text on sites that
+  // use consent). Surfaced so the lead is forward-ready with its own audit trail.
+  const statement = (r.consent_text ?? "").trim();
+  const statementBlock = statement
+    ? `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Data-sharing notice shown</p>
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:13px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${escapeHtml(statement)}</td></tr>
+                </table>`
+    : "";
+
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -187,6 +198,7 @@ function buildHtml(r: LeadRecord, partnerCopied: boolean): string {
                   ${detailRows}
                 </table>
                 ${messageBlock}
+                ${statementBlock}
               </td>
             </tr>
             <tr>
@@ -218,6 +230,8 @@ function buildText(r: LeadRecord, partnerCopied: boolean): string {
     lines.push(`${field.label}: ${raw || "Not provided"}`);
   }
   lines.push("", "MESSAGE", message || "Not provided");
+  const statement = (r.consent_text ?? "").trim();
+  if (statement) lines.push("", "DATA-SHARING NOTICE SHOWN", statement);
   lines.push("", `Lead ID: ${r.id || "Not provided"}`);
   return lines.join("\n");
 }
@@ -230,6 +244,7 @@ export async function GET() {
     secretSet: Boolean(process.env.LEADS_NOTIFY_SECRET || process.env.LEADS_SYNC_SECRET),
     resendSet: Boolean(process.env.RESEND_API_KEY),
     notifyTo: Boolean(process.env.LEADS_NOTIFY_TO),
+    notifyToProperty: Boolean(process.env.LEADS_NOTIFY_TO_PROPERTY),
     ccSet: Boolean(process.env.LEADS_NOTIFY_CC),
     // Sites NOT copied to the partner firm (Property by default).
     ccExcludeSources: ccExcludedSources(),
@@ -268,7 +283,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "No record" }, { status: 400 });
   }
 
-  const to = process.env.LEADS_NOTIFY_TO || "junaydmoughal@hotmail.co.uk";
+  // Recipient is source-aware (this one route serves every site): Property's own
+  // leads go to the Ashfield Trading inbox (junayd@ashfieldtrading.com); every
+  // other site keeps going to the shared internal inbox (junaydmoughal@hotmail.co.uk).
+  // The rule lives in resolveLeadTo.
+  const to = resolveLeadTo(r.source);
   // Partner firm (Reflex Accounting) is copied on leads from every site EXCEPT
   // Property's own — Property leads go to the internal inbox only, no partner
   // CC. The rule lives in resolveLeadCc (LEADS_NOTIFY_CC_EXCLUDE_SOURCES,

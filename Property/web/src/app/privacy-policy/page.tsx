@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 22 June 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -73,8 +73,9 @@ export default function PrivacyPolicyPage() {
             address (and, where relevant, the resource you requested).
           </li>
           <li>
-            <strong>Consent records:</strong> when you give consent, we keep a record of the exact wording you agreed to
-            and the date and time you agreed, so we can show that consent was given.
+            <strong>Acknowledgement and consent records:</strong> we keep a record of the exact wording shown to you and
+            the date and time, so we can show what you were told when you submitted an enquiry, and that consent was given
+            when you signed up to our email updates.
           </li>
           <li>
             <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages viewed,
@@ -109,9 +110,18 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Our lawful basis</h2>
         <p>
-          We rely on your <strong>consent</strong> to process the personal data you provide through our enquiry forms and
-          email sign-ups{partner ? ", and to share your enquiry with our specialist partner firm as described below" : ""}.
-          You can withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
+          When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f) of the UK
+          GDPR)
+          {partner
+            ? " to handle your enquiry and to share it with our specialist partner firm, so that you can be connected with the specialist property tax help you have asked for"
+            : " to handle it, so that we can respond and provide the help you have asked for"}
+          . Where we need to take steps at your request to deal with your enquiry, we also rely on{" "}
+          <strong>Article 6(1)(b)</strong>. You have the <strong>right to object</strong> to this processing at any time,
+          under Article 21 (see your rights in section 7).
+        </p>
+        <p>
+          For our <strong>email updates</strong> and other email sign-ups, we rely on your <strong>consent</strong>. You
+          can withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
           processing that took place before you withdrew it.
         </p>
         <p>
@@ -123,9 +133,23 @@ export default function PrivacyPolicyPage() {
         {partner ? (
           <p>
             When you submit an enquiry, we share the details you provide with our specialist partner firm,{" "}
-            <strong>{partner.name}</strong>, so that they can respond and provide the advice you asked for. {partner.name}{" "}
-            acts as an <strong>independent data controller</strong> of the information it receives, and its own use of your
-            data is governed by its own privacy policy. We share your enquiry only for the purpose of responding to it.
+            <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. We do this
+            on the basis of our <strong>legitimate interests</strong> (see section 4), and you can object at any time (see
+            section 7). {partner.name} acts as an <strong>independent data controller</strong> of the information it
+            receives, may share it within its own group of companies for the same purpose, and uses it under its own{" "}
+            {partner.privacyPolicyUrl ? (
+              <a
+                href={partner.privacyPolicyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent-strong)] underline"
+              >
+                privacy policy
+              </a>
+            ) : (
+              "privacy policy"
+            )}
+            . We share your enquiry only for the purpose of responding to it.
           </p>
         ) : (
           <p>
@@ -145,8 +169,8 @@ export default function PrivacyPolicyPage() {
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
           after which it is deleted. If you subscribe to our email updates, we keep your email address until you
-          unsubscribe. Consent records are kept for as long as we hold the related personal data, so that we can
-          demonstrate that consent was given.
+          unsubscribe. Our records of what you were shown and any consent you gave are kept for as long as we hold the
+          related personal data, so that we can demonstrate the lawful basis for using it.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">7. Your rights</h2>
@@ -157,8 +181,11 @@ export default function PrivacyPolicyPage() {
           <li><strong>Erase</strong> your data in certain circumstances.</li>
           <li><strong>Restrict</strong> how we use your data in certain situations.</li>
           <li><strong>Data portability:</strong> receive a copy of your data in a machine-readable format.</li>
-          <li><strong>Object</strong> to certain processing.</li>
-          <li><strong>Withdraw consent</strong> at any time, where we rely on your consent.</li>
+          <li>
+            <strong>Object</strong> to our processing that is based on legitimate interests
+            {partner ? ", including our sharing of your enquiry with our partner firm" : ""}, under Article 21.
+          </li>
+          <li><strong>Withdraw consent</strong> at any time, where we rely on your consent (for example, our email updates).</li>
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}

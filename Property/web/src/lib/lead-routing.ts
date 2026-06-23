@@ -1,19 +1,30 @@
 /**
- * Decides who is CC'd on a lead-notification email, per originating site.
+ * Decides, per originating site, who RECEIVES and who is CC'd on a
+ * lead-notification email. One shared trigger sends every site's leads to this
+ * single Property-hosted route, so both decisions are keyed on the `leads.source`
+ * column (the lowercase site key written by every lead form).
  *
- * The internal inbox (LEADS_NOTIFY_TO) always receives the lead. The partner
- * firm (Reflex Accounting, LEADS_NOTIFY_CC) is copied on leads from every site
- * EXCEPT those listed in LEADS_NOTIFY_CC_EXCLUDE_SOURCES — which defaults to
- * "property", so Property's own leads stay internal-only (no partner CC) while
- * dentists / medical / solicitors / generalist / agency / contractors-ir35
- * leads still copy the partner.
+ * Recipient (to): Property's own leads go to the Ashfield Trading inbox
+ * (LEADS_NOTIFY_TO_PROPERTY); every other site goes to the shared internal inbox
+ * (LEADS_NOTIFY_TO). See resolveLeadTo.
  *
- * Kept as a pure function (env injected) so the routing rule is unit-testable
- * without standing up the route or mocking Resend. The `source` value is the
- * `leads.source` column, the lowercase site key written by every lead form.
+ * CC: the partner firm (Reflex Accounting, LEADS_NOTIFY_CC) is copied on leads
+ * from every site EXCEPT those in LEADS_NOTIFY_CC_EXCLUDE_SOURCES (defaults to
+ * "property"), so Property's own leads stay internal-only while dentists,
+ * medical, solicitors, generalist, agency and contractors-ir35 still copy the
+ * partner. See resolveLeadCc.
+ *
+ * Kept as pure functions (env injected) so the routing rules are unit-testable
+ * without standing up the route or mocking Resend.
  */
 export const DEFAULT_PARTNER_CC = "ahmadtirmizey@reflexaccounting.co.uk";
 export const DEFAULT_CC_EXCLUDED_SOURCES = "property";
+
+// Lead-notification recipient (the "to"). Property's own leads go to the
+// dedicated Ashfield Trading inbox (the DJH-deal inbox); every other site's leads
+// keep going to the shared internal inbox, exactly as before. Both env-overridable.
+export const DEFAULT_NOTIFY_TO = "junaydmoughal@hotmail.co.uk";
+export const PROPERTY_NOTIFY_TO = "junayd@ashfieldtrading.com";
 
 function parseList(value: string | undefined, fallback: string): string[] {
   return (value ?? fallback)
@@ -40,4 +51,19 @@ export function resolveLeadCc(source: string | undefined, env: Env = process.env
   const sourceKey = (source ?? "").trim().toLowerCase();
   if (ccExcludedSources(env).includes(sourceKey)) return [];
   return parseList(env.LEADS_NOTIFY_CC, DEFAULT_PARTNER_CC);
+}
+
+/**
+ * The lead-notification recipient ("to") for a lead with the given `source`.
+ * Property leads go to the Ashfield Trading inbox (LEADS_NOTIFY_TO_PROPERTY,
+ * default junayd@ashfieldtrading.com); every other site goes to the shared
+ * internal inbox (LEADS_NOTIFY_TO, default junaydmoughal@hotmail.co.uk). Property
+ * therefore routes correctly from code even if LEADS_NOTIFY_TO is left unchanged.
+ */
+export function resolveLeadTo(source: string | undefined, env: Env = process.env): string {
+  const sourceKey = (source ?? "").trim().toLowerCase();
+  if (sourceKey === "property") {
+    return env.LEADS_NOTIFY_TO_PROPERTY || PROPERTY_NOTIFY_TO;
+  }
+  return env.LEADS_NOTIFY_TO || DEFAULT_NOTIFY_TO;
 }

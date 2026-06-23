@@ -12,9 +12,13 @@
       "postcode": "BD18 3AL"
     },
     "vat_number": null,
-    "enquiry_retention_months": 24
+    "enquiry_retention_months": 3
   },
-  "partner": null,
+  "partner": {
+    "name": "DJH Business Advisers Limited",
+    "descriptor": "(part of the DJH group of companies)",
+    "privacy_policy_url": "https://www.djh.co.uk/privacy-policy/"
+  },
   "domain": "www.propertytaxpartners.co.uk",
   "tagline": "Get your property tax sorted",
   "description": "Specialist property accountants for UK landlords. Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response. Free calculators.",

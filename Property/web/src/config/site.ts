@@ -12,12 +12,27 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 // Specialist partner firm that enquiries are shared with. Single source of truth.
 // null = enquiries are handled in-house and NOT shared with any third-party firm.
 const partner = niche.partner;
-// Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that). Driven by `partner` so the policy and the forms can
-// never drift, and so re-adding a partner later is a one-line config change.
+// The partner's name plus any descriptor (e.g. a group disclosure), so the
+// acknowledgement names the firm exactly as the data-sharing agreement requires.
+const partnerDisplayName = partner
+  ? `${partner.name}${partner.descriptor ? ` ${partner.descriptor}` : ""}`
+  : null;
+// Lead-form wording for genuine ENQUIRIES, WITHOUT the trailing "See our Privacy
+// Policy." link (each form appends that). Driven by `partner` so the policy and
+// the forms can never drift, and so re-adding a partner later is a config change.
+//
+// When a partner is configured, the lawful basis for sharing the enquiry is the
+// legitimate interests of both firms (not consent), so this line is an
+// ACKNOWLEDGEMENT: submitting the enquiry is the affirmative act and there is no
+// tick-to-consent box (matches Annex B.1 of the data-sharing agreement). Without
+// a partner, enquiries are handled in-house under consent.
 const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
+  ? `To answer your enquiry, your details will be shared with our specialist partner firm ${partnerDisplayName}, an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`
   : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+// Email-only sign-ups (resource downloads) are NOT shared with the partner firm
+// (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
+// which must never mention the partner. Forms append "See our Privacy Policy."
+const resourceConsentText = `I agree to ${niche.display_name} using my email to send me the resource I requested.`;
 
 export const siteConfig = {
   name: niche.display_name,
@@ -59,8 +74,10 @@ export const siteConfig = {
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,
-  // Canonical lead-form consent text (see derivation above). Forms append the link.
+  // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
+  // Consent text for email-only resource downloads (never names the partner). Forms append the link.
+  resourceConsentText,
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];
