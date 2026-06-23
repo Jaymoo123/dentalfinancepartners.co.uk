@@ -137,7 +137,7 @@ faqs:
 <li><strong>HMO and any applicable selective licensing fees</strong> administered by Milton Keynes City Council.</li>
 <li><strong>Gas safety certificates</strong> (annual under the Gas Safety (Installation and Use) Regulations 1998), Electrical Installation Condition Reports (every five years under the Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020), and EPCs (every ten years, with the current minimum standard requiring EPC E or above to let).</li>
 <li><strong>Replacement of domestic items relief</strong> under <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/311A">ITTOIA 2005 s.311A</a>, covering like-for-like replacement of beds, sofas, white goods, crockery and similar items. The initial purchase of furnishings in a newly furnished let is not covered (only replacement is), and improvement above like-for-like is restricted to the equivalent-replacement cost. This relief comes up often on Milton Keynes furnished corporate and student lets.</li>
-<li><strong>Travel costs</strong> for property visits, repairs supervision and viewings, at HMRC's approved mileage rate of 45p per mile for the first 10,000 business miles and 25p thereafter.</li>
+<li><strong>Travel costs</strong> for property visits, repairs supervision and viewings, at HMRC's approved mileage rate of 55p per mile for the first 10,000 business miles and 25p thereafter.</li>
 <li><strong>Property management software subscriptions</strong>, which rise in importance once MTD takes effect because compatible software is mandatory from 6 April 2026 for in-scope landlords.</li>
 </ul>
 

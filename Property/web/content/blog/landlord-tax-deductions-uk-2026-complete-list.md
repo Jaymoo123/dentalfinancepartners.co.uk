@@ -7,7 +7,7 @@ dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Landlord Allowable Expenses 2026/27 | Full Deductions List"
-metaDescription: "Every allowable landlord expense for 2026/27: repairs, finance costs, RDI, travel at 45p/mile, plus the grey areas (insurance claims, the home-office CGT trap)."
+metaDescription: "Every allowable landlord expense for 2026/27: repairs, finance costs, RDI, travel at 55p/mile, plus the grey areas (insurance claims, the home-office CGT trap)."
 metaTitle_prev: "Landlord Expenses List: 2026 Allowable Deductions"
 metaDescription_prev: "Full list of allowable landlord expenses for 2026/27 including repairs, agent fees, travel at 45p/mile. Plan your deductions with our guide."
 altText: "UK landlord reviewing tax deduction documents and receipts for rental property expenses"
@@ -17,7 +17,7 @@ summary: "The definitive guide to allowable landlord tax deductions in the UK fo
 schema: ""
 faqs:
   - question: "What expenses can landlords claim on tax in the UK for 2026/27?"
-    answer: "UK landlords can claim property running costs (utilities, council tax when liable, insurance, ground rent, service charges), repairs and maintenance, letting agent and management fees, accountancy and legal fees for the letting, advertising, travel at 45p per mile, office and home-office costs, and replacement furniture under Replacement of Domestic Items Relief. Mortgage interest is not deducted as an expense for individuals. Instead you receive a basic-rate tax reducer under Section 24. Limited companies deduct finance costs in full before corporation tax."
+    answer: "UK landlords can claim property running costs (utilities, council tax when liable, insurance, ground rent, service charges), repairs and maintenance, letting agent and management fees, accountancy and legal fees for the letting, advertising, travel at 55p per mile, office and home-office costs, and replacement furniture under Replacement of Domestic Items Relief. Mortgage interest is not deducted as an expense for individuals. Instead you receive a basic-rate tax reducer under Section 24. Limited companies deduct finance costs in full before corporation tax."
   - question: "What is the difference between repairs and improvements for landlord tax?"
     answer: "Repairs restore the property to its original condition and are fully deductible against rental income (fixing a boiler, repainting after a tenancy, replacing a like-for-like worktop). Improvements make the property better than it was (a new extension, an upgraded kitchen, replacing single-glazing with double-glazing) and are capital, so they are not deductible as a revenue expense. They form part of your base cost for Capital Gains Tax when you sell. HMRC sets out the line at PIM2030."
   - question: "Can I claim mortgage interest as a landlord expense in 2026/27?"
@@ -37,7 +37,7 @@ faqs:
   - question: "How does Replacement of Domestic Items Relief work?"
     answer: "Replacement of Domestic Items Relief lets you deduct the cost of replacing (not initially buying) domestic items in a let dwelling, such as furniture, furnishings, appliances and kitchenware. You deduct the cost of the new item, less any proceeds from selling the old one. If you upgrade, you can only claim the cost of a like-for-like replacement. It does not cover fixtures such as boilers or fitted bathroom suites, which are capital."
   - question: "Can I claim travel and motor expenses as a landlord?"
-    answer: "Yes, for genuine property-business journeys such as inspections, repairs, and meeting tenants or contractors. You can use HMRC approved mileage rates of 45p per mile for the first 10,000 miles and 25p thereafter, or claim actual running costs if the vehicle is used wholly for the business. For a mixed-use car you must apportion costs to business journeys only and keep a mileage log. Routine travel from home to a regular base of operations is not allowable."
+    answer: "Yes, for genuine property-business journeys such as inspections, repairs, and meeting tenants or contractors. You can use HMRC approved mileage rates of 55p per mile for the first 10,000 miles and 25p thereafter, or claim actual running costs if the vehicle is used wholly for the business. For a mixed-use car you must apportion costs to business journeys only and keep a mileage log. Routine travel from home to a regular base of operations is not allowable."
   - question: "What costs are not deductible against rental income?"
     answer: "Capital improvements, your own labour, personal use of the property, mortgage capital repayments, fines and penalties, and the costs of buying or selling the property (Stamp Duty Land Tax, purchase and sale legal fees, estate agent sale commission) are not deductible against rental income. Purchase and sale costs and capital improvements instead form part of your Capital Gains Tax base cost when you dispose of the property."
   - question: "Do I need digital records for landlord expenses under Making Tax Digital?"
@@ -60,7 +60,7 @@ faqs:
 <li><strong>Professional fees:</strong> letting agent and management fees, accountancy, legal fees for the letting, surveyor and valuation fees</li>
 <li><strong>Advertising:</strong> property portal listings, photography, signboards</li>
 <li><strong>Finance costs:</strong> mortgage interest (a 20% tax reducer for individuals under Section 24, a full deduction for companies), arrangement and broker fees, redemption penalties, bank charges</li>
-<li><strong>Travel:</strong> inspections, rent collection, meeting contractors, buying materials (45p per mile for the first 10,000 miles, then 25p)</li>
+<li><strong>Travel:</strong> inspections, rent collection, meeting contractors, buying materials (55p per mile for the first 10,000 miles, then 25p)</li>
 <li><strong>Office and admin:</strong> stationery, business phone calls, computer equipment, accounting software, home-office costs</li>
 <li><strong>Replacement items:</strong> furniture, appliances, kitchenware, carpets, curtains, claimed under Replacement of Domestic Items Relief (replacement cost only, not the initial purchase)</li>
 <li><strong>Bad debts and legal:</strong> unpaid rent written off, debt collection, possession and eviction costs</li>
@@ -101,7 +101,7 @@ faqs:
 </tr>
 <tr>
 <td><strong>Travel</strong></td>
-<td>Inspections, rent collection (45p per mile to 10,000 miles)</td>
+<td>Inspections, rent collection (55p per mile to 10,000 miles)</td>
 <td>Apportion mixed-use vehicles; keep a mileage log</td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ faqs:
 
 <p>You can claim travel for genuine property-business journeys, such as inspections, repairs, rent collection, and meeting tenants or contractors. You choose one of two methods per vehicle:</p>
 <ul>
-<li><strong>Mileage:</strong> HMRC approved rates of 45p per mile for the first 10,000 business miles in the year, then 25p per mile</li>
+<li><strong>Mileage:</strong> HMRC approved rates of 55p per mile for the first 10,000 business miles in the year, then 25p per mile</li>
 <li><strong>Actual costs:</strong> fuel, insurance, servicing and repairs, where the vehicle is used wholly for the business</li>
 </ul>
 <p>Public transport for business journeys (train, bus, taxi) is also deductible.</p>

@@ -115,7 +115,7 @@ faqs:
 <li>HMO licensing fees and Wolverhampton selective licensing fees</li>
 <li>Gas safety certificates, EICR (every 5 years), EPC (every 10 years)</li>
 <li>Replacement of domestic items relief under ITTOIA 2005 s.311A</li>
-<li>Travel costs for property visits (HMRC mileage rate 45p per mile for first 10,000 miles)</li>
+<li>Travel costs for property visits (HMRC mileage rate 55p per mile for first 10,000 miles)</li>
 </ul>
 
 <h2>When Your General Accountant Is Costing You Money</h2>

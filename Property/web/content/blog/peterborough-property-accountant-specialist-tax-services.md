@@ -137,7 +137,7 @@ faqs:
 <li><strong>HMO licensing fees</strong> (£600-£1,200 per Peterborough property per five-year licence)</li>
 <li><strong>Gas safety certificates</strong> (annual), EICR (every five years), EPC (every ten years)</li>
 <li><strong>Replacement of domestic items relief</strong> for residential lets, per ITTOIA 2005 s.311A (covers like-for-like replacement of beds, sofas, white goods, crockery)</li>
-<li><strong>Travel costs</strong> for property visits, repairs supervision, and tenant viewings (HMRC's mileage rate is 45p per mile for the first 10,000 miles)</li>
+<li><strong>Travel costs</strong> for property visits, repairs supervision, and tenant viewings (HMRC's mileage rate is 55p per mile for the first 10,000 miles)</li>
 <li><strong>Property management software subscriptions</strong> (rises in importance once MTD takes effect)</li>
 </ul>
 
