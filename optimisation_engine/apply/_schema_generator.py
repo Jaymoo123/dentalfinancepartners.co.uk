@@ -40,7 +40,6 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
                 "IR35 for contractors", "Agency exit and acquisition", "UAE corporate tax",
                 "R&D tax credits for digital agencies",
             ],
-            "memberOf": {"@type": "Organization", "name": "Institute of Chartered Accountants in England and Wales", "url": "https://www.icaew.com"},
         },
         "author": {
             "@type": "Person",
@@ -53,8 +52,8 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
         },
         "reviewer": {
             "@type": "Person",
-            "name": "ICAEW Qualified Senior Reviewer",
-            "jobTitle": "Chartered Accountant (ACA, ICAEW)",
+            "name": "Agency Founder Finance Editorial Team",
+            "jobTitle": "Reviewed against legislation.gov.uk and HMRC guidance",
             "knowsAbout": ["UK tax law", "Corporate tax", "International tax"],
         },
     },
@@ -69,7 +68,6 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
                 "Portfolio incorporation", "Making Tax Digital for property", "Furnished holiday lets",
                 "Buy-to-let limited companies", "Non-resident landlord scheme",
             ],
-            "memberOf": {"@type": "Organization", "name": "Institute of Chartered Accountants in England and Wales", "url": "https://www.icaew.com"},
         },
         "author": {
             "@type": "Person",
@@ -82,8 +80,8 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
         },
         "reviewer": {
             "@type": "Person",
-            "name": "ICAEW Qualified Senior Reviewer",
-            "jobTitle": "Chartered Accountant (ACA, ICAEW), Property Tax Specialist",
+            "name": "Property Tax Partners Editorial Team",
+            "jobTitle": "Reviewed against legislation.gov.uk and HMRC guidance",
             "knowsAbout": ["UK property taxation", "CGT", "SDLT", "Section 24"],
         },
     },
@@ -98,10 +96,7 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
                 "Dental practice acquisitions", "NHS pension annual allowance", "VAT for dental practices",
                 "Capital allowances for dental equipment",
             ],
-            "memberOf": [
-                {"@type": "Organization", "name": "Institute of Chartered Accountants in England and Wales", "url": "https://www.icaew.com"},
-                {"@type": "Organization", "name": "National Association of Specialist Dental Accountants and Lawyers", "url": "https://www.nasdal.org.uk"},
-            ],
+            "memberOf": {"@type": "Organization", "name": "National Association of Specialist Dental Accountants and Lawyers", "url": "https://www.nasdal.org.uk"},
         },
         "author": {
             "@type": "Person",
@@ -114,8 +109,8 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
         },
         "reviewer": {
             "@type": "Person",
-            "name": "ICAEW Qualified Senior Reviewer",
-            "jobTitle": "Chartered Accountant (ACA, ICAEW), NASDAL Member",
+            "name": "Dental Finance Partners Editorial Team",
+            "jobTitle": "Reviewed against legislation.gov.uk and HMRC guidance",
             "knowsAbout": ["Dental practice finance", "NHS contract accounting", "Practice valuation"],
         },
     },
@@ -130,7 +125,6 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
                 "Corporation tax", "VAT compliance", "Payroll and PAYE",
                 "R&D tax credits", "Making Tax Digital", "Director dividends",
             ],
-            "memberOf": {"@type": "Organization", "name": "Institute of Chartered Accountants in England and Wales", "url": "https://www.icaew.com"},
         },
         "author": {
             "@type": "Person",
@@ -143,8 +137,8 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
         },
         "reviewer": {
             "@type": "Person",
-            "name": "ICAEW Senior Reviewer",
-            "jobTitle": "Chartered Accountant (ACA, ICAEW)",
+            "name": "Holloway Davies Editorial Team",
+            "jobTitle": "Reviewed against legislation.gov.uk and HMRC guidance",
             "knowsAbout": ["UK SME taxation", "Corporation tax", "Personal taxation"],
         },
     },
