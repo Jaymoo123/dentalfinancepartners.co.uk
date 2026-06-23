@@ -45,8 +45,8 @@ faqs:
   - question: "How does this page relate to the 2024-2026 confirmation statement changes page?"
     answer: "This page is the definitional pillar: for the reader who has not yet engaged with the changes and wants the entry-level walkthrough of what a confirmation statement is, what it contains, when it is due, what it costs, and what the penalties are for missing it. The 2024-onwards page is the operational deep-dive on the four ECCTA-era changes: for the reader who already knows what a confirmation statement is and wants the change-detail walkthrough. Reading sequence: this page first to settle the definitional question; then the deep-dive for the change-by-change operational mechanics."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B12: definitional pillar on-ramp for the bare query 'confirmation statements'. Sits above the existing operational deep-dive (`companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure`) which leads with the 2024-2026 change detail. CA 2006 ss.853A-853L architecture as the obligation backbone. Four ECCTA-era additions sequenced by commencement date (4 March 2024 registered email; 4 March 2024 appropriate-address; 5 March 2024 lawful purposes; 18 November 2025 personal-code-at-filing). Fee schedule (£50 online / £110 paper from 1 May 2024) flagged as verify-at-write per §16.27 rate-by-reference. £5,000 max civil penalty under Sch 1B CA 2006 (inserted by ECCTA) flagged as verify-at-write. ECCTA ss.28-30 + ss.59-63 + ss.40-45 + ss.64-69 verbatim verified per §11.A F-14 close. Pillar-vs-deep-dive forward-link discipline preserved (this page is the on-ramp; the existing 2024-onwards page is the change-detail deep-dive)."
 ---

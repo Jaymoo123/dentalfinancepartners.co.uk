@@ -39,8 +39,8 @@ faqs:
   - question: "Where can I read the operational walkthrough for landlord LtdCo directors?"
     answer: "Our ECCTA identity verification operational walkthrough sets out the One Login versus ACSP route choice for landlord portfolios, the per-company filing cadence (each company quotes the director's personal code on its confirmation statement), the multi-SPV mechanics (one verification covers every entity in the portfolio), the transition-window timing for existing roles, and the sanctions regime in detail. This page is the upstream entry point; that page is the operational deep-dive. Read this page first for the framework, then move to the operational page for the action steps."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B2: definitional on-ramp to the UK identity verification topic. Sits upstream of the operational walkthrough page (eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos). Targets the upstream search term Identity Verification UK rather than the ECCTA-specific operational query. ECCTA 2023 ss.64 + 65 + 66 + 67 + 68 + 69 + ss.40-45 architecture anchored per §11.A Wave 9 mini-lock. Commencement chain (8 April 2025 voluntary, 18 November 2025 legal requirement, transition window through ~November 2026) honoured per F-11. Companies House campaign page URL referenced per F-12 (deprecated gov.uk/government/news/changes-to-uk-company-law URL avoided)."
 ---

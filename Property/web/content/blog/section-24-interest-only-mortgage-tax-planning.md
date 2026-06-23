@@ -49,8 +49,8 @@ howToSteps:
   - name: "Carry forward any restricted finance costs"
     text: "If the profits or income cap reduced your credit below 20% of your full interest, the unused finance costs carry forward to set against future years. Keep a running record, especially in low-profit or loss years."
 dateModified: "2026-05-31"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Landlord Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
 ---
 

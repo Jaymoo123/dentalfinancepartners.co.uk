@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/27920274/pexels-photo-27920274.jpeg?auto
 h1: 'How to Calculate VAT: The Formulas and Rates Explained'
 summary: "A practical guide to calculating VAT: the add-on and back-out formulas, the 20%, 5% and zero rates and where each applies, VAT on residential and commercial rent, the trade-by-trade approach, and the £90,000 registration threshold. For the deeper commercial-property recovery questions (option to tax, partial exemption, developer reclaim) it points to our commercial property VAT guide."
 schema: ''
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 howToSteps:
 - name: "Find the VAT on a net price"

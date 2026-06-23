@@ -43,8 +43,8 @@ faqs:
   - question: "Where do I find the option-to-tax framework, partial-exemption mechanics, and self-storage carve-out?"
     answer: "Four companion pages. The option-to-tax framework (where opting commercial property shifts rents from exempt to standard-rated and frequently triggers the registration threshold) is the C1 PILLAR. The partial-exemption mechanics (where group registration consolidates the calculation across multiple SPVs) are on our standard-method (Wave 5) and special-method (C5) pages. The self-storage standard-rated carve-out (which contributes to the threshold calculation even where the landlord has not opted) is on our C8 self-storage page. The pre-registration input-tax recovery window (relevant for newly-registering landlords with recent acquisition or refurbishment VAT) is on our companion Wave 5 pre-registration input tax page."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket C C9, VAT registration threshold + group registration depth. £90,000 threshold from 1 April 2024 via SI 2024/307 verified earlier in session against gov.uk. Both triggers (historic 12-month rolling + 30-day forward-look) walked at Sch 1 para 1(1)(a) and (b). Stafford Property Group multi-SPV worked example showing £47k-£57k annual saving on group registration vs separate-entity flow. Disaggregation anti-avoidance under Sch 1 para 1A contrasted with voluntary grouping under ss.43-43D. Per §16.27 rate-by-reference discipline, the £90,000 figure must be re-verified at future write time against any further Budget adjustment; the verification timestamp on this page is 2026-05-25."
 ---

@@ -41,8 +41,8 @@ faqs:
   - question: "How do I tell whether a refund claim is genuine before I commit?"
     answer: "Six tests. (1) Does the route map to one of the four statutory refund mechanisms in the answer above? If not, treat it as speculative. (2) Is the firm regulated by a recognised body (SRA, ICAEW, CIOT)? (3) Is the engagement letter on a flat-fee or hourly basis, or is it contingent on the refund amount? Contingent-fee structures are common in this sector and incentivise stretch claims. (4) Will the firm provide a written technical opinion before filing? If they refuse, the claim is not robust. (5) Are they prepared to defend the claim through HMRC enquiry, statutory review and First-tier Tribunal at their cost? Most refund mills are not. (6) Have they reviewed the actual purchase documents, completion statements and Land Registry title rather than working from a public AVM and a cold call?"
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Consumer-protection piece. Explains the cold-call SDLT refund scam pattern, the eight red flags, the real statutory refund routes, and what to do if you have already signed an engagement letter."
 ---

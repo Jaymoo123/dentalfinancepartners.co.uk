@@ -45,8 +45,8 @@ faqs:
   - question: "Does the UK-Italy treaty cover inheritance tax?"
     answer: "The 1988 UK-Italy Double Taxation Convention is an income-and-capital tax treaty. It does not cover inheritance tax. The UK has IHT treaties with only eight jurisdictions (US, France, Netherlands, Sweden, India, Pakistan, Switzerland, South Africa). Italy is not among them. For estates of UK long-term-residents (post-April-2025 UK IHT regime) holding Italian property, or of Italian-domiciled individuals with UK property, the UK applies its domestic IHT rules and Italy applies its imposta sulle successioni e donazioni. Italian succession tax rates are low by European standards (4% direct line above €1m allowance; 6% siblings; 8% others), but the treaty does not mediate double-tax exposure. UK residential property is always within UK IHT regardless of owner residence (Schedule A1 IHTA 1984)."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-Italy tie-breaker page (Article 4 cascade applied). Differentiator vs the generic Wave 2 tie-breaker page (B8): this page anchors the cascade to the UK-Italy bilateral with explicit treatment of the 2024 Italian residence reform under Legislative Decree 209/2023, Agenzia delle Entrate AIRE practice, and IVIE wealth tax on UK property. Worked example: Marco, Italian national, London work base + Milan family home, resolves under centre-of-vital-interests step to Italian residence."
 ---

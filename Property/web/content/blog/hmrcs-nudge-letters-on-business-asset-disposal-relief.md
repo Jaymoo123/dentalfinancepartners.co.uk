@@ -40,8 +40,8 @@ faqs:
   - question: "What does the lifetime £1 million cap actually catch?"
     answer: "The £1 million lifetime cap applies to cumulative qualifying gains across all BADR claims by the individual over their lifetime. Once £1 million of cumulative qualifying gain has been relieved, further qualifying gains are taxed at standard rates. The cap was reduced from £10 million on 11 March 2020 (Finance Act 2020 section 24). Pre-11-March-2020 claims that used some of the £10 million cap count against the current £1 million cap on a cumulative basis."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

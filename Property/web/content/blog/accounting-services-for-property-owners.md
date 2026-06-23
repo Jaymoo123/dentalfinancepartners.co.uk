@@ -41,8 +41,8 @@ faqs:
   answer: "Yes. Non-resident landlords have extra obligations: the Non-resident Landlord Scheme on UK rental income, a UK Self Assessment return, and a 60-day UK Property Disposal return on every UK land disposal regardless of whether tax is due. An accountant manages the scheme registration, the annual return and the disposal reporting, and coordinates with any cross-border position."
 - question: "How does the Renters' Rights Act affect my tax position?"
   answer: "The Renters' Rights Act 2025 mainly changes tenancy law, but it has knock-on cash-flow effects an accountant models. With the move to periodic tenancies and revised rent-increase rules from 1 May 2026, your accountant looks at how rental cash flow interacts with the Section 24 finance-cost restriction and your overall tax position, so the tax planning reflects the new letting framework rather than the old fixed-term model."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-30'
 dateModified: '2026-05-30'
 sourcesVerifiedAt: '2026-05-30'

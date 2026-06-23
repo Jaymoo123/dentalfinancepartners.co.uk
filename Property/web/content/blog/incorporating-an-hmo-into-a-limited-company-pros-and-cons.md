@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from the existing HMO-incorporation mechanics page?"
     answer: "This page is the decision-helper / pros-and-cons framing layer: an honest decision framework weighing the seven HMO-specific factors that change the standard incorporation math. The existing HMO-incorporation mechanics page covers the layer beneath: the how-to of the SDLT, CGT, lender, and accounting steps once the decision is made. Reading sequence: this page first to settle the should-you question; the mechanics page once you decide yes. The pages cross-link."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Decision-helper / pros-and-cons framing page for HMO incorporation. HONEST FRAMING discipline: not advocacy. Six structural pros plus ten cost-side cons surfaced together; worked examples cover both pro-incorporation (Example 1, 4-HMO portfolio) and pro-personal (Example 5, single low-yield HMO) outcomes. Post-MDR-abolition cost impact (F(No.2)A 2024 s.7 from 1 June 2024) surfaced explicitly. Current dividend rates 10.75% / 35.75% / 39.35% from 6 April 2026 (NOT stale 8.75/33.75/39.35) per FA 2026 lock. s.455 35.75% from 6 April 2026 (NOT stale 33.75%) per FA 2026 lock."
 ---

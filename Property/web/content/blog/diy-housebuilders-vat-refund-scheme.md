@@ -45,8 +45,8 @@ faqs:
   - question: "Can I claim if I have already lived in the dwelling for some time?"
     answer: "The completion date is the trigger for the six-month clock, not the occupation date. A self-builder who completed in January 2026 and moved in immediately must claim by July 2026. Living in the dwelling before claiming is fine; failing to claim before the deadline is the failure mode."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "VAT bucket. The DIY scheme is the consumer-side counterpart to the developer zero-rate; self-builders rely on it to avoid bearing VAT that would otherwise be unrecoverable. The six-month deadline (from December 2023) is the dominant failure mode."
 ---

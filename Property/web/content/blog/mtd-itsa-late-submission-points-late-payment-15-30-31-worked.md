@@ -43,8 +43,8 @@ faqs:
   - question: "Can I appeal a late-payment penalty if I had a reasonable excuse?"
     answer: "Yes; the reasonable-excuse appeal route applies to MTD ITSA late-payment penalties the same way it does to other penalty regimes. Reasonable excuse is a high bar: serious illness or bereavement, software failure with no available workaround, HMRC error preventing payment, postal/banking system failure documented at the time. Forgetfulness, cash flow difficulty, and 'didn't get round to it' are not reasonable excuses. Appeal must be lodged within 30 days of the penalty notice. The appeal does not pause the penalty calculation; the penalty continues to accrue (at 10% per annum from day 31) while the appeal is being considered."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 net-new (Session B, MTD ITSA operational details). Worked-example floor for the MTD ITSA penalty regime; sibling to Wave 3 B6 (HMRC letter action page) which holds the action floor and Wave 3 B8 (six-changes overview) which holds the rule-summary floor. Cites the verbatim Spring Statement 2025 wording for the 15/30/31 + 3%/3%/10% schedule. Explicit legacy-schedule contrast section to show the harshness vs the non-MTD FA 2021 Sch 26 regime. House position §19.7 is the locked figure source."
 ---

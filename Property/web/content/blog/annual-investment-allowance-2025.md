@@ -39,8 +39,8 @@ faqs:
   answer: Yes, but the AIA cap itself is not. From 1 April 2026 (corporation tax) and 6 April 2026 (income tax), the main-pool writing-down allowance falls from 18% to 14%, under section 28 of the Finance Act 2026 amending section 56(1) of the Capital Allowances Act 2001. The special rate pool stays at 6%. A new 40% first-year allowance for new and unused main-rate plant also applies from 1 January 2026. None of this changes the £1 million AIA limit for 2025/26; for the full 2026 transition timeline see our companion 2024/25 guide.
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 sourceDomains:
 - legislation.gov.uk

@@ -43,8 +43,8 @@ faqs:
   - question: "Where is the underlying statute and guidance?"
     answer: "The primary statute is Schedule 4A of the Land and Buildings Transaction Tax (Scotland) Act 2013, available at legislation.gov.uk/asp/2013/11/schedule/4A. The schedule was inserted by the Land and Buildings Transaction Tax (First-Time Buyer Relief) (Scotland) Order 2018 (SSI 2018/220), at legislation.gov.uk/ssi/2018/220/contents/made. Revenue Scotland publishes detailed operational guidance at revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief with worked examples covering joint-buyer eligibility, linked-transaction interactions, and the intention-to-occupy test."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Scottish LBTT first-time buyer relief depth page. The £175,000 nil-band uplift with no upper value ceiling under LBTT(S)A 2013 Schedule 4A is the load-bearing structural distinctive against both the English SDLT FTB regime (£500,000 withdrawal threshold) and the Welsh LTT position (no FTB relief at all). Three Scottish worked examples (Lennon Dundee £160k single, Macleod-Scott Glasgow £230k joint, Robertson Edinburgh £350k joint-with-overseas-owning-partner trap) walk the mechanic at typical Scottish FTB price points and surface the overseas-prior-ownership and ADS-interaction failure modes."
 ---

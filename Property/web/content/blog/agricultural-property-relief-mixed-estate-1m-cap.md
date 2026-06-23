@@ -47,8 +47,8 @@ faqs:
   - question: "What should mixed-estate landlords do between now and April 2026?"
     answer: "Three priorities. (1) Calculate the post-April-2026 IHT position now, using the £2.5m combined allowance allocated across the actual mix of farmland, trading business and BTL. The size of the IHT increase determines the urgency of any further action. (2) Consider lifetime gifts of qualifying property before 6 April 2026 to lock in the 100% relief on the gifted value, subject to the 7-year clock and the GROB rules (gift must be without reservation of benefit). (3) Review the will architecture so that the £2.5m allowance is used on the most-valuable APR-qualifying or BPR-qualifying assets first; a will that leaves farmland to direct descendants and lets the trading business default to other beneficiaries may not optimise the allocation. Get the IHT400 modelling done by year-end to identify the planning windows."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Mixed-estate APR page for landlords whose estate spans farmland, a trading business and a BTL portfolio. Walks the £2.5m combined BPR/APR cap from April 2026, the allocation arithmetic across competing assets, and the Lambert-family worked example."
 ---

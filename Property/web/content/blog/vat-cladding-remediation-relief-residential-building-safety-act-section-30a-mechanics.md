@@ -39,8 +39,8 @@ faqs:
   - question: "Does the page's framing reflect HMRC's most recent position?"
     answer: "Yes. The page reflects HMRC's published guidance as at the date of writing. The framing is conservative on the absence of a general cladding-remediation VAT relief because no such relief exists in the statute or in HMRC's published guidance. If a future statutory amendment introduces a specific cladding-remediation zero-rate or reduced-rate, this page will be updated. The BSA 2022 leaseholder-protection framework operates on cost-bearing rather than on the VAT rate of the underlying works."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A specialist page. The brief framing differentiator incorrectly asserted that HMRC had confirmed a zero-rating treatment for cladding remediation; the §16.35 per-write verification at write time confirmed no such general relief exists. Page reframed to set out the actual position: standard-rated 20% by default, narrow snagging exception, BSA 2022 leaseholder protection on the cost-bearing side. F-9 BRIEF_CORRECTION raised to flag the brief mis-framing for the manager's awareness and future protocol improvement."
 ---

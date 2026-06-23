@@ -43,8 +43,8 @@ faqs:
   - question: "What are the common sole-trader-vs-partnership mistakes for landlords?"
     answer: "Six recurring patterns. (1) Assuming joint property ownership equals partnership when PA 1890 s.2(1) negative applies (co-owners are not partners by default). (2) Introducing a spouse-partner with no commercial substance, triggering a settlements legislation challenge. (3) Introducing a partner without managing the CGT part-disposal exposure. (4) Failing to file SA800 once a partnership exists, triggering per-partner penalties. (5) Assuming sole-trader-to-partnership transition has no SDLT consequence (it does, under Sch 15). (6) Choosing partnership form for limited-liability reasons (a general partnership has unlimited joint-and-several liability under PA 1890 s.9; the LLP is the limited-liability form)."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Early entity-choice comparison for UK property landlords: sole trader vs partnership. Sits above the partnership-existence definitional layer (A7) and beside the partnership-agreement-and-roles handbook (this batch sibling). Anchors to live §11.C cluster (parent + §11.C.X salaried-member + §11.C.Y mixed-membership + §11.C.Z LLP accounts sub-locks), live §11.B (LP reforms), and §24 (Form 17 + joint ownership). Honest framing: headline tax position is largely identical; differences are operational (liability, SA800 per-partner penalty, CGT on partner introduction, SDLT Sch 15, settlements legislation, joint-and-several liability). Form 17 election on joint ownership is the operationally lighter route for most landlord couples; partnership form earns its keep on bona-fide multi-partner setups or where Sch 15 SLP on future LtdCo incorporation is the goal. Civil-partnership-vs-business-partnership disambiguation held."
 ---

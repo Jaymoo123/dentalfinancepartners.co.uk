@@ -4,8 +4,8 @@ slug: section-24-vs-incorporation-which-saves-more-tax
 canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax
 date: '2026-03-29'
 author: "Property Tax Partners Editorial Team"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Landlord Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-31'
 dateModified: '2026-05-31'
 category: "Section 24 & Tax Relief"

@@ -41,8 +41,8 @@ faqs:
   - question: "What if I forgot to claim main-rates relief on replacement?"
     answer: "If you sold your previous main residence AFTER the effective date of the new Welsh purchase, you paid higher rates initially and can claim a repayment from the Welsh Revenue Authority within 3 years of the sale of the previous main residence (the 3-year window runs from the sale, not from the original return). The claim is a separate process from the original LTT return; supporting documentary evidence (sale completion paperwork, evidence that the disposed property was your only or main residence at some point in the 3 years before the new purchase) is required. The Welsh Revenue Authority's repayment-of-overpaid-tax mechanism is the operative channel."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Operational complete guide to Welsh LTT higher residential rates. Rate-table-first structure leading on the post-11-December-2024 figures (5% / 8.5% / 10% / 12.5% / 15% / 17%) and the structural fact that Welsh higher rates are a standalone band table, not a flat surcharge added on top of main rates. Sits upstream of the Welsh higher-rates mechanics deep page and downstream of the main-rates page. Foregrounds three structural distinctives against the English SDLT 5% surcharge regime: (a) band table not flat surcharge; (b) no corporate flat rate (no LTT equivalent to FA 2003 Sch 4A 15%); (c) no non-resident surcharge."
 ---

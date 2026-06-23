@@ -37,8 +37,8 @@ faqs:
     answer: "Stop. WDF does not provide criminal-prosecution immunity, and once a WDF disclosure is in motion the criminal-prosecution risk has not been foreclosed. Where the matter involves deliberate fraud with potential criminal exposure (active concealment, false documentation, material sums, multiple connected parties), the appropriate route is the CoP9 Contractual Disclosure Facility, which provides immunity for matters disclosed under that procedure. The route decision is fact-specific and typically requires specialist tax-disputes advice before commencing either route."
   - question: "How does WDF interact with foreign-jurisdiction tax positions?"
     answer: "Double-tax relief under the relevant UK double-taxation agreement (typically credit-method) applies on the disclosure. Foreign tax paid offsets UK tax due on the same income or gain. The disclosure must include the foreign-jurisdiction tax filings and payment records as evidence to support the credit. Where you have not yet notified the foreign jurisdiction either (offshore non-compliance in both places), you may need a parallel foreign-jurisdiction disclosure. The UK WDF does not foreclose the foreign-jurisdiction obligation."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

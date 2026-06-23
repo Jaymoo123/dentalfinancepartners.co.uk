@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/32045967/pexels-photo-32045967.jpeg?auto
 h1: 'Housing Development Finance: Funding Options and the Tax Treatment That Decides Your Profit'
 summary: "A practical guide to housing development finance for UK developers. Covers the main funding routes (senior debt, mezzanine, joint ventures, bridging), how the trading-versus-investment line decides whether your profit is taxed as trading income or a capital gain, VAT zero-rating on new builds, the Residential Property Developer Tax, and Making Tax Digital readiness."
 schema: ''
-reviewedBy: 'ICAEW Qualified Senior Reviewer'
-reviewerCredentials: 'Chartered Accountant (ACA, ICAEW), Property Tax Specialist'
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-31'
 faqs:
 - question: "What is the difference between development finance and a bridging loan?"

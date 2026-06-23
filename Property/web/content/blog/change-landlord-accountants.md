@@ -39,8 +39,8 @@ faqs:
   - question: "How much should I budget for the transition?"
     answer: "Variable; depends on firm, portfolio size, and complexity. Typical components: new firm engagement fee (one-off plus ongoing); outgoing firm may charge a handover or closure fee per their engagement letter; outstanding fees with the outgoing firm remain payable. For a typical 4-5 property BTL portfolio, expect a one-off transition cost of £500-£1,500 plus ongoing fee differentials. For LtdCo plus LLP structures with ACSP cascade, add £200-£500 for the ECCTA ID verification step."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Practice Management and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "MW3 Bucket C C17: operational process page; rigour-over-volume framing; checklist a landlord can ACT on. Anchors: §27.7 (record retention TMA s.12B + CA 2006 s.388 + TMA s.12AA); §19 + §19.10 (MTD-for-ITSA SI 2021/1076 + ASA mechanics); §11.A + §11.A.1 (ECCTA 2023 Part 1 + Part 3 ACSP framework); §5 (CGT residential + TCGA 1992 Sch 2 paras 6-12 60-day reporting); §27.1 + §27.4 (HMRC enquiry framework TMA s.9A + s.28A); §22 (IHT obligations IHTA 1984 s.216 + s.226); MLR 2017 SI 2017/692 reg 27 (fresh CDD at engagement); UK GDPR / DPA 2018 (data transfer + SAR mechanics); ICAEW PCRT + ACCA Rulebook + ATT / CIOT PCRT (professional clearance protocol). Do-not-write GREP held: outgoing accountant can withhold records for unpaid fees (false), AML transfers between firms (false), you don't need to notify HMRC of the agent change (false), ASA and 64-8 are the same (false), LtdCo agent change is automatic on personal-tax change (false), can switch mid-enquiry without continuity protocol (false), records-retention duty stops when you switch (false), 60-day CGT window pauses for agent change (false), your accountant holds the originals (false). Cluster-label drift flagged at Stage 2. No new HP-lock raised at RUN."
 ---

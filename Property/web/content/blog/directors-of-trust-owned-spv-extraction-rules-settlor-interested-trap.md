@@ -45,8 +45,8 @@ faqs:
   - question: "How does the s.48ZA long-term-resident test affect trust-owned SPVs from April 2025?"
     answer: "From 6 April 2025, the historic domicile concept for IHT was replaced by a residence-based test (IHTA 1984 s.48ZA, in force per Finance Act 2025; see house position section 22.12). The new test applies to settlor's status at the date of settlement: where the settlor was a 'long-term resident' (UK-resident for at least 10 consecutive tax years or 10 of the previous 20 tax years), the trust's UK assets and overseas assets are within the relevant property regime for IHT. For trust-owned UK property SPVs, the new test changes the analysis principally for offshore-based or non-resident founders settling property into trust; UK-resident founders see no practical change. The s.48ZA test is the IHT-side gate; the income-tax mechanics on this page (s.479 trust rate, s.624 / s.629 attribution) are not directly affected. See our depth page on the IHT estate planning house position for the framework."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Trust-owned-SPV extraction page. Three load-bearing mechanics (trust-rate dividend hit at trust level; settlor-attribution under ITTOIA s.624 / s.629; salary survives intact). Cross-bucket sibling to Wave 6 B4 (settlor-interested trust IHT+CGT trifecta) and Wave 6 B7 (settlor-interest + GROB double-trap), both shipped first on the B-branch per §16.32 sequencing constraint."
 ---

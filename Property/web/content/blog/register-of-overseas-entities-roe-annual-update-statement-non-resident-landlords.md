@@ -43,8 +43,8 @@ faqs:
   - question: "What records should I keep to evidence compliance?"
     answer: "At minimum: a copy of the update statement as filed, the verification certificate from the UK-regulated agent for each beneficial owner verified, the AML file used to verify (passport, proof of address, source-of-funds material for offshore beneficial owners), board minutes authorising the verification engagement and the filing, and a calendar tracking the next update period end. For multi-property entities, also retain a property-level mapping showing how the registrable beneficial owners are linked to each title at HMLR, so that any conveyancing solicitor handling a future disposition can demonstrate compliance instantly at title search. The discipline is to treat the verification certificate as the operational evidence and the filing receipt as the registrar-side evidence; both are needed if HMRC or Companies House subsequently challenges the position."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Annual-update-side companion to existing initial-registration material on the Register of Overseas Entities. Anchored on the ECTEA 2022 s.7 + s.8 verbatim text per legislation.gov.uk, with the LRA 2002 Sch 4A HMLR disposition block as the operational consequence frame and the multi-axis compliance picture (RoE + ATED + NRL + CT + NRCGT) drawn explicitly. Written for the offshore-corporate landlord audience."
 ---

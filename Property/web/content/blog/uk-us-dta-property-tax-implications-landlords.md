@@ -43,8 +43,8 @@ faqs:
   - question: "What are the gift and estate tax implications of holding UK property as a US citizen?"
     answer: "The US imposes worldwide estate tax on US citizens with a $13.99 million unified credit for 2026, plus an unlimited marital deduction for transfers to a US-citizen spouse. UK IHT applies on UK situs property regardless. The UK-US estate tax convention (1978) sits separately from the income tax convention and provides credit relief and tie-breakers for estate tax purposes. Cross-border estate planning for US-citizen UK landlords requires both treaties to be read in tandem."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-US treaty page for property investors. Sibling to the general tax-treaties framework guide. Saving clause (Art 1(4)) is the framing differentiator; UK NRCGT and FBAR/FATCA reporting overlays are the practical pinch points."
 ---

@@ -44,8 +44,8 @@ faqs:
 - question: "Where do I get authoritative confirmation of current rates?"
   answer: "HMRC's <a href=\"https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual\">Capital Gains Manual</a> is the authoritative reference for mechanics. <a href=\"https://www.gov.uk/capital-gains-tax/rates\">gov.uk Capital Gains Tax rates</a> is updated each tax year for the current rates. <a href=\"https://www.legislation.gov.uk/ukpga/1992/12\">TCGA 1992</a> on legislation.gov.uk is the statutory framework. <a href=\"https://www.gov.uk/report-and-pay-your-capital-gains-tax\">HMRC's CGT on UK property service</a> is the filing portal."
 dateModified: '2026-05-21'
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-21'
 editorialNote: Pillar rewrite covering full CGT framework with onward links to daughter pages.
 ---

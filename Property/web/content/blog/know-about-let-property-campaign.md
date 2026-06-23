@@ -40,8 +40,8 @@ faqs:
   - question: "Where does this orientation page sit relative to other LPC pages?"
     answer: "For residential rental income you should have declared and did not, the LPC is almost always the right route, and you confirm it by checking three things: the income is from residential property, you own it personally (not through a company or trust), and HMRC has not already issued you a CoP9 letter. If all three hold, you notify, then disclose within 90 days, then pay. If HMRC has written to you suspecting serious fraud, that is CoP9 territory and you take specialist advice first. If the property or income is offshore, you use the Worldwide Disclosure Facility instead. The single decision that changes your penalty is whether you never filed (Schedule 41) or filed and understated (Schedule 24), so settle that before you draft a figure."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

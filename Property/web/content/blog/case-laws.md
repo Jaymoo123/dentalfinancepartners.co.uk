@@ -39,8 +39,8 @@ faqs:
   - question: "Will more cases be added to the table?"
     answer: "Yes. The page is monitored for new case-law watchpoint additions: post-2025 BlueCrest follow-on FTT/UT decisions; post-2025 SDLT mixed-use trilogy follow-on cases at UT/CA; post-2025 IHT BPR decisions affecting the Pawson line; post-2025 Higgins-line PPR completion-date cases. We add new cases at write time where they meet the table's selection rule."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Property Litigation and Tribunal Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "MW3 Bucket C C16: case-law INDEX / HUB page; decision-grouped table format (NOT chronological list); landlord-relevant filter (NOT exhaustive); forward-link density to substantive deep-dives. Anchors: §1.C (Bewley); §1.J (SDLT mixed-use trilogy — Hyman / Goodfellow / Faiers); §22.1 (Pawson BPR); §28.5 (badges of trade five-case cluster); §11.C.X.2 (BlueCrest 2024 UKSC 33); §22.11 (GROB — Hood / Buzzoni); §27.1 (Tooth discovery); §27.2 + §27.4 (Perrin / Martland penalties + late-appeal); §5 PPR (Lewis v Lady Rook / Goodwin v Curtis / Higgins); §35.2 (Ready Mixed Concrete cross-reference for CIS employment); §29 (Card Protection Plan + Robinson Family Ltd VAT cluster). Every case citation verbatim-verified at BAILII / standard legal databases per §16.35 strict gate. Do-not-write GREP held: wrong court abbreviation (UTT, UK Supreme Court in citation), wrong year-of-decision (Pawson 2014, Tooth 2020, BlueCrest 2023), wrong case-name spelling (Beverley for Bewley, Hayman for Hyman), wrong holding paraphrase (Bewley = all renovation; Pawson = BTL with services investment; BlueCrest widened Condition B), chronological list framing, pure trust-law / company-law cases. No new HP-lock raised at RUN."
 ---

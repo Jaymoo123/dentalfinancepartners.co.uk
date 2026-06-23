@@ -45,8 +45,8 @@ faqs:
   - question: "How does this interact with the April 2026 BPR/APR cap or April 2027 pension changes?"
     answer: "Independently. The April 2025 residence-based regime is the gatekeeper for whether you are within UK IHT scope at all (LTR pulls in worldwide assets; non-LTR is confined to UK situs). The April 2026 £2.5m BPR/APR cap (IHTA 1984 s.124D) operates within the IHT charge for whichever assets are in scope. The April 2027 pension reform adds unused defined-contribution pension funds to the estate, again within whatever scope the LTR test produces. For a non-LTR investor with only a UK property portfolio, the April 2026 cap is relevant if the portfolio qualifies for BPR (rare for pure BTL per Pawson; relevant for a property-development trading business); the April 2027 pension reform is relevant for any UK-registered pension. The three reforms are cumulative, not alternative."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 2 A6 (IHT). Regime-change page on the April 2025 IHT residence-based reform replacing domicile. Distinct framing from A1-A5 (decision-led / mechanism / event-reform / case-law respectively): A6 is a connecting-factor regime change that gates the entire IHT analysis for cross-border landlord clients. Two-route LTR test (10 consecutive or 10 of 20, confirmed against HMRC guidance, refines house position §15.6 which mentions only the 10-of-20 route), tail mechanics with worked taper, transitional protections for non-doms and deemed-doms at 30 October 2024 (Budget date), Schedule A1 look-through unaffected, Budget 2025 anti-avoidance extensions. Two worked examples: Aisha (Italian-resident £1.2m London BTL portfolio, never UK-resident) and David (returning to UK after 8 years in Dubai)."
 ---

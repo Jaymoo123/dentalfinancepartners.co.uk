@@ -43,8 +43,8 @@ faqs:
   - question: "How does HMRC test CIHC status on enquiry?"
     answer: "The standard enquiry process is on the CT600 corporation tax return: HMRC reads the trade or business description, the rental income split between properties, and any disclosed connected-party let arrangements. Where the position is unclear or HMRC has specific reason to investigate, it can ask for tenant references, tenancy agreements, deposit-protection registrations, rent payment evidence, and details of how each tenant was found. The evidence package matters: a property listed publicly via a letting agent with arm's-length references and market rent is much harder for HMRC to recharacterise than an undocumented family arrangement. Keep tenancy paperwork organised."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Definitional page that fixes the widespread misconception that all property investment SPVs are CIHCs. The carve-out for unconnected-party land letting is specific and protects almost all arm's-length BTL companies; the trap is the connected-person let."
 ---

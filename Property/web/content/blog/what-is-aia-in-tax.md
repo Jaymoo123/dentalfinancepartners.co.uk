@@ -42,8 +42,8 @@ faqs:
 - question: How does AIA fit with Making Tax Digital for landlords?
   answer: Making Tax Digital for Income Tax is live and phased in by income. It applies from 6 April 2026 to landlords and sole traders with qualifying income over £50,000, from 6 April 2027 over £30,000, and from 6 April 2028 over £20,000. Within MTD you keep digital records and send quarterly updates, then finalise the year. Capital allowances, including any AIA, are dealt with at the final declaration rather than in the quarterly updates.
 dateModified: '2026-05-30'
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:

@@ -43,8 +43,8 @@ faqs:
   - question: "What are common LLP accounts mistakes?"
     answer: "Six recurring patterns. (1) Using a company-accounts template without LLP-specific SI 2008/1911 modifications (wrong balance-sheet captions, missing 'Loans and other debts due to members' line, wrong P&L presentation). (2) Classifying all members' interests as equity without applying the FRS 102 Section 22 substance test (most LLPs with realistic buy-out provisions have liability-classified interests). (3) Treating all members' remuneration as appropriation when the LLP agreement creates automatic allocation triggering expense treatment under the SORP. (4) Failing to disclose LLP agreement terms relevant to members' interests classification (SORP-mandated disclosure). (5) Missing the 9-month filing window with designated-member personal civil and criminal exposure. (6) Treating designated members as honorific. The role carries director-equivalent statutory accounts responsibilities."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Operational accounts and filing handbook for property LLPs. Sits below llp-property-investment-worth-considering (entity overview) and beside llp-and-taxation-benefits (tax-side sibling, this batch). Three-layer GAAP architecture: LLPA 2000 + SI 2008/1911 + LLP SORP 2025 (CCAB). Load-bearing distinctions from company accounts: members' interests equity vs liability under FRS 102 Section 22 substance test; members' remuneration expense vs appropriation split; 'Loans and other debts due to members' specific balance-sheet line; designated members carry director-equivalent statutory responsibility under CA 2006 ss.451-453 applied via SI. Fair-value model under FRS 102 Section 16 without LLP-level deferred tax overhead."
 ---

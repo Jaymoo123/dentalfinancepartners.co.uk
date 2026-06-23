@@ -43,8 +43,8 @@ faqs:
   - question: "How does the TRF interact with foreign tax credit relief?"
     answer: "Schedule 10 paragraph 8 sub-paragraphs (3) and (4) address foreign tax already paid on the designated foreign income or gain. Where the foreign jurisdiction has taxed the underlying income, foreign tax credit relief may be available against your TRF charge under the standard double-taxation relief framework (typically Article 23 or 24 of the relevant UK bilateral treaty, or domestic FTCR under ITA 2007 s.30). It is technical and depends on the specific treaty wording. For jurisdictions with high foreign income tax rates (some EU countries with foreign-income taxation at 40%+), FTCR can substantially offset the TRF charge, making designation even more attractive. For low-tax or no-tax jurisdictions (UAE, BVI, Cayman), the TRF charge is largely the full cost without FTCR offset."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket A (A4). TRF pillar, FA 2025 s.41 + Sch 10 verbatim. Three-rate schedule (12%/12%/15%) at Sch 10 para 1(8). Three qualifying-capital scenarios at Sch 10 para 2 (paras 2(2), 2(5), 2(8); verified verbatim against legislation.gov.uk 2026-05-25; matches HP §17.9 architecture). Designation deadline at Sch 10 para 8(1) (12-month-from-31-Jan; aligned with FIG s.845A deadline). Per-amount per-year designation with partial-designation permitted. Clean-capital effect post-designation. Petrova worked example: £1.6m designation = £192k TRF charge vs £480-540k remittance-basis cost = net £288-348k saving plus clean-capital optionality. Distinction from FIG explicit (different population, different mechanism). TRF cluster pillar; A5 covers qualifying-capital depth as the dedicated companion. Anti-templating against IHT cluster and FIG cluster: TRF is income-tax / CGT designation, not exemption."
 ---

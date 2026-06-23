@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. The sufficient ties test is the fallback that decides residence where no automatic test is met. So a landlord who narrowly fails the third automatic overseas test by spending 31 UK workdays (one over the 30-day workday cap) drops back to the sufficient ties analysis. With careful planning, a 31-workday year might still be non-resident under sufficient ties if the landlord has dropped enough other UK ties. The lesson is that an automatic test is the safer position; sufficient ties brings uncertainty and audit risk."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against HMRC RDR3 (Statutory Residence Test guidance), FA 2013 Schedule 45 (the statutory text), HMRC Tax Manuals on day-counting and exceptional circumstances, and Schedule 9A FA 2003 for the SDLT non-resident surcharge contrast."
 ---

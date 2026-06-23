@@ -45,8 +45,8 @@ faqs:
   - question: "What evidence do I need to file Form 17?"
     answer: "A signed declaration of beneficial interest, evidenced by one of: a declaration of trust executed by the joint owners, a property title at the Land Registry showing tenants-in-common with the elected unequal shares, or another written document establishing the actual beneficial split. The declaration must be contemporaneous with the Form 17 filing (not retrospective). HMRC may request the underlying document during a compliance check; keep a signed copy."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Applies the qualifying-income mechanic to the joint-ownership case. Worked scenarios across spousal 50/50, Form 17 75/25, tenants-in-common with declared shares, and a three-friends joint tenancy. Site has no dedicated Form 17 page; this page carries the Form 17 mechanic in MTD context. AUTHORITY_GAP flagged via discovery log for a future dedicated Form 17 page."
 ---

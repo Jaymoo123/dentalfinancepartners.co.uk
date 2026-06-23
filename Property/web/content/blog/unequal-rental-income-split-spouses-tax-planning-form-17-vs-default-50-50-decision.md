@@ -47,8 +47,8 @@ faqs:
   - question: "Are there any cases where Form 17 actively costs us money?"
     answer: "Yes, two. First, where the higher-rate spouse is just above the higher-rate threshold and the basic-rate spouse is just below it: a 70/30 shift to the basic-rate spouse may push them into higher rate (paying 40% on the shifted pound instead of 20%, while the higher-rate spouse saves 40% on the same pound), producing zero net saving but with the administrative cost of the deed and form. Second, where the MTD threshold interaction brings the basic-rate spouse into MTD scope earlier than they would otherwise be, the compliance cost of MTD (software, quarterly filings) may exceed the income-tax saving on a small portfolio. Run the post-shift marginal-rate position and the post-shift MTD scope before deciding."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Applied decision-framework page for the Form 17 vs 50/50 election. Threads three mechanics that interact at the decision (income tax band positioning, Section 24 finance-cost credit, MTD threshold per-share testing) using the Hollis household worked example. Forward-links to C1 (Form 17 mechanic) and C3 (declaration of trust document), cross-links to the back-patched section-24 cousin page."
 ---

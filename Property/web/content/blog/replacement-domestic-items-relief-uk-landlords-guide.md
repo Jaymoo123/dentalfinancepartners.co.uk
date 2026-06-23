@@ -12,8 +12,8 @@ altText: "UK landlord replacing a washing machine in a let residential property 
 image: ""
 h1: "Replacement of Domestic Items Relief: A Complete Guide for UK Landlords"
 summary: "Replacement of Domestic Items Relief lets UK landlords deduct the cost of replacing furniture, appliances, furnishings and kitchenware in a let residential dwelling. It is governed by ITTOIA 2005 s.311A for individuals and CTA 2009 s.250A for companies, and it replaced the 10% wear and tear allowance from April 2016. This guide covers the four statutory conditions, the like-for-like cap, the incidental-cost uplift most landlords miss, the furnished holiday let exclusion, the company route, and how the relief interacts with Section 24."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
 schema: ""
 howToSteps:

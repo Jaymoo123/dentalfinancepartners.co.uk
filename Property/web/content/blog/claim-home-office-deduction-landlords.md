@@ -39,8 +39,8 @@ faqs:
   - question: "What if HMRC challenges my home-office claim?"
     answer: "Simplified flat-rate claims are rarely successfully challenged because the regime is mechanical: HMRC needs to show the hours band claimed is unsupportable. Actual-cost claims attract more enquiry attention. HMRC looks at: (i) the reasonableness of the apportionment formula (room measurements; time allocations); (ii) the evidence base for the costs claimed (bills, statements); (iii) the characterisation of the space (mixed-use or exclusive-business-use); (iv) consistency between the income-tax claim and the eventual CGT computation on disposal. Voluntary disclosure of an over-claim before HMRC enquiry typically achieves a meaningfully lower penalty band than HMRC discovery."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B5: action-led home-office deep-dive with the s.224(1) PPR business-use restriction as the differentiator hook. Sits under the broader allowable-expenses pillar landlord-expenses-allowable-uk-2026 which carries home-office at the simplified-flat-rate-only depth. §34 mini-lock signed off 2026-05-27 closing F-52. ITTOIA 2005 s.272 verified verbatim at Stage 1 seed (2026-05-26). Flat-rate figures (£10/£18/£26 monthly) and CGT rates (18 percent / 24 percent from 6 April 2024) framed rate-by-reference per §16.27. Out-of-wave back-patch noted: landlord-expenses-allowable-uk-2026 pillar should add the CGT-trap cross-link to its home-office paragraph."
 ---

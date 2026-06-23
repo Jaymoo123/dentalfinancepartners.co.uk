@@ -14,8 +14,8 @@ altText: "UK PAYE landlord reviewing a tax calculation combining employment sala
 image: ""
 h1: "How Does Section 24 Affect Landlords With Employment Income?"
 summary: "Section 24 restricts mortgage interest relief on residential lettings to a basic-rate tax reducer rather than a deduction, and PAYE landlords feel it acutely because employment income already fills the basic-rate band before any rental profit is counted. Your gross rents (before mortgage interest) are stacked on top of your salary, so rental income tips you into the 40% band, the £100,000 personal allowance taper, or the High Income Child Benefit Charge faster than the rental figures alone suggest. This page sets out exactly how salary plus rental income is taxed, shows the gross-up effect with a worked example, compares a PAYE landlord against an identical rental-only landlord, and works through the mitigation that still applies (pension contributions, spousal income splitting, incorporation). It also explains how the enacted April 2027 separate property income rates and Making Tax Digital change the picture, and corrects the common myth that a new tax wedge opens in 2027/28."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Property Income and PAYE Interaction Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
 schema: ""
 faqs:

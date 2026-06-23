@@ -37,8 +37,8 @@ faqs:
     answer: "For income tax and CGT from 6 April 2025 onwards, correct. UK tax residence, not domicile, drives the income tax and CGT position. For IHT, the historic deemed-dom test is replaced by the LTR test, which is residence-based not domicile-based. Domicile retains some residual operation for trust attribution under pre-FA-2025 architectures, for private international law contexts, and for double taxation agreements that retain domicile language in the residence article, but it no longer drives the mainstream UK tax position."
   - question: "Where can I read the deep-dive pages on each replacement architecture?"
     answer: "The FIG operational mechanics are covered on the FIG-regime-for-property-investors page. The post-4-year-window planning is covered on the FIG year-5 cliff page. The TRF Sch 10 scenario-by-scenario walk-through is on the TRF qualifying overseas capital page. The CGT rebasing narrow-eligibility analysis is on the FA 2025 Sch 11 page. This page is the architecture map that routes you to each deep-dive."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

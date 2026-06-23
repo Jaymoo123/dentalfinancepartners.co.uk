@@ -51,8 +51,8 @@ howToSteps:
   - name: "Take advice before transferring property"
     text: "Confirm the CGT (s.162) and SDLT (Schedule 15) reliefs apply to your facts and get lender consent before executing any transfer of property into or out of the LLP."
 dateModified: "2026-06-01"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
 ---
 

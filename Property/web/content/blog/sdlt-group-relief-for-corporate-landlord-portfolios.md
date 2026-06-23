@@ -43,8 +43,8 @@ faqs:
   - question: "Does the relief work for a transfer into the group (third-party seller)?"
     answer: "No. Group relief only applies to transactions between companies that are already members of the same group at the effective date. A transfer from a third party into the group is a fresh acquisition and SDLT (plus any surcharges) applies in full. Buyers sometimes acquire a property-owning company instead of the property itself for this reason; the share acquisition attracts stamp duty at 0.5% rather than SDLT, and the property does not move out of the property-owning company."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Practical mechanics for landlords restructuring multi-company holdings. Focuses on the qualifying conditions, the commercial-purpose test, the 3-year clawback and a worked SPV restructure."
 ---

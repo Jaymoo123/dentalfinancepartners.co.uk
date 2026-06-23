@@ -43,8 +43,8 @@ faqs:
   - question: "What is the difference between this page and your existing CT group-relief mechanics page?"
     answer: "This page is the eligibility / definitional layer answering 'do these companies qualify as one group for s.131 purposes?'. The existing 'property company group relief corporation tax' page covers the mechanics layer: assuming group eligibility, how to surrender losses, claim ordering, CT600 boxes, time limits, and operative consequences. Reading sequence: this page first to settle eligibility; the mechanics page once eligibility is established. The pages cross-link."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Eligibility / definitional pillar page for CT group relief under CTA 2010 Part 5. Three-section composite: s.131 (group condition gateway) + s.152 (same-group test) + s.1154 (75% subsidiary arithmetic); s.134 (UK-related overlay). Sch 18 equity-holder overlay surfaced as load-bearing counter-intuitive feature. Consortium-relief trading-only gate (s.143) flagged as property-investment-JV trap. CT vs SDLT group-relief regime distinction explicit. Six worked examples cover three-layer 75% test, Sch 18 defeat of 100%-ordinary, consortium-relief trading-vs-investment fork, s.137 option-arrangements trap, s.673 change-of-ownership sterilisation, CT-vs-SDLT regime contrast."
 ---

@@ -47,8 +47,8 @@ faqs:
   - question: "Does the FIC need different articles if it holds property versus shares?"
     answer: "The structural skeleton is similar but several clauses change. A property FIC typically has a reserved-matters threshold that fires on sale or refinancing of any individual property above a value figure; a securities-only FIC sets the threshold differently because the underlying value is more volatile and per-asset thresholds are less meaningful. A property FIC's preference-share redemption mechanic is often coupled to a rental-yield calculation in the company's reserves; a securities-only FIC's preference mechanic is more typically formula-based on net asset value. A property FIC's drag-along threshold matters less day-to-day because asset-by-asset sales are the normal liquidity route. A property FIC's articles also intersect with the close investment-holding company rules at CTA 2010 section 18N and the ATED and 15% SDLT mechanics in ways that a securities FIC's articles do not. The drafting bespoke-ness is therefore real even within the FIC category, and a property FIC should not adopt a securities-FIC template without clause-by-clause review."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 Session A FIC sub-thread anchor. Clause-by-clause drafting walkthrough of bespoke property FIC articles, indexed against the Companies Act 2006 sections each clause is working with or against. Distinct from the existing FIC structural reference (which surveys mechanics at the company level), the existing growth-shares page (which focuses on hurdle setting and ERS/s.431 mechanics), and the existing FIC versus trust page (which covers the threshold structural choice). The clause-text examples here are illustrative drafting points and not precedent; bespoke drafting requires specialist legal input on the specific family circumstances."
 ---

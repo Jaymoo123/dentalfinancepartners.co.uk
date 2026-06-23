@@ -45,8 +45,8 @@ faqs:
   - question: "How do I escalate a treaty dispute under the Mutual Agreement Procedure?"
     answer: "Article 25 of most UK treaties allows the competent authorities of the two states to agree positions where bilateral application leads to taxation not in accordance with the treaty. The UK competent authority is HMRC's Business International team. MAP cases typically have a three-year time limit from the first notification of the disputed action. MAP runs for months or years and is appropriate for material disputes where the residence-state and UK positions cannot be reconciled bilaterally. Get advice before the deadline runs."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Pillar reference for the UK property tax treaty framework. Sits alongside the statutory non-resident landlord scheme guide; bilateral treaty pages (US, France, Spain, India, UAE, Italy, Crown Dependencies) and structural pages (Article 4 tie-breaker, foreign tax credit) hand off from this framework."
 ---

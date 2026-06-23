@@ -13,7 +13,7 @@ h1: How to Value a Rental Property Portfolio for Tax Purposes
 summary: 'A single rental portfolio is valued on several different statutory bases depending on the event, capital gains tax on a sale or transfer, FRS 102 fair value in company accounts, inheritance tax on death, and market value at incorporation. This guide is the cross-walk: which value you need, for which tax, at which moment, with worked examples and the statute behind each one.'
 schema: ''
 reviewedBy: Property Tax Partners Editorial Team
-reviewerCredentials: UK property tax specialists, chartered accountants and tax advisers
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-30'
 howToSteps:
 - name: Identify the tax event

@@ -47,8 +47,8 @@ faqs:
   - question: "What happens if I lose at the FTT?"
     answer: "The FTT decision sets out the tribunal's findings and reasoning. An onward appeal lies to the Upper Tribunal but only on a point of law, not on the facts. Permission to appeal must be applied for within 56 days of the FTT decision being released. Most ATED penalty appeals do not reach the Upper Tribunal because the issue is fact-specific (was this particular taxpayer's excuse reasonable?) rather than legal. Where the appeal fails at FTT, the company pays the penalty plus any accrued interest, and the file closes."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Procedural deep-dive on appealing an ATED late-filing penalty. Anchored on Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC) and the Schedule 55 FA 2009 statutory framework. Distinct from the existing late-filing-penalties-mechanics page (which is the cascade mechanic); this is the appeal procedure that comes AFTER."
 ---

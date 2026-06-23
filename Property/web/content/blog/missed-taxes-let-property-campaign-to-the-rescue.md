@@ -40,8 +40,8 @@ faqs:
   - question: "Where does this page sit relative to other LPC pages on this site?"
     answer: "This is the immediate-action page for the panic-moment realisation. Our LPC orientation page covers what LPC is and how it fits into HMRC's voluntary-disclosure architecture. Our benefits-of-LPC page covers the tactical numerical case for disclosure with the Schedule 41 floor table. Our penalty-calculator page walks the Schedule 41 mitigation matrix step by step. Our why-voluntary-disclosure-makes-sense page covers the strategic rationale at five-strand depth. Our DDS page covers the umbrella under which LPC sits. Read this page first if you have just realised; then move to the calculator, the benefits page, or the strategic-rationale page once you have caught your breath."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

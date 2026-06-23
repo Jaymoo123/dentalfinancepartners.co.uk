@@ -47,8 +47,8 @@ faqs:
   - question: "Are my legal fees for running a Section 8 possession claim tax-deductible?"
     answer: "Yes, generally, where the claim relates to a routine landlord-tenant matter within the operating life of the rental business (rent recovery, breach of tenancy, possession to address an operational problem). The fees are an incidental cost of the rental business and pass the wholly-and-exclusively test under ITTOIA 2005 s.272 (which applies trading-profit principles to property businesses). Fees for Ground 1A (landlord sale) possession are more borderline: where the immediate purpose is the disposal of the asset, the fees can be argued as capital in character (an incidental cost of sale rather than a revenue cost of operating the lettings). The conservative position is to capitalise Ground 1A possession fees against the eventual capital-gains computation on sale, where they will reduce the gain rather than the rental profit. Sessions should also flag that civil-penalty exposure under RRA 2025 (covered separately on our enforcement-defence page) is not deductible: penalties for regulatory breach fail the wholly-and-exclusively test per HMRC BIM38500."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Operational possession guide for landlords now that Section 21 of the Housing Act 1988 has been abolished. Walks the reformed Section 8 grounds with notice periods, the 5-document evidence pack the court expects, the 12-month re-letting embargo after possession on Ground 1 / 1A, the transitional saving provisions for pre-1-May-2026 Section 21 notices, and the worked timeline from notice to possession order."
 ---

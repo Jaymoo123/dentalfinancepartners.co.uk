@@ -45,8 +45,8 @@ faqs:
   - question: "Does taper relief apply to the gift or to the tax on the gift?"
     answer: "To the tax, not to the gift. This is the most commonly miscommunicated point on the 7-year rule. The gift value itself does not reduce with time. What reduces is the proportion of the full-rate IHT payable, per the s.7(4) IHTA 1984 schedule. So a £500,000 gift made 6 years before death has a chargeable element of £500,000 less available NRB (assume £175,000 remaining = £325,000 chargeable), but the tax is 20% of the full 40% = an effective 8% rate on that £325,000, producing tax of £26,000 instead of the full-rate £130,000. The gift value is unchanged; only the tax rate falls."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 2 A3 (IHT). Timeline-and-mechanics deep dive on the 7-year clock for property gifts. Sibling to A1 (decision framework) and A2 (GROB s.102 walkthrough). Anti-templating discipline: A3 leads with the taper schedule and PET-vs-CLT structural comparison, not with statute walkthrough (A2's beat) and not with sizing/decision framing (A1's beat)."
 ---

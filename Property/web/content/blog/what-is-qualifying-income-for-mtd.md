@@ -38,8 +38,8 @@ faqs:
   - question: "I have heard about a £10,000 threshold. What is that?"
     answer: "The £10,000 figure was the original 2018 MTD ITSA design threshold. It was abandoned in late 2022 / early 2023 under the previous government; the phased £50,000 / £30,000 / £20,000 schedule was announced on 19 December 2022 and is the operative timeline. The £10,000 figure was never implemented. Any source citing the £10,000 threshold is stale: the page was written before December 2022 or has not been updated since."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

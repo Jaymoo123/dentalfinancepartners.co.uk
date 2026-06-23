@@ -45,8 +45,8 @@ faqs:
   - question: "Do I claim FTC on the foreign capital gain when I sell the overseas property?"
     answer: "Yes if the gain is doubly taxed. UK residents pay UK CGT on worldwide gains under TCGA 1992 ss.1 to 3 on the arising basis. The situs country typically taxes the same gain under Article 13 of the bilateral treaty. FTC under TIOPA 2010 s.18 (treaty credit) offsets the foreign tax against the UK CGT on the same gain, subject to the lesser-of cap. The gain is reported on SA108 (Capital Gains) with the foreign tax detail on SA106. Where the foreign country uses a different gain-computation method (different rebasing date, different indexation), the UK measure is the UK-computed gain and the foreign tax credit is capped at UK CGT on that measure. Crown Dependency situs (Isle of Man, Jersey, Guernsey) gains are subject to specific source-rule treatment per INTM161120."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Foreign tax credit operational page for UK-resident landlords with overseas property. Differentiator vs other Wave 2 DTA pages: this is the FIRST page in the bucket framed for UK residents with foreign property (rather than non-residents with UK property). Anti-templating: not a treaty article walk (B1), not a bilateral applied (B2-B7), not a cascade (B8), not a consolidated bucket (B10). The framing is operational/computational: TIOPA 2010 Part 2 statutory framework, HMRC's six principles from INTM161100, the credit-limit calc, SA106 box-by-box, FIG regime overlay, and a Helen UK-resident worked example with a Lisbon flat that produces £1,716 net UK liability after Portuguese IRS credit."
 ---

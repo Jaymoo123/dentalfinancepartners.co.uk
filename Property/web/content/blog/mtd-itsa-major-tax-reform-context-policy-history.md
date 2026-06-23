@@ -48,7 +48,7 @@ faqs:
     answer: "It is gone from the current trajectory but is not formally repealed. The statutory framework (FA 2017 Sch A1) retains broad ministerial power to set the qualifying-income threshold by statutory instrument. A future government could in principle move the threshold lower than £20,000, including to a £10,000 or lower figure. The December 2022 announcement was silent on whether further reductions would follow the £20,000 April 2028 cohort, leaving the long-term floor undefined. So your practical position today: do not plan around a £10,000 threshold, because the announced trajectory stops at £20,000; but do not assume the £20,000 figure is permanent either."
 dateModified: "2026-05-23"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK property tax specialists, ATT / CTA qualified"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk 19 December 2022 announcement, gov.uk Spring Statement 2025 HTML, and house position §3 / §19 on 2026-05-23. Policy-history page; deliberately scope-limited to the why-this-is-happening narrative and does NOT cover how to register, which is the existing how-to-register-mtd-landlord-step-by-step-guide page's territory (CANNIBAL-WATCH defence)."
 ---

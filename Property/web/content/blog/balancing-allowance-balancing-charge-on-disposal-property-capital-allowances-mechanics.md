@@ -45,8 +45,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Disposal-side depth page for CAA 2001 Bucket C, walking the s.55 AQE-vs-TDR mechanic and the s.61 eight-disposal-event taxonomy with three worked scenarios (clean s.198 election at written-down value; no-election commercial sale generating a balancing charge; MVL distribution-in-specie as s.61 event 8 with cross-reference to A4). Includes the SBA no-balancing-event contrast with TCGA 1992 s.37B add-back framing per §25.4 of locked house positions. Statutory citations verified against legislation.gov.uk on 2026-05-23."
 ---

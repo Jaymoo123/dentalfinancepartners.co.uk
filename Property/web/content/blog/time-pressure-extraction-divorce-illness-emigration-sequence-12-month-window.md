@@ -45,8 +45,8 @@ faqs:
   - question: "When should I bring in an adviser versus handle the compressed sequence in-house?"
     answer: "Bring in an adviser at the start of the 12-month window, not at the end. The compressed-timeline scenarios are the ones where DIY mistakes are most expensive and most likely (the pre-divorce share transfer that misses the s.58 NGNL window by days; the terminal-illness pension contribution that fails the W&E test at enquiry; the pre-emigration dividend declared one day after SRT non-residence triggers and so falls into the temporary-non-residence recapture trap). The adviser cost (typically £2,000 to £5,000 for a focused 12-month extraction plan with contemporaneous documentation) is usually a fraction of the tax cost of getting the sequence wrong. Property Tax Partners runs compressed-timeline extraction planning sessions; if the deadlines listed above sound familiar, the form below routes to the right team."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Compressed-timeline applied counterpart to the multi-year extraction-sequence pillar. Three scenarios (pre-divorce, terminal illness, pre-emigration) stacked against the 12-month constraint, each with its own statutory gates and evidence discipline. Differentiates from Wave 6 A1 (strategic multi-year sequencer) by the time-pressure framing and from Wave 2 C1 (general pre-departure checklist) by the SPV-extraction-specific compressed sequence."
 ---

@@ -47,8 +47,8 @@ faqs:
   - question: "What about non-UK buyers and TOGC?"
     answer: "A non-UK buyer can qualify as a TOGC buyer if registered for VAT in the UK (or required to be) and the other conditions are met. UK property letting income from a UK property is within UK VAT (if opted to tax), so the buyer's UK VAT registration is the practical entry condition. Some non-UK buyers structure through a UK SPV to satisfy the VAT-registration condition cleanly."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "VAT bucket. The page is structured around the five TOGC conditions with the option-to-tax notification as the dominant failure mode and worked SDLT-interaction numbers showing the combined VAT and SDLT saving."
 ---

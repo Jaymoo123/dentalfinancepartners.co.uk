@@ -47,8 +47,8 @@ faqs:
   - question: "What is the single biggest pre-occupation check before allowing any connected-person use?"
     answer: "Take specialist tax advice on whether the proposed occupant falls within any of the eight s.136 categories. If yes, then either (a) decline the occupation; or (b) accept the clawback and prepare the s.163 ACA return for the affected period plus plan to interpose a genuine qualifying-use day to limit look-forward exposure; or (c) restructure by de-enveloping the property (which has its own SDLT and CGT consequences and should be modelled separately). Specialist advice is essential. The cost of analysis is trivial compared to the multi-year ATED exposure from a mishandled connected-occupation event."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "ATED s.135 clawback mechanic deep-dive page (MegaWave 3 Bucket B, batch M3-B-B2). Look-forward 3-period and look-back unwind framing refuses the year-loss collapse. Distinct from sibling B12 related-persons-and-market-rent decision page (cross-linked but distinct) and B5 strategic-decision page. Anchors: FA 2013 s.133 (relief), s.135 (look-forward + look-back verbatim), s.136 (non-qualifying individual eight-category catalogue verbatim), s.139 (developer variant), s.159 (annual return), s.163 (ACA return), s.99 + indexation context; CTA 2010 s.18N + s.18N(3) connected-occupant exclusion verbatim; ITA 2007 ss.993 + 994 connected persons + relatives; FA 2009 Sch 55 items 11A and 11B; FA 2007 Sch 24 inaccuracy. House positions §2, §18 + §18.3 (relief catalogue) + §18.4 + §18.8, §21.A + §21.5 (CIHC). Anonymised personas (Rosewood Property Holdings Limited, Ironwood Cayman Holdings Limited, Sycamore Holdings Limited, Pomegranate Holdings Limited with Ms Pomegranate and Jacob). 5 worked examples, 14 FAQs, 4 inline asides."
 ---

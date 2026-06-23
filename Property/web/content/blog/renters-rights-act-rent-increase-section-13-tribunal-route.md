@@ -47,8 +47,8 @@ faqs:
   - question: "Can a landlord agree to a higher rent voluntarily with the tenant outside the Section 13 framework?"
     answer: "Limited circumstances. Section 13(4)(b) allows the landlord and tenant to agree a different rent, which is the express statutory voluntary-agreement route. The agreed rent must be reasonable and the agreement should be documented. Where the agreement is reached outside any Section 13 notice (for example a mid-year voluntary increase agreed for some operational reason), the better view is that this is also valid under section 13(4)(b) provided both parties consent and the agreement is documented in writing. The once-per-12-months rule applies to a section 13(2) notice, not to a section 13(4)(b) agreement: a voluntary agreement in month 6 does not preclude a section 13(2) notice at month 12, although the 52-week clock for the next increase runs from the date the section 13(2) increase takes effect, not from any earlier voluntary agreement."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Procedural mechanics page on the post-1-May-2026 Section 13 rent-increase route under amended s.13 HA 1988 and RRA 2025 s.7. Walks the notice form and content, the once-per-12-months + 2-month rules, the FTT challenge route with the no-overshoot protection, the separate 6-month initial-rent challenge under s.7, the comparable-market evidence framework, the section 24 cash-flow interaction, and a worked Section 13 timeline."
 ---

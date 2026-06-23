@@ -45,8 +45,8 @@ faqs:
   - question: "What if my pension is mostly in a defined-benefit scheme?"
     answer: "The reform applies primarily to defined-contribution unused funds and most DB lump-sum death benefits. A DB scheme that pays a recurring dependant's pension (rather than a lump sum) on the member's death is largely outside the reform: the dependant's pension is income to the dependant, taxed at the dependant's marginal income tax rate, with no IHT. The decumulation sequence question is therefore narrower for DB-heavy landlords: the BTL portfolio is still in the IHT base, but the DB pension is not (provided the death benefit is structured as a recurring pension, not a lump sum). The right sequence for a DB-heavy landlord with a BTL portfolio is usually a measured property-sale-first route over early retirement, with the DB recurring pension covering basic living costs from year one and the realised property cash funding additional spending and lifetime gifts. The hybrid analysis above still applies; the DC versus DB mix simply changes the relative magnitude of the pension-side IHT exposure."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 C6 (IHT estate planning). The sequence-strategy applied version of the April 2027 pension-IHT reform. Wave 2 at /blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning holds the rule mechanics (announcement, what's in scope, PR liability, post-75 income-tax overlay, RNRB taper interaction, charity exemption). C6 owns the 65-to-80 retiring-age landlord cohort's sequencing question: pension-first vs property-first decumulation over a 15-year retirement, with the cross-tax total-cost comparison on the Reid £2.9m estate (£900k SIPP + £1.6m BTL + £400k home). House positions §15.5 (Wave 2 pension-IHT) and §22 framing."
 ---

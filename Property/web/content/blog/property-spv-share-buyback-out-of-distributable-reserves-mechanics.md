@@ -41,8 +41,8 @@ faqs:
   - question: "Can a property SPV bolt on a small trading activity to qualify as a 'trading company' for s.1033?"
     answer: "Risky. The s.1033 trade-benefit test is 'wholly or mainly for the purpose of benefiting a trade'. The trading activity must be substantial enough to dominate the company's activities, not a token bolt-on. HMRC challenges where the trading element is small relative to the investment element and where the timing of the bolt-on aligns with a planned buyback. The case-law treatment of 'wholly or mainly' in adjacent contexts (BPR, BADR) reads as predominantly more than 50% by reference to the whole picture: turnover, assets, employees, time spent by management. A property SPV with £5m of rental property assets cannot turn itself into a trading company by adding £50k of property-management consultancy income; the imbalance is too extreme. The route is closed for the typical property SPV; the engineered-trade workarounds are challenged in practice."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Depth page on the purchase-of-own-shares extraction route for property SPVs. Walks the two tax outcomes (distribution default vs s.1033 capital carve-out), the trade-benefit-test failure that closes the capital route for pure-investment SPVs, the Pawson alignment with BPR, the CA 2006 Part 18 procedural mechanics that apply regardless, and two worked scenarios (clean dividend-treatment POS for a retiring co-shareholder, failed capital-treatment claim at HMRC enquiry). Sits in the LtdCo extraction-sequence pillar alongside dividends, salary, employer pension, DLA repayment (Wave 1 B7) and the MVL company-exit endpoint (Wave 6 A4)."
 ---

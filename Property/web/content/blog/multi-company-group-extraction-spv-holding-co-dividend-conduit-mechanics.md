@@ -47,8 +47,8 @@ faqs:
   - question: "What does the decision tree look like for a founder considering a HoldCo?"
     answer: "Four entry points. First, group size: HoldCo only makes structural sense above 3-4 SPVs; below that the associated-companies squeeze cost outweighs the dividend-conduit benefit. Second, exit path: HoldCo is the natural staging structure for a future SSE-eligible share sale of a property development subsidiary (see our SSE for property companies page) and for a multi-SPV MVL on retirement (see our MVL page); founders with a clear exit plan should consider HoldCo earlier. Third, family income-splitting: HoldCo-level alphabet shares are materially more efficient than per-SPV alphabet shares for groups above 2-3 SPVs. Fourth, succession planning: HoldCo is the natural vehicle for a FIC-style growth-share design with founders on preference shares and next generation on growth shares; single-SPV cohorts cannot replicate the structure. Founders failing all four tests should think hard before adding the HoldCo layer."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Multi-company personal-extraction angle for property HoldCo groups. Three load-bearing mechanics: dividend conduit (CTA 2009 Part 9A), associated-companies squeeze (s.18E band-slicing), and alphabet shares at HoldCo level. Includes CAA cross-bucket subsections for C4 (AIA shared cap) and C5 (full expensing intra-group)."
 ---

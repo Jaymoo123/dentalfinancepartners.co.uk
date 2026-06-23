@@ -43,8 +43,8 @@ faqs:
   - question: "Where do I check the operative state of the rollout?"
     answer: "Two canonical sources. Primary: Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, with topic sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: Companies House blog at companieshouse.blog.gov.uk for operational announcements and phase-rollout posts. Do not rely on the legacy gov.uk/government/news/changes-to-uk-company-law URL, which is no longer active. The campaign page is the single most reliable real-time tracker."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B8: umbrella / taxonomy on-ramp covering every operative ECCTA 2023 + ECTEA 2022 reform in date order with landlord-LtdCo applied consequences. Sibling of B9 (business-value framing) + B10 (operations roadmap) + B11 (ID-tightening interpretation) + per-reform deep dives (B2, B6, B7, B12, existing operational walkthrough, existing confirmation-statement deep-dive). ECCTA Part 1 section-grouped crossheading structure verified per §11.A F-10 + F-14 close. ECTEA 2022 s.4 / s.7 / s.8 / s.34 / s.36 verbatim attributions verified per F-13. LRA 2002 Sch 4A as the HMLR disposition-block anchor verified per §11.A. Commencement chain (1 Aug 2022 RoE, 1 Mar 2024 ECCTA Part 3, 4 Mar 2024 registered email + appropriate address + fees, 5 Mar 2024 lawful purposes, 8 Apr 2025 voluntary ID, 18 Nov 2025 mandatory ID + transition window opens, ~Nov 2026 close, later phase TBD) verified per §11.A F-11. F-12 URL discipline honoured (deprecated gov.uk URL avoided). Five common misframings explicitly corrected in body (RoE in ECCTA, Sch 12 amends ECTEA, ECCTA Part 1 by Chapters, ECTEA s.8 as removal, ECTEA s.34 as HMLR block)."
 ---

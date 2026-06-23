@@ -45,8 +45,8 @@ faqs:
   - question: "How does this affect my multi-year DLA repayment plan?"
     answer: "The strategic frame is unchanged; what has shifted is where the trap sits. A multi-year extraction plan typically uses DLA repayment as the tax-free strand for as long as the credit balance lasts. If you are repaying genuine cash from genuine personal resources, the post-FA-2025 framework changes nothing important. It matters in three cases: (a) where you relied on the £5,000 / £15,000 bright lines to structure short-cycle bed-and-breakfast patterns (those bright lines are gone, and substance-based defences now have to do the work), (b) where the SPV is part of a multi-company group and inter-company flows are being used to refresh DLA balances (s.464A is more readily invoked here), and (c) where you are approaching DLA exhaustion and weighing a final dividend to clear the balance against a slower drawdown."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Drift-catch page. CTA 2010 ss.464C and 464D omitted by FA 2025 from 30 October 2024. Reframed on the post-FA-2025 architecture: s.455 + s.456 + residual s.464A. Slug retained for SEO continuity with pre-2025 traffic patterns."
 ---

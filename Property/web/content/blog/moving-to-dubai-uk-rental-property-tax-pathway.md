@@ -42,7 +42,7 @@ faqs:
     answer: "More than 5 complete tax years of non-residence. The clock counts the years between departure and return; non-residence of 5 years or less brings the 5-year recapture rule into play if you return within the window. A 3-year or 4-year Dubai posting that ends with a return to the UK can pull non-UK situs gains and the pre-rebasing portion of UK land gains back into the UK tax net. To genuinely escape both layers, plan for a 6-year-plus stay or expect to model the recapture exposure carefully."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against the UK-UAE Double Taxation Treaty (signed 12 April 2016, in force 25 December 2016), the UAE Corporate Tax Law (Federal Decree-Law No. 47 of 2022, effective for accounting periods starting on or after 1 June 2023), Section 264 ITTOIA 2005, Section 24 Finance (No.2) Act 2015, TCGA 1992 sections 1A and 10A, FA 2013 Schedule 45 (SRT), Schedule 9A FA 2003 (SDLT non-resident surcharge), and HMRC's non-resident landlord scheme guidance. Verified 2026-05-22 against gov.uk."
 ---

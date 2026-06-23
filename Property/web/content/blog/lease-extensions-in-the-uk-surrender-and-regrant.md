@@ -37,8 +37,8 @@ faqs:
     answer: "Always verify whether a proposed lease variation triggers surrender-and-regrant: if yes, the new lease is a chargeable land transaction and SDLT must be calculated on the premium plus rent NPV with para 9 overlap-relief; if no, the variation may be caught separately by para 13 or para 15A but does not produce a new chargeable lease. Always check the statutory residual-term clock: a lease coming up to a statutory extension or commercial renewal should be scoped for SDLT impact on the renewal; statutory renewals are within para 9. Always cross-check HRAD applicability under Schedule 4ZA on premiums where the leaseholder owns another residential property."
   - question: "Where does the doctrine NOT apply to a variation?"
     answer: "Variations that adjust rent under a rent-review clause already in the lease, variations to incidental service-charge mechanics, variations to rent-deposit-deed terms, minor covenant adjustments not affecting the substantive bargain, and similar non-fundamental adjustments all leave the existing lease intact at common law. They may still attract a separate SDLT consequence under para 13 (first-five-years rent increase outside a rent-review clause) or para 15A (rent reduction; term reduction; other money-supported variations), but those are partial chargeable transactions on the variation consideration, not full new-lease chargeable transactions under the surrender-and-regrant doctrine."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

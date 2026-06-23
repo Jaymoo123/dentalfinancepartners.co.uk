@@ -48,7 +48,7 @@ faqs:
     answer: "For most landlords, yes. The mandate cohort will be brought in at the threshold-and-above population from 6 April 2026, with HMRC's outreach letter giving 3 to 6 months of warning. Most landlords who would benefit from the pilot would also benefit from accepting the mandate and using the lead time HMRC's letter provides. The case for opting in early is genuinely narrow (the landlord persona described above), and for everyone else the mandate timeline gives sufficient runway. Opting in is not a status signal; HMRC does not give early adopters easier treatment."
 dateModified: "2026-05-23"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK property tax specialists, ATT / CTA qualified"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Verified against gov.uk MTD ITSA pilot guidance and house position §19.5 on 2026-05-23. Pilot scope reflects HMRC's published carve-outs from the pilot phase (narrower than eventual mandate scope). Penalty regime is shared with the mandate cycle (FA 2021 Sch 24 points-based late-submission + Spring Statement 2025 accelerated late-payment from 6 April 2026)."
 ---

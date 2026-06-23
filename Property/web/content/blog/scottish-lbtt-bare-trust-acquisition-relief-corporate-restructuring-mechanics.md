@@ -47,8 +47,8 @@ faqs:
   - question: "Where is the underlying statute and guidance?"
     answer: "Primary statute: LBTT(S)A 2013, available at legislation.gov.uk/asp/2013/11/contents. Acquisition relief sits at Schedule 11 (titled 'Reconstruction relief and acquisition relief'). Group relief at Schedule 10. Partnership relief at Schedule 17. MDR at Schedule 5. The bare-trust transparency principle is not a discrete schedule but a general feature of the LBTT legislation and Revenue Scotland's interpretation guidance. Revenue Scotland's full LBTT legislation guidance lives at revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance, with dedicated acquisition-relief and bare-trust pages reachable from the relief-by-relief navigation. The England parallel relief for cross-jurisdictional reference is FA 2003 Schedule 7 Part 2."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Scottish LBTT specialist-relief page for the corporate-restructure and trust-acquisition cohort. Two reliefs walked in depth: the bare-trust transparency principle (treating the beneficiary as the buyer for nominee, minor-child, and beneficial-interest-transfer acquisitions) and the LBTT(S)A 2013 Schedule 11 acquisition relief (reducing the chargeable consideration on company-to-company share-for-undertaking transfers). Two Scottish worked examples (Cameron-Stewart 8-dwelling portfolio incorporation via Sch 11 + s.59(8) saving over £300k; Macleod Family Trust minor-child nominee acquisition saving £16k of ADS). Cross-references to UK-wide TCGA 1992 s.162 incorporation relief, ATED, and the broader group / partnership / MDR Scottish reliefs."
 ---

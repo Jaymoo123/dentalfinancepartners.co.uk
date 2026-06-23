@@ -45,8 +45,8 @@ faqs:
   answer: "For a genuine arm's-length purchase, the value is simply the price you paid. For an asset you previously owned for other purposes, or one you were gifted, you do not get AIA at all; you bring the asset in at its market value at the date it is first used in the business, capped at original cost (CAA 2001 sections 13, 14 and 218), and write that value down through the pools."
 - question: Does selling an asset I claimed AIA on trigger a balancing charge?
   answer: "It can. When you dispose of an asset, the disposal value (sale proceeds, or market value on a connected-party or below-market sale) is brought into the relevant pool under CAA 2001 section 61. Under CAA 2001 section 55, if the total disposal receipts in that pool exceed the available qualifying expenditure left in it, the excess is a balancing charge: a taxable receipt that claws back relief already given. Because AIA gives 100% relief upfront, an asset claimed in full leaves nothing in the pool to absorb the disposal value, so a sale can produce a balancing charge. It is a clawback of relief, not a penalty."
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'

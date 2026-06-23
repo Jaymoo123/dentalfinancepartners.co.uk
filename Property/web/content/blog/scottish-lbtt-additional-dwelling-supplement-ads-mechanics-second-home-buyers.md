@@ -47,8 +47,8 @@ faqs:
   - question: "Where is the underlying ADS statute and guidance?"
     answer: "The primary statute is LBTT(S)A 2013 Schedule 2A, available at legislation.gov.uk/asp/2013/11/schedule/2A. Key paragraphs: para 4(2) (8% rate, amended from 5 December 2024); para 2 (the buyer-replacement-of-main-residence rule + 36-month window); para 3 (the additional-dwelling trigger conditions); paras 2(1)(b) + 3(1)(b) (£40,000 de-minimis); para 5(2) (joint-buyer aggregation). ADS was introduced by the LBTT (Amendment) (Scotland) Act 2016. The 36-month repayment window came in via the Coronavirus (Scotland) (No.2) Act 2020 (extending the prior 18 months) and was made permanent. Operational guidance lives at revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Scottish ADS at 8% from 5 December 2024 under LBTT(S)A 2013 Sch 2A. Flat-8%-on-entire-price mechanic (not marginal), the £40,000 de-minimis with the 1 April 2024 joint-share update, the 36-month replacement-of-main-residence repayment window made permanent by the Coronavirus (Scotland) (No.2) Act 2020, the joint-buyer aggregation under Sch 2A para 5(2) (the Scottish parallel to SDLT spousal aggregation), and the corporate-buyer position. Three worked examples at Scottish price points (£180k Inverness BTL, £350k Stirling replacement, £400k Aberdeen corporate). Cross-bucket forward-link placeholder for SDLT spousal-aggregation page (Wave 5 C9); manager hyperlinks at merge."
 ---

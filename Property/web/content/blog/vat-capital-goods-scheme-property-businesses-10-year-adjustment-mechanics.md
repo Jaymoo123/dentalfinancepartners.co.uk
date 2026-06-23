@@ -38,8 +38,8 @@ faqs:
   - question: "What is the most common CGS mistake?"
     answer: "Forgetting that the adjustment runs annually for 10 years regardless of whether the use has changed. Even where a property has been let to fully-taxable commercial tenants throughout, the CGS record must still be maintained, the annual interval reviewed, and a nil-adjustment entry confirmed. Failure to keep CGS records is a separate compliance breach under reg 116 with its own penalty exposure even where the underlying VAT position is correct. The second-most-common mistake is forgetting that a major refurbishment is a fresh CGS item with its own 10-year clock starting on first use."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A operational mechanic. CGS is the downstream consequence of opting to tax: the 10-year input-tax recovery is provisional, not final. Page sits between A1 (OTT upstream election) and A3 (partial exemption portfolio mechanic). Refurbishment-as-new-CGS-item and TOGC-on-CGS sections are the highest-search-intent depth areas."
 ---

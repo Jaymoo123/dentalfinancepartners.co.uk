@@ -47,8 +47,8 @@ faqs:
   - question: "Are there situations where the Form 17 shift is not the right answer?"
     answer: "Yes. Where the retiring spouse's projected pension income already uses their full basic-rate band, additional rental income is at basic rate (20%) and the gap from the working spouse's higher rate (40%) is only 20 percentage points; the saving may be modest. Where the working spouse expects to retire shortly after their partner, the optimal split may rebalance again within a year or two, and the operating costs of two deeds + two Form 17s in quick succession may exceed the saving. Where the couple anticipates a sale of the property within (say) the next 12 to 18 months, the income-shift period is short and the planning may not be worth the documentation."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Retirement-stage applied page covering the personal-ownership route for shifting rental income towards a retiring spouse. Threads the three-step mechanic (deed of trust amendment + Form 17 re-filing within 60 days + evidence discipline), the TCGA 1992 s.58 no-gain-no-loss treatment, the income-and-expense correspondence rule (Section 24 finance costs follow the income split), the MTD threshold per-share interaction (§19.4), and the FIC alternative-route cross-link (Wave 4 A8). Worked example: Tahir + Hopkins £62,000 annual rental income across a 6-year retirement-transition window. Year-by-year cumulative income-tax saving demonstrated."
 ---

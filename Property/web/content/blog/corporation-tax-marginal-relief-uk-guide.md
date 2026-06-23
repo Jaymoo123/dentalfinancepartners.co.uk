@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from the marginal relief property companies page?"
     answer: "The property companies version works marginal relief through property-SPV examples, the CIHC-via-connected-tenant trap, and the multi-SPV-divisor scenario in depth. Here you get the topic generically: what marginal relief is, how the s.18D formula works, who qualifies, and who is excluded, set out for any UK company (including non-property businesses) and for accountants working across sectors. For the mechanic in general terms, this is the place; for the property-LtdCo worked depth, the property companies version takes it further."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Generic UK pillar / explainer for corporation tax marginal relief under the FA 2021 framework. Covers s.18A SPR conditions, s.18B trigger, s.18D formula, s.18E associated companies divisor, s.18L augmented profits, s.18N CIHC exclusion. Five worked examples including boundary, mid-band, top-band, divisor impact, and augmented profits via dividend. Parent of property-specific marginal relief child page."
 ---

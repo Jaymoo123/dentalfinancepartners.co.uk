@@ -41,8 +41,8 @@ faqs:
   - question: "How does LBTT acquisition relief compare to SDLT acquisition relief?"
     answer: "Structurally parallel. SDLT acquisition relief sits at FA 2003 Sch 7 Part 2, reduces SDLT to 0.5% under Sch 7 para 9(2), and uses substantially the same five qualifying-condition structure (undertaking transfer, non-redeemable shares, no associated-acquirer, not property-trading, bona fide commercial purpose). The Scottish prescribed proportion under LBTT(S)A 2013 Sch 11 para 6(3) is set by Scottish Ministers and broadly aligned with the SDLT 0.5% comparator. A UK-wide property-business acquisition that crosses the Scottish-English border may engage both reliefs concurrently: separate clearance routes (HMRC for SDLT, Revenue Scotland for LBTT) and separate qualifying-condition assessments on each side."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Operational LBTT acquisition relief deep page for tax advisers, corporate solicitors, and family-property-business owners structuring undertaking acquisitions involving Scottish property assets. Anchors on LBTT(S)A 2013 Sch 11 Part 3 (the operative Scottish base; NOT FA 2003 Sch 7 Part 2 which is the English SDLT parallel) and walks the five qualifying conditions in Sch 11 para 7 sequentially. Foregrounds the reduction-versus-exemption distinction against Sch 11 Part 2 reconstruction relief, the ADS interaction (Sch 11 does NOT shelter ADS), the s.59(8) six-or-more-dwellings interaction (the principal portfolio-planning route), and the cross-jurisdictional comparison with SDLT acquisition relief under FA 2003 Sch 7 Part 2."
 ---

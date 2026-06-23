@@ -44,7 +44,7 @@ faqs:
     answer: "If you return to the UK and become UK-resident before disposal, NRCGT no longer applies (the gain is in the normal UK CGT regime). Australian CGT is generally outside scope on disposal after Australian non-residence is established, subject to any CGT event I1 deferral position. Section 10A TCGA 1992 temporary non-residence recapture is a risk if the period of non-UK residence was 5 years or less, having previously been UK-resident in 4 or more of the 7 prior tax years. The 6-year-plus secondment is the clean break from both s.10A and the post-departure Australian CGT scope."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against the 2003 UK-Australia Double Taxation Convention (in force 17 December 2003, modified by the Multilateral Instrument from 1 January 2019 for withholding tax, 6 April 2020 for Income Tax and CGT), Income Tax Assessment Act 1997 (Australia) Divisions 6, 115, 770 and section 768-910, Tax Laws Amendment (2012 Measures No. 4) Act 2013 Schedule 7 (50% CGT discount denial for non-resident periods from 8 May 2012), section 264 ITTOIA 2005, section 24 Finance (No.2) Act 2015, TCGA 1992 sections 1A and 10A, FA 2013 Schedule 45, and HMRC's non-resident landlord scheme operational guidance. Verified 2026-05-22 against gov.uk and ato.gov.au."
 ---

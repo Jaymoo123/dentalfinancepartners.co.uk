@@ -47,8 +47,8 @@ faqs:
   - question: "Are conversion-related professional fees, e.g. legal review of guarantor agreements or insurance wording, tax-deductible?"
     answer: "Yes, generally. Legal fees for reviewing existing tenancy documentation, guarantor agreements, and insurance wording in response to the statutory change are an incidental cost of operating the rental business and pass the wholly-and-exclusively test under ITTOIA 2005 s.272 for an existing property business. They are revenue rather than capital because they relate to the ongoing administration of the lettings, not to the acquisition or disposal of the underlying asset. The deductibility position aligns with the treatment of other regulatory-compliance professional fees (gas-certificate inspection, EICR engineering fees, deposit-scheme administration), all of which are revenue-deductible against rental income."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Conversion-mechanics page for the 1 May 2026 transition of existing fixed-term ASTs into periodic assured tenancies under s.1 + s.2 RRA 2025 and SI 2026/421 reg.2. Walks the automatic conversion, what stayed the same, the landlord checklist (including the 31 May 2026 Information Sheet deadline), the carve-outs for 7-plus-year fixed-term leases / company lets / business tenancies, the surviving force of guarantor agreements, and the lender + insurance implications."
 ---

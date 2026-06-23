@@ -41,8 +41,8 @@ faqs:
   - question: "Can I get FTB relief retrospectively if I forgot to claim?"
     answer: "Yes, within statutory time limits. An LBTT return can be amended within 12 months of the original return under LBTT(S)A 2013 s.83. Beyond that, a repayment claim for overpaid tax must be made within 5 years of the original return due date under Sch 3 para 7. If you completed your Scottish first-home purchase and the return was filed without a FTB relief claim, your solicitor or accountant can amend or claim repayment within those windows. Keep your evidence of FTB eligibility (no prior dwelling ownership anywhere) in case Revenue Scotland queries the claim."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Scottish first-time-buyer onboarding journey page. Sits upstream of the existing Scottish LBTT FTB mechanics deep page and the main rates pillar; written for the buyer making their first Scottish home purchase rather than for the adviser walking the statutory test. Surfaces the four facts a Scottish FTB must know (LBTT not SDLT; £145k standard nil rising to £175k FTB; £600 max saving; 30-day Revenue Scotland return) and walks the buyer-milestone timeline. Foregrounds the no-upper-value-cap structural distinctive against England's £500,000 withdrawal threshold, and the overseas-prior-ownership trap that catches returning expatriates."
 ---

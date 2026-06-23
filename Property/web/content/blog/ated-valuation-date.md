@@ -47,8 +47,8 @@ faqs:
   - question: "What evidence does HMRC accept for the operative valuation?"
     answer: "RICS Red Book formal valuation is the gold standard, particularly for borderline cases (within 10 per cent of a band boundary). For clearly-in-band cases (a £1.4m flat solidly in band 2 covering £1m to £2m, for example), HMRC accepts informal evidence such as estate agent appraisals, comparable sales data, and contemporaneous market analysis. For borderline cases the RICS valuation is essential and the PRBC route is operationally valuable. The evidence base supports the FA 2013 Schedule 33 paragraph 1(3) correct-and-complete-to-the-best-of-knowledge declaration that every ATED return carries."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "Architecture-first orientation page on the FA 2013 s.102 multi-layered ATED valuation-date framework. Distinguished from event-focused sibling `ated-valuation-date-rules-2027-revaluation` (sibling owns the 2027 event deep-dive and acquisition-value treatment). Anchors: FA 2013 ss.94, 99, 101, 102, 102(2A), 103, 104, 105, 116, 117. Standard 5-yearly Crown dates (1 April 2012, 2017, 2022, 2027, 2032). Substantial-acquisition / partial-disposal £40,000 threshold. Linked-transaction connected-party aggregation. Partnership variant. CIS variant. FA 2015 on-ramp clause (5-yearly date not operative during period beginning on it). Valuation-to-band-to-daily-amount-to-annual-charge chain under s.99 + s.105. Mixed-use apportionment under s.117. PRBC pre-return banding check mechanism. 5 worked examples (s.102 decision tree; s.102(2A) on-ramp 2027/28 versus 2028/29; £40k aggregation; partnership variant; valuation-to-bill chain with mid-year variations). 14 FAQs. 4 inline asides. Anonymised personas (Trevor Holdings Limited; Olivetti Holdings Limited; Saffron Estates Partnership LLP). MegaWave 3 Bucket B, batch M3-B-B3."
 ---

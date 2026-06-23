@@ -45,8 +45,8 @@ faqs:
   - question: "Does GROB apply to a gift of cash that the donee uses to buy a property the donor then occupies?"
     answer: "Section 102 does not apply because the gift was of cash, not of the subsequent property. The donor never owned the house. But POAT under Schedule 15 FA 2004 catches this exact pattern: cash gifted, donee buys property with the cash, donor enjoys the property. The donor faces the annual POAT income tax charge based on the deemed market rent of the occupied property, calculated by reference to the proportion of the purchase price funded by the gifted cash. The IHT500 election to be treated as GROB is then the trade-off mechanism."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 2 A2 (IHT). Statute-walkthrough deep dive on s.102 FA 1986 applied to property gifts. Companion to the IHT decision framework pillar at /blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards, which references this page for the GROB mechanics. Distinct H2 structure (statute subsection-led, not decision-led) to avoid templating with A1 and the wider IHT pillar."
 ---

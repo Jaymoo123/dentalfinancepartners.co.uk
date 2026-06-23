@@ -47,8 +47,8 @@ faqs:
   - question: "What records should a landlord retain to defend a non-linkage position?"
     answer: "Five record categories. First, negotiation timeline: dated correspondence, contract drafts, meeting notes showing when each transaction was negotiated and when each party became aware of subsequent transactions. Second, marketing materials: estate agent listings, property particulars, valuation reports prepared individually for each property (not as a bundle). Third, price evidence: independent valuations for each property without reference to portfolio context; market comparables for individual sales rather than portfolio sales. Fourth, contractual independence: separate contract drafting, separate completion mechanics, no contractual cross-references between the transactions. Fifth, vendor communications: emails and letters from the vendor showing the properties were offered individually rather than as a portfolio package. Where the records support genuine separation, HMRC's enquiry pattern typically accepts non-linkage. Where the records support linkage (or where the records are incomplete and HMRC's inference defaults to linkage), the buyer's position is much weaker. Sessions should bake this record-keeping into the buyer-side due diligence checklist for any acquisition where linkage status is in play."
 dateModified: "2026-05-24"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-24"
 editorialNote: "SDLT linked-transactions s.108 mechanics for landlord portfolio acquisitions. §1.B verbatim lock + §1.F do-not-write list held. Patel-Holdings £2.4m six-flat portfolio worked example. Brief listed category as 'property-tax-changes' which is not a valid category; tracker correct at 'incorporation-and-company-structures'. F-7 brief drift logged. Ships AFTER C9 per §16.32; cites C9 forward for Sch 15 partnership-incorporation context."
 ---

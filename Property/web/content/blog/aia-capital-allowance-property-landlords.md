@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto
 h1: 'AIA Capital Allowance for Property Landlords: Disposal, Balancing Charges and the Claim Process'
 summary: "Once you have claimed the Annual Investment Allowance, selling the asset (or the property carrying its fixtures) can trigger a balancing charge. This guide covers the disposal-value rules under CAA 2001 s.61, the s.196 fixtures Table, balancing charge versus balancing allowance, and the step-by-step process for making and defending an AIA claim, including hire purchase, short accounting periods and partnership allocation."
 schema: ''
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: ICAEW Chartered Accountant
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 howToSteps:
 - name: Confirm the spend is qualifying plant and machinery

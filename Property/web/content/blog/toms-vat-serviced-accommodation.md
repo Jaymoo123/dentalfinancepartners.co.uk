@@ -45,8 +45,8 @@ faqs:
   - question: "Does the FHL abolition (April 2025) interact with this?"
     answer: "The FHL abolition is a direct-tax change (loss of CGT/IT reliefs for former FHL properties) and is separate from the VAT position. A property let on a serviced-accommodation basis (short-stay with services) is a standard-rated VAT supply regardless of FHL status. Operators that were treating FHL income as outside VAT on the historical FHL-equals-residential-letting framing should review the position; short-stay-with-services has always been a taxable supply at standard rate."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "VAT bucket. Focus is the post-Sonder operating-model question for serviced-accommodation businesses. The 2024 Upper Tribunal reversal materially narrowed TOMS-eligibility for the dominant long-lease-and-short-let model."
 ---

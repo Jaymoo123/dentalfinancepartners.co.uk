@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/5466808/pexels-photo-5466808.jpeg?auto=c
 h1: How to Calculate VAT for a Commercial Property Business
 summary: A plain VAT calculator only does the net-to-gross arithmetic. The hard part for a commercial property business is deciding which rate applies, whether you have opted to tax, and how much input VAT you can actually reclaim. Here is the calculation end to end, with worked figures, a rates table, and the partial-exemption test most landlords get wrong.
 schema: ''
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW), VAT Specialist
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 howToSteps:
 - name: Confirm whether your supply is taxable, exempt or zero-rated

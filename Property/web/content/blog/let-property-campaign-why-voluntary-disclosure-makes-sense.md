@@ -40,8 +40,8 @@ faqs:
   - question: "What is the structural difference between LPC and waiting for HMRC?"
     answer: "Three differences, all about control. Scope: a voluntary disclosure covers the years you choose to offer, whereas HMRC discovery reaches whatever section 36 permits (4, 6, 12 or 20 years depending on behaviour and territory). Timing: voluntary disclosure runs on your preparation timeline, whereas HMRC discovery runs on HMRC's enquiry timeline, typically with shorter deadlines and a defensive posture. Floor: voluntary disclosure unlocks the unprompted floor, whereas HMRC discovery locks in the prompted floor with no return to the lower bracket. Those three controls together are the case for going first."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

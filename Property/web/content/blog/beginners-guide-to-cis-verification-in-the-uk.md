@@ -39,8 +39,8 @@ faqs:
   - question: "What records do I need to keep as a CIS contractor?"
     answer: "FA 2004 ss.71 and 72, together with SI 2005/2045, require a contractor to keep records of every CIS payment for at least three years from the end of the tax year to which they relate. The records must show: the subcontractor's name and unique tax reference; the gross amount paid; the materials element (excluded from the deduction); the labour element; the deduction calculated; the verification reference and the verification date. The contractor must issue a payment-and-deduction statement to the subcontractor for each tax month in which a deduction is made. HMRC compliance checks on CIS contractors test the records routinely, especially around the materials-versus-labour split and the verification audit trail."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B4: process-led entry-level explainer on CIS verification under FA 2004 Part 3. Canonical entry point on income-tax-side CIS; site had no prior CIS page. §33 mini-lock signed off 2026-05-27 closing F-51. FA 2004 ss.63 and 69 verified verbatim at Stage 1 seed (2026-05-26); other Part 3 sections cross-referenced against the statute-of-record FA 2004 contents page. £3 million deemed-contractor rolling-twelve-month threshold and FA 2021 commencement framed rate-by-reference per §16.27. Materials-element exclusion (s.61(2) + reg 6) anchored. Residential-individual carve-out honoured."
 ---

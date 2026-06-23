@@ -45,8 +45,8 @@ faqs:
   - question: "Can a build-to-rent developer use the zero-rate?"
     answer: "Build-to-rent at scale is structurally challenging for the zero-rate because the eventual letting supply is exempt. A build-to-rent developer typically cannot recover input VAT on construction (no taxable output supply). One workaround is selling the completed block to an institutional investor at the first grant of a major interest (zero-rated sale, full input VAT recovery), with the investor then running the rental operation; the buyer's exempt rental income does not affect the developer's recovery position because the developer's supply was zero-rated."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "VAT bucket. The three-band structure (zero-rate, 5%, 20%) maps directly onto the developer's decision matrix for new-build vs conversion vs substantial reconstruction projects."
 ---

@@ -43,8 +43,8 @@ faqs:
   - question: "Where does HMRC get the figure it uses to decide if I am in scope?"
     answer: "From your filed self assessment return for the reference year (2024/25 for the April 2026 mandate, 2025/26 for April 2027, 2026/27 for April 2028). HMRC adds together gross self-employment turnover and gross property income from SA103F/S, SA105, and SA106. The mandate obligation is yours regardless of whether HMRC writes to you; their letter is a courtesy, not the trigger."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Differentiated from mtd-rental-income-threshold-exemptions by leading with the gross-vs-net mechanic at the boundary itself, with three personas drilling into the SA-form-box anchors and the Section 24 leverage trap. Penalty references use the corrected 15/30/31 day-triggers at 3%/3%/10% per Spring Statement 2025 (house positions §19.7, verified 2026-05-22)."
 ---

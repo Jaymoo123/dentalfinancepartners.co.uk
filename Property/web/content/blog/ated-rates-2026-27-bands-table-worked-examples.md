@@ -45,8 +45,8 @@ faqs:
   - question: "The pillar guide already has the band table. What does this page add?"
     answer: "Depth on the numbers. The complete guide sets out the whole regime: who pays, the reliefs, the return, and the penalties. The rates are worked through here in detail, with three to four worked examples in each band, the mid-year acquisition apportionment maths, the year-on-year delta, the PRBC walkthrough, and the substantial-acquisition trigger. Use this when you need the figure for a specific dwelling; read the complete guide when you need the full regime context."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Rates-level reference for ATED 2026/27: worked examples by band, day-apportionment maths for mid-year acquisitions, the year-on-year delta, and the Pre-Return Banding Check walkthrough. Related: ated-complete-guide-2026-27 (full regime) and ated-overview-companies-holding-uk-residential-property-2026-27 (who is in scope)."
 ---

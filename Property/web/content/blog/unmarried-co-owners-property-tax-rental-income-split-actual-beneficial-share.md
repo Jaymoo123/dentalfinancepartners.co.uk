@@ -47,8 +47,8 @@ faqs:
   - question: "What happens to the income split when an unmarried co-owner couple separates?"
     answer: "Income continues to follow actual beneficial ownership, unaffected by the change in personal circumstances. Unlike spouses, there is no 'living together' test that switches the basis: unmarried co-owners are taxed on actual beneficial ownership at all times. Any restructuring of beneficial shares (for example one cohabitee buying out the other's interest) is a market-value disposal of the share leaving, with CGT crystallising on the transferring co-owner; the s.58 no-gain-no-loss protection that spouses have on separation is not available."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Non-spouse-cohort applied page covering the income-tax and CGT rules for unmarried co-owners (cohabiting partners, siblings, parent-and-adult-child, friends, co-investors). Centres the absence of Form 17 and the spouse-only nature of the ITA 2007 s.836 50/50 default; threads the CGT contrast (no TCGA 1992 s.58 no-gain-no-loss), the connected-persons rule in s.286 (siblings yes, cohabitees no), the joint-tenancy bar applied equally, the documentation HMRC expects, and the SDLT chargeable-consideration trap on assumed mortgage debt. Forward-links to C1 (Form 17 mechanic, spouse-only) and C3 (declaration of trust mechanic, applicable for unmarried co-owners without the Form 17 follow-up)."
 ---

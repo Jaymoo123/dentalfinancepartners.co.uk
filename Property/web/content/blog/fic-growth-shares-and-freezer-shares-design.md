@@ -45,8 +45,8 @@ faqs:
   - question: "Can the architecture be restructured later?"
     answer: "Yes, but with care. Existing share classes can be varied by special resolution (75% supermajority of voting shareholders), subject to class-rights protections requiring approval of each affected class. The variation itself can be a CGT and ERS event if it changes the value or character of the shares. Restructuring a poorly-designed initial architecture is expensive and slow; getting the design right at the start is materially cheaper."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "FIC daughter. Mechanics deep-dive on growth-share + freezer-share design, the centre of the FIC's wealth-transfer engine. Section 431 ITEPA and the ERS trap are the most commonly missed pieces."
 ---

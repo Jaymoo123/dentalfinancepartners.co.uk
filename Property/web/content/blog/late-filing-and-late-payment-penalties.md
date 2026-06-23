@@ -40,8 +40,8 @@ faqs:
   - question: "What is the practical decision-framework for a landlord facing a penalty assessment?"
     answer: "Five-step. First, is the underlying liability disputed? If yes, separate the liability appeal from the penalty appeal under section 31A. Second, is there a reasonable-excuse defence? Apply the Perrin four-stage test honestly. Third, what is the appeal-window status? 30 days is short; act fast. Fourth, what time-to-pay options exist? HMRC will agree time-to-pay under TMA 1970 section 108 where you cannot pay in full. Fifth, is the underlying failure undisclosed rental income rather than a late return on a known liability? If yes, the Let Property Campaign route under Schedule 41 may be the better engagement than fighting the penalty."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

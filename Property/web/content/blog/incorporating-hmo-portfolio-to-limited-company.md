@@ -43,8 +43,8 @@ faqs:
   - question: "Where does the incorporation decision typically land for a small HMO operator?"
     answer: "For a higher-rate-tax HMO operator with three or more properties, leverage above 60% LTV, and a 5+ year holding intention, incorporation is generally worth the upfront cost. The combination of S24 mitigation, capital allowances on common parts, generally strong s.162 case reducing CGT to near zero on a clean share-only transfer, and the 2027 property income surcharge avoided gives a typical 3- to 5-year payback. For basic-rate-tax operators or single-HMO landlords, the answer is closer to marginal and depends on holding horizon. For very small operators (one HMO, low leverage), personal ownership often remains the cleaner answer."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "HMO-specific incorporation guide written from operational experience: the common-parts capital allowances pool, licence-transfer pitfalls, ltd-co mortgage market specifics, and the stronger Ramsay test for s.162 relief."
 ---

@@ -45,8 +45,8 @@ faqs:
   - question: "How does this page relate to the existing LLP page on your site?"
     answer: "The existing 'LLP property investment worth considering' page is a general LLP intro that pre-dates BlueCrest and assumes default tax-transparent treatment. It does not address salaried-member rules, BlueCrest, or post-2024 narrowing. This page fills the policy-update gap: current-events overlay anchored on the October 2024 Supreme Court decision and HMRC's 2025 PM250000+ updated guidance. Reading sequence: the general LLP intro for the baseline framework; this page for the post-BlueCrest layer that overlays the existing transparency rules for members who fail all three Conditions. The pages cross-link."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest [2024] UKSC 33 (October 2024) and HMRC's updated PM250000+ Partnership Manual guidance. Three-Condition framework with corrected Condition C direction ('less than 25% capital IN the regime, 25% or more OUT', commonly inverted). Condition C surfaced as operative safe harbour for property-LLP members; s.863G round-trip-loan trap explicit. HMRC PM250000+ verified as correct entry point (NOT PM276000, which is CIS guidance per F-9 drift catch). Cost computation uses FA 2026 secondary Class 1 NIC at 15%."
 ---

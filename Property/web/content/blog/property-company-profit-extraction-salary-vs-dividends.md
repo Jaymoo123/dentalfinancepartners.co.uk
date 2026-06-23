@@ -49,8 +49,8 @@ howToSteps:
   - name: "Split income to a spouse shareholder where genuine"
     text: "If a spouse holds real shares with full rights, pay dividends in proportion to use their personal allowance and basic-rate band, relying on the s.626 spouse exception. Keep the share gift outright and unconditional."
 dateModified: "2026-06-01"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
 ---
 

@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto
 h1: 'Annual Investment Allowance 2024/25: What It Meant and What Has Changed Since'
 summary: "A year-anchored review of the Annual Investment Allowance for 2024/25: the £1 million permanent cap, who could claim it, how it sat with the abolition of the furnished holiday lettings regime, what has changed since (the writing-down allowance cut to 14% from April 2026 and the new 40% first-year allowance from 1 January 2026), and how to amend a 2024/25 return in time."
 schema: ''
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 faqs:
 - question: "Can I claim the AIA on a buy-to-let residential property in 2024/25?"

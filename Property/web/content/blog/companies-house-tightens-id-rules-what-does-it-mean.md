@@ -41,8 +41,8 @@ faqs:
   - question: "Where do I check the operative state of the reforms?"
     answer: "Two canonical sources. Primary: the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, with topic sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: the Companies House blog at companieshouse.blog.gov.uk for operational announcements and phase-rollout posts. The legacy gov.uk/government/news/changes-to-uk-company-law URL is no longer active and should not be relied on."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B11: policy-tightening / qualitative-shift interpretation of the ECCTA 2023 identity-verification regime. Reads the reforms through a before-and-after lens. Honest framing discipline: the page distinguishes structural change (new identity-verification gate that did not previously exist), incremental change (lawful purposes statement adding to a pre-existing confirmation statement), and genuine tightening of an existing standard (appropriate-address rule sharpening the previous service-of-documents test). ECCTA Identity-verification crossheading sections (s.64 PSC, s.65 procedure, s.66 ACSP, s.67 national-security exemption, s.68 unique identifiers, s.69 publication restriction) verified verbatim per §11.A F-14 close. ECCTA s.1 Registrar's objectives (CA 2006 inserted-s.1081A) anchored as the gatekeeper-model backbone. Pre-ECCTA PSC baseline (Small Business, Enterprise and Employment Act 2015 disclosure-without-verification) used to frame the structural shift. F-12 URL discipline honoured."
 ---

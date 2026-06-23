@@ -37,8 +37,8 @@ faqs:
     answer: "The honest answer is that it is one cost driver among many. Mortgage interest rates, energy costs, building-safety remediation costs, leasehold ground rents, service charges, and the broader cost-of-living position are all material to housing demand and affordability. The targeted LURA 2023 premiums on second homes and empty homes have measurably affected those specific market segments. The general 5 per cent annual increase is one cost line among many and attributing causation cleanly to council tax alone is not statistically supported. The clearest market-segment effect is on second homes and holiday lets in tourist-dense areas."
   - question: "What should a landlord, second-homeowner, or buyer do in response?"
     answer: "Three practical responses. First, factor the empty-homes and second-homes premiums into acquisition models and held-vacancy budgets. A 12-month-trigger empty-homes premium is a material cost line for any portfolio with extended renovation or sale cycles. Second, explore Council Tax Reduction (CTR) eligibility for cash-flow-constrained owners. Third, consider planning-side and use-class options where the premium materially erodes yield: long-let alternative; rural-business-rates alternative for substantial commercial use; relief or exemption applications where the dwelling qualifies. Our reduction-routes page covers the operational mechanics."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

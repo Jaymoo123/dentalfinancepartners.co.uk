@@ -43,8 +43,8 @@ faqs:
   - question: "Can my spouse own shares in the property company to share dividend income?"
     answer: "Yes, and it is a standard planning step. Where a spouse has unused personal allowance, dividend allowance, or basic-rate dividend band, allocating shares to them allows the company to declare dividends in their hands at lower marginal rates. The structure must reflect genuine ownership: the spouse needs to be the legal and beneficial owner of the shares, with no conditions attached and no settlement-back arrangement. HMRC's settlements legislation (Part 5 Chapter 5 ITTOIA 2005) catches arrangements where the income-generating asset is gifted but the income is enjoyed by the donor; the Arctic Systems case (Jones v Garnett [2007] UKHL 35) established that ordinary spousal share-ownership arrangements with full beneficial rights are generally outside the settlements legislation. Different share classes (alphabet shares) allowing different dividend rates can also be used but require careful drafting to avoid HMRC settlements challenge."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Decision-framework page comparing the four real extraction routes from a property limited company, with the post-April-2025 employer NIC changes properly factored into the salary maths."
 ---

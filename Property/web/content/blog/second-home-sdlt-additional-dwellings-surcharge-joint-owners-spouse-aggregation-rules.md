@@ -47,8 +47,8 @@ faqs:
   - question: "When does the 'living together' test for the spousal aggregation rule apply?"
     answer: "The aggregation rule under Sch 4ZA para 9 applies while the spouses or civil partners are living together. Separated couples (separated under a court order, by formal deed of separation, or in circumstances likely to be permanent) are outside the aggregation rule. The practical question is the date of the property transaction relative to the separation; HMRC will look at the facts at the date of the purchase for the surcharge test."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "SDLT joint-buyer applied page covering the FA 2003 Sch 4ZA para 2(3) joint-buyer trigger + Sch 4ZA para 9 spousal aggregation rule for the 5% additional dwellings surcharge (rate from 31 October 2024). Threads the worldwide property test, the first-time-buyer-marrying-landlord trap, the FA 2003 Sch 4 para 8 chargeable consideration including assumed-debt mechanic, the 36-month refund route under Sch 4ZA para 8 for a former main residence, the 'living together' separation point, and forward-link placeholders for the Welsh LTT (LTTA 2017 Sch 5) and Scottish ADS (LBTT(S)A 2013 Sch 2A) devolved equivalents (Wave 5 Session B B2 + B7 sibling pages; manager will hyperlink at bucket-merge once committed). Worked examples: Williams + Carter (FTB marrying landlord on £400k starter home), Garcia + Rossi (cohabitee couple marrying with Italian holiday rental triggering Sch 4ZA para 9 on UK joint purchase)."
 ---

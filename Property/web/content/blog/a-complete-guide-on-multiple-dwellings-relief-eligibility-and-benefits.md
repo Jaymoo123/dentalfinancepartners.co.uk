@@ -47,8 +47,8 @@ faqs:
   - question: "Where can I find the operative pre-abolition Schedule 6B text?"
     answer: "The legislation.gov.uk historical snapshot at the 31-May-2024 timestamp captures Schedule 6B as it stood immediately before the 1 June 2024 commencement of F(No.2)A 2024 section 7. The URL pattern is /ukpga/2003/14/schedule/6B/2024-05-31 and the snapshot includes amendments made through the Stamp Duty Land Tax Act 2015 and Finance Act 2016. For HMRC's pre-abolition guidance the Stamp Duty Land Tax Manual at SDLTM29900 and following remains the primary internal guidance, though sections may have been updated to reflect the abolition; cross-reference any quoted guidance against the operative statute snapshot. The bailii.org repository hosts the Fiander FTT and Upper Tribunal decisions and the broader dwelling-definition case-law."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "MegaWave 1 batch M1-A-B1 pick A3. Historical / transitional reference guide for pre-abolition MDR architecture. Para-by-para walk-through of FA 2003 Sch 6B as in force 31 May 2024 verified verbatim at https://www.legislation.gov.uk/ukpga/2003/14/schedule/6B/2024-05-31 on 2026-05-26 (1% minimum-rate floor confirmed). Abolition statute F(No.2)A 2024 s.7 verified verbatim 2026-05-26 at legislation.gov.uk/ukpga/2024/12/section/7. Dwelling-definition case-law: Fiander and Brower v HMRC [2021] UKFTT 190 (TC08020) + Upper Tribunal sequel [2023] UKUT 22 (TCC). SDLT residential bands and 5% additional-dwellings surcharge verified 2026-05-26 at gov.uk/stamp-duty-land-tax/residential-property-rates. Page is explicitly badged as historical from the lead; primary use cases are transitional-cohort eligibility checking and HMRC enquiry defence within the four-year careless-behaviour window."
 ---

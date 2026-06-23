@@ -47,8 +47,8 @@ faqs:
   - question: "What if the couple is unmarried and holds property jointly?"
     answer: "Unmarried co-owners do not have the s.18 spouse exemption. On first death the deceased's share (whether by survivorship for joint tenants or by will for tenants in common) is part of the deceased's chargeable estate. NRB and RNRB are available against any IHT charge, but the typical couple planning route (spouse exemption to defer tax to second death) is not available. Cohabitee estate planning typically uses lifetime gifting strategies, life-interest trusts, and life insurance written in trust to mitigate the absence of the spouse exemption."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Structural-choice page on IHT treatment of jointly owned property. Threads the joint-tenancy survivorship vs tenants-in-common devise-by-will choice, the IHTA 1984 s.18 spouse exemption applied to each, the s.8A transferable NRB mechanic + s.8G transferable RNRB mechanic, the s.8D £2 million RNRB taper trap, the s.142 deed of variation route (2-year window) as a post-death corrective, and the unmarried co-owner contrast (no s.18). Worked example: Iqbal couple £1.4m portfolio (£600k own home + £800k BTL); upstream structural-choice page citing Wave 4 C2 second-death window mechanic for the detailed survivor calc on second death."
 ---

@@ -40,8 +40,8 @@ faqs:
   - question: "What is the precondition that MTD ITSA must have applied for three tax years?"
     answer: "Regulation 24 of SI 2026/336 governs the three-tax-year income-exemption exit. The exit window does not open until the landlord has been within MTD ITSA for three complete tax years AND has had three consecutive tax years of qualifying income below the cohort threshold. The two conditions overlap in practice but should not be conflated when drafting the notification."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

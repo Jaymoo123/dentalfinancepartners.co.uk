@@ -45,8 +45,8 @@ faqs:
   - question: "How do I appeal an ATED penalty?"
     answer: "You have 30 days from the date of the penalty notice to appeal. The grounds are reasonable excuse (an unforeseen event that prevented compliance, that ended as soon as the excuse ended) or, for daily penalties, special circumstances. HMRC's published guidance treats ignorance of the obligation as a weak ground; first-time filing by a newly-incorporated holding company has had mixed results at tribunal."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental relief mechanics, the 15% SDLT interaction, and the penalty cascade link back here."
 ---

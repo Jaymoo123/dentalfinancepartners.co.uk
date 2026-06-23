@@ -39,8 +39,8 @@ faqs:
   answer: "A van provided by a company is a company asset, so the company can claim capital allowances on it in full, separately from any private-use issue. If a director or employee has significant private use of the van, a van benefit-in-kind (BIK) charge can arise, which is an employment-tax matter on the individual rather than a restriction on the company's capital allowance. Limited or \"insignificant\" private use of a company van can fall outside the BIK charge; keep records to support the position."
 - question: "Can I claim if I buy the van from a relative or my own company?"
   answer: "You can still claim, but a purchase between connected persons (for example from a relative or a company you control) is treated as taking place at market value rather than the price paid, under the connected-party rules. A second-hand van bought this way is excluded from full expensing and the 40% first-year allowance, but AIA and WDA remain available on the market-value figure. Keep evidence of the open-market value."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'

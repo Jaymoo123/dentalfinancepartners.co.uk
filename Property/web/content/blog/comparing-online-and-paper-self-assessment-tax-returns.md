@@ -40,8 +40,8 @@ faqs:
   - question: "What does TMA 1970 section 8(1F) say about late-notice deadlines?"
     answer: "Section 8(1F) applies Exception 1: where the notice to file is given after 31 July but on or before 31 October following the end of the tax year, the paper deadline becomes 3 months from the date of the notice, and the online deadline remains 31 January. A notice given on 15 August 2026 sets a paper deadline of 15 November 2026 and an online deadline of 31 January 2027. Section 8(1G) applies Exception 2 for notices given after 31 October: both paper and online deadlines become 3 months from the notice date, eliminating the standard online deadline advantage in late-notice cases."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

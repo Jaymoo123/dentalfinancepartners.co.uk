@@ -47,8 +47,8 @@ faqs:
   - question: "Where does this page sit alongside the other Welsh LTT pages?"
     answer: "This is the higher-rates mechanic specifically. The main residential rates (£225k nil band and the bands above) sit in a separate guide on Welsh LTT main rates. Welsh multiple dwellings relief, which interacts with higher rates for bulk acquisitions, has its own guide covering the post-7-February-2025 modifications and the 3% minimum-rate floor from 13 February 2026. The Welsh derelict-property refund route, which reclassifies severely derelict properties as non-residential, is covered separately. For the SDLT-applied parallel to Welsh higher rates, our SDLT buy-to-let surcharge guide covers England's 5% additional dwellings surcharge."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Welsh LTT higher residential rates from 11 December 2024 (5% to 17% standalone band structure under LTTA 2017 Sch 5), with the £40,000 minor-interest threshold, the 36-month replacement-of-main-residence rule under paras 8 + 17, spousal aggregation under para 25, corporate-buyer position, three worked examples at Welsh purchase prices, and the Welsh Revenue Authority refund mechanism for sale of old main residence within window."
 ---

@@ -41,8 +41,8 @@ faqs:
   - question: "What policy questions does LBTT raise for the next Scottish parliament?"
     answer: "Several editorial-tone open questions surface from the 2015 to 2026 arc: should the £145,000 nil-rate band rise to match Welsh LTT's £225,000 nil band, which would deliver a substantial saving to typical first-home buyers in central-belt Scotland; should the 8% ADS move to a marginal-rate band structure rather than the current flat-on-entire-price design, which produces brutal cliff-edge effects above the £40,000 de-minimis; should a non-resident surcharge be considered, given that the English regime has had a 2% non-resident surcharge since 2021 without driving comparable disinvestment; should FTB relief be extended above the £175,000 nil-band uplift, given that average first-home prices in central Edinburgh and Aberdeen approach or exceed £200,000. None of these is signalled as a near-term Scottish Government commitment, but each is the kind of structural question the next parliamentary cycle may need to address."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "State-of-the-tax editorial review essay covering Scottish LBTT for 2026/27. Anchored on the four ADS upratings (3% / 4% / 6% / 8%) between 2016 and 2024, the SDLT MDR abolition in England (1 June 2024), and the Scottish Budget 2026/27 LBTT-rate freeze. Editorial in tone (overview essay rather than mechanics-deep) but data-anchored throughout. Foregrounds three structural questions facing LBTT: ADS escalation stability; SDLT MDR abolition arbitrage; nil-band level versus Welsh LTT £225,000 comparator. Sits as the cluster-hub editorial counterpart to the dedicated Scottish-LBTT mechanics-deep pages and cross-links into each."
 ---

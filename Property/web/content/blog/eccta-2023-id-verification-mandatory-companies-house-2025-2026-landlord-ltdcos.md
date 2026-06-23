@@ -43,8 +43,8 @@ faqs:
   - question: "Where do I check the current operative state of the regime?"
     answer: "The Companies House campaign page at changestoukcompanylaw.campaign.gov.uk is the canonical commencement-state tracker. The Companies House blog at companieshouse.blog.gov.uk publishes operational announcements as each phase commences. Statutory text sits at legislation.gov.uk for ECCTA 2023 c. 56 (the inserting Act) and the Companies Act 2006 contents (where the inserted provisions sit). Avoid second-hand commentary on commencement dates because the rollout phases have moved during 2024 to 2026 and not every commentator has updated. Quote the verification timestamp in any client-facing note so the reader knows when the position was checked."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Multi-SPV landlord-LtdCo operational walkthrough for the post-18-November-2025 mandatory ID verification regime under ECCTA 2023. Anchored on the Identity verification crossheading at ECCTA 2023 ss.64-69 plus the Directors crossheading ss.40-45 for director-side mechanics, with verbatim citation discipline against the campaign page commencement state and per-write verification per the program's drift-catch pattern."
 ---

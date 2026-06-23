@@ -45,8 +45,8 @@ faqs:
   - question: "Can I make the claim myself or do I need an accountant?"
     answer: "The gov.uk online claim service is open to the buyer or to an agent acting on their behalf. Straightforward claims, where completion and disposal dates are clean and within the standard three-year window, are routinely made by buyers or their conveyancer. Claims involving exceptional circumstances, overpayment relief, non-resident surcharge interaction, separation provisions, or substantial-performance dates benefit from specialist input because the evidence package and the legal framing matter materially to whether HMRC accepts."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Process-focused complement to our SDLT rates pillar, written to give claimants the deadlines, evidence list and failure modes in one place."
 ---

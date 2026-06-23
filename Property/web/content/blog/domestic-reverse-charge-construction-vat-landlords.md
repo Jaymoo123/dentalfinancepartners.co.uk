@@ -45,8 +45,8 @@ faqs:
   - question: "Are there construction supplies the DRC doesn't apply to even within a CIS chain?"
     answer: "Yes. Zero-rated supplies (most commonly the construction of new dwellings) are outside the DRC because there is no positive VAT on the supply to reverse-charge. Supplies of staff or workers (employment-business supplies) are also outside. Mixed supplies where the construction element is incidental to a non-construction supply (eg a building materials retailer delivering goods with minor installation) may also fall outside, but the test is fact-specific."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "VAT bucket page. Focus is the practical operation of the construction DRC for two landlord profiles: refurbishing landlords (usually end users) and developer-landlords (often in a CIS chain)."
 ---

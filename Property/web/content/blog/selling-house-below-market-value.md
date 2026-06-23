@@ -37,8 +37,8 @@ faqs:
     answer: "HMRC's District Valuer reviews valuation positions in significant cases. The DV may propose an alternative valuation; if the taxpayer disagrees, the dispute moves to the Lands Tribunal or the Upper Tribunal Tax and Chancery Chamber. Outcome turns on the strength of the contemporaneous evidence. The cost of dispute can exceed the tax at stake. Prevention: instruct a Red Book valuation at the date of the transaction and retain the evidence file."
   - question: "What about CGT holdover relief: can I avoid CGT on the gift element?"
     answer: "TCGA 1992 s.165 (holdover relief for gifts of business assets) is NOT available for residential investment property (it is not a 'business asset'). TCGA 1992 s.260 (holdover relief on chargeable lifetime transfers) is available where the gift triggers a chargeable lifetime transfer, typically a gift into a discretionary trust. For a straight partial-sale-partial-gift to an individual, holdover relief is not typically available; the CGT on the deemed market value disposal must be paid."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

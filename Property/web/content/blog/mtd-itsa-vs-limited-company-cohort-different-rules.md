@@ -48,7 +48,7 @@ faqs:
     answer: "Few. The closest case is a higher-rate landlord with a small, growing portfolio where Section 24 is biting hard, the properties have low embedded gains (recent purchases, slow market), the borrowing structure is portable, and the landlord's personal time cost of quarterly MTD compliance is high (perhaps a senior professional with limited bandwidth). In that combination, the post-tax incorporation maths can favour the company route and the MTD avoidance is a marginal additional plus. The decision should be modelled on the tax-rate maths first; MTD is rarely the headline driver. Our incorporation decision page works the trade-off in detail."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK property tax specialists, ATT / CTA qualified"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk MTD for VAT guidance, and house position §3 / §19.3 / §19.6 on 2026-05-22. Limited companies are outside MTD ITSA entirely (structural exclusion). MTD for Corporation Tax has no confirmed start date as of May 2026. Director-with-personal-property cohort overlap covered."
 ---

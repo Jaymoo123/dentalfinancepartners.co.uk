@@ -37,8 +37,8 @@ faqs:
     answer: "Section 106 of the Town and Country Planning Act 1990 creates negotiated, site-specific planning obligations. Regulation 122 of SI 2010/948 sets the test: a section 106 obligation may constitute a reason for granting planning permission only if it is necessary, directly related to the development, and fairly and reasonably related in scale and kind. Post-CIL, the practical division of labour is that CIL funds strategic-area infrastructure (transport links, schools, area-wide leisure) and section 106 funds site-specific mitigation (the access road for this development, the affordable housing within this scheme). The pre-2019 five-pooling restriction was relaxed by SI 2019/1103, with the Infrastructure Funding Statement framework replacing it."
   - question: "Does the Levelling-up and Regeneration Act 2023 replace CIL?"
     answer: "Part 4 of the Levelling-up and Regeneration Act 2023 (LURA 2023) introduced an Infrastructure Levy framework as a longer-term replacement for CIL, alongside amendments to the existing CIL machinery in PA 2008 Part 11. The Infrastructure Levy is being rolled out in test authorities only and CIL remains operative across the existing CIL-charging LPAs at the time of writing. Any developer or self-builder should check the LPA's published charging schedule and policy position as part of due diligence on a specific site."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

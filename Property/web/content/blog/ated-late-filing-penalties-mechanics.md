@@ -45,8 +45,8 @@ faqs:
   - question: "How do I prevent the cascade in the first place?"
     answer: "Diary the 30 April annual deadline, even for relief-only returns, against the property in the company's accounting record (not just against the accountant's workflow). For mid-year acquisitions, the 30-day clock starts at completion. For mid-year loss of relief, the 30-day clock starts at the disqualifying event. A single set of standing instructions to the conveyancer and the accountant covering ATED filings is the cleanest preventative."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Daughter of the ATED pillar. Category overridden from landlord-tax-essentials (brief default) to incorporation-and-company-structures to keep the ATED cluster (C10 pillar + C11/C12/C13 daughters) together for canonical and breadcrumb coherence."
 ---

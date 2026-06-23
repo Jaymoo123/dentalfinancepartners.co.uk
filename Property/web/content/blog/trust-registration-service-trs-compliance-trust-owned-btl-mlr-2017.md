@@ -47,8 +47,8 @@ faqs:
   - question: "Should our discretionary trust use a professional trustee for TRS compliance?"
     answer: "Often yes, but it depends on the trust's size, its complexity, and how confident your family trustees are. The case for a professional trustee is the routine TRS update discipline (the rolling 90-day clock on beneficial-ownership changes), familiarity with the gov.uk portal, knowing when an update is required, and consistent handling of HMRC correspondence. The case against is the annual cost (typically £1,500 to £4,000 for a small landlord trust depending on activity) and the loss of family control over operational decisions. Many landlord families split the difference: a professional trustee takes the lead-trustee role for HMRC correspondence and routine TRS compliance, while family trustees keep control over discretionary distribution decisions. If the trust holds a single BTL property and you are comfortable with the discipline, family-trustee-only is workable; if it holds a portfolio of three or more properties, has multiple beneficiaries, or has any cross-border dimension, professional involvement on the TRS-administration side typically pays for itself in reduced penalty risk alone."
 dateModified: "2026-05-24"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-24"
 editorialNote: "TRS compliance pillar for landlord-trust portfolios. Statutory anchor: MLR 2017 reg 45 + reg 76 + Sch 3A. Penalty anchor: TRSM80020 verbatim (£5,000 max DISCRETIONARY, case-by-case, NOT graduated). Common misconception corrected: no £100/£200/£300 tariff. Singh-family worked timeline. Within-bucket sequencing: ships before C2 (IPDI) per §16.32; C2 forward-cites TRS registration mechanics for IPDI trusts."
 ---

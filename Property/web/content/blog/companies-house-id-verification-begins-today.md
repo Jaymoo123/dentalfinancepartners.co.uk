@@ -37,8 +37,8 @@ faqs:
   - question: "Where do I check the operative state of the rollout?"
     answer: "Two canonical sources. Primary: the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, which tracks the official rollout state in real time and has sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: the Companies House blog at companieshouse.blog.gov.uk for operational rollout announcements and phase-change posts. Do not rely on the legacy gov.uk/government/news/changes-to-uk-company-law URL, which is no longer active."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B7: calendar-event / commencement-day on-ramp for the 18 November 2025 move from voluntary to mandatory ID verification at Companies House. Sits alongside B2 (definitional on-ramp), B6 (email-trigger / scam-vetting on-ramp), B11 (policy-tightening interpretation), and the existing Wave 9 operational walkthrough for landlord LtdCos. ECCTA 2023 ss.64-69 verbatim verified at §11.A F-14 lock; commencement chain (8 April 2025 voluntary opening, 18 November 2025 mandatory for new appointments, ~November 2026 close of transition window) anchored per §11.A F-11 hardening; F-12 URL discipline honoured (deprecated gov.uk/government/news/changes-to-uk-company-law avoided). Multi-SPV per-natural-person rule surfaced prominently per anti-templating watchpoint."
 ---

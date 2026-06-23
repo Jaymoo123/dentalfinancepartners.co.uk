@@ -39,8 +39,8 @@ faqs:
   - question: "Should the lease specify how dilapidations are calculated to protect the VAT position?"
     answer: "Yes. The clearest VAT outcome flows from a lease that contains a full repairing covenant, a defined Schedule of Condition (attached at completion), a separate dilapidations clause referencing the costed-quotation methodology under section 18 of the Landlord and Tenant Act 1927, and a process for serving an interim schedule before lease expiry. Where the lease is silent or ambiguous, settlement negotiations can drift toward composite payments that mix rent, surrender, and dilapidations, and the VAT analysis becomes harder to defend. Bespoke drafting at the lease-grant stage costs little and saves real money at lease end."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A applied page. Lease-end-specific applied page sitting downstream of A1 (OTT mechanic). The post-2020 / post-2022 HMRC framework changed for early termination, not for genuine dilapidations: VATSC05910 is unchanged in carving dilapidations out from the look-through test. Page anchors that carve-out and walks through the evidence package that protects it."
 ---

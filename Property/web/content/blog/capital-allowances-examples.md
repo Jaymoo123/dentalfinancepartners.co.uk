@@ -41,8 +41,8 @@ faqs:
   answer: You may be able to. If qualifying plant or machinery expenditure was incurred in earlier years and was never claimed, and was not already treated as a repair or revenue cost, a capital allowances review can identify it and bring it into a pool. The figures must be supported by the original cost. For a commercial property bought from a previous owner, the section 198 and pooling history governs what is still claimable, so the review needs the transaction documents, not just the build cost.
 - question: Do the corporation tax rates change the value of a company's claim?
   answer: Yes, the value of an allowance depends on the rate it offsets. For 2026/27 the main rate of corporation tax is 25%, the small-profits rate is 19% for profits up to £50,000, and marginal relief tapers between £50,000 and £250,000. A capital allowance claimed by a company reduces taxable profits, so the cash benefit is the allowance multiplied by the rate that would otherwise apply, which is higher for companies in the main-rate band than for those on the small-profits rate.
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'

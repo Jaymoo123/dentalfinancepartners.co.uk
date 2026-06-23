@@ -47,8 +47,8 @@ faqs:
   - question: "What is the cumulative exposure for a 5-year multi-dwelling non-filer?"
     answer: "Dramatic. Each chargeable period generates a separate Sch 55 escalator and Sch 56 escalator per dwelling. A 5-year non-filer for a single £2m-band dwelling at 2026/27 figures faces 5 x (£100 + £200 + £300 + £300) = £4,500 minimum Sch 55 base penalty plus tax-geared paragraphs 5 and 6 uplifts where tax was due, plus Sch 56 5% / 5% / 5% per year, plus interest. A 4-dwelling 5-year deliberate-not-concealed case can comfortably exceed £3 million in cumulative exposure (penalties plus tax plus interest). OTM voluntary disclosure within the unprompted window is the standard remediation route; specialist representation is essential."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "Full ATED penalty + appeal architecture catalogue page (MegaWave 3 Bucket B, batch M3-B-B2). Architectural-overview framing across Sch 55 + Sch 56 + Sch 24 + appeal mechanics. Distinct from operational two-routes deep-dive (sibling B8) and upstream-error-prevention page (B16) and OTM-letter response (B4). Anchors: FA 2013 ss.159, 161, 163; FA 2009 Sch 55 paragraphs 3, 4, 5, 6, 6A, 16, 17, 18, 22, 23 + Table items 11A and 11B; FA 2009 Sch 56 paragraph 3 + Table; FA 2009 ss.101-102 interest; FA 2007 Sch 24 paragraphs 1-3, 4A, 9, 10, 11, 14; SI 2011/975 Offshore Inaccuracies Order; TMA 1970 ss.31, 31A, 49; Perrin v HMRC [2018] UKUT 156 (TCC); Martland v HMRC [2018] UKUT 178 (TCC). House positions §2, §18 + §18.4 + §18.7, §27 + §27.2 + §27.3 + §27.4 + §27.5 + §27.9. Anonymised personas (Iberic Holdings Limited, Cordova Cayman Limited, Sapphire Estates Cayman Holdings Limited). 5 worked examples, 14 FAQs, 4 inline asides."
 ---

@@ -47,8 +47,8 @@ faqs:
   - question: "What if my company has been wound up but ATED returns were missed?"
     answer: "ATED liability survives the company's dissolution where chargeable periods ended before dissolution. Practical recovery is harder for HMRC against a dissolved company, but the position can re-open if assets are recovered (e.g., the Land Registry transfer was not effected before dissolution and HMRC pursues bona vacantia). For a recipient who is the former director or shadow director of a dissolved overseas company, taking the OTM letter to a UK adviser before responding is the right step; the position turns on group/trust arrangements that vary widely and need individual analysis."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Compliance-focused page for the overseas-company holding cohort. Covers the HMRC OTM letters campaign (target population, four letter variants, 40-day window, QPRBR loss-pattern trigger), the three response routes, the Digital Disclosure Service for voluntary disclosure, the voluntary-vs-discovery penalty calculus, the parallel RoE compliance picture, and a worked example covering five years of unfiled returns."
 ---

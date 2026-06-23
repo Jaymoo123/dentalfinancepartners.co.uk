@@ -41,8 +41,8 @@ faqs:
   - question: "Where do I check the operative state of the rollout?"
     answer: "Two canonical sources. Primary: the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, with topic sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: the Companies House blog at companieshouse.blog.gov.uk for operational announcements and phase-rollout posts. The legacy gov.uk/government/news/changes-to-uk-company-law URL is no longer active and should not be relied on."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B9: business-value / counterparty-due-diligence framing of the Companies House reforms. Sibling of B8 (taxonomy umbrella) and B10 (operations roadmap), reading the same ECCTA 2023 regime through a commercial lens. ECCTA s.1 Registrar's objectives (CA 2006 inserted-s.1081A) as the policy backbone for the gatekeeper-model framing. Honest framing discipline maintained: the page preserves the counterexample (small dormant portfolios may find minimum-bar commercially adequate) rather than advocating early-thorough universally. Failure-to-prevent-fraud large-organisation thresholds intentionally left as 'verify at write' rather than pinned, per Stage 2 verify-at-write flag. ECCTA ss.28-30 + ss.40-45 + ss.51-52 + ss.59-63 + ss.64-69 verbatim verified per §11.A F-14 close (2026-05-25). F-12 URL discipline honoured (deprecated gov.uk URL avoided)."
 ---

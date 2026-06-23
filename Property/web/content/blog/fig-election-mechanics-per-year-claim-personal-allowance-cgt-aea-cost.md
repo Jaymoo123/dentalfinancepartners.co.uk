@@ -43,8 +43,8 @@ faqs:
   - question: "Does claiming FIG affect my UK BTL portfolio income tax position?"
     answer: "No. UK rental income from UK situs property is UK-source income, not foreign income, and is taxed under the standard arising-basis rules whether or not the FIG claim is made. The UK rental profit goes into the income-tax calculation at Step 1 (total income) as normal; the FIG claim removes only foreign income at Step 2 and forfeits allowances at Step 3. The UK rental income is therefore taxed at marginal rates with no PA available (because the PA is forfeited by the FIG claim) for any year in which FIG is claimed. Some landlords with significant UK rental income find this PA-forfeiture cost meaningful even where the foreign income is large enough to make the FIG claim positive overall; the breakeven must factor in the UK-side cost of losing the PA against the UK rental income, not just the foreign-income side."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket A (A2). FIG election-mechanics companion to A1 (eligibility). Verbatim against ITTOIA 2005 s.845A on legislation.gov.uk 2026-05-25. Per-year claim emphasised; 12-month-from-31-January deadline anchored as the FIG-specific deadline (not TMA 1970 s.43 4-year window). Allowance forfeiture: PA + dividend allowance + CGT AEA (parallel to historic ITA 2007 s.809G remittance-basis architecture). Step 2 deduction mechanics walked. Worked breakeven for 2026-27 (£10,000-£15,000 of foreign income depending on mix). Distinct from A1 (eligibility gateway, s.845B four conditions) and A3 (year-5-onwards cliff and arising-basis transition). Forward-text reference to A3; reciprocal back-link at A3 commit time. Category overridden to non-resident-landlord-tax per A1 convention."
 ---

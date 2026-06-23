@@ -43,8 +43,8 @@ faqs:
   - question: "How does the position differ from SDLT (England) or LBTT (Scotland) on a cross-border purchase?"
     answer: "The substantive dwelling-suitability test under LTTA 2017 s.72(1)(a) (Wales), FA 2003 s.116(1)(a) (England and Northern Ireland), and the Scottish LBTT equivalent in LBTT(S)A 2013 is functionally identical: all three turn on whether the property is 'used or suitable for use as a dwelling' at the effective date. Differences sit in procedural mechanics (return filing window, refund route, review and appeal pathway, time limits) and in rate tables. Welsh tribunal jurisdiction sits in the Welsh Tax Tribunal; the English equivalent is the First-tier Tribunal Tax Chamber; the Scottish equivalent is the First-tier Tribunal for Scotland Tax Chamber. The substantive test is consistent; the procedural detail varies."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Pre-purchase classification page for derelict and uninhabitable Welsh property acquisitions. Intentional pair with the Wave 5 post-completion refund-mechanics page (F-50 logged as deliberate two-page set). This page covers: (1) LTTA 2017 s.72 substantive dwelling-suitability test with verbatim wording; (2) the post-Bewley narrowing line as Welsh tribunals are likely to follow it (Bewley, Hyman & Goodfellow, Mudan, MHB, Brown); (3) the properly-scoped RICS Building Survey evidence pack; (4) the strategic-choice framework between filing non-residential at outset and filing residential then reclaiming via TCMA 2016 s.41 amendment or s.78 overpayment claim. Three anonymised worked personas: derelict farmhouse (non-residential succeeds), unmodernised semi (non-residential fails), marginal-case chapel conversion (s.72(1)(a) limb (ii) finely balanced)."
 ---

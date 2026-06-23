@@ -47,8 +47,8 @@ faqs:
   - question: "What is the statutory review under TMA 1970 s.49 and when should I use it?"
     answer: "Statutory review is an HMRC internal review by a different officer than the original decision-maker. The appellant requests review within the 30-day appeal window; the request stops the FTT clock; HMRC issues a review conclusion notice (typically within 45 days for straightforward cases); a fresh 30-day FTT appeal window opens on receipt of the conclusion. Statutory review is typically the right first step where the underlying facts are evidentiary (parental-leave gap, agent failure with reasonable-steps angle, regulatory event); the route is cheaper, faster than litigation and creates a fresh appeal window if needed. Direct FTT appeal is right where HMRC has already engaged at quality and refused (post-OTM-letter penalty review already conducted internally)."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "Practical-appeal-mechanics ATED page (MegaWave 3 Bucket B, batch M3-B-B2). Two-routes-do-not-collapse framing distinct from B9 broader penalties-and-appeals catalogue and B16 upstream-error-prevention. Anchors: FA 2013 s.159 and s.161 ATED return obligation; FA 2009 Sch 55 paras 1, 4, 5, 6 escalator + Table items 11A and 11B + paras 17 and 18 disclosure mitigation + para 22 FTT supervisory jurisdiction + para 23 reasonable excuse verbatim + para 16 special reduction verbatim; TMA 1970 ss.31, 31A, 49; Perrin v HMRC [2018] UKUT 156 (TCC) four-stage framework; Martland v HMRC [2018] UKUT 178 (TCC) three-stage late-appeal framework. House positions §2 (ATED bands 2026/27), §18 + §18.4 + §18.7, §27 + §27.4 + §27.5 + §27.9, §16. Anonymised personas (Topaz Holdings Limited, Cordoba Holdings Cayman Limited, Acer Property Partners LLP). 4 worked examples, 14 FAQs, 4 inline asides."
 ---

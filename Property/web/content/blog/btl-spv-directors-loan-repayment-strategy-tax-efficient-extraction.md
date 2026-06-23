@@ -47,8 +47,8 @@ faqs:
   - question: "How do I plan the next refinance with a sensible DLA shape in mind?"
     answer: "Lenders read the company accounts in detail and pay attention to the DLA shape. A large credit DLA is generally neutral or positive for refinance applications; it shows the director is a creditor of the company and that the company has capital backing beyond the share capital. A material overdrawn DLA at the balance sheet date reduces lender appetite because it treats the director's personal debt as a charge on company assets and reduces the apparent net asset position. The practical planning step is to time the year-end so that the DLA is at its strongest credit position when accounts are filed, even if the balance moves through the year. Some specialist BTL lenders price modestly more aggressively when the DLA is in credit; the difference is not large but matters across a five-year mortgage."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Sequence-led complement to our director's loan account mechanics page. Frames DLA repayment as an order-of-strands extraction problem across ten to fifteen years after a section 162 incorporation, models the exhaustion trap with a worked timeline, and covers the replenishment levers that keep the credit balance alive."
 ---

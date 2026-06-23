@@ -39,8 +39,8 @@ faqs:
   - question: "What is the typical FIC timeline from first conversation to incorporation?"
     answer: "For a family with a clear plan and a co-operating adviser, the legal and tax work typically takes between two and six months from first meeting to incorporation and asset transfer. Bespoke articles drafting and shareholder agreement negotiation account for most of that window, alongside the CGT and SDLT modelling on the property transfer. The post-incorporation phase, including funding the FIC, board governance setup, and the first dividend cycle, runs over the following twelve months. Identity-verification under ECCTA adds a per-person step at the front, typically a few hours of effort but blocking director appointment until complete."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), CTA"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B1: definitional on-ramp to the FIC topic. Sits upstream of the decision pillar (family-investment-company-property-worth-it) and the mechanics reference (fic-complete-guide-property-wealth-transfer). Pawson investment line + Section 165 holdover unavailability + CIHC carve-out + ECCTA identity verification anchored. Rates rate-by-referenced per §21.4 / §16.27 with the locked 19/25 percent CT band, the 10.75/35.75/39.35 percent dividend stack, the £500 dividend allowance, and the 35.75 percent Section 455 rate per FA 2026 s.4(1)(b)."
 ---

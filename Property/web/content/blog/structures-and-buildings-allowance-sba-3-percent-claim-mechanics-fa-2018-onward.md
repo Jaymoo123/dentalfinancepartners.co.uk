@@ -47,8 +47,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "SBA depth page for CAA 2001 Bucket C, walking Part 2A end-to-end with the 29 October 2018 construction-start gate, the 3% straight-line / 33⅓ year mechanic (Freeport 10% over 10 years), the s.270CF residential exclusion (NOT s.270BG, which is the land-acquisition exclusion), the s.270IA allowance statement requirement, and the no-balancing-event-on-disposal treatment with TCGA 1992 s.37B add-back framing. Anchored on §25.4 of locked house positions. Statutory citations verified against legislation.gov.uk on 2026-05-23."
 ---

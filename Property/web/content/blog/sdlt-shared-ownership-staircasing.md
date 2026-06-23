@@ -41,8 +41,8 @@ faqs:
   - question: "Should I make the market value election or pay in stages?"
     answer: "The election usually wins where the buyer expects to staircase to 100% relatively quickly, the property is expected to appreciate materially, and the buyer can fund the upfront SDLT on the full market value. Pay-in-stages usually wins where the buyer is uncertain whether they will staircase past 80%, where the initial share is small relative to the dwelling value, where cash flow is tight at completion, or where the property is unlikely to appreciate dramatically. We model both routes on the buyer's expected staircasing pattern before completion; the election is irrevocable, so the modelling has to be done up front, not after."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Decision-framework page for shared-ownership buyers facing the market-value-election vs pay-in-stages choice at completion. The election is irrevocable, so the page is structured around the decision moment."
 ---

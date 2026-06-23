@@ -43,8 +43,8 @@ faqs:
   - question: "Where do I find the option-to-tax framework, the partial-exemption mechanic, and the mixed-use apportionment?"
     answer: "Three companion pages. The option-to-tax framework on the commercial elements of mixed-use buildings (where the option determines the VAT status of non-self-storage portions) is the C1 PILLAR. The partial-exemption mechanic on residual costs (where mixed standard-rated, exempt, and zero-rated supplies require apportionment on common overheads) is on our standard-method (Wave 5) and special-method (C5) pages. The mixed-use apportionment between residential, commercial, and self-storage elements is on our mixed-use companion page. The Wave 5 mechanics page covers the option-to-tax operational mechanics; this page is the dedicated self-storage carve-out depth."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket C C8, self-storage standard-rated carve-out at VATA Sch 9 Gr 1 para (ka). Verbatim text 'the grant of facilities for the self storage of goods;' verified against legislation.gov.uk 2026-05-25; FA 2012 Sch 26 paras 5(2)+7(1) inserting cite verified; Note (15C) three exceptions verified. Halford Industrial Estate £320,000 multi-let worked example illustrates apportionment between paragraph (ka) standard-rated self-storage tenant and option-rated conventional commercial tenants. RR Donnelley ECJ background contextualises the FA 2012 reform. Anti-templating: varies from C1-C7 by tightly focused single-paragraph subject matter with industry-specific consumer-impact framing rather than abstract option-to-tax architectural framing."
 ---

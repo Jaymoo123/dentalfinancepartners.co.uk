@@ -43,8 +43,8 @@ faqs:
   - question: "Should I let my accountant pick the software for me?"
     answer: "If you are accountant-led (you authorise the accountant via the Agent Services Account and they file on your behalf), having them choose the software that fits their workflow is usually sensible; accountants operating at scale standardise on one or two products they know well, and the marginal cost to you is normally lower than insisting on your own choice. If you are self-filing, your accountant's preferred product may still be a starting point, but you also weigh the user-experience side of working in the product day-to-day. Either way, the product still has to be on the HMRC compatible-software register; the accountant's preference does not override that."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 net-new (Session B, MTD ITSA operational details). Decision-framework page, NOT a product listicle. Cites HMRC's compatible-software register as the authoritative product universe; this page deliberately does not recommend specific products. Differentiates from existing 'best of' content via explicit framing in the opening and the cross-links section."
 ---

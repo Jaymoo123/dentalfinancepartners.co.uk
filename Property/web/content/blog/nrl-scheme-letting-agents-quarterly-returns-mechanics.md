@@ -42,7 +42,7 @@ faqs:
     answer: "Yes, four come up most often. First, where the landlord is a UK national who has emigrated; nationality is irrelevant to NRL applicability, only residence matters. Second, where the property is leased under a corporate let to an employer; if the rent flows to a non-resident landlord, the scheme still applies regardless of the tenant identity. Third, where you collect rent for only part of a quarter (the duty applies to that part). Fourth, where the landlord becomes non-resident part-way through a tenancy (you pick up the duty from the date of non-residence, not waiting for the next tax year)."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against SI 1995/2902 (Taxation of Income from Land (Non-residents) Regulations 1995), HMRC Property Income Manual PIM4800 to PIM4870 (the agent-and-tenant chain of the NRL scheme), gov.uk non-resident landlord scheme guidance, and the standard agent-side forms (NRL2 quarterly return, NRL6 annual certificate). Verified 2026-05-22 against gov.uk and the SI on legislation.gov.uk."
 ---

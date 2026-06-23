@@ -47,8 +47,8 @@ faqs:
   - question: "Do unmarried co-owners need a declaration of trust?"
     answer: "Yes, normally more important than for spouses. Unmarried co-owners have no Form 17 route and no statutory 50/50 default; income tax follows actual beneficial ownership from the start. The deed of trust between unmarried co-owners is therefore the primary evidence of the income split and the primary protection on later disputes about ownership shares. The execution discipline is the same as for spouses; the absence of TCGA 1992 s.58 means a transfer of beneficial interest between unmarried co-owners is a market-value CGT disposal."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Declaration-of-trust document-mechanic page. Centres the LPA 1925 s.53(1)(b) writing requirement, the four content elements the deed needs to record, the FA 2003 Sch 4 para 8 SDLT assumed-debt trap (Patel worked example), and the order of operations linking the deed to Form 17. Forward-links to C1 (Form 17 mechanic) and C2 (JT vs TIC structural choice)."
 ---

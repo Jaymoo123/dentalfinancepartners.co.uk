@@ -47,8 +47,8 @@ faqs:
   - question: "What proof should civil partners keep for HMRC of their civil-partnership status?"
     answer: "The civil partnership certificate is the primary document; a copy in the property file is sufficient. For overseas civil partnerships, the foreign-issued certificate plus a translation into English is the practical standard. HMRC does not require ongoing proof at each tax-year return; the certificate is requested only on enquiry into a return that depends on civil-partnership status (for example a Form 17 election, an s.58 transfer, an s.18 IHT exemption claim, or a higher-rate SDLT aggregation challenge)."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Civil-partner-cohort applied page covering the equality-of-treatment rule for UK property tax under the Civil Partnership Act 2004 (effective 5 December 2005 in England, Wales, and Northern Ireland), threaded across ITA 2007 s.836 / s.837 (income tax), TCGA 1992 s.58 + Finance (No. 2) Act 2023 (CGT, including the 6 April 2023 extension to three tax years post-separation), IHTA 1984 s.18 (spousal exemption), FA 2003 Sch 4ZA (SDLT joint-buyer aggregation), and CPA 2004 Sch 20 (overseas civil-partnership recognition). Forward-links to the canonical Form 17 mechanic page for the depth read on the form itself; covers persona-applied edge cases (dissolution, overseas partnerships, opposite-sex civil partnerships since 31 December 2019)."
 ---

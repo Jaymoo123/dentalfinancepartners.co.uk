@@ -47,8 +47,8 @@ faqs:
   - question: "Do I need to keep the FIC's governance discipline tight even after I retire from active management?"
     answer: "Yes, more important than during active years not less. The substance-over-form risk discussed in our <a href=\"/blog/incorporation-and-company-structures/fic-property-corporate-governance-board-meetings-resolutions-discipline\">FIC governance discipline page</a> escalates when the founder steps back from active management. Patterns to avoid: the founder treating the FIC bank account as a personal current account, dividend declarations slipping in cadence as the founder's involvement drops, board meetings reduced below the quarterly floor, statutory registers falling out of step with Companies House. The discipline serves two purposes during decumulation: it protects the income-strand tax treatment (each dividend declaration needs a contemporaneous minute and a distributable-reserves check), and it preserves the settlements-legislation defence for any spouse or adult-child dividend allocations. A retired founder is the highest substance-over-form risk profile in a FIC's life; the operational rhythm should not relax."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 Session A FIC sub-thread, retirement-income mechanic. Three FIC-side income strands (DLA credit-balance runway, preference share coupon, preference share redemption with split capital/distribution tax treatment) layered with state pension and SIPP drawdown across the decumulation horizon. Four founder-age sequencing scenarios (65 / 70 / 75 / 85) walk the strand mix and the marginal-rate cliffs. Distinct from the IHT value-freeze framing (separate page) and the share-gift PET mechanic (separate page); this page is income now during the founder's life."
 ---

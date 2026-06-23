@@ -39,8 +39,8 @@ faqs:
   - question: "How does this page differ from the let property campaign coverage?"
     answer: "The let property campaign pages are operational: what the LPC route is, how to use it, what the penalty discount looks like. This page is the broader professional-conduct picture: what the AML and MLR 2017 and POCA cordon looks like around your property accountant, why the s.330 reporting reflex exists, and how the LPC fits as the voluntary route that pre-empts the criminal track. Read both together: this page for the framework, the LPC pages for the disclosure mechanics."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), AML-supervised tax practice"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "MW3 Bucket C C1: news-led professional-conduct briefing on the AML cordon around UK property accountants. Fraud Act 2006 s.2 + POCA 2002 ss.327-330, 333A + MLR 2017 (SI 2017/692) reg 8(2)(c)+(f), reg 18, reg 19, regs 27-28, reg 33. POCA s.330 re-verified at write 2026-05-28: the 2 February 2026 commencement from the Public Authorities (Fraud, Error and Recovery) Act 2025 inserted a narrow s.330(7E) defence in the social-security-eligibility context; the core s.330(1) reporting offence is unaffected for property-accountant-sector practice. ICAEW supervision hub URLs both 404 at Stage 2 (Bug #3 pattern recurrence); CCAB AMLGAS and HMRC accountancy-sector guidance used as practitioner anchors per Stage 2 substitution. R v Da Silva 'more than mere speculation' threshold + R v Saik actual-suspicion line used to anchor the s.330 reflex paragraph without naming specific defendants. F-100 §36 candidate (professional-conduct + POCA + MLR 2017 floor) raised informationally at Stage 1; not blocking. Trust-but-verify close framing held: properly supervised accountant as the client-side defence, not an obstacle. No new HP-lock raised at RUN."
 ---

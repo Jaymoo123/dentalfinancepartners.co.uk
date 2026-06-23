@@ -40,8 +40,8 @@ faqs:
   - question: "Does the £20,000 phase 3 catch a landlord at exactly £20,000?"
     answer: "The statutory wording catches qualifying income 'above' the threshold, so HMRC's operational interpretation is that exactly £20,000 sits below the cliff and you are not in scope. The drafting matters if your gross rental is predictable and sits near the threshold: £20,001 is in; £20,000 is out. If you are managing close to the cliff, keep contemporaneous records that support your gross-rental figure, because HMRC's review of the qualifying-income figure at the determining-return stage will focus on the exact arithmetic."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

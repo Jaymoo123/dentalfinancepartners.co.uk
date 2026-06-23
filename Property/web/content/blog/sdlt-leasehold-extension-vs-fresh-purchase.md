@@ -43,8 +43,8 @@ faqs:
   - question: "Does the SDLT paid on the extension feed into the CGT base cost when I later sell?"
     answer: "Yes. SDLT paid on the lease extension is part of the incidental cost of the extension and is added to the leaseholder's CGT base cost of the flat. On a future sale, the base cost is the original purchase price plus the extension premium plus the SDLT paid on the extension plus any allowable improvement expenditure. This reduces the future CGT gain. For a buy-to-let landlord, this is a real planning point: the SDLT is recoverable as part of the eventual capital gains tax calculation, not just a sunk cost."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Comparison page for leaseholders deciding between a lease extension and a fresh purchase. Covers the chargeable consideration calculation, the LRHUDA 1993 / LFRA 2024 statutory regime, the HRAD trap above £40,000, and a worked example."
 ---

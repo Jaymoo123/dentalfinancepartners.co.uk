@@ -40,8 +40,8 @@ faqs:
   - question: "Does the LPC route confer criminal-prosecution immunity?"
     answer: "No. LPC is a civil-resolution mechanism. Only the Contractual Disclosure Facility (CDF) under Code of Practice 9 confers criminal-prosecution immunity, and only for the conduct described in the formal admission, subject to honesty-and-completeness conditions. Where the calculator's behaviour self-assessment is deliberate-and-concealed and the underlying conduct involves substantial sums or active concealment over many years, the appropriate route is CoP9 / CDF with specialist tax-investigation counsel, not LPC. An LPC disclosure that crystallises deliberate-and-concealed conduct can give HMRC the evidential foundation for a parallel criminal investigation."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

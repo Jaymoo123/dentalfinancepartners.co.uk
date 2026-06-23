@@ -43,8 +43,8 @@ faqs:
   - question: "How does Welsh LTT higher-rates attribution differ from SDLT?"
     answer: "Two material divergences. First, minor-children attribution: SDLT FA 2003 Sch 4ZA para 12 directly attributes a minor child's dwelling to the parent for the SDLT additional-dwellings test; Welsh LTT Sch 5 has no equivalent provision, so direct attribution does not operate (indirect attribution via bare-trust beneficial ownership still operates where the parent is the actual beneficiary). Second, cohabitants: SDLT and Welsh LTT both restrict spouse aggregation to married or civil-partnered 'living together' couples, so unmarried cohabitants are not aggregated under either regime. Contrast Scottish LBTT, which under Sch 2A para 6 captures cohabitants for some Additional Dwelling Supplement purposes. Cross-border buyers should map the rules per jurisdiction rather than assuming identical treatment."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Four-attribution-pattern deep-cut on the Welsh LTT higher-rates regime under LTTA 2017 Sch 5. Pairs with the Wave 5 mechanics companion page (rate-and-bands landing). This page walks: (1) spouse and civil-partner aggregation under Sch 5 para 5(4) to (6) plus the 'living together' test; (2) the material divergence from SDLT on minor-children attribution (Welsh Sch 5 has no equivalent of FA 2003 Sch 4ZA para 12, verified at legislation.gov.uk 2026-05-26); (3) bare-trust beneficial-ownership attribution; (4) discretionary-settlement attribution where the beneficiary has a present interest in possession. The minor-children divergence is a NEW HP-LOCK CANDIDATE flagged via the brief; conductor to consider a central §23.X anchor for cross-jurisdictional attribution divergences."
 ---

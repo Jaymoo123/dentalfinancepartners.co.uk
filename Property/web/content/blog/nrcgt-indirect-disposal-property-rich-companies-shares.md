@@ -42,7 +42,7 @@ faqs:
     answer: "Indirect disposals by a non-resident during a period of temporary non-residence (5 years or less, with the 4-of-7 prior-residence condition met) are within NRCGT at the time of disposal AND are potentially within s.10A recapture on the return year. Section 10A would recapture the pre-2019-rebasing portion of the indirect-disposal gain on the return year, the same way it recaptures the pre-2015-rebasing portion of UK residential land direct disposals. The double-coverage by NRCGT (post-rebasing) plus s.10A (pre-rebasing) gives no overall extra exposure; it just routes the pre-rebasing portion through the return-year SA instead of the original disposal-year NRCGT return."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against TCGA 1992 s.1A + Schedule 1A (NRCGT charging provision and substantive rules, including indirect-disposal definitions and the 75% / 25% tests at Sch 1A paras 3, 4 and 7), TCGA 1992 Schedule 4AA (rebasing computational options for NRCGT including the 5 April 2019 default for indirect disposals), Finance Act 2019 (which rewrote the regime; the older TCGA 1992 ss.14B-14H structure introduced by FA 2015 was repealed by FA 2019 and substance carried forward to s.1A), HMRC Capital Gains Manual CG73920+ (operational guidance verified 2026-05-22), HMRC NRCGT 60-day reporting guidance, and the residential / non-residential rate alignment in Finance (No. 2) Act 2023 / Autumn Budget 2024. Verified 2026-05-22 against gov.uk and legislation.gov.uk."
 ---

@@ -45,8 +45,8 @@ faqs:
   - question: "How does the RNRB interact with property held in trust under a will?"
     answer: "Bare trusts and immediate post-death interest trusts under s.49A IHTA 1984 preserve the RNRB where the beneficiary is a direct lineal descendant: the property is treated as inherited by the beneficiary. Age-18-to-25 trusts under s.71D and bereaved minors' trusts under s.71A also preserve the RNRB. Discretionary trusts do not preserve the RNRB even where all the potential beneficiaries are direct descendants, because no one is closely inheriting on the deceased's death. The will architecture matters: a phrase such as \"to my children absolutely\" with a power to appoint into trust loses RNRB on the appointment; a fixed-interest trust to children that vests at 25 keeps it."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Section-8D-driven walkthrough of the RNRB taper for landlord estates, with three estate-tier worked examples, the downsizing addition mechanics under IHTA 1984 ss.8FA-8FE, transferable RNRB claims, and the April 2027 pension overlay."
 ---

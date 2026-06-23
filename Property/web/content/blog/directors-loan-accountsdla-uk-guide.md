@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from the property-specific DLA mechanics page?"
     answer: "The property-specific page covers DLA setup and operation in a property-LtdCo context; the BTL repayment-strategy page optimises repayment route for a BTL SPV; the bed-and-breakfast trap page covers the historic ss.464C/D anti-avoidance and now requires back-patching to reflect the FA 2025 omission. This page is the generic UK pillar and explainer: what is a DLA in both directions, the four statutory anchors (s.455, s.464A, s.453, the ITEPA beneficial-loan BIK framework), the HMRC official rate, the s.162 credit-balance origin. Reading sequence: this page for the generic mechanic; the specialist pages for the property-LtdCo applications. The pages cross-link."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Generic UK pillar / explainer for director's loan accounts. Symmetric coverage of credit and debit balance directions. Statutory anchors: CTA 2010 s.455 (35.75% from 6 April 2026, by-reference to ITA 2007 s.8(2)), s.464A (live anti-avoidance), s.453 (close-company benefits framework), ITEPA beneficial loans (3.75% HMRC official rate). Critical: ss.464C/D OMITTED by FA 2025 s.81(3)(b)-(4) from 30 October 2024; do not cite as live. Five worked examples."
 ---

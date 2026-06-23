@@ -47,8 +47,8 @@ faqs:
   - question: "What records does HMRC look at to confirm the dividend strand?"
     answer: "Three things. First, board minutes dated for each dividend declaration showing the class, rate per share, and total amount. Second, dividend vouchers issued to each shareholder for each declaration. Third, bank movement records showing the dividend paid from the company to the shareholder on or near the declaration date. The company must also have sufficient distributable reserves under CA 2006 s.830 at the moment of declaration; the management accounts (or filed accounts if more recent) are the evidence. HMRC's Company Taxation Manual at CTM15205 onwards covers the operational discipline. The two most common failures we see at enquiry are (a) board minutes dated retrospectively to support a Self Assessment filing, and (b) bank movements with no corresponding minute. Get the contemporaneous discipline right at the time of declaration."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from profits to net cash in the founder's pocket. Four profit-band worked examples (£30k, £50k, £100k, £125k) with the single-director Employment-Allowance exclusion and the CIHC carve-out flagged. Re-verify every figure against gov.uk before any client decision; the framework is locked, the rates are commodity."
 ---

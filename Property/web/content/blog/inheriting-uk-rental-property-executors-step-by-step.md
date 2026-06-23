@@ -45,8 +45,8 @@ faqs:
   - question: "How does the death-uplift interact with the £1m BPR or APR cap arriving in April 2026?"
     answer: "For pure buy-to-let portfolios, not at all: standard rental property is investment, not trading, and does not qualify for BPR (Pawson v HMRC [2013] UKUT 050 (TCC) confirms this). The April 2026 cap is therefore irrelevant for typical landlord estates. It does affect mixed estates where the deceased ran a serviced-accommodation operation with substantial services (the trading-bar end of the Pawson spectrum), or where the rental portfolio sits alongside an active farm with APR exposure. In those mixed cases the £1m allowance is shared across BPR and APR and the executor will need a separate Schedule IHT413 (BPR) and IHT414 (APR) on the IHT400."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Process-led companion to the CGT on inherited rental property calculation guide: a step-by-step walk through what executors actually do with a rental property, from probate valuation through PR sale or assent and NRL handover."
 ---

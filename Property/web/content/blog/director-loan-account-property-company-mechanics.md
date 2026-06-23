@@ -45,8 +45,8 @@ faqs:
   - question: "What records does my accountant need to reconcile the DLA at year-end?"
     answer: "Everything that moved between you and the company in the period. The standard set is: every personal payment made on the company's behalf with receipts (and the business purpose noted), every company payment made on your behalf (including expense reimbursements, BACS transfers, cards used for personal items even briefly), all formally declared salary and dividend amounts whether paid or not, any pension contributions made by the company on your behalf, opening DLA balance from prior-year accounts, and bank statements covering the full period. A clean DLA reconciliation usually takes a couple of hours; a messy one with twelve months of mixed-purpose card use can take a week and routinely surfaces unexpected balances on either side of the ledger."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Mechanics-focused complement to our higher-level director loan and incorporation guides, written to make the section 455 timeline, the £10,000 BIK rule, and a real £200,000 credit-balance extraction example easy to follow."
 ---

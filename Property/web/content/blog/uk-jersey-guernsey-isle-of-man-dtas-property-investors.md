@@ -45,8 +45,8 @@ faqs:
   - question: "Does the cascade tie-breaker (Article 4) apply to UK-Crown Dependency dual residents?"
     answer: "Yes. Article 4 of each 2018 treaty mirrors the OECD Model: where an individual is resident under both UK domestic law (Statutory Residence Test, FA 2013 Sch 45) and Crown Dependency domestic law, the cascade applies: permanent home, centre of vital interests, habitual abode, nationality, mutual agreement procedure. Dual UK-Jersey, UK-Guernsey, or UK-Isle of Man residence cases are structurally common because all three Crown Dependencies have lower domestic residence-test thresholds than the UK SRT, and many UK landlords with Crown Dependency homes or families end up dual-resident under both sets of domestic rules. The cascade then determines treaty residence and which state taxes worldwide income; UK source taxation under Article 6 and Article 13 is unchanged regardless of cascade outcome. See our generic Article 4 tie-breaker page for the cascade mechanics."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Consolidated Crown Dependencies page covering all three 2018 UK-CD treaties (Jersey, Guernsey, Isle of Man). Differentiator vs other Wave 2 DTA pages: this is the ONLY consolidated-multi-jurisdiction page (B2-B7 are single-bilateral). Anti-templating: structured around the historic shelter and its end (three policy changes converging: Sch A1 from 2017, Art 13(4) from 2018, residence-based IHT from 2025) rather than around the treaty articles. Worked example: Andrew, UK-national-in-Jersey-since-2018, four Manchester BTL flats in a Jersey company, deciding between collapse, maintain, or restructure. Note on house position §16.5: the brief flagged a potential 2016 vs 2018 IoM discrepancy; verified against gov.uk and house positions §16.5 actually says 'modern (2018+)' which is correct. No house-position-conflict flag needed."
 ---

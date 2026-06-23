@@ -42,7 +42,7 @@ faqs:
     answer: "On the SA108 capital gains pages for the tax year of return, with the section 10A deemed accrual entered alongside any ordinary year-of-return disposals. The return must be filed by 31 January following the year of return. There is no separate 60-day return for the section 10A deemed accrual because the deeming is the trigger, not an actual disposal at that point; however, individual UK land disposals during the non-residence period will have already triggered the 60-day NRCGT return at the time of each disposal. Keep contemporary records of overseas disposals during non-residence for at least six years; the section 10A enquiry window runs from the year of return, not the year of the underlying disposal."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against TCGA 1992 section 10A (substituted by Finance Act 2019), HMRC Capital Gains Manual CG26500 to CG26770 (the s.10A chain), HMRC CG26540 (the 5-year wording, verified 2026-05-22), section 812 Income Tax Act 2007 (the income parallel), and the Finance Act 2019 NRCGT regime (TCGA 1992 s.1A + Schedules 1A / 1B / 4AA) for the interaction analysis."
 ---

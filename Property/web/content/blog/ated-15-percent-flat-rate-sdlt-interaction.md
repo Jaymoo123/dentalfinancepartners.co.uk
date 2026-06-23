@@ -43,8 +43,8 @@ faqs:
   - question: "What is the practical sequence for a company buying a London BTL above £500k?"
     answer: "Step 1: at exchange, model the SDLT both ways (with and without the relief) so the deposit and completion funds are correct. Step 2: at completion, file SDLT1 within 14 days claiming Property Rental Business Relief, pay SDLT at ordinary residential rates plus the 5% additional dwellings surcharge. Step 3: by the next 30 April, file the ATED return (or Relief Declaration Return) claiming the same relief annually. Step 4: keep tenancy and marketing records for at least three years to defend the SDLT position and six years to defend the ATED position."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus is the cross-tax interaction between the 15% flat-rate SDLT under Schedule 4A FA 2003 and the annual ATED charge under FA 2013 Part 3."
 ---

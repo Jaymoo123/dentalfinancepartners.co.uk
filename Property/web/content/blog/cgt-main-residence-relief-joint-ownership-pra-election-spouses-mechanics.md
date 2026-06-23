@@ -47,8 +47,8 @@ faqs:
   - question: "What CGT rate applies to a non-PRR-relieved gain on a jointly owned residential property?"
     answer: "For disposals in 2026/27 residential property gains are taxed at 18% on gains within the basic-rate band and 24% above it (the higher rate was reduced from 28% to 24% with effect from 6 April 2024). Each of you reports your share of the gain on your own self-assessment return; each of you gets your own annual exempt amount (£3,000 for 2026/27) and is taxed by reference to your own basic-rate band capacity in the year of disposal."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "PRR-and-joint-ownership applied page covering the per-owner relief computation under TCGA 1992 s.222/s.223, the s.222(5) main-residence nomination election (including the 2-year window and the joint-signing requirement under s.222(5)(b)), the s.222(6) one-residence-per-couple rule for spouses and civil partners, the Form 17 / PRR independence (PRR follows actual residence not beneficial share), the s.58 no-gain-no-loss route for shifting base cost before disposal, the s.225B post-separation extension widened by Finance (No. 2) Act 2023, the half-hectare permitted area under s.222(2), and the unmarried co-owner contrast (each can have own main residence). Worked example: Hartley + Singh £950k joint disposal of former main residence with 5-year letting interlude."
 ---

@@ -37,8 +37,8 @@ faqs:
     answer: "For surrenders: formalise by deed to obtain certainty on the SDLT effective date and consideration; calculate the tenant's CGT under TCGA 1992 s.22 with Sch 8 wasting-asset depreciation if the residual term was 50 years or less; verify whether a reverse premium is being paid and confirm its SDLT treatment on both sides. For variations: classify the variation as trigger or non-trigger under surrender-and-regrant; if trigger, apply the full new-lease SDLT analysis with para 9 overlap-relief; if non-trigger, apply paras 13 or 15A as appropriate; check rent-review carve-outs under para 13(2) + para 7(4A); cross-check HRAD under Schedule 4ZA for residential dwellings. For deemed surrender: document the parties' intentions and chronology to avoid disputes about effective date."
   - question: "Where does the IHT s.142 deed of variation belong if it is not on this page?"
     answer: "On the existing site page on deed of variation property estate redirecting inheritance, which covers the IHTA 1984 s.142 framework: a written variation by the deceased's beneficiaries within two years of death redirecting the estate to different beneficiaries with retrospective effect for IHT and CGT. The two regimes share terminology but nothing else. Lease deeds of variation alter the terms of a continuing lease; IHT deeds of variation rewrite the destination of a deceased's estate. The disambiguation matters because SERP traffic on 'deed of variation' splits across the two topics."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

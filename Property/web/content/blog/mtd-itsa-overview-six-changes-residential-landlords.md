@@ -45,8 +45,8 @@ faqs:
   - question: "Where do I go for the full process detail on each change?"
     answer: "The MTD property income 2026 complete guide is the broadest starting point. The quarterly-reporting workflow is in the MTD quarterly reporting guide; software comparisons are on the best MTD software for landlords page and the free-vs-paid options comparison; record-keeping detail is on the digital record-keeping requirements page; threshold and exemptions are on the threshold and exemptions guide; penalties detail is on the MTD penalties page."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Bucket pillar covering the six headline changes for residential landlords. Strict scope discipline against CANNIBAL-WATCH from Stage 1 (mtd-quarterly-deadlines-2026-2027-landlords): each change carries an overview-level summary plus cross-link to the operational deep-dive, no process detail on quarterly submission or other changes."
 ---

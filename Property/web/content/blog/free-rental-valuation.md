@@ -33,8 +33,8 @@ faqs:
     answer: "No. AVMs (Zoopla, Rightmove, OnTheMarket estimates) are statistical models, not RICS Red Book valuations. They are useful for benchmarking but not defensible for tax, lender, or court purposes. HMRC's District Valuer will dismiss an AVM number in any meaningful challenge. A surveyor's signed Red Book report is the operative standard."
   - question: "What if the letting agent's free appraisal differs materially from the Red Book valuation?"
     answer: "The Red Book valuation prevails for tax and compliance purposes. The free appraisal may be commercially optimistic (the agent hopes to win the instruction) or commercially cautious (the agent hopes to set realistic tenant expectations). The Red Book valuation is signed by a chartered surveyor under professional indemnity insurance and follows the prescribed methodology. Where the two diverge, the Red Book number is the defensible position."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

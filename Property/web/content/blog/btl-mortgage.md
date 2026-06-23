@@ -36,8 +36,8 @@ faqs:
 - question: "How is profit on selling a BTL property taxed?"
   answer: "A gain on selling a residential investment property is a capital gain, charged at 18% within your basic-rate band and 24% above it (the 24% higher residential rate introduced by Finance (No.2) Act 2024). You deduct the annual exempt amount, GBP 3,000, before tax. The mortgage balance does not reduce the gain: CGT is on the rise in value, not on your equity. A UK residential property gain must be reported and the tax paid within 60 days of completion."
 dateModified: '2026-05-31'
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-31'
 sourcesVerifiedAt: '2026-05-31'
 sourceDomains:

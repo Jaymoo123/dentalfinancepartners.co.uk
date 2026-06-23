@@ -48,7 +48,7 @@ faqs:
     answer: "Yes. After three consecutive sub-threshold years a mandated taxpayer can choose to remain in MTD voluntarily rather than notify exit. The reasons to do so are usually practical: existing software, agent workflow, faster oversight of trading position, intention to return above threshold soon. The voluntary cycle is identical to the mandated cycle (same quarterly deadlines, same EoPS, same penalty regime), so the choice is essentially about whether the recurring software cost is worth the operational continuity."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK property tax specialists, ATT / CTA qualified"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Verified against gov.uk MTD ITSA collection and house position §19.5 on 2026-05-22. Three-consecutive-tax-year exit mechanic per HMRC published policy. Penalty interaction reflects Spring Statement 2025 doubled regime (3% / 3% / 10% at days 15 / 30 / 31) for MTD ITSA cohorts."
 ---

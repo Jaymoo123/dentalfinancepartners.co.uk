@@ -47,8 +47,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Acquisition-side fixtures-regime depth page for CAA 2001 Bucket C, mirror to C2's disposal-side mechanic. Walks the FA 2012 Sch 10 pooling requirement at s.187A and the fixed-value requirement at s.198, the 2-year deadline at s.201, the s.199 tribunal apportionment fallback, the s.198(3) elected-amount ceiling, the 5-step buyer due-diligence checklist, and two worked acquisitions (clean £1.2m unit with £180k fixtures claimed in full; failed £950k unit where seller never pooled and £75k buyer claim is lost forever). Cross-references C2 (seller-side), C4 (AIA allocation), and C5 (full-expensing unused-and-not-second-hand test). Statutory citations verified against legislation.gov.uk on 2026-05-23."
 ---

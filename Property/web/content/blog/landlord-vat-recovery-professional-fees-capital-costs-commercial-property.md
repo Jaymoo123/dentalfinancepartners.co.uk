@@ -43,8 +43,8 @@ faqs:
   - question: "Where do I find the option-to-tax framework, partial-exemption special method, and registration threshold?"
     answer: "Four companion pages. The option-to-tax framework (the Step 1 enabler determining whether the property is in a taxable-supply state) is the C1 PILLAR. The partial-exemption special method (the Step 2 sub-routine when costs are residual on mixed portfolios) is the C5 page; the standard method is on the Wave 5 companion. The registration threshold (the Step 3 gating condition; must be registered to claim) is the C9 page. The pre-registration input-tax recovery window (relevant where the landlord is registering after incurring acquisition VAT) is the Wave 5 pre-registration page. This page is the integrated three-step framework that ties the cluster together."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket C C10, landlord input-tax recovery framework (the closing pick in Bucket C, sibling to C5 in the recovery-mechanics sub-cluster). Three-step framework (Step 1 taxable-supply state per C1; Step 2 direct vs residual per C5; Step 3 4-year claim window per reg 29). Lifecycle professional-fee categorisation (acquisition, capital improvement, operating period). Pre-opt fee trap + CGS overlay + 4-year reg 29 missed-claim catch-up. Hazelmere Investments £1,080,000 total recovery worked example varies persona from C1 (Galloway portfolio REE) / C2 (Whitford clawback) / C3 (Pemberton TOGC failure) / C6 (Brentwood zero-rated sale) / C9 (Stafford group registration). Form-numbers and statutory cites verified per F-5 table; framework references s.24/s.26/reg 29 architecture verified at write time."
 ---

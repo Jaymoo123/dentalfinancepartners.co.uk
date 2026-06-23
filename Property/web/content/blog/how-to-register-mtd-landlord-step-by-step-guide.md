@@ -13,8 +13,8 @@ h1: "How to Register for Making Tax Digital as a Landlord: The 2026 Sign-Up Walk
 summary: "From 6 April 2026 landlords above the qualifying-income threshold move to Making Tax Digital for Income Tax. This walkthrough covers the real HMRC sign-up flow (a single self-service step using your existing Self Assessment login), what to have ready first, how joint owners and accountants sign up, and the penalties for getting it wrong. No menu-path myths, no postal wait."
 schema: ""
 dateModified: "2026-05-31"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
 howToSteps:
   - name: "Confirm you are over the qualifying-income threshold"

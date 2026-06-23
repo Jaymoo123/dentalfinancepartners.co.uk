@@ -43,8 +43,8 @@ sourceDomains:
   - legislation.gov.uk
   - gov.uk
   - bailii.org
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "HMO and multi-let common-parts depth page for CAA 2001 Bucket C. Anchors on CAA 2001 s.35 (dwelling-house restriction), HMRC CA11520 (HMRC manual view that an HMO is usually a single dwelling-house), Hora Tevfik v HMRC (FTT 2019, TC07129; narrow common-parts carve-out confirmed in principle but claim failed for apportionment evidence), s.33A (integral features special-rate 6 per cent), s.51E + s.51G (associated-companies single AIA), Building Safety Act 2022 fire-safety capital programme. Worked 8-flat block of flats refurbishment with £62,500 common-parts spend split between main-pool, special-rate pool and AIA. Page corrects the popular misframing that HMO shared kitchens, shared bathrooms and shared living rooms count as common parts; HMRC's manual view (CA11520) and the Tevfik decision both treat those shared rooms as within the single dwelling-house. The true common-parts carve-out is narrower than that and is the working scope for purpose-built blocks of flats with self-contained units. Statutory citations verified against legislation.gov.uk on 2026-05-23."
 ---

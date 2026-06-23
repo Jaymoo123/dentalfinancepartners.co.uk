@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from the salary-vs-dividends analysis page?"
     answer: "That page is the director-side extraction-route comparison: it walks through whether to extract retained earnings as salary, dividend, or director's loan repayment, with worked numbers across rate bands and four profit levels. This page is the shareholder-side rights, tax, and governance primer: who has what entitlements, how dividends received are taxed, what happens on a share gift or death, and what the legal architecture is for differential allocations between family members. The two pages are complementary: the director-side page is about HOW MUCH to extract; this page is about who has rights to extract and how those rights are configured at IN01 and articles stage. Read both for a complete view."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "The shareholder-side primer for UK property companies. Covers legal rights under CA 2006, dividend tax 2026/27 (10.75/35.75/39.35%), alphabet shares and Jones v Garnett settlements legislation, share gift mechanics for spouse vs adult vs minor child, CGT on disposal (s.17 deemed MV, no s.165 holdover for investment companies), and IHT on death (Pawson BPR-fail). Five worked scenarios. Sibling to director-side extraction pages."
 ---

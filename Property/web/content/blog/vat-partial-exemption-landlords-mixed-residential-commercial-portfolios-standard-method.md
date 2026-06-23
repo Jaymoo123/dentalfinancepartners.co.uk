@@ -38,8 +38,8 @@ faqs:
   - question: "What is the biggest partial-exemption mistake landlords make?"
     answer: "Assuming that exempt rental income is irrelevant if the property has been opted to tax. The exempt residential element of the portfolio still drives the partial-exemption calculation on overhead and central-administration input VAT, regardless of how many commercial properties have been opted. A landlord with a £200,000 residential rent stream and a £400,000 opted commercial rent stream has roughly two-thirds residual recovery on overheads, not 100%. The second-most-common mistake is failing to perform the annual adjustment at the longer-period end; the quarterly figures are provisional and only the annual figure is final."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A operational mechanic. Partial exemption is the period-by-period allocation regime that follows from any opt-to-tax in a mixed portfolio. Sits beside A1 (OTT election) and A2 (CGS adjustment) in the VAT-on-property bundle. Standard-method, de-minimis, and annual-adjustment mechanics covered to operational depth; special-method route signposted but not modelled in detail."
 ---

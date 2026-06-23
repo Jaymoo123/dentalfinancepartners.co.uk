@@ -47,8 +47,8 @@ faqs:
   - question: "We discovered a clawback in a prior chargeable period when reviewing files this year. What is the cleanest disclosure route?"
     answer: "An unprompted voluntary disclosure letter to HMRC's ATED Helpline, accompanied by the amended return calculation, supporting evidence, and a proposed penalty position. Unprompted disclosure within 12 months of the original deadline attracts the lowest penalty range; beyond 12 months, the case sits in unprompted-disclosure-beyond-12-months which still attracts a materially lower penalty than HMRC-prompted disclosure. Pay the underlying tax with the disclosure where possible. The <a href=\"/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics\">penalty cascade guide</a> covers the prompted-vs-unprompted bands."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Clawback mechanics deep-dive. Sits alongside the claim-mechanics guide (`ated-rental-property-relief-mechanics`) which covers how relief is claimed; this page covers how relief is lost. Cross-link bilaterally for completeness."
 ---

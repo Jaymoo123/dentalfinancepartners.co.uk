@@ -40,8 +40,8 @@ faqs:
   - question: "Where should I look up the operative HMRC view on section 165 and section 260?"
     answer: "HMRC's Capital Gains Manual CG66880 onwards covers hold-over relief in detail (section 165 and section 260 application, the trade-versus-investment line, the agricultural-property extension, the settlor-interested-trust exclusion). The Enquiry Manual EM3270 onwards governs the post-nudge enquiry path. The Compliance Handbook CH80000 onwards covers Schedule 24 mitigation mechanics. These are the live HMRC operational documents the response letter should reference."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

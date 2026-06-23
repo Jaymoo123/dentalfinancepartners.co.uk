@@ -14,8 +14,8 @@ image: ""
 h1: "Property Management Accounting Services for UK Landlords"
 summary: "Property management accounting services cover the financial and tax work that a rental portfolio generates: property bookkeeping, Section 24 finance-cost computations, the MTD for Income Tax quarterly cycle, capital gains tax on disposals, director loan and SPV mechanics for company-held property, and the incorporation decision. This guide sets out what each service line actually involves, where landlords most often lose money, and how the work changes as a portfolio scales from one property to ten."
 schema: ''
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
 dateModified: "2026-06-01"
 faqs:

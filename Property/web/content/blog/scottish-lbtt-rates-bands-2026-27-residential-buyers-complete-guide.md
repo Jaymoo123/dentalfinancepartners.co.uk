@@ -47,8 +47,8 @@ faqs:
   - question: "Where does this page sit alongside other Scottish LBTT pages?"
     answer: "This is the main Scottish LBTT residential rates guide. Related Scottish topics go deeper on the Additional Dwelling Supplement at 8% (for second-home buyers), the £175,000 first-time buyer relief, the corporate-buyer route (where Scotland diverges from SDLT's 15% flat rate), and bare-trust acquisition relief for corporate restructuring. If your purchase is elsewhere, separate guides cover Welsh LTT and SDLT for England and Northern Ireland. On income tax, remember that Scottish income tax is partially devolved under the Scotland Act 2016: the UK-wide property income tax framework applies, but if you are Scottish-resident you pay at Scottish income tax rates that differ from the rest of UK."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Scottish LBTT 2026/27 main residential rates pillar. Five-band table (0/2/5/10/12% with £145k nil) confirmed frozen by Scottish Budget 2026/27. Three positive Scottish-specific structural points lead: the £175k FTB relief with no upper value cap (different architecture from England's £500k withdrawal), the absence of any non-resident surcharge (Scotland aligned with Wales here), and the 30-day return clock under LBTT(S)A 2013 s.29 (more generous than the 14-day SDLT clock). Three worked examples use Scottish personas (Macleod, Stewart, Sinclair) and Scottish geography (Edinburgh, Aberdeen, Glasgow West End). Cross-jurisdictional comparison table differs from B1's by cutting on additional-dwelling-charge architecture (Welsh standalone-band vs Scottish flat-on-total vs English flat-on-stack)."
 ---

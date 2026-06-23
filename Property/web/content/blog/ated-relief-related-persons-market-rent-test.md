@@ -47,8 +47,8 @@ faqs:
   - question: "Is there any restructure that puts a family-member-occupied dwelling outside ATED?"
     answer: "Yes, the dis-envelope. Transferring the dwelling out of the company into the connected individual's personal ownership removes the company-held / non-natural-person status, and ATED no longer applies. The SDLT cost on the dis-envelope, the in-company CGT or CT-on-gains exposure, and the income-distribution charge on the shareholder are the practical gating factors. For a family home of meaningful value occupied by connected individuals, the dis-envelope analysis is usually the right answer; the <a href=\"/blog/incorporation-and-company-structures/ated-complete-guide-2026-27\">pillar guide</a> walks through the modelling."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Scenario-driven companion to the existing rental property relief mechanics page. Where the mechanics page covers the statutory test in full, this page walks through ten family-letting fact patterns with HMRC's stance and the evidence discipline. Sits alongside the sibling clawback page (`ated-relief-clawback-occupation-non-qualifying-individual`) which covers the loss-of-relief consequence."
 ---

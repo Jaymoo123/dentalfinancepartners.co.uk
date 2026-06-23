@@ -47,8 +47,8 @@ faqs:
   - question: "Where can I find the underlying Welsh LTT legislation?"
     answer: "The primary statute is the Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017, available at legislation.gov.uk/anaw/2017/1/contents. Rate tables are set by regulations under LTTA 2017 s.24 (residential) and s.25 (non-residential); the current main residential rates were brought in by the Land Transaction Tax (Tax Bands and Tax Rates) (Wales) Regulations effective 10 October 2022 and remain unchanged for 2026/27. The Welsh Revenue Authority's technical guidance at gov.wales/calculation-land-transaction-tax-payable-technical-guidance walks the calculation rules with worked examples, and is the working reference most conveyancers use day-to-day."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Welsh Land Transaction Tax main residential rates and bands for 2026/27, with the three positive Welsh-specific structural points (£225k nil band, no non-resident surcharge, no separate first-time-buyer regime), three worked examples at Welsh purchase prices, cross-border apportionment under LTTA 2017 Sch 22, and the Welsh Revenue Authority filing mechanics under LTTA 2017 s.41."
 ---

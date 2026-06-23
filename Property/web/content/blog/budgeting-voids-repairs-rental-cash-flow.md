@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/28914932/pexels-photo-28914932.jpeg?auto
 h1: "Landlord Cash Flow Management: Budgeting for Voids, Repairs and Section 24"
 summary: "A working guide to landlord cash flow management. Build a void fund and maintenance reserve, model the real Section 24 cash flow squeeze with a worked example, split repairs from improvements correctly, and get MTD-ready before the April 2026 deadline."
 schema: ''
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
 faqs:
 - question: "What is a void period in rental property?"

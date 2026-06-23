@@ -47,8 +47,8 @@ faqs:
   - question: "What documentation supports the sequence I choose?"
     answer: "Five documents anchor the sequence year by year. First, a written extraction plan signed off by the director(s) at the start of each accounting period, recording the planned mix of salary, dividend, employer pension and DLA repayment for that year. Second, board minutes for each dividend declaration with distributable-reserves evidence attached. Third, payroll records and P60s for the salary strand. Fourth, pension contribution receipts and a record of annual-allowance and carry-forward usage. Fifth, a running DLA ledger showing the credit balance opening, repayments through the year, and closing balance. The discipline is contemporaneous: the documentation has to be created at the time of the decision, not retrospectively at Self Assessment time. HMRC's standard challenge pattern at enquiry is to look for retrospectively-dated minutes or bank movements that don't line up with the minute dates; the contemporaneous file is the defence."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Pillar entry point for Bucket A. Multi-year extraction sequencer for property SPVs, distinct from the route-by-route mechanics list (Wave 1 B7) and the single-year marginal-rate analysis (Wave 4 A5). Anchors A2-A10 depth pages with forward-links."
 ---

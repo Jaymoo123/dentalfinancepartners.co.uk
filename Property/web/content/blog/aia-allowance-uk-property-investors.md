@@ -43,8 +43,8 @@ faqs:
   answer: Sometimes, but there are traps. To claim on fixtures already in a commercial building you buy, the past owner must have pooled the expenditure or claimed a first-year allowance on it (the pooling requirement in section 187A(4)), and you usually need a joint section 198 election fixing the transfer value. The election must be made within 2 years of acquisition under section 201(1). Miss the pooling requirement or the deadline and section 187A(3) treats your fixtures expenditure as nil, so the allowances are lost permanently.
 howTo: false
 dateModified: '2026-06-02'
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:

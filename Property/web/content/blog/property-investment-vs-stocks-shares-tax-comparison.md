@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/7567298/pexels-photo-7567298.jpeg?auto=c
 h1: 'Property Investment vs Stocks and Shares: The UK Tax Comparison for 2026/27'
 summary: "A detailed, current comparison of how UK buy-to-let property and stocks and shares are taxed in 2026/27. We cover the real differentiators that decide the question (the ISA and pension wrapper, rental versus dividend income, the Section 24 finance-cost restriction, and the incorporation route), correct the common myth that shares enjoy lower capital gains tax than property, and explain the enacted separate property income rates from 6 April 2027."
 schema: ''
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-30"
 faqs:
 - question: "Is property or shares better for tax in the UK?"

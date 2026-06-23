@@ -11,8 +11,8 @@ altText: "A UK landlord reviewing property documents and tax forms with a calcul
 image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Capital Allowances on Property: Which Properties Qualify in 2026'
 summary: "Capital allowances on property let UK landlords and investors claim tax relief on qualifying fixtures, plant and structures, but whether you can claim turns sharply on property type. This decision-router explains which properties qualify after Finance Act 2026, why residential dwellings are barred by CAA 2001 s.35 while commercial property and HMO common parts qualify, and routes you to the deep-dive on each allowance (AIA, the 40% FYA, full expensing, the SBA and writing-down allowances)."
-reviewedBy: 'ICAEW Qualified Senior Reviewer'
-reviewerCredentials: 'Chartered Accountant (ACA, ICAEW), Property Tax Specialist'
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 schema: ''
 faqs:

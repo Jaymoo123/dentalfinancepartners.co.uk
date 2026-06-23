@@ -43,8 +43,8 @@ faqs:
   - question: "What documentation does HMRC look for at enquiry?"
     answer: "The defence pack for a W&E challenge on an employer pension contribution has six elements. Board minutes authorising the contribution with reference to the director's role and remuneration package. A written remuneration policy showing how salary, benefits and pension contributions are sized. Records of the director's time and decisions for the SPV (calendar entries, meeting notes, lender correspondence, property-management actions). Comparator analysis where possible (sector pay data for property-portfolio managers of similar scale). Evidence that the contribution is consistent with the SPV's profit profile (a £60,000 contribution from an SPV with £200,000 of profit is more defensible than the same contribution from an SPV with £80,000 of profit). And a clean paper trail showing the contribution is actually a contribution (paid to the scheme administrator) rather than a benefit-in-kind, salary-sacrifice arrangement, or close-relative payment. Without this pack HMRC's BIM46035 enquiry default is to challenge the contribution as excessive."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Supersedes the legacy `property-company-employer-pension-contributions-directors` page (pre-FA-2024 architecture). Rebuilt on the post-FA-2024 LSA / LSDBA framework, with the CTA 2009 s.54 W&E gateway as the spine and three worked contribution scenarios (£20k routine, £60k full AA, £180k 3-year carry-forward sweep). Boundary-policed against Wave 4 A8 (decumulation) and Wave 2 A9 (death-IHT)."
 ---

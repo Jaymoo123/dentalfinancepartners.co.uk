@@ -39,8 +39,8 @@ faqs:
   - question: "How does a Sch 1 paragraph 2 direction interact with TOGC and other VAT mechanics?"
     answer: "A direction operates from its prospective effective date forward and consolidates the named persons as a single taxable person. It does not unwind past transactions, so a TOGC that was correctly applied between the named persons before the direction effective date is not disturbed. Going forward, intra-group supplies between the named persons collapse to nil for VAT purposes because they are within the same taxable person. The option to tax under VATA 1994 Sch 10 continues to apply at the named-person level for properties already opted; the direction does not require revocation. Most operational interaction questions resolve on the basis that the direction redraws the taxable-person perimeter prospectively, leaving past compliance positions intact."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B3: case-law-led explainer on VATA 1994 Sch 1 paragraph 2 single-taxable-person directions. Canonical entry point on artificial separation for the property-and-hospitality sector; site had no prior page on the topic. Sch 1 paras 1A + 2 verified verbatim at Stage 1 seed (2026-05-26); §29.12 mini-lock signed off 2026-05-27 closing F-50. Case citations handled at strict-verify standard per §16.36: Glassborow [1975] QB 465 carried; subsequent FTT line referenced by archetype not by individual neutral citation (FTT cases churn and the leading authorities sit at fact-pattern level). VAT registration threshold framed rate-by-reference per §16.27."
 ---

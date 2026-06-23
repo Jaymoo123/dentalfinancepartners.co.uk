@@ -49,8 +49,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Full expensing depth page for CAA 2001 Bucket C. Walks s.45S (100% main-rate FYA, companies only, unused only, post-1 April 2023), the 50% special-rate FYA companion, the s.45T disqualifying-arrangements exclusion, the s.46(4) leasing-out exclusion (with Autumn-Budget-2024 leased-plant extension PENDING commencement as of 2026-05-23), the interaction with AIA, and the disposal-value treatment (1.0x not 1.3x, contrasting with the historic super-deduction). Cross-references C4 (AIA allocation) and forward-links A7 (HoldCo extraction). Stage 2 brief cited CAA 2001 's.45BB' as the intra-group transfer mechanism; that section does not exist on legislation.gov.uk and is replaced in the page text by the actual mechanism (s.61 disposal-value substitution to market value in connected-party context). Drift catch logged in session discovery log. Statutory citations verified against legislation.gov.uk on 2026-05-23."
 ---

@@ -44,8 +44,8 @@ faqs:
   - question: "How does landlord insurance fit into Making Tax Digital?"
     answer: "Insurance is one of the standard expense categories within HMRC's MTD for Income Tax category schema. Sole-trader landlords with qualifying income above £50,000 join from 6 April 2026 (above £30,000 from April 2027, above £20,000 from April 2028) and must keep digital records and submit quarterly updates. Premiums flow into the quarterly summary, and the year-end finalisation reconciles to the SA105 categories. Revenue payouts are recorded against the relevant rental income or expense line; capital receipts are kept separate for the CGT computation on disposal."
 dateModified: '2026-05-30'
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-30'
 editorialNote: Factual remediation and depth lift. Corrected the insurance-recoveries authority to PIM2110 (insurance premiums and recoveries), tightened the wholly-and-exclusively citation to s.34 as applied by s.272 ITTOIA 2005, clarified the cash-basis default and £150,000 GAAP threshold for property businesses, confirmed the enacted April 2027 property income rates, and added the contents-relief interaction plus a top-of-page answer summary.
 ---

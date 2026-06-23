@@ -47,8 +47,8 @@ faqs:
   - question: "Is BPR available on a failed PET if I die within 7 years?"
     answer: "Generally no, for an investment FIC. IHTA 1984 section 104 grants BPR on the death estate, and section 113A extends BPR to certain failed PETs where the donee still owns the asset and the asset still qualifies for BPR. For an investment-FIC growth share, BPR is not available because the underlying company is investment (not trading) per the Pawson investment-line test; see our <a href=\"/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth\">FIC IHT and BPR myth page</a> for the substantive position. The failed PET is therefore a full chargeable transfer subject to the section 7(4) taper, with no BPR softening. For active-trading FICs (rare; hotel businesses, property development with continuous building, intensive serviced accommodation), BPR is potentially available subject to the April 2026 £2.5 million combined APR/BPR allowance under IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4 (the GOV.UK announcement-stage summary page still cites the stale £1m headline figure); even then the section 113A continuing-ownership requirement and the trading-status-at-death requirement need to hold for the failed PET to attract relief."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 Session A FIC sub-thread, share-gift mechanic at the moment of transfer. Four-question operational walkthrough: valuation (TCGA 1992 s.17 market-value with minority + lack-of-marketability discounts), CGT (s.165 holdover NOT available for investment FICs per Sch 7), settlements legislation (s.624 + s.629 minor-child attribution), 7-year PET clock (IHTA 1984 s.3A + s.7(4) taper from date of gift). Boundary policed against C4 (direct property gift) and C7 (strategic IHT framing) and A8 (in-life income). 8-document at-moment-of-gift checklist."
 ---

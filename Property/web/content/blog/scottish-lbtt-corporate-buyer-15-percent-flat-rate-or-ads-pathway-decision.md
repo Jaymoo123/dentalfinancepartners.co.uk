@@ -43,8 +43,8 @@ faqs:
   - question: "Where does this page sit alongside other relevant pages?"
     answer: "This page covers the Scottish corporate-buyer pathway specifically. The Scottish LBTT main rates pillar (B6) covers the underlying bands. The Scottish ADS page (B7) covers the 8%-on-entire-price mechanic that bites on corporate acquisitions. The Scottish bare-trust acquisition relief page (B10) covers the LBTT(S)A 2013 Schedule 18 route for trustee acquisitions that can avoid the corporate-ADS outcome in defined trust structures. For cross-jurisdictional context, the existing ATED + 15% SDLT interaction page covers the England-specific 15% flat rate and its ATED overlay; the SDLT six-dwellings page covers the England s.116(7) parallel rule. For broader incorporation strategy, the existing incorporation pillar covers the CGT, CT, and operational-side trade-offs alongside the LBTT/SDLT side."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Scottish corporate-buyer LBTT pathway page. Two positive Scottish structural points anchor the framing: (1) absence of an LBTT equivalent to the SDLT 15% flat rate under FA 2003 Sch 4A; (2) presence of the s.59(8) six-or-more-dwellings non-residential rule mirroring FA 2003 s.116(7). Three Scottish corporate worked examples (Highland Properties Ltd SPV £650k, Caledonian Investments Ltd 7-dwelling £2.1m portfolio, Macleod Holdings Ltd overseas-vehicle £400k). ATED-LBTT-ROE interaction layer for overseas corporate buyers. Cross-jurisdictional contrast with England SDLT 15% + ATED + Sch 4A reliefs. All figures verified at write time per §16.35 against revenue.scot + legislation.gov.uk."
 ---

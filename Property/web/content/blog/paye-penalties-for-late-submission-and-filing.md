@@ -40,8 +40,8 @@ faqs:
   - question: "How does the RTI penalty regime interact with MTD for ITSA from 6 April 2026?"
     answer: "Real-time information for PAYE and Making Tax Digital for Income Tax are separate digital reporting cycles with no statutory overlap. A landlord LtdCo employing PAYE staff, and the same individual landlord-director filing MTD ITSA personally on a self-employed or rental basis, will run both cycles in parallel: the LtdCo's PAYE FPS cycle (monthly, on or before payment) and the director's individual MTD ITSA quarterly cycle. The penalty regimes are also distinct: Schedule 55 paragraph 6C for RTI; the points-based Schedule 55 regime as amended for MTD ITSA late submissions; and the accelerated Schedule 56 3% / 3% / 10% schedule for MTD ITSA late payment."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

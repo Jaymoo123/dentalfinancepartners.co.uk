@@ -39,8 +39,8 @@ faqs:
   - question: "Is the FIC Campaign coming back?"
     answer: "Speculative, and not asserted as fact. Operational realities: FIC scrutiny continues under Wealthy Team caseload using the four vectors; periodic political pressure on tax avoidance by wealthy families produces consultations and tax-policy reviews; the OBR's tax-base monitoring, Treasury's annual fiscal events, and Public Accounts Committee inquiries are the channels through which any future FIC-targeted reform would be flagged. Honest framing: the FIC Unit closed in 2021, FIC scrutiny continues under Wealthy Team, no announced return of a dedicated FIC Unit, periodic political interest is real but unpredictable. Operators should plan on continued Wealthy Team scrutiny indefinitely rather than assuming a discrete future FIC Campaign 2."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Wealthy and Mid-Sized Business Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B16: HMRC-side narrative on the April 2019 FIC Unit launch, 12-month review, 2021 conclusion (Treasury Minutes finding no significant tax avoidance), and absorption into Wealthy Team. Four continuing enquiry vectors walked: settlements (ITTOIA s.624), substance-over-form on dividends (Furniss v Dawson / Ramsay / FA 2013 Part 5 GAAR), GROB on founder-occupied property (FA 1986 s.102 / s.102B), and Ramsay/GAAR on incorporation arrangements. Critical do-not-write: FIC Unit is past-tense (was disbanded 2021); current scrutiny is via Wealthy Team caseload. HP anchors §21.5, §22.6, §22.11, §27.1-§27.6. No new HP-lock raised."
 ---

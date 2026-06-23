@@ -43,8 +43,8 @@ faqs:
   - question: "Where does the decision typically land for a 3-property former FHL owner?"
     answer: "For a higher-rate-taxpayer with three leveraged former-FHL properties worth around £1.2 million in aggregate, our modelling for clients in 2025 and 2026 typically shows incorporation paying back within 5 to 7 years of holding through the company, driven mainly by S24 mitigation and (from 2027) the 2% property income surcharge being avoided. The upfront costs (CGT to the extent s.162 does not roll over the gain, SDLT plus 5% surcharge, ATED if any property exceeds £500,000) are real but recouped through ongoing tax savings. For basic-rate-taxpayer owners or unleveraged portfolios, the maths is less compelling and personal ownership often remains the better answer."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Decision-framework page for former FHL operators evaluating incorporation in the post-abolition landscape, with specific attention to the s.162 active-business test, anti-forestalling history, and the 2027 surcharge that changes the long-run maths."
 ---

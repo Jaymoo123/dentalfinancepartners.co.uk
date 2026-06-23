@@ -45,8 +45,8 @@ faqs:
   - question: "Where can I find the underlying statute and guidance?"
     answer: "The Welsh LTT statute is LTTA 2017 at legislation.gov.uk/anaw/2017/1/contents; the dwelling-suitability test sits under s.72 and the chargeable-consideration framework under s.18. The procedural framework for amendments and refunds is TCMA 2016 at legislation.gov.uk/anaw/2016/6/contents, with the key sections being s.41 (amendment), s.63 (overpayment relief), s.78 (4-year time limit) and ss.172-186 (review and appeal). The Welsh Revenue Authority publishes operational guidance at gov.wales/calculation-land-transaction-tax-payable-technical-guidance and LTTA technical guidance pages including LTTA/2150 (residential vs non-residential classification) and the WRA guidance on submitting amended returns and overpayment claims."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Welsh LTT refund pathway for derelict and uninhabitable properties: the dwelling-suitability test under LTTA 2017, the two statutory paths to a refund under TCMA 2016 (s.41 12-month amendment, s.63 4-year overpayment claim with s.78 time bar), the WRA evidence pack expectations, the Welsh review and tribunal pathway, and a worked example showing the £9,000 higher-rate-to-zero saving on a £180,000 derelict-cottage purchase. Cross-jurisdictional contrast with the English PN Bewley line at a single-paragraph level; the Welsh story is its own thing."
 ---

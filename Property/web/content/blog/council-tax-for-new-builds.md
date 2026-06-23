@@ -37,8 +37,8 @@ faqs:
     answer: "Yes, where the conversion creates a new dwelling. A Class MA office-to-residential permitted-development conversion, or a Class O conversion, that creates one or more new dwellings, triggers a fresh completion notice under Schedule 4A LGFA 1988 for each new dwelling. A like-for-like refurbishment of an existing residential dwelling, with no change in the number of dwellings, does not trigger a completion notice because the dwelling continues to exist throughout."
   - question: "Is the building regulations completion certificate the same as the council tax completion day?"
     answer: "No. Building regulations completion is governed by the Building Act 1984 and the Building Regulations, and is the assessment by the local building control body that the work meets the regulations. The council tax completion day is determined under a different statutory test in Schedule 4A LGFA 1988, namely substantial completion of the dwelling. The two often run on parallel timelines but they are independent tests served by different officers under different statutes. The council tax completion day is the binding date for council tax purposes regardless of when building regulations completion is certified."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

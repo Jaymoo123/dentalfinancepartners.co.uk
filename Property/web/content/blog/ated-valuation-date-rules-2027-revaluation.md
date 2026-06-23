@@ -47,8 +47,8 @@ faqs:
   - question: "How should I prepare for the 1 April 2027 revaluation now?"
     answer: "Five practical steps. First, identify every dwelling in the portfolio that has been within ATED scope for any chargeable period (residential value over £500,000 on the relevant date). Second, run a desktop estimate of the open-market value at 1 April 2027 using current comparable sales data; check whether any property is likely to cross a band boundary. Third, where any property is likely to cross a boundary, brief a RICS Red Book valuation to be delivered around the 2027 date. Fourth, lodge a PRBC for any near-boundary case before the 30 April 2028 return is filed. Fifth, refresh apportionment workings for any mixed-use buildings (see our sibling page on mixed-use apportionment)."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Valuation-date deep-dive for the ATED bucket. Anchored on the five-yearly revaluation cycle, the 1 April 2027 next-revaluation date, the acquisition-date interim rule, the £40,000 substantial-acquisition and substantial-disposal triggers, and the PRBC service. Sits alongside A1 (overview), A2 (rates), A6 (mixed-use apportionment) and the wider ATED inventory."
 ---

@@ -45,8 +45,8 @@ faqs:
   - question: "Does s.116(7) apply to LBTT in Scotland or LTT in Wales?"
     answer: "No. Land and Buildings Transaction Tax (Scotland) and Land Transaction Tax (Wales) are separate devolved taxes with their own rate schedules and portfolio rules. A cross-border portfolio with English, Scottish and Welsh properties needs three separate filings, each computed under the relevant devolved regime, and the s.116(7) non-residential treatment applies only to the English and Northern Irish slice."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Mechanics page for portfolio acquisitions. Worked saving against the residential-rates alternative and the single-transaction traps that defeat the treatment in practice."
 ---

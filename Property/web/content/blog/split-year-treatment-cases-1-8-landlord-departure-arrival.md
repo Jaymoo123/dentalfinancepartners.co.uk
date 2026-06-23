@@ -42,7 +42,7 @@ faqs:
     answer: "No. UK rental income from UK property is taxable in the UK under section 264 ITTOIA 2005 regardless of your residence status, so it is in scope for the whole tax year. What split-year changes is the regime: you report under ordinary self-assessment for the UK part and under the non-resident landlord rules for the overseas part. The total tax base on the UK rental profit is the same; only the operational machinery (NRL withholding, treaty interactions, personal allowance entitlement) shifts on the split date."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against Finance Act 2013 Schedule 45 Part 3 (paras 43 to 55), HMRC RDR3 (Statutory Residence Test guidance, split-year sections), HMRC Capital Gains Manual CG26100 onwards, and gov.uk SA109 residence supplement guidance. Verified 2026-05-22 against legislation.gov.uk."
 ---

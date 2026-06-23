@@ -47,8 +47,8 @@ faqs:
   - question: "We are a charity holding a Mayfair flat as part of an endowment portfolio. Does ATED apply?"
     answer: "ATED applies, but s.150 Finance Act 2013 provides Charitable Use Relief where the dwelling is owned by a charity and used for charitable purposes. The relief is claim-on-return; the same filing discipline as Property Rental Business Relief applies. Charities holding endowment property as an investment let to unconnected tenants on commercial terms can usually claim Property Rental Business Relief in the alternative, which is sometimes easier to evidence than charitable use."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside the pillar (`ated-complete-guide-2026-27`) which carries the deep operational mechanics; this page handles the chargeable-persons positioning, the three-tax interlock with SDLT 15% and IHT Sch A1, and the 2026/27 strategic posture choices. Links out to the rates table, valuation guide, relief mechanics, penalty appeal, and overseas-OTM guides for depth."
 ---

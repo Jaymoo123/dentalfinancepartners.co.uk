@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from your landlord incorporation step-by-step guide?"
     answer: "That sibling page is a decision-layer guide answering 'should I incorporate my BTL portfolio'. This page assumes the decision is made and the tax route is chosen (s.162 incorporation relief, phased transfer, or fresh-SPV acquisition), and walks through what you actually file with Companies House, in what order, with what property-SPV-specific configuration choices at IN01. The two pages are complementary: read the decision-layer guide first to decide whether to incorporate; come here when you are ready to execute the Companies House mechanics. Our other sibling pages cover the tax-mechanics layer (s.162, SDLT on incorporation, holdover relief) and the post-formation operational layer (corporation tax registration, accounts filing, confirmation statement)."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "The Companies House operational layer for a UK property company formation post-ECCTA 2023. Assumes the should-I-incorporate decision and tax-route choices are settled (covered on sibling pages); walks through the IN01 mechanics, ID verification, SIC code, share class, registered office, PSC, day-1 checklist. Three worked scenarios cover single-SPV formation, multi-SPV associated-companies impact, and s.162 portfolio incorporation."
 ---

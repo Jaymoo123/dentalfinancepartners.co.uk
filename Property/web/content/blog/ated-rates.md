@@ -47,8 +47,8 @@ faqs:
   - question: "When does Treasury publish the next-year figures?"
     answer: "November of each year, after the September CPI publication that drives the indexation calculation. The Treasury order must be issued before 1 April of the chargeable period. The HMRC gov.uk ATED rates-and-allowances publication is the operative public source for the current and prior-year figures; the underlying Treasury order is published on legislation.gov.uk. Owners with multi-property structures or borderline valuations typically diary the November announcement for next-year planning."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 editorialNote: "Rates-and-mechanism ATED page (MegaWave 3 Bucket B, batch M3-B-B2). Canonical landing for current-year ATED chargeable amounts; verified 2026/27 and 2025/26 table opens; s.99 + s.101 indexation mechanism walked transparently. Distinct from B5 strategic-decision sibling, B14 revaluation-date deep-dive (cross-linked but distinct), B8 + B9 penalty + appeal, B11 + B12 relief mechanics, B16 upstream prevention. Anchors: FA 2013 s.99 (rate table + pro-rata), s.101 (CPI indexation + £50 round-down + Treasury order), ss.102-105 (taxable value + 5-yearly revaluation date), s.116 (mixed-use), ss.124-125 (new-build / converted), s.97 (chargeable persons), s.159 (return). House positions §2 (verified ATED bands), §18 + §18.1 verified 2026/27 + 2025/26 table + §18.2 + §18.3 + §18.4 (return + revaluation + PRBC + mixed-use) + §18.8 (do-not-write list). Anonymised personas (Trevor Holdings Limited, Olivetti Holdings Limited, Saffron Estates Cayman Limited). 5 worked examples, 14 FAQs, 4 inline asides."
 ---

@@ -47,8 +47,8 @@ faqs:
   - question: "What is the most common mistake landlord couples make on this choice?"
     answer: "Two recurring mistakes. The first is assuming the conveyancer's default of joint tenancy is fine when an unequal contribution (or a plan to shift income to a lower-rate spouse) means the couple needs TIC plus a deed of trust. The second is severing to TIC for income-tax flexibility without updating wills to take advantage of the new flexibility on first death: TIC plus an outdated will that simply mirrors survivorship gives the income-tax flexibility but wastes the IHT planning opportunity. The fix is to treat the structural decision, the deed of trust, and the wills as a single planning exercise."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Foundational page on the property-law choice between joint tenancy and tenants in common, structured to explain why almost every downstream joint-ownership tax mechanic (Form 17, IHT survivorship vs will-disposable share, CGT base-cost route, SDLT joint-buyer aggregation) turns on the structural decision. Forward-links to the canonical Form 17 mechanic page and to declaration-of-trust + IHT joint-ownership coverage."
 ---

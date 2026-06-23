@@ -47,8 +47,8 @@ faqs:
   - question: "What is the single biggest mistake first-time ATED filers make?"
     answer: "Assuming that because rental-business relief reduces the charge to nil, no return is required. The relief must be claimed on a return; the obligation to file is not displaced by the availability of relief. Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC) confirmed the point with a £15,700 penalty across ten chargeable periods on a property that owed no tax. The discipline is: scope first, file second, charge third. Reliefs are part of step 5, not a substitute for step 4."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Process-walkthrough page for the first-time ATED filer. Distinct from the ATED pillar (substantive deep-dive) and the strategic overview sibling: the value of this page is the SEQUENCE, with each step deliberately compact and cross-linked to the sibling page that goes deeper. HowTo schema candidate flagged in work-log for orchestrator assessment post-merge."
 ---

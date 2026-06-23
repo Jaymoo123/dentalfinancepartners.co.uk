@@ -42,8 +42,8 @@ faqs:
   - question: "Does separation or divorce affect the 50/50 default?"
     answer: "Yes. ITA 2007 section 836 applies only to spouses and civil partners living together (the Sokoya v HMRC line at Special Commissioners on the living-together limb). On separation the default 50/50 rule ceases to apply; the SA income split reverts to actual beneficial interest (default 50/50 per legal title absent other evidence; or per Declaration of Trust if one exists). Each spouse's MTD scope is re-assessed against the post-separation SA return. The cessation date can be fact-sensitive in messy separations; specialist tax representation is appropriate where the cessation date materially affects the threshold test."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

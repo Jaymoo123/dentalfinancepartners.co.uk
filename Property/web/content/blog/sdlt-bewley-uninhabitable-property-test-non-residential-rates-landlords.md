@@ -47,8 +47,8 @@ faqs:
   - question: "What is the HMRC manual reference for the Bewley test?"
     answer: "HMRC's Stamp Duty Land Tax Manual at SDLTM00385 onwards covers the s.116(1)(a) residential-property definition including the Bewley line of authority. SDLTM00410 specifically addresses the post-Bewley case law including Hyman, Mudan, and the broader narrowing trajectory. The manual states HMRC's enforcement position explicitly: derelict properties may qualify for non-residential treatment, but the buyer must establish substantial structural danger or contamination requiring complete reconstruction, with contemporaneous evidence. The manual is regularly updated as new tribunal decisions land; sessions writing on Bewley should anchor on the current SDLTM00385 onwards version and check for post-publication tribunal decisions. The interaction with SDLTM23000 (group relief), SDLTM30100 (linked transactions), and SDLTM33500 (partnership relief) is incidental; Bewley sits in the SDLTM00000 residential-property-definition stream."
 dateModified: "2026-05-24"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-24"
 editorialNote: "Bewley SDLT uninhabitable-property test with full post-Bewley narrowing line: Hyman / Mudan / MHB / Brown. §1.C verbatim lock + §1.F do-not-write list (Bewley does not apply to unmodernised property) held. Whitfield-purchase Victorian terrace worked example. HMRC enquiry-stance reality surfaced (most buyer Bewley claims fail at enquiry). Operational surveyor test framed explicitly."
 ---

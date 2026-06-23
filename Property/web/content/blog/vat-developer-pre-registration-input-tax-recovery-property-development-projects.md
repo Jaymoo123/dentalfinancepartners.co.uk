@@ -39,8 +39,8 @@ faqs:
   - question: "Can a developer go back to recover pre-registration VAT after the first return has been filed?"
     answer: "Reg 111 recovery is conventionally made on the first VAT return after registration. If you missed pre-registration costs at the first-return stage, the usual remedy is to make a voluntary disclosure to HMRC under the error-correction procedure (VAT Notice 700/45) on a later return, treating the missed amount as an under-recovery error. The error-correction window is four years from the original return date. Where the missed amount exceeds the £10,000 net error limit (or 1 percent of box 6, whichever is greater, up to £50,000), you need a separate VAT 652 form. The four-year window for goods and the six-month window for services are measured from the registration date, not from the later disclosure date, so your underlying eligibility is preserved."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A operational page. Reg 111 is canonical, statute-led, and frequently misunderstood by developer cohort. Page sits upstream of A1 (OTT) and A2 (CGS): pre-registration recovery is the entry-point that the OTT and CGS pages then assume has been done correctly. Worked example uses a residential new-build developer because that is the most common cohort."
 ---

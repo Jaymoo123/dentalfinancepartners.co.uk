@@ -42,7 +42,7 @@ faqs:
     answer: "Only on your share of the income. Where foreign property is held jointly or by a married couple, each owner is assessed on their share of the rental income separately. If one spouse qualifies for FIG and the other does not (different residence history, different status), the FIG cover applies only to the qualifying spouse's share. For families relocating to the UK together, both spouses' qualifying positions should be checked separately; assuming both qualify because the family moves together is a frequent error."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against HMT/HMRC 'Reforming the taxation of non-UK domiciled individuals' policy paper (30 October 2024), HMT 'Changes to the taxation of non-UK domiciled individuals' technical note (6 March 2024, updated 23 April 2024), the Spring Budget 2024 non-dom policy summary, the Autumn Budget 2024 extension of the TRF to a third year at 15%, Finance Act 2025 Schedule 9 (FIG regime mechanics), Finance Act 2025 Schedule 10 (TRF mechanics), Finance Act 2025 Schedule 11 (CGT rebasing election to 5 April 2017), section 264 ITTOIA 2005, TCGA 1992 sections 1A and 10A, and HMRC RDR3 (SRT guidance). Verified 2026-05-22 against gov.uk."
 ---

@@ -36,8 +36,8 @@ faqs:
   - question: "What is the most common mixed-use VAT mistake?"
     answer: "Treating the whole purchase as taxable because the seller's OTT applies to the building. Sch 10 para 5 carves out dwellings from any opt; the seller's invoice should split the consideration between standard-rated commercial and exempt residential. A buyer who pays VAT on the residential element and recovers it through their VAT registration faces an HMRC challenge in due course, with the recovered VAT reversed and interest charged. The second-most-common mistake is treating the apportionment as a one-off acquisition decision rather than reviewing it at each refurbishment and tenant change."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A specialist topic. Mixed-use is the apportionment-at-acquisition page; A1 owns the OTT election mechanic, A2 owns CGS, A3 owns partial exemption. Worked flat-over-shop + hotel-with-retail examples anchor the apportionment methodology. SDLT cross-tax note included with explicit pointer to the existing SDLT mixed-use classification page on the site."
 ---

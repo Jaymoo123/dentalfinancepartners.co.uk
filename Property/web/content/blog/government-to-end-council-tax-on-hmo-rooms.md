@@ -37,8 +37,8 @@ faqs:
     answer: "Yes. Where every occupant of an HMO is a full-time student, the dwelling qualifies for the Class N exemption under SI 1992/558 (the Council Tax (Exempt Dwellings) Order 1992). Under the post-reform single-dwelling banding, the Class N exemption applies to the whole dwelling, taking the council tax bill to zero. Under the pre-reform per-room banding, students were already disregarded under Sch 1 LGFA 1992, but the building-level treatment was inconsistent. The single-dwelling rule simplifies the application of Class N for fully-student HMOs."
   - question: "What is the practical impact on rent and service-charge architecture?"
     answer: "Under the single-dwelling rule, the council tax goes to the landlord as a single bill. Landlords typically build it into inclusive rent (especially common in shared-house HMOs targeted at young professionals or students) or pass it through as a service charge. The pre-reform position where individual tenants had separate per-room bills no longer applies. Tenancy agreements granted after 1 December 2023 should reflect this. Tenants with pre-reform per-room council tax bills should ask the landlord whether the property has been moved to single-dwelling banding and whether their tenancy agreement and inclusive-rent position has been updated."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

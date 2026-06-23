@@ -39,8 +39,8 @@ faqs:
   - question: "How does the 28-day rule interact with the existing TOMS framework on our site?"
     answer: "The 28-day rule and TOMS are two different mechanics that can both apply on serviced accommodation, though usually not at the same time. TOMS applies to a tour operator buying in accommodation and reselling it to travellers without material alteration; the 28-day rule applies to direct-let accommodation supplied by the operator that runs the establishment. The Sonder Europe UT 2025 decision narrowed TOMS, holding that operators who lease apartments and sub-let them are not within TOMS because they alter the underlying supply. Operators in that position now fall under the standard VAT regime and engage the 28-day rule directly. See our existing TOMS framework page for the TOMS-applicability test, and use this page for the 28-day-rule mechanic once TOMS is confirmed not to apply."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A specialist deepening of the long-stay variant of hotel/aparthotel VAT. Distinct from the existing TOMS page (framework) and from the existing landlord-VAT-registration page (entry-level). Sch 6 paragraph 9 cited correctly (the Wave 5 brief mis-cited Sch 4A para 9, caught at per-write verification under §16.35). Sonder Europe UT 2025 ruling integrated."
 ---

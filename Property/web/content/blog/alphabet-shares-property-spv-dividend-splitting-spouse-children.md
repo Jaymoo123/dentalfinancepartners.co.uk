@@ -47,8 +47,8 @@ faqs:
   - question: "Does the alphabet-shares income-tax tactic combine with the FIC inheritance-tax freeze strategy?"
     answer: "Yes, the two can coexist. The standard combined structure is founder preference shares (frozen capital value, fixed dividend coupon) plus alphabet classes among the family for ongoing income splitting plus growth shares for the children's IHT plan. The founder gets a defined income stream from the preference coupon, the spouse and adult children get flexible-allocation alphabet dividends in the current tax year, and the children's growth shares carry future capital growth out of the founder's estate. The structural complexity is significant and the articles of association need to handle the interplay between class rights carefully; this is FIC-grade design rather than a vanilla property SPV. Our wider FIC material covers the IHT mechanics; this page covers the alphabet-class income-tax mechanic that sits alongside."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Income-tax mechanic for alphabet shares in a property SPV, anchored on the ITTOIA 2005 s.624 settlements boundary and the s.626 spouse exception confirmed by Jones v Garnett (Arctic Systems) [2007] UKHL 35. Distinct from our wider FIC material, which covers the growth-share / freezer-share design used for IHT value-freeze planning."
 ---

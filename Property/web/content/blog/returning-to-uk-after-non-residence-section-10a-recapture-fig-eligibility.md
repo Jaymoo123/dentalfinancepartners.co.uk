@@ -43,8 +43,8 @@ faqs:
   - question: "What is the single biggest planning decision for a returning UK national?"
     answer: "The year of return. The choice between Pattern 1 (return in years 1-5; trigger s.10A recapture), Pattern 2 (return in years 6-9; escape s.10A but no FIG), and Pattern 3 (return in year 10+; escape s.10A and qualify for FIG) is structural. The decision should be made before any UK-residence-triggering arrangement (signing a UK employment contract; acquiring or moving into a UK home; spending significant time in the UK that would breach SRT day-count thresholds) is made. Once the year of return is fixed under SRT, the s.10A and s.845B outcomes are determined. The trade-offs involve work, family, and lifestyle considerations as well as tax; sessions advising should map the tax outcomes for each of the three patterns and present them alongside the non-tax considerations rather than treating the timing as a pure-tax decision."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket A (A10, FINAL). Returning-to-UK pillar tying together TCGA 1992 s.10A 5-year recapture (HP §17.3 verbatim) with ITTOIA 2005 s.845B FIG eligibility 10-year prior-non-residence (per A1 + HP §17.8). Three-pattern framework (short / medium / long absence) with three worked scenarios showing where the cost lands. ITA 2007 s.812 income-tax parallel noted. NRCGT interaction (UK land already in scope; s.10A not duplicative). IHT LTR independent clock noted. References A7 (s.6A test), A1 (FIG eligibility), A2 (FIG mechanics), A3 (FIG cliff). FINAL page in Bucket A; F-2 back-patch from A7 forward-links to A8/A9/A10 to be performed on commit. Anti-templating against A1 (FIG-side only); A10 is the dual-clock decision page."
 ---

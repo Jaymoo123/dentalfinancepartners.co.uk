@@ -43,8 +43,8 @@ faqs:
   - question: "Does the UK-France treaty have a Mutual Agreement Procedure for disputes?"
     answer: "Yes. Article 26 of the 2008 UK-France treaty provides for Mutual Agreement Procedure between HMRC (Business International) and the French Direction Générale des Finances Publiques (DGFiP). Standard MAP time limit is three years from the first notification of the action giving rise to taxation not in accordance with the convention. MAP is appropriate for material disputes where the bilateral application cannot be reconciled (residency tie-breaker disagreements, transfer-pricing characterisation, treaty-shopping challenges)."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-France treaty page for property investors. Three differentiators: the 2008 treaty income tax mechanics, the CSG/CRDS overlay sitting outside the treaty perimeter, and the separate 1963 UK-France IHT treaty for cross-border estate planning. Companion to the framework guide (B1) and the NRL operational pages."
 ---

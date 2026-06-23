@@ -16,8 +16,8 @@ altText: "Comparison of UK property investment company structures: SPV, holding 
 image: ""
 h1: "Property Investment Company Structure: SPV vs Holding vs Group"
 summary: "There is no single best company structure for UK property investment. The right choice depends on whether you are reinvesting or extracting profit, how many properties and property types you hold, whether you let to family, and whether succession is in scope. This guide compares the five main structures (SPV, holding company, group, trading company and LLP) in a single decision table, walks a structure-selection decision tree, and works through the corporation tax reality that catches most multi-company portfolios: the associated-companies divisor and the close investment-holding company trap. It links out to the deep-dive pages for each structure rather than re-explaining them."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-30"
 schema: ""
 faqs:

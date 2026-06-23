@@ -47,8 +47,8 @@ faqs:
   - question: "How does the 1 April 2027 revaluation interact with mixed-use apportionment?"
     answer: "The five-yearly revaluation at 1 April 2027 (used from chargeable period 2028/29 onwards) will require a fresh apportionment as at that date. A 2022-based apportionment that put the residential element at £490,000 (no ATED) may produce a 2027-based residential element above £500,000 once central London residential values are reapplied, even if the building is unchanged. The 2027 revaluation is the right moment to refresh the methodology and brief a fresh RICS report. See our sibling page on the 1 April 2027 revaluation date for the wider rules."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Mixed-use apportionment mechanics for ATED, with the four accepted methods, the just-and-reasonable test, three boundary edge cases (serviced accommodation, live-work, mid-period conversion), and the SDLT mixed-use cross-reference. Sits alongside the strategic overview, the rates reference, the relief mechanics pages and the valuation rules page."
 ---

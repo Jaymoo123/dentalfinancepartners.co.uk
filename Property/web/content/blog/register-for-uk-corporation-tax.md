@@ -43,8 +43,8 @@ faqs:
   - question: "Should I use an accountant for CT registration?"
     answer: "For most property LtdCo founders, yes. The CT-registration mechanics are operationally straightforward, but the surrounding obligations compound quickly: iXBRL tagging, first accounting period determination, dormancy notification, associated-company declarations for multi-SPV setups, and ECCTA verification coordination. The fee for accountant CT-registration with first-year compliance setup is typically £500 to £1,500. The cost of failure-to-notify penalties, interest on late-paid CT, and refile work for iXBRL failures can multiply this several times over. Accountancy software integrated with HMRC's online services is the standard route."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Step-by-step CT-registration operational entry-point handbook for newly-incorporated property LtdCo. Sits below A20 limited-companies pillar and beside A1 incorporation-mechanics depth. Load-bearing operational subtlety: FA 2004 s.55 3-month clock starts at coming-within-the-charge (chargeable-date), NOT at incorporation. Dormancy notification is itself an operational requirement; not automatic. FA 2008 Sch 41 failure-to-notify penalties behaviour-based with significant unprompted-disclosure reduction. iXBRL tagging required for every UK company regardless of size. ECCTA Companies House ID verification distinct from HMRC Government Gateway verification; both required. No group CT registration; each SPV registers separately; associated-company test under CTA 2010 ss.18D-J dilutes marginal-relief thresholds."
 ---

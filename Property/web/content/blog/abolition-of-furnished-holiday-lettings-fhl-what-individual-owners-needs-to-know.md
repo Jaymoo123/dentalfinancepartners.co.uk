@@ -43,8 +43,8 @@ faqs:
   - question: "Where can I find the operational depth on the post-abolition rules?"
     answer: "For the broad post-abolition rules overview, see our companion FHL rules page. For capital allowances grandfathering depth, see our FHL capital allowances post-April-2025 grandfathered claims mechanics page. For incorporation modelling depth, see our transferring FHL portfolio to limited company page. For the SDLT angle on new FHL acquisitions, see our SDLT FHL post-abolition page. This action-checklist page is the consolidated to-do list for the 2025/26 SA100 cycle; the depth pages support execution where any individual item warrants deeper analysis."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Individual-owner action-checklist page for the post-abolition FHL landscape. Sits between the broad rules-overview companion (furnished-holiday-let-tax-rules-exemptions) and the operational depth pages (capital allowances grandfathering, incorporation, SDLT angle). Eight-item action checklist for the 2025/26 SA100 cycle: (1) Section 24 ingress under ITTOIA 2005 s.272A; (2) joint-ownership 50/50 default reset and Form 17 mechanics; (3) loss ring-fence change ending sideways relief; (4) grandfathered capital allowances pool under FA 2025 Sch 5 Part 3 + Part 5; (5) pension 'relevant UK earnings' change under FA 2004 s.189; (6) CGT residential rates 18%/24% from 6 April 2025, BADR ended; (7) incorporation modelling (Section 24 does not bite companies); (8) SDLT 5% additional-dwellings surcharge on FHL acquisitions per FA 2025 s.51 (effective 31 October 2024). Worked example walks higher-rate-taxpayer joint-owning spouse before and after abolition showing £1,600 per-year tax increase driven by Section 24 ingress and loss of unequal-split optimisation. FA 2025 Sch 5 Parts 1-5 verified verbatim 2026-05-26."
 ---

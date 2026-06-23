@@ -39,8 +39,8 @@ faqs:
   - question: "Where can I read the operational walkthrough?"
     answer: "Our ECCTA identity verification operational page covers the One Login versus ACSP route choice in landlord-LtdCo detail, the per-company filing cadence (where each company quotes your personal code on its confirmation statement), the multi-SPV verification mapping for portfolio groups, the transition-window timing, and the sanctions regime. Use the response above to deal with the email you have just received, then go there for the full verification workflow once you are ready to action it."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B6: news-led / scam-vetting on-ramp to the ECCTA 2023 ID-verification regime, triggered by the Companies House email rollout to existing directors and PSCs during the 12-month transition window. Sits alongside B2 (definitional on-ramp) and the existing Wave 9 operational walkthrough page. ECCTA 2023 s.64 verified verbatim at Stage 1 (2026-05-26). Commencement chain (8 April 2025 voluntary opening, 18 November 2025 legal requirement, transition window through ~November 2026) anchored per §11.A Wave 9 mini-lock. Action Fraud and NCSC scam-reporting references included; URLs to be liveness-verified at deploy. F-12 URL discipline honoured (deprecated gov.uk/government/news/changes-to-uk-company-law URL avoided)."
 ---

@@ -45,8 +45,8 @@ faqs:
   - question: "Is there ever a case where BPR genuinely helps an FIC?"
     answer: "Where the FIC holds a genuine trading business (active hotel, property development with continuous building activity, hands-on property trading), BPR can apply. The £2.5m April 2026 cap under IHTA 1984 s.124D restricts the relief to £2.5m of value at 100%, with the rest at 50%. For a £3m active trading FIC, the post-2026 IHT is £100k (£500k above-cap at 20% effective rate), against £1.2m without any BPR. Real and a much smaller bill than the £1m headline figure would have implied."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "FIC daughter, final Session C Track 1 page. The BPR myth is one of the most persistent misrepresentations in FIC marketing. This page sets out the actual position with Pawson and the April 2026 cap, and identifies what the FIC architecture genuinely does achieve on IHT."
 ---

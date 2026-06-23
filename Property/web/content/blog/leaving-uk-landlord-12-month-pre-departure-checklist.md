@@ -42,7 +42,7 @@ faqs:
     answer: "The 2 percentage point uplift on UK property income produces effective rates of 22% basic, 42% higher, and 47% additional from 6 April 2027. It was announced at the Autumn Budget 2025 and enacted in Finance Act 2026 (Royal Assent 18 March 2026). It applies to UK property income regardless of landlord residence, so a non-resident landlord pays the same 22/42/47 rates on UK rental profits as a UK resident in 2027/28. Build this into year-two cash-flow plans, particularly if your overseas country credits UK tax (which would reduce double tax but not the cash leaving the UK)."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against HMRC RDR3 (Statutory Residence Test), HMRC CG26540 (temporary non-residence), HMRC NRL guidance at gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad, and the residence-based IHT rules in force from 6 April 2025 per Finance Act 2025."
 ---

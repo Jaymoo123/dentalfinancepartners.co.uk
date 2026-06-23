@@ -41,8 +41,8 @@ faqs:
   answer: "Yes. A company can claim the AIA (100%) on a used van in the year of purchase, just like an unincorporated landlord. What a company cannot do on a used van is claim full expensing (s.45S) or the 40% first-year allowance, because both require the van to be unused and not second-hand. For a brand-new van, a company would use full expensing; for a used van, the AIA is the route to the same 100% deduction."
 - question: "Can I claim if the van was used in another business before I bought it?"
   answer: "Yes. The fact that a previous owner used the van in their business does not stop you claiming. There is no first-user condition for the AIA, which applies to second-hand plant. The genuine restriction is the connected-person rule (ss.214 and 217): if the seller is connected to you, the AIA and first-year allowances are denied and you fall back to the 14% writing-down allowance. An ordinary arm's-length purchase from an unconnected business is fine for the AIA."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'

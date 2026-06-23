@@ -47,8 +47,8 @@ faqs:
   - question: "Is there any risk the reform gets watered down or pushed back?"
     answer: "Possible but not the planning basis. The 6 April 2027 effective date was confirmed in the consultation outcome published in 2025; primary legislation is on the books for the Finance Act 2026 cycle. Industry has lobbied for delays and for carve-outs (particularly on drawdown funds and on death-in-service which secured its exclusion). Further refinement at margins is plausible. Planning around a hard 6 April 2027 commencement is the prudent baseline; any rollback or delay is a positive surprise. The IHT-on-pensions direction of travel is broadly cross-party and the political risk of reversal is small."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reform-impact page on the April 2027 pension IHT change for landlord estates. Before-vs-after worked example, double-tax interaction with post-75 income tax, RNRB taper interplay, and five pre-2027 action items."
 ---

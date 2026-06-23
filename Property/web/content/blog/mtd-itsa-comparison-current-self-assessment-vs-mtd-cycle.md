@@ -48,7 +48,7 @@ faqs:
     answer: "For most months: light digital bookkeeping (bank-feed reconciliation, expense capture, tagging income to the right SA105 box) at perhaps 20-30 minutes a week. Once a quarter: a slightly heavier session to finalise the quarterly numbers and submit through the software. Once a year: the EoPS adjustments (capital allowances, private-use, year-end reclassifications) and the final declaration. The annual time burden is broadly comparable to an organised SA filer's; the difference is that the work is spread through the year rather than concentrated in a January push, which is the discipline most landlords find hardest to acquire."
 dateModified: "2026-05-23"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK property tax specialists, ATT / CTA qualified"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Verified against gov.uk MTD ITSA collection, gov.uk Self Assessment guidance, and house position §3 / §19.6 / §19.7 on 2026-05-23. Quarterly deadlines reflect the 7-of-month schedule per HMRC current cycle; payment dates (31 January, 31 July) unchanged from current SA. Spring Statement 2025 accelerated late-payment regime (3%/3%/10% at days 15/30/31) applies to MTD ITSA cohorts."
 ---

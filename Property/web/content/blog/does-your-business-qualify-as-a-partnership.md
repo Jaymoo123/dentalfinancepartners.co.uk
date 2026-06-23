@@ -45,8 +45,8 @@ faqs:
   - question: "How does this page differ from the existing SDLT Sch 15 mechanics page on your site?"
     answer: "This page is the prior definitional layer answering 'does this arrangement qualify as a partnership in the first place?' The existing partnership SDLT Sch 15 mechanics page covers the layer beneath: assuming the partnership exists, how is the sum-of-lower-proportions calculated, what is the partner-LtdCo proportion match requirement, what edge cases apply. Reading sequence: this page first to settle the existence question; then the mechanics page once you know you qualify. The pages cross-link in both directions."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Definitional / taxonomy pillar page for partnership existence test under PA 1890 s.1 + s.2. Load-bearing point: s.2(1) co-ownership negative for property audiences (joint ownership is NOT partnership by itself). Operative trigger: SA800 filing under TMA 1970 s.12AA. Operative tax-saving: FA 2003 Sch 15 partnership-incorporation relief. Disambiguates: civil-partnership (CPA 2004 marriage-equivalent) vs business-partnership (PA 1890). Forward-links to SDLT Sch 15 mechanics, LP/LLP siblings, partnership-agreement future page."
 ---

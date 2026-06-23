@@ -42,8 +42,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Land Remediation Relief depth page sitting adjacent to the CAA 2001 Bucket C cluster. Anchored on CTA 2009 Part 14 (ss.1143-1175 — earlier 1143-1181 range was incorrect; Part 14 ends at s.1175 per legislation.gov.uk verified 2026-05-25 as part of Wave 8 close, F-4(B) catch by Bucket B B9) statutory text verified at write time. Critical section-number discipline: s.1147 is the standard deduction (100%), s.1149 is the additional 50% deduction (together = 150%), s.1150 is the polluter-pays exclusion, s.1151 is the credit entitlement, s.1152 is the qualifying land remediation loss definition, s.1154 is the 16% credit rate (NOT s.1149 as some draft commentaries cite). 1 April 1998 derelict-land gateway at s.1149(3)(b). Corporate-only relief (s.1143 introductory wording). Regime-agnostic: applies to both residential and commercial schemes. Two worked claims: developer SPV £180k cleanup profit-making = £270k deduction × 25% CT = £67.5k saving; investor LtdCo £80k cleanup loss-making = £120k qualifying loss × 16% credit = £19,200 cash payment. Five-document defensive pack covered (site investigation report; remediation specification with QS apportionment; connected-persons declarations; title chain; dereliction history). Polluter-pays exclusion is the most-tested condition on enquiry; CTA 2010 ss.1122-1123 connected-persons definitions apply. Statutory citations verified against legislation.gov.uk on 2026-05-23; no §25 house position anchor exists (LRR is CTA 2009, not CAA 2001 — flag for inter-wave consistency)."
 ---

@@ -45,8 +45,8 @@ faqs:
   - question: "What about UK property gains under NRCGT after a cascade resolution?"
     answer: "NRCGT under TCGA 1992 s.1A and Schedules 1A, 1B, and 4AA applies to disposals of UK land and UK property-rich entity shares by non-UK residents. Where the cascade resolves to non-UK residence, you must file the NRCGT 60-day return regardless of treaty position; the UK retains taxing rights on UK property gains under Article 13. The April 2015 rebasing for direct disposals of UK residential property by non-residents, and the April 2019 extension to commercial property and indirect disposals, both apply. You then claim foreign tax credit for the UK NRCGT paid in the residence state, under that state's domestic rules and the treaty's elimination article."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Generic Article 4 cascade page for UK property owners. Differentiator vs the bilateral applied pages (B2 UK-US, B3 UK-France, B4 UK-Spain, B5 UK-India, B6 UK-UAE, B7 UK-Italy): this page walks the cascade mechanics in their generic OECD form rather than applying them to a specific bilateral. Differentiator vs B7 (UK-Italy applied): B7 resolves at Step 2 with a split-family executive; this page walks all five steps with depth on Step 3 (habitual abode) and uses a UK-Portugal retired-landlord worked example that resolves at Step 3."
 ---

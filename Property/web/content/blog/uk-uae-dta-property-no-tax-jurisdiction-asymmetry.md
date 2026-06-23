@@ -45,8 +45,8 @@ faqs:
   - question: "What is the single biggest mistake UAE-resident UK landlords make?"
     answer: "Assuming that Dubai residence reduces UK tax. It does not. The 2016 treaty allocates UK rental and UK property gains to the UK, and the UAE has nothing to credit. UK income tax (with personal allowance and s.24 credit), UK NRCGT (18% / 24%), and UK NRL withholding (20% pre-NRL1) all apply at full UK rates. The advantage of Dubai residence is the absence of additional UAE tax on the same income, not the reduction of UK tax. Readers who model the cross-border position correctly avoid the disappointment of discovering, three months into Dubai residence, that their UK rental tax is unchanged."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-UAE treaty page for property investors. Differentiator: no-personal-income-tax jurisdiction creates a one-way credit asymmetry. Primary corrective: UAE residence does not shield UK property from UK tax. Worked example: Tom, UK national in Dubai, three UK BTLs (London Zone 2 / Manchester / Bristol). Companion to the Wave 2 Session C Dubai-pathway page (treaty-mechanics here; landlord-side procedural checklist there)."
 ---

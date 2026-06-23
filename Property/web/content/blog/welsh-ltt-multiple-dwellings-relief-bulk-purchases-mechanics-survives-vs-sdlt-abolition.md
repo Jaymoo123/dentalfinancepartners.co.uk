@@ -47,8 +47,8 @@ faqs:
   - question: "Where does this page sit alongside the other Welsh LTT pages?"
     answer: "This page is the depth page on Welsh MDR specifically. The Welsh main rates and higher rates are on the rates entry pages (main rates and higher rates companions). The Welsh derelict-property refund route, which can reclassify severely derelict dwellings as non-residential and access the non-residential band table without needing MDR, is on its own companion page. For the SDLT context (England + NI, where MDR is abolished), the SDLT BTL rates and surcharge pillar covers the post-abolition landscape. For portfolio incorporation specifically, our incorporation pillar covers the CGT and corporation tax side; this MDR page covers the LTT side."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Welsh LTT multiple dwellings relief under LTTA 2017 Sch 13, with the mean-consideration formula, the 7 February 2025 subsidiary-dwelling carve-out (Land Transaction Tax (Modification of Multiple Dwellings Relief) (Wales) Regulations 2025), the 2026 1% to 3% minimum-rate floor (Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2026, commencement TBC at write time), three worked examples and the contrast against SDLT MDR abolition under Finance (No.2) Act 2024."
 ---

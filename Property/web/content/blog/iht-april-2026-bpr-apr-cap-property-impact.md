@@ -45,8 +45,8 @@ faqs:
   - question: "What does the cap mean for an estate with no qualifying property?"
     answer: "Nothing directly. The cap is the maximum 100% relief on BPR/APR-qualifying property. An estate with no qualifying property had no relief to cap. The base IHT position (40% on the chargeable estate above NRB and RNRB) is unchanged by the reform. The cap matters for estates that genuinely qualified for relief pre-2026; for the rest, it's news rather than impact."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 2 A4 (IHT). Event-driven reform-impact page on the 6 April 2026 BPR/APR cap. Distinct framing from A1 (decision-led), A2 (statute walkthrough), A3 (timeline mechanics): A4 is a 'what changed, who's affected, what to do' update for the specific reform. Post-F-102 quantum correction (2026-05-27): cap is £2.5m enacted under IHTA 1984 s.124D as inserted by FA 2026 Sch 12 para 4, NOT the £1m headline that still appears on the GOV.UK announcement-stage summary. Structural rules (AIM separate sub-tier, anti-forestalling, trust anti-fragmentation) verified against legislation.gov.uk."
 ---

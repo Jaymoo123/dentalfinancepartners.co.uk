@@ -43,8 +43,8 @@ faqs:
   - question: "Who actually pays the LBTT in practice?"
     answer: "The trustee is jointly liable under Sch 18 para 6, but the funds typically come from the beneficiary either via the trust assets or directly to the conveyancer. The trustee has a right of indemnity against trust assets and the beneficiary. In a parent-for-child arrangement, the practical flow is usually that the child (or the parent on the child's behalf, by gift) provides the LBTT funds; the trustee signs the LBTT return and submits payment to Revenue Scotland; the substantive tax position is the child's. The joint-liability mechanism in para 6 is the statutory backstop for cases where the trustee cannot recover from the beneficiary, but it does not change who the taxpayer substantively is."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Operational page on Scottish LBTT bare-trust treatment, written for trustees, beneficiaries, and their advisers. Leads with the Sch 18 para 5 look-through principle (the beneficiary is the chargeable person) and walks each LBTT relief (FTB, ADS, MDR, group, sub-sale, acquisition, partnership) showing whose status is tested in each case. Foregrounds the parent-for-minor-child and nominee-arrangement scenarios and the bare-vs-settlement characterisation trap that collapses the look-through. Sits upstream of the corporate-restructuring bare-trust page; adjacent to the FTB and ADS deep pages."
 ---

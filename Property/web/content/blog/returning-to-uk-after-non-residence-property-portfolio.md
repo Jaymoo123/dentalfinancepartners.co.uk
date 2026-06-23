@@ -42,7 +42,7 @@ faqs:
     answer: "P85 is the departure form, not the return form. There is no equivalent return form. On resumption of UK residence, register for self-assessment if you are not already registered (most former NRL claimants will remain registered). The return-year SA100 with the SA109 residence supplement records the SRT outcome and (where applicable) the split-year case. The s.10A recapture (if applicable) is computed on the SA108 (capital gains supplement) with the deemed-accrual mechanic."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "ICAEW chartered accountants specialising in UK property tax"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Reviewed against FA 2013 Schedule 45 (SRT and split-year Cases 1-8), TCGA 1992 s.1A (NRCGT), s.10A (temporary non-residence 5-year recapture), HMRC Capital Gains Manual CG26500-CG26580 (s.10A operational guidance verified 2026-05-22), HMRC RDR3 (SRT statutory residence test guidance), HMRC non-resident landlord scheme guidance (NRL approval cancellation), section 264 ITTOIA 2005, section 24 Finance (No.2) Act 2015, section 56 ITA 2007 (personal allowance), Schedule 9A FA 2003 (2% non-resident SDLT surcharge), Schedule 10 FA 2003 (SDLT amendment / refund mechanic), HMT/HMRC 'Reforming the taxation of non-UK domiciled individuals' policy paper (30 October 2024), and Finance Act 2025 Schedule 9 (FIG regime). Verified 2026-05-22 against gov.uk."
 ---

@@ -43,8 +43,8 @@ faqs:
   - question: "Does the associated-companies count change mid-year if I incorporate a new SPV?"
     answer: "Yes. The associated-companies count for an accounting period is the number of companies associated at any time during the period. Adding a new SPV mid-year therefore increases the divisor for that whole accounting period, not just the months after incorporation. Where a five-company portfolio adds a sixth SPV in month nine, the £50,000 and £250,000 thresholds drop from one-fifth to one-sixth for the whole year. Year-end planning around incorporation timing matters for the existing companies' tax bills, not only the new one."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Mechanics-focused page that fixes the common misconception that small property SPVs automatically pay 19% corporation tax on their first £50,000 of profit; the associated-companies rule routinely shrinks that band to £10,000 or less in real portfolio structures."
 ---

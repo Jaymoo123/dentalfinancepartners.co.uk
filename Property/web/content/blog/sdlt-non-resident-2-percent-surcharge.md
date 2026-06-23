@@ -41,8 +41,8 @@ faqs:
   - question: "How is the 2% surcharge claimed back on becoming UK-resident?"
     answer: "The refund is claimed through the same gov.uk online SDLT refund service used for HRAD claims. The buyer applies once they have spent 183 days in the UK in any 365-day window starting up to one year before the effective date and ending up to one year after. The 2-year claim deadline runs from the effective date. The application requires the original UTRN from the SDLT return, evidence of UK presence (passport stamps, employer records, tenancy agreements, utility bills), and the refund amount. HMRC typically processes refunds within 4 to 12 weeks; complex cases involving overseas evidence can run longer."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Mechanics page for the 2% non-resident SDLT surcharge under Schedule 9A FA 2003. Emphasises the SDLT-specific residence test (different from income tax SRT) and the refund route on becoming UK-resident."
 ---

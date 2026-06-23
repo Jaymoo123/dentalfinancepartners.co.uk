@@ -41,8 +41,8 @@ faqs:
   - question: "Does the reverse charge for construction services apply on conversion projects?"
     answer: "Yes, where the work falls within the scope of the Construction Industry Scheme. The VAT Domestic Reverse Charge for Construction Services (introduced 1 March 2021) applies to standard-rated and reduced-rated construction services between VAT-registered contractors and subcontractors who are CIS-registered. The reverse charge does not apply to zero-rated supplies, so the Sch 8 Group 5 Item 1(b) zero-rate flows straight through. The reverse charge does apply to the 5% conversion rate under Sch 7A Group 6 and Group 7, with the customer accounting for the 5% VAT under reverse-charge mechanics rather than the contractor charging it. See our dedicated reverse-charge guide for the contractor-vs-customer mechanics."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A applied page. Sibling to existing new-build (Sch 8 Group 5 Item 1(a)) and DIY (Notice 719) pages, with clear topical boundary: A6 covers Item 1(b) zero-rate plus Sch 7A Groups 6 and 7. Anti-templating spine: three-relief overview, per-relief depth, certification, route-choice, downstream position, two worked examples, misconceptions."
 ---

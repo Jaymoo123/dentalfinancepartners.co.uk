@@ -43,8 +43,8 @@ faqs:
   - question: "Are there penalties for getting the surrender wrong?"
     answer: "The main risk is a denied claim rather than a penalty in the conventional sense. If the surrendering company turns out not to have had the loss available (because of an error in the loss calculation, a missed associated-company adjustment, or a failure of the 75% test on a relevant date), HMRC will withdraw the relief in the claimant company. The claimant company then faces an additional corporation tax bill plus late-payment interest from the original due date. Penalties for inaccuracy in the return can apply where the error reflects a failure to take reasonable care. Routine group relief claims that follow the steps in this article are unlikely to attract penalties even if they are subsequently amended."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Practical guide written for landlords running multiple SPVs who want to know whether and how group relief actually applies to their setup."
 ---

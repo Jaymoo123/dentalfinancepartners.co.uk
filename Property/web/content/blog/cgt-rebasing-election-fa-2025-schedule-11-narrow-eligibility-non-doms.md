@@ -43,8 +43,8 @@ faqs:
   - question: "Does the election interact with the TRF or FIG regimes?"
     answer: "Separately. The Sch 11 rebasing election operates on the CGT base cost for a specific disposal; the TRF operates on income tax / CGT remittance treatment for designated amounts; the FIG operates on income tax / CGT relief for qualifying new residents. As an eligible non-dom you can use Sch 11 rebasing for a non-UK situs asset disposal AND TRF designation for pre-2025-26 unremitted foreign income AND (if you qualify, which is rare for long-residence non-doms) FIG relief for a new qualifying tax year. The three reliefs run on different mechanisms and can apply to different parts of your tax position in the same year. Run each separately and stack the relief where it applies, with documentation supporting each independent claim."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket A (A6). CGT rebasing standalone. Five cumulative conditions verbatim against FA 2025 Schedule 11 para 1(1) on legislation.gov.uk 2026-05-25. UK property structurally excluded by condition 3 (the 6 March 2024 to 5 April 2025 reference period). Active s.809B claim under condition 5 (s.809D auto-RB and s.809E small-income do NOT count). Rebasing date 5 April 2017 per para 1(2) verbatim (NOT 2019 or 2025 as appeared in earlier consultation drafts). Per-disposal election under para 3 with TMA 1970 ss.42-43 procedure. Election irrevocable. Almeida Lisbon-property worked example: £120k CGT saving. Anti-templating against A4+A5 TRF cluster (different tax base, different mechanism); against A1-A3 FIG cluster (different population, different relief structure). Brief framing of 5 conditions verified verbatim; HP §17.10 architecture matches."
 ---

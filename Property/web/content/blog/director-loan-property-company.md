@@ -36,8 +36,8 @@ faqs:
   - question: "What records do I need for a director loan account?"
     answer: "Keep a record of every movement between you and the company: cash you put in, expense reimbursements, company payments for personal items, declared salary and dividends whether or not paid, pension contributions, opening balances from the prior year, and bank statements for the full period. Where the balance is material in either direction, a short written loan agreement and a board minute recording the terms protect you on an HMRC enquiry, a future sale of the company and a counterparty insolvency. Poor records are the most common reason a small property company enquiry escalates."
 dateModified: "2026-05-31"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
 editorialNote: "Plain-English overview of how director loans work in a UK property company, written to sit above our deeper mechanics guide and to fix the stale rate and official-interest figures that circulate in older guides."
 ---

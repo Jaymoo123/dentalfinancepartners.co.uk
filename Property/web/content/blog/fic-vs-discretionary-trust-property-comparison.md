@@ -45,8 +45,8 @@ faqs:
   - question: "Is there a 'sweet spot' portfolio size for the FIC route?"
     answer: "Roughly £2m to £15m of property value, where the FIC setup and ongoing costs are recovered by tax efficiencies and where the simpler trust route does not benefit from professional trustees. Below £2m the structural overhead is excessive; above £15m the combined FIC-plus-trust structure becomes the standard. The exact break-points are family-specific."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "FIC daughter. Side-by-side comparison with discretionary trusts; written for the reader weighing the two routes for intergenerational property wealth transfer."
 ---

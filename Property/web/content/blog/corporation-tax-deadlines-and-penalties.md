@@ -40,8 +40,8 @@ faqs:
   - question: "Can I appeal a Schedule 18 paragraph 17 late-filing penalty?"
     answer: "Yes. Schedule 18 paragraph 17(5) provides a reasonable-excuse defence; the appeal route runs first to HMRC, then to the First-tier Tribunal under TMA 1970 section 31A read with the Tribunals, Courts and Enforcement Act 2007. Perrin v HMRC [2018] UKUT 156 (TCC) sets the controlling four-stage reasonable-excuse test. HMRC v Hok Ltd [2012] UKUT 363 confirms that the FTT cannot consider general fairness or HMRC's failure to send a reminder; only reasonable excuse and the application of the statutory framework. Strict 30-day windows apply from each HMRC decision."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

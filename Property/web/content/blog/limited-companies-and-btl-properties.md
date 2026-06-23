@@ -43,8 +43,8 @@ faqs:
   - question: "What are the most common operational mistakes BTL LtdCo founders make?"
     answer: "Six recurring traps. (1) Missing the s.859A 21-day MR01 window after refinancing; the company is the filer, not the lender, and missing the deadline puts the lender's charge at risk. (2) Treating director-loan-OUT as a tax-free extraction; s.455 fires at 35.75% on balances outstanding 9 months and 1 day after year-end, plus BIK on the interest-free element above £10,000. (3) Electing FRS 102 fair-value without understanding the deferred-tax-on-revaluation overhead under Section 29. (4) Mixing personal and company bank accounts, which opens director-DLA risk and audit-trail problems and creates s.455 exposure if HMRC reclassifies personal drawings as participator loans. (5) Failing to file a NIL ATED return on a relief-eligible high-value dwelling; penalties apply to the late NIL return. (6) Failing to update Companies House for ECCTA-compliant registered email, appropriate registered office, and ID verification when prompted; strike-off action follows persistent non-compliance."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Operational handbook for a BTL limited company through its lifecycle. Sits below the broad LtdCo entity pillar (limited-companies, A20) and below the BTL-specific complete guide. Three load-bearing sub-pillars: FRS 105 vs FRS 102 fair-value accounts decision; CA 2006 s.859A 21-day MR01 charge plumbing; lifecycle / exit decision tree (asset sale vs share sale vs DS01 vs MVL with anti-phoenix TAAR ITTOIA 2005 s.396B per F-11 correction). Rate stack at 6 April 2026: CT 19/26.5/25, dividend 10.75/35.75/39.35, s.455 35.75%. ss.464C/D omitted by FA 2025 s.81(3)(b)-(4) from 30 October 2024."
 ---

@@ -47,8 +47,8 @@ faqs:
   - question: "How does the divorce exemption compare to the broader spouse-transfer rules?"
     answer: "Three distinct mechanisms operate at the spouse level for SDLT. First: Sch 3 paragraph 1 (general spouse-transfer exemption for gifts during marriage, where no consideration passes, including no mortgage assumption). Pre-divorce inter-spousal gifts during marriage are within this exemption. Second: Sch 3 paragraph 3 (divorce / dissolution transfer exemption, the focus of this page). Pursuant-to-dissolution transfers are within this exemption. Third: FA 2003 s.43 / s.55 connected-party chargeable-consideration framework. Where neither exemption applies (a pre-divorce inter-spousal transfer with mortgage assumption, for example), the standard chargeable-consideration rules determine whether SDLT applies. The three mechanisms cover most landlord-couple property scenarios; the structural choice between them depends on the marital state (married, separating, divorced) and the consideration profile (no consideration, mortgage assumption, cash payment) at the time of transfer."
 dateModified: "2026-05-24"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-24"
 editorialNote: "SDLT divorce transfer exemption Sch 3 para 3 + CGT s.58 + s.225B integration. §1.D verbatim lock held. Hartfield-divorce worked example walks both the matrimonial-home transfer (Sch 3 para 3 + s.225B PPR preserved) and the BTL transfers (Sch 3 para 3 but s.58 closed at 22 months post-separation, MV CGT crystallises). Third-party-transfer trap surfaced; mortgage-assumption historic ambiguity resolved per current SDLTM07650 position."
 ---

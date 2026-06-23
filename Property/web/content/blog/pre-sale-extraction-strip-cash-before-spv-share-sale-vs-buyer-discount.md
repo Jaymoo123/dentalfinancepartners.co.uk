@@ -45,8 +45,8 @@ faqs:
   - question: "When should I bring in an adviser?"
     answer: "Before signing heads of terms with the buyer. The pre-sale-strip decision is one of the most expensive single decisions in a property SPV's life, and the negotiation posture between buyer and seller on the cash-handling mechanic is set at heads of terms. Adviser involvement at heads-of-terms stage is the difference between (a) negotiating a clean pre-sale dividend with s.701 clearance and CGT treatment on the share consideration, and (b) signing an agreement that locks in a cash-left-in structure that fails TiS. Property Tax Partners runs pre-sale planning sessions ahead of share-sale heads of terms; if you are within 6 months of a planned SPV sale, the form below routes to the right team."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Pre-sale event applied page. Three strip routes (pre-sale dividend / pre-sale pension / cash-left-in) against the ITA 2007 Pt 13 Ch 1 TiS counteraction framework. Distinct from Wave 1 B3 (SSE wrapper for corporate-shareholder sale) by being the cash-strip mechanic itself; distinct from Wave 6 A4 (MVL exit) by being the share-sale-with-buyer alternative."
 ---

@@ -42,8 +42,8 @@ faqs:
   - question: "Do I need landlord insurance during void periods or renovation?"
     answer: "Yes, and the type of cover matters. An empty property is a higher risk, so most insurers apply unoccupancy conditions (regular inspections, draining systems, restricted cover) once a property is vacant beyond a set period. Renovation and refurbishment usually need specific cover or a notified extension, because standard policies often exclude works. Tell your insurer before a property becomes vacant or before works start. Cover is normally available throughout a void within a continuing letting business."
 dateModified: "2026-05-30"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-30"
 editorialNote: "Full rewrite: re-scoped onto coverage selection by property type, all general-market price figures removed, tax-deductibility material cut to a signposted summary linking the specialist canonical."
 ---

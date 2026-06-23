@@ -43,8 +43,8 @@ faqs:
   - question: "What if I sell the foreign property mid-tax-year?"
     answer: "The MTD quarterly cycle continues to the point of disposal, then cessation reporting kicks in. The quarter in which you sell the property reports the rental income up to disposal date; the final declaration for the year reconciles the year as a whole. The disposal itself is a capital gains event reported through the UK CGT regime (the foreign-property-disposal CGT 60-day return obligation applies if there is a chargeable gain), separate from the MTD ITSA income filings. If the foreign disposal triggers local-jurisdiction tax (Spanish capital gains, French plus-value etc), the foreign tax credit at final declaration handles the income-tax side, and the CGT side is dealt with separately."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 net-new (Session B, MTD ITSA operational details). Operational reporting mechanics for foreign rental income inside the MTD ITSA cycle from 6 April 2026. Distinct from the existing Wave 2 foreign-tax-credit page which covers credit-mechanism only; this page covers the MTD reporting flow. Cross-links to the FTC page as the credit-mechanism reference."
 ---

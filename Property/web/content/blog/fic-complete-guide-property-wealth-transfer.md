@@ -47,8 +47,8 @@ faqs:
   - question: "How does an FIC interact with the 15% flat-rate SDLT and ATED?"
     answer: "An FIC is a non-natural person for ATED and Schedule 4A SDLT purposes. Property acquisitions above £500k by the FIC are within the 15% SDLT flat rate unless a relief is claimed; properties held above £500k are within ATED unless a relief is claimed. The standard reliefs (Property Rental Business Relief at acquisition and annually) apply where the FIC lets commercially. See our dedicated guides on ATED and the 15% SDLT interaction for how the reliefs and the mechanics work."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "FIC bucket. Comprehensive reference companion to the existing decision-focused 'Is It Worth It?' page. Cross-linked bidirectionally (forward from here; back-link from existing page raised as INTERNAL_LINK flag in track1_site_wide_flags.md)."
 ---

@@ -41,8 +41,8 @@ faqs:
   - question: "Is the EPC C 2030 framing the same in Scotland and Northern Ireland?"
     answer: "No. EPCs in Scotland operate under separate Scottish Building Standards regulations and the Energy Performance of Buildings (Scotland) Regulations 2008. Northern Ireland operates under separate Northern Ireland legislation. This page covers England and Wales, where the operative statutory instruments are SI 2012/3118 (EPC architecture) and SI 2015/962 (MEES). Landlords with pan-UK portfolios should treat each jurisdiction's regime separately rather than assuming the England-and-Wales framework applies UK-wide."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B15: definitional pillar on-ramp for the bare query 'energy performance certificates EPC'. Walks the EPB Regulations 2012 (SI 2012/3118) EPC architecture, the MEES Regulations 2015 (SI 2015/962) E floor with £3,500 landlord cost cap, exemptions, penalties, grants, and the capital-vs-revenue tax line. Critical do-not-write per §26.3 and §26.8: the EPC C by 2030 trajectory is government policy aspiration only, NOT enacted statute; the £10,000 cap framing is policy aspiration only. Forward-links to the existing EPC C 2030 mythbuster deep-dive and the existing EPC improvement grants deep-dive. Category routing: `landlord-tax-essentials` matching existing site EPC/MEES pages. No new HP-lock raised."
 ---

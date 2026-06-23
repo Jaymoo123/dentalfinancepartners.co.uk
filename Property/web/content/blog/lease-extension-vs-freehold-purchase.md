@@ -37,8 +37,8 @@ faqs:
     answer: "CGT: the leaseholder pays no CGT on extension or enfranchisement because the consideration flows outward, not inward. The freeholder may have a chargeable disposal under TCGA 1992 (residential rates 18% or 24% for individuals; corporation tax for a corporate freeholder). IHT: the transaction converts cash to an interest in land in the leaseholder's hands, with no immediate IHT consequence; the post-extension lease has a higher reversionary value. ATED: a corporate-held leasehold residential dwelling above £500k may face a re-band on its next ATED valuation date if the extension or enfranchisement materially increases the deemed market value of the corporate-owned interest."
   - question: "Should a single flat-leaseholder ever default to collective enfranchisement?"
     answer: "Only with the participation commitment of at least 50% of qualifying tenants in the block, plus alignment on the post-acquisition management structure (nominee freehold-owning company, RTM-equivalent governance, service-charge architecture). Where neighbour coordination is weak, individual lease extension under LRHUDA 1993 Chapter II is the pragmatic route: unilateral, predictable timeline, and post-LFRA-2024 delivers a fresh 990-year peppercorn-rent lease that solves the lender and ground-rent problems on its own. Collective enfranchisement remains the better answer where group cohesion exists and the long-term governance upside is wanted."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

@@ -37,8 +37,8 @@ faqs:
     answer: "Residence drives income tax and CGT (post-FA 2025); residence (via the LTR test) drives IHT (post-FA 2025); domicile drives only the residual trust-attribution mechanics, private international law, and certain DTA contexts. The interaction is simple at headline level: residence is the primary concept; domicile is the legacy and niche concept. The complexity sits in the transitional architecture for the legacy non-dom cohort (TRF + CGT rebasing) and the trust-side transitional rules."
   - question: "What should a UK-property investor do?"
     answer: "Three-step assessment: determine current SRT residence for the relevant tax year; determine LTR status under the IHT 10-of-20 test; identify any pre-2025 legacy non-dom claims that may activate the TRF window or the CGT rebasing election. For landlords with overseas income or gains, model the FIG or arising-basis choice year by year. For landlords approaching the 10-year LTR threshold, review trust structures and worldwide-asset positions."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

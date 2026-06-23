@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from the property-companies marginal relief page?"
     answer: "That page is the property-specific application of marginal relief, with property-LtdCo worked examples and the CIHC-via-connected-tenant trap in depth. This page is one layer up: marginal relief is lever 2 in the seven-lever map (associated-companies divisor management), and this page funnels readers down to the marginal-relief child page for the depth treatment. Reading sequence: this page first (which levers apply to me?), then the marginal-relief child (what is the maths?), then the rates page (what are the numbers?)."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Pillar / orchestration page for CT planning across UK property companies. Seven-lever map (CIHC, associated companies, extraction mix, group relief, s.171/179, capital allowances, CIR). Cross-links out to specialist child pages for depth on each lever. Five worked scenarios show lever interactions. Distinct from rates, marginal-relief mechanics, extraction analysis child pages."
 ---

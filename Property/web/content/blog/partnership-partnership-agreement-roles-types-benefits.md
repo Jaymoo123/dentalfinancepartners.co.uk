@@ -43,8 +43,8 @@ faqs:
   - question: "What are the common partnership-agreement mistakes?"
     answer: "Seven keep coming up. (1) No written agreement at all, so the s.24 defaults govern with outcomes that suit nobody. (2) A generic template copied off the internet with no property-specific drafting. (3) An agreement silent on s.33(1) continuation, so a partner's death triggers automatic dissolution. (4) An agreement silent on the buyout formula, so an exit dispute has nothing to anchor it. (5) An LLP agreement that creates accidental salaried-member exposure, with active members' capital contributions below the Condition C threshold. (6) An LLP agreement that creates accidental mixed-membership exposure, with corporate-member allocations not documented against the arm's-length test. (7) An agreement that ignores s.14 holding-out exposure, leaving a sleeping partner named on external documents."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Cross-cutting partnership-agreement-and-roles practical handbook. Sits across the partnership-existence definitional layer (A7 does-your-business-qualify-as-a-partnership), the LP-specific compliance layer (A3 companies-house-changes-limited-partnership-requirements), and the LLP-specific operational handbooks (llp-accounts and llp-and-taxation-benefits siblings this batch). Anchors to live §11.C cluster (parent + §11.C.X salaried-member + §11.C.Y mixed-membership + §11.C.Z LLP accounts sub-locks) and live §11.B (LP reforms). Load-bearing point: PA 1890 s.24 nine defaults + s.26 dissolution-on-notice + s.33(1) dissolution-on-death + s.14 holding-out are operationally inappropriate for typical property partnerships in the absence of a written agreement. Civil partnership (CPA 2004 marriage-equivalent) disambiguated cleanly from business partnership (PA 1890)."
 ---

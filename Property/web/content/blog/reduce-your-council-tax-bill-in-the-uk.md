@@ -37,8 +37,8 @@ faqs:
     answer: "Apply to the local authority's council tax department, typically online via the LA website. Supporting evidence is required depending on the route: proof of sole residence (utility bills, voter roll, tenancy agreement) for the single-person discount; a student certificate from the institution for the student exemption or disregard; medical evidence for the disability-band reduction; death certificate and probate-pending evidence for the post-death class. The application processing time varies but cooperative cases are typically resolved within 28 days."
   - question: "How far back can a council tax discount be backdated?"
     answer: "Statutory entitlements (section 11 discount, SI 1992/558 exemption, SI 1992/554 disability reduction) are typically backdated to the date the entitlement arose, subject to the LA's evidential satisfaction. The council tax collection limitation period under Schedule 4 LGFA 1992 is typically 6 years. CTR scheme backdate windows are shorter and vary LA-by-LA: many working-age CTR schemes allow only one or three months of backdate. Apply promptly to avoid losing entitlement to time-bar effects."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 ---
 

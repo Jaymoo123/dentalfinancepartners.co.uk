@@ -41,8 +41,8 @@ faqs:
   - question: "How does CGT interact with the SDLT position on an inherited property?"
     answer: "CGT and SDLT are separate. The deceased's estate takes the property at market value on death (the death-uplift), so any pre-death gain is washed out for CGT purposes. The beneficiary's CGT base cost is that uplifted market value. SDLT on the assent is nil (no consideration). When the beneficiary later sells, they compute CGT on the gain since the death valuation; the buyer pays SDLT on the standard rates. The death-uplift is the structural reason inheritance is often a better moment to receive UK property than a lifetime gift, where neither CGT uplift nor SDLT advantage applies."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Five-category breakdown of probate property transfers and the SDLT treatment of each, with explicit treatment of the additional dwellings surcharge and the Sch 6A property-trader relief."
 ---

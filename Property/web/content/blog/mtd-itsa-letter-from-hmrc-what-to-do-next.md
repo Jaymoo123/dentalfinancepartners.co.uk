@@ -48,7 +48,7 @@ faqs:
     answer: "Contact HMRC explaining the cessation date of the self-employment. The MTD obligation may still apply if your remaining qualifying income (property rents alone, post-cessation) is above the cohort threshold. If your only qualifying income on the 2024/25 return was the now-closed self-employment, the obligation may not apply from the mandate date. The right action is to surface the cessation to HMRC promptly so the classification can be reviewed; the wrong action is to assume HMRC's system will automatically pick up the closure."
 dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK property tax specialists, ATT / CTA qualified"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Verified against gov.uk MTD ITSA outreach campaign and house position §3 / §19.1-19.3 on 2026-05-22. Letter described per HMRC's published outreach pattern (late 2025 onwards for the April 2026 cohort, by reference year)."
 ---

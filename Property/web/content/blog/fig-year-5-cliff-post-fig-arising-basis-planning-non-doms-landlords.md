@@ -43,8 +43,8 @@ faqs:
   - question: "Does the pre-cliff planning carry any HMRC enquiry risk?"
     answer: "Standard cross-border-advice enquiry risk applies. HMRC's pattern in non-dom and FIG cases focuses on three things: residence-history evidence (whether the s.845B(1)(c) 10-year prior-non-residence test is genuinely satisfied or has gaps); foreign-source characterisation (whether income claimed as foreign is actually foreign-source per ITTOIA 2005 s.845H and not UK-source mischaracterised); and connected-party gift / trust arrangements that may engage the IHTA 1984 s.74A anti-avoidance rule (where the s.48ZA(8) anti-avoidance trigger applies to defeat the excluded-property claim). Pre-cliff planning that involves substantial gift or settlement steps should be documented robustly: the donor's non-LTR status at the date of each step, the genuine non-UK-situs character of the assets, and the absence of any consideration-flowing-back arrangement. Standard tax-advice quality discipline applies; the pre-cliff levers are entirely legitimate where the underlying conditions are met."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket A (A3). Post-window FIG-cliff planning companion to A1 (eligibility) and A2 (election mechanics). Verbatim ITTOIA 2005 s.845B(2) 4-year window (qualifying year plus next 3 tax years); no taper; FA 2025 s.40 abolishes s.809B fallback. Three structural pre-cliff levers walked: non-UK-situs gift while non-LTR (IHTA s.6); offshore trust settlement while non-LTR settlor (IHTA s.48ZA(2) per A8 lock); foreign income acceleration into FIG-window years. TRF distinction (legacy cohort, NOT for new arrivals). FIG-vs-LTR clock asymmetry (4 years vs 10 years; pre-cliff IHT planning still available in years 5-10). Adetoun worked timeline showing operational levers year by year. Category overridden→non-resident-landlord-tax per FIG cluster convention."
 ---

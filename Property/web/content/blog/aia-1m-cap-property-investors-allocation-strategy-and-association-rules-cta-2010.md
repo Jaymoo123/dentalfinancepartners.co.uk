@@ -49,8 +49,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "AIA depth page for CAA 2001 Bucket C, walking ss.51A-51N end-to-end with focus on the associated-companies sharing rules under s.51E plus the s.51F control definition plus the s.51G shared-premises and similar-activities NACE-classification tests. Worked HoldCo plus three-SPV allocation scenario shows the cap is one, not four. Bidirectional cross-reference with bucket sibling A7 (HoldCo extraction mechanics) is forward-linked as descriptive prose pending A7's commit; manager back-patches at wave merge per §16.32. Statutory citations verified against legislation.gov.uk on 2026-05-23. Note: the slug includes 'cta-2010' but the substantive association rules are entirely in CAA 2001; CTA 2010 references are limited to the s.450/451 control definition imported via CAA 2001 s.51F."
 ---

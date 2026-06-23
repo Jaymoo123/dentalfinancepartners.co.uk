@@ -45,8 +45,8 @@ faqs:
   - question: "How does this page differ from the salaried-member-rules page on your site?"
     answer: "This page covers the mixed-membership partnership rules (ITA 2007 ss.850C to 850E), which target the CORPORATE member of a hybrid LLP. Our companion page on HMRC's salaried-member-rules guidance covers ss.863A to 863G, which target INDIVIDUAL members of an LLP. The two regimes share the FA 2014 Sch 17 origin but apply to different members, have different mechanics, and can fire simultaneously on the same hybrid LLP. Reading sequence: this page for the corporate-member-side anti-avoidance trap; the salaried-member-rules page for the individual-member-side anti-avoidance trap. The pages cross-link."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Hybrid-LLP structure-explainer plus mixed-membership anti-avoidance trap page (corporate-member side). HONEST FRAMING discipline: classic founder + own-LtdCo configuration DOES NOT solve Section 24; mixed-membership reallocation systematically dismantles the income-splitting attraction. HMRC PM210000 then PM213000+ verified as correct entry point (NOT PM236500 per F-10 drift catch). Three residual legitimate uses (external investor, asset protection, FIC succession) surfaced precisely. Cross-link discipline: separate regime from salaried-member rules at ss.863A to 863G (different target, different mechanic, can fire simultaneously)."
 ---

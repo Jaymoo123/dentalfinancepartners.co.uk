@@ -43,8 +43,8 @@ faqs:
   - question: "Do I need a company secretary to navigate this?"
     answer: "No. For a private company under the Companies Act 2006, s.270 disapplies the company-secretary requirement (it remains compulsory only for public companies). For private landlord LtdCos, the practical pattern is the director plus accountant combination: the accountant acts as the informal company secretary, performs the ACSP-registered identity verifications where AML-supervised, and handles the filing flow. The roadmap is operationally workable for a director plus accountant team without a dedicated company secretary."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Company Secretarial Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B10: navigation / practitioner-roadmap framing of the Companies House reforms. Sibling of B8 (taxonomy umbrella) and B9 (business-value umbrella), reading the same ECCTA 2023 regime through a process lens: what to do, in what order, by when, with what artefacts and against what deadlines. Seven-step roadmap as the structural backbone. ECCTA Part 1 crossheading structure verified per §11.A F-10 + F-14 close. ECTEA 2022 s.7 (14-day window from end of update period, not registration anniversary) verified per F-13. LRA 2002 Sch 4A HMLR disposition-block per §11.A. SI 2024/234 (Companies (Registration etc) Regulations 2024) and Companies (Fees) Regulations 2024 nominal references left as verify-at-write per Stage 2 SI-numbering discipline. LP Part 2 phased rollout flagged for campaign-page check at write. F-12 URL discipline honoured. Failure-mode triage and time-cost budget surfaced as the page's most operationally useful artefacts."
 ---

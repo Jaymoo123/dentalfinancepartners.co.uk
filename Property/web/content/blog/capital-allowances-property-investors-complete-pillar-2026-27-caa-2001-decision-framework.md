@@ -51,8 +51,8 @@ sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk
   - gov.uk
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Cluster pillar covering the CAA 2001 capital-allowances framework for property investors in 2026/27, structured as a four-axis decision framework (claimant, property type, expenditure, vehicle) anchored on §25.1-§25.10 of our locked house positions. Opens with the CAA 2001 s.35 dwelling-house misconception (the cluster's central error), walks the in-force vehicles (AIA £1m permanent, main and special-rate pools, 3 per cent SBA, full expensing for companies, 50 per cent special-rate FYA companion, in-force FYAs at s.45D / s.45EA / s.45O), reflects the FA 2025 Sch 5 FHL abolition (commencement 1 April / 6 April 2025), and forward-links the nine bucket sibling pages for depth on disposal mechanics, SBA depth, AIA allocation, full expensing carve-outs, fixtures s.198 election, HMO common parts, FHL post-abolition pools, land-remediation relief, and historic super-deduction clawback. Statutory citations verified against legislation.gov.uk on 2026-05-23."
 ---

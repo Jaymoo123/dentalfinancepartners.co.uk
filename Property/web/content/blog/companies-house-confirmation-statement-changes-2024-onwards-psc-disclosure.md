@@ -45,8 +45,8 @@ faqs:
   - question: "Where do I check the operative state of the regime?"
     answer: "The Companies House campaign page at changestoukcompanylaw.campaign.gov.uk is the canonical commencement-state tracker, with topic sub-pages for confirmation-statement changes, identity verification, ACSPs and the abolition of local registers. The Companies House blog at companieshouse.blog.gov.uk publishes operational announcements as each phase commences. Statutory text sits at legislation.gov.uk for ECCTA 2023 (c. 56) and for the Companies Act 2006 inserted provisions. The current fee schedule sits at gov.uk/government/publications/companies-house-fees. Quote the verification timestamp in any client-facing note so the reader knows when the position was checked."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Annual-housekeeping companion page covering the four ECCTA-driven changes to the confirmation statement that bedded in across 2024 to 2026. Anchored on the Companies House campaign page commencement state plus the gov.uk confirmation-statement-guidance fees and penalty figures, with the personal-code gate at filing drawn explicitly as the link back to the identity-verification regime that commenced 18 November 2025."
 ---

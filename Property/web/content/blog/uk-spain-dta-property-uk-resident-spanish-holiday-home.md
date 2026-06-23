@@ -43,8 +43,8 @@ faqs:
   - question: "Does the UK-Spain treaty have a Mutual Agreement Procedure?"
     answer: "Yes. Article 25 of the 2013 treaty provides for Mutual Agreement Procedure between HMRC and the Spanish Agencia Tributaria. Standard three-year time limit applies from the first notification of the action giving rise to taxation not in accordance with the convention. MAP is appropriate for material bilateral disputes (residency tie-breaker disagreements, transfer-pricing characterisation, IFI / Patrimonio double-tax arguments)."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-Spain treaty page for property investors. Two-way framing: UK-resident with Spanish holiday let AND Spanish-resident with UK BTL. Post-Brexit IRNR rate jump (19% net to 24% gross) is the single most material change since the treaty took force; Spanish wealth tax (Patrimonio) and the 2023 Solidarity Tax on Large Fortunes sit outside the treaty perimeter."
 ---

@@ -12,8 +12,8 @@ image: https://images.pexels.com/photos/7111516/pexels-photo-7111516.jpeg?auto=c
 h1: "VAT Tax Calculator: How Much VAT Will You Actually Pay?"
 summary: "A VAT tax calculator answers one question: how much do you hand HMRC at the end of the quarter? There are two ways to get there. Standard accounting nets the VAT you charged against the VAT you can recover. The Flat Rate Scheme ignores both and takes a fixed percentage of your VAT-inclusive turnover instead. This guide works both methods with property figures, shows which leaves a landlord better off, and flags the 16.5% limited cost rate that quietly kills the scheme for most trades."
 schema: ''
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
 howToSteps:
 - name: "Total the output VAT you charged"

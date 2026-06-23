@@ -43,8 +43,8 @@ faqs:
   - question: "How can I verify that my agent is actually authorised in my Government Gateway account?"
     answer: "Sign into your Government Gateway, navigate to 'Manage my agents' (under Account settings), and you will see a list of agents authorised across each tax service. For MTD ITSA, the authorised agent's firm name appears alongside the 'Making Tax Digital for Income Tax' service label. If the agent expects to be authorised but does not appear, the request likely failed at the email-approval step; re-issue from the accountant side. Checking 'Manage my agents' is the definitive verification mechanism; do not rely on the accountant's confirmation alone, especially in the first quarter after onboarding."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 net-new (Session B, MTD ITSA operational details). Landlord-side walkthrough of the Agent Services Account authorisation flow for MTD ITSA from 6 April 2026. Procedural page; possible HowTo schema candidate (flagged in work-log). Distinct from the existing how-to-register MTD landlord page (which covers landlord self-registration, not the agent route)."
 ---

@@ -41,8 +41,8 @@ faqs:
   - question: "Where can I read more on each of the specific mechanics?"
     answer: "Each mechanic has its own detailed guide: VAT option to tax for commercial property (mechanic, cooling-off, revocation); VAT capital goods scheme (10-year adjustment); VAT partial exemption (standard method, de-minimis); VAT mixed-use property purchase (apportionment); VAT dilapidations payments (supply or damages); VAT property conversion (three reliefs); VAT developer pre-registration input tax (reg 111); VAT long-stay hotel/aparthotel 28-day rule; VAT on cladding remediation (BSA 2022 waterfall); and landlord VAT registration (when required). You will find each one linked further down."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A umbrella decision-framework page. Closes the Wave 5 A bucket as the entry-level upstream classification page for the high-volume 'is rent VATable' search-intent cohort. Forward-links to all 9 sibling depth pages (A1-A9) plus the existing landlord-VAT-registration entry-point. Differentiated from the existing registration page by being per-rental-stream classification rather than registration mechanic."
 ---

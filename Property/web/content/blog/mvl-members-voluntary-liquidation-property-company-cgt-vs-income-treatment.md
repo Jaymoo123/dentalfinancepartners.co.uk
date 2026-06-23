@@ -45,8 +45,8 @@ faqs:
   - question: "Should I MVL the company first or sell the portfolio first?"
     answer: "Sell first, then MVL is the cleaner sequence for most property SPVs. Selling the portfolio inside the company crystallises the gain at corporation tax (25% on the gain net of allowable costs, with marginal relief or small profits rate applying where the SPV qualifies). The post-CT proceeds then sit as cash, and the MVL distributes that cash to shareholders under TCGA 1992 s.122. The shareholder pays CGT on the s.122 distribution at 18% or 24% based on their income band, using the £3,000 annual exempt amount, with no BADR available for the investment SPV. The alternative, distribute the properties in specie and let the shareholder sell them personally, exposes the shareholder to direct property CGT at 18% or 24% with no corporation-tax step and triggers SDLT on the in-specie transfer (because the consideration is the market value of the property under the connected-company rule). The economics depend on the spread between the SPV's accumulated reserves, the unrealised gains in the portfolio, and the SDLT cost on the in-specie transfer. The sell-first-then-MVL route avoids the SDLT problem altogether."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Company-exit endpoint of the extraction sequence. Two distribution pathways (s.1030A capped vs full MVL under s.122), BADR-unavailability for pure-investment property SPVs, ITTOIA 2005 s.396B TAAR mechanics, and two worked scenarios for retire-and-MVL versus sale-then-MVL."
 ---

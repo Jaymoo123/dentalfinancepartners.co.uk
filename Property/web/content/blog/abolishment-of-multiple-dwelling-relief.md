@@ -43,8 +43,8 @@ faqs:
   - question: "Where can I read the operational detail on MDR abolition and the surviving routes?"
     answer: "Our dedicated MDR abolition page works the F(No.2)A 2024 section 7 mechanics in full, including the anti-forestalling architecture under section 7(5), the effective-date analysis under FA 2003 section 119, and the three surviving alternatives in operational terms. The Welsh cross-border position has its own page covering LTTA 2017 Schedule 13 and the Welsh post-1-June-2024 cohort. The six-or-more-dwellings deeming at FA 2003 section 116(7) has a dedicated page for buyers reaching that threshold. For portfolio buyers in the four-to-five-dwelling band where the surviving routes are narrow, an early conversation with a property tax specialist is usually the best route to scoping the SDLT exposure before exchange."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "MegaWave 1 batch M1-A-B1 pick A1. Plain-language taxpayer on-ramp to MDR abolition. Statutory anchors verified verbatim 2026-05-26 at legislation.gov.uk: F(No.2)A 2024 s.7(1) repeal of FA 2003 s.58D + Sch 6B; s.7(3) 1 June 2024 effective-date trigger; s.7(4)(a) substantially-performed transitional carve-out; s.7(4)(b) pre-6-March-2024 contract carve-out; s.7(5) anti-forestalling; s.7(6) Treasury regulation-making power. SDLT residential bands and 5% additional-dwellings surcharge verified verbatim 2026-05-26 at gov.uk/stamp-duty-land-tax/residential-property-rates. Spelling note: 'abolishment' (slug + H1) mirrors the long-tail query verbatim; 'abolition' used throughout the body."
 ---

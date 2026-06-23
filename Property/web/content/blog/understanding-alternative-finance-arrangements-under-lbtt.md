@@ -43,8 +43,8 @@ faqs:
   - question: "Are there any anti-avoidance considerations to be aware of?"
     answer: "Yes. The LBTT(S)A 2013 s.75A anti-avoidance code (the equivalent of the SDLT s.75A general anti-avoidance provision under LBTT) can engage if an alternative-finance structure is used principally to obtain a tax advantage beyond the relief's authorised scope. Project Blue Ltd v HMRC [2018] UKSC 30 (an SDLT case) is the leading Supreme Court authority on substance-over-form analysis of alternative finance structures; the principles apply in adapted form to LBTT. Conventional Sharia-compliant home purchase plans with bona fide regulated financial institutions do not engage the anti-avoidance code. Structured arrangements using nominees, artificial intermediaries, or structures designed principally to escape ADS or other surcharges are at materially higher risk of anti-avoidance challenge."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Canonical site treatment of LBTT alternative-finance relief under LBTT(S)A 2013 Schedule 7. Covers the three head categories (Ijara Part 1, Diminishing Musharaka Part 2, Murabaha Part 3), the exempt-interest treatment for the institution's interim holding under para 21, the financial-institution definition imported from ITA 2007 s.564B (NOT FA 2003 s.73BA which is the SDLT spine; §16.36 Stage 2 statutory cross-check catch), the ADS interaction on the buyer's substantive acquisition, the joint-buyer treatment, the procedural claim route under LBTT(S)A 2013 s.30(1), and the three-jurisdiction alignment with SDLT FA 2003 ss.71A-73 and Welsh LTT LTTA 2017 Sch 10. Two anonymised worked personas: Murabaha first-home (clean Sch 7 Part 3 relief eliminates £8,850 double charge); Diminishing Musharaka with ADS engagement on buyer-side BTL holdings."
 ---

@@ -45,8 +45,8 @@ faqs:
   - question: "What is the most common failure mode?"
     answer: "An over-aggressive timeline. The landlord buys the property in personal name on day 1, signs the personal-to-SPV sale contract on day 30, and completes the transfer on day 60. There is no rent collected in personal name, no lease evidence, and no commercial substance to the personal-side hold. HMRC's s.75A analysis treats the two transactions as effectively one V-to-SPV direct purchase; the SDLT was paid anyway so the SDLT cost does not change, but any CGT relief claimed on the personal disposal is rejected, the personal-side mortgage interest deduction is disallowed for the holding period, and the substantial-property-transaction members' resolution is scrutinised for being post-dated. The defence requires genuine commercial substance: a meaningful holding period (6 to 12 months minimum), real rent flows, real personal mortgage payments, and a real reason for the original personal-name purchase (the SPV did not have credit, the buying-window was tight, the lender preferred personal-name borrowing)."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Mid-incorporation cohort applied page. Five-step personal-then-sell-to-SPV sequence with SDLT FA 2003 s.53 (connected-company MV) as the binding constraint and FA 2003 s.75A (scheme-transaction anti-avoidance) as the contrived-sequence guard. Differentiates from the front-door incorporation pages by being extraction-side and mid-build."
 ---

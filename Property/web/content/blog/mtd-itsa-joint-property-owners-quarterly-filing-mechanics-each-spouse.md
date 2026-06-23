@@ -45,8 +45,8 @@ faqs:
   - question: "If one spouse is in MTD and the other below threshold, can the in-MTD spouse claim all the expenses to make the maths simpler?"
     answer: "No. Each spouse claims their own share of expenses, reflecting beneficial ownership. The in-MTD spouse claims their share on the quarterly updates and final declaration; the below-threshold spouse claims their share on SA105 at annual self-assessment. Concentrating all expenses on one spouse to simplify the bookkeeping is incorrect and would distort each spouse's profit position. The administrative inconvenience of running both regimes in parallel for the same property is real, but the answer is shared bookkeeping discipline (or shared accountant), not non-compliant expense allocation."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 net-new (Session B, MTD ITSA operational details). Picks up where the Wave 3 threshold-split page leaves off; this page covers the operational mechanics of running two parallel quarterly cycles once both joint owners are in MTD. Bookkeeping split, ASA-per-owner, mid-year Form 17 re-election, end-of-period reconciliation, common operational traps. Cross-links to the threshold-test sibling, the qualifying-income mechanic, the deadlines page, and the records-keeping page."
 ---

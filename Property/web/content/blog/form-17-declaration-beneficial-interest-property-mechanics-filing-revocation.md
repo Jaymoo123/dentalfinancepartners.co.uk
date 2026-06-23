@@ -47,8 +47,8 @@ faqs:
   - question: "Can I file Form 17 after the tax year ends?"
     answer: "Yes, but only within the statutory 60-day window from the date the second spouse signs. The form does not have to track the tax year; it can be signed and filed at any point in the calendar. What matters is the 60-day window from the signature date. A declaration signed on (for example) 10 April applies from 10 April; if filed by 9 June it is valid and the split applies to rental income arising from 10 April forward. A declaration signed in March that is not filed until June is out of time, regardless of whether the tax year has closed."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Canonical Form 17 mechanic page covering ITA 2007 s.836 default 50/50, s.837 election, the statutory 60-day filing window, the joint-tenancy bar, the evidence requirement in TSEM9851 / TSEM9842, the revocation trigger events in s.837(4), and the SDLT assumed-debt interaction on the underlying declaration of trust. Foundational mechanic page that applied joint-ownership pages (Section 24, MTD threshold, MTD quarterly, retirement Form 17 shift) reference."
 ---

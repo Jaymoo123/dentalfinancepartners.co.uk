@@ -47,8 +47,8 @@ faqs:
   - question: "Are amendments visible to shareholders or directors via Companies House or other public records?"
     answer: "No. ATED returns and their amendments are confidential to HMRC and are not filed at Companies House. The directors of the holding company will see them through the company's tax compliance process; shareholders are not separately notified unless the company's own governance requires it. For overseas structures with several corporate layers, the trust deed or shareholders' agreement may set out reporting obligations to the ultimate beneficial owner."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Procedural deep-dive on ATED amendments. Sits alongside the pillar (`ated-complete-guide-2026-27`) which carries the wider regime context. Cross-links to the clawback page (`ated-relief-clawback-occupation-non-qualifying-individual`) for the most common amendment trigger and to the penalty cascade page for the inaccuracy-penalty interplay."
 ---

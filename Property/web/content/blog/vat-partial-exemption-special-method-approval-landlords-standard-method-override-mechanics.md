@@ -43,8 +43,8 @@ faqs:
   - question: "Where do I find the standard method, the CGS interaction, and the option-to-tax framework?"
     answer: "Three companion pages. The standard partial-exemption method under regulation 101 (including the value-based ratio mechanic and the basic mixed-portfolio worked examples) lives on our companion <a href=\"/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method\">VAT partial exemption for mixed residential and commercial portfolios</a> page (Wave 5). The Capital Goods Scheme interaction with partial exemption (where £250,000+ capital expenditure on land or buildings runs a 10-interval adjustment alongside the partial-exemption attribution) is on our Capital Goods Scheme page. The option-to-tax framework (where opting changes the supply-status of commercial property and therefore the supply-value ratio that drives both standard and special methods) is the C1 PILLAR. This page sits within the cluster as the post-standard-method route depth."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 8 Bucket C C5, partial-exemption special-method depth. Reframed at Stage 1a (originally standard-method angle; standard method is the Wave 5 page). Differentiator: PESM typology (4 types) + reg 102 / 102B / 107A architecture distinction + reg 107A SI insertion cite verified SI 2002/1074 (confirms HP §29.6 Stage 2b correction against the stale SI 2002/1142 cite). Lansdowne Estates floor-area PESM recovery uplift worked example varies from C1 / C2 / C3 personas. Forms-free page (PESM is application-based; no VAT1614-series forms in this territory). Reg 102 verbatim heading 'Use of other methods' verified against legislation.gov.uk 2026-05-25; reg 107A verbatim heading 'Adjustment of attribution' verified; SI 2002/1074 insertion confirmed."
 ---

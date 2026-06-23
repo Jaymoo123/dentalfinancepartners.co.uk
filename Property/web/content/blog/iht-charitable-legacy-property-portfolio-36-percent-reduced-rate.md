@@ -47,8 +47,8 @@ faqs:
   - question: "What about charitable nominations on pension benefits?"
     answer: "From 6 April 2027 unused defined-contribution pension funds enter the deceased's estate for IHT (covered on our Wave 2 page on pension IHT from April 2027). Charitable nominations on the pension benefits qualify for s.23 IHT exemption in the normal way, and the pension charitable bequest counts toward the 10% test on the relevant component baseline. Practical implication: a landlord post-2027 with a £600,000 unused pension can nominate the pension to charity, removing it from the IHT base (s.23 exemption on the £600,000) and contributing toward the 10% test on the general component baseline of the estate. For estates with both substantial pension and substantial BTL portfolio above the £2m taper threshold, the pension-charity nomination can be the cleanest route to qualifying the entire estate for the 36% rate without disturbing the BTL portfolio's family-inheritance position."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Wave 4 C9 (IHT estate planning). The Sch 1A IHTA 1984 36% reduced-rate mechanic applied to landlord estates. Components-test (general, survivorship, settled), baseline-amount calculation, merger election under Sch 1A para 7, specific-bequest vs residue-share-bequest choice, break-point self-funding analysis. Cross-link to Wave 4 C5 (deed of variation as post-death route to retro-engineer the 36% trigger) and Wave 4 C8 (interaction with the April 2026 £2.5m BPR/APR cap (IHTA 1984 s.124D)). House positions §22.3 (Wave 4 36% reduced rate extension)."
 ---

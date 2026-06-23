@@ -43,8 +43,8 @@ faqs:
   - question: "If my refund claim succeeds, what figure is repaid?"
     answer: "The repayment equals the ADS amount actually paid at the original effective date, calculated at the rate in force on that date. Rate increases that postdate the original transaction do not uplift the refund; rate decreases that postdate do not reduce it. Repayment interest may be added by Revenue Scotland under the standard repayment-interest rules in the Tax Collection and Management (Scotland) Act 2014, running from the date Revenue Scotland received payment or the date the refund became due (whichever is later) to the date of repayment. The refund of ADS does not change the underlying standard-rate LBTT charge on the new purchase; only the supplement is in scope."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Case-law-driven exception page to the headline LBTT ADS refund mechanics. Pairs with the Wave 5 mechanics companion page on the 8% rate, 36-month window, and standard refund claim. This page covers the disposal-limb interpretation (beneficial ownership versus legal title), the 36-month window operating in both directions, the lookback main-residence test under para 8(1)(b), the para 8A joint-buyer extension, the para 9C separated-spouse relief, and the Revenue Scotland enquiry plus FTT (Tax Chamber Scotland) appeal route. Statutory citations to Sch 2A paras 8, 8A, 8B, 9C, 5, and 6 verified verbatim against legislation.gov.uk on 2026-05-26."
 ---

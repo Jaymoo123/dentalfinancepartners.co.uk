@@ -42,8 +42,8 @@ faqs:
   - question: "What is SI 2026/336 and why does it matter?"
     answer: "SI 2026/336 (Income Tax (Digital Obligations) Regulations 2026) is the operative MTD ITSA instrument from 1 April 2026. It revoked SI 2021/1076 (the prior Income Tax (Digital Requirements) Regulations 2021) on that date. Substantive mechanics carry over but regulation numbers have migrated: qualifying income at regulation 25 (previously regulation 20), qualifying amount at regulation 27, exclusion-notice exemption at regulation 18 with regulation 20, three-year income-exit at regulation 24 (previously regulation 22). Pages and accountants citing SI 2021/1076 as live are working from the revoked instrument and should migrate citations forward."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

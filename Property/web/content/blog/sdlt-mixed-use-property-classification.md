@@ -41,8 +41,8 @@ faqs:
   - question: "What is the risk of an engineered mixed-use claim?"
     answer: "High. HMRC opens routine enquiries on SDLT returns where mixed-use is claimed on properties that look residential on the title. The Hyman / Goodfellow / Pensfold line of cases is consistently applied; tribunal success rates for taxpayers on engineered claims are low. The downstream cost where a claim fails is the underpaid SDLT (often £100,000+ on substantial purchases), repayment interest from the original due date, and tax-geared penalties under Schedule 24 FA 2007 (15% to 100% depending on behaviour). Where the claim was procured through a contingent-fee refund firm, the buyer also pays the firm's percentage even if the claim fails."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Substantive mixed-use page covering the statutory test, HMRC's published view, and the leading FTT and UT case law. Sits alongside A8 (refund scams) but is the genuine technical treatment of the boundary."
 ---

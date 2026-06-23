@@ -43,8 +43,8 @@ faqs:
   - question: "Can I claim a digital-exclusion exemption if I am uncomfortable with software?"
     answer: "You can apply, but the bar is high. HMRC accepts genuine digital exclusion on grounds of age, disability, very limited broadband, or religious objection. Pure preference (I prefer paper) does not qualify. The application is to HMRC directly; if granted, you continue annual self assessment in the old format. Apply well before the relevant 6 April start date, not after."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Persona-driven page targeting the four accidental-landlord routes (inheritance, relocation, relationship breakdown, temporary let). Differentiated from the first-time-landlord pillar (generalist) and the MTD threshold pillar (taxonomy) by anchoring on persona-specific decision trees against the £50k gross test."
 ---

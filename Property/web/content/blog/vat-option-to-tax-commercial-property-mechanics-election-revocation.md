@@ -40,8 +40,8 @@ faqs:
   - question: "How does the option to tax interact with the Capital Goods Scheme?"
     answer: "Closely. The Capital Goods Scheme (CGS) runs for 10 intervals on standard-rated capital expenditure of £250,000 or more on land and buildings (VAT-exclusive). The initial recovery rate at acquisition is determined by your taxable-supplies use (heavily influenced by whether you have opted). If your use of the property changes during the 10-year CGS period (you stop opting on a new building, you change tenant mix, a disapplication event occurs), each annual interval requires a recalculation and an adjustment of the original VAT recovery. The OTT election sits upstream of the CGS bite; revoking or losing the option mid-cycle is the most common trigger for material CGS clawback. See our separate guide on the Capital Goods Scheme for the 10-interval mechanic."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), VAT Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Bucket A anchor page. OTT is the upstream entry-decision for the rest of the VAT bucket (CGS, partial exemption, mixed-use apportionment, pre-registration input tax, conversion-rate interaction). Mechanic-first structure with worked examples on the cooling-off and connected-party disapplication points."
 ---

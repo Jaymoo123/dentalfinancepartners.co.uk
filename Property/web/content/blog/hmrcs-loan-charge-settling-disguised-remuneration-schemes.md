@@ -40,8 +40,8 @@ faqs:
   - question: "What case law underpins the loan-charge architecture?"
     answer: "RFC 2012 Plc v Advocate General for Scotland [2017] UKSC 45 (the Rangers case) is the controlling Supreme Court authority. The decision treated EBT loan arrangements as employment earnings at the point the loan was made, establishing the no-redirection-of-earnings principle that underpins Part 7A and the loan charge sweep-up. HMRC v Hargreaves [2022] UKUT 34 dismissed a loan-charge constitutional and human-rights challenge. Hoey v HMRC [2022] EWCA Civ 656 covered the transfer-of-assets-abroad interaction."
 dateModified: "2026-05-28"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), MTD and Compliance Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
 ---
 

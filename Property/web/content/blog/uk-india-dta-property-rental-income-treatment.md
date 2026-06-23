@@ -45,8 +45,8 @@ faqs:
   - question: "I am UK-resident with rental property in India. How does the treaty work for me?"
     answer: "The reverse scenario. India retains primary taxing rights on Indian rental income under Article 6. Indian Income Tax Act s.22-27 (Income from House Property) applies, with a 30% standard deduction on net annual value and actual interest deduction (no cap for let-out property). Section 195 of the Indian Act requires the tenant to withhold tax at source on rent paid to a non-resident landlord at the applicable rate plus surcharge and cess (often 30% effective for higher-rate Indian taxpayers). The UK as residence state then taxes the Indian rental income on Self Assessment foreign pages (SA106) with foreign tax credit under TIOPA 2010 ss.18 and 130 for the Indian tax paid. Sterling-rupee translation at the rate prevailing on the receipt date."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-India treaty page for property investors. Primary framing: Indian tax resident with UK BTL (the NRI-investor reader). The 1993 treaty's older article structure (capital gains at Art 14 not Art 13; no Art 13(4) indirect-disposal equivalent) is the differentiator; UK NRCGT under TCGA 1992 s.1A applies as a statutory override regardless. Secondary section covers UK-resident with Indian rental property. Worked example: Anil, Mumbai-resident, two UK BTLs (Leicester and Birmingham)."
 ---

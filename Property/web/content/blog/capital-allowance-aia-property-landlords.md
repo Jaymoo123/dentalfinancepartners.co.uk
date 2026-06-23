@@ -41,8 +41,8 @@ faqs:
   answer: A sale that includes fixtures triggers disposal values on the plant pools (CAA 2001 s.61 and the s.196 fixtures Table), which can create a balancing charge that claws back allowances claimed. For a commercial buyer to claim on the fixtures, the seller must have pooled the expenditure and the parties must fix its value, usually by a joint s.198 election made within two years of completion (CAA 2001 s.201). Without that, the buyer's expenditure is treated as nil (s.187A(3)) and the allowances are lost for good.
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 sourceDomains:
 - legislation.gov.uk

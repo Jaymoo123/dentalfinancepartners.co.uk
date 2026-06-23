@@ -43,8 +43,8 @@ faqs:
   - question: "What if I have overpaid LTT and want it back?"
     answer: "Two routes. The LTT return can be amended within 12 months of the original return under LTTA 2017 (the equivalent of the SDLT s.74A and Scottish LBTT s.83 amendment mechanisms). Beyond the 12-month window, a statutory overpayment-relief claim under the Tax Collection and Management (Wales) Act 2016 must be made within 4 years of the relevant year, subject to TCMA-specific case-management. Common overpayment scenarios: incorrect application of higher rates where main rates should have applied; missed MDR claim on a portfolio purchase; missed derelict-property refund on an uninhabitable purchase. Each has its own time limit."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Master hub page for the Welsh LTT cluster. Covers main residential rates, higher residential rates, MDR, non-residential rates, reliefs, returns under s.44, GAAR, cross-border, and the structural distinctives against SDLT and LBTT (no FTB regime, no non-resident surcharge, no corporate flat rate). Links DOWN to every dedicated Welsh-LTT cluster page; the dedicated pages link UP to this hub. The 11 December 2024 higher-rate uplift, the 7 February 2025 MDR subsidiary-dwelling carve-out, and the 13 February 2026 MDR 3% minimum-rate floor are surfaced as the three most recent material changes."
 ---

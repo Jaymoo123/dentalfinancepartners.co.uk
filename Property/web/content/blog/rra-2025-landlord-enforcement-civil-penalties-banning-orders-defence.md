@@ -47,8 +47,8 @@ faqs:
   - question: "If my property is in scope of a future PRS Database registration requirement and I miss the deadline, is that a civil-penalty offence?"
     answer: "Yes, once the relevant Part of the RRA 2025 is commenced. Sections 91 and 92 establish failure-to-register and failure-to-comply offences linked to the PRS Database; the penalty maximum is £40,000 under section 15 / Schedule 5. As at 2026-05-22 the PRS Database (Chapter 3 of Part 2, sections 75 to 96) is enacted but a commencement order appointing the day on which registration becomes mandatory has not yet been made. Government policy statements anticipate commencement before April 2027 but landlords should monitor the legislation.gov.uk commencement table for the operative SI rather than rely on press estimates. Section 90 separately provides that a landlord cannot regain possession of a property that is required to be (but is not) on the Database; this is the structural link between non-registration and the possession process."
 dateModified: "2026-05-22"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Defence-side enforcement page for landlords facing or anticipating civil-penalty notices, banning orders or rogue-landlord database listing under the Renters' Rights Act 2025 + Housing and Planning Act 2016 transitional regime. Walks the procedural steps from notice of intent through First-Tier Tribunal Property Chamber appeal, and the tax-deductibility position on associated legal fees."
 ---

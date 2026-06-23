@@ -43,8 +43,8 @@ faqs:
   - question: "Where can I check my calculation against an authoritative source?"
     answer: "The official Welsh Revenue Authority LTT calculator is at lttcalculator.wra.gov.wales. The WRA calculator is the authoritative reference for current bands and calculation logic. We recommend verifying any band-by-band calculation against the WRA calculator before completing a substantial purchase. The gov.wales technical guidance pages provide deeper walkthroughs of edge cases including replacement of main residence, higher-rates attribution, cross-border apportionment, and MDR. The LTT return itself must be filed within 30 days of the effective date under LTTA 2017 s.44."
 dateModified: "2026-05-26"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
 editorialNote: "Calculator-walkthrough page for Welsh LTT 2026/27. Format mirrors the existing site calculator-walkthrough pages (property-capital-gains-tax-calculator, section-24-calculator, rental-yield-calculator-guide-uk-landlords, vat-calculator): longhand prose-walkthrough that does the math step by step rather than an interactive JavaScript widget. Walks four representative buyer patterns: £200k first home (nil band); £350k main residence (standard rates); £350k higher-rates (standalone bands, not surcharge-on-top per §23.11 do-not-write); £600k commercial (non-residential rates). Anchored to HP §23.1, §23.2, §23.3 locked rate tables; cross-linked to Wave 5 rates page, Wave 5 higher-rates mechanics page, sibling MW1 picks B8 (attribution) and B9 (dwelling-suitability), and the official WRA calculator for independent verification."
 ---

@@ -49,8 +49,8 @@ faqs:
   - question: "What is the opportunity cost compared to doing nothing?"
     answer: "Counterfactual analysis: keep the properties in personal name. CGT exposure on direct gifts to children, or death-time CGT rebase under TCGA 1992 s.62(1) (the death uplift wipes the latent gain). No SDLT incorporation cost. No annual maintenance cost. Full personal CGT allowance plus personal income-tax bands available on rental income. No s.24 mitigation but also no s.455, no dividend tax, no CIHC, no ECCTA disclosure. For some landlords, particularly basic-rate-band single-property sub-£2m-portfolio owners, the do-nothing counterfactual outperforms the FIC route over a 20-year horizon. The point of this page is to surface that counterfactual; the balanced cost-benefit weighing is the job of the decision pillar."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Tax Adviser (CTA), Family Investment Company Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "MW2 Bucket B B14: negative-framing pillar for the bare query 'disadvantages of family investment companies'. Counterpart to the existing decision pillar (`family-investment-company-property-worth-it`), which carries the balanced cost-benefit framing. This page surfaces approximately 16 distinct disadvantages across one-off incorporation costs, ongoing running costs and tax-profile costs, and exit and horizon costs. Rates given for s.455 (35.75% from 6 April 2026), CT main rate (25%), dividend rates (10.75/35.75/39.35), SDLT additional-dwellings surcharge (5% from 31 October 2024), and MDR abolition (from 1 June 2024) flagged for verify-at-write. Pawson investment line, Ramsay s.162 business test, Jones v Garnett spouse exception, and ITTOIA s.629 minor-child attribution anchored to §22.1, §21.5, §22.10. ECCTA 2023 verification regime per §11.A Wave 9 mini-lock. No new HP-lock raised."
 ---

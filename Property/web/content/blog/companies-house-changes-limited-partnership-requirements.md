@@ -43,8 +43,8 @@ faqs:
   - question: "How does this page differ from the LLP property investment page?"
     answer: "An LLP (limited liability partnership) is a different statutory entity from an LP. LLPs are governed by the Limited Liability Partnership Act 2000 and are separate legal persons with limited liability for all members; LPs are governed by the Limited Partnerships Act 1907 and have unlimited-liability general partners and limited-liability limited partners. The compliance regimes are also distinct: LLPs have applied a Companies-Act-style compliance regime since 2000 (with the Limited Liability Partnerships (Application of Companies Act 2006) Regulations 2008 making CA 2006 apply with modifications); LPs only got their CA-2006-style overlay via ECCTA 2023 Part 2. Tax treatment is broadly similar (both transparent), but the substantive law, the member-versus-partner architecture, and the historic compliance overhead all differ. Everything here is about LPs; for the LLP route, see the LLP property investment guide linked above."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "LP-specific compliance lens on ECCTA 2023 Part 2 reforms to the Limited Partnerships Act 1907. Covers registered office, registered email, annual confirmation, general partner ID verification, striking-off powers, transitional windows, RoE/ECTEA 2022 interaction. Three worked scenarios. Tax transparency under ITTOIA 2005 Part 9 and TCGA 1992 s.59 unchanged."
 ---

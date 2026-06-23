@@ -47,8 +47,8 @@ faqs:
   - question: "How does this pillar relate to the BTL-complete-guide on the site?"
     answer: "This pillar is the broadest LtdCo entry point: covering all property-LtdCo use cases (BTL, HMO, FHL, development, commercial, mixed-use, multi-SPV group, FIC, hybrid LLP corporate member). The existing BTL-complete-guide page is the BTL-specific specialist: one use-case among the many this pillar covers. Reading sequence: this pillar to settle the use-case fork question and entity-choice question; the BTL specialist (or whichever fork applies) for the depth on that route. The pages cross-link, with the pillar's primary architecture being the cross-link grid to all of the specialists."
 dateModified: "2026-05-27"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
 editorialNote: "Pillar / hub page for the LtdCo cluster. PILLAR FRAMING discipline: navigational synthesis, not depth duplication of specialist pages. Eight use-case forks (BTL / HMO / FHL / development / commercial / multi-SPV group / FIC / hybrid LLP corporate member). Honest decision framework: Examples 1 and 5 hold pro-incorporation and pro-personal outcomes side-by-side. Current rates: CT 19% small profits / 25% main / 26.5% marginal; dividend 10.75% / 35.75% / 39.35% from 6 April 2026; s.455 35.75% from 6 April 2026 (NOT stale 33.75%); ss.464C/D omitted by FA 2025 from 30 October 2024 (residual anti-avoidance at s.464A). ECCTA Part 1 ID verification mandatory from 18 November 2025. MDR abolished from 1 June 2024 under F(No.2)A 2024 s.7. Comprehensive cross-link grid: 30-plus forward links to specialist pages."
 ---

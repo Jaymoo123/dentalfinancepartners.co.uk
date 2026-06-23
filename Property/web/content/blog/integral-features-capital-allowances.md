@@ -43,8 +43,8 @@ faqs:
   answer: "No, the two are mutually exclusive. The Structures and Buildings Allowance gives 3% a year on the cost of the building or structure itself (section 270AA), but it is not available for anything that qualifies for plant and machinery allowances. Integral features stay firmly in the plant and machinery regime at 6% (or AIA), and the building shell goes to the 3% SBA. You cannot claim both on the same expenditure."
 - question: "Can I still claim if the previous owner never pooled the fixtures?"
   answer: "It depends. Since April 2014, two conditions generally apply on a second-hand purchase: the pooling requirement (section 187A), under which the past owner must have allocated the fixtures expenditure to a pool, and the fixed-value requirement (section 187A), met by a section 198 election or a tribunal determination. If the past owner never pooled the fixtures and was entitled to, you may be unable to claim on them. This is why a capital allowances review before purchase is so valuable."
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
 dateModified: '2026-06-02'
 sourcesVerifiedAt: '2026-06-02'

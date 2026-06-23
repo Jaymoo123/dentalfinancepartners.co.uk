@@ -41,8 +41,8 @@ faqs:
   - question: "What is the practical SDLT cost step-up for a typical four-dwelling portfolio acquisition post-abolition?"
     answer: "On a £1.4m four-dwelling portfolio (average £350,000 per dwelling) the comparison gives a sense of the size. Pre-abolition, MDR was computed on the average consideration per dwelling (£350,000) multiplied by four, applying residential rates plus the 5% additional-dwellings surcharge to each notional unit; this typically yielded SDLT of around £52,000 to £70,000 depending on how the surcharge and bands stacked. Post-abolition, the transaction is computed on the full £1.4m consideration at residential rates plus the 5% surcharge on the entire amount, typically £125,000 to £170,000 of SDLT depending on band interaction and timing. The s.116(7) six-or-more-dwellings route requires actually buying six or more dwellings, so a four-dwelling buyer cannot reach for it. Schedule 15 SLP and section 45 sub-sale are conditional routes with narrow eligibility. For most four-dwelling buyers, the realistic post-abolition position is residential rates plus surcharge as the baseline."
 dateModified: "2026-05-25"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"
 editorialNote: "Wave 9 net-new on MDR abolition under F(No.2)A 2024 s.7. Statutory anchors verified verbatim at legislation.gov.uk on 2026-05-25: s.7(1) repeal of FA 2003 s.58D + Sch 6B; s.7(3) 1 June 2024 effective-date trigger; s.7(4)(a) substantially-performed transitional; s.7(4)(b) pre-6-March-2024 contract carve-out; s.7(5) anti-forestalling against variations, assignments, options exercised, sub-sales post 6 March 2024. FA 2003 s.116(7) verbatim six-or-more-dwellings deeming. House position §1.H primary anchor; §1.A (Sch 15 SLP) + §1.B (s.108 linked transactions) secondary. Cross-border position: Welsh LTT MDR survives under LTTA 2017 Sch 13; Scotland never had an equivalent."
 ---

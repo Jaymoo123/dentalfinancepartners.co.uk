@@ -47,8 +47,8 @@ faqs:
   - question: "How does this interact with the close investment-holding company test?"
     answer: "The close investment-holding company (CIHC) test under CTA 2010 s.18N depends on the qualifying purpose of the company's investment activity. Most BTL SPVs with unconnected tenants pass the s.18N carve-out and are NOT CIHCs (the carve-out covers land investment let to unconnected parties). Where the SPV's primary tenant is a connected party (the founder, the founder's spouse, the founder's family), the connected-tenancy element strengthens the case that the company is a CIHC, with the 25% main-rate corporation tax consequence regardless of profit level. The boundary is fact-sensitive: a single connected tenancy as part of a wider unconnected-let portfolio is generally fine; an SPV whose only let is to the founder personally is likely to be a CIHC. Where the CIHC route bites, the rent-extraction comparison shifts because the SPV is taxed at 25% on profits before any extraction layer."
 dateModified: "2026-05-23"
-reviewedBy: "ICAEW Qualified Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
 editorialNote: "Connected-party rent extraction as a third route alongside salary and dividends. Leads with the TIOPA 2010 transfer-pricing risk (usually parked by the SME exemption) and the connected-party defence pack that survives an HMRC enquiry. Distinguished from the wider rent / dividend / salary marginal-rate analysis covered elsewhere."
 ---
