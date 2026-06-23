@@ -59,7 +59,7 @@ import {
   type ExperimentFunnelArms,
 } from "@accounting-network/web-shared/console/adminData";
 import { ExperimentCard } from "@accounting-network/web-shared/console/components/ExperimentCards";
-import { getExperimentMeta } from "@accounting-network/web-shared/experiments/registries";
+import { getExperimentMeta, siteRegistries } from "@accounting-network/web-shared/experiments/registries";
 import {
   getSitesRegistry,
 } from "@accounting-network/web-shared/console/estateData";
@@ -740,6 +740,17 @@ export default async function SitePage({
     ]),
   );
 
+  // Classify each key as running vs retired using the registry.
+  // Keys absent from the registry (unknown/legacy) are treated as retired.
+  const _siteRegistry = siteRegistries[siteKey];
+  const _runningSet = new Set(
+    (_siteRegistry?.experiments ?? [])
+      .filter((e) => e.status === "running")
+      .map((e) => e.key),
+  );
+  const runningExperimentKeys = experimentKeys.filter((k) => _runningSet.has(k));
+  const retiredExperimentKeys = experimentKeys.filter((k) => !_runningSet.has(k));
+
   // Experiments tab -- capability-conditional, rich card view
   const experimentsSection = (
     <div className="space-y-8">
@@ -748,23 +759,44 @@ export default async function SitePage({
           <p className="text-sm text-slate-400">No experiment results yet.</p>
         ) : (
           <>
-            <div>
-              <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
-              <p className="mt-1 text-xs text-slate-500">
-                Each running experiment, control (current) vs treatment (new), updating as data accrues. Lift and
-                significance are honest: directional until each arm has enough sessions.
-              </p>
-              <div className="mt-3 space-y-4">
-                {experimentKeys.map((key) => (
-                  <ExperimentCard
-                    key={key}
-                    meta={getExperimentMeta(siteKey, key)}
-                    arms={experimentArms[key] ?? { control: null, treatment: null }}
-                    funnel={experimentFunnel[key]}
-                  />
-                ))}
+            {runningExperimentKeys.length > 0 && (
+              <div>
+                <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
+                <p className="mt-1 text-xs text-slate-500">
+                  Each running experiment, control (current) vs treatment (new), updating as data accrues. Lift and
+                  significance are honest: directional until each arm has enough sessions.
+                </p>
+                <div className="mt-3 space-y-4">
+                  {runningExperimentKeys.map((key) => (
+                    <ExperimentCard
+                      key={key}
+                      meta={getExperimentMeta(siteKey, key)}
+                      arms={experimentArms[key] ?? { control: null, treatment: null }}
+                      funnel={experimentFunnel[key]}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
+
+            {retiredExperimentKeys.length > 0 && (
+              <div>
+                <h2 className="text-lg font-bold text-slate-900">Retired tests (historical data)</h2>
+                <p className="mt-1 text-xs text-slate-500">
+                  Stopped experiments, shown for their historical results. Not assigning new visitors.
+                </p>
+                <div className="mt-3 space-y-4">
+                  {retiredExperimentKeys.map((key) => (
+                    <ExperimentCard
+                      key={key}
+                      meta={getExperimentMeta(siteKey, key)}
+                      arms={experimentArms[key] ?? { control: null, treatment: null }}
+                      funnel={experimentFunnel[key]}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Secondary: raw all-results ledger */}
             <div>
