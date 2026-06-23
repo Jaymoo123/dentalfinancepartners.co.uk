@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
+import { NumberInput } from "@/components/calculators/fields/NumberInput";
 
 export function MTDCheckerCalculator({
   variant = "page",
@@ -40,14 +41,10 @@ export function MTDCheckerCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="rental-income-mtd"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={rentalIncome}
-                onChange={(e) => setRentalIncome(Number(e.target.value))}
+                onChange={setRentalIncome}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -60,14 +57,10 @@ export function MTDCheckerCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="self-employment-income"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={selfEmploymentIncome}
-                onChange={(e) => setSelfEmploymentIncome(Number(e.target.value))}
+                onChange={setSelfEmploymentIncome}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -80,14 +73,10 @@ export function MTDCheckerCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="other-income"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={otherIncome}
-                onChange={(e) => setOtherIncome(Number(e.target.value))}
+                onChange={setOtherIncome}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>

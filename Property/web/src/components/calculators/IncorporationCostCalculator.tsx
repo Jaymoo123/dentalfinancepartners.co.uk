@@ -4,6 +4,7 @@ import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { computeIncorporation } from "@/lib/incorporation";
+import { NumberInput } from "@/components/calculators/fields/NumberInput";
 
 export function IncorporationCostCalculator({
   variant = "page",
@@ -56,14 +57,10 @@ export function IncorporationCostCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="property-value"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="10000"
                 value={propertyValue}
-                onChange={(e) => setPropertyValue(Number(e.target.value))}
+                onChange={setPropertyValue}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -75,14 +72,10 @@ export function IncorporationCostCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="purchase-price"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="10000"
                 value={purchasePrice}
-                onChange={(e) => setPurchasePrice(Number(e.target.value))}
+                onChange={setPurchasePrice}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -94,14 +87,10 @@ export function IncorporationCostCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="rental-income-inc"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={annualRentalIncome}
-                onChange={(e) => setAnnualRentalIncome(Number(e.target.value))}
+                onChange={setAnnualRentalIncome}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -113,14 +102,10 @@ export function IncorporationCostCalculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="mortgage-interest-inc"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={mortgageInterest}
-                onChange={(e) => setMortgageInterest(Number(e.target.value))}
+                onChange={setMortgageInterest}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>

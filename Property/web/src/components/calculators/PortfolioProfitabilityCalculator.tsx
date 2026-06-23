@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
+import { NumberInput } from "@/components/calculators/fields/NumberInput";
 
 interface Property {
   id: string;
@@ -100,13 +101,10 @@ export function PortfolioProfitabilityCalculator({
                   </label>
                   <div className="flex items-center gap-2">
                     <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
-                    <input
+                    <NumberInput
                       id={`rental-${prop.id}`}
-                      type="number"
-                      min="0"
-                      step="1000"
                       value={prop.rentalIncome}
-                      onChange={(e) => updateProperty(prop.id, "rentalIncome", Number(e.target.value))}
+                      onChange={(v) => updateProperty(prop.id, "rentalIncome", v)}
                       className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
                     />
                   </div>
@@ -118,13 +116,10 @@ export function PortfolioProfitabilityCalculator({
                   </label>
                   <div className="flex items-center gap-2">
                     <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
-                    <input
+                    <NumberInput
                       id={`mortgage-${prop.id}`}
-                      type="number"
-                      min="0"
-                      step="1000"
                       value={prop.mortgageInterest}
-                      onChange={(e) => updateProperty(prop.id, "mortgageInterest", Number(e.target.value))}
+                      onChange={(v) => updateProperty(prop.id, "mortgageInterest", v)}
                       className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
                     />
                   </div>
@@ -136,13 +131,10 @@ export function PortfolioProfitabilityCalculator({
                   </label>
                   <div className="flex items-center gap-2">
                     <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
-                    <input
+                    <NumberInput
                       id={`expenses-${prop.id}`}
-                      type="number"
-                      min="0"
-                      step="1000"
                       value={prop.otherExpenses}
-                      onChange={(e) => updateProperty(prop.id, "otherExpenses", Number(e.target.value))}
+                      onChange={(v) => updateProperty(prop.id, "otherExpenses", v)}
                       className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
                     />
                   </div>

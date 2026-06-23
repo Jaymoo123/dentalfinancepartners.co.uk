@@ -4,6 +4,7 @@ import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { computeSection24, type TaxBand } from "@/lib/section24";
+import { NumberInput } from "@/components/calculators/fields/NumberInput";
 
 export function Section24Calculator({
   variant = "page",
@@ -44,14 +45,10 @@ export function Section24Calculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="rental-income"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={rentalIncome}
-                onChange={(e) => setRentalIncome(Number(e.target.value))}
+                onChange={setRentalIncome}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -63,14 +60,10 @@ export function Section24Calculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="mortgage-interest"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={mortgageInterest}
-                onChange={(e) => setMortgageInterest(Number(e.target.value))}
+                onChange={setMortgageInterest}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
@@ -82,14 +75,10 @@ export function Section24Calculator({
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="other-expenses"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="1000"
                 value={otherExpenses}
-                onChange={(e) => setOtherExpenses(Number(e.target.value))}
+                onChange={setOtherExpenses}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>

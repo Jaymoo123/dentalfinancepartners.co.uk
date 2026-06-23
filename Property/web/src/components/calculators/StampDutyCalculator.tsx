@@ -7,6 +7,7 @@ import {
   ADDITIONAL_DWELLING_SURCHARGE,
   marginalSdlt,
 } from "@/lib/sdlt";
+import { NumberInput } from "@/components/calculators/fields/NumberInput";
 
 /**
  * Stamp Duty Land Tax (SDLT) calculator — England & Northern Ireland.
@@ -88,14 +89,10 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
             </label>
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
+              <NumberInput
                 id="sdlt-price"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="5000"
                 value={price}
-                onChange={(e) => setPrice(Math.max(0, Number(e.target.value)))}
+                onChange={setPrice}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>
