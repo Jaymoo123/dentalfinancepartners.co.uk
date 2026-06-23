@@ -36,12 +36,26 @@ import { siteRegistries } from "./registries/index";
 // Helpers
 // ---------------------------------------------------------------------------
 
+// personalization + exit_intent_offer were CONCLUDED 2026-06-23 (locked to
+// treatment in the components; registry status set to "off"). Their assignment
+// continuity is still pinned below to prove the hash + bucketing algorithm is
+// unchanged, so we resolve them from a frozen snapshot of how they ran rather
+// than the live registry (which now reports them off). Unknown/off keys -> null.
+const CONCLUDED_PROPERTY_EXPERIMENTS: Record<string, Experiment> = {
+  personalization: {
+    key: "personalization",
+    status: "running",
+    variants: [{ id: "control", weight: 25 }, { id: "treatment", weight: 75 }],
+  },
+  exit_intent_offer: {
+    key: "exit_intent_offer",
+    status: "running",
+    variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }],
+  },
+};
+
 function getPropertyExp(key: string): Experiment | null {
-  return (
-    propertyRegistry.experiments.find(
-      (e) => e.key === key && e.status === "running",
-    ) ?? null
-  );
+  return CONCLUDED_PROPERTY_EXPERIMENTS[key] ?? null;
 }
 
 // ---------------------------------------------------------------------------
@@ -51,10 +65,9 @@ function getPropertyExp(key: string): Experiment | null {
 
 describe("golden continuity suite", () => {
   const GOLDEN_TRIPLES: Array<{ visitorId: string; key: string; variant: string }> = [
-    // Pinned for the LIVE experiments only (personalization + exit_intent_offer).
-    // The four CRO capture tests were retired 2026-06-16 (shipped as defaults, or
-    // mooted by mandatory phone), so their continuity no longer matters. These
-    // triples stay byte-identical to the pre-lift values for the live experiments.
+    // Pinned for personalization + exit_intent_offer. Both were CONCLUDED
+    // 2026-06-23 (locked to treatment); these triples stay byte-identical to the
+    // pre-lift values to prove the hash + bucketing algorithm never changed.
     { visitorId: "v_abc123def456", key: "personalization", variant: "treatment" },
     { visitorId: "v_abc123def456", key: "exit_intent_offer", variant: "treatment" },
     { visitorId: "v_xyz789uvw012", key: "personalization", variant: "control" },
@@ -282,11 +295,11 @@ describe("registry map completeness", () => {
     }
   });
 
-  it("property registry has 2 running experiments", () => {
-    const running = siteRegistries.property.experiments.filter(
+  it("property registry has 0 running experiments (all concluded 2026-06-23)", () => {
+    const running = propertyRegistry.experiments.filter(
       (e) => e.status === "running",
     );
-    expect(running).toHaveLength(2);
+    expect(running).toHaveLength(0);
   });
 
   it("property registry meta has entries for all running experiment keys", () => {

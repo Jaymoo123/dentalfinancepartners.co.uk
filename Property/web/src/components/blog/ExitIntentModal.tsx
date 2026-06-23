@@ -4,21 +4,16 @@
  * Exit-intent capture. Self-contained: mounted once globally, it arms only on the
  * relevant routes (blog + calculator pages), derives its topic from the URL, and
  * triggers on desktop (mouse leaves the top) OR mobile (a leave-style scroll back
- * to the top after going deep). Both arms now use the qualified MiniCapture (name
- * + phone + email + message); the exit_intent_offer experiment varies only the
- * offer copy (control = generic, treatment = topic-aware). Reach + trigger apply
- * to both arms.
+ * to the top after going deep). Uses the qualified MiniCapture (name + phone +
+ * email + message) with a topic-aware offer. The exit_intent_offer A/B that
+ * varied the copy was concluded 2026-06-23 and locked to the topic-aware offer.
  */
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { getVisitorId } from "@accounting-network/web-shared/analytics/ids";
 import { track } from "@accounting-network/web-shared/analytics/track";
-import { assignVariant } from "@/lib/experiments/assign";
-import { setActiveExperiment } from "@accounting-network/web-shared/analytics/experiments/active";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { MiniCapture } from "@/components/forms/MiniCapture";
-import { trackExperimentView } from "@/lib/experiments/exposure";
 
 const STORAGE_KEY = "blog-exit-intent-dismissed-v1";
 const SUPPRESS_DAYS = 30;
@@ -46,16 +41,10 @@ export function ExitIntentModal() {
   const relevant = pathname.startsWith("/blog/") || pathname.startsWith("/calculators/");
 
   const [open, setOpen] = useState(false);
-  // exit_intent_offer is assigned + registered only when the modal actually fires,
-  // so exposure = "was shown the offer" (not every page load).
-  const [offer, setOffer] = useState<string | null>(null);
 
   useEffect(() => {
     if (open) {
       track("exit_intent_shown", { topic: topicKey || "" });
-      // exit_intent_offer exposure, fired once per shown modal for BOTH arms
-      // (MiniCapture suppresses its own via exposeOnView={false}).
-      trackExperimentView("exit_intent_offer", "exit_intent");
     }
   }, [open, topicKey]);
 
@@ -69,11 +58,6 @@ export function ExitIntentModal() {
     const armTimer = window.setTimeout(() => { armed = true; }, desktop ? 10000 : 8000);
     const fire = () => {
       if (!armed || isSuppressed()) return;
-      const v = assignVariant(getVisitorId() || "", "exit_intent_offer");
-      if (v) {
-        setActiveExperiment("exit_intent_offer", v);
-        setOffer(v);
-      }
       setOpen(true);
       suppress();
     };
@@ -111,13 +95,9 @@ export function ExitIntentModal() {
 
   if (!open) return null;
 
-  const treatment = offer === "treatment";
-  const heading = treatment
-    ? topic?.ctaCopy || "Get a free review of your situation"
-    : "Get a free review of your situation";
-  const blurb = treatment
-    ? "Tell us where to reach you and a specialist will review your position and the next sensible step, with no obligation."
-    : "Tell us a bit about your situation and a specialist will review it and the next sensible step, with no obligation.";
+  const heading = topic?.ctaCopy || "Get a free review of your situation";
+  const blurb =
+    "Tell us where to reach you and a specialist will review your position and the next sensible step, with no obligation.";
 
   return (
     <div
@@ -143,8 +123,6 @@ export function ExitIntentModal() {
 
         <MiniCapture
           formId="exit_intent"
-          experimentKey="exit_intent_offer"
-          exposeOnView={false}
           messagePrefix={`[Exit intent${topicKey ? ` (${topicKey})` : ""}]`}
           heading={heading}
           blurb={blurb}

@@ -15,7 +15,7 @@
  * enabled, but this is a belt-and-braces guard so it can never gate a missing
  * file). PHASE A: all assets disabled → renders null everywhere.
  */
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
@@ -24,7 +24,6 @@ import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import {
   resourceForTopic,
@@ -67,17 +66,14 @@ export function ResourceGate({
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
   const ft = useFormTracking("resource_gate");
-  const startedExpRef = useRef(false);
 
   // Shared event context: which topic, and where the gate is surfaced.
   const gateBase = { topic, placement, ...(category ? { category } : {}) };
 
   // Gate impression: fire gate_view the first time the gate scrolls into view —
   // the denominator for the view -> unlock rate (the gate is often mid-article).
-  // This is also the gate_to_form experiment's control-arm exposure.
   const rootRef = useInViewOnce<HTMLElement>(() => {
     track("gate_view", gateBase);
-    trackExperimentView("gate_to_form", "resource_block");
   });
 
   useEffect(() => {
@@ -251,10 +247,6 @@ export function ResourceGate({
             const t = e.target as HTMLElement & { name?: string };
             if (t?.name) {
               ft.onFieldFocus(t.name);
-              if (!startedExpRef.current) {
-                startedExpRef.current = true;
-                trackExperimentAction("gate_to_form", "resource_block"); // engaged the gate
-              }
             }
           }}
           onBlurCapture={(e) => {

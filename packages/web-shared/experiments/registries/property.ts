@@ -31,8 +31,10 @@ export const propertyRegistry: SiteExperimentRegistry = {
     // is stamped on every event; vw_experiment_results + the Experiments dashboard
     // panel then show personalization:control vs personalization:treatment.
     {
+      // CONCLUDED 2026-06-23: locked ON for everyone (IntentProvider no longer
+      // gates on an arm). Kept here (off) so the dashboard can show its history.
       key: "personalization",
-      status: "running",
+      status: "off",
       variants: [
         { id: "control", weight: 25 },
         { id: "treatment", weight: 75 },
@@ -50,7 +52,7 @@ export const propertyRegistry: SiteExperimentRegistry = {
 
     // Exit-intent offer: current email-only "free review" (control) vs a topic-aware
     // stronger offer with email+phone (treatment). Reach is extended for both arms.
-    { key: "exit_intent_offer", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
+    { key: "exit_intent_offer", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // CONCLUDED 2026-06-23: locked to treatment (topic-aware offer) in ExitIntentModal
 
     // The on-page resource block: email-gated Excel download (control) vs a topic-
     // aware "free review" form block (treatment). The gate is dead (50 views, 0 unlocks).

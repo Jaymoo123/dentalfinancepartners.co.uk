@@ -86,8 +86,8 @@ export function PremiumUpgrade({
       <h2 id={`premium-tool-${topic}`} className="sr-only">
         Free {label} tool
       </h2>
-      {/* The interactive tool is desktop-only; on mobile the slot runs the
-          mobile_tool_capture experiment (prompt vs a converting capture). */}
+      {/* The interactive tool is desktop-only; on mobile the slot shows a
+          qualified capture (the mobile_tool_capture test concluded to this). */}
       <div className="sm:hidden">
         <MobileToolSlot topic={topic} label={label} />
       </div>
