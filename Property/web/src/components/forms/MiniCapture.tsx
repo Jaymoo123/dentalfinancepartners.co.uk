@@ -35,6 +35,7 @@ export function MiniCapture({
   className = "my-8 rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8",
   experimentKey,
   exposeOnView = true,
+  onSuccess,
 }: {
   /** Surface id for analytics (form tracking + GA label), e.g. "calc_result". */
   formId: string;
@@ -54,6 +55,9 @@ export function MiniCapture({
   /** Set false when the parent surface already fires the exposure itself (e.g.
    *  the exit-intent modal fires it once on open for both arms). */
   exposeOnView?: boolean;
+  /** Called after a successful lead submit (e.g. so a result-gate can reveal the
+   *  result). The lead is already recorded + the visitor marked converted. */
+  onSuccess?: () => void;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -144,6 +148,7 @@ export function MiniCapture({
 
     setStatus("success");
     form.reset();
+    onSuccess?.();
   }
 
   return (

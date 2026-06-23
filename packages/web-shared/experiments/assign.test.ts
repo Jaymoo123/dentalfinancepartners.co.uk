@@ -295,11 +295,12 @@ describe("registry map completeness", () => {
     }
   });
 
-  it("property registry has 0 running experiments (all concluded 2026-06-23)", () => {
+  it("property registry has 1 running experiment (result_gate_capture)", () => {
     const running = propertyRegistry.experiments.filter(
       (e) => e.status === "running",
     );
-    expect(running).toHaveLength(0);
+    expect(running).toHaveLength(1);
+    expect(running[0].key).toBe("result_gate_capture");
   });
 
   it("property registry meta has entries for all running experiment keys", () => {

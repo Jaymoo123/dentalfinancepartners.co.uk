@@ -49,6 +49,16 @@ import { cn } from "@/lib/utils";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
+import { ResultGateModal } from "@/components/calculators/ResultGateModal";
+import { useExperiment } from "@/components/experiments/useExperiment";
+import { trackExperimentView } from "@/lib/experiments/exposure";
+import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
+import { btnPrimary } from "@/components/ui/layout-utils";
+
+// The result-gate interstitial (result_gate_capture treatment) shows at most once
+// per session: the cheeky capture moment. After it has shown, the per-calc "See
+// your result" button reveals the result directly without re-popping.
+let gateModalShownThisSession = false;
 
 /* ---------------------------------------------------------------------------
  * Defaults / setup
@@ -467,6 +477,18 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // result_gate_capture experiment (in-blog only). Treatment hides the result
+  // behind a "See your result" button + interstitial capture; control keeps the
+  // inline form below. Converted visitors are never gated (instant access).
+  const variant = useExperiment("result_gate_capture");
+  const inExperiment = placement === "blog" && !isConverted();
+  const gated = variant === "treatment" && inExperiment;
+  const measuredControl = variant === "control" && inExperiment;
+  const [revealed, setRevealed] = useState(false);
+  const [gateOpen, setGateOpen] = useState(false);
+  const expViewedRef = useRef(false);
+  const showResult = !gated || revealed;
+
   // Shared event context: which tool, where, and that this is the premium kind.
   const base = {
     calculator_slug: config.id,
@@ -493,6 +515,12 @@ export function PremiumCalculator({
       interactedRef.current = true;
       track("calc_result_viewed", base);
     }
+    // result_gate_capture exposure (both arms): once per session per calc, when the
+    // reader reaches a result. Excludes converted visitors + non-blog placements.
+    if (!expViewedRef.current && variant && inExperiment) {
+      expViewedRef.current = true;
+      trackExperimentView("result_gate_capture", "calc_result");
+    }
     if (computeTimer.current) clearTimeout(computeTimer.current);
     computeTimer.current = setTimeout(() => {
       track("calc_computed", base);
@@ -509,6 +537,22 @@ export function PremiumCalculator({
     onInteract("grid");
   };
 
+  // Treatment "See your result": opens the interstitial the first time this
+  // session, otherwise reveals directly. The press is a funnel diagnostic.
+  const onSeeResult = () => {
+    // The press is auto-captured as cta_click via the button's data-cta.
+    if (!gateModalShownThisSession) {
+      gateModalShownThisSession = true;
+      setGateOpen(true);
+    } else {
+      setRevealed(true);
+    }
+  };
+  const revealFromGate = () => {
+    setGateOpen(false);
+    setRevealed(true);
+  };
+
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, rows, scenario }),
     [config, values, rows, scenario],
@@ -520,6 +564,7 @@ export function PremiumCalculator({
   const scenarios = result.scenarioResults;
 
   return (
+    <>
     <div
       ref={rootRef}
       className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
@@ -591,10 +636,28 @@ export function PremiumCalculator({
 
         {/* Results */}
         <div className="space-y-5 border-t border-slate-200 bg-slate-50 p-5 sm:p-7 lg:border-l lg:border-t-0">
-          <HeadlineCard result={result} />
-          {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
-          {full && <ComparisonChart config={config} result={result} />}
-          <Workings result={result} />
+          {showResult ? (
+            <>
+              <HeadlineCard result={result} />
+              {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
+              {full && <ComparisonChart config={config} result={result} />}
+              <Workings result={result} />
+            </>
+          ) : (
+            // Treatment, pre-reveal: the figure is computed but held behind a button.
+            // min-height reserves the result area so revealing causes no layout jump.
+            <div className="flex min-h-[220px] flex-col items-center justify-center gap-3 text-center">
+              <p className="text-sm font-medium text-slate-600">Your figure is ready.</p>
+              <button
+                type="button"
+                onClick={onSeeResult}
+                className={`${btnPrimary} w-full sm:w-auto`}
+                data-cta="see_result"
+              >
+                See your result
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -602,11 +665,22 @@ export function PremiumCalculator({
           email Excel gate placed further down the article). Add a form-bound CTA
           so a reader who just saw their numbers can go straight to a specialist.
           data-cta-goal="form" feeds the funnel's form-CTA stage + vw_cta_performance. */}
-      {placement === "blog" && (
+      {/* Control (and converted visitors): keep the inline capture below the result.
+          Treatment removes it (the interstitial gate is the capture instead). The
+          control arm threads the experiment key so both arms measure the same
+          building-block; exposure already fired at the result moment above. */}
+      {placement === "blog" && !gated && (
         <div className="border-t border-slate-200 bg-white px-5 py-4 sm:px-7">
-          <CalcResultCta campaign={config.id} label="Get a specialist to check your numbers →" />
+          <CalcResultCta
+            campaign={config.id}
+            label="Get a specialist to check your numbers →"
+            experimentKey={measuredControl ? "result_gate_capture" : undefined}
+            exposeOnView={false}
+          />
         </div>
       )}
     </div>
+    {gateOpen && <ResultGateModal campaign={config.id} onReveal={revealFromGate} />}
+    </>
   );
 }

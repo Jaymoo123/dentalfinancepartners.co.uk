@@ -64,6 +64,12 @@ export const propertyRegistry: SiteExperimentRegistry = {
     // Capture length across every new MiniCapture surface: email+phone+note (control)
     // vs email-only (treatment) -- volume vs quality.
     { key: "lead_form_length", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // RETIRED: phone is now mandatory on every capture 2026-06-16
+
+    // NEW lead-capture program, test #1 (launched 2026-06-23): gate the in-blog
+    // calculator result behind an interstitial capture (treatment) vs today's
+    // inline form below the result (control). Building-block metric = of visitors
+    // who reach a calculator result, what fraction start a capture form.
+    { key: "result_gate_capture", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
   ],
 
   meta: {
@@ -122,6 +128,17 @@ export const propertyRegistry: SiteExperimentRegistry = {
         exposureLabel: "started the form",
         actionLabel: "completed the form",
         guardrail: { label: "Callable leads (phone captured)" },
+      },
+    },
+    result_gate_capture: {
+      label: "Calculator result-gate interstitial",
+      controlDesc: "Result shows with the inline capture form below it (current)",
+      treatmentDesc: "A 'See your result' button opens an interstitial capture before the reveal",
+      primary: {
+        metricLabel: "Started a capture",
+        exposureLabel: "reached a calculator result",
+        actionLabel: "started the capture form",
+        guardrail: { label: "Calculator engagement (computed a result)" },
       },
     },
   },

@@ -7,11 +7,23 @@
  */
 import { MiniCapture } from "@/components/forms/MiniCapture";
 
-export function CalcResultCta({ campaign }: { campaign: string; label?: string }) {
+export function CalcResultCta({
+  campaign,
+  experimentKey,
+  exposeOnView,
+}: {
+  campaign: string;
+  label?: string;
+  /** When set, this control-arm capture is measured under that experiment. */
+  experimentKey?: string;
+  exposeOnView?: boolean;
+}) {
   return (
     <div className="mt-6 border-t border-slate-200 pt-5">
       <MiniCapture
         formId="calc_result"
+        experimentKey={experimentKey}
+        exposeOnView={exposeOnView}
         messagePrefix={`[Calculator result: ${campaign}]`}
         heading="Confirm your figure with a specialist"
         blurb="A calculator gives the shape of the answer. We confirm your exact figure and the legitimate ways to reduce it, with no obligation. Leave your details and we'll be in touch."
