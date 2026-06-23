@@ -9,8 +9,9 @@
  * does submitting (which also marks the visitor converted via the lead path, so
  * they are never gated again). Styling mirrors ExitIntentModal so it feels native.
  */
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { track } from "@accounting-network/web-shared/analytics/track";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { MiniCapture } from "@/components/forms/MiniCapture";
@@ -28,22 +29,28 @@ export function ResultGateModal({
   const topic = getTopic(deriveTopic(pathname));
   const dialogRef = useRef<HTMLDivElement>(null);
 
-  // Move focus into the dialog container (NOT a form field, which would fire a
-  // false form-start), and close on Escape (still reveals the result).
+  // Dismissing the gate (X, link, backdrop, or Esc) reveals the result and records
+  // a single result_gate_skip cta_click. Tracked manually so backdrop + Esc are
+  // counted too; the buttons carry NO data-cta, so autoCapture does not double-count.
+  const skip = useCallback(() => {
+    track("cta_click", { cta_id: "result_gate_skip", placement: "result_gate" });
+    onReveal();
+  }, [onReveal]);
+
+  // Focus the dialog container once on open (NOT a form field, which would fire a
+  // false form-start).
   useEffect(() => {
     dialogRef.current?.focus();
+  }, []);
+
+  // Escape dismisses + reveals.
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onReveal();
+      if (e.key === "Escape") skip();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [onReveal]);
-
-  // Clicks on the X / skip link are auto-captured as cta_click via
-  // data-cta="result_gate_skip"; backdrop + Esc just reveal the result.
-  const skip = () => {
-    onReveal();
-  };
+  }, [skip]);
 
   return (
     <div
@@ -63,7 +70,6 @@ export function ResultGateModal({
         <button
           type="button"
           onClick={skip}
-          data-cta="result_gate_skip"
           className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg text-slate-400 hover:text-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-600"
           aria-label="Skip and show my result"
         >
@@ -90,7 +96,6 @@ export function ResultGateModal({
         <button
           type="button"
           onClick={skip}
-          data-cta="result_gate_skip"
           className="mt-4 block w-full text-center text-xs text-slate-400 underline underline-offset-2 hover:text-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-600"
         >
           No thanks, just show my result

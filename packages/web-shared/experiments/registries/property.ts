@@ -138,7 +138,6 @@ export const propertyRegistry: SiteExperimentRegistry = {
         metricLabel: "Started a capture",
         exposureLabel: "reached a calculator result",
         actionLabel: "started the capture form",
-        guardrail: { label: "Calculator engagement (computed a result)" },
       },
     },
   },

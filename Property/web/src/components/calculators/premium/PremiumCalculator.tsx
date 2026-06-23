@@ -15,7 +15,7 @@
  * calc_input_change / calc_computed / calc_result_viewed) so premium tools
  * appear in the same funnel.
  */
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowDown, ChevronDown } from "lucide-react";
 import {
   Bar,
@@ -538,9 +538,17 @@ export function PremiumCalculator({
   };
 
   // Treatment "See your result": opens the interstitial the first time this
-  // session, otherwise reveals directly. The press is a funnel diagnostic.
+  // session, otherwise reveals directly. The press is auto-captured as a cta_click
+  // via the button's data-cta.
   const onSeeResult = () => {
-    // The press is auto-captured as cta_click via the button's data-cta.
+    // A treatment user can press this on the DEFAULT figure with no input change,
+    // so fire the (once-per-session) exposure here too: this guarantees every gate
+    // form-start is preceded by an experiment_view (acted is always a subset of
+    // exposed). De-duped with the onInteract exposure via expViewedRef.
+    if (!expViewedRef.current && variant && inExperiment) {
+      expViewedRef.current = true;
+      trackExperimentView("result_gate_capture", "calc_result");
+    }
     if (!gateModalShownThisSession) {
       gateModalShownThisSession = true;
       setGateOpen(true);
@@ -548,10 +556,12 @@ export function PremiumCalculator({
       setRevealed(true);
     }
   };
-  const revealFromGate = () => {
+  // Stable identity so the modal's focus/Escape effects are not re-run (and focus
+  // not stolen from the capture form) on an unrelated parent re-render.
+  const revealFromGate = useCallback(() => {
     setGateOpen(false);
     setRevealed(true);
-  };
+  }, []);
 
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, rows, scenario }),
@@ -669,13 +679,12 @@ export function PremiumCalculator({
           Treatment removes it (the interstitial gate is the capture instead). The
           control arm threads the experiment key so both arms measure the same
           building-block; exposure already fired at the result moment above. */}
-      {placement === "blog" && !gated && (
+      {placement === "blog" && !gated && !revealed && (
         <div className="border-t border-slate-200 bg-white px-5 py-4 sm:px-7">
           <CalcResultCta
             campaign={config.id}
             label="Get a specialist to check your numbers →"
             experimentKey={measuredControl ? "result_gate_capture" : undefined}
-            exposeOnView={false}
           />
         </div>
       )}
