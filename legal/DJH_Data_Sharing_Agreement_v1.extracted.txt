@@ -1,0 +1,609 @@
+
+This agreement is dated 20th December 2023
+
+
+PARTIES
+
+
+The Group Companies (“The Companies”) specifically detailed in Annex A (Data Discloser)
+
+
+The Group Companies (“The Companies”) specifically detailed in Annex A (Data Receiver)
+
+
+BACKGROUND
+
+
+The Data Discloser agrees to share the Personal Data with the Data Receiver in the European Economic Area (EEA) on terms set out in the Agreement.
+
+
+The Data Receiver agrees to use the Personal Data within the EEA on the terms set out in this Agreement.
+
+
+This is a free-standing Agreement that does not incorporate commercial business terms established by the parties under separate commercial arrangements.
+
+
+AGREED TERMS
+
+
+Definitions and interpretation
+
+
+      The following definitions and rules of interpretation apply in this Agreement.
+
+
+   1. Definitions:
+
+Commissioner: the Information Commissioner (see Article 4(A3), UK GDPR and section 114, DPA 2018).
+
+Controller, Processor, Data Subject, Personal Data, Personal Data Breach and Processing: have the meanings given to them in the Data Protection Legislation.
+
+Controller: has the meaning given to it in section 6, DPA 2018.
+
+Data Protection Legislation: all applicable data protection and privacy legislation in force from time to time in the UK including without limitation the UK GDPR; the Data Protection Act 2018 (and regulations made thereunder) (DPA 2018); the Privacy and Electronic Communications Regulations 2003 (SI 2003/2426) as amended; and all other legislation and regulatory requirements in force from time to time which apply to a party relating to the use of Personal Data (including, without limitation, the privacy of electronic communications);and the guidance and codes of practice issued by the Commissioner or other relevant regulatory authority and which are applicable to a party.
+
+Data Subject: the identified or identifiable living individual to whom the Personal Data relates.
+
+EEA: the European Economic Area.
+
+Personal Data: means any information relating to an identified or identifiable living individual that is processed by the Processor on behalf of the Controller as a result of, or in connection with, the provision of the services under this Agreement; an identifiable living individual is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of the individual.
+
+Processing, processes, processed, process: any activity that involves the use of the Personal Data. It includes, but is not limited to, any operation or set of operations which is performed on the Personal Data or on sets of the Personal Data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction. Processing also includes transferring the Personal Data to third parties.
+
+Personal Data Breach: a breach of security leading to the accidental, unauthorised or unlawful destruction, loss, alteration, disclosure of, or access to, the Personal Data.
+
+Processor: a natural or legal person, public authority, agency or other body which processes personal data on behalf of the Controller.
+
+Records: has the meaning given to it in Clause 12.
+
+Term: this Agreement's term as defined in Clause 10.
+
+UK GDPR: has the meaning given to it in section 3(10) (as supplemented by section 205(4)) of the DPA 2018.
+
+
+   2. The Annexes form part of this Agreement and will have effect as if set out in full in the body of this Agreement. Any reference to this Agreement includes the Annexes.
+
+
+   3. A reference to writing or written includes faxes and email.
+
+
+   4. In the case of conflict or ambiguity between:
+
+         a) any provision contained in the body of this Agreement and any provision contained in the Annexes, the provision in the body of this Agreement will prevail;
+
+         b) the terms of any accompanying invoice or other documents annexed to this Agreement and any provision contained in the Annexes, the provision contained in the Annexes will prevail;
+
+
+Purpose
+
+
+   5. This agreement sets out the framework for the sharing of Personal Data when one Controller (the Data Discloser/s) discloses personal data to other Controllers (the Data Receiver/s). It defines the principles and procedures that the parties shall adhere to and the responsibilities the parties owe to each other.
+
+
+   6. The parties consider this data sharing initiative necessary to fulfil client engagements and employee contracts of employment. The aim of the data sharing initiative is to assist Group companies in fulling their engagement and contractual obligations and it will serve to benefit individuals by allowing data sharing.
+
+
+   7. The parties agree to only process Shared Personal Data, for the following purposes:
+
+         a) To allow for effective and efficient engagements with clients
+
+         b) To fulfil our obligations under our engagement with a client
+
+         c) To fulfil our regulatory obligations in relation to all and any legislation and regulations
+
+         d) To fulfil our obligations under a contract of employment
+
+
+      The parties shall not process Shared Personal Data in a way that is incompatible with the purposes described in this clause (Agreed Purpose).
+
+
+   8. Each party shall appoint a single point of contact (SPoC) who will work together to reach an agreement with regards to any issues arising from the data sharing and to actively improve the effectiveness of the data sharing initiative. The points of contact for each of the parties are:
+
+         a) Suzy Dawson-Newbury, DPO (Data Sharer)
+
+         b) James Beardmore, Deputy DPO (Data Receiver)
+
+
+Compliance with national data protection laws
+
+
+   9. Each Party must ensure compliance with applicable national data protection laws at all times during the Term of this agreement.
+
+
+  10. Each party has such valid registrations and pays such fees as are required by the ICO.
+
+
+Shared Personal Data
+
+
+  11. The following types of Personal Data will be shared between the parties during the Term of this agreement:
+
+
+        a) Name, DOB and contact details, such as an address, email and or telephone number
+
+        b) Employment and payroll history
+
+        c) Taxation information and history
+
+        d) Information about the circumstances and any matters a client / employee has asked us to deal with
+
+        e) Financial information such as bank details, bank statements and details of investments
+
+  12. Special Categories of Personal Data will not be shared between the parties during the Term of this agreement.
+
+
+  13. The Shared Personal Data must not be irrelevant or excessive with regard to the Agreed Purposes.
+
+
+Lawful, fair and transparent processing
+
+
+  14. Each party shall ensure that it processes the Shared Personal Data fairly and lawfully in accordance with clause 5.2 during the Term of this agreement.
+
+
+  15. Each party shall ensure that it has legitimate grounds under the Data Protection Legislation for the processing of Shared Personal Data, as outlined and in accordance with our separate Data Processing Agreement.
+
+
+Data quality
+
+
+  16. The Data Discloser shall ensure that before the Commencement Date, Shared Personal Data are accurate and that it has appropriate internal procedures in place for the Data Receiver to sample Shared Personal Data prior to the Commencement Date and it will update the same if required prior to transferring the Shared Personal Data.
+
+
+  17. Shared Personal Data must be limited to the Personal Data described in clause 4.1
+
+
+Data subjects' rights
+
+
+  18. The parties each agree to provide such assistance as is reasonably required to enable the other party to comply with requests from Data Subjects to exercise their rights under the Data Protection Legislation within the time limits imposed by the Data Protection Legislation.
+
+
+  19. The SPoC for each party is responsible for maintaining a record of individual requests for information, the decisions made and any information that was exchanged. Records must include copies of the request for information, details of the data accessed and shared and where relevant, notes of any meeting, correspondence or phone calls relating to the request. The SPoC for each party are detailed in clause 2.4.
+
+
+Data retention and deletion
+
+
+  20. The Data Receiver shall not retain or process Shared Personal Data for longer than is necessary to carry out the Agreed Purposes.
+
+
+  21. Notwithstanding clause 8.1, parties shall continue to retain Shared Personal Data in accordance with any statutory or professional retention periods applicable in their respective countries and / or industry.
+
+
+  22. The Data Receiver shall ensure that any Shared Personal Data are returned to the Data Discloser or destroyed in accordance with the agreed Deletion Procedure in the following circumstances:
+
+         a) on termination of the Agreement;
+
+         b) once processing of the Shared Personal Data is no longer necessary for the purposes it was originally shared for, as set out in clause 2.3.
+
+
+  23. Following the deletion of Shared Personal Data in accordance with clause 8.3, the Data Receiver shall notify the Data Discloser that the Shared Personal Data in question has been deleted.
+
+
+Transfers
+
+
+  24. For the purposes of this clause, transfers of personal data shall mean any sharing of personal data by the Data Receiver with a third party, and shall include, but is not limited to, the following:
+
+         a) subcontracting the processing of Shared Personal Data;
+
+         b) granting a third party controller access to the Shared Personal Data.
+
+
+  25. If the Data Receiver appoints a third party processor to process the Shared Personal Data it shall comply as outlined and in accordance with our separate Data Processing Agreement.
+
+
+  26. The Data Receiver shall not disclose or transfer Shared Personal Data outside the EEA.
+
+
+Security and training
+
+
+  27. The Data Discloser shall only provide the Shared Personal Data to the Data Receiver by using secure methods.
+
+
+  28. The parties undertake to have in place throughout the Term appropriate technical and organisational security measures to:
+
+         a) prevent:
+
+               i) unauthorised or unlawful processing of the Shared Personal Data; and
+
+              ii) the accidental loss or destruction of, or damage to, the Shared Personal Data
+
+         b) ensure a level of security appropriate to:
+
+               i) the harm that might result from such unauthorised or unlawful processing or accidental loss, destruction or damage; and
+
+              ii) the nature of the Shared Personal Data to be protected.
+
+
+  29. It is the responsibility of each party to ensure that its staff members are appropriately trained to handle and process the Shared Personal Data in accordance with the technical and organisational security measures, together with any other applicable national data protection laws and guidance and have entered into confidentiality agreements relating to the processing of personal data.
+
+
+  30. The level, content and regularity of training referred to in clause 10.3 shall be proportionate to the staff members' role, responsibility and frequency with respect to their handling and processing of the Shared Personal Data.
+
+
+Personal data breaches and reporting procedures
+
+
+  31. The parties shall each comply with its obligation to report a Personal Data Breach to the appropriate Supervisory Authority and (where applicable) data subjects under Article 33 of the UK GDPR and shall each inform the other party of any Personal Data Breach irrespective of whether there is a requirement to notify any Supervisory Authority or data subject(s).
+
+
+  32. The parties agree to provide reasonable assistance as is necessary to each other to facilitate the handling of any Personal Data Breach in an expeditious and compliant manner.
+
+
+Review and termination of agreement
+
+
+  33. In the event that a party terminates the Agreement or a new Data Receiver joins, an amended and updated version of this Agreement will be drafted as soon as practicable and circulated to all other parties.
+
+
+  34. Parties shall review the effectiveness of this data sharing initiative every 24 months and on the addition and removal of a party, having consideration to the aims and purposes set out in clause 2.2 and clause 2.3. The parties shall continue, amend or terminate the Agreement depending on the outcome of this review.
+
+
+  35. The review of the effectiveness of the data sharing initiative will involve:
+
+         a) assessing whether the purposes for which the Shared Personal Data is being processed are still the ones listed in clause 2 of this Agreement;
+
+         b) assessing whether the Shared Personal Data is still as listed in clause 4.1 of this Agreement;
+
+         c) assessing whether the legal framework governing data quality, retention, and data subjects' rights are being complied with; and
+
+         d) assessing whether personal data breaches involving the Shared Personal Data have been handled in accordance with this Agreement and the applicable legal framework.
+
+
+  36. Each party reserves its rights to inspect the other party's arrangements for the processing of Shared Personal Data and to terminate the Agreement where it considers that the other party is not processing the Shared Personal Data in accordance with this agreement.
+
+
+Resolution of disputes with data subjects or the Supervisory Authority
+
+
+  37. In the event of a dispute or claim brought by a data subject or the Supervisory Authority concerning the processing of Shared Personal Data against either or both parties, the parties will inform each other about any such disputes or claims, and will cooperate with a view to settling them amicably in a timely fashion.
+
+
+  38. The parties agree to respond to any generally available non-binding mediation procedure initiated by a data subject or by the Supervisory Authority. If they do participate in the proceedings, the parties may elect to do so remotely (such as by telephone or other electronic means). The parties also agree to consider participating in any other arbitration, mediation or other dispute resolution proceedings developed for data protection disputes.
+
+
+  39. Each party shall abide by a decision of a competent court of the Data Discloser's country of establishment or of the Supervisory Authority.
+
+
+Warranties
+
+
+  40. Each party warrants and undertakes that it will:
+
+         a) Process the Shared Personal Data in compliance with all applicable laws, enactments, regulations, orders, standards and other similar instruments that apply to its personal data processing operations.
+
+         b) Make available on request to the data subjects who are third party beneficiaries a copy of this Agreement, unless the Agreement contains confidential information.
+
+         c) Respond within a reasonable time and as far as reasonably possible to enquiries from the relevant Supervisory Authority in relation to the Shared Personal Data.
+
+         d) Respond to Subject Access Requests in accordance with the Data Protection Legislation.
+
+         e) Where applicable, maintain registration with all relevant Supervisory Authorities to process all Shared Personal Data for the Agreed Purpose.
+
+         f) Take all appropriate steps to ensure compliance with the security measures set out in clause 10 above.
+
+
+  41. The Data Discloser warrants and undertakes that it is entitled to provide the Shared Personal Data to the Data Receiver and it will ensure that the Shared Personal Data are accurate.
+
+
+  42. The Data Recipient warrants and undertakes that it will not disclose or transfer Shared Personal Data outside the EEA.
+
+
+  43. Except as expressly stated in this Agreement, all warranties, conditions and terms, whether express or implied by statute, common law or otherwise are hereby excluded to the extent permitted by law.
+
+
+Indemnity
+
+
+  44. The Data Discloser and Data Receiver undertake to indemnify each other and hold each other harmless from any cost, charge, damages, expense or loss which they cause each other as a result of their breach of any of the provisions of this Agreement, except to the extent that any such liability is excluded under clause 18.2.
+
+
+  45. Indemnification hereunder is contingent upon:
+
+         a) the parties to be indemnified promptly notifying the other parties of a claim,
+
+         b) the indemnifying parties having sole control of the defence and settlement of any such claim, and
+
+         c) the indemnified parties providing reasonable co-operation and assistance to the indemnifying parties in defence of such claim.
+
+
+Allocation of cost
+
+
+      Each party shall perform its obligations under this Agreement at its own cost.
+
+
+Limitation of liability
+
+
+  46. Neither party excludes or limits liability to the other party for:
+
+         a) fraud or fraudulent misrepresentation;
+
+         b) death or personal injury caused by negligence;
+
+         c) a breach of any obligations implied by section 12 of the Sale of Goods Act 1979 or section 2 of the Supply of Goods and Services Act 1982; or
+
+         d) any matter for which it would be unlawful for the parties to exclude liability.
+
+
+  47. Subject to clause 18.1, neither party shall in any circumstances be liable whether in contract, tort (including for negligence and breach of statutory duty howsoever arising), misrepresentation (whether innocent or negligent), restitution or otherwise, for:
+
+         a) any loss (whether direct or indirect) of profits, business, business opportunities, revenue, turnover, reputation or goodwill;
+
+         b) loss (whether direct or indirect) of anticipated savings or wasted expenditure (including management time); or
+
+         c) any loss or liability (whether direct or indirect) under or in relation to any other contract.
+
+
+
+
+
+Third party rights
+
+
+      No one other than a party to this Agreement shall have any right to enforce any of its terms.
+
+
+Direct marketing
+
+
+      If the Data Receiver processes the Shared Data for the purposes of direct marketing, each party shall ensure that:
+
+         d) the appropriate level consent has been obtained from the relevant data subjects to allow the Shared Data to be used for the purposes of direct marketing in compliance with the Data Protection Legislation; and
+
+         e) effective procedures are in place to allow the data subject to "opt-out" from having their Shared Personal Data used for such direct marketing purposes.
+
+
+Variation
+
+
+      No variation of this agreement shall be effective unless it is in writing and signed by the parties.
+
+
+Waiver
+
+
+      No failure or delay by a party to exercise any right or remedy provided under this agreement or by law shall constitute a waiver of that or any other right or remedy, nor shall it prevent or restrict the further exercise of that or any other right or remedy. No single or partial exercise of such right or remedy shall prevent or restrict the further exercise of that or any other right or remedy.
+
+
+Severance
+
+
+  48. If any provision or part-provision of this Agreement is or becomes invalid, illegal or unenforceable, it shall be deemed deleted, but that shall not affect the validity and enforceability of the rest of this agreement.
+
+
+  49. If any provision or part-provision of this agreement is deemed deleted under clause 23, the parties shall negotiate in good faith to agree a replacement provision that, to the greatest extent possible, achieves the intended commercial result of the original provision.
+
+
+Changes to the applicable law
+
+
+      If during the Term the Data Protection Legislation change in a way that the Agreement is no longer adequate for the purpose of governing lawful data sharing exercises, the Parties agree that the SPoCs will negotiate in good faith to review the Agreement in the light of the new legislation.
+
+
+No partnership or agency
+
+
+  50. Nothing in this agreement is intended to, or shall be deemed to, establish any partnership or joint venture between any of the parties, constitute any party the agent of another party, or authorise any party to make or enter into any commitments for or on behalf of any other party.
+
+
+  51. All parties confirms they are acting on there own behalf and not for the benefit of any other person.
+
+
+Entire agreement
+
+
+  52. This Agreement constitutes the entire agreement between the parties and supersedes and extinguishes all previous agreements, promises, assurances, warranties, representations and understandings between them, whether written or oral, relating to its subject matter.
+
+
+  53. Each party acknowledges that in entering into this Agreement it does not rely on and shall have no remedies in respect of any statement, representation, assurance or warranty (whether made innocently or negligently) that is not set out in this Agreement.
+
+
+  54. Each party agrees that it shall have no claim for innocent or negligent misrepresentation or negligent misrepresentation based on any statement in this Agreement.
+
+
+Force majeure
+
+
+      Neither party shall be in breach of this Agreement nor liable for delay in performing, or failure to perform, any of its obligations under this agreement if such delay or failure result from events, circumstances or causes beyond its reasonable control. In such circumstances the affected party shall be entitled to a reasonable extension of the time for performing such obligations. If the period of delay or non-performance continues, the party not affected may terminate this agreement by giving written notice to the affected party.
+
+
+Rights and remedies
+
+
+      The rights and remedies provided under this Agreement are in addition to, and not exclusive of, any rights or remedies provided by law.
+
+
+Notice
+
+
+  55. Any notice given to a party under or in connection with this agreement shall be in writing, addressed to the SPoCs and shall be:
+
+         a) delivered by hand or by pre-paid first-class post or other next working day delivery service at its registered office (if a company) or its principal place of business (in any other case); or
+
+         b) sent by email to the SPoC.
+
+
+  56. Any notice shall be deemed to have been received:
+
+         a) if delivered by hand, on signature of a delivery receipt
+
+         b) if sent by pre-paid first-class post or other next working day delivery service
+
+         c) if sent by email, at the time of transmission, or if this time falls outside business hours in the place of receipt, when business hours resume. In this clause 30.2(c), business hours means 9:00 am to 5:00 pm Monday to Friday on a day that is not a public holiday in the place of receipt.
+
+
+  57. This clause does not apply to the service of any proceedings or other documents in any legal action or, where applicable, any arbitration or other method of dispute resolution
+
+
+Governing law
+
+
+      This Agreement and any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with it or its subject matter or formation shall be governed by and construed in accordance with the law of England and Wales.
+
+
+Jurisdiction
+
+
+      Each party irrevocably agrees that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim (including non-contractual disputes or claims), arising out of or in connection with this Agreement or its subject matter or formation.
+
+This agreement has been entered into on the date stated at the beginning of it.
+
+
+
+|Signed by Scott Heath                                                                                 |     |……………….………….…….….                                |
+|for and on behalf of all Data Disclosures outlined in ANNEX A                                         |     |Director                                         |
+|Signed by James Beardmore                                                                             |     |……………….………….…….….                                |
+|for and on behalf of all Data Receivers outlined in ANNEX A                                           |     |Director                                         |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ANNEX A
+
+List of Data Disclosures (DJH Mitten Clarke Group)
+
+Project Balearics Topco Limited – Company Number – 14383563
+
+Project Balearics Midco Limited – Company Number – 14383752
+
+The Great Things Together Group - Company Number – 14384374
+
+DJH Mitten Clarke Group Limited - Company Number - 13871316
+
+DJH Mitten Clarke Audit Limited – Company Number – 10391979
+
+DJH Mitten Clarke Limited - Company Number – 03451690
+
+Capital Allowance Review – Company Number – 08737153
+
+DJH Mitten Clarke Leeds Limited – Company Number – 05794139
+
+Revell Ward Holdings Limited – Company Number - 11203985
+
+Revell Ward Limited – Company Number – 06503375
+
+DJH Mitten Clarke Estate Planning Limited – Company Number – 15080394
+
+DJH Mitten Clarke Nantwich Limited – Company Number – 06022868
+
+Innov8 Human Resources Limited – Company Number - 10246273
+
+Lloyd Piggott Holdings Limited – Company Number - 11857281
+
+DJH Mitten Clarke Manchester Limited – Company Number – 03413916
+
+DJH Mitten Clarke Walsall Limited - Company Number – 04646657
+
+DJH Mitten Clarke Chester Limited - Company Number – 07531287
+
+DTE Business Advisers Group Limited - Company Number - 07945270
+
+DTE Business Advisers Limited - Company Number – 04202581
+
+The DTE Payroll and Tax Centre Limited - Company Number – 02506635
+
+Any companies acquired, interests in companies where not controlled or newly formed entities where or not owned directly or indirectly by DJH Mitten Clarke Group Ltd.
+
+
+
+List of Data Receivers (DJH Mitten Clarke Group)
+
+Project Balearics Topco Limited – Company Number – 14383563
+
+Project Balearics Midco Limited – Company Number – 14383752
+
+The Great Things Together Group - Company Number – 14384374
+
+DJH Mitten Clarke Group Limited - Company Number - 13871316
+
+DJH Mitten Clarke Audit Limited – Company Number – 10391979
+
+DJH Mitten Clarke Limited - Company Number – 03451690
+
+Capital Allowance Review – Company Number – 08737153
+
+DJH Mitten Clarke Leeds Limited – Company Number – 05794139
+
+Revell Ward Holdings Limited – Company Number - 11203985
+
+Revell Ward Limited – Company Number – 06503375
+
+DJH Mitten Clarke Estate Planning Limited – Company Number – 15080394
+
+DJH Mitten Clarke Nantwich Limited – Company Number – 06022868
+
+Innov8 Human Resources Limited – Company Number - 10246273
+
+Lloyd Piggott Holdings Limited – Company Number - 11857281
+
+DJH Mitten Clarke Manchester Limited – Company Number – 03413916
+
+DJH Mitten Clarke Walsall Limited - Company Number – 04646657
+
+DJH Mitten Clarke Chester Limited - Company Number – 07531287
+
+DTE Business Advisers Group Limited - Company Number - 07945270
+
+DTE Business Advisers Limited - Company Number – 04202581
+
+The DTE Payroll and Tax Centre Limited - Company Number – 02506635
+
+Any companies acquired, interests in companies where not controlled or newly formed entities where or not owned directly or indirectly by DJH Mitten Clarke Group Ltd.
+
+
+
