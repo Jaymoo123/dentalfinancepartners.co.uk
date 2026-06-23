@@ -31,7 +31,7 @@ import { describe, it, expect } from "vitest";
 import { computeCgt } from "../lib/cgt";
 import { additionalDwellingSdlt } from "../lib/sdlt";
 import { corporationTax, corporationTaxEffectiveRate } from "../lib/corpTax";
-import { computeDividendTax } from "../lib/dividendTax";
+import { computeDividendTax, DIV_BASIC, DIV_HIGHER } from "../lib/dividendTax";
 import { computeLbtt } from "../lib/lbtt";
 import { computeLtt } from "../lib/ltt";
 import { firstTimeBuyerSdlt, marginalSdlt, STANDARD_SDLT_BANDS } from "../lib/sdlt";
@@ -420,6 +420,12 @@ describe("GOLDEN: corporation-tax-calculator (defaults)", () => {
 // Defaults: otherIncome=30000, dividends=20000
 // ============================================================
 describe("GOLDEN: dividend-tax-calculator (defaults)", () => {
+  // Sentinel: guards against a silent regression of the FA 2026 s.4 constants.
+  it("FA 2026 s.4 constants are correct (10.75% basic, 35.75% higher)", () => {
+    expect(DIV_BASIC).toBe(0.1075);
+    expect(DIV_HIGHER).toBe(0.3575);
+  });
+
   const r = computeDividendTax({ otherIncome: 30_000, dividends: 20_000 });
 
   // otherIncome=30000: PA=12570, so income above PA = 17430; basic band = 37700.
@@ -432,7 +438,7 @@ describe("GOLDEN: dividend-tax-calculator (defaults)", () => {
   // room in basic = 37700 - 17930 = 19770.
   // atBasic = min(19500, 19770) = 19500.
   // atHigher = 0. atAdditional = 0.
-  // tax = 19500 * 0.0875 = 1706.25
+  // tax = 19500 * 0.1075 = 2096.25 (FA 2026 s.4 rates)
 
   it("all dividends fall in basic band", () => {
     expect(r.atBasic).toBe(19_500);
@@ -440,8 +446,8 @@ describe("GOLDEN: dividend-tax-calculator (defaults)", () => {
     expect(r.atAdditional).toBe(0);
   });
 
-  it("tax = 1706 (rounded to nearest £)", () => {
-    expect(gbp(r.tax)).toBe("£1,706");
+  it("tax = 2096 (rounded to nearest £, FA 2026 s.4 rates)", () => {
+    expect(gbp(r.tax)).toBe("£2,096");
   });
 });
 

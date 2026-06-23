@@ -272,7 +272,7 @@ export default function PropertyTaxRatesPage() {
                   { band: "Corporation tax £250,000 profit or more", a: "25%" },
                   { band: "Marginal relief band (effective)", a: "about 26.5%" },
                   { band: "Dividend allowance", a: "£500" },
-                  { band: "Dividend tax rates", a: "8.75% / 33.75% / 39.35%" },
+                  { band: "Dividend tax rates", a: "10.75% / 35.75% / 39.35%" },
                 ]}
               />
             </Section>

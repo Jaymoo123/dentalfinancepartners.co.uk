@@ -124,7 +124,7 @@ export default function IncorporationCompanyStructuresPage() {
               When you transfer properties to your company, the market value less any mortgages creates a director&apos;s loan account — money the company owes you. You can withdraw this balance tax-free over time, providing a useful source of income in the early years of incorporation without triggering additional tax.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Once the loan account is exhausted, profits are typically extracted via a combination of salary (up to the NIC threshold) and dividends. For the 2026/27 tax year, the dividend allowance is £500 and rates are 8.75% (basic), 33.75% (higher), and 39.35% (additional). Planning the mix of salary and dividends each year is critical to minimising the overall tax burden.
+              Once the loan account is exhausted, profits are typically extracted via a combination of salary (up to the NIC threshold) and dividends. For the 2026/27 tax year, the dividend allowance is £500 and rates are 10.75% (basic), 35.75% (higher), and 39.35% (additional). Planning the mix of salary and dividends each year is critical to minimising the overall tax burden.
             </p>
           </section>
           <section>

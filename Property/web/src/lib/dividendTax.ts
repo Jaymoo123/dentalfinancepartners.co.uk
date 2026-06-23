@@ -1,14 +1,14 @@
 /**
  * UK Dividend Tax, 2026/27 (dividend rates are UK-wide, not devolved):
  *   Dividend allowance £500 (taxed at 0% but still uses up band space).
- *   Rates: 8.75% basic, 33.75% higher, 39.35% additional.
+ *   Rates: 10.75% basic, 35.75% higher, 39.35% additional (FA 2026 s.4).
  * Dividends are the top slice of income: other (non-dividend) income uses the
  * personal allowance and the rate bands first, then dividends stack on top.
  * Ignores the personal-allowance taper above £100,000 (flagged in the tool).
  */
 export const DIVIDEND_ALLOWANCE = 500;
-export const DIV_BASIC = 0.0875;
-export const DIV_HIGHER = 0.3375;
+export const DIV_BASIC = 0.1075;
+export const DIV_HIGHER = 0.3575;
 export const DIV_ADDITIONAL = 0.3935;
 
 const PERSONAL_ALLOWANCE = 12_570;
