@@ -244,7 +244,6 @@ export function MiniCapture({
               className={inputClass}
               aria-invalid={!!fieldErrors.message}
             />
-            <p className="mt-1.5 text-xs text-slate-500">Please do not include sensitive personal information.</p>
             {fieldErrors.message && <p className="mt-1.5 text-xs font-medium text-red-600">{fieldErrors.message}</p>}
           </div>
 

@@ -286,7 +286,6 @@ export function LeadForm({
           aria-invalid={!!fieldErrors.message}
           aria-describedby={fieldErrors.message ? "message-error" : undefined}
         />
-        <p className="mt-1.5 text-xs text-slate-500">Please do not include sensitive personal information.</p>
         {fieldErrors.message && (
           <p id="message-error" className="mt-1.5 text-xs font-medium text-red-600">
             {fieldErrors.message}

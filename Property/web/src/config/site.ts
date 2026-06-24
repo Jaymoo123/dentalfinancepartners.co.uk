@@ -9,26 +9,16 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner firm that enquiries are shared with. Single source of truth.
-// null = enquiries are handled in-house and NOT shared with any third-party firm.
+// Specialist partner firm that enquiries are shared with. Kept configured so the
+// Privacy Policy + lead routing keep disclosing and honouring the data-sharing
+// arrangement, even though the FORM wording below no longer names the partner.
 const partner = niche.partner;
-// The partner's name plus any descriptor (e.g. a group disclosure), so the
-// acknowledgement names the firm exactly as the data-sharing agreement requires.
-const partnerDisplayName = partner
-  ? `${partner.name}${partner.descriptor ? ` ${partner.descriptor}` : ""}`
-  : null;
-// Lead-form wording for genuine ENQUIRIES, WITHOUT the trailing "See our Privacy
-// Policy." link (each form appends that). Driven by `partner` so the policy and
-// the forms can never drift, and so re-adding a partner later is a config change.
-//
-// When a partner is configured, the lawful basis for sharing the enquiry is the
-// legitimate interests of both firms (not consent), so this line is an
-// ACKNOWLEDGEMENT: submitting the enquiry is the affirmative act and there is no
-// tick-to-consent box (matches Annex B.1 of the data-sharing agreement). Without
-// a partner, enquiries are handled in-house under consent.
-const leadConsentText = partner
-  ? `To answer your enquiry, your details will be shared with our specialist partner firm ${partnerDisplayName}, an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+// Lead-form enquiry wording (each form appends "See our Privacy Policy."). Reverted
+// 2026-06-25 to the in-house pre-data-sharing wording on the form ITSELF: the
+// third-party sharing is still disclosed in the linked Privacy Policy (which names
+// the partner), keeping a transparent layered notice without naming the partner at
+// the point of collection.
+const leadConsentText = `By submitting this enquiry you agree to ${niche.display_name} using your details to respond and provide the advice you have requested.`;
 // Email-only sign-ups (resource downloads) are NOT shared with the partner firm
 // (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."

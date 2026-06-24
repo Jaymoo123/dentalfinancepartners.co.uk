@@ -144,7 +144,6 @@ export function SpecialistWidget() {
                 <p className="text-xs font-semibold text-slate-700">Or send a specialist your question:</p>
                 <input type="email" name="email" required placeholder="Your email" autoComplete="email" maxLength={100} className={inputClass} />
                 <textarea name="question" rows={2} maxLength={500} placeholder="Your question (optional)" className={inputClass} />
-                <p className="text-[11px] leading-relaxed text-slate-400">Please do not include sensitive personal information.</p>
                 {/* Data-sharing acknowledgement (legitimate interests, not consent):
                     submitting is the affirmative act (data-sharing agreement Annex B.1). */}
                 <p className="text-[11px] leading-relaxed text-slate-500">
