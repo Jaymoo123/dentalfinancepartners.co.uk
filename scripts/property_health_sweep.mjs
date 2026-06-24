@@ -75,6 +75,42 @@ async function checkUrl(url) {
   return { url, status, bytes, fails, warns };
 }
 
+// Pre-flight guard for the 2026-06-24 outage class: a trailing CR/LF baked into
+// NEXT_PUBLIC_SUPABASE_URL/ANON_KEY silently breaks every client-side lead insert
+// (the served bundle calls fetch(`...supabase.co\r\n/rest/v1/leads`) -> Invalid value).
+// Fetch the served JS chunks and assert the byte right after "supabase.co" is a
+// clean string terminator (a quote), not a backslash/escape or a raw CR/LF.
+async function checkBundleSupabaseConfig(base) {
+  const chunkUrls = new Set();
+  for (const p of ["/", "/contact"]) {
+    try {
+      const html = await (await fetch(base + p, { headers: { "user-agent": UA } })).text();
+      for (const m of html.matchAll(/\/_next\/static\/[^"'\\]+\.js/g)) chunkUrls.add(base + m[0]);
+    } catch {
+      /* ignore here; the page crawl below reports dead pages */
+    }
+  }
+  let found = false;
+  let corruptByte = null;
+  for (const cu of chunkUrls) {
+    let t;
+    try {
+      t = await (await fetch(cu, { headers: { "user-agent": UA } })).text();
+    } catch {
+      continue;
+    }
+    for (let idx = t.indexOf("supabase.co"); idx !== -1; idx = t.indexOf("supabase.co", idx + 1)) {
+      found = true;
+      const next = t.charCodeAt(idx + "supabase.co".length);
+      if (next === 0x5c || next === 0x0d || next === 0x0a) corruptByte = next; // backslash / CR / LF
+    }
+  }
+  if (!found) return { ok: false, detail: "could not locate the inlined Supabase URL in the bundle (cannot verify)" };
+  if (corruptByte !== null)
+    return { ok: false, detail: "inlined Supabase config is CORRUPTED (trailing char) -> client lead capture is BROKEN" };
+  return { ok: true, detail: "inlined Supabase URL is clean" };
+}
+
 async function runPool(urls, worker, concurrency) {
   const results = [];
   let i = 0;
@@ -89,6 +125,10 @@ async function runPool(urls, worker, concurrency) {
 }
 
 console.log(`Health sweep: ${BASE}`);
+
+const bundle = await checkBundleSupabaseConfig(BASE);
+console.log(`Bundle Supabase config: ${bundle.ok ? "OK" : "FAIL"} -> ${bundle.detail}`);
+
 const urls = await fetchSitemapUrls(BASE);
 console.log(`Sitemap URLs: ${urls.length}\n`);
 
@@ -109,5 +149,7 @@ if (warned.length) {
 }
 
 const healthy = results.length - failed.length;
-console.log(`SUMMARY: ${healthy}/${results.length} pages healthy, ${failed.length} FAIL, ${warned.length} warn`);
-process.exit(failed.length ? 1 : 0);
+console.log(
+  `SUMMARY: ${healthy}/${results.length} pages healthy, ${failed.length} FAIL, ${warned.length} warn; bundle config ${bundle.ok ? "OK" : "FAIL"}`,
+);
+process.exit(failed.length || !bundle.ok ? 1 : 0);

@@ -1,0 +1,35 @@
+name: Lead-capture tripwire
+
+# Early-warning monitor for the Property lead-capture path. Runs every 6 hours.
+# - Bundle check: catches the 2026-06-24 class (corrupted NEXT_PUBLIC_SUPABASE_*
+#   baked into the live JS), deterministically.
+# - Flatline check: form-starts happening but zero submits -> likely broken submit.
+# Emails the operator (Resend) and fails the run if either trips.
+#
+# Required secrets: SUPABASE_URL, SUPABASE_KEY (already used by other workflows).
+# Optional secrets to enable the alert email: RESEND_API_KEY, TRIPWIRE_NOTIFY_TO,
+# RESEND_FROM_EMAIL. Without RESEND_API_KEY the run still checks + logs (no email).
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours, on the hour (UTC)
+  workflow_dispatch: {}
+
+jobs:
+  tripwire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install --quiet httpx
+      - name: Run lead-capture tripwire
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TRIPWIRE_NOTIFY_TO: ${{ secrets.TRIPWIRE_NOTIFY_TO }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+        run: python scripts/lead_capture_tripwire.py
