@@ -1,0 +1,2 @@
+lead_ref,lead_captured_at,enquirer_name,qualifying_Y_N,consent_basis,forwarded_to_djh_at,djh_status,rejection_reason,billable_Y_N,invoice_ref,invoice_paid_at,notes
+PTP-EXAMPLE-01,2026-06-19T14:14,<copy from your inbox>,Y,generic-pre-DJH,2026-06-2x,forwarded,,Y,,,"back-fill: one of the 3 already forwarded; captured pre-flip so generic consent"

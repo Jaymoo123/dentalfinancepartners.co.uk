@@ -65,6 +65,12 @@ export async function POST(req: NextRequest) {
   const r = payload.record;
   if (!r?.id) return NextResponse.json({ ok: false, error: "no_record" }, { status: 400 });
 
+  // Synthetic/test leads (post-deploy smoke checks) must never consume the paid
+  // enrichment model or land in lead_enrichment. They are deleted by the probe.
+  if ((r.source ?? "").trim().toLowerCase() === "test") {
+    return NextResponse.json({ ok: true, skipped: "test-lead" });
+  }
+
   const message = (r.message ?? "").trim();
   if (!message) return NextResponse.json({ ok: true, skipped: "no_message" });
 

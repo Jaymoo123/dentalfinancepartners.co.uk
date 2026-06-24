@@ -37,6 +37,19 @@ function num(v: unknown): number | undefined {
   return typeof v === "number" && Number.isFinite(v) ? v : undefined;
 }
 
+/**
+ * Visitor ids minted by synthetic/test tooling (e.g. the post-deploy probes)
+ * carry this prefix. Their traffic is flagged is_bot=true so it is excluded from
+ * every human-only rollup view, CRO detector and experiment-results view (all of
+ * which filter is_bot=false), keeping test runs out of any decision data.
+ * Real visitor ids are always minted as "v_<hex>" (see analytics/ids.ts), so this
+ * prefix can never collide with a genuine visitor.
+ */
+export const SYNTHETIC_VISITOR_PREFIX = "synthetic_";
+function isSyntheticVisitor(visitorId: unknown): boolean {
+  return typeof visitorId === "string" && visitorId.startsWith(SYNTHETIC_VISITOR_PREFIX);
+}
+
 /** Keep only allowlisted events with the required identity fields + capped props.
  *  Also drops events whose site_key doesn't match the expected key (foreign-key drop). */
 export function sanitiseEvents(raw: unknown, expectedSiteKey: string): RawEvent[] {
@@ -206,7 +219,6 @@ export function createTrackHandler(opts: { siteKey: string }) {
 
     const groups = new Map<string, RawEvent[]>();
     for (const e of events) {
-      e.is_bot = isBot;
       const key = String(e.session_id);
       const g = groups.get(key);
       if (g) g.push(e);
@@ -216,9 +228,14 @@ export function createTrackHandler(opts: { siteKey: string }) {
     try {
       await Promise.all(
         Array.from(groups.values()).map((group) => {
+          // Synthetic/test traffic (post-deploy probes) is flagged is_bot so it is
+          // excluded from every human-only rollup, detector and experiment metric.
+          const synthetic = isSyntheticVisitor(group[0]?.visitor_id);
+          const groupBot = isBot || synthetic;
+          const groupReason = synthetic ? "synthetic-test" : reason;
           const session = buildSession(group, {
-            isBot,
-            botReason: reason,
+            isBot: groupBot,
+            botReason: groupReason,
             botidVerified,
             country,
             city,
@@ -237,7 +254,7 @@ export function createTrackHandler(opts: { siteKey: string }) {
             page_query: e.page_query,
             props: e.props,
             is_embed: e.is_embed === true,
-            is_bot: isBot,
+            is_bot: groupBot,
           }));
           return callIngest(SUPABASE_URL, SERVICE_KEY, session, eventRows);
         }),

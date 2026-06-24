@@ -10,15 +10,19 @@
  *
  * CC: the partner firm (Reflex Accounting, LEADS_NOTIFY_CC) is copied on leads
  * from every site EXCEPT those in LEADS_NOTIFY_CC_EXCLUDE_SOURCES (defaults to
- * "property"), so Property's own leads stay internal-only while dentists,
- * medical, solicitors, generalist, agency and contractors-ir35 still copy the
- * partner. See resolveLeadCc.
+ * "property,test"), so Property's own leads (and synthetic test leads) stay
+ * internal-only while dentists, medical, solicitors, generalist, agency and
+ * contractors-ir35 still copy the partner. See resolveLeadCc.
+ *
+ * source='test' is the reserved synthetic-lead value used by the post-deploy
+ * smoke check: it is never copied to any vendor (CC-excluded) and is routed only
+ * to the operator (resolveLeadTo). The probe deletes the row after asserting.
  *
  * Kept as pure functions (env injected) so the routing rules are unit-testable
  * without standing up the route or mocking Resend.
  */
 export const DEFAULT_PARTNER_CC = "ahmadtirmizey@reflexaccounting.co.uk";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "property";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
 // dedicated Ashfield Trading inbox (the DJH-deal inbox); every other site's leads
@@ -62,6 +66,11 @@ export function resolveLeadCc(source: string | undefined, env: Env = process.env
  */
 export function resolveLeadTo(source: string | undefined, env: Env = process.env): string {
   const sourceKey = (source ?? "").trim().toLowerCase();
+  if (sourceKey === "test") {
+    // Synthetic/test leads (post-deploy smoke checks) go ONLY to the operator,
+    // never a vendor. Overridable via LEADS_NOTIFY_TO_TEST.
+    return env.LEADS_NOTIFY_TO_TEST || env.LEADS_NOTIFY_TO || DEFAULT_NOTIFY_TO;
+  }
   if (sourceKey === "property") {
     return env.LEADS_NOTIFY_TO_PROPERTY || PROPERTY_NOTIFY_TO;
   }

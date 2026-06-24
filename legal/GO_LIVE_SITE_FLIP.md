@@ -1,3 +1,5 @@
+> **STATUS: DONE / SUPERSEDED (verified 2026-06-24).** This runbook is complete: the partner config is set to DJH, the privacy policy serves the legitimate-interests wording on prod, the lead-form acknowledgement is DJH-named, and `source='property'` remains excluded from partner auto-CC (manual forward kept by design). Kept for history only. Live operating procedure now lives in `docs/property/ops/DJH_FORWARDING_SOP.md`; continuity facts in `docs/property/ops/CONTINUITY.md`. Do not action the steps below again.
+
 # GO-LIVE SITE FLIP — do this (and DEPLOY it) BEFORE the first real lead
 
 *Created 2026-06-22, after the Lead Generation and Data Sharing Agreement with DJH Business Advisers Limited was FULLY EXECUTED. The contract and LIA say enquirers are told, at the point of submission, that their details are shared with DJH on a legitimate-interests basis. The live site does NOT yet do that. Until it does, forwarding a real enquirer's data to DJH is a transparency breach by the Supplier. So: make these changes, DEPLOY them, confirm live, THEN send leads. Not before.*

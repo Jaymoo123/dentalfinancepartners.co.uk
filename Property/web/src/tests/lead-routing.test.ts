@@ -22,6 +22,11 @@ describe("resolveLeadCc", () => {
     expect(resolveLeadCc("property", empty)).toEqual([]);
   });
 
+  it("does NOT copy any partner on synthetic test leads", () => {
+    expect(resolveLeadCc("test", empty)).toEqual([]);
+    expect(resolveLeadCc(" TEST ", empty)).toEqual([]);
+  });
+
   it("copies the partner on every other site's leads", () => {
     for (const source of ["dentists", "medical", "solicitors", "generalist", "agency", "contractors-ir35"]) {
       expect(resolveLeadCc(source, empty)).toEqual([DEFAULT_PARTNER_CC]);
@@ -58,9 +63,9 @@ describe("resolveLeadCc", () => {
 });
 
 describe("ccExcludedSources", () => {
-  it("defaults to Property only", () => {
-    expect(ccExcludedSources(empty)).toEqual([DEFAULT_CC_EXCLUDED_SOURCES]);
-    expect(DEFAULT_CC_EXCLUDED_SOURCES).toBe("property");
+  it("defaults to Property and synthetic test leads", () => {
+    expect(ccExcludedSources(empty)).toEqual(["property", "test"]);
+    expect(DEFAULT_CC_EXCLUDED_SOURCES).toBe("property,test");
   });
 });
 
@@ -75,6 +80,13 @@ describe("resolveLeadTo", () => {
       expect(resolveLeadTo(source, empty)).toBe(DEFAULT_NOTIFY_TO);
     }
     expect(DEFAULT_NOTIFY_TO).toBe("junaydmoughal@hotmail.co.uk");
+  });
+
+  it("sends synthetic test leads only to the operator (never a vendor)", () => {
+    expect(resolveLeadTo("test", empty)).toBe(DEFAULT_NOTIFY_TO);
+    expect(resolveLeadTo("test", { LEADS_NOTIFY_TO_TEST: "probe@ashfieldtrading.com" })).toBe(
+      "probe@ashfieldtrading.com",
+    );
   });
 
   it("matches the Property source case-insensitively and trims whitespace", () => {
