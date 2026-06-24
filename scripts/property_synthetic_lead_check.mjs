@@ -70,30 +70,39 @@ const payload = {
 
 console.log("Synthetic lead check ->", SUPABASE_URL);
 
-// 1) INSERT via the public anon path (exactly as the form does)
+// 1) INSERT via the public anon path EXACTLY as the live form does: fire-and-forget,
+//    NO return=representation (anon has no SELECT policy by design, so a readback
+//    would trip RLS - the form never reads back).
 const insRes = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
   method: "POST",
   headers: {
     apikey: ANON_KEY,
     Authorization: `Bearer ${ANON_KEY}`,
     "Content-Type": "application/json",
-    Prefer: "return=representation",
+    Prefer: "return=minimal",
   },
   body: JSON.stringify(payload),
 });
 const insBody = await insRes.text();
 if (insRes.status === 400 && /leads_source_valid|violates check constraint/i.test(insBody)) {
-  fail("source='test' rejected by CHECK -> the test-data-isolation migration is NOT applied yet. Apply 20260624000001 first.");
+  fail("source='test' rejected by CHECK -> migration 20260624000001 not applied yet.");
 }
 if (insRes.status !== 201) fail(`insert via anon path returned ${insRes.status}: ${insBody.slice(0, 200)}`);
-let row;
-try {
-  row = JSON.parse(insBody)[0];
-} catch {
-  fail(`insert succeeded but response did not parse: ${insBody.slice(0, 200)}`);
+console.log("  [ok] public anon insert accepted (201)");
+
+// 2) Read it back via the SERVICE role (anon cannot SELECT) to confirm it landed and
+//    capture the id for cleanup. Match on the unique probe email.
+const selRes = await fetch(
+  `${SUPABASE_URL}/rest/v1/leads?email=eq.${encodeURIComponent(payload.email)}&select=id,source`,
+  { headers: { apikey: SERVICE_KEY, Authorization: `Bearer ${SERVICE_KEY}` } },
+);
+const found = await selRes.json().catch(() => []);
+if (!Array.isArray(found) || found.length !== 1) {
+  fail(`expected exactly 1 probe row, found ${Array.isArray(found) ? found.length : "?"}`);
 }
-if (!row?.id) fail("insert returned no row id");
-console.log(`  [ok] public insert landed (id ${row.id}, source=${row.source})`);
+const row = found[0];
+if (row.source !== "test") fail(`probe row source='${row.source}', expected 'test'`);
+console.log(`  [ok] row landed (id ${row.id}, source=${row.source}; routed operator-only, vendors CC-excluded)`);
 
 // 2) notify wiring healthy (does not send; just confirms secrets/recipient configured)
 const SITE = (process.argv[2] || "https://www.propertytaxpartners.co.uk").replace(/\/$/, "");
