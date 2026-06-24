@@ -12,12 +12,18 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import type { TimePoint } from "@accounting-network/web-shared/console/adminData";
-import { TrendChart, formatBucket, formatBucketLong } from "@/components/TrendChart";
+import {
+  TrendChart,
+  formatBucket,
+  formatBucketLong,
+  buildLeadMarks,
+  leadMarkOpacity,
+} from "@/components/TrendChart";
 
 const series: TimePoint[] = [
-  { bucket: "2026-06-08T00:00:00Z", sessions: 12, events: 40, leads: 1 },
-  { bucket: "2026-06-09T00:00:00Z", sessions: 30, events: 95, leads: 0 },
-  { bucket: "2026-06-10T00:00:00Z", sessions: 21, events: 60, leads: 2 },
+  { bucket: "2026-06-08T00:00:00Z", sessions: 12, humans: 8, events: 40, leads: 1 },
+  { bucket: "2026-06-09T00:00:00Z", sessions: 30, humans: 22, events: 95, leads: 0 },
+  { bucket: "2026-06-10T00:00:00Z", sessions: 21, humans: 15, events: 60, leads: 2 },
 ];
 
 function render(props: Partial<Parameters<typeof TrendChart>[0]> = {}) {
@@ -68,5 +74,45 @@ describe("TrendChart (recovered Property chart, console port)", () => {
     expect(formatBucket(iso, "time")).toMatch(/14:30|15:30/); // UTC vs BST runner
     expect(formatBucketLong(iso, "day")).toContain("Jun 2026");
     expect(formatBucketLong(iso, "hour")).toContain("Mon");
+  });
+});
+
+describe("TrendChart lead markers", () => {
+  // Midday-UTC buckets so the day label is stable on any runner timezone.
+  const leadSeries: TimePoint[] = [
+    { bucket: "2026-06-08T12:00:00Z", sessions: 5, humans: 4, events: 9, leads: 1 },
+    { bucket: "2026-06-09T12:00:00Z", sessions: 8, humans: 6, events: 12, leads: 0 },
+    { bucket: "2026-06-10T12:00:00Z", sessions: 7, humans: 5, events: 11, leads: 2 },
+  ];
+
+  it("emits one marker per bucket with leads, skipping zero-lead buckets", () => {
+    expect(buildLeadMarks(leadSeries, "humans", "day")).toEqual([
+      { tick: "08 Jun", count: 1 },
+      { tick: "10 Jun", count: 2 },
+    ]);
+  });
+
+  it("sums leads from rows that collapse to the same tick (hourly shown as day)", () => {
+    const hourly: TimePoint[] = [
+      { bucket: "2026-06-08T09:00:00Z", sessions: 1, humans: 1, events: 1, leads: 1 },
+      { bucket: "2026-06-08T14:00:00Z", sessions: 1, humans: 1, events: 1, leads: 2 },
+      { bucket: "2026-06-09T14:00:00Z", sessions: 1, humans: 1, events: 1, leads: 1 },
+    ];
+    expect(buildLeadMarks(hourly, "sessions", "day")).toEqual([
+      { tick: "08 Jun", count: 3 },
+      { tick: "09 Jun", count: 1 },
+    ]);
+  });
+
+  it("draws no lead markers on the leads metric itself (redundant)", () => {
+    expect(buildLeadMarks(leadSeries, "leads", "day")).toEqual([]);
+  });
+
+  it("stacks opacity: faint for one lead, denser per extra lead, capped", () => {
+    expect(leadMarkOpacity(0)).toBe(0);
+    expect(leadMarkOpacity(1)).toBeCloseTo(0.22);
+    expect(leadMarkOpacity(2)).toBeCloseTo(0.4);
+    expect(leadMarkOpacity(3)).toBeCloseTo(0.58);
+    expect(leadMarkOpacity(99)).toBe(0.85);
   });
 });

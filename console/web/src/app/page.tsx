@@ -29,7 +29,6 @@ import { CategoryBarChart } from "@/components/CategoryBarChart";
 import {
   getSitesRegistry,
   getEstateOverview,
-  getEstateFunnel,
   getEstateChannels,
   getEstateErrors,
   getEstateLatestLeads,
@@ -42,6 +41,7 @@ import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
 import SiteSwitcher from "@/components/SiteSwitcher";
+import ConversionFunnel, { type FunnelTotals } from "@/components/ConversionFunnel";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = CONSOLE_NOINDEX_META;
@@ -102,11 +102,10 @@ export default async function EstatePage() {
   const startOfTodayUTC = new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   );
-  const [sites, overview, funnel, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily] =
+  const [sites, overview, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily] =
     await Promise.all([
       getSitesRegistry(),
       getEstateOverview(7),
-      getEstateFunnel(28),
       getEstateChannels(28),
       getEstateErrors(),
       getEstateLatestLeads(30),
@@ -170,9 +169,6 @@ export default async function EstatePage() {
     .map((s) => ({ name: s.display_name, value: kpiAllBySite.get(s.site_key)?.leads_all ?? 0 }))
     .sort((a, b) => b.value - a.value);
 
-  const funnelRate = (num: number, den: number) =>
-    den > 0 ? `${((num / den) * 100).toFixed(0)}%` : "-";
-
   // Per-site daily series (30 days) for the estate comparison overlay.
   const cmpFrom = new Date(now.getTime() - 30 * 86400_000).toISOString();
   const activeSites = sites.filter((s) => s.active);
@@ -181,6 +177,52 @@ export default async function EstatePage() {
     Promise.all(activeSites.map((s) => getFunnelDaily(s.site_key, "GB"))),
   ]);
   const cmp = buildMultiSiteSeries(activeSites, perSiteSeries, perSiteFunnel);
+
+  // Estate conversion funnel, windowed: aggregate the per-site daily funnel rows
+  // (already fetched above for the comparison overlay, GB) across sites by date,
+  // then bucket into the same Daily/Weekly/Monthly/All-time windows as the KPIs.
+  const estFunnelByDate = new Map<string, FunnelTotals & { date: string }>();
+  for (const siteRows of perSiteFunnel) {
+    for (const d of siteRows) {
+      const e =
+        estFunnelByDate.get(d.date) ??
+        { date: d.date, sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 };
+      e.sessions += d.sessions;
+      e.engaged += d.engaged_sessions;
+      e.calc += d.calc_sessions;
+      e.formCta += d.form_cta_sessions;
+      e.form += d.form_start_sessions;
+      e.converted += d.converted_sessions;
+      estFunnelByDate.set(d.date, e);
+    }
+  }
+  const estFunnelDaily = [...estFunnelByDate.values()];
+  const sumEstateFunnel = (fromMs: number): FunnelTotals => {
+    const since = new Date(fromMs).toISOString().slice(0, 10);
+    return estFunnelDaily.reduce(
+      (a, d) =>
+        d.date >= since
+          ? {
+              sessions: a.sessions + d.sessions,
+              engaged: a.engaged + d.engaged,
+              calc: a.calc + d.calc,
+              formCta: a.formCta + d.formCta,
+              form: a.form + d.form,
+              converted: a.converted + d.converted,
+            }
+          : a,
+      { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
+    );
+  };
+  const estFrom7 = new Date(now.getTime() - 7 * 86400_000);
+  const estFrom30 = new Date(now.getTime() - 30 * 86400_000);
+  const estAllFrom = new Date("2000-01-01");
+  const estateFunnelPages: KpiPage[] = [
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumEstateFunnel(startOfTodayUTC.getTime())} /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <ConversionFunnel totals={sumEstateFunnel(estFrom7.getTime())} /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <ConversionFunnel totals={sumEstateFunnel(estFrom30.getTime())} /> },
+    { key: "all", label: "All time", meta: "All time", node: <ConversionFunnel totals={sumEstateFunnel(estAllFrom.getTime())} /> },
+  ];
 
   // Weekly average daily visitors, all-time (estate total).
   const estateWeekly = buildWeeklyAvgVisitors(estateAllDaily, "estate", "Estate", "#059669");
@@ -345,52 +387,13 @@ export default async function EstatePage() {
           </table>
         </div>
 
-        {/* Estate funnel (28 days) */}
-        <h2 className="mt-10 text-lg font-bold text-slate-900">Estate funnel (28 days)</h2>
+        {/* Estate conversion funnel — swipe Daily -> Weekly -> Monthly -> All time */}
+        <h2 className="mt-10 text-lg font-bold text-slate-900">Estate funnel</h2>
         <p className="mt-1 text-xs text-slate-500">
-          All sites combined. Stages are sequential subsets.
+          All sites combined (GB). Stages are sequential session subsets.
         </p>
-        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-          <table className="w-full text-sm">
-            <tbody>
-              {[
-                { label: "Sessions", n: funnel.sessions, denom: funnel.sessions, denomLabel: "" },
-                { label: "Engaged", n: funnel.engaged_sessions, denom: funnel.sessions, denomLabel: "of sessions" },
-                { label: "Used calculator", n: funnel.calc_sessions, denom: funnel.engaged_sessions, denomLabel: "of engaged", branch: true },
-                { label: "Clicked form CTA", n: funnel.form_cta_sessions, denom: funnel.engaged_sessions, denomLabel: "of engaged" },
-                { label: "Started form", n: funnel.form_start_sessions, denom: funnel.form_cta_sessions, denomLabel: "of form-CTA" },
-                { label: "Submitted", n: funnel.converted_sessions, denom: funnel.form_start_sessions, denomLabel: "of form starts" },
-              ].map((row) => {
-                const barPct = funnel.sessions > 0 ? (row.n / funnel.sessions) * 100 : 0;
-                return (
-                  <tr
-                    key={row.label}
-                    className={`border-b border-slate-100 last:border-0 ${row.branch ? "bg-slate-50/60" : ""}`}
-                  >
-                    <td
-                      className={`px-4 py-2.5 ${row.branch ? "pl-6 font-normal text-slate-500 sm:pl-8" : "font-semibold text-slate-800"}`}
-                    >
-                      {row.label}
-                    </td>
-                    <td className="px-4 py-2.5 text-right font-mono text-slate-900">
-                      {row.n.toLocaleString("en-GB")}
-                    </td>
-                    <td className="hidden w-1/3 px-4 py-2.5 sm:table-cell">
-                      <div className="h-2 rounded bg-slate-100">
-                        <div
-                          className={`h-2 rounded ${row.branch ? "bg-sky-400" : "bg-emerald-500"}`}
-                          style={{ width: `${barPct}%` }}
-                        />
-                      </div>
-                    </td>
-                    <td className="px-4 py-2.5 text-right text-xs text-slate-500">
-                      {row.denomLabel ? `${funnelRate(row.n, row.denom)} ${row.denomLabel}` : ""}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+        <div className="mt-3">
+          <KpiWindowCarousel pages={estateFunnelPages} caption="GB sessions · windows in UTC" />
         </div>
 
         {/* Channel comparison */}

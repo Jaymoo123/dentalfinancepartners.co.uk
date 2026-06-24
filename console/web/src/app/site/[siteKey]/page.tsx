@@ -66,6 +66,7 @@ import {
 import { checkAuth } from "@/lib/checkAuth";
 import { getSiteCapabilities } from "@/config/capabilities";
 import SiteSwitcher from "@/components/SiteSwitcher";
+import ConversionFunnel from "@/components/ConversionFunnel";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = CONSOLE_NOINDEX_META;
@@ -586,17 +587,25 @@ export default async function SitePage({
     if (l.visitor_id && !leadByVisitor.has(l.visitor_id)) leadByVisitor.set(l.visitor_id, l);
   }
 
-  const totals = funnel.reduce(
-    (a, d) => ({
-      sessions: a.sessions + d.sessions,
-      engaged: a.engaged + d.engaged_sessions,
-      calc: a.calc + d.calc_sessions,
-      formCta: a.formCta + d.form_cta_sessions,
-      form: a.form + d.form_start_sessions,
-      converted: a.converted + d.converted_sessions,
-    }),
-    { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
-  );
+  // Funnel stage totals for a time window: sum the daily funnel rows on/after the
+  // window's start date (mirrors the KPI-card windows). Each FunnelDay is one date.
+  const sumFunnel = (fromMs: number) => {
+    const since = new Date(fromMs).toISOString().slice(0, 10);
+    return funnel.reduce(
+      (a, d) =>
+        d.date >= since
+          ? {
+              sessions: a.sessions + d.sessions,
+              engaged: a.engaged + d.engaged_sessions,
+              calc: a.calc + d.calc_sessions,
+              formCta: a.formCta + d.form_cta_sessions,
+              form: a.form + d.form_start_sessions,
+              converted: a.converted + d.converted_sessions,
+            }
+          : a,
+      { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
+    );
+  };
   const errorsSeries = densify(errorsDaily, 14, (r) => r.count, "bucket");
 
   // Per-window average engaged time (ms), derived from the top-500 visitor set
@@ -626,14 +635,13 @@ export default async function SitePage({
     { rage: 0, dead: 0 },
   );
 
-  type FunnelRow = { label: string; n: number; denom: number; denomLabel: string; branch?: boolean };
-  const funnelRows: FunnelRow[] = [
-    { label: "Sessions", n: totals.sessions, denom: totals.sessions, denomLabel: "" },
-    { label: "Engaged", n: totals.engaged, denom: totals.sessions, denomLabel: "of sessions" },
-    { label: "Used calculator", n: totals.calc, denom: totals.engaged, denomLabel: "of engaged", branch: true },
-    { label: "Clicked form CTA", n: totals.formCta, denom: totals.engaged, denomLabel: "of engaged" },
-    { label: "Started form", n: totals.form, denom: totals.formCta, denomLabel: "of form-CTA" },
-    { label: "Submitted", n: totals.converted, denom: totals.form, denomLabel: "of form starts" },
+  // Conversion funnel with the same Daily / Weekly / Monthly / All-time windows as
+  // the KPI cards, computed from the daily funnel rows (no DB change needed).
+  const funnelPages: KpiPage[] = [
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumFunnel(startOfTodayUTC.getTime())} /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <ConversionFunnel totals={sumFunnel(from7.getTime())} /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <ConversionFunnel totals={sumFunnel(from30.getTime())} /> },
+    { key: "all", label: "All time", meta: "All time", node: <ConversionFunnel totals={sumFunnel(allTimeFrom.getTime())} /> },
   ];
 
   const visitorRows: VisitorRow[] = visitors.map((v) => {
@@ -682,29 +690,8 @@ export default async function SitePage({
       <KpiWindowCarousel pages={kpiPages} caption={kpiCaption} />
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
-      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table className="w-full text-sm">
-          <tbody>
-            {funnelRows.map((r) => {
-              const rate = r.denom > 0 ? r.n / r.denom : 0;
-              const barPct = totals.sessions > 0 ? (r.n / totals.sessions) * 100 : 0;
-              return (
-                <tr key={r.label} className={`border-b border-slate-100 last:border-0 ${r.branch ? "bg-slate-50/60" : ""}`}>
-                  <td className={`px-4 py-2.5 ${r.branch ? "pl-6 font-normal text-slate-500 sm:pl-8" : "font-semibold text-slate-800"}`}>{r.label}</td>
-                  <td className="px-4 py-2.5 text-right font-mono text-slate-900">{r.n}</td>
-                  <td className="hidden w-1/3 px-4 py-2.5 sm:table-cell">
-                    <div className="h-2 rounded bg-slate-100">
-                      <div className={`h-2 rounded ${r.branch ? "bg-sky-400" : "bg-emerald-500"}`} style={{ width: `${barPct}%` }} />
-                    </div>
-                  </td>
-                  <td className="px-4 py-2.5 text-right text-xs text-slate-500">
-                    {r.denomLabel ? `${(rate * 100).toFixed(0)}% ${r.denomLabel}` : ""}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+      <div className="mt-3">
+        <KpiWindowCarousel pages={funnelPages} caption={kpiCaption} />
       </div>
 
       <div className="mt-8">

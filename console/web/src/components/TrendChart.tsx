@@ -21,6 +21,7 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -100,6 +101,46 @@ const METRIC_COLOR: Record<Metric, string> = {
   humans: "#7c3aed",
 };
 
+// Lead markers: a faint vertical red line at each X bucket where >=1 lead came
+// in, overlaid on the sessions/visitors timelines so you can see at a glance
+// *when* leads landed against traffic. Multiple leads in the same bucket stack
+// into a single line at a higher opacity (still one line, just less faint).
+const LEAD_MARK_COLOR = "#dc2626"; // red-600
+const LEAD_OPACITY_BASE = 0.22;
+const LEAD_OPACITY_STEP = 0.18;
+const LEAD_OPACITY_MAX = 0.85;
+
+/** Stacked opacity for N leads sharing one bucket. Exported for tests. */
+export function leadMarkOpacity(count: number): number {
+  if (count <= 0) return 0;
+  return Math.min(LEAD_OPACITY_BASE + (count - 1) * LEAD_OPACITY_STEP, LEAD_OPACITY_MAX);
+}
+
+export type LeadMark = { tick: string; count: number };
+
+/**
+ * One marker per X-axis bucket that saw at least one lead, with the lead count
+ * summed across any TimePoints that format to the same tick (e.g. hourly rows
+ * rendered at day granularity collapse to one daily marker, so leads in the same
+ * visible window stack correctly). Returns [] for the leads metric itself, where
+ * a lead line on the leads chart would be redundant. Exported for tests.
+ */
+export function buildLeadMarks(
+  data: TimePoint[],
+  metric: Metric,
+  formatType: FormatType,
+): LeadMark[] {
+  if (metric === "leads") return [];
+  const byTick = new Map<string, number>();
+  for (const d of data) {
+    if (d.leads > 0) {
+      const tick = formatBucket(d.bucket, formatType);
+      byTick.set(tick, (byTick.get(tick) ?? 0) + d.leads);
+    }
+  }
+  return Array.from(byTick, ([tick, count]) => ({ tick, count }));
+}
+
 type ChartPoint = { bucket: string; value: number; tick: string };
 
 /** Hover tooltip: long en-GB bucket label + metric value. */
@@ -163,6 +204,12 @@ export function TrendChart({ data, metric, label, formatType }: Props) {
 
   const color = METRIC_COLOR[metric];
 
+  // Buckets that saw a lead, summed per X tick → faint stacked red markers.
+  const leadMarks = React.useMemo(
+    () => buildLeadMarks(data, metric, formatType),
+    [data, metric, formatType],
+  );
+
   // Thin out X-axis ticks so dense windows (e.g. 96 fifteen-minute buckets)
   // stay legible.
   const tickInterval = Math.max(0, Math.ceil(points.length / 8) - 1);
@@ -171,9 +218,21 @@ export function TrendChart({ data, metric, label, formatType }: Props) {
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="flex items-baseline justify-between gap-3">
         <h3 className="text-sm font-bold text-slate-900">{label}</h3>
-        <span className="shrink-0 text-xs tabular-nums text-slate-500">
-          {total.toLocaleString("en-GB")} total · peak {peak.toLocaleString("en-GB")}
-        </span>
+        <div className="flex shrink-0 items-baseline gap-2 text-xs tabular-nums text-slate-500">
+          {leadMarks.length > 0 && (
+            <span className="flex items-center gap-1 text-slate-400">
+              <span
+                className="inline-block h-3 w-px"
+                style={{ backgroundColor: LEAD_MARK_COLOR }}
+                aria-hidden
+              />
+              lead
+            </span>
+          )}
+          <span>
+            {total.toLocaleString("en-GB")} total · peak {peak.toLocaleString("en-GB")}
+          </span>
+        </div>
       </div>
       <div className="mt-3">
         {data.length === 0 ? (
@@ -217,6 +276,15 @@ export function TrendChart({ data, metric, label, formatType }: Props) {
                 fontSize={11}
                 tick={{ fill: "#64748b" }}
               />
+              {leadMarks.map((m) => (
+                <ReferenceLine
+                  key={`lead-${m.tick}`}
+                  x={m.tick}
+                  stroke={LEAD_MARK_COLOR}
+                  strokeWidth={1}
+                  strokeOpacity={leadMarkOpacity(m.count)}
+                />
+              ))}
               <Tooltip
                 cursor={{ stroke: color, strokeOpacity: 0.3, strokeWidth: 1 }}
                 content={
