@@ -53,7 +53,10 @@ export function SpecialistWidget() {
     e.preventDefault();
     setError(null);
     const data = new FormData(e.currentTarget);
-    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
+    if (String(data.get("company_url") || "").trim() !== "") {
+      ft.onError("company_url", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
+      return;
+    }
     const email = String(data.get("email") || "").trim();
     const question = String(data.get("question") || "").trim();
     if (!emailRe.test(email)) {

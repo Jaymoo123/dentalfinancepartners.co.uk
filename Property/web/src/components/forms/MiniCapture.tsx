@@ -99,7 +99,10 @@ export function MiniCapture({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
+    if (String(data.get("company_url") || "").trim() !== "") {
+      ft.onError("company_url", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
+      return;
+    }
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;

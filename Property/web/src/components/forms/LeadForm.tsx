@@ -82,7 +82,14 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
     // Honeypot: only bots fill this hidden field. Silently drop.
-    if (String(data.get("company_url") || "").trim() !== "") return;
+    if (String(data.get("company_url") || "").trim() !== "") {
+      // Honeypot trip. Emit a value-free diagnostic (field name + kind only, never any
+      // field values) so a real human silently dropped here (e.g. a browser autofilling
+      // the hidden field) becomes observable instead of invisible. Behaviour unchanged:
+      // this still blocks. See [[property_leadform_honeypot_silent_drop]].
+      ft.onError("company_url", "honeypot");
+      return;
+    }
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) {
