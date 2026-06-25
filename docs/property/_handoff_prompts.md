@@ -46,29 +46,36 @@ should design the plan from it (don't re-explore from scratch). The friction-rec
 ties back to thread 1 — it fires off `form_error`/honeypot and recovers exactly the leads the
 honeypot was dropping.
 
-Planning prompt:
+Planning prompt (open-ended — let the agent explore and judge for itself):
 
 ```
-Plan a proactive, journey-aware on-site assistant for the Property site
-(www.propertytaxpartners.co.uk) in this monorepo. START by reading
-`docs/property/PROACTIVE_ASSISTANT_BRIEF.md` in full — it captures a completed codebase
-exploration (the bottom-right SpecialistWidget, the intent engine + existing proactive
-triggers, the full journey-signal catalog, and the lead-capture/AI/nurture/consent infra
-to reuse), plus the open product decisions. Also skim the memory entries it links
-(property_behaviour_analytics, property_experiments_concluded, lead_form_consent,
-user_not_accountant_authority_constraint, feedback_gold_standard_quality_bar).
+Design the plan for a proactive, journey-aware on-site assistant for the Property site
+(www.propertytaxpartners.co.uk) in this monorepo.
 
-Goal: upgrade the under-used bottom-right widget into an assistant that (a) recovers
-visitors when a form silently fails (the honeypot/friction case) and (b) offers a
-lower-commitment pathway to commercial-intent-but-not-ready visitors, reusing the existing
-intent engine, journey signals, and capture/nurture infra rather than rebuilding.
+There's a starting-point brief at `docs/property/PROACTIVE_ASSISTANT_BRIEF.md` (a prior
+codebase exploration: the bottom-right SpecialistWidget, the intent engine and existing
+proactive triggers, the journey-signal catalog, the lead-capture/AI/nurture/consent infra,
+and open questions) plus linked memory entries. Treat it as a map, not gospel — read it,
+then explore, verify, and go wherever you need in the codebase and data. Challenge its
+assumptions, correct anything stale, and form your own independent view.
 
-Use the plan-mode workflow: do only light targeted exploration (the brief already has the
-file map — don't re-explore from scratch), then design the approach. Before finalizing,
-use AskUserQuestion to resolve the brief's "Open decisions" (chiefly: rules-based vs
-LLM-backed conversation; how proactive/aggressive + suppression; tone/privacy posture for
-behaviour-referencing copy; scope; persona/name; ship-on vs A/B; Privacy Policy update).
-Then write the plan and ExitPlanMode. Build nothing until the plan is approved. Constraints:
-gold-standard quality (never AI-scammy), honour consent/PECR (check isTrackingAllowed,
-prefer generic-helpful over surveillance-y copy), local-first, explicit sign-off before prod.
+The intent (owner's words): the bottom-right widget is under-used and is currently a static
+form, not a real assistant. Use the first-party journey data we already collect to make it
+proactive and journey-aware — (a) recover visitors when a form silently fails (the honeypot/
+friction case), and (b) offer a lower-commitment pathway to people with commercial intent
+who aren't ready to book a call. Take a few details, ask a couple of qualifying questions,
+route them to an alternative path. Reuse what already exists rather than rebuilding.
+
+You have latitude. Make the engineering and product judgement calls that are yours to make,
+and decide for yourself how deep to explore, what the right architecture is, whether parts
+of the idea are good or bad, and what to recommend. I want your honest assessment — including
+"this part isn't worth it" if that's true. Only escalate to me the decisions that genuinely
+need an owner: product direction, privacy/tone posture, anything that costs money or touches
+production, and trade-offs where you can't pick a clearly-right default.
+
+Process: work in plan mode. Explore and reason as much as you need, design the approach,
+use AskUserQuestion to settle the genuine owner-level decisions, then write the plan and call
+ExitPlanMode. Build nothing until I approve. Hold the line on: gold-standard quality (never
+AI-scammy or thin), consent/PECR (check isTrackingAllowed; be deliberate about behaviour-
+referencing vs generic copy), local-first, and explicit sign-off before any production change.
 ```
