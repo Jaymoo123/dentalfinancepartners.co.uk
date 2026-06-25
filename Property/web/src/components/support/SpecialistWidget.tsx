@@ -53,8 +53,10 @@ export function SpecialistWidget() {
     e.preventDefault();
     setError(null);
     const data = new FormData(e.currentTarget);
-    if (String(data.get("company_url") || "").trim() !== "") {
-      ft.onError("company_url", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
+    // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
+    // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
+    if (String(data.get("enquiry_ref") || "").trim() !== "") {
+      ft.onError("enquiry_ref", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
       return;
     }
     const email = String(data.get("email") || "").trim();
@@ -143,7 +145,8 @@ export function SpecialistWidget() {
                     ft.onFieldBlur(t.name, Boolean(t.value && t.value.trim()), t.name === "email" ? t.value.length : undefined);
                 }}
               >
-                <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] h-px w-px opacity-0" />
+                {/* Honeypot — non-semantic name so autofill/password managers don't target it (was company_url) */}
+                <input type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
                 <p className="text-xs font-semibold text-slate-700">Or send a specialist your question:</p>
                 <input type="email" name="email" required placeholder="Your email" autoComplete="email" maxLength={100} className={inputClass} />
                 <textarea name="question" rows={2} maxLength={500} placeholder="Your question (optional)" className={inputClass} />

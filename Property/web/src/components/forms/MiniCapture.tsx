@@ -99,8 +99,10 @@ export function MiniCapture({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    if (String(data.get("company_url") || "").trim() !== "") {
-      ft.onError("company_url", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
+    // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
+    // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
+    if (String(data.get("enquiry_ref") || "").trim() !== "") {
+      ft.onError("enquiry_ref", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
       return;
     }
     const errs = validate(data);
@@ -183,8 +185,8 @@ export function MiniCapture({
           noValidate
           aria-busy={status === "loading"}
         >
-          {/* Honeypot */}
-          <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
+          {/* Honeypot — non-semantic name so autofill/password managers don't target it (was company_url) */}
+          <input type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
 
           <div>
             <label htmlFor={`${formId}-name`} className="block text-sm font-semibold text-slate-900">Full name</label>

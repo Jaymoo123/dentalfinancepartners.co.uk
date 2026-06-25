@@ -82,12 +82,14 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
     // Honeypot: only bots fill this hidden field. Silently drop.
-    if (String(data.get("company_url") || "").trim() !== "") {
+    // Field is named `enquiry_ref` (a non-semantic token) so browser autofill / password
+    // managers don't target it — the old name `company_url` was an autofill magnet that
+    // silently dropped real humans. See [[property_leadform_honeypot_silent_drop]].
+    if (String(data.get("enquiry_ref") || "").trim() !== "") {
       // Honeypot trip. Emit a value-free diagnostic (field name + kind only, never any
-      // field values) so a real human silently dropped here (e.g. a browser autofilling
-      // the hidden field) becomes observable instead of invisible. Behaviour unchanged:
-      // this still blocks. See [[property_leadform_honeypot_silent_drop]].
-      ft.onError("company_url", "honeypot");
+      // field values) so a real human silently dropped here becomes observable instead of
+      // invisible. Behaviour unchanged: this still blocks.
+      ft.onError("enquiry_ref", "honeypot");
       return;
     }
     const errs = validate(data);
@@ -177,8 +179,9 @@ export function LeadForm({
       aria-busy={status === "loading"}
     >
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
-      {/* Honeypot: off-screen, hidden from humans; only bots fill it. */}
-      <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
+      {/* Honeypot: off-screen, hidden from humans; only bots fill it. Non-semantic name so
+          browser autofill / password managers don't target it (was company_url). */}
+      <input type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
 
       <div>
         <label htmlFor="role" className="block text-sm font-semibold text-slate-900">

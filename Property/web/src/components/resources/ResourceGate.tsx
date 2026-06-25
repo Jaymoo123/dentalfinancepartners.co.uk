@@ -101,7 +101,9 @@ export function ResourceGate({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
+    // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
+    // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
+    if (String(data.get("enquiry_ref") || "").trim() !== "") return; // honeypot
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
@@ -257,10 +259,11 @@ export function ResourceGate({
           noValidate
           aria-busy={status === "loading"}
         >
-          {/* Honeypot: off-screen, hidden from humans; only bots fill it. */}
+          {/* Honeypot: off-screen, hidden from humans; only bots fill it. Non-semantic name
+              so browser autofill / password managers don't target it (was company_url). */}
           <input
             type="text"
-            name="company_url"
+            name="enquiry_ref"
             tabIndex={-1}
             autoComplete="off"
             aria-hidden="true"
