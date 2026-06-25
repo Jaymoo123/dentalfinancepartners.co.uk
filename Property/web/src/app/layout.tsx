@@ -70,6 +70,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
+      {/*
+       * RSS autodiscovery. Rendered in JSX (React hoists it to <head>) rather than
+       * via metadata.alternates.types: most pages set their own alternates, which
+       * shallow-overrides the layout's, so a metadata-based feed link would silently
+       * drop on every page with a per-page canonical. This renders site-wide.
+       */}
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title={`${siteConfig.name} blog`}
+        href="/feed.xml"
+      />
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
