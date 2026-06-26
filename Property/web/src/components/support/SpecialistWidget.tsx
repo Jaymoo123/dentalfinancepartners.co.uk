@@ -35,7 +35,7 @@ type Trigger = "cadence" | "exit" | "friction";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const inputClass =
-  "mt-1 w-full rounded-lg border-2 border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25";
+  "mt-1 w-full rounded-lg border-2 border-slate-300 bg-white px-3 py-2 text-base text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 sm:text-sm";
 
 // Cadence thresholds (ms of time spent on the page with the tab VISIBLE): first
 // ping at 30s, then +40s, +50s, +60s. Visible-time (not strict engaged-active)
@@ -225,11 +225,30 @@ export function SpecialistWidget() {
         /* ignore */
       }
       const profile = getJourneyProfile();
-      setPeekLine((prev) => prev ?? openerFor(profile, 0));
-      setOpen(true);
-      if (!openedRef.current) {
-        openedRef.current = true;
-        track("support_opened", { topic: profile.primaryTopic ?? "", via: "auto" });
+      const line = openerFor(profile, 0);
+      lastLineRef.current = line;
+      if (window.innerWidth < 640) {
+        // Mobile: a full card would cover the screen. Announce with the peek; tap to open.
+        const props = {
+          surface: "assistant_nudge",
+          trigger: "auto",
+          variant: "peek",
+          rule_id: `assistant_${profile.stage}`,
+          topic: profile.primaryTopic ?? "",
+          content: line.slice(0, 120),
+        };
+        lastPropsRef.current = props;
+        setPeekLine(line);
+        setPeekVisible(true);
+        setUnread((n) => n + 1);
+        track("personalization_shown", props);
+      } else {
+        setPeekLine((prev) => prev ?? line);
+        setOpen(true);
+        if (!openedRef.current) {
+          openedRef.current = true;
+          track("support_opened", { topic: profile.primaryTopic ?? "", via: "auto" });
+        }
       }
     }, AUTO_OPEN_DELAY_MS);
     return () => window.clearTimeout(t);
@@ -350,7 +369,7 @@ export function SpecialistWidget() {
           role="dialog"
           aria-label="Property Tax Partners assistant"
           className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
-          style={{ height: "min(72vh, 34rem)" }}
+          style={{ height: "min(72dvh, 34rem)" }}
         >
           {/* Agent header */}
           <div className="flex items-center gap-3 bg-slate-900 px-4 py-3 text-white">
@@ -390,7 +409,7 @@ export function SpecialistWidget() {
                   </svg>
                 </span>
                 <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-900 shadow-sm">
-                  Thanks, that's with a specialist now. You'll hear back within one working day.
+                  Thanks. A specialist has your message and will reply within one working day.
                 </div>
               </div>
             ) : !composing ? (
@@ -399,7 +418,7 @@ export function SpecialistWidget() {
                   <a
                     href={`/calculators/${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className="inline-flex items-center rounded-full border border-emerald-300 bg-white px-3 py-1.5 text-sm font-medium leading-none text-emerald-800 hover:bg-emerald-50"
+                    className="inline-flex items-center rounded-full border border-emerald-300 bg-white px-3 py-2 text-sm font-medium leading-none text-emerald-800 hover:bg-emerald-50"
                   >
                     See your numbers
                   </a>
@@ -407,7 +426,7 @@ export function SpecialistWidget() {
                 <a
                   href="/contact"
                   onClick={() => onChip("call")}
-                  className="inline-flex items-center rounded-full border border-emerald-300 bg-white px-3 py-1.5 text-sm font-medium leading-none text-emerald-800 hover:bg-emerald-50"
+                  className="inline-flex items-center rounded-full border border-emerald-300 bg-white px-3 py-2 text-sm font-medium leading-none text-emerald-800 hover:bg-emerald-50"
                 >
                   Book a free call
                 </a>
