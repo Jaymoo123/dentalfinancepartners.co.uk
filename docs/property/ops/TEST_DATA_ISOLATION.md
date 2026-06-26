@@ -19,6 +19,12 @@
 - Every human-only rollup view, every CRO detector, and `vw_experiment_results` already filter `is_bot=false`, so synthetic traffic is **automatically excluded from every metric and decision** with no view changes.
 - Physically the rows still exist in `web_sessions`/`web_events` (flagged); a dedicated staging DB (Wave 2) removes them physically for day-to-day dev. For decisions, the `is_bot` flag is sufficient.
 
+**3. Environment -> only `VERCEL_ENV==='production'` ingests** *(added 2026-06-25)*
+- The `synthetic_` path above isolates the post-deploy probes, which run against the PROD url. It does **not** cover a human developer browsing `http://localhost:3000` (or a Vercel **preview**) with analytics consent on: that session mints a normal `v_<hex>` id, passes the UA bot heuristic, and would be stored `is_bot=false` -> counted as a real visitor. dev/preview also point at PROD Supabase via `.env.local`. That was the gap.
+- `packages/web-shared/analytics/server/createTrackHandler.ts` now returns `204` **without ingesting** unless `process.env.VERCEL_ENV === 'production'`. So localhost dev and Vercel preview never write to the live analytics store, regardless of consent. (The client-side in-app event bus still fires, so proactive UI like the on-site assistant works in dev; nothing is persisted.)
+- The post-deploy probes are unaffected: they target the deployed PROD url where `VERCEL_ENV==='production'`, then stay isolated via the `synthetic_` prefix (path 2).
+- Escape hatch: set `ANALYTICS_ALLOW_NONPROD_INGEST=1` to validate ingest from a preview.
+
 ## Prod steps required to make this live (GATED - need sign-off)
 1. Apply the migration to prod Supabase (Management API). Re-read the live constraint first per the migration header.
 2. Deploy `Property/web` (carries the lead-routing + enrich + track-handler changes) via the manual Vercel CLI flow.

@@ -185,6 +185,21 @@ async function callIngest(
 
 export function createTrackHandler(opts: { siteKey: string }) {
   return async function POST(request: NextRequest) {
+    // Environment isolation: ONLY the production deployment writes to the live
+    // analytics store. Local dev (VERCEL_ENV undefined) and Vercel preview
+    // ('preview') return 204 without ingesting, so developer/test browsing can
+    // never pollute real-visitor metrics — regardless of analytics consent.
+    // The post-deploy synthetic probes run against the deployed PROD url
+    // (VERCEL_ENV==='production') and stay isolated via the synthetic_ prefix,
+    // so this guard does not affect them. Escape hatch (e.g. to validate ingest
+    // on a preview): set ANALYTICS_ALLOW_NONPROD_INGEST=1.
+    if (
+      process.env.VERCEL_ENV !== "production" &&
+      process.env.ANALYTICS_ALLOW_NONPROD_INGEST !== "1"
+    ) {
+      return NO_CONTENT;
+    }
+
     const SUPABASE_URL =
       process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
     const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";

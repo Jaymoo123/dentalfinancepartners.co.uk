@@ -11,6 +11,7 @@
  *   ad-blocker lists.
  */
 import { isTrackingAllowed, getConsent } from "./consent";
+import { emitAnalyticsEvent } from "./bus";
 import { getSessionId, getVisitorId } from "./ids";
 import {
   EventName,
@@ -158,6 +159,10 @@ export function track(eventName: EventName, props: EventProps = {}): void {
 
   queue.push(event);
   forwardToClarity(eventName);
+  // Fan out to in-app subscribers (journey model, proactive assistant). Synchronous,
+  // post consent/config gate, isolated from delivery. Raw props so subscribers get
+  // the semantic fields (section_id, error_kind, calculator_slug, ...).
+  emitAnalyticsEvent(eventName, props);
 
   if (queue.length >= LIMITS.FLUSH_AT_EVENTS) {
     flush();

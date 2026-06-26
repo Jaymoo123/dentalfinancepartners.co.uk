@@ -20,6 +20,7 @@
     "./analytics/consent": "./analytics/consent.ts",
     "./analytics/ids": "./analytics/ids.ts",
     "./analytics/track": "./analytics/track.ts",
+    "./analytics/bus": "./analytics/bus.ts",
     "./analytics/autoCapture": "./analytics/autoCapture.ts",
     "./analytics/visitMemory": "./analytics/visitMemory.ts",
     "./analytics/useInViewOnce": "./analytics/useInViewOnce.ts",

@@ -11,6 +11,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { track } from "@accounting-network/web-shared/analytics/track";
+import { getConsent } from "@accounting-network/web-shared/analytics/consent";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { MiniCapture } from "@/components/forms/MiniCapture";
@@ -52,6 +53,15 @@ export function ExitIntentModal() {
   // on relevant routes and when not suppressed.
   useEffect(() => {
     if (typeof window === "undefined" || !relevant || isSuppressed()) return;
+    // Consent gate (this fires behaviour-triggered UI, so honour opt-out like the
+    // other intent surfaces) + stand down when the proactive assistant is active,
+    // so the two never pop on exit.
+    if (getConsent() === "denied") return;
+    try {
+      if (window.sessionStorage.getItem("ptp_assistant_active") === "1") return;
+    } catch {
+      /* storage blocked */
+    }
 
     const desktop = isLikelyDesktop();
     let armed = false;

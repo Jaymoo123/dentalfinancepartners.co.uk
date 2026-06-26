@@ -128,6 +128,14 @@ export default function PrivacyPolicyPage() {
           For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>,
           specifically measuring and improving the Site and keeping it secure and protected against misuse.
         </p>
+        <p>
+          <strong>On-page personalization:</strong> to make the Site more useful, we use your activity on the Site (such
+          as the pages you view, how far you scroll, and the time you spend) to infer the property tax topic you are
+          interested in and to show you relevant prompts, offers, or a tailored on-page message. This uses analytics
+          signals only (no special category data), relies on our <strong>legitimate interests</strong> in making the
+          Site relevant and useful, and you can turn it off at any time using the{" "}
+          <strong>&ldquo;Do not track me&rdquo;</strong> link in the footer.
+        </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
         {partner ? (
