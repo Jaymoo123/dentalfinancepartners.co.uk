@@ -27,6 +27,13 @@ faqs:
     answer: "You cannot use your spouse's allowance directly, but you can transfer property to them before a sale. Transfers between spouses or civil partners are tax-free (no gain or loss). Once your spouse owns the property, they can use their own £3,000 annual allowance and their basic rate band when they sell. This effectively doubles the tax-free amount for a couple to £6,000 if both hold an interest in the property."
   - question: "Does Business Asset Disposal Relief apply to property?"
     answer: "BADR (formerly Entrepreneurs' Relief) applies to disposals of a trading business or shares in a trading company. It does not apply to residential property held as an investment (buy-to-let). It can apply to commercial property if it is part of a trading business that you sell. The rate is 14% from 6 April 2025, falling to 18% from 6 April 2026. The lifetime limit is £1 million of gains."
+keyTakeaways:
+  - "From 30 October 2024, residential property gains are taxed at 18% for basic rate taxpayers and 24% for higher or additional rate taxpayers."
+  - "Commercial property gains now follow the same 18% and 24% rates, up from the previous 10% and 20% that applied before 30 October 2024."
+  - "The annual CGT allowance in 2025/26 is £3,000 per individual; any unused portion is lost and cannot be carried forward."
+  - "Sellers of a UK residential property must report the gain and pay CGT within 60 days of completion using the 60-day CGT property return, separate from Self Assessment."
+  - "Business Asset Disposal Relief is taxed at 14% from 6 April 2025, rising to 18% from 6 April 2026, on qualifying gains up to a £1 million lifetime limit."
+  - "Limited companies pay corporation tax on property gains at 19% on profits up to £50,000 or 25% on profits above £250,000, not capital gains tax."
 ---
 
 <p>If you sell a property in the UK and make a profit, you will likely owe capital gains tax on property. The rates changed on 30 October 2024, and more changes are coming in April 2025 and April 2026. Understanding the current rates, the reliefs available, and the reporting deadlines is essential for any business owner holding property.</p>

@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@olha-maltseva-2156976676
   source: Pexels
   source_url: https://www.pexels.com/photo/ukrainian-hryvnia-banknotes-and-coins-closeup-34926375/
+keyTakeaways:
+  - "The Annual Investment Allowance for 2024/25 is permanently set at £1,000,000 per 12-month accounting period, giving 100% tax relief on qualifying plant and machinery in the year of purchase."
+  - "Cars are excluded from the AIA and instead attract writing down allowances of 18% in the main pool, or 6% in the special rate pool, depending on CO2 emissions."
+  - "When a business controls multiple associated companies, the £1m AIA limit is shared between them, so two companies under common control each receive £500,000."
+  - "For accounting periods shorter than 12 months, the AIA limit is reduced proportionally; a six-month period gives a limit of £500,000."
+  - "Full Expensing, introduced from 1 April 2023, provides 100% first-year relief with no cap, but is only available to limited companies and not to sole traders or partnerships."
+  - "AIA claims must be made within 12 months of the filing date for the relevant tax return; after that deadline, the claim is permanently lost."
 ---
 <h2>What is the Annual Investment Allowance (AIA)?</h2>
 

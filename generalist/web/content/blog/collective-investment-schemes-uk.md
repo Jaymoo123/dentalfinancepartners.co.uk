@@ -34,6 +34,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@wwarby
   source: Pexels
   source_url: https://www.pexels.com/photo/text-in-latin-on-coins-19599856/
+keyTakeaways:
+  - "The legal definition of a collective investment scheme sits in section 235 of the Financial Services and Markets Act 2000, covering funds that pool investor money into managed assets."
+  - "The two main UK forms are Authorised Investment Funds (split into Authorised Unit Trusts and OEICs) and Unauthorised Unit Trusts, each carrying different regulatory protection and tax treatment."
+  - "Unregulated collective investment schemes (UCIS) carry high risk and can only be promoted in the UK to certified high net worth individuals, certified sophisticated investors, and self-certified sophisticated investors."
+  - "Investors in a UCIS may not have access to the Financial Ombudsman Service or the Financial Services Compensation Scheme (FSCS) if things go wrong."
+  - "For individual investors, gains on disposal of fund units are subject to capital gains tax, with a £3,000 annual exempt amount for 2025/26."
+  - "Limited companies pay corporation tax on disposal gains at 19% or 25% by profit level, though distributions from authorised funds are generally exempt under dividend exemption rules."
 ---
 <h2>What Exactly Is a Collective Investment Scheme?</h2>
 

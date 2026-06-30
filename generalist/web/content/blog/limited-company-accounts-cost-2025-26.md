@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if your company is very simple (one director, no employees, no VAT, no property income). But the risk of errors is real. Corporation tax rules on disallowable expenses, capital allowances, and related party transactions are more complex than self assessment. An incorrect filing can trigger an HMRC enquiry, which is costly and time consuming. Most directors find a good accountant pays for itself."
   - question: "Why do some accountants charge £400 and others charge £2,000 for the same service?"
     answer: "The cheaper quote almost certainly excludes services you need, like payroll, VAT returns, or director self assessment. It may also reflect lower overheads, less qualified staff, or a narrower scope of work. A £2,000 fee from an ICAEW qualified firm typically includes a full service, professional indemnity cover, and ongoing tax planning advice. Compare the scope of work, not just the price."
+keyTakeaways:
+  - "A single-director limited company with turnover under £80,000, no employees, and no VAT typically pays £600 to £1,000 a year for statutory accounts, a CT600 return, and Companies House filing."
+  - "Adding payroll processing, VAT returns, or a director's self assessment pushes the annual fee to between £1,200 and £2,000 for most small trading limited companies."
+  - "Companies with R&D tax credit claims should budget between £3,000 and £6,000 or more per year, reflecting the extra technical work those claims require."
+  - "Late filing penalties for a private limited company start at £150 and rise to £1,500 for a delay of six months."
+  - "Turnover is the single biggest pricing driver; a company at £400,000 turnover typically pays 50% to 100% more than one at £50,000."
+  - "Accountants who charge by the hour typically bill at between £100 and £250 per hour, depending on the seniority of the person doing the work."
 ---
 
 <p>If you are a director of a UK limited company, the cost of preparing and filing your annual accounts is one of the first questions you will ask. It is also one of the hardest to get a straight answer on.</p>

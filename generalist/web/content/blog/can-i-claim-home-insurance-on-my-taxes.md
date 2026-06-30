@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. Most standard home insurance policies exclude business use. If you have a claim and your insurer discovers you run a business from home without telling them, they may refuse to pay out. The extra premium for business use is usually small."
   - question: "Can a limited company director claim home insurance as a business expense?"
     answer: "Not directly. The company can pay you a tax-free allowance of £6 per week (£312 per year) for working from home, or reimburse you for actual additional costs including a proportion of your home insurance. The £6 per week flat rate is simpler and more common."
+keyTakeaways:
+  - "Sole traders using HMRC's simplified expenses flat rate of £10, £18, or £26 per month cannot also claim home insurance, as the flat rate covers all home costs."
+  - "A typical home insurance apportionment is 5% to 15% of the premium for home workers with no client visits, rising to 15% to 25% where clients visit regularly."
+  - "Limited company directors usually take a tax-free £6 per week allowance (£312 per year) for 2025/26 for regularly working from home, instead of apportioning home insurance."
+  - "Any additional premium paid to add business use cover to a home insurance policy is fully claimable as a direct business expense, while the base premium is still apportioned."
+  - "Records for an actual cost claim, including the insurance policy, the apportionment calculation, and rooms or floor area used, must be kept at least six years after the tax year."
+  - "Standard home insurance policies often exclude business use; notifying your insurer typically costs £20 to £50 per year and prevents a claim being rejected if an incident occurs."
 ---
 
 <p>If you run your business from home, the question of whether you can claim home insurance on your taxes comes up regularly. The answer is not a simple yes or no. It depends on your business structure, how you use your home for work, and what type of home insurance you have.</p>

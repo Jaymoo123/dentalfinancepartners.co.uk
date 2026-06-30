@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Limited company accountant fees in 2025/26 range from £60 to £300 per month, with basic compliance from around £500 per year and full-service packages reaching £4,000 or more."
+  - "Fees are usually banded by turnover: companies turning over up to £50,000 pay £60 to £100 per month, rising to £250 to £400 or more for turnover above £500,000."
+  - "A standard monthly package at £100 to £200 per month typically includes bookkeeping, payroll for up to two directors, VAT returns, annual accounts, corporation tax filing, and tax planning advice."
+  - "Adding employees beyond the standard director payroll usually costs £5 to £15 per person per month on top of the base fee."
+  - "Self assessment tax returns for directors and shareholders are normally excluded from standard packages and charged separately, typically at £150 to £300 per return."
+  - "Filing accounts late with Companies House carries penalties of £150 to £1,500, meaning a cheap accountant who misses deadlines can cost far more than one on a higher monthly fee."
 ---
 <p>If you are running a limited company in the UK, you need an accountant. The question is not whether to hire one, but how much it will cost and what you get for your money.</p>
 

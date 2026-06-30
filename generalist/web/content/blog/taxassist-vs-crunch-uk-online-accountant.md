@@ -27,6 +27,13 @@ faqs:
     answer: "TaxAssist branches vary. Some have experience with R&D claims, but it is not a core service for most. Crunch offers R&D claims as an add-on service, but they are designed for straightforward software or engineering claims. Complex R&D projects with large claims or HMRC enquiries are better handled by a specialist firm. If R&D tax credits are a significant part of your business, neither may be the best choice."
   - question: "Which service is better for a contractor working through a limited company?"
     answer: "Crunch has a strong track record with contractors. Their software is designed around the contractor model, with features for dividend planning, IR35 tracking, and expense categorisation. TaxAssist can also serve contractors well, especially if you prefer face-to-face meetings. But Crunch's platform and pricing are specifically built for this market. For most contractors, Crunch is the stronger option."
+keyTakeaways:
+  - "Crunch's Standard limited company package costs £95 per month, and the Plus package (adding VAT returns, payroll, and management accounts) costs £135 per month as of 2025/26."
+  - "TaxAssist branches typically charge £600 to £1,200 per year for a limited company's year-end accounts and corporation tax return, with each branch setting its own fees independently."
+  - "TaxAssist is a network of over 200 independently owned franchised branches, so service quality and pricing vary between locations."
+  - "Crunch's software is MTD-compatible for VAT and, from April 2026, for income tax, with bookkeeping, invoicing, and expense tracking all managed inside the same platform."
+  - "For sole traders, TaxAssist typically charges £200 to £400 per year for self assessment, while Crunch's sole trader Standard package costs £45 per month."
+  - "Neither provider suits complex situations such as multi-entity groups, large R&D claims, overseas subsidiaries, or businesses with turnover above £1 million and complex VAT schemes."
 ---
 
 <p>Choosing between TaxAssist and Crunch is a common decision for UK business owners who have outgrown doing their own books but are not ready for a full-service traditional firm. Both are established brands. Both market themselves to small businesses, contractors, and sole traders. But they operate in fundamentally different ways.</p>

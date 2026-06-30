@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but the timing matters. If you transfer the property out more than two years before the share sale, and the transfer is not part of a pre-arranged scheme, the group may then qualify as a trading group. But if you transfer the property shortly before the sale, HMRC may treat the transfer as part of the disposal arrangements and disregard it, or apply the anti-avoidance rules. Professional advice is essential here."
   - question: "Does the £1 million lifetime limit apply per company or per person?"
     answer: "Per person. Each individual has a £1 million lifetime limit on gains that can benefit from BADR. If you have already used some of that limit on a previous disposal, the remaining amount is available for future qualifying disposals. The limit applies across all companies you hold shares in, not per company."
+keyTakeaways:
+  - "BADR reduces CGT to 14% on qualifying share disposal gains up to a £1 million lifetime limit for disposals from 6 April 2025, rising to 18% from 6 April 2026."
+  - "A group risks failing the trading test and losing BADR if investment activities exceed about 20% of total activity by turnover, assets, profit, or management time."
+  - "Letting property to a third party, or even to the trading company itself, counts as investment activity rather than trading in HMRC's view."
+  - "If investment property is transferred out of the group within two years of a share sale, HMRC may still assess the group's position at the date of disposal."
+  - "The £1 million BADR lifetime limit applies per individual across all companies, not per company, and is all-or-nothing on each disposal."
+  - "On a £500,000 gain, losing BADR means paying £120,000 in CGT at 24% rather than £70,000 at 14%, a £50,000 difference."
 ---
 
 <h2>What Is Business Asset Disposal Relief and Why Does It Matter?</h2>

@@ -36,6 +36,26 @@ imageCredit:
   photographer_url: https://www.pexels.com/@matreding
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
+keyTakeaways:
+  - "HMRC typically processes online tax refund claims within 5 to 10 working days; postal claims take longer, often 6 to 8 weeks."
+  - "Self Assessment filers do not receive a P800 letter; any overpayment is reconciled when the return is processed and HMRC issues a refund after that point."
+  - "Employees can claim tax relief on job expenses including working from home costs, fuel, work clothing and tools, provided their employer did not reimburse those costs."
+  - "HMRC sends a P800 tax calculation letter if it believes you overpaid or underpaid; if a refund is due, you can often claim it online."
+  - "Tax refund claims can be made for free through HMRC directly, so there is no need to use a third-party refund company that charges a percentage of your refund."
+  - "Tax avoidance scheme users risk large tax bills, sometimes paying far more than the tax they tried to avoid, including interest and penalties, according to HMRC."
+howToSteps:
+  - name: "Check your tax position"
+    text: "Log in to your Personal Tax Account on gov.uk or open the HMRC app to see how much Income Tax you paid in previous years."
+  - name: "Review any P800 letter"
+    text: "If HMRC sends a P800, read it carefully against your own records and claim online through your Personal Tax Account if the letter says you are eligible."
+  - name: "Submit your Self Assessment return"
+    text: "If you are on Self Assessment, submit your return; HMRC will reconcile your tax position and issue a refund for any overpayment after the return is processed."
+  - name: "Claim job expenses"
+    text: "Claim relief on working from home costs, fuel, work clothing and tools through your Personal Tax Account or the relevant section of your Self Assessment return."
+  - name: "Keep expense records"
+    text: "Retain receipts and evidence for every expense you claim, as HMRC may ask for proof and can audit claims going back several years."
+  - name: "Non-residents with UK income"
+    text: "If you live abroad and receive UK income, use the non-resident landlord scheme or file a Self Assessment return."
 ---
 <p>If you have paid too much tax to HM Revenue & Customs, you may be due a refund. This is more common than many business owners realise. Overpayments happen for several reasons: a change in employment, working from home, claiming job expenses, or a redundancy payment that pushed you into a higher tax bracket temporarily.</p>
 

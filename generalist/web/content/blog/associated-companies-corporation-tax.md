@@ -27,6 +27,13 @@ faqs:
     answer: "No. Different share classes do not change who controls the company. If the same person or group holds more than 50% of the voting rights or is entitled to more than 50% of the profits on a winding-up, the companies are associated regardless of share class. Alphabet shares are useful for dividend flexibility but do not break association."
   - question: "Do associated company rules apply to sole traders or partnerships?"
     answer: "No. The rules apply only to limited companies. If you are a sole trader and also control a limited company, the sole trader business does not count as an associated company. But the limited company is still a company, so if you control two limited companies alongside your sole trade, those two companies are associated with each other."
+keyTakeaways:
+  - "For 2025/26, a company with no associates pays corporation tax at 19% on profits up to £50,000 and at 25% above £250,000."
+  - "Adding one associated company halves those thresholds, so the 19% rate applies only up to £25,000 and the 25% main rate begins above £125,000."
+  - "The associated company rules are set out in CTA 2010, sections 25 to 30, and apply to accounting periods beginning on or after 1 April 2023."
+  - "Control for association purposes means holding more than 50% of share capital, voting rights, or entitlement to profits on a winding-up."
+  - "Dormant companies count as associated unless they were dormant for the entire accounting period; one dormant for only part of the period counts in full."
+  - "Non-UK resident companies count as associated under the same control tests, so a UK company and an overseas entity under common control are associated for UK corporation tax."
 ---
 
 <h2>What Are Associated Companies for Corporation Tax?</h2>

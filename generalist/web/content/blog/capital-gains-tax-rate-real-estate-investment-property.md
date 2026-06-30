@@ -27,6 +27,13 @@ faqs:
     answer: "No. The 60-day reporting and payment rule applies only to UK residential property gains. Commercial property gains are reported on your Self Assessment tax return by 31 January after the tax year of disposal. You pay the tax as part of your balancing payment."
   - question: "What happens if I sell a property that was my main home and then became a buy-to-let?"
     answer: "Private Residence Relief covers the period you lived there plus the final nine months of ownership. The remaining period is taxable. If you lived in the property for five years and let it for three years, roughly 3/8 of the gain is taxable. The exact split depends on the dates and any periods of deemed occupation."
+keyTakeaways:
+  - "For 2025/26, CGT on residential investment property is 18% for basic rate taxpayers and 24% for higher rate taxpayers."
+  - "From 30 October 2024, commercial property gains are taxed at the same rates as residential property: 18% (basic rate) and 24% (higher rate)."
+  - "The CGT annual exemption is £3,000 per individual for 2025/26 and is deducted from the chargeable gain before tax is applied."
+  - "Residential property gains must be reported and paid within 60 days of completion; commercial property gains are reported on Self Assessment by 31 January after the tax year."
+  - "Letting Relief was abolished from 6 April 2020 and no longer reduces the taxable gain for landlords who let out a former main home."
+  - "Capital losses on investment property can be offset against gains in the same tax year or carried forward, but must be reported to HMRC within four years."
 ---
 
 <p>If you own a buy-to-let flat in Birmingham, a commercial unit in Leeds, or a holiday cottage in Cornwall, selling it triggers Capital Gains Tax. The rate you pay depends on two things: whether the property is residential or commercial, and which Income Tax band you fall into.</p>

@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@karola-g
   source: Pexels
   source_url: https://www.pexels.com/photo/a-dentist-holding-a-dental-cast-6627279/
+keyTakeaways:
+  - "Private dental work is exempt from VAT, NHS work is outside its scope, and retail sales such as toothbrushes and whitening kits are standard-rated, creating a partial exemption calculation."
+  - "The Annual Investment Allowance gives 100% tax relief on most plant and machinery up to £1 million per year, covering dental chairs, X-ray machines, and surgery fit-outs."
+  - "Misclassifying dental associates as employees rather than self-employed can trigger HMRC enquiries and backdated tax bills for the practice owner."
+  - "Corporation tax rates are lower than income tax rates at higher earnings levels, making incorporation potentially tax-efficient, though goodwill transfer can trigger a capital gains tax charge."
+  - "Specialist dental accountant fees typically range from £150 to £250 per month for a sole practitioner to £500 to £1,000 or more for a multi-surgery practice."
+  - "NHS dental income includes UDA payments, patient charge income, seniority payments, and maternity cover, each requiring different accounting treatment for corporation tax and VAT."
 ---
 <h2>Why a General Accountant May Not Be Enough for a Dental Practice</h2>
 

@@ -27,6 +27,13 @@ faqs:
     answer: "A full statutory audit is required when a charity's gross income exceeds £1 million or its gross assets exceed £3.26 million. Below that, an independent examination is required when income exceeds £500,000 (for accruals accounts) or £250,000 (for receipts and payments accounts). The independent examiner must be a member of a recognised professional body like ICAEW, ACCA, or CIPFA. The audit must be carried out by a registered auditor."
   - question: "How much does a charity accountant cost in the UK?"
     answer: "Costs vary by size and complexity. Small charities with income under £25,000 might pay £500 to £1,000 per year for basic compliance. Medium charities with income between £250,000 and £1 million might pay £2,000 to £5,000 for full SORP accounts and independent examination. Large charities requiring a full audit will pay £5,000 to £15,000 or more. Most specialist charity accountants offer fixed fees for ongoing compliance work. Ask for a quote based on your specific circumstances."
+keyTakeaways:
+  - "Charities with gross income exceeding £250,000 must prepare accounts under the Charities SORP, using a Statement of Financial Activities in place of a profit and loss account."
+  - "Gift Aid allows charities to reclaim 25p for every £1 donated, so a £100 donation becomes £125 after the claim."
+  - "A full statutory audit is required when a charity's gross income exceeds £1 million or its gross assets exceed £3.26 million."
+  - "An independent examination is required once income exceeds £500,000, and the examiner must be a member of a recognised professional body such as ICAEW, ACCA or CIPFA."
+  - "Charities receive mandatory 80% business rates relief, with discretionary top-up to 100% at the local authority's discretion."
+  - "Most charities have 10 months from their year end to file accounts with the Charity Commission; late filing can trigger a Charity Commission inquiry."
 ---
 
 <h2>Charity accounting is different from business accounting. Very different.</h2>

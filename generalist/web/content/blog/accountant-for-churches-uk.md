@@ -19,6 +19,13 @@ h1: "Why Your Church Needs a Specialist Accountant for Churches in the UK"
 summary: "Churches have unique financial obligations: charity accounting, Gift Aid, clergy payroll, and restricted fund management. A specialist accountant for churches understands these rules. This article explains what to look for and how the right support protects your church's finances and mission."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "Gift Aid lets churches reclaim 25p for every £1 donated; a church receiving £50,000 in donations can recover an additional £12,500 per year at no extra cost to donors."
+  - "Gift Aid claims must be submitted to HMRC within four years of the tax year's end, and a valid declaration must be held for each donor."
+  - "Charity accounts must be filed with the Charity Commission within 10 months of the year-end for most churches, or within 9 months for those with income over £250,000."
+  - "Restricted donations are legally ring-fenced and cannot be used for general running costs; spending restricted funds on unrestricted costs is a breach of charity law."
+  - "Churches with taxable turnover above £90,000 must register for VAT, though most church activities are exempt from VAT."
+  - "A specialist church accountant typically costs £1,000 to £2,500 a year for a small church, rising to £3,000 to £6,000 or more for larger organisations."
 ---
 
 <h2>Running a Church Is Not Like Running a Business</h2>

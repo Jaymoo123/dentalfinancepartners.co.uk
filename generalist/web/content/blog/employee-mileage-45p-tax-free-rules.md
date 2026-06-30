@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "From 6 April 2026, the AMAP rate for cars and vans rose to 55p per mile for the first 10,000 business miles in a tax year."
+  - "Above 10,000 business miles, the rate drops to 25p per mile, a rate that did not change when the Finance Act 2026 raised the first-10,000-miles rate."
+  - "The 55p rate covers all vehicle running costs (fuel, insurance, tyres, servicing, depreciation and road tax), not just the cost of petrol."
+  - "Paying at exactly the approved rate is tax-free and NI-free, but any amount above 55p per mile is treated as taxable earnings subject to PAYE and NI."
+  - "Electric vehicles qualify for exactly the same 55p AMAP rate as petrol or diesel cars, with no separate statutory rate for electric vehicles."
+  - "Motorcycles have a flat tax-free rate of 24p per mile and bicycles 20p per mile, with no 10,000-mile threshold for either."
 ---
 <h2>The Mileage Rate: 45p Became 55p in April 2026</h2>
 

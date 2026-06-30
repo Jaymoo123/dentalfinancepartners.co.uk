@@ -27,6 +27,26 @@ faqs:
     answer: "You can take up to £500 in dividends tax-free per tax year under the dividend allowance. Above that, you pay tax at 8.75%, 33.75% or 39.35% depending on your total income. If your total income (including salary) is below £12,570, you may have unused personal allowance, but dividends still use the dividend allowance first."
   - question: "What happens if I take too much dividend and cross into higher rate tax?"
     answer: "The portion of your dividend income that falls into the higher rate band (above £50,270 total income) is taxed at 33.75% instead of 8.75%. You pay the difference when you file your self"
+keyTakeaways:
+  - "The 2025/26 dividend tax rates are 8.75% for basic rate, 33.75% for higher rate and 39.35% for additional rate, with the first £500 of dividend income tax-free."
+  - "Dividends are treated as the top slice of taxable income, sitting above salary, rental and interest, so other income fills the lower tax bands before dividends are assessed."
+  - "Once total income (salary plus dividends) exceeds £50,270, the portion of dividend income above that threshold is taxed at 33.75% rather than 8.75%."
+  - "The dividend allowance has fallen from £2,000 in 2022/23 to £500 in 2025/26, meaning nearly all director dividends above a small amount are now taxable."
+  - "The 2025/26 self assessment return and balancing payment are due 31 January 2027; a first 2026/27 payment on account follows 31 July 2026 if tax exceeds £1,000."
+  - "The £500 dividend allowance applies per person, so spouses who each hold shares in the same company can receive £1,000 of dividends combined before any dividend tax is due."
+howToSteps:
+  - name: "Project full year non-dividend income"
+    text: "Add up your salary and any other non-dividend income for the full tax year. If your salary changes mid-year, use the projected annual total."
+  - name: "Add dividends already taken"
+    text: "Add all dividends you have already declared and received during the current tax year to your non-dividend income figure."
+  - name: "Include the planned quarterly dividend"
+    text: "Add the dividend you intend to take this quarter so you have a projected total income figure for the full tax year."
+  - name: "Identify which tax bands apply"
+    text: "Compare your projected total income against the thresholds: basic rate band £12,571 to £50,270, higher rate £50,271 to £125,140. Note how much of your dividend income falls into each band."
+  - name: "Calculate the dividend tax"
+    text: "Subtract the £500 dividend allowance from your total dividends, then apply 8.75% to the basic rate portion and 33.75% to any higher rate portion to find the full year tax liability."
+  - name: "Set aside tax per payment"
+    text: "Divide the full year dividend tax by the number of dividends you take per year and set that amount aside in a separate savings account after each payment."
 ---
 
 <p>If you run your own limited company and take dividends quarterly, you need to know exactly where you stand with the <strong>dividend tax rates 2025/26</strong>. The rates themselves are straightforward. The trap is in how they interact with your other income across the tax year.</p>

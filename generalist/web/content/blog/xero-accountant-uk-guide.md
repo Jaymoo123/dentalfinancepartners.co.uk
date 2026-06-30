@@ -27,6 +27,13 @@ faqs:
     answer: "Expect to pay £150 to £300 per month for bookkeeping and management reporting, plus £500 to £1,500 per year for annual accounts and corporation tax. Payroll adds £20 to £50 per month. Total annual cost is typically £2,300 to £5,100. The Xero subscription itself is around £30 per month."
   - question: "Can a Xero accountant UK help with Making Tax Digital compliance?"
     answer: "Yes. Xero is fully MTD-compatible for VAT, and your accountant can file your VAT returns directly to HMRC from within Xero. For MTD for Income Tax Self Assessment, which starts in April 2026 for businesses with income over £50,000, Xero is developing the functionality. Your accountant will handle the quarterly updates and year-end finalisation."
+keyTakeaways:
+  - "MTD for Income Tax Self Assessment applies from April 2026 to self-employed individuals and landlords with qualifying income over £50,000, then £30,000 from April 2027 and £20,000 from April 2028."
+  - "For a small limited company, a Xero accountant costs £150 to £300 a month plus £500 to £1,500 a year for accounts and corporation tax, totalling £2,300 to £5,100 annually."
+  - "Businesses that use Xero properly save an average of 10 to 15 hours per year on bookkeeping compared to paper-based or spreadsheet systems."
+  - "A single late filing penalty from Companies House starts at £150 and rises to £1,500."
+  - "Xero integrates with over 1,000 apps, including Dext (receipt capture), Hubdoc (bill collection), and ApprovalMax (purchase order approval)."
+  - "Payroll support adds £20 to £50 per month, and the Xero software subscription itself costs around £30 per month."
 ---
 
 <p>If you run a UK business and use Xero for your bookkeeping, you already know it saves time. But software alone does not file your corporation tax return, handle your VAT, or tell you whether your pricing covers your costs. That is where a Xero accountant UK comes in.</p>

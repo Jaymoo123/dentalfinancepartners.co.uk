@@ -27,6 +27,12 @@ faqs:
     answer: "For a typical small limited company, expect to pay £600 to £1,500 per year for annual accounts and corporation tax return. Payroll adds £100 to £300. VAT returns add £200 to £600. Full bookkeeping services range from £150 to £500 per month. Always get a written quote before committing."
   - question: "Do I need a local accountant if I use cloud accounting software?"
     answer: "Cloud software like Xero or FreeAgent makes it easier to share your records with an accountant remotely. But a local accountant adds value beyond data entry: tax planning, IR35 advice, director's loan account management, and face-to-face strategic reviews. Many clients use cloud software and still prefer a local firm they can visit."
+keyTakeaways:
+  - "The VAT registration threshold is £90,000 turnover; businesses approaching this level should take advice on whether to register voluntarily."
+  - "Corporation tax payment falls due 9 months after the company year end, with annual accounts due within the same 9-month period."
+  - "Annual accounts and the CT600 corporation tax return for a small limited company typically cost £600 to £1,500 per year."
+  - "Full bookkeeping services from a local accountant typically cost £150 to £500 per month, depending on location and complexity."
+  - "Self assessment returns typically cost £150 to £400 per filing, and a director-only payroll service runs £100 to £300 per year."
 ---
 
 <p>When you type "accountant for small businesses near me" into Google, you are not just looking for a bookkeeper. You are looking for someone who understands your business, your local market, and the specific tax rules that apply to you. A local accountant who can meet you in person, review your numbers, and help you plan ahead.</p>

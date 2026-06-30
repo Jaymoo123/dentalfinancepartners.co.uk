@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Under CIS, contractors must deduct 20% from payments to registered subcontractors and 30% from payments to unregistered ones."
+  - "Missing the 31 January self assessment deadline costs an automatic £100 penalty and forfeits your CIS refund entitlement for that tax year."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for self-employed people with qualifying income over £50,000, dropping to £30,000 (April 2027) and £20,000 (April 2028)."
+  - "Subcontractors spending less than 2% of turnover on relevant goods must use the 16.5% VAT flat rate, not the standard 9.5% building trade rate."
+  - "The Annual Investment Allowance gives 100% tax relief on most plant and machinery up to £1,000,000 per year, covering tools and equipment purchases."
+  - "Sole trader subcontractors typically pay £300 to £600 per year for accountancy; limited companies with monthly bookkeeping and CIS reconciliation pay £1,200 to £2,400."
 ---
 <h2>What Makes Construction Subcontractors Different for Tax Purposes?</h2>
 

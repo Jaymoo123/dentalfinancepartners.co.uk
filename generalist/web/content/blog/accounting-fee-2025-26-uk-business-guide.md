@@ -27,6 +27,13 @@ faqs:
     answer: "Lower fees often mean a more limited service. A cheap accountant may file your return but offer no tax planning, no proactive advice, and no support if HMRC queries your return. They may also use less efficient processes. Compare the full scope of work, not just the headline price."
   - question: "Should I pay my accountant monthly or annually?"
     answer: "Monthly payments spread the cost and suit businesses with ongoing needs like VAT and payroll. Annual fees work well for sole traders with simple year-end compliance. Most accountants offer both options. Choose the one that fits your cash flow and service requirements."
+keyTakeaways:
+  - "Sole traders with straightforward income, no VAT, and no employees typically pay £300 to £600 per year for a self assessment return."
+  - "A single-director limited company with no staff and no VAT typically pays £600 to £1,200 per year, covering year-end accounts, corporation tax, and a personal tax return."
+  - "Adding quarterly VAT returns and a small payroll of 2 to 3 employees raises a limited company's annual accounting fee to £1,200 to £2,400."
+  - "Larger limited companies with multiple directors, employees, and complex needs typically pay £2,400 to £5,000 or more per year."
+  - "Making Tax Digital for income tax starts April 2026 for businesses with turnover over £50,000, so your accountant should already be preparing."
+  - "The UK VAT registration threshold is £90,000 turnover in a rolling 12 months, and businesses must register within 30 days of crossing it."
 ---
 
 <h2>How Much Should You Pay for an Accounting Fee in 2025/26?</h2>

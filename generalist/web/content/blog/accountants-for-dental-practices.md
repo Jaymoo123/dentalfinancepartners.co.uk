@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@leeloothefirst
   source: Pexels
   source_url: https://www.pexels.com/photo/a-handwritten-sticky-note-and-an-eyeglasses-on-a-white-paper-8962467/
+keyTakeaways:
+  - "Business Asset Disposal Relief reduces CGT to 14% on the first £1 million of gains from a practice sale in 2025/26, rising to 18% from April 2026."
+  - "The Annual Investment Allowance stands at £1,000,000 per year, so most dental practices can claim 100% tax relief on new equipment in the year of purchase."
+  - "If HMRC reclassifies an associate dentist as an employee, the practice faces backdated PAYE, employer NIC, and interest charges that can reach six figures for a medium-sized practice."
+  - "Dental practices can claim the Structures and Buildings Allowance at 3% per year on construction costs, including conversions and renovations, not only new builds."
+  - "Pension growth above the standard annual allowance of £60,000 per year, or the tapered allowance for high earners, triggers an annual allowance charge for dentists."
+  - "Most dental services are exempt from VAT, but selling goods like whitening kits creates partial exemption that limits how much VAT the practice can reclaim on overheads."
 ---
 <h2>Why a General Accountant May Not Be Enough for Your Dental Practice</h2>
 

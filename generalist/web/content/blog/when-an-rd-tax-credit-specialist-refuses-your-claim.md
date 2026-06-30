@@ -27,6 +27,12 @@ faqs:
     answer: "HMRC will open an enquiry into your claim. They will ask for detailed evidence of the qualifying projects and costs. If they conclude the claim was invalid, they will demand repayment of the tax relief plus interest. They can also impose penalties if they find the claim was careless or deliberate."
   - question: "How do I know if my software development project qualifies for R&D?"
     answer: "Your project must involve a technological uncertainty that a competent professional in the field could not have solved using known techniques. Standard web development, API integrations, and routine feature improvements do not qualify. The project must seek an advance in science or technology, not just a better business outcome."
+keyTakeaways:
+  - "R&D tax credits are available only to limited companies within the charge to UK corporation tax; sole traders, partnerships and LLPs cannot claim under the main schemes."
+  - "Every qualifying project must seek a genuine advance in science or technology where the outcome was not known to a competent professional in the field at the project's outset."
+  - "Standard software activities, including API integrations, business logic implementations, UI improvements and performance optimisation using known techniques, are explicitly excluded from R&D qualification."
+  - "R&D must be new to the field as a whole, not just new to your business; technology already published in patents, academic papers or trade journals disqualifies a claim."
+  - "First-time claims above £50,000 are a recognised HMRC red flag that raises the probability of enquiry selection under its risk-based criteria."
 ---
 
 <h2>Why Would a Specialist Turn Down Your R&D Claim?</h2>

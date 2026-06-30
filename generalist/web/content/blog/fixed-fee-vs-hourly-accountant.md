@@ -27,6 +27,13 @@ faqs:
     answer: "A properly structured fixed fee agreement covers your annual compliance and a reasonable level of ongoing advice. If your circumstances change significantly, the fee is reviewed at the next renewal. Major one off projects, like a share valuation or tax investigation defence, are typically quoted separately. You should never be billed extra for routine queries within the agreed scope."
   - question: "Is hourly billing ever cheaper than fixed fee accounting?"
     answer: "Hourly billing can be cheaper for very simple affairs with no ongoing advice needs. A sole trader with one income source and no VAT might pay £360 for a three hour annual return. But that saving disappears with a single phone call, an HMRC query, or any complexity. For most businesses, the predictability and support of fixed fee accounting delivers better overall value."
+keyTakeaways:
+  - "Hourly rates for qualified accountants typically range from £100 to £250 per hour, depending on location, specialism, and firm size."
+  - "In the worked example, a single-director limited company with no VAT or payroll pays £145 per month (£1,740 per year) on a fixed fee."
+  - "An HMRC compliance check can add £1,200 to £2,000 to an hourly bill, while fixed fee arrangements typically cover HMRC queries within the agreed scope."
+  - "For a sole trader whose annual return takes three hours, hourly billing at £120 per hour costs £360, which can undercut a fixed fee for the simplest affairs."
+  - "Many hourly firms bill in six-minute or fifteen-minute blocks, meaning a two-minute call still costs 0.1 or 0.25 hours of the stated rate."
+  - "Some fixed fee agreements bundle accounting software such as Xero or FreeAgent, saving a separate subscription cost of £20 to £50 per month."
 ---
 
 <p>You need an accountant. You have two pricing options: a fixed monthly fee or an hourly rate. Which one gives you better value?</p>

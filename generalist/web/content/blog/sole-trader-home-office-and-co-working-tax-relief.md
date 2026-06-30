@@ -27,6 +27,13 @@ faqs:
     answer: "No. Travel from your home to a co-working space is ordinary commuting and is not deductible. However, if you travel from the co-working space directly to a client site, that journey is business travel and you can claim mileage or actual costs."
   - question: "What records do I need to keep for a home office and co-working claim?"
     answer: "For the simplified method, keep a monthly log of hours worked from home. For actual costs, keep household bills, a floor plan of your home, and a time log for home versus co-working hours. For the co-working space, keep invoices or receipts. HMRC may ask for these if they open an enquiry."
+keyTakeaways:
+  - "Sole traders can claim tax relief for both a home office and a co-working space, provided each reflects genuine business use and costs are not claimed twice."
+  - "For 2025/26 the simplified home-working flat rate is £10 a month for 25 to 50 hours, £18 for 51 to 100 hours, and £26 for 101 hours or more."
+  - "A co-working membership used solely for business passes the wholly and exclusively test, so the full membership cost is deductible without any apportionment."
+  - "Under the actual cost method, home office costs are apportioned by the proportion of rooms used for business, then by hours worked at home versus the co-working space."
+  - "Travel from home to a co-working space is ordinary commuting and not deductible, but travel from the co-working space directly to a client site is business travel."
+  - "Claiming the simplified flat rate means you cannot also separately claim actual home costs such as broadband or electricity, as the flat rate covers all home office costs."
 ---
 
 <p>If you run your business from home but also rent a desk at a co-working space in Manchester's Northern Quarter or a shared office in Bristol's Harbourside, you have a dual-use expense problem. You are spending money in two places, but HMRC will not let you claim the same cost twice. The question is whether you can claim tax relief on both at all.</p>

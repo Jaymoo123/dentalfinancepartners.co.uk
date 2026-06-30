@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC can reallocate the dividend income back to you under the settlement rules if they believe the shares were gifted purely to reduce tax. You would then owe the additional tax plus interest and possibly penalties. To avoid this, ensure your spouse subscribed for shares with their own money or received them as part of a genuine commercial arrangement from the start."
   - question: "Can alphabet shares help me pay different dividends to my spouse?"
     answer: "Yes. Alphabet shares (A shares, B shares, etc.) allow you to declare dividends on one class of shares without paying the same rate on another class. This means you can pay a dividend to your spouse (holding B shares) without having to pay the same dividend to yourself (holding A shares). This is the standard way to achieve flexible dividend distributions in family companies."
+keyTakeaways:
+  - "A spouse can receive dividends without being an employee or director, provided they are a registered shareholder on the company's register of members."
+  - "HMRC's settlement legislation (ITTOIA 2005, Part 5, Chapter 5) can reallocate a spouse's dividend income back to the director if shares were gifted purely to reduce tax."
+  - "For 2025/26, the dividend allowance is £500 per person, with dividend tax charged at 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate)."
+  - "Alphabet shares (A shares, B shares, and so on) let a company declare dividends on one class without paying the same rate on another, giving family shareholders flexibility."
+  - "Dividends do not count as earnings for National Insurance purposes, so a spouse receiving only dividends will not build NI credits towards the state pension."
+  - "A director with total income of £90,000 who diverts £20,000 of dividends to a non-working spouse can save around £5,000 in dividend tax each year."
 ---
 
 <p>Yes, a director can pay a dividend to their spouse who is not an employee or director, but only if that spouse holds shares in the company. Dividends are paid to shareholders, not to employees or directors as such. If your spouse owns ordinary shares, they are entitled to a dividend on those shares in proportion to their holding.</p>

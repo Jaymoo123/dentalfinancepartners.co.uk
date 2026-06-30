@@ -27,6 +27,13 @@ faqs:
     answer: "Since October 2024, you must pass on all tips and service charges to staff in full without deduction. Cash tips are the staff's responsibility to declare. Card tips and service charges should go through payroll or a compliant tronc scheme. A tronc scheme can reduce your employer NI liability. Get professional advice on setting one up."
   - question: "What is the best business structure for a new restaurant or café?"
     answer: "Most hospitality businesses operate as limited companies for liability protection and tax efficiency. But sole trader or partnership structures can work for smaller, lower-risk ventures. The right choice depends on your turnover, profit level, personal tax position and risk appetite. Speak to an accountant before you commit to a structure."
+keyTakeaways:
+  - "Food eaten on the premises is standard-rated at 20% VAT, cold takeaway food is zero-rated, and hot takeaway food is standard-rated."
+  - "Hospitality businesses on the VAT Flat Rate Scheme pay a fixed 12.5% of turnover for restaurants and takeaways, or 10.5% for hotels and boarding houses."
+  - "VAT registration becomes compulsory once a business's rolling 12-month turnover exceeds £90,000."
+  - "Since October 2024, the Employment (Allocation of Tips) Act 2023 requires employers to pass all tips and service charges to staff in full with no deductions and a written policy."
+  - "Tips routed through a tronc scheme operated by a tronc master can reduce or eliminate employer National Insurance that would otherwise apply when tips go through payroll."
+  - "HMRC can fine hospitality businesses up to 200% of arrears for National Minimum Wage underpayments, and tips cannot be counted towards the minimum wage."
 ---
 
 <p>Running a restaurant, pub, café, hotel or catering business in the UK is a different beast from most other industries. Your margins are tight. Your stock is perishable. Your staff work antisocial hours. And your tax treatment is riddled with quirks that a general accountant simply will not know.</p>

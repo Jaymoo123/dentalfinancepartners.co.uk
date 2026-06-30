@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. Accountant fees are a legitimate business expense for a limited company. They reduce your taxable profit and therefore your corporation tax bill. For a sole trader, they are also deductible against your self-employed income. You are effectively getting the accounting cost at a 19-25% discount through the tax relief."
   - question: "What should I look for when comparing accountant quotes?"
     answer: "Look beyond the headline monthly fee. Ask for a full written list of what is included and what is charged extra. Check whether software licenses are included. Ask about the notice period and whether there are setup fees. Verify the firm's qualifications (ICAEW, ACCA, or CIMA). And speak to them on the phone. If they cannot explain their fees clearly in the sales call, that is a red flag."
+keyTakeaways:
+  - "A sole trader on basic self assessment with no VAT typically pays £80 to £130 per month (£960 to £1,560 per year) in 2025/26."
+  - "A simple one-director limited company typically costs £150 to £250 per month; adding VAT returns and payroll pushes fees to £180 to £300 per month."
+  - "VAT registration adds £30 to £60 per month to a standard accounting fee, covering quarterly Making Tax Digital returns."
+  - "Businesses in London and the South East typically pay 15 to 25% more than the standard rates shown in the fee tables."
+  - "Handing over 12 months of unsorted bank statements and receipts instead of reconciling your books monthly can add 30 to 50% to the quoted fee."
+  - "Some firms charge a separate setup fee, typically £100 to £300, covering opening accounting records, connecting bank feeds, and registering with HMRC."
 ---
 
 <p>If you are searching for the cost of accountants for small business in 2025/26, you probably want a straight answer. Not marketing fluff. Not "it depends" without the detail. You want to know what you will pay, what you get for it, and whether you are being quoted a fair price.</p>

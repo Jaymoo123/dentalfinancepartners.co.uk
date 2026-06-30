@@ -27,6 +27,13 @@ faqs:
     answer: "FreeAgent is the most popular choice for IT contractors because it is included free with many business bank accounts (like Mettle or Tide) and is designed for contractor accounting. Xero is also widely used and integrates with more third-party apps. QuickBooks is common but less contractor-focused. Your accountant should support the software you prefer."
   - question: "When should I switch from a general accountant to a specialist IT contractor accountant?"
     answer: "Switch as soon as you realise your accountant does not understand IR35, cannot give you a clear answer on your optimal salary and dividend split, or has never mentioned the Flat Rate Scheme or R&D tax credits. Also switch if you have received an HMRC enquiry and your accountant seems unsure how to handle it. Do not wait until you have a problem."
+keyTakeaways:
+  - "The VAT registration threshold is £90,000 in 2025/26; IT contractors can also register voluntarily below this figure to reclaim VAT on software and expenses."
+  - "For most IT contractors in 2025/26, the most tax-efficient approach is a salary of £12,570 (the personal allowance threshold), topped up with dividends to the basic rate band."
+  - "Corporation tax is 19% on company profits up to £50,000; marginal relief applies between £50,000 and £250,000, giving an effective rate between 19% and 25%."
+  - "For 2025/26, IT contractor accountant fees run from £100 to £150 monthly for a basic online service to £250 to £400 for a premium IR35-review package."
+  - "Limited cost trader rules, introduced in 2017, mean many IT contractors are better off on the standard VAT scheme than on the Flat Rate Scheme."
+  - "Accountant fees are generally tax-deductible as a business expense, reducing the net cost after corporation tax relief."
 ---
 
 <p>If you are an IT contractor working through your own limited company, your accountant is not just someone who files your year-end return. They are the person who keeps you compliant with IR35, manages your VAT, runs your payroll, and makes sure you are not overpaying tax by thousands of pounds each year.</p>

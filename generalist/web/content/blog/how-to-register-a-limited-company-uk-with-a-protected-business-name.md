@@ -27,6 +27,28 @@ faqs:
     answer: "Search the Companies House register for exact and similar names. Then search the UK Intellectual Property Office trademark database for your proposed name and variations. Also check Google and social media to see if any unregistered businesses are using the name. A thorough check reduces your risk of a challenge."
   - question: "Can I use a name that is already used by a sole trader?"
     answer: "You can, but you risk a passing-off claim if the sole trader has built up goodwill in the name. If customers are confused between your limited company and the sole trader, the sole trader can take legal action. It is safer to choose a different name unless you have permission."
+keyTakeaways:
+  - "Registering a limited company online costs £50 and takes around 30 minutes, with standard applications processed within approximately 24 hours."
+  - "Companies House does not check the UK trademark register, so a name it approves can still be challenged by a trademark owner after registration."
+  - "Companies House considers phonetic and visual similarity, not just exact matches, and ignores punctuation, spacing, and word variants such as 'Ltd' and 'Limited' when comparing names."
+  - "The Companies Act 2006 gives the Secretary of State power to direct a company to change its name, and a company given such a direction has 12 months to comply."
+  - "A sole trader with established goodwill in a name can bring a passing-off claim even if the name is not trademarked or registered at Companies House."
+  - "One rebranding case cost around £2,000 in stationery, website updates, and lost business during the transition to a new name."
+howToSteps:
+  - name: "Search Companies House"
+    text: "Go to the Companies House register and search for your proposed name, checking for exact matches, 'same as' equivalents (such as 'ABC Consulting Ltd' and 'ABC Consulting Limited'), and phonetically similar names."
+  - name: "Search the UK trademark database"
+    text: "Search the UK Intellectual Property Office trademark database for your exact proposed name, variations of it, and names covering the same goods or services in the relevant trademark classes."
+  - name: "Apply the similarity rules"
+    text: "Check whether your name would be considered too similar under Companies House rules: punctuation and spacing are ignored, 'and' and '&' are interchangeable, and plurals or possessives such as 'Smiths Bakery' and 'Smith's Bakery' are treated as the same."
+  - name: "Choose a distinct name if needed"
+    text: "If your preferred name is taken or too similar, add a distinguishing word such as a location or descriptor; for example 'Smith's Artisan Bakery Ltd' or 'Smith's Bakery of Bristol Ltd' in place of 'Smith's Bakery Ltd'."
+  - name: "Gather registration details"
+    text: "Prepare your proposed company name, a UK registered office address, at least one director and one shareholder (who can be the same person), a statement of capital, and a Standard Industrial Classification code for your business activity."
+  - name: "Register online"
+    text: "Submit your application through Companies House online for £50; standard applications are processed within around 24 hours, and a same-day service is available at a higher cost."
+  - name: "Respond to any post-registration challenge"
+    text: "If Companies House directs you to change your name you have 12 months to comply or appeal; if a trademark owner or passing-off claimant contacts you, consider changing the name voluntarily, negotiating a coexistence agreement, or taking legal advice before deciding to defend the claim."
 ---
 
 <p>If you are starting a new limited company in the UK, the registration process itself takes about 30 minutes and costs £50. But if your chosen name is too similar to an existing trademark or registered company name, you could face rejection from Companies House or, worse, a legal challenge later. This guide covers exactly how to register a limited company UK with a name that is protected or contested.</p>

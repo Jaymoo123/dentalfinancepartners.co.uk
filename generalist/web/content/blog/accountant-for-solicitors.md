@@ -27,6 +27,13 @@ faqs:
     answer: "Fees vary by firm size and complexity. A sole practitioner might pay £1,500 to £3,000 per year for full accounting, tax, and SRA reporting. A five-partner firm might pay £5,000 to £10,000. The cost is offset by the tax savings and compliance protection a specialist provides."
   - question: "What happens if my SRA Accountant's Report is late?"
     answer: "The SRA can fine your firm, impose conditions on your practice, or in serious cases, close your firm. A specialist accountant ensures the report is filed on time, every time."
+keyTakeaways:
+  - "Every law firm in England and Wales that holds client money must file an annual SRA Accountant's Report, in Form 2 or Form 3 depending on firm size."
+  - "Making Tax Digital for Income Tax applies from April 2026 to self-employed solicitors and partners with qualifying income over £50,000, then £30,000 from April 2027 and £20,000 from April 2028."
+  - "Most legal services are standard-rated at 20% VAT, but counsel's fees, court fees, expert witness fees, and other disbursements each carry different VAT treatments."
+  - "HMRC can issue VAT assessments going back four years where the VAT treatment of legal fees or disbursements is applied incorrectly."
+  - "Incorporating a law firm can shift the tax rate from income tax at 40% or 45% to corporation tax at 19% to 25%, depending on profit levels."
+  - "A sole practitioner typically pays £1,500 to £3,000 per year for full accounting, tax, and SRA reporting; a five-partner firm typically pays £5,000 to £10,000."
 ---
 
 <h2>Why Solicitors Need a Different Type of Accountant</h2>

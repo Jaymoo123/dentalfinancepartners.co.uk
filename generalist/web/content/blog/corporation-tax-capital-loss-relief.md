@@ -27,6 +27,13 @@ faqs:
     answer: "The disposal is treated as taking place at market value, not the actual sale price. You cannot create an artificial loss by selling cheaply to a connected person. Additionally, any loss that does arise can only be offset against gains from disposals to the same connected person. This is a narrow restriction but it can trap the unwary."
   - question: "Do capital losses from selling shares qualify for different treatment?"
     answer: "Yes, in some cases. If your company subscribed for shares in an unlisted trading company and sold them at a loss, you may be able to claim Share Loss Relief. This allows the loss to be set against income rather than capital gains. The conditions are strict. The company must be a trading company, your company must have subscribed for cash, and typically hold at least 5% of the shares. This is a specialist area and you should take advice."
+keyTakeaways:
+  - "Capital losses arising when a limited company disposes of an asset can only be offset against chargeable gains, not against trading profits, property income, or dividends received from other companies."
+  - "Carried-forward capital losses have no time limit and can be held indefinitely until gains arise, but companies must track and claim them manually as HMRC does not apply them automatically."
+  - "Indexation allowance was frozen from January 2018, so only indexation up to December 2017 can be added to an asset's base cost when computing the size of a capital loss."
+  - "Disposals to connected persons such as directors, controlling shareholders, or group companies are treated at market value, and any loss only offsets gains from disposals to that same person."
+  - "Capital loss relief is claimed through the capital gains computation within the CT600 corporation tax return; no separate claim form is required, but HMRC can request supporting evidence."
+  - "Records of capital disposals must be kept at least six years after the relevant accounting period ends, or longer for carried-forward losses until the later return is beyond enquiry."
 ---
 
 <p>If your limited company sells a capital asset for less than what it originally cost, the loss is not wasted. You can use it to reduce your corporation tax bill by offsetting it against other chargeable gains. This is called corporation tax capital loss relief.</p>

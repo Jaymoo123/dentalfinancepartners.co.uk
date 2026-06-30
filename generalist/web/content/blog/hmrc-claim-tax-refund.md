@@ -40,6 +40,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Self Assessment refunds from HMRC are typically paid within 5 to 10 working days of filing, provided the return is straightforward and there are no outstanding tax debts."
+  - "You can claim a tax refund for up to 4 years after the end of the tax year in which the overpayment occurred."
+  - "If you have tax due within the next 45 days, HMRC will deduct the refund from that amount rather than paying it to you directly."
+  - "Job expense claims under £2,500 can be made through your Personal Tax Account or on a P87 form; amounts above £2,500 require a Self Assessment return."
+  - "Tax relief on job expenses repays only the tax paid on the cost, not the full amount: a basic-rate taxpayer (20%) spending £500 on tools receives £100 back."
+  - "Employment-related refund claims can take up to 30 days to process, compared to 5 to 10 working days for Self Assessment."
 ---
 <p>If you have paid more tax than you owe, you are entitled to claim it back. HMRC calls this a tax refund, repayment, or rebate <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The process is straightforward for most people, but the route you take depends on how you paid the tax in the first place.</p>
 

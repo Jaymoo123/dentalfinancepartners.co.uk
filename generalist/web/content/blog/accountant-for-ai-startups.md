@@ -27,6 +27,13 @@ faqs:
     answer: "For an early-stage AI startup with turnover under £250,000 and one R&D claim, typical annual fees range from £2,500 to £4,500 plus VAT. This usually includes year-end accounts, corporation tax return, R&D claim preparation, and quarterly management accounts. Additional services like payroll, VAT returns, and SEIS/EIS compliance are priced separately. The cost is typically far lower than the tax savings and avoided penalties a specialist provides."
   - question: "When should an AI startup hire an accountant?"
     answer: "Hire an accountant as soon as you have any financial activity. Specific triggers include: incorporating your company and receiving your CT41G, spending over £10,000 on development costs, preparing to raise a seed round, crossing the £90,000 VAT threshold, or hiring your first employee. The earlier you engage an accountant, the cleaner your books and the stronger your R&D claim. Waiting until year-end often means missed opportunities and avoidable errors."
+keyTakeaways:
+  - "From 1 April 2024, the merged R&D scheme replaced the SME scheme, giving AI startups a 20% taxable credit on qualifying R&D expenditure."
+  - "AI startups that are loss-making and spend more than 30% of total expenditure on R&D may qualify for ERIS, which offers a payable credit of up to 27%."
+  - "A loss-making AI startup with £80,000 of qualifying R&D expenditure could receive a payable credit of around £21,600 under ERIS."
+  - "Qualifying R&D costs include staff salaries, subcontractor fees (capped at 65%), consumables, and cloud computing used directly in R&D, but off-the-shelf software licences do not qualify."
+  - "The VAT registration threshold is £90,000 in a rolling 12-month period, and companies must register within 30 days of crossing it."
+  - "Annual fees for an AI startup with turnover under £250,000 and one R&D claim typically range from £2,500 to £4,500 plus VAT."
 ---
 
 <p>Your AI startup is growing fast. You have raised a pre-seed round, built a working prototype, and signed your first three enterprise customers. The last thing you want is a corporation tax bill you did not see coming, or an HMRC enquiry into your R&D claim that freezes your cash flow for six months.</p>

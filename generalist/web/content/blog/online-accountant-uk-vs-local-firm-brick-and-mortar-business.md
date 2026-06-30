@@ -27,6 +27,13 @@ faqs:
     answer: "Most online accountants work with Xero, QuickBooks, or FreeAgent. Some also support Sage 50, but not all. Check before signing up. You will also need a receipt scanning app, usually Dext or Hubdoc. Your accountant should provide training on how to use it. If they do not, ask why."
   - question: "Can I switch from a local firm to an online accountant UK service mid-year?"
     answer: "Yes, but timing matters. The cleanest point to switch is just after your year-end, when the local firm has filed your accounts. Switching mid-year can cause duplication of work and extra cost. If you want to move, speak to the online accountant first. They can coordinate the handover and make sure nothing is missed."
+keyTakeaways:
+  - "Online accountant UK services for a small limited company typically cost £80 to £150 per month, covering bookkeeping, year-end accounts, and corporation tax return filing."
+  - "Sole traders using an online accountant UK service can expect to pay £50 to £90 per month."
+  - "Local high street firms may charge £150 to £300 per month for the same work, with the premium reflecting office costs and face-to-face time."
+  - "If switching online saves £600 a year but requires three hours a month scanning receipts, the effective hourly rate for that admin is about £16."
+  - "Brick and mortar businesses with more than 20 paper receipts a month who do not want to scan them themselves are better suited to a local firm."
+  - "Businesses already using cloud till systems such as Square, SumUp, or iZettle have digital sales data and are well placed to use an online accountant without the receipt-scanning burden."
 ---
 
 <h2>The Real Choice: Online Convenience vs Local Presence</h2>

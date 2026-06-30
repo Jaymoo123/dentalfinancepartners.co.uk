@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, provided the course itself is an allowable expense. Travel and accommodation costs incurred wholly and exclusively for the business purpose of attending the course are also deductible. Keep receipts for train tickets, hotel bills, and meals."
   - question: "What if I take a course that has both personal and business benefits?"
     answer: "HMRC can disallow the whole cost if there is a significant personal element. The test is the \"wholly and exclusively\" rule. If the primary purpose is business, you are on solid ground. But if you take a course partly for personal interest, HMRC may argue the cost is not wholly for your trade. Document the business purpose before you book."
+keyTakeaways:
+  - "Training costs are deductible for a sole trader only if the course maintains or improves skills already used in their trade, not if it teaches an entirely new skill."
+  - "HMRC can disallow the entire cost of a course if there is any significant personal element, under the 'wholly and exclusively' rule."
+  - "Training required by law or a professional body to carry on your trade is usually an allowable expense."
+  - "A course leading to a formal qualification such as a diploma, degree, or professional certificate is more likely to be treated as capital expenditure."
+  - "Qualifying training costs are entered under 'other allowable business expenses' on the self-employment pages (SA103) of the self assessment tax return."
+  - "Travel and accommodation costs for attending a qualifying course are also deductible, provided they are incurred wholly and exclusively for the business purpose."
 ---
 
 <h2>Can You Claim Tax Relief on a Training Course as a Sole Trader?</h2>

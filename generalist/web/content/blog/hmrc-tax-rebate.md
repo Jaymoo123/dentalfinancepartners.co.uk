@@ -33,6 +33,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@matreding
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
+keyTakeaways:
+  - "HMRC calculates everyone's Income Tax between June and November each year and issues a P800 letter if you overpaid."
+  - "The first £30,000 of a redundancy payment is tax-free, so if your employer taxed the full amount you can reclaim the overpaid tax."
+  - "P800 refunds are usually paid directly into your bank account within 5 to 10 working days of claiming online."
+  - "You can claim a tax refund for up to 4 years after the end of the tax year in which the overpayment occurred; after that, the refund is lost."
+  - "Self Assessment taxpayers cannot use the P800 route, as any overpayment is calculated and handled automatically through the Self Assessment return."
+  - "If you claim job expenses, keep receipts and records for at least 22 months after the end of the tax year."
 ---
 <h2>What Is an HMRC Tax Rebate?</h2>
 <p>An HMRC tax rebate is simply a refund of Income Tax you overpaid in a previous tax year. It happens when the tax deducted from your pay, pension, or other income exceeds the amount you actually owe based on your total taxable income and allowances.</p>

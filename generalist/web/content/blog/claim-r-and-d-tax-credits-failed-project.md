@@ -27,6 +27,24 @@ faqs:
     answer: "You can claim for qualifying R&D expenditure incurred in accounting periods ending up to two years before the date you file the claim. For example, if your accounting period ended on 31 March 2024, you have until 31 March 2026 to submit or amend the corporation tax return to include the R&D claim. Act promptly. The window closes once the two-year deadline passes."
   - question: "Does HMRC treat failed project claims differently from successful ones?"
     answer: "The rules are the same, but HMRC is more likely to open an enquiry into a failed project claim. They want to confirm the project genuinely involved technological uncertainty and was not routine work that simply did not produce results. Strong technical documentation and a clear narrative of the uncertainties faced will usually satisfy their questions."
+keyTakeaways:
+  - "HMRC assesses R&D claims on whether a company attempted to resolve a technological uncertainty, not on whether the project succeeded commercially."
+  - "Both technological failures (where the advance was not achieved) and commercial failures (where the technology worked but did not sell) can qualify for R&D tax credits."
+  - "Claims can be filed for qualifying R&D expenditure in accounting periods ending up to two years before the date the claim is submitted."
+  - "Loss-making companies can surrender the R&D loss for a payable cash credit, calculated at typically 14.5% or 10% depending on the scheme and period."
+  - "At a 25% corporation tax rate, a profit-making company saves £12,500 in tax for every £50,000 of qualifying R&D costs."
+  - "For accounting periods starting on or after 1 April 2024, the additional information form (R&D AIF) may be required alongside the corporation tax return."
+howToSteps:
+  - name: "Identify qualifying projects"
+    text: "Review every failed technical project from the last two accounting periods, as R&D claims can be made up to two years after the end of the accounting period the work fell in."
+  - name: "Write the technical narrative"
+    text: "For each project, prepare a clear description of the technological advance attempted, the uncertainties faced, and the activities undertaken, focusing on technical detail rather than commercial outcome."
+  - name: "Calculate qualifying costs"
+    text: "Identify staff costs, consumables, software licences, subcontractor costs and externally provided workers, and exclude non-qualifying commercial costs such as marketing research or market testing."
+  - name: "Prepare and submit the claim"
+    text: "Submit the claim through your corporation tax return (CT600) or by amending a previously filed return, and include the additional information form (R&D AIF) if required for accounting periods starting on or after 1 April 2024."
+  - name: "Retain all evidence"
+    text: "Store all project documentation, cost records and technical narratives, as HMRC can open an enquiry up to 12 months after you submit the claim."
 ---
 
 <p>Most business owners assume R&D tax credits are only for successful projects. The logic feels obvious: if you spent money developing something that never made it to market, why would HMRC give you money back?</p>

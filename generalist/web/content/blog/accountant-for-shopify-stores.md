@@ -27,6 +27,12 @@ faqs:
     answer: "You likely need to register for VAT in Germany and file periodic returns there. Storing stock in an EU country creates a VAT obligation in that country, even if you sell to customers across the EU. You should map your fulfilment network before storing stock abroad to avoid penalties for late registration."
   - question: "Do I need to file US sales tax returns if I sell to American customers through Shopify?"
     answer: "It depends on whether you have economic nexus in a US state. Most states require registration once you exceed $100,000 in sales or 200 transactions in a calendar year in that state. Shopify's built-in sales tax calculation can help, but you are responsible for registering and filing returns in each state where you have nexus."
+keyTakeaways:
+  - "The VAT registration threshold for 2025/26 is £90,000 in taxable turnover over a rolling 12-month period; once crossed, you have 30 days to register with HMRC."
+  - "Sellers of digital goods to EU consumers account for VAT in the customer's member state; the One Stop Shop (OSS) scheme covers all EU sales in one quarterly return."
+  - "MTD for ITSA is mandatory for self-employed individuals with income above £50,000 from April 2026, extending to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Under the merged R&D scheme (in force from 1 April 2024), profitable companies can claim a 20% above-the-line credit under RDEC for qualifying ecommerce development work."
+  - "US economic nexus is typically triggered at $100,000 in sales or 200 transactions in a calendar year in a given state, requiring registration and sales tax collection in that state."
 ---
 
 <p>If you run a Shopify store from the UK, your tax position is more complex than a standard limited company or sole trader. You deal with multiple sales channels, international customers, digital goods, and inventory that moves across borders. A general accountant who handles a local plumber and a marketing agency will not know the specific rules that apply to ecommerce businesses.</p>

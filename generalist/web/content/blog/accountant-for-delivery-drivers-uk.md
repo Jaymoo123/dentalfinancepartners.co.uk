@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "From 6 April 2026, delivery drivers can claim 55p per mile for the first 10,000 business miles in a tax year, then 25p per mile."
+  - "VAT registration is compulsory when turnover exceeds £90,000 in any rolling 12-month period, though many drivers register voluntarily to reclaim VAT on vehicle costs."
+  - "Making Tax Digital for Income Tax applies to drivers with qualifying income above £50,000 from April 2026, above £30,000 from April 2027, and above £20,000 from April 2028."
+  - "Most delivery drivers on the VAT flat rate scheme pay 10%, but those classified as limited cost traders must use the 16.5% rate."
+  - "At £50,000 turnover, the total tax bill is roughly £8,000 to £9,000 as a sole trader and roughly £6,500 to £7,500 as a limited company outside IR35."
+  - "A driver found inside IR35 must pay tax and NI through the limited company as though employed, removing the main tax advantage of the corporate structure."
 ---
 <h2>Why Delivery Drivers Need More Than a General Accountant</h2>
 

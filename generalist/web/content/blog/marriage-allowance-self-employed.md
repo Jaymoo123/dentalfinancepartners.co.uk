@@ -34,6 +34,26 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Self-employed people with net profit below £12,570 can transfer £1,260 of unused personal allowance to a spouse or civil partner, saving up to £252 per year."
+  - "For the claim to work, the receiving partner must be a basic rate taxpayer with taxable income between £12,571 and £50,270."
+  - "Claims can be backdated for up to four previous tax years, giving a potential one-off refund of £1,260 for couples who have never claimed."
+  - "Eligibility is based on net profit after allowable business expenses, not turnover, so a high-turnover sole trader with significant expenses may still qualify."
+  - "HMRC estimates over 2 million eligible couples do not claim the Marriage Allowance."
+  - "The allowance is handled through a tax code adjustment by HMRC and does not need to be declared separately on a self assessment return."
+howToSteps:
+  - name: "Visit GOV.UK"
+    text: "Go to GOV.UK and search for 'Marriage Allowance', then click the 'Apply now' button."
+  - name: "Gather National Insurance numbers"
+    text: "Have your National Insurance number and your spouse's or civil partner's National Insurance number ready before you start."
+  - name: "Confirm your income is below the threshold"
+    text: "Confirm that your taxable income (net profit after allowable business expenses) is below £12,570 for the current tax year."
+  - name: "Confirm your spouse's income band"
+    text: "Confirm that your spouse's or civil partner's taxable income is between £12,571 and £50,270."
+  - name: "Submit the application"
+    text: "Submit the application online. HMRC will send a confirmation letter and adjust your spouse's tax code, usually within a few weeks."
+  - name: "Backdate if eligible in prior years"
+    text: "If your net profit was below £12,570 in any of the four previous tax years, use the same GOV.UK application to backdate the claim for those years."
 ---
 <p>If you're self employed and your taxable income is below the personal allowance of £12,570, you might be missing out on a straightforward tax break worth up to £252 per year. It's called the Marriage Allowance, and it lets you transfer up to £1,260 of your unused personal allowance to your spouse or civil partner.</p>
 

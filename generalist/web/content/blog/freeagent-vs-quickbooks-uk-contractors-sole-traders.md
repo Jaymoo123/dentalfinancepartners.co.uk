@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "FreeAgent costs £9.50 per month paid annually, covering invoicing, bank feeds, VAT returns, payroll for one employee, and corporation tax with no tiered plans."
+  - "QuickBooks Simple Start rises to £33 per month after the three-month introductory period, with payroll charged at an extra £5 per month on top of the plan."
+  - "Over a year, a limited company contractor pays approximately £114 with FreeAgent versus £456 with QuickBooks Simple Start plus payroll."
+  - "FreeAgent includes a built-in IR35 status checker and tracks deemed employment payments for inside-IR35 contracts; QuickBooks has no IR35-specific features."
+  - "MTD for Income Tax Self Assessment becomes mandatory from April 2026 for self-employed or landlord income above £50,000, and both platforms are preparing compliance tools."
+  - "NatWest, RBS, and Ulster Bank business customers may receive FreeAgent free or at a reduced rate through their business account."
 ---
 <h2>FreeAgent Vs QuickBooks: Which Accounting Software Wins For UK Contractors And Sole Traders?</h2>
 

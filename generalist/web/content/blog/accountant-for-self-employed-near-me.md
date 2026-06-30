@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. If you have missed the self assessment deadline or have outstanding returns, an accountant can file them for you and negotiate with HMRC on your behalf. They can also set up a Time to Pay arrangement if you cannot afford your tax bill in one go. The sooner you contact an accountant, the more options you have."
   - question: "Do I need a local accountant or can I use one anywhere in the UK?"
     answer: "Most self employed clients work remotely with their accountant using email, phone, and video calls. Cloud software means your records are accessible from anywhere. Unless you specifically want face to face meetings, the accountant's location does not matter. What matters is that they understand your sector and your tax position."
+keyTakeaways:
+  - "From April 2026, self employed people with qualifying income over £50,000 must submit quarterly MTD updates to HMRC, dropping to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Basic self assessment filing typically costs £150 to £350 per year, while a full service covering bookkeeping, VAT returns and year-round advice costs £120 to £250 per month."
+  - "VAT registration applies when your self employed turnover approaches or exceeds the £90,000 threshold."
+  - "Most self employed clients work with their accountant remotely by email, phone or video call, so the accountant's location matters less than their knowledge of your specific trade."
+  - "Anyone in the UK can legally call themselves an accountant, so check they are registered with a recognised body such as ICAEW, ACCA, CIMA or AAT."
+  - "A useful rule of thumb is that an accountant should save you at least twice their fee in tax, time, or both."
 ---
 
 <p>If you're self employed and typing "accountant for self employed near me" into Google, you're probably at one of two points. Either you've just started working for yourself and need to get your tax affairs straight, or you've been filing your own self assessment and realise you're spending too much time on it. Either way, you need someone who understands self employment tax, not just company accounts.</p>

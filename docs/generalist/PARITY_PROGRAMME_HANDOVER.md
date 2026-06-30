@@ -2,7 +2,7 @@
 
 **Purpose:** hand this programme to a fresh agent with zero prior context. Read this top to bottom before doing anything. It captures the goal, the locked decisions, the locked working rules, exactly what has been done and verified, the current repo/deploy state, and the concrete next steps with file anchors.
 
-**Last updated:** 2026-06-30 (evening). **Factual-accuracy remediation COMPLETE + build green — see §4c.** All 356 unverified/legacy posts audited; 281 surgically corrected + 3 fabrications rewritten; freshness sweep done; `npm run build` green; `npm test` 33/33. Earlier same-day work (Waves 0-2 + the partial audit) in §4-§4b.
+**Last updated:** 2026-06-30 (late). **Wave 3 GEO keyTakeaways backfill COMPLETE — see `wave3_geo_2026-06-30.md` + §4c NEXT.** All 356 unverified/legacy posts audited (281 corrected + 3 fabrications rewritten); **then keyTakeaways/howToSteps added to all 74 audit-clean posts** (69 authored this run via Sonnet→Opus-QA Workflow + 5 pilot); `npm run build` green; `npm test` 33/33; rendered answer-box + HowTo schema verified. Earlier same-day work (Waves 0-2 + remediation) in §4-§4c. **A checkpoint commit was offered after Wave 3.**
 **Working branch:** `property-onsite-assistant-mvp` (ALL work UNCOMMITTED in the working tree unless stated; nothing deployed). The change set is now large; a checkpoint commit was offered.
 **Owner decision 2026-06-29:** deploy-Wave-0-now vs keep-building → **chose "keep building locally"**. Still undeployed (honeypot lead-loss + credential exposure remain live on prod until a batched deploy — re-surface at the next deploy gate).
 **Owner steer 2026-06-30:** **cost-conscious.** After the first fix batch over-spent, owner asked "is this worth it" → method corrected to lean Sonnet-only + grep/build verification (§4c cost lesson). **Confirm scope/cost before launching large multi-post Workflows.**
@@ -184,7 +184,8 @@ Working tree = §4a Wave-2 work + this session's 3-file edits (uk-tax-rates.ts, 
 
 **Duplicate slug families noted** (8 CGT-rate variants, multiple sole-trader-vs-ltd-calculator + R&D + payroll near-duplicates) — a future **DEDUP opportunity**, NOT actioned (locked rule: rewrite-only, no collapse without data-gating + per-cluster owner approval).
 
-**NEXT:** Wave 3 GEO backfill is now UNBLOCKED for the **73 audit-clean posts** (the gate was "never amplify an unverified body into the answer-box"; clean list at `.cache/audit_clean_so_far.json`, regenerate after final audit). Then Waves 4 (GEN-R2 rewrites, needs same-day GSC pull) + 5 (cheap CRO). Owner is cost-conscious: confirm scope before large multi-post Workflows.
+**NEXT:** ~~Wave 3 GEO backfill is now UNBLOCKED for the 73 audit-clean posts~~ **DONE 2026-06-30** — keyTakeaways (411) on all 74 audit-clean posts (69 authored via Workflow `wf_cd61bf16-546`, Sonnet author → Opus adversarial QA, deterministic apply; 5 pilot pre-existing) + howToSteps on 9 procedural posts. Build green, tests 33/33, answer-box/speakable/HowTo schema verified in prerendered HTML. Full record: `docs/generalist/wave3_geo_2026-06-30.md`. **Open option (Wave 3b):** extend keyTakeaways to the 282 now-corrected fixed posts (~4x coverage; the Opus QA stage re-checks figure fidelity, so it is the safety net for their lighter remediation verification). Then Waves 4 (GEN-R2 rewrites, needs same-day GSC pull) + 5 (cheap CRO).
+**Spend posture update 2026-06-30:** owner upgraded plan; spend is no longer the hard constraint (optimise for exhaustive/correct, still no waste). Wave 3 used Opus-QA-per-post deliberately (answer-box = featured-snippet slot). Memory [[feedback_spend_posture_upgraded]].
 
 ---
 
@@ -199,7 +200,7 @@ Working tree = §4a Wave-2 work + this session's 3-file edits (uk-tax-rates.ts, 
 Factual remediation is DONE and build is green (§4c). Waves 0-2 + GEO schema/code are also done (§4-§4a). Nothing is deployed. **Owner is cost-conscious; confirm scope before any large multi-post Workflow.** Open choices, roughly in priority order:
 
 1. **Checkpoint commit** of the large uncommitted change set (offered; owner default is commit-only-when-asked).
-2. **Wave 3 GEO backfill** — `keyTakeaways` on the **73 audit-clean posts** (gate now satisfied; clean list `.cache/audit_clean_so_far.json`, regenerate from `.cache/audit_part2/` + part-1 `clean`). Moderate cost. This is the main remaining parity lever for answer-box/featured-snippet capture.
+2. ~~**Wave 3 GEO backfill** — `keyTakeaways` on the 73 audit-clean posts.~~ **DONE 2026-06-30** (all 74 clean posts have answer-boxes; `wave3_geo_2026-06-30.md`). Remaining GEO option = **Wave 3b**: extend keyTakeaways to the 282 now-corrected fixed posts (~4x answer-box coverage).
 3. **Freshness follow-ups** (cheap, manager-direct): the `tax-year-end-checklist` guide in `generalist/web/src/app/guides/[slug]/data.ts` is intrinsically 2025/26 (rewrite-or-archive + 7 stale figures inside); `welcome-series.ts` Step 4 MTD reframe; EmployerNI EA label.
 4. **Dedup** the duplicate slug families surfaced by the audit (8 CGT-rate variants, multiple sole-trader-vs-Ltd-calculator / R&D / payroll near-duplicates) — STRATEGIC + GATED (locked rule: rewrite-only, no collapse without GSC/Bing data + per-cluster owner approval; see [[feedback_data_gated_consolidation]]).
 5. **Waves 4 (GEN-R2 rewrites)** — needs a same-day GSC/Bing pull first — and **5 (cheap CRO)**.

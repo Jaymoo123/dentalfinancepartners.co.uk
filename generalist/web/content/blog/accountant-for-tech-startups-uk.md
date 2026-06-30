@@ -27,6 +27,13 @@ faqs:
     answer: "Technically, you can apply yourself, but in practice you need an accountant. HMRC's advance assurance application requires detailed information about the company, the share structure, the trade, and the use of funds. The application must demonstrate that the company meets the qualifying conditions, including the gross assets test, the age test, and the trading requirement. A specialist accountant will know exactly what HMRC looks for and how to present the application to avoid delays or rejections. We recommend using an accountant for this."
   - question: "What is the difference between a tech startup accountant and a general practice accountant?"
     answer: "A general practice accountant files your year-end accounts and corporation tax return. They may handle your payroll and VAT. A tech startup accountant does all of that plus R&D tax credits, SEIS/EIS compliance, share scheme advice, management accounts, investor reporting, deferred revenue recognition, and capitalised development costs. They understand the specific tax reliefs and reporting requirements that apply to digital businesses. If you are raising investment, your investors will expect your accountant to produce monthly management accounts. A general practice accountant typically does not offer that service."
+keyTakeaways:
+  - "From April 2024, loss-making SMEs spending above 30% of total costs on R&D can claim the Enhanced R&D Intensive Scheme, paying 14.5% of enhanced expenditure as cash."
+  - "SEIS gives investors 50% income tax relief on investments up to £200,000 per company per year; EIS gives 30% relief on investments up to £5 million per company per year."
+  - "The VAT registration threshold is £90,000 turnover in a rolling 12 months, and a SaaS business charging £1,000 per seat reaches it with just 90 customers."
+  - "EMI share options carry no income tax or NIC on grant and attract capital gains treatment on disposal, making them the standard way UK tech startups incentivise key hires."
+  - "Under FRS 102, software development costs that meet qualifying criteria must be capitalised as an intangible asset and amortised over a useful life of typically 3 to 5 years."
+  - "The Annual Investment Allowance gives 100% tax relief on the first £1 million of qualifying expenditure each year."
 ---
 
 <h2>Why a Standard Accountant Won't Cut It for a Tech Startup</h2>

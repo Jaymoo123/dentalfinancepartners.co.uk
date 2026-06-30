@@ -27,6 +27,13 @@ faqs:
     answer: "Both firms offer VAT filing as an add-on service. Neither includes it in the standard package. The add-on costs roughly £15 to £30 per month depending on your package and transaction volume. Both are Making Tax Digital compatible."
   - question: "What happens if I need to speak to an accountant urgently?"
     answer: "Both firms offer phone and email support during business hours. Crunch also has a live chat function. Neither offers a dedicated accountant who knows your file inside out. You speak to whoever is on shift. If you need a named contact who understands your business history, a traditional firm is a better fit."
+keyTakeaways:
+  - "Crunch's limited company package starts at around £80 to £100 per month and includes the director's self assessment return, which Mazuma charges as an extra."
+  - "Mazuma uses a receipt-scanning model where their team categorises your transactions; Crunch provides accounting software and expects you to handle the day-to-day data entry yourself."
+  - "Crunch does not integrate with Xero, QuickBooks, or FreeAgent and requires you to use their own software; Mazuma works with whatever software you already use, or their app alone."
+  - "VAT returns and payroll are chargeable add-ons with both providers rather than included, with VAT filing costing roughly £15 to £30 per month."
+  - "Sole trader packages start at around £60 to £80 per month with Mazuma and around £50 to £70 per month with Crunch, as of the 2025/26 tax year."
+  - "Businesses with turnover above £250,000, multiple directors, employees, or associated companies are better served by a traditional accountancy firm than by either flat-fee online provider."
 ---
 
 <p>If you run a small UK business and you are looking for an online accountant, you have probably come across both Mazuma and Crunch. They are two of the biggest names in the space, and they both offer a flat-fee, app-based service aimed at small limited companies, sole traders, and contractors. But they work quite differently under the bonnet.</p>

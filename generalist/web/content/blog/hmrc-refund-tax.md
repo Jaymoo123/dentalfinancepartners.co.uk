@@ -32,6 +32,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@matreding
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
+keyTakeaways:
+  - "HMRC aims to process tax refunds within 4 to 6 weeks, though adjustments made through your tax code can take up to 8 weeks."
+  - "The first £30,000 of a redundancy payment is tax-free; if your employer taxed the full amount, you can reclaim the overpaid tax from HMRC."
+  - "Employed workers can claim tax relief on job expenses under £2,500 using form P87, without needing to file a full Self Assessment return."
+  - "Basic rate taxpayers have a Personal Savings Allowance of £1,000 (£500 for higher rate taxpayers), and can reclaim any tax deducted on savings interest that falls within that allowance."
+  - "The dividend allowance for 2025/26 is £500, and tax deducted on dividends within that allowance can be reclaimed through Self Assessment or by contacting HMRC."
+  - "Refund claims for allowable business expenses missed in earlier years must be made within 4 years of the end of the relevant tax year."
 ---
 <p>If you have paid more tax than you owe, you are entitled to claim it back. HMRC does not always spot the overpayment itself. In many cases, you need to take the first step.</p>
 

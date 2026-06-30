@@ -27,6 +27,28 @@ faqs:
     answer: "If you registered your company name before the trademark was filed, you generally have prior use rights. You can continue trading under that name as long as you can prove you were using it in commerce before the trademark application date. But if the trademark holder challenges you, the legal costs can be significant. Registering your own trademark early gives you stronger protection."
   - question: "Do I need a registered office address, and can I use my home address?"
     answer: "Yes, every limited company must have a registered office address in the same part of the UK as its incorporation (England and Wales, Scotland, or Northern Ireland). You can use your home address, but it becomes public on the Companies House register. Many directors use their accountant's address or a virtual office service to keep their home address private."
+keyTakeaways:
+  - "Registering a limited company online costs £12, takes under 30 minutes, and most certificates of incorporation are issued by Companies House within 24 hours."
+  - "Companies House only checks for exact name matches, so a near-identical name can pass registration, but an existing company can later object and force a £10 name change."
+  - "A Companies House clearance is not a clearance to trade: the IPO trademark register is separate, and trademark holders can pursue legal action even after Companies House approves the name."
+  - "Before submitting the IN01 form, search the IPO database at gov.uk/search-for-trademark for your proposed name and close variations across relevant classes, such as class 35 and class 42."
+  - "Registering a trademark before incorporating costs around £170 plus VAT for one class via the IPO online system, giving you priority over later challengers."
+  - "Every company must file a confirmation statement at least once every 12 months, with a £13 online fee; missing the deadline can ultimately get the company struck off."
+howToSteps:
+  - name: "Check Companies House name availability"
+    text: "Enter your proposed name exactly as you plan to register it in the Companies House name availability checker to confirm there is no exact match on the register."
+  - name: "Search the IPO trademark database"
+    text: "Search gov.uk/search-for-trademark for your proposed name and close variations, including the core word without suffixes such as 'Consulting' or 'Ltd', checking across all relevant trademark classes."
+  - name: "Check for unregistered trading names"
+    text: "Run a general web search for unregistered trading names, locally registered business names, and domain names, as a business that has traded under a similar name for years can bring a passing-off claim even without a registered trademark."
+  - name: "Gather required registration details"
+    text: "Prepare a registered office address in the correct part of the UK, at least one director aged 16 or over, at least one shareholder, the identity of any person with significant control (more than 25% of shares or voting rights), and a SIC code that accurately describes your business activity."
+  - name: "Submit the IN01 form and pay the fee"
+    text: "File the IN01 form through Companies House WebFiling or an authorised formation agent and pay the £12 online fee (or £40 for postal); most certificates of incorporation are issued within 24 hours."
+  - name: "Register for Corporation Tax and VAT with HMRC"
+    text: "Register for Corporation Tax within three months of starting to trade; also register for VAT if your turnover is expected to exceed £90,000 in the next 30 days, or voluntarily if you wish to reclaim VAT on purchases."
+  - name: "Set up statutory records and file confirmation statements"
+    text: "Maintain registers of directors, shareholders, PSCs, and directors' residential addresses at your registered office or a SAIL address, and file a confirmation statement at least once every 12 months at an online fee of £13."
 ---
 
 <p>Registering a limited company in the UK is a process you can complete online in under 30 minutes. Companies House processes most applications within 24 hours, often the same day. The basic steps are simple: choose a name, provide a registered office address, appoint at least one director, and submit the IN01 form with a £12 fee.</p>

@@ -33,6 +33,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@kindelmedia
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-shot-of-a-person-using-calculator-7688524/
+keyTakeaways:
+  - "UK VAT has three main rates: 20% standard, 5% reduced, and 0% zero rate."
+  - "To add 20% VAT to a net price, multiply by 1.2; to extract it from a gross price, divide by 6."
+  - "For the reduced rate of 5%, divide the gross price by 21 to find the VAT amount."
+  - "The Direct Calculation Scheme applies to retailers with VAT-exclusive turnover under £1 million; those with turnover between £1 million and £130 million must also complete an annual stock adjustment."
+  - "Under partial exemption, all input tax is recoverable if exempt input tax does not exceed £625 per month on average and half of total input tax in the relevant period."
+  - "The VAT registration threshold is based on taxable turnover only, so VAT-exempt income does not count toward the £90,000 figure."
 ---
 <p>If you run a UK business that is VAT registered, you need to know exactly how much VAT to charge your customers and how much you can reclaim on your purchases. Getting those numbers wrong means either overpaying HMRC or underpaying and facing penalties. A <strong>VAT calculation calculator</strong> is the simplest way to get the figures right every time.</p>
 

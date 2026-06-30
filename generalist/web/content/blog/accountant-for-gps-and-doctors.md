@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on your income level, your NHS pension position, and your long term plans. A limited company can save tax on profits retained in the business, but extracting the money as dividends adds complexity. For many GPs, keeping private practice as self employed is simpler and more tax efficient. A specialist accountant models both scenarios before you decide."
   - question: "What expenses can a GP or doctor claim on their tax return?"
     answer: "Allowable expenses include GMC registration fees, defence union subscriptions (MDU, MPS, MDDUS), professional indemnity insurance, medical journals and textbooks, conference fees and travel, specialist equipment, and a proportion of home office costs if you work from home. A specialist knows what HMRC accepts and what it challenges."
+keyTakeaways:
+  - "The NHS Pension Scheme annual allowance for 2025/26 is £60,000, tapering to a minimum of £10,000 when adjusted income exceeds £260,000."
+  - "NHS pension growth is calculated using a 16:1 factor on the pension input amount, so a sharp rise in a GP's income can easily push it above the annual allowance."
+  - "In a GP partnership, each partner pays tax on their share of the profits regardless of what they actually draw from the business."
+  - "NHS income is reported as employment income using a P60, while private practice income is reported as self-employment on an SA103; mixing them can trigger an HMRC enquiry."
+  - "Allowable expenses for doctors include GMC registration fees, defence union subscriptions (MDU, MPS, MDDUS), professional indemnity insurance, conference fees, medical journals, and specialist equipment."
+  - "Specialist accountant fees for GPs typically range from £800 to £2,500 for personal tax returns and £1,500 to £5,000 for partnership or limited company work."
 ---
 
 <p>If you are a GP or doctor working in the UK, your tax and accounting needs are not the same as a typical small business owner. You are dealing with NHS pension annual allowance charges, private practice income, partnership profit allocations, and a tax code that treats you differently from most other professionals.</p>

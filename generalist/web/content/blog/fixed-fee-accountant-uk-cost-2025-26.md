@@ -27,6 +27,13 @@ faqs:
     answer: "A fixed fee accountant is better if you want predictable monthly costs and your business has consistent transaction volumes. Hourly rate accountants can work well if you have very seasonal activity or need significant ad hoc advisory work. For most small UK businesses, a fixed fee provides better budgeting certainty and encourages the accountant to be efficient."
   - question: "How do I know if a fixed fee accountant is good value?"
     answer: "Compare the total annual cost against what is included. A £150 per month fee that covers annual accounts, corporation tax, personal tax return, confirmation statement, VAT returns, and payroll is better value than a £100 per month fee that only covers the basics and charges extra for everything else. Also check the accountant's qualifications. ICAEW chartered accountants have passed rigorous exams and follow strict professional standards."
+keyTakeaways:
+  - "Fixed fee accountants in the UK typically charge sole traders and freelancers £50 to £120 per month in 2025/26."
+  - "A single-director limited company with straightforward accounts typically pays £100 to £200 per month for a fixed fee package."
+  - "Multi-director and more complex limited companies typically pay £180 to £350 per month, depending on the number of directors and shareholders."
+  - "Contractors working through their own limited company typically pay £100 to £180 per month, and adding VAT registration can push the fee to around £160."
+  - "Common extras outside the fixed fee include VAT returns (£30 to £60 each), payroll for employees beyond directors (£20 to £50 monthly), and R&D claims (£500 to £2,000 per claim)."
+  - "MTD for ITSA compliance becomes mandatory from April 2026 for sole traders with income over £50,000, and is often charged as an extra outside the standard fixed fee."
 ---
 
 <h2>What Does "Fixed Fee" Actually Mean for UK Accountants?</h2>

@@ -34,6 +34,26 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Changing a company name with Companies House costs £8 for online filing or £20 for a paper filing, as of 2025/26."
+  - "Online name-change applications are usually processed within 24 hours; paper filings take 5 to 10 working days."
+  - "Most companies use an ordinary resolution, which requires more than 50% of shareholder votes cast to be in favour."
+  - "A name change does not affect the company number, corporation tax reference, VAT number, or PAYE reference."
+  - "Once approved, Companies House issues a certificate of incorporation on change of name, and the new name takes effect from the date shown on it."
+  - "HMRC is notified of the name change automatically by Companies House, so no re-registration for any taxes is required."
+howToSteps:
+  - name: "Check name availability"
+    text: "Use the Companies House name availability checker to confirm the proposed name is not identical to, or confusingly similar to, an existing registered company name before starting any paperwork."
+  - name: "Pass a shareholder resolution"
+    text: "If your articles require it (as most companies using Model Articles do), pass an ordinary resolution approved by a simple majority of shareholders and record it in the company's statutory records."
+  - name: "File form NM01 with Companies House"
+    text: "Complete form NM01 online through the Companies House WebFiling service, entering the company number, current name, proposed new name, and the date the resolution was passed. If your articles give directors the power to change the name without a shareholder vote, file form NM04 instead."
+  - name: "Pay the filing fee"
+    text: "Pay £8 for online filing or £20 for a paper filing."
+  - name: "Wait for the certificate"
+    text: "Online filings are usually processed within 24 hours; once approved, Companies House issues a certificate of incorporation on change of name confirming the new name is effective from the date shown on it."
+  - name: "Update bank, insurers, and business records"
+    text: "Present the certificate to your bank, notify your insurer, update your accounting software manually, and update your website, contracts, and domain names. HMRC is notified automatically by Companies House."
 ---
 <p>You incorporated your company as ABC Consulting Ltd. But six months in, your work has shifted from consultancy to software development. ABC Consulting Ltd no longer describes what you do. Or maybe you have just rebranded and need the registered name to match. Whatever the reason, changing your company name with Companies House is a straightforward administrative process. Here is exactly how to do it.</p>
 

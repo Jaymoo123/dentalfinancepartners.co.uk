@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "HMRC usually gives businesses 30 days to respond to a VAT compliance check letter, reduced to 14 days if HMRC suspects a serious problem."
+  - "Ignoring an HMRC information notice issued under Schedule 36 of the Finance Act 2008 can result in penalties starting at £300."
+  - "VAT error penalties depend on behaviour: careless errors attract 0 to 30%, deliberate not concealed 20 to 70%, and deliberate and concealed 30 to 100% of the underpayment."
+  - "Voluntarily disclosing errors during a compliance check reduces penalties significantly, whereas interest on underpaid VAT is statutory and cannot be negotiated away."
+  - "A straightforward desk-based compliance check typically closes in 8 to 12 weeks, while a complex check involving a visit and multiple queries can take 6 to 12 months."
+  - "Destroying or altering records related to the period under review during a compliance check is a criminal offence under the Value Added Tax Act 1994."
 ---
 <h2>HMRC VAT Compliance Checks Are Not Audits</h2>
 

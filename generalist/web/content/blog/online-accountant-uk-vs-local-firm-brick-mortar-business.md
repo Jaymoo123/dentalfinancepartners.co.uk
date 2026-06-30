@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. A local firm can use compatible software like Xero or Sage 50 to keep digital records and submit quarterly MTD returns on your behalf. You just provide the paperwork. They handle the data entry and submission."
   - question: "Do I need to visit a local accountant's office regularly?"
     answer: "No. Many local firms offer remote communication by email, phone and video call. The difference is that they can also visit your premises if needed, for receipt collection, stock checks, or HMRC inspections. You get the flexibility of both."
+keyTakeaways:
+  - "Online accountant UK services typically cost £80 to £250 per month, covering cloud software, bookkeeping support, VAT returns and year-end accounts."
+  - "Local firms typically charge £200 to £350 per month for a comparable service, and this often includes a bookkeeper visiting your premises to collect and process physical receipts."
+  - "Making Tax Digital for Income Tax becomes mandatory from April 2026 for self-employed people and landlords with income above £50,000, then £30,000 from April 2027 and £20,000 from April 2028."
+  - "A business owner spending four hours per week photographing receipts at £15 per hour adds £3,120 to the annual cost, turning a £1,800 online subscription into £4,920 in real terms."
+  - "With an online accountant, the business owner or their staff typically handle the receipt data entry; with a local firm, the bookkeeper does it instead."
+  - "The cheapest monthly fee is not always the cheapest total cost once the business owner's own time spent on data entry is factored in."
 ---
 
 <h2>The Choice Between Online and Local</h2>

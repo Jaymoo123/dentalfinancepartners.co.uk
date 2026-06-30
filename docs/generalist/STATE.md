@@ -4,7 +4,7 @@
 
 **Site:** www.hollowaydavies.co.uk · Vercel project `holloway-davies` · site_key `generalist` · brand: distinct generalist design system (off-white + ink + orange, Geist Sans), james-holloway byline (credential designation removed 2026-06-29).
 
-> **LATEST (2026-06-30, local / UNDEPLOYED):** active **Property-standard PARITY programme** — full handover + current state in **`docs/generalist/PARITY_PROGRAMME_HANDOVER.md` (read §4c first)**. Done this run: Waves 0-2 + GEO schema/code; site-wide credential strip; **full factual-accuracy remediation COMPLETE** (all 356 unverified/legacy posts audited, 281 surgically corrected + 3 whole-premise fabrications rewritten on-URL, `npm run build` green, `npm test` 33/33). NEXT: Wave 3 GEO keyTakeaways on the 73 audit-clean posts. Owner cost-conscious — confirm scope before large Workflows.
+> **LATEST (2026-06-30, local / UNDEPLOYED):** active **Property-standard PARITY programme** — full handover in **`docs/generalist/PARITY_PROGRAMME_HANDOVER.md`**. Done this run: Waves 0-2 + GEO schema/code; site-wide credential strip; **full factual-accuracy remediation COMPLETE** (356 audited, 281 corrected + 3 fabrications rewritten on-URL); **Wave 3 GEO keyTakeaways backfill COMPLETE** — answer-boxes on all 74 audit-clean posts (69 authored via Sonnet→Opus-QA Workflow + 5 pilot, 411 takeaways, 9 with howToSteps/HowTo schema); `npm run build` green, `npm test` 33/33, answer-box/speakable/HowTo verified in rendered HTML. Record: `docs/generalist/wave3_geo_2026-06-30.md`. NEXT options: Wave 3b (keyTakeaways on the 282 now-corrected posts), Wave 4 GEN-R2 rewrites (needs fresh GSC pull), or deploy (gated). **Spend posture relaxed 2026-06-30 (owner upgraded); still no waste.**
 
 ## Corpus + structure (as of 2026-06-12)
 

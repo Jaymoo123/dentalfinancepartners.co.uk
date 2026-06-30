@@ -27,6 +27,13 @@ faqs:
     answer: "Only if they specialise in cross-border VAT. Most general practice accountants do not handle EU VAT registrations. You need an accountant who can register you in individual EU member states or advise on the IOSS scheme. If your accountant says \"it is complicated\" without offering a solution, find one who can actually do it."
   - question: "What happens if HMRC investigates my ecommerce business?"
     answer: "HMRC can open a compliance check up to 12 months after you file a return. If your marketplace data does not match your declared income, they will ask questions. A specialist accountant will handle the correspondence, prepare the evidence, and negotiate on your behalf. The cost of representation is usually covered by professional fee insurance if you have it."
+keyTakeaways:
+  - "Digital platforms including Amazon, eBay, Etsy and Vinted have reported UK seller data directly to HMRC since 1 January 2024 under the OECD Model Reporting Rules for Digital Platforms."
+  - "Low Value Consignment Relief, which exempted imports under £15 from VAT, was abolished on 1 January 2021, so all UK imports now attract import VAT regardless of value."
+  - "UK sellers shipping into the EU must register for VAT in individual member states, or use the Import One Stop Shop (IOSS) for low-value goods sold to EU consumers."
+  - "Most ecommerce businesses reach the tax-efficiency breakeven point for limited company incorporation at between £30,000 and £50,000 in profit."
+  - "Ecommerce sellers of physical goods on the Flat Rate VAT scheme use the retailing rate of 7.5% or general rate of 12%; a service-sector rate underpays VAT and risks penalties."
+  - "The merged R&D scheme has applied since 1 April 2024, with the enhanced R&D Intensive Scheme (ERIS) available to loss-making companies where R&D spend exceeds 30% of total costs."
 ---
 
 <h2>The Ecommerce Tax Problem No One Warns You About</h2>

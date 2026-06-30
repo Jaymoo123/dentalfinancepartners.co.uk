@@ -27,6 +27,13 @@ faqs:
     answer: "You can claim platform fees, data subscriptions, VPS hosting, computer equipment, internet costs, training courses and accountancy fees. You cannot claim personal living costs or losses from spread betting. Keep receipts and records for everything. HMRC expects to see a clear link between the expense and your trading activity."
   - question: "Do I need to register for VAT as a forex trader?"
     answer: "No. Forex trading is exempt from VAT, so you do not charge VAT on your profits and you cannot reclaim VAT on your expenses unless you also make taxable supplies. If you have other business income above £90,000, you may need to register for VAT on that income, but your forex trading remains exempt."
+keyTakeaways:
+  - "Spread betting profits are tax-free in the UK, but CFD and spot forex profits are taxable as either income or capital gains depending on how HMRC classifies your activity."
+  - "HMRC classifies frequent, high-volume traders who rely on the income as traders subject to income tax and Class 4 National Insurance, rather than capital gains tax."
+  - "On a £60,000 profit a trader pays around £25,200 (40% income tax plus 2% Class 4 NIC), while an investor pays capital gains tax at 18% or 24%."
+  - "Through a limited company, corporation tax is 19% to 25%; below around £40,000 profit a company's running costs usually outweigh the savings, while above £70,000 incorporation often pays off."
+  - "From April 2026, sole trader forex traders with qualifying income over £50,000 file quarterly MTD updates; the threshold drops to £30,000 from April 2027, then £20,000 from April 2028."
+  - "HMRC requires records of every trade kept for at least five years after the 31 January deadline; incomplete records risk penalties of up to 100% of the tax underpaid."
 ---
 
 <h2>Why Forex Trading Has a Different Tax Treatment in the UK</h2>

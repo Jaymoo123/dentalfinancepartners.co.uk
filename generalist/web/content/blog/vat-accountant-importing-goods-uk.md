@@ -27,6 +27,13 @@ faqs:
     answer: "Postponed VAT accounting (PVA) lets you declare import VAT on your VAT return instead of paying it at the border. It is the default method for most imports since January 2021. You do not have to use it. You can choose to pay at customs instead. But PVA eliminates the cash flow gap and reduces admin. Most importers benefit from using it. Your VAT accountant should ensure you are set up correctly."
   - question: "What records do I need to keep for imports to satisfy HMRC?"
     answer: "You must keep the customs declaration (C88 form or equivalent), the commercial invoice from your supplier, proof of payment, the shipping documents (bill of lading or airway bill), and your monthly postponed VAT accounting statement from HMRC. Keep these for at least six years. HMRC can request them during a compliance check. A VAT accountant typically sets up a digital filing system to store these records alongside your bookkeeping software like Xero or FreeAgent."
+keyTakeaways:
+  - "Postponed VAT accounting has been the default method for most UK imports since January 2021, letting businesses declare import VAT on their return instead of paying at the border."
+  - "Import VAT is charged at 20% of the customs value, which includes the cost of goods, shipping, insurance, and any duty payable."
+  - "Under postponed VAT accounting, import VAT is entered in both Box 1 and Box 4 of the return, so the net effect is zero with full input tax recovery."
+  - "Low-value consignments under £135 are treated differently: VAT is collected at the point of sale by the online marketplace or seller, not at the UK border."
+  - "HMRC can request proof of import declarations up to four years after the event, and businesses that cannot produce the records lose their input tax recovery."
+  - "Businesses making partly exempt supplies cannot reclaim import VAT in full and must calculate the recoverable proportion."
 ---
 
 <h2>Importing Goods Triggers VAT Obligations That Catch Many UK Businesses Out</h2>

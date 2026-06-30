@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but expect transition costs. Your new accountant will need to onboard your data, and if you are on hourly billing you pay for that time. Most fixed fee agreements start at the beginning of a month or quarter. Check the notice period on your existing arrangement before switching."
   - question: "What services are typically excluded from a fixed fee package?"
     answer: "Common exclusions include R&D tax credit claims, share scheme administration, CGT planning, company formations, HMRC enquiry work, and complex international tax advice. Some firms also cap the number of ad hoc calls or emails. Always read the scope of work carefully before signing a fixed fee agreement."
+keyTakeaways:
+  - "Hourly billing rates for UK accountants range from £40 to £60 per hour for junior bookkeeping work to £150 to £250 per hour for senior manager or director work."
+  - "A seasonal landscaping business turning over £180,000 per year saved £3,720 annually by choosing a fixed fee of £250 per month over hourly billing."
+  - "For a sole trader with simple affairs who does their own bookkeeping, hourly billing can cost less; one example shows £960 per year against a fixed fee of £1,200."
+  - "Most fixed fee agreements run for 12 months with a notice period of 30 to 90 days, while hourly billing is typically month to month."
+  - "Some fixed fee agreements include annual escalation clauses of 10% or 20% per year regardless of workload, making it important to check the terms before signing."
+  - "Services such as R&D tax credit claims, share schemes, and CGT planning exercises typically fall outside fixed fee scope and attract separate charges."
 ---
 
 <p>If your business has quiet months followed by frantic ones, the way you pay for accounting matters more than you might think. A <a href="/services">fixed fee accountant UK</a> arrangement sounds simple. You pay one amount each month. Your books get done. Your tax returns get filed. No surprises.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "Almost never. The flat rate scheme requires you to pay a percentage of your turnover to HMRC, even though you charge your customers 0%. You also cannot reclaim input VAT on most purchases. Standard VAT accounting (reclaiming input VAT on your costs) is almost always more beneficial for zero-rated traders."
   - question: "What happens if I sell both zero-rated and standard-rated goods?"
     answer: "You must register for VAT when your total taxable turnover (including both types) exceeds £90,000. You charge 20% VAT on standard-rated goods and 0% on zero-rated goods. You reclaim input VAT on your costs in the normal way. The mix of rates does not change the registration rules, but it does make your VAT return slightly more detailed."
+keyTakeaways:
+  - "The compulsory VAT registration threshold is £90,000 in any rolling 12-month period and applies to zero-rated sales as well as standard-rated turnover."
+  - "When rolling 12-month turnover exceeds £90,000, HMRC must be notified within 30 days; registration then takes effect from the first day of the second month after crossing the threshold."
+  - "Voluntary registration below the threshold lets a zero-rated trader reclaim input VAT on business costs, since zero-rated sales add nothing to customer prices."
+  - "Zero-rated supplies differ from exempt supplies: sellers of exempt goods or services cannot reclaim input VAT on related costs, whereas sellers of zero-rated goods can."
+  - "The flat rate scheme makes zero-rated traders pay a percentage of turnover to HMRC (4% lowest, 8-14% for most sectors) while blocking input VAT reclaims on most purchases."
+  - "A business selling both zero-rated and exempt supplies recovers all input VAT only if exempt input VAT stays below £625 monthly and under 50% of total input VAT."
 ---
 
 <p>The standard answer to the question "when to register for VAT" is straightforward: when your taxable turnover exceeds £90,000 in a rolling 12-month period. That is the compulsory registration threshold for 2025/26, and it applies to most businesses selling goods or services in the UK.</p>

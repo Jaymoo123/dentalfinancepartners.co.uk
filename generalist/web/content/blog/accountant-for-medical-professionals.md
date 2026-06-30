@@ -27,6 +27,13 @@ faqs:
     answer: "The NHS Pension is a defined benefit scheme. HMRC calculates your pension growth each year using a 16-times multiplier on your increased annual pension. If that growth exceeds £60,000 (the annual allowance), you pay income tax on the excess at your marginal rate. Many consultants and GPs trigger this charge without realising it. You can elect for \"scheme pays\", meaning the NHS Pension Scheme pays the tax in exchange for a reduction in your future pension. This avoids a cash flow problem but reduces your retirement benefits."
   - question: "What happens if HMRC opens an enquiry into my medical practice tax return?"
     answer: "HMRC can open an enquiry within 12 months of filing your return (longer if they suspect fraud). They will ask for evidence of your income, expenses, and structure. Common triggers for medical professionals include large expense claims relative to income, use of a limited company without clear commercial rationale, or significant pension annual allowance charges. A specialist accountant will handle the enquiry on your behalf, prepare the required evidence, and negotiate with HMRC. The cost of representation is usually far less than the additional tax and penalties HMRC might seek if you handle it alone."
+keyTakeaways:
+  - "The NHS Pension annual allowance is £60,000 for 2025/26, with growth valued via a 16-times multiplier on increased pension, so a pay rise can trigger a charge despite no cash."
+  - "Inside IR35, locum doctors might take home 55 to 60% of gross income; outside IR35 with proper planning, take-home can reach 70 to 75% or more via dividends."
+  - "Private practice turnover above £90,000 in any rolling 12-month period triggers a VAT registration requirement."
+  - "Retaining profits in a limited company incurs corporation tax of 19% to 25%, versus income tax at 40% or 45% if higher earners draw the income directly."
+  - "The High Income Child Benefit Charge applies to medical professionals earning above £60,000."
+  - "A specialist accountant is worth considering once total income from NHS salary plus private or locum work exceeds £80,000."
 ---
 
 <h2>The Medical Professional's Tax Situation Is Not Standard</h2>

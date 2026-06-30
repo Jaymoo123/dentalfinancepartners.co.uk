@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, most accountants will let you switch at any time. You will need to agree on a fee for the remaining months of your financial year. Some firms may require a minimum 12-month commitment. It is worth asking your current accountant or a new firm about the switch."
   - question: "What is not covered by a fixed fee accounting package?"
     answer: "Common exclusions include HMRC investigations, R&D tax credit claims, corporate restructuring, share scheme advice, and legal documents. Some firms also exclude ad-hoc tax planning beyond basic queries. Always read the scope of services before signing. If you need something outside the scope, ask for a separate quote."
+keyTakeaways:
+  - "In the article's worked example, a fixed fee of £250 per month totals £3,000 a year versus £7,500 under hourly billing at £150 per hour, more than double the cost."
+  - "Regional accountants typically charge £100 to £300 per hour under hourly billing, with rates higher in London."
+  - "Hourly billing peaks in busy months when transaction volumes are highest, so seasonal businesses pay more in accounting fees precisely when workloads are heaviest."
+  - "Many hourly-billed accountants charge in 6-minute increments, meaning a 2-minute phone call is billed as 6 minutes."
+  - "For most businesses with erratic workloads, a fixed fee becomes better value once turnover exceeds £50,000 or monthly transactions exceed 30."
+  - "Fixed fee packages commonly exclude HMRC investigations, R&D tax credit claims, corporate restructuring, capital gains tax planning, and legal documents."
 ---
 
 <p>If your business income fluctuates month to month, you already know the pain of unpredictable bills. You budget for VAT, payroll, and supplies. But when your accountant's invoice arrives, it can throw your cash flow off balance.</p>

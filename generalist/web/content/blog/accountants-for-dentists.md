@@ -37,6 +37,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@n-voitkevich
   source: Pexels
   source_url: https://www.pexels.com/photo/woman-holding-a-pink-paper-offering-service-on-tax-forms-6919776/
+keyTakeaways:
+  - "VAT registration is required once income from non-exempt services (cosmetic treatments, dental products and lecturing) reaches £90,000; most NHS and clinical work remains VAT-exempt."
+  - "From 6 April 2026, Making Tax Digital for Income Tax Self Assessment is mandatory for self-employed dentists with qualifying income above £50,000."
+  - "The MTD for ITSA qualifying income threshold drops to £30,000 from April 2027 and to £20,000 from April 2028, bringing more associates and principals into scope."
+  - "Corporation tax rates of 19% to 25% compare with income tax of 40% to 45% on partnership profits, making incorporation an increasingly common choice for dental principals."
+  - "The Annual Investment Allowance gives 100% relief on most plant and machinery up to £1,000,000 per year, covering dental chairs, X-ray machines and surgery equipment."
+  - "NASDAL (the National Association of Specialist Dental Accountants and Lawyers) is the recognised professional body for accountants who specialise in the dental sector."
 ---
 <h2>Why a General Accountant May Not Be Enough for a Dental Practice</h2>
 

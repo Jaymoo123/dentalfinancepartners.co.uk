@@ -27,6 +27,13 @@ faqs:
     answer: "Tips given directly to staff by customers are outside PAYE. Service charges added to bills and distributed through payroll are subject to PAYE and employer NI. If you operate a tronc system with a troncmaster, the tronc itself is outside PAYE for the tips, but the troncmaster must account for employer NI on service charges passing through payroll. Get professional advice on setting up a compliant tronc arrangement."
   - question: "Can I claim capital allowances on my hotel building?"
     answer: "Yes, but the rules are specific. Plant and machinery (furniture, kitchen equipment, IT) qualifies for AIA at 100% up to £1 million per year. The building structure itself qualifies for Structures and Buildings Allowance at 3% per year. Certain fixtures like light fittings and bathroom suites are treated as plant and machinery, not part of the structure. A specialist accountant will prepare a detailed schedule to maximise your claims."
+keyTakeaways:
+  - "Hotel accommodation is standard rated at 20% VAT, covering room charges, cancellation fees, and extras such as minibar items or pay-per-view films."
+  - "The Tour Operators' Margin Scheme (TOMS) is mandatory, not optional, when a hotel sells packages that combine accommodation with bought-in transport or other third-party services."
+  - "Annual Investment Allowance (AIA) gives 100% tax relief on most plant and machinery up to £1,000,000 per year, covering kitchen equipment, furniture, and IT."
+  - "Structures and Buildings Allowance (SBA) provides 3% per year straight-line relief on the cost of the hotel building structure itself."
+  - "Making Tax Digital for Income Tax Self Assessment becomes mandatory from April 2026 for self-employed hotel operators with qualifying income above £50,000, and from April 2027 for those above £30,000."
+  - "Business Asset Disposal Relief carries a £1 million lifetime limit, with the CGT rate rising to 18% for hotel disposals from 6 April 2026."
 ---
 
 <h2>Hotels Are Not Like Other Businesses</h2>

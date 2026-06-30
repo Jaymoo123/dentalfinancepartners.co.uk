@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but you need to make sure your payroll records are accurate and reconcile to your bank statements. Your accountant will need your gross salaries, employer NI, and pension contributions to prepare your accounts. If your payroll is wrong, your accounts will be wrong. Many businesses find it simpler to let the accountant handle both."
   - question: "What happens if I make a mistake on an RTI submission?"
     answer: "You need to submit a corrected RTI return as soon as you spot the error. If HMRC identifies the mistake first, you may receive a penalty. Late filing penalties start at £100 per month. Incorrect tax codes can lead to employee complaints and HMRC compliance checks. A payroll accountant catches these errors before submission."
+keyTakeaways:
+  - "Late RTI filing attracts a penalty of £100 per month per 50 employees (pro-rata for smaller payrolls), and an incorrect P11D can cost up to £3,000 per form."
+  - "Basic outsourced payroll costs £15 to £30 per month per employee in 2025/26; full service with pension, P11Ds and year-end rises to £40 to £75."
+  - "Self-service payroll is practical for businesses with 1 to 3 employees on straightforward salaries with no variable hours, benefits in kind, or student loan deductions."
+  - "All employers must submit RTI returns to HMRC on or before each pay day; RTI digital filing has been a legal requirement since 2013."
+  - "From April 2026, Making Tax Digital for Income Tax Self Assessment becomes mandatory for self-employed people and landlords with qualifying income over £50,000."
+  - "Failing to auto-enrol a pension-eligible employee carries a £400 penalty plus ongoing daily fines."
 ---
 
 <p>If you have employees, you need to run payroll. That is not optional. The real question is whether you need an <strong>accountant for payroll</strong>, or whether you can handle it yourself with software.</p>

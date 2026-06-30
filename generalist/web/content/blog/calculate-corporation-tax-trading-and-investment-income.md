@@ -27,6 +27,28 @@ faqs:
     answer: "Dividends from UK companies are franked investment income. They are not included in total profits for corporation tax purposes, so you do not pay tax on them. However, they are included in augmented profits, which is the figure used to calculate marginal relief. This means they can push you into a higher tax bracket even though they are not taxable themselves."
   - question: "Can I offset trading losses against investment income to reduce corporation tax?"
     answer: "Yes, but the rules are specific. Trading losses can be set against total profits of the same accounting period (including investment income) under s.37 CTA 2010. They can also be carried back 12 months against total profits. However, losses from non-trading loan relationships (interest) can only be set against non-trading income. The interaction between loss relief and marginal relief can be complex, so professional advice is recommended."
+keyTakeaways:
+  - "For 2025/26, corporation tax is 19% on augmented profits up to £50,000 and 25% above £250,000, with marginal relief giving an effective rate in between."
+  - "Augmented profits equal total profits plus dividends from UK companies (franked investment income); those dividends are not taxable but still count toward the threshold determining which rate applies."
+  - "Investment income like bank interest and rental income feeds into both total and augmented profits, so it is effectively taxed at the full 25% once augmented profits exceed £50,000."
+  - "The marginal relief standard fraction is 3/200 for 2025/26, and the formula is: (upper limit minus augmented profits) multiplied by 3/200, multiplied by (total profits divided by augmented profits)."
+  - "The £50,000 and £250,000 limits are divided by the number of associated companies, so a dormant subsidiary can count and halve the thresholds unless it meets the de minimis exemption."
+  - "The CT600 splits income into boxes: trading (box 1), interest (box 5), property (box 6), gains (box 8), franked investment income (box 10); lumping all into trading distorts marginal relief."
+howToSteps:
+  - name: "Calculate total profits"
+    text: "Add trading profits to all investment income, including bank interest and property rental income. UK company dividends are excluded from total profits (they are franked investment income)."
+  - name: "Calculate augmented profits"
+    text: "Add any dividends received from UK companies (franked investment income) to total profits. This augmented profits figure is the one used to determine which corporation tax rate applies."
+  - name: "Determine the applicable rate"
+    text: "If augmented profits are below £50,000, the 19% small profits rate applies. If above £250,000, the 25% main rate applies. Between those limits, marginal relief applies."
+  - name: "Apply the marginal relief formula"
+    text: "Multiply (upper limit minus augmented profits) by 3/200, then multiply the result by (total profits divided by augmented profits). The product is the marginal relief deduction."
+  - name: "Compute gross tax at the main rate"
+    text: "Multiply total profits by 25% to produce the gross corporation tax figure before any marginal relief is deducted."
+  - name: "Deduct marginal relief"
+    text: "Subtract the marginal relief figure from the gross tax at 25% to arrive at the corporation tax payable. Divide by total profits to check the effective rate."
+  - name: "File the CT600 with correct income splits"
+    text: "Enter trading profits, non-trading loan relationship income, property income, chargeable gains, and franked investment income in their respective CT600 boxes. Do not lump all income into the trading profits box, as this distorts the marginal relief calculation and can prompt HMRC enquiries."
 ---
 
 <p>If your limited company earns both trading profits and investment income, the corporation tax calculation is not as straightforward as applying a single rate to the total. The two income streams are treated differently for tax purposes, and the distinction affects which rate of corporation tax applies, whether marginal relief is available, and how you complete the CT600 return.</p>

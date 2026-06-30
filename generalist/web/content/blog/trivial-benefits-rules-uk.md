@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Each trivial benefit must cost £50 or less per person including VAT; if a single gift exceeds £50, the entire amount is taxable, not just the excess."
+  - "Directors of close companies face a £300 annual cap on trivial benefits per tax year, and gifts to a director's family or household members count against that same cap."
+  - "Benefits cannot be cash or a cash voucher; a specific retailer gift card such as John Lewis or M&S qualifies, but a prepaid Mastercard spendable anywhere does not."
+  - "Qualifying trivial benefits do not need to be reported on a P11D or processed through payroll, though you should keep records of each gift including the cost and date."
+  - "Unlike directors of close companies, employees face no annual cap and can receive multiple £50 gifts a year, all tax-free, provided each is not a reward for work."
+  - "A benefit fails the trivial benefits rules if it is given as a reward for work, provided under a salary sacrifice arrangement, or arises from a contractual entitlement."
 ---
 <p>If you run a limited company, you can give your employees and directors small non-cash gifts without triggering a tax charge. The rules are specific. Get them wrong and you'll owe PAYE, National Insurance, and possibly a benefit in kind charge. Get them right and you've got a straightforward, low-risk way to reward your team.</p>
 

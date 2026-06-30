@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. A written lease or tenancy agreement signed by both parties is essential. Without it, HMRC can treat the arrangement as informal and disallow the deduction. The lease should state the rent, the term, and the obligations of both parties."
   - question: "Can a sole trader pay rent to a connected company?"
     answer: "Yes, but the same transfer pricing rules apply. The rent must be at arm's length. Sole traders also have the option of using simplified home office expenses instead, which is often simpler and avoids the need for a formal rent arrangement."
+keyTakeaways:
+  - "A trading company can deduct rent paid to a connected property company, reducing profits taxed at 25% (or 19% if below the small profits threshold)."
+  - "Transfer pricing rules require the rent to be at arm's length, meaning the rate two unconnected parties would agree in an open market, regardless of the business structure used."
+  - "If rent is set above market value, HMRC can disallow the excess deduction while the property company still pays tax on the rent received, raising overall tax."
+  - "A company is connected for these purposes where there is common control, common directors, or a shareholder holding more than 50% of the shares in both entities."
+  - "Interest on underpaid corporation tax runs at 7.75% (as of early 2025), and an arrangement HMRC regards as abusive can attract a 60% general anti-abuse rule penalty."
+  - "HMRC expects a written lease, a professional valuation updated every 2 to 3 years, board minutes from both companies, and rent invoices and payment records to support the deduction."
 ---
 
 <p>If your limited company pays rent to a connected company, you can deduct that rent as an expense. That reduces your taxable profits and your corporation tax bill. But HMRC does not let you set the rent at whatever figure you like. The rules on transfer pricing and market value apply. Get it wrong and you face a tax adjustment, interest, and penalties.</p>

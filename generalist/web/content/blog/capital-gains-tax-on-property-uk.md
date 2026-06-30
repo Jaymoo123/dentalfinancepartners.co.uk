@@ -27,6 +27,13 @@ faqs:
     answer: "No. CGT is calculated on the capital gain, not the rental income. Letting agent fees and mortgage interest are revenue expenses that reduce your rental profit for income tax purposes. They do not reduce the capital gain on sale. Only capital costs (purchase price, SDLT, legal fees, improvement costs) are deductible for CGT."
   - question: "Is it better to sell a buy-to-let property in my name or through a limited company?"
     answer: "For most people with one or two properties, selling in your own name is simpler and cheaper. You pay CGT at 18% or 24% and keep the rest. Through a company, the company pays corporation tax (19% or 25%) on the gain, then you pay dividend tax (up to 39.35%) when extracting the cash. The total tax rate can exceed 40%. A company structure only makes sense for larger portfolios where you reinvest profits into new properties and rarely extract cash."
+keyTakeaways:
+  - "Following the 30 October 2024 alignment, UK residential and non-residential property gains are taxed at 18% for basic rate and 24% for higher rate taxpayers in 2025/26."
+  - "Business Asset Disposal Relief cuts the CGT rate to 14% on commercial property from 6 April 2025, rising to 18% from 6 April 2026, with a £1 million lifetime limit."
+  - "The CGT annual exempt amount is £3,000 per individual in 2025/26, so a couple selling a jointly owned property can each deduct £3,000 from their share of the gain."
+  - "Sellers of UK residential property must file a 60-day CGT property return via their HMRC online account and pay the tax within 60 days of completion, separate from self assessment."
+  - "Capital losses on property can be offset against other capital gains in the same tax year or carried forward to future years, but cannot be set against general income."
+  - "Transfers between spouses or civil partners are tax-free, so shifting ownership before sale can cut the bill when one spouse is a basic rate taxpayer or has unused exempt amount."
 ---
 
 <p>If you sell a UK property that is not your main home, you will almost certainly owe Capital Gains Tax (CGT) on the profit. The rates changed on 30 October 2024 and changed again for disposals after 5 April 2025 when Business Asset Disposal Relief (BADR) moved to 14%. Getting the calculation wrong or missing the 60-day reporting window for residential property can mean penalties and interest.</p>

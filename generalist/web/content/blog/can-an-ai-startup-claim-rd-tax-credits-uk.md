@@ -27,6 +27,24 @@ faqs:
     answer: "The merged scheme (standard) gives a 20% payable credit on qualifying R&D expenditure. The Enhanced R&D Intensive Scheme (ERIS) gives 27%, but only if your R&D expenditure is at least 30% of your total expenditure and you are loss-making. Most early-stage AI startups that are burning cash on R&D will qualify for ERIS if they meet the 30% intensity threshold."
   - question: "Can we claim for time spent fine-tuning an open-source AI model?"
     answer: "It depends on the nature of the fine-tuning. If you are applying standard fine-tuning techniques to adapt a model to your dataset, that is routine development and does not qualify. If you are developing novel fine-tuning methods, experimenting with new architectures, or solving a problem that no existing approach can handle, it may qualify. The test is whether a competent professional in machine learning would consider the work to involve technological uncertainty."
+keyTakeaways:
+  - "AI startups can claim R&D tax credits if their work resolves technological uncertainty, meaning the advance was not readily deducible by a competent professional in the field."
+  - "For accounting periods starting on or after 1 April 2024, the standard merged R&D scheme pays a 20% payable credit on qualifying R&D expenditure."
+  - "Loss-making companies where R&D is at least 30% of total expenditure may qualify for the Enhanced R&D Intensive Scheme (ERIS), which pays a higher 27% rate."
+  - "Contractor and subcontractor costs qualify at 65% of the payment to the agency, intermediary or third party, not the gross pay to the individual."
+  - "Cloud computing costs for training models and GPU time qualify as consumables, but only the portion used directly in R&D activities, not production hosting or CI/CD pipeline costs."
+  - "HMRC typically pays R&D cash credits approximately 6 to 8 weeks after the corporation tax return and R&D claim are filed."
+howToSteps:
+  - name: "Identify qualifying projects"
+    text: "Review all development work in the accounting period and separate projects that involved resolving technological uncertainty from routine development using standard techniques."
+  - name: "Quantify qualifying costs"
+    text: "Calculate staff time, contractor payments, cloud costs, and other consumables attributable to each qualifying project, apportioning costs where staff or resources are shared between R&D and non-R&D work."
+  - name: "Prepare a technical report"
+    text: "For each qualifying project, write a narrative explaining the advance sought, the technological uncertainties faced, and how they were resolved; keep this in your records even if you do not submit it with the claim."
+  - name: "Complete the R&D claim on your CT600"
+    text: "Submit the R&D claim in your corporation tax return by completing the relevant boxes; loss-making companies can surrender losses for a cash payment from HMRC."
+  - name: "Submit the AIF before or with your CT600"
+    text: "For claims from April 2024 onwards, submit the Additional Information Form (AIF) digitally before or at the same time as the CT600; the AIF must include project-level details and cost breakdowns."
 ---
 
 <p>If you run an AI startup in the UK, you have probably heard that R&D tax credits are for labs and pharmaceutical companies. That is not true. Software development, including AI and machine learning projects, has qualified for R&D relief for years. The question is whether your specific project meets HMRC's definition of research and development.</p>

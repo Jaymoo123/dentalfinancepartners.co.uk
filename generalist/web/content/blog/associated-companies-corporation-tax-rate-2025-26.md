@@ -27,6 +27,13 @@ faqs:
     answer: "Possibly, but you must be careful. If you give shares to an unrelated third party who genuinely has no connection to you, and that person has real control over the company, the companies may not be associated. However, HMRC can look through artificial arrangements. If the third party is acting on your instructions or the arrangement has no commercial substance, HMRC can treat the companies as associated anyway. Always take professional advice before restructuring."
   - question: "What happens if I have three associated companies and one makes a loss?"
     answer: "The loss-making company still counts as an associated company for the period if it was active at any point. The thresholds are divided by three regardless of profitability. However, you may be able to use group relief to surrender the loss to a profitable company in the group, reducing the overall tax bill. The loss does not reduce the associated company count itself."
+keyTakeaways:
+  - "In 2025/26, the £50,000 lower profit limit and £250,000 upper limit are each divided by the number of associated companies, reducing the bands where the 19% small profits rate applies."
+  - "Two associated companies each face a lower limit of £25,000 and an upper limit of £125,000, meaning profits above £25,000 fall into the marginal relief or 25% main rate band."
+  - "Spouses and civil partners are treated as connected persons, so a husband and wife each owning a separate limited company will usually have two associated companies for threshold purposes."
+  - "A dormant company is excluded from the associated company count only if it was dormant throughout the entire accounting period of the other company."
+  - "The number of associated companies must be declared on the CT600 return, and under-declaring can result in HMRC reassessing the tax bill with interest and penalties."
+  - "A group of five associated companies each making £30,000 profit faces an effective corporation tax rate of around 23.5% instead of 19%, costing the group an extra £6,750."
 ---
 
 <h2>The Short Answer: Your Profit Thresholds Are Divided</h2>

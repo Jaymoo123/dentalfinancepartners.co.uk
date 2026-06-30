@@ -27,6 +27,13 @@ faqs:
     answer: "Possibly, but it is risky. The winding down period must be no longer than necessary. Two years is a long time to wind up a simple company. If you have complex contracts, property, or litigation, a longer period may be justified. Document the reasons carefully and get professional advice."
   - question: "What happens if HMRC denies my BADR claim after I have sold?"
     answer: "You will owe CGT at the standard rates on the gain. You can appeal the decision through HMRC's internal review or the First-tier Tribunal. But the best approach is to plan ahead and ensure eligibility before you sell. If there is any doubt, get advice early."
+keyTakeaways:
+  - "BADR reduces CGT on qualifying business disposals to 14% for 2025/26, rising to 18% from 6 April 2026; standard rates without it are 18% (basic rate) and 24% (higher rate)."
+  - "The relief carries a £1 million lifetime limit, so getting eligibility right on every claim matters."
+  - "All three conditions (trading company status, at least 5% of ordinary share capital and voting rights, and officer or employee status) must be met throughout the 24 months before disposal."
+  - "A dormant period approaching or exceeding 12 months within the 24-month window creates a serious risk that the trading company test fails and BADR is denied."
+  - "Short dormant periods that are temporary and incidental to the disposal, such as a brief pause while finding a buyer, are typically accepted by HMRC."
+  - "Under the winding-down exception, a company that has genuinely ceased trading still qualifies if the wind-up period is proportionate; HMRC typically accepts 6 to 12 months for a straightforward company."
 ---
 
 <h2>What Is Business Asset Disposal Relief?</h2>
